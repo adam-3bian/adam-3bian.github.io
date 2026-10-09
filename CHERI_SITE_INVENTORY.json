@@ -1,0 +1,1519 @@
+{
+  "audit_date": "2026-10-09",
+  "complete": false,
+  "content_verified": false,
+  "total_discovered_urls": 214,
+  "notes": [
+    "This is an INITIAL NAVIGATION-BASED INVENTORY, NOT a proven complete crawl or reproduction of source content.",
+    "Original site: news archive pages 1–5 were discovered; one page-3 article did not resolve during this review and must be recovered.",
+    "Original site: the speaker directory links to many individual profiles. Only Adam Finney was included here as an explicitly verified example; all other profile URLs require enumeration.",
+    "Original site: the members archive did not expose individual member links in text retrieval; use rendered DOM / WordPress export to enumerate them.",
+    "GitHub Pages site: member and speaker directories link to many individual profiles; only sampled profile URLs are listed. Enumerate every linked record.",
+    "GitHub Pages site: some navigation links failed to resolve during this review, including some development and event pages; investigate on full crawl.",
+    "GitHub Pages site: some pages include literal placeholder copy or announce that a form will appear; preserve as source evidence and flag it for review.",
+    "Neither XML sitemaps nor WordPress API endpoints could be retrieved by the browsing tool in this audit; check them in a local scraper.",
+    "Many reports, PDFs, slides, videos, logos, page images and linked assets are not individually enumerated in this document.",
+    "There may be pages outside navigation, redirects, pagination, category/tag archives, or dynamically loaded pages not yet discovered.",
+    "Treat the two domains as distinct sources. Do not replace content on one with the other or infer that corresponding URLs are identical."
+  ],
+  "pages": [
+    {
+      "site": "Original website",
+      "section": "Homepage",
+      "title": "Homepage",
+      "url": "https://cheri-alliance.org/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Who We Are",
+      "title": "About the CHERI Alliance",
+      "url": "https://cheri-alliance.org/who-we-are/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Who We Are",
+      "title": "Accelerating CHERI",
+      "url": "https://cheri-alliance.org/who-we-are/accelerating-cheri/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Who We Are",
+      "title": "Working Groups directory",
+      "url": "https://cheri-alliance.org/who-we-are/working-groups/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Who We Are / Working Groups",
+      "title": "Certification Program",
+      "url": "https://cheri-alliance.org/who-we-are/working-groups/certification-program/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Who We Are / Working Groups",
+      "title": "CHERI C/C++",
+      "url": "https://cheri-alliance.org/who-we-are/working-groups/cheri-c-c/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Who We Are / Working Groups",
+      "title": "CHERI FreeRTOS",
+      "url": "https://cheri-alliance.org/who-we-are/working-groups/cheri-freertos/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Who We Are / Working Groups",
+      "title": "CHERI in SoC",
+      "url": "https://cheri-alliance.org/who-we-are/working-groups/cheri-in-soc/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Who We Are / Working Groups",
+      "title": "CHERI Linux",
+      "url": "https://cheri-alliance.org/who-we-are/working-groups/cheri-linux/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Who We Are / Working Groups",
+      "title": "CHERI QEMU",
+      "url": "https://cheri-alliance.org/who-we-are/working-groups/cheri-qemu/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Who We Are / Working Groups",
+      "title": "CHERI Research",
+      "url": "https://cheri-alliance.org/who-we-are/working-groups/cheri-research/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Who We Are / Working Groups",
+      "title": "CHERI + Safety",
+      "url": "https://cheri-alliance.org/who-we-are/working-groups/cheri-safety/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Who We Are / Working Groups",
+      "title": "CHERI seL4",
+      "url": "https://cheri-alliance.org/who-we-are/working-groups/cheri-sel4/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Who We Are / Working Groups",
+      "title": "CHERI Virtual Machines",
+      "url": "https://cheri-alliance.org/who-we-are/working-groups/cheri-virtual-machines/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Who We Are / Working Groups",
+      "title": "CHERI Zephyr",
+      "url": "https://cheri-alliance.org/who-we-are/working-groups/cheri-zephyr/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Who We Are / Working Groups",
+      "title": "Marketing",
+      "url": "https://cheri-alliance.org/who-we-are/working-groups/marketing/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Who We Are / Working Groups",
+      "title": "MMU-less Systems",
+      "url": "https://cheri-alliance.org/who-we-are/working-groups/mmu-less-systems/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Who We Are / Working Groups",
+      "title": "OS Support & Portability",
+      "url": "https://cheri-alliance.org/who-we-are/working-groups/os-support-portability/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Who We Are / Working Groups",
+      "title": "Promotion & Ambassador Program",
+      "url": "https://cheri-alliance.org/who-we-are/working-groups/promotion-ambassador-program/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Who We Are / Working Groups",
+      "title": "Repository Management",
+      "url": "https://cheri-alliance.org/who-we-are/working-groups/repository-management/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Who We Are / Working Groups",
+      "title": "Rust + CHERI",
+      "url": "https://cheri-alliance.org/who-we-are/working-groups/rust-cheri/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Membership and organisations",
+      "title": "Join / membership",
+      "url": "https://cheri-alliance.org/memberships/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Membership and organisations",
+      "title": "Members archive",
+      "url": "https://cheri-alliance.org/member/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Membership and organisations",
+      "title": "Ambassador Program",
+      "url": "https://cheri-alliance.org/ambassador-program/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Discover CHERI",
+      "title": "Discover CHERI / FAQ",
+      "url": "https://cheri-alliance.org/discover-cheri/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Discover CHERI",
+      "title": "CHERI Products",
+      "url": "https://cheri-alliance.org/discover-cheri/cheri-products/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Discover CHERI",
+      "title": "Export Controls and CHERI Technology",
+      "url": "https://cheri-alliance.org/discover-cheri/export-controls-and-cheri-technology/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Discover CHERI",
+      "title": "Rust and CHERI",
+      "url": "https://cheri-alliance.org/discover-cheri/rust-and-cheri/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Discover CHERI / Products and hardware",
+      "title": "Arm Morello",
+      "url": "https://cheri-alliance.org/discover-cheri/cheri-products/morello/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Discover CHERI / Products and hardware",
+      "title": "Return unused Morello board (form)",
+      "url": "https://cheri-alliance.org/morello-return/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Discover CHERI / CHERI Enabled",
+      "title": "CHERI Enabled Programme",
+      "url": "https://cheri-alliance.org/cheri-enabled/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Discover CHERI / CHERI Enabled",
+      "title": "CHERIoT",
+      "url": "https://cheri-alliance.org/cheri-enabled/cheriot/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Discover CHERI / CHERI Enabled",
+      "title": "X730",
+      "url": "https://cheri-alliance.org/cheri-enabled/x730/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Legal and media",
+      "title": "Legal and Policies",
+      "url": "https://cheri-alliance.org/legal-and-policies/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Legal and media",
+      "title": "Trademark usage",
+      "url": "https://cheri-alliance.org/legal-and-policies/trademark/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Legal and media",
+      "title": "Privacy Policy",
+      "url": "https://cheri-alliance.org/privacy-policy/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Legal and media",
+      "title": "Press Resources",
+      "url": "https://cheri-alliance.org/news/press/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Events",
+      "title": "Events directory",
+      "url": "https://cheri-alliance.org/events/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Events",
+      "title": "Previous events archive",
+      "url": "https://cheri-alliance.org/events/previous-events/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Events",
+      "title": "Speaker directory",
+      "url": "https://cheri-alliance.org/events/speakers/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Events / Upcoming",
+      "title": "CHERITech 2026",
+      "url": "https://cheri-alliance.org/events/cheritech26/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Events / Upcoming",
+      "title": "CHERI Blossoms 2027",
+      "url": "https://cheri-alliance.org/events/cheri-blossoms-conference-2027/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Events / Past and recordings",
+      "title": "CHERI Blossoms 2026",
+      "url": "https://cheri-alliance.org/events/cheri-blossoms-conference-2026/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Events / Past and recordings",
+      "title": "CHERITech 2025",
+      "url": "https://cheri-alliance.org/events/cheri-tech-conference-2025/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Events / Past and recordings",
+      "title": "CHERITech 2025 Reloaded",
+      "url": "https://cheri-alliance.org/events/cheritech25-reloaded/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Events / Past and recordings",
+      "title": "CHERI Blossoms 2025",
+      "url": "https://cheri-alliance.org/events/cheri-blossoms-conference-apr-2025/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Events / Past and recordings",
+      "title": "Cybersecurity by Design Conference 2024",
+      "url": "https://cheri-alliance.org/events/cybersecurity-by-design-conference-nov-2024/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Events / Past and recordings",
+      "title": "Webinar - CHERI and CRA compliance",
+      "url": "https://cheri-alliance.org/events/webinar-cheri-cra-compliance/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "People / Verified individual profiles",
+      "title": "Adam Finney",
+      "url": "https://cheri-alliance.org/events/speakers/adam-finney/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "News / Archive indexes",
+      "title": "News page 1",
+      "url": "https://cheri-alliance.org/news/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "News / Archive indexes",
+      "title": "News page 2",
+      "url": "https://cheri-alliance.org/news/page/2/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "News / Archive indexes",
+      "title": "News page 3",
+      "url": "https://cheri-alliance.org/news/page/3/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "News / Archive indexes",
+      "title": "News page 4",
+      "url": "https://cheri-alliance.org/news/page/4/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "News / Archive indexes",
+      "title": "News page 5",
+      "url": "https://cheri-alliance.org/news/page/5/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "News / Article URLs found on page 1",
+      "title": "CHERI Tag Bit Transport Overlay Standard v0.9 released",
+      "url": "https://cheri-alliance.org/cheri-tag-bit-transport-overlay-standard-version-0-9-released/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "News / Article URLs found on page 1",
+      "title": "Beyond Software Patching",
+      "url": "https://cheri-alliance.org/beyond-software-patching/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "News / Article URLs found on page 1",
+      "title": "CHERI-Zephyr v0.4.0 Release",
+      "url": "https://cheri-alliance.org/cheri-zephyr-v0-4-0-release/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "News / Article URLs found on page 1",
+      "title": "A new ETSI standard could rewrite the memory-safety debate",
+      "url": "https://cheri-alliance.org/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "News / Article URLs found on page 1",
+      "title": "The leading Root-of-Trust now integrates CHERI",
+      "url": "https://cheri-alliance.org/the-leading-root-of-trust-now-integrates-cheri-security-technology/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "News / Article URLs found on page 1",
+      "title": "Combatting the AI threat with CHERI",
+      "url": "https://cheri-alliance.org/combatting-the-ai-threat-with-cheri/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "News / Article URLs found on page 2",
+      "title": "Introducing the CHERI Adoption Global Ecosystem Assessment Q1 2026",
+      "url": "https://cheri-alliance.org/introducing-the-cheri-adoption-global-ecosystem-assessment-q1-2026/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "News / Article URLs found on page 2",
+      "title": "One Bug is All It Takes",
+      "url": "https://cheri-alliance.org/one-bug-is-all-it-takes/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "News / Article URLs found on page 2",
+      "title": "Why Codasip went all-in on CHERI",
+      "url": "https://cheri-alliance.org/why-codasip-went-all-in-on-cheri/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "News / Article URLs found on page 2",
+      "title": "CHERI memory safety mitigates LLM-discovered vulnerability in FreeBSD",
+      "url": "https://cheri-alliance.org/cheri-memory-safety-mitigates-llm-discovered-vulnerability-in-freebsd/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "News / Article URLs found on page 2",
+      "title": "Wind River Joins the CHERI Alliance",
+      "url": "https://cheri-alliance.org/wind-river-joins-the-cheri-alliance/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "News / Article URLs found on page 2",
+      "title": "AI has compressed the attack timeline",
+      "url": "https://cheri-alliance.org/ai-has-compressed-the-attack-timeline/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "News / Article URLs found on page 3",
+      "title": "ICENI: First Look",
+      "url": "https://cheri-alliance.org/iceni-first-look/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "News / Article URLs found on page 3",
+      "title": "The Capable Hub joins the CHERI Alliance",
+      "url": "https://cheri-alliance.org/the-capable-hub-joins-the-cheri-alliance-to-accelerate-cybersecurity-collaboration/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "News / Article URLs found on page 3",
+      "title": "The EU Cyber Resilience Act and CHERI",
+      "url": "https://cheri-alliance.org/the-eu-cyber-resilience-act-what-it-means-for-secure-by-design-systems-and-cheri/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "News / Article URLs found on page 3",
+      "title": "EnSilica joins the CHERI Alliance",
+      "url": "https://cheri-alliance.org/amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "News / Article URLs found on page 3",
+      "title": "Towards a reference QEMU for CHERI",
+      "url": "https://cheri-alliance.org/towards-a-reference-qemu-for-cheri-platform-emulation/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "News / Article URLs found on page 4",
+      "title": "Codasip Powers UK DSbD Innovation Contracts",
+      "url": "https://cheri-alliance.org/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "News / Article URLs found on page 4",
+      "title": "CHERI or CHERIoT?",
+      "url": "https://cheri-alliance.org/cheri-or-cheriot-the-answer-is-not-what-you-think/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "News / Article URLs found on page 4",
+      "title": "Repository Management WG update",
+      "url": "https://cheri-alliance.org/streamlining-the-cheri-ecosystem-an-update-from-the-repository-management-working-group/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "News / Article URLs found on page 4",
+      "title": "Project to merge CHERI support into FreeBSD",
+      "url": "https://cheri-alliance.org/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "News / Article URLs found on page 4",
+      "title": "Innovate UK Project Winner: University of Birmingham",
+      "url": "https://cheri-alliance.org/innovate-uk-project-winner-university-of-birmingham/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "News / Article URLs found on page 4",
+      "title": "CHERITech 2025 virtual replay",
+      "url": "https://cheri-alliance.org/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "News / Article URLs found on page 5",
+      "title": "DSbD competition winners",
+      "url": "https://cheri-alliance.org/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "News / Article URLs found on page 5",
+      "title": "lowRISC secure enclave project",
+      "url": "https://cheri-alliance.org/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "News / Article URLs found on page 5",
+      "title": "CHERIoT 1.0 Specification Released",
+      "url": "https://cheri-alliance.org/cheriot-1-0-specification-released/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "News / Article URLs found on page 5",
+      "title": "IoTSF + TechWorks Conferences",
+      "url": "https://cheri-alliance.org/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "News / Article URLs found on page 5",
+      "title": "CHERI Alliance to Distribute Arm Morello Boards",
+      "url": "https://cheri-alliance.org/cheri-alliance-to-distribute-arm-morello-boards-the-journey-beyond-dsbd-continues/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "News / Article URLs found on page 5",
+      "title": "Behind the Scenes: Promotion and Ambassador Program WG",
+      "url": "https://cheri-alliance.org/behind-the-scenes-inside-the-promotion-and-ambassador-program-working-group/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "Original website",
+      "section": "Contact and forms",
+      "title": "Contact form",
+      "url": "https://cheri-alliance.org/contact/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Homepage",
+      "title": "Homepage",
+      "url": "https://cheri-alliance.github.io/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Discover / Why CHERI",
+      "title": "Why CHERI?",
+      "url": "https://cheri-alliance.github.io/discover/why-cheri/why-cheri/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Discover / Why CHERI",
+      "title": "Vulnerabilities in Everyday Technology",
+      "url": "https://cheri-alliance.github.io/discover/why-cheri/vulnerabilities-in-everyday-technology/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Discover / Why CHERI",
+      "title": "Why Existing Defences Are Not Enough",
+      "url": "https://cheri-alliance.github.io/discover/why-cheri/why-existing-defences-are-not-enough/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Discover / Why CHERI",
+      "title": "Approaches to Memory Safety",
+      "url": "https://cheri-alliance.github.io/discover/why-cheri/approaches-to-memory-safety/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Discover / Why CHERI",
+      "title": "CHERI and Rust",
+      "url": "https://cheri-alliance.github.io/discover/why-cheri/cheri-and-rust/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Discover / Understand CHERI",
+      "title": "The History of CHERI",
+      "url": "https://cheri-alliance.github.io/discover/understand/cheri-history/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Discover / Understand CHERI",
+      "title": "How Does CHERI Work?",
+      "url": "https://cheri-alliance.github.io/discover/understand/how-does-cheri-work/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Discover / Understand CHERI",
+      "title": "Bringing CHERI to Your Product",
+      "url": "https://cheri-alliance.github.io/discover/understand/adapt-products/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Discover / Understand CHERI",
+      "title": "CHERI and Existing Software",
+      "url": "https://cheri-alliance.github.io/discover/understand/cheri-and-existing-software/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Discover / Understand CHERI",
+      "title": "FAQ",
+      "url": "https://cheri-alliance.github.io/discover/understand/faq/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Discover / History",
+      "title": "Early Capability Systems",
+      "url": "https://cheri-alliance.github.io/discover/history/early-capability-systems/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Discover / History",
+      "title": "Cambridge and SRI",
+      "url": "https://cheri-alliance.github.io/discover/history/cambridge-and-sri/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Discover / History",
+      "title": "Development of CHERI",
+      "url": "https://cheri-alliance.github.io/discover/history/development-of-cheri/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Discover / History",
+      "title": "DARPA Programmes",
+      "url": "https://cheri-alliance.github.io/discover/history/darpa-programmes/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Discover / History",
+      "title": "UKRI Digital Security by Design",
+      "url": "https://cheri-alliance.github.io/discover/history/ukri-digital-security-by-design/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Discover / History",
+      "title": "Morello History",
+      "url": "https://cheri-alliance.github.io/discover/history/morello-history/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Discover / History",
+      "title": "RISC-V and Embedded Development",
+      "url": "https://cheri-alliance.github.io/discover/history/risc-v-and-embedded-development/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Discover / History",
+      "title": "Commercialisation",
+      "url": "https://cheri-alliance.github.io/discover/history/commercialisation/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Discover / History",
+      "title": "Formation of the CHERI Alliance",
+      "url": "https://cheri-alliance.github.io/discover/history/formation-of-the-cheri-alliance/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Discover / History",
+      "title": "Future Direction",
+      "url": "https://cheri-alliance.github.io/discover/history/future-direction/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Discover / Resources",
+      "title": "Specifications",
+      "url": "https://cheri-alliance.github.io/discover/resources/specifications/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Discover / Resources",
+      "title": "Documentation and Guides",
+      "url": "https://cheri-alliance.github.io/discover/resources/documentation-and-guides/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Discover / Resources",
+      "title": "Academic Papers",
+      "url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Discover / Resources",
+      "title": "Reports and White Papers",
+      "url": "https://cheri-alliance.github.io/discover/resources/reports-and-white-papers/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Discover / Resources",
+      "title": "Videos and Presentations",
+      "url": "https://cheri-alliance.github.io/discover/resources/videos-and-presentations/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Discover / Resources",
+      "title": "Digital Security by Design Archive",
+      "url": "https://cheri-alliance.github.io/discover/resources/digital-security-by-design-archive/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Discover / Resources",
+      "title": "Glossary",
+      "url": "https://cheri-alliance.github.io/discover/resources/glossary/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Adopt / Business Case",
+      "title": "Cost of Memory Unsafety",
+      "url": "https://cheri-alliance.github.io/adopt/business-case/cost-of-memory-unsafety/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Adopt / Business Case",
+      "title": "The Business Case",
+      "url": "https://cheri-alliance.github.io/adopt/business-case/the-business-case/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Adopt / Business Case",
+      "title": "Return on Security Investment",
+      "url": "https://cheri-alliance.github.io/adopt/business-case/return-on-security-investment/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Adopt / Business Case",
+      "title": "Adoption Costs and Migration",
+      "url": "https://cheri-alliance.github.io/adopt/business-case/adoption-costs-and-migration/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Adopt / Business Case",
+      "title": "Lifecycle Benefits and ROI",
+      "url": "https://cheri-alliance.github.io/adopt/business-case/lifecycle-benefits-and-roi/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Adopt / Use Cases",
+      "title": "Automotive",
+      "url": "https://cheri-alliance.github.io/adopt/use-cases/automotive/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Adopt / Use Cases",
+      "title": "IoT and Embedded",
+      "url": "https://cheri-alliance.github.io/adopt/use-cases/iot-and-embedded/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Adopt / Use Cases",
+      "title": "Critical Infrastructure",
+      "url": "https://cheri-alliance.github.io/adopt/use-cases/critical-infrastructure/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Adopt / Use Cases",
+      "title": "Cloud and Data Centre",
+      "url": "https://cheri-alliance.github.io/adopt/use-cases/cloud-and-data-centre/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Adopt / Use Cases",
+      "title": "Defence and Aerospace",
+      "url": "https://cheri-alliance.github.io/adopt/use-cases/defence-and-aerospace/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Adopt / Use Cases",
+      "title": "Safety-Critical Systems",
+      "url": "https://cheri-alliance.github.io/adopt/use-cases/safety-critical-systems/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Adopt / Assurance and Adoption",
+      "title": "Case Studies",
+      "url": "https://cheri-alliance.github.io/adopt/assurance-and-adoption/case-studies/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Adopt / Assurance and Adoption",
+      "title": "Assurance and Certification",
+      "url": "https://cheri-alliance.github.io/adopt/assurance-and-adoption/assurance-and-certification/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Adopt / Assurance and Adoption",
+      "title": "Procurement",
+      "url": "https://cheri-alliance.github.io/adopt/assurance-and-adoption/procurement/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Adopt / Assurance and Adoption",
+      "title": "About CHERI Enabled",
+      "url": "https://cheri-alliance.github.io/adopt/assurance-and-adoption/about-cheri-enabled/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Adopt / Assurance and Adoption",
+      "title": "Certification",
+      "url": "https://cheri-alliance.github.io/adopt/assurance-and-adoption/certification/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Adopt / Assurance and Adoption",
+      "title": "CHERI Enabled Products",
+      "url": "https://cheri-alliance.github.io/adopt/assurance-and-adoption/cheri-enabled-products/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Adopt / Policy",
+      "title": "Government Guidance",
+      "url": "https://cheri-alliance.github.io/adopt/policy/government-guidance/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Adopt / Policy",
+      "title": "Cybersecurity Regulation",
+      "url": "https://cheri-alliance.github.io/adopt/policy/cybersecurity-regulation/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Adopt / Policy",
+      "title": "Critical Infrastructure and Resilience",
+      "url": "https://cheri-alliance.github.io/adopt/policy/critical-infrastructure-and-resilience/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Adopt / Policy",
+      "title": "Policy Briefings",
+      "url": "https://cheri-alliance.github.io/adopt/policy/policy-briefings/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Build / Developers",
+      "title": "Building Secure Software with CHERI",
+      "url": "https://cheri-alliance.github.io/build/developers/building-secure-software/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Build / Developers",
+      "title": "Choose a Platform",
+      "url": "https://cheri-alliance.github.io/build/developers/choose-a-platform/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Build / Developers",
+      "title": "Run CHERI in Simulation",
+      "url": "https://cheri-alliance.github.io/build/developers/run-cheri-in-simulation/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Build / Developers",
+      "title": "Build Your First Application",
+      "url": "https://cheri-alliance.github.io/build/developers/build-your-first-application/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Build / Developers",
+      "title": "Tutorials and Training",
+      "url": "https://cheri-alliance.github.io/build/developers/tutorials-and-training/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Build / Developers",
+      "title": "Port Existing Software",
+      "url": "https://cheri-alliance.github.io/build/developers/port-existing-software/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Build / Developers",
+      "title": "Build Compartments",
+      "url": "https://cheri-alliance.github.io/build/developers/build-compartments/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Build / Developers",
+      "title": "Downloads",
+      "url": "https://cheri-alliance.github.io/build/developers/downloads/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Build / Developers",
+      "title": "Technical FAQ",
+      "url": "https://cheri-alliance.github.io/build/developers/technical-faq/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Build / Technology",
+      "title": "CHERI and Rust Technical Overview",
+      "url": "https://cheri-alliance.github.io/build/technology/cheri-and-rust-technical/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Build / Technology",
+      "title": "Capabilities",
+      "url": "https://cheri-alliance.github.io/build/technology/capabilities/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Build / Technology",
+      "title": "Tags and Validity",
+      "url": "https://cheri-alliance.github.io/build/technology/tags-and-validity/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Build / Technology",
+      "title": "Bounds",
+      "url": "https://cheri-alliance.github.io/build/technology/bounds/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Build / Technology",
+      "title": "Permissions",
+      "url": "https://cheri-alliance.github.io/build/technology/permissions/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Build / Technology",
+      "title": "Provenance",
+      "url": "https://cheri-alliance.github.io/build/technology/provenance/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Build / Technology",
+      "title": "Sealing",
+      "url": "https://cheri-alliance.github.io/build/technology/sealing/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Build / Technology",
+      "title": "Spatial Memory Safety",
+      "url": "https://cheri-alliance.github.io/build/technology/spatial-memory-safety/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Build / Technology",
+      "title": "Temporal Memory Safety",
+      "url": "https://cheri-alliance.github.io/build/technology/temporal-memory-safety/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Build / Technology",
+      "title": "Compartmentalisation",
+      "url": "https://cheri-alliance.github.io/build/technology/compartmentalisation/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Build / Technology",
+      "title": "Hybrid Systems",
+      "url": "https://cheri-alliance.github.io/build/technology/hybrid-systems/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Build / Technology",
+      "title": "Pure-Capability Systems",
+      "url": "https://cheri-alliance.github.io/build/technology/pure-capability-systems/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Build / Platforms",
+      "title": "Platform Comparison",
+      "url": "https://cheri-alliance.github.io/build/platforms/platform-comparison/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Build / Platforms",
+      "title": "Morello",
+      "url": "https://cheri-alliance.github.io/build/platforms/morello/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Build / Platforms",
+      "title": "CHERIoT",
+      "url": "https://cheri-alliance.github.io/build/platforms/cheriot/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Build / Platforms",
+      "title": "FPGA Platforms",
+      "url": "https://cheri-alliance.github.io/build/platforms/fpga-platforms/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Build / Platforms",
+      "title": "Simulators",
+      "url": "https://cheri-alliance.github.io/build/platforms/simulators/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Build / Platforms",
+      "title": "CHERI Products",
+      "url": "https://cheri-alliance.github.io/build/platforms/cheri-products/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Build / Software Ecosystem",
+      "title": "Software Ecosystem",
+      "url": "https://cheri-alliance.github.io/build/software-ecosystem/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Build / Software Ecosystem",
+      "title": "LLVM and Clang",
+      "url": "https://cheri-alliance.github.io/build/software-ecosystem/llvm-and-clang/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Build / Software Ecosystem",
+      "title": "Rust",
+      "url": "https://cheri-alliance.github.io/build/software-ecosystem/rust/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Build / Software Ecosystem",
+      "title": "CheriBSD",
+      "url": "https://cheri-alliance.github.io/build/software-ecosystem/cheribsd/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Build / Software Ecosystem",
+      "title": "CHERI Linux",
+      "url": "https://cheri-alliance.github.io/build/software-ecosystem/cheri-linux/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Build / Software Ecosystem",
+      "title": "Zephyr",
+      "url": "https://cheri-alliance.github.io/build/software-ecosystem/zephyr/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Build / Software Ecosystem",
+      "title": "Debugging Tools",
+      "url": "https://cheri-alliance.github.io/build/software-ecosystem/debugging-tools/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / About and Governance",
+      "title": "About CHERI Alliance",
+      "url": "https://cheri-alliance.github.io/alliance/about-and-governance/about-the-cheri-alliance/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / About and Governance",
+      "title": "Mission and Role",
+      "url": "https://cheri-alliance.github.io/alliance/about-and-governance/mission-and-role/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / About and Governance",
+      "title": "Collaboration Principles",
+      "url": "https://cheri-alliance.github.io/alliance/about-and-governance/collaboration-principles/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / About and Governance",
+      "title": "Accelerating CHERI Together",
+      "url": "https://cheri-alliance.github.io/alliance/about-and-governance/accelerating-together/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / About and Governance",
+      "title": "CHERI Trademark",
+      "url": "https://cheri-alliance.github.io/alliance/about-and-governance/trademark/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / About and Governance",
+      "title": "Governance",
+      "url": "https://cheri-alliance.github.io/alliance/about-and-governance/governance/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / About and Governance",
+      "title": "Working Groups overview (second route)",
+      "url": "https://cheri-alliance.github.io/alliance/about-and-governance/working-groups/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / Leadership",
+      "title": "Member Directory",
+      "url": "https://cheri-alliance.github.io/alliance/leadership/members/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / Leadership",
+      "title": "Governing Board",
+      "url": "https://cheri-alliance.github.io/alliance/leadership/governing-board/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / Leadership",
+      "title": "Working Groups Directory",
+      "url": "https://cheri-alliance.github.io/alliance/leadership/working-groups/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / Leadership",
+      "title": "Ambassadors",
+      "url": "https://cheri-alliance.github.io/alliance/leadership/ambassadors/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / Leadership / Working Groups",
+      "title": "CHERI C/C++ WG",
+      "url": "https://cheri-alliance.github.io/alliance/leadership/working-groups/cheri-c-cplusplus/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / Leadership / Working Groups",
+      "title": "CHERI in SoC WG",
+      "url": "https://cheri-alliance.github.io/alliance/leadership/working-groups/cheri-in-soc/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / Leadership / Working Groups",
+      "title": "CHERI Linux WG",
+      "url": "https://cheri-alliance.github.io/alliance/leadership/working-groups/cheri-linux-working-group/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / Leadership / Working Groups",
+      "title": "CHERI QEMU WG",
+      "url": "https://cheri-alliance.github.io/alliance/leadership/working-groups/cheri-qemu/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / Leadership / Working Groups",
+      "title": "CHERI Virtual Machines WG",
+      "url": "https://cheri-alliance.github.io/alliance/leadership/working-groups/cheri-virtual-machines/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / Leadership / Working Groups",
+      "title": "Rust + CHERI WG",
+      "url": "https://cheri-alliance.github.io/alliance/leadership/working-groups/rust-plus-cheri/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / Leadership / Working Groups",
+      "title": "CHERI + Safety WG",
+      "url": "https://cheri-alliance.github.io/alliance/leadership/working-groups/cheri-plus-safety/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / Leadership / Working Groups",
+      "title": "CHERI for seL4 WG",
+      "url": "https://cheri-alliance.github.io/alliance/leadership/working-groups/cheri-for-sel4/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / Leadership / Working Groups",
+      "title": "CHERI FreeRTOS WG",
+      "url": "https://cheri-alliance.github.io/alliance/leadership/working-groups/cheri-freertos/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / Leadership / Working Groups",
+      "title": "CHERI Zephyr WG",
+      "url": "https://cheri-alliance.github.io/alliance/leadership/working-groups/cheri-zephyr/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / Leadership / Working Groups",
+      "title": "MMU-less Systems WG",
+      "url": "https://cheri-alliance.github.io/alliance/leadership/working-groups/mmu-less-systems/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / Leadership / Working Groups",
+      "title": "OS Support & Portability WG",
+      "url": "https://cheri-alliance.github.io/alliance/leadership/working-groups/os-support-and-portability/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / Leadership / Working Groups",
+      "title": "Certification WG",
+      "url": "https://cheri-alliance.github.io/alliance/leadership/working-groups/certification-working-group/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / Leadership / Working Groups",
+      "title": "Marketing WG",
+      "url": "https://cheri-alliance.github.io/alliance/leadership/working-groups/marketing/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / Leadership / Working Groups",
+      "title": "Promotion & Ambassador Program WG",
+      "url": "https://cheri-alliance.github.io/alliance/leadership/working-groups/promotion-and-ambassador-program/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / Leadership / Working Groups",
+      "title": "Repository Management WG",
+      "url": "https://cheri-alliance.github.io/alliance/leadership/working-groups/repository-management/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / Individual organisations found",
+      "title": "Axiomise Ltd",
+      "url": "https://cheri-alliance.github.io/members/axiomise-ltd/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / Individual organisations found",
+      "title": "Codasip",
+      "url": "https://cheri-alliance.github.io/members/codasip/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / Individual people found",
+      "title": "Adam Finney",
+      "url": "https://cheri-alliance.github.io/people/adam-finney/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / Membership",
+      "title": "Why Join?",
+      "url": "https://cheri-alliance.github.io/alliance/membership/why-join/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / Membership",
+      "title": "Membership Benefits and Options",
+      "url": "https://cheri-alliance.github.io/alliance/membership/membership-benefits-and-options/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / Membership",
+      "title": "Contact the Alliance",
+      "url": "https://cheri-alliance.github.io/alliance/membership/contact/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / Legal and Policies",
+      "title": "Code of Conduct",
+      "url": "https://cheri-alliance.github.io/alliance/legal-and-policies/code-of-conduct/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / Legal and Policies",
+      "title": "Competition Law Statement",
+      "url": "https://cheri-alliance.github.io/alliance/legal-and-policies/competition-law-statement/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / Legal and Policies",
+      "title": "Intellectual Property Policy",
+      "url": "https://cheri-alliance.github.io/alliance/legal-and-policies/intellectual-property-policy/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / Legal and Policies",
+      "title": "Trademark Policy",
+      "url": "https://cheri-alliance.github.io/alliance/legal-and-policies/trademark-policy/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / Legal and Policies",
+      "title": "Export Controls",
+      "url": "https://cheri-alliance.github.io/alliance/legal-and-policies/export-controls/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "Alliance / Legal and Policies",
+      "title": "Privacy",
+      "url": "https://cheri-alliance.github.io/alliance/legal-and-policies/privacy/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "News and Events / News and Analysis",
+      "title": "Latest News",
+      "url": "https://cheri-alliance.github.io/news-and-events/news-and-analysis/latest-news/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "News and Events / News and Analysis",
+      "title": "Subscribe Newsletter",
+      "url": "https://cheri-alliance.github.io/news-and-events/news-and-analysis/subscribe-newsletter/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "News and Events / News and Analysis",
+      "title": "Press Resources",
+      "url": "https://cheri-alliance.github.io/news-and-events/news-and-analysis/press-resources/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "News and Events / Events and Archive",
+      "title": "Upcoming Events",
+      "url": "https://cheri-alliance.github.io/news-and-events/events-and-archive/upcoming-events/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "News and Events / Events and Archive",
+      "title": "Past Events",
+      "url": "https://cheri-alliance.github.io/news-and-events/events-and-archive/past-events/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "News and Events / Events and Archive",
+      "title": "CHERI Blossoms",
+      "url": "https://cheri-alliance.github.io/news-and-events/events-and-archive/cheri-blossoms/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "News and Events / People and Opportunities",
+      "title": "Speakers directory",
+      "url": "https://cheri-alliance.github.io/news-and-events/people-and-opportunities/speakers/",
+      "status": "discovered_from_public_site_not_content_verified"
+    },
+    {
+      "site": "GitHub Pages website",
+      "section": "News and Events / People and Opportunities",
+      "title": "Job Opportunities",
+      "url": "https://cheri-alliance.github.io/news-and-events/people-and-opportunities/job-opportunities/",
+      "status": "discovered_from_public_site_not_content_verified"
+    }
+  ]
+}
