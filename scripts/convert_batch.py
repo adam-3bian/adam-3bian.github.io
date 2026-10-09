@@ -173,11 +173,10 @@ def content_collection(url,soup):
     if len(parts)==2 and parts[0]=='people':return 'people'
     if len(parts)==2 and parts[0] in {'members','member'} and parts[1] not in {'page','index.html'}:return 'organisations'
     if len(parts)==2 and parts[0]=='events':return 'events'
-    if path=='alliance/leadership/governing-board':return 'boards'
     if path.startswith('alliance/leadership/working-groups/') and len(parts)==4:return 'groups'
     if path.startswith('build/software-ecosystem/') and len(parts)==3:return 'software'
-    if path.startswith('build/platforms/') and len(parts)==3 and parts[-1] not in {'platform-comparison','cheri-products'}:return 'platforms'
-    if path.startswith('adopt/assurance-and-adoption/cheri-enabled-products/') and len(parts)==4:return 'products'
+    if path.startswith('build/platforms/') and len(parts)==3 and parts[-1] not in {'platform-comparison','cheri-products'}:return 'software' if parts[-1]=='simulators' else 'hardware'
+    if path.startswith('adopt/assurance-and-adoption/cheri-enabled-products/') and len(parts)==4:return 'hardware'
     if path.startswith('build/developers/') and len(parts)==3:return 'guides'
     if path.startswith('alliance/legal-and-policies/') or 'policy' in parts[-1] or path.startswith(('legal-and-policies/','alliance/about-and-governance/')) and parts[-1] in {'trademark','legal-and-policies'}:return 'policies'
     if len(parts)==2 and parts[0]=='news' and urlsplit(url).hostname=='cheri-alliance.github.io':return 'news'
@@ -228,7 +227,7 @@ def main():
         title=title_node.get_text(' ',strip=True) if title_node else Path(urlsplit(url).path).name
         route='/sources/'+host+('/html-pages/' if relative.endswith('.html') else '/')+relative+('' if relative.endswith('.html') else '/')
         fm={'title':title,'layout':'source-github' if image_classes and host=='cheri-alliance.github.io' else 'source','permalink':route}
-        if collection=='boards':
+        if relative=='alliance/leadership/governing-board':
             members=[a['href'].rstrip('/').split('/')[-1] for a in main_content.select('a[href]') if '/people/' in urlsplit(a['href']).path]
             if members:fm['members']=list(dict.fromkeys(members))
         if collection=='people':

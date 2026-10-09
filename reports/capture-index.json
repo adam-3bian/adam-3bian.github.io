@@ -1503,7 +1503,7 @@
       "asset_mapping": {
         "/assets/shared/source-assets/c53c4c1378ba-cheri-enabled-2026.webp": "https://cheri-alliance.github.io/assets/images/content/shared/cheri-enabled-2026.webp"
       },
-      "local_path": "_products/cheri-alliance.github.io--cheriot-ibex.md",
+      "local_path": "_hardware/cheri-alliance.github.io--cheriot-ibex.md",
       "local_route": "/sources/cheri-alliance.github.io/adopt/assurance-and-adoption/cheri-enabled-products/cheriot-ibex/",
       "main_content_checks": "passed"
     },
@@ -1537,7 +1537,7 @@
         "/assets/shared/source-assets/c53c4c1378ba-cheri-enabled-2026.webp": "https://cheri-alliance.github.io/assets/images/content/shared/cheri-enabled-2026.webp",
         "/assets/pages/adopt--assurance-and-adoption--cheri-enabled-products--x730/114ea730a8ce-x730-block-diagram.webp": "https://cheri-alliance.github.io/assets/images/content/products/x730-block-diagram.webp"
       },
-      "local_path": "_products/cheri-alliance.github.io--x730.md",
+      "local_path": "_hardware/cheri-alliance.github.io--x730.md",
       "local_route": "/sources/cheri-alliance.github.io/adopt/assurance-and-adoption/cheri-enabled-products/x730/",
       "main_content_checks": "passed"
     },
@@ -2359,7 +2359,7 @@
         "/assets/pages/alliance--leadership--governing-board/137b57602d01-allison-randal.webp": "https://cheri-alliance.github.io/assets/images/thumbnails/people/allison-randal.webp",
         "/assets/people/paul-waller/366013f0e312-paul-waller.webp": "https://cheri-alliance.github.io/assets/images/thumbnails/people/paul-waller.webp"
       },
-      "local_path": "_boards/cheri-alliance.github.io--governing-board.md",
+      "local_path": "pages/cheri-alliance.github.io/alliance/leadership/governing-board.md",
       "local_route": "/sources/cheri-alliance.github.io/alliance/leadership/governing-board/",
       "main_content_checks": "passed"
     },
@@ -11100,7 +11100,7 @@
       "retrieved_at": "2026-10-09T19:29:04.022020+00:00",
       "reason_if_unresolved": "Shared chrome, complete asset/link routing and rendered layout not yet validated",
       "canonical_url": "https://cheri-alliance.github.io/build/platforms/cheriot/",
-      "local_path": "_platforms/cheri-alliance.github.io--cheriot.md",
+      "local_path": "_hardware/cheri-alliance.github.io--cheriot.md",
       "local_route": "/sources/cheri-alliance.github.io/build/platforms/cheriot/",
       "main_content_checks": "passed",
       "source_breadcrumb": [
@@ -11131,7 +11131,7 @@
       "retrieved_at": "2026-10-09T19:29:04.496083+00:00",
       "reason_if_unresolved": "Shared chrome, complete asset/link routing and rendered layout not yet validated",
       "canonical_url": "https://cheri-alliance.github.io/build/platforms/fpga-platforms/",
-      "local_path": "_platforms/cheri-alliance.github.io--fpga-platforms.md",
+      "local_path": "_hardware/cheri-alliance.github.io--fpga-platforms.md",
       "local_route": "/sources/cheri-alliance.github.io/build/platforms/fpga-platforms/",
       "main_content_checks": "passed",
       "source_breadcrumb": [
@@ -11162,7 +11162,7 @@
       "retrieved_at": "2026-10-09T19:29:03.519293+00:00",
       "reason_if_unresolved": "Shared chrome, complete asset/link routing and rendered layout not yet validated",
       "canonical_url": "https://cheri-alliance.github.io/build/platforms/morello/",
-      "local_path": "_platforms/cheri-alliance.github.io--morello.md",
+      "local_path": "_hardware/cheri-alliance.github.io--morello.md",
       "local_route": "/sources/cheri-alliance.github.io/build/platforms/morello/",
       "main_content_checks": "passed",
       "source_breadcrumb": [
@@ -11224,7 +11224,7 @@
       "retrieved_at": "2026-10-09T19:29:04.958845+00:00",
       "reason_if_unresolved": "Shared chrome, complete asset/link routing and rendered layout not yet validated",
       "canonical_url": "https://cheri-alliance.github.io/build/platforms/simulators/",
-      "local_path": "_platforms/cheri-alliance.github.io--simulators.md",
+      "local_path": "_software/cheri-alliance.github.io--simulators.md",
       "local_route": "/sources/cheri-alliance.github.io/build/platforms/simulators/",
       "main_content_checks": "passed",
       "source_breadcrumb": [
@@ -11255,7 +11255,7 @@
       "reason_if_unresolved": "Shared chrome, complete asset/link routing and rendered layout not yet validated",
       "title": "Sonata \u00b7 CHERI Alliance",
       "canonical_url": "https://cheri-alliance.github.io/build/platforms/sonata/",
-      "local_path": "_platforms/cheri-alliance.github.io--sonata.md",
+      "local_path": "_hardware/cheri-alliance.github.io--sonata.md",
       "local_route": "/sources/cheri-alliance.github.io/build/platforms/sonata/",
       "main_content_checks": "passed",
       "source_breadcrumb": [

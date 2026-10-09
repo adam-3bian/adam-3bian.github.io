@@ -1,10 +1,5 @@
 [
   {
-    "path": "_boards/cheri-alliance.github.io--governing-board.md",
-    "format": "yaml-front-matter-and-kramdown-only",
-    "status": "passed"
-  },
-  {
     "path": "_events/cheri-alliance.github.io--cheri-blossoms-conference-2025.md",
     "format": "yaml-front-matter-and-kramdown-only",
     "status": "passed"
@@ -181,6 +176,36 @@
   },
   {
     "path": "_guides/cheri-alliance.github.io--tutorials-and-training.md",
+    "format": "yaml-front-matter-and-kramdown-only",
+    "status": "passed"
+  },
+  {
+    "path": "_hardware/cheri-alliance.github.io--cheriot-ibex.md",
+    "format": "yaml-front-matter-and-kramdown-only",
+    "status": "passed"
+  },
+  {
+    "path": "_hardware/cheri-alliance.github.io--cheriot.md",
+    "format": "yaml-front-matter-and-kramdown-only",
+    "status": "passed"
+  },
+  {
+    "path": "_hardware/cheri-alliance.github.io--fpga-platforms.md",
+    "format": "yaml-front-matter-and-kramdown-only",
+    "status": "passed"
+  },
+  {
+    "path": "_hardware/cheri-alliance.github.io--morello.md",
+    "format": "yaml-front-matter-and-kramdown-only",
+    "status": "passed"
+  },
+  {
+    "path": "_hardware/cheri-alliance.github.io--sonata.md",
+    "format": "yaml-front-matter-and-kramdown-only",
+    "status": "passed"
+  },
+  {
+    "path": "_hardware/cheri-alliance.github.io--x730.md",
     "format": "yaml-front-matter-and-kramdown-only",
     "status": "passed"
   },
@@ -1095,31 +1120,6 @@
     "status": "passed"
   },
   {
-    "path": "_platforms/cheri-alliance.github.io--cheriot.md",
-    "format": "yaml-front-matter-and-kramdown-only",
-    "status": "passed"
-  },
-  {
-    "path": "_platforms/cheri-alliance.github.io--fpga-platforms.md",
-    "format": "yaml-front-matter-and-kramdown-only",
-    "status": "passed"
-  },
-  {
-    "path": "_platforms/cheri-alliance.github.io--morello.md",
-    "format": "yaml-front-matter-and-kramdown-only",
-    "status": "passed"
-  },
-  {
-    "path": "_platforms/cheri-alliance.github.io--simulators.md",
-    "format": "yaml-front-matter-and-kramdown-only",
-    "status": "passed"
-  },
-  {
-    "path": "_platforms/cheri-alliance.github.io--sonata.md",
-    "format": "yaml-front-matter-and-kramdown-only",
-    "status": "passed"
-  },
-  {
     "path": "_policies/cheri-alliance.github.io--code-of-conduct.md",
     "format": "yaml-front-matter-and-kramdown-only",
     "status": "passed"
@@ -1175,16 +1175,6 @@
     "status": "passed"
   },
   {
-    "path": "_products/cheri-alliance.github.io--cheriot-ibex.md",
-    "format": "yaml-front-matter-and-kramdown-only",
-    "status": "passed"
-  },
-  {
-    "path": "_products/cheri-alliance.github.io--x730.md",
-    "format": "yaml-front-matter-and-kramdown-only",
-    "status": "passed"
-  },
-  {
     "path": "_software/cheri-alliance.github.io--cheri-linux.md",
     "format": "yaml-front-matter-and-kramdown-only",
     "status": "passed"
@@ -1221,6 +1211,11 @@
   },
   {
     "path": "_software/cheri-alliance.github.io--rust.md",
+    "format": "yaml-front-matter-and-kramdown-only",
+    "status": "passed"
+  },
+  {
+    "path": "_software/cheri-alliance.github.io--simulators.md",
     "format": "yaml-front-matter-and-kramdown-only",
     "status": "passed"
   },
@@ -1506,6 +1501,11 @@
   },
   {
     "path": "pages/cheri-alliance.github.io/alliance/leadership/ambassadors.md",
+    "format": "yaml-front-matter-and-kramdown-only",
+    "status": "passed"
+  },
+  {
+    "path": "pages/cheri-alliance.github.io/alliance/leadership/governing-board.md",
     "format": "yaml-front-matter-and-kramdown-only",
     "status": "passed"
   },

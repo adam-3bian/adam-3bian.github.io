@@ -41,15 +41,11 @@ collections:
     output: true
   papers:
     output: true
-  boards:
+  hardware:
     output: true
   software:
     output: true
   groups:
-    output: true
-  platforms:
-    output: true
-  products:
     output: true
   guides:
     output: true

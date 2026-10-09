@@ -715,8 +715,8 @@ Grouped by source breadcrumb labels where available, otherwise provisional inven
 - [Case Studies · CHERI Alliance](https://cheri-alliance.github.io/adopt/assurance-and-adoption/case-studies/) → [pages/cheri-alliance.github.io/adopt/assurance-and-adoption/case-studies.md](pages/cheri-alliance.github.io/adopt/assurance-and-adoption/case-studies.md) — fetched; converted; unverified
 - [Certification · CHERI Alliance](https://cheri-alliance.github.io/adopt/assurance-and-adoption/certification/) → [pages/cheri-alliance.github.io/adopt/assurance-and-adoption/certification.md](pages/cheri-alliance.github.io/adopt/assurance-and-adoption/certification.md) — fetched; converted; unverified
 - [CHERI Enabled Products · CHERI Alliance](https://cheri-alliance.github.io/adopt/assurance-and-adoption/cheri-enabled-products/) → [pages/cheri-alliance.github.io/adopt/assurance-and-adoption/cheri-enabled-products.md](pages/cheri-alliance.github.io/adopt/assurance-and-adoption/cheri-enabled-products.md) — fetched; converted; unverified
-- [CHERIoT Ibex Certification Record · CHERI Alliance](https://cheri-alliance.github.io/adopt/assurance-and-adoption/cheri-enabled-products/cheriot-ibex/) → [_products/cheri-alliance.github.io--cheriot-ibex.md](_products/cheri-alliance.github.io--cheriot-ibex.md) — fetched; converted; unverified
-- [X730 Certification Record · CHERI Alliance](https://cheri-alliance.github.io/adopt/assurance-and-adoption/cheri-enabled-products/x730/) → [_products/cheri-alliance.github.io--x730.md](_products/cheri-alliance.github.io--x730.md) — fetched; converted; unverified
+- [CHERIoT Ibex Certification Record · CHERI Alliance](https://cheri-alliance.github.io/adopt/assurance-and-adoption/cheri-enabled-products/cheriot-ibex/) → [_hardware/cheri-alliance.github.io--cheriot-ibex.md](_hardware/cheri-alliance.github.io--cheriot-ibex.md) — fetched; converted; unverified
+- [X730 Certification Record · CHERI Alliance](https://cheri-alliance.github.io/adopt/assurance-and-adoption/cheri-enabled-products/x730/) → [_hardware/cheri-alliance.github.io--x730.md](_hardware/cheri-alliance.github.io--x730.md) — fetched; converted; unverified
 - [Procurement · CHERI Alliance](https://cheri-alliance.github.io/adopt/assurance-and-adoption/procurement/) → [pages/cheri-alliance.github.io/adopt/assurance-and-adoption/procurement.md](pages/cheri-alliance.github.io/adopt/assurance-and-adoption/procurement.md) — fetched; converted; unverified
 
 ### Adopt / Business Case
@@ -775,7 +775,7 @@ Grouped by source breadcrumb labels where available, otherwise provisional inven
 ### Alliance / Leadership
 
 - [Ambassadors · CHERI Alliance](https://cheri-alliance.github.io/alliance/leadership/ambassadors/) → [pages/cheri-alliance.github.io/alliance/leadership/ambassadors.md](pages/cheri-alliance.github.io/alliance/leadership/ambassadors.md) — fetched; converted; unverified
-- [Governing Board · CHERI Alliance](https://cheri-alliance.github.io/alliance/leadership/governing-board/) → [_boards/cheri-alliance.github.io--governing-board.md](_boards/cheri-alliance.github.io--governing-board.md) — fetched; converted; unverified
+- [Governing Board · CHERI Alliance](https://cheri-alliance.github.io/alliance/leadership/governing-board/) → [pages/cheri-alliance.github.io/alliance/leadership/governing-board.md](pages/cheri-alliance.github.io/alliance/leadership/governing-board.md) — fetched; converted; unverified
 - [Members · CHERI Alliance](https://cheri-alliance.github.io/alliance/leadership/members/) → [pages/cheri-alliance.github.io/alliance/leadership/members.md](pages/cheri-alliance.github.io/alliance/leadership/members.md) — fetched; converted; unverified
 - [Working Groups · CHERI Alliance](https://cheri-alliance.github.io/alliance/leadership/working-groups/) → [pages/cheri-alliance.github.io/alliance/leadership/working-groups.md](pages/cheri-alliance.github.io/alliance/leadership/working-groups.md) — fetched; converted; unverified
 
@@ -865,12 +865,12 @@ Grouped by source breadcrumb labels where available, otherwise provisional inven
 ### Build / Platforms
 
 - [CHERI Products · CHERI Alliance](https://cheri-alliance.github.io/build/platforms/cheri-products/) → [pages/cheri-alliance.github.io/build/platforms/cheri-products.md](pages/cheri-alliance.github.io/build/platforms/cheri-products.md) — fetched; converted; unverified
-- [CHERIoT · CHERI Alliance](https://cheri-alliance.github.io/build/platforms/cheriot/) → [_platforms/cheri-alliance.github.io--cheriot.md](_platforms/cheri-alliance.github.io--cheriot.md) — fetched; converted; unverified
-- [FPGA Platforms · CHERI Alliance](https://cheri-alliance.github.io/build/platforms/fpga-platforms/) → [_platforms/cheri-alliance.github.io--fpga-platforms.md](_platforms/cheri-alliance.github.io--fpga-platforms.md) — fetched; converted; unverified
-- [Morello · CHERI Alliance](https://cheri-alliance.github.io/build/platforms/morello/) → [_platforms/cheri-alliance.github.io--morello.md](_platforms/cheri-alliance.github.io--morello.md) — fetched; converted; unverified
+- [CHERIoT · CHERI Alliance](https://cheri-alliance.github.io/build/platforms/cheriot/) → [_hardware/cheri-alliance.github.io--cheriot.md](_hardware/cheri-alliance.github.io--cheriot.md) — fetched; converted; unverified
+- [FPGA Platforms · CHERI Alliance](https://cheri-alliance.github.io/build/platforms/fpga-platforms/) → [_hardware/cheri-alliance.github.io--fpga-platforms.md](_hardware/cheri-alliance.github.io--fpga-platforms.md) — fetched; converted; unverified
+- [Morello · CHERI Alliance](https://cheri-alliance.github.io/build/platforms/morello/) → [_hardware/cheri-alliance.github.io--morello.md](_hardware/cheri-alliance.github.io--morello.md) — fetched; converted; unverified
 - [Platform Comparison · CHERI Alliance](https://cheri-alliance.github.io/build/platforms/platform-comparison/) → [pages/cheri-alliance.github.io/build/platforms/platform-comparison.md](pages/cheri-alliance.github.io/build/platforms/platform-comparison.md) — fetched; converted; unverified
-- [Simulators · CHERI Alliance](https://cheri-alliance.github.io/build/platforms/simulators/) → [_platforms/cheri-alliance.github.io--simulators.md](_platforms/cheri-alliance.github.io--simulators.md) — fetched; converted; unverified
-- [Sonata · CHERI Alliance](https://cheri-alliance.github.io/build/platforms/sonata/) → [_platforms/cheri-alliance.github.io--sonata.md](_platforms/cheri-alliance.github.io--sonata.md) — fetched; converted; unverified
+- [Simulators · CHERI Alliance](https://cheri-alliance.github.io/build/platforms/simulators/) → [_software/cheri-alliance.github.io--simulators.md](_software/cheri-alliance.github.io--simulators.md) — fetched; converted; unverified
+- [Sonata · CHERI Alliance](https://cheri-alliance.github.io/build/platforms/sonata/) → [_hardware/cheri-alliance.github.io--sonata.md](_hardware/cheri-alliance.github.io--sonata.md) — fetched; converted; unverified
 
 ### Build / Software Ecosystem
 

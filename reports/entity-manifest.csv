@@ -36,8 +36,8 @@ assurance-and-certification,pages,https://cheri-alliance.github.io/adopt/assuran
 case-studies,pages,https://cheri-alliance.github.io/adopt/assurance-and-adoption/case-studies/,,reports/validation/5b588c7beccb1574/source-signature.json,source-backed
 certification,pages,https://cheri-alliance.github.io/adopt/assurance-and-adoption/certification/,,reports/validation/0e42acafd60d72b7/source-signature.json,source-backed
 cheri-enabled-products,pages,https://cheri-alliance.github.io/adopt/assurance-and-adoption/cheri-enabled-products/,,reports/validation/f44cc693f07062f5/source-signature.json,source-backed
-cheri-alliance.github.io--cheriot-ibex,products,https://cheri-alliance.github.io/adopt/assurance-and-adoption/cheri-enabled-products/cheriot-ibex/,,reports/validation/6cfc6d9fe28d7668/source-signature.json,source-backed
-cheri-alliance.github.io--x730,products,https://cheri-alliance.github.io/adopt/assurance-and-adoption/cheri-enabled-products/x730/,,reports/validation/efad7d34813677c0/source-signature.json,source-backed
+cheri-alliance.github.io--cheriot-ibex,hardware,https://cheri-alliance.github.io/adopt/assurance-and-adoption/cheri-enabled-products/cheriot-ibex/,,reports/validation/6cfc6d9fe28d7668/source-signature.json,source-backed
+cheri-alliance.github.io--x730,hardware,https://cheri-alliance.github.io/adopt/assurance-and-adoption/cheri-enabled-products/x730/,,reports/validation/efad7d34813677c0/source-signature.json,source-backed
 procurement,pages,https://cheri-alliance.github.io/adopt/assurance-and-adoption/procurement/,,reports/validation/3bc3b979d2fd940c/source-signature.json,source-backed
 adoption-costs-and-migration,pages,https://cheri-alliance.github.io/adopt/business-case/adoption-costs-and-migration/,,reports/validation/5985061da441db04/source-signature.json,source-backed
 cost-of-memory-unsafety,pages,https://cheri-alliance.github.io/adopt/business-case/cost-of-memory-unsafety/,,reports/validation/dedf1e5d2103096a/source-signature.json,source-backed
@@ -60,7 +60,7 @@ governance,pages,https://cheri-alliance.github.io/alliance/about-and-governance/
 mission-and-role,pages,https://cheri-alliance.github.io/alliance/about-and-governance/mission-and-role/,,reports/validation/86429df102325785/source-signature.json,source-backed
 cheri-alliance.github.io--trademark,policies,https://cheri-alliance.github.io/alliance/about-and-governance/trademark/,,reports/validation/fbdbc0585a296bab/source-signature.json,source-backed
 ambassadors,pages,https://cheri-alliance.github.io/alliance/leadership/ambassadors/,,reports/validation/947167ce6202f7d4/source-signature.json,source-backed
-cheri-alliance.github.io--governing-board,boards,https://cheri-alliance.github.io/alliance/leadership/governing-board/,,reports/validation/ba671276976c6eca/source-signature.json,source-backed
+governing-board,pages,https://cheri-alliance.github.io/alliance/leadership/governing-board/,,reports/validation/ba671276976c6eca/source-signature.json,source-backed
 members,pages,https://cheri-alliance.github.io/alliance/leadership/members/,,reports/validation/29c9a7b8f2881fd8/source-signature.json,source-backed
 working-groups,pages,https://cheri-alliance.github.io/alliance/leadership/working-groups/,,reports/validation/13f93cabcccfa7ab/source-signature.json,source-backed
 cheri-alliance.github.io--certification-working-group,groups,https://cheri-alliance.github.io/alliance/leadership/working-groups/certification-working-group/,,reports/validation/9efcbce93660b3d5/source-signature.json,source-backed
@@ -99,12 +99,12 @@ cheri-alliance.github.io--run-cheri-in-simulation,guides,https://cheri-alliance.
 cheri-alliance.github.io--technical-faq,guides,https://cheri-alliance.github.io/build/developers/technical-faq,,reports/validation/e56b0326f91f538b/source-signature.json,source-backed
 cheri-alliance.github.io--tutorials-and-training,guides,https://cheri-alliance.github.io/build/developers/tutorials-and-training/,,reports/validation/2b3f5927774fd143/source-signature.json,source-backed
 cheri-products,pages,https://cheri-alliance.github.io/build/platforms/cheri-products/,,reports/validation/758cbf7f73ad588a/source-signature.json,source-backed
-cheri-alliance.github.io--cheriot,platforms,https://cheri-alliance.github.io/build/platforms/cheriot/,,reports/validation/371a211ec3f80e3c/source-signature.json,source-backed
-cheri-alliance.github.io--fpga-platforms,platforms,https://cheri-alliance.github.io/build/platforms/fpga-platforms/,,reports/validation/dde1f5992b587554/source-signature.json,source-backed
-cheri-alliance.github.io--morello,platforms,https://cheri-alliance.github.io/build/platforms/morello/,,reports/validation/fb2d59c68b8fd087/source-signature.json,source-backed
+cheri-alliance.github.io--cheriot,hardware,https://cheri-alliance.github.io/build/platforms/cheriot/,,reports/validation/371a211ec3f80e3c/source-signature.json,source-backed
+cheri-alliance.github.io--fpga-platforms,hardware,https://cheri-alliance.github.io/build/platforms/fpga-platforms/,,reports/validation/dde1f5992b587554/source-signature.json,source-backed
+cheri-alliance.github.io--morello,hardware,https://cheri-alliance.github.io/build/platforms/morello/,,reports/validation/fb2d59c68b8fd087/source-signature.json,source-backed
 platform-comparison,pages,https://cheri-alliance.github.io/build/platforms/platform-comparison/,,reports/validation/2d100ec6e05db639/source-signature.json,source-backed
-cheri-alliance.github.io--simulators,platforms,https://cheri-alliance.github.io/build/platforms/simulators/,,reports/validation/d271f48e3cc5c67a/source-signature.json,source-backed
-cheri-alliance.github.io--sonata,platforms,https://cheri-alliance.github.io/build/platforms/sonata/,,reports/validation/110d7fd691632147/source-signature.json,source-backed
+cheri-alliance.github.io--simulators,software,https://cheri-alliance.github.io/build/platforms/simulators/,,reports/validation/d271f48e3cc5c67a/source-signature.json,source-backed
+cheri-alliance.github.io--sonata,hardware,https://cheri-alliance.github.io/build/platforms/sonata/,,reports/validation/110d7fd691632147/source-signature.json,source-backed
 software-ecosystem,pages,https://cheri-alliance.github.io/build/software-ecosystem/,,reports/validation/a9e2c222f799de5d/source-signature.json,source-backed
 cheri-alliance.github.io--cheri-linux,software,https://cheri-alliance.github.io/build/software-ecosystem/cheri-linux/,,reports/validation/8b8272d0d8050781/source-signature.json,source-backed
 cheri-alliance.github.io--cheribsd,software,https://cheri-alliance.github.io/build/software-ecosystem/cheribsd/,,reports/validation/68f2616eabf322e8/source-signature.json,source-backed

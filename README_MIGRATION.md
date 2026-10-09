@@ -48,3 +48,7 @@ The public crawler consults robots.txt, reads sitemaps and follows internal link
 `crawl_assets.py` retains original bytes, verifies file structure and deduplicates by SHA-256. Asset ownership follows source paths or explicit publication records. Source image 404s remain original references and reported exceptions. Paper entries reproduce the complete source catalogue; full external PDFs remain blocked by network policy. Poppins source CSS/fonts are local; derived font CSS rewrites only asset URLs.
 
 The final declared batch covers all 372 converted source URL mappings. Incremental batches remain as acquisition history. All 382 editorial files pass format checks; 99 browser-backed profiles/articles pass desktop image geometry and visible-content checks. Additional collection source screenshots do not imply completed whole-page layout verification. Local navigation routing, remaining WordPress conversion/assets and full mobile/whole-site validation are still outstanding.
+
+## Hardware and software collections
+
+The user clarified that boards means hardware boards. Use `_hardware/` for hardware platforms, boards and processor cores, and `_software/` for operating systems, tools and simulators. Hardware product profiles join `_hardware/`; retain each original body and source route. The governing board is a standalone page under `pages/cheri-alliance.github.io/alliance/leadership/`, with its source-backed member registry retained in `_data/governing-board.yml`. Do not create a `_boards/` collection for governance.
