@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/people/david-musliner/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/people/david-musliner/5770f907f606-portrait.jpg": "https://cheri-alliance.github.io/assets/images/content/people/david-musliner/portrait.jpg"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

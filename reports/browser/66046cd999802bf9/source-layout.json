@@ -1,0 +1,58 @@
+{
+  "main_text": "Alliance\nAbout & Governance\nCollaboration Principles\nCollaboration Principles\n\nCollaboration, openness, and shared effort are at the heart of CHERI adoption.\n\nThe CHERI Alliance exists because no single organisation can build a secure computing ecosystem alone. Hardware vendors, software developers, researchers, standards bodies, governments, educators, integrators, and users all have an important role to play.\n\nCollaboration is therefore one of the Alliance’s core principles. Wherever practical, we aim to help organisations work together on shared challenges while allowing each participant to maintain ownership of its own products, projects, and priorities.\n\nOpen by default\n\nThe Alliance believes that accelerating CHERI adoption requires a strong foundation of shared knowledge, open resources, and collaborative development.\n\nWhenever practical, Alliance outputs are developed openly and made publicly available so the wider ecosystem can benefit. This helps avoid duplicated effort, encourages participation, and allows organisations to focus their resources on the areas that differentiate their products and services.\n\nExamples include:\n\neducational material and tutorials\ntechnical guidance, recommendations and standards-related material\nsoftware demonstrations and examples\ncommunity resources and outreach material\nshared compliance and test assets\ncontributions to open-source projects\n\nThe Alliance aims to make outputs open whenever practical, but some discussions, planning activities, and collaborative work may take place within member-only groups before being released publicly, or even stay internal. This balance allows organisations to collaborate effectively while ensuring that the wider ecosystem benefits from the results.\n\nChoosing the right licence\n\nDifferent types of collaboration have different requirements. The Alliance therefore applies licences that best support the intended use of each resource.\n\nIn general:\n\nEducational material, tutorials, outreach content, and technical recommendations are normally released under an open Creative Commons licence - preferably CC-BY-SA \nSoftware examples, compliance assets, and technical contributions are normally released under permissive open-source licences to encourage adoption and contribution\nContributions made to existing external projects generally retain the licence of that project\nInternal member discussions and confidential information remain protected where required\nThe CHERI® trademark remains protected and subject to the Trademark Policy\n\nThe goal is simple: maximise reuse and collaboration while respecting legitimate confidentiality, ownership, and operational requirements.\n\nCollaboration without losing ownership\n\nParticipation in the Alliance does not require organisations to give up ownership of their products, research, or intellectual property. Our IP Policy has been designed to recognise each member’s IP and support collaboration while helping ensure that CHERI Alliance standards can be implemented without unreasonable licensing barriers.\n\nWhere collaboration creates shared resources, the preferred approach is to make those outputs openly available whenever practical.\n\nThis allows organisations to collaborate on common challenges without losing control of the technologies that differentiate their own products and services.\n\nSharing benefits everyone\n\nCollaborative development creates benefits across the ecosystem:\n\nReduced duplication of effort\nFaster adoption of CHERI technology\nBetter interoperability across platforms\nStronger educational resources\nShared solutions to common problems\nIncreased visibility for participating organisations\n\nBy working together on shared foundations, Alliance members can spend more time innovating and less time solving the same problems independently. This alignment work also creates opportunities for vendors to create solutions that would be compatible with multiple vendors, hence enabling profitable markets that ultimately benefit CHERI adoption.\n\nCollaborating beyond membership\n\nOn some projects, in particular for open-source software, the CHERI Alliance working groups also collaborate more widely with open-source communities. This pragmatic approach helps ensure that projects progress as fast as possible, without waiting for all participants to become members.\n\nThe goal is to accelerate progress across the ecosystem, not to create barriers to participation.\n\nWhere next\nTechnical Leadership\n\nAn overview of the technical leadership that guides Alliance priorities and working activity.\n\nContinue\nRelated content\nAbout the CHERI Alliance\n\nLearn how the Alliance connects organisations working across the CHERI ecosystem.\n\nRead this page\nMission & Role\n\nA statement of what the CHERI Alliance exists to support and the boundaries of its role.\n\nRead this page",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 3798.5625
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/shared/cc-by-sa.webp",
+      "alt": "CC-BY-SA",
+      "rect": {
+        "x": 184,
+        "y": 1552.203125,
+        "width": 200,
+        "height": 50
+      },
+      "natural_width": 200,
+      "natural_height": 50,
+      "style": {
+        "float": "none",
+        "display": "inline"
+      },
+      "parent": {
+        "x": 184,
+        "y": 1497.828125,
+        "width": 744,
+        "height": 112.5625
+      },
+      "parent_classes": [],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 3798.5625
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/alliance/about-and-governance/collaboration-principles/",
+  "final_url": "https://cheri-alliance.github.io/alliance/about-and-governance/collaboration-principles/",
+  "retrieved_at": "2026-10-09T21:52:50.288815+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

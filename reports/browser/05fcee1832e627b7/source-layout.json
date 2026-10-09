@@ -1,0 +1,61 @@
+{
+  "main_text": "Alliance\nMembers\nPA Consulting\nPA Consulting\n\nPA Consulting is a global innovation and transformation consultancy that combines strategy, design, engineering, technology, and business expertise to help organisations solve complex challenges, develop new products and services, and deliver lasting change. Working across sectors including government, defence, healthcare, energy, and transport, the company focuses on turning ideas into practical, real-world impact.\n\nStatus\nMember\nMembership\nFull Member\nWebsite\nVisit member website\nDescription\n\nWe believe in the power of ingenuity to build a positive human future. As strategies, technologies, and innovation collide, we create opportunity from complexity. Our diverse teams of experts combine innovative thinking and breakthrough technologies to progress further, faster. Our clients adapt and transform, and together we achieve enduring results. We are about 4,000 strategists, innovators, designers, consultants, digital experts, scientists, engineers, and technologists. And we have deep expertise in consumer and manufacturing, defence and security, energy and utilities, financial services, government and public services, health and life sciences, and transport. Our teams operate globally from offices across the UK, Ireland, US, Nordics, and Netherlands.\n\nCHERI Activities\n\nPA Consulting leads the UK Government-funded CHERI Secure by Design Managed Deployment Programme, working with technology suppliers, asset owners and end users to accelerate the adoption of CHERI-enabled products, capture deployment lessons, and support wider market uptake across critical sectors.\n\nBack to all members",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 1236.3125
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/members/pa-consulting/logo.png",
+      "alt": "PA Consulting logo",
+      "rect": {
+        "x": 196.578125,
+        "y": 552.890625,
+        "width": 208.421875,
+        "height": 137.71875
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 527.890625,
+        "width": 281.59375,
+        "height": 187.71875
+      },
+      "parent_classes": [
+        "entity-media",
+        "entity-media--logo"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 527.890625,
+        "width": 742.40625,
+        "height": 552.625
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/members/pa-consulting/",
+  "final_url": "https://cheri-alliance.github.io/members/pa-consulting/",
+  "retrieved_at": "2026-10-09T21:54:14.715464+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

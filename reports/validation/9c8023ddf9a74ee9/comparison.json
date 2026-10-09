@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/people/kathleen-fisher/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/people/kathleen-fisher/97d46ec3ab50-portrait.jpg": "https://cheri-alliance.github.io/assets/images/content/people/kathleen-fisher/portrait.jpg"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

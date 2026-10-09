@@ -1,0 +1,17 @@
+_site/
+.jekyll-cache/
+.bundle/
+__pycache__/
+.venv/
+reports/checkpoint-*.json
+reports/checkpoint-*.tmp
+reports/*.lock
+reports/*.json.*.tmp
+
+# Source HTML and visual captures remain local acquisition evidence.
+sources/
+reports/browser/**/*.html
+reports/browser/**/*.png
+reports/browser/**/history/
+reports/validation/**/*.html
+reports/*.log

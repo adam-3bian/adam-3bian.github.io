@@ -1,0 +1,91 @@
+{
+  "text": "Alliance Members BT Group BT Group BT Group is the UK’s leading provider of fixed and mobile telecommunications and related secure digital products, solutions and services. We also provide managed telecommunications, security and network & IT infrastructure services to customers… Status Member Membership Full Member Website Visit member website Description BT Group is the UK’s leading provider of fixed and mobile telecommunications and related secure digital products, solutions and services. We also provide managed telecommunications, security and network & IT infrastructure services to customers across 180 countries. CHERI Activities BT Group manages a vast telecommunications infrastructure, and is an advocate of memory-safety technologies. Combining these factors, BT’s research and cybersecurity departments are exploring CHERI within a network services context and are keen to work with alliance partners to test and evaluate the technology. Back to all members",
+  "headings": [
+    [
+      "h1",
+      "BT Group",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Description",
+      "description"
+    ],
+    [
+      "h2",
+      "CHERI Activities",
+      "cheri-activities"
+    ]
+  ],
+  "paragraphs": [
+    "Alliance",
+    "Members",
+    "BT Group",
+    "BT Group is the UK’s leading provider of fixed and mobile telecommunications and related secure digital products, solutions and services. We also provide managed telecommunications, security and network & IT infrastructure services to customers…",
+    "BT Group is the UK’s leading provider of fixed and mobile telecommunications and related secure digital products, solutions and services. We also provide managed telecommunications, security and network & IT infrastructure services to customers across 180 countries.",
+    "BT Group manages a vast telecommunications infrastructure, and is an advocate of memory-safety technologies. Combining these factors, BT’s research and cybersecurity departments are exploring CHERI within a network services context and are keen to work with alliance partners to test and evaluate the technology.",
+    "Back to all members"
+  ],
+  "lists": [
+    [
+      "ol",
+      "Alliance Members BT Group"
+    ],
+    [
+      "li",
+      "Alliance"
+    ],
+    [
+      "li",
+      "Members"
+    ],
+    [
+      "li",
+      "BT Group"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://www.bt.com/about",
+      "Visit member website"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/leadership/members/",
+      "Back to all members"
+    ]
+  ],
+  "images": [
+    [
+      "https://cheri-alliance.github.io/assets/images/content/members/bt-group/logo.png",
+      "BT Group"
+    ]
+  ],
+  "definitions": [
+    [
+      "dt",
+      "Status"
+    ],
+    [
+      "dd",
+      "Member"
+    ],
+    [
+      "dt",
+      "Membership"
+    ],
+    [
+      "dd",
+      "Full Member"
+    ],
+    [
+      "dt",
+      "Website"
+    ],
+    [
+      "dd",
+      "Visit member website"
+    ]
+  ],
+  "code_blocks": []
+}

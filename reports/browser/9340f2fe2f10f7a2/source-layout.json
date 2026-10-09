@@ -1,0 +1,61 @@
+{
+  "main_text": "Alliance\nMembers\nParvat Infotech\nParvat Infotech\n\nParvat Infotech is an Indian software development consultancy, established in 2003. It provides a small sharp team of experts with a deep understanding of bespoke software development. We take great care to provide the best engineering solutions to…\n\nStatus\nFounding member\nMembership\nFull Member\nWebsite\nVisit member website\nDescription\n\nParvat Infotech is an Indian software development consultancy, established in 2003. It provides a small sharp team of experts with a deep understanding of bespoke software development. We take great care to provide the best engineering solutions to fulfill our customers’ requirements. We are based in Bangalore, the high-tech capital of India, giving us access to the cream of technical talent, both in academia and industry. Strong links to the UK, through our sister company, Mission Critical Applications Limited, has opened up our interest in deploying CHERI in the Indian Market.\n\nCHERI Activities\n\nParvat Infotech is a newcomer to CHERI, however our principals have experience of working with CHERI in the UK, at our sister company, Mission Critical Applications Limited, within the DSbD programme. The fast pace of automation by the Indian government means that there are huge numbers of critical systems in India, many of which of which use legacy software, and so are open to memory attacks. At one end of the spectrum, there are the servers that run the “digital government” portals, and at the other end, there are systems embedded into utility services such as electricity, water, telecom, etc., and the thousands of IOT devices being rolled-out in the various smart city initiatives. These are all likely to have memory vulnerabilities. At Parvat we see CHERI as a transformational technology which can make all these systems more secure, but the system owners need assistance to move their systems to a CHERI and/or CHERIoT foundation. We have experience across this spectrum, so can offer end-to-end support, regardless of the types of systems involved. Where it is not yet feasible to roll out CHERI hardware, we want to enable our clients to run their test suites on CHERI infrastructure, so that as many memory problems as possible can be discovered during extended system testing.\n\nBack to all members",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 1416.53125
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/members/parvat-infotech/logo.png",
+      "alt": "Parvat logo",
+      "rect": {
+        "x": 196.578125,
+        "y": 488.421875,
+        "width": 208.421875,
+        "height": 137.71875
+      },
+      "natural_width": 2000,
+      "natural_height": 1107,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 463.421875,
+        "width": 281.59375,
+        "height": 187.71875
+      },
+      "parent_classes": [
+        "entity-media",
+        "entity-media--logo"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 463.421875,
+        "width": 742.40625,
+        "height": 797.3125
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/members/parvat-infotech/",
+  "final_url": "https://cheri-alliance.github.io/members/parvat-infotech/",
+  "retrieved_at": "2026-10-09T21:54:16.119833+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

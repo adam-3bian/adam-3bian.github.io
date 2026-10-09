@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/people/hesham-almatary/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/people/hesham-almatary/78ef1fc5643c-portrait.png": "https://cheri-alliance.github.io/assets/images/content/people/hesham-almatary/portrait.png"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

@@ -1,0 +1,61 @@
+{
+  "main_text": "News & Events\nSpeakers\nPeter Cox\nPeter Cox\n\nUM Labs\n\nOrganisation\nUM Labs\nLinkedIn\nBiography\n\nPeter Cox is the CEO and founder of UM Labs, a UK R&D company specialising in cybersecurity for real-time application on IP networks. Peter has over 30 years’ experience in cybersecurity including as a co-founder of one of the pioneering firewall companies. At this company, Peter was responsible for gaining the fist ever Common Criteria EAL4 certification for a firewall.\n\nPeter founded UM Labs to research and develop effective cybersecurity defences for voice and video calls on IP networks using the SIP. The resulting technology is now deployed for a national defence force. Supported by Dstl, the technology was extended to secure static and mobile surveillance video. Subsequent development extended the technology to secure extended reality and IoT applications.\n\nCHERI Talks\n\nSecuring Real-Time Communication: Porting and running Edge Computing for mission critical services on Morello CHERI | CHERI Blossoms 2026\n\n27/03/2026\n\nCambridge, UK\n\nView Slides\n\nView Slides\n\nBack to all speakers",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 1308.9375
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/people/peter-cox/portrait.jpg",
+      "alt": "Peter Cox",
+      "rect": {
+        "x": 161,
+        "y": 399.953125,
+        "width": 279.59375,
+        "height": 291.484375
+      },
+      "natural_width": 1151,
+      "natural_height": 1200,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 398.953125,
+        "width": 281.59375,
+        "height": 211.1875
+      },
+      "parent_classes": [
+        "entity-media",
+        "entity-media--portrait"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 398.953125,
+        "width": 742.40625,
+        "height": 754.1875
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/people/peter-cox/",
+  "final_url": "https://cheri-alliance.github.io/people/peter-cox/",
+  "retrieved_at": "2026-10-09T21:08:08.254622+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

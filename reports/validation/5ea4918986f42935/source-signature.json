@@ -1,0 +1,267 @@
+{
+  "text": "Adopt Assurance & Adoption The CHERI Enabled Programme The CHERI Enabled Programme Independent review. Transparent evidence. Greater confidence. The CHERI Enabled programme helps organisations demonstrate how a product implements CHERI technology. Certified products receive a public certification record describing what was assessed, the supporting evidence, and the scope of the certification. See all the CHERI Enabled products Why CHERI Enabled matters As CHERI adoption grows, products may implement CHERI in very different ways. CHERI Enabled helps organisations move beyond marketing claims by providing: A defined product and version A documented certification scope Reviewed technical evidence A public certification record A common basis for comparing products For buyers, this reduces uncertainty. For product developers, it provides an independent way to demonstrate implementation quality and build confidence in security claims. How certification works Products are assessed through a structured review process: Define the product and certification scope Submit evidence Participate in technical reviews and interviews Receive a certification decision Get a certification record and authorisation to use the CHERI Enabled mark Renew certification as products and requirements evolve Updated or derivative products may follow a streamlined reassessment process. What certification evaluates Certification reviews evidence relating to: How CHERI is implemented The protection provided by the product Verification and testing evidence Known limitations and integration considerations The resulting certification record helps customers understand what has been assessed and what security properties the product aims to provide. Scope and limitations Certification represents the Alliance’s assessment of the submitted evidence. It does not guarantee complete product security, replace product assurance activities, or automatically extend to systems, applications, or products outside the certified scope. Security outcomes always depend on how technology is integrated, configured, and maintained. Keeping certification relevant The programme will expand over time as the CHERI ecosystem grows, introducing additional product categories, requirements, and assessment criteria. Certifications are therefore reviewed every two years to help ensure that records remain aligned with current programme requirements. Read the current programme specifications. Fees First certification: £3,000 (£1,000 for CHERI Alliance members) Recertification: £1,500 (£500 for CHERI Alliance members) The recertification fee also applies to derivative products. Apply for certification CHERI Enabled certification helps organisations: Demonstrate implementation quality Build customer and partner confidence Support procurement and assurance activities Differentiate products in a growing CHERI ecosystem Ready to certify a product? Contact the CHERI Alliance to start the process. Where next CHERI Enabled Products All products that have received the CHERI Enabled mark. Continue",
+  "headings": [
+    [
+      "h1",
+      "The CHERI Enabled Programme",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Why CHERI Enabled matters",
+      "why-cheri-enabled-matters"
+    ],
+    [
+      "h2",
+      "How certification works",
+      "how-certification-works"
+    ],
+    [
+      "h2",
+      "What certification evaluates",
+      "what-certification-evaluates"
+    ],
+    [
+      "h2",
+      "Scope and limitations",
+      "scope-and-limitations"
+    ],
+    [
+      "h2",
+      "Keeping certification relevant",
+      "keeping-certification-relevant"
+    ],
+    [
+      "h2",
+      "Fees",
+      "fees"
+    ],
+    [
+      "h2",
+      "Apply for certification",
+      "apply-for-certification"
+    ],
+    [
+      "h2",
+      "Where next",
+      null
+    ],
+    [
+      "h3",
+      "CHERI Enabled Products",
+      null
+    ]
+  ],
+  "paragraphs": [
+    "Adopt",
+    "Assurance & Adoption",
+    "The CHERI Enabled Programme",
+    "Independent review. Transparent evidence. Greater confidence.",
+    "The CHERI Enabled programme helps organisations demonstrate how a product implements CHERI technology. Certified products receive a public certification record describing what was assessed, the supporting evidence, and the scope of the certification.",
+    "As CHERI adoption grows, products may implement CHERI in very different ways. CHERI Enabled helps organisations move beyond marketing claims by providing:",
+    "A defined product and version",
+    "A documented certification scope",
+    "Reviewed technical evidence",
+    "A public certification record",
+    "A common basis for comparing products",
+    "For buyers, this reduces uncertainty. For product developers, it provides an independent way to demonstrate implementation quality and build confidence in security claims.",
+    "Products are assessed through a structured review process:",
+    "Define the product and certification scope",
+    "Submit evidence",
+    "Participate in technical reviews and interviews",
+    "Receive a certification decision",
+    "Get a certification record and authorisation to use the CHERI Enabled mark",
+    "Renew certification as products and requirements evolve",
+    "Updated or derivative products may follow a streamlined reassessment process.",
+    "Certification reviews evidence relating to:",
+    "How CHERI is implemented",
+    "The protection provided by the product",
+    "Verification and testing evidence",
+    "Known limitations and integration considerations",
+    "The resulting certification record helps customers understand what has been assessed and what security properties the product aims to provide.",
+    "Certification represents the Alliance’s assessment of the submitted evidence. It does not guarantee complete product security, replace product assurance activities, or automatically extend to systems, applications, or products outside the certified scope.",
+    "Security outcomes always depend on how technology is integrated, configured, and maintained.",
+    "The programme will expand over time as the CHERI ecosystem grows, introducing additional product categories, requirements, and assessment criteria. Certifications are therefore reviewed every two years to help ensure that records remain aligned with current programme requirements.",
+    "Read the current programme specifications.",
+    "First certification: £3,000 (£1,000 for CHERI Alliance members)",
+    "Recertification: £1,500 (£500 for CHERI Alliance members)",
+    "The recertification fee also applies to derivative products.",
+    "CHERI Enabled certification helps organisations:",
+    "Demonstrate implementation quality",
+    "Build customer and partner confidence",
+    "Support procurement and assurance activities",
+    "Differentiate products in a growing CHERI ecosystem",
+    "Ready to certify a product? Contact the CHERI Alliance to start the process.",
+    "All products that have received the CHERI Enabled mark."
+  ],
+  "lists": [
+    [
+      "ol",
+      "Adopt Assurance & Adoption The CHERI Enabled Programme"
+    ],
+    [
+      "li",
+      "Adopt"
+    ],
+    [
+      "li",
+      "Assurance & Adoption"
+    ],
+    [
+      "li",
+      "The CHERI Enabled Programme"
+    ],
+    [
+      "ul",
+      "A defined product and version A documented certification scope Reviewed technical evidence A public certification record A common basis for comparing products"
+    ],
+    [
+      "li",
+      "A defined product and version"
+    ],
+    [
+      "li",
+      "A documented certification scope"
+    ],
+    [
+      "li",
+      "Reviewed technical evidence"
+    ],
+    [
+      "li",
+      "A public certification record"
+    ],
+    [
+      "li",
+      "A common basis for comparing products"
+    ],
+    [
+      "ul",
+      "Define the product and certification scope Submit evidence Participate in technical reviews and interviews Receive a certification decision Get a certification record and authorisation to use the CHERI Enabled mark Renew certification as products and requirements evolve"
+    ],
+    [
+      "li",
+      "Define the product and certification scope"
+    ],
+    [
+      "li",
+      "Submit evidence"
+    ],
+    [
+      "li",
+      "Participate in technical reviews and interviews"
+    ],
+    [
+      "li",
+      "Receive a certification decision"
+    ],
+    [
+      "li",
+      "Get a certification record and authorisation to use the CHERI Enabled mark"
+    ],
+    [
+      "li",
+      "Renew certification as products and requirements evolve"
+    ],
+    [
+      "ul",
+      "How CHERI is implemented The protection provided by the product Verification and testing evidence Known limitations and integration considerations"
+    ],
+    [
+      "li",
+      "How CHERI is implemented"
+    ],
+    [
+      "li",
+      "The protection provided by the product"
+    ],
+    [
+      "li",
+      "Verification and testing evidence"
+    ],
+    [
+      "li",
+      "Known limitations and integration considerations"
+    ],
+    [
+      "ul",
+      "First certification: £3,000 (£1,000 for CHERI Alliance members) Recertification: £1,500 (£500 for CHERI Alliance members)"
+    ],
+    [
+      "li",
+      "First certification: £3,000 (£1,000 for CHERI Alliance members)"
+    ],
+    [
+      "li",
+      "Recertification: £1,500 (£500 for CHERI Alliance members)"
+    ],
+    [
+      "ul",
+      "Demonstrate implementation quality Build customer and partner confidence Support procurement and assurance activities Differentiate products in a growing CHERI ecosystem"
+    ],
+    [
+      "li",
+      "Demonstrate implementation quality"
+    ],
+    [
+      "li",
+      "Build customer and partner confidence"
+    ],
+    [
+      "li",
+      "Support procurement and assurance activities"
+    ],
+    [
+      "li",
+      "Differentiate products in a growing CHERI ecosystem"
+    ]
+  ],
+  "tables": [
+    [
+      "table",
+      "See all the CHERI Enabled products"
+    ],
+    [
+      "tr",
+      "See all the CHERI Enabled products"
+    ],
+    [
+      "td",
+      ""
+    ],
+    [
+      "td",
+      "See all the CHERI Enabled products"
+    ]
+  ],
+  "links": [
+    [
+      "https://cheri-alliance.github.io/adopt/assurance-and-adoption/cheri-enabled-products/",
+      "CHERI Enabled products"
+    ],
+    [
+      "https://cheri-alliance.github.io/assets/pdf/certification-program-v1.pdf",
+      "current programme specifications"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/membership/contact/",
+      "Contact the CHERI Alliance"
+    ],
+    [
+      "https://cheri-alliance.github.io/adopt/assurance-and-adoption/cheri-enabled-products/",
+      "CHERI Enabled Products All products that have received the CHERI Enabled mark. Continue"
+    ]
+  ],
+  "images": [
+    [
+      "https://cheri-alliance.github.io/assets/images/thumbnails/shared/cheri-enabled.webp",
+      "CHERI Enabled logo"
+    ],
+    [
+      "https://cheri-alliance.github.io/assets/images/content/shared/certification-process.webp",
+      "Certification Process"
+    ]
+  ],
+  "definitions": [],
+  "code_blocks": []
+}

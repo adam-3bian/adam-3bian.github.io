@@ -1,0 +1,22 @@
+{
+  "url": "https://cheri-alliance.github.io/news-and-events/events-and-archive/cheri-blossoms/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/events/cheri-blossoms-conference-2027/17bb25790594-cheri-blossoms-conference-2027.webp": "https://cheri-alliance.github.io/assets/images/thumbnails/events/cheri-blossoms-conference-2027.webp",
+    "/assets/events/cheri-blossoms-tutorial-2026/88adf0d2ae82-cheri-blossoms-tutorial-2026.webp": "https://cheri-alliance.github.io/assets/images/thumbnails/events/cheri-blossoms-tutorial-2026.webp",
+    "/assets/events/cheri-blossoms-conference-2026/1e39a7b87075-cheri-blossoms-conference-2026.webp": "https://cheri-alliance.github.io/assets/images/thumbnails/events/cheri-blossoms-conference-2026.webp",
+    "/assets/events/cheri-blossoms-conference-2025/ae43d5d29c6c-cheri-blossoms-conference-2025.webp": "https://cheri-alliance.github.io/assets/images/thumbnails/events/cheri-blossoms-conference-2025.webp"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

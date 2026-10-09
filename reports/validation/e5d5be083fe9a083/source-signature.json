@@ -1,0 +1,91 @@
+{
+  "text": "Alliance Members KU Leuven KU Leuven Founded in 1425, the multidisciplinary and research-driven university KU Leuven has been a centre of learning for almost six centuries. Today, it is Belgium’s highest-ranked university and is one of the oldest and most renowned universities in… Status Member Membership Community Member Website Visit member website Description Founded in 1425, the multidisciplinary and research-driven university KU Leuven has been a centre of learning for almost six centuries. Today, it is Belgium’s highest-ranked university and is one of the oldest and most renowned universities in Europe. CHERI Activities CHERI-related research at KU Leuven includes formal verification of ISAs and software, design of ISA extensions, microarchitectural security and other topics. Back to all members",
+  "headings": [
+    [
+      "h1",
+      "KU Leuven",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Description",
+      "description"
+    ],
+    [
+      "h2",
+      "CHERI Activities",
+      "cheri-activities"
+    ]
+  ],
+  "paragraphs": [
+    "Alliance",
+    "Members",
+    "KU Leuven",
+    "Founded in 1425, the multidisciplinary and research-driven university KU Leuven has been a centre of learning for almost six centuries. Today, it is Belgium’s highest-ranked university and is one of the oldest and most renowned universities in…",
+    "Founded in 1425, the multidisciplinary and research-driven university KU Leuven has been a centre of learning for almost six centuries. Today, it is Belgium’s highest-ranked university and is one of the oldest and most renowned universities in Europe.",
+    "CHERI-related research at KU Leuven includes formal verification of ISAs and software, design of ISA extensions, microarchitectural security and other topics.",
+    "Back to all members"
+  ],
+  "lists": [
+    [
+      "ol",
+      "Alliance Members KU Leuven"
+    ],
+    [
+      "li",
+      "Alliance"
+    ],
+    [
+      "li",
+      "Members"
+    ],
+    [
+      "li",
+      "KU Leuven"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://www.kuleuven.be/",
+      "Visit member website"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/leadership/members/",
+      "Back to all members"
+    ]
+  ],
+  "images": [
+    [
+      "https://cheri-alliance.github.io/assets/images/content/members/ku-leuven/logo.png",
+      "KU Leuven logo"
+    ]
+  ],
+  "definitions": [
+    [
+      "dt",
+      "Status"
+    ],
+    [
+      "dd",
+      "Member"
+    ],
+    [
+      "dt",
+      "Membership"
+    ],
+    [
+      "dd",
+      "Community Member"
+    ],
+    [
+      "dt",
+      "Website"
+    ],
+    [
+      "dd",
+      "Visit member website"
+    ]
+  ],
+  "code_blocks": []
+}

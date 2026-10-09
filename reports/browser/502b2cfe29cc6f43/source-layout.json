@@ -1,0 +1,58 @@
+{
+  "main_text": "Discover\nUnderstand\nBringing CHERI to your product\nBringing CHERI to your product\n\nWhat needs to change, and what doesn't.\n\nAdopting CHERI does not mean rebuilding the entire technology stack. One of CHERI’s strengths is that different organisations can contribute at different points in the value chain, allowing the benefits of hardware-enforced memory protection and compartmentalisation to flow from silicon vendors to end products.\n\nWhat needs to change?\n\nCHERI is a hardware technology, so it needs to be introduced across the layers of a system:\n\nLayer\tWhat changes?\nProcessor architecture\tCHERI adds capabilities and associated instructions to the architecture\nProcessor IP\tProcessor cores are modified or designed to implement the CHERI architecture\nChips\tOne or more CHERI-enabled processors are integrated into the device\nOperating systems\tOS to be recompiled and adapted to add compartmentalisation - Cf CHERI and existing software\nDevelopment tools\tCompilers, debuggers, and toolchains are updated to support CHERI\nSoftware\tApplications and firmware are recompiled and, where necessary, adapted - Cf CHERI and existing software\nPlatforms, modules, products\tCHERI-enabled hardware and software are integrated into final products\nUsers\tCHERI is not visible to the users, they just see the benefits\n\nNot every layer requires the same level of effort. Much of the complexity is handled by processor vendors, operating system developers, and toolchain providers, allowing many product teams to adopt CHERI incrementally.\n\nWhere are you in the value chain?\n\nProcessor designers\n\nCHERI starts with the processor. Adding CHERI involves extending the processor with support for capabilities, including:\n\nCapability-aware registers and instructions\nHardware enforcement of bounds and permissions\nSecure capability creation and derivation\nSupport for compartmentalisation mechanisms\n\nThis is the layer where most of the CHERI-specific engineering effort takes place. Fortunately, processor designers do not have to start from scratch. CHERI specifications, reference implementations, open-source designs, and standardisation work such as the RISC-V RVY architecture extension provide a clear path to implementation.\n\nChips / SoC designers\n\nIf you integrate processor IP into a SoC, adopting CHERI is primarily about selecting or integrating CHERI-enabled processor cores and following some guidelines. Recommendations and best practices to do this are available from the CHERI Alliance.\n\nIntegrating CHERI-enabled processor cores into an SoC is broadly similar to integrating any other processor IP, allowing organisations to build on established chip-development processes and expertise.\n\nIt is a natural evolution towards more security, and often goes along improved security enhancements such as Post-Quantum crypto support. CHERI is complementary to traditional security technologies, as it fills an important gap by addressing memory safety and enabling fine-grained compartmentalisation.\n\nPlatform developers\n\nFor platform and module vendors, adoption often consists primarily of selecting CHERI-enabled silicon and integrating with CHERI-enabled software.\n\nDevice manufacturers and product vendors\n\nMany manufacturers will adopt CHERI simply by selecting CHERI-enabled platforms or modules from their suppliers.\n\nUsers\n\nThe underlying capability mechanisms remain largely invisible to end users. They benefit from stronger protection against memory-safety vulnerabilities and greater resilience when vulnerabilities do occur.\n\nAdoption does not happen all at once\n\nDifferent organisations can adopt CHERI independently.\n\nA processor vendor may implement CHERI years before a product team fully exploits compartmentalisation. Similarly, software developers may begin by recompiling applications before redesigning parts of their architecture to take advantage of stronger isolation.\n\nThis flexibility allows CHERI adoption to follow existing product roadmaps and investment cycles.\n\nIn summary\n\nBringing CHERI to a product is not a single activity performed by a single organisation. It is a value-chain effort that starts with CHERI-enabled hardware and continues through platforms, operating systems, software, and product integration.\n\nThe good news is that every participant except processor designers can adopt CHERI incrementally. As support spreads through the ecosystem, organisations gain access to hardware-enforced memory protection and fine-grained compartmentalisation while continuing to build on existing technologies and software investments.\n\nWhere next\nCHERI and Rust - Technical Overview\n\nFurther technical details to understand why CHERI and Rust are complementary.\n\nContinue\nRelated content\nCHERI and Existing Software\n\nPorting software to CHERI is a process of finding assumptions about pointers, integers, objects, bounds, provenance, lifetimes, and interfaces.\n\nRead this page",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 3887.375
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/shared/value-chain.webp",
+      "alt": "Value chain",
+      "rect": {
+        "x": 160,
+        "y": 1119.953125,
+        "width": 767.96875,
+        "height": 139.859375
+      },
+      "natural_width": 917,
+      "natural_height": 167,
+      "style": {
+        "float": "none",
+        "display": "inline"
+      },
+      "parent": {
+        "x": 160,
+        "y": 1119.953125,
+        "width": 768,
+        "height": 148.046875
+      },
+      "parent_classes": [],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 3887.375
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/discover/understand/adapt-products/",
+  "final_url": "https://cheri-alliance.github.io/discover/understand/adapt-products/",
+  "retrieved_at": "2026-10-09T21:53:06.887691+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/members/cyberwhiz/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/organisations/cyberwhiz/1e18de21cd71-logo.png": "https://cheri-alliance.github.io/assets/images/content/members/cyberwhiz/logo.png"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

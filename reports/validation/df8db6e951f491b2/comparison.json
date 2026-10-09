@@ -1,0 +1,21 @@
+{
+  "url": "https://cheri-alliance.org/news/press/",
+  "selector": "body > div.elementor",
+  "asset_mapping": {
+    "/assets/pages/alliance--about-and-governance--trademark/5ff7f679f608-cheri-alliance-logo-pack.zip": "https://cheri-alliance.org/cheri-alliance-logo-pack/",
+    "/assets/pages/discover--resources--documentation-and-guides/3d933a481b79-cheri-branding-guidelines.pdf": "https://cheri-alliance.org/cheri-branding-guidelines/",
+    "/assets/shared/source-assets/c275143b35fc-cheri-alliance-presentation.pdf": "https://cheri-alliance.org/cheri-alliance-presentation/"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

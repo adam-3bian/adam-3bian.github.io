@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/news/lowrisc-and-sci-semiconductor-release-sunburst-chip-repository-for-secure-microcontroller-development/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/news/lowrisc-and-sci-semiconductor-release-sunburst-chip-repository-for-secure-microcontroller-development/a0a9378d1f98-hero.png": "https://cheri-alliance.github.io/assets/images/content/news/lowrisc-and-sci-semiconductor-release-sunburst-chip-repository-for-secure-microcontroller-development/hero.png"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

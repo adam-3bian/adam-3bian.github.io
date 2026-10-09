@@ -1,0 +1,265 @@
+{
+  "text": "Build Developers Run CHERI in Simulation Run CHERI in Simulation Use simulation to boot a CHERI environment, build capability-aware code, and observe hardware-enforced faults without owning a development board. Before you start You do not need CHERI hardware for most learning, porting, or experimentation tasks. Both CheriBSD and CHERIoT provide simulator-based environments that allow you to compile software, exercise capability enforcement, and investigate faults on a standard workstation. Route A: CheriBSD on CHERI-RISC-V QEMU CheriBSD is the easiest way to explore a full CHERI operating-system environment. The cheribuild tool automates the setup of the compiler, emulator, operating system, and disk image. Host requirements Use a supported Unix-like development host with Python 3, Git, CMake, Ninja, and the other packages listed by cheribuild. Linux is the most direct route. macOS can build many targets, while a Linux virtual machine or container may be easier for a complete environment. Clone the build tool git clone https://github.com/CTSRD-CHERI/cheribuild.git cd cheribuild Build and run the pure-capability system ./cheribuild.py --include-dependencies run-riscv64-purecap The first build downloads sources and compiles a substantial stack, so it can take time and disk space. Later runs reuse the build outputs. When QEMU reaches the login prompt, sign in as root. You are now in a CheriBSD user space where ordinary language pointers use capabilities. Confirm the target Inside CheriBSD, run: uname -a cc --version When reporting results or sharing benchmarks, record the architecture, CheriBSD revision, compiler version, and build configuration. The exact target names and prerequisites can change. The cheribuild repository is the source of truth. Route B: CHERIoT in a simulator The CHERIoT development container packages the toolchain, real-time operating-system (RTOS) dependencies, and simulator support. Clone the RTOS and examples git clone --recursive https://github.com/CHERIoT-Platform/cheriot-rtos.git cd cheriot-rtos Open the repository in Visual Studio Code and select Reopen in Container, or use the published development-container image through another compatible editor or container workflow. Inside the container, choose an example and configure it for a simulator using the board name documented by that example. A typical build follows this pattern: xmake config --sdk=/cheriot-tools --board=sail xmake xmake run Board identifiers evolve with the platform. If sail is not offered by the current checkout, use the simulator target listed in the CHERIoT getting-started guide. Prove that capability enforcement is active A successful hello-world message proves that the build and run path works. It does not prove that your code is using the intended protection mode. One possible experiment is to intentionally access memory outside an object boundary and observe whether capability enforcement detects the resulting invalid access: #include <stddef.h> int main(void) { volatile int values[2] = {1, 2}; volatile int *outside = values + 2; return *outside; } In a correctly configured pure-capability environment with useful array bounds, the invalid dereference should produce a capability-related fault. The exact diagnostic differs by architecture, compiler optimisation, and operating system. An undefined-behaviour example is not a conformance suite; use the project’s own tests for formal validation. What simulation can and cannot tell you Simulation is well suited to: learning the programming model compiling and functionally testing ports inspecting capability registers and faults testing malformed inputs running continuous integration comparing software modes when the simulator supports them An instruction-set simulator alone cannot establish: production performance processors comparison silicon area or power real-time startup or interrupt latency cache or speculation behaviour physical fault resistance Move to FPGA or silicon when the question depends on implementation timing or hardware integration. Troubleshooting checklist Confirm that submodules were cloned Verify that the binary was actually built for the intended CHERI target and ABI, especially purecap versus conventional or hybrid targets Keep the source, build, and output directories separate when cheribuild recommends it Use the exact compiler from the selected software development kit (SDK) rather than the host compiler Copy the complete capability-fault message when reporting a problem Include the repository revisions and command line in bug reports Once you can boot the environment, build a simple program, and observe a capability fault, you’re ready to start porting software or building your first CHERI-native application. Where next Install a Toolchain A guide to the main toolchain components used to build CHERI software and where platform-specific setup differs. Continue Related content Choose a Platform A CHERI platform combines more than an instruction set. Read this page",
+  "headings": [
+    [
+      "h1",
+      "Run CHERI in Simulation",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Before you start",
+      "before-you-start"
+    ],
+    [
+      "h2",
+      "Route A: CheriBSD on CHERI-RISC-V QEMU",
+      "route-a-cheribsd-on-cheri-risc-v-qemu"
+    ],
+    [
+      "h3",
+      "Host requirements",
+      "host-requirements"
+    ],
+    [
+      "h3",
+      "Clone the build tool",
+      "clone-the-build-tool"
+    ],
+    [
+      "h3",
+      "Build and run the pure-capability system",
+      "build-and-run-the-pure-capability-system"
+    ],
+    [
+      "h3",
+      "Confirm the target",
+      "confirm-the-target"
+    ],
+    [
+      "h2",
+      "Route B: CHERIoT in a simulator",
+      "route-b-cheriot-in-a-simulator"
+    ],
+    [
+      "h3",
+      "Clone the RTOS and examples",
+      "clone-the-rtos-and-examples"
+    ],
+    [
+      "h2",
+      "Prove that capability enforcement is active",
+      "prove-that-capability-enforcement-is-active"
+    ],
+    [
+      "h2",
+      "What simulation can and cannot tell you",
+      "what-simulation-can-and-cannot-tell-you"
+    ],
+    [
+      "h2",
+      "Troubleshooting checklist",
+      "troubleshooting-checklist"
+    ],
+    [
+      "h2",
+      "Where next",
+      null
+    ],
+    [
+      "h3",
+      "Install a Toolchain",
+      null
+    ],
+    [
+      "h2",
+      "Related content",
+      null
+    ],
+    [
+      "h3",
+      "Choose a Platform",
+      null
+    ]
+  ],
+  "paragraphs": [
+    "Build",
+    "Developers",
+    "Run CHERI in Simulation",
+    "Use simulation to boot a CHERI environment, build capability-aware code, and observe hardware-enforced faults without owning a development board.",
+    "You do not need CHERI hardware for most learning, porting, or experimentation tasks. Both CheriBSD and CHERIoT provide simulator-based environments that allow you to compile software, exercise capability enforcement, and investigate faults on a standard workstation.",
+    "CheriBSD is the easiest way to explore a full CHERI operating-system environment. The cheribuild tool automates the setup of the compiler, emulator, operating system, and disk image.",
+    "Use a supported Unix-like development host with Python 3, Git, CMake, Ninja, and the other packages listed by cheribuild. Linux is the most direct route. macOS can build many targets, while a Linux virtual machine or container may be easier for a complete environment.",
+    "The first build downloads sources and compiles a substantial stack, so it can take time and disk space. Later runs reuse the build outputs.",
+    "When QEMU reaches the login prompt, sign in as root. You are now in a CheriBSD user space where ordinary language pointers use capabilities.",
+    "Inside CheriBSD, run:",
+    "When reporting results or sharing benchmarks, record the architecture, CheriBSD revision, compiler version, and build configuration.",
+    "The exact target names and prerequisites can change. The cheribuild repository is the source of truth.",
+    "The CHERIoT development container packages the toolchain, real-time operating-system (RTOS) dependencies, and simulator support.",
+    "Open the repository in Visual Studio Code and select Reopen in Container, or use the published development-container image through another compatible editor or container workflow.",
+    "Inside the container, choose an example and configure it for a simulator using the board name documented by that example. A typical build follows this pattern:",
+    "Board identifiers evolve with the platform. If sail is not offered by the current checkout, use the simulator target listed in the CHERIoT getting-started guide.",
+    "A successful hello-world message proves that the build and run path works. It does not prove that your code is using the intended protection mode.",
+    "One possible experiment is to intentionally access memory outside an object boundary and observe whether capability enforcement detects the resulting invalid access:",
+    "In a correctly configured pure-capability environment with useful array bounds, the invalid dereference should produce a capability-related fault. The exact diagnostic differs by architecture, compiler optimisation, and operating system. An undefined-behaviour example is not a conformance suite; use the project’s own tests for formal validation.",
+    "Simulation is well suited to:",
+    "learning the programming model",
+    "compiling and functionally testing ports",
+    "inspecting capability registers and faults",
+    "testing malformed inputs",
+    "running continuous integration",
+    "comparing software modes when the simulator supports them",
+    "An instruction-set simulator alone cannot establish:",
+    "production performance",
+    "processors comparison",
+    "silicon area or power",
+    "real-time startup or interrupt latency",
+    "cache or speculation behaviour",
+    "physical fault resistance",
+    "Move to FPGA or silicon when the question depends on implementation timing or hardware integration.",
+    "Confirm that submodules were cloned",
+    "Verify that the binary was actually built for the intended CHERI target and ABI, especially purecap versus conventional or hybrid targets",
+    "Keep the source, build, and output directories separate when cheribuild recommends it",
+    "Use the exact compiler from the selected software development kit (SDK) rather than the host compiler",
+    "Copy the complete capability-fault message when reporting a problem",
+    "Include the repository revisions and command line in bug reports",
+    "Once you can boot the environment, build a simple program, and observe a capability fault, you’re ready to start porting software or building your first CHERI-native application.",
+    "A guide to the main toolchain components used to build CHERI software and where platform-specific setup differs.",
+    "A CHERI platform combines more than an instruction set."
+  ],
+  "lists": [
+    [
+      "ol",
+      "Build Developers Run CHERI in Simulation"
+    ],
+    [
+      "li",
+      "Build"
+    ],
+    [
+      "li",
+      "Developers"
+    ],
+    [
+      "li",
+      "Run CHERI in Simulation"
+    ],
+    [
+      "ul",
+      "learning the programming model compiling and functionally testing ports inspecting capability registers and faults testing malformed inputs running continuous integration comparing software modes when the simulator supports them"
+    ],
+    [
+      "li",
+      "learning the programming model"
+    ],
+    [
+      "li",
+      "compiling and functionally testing ports"
+    ],
+    [
+      "li",
+      "inspecting capability registers and faults"
+    ],
+    [
+      "li",
+      "testing malformed inputs"
+    ],
+    [
+      "li",
+      "running continuous integration"
+    ],
+    [
+      "li",
+      "comparing software modes when the simulator supports them"
+    ],
+    [
+      "ul",
+      "production performance processors comparison silicon area or power real-time startup or interrupt latency cache or speculation behaviour physical fault resistance"
+    ],
+    [
+      "li",
+      "production performance"
+    ],
+    [
+      "li",
+      "processors comparison"
+    ],
+    [
+      "li",
+      "silicon area or power"
+    ],
+    [
+      "li",
+      "real-time startup or interrupt latency"
+    ],
+    [
+      "li",
+      "cache or speculation behaviour"
+    ],
+    [
+      "li",
+      "physical fault resistance"
+    ],
+    [
+      "ul",
+      "Confirm that submodules were cloned Verify that the binary was actually built for the intended CHERI target and ABI, especially purecap versus conventional or hybrid targets Keep the source, build, and output directories separate when cheribuild recommends it Use the exact compiler from the selected software development kit (SDK) rather than the host compiler Copy the complete capability-fault message when reporting a problem Include the repository revisions and command line in bug reports"
+    ],
+    [
+      "li",
+      "Confirm that submodules were cloned"
+    ],
+    [
+      "li",
+      "Verify that the binary was actually built for the intended CHERI target and ABI, especially purecap versus conventional or hybrid targets"
+    ],
+    [
+      "li",
+      "Keep the source, build, and output directories separate when cheribuild recommends it"
+    ],
+    [
+      "li",
+      "Use the exact compiler from the selected software development kit (SDK) rather than the host compiler"
+    ],
+    [
+      "li",
+      "Copy the complete capability-fault message when reporting a problem"
+    ],
+    [
+      "li",
+      "Include the repository revisions and command line in bug reports"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://github.com/CTSRD-CHERI/cheribuild",
+      "cheribuild repository"
+    ],
+    [
+      "https://cheriot.org/book/getting_started.html",
+      "CHERIoT getting-started guide"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/developers/build-your-first-application/",
+      "building your first CHERI-native application"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/developers/install-a-toolchain/",
+      "Install a Toolchain A guide to the main toolchain components used to build CHERI software and where platform-specific setup differs. Continue"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/developers/choose-a-platform/",
+      "Choose a Platform A CHERI platform combines more than an instruction set. Read this page"
+    ]
+  ],
+  "images": [],
+  "definitions": [],
+  "code_blocks": [
+    "git clone https://github.com/CTSRD-CHERI/cheribuild.git\ncd cheribuild",
+    "./cheribuild.py --include-dependencies run-riscv64-purecap",
+    "uname -a\ncc --version",
+    "git clone --recursive https://github.com/CHERIoT-Platform/cheriot-rtos.git\ncd cheriot-rtos",
+    "xmake config --sdk=/cheriot-tools --board=sail\nxmake\nxmake run",
+    "#include <stddef.h>\n\nint main(void) {\n    volatile int values[2] = {1, 2};\n    volatile int *outside = values + 2;\n    return *outside;\n}"
+  ]
+}

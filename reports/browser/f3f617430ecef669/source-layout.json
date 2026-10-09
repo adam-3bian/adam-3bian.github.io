@@ -1,0 +1,61 @@
+{
+  "main_text": "Andrew Lindsay\n\nCodasip\n\nBoard role\nSecurity Product Manager and Architect\nOrganisation\nCodasip\nBiography\n\nAndrew Lindsay represents Codasip on the CHERI Alliance Governing Board. His board role is Security Product Manager and Architect.\n\nBack to the Governing Board",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 922.59375
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/people/andrew-lindsay/portrait.png",
+      "alt": "Andrew Lindsay",
+      "rect": {
+        "x": 161,
+        "y": 353.859375,
+        "width": 279.59375,
+        "height": 262.625
+      },
+      "natural_width": 709,
+      "natural_height": 666,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 352.859375,
+        "width": 281.59375,
+        "height": 211.1875
+      },
+      "parent_classes": [
+        "entity-media",
+        "entity-media--portrait"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 352.859375,
+        "width": 742.40625,
+        "height": 133.96875
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/people/andrew-lindsay/",
+  "final_url": "https://cheri-alliance.github.io/people/andrew-lindsay/",
+  "retrieved_at": "2026-10-09T21:07:06.528403+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

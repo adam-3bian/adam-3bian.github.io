@@ -1,0 +1,61 @@
+{
+  "main_text": "Alliance\nMembers\nSwansea University\nSwansea University\n\nSwansea University is a research university and one of the leading institutions in Wales (United Kingdom). The Faculty of Science & Engineering (FSE) at Swansea is nationally and globally recognised as a centre of excellence providing an innovative…\n\nStatus\nFounding member\nMembership\nCommunity Member\nWebsite\nVisit member website\nDescription\n\nSwansea University is a research university and one of the leading institutions in Wales (United Kingdom). The Faculty of Science & Engineering (FSE) at Swansea is nationally and globally recognised as a centre of excellence providing an innovative, inclusive learning environment that produces lifelong learners who are prepared for the global economy. The Faculty has strengths in engineering, computer science and mathematics. The Systems Security Group (SSG), part of the Department of Computer Science at FSE, is one of the leading groups researching on security assurance of cyber-physical systems and adoption of secure technology across a number of industrial sectors.\n\nCHERI Activities\n\nThe Systems Security Group (SSG), led by Prof Siraj Shaikh, at Swansea has played a leading role in adoption and integration of CHERI in the automotive industry. As part of the AutoCHERI initiative, the group has led on the threat analysis and risk assessment for integrating CHERI as part of modern automotive systems, and demonstrated the unique role memory safety and compartmentalisation features play in the automotive cybersecurity value chain. Moreover, the group has also led on the economic case for secure hardware technologies, ensuring a clear business case is established for adoption and integration of technologies like CHERI. This effort has informed the market case for the UK’s National Semiconductor Strategy 2023.\n\nMore recent work, in collaboration with Strategize Inc, a business simulation tool has also been developed to help businesses develop a financial model for the adoption of CHERI, with a view to offsetting costs around cybersecurity risks, liabilities and potential losses, and building over advantage to be had in minimising disruptions and software updates.\n\nBack to all members",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 1413.34375
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/members/swansea-university/logo.png",
+      "alt": "University of Swansea logo",
+      "rect": {
+        "x": 196.578125,
+        "y": 488.421875,
+        "width": 208.421875,
+        "height": 137.71875
+      },
+      "natural_width": 1649,
+      "natural_height": 1036,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 463.421875,
+        "width": 281.59375,
+        "height": 187.71875
+      },
+      "parent_classes": [
+        "entity-media",
+        "entity-media--logo"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 463.421875,
+        "width": 742.40625,
+        "height": 794.125
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/members/swansea-university/",
+  "final_url": "https://cheri-alliance.github.io/members/swansea-university/",
+  "retrieved_at": "2026-10-09T21:54:24.254275+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

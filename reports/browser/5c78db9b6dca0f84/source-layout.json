@@ -1,0 +1,61 @@
+{
+  "main_text": "Alliance\nMembers\nSCI Semiconductor\nSCI Semiconductor\n\nSCI Semiconductor was formed to lead the commercialisation of CHERI technologies and is a founder member of the CHERI Alliance. With a strong focus on secure and high-integrity computing, the organization has built a team of recognised industry…\n\nStatus\nFounding member\nMembership\nFull Member\nWebsite\nVisit member website\nDescription\n\nSCI Semiconductor was formed to lead the commercialisation of CHERI technologies and is a founder member of the CHERI Alliance. With a strong focus on secure and high-integrity computing, the organization has built a team of recognised industry leaders, with decades of leadership in security, processor IP and chip design, and high-integrity software. Through their ICENI device family the team is focused on development of high integrity microcontrollers based on the Microsoft CHERIoT Ibex core.\n\nCHERI Activities\n\nSCI Semiconductor is delivering commercial CHERIoT RV32E RISC-V based devices for microcontroller and embedded microprocessor applications. Their ICENI family is targeting a range of high-integrity and high-availability applications encompassing critical infrastructure, aerospace and defence, telecoms, medical and automotive applications. SCI is the co-owner of the CHERIoT core repository alongside Microsoft.\n\nCHERI Products\n\nhttps://www.scisemi.com\n\nOpen-source Assets for CHERI\n\nhttps://cheriot.org\n\nBack to all members",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 1411.03125
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/members/sci-semiconductor/logo.png",
+      "alt": "SCI Semiconductor logo",
+      "rect": {
+        "x": 196.578125,
+        "y": 488.421875,
+        "width": 208.421875,
+        "height": 138.125
+      },
+      "natural_width": 1201,
+      "natural_height": 796,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 463.421875,
+        "width": 281.59375,
+        "height": 187.71875
+      },
+      "parent_classes": [
+        "entity-media",
+        "entity-media--logo"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 463.421875,
+        "width": 742.40625,
+        "height": 791.8125
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/members/sci-semiconductor/",
+  "final_url": "https://cheri-alliance.github.io/members/sci-semiconductor/",
+  "retrieved_at": "2026-10-09T21:54:18.881744+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

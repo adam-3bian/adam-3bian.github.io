@@ -1,0 +1,61 @@
+{
+  "main_text": "Alliance\nMembers\nThe Capable Hub\nThe Capable Hub\n\nThe Capable Hub is a non-profit engineering organisation improving the availability, quality and upstream alignment of open-source CHERI software.\n\nStatus\nMember\nMembership\nFull Member\nWebsite\nVisit member website\nDescription\n\nThe Capable Hub is a non-profit engineering organisation improving the availability, quality and upstream alignment of open-source CHERI software.\n\nCHERI Activities\n\nThe Capable Hub provides infrastructure and tooling for CHERI ecosystem, including AWS backed CI, artifact hosting and community mailing lists. To support automated testing, we are currently developing a hardware board farm.\n\nWe provide engineering resources to the ecosystem, these efforts are guided by our Technical Advisory Group, which serves as the primary mechanism for the community to steer our technical priorities and resources.\n\nOur initial work includes mapping the ecosystem to centralise available artifacts and the creation of technical guides for those new to CHERI development.\n\nOpen-source Assets for CHERI\n\nhttps://www.thecapablehub.org/software/\n\nBack to all members",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 1252.828125
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/members/the-capable-hub/logo.png",
+      "alt": "The Capable Hub logo",
+      "rect": {
+        "x": 196.578125,
+        "y": 456.1875,
+        "width": 208.421875,
+        "height": 137.71875
+      },
+      "natural_width": 1000,
+      "natural_height": 243,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 431.1875,
+        "width": 281.59375,
+        "height": 187.71875
+      },
+      "parent_classes": [
+        "entity-media",
+        "entity-media--logo"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 431.1875,
+        "width": 742.40625,
+        "height": 665.84375
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/members/the-capable-hub/",
+  "final_url": "https://cheri-alliance.github.io/members/the-capable-hub/",
+  "retrieved_at": "2026-10-09T21:54:28.404756+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

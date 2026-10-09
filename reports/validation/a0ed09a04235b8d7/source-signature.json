@@ -1,0 +1,155 @@
+{
+  "text": "Alliance About & Governance Governance Governance Alliance governance separates organisational oversight from focused member collaboration, with published policies setting clear boundaries for participation. Clear governance allows organisations with different commercial, research, and public interests to collaborate with confidence. It defines who sets direction, how technical work is organised, and which rules apply. Governing Board The Governing Board provides organisational oversight and brings together representation from industry, research, and the wider security ecosystem. Its role includes stewardship of the Alliance’s mission, priorities, and responsible operation. Board membership and organisational affiliations can change. The published board directory records the current representatives. Working groups Working groups organise focused technical and programme activity. Each group has a defined topic, participants, and lead or coordinating structure. Groups may develop roadmaps, software, guidance, events, certification material, or recommendations. Working-group output does not automatically become a standard or a binding position. Its status should be stated by the group and reviewed through the appropriate process. Members and participation Members contribute through governance, working groups, events, reviews, and shared projects according to their membership and the rules of each activity. Public repositories and community events may also provide routes for non-members to contribute. Policies and accountability Alliance activity is governed by published legal and policy documents, including: the Code of Conduct; Competition Law Statement; Intellectual Property Policy; Trademark Policy; export-control guidance; Privacy Policy. Participants should consult the current policy before contributing or using Alliance material. Questions about authority, conflicts, policy application, or formal records should be directed to the Alliance rather than inferred from a working-group discussion. This structure lets technical experts move work forward while keeping organisational accountability and collaboration rules visible. Where next Technical Leadership An overview of the technical leadership that guides Alliance priorities and working activity. Continue Related content About the CHERI Alliance Learn how the Alliance connects organisations working across the CHERI ecosystem. Read this page Mission & Role A statement of what the CHERI Alliance exists to support and the boundaries of its role. Read this page",
+  "headings": [
+    [
+      "h1",
+      "Governance",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Governing Board",
+      "governing-board"
+    ],
+    [
+      "h2",
+      "Working groups",
+      "working-groups"
+    ],
+    [
+      "h2",
+      "Members and participation",
+      "members-and-participation"
+    ],
+    [
+      "h2",
+      "Policies and accountability",
+      "policies-and-accountability"
+    ],
+    [
+      "h2",
+      "Where next",
+      null
+    ],
+    [
+      "h3",
+      "Technical Leadership",
+      null
+    ],
+    [
+      "h2",
+      "Related content",
+      null
+    ],
+    [
+      "h3",
+      "About the CHERI Alliance",
+      null
+    ],
+    [
+      "h3",
+      "Mission & Role",
+      null
+    ]
+  ],
+  "paragraphs": [
+    "Alliance",
+    "About & Governance",
+    "Governance",
+    "Alliance governance separates organisational oversight from focused member collaboration, with published policies setting clear boundaries for participation.",
+    "Clear governance allows organisations with different commercial, research, and public interests to collaborate with confidence. It defines who sets direction, how technical work is organised, and which rules apply.",
+    "The Governing Board provides organisational oversight and brings together representation from industry, research, and the wider security ecosystem. Its role includes stewardship of the Alliance’s mission, priorities, and responsible operation.",
+    "Board membership and organisational affiliations can change. The published board directory records the current representatives.",
+    "Working groups organise focused technical and programme activity. Each group has a defined topic, participants, and lead or coordinating structure. Groups may develop roadmaps, software, guidance, events, certification material, or recommendations.",
+    "Working-group output does not automatically become a standard or a binding position. Its status should be stated by the group and reviewed through the appropriate process.",
+    "Members contribute through governance, working groups, events, reviews, and shared projects according to their membership and the rules of each activity. Public repositories and community events may also provide routes for non-members to contribute.",
+    "Alliance activity is governed by published legal and policy documents, including:",
+    "the Code of Conduct;",
+    "Competition Law Statement;",
+    "Intellectual Property Policy;",
+    "Trademark Policy;",
+    "export-control guidance;",
+    "Privacy Policy.",
+    "Participants should consult the current policy before contributing or using Alliance material. Questions about authority, conflicts, policy application, or formal records should be directed to the Alliance rather than inferred from a working-group discussion.",
+    "This structure lets technical experts move work forward while keeping organisational accountability and collaboration rules visible.",
+    "An overview of the technical leadership that guides Alliance priorities and working activity.",
+    "Learn how the Alliance connects organisations working across the CHERI ecosystem.",
+    "A statement of what the CHERI Alliance exists to support and the boundaries of its role."
+  ],
+  "lists": [
+    [
+      "ol",
+      "Alliance About & Governance Governance"
+    ],
+    [
+      "li",
+      "Alliance"
+    ],
+    [
+      "li",
+      "About & Governance"
+    ],
+    [
+      "li",
+      "Governance"
+    ],
+    [
+      "ul",
+      "the Code of Conduct; Competition Law Statement; Intellectual Property Policy; Trademark Policy; export-control guidance; Privacy Policy."
+    ],
+    [
+      "li",
+      "the Code of Conduct;"
+    ],
+    [
+      "li",
+      "Competition Law Statement;"
+    ],
+    [
+      "li",
+      "Intellectual Property Policy;"
+    ],
+    [
+      "li",
+      "Trademark Policy;"
+    ],
+    [
+      "li",
+      "export-control guidance;"
+    ],
+    [
+      "li",
+      "Privacy Policy."
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://cheri-alliance.github.io/alliance/leadership/governing-board/",
+      "Governing Board"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/leadership/working-groups/",
+      "Working groups"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/legal-and-policies/code-of-conduct/",
+      "legal and policy documents"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/about-and-governance/technical-leadership/",
+      "Technical Leadership An overview of the technical leadership that guides Alliance priorities and working activity. Continue"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/about-and-governance/about-the-cheri-alliance/",
+      "About the CHERI Alliance Learn how the Alliance connects organisations working across the CHERI ecosystem. Read this page"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/about-and-governance/mission-and-role/",
+      "Mission & Role A statement of what the CHERI Alliance exists to support and the boundaries of its role. Read this page"
+    ]
+  ],
+  "images": [],
+  "definitions": [],
+  "code_blocks": []
+}

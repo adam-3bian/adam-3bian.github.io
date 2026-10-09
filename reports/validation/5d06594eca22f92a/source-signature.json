@@ -1,0 +1,88 @@
+{
+  "text": "News & Events Speakers Merve Gülmez Merve Gülmez Ericsson Organisation Ericsson LinkedIn Biography Merve Gülmez is a researcher at Ericsson Security Research. She holds a PhD in Computer Science from KU Leuven, and her research focuses on systems security, memory safety, and improving software resilience. CHERI Talks PICASSO: Scaling CHERI Use-After-Free Protection to Millions of Allocations | CHERI Blossoms 2026 27/03/2026 Cambridge, UK View Video View Slides Back to all speakers",
+  "headings": [
+    [
+      "h1",
+      "Merve Gülmez",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Biography",
+      "biography"
+    ],
+    [
+      "h2",
+      "CHERI Talks",
+      "cheri-talks"
+    ]
+  ],
+  "paragraphs": [
+    "News & Events",
+    "Speakers",
+    "Merve Gülmez",
+    "Ericsson",
+    "LinkedIn",
+    "Merve Gülmez is a researcher at Ericsson Security Research. She holds a PhD in Computer Science from KU Leuven, and her research focuses on systems security, memory safety, and improving software resilience.",
+    "PICASSO: Scaling CHERI Use-After-Free Protection to Millions of Allocations | CHERI Blossoms 2026",
+    "27/03/2026",
+    "Cambridge, UK",
+    "View Video",
+    "View Slides",
+    "Back to all speakers"
+  ],
+  "lists": [
+    [
+      "ol",
+      "News & Events Speakers Merve Gülmez"
+    ],
+    [
+      "li",
+      "News & Events"
+    ],
+    [
+      "li",
+      "Speakers"
+    ],
+    [
+      "li",
+      "Merve Gülmez"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://www.linkedin.com/in/merve-g%C3%BClmez/",
+      "LinkedIn"
+    ],
+    [
+      "https://youtu.be/kkjG78h1KQk",
+      "View Video"
+    ],
+    [
+      "https://cheri-alliance.org/wp-content/uploads/2026/06/D2-3.3-Thomas-Nyman-Merve-Gulmez-Scaling-CHERI-Use-After-Free-Protection-to-Millions-of-Allocations-CHERI-Blossoms-2026.pdf",
+      "View Slides"
+    ],
+    [
+      "https://cheri-alliance.github.io/news-and-events/people-and-opportunities/speakers/",
+      "Back to all speakers"
+    ]
+  ],
+  "images": [
+    [
+      "https://cheri-alliance.github.io/assets/images/content/people/merve-gulmez/portrait.png",
+      "Merve Gülmez"
+    ]
+  ],
+  "definitions": [
+    [
+      "dt",
+      "Organisation"
+    ],
+    [
+      "dd",
+      "Ericsson"
+    ]
+  ],
+  "code_blocks": []
+}

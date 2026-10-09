@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/people/phil-day/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/people/phil-day/3fe5b3fa85c3-portrait.png": "https://cheri-alliance.github.io/assets/images/content/people/phil-day/portrait.png"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

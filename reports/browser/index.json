@@ -1,0 +1,1166 @@
+[
+  {
+    "url": "https://cheri-alliance.github.io/people/adam-finney/",
+    "status": "captured",
+    "evidence_path": "reports/browser/747f21957d762628",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/the-capable-hub-joins-the-cheri-alliance-to-accelerate-cybersecurity-collaboration/",
+    "status": "captured",
+    "evidence_path": "reports/browser/ee3e3414449dd680",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/",
+    "status": "captured",
+    "evidence_path": "reports/browser/ee19a84a90553fdc",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/ai-has-compressed-the-attack-timeline/",
+    "status": "captured",
+    "evidence_path": "reports/browser/f67abd1ef22f0022",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon/",
+    "status": "captured",
+    "evidence_path": "reports/browser/58f9a8f76c8b5b3d",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/behind-the-scenes-inside-the-promotion-and-ambassador-program-working-group/",
+    "status": "captured",
+    "evidence_path": "reports/browser/1c076c303eac4438",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/bt-group-joins-the-cheri-alliance-to-advance-cybersecurity-innovation/",
+    "status": "captured",
+    "evidence_path": "reports/browser/5580400058f304db",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/building-a-safer-digital-future/",
+    "status": "captured",
+    "evidence_path": "reports/browser/880b2302130d5467",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level/",
+    "status": "captured",
+    "evidence_path": "reports/browser/bdb541ddace0c4f3",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/cheri-alliance-to-distribute-arm-morello-boards-the-journey-beyond-dsbd-continues/",
+    "status": "captured",
+    "evidence_path": "reports/browser/1095a57366cce500",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/cheri-memory-safety-mitigates-llm-discovered-vulnerability-in-freebsd/",
+    "status": "captured",
+    "evidence_path": "reports/browser/2e53841856172d7d",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/cheri-or-cheriot-the-answer-is-not-what-you-think/",
+    "status": "captured",
+    "evidence_path": "reports/browser/0efb12051fd8f942",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/cheriot-1-0-specification-released/",
+    "status": "captured",
+    "evidence_path": "reports/browser/9f445ec7f853e65f",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus/",
+    "status": "captured",
+    "evidence_path": "reports/browser/9b694eb693c7a799",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/codasip-enables-secure-linux-by-donating-cheri-risc-v-sdk-to-the-cheri-alliance/",
+    "status": "captured",
+    "evidence_path": "reports/browser/01151c736cfa6012",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology/",
+    "status": "captured",
+    "evidence_path": "reports/browser/a0c501b7745968b9",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/end-users-demand-memory-safety-in-their-systems/",
+    "status": "captured",
+    "evidence_path": "reports/browser/c01b2df07f7edf32",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/iceni-first-look/",
+    "status": "captured",
+    "evidence_path": "reports/browser/03d719f45f5b8eb6",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/initial-members-join-cheri-alliance-to-drive-adoption-of-memory-safety-and-scalable-software-compartmentalization/",
+    "status": "captured",
+    "evidence_path": "reports/browser/e18f3c0ba19f8e76",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/innovate-uk-project-winner-university-of-birmingham/",
+    "status": "captured",
+    "evidence_path": "reports/browser/20caf8d453ec28ef",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/introducing-the-cheri-adoption-global-ecosystem-assessment-q1-2026/",
+    "status": "captured",
+    "evidence_path": "reports/browser/8a74da1f26372a95",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences/",
+    "status": "captured",
+    "evidence_path": "reports/browser/ac1a0231ae902dfd",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support/",
+    "status": "captured",
+    "evidence_path": "reports/browser/92ace6d106f066cb",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd/",
+    "status": "captured",
+    "evidence_path": "reports/browser/fe38b2a4dda6f78d",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/one-bug-is-all-it-takes/",
+    "status": "captured",
+    "evidence_path": "reports/browser/1808e003760434d0",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl/",
+    "status": "captured",
+    "evidence_path": "reports/browser/bedbea1a837d2af5",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/secure-and-resilient-systems-in-the-era-of-cra-and-iot/",
+    "status": "captured",
+    "evidence_path": "reports/browser/b515ddd43d893948",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software/",
+    "status": "captured",
+    "evidence_path": "reports/browser/ebcd6b4a40d480a8",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/siemens-joins-the-cheri-alliance-a-united-front-for-cutting-edge-cybersecurity/",
+    "status": "captured",
+    "evidence_path": "reports/browser/1c2ad72bd30c132f",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/streamlining-the-cheri-ecosystem-an-update-from-the-repository-management-working-group/",
+    "status": "captured",
+    "evidence_path": "reports/browser/9be707d1d88ceef3",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/the-eu-cyber-resilience-act-what-it-means-for-secure-by-design-systems-and-cheri/",
+    "status": "captured",
+    "evidence_path": "reports/browser/1af7ae5a59c90a64",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/the-leading-root-of-trust-now-integrates-cheri-security-technology/",
+    "status": "captured",
+    "evidence_path": "reports/browser/051d10e7e629f104",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/the-white-house-promotes-cheri-as-a-solution-for-memory-safety/",
+    "status": "captured",
+    "evidence_path": "reports/browser/6880e72319061ea1",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/towards-a-reference-qemu-for-cheri-platform-emulation/",
+    "status": "captured",
+    "evidence_path": "reports/browser/e310b991e1936442",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/uk-government-report-highlights-the-cheri-alliance/",
+    "status": "captured",
+    "evidence_path": "reports/browser/c37ca324705b352f",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/unlocking-the-future-a-roadmap-for-cheri-technology-advancement/",
+    "status": "captured",
+    "evidence_path": "reports/browser/4c377f89da2a2ba1",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/wind-river-joins-the-cheri-alliance/",
+    "status": "captured",
+    "evidence_path": "reports/browser/f7772f5752f0c843",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/alastair-beresford/",
+    "status": "captured",
+    "evidence_path": "reports/browser/aeddad56817de9e8",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/alex-rebert/",
+    "status": "captured",
+    "evidence_path": "reports/browser/74573ab79a40ed15",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/alex-richardson/",
+    "status": "captured",
+    "evidence_path": "reports/browser/da82925d62898730",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/alexander-voyevoda/",
+    "status": "captured",
+    "evidence_path": "reports/browser/6d8c6df1860b6abb",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/alfredo-mazzinghi/",
+    "status": "captured",
+    "evidence_path": "reports/browser/45cb8693c80a0224",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/allison-randal/",
+    "status": "captured",
+    "evidence_path": "reports/browser/8a887c9a9f30ad0c",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/andrew-lindsay/",
+    "status": "captured",
+    "evidence_path": "reports/browser/f3f617430ecef669",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/andrew-murray/",
+    "status": "captured",
+    "evidence_path": "reports/browser/ce84eed56beb593b",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/andy-moore/",
+    "status": "captured",
+    "evidence_path": "reports/browser/e19f3dbb7ef947ad",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/ashish-darbari/",
+    "status": "captured",
+    "evidence_path": "reports/browser/3079e599813ecdd9",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/ben-fletcher/",
+    "status": "captured",
+    "evidence_path": "reports/browser/7457f4c840d048ed",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/bradley-finn/",
+    "status": "captured",
+    "evidence_path": "reports/browser/e3ef594741343b34",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/carl-shaw/",
+    "status": "captured",
+    "evidence_path": "reports/browser/7145d9783fd5543f",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/dave-harcourt/",
+    "status": "captured",
+    "evidence_path": "reports/browser/1c8222f023dabf22",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/david-chisnall/",
+    "status": "captured",
+    "evidence_path": "reports/browser/98b6ec89bf55bb0c",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/david-musliner/",
+    "status": "captured",
+    "evidence_path": "reports/browser/9b698745b6a1bd40",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/dmitriy-yeliseyev/",
+    "status": "captured",
+    "evidence_path": "reports/browser/2dcfd47113c127f7",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/domagoj-stolfa/",
+    "status": "captured",
+    "evidence_path": "reports/browser/667c0ef6f0b39a40",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/donato-ferraro/",
+    "status": "captured",
+    "evidence_path": "reports/browser/27508c8b827fedc4",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/edoardo-marangoni/",
+    "status": "captured",
+    "evidence_path": "reports/browser/6085ce79d38587b2",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/gavin-ferris/",
+    "status": "captured",
+    "evidence_path": "reports/browser/6fe4e40ac5e6f813",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/haydn-povey/",
+    "status": "captured",
+    "evidence_path": "reports/browser/224837474661187f",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/hesham-almatary/",
+    "status": "captured",
+    "evidence_path": "reports/browser/77b65e727e4614f6",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/javier-orensanz-martinez/",
+    "status": "captured",
+    "evidence_path": "reports/browser/c8f2842e9a5725f3",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/jennifer-jackson/",
+    "status": "captured",
+    "evidence_path": "reports/browser/5e6f6654cda867bd",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/jeremy-singer/",
+    "status": "captured",
+    "evidence_path": "reports/browser/fd75e09fbdff23f5",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/jessica-clarke/",
+    "status": "captured",
+    "evidence_path": "reports/browser/18a0d124400b3626",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/jianyi-cheng/",
+    "status": "captured",
+    "evidence_path": "reports/browser/92ad3ee1451cf8f3",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/johannes-muller/",
+    "status": "captured",
+    "evidence_path": "reports/browser/7a28d476e00ee319",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/john-baldwin/",
+    "status": "captured",
+    "evidence_path": "reports/browser/bf70ae996824e5bd",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/john-goodacre/",
+    "status": "captured",
+    "evidence_path": "reports/browser/d35bc78e55134358",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/john-thomson/",
+    "status": "captured",
+    "evidence_path": "reports/browser/1c9c926adce6c22c",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/jonathan-woodruff/",
+    "status": "captured",
+    "evidence_path": "reports/browser/891db4c5f7c80372",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/joshua-lant/",
+    "status": "captured",
+    "evidence_path": "reports/browser/7a2c6ef8ff4e9d94",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/ka-wing-li/",
+    "status": "captured",
+    "evidence_path": "reports/browser/41de251751ddd4e4",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/kathleen-fisher/",
+    "status": "captured",
+    "evidence_path": "reports/browser/9c8023ddf9a74ee9",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/kevin-brodsky/",
+    "status": "captured",
+    "evidence_path": "reports/browser/95a0b573b73b9400",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/louis-emile-ploix/",
+    "status": "captured",
+    "evidence_path": "reports/browser/86b6cf60591ca301",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/luca-muller/",
+    "status": "captured",
+    "evidence_path": "reports/browser/40be8e476aec7569",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/maika-fohrenbach/",
+    "status": "captured",
+    "evidence_path": "reports/browser/65509eb0d3d3f7b6",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/manu-ravishankar/",
+    "status": "captured",
+    "evidence_path": "reports/browser/7466a01de202c9fd",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/mark-batty/",
+    "status": "captured",
+    "evidence_path": "reports/browser/bb2b7c2600f105d9",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/mark-hill/",
+    "status": "captured",
+    "evidence_path": "reports/browser/13b408a22973c3c5",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/marno-van-der-maas/",
+    "status": "captured",
+    "evidence_path": "reports/browser/1a7d9a3e2a7b05e3",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/martin-atkins/",
+    "status": "captured",
+    "evidence_path": "reports/browser/7c567067660ba090",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/merve-gulmez/",
+    "status": "captured",
+    "evidence_path": "reports/browser/5d06594eca22f92a",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/mike-eftimakis/",
+    "status": "captured",
+    "evidence_path": "reports/browser/872805652eecd39f",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/mike-halsall/",
+    "status": "captured",
+    "evidence_path": "reports/browser/5ee1ad6eb2d82328",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/murali-vijayaraghavan/",
+    "status": "captured",
+    "evidence_path": "reports/browser/c621365c7f2abdc5",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/murat-cakmak/",
+    "status": "captured",
+    "evidence_path": "reports/browser/90142a7b18e2e591",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/ollie-whitehouse/",
+    "status": "captured",
+    "evidence_path": "reports/browser/6a94675424849aed",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/paul-metzger/",
+    "status": "captured",
+    "evidence_path": "reports/browser/822472353d299926",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/paul-waller/",
+    "status": "captured",
+    "evidence_path": "reports/browser/fba30a46a5c32aa4",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/peter-cox/",
+    "status": "captured",
+    "evidence_path": "reports/browser/4edca19c5fc696ac",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/phil-day/",
+    "status": "captured",
+    "evidence_path": "reports/browser/81e99c686ba8a8fe",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/robert-watson/",
+    "status": "captured",
+    "evidence_path": "reports/browser/93cb3e19b2d64603",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/sam-cater/",
+    "status": "captured",
+    "evidence_path": "reports/browser/8fad51fce2d57909",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/samuel-stark/",
+    "status": "captured",
+    "evidence_path": "reports/browser/532900ae669322d4",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/simon-moore/",
+    "status": "captured",
+    "evidence_path": "reports/browser/d8e9719b06aaacd0",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/tariq-kurd/",
+    "status": "captured",
+    "evidence_path": "reports/browser/6c7374fb5ef82af4",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/thomas-nyman/",
+    "status": "captured",
+    "evidence_path": "reports/browser/358171cbc0d5114c",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/people/tora-fridholm/",
+    "status": "captured",
+    "evidence_path": "reports/browser/223e0b4740e4385e",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/codasip/",
+    "status": "captured",
+    "evidence_path": "reports/browser/e0b0628d266afd89",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/adopt/assurance-and-adoption/about-cheri-enabled/",
+    "status": "captured",
+    "evidence_path": "reports/browser/5ea4918986f42935",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/adopt/assurance-and-adoption/case-studies/",
+    "status": "captured",
+    "evidence_path": "reports/browser/5b588c7beccb1574",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/adopt/assurance-and-adoption/cheri-enabled-products/",
+    "status": "captured",
+    "evidence_path": "reports/browser/f44cc693f07062f5",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/adopt/assurance-and-adoption/cheri-enabled-products/cheriot-ibex/",
+    "status": "captured",
+    "evidence_path": "reports/browser/6cfc6d9fe28d7668",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/adopt/assurance-and-adoption/cheri-enabled-products/x730/",
+    "status": "captured",
+    "evidence_path": "reports/browser/efad7d34813677c0",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/adopt/business-case/cost-of-memory-unsafety/",
+    "status": "captured",
+    "evidence_path": "reports/browser/dedf1e5d2103096a",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/alliance/about-and-governance/accelerating-together/",
+    "status": "captured",
+    "evidence_path": "reports/browser/e42d39780199f4f2",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/alliance/about-and-governance/collaboration-principles/",
+    "status": "captured",
+    "evidence_path": "reports/browser/66046cd999802bf9",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/alliance/leadership/governing-board/",
+    "status": "captured",
+    "evidence_path": "reports/browser/ba671276976c6eca",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/alliance/leadership/members/",
+    "status": "captured",
+    "evidence_path": "reports/browser/29c9a7b8f2881fd8",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/alliance/legal-and-policies/code-of-conduct/",
+    "status": "captured",
+    "evidence_path": "reports/browser/1eec46cc09bb5534",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/alliance/legal-and-policies/competition-law-statement/",
+    "status": "captured",
+    "evidence_path": "reports/browser/805b9bbc375f8b78",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/alliance/legal-and-policies/intellectual-property-policy/",
+    "status": "captured",
+    "evidence_path": "reports/browser/a8e92d29a657dce4",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/alliance/legal-and-policies/trademark-policy/",
+    "status": "captured",
+    "evidence_path": "reports/browser/33590e451da7b2cc",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/alliance/membership/membership-benefits-and-options/",
+    "status": "captured",
+    "evidence_path": "reports/browser/06fc46b77a3711e0",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/build/technology/cheri-and-rust-technical/",
+    "status": "captured",
+    "evidence_path": "reports/browser/eafff7e15a0c4d9f",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/discover/understand/adapt-products/",
+    "status": "captured",
+    "evidence_path": "reports/browser/502b2cfe29cc6f43",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/discover/understand/how-does-cheri-work/",
+    "status": "captured",
+    "evidence_path": "reports/browser/543e3727e1863db2",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/discover/why-cheri/cheri-and-rust/",
+    "status": "captured",
+    "evidence_path": "reports/browser/7591365a5ef1ad21",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/discover/why-cheri/vulnerabilities-in-everyday-technology/",
+    "status": "captured",
+    "evidence_path": "reports/browser/dcc073e19e38866e",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/events/cheri-blossoms-conference-2025/",
+    "status": "captured",
+    "evidence_path": "reports/browser/dec5dfa97a76e0bc",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/events/cheri-blossoms-conference-2026/",
+    "status": "captured",
+    "evidence_path": "reports/browser/8e510930c5e54585",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/events/cheri-blossoms-conference-2027/",
+    "status": "captured",
+    "evidence_path": "reports/browser/796965e3224b261c",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/events/cheri-blossoms-tutorial-2026/",
+    "status": "captured",
+    "evidence_path": "reports/browser/0e6be9a236530cc9",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/events/cheritech25-reloaded/",
+    "status": "captured",
+    "evidence_path": "reports/browser/715d07a57d185208",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/events/cheritech25/",
+    "status": "captured",
+    "evidence_path": "reports/browser/4af867da9271b134",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/events/cheritech26/",
+    "status": "captured",
+    "evidence_path": "reports/browser/ea718614a05fe61f",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/events/cybersecurity-by-design-conference-2024/",
+    "status": "captured",
+    "evidence_path": "reports/browser/6ef3808501aaf7d1",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/events/embedded-world-2026/",
+    "status": "captured",
+    "evidence_path": "reports/browser/c86d0c85b6e11089",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/events/webinar-cheri-cra-compliance/",
+    "status": "captured",
+    "evidence_path": "reports/browser/334678f0e73f0ed4",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/axiomise-ltd/",
+    "status": "captured",
+    "evidence_path": "reports/browser/8b54e2f9f04206d6",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/bt-group/",
+    "status": "captured",
+    "evidence_path": "reports/browser/e08f9821c2aa0171",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/cantech-informatics-srl/",
+    "status": "captured",
+    "evidence_path": "reports/browser/bf33a6772bcc2b1b",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/capabilities-limited/",
+    "status": "captured",
+    "evidence_path": "reports/browser/68eb453254efc65a",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/centrale-supelec/",
+    "status": "captured",
+    "evidence_path": "reports/browser/06738ede1fc0f6d9",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/chevin-technology/",
+    "status": "captured",
+    "evidence_path": "reports/browser/a09c9e35008eee26",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/critical-technologies/",
+    "status": "captured",
+    "evidence_path": "reports/browser/70eab3e1323db5af",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/cyberwhiz/",
+    "status": "captured",
+    "evidence_path": "reports/browser/67acaf7c23da1da1",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/cynam/",
+    "status": "captured",
+    "evidence_path": "reports/browser/6fa7e54cf1ba581e",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/digital-catapult/",
+    "status": "captured",
+    "evidence_path": "reports/browser/b176d84f6fea2182",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/discribehub/",
+    "status": "captured",
+    "evidence_path": "reports/browser/84c99e84f289fa08",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/dstl/",
+    "status": "captured",
+    "evidence_path": "reports/browser/8c367a1ab60da07c",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/durham-university/",
+    "status": "captured",
+    "evidence_path": "reports/browser/2cd57caf3f646169",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/ensilica/",
+    "status": "captured",
+    "evidence_path": "reports/browser/48802e29031e30f0",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/freebsd-foundation/",
+    "status": "captured",
+    "evidence_path": "reports/browser/64146e201b53939c",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/google/",
+    "status": "captured",
+    "evidence_path": "reports/browser/adf0d7d27ea2a02c",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/instituto-superior-de-engenharia-do-porto/",
+    "status": "captured",
+    "evidence_path": "reports/browser/d0c4dcce75ec3507",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/johannes-kepler-university-linz/",
+    "status": "captured",
+    "evidence_path": "reports/browser/0564decdb96aa707",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/king-abdullah-university-of-science-and-technology-kaust/",
+    "status": "captured",
+    "evidence_path": "reports/browser/31870780f959bde4",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/ku-leuven/",
+    "status": "captured",
+    "evidence_path": "reports/browser/e5d5be083fe9a083",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/light-momentum-technology-corp/",
+    "status": "captured",
+    "evidence_path": "reports/browser/5d3372e8bb525a10",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/lowrisc/",
+    "status": "captured",
+    "evidence_path": "reports/browser/1748d98ace99a7b7",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/misra/",
+    "status": "captured",
+    "evidence_path": "reports/browser/d19acde0713abe0d",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/national-taiwan-university/",
+    "status": "captured",
+    "evidence_path": "reports/browser/abcf4a62fb60377b",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/ncsc/",
+    "status": "captured",
+    "evidence_path": "reports/browser/1071a3b9186f8c0d",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/novomorphic/",
+    "status": "captured",
+    "evidence_path": "reports/browser/dbdb21db7368aeaa",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/nquiringminds/",
+    "status": "captured",
+    "evidence_path": "reports/browser/1f8df296ca561250",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/pa-consulting/",
+    "status": "captured",
+    "evidence_path": "reports/browser/05fcee1832e627b7",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/parvat-infotech/",
+    "status": "captured",
+    "evidence_path": "reports/browser/9340f2fe2f10f7a2",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/rptu/",
+    "status": "captured",
+    "evidence_path": "reports/browser/28ca7a147b6f5800",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/sci-semiconductor/",
+    "status": "captured",
+    "evidence_path": "reports/browser/5c78db9b6dca0f84",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/sensor-it/",
+    "status": "captured",
+    "evidence_path": "reports/browser/43e0b036aea1c599",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/siemens/",
+    "status": "captured",
+    "evidence_path": "reports/browser/d13dc8f47f426787",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/sri/",
+    "status": "captured",
+    "evidence_path": "reports/browser/93f3f1b6d9734022",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/swansea-university/",
+    "status": "captured",
+    "evidence_path": "reports/browser/278d9fea483c630a",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/tccoe/",
+    "status": "captured",
+    "evidence_path": "reports/browser/35c044fd6d529536",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/techworks/",
+    "status": "captured",
+    "evidence_path": "reports/browser/c7b780e86dd30949",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/the-capable-hub/",
+    "status": "captured",
+    "evidence_path": "reports/browser/d8feed08d8a193ea",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/the-university-of-manchester/",
+    "status": "captured",
+    "evidence_path": "reports/browser/c7c45a3d1a4d5114",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/um-labs/",
+    "status": "captured",
+    "evidence_path": "reports/browser/b3ee03a0afa2db46",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/university-of-birmingham/",
+    "status": "captured",
+    "evidence_path": "reports/browser/4e85ddf673a3e4a8",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/university-of-cambridge/",
+    "status": "captured",
+    "evidence_path": "reports/browser/2f8714e38e33f9e7",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/university-of-edinburgh/",
+    "status": "captured",
+    "evidence_path": "reports/browser/574751225c22a5ca",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/university-of-exeter/",
+    "status": "captured",
+    "evidence_path": "reports/browser/6b980a76ba04fdba",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/university-of-glasgow/",
+    "status": "captured",
+    "evidence_path": "reports/browser/d1733ab73a0e6c5f",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/university-of-kent/",
+    "status": "captured",
+    "evidence_path": "reports/browser/9ae89674c1806424",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/verisilicon/",
+    "status": "captured",
+    "evidence_path": "reports/browser/ecda4d52dd1b5df6",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/wind-river/",
+    "status": "captured",
+    "evidence_path": "reports/browser/8f5a360deed7ded5",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/wyvern-global/",
+    "status": "captured",
+    "evidence_path": "reports/browser/8094856ba7851a14",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/members/zaya/",
+    "status": "captured",
+    "evidence_path": "reports/browser/d333d4335ceb19b6",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news-and-events/events-and-archive/cheri-blossoms/",
+    "status": "captured",
+    "evidence_path": "reports/browser/8d48ae7f7b3f4cbc",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news-and-events/events-and-archive/cheritech/",
+    "status": "captured",
+    "evidence_path": "reports/browser/47a0061e959443cb",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news-and-events/events-and-archive/past-events/",
+    "status": "captured",
+    "evidence_path": "reports/browser/f091dea538cf2a56",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news-and-events/events-and-archive/upcoming-events/",
+    "status": "captured",
+    "evidence_path": "reports/browser/dd1814412c001ed9",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news-and-events/news-and-analysis/latest-news/",
+    "status": "captured",
+    "evidence_path": "reports/browser/6cc264aa4ae96f68",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news-and-events/people-and-opportunities/speakers/",
+    "status": "captured",
+    "evidence_path": "reports/browser/f4625bc1d9e682d3",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/cheri-sel4-and-cheri-microkit-released/",
+    "status": "captured",
+    "evidence_path": "reports/browser/98ca46988c573a40",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/combatting-the-ai-threat-with-cheri/",
+    "status": "captured",
+    "evidence_path": "reports/browser/08dce9f9619d7a3a",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/cybersecurity-by-design-from-research-to-industry-conference-report/",
+    "status": "captured",
+    "evidence_path": "reports/browser/856988ed8e090ae0",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/lowrisc-and-sci-semiconductor-release-sunburst-chip-repository-for-secure-microcontroller-development/",
+    "status": "captured",
+    "evidence_path": "reports/browser/501545480292eebd",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/sci-semiconductor-and-the-cheri-alliance-at-risc-v-summit-in-china-july-2025/",
+    "status": "captured",
+    "evidence_path": "reports/browser/9af092d45c8d82a0",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/why-codasip-went-all-in-on-cheri/",
+    "status": "captured",
+    "evidence_path": "reports/browser/fd44cfb44f9ab166",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/working-group-spotlight-marketing/",
+    "status": "captured",
+    "evidence_path": "reports/browser/e83207fb5cf109ef",
+    "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.github.io/news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/",
+    "status": "captured",
+    "evidence_path": "reports/browser/34b3566841a69551",
+    "failed_resource_count": 0
+  }
+]

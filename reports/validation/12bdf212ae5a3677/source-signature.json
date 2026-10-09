@@ -1,0 +1,198 @@
+{
+  "text": "Discover Why CHERI Approaches to Memory Safety Approaches to Memory Safety No single technology delivers memory safety. The strongest solutions combine processes, tools, hardware protections, and isolation. Memory safety is not delivered by any single technology. From memory-safe languages and development tools to hardware protections and compartmentalisation, effective solutions combine multiple layers to match the needs of different systems, from tiny embedded devices to large legacy platforms. Build safer software Memory-safe programming languages Languages such as Rust, Java, C#, Go, and Swift prevent or control many unsafe memory operations. For new software, they are often one of the most effective ways to reduce memory-safety vulnerabilities. Practical considerations include migration cost, hardware support, library availability, and interaction with existing C and C++ code. Some low-level operations still require unsafe code that must be reviewed carefully. Safer C and C++ practices C and C++ do not provide the memory-safety protections found in newer languages. Risk can be reduced through safer coding practices, restricted language subsets, stronger type systems, bounds-aware interfaces, safer libraries, and modern compiler checks. However, many systems depend on large, long-lived codebases that cannot realistically be rewritten. These measures primarily improve new or updated code, making adoption gradual and leaving existing vulnerabilities to be addressed over time or by additional protections. Find vulnerabilities earlier Tools exist to help developpers finding bugs and improving code quality: Static analysers inspect source or compiled code without running it. Dynamic tools, such as sanitizers, observe a running program and detect invalid behaviour. Fuzzers repeatedly provide unusual inputs to find paths that ordinary tests miss. These tools help uncover many vulnerabilities, but no tool can find every possible bug. Limit the impact Runtime mitigation Techniques such as address-space layout randomisation (ASLR), non-executable memory, stack protection, control-flow integrity, and hardened allocators make attacks more difficult and increase the effort required to exploit vulnerabilities. These protections provide valuable defence in depth, but they do not remove the underlying vulnerability and often come with performance or resource overheads. Isolation and compartmentalisation Processes, virtual machines, language sandboxes, and hardware protection domains separate components. If one component is compromised, isolation can stop it reaching the rest of the system. Smaller compartments can significantly reduce the impact of vulnerabilities, but conventional isolation mechanisms often carry substantial performance and implementation overheads. This can make fine-grained compartmentalisation impractical in many systems. CHERI hardware-enforced protection CHERI extends processor architectures with hardware-protected capabilities. These capabilities act as unforgeable tokens of authority, allowing software to access only the memory and resources it has been explicitly granted. This enables two powerful forms of protection: Fine-grained memory protection. Pointers can be bounded to objects and restricted to permitted operations. Scalable compartmentalisation. Software components can be given only the permissions they need, helping contain faults and reduce the impact of compromise Unlike many approaches, CHERI can strengthen existing C and C++ software without requiring every component to be rewritten. It can also provide a stronger foundation beneath memory-safe languages and their runtimes. A layered approach to memory safety No single technology delivers memory safety on its own. In fact, the ETSI TS 104 198 Memory Safety standard recognises a range of complementary approaches, from secure development practices and analysis tools to memory-safe languages, hardware protections, and compartmentalisation. The strongest solutions combine multiple layers. Memory-safe languages help prevent vulnerabilities, testing tools help find them, and CHERI adds efficient hardware-enforced rutime protection and fine-grained compartmentalisation. Together, they provide stronger assurance than any single approach alone. Key takeaways No single technology or language delivers memory safety. Combining prevention, detection, and containment provide stronger assurance. Limiting authority limits risk. CHERI enables efficient hardware-enforced protection and compartmentalisation. See CHERI and Rust for a closer look at how language and hardware safety can work together. Where next CHERI and Existing Software Porting software to CHERI is a process of finding assumptions about pointers, integers, objects, bounds, provenance, lifetimes, and interfaces. Continue Related content Why Existing Defences Are Not Enough Security decisions rarely involve choosing one technology and rejecting everything else. Most products use multiple security measures because different controls protect against different types of risk. Read this page",
+  "headings": [
+    [
+      "h1",
+      "Approaches to Memory Safety",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Build safer software",
+      "build-safer-software"
+    ],
+    [
+      "h3",
+      "Memory-safe programming languages",
+      "memory-safe-programming-languages"
+    ],
+    [
+      "h3",
+      "Safer C and C++ practices",
+      "safer-c-and-c-practices"
+    ],
+    [
+      "h2",
+      "Find vulnerabilities earlier",
+      "find-vulnerabilities-earlier"
+    ],
+    [
+      "h2",
+      "Limit the impact",
+      "limit-the-impact"
+    ],
+    [
+      "h3",
+      "Runtime mitigation",
+      "runtime-mitigation"
+    ],
+    [
+      "h3",
+      "Isolation and compartmentalisation",
+      "isolation-and-compartmentalisation"
+    ],
+    [
+      "h2",
+      "CHERI hardware-enforced protection",
+      "cheri-hardware-enforced-protection"
+    ],
+    [
+      "h2",
+      "A layered approach to memory safety",
+      "a-layered-approach-to-memory-safety"
+    ],
+    [
+      "h2",
+      "Key takeaways",
+      "key-takeaways"
+    ],
+    [
+      "h2",
+      "Where next",
+      null
+    ],
+    [
+      "h3",
+      "CHERI and Existing Software",
+      null
+    ],
+    [
+      "h2",
+      "Related content",
+      null
+    ],
+    [
+      "h3",
+      "Why Existing Defences Are Not Enough",
+      null
+    ]
+  ],
+  "paragraphs": [
+    "Discover",
+    "Why CHERI",
+    "Approaches to Memory Safety",
+    "No single technology delivers memory safety. The strongest solutions combine processes, tools, hardware protections, and isolation.",
+    "Memory safety is not delivered by any single technology. From memory-safe languages and development tools to hardware protections and compartmentalisation, effective solutions combine multiple layers to match the needs of different systems, from tiny embedded devices to large legacy platforms.",
+    "Languages such as Rust, Java, C#, Go, and Swift prevent or control many unsafe memory operations. For new software, they are often one of the most effective ways to reduce memory-safety vulnerabilities.",
+    "Practical considerations include migration cost, hardware support, library availability, and interaction with existing C and C++ code. Some low-level operations still require unsafe code that must be reviewed carefully.",
+    "C and C++ do not provide the memory-safety protections found in newer languages. Risk can be reduced through safer coding practices, restricted language subsets, stronger type systems, bounds-aware interfaces, safer libraries, and modern compiler checks.",
+    "However, many systems depend on large, long-lived codebases that cannot realistically be rewritten. These measures primarily improve new or updated code, making adoption gradual and leaving existing vulnerabilities to be addressed over time or by additional protections.",
+    "Tools exist to help developpers finding bugs and improving code quality:",
+    "Static analysers inspect source or compiled code without running it.",
+    "Dynamic tools, such as sanitizers, observe a running program and detect invalid behaviour.",
+    "Fuzzers repeatedly provide unusual inputs to find paths that ordinary tests miss.",
+    "These tools help uncover many vulnerabilities, but no tool can find every possible bug.",
+    "Techniques such as address-space layout randomisation (ASLR), non-executable memory, stack protection, control-flow integrity, and hardened allocators make attacks more difficult and increase the effort required to exploit vulnerabilities.",
+    "These protections provide valuable defence in depth, but they do not remove the underlying vulnerability and often come with performance or resource overheads.",
+    "Processes, virtual machines, language sandboxes, and hardware protection domains separate components. If one component is compromised, isolation can stop it reaching the rest of the system.",
+    "Smaller compartments can significantly reduce the impact of vulnerabilities, but conventional isolation mechanisms often carry substantial performance and implementation overheads. This can make fine-grained compartmentalisation impractical in many systems.",
+    "CHERI extends processor architectures with hardware-protected capabilities. These capabilities act as unforgeable tokens of authority, allowing software to access only the memory and resources it has been explicitly granted.",
+    "This enables two powerful forms of protection:",
+    "Fine-grained memory protection. Pointers can be bounded to objects and restricted to permitted operations.",
+    "Scalable compartmentalisation. Software components can be given only the permissions they need, helping contain faults and reduce the impact of compromise",
+    "Unlike many approaches, CHERI can strengthen existing C and C++ software without requiring every component to be rewritten. It can also provide a stronger foundation beneath memory-safe languages and their runtimes.",
+    "No single technology delivers memory safety on its own. In fact, the ETSI TS 104 198 Memory Safety standard recognises a range of complementary approaches, from secure development practices and analysis tools to memory-safe languages, hardware protections, and compartmentalisation.",
+    "The strongest solutions combine multiple layers. Memory-safe languages help prevent vulnerabilities, testing tools help find them, and CHERI adds efficient hardware-enforced rutime protection and fine-grained compartmentalisation. Together, they provide stronger assurance than any single approach alone.",
+    "No single technology or language delivers memory safety.",
+    "Combining prevention, detection, and containment provide stronger assurance.",
+    "Limiting authority limits risk.",
+    "CHERI enables efficient hardware-enforced protection and compartmentalisation.",
+    "See CHERI and Rust for a closer look at how language and hardware safety can work together.",
+    "Porting software to CHERI is a process of finding assumptions about pointers, integers, objects, bounds, provenance, lifetimes, and interfaces.",
+    "Security decisions rarely involve choosing one technology and rejecting everything else. Most products use multiple security measures because different controls protect against different types of risk."
+  ],
+  "lists": [
+    [
+      "ol",
+      "Discover Why CHERI Approaches to Memory Safety"
+    ],
+    [
+      "li",
+      "Discover"
+    ],
+    [
+      "li",
+      "Why CHERI"
+    ],
+    [
+      "li",
+      "Approaches to Memory Safety"
+    ],
+    [
+      "ul",
+      "Static analysers inspect source or compiled code without running it. Dynamic tools, such as sanitizers, observe a running program and detect invalid behaviour. Fuzzers repeatedly provide unusual inputs to find paths that ordinary tests miss."
+    ],
+    [
+      "li",
+      "Static analysers inspect source or compiled code without running it."
+    ],
+    [
+      "li",
+      "Dynamic tools, such as sanitizers, observe a running program and detect invalid behaviour."
+    ],
+    [
+      "li",
+      "Fuzzers repeatedly provide unusual inputs to find paths that ordinary tests miss."
+    ],
+    [
+      "ul",
+      "Fine-grained memory protection. Pointers can be bounded to objects and restricted to permitted operations. Scalable compartmentalisation. Software components can be given only the permissions they need, helping contain faults and reduce the impact of compromise"
+    ],
+    [
+      "li",
+      "Fine-grained memory protection. Pointers can be bounded to objects and restricted to permitted operations."
+    ],
+    [
+      "li",
+      "Scalable compartmentalisation. Software components can be given only the permissions they need, helping contain faults and reduce the impact of compromise"
+    ],
+    [
+      "ul",
+      "No single technology or language delivers memory safety. Combining prevention, detection, and containment provide stronger assurance. Limiting authority limits risk. CHERI enables efficient hardware-enforced protection and compartmentalisation."
+    ],
+    [
+      "li",
+      "No single technology or language delivers memory safety."
+    ],
+    [
+      "li",
+      "Combining prevention, detection, and containment provide stronger assurance."
+    ],
+    [
+      "li",
+      "Limiting authority limits risk."
+    ],
+    [
+      "li",
+      "CHERI enables efficient hardware-enforced protection and compartmentalisation."
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://cheri-alliance.github.io/discover/why-cheri/cheri-and-rust/",
+      "CHERI and Rust"
+    ],
+    [
+      "https://cheri-alliance.github.io/discover/understand/cheri-and-existing-software/",
+      "CHERI and Existing Software Porting software to CHERI is a process of finding assumptions about pointers, integers, objects, bounds, provenance, lifetimes, and interfaces. Continue"
+    ],
+    [
+      "https://cheri-alliance.github.io/discover/why-cheri/why-existing-defences-are-not-enough/",
+      "Why Existing Defences Are Not Enough Security decisions rarely involve choosing one technology and rejecting everything else. Most products use multiple security measures because different controls protect against different types of risk. Read this page"
+    ]
+  ],
+  "images": [],
+  "definitions": [],
+  "code_blocks": []
+}

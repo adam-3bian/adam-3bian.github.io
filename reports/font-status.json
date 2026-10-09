@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-10-09T21:02:08.614607+00:00",
+  "status": "available-and-localized",
+  "font_css_http_status": 200,
+  "font_resources": 4,
+  "derived_files": [
+    {
+      "path": "assets/shared/fonts/poppins-local.css",
+      "sha256": "de9433d6fe4d7985ba19eb6bb8dd099579bfefe6dd97a823e8a144b373e732bf"
+    },
+    {
+      "path": "assets/shared/source-github-local.css",
+      "sha256": "810a276eba35ad200e684d8f7f82a844c331f4b5d10d91d4e81ead7a2a5e8d97"
+    }
+  ],
+  "limitation": "Source font resources fetched using explicit Mozilla/5.0 migration User-Agent; compare actual browser typography separately."
+}

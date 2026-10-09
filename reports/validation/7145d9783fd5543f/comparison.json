@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/people/carl-shaw/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/people/carl-shaw/8f07d5273822-portrait.jpg": "https://cheri-alliance.github.io/assets/images/content/people/carl-shaw/portrait.jpg"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

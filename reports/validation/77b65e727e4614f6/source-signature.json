@@ -1,0 +1,89 @@
+{
+  "text": "News & Events Speakers Hesham Almatary Hesham Almatary Capabilities Limited Organisation Capabilities Limited LinkedIn Biography Hesham’s research interests involve security, operating systems, systems software, and computer architecture. They got their PhD from the University of Cambridge on CHERI compartmentalisation for embedded systems. Beyond research, they have been working with and contributing to open-source projects, including: Linux, seL4, RTEMS, and FreeRTOS. CHERI Talks seL4 Working Group presentation | CHERI Blossoms 2025 02/04/2025 Cambridge, UK View Slides View Video Back to all speakers",
+  "headings": [
+    [
+      "h1",
+      "Hesham Almatary",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Biography",
+      "biography"
+    ],
+    [
+      "h2",
+      "CHERI Talks",
+      "cheri-talks"
+    ]
+  ],
+  "paragraphs": [
+    "News & Events",
+    "Speakers",
+    "Hesham Almatary",
+    "Capabilities Limited",
+    "LinkedIn",
+    "Hesham’s research interests involve security, operating systems, systems software, and computer architecture. They got their PhD from the University of Cambridge on CHERI compartmentalisation for embedded systems.",
+    "Beyond research, they have been working with and contributing to open-source projects, including: Linux, seL4, RTEMS, and FreeRTOS.",
+    "seL4 Working Group presentation | CHERI Blossoms 2025",
+    "02/04/2025",
+    "Cambridge, UK",
+    "View Slides",
+    "View Video",
+    "Back to all speakers"
+  ],
+  "lists": [
+    [
+      "ol",
+      "News & Events Speakers Hesham Almatary"
+    ],
+    [
+      "li",
+      "News & Events"
+    ],
+    [
+      "li",
+      "Speakers"
+    ],
+    [
+      "li",
+      "Hesham Almatary"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://www.linkedin.com/in/heshamelmatary/",
+      "LinkedIn"
+    ],
+    [
+      "https://cheri-alliance.org/wp-content/uploads/2025/04/20250402-cheri-blossoms-sel4.pdf",
+      "View Slides"
+    ],
+    [
+      "https://youtu.be/cuj3L52ut04",
+      "View Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/news-and-events/people-and-opportunities/speakers/",
+      "Back to all speakers"
+    ]
+  ],
+  "images": [
+    [
+      "https://cheri-alliance.github.io/assets/images/content/people/hesham-almatary/portrait.png",
+      "Hesham Almatary"
+    ]
+  ],
+  "definitions": [
+    [
+      "dt",
+      "Organisation"
+    ],
+    [
+      "dd",
+      "Capabilities Limited"
+    ]
+  ],
+  "code_blocks": []
+}

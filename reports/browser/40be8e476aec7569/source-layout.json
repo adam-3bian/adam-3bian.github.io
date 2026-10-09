@@ -1,0 +1,61 @@
+{
+  "main_text": "News & Events\nSpeakers\nLuca Müller\nLuca Müller\n\nGerman Research Center for Artificial Intelligence (DFKI)\n\nOrganisation\nGerman Research Center for Artificial Intelligence (DFKI)\nLinkedIn\nBiography\n\nLuca Müller received the M.Sc. degree in computer science from University of Bremen in 2025. He is currently a Researcher in the Cyber-Physical Systems Group at the German Research Center for Artificial Intelligence (DFKI) and is pursuing his Ph.D. at the University of Bremen. His research interest lies in the verification of hardware designs at different abstraction levels, with a focus on formal techniques. Other research interests include system security and LLMs for hardware verification.\n\nCHERI Talks\n\nCHERI-enabled RISC-V VP: Capabilities and Applications | CHERI Blossoms 2026\n\n27/03/2026\n\nCambridge, UK\n\nView Slides\n\nView Video\n\nBack to all speakers",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 1149
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/people/luca-muller/portrait.jpg",
+      "alt": "Luca Müller",
+      "rect": {
+        "x": 161,
+        "y": 399.953125,
+        "width": 279.59375,
+        "height": 419.390625
+      },
+      "natural_width": 800,
+      "natural_height": 1200,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 398.953125,
+        "width": 281.59375,
+        "height": 211.1875
+      },
+      "parent_classes": [
+        "entity-media",
+        "entity-media--portrait"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 398.953125,
+        "width": 742.40625,
+        "height": 594.25
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/people/luca-muller/",
+  "final_url": "https://cheri-alliance.github.io/people/luca-muller/",
+  "retrieved_at": "2026-10-09T21:07:49.116306+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

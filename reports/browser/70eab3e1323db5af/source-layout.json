@@ -1,0 +1,61 @@
+{
+  "main_text": "Alliance\nMembers\nCritical Technologies Inc.\nCritical Technologies Inc.\n\nThe Critical Technologies Inc. (CTI) mission is trustworthy networked autonomy. CTI’s near term goal is to return meaningful control of devices, networks and data to their proper owners and enable a safe exit from the Red Queen’s race (of perpetually…\n\nStatus\nFounding member\nMembership\nFull Member\nWebsite\nVisit member website\nDescription\n\nThe Critical Technologies Inc. (CTI) mission is trustworthy networked autonomy. CTI’s near term goal is to return meaningful control of devices, networks and data to their proper owners and enable a safe exit from the Red Queen’s race (of perpetually patching vulnerabilities due to undisciplined development). Our science fiction inspired long term optimistic vision is to lead a safe entry into a strong general AI/ML enabled Gaia protecting personal freedoms for all potential sophonts. CTI has diverse R&D experience, from one of the first broadband cable modems for a commercial vendor in 1993, a massively parallel hardware real time neural network for DARPA in 1995, and resilient tactically deployed IP networks, to explainable AI/ML today.\n\nCHERI Activities\n\nCTI began promoting CHERI as part of a trustworthy whole-system stack at the 2019 RISC-V Summit and is working to integrate CHERI in open platforms for trustworthy networked autonomy.\n\nBack to all members",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 1144.65625
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/members/critical-technologies/logo.png",
+      "alt": "CTI logo",
+      "rect": {
+        "x": 196.578125,
+        "y": 488.421875,
+        "width": 208.421875,
+        "height": 137.71875
+      },
+      "natural_width": 903,
+      "natural_height": 396,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 463.421875,
+        "width": 281.59375,
+        "height": 187.71875
+      },
+      "parent_classes": [
+        "entity-media",
+        "entity-media--logo"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 463.421875,
+        "width": 742.40625,
+        "height": 525.4375
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/members/critical-technologies/",
+  "final_url": "https://cheri-alliance.github.io/members/critical-technologies/",
+  "retrieved_at": "2026-10-09T21:53:45.824106+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

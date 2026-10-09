@@ -1,0 +1,17 @@
+{
+  "url": "https://cheri-alliance.github.io/linux-roadmap/goals/user-space.html",
+  "selector": "main",
+  "asset_mapping": {},
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

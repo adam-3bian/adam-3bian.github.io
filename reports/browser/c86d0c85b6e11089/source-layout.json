@@ -1,0 +1,438 @@
+{
+  "main_text": "News & Events\nEvents & Archive\nCHERI Alliance at Embedded World 2026\nCHERI Alliance at Embedded World 2026\n\nCHERI Alliance demonstrations and member activity at Embedded World 2026 in Nuremberg.\n\nStatus\nPast\nFormat\nExhibition\nDate\n10 to 12 March 2026\nLocation\nExhibition Centre Nuremberg, Germany\n\n70% of vulnerabilities eliminated\n\nCHERI Alliance presence at Embedded World\n\nOne of the advantages of CHERI Alliance membership is the opportunity to gain visibility at leading industry events. At Embedded World 2026, for the second year, the Alliance welcomed several members to demonstrate their products, technologies, and research on the CHERI Alliance booth, helping showcase the breadth of the ecosystem while creating opportunities for collaboration, business development, and community growth.\n\nBooth Location\n\nEmbedded World Exhibition – Nuremberg Messe – Hall 5, booth 5-177\n\nCHERI Alliance Presentations\nFlyer CHERI\nFlyer CHERI Alliance\nSlides CHERI\nSlides CHERI Alliance\nDemonstrations\n\tCHERI-Enabled CVA6\tCapabilities Limited is working on a CHERI-enabled version of CVA6, a six-stage dual-issue RISC-V processor maintained by the OpenHW Foundation.\n\nWe will demo the processor running on a Genesys2 FPGA, showing how we are able to mitigate classic memory safety vulnerabilities in C/C++ applications running on CHERI-enabled operating systems (CheriBSD, CHERI-Linux, and CHERI-seL4).\n\n\tCHERI-Enabled RISC-V Open Source Software\tThe Capable Hub is working to improve the availability, quality and upstream alignment of open-source CHERI software. We will demonstrate a variety of software including Yocto Linux, Zephyr, and seL4, running on CHERI-enabled RISC-V architecture. We will also demonstrate how our hardware-in-loop infrastructure is improving the quality and test coverage of CHERI software.\n\n\tFrom Silent Corruption to Safe Fault: CHERI on FreeRTOS\tUsing the Codasip Prime CHERI exploration kit, which includes the V739 32-bit CHERI-RISC-V CPU, Codasip will demo an intentionally buggy FreeRTOS application running both without CHERI and in CHERI pure-capability mode, with no changes to the application source code. Three tasks deliberately write beyond buffer bounds. Without CHERI, memory is silently corrupted and execution continues. With CHERI enabled, the out-of-bounds writes are trapped immediately, the fault is handled safely, and corruption of sensitive data is prevented.\n\n\t \t \n\n\tSonata platform - CHERIoT features\tA wide variety of demos showcasing the features of the Sonata platform. These demos illustrate how memory safety protection mechanisms can mitigate issues as inspired by real world, observed bugs. The demos highlight how engineers can experiment on resolving real world issues.\n\nOther Alliance Members at the Conference\n\tHall 5 / 5-374\n\n\tHall 4 / 4-559\n\n\tHall 4A / 4A-13\n\n\tHall 5 / 5-119\n\n\tHall 4A / 4A-518\nBack to past events",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 5540.78125
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/thumbnails/events/embedded-world-2026.webp",
+      "alt": "CHERI logo",
+      "rect": {
+        "x": 161,
+        "y": 466.578125,
+        "width": 279.59375,
+        "height": 157.265625
+      },
+      "natural_width": 640,
+      "natural_height": 360,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 465.578125,
+        "width": 281.59375,
+        "height": 158.390625
+      },
+      "parent_classes": [
+        "entity-media",
+        "entity-media--event"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 465.578125,
+        "width": 742.40625,
+        "height": 4919.40625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/members/capabilities-limited/logo.png",
+      "alt": "Capabilities Limited logo",
+      "rect": {
+        "x": 554.59375,
+        "y": 1319.609375,
+        "width": 197.078125,
+        "height": 270.796875
+      },
+      "natural_width": 1000,
+      "natural_height": 1374,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 554.59375,
+        "y": 1319.609375,
+        "width": 197.09375,
+        "height": 270.796875
+      },
+      "parent_classes": [],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 465.578125,
+        "width": 742.40625,
+        "height": 4919.40625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/members/the-capable-hub/logo.png",
+      "alt": "The Capable Hub logo",
+      "rect": {
+        "x": 554.59375,
+        "y": 1615.40625,
+        "width": 197.078125,
+        "height": 47.890625
+      },
+      "natural_width": 1000,
+      "natural_height": 243,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 554.59375,
+        "y": 1615.40625,
+        "width": 197.09375,
+        "height": 47.890625
+      },
+      "parent_classes": [],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 465.578125,
+        "width": 742.40625,
+        "height": 4919.40625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/members/codasip/logo.png",
+      "alt": "Codasip logo",
+      "rect": {
+        "x": 554.59375,
+        "y": 1829.40625,
+        "width": 197.0625,
+        "height": 73.40625
+      },
+      "natural_width": 2000,
+      "natural_height": 745,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 554.59375,
+        "y": 1829.40625,
+        "width": 197.09375,
+        "height": 73.40625
+      },
+      "parent_classes": [],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 465.578125,
+        "width": 742.40625,
+        "height": 4919.40625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/shared/cheri-research-centre.png",
+      "alt": "CHERI Research Centre logo",
+      "rect": {
+        "x": 554.59375,
+        "y": 2127.40625,
+        "width": 197.0625,
+        "height": 65.6875
+      },
+      "natural_width": 300,
+      "natural_height": 100,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 554.59375,
+        "y": 2127.40625,
+        "width": 197.09375,
+        "height": 65.6875
+      },
+      "parent_classes": [],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 465.578125,
+        "width": 742.40625,
+        "height": 4919.40625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/members/lowrisc/logo.png",
+      "alt": "lowRISC logo",
+      "rect": {
+        "x": 554.59375,
+        "y": 2218.09375,
+        "width": 197.03125,
+        "height": 49.796875
+      },
+      "natural_width": 1104,
+      "natural_height": 279,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 554.59375,
+        "y": 2218.09375,
+        "width": 197.09375,
+        "height": 49.796875
+      },
+      "parent_classes": [],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 465.578125,
+        "width": 742.40625,
+        "height": 4919.40625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/events/embedded-world-2026/ew-2026-1.jpg",
+      "alt": "The CHERI Alliance booth at Embedded World - 1",
+      "rect": {
+        "x": 537.59375,
+        "y": 2402.09375,
+        "width": 742.390625,
+        "height": 556.796875
+      },
+      "natural_width": 1024,
+      "natural_height": 768,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 537.59375,
+        "y": 2402.09375,
+        "width": 742.40625,
+        "height": 556.796875
+      },
+      "parent_classes": [],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 465.578125,
+        "width": 742.40625,
+        "height": 4919.40625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/events/embedded-world-2026/ew-2026-2.jpg",
+      "alt": "The CHERI Alliance booth at Embedded World - 2",
+      "rect": {
+        "x": 537.59375,
+        "y": 2982.890625,
+        "width": 742.375,
+        "height": 557.515625
+      },
+      "natural_width": 1024,
+      "natural_height": 769,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 537.59375,
+        "y": 2982.890625,
+        "width": 742.40625,
+        "height": 557.515625
+      },
+      "parent_classes": [],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 465.578125,
+        "width": 742.40625,
+        "height": 4919.40625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/events/embedded-world-2026/ew-2026-3.jpg",
+      "alt": "The CHERI Alliance booth at Embedded World - 3",
+      "rect": {
+        "x": 537.59375,
+        "y": 3564.40625,
+        "width": 742.390625,
+        "height": 556.796875
+      },
+      "natural_width": 1024,
+      "natural_height": 768,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 537.59375,
+        "y": 3564.40625,
+        "width": 742.40625,
+        "height": 556.796875
+      },
+      "parent_classes": [],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 465.578125,
+        "width": 742.40625,
+        "height": 4919.40625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/members/cyberwhiz/logo.png",
+      "alt": "CyberWhiz Logo",
+      "rect": {
+        "x": 554.59375,
+        "y": 4253.796875,
+        "width": 564.359375,
+        "height": 133.28125
+      },
+      "natural_width": 1499,
+      "natural_height": 354,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 538.09375,
+        "y": 4241.296875,
+        "width": 597.40625,
+        "height": 158.28125
+      },
+      "parent_classes": [],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 465.578125,
+        "width": 742.40625,
+        "height": 4919.40625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/members/ensilica/logo.png",
+      "alt": "EnSilica logo",
+      "rect": {
+        "x": 554.59375,
+        "y": 4412.078125,
+        "width": 564.375,
+        "height": 191.890625
+      },
+      "natural_width": 2000,
+      "natural_height": 680,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 538.09375,
+        "y": 4399.578125,
+        "width": 597.40625,
+        "height": 216.890625
+      },
+      "parent_classes": [],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 465.578125,
+        "width": 742.40625,
+        "height": 4919.40625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/members/sci-semiconductor/logo.png",
+      "alt": "SCI Semiconductor logo",
+      "rect": {
+        "x": 554.59375,
+        "y": 4628.96875,
+        "width": 564.375,
+        "height": 374.0625
+      },
+      "natural_width": 1201,
+      "natural_height": 796,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 538.09375,
+        "y": 4616.46875,
+        "width": 597.40625,
+        "height": 399.0625
+      },
+      "parent_classes": [],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 465.578125,
+        "width": 742.40625,
+        "height": 4919.40625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/members/siemens/logo.png",
+      "alt": "SIEMENS logo",
+      "rect": {
+        "x": 554.59375,
+        "y": 5028.03125,
+        "width": 564.390625,
+        "height": 90.0625
+      },
+      "natural_width": 1598,
+      "natural_height": 255,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 538.09375,
+        "y": 5015.53125,
+        "width": 597.40625,
+        "height": 115.0625
+      },
+      "parent_classes": [],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 465.578125,
+        "width": 742.40625,
+        "height": 4919.40625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/members/verisilicon/logo.png",
+      "alt": "VeriSilicon logo",
+      "rect": {
+        "x": 554.59375,
+        "y": 5143.09375,
+        "width": 564.390625,
+        "height": 204.890625
+      },
+      "natural_width": 1033,
+      "natural_height": 375,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 538.09375,
+        "y": 5130.59375,
+        "width": 597.40625,
+        "height": 229.890625
+      },
+      "parent_classes": [],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 465.578125,
+        "width": 742.40625,
+        "height": 4919.40625
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/events/embedded-world-2026/",
+  "final_url": "https://cheri-alliance.github.io/events/embedded-world-2026/",
+  "retrieved_at": "2026-10-09T21:53:31.090241+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

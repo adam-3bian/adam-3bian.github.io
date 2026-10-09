@@ -1,0 +1,130 @@
+{
+  "text": "Alliance About & Governance 🛠️ OS Support & Portability WG 🛠️ OS Support & Portability WG Connects operating-system ports, shared interfaces, terminology, and documentation across CHERI architectures and software projects. The OS Support & Portability Working Group brings together contributors focused on supporting and documenting the process of adapting both open-source and commercial operating systems for CHERI. The group aims to publish practical guides, recommendations, and code examples to aid porting efforts, while also acting as a temporary home for work on less common OSes. In addition, the group collects and shares general insights from OS porting that may benefit the wider CHERI software porting community. Relationship to other groups Relevant Alliance groups include CHERI Linux, CHERI FreeRTOS, CHERI Zephyr, CHERI for seL4, and MMU-less Systems. Each retains its own technical scope while contributing experience relevant to portability. Group type Technical Areas of collaboration Cross-OS interfaces Portability and terminology Documentation and integration Enquire about this group Back to all working groups Where next All Working Groups Return to the full directory of technical and programme working groups. Continue",
+  "headings": [
+    [
+      "h1",
+      "🛠️ OS Support & Portability WG",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Relationship to other groups",
+      "relationship-to-other-groups"
+    ],
+    [
+      "h2",
+      "Where next",
+      null
+    ],
+    [
+      "h3",
+      "All Working Groups",
+      null
+    ]
+  ],
+  "paragraphs": [
+    "Alliance",
+    "About & Governance",
+    "🛠️ OS Support & Portability WG",
+    "Connects operating-system ports, shared interfaces, terminology, and documentation across CHERI architectures and software projects.",
+    "The OS Support & Portability Working Group brings together contributors focused on supporting and documenting the process of adapting both open-source and commercial operating systems for CHERI.",
+    "The group aims to publish practical guides, recommendations, and code examples to aid porting efforts, while also acting as a temporary home for work on less common OSes.",
+    "In addition, the group collects and shares general insights from OS porting that may benefit the wider CHERI software porting community.",
+    "Relevant Alliance groups include CHERI Linux, CHERI FreeRTOS, CHERI Zephyr, CHERI for seL4, and MMU-less Systems. Each retains its own technical scope while contributing experience relevant to portability.",
+    "Cross-OS interfaces",
+    "Portability and terminology",
+    "Documentation and integration",
+    "Enquire about this group",
+    "Back to all working groups",
+    "Return to the full directory of technical and programme working groups."
+  ],
+  "lists": [
+    [
+      "ol",
+      "Alliance About & Governance 🛠️ OS Support & Portability WG"
+    ],
+    [
+      "li",
+      "Alliance"
+    ],
+    [
+      "li",
+      "About & Governance"
+    ],
+    [
+      "li",
+      "🛠️ OS Support & Portability WG"
+    ],
+    [
+      "ul",
+      "Cross-OS interfaces Portability and terminology Documentation and integration"
+    ],
+    [
+      "li",
+      "Cross-OS interfaces"
+    ],
+    [
+      "li",
+      "Portability and terminology"
+    ],
+    [
+      "li",
+      "Documentation and integration"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://cheri-alliance.github.io/alliance/leadership/working-groups/cheri-linux-working-group/",
+      "CHERI Linux"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/leadership/working-groups/cheri-freertos/",
+      "CHERI FreeRTOS"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/leadership/working-groups/cheri-zephyr/",
+      "CHERI Zephyr"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/leadership/working-groups/cheri-for-sel4/",
+      "CHERI for seL4"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/leadership/working-groups/mmu-less-systems/",
+      "MMU-less Systems"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/membership/contact/",
+      "Enquire about this group"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/about-and-governance/working-groups/",
+      "Back to all working groups"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/leadership/working-groups/",
+      "All Working Groups Return to the full directory of technical and programme working groups. Continue"
+    ]
+  ],
+  "images": [],
+  "definitions": [
+    [
+      "dt",
+      "Group type"
+    ],
+    [
+      "dd",
+      "Technical"
+    ],
+    [
+      "dt",
+      "Areas of collaboration"
+    ],
+    [
+      "dd",
+      "Cross-OS interfaces Portability and terminology Documentation and integration"
+    ]
+  ],
+  "code_blocks": []
+}

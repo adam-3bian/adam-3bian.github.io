@@ -1,0 +1,124 @@
+{
+  "text": "News & Events Speakers Robert Watson Robert Watson CHERI Alliance, University of Cambridge Organisation CHERI Alliance, University of Cambridge LinkedIn Biography Professor Robert N. M. Watson is a Professor of Systems, Security, and Architecture at the University of Cambridge’s Department of Computer Science and Technology. His research encompasses computer architecture, compilers, program analysis, operating systems, networking, and security. He leads several cross-layer research projects in these areas. Professor Watson is a director of the CHERI Alliance, board member of the FreeBSD Foundation and a co-author of The Design and Implementation of the FreeBSD Operating System. He has contributed extensively to the FreeBSD Project and has a strong interest in open-source software. CHERI Talks The CHERI Research Centre | CHERI Blossoms 2026 26/03/2026 Cambridge, UK View Slides View Video CHERI Crash Course: High-level Introduction | CHERI Blossoms 2026 26/03/2026 Cambridge, UK View Slides View Video Progress of CHERI | CHERITech’25 14/11/2025 Manchester, UK View Slides View Video Latest news about CHERI | CHERI Blossoms 2025 02/04/2025 Cambridge, UK – View Video Back to all speakers",
+  "headings": [
+    [
+      "h1",
+      "Robert Watson",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Biography",
+      "biography"
+    ],
+    [
+      "h2",
+      "CHERI Talks",
+      "cheri-talks"
+    ]
+  ],
+  "paragraphs": [
+    "News & Events",
+    "Speakers",
+    "Robert Watson",
+    "CHERI Alliance, University of Cambridge",
+    "LinkedIn",
+    "Professor Robert N. M. Watson is a Professor of Systems, Security, and Architecture at the University of Cambridge’s Department of Computer Science and Technology. His research encompasses computer architecture, compilers, program analysis, operating systems, networking, and security. He leads several cross-layer research projects in these areas.",
+    "Professor Watson is a director of the CHERI Alliance, board member of the FreeBSD Foundation and a co-author of The Design and Implementation of the FreeBSD Operating System. He has contributed extensively to the FreeBSD Project and has a strong interest in open-source software.",
+    "The CHERI Research Centre | CHERI Blossoms 2026",
+    "26/03/2026",
+    "Cambridge, UK",
+    "View Slides",
+    "View Video",
+    "CHERI Crash Course: High-level Introduction | CHERI Blossoms 2026",
+    "26/03/2026",
+    "Cambridge, UK",
+    "View Slides",
+    "View Video",
+    "Progress of CHERI | CHERITech’25",
+    "14/11/2025",
+    "Manchester, UK",
+    "View Slides",
+    "View Video",
+    "Latest news about CHERI | CHERI Blossoms 2025",
+    "02/04/2025",
+    "Cambridge, UK",
+    "–",
+    "View Video",
+    "Back to all speakers"
+  ],
+  "lists": [
+    [
+      "ol",
+      "News & Events Speakers Robert Watson"
+    ],
+    [
+      "li",
+      "News & Events"
+    ],
+    [
+      "li",
+      "Speakers"
+    ],
+    [
+      "li",
+      "Robert Watson"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://www.linkedin.com/in/robert-watson-3747a6253/",
+      "LinkedIn"
+    ],
+    [
+      "https://cheri-alliance.org/wp-content/uploads/2026/04/D1-2.5-Robert-Watson-CHERI-Research-Centre-CHERI-Blossoms-2026.pdf",
+      "View Slides"
+    ],
+    [
+      "https://youtu.be/jHIshRpvaYU",
+      "View Video"
+    ],
+    [
+      "https://cheri-alliance.org/wp-content/uploads/2026/04/D1-0.2-Robert-Watson-CHERI-crash-course-high-level-introduction-CHERI-Blossoms-2026.pdf",
+      "View Slides"
+    ],
+    [
+      "https://youtu.be/5YEkHpFgWTs",
+      "View Video"
+    ],
+    [
+      "https://cheri-alliance.org/wp-content/uploads/2025/11/3.1-Robert-Watson-Progress-of-CHERI-1-CHERITech25.pdf",
+      "View Slides"
+    ],
+    [
+      "https://youtu.be/FJhS2i7KVtI",
+      "View Video"
+    ],
+    [
+      "https://youtu.be/jwq2fs_DzME",
+      "View Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/news-and-events/people-and-opportunities/speakers/",
+      "Back to all speakers"
+    ]
+  ],
+  "images": [
+    [
+      "https://cheri-alliance.github.io/assets/images/content/people/robert-watson/portrait.png",
+      "Robert Watson"
+    ]
+  ],
+  "definitions": [
+    [
+      "dt",
+      "Organisation"
+    ],
+    [
+      "dd",
+      "CHERI Alliance, University of Cambridge"
+    ]
+  ],
+  "code_blocks": []
+}

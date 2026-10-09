@@ -1,0 +1,48 @@
+{
+  "main_text": "News & Events\nNews & Analysis\nICENI: First Look\nICENI: First Look\n\nFor more than a decade, CHERI research has demonstrated that hardware enforced memory safety can eliminate entire classes of security vulnerabilities. Much of this work has taken place in simulators and FPGA platforms, enabling researchers and…\n\n16 March 2026\nCHERI Alliance news\nEcosystem\nMembers\n\nFor more than a decade, CHERI research has demonstrated that hardware enforced memory safety can eliminate entire classes of security vulnerabilities. Much of this work has taken place in simulators and FPGA platforms, enabling researchers and developers to experiment with capability based architectures before production hardware became available.\n\nThe CHERIoT project extends these principles to the world of microcontrollers and embedded systems. It combines a capability enhanced instruction set, a compartmentalised software model, and a security focused runtime environment designed specifically for resource constrained devices. Until recently, development has primarily taken place using software models and FPGA prototypes, including the CHERIoT SAFE FPGA platform and the Sonata development board.\n\nThis article marks an important milestone for the CHERIoT ecosystem: the arrival of the first silicon implementation. SCI Semiconductor’s ICENI chip demonstrates that CHERIoT is no longer only a research or prototyping platform. It is now a real microcontroller capable of running CHERIoT systems in production hardware, bringing capability based security and strong memory safety to the embedded world.\n\nThe following announcement from David Chisnall describes the ICENI development board, the architecture behind the chip, and what this step means for developers building secure embedded systems with CHERI.\n\nRead the announcement from SCI Semiconductor here.\n\nBack to Latest News",
+  "images": [
+    {
+      "url": "http://127.0.0.1:41683/assets/news/iceni-first-look/36d8eddd801e-hero.png",
+      "rect": {
+        "x": 177,
+        "y": 529.21875,
+        "width": 958,
+        "height": 576
+      },
+      "natural_width": 1632,
+      "natural_height": 1147
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/news/iceni-first-look/",
+  "checks": {
+    "visible_main_text": true,
+    "header_text": true,
+    "footer_text": true,
+    "copyright_text": true,
+    "image_count": true,
+    "image_integrity": true,
+    "desktop_image_geometry": true
+  },
+  "image_checks": [
+    {
+      "source_url": "https://cheri-alliance.github.io/assets/images/content/news/iceni-first-look/hero.png",
+      "mapped_url_correct": true,
+      "loaded": true,
+      "geometry_delta_px": {
+        "x": 0,
+        "y": 0.0,
+        "width": 0,
+        "height": 0
+      }
+    }
+  ]
+}

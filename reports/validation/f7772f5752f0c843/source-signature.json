@@ -1,0 +1,72 @@
+{
+  "text": "News & Events News & Analysis Wind River Joins the CHERI Alliance Wind River Joins the CHERI Alliance We are pleased to welcome Wind River to the CHERI Alliance, marking another important step forward in building a more secure computing ecosystem. Building on its existing work with CHERI, Wind River was recently awarded a contract as part of a… 21 April 2026 CHERI Alliance news Ecosystem Members We are pleased to welcome Wind River to the CHERI Alliance, marking another important step forward in building a more secure computing ecosystem. Building on its existing work with CHERI, Wind River was recently awarded a contract as part of a strategic initiative led by Innovate UK and the Department for Science, Innovation and Technology to support the wider adoption of CHERI technology. As part of this effort, they will be working to port and extend the VxWorks Real-Time Operating System (RTOS) and Wind River Helix Virtualization Platform (Helix Platform) to leverage the CHERI architecture on RISC-V. The addition of Wind River is a significant boost to our mission to accelerate CHERI adoption. By combining proven, industry-grade software with CHERI’s hardware-enforced protections, we move closer to reducing entire classes of memory safety vulnerabilities across critical infrastructure and intelligent edge devices. We look forward to working with Wind River as part of the Alliance. Read the full announcement in Wind River’s press release. Back to Latest News",
+  "headings": [
+    [
+      "h1",
+      "Wind River Joins the CHERI Alliance",
+      "page-hero-title"
+    ]
+  ],
+  "paragraphs": [
+    "News & Events",
+    "News & Analysis",
+    "Wind River Joins the CHERI Alliance",
+    "We are pleased to welcome Wind River to the CHERI Alliance, marking another important step forward in building a more secure computing ecosystem. Building on its existing work with CHERI, Wind River was recently awarded a contract as part of a…",
+    "21 April 2026 CHERI Alliance news Ecosystem Members",
+    "We are pleased to welcome Wind River to the CHERI Alliance, marking another important step forward in building a more secure computing ecosystem.",
+    "Building on its existing work with CHERI, Wind River was recently awarded a contract as part of a strategic initiative led by Innovate UK and the Department for Science, Innovation and Technology to support the wider adoption of CHERI technology. As part of this effort, they will be working to port and extend the VxWorks Real-Time Operating System (RTOS) and Wind River Helix Virtualization Platform (Helix Platform) to leverage the CHERI architecture on RISC-V.",
+    "The addition of Wind River is a significant boost to our mission to accelerate CHERI adoption. By combining proven, industry-grade software with CHERI’s hardware-enforced protections, we move closer to reducing entire classes of memory safety vulnerabilities across critical infrastructure and intelligent edge devices.",
+    "We look forward to working with Wind River as part of the Alliance.",
+    "Read the full announcement in Wind River’s press release.",
+    "Back to Latest News"
+  ],
+  "lists": [
+    [
+      "ol",
+      "News & Events News & Analysis Wind River Joins the CHERI Alliance"
+    ],
+    [
+      "li",
+      "News & Events"
+    ],
+    [
+      "li",
+      "News & Analysis"
+    ],
+    [
+      "li",
+      "Wind River Joins the CHERI Alliance"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://cheri-alliance.github.io/members/wind-river/",
+      "Wind River"
+    ],
+    [
+      "https://www.windriver.com/products/embedded/vxworks",
+      "VxWorks"
+    ],
+    [
+      "https://www.windriver.com/products/embedded/helix",
+      "Wind River Helix Virtualization Platform"
+    ],
+    [
+      "https://www.windriver.com/news/press/news-20260421",
+      "Read the full announcement in Wind River’s press release."
+    ],
+    [
+      "https://cheri-alliance.github.io/news-and-events/news-and-analysis/latest-news/",
+      "Back to Latest News"
+    ]
+  ],
+  "images": [
+    [
+      "https://cheri-alliance.github.io/assets/images/content/news/wind-river-joins-the-cheri-alliance/hero.png",
+      "Welcome Wind Rover - CHERI Alliance member"
+    ]
+  ],
+  "definitions": [],
+  "code_blocks": []
+}

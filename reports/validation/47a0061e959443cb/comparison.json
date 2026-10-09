@@ -1,0 +1,21 @@
+{
+  "url": "https://cheri-alliance.github.io/news-and-events/events-and-archive/cheritech/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/events/cheritech26/408459d34c43-cheritech26.webp": "https://cheri-alliance.github.io/assets/images/thumbnails/events/cheritech26.webp",
+    "/assets/events/cheritech25-reloaded/7bce58279add-cheritech25-reloaded.webp": "https://cheri-alliance.github.io/assets/images/thumbnails/events/cheritech25-reloaded.webp",
+    "/assets/events/cheritech25/0e6d3180c4d1-cheritech25.webp": "https://cheri-alliance.github.io/assets/images/thumbnails/events/cheritech25.webp"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

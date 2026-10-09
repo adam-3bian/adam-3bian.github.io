@@ -1,0 +1,58 @@
+{
+  "main_text": "Discover\nWhy CHERI\nVulnerabilities in Everyday Technology\nVulnerabilities in Everyday Technology\n\nA memory mistake in a connected device can expose private information, change how the device behaves, or provide a way into a wider network.\n\nConnected devices are specialised computers. A camera, doorbell, router, medical monitor, or vehicle system may connect to networks, accept remote commands, install software updates, and store sensitive or personal information.\n\nIf software contains a serious memory vulnerability, an attacker may be able to access information, change settings, disrupt operation, or use the device to attack other systems on the same network.\n\nEven small devices can carry significant risk\n\nConnected products often combine private data, physical control, and a route into a wider system, for example:\n\nDevice\tWhat it handles\tPotential impact of a serious compromise\nVideo doorbell\tVideo, audio, account details, Wi-Fi access\tPrivacy loss, device control, access to other devices\nSmart meter\tUsage readings, remote commands\tPresence detection, disruption of operation\nMedical device\tPatient information, alarms, settings\tLoss of confidentiality or even life-threatening events\nFactory sensor or gateway\tProduction data, control messages, network connections\tProduction disruption, industrial accident\nConnected vehicle component\tSensor and service communications\tVehicle function disruptions, loss of availability, or safety impacts\n\nThe risk depends on the flaw and the device, but even modest products can provide valuable access.\n\nHow an ordinary mistake becomes a security problem\n\nSoftware stores information in memory while it runs. Memory safety means software can only access the information it is supposed to access.\n\nA memory-safety vulnerability occurs when software accidentally reads or modifies memory outside those intended limits. An attacker can sometimes trigger these mistakes using carefully crafted input, potentially allowing them to:\n\nread private information;\nalter settings or security decisions;\nmake a device unavailable;\nrun commands with the software’s privileges;\naccess data and services the software was never meant to reach.\n\nThis is why a small coding mistake can become a significant security problem.\n\nWhy connected products are vulnerable\n\nConnected devices constantly process information from outside sources, including network traffic, files, images, sensor data, app commands, and software updates. Every one of these inputs can become an attack path.\n\nMany products also rely on software written in C and C++. These languages are efficient and widely used, especially in constrained devices, but they require developers to manage memory correctly. In large codebases built from drivers, libraries, and application software, some mistakes inevitably escape review and testing.\n\nLimiting the impact of vulnerabilities\n\nAn image-processing component should need access to images, not to Wi-Fi credentials or update keys. Yet many traditional systems allow software components to share memory and broad privileges.\n\nAs a result, compromising one component can give an attacker access to much more than that component actually needs. Separating software into smaller, independent parts helps contain the damage, but traditional isolation can be difficult or expensive in resource-constrained devices.\n\nA stronger foundation for connected devices\n\nTesting, code review, and security updates remain essential, but they cannot prevent every future memory mistake.\n\nCHERI helps address the problem at the hardware level. It introduces protected references called capabilities, which define not only where information is stored but also what memory can be accessed and what actions are permitted.\n\nA conventional pointer is like an address. A CHERI capability is more like an access pass that combines the address with the permissions needed to use it. The processor checks those permissions whenever the capability is used.\n\nCHERI does not eliminate all software bugs, but it can prevent many forms of invalid memory access and limit what compromised software can reach.\n\nThe essential point\n\nConnected devices are trusted with private information, physical functions, and network access. Memory vulnerabilities matter because they can turn ordinary input into a route for taking control.\n\nBy preventing many forms of invalid memory access and limiting the reach of compromised software, CHERI helps reduce the risk that a single mistake compromises an entire device or system.\n\nFurther reading: Google’s overview of its memory-safety strategy and the University of Cambridge CHERI overview.\n\nWhere next\nWhy Existing Defences Are Not Enough\n\nPasswords, encryption, testing, and updates all matter, but they do not stop every memory mistake when it happens.\n\nContinue",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 3999.1875
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/shared/cve.webp",
+      "alt": "Vulnerabilities keep increasing",
+      "rect": {
+        "x": 160,
+        "y": 671.15625,
+        "width": 582,
+        "height": 474
+      },
+      "natural_width": 582,
+      "natural_height": 474,
+      "style": {
+        "float": "none",
+        "display": "inline"
+      },
+      "parent": {
+        "x": 160,
+        "y": 671.15625,
+        "width": 768,
+        "height": 482.1875
+      },
+      "parent_classes": [],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 3999.1875
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/discover/why-cheri/vulnerabilities-in-everyday-technology/",
+  "final_url": "https://cheri-alliance.github.io/discover/why-cheri/vulnerabilities-in-everyday-technology/",
+  "retrieved_at": "2026-10-09T21:53:12.011159+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

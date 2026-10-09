@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/67e343f4b8d6-hero.png": "https://cheri-alliance.github.io/assets/images/content/news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/hero.png"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

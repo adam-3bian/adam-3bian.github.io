@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/members/lowrisc/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/organisations/lowrisc/d432df8a7ccf-logo.png": "https://cheri-alliance.github.io/assets/images/content/members/lowrisc/logo.png"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

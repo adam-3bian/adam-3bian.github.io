@@ -1,0 +1,121 @@
+{
+  "text": "Discover Resources Digital Security by Design Archive Digital Security by Design Archive Who Readers looking for CHERI reference material and further reading. What An archive of material from the Digital Security by Design programme relevant to CHERI. Why Helps readers understand where Digital Security by Design Archive fits, what evidence matters, and where to look next. Content What is included under Digital Security by Design Archive How entries are described, dated, and sourced Links to relevant primary or supporting material Where next Glossary This glossary provides simple, product-oriented explanations of common CHERI concepts. More detailed technical definitions can be found in the Build section. Continue Related content Specifications A directory of architecture and related specifications relevant to CHERI. Read this page Videos & Presentations A collection of talks, demonstrations, briefings, and presentations about CHERI. Read this page",
+  "headings": [
+    [
+      "h1",
+      "Digital Security by Design Archive",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Who",
+      "who"
+    ],
+    [
+      "h2",
+      "What",
+      "what"
+    ],
+    [
+      "h2",
+      "Why",
+      "why"
+    ],
+    [
+      "h2",
+      "Content",
+      "content"
+    ],
+    [
+      "h2",
+      "Where next",
+      null
+    ],
+    [
+      "h3",
+      "Glossary",
+      null
+    ],
+    [
+      "h2",
+      "Related content",
+      null
+    ],
+    [
+      "h3",
+      "Specifications",
+      null
+    ],
+    [
+      "h3",
+      "Videos & Presentations",
+      null
+    ]
+  ],
+  "paragraphs": [
+    "Discover",
+    "Resources",
+    "Digital Security by Design Archive",
+    "Readers looking for CHERI reference material and further reading.",
+    "An archive of material from the Digital Security by Design programme relevant to CHERI.",
+    "Helps readers understand where Digital Security by Design Archive fits, what evidence matters, and where to look next.",
+    "What is included under Digital Security by Design Archive",
+    "How entries are described, dated, and sourced",
+    "Links to relevant primary or supporting material",
+    "This glossary provides simple, product-oriented explanations of common CHERI concepts. More detailed technical definitions can be found in the Build section.",
+    "A directory of architecture and related specifications relevant to CHERI.",
+    "A collection of talks, demonstrations, briefings, and presentations about CHERI."
+  ],
+  "lists": [
+    [
+      "ol",
+      "Discover Resources Digital Security by Design Archive"
+    ],
+    [
+      "li",
+      "Discover"
+    ],
+    [
+      "li",
+      "Resources"
+    ],
+    [
+      "li",
+      "Digital Security by Design Archive"
+    ],
+    [
+      "ul",
+      "What is included under Digital Security by Design Archive How entries are described, dated, and sourced Links to relevant primary or supporting material"
+    ],
+    [
+      "li",
+      "What is included under Digital Security by Design Archive"
+    ],
+    [
+      "li",
+      "How entries are described, dated, and sourced"
+    ],
+    [
+      "li",
+      "Links to relevant primary or supporting material"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://cheri-alliance.github.io/discover/resources/glossary/",
+      "Glossary This glossary provides simple, product-oriented explanations of common CHERI concepts. More detailed technical definitions can be found in the Build section. Continue"
+    ],
+    [
+      "https://cheri-alliance.github.io/discover/resources/specifications/",
+      "Specifications A directory of architecture and related specifications relevant to CHERI. Read this page"
+    ],
+    [
+      "https://cheri-alliance.github.io/discover/resources/videos-and-presentations/",
+      "Videos & Presentations A collection of talks, demonstrations, briefings, and presentations about CHERI. Read this page"
+    ]
+  ],
+  "images": [],
+  "definitions": [],
+  "code_blocks": []
+}

@@ -1,0 +1,61 @@
+{
+  "main_text": "News & Events\nSpeakers\nAlex Rebert\nAlex Rebert\n\nGoogle\n\nOrganisation\nGoogle\nLinkedIn\nBiography\n\nAlex Rebert is an engineer at Google, where he focuses on memory safety. Previously, he co-founded ForAllSecure and led the creation of Mayhem, the autonomous cyber reasoning system that won the 2016 DARPA Cyber Grand Challenge. He was recognized by MIT Technology Review as one of the 35 Innovators Under 35 and by Forbes’s 30 Under 30.\n\nCHERI Talks\n\nKeynote – Memory Safety at Scale: An Industry Perspective | CHERI Blossoms 2026\n\n26/03/2026\n\nCambridge, UK\n\nView Slides\n\nView Video\n\nBack to all speakers",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 1094.625
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/people/alex-rebert/portrait.png",
+      "alt": "Alex Rebert",
+      "rect": {
+        "x": 161,
+        "y": 399.953125,
+        "width": 279.59375,
+        "height": 279.59375
+      },
+      "natural_width": 600,
+      "natural_height": 600,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 398.953125,
+        "width": 281.59375,
+        "height": 211.1875
+      },
+      "parent_classes": [
+        "entity-media",
+        "entity-media--portrait"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 398.953125,
+        "width": 742.40625,
+        "height": 539.875
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/people/alex-rebert/",
+  "final_url": "https://cheri-alliance.github.io/people/alex-rebert/",
+  "retrieved_at": "2026-10-09T21:06:59.792541+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

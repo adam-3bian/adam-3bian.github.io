@@ -1,0 +1,21 @@
+{
+  "url": "https://cheri-alliance.github.io/adopt/assurance-and-adoption/about-cheri-enabled/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/shared/cheri-enabled/be89fa8f9b81-cheri-enabled.webp": "https://cheri-alliance.github.io/assets/images/thumbnails/shared/cheri-enabled.webp",
+    "/assets/shared/source-assets/8651dcf7d9cf-certification-process.webp": "https://cheri-alliance.github.io/assets/images/content/shared/certification-process.webp",
+    "/assets/shared/source-assets/611b980d082a-certification-program-v1.pdf": "https://cheri-alliance.github.io/assets/pdf/certification-program-v1.pdf"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

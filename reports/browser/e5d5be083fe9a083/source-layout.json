@@ -1,0 +1,61 @@
+{
+  "main_text": "Alliance\nMembers\nKU Leuven\nKU Leuven\n\nFounded in 1425, the multidisciplinary and research-driven university KU Leuven has been a centre of learning for almost six centuries. Today, it is Belgium’s highest-ranked university and is one of the oldest and most renowned universities in…\n\nStatus\nMember\nMembership\nCommunity Member\nWebsite\nVisit member website\nDescription\n\nFounded in 1425, the multidisciplinary and research-driven university KU Leuven has been a centre of learning for almost six centuries. Today, it is Belgium’s highest-ranked university and is one of the oldest and most renowned universities in Europe.\n\nCHERI Activities\n\nCHERI-related research at KU Leuven includes formal verification of ISAs and software, design of ISA extensions, microarchitectural security and other topics.\n\nBack to all members",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 1065.53125
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/members/ku-leuven/logo.png",
+      "alt": "KU Leuven logo",
+      "rect": {
+        "x": 196.578125,
+        "y": 488.421875,
+        "width": 208.421875,
+        "height": 137.71875
+      },
+      "natural_width": 1323,
+      "natural_height": 472,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 463.421875,
+        "width": 281.59375,
+        "height": 187.71875
+      },
+      "parent_classes": [
+        "entity-media",
+        "entity-media--logo"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 463.421875,
+        "width": 742.40625,
+        "height": 335.125
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/members/ku-leuven/",
+  "final_url": "https://cheri-alliance.github.io/members/ku-leuven/",
+  "retrieved_at": "2026-10-09T21:54:03.748839+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

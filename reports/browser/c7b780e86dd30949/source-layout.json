@@ -1,0 +1,61 @@
+{
+  "main_text": "Alliance\nMembers\nTechWorks\nTechWorks\n\nTechWorks is a new type of industry association at the core of the UK deep tech community with an ambition to harness our fantastic engineering and innovation to develop the UK’s position as a global technology super-power. TechWorks operates beyond…\n\nStatus\nFounding member\nMembership\nCommunity Member\nWebsite\nVisit member website\nDescription\n\nTechWorks is a new type of industry association at the core of the UK deep tech community with an ambition to harness our fantastic engineering and innovation to develop the UK’s position as a global technology super-power. TechWorks operates beyond established silos by:\n\nCreating dynamic, connected technical and business communities to empower innovation and collaboration, supporting business growth and investment.\nIdentifying the critical common challenges and leading responses to tackle them.\nDeveloping the UK tech ecosystem and partnerships across industry, academia and government to ensure the UK is amongst the best location globally to start, build and scale a Deep Tech organisation.\nCHERI Activities\n\nThe IoTSF (IoT Security Foundation) and AESIN ( Automotive Electronic Systems Innovation Network) are technical communities of TechWorks and have supported the UK’s Digital Security by Design programme, promoted awareness of the memory safety challenge and collaborated with members on projects based on CHERI technology. We intend to further support this important theme and commercialisation of the technology.\n\nBack to all members",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 1266.21875
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/members/techworks/logo.png",
+      "alt": "TechWorks logo",
+      "rect": {
+        "x": 196.578125,
+        "y": 488.421875,
+        "width": 208.421875,
+        "height": 137.71875
+      },
+      "natural_width": 2000,
+      "natural_height": 388,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 463.421875,
+        "width": 281.59375,
+        "height": 187.71875
+      },
+      "parent_classes": [
+        "entity-media",
+        "entity-media--logo"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 463.421875,
+        "width": 742.40625,
+        "height": 647
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/members/techworks/",
+  "final_url": "https://cheri-alliance.github.io/members/techworks/",
+  "retrieved_at": "2026-10-09T21:54:26.884680+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

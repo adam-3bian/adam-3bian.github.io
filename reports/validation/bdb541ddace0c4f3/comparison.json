@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/shared/source-assets/b40f17e0c2fc-cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus.png": "https://cheri-alliance.github.io/assets/images/content/shared/cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus.png"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

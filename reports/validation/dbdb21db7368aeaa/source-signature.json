@@ -1,0 +1,91 @@
+{
+  "text": "Alliance Members Novomorphic Novomorphic Details to follow. Status Member Membership Full Member Website Visit member website Description Details to follow. CHERI Activities Details to follow. Back to all members",
+  "headings": [
+    [
+      "h1",
+      "Novomorphic",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Description",
+      "description"
+    ],
+    [
+      "h2",
+      "CHERI Activities",
+      "cheri-activities"
+    ]
+  ],
+  "paragraphs": [
+    "Alliance",
+    "Members",
+    "Novomorphic",
+    "Details to follow.",
+    "Details to follow.",
+    "Details to follow.",
+    "Back to all members"
+  ],
+  "lists": [
+    [
+      "ol",
+      "Alliance Members Novomorphic"
+    ],
+    [
+      "li",
+      "Alliance"
+    ],
+    [
+      "li",
+      "Members"
+    ],
+    [
+      "li",
+      "Novomorphic"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://novomorphic.com/",
+      "Visit member website"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/leadership/members/",
+      "Back to all members"
+    ]
+  ],
+  "images": [
+    [
+      "https://cheri-alliance.github.io/assets/images/content/members/novomorphic/logo.png",
+      "Novomorphic logo"
+    ]
+  ],
+  "definitions": [
+    [
+      "dt",
+      "Status"
+    ],
+    [
+      "dd",
+      "Member"
+    ],
+    [
+      "dt",
+      "Membership"
+    ],
+    [
+      "dd",
+      "Full Member"
+    ],
+    [
+      "dt",
+      "Website"
+    ],
+    [
+      "dd",
+      "Visit member website"
+    ]
+  ],
+  "code_blocks": []
+}

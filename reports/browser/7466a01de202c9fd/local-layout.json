@@ -1,0 +1,48 @@
+{
+  "main_text": "News & Events\nSpeakers\nManu Ravishankar\nManu Ravishankar\n\nPA Consulting\n\nOrganisation\nPA Consulting\nLinkedIn\nBiography\n\nManu Ravishankar is a Principal Consultant specialising in innovation strategy, programme design and technology commercialisation. Formerly Head of Insights and Impact for Innovate UK’s £450m Strategic Innovation Fund, he led funding strategy, oversaw whole-system project portfolios and regulatory engagement.\n\nHe has shaped national innovation programmes for DESNZ, DSIT and Ofgem, and previously led energy‑system innovation work at the Carbon Trust. His expertise spans emerging technology assessment, market and policy analysis, and designing high‑impact innovation pathways.\n\nCHERI Talks\n\nAccelerating commercial adoption of CHERI | CHERI Blossoms 2026\n\n26/03/2026\n\nCambridge, UK\n\nView Slides\n\nView Video\n\nBack to all speakers",
+  "images": [
+    {
+      "url": "http://127.0.0.1:41683/assets/people/manu-ravishankar/80040a1a9011-portrait.jpg",
+      "rect": {
+        "x": 161,
+        "y": 399.953125,
+        "width": 279.59375,
+        "height": 209.1875
+      },
+      "natural_width": 1200,
+      "natural_height": 800
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/people/manu-ravishankar/",
+  "checks": {
+    "visible_main_text": true,
+    "header_text": true,
+    "footer_text": true,
+    "copyright_text": true,
+    "image_count": true,
+    "image_integrity": true,
+    "desktop_image_geometry": true
+  },
+  "image_checks": [
+    {
+      "source_url": "https://cheri-alliance.github.io/assets/images/content/people/manu-ravishankar/portrait.jpg",
+      "mapped_url_correct": true,
+      "loaded": true,
+      "geometry_delta_px": {
+        "x": 0,
+        "y": 0.0,
+        "width": 0.0,
+        "height": 0.0
+      }
+    }
+  ]
+}

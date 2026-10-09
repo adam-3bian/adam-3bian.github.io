@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/people/javier-orensanz-martinez/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/people/javier-orensanz-martinez/eeab172bbb0d-portrait.jpg": "https://cheri-alliance.github.io/assets/images/content/people/javier-orensanz-martinez/portrait.jpg"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

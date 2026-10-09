@@ -1,0 +1,88 @@
+{
+  "text": "News & Events Speakers Ka Wing Li Ka Wing Li University of Cambridge Organisation University of Cambridge Biography Ka Wing Li is a PhD student from the University of Cambridge. He focuses on computer security, with backgrounds in compilers, programming languages, operating systems and computer architecture. CHERI Talks Failure-Oblivious CHERI | CHERITech’25 14/11/2025 Manchester, UK View Slides View Video Back to all speakers",
+  "headings": [
+    [
+      "h1",
+      "Ka Wing Li",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Biography",
+      "biography"
+    ],
+    [
+      "h2",
+      "CHERI Talks",
+      "cheri-talks"
+    ]
+  ],
+  "paragraphs": [
+    "News & Events",
+    "Speakers",
+    "Ka Wing Li",
+    "University of Cambridge",
+    "Ka Wing Li is a PhD student from the University of Cambridge.",
+    "He focuses on computer security, with backgrounds in compilers, programming languages, operating systems and computer architecture.",
+    "Failure-Oblivious CHERI | CHERITech’25",
+    "14/11/2025",
+    "Manchester, UK",
+    "View Slides",
+    "View Video",
+    "Back to all speakers"
+  ],
+  "lists": [
+    [
+      "ol",
+      "News & Events Speakers Ka Wing Li"
+    ],
+    [
+      "li",
+      "News & Events"
+    ],
+    [
+      "li",
+      "Speakers"
+    ],
+    [
+      "li",
+      "Ka Wing Li"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://cheri-alliance.github.io/members/university-of-cambridge/",
+      "University of Cambridge"
+    ],
+    [
+      "https://cheri-alliance.org/wp-content/uploads/2025/11/4.3-Ka-Wing-Li-Failure-Oblivious-CHERI-1-CHERITech25.pdf",
+      "View Slides"
+    ],
+    [
+      "https://youtu.be/z1q0CXVXoPI",
+      "View Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/news-and-events/people-and-opportunities/speakers/",
+      "Back to all speakers"
+    ]
+  ],
+  "images": [
+    [
+      "https://cheri-alliance.github.io/assets/images/content/people/ka-wing-li/portrait.png",
+      "Ka Wing Li"
+    ]
+  ],
+  "definitions": [
+    [
+      "dt",
+      "Organisation"
+    ],
+    [
+      "dd",
+      "University of Cambridge"
+    ]
+  ],
+  "code_blocks": []
+}

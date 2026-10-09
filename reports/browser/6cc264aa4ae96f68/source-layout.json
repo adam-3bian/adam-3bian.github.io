@@ -1,0 +1,1393 @@
+{
+  "main_text": "News & Events\nNews & Analysis\nLatest News\nLatest News\n\nNews, announcements, and analysis from the CHERI Alliance and its members.\n\nNews and analysis\n\nThe complete Alliance news archive, ordered with the newest article first.\n\n29 July 2026\nCHERI Alliance news\n\nA new ETSI standard could rewrite the memory-safety debate\n\nMike Eftimakis – CHERI Alliance ETSI TS 104 198 establishes a common language for memory safety Memory-safety vulnerabilities remain one of the largest sources of critical software vulner...\n\nRead article\n\n15 July 2026\nEcosystem\n\nThe leading Root-of-Trust now integrates CHERI security technology\n\nAdam Finney – CHERI Alliance If you are building secure hardware, the way you protect software running inside that hardware matters just as much as the cryptography around it. That is why...\n\nRead article\n\n17 June 2026\nCHERI Alliance news\n\nCombatting the AI threat with CHERI\n\nIn 2025 alone, global cybercrime costs reached an estimated $1.2 billion every minute, with projections rising to $1.8 billion per minute by 2029. Just seven years earlier, the figure was...\n\nRead article\n\n13 May 2026\nCHERI Alliance news\n\nIntroducing the CHERI Adoption Global Ecosystem Assessment Q1 2026\n\nIn 2025 alone, global cybercrime costs reached an estimated $1.2 billion every minute, with projections rising to $1.8 billion per minute by 2029. Just seven years earlier, the figure was...\n\nRead article\n\n4 May 2026\nCHERI Alliance news\n\nOne Bug is All It Takes\n\nIn 2025 alone, global cybercrime costs reached an estimated $1.2 billion every minute, with projections rising to $1.8 billion per minute by 2029. Just seven years earlier, the figure was...\n\nRead article\n\n29 April 2026\nEcosystem\n\nWhy Codasip went all‑in on CHERI\n\nInterview with Ron Black, CEO of Codasip Codasip is a founding member of the CHERI Alliance and one of the most active industrial players in the CHERI ecosystem. From the outset, Codasip ...\n\nRead article\n\n28 April 2026\nCHERI Alliance news\n\nCHERI memory safety mitigates LLM-discovered vulnerability in FreeBSD\n\nBrooks Davis – Capabilities Limited This article is part of a series of blogs published after the announcement of Mythos vulnerabilities’ exploitation capabilities. The views from other e...\n\nRead article\n\n21 April 2026\nCHERI Alliance news\n\nWind River Joins the CHERI Alliance\n\nWe are pleased to welcome Wind River to the CHERI Alliance, marking another important step forward in building a more secure computing ecosystem. Building on its existing work with CHERI,...\n\nRead article\n\n14 April 2026\nCHERI Alliance news\n\nAI has compressed the attack timeline\n\nMike Eftimakis – CHERI Alliance This article is part of a series of blogs published after the announcement of Mythos vulnerabilities’ exploitation capabilities. The views from other exper...\n\nRead article\n\n16 March 2026\nCHERI Alliance news\n\nICENI: First Look\n\nFor more than a decade, CHERI research has demonstrated that hardware enforced memory safety can eliminate entire classes of security vulnerabilities. Much of this work has taken place in...\n\nRead article\n\n19 February 2026\nCHERI Alliance news\n\nThe Capable Hub joins the CHERI Alliance to accelerate cybersecurity collaboration\n\nStrengthening the CHERI ecosystem through Open-Source innovation We are excited to announce that The Capable Hub has become a member of the CHERI Alliance, a significant step forward in o...\n\nRead article\n\n4 February 2026\nCHERI Alliance news\n\nThe EU Cyber Resilience Act: What It Means for Secure-by-Design Systems and CHERI\n\nIn 2025 alone, global cybercrime costs reached an estimated $1.2 billion every minute, with projections rising to $1.8 billion per minute by 2029. Just seven years earlier, the figure was...\n\nRead article\n\n3 February 2026\nCHERI Alliance news\n\nAmid rising cyber threats, EnSilica joins the CHERI Alliance to enable safe & secure silicon\n\nOxford UK – 3 February 2026 – EnSilica, a leading provider of mixed-signal ASICs (Application-Specific Integrated Circuits), today announced that it has joined the CHERI Alliance. In a wo...\n\nRead article\n\n28 January 2026\nCHERI Alliance news\n\nTowards a reference QEMU for CHERI platform emulation\n\nAlfredo Mazzinghi – Capabilities Limited QEMU is one of the most popular open source machine emulators (https://www.qemu.org), with support for many CPU architectures, including x86_64, A...\n\nRead article\n\n6 January 2026\nEvents\n\nSecure and Resilient Systems in the Era of CRA and IoT\n\nOn 21 January 2026, technology leaders, engineers, security practitioners and compliance specialists will gather at IWM Duxford for Secure Horizons 2026, a one day, in person event hosted...\n\nRead article\n\n10 December 2025\nCHERI Alliance news\n\nCodasip Powers UK Digital Security by Design Innovation Contracts with CHERI Technology\n\nAndrew Lindsay – Codasip Codasip’s CHERI-RISC-V processors and exploration kit enable breakthrough secure chip development and accelerate software innovation The UK government’s ambitious...\n\nRead article\n\n1 December 2025\nCHERI Alliance news\n\nCHERI or CHERIoT? The Answer Is Not What You Think\n\nAdam Finney – CHERI Alliance Interest in capability based security has grown rapidly as organisations look for practical ways to move beyond legacy memory protection. As more projects exp...\n\nRead article\n\n27 November 2025\nCHERI Alliance news\n\nStreamlining the CHERI Ecosystem: An Update from the Repository Management Working Group\n\nDr Marno van der Maas – CHERI Alliance The CHERI Alliance is dedicated to advancing the state-of-the-art in capability-based security. As our collaborative efforts and technical output gr...\n\nRead article\n\n25 November 2025\nCHERI Alliance news\n\nNew InnovateUK-funded project to merge CHERI support into FreeBSD\n\nBrooks Davis – Capabilities Limited Capabilities Limited, a founding member of the CHERI Alliance, is pleased to announce that we have received funding from Innovate UK for our 22 month p...\n\nRead article\n\n20 November 2025\nCHERI Alliance news\n\nInnovate UK Project Winner: University of Birmingham\n\nMihai Ordean – University of Birmingham Innovate UK Project Winner At the University of Birmingham, in the Centre for Cyber Security and Privacy, we have over 15 years of combined experie...\n\nRead article\n\n17 November 2025\nCHERI Alliance news\n\nYou just missed the CHERITech’25 Conference – but wait, you can still attend the virtual replay!\n\nAdam Finney – CHERI Alliance The CHERITech’25 Conference was held on the 14th of November 2025 at the Sister – Renold Building, Manchester, bringing together leading figures from industry...\n\nRead article\n\n17 November 2025\nCHERI Alliance news\n\nSeveral CHERI Alliance members win the DSbD competition to deliver new CHERI chips and software\n\nExciting news for the CHERI community! The winners of the latest Digital Security by Design (DSbD) innovation competitions have been announced, and once again the CHERI Alliance is right ...\n\nRead article\n\n12 November 2025\nCHERI Alliance news\n\nlowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure Enclave with InnovateUK Support\n\nlowRISC CIC and Capabilities Limited, two founding members of the CHERI Alliance, have announced the launch of the COSMIC Project, supported by the UK Department for Science, Innovation a...\n\nRead article\n\n5 November 2025\nCHERI Alliance news\n\nCHERIoT 1.0 Specification Released\n\nAdam Finney – CHERI Alliance 5 November 2025, Cambridge – New Release CHERIoT 1.0 provides a stable, hardware-enforced platform for building memory safe, compartmentalised systems in the ...\n\nRead article\n\n4 November 2025\nCHERI Alliance news\n\nIoTSF + TechWorks – Resilient IoT and Trustworthy AI Conferences\n\nAdam Finney – CHERI Alliance 30 October 2025, London – Event Recap The IoT Security Foundation (IoTSF) and TechWorks AI held their annual Resilient IoT and Trustworthy AI Conference on Th...\n\nRead article\n\n6 October 2025\nCHERI Alliance news\n\nCHERI Alliance to Distribute Arm Morello Boards – The Journey Beyond DSbD Continues!\n\nMike Eftimakis – CHERI Alliance The CHERI Alliance is now distributing Arm Morello boards – the CHERI development journey continues beyond DSbD. The CHERI Alliance is thrilled to announce...\n\nRead article\n\n30 September 2025\nCHERI Alliance news\n\nBehind the Scenes: inside the promotion and ambassador program Working Group\n\nMike Eftimakis – CHERI Alliance If you’ve been watching the CHERI Alliance gather momentum, you’ve probably noticed a growing wave of community activity—talks, demos, explainers, and frie...\n\nRead article\n\n8 September 2025\nCHERI Alliance news\n\nSiemens Joins the CHERI Alliance: a United Front for Cutting-Edge Cybersecurity\n\nCambridge, UK – 5 September 2025 – The CHERI Alliance announces that the Electronic Design Automation segment of Siemens Digital Industries Software has joined the non-profit organisation...\n\nRead article\n\n8 September 2025\nCHERI Alliance news\n\nSCI Semiconductor and the CHERI Alliance at RISC-V Summit in China, July 2025\n\nAndy Frame – SCI Semiconductor In the latter half of July I got the fantastic opportunity to re-visit Shanghai after a good few years of being away and wow, have I missed it. Shanghai is ...\n\nRead article\n\n29 July 2025\nEcosystem\n\nCHERI-seL4 and CHERI-Microkit Released\n\nHesham Almatary – Capabilities Limited We are happy to release a prototype of CHERI-seL4, an experimental version of the seL4 microkernel with CHERI support. This comes with CHERI-Microki...\n\nRead article\n\n21 July 2025\nCHERI Alliance news\n\nWorking Group Spotlight – Marketing\n\nJoin the CHERI Alliance – Collaborate, Communicate, Be Seen CHERI is reshaping how we think about secure technology. At the heart of this effort is the CHERI Alliance, a growing community...\n\nRead article\n\n18 June 2025\nCHERI Alliance news\n\nBT Group Joins the CHERI Alliance to Advance Cybersecurity Innovation\n\nCambridge, UK – 18 June 2025 – The CHERI Alliance, a global coalition dedicated to enhancing cybersecurity through groundbreaking hardware memory safety technology, is proud to announce t...\n\nRead article\n\n27 May 2025\nCHERI Alliance news\n\nUnlocking the Future: A Roadmap for CHERI Technology Advancement\n\nMike Eftimakis – CHERI Alliance In the rapidly evolving landscape of cybersecurity, the quest for robust and secure hardware foundations has never been more critical. A groundbreaking pap...\n\nRead article\n\n13 May 2025\nCHERI Alliance news\n\nRecent advances in CHERI enhancing stability, maturity, and accessibility as urged by the UK’s DSTL\n\nAndy Lindsay & Carl Shaw – Codasip The DSTL paper “Biting the CHERI bullet: Blockers, Enablers and Security Implications of CHERI in Defence” collates and analyzes feedback on CHERI devel...\n\nRead article\n\n7 April 2025\nEcosystem\n\nCHERIoT-Ibex Core is Open Sourced to Enable Memory Safe MCUs\n\nSource: https://www.eetimes.com/cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus/\n\nRead article\n\n7 April 2025\nEcosystem\n\nlowRISC and SCI Semiconductor Release Sunburst Chip Repository for Secure Microcontroller Development\n\n“Open source release accelerates path to market for commercial CHERIoT-based secure microcontrollers, supporting industry adoption and innovation.” lowRISC C.I.C. and SCI Semiconductor ha...\n\nRead article\n\n5 February 2025\nCHERI Alliance news\n\nBuilding a Safer Digital Future\n\nThe conversation around software memory safety is reaching a critical turning point. In a recent publication in the Communications of the ACM, industry experts have called for a decisive ...\n\nRead article\n\n4 December 2024\nCHERI Alliance news\n\n‘Cybersecurity by Design – from Research to Industry’ — Conference Report\n\nAt the first CHERI Alliance conference, organised in partnership with CyNam and NCSC, we had a packed out event, with a full hall at Hub8 MX in Cheltenham for the opening keynote from Pau...\n\nRead article\n\n12 November 2024\nCHERI Alliance news\n\nCHERI Alliance Officially Launches, Adds Major Partners including Google, to Tackle Cybersecurity Threats at the Hardware Level\n\nFounding members include global commercial, research, and open-source organizations, and several UK universities and government entities CAMBRIDGE, the United Kingdom – November 12, 2024 ...\n\nRead article\n\n22 October 2024\nCHERI Alliance news\n\nCodasip enables secure Linux by donating CHERI RISC-V SDK to the CHERI Alliance\n\nOpen access to complete SDK with Linux kernel will simplify building and testing of CHERI-enabled RISC-V applications Codasip has donated its newly developed Software Development Kit (SDK...\n\nRead article\n\n25 September 2024\nCHERI Alliance news\n\nEnd-users demand memory safety in their systems\n\nThe Digital Security by Design all-hands conference was held last week in Leeds, and it was the opportunity to measure the progress of CHERI and see how much is already available. The new...\n\nRead article\n\n17 June 2024\nCHERI Alliance news\n\nInitial members join CHERI Alliance to drive adoption of memory safety and scalable software compartmentalization\n\nFounding members include Capabilities Limited, Codasip, the FreeBSD Foundation, lowRISC, SCI Semiconductor, and the University of Cambridge. Cambridge, the United Kingdom, June 17, 2024 —...\n\nRead article\n\n16 May 2024\nGovernment / Regulation\n\nUK Government report highlights the CHERI Alliance\n\nThe Department for Science Innovation and Technology (DSIT) of the British Government has published a report about CHERI adoption and diffusion, to “understand the potential market” for C...\n\nRead article\n\n27 February 2024\nGovernment / Regulation\n\nThe White House promotes CHERI as a solution for memory safety\n\nThe White House has published a report highlighting the need for “securing the building blocks of cyberspace”, where they highlight CHERI as a solution that can enable memory safety throu...\n\nRead article\n\nWhere next\nPress Resources\n\nBackground material, approved assets, contacts, and reference information for media use.\n\nContinue",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 9543.625
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/hero.png",
+      "alt": "",
+      "rect": {
+        "x": 161,
+        "y": 498.734375,
+        "width": 352.65625,
+        "height": 235.09375
+      },
+      "natural_width": 1536,
+      "natural_height": 1024,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 161,
+        "y": 498.734375,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/news/the-leading-root-of-trust-now-integrates-cheri-security-technology/hero.jpg",
+      "alt": "",
+      "rect": {
+        "x": 543.65625,
+        "y": 498.734375,
+        "width": 352.671875,
+        "height": 235.109375
+      },
+      "natural_width": 1536,
+      "natural_height": 1024,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 543.65625,
+        "y": 498.734375,
+        "width": 352.671875,
+        "height": 198.375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/news/combatting-the-ai-threat-with-cheri/hero.png",
+      "alt": "",
+      "rect": {
+        "x": 926.328125,
+        "y": 498.734375,
+        "width": 352.65625,
+        "height": 200.359375
+      },
+      "natural_width": 616,
+      "natural_height": 350,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 926.328125,
+        "y": 498.734375,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/news/introducing-the-cheri-adoption-global-ecosystem-assessment-q1-2026/hero.jpg",
+      "alt": "",
+      "rect": {
+        "x": 161,
+        "y": 1053.25,
+        "width": 352.65625,
+        "height": 233.453125
+      },
+      "natural_width": 2000,
+      "natural_height": 1324,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 161,
+        "y": 1053.25,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/news/one-bug-is-all-it-takes/hero.jpg",
+      "alt": "",
+      "rect": {
+        "x": 543.65625,
+        "y": 1053.25,
+        "width": 352.671875,
+        "height": 246.859375
+      },
+      "natural_width": 2000,
+      "natural_height": 1400,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 543.65625,
+        "y": 1053.25,
+        "width": 352.671875,
+        "height": 198.375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/news/why-codasip-went-all-in-on-cheri/hero.jpg",
+      "alt": "",
+      "rect": {
+        "x": 926.328125,
+        "y": 1053.25,
+        "width": 352.65625,
+        "height": 197.359375
+      },
+      "natural_width": 1000,
+      "natural_height": 450,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 926.328125,
+        "y": 1053.25,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/news/cheri-memory-safety-mitigates-llm-discovered-vulnerability-in-freebsd/hero.png",
+      "alt": "",
+      "rect": {
+        "x": 161,
+        "y": 1607.75,
+        "width": 352.65625,
+        "height": 235.09375
+      },
+      "natural_width": 1536,
+      "natural_height": 1024,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 161,
+        "y": 1607.75,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/news/wind-river-joins-the-cheri-alliance/hero.png",
+      "alt": "",
+      "rect": {
+        "x": 543.65625,
+        "y": 1607.75,
+        "width": 352.671875,
+        "height": 197.375
+      },
+      "natural_width": 2000,
+      "natural_height": 666,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 543.65625,
+        "y": 1607.75,
+        "width": 352.671875,
+        "height": 198.375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/news/ai-has-compressed-the-attack-timeline/hero.jpg",
+      "alt": "",
+      "rect": {
+        "x": 926.328125,
+        "y": 1607.75,
+        "width": 352.65625,
+        "height": 352.65625
+      },
+      "natural_width": 1920,
+      "natural_height": 1920,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 926.328125,
+        "y": 1607.75,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/news/iceni-first-look/hero.png",
+      "alt": "",
+      "rect": {
+        "x": 161,
+        "y": 2163.75,
+        "width": 352.65625,
+        "height": 247.84375
+      },
+      "natural_width": 1632,
+      "natural_height": 1147,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 161,
+        "y": 2163.75,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/news/the-capable-hub-joins-the-cheri-alliance-to-accelerate-cybersecurity-collaboration/hero.png",
+      "alt": "",
+      "rect": {
+        "x": 543.65625,
+        "y": 2163.75,
+        "width": 352.671875,
+        "height": 264.5
+      },
+      "natural_width": 2000,
+      "natural_height": 1500,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 543.65625,
+        "y": 2163.75,
+        "width": 352.671875,
+        "height": 198.375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/shared/eu-flag.jpg",
+      "alt": "",
+      "rect": {
+        "x": 926.328125,
+        "y": 2163.75,
+        "width": 352.65625,
+        "height": 235
+      },
+      "natural_width": 1280,
+      "natural_height": 853,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 926.328125,
+        "y": 2163.75,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/news/amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon/hero.png",
+      "alt": "",
+      "rect": {
+        "x": 161,
+        "y": 2742.265625,
+        "width": 352.65625,
+        "height": 197.359375
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 161,
+        "y": 2742.265625,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/shared/cheri-alliance-working-groups.png",
+      "alt": "",
+      "rect": {
+        "x": 543.65625,
+        "y": 2742.265625,
+        "width": 352.671875,
+        "height": 197.375
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 543.65625,
+        "y": 2742.265625,
+        "width": 352.671875,
+        "height": 198.375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/news/secure-and-resilient-systems-in-the-era-of-cra-and-iot/hero.png",
+      "alt": "",
+      "rect": {
+        "x": 926.328125,
+        "y": 2742.265625,
+        "width": 352.65625,
+        "height": 197.359375
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 926.328125,
+        "y": 2742.265625,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/shared/cheri.png",
+      "alt": "",
+      "rect": {
+        "x": 161,
+        "y": 3298.28125,
+        "width": 352.65625,
+        "height": 197.359375
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 161,
+        "y": 3298.28125,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/shared/cheriot-1-0-specification-released.png",
+      "alt": "",
+      "rect": {
+        "x": 543.65625,
+        "y": 3298.28125,
+        "width": 352.671875,
+        "height": 197.375
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 543.65625,
+        "y": 3298.28125,
+        "width": 352.671875,
+        "height": 198.375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/shared/cheri-alliance-working-groups.png",
+      "alt": "",
+      "rect": {
+        "x": 926.328125,
+        "y": 3298.28125,
+        "width": 352.65625,
+        "height": 197.359375
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 926.328125,
+        "y": 3298.28125,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/shared/cheri.png",
+      "alt": "",
+      "rect": {
+        "x": 161,
+        "y": 3899.28125,
+        "width": 352.65625,
+        "height": 197.359375
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 161,
+        "y": 3899.28125,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/news/innovate-uk-project-winner-university-of-birmingham/hero.png",
+      "alt": "",
+      "rect": {
+        "x": 543.65625,
+        "y": 3899.28125,
+        "width": 352.671875,
+        "height": 197.375
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 543.65625,
+        "y": 3899.28125,
+        "width": 352.671875,
+        "height": 198.375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/hero.png",
+      "alt": "",
+      "rect": {
+        "x": 926.328125,
+        "y": 3899.28125,
+        "width": 352.65625,
+        "height": 197.359375
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 926.328125,
+        "y": 3899.28125,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/shared/cheriot-1-0-specification-released.png",
+      "alt": "",
+      "rect": {
+        "x": 161,
+        "y": 4477.78125,
+        "width": 352.65625,
+        "height": 197.359375
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 161,
+        "y": 4477.78125,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/shared/cheriot-1-0-specification-released.png",
+      "alt": "",
+      "rect": {
+        "x": 543.65625,
+        "y": 4477.78125,
+        "width": 352.671875,
+        "height": 197.375
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 543.65625,
+        "y": 4477.78125,
+        "width": 352.671875,
+        "height": 198.375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/shared/cheriot-1-0-specification-released.png",
+      "alt": "",
+      "rect": {
+        "x": 926.328125,
+        "y": 4477.78125,
+        "width": 352.65625,
+        "height": 197.359375
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 926.328125,
+        "y": 4477.78125,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/shared/cheriot-1-0-specification-released.png",
+      "alt": "",
+      "rect": {
+        "x": 161,
+        "y": 5078.78125,
+        "width": 352.65625,
+        "height": 197.359375
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 161,
+        "y": 5078.78125,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/news/cheri-alliance-to-distribute-arm-morello-boards-the-journey-beyond-dsbd-continues/hero.png",
+      "alt": "",
+      "rect": {
+        "x": 543.65625,
+        "y": 5078.78125,
+        "width": 352.671875,
+        "height": 197.375
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 543.65625,
+        "y": 5078.78125,
+        "width": 352.671875,
+        "height": 198.375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/shared/cheri-alliance-working-groups.png",
+      "alt": "",
+      "rect": {
+        "x": 926.328125,
+        "y": 5078.78125,
+        "width": 352.65625,
+        "height": 197.359375
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 926.328125,
+        "y": 5078.78125,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/news/siemens-joins-the-cheri-alliance-a-united-front-for-cutting-edge-cybersecurity/hero.png",
+      "alt": "",
+      "rect": {
+        "x": 161,
+        "y": 5657.296875,
+        "width": 352.65625,
+        "height": 197.359375
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 161,
+        "y": 5657.296875,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/news/sci-semiconductor-and-the-cheri-alliance-at-risc-v-summit-in-china-july-2025/hero.jpg",
+      "alt": "",
+      "rect": {
+        "x": 543.65625,
+        "y": 5657.296875,
+        "width": 352.671875,
+        "height": 197.375
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 543.65625,
+        "y": 5657.296875,
+        "width": 352.671875,
+        "height": 198.375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/news/cheri-sel4-and-cheri-microkit-released/hero.png",
+      "alt": "",
+      "rect": {
+        "x": 926.328125,
+        "y": 5657.296875,
+        "width": 352.65625,
+        "height": 197.359375
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 926.328125,
+        "y": 5657.296875,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/shared/working-group-spotlight-marketing.png",
+      "alt": "",
+      "rect": {
+        "x": 161,
+        "y": 6211.8125,
+        "width": 352.65625,
+        "height": 197.359375
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 161,
+        "y": 6211.8125,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/shared/working-group-spotlight-marketing.png",
+      "alt": "",
+      "rect": {
+        "x": 543.65625,
+        "y": 6211.8125,
+        "width": 352.671875,
+        "height": 197.375
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 543.65625,
+        "y": 6211.8125,
+        "width": 352.671875,
+        "height": 198.375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/news/unlocking-the-future-a-roadmap-for-cheri-technology-advancement/hero.png",
+      "alt": "",
+      "rect": {
+        "x": 926.328125,
+        "y": 6211.8125,
+        "width": 352.65625,
+        "height": 197.359375
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 926.328125,
+        "y": 6211.8125,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/shared/cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus.png",
+      "alt": "",
+      "rect": {
+        "x": 161,
+        "y": 6790.328125,
+        "width": 352.65625,
+        "height": 197.359375
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 161,
+        "y": 6790.328125,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/shared/cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus.png",
+      "alt": "",
+      "rect": {
+        "x": 543.65625,
+        "y": 6790.328125,
+        "width": 352.671875,
+        "height": 197.375
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 543.65625,
+        "y": 6790.328125,
+        "width": 352.671875,
+        "height": 198.375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/news/lowrisc-and-sci-semiconductor-release-sunburst-chip-repository-for-secure-microcontroller-development/hero.png",
+      "alt": "",
+      "rect": {
+        "x": 926.328125,
+        "y": 6790.328125,
+        "width": 352.65625,
+        "height": 197.359375
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 926.328125,
+        "y": 6790.328125,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/news/building-a-safer-digital-future/hero.png",
+      "alt": "",
+      "rect": {
+        "x": 161,
+        "y": 7391.328125,
+        "width": 352.65625,
+        "height": 197.359375
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 161,
+        "y": 7391.328125,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/news/cybersecurity-by-design-from-research-to-industry-conference-report/hero.png",
+      "alt": "",
+      "rect": {
+        "x": 543.65625,
+        "y": 7391.328125,
+        "width": 352.671875,
+        "height": 197.375
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 543.65625,
+        "y": 7391.328125,
+        "width": 352.671875,
+        "height": 198.375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/shared/cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus.png",
+      "alt": "",
+      "rect": {
+        "x": 926.328125,
+        "y": 7391.328125,
+        "width": 352.65625,
+        "height": 197.359375
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 926.328125,
+        "y": 7391.328125,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/shared/cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus.png",
+      "alt": "",
+      "rect": {
+        "x": 161,
+        "y": 8014.828125,
+        "width": 352.65625,
+        "height": 197.359375
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 161,
+        "y": 8014.828125,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/news/end-users-demand-memory-safety-in-their-systems/hero.png",
+      "alt": "",
+      "rect": {
+        "x": 543.65625,
+        "y": 8014.828125,
+        "width": 352.671875,
+        "height": 197.375
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 543.65625,
+        "y": 8014.828125,
+        "width": 352.671875,
+        "height": 198.375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/shared/cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus.png",
+      "alt": "",
+      "rect": {
+        "x": 926.328125,
+        "y": 8014.828125,
+        "width": 352.65625,
+        "height": 197.359375
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 926.328125,
+        "y": 8014.828125,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/news/uk-government-report-highlights-the-cheri-alliance/hero.jpg",
+      "alt": "",
+      "rect": {
+        "x": 161,
+        "y": 8615.828125,
+        "width": 352.65625,
+        "height": 197.359375
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 161,
+        "y": 8615.828125,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/news/the-white-house-promotes-cheri-as-a-solution-for-memory-safety/hero.jpg",
+      "alt": "",
+      "rect": {
+        "x": 543.65625,
+        "y": 8615.828125,
+        "width": 352.671875,
+        "height": 197.375
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 543.65625,
+        "y": 8615.828125,
+        "width": 352.671875,
+        "height": 198.375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 9543.625
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/news-and-events/news-and-analysis/latest-news/",
+  "final_url": "https://cheri-alliance.github.io/news-and-events/news-and-analysis/latest-news/",
+  "retrieved_at": "2026-10-09T21:54:54.418798+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

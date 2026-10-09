@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/people/ben-fletcher/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/people/ben-fletcher/c6126b8fe38c-portrait.jpg": "https://cheri-alliance.github.io/assets/images/content/people/ben-fletcher/portrait.jpg"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

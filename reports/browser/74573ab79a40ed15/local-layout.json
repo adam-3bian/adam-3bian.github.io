@@ -1,0 +1,48 @@
+{
+  "main_text": "News & Events\nSpeakers\nAlex Rebert\nAlex Rebert\n\nGoogle\n\nOrganisation\nGoogle\nLinkedIn\nBiography\n\nAlex Rebert is an engineer at Google, where he focuses on memory safety. Previously, he co-founded ForAllSecure and led the creation of Mayhem, the autonomous cyber reasoning system that won the 2016 DARPA Cyber Grand Challenge. He was recognized by MIT Technology Review as one of the 35 Innovators Under 35 and by Forbes’s 30 Under 30.\n\nCHERI Talks\n\nKeynote – Memory Safety at Scale: An Industry Perspective | CHERI Blossoms 2026\n\n26/03/2026\n\nCambridge, UK\n\nView Slides\n\nView Video\n\nBack to all speakers",
+  "images": [
+    {
+      "url": "http://127.0.0.1:41683/assets/people/alex-rebert/e9ac8af358c1-portrait.png",
+      "rect": {
+        "x": 161,
+        "y": 399.953125,
+        "width": 279.59375,
+        "height": 279.59375
+      },
+      "natural_width": 600,
+      "natural_height": 600
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/people/alex-rebert/",
+  "checks": {
+    "visible_main_text": true,
+    "header_text": true,
+    "footer_text": true,
+    "copyright_text": true,
+    "image_count": true,
+    "image_integrity": true,
+    "desktop_image_geometry": true
+  },
+  "image_checks": [
+    {
+      "source_url": "https://cheri-alliance.github.io/assets/images/content/people/alex-rebert/portrait.png",
+      "mapped_url_correct": true,
+      "loaded": true,
+      "geometry_delta_px": {
+        "x": 0,
+        "y": 0.0,
+        "width": 0.0,
+        "height": 0.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "url": "https://cheri-alliance.github.io/news/cheri-sel4-and-cheri-microkit-released/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/news/cheri-sel4-and-cheri-microkit-released/8d44a7e5916e-hero.png": "https://cheri-alliance.github.io/assets/images/content/news/cheri-sel4-and-cheri-microkit-released/hero.png",
+    "/assets/news/cheri-sel4-and-cheri-microkit-released/8b01b36a4468-cheri-sel4-why.png": "https://cheri-alliance.github.io/assets/images/content/news/cheri-sel4-and-cheri-microkit-released/cheri-sel4-why.png",
+    "/assets/news/cheri-sel4-and-cheri-microkit-released/16467bfc72a2-cheri-sel4-5.png": "https://cheri-alliance.github.io/assets/images/content/news/cheri-sel4-and-cheri-microkit-released/cheri-sel4-5.png"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/people/ollie-whitehouse/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/people/ollie-whitehouse/6fdb00632ea5-portrait.jpg": "https://cheri-alliance.github.io/assets/images/content/people/ollie-whitehouse/portrait.jpg"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

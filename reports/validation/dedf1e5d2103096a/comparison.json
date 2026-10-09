@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/adopt/business-case/cost-of-memory-unsafety/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/shared/source-assets/55d113947b39-vulnerability-handling.webp": "https://cheri-alliance.github.io/assets/images/content/shared/vulnerability-handling.webp"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

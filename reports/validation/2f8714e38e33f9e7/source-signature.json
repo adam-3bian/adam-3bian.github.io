@@ -1,0 +1,97 @@
+{
+  "text": "Alliance Members University of Cambridge University of Cambridge University of Cambridge is one of the top ten universities in the world. University of Cambridge and SRI International started working on CHERI in 2010 and have broadened the collaboration to many industry and academic partners as this novel security… Status Founding member Membership Full Member Website Visit member website Description University of Cambridge is one of the top ten universities in the world. University of Cambridge and SRI International started working on CHERI in 2010 and have broadened the collaboration to many industry and academic partners as this novel security technology is deployed. CHERI Activities University of Cambridge and SRI International started working on CHERI in 2010 and have broadened the collaboration to many industry and academic partners as this novel security technology is deployed. Research has led to over 12 Ph.D. dissertations and many peer-reviewed papers. Key personnel have progressed to partner organisation, transitioning the technology and know-how. Open-source Assets for CHERI Open source processors, tool-chain, etc. Back to all members",
+  "headings": [
+    [
+      "h1",
+      "University of Cambridge",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Description",
+      "description"
+    ],
+    [
+      "h2",
+      "CHERI Activities",
+      "cheri-activities"
+    ],
+    [
+      "h2",
+      "Open-source Assets for CHERI",
+      "open-source-assets-for-cheri"
+    ]
+  ],
+  "paragraphs": [
+    "Alliance",
+    "Members",
+    "University of Cambridge",
+    "University of Cambridge is one of the top ten universities in the world. University of Cambridge and SRI International started working on CHERI in 2010 and have broadened the collaboration to many industry and academic partners as this novel security…",
+    "University of Cambridge is one of the top ten universities in the world. University of Cambridge and SRI International started working on CHERI in 2010 and have broadened the collaboration to many industry and academic partners as this novel security technology is deployed.",
+    "University of Cambridge and SRI International started working on CHERI in 2010 and have broadened the collaboration to many industry and academic partners as this novel security technology is deployed. Research has led to over 12 Ph.D. dissertations and many peer-reviewed papers. Key personnel have progressed to partner organisation, transitioning the technology and know-how.",
+    "Open source processors, tool-chain, etc.",
+    "Back to all members"
+  ],
+  "lists": [
+    [
+      "ol",
+      "Alliance Members University of Cambridge"
+    ],
+    [
+      "li",
+      "Alliance"
+    ],
+    [
+      "li",
+      "Members"
+    ],
+    [
+      "li",
+      "University of Cambridge"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/",
+      "Visit member website Open source processors, tool-chain, etc."
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/leadership/members/",
+      "Back to all members"
+    ]
+  ],
+  "images": [
+    [
+      "https://cheri-alliance.github.io/assets/images/content/members/university-of-cambridge/logo.png",
+      "University of Cambridge logo"
+    ]
+  ],
+  "definitions": [
+    [
+      "dt",
+      "Status"
+    ],
+    [
+      "dd",
+      "Founding member"
+    ],
+    [
+      "dt",
+      "Membership"
+    ],
+    [
+      "dd",
+      "Full Member"
+    ],
+    [
+      "dt",
+      "Website"
+    ],
+    [
+      "dd",
+      "Visit member website"
+    ]
+  ],
+  "code_blocks": []
+}

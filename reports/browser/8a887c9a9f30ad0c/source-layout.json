@@ -1,0 +1,61 @@
+{
+  "main_text": "Allison Randal\n\nCapabilities Limited\n\nBoard role\nOpen Source/Hardware Strategist\nOrganisation\nCapabilities Limited\nBiography\n\nAllison Randal represents Capabilities Limited on the CHERI Alliance Governing Board. Her board role is Open Source/Hardware Strategist.\n\nBack to the Governing Board",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 900.90625
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/people/allison-randal/portrait.jpg",
+      "alt": "Allison Randal",
+      "rect": {
+        "x": 161,
+        "y": 353.859375,
+        "width": 279.59375,
+        "height": 279.953125
+      },
+      "natural_width": 768,
+      "natural_height": 769,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 352.859375,
+        "width": 281.59375,
+        "height": 211.1875
+      },
+      "parent_classes": [
+        "entity-media",
+        "entity-media--portrait"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 352.859375,
+        "width": 742.40625,
+        "height": 133.96875
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/people/allison-randal/",
+  "final_url": "https://cheri-alliance.github.io/people/allison-randal/",
+  "retrieved_at": "2026-10-09T21:07:05.307487+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

@@ -1,0 +1,60 @@
+{
+  "main_text": "News & Events\nNews & Analysis\nAI has compressed the attack timeline\nAI has compressed the attack timeline\n\nMike Eftimakis – CHERI Alliance This article is part of a series of blogs published after the announcement of Mythos vulnerabilities’ exploitation capabilities. The views from other experts on this topic are: CHERI memory safety mitigates…\n\n14 April 2026\nCHERI Alliance news\nEcosystem\n\nMike Eftimakis – CHERI Alliance\n\nThis article is part of a series of blogs published after the announcement of Mythos vulnerabilities’ exploitation capabilities. The views from other experts on this topic are:\n\nCHERI memory safety mitigates LLM-discovered vulnerability in FreeBSD – Brooks Davis\nOne Bug is All It Takes – Adam Finney\nSecurity by Design can’t wait!\n\nRecent news around advanced AI models has made one thing unmistakably clear: the pace of cyber exploitation has crossed a critical threshold. AI has reduced time-to-exploit so much that patching alone is no longer enough: we need security by design.\n\nAnthropic recently confirmed that its new AI model, Claude Mythos Preview, is so capable at identifying and exploiting software vulnerabilities that the company has chosen not to release it publicly, instead sharing it only with selected technology partners under its “Project Glasswing” initiative to give defenders a head start.\n\nThat decision alone should give pause. But what is more concerning is this: we no longer need frontier, unreleased models for attackers to gain a decisive advantage.\n\nAI accelerates exploitation\n\nNew research by Buzz, a Sequoia-backed cybersecurity startup, demonstrates that existing, publicly available AI models are already sufficient to automate sophisticated exploitation at scale. By chaining together models from Anthropic, OpenAI, and Google into an autonomous agent, the researchers managed to get AI to exploit known exploited vulnerabilities (KEVs, flaws that are publicly documented by authorities like CISA specifically so organizations can patch them) in a record time.\n\nFor defenders, this exposes a structural asymmetry as patching remains labor-intensive, risky, and slow, often taking days or weeks.\n\nIn short: AI has compressed the time-to-exploit below the human time-to-patch.\n\nWhy “patch faster” is no longer a strategy\n\nFor decades, cybersecurity has relied on a reactive loop:\n\ndiscover → disclose → patch → deploy\n\nThat loop assumed attackers needed time, skill, and scale. AI breaks all three assumptions.\n\nThe vulnerability window has collapsed! AI agents do not get tired. They do not wait for working hours. And once a vulnerability is public, they can weaponize it repeatedly, automatically, and in parallel. Attackers are now default early adopters of AI, while defenders remain risk-averse by necessity.\n\nThis does not mean patching is unimportant. But it can no longer be the primary control.\n\nThe new enterprise reality: AI everywhere, data everywhere\n\nAt the same time, enterprises are moving rapidly toward agentic architectures, where AI systems are given broader autonomy and deeper access to data. AI agents, internal or external, start to access and act on enterprise data across applications in real time.\n\nThis reflects a broader trend: AI agents are becoming persistent actors inside enterprise systems, not just chat-based assistants. That makes systemic weaknesses far more dangerous. If a single compromised service grants lateral movement, AI enables attackers to exploit it faster and more thoroughly than ever before.\n\nAs Anthropic itself has acknowledged, models like Mythos are a preview of capabilities that will inevitably proliferate. Controlling model access may buy time—but it does not change the trajectory.\n\nSecurity by Design is the only scalable response\n\nIn this environment, defenders must assume: \n\nVulnerabilities will be discovered and exploited quickly\nAttackers will use AI by default\nReactive defences will always lag\n\nThat shifts the focus from finding and fixing bugs to limiting the consequences when bugs exist.\n\nThis is the core principle behind security by design:\n\nStrong isolation between components\nFine-grained memory safety\nHardware-enforced compartmentalization\nArchitectures that prevent a single flaw from becoming a systemic failure\n\nSegmentation, preventing a breach in one application from compromising others, is no longer optional. It is foundational.\n\nUnfortunately, software implementation of these principles often suffers from unacceptable performance impact and weak protection mechanisms.\n\nThis is precisely where CHERI-enabled systems matter. By enforcing memory safety and strong compartment boundaries in hardware, CHERI reduces entire classes of vulnerabilities and sharply limits what an automated attacker can achieve—even when a bug exists.\n\nA narrow window for action\n\nThe uncomfortable truth is this: the gap between attacker capability and defender response is widening, not narrowing.\n\nAnthropic’s caution with Mythos is responsible. But the threat is already here. Enterprise software platforms are accelerating AI adoption. Governments are publishing vulnerability disclosures faster than humans can respond. And AI agents are learning how to exploit all of it.\n\nWe still have a window to act—but only if we move upstream, embedding security into architectures rather than layering it on afterward.\n\nSecurity by design is no longer a long-term aspiration. It is the only strategy that scales in an AI-first world.\n\nBack to Latest News",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 4310.671875
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/news/ai-has-compressed-the-attack-timeline/hero.jpg",
+      "alt": "Red connectors leading to a key hole",
+      "rect": {
+        "x": 177,
+        "y": 595.84375,
+        "width": 958,
+        "height": 576
+      },
+      "natural_width": 1920,
+      "natural_height": 1920,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 578.84375,
+        "width": 992,
+        "height": 610
+      },
+      "parent_classes": [
+        "collection-detail__lead-image"
+      ],
+      "body_rect": {
+        "x": 160,
+        "y": 1244.84375,
+        "width": 992,
+        "height": 2910.03125
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/news/ai-has-compressed-the-attack-timeline/",
+  "final_url": "https://cheri-alliance.github.io/news/ai-has-compressed-the-attack-timeline/",
+  "retrieved_at": "2026-10-09T21:06:07.724789+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

@@ -1,0 +1,148 @@
+{
+  "main_text": "News & Events\nEvents & Archive\n'Cybersecurity by design - from research to industry' conference\n'Cybersecurity by design - from research to industry' conference\n\nA Cheltenham conference connecting CHERI and secure-by-design research with practical industry implementation.\n\nStatus\nPast\nFormat\nConference\nDate\n12 November 2024\nLocation\nHub8 MX, Cheltenham, UK\n\nDate: 12th November 2024\n\nTime: 10:00 – 16:30 + evening networking until 20:00\n\nLocation: Hub8 MX, Cheltenham, UK\n\nEntry: Free to attend\n\nHosted by NCSC, CyNam, and the CHERI Alliance\n\nThank you to all who attended!\n\nYou can find the recordings and slides for the event below or view the recordings directly on our YouTube channel.\n\nAbout\n\nOn the November 12, 2024, the Hub8 MX in Cheltenham hosted a groundbreaking event that bridged the gap between cutting-edge cybersecurity research and real-world industry implementation. Hosted by NCSC, Cynam, and the CHERI Alliance, this free-to-attend conference provided an opportunity to dive deep into the CHERI architecture—a revolutionary approach to securing future digital systems.\n\nThrough insightful keynotes and discussions from leaders from NCSC, DSbD, University of Cambridge, and CHERI Alliance, attendees explored the intersection of government initiatives and industry collaboration. Topics ranged from the semi-technical introduction of CHERI to industry-specific strategies for driving security innovation.\n\nThere were thought-provoking speeches, exhibitions showcasing open-source and collaborative projects, and a networking reception to close the day.\n\nTalks & Slides\nIncentivising future security | Paul Waller - NCSC (12:37)\nDigital Security by Design Challenge - Securing the future of computing | John Goodacre - DSbD (20:52)\nCHERI Capability Hardware Enhanced RISC Instructions | Dr Robert Watson - University of Cambridge (33:51)\nAn Innovation Ecosystem to encourage Cybersecurity by Design? | Reid Derby - CyNam (18:49)\nCollaborative engineering | Gavin Ferris - lowRISC (20:56)\nLaunching the CHERI Alliance | Mike Eftimakis - CHERI Alliance (27:12)\nCHERI Standardisation | Prof. Simon W. Moore - University of Cambridge (14:17)\nPorting Software to CHERI | Dr Graeme Jenkinson - Capabilities Limited (14:38)\nCHERI Prototyping and Open Source | Greg Chadwick - lowRISC (19:32)\nCHERI Software Ecosystem | Carl Shaw - Codasip (18:58)\n‘Cybersecurity by design’ Conference Closing Remarks | Gavin Ferris - CHERI Alliance (8:34)\n\nYou can view the playlist directly on YouTube here.\n\nThe slides available for download are intended for personal and educational use only. By downloading the slides, you agree not to use, reproduce, or distribute them for any commercial purposes without explicit prior written consent. Any commercial use, including but not limited to resale, redistribution, or incorporation into other products or services, is strictly prohibited. All rights to the content remain with the original creators.\n\nThank you for respecting these terms.\n\nIncentivising future security | Paul W. - NCSC\nDigital Security by Design Challenge - Securing the future of computing | John Goodacre - DSbD\nCHERI Capability Hardware Enhanced RISC Instructions | Dr Robert Watson - University of Cambridge\nAn Innovation Ecosystem to encourage Cybersecurity by Design? | Reid Derby - CyNam\nCollaborative engineering | Gavin Ferris - lowRISC\nLaunching the CHERI Alliance | Mike Eftimakis - CHERI Alliance\nCHERI Standardisation | Prof. Simon W. Moore - University of Cambridge\nPorting Software to CHERI | Dr Graeme Jenkinson - Capabilities Limited\nCHERI Prototyping and Open Source | Greg Chadwick - lowRISC\nCHERI Software Ecosystem | Carl Shaw - Codasip\nVenue\n\nThe Hub8 MX – the white building opposite the church at the end of Chester Walk.\n\nAddress:\n\nHub8 MX\n\nOff Chester Walk\n\nCheltenham\n\nGL50 3JY (Please note that this differs from the postcode on Google Maps)\n\nView map\n\nBack to past events",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 5106.25
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/thumbnails/events/cybersecurity-by-design-conference-2024.webp",
+      "alt": "'Cybersecurity by design - from research to industry' conference",
+      "rect": {
+        "x": 161,
+        "y": 498.8125,
+        "width": 279.59375,
+        "height": 157.265625
+      },
+      "natural_width": 640,
+      "natural_height": 360,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 497.8125,
+        "width": 281.59375,
+        "height": 158.390625
+      },
+      "parent_classes": [
+        "entity-media",
+        "entity-media--event"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 497.8125,
+        "width": 742.40625,
+        "height": 4452.640625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/news/cybersecurity-by-design-from-research-to-industry-conference-report/hero.png",
+      "alt": "CHERI Alliance 12th November conference flyer",
+      "rect": {
+        "x": 537.59375,
+        "y": 883.3125,
+        "width": 520.71875,
+        "height": 608
+      },
+      "natural_width": 889,
+      "natural_height": 1038,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 537.59375,
+        "y": 883.3125,
+        "width": 742.40625,
+        "height": 608
+      },
+      "parent_classes": [],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 497.8125,
+        "width": 742.40625,
+        "height": 4452.640625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/events/cybersecurity-by-design-conference-2024/hub8-mx-building.jpg",
+      "alt": "Hub8 MX building",
+      "rect": {
+        "x": 537.59375,
+        "y": 3420.71875,
+        "width": 742.390625,
+        "height": 556.796875
+      },
+      "natural_width": 1024,
+      "natural_height": 768,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 537.59375,
+        "y": 3420.71875,
+        "width": 742.40625,
+        "height": 556.796875
+      },
+      "parent_classes": [],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 497.8125,
+        "width": 742.40625,
+        "height": 4452.640625
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/events/cybersecurity-by-design-conference-2024/hub8-mx-building-with-the-conference-banner-outside.jpg",
+      "alt": "Hub8 MX building with the conference banner outside",
+      "rect": {
+        "x": 537.59375,
+        "y": 4001.515625,
+        "width": 456,
+        "height": 608
+      },
+      "natural_width": 768,
+      "natural_height": 1024,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 537.59375,
+        "y": 4001.515625,
+        "width": 742.40625,
+        "height": 608
+      },
+      "parent_classes": [],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 497.8125,
+        "width": 742.40625,
+        "height": 4452.640625
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/events/cybersecurity-by-design-conference-2024/",
+  "final_url": "https://cheri-alliance.github.io/events/cybersecurity-by-design-conference-2024/",
+  "retrieved_at": "2026-10-09T21:53:28.887945+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

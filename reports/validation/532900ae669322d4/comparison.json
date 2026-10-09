@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/people/samuel-stark/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/people/samuel-stark/40598e887a8a-portrait.jpg": "https://cheri-alliance.github.io/assets/images/content/people/samuel-stark/portrait.jpg"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

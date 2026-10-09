@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/adopt/assurance-and-adoption/cheri-enabled-products/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/shared/cheri-enabled-2026/f85dd9d7f416-cheri-enabled-2026.webp": "https://cheri-alliance.github.io/assets/images/thumbnails/shared/cheri-enabled-2026.webp"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

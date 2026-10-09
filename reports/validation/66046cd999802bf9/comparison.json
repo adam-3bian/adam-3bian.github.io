@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/alliance/about-and-governance/collaboration-principles/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/shared/source-assets/bacc656ec8f4-cc-by-sa.webp": "https://cheri-alliance.github.io/assets/images/content/shared/cc-by-sa.webp"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

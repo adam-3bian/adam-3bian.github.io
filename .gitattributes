@@ -1,0 +1,10 @@
+# Preserve Markdown hard breaks and standard CSV CRLF line endings.
+*.md whitespace=-blank-at-eol
+*.csv whitespace=cr-at-eol
+# Review original downloads as binary files, even if their header lacks NULs.
+*.pdf binary
+*.zip binary
+*.woff binary
+*.woff2 binary
+# Acquired source assets must retain exact original bytes, including whitespace.
+assets/** whitespace=-blank-at-eol,-blank-at-eof

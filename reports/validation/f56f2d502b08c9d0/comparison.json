@@ -1,0 +1,23 @@
+{
+  "url": "https://cheri-alliance.github.io/discover/resources/documentation-and-guides/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/pages/discover--resources--documentation-and-guides/3d933a481b79-cheri-branding-guidelines.pdf": "https://cheri-alliance.github.io/assets/pdf/cheri-branding-guidelines.pdf",
+    "/assets/pages/discover--resources--documentation-and-guides/9bbe9f6de06c-cheri-tag-bit-transport-overlay-standard-v0.9.pdf": "https://cheri-alliance.github.io/assets/pdf/cheri-tag-bit-transport-overlay-standard-v0.9.pdf",
+    "/assets/shared/source-assets/611b980d082a-certification-program-v1.pdf": "https://cheri-alliance.github.io/assets/pdf/certification-program-v1.pdf",
+    "/assets/pages/discover--resources--documentation-and-guides/1c519b0ea7cf-guide-cheri-at-soc-level.pdf": "https://cheri-alliance.github.io/assets/pdf/guide-cheri-at-soc-level.pdf",
+    "/assets/pages/discover--resources--documentation-and-guides/a70331655b08-what-is-memory-safety-v0.9.pdf": "https://cheri-alliance.github.io/assets/pdf/what-is-memory-safety-v0.9.pdf"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

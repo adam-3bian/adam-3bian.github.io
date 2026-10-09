@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/people/mark-batty/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/people/mark-batty/4c0d31cb8eb5-portrait.png": "https://cheri-alliance.github.io/assets/images/content/people/mark-batty/portrait.png"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

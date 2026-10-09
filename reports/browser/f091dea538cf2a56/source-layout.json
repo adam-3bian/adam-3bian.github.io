@@ -1,0 +1,277 @@
+{
+  "main_text": "News & Events\nEvents & Archive\nPast Events\nPast Events\n\nPrevious CHERI Alliance events, with programmes, speakers, recordings, slides, and venue information where available.\n\nEvent archive\n\nPrevious conferences, workshops, tutorials, and online sessions with their published programmes and supporting material.\n\nPast\nWebinar\n\n9 September 2026, 14:00 BST\nOnline via Zoom\n\nWebinar - CHERI & CRA Compliance\n\nFrom December 2027 the EU will enforce the Cyber Resilience Act which forces companies to take security extremely seriously for every device sold in the EU with a “dig...\n\nView event archive\n\nPast\nTutorial\n\n25 March 2026\nUniversity of Cambridge, Cambridge, UK\n\nHands-on Introduction to CHERI and CHERIoT\n\nThe CHERI Research Centre at the Computer Laboratory, Codasip, and lowRISC co-organised a comprehensive tutorial on CHERI alongside the CHERI Blossoms 2026 conference....\n\nView event archive\n\nPast\nConference\n\n25 to 27 March 2026\nUniversity of Cambridge, Cambridge, UK\n\nCHERI Blossoms Conference 2026\n\nThe CHERI Blossoms Conference 2026 was the must-attend event for forward-thinking decision-makers and innovators! This exclusive gathering was tailored for industry le...\n\nView event archive\n\nPast\nExhibition\n\n10 to 12 March 2026\nExhibition Centre Nuremberg, Germany\n\nCHERI Alliance at Embedded World 2026\n\nEmbedded World Exhibition – Nuremberg Messe – Hall 5, booth 5-177Find us on the Embedded World Floor Plan\n\nView event archive\n\nPast\nOnline event\n\n4 December 2025\nOnline\n\nCHERITech'25 Reloaded\n\nCHERITech’25 Reloaded took place online on 4th December 2025. Participants joined us for live Q&A sessions with speakers from the main CHERITech’25 conference and revi...\n\nView event archive\n\nPast\nConference\n\n14 November 2025\nSister, Manchester, UK\n\nCHERITech'25 Conference\n\nCHERITech’25 brought together researchers, technologists, cybersecurity experts, and product developers for a dynamic exploration of Digital Security by Design. Now un...\n\nView event archive\n\nPast\nConference\n\n2 April 2025\nSt John's College, Cambridge, UK\n\nCHERI Blossoms Conference 2025\n\nThe CHERI Blossoms Conference 2025 invited researchers, technologists, industry leaders, and business strategists to contribute to the advancement of digital security ...\n\nView event archive\n\nPast\nConference\n\n12 November 2024\nHub8 MX, Cheltenham, UK\n\n'Cybersecurity by design - from research to industry' conference\n\nOn the November 12, 2024, the Hub8 MX in Cheltenham hosted a groundbreaking event that bridged the gap between cutting-edge cybersecurity research and real-world indus...\n\nView event archive\n\nWhere next\nSpeakers\n\nA directory of speakers available for CHERI-related events, briefings, and discussions.\n\nContinue\nRelated content\nUpcoming Events\n\nA calendar of upcoming CHERI-related events, talks, workshops, and community sessions.\n\nRead this page\nSpeakers\n\nA directory of speakers available for CHERI-related events, briefings, and discussions.\n\nRead this page\nLatest News\n\nThe latest CHERI Alliance and ecosystem announcements, presented with clear dates and sources.\n\nRead this page",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 3112.828125
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/thumbnails/events/webinar-cheri-cra-compliance.webp",
+      "alt": "",
+      "rect": {
+        "x": 161,
+        "y": 558.15625,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "natural_width": 640,
+      "natural_height": 360,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 161,
+        "y": 558.15625,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 3112.828125
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/thumbnails/events/cheri-blossoms-tutorial-2026.webp",
+      "alt": "",
+      "rect": {
+        "x": 543.65625,
+        "y": 558.15625,
+        "width": 352.671875,
+        "height": 198.375
+      },
+      "natural_width": 1280,
+      "natural_height": 720,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 543.65625,
+        "y": 558.15625,
+        "width": 352.671875,
+        "height": 198.375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 3112.828125
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/thumbnails/events/cheri-blossoms-conference-2026.webp",
+      "alt": "",
+      "rect": {
+        "x": 926.328125,
+        "y": 558.15625,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "natural_width": 640,
+      "natural_height": 360,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 926.328125,
+        "y": 558.15625,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 3112.828125
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/thumbnails/events/embedded-world-2026.webp",
+      "alt": "",
+      "rect": {
+        "x": 161,
+        "y": 1143.859375,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "natural_width": 640,
+      "natural_height": 360,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 161,
+        "y": 1143.859375,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 3112.828125
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/thumbnails/events/cheritech25-reloaded.webp",
+      "alt": "",
+      "rect": {
+        "x": 543.65625,
+        "y": 1143.859375,
+        "width": 352.671875,
+        "height": 198.375
+      },
+      "natural_width": 640,
+      "natural_height": 360,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 543.65625,
+        "y": 1143.859375,
+        "width": 352.671875,
+        "height": 198.375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 3112.828125
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/thumbnails/events/cheritech25.webp",
+      "alt": "",
+      "rect": {
+        "x": 926.328125,
+        "y": 1143.859375,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "natural_width": 640,
+      "natural_height": 360,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 926.328125,
+        "y": 1143.859375,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 3112.828125
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/thumbnails/events/cheri-blossoms-conference-2025.webp",
+      "alt": "",
+      "rect": {
+        "x": 161,
+        "y": 1705.546875,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "natural_width": 640,
+      "natural_height": 360,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 161,
+        "y": 1705.546875,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 3112.828125
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/thumbnails/events/cybersecurity-by-design-conference-2024.webp",
+      "alt": "",
+      "rect": {
+        "x": 543.65625,
+        "y": 1705.546875,
+        "width": 352.671875,
+        "height": 198.375
+      },
+      "natural_width": 640,
+      "natural_height": 360,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 543.65625,
+        "y": 1705.546875,
+        "width": 352.671875,
+        "height": 198.375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 3112.828125
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/news-and-events/events-and-archive/past-events/",
+  "final_url": "https://cheri-alliance.github.io/news-and-events/events-and-archive/past-events/",
+  "retrieved_at": "2026-10-09T21:54:50.392361+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

@@ -1,0 +1,89 @@
+{
+  "main_text": "News & Events\nNews & Analysis\nlowRISC and SCI Semiconductor Release Sunburst Chip Repository for Secure Microcontroller Development\nlowRISC and SCI Semiconductor Release Sunburst Chip Repository for Secure Microcontroller Development\n\n“Open source release accelerates path to market for commercial CHERIoT-based secure microcontrollers, supporting industry adoption and innovation.” lowRISC C.I.C. and SCI Semiconductor have announced the release of the open source Sunburst Chip…\n\n7 April 2025\nEcosystem\n\n“Open source release accelerates path to market for commercial CHERIoT-based secure microcontrollers, supporting industry adoption and innovation.”\n\nGavin Ferris and Haydn Povey at the CHERI Blossoms 2025 conference\n\nlowRISC C.I.C. and SCI Semiconductor have announced the release of the open source Sunburst Chip design repository, a major step towards commercialising secure, CHERIoT-Ibex based microcontrollers. This marks a milestone in the DSbD/UKRI-funded Sunburst Project and supports SCI’s upcoming ICENI family of devices, set for release later in 2025. The repository, now live on GitHub, provides an open source foundation for developers and researchers to explore CHERI-based memory-safe designs. The launch was announced at the CHERI Blossoms 2025 conference, which highlights the latest in CHERI technology innovation.\n\n \n\nSource: https://lowrisc.org/news/lowrisc-and-sci-semiconductor-release-sunburst-chip-repository-for-secure-microcontroller-development/\n\nBack to Latest News",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 2588.140625
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/news/lowrisc-and-sci-semiconductor-release-sunburst-chip-repository-for-secure-microcontroller-development/hero.png",
+      "alt": "Gavin Ferris and Haydn Povey on stage at the CHERI Blossoms 2025 conference",
+      "rect": {
+        "x": 177,
+        "y": 729.09375,
+        "width": 958,
+        "height": 576
+      },
+      "natural_width": 1024,
+      "natural_height": 768,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 712.09375,
+        "width": 992,
+        "height": 610
+      },
+      "parent_classes": [
+        "collection-detail__lead-image"
+      ],
+      "body_rect": {
+        "x": 160,
+        "y": 1378.09375,
+        "width": 992,
+        "height": 1054.25
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/news/lowrisc-and-sci-semiconductor-release-sunburst-chip-repository-for-secure-microcontroller-development/hero.png",
+      "alt": "Gavin Ferris and Haydn Povey on stage at the CHERI Blossoms 2025 conference",
+      "rect": {
+        "x": 160,
+        "y": 1456.46875,
+        "width": 810.65625,
+        "height": 608
+      },
+      "natural_width": 1024,
+      "natural_height": 768,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 1456.46875,
+        "width": 992,
+        "height": 608
+      },
+      "parent_classes": [],
+      "body_rect": {
+        "x": 160,
+        "y": 1378.09375,
+        "width": 992,
+        "height": 1054.25
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/news/lowrisc-and-sci-semiconductor-release-sunburst-chip-repository-for-secure-microcontroller-development/",
+  "final_url": "https://cheri-alliance.github.io/news/lowrisc-and-sci-semiconductor-release-sunburst-chip-repository-for-secure-microcontroller-development/",
+  "retrieved_at": "2026-10-09T21:55:04.483573+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

@@ -1,0 +1,360 @@
+{
+  "text": "Build Developers Tutorials & Training Tutorials & Training Follow maintained tutorials that match your platform, then progress from first builds to porting, compartments, debugging, and assurance. CHERI spans hardware, compilers, operating systems, C and C++ semantics, and security architecture. A staged path connects these layers to practical work without requiring them all in the first exercise. Begin with one maintained platform and add concepts as the experiments need them. Recommended learning path 1. Understand the problem Begin with: Vulnerabilities in Everyday Technology Why Existing Defences Are Not Enough Capabilities A useful outcome from this stage is the ability to explain bounds, permissions, tags, and least privilege without referring to a particular processor. 2. Run a prepared environment Use Run CHERI in Simulation to boot CheriBSD in QEMU or run a CHERIoT example. Getting a supplied example working first gives later toolchain changes a known reference point. Success means you can reproduce the build, name the architecture and application binary interface (ABI), and capture one deliberate capability fault. 3. Build and inspect code Complete Build Your First Application. Inspect the binary or firmware image with the target tools. Use the debugger to view a capability and identify its address, bounds, permissions, and tag. 4. Port existing software Choose a small library with tests. Classify each change rather than patching until it compiles. Typical categories are pointer-integer conversions, object bounds, custom allocation, serialisation, inline assembly, and ABI boundaries. 5. Introduce a compartment Move a parser or similarly narrow component behind a capability interface. Document what it receives and prove that it cannot reach an unrelated object or service. Maintained technical resources General CHERI and CheriBSD CHERI Frequently Asked Questions covers architecture, software, Morello, and CHERI-RISC-V questions. cheribuild documents build targets for compilers, QEMU, CheriBSD, software development kits (SDKs), ports, and debugging tools. CheriBSD Getting Started provides versioned guides for installing images, using hardware or emulation, compiling software, and benchmarking. The University of Cambridge CHERI project links architecture reports, programming guides, publications, and source repositories. CHERIoT The CHERIoT Programmer’s Guide teaches the platform from architecture concepts through threads, memory management, compartments, drivers, networking, auditing, and board support. The CHERIoT getting-started chapter covers the real-time operating-system (RTOS) repository, development container, simulator, and hardware targets. The cheriot-rtos repository includes examples, exercises, SDK code, and the issue tracker. The CHERIoT project site links current releases, community discussions, hardware, and articles. Linux, Zephyr, and ecosystem projects The CHERI Linux roadmap describes the cross-architecture path for kernel and user-space support. The CHERI Alliance GitHub organisation hosts Linux, Zephyr, QEMU, debugger, and other collaborative repositories. CHERI Alliance Working Groups describe the Alliance’s regular technical collaboration. Training for teams A useful team workshop should produce artifacts, not only slides. Ask participants to deliver: a reproducible environment description one valid program and one controlled fault a capability inspection from the debugger a short porting log with root-cause categories a proposed compartment boundary and authority map open questions tied to the intended product Separate introductory learning from product assurance. A tutorial can show the mechanism, while an assurance claim needs a named architecture, implementation, build, workload, and threat model. Check material before relying on it CHERI toolchains and target names evolve. Prefer documentation versioned with the source or release you are using. When following a conference recording or older tutorial: note its date and target architecture compare commands with the current repository avoid mixing Morello, generic CHERI-RISC-V, and CHERIoT flags record any changes needed to reproduce the exercise That reproduction log is useful learning in its own right and helps improve the documentation for the next developer. Where next Downloads Find maintained source code, development kits, simulators, operating systems, documentation, and examples for the selected platform. Continue Related content Port Existing Software Porting software to CHERI is a process of finding assumptions about pointers, integers, objects, bounds, provenance, lifetimes, and interfaces. Read this page Choose a Platform Choose a platform, prepare an environment and run a first CHERI workload. Read this page",
+  "headings": [
+    [
+      "h1",
+      "Tutorials & Training",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Recommended learning path",
+      "recommended-learning-path"
+    ],
+    [
+      "h3",
+      "1. Understand the problem",
+      "1-understand-the-problem"
+    ],
+    [
+      "h3",
+      "2. Run a prepared environment",
+      "2-run-a-prepared-environment"
+    ],
+    [
+      "h3",
+      "3. Build and inspect code",
+      "3-build-and-inspect-code"
+    ],
+    [
+      "h3",
+      "4. Port existing software",
+      "4-port-existing-software"
+    ],
+    [
+      "h3",
+      "5. Introduce a compartment",
+      "5-introduce-a-compartment"
+    ],
+    [
+      "h2",
+      "Maintained technical resources",
+      "maintained-technical-resources"
+    ],
+    [
+      "h3",
+      "General CHERI and CheriBSD",
+      "general-cheri-and-cheribsd"
+    ],
+    [
+      "h3",
+      "CHERIoT",
+      "cheriot"
+    ],
+    [
+      "h3",
+      "Linux, Zephyr, and ecosystem projects",
+      "linux-zephyr-and-ecosystem-projects"
+    ],
+    [
+      "h2",
+      "Training for teams",
+      "training-for-teams"
+    ],
+    [
+      "h2",
+      "Check material before relying on it",
+      "check-material-before-relying-on-it"
+    ],
+    [
+      "h2",
+      "Where next",
+      null
+    ],
+    [
+      "h3",
+      "Downloads",
+      null
+    ],
+    [
+      "h2",
+      "Related content",
+      null
+    ],
+    [
+      "h3",
+      "Port Existing Software",
+      null
+    ],
+    [
+      "h3",
+      "Choose a Platform",
+      null
+    ]
+  ],
+  "paragraphs": [
+    "Build",
+    "Developers",
+    "Tutorials & Training",
+    "Follow maintained tutorials that match your platform, then progress from first builds to porting, compartments, debugging, and assurance.",
+    "CHERI spans hardware, compilers, operating systems, C and C++ semantics, and security architecture. A staged path connects these layers to practical work without requiring them all in the first exercise. Begin with one maintained platform and add concepts as the experiments need them.",
+    "Begin with:",
+    "Vulnerabilities in Everyday Technology",
+    "Why Existing Defences Are Not Enough",
+    "Capabilities",
+    "A useful outcome from this stage is the ability to explain bounds, permissions, tags, and least privilege without referring to a particular processor.",
+    "Use Run CHERI in Simulation to boot CheriBSD in QEMU or run a CHERIoT example. Getting a supplied example working first gives later toolchain changes a known reference point.",
+    "Success means you can reproduce the build, name the architecture and application binary interface (ABI), and capture one deliberate capability fault.",
+    "Complete Build Your First Application. Inspect the binary or firmware image with the target tools. Use the debugger to view a capability and identify its address, bounds, permissions, and tag.",
+    "Choose a small library with tests. Classify each change rather than patching until it compiles. Typical categories are pointer-integer conversions, object bounds, custom allocation, serialisation, inline assembly, and ABI boundaries.",
+    "Move a parser or similarly narrow component behind a capability interface. Document what it receives and prove that it cannot reach an unrelated object or service.",
+    "CHERI Frequently Asked Questions covers architecture, software, Morello, and CHERI-RISC-V questions.",
+    "cheribuild documents build targets for compilers, QEMU, CheriBSD, software development kits (SDKs), ports, and debugging tools.",
+    "CheriBSD Getting Started provides versioned guides for installing images, using hardware or emulation, compiling software, and benchmarking.",
+    "The University of Cambridge CHERI project links architecture reports, programming guides, publications, and source repositories.",
+    "The CHERIoT Programmer’s Guide teaches the platform from architecture concepts through threads, memory management, compartments, drivers, networking, auditing, and board support.",
+    "The CHERIoT getting-started chapter covers the real-time operating-system (RTOS) repository, development container, simulator, and hardware targets.",
+    "The cheriot-rtos repository includes examples, exercises, SDK code, and the issue tracker.",
+    "The CHERIoT project site links current releases, community discussions, hardware, and articles.",
+    "The CHERI Linux roadmap describes the cross-architecture path for kernel and user-space support.",
+    "The CHERI Alliance GitHub organisation hosts Linux, Zephyr, QEMU, debugger, and other collaborative repositories.",
+    "CHERI Alliance Working Groups describe the Alliance’s regular technical collaboration.",
+    "A useful team workshop should produce artifacts, not only slides. Ask participants to deliver:",
+    "a reproducible environment description",
+    "one valid program and one controlled fault",
+    "a capability inspection from the debugger",
+    "a short porting log with root-cause categories",
+    "a proposed compartment boundary and authority map",
+    "open questions tied to the intended product",
+    "Separate introductory learning from product assurance. A tutorial can show the mechanism, while an assurance claim needs a named architecture, implementation, build, workload, and threat model.",
+    "CHERI toolchains and target names evolve. Prefer documentation versioned with the source or release you are using. When following a conference recording or older tutorial:",
+    "note its date and target architecture",
+    "compare commands with the current repository",
+    "avoid mixing Morello, generic CHERI-RISC-V, and CHERIoT flags",
+    "record any changes needed to reproduce the exercise",
+    "That reproduction log is useful learning in its own right and helps improve the documentation for the next developer.",
+    "Find maintained source code, development kits, simulators, operating systems, documentation, and examples for the selected platform.",
+    "Porting software to CHERI is a process of finding assumptions about pointers, integers, objects, bounds, provenance, lifetimes, and interfaces.",
+    "Choose a platform, prepare an environment and run a first CHERI workload."
+  ],
+  "lists": [
+    [
+      "ol",
+      "Build Developers Tutorials & Training"
+    ],
+    [
+      "li",
+      "Build"
+    ],
+    [
+      "li",
+      "Developers"
+    ],
+    [
+      "li",
+      "Tutorials & Training"
+    ],
+    [
+      "ul",
+      "Vulnerabilities in Everyday Technology Why Existing Defences Are Not Enough Capabilities"
+    ],
+    [
+      "li",
+      "Vulnerabilities in Everyday Technology"
+    ],
+    [
+      "li",
+      "Why Existing Defences Are Not Enough"
+    ],
+    [
+      "li",
+      "Capabilities"
+    ],
+    [
+      "ul",
+      "CHERI Frequently Asked Questions covers architecture, software, Morello, and CHERI-RISC-V questions. cheribuild documents build targets for compilers, QEMU, CheriBSD, software development kits (SDKs), ports, and debugging tools. CheriBSD Getting Started provides versioned guides for installing images, using hardware or emulation, compiling software, and benchmarking. The University of Cambridge CHERI project links architecture reports, programming guides, publications, and source repositories."
+    ],
+    [
+      "li",
+      "CHERI Frequently Asked Questions covers architecture, software, Morello, and CHERI-RISC-V questions."
+    ],
+    [
+      "li",
+      "cheribuild documents build targets for compilers, QEMU, CheriBSD, software development kits (SDKs), ports, and debugging tools."
+    ],
+    [
+      "li",
+      "CheriBSD Getting Started provides versioned guides for installing images, using hardware or emulation, compiling software, and benchmarking."
+    ],
+    [
+      "li",
+      "The University of Cambridge CHERI project links architecture reports, programming guides, publications, and source repositories."
+    ],
+    [
+      "ul",
+      "The CHERIoT Programmer’s Guide teaches the platform from architecture concepts through threads, memory management, compartments, drivers, networking, auditing, and board support. The CHERIoT getting-started chapter covers the real-time operating-system (RTOS) repository, development container, simulator, and hardware targets. The cheriot-rtos repository includes examples, exercises, SDK code, and the issue tracker. The CHERIoT project site links current releases, community discussions, hardware, and articles."
+    ],
+    [
+      "li",
+      "The CHERIoT Programmer’s Guide teaches the platform from architecture concepts through threads, memory management, compartments, drivers, networking, auditing, and board support."
+    ],
+    [
+      "li",
+      "The CHERIoT getting-started chapter covers the real-time operating-system (RTOS) repository, development container, simulator, and hardware targets."
+    ],
+    [
+      "li",
+      "The cheriot-rtos repository includes examples, exercises, SDK code, and the issue tracker."
+    ],
+    [
+      "li",
+      "The CHERIoT project site links current releases, community discussions, hardware, and articles."
+    ],
+    [
+      "ul",
+      "The CHERI Linux roadmap describes the cross-architecture path for kernel and user-space support. The CHERI Alliance GitHub organisation hosts Linux, Zephyr, QEMU, debugger, and other collaborative repositories. CHERI Alliance Working Groups describe the Alliance’s regular technical collaboration."
+    ],
+    [
+      "li",
+      "The CHERI Linux roadmap describes the cross-architecture path for kernel and user-space support."
+    ],
+    [
+      "li",
+      "The CHERI Alliance GitHub organisation hosts Linux, Zephyr, QEMU, debugger, and other collaborative repositories."
+    ],
+    [
+      "li",
+      "CHERI Alliance Working Groups describe the Alliance’s regular technical collaboration."
+    ],
+    [
+      "ul",
+      "a reproducible environment description one valid program and one controlled fault a capability inspection from the debugger a short porting log with root-cause categories a proposed compartment boundary and authority map open questions tied to the intended product"
+    ],
+    [
+      "li",
+      "a reproducible environment description"
+    ],
+    [
+      "li",
+      "one valid program and one controlled fault"
+    ],
+    [
+      "li",
+      "a capability inspection from the debugger"
+    ],
+    [
+      "li",
+      "a short porting log with root-cause categories"
+    ],
+    [
+      "li",
+      "a proposed compartment boundary and authority map"
+    ],
+    [
+      "li",
+      "open questions tied to the intended product"
+    ],
+    [
+      "ol",
+      "note its date and target architecture compare commands with the current repository avoid mixing Morello, generic CHERI-RISC-V, and CHERIoT flags record any changes needed to reproduce the exercise"
+    ],
+    [
+      "li",
+      "note its date and target architecture"
+    ],
+    [
+      "li",
+      "compare commands with the current repository"
+    ],
+    [
+      "li",
+      "avoid mixing Morello, generic CHERI-RISC-V, and CHERIoT flags"
+    ],
+    [
+      "li",
+      "record any changes needed to reproduce the exercise"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://cheri-alliance.github.io/discover/why-cheri/vulnerabilities-in-everyday-technology/",
+      "Vulnerabilities in Everyday Technology"
+    ],
+    [
+      "https://cheri-alliance.github.io/discover/why-cheri/why-existing-defences-are-not-enough/",
+      "Why Existing Defences Are Not Enough"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/technology/capabilities/",
+      "Capabilities"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/developers/run-cheri-in-simulation/",
+      "Run CHERI in Simulation"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/developers/build-your-first-application/",
+      "Build Your First Application"
+    ],
+    [
+      "https://ctsrd-cheri.github.io/cheri-faq/",
+      "CHERI Frequently Asked Questions"
+    ],
+    [
+      "https://github.com/CTSRD-CHERI/cheribuild",
+      "cheribuild"
+    ],
+    [
+      "https://www.cheribsd.org/getting-started/",
+      "CheriBSD Getting Started"
+    ],
+    [
+      "https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/",
+      "University of Cambridge CHERI project"
+    ],
+    [
+      "https://cheriot.org/book/",
+      "CHERIoT Programmer’s Guide"
+    ],
+    [
+      "https://cheriot.org/book/getting_started.html",
+      "CHERIoT getting-started chapter"
+    ],
+    [
+      "https://github.com/CHERIoT-Platform/cheriot-rtos",
+      "cheriot-rtos repository"
+    ],
+    [
+      "https://cheriot.org/",
+      "CHERIoT project site"
+    ],
+    [
+      "https://cheri-alliance.github.io/linux-roadmap/",
+      "CHERI Linux roadmap"
+    ],
+    [
+      "https://github.com/CHERI-Alliance",
+      "CHERI Alliance GitHub organisation"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/leadership/working-groups/",
+      "CHERI Alliance Working Groups"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/developers/downloads/",
+      "Downloads Find maintained source code, development kits, simulators, operating systems, documentation, and examples for the selected platform. Continue"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/developers/port-existing-software/",
+      "Port Existing Software Porting software to CHERI is a process of finding assumptions about pointers, integers, objects, bounds, provenance, lifetimes, and interfaces. Read this page"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/developers/choose-a-platform/",
+      "Choose a Platform Choose a platform, prepare an environment and run a first CHERI workload. Read this page"
+    ]
+  ],
+  "images": [],
+  "definitions": [],
+  "code_blocks": []
+}

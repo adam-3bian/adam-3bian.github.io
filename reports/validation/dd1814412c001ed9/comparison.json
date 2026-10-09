@@ -1,0 +1,20 @@
+{
+  "url": "https://cheri-alliance.github.io/news-and-events/events-and-archive/upcoming-events/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/events/cheritech26/408459d34c43-cheritech26.webp": "https://cheri-alliance.github.io/assets/images/thumbnails/events/cheritech26.webp",
+    "/assets/events/cheri-blossoms-conference-2027/17bb25790594-cheri-blossoms-conference-2027.webp": "https://cheri-alliance.github.io/assets/images/thumbnails/events/cheri-blossoms-conference-2027.webp"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

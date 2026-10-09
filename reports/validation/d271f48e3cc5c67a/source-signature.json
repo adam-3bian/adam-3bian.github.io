@@ -1,0 +1,278 @@
+{
+  "text": "Build Platforms Simulators Simulators CHERI simulators trade speed, architectural precision, and hardware detail differently, so choose the model that matches the question. A simulator is often the first CHERI platform a developer uses, but different simulators answer different questions. One prioritises booting a complete operating system quickly. Another serves as an executable reference for instruction semantics. A third models a particular processor implementation cycle by cycle. Main simulator types A system emulator, such as CHERI QEMU, runs complete operating systems and applications relatively quickly. It suits CheriBSD or Linux porting and automated tests, but it does not model the final processor design or timing. An executable formal model, often written in Sail, stays close to the architectural specification. It is slower than optimised emulation and suits instruction behaviour, reference testing, and instruction-set development. Register-transfer-level (RTL) simulation executes the processor’s hardware description. It exposes implementation details but is much slower and specific to that processor design. Verilator or another compiled implementation model can run many hardware designs faster than event-driven RTL. It remains implementation-specific and is not identical to silicon. A supplier simulator may closely match a commercial processor and software development kit (SDK). Its availability and level of detail depend on the supplier. QEMU for full systems The CHERI-enabled QEMU work supports architectures used by CheriBSD and related development. cheribuild can build QEMU together with a matching compiler, operating system, and disk image. Choose QEMU when you need to: boot a pure-capability Unix environment compile and test application ports run automated test suites inspect architectural capability faults work without physical hardware QEMU execution time is not a prediction of processor performance. It also may not model caches, speculation, precise interrupt timing, or implementation-specific features. Sail and executable specifications Sail is used to describe instruction-set semantics in an executable form. CHERI projects use Sail models for architecture development, reference simulation, test generation, and formal reasoning. A formal model is valuable when the question is “What should this instruction do according to the model?” It helps compare processor implementations with an independent reference. The model and prose specification must still be versioned together. A simulator built from one instruction-set architecture (ISA) revision should not be used as evidence for another without checking the differences. CHERIoT simulation The CHERIoT development environment includes simulator routes for its formal model and processor implementations. The real-time operating-system (RTOS) board descriptions connect firmware builds to an appropriate run command. This lets developers run the same compartmentalised firmware through a reference simulator, implementation simulation, and supported hardware. Use the official example configuration before creating a new board definition. RTL simulation RTL simulation executes the processor and system hardware description. It can expose bugs in: capability instruction implementation tag storage and propagation cache and memory interfaces exceptions and interrupts reset and privilege behaviour integration with buses and peripherals Its speed usually limits the size of software workloads. Use small, targeted tests and combine them with higher-speed system emulation. Selecting the right simulator Ask: Do I need a complete operating system or one instruction test? Is architectural behaviour enough, or do I need implementation cycles? Which CHERI ISA and revision is implemented? Does the model preserve capability tags through all memory paths? Can the debugger inspect capability state? Is the simulator deterministic and suitable for continuous integration? Which platform tests compare it with FPGA or silicon? Record limitations with results Every result should name the simulator, revision, architecture, software stack, and configuration. State explicitly when timing, power, cache, or physical behaviour is outside the model. Use Run CHERI in Simulation for a first practical setup, and move to FPGA Platforms when the question depends on hardware implementation. Where next CheriBSD Use CheriBSD for a complete CHERI-enabled Unix environment, including pure-capability applications, ports, tests, and debugging. Continue Related content Platform Comparison No single CHERI platform is best for every workload. Read this page FPGA Platforms FPGA platforms put a CHERI processor and system design onto reconfigurable hardware. Read this page Choose a Platform Choose a platform, prepare an environment and run a first CHERI workload. Read this page",
+  "headings": [
+    [
+      "h1",
+      "Simulators",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Main simulator types",
+      "main-simulator-types"
+    ],
+    [
+      "h2",
+      "QEMU for full systems",
+      "qemu-for-full-systems"
+    ],
+    [
+      "h2",
+      "Sail and executable specifications",
+      "sail-and-executable-specifications"
+    ],
+    [
+      "h2",
+      "CHERIoT simulation",
+      "cheriot-simulation"
+    ],
+    [
+      "h2",
+      "RTL simulation",
+      "rtl-simulation"
+    ],
+    [
+      "h2",
+      "Selecting the right simulator",
+      "selecting-the-right-simulator"
+    ],
+    [
+      "h2",
+      "Record limitations with results",
+      "record-limitations-with-results"
+    ],
+    [
+      "h2",
+      "Where next",
+      null
+    ],
+    [
+      "h3",
+      "CheriBSD",
+      null
+    ],
+    [
+      "h2",
+      "Related content",
+      null
+    ],
+    [
+      "h3",
+      "Platform Comparison",
+      null
+    ],
+    [
+      "h3",
+      "FPGA Platforms",
+      null
+    ],
+    [
+      "h3",
+      "Choose a Platform",
+      null
+    ]
+  ],
+  "paragraphs": [
+    "Build",
+    "Platforms",
+    "Simulators",
+    "CHERI simulators trade speed, architectural precision, and hardware detail differently, so choose the model that matches the question.",
+    "A simulator is often the first CHERI platform a developer uses, but different simulators answer different questions. One prioritises booting a complete operating system quickly. Another serves as an executable reference for instruction semantics. A third models a particular processor implementation cycle by cycle.",
+    "A system emulator, such as CHERI QEMU, runs complete operating systems and applications relatively quickly. It suits CheriBSD or Linux porting and automated tests, but it does not model the final processor design or timing.",
+    "An executable formal model, often written in Sail, stays close to the architectural specification. It is slower than optimised emulation and suits instruction behaviour, reference testing, and instruction-set development.",
+    "Register-transfer-level (RTL) simulation executes the processor’s hardware description. It exposes implementation details but is much slower and specific to that processor design.",
+    "Verilator or another compiled implementation model can run many hardware designs faster than event-driven RTL. It remains implementation-specific and is not identical to silicon.",
+    "A supplier simulator may closely match a commercial processor and software development kit (SDK). Its availability and level of detail depend on the supplier.",
+    "The CHERI-enabled QEMU work supports architectures used by CheriBSD and related development. cheribuild can build QEMU together with a matching compiler, operating system, and disk image.",
+    "Choose QEMU when you need to:",
+    "boot a pure-capability Unix environment",
+    "compile and test application ports",
+    "run automated test suites",
+    "inspect architectural capability faults",
+    "work without physical hardware",
+    "QEMU execution time is not a prediction of processor performance. It also may not model caches, speculation, precise interrupt timing, or implementation-specific features.",
+    "Sail is used to describe instruction-set semantics in an executable form. CHERI projects use Sail models for architecture development, reference simulation, test generation, and formal reasoning.",
+    "A formal model is valuable when the question is “What should this instruction do according to the model?” It helps compare processor implementations with an independent reference.",
+    "The model and prose specification must still be versioned together. A simulator built from one instruction-set architecture (ISA) revision should not be used as evidence for another without checking the differences.",
+    "The CHERIoT development environment includes simulator routes for its formal model and processor implementations. The real-time operating-system (RTOS) board descriptions connect firmware builds to an appropriate run command.",
+    "This lets developers run the same compartmentalised firmware through a reference simulator, implementation simulation, and supported hardware. Use the official example configuration before creating a new board definition.",
+    "RTL simulation executes the processor and system hardware description. It can expose bugs in:",
+    "capability instruction implementation",
+    "tag storage and propagation",
+    "cache and memory interfaces",
+    "exceptions and interrupts",
+    "reset and privilege behaviour",
+    "integration with buses and peripherals",
+    "Its speed usually limits the size of software workloads. Use small, targeted tests and combine them with higher-speed system emulation.",
+    "Ask:",
+    "Do I need a complete operating system or one instruction test?",
+    "Is architectural behaviour enough, or do I need implementation cycles?",
+    "Which CHERI ISA and revision is implemented?",
+    "Does the model preserve capability tags through all memory paths?",
+    "Can the debugger inspect capability state?",
+    "Is the simulator deterministic and suitable for continuous integration?",
+    "Which platform tests compare it with FPGA or silicon?",
+    "Every result should name the simulator, revision, architecture, software stack, and configuration. State explicitly when timing, power, cache, or physical behaviour is outside the model.",
+    "Use Run CHERI in Simulation for a first practical setup, and move to FPGA Platforms when the question depends on hardware implementation.",
+    "Use CheriBSD for a complete CHERI-enabled Unix environment, including pure-capability applications, ports, tests, and debugging.",
+    "No single CHERI platform is best for every workload.",
+    "FPGA platforms put a CHERI processor and system design onto reconfigurable hardware.",
+    "Choose a platform, prepare an environment and run a first CHERI workload."
+  ],
+  "lists": [
+    [
+      "ol",
+      "Build Platforms Simulators"
+    ],
+    [
+      "li",
+      "Build"
+    ],
+    [
+      "li",
+      "Platforms"
+    ],
+    [
+      "li",
+      "Simulators"
+    ],
+    [
+      "ul",
+      "A system emulator, such as CHERI QEMU, runs complete operating systems and applications relatively quickly. It suits CheriBSD or Linux porting and automated tests, but it does not model the final processor design or timing. An executable formal model, often written in Sail, stays close to the architectural specification. It is slower than optimised emulation and suits instruction behaviour, reference testing, and instruction-set development. Register-transfer-level (RTL) simulation executes the processor’s hardware description. It exposes implementation details but is much slower and specific to that processor design. Verilator or another compiled implementation model can run many hardware designs faster than event-driven RTL. It remains implementation-specific and is not identical to silicon. A supplier simulator may closely match a commercial processor and software development kit (SDK). Its availability and level of detail depend on the supplier."
+    ],
+    [
+      "li",
+      "A system emulator, such as CHERI QEMU, runs complete operating systems and applications relatively quickly. It suits CheriBSD or Linux porting and automated tests, but it does not model the final processor design or timing."
+    ],
+    [
+      "li",
+      "An executable formal model, often written in Sail, stays close to the architectural specification. It is slower than optimised emulation and suits instruction behaviour, reference testing, and instruction-set development."
+    ],
+    [
+      "li",
+      "Register-transfer-level (RTL) simulation executes the processor’s hardware description. It exposes implementation details but is much slower and specific to that processor design."
+    ],
+    [
+      "li",
+      "Verilator or another compiled implementation model can run many hardware designs faster than event-driven RTL. It remains implementation-specific and is not identical to silicon."
+    ],
+    [
+      "li",
+      "A supplier simulator may closely match a commercial processor and software development kit (SDK). Its availability and level of detail depend on the supplier."
+    ],
+    [
+      "ul",
+      "boot a pure-capability Unix environment compile and test application ports run automated test suites inspect architectural capability faults work without physical hardware"
+    ],
+    [
+      "li",
+      "boot a pure-capability Unix environment"
+    ],
+    [
+      "li",
+      "compile and test application ports"
+    ],
+    [
+      "li",
+      "run automated test suites"
+    ],
+    [
+      "li",
+      "inspect architectural capability faults"
+    ],
+    [
+      "li",
+      "work without physical hardware"
+    ],
+    [
+      "ul",
+      "capability instruction implementation tag storage and propagation cache and memory interfaces exceptions and interrupts reset and privilege behaviour integration with buses and peripherals"
+    ],
+    [
+      "li",
+      "capability instruction implementation"
+    ],
+    [
+      "li",
+      "tag storage and propagation"
+    ],
+    [
+      "li",
+      "cache and memory interfaces"
+    ],
+    [
+      "li",
+      "exceptions and interrupts"
+    ],
+    [
+      "li",
+      "reset and privilege behaviour"
+    ],
+    [
+      "li",
+      "integration with buses and peripherals"
+    ],
+    [
+      "ul",
+      "Do I need a complete operating system or one instruction test? Is architectural behaviour enough, or do I need implementation cycles? Which CHERI ISA and revision is implemented? Does the model preserve capability tags through all memory paths? Can the debugger inspect capability state? Is the simulator deterministic and suitable for continuous integration? Which platform tests compare it with FPGA or silicon?"
+    ],
+    [
+      "li",
+      "Do I need a complete operating system or one instruction test?"
+    ],
+    [
+      "li",
+      "Is architectural behaviour enough, or do I need implementation cycles?"
+    ],
+    [
+      "li",
+      "Which CHERI ISA and revision is implemented?"
+    ],
+    [
+      "li",
+      "Does the model preserve capability tags through all memory paths?"
+    ],
+    [
+      "li",
+      "Can the debugger inspect capability state?"
+    ],
+    [
+      "li",
+      "Is the simulator deterministic and suitable for continuous integration?"
+    ],
+    [
+      "li",
+      "Which platform tests compare it with FPGA or silicon?"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://cheri-alliance.github.io/build/developers/run-cheri-in-simulation/",
+      "Run CHERI in Simulation"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/platforms/fpga-platforms/",
+      "FPGA Platforms"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/software-ecosystem/cheribsd/",
+      "CheriBSD Use CheriBSD for a complete CHERI-enabled Unix environment, including pure-capability applications, ports, tests, and debugging. Continue"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/platforms/platform-comparison/",
+      "Platform Comparison No single CHERI platform is best for every workload. Read this page"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/platforms/fpga-platforms/",
+      "FPGA Platforms FPGA platforms put a CHERI processor and system design onto reconfigurable hardware. Read this page"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/developers/choose-a-platform/",
+      "Choose a Platform Choose a platform, prepare an environment and run a first CHERI workload. Read this page"
+    ]
+  ],
+  "images": [],
+  "definitions": [],
+  "code_blocks": []
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/news/the-leading-root-of-trust-now-integrates-cheri-security-technology/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/news/the-leading-root-of-trust-now-integrates-cheri-security-technology/903fec6d1c34-hero.jpg": "https://cheri-alliance.github.io/assets/images/content/news/the-leading-root-of-trust-now-integrates-cheri-security-technology/hero.jpg"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

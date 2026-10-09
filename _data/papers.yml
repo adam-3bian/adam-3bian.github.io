@@ -1,0 +1,156 @@
+it-is-time-to-standardize-principles-and-practices-for-software-memory-safety-173d7dda:
+  title: It Is Time to Standardize Principles and Practices for Software Memory Safety
+  publication_url: https://doi.org/10.1145/3708553
+  source_catalogue: https://cheri-alliance.github.io/discover/resources/academic-papers/
+  source_selector: li.resource-list__item:nth-of-type(1)
+  source_snapshot: sources/cheri-alliance.github.io/fee743aa9df0dcd9cf4ff557db4c4bce0a9162fc09a968b4a37b4fb9143e298e.html
+  source_sha256: 92fc9e29934c98b50fd74478b381fc3c2eb3110a93c0ad28054fc7b1e5350d1c
+  local_path: _papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety-173d7dda.md
+  local_route: /papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety-173d7dda/
+  asset_mapping: {}
+adaptive-cheri-compartmentalization-for-heterogeneous-accelerators-87f87c22:
+  title: Adaptive CHERI Compartmentalization for Heterogeneous Accelerators
+  publication_url: https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/202506-isca-capchecker.pdf
+  source_catalogue: https://cheri-alliance.github.io/discover/resources/academic-papers/
+  source_selector: li.resource-list__item:nth-of-type(2)
+  source_snapshot: sources/cheri-alliance.github.io/fee743aa9df0dcd9cf4ff557db4c4bce0a9162fc09a968b4a37b4fb9143e298e.html
+  source_sha256: 92fc9e29934c98b50fd74478b381fc3c2eb3110a93c0ad28054fc7b1e5350d1c
+  local_path: _papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators-87f87c22.md
+  local_route: /papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators-87f87c22/
+  asset_mapping: {}
+cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev-e706afac:
+  title: 'CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost
+    Embedded Devices'
+  publication_url: https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/202510-sosp-cheriot-rtos.pdf
+  source_catalogue: https://cheri-alliance.github.io/discover/resources/academic-papers/
+  source_selector: li.resource-list__item:nth-of-type(3)
+  source_snapshot: sources/cheri-alliance.github.io/fee743aa9df0dcd9cf4ff557db4c4bce0a9162fc09a968b4a37b4fb9143e298e.html
+  source_sha256: 92fc9e29934c98b50fd74478b381fc3c2eb3110a93c0ad28054fc7b1e5350d1c
+  local_path: _papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev-e706afac.md
+  local_route: /papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev-e706afac/
+  asset_mapping: {}
+deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c-d38d684f:
+  title: Deprivileging Low-Level GPU Drivers Efficiently with User-Space Processes
+    and CHERI Compartments
+  publication_url: https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/202510-ccs-gpu-driver-compartments.pdf
+  source_catalogue: https://cheri-alliance.github.io/discover/resources/academic-papers/
+  source_selector: li.resource-list__item:nth-of-type(4)
+  source_snapshot: sources/cheri-alliance.github.io/fee743aa9df0dcd9cf4ff557db4c4bce0a9162fc09a968b4a37b4fb9143e298e.html
+  source_sha256: 92fc9e29934c98b50fd74478b381fc3c2eb3110a93c0ad28054fc7b1e5350d1c
+  local_path: _papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c-d38d684f.md
+  local_route: /papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c-d38d684f/
+  asset_mapping: {}
+formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou-06679420:
+  title: 'Formal Mechanised Semantics of CHERI C: Capabilities, Provenance, and Undefined
+    Behaviour'
+  publication_url: https://www.cl.cam.ac.uk/users/pes20/asplos24spring-paper110.pdf
+  source_catalogue: https://cheri-alliance.github.io/discover/resources/academic-papers/
+  source_selector: li.resource-list__item:nth-of-type(5)
+  source_snapshot: sources/cheri-alliance.github.io/fee743aa9df0dcd9cf4ff557db4c4bce0a9162fc09a968b4a37b4fb9143e298e.html
+  source_sha256: 92fc9e29934c98b50fd74478b381fc3c2eb3110a93c0ad28054fc7b1e5350d1c
+  local_path: _papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou-06679420.md
+  local_route: /papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou-06679420/
+  asset_mapping: {}
+cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety-139ebfa2:
+  title: 'Cornucopia Reloaded: Load Barriers for CHERI Heap Temporal Safety'
+  publication_url: https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/202404asplos-cornucopia-reloaded.pdf
+  source_catalogue: https://cheri-alliance.github.io/discover/resources/academic-papers/
+  source_selector: li.resource-list__item:nth-of-type(6)
+  source_snapshot: sources/cheri-alliance.github.io/fee743aa9df0dcd9cf4ff557db4c4bce0a9162fc09a968b4a37b4fb9143e298e.html
+  source_sha256: 92fc9e29934c98b50fd74478b381fc3c2eb3110a93c0ad28054fc7b1e5350d1c
+  local_path: _papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety-139ebfa2.md
+  local_route: /papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety-139ebfa2/
+  asset_mapping: {}
+cheri-hardware-enabled-c-c-memory-protection-at-scale-e058df7b:
+  title: 'CHERI: Hardware-Enabled C/C++ Memory Protection at Scale'
+  publication_url: https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/20240419-ieeesp-cheri-memory-safety.pdf
+  source_catalogue: https://cheri-alliance.github.io/discover/resources/academic-papers/
+  source_selector: li.resource-list__item:nth-of-type(7)
+  source_snapshot: sources/cheri-alliance.github.io/fee743aa9df0dcd9cf4ff557db4c4bce0a9162fc09a968b4a37b4fb9143e298e.html
+  source_sha256: 92fc9e29934c98b50fd74478b381fc3c2eb3110a93c0ad28054fc7b1e5350d1c
+  local_path: _papers/cheri-hardware-enabled-c-c-memory-protection-at-scale-e058df7b.md
+  local_route: /papers/cheri-hardware-enabled-c-c-memory-protection-at-scale-e058df7b/
+  asset_mapping: {}
+the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa-7527ea1a:
+  title: The Arm Morello Evaluation Platform—Validating CHERI-Based Security in a
+    High-Performance System
+  publication_url: https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/202305ieeemicro-morello-platform.pdf
+  source_catalogue: https://cheri-alliance.github.io/discover/resources/academic-papers/
+  source_selector: li.resource-list__item:nth-of-type(8)
+  source_snapshot: sources/cheri-alliance.github.io/fee743aa9df0dcd9cf4ff557db4c4bce0a9162fc09a968b4a37b4fb9143e298e.html
+  source_sha256: 92fc9e29934c98b50fd74478b381fc3c2eb3110a93c0ad28054fc7b1e5350d1c
+  local_path: _papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa-7527ea1a.md
+  local_route: /papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa-7527ea1a/
+  asset_mapping: {}
+cheriot-complete-memory-safety-for-embedded-devices-c2fc96f7:
+  title: 'CHERIoT: Complete Memory Safety for Embedded Devices'
+  publication_url: https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/202310ieeemicro-cheriot-uarch.pdf
+  source_catalogue: https://cheri-alliance.github.io/discover/resources/academic-papers/
+  source_selector: li.resource-list__item:nth-of-type(9)
+  source_snapshot: sources/cheri-alliance.github.io/fee743aa9df0dcd9cf4ff557db4c4bce0a9162fc09a968b4a37b4fb9143e298e.html
+  source_sha256: 92fc9e29934c98b50fd74478b381fc3c2eb3110a93c0ad28054fc7b1e5350d1c
+  local_path: _papers/cheriot-complete-memory-safety-for-embedded-devices-c2fc96f7.md
+  local_route: /papers/cheriot-complete-memory-safety-for-embedded-devices-c2fc96f7/
+  asset_mapping: {}
+rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de-e7f51cc9:
+  title: 'Rigorous Engineering for Hardware Security: Formal Modelling and Proof in
+    the CHERI Design and Implementation Process'
+  publication_url: https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/202005oakland-cheri-formal.pdf
+  source_catalogue: https://cheri-alliance.github.io/discover/resources/academic-papers/
+  source_selector: li.resource-list__item:nth-of-type(10)
+  source_snapshot: sources/cheri-alliance.github.io/fee743aa9df0dcd9cf4ff557db4c4bce0a9162fc09a968b4a37b4fb9143e298e.html
+  source_sha256: 92fc9e29934c98b50fd74478b381fc3c2eb3110a93c0ad28054fc7b1e5350d1c
+  local_path: _papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de-e7f51cc9.md
+  local_route: /papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de-e7f51cc9/
+  asset_mapping: {}
+cornucopia-temporal-safety-for-cheri-heaps-21967ba5:
+  title: 'Cornucopia: Temporal Safety for CHERI Heaps'
+  publication_url: https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/2020oakland-cornucopia.pdf
+  source_catalogue: https://cheri-alliance.github.io/discover/resources/academic-papers/
+  source_selector: li.resource-list__item:nth-of-type(11)
+  source_snapshot: sources/cheri-alliance.github.io/fee743aa9df0dcd9cf4ff557db4c4bce0a9162fc09a968b4a37b4fb9143e298e.html
+  source_sha256: 92fc9e29934c98b50fd74478b381fc3c2eb3110a93c0ad28054fc7b1e5350d1c
+  local_path: _papers/cornucopia-temporal-safety-for-cheri-heaps-21967ba5.md
+  local_route: /papers/cornucopia-temporal-safety-for-cheri-heaps-21967ba5/
+  asset_mapping: {}
+cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p-eee50898:
+  title: 'CheriABI: Enforcing Valid Pointer Provenance and Minimizing Pointer Privilege
+    in the POSIX C Run-time Environment'
+  publication_url: https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/201904-asplos-cheriabi.pdf
+  source_catalogue: https://cheri-alliance.github.io/discover/resources/academic-papers/
+  source_selector: li.resource-list__item:nth-of-type(12)
+  source_snapshot: sources/cheri-alliance.github.io/fee743aa9df0dcd9cf4ff557db4c4bce0a9162fc09a968b4a37b4fb9143e298e.html
+  source_sha256: 92fc9e29934c98b50fd74478b381fc3c2eb3110a93c0ad28054fc7b1e5350d1c
+  local_path: _papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p-eee50898.md
+  local_route: /papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p-eee50898/
+  asset_mapping: {}
+cheri-concentrate-practical-compressed-capabilities-7f04c145:
+  title: 'CHERI Concentrate: Practical Compressed Capabilities'
+  publication_url: https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/2019tc-cheri-concentrate.pdf
+  source_catalogue: https://cheri-alliance.github.io/discover/resources/academic-papers/
+  source_selector: li.resource-list__item:nth-of-type(13)
+  source_snapshot: sources/cheri-alliance.github.io/fee743aa9df0dcd9cf4ff557db4c4bce0a9162fc09a968b4a37b4fb9143e298e.html
+  source_sha256: 92fc9e29934c98b50fd74478b381fc3c2eb3110a93c0ad28054fc7b1e5350d1c
+  local_path: _papers/cheri-concentrate-practical-compressed-capabilities-7f04c145.md
+  local_route: /papers/cheri-concentrate-practical-compressed-capabilities-7f04c145/
+  asset_mapping: {}
+cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat-9aee3a73:
+  title: 'CHERI: A Hybrid Capability-System Architecture for Scalable Software Compartmentalization'
+  publication_url: https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/201505-oakland2015-cheri-compartmentalization.pdf
+  source_catalogue: https://cheri-alliance.github.io/discover/resources/academic-papers/
+  source_selector: li.resource-list__item:nth-of-type(14)
+  source_snapshot: sources/cheri-alliance.github.io/fee743aa9df0dcd9cf4ff557db4c4bce0a9162fc09a968b4a37b4fb9143e298e.html
+  source_sha256: 92fc9e29934c98b50fd74478b381fc3c2eb3110a93c0ad28054fc7b1e5350d1c
+  local_path: _papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat-9aee3a73.md
+  local_route: /papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat-9aee3a73/
+  asset_mapping: {}
+the-cheri-capability-model-revisiting-risc-in-an-age-of-risk-10ed0377:
+  title: 'The CHERI Capability Model: Revisiting RISC in an Age of Risk'
+  publication_url: https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/201406-isca2014-cheri.pdf
+  source_catalogue: https://cheri-alliance.github.io/discover/resources/academic-papers/
+  source_selector: li.resource-list__item:nth-of-type(15)
+  source_snapshot: sources/cheri-alliance.github.io/fee743aa9df0dcd9cf4ff557db4c4bce0a9162fc09a968b4a37b4fb9143e298e.html
+  source_sha256: 92fc9e29934c98b50fd74478b381fc3c2eb3110a93c0ad28054fc7b1e5350d1c
+  local_path: _papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk-10ed0377.md
+  local_route: /papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk-10ed0377/
+  asset_mapping: {}

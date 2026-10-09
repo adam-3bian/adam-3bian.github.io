@@ -1,0 +1,66 @@
+markdown: kramdown
+kramdown:
+  input: Kramdown
+  auto_ids: false
+  smart_quotes: [apos, apos, quot, quot]
+  typographic_symbols:
+    hellip: '...'
+    mdash: '---'
+    ndash: '--'
+    laquo: '<<'
+    raquo: '>>'
+exclude:
+  - sources
+  - reports
+  - scripts
+  - requirements-migration.txt
+  - CHERI_SITE_INVENTORY.json
+  - CHERI_HIERARCHICAL_SITEMAP.md
+  - CHERI_MASTER_PROMPT.md
+  - CHERI_MIGRATION_SPEC.md
+  - CHERI_SCRAPE_UPLOAD_GUIDE.md
+  - AGENTS.md
+  - README_CHERI_PROMPT_PACK.md
+  - START_PROMPT.md
+  - PROGRESS.md
+  - MIGRATION_SPEC.md
+  - README_MIGRATION.md
+  - tests
+  - README.md
+  - _data
+
+collections:
+  people:
+    output: true
+  news:
+    output: true
+
+  organisations:
+    output: true
+  events:
+    output: true
+  papers:
+    output: true
+  boards:
+    output: true
+  software:
+    output: true
+  groups:
+    output: true
+  platforms:
+    output: true
+  products:
+    output: true
+  guides:
+    output: true
+  policies:
+    output: true
+
+excerpt_separator: ""
+
+# Content is literal Markdown, including code examples containing Liquid syntax.
+defaults:
+  - scope:
+      path: ""
+    values:
+      render_with_liquid: false

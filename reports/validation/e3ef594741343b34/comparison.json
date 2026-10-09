@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/people/bradley-finn/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/people/bradley-finn/328c417ae7f6-portrait.jpg": "https://cheri-alliance.github.io/assets/images/content/people/bradley-finn/portrait.jpg"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

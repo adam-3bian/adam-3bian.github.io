@@ -1,0 +1,61 @@
+{
+  "main_text": "News & Events\nSpeakers\nJohn Thomson\nJohn Thomson\n\nlowRISC\n\nOrganisation\nlowRISC\nLinkedIn\nBiography\n\nJohn works at lowRISC as a senior product manager where he advocates the company’s mission of getting open silicon source everywhere. He worked on delivery of key projects including OpenTitan (security root-of-trust) and the Sunburst Project (memory safety using CHERI), amongst others.\n\nHe is a proponent of open source having worked at an open source Linux and software services delivery company. John also has experience in cloud computing, having working as an engineer and project manager on multiple European and Commercial Projects.\n\nCHERI Talks\n\nAnnouncing COSMIC | CHERITech’25\n\n14/11/2025\n\nManchester, UK\n\nView Slides\n\nView Video\n\nBack to all speakers",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 1200.1875
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/people/john-thomson/portrait.png",
+      "alt": "John Thomson",
+      "rect": {
+        "x": 161,
+        "y": 399.953125,
+        "width": 279.59375,
+        "height": 372.78125
+      },
+      "natural_width": 900,
+      "natural_height": 1200,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 398.953125,
+        "width": 281.59375,
+        "height": 211.1875
+      },
+      "parent_classes": [
+        "entity-media",
+        "entity-media--portrait"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 398.953125,
+        "width": 742.40625,
+        "height": 645.4375
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/people/john-thomson/",
+  "final_url": "https://cheri-alliance.github.io/people/john-thomson/",
+  "retrieved_at": "2026-10-09T21:07:39.589167+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

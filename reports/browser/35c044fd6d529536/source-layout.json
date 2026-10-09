@@ -1,0 +1,61 @@
+{
+  "main_text": "Alliance\nMembers\nTrusted Computing Center of Excellence (TCCoE)\nTrusted Computing Center of Excellence (TCCoE)\n\nThe Trusted Computing Center of Excellence™ (TCCoE) not-for-profit organization’s purpose is to lower barriers to adoption and facilitate the principled development and deployment of software and systems for which there is strong evidence of…\n\nStatus\nFounding member\nMembership\nCommunity Member\nWebsite\nVisit member website\nDescription\n\nThe Trusted Computing Center of Excellence™ (TCCoE) not-for-profit organization’s purpose is to lower barriers to adoption and facilitate the principled development and deployment of software and systems for which there is strong evidence of trustworthiness, including use of formal methods. Needs of the U.S. and allied defense, intelligence and security communities are our priorities. A major thrust is seL4®. While our colleagues at the separate seL4 Foundation focus on the code and formal proofs of the open source seL4® microkernel and closely related artifacts, the TCCoE focuses on curated software distributions (kernel, libraries, drivers, configurations, etc.) as bases of stable supported platforms on which to build trustworthy systems.\n\nCHERI Activities\n\nTCCoE member companies began promoting CHERI as part of a trustworthy whole-system stack at the 2019 RISC-V Summit and more recently have done significant R&D with ARM Morello. CHERI is part of TCCoE’s plan to coordinate member development of software/hardware platforms with formal methods based evidence of trustworthiness and offer such platforms to system developers.\n\nBack to all members",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 1265.65625
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/members/tccoe/logo.png",
+      "alt": "TCCoE logo",
+      "rect": {
+        "x": 196.578125,
+        "y": 555.046875,
+        "width": 208.421875,
+        "height": 137.71875
+      },
+      "natural_width": 281,
+      "natural_height": 120,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 530.046875,
+        "width": 281.59375,
+        "height": 187.71875
+      },
+      "parent_classes": [
+        "entity-media",
+        "entity-media--logo"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 530.046875,
+        "width": 742.40625,
+        "height": 579.8125
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/members/tccoe/",
+  "final_url": "https://cheri-alliance.github.io/members/tccoe/",
+  "retrieved_at": "2026-10-09T21:54:25.515143+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

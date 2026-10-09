@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/discover/understand/adapt-products/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/shared/source-assets/42beef82414f-value-chain.webp": "https://cheri-alliance.github.io/assets/images/content/shared/value-chain.webp"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

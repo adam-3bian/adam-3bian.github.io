@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/members/university-of-kent/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/organisations/university-of-kent/17d3f2e7b137-logo.png": "https://cheri-alliance.github.io/assets/images/content/members/university-of-kent/logo.png"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

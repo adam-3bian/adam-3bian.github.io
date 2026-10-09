@@ -1,0 +1,88 @@
+{
+  "text": "News & Events Speakers Edoardo Marangoni Edoardo Marangoni SCI Semiconductor Organisation SCI Semiconductor LinkedIn Biography Edoardo has been working with compilers for the majority of his professional career. After working in the Wasm space, he joined SCI Semiconductor and started working on this project since its beginning. He has been involved with every aspect of it, ranging from technical tasks such as adding the CHERIoT target to organising work for the team and communicating about the project to make it more visible. CHERI Talks Rust on CHERIoT | CHERI Blossoms 2026 27/03/2026 Cambridge, UK View Slides View Video Back to all speakers",
+  "headings": [
+    [
+      "h1",
+      "Edoardo Marangoni",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Biography",
+      "biography"
+    ],
+    [
+      "h2",
+      "CHERI Talks",
+      "cheri-talks"
+    ]
+  ],
+  "paragraphs": [
+    "News & Events",
+    "Speakers",
+    "Edoardo Marangoni",
+    "SCI Semiconductor",
+    "LinkedIn",
+    "Edoardo has been working with compilers for the majority of his professional career. After working in the Wasm space, he joined SCI Semiconductor and started working on this project since its beginning. He has been involved with every aspect of it, ranging from technical tasks such as adding the CHERIoT target to organising work for the team and communicating about the project to make it more visible.",
+    "Rust on CHERIoT | CHERI Blossoms 2026",
+    "27/03/2026",
+    "Cambridge, UK",
+    "View Slides",
+    "View Video",
+    "Back to all speakers"
+  ],
+  "lists": [
+    [
+      "ol",
+      "News & Events Speakers Edoardo Marangoni"
+    ],
+    [
+      "li",
+      "News & Events"
+    ],
+    [
+      "li",
+      "Speakers"
+    ],
+    [
+      "li",
+      "Edoardo Marangoni"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://www.linkedin.com/in/edoardo-marangoni-bba569260/",
+      "LinkedIn"
+    ],
+    [
+      "https://cheri-alliance.org/wp-content/uploads/2026/04/D2-2.4-Edoardo-Marangoni-Rust-On-CHERIoT-CHERI-Blossoms-2026.pdf",
+      "View Slides"
+    ],
+    [
+      "https://youtu.be/w96UJaagWlg",
+      "View Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/news-and-events/people-and-opportunities/speakers/",
+      "Back to all speakers"
+    ]
+  ],
+  "images": [
+    [
+      "https://cheri-alliance.github.io/assets/images/content/people/edoardo-marangoni/portrait.jpg",
+      "Edoardo Marangoni"
+    ]
+  ],
+  "definitions": [
+    [
+      "dt",
+      "Organisation"
+    ],
+    [
+      "dd",
+      "SCI Semiconductor"
+    ]
+  ],
+  "code_blocks": []
+}

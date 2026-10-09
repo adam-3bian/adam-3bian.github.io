@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/news/wind-river-joins-the-cheri-alliance/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/news/wind-river-joins-the-cheri-alliance/21bf3b105ad6-hero.png": "https://cheri-alliance.github.io/assets/images/content/news/wind-river-joins-the-cheri-alliance/hero.png"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

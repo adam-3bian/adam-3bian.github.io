@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/news/introducing-the-cheri-adoption-global-ecosystem-assessment-q1-2026/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/news/introducing-the-cheri-adoption-global-ecosystem-assessment-q1-2026/7c6a52fd196f-hero.jpg": "https://cheri-alliance.github.io/assets/images/content/news/introducing-the-cheri-adoption-global-ecosystem-assessment-q1-2026/hero.jpg"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

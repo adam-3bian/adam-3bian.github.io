@@ -1,0 +1,70 @@
+{
+  "text": "News & Events News & Analysis CHERI Alliance to Distribute Arm Morello Boards – The Journey Beyond DSbD Continues! CHERI Alliance to Distribute Arm Morello Boards – The Journey Beyond DSbD Continues! Mike Eftimakis – CHERI Alliance The CHERI Alliance is now distributing Arm Morello boards – the CHERI development journey continues beyond DSbD. The CHERI Alliance is thrilled to announce that, following the end of the Digital Security by Design… 6 October 2025 CHERI Alliance news Mike Eftimakis – CHERI Alliance The CHERI Alliance is now distributing Arm Morello boards – the CHERI development journey continues beyond DSbD. The CHERI Alliance is thrilled to announce that, following the end of the Digital Security by Design (DSbD) program, we have taken over distribution of the Arm Morello CHERI development boards. These boards, developed as part of the DSbD program and funded by the UK government, feature a chip developed by Arm with a powerful CHERI processor. We are excited to keep making a vital research and development platform available to the community — to discover and experiment with CHERI, but also to develop or port existing software and tools. If you or your team are interested in obtaining a Morello board (research, teaching, prototyping, or evaluation), please contact the CHERI Alliance and tell us about your use case. Available boards are limited, so we will prioritise requests and loan the boards to the teams who will put them to the best use. We’ll be coordinating fulfillment and next steps soon. Please share this post with colleagues who should see it. Excited to enable the community to use CHERI — let’s build the future of safer hardware and software together! Back to Latest News",
+  "headings": [
+    [
+      "h1",
+      "CHERI Alliance to Distribute Arm Morello Boards – The Journey Beyond DSbD Continues!",
+      "page-hero-title"
+    ]
+  ],
+  "paragraphs": [
+    "News & Events",
+    "News & Analysis",
+    "CHERI Alliance to Distribute Arm Morello Boards – The Journey Beyond DSbD Continues!",
+    "Mike Eftimakis – CHERI Alliance The CHERI Alliance is now distributing Arm Morello boards – the CHERI development journey continues beyond DSbD. The CHERI Alliance is thrilled to announce that, following the end of the Digital Security by Design…",
+    "6 October 2025 CHERI Alliance news",
+    "Mike Eftimakis – CHERI Alliance",
+    "The CHERI Alliance is now distributing Arm Morello boards – the CHERI development journey continues beyond DSbD.",
+    "The CHERI Alliance is thrilled to announce that, following the end of the Digital Security by Design (DSbD) program, we have taken over distribution of the Arm Morello CHERI development boards. These boards, developed as part of the DSbD program and funded by the UK government, feature a chip developed by Arm with a powerful CHERI processor. We are excited to keep making a vital research and development platform available to the community — to discover and experiment with CHERI, but also to develop or port existing software and tools.",
+    "If you or your team are interested in obtaining a Morello board (research, teaching, prototyping, or evaluation), please contact the CHERI Alliance and tell us about your use case.",
+    "Available boards are limited, so we will prioritise requests and loan the boards to the teams who will put them to the best use.",
+    "We’ll be coordinating fulfillment and next steps soon. Please share this post with colleagues who should see it.",
+    "Excited to enable the community to use CHERI — let’s build the future of safer hardware and software together!",
+    "Back to Latest News"
+  ],
+  "lists": [
+    [
+      "ol",
+      "News & Events News & Analysis CHERI Alliance to Distribute Arm Morello Boards – The Journey Beyond DSbD Continues!"
+    ],
+    [
+      "li",
+      "News & Events"
+    ],
+    [
+      "li",
+      "News & Analysis"
+    ],
+    [
+      "li",
+      "CHERI Alliance to Distribute Arm Morello Boards – The Journey Beyond DSbD Continues!"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://cheri-alliance.github.io/build/platforms/morello/",
+      "Arm Morello"
+    ],
+    [
+      "https://www.ukri.org/what-we-do/browse-our-areas-of-investment-and-support/digital-security-by-design/",
+      "DSbD program"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/membership/contact/",
+      "contact the CHERI Alliance and tell us about your use case"
+    ],
+    [
+      "https://cheri-alliance.github.io/news-and-events/news-and-analysis/latest-news/",
+      "Back to Latest News"
+    ]
+  ],
+  "images": [
+    [
+      "https://cheri-alliance.github.io/assets/images/content/news/cheri-alliance-to-distribute-arm-morello-boards-the-journey-beyond-dsbd-continues/hero.png",
+      "arm Morello board"
+    ]
+  ],
+  "definitions": [],
+  "code_blocks": []
+}

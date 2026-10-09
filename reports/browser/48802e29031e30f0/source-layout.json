@@ -1,0 +1,61 @@
+{
+  "main_text": "Alliance\nMembers\nEnSilica\nEnSilica\n\nEnSilica is a fabless, application-specific chipmaker combining deep system-level expertise with world-class RF, mmWave, mixed-signal and complex digital IC design. We serve communications, industrial, automotive and healthcare markets where safety…\n\nStatus\nMember\nMembership\nFull Member\nWebsite\nVisit member website\nDescription\n\nEnSilica is a fabless, application-specific chipmaker combining deep system-level expertise with world-class RF, mmWave, mixed-signal and complex digital IC design. We serve communications, industrial, automotive and healthcare markets where safety, security and reliability are critical.\n\nSecurity is designed in at the architecture level. EnSilica develops secure MCUs and SoCs using Arm and RISC-V, hardware roots of trust, and proprietary EnSilica cryptography IP covering both classical algorithms and Post-Quantum Cryptography (PQC) accelerators.\n\nHeadquartered near Oxford, UK, EnSilica operates design centres across the UK, India, Brazil and Hungary.\n\nCHERI Activities\n\nEnSilica plc is commercialising CHERI through its EnSura™ safe and secure RISC-V MCU family, delivering COTS microcontrollers with hardware-enforced memory safety for automotive, industrial and critical infrastructure systems. EnSura integrates CHERI within a hardware root of trust, secure boot and lifecycle management architecture, and supports both classical and post-quantum cryptography, enabling production deployment in applications where both safety and security are fundamental requirements.\n\nBack to all members",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 1274.21875
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/members/ensilica/logo.png",
+      "alt": "EnSilica",
+      "rect": {
+        "x": 196.578125,
+        "y": 488.421875,
+        "width": 208.421875,
+        "height": 137.71875
+      },
+      "natural_width": 2000,
+      "natural_height": 680,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 463.421875,
+        "width": 281.59375,
+        "height": 187.71875
+      },
+      "parent_classes": [
+        "entity-media",
+        "entity-media--logo"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 463.421875,
+        "width": 742.40625,
+        "height": 655
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/members/ensilica/",
+  "final_url": "https://cheri-alliance.github.io/members/ensilica/",
+  "retrieved_at": "2026-10-09T21:53:55.640765+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

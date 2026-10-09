@@ -1,0 +1,48 @@
+{
+  "main_text": "News & Events\nSpeakers\nGavin Ferris\nGavin Ferris\n\nCHERI Alliance, lowRISC\n\nOrganisation\nCHERI Alliance, lowRISC\nLinkedIn\nBiography\n\nDr. Ferris is a technologist and serial entrepreneur. Following his early career at DreamWorks SKG, he co-founded a number of startups including the DSP / digital radio company RadioScape and fintech business Crescent Technology. When the latter was acquired by Aspect Capital, a multi-billion dollar systematic hedge fund, Dr. Ferris became its chief architect and ultimately, chief investment officer (CIO). After leaving Aspect, Gavin co-founded lowRISC CIC, the non-profit host of the OpenTitan project, where he currently serves as pro bono CEO.\n\nGavin holds a computer science degree and Ph.D. in AI from Cambridge University.\n\nCHERI Talks\n\nProject Sunburst: An Open-Source CHERIoT SoC Top-Level and its Path to Market with Iceni | CHERI Blossoms 2025\n\n02/04/2025\n\nCambridge, UK\n\nView Slides\n\nView Video\n\nBack to all speakers",
+  "images": [
+    {
+      "url": "http://127.0.0.1:41683/assets/people/gavin-ferris/85e5898f43a9-portrait.png",
+      "rect": {
+        "x": 161,
+        "y": 399.953125,
+        "width": 279.59375,
+        "height": 209.6875
+      },
+      "natural_width": 1024,
+      "natural_height": 768
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/people/gavin-ferris/",
+  "checks": {
+    "visible_main_text": true,
+    "header_text": true,
+    "footer_text": true,
+    "copyright_text": true,
+    "image_count": true,
+    "image_integrity": true,
+    "desktop_image_geometry": true
+  },
+  "image_checks": [
+    {
+      "source_url": "https://cheri-alliance.github.io/assets/images/content/people/gavin-ferris/portrait.png",
+      "mapped_url_correct": true,
+      "loaded": true,
+      "geometry_delta_px": {
+        "x": 0,
+        "y": 0.0,
+        "width": 0.0,
+        "height": 0.0
+      }
+    }
+  ]
+}

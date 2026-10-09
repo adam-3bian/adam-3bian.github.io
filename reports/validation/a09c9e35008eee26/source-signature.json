@@ -1,0 +1,91 @@
+{
+  "text": "Alliance Members Chevin Technology Chevin Technology Chevin Technology designs and develops cutting-edge Ethernet protocol accelerators and Silicon Security Solutions for FPGA and ASIC platforms. Operating from our headquarters in Cambridge Science Park, UK, we deliver expert engineering and consulting… Status Founding member Membership Full Member Website Visit member website Description Chevin Technology designs and develops cutting-edge Ethernet protocol accelerators and Silicon Security Solutions for FPGA and ASIC platforms. Operating from our headquarters in Cambridge Science Park, UK, we deliver expert engineering and consulting services to clients in defense, aerospace, science, and telecommunications worldwide. Our unwavering commitment to providing robust, reliable, and efficient solutions ensures that our customers realize significant value from our innovations. CHERI Activities Chevin Technology was among the pioneering companies to participate in UKRI’s first cohort of Digital Security by Design Technology Access Programme, managed by Digital Catapult. Utilizing the CHERI technology and Morello hardware co-developed by the University of Cambridge and ARM, we explored how CHERI running on Morello could be integrated with our Silicon Security Solution, ChevinID, deployed on FPGA. This collaborative effort was aimed at evaluating the combined solution’s capability to protect memory with CHERI while delivering hardware authentication and software feature authorization through ChevinID. Back to all members",
+  "headings": [
+    [
+      "h1",
+      "Chevin Technology",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Description",
+      "description"
+    ],
+    [
+      "h2",
+      "CHERI Activities",
+      "cheri-activities"
+    ]
+  ],
+  "paragraphs": [
+    "Alliance",
+    "Members",
+    "Chevin Technology",
+    "Chevin Technology designs and develops cutting-edge Ethernet protocol accelerators and Silicon Security Solutions for FPGA and ASIC platforms. Operating from our headquarters in Cambridge Science Park, UK, we deliver expert engineering and consulting…",
+    "Chevin Technology designs and develops cutting-edge Ethernet protocol accelerators and Silicon Security Solutions for FPGA and ASIC platforms. Operating from our headquarters in Cambridge Science Park, UK, we deliver expert engineering and consulting services to clients in defense, aerospace, science, and telecommunications worldwide. Our unwavering commitment to providing robust, reliable, and efficient solutions ensures that our customers realize significant value from our innovations.",
+    "Chevin Technology was among the pioneering companies to participate in UKRI’s first cohort of Digital Security by Design Technology Access Programme, managed by Digital Catapult. Utilizing the CHERI technology and Morello hardware co-developed by the University of Cambridge and ARM, we explored how CHERI running on Morello could be integrated with our Silicon Security Solution, ChevinID, deployed on FPGA. This collaborative effort was aimed at evaluating the combined solution’s capability to protect memory with CHERI while delivering hardware authentication and software feature authorization through ChevinID.",
+    "Back to all members"
+  ],
+  "lists": [
+    [
+      "ol",
+      "Alliance Members Chevin Technology"
+    ],
+    [
+      "li",
+      "Alliance"
+    ],
+    [
+      "li",
+      "Members"
+    ],
+    [
+      "li",
+      "Chevin Technology"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "http://www.chevintechnology.com/",
+      "Visit member website"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/leadership/members/",
+      "Back to all members"
+    ]
+  ],
+  "images": [
+    [
+      "https://cheri-alliance.github.io/assets/images/content/members/chevin-technology/logo.png",
+      "Chevin Technology logo"
+    ]
+  ],
+  "definitions": [
+    [
+      "dt",
+      "Status"
+    ],
+    [
+      "dd",
+      "Founding member"
+    ],
+    [
+      "dt",
+      "Membership"
+    ],
+    [
+      "dd",
+      "Full Member"
+    ],
+    [
+      "dt",
+      "Website"
+    ],
+    [
+      "dd",
+      "Visit member website"
+    ]
+  ],
+  "code_blocks": []
+}

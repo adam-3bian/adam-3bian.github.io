@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/news/amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/news/amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon/ddb56fdbe9e2-hero.png": "https://cheri-alliance.github.io/assets/images/content/news/amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon/hero.png"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

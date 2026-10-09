@@ -1,0 +1,90 @@
+{
+  "text": "News & Events Speakers Alastair Beresford Alastair Beresford University of Cambridge Organisation University of Cambridge LinkedIn Biography Dr Alastair Beresford is a Professor of Computer Security at the University of Cambridge and a Fellow of Jesus College. His research focuses on system security and privacy, particularly in the context of mobile and networked systems. Dr Beresford is also an active contributor to the development of open-source software and has played a key role in designing security solutions for real-world systems. In addition to his research, he teaches undergraduate and postgraduate courses in computer security and supervises PhD students within the Department of Computer Science and Technology. CHERI Talks CHERI Blossoms 2025 02/04/2025 Cambridge, UK View Slides View Video Back to all speakers",
+  "headings": [
+    [
+      "h1",
+      "Alastair Beresford",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Biography",
+      "biography"
+    ],
+    [
+      "h2",
+      "CHERI Talks",
+      "cheri-talks"
+    ]
+  ],
+  "paragraphs": [
+    "News & Events",
+    "Speakers",
+    "Alastair Beresford",
+    "University of Cambridge",
+    "LinkedIn",
+    "Dr Alastair Beresford is a Professor of Computer Security at the University of Cambridge and a Fellow of Jesus College.",
+    "His research focuses on system security and privacy, particularly in the context of mobile and networked systems.",
+    "Dr Beresford is also an active contributor to the development of open-source software and has played a key role in designing security solutions for real-world systems. In addition to his research, he teaches undergraduate and postgraduate courses in computer security and supervises PhD students within the Department of Computer Science and Technology.",
+    "CHERI Blossoms 2025",
+    "02/04/2025",
+    "Cambridge, UK",
+    "View Slides",
+    "View Video",
+    "Back to all speakers"
+  ],
+  "lists": [
+    [
+      "ol",
+      "News & Events Speakers Alastair Beresford"
+    ],
+    [
+      "li",
+      "News & Events"
+    ],
+    [
+      "li",
+      "Speakers"
+    ],
+    [
+      "li",
+      "Alastair Beresford"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://www.linkedin.com/in/alastair-beresford/",
+      "LinkedIn"
+    ],
+    [
+      "https://cheri-alliance.org/wp-content/uploads/2025/04/1.1-Alastair-Beresford-Keynote.pdf",
+      "View Slides"
+    ],
+    [
+      "https://youtu.be/g4IEkrMQcDY",
+      "View Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/news-and-events/people-and-opportunities/speakers/",
+      "Back to all speakers"
+    ]
+  ],
+  "images": [
+    [
+      "https://cheri-alliance.github.io/assets/images/content/people/alastair-beresford/portrait.png",
+      "Alastair Beresford"
+    ]
+  ],
+  "definitions": [
+    [
+      "dt",
+      "Organisation"
+    ],
+    [
+      "dd",
+      "University of Cambridge"
+    ]
+  ],
+  "code_blocks": []
+}

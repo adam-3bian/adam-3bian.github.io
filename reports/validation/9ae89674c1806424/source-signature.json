@@ -1,0 +1,102 @@
+{
+  "text": "Alliance Members University of Kent University of Kent The University of Kent is a British research and teaching University in the historic city of Canterbury. The Programming Languages and Systems group of the School of Computing is in the top 5 for research in their field nationally. Status Member Membership Community Member Website Visit member website Description The University of Kent is a British research and teaching University in the historic city of Canterbury. The Programming Languages and Systems group of the School of Computing is in the top 5 for research in their field nationally. CHERI Activities Kent, with support through the Digital Security by Design project, has developed formal semantics for concurrent C and maintains the CHERI port of the Rust compiler. Their Programming Languages and Systems research group investigates language semantics, compiler optimisations, type systems, runtimes, system verification, and memory safety. Open-source Assets for CHERI The CHERI Rust port is available on Github: https://github.com/kent-weak-memory/rust/ Back to all members",
+  "headings": [
+    [
+      "h1",
+      "University of Kent",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Description",
+      "description"
+    ],
+    [
+      "h2",
+      "CHERI Activities",
+      "cheri-activities"
+    ],
+    [
+      "h2",
+      "Open-source Assets for CHERI",
+      "open-source-assets-for-cheri"
+    ]
+  ],
+  "paragraphs": [
+    "Alliance",
+    "Members",
+    "University of Kent",
+    "The University of Kent is a British research and teaching University in the historic city of Canterbury. The Programming Languages and Systems group of the School of Computing is in the top 5 for research in their field nationally.",
+    "The University of Kent is a British research and teaching University in the historic city of Canterbury. The Programming Languages and Systems group of the School of Computing is in the top 5 for research in their field nationally.",
+    "Kent, with support through the Digital Security by Design project, has developed formal semantics for concurrent C and maintains the CHERI port of the Rust compiler. Their Programming Languages and Systems research group investigates language semantics, compiler optimisations, type systems, runtimes, system verification, and memory safety.",
+    "The CHERI Rust port is available on Github:",
+    "https://github.com/kent-weak-memory/rust/",
+    "Back to all members"
+  ],
+  "lists": [
+    [
+      "ol",
+      "Alliance Members University of Kent"
+    ],
+    [
+      "li",
+      "Alliance"
+    ],
+    [
+      "li",
+      "Members"
+    ],
+    [
+      "li",
+      "University of Kent"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://www.cs.kent.ac.uk/people/staff/mjb211/rust/index.htm",
+      "Visit member website"
+    ],
+    [
+      "https://github.com/kent-weak-memory/rust/",
+      "https://github.com/kent-weak-memory/rust/"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/leadership/members/",
+      "Back to all members"
+    ]
+  ],
+  "images": [
+    [
+      "https://cheri-alliance.github.io/assets/images/content/members/university-of-kent/logo.png",
+      "University of Kent logo"
+    ]
+  ],
+  "definitions": [
+    [
+      "dt",
+      "Status"
+    ],
+    [
+      "dd",
+      "Member"
+    ],
+    [
+      "dt",
+      "Membership"
+    ],
+    [
+      "dd",
+      "Community Member"
+    ],
+    [
+      "dt",
+      "Website"
+    ],
+    [
+      "dd",
+      "Visit member website"
+    ]
+  ],
+  "code_blocks": []
+}

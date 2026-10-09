@@ -1,0 +1,308 @@
+{
+  "main_text": "Alliance\nLeadership\nGoverning Board\nGoverning Board\n\nThe Governing Board provides organisational stewardship with representation from commercial, research, and public-interest security organisations.\n\nThe board stewards the Alliance’s mission, priorities, and responsible operation. Its range of perspectives helps connect technical development with product delivery, open ecosystems, research, infrastructure, and public cybersecurity needs.\n\nCurrent board\n\nThe Governing Board consists of individuals elected by our members for two-year terms, with half of the seats renewed each year, together with one representative from the CHERI Alliance C.I.C. Board of Directors.\n\nCHERI Alliance\n\nMike Eftimakis\n\nFounding Director\n\nView profile\n\nCodasip\n\nAndrew Lindsay\n\nSecurity Product Manager and Architect\n\nView profile\n\nSCI Semiconductor\n\nDavid Chisnall\n\nDirector of Systems Architecture\n\nView profile\n\nBT\n\nSam Cater\n\nCloud Infrastructure Research Manager\n\nView profile\n\nCHERI Alliance\n\nAdam Finney\n\nCommunity representative\n\nView profile\n\nUniversity of Cambridge\n\nSimon Moore\n\nProfessor\n\nView profile\n\nGoogle\n\nAlex Richardson\n\nSenior Software Engineer\n\nView profile\n\nCapabilities Limited\n\nAllison Randal\n\nOpen Source/Hardware Strategist\n\nView profile\n\nNCSC\n\nPaul Waller\n\nHead of Capability Research\n\nView profile\n\nThis page is the Alliance’s current board record and should be updated when the composition changes.\n\nWhere next\nMembers\n\nA directory of CHERI Alliance member organisations.\n\nContinue\nRelated content\nAbout the CHERI Alliance\n\nLearn how the Alliance connects organisations working across the CHERI ecosystem.\n\nRead this page",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 3088
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/thumbnails/people/mike-eftimakis.webp",
+      "alt": "",
+      "rect": {
+        "x": 161,
+        "y": 717.125,
+        "width": 352.65625,
+        "height": 264.484375
+      },
+      "natural_width": 640,
+      "natural_height": 480,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 161,
+        "y": 717.125,
+        "width": 352.65625,
+        "height": 264.484375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 3088
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/thumbnails/people/andrew-lindsay.webp",
+      "alt": "",
+      "rect": {
+        "x": 543.65625,
+        "y": 717.125,
+        "width": 352.671875,
+        "height": 264.5
+      },
+      "natural_width": 640,
+      "natural_height": 480,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 543.65625,
+        "y": 717.125,
+        "width": 352.671875,
+        "height": 264.5
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 3088
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/thumbnails/people/david-chisnall.webp",
+      "alt": "",
+      "rect": {
+        "x": 926.328125,
+        "y": 717.125,
+        "width": 352.65625,
+        "height": 264.484375
+      },
+      "natural_width": 640,
+      "natural_height": 480,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 926.328125,
+        "y": 717.125,
+        "width": 352.65625,
+        "height": 264.484375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 3088
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/thumbnails/people/sam-cater.webp",
+      "alt": "",
+      "rect": {
+        "x": 161,
+        "y": 1196.765625,
+        "width": 352.65625,
+        "height": 264.484375
+      },
+      "natural_width": 640,
+      "natural_height": 480,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 161,
+        "y": 1196.765625,
+        "width": 352.65625,
+        "height": 264.484375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 3088
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/thumbnails/people/adam-finney.webp",
+      "alt": "",
+      "rect": {
+        "x": 543.65625,
+        "y": 1196.765625,
+        "width": 352.671875,
+        "height": 264.5
+      },
+      "natural_width": 640,
+      "natural_height": 480,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 543.65625,
+        "y": 1196.765625,
+        "width": 352.671875,
+        "height": 264.5
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 3088
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/thumbnails/people/simon-moore.webp",
+      "alt": "",
+      "rect": {
+        "x": 926.328125,
+        "y": 1196.765625,
+        "width": 352.65625,
+        "height": 264.484375
+      },
+      "natural_width": 640,
+      "natural_height": 480,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 926.328125,
+        "y": 1196.765625,
+        "width": 352.65625,
+        "height": 264.484375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 3088
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/thumbnails/people/alex-richardson.webp",
+      "alt": "",
+      "rect": {
+        "x": 161,
+        "y": 1676.40625,
+        "width": 352.65625,
+        "height": 264.484375
+      },
+      "natural_width": 640,
+      "natural_height": 480,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 161,
+        "y": 1676.40625,
+        "width": 352.65625,
+        "height": 264.484375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 3088
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/thumbnails/people/allison-randal.webp",
+      "alt": "",
+      "rect": {
+        "x": 543.65625,
+        "y": 1676.40625,
+        "width": 352.671875,
+        "height": 264.5
+      },
+      "natural_width": 640,
+      "natural_height": 480,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 543.65625,
+        "y": 1676.40625,
+        "width": 352.671875,
+        "height": 264.5
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 3088
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/thumbnails/people/paul-waller.webp",
+      "alt": "",
+      "rect": {
+        "x": 926.328125,
+        "y": 1676.40625,
+        "width": 352.65625,
+        "height": 264.484375
+      },
+      "natural_width": 640,
+      "natural_height": 480,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 926.328125,
+        "y": 1676.40625,
+        "width": 352.65625,
+        "height": 264.484375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 3088
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/alliance/leadership/governing-board/",
+  "final_url": "https://cheri-alliance.github.io/alliance/leadership/governing-board/",
+  "retrieved_at": "2026-10-09T21:52:52.077113+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

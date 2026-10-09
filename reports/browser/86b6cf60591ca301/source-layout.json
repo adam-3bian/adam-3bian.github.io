@@ -1,0 +1,61 @@
+{
+  "main_text": "News & Events\nSpeakers\nLouis-Emile Ploix\nLouis-Emile Ploix\n\nlowRISC\n\nOrganisation\nlowRISC\nLinkedIn\nBiography\n\nLouis-Emile is a current undergraduate at the University of Oxford, and a formal verification engineer for lowRISC working on the COSMIC project.\n\nCHERI Talks\n\nCOSMIC verification: comprehensive, end-to-end formal proofs of CVA6-CHERI | CHERI Blossoms 2026\n\n26/03/2026\n\nCambridge, UK\n\nView Slides\n\nView Video\n\nBack to all speakers",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 1067.4375
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/people/louis-emile-ploix/portrait.jpg",
+      "alt": "Louis-Emile Ploix",
+      "rect": {
+        "x": 161,
+        "y": 399.953125,
+        "width": 279.59375,
+        "height": 382.125
+      },
+      "natural_width": 878,
+      "natural_height": 1200,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 398.953125,
+        "width": 281.59375,
+        "height": 211.1875
+      },
+      "parent_classes": [
+        "entity-media",
+        "entity-media--portrait"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 398.953125,
+        "width": 742.40625,
+        "height": 512.6875
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/people/louis-emile-ploix/",
+  "final_url": "https://cheri-alliance.github.io/people/louis-emile-ploix/",
+  "retrieved_at": "2026-10-09T21:07:47.828826+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

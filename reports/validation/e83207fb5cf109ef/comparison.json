@@ -1,0 +1,20 @@
+{
+  "url": "https://cheri-alliance.github.io/news/working-group-spotlight-marketing/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/shared/source-assets/df8b50676c3b-working-group-spotlight-marketing.png": "https://cheri-alliance.github.io/assets/images/content/shared/working-group-spotlight-marketing.png",
+    "/assets/shared/source-assets/5a6300ace656-cheri.png": "https://cheri-alliance.github.io/assets/images/content/shared/cheri.png"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

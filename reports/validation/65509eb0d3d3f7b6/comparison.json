@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/people/maika-fohrenbach/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/people/maika-fohrenbach/e33f816c987d-portrait.jpg": "https://cheri-alliance.github.io/assets/images/content/people/maika-fohrenbach/portrait.jpg"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

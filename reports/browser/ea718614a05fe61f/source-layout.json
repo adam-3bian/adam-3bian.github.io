@@ -1,0 +1,152 @@
+{
+  "main_text": "News & Events\nEvents & Archive\nCHERITech'26\nCHERITech'26\n\nA two-day CHERI technical programme at SEMICON Europa in Munich, connecting implementation work with the wider electronics industry.\n\nStatus\nUpcoming\nFormat\nConference\nDate\n12 to 13 November 2026\nLocation\nSEMICON Europa, Munich, Germany\nSeries\nCHERITech\n\nMain Conference Date: 12-13 November 2026\n\nExhibition: 10-13 November 2026\n\nLocation: Munich, DE @ SEMICON Europa\n\nThe Call for Papers is now live. Subscribe to our newsletter to be notified when registrations are live:\n\nCall for Papers\n\nSubscribe to Newsletter\n\nOverview\n\nCHERITech’26 will take place in Munich alongside Electronica / SEMICON Europa, one of the world’s largest electronics industry events!\n\nHosted at the heart of the exhibition floor and open to all attendees, CHERITech’26 will put CHERI in front of around 80,000 visitors from across industry, academia, government, and investment communities. It’s an unprecedented opportunity for attendees to be part of showcasing the momentum behind CHERI and secure-by-design computing.\n\nMore details to follow.\n\nPrevious event: CHERITech’25\n\nWatch the event overview from CHERITech’25:\n\nWatch video\n\nMore CHERITech events\n\nView the complete series\n\nPast\nOnline event\n\n4 December 2025\nOnline\n\nCHERITech'25 Reloaded\n\nCHERITech’25 Reloaded took place online on 4th December 2025. Participants joined us for live Q&A sessions with speakers from the main CHERITech’25 conference and revi...\n\nView event archive\n\nPast\nConference\n\n14 November 2025\nSister, Manchester, UK\n\nCHERITech'25 Conference\n\nCHERITech’25 brought together researchers, technologists, cybersecurity experts, and product developers for a dynamic exploration of Digital Security by Design. Now un...\n\nView event archive\n\nBack to upcoming events",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 2655.9375
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/thumbnails/events/cheritech26.webp",
+      "alt": "CHERITech'26",
+      "rect": {
+        "x": 161,
+        "y": 432.1875,
+        "width": 279.59375,
+        "height": 157.265625
+      },
+      "natural_width": 640,
+      "natural_height": 360,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 431.1875,
+        "width": 281.59375,
+        "height": 158.390625
+      },
+      "parent_classes": [
+        "entity-media",
+        "entity-media--event"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 431.1875,
+        "width": 742.40625,
+        "height": 1274.1875
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/events/cheritech26/munich-messe.jpg",
+      "alt": "Munich Messe",
+      "rect": {
+        "x": 537.59375,
+        "y": 1123.40625,
+        "width": 640,
+        "height": 360
+      },
+      "natural_width": 640,
+      "natural_height": 360,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 537.59375,
+        "y": 1123.40625,
+        "width": 742.40625,
+        "height": 360
+      },
+      "parent_classes": [],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 431.1875,
+        "width": 742.40625,
+        "height": 1274.1875
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/thumbnails/events/cheritech25-reloaded.webp",
+      "alt": "",
+      "rect": {
+        "x": 161,
+        "y": 1929.15625,
+        "width": 544,
+        "height": 306
+      },
+      "natural_width": 640,
+      "natural_height": 360,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 161,
+        "y": 1929.15625,
+        "width": 544,
+        "height": 306
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 431.1875,
+        "width": 742.40625,
+        "height": 1274.1875
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/thumbnails/events/cheritech25.webp",
+      "alt": "",
+      "rect": {
+        "x": 735,
+        "y": 1929.15625,
+        "width": 544,
+        "height": 306
+      },
+      "natural_width": 640,
+      "natural_height": 360,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 735,
+        "y": 1929.15625,
+        "width": 544,
+        "height": 306
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 431.1875,
+        "width": 742.40625,
+        "height": 1274.1875
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/events/cheritech26/",
+  "final_url": "https://cheri-alliance.github.io/events/cheritech26/",
+  "retrieved_at": "2026-10-09T21:53:27.126588+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

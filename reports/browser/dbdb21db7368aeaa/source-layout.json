@@ -1,0 +1,61 @@
+{
+  "main_text": "Alliance\nMembers\nNovomorphic\nNovomorphic\n\nDetails to follow.\n\nStatus\nMember\nMembership\nFull Member\nWebsite\nVisit member website\nDescription\n\nDetails to follow.\n\nCHERI Activities\n\nDetails to follow.\n\nBack to all members",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 1001.0625
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/members/novomorphic/logo.png",
+      "alt": "Novomorphic logo",
+      "rect": {
+        "x": 196.578125,
+        "y": 423.953125,
+        "width": 208.421875,
+        "height": 137.71875
+      },
+      "natural_width": 1500,
+      "natural_height": 232,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 398.953125,
+        "width": 281.59375,
+        "height": 187.71875
+      },
+      "parent_classes": [
+        "entity-media",
+        "entity-media--logo"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 398.953125,
+        "width": 742.40625,
+        "height": 253.5625
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/members/novomorphic/",
+  "final_url": "https://cheri-alliance.github.io/members/novomorphic/",
+  "retrieved_at": "2026-10-09T21:54:11.841713+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

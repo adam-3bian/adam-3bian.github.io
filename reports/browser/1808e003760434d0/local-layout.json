@@ -1,0 +1,48 @@
+{
+  "main_text": "News & Events\nNews & Analysis\nOne Bug is All It Takes\nOne Bug is All It Takes\n\nIn 2025 alone, global cybercrime costs reached an estimated $1.2 billion every minute, with projections rising to $1.8 billion per minute by 2029. Just seven years earlier, the figure was “only” $100 million per minute—already enormous, but now…\n\n4 May 2026\nCHERI Alliance news\nEcosystem\n\nAdam Finney – CHERI Alliance\n\nThis article is part of a series of blogs published after the announcement of Mythos vulnerabilities’ exploitation capabilities. The views from other experts on this topic are:\n\nAI has compressed the attack timeline – Mike Eftimakis\nCHERI memory safety mitigates LLM-discovered vulnerability in FreeBSD – Brooks Davis\n\nFor many years, automated tools that scan software for defects have played a central role in improving system security. A major early effort in this space was a U.S. Department of Homeland Security funded initiative that used Coverity’s static analysis technology to examine widely used open source software projects. This work analysed over 150 projects, including 53 in detail, and led to the discovery and remediation of approximately 6,000 defects across those codebases. It demonstrated that large numbers of previously unknown flaws existed even in widely deployed software, many of which represented potential security risks.\n\nSince then, static analysis has become a standard part of modern software development. These tools analyse source code without executing it, exploring possible execution paths to identify defects such as null pointer dereferences, resource leaks, and logic errors. Over time, they have scaled to analyse very large codebases across many projects, contributing to the identification and fixing of large numbers of defects.\n\nMore recently, new approaches have emerged that attempt to make analysis tools more adaptive and intelligent. Rather than strictly modelling program execution, some systems attempt to identify patterns that appear risky, similar to how a human reviewer might detect suspicious constructs. While this can uncover issues that traditional techniques might miss, it also introduces challenges, particularly in distinguishing genuine vulnerabilities from benign patterns.\n\nOne of the most significant challenges in static analysis is noise. Tools often produce large volumes of warnings, many of which are false positives or lower priority issues. Each reported defect must still be reviewed by a developer, creating a substantial cost in time and effort. Over time, this can lead to alert fatigue, where important warnings risk being ignored. Even in high quality analysis tools, some level of false positives is unavoidable due to the inherent trade off between accuracy and completeness in static analysis.\n\nSubsequent empirical studies have shown that these challenges persist in modern tools, with analyses highlighting variability in results across different tools and continued issues with precision and false positives in real world codebases.\n\nTraditional approaches attempt to mitigate this by allowing developers to provide annotations or additional context, helping tools better understand intended behaviour. However, more probabilistic or heuristic based systems may lack this precision, making it difficult to distinguish between genuinely dangerous conditions and code that merely appears suspicious.\n\nAlongside these approaches, architectural solutions such as CHERI (Capability Hardware Enhanced RISC Instructions) provide a complementary path to improving security. Rather than relying solely on detection, CHERI enforces memory safety properties directly in hardware through capabilities that encode bounds and permissions. This reduces reliance on warning based systems and removes entire classes of vulnerabilities, particularly those related to memory safety, which static analysis tools often struggle to reason about precisely.\n\nThere is also a fundamental asymmetry between defenders and attackers. Developers must identify and fix every serious vulnerability, whereas an attacker needs to exploit only one. When tools generate large numbers of potential issues, even with many false positives, an attacker can focus on a small subset and still discover a real weakness. Approaches like CHERI aim to rebalance this dynamic by reducing the number of exploitable defects at their source, rather than relying solely on their detection.\n\nFurther reading:\n\nAI has compressed the attack timeline\nLinkedIn article from David Chisnall\nhttps://arxiv.org/pdf/2101.08832\nhttps://download.101com.com/pub/gcn/newspics/Coverity_OpenSourceReport2008.pdf\nhttps://www.theregister.com/2009/09/25/open_source_code_audit\nhttps://www.cs.cmu.edu/~aldrich/courses/654-sp07/tools/cure-coverity-06.pdf\n\nBack to Latest News",
+  "images": [
+    {
+      "url": "http://127.0.0.1:41683/assets/news/one-bug-is-all-it-takes/90741c3e8a15-hero.jpg",
+      "rect": {
+        "x": 177,
+        "y": 529.21875,
+        "width": 958,
+        "height": 576
+      },
+      "natural_width": 2000,
+      "natural_height": 1400
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/news/one-bug-is-all-it-takes/",
+  "checks": {
+    "visible_main_text": true,
+    "header_text": true,
+    "footer_text": true,
+    "copyright_text": true,
+    "image_count": true,
+    "image_integrity": true,
+    "desktop_image_geometry": true
+  },
+  "image_checks": [
+    {
+      "source_url": "https://cheri-alliance.github.io/assets/images/content/news/one-bug-is-all-it-takes/hero.jpg",
+      "mapped_url_correct": true,
+      "loaded": true,
+      "geometry_delta_px": {
+        "x": 0,
+        "y": 0.0,
+        "width": 0,
+        "height": 0
+      }
+    }
+  ]
+}

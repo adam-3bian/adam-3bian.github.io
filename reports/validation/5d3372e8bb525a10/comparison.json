@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/members/light-momentum-technology-corp/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/organisations/light-momentum-technology-corp/baa4c8d4b03f-logo.png": "https://cheri-alliance.github.io/assets/images/content/members/light-momentum-technology-corp/logo.png"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

@@ -1,0 +1,17 @@
+{
+  "url": "https://cheri-alliance.github.io/CHERI-seL4-Exercises/exercises/cheri-tags/index.html",
+  "selector": "main",
+  "asset_mapping": {},
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

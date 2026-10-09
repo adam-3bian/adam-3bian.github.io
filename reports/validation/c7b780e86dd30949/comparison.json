@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/members/techworks/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/organisations/techworks/2bce694630e0-logo.png": "https://cheri-alliance.github.io/assets/images/content/members/techworks/logo.png"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

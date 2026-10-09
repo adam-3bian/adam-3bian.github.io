@@ -1,0 +1,92 @@
+{
+  "text": "CHERI Roadmap for Linux Allison Randal (Capabilities Limited) Hesham Almatary (Capabilities Limited) Kevin Brodsky (Arm Limited) Jessica Clarke (University of Cambridge) Brooks Davis (Capabilities Limited) Vincenzo Frascino (Arm Limited) Ben Laurie (Google) Alex Richardson (Google) Carl Shaw (Codasip) Robert N. M. Watson (Capabilities Limited and University of Cambridge) This roadmap was developed by the CHERI Alliance Linux Strategy working group, outlining a path toward unified Linux support for CHERI hardware. This is a living document; feedback and contributions are welcomed. Please see our GitHub Repository for source code and an issue tracker. There is a rendered version on the web, which is automatically updated when the git repository is committed to.",
+  "headings": [
+    [
+      "h1",
+      "CHERI Roadmap for Linux",
+      "cheri-roadmap-for-linux"
+    ]
+  ],
+  "paragraphs": [
+    "Allison Randal (Capabilities Limited)",
+    "Hesham Almatary (Capabilities Limited)",
+    "Kevin Brodsky (Arm Limited)",
+    "Jessica Clarke (University of Cambridge)",
+    "Brooks Davis (Capabilities Limited)",
+    "Vincenzo Frascino (Arm Limited)",
+    "Ben Laurie (Google)",
+    "Alex Richardson (Google)",
+    "Carl Shaw (Codasip)",
+    "Robert N. M. Watson (Capabilities Limited and University of Cambridge)",
+    "This roadmap was developed by the CHERI Alliance Linux Strategy working group, outlining a path toward unified Linux support for CHERI hardware.",
+    "This is a living document; feedback and contributions are welcomed. Please see our GitHub Repository for source code and an issue tracker. There is a rendered version on the web, which is automatically updated when the git repository is committed to."
+  ],
+  "lists": [
+    [
+      "ul",
+      "Allison Randal (Capabilities Limited) Hesham Almatary (Capabilities Limited) Kevin Brodsky (Arm Limited) Jessica Clarke (University of Cambridge) Brooks Davis (Capabilities Limited) Vincenzo Frascino (Arm Limited) Ben Laurie (Google) Alex Richardson (Google) Carl Shaw (Codasip) Robert N. M. Watson (Capabilities Limited and University of Cambridge)"
+    ],
+    [
+      "li",
+      "Allison Randal (Capabilities Limited)"
+    ],
+    [
+      "li",
+      "Hesham Almatary (Capabilities Limited)"
+    ],
+    [
+      "li",
+      "Kevin Brodsky (Arm Limited)"
+    ],
+    [
+      "li",
+      "Jessica Clarke (University of Cambridge)"
+    ],
+    [
+      "li",
+      "Brooks Davis (Capabilities Limited)"
+    ],
+    [
+      "li",
+      "Vincenzo Frascino (Arm Limited)"
+    ],
+    [
+      "li",
+      "Ben Laurie (Google)"
+    ],
+    [
+      "li",
+      "Alex Richardson (Google)"
+    ],
+    [
+      "li",
+      "Carl Shaw (Codasip)"
+    ],
+    [
+      "li",
+      "Robert N. M. Watson (Capabilities Limited and University of Cambridge)"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://cheri-alliance.github.io/linux-roadmap/cover.html#cheri-roadmap-for-linux",
+      "CHERI Roadmap for Linux"
+    ],
+    [
+      "https://cheri-linux.org/",
+      "Linux Strategy working group"
+    ],
+    [
+      "https://github.com/CHERI-Alliance/linux-roadmap",
+      "GitHub Repository"
+    ],
+    [
+      "https://cheri-alliance.github.io/linux-roadmap/",
+      "rendered version on the web"
+    ]
+  ],
+  "images": [],
+  "definitions": [],
+  "code_blocks": []
+}

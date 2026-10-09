@@ -1,0 +1,20 @@
+{
+  "url": "https://cheri-alliance.github.io/discover/resources/videos-and-presentations/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/shared/source-assets/bb02da00a010-cheri-basics.pdf": "https://cheri-alliance.github.io/assets/pdf/cheri-basics.pdf",
+    "/assets/shared/source-assets/c275143b35fc-cheri-alliance-presentation.pdf": "https://cheri-alliance.github.io/assets/pdf/cheri-alliance-presentation.pdf"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

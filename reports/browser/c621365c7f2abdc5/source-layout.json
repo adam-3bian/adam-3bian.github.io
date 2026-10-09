@@ -1,0 +1,61 @@
+{
+  "main_text": "News & Events\nSpeakers\nMurali Vijayaraghavan\nMurali Vijayaraghavan\n\nGoogle\n\nOrganisation\nGoogle\nLinkedIn\nBiography\n\nMurali is a formal methods and security researcher at\n\nGoogle.\n\nCHERI Talks\n\nRigorous Hardware-Software Codesign for Secure Compartmentalization on Embedded Devices | CHERITech’25\n\n14/11/2025\n\nManchester, UK\n\nView Slides\n\nView Video\n\nBack to all speakers",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 1091.4375
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/people/murali-vijayaraghavan/portrait.jpg",
+      "alt": "Murali Vijayaraghavan",
+      "rect": {
+        "x": 161,
+        "y": 399.953125,
+        "width": 279.59375,
+        "height": 248.828125
+      },
+      "natural_width": 1200,
+      "natural_height": 1068,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 398.953125,
+        "width": 281.59375,
+        "height": 211.1875
+      },
+      "parent_classes": [
+        "entity-media",
+        "entity-media--portrait"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 398.953125,
+        "width": 742.40625,
+        "height": 536.6875
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/people/murali-vijayaraghavan/",
+  "final_url": "https://cheri-alliance.github.io/people/murali-vijayaraghavan/",
+  "retrieved_at": "2026-10-09T21:08:01.850029+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

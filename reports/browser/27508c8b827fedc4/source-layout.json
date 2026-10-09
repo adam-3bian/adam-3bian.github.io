@@ -1,0 +1,61 @@
+{
+  "main_text": "News & Events\nSpeakers\nDonato Ferraro\nDonato Ferraro\n\nMinerva Systems, University of Modena and Reggio Emilia\n\nOrganisation\nMinerva Systems, University of Modena and Reggio Emilia\nLinkedIn\nBiography\n\nDonato Ferraro is a Ph.D. student in Computer and Data Science for Technological and Social Innovation at the University of Modena and Reggio Emilia.\n\nHe works with Minerva Systems, and his research focuses on security, safety, real-time, and embedded systems. His current work investigates the application of CHERI technology in drone environments.\n\nCHERI Talks\n\nCapability-Based Isolation for UAV Software Stacks: Porting PX4/NuttX to CHERI | CHERITech’25\n\n14/11/2025\n\nManchester, UK\n\nView Slides\n\nView Video\n\nBack to all speakers",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 1173
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/people/donato-ferraro/portrait.jpg",
+      "alt": "Donato Ferraro",
+      "rect": {
+        "x": 161,
+        "y": 399.953125,
+        "width": 279.59375,
+        "height": 232.40625
+      },
+      "natural_width": 972,
+      "natural_height": 808,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 398.953125,
+        "width": 281.59375,
+        "height": 211.1875
+      },
+      "parent_classes": [
+        "entity-media",
+        "entity-media--portrait"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 398.953125,
+        "width": 742.40625,
+        "height": 618.25
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/people/donato-ferraro/",
+  "final_url": "https://cheri-alliance.github.io/people/donato-ferraro/",
+  "retrieved_at": "2026-10-09T21:07:21.684164+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

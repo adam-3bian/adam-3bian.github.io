@@ -1,0 +1,93 @@
+{
+  "text": "News & Events News & Analysis lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure Enclave with InnovateUK Support lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure Enclave with InnovateUK Support lowRISC CIC and Capabilities Limited, two founding members of the CHERI Alliance, have announced the launch of the COSMIC Project, supported by the UK Department for Science, Innovation and Technology (DSIT) and InnovateUK. The 3 year initiative will… 12 November 2025 CHERI Alliance news Ecosystem Members lowRISC CIC and Capabilities Limited, two founding members of the CHERI Alliance, have announced the launch of the COSMIC Project, supported by the UK Department for Science, Innovation and Technology (DSIT) and InnovateUK. The 3 year initiative will deliver the first commercial-quality, open-source, CHERI-enabled 64-bit Secure Enclave for application-class system-on-chips (SoCs). By combining CHERI hardware memory safety and compartmentalisation with formal verification, COSMIC aims to create a secure foundation for future high-assurance silicon designs. Built on OpenTitan® design principles and featuring the CVA6-CHERI processor from Capabilities Limited, the project will extend open-source security to Linux-class systems and advance the commercial maturity of CHERI-enhanced RISC-V technology. Formal verification will ensure the design achieves a high standard of correctness suitable for deployment. The CHERI Alliance welcomes the announcement. COSMIC is an important step towards embedding CHERI-based security in next-generation commercial products. COSMIC continues lowRISC CIC‘s mission to make commercial open-source silicon real. It follows the success of OpenTitan and Sunburst and is supported by partners including Google, also a founding member of the CHERI Alliance, and Rivos. You can read the full the press release here. Back to Latest News",
+  "headings": [
+    [
+      "h1",
+      "lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure Enclave with InnovateUK Support",
+      "page-hero-title"
+    ]
+  ],
+  "paragraphs": [
+    "News & Events",
+    "News & Analysis",
+    "lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure Enclave with InnovateUK Support",
+    "lowRISC CIC and Capabilities Limited, two founding members of the CHERI Alliance, have announced the launch of the COSMIC Project, supported by the UK Department for Science, Innovation and Technology (DSIT) and InnovateUK. The 3 year initiative will…",
+    "12 November 2025 CHERI Alliance news Ecosystem Members",
+    "lowRISC CIC and Capabilities Limited, two founding members of the CHERI Alliance, have announced the launch of the COSMIC Project, supported by the UK Department for Science, Innovation and Technology (DSIT) and InnovateUK.",
+    "The 3 year initiative will deliver the first commercial-quality, open-source, CHERI-enabled 64-bit Secure Enclave for application-class system-on-chips (SoCs). By combining CHERI hardware memory safety and compartmentalisation with formal verification, COSMIC aims to create a secure foundation for future high-assurance silicon designs.",
+    "Built on OpenTitan® design principles and featuring the CVA6-CHERI processor from Capabilities Limited, the project will extend open-source security to Linux-class systems and advance the commercial maturity of CHERI-enhanced RISC-V technology. Formal verification will ensure the design achieves a high standard of correctness suitable for deployment.",
+    "The CHERI Alliance welcomes the announcement. COSMIC is an important step towards embedding CHERI-based security in next-generation commercial products.",
+    "COSMIC continues lowRISC CIC‘s mission to make commercial open-source silicon real. It follows the success of OpenTitan and Sunburst and is supported by partners including Google, also a founding member of the CHERI Alliance, and Rivos.",
+    "You can read the full the press release here.",
+    "Back to Latest News"
+  ],
+  "lists": [
+    [
+      "ol",
+      "News & Events News & Analysis lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure Enclave with InnovateUK Support"
+    ],
+    [
+      "li",
+      "News & Events"
+    ],
+    [
+      "li",
+      "News & Analysis"
+    ],
+    [
+      "li",
+      "lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure Enclave with InnovateUK Support"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://cheri-alliance.github.io/members/lowrisc/",
+      "lowRISC CIC"
+    ],
+    [
+      "https://cheri-alliance.github.io/members/capabilities-limited/",
+      "Capabilities Limited"
+    ],
+    [
+      "https://cheri-alliance.github.io/",
+      "CHERI Alliance"
+    ],
+    [
+      "https://cosmic-project.lowrisc.org/",
+      "COSMIC Project"
+    ],
+    [
+      "https://cheri-alliance.github.io/members/capabilities-limited/",
+      "Capabilities Limited"
+    ],
+    [
+      "https://cheri-alliance.github.io/",
+      "CHERI Alliance"
+    ],
+    [
+      "https://cheri-alliance.github.io/members/lowrisc/",
+      "lowRISC CIC"
+    ],
+    [
+      "https://cheri-alliance.github.io/members/capabilities-limited/",
+      "Google"
+    ],
+    [
+      "https://www.globenewswire.com/news-release/2025/11/12/3185998/0/en/lowRISC-and-Partners-to-Deliver-Commercial-Quality-Open-Source-CHERI-Secure-Enclave-with-InnovateUK-Support.html",
+      "You can read the full the press release here"
+    ],
+    [
+      "https://cheri-alliance.github.io/news-and-events/news-and-analysis/latest-news/",
+      "Back to Latest News"
+    ]
+  ],
+  "images": [
+    [
+      "https://cheri-alliance.github.io/assets/images/content/shared/cheriot-1-0-specification-released.png",
+      "lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure Enclave with InnovateUK Support"
+    ]
+  ],
+  "definitions": [],
+  "code_blocks": []
+}

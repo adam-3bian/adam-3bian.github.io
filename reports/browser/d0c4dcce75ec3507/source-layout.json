@@ -1,0 +1,61 @@
+{
+  "main_text": "Alliance\nMembers\nInstituto Superior de Engenharia do Porto\nInstituto Superior de Engenharia do Porto\n\nThe School of Engineering of the Polytechnic Institute of Porto (ISEP), Portugal, is a public higher education and research institution, and one of the largest schools of engineering in Portugal (6000 students), with a strong diversity of subject…\n\nStatus\nMember\nMembership\nCommunity Member\nWebsite\nVisit member website\nDescription\n\nThe School of Engineering of the Polytechnic Institute of Porto (ISEP), Portugal, is a public higher education and research institution, and one of the largest schools of engineering in Portugal (6000 students), with a strong diversity of subject areas. The Software Technologies for Cyber-Physical Systems (SoftCPS) Laboratory of ISEP team has been focusing on R&D activity on embedded and real-time computing systems, comprising more than 20 years of experience on R&D in the design of safe and secure embedded systems.\n\nCHERI Activities\n\nSoftCPS@ISEP is developing safe and secure embedded systems by advancing state-of-the-art software technologies that are tightly aligned with modern hardware safety features. The lab explores high-integrity programming languages such as Ada and Rust to enforce memory safety, or real-time operating systems like Zephyr, enabling predictable, reliable execution in resource-constrained embedded environments, exploring emerging safety-oriented architectures such as CHERI, to enforce fine-grained spatial and temporal memory protection.\n\nBack to all members",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 1238.46875
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/members/instituto-superior-de-engenharia-do-porto/logo.png",
+      "alt": "ISEP Logo",
+      "rect": {
+        "x": 196.578125,
+        "y": 555.046875,
+        "width": 208.421875,
+        "height": 137.71875
+      },
+      "natural_width": 2000,
+      "natural_height": 589,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 530.046875,
+        "width": 281.59375,
+        "height": 187.71875
+      },
+      "parent_classes": [
+        "entity-media",
+        "entity-media--logo"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 530.046875,
+        "width": 742.40625,
+        "height": 552.625
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/members/instituto-superior-de-engenharia-do-porto/",
+  "final_url": "https://cheri-alliance.github.io/members/instituto-superior-de-engenharia-do-porto/",
+  "retrieved_at": "2026-10-09T21:53:59.703202+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

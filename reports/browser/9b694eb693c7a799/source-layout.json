@@ -1,0 +1,60 @@
+{
+  "main_text": "News & Events\nNews & Analysis\nCHERIoT-Ibex Core is Open Sourced to Enable Memory Safe MCUs\nCHERIoT-Ibex Core is Open Sourced to Enable Memory Safe MCUs\n\nSource: https://www.eetimes.com/cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus/\n\n7 April 2025\nEcosystem\n\nSource: https://www.eetimes.com/cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus/\n\nBack to Latest News",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 1395.59375
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/shared/cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus.png",
+      "alt": "CHERIoT-Ibex Core is Open Sourced to Enable Memory Safe MCUs",
+      "rect": {
+        "x": 177,
+        "y": 563.609375,
+        "width": 958,
+        "height": 576
+      },
+      "natural_width": 513,
+      "natural_height": 484,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 546.609375,
+        "width": 992,
+        "height": 610
+      },
+      "parent_classes": [
+        "collection-detail__lead-image"
+      ],
+      "body_rect": {
+        "x": 160,
+        "y": 1212.609375,
+        "width": 992,
+        "height": 27.1875
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/news/cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus/",
+  "final_url": "https://cheri-alliance.github.io/news/cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus/",
+  "retrieved_at": "2026-10-09T21:06:23.074215+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

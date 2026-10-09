@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/people/andy-moore/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/people/andy-moore/6a5983cbf294-portrait.jpg": "https://cheri-alliance.github.io/assets/images/content/people/andy-moore/portrait.jpg"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

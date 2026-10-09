@@ -1,0 +1,143 @@
+{
+  "text": "CHERI Roadmap for Linux 1. Introduction 2. Goals 2.1. Toolchain 2.2. Emulation and crossbuild platforms 2.3. Kernel support 2.4. Bootloaders and firmware 2.5. User space support 2.6. Linux distributions 2.7. Testing 3. Prior Work on Linux adaptation 4. Technical Reports 5. Selected CHERI research papers",
+  "headings": [],
+  "paragraphs": [
+    "CHERI Roadmap for Linux",
+    "1. Introduction",
+    "2. Goals",
+    "2.1. Toolchain",
+    "2.2. Emulation and crossbuild platforms",
+    "2.3. Kernel support",
+    "2.4. Bootloaders and firmware",
+    "2.5. User space support",
+    "2.6. Linux distributions",
+    "2.7. Testing",
+    "3. Prior Work on Linux adaptation",
+    "4. Technical Reports",
+    "5. Selected CHERI research papers"
+  ],
+  "lists": [
+    [
+      "ol",
+      "CHERI Roadmap for Linux 1. Introduction 2. Goals 2.1. Toolchain 2.2. Emulation and crossbuild platforms 2.3. Kernel support 2.4. Bootloaders and firmware 2.5. User space support 2.6. Linux distributions 2.7. Testing 3. Prior Work on Linux adaptation 4. Technical Reports 5. Selected CHERI research papers"
+    ],
+    [
+      "li",
+      "CHERI Roadmap for Linux"
+    ],
+    [
+      "li",
+      "1. Introduction"
+    ],
+    [
+      "li",
+      "2. Goals"
+    ],
+    [
+      "li",
+      "2.1. Toolchain 2.2. Emulation and crossbuild platforms 2.3. Kernel support 2.4. Bootloaders and firmware 2.5. User space support 2.6. Linux distributions 2.7. Testing"
+    ],
+    [
+      "ol",
+      "2.1. Toolchain 2.2. Emulation and crossbuild platforms 2.3. Kernel support 2.4. Bootloaders and firmware 2.5. User space support 2.6. Linux distributions 2.7. Testing"
+    ],
+    [
+      "li",
+      "2.1. Toolchain"
+    ],
+    [
+      "li",
+      "2.2. Emulation and crossbuild platforms"
+    ],
+    [
+      "li",
+      "2.3. Kernel support"
+    ],
+    [
+      "li",
+      "2.4. Bootloaders and firmware"
+    ],
+    [
+      "li",
+      "2.5. User space support"
+    ],
+    [
+      "li",
+      "2.6. Linux distributions"
+    ],
+    [
+      "li",
+      "2.7. Testing"
+    ],
+    [
+      "li",
+      "3. Prior Work on Linux adaptation"
+    ],
+    [
+      "li",
+      "4. Technical Reports"
+    ],
+    [
+      "li",
+      "5. Selected CHERI research papers"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://cheri-alliance.github.io/linux-roadmap/cover.html",
+      "CHERI Roadmap for Linux"
+    ],
+    [
+      "https://cheri-alliance.github.io/linux-roadmap/intro.html",
+      "1. Introduction"
+    ],
+    [
+      "https://cheri-alliance.github.io/linux-roadmap/goals/index.html",
+      "2. Goals"
+    ],
+    [
+      "https://cheri-alliance.github.io/linux-roadmap/goals/toolchain.html",
+      "2.1. Toolchain"
+    ],
+    [
+      "https://cheri-alliance.github.io/linux-roadmap/goals/emulation-crossbuild.html",
+      "2.2. Emulation and crossbuild platforms"
+    ],
+    [
+      "https://cheri-alliance.github.io/linux-roadmap/goals/kernel.html",
+      "2.3. Kernel support"
+    ],
+    [
+      "https://cheri-alliance.github.io/linux-roadmap/goals/bootloaders-firmware.html",
+      "2.4. Bootloaders and firmware"
+    ],
+    [
+      "https://cheri-alliance.github.io/linux-roadmap/goals/user-space.html",
+      "2.5. User space support"
+    ],
+    [
+      "https://cheri-alliance.github.io/linux-roadmap/goals/distros.html",
+      "2.6. Linux distributions"
+    ],
+    [
+      "https://cheri-alliance.github.io/linux-roadmap/goals/testing.html",
+      "2.7. Testing"
+    ],
+    [
+      "https://cheri-alliance.github.io/linux-roadmap/prior-work.html",
+      "3. Prior Work on Linux adaptation"
+    ],
+    [
+      "https://cheri-alliance.github.io/linux-roadmap/techreports.html",
+      "4. Technical Reports"
+    ],
+    [
+      "https://cheri-alliance.github.io/linux-roadmap/research.html",
+      "5. Selected CHERI research papers"
+    ]
+  ],
+  "images": [],
+  "definitions": [],
+  "code_blocks": []
+}

@@ -1,0 +1,60 @@
+{
+  "main_text": "News & Events\nNews & Analysis\nCHERI or CHERIoT? The Answer Is Not What You Think\nCHERI or CHERIoT? The Answer Is Not What You Think\n\nAdam Finney – CHERI Alliance Interest in capability based security has grown rapidly as organisations look for practical ways to move beyond legacy memory protection. As more projects explore CHERI technologies, a common question keeps surfacing…\n\n1 December 2025\nCHERI Alliance news\nEcosystem\n\nAdam Finney – CHERI Alliance\n\nInterest in capability based security has grown rapidly as organisations look for practical ways to move beyond legacy memory protection. As more projects explore CHERI technologies, a common question keeps surfacing: should we use CHERI or CHERIoT? At first glance it sounds like a straightforward architectural decision, but as David Chisnall from SCI Semiconductor points out, the question itself rests on a false premise.\n\nCHERI is not a product or a platform. It is an abstract architectural model that can be expressed on many instruction sets and embodied in many designs. It defines the capability based ideas that make fine grained memory safety possible, but leaves enormous freedom in how those ideas are implemented. By contrast, CHERIoT is a concrete instantiation of CHERI aimed at resource constrained microcontroller class systems. It comes with a complete ISA, a software stack and design choices made specifically for small devices.\n\nUnderstanding this distinction is important for anyone planning a CHERI based system. The real choice is not between CHERI and CHERIoT. It is between adopting CHERI at all and then selecting the right CHERI platform for the scale of hardware you are targeting. CHERIoT serves one part of that landscape. Other CHERI variants serve others.\n\nIn the article that follows, David explains why the “CHERI or CHERIoT” framing does not hold, what makes CHERIoT unique and how to think clearly about which CHERI approach fits your project or product.\n\nhttps://cheriot.org/cheri/philosophy/isa/2025/11/19/cheri-or-cheriot.html\n\nBack to Latest News",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 1955.640625
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/shared/cheriot-1-0-specification-released.png",
+      "alt": "CHERI or CHERIoT? The Answer Is Not What You Think",
+      "rect": {
+        "x": 177,
+        "y": 595.84375,
+        "width": 958,
+        "height": 576
+      },
+      "natural_width": 305,
+      "natural_height": 300,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 578.84375,
+        "width": 992,
+        "height": 610
+      },
+      "parent_classes": [
+        "collection-detail__lead-image"
+      ],
+      "body_rect": {
+        "x": 160,
+        "y": 1244.84375,
+        "width": 992,
+        "height": 555
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/news/cheri-or-cheriot-the-answer-is-not-what-you-think/",
+  "final_url": "https://cheri-alliance.github.io/news/cheri-or-cheriot-the-answer-is-not-what-you-think/",
+  "retrieved_at": "2026-10-09T21:06:20.245764+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

@@ -1,0 +1,48 @@
+{
+  "main_text": "News & Events\nNews & Analysis\nWind River Joins the CHERI Alliance\nWind River Joins the CHERI Alliance\n\nWe are pleased to welcome Wind River to the CHERI Alliance, marking another important step forward in building a more secure computing ecosystem. Building on its existing work with CHERI, Wind River was recently awarded a contract as part of a…\n\n21 April 2026\nCHERI Alliance news\nEcosystem\nMembers\n\nWe are pleased to welcome Wind River to the CHERI Alliance, marking another important step forward in building a more secure computing ecosystem.\n\nBuilding on its existing work with CHERI, Wind River was recently awarded a contract as part of a strategic initiative led by Innovate UK and the Department for Science, Innovation and Technology to support the wider adoption of CHERI technology. As part of this effort, they will be working to port and extend the VxWorks Real-Time Operating System (RTOS) and Wind River Helix Virtualization Platform (Helix Platform) to leverage the CHERI architecture on RISC-V.\n\nThe addition of Wind River is a significant boost to our mission to accelerate CHERI adoption. By combining proven, industry-grade software with CHERI’s hardware-enforced protections, we move closer to reducing entire classes of memory safety vulnerabilities across critical infrastructure and intelligent edge devices.\n\nWe look forward to working with Wind River as part of the Alliance.\n\nRead the full announcement in Wind River’s press release.\n\nBack to Latest News",
+  "images": [
+    {
+      "url": "http://127.0.0.1:41683/assets/news/wind-river-joins-the-cheri-alliance/21bf3b105ad6-hero.png",
+      "rect": {
+        "x": 177,
+        "y": 529.21875,
+        "width": 958,
+        "height": 319
+      },
+      "natural_width": 2000,
+      "natural_height": 666
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/news/wind-river-joins-the-cheri-alliance/",
+  "checks": {
+    "visible_main_text": true,
+    "header_text": true,
+    "footer_text": true,
+    "copyright_text": true,
+    "image_count": true,
+    "image_integrity": true,
+    "desktop_image_geometry": true
+  },
+  "image_checks": [
+    {
+      "source_url": "https://cheri-alliance.github.io/assets/images/content/news/wind-river-joins-the-cheri-alliance/hero.png",
+      "mapped_url_correct": true,
+      "loaded": true,
+      "geometry_delta_px": {
+        "x": 0,
+        "y": 0.0,
+        "width": 0,
+        "height": 0
+      }
+    }
+  ]
+}

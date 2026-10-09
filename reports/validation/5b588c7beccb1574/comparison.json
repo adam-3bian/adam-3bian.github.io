@@ -1,0 +1,21 @@
+{
+  "url": "https://cheri-alliance.github.io/adopt/assurance-and-adoption/case-studies/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/pages/adopt--assurance-and-adoption--case-studies/bfeebb3ac676-morello-board.webp": "https://cheri-alliance.github.io/assets/images/content/products/morello-board.webp",
+    "/assets/pages/adopt--assurance-and-adoption--case-studies/645cc3b9a905-sonata-cheriot.webp": "https://cheri-alliance.github.io/assets/images/content/products/sonata-cheriot.webp",
+    "/assets/pages/adopt--assurance-and-adoption--case-studies/e8738d5ec725-codasip-prime-kit.webp": "https://cheri-alliance.github.io/assets/images/content/products/codasip-prime-kit.webp"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

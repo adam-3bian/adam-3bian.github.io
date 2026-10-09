@@ -1,0 +1,48 @@
+{
+  "main_text": "News & Events\nSpeakers\nJonathan Woodruff\nJonathan Woodruff\n\nCapabilities Limited\n\nOrganisation\nCapabilities Limited\nLinkedIn\nBiography\n\nDr Jonathan Woodruff is a Senior Research Associate with expertise in processor architecture and microarchitecture as well as low-level software optimisation.\n\nSpecialising in capability processor design, he has pushed into full-system optimisations including cache hierarchy, core timing, and multi-core designs as well as explorations into major security approaches including control flow integrity and private execution.\n\nCHERI Talks\n\nPerformance Progress of CVA6-CHERI | CHERI Blossoms 2026\n\n26/03/2026\n\nCambridge, UK\n\nView Slides\n\nView Video\n\nAn open-source RV64Y implementation for commercialization | CHERITech’25\n\n14/11/2025\n\nManchester, UK\n\nView Slides\n\nView Talk\n\nCHERI support for CVA6 | CHERI Blossoms 2025\n\n02/04/2025\n\nCambridge, UK\n\nView Slides\n\nView Video\n\nBack to all speakers",
+  "images": [
+    {
+      "url": "http://127.0.0.1:41683/assets/people/jonathan-woodruff/7b6014d71dff-portrait.png",
+      "rect": {
+        "x": 161,
+        "y": 399.953125,
+        "width": 279.59375,
+        "height": 284.6875
+      },
+      "natural_width": 821,
+      "natural_height": 836
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/people/jonathan-woodruff/",
+  "checks": {
+    "visible_main_text": true,
+    "header_text": true,
+    "footer_text": true,
+    "copyright_text": true,
+    "image_count": true,
+    "image_integrity": true,
+    "desktop_image_geometry": true
+  },
+  "image_checks": [
+    {
+      "source_url": "https://cheri-alliance.github.io/assets/images/content/people/jonathan-woodruff/portrait.png",
+      "mapped_url_correct": true,
+      "loaded": true,
+      "geometry_delta_px": {
+        "x": 0,
+        "y": 0.0,
+        "width": 0.0,
+        "height": 0.0
+      }
+    }
+  ]
+}

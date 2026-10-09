@@ -1,0 +1,638 @@
+{
+  "text": "Discover Resources Glossary Glossary CHERI glossary Plain-language definitions for CHERI terms, acronyms, architecture concepts, and software models. The alphabet index links directly to each group of entries. Skip to A B C D H I L M N O P R S T U A ABI Application Binary Interface. The conventions that let compiled code, libraries, and an operating system agree on data layouts, calling conventions, registers, and binary formats. Ambient authority Authority available to code without being passed explicitly. Capability systems seek to reduce ambient authority so that access is tied to specific capabilities. Authority The right to access a resource or perform an operation. A CHERI capability carries authority through its bounds, permissions, validity, and sealing state. B Bounds The lower and upper limits of the memory region that a capability can address. A memory access outside those limits is rejected by the processor. Bounds compression An encoding technique that represents a capability's bounds compactly alongside its address and other metadata. Some bounds cannot be represented exactly and are rounded to a representable range. C CHERI Capability Hardware Enhanced RISC Instructions. An architectural protection model that adds hardware-supported capabilities to conventional processor architectures. CHERI C/C++ C and C++ language and ABI adaptations that represent pointers with CHERI capabilities and expose capability-aware operations where needed. CHERIoT A CHERI-based hardware-software platform designed for small embedded systems, with memory safety and fine-grained compartments built into its processor and RTOS model. Capability A hardware-protected reference that that carries a memory location, the bounds of the memory region, the access rights associated with it, and some other metadata. Capability fault An exception raised when an operation violates a capability rule, such as using an invalid capability, accessing outside its bounds, or attempting an operation without the required permission. Capability provenance The valid derivation history that connects a capability to existing authority. Integer values cannot simply be converted into usable capabilities with new authority. Capability register A processor register able to hold a complete capability, including its address and protected metadata. CheriABI A pure-capability POSIX process environment developed for CheriBSD in which C and C++ pointers are represented as capabilities. CheriBSD A FreeBSD-derived research operating system used to develop and evaluate CHERI memory protection and compartmentalisation. Compartment A software component isolated from other components and given only selected access to code, data, devices, or services. Compartmentalisation The division of software into isolated components so that a fault or compromise in one component has limited authority over the rest of the system. Compressed capability A capability representation that encodes bounds relative to the current address, allowing capability metadata and a conventional-sized address to fit within a practical in-memory format. Cursor The current address within a capability. It can move within the authority described by the capability but does not itself define the capability's bounds. D Default Data Capability (DDC) A capability used by some CHERI execution models as the default authority for data accesses that are not made through an explicit capability register. Dereference Using a pointer or capability to read or write the memory it refers to. CHERI checks validity, bounds, permissions, and other relevant rules when a capability is dereferenced. H Hybrid ABI An application binary interface in which conventional pointers remain the default while software can explicitly use capabilities for selected data and interfaces. I Instruction-set architecture (ISA) The programmer-visible contract between software and a processor, including instructions, registers, data types, exceptions, and memory behaviour. L Least privilege The principle that code should receive only the authority required for its function. Capability bounds and permissions provide mechanisms for expressing narrower authority. M Memory safety Protection against invalid uses of memory, including accesses outside an object's bounds and, where temporal protection is present, accesses after an object's lifetime has ended. Monotonicity The rule that deriving a capability can preserve or reduce its authority but cannot increase it beyond the authority of the source capability. Morello Arm's experimental high-performance processor, SoC, and development board implementing an adaptation of CHERI for the Arm architecture. N Non-forgeability The property that software cannot create a valid capability with new authority merely by constructing or modifying its bit pattern. O Object capability An unforgeable reference that both identifies an object and authorises a defined set of operations on it. P Permission A right recorded in a capability, such as permission to load data, store data, or execute code. An operation is rejected when the relevant permission is absent. Pointer A pointer is a value that contains the address of a location in memory. In conventional systems, this is just an integer. Pointer provenance Information about where a pointer came from and which storage or object it is authorised to reference. CHERI makes valid provenance a hardware-enforced part of pointer use. Program Counter Capability (PCC) The capability that authorises instruction fetch and constrains the region of code that can execute in the current context. Pure-capability ABI An application binary interface in which language-level pointers, code pointers, return addresses, and related runtime structures are represented with capabilities. R RISC-V An open instruction-set architecture. CHERI extensions for RISC-V have been used in research processors, embedded systems, and ongoing standardisation work. Revocation The process of making previously issued capabilities unusable when their authority should no longer apply, such as after memory has been freed or a compartment has been torn down. S Sail A language for describing instruction-set architectures formally. CHERI uses Sail models as executable specifications and as inputs to testing and proof tools. Sealed capability A capability placed in a protected sealed state. It cannot be used for ordinary memory access until an authorised mechanism unseals or invokes it. Sentry capability A sealed executable capability used to provide a controlled entry point into code without exposing unrestricted access to the target code capability. Spatial memory safety Protection against accessing memory outside the intended bounds of an object, allocation, stack frame, or other region. T Tag A protected validity bit associated with a capability. Ordinary data operations cannot manufacture a set tag, and operations that corrupt a capability representation clear it. Tagged memory Memory that stores capability validity tags separately from ordinary software-visible data so that the integrity of in-memory capabilities can be enforced. Temporal memory safety Protection against using memory outside its valid lifetime, including use-after-free and use-after-reallocation errors. Trusted computing base (TCB) The hardware and software that must behave correctly for a system's security properties to hold. Compartmentalisation can reduce the amount of code trusted by any one component. U Use-after-free A temporal memory-safety error in which software accesses an allocation after it has been released and may have been reused for another purpose. Where next FAQs Short answers to common questions about CHERI, the Alliance, development, and adoption. Continue Related content Specifications A directory of architecture and related specifications relevant to CHERI. Read this page Digital Security by Design Archive An archive of material from the Digital Security by Design programme relevant to CHERI. Read this page",
+  "headings": [
+    [
+      "h1",
+      "Glossary",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "CHERI glossary",
+      "directory-cheri-glossary"
+    ],
+    [
+      "h3",
+      "A",
+      "glossary-a"
+    ],
+    [
+      "h3",
+      "B",
+      "glossary-b"
+    ],
+    [
+      "h3",
+      "C",
+      "glossary-c"
+    ],
+    [
+      "h3",
+      "D",
+      "glossary-d"
+    ],
+    [
+      "h3",
+      "H",
+      "glossary-h"
+    ],
+    [
+      "h3",
+      "I",
+      "glossary-i"
+    ],
+    [
+      "h3",
+      "L",
+      "glossary-l"
+    ],
+    [
+      "h3",
+      "M",
+      "glossary-m"
+    ],
+    [
+      "h3",
+      "N",
+      "glossary-n"
+    ],
+    [
+      "h3",
+      "O",
+      "glossary-o"
+    ],
+    [
+      "h3",
+      "P",
+      "glossary-p"
+    ],
+    [
+      "h3",
+      "R",
+      "glossary-r"
+    ],
+    [
+      "h3",
+      "S",
+      "glossary-s"
+    ],
+    [
+      "h3",
+      "T",
+      "glossary-t"
+    ],
+    [
+      "h3",
+      "U",
+      "glossary-u"
+    ],
+    [
+      "h2",
+      "Where next",
+      null
+    ],
+    [
+      "h3",
+      "FAQs",
+      null
+    ],
+    [
+      "h2",
+      "Related content",
+      null
+    ],
+    [
+      "h3",
+      "Specifications",
+      null
+    ],
+    [
+      "h3",
+      "Digital Security by Design Archive",
+      null
+    ]
+  ],
+  "paragraphs": [
+    "Discover",
+    "Resources",
+    "Glossary",
+    "Plain-language definitions for CHERI terms, acronyms, architecture concepts, and software models. The alphabet index links directly to each group of entries.",
+    "Skip to A B C D H I L M N O P R S T U",
+    "Short answers to common questions about CHERI, the Alliance, development, and adoption.",
+    "A directory of architecture and related specifications relevant to CHERI.",
+    "An archive of material from the Digital Security by Design programme relevant to CHERI."
+  ],
+  "lists": [
+    [
+      "ol",
+      "Discover Resources Glossary"
+    ],
+    [
+      "li",
+      "Discover"
+    ],
+    [
+      "li",
+      "Resources"
+    ],
+    [
+      "li",
+      "Glossary"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://cheri-alliance.github.io/discover/resources/glossary/#glossary-a",
+      "A"
+    ],
+    [
+      "https://cheri-alliance.github.io/discover/resources/glossary/#glossary-b",
+      "B"
+    ],
+    [
+      "https://cheri-alliance.github.io/discover/resources/glossary/#glossary-c",
+      "C"
+    ],
+    [
+      "https://cheri-alliance.github.io/discover/resources/glossary/#glossary-d",
+      "D"
+    ],
+    [
+      "https://cheri-alliance.github.io/discover/resources/glossary/#glossary-h",
+      "H"
+    ],
+    [
+      "https://cheri-alliance.github.io/discover/resources/glossary/#glossary-i",
+      "I"
+    ],
+    [
+      "https://cheri-alliance.github.io/discover/resources/glossary/#glossary-l",
+      "L"
+    ],
+    [
+      "https://cheri-alliance.github.io/discover/resources/glossary/#glossary-m",
+      "M"
+    ],
+    [
+      "https://cheri-alliance.github.io/discover/resources/glossary/#glossary-n",
+      "N"
+    ],
+    [
+      "https://cheri-alliance.github.io/discover/resources/glossary/#glossary-o",
+      "O"
+    ],
+    [
+      "https://cheri-alliance.github.io/discover/resources/glossary/#glossary-p",
+      "P"
+    ],
+    [
+      "https://cheri-alliance.github.io/discover/resources/glossary/#glossary-r",
+      "R"
+    ],
+    [
+      "https://cheri-alliance.github.io/discover/resources/glossary/#glossary-s",
+      "S"
+    ],
+    [
+      "https://cheri-alliance.github.io/discover/resources/glossary/#glossary-t",
+      "T"
+    ],
+    [
+      "https://cheri-alliance.github.io/discover/resources/glossary/#glossary-u",
+      "U"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/technology/capabilities/",
+      "Bounds"
+    ],
+    [
+      "https://cheri-alliance.github.io/discover/why-cheri/why-cheri/",
+      "CHERI"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/platforms/cheriot/",
+      "CHERIoT"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/technology/capabilities/",
+      "Capability"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/technology/provenance/",
+      "Capability provenance"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/technology/pure-capability-systems/",
+      "CheriABI"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/software-ecosystem/cheribsd/",
+      "CheriBSD"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/developers/build-compartments/",
+      "Compartment"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/technology/compartmentalisation/",
+      "Compartmentalisation"
+    ],
+    [
+      "https://cheri-alliance.github.io/discover/why-cheri/approaches-to-memory-safety/",
+      "Memory safety"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/platforms/morello/",
+      "Morello"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/technology/provenance/",
+      "Pointer provenance"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/technology/pure-capability-systems/",
+      "Pure-capability ABI"
+    ],
+    [
+      "https://cheri-alliance.github.io/discover/history/risc-v-and-embedded-development/",
+      "RISC-V"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/technology/spatial-memory-safety/",
+      "Spatial memory safety"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/technology/temporal-memory-safety/",
+      "Temporal memory safety Use-after-free"
+    ],
+    [
+      "https://cheri-alliance.github.io/discover/why-cheri/faqs/",
+      "FAQs Short answers to common questions about CHERI, the Alliance, development, and adoption. Continue"
+    ],
+    [
+      "https://cheri-alliance.github.io/discover/resources/specifications/",
+      "Specifications A directory of architecture and related specifications relevant to CHERI. Read this page"
+    ],
+    [
+      "https://cheri-alliance.github.io/discover/resources/digital-security-by-design-archive/",
+      "Digital Security by Design Archive An archive of material from the Digital Security by Design programme relevant to CHERI. Read this page"
+    ]
+  ],
+  "images": [],
+  "definitions": [
+    [
+      "dt",
+      "ABI"
+    ],
+    [
+      "dd",
+      "Application Binary Interface. The conventions that let compiled code, libraries, and an operating system agree on data layouts, calling conventions, registers, and binary formats."
+    ],
+    [
+      "dt",
+      "Ambient authority"
+    ],
+    [
+      "dd",
+      "Authority available to code without being passed explicitly. Capability systems seek to reduce ambient authority so that access is tied to specific capabilities."
+    ],
+    [
+      "dt",
+      "Authority"
+    ],
+    [
+      "dd",
+      "The right to access a resource or perform an operation. A CHERI capability carries authority through its bounds, permissions, validity, and sealing state."
+    ],
+    [
+      "dt",
+      "Bounds"
+    ],
+    [
+      "dd",
+      "The lower and upper limits of the memory region that a capability can address. A memory access outside those limits is rejected by the processor."
+    ],
+    [
+      "dt",
+      "Bounds compression"
+    ],
+    [
+      "dd",
+      "An encoding technique that represents a capability's bounds compactly alongside its address and other metadata. Some bounds cannot be represented exactly and are rounded to a representable range."
+    ],
+    [
+      "dt",
+      "CHERI"
+    ],
+    [
+      "dd",
+      "Capability Hardware Enhanced RISC Instructions. An architectural protection model that adds hardware-supported capabilities to conventional processor architectures."
+    ],
+    [
+      "dt",
+      "CHERI C/C++"
+    ],
+    [
+      "dd",
+      "C and C++ language and ABI adaptations that represent pointers with CHERI capabilities and expose capability-aware operations where needed."
+    ],
+    [
+      "dt",
+      "CHERIoT"
+    ],
+    [
+      "dd",
+      "A CHERI-based hardware-software platform designed for small embedded systems, with memory safety and fine-grained compartments built into its processor and RTOS model."
+    ],
+    [
+      "dt",
+      "Capability"
+    ],
+    [
+      "dd",
+      "A hardware-protected reference that that carries a memory location, the bounds of the memory region, the access rights associated with it, and some other metadata."
+    ],
+    [
+      "dt",
+      "Capability fault"
+    ],
+    [
+      "dd",
+      "An exception raised when an operation violates a capability rule, such as using an invalid capability, accessing outside its bounds, or attempting an operation without the required permission."
+    ],
+    [
+      "dt",
+      "Capability provenance"
+    ],
+    [
+      "dd",
+      "The valid derivation history that connects a capability to existing authority. Integer values cannot simply be converted into usable capabilities with new authority."
+    ],
+    [
+      "dt",
+      "Capability register"
+    ],
+    [
+      "dd",
+      "A processor register able to hold a complete capability, including its address and protected metadata."
+    ],
+    [
+      "dt",
+      "CheriABI"
+    ],
+    [
+      "dd",
+      "A pure-capability POSIX process environment developed for CheriBSD in which C and C++ pointers are represented as capabilities."
+    ],
+    [
+      "dt",
+      "CheriBSD"
+    ],
+    [
+      "dd",
+      "A FreeBSD-derived research operating system used to develop and evaluate CHERI memory protection and compartmentalisation."
+    ],
+    [
+      "dt",
+      "Compartment"
+    ],
+    [
+      "dd",
+      "A software component isolated from other components and given only selected access to code, data, devices, or services."
+    ],
+    [
+      "dt",
+      "Compartmentalisation"
+    ],
+    [
+      "dd",
+      "The division of software into isolated components so that a fault or compromise in one component has limited authority over the rest of the system."
+    ],
+    [
+      "dt",
+      "Compressed capability"
+    ],
+    [
+      "dd",
+      "A capability representation that encodes bounds relative to the current address, allowing capability metadata and a conventional-sized address to fit within a practical in-memory format."
+    ],
+    [
+      "dt",
+      "Cursor"
+    ],
+    [
+      "dd",
+      "The current address within a capability. It can move within the authority described by the capability but does not itself define the capability's bounds."
+    ],
+    [
+      "dt",
+      "Default Data Capability (DDC)"
+    ],
+    [
+      "dd",
+      "A capability used by some CHERI execution models as the default authority for data accesses that are not made through an explicit capability register."
+    ],
+    [
+      "dt",
+      "Dereference"
+    ],
+    [
+      "dd",
+      "Using a pointer or capability to read or write the memory it refers to. CHERI checks validity, bounds, permissions, and other relevant rules when a capability is dereferenced."
+    ],
+    [
+      "dt",
+      "Hybrid ABI"
+    ],
+    [
+      "dd",
+      "An application binary interface in which conventional pointers remain the default while software can explicitly use capabilities for selected data and interfaces."
+    ],
+    [
+      "dt",
+      "Instruction-set architecture (ISA)"
+    ],
+    [
+      "dd",
+      "The programmer-visible contract between software and a processor, including instructions, registers, data types, exceptions, and memory behaviour."
+    ],
+    [
+      "dt",
+      "Least privilege"
+    ],
+    [
+      "dd",
+      "The principle that code should receive only the authority required for its function. Capability bounds and permissions provide mechanisms for expressing narrower authority."
+    ],
+    [
+      "dt",
+      "Memory safety"
+    ],
+    [
+      "dd",
+      "Protection against invalid uses of memory, including accesses outside an object's bounds and, where temporal protection is present, accesses after an object's lifetime has ended."
+    ],
+    [
+      "dt",
+      "Monotonicity"
+    ],
+    [
+      "dd",
+      "The rule that deriving a capability can preserve or reduce its authority but cannot increase it beyond the authority of the source capability."
+    ],
+    [
+      "dt",
+      "Morello"
+    ],
+    [
+      "dd",
+      "Arm's experimental high-performance processor, SoC, and development board implementing an adaptation of CHERI for the Arm architecture."
+    ],
+    [
+      "dt",
+      "Non-forgeability"
+    ],
+    [
+      "dd",
+      "The property that software cannot create a valid capability with new authority merely by constructing or modifying its bit pattern."
+    ],
+    [
+      "dt",
+      "Object capability"
+    ],
+    [
+      "dd",
+      "An unforgeable reference that both identifies an object and authorises a defined set of operations on it."
+    ],
+    [
+      "dt",
+      "Permission"
+    ],
+    [
+      "dd",
+      "A right recorded in a capability, such as permission to load data, store data, or execute code. An operation is rejected when the relevant permission is absent."
+    ],
+    [
+      "dt",
+      "Pointer"
+    ],
+    [
+      "dd",
+      "A pointer is a value that contains the address of a location in memory. In conventional systems, this is just an integer."
+    ],
+    [
+      "dt",
+      "Pointer provenance"
+    ],
+    [
+      "dd",
+      "Information about where a pointer came from and which storage or object it is authorised to reference. CHERI makes valid provenance a hardware-enforced part of pointer use."
+    ],
+    [
+      "dt",
+      "Program Counter Capability (PCC)"
+    ],
+    [
+      "dd",
+      "The capability that authorises instruction fetch and constrains the region of code that can execute in the current context."
+    ],
+    [
+      "dt",
+      "Pure-capability ABI"
+    ],
+    [
+      "dd",
+      "An application binary interface in which language-level pointers, code pointers, return addresses, and related runtime structures are represented with capabilities."
+    ],
+    [
+      "dt",
+      "RISC-V"
+    ],
+    [
+      "dd",
+      "An open instruction-set architecture. CHERI extensions for RISC-V have been used in research processors, embedded systems, and ongoing standardisation work."
+    ],
+    [
+      "dt",
+      "Revocation"
+    ],
+    [
+      "dd",
+      "The process of making previously issued capabilities unusable when their authority should no longer apply, such as after memory has been freed or a compartment has been torn down."
+    ],
+    [
+      "dt",
+      "Sail"
+    ],
+    [
+      "dd",
+      "A language for describing instruction-set architectures formally. CHERI uses Sail models as executable specifications and as inputs to testing and proof tools."
+    ],
+    [
+      "dt",
+      "Sealed capability"
+    ],
+    [
+      "dd",
+      "A capability placed in a protected sealed state. It cannot be used for ordinary memory access until an authorised mechanism unseals or invokes it."
+    ],
+    [
+      "dt",
+      "Sentry capability"
+    ],
+    [
+      "dd",
+      "A sealed executable capability used to provide a controlled entry point into code without exposing unrestricted access to the target code capability."
+    ],
+    [
+      "dt",
+      "Spatial memory safety"
+    ],
+    [
+      "dd",
+      "Protection against accessing memory outside the intended bounds of an object, allocation, stack frame, or other region."
+    ],
+    [
+      "dt",
+      "Tag"
+    ],
+    [
+      "dd",
+      "A protected validity bit associated with a capability. Ordinary data operations cannot manufacture a set tag, and operations that corrupt a capability representation clear it."
+    ],
+    [
+      "dt",
+      "Tagged memory"
+    ],
+    [
+      "dd",
+      "Memory that stores capability validity tags separately from ordinary software-visible data so that the integrity of in-memory capabilities can be enforced."
+    ],
+    [
+      "dt",
+      "Temporal memory safety"
+    ],
+    [
+      "dd",
+      "Protection against using memory outside its valid lifetime, including use-after-free and use-after-reallocation errors."
+    ],
+    [
+      "dt",
+      "Trusted computing base (TCB)"
+    ],
+    [
+      "dd",
+      "The hardware and software that must behave correctly for a system's security properties to hold. Compartmentalisation can reduce the amount of code trusted by any one component."
+    ],
+    [
+      "dt",
+      "Use-after-free"
+    ],
+    [
+      "dd",
+      "A temporal memory-safety error in which software accesses an allocation after it has been released and may have been reused for another purpose."
+    ]
+  ],
+  "code_blocks": []
+}

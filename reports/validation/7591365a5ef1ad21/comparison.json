@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/discover/why-cheri/cheri-and-rust/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/shared/source-assets/a9f89a0614af-rust-and-cheri.webp": "https://cheri-alliance.github.io/assets/images/content/shared/rust-and-cheri.webp"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

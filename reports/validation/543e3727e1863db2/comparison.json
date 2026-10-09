@@ -1,0 +1,20 @@
+{
+  "url": "https://cheri-alliance.github.io/discover/understand/how-does-cheri-work/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/shared/source-assets/6b266981fee5-pointer-vs-capability.webp": "https://cheri-alliance.github.io/assets/images/content/shared/pointer-vs-capability.webp",
+    "/assets/shared/source-assets/ec94c211adbb-compartmentalisation.webp": "https://cheri-alliance.github.io/assets/images/content/shared/compartmentalisation.webp"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

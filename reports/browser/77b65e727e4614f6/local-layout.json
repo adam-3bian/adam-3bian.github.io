@@ -1,0 +1,48 @@
+{
+  "main_text": "News & Events\nSpeakers\nHesham Almatary\nHesham Almatary\n\nCapabilities Limited\n\nOrganisation\nCapabilities Limited\nLinkedIn\nBiography\n\nHesham’s research interests involve security, operating systems, systems software, and computer architecture. They got their PhD from the University of Cambridge on CHERI compartmentalisation for embedded systems.\n\nBeyond research, they have been working with and contributing to open-source projects, including: Linux, seL4, RTEMS, and FreeRTOS.\n\nCHERI Talks\n\nseL4 Working Group presentation | CHERI Blossoms 2025\n\n02/04/2025\n\nCambridge, UK\n\nView Slides\n\nView Video\n\nBack to all speakers",
+  "images": [
+    {
+      "url": "http://127.0.0.1:41683/assets/people/hesham-almatary/78ef1fc5643c-portrait.png",
+      "rect": {
+        "x": 161,
+        "y": 399.953125,
+        "width": 279.59375,
+        "height": 209.6875
+      },
+      "natural_width": 1024,
+      "natural_height": 768
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/people/hesham-almatary/",
+  "checks": {
+    "visible_main_text": true,
+    "header_text": true,
+    "footer_text": true,
+    "copyright_text": true,
+    "image_count": true,
+    "image_integrity": true,
+    "desktop_image_geometry": true
+  },
+  "image_checks": [
+    {
+      "source_url": "https://cheri-alliance.github.io/assets/images/content/people/hesham-almatary/portrait.png",
+      "mapped_url_correct": true,
+      "loaded": true,
+      "geometry_delta_px": {
+        "x": 0,
+        "y": 0.0,
+        "width": 0.0,
+        "height": 0.0
+      }
+    }
+  ]
+}

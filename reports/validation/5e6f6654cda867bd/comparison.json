@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/people/jennifer-jackson/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/people/jennifer-jackson/476b61d75e71-portrait.jpg": "https://cheri-alliance.github.io/assets/images/content/people/jennifer-jackson/portrait.jpg"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

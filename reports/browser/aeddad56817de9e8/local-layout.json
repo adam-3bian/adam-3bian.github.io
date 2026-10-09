@@ -1,0 +1,48 @@
+{
+  "main_text": "News & Events\nSpeakers\nAlastair Beresford\nAlastair Beresford\n\nUniversity of Cambridge\n\nOrganisation\nUniversity of Cambridge\nLinkedIn\nBiography\n\nDr Alastair Beresford is a Professor of Computer Security at the University of Cambridge and a Fellow of Jesus College.\n\nHis research focuses on system security and privacy, particularly in the context of mobile and networked systems.\n\nDr Beresford is also an active contributor to the development of open-source software and has played a key role in designing security solutions for real-world systems. In addition to his research, he teaches undergraduate and postgraduate courses in computer security and supervises PhD students within the Department of Computer Science and Technology.\n\nCHERI Talks\n\nCHERI Blossoms 2025\n\n02/04/2025\n\nCambridge, UK\n\nView Slides\n\nView Video\n\nBack to all speakers",
+  "images": [
+    {
+      "url": "http://127.0.0.1:41683/assets/people/alastair-beresford/db950629bcbc-portrait.png",
+      "rect": {
+        "x": 161,
+        "y": 399.953125,
+        "width": 279.59375,
+        "height": 209.6875
+      },
+      "natural_width": 1024,
+      "natural_height": 768
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/people/alastair-beresford/",
+  "checks": {
+    "visible_main_text": true,
+    "header_text": true,
+    "footer_text": true,
+    "copyright_text": true,
+    "image_count": true,
+    "image_integrity": true,
+    "desktop_image_geometry": true
+  },
+  "image_checks": [
+    {
+      "source_url": "https://cheri-alliance.github.io/assets/images/content/people/alastair-beresford/portrait.png",
+      "mapped_url_correct": true,
+      "loaded": true,
+      "geometry_delta_px": {
+        "x": 0,
+        "y": 0.0,
+        "width": 0.0,
+        "height": 0.0
+      }
+    }
+  ]
+}

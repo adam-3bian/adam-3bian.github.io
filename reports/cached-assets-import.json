@@ -1,0 +1,170 @@
+[
+  {
+    "requested_url": "https://cheri-alliance.org/becoming-a-member-of-the-cheri-alliance",
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2025/09/Becoming-a-member-of-the-CHERI-Alliance.pdf",
+    "local_path": "assets/resources/becoming-a-member-of-the-cheri-alliance/Becoming-a-member-of-the-CHERI-Alliance.pdf",
+    "sha256": "afcf4d8f48b647574b2a4b65251b7cd3491d063f9850891a0000014a85318ffb"
+  },
+  {
+    "requested_url": "https://cheri-alliance.org/cheri-alliance-logo-pack/",
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2025/08/CHERI-Alliance-Logo-Pack.zip",
+    "local_path": "assets/pages/alliance--about-and-governance--trademark/5ff7f679f608-cheri-alliance-logo-pack.zip",
+    "sha256": "595330c7dc888889e368b816c7e66fd9b70ee10f80f560293ad942afc46d1b83"
+  },
+  {
+    "requested_url": "https://cheri-alliance.org/cheri-alliance-presentation/",
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2025/04/CHERI-Alliance-presentation.pdf",
+    "local_path": "assets/shared/source-assets/c275143b35fc-cheri-alliance-presentation.pdf",
+    "sha256": "8f40880e4c1237642edb72d5fe436632d33a9df0d41351391f9ce455a2f5d14a"
+  },
+  {
+    "requested_url": "https://cheri-alliance.org/cheri-basics/",
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2025/03/CHERI-basics.pdf",
+    "local_path": "assets/shared/source-assets/bb02da00a010-cheri-basics.pdf",
+    "sha256": "b9b521e2ef9d8f913eaa2036d34cb022657d10aa2f723b8997aafdd0f611d682"
+  },
+  {
+    "requested_url": "https://cheri-alliance.org/cheri-branding-guidelines/",
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2025/08/CHERI-Branding-guidelines.pdf",
+    "local_path": "assets/pages/discover--resources--documentation-and-guides/3d933a481b79-cheri-branding-guidelines.pdf",
+    "sha256": "2fa7ba3cb5c6b1ee8b731d2f14bb211464dd505e79282cd403dfaddf04b829f7"
+  },
+  {
+    "requested_url": "https://cheri-alliance.org/cheri-enabled-program-description/",
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2026/03/cheri-enabled-program.pdf",
+    "local_path": "assets/shared/source-assets/611b980d082a-certification-program-v1.pdf",
+    "sha256": "4189f4307942266315a2ce7d633e14e1d80de53332ade65444617c203c8d50a3"
+  },
+  {
+    "requested_url": "https://cheri-alliance.org/cheri-tag-bit-transport-overlay-standard/",
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2026/09/CHERI-Tag-Bit-Transport-Overlay-Standard-v0.9.pdf",
+    "local_path": "assets/pages/discover--resources--documentation-and-guides/9bbe9f6de06c-cheri-tag-bit-transport-overlay-standard-v0.9.pdf",
+    "sha256": "3ef2af8b026907d22bcb7d1715cb02b571f28826b933246af07492bb5a4cfaed"
+  },
+  {
+    "requested_url": "https://cheri-alliance.org/legal-code-of-conduct/",
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2025/09/CHERI-Alliance-Code-of-Conduct.pdf",
+    "local_path": "assets/pages/alliance--legal-and-policies--code-of-conduct/245117ed08d4-code-of-conduct.pdf",
+    "sha256": "8f11b80a42641ec38465100357cf5aa23503485f7348ade6d86c32c6c4e95cc3"
+  },
+  {
+    "requested_url": "https://cheri-alliance.org/legal-competition/",
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2025/09/CHERI-Alliance-Competition-law-statement.pdf",
+    "local_path": "assets/pages/alliance--legal-and-policies--competition-law-statement/0053779e62ce-competition.pdf",
+    "sha256": "d82d36c3e2e87fbd5327d3b582fc9f31979d39da731db06d10a7841233e07e26"
+  },
+  {
+    "requested_url": "https://cheri-alliance.org/legal-gb-terms-of-reference/",
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2026/08/CHERI-Alliance-GB-terms-of-reference.pdf",
+    "local_path": "assets/resources/legal-gb-terms-of-reference/CHERI-Alliance-GB-terms-of-reference.pdf",
+    "sha256": "8d5f91f784e63c522eaea0060560680b45b0cbbe9d9951b90c34a507d6e99c43"
+  },
+  {
+    "requested_url": "https://cheri-alliance.org/legal-governance-independence-signed/",
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2026/08/Governance-independence-signed.pdf",
+    "local_path": "assets/resources/legal-governance-independence-signed/Governance-independence-signed.pdf",
+    "sha256": "b8d05c5f8ddfa373ee58416400d46ab94d45bf299641505be11918753b6dbdee"
+  },
+  {
+    "requested_url": "https://cheri-alliance.org/legal-ip-policy/",
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2025/09/CHERI-Alliance-IP-Policy.pdf",
+    "local_path": "assets/shared/source-assets/1ef747d8f739-ip-policy.pdf",
+    "sha256": "6007fe4771c097199d0d0534ed09efaba74f2f02060876e38bd570027972707e"
+  },
+  {
+    "requested_url": "https://cheri-alliance.org/legal-trademark-policy/",
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2025/10/CHERI-Alliance-Trademark-policy.pdf",
+    "local_path": "assets/shared/source-assets/d904a00cfb15-trademark-policy.pdf",
+    "sha256": "d2bce9c1e700174a3724d6e70e99ef690eccf600b98f3f9726e832a72c197626"
+  },
+  {
+    "requested_url": "https://cheri-alliance.org/what-is-memory-safety/",
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2026/09/What-Is-Memory-Safety-v0.9.pdf",
+    "local_path": "assets/pages/discover--resources--documentation-and-guides/a70331655b08-what-is-memory-safety-v0.9.pdf",
+    "sha256": "ae4fe9a50a172597b030dbcf6dd22319f5476e8b9dfcbb1ff698434f91b0a6af"
+  },
+  {
+    "requested_url": "https://cheri-alliance.org/wp-content/uploads/2025/03/CHERI-basics.pdf",
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2025/03/CHERI-basics.pdf",
+    "local_path": "assets/shared/source-assets/bb02da00a010-cheri-basics.pdf",
+    "sha256": "b9b521e2ef9d8f913eaa2036d34cb022657d10aa2f723b8997aafdd0f611d682"
+  },
+  {
+    "requested_url": "https://cheri-alliance.org/wp-content/uploads/2025/04/CHERI-Alliance-presentation.pdf",
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2025/04/CHERI-Alliance-presentation.pdf",
+    "local_path": "assets/shared/source-assets/c275143b35fc-cheri-alliance-presentation.pdf",
+    "sha256": "8f40880e4c1237642edb72d5fe436632d33a9df0d41351391f9ce455a2f5d14a"
+  },
+  {
+    "requested_url": "https://cheri-alliance.org/wp-content/uploads/2025/08/CHERI-Alliance-Logo-Pack.zip",
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2025/08/CHERI-Alliance-Logo-Pack.zip",
+    "local_path": "assets/pages/alliance--about-and-governance--trademark/5ff7f679f608-cheri-alliance-logo-pack.zip",
+    "sha256": "595330c7dc888889e368b816c7e66fd9b70ee10f80f560293ad942afc46d1b83"
+  },
+  {
+    "requested_url": "https://cheri-alliance.org/wp-content/uploads/2025/08/CHERI-Branding-guidelines.pdf",
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2025/08/CHERI-Branding-guidelines.pdf",
+    "local_path": "assets/pages/discover--resources--documentation-and-guides/3d933a481b79-cheri-branding-guidelines.pdf",
+    "sha256": "2fa7ba3cb5c6b1ee8b731d2f14bb211464dd505e79282cd403dfaddf04b829f7"
+  },
+  {
+    "requested_url": "https://cheri-alliance.org/wp-content/uploads/2025/09/Becoming-a-member-of-the-CHERI-Alliance.pdf",
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2025/09/Becoming-a-member-of-the-CHERI-Alliance.pdf",
+    "local_path": "assets/resources/becoming-a-member-of-the-cheri-alliance/Becoming-a-member-of-the-CHERI-Alliance.pdf",
+    "sha256": "afcf4d8f48b647574b2a4b65251b7cd3491d063f9850891a0000014a85318ffb"
+  },
+  {
+    "requested_url": "https://cheri-alliance.org/wp-content/uploads/2025/09/CHERI-Alliance-Code-of-Conduct.pdf",
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2025/09/CHERI-Alliance-Code-of-Conduct.pdf",
+    "local_path": "assets/pages/alliance--legal-and-policies--code-of-conduct/245117ed08d4-code-of-conduct.pdf",
+    "sha256": "8f11b80a42641ec38465100357cf5aa23503485f7348ade6d86c32c6c4e95cc3"
+  },
+  {
+    "requested_url": "https://cheri-alliance.org/wp-content/uploads/2025/09/CHERI-Alliance-Competition-law-statement.pdf",
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2025/09/CHERI-Alliance-Competition-law-statement.pdf",
+    "local_path": "assets/pages/alliance--legal-and-policies--competition-law-statement/0053779e62ce-competition.pdf",
+    "sha256": "d82d36c3e2e87fbd5327d3b582fc9f31979d39da731db06d10a7841233e07e26"
+  },
+  {
+    "requested_url": "https://cheri-alliance.org/wp-content/uploads/2025/09/CHERI-Alliance-IP-Policy.pdf",
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2025/09/CHERI-Alliance-IP-Policy.pdf",
+    "local_path": "assets/shared/source-assets/1ef747d8f739-ip-policy.pdf",
+    "sha256": "6007fe4771c097199d0d0534ed09efaba74f2f02060876e38bd570027972707e"
+  },
+  {
+    "requested_url": "https://cheri-alliance.org/wp-content/uploads/2025/10/CHERI-Alliance-Trademark-policy.pdf",
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2025/10/CHERI-Alliance-Trademark-policy.pdf",
+    "local_path": "assets/shared/source-assets/d904a00cfb15-trademark-policy.pdf",
+    "sha256": "d2bce9c1e700174a3724d6e70e99ef690eccf600b98f3f9726e832a72c197626"
+  },
+  {
+    "requested_url": "https://cheri-alliance.org/wp-content/uploads/2026/03/cheri-enabled-program.pdf",
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2026/03/cheri-enabled-program.pdf",
+    "local_path": "assets/shared/source-assets/611b980d082a-certification-program-v1.pdf",
+    "sha256": "4189f4307942266315a2ce7d633e14e1d80de53332ade65444617c203c8d50a3"
+  },
+  {
+    "requested_url": "https://cheri-alliance.org/wp-content/uploads/2026/08/CHERI-Alliance-GB-terms-of-reference.pdf",
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2026/08/CHERI-Alliance-GB-terms-of-reference.pdf",
+    "local_path": "assets/resources/legal-gb-terms-of-reference/CHERI-Alliance-GB-terms-of-reference.pdf",
+    "sha256": "8d5f91f784e63c522eaea0060560680b45b0cbbe9d9951b90c34a507d6e99c43"
+  },
+  {
+    "requested_url": "https://cheri-alliance.org/wp-content/uploads/2026/08/Governance-independence-signed.pdf",
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2026/08/Governance-independence-signed.pdf",
+    "local_path": "assets/resources/legal-governance-independence-signed/Governance-independence-signed.pdf",
+    "sha256": "b8d05c5f8ddfa373ee58416400d46ab94d45bf299641505be11918753b6dbdee"
+  },
+  {
+    "requested_url": "https://cheri-alliance.org/wp-content/uploads/2026/09/CHERI-Tag-Bit-Transport-Overlay-Standard-v0.9.pdf",
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2026/09/CHERI-Tag-Bit-Transport-Overlay-Standard-v0.9.pdf",
+    "local_path": "assets/pages/discover--resources--documentation-and-guides/9bbe9f6de06c-cheri-tag-bit-transport-overlay-standard-v0.9.pdf",
+    "sha256": "3ef2af8b026907d22bcb7d1715cb02b571f28826b933246af07492bb5a4cfaed"
+  },
+  {
+    "requested_url": "https://cheri-alliance.org/wp-content/uploads/2026/09/What-Is-Memory-Safety-v0.9.pdf",
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2026/09/What-Is-Memory-Safety-v0.9.pdf",
+    "local_path": "assets/pages/discover--resources--documentation-and-guides/a70331655b08-what-is-memory-safety-v0.9.pdf",
+    "sha256": "ae4fe9a50a172597b030dbcf6dd22319f5476e8b9dfcbb1ff698434f91b0a6af"
+  }
+]

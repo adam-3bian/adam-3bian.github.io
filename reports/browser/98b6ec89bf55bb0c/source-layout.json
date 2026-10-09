@@ -1,0 +1,61 @@
+{
+  "main_text": "News & Events\nSpeakers\nDavid Chisnall\nDavid Chisnall\n\nSCI Semiconductor\n\nBoard role\nDirector of Systems Architecture\nOrganisation\nSCI Semiconductor\nLinkedIn\nBiography\n\nDavid Chisnall has been working on CHERI since 2012, when he joined the University of Cambridge to lead the languages and compiler work on the CHERI project. He joined Microsoft in 2018, where he adapted several in-house ISAs to CHERI, worked on high-performance server-class CHERI implementations, and also created and led the CHERIoT project, which Microsoft open sourced in 2023. He is a co-founder of SCI Semiconductor, which is building CHERIoT microcontrollers. Along with Yucong Tao (Microsoft) and Ben Laurie (Google), he is a co-maintainer of the CHERIoT platform.\n\nCHERI Talks\n\nCHERIoT-Kudu | CHERI Blossoms 2026\n\n26/03/2026\n\nCambridge, UK\n\nView Slides\n\nView Video\n\nCHERIoT Audit | CHERITech’25\n\n14/11/2025\n\nManchester, UK\n\nView Slides\n\nView Video\n\nCHERIoT 2025 | CHERI Blossoms 2025\n\n02/04/2025\n\nCambridge, UK\n\nView Slides\n\nView Video\n\nBack to all speakers\nBack to the Governing Board",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 1688.0625
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/people/david-chisnall/portrait.jpg",
+      "alt": "David Chisnall",
+      "rect": {
+        "x": 161,
+        "y": 399.953125,
+        "width": 279.59375,
+        "height": 209.1875
+      },
+      "natural_width": 750,
+      "natural_height": 500,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 398.953125,
+        "width": 281.59375,
+        "height": 211.1875
+      },
+      "parent_classes": [
+        "entity-media",
+        "entity-media--portrait"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 398.953125,
+        "width": 742.40625,
+        "height": 1133.3125
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/people/david-chisnall/",
+  "final_url": "https://cheri-alliance.github.io/people/david-chisnall/",
+  "retrieved_at": "2026-10-09T21:07:16.679990+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

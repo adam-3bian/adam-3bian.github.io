@@ -1,0 +1,126 @@
+{
+  "text": "News & Events Speakers David Chisnall David Chisnall SCI Semiconductor Board role Director of Systems Architecture Organisation SCI Semiconductor LinkedIn Biography David Chisnall has been working on CHERI since 2012, when he joined the University of Cambridge to lead the languages and compiler work on the CHERI project. He joined Microsoft in 2018, where he adapted several in-house ISAs to CHERI, worked on high-performance server-class CHERI implementations, and also created and led the CHERIoT project, which Microsoft open sourced in 2023. He is a co-founder of SCI Semiconductor, which is building CHERIoT microcontrollers. Along with Yucong Tao (Microsoft) and Ben Laurie (Google), he is a co-maintainer of the CHERIoT platform. CHERI Talks CHERIoT-Kudu | CHERI Blossoms 2026 26/03/2026 Cambridge, UK View Slides View Video CHERIoT Audit | CHERITech’25 14/11/2025 Manchester, UK View Slides View Video CHERIoT 2025 | CHERI Blossoms 2025 02/04/2025 Cambridge, UK View Slides View Video Back to all speakers Back to the Governing Board",
+  "headings": [
+    [
+      "h1",
+      "David Chisnall",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Biography",
+      "biography"
+    ],
+    [
+      "h2",
+      "CHERI Talks",
+      "cheri-talks"
+    ]
+  ],
+  "paragraphs": [
+    "News & Events",
+    "Speakers",
+    "David Chisnall",
+    "SCI Semiconductor",
+    "LinkedIn",
+    "David Chisnall has been working on CHERI since 2012, when he joined the University of Cambridge to lead the languages and compiler work on the CHERI project. He joined Microsoft in 2018, where he adapted several in-house ISAs to CHERI, worked on high-performance server-class CHERI implementations, and also created and led the CHERIoT project, which Microsoft open sourced in 2023. He is a co-founder of SCI Semiconductor, which is building CHERIoT microcontrollers. Along with Yucong Tao (Microsoft) and Ben Laurie (Google), he is a co-maintainer of the CHERIoT platform.",
+    "CHERIoT-Kudu | CHERI Blossoms 2026",
+    "26/03/2026",
+    "Cambridge, UK",
+    "View Slides",
+    "View Video",
+    "CHERIoT Audit | CHERITech’25",
+    "14/11/2025",
+    "Manchester, UK",
+    "View Slides",
+    "View Video",
+    "CHERIoT 2025 | CHERI Blossoms 2025",
+    "02/04/2025",
+    "Cambridge, UK",
+    "View Slides",
+    "View Video",
+    "Back to all speakers Back to the Governing Board"
+  ],
+  "lists": [
+    [
+      "ol",
+      "News & Events Speakers David Chisnall"
+    ],
+    [
+      "li",
+      "News & Events"
+    ],
+    [
+      "li",
+      "Speakers"
+    ],
+    [
+      "li",
+      "David Chisnall"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://www.linkedin.com/in/david-chisnall-60b986267/",
+      "LinkedIn"
+    ],
+    [
+      "https://cheri-alliance.org/wp-content/uploads/2026/04/D2-1.7.1-David-Chisnall-CHERIoT-Kudu-A-high-performance-CHERIoT-microcontroller-CHERI-Blossoms-2026.pdf",
+      "View Slides"
+    ],
+    [
+      "https://youtu.be/BTAQkdx_fsM",
+      "View Video"
+    ],
+    [
+      "https://cheri-alliance.org/wp-content/uploads/2025/11/3.2-David-Chisnall-CHERIoT-Audit-1-CHERITech25.pdf",
+      "View Slides"
+    ],
+    [
+      "https://youtu.be/RQ5ZJ4azZK8",
+      "View Video"
+    ],
+    [
+      "https://cheri-alliance.org/wp-content/uploads/2025/04/2.4-David-Chisnall-CHERIoT.pdf",
+      "View Slides"
+    ],
+    [
+      "https://youtu.be/ScN-yLFSQe4",
+      "View Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/news-and-events/people-and-opportunities/speakers/",
+      "Back to all speakers"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/leadership/governing-board/",
+      "Back to the Governing Board"
+    ]
+  ],
+  "images": [
+    [
+      "https://cheri-alliance.github.io/assets/images/content/people/david-chisnall/portrait.jpg",
+      "David Chisnall"
+    ]
+  ],
+  "definitions": [
+    [
+      "dt",
+      "Board role"
+    ],
+    [
+      "dd",
+      "Director of Systems Architecture"
+    ],
+    [
+      "dt",
+      "Organisation"
+    ],
+    [
+      "dd",
+      "SCI Semiconductor"
+    ]
+  ],
+  "code_blocks": []
+}

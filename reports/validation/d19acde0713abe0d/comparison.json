@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/members/misra/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/organisations/misra/26a73a099515-logo.png": "https://cheri-alliance.github.io/assets/images/content/members/misra/logo.png"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

@@ -1,0 +1,48 @@
+{
+  "main_text": "News & Events\nNews & Analysis\nCHERI Alliance to Distribute Arm Morello Boards – The Journey Beyond DSbD Continues!\nCHERI Alliance to Distribute Arm Morello Boards – The Journey Beyond DSbD Continues!\n\nMike Eftimakis – CHERI Alliance The CHERI Alliance is now distributing Arm Morello boards – the CHERI development journey continues beyond DSbD. The CHERI Alliance is thrilled to announce that, following the end of the Digital Security by Design…\n\n6 October 2025\nCHERI Alliance news\n\nMike Eftimakis – CHERI Alliance\n\nThe CHERI Alliance is now distributing Arm Morello boards – the CHERI development journey continues beyond DSbD.\n\nThe CHERI Alliance is thrilled to announce that, following the end of the Digital Security by Design (DSbD) program, we have taken over distribution of the Arm Morello CHERI development boards. These boards, developed as part of the DSbD program and funded by the UK government, feature a chip developed by Arm with a powerful CHERI processor. We are excited to keep making a vital research and development platform available to the community — to discover and experiment with CHERI, but also to develop or port existing software and tools.\n\nIf you or your team are interested in obtaining a Morello board (research, teaching, prototyping, or evaluation), please contact the CHERI Alliance and tell us about your use case.\n\nAvailable boards are limited, so we will prioritise requests and loan the boards to the teams who will put them to the best use.\n\nWe’ll be coordinating fulfillment and next steps soon. Please share this post with colleagues who should see it.\n\nExcited to enable the community to use CHERI — let’s build the future of safer hardware and software together!\n\nBack to Latest News",
+  "images": [
+    {
+      "url": "http://127.0.0.1:41683/assets/news/cheri-alliance-to-distribute-arm-morello-boards-the-journey-beyond-dsbd-continues/249865cad3c6-hero.png",
+      "rect": {
+        "x": 177,
+        "y": 662.46875,
+        "width": 958,
+        "height": 538.875
+      },
+      "natural_width": 1024,
+      "natural_height": 576
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/news/cheri-alliance-to-distribute-arm-morello-boards-the-journey-beyond-dsbd-continues/",
+  "checks": {
+    "visible_main_text": true,
+    "header_text": true,
+    "footer_text": true,
+    "copyright_text": true,
+    "image_count": true,
+    "image_integrity": true,
+    "desktop_image_geometry": true
+  },
+  "image_checks": [
+    {
+      "source_url": "https://cheri-alliance.github.io/assets/images/content/news/cheri-alliance-to-distribute-arm-morello-boards-the-journey-beyond-dsbd-continues/hero.png",
+      "mapped_url_correct": true,
+      "loaded": true,
+      "geometry_delta_px": {
+        "x": 0,
+        "y": 0.0,
+        "width": 0,
+        "height": 0.0
+      }
+    }
+  ]
+}

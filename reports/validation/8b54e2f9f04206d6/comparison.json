@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/members/axiomise-ltd/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/organisations/axiomise-ltd/fda655ce8b21-logo.png": "https://cheri-alliance.github.io/assets/images/content/members/axiomise-ltd/logo.png"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

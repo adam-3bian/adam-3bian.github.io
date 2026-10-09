@@ -1,0 +1,261 @@
+{
+  "text": "Software runs our world. It deserves stronger security foundations. Enabled by CHERI. CHERI in an open security technology, that enhances processors with hardware-enforced mechanisms to help software manage memory more safely, contain vulnerabilities, and reduce the impact of attacks. Protect your organisation For governments, insurers, banks, telcos, Cloud Service Providers (CSPs) and other technology users. Learn about vulnerabilities in everyday technology Understand the costs of the status quo Read the strategic case for CHERI Build more secure products For Original Equipment Manufacturers (OEMs), system companies and product vendors. See why your products need an upgrade Why do you need CHERI Bringing CHERI to your product Build the technology For semiconductor, IP, software, tools, architects and developers. Why do you need CHERI Bringing CHERI to your product Getting started with the technical work Join the ecosystem The CHERI Alliance helps organisations collaborate, share experience, influence best practices, and accelerate adoption. About the Alliance See CHERI Alliance members Meet the community From technical workshops to international conferences, Alliance events bring together the people shaping the future of secure computing. Read the news View Upcoming Events Become part of the journey Memory safety is one of the most important cybersecurity challenges of our time. Solving it will require technology, collaboration, and a strong ecosystem. Join the organisations helping make secure computing the norm. Join the Alliance Where next Discover CHERI Understand the software-security problem, how memory-safety failures become exploitable, and what CHERI changes. Continue Related content How does CHERI work? Helping software stay within its boundaries. Read this page Developer section Ressources and knowledge to develop with CHERI. Read this page About the CHERI Alliance Learn how the Alliance connects organisations working across the CHERI ecosystem. Read this page News & Events Meet the CHERI ecosystem, learn about the latest news. Read this page",
+  "headings": [
+    [
+      "h1",
+      "Software runs our world. It deserves stronger security foundations.",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Protect your organisation",
+      "protect-your-organisation"
+    ],
+    [
+      "h2",
+      "Build more secure products",
+      "build-more-secure-products"
+    ],
+    [
+      "h2",
+      "Build the technology",
+      "build-the-technology"
+    ],
+    [
+      "h2",
+      "Join the ecosystem",
+      "join-the-ecosystem"
+    ],
+    [
+      "h2",
+      "Meet the community",
+      "meet-the-community"
+    ],
+    [
+      "h2",
+      "Become part of the journey",
+      "become-part-of-the-journey"
+    ],
+    [
+      "h2",
+      "Where next",
+      null
+    ],
+    [
+      "h3",
+      "Discover CHERI",
+      null
+    ],
+    [
+      "h2",
+      "Related content",
+      null
+    ],
+    [
+      "h3",
+      "How does CHERI work?",
+      null
+    ],
+    [
+      "h3",
+      "Developer section",
+      null
+    ],
+    [
+      "h3",
+      "About the CHERI Alliance",
+      null
+    ],
+    [
+      "h3",
+      "News & Events",
+      null
+    ]
+  ],
+  "paragraphs": [
+    "Enabled by CHERI.",
+    "CHERI in an open security technology, that enhances processors with hardware-enforced mechanisms to help software manage memory more safely, contain vulnerabilities, and reduce the impact of attacks.",
+    "For governments, insurers, banks, telcos, Cloud Service Providers (CSPs) and other technology users.",
+    "Learn about vulnerabilities in everyday technology",
+    "Understand the costs of the status quo",
+    "Read the strategic case for CHERI",
+    "For Original Equipment Manufacturers (OEMs), system companies and product vendors.",
+    "See why your products need an upgrade",
+    "Why do you need CHERI",
+    "Bringing CHERI to your product",
+    "For semiconductor, IP, software, tools, architects and developers.",
+    "Why do you need CHERI",
+    "Bringing CHERI to your product",
+    "Getting started with the technical work",
+    "The CHERI Alliance helps organisations collaborate, share experience, influence best practices, and accelerate adoption.",
+    "About the Alliance",
+    "See CHERI Alliance members",
+    "From technical workshops to international conferences, Alliance events bring together the people shaping the future of secure computing.",
+    "Read the news",
+    "View Upcoming Events",
+    "Memory safety is one of the most important cybersecurity challenges of our time. Solving it will require technology, collaboration, and a strong ecosystem.",
+    "Join the organisations helping make secure computing the norm.",
+    "Join the Alliance",
+    "Understand the software-security problem, how memory-safety failures become exploitable, and what CHERI changes.",
+    "Helping software stay within its boundaries.",
+    "Ressources and knowledge to develop with CHERI.",
+    "Learn how the Alliance connects organisations working across the CHERI ecosystem.",
+    "Meet the CHERI ecosystem, learn about the latest news."
+  ],
+  "lists": [
+    [
+      "ul",
+      "Learn about vulnerabilities in everyday technology Understand the costs of the status quo Read the strategic case for CHERI"
+    ],
+    [
+      "li",
+      "Learn about vulnerabilities in everyday technology"
+    ],
+    [
+      "li",
+      "Understand the costs of the status quo"
+    ],
+    [
+      "li",
+      "Read the strategic case for CHERI"
+    ],
+    [
+      "ul",
+      "See why your products need an upgrade Why do you need CHERI Bringing CHERI to your product"
+    ],
+    [
+      "li",
+      "See why your products need an upgrade"
+    ],
+    [
+      "li",
+      "Why do you need CHERI"
+    ],
+    [
+      "li",
+      "Bringing CHERI to your product"
+    ],
+    [
+      "ul",
+      "Why do you need CHERI Bringing CHERI to your product Getting started with the technical work"
+    ],
+    [
+      "li",
+      "Why do you need CHERI"
+    ],
+    [
+      "li",
+      "Bringing CHERI to your product"
+    ],
+    [
+      "li",
+      "Getting started with the technical work"
+    ],
+    [
+      "ul",
+      "About the Alliance See CHERI Alliance members"
+    ],
+    [
+      "li",
+      "About the Alliance"
+    ],
+    [
+      "li",
+      "See CHERI Alliance members"
+    ],
+    [
+      "ul",
+      "Read the news View Upcoming Events"
+    ],
+    [
+      "li",
+      "Read the news"
+    ],
+    [
+      "li",
+      "View Upcoming Events"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://cheri-alliance.github.io/discover/why-cheri/vulnerabilities-in-everyday-technology/",
+      "Learn about vulnerabilities in everyday technology"
+    ],
+    [
+      "https://cheri-alliance.github.io/adopt/business-case/cost-of-memory-unsafety/",
+      "Understand the costs of the status quo"
+    ],
+    [
+      "https://cheri-alliance.github.io/adopt/business-case/the-business-case/",
+      "Read the strategic case for CHERI"
+    ],
+    [
+      "https://cheri-alliance.github.io/discover/why-cheri/why-existing-defences-are-not-enough/",
+      "See why your products need an upgrade"
+    ],
+    [
+      "https://cheri-alliance.github.io/discover/why-cheri/why-cheri/",
+      "Why do you need CHERI"
+    ],
+    [
+      "https://cheri-alliance.github.io/discover/understand/adapt-products/",
+      "Bringing CHERI to your product"
+    ],
+    [
+      "https://cheri-alliance.github.io/discover/why-cheri/why-cheri/",
+      "Why do you need CHERI"
+    ],
+    [
+      "https://cheri-alliance.github.io/discover/understand/adapt-products/",
+      "Bringing CHERI to your product"
+    ],
+    [
+      "https://cheri-alliance.github.io/",
+      "Getting started with the technical work"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/about-and-governance/about-the-cheri-alliance/",
+      "About the Alliance"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/leadership/members/",
+      "See CHERI Alliance members"
+    ],
+    [
+      "https://cheri-alliance.github.io/news-and-events/news-and-analysis/latest-news/",
+      "Read the news"
+    ],
+    [
+      "https://cheri-alliance.github.io/news-and-events/events-and-archive/upcoming-events/",
+      "View Upcoming Events"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/membership/why-join/",
+      "Join the Alliance"
+    ],
+    [
+      "https://cheri-alliance.github.io/discover/why-cheri/vulnerabilities-in-everyday-technology/",
+      "Discover CHERI Understand the software-security problem, how memory-safety failures become exploitable, and what CHERI changes. Continue"
+    ],
+    [
+      "https://cheri-alliance.github.io/discover/understand/how-does-cheri-work/",
+      "How does CHERI work? Helping software stay within its boundaries. Read this page"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/build/",
+      "Developer section Ressources and knowledge to develop with CHERI. Read this page"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/about-and-governance/about-the-cheri-alliance/",
+      "About the CHERI Alliance Learn how the Alliance connects organisations working across the CHERI ecosystem. Read this page"
+    ],
+    [
+      "https://cheri-alliance.github.io/news-and-events/events-and-archive/upcoming-events/",
+      "News & Events Meet the CHERI ecosystem, learn about the latest news. Read this page"
+    ]
+  ],
+  "images": [],
+  "definitions": [],
+  "code_blocks": []
+}

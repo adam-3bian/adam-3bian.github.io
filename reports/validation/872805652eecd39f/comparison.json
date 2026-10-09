@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/people/mike-eftimakis/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/people/mike-eftimakis/7235ea4127c4-portrait.jpg": "https://cheri-alliance.github.io/assets/images/content/people/mike-eftimakis/portrait.jpg"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

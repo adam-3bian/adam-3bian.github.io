@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/people/andrew-lindsay/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/people/andrew-lindsay/6f29bac54e8a-portrait.png": "https://cheri-alliance.github.io/assets/images/content/people/andrew-lindsay/portrait.png"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

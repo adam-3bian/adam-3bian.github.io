@@ -1,0 +1,103 @@
+{
+  "text": "News & Events Speakers Alfredo Mazzinghi Alfredo Mazzinghi Capabilities Limited Organisation Capabilities Limited LinkedIn Biography Alfredo is a Research Assistant at University of Cambridge and Research Engineer at Capabilities Limited. Their main research interest is on memory safety in operating systems, but also in tracing an program analysis. They have developed the initial CHERI pure-capability port of the CheriBSD operating system, which is currently one of the most mature CHERI-enabled code-bases. Other notable interests are CHERI extensions to QEMU and program tracing and analysis using QEMU. They have also contributed to ports of various other software to CHERI. CHERI Talks MMU-based revocation for temporal safety on CHERI application cores | CHERI Blossoms 2026 27/03/2026 Cambridge, UK View Slides View Video QEMU Working Group presentation | CHERI Blossoms 2025 02/04/2025 Cambridge, UK View Slides View Slides Back to all speakers",
+  "headings": [
+    [
+      "h1",
+      "Alfredo Mazzinghi",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Biography",
+      "biography"
+    ],
+    [
+      "h2",
+      "CHERI Talks",
+      "cheri-talks"
+    ]
+  ],
+  "paragraphs": [
+    "News & Events",
+    "Speakers",
+    "Alfredo Mazzinghi",
+    "Capabilities Limited",
+    "LinkedIn",
+    "Alfredo is a Research Assistant at University of Cambridge and Research Engineer at Capabilities Limited.",
+    "Their main research interest is on memory safety in operating systems, but also in tracing an program analysis. They have developed the initial CHERI pure-capability port of the CheriBSD operating system, which is currently one of the most mature CHERI-enabled code-bases.",
+    "Other notable interests are CHERI extensions to QEMU and program tracing and analysis using QEMU. They have also contributed to ports of various other software to CHERI.",
+    "MMU-based revocation for temporal safety on CHERI application cores | CHERI Blossoms 2026",
+    "27/03/2026",
+    "Cambridge, UK",
+    "View Slides",
+    "View Video",
+    "QEMU Working Group presentation | CHERI Blossoms 2025",
+    "02/04/2025",
+    "Cambridge, UK",
+    "View Slides",
+    "View Slides",
+    "Back to all speakers"
+  ],
+  "lists": [
+    [
+      "ol",
+      "News & Events Speakers Alfredo Mazzinghi"
+    ],
+    [
+      "li",
+      "News & Events"
+    ],
+    [
+      "li",
+      "Speakers"
+    ],
+    [
+      "li",
+      "Alfredo Mazzinghi"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://www.linkedin.com/in/alfredo-mazzinghi/",
+      "LinkedIn"
+    ],
+    [
+      "https://cheri-alliance.org/wp-content/uploads/2026/04/D2-1.4-Tariq-Kurd-MMU-based-revocation-CHERI-Blossoms-2026.pdf",
+      "View Slides"
+    ],
+    [
+      "https://youtu.be/TLPYTtTkDP8",
+      "View Video"
+    ],
+    [
+      "https://cheri-alliance.org/wp-content/uploads/2025/04/5.1-Alfredo-Mazzinghi-QEMU-WG.pdf",
+      "View Slides"
+    ],
+    [
+      "https://youtu.be/oGuXn2PT4gk",
+      "View Slides"
+    ],
+    [
+      "https://cheri-alliance.github.io/news-and-events/people-and-opportunities/speakers/",
+      "Back to all speakers"
+    ]
+  ],
+  "images": [
+    [
+      "https://cheri-alliance.github.io/assets/images/content/people/alfredo-mazzinghi/portrait.png",
+      "Alfredo Mazzinghi"
+    ]
+  ],
+  "definitions": [
+    [
+      "dt",
+      "Organisation"
+    ],
+    [
+      "dd",
+      "Capabilities Limited"
+    ]
+  ],
+  "code_blocks": []
+}

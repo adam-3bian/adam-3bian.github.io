@@ -1,0 +1,96 @@
+{
+  "text": "Discover Resources Specifications Specifications Who Readers looking for CHERI reference material and further reading. What A directory of architecture and related specifications relevant to CHERI. Why Helps readers understand where Specifications fits, what evidence matters, and where to look next. Content What is included under Specifications How entries are described, dated, and sourced Links to relevant primary or supporting material Where next Documentation & Guides A curated set of practical CHERI documentation, guides, and reference material. Continue",
+  "headings": [
+    [
+      "h1",
+      "Specifications",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Who",
+      "who"
+    ],
+    [
+      "h2",
+      "What",
+      "what"
+    ],
+    [
+      "h2",
+      "Why",
+      "why"
+    ],
+    [
+      "h2",
+      "Content",
+      "content"
+    ],
+    [
+      "h2",
+      "Where next",
+      null
+    ],
+    [
+      "h3",
+      "Documentation & Guides",
+      null
+    ]
+  ],
+  "paragraphs": [
+    "Discover",
+    "Resources",
+    "Specifications",
+    "Readers looking for CHERI reference material and further reading.",
+    "A directory of architecture and related specifications relevant to CHERI.",
+    "Helps readers understand where Specifications fits, what evidence matters, and where to look next.",
+    "What is included under Specifications",
+    "How entries are described, dated, and sourced",
+    "Links to relevant primary or supporting material",
+    "A curated set of practical CHERI documentation, guides, and reference material."
+  ],
+  "lists": [
+    [
+      "ol",
+      "Discover Resources Specifications"
+    ],
+    [
+      "li",
+      "Discover"
+    ],
+    [
+      "li",
+      "Resources"
+    ],
+    [
+      "li",
+      "Specifications"
+    ],
+    [
+      "ul",
+      "What is included under Specifications How entries are described, dated, and sourced Links to relevant primary or supporting material"
+    ],
+    [
+      "li",
+      "What is included under Specifications"
+    ],
+    [
+      "li",
+      "How entries are described, dated, and sourced"
+    ],
+    [
+      "li",
+      "Links to relevant primary or supporting material"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://cheri-alliance.github.io/discover/resources/documentation-and-guides/",
+      "Documentation & Guides A curated set of practical CHERI documentation, guides, and reference material. Continue"
+    ]
+  ],
+  "images": [],
+  "definitions": [],
+  "code_blocks": []
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/2e1bb34a5f1e-hero.png": "https://cheri-alliance.github.io/assets/images/content/news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/hero.png"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

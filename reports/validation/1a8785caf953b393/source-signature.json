@@ -1,0 +1,102 @@
+{
+  "text": "Alliance About & Governance 🤖 CHERI Virtual Machines WG 🤖 CHERI Virtual Machines WG Examines how language runtimes, managed environments, and virtual machines can use and preserve CHERI capabilities. The CHERI Virtual Machines Working Group adapts VMs and language runtimes for CHERI platforms, exploring optimisations for enhanced security and functionality Group type Technical Areas of collaboration Language runtimes Managed memory and native interfaces Capability-aware VM design Enquire about this group Back to all working groups Where next Rust + CHERI Explore the combination of Rust language safety and CHERI hardware protection. Continue",
+  "headings": [
+    [
+      "h1",
+      "🤖 CHERI Virtual Machines WG",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Where next",
+      null
+    ],
+    [
+      "h3",
+      "Rust + CHERI",
+      null
+    ]
+  ],
+  "paragraphs": [
+    "Alliance",
+    "About & Governance",
+    "🤖 CHERI Virtual Machines WG",
+    "Examines how language runtimes, managed environments, and virtual machines can use and preserve CHERI capabilities.",
+    "The CHERI Virtual Machines Working Group adapts VMs and language runtimes for CHERI platforms, exploring optimisations for enhanced security and functionality",
+    "Language runtimes",
+    "Managed memory and native interfaces",
+    "Capability-aware VM design",
+    "Enquire about this group",
+    "Back to all working groups",
+    "Explore the combination of Rust language safety and CHERI hardware protection."
+  ],
+  "lists": [
+    [
+      "ol",
+      "Alliance About & Governance 🤖 CHERI Virtual Machines WG"
+    ],
+    [
+      "li",
+      "Alliance"
+    ],
+    [
+      "li",
+      "About & Governance"
+    ],
+    [
+      "li",
+      "🤖 CHERI Virtual Machines WG"
+    ],
+    [
+      "ul",
+      "Language runtimes Managed memory and native interfaces Capability-aware VM design"
+    ],
+    [
+      "li",
+      "Language runtimes"
+    ],
+    [
+      "li",
+      "Managed memory and native interfaces"
+    ],
+    [
+      "li",
+      "Capability-aware VM design"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://cheri-alliance.github.io/alliance/membership/contact/",
+      "Enquire about this group"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/about-and-governance/working-groups/",
+      "Back to all working groups"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/leadership/working-groups/rust-plus-cheri/",
+      "Rust + CHERI Explore the combination of Rust language safety and CHERI hardware protection. Continue"
+    ]
+  ],
+  "images": [],
+  "definitions": [
+    [
+      "dt",
+      "Group type"
+    ],
+    [
+      "dd",
+      "Technical"
+    ],
+    [
+      "dt",
+      "Areas of collaboration"
+    ],
+    [
+      "dd",
+      "Language runtimes Managed memory and native interfaces Capability-aware VM design"
+    ]
+  ],
+  "code_blocks": []
+}

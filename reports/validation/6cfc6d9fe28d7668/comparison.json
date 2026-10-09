@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/adopt/assurance-and-adoption/cheri-enabled-products/cheriot-ibex/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/shared/source-assets/c53c4c1378ba-cheri-enabled-2026.webp": "https://cheri-alliance.github.io/assets/images/content/shared/cheri-enabled-2026.webp"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

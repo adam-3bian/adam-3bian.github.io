@@ -1,0 +1,48 @@
+{
+  "main_text": "News & Events\nSpeakers\nAshish Darbari\nAshish Darbari\n\nAxiomise\n\nOrganisation\nAxiomise\nLinkedIn\nBiography\n\nAs founder & CEO of Axiomise, Dr. Ashish Darbari has led the company to successfully deploy the unique combination of training, consulting, services, and verification IP to various customers. Ashish has expertise in all aspects of formal methods, including theorem proving, property and equivalence checking.\n\nBefore starting Axiomise, Ashish worked at Intel, Arm, Imagination Technologies and OneSpin Solutions. Ashish likes to lead from the front, having coded the formalISA app and designed & delivered the formal verification training programme at Axiomise to over 350 engineers. He has turned Axiomise into a global leader in formal verification consulting & services turning it into a multi-million dollar company with zero VC funding.\n\nCHERI Talks\n\nIndustrial-Strength Formal Verification of RISC-V Processors  | CHERI Blossoms 2025\n\n02/04/2025\n\nCambridge, UK\n\nView Slides\n\nView Video\n\nBack to all speakers",
+  "images": [
+    {
+      "url": "http://127.0.0.1:41683/assets/people/ashish-darbari/6289f615e481-portrait.png",
+      "rect": {
+        "x": 161,
+        "y": 399.953125,
+        "width": 279.59375,
+        "height": 209.6875
+      },
+      "natural_width": 1024,
+      "natural_height": 768
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/people/ashish-darbari/",
+  "checks": {
+    "visible_main_text": true,
+    "header_text": true,
+    "footer_text": true,
+    "copyright_text": true,
+    "image_count": true,
+    "image_integrity": true,
+    "desktop_image_geometry": true
+  },
+  "image_checks": [
+    {
+      "source_url": "https://cheri-alliance.github.io/assets/images/content/people/ashish-darbari/portrait.png",
+      "mapped_url_correct": true,
+      "loaded": true,
+      "geometry_delta_px": {
+        "x": 0,
+        "y": 0.0,
+        "width": 0.0,
+        "height": 0.0
+      }
+    }
+  ]
+}

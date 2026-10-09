@@ -1,0 +1,20 @@
+{
+  "url": "https://cheri-alliance.github.io/people/adam-finney/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/people/adam-finney/4600c140bf-portrait.jpg": "https://cheri-alliance.github.io/assets/images/content/people/adam-finney/portrait.jpg",
+    "/assets/events/cheri-blossoms-2026/869fa94283-D1-2.7-Adam-Finney-CHERI-Adoption-Study-CHERI-Blossoms-2026.pdf": "https://cheri-alliance.org/wp-content/uploads/2026/04/D1-2.7-Adam-Finney-CHERI-Adoption-Study-CHERI-Blossoms-2026.pdf"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

@@ -1,0 +1,91 @@
+{
+  "text": "Alliance Members Trusted Computing Center of Excellence (TCCoE) Trusted Computing Center of Excellence (TCCoE) The Trusted Computing Center of Excellence™ (TCCoE) not-for-profit organization’s purpose is to lower barriers to adoption and facilitate the principled development and deployment of software and systems for which there is strong evidence of… Status Founding member Membership Community Member Website Visit member website Description The Trusted Computing Center of Excellence™ (TCCoE) not-for-profit organization’s purpose is to lower barriers to adoption and facilitate the principled development and deployment of software and systems for which there is strong evidence of trustworthiness, including use of formal methods. Needs of the U.S. and allied defense, intelligence and security communities are our priorities. A major thrust is seL4®. While our colleagues at the separate seL4 Foundation focus on the code and formal proofs of the open source seL4® microkernel and closely related artifacts, the TCCoE focuses on curated software distributions (kernel, libraries, drivers, configurations, etc.) as bases of stable supported platforms on which to build trustworthy systems. CHERI Activities TCCoE member companies began promoting CHERI as part of a trustworthy whole-system stack at the 2019 RISC-V Summit and more recently have done significant R&D with ARM Morello. CHERI is part of TCCoE’s plan to coordinate member development of software/hardware platforms with formal methods based evidence of trustworthiness and offer such platforms to system developers. Back to all members",
+  "headings": [
+    [
+      "h1",
+      "Trusted Computing Center of Excellence (TCCoE)",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Description",
+      "description"
+    ],
+    [
+      "h2",
+      "CHERI Activities",
+      "cheri-activities"
+    ]
+  ],
+  "paragraphs": [
+    "Alliance",
+    "Members",
+    "Trusted Computing Center of Excellence (TCCoE)",
+    "The Trusted Computing Center of Excellence™ (TCCoE) not-for-profit organization’s purpose is to lower barriers to adoption and facilitate the principled development and deployment of software and systems for which there is strong evidence of…",
+    "The Trusted Computing Center of Excellence™ (TCCoE) not-for-profit organization’s purpose is to lower barriers to adoption and facilitate the principled development and deployment of software and systems for which there is strong evidence of trustworthiness, including use of formal methods. Needs of the U.S. and allied defense, intelligence and security communities are our priorities. A major thrust is seL4®. While our colleagues at the separate seL4 Foundation focus on the code and formal proofs of the open source seL4® microkernel and closely related artifacts, the TCCoE focuses on curated software distributions (kernel, libraries, drivers, configurations, etc.) as bases of stable supported platforms on which to build trustworthy systems.",
+    "TCCoE member companies began promoting CHERI as part of a trustworthy whole-system stack at the 2019 RISC-V Summit and more recently have done significant R&D with ARM Morello. CHERI is part of TCCoE’s plan to coordinate member development of software/hardware platforms with formal methods based evidence of trustworthiness and offer such platforms to system developers.",
+    "Back to all members"
+  ],
+  "lists": [
+    [
+      "ol",
+      "Alliance Members Trusted Computing Center of Excellence (TCCoE)"
+    ],
+    [
+      "li",
+      "Alliance"
+    ],
+    [
+      "li",
+      "Members"
+    ],
+    [
+      "li",
+      "Trusted Computing Center of Excellence (TCCoE)"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://trustedcomputingcoe.org/",
+      "Visit member website"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/leadership/members/",
+      "Back to all members"
+    ]
+  ],
+  "images": [
+    [
+      "https://cheri-alliance.github.io/assets/images/content/members/tccoe/logo.png",
+      "TCCoE logo"
+    ]
+  ],
+  "definitions": [
+    [
+      "dt",
+      "Status"
+    ],
+    [
+      "dd",
+      "Founding member"
+    ],
+    [
+      "dt",
+      "Membership"
+    ],
+    [
+      "dd",
+      "Community Member"
+    ],
+    [
+      "dt",
+      "Website"
+    ],
+    [
+      "dd",
+      "Visit member website"
+    ]
+  ],
+  "code_blocks": []
+}

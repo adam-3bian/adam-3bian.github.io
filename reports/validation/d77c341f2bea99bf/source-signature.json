@@ -1,0 +1,96 @@
+{
+  "text": "Disassemble and debug RISC-V and CHERI-RISC-V programs This exercise steps you through disassembling and debugging RISC-V and CHERI-RISC-V programs. It draws attention to differences in program structure and code generation, particularly relating to control flow, between the two compilation targets. First, use llvm-objdump on the host (which you can find at ~/cheri/output/cheri-alliance-sdk/bin/llvm-objdump, unless you have altered cheribuild's default paths) to disassemble and explore the two binaries from the previous exercise: Using llvm-objdump -dS, disassemble the print-pointer-riscv and print-pointer-cheri binaries. What instructions are generated to load printf()'s format string argument in print-pointer-riscv? Where does the target address for the string pointer originate? What instructions are generated to load printf()'s format string argument in print-pointer-cheri? Where does the target capability for the string pointer originate? (Hint, you may find it helpful to add the -s flag to your llvm-objdump command to see all sections.) Next use GDB to explore binary execution for RISC-V: Run print-pointer-riscv under GDB (same path as llvm-objdump), setting a breakpoint at the start of printf(). Note: You will need to run QEMU in halted mode and make it wait for GDB connections, then, from another shell, run GDB on the ELF, connect to QEMU, then debug. An example sequence of commands will look like the following: # run_qemu print-pointer-riscv -s -S # gdb print-pointer-riscv Reading symbols from print-pointer-riscv... (gdb) target remote :1234 Remote debugging using :1234 0x0000000000001000 in ?? () (gdb) break printf_ Breakpoint 1 at 0x200090: file src/printf.c, line 1151. (gdb) c Breakpoint 1, printf_ (format=0x201f5d \"size of pointer: %zu\\n\") at src/printf.c:1151 Run the program and at the breakpoint, print out the value of the string pointer argument. Print out the program counter (info reg pc). What memory mapping is it derived from? And for CHERI-RISC-V: Run print-pointer-cheri under GDB, setting a breakpoint at the start of printf(). Print out the value of the string pointer argument. Print out the program counter (info reg pcc). Where do its bounds appear to originate from? Print out the register file using info registers. What mappings do the capabilities in the register file point to? Notice that some capabilities have S in their permissions which means they are sentries. Sentry capabilities are sealed (cannot be modified or used to load or store), but can be used as a jump target (where they are unsealed and installed in pcc). What implications does this have for attackers?",
+  "headings": [
+    [
+      "h1",
+      "Disassemble and debug RISC-V and CHERI-RISC-V programs",
+      "disassemble-and-debug-risc-v-and-cheri-risc-v-programs"
+    ]
+  ],
+  "paragraphs": [
+    "This exercise steps you through disassembling and debugging RISC-V and CHERI-RISC-V programs. It draws attention to differences in program structure and code generation, particularly relating to control flow, between the two compilation targets.",
+    "First, use llvm-objdump on the host (which you can find at ~/cheri/output/cheri-alliance-sdk/bin/llvm-objdump, unless you have altered cheribuild's default paths) to disassemble and explore the two binaries from the previous exercise:",
+    "Using llvm-objdump -dS, disassemble the print-pointer-riscv and print-pointer-cheri binaries.",
+    "What instructions are generated to load printf()'s format string argument in print-pointer-riscv? Where does the target address for the string pointer originate?",
+    "What instructions are generated to load printf()'s format string argument in print-pointer-cheri? Where does the target capability for the string pointer originate? (Hint, you may find it helpful to add the -s flag to your llvm-objdump command to see all sections.)",
+    "Next use GDB to explore binary execution for RISC-V:",
+    "Run print-pointer-riscv under GDB (same path as llvm-objdump), setting a breakpoint at the start of printf(). Note: You will need to run QEMU in halted mode and make it wait for GDB connections, then, from another shell, run GDB on the ELF, connect to QEMU, then debug. An example sequence of commands will look like the following:",
+    "Run the program and at the breakpoint, print out the value of the string pointer argument.",
+    "Print out the program counter (info reg pc). What memory mapping is it derived from?",
+    "And for CHERI-RISC-V:",
+    "Run print-pointer-cheri under GDB, setting a breakpoint at the start of printf().",
+    "Print out the value of the string pointer argument.",
+    "Print out the program counter (info reg pcc). Where do its bounds appear to originate from?",
+    "Print out the register file using info registers. What mappings do the capabilities in the register file point to? Notice that some capabilities have S in their permissions which means they are sentries. Sentry capabilities are sealed (cannot be modified or used to load or store), but can be used as a jump target (where they are unsealed and installed in pcc). What implications does this have for attackers?"
+  ],
+  "lists": [
+    [
+      "ol",
+      "Using llvm-objdump -dS, disassemble the print-pointer-riscv and print-pointer-cheri binaries. What instructions are generated to load printf()'s format string argument in print-pointer-riscv? Where does the target address for the string pointer originate? What instructions are generated to load printf()'s format string argument in print-pointer-cheri? Where does the target capability for the string pointer originate? (Hint, you may find it helpful to add the -s flag to your llvm-objdump command to see all sections.)"
+    ],
+    [
+      "li",
+      "Using llvm-objdump -dS, disassemble the print-pointer-riscv and print-pointer-cheri binaries."
+    ],
+    [
+      "li",
+      "What instructions are generated to load printf()'s format string argument in print-pointer-riscv? Where does the target address for the string pointer originate?"
+    ],
+    [
+      "li",
+      "What instructions are generated to load printf()'s format string argument in print-pointer-cheri? Where does the target capability for the string pointer originate? (Hint, you may find it helpful to add the -s flag to your llvm-objdump command to see all sections.)"
+    ],
+    [
+      "ol",
+      "Run print-pointer-riscv under GDB (same path as llvm-objdump), setting a breakpoint at the start of printf(). Note: You will need to run QEMU in halted mode and make it wait for GDB connections, then, from another shell, run GDB on the ELF, connect to QEMU, then debug. An example sequence of commands will look like the following:"
+    ],
+    [
+      "li",
+      "Run print-pointer-riscv under GDB (same path as llvm-objdump), setting a breakpoint at the start of printf(). Note: You will need to run QEMU in halted mode and make it wait for GDB connections, then, from another shell, run GDB on the ELF, connect to QEMU, then debug. An example sequence of commands will look like the following:"
+    ],
+    [
+      "ol",
+      "Run the program and at the breakpoint, print out the value of the string pointer argument. Print out the program counter (info reg pc). What memory mapping is it derived from?"
+    ],
+    [
+      "li",
+      "Run the program and at the breakpoint, print out the value of the string pointer argument."
+    ],
+    [
+      "li",
+      "Print out the program counter (info reg pc). What memory mapping is it derived from?"
+    ],
+    [
+      "ol",
+      "Run print-pointer-cheri under GDB, setting a breakpoint at the start of printf(). Print out the value of the string pointer argument. Print out the program counter (info reg pcc). Where do its bounds appear to originate from? Print out the register file using info registers. What mappings do the capabilities in the register file point to? Notice that some capabilities have S in their permissions which means they are sentries. Sentry capabilities are sealed (cannot be modified or used to load or store), but can be used as a jump target (where they are unsealed and installed in pcc). What implications does this have for attackers?"
+    ],
+    [
+      "li",
+      "Run print-pointer-cheri under GDB, setting a breakpoint at the start of printf()."
+    ],
+    [
+      "li",
+      "Print out the value of the string pointer argument."
+    ],
+    [
+      "li",
+      "Print out the program counter (info reg pcc). Where do its bounds appear to originate from?"
+    ],
+    [
+      "li",
+      "Print out the register file using info registers. What mappings do the capabilities in the register file point to? Notice that some capabilities have S in their permissions which means they are sentries. Sentry capabilities are sealed (cannot be modified or used to load or store), but can be used as a jump target (where they are unsealed and installed in pcc). What implications does this have for attackers?"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://cheri-alliance.github.io/CHERI-seL4-Exercises/exercises/debug-and-disassemble/index.html#disassemble-and-debug-risc-v-and-cheri-risc-v-programs",
+      "Disassemble and debug RISC-V and CHERI-RISC-V programs"
+    ]
+  ],
+  "images": [],
+  "definitions": [],
+  "code_blocks": [
+    "# run_qemu print-pointer-riscv -s -S\n\n# gdb print-pointer-riscv\nReading symbols from print-pointer-riscv...\n(gdb) target remote :1234\nRemote debugging using :1234\n0x0000000000001000 in ?? ()\n(gdb) break printf_\nBreakpoint 1 at 0x200090: file src/printf.c, line 1151.\n(gdb) c\nBreakpoint 1, printf_ (format=0x201f5d \"size of pointer: %zu\\n\") at src/printf.c:1151"
+  ]
+}

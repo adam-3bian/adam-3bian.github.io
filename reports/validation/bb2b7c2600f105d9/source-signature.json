@@ -1,0 +1,89 @@
+{
+  "text": "News & Events Speakers Mark Batty Mark Batty Kent University Organisation Kent University Professional profile Biography Mark Batty has played a key role in the effort to building foundational specifications for mainstream systems, focusing on concurrency in the pervasive C and C++ languages. He is a Professor at the University of Kent and lead of the Programming Languages and Systems group there. He has been funded by the EPSRC, the Royal Academy of Engineering (RAEng), GCHQ, VeTSS, and was a Principal Investigator in the first and second round of UKRI DSbD projects. CHERI Talks Rust for Morello: Always-On Memory Safety, Even in Unsafe Code | CHERI Blossoms 2025 02/04/2025 Cambridge, UK View Slides View Video Back to all speakers",
+  "headings": [
+    [
+      "h1",
+      "Mark Batty",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Biography",
+      "biography"
+    ],
+    [
+      "h2",
+      "CHERI Talks",
+      "cheri-talks"
+    ]
+  ],
+  "paragraphs": [
+    "News & Events",
+    "Speakers",
+    "Mark Batty",
+    "Kent University",
+    "Professional profile",
+    "Mark Batty has played a key role in the effort to building foundational specifications for mainstream systems, focusing on concurrency in the pervasive C and C++ languages.",
+    "He is a Professor at the University of Kent and lead of the Programming Languages and Systems group there. He has been funded by the EPSRC, the Royal Academy of Engineering (RAEng), GCHQ, VeTSS, and was a Principal Investigator in the first and second round of UKRI DSbD projects.",
+    "Rust for Morello: Always-On Memory Safety, Even in Unsafe Code | CHERI Blossoms 2025",
+    "02/04/2025",
+    "Cambridge, UK",
+    "View Slides",
+    "View Video",
+    "Back to all speakers"
+  ],
+  "lists": [
+    [
+      "ol",
+      "News & Events Speakers Mark Batty"
+    ],
+    [
+      "li",
+      "News & Events"
+    ],
+    [
+      "li",
+      "Speakers"
+    ],
+    [
+      "li",
+      "Mark Batty"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://www.cs.kent.ac.uk/people/staff/mjb211/rust/index.htm",
+      "Professional profile"
+    ],
+    [
+      "https://cheri-alliance.org/wp-content/uploads/2025/04/4.2-Mark-Batty-Rust-for-Morello.pdf",
+      "View Slides"
+    ],
+    [
+      "https://youtu.be/nI8AUN4cuAw",
+      "View Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/news-and-events/people-and-opportunities/speakers/",
+      "Back to all speakers"
+    ]
+  ],
+  "images": [
+    [
+      "https://cheri-alliance.github.io/assets/images/content/people/mark-batty/portrait.png",
+      "Mark Batty"
+    ]
+  ],
+  "definitions": [
+    [
+      "dt",
+      "Organisation"
+    ],
+    [
+      "dd",
+      "Kent University"
+    ]
+  ],
+  "code_blocks": []
+}

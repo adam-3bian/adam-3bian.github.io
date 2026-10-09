@@ -1,0 +1,61 @@
+{
+  "main_text": "News & Events\nEvents & Archive\nWebinar - CHERI & CRA Compliance\nWebinar - CHERI & CRA Compliance\n\nA live webinar on how CHERI can help organisations respond to the security requirements of the EU Cyber Resilience Act.\n\nStatus\nPast\nFormat\nWebinar\nDate\n9 September 2026, 14:00 BST\nLocation\nOnline via Zoom\n\nWhy the industry needs CHERI to be able to meet the EU Cyber Resilience Act\n\nEvent Details\n\nDate & Time: Wednesday 9th September 2026, 14:00 to 14:30pm BST \n\nLocation: Online – Zoom\n\nDescription\n\nFrom December 2027 the EU will enforce the Cyber Resilience Act which forces companies to take security extremely seriously for every device sold in the EU with a “digital element”. This talk is about the details of the regulations why this is expected to dramatically increase the demand for CHERI. The talk will be followed by time for questions and open discussion.\n\nHosted by Tariq Kurd – Codasip\n\nRegister\nBack to past events",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 1211.265625
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/shared/eu-flag.jpg",
+      "alt": "European Union flag",
+      "rect": {
+        "x": 161,
+        "y": 432.1875,
+        "width": 279.59375,
+        "height": 186.3125
+      },
+      "natural_width": 1280,
+      "natural_height": 853,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 431.1875,
+        "width": 281.59375,
+        "height": 158.390625
+      },
+      "parent_classes": [
+        "entity-media",
+        "entity-media--event"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 431.1875,
+        "width": 742.40625,
+        "height": 624.28125
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/events/webinar-cheri-cra-compliance/",
+  "final_url": "https://cheri-alliance.github.io/events/webinar-cheri-cra-compliance/",
+  "retrieved_at": "2026-10-09T21:53:32.639038+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

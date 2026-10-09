@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/news/ai-has-compressed-the-attack-timeline/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/news/ai-has-compressed-the-attack-timeline/a029b4887ff4-hero.jpg": "https://cheri-alliance.github.io/assets/images/content/news/ai-has-compressed-the-attack-timeline/hero.jpg"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

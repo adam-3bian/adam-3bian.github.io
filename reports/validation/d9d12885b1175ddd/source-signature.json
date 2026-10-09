@@ -1,0 +1,156 @@
+{
+  "text": "Adopt Assurance & Adoption Assurance & Certification Assurance & Certification CHERI can strengthen assurance by turning intended memory and component boundaries into processor-enforced properties that can be described and tested. Assurance explains why a defined security or safety claim can be trusted. Certification records a judgement under a particular scheme. CHERI can contribute to both because it provides concrete properties about memory access and software authority, but neither follows from the presence of a CHERI-capable processor alone. Why CHERI can strengthen an assurance case In a conventional system, a software boundary may depend on coding rules, review, and the assumption that every pointer is used correctly. CHERI can place part of that boundary in the processor. Capabilities carry bounds and permissions, and compartments can receive a limited set of memory and services. This supports claims with a defined subject and outcome, such as: In this configuration, the packet parser can access only its assigned buffers and the services exposed through its compartment interface. That statement is narrower than “the product is secure,” but it is also far more useful. The protected component, permitted authority, and expected enforcement can all be connected to implementation evidence. Evidence across the system CHERI-related assurance can draw on several layers: Architecture: the instruction-set specification, security model, capability rules, and behaviour when a check fails. Hardware: design verification, compliance testing, protection of capability tags, privileged paths, and debug behaviour. Toolchain: compiler behaviour, supported language models, conformance results, known limitations, and reproducible builds. Software: the code covered by capabilities, compartment configuration, interfaces, test results, and handling of unsafe operations. Integration: boot, devices, direct memory access, operating-system services, updates, monitoring, and fault response. Product lifecycle: traceable requirements, vulnerability handling, regression testing, maintenance, and recorded residual risk. Evidence at one layer does not establish the others. A processor core can implement CHERI correctly while a wider system still includes direct-memory-access devices, debug paths, unsafe configuration, or software outside capability protection. Where this can be a good fit CHERI is relevant to assurance when a product depends on native code and its case includes claims about memory separation, least authority, or containment after compromise. It can be particularly valuable where components of different trust or assurance levels share an address space. The fit is not limited to safety-certified products. Buyers and operators of general-purpose systems can also benefit from evidence that explains which software is protected, what it can reach, and what happens when a capability check fails. Certification remains scoped Sector certification depends on the product, claims, standards, evidence, independence, and operating context. CHERI can contribute architectural and test evidence to that process; it does not replace the process or determine its outcome. The Alliance’s CHERI Enabled programme has a specific purpose. It identifies named products whose submitted evidence supports the correct application of CHERI security principles. It is not a certificate for the overall security or safety of every system containing that product. Assurance over time A claim remains meaningful when it is tied to the exact processor, architecture profile, toolchain, execution mode, software version, compartment design, and configuration. Changes to any of these may alter the evidence or the authority available to a component. This specificity is one of CHERI’s strengths. It replaces a broad promise of “hardware security” with properties that can be bounded, inspected, tested, and maintained as part of the wider product assurance case. Where next Procurement Procurement can distinguish a defined CHERI implementation from a broad technology label by using its scope and evidence. Continue Related content Case Studies CHERI has been explored across application processors, operating systems, embedded platforms, and commercial products. Read this page The Business Case CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet. Read this page",
+  "headings": [
+    [
+      "h1",
+      "Assurance & Certification",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Why CHERI can strengthen an assurance case",
+      "why-cheri-can-strengthen-an-assurance-case"
+    ],
+    [
+      "h2",
+      "Evidence across the system",
+      "evidence-across-the-system"
+    ],
+    [
+      "h2",
+      "Where this can be a good fit",
+      "where-this-can-be-a-good-fit"
+    ],
+    [
+      "h2",
+      "Certification remains scoped",
+      "certification-remains-scoped"
+    ],
+    [
+      "h2",
+      "Assurance over time",
+      "assurance-over-time"
+    ],
+    [
+      "h2",
+      "Where next",
+      null
+    ],
+    [
+      "h3",
+      "Procurement",
+      null
+    ],
+    [
+      "h2",
+      "Related content",
+      null
+    ],
+    [
+      "h3",
+      "Case Studies",
+      null
+    ],
+    [
+      "h3",
+      "The Business Case",
+      null
+    ]
+  ],
+  "paragraphs": [
+    "Adopt",
+    "Assurance & Adoption",
+    "Assurance & Certification",
+    "CHERI can strengthen assurance by turning intended memory and component boundaries into processor-enforced properties that can be described and tested.",
+    "Assurance explains why a defined security or safety claim can be trusted. Certification records a judgement under a particular scheme. CHERI can contribute to both because it provides concrete properties about memory access and software authority, but neither follows from the presence of a CHERI-capable processor alone.",
+    "In a conventional system, a software boundary may depend on coding rules, review, and the assumption that every pointer is used correctly. CHERI can place part of that boundary in the processor. Capabilities carry bounds and permissions, and compartments can receive a limited set of memory and services.",
+    "This supports claims with a defined subject and outcome, such as:",
+    "In this configuration, the packet parser can access only its assigned buffers and the services exposed through its compartment interface.",
+    "That statement is narrower than “the product is secure,” but it is also far more useful. The protected component, permitted authority, and expected enforcement can all be connected to implementation evidence.",
+    "CHERI-related assurance can draw on several layers:",
+    "Architecture: the instruction-set specification, security model, capability rules, and behaviour when a check fails.",
+    "Hardware: design verification, compliance testing, protection of capability tags, privileged paths, and debug behaviour.",
+    "Toolchain: compiler behaviour, supported language models, conformance results, known limitations, and reproducible builds.",
+    "Software: the code covered by capabilities, compartment configuration, interfaces, test results, and handling of unsafe operations.",
+    "Integration: boot, devices, direct memory access, operating-system services, updates, monitoring, and fault response.",
+    "Product lifecycle: traceable requirements, vulnerability handling, regression testing, maintenance, and recorded residual risk.",
+    "Evidence at one layer does not establish the others. A processor core can implement CHERI correctly while a wider system still includes direct-memory-access devices, debug paths, unsafe configuration, or software outside capability protection.",
+    "CHERI is relevant to assurance when a product depends on native code and its case includes claims about memory separation, least authority, or containment after compromise. It can be particularly valuable where components of different trust or assurance levels share an address space.",
+    "The fit is not limited to safety-certified products. Buyers and operators of general-purpose systems can also benefit from evidence that explains which software is protected, what it can reach, and what happens when a capability check fails.",
+    "Sector certification depends on the product, claims, standards, evidence, independence, and operating context. CHERI can contribute architectural and test evidence to that process; it does not replace the process or determine its outcome.",
+    "The Alliance’s CHERI Enabled programme has a specific purpose. It identifies named products whose submitted evidence supports the correct application of CHERI security principles. It is not a certificate for the overall security or safety of every system containing that product.",
+    "A claim remains meaningful when it is tied to the exact processor, architecture profile, toolchain, execution mode, software version, compartment design, and configuration. Changes to any of these may alter the evidence or the authority available to a component.",
+    "This specificity is one of CHERI’s strengths. It replaces a broad promise of “hardware security” with properties that can be bounded, inspected, tested, and maintained as part of the wider product assurance case.",
+    "Procurement can distinguish a defined CHERI implementation from a broad technology label by using its scope and evidence.",
+    "CHERI has been explored across application processors, operating systems, embedded platforms, and commercial products.",
+    "CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet."
+  ],
+  "lists": [
+    [
+      "ol",
+      "Adopt Assurance & Adoption Assurance & Certification"
+    ],
+    [
+      "li",
+      "Adopt"
+    ],
+    [
+      "li",
+      "Assurance & Adoption"
+    ],
+    [
+      "li",
+      "Assurance & Certification"
+    ],
+    [
+      "ul",
+      "Architecture: the instruction-set specification, security model, capability rules, and behaviour when a check fails. Hardware: design verification, compliance testing, protection of capability tags, privileged paths, and debug behaviour. Toolchain: compiler behaviour, supported language models, conformance results, known limitations, and reproducible builds. Software: the code covered by capabilities, compartment configuration, interfaces, test results, and handling of unsafe operations. Integration: boot, devices, direct memory access, operating-system services, updates, monitoring, and fault response. Product lifecycle: traceable requirements, vulnerability handling, regression testing, maintenance, and recorded residual risk."
+    ],
+    [
+      "li",
+      "Architecture: the instruction-set specification, security model, capability rules, and behaviour when a check fails."
+    ],
+    [
+      "li",
+      "Hardware: design verification, compliance testing, protection of capability tags, privileged paths, and debug behaviour."
+    ],
+    [
+      "li",
+      "Toolchain: compiler behaviour, supported language models, conformance results, known limitations, and reproducible builds."
+    ],
+    [
+      "li",
+      "Software: the code covered by capabilities, compartment configuration, interfaces, test results, and handling of unsafe operations."
+    ],
+    [
+      "li",
+      "Integration: boot, devices, direct memory access, operating-system services, updates, monitoring, and fault response."
+    ],
+    [
+      "li",
+      "Product lifecycle: traceable requirements, vulnerability handling, regression testing, maintenance, and recorded residual risk."
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://cheri-alliance.github.io/adopt/assurance-and-adoption/about-cheri-enabled/",
+      "CHERI Enabled programme"
+    ],
+    [
+      "https://cheri-alliance.github.io/adopt/assurance-and-adoption/procurement/",
+      "Procurement Procurement can distinguish a defined CHERI implementation from a broad technology label by using its scope and evidence. Continue"
+    ],
+    [
+      "https://cheri-alliance.github.io/adopt/assurance-and-adoption/case-studies/",
+      "Case Studies CHERI has been explored across application processors, operating systems, embedded platforms, and commercial products. Read this page"
+    ],
+    [
+      "https://cheri-alliance.github.io/adopt/business-case/the-business-case/",
+      "The Business Case CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet. Read this page"
+    ]
+  ],
+  "images": [],
+  "definitions": [],
+  "code_blocks": []
+}

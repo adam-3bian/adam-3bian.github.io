@@ -1,0 +1,87 @@
+{
+  "main_text": "Discover\nUnderstand\nHow does CHERI work?\nHow does CHERI work?\n\nHelping software stay within its boundaries.\n\nAt the heart of CHERI is a simple idea: the processor should understand the boundaries intended by the developer and prevent software from exceeding them.\n\nToday’s systems trust software too much\n\nToday’s processors access memory using pointers, which represent an address in memory. A pointer is essentially a number managed entirely by software. Memory is largely an open book: software can read, write, or execute wherever a pointer leads it, with few built-in checks on whether that access was actually intended.\n\nIf a program contains a bug, a pointer can accidentally (or maliciously) be changed to access memory that it was never supposed to reach.\n\nCapabilities: pointers with built-in protection\n\nCHERI enhances processors with a new type of pointer called a capability. CHERI capabilities contain additional information describing what access a piece of software has been granted, much like an access card controls which areas of a building someone can enter.\n\nIn a CHERI system, any part of the memory can only be accessed with a capability, which describes:\n\nA memory location\nThe exact bounds of the memory area that can be accessed\nPermissions such as read, write, or execute\nAdditional metadata used by the processor to enforce security rules\n\nCapabilities are checked every time memory is accessed.\n\nHardware-enforced security\n\nThe processor enforces the rules carried by each capability. Whenever software accesses memory, the processor checks that the operation stays within the capability’s permitted bounds and permissions. Any attempt to exceed those limits is blocked before it can affect the system.\n\nBy design, software cannot create new capabilities from nothing or grant itself additional privileges. New capabilities can only be derived from existing ones, and only with the same or fewer permissions.\n\nProtection is built into the hardware rather than relying solely on software checks.\n\nCompartmentalisation\n\nCapabilities can also be used to create secure compartments: isolated parts of a system that have access only to the resources they need. A compartment might be:\n\nAn application\nA library\nA service\nA security-critical function\n\nEach compartment receives its own capabilities and cannot freely access the memory of other compartments. CHERI makes it practical to create and manage large numbers of small compartments with very low overhead. This enables much finer-grained isolation than traditional security approaches, without the important performance penalty.\n\nThis approach, known as compartmentalisation, helps contain bugs and security vulnerabilities, preventing problems in one part of a system from affecting everything else. The smaller the compartment, the smaller the impact of a bug or attack.\n\nWorking with existing software\n\nCHERI was designed to support and reuse existing software. Much of the work required to convert existing software is handled automatically by CHERI-aware compilers. When software contains memory-safety issues or relies on ambiguous behaviour, or to add compartmentalisation, some changes may be required, but they are often relatively small compared to the security benefits gained.\n\nApplications, operating systems, libraries, and firmware can be adapted incrementally, allowing organisations to progressively benefit from increased hardware-enforced memory protection and compartmentalisation while continuing to use large amounts of existing code.\n\nIn summary\n\nCHERI introduces capabilities, an enhanced form of pointer that carries information about what memory can be accessed and how it can be used. By enforcing these rules in hardware and enabling fine-grained compartmentalisation, CHERI provides a foundation for building more secure and resilient systems.\n\nWhere next\nCHERI and Rust - Technical Overview\n\nFurther technical details to understand why CHERI and Rust are complementary.\n\nContinue\nRelated content\nBringing CHERI to your product\n\nWhat needs to change, and what doesn't.\n\nRead this page\nCHERI and Existing Software\n\nPorting software to CHERI is a process of finding assumptions about pointers, integers, objects, bounds, provenance, lifetimes, and interfaces.\n\nRead this page",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 4101.96875
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/shared/pointer-vs-capability.webp",
+      "alt": "Traditional pointers vs capabilities",
+      "rect": {
+        "x": 160,
+        "y": 734.859375,
+        "width": 767.96875,
+        "height": 291.828125
+      },
+      "natural_width": 1000,
+      "natural_height": 380,
+      "style": {
+        "float": "none",
+        "display": "inline"
+      },
+      "parent": {
+        "x": 160,
+        "y": 734.859375,
+        "width": 768,
+        "height": 300.015625
+      },
+      "parent_classes": [],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 4101.96875
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/shared/compartmentalisation.webp",
+      "alt": "Compartmentalisation prevents contagion",
+      "rect": {
+        "x": 160,
+        "y": 2420.46875,
+        "width": 300,
+        "height": 261
+      },
+      "natural_width": 300,
+      "natural_height": 261,
+      "style": {
+        "float": "none",
+        "display": "inline"
+      },
+      "parent": {
+        "x": 160,
+        "y": 2420.46875,
+        "width": 768,
+        "height": 269.1875
+      },
+      "parent_classes": [],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 4101.96875
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/discover/understand/how-does-cheri-work/",
+  "final_url": "https://cheri-alliance.github.io/discover/understand/how-does-cheri-work/",
+  "retrieved_at": "2026-10-09T21:53:08.506172+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

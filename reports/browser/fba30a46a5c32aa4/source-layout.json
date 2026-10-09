@@ -1,0 +1,61 @@
+{
+  "main_text": "News & Events\nSpeakers\nPaul Waller\nPaul Waller\n\nNCSC\n\nBoard role\nHead of Capability Research\nOrganisation\nNCSC\nBiography\n\nPaul Waller works on advancing practical, deployable cyber security at national scale. At the NCSC, he focuses on how technologies like CHERI and memory safety translate into real risk reduction and adoption across critical systems.\n\nCHERI Talks\n\nETSI Standardisation status | CHERI Blossoms 2026\n\n26/03/2026\n\nCambridge, UK\n\nNo Slides\n\nView Video\n\nBack to all speakers\nBack to the Governing Board",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 1067.4375
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/people/paul-waller/portrait.jpg",
+      "alt": "Paul Waller",
+      "rect": {
+        "x": 161,
+        "y": 399.953125,
+        "width": 279.59375,
+        "height": 372.375
+      },
+      "natural_width": 901,
+      "natural_height": 1200,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 398.953125,
+        "width": 281.59375,
+        "height": 211.1875
+      },
+      "parent_classes": [
+        "entity-media",
+        "entity-media--portrait"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 398.953125,
+        "width": 742.40625,
+        "height": 512.6875
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/people/paul-waller/",
+  "final_url": "https://cheri-alliance.github.io/people/paul-waller/",
+  "retrieved_at": "2026-10-09T21:08:06.925133+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

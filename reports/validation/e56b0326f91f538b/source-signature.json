@@ -1,0 +1,206 @@
+{
+  "text": "Build Developers Technical FAQ Technical FAQ Clear answers to common technical questions about CHERI. If you are looking for a high-leval FAQ, please go to FAQ. You can also take a look at the University of Cambridge’s CHERI FAQ How does CHERI align with ETSI TS 104 198? ETSI TS 104 198 defines a framework for achieving different levels of memory-safety assurance. CHERI is explicitly identified as a technology capable of supporting the highest assurance levels through hardware-enforced memory protection and compartmentalisation. Is CHERI a processor or an operating system? Neither. CHERI is a capability architecture that can be incorporated into instruction-set architectures (ISA), processor implementations, operating systems, and software. Examples in the ecosystem include CHERI-RISC-V, Arm Morello, CHERIoT, CheriBSD, and CHERI Linux. Do we have to rewrite existing software? No, but existing code may require some adaptation. Well-structured software often builds with few changes. Common porting work involves pointer-to-integer conversions, custom allocators, packed data structures, inline assembly, and code that deliberately crosses object boundaries. Hybrid and pure-capability modes offer different migration paths. See CHERI and Existing Software. What is a capability? A capability is a protected value that identifies something software may access and carries the authority to access it. For memory, it includes an address together with bounds, permissions, and validity metadata. See Capabilities. How is a capability different from a conventional pointer? A conventional pointer normally provides an address. The processor has limited knowledge of the object the programmer intended it to reference. A CHERI capability carries enforceable limits, such as the permitted address range and whether access may read, write, or execute. In typical implementations, e.g. CHERI-RISC-V, capabilities are twice the size of regular pointers. Does CHERI make C and C++ memory safe? CHERI-aware compilers and pure-capability application binary interfaces (ABIs) can enforce strong pointer bounds and permissions for adapted C and C++ code. That blocks many behaviours that conventional C and C++ systems allow at runtime. It does not make every C or C++ program correct, and some code must be adapted where it relies on invalid, ambiguous, or implementation-defined pointer behaviour. What is the difference between hybrid and pure-capability software? Hybrid software uses conventional pointers alongside explicitly managed capabilities. Pure-capability software represents all language-visible pointers as capabilities throughout the ABI. Hybrid mode supports incremental adoption, while pure-capability mode provides more comprehensive pointer protection. Can I try CHERI without hardware? Yes. QEMU and formal-model simulators support several CHERI environments. The right route depends on whether you want an application-class CheriBSD environment or an embedded CHERIoT environment. Start with Run CHERI in Simulation. What is Morello? Morello is an Arm-developed prototype architecture, system-on-chip, and development board designed to evaluate CHERI at application-processor scale. It has supported extensive work on compilers, CheriBSD, Linux, applications, and security evaluation. It is a good platform for development and the CHERI Alliance can help teams get a loan of a Morello board. See Morello What is CHERIoT? CHERIoT is a 32-bit CHERI-based hardware-software platform designed for embedded and Internet of Things systems. It combines a CHERI-enabled RISC-V instruction set, processor cores, a compartmentalised real-time operating system, a toolchain, simulators, and development platforms such as Sonata. See CHERIoT What is CheriBSD? CheriBSD is FreeBSD adapted for CHERI-RISC-V and Arm Morello. It provides a mature environment for architecture, operating-system, application-porting, and compartmentalisation work. See CheriBSD What is CHERI Linux? CHERI Linux is Linux adapted to CHERI systems. The CHERI Alliance Linux Working Group coordinates the porting effort, cross-architecture roadmap, and public repositories. Check current project documentation for supported branches, targets, and maturity. See CHERI Linux What is CHERI-RISC-V? CHERI-RISC-V applies CHERI capability concepts to the RISC-V instruction-set architecture. It is used across application-class, embedded, FPGA, simulation, operating-system, and commercial processor work. This is being standardised through RISC-V International. Where next Capabilities Learn about capabilities, the main concept behind CHERI. Continue Related content Specifications A directory of architecture and related specifications relevant to CHERI. Read this page Glossary This glossary provides plain-language, product-oriented explanations of common CHERI concepts. More detailed technical definitions can be found in the Build section. Read this page Choose a Platform Choose a platform, prepare an environment and run a first CHERI workload. Read this page",
+  "headings": [
+    [
+      "h1",
+      "Technical FAQ",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "How does CHERI align with ETSI TS 104 198?",
+      "how-does-cheri-align-with-etsi-ts-104-198"
+    ],
+    [
+      "h2",
+      "Is CHERI a processor or an operating system?",
+      "is-cheri-a-processor-or-an-operating-system"
+    ],
+    [
+      "h2",
+      "Do we have to rewrite existing software?",
+      "do-we-have-to-rewrite-existing-software"
+    ],
+    [
+      "h2",
+      "What is a capability?",
+      "what-is-a-capability"
+    ],
+    [
+      "h2",
+      "How is a capability different from a conventional pointer?",
+      "how-is-a-capability-different-from-a-conventional-pointer"
+    ],
+    [
+      "h2",
+      "Does CHERI make C and C++ memory safe?",
+      "does-cheri-make-c-and-c-memory-safe"
+    ],
+    [
+      "h2",
+      "What is the difference between hybrid and pure-capability software?",
+      "what-is-the-difference-between-hybrid-and-pure-capability-software"
+    ],
+    [
+      "h2",
+      "Can I try CHERI without hardware?",
+      "can-i-try-cheri-without-hardware"
+    ],
+    [
+      "h2",
+      "What is Morello?",
+      "what-is-morello"
+    ],
+    [
+      "h2",
+      "What is CHERIoT?",
+      "what-is-cheriot"
+    ],
+    [
+      "h2",
+      "What is CheriBSD?",
+      "what-is-cheribsd"
+    ],
+    [
+      "h2",
+      "What is CHERI Linux?",
+      "what-is-cheri-linux"
+    ],
+    [
+      "h2",
+      "What is CHERI-RISC-V?",
+      "what-is-cheri-risc-v"
+    ],
+    [
+      "h2",
+      "Where next",
+      null
+    ],
+    [
+      "h3",
+      "Capabilities",
+      null
+    ],
+    [
+      "h2",
+      "Related content",
+      null
+    ],
+    [
+      "h3",
+      "Specifications",
+      null
+    ],
+    [
+      "h3",
+      "Glossary",
+      null
+    ],
+    [
+      "h3",
+      "Choose a Platform",
+      null
+    ]
+  ],
+  "paragraphs": [
+    "Build",
+    "Developers",
+    "Technical FAQ",
+    "Clear answers to common technical questions about CHERI.",
+    "If you are looking for a high-leval FAQ, please go to FAQ. You can also take a look at the University of Cambridge’s CHERI FAQ",
+    "ETSI TS 104 198 defines a framework for achieving different levels of memory-safety assurance. CHERI is explicitly identified as a technology capable of supporting the highest assurance levels through hardware-enforced memory protection and compartmentalisation.",
+    "Neither. CHERI is a capability architecture that can be incorporated into instruction-set architectures (ISA), processor implementations, operating systems, and software. Examples in the ecosystem include CHERI-RISC-V, Arm Morello, CHERIoT, CheriBSD, and CHERI Linux.",
+    "No, but existing code may require some adaptation. Well-structured software often builds with few changes. Common porting work involves pointer-to-integer conversions, custom allocators, packed data structures, inline assembly, and code that deliberately crosses object boundaries. Hybrid and pure-capability modes offer different migration paths. See CHERI and Existing Software.",
+    "A capability is a protected value that identifies something software may access and carries the authority to access it. For memory, it includes an address together with bounds, permissions, and validity metadata. See Capabilities.",
+    "A conventional pointer normally provides an address. The processor has limited knowledge of the object the programmer intended it to reference. A CHERI capability carries enforceable limits, such as the permitted address range and whether access may read, write, or execute.",
+    "In typical implementations, e.g. CHERI-RISC-V, capabilities are twice the size of regular pointers.",
+    "CHERI-aware compilers and pure-capability application binary interfaces (ABIs) can enforce strong pointer bounds and permissions for adapted C and C++ code. That blocks many behaviours that conventional C and C++ systems allow at runtime. It does not make every C or C++ program correct, and some code must be adapted where it relies on invalid, ambiguous, or implementation-defined pointer behaviour.",
+    "Hybrid software uses conventional pointers alongside explicitly managed capabilities. Pure-capability software represents all language-visible pointers as capabilities throughout the ABI. Hybrid mode supports incremental adoption, while pure-capability mode provides more comprehensive pointer protection.",
+    "Yes. QEMU and formal-model simulators support several CHERI environments. The right route depends on whether you want an application-class CheriBSD environment or an embedded CHERIoT environment. Start with Run CHERI in Simulation.",
+    "Morello is an Arm-developed prototype architecture, system-on-chip, and development board designed to evaluate CHERI at application-processor scale. It has supported extensive work on compilers, CheriBSD, Linux, applications, and security evaluation. It is a good platform for development and the CHERI Alliance can help teams get a loan of a Morello board. See Morello",
+    "CHERIoT is a 32-bit CHERI-based hardware-software platform designed for embedded and Internet of Things systems. It combines a CHERI-enabled RISC-V instruction set, processor cores, a compartmentalised real-time operating system, a toolchain, simulators, and development platforms such as Sonata. See CHERIoT",
+    "CheriBSD is FreeBSD adapted for CHERI-RISC-V and Arm Morello. It provides a mature environment for architecture, operating-system, application-porting, and compartmentalisation work. See CheriBSD",
+    "CHERI Linux is Linux adapted to CHERI systems. The CHERI Alliance Linux Working Group coordinates the porting effort, cross-architecture roadmap, and public repositories. Check current project documentation for supported branches, targets, and maturity. See CHERI Linux",
+    "CHERI-RISC-V applies CHERI capability concepts to the RISC-V instruction-set architecture. It is used across application-class, embedded, FPGA, simulation, operating-system, and commercial processor work. This is being standardised through RISC-V International.",
+    "Learn about capabilities, the main concept behind CHERI.",
+    "A directory of architecture and related specifications relevant to CHERI.",
+    "This glossary provides plain-language, product-oriented explanations of common CHERI concepts. More detailed technical definitions can be found in the Build section.",
+    "Choose a platform, prepare an environment and run a first CHERI workload."
+  ],
+  "lists": [
+    [
+      "ol",
+      "Build Developers Technical FAQ"
+    ],
+    [
+      "li",
+      "Build"
+    ],
+    [
+      "li",
+      "Developers"
+    ],
+    [
+      "li",
+      "Technical FAQ"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://cheri-alliance.github.io/discover/why-cheri/faq",
+      "FAQ"
+    ],
+    [
+      "https://ctsrd-cheri.github.io/cheri-faq/",
+      "CHERI FAQ"
+    ],
+    [
+      "https://cheri-alliance.github.io/discover/understand/cheri-and-existing-software/",
+      "CHERI and Existing Software"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/technology/capabilities/",
+      "Capabilities"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/developers/run-cheri-in-simulation/",
+      "Run CHERI in Simulation"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/platforms/morello/",
+      "Morello"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/platforms/cheriot/",
+      "CHERIoT"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/software-ecosystem/cheribsd/",
+      "CheriBSD"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/software-ecosystem/cheri-linux/",
+      "CHERI Linux"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/technology/capabilities/",
+      "Capabilities Learn about capabilities, the main concept behind CHERI. Continue"
+    ],
+    [
+      "https://cheri-alliance.github.io/discover/resources/specifications/",
+      "Specifications A directory of architecture and related specifications relevant to CHERI. Read this page"
+    ],
+    [
+      "https://cheri-alliance.github.io/discover/resources/glossary/",
+      "Glossary This glossary provides plain-language, product-oriented explanations of common CHERI concepts. More detailed technical definitions can be found in the Build section. Read this page"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/developers/choose-a-platform/",
+      "Choose a Platform Choose a platform, prepare an environment and run a first CHERI workload. Read this page"
+    ]
+  ],
+  "images": [],
+  "definitions": [],
+  "code_blocks": []
+}

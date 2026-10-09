@@ -1,0 +1,61 @@
+{
+  "main_text": "Alliance\nMembers\nUniversity of Kent\nUniversity of Kent\n\nThe University of Kent is a British research and teaching University in the historic city of Canterbury. The Programming Languages and Systems group of the School of Computing is in the top 5 for research in their field nationally.\n\nStatus\nMember\nMembership\nCommunity Member\nWebsite\nVisit member website\nDescription\n\nThe University of Kent is a British research and teaching University in the historic city of Canterbury. The Programming Languages and Systems group of the School of Computing is in the top 5 for research in their field nationally.\n\nCHERI Activities\n\nKent, with support through the Digital Security by Design project, has developed formal semantics for concurrent C and maintains the CHERI port of the Rust compiler. Their Programming Languages and Systems research group investigates language semantics, compiler optimisations, type systems, runtimes, system verification, and memory safety.\n\nOpen-source Assets for CHERI\n\nThe CHERI Rust port is available on Github:\n\nhttps://github.com/kent-weak-memory/rust/\n\nBack to all members",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 1206.6875
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/members/university-of-kent/logo.png",
+      "alt": "University of Kent logo",
+      "rect": {
+        "x": 196.578125,
+        "y": 488.421875,
+        "width": 208.421875,
+        "height": 138.9375
+      },
+      "natural_width": 1200,
+      "natural_height": 800,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 463.421875,
+        "width": 281.59375,
+        "height": 187.71875
+      },
+      "parent_classes": [
+        "entity-media",
+        "entity-media--logo"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 463.421875,
+        "width": 742.40625,
+        "height": 587.46875
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/members/university-of-kent/",
+  "final_url": "https://cheri-alliance.github.io/members/university-of-kent/",
+  "retrieved_at": "2026-10-09T21:54:40.225658+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

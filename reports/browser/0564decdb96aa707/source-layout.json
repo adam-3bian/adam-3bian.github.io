@@ -1,0 +1,61 @@
+{
+  "main_text": "Alliance\nMembers\nJohannes Kepler University Linz (JKU)\nJohannes Kepler University Linz (JKU)\n\nJohannes Kepler University (JKU) Linz is a public research university in Linz, Upper Austria. Located on a modern campus just outside the city center, JKU brings together a broad range of study and research across its faculties and interdisciplinary…\n\nStatus\nMember\nMembership\nCommunity Member\nWebsite\nVisit member website\nDescription\n\nJohannes Kepler University (JKU) Linz is a public research university in Linz, Upper Austria. Located on a modern campus just outside the city center, JKU brings together a broad range of study and research across its faculties and interdisciplinary institutes. With a strong focus on innovation, international collaboration, and close ties to industry, JKU offers an excellent environment for studying, teaching, and research—preparing graduates to shape the future in business, science, and society.\n\nCHERI Activities\n\nThe Institute for Complex Systems (ICS) at JKU Linz focuses on mastering the ever-increasing complexity of modern hardware/software systems. Our work spans multiple abstraction levels—from Virtual Prototypes (VPs) in SystemC at the Electronic System Level (ESL), to RTL designs in Verilog/VHDL, down to gate-level representations. Across these levels, we tackle core challenges in Electronic Design Automation (EDA), with a strong emphasis on verification, debugging, and synthesis. A key pillar of this effort is our open-source virtual prototyping ecosystem around RISC-V. As a concrete outcome, we provide RISC-V VP++, a highly-configurable virtual prototype used for system-level evaluation, design exploration and novel verification approaches. Since 2025, RISC-V VP++ has CHERI support.\n\nOpen-source Assets for CHERI\n\nhttps://github.com/ics-jku/riscv-vp-plusplus\n\nBack to all members",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 1439.625
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/members/johannes-kepler-university-linz/logo.png",
+      "alt": "Johannes Kepler University Linz (JKU)",
+      "rect": {
+        "x": 196.578125,
+        "y": 555.046875,
+        "width": 208.421875,
+        "height": 147.34375
+      },
+      "natural_width": 2000,
+      "natural_height": 1414,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 530.046875,
+        "width": 281.59375,
+        "height": 187.71875
+      },
+      "parent_classes": [
+        "entity-media",
+        "entity-media--logo"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 530.046875,
+        "width": 742.40625,
+        "height": 753.78125
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/members/johannes-kepler-university-linz/",
+  "final_url": "https://cheri-alliance.github.io/members/johannes-kepler-university-linz/",
+  "retrieved_at": "2026-10-09T21:54:01.017625+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

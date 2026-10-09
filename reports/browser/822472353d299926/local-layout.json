@@ -1,0 +1,48 @@
+{
+  "main_text": "News & Events\nSpeakers\nPaul Metzger\nPaul Metzger\n\nUniversity of Cambridge\n\nOrganisation\nUniversity of Cambridge\nLinkedIn\nBiography\n\nDr Paul Metzger is a Research Associate in the Department of Computer Science and Technology at the University of Cambridge. He recently started working on CHERI OS API portability and has been involved with CHERI projects since 2021. Prior to that, he received his PhD from the University of Edinburgh.\n\nCHERI Talks\n\nPortable CHERI\nOS APIs | CHERI Blossoms 2026\n\n26/03/2026\n\nCambridge, UK\n\nView Slides\n\nBack to all speakers",
+  "images": [
+    {
+      "url": "http://127.0.0.1:41683/assets/people/paul-metzger/0069454ce669-portrait.jpg",
+      "rect": {
+        "x": 161,
+        "y": 399.953125,
+        "width": 279.59375,
+        "height": 339.578125
+      },
+      "natural_width": 988,
+      "natural_height": 1200
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/people/paul-metzger/",
+  "checks": {
+    "visible_main_text": true,
+    "header_text": true,
+    "footer_text": true,
+    "copyright_text": true,
+    "image_count": true,
+    "image_integrity": true,
+    "desktop_image_geometry": true
+  },
+  "image_checks": [
+    {
+      "source_url": "https://cheri-alliance.github.io/assets/images/content/people/paul-metzger/portrait.jpg",
+      "mapped_url_correct": true,
+      "loaded": true,
+      "geometry_delta_px": {
+        "x": 0,
+        "y": 0.0,
+        "width": 0.0,
+        "height": 0.0
+      }
+    }
+  ]
+}

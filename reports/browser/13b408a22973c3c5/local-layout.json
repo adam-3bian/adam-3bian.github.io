@@ -1,0 +1,48 @@
+{
+  "main_text": "News & Events\nSpeakers\nMark Hill\nMark Hill\n\nCodasip\n\nOrganisation\nCodasip\nLinkedIn\nBiography\n\nDr Mark B. Hill, BEng PhD CEng MIET\n\nMark is Lead CPU Architect at Codasip and has 30 years industrial experience in processor and processor subsystem design and development at plus a BEng(Hons) First and a PhD from Southampton University. He has been involved in the design and development of several RISC-V cores for over the last 7 years for use in a wide range of industrial and consumer products and been a strong advocate of CHERI for several years.\n\nCHERI Talks\n\nEfficient system-level support for CHERI Capabilities | CHERI Blossoms 2025\n\n02/04/2025\n\nCambridge, UK\n\nView Slides\n\nView Video\n\nBack to all speakers",
+  "images": [
+    {
+      "url": "http://127.0.0.1:41683/assets/people/mark-hill/c7093451b411-portrait.jpg",
+      "rect": {
+        "x": 161,
+        "y": 399.953125,
+        "width": 279.59375,
+        "height": 279.59375
+      },
+      "natural_width": 400,
+      "natural_height": 400
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/people/mark-hill/",
+  "checks": {
+    "visible_main_text": true,
+    "header_text": true,
+    "footer_text": true,
+    "copyright_text": true,
+    "image_count": true,
+    "image_integrity": true,
+    "desktop_image_geometry": true
+  },
+  "image_checks": [
+    {
+      "source_url": "https://cheri-alliance.github.io/assets/images/content/people/mark-hill/portrait.jpg",
+      "mapped_url_correct": true,
+      "loaded": true,
+      "geometry_delta_px": {
+        "x": 0,
+        "y": 0.0,
+        "width": 0.0,
+        "height": 0.0
+      }
+    }
+  ]
+}

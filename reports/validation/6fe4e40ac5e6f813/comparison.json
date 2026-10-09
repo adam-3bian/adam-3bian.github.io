@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/people/gavin-ferris/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/people/gavin-ferris/85e5898f43a9-portrait.png": "https://cheri-alliance.github.io/assets/images/content/people/gavin-ferris/portrait.png"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

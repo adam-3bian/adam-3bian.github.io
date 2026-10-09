@@ -1,0 +1,914 @@
+{
+  "text": "News & Events Events & Archive CHERI Blossoms Conference 2025 CHERI Blossoms Conference 2025 The 2025 CHERI Blossoms conference brought researchers, technologists, industry leaders, and business strategists together in Cambridge. Status Past Format Conference Date 2 April 2025 Location St John's College, Cambridge, UK Series CHERI Blossoms Cultivating a Safer Digital Future - from Tech to Business Date: 2nd April 2025 The CHERI Blossoms Conference 2025 invited researchers, technologists, industry leaders, and business strategists to contribute to the advancement of digital security by design. This premier event focused on CHERI (Capability Hardware Enhanced RISC Instructions) technology and its transformative role in building resilient systems. As a newly merged event incorporating the CHERI Tech Conference, we brought together the brightest minds in technology and business to explore the latest innovations, implementations, and strategic applications of secure computing. Conference Overview Watch video Conference Presentations Talk Title Author Organisation Speaker, Slides & Video Keynote Alastair Beresford University of Cambridge Speaker, Slides & Video CHERI Alliance - QEMU Working Group Alfredo Mazzinghi Capabilities Limited Speaker, Slides & Video Industrial-Strength Formal Verification of RISC-V Processors Ashish Darbari Axiomise Speaker, Slides & Video CHERI Alliance - SoC Working Group Ben Fletcher Codasip Speaker, Slides & Video Building Resilience: Enhancing productivity through Secure by Design systems Bradley Finn DSIT Speaker, Slides & Video Porting Linux to CHERI Carl Shaw Codasip Speaker, Slides & Video CHERIoT 2025 David Chisnall SCI Semiconductor Speaker, Slides & Video Implementation of CHERI Capabilities in a Safety-Critical Real-Time Operating System for Intelligent Edge Systems Dmitriy Yeliseyev Wind River Speaker, Slides & Video Porting V8 to CHERI: An Overview Domagoj Stolfa Capabilities Limited, University of Cambridge Speaker, Slides & Video Project Sunburst: An Open-Source CHERIoT SoC Top-Level and its Path to Market with Iceni Gavin Ferris lowRISC Speaker, Slides & Video Project Sunburst: An Open-Source CHERIoT SoC Top-Level and its Path to Market with Iceni Haydn Povey SCI Semiconductor Speaker, Slides & Video CHERI Alliance - seL4 Working Group Hesham Almatary Capabilities Limited Speaker, Slides & Video CHERI MicroPython: Challenges and Opportunities Jeremy Singer University of Glasgow Speaker, Slides & Video Findings from DSbD program John Goodacre UKRI Speaker, Slides & Video CHERI support for CVA6 Jonathan Woodruff Capabilities Limited Speaker, Slides & Video Securing Secure Networking tools for Morello Linux Joshua Lant University of Manchester Speaker, Slides & Video Porting Linux to CHERI Kevin Brodsky Arm Speaker, Slides & Video Rust for Morello: Always-On Memory Safety, Even in Unsafe Code Mark Batty Kent University Speaker, Slides & Video Efficient system-level support for CHERI Capabilities Mark Hill Codasip Speaker, Slides & Video CHERI Alliance - Repository Working Group Marno van der Maas lowRISC Speaker, Slides & Video Hybrid CHERI in seL4 user space Martin Atkins Mission Critical Applications Limited Speaker, Slides & Video Progress of the Alliance, CHERI Alliance - Promotion & Ambassador Working Group Mike Eftimakis CHERI Alliance Speaker, Slides & Video Surprise! Mike Halsall CHERI Alliance Speaker, Slides & Video Implementing safe and resilient configuration management with CHERIoT Phil Day Configured Things Speaker, Slides & Video Latest news about CHERI Robert Watson CHERI Alliance Speaker, Slides & Video About CHERI Simon Moore University of Cambridge Speaker, Slides & Video CHERI RISC-V Standardisation Tariq Kurd Codasip Speaker, Slides & Video CHERI Alliance - Marketing Working Group Tora Fridholm Codasip Speaker, Slides & Video Agenda View Agenda Venue Fisher Building, St John’s College, Cambridge, UK Address: St. John’s College, St. Johns Street, Cambridge, CB2 1TP View map More CHERI Blossoms events View the complete series Upcoming Conference 21 to 23 April 2027 University of Cambridge, Cambridge, UK CHERI Blossoms Conference 2027 CHERI Blossoms Conference 2027 Pre-conference Tutorial: 21 April 2027 Main Conference Date: 22-23 April 2027 Location: Department of Computer Science and Technology – ... View event Past Tutorial 25 March 2026 University of Cambridge, Cambridge, UK Hands-on Introduction to CHERI and CHERIoT The CHERI Research Centre at the Computer Laboratory, Codasip, and lowRISC co-organised a comprehensive tutorial on CHERI alongside the CHERI Blossoms 2026 conference.... View event archive Past Conference 25 to 27 March 2026 University of Cambridge, Cambridge, UK CHERI Blossoms Conference 2026 The CHERI Blossoms Conference 2026 was the must-attend event for forward-thinking decision-makers and innovators! This exclusive gathering was tailored for industry le... View event archive Back to past events",
+  "headings": [
+    [
+      "h1",
+      "CHERI Blossoms Conference 2025",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Cultivating a Safer Digital Future - from Tech to Business",
+      "cultivating-a-safer-digital-future---from-tech-to-business"
+    ],
+    [
+      "h2",
+      "Conference Overview",
+      "conference-overview"
+    ],
+    [
+      "h2",
+      "Conference Presentations",
+      "conference-presentations"
+    ],
+    [
+      "h2",
+      "Agenda",
+      "agenda"
+    ],
+    [
+      "h2",
+      "Venue",
+      "venue"
+    ],
+    [
+      "h3",
+      "Address:",
+      "address"
+    ],
+    [
+      "h2",
+      "More CHERI Blossoms events",
+      "related-series-events"
+    ],
+    [
+      "h3",
+      "CHERI Blossoms Conference 2027",
+      null
+    ],
+    [
+      "h3",
+      "Hands-on Introduction to CHERI and CHERIoT",
+      null
+    ],
+    [
+      "h3",
+      "CHERI Blossoms Conference 2026",
+      null
+    ]
+  ],
+  "paragraphs": [
+    "News & Events",
+    "Events & Archive",
+    "CHERI Blossoms Conference 2025",
+    "The 2025 CHERI Blossoms conference brought researchers, technologists, industry leaders, and business strategists together in Cambridge.",
+    "Date: 2nd April 2025",
+    "The CHERI Blossoms Conference 2025 invited researchers, technologists, industry leaders, and business strategists to contribute to the advancement of digital security by design. This premier event focused on CHERI (Capability Hardware Enhanced RISC Instructions) technology and its transformative role in building resilient systems. As a newly merged event incorporating the CHERI Tech Conference, we brought together the brightest minds in technology and business to explore the latest innovations, implementations, and strategic applications of secure computing.",
+    "Watch video",
+    "View Agenda",
+    "Fisher Building, St John’s College, Cambridge, UK",
+    "St. John’s College, St. Johns Street, Cambridge, CB2 1TP",
+    "View map",
+    "View the complete series",
+    "Upcoming Conference",
+    "21 to 23 April 2027 University of Cambridge, Cambridge, UK",
+    "CHERI Blossoms Conference 2027 Pre-conference Tutorial: 21 April 2027 Main Conference Date: 22-23 April 2027 Location: Department of Computer Science and Technology – ...",
+    "View event",
+    "Past Tutorial",
+    "25 March 2026 University of Cambridge, Cambridge, UK",
+    "The CHERI Research Centre at the Computer Laboratory, Codasip, and lowRISC co-organised a comprehensive tutorial on CHERI alongside the CHERI Blossoms 2026 conference....",
+    "View event archive",
+    "Past Conference",
+    "25 to 27 March 2026 University of Cambridge, Cambridge, UK",
+    "The CHERI Blossoms Conference 2026 was the must-attend event for forward-thinking decision-makers and innovators! This exclusive gathering was tailored for industry le...",
+    "View event archive",
+    "Back to past events"
+  ],
+  "lists": [
+    [
+      "ol",
+      "News & Events Events & Archive CHERI Blossoms Conference 2025"
+    ],
+    [
+      "li",
+      "News & Events"
+    ],
+    [
+      "li",
+      "Events & Archive"
+    ],
+    [
+      "li",
+      "CHERI Blossoms Conference 2025"
+    ]
+  ],
+  "tables": [
+    [
+      "table",
+      "Talk Title Author Organisation Speaker, Slides & Video Keynote Alastair Beresford University of Cambridge Speaker, Slides & Video CHERI Alliance - QEMU Working Group Alfredo Mazzinghi Capabilities Limited Speaker, Slides & Video Industrial-Strength Formal Verification of RISC-V Processors Ashish Darbari Axiomise Speaker, Slides & Video CHERI Alliance - SoC Working Group Ben Fletcher Codasip Speaker, Slides & Video Building Resilience: Enhancing productivity through Secure by Design systems Bradley Finn DSIT Speaker, Slides & Video Porting Linux to CHERI Carl Shaw Codasip Speaker, Slides & Video CHERIoT 2025 David Chisnall SCI Semiconductor Speaker, Slides & Video Implementation of CHERI Capabilities in a Safety-Critical Real-Time Operating System for Intelligent Edge Systems Dmitriy Yeliseyev Wind River Speaker, Slides & Video Porting V8 to CHERI: An Overview Domagoj Stolfa Capabilities Limited, University of Cambridge Speaker, Slides & Video Project Sunburst: An Open-Source CHERIoT SoC Top-Level and its Path to Market with Iceni Gavin Ferris lowRISC Speaker, Slides & Video Project Sunburst: An Open-Source CHERIoT SoC Top-Level and its Path to Market with Iceni Haydn Povey SCI Semiconductor Speaker, Slides & Video CHERI Alliance - seL4 Working Group Hesham Almatary Capabilities Limited Speaker, Slides & Video CHERI MicroPython: Challenges and Opportunities Jeremy Singer University of Glasgow Speaker, Slides & Video Findings from DSbD program John Goodacre UKRI Speaker, Slides & Video CHERI support for CVA6 Jonathan Woodruff Capabilities Limited Speaker, Slides & Video Securing Secure Networking tools for Morello Linux Joshua Lant University of Manchester Speaker, Slides & Video Porting Linux to CHERI Kevin Brodsky Arm Speaker, Slides & Video Rust for Morello: Always-On Memory Safety, Even in Unsafe Code Mark Batty Kent University Speaker, Slides & Video Efficient system-level support for CHERI Capabilities Mark Hill Codasip Speaker, Slides & Video CHERI Alliance - Repository Working Group Marno van der Maas lowRISC Speaker, Slides & Video Hybrid CHERI in seL4 user space Martin Atkins Mission Critical Applications Limited Speaker, Slides & Video Progress of the Alliance, CHERI Alliance - Promotion & Ambassador Working Group Mike Eftimakis CHERI Alliance Speaker, Slides & Video Surprise! Mike Halsall CHERI Alliance Speaker, Slides & Video Implementing safe and resilient configuration management with CHERIoT Phil Day Configured Things Speaker, Slides & Video Latest news about CHERI Robert Watson CHERI Alliance Speaker, Slides & Video About CHERI Simon Moore University of Cambridge Speaker, Slides & Video CHERI RISC-V Standardisation Tariq Kurd Codasip Speaker, Slides & Video CHERI Alliance - Marketing Working Group Tora Fridholm Codasip Speaker, Slides & Video"
+    ],
+    [
+      "tr",
+      "Talk Title Author Organisation Speaker, Slides & Video"
+    ],
+    [
+      "th",
+      "Talk Title"
+    ],
+    [
+      "th",
+      "Author"
+    ],
+    [
+      "th",
+      "Organisation"
+    ],
+    [
+      "th",
+      "Speaker, Slides & Video"
+    ],
+    [
+      "tr",
+      "Keynote Alastair Beresford University of Cambridge Speaker, Slides & Video"
+    ],
+    [
+      "td",
+      "Keynote"
+    ],
+    [
+      "td",
+      "Alastair Beresford"
+    ],
+    [
+      "td",
+      "University of Cambridge"
+    ],
+    [
+      "td",
+      "Speaker, Slides & Video"
+    ],
+    [
+      "tr",
+      "CHERI Alliance - QEMU Working Group Alfredo Mazzinghi Capabilities Limited Speaker, Slides & Video"
+    ],
+    [
+      "td",
+      "CHERI Alliance - QEMU Working Group"
+    ],
+    [
+      "td",
+      "Alfredo Mazzinghi"
+    ],
+    [
+      "td",
+      "Capabilities Limited"
+    ],
+    [
+      "td",
+      "Speaker, Slides & Video"
+    ],
+    [
+      "tr",
+      "Industrial-Strength Formal Verification of RISC-V Processors Ashish Darbari Axiomise Speaker, Slides & Video"
+    ],
+    [
+      "td",
+      "Industrial-Strength Formal Verification of RISC-V Processors"
+    ],
+    [
+      "td",
+      "Ashish Darbari"
+    ],
+    [
+      "td",
+      "Axiomise"
+    ],
+    [
+      "td",
+      "Speaker, Slides & Video"
+    ],
+    [
+      "tr",
+      "CHERI Alliance - SoC Working Group Ben Fletcher Codasip Speaker, Slides & Video"
+    ],
+    [
+      "td",
+      "CHERI Alliance - SoC Working Group"
+    ],
+    [
+      "td",
+      "Ben Fletcher"
+    ],
+    [
+      "td",
+      "Codasip"
+    ],
+    [
+      "td",
+      "Speaker, Slides & Video"
+    ],
+    [
+      "tr",
+      "Building Resilience: Enhancing productivity through Secure by Design systems Bradley Finn DSIT Speaker, Slides & Video"
+    ],
+    [
+      "td",
+      "Building Resilience: Enhancing productivity through Secure by Design systems"
+    ],
+    [
+      "td",
+      "Bradley Finn"
+    ],
+    [
+      "td",
+      "DSIT"
+    ],
+    [
+      "td",
+      "Speaker, Slides & Video"
+    ],
+    [
+      "tr",
+      "Porting Linux to CHERI Carl Shaw Codasip Speaker, Slides & Video"
+    ],
+    [
+      "td",
+      "Porting Linux to CHERI"
+    ],
+    [
+      "td",
+      "Carl Shaw"
+    ],
+    [
+      "td",
+      "Codasip"
+    ],
+    [
+      "td",
+      "Speaker, Slides & Video"
+    ],
+    [
+      "tr",
+      "CHERIoT 2025 David Chisnall SCI Semiconductor Speaker, Slides & Video"
+    ],
+    [
+      "td",
+      "CHERIoT 2025"
+    ],
+    [
+      "td",
+      "David Chisnall"
+    ],
+    [
+      "td",
+      "SCI Semiconductor"
+    ],
+    [
+      "td",
+      "Speaker, Slides & Video"
+    ],
+    [
+      "tr",
+      "Implementation of CHERI Capabilities in a Safety-Critical Real-Time Operating System for Intelligent Edge Systems Dmitriy Yeliseyev Wind River Speaker, Slides & Video"
+    ],
+    [
+      "td",
+      "Implementation of CHERI Capabilities in a Safety-Critical Real-Time Operating System for Intelligent Edge Systems"
+    ],
+    [
+      "td",
+      "Dmitriy Yeliseyev"
+    ],
+    [
+      "td",
+      "Wind River"
+    ],
+    [
+      "td",
+      "Speaker, Slides & Video"
+    ],
+    [
+      "tr",
+      "Porting V8 to CHERI: An Overview Domagoj Stolfa Capabilities Limited, University of Cambridge Speaker, Slides & Video"
+    ],
+    [
+      "td",
+      "Porting V8 to CHERI: An Overview"
+    ],
+    [
+      "td",
+      "Domagoj Stolfa"
+    ],
+    [
+      "td",
+      "Capabilities Limited, University of Cambridge"
+    ],
+    [
+      "td",
+      "Speaker, Slides & Video"
+    ],
+    [
+      "tr",
+      "Project Sunburst: An Open-Source CHERIoT SoC Top-Level and its Path to Market with Iceni Gavin Ferris lowRISC Speaker, Slides & Video"
+    ],
+    [
+      "td",
+      "Project Sunburst: An Open-Source CHERIoT SoC Top-Level and its Path to Market with Iceni"
+    ],
+    [
+      "td",
+      "Gavin Ferris"
+    ],
+    [
+      "td",
+      "lowRISC"
+    ],
+    [
+      "td",
+      "Speaker, Slides & Video"
+    ],
+    [
+      "tr",
+      "Project Sunburst: An Open-Source CHERIoT SoC Top-Level and its Path to Market with Iceni Haydn Povey SCI Semiconductor Speaker, Slides & Video"
+    ],
+    [
+      "td",
+      "Project Sunburst: An Open-Source CHERIoT SoC Top-Level and its Path to Market with Iceni"
+    ],
+    [
+      "td",
+      "Haydn Povey"
+    ],
+    [
+      "td",
+      "SCI Semiconductor"
+    ],
+    [
+      "td",
+      "Speaker, Slides & Video"
+    ],
+    [
+      "tr",
+      "CHERI Alliance - seL4 Working Group Hesham Almatary Capabilities Limited Speaker, Slides & Video"
+    ],
+    [
+      "td",
+      "CHERI Alliance - seL4 Working Group"
+    ],
+    [
+      "td",
+      "Hesham Almatary"
+    ],
+    [
+      "td",
+      "Capabilities Limited"
+    ],
+    [
+      "td",
+      "Speaker, Slides & Video"
+    ],
+    [
+      "tr",
+      "CHERI MicroPython: Challenges and Opportunities Jeremy Singer University of Glasgow Speaker, Slides & Video"
+    ],
+    [
+      "td",
+      "CHERI MicroPython: Challenges and Opportunities"
+    ],
+    [
+      "td",
+      "Jeremy Singer"
+    ],
+    [
+      "td",
+      "University of Glasgow"
+    ],
+    [
+      "td",
+      "Speaker, Slides & Video"
+    ],
+    [
+      "tr",
+      "Findings from DSbD program John Goodacre UKRI Speaker, Slides & Video"
+    ],
+    [
+      "td",
+      "Findings from DSbD program"
+    ],
+    [
+      "td",
+      "John Goodacre"
+    ],
+    [
+      "td",
+      "UKRI"
+    ],
+    [
+      "td",
+      "Speaker, Slides & Video"
+    ],
+    [
+      "tr",
+      "CHERI support for CVA6 Jonathan Woodruff Capabilities Limited Speaker, Slides & Video"
+    ],
+    [
+      "td",
+      "CHERI support for CVA6"
+    ],
+    [
+      "td",
+      "Jonathan Woodruff"
+    ],
+    [
+      "td",
+      "Capabilities Limited"
+    ],
+    [
+      "td",
+      "Speaker, Slides & Video"
+    ],
+    [
+      "tr",
+      "Securing Secure Networking tools for Morello Linux Joshua Lant University of Manchester Speaker, Slides & Video"
+    ],
+    [
+      "td",
+      "Securing Secure Networking tools for Morello Linux"
+    ],
+    [
+      "td",
+      "Joshua Lant"
+    ],
+    [
+      "td",
+      "University of Manchester"
+    ],
+    [
+      "td",
+      "Speaker, Slides & Video"
+    ],
+    [
+      "tr",
+      "Porting Linux to CHERI Kevin Brodsky Arm Speaker, Slides & Video"
+    ],
+    [
+      "td",
+      "Porting Linux to CHERI"
+    ],
+    [
+      "td",
+      "Kevin Brodsky"
+    ],
+    [
+      "td",
+      "Arm"
+    ],
+    [
+      "td",
+      "Speaker, Slides & Video"
+    ],
+    [
+      "tr",
+      "Rust for Morello: Always-On Memory Safety, Even in Unsafe Code Mark Batty Kent University Speaker, Slides & Video"
+    ],
+    [
+      "td",
+      "Rust for Morello: Always-On Memory Safety, Even in Unsafe Code"
+    ],
+    [
+      "td",
+      "Mark Batty"
+    ],
+    [
+      "td",
+      "Kent University"
+    ],
+    [
+      "td",
+      "Speaker, Slides & Video"
+    ],
+    [
+      "tr",
+      "Efficient system-level support for CHERI Capabilities Mark Hill Codasip Speaker, Slides & Video"
+    ],
+    [
+      "td",
+      "Efficient system-level support for CHERI Capabilities"
+    ],
+    [
+      "td",
+      "Mark Hill"
+    ],
+    [
+      "td",
+      "Codasip"
+    ],
+    [
+      "td",
+      "Speaker, Slides & Video"
+    ],
+    [
+      "tr",
+      "CHERI Alliance - Repository Working Group Marno van der Maas lowRISC Speaker, Slides & Video"
+    ],
+    [
+      "td",
+      "CHERI Alliance - Repository Working Group"
+    ],
+    [
+      "td",
+      "Marno van der Maas"
+    ],
+    [
+      "td",
+      "lowRISC"
+    ],
+    [
+      "td",
+      "Speaker, Slides & Video"
+    ],
+    [
+      "tr",
+      "Hybrid CHERI in seL4 user space Martin Atkins Mission Critical Applications Limited Speaker, Slides & Video"
+    ],
+    [
+      "td",
+      "Hybrid CHERI in seL4 user space"
+    ],
+    [
+      "td",
+      "Martin Atkins"
+    ],
+    [
+      "td",
+      "Mission Critical Applications Limited"
+    ],
+    [
+      "td",
+      "Speaker, Slides & Video"
+    ],
+    [
+      "tr",
+      "Progress of the Alliance, CHERI Alliance - Promotion & Ambassador Working Group Mike Eftimakis CHERI Alliance Speaker, Slides & Video"
+    ],
+    [
+      "td",
+      "Progress of the Alliance, CHERI Alliance - Promotion & Ambassador Working Group"
+    ],
+    [
+      "td",
+      "Mike Eftimakis"
+    ],
+    [
+      "td",
+      "CHERI Alliance"
+    ],
+    [
+      "td",
+      "Speaker, Slides & Video"
+    ],
+    [
+      "tr",
+      "Surprise! Mike Halsall CHERI Alliance Speaker, Slides & Video"
+    ],
+    [
+      "td",
+      "Surprise!"
+    ],
+    [
+      "td",
+      "Mike Halsall"
+    ],
+    [
+      "td",
+      "CHERI Alliance"
+    ],
+    [
+      "td",
+      "Speaker, Slides & Video"
+    ],
+    [
+      "tr",
+      "Implementing safe and resilient configuration management with CHERIoT Phil Day Configured Things Speaker, Slides & Video"
+    ],
+    [
+      "td",
+      "Implementing safe and resilient configuration management with CHERIoT"
+    ],
+    [
+      "td",
+      "Phil Day"
+    ],
+    [
+      "td",
+      "Configured Things"
+    ],
+    [
+      "td",
+      "Speaker, Slides & Video"
+    ],
+    [
+      "tr",
+      "Latest news about CHERI Robert Watson CHERI Alliance Speaker, Slides & Video"
+    ],
+    [
+      "td",
+      "Latest news about CHERI"
+    ],
+    [
+      "td",
+      "Robert Watson"
+    ],
+    [
+      "td",
+      "CHERI Alliance"
+    ],
+    [
+      "td",
+      "Speaker, Slides & Video"
+    ],
+    [
+      "tr",
+      "About CHERI Simon Moore University of Cambridge Speaker, Slides & Video"
+    ],
+    [
+      "td",
+      "About CHERI"
+    ],
+    [
+      "td",
+      "Simon Moore"
+    ],
+    [
+      "td",
+      "University of Cambridge"
+    ],
+    [
+      "td",
+      "Speaker, Slides & Video"
+    ],
+    [
+      "tr",
+      "CHERI RISC-V Standardisation Tariq Kurd Codasip Speaker, Slides & Video"
+    ],
+    [
+      "td",
+      "CHERI RISC-V Standardisation"
+    ],
+    [
+      "td",
+      "Tariq Kurd"
+    ],
+    [
+      "td",
+      "Codasip"
+    ],
+    [
+      "td",
+      "Speaker, Slides & Video"
+    ],
+    [
+      "tr",
+      "CHERI Alliance - Marketing Working Group Tora Fridholm Codasip Speaker, Slides & Video"
+    ],
+    [
+      "td",
+      "CHERI Alliance - Marketing Working Group"
+    ],
+    [
+      "td",
+      "Tora Fridholm"
+    ],
+    [
+      "td",
+      "Codasip"
+    ],
+    [
+      "td",
+      "Speaker, Slides & Video"
+    ]
+  ],
+  "links": [
+    [
+      "https://cheri-alliance.github.io/news-and-events/events-and-archive/cheri-blossoms/",
+      "CHERI Blossoms"
+    ],
+    [
+      "https://www.youtube.com/watch?v=sFmx2WHTUzc",
+      "Watch video"
+    ],
+    [
+      "https://cheri-alliance.github.io/people/alastair-beresford/",
+      "Alastair Beresford Speaker, Slides & Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/people/alfredo-mazzinghi/",
+      "Alfredo Mazzinghi Speaker, Slides & Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/people/ashish-darbari/",
+      "Ashish Darbari Speaker, Slides & Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/people/ben-fletcher/",
+      "Ben Fletcher Speaker, Slides & Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/people/bradley-finn/",
+      "Bradley Finn Speaker, Slides & Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/people/carl-shaw/",
+      "Carl Shaw Speaker, Slides & Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/people/david-chisnall/",
+      "David Chisnall Speaker, Slides & Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/people/dmitriy-yeliseyev/",
+      "Dmitriy Yeliseyev Speaker, Slides & Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/people/domagoj-stolfa/",
+      "Domagoj Stolfa Speaker, Slides & Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/people/gavin-ferris/",
+      "Gavin Ferris Speaker, Slides & Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/people/haydn-povey/",
+      "Haydn Povey Speaker, Slides & Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/people/hesham-almatary/",
+      "Hesham Almatary Speaker, Slides & Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/people/jeremy-singer/",
+      "Jeremy Singer Speaker, Slides & Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/people/john-goodacre/",
+      "John Goodacre Speaker, Slides & Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/people/jonathan-woodruff/",
+      "Jonathan Woodruff Speaker, Slides & Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/people/joshua-lant/",
+      "Joshua Lant Speaker, Slides & Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/people/kevin-brodsky/",
+      "Kevin Brodsky Speaker, Slides & Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/people/mark-batty/",
+      "Mark Batty Speaker, Slides & Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/people/mark-hill/",
+      "Mark Hill Speaker, Slides & Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/people/marno-van-der-maas/",
+      "Marno van der Maas Speaker, Slides & Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/people/martin-atkins/",
+      "Martin Atkins Speaker, Slides & Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/people/mike-eftimakis/",
+      "Mike Eftimakis Speaker, Slides & Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/people/mike-halsall/",
+      "Mike Halsall Speaker, Slides & Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/people/phil-day/",
+      "Phil Day Speaker, Slides & Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/people/robert-watson/",
+      "Robert Watson Speaker, Slides & Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/people/simon-moore/",
+      "Simon Moore Speaker, Slides & Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/people/tariq-kurd/",
+      "Tariq Kurd Speaker, Slides & Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/people/tora-fridholm/",
+      "Tora Fridholm Speaker, Slides & Video"
+    ],
+    [
+      "https://cheri-alliance.org/wp-content/uploads/2025/04/CHERI-Blossoms-2025-Agenda-2-Portrait-v2.pdf",
+      "View Agenda"
+    ],
+    [
+      "https://map.cam.ac.uk/?maplon=0.11549&maplat=52.20844&mapzoom=17&maplayers=Building+Labels%2CExternal+Sites%2CColleges%2CUniversity+Sites%2CBuildings%2CTransport&mapfeature=mfid1059%2CBuildings",
+      "Fisher Building, St John’s College, Cambridge, UK"
+    ],
+    [
+      "https://maps.google.com/maps?q=St.%20John%27s%20College%2C%20St.%20Johns%20Street%2C%20Cambridge%2C%20CB2%201TP&t=m&z=13&output=embed&iwloc=near",
+      "View map"
+    ],
+    [
+      "https://cheri-alliance.github.io/news-and-events/events-and-archive/cheri-blossoms/",
+      "View the complete series"
+    ],
+    [
+      "https://cheri-alliance.github.io/events/cheri-blossoms-conference-2027/",
+      "CHERI Blossoms Conference 2027"
+    ],
+    [
+      "https://cheri-alliance.github.io/events/cheri-blossoms-tutorial-2026/",
+      "Hands-on Introduction to CHERI and CHERIoT"
+    ],
+    [
+      "https://cheri-alliance.github.io/events/cheri-blossoms-conference-2026/",
+      "CHERI Blossoms Conference 2026"
+    ],
+    [
+      "https://cheri-alliance.github.io/news-and-events/events-and-archive/past-events/",
+      "Back to past events"
+    ]
+  ],
+  "images": [
+    [
+      "https://cheri-alliance.github.io/assets/images/content/events/cheri-blossoms-conference-2025/hero.png",
+      "CHERI Blossoms Conference 2025"
+    ],
+    [
+      "https://cheri-alliance.github.io/assets/images/content/events/cheri-blossoms-conference-2025/st-johns-college-front.jpg",
+      "St John's College, Cambridge"
+    ],
+    [
+      "https://cheri-alliance.github.io/assets/images/content/events/cheri-blossoms-conference-2025/st-johns-college-bridge-of-sighs.jpg",
+      "St John's College, Cambridge, with the Bridge of Sighs"
+    ],
+    [
+      "https://cheri-alliance.github.io/assets/images/thumbnails/events/cheri-blossoms-conference-2027.webp",
+      ""
+    ],
+    [
+      "https://cheri-alliance.github.io/assets/images/thumbnails/events/cheri-blossoms-tutorial-2026.webp",
+      ""
+    ],
+    [
+      "https://cheri-alliance.github.io/assets/images/thumbnails/events/cheri-blossoms-conference-2026.webp",
+      ""
+    ]
+  ],
+  "definitions": [
+    [
+      "dt",
+      "Status"
+    ],
+    [
+      "dd",
+      "Past"
+    ],
+    [
+      "dt",
+      "Format"
+    ],
+    [
+      "dd",
+      "Conference"
+    ],
+    [
+      "dt",
+      "Date"
+    ],
+    [
+      "dd",
+      "2 April 2025"
+    ],
+    [
+      "dt",
+      "Location"
+    ],
+    [
+      "dd",
+      "St John's College, Cambridge, UK"
+    ],
+    [
+      "dt",
+      "Series"
+    ],
+    [
+      "dd",
+      "CHERI Blossoms"
+    ]
+  ],
+  "code_blocks": []
+}

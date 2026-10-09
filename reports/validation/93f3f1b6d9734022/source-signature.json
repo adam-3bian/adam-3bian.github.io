@@ -1,0 +1,101 @@
+{
+  "text": "Alliance Members SRI SRI SRI creates and delivers world-changing solutions for a safer, healthier, and more sustainable future. A global leader in R&D with deep roots in Silicon Valley, SRI is an independent nonprofit research institute with a rich history of supporting… Status Founding member Membership Community Member Website Visit member website Description SRI creates and delivers world-changing solutions for a safer, healthier, and more sustainable future. A global leader in R&D with deep roots in Silicon Valley, SRI is an independent nonprofit research institute with a rich history of supporting government and industry. For almost 80 years, we have collaborated across technical and scientific disciplines to discover and develop groundbreaking products and technologies and bring innovations and ideas to the marketplace. CHERI Activities Since 2010, SRI has partnered with the University of Cambridge to develop CHERI. Our partnership has developed early CHERI prototypes under the DARPA CRASH program, have worked with Arm since 2014 to add CHERI to the Armv8-A architecture, and developed CHERI-RISC-V under the DARPA SSITH program. SRI leads the development of CheriBSD (FreeBSD adapted to support CHERI) and CheriABI (a pure-capability POSIX programing model). Open-source Assets for CHERI https://www.cheribsd.org Back to all members",
+  "headings": [
+    [
+      "h1",
+      "SRI",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Description",
+      "description"
+    ],
+    [
+      "h2",
+      "CHERI Activities",
+      "cheri-activities"
+    ],
+    [
+      "h2",
+      "Open-source Assets for CHERI",
+      "open-source-assets-for-cheri"
+    ]
+  ],
+  "paragraphs": [
+    "Alliance",
+    "Members",
+    "SRI",
+    "SRI creates and delivers world-changing solutions for a safer, healthier, and more sustainable future. A global leader in R&D with deep roots in Silicon Valley, SRI is an independent nonprofit research institute with a rich history of supporting…",
+    "SRI creates and delivers world-changing solutions for a safer, healthier, and more sustainable future. A global leader in R&D with deep roots in Silicon Valley, SRI is an independent nonprofit research institute with a rich history of supporting government and industry. For almost 80 years, we have collaborated across technical and scientific disciplines to discover and develop groundbreaking products and technologies and bring innovations and ideas to the marketplace.",
+    "Since 2010, SRI has partnered with the University of Cambridge to develop CHERI. Our partnership has developed early CHERI prototypes under the DARPA CRASH program, have worked with Arm since 2014 to add CHERI to the Armv8-A architecture, and developed CHERI-RISC-V under the DARPA SSITH program. SRI leads the development of CheriBSD (FreeBSD adapted to support CHERI) and CheriABI (a pure-capability POSIX programing model).",
+    "https://www.cheribsd.org",
+    "Back to all members"
+  ],
+  "lists": [
+    [
+      "ol",
+      "Alliance Members SRI"
+    ],
+    [
+      "li",
+      "Alliance"
+    ],
+    [
+      "li",
+      "Members"
+    ],
+    [
+      "li",
+      "SRI"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://sri.com/",
+      "Visit member website"
+    ],
+    [
+      "https://www.cheribsd.org",
+      "https://www.cheribsd.org"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/leadership/members/",
+      "Back to all members"
+    ]
+  ],
+  "images": [
+    [
+      "https://cheri-alliance.github.io/assets/images/content/members/sri/logo.png",
+      "SRI logo"
+    ]
+  ],
+  "definitions": [
+    [
+      "dt",
+      "Status"
+    ],
+    [
+      "dd",
+      "Founding member"
+    ],
+    [
+      "dt",
+      "Membership"
+    ],
+    [
+      "dd",
+      "Community Member"
+    ],
+    [
+      "dt",
+      "Website"
+    ],
+    [
+      "dd",
+      "Visit member website"
+    ]
+  ],
+  "code_blocks": []
+}

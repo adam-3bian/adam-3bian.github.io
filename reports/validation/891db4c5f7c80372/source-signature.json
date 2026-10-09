@@ -1,0 +1,115 @@
+{
+  "text": "News & Events Speakers Jonathan Woodruff Jonathan Woodruff Capabilities Limited Organisation Capabilities Limited LinkedIn Biography Dr Jonathan Woodruff is a Senior Research Associate with expertise in processor architecture and microarchitecture as well as low-level software optimisation. Specialising in capability processor design, he has pushed into full-system optimisations including cache hierarchy, core timing, and multi-core designs as well as explorations into major security approaches including control flow integrity and private execution. CHERI Talks Performance Progress of CVA6-CHERI | CHERI Blossoms 2026 26/03/2026 Cambridge, UK View Slides View Video An open-source RV64Y implementation for commercialization | CHERITech’25 14/11/2025 Manchester, UK View Slides View Talk CHERI support for CVA6 | CHERI Blossoms 2025 02/04/2025 Cambridge, UK View Slides View Video Back to all speakers",
+  "headings": [
+    [
+      "h1",
+      "Jonathan Woodruff",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Biography",
+      "biography"
+    ],
+    [
+      "h2",
+      "CHERI Talks",
+      "cheri-talks"
+    ]
+  ],
+  "paragraphs": [
+    "News & Events",
+    "Speakers",
+    "Jonathan Woodruff",
+    "Capabilities Limited",
+    "LinkedIn",
+    "Dr Jonathan Woodruff is a Senior Research Associate with expertise in processor architecture and microarchitecture as well as low-level software optimisation.",
+    "Specialising in capability processor design, he has pushed into full-system optimisations including cache hierarchy, core timing, and multi-core designs as well as explorations into major security approaches including control flow integrity and private execution.",
+    "Performance Progress of CVA6-CHERI | CHERI Blossoms 2026",
+    "26/03/2026",
+    "Cambridge, UK",
+    "View Slides",
+    "View Video",
+    "An open-source RV64Y implementation for commercialization | CHERITech’25",
+    "14/11/2025",
+    "Manchester, UK",
+    "View Slides",
+    "View Talk",
+    "CHERI support for CVA6 | CHERI Blossoms 2025",
+    "02/04/2025",
+    "Cambridge, UK",
+    "View Slides",
+    "View Video",
+    "Back to all speakers"
+  ],
+  "lists": [
+    [
+      "ol",
+      "News & Events Speakers Jonathan Woodruff"
+    ],
+    [
+      "li",
+      "News & Events"
+    ],
+    [
+      "li",
+      "Speakers"
+    ],
+    [
+      "li",
+      "Jonathan Woodruff"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://www.linkedin.com/in/jonathan-woodruff-1a49502ab/",
+      "LinkedIn"
+    ],
+    [
+      "https://cheri-alliance.org/wp-content/uploads/2026/04/D2-2.1-Jonathan-Woodruff-CVA6-CHERI-Performance-CHERI-Blossoms-2026.pdf",
+      "View Slides"
+    ],
+    [
+      "https://youtu.be/cMhIKvF0-kw",
+      "View Video"
+    ],
+    [
+      "https://cheri-alliance.org/wp-content/uploads/2025/11/2.1-Jonathan-Woodruff-CHERITech25.pdf",
+      "View Slides"
+    ],
+    [
+      "https://youtu.be/nfpKp2krhh8",
+      "View Talk"
+    ],
+    [
+      "https://cheri-alliance.org/wp-content/uploads/2025/04/2.3-Jonathan-Woodruff-cva6-cheri-blossoms.pdf",
+      "View Slides"
+    ],
+    [
+      "https://youtu.be/poeXaSh0czg",
+      "View Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/news-and-events/people-and-opportunities/speakers/",
+      "Back to all speakers"
+    ]
+  ],
+  "images": [
+    [
+      "https://cheri-alliance.github.io/assets/images/content/people/jonathan-woodruff/portrait.png",
+      "Jonathan Woodruff"
+    ]
+  ],
+  "definitions": [
+    [
+      "dt",
+      "Organisation"
+    ],
+    [
+      "dd",
+      "Capabilities Limited"
+    ]
+  ],
+  "code_blocks": []
+}

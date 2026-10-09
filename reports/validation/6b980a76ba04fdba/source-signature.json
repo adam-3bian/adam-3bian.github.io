@@ -1,0 +1,113 @@
+{
+  "text": "Alliance Members University of Exeter University of Exeter The University of Exeter is a Russell Group university and a leading research-intensive institution located in the South West of England, UK. The Faculty of Environment, Science and Economy (ESE) at the University of Exeter is globally recognised for… Status Member Membership Community Member Website Visit member website Description The University of Exeter is a Russell Group university and a leading research-intensive institution located in the South West of England, UK. The Faculty of Environment, Science and Economy (ESE) at the University of Exeter is globally recognised for its interdisciplinary approach to solving critical technical challenges and its dedication to delivering world-class education and research that breaks new boundaries and has a positive impact on the world. Cyber security is one of the strategic areas of the Faculty and its Department of Computer Science. CHERI Activities The Software Assurance & Security group, led by Prof. Achim D. Brucker, develops tools, methods, and processes for developing safe, secure, reliable, resilient software systems. A particular focus are techniques for high-integrity systems. As partner of the AutoCHERI initiative, the group focused on evaluating static code analysis and verification techniques for the development of safety critical components in the automotive sector on top of the CHERI platform. Future and ongoing work focuses on utilising CHERI’s feature to make code analysis and verification techniques more lightweight and scalable while preserving their high level of safety, security, and correctness guarantees. Currently, we are also evaluating CHERI in the context of EN 50716. Back to all members",
+  "headings": [
+    [
+      "h1",
+      "University of Exeter",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Description",
+      "description"
+    ],
+    [
+      "h2",
+      "CHERI Activities",
+      "cheri-activities"
+    ]
+  ],
+  "paragraphs": [
+    "Alliance",
+    "Members",
+    "University of Exeter",
+    "The University of Exeter is a Russell Group university and a leading research-intensive institution located in the South West of England, UK. The Faculty of Environment, Science and Economy (ESE) at the University of Exeter is globally recognised for…",
+    "The",
+    "University of Exeter is a Russell Group university and a leading research-intensive institution located in the South West of England, UK. The Faculty of Environment, Science and Economy (ESE) at the University of Exeter is globally recognised for its interdisciplinary approach to solving critical technical challenges and its dedication to delivering world-class education and research that breaks new boundaries and has a positive impact on the world. Cyber security is one of the strategic areas of the Faculty and its Department of Computer Science.",
+    "The Software Assurance & Security group, led by",
+    "Prof. Achim D. Brucker, develops tools, methods, and processes for developing safe, secure, reliable, resilient software systems. A particular focus are techniques for high-integrity systems. As partner of the AutoCHERI initiative, the group focused on evaluating static code analysis and verification techniques for the development of safety critical components in the automotive sector on top of the CHERI platform. Future and ongoing work focuses on utilising CHERI’s feature to make code analysis and verification techniques more lightweight and scalable while preserving their high level of safety, security, and correctness guarantees. Currently, we are also evaluating CHERI in the context of EN 50716.",
+    "Back to all members"
+  ],
+  "lists": [
+    [
+      "ol",
+      "Alliance Members University of Exeter"
+    ],
+    [
+      "li",
+      "Alliance"
+    ],
+    [
+      "li",
+      "Members"
+    ],
+    [
+      "li",
+      "University of Exeter"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://logicalhacking.com/",
+      "Visit member website"
+    ],
+    [
+      "https://www.exeter.ac.uk",
+      "University of Exeter"
+    ],
+    [
+      "https://www.exeter.ac.uk/faculties/ese/",
+      "Faculty of Environment, Science and Economy (ESE)"
+    ],
+    [
+      "https://computerscience.exeter.ac.uk",
+      "Department of Computer Science"
+    ],
+    [
+      "https://brucker.uk",
+      "Prof. Achim D. Brucker"
+    ],
+    [
+      "https://autocheri.tech/",
+      "AutoCHERI"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/leadership/members/",
+      "Back to all members"
+    ]
+  ],
+  "images": [
+    [
+      "https://cheri-alliance.github.io/assets/images/content/members/university-of-exeter/logo.png",
+      "University of Exeter"
+    ]
+  ],
+  "definitions": [
+    [
+      "dt",
+      "Status"
+    ],
+    [
+      "dd",
+      "Member"
+    ],
+    [
+      "dt",
+      "Membership"
+    ],
+    [
+      "dd",
+      "Community Member"
+    ],
+    [
+      "dt",
+      "Website"
+    ],
+    [
+      "dd",
+      "Visit member website"
+    ]
+  ],
+  "code_blocks": []
+}

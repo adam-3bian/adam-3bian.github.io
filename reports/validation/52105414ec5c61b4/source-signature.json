@@ -1,0 +1,103 @@
+{
+  "text": "Alliance About & Governance 💾 Repository Management WG 💾 Repository Management WG Develops consistent practices for the structure, maintenance, contribution, quality, and stewardship of shared Alliance repositories and technical collateral. The Repository Management Working Group focuses on defining rules for participation, maintenance and contribution to CHERI open-source projects, managed or not by the Alliance. The repository management working group helps structure the CHERI-Alliance GitHub organisation. Our aim is to have high quality resources available and to foster collaboration in the community. We also want to set up organisation-wide rules that improve the quality for our community. Group type Programme and ecosystem Areas of collaboration Repository structure and ownership Contribution and maintenance Quality and long-term stewardship Enquire about this group Back to all working groups Where next CHERI Alliance on GitHub Discover the CHERI Alliance repositories on GitHub. Continue",
+  "headings": [
+    [
+      "h1",
+      "💾 Repository Management WG",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Where next",
+      null
+    ],
+    [
+      "h3",
+      "CHERI Alliance on GitHub",
+      null
+    ]
+  ],
+  "paragraphs": [
+    "Alliance",
+    "About & Governance",
+    "💾 Repository Management WG",
+    "Develops consistent practices for the structure, maintenance, contribution, quality, and stewardship of shared Alliance repositories and technical collateral.",
+    "The Repository Management Working Group focuses on defining rules for participation, maintenance and contribution to CHERI open-source projects, managed or not by the Alliance. The repository management working group helps structure the CHERI-Alliance GitHub organisation.",
+    "Our aim is to have high quality resources available and to foster collaboration in the community. We also want to set up organisation-wide rules that improve the quality for our community.",
+    "Repository structure and ownership",
+    "Contribution and maintenance",
+    "Quality and long-term stewardship",
+    "Enquire about this group",
+    "Back to all working groups",
+    "Discover the CHERI Alliance repositories on GitHub."
+  ],
+  "lists": [
+    [
+      "ol",
+      "Alliance About & Governance 💾 Repository Management WG"
+    ],
+    [
+      "li",
+      "Alliance"
+    ],
+    [
+      "li",
+      "About & Governance"
+    ],
+    [
+      "li",
+      "💾 Repository Management WG"
+    ],
+    [
+      "ul",
+      "Repository structure and ownership Contribution and maintenance Quality and long-term stewardship"
+    ],
+    [
+      "li",
+      "Repository structure and ownership"
+    ],
+    [
+      "li",
+      "Contribution and maintenance"
+    ],
+    [
+      "li",
+      "Quality and long-term stewardship"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://cheri-alliance.github.io/alliance/membership/contact/",
+      "Enquire about this group"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/about-and-governance/working-groups/",
+      "Back to all working groups"
+    ],
+    [
+      "https://github.com/CHERI-Alliance",
+      "CHERI Alliance on GitHub Discover the CHERI Alliance repositories on GitHub. Continue"
+    ]
+  ],
+  "images": [],
+  "definitions": [
+    [
+      "dt",
+      "Group type"
+    ],
+    [
+      "dd",
+      "Programme and ecosystem"
+    ],
+    [
+      "dt",
+      "Areas of collaboration"
+    ],
+    [
+      "dd",
+      "Repository structure and ownership Contribution and maintenance Quality and long-term stewardship"
+    ]
+  ],
+  "code_blocks": []
+}

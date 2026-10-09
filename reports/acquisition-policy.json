@@ -1,0 +1,10 @@
+{
+  "method": "live-public-crawl",
+  "user_authorization": "Let\u2019s crawl the live sites, so do this!",
+  "source_exports": "optional complementary evidence; uploaded archives remain unread",
+  "sources": [
+    "https://cheri-alliance.org/",
+    "https://cheri-alliance.github.io/"
+  ],
+  "private_form_submissions": "out of scope"
+}

@@ -1,0 +1,48 @@
+{
+  "main_text": "News & Events\nSpeakers\nAndrew Murray\nAndrew Murray\n\nThe Good Penguin\n\nOrganisation\nThe Good Penguin\nLinkedIn\nBiography\n\nAndrew Murray is founder and director of The Good Penguin, a UK based consultancy with a focus and passion for embedded Linux, low level and open-source software. The Good Penguin has contributed to the ISCF Digital Security by Design programme, developing and maintaining ARM’s official Morello Yocto distribution. Before founding The Good Penguin, Andrew established Embedded Bits, an embedded Linux consultancy, which is now the UK presence for Witekio.\n\nAndrew has previously worked at Arm within the Open Source Software team working as a Linux kernel developer. There, he delivered upstream support for ARMv8-A architectural features which included support for PMU, KVM, coresight, atomics and profiling.\n\nCHERI Talks\n\nThe Capable Hub: Our Recent Work and Next Steps | CHERI Blossoms 2026\n\n26/03/2026\n\nCambridge, UK\n\nView Slides\n\nView Video\n\nIntroducing a development Hub | CHERITech’25\n\n14/11/2025\n\nManchester, UK\n\nView Slides\n\nView Video\n\nBack to all speakers",
+  "images": [
+    {
+      "url": "http://127.0.0.1:41683/assets/people/andrew-murray/fa3b8031754b-portrait.png",
+      "rect": {
+        "x": 161,
+        "y": 399.953125,
+        "width": 279.59375,
+        "height": 372.78125
+      },
+      "natural_width": 900,
+      "natural_height": 1200
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/people/andrew-murray/",
+  "checks": {
+    "visible_main_text": true,
+    "header_text": true,
+    "footer_text": true,
+    "copyright_text": true,
+    "image_count": true,
+    "image_integrity": true,
+    "desktop_image_geometry": true
+  },
+  "image_checks": [
+    {
+      "source_url": "https://cheri-alliance.github.io/assets/images/content/people/andrew-murray/portrait.png",
+      "mapped_url_correct": true,
+      "loaded": true,
+      "geometry_delta_px": {
+        "x": 0,
+        "y": 0.0,
+        "width": 0.0,
+        "height": 0.0
+      }
+    }
+  ]
+}

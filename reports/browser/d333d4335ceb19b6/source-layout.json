@@ -1,0 +1,61 @@
+{
+  "main_text": "Alliance\nMembers\nZAYA\nZAYA\n\nWe offer security solutions and containerisation for microcontrollers and embedded systems, addressing specific security needs for small and compact devices in markets such as IoT, Secure Elements, and Automotive. Positioned at the cutting edge of…\n\nStatus\nMember\nMembership\nFull Member\nWebsite\nVisit member website\nDescription\n\nWe offer security solutions and containerisation for microcontrollers and embedded systems, addressing specific security needs for small and compact devices in markets such as IoT, Secure Elements, and Automotive. Positioned at the cutting edge of IoT device security, ZAYA is the most secure and lightweight operating system on the market. Adopting a unique modular approach, it redefines security standards. From secure isolation and encrypted communications to containerised applications and services, ZAYA provides unmatched security against potential threats, ensuring the integrity of your IoT ecosystem.\n\nCHERI Activities\n\nWe are currently in the research stage.\n\nCHERI Products\nBack to all members",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 1131.5
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/members/zaya/logo.png",
+      "alt": "ZAYA logo",
+      "rect": {
+        "x": 196.578125,
+        "y": 488.421875,
+        "width": 208.421875,
+        "height": 137.71875
+      },
+      "natural_width": 1200,
+      "natural_height": 566,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 463.421875,
+        "width": 281.59375,
+        "height": 187.71875
+      },
+      "parent_classes": [
+        "entity-media",
+        "entity-media--logo"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 463.421875,
+        "width": 742.40625,
+        "height": 512.28125
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/members/zaya/",
+  "final_url": "https://cheri-alliance.github.io/members/zaya/",
+  "retrieved_at": "2026-10-09T21:54:45.887534+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

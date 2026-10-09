@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/people/murali-vijayaraghavan/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/people/murali-vijayaraghavan/cf34c2ea389a-portrait.jpg": "https://cheri-alliance.github.io/assets/images/content/people/murali-vijayaraghavan/portrait.jpg"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

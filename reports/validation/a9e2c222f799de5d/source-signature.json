@@ -1,0 +1,207 @@
+{
+  "text": "Build Software Ecosystem Software Ecosystem Software Ecosystem The software surrounding CHERI connects capability-aware compilers with operating systems, runtimes, debuggers, emulators, and existing application code. From source code to capabilities Compiler and language work determines how source-level pointers, native interfaces, bounds, permissions, and calling conventions reach a CHERI target. LLVM & Clang The compiler infrastructure behind CheriBSD, Morello, CHERI-RISC-V, and CHERIoT software. Explore LLVM & Clang Rust How Rust language safety, unsafe native code, platform runtimes, and CHERI hardware protection relate. Explore Rust Complete software environments Operating-system support preserves capability state through processes, virtual memory, system calls, executable loading, drivers, faults, and user space. CheriBSD A FreeBSD-derived full-system environment for CHERI-RISC-V and Morello. Explore CheriBSD FreeBSD The upstream operating-system project from which CheriBSD is derived. Explore FreeBSD CHERI Linux Cross-architecture Linux work spanning the kernel, user space, toolchains, and platform SDKs. Explore CHERI Linux Zephyr Capability protection in the Zephyr embedded operating-system ecosystem. Explore Zephyr Real-Time Operating Systems The different RTOS and embedded-system routes being explored across CHERI. Explore RTOS work Making capability state visible Capability-aware diagnostics and public project information show how individual software environments represent, preserve, and report CHERI state. Debugging Tools GDB, LLDB, QEMU, operating-system diagnostics, and binary tools with capability-aware extensions. Explore debugging tools Porting Status Why support is reported by platform, ABI, operating system, package set, and project revision. Explore porting status Where next LLVM & Clang LLVM and Clang provide the compiler foundation used by much of the CHERI software ecosystem. Continue Related content Choose a Platform Compare the available hardware, FPGA, and simulation routes into CHERI development. Read this page Platform Comparison See how current CHERI development platforms differ in architecture, software, and availability. Read this page Capabilities Understand the capability model that underpins CHERI systems and software. Read this page",
+  "headings": [
+    [
+      "h1",
+      "Software Ecosystem",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "From source code to capabilities",
+      "directory-from-source-code-to-capabilities"
+    ],
+    [
+      "h3",
+      "LLVM & Clang",
+      null
+    ],
+    [
+      "h3",
+      "Rust",
+      null
+    ],
+    [
+      "h2",
+      "Complete software environments",
+      "directory-complete-software-environments"
+    ],
+    [
+      "h3",
+      "CheriBSD",
+      null
+    ],
+    [
+      "h3",
+      "FreeBSD",
+      null
+    ],
+    [
+      "h3",
+      "CHERI Linux",
+      null
+    ],
+    [
+      "h3",
+      "Zephyr",
+      null
+    ],
+    [
+      "h3",
+      "Real-Time Operating Systems",
+      null
+    ],
+    [
+      "h2",
+      "Making capability state visible",
+      "directory-making-capability-state-visible"
+    ],
+    [
+      "h3",
+      "Debugging Tools",
+      null
+    ],
+    [
+      "h3",
+      "Porting Status",
+      null
+    ],
+    [
+      "h2",
+      "Where next",
+      null
+    ],
+    [
+      "h3",
+      "LLVM & Clang",
+      null
+    ],
+    [
+      "h2",
+      "Related content",
+      null
+    ],
+    [
+      "h3",
+      "Choose a Platform",
+      null
+    ],
+    [
+      "h3",
+      "Platform Comparison",
+      null
+    ],
+    [
+      "h3",
+      "Capabilities",
+      null
+    ]
+  ],
+  "paragraphs": [
+    "Build",
+    "Software Ecosystem",
+    "Software Ecosystem",
+    "The software surrounding CHERI connects capability-aware compilers with operating systems, runtimes, debuggers, emulators, and existing application code.",
+    "Compiler and language work determines how source-level pointers, native interfaces, bounds, permissions, and calling conventions reach a CHERI target.",
+    "The compiler infrastructure behind CheriBSD, Morello, CHERI-RISC-V, and CHERIoT software.",
+    "Explore LLVM & Clang",
+    "How Rust language safety, unsafe native code, platform runtimes, and CHERI hardware protection relate.",
+    "Explore Rust",
+    "Operating-system support preserves capability state through processes, virtual memory, system calls, executable loading, drivers, faults, and user space.",
+    "A FreeBSD-derived full-system environment for CHERI-RISC-V and Morello.",
+    "Explore CheriBSD",
+    "The upstream operating-system project from which CheriBSD is derived.",
+    "Explore FreeBSD",
+    "Cross-architecture Linux work spanning the kernel, user space, toolchains, and platform SDKs.",
+    "Explore CHERI Linux",
+    "Capability protection in the Zephyr embedded operating-system ecosystem.",
+    "Explore Zephyr",
+    "The different RTOS and embedded-system routes being explored across CHERI.",
+    "Explore RTOS work",
+    "Capability-aware diagnostics and public project information show how individual software environments represent, preserve, and report CHERI state.",
+    "GDB, LLDB, QEMU, operating-system diagnostics, and binary tools with capability-aware extensions.",
+    "Explore debugging tools",
+    "Why support is reported by platform, ABI, operating system, package set, and project revision.",
+    "Explore porting status",
+    "LLVM and Clang provide the compiler foundation used by much of the CHERI software ecosystem.",
+    "Compare the available hardware, FPGA, and simulation routes into CHERI development.",
+    "See how current CHERI development platforms differ in architecture, software, and availability.",
+    "Understand the capability model that underpins CHERI systems and software."
+  ],
+  "lists": [
+    [
+      "ol",
+      "Build Software Ecosystem Software Ecosystem"
+    ],
+    [
+      "li",
+      "Build"
+    ],
+    [
+      "li",
+      "Software Ecosystem"
+    ],
+    [
+      "li",
+      "Software Ecosystem"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://cheri-alliance.github.io/build/software-ecosystem/llvm-and-clang/",
+      "LLVM & Clang"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/software-ecosystem/rust/",
+      "Rust"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/software-ecosystem/cheribsd/",
+      "CheriBSD"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/software-ecosystem/freebsd/",
+      "FreeBSD"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/software-ecosystem/cheri-linux/",
+      "CHERI Linux"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/software-ecosystem/zephyr/",
+      "Zephyr"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/software-ecosystem/real-time-operating-systems/",
+      "Real-Time Operating Systems"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/software-ecosystem/debugging-tools/",
+      "Debugging Tools"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/software-ecosystem/porting-status/",
+      "Porting Status"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/software-ecosystem/llvm-and-clang/",
+      "LLVM & Clang LLVM and Clang provide the compiler foundation used by much of the CHERI software ecosystem. Continue"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/developers/choose-a-platform/",
+      "Choose a Platform Compare the available hardware, FPGA, and simulation routes into CHERI development. Read this page"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/platforms/platform-comparison/",
+      "Platform Comparison See how current CHERI development platforms differ in architecture, software, and availability. Read this page"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/technology/capabilities/",
+      "Capabilities Understand the capability model that underpins CHERI systems and software. Read this page"
+    ]
+  ],
+  "images": [],
+  "definitions": [],
+  "code_blocks": []
+}

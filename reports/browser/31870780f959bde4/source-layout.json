@@ -1,0 +1,61 @@
+{
+  "main_text": "Alliance\nMembers\nKing Abdullah University of Science and Technology (KAUST)\nKing Abdullah University of Science and Technology (KAUST)\n\nDetails to follow.\n\nStatus\nMember\nMembership\nFull Member\nWebsite\nVisit member website\nDescription\n\nDetails to follow.\n\nCHERI Activities\n\nDetails to follow\n\nBack to all members",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 1067.6875
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/members/king-abdullah-university-of-science-and-technology-kaust/logo.png",
+      "alt": "KAUST logo",
+      "rect": {
+        "x": 196.578125,
+        "y": 490.578125,
+        "width": 208.421875,
+        "height": 137.71875
+      },
+      "natural_width": 2000,
+      "natural_height": 395,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 465.578125,
+        "width": 281.59375,
+        "height": 187.71875
+      },
+      "parent_classes": [
+        "entity-media",
+        "entity-media--logo"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 465.578125,
+        "width": 742.40625,
+        "height": 253.5625
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/members/king-abdullah-university-of-science-and-technology-kaust/",
+  "final_url": "https://cheri-alliance.github.io/members/king-abdullah-university-of-science-and-technology-kaust/",
+  "retrieved_at": "2026-10-09T21:54:02.432149+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

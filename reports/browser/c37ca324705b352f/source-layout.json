@@ -1,0 +1,60 @@
+{
+  "main_text": "News & Events\nNews & Analysis\nUK Government report highlights the CHERI Alliance\nUK Government report highlights the CHERI Alliance\n\nThe Department for Science Innovation and Technology (DSIT) of the British Government has published a report about CHERI adoption and diffusion, to “understand the potential market” for CHERI and “how the Department can encourage and support the…\n\n16 May 2024\nGovernment / Regulation\n\nThe Department for Science Innovation and Technology (DSIT) of the British Government has published a report about CHERI adoption and diffusion, to “understand the potential market” for CHERI and “how the Department can encourage and support the adoption and diffusion of the technology in semiconductors”.\n\nWe are proud to see that the CHERI Alliance is highlighted in this report, even though the Alliance has been very recently formed.\n\nBack to Latest News",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 1487.515625
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/news/uk-government-report-highlights-the-cheri-alliance/hero.jpg",
+      "alt": "UK Government report highlights the CHERI Alliance",
+      "rect": {
+        "x": 177,
+        "y": 595.84375,
+        "width": 958,
+        "height": 502.9375
+      },
+      "natural_width": 480,
+      "natural_height": 252,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 578.84375,
+        "width": 992,
+        "height": 536.9375
+      },
+      "parent_classes": [
+        "collection-detail__lead-image"
+      ],
+      "body_rect": {
+        "x": 160,
+        "y": 1171.78125,
+        "width": 992,
+        "height": 159.9375
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/news/uk-government-report-highlights-the-cheri-alliance/",
+  "final_url": "https://cheri-alliance.github.io/news/uk-government-report-highlights-the-cheri-alliance/",
+  "retrieved_at": "2026-10-09T21:06:54.092689+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

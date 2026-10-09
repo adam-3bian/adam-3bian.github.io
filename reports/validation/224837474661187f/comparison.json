@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/people/haydn-povey/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/people/haydn-povey/96fd3cae5bca-portrait.png": "https://cheri-alliance.github.io/assets/images/content/people/haydn-povey/portrait.png"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

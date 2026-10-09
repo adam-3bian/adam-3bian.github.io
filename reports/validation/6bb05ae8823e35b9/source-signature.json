@@ -1,0 +1,149 @@
+{
+  "text": "Build Software Ecosystem Real-Time Operating Systems Real-Time Operating Systems CHERI is being explored across several embedded and real-time software models, from capability-first RTOS designs to ports of established ecosystems. Embedded systems cover a wide range of timing, memory, power, assurance, device, and compatibility requirements. CHERI appears in this landscape through both new capability-oriented platforms and ports of established real-time operating systems. Different routes into embedded CHERI CHERIoT CHERIoT co-designs a CHERI instruction-set profile, RTOS, compartment model, linker, allocator, and SDK for small embedded systems. Capability protection is part of the platform’s foundation rather than an extension to a conventional process model. Zephyr CHERI-enabled Zephyr brings capability state and memory protection into Zephyr’s existing kernel, APIs, drivers, configuration system, and board ecosystem. Its attraction is continuity with software already built around Zephyr. FreeRTOS CHERI FreeRTOS work explores capability protection and compartments around a widely deployed real-time kernel and its familiar application interfaces. The Alliance working group provides a forum for common approaches across ports and platforms. seL4 and Microkit seL4 is a verified microkernel rather than a conventional RTOS, but it is relevant to embedded and real-time systems that need strong isolation and assurance. CHERI work connects architectural memory capabilities with seL4’s existing capability-based kernel model and Microkit components. What distinguishes the platforms The projects differ in architecture profile, kernel model, compartment design, existing APIs, device support, toolchain integration, temporal-safety mechanisms, assurance evidence, and relationship with upstream communities. Those differences reflect distinct product and research goals. They are not interchangeable implementations of one CHERI RTOS specification. Alliance collaboration Related groups include CHERI FreeRTOS, CHERI Zephyr, CHERI for seL4, and MMU-less Systems. Where next LLVM & Clang LLVM and Clang provide the compiler foundation used by current CHERI embedded environments. Continue Related content Zephyr CHERI capability support within the Zephyr embedded operating-system ecosystem. Read this page CHERIoT An embedded hardware-software architecture designed around CHERI compartments. Read this page MMU-less Systems Working Group Alliance collaboration across shared-address-space and resource-constrained CHERI systems. Read this page",
+  "headings": [
+    [
+      "h1",
+      "Real-Time Operating Systems",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Different routes into embedded CHERI",
+      "different-routes-into-embedded-cheri"
+    ],
+    [
+      "h3",
+      "CHERIoT",
+      "cheriot"
+    ],
+    [
+      "h3",
+      "Zephyr",
+      "zephyr"
+    ],
+    [
+      "h3",
+      "FreeRTOS",
+      "freertos"
+    ],
+    [
+      "h3",
+      "seL4 and Microkit",
+      "sel4-and-microkit"
+    ],
+    [
+      "h2",
+      "What distinguishes the platforms",
+      "what-distinguishes-the-platforms"
+    ],
+    [
+      "h2",
+      "Alliance collaboration",
+      "alliance-collaboration"
+    ],
+    [
+      "h2",
+      "Where next",
+      null
+    ],
+    [
+      "h3",
+      "LLVM & Clang",
+      null
+    ],
+    [
+      "h2",
+      "Related content",
+      null
+    ],
+    [
+      "h3",
+      "Zephyr",
+      null
+    ],
+    [
+      "h3",
+      "CHERIoT",
+      null
+    ],
+    [
+      "h3",
+      "MMU-less Systems Working Group",
+      null
+    ]
+  ],
+  "paragraphs": [
+    "Build",
+    "Software Ecosystem",
+    "Real-Time Operating Systems",
+    "CHERI is being explored across several embedded and real-time software models, from capability-first RTOS designs to ports of established ecosystems.",
+    "Embedded systems cover a wide range of timing, memory, power, assurance, device, and compatibility requirements. CHERI appears in this landscape through both new capability-oriented platforms and ports of established real-time operating systems.",
+    "CHERIoT co-designs a CHERI instruction-set profile, RTOS, compartment model, linker, allocator, and SDK for small embedded systems. Capability protection is part of the platform’s foundation rather than an extension to a conventional process model.",
+    "CHERI-enabled Zephyr brings capability state and memory protection into Zephyr’s existing kernel, APIs, drivers, configuration system, and board ecosystem. Its attraction is continuity with software already built around Zephyr.",
+    "CHERI FreeRTOS work explores capability protection and compartments around a widely deployed real-time kernel and its familiar application interfaces. The Alliance working group provides a forum for common approaches across ports and platforms.",
+    "seL4 is a verified microkernel rather than a conventional RTOS, but it is relevant to embedded and real-time systems that need strong isolation and assurance. CHERI work connects architectural memory capabilities with seL4’s existing capability-based kernel model and Microkit components.",
+    "The projects differ in architecture profile, kernel model, compartment design, existing APIs, device support, toolchain integration, temporal-safety mechanisms, assurance evidence, and relationship with upstream communities.",
+    "Those differences reflect distinct product and research goals. They are not interchangeable implementations of one CHERI RTOS specification.",
+    "Related groups include CHERI FreeRTOS, CHERI Zephyr, CHERI for seL4, and MMU-less Systems.",
+    "LLVM and Clang provide the compiler foundation used by current CHERI embedded environments.",
+    "CHERI capability support within the Zephyr embedded operating-system ecosystem.",
+    "An embedded hardware-software architecture designed around CHERI compartments.",
+    "Alliance collaboration across shared-address-space and resource-constrained CHERI systems."
+  ],
+  "lists": [
+    [
+      "ol",
+      "Build Software Ecosystem Real-Time Operating Systems"
+    ],
+    [
+      "li",
+      "Build"
+    ],
+    [
+      "li",
+      "Software Ecosystem"
+    ],
+    [
+      "li",
+      "Real-Time Operating Systems"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://cheri-alliance.github.io/alliance/leadership/working-groups/cheri-freertos/",
+      "CHERI FreeRTOS"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/leadership/working-groups/cheri-zephyr/",
+      "CHERI Zephyr"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/leadership/working-groups/cheri-for-sel4/",
+      "CHERI for seL4"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/leadership/working-groups/mmu-less-systems/",
+      "MMU-less Systems"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/software-ecosystem/llvm-and-clang/",
+      "LLVM & Clang LLVM and Clang provide the compiler foundation used by current CHERI embedded environments. Continue"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/software-ecosystem/zephyr/",
+      "Zephyr CHERI capability support within the Zephyr embedded operating-system ecosystem. Read this page"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/platforms/cheriot/",
+      "CHERIoT An embedded hardware-software architecture designed around CHERI compartments. Read this page"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/leadership/working-groups/mmu-less-systems/",
+      "MMU-less Systems Working Group Alliance collaboration across shared-address-space and resource-constrained CHERI systems. Read this page"
+    ]
+  ],
+  "images": [],
+  "definitions": [],
+  "code_blocks": []
+}

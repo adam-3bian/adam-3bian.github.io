@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/people/louis-emile-ploix/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/people/louis-emile-ploix/e17556199b26-portrait.jpg": "https://cheri-alliance.github.io/assets/images/content/people/louis-emile-ploix/portrait.jpg"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

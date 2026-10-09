@@ -1,0 +1,177 @@
+{
+  "text": "Build Software Ecosystem CheriBSD CheriBSD CheriBSD adapts FreeBSD for CHERI-RISC-V and Morello, providing a complete environment for pure-capability software and compartment research. CHERI support in a general-purpose operating system reaches far beyond the processor and compiler. Capability state passes through process management, virtual memory, executable loading, dynamic linking, system calls, signals, faults, debugging, and application libraries. CheriBSD provides this full-system environment for CHERI-RISC-V and Arm Morello. What the system contains CheriBSD integrates CHERI across the kernel, hybrid and pure-capability ABIs, system libraries, the runtime linker, developer tools, QEMU, hardware targets, and a ports collection of adapted third-party software. Its FreeBSD foundation provides familiar Unix interfaces, filesystems, networking, build infrastructure, and source organisation while enabling extensive changes to pointer representation and memory authority. Development environments CHERI-RISC-V and QEMU The cheribuild project assembles a matching compiler, emulator, operating system, and disk image. This creates a reproducible application-class environment that does not depend on physical hardware. Morello CheriBSD supports Morello’s hybrid and pure-capability software models. The environment combines Morello-specific firmware, an Arm-targeted CHERI toolchain, operating-system images, and board support. Other CHERI-RISC-V platforms FPGA systems and processor implementations can support CheriBSD when their architecture and platform devices match the relevant operating-system port. Board support and architecture revisions remain platform-specific. Pure-capability user space CheriABI established a process environment in which language-visible pointers use capabilities. It has supported ports of system utilities, libraries, servers, databases, language runtimes, and other substantial C and C++ software. The resulting ports history is a significant body of evidence about compatibility issues exposed by capability pointers and pure-capability ABIs. Relationship to FreeBSD CheriBSD tracks and adapts FreeBSD rather than defining an unrelated operating system. Generally useful changes can move into FreeBSD, while CHERI architecture and ABI work continues in CheriBSD until an appropriate upstream route exists. A stock FreeBSD release does not currently provide the complete CheriBSD environment. Current scope CheriBSD is an important research and development platform rather than a Linux substitute or a single product configuration. Morello and CHERI-RISC-V binaries are architecture-specific, package coverage varies, and temporal-safety properties depend on the allocator and system configuration. Project links cheribuild CheriBSD source CheriBSD Getting Started CheriBSD ports Where next FreeBSD FreeBSD is the upstream operating-system project from which CheriBSD is derived. Continue Related content LLVM & Clang The compiler infrastructure used by the CheriBSD software stack. Read this page Choose a Platform Compare QEMU, Morello, FPGA, and other CHERI development routes. Read this page",
+  "headings": [
+    [
+      "h1",
+      "CheriBSD",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "What the system contains",
+      "what-the-system-contains"
+    ],
+    [
+      "h2",
+      "Development environments",
+      "development-environments"
+    ],
+    [
+      "h3",
+      "CHERI-RISC-V and QEMU",
+      "cheri-risc-v-and-qemu"
+    ],
+    [
+      "h3",
+      "Morello",
+      "morello"
+    ],
+    [
+      "h3",
+      "Other CHERI-RISC-V platforms",
+      "other-cheri-risc-v-platforms"
+    ],
+    [
+      "h2",
+      "Pure-capability user space",
+      "pure-capability-user-space"
+    ],
+    [
+      "h2",
+      "Relationship to FreeBSD",
+      "relationship-to-freebsd"
+    ],
+    [
+      "h2",
+      "Current scope",
+      "current-scope"
+    ],
+    [
+      "h2",
+      "Project links",
+      "project-links"
+    ],
+    [
+      "h2",
+      "Where next",
+      null
+    ],
+    [
+      "h3",
+      "FreeBSD",
+      null
+    ],
+    [
+      "h2",
+      "Related content",
+      null
+    ],
+    [
+      "h3",
+      "LLVM & Clang",
+      null
+    ],
+    [
+      "h3",
+      "Choose a Platform",
+      null
+    ]
+  ],
+  "paragraphs": [
+    "Build",
+    "Software Ecosystem",
+    "CheriBSD",
+    "CheriBSD adapts FreeBSD for CHERI-RISC-V and Morello, providing a complete environment for pure-capability software and compartment research.",
+    "CHERI support in a general-purpose operating system reaches far beyond the processor and compiler. Capability state passes through process management, virtual memory, executable loading, dynamic linking, system calls, signals, faults, debugging, and application libraries.",
+    "CheriBSD provides this full-system environment for CHERI-RISC-V and Arm Morello.",
+    "CheriBSD integrates CHERI across the kernel, hybrid and pure-capability ABIs, system libraries, the runtime linker, developer tools, QEMU, hardware targets, and a ports collection of adapted third-party software.",
+    "Its FreeBSD foundation provides familiar Unix interfaces, filesystems, networking, build infrastructure, and source organisation while enabling extensive changes to pointer representation and memory authority.",
+    "The cheribuild project assembles a matching compiler, emulator, operating system, and disk image. This creates a reproducible application-class environment that does not depend on physical hardware.",
+    "CheriBSD supports Morello’s hybrid and pure-capability software models. The environment combines Morello-specific firmware, an Arm-targeted CHERI toolchain, operating-system images, and board support.",
+    "FPGA systems and processor implementations can support CheriBSD when their architecture and platform devices match the relevant operating-system port. Board support and architecture revisions remain platform-specific.",
+    "CheriABI established a process environment in which language-visible pointers use capabilities. It has supported ports of system utilities, libraries, servers, databases, language runtimes, and other substantial C and C++ software.",
+    "The resulting ports history is a significant body of evidence about compatibility issues exposed by capability pointers and pure-capability ABIs.",
+    "CheriBSD tracks and adapts FreeBSD rather than defining an unrelated operating system. Generally useful changes can move into FreeBSD, while CHERI architecture and ABI work continues in CheriBSD until an appropriate upstream route exists.",
+    "A stock FreeBSD release does not currently provide the complete CheriBSD environment.",
+    "CheriBSD is an important research and development platform rather than a Linux substitute or a single product configuration. Morello and CHERI-RISC-V binaries are architecture-specific, package coverage varies, and temporal-safety properties depend on the allocator and system configuration.",
+    "cheribuild",
+    "CheriBSD source",
+    "CheriBSD Getting Started",
+    "CheriBSD ports",
+    "FreeBSD is the upstream operating-system project from which CheriBSD is derived.",
+    "The compiler infrastructure used by the CheriBSD software stack.",
+    "Compare QEMU, Morello, FPGA, and other CHERI development routes."
+  ],
+  "lists": [
+    [
+      "ol",
+      "Build Software Ecosystem CheriBSD"
+    ],
+    [
+      "li",
+      "Build"
+    ],
+    [
+      "li",
+      "Software Ecosystem"
+    ],
+    [
+      "li",
+      "CheriBSD"
+    ],
+    [
+      "ul",
+      "cheribuild CheriBSD source CheriBSD Getting Started CheriBSD ports"
+    ],
+    [
+      "li",
+      "cheribuild"
+    ],
+    [
+      "li",
+      "CheriBSD source"
+    ],
+    [
+      "li",
+      "CheriBSD Getting Started"
+    ],
+    [
+      "li",
+      "CheriBSD ports"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://github.com/CTSRD-CHERI/cheribuild",
+      "cheribuild"
+    ],
+    [
+      "https://github.com/CTSRD-CHERI/cheribsd",
+      "CheriBSD source"
+    ],
+    [
+      "https://www.cheribsd.org/getting-started/",
+      "CheriBSD Getting Started"
+    ],
+    [
+      "https://github.com/CTSRD-CHERI/cheribsd-ports",
+      "CheriBSD ports"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/software-ecosystem/freebsd/",
+      "FreeBSD FreeBSD is the upstream operating-system project from which CheriBSD is derived. Continue"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/software-ecosystem/llvm-and-clang/",
+      "LLVM & Clang The compiler infrastructure used by the CheriBSD software stack. Read this page"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/developers/choose-a-platform/",
+      "Choose a Platform Compare QEMU, Morello, FPGA, and other CHERI development routes. Read this page"
+    ]
+  ],
+  "images": [],
+  "definitions": [],
+  "code_blocks": []
+}

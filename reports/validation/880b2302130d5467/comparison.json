@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/news/building-a-safer-digital-future/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/news/building-a-safer-digital-future/87eb1aa83796-hero.png": "https://cheri-alliance.github.io/assets/images/content/news/building-a-safer-digital-future/hero.png"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

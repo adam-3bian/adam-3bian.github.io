@@ -1,0 +1,111 @@
+{
+  "text": "Alliance Members SCI Semiconductor SCI Semiconductor SCI Semiconductor was formed to lead the commercialisation of CHERI technologies and is a founder member of the CHERI Alliance. With a strong focus on secure and high-integrity computing, the organization has built a team of recognised industry… Status Founding member Membership Full Member Website Visit member website Description SCI Semiconductor was formed to lead the commercialisation of CHERI technologies and is a founder member of the CHERI Alliance. With a strong focus on secure and high-integrity computing, the organization has built a team of recognised industry leaders, with decades of leadership in security, processor IP and chip design, and high-integrity software. Through their ICENI device family the team is focused on development of high integrity microcontrollers based on the Microsoft CHERIoT Ibex core. CHERI Activities SCI Semiconductor is delivering commercial CHERIoT RV32E RISC-V based devices for microcontroller and embedded microprocessor applications. Their ICENI family is targeting a range of high-integrity and high-availability applications encompassing critical infrastructure, aerospace and defence, telecoms, medical and automotive applications. SCI is the co-owner of the CHERIoT core repository alongside Microsoft. CHERI Products https://www.scisemi.com Open-source Assets for CHERI https://cheriot.org Back to all members",
+  "headings": [
+    [
+      "h1",
+      "SCI Semiconductor",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Description",
+      "description"
+    ],
+    [
+      "h2",
+      "CHERI Activities",
+      "cheri-activities"
+    ],
+    [
+      "h2",
+      "CHERI Products",
+      "cheri-products"
+    ],
+    [
+      "h2",
+      "Open-source Assets for CHERI",
+      "open-source-assets-for-cheri"
+    ]
+  ],
+  "paragraphs": [
+    "Alliance",
+    "Members",
+    "SCI Semiconductor",
+    "SCI Semiconductor was formed to lead the commercialisation of CHERI technologies and is a founder member of the CHERI Alliance. With a strong focus on secure and high-integrity computing, the organization has built a team of recognised industry…",
+    "SCI Semiconductor was formed to lead the commercialisation of CHERI technologies and is a founder member of the CHERI Alliance. With a strong focus on secure and high-integrity computing, the organization has built a team of recognised industry leaders, with decades of leadership in security, processor IP and chip design, and high-integrity software. Through their ICENI device family the team is focused on development of high integrity microcontrollers based on the Microsoft CHERIoT Ibex core.",
+    "SCI Semiconductor is delivering commercial CHERIoT RV32E RISC-V based devices for microcontroller and embedded microprocessor applications. Their ICENI family is targeting a range of high-integrity and high-availability applications encompassing critical infrastructure, aerospace and defence, telecoms, medical and automotive applications. SCI is the co-owner of the CHERIoT core repository alongside Microsoft.",
+    "https://www.scisemi.com",
+    "https://cheriot.org",
+    "Back to all members"
+  ],
+  "lists": [
+    [
+      "ol",
+      "Alliance Members SCI Semiconductor"
+    ],
+    [
+      "li",
+      "Alliance"
+    ],
+    [
+      "li",
+      "Members"
+    ],
+    [
+      "li",
+      "SCI Semiconductor"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "http://www.scisemi.com/",
+      "Visit member website"
+    ],
+    [
+      "http://www.scisemi.com",
+      "https://www.scisemi.com"
+    ],
+    [
+      "https://cheriot.org",
+      "https://cheriot.org"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/leadership/members/",
+      "Back to all members"
+    ]
+  ],
+  "images": [
+    [
+      "https://cheri-alliance.github.io/assets/images/content/members/sci-semiconductor/logo.png",
+      "SCI Semiconductor logo"
+    ]
+  ],
+  "definitions": [
+    [
+      "dt",
+      "Status"
+    ],
+    [
+      "dd",
+      "Founding member"
+    ],
+    [
+      "dt",
+      "Membership"
+    ],
+    [
+      "dd",
+      "Full Member"
+    ],
+    [
+      "dt",
+      "Website"
+    ],
+    [
+      "dd",
+      "Visit member website"
+    ]
+  ],
+  "code_blocks": []
+}

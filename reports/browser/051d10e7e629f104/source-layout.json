@@ -1,0 +1,60 @@
+{
+  "main_text": "News & Events\nNews & Analysis\nThe leading Root-of-Trust now integrates CHERI security technology\nThe leading Root-of-Trust now integrates CHERI security technology\n\nAdam Finney – CHERI Alliance If you are building secure hardware, the way you protect software running inside that hardware matters just as much as the cryptography around it. That is why lowRISC‘s announcement that OpenTitan Earl Grey 2 will support…\n\n15 July 2026\nEcosystem\nMembers\n\nAdam Finney – CHERI Alliance\n\nIf you are building secure hardware, the way you protect software running inside that hardware matters just as much as the cryptography around it.\n\nThat is why lowRISC‘s announcement that OpenTitan Earl Grey 2 will support CHERI is important.\n\nOpenTitan is an open source hardware Root of Trust platform designed to protect some of the most sensitive parts of a system. The Earl Grey 2 version will add CHERI support through a CHERIoT configuration of the Ibex processor, alongside post-quantum cryptography and other security improvements.\n\nFor developers and organisations, this means another practical route to using CHERI in real hardware.\n\nCHERI helps prevent memory safety vulnerabilities and provides fine-grained software compartmentalisation enforced by the processor. Instead of relying entirely on software behaving correctly, hardware places stronger limits on what code is allowed to access.\n\nThis matters when the code handles keys, firmware, secure boot, device identity or other security-critical functions. CHERI can isolate each of those processes so that a vulnerability in one of them would not give an attacker access to anything else.\n\nEarl Grey 2 will keep CHERI optional, allowing existing users to continue using legacy ePMP-based protection while giving new projects the opportunity to design with stronger hardware-enforced protections from the outset.\n\nThis new version of OpenTitan demonstrates how CHERI can bring an additional layer of security to real systems.\n\nAs AI makes it easier to discover, understand and potentially exploit software vulnerabilities at scale, reducing the impact of those vulnerabilities becomes increasingly important. Memory safety, compartmentalisation, Root of Trust and post-quantum security are becoming part of the same wider challenge. We need to build systems that integrate more of those security by design technologies to protect devices preventively as both threats and attackers’ capabilities evolve.\n\nRead lowRISC’s full announcement to learn more about OpenTitan Earl Grey 2 and its roadmap.\n\nBack to Latest News",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 2305.390625
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/news/the-leading-root-of-trust-now-integrates-cheri-security-technology/hero.jpg",
+      "alt": "OpenTitan chip",
+      "rect": {
+        "x": 177,
+        "y": 662.46875,
+        "width": 958,
+        "height": 576
+      },
+      "natural_width": 1536,
+      "natural_height": 1024,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 645.46875,
+        "width": 992,
+        "height": 610
+      },
+      "parent_classes": [
+        "collection-detail__lead-image"
+      ],
+      "body_rect": {
+        "x": 160,
+        "y": 1311.46875,
+        "width": 992,
+        "height": 838.125
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/news/the-leading-root-of-trust-now-integrates-cheri-security-technology/",
+  "final_url": "https://cheri-alliance.github.io/news/the-leading-root-of-trust-now-integrates-cheri-security-technology/",
+  "retrieved_at": "2026-10-09T21:06:50.122150+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

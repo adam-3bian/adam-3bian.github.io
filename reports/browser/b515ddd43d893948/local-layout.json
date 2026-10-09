@@ -1,0 +1,48 @@
+{
+  "main_text": "News & Events\nNews & Analysis\nSecure and Resilient Systems in the Era of CRA and IoT\nSecure and Resilient Systems in the Era of CRA and IoT\n\nOn 21 January 2026, technology leaders, engineers, security practitioners and compliance specialists will gather at IWM Duxford for Secure Horizons 2026, a one day, in person event hosted by EPS Global. Set against the powerful backdrop of a former…\n\n6 January 2026\nEvents\nMembers\n\nOn 21 January 2026, technology leaders, engineers, security practitioners and compliance specialists will gather at IWM Duxford for Secure Horizons 2026, a one day, in person event hosted by EPS Global.\n\nSet against the powerful backdrop of a former Second World War airfield, Secure Horizons 2026 explores a challenge that feels increasingly urgent across every sector: how do we build digital systems that are not only compliant, but genuinely secure and resilient, in a rapidly evolving global regulatory landscape?\n\nNavigating IoT Compliance Beyond the Checkbox\n\nFrom mobile devices and cloud platforms to edge computing, IoT and deeply embedded hardware, digital systems now underpin almost every aspect of modern life. At the same time, regulations such as the Cyber Resilience Act are reshaping expectations around security, accountability and lifecycle responsibility.\n\nSecure Horizons 2026 is designed to move the conversation beyond minimum compliance. Through a series of expert led sessions, the event focuses on practical, real world strategies for designing systems that are secure by default, resilient by design, and robust enough to withstand both technical failures and regulatory scrutiny.\n\nA Day of Insight, Practice and Perspective\n\nThe day begins with arrivals and networking in the Concorde Suite, followed by a structured agenda that blends technical depth with strategic insight.\n\nSessions include:\n\nOvercoming CRA challenges and going beyond compliance through practical security frameworks\nDelivering memory safe computing for resilient systems\nStrengthening IoT devices through high quality randomness and secure key generation\nSimplifying semiconductor provisioning without sacrificing security\nAchieving comprehensive CRA compliance across edge, mobile and cloud environments\n\nSpeakers come from across the cybersecurity, semiconductor, IoT and compliance ecosystems, offering perspectives that span hardware through to cloud services.\n\nMidday, attendees will enjoy lunch, live demonstrations, networking and a guided tour of the museum itself. Walking among historic aircraft and artefacts provides a rare moment of reflection on how resilience, engineering and security have always played a defining role in protecting people, infrastructure and values.\n\nWhy Attend Secure Horizons 2026\n\nSecure Horizons 2026 is for anyone responsible for building, deploying or governing connected systems, including:\n\nSecurity and compliance leaders\nEmbedded and hardware engineers\nIoT architects and product owners\nTechnology strategists navigating new regulatory requirements\n\nMore than a conference, the event is a space to connect disciplines that are too often siloed, and to learn how regulation can become a driver for better engineering rather than a constraint.\n\nEvent Details at a Glance\n\nDate: 21 January 2026\nTime: 9:00 to 16:30 GMT (doors open at 8:00)\nLocation: IWM Duxford, Cambridge\nFormat: In person\nDuration: 7 hours 30 minutes\nCategory: Science and Tech, High Tech\nCost: Free\nRegister: Secure Horizons 2026 Registration\n\nSecure Horizons 2026 offers a rare opportunity to step back from day to day delivery pressures and think clearly about the future of secure and resilient systems. In a setting that powerfully connects past and present, it asks a simple but vital question: how do we build technology that is worthy of the trust we place in it?\n\nPlaces are limited. If security, resilience and compliance sit anywhere on your roadmap for 2026, this is an event worth attending.\n\nBack to Latest News",
+  "images": [
+    {
+      "url": "http://127.0.0.1:41683/assets/news/secure-and-resilient-systems-in-the-era-of-cra-and-iot/c43d0f35792b-hero.png",
+      "rect": {
+        "x": 177,
+        "y": 595.84375,
+        "width": 958,
+        "height": 479
+      },
+      "natural_width": 1024,
+      "natural_height": 512
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/news/secure-and-resilient-systems-in-the-era-of-cra-and-iot/",
+  "checks": {
+    "visible_main_text": true,
+    "header_text": true,
+    "footer_text": true,
+    "copyright_text": true,
+    "image_count": true,
+    "image_integrity": true,
+    "desktop_image_geometry": true
+  },
+  "image_checks": [
+    {
+      "source_url": "https://cheri-alliance.github.io/assets/images/content/news/secure-and-resilient-systems-in-the-era-of-cra-and-iot/hero.png",
+      "mapped_url_correct": true,
+      "loaded": true,
+      "geometry_delta_px": {
+        "x": 0,
+        "y": 0.0,
+        "width": 0,
+        "height": 0
+      }
+    }
+  ]
+}

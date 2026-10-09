@@ -1,0 +1,91 @@
+{
+  "main_text": "News & Events\nEvents & Archive\nUpcoming Events\nUpcoming Events\n\nUpcoming CHERI Alliance conferences, workshops, webinars, and community sessions.\n\nCHERI Alliance's events\n\nThe next opportunities to learn about CHERI, hear from the community, and take part in Alliance activity.\n\nUpcoming\nConference\n\n12 to 13 November 2026\nSEMICON Europa, Munich, Germany\n\nCHERITech'26\n\nCHERITech’26 will take place in Munich alongside Electronica / SEMICON Europa, one of the world’s largest electronics industry events!Hosted at the heart of the exhibi...\n\nView event\n\nUpcoming\nConference\n\n21 to 23 April 2027\nUniversity of Cambridge, Cambridge, UK\n\nCHERI Blossoms Conference 2027\n\nCHERI Blossoms Conference 2027 Pre-conference Tutorial: 21 April 2027 Main Conference Date: 22-23 April 2027 Location: Department of Computer Science and Technology – ...\n\nView event\n\nWhere next\nCHERI Blossoms\n\nInformation about CHERI Blossoms, including its purpose, audience, and current event details.\n\nContinue\nRelated content\nLatest News\n\nThe latest CHERI Alliance and ecosystem announcements, presented with clear dates and sources.\n\nRead this page",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 1923.484375
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/thumbnails/events/cheritech26.webp",
+      "alt": "",
+      "rect": {
+        "x": 161,
+        "y": 525.921875,
+        "width": 544,
+        "height": 306
+      },
+      "natural_width": 640,
+      "natural_height": 360,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 161,
+        "y": 525.921875,
+        "width": 544,
+        "height": 306
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 1923.484375
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/thumbnails/events/cheri-blossoms-conference-2027.webp",
+      "alt": "",
+      "rect": {
+        "x": 735,
+        "y": 525.921875,
+        "width": 544,
+        "height": 306
+      },
+      "natural_width": 640,
+      "natural_height": 360,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 735,
+        "y": 525.921875,
+        "width": 544,
+        "height": 306
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 1923.484375
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/news-and-events/events-and-archive/upcoming-events/",
+  "final_url": "https://cheri-alliance.github.io/news-and-events/events-and-archive/upcoming-events/",
+  "retrieved_at": "2026-10-09T21:54:51.816423+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

@@ -1,0 +1,134 @@
+{
+  "text": "Alliance Membership Contact the Alliance Contact the Alliance Contact the Alliance for membership, working groups, certification, events, media, trademarks, or help finding the right CHERI resource. Contact form The Alliance contact form will appear here before publication. Help us route your message Use a clear subject and include the relevant detail: Membership: include the organisation, location, interest in CHERI, and intended participation. Working group: include the topic, relevant experience, and the contribution or question. CHERI Enabled: include the product name, version, organisation, and intended application timing. Events or speakers: include the audience, format, date, location, topic, and expected attendance. Media: include the publication, deadline, question, and requested spokesperson or area of expertise. Trademark or brand: include the mark, material, territory, intended use, and publication date. Technical resource: include the platform, software version, goal, and resources already consulted. Do not send passwords, private keys, export-controlled material, vulnerability details, or other sensitive information in an initial general enquiry. Ask for an appropriate handling route first. For a potential security vulnerability in a particular product or project, follow that vendor’s or project’s published security-reporting process. The Alliance does not maintain every CHERI implementation. Policy documents and programme pages may already answer formal questions. Linking the page you consulted will help the team identify whether clarification or an update is needed. Where next About the CHERI Alliance Learn how the Alliance connects organisations working across the CHERI ecosystem. Continue Related content Membership Benefits & Options An outline of membership benefits, participation options, and what each route is intended to support. Read this page Job Opportunities Current job and career opportunities related to CHERI and the wider ecosystem. Read this page",
+  "headings": [
+    [
+      "h1",
+      "Contact the Alliance",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Contact form",
+      "contact-webform-title"
+    ],
+    [
+      "h2",
+      "Help us route your message",
+      "help-us-route-your-message"
+    ],
+    [
+      "h2",
+      "Where next",
+      null
+    ],
+    [
+      "h3",
+      "About the CHERI Alliance",
+      null
+    ],
+    [
+      "h2",
+      "Related content",
+      null
+    ],
+    [
+      "h3",
+      "Membership Benefits & Options",
+      null
+    ],
+    [
+      "h3",
+      "Job Opportunities",
+      null
+    ]
+  ],
+  "paragraphs": [
+    "Alliance",
+    "Membership",
+    "Contact the Alliance",
+    "Contact the Alliance for membership, working groups, certification, events, media, trademarks, or help finding the right CHERI resource.",
+    "The Alliance contact form will appear here before publication.",
+    "Use a clear subject and include the relevant detail:",
+    "Membership: include the organisation, location, interest in CHERI, and intended participation.",
+    "Working group: include the topic, relevant experience, and the contribution or question.",
+    "CHERI Enabled: include the product name, version, organisation, and intended application timing.",
+    "Events or speakers: include the audience, format, date, location, topic, and expected attendance.",
+    "Media: include the publication, deadline, question, and requested spokesperson or area of expertise.",
+    "Trademark or brand: include the mark, material, territory, intended use, and publication date.",
+    "Technical resource: include the platform, software version, goal, and resources already consulted.",
+    "Do not send passwords, private keys, export-controlled material, vulnerability details, or other sensitive information in an initial general enquiry. Ask for an appropriate handling route first.",
+    "For a potential security vulnerability in a particular product or project, follow that vendor’s or project’s published security-reporting process. The Alliance does not maintain every CHERI implementation.",
+    "Policy documents and programme pages may already answer formal questions. Linking the page you consulted will help the team identify whether clarification or an update is needed.",
+    "Learn how the Alliance connects organisations working across the CHERI ecosystem.",
+    "An outline of membership benefits, participation options, and what each route is intended to support.",
+    "Current job and career opportunities related to CHERI and the wider ecosystem."
+  ],
+  "lists": [
+    [
+      "ol",
+      "Alliance Membership Contact the Alliance"
+    ],
+    [
+      "li",
+      "Alliance"
+    ],
+    [
+      "li",
+      "Membership"
+    ],
+    [
+      "li",
+      "Contact the Alliance"
+    ],
+    [
+      "ul",
+      "Membership: include the organisation, location, interest in CHERI, and intended participation. Working group: include the topic, relevant experience, and the contribution or question. CHERI Enabled: include the product name, version, organisation, and intended application timing. Events or speakers: include the audience, format, date, location, topic, and expected attendance. Media: include the publication, deadline, question, and requested spokesperson or area of expertise. Trademark or brand: include the mark, material, territory, intended use, and publication date. Technical resource: include the platform, software version, goal, and resources already consulted."
+    ],
+    [
+      "li",
+      "Membership: include the organisation, location, interest in CHERI, and intended participation."
+    ],
+    [
+      "li",
+      "Working group: include the topic, relevant experience, and the contribution or question."
+    ],
+    [
+      "li",
+      "CHERI Enabled: include the product name, version, organisation, and intended application timing."
+    ],
+    [
+      "li",
+      "Events or speakers: include the audience, format, date, location, topic, and expected attendance."
+    ],
+    [
+      "li",
+      "Media: include the publication, deadline, question, and requested spokesperson or area of expertise."
+    ],
+    [
+      "li",
+      "Trademark or brand: include the mark, material, territory, intended use, and publication date."
+    ],
+    [
+      "li",
+      "Technical resource: include the platform, software version, goal, and resources already consulted."
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://cheri-alliance.github.io/alliance/about-and-governance/about-the-cheri-alliance/",
+      "About the CHERI Alliance Learn how the Alliance connects organisations working across the CHERI ecosystem. Continue"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/membership/membership-benefits-and-options/",
+      "Membership Benefits & Options An outline of membership benefits, participation options, and what each route is intended to support. Read this page"
+    ],
+    [
+      "https://cheri-alliance.github.io/news-and-events/people-and-opportunities/job-opportunities/",
+      "Job Opportunities Current job and career opportunities related to CHERI and the wider ecosystem. Read this page"
+    ]
+  ],
+  "images": [],
+  "definitions": [],
+  "code_blocks": []
+}

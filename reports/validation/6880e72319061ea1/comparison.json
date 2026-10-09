@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/news/the-white-house-promotes-cheri-as-a-solution-for-memory-safety/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/news/the-white-house-promotes-cheri-as-a-solution-for-memory-safety/55e2916c5bcf-hero.jpg": "https://cheri-alliance.github.io/assets/images/content/news/the-white-house-promotes-cheri-as-a-solution-for-memory-safety/hero.jpg"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

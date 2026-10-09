@@ -1,0 +1,61 @@
+{
+  "main_text": "Alliance\nMembers\nWind River\nWind River\n\nWind River is a global leader in delivering software for the intelligent edge. For more than four decades, the company has been an innovator and pioneer, powering billions of devices and systems that require the highest levels of security, safety…\n\nStatus\nMember\nMembership\nFull Member\nWebsite\nVisit member website\nDescription\n\nWind River is a global leader in delivering software for the intelligent edge. For more than four decades, the company has been an innovator and pioneer, powering billions of devices and systems that require the highest levels of security, safety, and reliability. Wind River software and expertise are accelerating digital transformation across industries including automotive, aerospace, defense, industrial, medical, and telecommunications. The company offers a comprehensive portfolio supported by world-class global professional services and support and a broad partner ecosystem. To learn more, visit Wind River at\n\nwww.windriver.com.\n\nCHERI Activities\n\nWind River has ported VxWorks to the Arm Morello Board and the CHERI-QEMU simulator. The port includes the VxWorks real-time operating system (RTOS) itself, real-time process support (RTPs), the RTNET network stack as well as board support packages for Morello and QEMU. The RTOS port runs in pure capability mode, where all pointers are replaced with hardware-enforced capabilities. Unlike hybrid modes that mix traditional pointers with capabilities, purecap mode enforces that all memory accesses, code execution, and data references are constrained by capability metadata thus providing strong spatial and temporal memory safety for VxWorks and its applications.\n\nVxWorks is the first commercial RTOS to support CHERI. The CHERI-enabled port of VxWorks enables Wind River customers to build a new class of secure connected device. Such a device is more secure by virtue of its CHERI-based hardware and software platform. A large class of security vulnerabilities caused by lack of memory safety are prevented by the CHERI-enabled version of VxWorks. Legacy software in which vulnerabilities exist, or are likely, may be reused with significantly reduced risk thus preserving large software investments without expensive security audits or memory-safe language rewrites.\n\nWind River continues to expand CHERI support across its product portfolio and to include RISC-V in addition to Arm. Work is underway to add support for Helix Virtualisation Platform (HVP) and VxWorks for CHERI on RISC-V.\n\nhttps://www.windriver.com/news/press/news-20260421\n\nCHERI Products\n\nThe CHERI-enabled port of VxWorks is available through Wind River Professional Services.\n\nBack to all members",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 1795.25
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/members/wind-river/logo.png",
+      "alt": "Wind River",
+      "rect": {
+        "x": 196.578125,
+        "y": 488.421875,
+        "width": 208.421875,
+        "height": 137.71875
+      },
+      "natural_width": 2000,
+      "natural_height": 330,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 463.421875,
+        "width": 281.59375,
+        "height": 187.71875
+      },
+      "parent_classes": [
+        "entity-media",
+        "entity-media--logo"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 463.421875,
+        "width": 742.40625,
+        "height": 1176.03125
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/members/wind-river/",
+  "final_url": "https://cheri-alliance.github.io/members/wind-river/",
+  "retrieved_at": "2026-10-09T21:54:43.153075+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

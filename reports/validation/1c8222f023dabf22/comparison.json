@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/people/dave-harcourt/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/people/dave-harcourt/9bdef3ab7087-portrait.jpg": "https://cheri-alliance.github.io/assets/images/content/people/dave-harcourt/portrait.jpg"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

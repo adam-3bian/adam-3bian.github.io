@@ -1,0 +1,60 @@
+{
+  "main_text": "News & Events\nNews & Analysis\nInnovate UK Project Winner: University of Birmingham\nInnovate UK Project Winner: University of Birmingham\n\nMihai Ordean – University of Birmingham Innovate UK Project Winner At the University of Birmingham, in the Centre for Cyber Security and Privacy, we have over 15 years of combined experience working on the CHERI (Capability Hardware Enhanced RISC…\n\n20 November 2025\nCHERI Alliance news\nEcosystem\nMembers\n\nMihai Ordean –\n\nUniversity of Birmingham\n\nAt the University of Birmingham, in the Centre for Cyber Security and Privacy, we have over 15 years of combined experience working on the CHERI (Capability Hardware Enhanced RISC Instructions) architectures. Over the years, we have made multiple contributions to the development of CHERI, with a particular focus on confidential computing and trusted execution. One of the domains where these advances can have significant impact is real-time operating systems (RTOS), which are widely used in embedded systems and IoT devices.\n\nThe Zephyr RTOS is one such system that is integrated into many real-world products, ranging from e-scooters to wind turbines. A major benefit of Zephyr is its modular and platform-independent nature, making it easy to move applications onto new processor generations. However, being written in the C programming language, this operating system has suffered from many security vulnerabilities due to lack of memory safety.\n\nTo address this, we propose a new project, CHERI-Zephyr++, were we focus on this important issue by adding architecture support to Zephyr for memory-safe CHERI-enabled RISC-V processors. Within this project will explore advanced CHERI features and beneficial practical applications such as those relevant to Critical National Infrastructure.\n\nThrough the CHERI Alliance and the CHERI Distribution Centre, our software will be available as open source to maximise practical uptake and minimise friction for software developers, with the ultimate goal to upstream CHERI-support into the main Zephyr tree.\n\nOn completion of the project, we aim that CHERI-Zephyr will be the go-to solution for embedded products requiring strong security and safety guarantees.\n\nBack to Latest News",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 2016.59375
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/news/innovate-uk-project-winner-university-of-birmingham/hero.png",
+      "alt": "Innovate UK Project Winner: University of Birmingham",
+      "rect": {
+        "x": 177,
+        "y": 595.84375,
+        "width": 958,
+        "height": 531.390625
+      },
+      "natural_width": 1024,
+      "natural_height": 568,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 578.84375,
+        "width": 992,
+        "height": 565.390625
+      },
+      "parent_classes": [
+        "collection-detail__lead-image"
+      ],
+      "body_rect": {
+        "x": 160,
+        "y": 1200.234375,
+        "width": 992,
+        "height": 660.5625
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/news/innovate-uk-project-winner-university-of-birmingham/",
+  "final_url": "https://cheri-alliance.github.io/news/innovate-uk-project-winner-university-of-birmingham/",
+  "retrieved_at": "2026-10-09T21:06:31.954680+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

@@ -1,0 +1,127 @@
+{
+  "text": "Alliance About & Governance ⬛️ CHERI in SoC WG ⬛️ CHERI in SoC WG Brings together the architecture, integration, and verification questions involved in adding CHERI to a system-on-chip. The CHERI in SoC Working Group focuses on defining and standardizing what needs to be included in a system to support CHERI, and to provide useful resources to speed the wider adoption of CHERI within chiplets and SoCs. The resources we deliver will help accelerate: Learning what is involved when creating a device or system that supports CHERI. Understanding the different levels of CHERI support, and what guarantees they can offer. Making the right trade-offs and choices for the devices and systems being developed. Extending or innovating technologies to better enable CHERI at the system level. Group type Technical Areas of collaboration SoC architecture and integration CHERI feature profiles Hardware and software interfaces Enquire about this group Back to all working groups Where next CHERI Linux Working Group See the group coordinating shared work on CHERI support in Linux. Continue",
+  "headings": [
+    [
+      "h1",
+      "⬛️ CHERI in SoC WG",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Where next",
+      null
+    ],
+    [
+      "h3",
+      "CHERI Linux Working Group",
+      null
+    ]
+  ],
+  "paragraphs": [
+    "Alliance",
+    "About & Governance",
+    "⬛️ CHERI in SoC WG",
+    "Brings together the architecture, integration, and verification questions involved in adding CHERI to a system-on-chip.",
+    "The CHERI in SoC Working Group focuses on defining and standardizing what needs to be included in a system to support CHERI, and to provide useful resources to speed the wider adoption of CHERI within chiplets and SoCs.",
+    "The resources we deliver will help accelerate:",
+    "Learning what is involved when creating a device or system that supports CHERI.",
+    "Understanding the different levels of CHERI support, and what guarantees they can offer.",
+    "Making the right trade-offs and choices for the devices and systems being developed.",
+    "Extending or innovating technologies to better enable CHERI at the system level.",
+    "SoC architecture and integration",
+    "CHERI feature profiles",
+    "Hardware and software interfaces",
+    "Enquire about this group",
+    "Back to all working groups",
+    "See the group coordinating shared work on CHERI support in Linux."
+  ],
+  "lists": [
+    [
+      "ol",
+      "Alliance About & Governance ⬛️ CHERI in SoC WG"
+    ],
+    [
+      "li",
+      "Alliance"
+    ],
+    [
+      "li",
+      "About & Governance"
+    ],
+    [
+      "li",
+      "⬛️ CHERI in SoC WG"
+    ],
+    [
+      "ul",
+      "Learning what is involved when creating a device or system that supports CHERI. Understanding the different levels of CHERI support, and what guarantees they can offer. Making the right trade-offs and choices for the devices and systems being developed. Extending or innovating technologies to better enable CHERI at the system level."
+    ],
+    [
+      "li",
+      "Learning what is involved when creating a device or system that supports CHERI."
+    ],
+    [
+      "li",
+      "Understanding the different levels of CHERI support, and what guarantees they can offer."
+    ],
+    [
+      "li",
+      "Making the right trade-offs and choices for the devices and systems being developed."
+    ],
+    [
+      "li",
+      "Extending or innovating technologies to better enable CHERI at the system level."
+    ],
+    [
+      "ul",
+      "SoC architecture and integration CHERI feature profiles Hardware and software interfaces"
+    ],
+    [
+      "li",
+      "SoC architecture and integration"
+    ],
+    [
+      "li",
+      "CHERI feature profiles"
+    ],
+    [
+      "li",
+      "Hardware and software interfaces"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://cheri-alliance.github.io/alliance/membership/contact/",
+      "Enquire about this group"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/about-and-governance/working-groups/",
+      "Back to all working groups"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/leadership/working-groups/cheri-linux-working-group/",
+      "CHERI Linux Working Group See the group coordinating shared work on CHERI support in Linux. Continue"
+    ]
+  ],
+  "images": [],
+  "definitions": [
+    [
+      "dt",
+      "Group type"
+    ],
+    [
+      "dd",
+      "Technical"
+    ],
+    [
+      "dt",
+      "Areas of collaboration"
+    ],
+    [
+      "dd",
+      "SoC architecture and integration CHERI feature profiles Hardware and software interfaces"
+    ]
+  ],
+  "code_blocks": []
+}

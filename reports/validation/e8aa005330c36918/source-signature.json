@@ -1,0 +1,66 @@
+{
+  "text": "Exercise an inter-stack-object buffer overflow This exercise demonstrates an inter-object buffer overflow on baseline and CHERI-enabled architectures, and asks you to characterize and fix the bug detected by CHERI bounds enforcement. It also asks you to use GDB for debugging purposes. By contrast to the globals-based example, this example uses two stack objects to demonstrate the overflow. We will be able to see the CHERI C compiler generate code to apply spatial bounds on the capability used for the buffer pointer we pass around. Compile buffer-overflow-stack.c for the baseline architecture to the binary buffer-overflow-stack-baseline and for the CHERI-aware architecture to buffer-overflow-stack-cheri. Run both programs and observe their outputs. Using GDB and/or the Monitor's error messages: Why has the CHERI program failed? Compare and contrast the disassembly of the baseline and CHERI programs. In particular, focus on the write_buf function and init's call to it and the information flow leading up to it. Source buffer-overflow-stack.c /* * SPDX-License-Identifier: BSD-2-Clause * Copyright (c) 2022 Microsoft Corporation */ #include <stddef.h> #include <printf.h> #include <sel4/assert.h> #pragma weak write_buf void write_buf(char *buf, size_t ix) { buf[ix] = 'b'; } void init(void) { char upper[0x10]; char lower[0x10]; printf(\"upper = %p, lower = %p, diff = %zx\\n\", upper, lower, (size_t)(upper - lower)); /* Assert that these get placed how we expect */ seL4_Assert((ptraddr_t)upper == (ptraddr_t)&lower[sizeof(lower)]); upper[0] = 'a'; printf(\"upper[0] = %c\\n\", upper[0]); write_buf(lower, sizeof(lower)); printf(\"upper[0] = %c\\n\", upper[0]); } void notified(){}",
+  "headings": [
+    [
+      "h1",
+      "Exercise an inter-stack-object buffer overflow",
+      "exercise-an-inter-stack-object-buffer-overflow"
+    ],
+    [
+      "h2",
+      "Source",
+      "source"
+    ]
+  ],
+  "paragraphs": [
+    "This exercise demonstrates an inter-object buffer overflow on baseline and CHERI-enabled architectures, and asks you to characterize and fix the bug detected by CHERI bounds enforcement. It also asks you to use GDB for debugging purposes.",
+    "By contrast to the globals-based example, this example uses two stack objects to demonstrate the overflow. We will be able to see the CHERI C compiler generate code to apply spatial bounds on the capability used for the buffer pointer we pass around.",
+    "Compile buffer-overflow-stack.c for the baseline architecture to the binary buffer-overflow-stack-baseline and for the CHERI-aware architecture to buffer-overflow-stack-cheri.",
+    "Run both programs and observe their outputs.",
+    "Using GDB and/or the Monitor's error messages: Why has the CHERI program failed?",
+    "Compare and contrast the disassembly of the baseline and CHERI programs. In particular, focus on the write_buf function and init's call to it and the information flow leading up to it.",
+    "buffer-overflow-stack.c"
+  ],
+  "lists": [
+    [
+      "ol",
+      "Compile buffer-overflow-stack.c for the baseline architecture to the binary buffer-overflow-stack-baseline and for the CHERI-aware architecture to buffer-overflow-stack-cheri. Run both programs and observe their outputs. Using GDB and/or the Monitor's error messages: Why has the CHERI program failed? Compare and contrast the disassembly of the baseline and CHERI programs. In particular, focus on the write_buf function and init's call to it and the information flow leading up to it."
+    ],
+    [
+      "li",
+      "Compile buffer-overflow-stack.c for the baseline architecture to the binary buffer-overflow-stack-baseline and for the CHERI-aware architecture to buffer-overflow-stack-cheri."
+    ],
+    [
+      "li",
+      "Run both programs and observe their outputs."
+    ],
+    [
+      "li",
+      "Using GDB and/or the Monitor's error messages: Why has the CHERI program failed?"
+    ],
+    [
+      "li",
+      "Compare and contrast the disassembly of the baseline and CHERI programs. In particular, focus on the write_buf function and init's call to it and the information flow leading up to it."
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://cheri-alliance.github.io/CHERI-seL4-Exercises/exercises/buffer-overflow-stack/index.html#exercise-an-inter-stack-object-buffer-overflow",
+      "Exercise an inter-stack-object buffer overflow"
+    ],
+    [
+      "https://cheri-alliance.github.io/CHERI-seL4-Exercises/exercises/buffer-overflow-global",
+      "the globals-based example"
+    ],
+    [
+      "https://cheri-alliance.github.io/CHERI-seL4-Exercises/exercises/buffer-overflow-stack/index.html#source",
+      "Source"
+    ]
+  ],
+  "images": [],
+  "definitions": [],
+  "code_blocks": [
+    "/*\n * SPDX-License-Identifier: BSD-2-Clause\n * Copyright (c) 2022 Microsoft Corporation\n */\n#include <stddef.h>\n#include <printf.h>\n#include <sel4/assert.h>\n\n#pragma weak write_buf\nvoid\nwrite_buf(char *buf, size_t ix)\n{\n\tbuf[ix] = 'b';\n}\n\nvoid\ninit(void)\n{\n\tchar upper[0x10];\n\tchar lower[0x10];\n\n\tprintf(\"upper = %p, lower = %p, diff = %zx\\n\",\n\t    upper, lower, (size_t)(upper - lower));\n\n\t/* Assert that these get placed how we expect */\n\tseL4_Assert((ptraddr_t)upper == (ptraddr_t)&lower[sizeof(lower)]);\n\n\tupper[0] = 'a';\n\tprintf(\"upper[0] = %c\\n\", upper[0]);\n\n\twrite_buf(lower, sizeof(lower));\n\n\tprintf(\"upper[0] = %c\\n\", upper[0]);\n}\n\nvoid notified(){}"
+  ]
+}

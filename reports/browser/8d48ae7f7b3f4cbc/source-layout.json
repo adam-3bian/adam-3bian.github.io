@@ -1,0 +1,153 @@
+{
+  "main_text": "News & Events\nEvents & Archive\nCHERI Blossoms Conference\nCHERI Blossoms Conference\n\nFrom research to real-world deployment, CHERI Blossoms brings the ecosystem together in Cambridge.\n\nAs the CHERI community’s annual gathering, the conference brings together researchers, engineers, product teams, policymakers, educators, and adopters to share progress, exchange ideas, and help shape the future of secure computing.\n\nOrganised by the CHERI Alliance and set in the birthplace of CHERI, it connects research, implementation, standards, policy, and real-world deployment through talks, tutorials, demonstrations, and discussions spanning the entire ecosystem.\n\nWhether you’re exploring CHERI for the first time or already helping drive adoption, you’ll gain practical insight, technical knowledge, and direct access to the people and organisations advancing the field.\n\nWhat to expect\nUnderstanding the bigger picture\n\nDiscover why memory safety has become a global priority, how CHERI is addressing some of the industry’s most important security challenges, and where adoption is gaining momentum across industry, government, and academia.\n\nDeep technical insight\n\nHear directly from the researchers and engineers advancing the state of the art in hardware, software, verification, compartmentalisation, performance, and real-world deployment.\n\nHands-on learning\n\nExplore CHERI-enabled systems through tutorials and live demonstrations. Access slides, recordings, and practical resources that help you continue your learning long after the event.\n\nMeet the CHERI community\n\nConnect with the people building, deploying, researching, and standardising CHERI technologies. Whether you’re evaluating CHERI, contributing to its development, or planning adoption, CHERI Blossoms offers a unique opportunity to build relationships across the ecosystem.\n\nUpcoming CHERI Blossoms\n\nDates, venue information, registration updates, and programme details are kept on each event page.\n\nUpcoming\nConference\n\n21 to 23 April 2027\nUniversity of Cambridge, Cambridge, UK\n\nCHERI Blossoms Conference 2027\n\nCHERI Blossoms Conference 2027 Pre-conference Tutorial: 21 April 2027 Main Conference Date: 22-23 April 2027 Location: Department of Computer Science and Technology – ...\n\nView event\n\nCHERI Blossoms archive\n\nPrevious conference, tutorial, and livestream pages retain the schedules, speakers, slides, and recordings published by the Alliance.\n\nPast\nTutorial\n\n25 March 2026\nUniversity of Cambridge, Cambridge, UK\n\nHands-on Introduction to CHERI and CHERIoT\n\nThe CHERI Research Centre at the Computer Laboratory, Codasip, and lowRISC co-organised a comprehensive tutorial on CHERI alongside the CHERI Blossoms 2026 conference....\n\nView event archive\n\nPast\nConference\n\n25 to 27 March 2026\nUniversity of Cambridge, Cambridge, UK\n\nCHERI Blossoms Conference 2026\n\nThe CHERI Blossoms Conference 2026 was the must-attend event for forward-thinking decision-makers and innovators! This exclusive gathering was tailored for industry le...\n\nView event archive\n\nPast\nConference\n\n2 April 2025\nSt John's College, Cambridge, UK\n\nCHERI Blossoms Conference 2025\n\nThe CHERI Blossoms Conference 2025 invited researchers, technologists, industry leaders, and business strategists to contribute to the advancement of digital security ...\n\nView event archive\n\nWhere next\nCHERITech Conference\n\nInformation about CHERITech Conference, including its programme, audience, and current event details.\n\nContinue\nRelated content\nUpcoming Events\n\nA calendar of upcoming CHERI-related events, talks, workshops, and community sessions.\n\nRead this page\nLatest News\n\nThe latest CHERI Alliance and ecosystem announcements, presented with clear dates and sources.\n\nRead this page",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 4045.984375
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/thumbnails/events/cheri-blossoms-conference-2027.webp",
+      "alt": "",
+      "rect": {
+        "x": 161,
+        "y": 1555.71875,
+        "width": 1118,
+        "height": 628.875
+      },
+      "natural_width": 640,
+      "natural_height": 360,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 161,
+        "y": 1555.71875,
+        "width": 1118,
+        "height": 628.875
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 4045.984375
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/thumbnails/events/cheri-blossoms-tutorial-2026.webp",
+      "alt": "",
+      "rect": {
+        "x": 161,
+        "y": 2648.546875,
+        "width": 352.65625,
+        "height": 197.359375
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 161,
+        "y": 2648.546875,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 4045.984375
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/thumbnails/events/cheri-blossoms-conference-2026.webp",
+      "alt": "",
+      "rect": {
+        "x": 543.65625,
+        "y": 2648.546875,
+        "width": 352.671875,
+        "height": 197.375
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 543.65625,
+        "y": 2648.546875,
+        "width": 352.671875,
+        "height": 198.375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 4045.984375
+      }
+    },
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/thumbnails/events/cheri-blossoms-conference-2025.webp",
+      "alt": "",
+      "rect": {
+        "x": 926.328125,
+        "y": 2648.546875,
+        "width": 352.65625,
+        "height": 197.359375
+      },
+      "natural_width": 0,
+      "natural_height": 0,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 926.328125,
+        "y": 2648.546875,
+        "width": 352.65625,
+        "height": 198.359375
+      },
+      "parent_classes": [
+        "collection-card__image"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 4045.984375
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/news-and-events/events-and-archive/cheri-blossoms/",
+  "final_url": "https://cheri-alliance.github.io/news-and-events/events-and-archive/cheri-blossoms/",
+  "retrieved_at": "2026-10-09T21:54:47.329246+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.github.io/people/sam-cater/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/people/sam-cater/9f23030312fd-portrait.jpg": "https://cheri-alliance.github.io/assets/images/content/people/sam-cater/portrait.jpg"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

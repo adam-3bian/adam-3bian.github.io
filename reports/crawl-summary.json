@@ -1,0 +1,69 @@
+{
+  "acquisition_method": "live-public-crawl",
+  "run_at": "2026-10-09T21:31:37.556761+00:00",
+  "source_sites": [
+    {
+      "host": "cheri-alliance.org",
+      "requests_this_run": 0,
+      "queue_remaining": 56,
+      "public_html_queue_remaining": 0,
+      "queue_records_remaining": 0,
+      "converged": false,
+      "limitation": "Static HTML/link/XML discovery only; JavaScript, exports, external assets and query routes require follow-up"
+    },
+    {
+      "host": "cheri-alliance.github.io",
+      "requests_this_run": 0,
+      "queue_remaining": 0,
+      "public_html_queue_remaining": 0,
+      "queue_records_remaining": 0,
+      "converged": true,
+      "limitation": "Static HTML/link/XML discovery only; JavaScript, exports, external assets and query routes require follow-up"
+    }
+  ],
+  "discovered_url_records": 3301,
+  "retained_html_url_mappings": 691,
+  "distinct_retained_html_snapshots": 691,
+  "converted_url_mappings": 372,
+  "distinct_source_page_files": 367,
+  "paper_catalogue_entry_files": 15,
+  "distinct_generated_content_files": 382,
+  "collections": {
+    "_news": 53,
+    "_people": 63,
+    "pages": 136,
+    "_organisations": 51,
+    "_software": 9,
+    "_policies": 11,
+    "_guides": 10,
+    "_products": 2,
+    "_papers": 15,
+    "_groups": 16,
+    "_events": 10,
+    "_platforms": 5,
+    "_boards": 1
+  },
+  "conversions_by_source": {
+    "cheri-alliance.github.io": 353,
+    "cheri-alliance.org": 19
+  },
+  "unconverted_captured_html_mappings": 319,
+  "markdown_format_passes": 382,
+  "main_body_comparison_passes": 372,
+  "built_source_route_passes": 372,
+  "regression_test_passes": 25,
+  "downloaded_asset_url_mappings": 421,
+  "distinct_local_asset_files": 387,
+  "failed_url_acquisitions": 81,
+  "failed_asset_acquisitions": 3,
+  "browser_page_passes": 99,
+  "fully_verified_pages": 0,
+  "complete": false,
+  "limitations": [
+    "All captured GitHub Pages HTML is converted; original WordPress HTML conversion remains incomplete.",
+    "Paper entries contain complete published catalogue text and publication links; external PDFs remain blocked by network policy.",
+    "Static discovery does not prove exhaustive JavaScript, query or external publication coverage.",
+    "Complete local link routing, remaining assets and whole-page/mobile validation are unfinished.",
+    "Acquisition snapshots have individual timestamps. Uploaded archives were not inspected."
+  ]
+}

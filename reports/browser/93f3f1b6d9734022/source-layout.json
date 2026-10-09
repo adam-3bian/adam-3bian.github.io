@@ -1,0 +1,61 @@
+{
+  "main_text": "Alliance\nMembers\nSRI\nSRI\n\nSRI creates and delivers world-changing solutions for a safer, healthier, and more sustainable future. A global leader in R&D with deep roots in Silicon Valley, SRI is an independent nonprofit research institute with a rich history of supporting…\n\nStatus\nFounding member\nMembership\nCommunity Member\nWebsite\nVisit member website\nDescription\n\nSRI creates and delivers world-changing solutions for a safer, healthier, and more sustainable future. A global leader in R&D with deep roots in Silicon Valley, SRI is an independent nonprofit research institute with a rich history of supporting government and industry. For almost 80 years, we have collaborated across technical and scientific disciplines to discover and develop groundbreaking products and technologies and bring innovations and ideas to the marketplace.\n\nCHERI Activities\n\nSince 2010, SRI has partnered with the University of Cambridge to develop CHERI. Our partnership has developed early CHERI prototypes under the DARPA CRASH program, have worked with Arm since 2014 to add CHERI to the Armv8-A architecture, and developed CHERI-RISC-V under the DARPA SSITH program. SRI leads the development of CheriBSD (FreeBSD adapted to support CHERI) and CheriABI (a pure-capability POSIX programing model).\n\nOpen-source Assets for CHERI\n\nhttps://www.cheribsd.org\n\nBack to all members",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 1264.25
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/members/sri/logo.png",
+      "alt": "SRI logo",
+      "rect": {
+        "x": 196.578125,
+        "y": 488.421875,
+        "width": 208.421875,
+        "height": 137.71875
+      },
+      "natural_width": 300,
+      "natural_height": 112,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 463.421875,
+        "width": 281.59375,
+        "height": 187.71875
+      },
+      "parent_classes": [
+        "entity-media",
+        "entity-media--logo"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 463.421875,
+        "width": 742.40625,
+        "height": 645.03125
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/members/sri/",
+  "final_url": "https://cheri-alliance.github.io/members/sri/",
+  "retrieved_at": "2026-10-09T21:54:22.902466+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

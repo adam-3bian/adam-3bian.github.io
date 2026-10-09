@@ -1,0 +1,271 @@
+{
+  "text": "Build Platforms CHERIoT CHERIoT CHERIoT combines a compact CHERI-RISC-V architecture, processor cores, a real-time operating system, compartments, tooling, simulation, and embedded hardware targets. Small connected devices often run many components in one address space: network stacks, parsers, drivers, third-party libraries, update code, and application logic. A fault in one can reach everything. Conventional process isolation may be unavailable or too heavy for the device. CHERIoT is a CHERI-based hardware-software platform designed for this embedded environment. A coordinated platform CHERIoT includes: a 32-bit CHERI-enabled RISC-V instruction set for embedded processors open processor-core implementations, including CHERIoT Ibex an executable Sail model and reference simulator a privilege-separated real-time operating system a Clang-based C and C++ toolchain a build system and board descriptions fine-grained firmware compartments temporal-safety support integrated with memory allocation firmware auditing and debugging tools simulator, FPGA, and silicon targets These parts are designed together. CHERIoT is therefore more than a generic RISC-V core with capability instructions added. The software model Firmware is divided into compartments and libraries. The build description identifies components, dependencies, threads, entry points, stacks, and board configuration. The real-time operating system (RTOS) creates protected transitions and controls authority between compartments. A network component can receive a capability for one packet and selected services without receiving authority for the complete firmware image. Capability bounds and permissions protect object access, while the compartment model limits the objects and services available to the component. CHERIoT also provides mechanisms for temporal safety, helping prevent stale capabilities accessing storage after it has been reused. Getting started The project provides a development container with the toolchain, simulator, and supporting tools. git clone --recursive https://github.com/CHERIoT-Platform/cheriot-rtos.git cd cheriot-rtos Open the repository in a development-container compatible editor, select a supplied example, and use the documented simulator board. A typical build uses: xmake config --sdk=/cheriot-tools --board=<supported-board> xmake xmake run Use the current getting-started guide for exact board names and prerequisites. Hardware choices Developers can begin without hardware using the formal-model simulator or implementation simulation. For physical development, supported targets include FPGA platforms such as Sonata and other boards listed by the project. The ecosystem also includes commercial silicon and licensable processor designs. The CHERI product directory records the current platform landscape; suppliers retain responsibility for device, software development kit (SDK), and lifecycle information. When CHERIoT is a good fit Microcontroller and Internet of Things firmware. Systems that need predictable, fine-grained compartments. Long-lived devices with third-party or network-facing code. Embedded teams that want C and C++ compatibility with hardware-enforced memory protection. Prototypes that need a route from simulator to FPGA and silicon. Security architectures that need both spatial and temporal memory-safety mechanisms. Constraints and decisions CHERIoT is a specific embedded platform, not a drop-in target for every RISC-V binary. The RTOS and compartment model differ from POSIX processes and full Unix systems. Available memory, peripherals, real-time requirements, and board support must match the product. C and C++ ports may need changes for pointer assumptions, custom allocators, and unsupported libraries. Assurance claims must name the core, instruction-set architecture (ISA) version, RTOS, build, board or chip, and configuration. Current maturity CHERIoT has a stable 1.0 architecture and RTOS line, released open-source implementations, development platforms, commercial silicon activity, and CHERI Enabled certification for the CHERIoT Ibex product. Individual repositories continue to evolve, so pin releases for reproducible product work. The CHERIoT Programmer’s Guide is the best starting point for architecture, compartments, memory management, drivers, auditing, and practical examples. Where next Sonata Sonata is a low-cost CHERIoT development and evaluation platform built around an FPGA implementation of CHERIoT-Ibex. Continue Related content Platform Comparison No single CHERI platform is best for every workload. Read this page Morello Morello is an Arm-based CHERI technology demonstrator created for architecture and software research. Read this page Choose a Platform Choose a platform, prepare an environment and run a first CHERI workload. Read this page",
+  "headings": [
+    [
+      "h1",
+      "CHERIoT",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "A coordinated platform",
+      "a-coordinated-platform"
+    ],
+    [
+      "h2",
+      "The software model",
+      "the-software-model"
+    ],
+    [
+      "h2",
+      "Getting started",
+      "getting-started"
+    ],
+    [
+      "h2",
+      "Hardware choices",
+      "hardware-choices"
+    ],
+    [
+      "h2",
+      "When CHERIoT is a good fit",
+      "when-cheriot-is-a-good-fit"
+    ],
+    [
+      "h2",
+      "Constraints and decisions",
+      "constraints-and-decisions"
+    ],
+    [
+      "h2",
+      "Current maturity",
+      "current-maturity"
+    ],
+    [
+      "h2",
+      "Where next",
+      null
+    ],
+    [
+      "h3",
+      "Sonata",
+      null
+    ],
+    [
+      "h2",
+      "Related content",
+      null
+    ],
+    [
+      "h3",
+      "Platform Comparison",
+      null
+    ],
+    [
+      "h3",
+      "Morello",
+      null
+    ],
+    [
+      "h3",
+      "Choose a Platform",
+      null
+    ]
+  ],
+  "paragraphs": [
+    "Build",
+    "Platforms",
+    "CHERIoT",
+    "CHERIoT combines a compact CHERI-RISC-V architecture, processor cores, a real-time operating system, compartments, tooling, simulation, and embedded hardware targets.",
+    "Small connected devices often run many components in one address space: network stacks, parsers, drivers, third-party libraries, update code, and application logic. A fault in one can reach everything. Conventional process isolation may be unavailable or too heavy for the device.",
+    "CHERIoT is a CHERI-based hardware-software platform designed for this embedded environment.",
+    "CHERIoT includes:",
+    "a 32-bit CHERI-enabled RISC-V instruction set for embedded processors",
+    "open processor-core implementations, including CHERIoT Ibex",
+    "an executable Sail model and reference simulator",
+    "a privilege-separated real-time operating system",
+    "a Clang-based C and C++ toolchain",
+    "a build system and board descriptions",
+    "fine-grained firmware compartments",
+    "temporal-safety support integrated with memory allocation",
+    "firmware auditing and debugging tools",
+    "simulator, FPGA, and silicon targets",
+    "These parts are designed together. CHERIoT is therefore more than a generic RISC-V core with capability instructions added.",
+    "Firmware is divided into compartments and libraries. The build description identifies components, dependencies, threads, entry points, stacks, and board configuration. The real-time operating system (RTOS) creates protected transitions and controls authority between compartments.",
+    "A network component can receive a capability for one packet and selected services without receiving authority for the complete firmware image. Capability bounds and permissions protect object access, while the compartment model limits the objects and services available to the component.",
+    "CHERIoT also provides mechanisms for temporal safety, helping prevent stale capabilities accessing storage after it has been reused.",
+    "The project provides a development container with the toolchain, simulator, and supporting tools.",
+    "Open the repository in a development-container compatible editor, select a supplied example, and use the documented simulator board. A typical build uses:",
+    "Use the current getting-started guide for exact board names and prerequisites.",
+    "Developers can begin without hardware using the formal-model simulator or implementation simulation. For physical development, supported targets include FPGA platforms such as Sonata and other boards listed by the project.",
+    "The ecosystem also includes commercial silicon and licensable processor designs. The CHERI product directory records the current platform landscape; suppliers retain responsibility for device, software development kit (SDK), and lifecycle information.",
+    "Microcontroller and Internet of Things firmware.",
+    "Systems that need predictable, fine-grained compartments.",
+    "Long-lived devices with third-party or network-facing code.",
+    "Embedded teams that want C and C++ compatibility with hardware-enforced memory protection.",
+    "Prototypes that need a route from simulator to FPGA and silicon.",
+    "Security architectures that need both spatial and temporal memory-safety mechanisms.",
+    "CHERIoT is a specific embedded platform, not a drop-in target for every RISC-V binary.",
+    "The RTOS and compartment model differ from POSIX processes and full Unix systems.",
+    "Available memory, peripherals, real-time requirements, and board support must match the product.",
+    "C and C++ ports may need changes for pointer assumptions, custom allocators, and unsupported libraries.",
+    "Assurance claims must name the core, instruction-set architecture (ISA) version, RTOS, build, board or chip, and configuration.",
+    "CHERIoT has a stable 1.0 architecture and RTOS line, released open-source implementations, development platforms, commercial silicon activity, and CHERI Enabled certification for the CHERIoT Ibex product. Individual repositories continue to evolve, so pin releases for reproducible product work.",
+    "The CHERIoT Programmer’s Guide is the best starting point for architecture, compartments, memory management, drivers, auditing, and practical examples.",
+    "Sonata is a low-cost CHERIoT development and evaluation platform built around an FPGA implementation of CHERIoT-Ibex.",
+    "No single CHERI platform is best for every workload.",
+    "Morello is an Arm-based CHERI technology demonstrator created for architecture and software research.",
+    "Choose a platform, prepare an environment and run a first CHERI workload."
+  ],
+  "lists": [
+    [
+      "ol",
+      "Build Platforms CHERIoT"
+    ],
+    [
+      "li",
+      "Build"
+    ],
+    [
+      "li",
+      "Platforms"
+    ],
+    [
+      "li",
+      "CHERIoT"
+    ],
+    [
+      "ul",
+      "a 32-bit CHERI-enabled RISC-V instruction set for embedded processors open processor-core implementations, including CHERIoT Ibex an executable Sail model and reference simulator a privilege-separated real-time operating system a Clang-based C and C++ toolchain a build system and board descriptions fine-grained firmware compartments temporal-safety support integrated with memory allocation firmware auditing and debugging tools simulator, FPGA, and silicon targets"
+    ],
+    [
+      "li",
+      "a 32-bit CHERI-enabled RISC-V instruction set for embedded processors"
+    ],
+    [
+      "li",
+      "open processor-core implementations, including CHERIoT Ibex"
+    ],
+    [
+      "li",
+      "an executable Sail model and reference simulator"
+    ],
+    [
+      "li",
+      "a privilege-separated real-time operating system"
+    ],
+    [
+      "li",
+      "a Clang-based C and C++ toolchain"
+    ],
+    [
+      "li",
+      "a build system and board descriptions"
+    ],
+    [
+      "li",
+      "fine-grained firmware compartments"
+    ],
+    [
+      "li",
+      "temporal-safety support integrated with memory allocation"
+    ],
+    [
+      "li",
+      "firmware auditing and debugging tools"
+    ],
+    [
+      "li",
+      "simulator, FPGA, and silicon targets"
+    ],
+    [
+      "ul",
+      "Microcontroller and Internet of Things firmware. Systems that need predictable, fine-grained compartments. Long-lived devices with third-party or network-facing code. Embedded teams that want C and C++ compatibility with hardware-enforced memory protection. Prototypes that need a route from simulator to FPGA and silicon. Security architectures that need both spatial and temporal memory-safety mechanisms."
+    ],
+    [
+      "li",
+      "Microcontroller and Internet of Things firmware."
+    ],
+    [
+      "li",
+      "Systems that need predictable, fine-grained compartments."
+    ],
+    [
+      "li",
+      "Long-lived devices with third-party or network-facing code."
+    ],
+    [
+      "li",
+      "Embedded teams that want C and C++ compatibility with hardware-enforced memory protection."
+    ],
+    [
+      "li",
+      "Prototypes that need a route from simulator to FPGA and silicon."
+    ],
+    [
+      "li",
+      "Security architectures that need both spatial and temporal memory-safety mechanisms."
+    ],
+    [
+      "ul",
+      "CHERIoT is a specific embedded platform, not a drop-in target for every RISC-V binary. The RTOS and compartment model differ from POSIX processes and full Unix systems. Available memory, peripherals, real-time requirements, and board support must match the product. C and C++ ports may need changes for pointer assumptions, custom allocators, and unsupported libraries. Assurance claims must name the core, instruction-set architecture (ISA) version, RTOS, build, board or chip, and configuration."
+    ],
+    [
+      "li",
+      "CHERIoT is a specific embedded platform, not a drop-in target for every RISC-V binary."
+    ],
+    [
+      "li",
+      "The RTOS and compartment model differ from POSIX processes and full Unix systems."
+    ],
+    [
+      "li",
+      "Available memory, peripherals, real-time requirements, and board support must match the product."
+    ],
+    [
+      "li",
+      "C and C++ ports may need changes for pointer assumptions, custom allocators, and unsupported libraries."
+    ],
+    [
+      "li",
+      "Assurance claims must name the core, instruction-set architecture (ISA) version, RTOS, build, board or chip, and configuration."
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://cheriot.org/book/getting_started.html",
+      "getting-started guide"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/platforms/cheri-products/",
+      "CHERI product directory"
+    ],
+    [
+      "https://cheriot.org/book/",
+      "CHERIoT Programmer’s Guide"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/platforms/sonata/",
+      "Sonata Sonata is a low-cost CHERIoT development and evaluation platform built around an FPGA implementation of CHERIoT-Ibex. Continue"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/platforms/platform-comparison/",
+      "Platform Comparison No single CHERI platform is best for every workload. Read this page"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/platforms/morello/",
+      "Morello Morello is an Arm-based CHERI technology demonstrator created for architecture and software research. Read this page"
+    ],
+    [
+      "https://cheri-alliance.github.io/build/developers/choose-a-platform/",
+      "Choose a Platform Choose a platform, prepare an environment and run a first CHERI workload. Read this page"
+    ]
+  ],
+  "images": [],
+  "definitions": [],
+  "code_blocks": [
+    "git clone --recursive https://github.com/CHERIoT-Platform/cheriot-rtos.git\ncd cheriot-rtos",
+    "xmake config --sdk=/cheriot-tools --board=<supported-board>\nxmake\nxmake run"
+  ]
+}

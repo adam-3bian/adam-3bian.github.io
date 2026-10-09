@@ -1,0 +1,61 @@
+{
+  "main_text": "Alliance\nMembers\nBT Group\nBT Group\n\nBT Group is the UK’s leading provider of fixed and mobile telecommunications and related secure digital products, solutions and services. We also provide managed telecommunications, security and network & IT infrastructure services to customers…\n\nStatus\nMember\nMembership\nFull Member\nWebsite\nVisit member website\nDescription\n\nBT Group is the UK’s leading provider of fixed and mobile telecommunications and related secure digital products, solutions and services. We also provide managed telecommunications, security and network & IT infrastructure services to customers across 180 countries.\n\nCHERI Activities\n\nBT Group manages a vast telecommunications infrastructure, and is an advocate of memory-safety technologies. Combining these factors, BT’s research and cybersecurity departments are exploring CHERI within a network services context and are keen to work with alliance partners to test and evaluate the technology.\n\nBack to all members",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 1065.53125
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/members/bt-group/logo.png",
+      "alt": "BT Group",
+      "rect": {
+        "x": 196.578125,
+        "y": 488.421875,
+        "width": 208.421875,
+        "height": 208.421875
+      },
+      "natural_width": 2000,
+      "natural_height": 2000,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 463.421875,
+        "width": 281.59375,
+        "height": 187.71875
+      },
+      "parent_classes": [
+        "entity-media",
+        "entity-media--logo"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 463.421875,
+        "width": 742.40625,
+        "height": 416.6875
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/members/bt-group/",
+  "final_url": "https://cheri-alliance.github.io/members/bt-group/",
+  "retrieved_at": "2026-10-09T21:53:35.323936+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

@@ -1,0 +1,89 @@
+{
+  "text": "News & Events Speakers Ashish Darbari Ashish Darbari Axiomise Organisation Axiomise LinkedIn Biography As founder & CEO of Axiomise, Dr. Ashish Darbari has led the company to successfully deploy the unique combination of training, consulting, services, and verification IP to various customers. Ashish has expertise in all aspects of formal methods, including theorem proving, property and equivalence checking. Before starting Axiomise, Ashish worked at Intel, Arm, Imagination Technologies and OneSpin Solutions. Ashish likes to lead from the front, having coded the formalISA app and designed & delivered the formal verification training programme at Axiomise to over 350 engineers. He has turned Axiomise into a global leader in formal verification consulting & services turning it into a multi-million dollar company with zero VC funding. CHERI Talks Industrial-Strength Formal Verification of RISC-V Processors | CHERI Blossoms 2025 02/04/2025 Cambridge, UK View Slides View Video Back to all speakers",
+  "headings": [
+    [
+      "h1",
+      "Ashish Darbari",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Biography",
+      "biography"
+    ],
+    [
+      "h2",
+      "CHERI Talks",
+      "cheri-talks"
+    ]
+  ],
+  "paragraphs": [
+    "News & Events",
+    "Speakers",
+    "Ashish Darbari",
+    "Axiomise",
+    "LinkedIn",
+    "As founder & CEO of Axiomise, Dr. Ashish Darbari has led the company to successfully deploy the unique combination of training, consulting, services, and verification IP to various customers. Ashish has expertise in all aspects of formal methods, including theorem proving, property and equivalence checking.",
+    "Before starting Axiomise, Ashish worked at Intel, Arm, Imagination Technologies and OneSpin Solutions. Ashish likes to lead from the front, having coded the formalISA app and designed & delivered the formal verification training programme at Axiomise to over 350 engineers. He has turned Axiomise into a global leader in formal verification consulting & services turning it into a multi-million dollar company with zero VC funding.",
+    "Industrial-Strength Formal Verification of RISC-V Processors | CHERI Blossoms 2025",
+    "02/04/2025",
+    "Cambridge, UK",
+    "View Slides",
+    "View Video",
+    "Back to all speakers"
+  ],
+  "lists": [
+    [
+      "ol",
+      "News & Events Speakers Ashish Darbari"
+    ],
+    [
+      "li",
+      "News & Events"
+    ],
+    [
+      "li",
+      "Speakers"
+    ],
+    [
+      "li",
+      "Ashish Darbari"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://www.linkedin.com/in/ashish-darbari/",
+      "LinkedIn"
+    ],
+    [
+      "https://cheri-alliance.org/wp-content/uploads/2025/04/2.6-Ashish-Dabari-Formal-Verification-of-RISC-V-Processors.pdf",
+      "View Slides"
+    ],
+    [
+      "https://youtu.be/O6UyhX0aue4",
+      "View Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/news-and-events/people-and-opportunities/speakers/",
+      "Back to all speakers"
+    ]
+  ],
+  "images": [
+    [
+      "https://cheri-alliance.github.io/assets/images/content/people/ashish-darbari/portrait.png",
+      "Ashish Dabari"
+    ]
+  ],
+  "definitions": [
+    [
+      "dt",
+      "Organisation"
+    ],
+    [
+      "dd",
+      "Axiomise"
+    ]
+  ],
+  "code_blocks": []
+}

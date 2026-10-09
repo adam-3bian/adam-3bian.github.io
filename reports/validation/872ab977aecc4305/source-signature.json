@@ -1,0 +1,107 @@
+{
+  "text": "Alliance About & Governance 🪁 CHERI Zephyr WG 🪁 CHERI Zephyr WG Coordinates CHERI support for Zephyr across architecture ports, kernel and user interfaces, drivers, tooling, and supported platforms. The CHERI Zephyr Working Group focuses on adapting Zephyr to leverage CHERI’s memory safety and fine-grained protection capabilities, enhancing security for embedded and IoT system. The CHERI Zephyr software ecosystem page provides the technical overview and links to current public development resources. Group type Technical Areas of collaboration Zephyr architecture support Memory protection and compartments Drivers, tooling, and platforms Enquire about this group Back to all working groups Where next MMU-less Systems Explore CHERI systems that operate without a conventional memory-management unit. Continue",
+  "headings": [
+    [
+      "h1",
+      "🪁 CHERI Zephyr WG",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Where next",
+      null
+    ],
+    [
+      "h3",
+      "MMU-less Systems",
+      null
+    ]
+  ],
+  "paragraphs": [
+    "Alliance",
+    "About & Governance",
+    "🪁 CHERI Zephyr WG",
+    "Coordinates CHERI support for Zephyr across architecture ports, kernel and user interfaces, drivers, tooling, and supported platforms.",
+    "The CHERI Zephyr Working Group focuses on adapting Zephyr to leverage CHERI’s memory safety and fine-grained protection capabilities, enhancing security for embedded and IoT system.",
+    "The CHERI Zephyr software ecosystem page provides the technical overview and links to current public development resources.",
+    "Zephyr architecture support",
+    "Memory protection and compartments",
+    "Drivers, tooling, and platforms",
+    "Enquire about this group",
+    "Back to all working groups",
+    "Explore CHERI systems that operate without a conventional memory-management unit."
+  ],
+  "lists": [
+    [
+      "ol",
+      "Alliance About & Governance 🪁 CHERI Zephyr WG"
+    ],
+    [
+      "li",
+      "Alliance"
+    ],
+    [
+      "li",
+      "About & Governance"
+    ],
+    [
+      "li",
+      "🪁 CHERI Zephyr WG"
+    ],
+    [
+      "ul",
+      "Zephyr architecture support Memory protection and compartments Drivers, tooling, and platforms"
+    ],
+    [
+      "li",
+      "Zephyr architecture support"
+    ],
+    [
+      "li",
+      "Memory protection and compartments"
+    ],
+    [
+      "li",
+      "Drivers, tooling, and platforms"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://cheri-alliance.github.io/build/software-ecosystem/zephyr/",
+      "CHERI Zephyr software ecosystem page"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/membership/contact/",
+      "Enquire about this group"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/about-and-governance/working-groups/",
+      "Back to all working groups"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/leadership/working-groups/mmu-less-systems/",
+      "MMU-less Systems Explore CHERI systems that operate without a conventional memory-management unit. Continue"
+    ]
+  ],
+  "images": [],
+  "definitions": [
+    [
+      "dt",
+      "Group type"
+    ],
+    [
+      "dd",
+      "Technical"
+    ],
+    [
+      "dt",
+      "Areas of collaboration"
+    ],
+    [
+      "dd",
+      "Zephyr architecture support Memory protection and compartments Drivers, tooling, and platforms"
+    ]
+  ],
+  "code_blocks": []
+}

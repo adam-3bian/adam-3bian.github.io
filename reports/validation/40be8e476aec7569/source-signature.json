@@ -1,0 +1,88 @@
+{
+  "text": "News & Events Speakers Luca Müller Luca Müller German Research Center for Artificial Intelligence (DFKI) Organisation German Research Center for Artificial Intelligence (DFKI) LinkedIn Biography Luca Müller received the M.Sc. degree in computer science from University of Bremen in 2025. He is currently a Researcher in the Cyber-Physical Systems Group at the German Research Center for Artificial Intelligence (DFKI) and is pursuing his Ph.D. at the University of Bremen. His research interest lies in the verification of hardware designs at different abstraction levels, with a focus on formal techniques. Other research interests include system security and LLMs for hardware verification. CHERI Talks CHERI-enabled RISC-V VP: Capabilities and Applications | CHERI Blossoms 2026 27/03/2026 Cambridge, UK View Slides View Video Back to all speakers",
+  "headings": [
+    [
+      "h1",
+      "Luca Müller",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Biography",
+      "biography"
+    ],
+    [
+      "h2",
+      "CHERI Talks",
+      "cheri-talks"
+    ]
+  ],
+  "paragraphs": [
+    "News & Events",
+    "Speakers",
+    "Luca Müller",
+    "German Research Center for Artificial Intelligence (DFKI)",
+    "LinkedIn",
+    "Luca Müller received the M.Sc. degree in computer science from University of Bremen in 2025. He is currently a Researcher in the Cyber-Physical Systems Group at the German Research Center for Artificial Intelligence (DFKI) and is pursuing his Ph.D. at the University of Bremen. His research interest lies in the verification of hardware designs at different abstraction levels, with a focus on formal techniques. Other research interests include system security and LLMs for hardware verification.",
+    "CHERI-enabled RISC-V VP: Capabilities and Applications | CHERI Blossoms 2026",
+    "27/03/2026",
+    "Cambridge, UK",
+    "View Slides",
+    "View Video",
+    "Back to all speakers"
+  ],
+  "lists": [
+    [
+      "ol",
+      "News & Events Speakers Luca Müller"
+    ],
+    [
+      "li",
+      "News & Events"
+    ],
+    [
+      "li",
+      "Speakers"
+    ],
+    [
+      "li",
+      "Luca Müller"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://www.linkedin.com/in/luca-m%C3%BCller-84690a324/",
+      "LinkedIn"
+    ],
+    [
+      "https://cheri-alliance.org/wp-content/uploads/2026/04/D2-3.2-Luca-Mueller-CHERI-enabled-RISC-V-VP-Capabilities-and-Applications-CHERI-Blossoms-2026.pdf",
+      "View Slides"
+    ],
+    [
+      "https://youtu.be/7XzzG8-FU1g",
+      "View Video"
+    ],
+    [
+      "https://cheri-alliance.github.io/news-and-events/people-and-opportunities/speakers/",
+      "Back to all speakers"
+    ]
+  ],
+  "images": [
+    [
+      "https://cheri-alliance.github.io/assets/images/content/people/luca-muller/portrait.jpg",
+      "Luca Müller"
+    ]
+  ],
+  "definitions": [
+    [
+      "dt",
+      "Organisation"
+    ],
+    [
+      "dd",
+      "German Research Center for Artificial Intelligence (DFKI)"
+    ]
+  ],
+  "code_blocks": []
+}

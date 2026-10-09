@@ -1,0 +1,102 @@
+{
+  "text": "Alliance Members Rheinland-Pfälzische Technische Universität Kaiserslautern-Landau (RPTU) Rheinland-Pfälzische Technische Universität Kaiserslautern-Landau (RPTU) RPTU is a public research university in Kaiserslautern and Landau in der Pfalz, Germany. RPTU is home to 17,000 students, 300 professorships, and 160 degree programs. As a place of top international research and an academic talent factory for… Status Member Membership Community Member Website Visit member website Description RPTU is a public research university in Kaiserslautern and Landau in der Pfalz, Germany. RPTU is home to 17,000 students, 300 professorships, and 160 degree programs. As a place of top international research and an academic talent factory for business and science, we offer an excellent, well-connected environment for study and research. CHERI Activities The Chair of Electronic Design Automation at RPTU in Kaiserslautern has a long background in formal verification of hardware designs.With the emergence of microarchitectural vulnerabilities, such as Spectre and Meltdown, we extended our research to not only cover functional correctness of designs but also to detect security vulnerabilities on a pre-silicon basis. In 2024, we developed VeriCHERI, a novel verification methodology that exhaustively detects security breaches in CHERI designs. VeriCHERI stands out by not requiring any ISA specification, instead focusing on well-established global security objectives of confidentiality and integrity. By introducing symbolic capability models, VeriCHERI ensures broad applicability to industry-grade RTL designs. Open-source Assets for CHERI VeriCHERI Verification IP: https://github.com/RPTU-EIS/VeriCHERI Back to all members",
+  "headings": [
+    [
+      "h1",
+      "Rheinland-Pfälzische Technische Universität Kaiserslautern-Landau (RPTU)",
+      "page-hero-title"
+    ],
+    [
+      "h2",
+      "Description",
+      "description"
+    ],
+    [
+      "h2",
+      "CHERI Activities",
+      "cheri-activities"
+    ],
+    [
+      "h2",
+      "Open-source Assets for CHERI",
+      "open-source-assets-for-cheri"
+    ]
+  ],
+  "paragraphs": [
+    "Alliance",
+    "Members",
+    "Rheinland-Pfälzische Technische Universität Kaiserslautern-Landau (RPTU)",
+    "RPTU is a public research university in Kaiserslautern and Landau in der Pfalz, Germany. RPTU is home to 17,000 students, 300 professorships, and 160 degree programs. As a place of top international research and an academic talent factory for…",
+    "RPTU is a public research university in Kaiserslautern and Landau in der Pfalz, Germany. RPTU is home to 17,000 students, 300 professorships, and 160 degree programs. As a place of top international research and an academic talent factory for business and science, we offer an excellent, well-connected environment for study and research.",
+    "The Chair of Electronic Design Automation at RPTU in Kaiserslautern has a long background in formal verification of hardware designs.With the emergence of microarchitectural vulnerabilities, such as Spectre and Meltdown, we extended our research to not only cover functional correctness of designs but also to detect security vulnerabilities on a pre-silicon basis. In 2024, we developed VeriCHERI, a novel verification methodology that exhaustively detects security breaches in CHERI designs. VeriCHERI stands out by not requiring any ISA specification, instead focusing on well-established global security objectives of confidentiality and integrity. By introducing symbolic capability models, VeriCHERI ensures broad applicability to industry-grade RTL designs.",
+    "VeriCHERI Verification IP:",
+    "https://github.com/RPTU-EIS/VeriCHERI",
+    "Back to all members"
+  ],
+  "lists": [
+    [
+      "ol",
+      "Alliance Members Rheinland-Pfälzische Technische Universität Kaiserslautern-Landau (RPTU)"
+    ],
+    [
+      "li",
+      "Alliance"
+    ],
+    [
+      "li",
+      "Members"
+    ],
+    [
+      "li",
+      "Rheinland-Pfälzische Technische Universität Kaiserslautern-Landau (RPTU)"
+    ]
+  ],
+  "tables": [],
+  "links": [
+    [
+      "https://rptu.de/",
+      "Visit member website"
+    ],
+    [
+      "https://github.com/RPTU-EIS/VeriCHERI",
+      "https://github.com/RPTU-EIS/VeriCHERI"
+    ],
+    [
+      "https://cheri-alliance.github.io/alliance/leadership/members/",
+      "Back to all members"
+    ]
+  ],
+  "images": [
+    [
+      "https://cheri-alliance.github.io/assets/images/content/members/rptu/logo.png",
+      "RPTU logo"
+    ]
+  ],
+  "definitions": [
+    [
+      "dt",
+      "Status"
+    ],
+    [
+      "dd",
+      "Member"
+    ],
+    [
+      "dt",
+      "Membership"
+    ],
+    [
+      "dd",
+      "Community Member"
+    ],
+    [
+      "dt",
+      "Website"
+    ],
+    [
+      "dd",
+      "Visit member website"
+    ]
+  ],
+  "code_blocks": []
+}

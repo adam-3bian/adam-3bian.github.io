@@ -1,0 +1,20 @@
+{
+  "url": "https://cheri-alliance.github.io/adopt/assurance-and-adoption/cheri-enabled-products/x730/",
+  "selector": "main",
+  "asset_mapping": {
+    "/assets/shared/source-assets/c53c4c1378ba-cheri-enabled-2026.webp": "https://cheri-alliance.github.io/assets/images/content/shared/cheri-enabled-2026.webp",
+    "/assets/pages/adopt--assurance-and-adoption--cheri-enabled-products--x730/114ea730a8ce-x730-block-diagram.webp": "https://cheri-alliance.github.io/assets/images/content/products/x730-block-diagram.webp"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

@@ -1,0 +1,61 @@
+{
+  "main_text": "News & Events\nSpeakers\nJavier Orensanz Martinez\nJavier Orensanz Martinez\n\nlowRISC\n\nOrganisation\nlowRISC\nLinkedIn\nBiography\n\nJavier is a business leader with over 25 years of experience in the semiconductors industry. He was the general manager of Arm’s tools business unit for 8 years, and is currently CEO of lowRISC. He holds a degree in telecommunication engineering and an MBA.\n\nCHERI Talks\n\nCHERI Mocha: an open-source memory-safe application system | CHERI Blossoms 2026\n\n26/03/2026\n\nCambridge, UK\n\nView Slides\n\nView Video\n\nBack to all speakers",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 1067.4375
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/people/javier-orensanz-martinez/portrait.jpg",
+      "alt": "Javier Orensanz Martinez",
+      "rect": {
+        "x": 161,
+        "y": 399.953125,
+        "width": 279.59375,
+        "height": 279.59375
+      },
+      "natural_width": 280,
+      "natural_height": 280,
+      "style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 398.953125,
+        "width": 281.59375,
+        "height": 211.1875
+      },
+      "parent_classes": [
+        "entity-media",
+        "entity-media--portrait"
+      ],
+      "body_rect": {
+        "x": 537.59375,
+        "y": 398.953125,
+        "width": 742.40625,
+        "height": 512.6875
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/people/javier-orensanz-martinez/",
+  "final_url": "https://cheri-alliance.github.io/people/javier-orensanz-martinez/",
+  "retrieved_at": "2026-10-09T21:07:28.440072+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}

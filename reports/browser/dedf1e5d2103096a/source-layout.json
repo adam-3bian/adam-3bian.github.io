@@ -1,0 +1,58 @@
+{
+  "main_text": "Adopt\nBusiness Case\nThe Cost of Memory Unsafety\nThe Cost of Memory Unsafety\n\nReduce Risk. Protect Investment. Build Trust.\n\nFrom emergency patches and delayed releases to service disruption and loss of trust, memory-unsafe software can affect organisations long after a product ships.\n\nCHERI helps reduce that risk by making many memory-safety errors impossible to exploit and limiting the impact of those that remain.\n\nThe Hidden Cost of Memory Vulnerabilities\n\nWhen a memory-safety vulnerability is found, fixing the bug is often the smallest part of the cost.\n\nA memory-safety vulnerability can trigger costly investigations, regulatory reporting, emergency patching, customer support activity, compliance work, and roadmap delays, consuming resources long after the original bug has been fixed.\n\nEven when no attack occurs, the investigation and remediation effort consumes time, resources, and budget. Even worse, with incoming regulations (including the Cyber Resilience Act in Europe), there is an obligation and pressure to fix problem in a given time, potentially disrupting development roadmaps.\n\nA recent study showed that 21 new Linux vulnerabilities are discovered per day… This is worth investigating new solutions!\n\nWhy This Matters Now\n\nMemory-safety vulnerabilities continue to account most serious software vulnerabilities.\n\nAt the same time:\n\nsoftware is becoming more connected\nproducts remain deployed for longer\nregulatory expectations are increasing\ngovernments are placing greater emphasis on memory safety and secure-by-design practices\n\nFor many organisations, reducing memory-safety risk is becoming a strategic objective rather than simply an engineering concern. This is highlighted in CISA’s case for memory-safe roadmaps.\n\nWhat CHERI Changes\nFrom Mitigating Attacks to Preventing Them\n\nTraditional defences often just make memory vulnerabilities harder to exploit, until attackers find how to bypass them. CHERI changes the model.\n\nBy enforcing memory access rules directly in hardware, CHERI can prevent many invalid memory accesses from succeeding in the first place.\n\nCombined with compartmentalisation, CHERI can also limit how far an attacker can move when a component is compromised.\n\nKey benefits\nReduce exposure to memory-safety vulnerabilities\nLimit the impact of software compromises\nProtect existing C and C++ investments\nImprove resilience of long-lived products\nSupport secure-by-design strategies\nThe Business Outcome\n\nSpend Less Time Responding. Spend More Time Innovating.\n\nThe goal is not simply to prevent individual vulnerabilities. It is to reduce the operational burden that memory vulnerabilities create throughout a product’s lifecycle.\n\nBy helping organisations detect faults earlier, contain compromises, and protect existing software investments, CHERI can help teams:\n\nreduce security risk\nimprove product resilience\nsimplify long-term support\nmaintain customer trust\nfocus resources on innovation rather than emergency response\nWhere next\nAdoption Costs & Migration\n\nCHERI can protect selected software without requiring every component to be replaced at once.\n\nContinue\nRelated content\nThe Business Case\n\nCHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.\n\nRead this page",
+  "main_rect": {
+    "x": 0,
+    "y": 69,
+    "width": 1440,
+    "height": 3490.296875
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.github.io/assets/images/content/shared/vulnerability-handling.webp",
+      "alt": "Vulnerability handling process",
+      "rect": {
+        "x": 160,
+        "y": 680.484375,
+        "width": 767.984375,
+        "height": 144.59375
+      },
+      "natural_width": 887,
+      "natural_height": 167,
+      "style": {
+        "float": "none",
+        "display": "inline"
+      },
+      "parent": {
+        "x": 160,
+        "y": 680.484375,
+        "width": 768,
+        "height": 152.78125
+      },
+      "parent_classes": [],
+      "body_rect": {
+        "x": 0,
+        "y": 69,
+        "width": 1440,
+        "height": 3490.296875
+      }
+    }
+  ],
+  "header_text": [
+    "Discover CHERI\nAdopt\nBuild\nCHERI Alliance\nNews & Events"
+  ],
+  "copyright_text": [
+    "© 2026 CHERI Alliance. CHERI® is a registered trademark of CHERI Alliance CIC."
+  ],
+  "footer_text": [
+    "Updates\nLatest News\nUpcoming Events\nSubscribe to our Newsletter\nCHERI Alliance\nAbout the CHERI Alliance\nMembers\nWorking Groups\nContact the Alliance\nLegal\nCode of Conduct\nCHERI Trademark\nPrivacy"
+  ],
+  "url": "https://cheri-alliance.github.io/adopt/business-case/cost-of-memory-unsafety/",
+  "final_url": "https://cheri-alliance.github.io/adopt/business-case/cost-of-memory-unsafety/",
+  "retrieved_at": "2026-10-09T21:52:47.276629+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": []
+}
