@@ -1,6 +1,8 @@
 ---
 title: Vulnerabilities in Everyday Technology
 permalink: /discover/why-cheri/vulnerabilities-in-everyday-technology/
+where-next:
+  url: /discover/why-cheri/why-existing-defences-are-not-enough/
 ---
 
 1. Discover

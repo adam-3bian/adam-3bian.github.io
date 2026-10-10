@@ -1,6 +1,15 @@
 ---
 title: Commercialisation
 permalink: /discover/history/commercialisation/
+where-next:
+  url: /discover/history/formation-of-the-cheri-alliance/
+related-pages:
+- url: /discover/history/early-capability-systems/
+  description: A short account of early capability-based computer systems and the ideas that influenced later work.
+  action: Read this page
+- url: /discover/history/risc-v-and-embedded-development/
+  description: An overview of CHERI work for RISC-V and embedded systems.
+  action: Read this page
 ---
 
 1. Discover

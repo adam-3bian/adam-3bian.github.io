@@ -1,5 +1,13 @@
 ---
 title: Run CHERI in Simulation
+where-next:
+  url: /guides/install-a-toolchain/
+  title: Install a Toolchain
+related-pages:
+- url: /guides/choose-a-platform/
+  title: Choose a Platform
+  description: A CHERI platform combines more than an instruction set.
+  action: Read this page
 ---
 
 1. Build

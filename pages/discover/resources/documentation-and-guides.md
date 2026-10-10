@@ -1,6 +1,8 @@
 ---
 title: Documentation & Guides
 permalink: /discover/resources/documentation-and-guides/
+where-next:
+  url: /alliance/leadership/working-groups/
 ---
 
 1. Discover

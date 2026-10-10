@@ -1,5 +1,8 @@
 ---
 title: 🐧 CHERI Linux WG
+where-next:
+  url: /groups/cheri-qemu/
+  title: CHERI QEMU
 ---
 
 1. Alliance

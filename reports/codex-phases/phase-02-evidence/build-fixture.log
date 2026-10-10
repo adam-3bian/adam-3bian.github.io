@@ -1,0 +1,19 @@
+{
+  "source": "/tmp/cheri-phase2-fixture-final/source",
+  "genuine_records": [
+    "_people/robert-watson.md",
+    "_people/anthony-fox.md",
+    "_organisations/codasip.md",
+    "_news/one-bug-is-all-it-takes.md",
+    "_papers/cheri-concentrate-practical-compressed-capabilities.md"
+  ],
+  "gallery_image": "/assets/news/one-bug-is-all-it-takes/90741c3e8a15-hero.jpg"
+}
+Configuration file: /tmp/cheri-phase2-fixture-final/source/_config.yml
+To use retry middleware with Faraday v2.0+, install `faraday-retry` gem
+            Source: /tmp/cheri-phase2-fixture-final/source
+       Destination: /tmp/cheri-phase2-fixture-final/site/cheri-preview
+ Incremental build: disabled. Enable with --incremental
+      Generating...
+                    done in 4.324 seconds.
+ Auto-regeneration: disabled. Use --watch to enable.

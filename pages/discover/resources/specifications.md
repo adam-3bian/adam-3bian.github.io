@@ -1,6 +1,8 @@
 ---
 title: Specifications
 permalink: /discover/resources/specifications/
+where-next:
+  url: /discover/resources/documentation-and-guides/
 ---
 
 1. Discover

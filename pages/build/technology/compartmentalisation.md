@@ -1,6 +1,15 @@
 ---
 title: Compartmentalisation
 permalink: /build/technology/compartmentalisation/
+where-next:
+  url: /build/technology/hybrid-systems/
+related-pages:
+- url: /build/technology/capabilities/
+  description: A pointer bug becomes dangerous when changing a number changes authority.
+  action: Read this page
+- url: /build/technology/temporal-memory-safety/
+  description: A pointer can remain inside the correct bounds and still be unsafe.
+  action: Read this page
 ---
 
 1. Build

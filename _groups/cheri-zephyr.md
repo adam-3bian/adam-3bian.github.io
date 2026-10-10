@@ -1,5 +1,8 @@
 ---
 title: 🪁 CHERI Zephyr WG
+where-next:
+  url: /groups/mmu-less-systems/
+  title: MMU-less Systems
 ---
 
 1. Alliance

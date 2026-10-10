@@ -1,5 +1,18 @@
 ---
 title: Privacy
+where-next:
+  url: /news-and-events/news-and-analysis/latest-news/
+related-pages:
+- url: /policies/code-of-conduct/
+  description: The behaviour and participation expectations that apply to Alliance spaces and activities.
+  action: Read this page
+- url: /policies/export-controls/
+  description: Information on export-control considerations relevant to Alliance activity and shared material.
+  action: Read this page
+- url: /organisations/cheri-alliance/
+  title: About the CHERI Alliance
+  description: Learn how the Alliance connects organisations working across the CHERI ecosystem.
+  action: Read this page
 ---
 
 1. Alliance

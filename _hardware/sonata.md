@@ -1,5 +1,18 @@
 ---
 title: Sonata
+where-next:
+  url: /hardware/fpga-platforms/
+related-pages:
+- url: /build/platforms/platform-comparison/
+  description: No single CHERI platform is best for every workload.
+  action: Read this page
+- url: /hardware/cheriot/
+  description: CHERIoT is a complete embedded hardware-software platform built around CHERI concepts.
+  action: Read this page
+- url: /guides/choose-a-platform/
+  title: Choose a Platform
+  description: Choose a platform, prepare an environment and run a first CHERI workload.
+  action: Read this page
 ---
 
 1. Build

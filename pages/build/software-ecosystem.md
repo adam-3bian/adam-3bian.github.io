@@ -1,6 +1,19 @@
 ---
 title: Software Ecosystem
 permalink: /build/software-ecosystem/
+where-next:
+  url: /software/llvm-and-clang/
+related-pages:
+- url: /guides/choose-a-platform/
+  title: Choose a Platform
+  description: Compare the available hardware, FPGA, and simulation routes into CHERI development.
+  action: Read this page
+- url: /build/platforms/platform-comparison/
+  description: See how current CHERI development platforms differ in architecture, software, and availability.
+  action: Read this page
+- url: /build/technology/capabilities/
+  description: Understand the capability model that underpins CHERI systems and software.
+  action: Read this page
 ---
 
 1. Build

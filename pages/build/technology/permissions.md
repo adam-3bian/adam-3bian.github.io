@@ -1,6 +1,15 @@
 ---
 title: Permissions
 permalink: /build/technology/permissions/
+where-next:
+  url: /build/technology/provenance/
+related-pages:
+- url: /build/technology/capabilities/
+  description: A pointer bug becomes dangerous when changing a number changes authority.
+  action: Read this page
+- url: /build/technology/bounds/
+  description: A buffer overflow is possible because a pointer can leave the object it was meant to access and continue into neighbouring memory.
+  action: Read this page
 ---
 
 1. Build

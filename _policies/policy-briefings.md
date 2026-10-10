@@ -1,5 +1,20 @@
 ---
 title: Policy Briefings
+where-next:
+  url: /organisations/cheri-alliance/
+  title: About the CHERI Alliance
+related-pages:
+- url: /adopt/policy/government-guidance/
+  title: Government Guidance
+  description: Public guidance places CHERI alongside memory-safe languages and other routes to more resilient software.
+  action: Read this page
+- url: /adopt/policy/critical-infrastructure-and-resilience/
+  description: CHERI can contribute prevention and containment within the wider resilience of an essential service.
+  action: Read this page
+- url: /adopt/business-case/the-business-case/
+  title: The Business Case
+  description: CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.
+  action: Read this page
 ---
 
 1. Adopt

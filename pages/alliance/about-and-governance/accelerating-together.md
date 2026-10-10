@@ -1,6 +1,20 @@
 ---
 title: Accelerating CHERI together
 permalink: /alliance/about-and-governance/accelerating-together/
+where-next:
+  url: /alliance/about-and-governance/governance/
+related-pages:
+- url: /organisations/cheri-alliance/
+  title: About the CHERI Alliance
+  description: Learn how the Alliance connects organisations working across the CHERI ecosystem.
+  action: Read this page
+- url: /organisations/university-of-cambridge/
+  title: The CHERI Research Centre
+  description: Discover the CHERI Research Centre at University of Cambridge.
+  action: Read this page
+- url: /organisations/the-capable-hub/
+  description: Discover the Capable Hub.
+  action: Read this page
 ---
 
 1. Alliance

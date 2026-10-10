@@ -17,8 +17,27 @@ Each entity lives in one Markdown file. Its filename is its ID: `_people/robert-
 | `permalink` | Ordinary pages under `pages/` | Public route; collection routes come from filenames. |
 | `listing` | Directory pages | Collection name, or `members`/`speakers` to select role flags. |
 | `filter` | Event indexes only | Optional `upcoming` or `past`; event dates come from published body definitions. |
+| `thumbnail` | A record with genuine media | Optional grouped `src`, `alt`, `fit`, `position`, `width` and `height`; otherwise cards reuse its first local source image. |
+| `where-next` | A page with a known next destination | One `url`, with optional `title`, `action`, `image`, `target` and `rel`. No description is rendered. |
+| `related-pages` | A page with known related destinations | Ordered URL objects; infer destination titles unless an explicit override is needed. Optional source-backed `description`, `action`, `target` and `rel`. |
 
 Omit false flags, empty arrays, duplicated slugs, per-record layout settings and acquisition metadata. Biographies and article text belong in the Markdown body. Add other metadata only when needed and supported by a source.
+
+### Shared cards and onward links (Phase 2)
+
+Use real destinations in front matter; no card HTML or Liquid is needed in editorial bodies:
+
+```yaml
+where-next:
+  url: /guides/choose-a-platform/
+related-pages:
+- url: /build/platforms/platform-comparison/
+- url: /guides/port-existing-software/
+```
+
+Where next always renders one full-width card with a title and action. Related pages uses a responsive grid. The shared renderer resolves internal titles from actual pages/records, preserves explicit overrides, prefixes local links/assets for project builds, and adds `noopener noreferrer` for explicit `target: _blank`. Person/member cards use square images, news/event cards use landscape frames, and a missing genuine image produces a text-only card. An explicit empty image alt remains empty; use `fit: contain` for a logo or diagram that must stay uncropped.
+
+For the migrated 137 records, retained `.where-next-title` / `.related-pages-title` blocks are original source evidence; their YAML fields now control display. Keep their historical wording intact. Existing Where next descriptions are intentionally omitted from the rendered component; Related content descriptions remain visible through the YAML mapping. New authored pages need only the YAML fields. See [Phase 2](../reports/codex-phases/phase-02.md) for measured preservation and the limits of older search/filter/date statements below.
 
 Boolean flags describe roles; references describe connections. A `member` flag cannot identify a person's organisation, and a `speaker` flag cannot identify which events they spoke at. Both forms are needed.
 

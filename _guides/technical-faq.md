@@ -1,5 +1,18 @@
 ---
 title: Technical FAQ
+where-next:
+  url: /build/technology/capabilities/
+related-pages:
+- url: /discover/resources/specifications/
+  description: A directory of architecture and related specifications relevant to CHERI.
+  action: Read this page
+- url: /discover/resources/glossary/
+  description: This glossary provides plain-language, product-oriented explanations of common CHERI concepts. More detailed technical definitions can be found in the Build section.
+  action: Read this page
+- url: /guides/choose-a-platform/
+  title: Choose a Platform
+  description: Choose a platform, prepare an environment and run a first CHERI workload.
+  action: Read this page
 ---
 
 1. Build

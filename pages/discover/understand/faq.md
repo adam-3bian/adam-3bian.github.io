@@ -1,6 +1,19 @@
 ---
 title: FAQ
 permalink: /discover/understand/faq/
+where-next:
+  url: /adopt/business-case/cost-of-memory-unsafety/
+  title: Cost of Memory Unsafety
+related-pages:
+- url: /discover/why-cheri/vulnerabilities-in-everyday-technology/
+  description: Why CHERI is important.
+  action: Read this page
+- url: /discover/resources/glossary/
+  description: This glossary provides plain-language, product-oriented explanations of common CHERI concepts. More detailed technical definitions can be found in the Build section.
+  action: Read this page
+- url: /guides/technical-faq/
+  description: Addresses more technical questions.
+  action: Read this page
 ---
 
 1. Discover

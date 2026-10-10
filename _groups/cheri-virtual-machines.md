@@ -1,5 +1,8 @@
 ---
 title: 🤖 CHERI Virtual Machines WG
+where-next:
+  url: /groups/rust-plus-cheri/
+  title: Rust + CHERI
 ---
 
 1. Alliance

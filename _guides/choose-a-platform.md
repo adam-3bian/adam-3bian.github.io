@@ -1,5 +1,7 @@
 ---
 title: Choosing a CHERI Development Platform
+where-next:
+  url: /guides/run-cheri-in-simulation/
 ---
 
 1. Build

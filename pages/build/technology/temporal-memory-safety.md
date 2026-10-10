@@ -1,6 +1,15 @@
 ---
 title: Temporal Memory Safety
 permalink: /build/technology/temporal-memory-safety/
+where-next:
+  url: /build/technology/compartmentalisation/
+related-pages:
+- url: /build/technology/capabilities/
+  description: A pointer bug becomes dangerous when changing a number changes authority.
+  action: Read this page
+- url: /build/technology/spatial-memory-safety/
+  description: A program allocates eight bytes and writes sixteen.
+  action: Read this page
 ---
 
 1. Build

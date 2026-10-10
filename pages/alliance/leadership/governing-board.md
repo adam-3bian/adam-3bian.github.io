@@ -1,6 +1,13 @@
 ---
 title: Governing Board
 permalink: /alliance/leadership/governing-board/
+where-next:
+  url: /alliance/leadership/members/
+related-pages:
+- url: /organisations/cheri-alliance/
+  title: About the CHERI Alliance
+  description: Learn how the Alliance connects organisations working across the CHERI ecosystem.
+  action: Read this page
 ---
 
 1. Alliance

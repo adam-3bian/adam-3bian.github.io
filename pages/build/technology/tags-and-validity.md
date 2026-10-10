@@ -1,6 +1,12 @@
 ---
 title: Tags & Validity
 permalink: /build/technology/tags-and-validity/
+where-next:
+  url: /build/technology/bounds/
+related-pages:
+- url: /build/technology/capabilities/
+  description: A pointer bug becomes dangerous when changing a number changes authority.
+  action: Read this page
 ---
 
 1. Build

@@ -1,6 +1,10 @@
 ---
 title: Subscribe to our quarterly newsletter
 permalink: /news-and-events/news-and-analysis/subscribe-newsletter/
+related-pages:
+- url: /news-and-events/news-and-analysis/latest-news/
+  description: The latest CHERI Alliance and ecosystem announcements, presented with clear dates and sources.
+  action: Read this page
 ---
 
 1. News &amp; Events

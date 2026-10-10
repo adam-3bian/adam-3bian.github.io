@@ -1,5 +1,8 @@
 ---
 title: 🐦 CHERI QEMU WG
+where-next:
+  url: /groups/cheri-virtual-machines/
+  title: CHERI Virtual Machines
 ---
 
 1. Alliance

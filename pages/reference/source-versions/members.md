@@ -2,6 +2,16 @@
 title: Members
 permalink: /reference/source-versions/members/
 alternate: true
+where-next:
+  url: /alliance/leadership/ambassadors/
+related-pages:
+- url: /alliance/leadership/governing-board/
+  description: Information on the Alliance governing board, its remit, and current representation.
+  action: Read this page
+- url: /organisations/cheri-alliance/
+  title: About the CHERI Alliance
+  description: Learn how the Alliance connects organisations working across the CHERI ecosystem.
+  action: Read this page
 ---
 
 1. Alliance

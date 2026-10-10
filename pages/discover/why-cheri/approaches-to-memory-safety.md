@@ -1,6 +1,12 @@
 ---
 title: Approaches to Memory Safety
 permalink: /discover/why-cheri/approaches-to-memory-safety/
+where-next:
+  url: /discover/understand/cheri-and-existing-software/
+related-pages:
+- url: /discover/why-cheri/why-existing-defences-are-not-enough/
+  description: Security decisions rarely involve choosing one technology and rejecting everything else. Most products use multiple security measures because different controls protect against different types of risk.
+  action: Read this page
 ---
 
 1. Discover

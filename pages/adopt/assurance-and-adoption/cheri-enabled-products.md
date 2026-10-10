@@ -1,6 +1,8 @@
 ---
 title: CHERI Enabled Products
 permalink: /adopt/assurance-and-adoption/cheri-enabled-products/
+where-next:
+  url: /adopt/assurance-and-adoption/about-cheri-enabled/
 ---
 
 1. Adopt

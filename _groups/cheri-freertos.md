@@ -1,5 +1,8 @@
 ---
 title: 🆓 CHERI FreeRTOS WG
+where-next:
+  url: /groups/cheri-zephyr/
+  title: CHERI Zephyr
 ---
 
 1. Alliance

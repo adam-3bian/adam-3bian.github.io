@@ -1,6 +1,12 @@
 ---
 title: Bringing CHERI to your product
 permalink: /discover/understand/adapt-products/
+where-next:
+  url: /build/technology/cheri-and-rust-technical/
+related-pages:
+- url: /discover/understand/cheri-and-existing-software/
+  description: Porting software to CHERI is a process of finding assumptions about pointers, integers, objects, bounds, provenance, lifetimes, and interfaces.
+  action: Read this page
 ---
 
 1. Discover

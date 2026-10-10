@@ -1,6 +1,15 @@
 ---
 title: DARPA Programmes
 permalink: /discover/history/darpa-programmes/
+where-next:
+  url: /discover/history/ukri-digital-security-by-design/
+related-pages:
+- url: /discover/history/early-capability-systems/
+  description: A short account of early capability-based computer systems and the ideas that influenced later work.
+  action: Read this page
+- url: /discover/history/development-of-cheri/
+  description: A timeline of the technical work that developed CHERI from research ideas into working architectures and software.
+  action: Read this page
 ---
 
 1. Discover

@@ -1,5 +1,15 @@
 ---
 title: LLVM & Clang
+where-next:
+  url: /software/rust/
+related-pages:
+- url: /software/cheribsd/
+  description: A complete CHERI operating-system environment built around an LLVM and Clang toolchain.
+  action: Read this page
+- url: /guides/choose-a-platform/
+  title: Choose a Platform
+  description: Compare platforms and the software stacks supplied for each development route.
+  action: Read this page
 ---
 
 1. Build

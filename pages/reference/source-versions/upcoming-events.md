@@ -2,6 +2,13 @@
 title: Upcoming Events
 permalink: /reference/source-versions/upcoming-events/
 alternate: true
+where-next:
+  url: /news-and-events/events-and-archive/cheri-blossoms/
+  title: CHERI Blossoms
+related-pages:
+- url: /news-and-events/news-and-analysis/latest-news/
+  description: The latest CHERI Alliance and ecosystem announcements, presented with clear dates and sources.
+  action: Read this page
 ---
 
 1. News &amp; Events

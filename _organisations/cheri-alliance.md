@@ -1,5 +1,18 @@
 ---
 title: CHERI Alliance
+where-next:
+  url: /alliance/about-and-governance/mission-and-role/
+related-pages:
+- url: /alliance/about-and-governance/governance/
+  description: How priorities and responsibilities are organised.
+  action: Read this page
+- url: /alliance/membership/why-join/
+  description: All the good reasons to join the Alliance.
+  action: Read this page
+- url: /alliance/leadership/members/
+  title: Current members
+  description: Discover the members of the CHERI Alliance.
+  action: Read this page
 ---
 
 1. Alliance

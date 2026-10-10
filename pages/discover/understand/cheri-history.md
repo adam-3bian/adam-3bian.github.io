@@ -1,6 +1,9 @@
 ---
 title: The History of CHERI
 permalink: /discover/understand/cheri-history/
+where-next:
+  url: /organisations/cheri-alliance/
+  title: Building the ecosystem behind memory-safe computing
 ---
 
 1. Discover

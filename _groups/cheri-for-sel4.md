@@ -1,5 +1,8 @@
 ---
 title: 4️⃣ CHERI for seL4 WG
+where-next:
+  url: /groups/cheri-freertos/
+  title: CHERI FreeRTOS
 ---
 
 1. Alliance

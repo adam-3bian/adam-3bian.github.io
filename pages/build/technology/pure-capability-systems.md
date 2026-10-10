@@ -1,6 +1,15 @@
 ---
 title: Pure-Capability Systems
 permalink: /build/technology/pure-capability-systems/
+where-next:
+  url: /discover/history/early-capability-systems/
+related-pages:
+- url: /build/technology/capabilities/
+  description: A pointer bug becomes dangerous when changing a number changes authority.
+  action: Read this page
+- url: /build/technology/hybrid-systems/
+  description: Replacing every pointer in a large software stack at once is rarely practical.
+  action: Read this page
 ---
 
 1. Build

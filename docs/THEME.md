@@ -18,6 +18,16 @@ The archive's actual `_layouts`, `_includes`, `_sass`, branded/background assets
 
 The starter's defaults enable heroes on ordinary pages as well as the homepage. Its original translucent page surfaces and watermark strengths apply directly. Old `_website.scss`/`_migration-content.scss` overrides are retired from the build.
 
+## Shared components after Phase 2
+
+`listing.html` is the single generic card renderer for documents, relationship lists and YAML links. `related-pages.html` supplies a grid of resolved destinations; `where-next.html` supplies one full-width CTA with no description. Both retain the ZIP's native card/CTA classes, spacing and states. People and organisations default to the ZIP's compact image/title treatment; dates are shown only on chronological news/event card types. Existing event chronology and undated-news handling remain Phase 4 work.
+
+Explicit thumbnail metadata wins. Otherwise the renderer reuses the record's first genuine local image from either Markdown or converted HTML, preserving its alt text. People/member frames are square, news/events landscape, and logos use `contain`. The redundant `.content .cards img` height override was removed so the ZIP's frame rule applies inside articles too. There is no placeholder image or global crop/opacity override. Ordinary body images retain their source proportions, alignment and captions; the original image-dialog script is unchanged.
+
+The default layout now feeds the native hero/page-heading includes from one extracted source H1 and introduction. Existing IDs and source preambles are retained. Additional H1s in two printed archives become H2 chapter headings without changing their wording/order/anchors. The former synthetic hero anchor remains available where needed.
+
+Existing source Where next/Related content fragments have explicit front-matter counterparts on 137 records. Their original Markdown remains intact as provenance; the layout replaces only those marked navigation sections with the shared components. All 227 Related content descriptions remain visible. The 133 old Where next descriptions are intentionally omitted from display to meet the requested component contract, and remain verbatim in source and [Phase 2 evidence](../reports/codex-phases/phase-02-evidence/onward-mapping.json). No ordinary article paragraph is removed. New content can use the native YAML directly without legacy fragments.
+
 ## Validation and delivery
 
 Run the repository's build, full-content/asset/link checks, author relationship checks and desktop/mobile browser flows. Compare computed visual styles and representative screenshots against a build of the ZIP itself. Keep content hashes unchanged during theme-only tasks. Shared presentation and newly generated navigation can differ from archival body text; complete bodies must still match their retained signatures.

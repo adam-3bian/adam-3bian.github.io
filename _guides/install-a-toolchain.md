@@ -1,5 +1,15 @@
 ---
 title: Install a CHERI Toolchain
+where-next:
+  url: /guides/build-your-first-application/
+related-pages:
+- url: /guides/choose-a-platform/
+  title: Choose a Platform
+  description: A CHERI platform combines more than an instruction set.
+  action: Read this page
+- url: /guides/run-cheri-in-simulation/
+  description: Simulation is the recommended first execution environment for most CHERI developers.
+  action: Read this page
 ---
 
 1. Build

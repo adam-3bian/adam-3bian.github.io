@@ -1,6 +1,18 @@
 ---
 title: CHERITech Conference
 permalink: /news-and-events/events-and-archive/cheritech/
+where-next:
+  url: /news-and-events/people-and-opportunities/speakers/
+related-pages:
+- url: /news-and-events/events-and-archive/upcoming-events/
+  description: A calendar of upcoming CHERI-related events, talks, workshops, and community sessions.
+  action: Read this page
+- url: /news-and-events/events-and-archive/cheri-blossoms/
+  description: Information about CHERI Blossoms Conference, including its purpose, audience, and current event details.
+  action: Read this page
+- url: /news-and-events/news-and-analysis/latest-news/
+  description: The latest CHERI Alliance and ecosystem announcements, presented with clear dates and sources.
+  action: Read this page
 ---
 
 1. News &amp; Events

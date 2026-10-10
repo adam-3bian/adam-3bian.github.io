@@ -1,6 +1,13 @@
 ---
 title: Automotive
 permalink: /adopt/use-cases/automotive/
+where-next:
+  url: /adopt/use-cases/iot-and-embedded/
+related-pages:
+- url: /adopt/business-case/the-business-case/
+  title: The Business Case
+  description: CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.
+  action: Read this page
 ---
 
 1. Adopt

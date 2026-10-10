@@ -1,6 +1,15 @@
 ---
 title: How does CHERI work?
 permalink: /discover/understand/how-does-cheri-work/
+where-next:
+  url: /build/technology/cheri-and-rust-technical/
+related-pages:
+- url: /discover/understand/adapt-products/
+  description: What needs to change, and what doesn't.
+  action: Read this page
+- url: /discover/understand/cheri-and-existing-software/
+  description: Porting software to CHERI is a process of finding assumptions about pointers, integers, objects, bounds, provenance, lifetimes, and interfaces.
+  action: Read this page
 ---
 
 1. Discover

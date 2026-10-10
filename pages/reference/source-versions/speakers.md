@@ -2,6 +2,19 @@
 title: Speakers
 permalink: /reference/source-versions/speakers/
 alternate: true
+where-next:
+  url: /news-and-events/events-and-archive/past-events/
+related-pages:
+- url: /news-and-events/events-and-archive/upcoming-events/
+  description: A calendar of upcoming CHERI-related events, talks, workshops, and community sessions.
+  action: Read this page
+- url: /news-and-events/events-and-archive/cheritech/
+  title: CHERITech
+  description: Information about CHERITech, including its programme, audience, and current event details.
+  action: Read this page
+- url: /news-and-events/news-and-analysis/latest-news/
+  description: The latest CHERI Alliance and ecosystem announcements, presented with clear dates and sources.
+  action: Read this page
 ---
 
 1. News &amp; Events

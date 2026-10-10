@@ -1,6 +1,15 @@
 ---
 title: Hybrid Systems
 permalink: /build/technology/hybrid-systems/
+where-next:
+  url: /build/technology/pure-capability-systems/
+related-pages:
+- url: /build/technology/capabilities/
+  description: A pointer bug becomes dangerous when changing a number changes authority.
+  action: Read this page
+- url: /build/technology/compartmentalisation/
+  description: A media application may include millions of lines of code, dozens of libraries, and parsers for hostile input.
+  action: Read this page
 ---
 
 1. Build

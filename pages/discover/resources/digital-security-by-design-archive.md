@@ -1,6 +1,15 @@
 ---
 title: Digital Security by Design Archive
 permalink: /discover/resources/digital-security-by-design-archive/
+where-next:
+  url: /discover/resources/glossary/
+related-pages:
+- url: /discover/resources/specifications/
+  description: A directory of architecture and related specifications relevant to CHERI.
+  action: Read this page
+- url: /discover/resources/videos-and-presentations/
+  description: A collection of talks, demonstrations, briefings, and presentations about CHERI.
+  action: Read this page
 ---
 
 1. Discover

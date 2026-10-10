@@ -1,6 +1,15 @@
 ---
 title: Provenance
 permalink: /build/technology/provenance/
+where-next:
+  url: /build/technology/sealing/
+related-pages:
+- url: /build/technology/capabilities/
+  description: A pointer bug becomes dangerous when changing a number changes authority.
+  action: Read this page
+- url: /build/technology/permissions/
+  description: A pointer can be inside the correct object and still perform the wrong operation.
+  action: Read this page
 ---
 
 1. Build

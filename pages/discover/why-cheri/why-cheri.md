@@ -1,6 +1,15 @@
 ---
 title: Why CHERI?
 permalink: /discover/why-cheri/why-cheri/
+where-next:
+  url: /discover/why-cheri/vulnerabilities-in-everyday-technology/
+related-pages:
+- url: /discover/why-cheri/why-existing-defences-are-not-enough/
+  description: Passwords, encryption, testing, and updates reduce risk, but memory vulnerabilities can still remain.
+  action: Read this page
+- url: /discover/why-cheri/approaches-to-memory-safety/
+  description: No single technology delivers memory safety. The strongest solutions combine processes, tools, hardware protections, and isolation.
+  action: Read this page
 ---
 
 1. Discover

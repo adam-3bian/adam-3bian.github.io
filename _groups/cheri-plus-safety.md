@@ -1,5 +1,8 @@
 ---
 title: 📋 CHERI + Safety WG
+where-next:
+  url: /groups/cheri-for-sel4/
+  title: CHERI for seL4
 ---
 
 1. Alliance

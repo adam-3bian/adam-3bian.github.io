@@ -1,5 +1,8 @@
 ---
 title: ⬛️ CHERI in SoC WG
+where-next:
+  url: /groups/cheri-linux-working-group/
+  title: CHERI Linux Working Group
 ---
 
 1. Alliance

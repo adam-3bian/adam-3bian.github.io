@@ -1,6 +1,13 @@
 ---
 title: CHERI and Rust - Technical Overview
 permalink: /build/technology/cheri-and-rust-technical/
+where-next:
+  url: /guides/building-secure-software/
+  title: How Secure is a Product?
+related-pages:
+- url: /discover/understand/cheri-and-existing-software/
+  description: Porting software to CHERI is a process of finding assumptions about pointers, integers, objects, bounds, provenance, lifetimes, and interfaces.
+  action: Read this page
 ---
 
 1. Discover

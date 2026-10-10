@@ -1,5 +1,8 @@
 ---
 title: ⚙️ Rust + CHERI WG
+where-next:
+  url: /groups/cheri-plus-safety/
+  title: CHERI + Safety
 ---
 
 1. Alliance

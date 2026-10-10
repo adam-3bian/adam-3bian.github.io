@@ -1,5 +1,8 @@
 ---
 title: 🛠️ OS Support & Portability WG
+where-next:
+  url: /alliance/leadership/working-groups/
+  title: All Working Groups
 ---
 
 1. Alliance

@@ -1,5 +1,15 @@
 ---
 title: CheriBSD
+where-next:
+  url: /software/freebsd/
+related-pages:
+- url: /software/llvm-and-clang/
+  description: The compiler infrastructure used by the CheriBSD software stack.
+  action: Read this page
+- url: /guides/choose-a-platform/
+  title: Choose a Platform
+  description: Compare QEMU, Morello, FPGA, and other CHERI development routes.
+  action: Read this page
 ---
 
 1. Build

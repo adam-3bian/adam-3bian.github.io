@@ -2,6 +2,8 @@
 title: Latest News
 permalink: /reference/source-versions/latest-news/
 alternate: true
+where-next:
+  url: /news-and-events/news-and-analysis/press-resources/
 ---
 
 1. News &amp; Events

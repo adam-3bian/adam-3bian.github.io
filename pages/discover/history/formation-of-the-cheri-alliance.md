@@ -1,6 +1,15 @@
 ---
 title: Formation of the CHERI Alliance
 permalink: /discover/history/formation-of-the-cheri-alliance/
+where-next:
+  url: /discover/history/future-direction/
+related-pages:
+- url: /discover/history/early-capability-systems/
+  description: A short account of early capability-based computer systems and the ideas that influenced later work.
+  action: Read this page
+- url: /discover/history/commercialisation/
+  description: An overview of the move from research platforms towards commercial CHERI technology and products.
+  action: Read this page
 ---
 
 1. Discover

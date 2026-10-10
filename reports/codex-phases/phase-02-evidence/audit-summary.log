@@ -1,0 +1,14 @@
+{
+  "records": 476,
+  "body_hashes_preserved": 476,
+  "signature_passes": 476,
+  "single_h1_pages": 476,
+  "removed_synthetic_h1s": 140,
+  "chapter_h1s_now_h2": 30,
+  "onward_items": 360,
+  "source_backed_card_images": 780,
+  "root_link_errors": 1,
+  "project_link_errors": 2081,
+  "project_component_errors": 0,
+  "fidelity_failures": []
+}

@@ -1,5 +1,18 @@
 ---
 title: Simulators
+where-next:
+  url: /software/cheribsd/
+related-pages:
+- url: /build/platforms/platform-comparison/
+  description: No single CHERI platform is best for every workload.
+  action: Read this page
+- url: /hardware/fpga-platforms/
+  description: FPGA platforms put a CHERI processor and system design onto reconfigurable hardware.
+  action: Read this page
+- url: /guides/choose-a-platform/
+  title: Choose a Platform
+  description: Choose a platform, prepare an environment and run a first CHERI workload.
+  action: Read this page
 ---
 
 1. Build

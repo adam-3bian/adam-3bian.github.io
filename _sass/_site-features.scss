@@ -6,7 +6,7 @@
 .content a { overflow-wrap: anywhere; }
 .breadcrumbs li { min-height: $control-height; }
 .content .cards > .card > * + * { margin-top: $space-4; }
-.content .cards img { height: auto; max-width: 100%; }
+.card-description { margin-top: $space-4; }
 .content .image-inline { display: inline; float: none; height: auto; margin: 0; max-height: none; max-width: 100%; width: auto; }
 .entity-facts dt { font-weight: $font-weight-semibold; }
 .entity-facts dd { margin: 0 0 $space-3; }

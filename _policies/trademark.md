@@ -1,5 +1,9 @@
 ---
 title: CHERI Trademark
+related-pages:
+- url: /policies/trademark-policy/
+  description: Rules for using CHERI trademarks, logos, membership marks, and certification claims.
+  action: Read this page
 ---
 
 1. Alliance

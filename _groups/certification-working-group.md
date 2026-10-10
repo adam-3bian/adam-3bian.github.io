@@ -1,5 +1,8 @@
 ---
 title: ✅ Certification WG
+where-next:
+  url: /adopt/assurance-and-adoption/about-cheri-enabled/
+  title: CHERI Enabled
 ---
 
 1. Alliance

@@ -1,6 +1,15 @@
 ---
 title: Bounds
 permalink: /build/technology/bounds/
+where-next:
+  url: /build/technology/permissions/
+related-pages:
+- url: /build/technology/capabilities/
+  description: A pointer bug becomes dangerous when changing a number changes authority.
+  action: Read this page
+- url: /build/technology/tags-and-validity/
+  description: Suppose an attacker learns that a password sits at address 0x40008000.
+  action: Read this page
 ---
 
 1. Build

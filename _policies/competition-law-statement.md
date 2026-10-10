@@ -1,5 +1,15 @@
 ---
 title: Competition Law Statement
+where-next:
+  url: /policies/intellectual-property-policy/
+related-pages:
+- url: /policies/code-of-conduct/
+  description: The behaviour and participation expectations that apply to Alliance spaces and activities.
+  action: Read this page
+- url: /organisations/cheri-alliance/
+  title: About the CHERI Alliance
+  description: Learn how the Alliance connects organisations working across the CHERI ecosystem.
+  action: Read this page
 ---
 
 1. Alliance

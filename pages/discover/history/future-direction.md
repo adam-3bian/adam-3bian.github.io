@@ -1,6 +1,15 @@
 ---
 title: Future Direction
 permalink: /discover/history/future-direction/
+where-next:
+  url: /discover/resources/specifications/
+related-pages:
+- url: /discover/history/early-capability-systems/
+  description: A short account of early capability-based computer systems and the ideas that influenced later work.
+  action: Read this page
+- url: /discover/history/formation-of-the-cheri-alliance/
+  description: Background on why the CHERI Alliance was formed and the role it plays in the ecosystem.
+  action: Read this page
 ---
 
 1. Discover

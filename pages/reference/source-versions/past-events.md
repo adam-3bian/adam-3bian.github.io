@@ -2,6 +2,18 @@
 title: Past Events
 permalink: /reference/source-versions/past-events/
 alternate: true
+where-next:
+  url: /news-and-events/people-and-opportunities/speakers/
+related-pages:
+- url: /news-and-events/events-and-archive/upcoming-events/
+  description: A calendar of upcoming CHERI-related events, talks, workshops, and community sessions.
+  action: Read this page
+- url: /news-and-events/people-and-opportunities/speakers/
+  description: A directory of speakers available for CHERI-related events, briefings, and discussions.
+  action: Read this page
+- url: /news-and-events/news-and-analysis/latest-news/
+  description: The latest CHERI Alliance and ecosystem announcements, presented with clear dates and sources.
+  action: Read this page
 ---
 
 1. News &amp; Events

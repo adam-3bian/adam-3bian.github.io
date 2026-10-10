@@ -1,6 +1,8 @@
 ---
 title: Early Capability Systems
 permalink: /discover/history/early-capability-systems/
+where-next:
+  url: /discover/history/cambridge-and-sri/
 ---
 
 1. Discover

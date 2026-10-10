@@ -1,6 +1,15 @@
 ---
 title: Morello History
 permalink: /discover/history/morello-history/
+where-next:
+  url: /discover/history/risc-v-and-embedded-development/
+related-pages:
+- url: /discover/history/early-capability-systems/
+  description: A short account of early capability-based computer systems and the ideas that influenced later work.
+  action: Read this page
+- url: /discover/history/ukri-digital-security-by-design/
+  description: An overview of the UK Digital Security by Design programme and its role in the wider CHERI ecosystem.
+  action: Read this page
 ---
 
 1. Discover

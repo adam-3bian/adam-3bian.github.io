@@ -1,5 +1,18 @@
 ---
 title: Rust
+where-next:
+  url: /software/cheribsd/
+related-pages:
+- url: /software/llvm-and-clang/
+  description: The compiler infrastructure underlying current Rust and CHERI target work.
+  action: Read this page
+- url: /discover/why-cheri/cheri-and-rust/
+  description: The wider relationship between language safety and architectural capabilities.
+  action: Read this page
+- url: /groups/rust-plus-cheri/
+  title: Rust + CHERI Working Group
+  description: Alliance collaboration around Rust toolchains, runtimes, native interfaces, and CHERI platforms.
+  action: Read this page
 ---
 
 1. Build

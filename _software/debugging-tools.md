@@ -1,5 +1,18 @@
 ---
 title: Debugging Tools
+where-next:
+  url: /software/porting-status/
+related-pages:
+- url: /software/cheribsd/
+  description: A full-system CHERI environment with capability-aware faults, tracing, core dumps, and developer tools.
+  action: Read this page
+- url: /groups/cheri-qemu/
+  title: QEMU Working Group
+  description: Alliance collaboration around maintained CHERI architecture and platform emulation.
+  action: Read this page
+- url: /hardware/cheriot/
+  description: An embedded CHERI platform with compartment-aware firmware and diagnostic tooling.
+  action: Read this page
 ---
 
 1. Build

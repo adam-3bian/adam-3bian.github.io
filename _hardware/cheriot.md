@@ -1,5 +1,18 @@
 ---
 title: CHERIoT
+where-next:
+  url: /hardware/sonata/
+related-pages:
+- url: /build/platforms/platform-comparison/
+  description: No single CHERI platform is best for every workload.
+  action: Read this page
+- url: /hardware/morello/
+  description: Morello is an Arm-based CHERI technology demonstrator created for architecture and software research.
+  action: Read this page
+- url: /guides/choose-a-platform/
+  title: Choose a Platform
+  description: Choose a platform, prepare an environment and run a first CHERI workload.
+  action: Read this page
 ---
 
 1. Build

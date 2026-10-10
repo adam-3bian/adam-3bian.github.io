@@ -1,6 +1,25 @@
 ---
 title: Software runs our world. It deserves stronger security foundations.
 permalink: /
+where-next:
+  url: /discover/why-cheri/vulnerabilities-in-everyday-technology/
+  title: Discover CHERI
+related-pages:
+- url: /discover/understand/how-does-cheri-work/
+  description: Helping software stay within its boundaries.
+  action: Read this page
+- url: /build/
+  title: Developer section
+  description: Ressources and knowledge to develop with CHERI.
+  action: Read this page
+- url: /organisations/cheri-alliance/
+  title: About the CHERI Alliance
+  description: Learn how the Alliance connects organisations working across the CHERI ecosystem.
+  action: Read this page
+- url: /news-and-events/events-and-archive/upcoming-events/
+  title: News & Events
+  description: Meet the CHERI ecosystem, learn about the latest news.
+  action: Read this page
 ---
 
 # Software runs our world. It deserves stronger security foundations.

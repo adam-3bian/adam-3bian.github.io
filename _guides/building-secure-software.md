@@ -1,5 +1,14 @@
 ---
 title: Building Secure Software with CHERI
+where-next:
+  url: /build/technology/capabilities/
+related-pages:
+- url: /discover/understand/cheri-and-existing-software/
+  description: Porting software to CHERI is a process of finding assumptions about pointers, integers, objects, bounds, provenance, lifetimes, and interfaces.
+  action: Read this page
+- url: /discover/why-cheri/cheri-and-rust/
+  description: Rust and CHERI address memory safety at different layers.
+  action: Read this page
 ---
 
 1. Discover

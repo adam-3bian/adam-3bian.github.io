@@ -1,6 +1,16 @@
 ---
 title: Contact the Alliance
 permalink: /alliance/membership/contact/
+where-next:
+  url: /organisations/cheri-alliance/
+  title: About the CHERI Alliance
+related-pages:
+- url: /alliance/membership/membership-benefits-and-options/
+  description: An outline of membership benefits, participation options, and what each route is intended to support.
+  action: Read this page
+- url: /news-and-events/people-and-opportunities/job-opportunities/
+  description: Current job and career opportunities related to CHERI and the wider ecosystem.
+  action: Read this page
 ---
 
 1. Alliance

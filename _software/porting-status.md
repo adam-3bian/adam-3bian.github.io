@@ -1,5 +1,18 @@
 ---
 title: Porting Status
+where-next:
+  url: /adopt/business-case/the-business-case/
+  title: The Business Case
+related-pages:
+- url: /software/debugging-tools/
+  description: Capability-aware tools make faults, metadata, and binary structure visible within supported environments.
+  action: Read this page
+- url: /build/platforms/platform-comparison/
+  description: Compare the hardware and simulation environments around current CHERI software stacks.
+  action: Read this page
+- url: /build/software-ecosystem/
+  description: Return to the full overview of compilers, languages, operating systems, and tools.
+  action: Read this page
 ---
 
 1. Build

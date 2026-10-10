@@ -1,6 +1,14 @@
 ---
 title: Public Policy and CHERI
 permalink: /adopt/policy/government-guidance/
+where-next:
+  url: /adopt/policy/cybersecurity-regulation/
+  title: Cybersecurity Regulation
+related-pages:
+- url: /adopt/business-case/the-business-case/
+  title: The Business Case
+  description: CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.
+  action: Read this page
 ---
 
 1. Adopt

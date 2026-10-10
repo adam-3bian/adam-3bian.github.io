@@ -1,6 +1,13 @@
 ---
 title: Case Studies
 permalink: /adopt/assurance-and-adoption/case-studies/
+where-next:
+  url: /adopt/assurance-and-adoption/assurance-and-certification/
+related-pages:
+- url: /adopt/business-case/the-business-case/
+  title: The Business Case
+  description: CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.
+  action: Read this page
 ---
 
 1. Adopt

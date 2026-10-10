@@ -1,6 +1,15 @@
 ---
 title: RISC-V and Embedded Development
 permalink: /discover/history/risc-v-and-embedded-development/
+where-next:
+  url: /discover/history/commercialisation/
+related-pages:
+- url: /discover/history/early-capability-systems/
+  description: A short account of early capability-based computer systems and the ideas that influenced later work.
+  action: Read this page
+- url: /discover/history/morello-history/
+  description: The place of Morello in the development and evaluation of CHERI.
+  action: Read this page
 ---
 
 1. Discover

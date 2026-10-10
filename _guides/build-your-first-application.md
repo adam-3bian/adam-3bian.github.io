@@ -1,5 +1,16 @@
 ---
 title: Build Your First Application
+where-next:
+  url: /guides/port-existing-software/
+related-pages:
+- url: /guides/choose-a-platform/
+  title: Choose a Platform
+  description: A CHERI platform combines more than an instruction set.
+  action: Read this page
+- url: /guides/install-a-toolchain/
+  title: Install a Toolchain
+  description: A guide to the main toolchain components used to build CHERI software and where platform-specific setup differs.
+  action: Read this page
 ---
 
 1. Build

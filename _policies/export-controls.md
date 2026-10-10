@@ -1,5 +1,19 @@
 ---
 title: Export Controls
+where-next:
+  url: /policies/privacy/
+related-pages:
+- url: /policies/code-of-conduct/
+  description: The behaviour and participation expectations that apply to Alliance spaces and activities.
+  action: Read this page
+- url: /policies/trademark-policy/
+  title: Trademark & Brand Use
+  description: Guidance on use of CHERI Alliance names, marks, logos, and brand material.
+  action: Read this page
+- url: /organisations/cheri-alliance/
+  title: About the CHERI Alliance
+  description: Learn how the Alliance connects organisations working across the CHERI ecosystem.
+  action: Read this page
 ---
 
 1. Alliance

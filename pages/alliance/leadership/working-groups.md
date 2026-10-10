@@ -1,6 +1,17 @@
 ---
 title: Working Groups
 permalink: /alliance/leadership/working-groups/
+where-next:
+  url: /groups/cheri-c-cplusplus/
+  title: CHERI C/C++
+related-pages:
+- url: /organisations/cheri-alliance/
+  title: About the CHERI Alliance
+  description: Learn how the Alliance connects organisations working across the CHERI ecosystem.
+  action: Read this page
+- url: /alliance/leadership/members/
+  description: See the organisations involved in the Alliance and the wider CHERI community.
+  action: Read this page
 ---
 
 1. Alliance

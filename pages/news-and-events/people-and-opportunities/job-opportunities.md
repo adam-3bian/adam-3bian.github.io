@@ -1,6 +1,13 @@
 ---
 title: Job Opportunities
 permalink: /news-and-events/people-and-opportunities/job-opportunities/
+where-next:
+  url: /news-and-events/people-and-opportunities/speakers/
+related-pages:
+- url: /organisations/cheri-alliance/
+  title: About the CHERI Alliance
+  description: Learn how the Alliance connects organisations working across the CHERI ecosystem.
+  action: Read this page
 ---
 
 1. News &amp; Events

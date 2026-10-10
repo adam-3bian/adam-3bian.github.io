@@ -1,6 +1,15 @@
 ---
 title: Sealing
 permalink: /build/technology/sealing/
+where-next:
+  url: /build/technology/spatial-memory-safety/
+related-pages:
+- url: /build/technology/capabilities/
+  description: A pointer bug becomes dangerous when changing a number changes authority.
+  action: Read this page
+- url: /build/technology/provenance/
+  description: An explanation of how capability authority is derived and why arbitrary integers are not equivalent to valid capabilities.
+  action: Read this page
 ---
 
 1. Build

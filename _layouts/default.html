@@ -8,10 +8,26 @@
   {%- endif -%}
 {%- endif -%}
 {%- assign source_heading = '' -%}
-{%- if source_body contains 'page-hero-title' and source_body contains '<h1' -%}
-  {%- assign heading_segment = source_body | split: '<h1' | last | split: '</h1>' | first -%}
+{%- assign source_preamble = '' -%}
+{%- assign heading_id = 'page-title' -%}
+{%- assign heading_alias = '' -%}
+{%- if source_body contains '<h1' -%}
+  {%- assign source_preamble = source_body | split: '<h1' | first -%}
+  {%- assign source_body = source_body | remove_first: source_preamble -%}
+  {%- assign heading_segment = source_body | split: '<h1' | slice: 1, 1 | first | split: '</h1>' | first -%}
   {%- assign source_heading = heading_segment | prepend: '<h1' | append: '</h1>' -%}
   {%- assign source_body = source_body | remove_first: source_heading -%}
+  {%- unless source_heading contains 'page-hero-title' -%}
+    {%- if page.hero -%}{%- assign heading_alias = 'hero-title' -%}{%- endif -%}
+  {%- endunless -%}
+  {%- assign heading_attributes = source_heading | split: '>' | first -%}
+  {%- if heading_attributes contains 'id="' -%}
+    {%- assign heading_id = heading_attributes | split: 'id="' | last | split: '"' | first -%}
+  {%- else -%}
+    {%- assign source_heading = source_heading | replace_first: '<h1', '<h1 id="page-title"' -%}
+  {%- endif -%}
+  {%- comment -%}Printed archives keep every chapter, anchor and word beneath the page's single H1.{%- endcomment -%}
+  {%- assign source_body = source_body | replace: '<h1', '<h2' | replace: '</h1>', '</h2>' -%}
 {%- endif -%}
 {%- assign heading_intro = '' -%}
 {%- if source_body contains '<p class="page-hero-summary"' -%}
@@ -21,7 +37,37 @@
   {%- assign heading_intro = heading_intro | replace_first: 'class="page-hero-summary"', 'class="page-hero-summary lede"' -%}
 {%- elsif page.summary -%}
   {%- capture heading_intro -%}<p class="page-hero-summary lede">{{ page.summary | escape }}</p>{%- endcapture -%}
+{%- else -%}
+  {%- assign opening_body = source_body | strip -%}
+  {%- assign opening_tag = opening_body | slice: 0, 3 -%}
+  {%- if opening_tag == '<p>' -%}
+    {%- assign opening_paragraph = opening_body | split: '</p>' | first | append: '</p>' -%}
+    {%- unless opening_paragraph contains '<img' -%}
+      {%- assign source_body = source_body | remove_first: opening_paragraph -%}
+      {%- assign heading_intro = opening_paragraph | replace_first: '<p>', '<p class="lede">' -%}
+    {%- endunless -%}
+  {%- endif -%}
 {%- endif -%}
+{%- comment -%}
+  Retained source navigation fragments have explicit YAML counterparts. Replace only
+  those measured sections; the article's Markdown and all other blocks stay intact.
+{%- endcomment -%}
+{%- assign source_where_next = false -%}
+{%- assign source_related_pages = false -%}
+{%- assign source_related_title = nil -%}
+{%- assign source_sections = source_body | split: '<h2' -%}
+{%- capture source_body -%}
+  {%- for source_section in source_sections -%}
+    {%- assign section_heading = source_section | split: '</h2>' | first -%}
+    {%- if forloop.first -%}{{ source_section }}
+    {%- elsif section_heading contains 'where-next-title' and page.where-next.url -%}
+      {%- assign source_where_next = true -%}
+    {%- elsif section_heading contains 'related-pages-title' and page.related-pages.size > 0 -%}
+      {%- assign source_related_pages = true -%}
+      {%- assign source_related_title = section_heading | prepend: '<h2' | append: '</h2>' | strip_html -%}
+    {%- else -%}<h2{{ source_section }}{%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
 {%- assign meta_description = page.description | default: heading_intro | default: page.summary | default: site.description | strip_html | normalize_whitespace -%}
 <!doctype html>
 <html lang="{{ site.lang | default: 'en' | escape }}">
@@ -44,16 +90,11 @@
       {% if source_breadcrumbs != '' %}
       <nav class="breadcrumbs" aria-label="Breadcrumb">{{ source_breadcrumbs }}</nav>
       {% else %}{% include breadcrumbs.html %}{% endif %}
-      {% if page.hero %}
-      <section class="hero{% if page.url == '/' %} hero-large{% endif %}" aria-labelledby="{% if source_heading != '' %}page-hero-title{% else %}hero-title{% endif %}">
-        <div class="hero-intro">
-          {% if source_heading != '' %}{{ source_heading }}{% else %}<h1 id="hero-title">{{ page.title | escape }}</h1>{% endif %}
-          {{ heading_intro }}
-        </div>
-      </section>
-      {% endif %}
+      {{ source_preamble }}
+      {% if heading_alias != '' and heading_alias != heading_id %}<span id="{{ heading_alias }}"></span>{% endif %}
+      {% include hero.html heading=source_heading heading_id=heading_id %}
       <article class="content" aria-label="{{ page.title | escape }}">
-        {% unless page.hero %}{% if source_heading != '' %}{{ source_heading }}{% else %}<h1 id="page-title">{{ page.title | escape }}</h1>{% endif %}{{ heading_intro }}{% endunless %}
+        {% include page-heading.html heading=source_heading %}
         {{ source_body }}
       </article>
     </div>

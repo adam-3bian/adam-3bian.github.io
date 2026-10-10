@@ -1,5 +1,12 @@
 ---
 title: Port Existing Software
+where-next:
+  url: /guides/build-compartments/
+related-pages:
+- url: /guides/choose-a-platform/
+  title: Choose a Platform
+  description: Choose a platform, prepare an environment and run a first CHERI workload.
+  action: Read this page
 ---
 
 1. Build

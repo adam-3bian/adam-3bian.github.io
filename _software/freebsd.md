@@ -1,5 +1,14 @@
 ---
 title: FreeBSD
+where-next:
+  url: /software/cheri-linux/
+related-pages:
+- url: /software/cheribsd/
+  description: The FreeBSD-derived operating system containing the complete CHERI kernel and user-space environment.
+  action: Read this page
+- url: /software/real-time-operating-systems/
+  description: Compare the embedded and real-time operating-system routes being explored across CHERI.
+  action: Read this page
 ---
 
 1. Build

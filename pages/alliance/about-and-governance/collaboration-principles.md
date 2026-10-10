@@ -1,6 +1,17 @@
 ---
 title: Collaboration Principles
 permalink: /alliance/about-and-governance/collaboration-principles/
+where-next:
+  url: https://cheri-alliance.github.io/alliance/about-and-governance/technical-leadership/
+  title: Technical Leadership
+related-pages:
+- url: /organisations/cheri-alliance/
+  title: About the CHERI Alliance
+  description: Learn how the Alliance connects organisations working across the CHERI ecosystem.
+  action: Read this page
+- url: /alliance/about-and-governance/mission-and-role/
+  description: A statement of what the CHERI Alliance exists to support and the boundaries of its role.
+  action: Read this page
 ---
 
 1. Alliance

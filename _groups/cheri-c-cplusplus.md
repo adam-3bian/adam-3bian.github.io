@@ -1,5 +1,8 @@
 ---
 title: ©️ CHERI C/C++ WG
+where-next:
+  url: /groups/cheri-in-soc/
+  title: CHERI in SoC
 ---
 
 1. Alliance

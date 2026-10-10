@@ -1,6 +1,15 @@
 ---
 title: Spatial Memory Safety
 permalink: /build/technology/spatial-memory-safety/
+where-next:
+  url: /build/technology/temporal-memory-safety/
+related-pages:
+- url: /build/technology/capabilities/
+  description: A pointer bug becomes dangerous when changing a number changes authority.
+  action: Read this page
+- url: /build/technology/sealing/
+  description: Some authority should be carried without being directly exercised by its holder.
+  action: Read this page
 ---
 
 1. Build

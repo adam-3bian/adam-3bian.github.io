@@ -1,6 +1,16 @@
 ---
 title: CHERI and Rust
 permalink: /discover/why-cheri/cheri-and-rust/
+where-next:
+  url: /build/technology/cheri-and-rust-technical/
+related-pages:
+- url: /groups/rust-plus-cheri/
+  title: Rust+CHERI working group
+  description: The working group brings together the strengths of Rust and CHERI.
+  action: Read this page
+- url: /discover/understand/cheri-and-existing-software/
+  description: Porting software to CHERI is a process of finding assumptions about pointers, integers, objects, bounds, provenance, lifetimes, and interfaces.
+  action: Read this page
 ---
 
 1. Discover

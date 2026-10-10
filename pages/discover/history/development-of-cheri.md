@@ -1,6 +1,15 @@
 ---
 title: Development of CHERI
 permalink: /discover/history/development-of-cheri/
+where-next:
+  url: /discover/history/darpa-programmes/
+related-pages:
+- url: /discover/history/early-capability-systems/
+  description: A short account of early capability-based computer systems and the ideas that influenced later work.
+  action: Read this page
+- url: /discover/history/cambridge-and-sri/
+  description: Background on the Cambridge and SRI research collaboration that helped establish CHERI.
+  action: Read this page
 ---
 
 1. Discover

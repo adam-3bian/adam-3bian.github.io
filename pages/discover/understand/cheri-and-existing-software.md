@@ -1,6 +1,15 @@
 ---
 title: CHERI and Existing Software
 permalink: /discover/understand/cheri-and-existing-software/
+where-next:
+  url: /discover/why-cheri/cheri-and-rust/
+related-pages:
+- url: /discover/why-cheri/why-cheri/
+  description: Learn how CHERI protects memory in hardware.
+  action: Read this page
+- url: /discover/why-cheri/approaches-to-memory-safety/
+  description: No single technology delivers memory safety. The strongest solutions combine processes, tools, hardware protections, and isolation.
+  action: Read this page
 ---
 
 1. Discover

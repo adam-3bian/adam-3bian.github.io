@@ -1,0 +1,774 @@
+{
+  "observations": 68,
+  "overflow": [],
+  "comparisons": [
+    {
+      "theme": "dark",
+      "width": 375,
+      "differences": [],
+      "card_states_match": true
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "differences": [],
+      "card_states_match": true
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "differences": [],
+      "card_states_match": true
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "differences": [],
+      "card_states_match": true
+    },
+    {
+      "theme": "light",
+      "width": 375,
+      "differences": [],
+      "card_states_match": true
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "differences": [],
+      "card_states_match": true
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "differences": [],
+      "card_states_match": true
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "differences": [],
+      "card_states_match": true
+    }
+  ],
+  "project_failed_requests": [
+    [],
+    [],
+    [],
+    [],
+    [
+      {
+        "url": "/assets/news/one-bug-is-all-it-takes/90741c3e8a15-hero.jpg",
+        "status": 404
+      }
+    ],
+    [
+      {
+        "url": "/assets/news/one-bug-is-all-it-takes/90741c3e8a15-hero.jpg",
+        "status": 404
+      }
+    ],
+    [
+      {
+        "url": "/assets/news/one-bug-is-all-it-takes/90741c3e8a15-hero.jpg",
+        "status": 404
+      }
+    ],
+    [
+      {
+        "url": "/assets/news/one-bug-is-all-it-takes/90741c3e8a15-hero.jpg",
+        "status": 404
+      }
+    ]
+  ],
+  "flows": [
+    {
+      "flow": "keyboard menu",
+      "menu_opened": true,
+      "submenu_opened": true,
+      "submenu_closed_on_escape": true
+    },
+    {
+      "flow": "image overlay",
+      "opened": true,
+      "image_and_ancestors_opaque": true,
+      "closed_on_escape": true,
+      "focus_returned": true
+    },
+    {
+      "flow": "no JavaScript",
+      "route": "/",
+      "status": 200,
+      "visible_main": true,
+      "fits_viewport": true
+    },
+    {
+      "flow": "no JavaScript",
+      "route": "/news/one-bug-is-all-it-takes/",
+      "status": 200,
+      "visible_main": true,
+      "fits_viewport": true
+    },
+    {
+      "flow": "fixture image image-left",
+      "opened": true,
+      "caption_preserved": true,
+      "closed_on_escape": true,
+      "focus_returned": true
+    },
+    {
+      "flow": "fixture image image-right",
+      "opened": true,
+      "caption_preserved": true,
+      "closed_on_escape": true,
+      "focus_returned": true
+    },
+    {
+      "flow": "fixture image image-full",
+      "opened": true,
+      "caption_preserved": true,
+      "closed_on_escape": true,
+      "focus_returned": true
+    },
+    {
+      "flow": "keyboard card navigation",
+      "followed_record": true
+    },
+    {
+      "flow": "no JavaScript component fixture",
+      "cards_visible": true,
+      "images_visible": true,
+      "external_rel_preserved": true
+    }
+  ],
+  "fixture_checks": [
+    {
+      "fits_viewport": true,
+      "grids": [
+        {
+          "requested": 2,
+          "actual": 1
+        },
+        {
+          "requested": 3,
+          "actual": 1
+        },
+        {
+          "requested": 4,
+          "actual": 1
+        }
+      ],
+      "framed": [
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "contain"
+        },
+        {
+          "expected": 1.7777777777777777,
+          "actual": 1.7777777777777777,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "contain"
+        },
+        {
+          "expected": 1.7777777777777777,
+          "actual": 1.7777777777777777,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "contain"
+        },
+        {
+          "expected": 1.7777777777777777,
+          "actual": 1.7777777777777777,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "contain"
+        },
+        {
+          "expected": 1.7777777777777777,
+          "actual": 1.7777777777777777,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1.7777777777777777,
+          "actual": 1.7777777777777777,
+          "image_fills_frame": true,
+          "fit": "contain"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "contain"
+        }
+      ],
+      "raw_and_converted_images_match": true,
+      "name_only_has_no_fake_media": true,
+      "no_zoom_unwrapped": true,
+      "explicit_contain_and_position": true,
+      "explicit_empty_alt_preserved": true,
+      "external_attributes": true,
+      "where_next_count": 1,
+      "where_next_has_no_description": true,
+      "where_next_inferred_title": true,
+      "related_inferred_titles": [
+        "Robert Watson",
+        "Anthony Fox"
+      ],
+      "card_images_do_not_zoom": true,
+      "gallery": [
+        {
+          "alignment": "image-link image-left",
+          "float": "none",
+          "width": 320,
+          "height": 224,
+          "natural_ratio": 1.4285714285714286,
+          "image_ratio": 1.4285714285714286,
+          "fit": "cover",
+          "opacity": "1"
+        },
+        {
+          "alignment": "image-link image-right",
+          "float": "none",
+          "width": 320,
+          "height": 224,
+          "natural_ratio": 1.4285714285714286,
+          "image_ratio": 1.4285714285714286,
+          "fit": "contain",
+          "opacity": "1"
+        },
+        {
+          "alignment": "image-link image-full",
+          "float": "none",
+          "width": 320,
+          "height": 224,
+          "natural_ratio": 1.4285714285714286,
+          "image_ratio": 1.4285714285714286,
+          "fit": "cover",
+          "opacity": "1"
+        }
+      ],
+      "width": 375,
+      "status": 200
+    },
+    {
+      "fits_viewport": true,
+      "grids": [
+        {
+          "requested": 2,
+          "actual": 2
+        },
+        {
+          "requested": 3,
+          "actual": 3
+        },
+        {
+          "requested": 4,
+          "actual": 4
+        }
+      ],
+      "framed": [
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "contain"
+        },
+        {
+          "expected": 1.7777777777777777,
+          "actual": 1.777964112024149,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "contain"
+        },
+        {
+          "expected": 1.7777777777777777,
+          "actual": 1.7777777777777777,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "contain"
+        },
+        {
+          "expected": 1.7777777777777777,
+          "actual": 1.777964112024149,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "contain"
+        },
+        {
+          "expected": 1.7777777777777777,
+          "actual": 1.7777777777777777,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1.7777777777777777,
+          "actual": 1.777833668678739,
+          "image_fills_frame": true,
+          "fit": "contain"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "contain"
+        }
+      ],
+      "raw_and_converted_images_match": true,
+      "name_only_has_no_fake_media": true,
+      "no_zoom_unwrapped": true,
+      "explicit_contain_and_position": true,
+      "explicit_empty_alt_preserved": true,
+      "external_attributes": true,
+      "where_next_count": 1,
+      "where_next_has_no_description": true,
+      "where_next_inferred_title": true,
+      "related_inferred_titles": [
+        "Robert Watson",
+        "Anthony Fox"
+      ],
+      "card_images_do_not_zoom": true,
+      "gallery": [
+        {
+          "alignment": "image-link image-left",
+          "float": "left",
+          "width": 275.578125,
+          "height": 192.90625,
+          "natural_ratio": 1.4285714285714286,
+          "image_ratio": 1.4285598574437064,
+          "fit": "cover",
+          "opacity": "1"
+        },
+        {
+          "alignment": "image-link image-right",
+          "float": "right",
+          "width": 275.578125,
+          "height": 192.90625,
+          "natural_ratio": 1.4285714285714286,
+          "image_ratio": 1.4285598574437064,
+          "fit": "contain",
+          "opacity": "1"
+        },
+        {
+          "alignment": "image-link image-full",
+          "float": "none",
+          "width": 689,
+          "height": 482.296875,
+          "natural_ratio": 1.4285714285714286,
+          "image_ratio": 1.4285806848738134,
+          "fit": "cover",
+          "opacity": "1"
+        }
+      ],
+      "width": 768,
+      "status": 200
+    },
+    {
+      "fits_viewport": true,
+      "grids": [
+        {
+          "requested": 2,
+          "actual": 2
+        },
+        {
+          "requested": 3,
+          "actual": 3
+        },
+        {
+          "requested": 4,
+          "actual": 4
+        }
+      ],
+      "framed": [
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "contain"
+        },
+        {
+          "expected": 1.7777777777777777,
+          "actual": 1.7777777777777777,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "contain"
+        },
+        {
+          "expected": 1.7777777777777777,
+          "actual": 1.7777777777777777,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "contain"
+        },
+        {
+          "expected": 1.7777777777777777,
+          "actual": 1.7777777777777777,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "contain"
+        },
+        {
+          "expected": 1.7777777777777777,
+          "actual": 1.7777777777777777,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1.7777777777777777,
+          "actual": 1.7777777777777777,
+          "image_fills_frame": true,
+          "fit": "contain"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "contain"
+        }
+      ],
+      "raw_and_converted_images_match": true,
+      "name_only_has_no_fake_media": true,
+      "no_zoom_unwrapped": true,
+      "explicit_contain_and_position": true,
+      "explicit_empty_alt_preserved": true,
+      "external_attributes": true,
+      "where_next_count": 1,
+      "where_next_has_no_description": true,
+      "where_next_inferred_title": true,
+      "related_inferred_titles": [
+        "Robert Watson",
+        "Anthony Fox"
+      ],
+      "card_images_do_not_zoom": true,
+      "gallery": [
+        {
+          "alignment": "image-link image-left",
+          "float": "left",
+          "width": 377.984375,
+          "height": 264.59375,
+          "natural_ratio": 1.4285714285714286,
+          "image_ratio": 1.4285461202314869,
+          "fit": "cover",
+          "opacity": "1"
+        },
+        {
+          "alignment": "image-link image-right",
+          "float": "right",
+          "width": 377.984375,
+          "height": 264.59375,
+          "natural_ratio": 1.4285714285714286,
+          "image_ratio": 1.4285461202314869,
+          "fit": "contain",
+          "opacity": "1"
+        },
+        {
+          "alignment": "image-link image-full",
+          "float": "none",
+          "width": 945,
+          "height": 661.5,
+          "natural_ratio": 1.4285714285714286,
+          "image_ratio": 1.4285714285714286,
+          "fit": "cover",
+          "opacity": "1"
+        }
+      ],
+      "width": 1024,
+      "status": 200
+    },
+    {
+      "fits_viewport": true,
+      "grids": [
+        {
+          "requested": 2,
+          "actual": 2
+        },
+        {
+          "requested": 3,
+          "actual": 3
+        },
+        {
+          "requested": 4,
+          "actual": 4
+        }
+      ],
+      "framed": [
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "contain"
+        },
+        {
+          "expected": 1.7777777777777777,
+          "actual": 1.7777777777777777,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "contain"
+        },
+        {
+          "expected": 1.7777777777777777,
+          "actual": 1.7777777777777777,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "contain"
+        },
+        {
+          "expected": 1.7777777777777777,
+          "actual": 1.7777777777777777,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "contain"
+        },
+        {
+          "expected": 1.7777777777777777,
+          "actual": 1.7777777777777777,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "cover"
+        },
+        {
+          "expected": 1.7777777777777777,
+          "actual": 1.7777777777777777,
+          "image_fills_frame": true,
+          "fit": "contain"
+        },
+        {
+          "expected": 1,
+          "actual": 1,
+          "image_fills_frame": true,
+          "fit": "contain"
+        }
+      ],
+      "raw_and_converted_images_match": true,
+      "name_only_has_no_fake_media": true,
+      "no_zoom_unwrapped": true,
+      "explicit_contain_and_position": true,
+      "explicit_empty_alt_preserved": true,
+      "external_attributes": true,
+      "where_next_count": 1,
+      "where_next_has_no_description": true,
+      "where_next_inferred_title": true,
+      "related_inferred_titles": [
+        "Robert Watson",
+        "Anthony Fox"
+      ],
+      "card_images_do_not_zoom": true,
+      "gallery": [
+        {
+          "alignment": "image-link image-left",
+          "float": "left",
+          "width": 447.984375,
+          "height": 313.59375,
+          "natural_ratio": 1.4285714285714286,
+          "image_ratio": 1.4285500747384154,
+          "fit": "cover",
+          "opacity": "1"
+        },
+        {
+          "alignment": "image-link image-right",
+          "float": "right",
+          "width": 447.984375,
+          "height": 313.59375,
+          "natural_ratio": 1.4285714285714286,
+          "image_ratio": 1.4285500747384154,
+          "fit": "contain",
+          "opacity": "1"
+        },
+        {
+          "alignment": "image-link image-full",
+          "float": "none",
+          "width": 1200,
+          "height": 840,
+          "natural_ratio": 1.4285714285714286,
+          "image_ratio": 1.4285714285714286,
+          "fit": "cover",
+          "opacity": "1"
+        }
+      ],
+      "width": 1440,
+      "status": 200
+    }
+  ]
+}

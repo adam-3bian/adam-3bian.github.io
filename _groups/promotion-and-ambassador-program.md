@@ -1,5 +1,8 @@
 ---
 title: 🪪 Promotion & Ambassador Program WG
+where-next:
+  url: /groups/repository-management/
+  title: Repository Management
 ---
 
 1. Alliance

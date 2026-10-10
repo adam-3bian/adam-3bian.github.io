@@ -1,6 +1,15 @@
 ---
 title: UKRI Digital Security by Design
 permalink: /discover/history/ukri-digital-security-by-design/
+where-next:
+  url: /discover/history/morello-history/
+related-pages:
+- url: /discover/history/early-capability-systems/
+  description: A short account of early capability-based computer systems and the ideas that influenced later work.
+  action: Read this page
+- url: /discover/history/darpa-programmes/
+  description: An overview of DARPA programmes that supported CHERI research and related secure hardware work.
+  action: Read this page
 ---
 
 1. Discover

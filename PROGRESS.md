@@ -1,5 +1,13 @@
 # CHERI content and authoring progress
 
+## Phase 2 shared cards and content components — 10 October 2026
+
+Continued from `b2135595fe3064cc5811a05c3f6867205d056b49` on `codex/phased-site-transformation`. One native card renderer now handles directories, relationships, Related pages and single Where next CTAs. Genuine card media works before and after Markdown conversion: 63 people portraits, 52 member logos and 47 canonical news images appear in their directories. All 133 existing Where next sections and 109 Related content sections now use sourced YAML and native components; original Markdown bodies remain intact. Where next descriptions are deliberately omitted from display, with their exact originals retained in source/evidence.
+
+All 476 editorial pages now have one H1, with source anchors and chapter text retained. All 476 Markdown bodies/prior metadata, 415 assets and 430 original asset mappings are preserved. Native root/project builds, 30 regressions, the 476-file Markdown audit, 68 production browser observations and native component fixtures at four widths pass. Generated cards have no missing root/project targets. The root `/search/` failure and 2,081 source-URL failures in prefixed output remain Phase 7 work; source-order, board/detail, chronology and collection-specific work remain with Phases 3–5.
+
+See [Phase 2 report](reports/codex-phases/phase-02.md) for precise preservation exceptions, tests, screenshots and handoff. No merge or deployment was performed.
+
 ## Phase 1 theme fidelity — 10 October 2026
 
 Continued from Phase 0 commit `15c7aafe7a47e54f01f44519ce463fc23ece0fb9` on `codex/phased-site-transformation`. Extracted introductions now use the ZIP's native `lede` typography, and complete citation URLs wrap inside the content area, fixing the measured 375px news-article overflow. Original tokens, logos, favicon, honeycomb assets and image opacity already matched and remain unchanged.

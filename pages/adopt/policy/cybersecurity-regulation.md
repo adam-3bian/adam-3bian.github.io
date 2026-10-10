@@ -1,6 +1,17 @@
 ---
 title: CHERI and Cybersecurity Regulation
 permalink: /adopt/policy/cybersecurity-regulation/
+where-next:
+  url: /adopt/policy/critical-infrastructure-and-resilience/
+related-pages:
+- url: /adopt/policy/government-guidance/
+  title: Government Guidance
+  description: Public guidance places CHERI alongside memory-safe languages and other routes to more resilient software.
+  action: Read this page
+- url: /adopt/business-case/the-business-case/
+  title: The Business Case
+  description: CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.
+  action: Read this page
 ---
 
 1. Adopt

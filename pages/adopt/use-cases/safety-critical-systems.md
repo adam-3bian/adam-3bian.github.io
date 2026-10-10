@@ -1,6 +1,19 @@
 ---
 title: Safety-Critical Systems
 permalink: /adopt/use-cases/safety-critical-systems/
+where-next:
+  url: /adopt/assurance-and-adoption/case-studies/
+related-pages:
+- url: /adopt/use-cases/automotive/
+  description: Connected vehicles combine exposed software, long lifecycles, and components with very different levels of trust.
+  action: Read this page
+- url: /adopt/use-cases/defence-and-aerospace/
+  description: Mission systems combine active threats, long lifecycles, mixed suppliers, and demanding assurance.
+  action: Read this page
+- url: /adopt/business-case/the-business-case/
+  title: The Business Case
+  description: CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.
+  action: Read this page
 ---
 
 1. Adopt

@@ -1,6 +1,13 @@
 ---
 title: The Cost of Memory Unsafety
 permalink: /adopt/business-case/cost-of-memory-unsafety/
+where-next:
+  url: /adopt/business-case/adoption-costs-and-migration/
+related-pages:
+- url: /adopt/business-case/the-business-case/
+  title: The Business Case
+  description: CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.
+  action: Read this page
 ---
 
 1. Adopt

@@ -1,6 +1,8 @@
 ---
 title: Videos & Presentations
 permalink: /discover/resources/videos-and-presentations/
+where-next:
+  url: /news-and-events/events-and-archive/upcoming-events/
 ---
 
 1. Discover

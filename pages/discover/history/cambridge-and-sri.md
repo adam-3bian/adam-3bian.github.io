@@ -1,6 +1,12 @@
 ---
 title: Cambridge and SRI
 permalink: /discover/history/cambridge-and-sri/
+where-next:
+  url: /discover/history/development-of-cheri/
+related-pages:
+- url: /discover/history/early-capability-systems/
+  description: A short account of early capability-based computer systems and the ideas that influenced later work.
+  action: Read this page
 ---
 
 1. Discover

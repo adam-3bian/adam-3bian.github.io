@@ -1,5 +1,12 @@
 ---
 title: Code of Conduct
+where-next:
+  url: /policies/competition-law-statement/
+related-pages:
+- url: /organisations/cheri-alliance/
+  title: About the CHERI Alliance
+  description: Learn how the Alliance connects organisations working across the CHERI ecosystem.
+  action: Read this page
 ---
 
 1. Alliance

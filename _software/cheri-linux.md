@@ -1,5 +1,19 @@
 ---
 title: CHERI Linux
+where-next:
+  url: /software/zephyr/
+related-pages:
+- url: /software/cheribsd/
+  description: A mature full-system environment for application-class CHERI research and software ports.
+  action: Read this page
+- url: /groups/cheri-linux-working-group/
+  title: CHERI Linux Working Group
+  description: Alliance collaboration around the roadmap, interfaces, and contribution routes for Linux support.
+  action: Read this page
+- url: /guides/choose-a-platform/
+  title: Choose a Platform
+  description: Compare platforms that provide Linux, CheriBSD, embedded runtimes, or simulation environments.
+  action: Read this page
 ---
 
 1. Build

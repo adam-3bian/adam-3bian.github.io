@@ -1,6 +1,8 @@
 ---
 title: Capabilities
 permalink: /build/technology/capabilities/
+where-next:
+  url: /build/technology/tags-and-validity/
 ---
 
 1. Build

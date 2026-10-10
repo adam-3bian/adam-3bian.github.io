@@ -1,5 +1,8 @@
 ---
 title: 📣 Marketing WG
+where-next:
+  url: /groups/promotion-and-ambassador-program/
+  title: Promotion & Ambassador Program
 ---
 
 1. Alliance

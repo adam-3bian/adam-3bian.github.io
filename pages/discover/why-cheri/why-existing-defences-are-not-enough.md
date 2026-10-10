@@ -1,6 +1,12 @@
 ---
 title: Why Existing Defences Are Not Enough
 permalink: /discover/why-cheri/why-existing-defences-are-not-enough/
+where-next:
+  url: /discover/why-cheri/approaches-to-memory-safety/
+related-pages:
+- url: /discover/why-cheri/vulnerabilities-in-everyday-technology/
+  description: See how a memory mistake in a connected product can put private information, device control, and wider networks at risk.
+  action: Read this page
 ---
 
 1. Discover

@@ -1,5 +1,18 @@
 ---
 title: Downloads
+where-next:
+  url: /build/platforms/platform-comparison/
+related-pages:
+- url: /guides/port-existing-software/
+  description: Porting software to CHERI is a process of finding assumptions about pointers, integers, objects, bounds, provenance, lifetimes, and interfaces.
+  action: Read this page
+- url: /guides/tutorials-and-training/
+  description: Tutorials are most useful after the first build works.
+  action: Read this page
+- url: /guides/choose-a-platform/
+  title: Choose a Platform
+  description: Choose a platform, prepare an environment and run a first CHERI workload.
+  action: Read this page
 ---
 
 1. Build

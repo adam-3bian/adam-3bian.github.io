@@ -1,5 +1,8 @@
 ---
 title: 💾 Repository Management WG
+where-next:
+  url: https://github.com/CHERI-Alliance
+  title: CHERI Alliance on GitHub
 ---
 
 1. Alliance

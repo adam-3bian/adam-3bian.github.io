@@ -1,5 +1,19 @@
 ---
 title: Zephyr
+where-next:
+  url: /software/real-time-operating-systems/
+related-pages:
+- url: /groups/cheri-zephyr/
+  title: CHERI Zephyr Working Group
+  description: Alliance collaboration around the Zephyr port, platforms, interfaces, and tooling.
+  action: Read this page
+- url: /hardware/cheriot/
+  description: A security-focused embedded architecture and RTOS designed together around CHERI compartments.
+  action: Read this page
+- url: /guides/choose-a-platform/
+  title: Choose a Platform
+  description: Compare current embedded hardware, FPGA, and simulation routes.
+  action: Read this page
 ---
 
 1. Build

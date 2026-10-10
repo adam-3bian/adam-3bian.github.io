@@ -1,6 +1,9 @@
 ---
 title: The Strategic Case for CHERI
 permalink: /adopt/business-case/the-business-case/
+where-next:
+  url: /adopt/business-case/cost-of-memory-unsafety/
+  title: Cost of Memory Unsafety
 ---
 
 1. Adopt

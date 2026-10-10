@@ -1,5 +1,15 @@
 ---
 title: CHERIoT Ibex Certification Record
+where-next:
+  url: /adopt/assurance-and-adoption/cheri-enabled-products/
+related-pages:
+- url: /adopt/assurance-and-adoption/about-cheri-enabled/
+  title: About CHERI Enabled
+  description: What the programme mark represents, and what remains outside its scope.
+  action: Read this page
+- url: /hardware/cheriot/
+  description: The wider embedded platform, software model, and development environment around the core.
+  action: Read this page
 ---
 
 1. Adopt

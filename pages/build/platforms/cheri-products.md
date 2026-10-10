@@ -1,6 +1,15 @@
 ---
 title: CHERI Products
 permalink: /build/platforms/cheri-products/
+where-next:
+  url: /build/platforms/platform-comparison/
+related-pages:
+- url: /adopt/assurance-and-adoption/cheri-enabled-products/
+  description: Products reviewed under the Alliance's CHERI Enabled programme, with a public record for each certification.
+  action: Read this page
+- url: /guides/downloads/
+  description: Links to the main CHERI toolchains, operating systems, simulators, and platform resources.
+  action: Read this page
 ---
 
 1. Build
