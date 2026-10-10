@@ -5,7 +5,7 @@ Verified **10 October 2026 (UTC)** on `codex/phased-site-transformation` in `ada
 ## Baseline and scope
 
 - Starting commit: **`15c7aafe7a47e54f01f44519ce463fc23ece0fb9`**, the latest pushed Phase 0 commit. Fetched the working branch and confirmed it was already current before editing.
-- Ending implementation/evidence commit: recorded in the following report-finalisation commit. Resolve the final delivery SHA with `git log -1 --format=%H -- reports/codex-phases/phase-01.md`; a commit cannot contain its own hash.
+- Ending implementation/evidence commit: **`d496922747b8b852a6af760298baa1543d763f77`**. A following documentation-only finalisation records that SHA. Resolve the final delivery SHA with `git log -1 --format=%H -- reports/codex-phases/phase-01.md`; a commit cannot contain its own hash.
 - `main` observed at **`7f3839872c8fea6a709b99d241880de0f3915c42`**. No changes, merge, push or deployment to `main`; no Pages-setting changes.
 
 Read [Phase 0](phase-00.md), `AGENTS.md`, `TRANSFORMATION_PROMPT.md`, `docs/CODEX_PHASES.md`, and the theme, authoring, validation and deployment runbooks. Inspected the actual reference ZIP's specification, README, verification, markup examples, Sass, layouts and assets before editing. The reference specifies design; existing editorial sources and relationships remain authoritative. Embedded instructions to package or publish the sample do not expand this phase.
