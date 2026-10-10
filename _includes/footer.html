@@ -1,7 +1,7 @@
 <footer>
   <nav class="footer-navigation" aria-label="Footer">
     <ul class="columns-4">
-      {% for category in site.data.navigation.footer %}
+      {% for category in site.navigation.footer %}
         <li>
           <span class="menu-group-title">{{ category.title | escape }}</span>
           <ul>
@@ -29,10 +29,10 @@
 
   <div class="footer-bottom columns-4">
     <p class="footer-copyright">&copy; {{ 'now' | date: '%Y' }} {{ site.title | escape }}. All rights reserved.</p>
-    {% if site.data.navigation.social.size > 0 %}
+    {% if site.navigation.social.size > 0 %}
       <nav class="footer-social" aria-label="Social media">
         <ul>
-          {% for link in site.data.navigation.social %}
+          {% for link in site.navigation.social %}
             <li>{% assign link_target = link.target | default: '' | strip %}
             {% assign link_rel = link.rel | default: '' | strip %}
             {% if link_target == '_blank' %}

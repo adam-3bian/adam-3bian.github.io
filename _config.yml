@@ -37,6 +37,8 @@ exclude:
 - docs
 - Gemfile
 - Gemfile.lock
+- TRANSFORMATION_PROMPT.md
+- _plugins
 - vendor
 collections:
   people:
@@ -108,7 +110,7 @@ description: 'CHERI Alliance: hardware-enforced memory safety, secure software a
   the CHERI community.'
 lang: en-GB
 url: https://adam-3bian.github.io
-baseurl: /cheri-alliance-content
+baseurl: ''
 sass:
   sass_dir: _sass
   style: compressed

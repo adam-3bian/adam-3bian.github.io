@@ -17,12 +17,12 @@
       traversal ends as soon as the stack is empty.
       {% endcomment %}
       {% assign empty_menu = '' | split: ',' %}
-      {% assign menu_lists = empty_menu | push: site.data.navigation.header %}
+      {% assign menu_lists = empty_menu | push: site.navigation.header %}
       {% assign menu_positions = empty_menu | push: 0 %}
       {% assign menu_modes = empty_menu | push: 'categories' %}
       {% assign menu_prefixes = empty_menu | push: 'nav' %}
       {% assign menu_group_starts = empty_menu | push: 0 %}
-      {% assign menu_steps = site.data.navigation.header | jsonify | size %}
+      {% assign menu_steps = site.navigation.header | jsonify | size %}
       {% for menu_step in (1..menu_steps) %}
         {% assign menu_items = menu_lists | last %}
         {% assign menu_position = menu_positions | last %}

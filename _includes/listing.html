@@ -1,42 +1,50 @@
 <ul class="cards columns-{{ include.columns | default: 3 }}" aria-label="{{ include.label | escape }}">
   {% for item in include.items %}
-    {% unless item.collection == 'redirects' or item.redirect_to or item.redirect %}
-    <li{% if include.directory %} data-directory-item data-search="{{ item.search | escape }}" data-roles="{{ item.roles | join: ' ' | escape }}" data-status="{{ item.status | escape }}"{% endif %}>
-      {% assign link_target = item.target | default: '' | strip %}
-      {% assign link_rel = item.rel | default: '' | strip %}
-      {% if link_target == '_blank' %}
-        {% assign rel_tokens = link_rel | split: ' ' %}
-        {% unless rel_tokens contains 'noopener' %}{% assign link_rel = link_rel | append: ' noopener' %}{% endunless %}
-        {% unless rel_tokens contains 'noreferrer' %}{% assign link_rel = link_rel | append: ' noreferrer' %}{% endunless %}
+  {% unless item.alternate or item.redirect_to %}
+    {% assign item_id = item.slug | default: item.basename %}
+    {% assign item_type = item.collection | default: include.kind | default: 'pages' %}
+    {% assign item_status = '' %}
+    {% if item_type == 'events' %}
+      {% capture upcoming_marker %}Status
+: Upcoming{% endcapture %}
+      {% if item.content contains upcoming_marker %}{% assign item_status = 'upcoming' %}{% else %}{% assign item_status = 'past' %}{% endif %}
+    {% endif %}
+    {% assign show_item = true %}
+    {% if include.filter != nil and include.filter != '' and item_type == 'events' and item_status != include.filter %}{% assign show_item = false %}{% endif %}
+    {% if show_item %}
+    {% assign item_roles = '' %}
+    {% if item.speaker %}{% assign item_roles = item_roles | append: ' speaker' %}{% endif %}
+    {% if item.member %}{% assign item_roles = item_roles | append: ' member' %}{% endif %}
+    {% if item_type == 'people' %}
+      {% for paper in site.papers %}{% if paper.authors contains item_id %}{% assign item_roles = item_roles | append: ' author' %}{% break %}{% endif %}{% endfor %}
+      {% for story in site.news %}{% if story.authors contains item_id %}{% assign item_roles = item_roles | append: ' author' %}{% break %}{% endif %}{% endfor %}
+    {% endif %}
+    {% assign thumbnail = item.thumbnail.src %}
+    {% assign thumbnail_alt = item.thumbnail.alt | default: item.title %}
+    {% unless thumbnail %}
+      {% assign media_fragments = item.content | split: '](/assets/' %}
+      {% if media_fragments.size > 1 %}
+        {% assign asset_tail = media_fragments[1] | split: ')' | first %}
+        {% assign thumbnail = '/assets/' | append: asset_tail %}
+        {% assign alt_fragment = media_fragments[0] | split: '![' | last %}
+        {% assign thumbnail_alt = alt_fragment %}
       {% endif %}
-      {% assign link_url = item.url %}
-      {% assign url_prefix = link_url | slice: 0, 2 %}
-      {% assign url_first = link_url | slice: 0, 1 %}
-      {% unless link_url contains ':' or url_prefix == '//' or url_first == '#' %}
-        {% assign link_url = link_url | relative_url %}
-      {% endunless %}
-      <a class="card" href="{{ link_url | escape }}"{% if link_target != '' %} target="{{ link_target | escape }}"{% endif %}{% if link_rel != '' %} rel="{{ link_rel | strip | escape }}"{% endif %}{% if link_target == '_blank' %} title="Opens in a new tab"{% endif %}>
-        {% if item.thumbnail.src %}
-        <span class="card-media{% if item.collection == 'events' or item.collection == 'posts' or item.collection == 'news' %} card-media-landscape{% endif %}">
-          {% assign image_url = item.thumbnail.src %}
-          {% assign url_prefix = image_url | slice: 0, 2 %}
-          {% assign url_first = image_url | slice: 0, 1 %}
-          {% unless image_url contains ':' or url_prefix == '//' or url_first == '#' %}
-            {% assign image_url = image_url | relative_url %}
-          {% endunless %}
-          <img src="{{ image_url | escape }}" alt="{{ item.thumbnail.alt | escape }}" class="card-image{% if item.thumbnail.fit == 'contain' %} image-contain{% endif %}{% if item.thumbnail.position == 'left' %} image-crop-left{% elsif item.thumbnail.position == 'right' %} image-crop-right{% endif %}"{% if item.thumbnail.width %} width="{{ item.thumbnail.width | escape }}"{% endif %}{% if item.thumbnail.height %} height="{{ item.thumbnail.height | escape }}"{% endif %} loading="lazy">
+    {% endunless %}
+    <li{% if include.directory %} data-directory-item data-search="{{ item.title | append: ' ' | append: item.content | strip_html | normalize_whitespace | escape }}" data-roles="{{ item_roles | strip | escape }}" data-status="{{ item_status }}"{% endif %}>
+      <a class="card" href="{{ item.url | relative_url | escape }}">
+        {% if thumbnail %}
+        <span class="card-media{% if item_type == 'events' or item_type == 'news' %} card-media-landscape{% endif %}">
+          <img src="{{ thumbnail | relative_url | escape }}" alt="{{ thumbnail_alt | escape }}" class="card-image{% if item_type == 'organisations' %} image-contain{% endif %}" loading="lazy">
         </span>
         {% endif %}
         {% if include.heading == 'h3' %}<h3>{{ item.title | escape }}</h3>{% else %}<h2>{{ item.title | escape }}</h2>{% endif %}
         {% unless include.compact %}
-          {% if item.date_label %}<span class="meta">{{ item.date_label | escape }}{% if item.location %}<br>{{ item.location | escape }}{% endif %}</span>{% endif %}
-          {% if item.date %}<span class="meta">
-            <time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: '%-d %B %Y' }}</time>{% if item['end-date'] %} &ndash; <time datetime="{{ item['end-date'] | date_to_xmlschema }}">{{ item['end-date'] | date: '%-d %B %Y' }}</time>{% endif %}
-          </span>{% endif %}
+          {% if item.date %}<span class="meta"><time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: '%-d %B %Y' }}</time></span>{% endif %}
           <span class="card-action">{{ include.action | default: 'Read more' | escape }} &rarr;</span>
         {% endunless %}
       </a>
     </li>
-    {% endunless %}
+    {% endif %}
+  {% endunless %}
   {% endfor %}
 </ul>

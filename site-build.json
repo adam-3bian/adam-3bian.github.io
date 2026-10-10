@@ -1,0 +1,5 @@
+---
+layout: null
+permalink: /site-build.json
+---
+{ "baseurl": {{ site.baseurl | jsonify }}, "url": {{ site.url | jsonify }}, "generator": "native-github-pages" }
