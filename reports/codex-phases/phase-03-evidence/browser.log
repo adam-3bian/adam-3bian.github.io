@@ -1,0 +1,165 @@
+{
+  "observations": 56,
+  "project_observations": 20,
+  "comparison_differences": [
+    {
+      "kind": "cards",
+      "width": 375,
+      "differences": []
+    },
+    {
+      "kind": "cards",
+      "width": 768,
+      "differences": []
+    },
+    {
+      "kind": "cards",
+      "width": 1024,
+      "differences": []
+    },
+    {
+      "kind": "cards",
+      "width": 1440,
+      "differences": []
+    },
+    {
+      "kind": "portrait",
+      "width": 375,
+      "differences": []
+    },
+    {
+      "kind": "portrait",
+      "width": 768,
+      "differences": []
+    },
+    {
+      "kind": "portrait",
+      "width": 1024,
+      "differences": []
+    },
+    {
+      "kind": "portrait",
+      "width": 1440,
+      "differences": []
+    }
+  ],
+  "flows": [
+    {
+      "flow": "board card keyboard navigation",
+      "focus_visible": true,
+      "canonical_profile": true
+    },
+    {
+      "flow": "square source portrait overlay",
+      "opened": true,
+      "original_image": true,
+      "escape_closes": true,
+      "focus_returns": true
+    },
+    {
+      "flow": "reverse news keyboard navigation",
+      "destination_matches": true,
+      "has_one_heading": true
+    },
+    {
+      "flow": "reverse events keyboard navigation",
+      "destination_matches": true,
+      "has_one_heading": true
+    },
+    {
+      "flow": "reverse papers keyboard navigation",
+      "destination_matches": true,
+      "has_one_heading": true
+    },
+    {
+      "flow": "no JavaScript /alliance/leadership/governing-board/",
+      "width": 375,
+      "http_ok": true,
+      "card_count_correct": true,
+      "fits_viewport": true,
+      "square_portraits": true,
+      "images_decoded": true
+    },
+    {
+      "flow": "no JavaScript /news-and-events/people-and-opportunities/speakers/",
+      "width": 375,
+      "http_ok": true,
+      "card_count_correct": true,
+      "fits_viewport": true,
+      "square_portraits": true,
+      "images_decoded": true
+    },
+    {
+      "flow": "no JavaScript /people/",
+      "width": 375,
+      "http_ok": true,
+      "card_count_correct": true,
+      "fits_viewport": true,
+      "square_portraits": true,
+      "images_decoded": true
+    },
+    {
+      "flow": "no JavaScript /people/robert-watson/",
+      "width": 375,
+      "http_ok": true,
+      "card_count_correct": true,
+      "fits_viewport": true,
+      "square_portraits": true,
+      "images_decoded": true
+    },
+    {
+      "flow": "no JavaScript /people/anthony-fox/",
+      "width": 375,
+      "http_ok": true,
+      "card_count_correct": true,
+      "fits_viewport": true,
+      "square_portraits": true,
+      "images_decoded": true
+    },
+    {
+      "flow": "no JavaScript /alliance/leadership/governing-board/",
+      "width": 1440,
+      "http_ok": true,
+      "card_count_correct": true,
+      "fits_viewport": true,
+      "square_portraits": true,
+      "images_decoded": true
+    },
+    {
+      "flow": "no JavaScript /news-and-events/people-and-opportunities/speakers/",
+      "width": 1440,
+      "http_ok": true,
+      "card_count_correct": true,
+      "fits_viewport": true,
+      "square_portraits": true,
+      "images_decoded": true
+    },
+    {
+      "flow": "no JavaScript /people/",
+      "width": 1440,
+      "http_ok": true,
+      "card_count_correct": true,
+      "fits_viewport": true,
+      "square_portraits": true,
+      "images_decoded": true
+    },
+    {
+      "flow": "no JavaScript /people/robert-watson/",
+      "width": 1440,
+      "http_ok": true,
+      "card_count_correct": true,
+      "fits_viewport": true,
+      "square_portraits": true,
+      "images_decoded": true
+    },
+    {
+      "flow": "no JavaScript /people/anthony-fox/",
+      "width": 1440,
+      "http_ok": true,
+      "card_count_correct": true,
+      "fits_viewport": true,
+      "square_portraits": true,
+      "images_decoded": true
+    }
+  ]
+}

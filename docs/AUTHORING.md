@@ -15,7 +15,7 @@ Each entity lives in one Markdown file. Its filename is its ID: `_people/robert-
 | `date` | News where published | Explicit source publication date. Omit when unavailable. |
 | `alternate: true` | Differing source versions | Retain a distinct alternate body without repeating it in the primary news feed. |
 | `permalink` | Ordinary pages under `pages/` | Public route; collection routes come from filenames. |
-| `listing` | Directory pages | Collection name, or `members`/`speakers` to select role flags. |
+| `listing` | Directory pages | For `layout: people`, optional grouped `role: speaker`, `registry: governing-board`, and `columns`. Other directories retain their collection-name adapter. |
 | `filter` | Event indexes only | Optional `upcoming` or `past`; event dates come from published body definitions. |
 | `thumbnail` | A record with genuine media | Optional grouped `src`, `alt`, `fit`, `position`, `width` and `height`; otherwise cards reuse its first local source image. |
 | `where-next` | A page with a known next destination | One `url`, with optional `title`, `action`, `image`, `target` and `rel`. No description is rendered. |
@@ -91,7 +91,7 @@ title: 'CHERI Concentrate: Practical Compressed Capabilities'
 authors: [jonathan-woodruff, alexandre-joannou, hongyan-xia, anthony-fox]
 ```
 
-The actual CHERI Concentrate record retains all 15 named authors. Existing records provide complete source-verified arrays. References must match filenames; the build fails on unknown people or organisation IDs.
+The actual CHERI Concentrate record retains all 15 named authors. Existing records provide complete source-verified arrays. References must match filenames; validate IDs independently, because native Jekyll does not reject unknown people or organisation IDs.
 
 News uses the same `authors` references. For example, `_news/one-bug-is-all-it-takes.md` uses `authors: [adam-finney]`. Add authors only from an explicit published byline, with evidence in `reports/relationship-evidence.json`; people mentioned, interviewed or quoted in a story are not automatically its authors. Reuse existing profiles. A bylined author without a profile gets a name-only people record, like a paper author, with provenance in `reports/derived-content.json`.
 
@@ -102,6 +102,12 @@ Do not repeat reverse relationships. A person's events come from event `speakers
 ## Governing board, directories and navigation
 
 `_data/governing-board.yml` is the only data registry: an ordered list of nine people IDs. Names, affiliations and biographies stay in people files. The full source board page remains, with board links back from profiles. When membership changes, update the list and board page together against an authoritative source.
+
+People directories now select `layout: people`. Omit `listing` to show all canonical people alphabetically. Speakers uses `listing: {role: speaker}`; the board uses `listing: {registry: governing-board}` and keeps registry order. Both use the generic cards and canonical `/people/:id/` routes. The optional `columns` setting supports the ZIP's 2/3/4 columns.
+
+The migrated board additionally has `listing.source-fragments: true`: its original portrait/card Markdown is preserved as historical source evidence, while the people layout replaces that presentation with canonical records. Do not update those retained fragments to maintain a second board list. Update `_data/governing-board.yml` and the source-backed role/affiliation definitions in `_people` instead; ordinary board prose remains editable. Each board card reads the person's existing `Board role` and `Organisation` definitions. See the [Phase 3 report](../reports/codex-phases/phase-03.md) for the measured mapping.
+
+Existing people reuse their first genuine Markdown portrait for both cards and square detail images. Keep its alt text, alignment and caption; do not add a second portrait. New records may use the ZIP's grouped `thumbnail` metadata instead. An explicit thumbnail overrides the primary portrait on both surfaces. Name-only records remain name-only, with relationships generated from the existing reference IDs. The Phase 3 audit independently checks every board ID and all person relationship targets; native Jekyll alone does not fail on unknown IDs.
 
 Published member and speaker directories list the canonical records selected by their flags. Their complete original source directories remain as separate Markdown source versions. Flags and affiliations describe captured sources, rather than asserting present employment.
 

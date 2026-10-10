@@ -75,7 +75,19 @@
             <img src="{{ image_url | escape_once }}" alt="{{ image_alt | escape_once }}" class="{% if include.mode == 'onward' %}onward-image{% else %}card-image{% endif %}{% if image_fit == 'contain' %} image-contain{% endif %}{% if card_image.position == 'left' %} image-crop-left{% elsif card_image.position == 'right' %} image-crop-right{% endif %}"{% if card_image.width %} width="{{ card_image.width | escape }}"{% endif %}{% if card_image.height %} height="{{ card_image.height | escape }}"{% endif %} loading="lazy">
           {% unless include.mode == 'onward' %}</span>{% endunless %}
         {% endif %}
+        {% if include.context == 'governing-board' %}
+          {% comment %}Published board facts already live in the canonical person's
+            definition list. markdownify accepts both raw and converted records.{% endcomment %}
+          {% assign person_facts = card_record.content | markdownify %}
+          {% assign board_role = nil %}
+          {% if person_facts contains '<dt>Board role</dt>' %}{% assign board_role = person_facts | split: '<dt>Board role</dt>' | last | split: '<dd>' | slice: 1, 1 | first | split: '</dd>' | first | strip_html | strip %}{% endif %}
+          {% if person_facts contains '<dt>Organisation</dt>' %}
+            {% assign board_affiliation = person_facts | split: '<dt>Organisation</dt>' | last | split: '<dd>' | slice: 1, 1 | first | split: '</dd>' | first | strip_html | strip %}
+            <span>{{ board_affiliation | escape_once }}</span>
+          {% endif %}
+        {% endif %}
         {% if include.heading == 'h3' %}<h3>{{ card_title | escape_once }}</h3>{% else %}<h2>{{ card_title | escape_once }}</h2>{% endif %}
+        {% if include.context == 'governing-board' and board_role %}<p class="card-description">{{ board_role | escape_once }}</p>{% endif %}
         {% unless include.mode == 'onward' %}
           {% if item.description %}<p class="card-description">{{ item.description | escape_once }}</p>{% endif %}
         {% endunless %}
@@ -84,7 +96,7 @@
             {% if card_date %}
               <span class="meta"><time datetime="{{ card_date | date_to_xmlschema }}">{{ card_date | date: '%-d %B %Y' }}</time></span>
             {% elsif kind == 'organisations' and item.member %}<span class="meta">Alliance member</span>
-            {% elsif kind == 'people' and item.speaker %}<span class="meta">Speaker</span>{% endif %}
+            {% elsif kind == 'people' and item.speaker and include.context != 'governing-board' %}<span class="meta">Speaker</span>{% endif %}
           {% endunless %}
           <span class="card-action">{{ item.action | default: include.action | default: 'Read more' | escape_once }} <span aria-hidden="true">&rarr;</span></span>
         {% endunless %}

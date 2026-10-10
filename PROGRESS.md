@@ -1,5 +1,13 @@
 # CHERI content and authoring progress
 
+## Phase 3 canonical people — 10 October 2026
+
+Continued from `71969d69c2ed90aec6ba6291f80dd4d658c5c110` on `codex/phased-site-transformation`. Governing Board, Speakers and People now use the named `people` layout and universal cards: nine registry-ordered board members, 60 alphabetized verified speakers and 112 canonical people. Board roles/affiliations come from existing person definitions, and all portraits link the canonical details. The `person` layout reuses 63 genuine portraits in square frames; 49 name-only profiles remain unchanged. The nine former board images/fragments remain in source as evidence while the rendered cards use the canonical profile portraits.
+
+All 476 Markdown bodies, 112 people files, 415 assets and 430 original asset mappings are preserved. Native root/project/reference/fixture builds, 30 regressions, the 476-file Markdown audit, complete before/after prose checks, all-person reverse relationships, 56 production and 20 project browser observations, eight ZIP style comparisons and keyboard/overlay/no-JavaScript checks pass. The pre-existing root `/search/` error, 2,000 project source-URL failures and 16 forward-order mismatches remain assigned to later phases.
+
+See the [Phase 3 report](reports/codex-phases/phase-03.md) for exact source-image substitutions, checks, evidence and handoff. No merge or deployment was performed.
+
 ## Phase 2 shared cards and content components — 10 October 2026
 
 Continued from `b2135595fe3064cc5811a05c3f6867205d056b49` on `codex/phased-site-transformation`. One native card renderer now handles directories, relationships, Related pages and single Where next CTAs. Genuine card media works before and after Markdown conversion: 63 people portraits, 52 member logos and 47 canonical news images appear in their directories. All 133 existing Where next sections and 109 Related content sections now use sourced YAML and native components; original Markdown bodies remain intact. Where next descriptions are deliberately omitted from display, with their exact originals retained in source/evidence.

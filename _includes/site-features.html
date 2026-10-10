@@ -1,7 +1,7 @@
 {% if page.url == '/alliance/membership/contact/' %}{% include contact-form.html %}{% endif %}
 {% if page.url == '/news-and-events/news-and-analysis/subscribe-newsletter/' %}{% include newsletter-form.html %}{% endif %}
 
-{% if page.listing %}
+{% if page.listing and page.layout != 'people' %}
   {% assign collection_items = site[page.listing] %}
   {% assign kind = page.listing %}
   {% if page.listing == 'members' %}

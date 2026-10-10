@@ -1,7 +1,7 @@
 ---
 title: People
 permalink: /people/
-listing: people
+layout: people
 ---
 
 # People

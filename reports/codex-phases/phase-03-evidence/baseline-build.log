@@ -1,0 +1,8 @@
+Configuration file: /workspace/adam-3bian.github.io/_config.yml
+To use retry middleware with Faraday v2.0+, install `faraday-retry` gem
+            Source: /workspace/adam-3bian.github.io
+       Destination: /tmp/cheri-phase3-before
+ Incremental build: disabled. Enable with --incremental
+      Generating...
+                    done in 41.93 seconds.
+ Auto-regeneration: disabled. Use --watch to enable.

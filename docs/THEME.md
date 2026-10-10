@@ -28,6 +28,14 @@ The default layout now feeds the native hero/page-heading includes from one extr
 
 Existing source Where next/Related content fragments have explicit front-matter counterparts on 137 records. Their original Markdown remains intact as provenance; the layout replaces only those marked navigation sections with the shared components. All 227 Related content descriptions remain visible. The 133 old Where next descriptions are intentionally omitted from display to meet the requested component contract, and remain verbatim in source and [Phase 2 evidence](../reports/codex-phases/phase-02-evidence/onward-mapping.json). No ordinary article paragraph is removed. New content can use the native YAML directly without legacy fragments.
 
+## Canonical people after Phase 3
+
+The named `people` layout now owns `/people/`, Speakers and Governing Board. It selects the same `_people` records: alphabetical all-people, alphabetical `speaker: true`, or the exact ID order in `_data/governing-board.yml`. It calls `listing.html` and the legacy `site-features` adapter skips these pages, preventing duplicate directories.
+
+The board's `listing.source-fragments: true` marks its retained source-card block as provenance. The layout replaces that block at its original position, preserving the introduction, explanatory paragraphs and section anchors. Board cards obtain the original role and affiliation from each canonical person's existing definition list, retain the View profile action, and use that person's genuine portrait. The nine former board images remain in source/assets; they are no longer a second maintained portrait selection. Speaker cards retain the ZIP's image/title-only presentation. The source-to-canonical image and text mapping is recorded in [Phase 3 evidence](../reports/codex-phases/phase-03-evidence/audit.json).
+
+The `person` layout gives the existing first source portrait the ZIP's `image-square` treatment in place; its alt text, alignment, caption and surrounding biography remain intact. Both cards and details therefore use the same real image without adding portrait metadata to 63 existing records. Explicit native `thumbnail` metadata takes precedence on both surfaces and replaces the existing primary image in place, avoiding duplicates. A record without a source image or thumbnail stays image-free. All original person Markdown remains unchanged, and published reverse links continue to derive from news/event/paper IDs.
+
 ## Validation and delivery
 
 Run the repository's build, full-content/asset/link checks, author relationship checks and desktop/mobile browser flows. Compare computed visual styles and representative screenshots against a build of the ZIP itself. Keep content hashes unchanged during theme-only tasks. Shared presentation and newly generated navigation can differ from archival body text; complete bodies must still match their retained signatures.

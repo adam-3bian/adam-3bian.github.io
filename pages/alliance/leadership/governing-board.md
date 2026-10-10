@@ -1,5 +1,9 @@
 ---
 title: Governing Board
+layout: people
+listing:
+  registry: governing-board
+  source-fragments: true
 permalink: /alliance/leadership/governing-board/
 where-next:
   url: /alliance/leadership/members/

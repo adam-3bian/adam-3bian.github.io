@@ -1,0 +1,14 @@
+{
+  "records": 476,
+  "unchanged_bodies": 476,
+  "preserved_signatures": 476,
+  "people": 112,
+  "speakers": 60,
+  "board": 9,
+  "genuine_portraits": 63,
+  "name_only": 49,
+  "root_link_errors": 1,
+  "project_link_errors": 2000,
+  "project_card_errors": 0,
+  "signature_failures": []
+}

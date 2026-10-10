@@ -1,7 +1,9 @@
 ---
 title: Speakers
 permalink: /news-and-events/people-and-opportunities/speakers/
-listing: speakers
+layout: people
+listing:
+  role: speaker
 ---
 
 1. News &amp; Events
