@@ -1,0 +1,12 @@
+[
+  {
+    "command": "scripts/ruby.sh scripts/check_markdown.rb",
+    "exit_code": 0,
+    "output": "PASS: 476 content files contain YAML front matter and Kramdown only; image classes and local assets exist.\n"
+  },
+  {
+    "command": "/workspace/cheri-migration-venv/bin/python scripts/check_entities.py",
+    "exit_code": 1,
+    "output": "Traceback (most recent call last):\n  File \"/workspace/adam-3bian.github.io/scripts/check_entities.py\", line 89, in <module>\n    assert [p.name for p in (ROOT/'_data').glob('*')]==['governing-board.yml']\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+  }
+]

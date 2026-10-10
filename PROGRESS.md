@@ -1,5 +1,15 @@
 # CHERI content and authoring progress
 
+## Phase 0 audit — 10 October 2026
+
+Audited `db809a9908f86aa57d7992fb596f52ea10836f09` on `codex/phased-site-transformation`. No editorial bodies, theme components, original assets, application configuration or publishing settings were changed. Original supplied references are retained under `docs/references/`, which is already excluded from the site.
+
+The native GitHub Pages dependency set builds successfully: Ruby 3.3.8, github-pages 232, Jekyll 3.10.0, Kramdown 2.4.0 and Liquid 4.0.4. Fresh inventory: 476 editorial records, 481 HTML outputs, 366 source-evidenced relationship references, nine resolving board IDs, and 430 original asset mappings with matching source/output checksums. All 30 regression tests and the 476-file Markdown audit pass. Historical counts below include the subsequently removed search page and must not be read as current results.
+
+The audit found one broken local link (`/search/` on the 404 page), 87 historical signature comparisons affected solely by added synthetic headings, missing directory thumbnails, lost reference ordering in 16 lists, incorrect event filtering/dates, inactive native Where next/Related pages/slider components, and four footer groups/one social link instead of three/five. Browser observations cover 14 routes at 375/768/1024/1440px: one overflow, no broken/faded images or JavaScript errors, and successful keyboard menu/image-dialog/no-JavaScript checks. Legacy output validators still depend on removed plugin metadata and are not passing native checks.
+
+See [reports/codex-phases/phase-00.md](reports/codex-phases/phase-00.md) for measured evidence, exact limits and the prioritised Phase 1–8 gap list. Phase 0 is an audit; these implementation gaps remain for their requested phases. No merge or deployment was performed.
+
 ## Starter cards and forms alignment — 10 October 2026
 
 The ZIP's reusable `.card`, `.card-media`, `.form-panel`, `.form`, `.form-field` and `.button` design primitives are the presentation authority for directory cards, contact and newsletter. Cards use real locally archived organisation logos and sourced people/article/event images when available; no template placeholder images are inserted. Extra custom site search and directory filters are removed to match the starter's simpler navigation and lists. Actual content bodies and original image files remain unchanged. The static contact/newsletter forms remain explicitly non-submitting; external published services remain linked. Native GitHub Pages publishing continues. Build and visual checks must be recorded separately from this statement.

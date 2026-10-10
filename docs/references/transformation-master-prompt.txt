@@ -1,0 +1,1046 @@
+# Master Prompt — Transform an Existing CHERI Alliance Website into a Minimalist, Content-Driven Jekyll Website
+
+## 1. Objective
+
+Act as a senior Jekyll developer, information architect, frontend designer, and content migration specialist.
+
+Transform the existing website and its available content into a complete, functioning, minimalist CHERI Alliance website, using the attached simplified Jekyll starter ZIP as the **authoritative source for design, styling, templates, and component behaviour**.
+
+Use these references:
+
+- **Visual and component reference:** The attached `cheri-alliance-starter-kit-simplified-authoring` ZIP, inside its `basic-site/` directory.
+- **Content and entity relationship reference:** https://github.com/adam-3bian/adam-3bian.github.io
+- **Live navigation and footer reference:** https://cheri-alliance.github.io/
+
+The outcome must be a working, maintainable GitHub Pages website, not a mock-up, prototype, redesign proposal, or collection of example pages.
+
+Preserve all available genuine content from the existing website: articles, people, organisations, events, papers, guides, hardware, software, governing-board information, working groups, policies, images, links, downloadable resources, headings, tables, and meaningful metadata.
+
+**Do not use the source website's existing visual styling as the design target.** Re-present its content through the exact design language and reusable components of the supplied ZIP.
+
+Avoid invented content, sample profiles, dummy images, fabricated relationships, and unnecessary dependencies.
+
+---
+
+## 2. Architectural philosophy
+
+The site must be content-first, Markdown-driven, minimalist, and reusable.
+
+Follow these principles:
+
+1. **One source of truth per entity.** A person, organisation, event, news article, or paper is stored in one canonical Markdown file.
+2. **List and detail separation.** Collections have reusable list templates and corresponding detail templates.
+3. **One universal card system.** Any list of pages or entities uses the same generic card CSS and rendering component.
+4. **Simple front matter.** Store only essential content metadata, references, and genuine display overrides. Derive everything else.
+5. **Relationship-driven rendering.** Generate contextual content sections from references to existing entities.
+6. **Minimal template duplication.** Reuse shared layouts, includes, Sass variables, and components.
+7. **Content is preserved.** Presentation may change, but original published information must remain intact.
+8. **GitHub Pages compatibility.** Prefer native Jekyll, Liquid, Kramdown, SCSS, and small amounts of vanilla JavaScript.
+
+Do not introduce React, Next.js, a database, a headless CMS, Tailwind, or a JavaScript application framework.
+
+Do not hardcode directories or entity cards in Markdown.
+
+---
+
+## 3. Design language
+
+### Overall aesthetic
+
+Reproduce the ZIP's visual style rather than inventing a new one.
+
+The design should be:
+
+- Minimalist, flat, modern, professional, and technical.
+- Clean, spacious, and typographically strong.
+- Structured around a clear content hierarchy.
+- Consistent between listing pages, detail pages, and ordinary content pages.
+- Based on reusable cards and simple rectangular panels.
+- Subtle in decoration, with the official CHERI visual identity.
+- Responsive without radically changing the visual language.
+
+Avoid excessive shadows, rounded UI components, ornamental borders, gradients, glassmorphism, floating widgets, and unnecessary animation.
+
+### Typography
+
+Use the ZIP's Poppins typography.
+
+- Font family: Poppins, with Arial and sans-serif fallbacks.
+- Font weights: 400, 500, 600.
+- Body line-height: 1.5.
+- Headings line-height: approximately 1.15.
+- H1: `clamp(2.25rem, 5vw, 3.25rem)`.
+- H2: `clamp(1.5rem, 3vw, 2rem)`.
+- H3: `1.25rem`.
+- Card headings: `1.25rem`.
+- Introductory text: `1.125rem`.
+- Metadata: `0.875rem`.
+- Large homepage hero heading: approximately `clamp(3rem, 6vw, 5.5rem)` on desktop.
+
+Keep the ZIP's heading letter-spacing, line heights, and responsive typography.
+
+Do not substitute a different font.
+
+### Dimensions and spacing
+
+Preserve the shared sizing system:
+
+- Maximum site width: 1264px.
+- Maximum content width: 1200px.
+- Recommended text width: 52rem.
+- Main responsive breakpoint: 768px.
+- Mobile gutters: 1.25rem.
+- Desktop gutters: 2rem.
+- Card grid gap: 1.5rem.
+- Card padding: 1.5rem, increasing to 2rem on wide screens.
+- Generous, consistent vertical spacing between content sections.
+
+Use the ZIP's Sass spacing variables rather than creating arbitrary per-page values.
+
+### Colours
+
+Preserve the ZIP's CHERI Alliance palette and derived surface colours.
+
+Core brand references:
+
+- Blue: `#135771`
+- Red: `#BA1E1E`
+- Beige: `#FDECE3`
+- White: `#FFFFFF`
+- Charcoal: `#373636`
+- Cool grey: `#D1D6DF`
+
+Important light-theme surfaces:
+
+- Page: `rgba(#ffffff, 0.46)`
+- Hero: `rgba(#8ebed4, 0.66)`
+- Cards: `rgba(#74a7bf, 0.62)`
+- Card hover: `rgba(#6b9db7, 0.72)`
+- Header: `rgba(#ffffff, 0.94)`
+
+Important dark-theme surfaces:
+
+- Page: `rgba(#07151e, 0.90)`
+- Hero: `rgba(#1e5e7a, 0.60)`
+- Cards: `rgba(#2d6079, 0.60)`
+- Card hover: `rgba(#2e647e, 0.72)`
+- Header: `rgba(#102832, 0.94)`
+
+These are background and component colours. They must not make foreground photographs or logos transparent.
+
+Maintain readable contrast and visible keyboard focus states.
+
+### Honeycomb background
+
+Reuse the actual light and dark hexagon background WebP assets supplied in the ZIP.
+
+Preserve the original visual characteristics:
+
+- Seamlessly repeating hexagonal background.
+- Hollow rounded-hexagon outlines based on the CHERI logo.
+- Fine 1px horizontal lines separated by 1px transparent gaps.
+- Subtle diagonal tonal variation and larger anchor cells.
+- Distinct light and dark versions.
+- No extra noise, grain, blur, SVG mask, or CSS-generated replacement pattern.
+
+The watermark appears behind the content, through translucent page surfaces.
+
+The dark content background must remain sufficiently opaque to keep the watermark subdued beneath text.
+
+Do not redraw the original logo or watermark assets.
+
+### Logo and favicon
+
+Use the official assets from the ZIP:
+
+- `assets/images/brand/logo-blue.svg` for light-theme pages.
+- `assets/images/brand/logo-white.svg` for dark-theme pages.
+- The provided official `favicon.ico`.
+
+Preserve SVG proportions, colours, and viewBox.
+
+---
+
+## 4. Theme rules
+
+### Homepage
+
+The homepage **must use the dark theme**.
+
+It must include:
+
+- The dark header with the white CHERI Alliance logo.
+- A large dark-theme hero.
+- The original ZIP-style image/text slider.
+- The site's actual homepage content.
+- Appropriate card-based content links and featured content.
+- A single large Where next card.
+- The shared Subscribe component and footer.
+
+Use the ZIP's `theme: dark` and `hero.size: large` behaviour.
+
+The homepage must not accidentally fall back to the light theme.
+
+### All other pages
+
+Use the ZIP's light theme by default, unless a page has an explicitly justified theme override.
+
+Do not add an interactive theme switcher unless separately requested.
+
+Both themes must share the same underlying components, layout geometry, and responsive behaviour.
+
+---
+
+## 5. Site architecture and reusable templates
+
+The site should have a small set of clearly named list/detail templates.
+
+| Content type | List layout | Detail layout |
+|---|---|---|
+| People | `people` | `person` |
+| News | `news` | `post` |
+| Events | `events` | `event` |
+| Organisations / Members | `members` | `member` |
+| General collections | `list` | `page` or suitable entity detail |
+| Hierarchical section pages | `index` | `page` |
+
+Reuse the ZIP's existing named layouts wherever possible.
+
+Extend them only where the richer source content or relationships require it.
+
+### People
+
+Maintain one canonical `_people/` collection.
+
+All people—including speakers, governing-board members, news authors, and paper authors—belong in this collection.
+
+Do not create a separate collection containing duplicate speaker or governing-board profiles.
+
+A person may have several roles.
+
+Examples:
+
+- A speaker can also be a news author.
+- A governing-board member can also be a speaker.
+- A paper author may have only a name and no biography.
+- A person can be associated with an organisation.
+
+**Governing Board and Speakers must both be list pages using the `people` list template and the generic people card component.**
+
+They are different selections of the same canonical collection.
+
+### Governing Board
+
+Use the existing ordered `_data/governing-board.yml` registry of people IDs for board membership and display order.
+
+Keep the actual board introduction and explanatory content in its page.
+
+Generate the board's people cards from the registry and `_people/` records.
+
+Do not maintain separate hardcoded portraits, biographies, or profile-card markup on the governing-board page.
+
+### Speakers
+
+Build the Speakers directory from people records marked `speaker: true`.
+
+Sort alphabetically unless the content provides a justified editorial ordering.
+
+Display a portrait and name where available.
+
+Link directly to the person's canonical detail page.
+
+### Person detail
+
+Use the `person` layout for every individual.
+
+Render:
+
+- Breadcrumbs.
+- Page heading or hero.
+- Biography and original source information.
+- An authentic square portrait where available.
+- Genuine affiliation and role information.
+- Relevant talks or events.
+- Authored news.
+- Authored papers.
+- Other relationship-driven sections.
+- Related pages.
+- One Where next item.
+
+The portrait should be positioned on the left or right beside the text when appropriate, not stretched into a large decorative banner.
+
+Reuse the original portrait asset instead of creating a second competing image.
+
+Do not invent biographies or images for people who only have a name.
+
+### Organisations and members
+
+Keep actual organisations as canonical entities.
+
+Where the existing repository uses `_organisations/`, preserve that collection instead of unnecessarily duplicating it as `_members/`.
+
+Use `member: true` only for confirmed Alliance members.
+
+Build member directory cards from the organisation records.
+
+Use the `members` and `member` visual templates from the ZIP, adapted to the existing source collection.
+
+### News and articles
+
+Preserve the canonical `_news/` collection used by the existing content repository, adapting the ZIP's `news`/`post` layouts to it.
+
+Do not silently convert or duplicate news records into `_posts/`.
+
+Sort news newest first.
+
+The news list must use standard cards, including title, date, image when available, and a suitable action.
+
+**Every news article with known authors must include an Authors section near the bottom of the article.**
+
+This must be a genuine list of standard person cards.
+
+Each author card should use the same generic card CSS as the people directory, with the person's real portrait if available and a link to their person detail page.
+
+Render authors from the article's `authors` front matter. Do not duplicate author details within the news file or invent authors.
+
+### Events
+
+Use the generic event list/detail templates.
+
+Event cards should use landscape imagery, real dates, locations, and appropriate calls to action.
+
+Preserve upcoming and past-event distinctions based on trustworthy event data and build-time date logic.
+
+An event's speaker list must be generated as standard person cards using references to `_people/`.
+
+### Other directories and section pages
+
+Use shared page and list templates for hardware, software, papers, guides, policies, resources, working groups, and other content.
+
+Use real page records, collection membership, roles, or parent relationships to determine directory content.
+
+Do not create one-off card HTML for each directory.
+
+---
+
+## 6. Universal card component — mandatory
+
+**All lists of pages and entities must use the ZIP's generic card CSS.**
+
+The universal component must be based on:
+
+- `.cards`
+- `.card`
+- `.card-media`
+- `.card-image`
+- `.card-action`
+- `.columns-2`
+- `.columns-3`
+- `.columns-4`
+
+Reuse `_includes/listing.html` and `_sass/_cards.scss`, adapting the data inputs rather than creating new CSS systems.
+
+This component must be used for:
+
+- People and governing-board directories.
+- Speaker lists.
+- News and event directories.
+- News authors.
+- Event speakers.
+- Organisation/member directories.
+- People related to organisations.
+- Authored publications.
+- Related pages.
+- Nested section indexes.
+- Contextual lists appearing inside detail pages.
+
+Cards should:
+
+- Use flat translucent blue-tinted backgrounds.
+- Have clear normal, hover, and focus states.
+- Have consistent internal padding.
+- Fill equal-height grid cells where useful.
+- Use the same typography and action styling.
+- Make the full card clickable.
+- Be responsive with one, two, three, or four columns.
+- Render gracefully without an image.
+- Avoid decorative shadows and unnecessary borders.
+
+### Image ratios
+
+- Person and member card images: **1:1 square**.
+- News and event thumbnails: **16:9 landscape**.
+- Ordinary left/right content images: generally **3:2**, preserving source proportions.
+- Full-width content images: generally **16:9** when appropriate.
+- Slider images: **16:9**.
+
+Use `object-fit: cover` for photographs where cropping is suitable, and `contain` for logos, charts, diagrams, or imagery that must not be cropped.
+
+Never force all source images into an inappropriate ratio.
+
+---
+
+## 7. Where next versus Related pages
+
+These are different components and must remain separate.
+
+### Where next
+
+Where next is **always exactly one large, prominent card**.
+
+It must:
+
+- Occupy the full available content width.
+- Use the shared card and call-to-action styles.
+- Have one destination.
+- Display the destination title.
+- Show an action such as Continue.
+- Optionally contain an image.
+- Make the entire card clickable.
+- Have no descriptive paragraph.
+
+Do not render Where next as a three-column grid.
+
+Do not add multiple Where next items.
+
+Do not populate this area with automatic unrelated recommendations.
+
+### Related pages
+
+Related pages is a multi-item list rendered using the same generic card system.
+
+Each item should resolve to an actual page or entity.
+
+Use a responsive grid, generally three columns on desktop.
+
+Titles should be inferred from their destination pages unless a deliberate override is supplied.
+
+Do not duplicate page titles and summaries unnecessarily in front matter.
+
+### Hierarchical indexes
+
+For an ordinary section index, derive its child cards from pages that identify it as their `parent`, rather than maintaining a separate list of manually authored cards.
+
+---
+
+## 8. Simple, relationship-driven front matter
+
+Combine the richer relationships used in the existing GitHub repository with the ZIP's simple authoring conventions.
+
+The source Markdown file's filename is its stable ID.
+
+For example:
+
+`_people/adam-finney.md` has ID `adam-finney`.
+
+References between entities should use these IDs, not duplicated names, copied content, or presentation-specific HTML.
+
+### Example: person
+
+```yaml
+---
+title: Adam Finney
+organization: cheri-alliance
+speaker: true
+thumbnail:
+  src: /assets/people/adam-finney/portrait.jpg
+  alt: Adam Finney
+---
+```
+
+Follow this with the person's real biography and content as ordinary Markdown.
+
+The portrait path above illustrates the schema; use the actual verified asset path in implementation.
+
+### Example: news article
+
+```yaml
+---
+title: Example Article Title
+date: 2026-05-13
+authors:
+  - adam-finney
+thumbnail:
+  src: /assets/news/article-image.jpg
+  alt: Description of the original image
+---
+```
+
+This front matter should automatically generate a linked person card for Adam Finney below the article.
+
+Use the real article title, source date, author, and image rather than the illustrative values.
+
+### Example: event
+
+```yaml
+---
+title: Example Conference
+date: 2026-11-12
+speakers:
+  - mike-eftimakis
+  - adam-finney
+---
+```
+
+The event page automatically generates speaker cards.
+
+On a person page, the relevant events should be derived from those references in reverse.
+
+### Example: organisation
+
+```yaml
+---
+title: Example Organisation
+member: true
+---
+```
+
+A member organisation appears in the Members directory without requiring manually maintained directory cards.
+
+### Example: simple page
+
+```yaml
+---
+title: Memory Safety
+parent: /discover/
+---
+```
+
+The page should inherit its default layout, theme, and navigation behaviour.
+
+Its parent section should be able to discover and list the page as a card.
+
+### Example: related pages
+
+```yaml
+related-pages:
+  - url: /discover/
+  - url: /guides/
+  - url: /events/
+```
+
+The renderer should resolve page titles and generate cards.
+
+### Example: Where next
+
+```yaml
+where-next:
+  url: /discover/
+```
+
+This creates one large Where next card with an automatically resolved destination title.
+
+### Front-matter rules
+
+Use only fields that materially affect the page.
+
+Prefer these conventions:
+
+- `title` for display titles.
+- `date` and `end-date` for real published dates.
+- `thumbnail` for grouped image properties.
+- `organization` for affiliation references.
+- `member` and `speaker` for verified role selection.
+- `authors` for news and paper contributor IDs.
+- `speakers` for event participant IDs.
+- `parent` for page hierarchy.
+- `permalink` only when necessary.
+- `listing` for justified directory overrides.
+- `hero` and `slider` for actual display overrides.
+- `where-next` for one onward destination.
+- `related-pages` for explicit editorial relationships.
+- `form` for form definitions.
+
+Do not repeat `layout`, `theme`, `permalink`, `parent`, action text, or image defaults on every record if `_config.yml` can provide them.
+
+Use hyphenated compound keys for newly introduced authored properties. Preserve underscores where Jekyll or a supported plugin requires them.
+
+Do not add large blocks of calculated metadata to editorial Markdown.
+
+Keep acquisition provenance and migration-validation metadata in reports rather than normal page front matter.
+
+---
+
+## 9. Derive reverse relationships automatically
+
+Use Liquid and supported static-data techniques to render reverse relationships.
+
+Examples:
+
+- If news article A has `authors: [adam-finney]`, Adam's person page should show article A.
+- If event B has `speakers: [adam-finney]`, Adam's person page should show event B.
+- If paper C lists Adam as an author, Adam's person page should show paper C.
+- If Adam references `organization: cheri-alliance`, the Alliance's organisation page can list Adam.
+- If a person ID appears in `_data/governing-board.yml`, the governing-board directory shows that person.
+
+Do not repeat these links manually in both directions.
+
+Do not use plain-text name matching where stable IDs exist.
+
+Preserve authored order for paper authors, event speakers, and governing-board members.
+
+Missing or unresolved IDs should be reported as validation errors, not silently replaced with fabricated records.
+
+---
+
+## 10. Homepage slider
+
+The homepage slider is mandatory.
+
+Reuse the ZIP's actual `_includes/slider.html`, `_sass/_slider.scss`, and `assets/js/slider.js` behaviour.
+
+Requirements:
+
+- Dark-mode appearance on the homepage.
+- Image and text in approximately equal desktop columns.
+- Image on the left, content on the right.
+- Responsive vertical stacking on mobile.
+- Full-slide clickable CTA, not merely a small button.
+- Centred circular slide indicators.
+- Accessible labels for each slide.
+- Keyboard-operable slide navigation.
+- Automatic advancement approximately every five seconds.
+- Pause or defer advancement while the active slide has keyboard focus or the browser tab is hidden.
+- Respect reduced-motion preferences.
+- Keep the first slide usable without JavaScript.
+- No unwanted opacity applied to the image itself.
+
+Slider items must use real pages and real images from the available website content.
+
+Do not use the ZIP's illustrative sample slides or placeholder artwork in the published result.
+
+Do not add unnecessary carousel libraries.
+
+---
+
+## 11. Image handling
+
+### Foreground images
+
+**Foreground images must never be semi-transparent.**
+
+All actual content images—portraits, logos, photographs, illustrations, diagrams, news thumbnails, event imagery, and slider images—must retain their original opacity and colour.
+
+Do not apply reduced opacity to images as a decorative design treatment.
+
+Do not put foreground images inside parent containers whose opacity affects the image.
+
+Only background fills and watermark layers should use transparency.
+
+If an original image contains intentional alpha transparency, preserve it.
+
+### Image alignment on detail pages
+
+Use the ZIP's Markdown image alignment conventions:
+
+- `.image-left`
+- `.image-right`
+- `.image-full`
+- `.image-inline` where genuinely useful
+
+Choose alignment according to content.
+
+In most cases, use a left- or right-aligned image with text flowing alongside it.
+
+Use full width when genuinely appropriate, such as a large architecture diagram, meaningful screenshot, wide data visualisation, or detailed event photograph.
+
+Avoid placing every image in a full-width hero or decorative image section.
+
+On mobile, left/right images should naturally stack and fill the available width.
+
+Preserve actual image order, descriptions, and captions.
+
+### Image interaction
+
+Retain the ZIP's image overlay behaviour:
+
+- Clicking a suitable content image opens it in a viewport-sized dialog.
+- Preserve its aspect ratio.
+- Provide a visible close control.
+- Support Escape.
+- Restore keyboard focus on close.
+- Preserve accessible alt text.
+- Lazy-load suitable images.
+- Avoid layout shifts where intrinsic dimensions are known.
+
+---
+
+## 12. Navigation and menus
+
+### Header
+
+Use the same top-level menu labels as the live CHERI Alliance GitHub Pages website:
+
+1. Discover CHERI
+2. Adopt
+3. Build
+4. CHERI Alliance
+5. News & Events
+
+The logo should link to Home; a separate top-level Home item is not necessary.
+
+Preserve the site's published submenu hierarchy and actual links.
+
+Use the ZIP's nested mega-menu design, dropdown behaviour, typography, responsive handling, and keyboard accessibility.
+
+The menu should support grouped subcategories, including:
+
+**Discover CHERI**
+- Why CHERI
+- Understand CHERI
+- Resources
+
+**Adopt**
+- Business Case
+- Assurance & Adoption
+- Policy
+
+**Build**
+- Software Developers
+- Technology
+- Platforms
+- Software Ecosystem
+
+**CHERI Alliance**
+- About & Governance
+- Leadership
+- Membership
+- Legal & Policies
+
+**News & Events**
+- News & Analysis
+- Events & Archive
+- People & Opportunities
+
+Preserve the live site's individual submenu labels and destinations. Do not replace these with the ZIP's simplified demonstration navigation.
+
+Keep deep navigation usable on mobile, tablet, and desktop.
+
+### Footer
+
+Use the live site's footer groups:
+
+**Updates**
+- Latest News
+- Upcoming Events
+- Subscribe to our Newsletter
+
+**CHERI Alliance**
+- About the CHERI Alliance
+- Members
+- Working Groups
+- Contact the Alliance
+
+**Legal**
+- Code of Conduct
+- CHERI Trademark
+- Privacy
+
+Do not add the reference repository's additional Explore footer group unless explicitly approved.
+
+Retain the ZIP footer's layout, colours, typography, spacing, and social icon treatment.
+
+### Social links
+
+The footer must have these five social/community links:
+
+- Slack: https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/cheri-slack.html
+- LinkedIn: https://www.linkedin.com/company/cheri-alliance/
+- Mastodon: https://infosec.exchange/@cheri_alliance
+- GitHub: https://github.com/CHERI-Alliance
+- YouTube: https://www.youtube.com/@CHERI-Alliance
+
+Use the local SVG social icons already included in the ZIP for Slack, LinkedIn, and Mastodon.
+
+Add matching local SVG icons for GitHub and YouTube in the same visual style, dimensions, and colour treatment. Retain appropriate icon licensing.
+
+Do not load an entire external icon framework.
+
+All external links opening in a new tab must use appropriate `target` and `rel` attributes.
+
+---
+
+## 13. Forms
+
+Use the exact form design and authoring methodology from the ZIP.
+
+Preserve:
+
+- `_layouts/forms.html`
+- `_includes/form-fields.html`
+- `_sass/_forms.scss`
+
+Forms must use the ZIP's flat control styling, spacing, columns, labels, buttons, and responsive layout.
+
+Support:
+
+- Text fields.
+- Email fields.
+- Telephone fields.
+- Select controls.
+- Textareas.
+- Required fields.
+- Descriptive help text.
+- Half-width and full-width layouts.
+- Accessible labels, names, autocomplete attributes, and validation.
+
+Form introductions and instructions belong in Markdown above the form, not duplicated in front matter.
+
+The fields are described by simple YAML under `form.fields`.
+
+Forms must remain visibly non-submitting demonstrations unless a real, authorised endpoint is configured.
+
+Do not invent a backend, silently connect a third-party service, or suggest that a disconnected form has sent an enquiry.
+
+Preserve genuine contact/newsletter information from the existing website.
+
+---
+
+## 14. Shared page composition
+
+Use a consistent page layout.
+
+A standard detail page should be assembled from:
+
+1. Header and navigation.
+2. Breadcrumbs.
+3. Hero or page heading with exactly one H1.
+4. Real introductory paragraph.
+5. Main Markdown content.
+6. Applicable relationship-driven card lists, such as Authors, Speakers, News, Events, or Publications.
+7. Related pages as generic cards.
+8. One large Where next card.
+9. Shared Subscribe component where enabled.
+10. Footer and social links.
+
+The precise ordering of related navigation can follow the ZIP's native layout, but article authors must appear below the article body rather than being buried in the footer.
+
+Do not display the same introduction twice.
+
+Use the opening Markdown paragraph as the introduction where appropriate, following the ZIP's simplified authoring model.
+
+Support optional metadata overrides only where justified.
+
+Do not discard existing content when moving its opening paragraph into the hero or heading area.
+
+---
+
+## 15. Content migration and fidelity
+
+The transformation must include all currently available genuine source-backed content, not a representative subset.
+
+Inventory every existing editorial file, page, collection, public route, image, asset, relationship, and redirect.
+
+Preserve:
+
+- Entire article and page bodies.
+- Original reading order.
+- Headings and anchor IDs.
+- Tables and table cells.
+- Lists, nested lists, code, and definitions.
+- Quotes and citations.
+- Dates and bylines.
+- Image order, alt text, and captions.
+- Links and download destinations.
+- Real person, organisation, event, paper, and news references.
+- Canonical public URLs and necessary redirects.
+
+Remove obsolete WordPress or source-site presentational markup, redundant breadcrumbs, generated card fragments, and duplicated headings only when their underlying information remains correctly represented.
+
+Replace duplicated source-site card markup with dynamically generated ZIP-style cards.
+
+Do not replace genuine source copy with a summary or generic marketing language.
+
+Do not invent facts to fill incomplete profiles.
+
+Do not publish example people, placeholder images, demo news, or demonstration links from the ZIP.
+
+Keep original media assets wherever available and suitable. Missing assets must be reported rather than silently substituted with stock photography.
+
+Avoid duplicate index pages and alternate source versions appearing as repeated public content.
+
+---
+
+## 16. Jekyll implementation
+
+Retain the existing ZIP's core technology stack:
+
+- Jekyll.
+- GitHub Pages.
+- Kramdown Markdown.
+- YAML front matter.
+- Liquid templates and filters.
+- SCSS.
+- Semantic HTML.
+- Vanilla JavaScript.
+
+Retain the ZIP's shallow, reusable include architecture.
+
+Key files include:
+
+**Configuration**
+- `_config.yml`
+- `_data/navigation.yml` or one canonical configuration-backed navigation source
+- `_data/governing-board.yml`
+
+**Layouts**
+- `_layouts/default.html`
+- `_layouts/index.html`
+- `_layouts/list.html`
+- `_layouts/people.html`
+- `_layouts/person.html`
+- `_layouts/news.html`
+- `_layouts/post.html`
+- `_layouts/events.html`
+- `_layouts/event.html`
+- `_layouts/members.html`
+- `_layouts/member.html`
+- `_layouts/forms.html`
+
+**Components**
+- `_includes/header.html`
+- `_includes/footer.html`
+- `_includes/breadcrumbs.html`
+- `_includes/hero.html`
+- `_includes/page-heading.html`
+- `_includes/listing.html`
+- `_includes/slider.html`
+- `_includes/where-next.html`
+- `_includes/related-pages.html`
+- `_includes/subscribe.html`
+- `_includes/form-fields.html`
+- `_includes/image-overlay.html`
+
+**Styles**
+- `_sass/settings.scss`
+- `_sass/_base.scss`
+- `_sass/_themes.scss`
+- `_sass/_cards.scss`
+- `_sass/_hero.scss`
+- `_sass/_navigation.scss`
+- `_sass/_slider.scss`
+- `_sass/_forms.scss`
+- `_sass/_call-to-action.scss`
+- `_sass/_footer.scss`
+
+**JavaScript**
+- `assets/js/navigation.js`
+- `assets/js/slider.js`
+- `assets/js/content.js`
+- `assets/js/image-overlay.js`
+
+Prefer extending these original files instead of introducing parallel implementations.
+
+Keep all shared design values centralised in `_sass/settings.scss`.
+
+Maintain one navigation source of truth. If the existing repository keeps navigation in `_config.yml`, adapt the ZIP includes to it rather than retaining duplicate competing navigation definitions.
+
+Respect the existing GitHub Pages native Jekyll deployment model. Do not introduce unsupported custom Ruby generators, `_plugins/`, custom GitHub Actions workflows, or additional build infrastructure unless separately authorised and necessary.
+
+Build collection indexes and reverse relationships with native Liquid, configuration defaults, and static YAML data wherever practical.
+
+Preserve root-domain and repository-baseurl compatibility using Jekyll's URL filters.
+
+---
+
+## 17. Responsive behaviour and accessibility
+
+The site must remain usable at mobile, tablet, and desktop widths.
+
+Test at approximately:
+
+- 375px mobile.
+- 768px tablet.
+- 1024px laptop.
+- 1440px desktop.
+
+Ensure:
+
+- Responsive card grids.
+- Readable typography and spacing.
+- Correct mobile image stacking.
+- No horizontal page overflow.
+- Long Markdown tables scroll horizontally on narrow screens.
+- Keyboard-operable menus and controls.
+- Visible focus indicators.
+- Semantic landmarks and heading hierarchy.
+- Appropriate alt text.
+- Accessible slider controls.
+- Reduced-motion support.
+- Usable native links and content without JavaScript.
+- Correct external-link attributes.
+- Functional image dialogs and focus restoration.
+
+Cards, images, and tables must never break the page width.
+
+---
+
+## 18. Validation and acceptance criteria
+
+Do not stop after creating or converting a few example pages.
+
+Implement the complete transformation and verify it.
+
+The completed website must pass these acceptance criteria:
+
+- [ ] All available genuine source content is accounted for, migrated, and not silently truncated.
+- [ ] The homepage uses the correct ZIP dark-mode theme.
+- [ ] The homepage slider is populated with real content and works correctly.
+- [ ] Other pages use the correct light theme by default.
+- [ ] Original CHERI logos, favicon, and honeycomb background are preserved.
+- [ ] Foreground images are not semi-transparent.
+- [ ] Detail-page images are sensibly left-, right-, or full-width aligned.
+- [ ] Generic card CSS is used for every list of pages and entities.
+- [ ] Governing Board and Speakers both use the `people` list template.
+- [ ] Governing Board draws from its ordered people-ID registry.
+- [ ] Canonical people records use the `person` detail template.
+- [ ] News article authors render as linked person cards below the article.
+- [ ] Event speakers render as linked person cards.
+- [ ] Reverse relationships are generated, not duplicated manually.
+- [ ] Where next always contains one large card without descriptive text.
+- [ ] Related pages use a generic multi-card grid.
+- [ ] Front matter is minimal, grouped, and relationship-driven.
+- [ ] Header navigation matches the current published CHERI Alliance menu hierarchy.
+- [ ] Footer navigation matches the live Updates, CHERI Alliance, and Legal groups.
+- [ ] Slack, LinkedIn, Mastodon, GitHub, and YouTube links all appear with matching icons.
+- [ ] Forms match the ZIP's components and remain non-submitting without a verified endpoint.
+- [ ] All available original images, downloadable resources, links, headings, anchors, and dates are preserved.
+- [ ] No invented biographies, memberships, authors, or event associations are introduced.
+- [ ] No sample starter content leaks into published pages.
+- [ ] Canonical URLs, redirects, and internal links resolve.
+- [ ] Site builds successfully using the configured GitHub Pages-compatible Jekyll toolchain.
+- [ ] Mobile, tablet, desktop, keyboard, and reduced-motion tests succeed.
+
+Validate the rendered site rather than assuming that passing a Jekyll compilation proves the design and interactions are correct.
+
+Keep any unverified checks or incomplete content clearly documented.
+
+---
+
+## 19. Final deliverables
+
+Produce:
+
+1. The complete edited Jekyll website source, not merely a specification.
+2. All available original content presented through the ZIP's design system.
+3. A functioning homepage, directories, detail pages, and linked content sections.
+4. A small, reusable set of list/detail layouts and universal card components.
+5. Simplified front matter with validated entity relationships.
+6. The matching published navigation, footer, and five social destinations.
+7. A successful local site build and documented validation results.
+8. A content/route migration report describing what was preserved, adapted, or could not be verified.
+9. Concise instructions explaining how authors add a person, article, event, organisation, related page, or homepage slide.
+
+Preserve the existing repository and its content history. Work on an isolated branch where applicable; do not force-push, merge, change production settings, or deploy without approval.
+
+## 20. Guiding rule
+
+**One content record, many possible appearances, one consistent design system.**
+
+A person exists once but can appear on a speaker directory, the governing board, an event page, a news author list, a paper, and an organisation page.
+
+A page exists once but can appear in a section index, a related-pages grid, the homepage slider, and a Where next card.
+
+Every such appearance must use the appropriate reusable component rather than manually duplicating content or creating bespoke presentation code.
+
+The final result should feel like the supplied minimalist CHERI starter website, contain the full genuine content of the existing project, and remain exceptionally simple for future Markdown authors to maintain.

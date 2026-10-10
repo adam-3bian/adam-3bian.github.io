@@ -1,0 +1,2971 @@
+{
+  "references": [
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "index": 0,
+      "target": "alastair-beresford",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "index": 1,
+      "target": "alfredo-mazzinghi",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "index": 2,
+      "target": "ashish-darbari",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "index": 3,
+      "target": "ben-fletcher",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "index": 4,
+      "target": "bradley-finn",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "index": 5,
+      "target": "carl-shaw",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "index": 6,
+      "target": "david-chisnall",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "index": 7,
+      "target": "dmitriy-yeliseyev",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "index": 8,
+      "target": "domagoj-stolfa",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "index": 9,
+      "target": "gavin-ferris",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "index": 10,
+      "target": "haydn-povey",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "index": 11,
+      "target": "hesham-almatary",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "index": 12,
+      "target": "jeremy-singer",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "index": 13,
+      "target": "john-goodacre",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "index": 14,
+      "target": "jonathan-woodruff",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "index": 15,
+      "target": "joshua-lant",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "index": 16,
+      "target": "kevin-brodsky",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "index": 17,
+      "target": "mark-batty",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "index": 18,
+      "target": "mark-hill",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "index": 19,
+      "target": "marno-van-der-maas",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "index": 20,
+      "target": "martin-atkins",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "index": 21,
+      "target": "mike-eftimakis",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "index": 22,
+      "target": "mike-halsall",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "index": 23,
+      "target": "phil-day",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "index": 24,
+      "target": "robert-watson",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "index": 25,
+      "target": "simon-moore",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "index": 26,
+      "target": "tariq-kurd",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "index": 27,
+      "target": "tora-fridholm",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 0,
+      "target": "alex-rebert",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 1,
+      "target": "kathleen-fisher",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 2,
+      "target": "maika-fohrenbach",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 3,
+      "target": "ollie-whitehouse",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 4,
+      "target": "sam-cater",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 5,
+      "target": "adam-finney",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 6,
+      "target": "alexander-voyevoda",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 7,
+      "target": "alfredo-mazzinghi",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 8,
+      "target": "andrew-murray",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 9,
+      "target": "andy-moore",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 10,
+      "target": "ben-fletcher",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 11,
+      "target": "bradley-finn",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 12,
+      "target": "carl-shaw",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 13,
+      "target": "dave-harcourt",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 14,
+      "target": "david-chisnall",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 15,
+      "target": "david-musliner",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 16,
+      "target": "edoardo-marangoni",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 17,
+      "target": "javier-orensanz-martinez",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 18,
+      "target": "jennifer-jackson",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 19,
+      "target": "jessica-clarke",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 20,
+      "target": "jianyi-cheng",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 21,
+      "target": "johannes-muller",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 22,
+      "target": "john-baldwin",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 23,
+      "target": "john-goodacre",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 24,
+      "target": "jonathan-woodruff",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 25,
+      "target": "louis-emile-ploix",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 26,
+      "target": "luca-muller",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 27,
+      "target": "marno-van-der-maas",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 28,
+      "target": "manu-ravishankar",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 29,
+      "target": "merve-gulmez",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 30,
+      "target": "mike-eftimakis",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 31,
+      "target": "murat-cakmak",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 32,
+      "target": "paul-metzger",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 33,
+      "target": "peter-cox",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 34,
+      "target": "robert-watson",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 35,
+      "target": "samuel-stark",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 36,
+      "target": "simon-moore",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 37,
+      "target": "tariq-kurd",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "index": 38,
+      "target": "thomas-nyman",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheritech25-reloaded.md",
+      "field": "speakers",
+      "index": 0,
+      "target": "andrew-murray",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheritech25-reloaded.md",
+      "field": "speakers",
+      "index": 1,
+      "target": "carl-shaw",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheritech25-reloaded.md",
+      "field": "speakers",
+      "index": 2,
+      "target": "david-chisnall",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheritech25-reloaded.md",
+      "field": "speakers",
+      "index": 3,
+      "target": "jeremy-singer",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheritech25-reloaded.md",
+      "field": "speakers",
+      "index": 4,
+      "target": "john-thomson",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheritech25-reloaded.md",
+      "field": "speakers",
+      "index": 5,
+      "target": "jonathan-woodruff",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheritech25-reloaded.md",
+      "field": "speakers",
+      "index": 6,
+      "target": "marno-van-der-maas",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheritech25-reloaded.md",
+      "field": "speakers",
+      "index": 7,
+      "target": "mike-eftimakis",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheritech25-reloaded.md",
+      "field": "speakers",
+      "index": 8,
+      "target": "murali-vijayaraghavan",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheritech25-reloaded.md",
+      "field": "speakers",
+      "index": 9,
+      "target": "tariq-kurd",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheritech25-reloaded.md",
+      "field": "speakers",
+      "index": 10,
+      "target": "thomas-nyman",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "index": 0,
+      "target": "andrew-murray",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "index": 1,
+      "target": "carl-shaw",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "index": 2,
+      "target": "david-chisnall",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "index": 3,
+      "target": "dmitriy-yeliseyev",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "index": 4,
+      "target": "donato-ferraro",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "index": 5,
+      "target": "jeremy-singer",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "index": 6,
+      "target": "jessica-clarke",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "index": 7,
+      "target": "john-goodacre",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "index": 8,
+      "target": "john-thomson",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "index": 9,
+      "target": "jonathan-woodruff",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "index": 10,
+      "target": "ka-wing-li",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "index": 11,
+      "target": "marno-van-der-maas",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "index": 12,
+      "target": "merve-gulmez",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "index": 13,
+      "target": "mike-eftimakis",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "index": 14,
+      "target": "murali-vijayaraghavan",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "index": 15,
+      "target": "robert-watson",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "index": 16,
+      "target": "tariq-kurd",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "index": 17,
+      "target": "thomas-nyman",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_events/webinar-cheri-cra-compliance.md",
+      "field": "speakers",
+      "index": 0,
+      "target": "tariq-kurd",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate.md",
+      "field": "authors",
+      "index": 0,
+      "target": "mike-eftimakis",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_news/ai-has-compressed-the-attack-timeline.md",
+      "field": "authors",
+      "index": 0,
+      "target": "mike-eftimakis",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_news/behind-the-scenes-inside-the-promotion-and-ambassador-program-working-group.md",
+      "field": "authors",
+      "index": 0,
+      "target": "mike-eftimakis",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_news/beyond-software-patching.md",
+      "field": "authors",
+      "index": 0,
+      "target": "jim-wallace",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_news/cheri-alliance-to-distribute-arm-morello-boards-the-journey-beyond-dsbd-continues.md",
+      "field": "authors",
+      "index": 0,
+      "target": "mike-eftimakis",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_news/cheri-memory-safety-mitigates-llm-discovered-vulnerability-in-freebsd.md",
+      "field": "authors",
+      "index": 0,
+      "target": "brooks-davis",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_news/cheri-or-cheriot-the-answer-is-not-what-you-think-original.md",
+      "field": "authors",
+      "index": 0,
+      "target": "adam-finney",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_news/cheri-or-cheriot-the-answer-is-not-what-you-think.md",
+      "field": "authors",
+      "index": 0,
+      "target": "adam-finney",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_news/cheri-tag-bit-transport-overlay-standard-version-0-9-released.md",
+      "field": "authors",
+      "index": 0,
+      "target": "benjamin-fletcher",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_news/cheri-zephyr-v0-4-0-release.md",
+      "field": "authors",
+      "index": 0,
+      "target": "jennifer-jackson",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_news/cheriot-1-0-specification-released-original.md",
+      "field": "authors",
+      "index": 0,
+      "target": "adam-finney",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_news/cheriot-1-0-specification-released.md",
+      "field": "authors",
+      "index": 0,
+      "target": "adam-finney",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology-original.md",
+      "field": "authors",
+      "index": 0,
+      "target": "andrew-lindsay",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology.md",
+      "field": "authors",
+      "index": 0,
+      "target": "andrew-lindsay",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_news/innovate-uk-project-winner-university-of-birmingham-original.md",
+      "field": "authors",
+      "index": 0,
+      "target": "mihai-ordean",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_news/innovate-uk-project-winner-university-of-birmingham.md",
+      "field": "authors",
+      "index": 0,
+      "target": "mihai-ordean",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_news/introducing-the-cheri-adoption-global-ecosystem-assessment-q1-2026.md",
+      "field": "authors",
+      "index": 0,
+      "target": "adam-finney",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences-original.md",
+      "field": "authors",
+      "index": 0,
+      "target": "adam-finney",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences.md",
+      "field": "authors",
+      "index": 0,
+      "target": "adam-finney",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd-original.md",
+      "field": "authors",
+      "index": 0,
+      "target": "brooks-davis",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd.md",
+      "field": "authors",
+      "index": 0,
+      "target": "brooks-davis",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_news/one-bug-is-all-it-takes.md",
+      "field": "authors",
+      "index": 0,
+      "target": "adam-finney",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_news/streamlining-the-cheri-ecosystem-an-update-from-the-repository-management-working-group.md",
+      "field": "authors",
+      "index": 0,
+      "target": "marno-van-der-maas",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_news/the-eu-cyber-resilience-act-what-it-means-for-secure-by-design-systems-and-cheri.md",
+      "field": "authors",
+      "index": 0,
+      "target": "tariq-kurd",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_news/the-leading-root-of-trust-now-integrates-cheri-security-technology.md",
+      "field": "authors",
+      "index": 0,
+      "target": "adam-finney",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_news/towards-a-reference-qemu-for-cheri-platform-emulation.md",
+      "field": "authors",
+      "index": 0,
+      "target": "alfredo-mazzinghi",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_news/unlocking-the-future-a-roadmap-for-cheri-technology-advancement.md",
+      "field": "authors",
+      "index": 0,
+      "target": "mike-eftimakis",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay.md",
+      "field": "authors",
+      "index": 0,
+      "target": "adam-finney",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators.md",
+      "field": "authors",
+      "index": 0,
+      "target": "jianyi-cheng",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators.md",
+      "field": "authors",
+      "index": 1,
+      "target": "a-theodore-markettos",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators.md",
+      "field": "authors",
+      "index": 2,
+      "target": "alexandre-joannou",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators.md",
+      "field": "authors",
+      "index": 3,
+      "target": "paul-metzger",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators.md",
+      "field": "authors",
+      "index": 4,
+      "target": "matthew-naylor",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators.md",
+      "field": "authors",
+      "index": 5,
+      "target": "peter-rugg",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators.md",
+      "field": "authors",
+      "index": 6,
+      "target": "timothy-m-jones",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md",
+      "field": "authors",
+      "index": 0,
+      "target": "robert-watson",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md",
+      "field": "authors",
+      "index": 1,
+      "target": "jonathan-woodruff",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md",
+      "field": "authors",
+      "index": 2,
+      "target": "peter-g-neumann",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md",
+      "field": "authors",
+      "index": 3,
+      "target": "simon-moore",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md",
+      "field": "authors",
+      "index": 4,
+      "target": "jonathan-anderson",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md",
+      "field": "authors",
+      "index": 5,
+      "target": "david-chisnall",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md",
+      "field": "authors",
+      "index": 6,
+      "target": "nirav-dave",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md",
+      "field": "authors",
+      "index": 7,
+      "target": "brooks-davis",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md",
+      "field": "authors",
+      "index": 8,
+      "target": "khilan-gudka",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md",
+      "field": "authors",
+      "index": 9,
+      "target": "ben-laurie",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md",
+      "field": "authors",
+      "index": 10,
+      "target": "steven-j-murdoch",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md",
+      "field": "authors",
+      "index": 11,
+      "target": "robert-m-norton",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md",
+      "field": "authors",
+      "index": 12,
+      "target": "michael-roe",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md",
+      "field": "authors",
+      "index": 13,
+      "target": "stacey-son",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md",
+      "field": "authors",
+      "index": 14,
+      "target": "munraj-vadera",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-concentrate-practical-compressed-capabilities.md",
+      "field": "authors",
+      "index": 0,
+      "target": "jonathan-woodruff",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-concentrate-practical-compressed-capabilities.md",
+      "field": "authors",
+      "index": 1,
+      "target": "alexandre-joannou",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-concentrate-practical-compressed-capabilities.md",
+      "field": "authors",
+      "index": 2,
+      "target": "hongyan-xia",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-concentrate-practical-compressed-capabilities.md",
+      "field": "authors",
+      "index": 3,
+      "target": "anthony-fox",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-concentrate-practical-compressed-capabilities.md",
+      "field": "authors",
+      "index": 4,
+      "target": "robert-m-norton",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-concentrate-practical-compressed-capabilities.md",
+      "field": "authors",
+      "index": 5,
+      "target": "thomas-bauereiss",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-concentrate-practical-compressed-capabilities.md",
+      "field": "authors",
+      "index": 6,
+      "target": "david-chisnall",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-concentrate-practical-compressed-capabilities.md",
+      "field": "authors",
+      "index": 7,
+      "target": "brooks-davis",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-concentrate-practical-compressed-capabilities.md",
+      "field": "authors",
+      "index": 8,
+      "target": "khilan-gudka",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-concentrate-practical-compressed-capabilities.md",
+      "field": "authors",
+      "index": 9,
+      "target": "nathaniel-wesley-filardo",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-concentrate-practical-compressed-capabilities.md",
+      "field": "authors",
+      "index": 10,
+      "target": "a-theodore-markettos",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-concentrate-practical-compressed-capabilities.md",
+      "field": "authors",
+      "index": 11,
+      "target": "michael-roe",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-concentrate-practical-compressed-capabilities.md",
+      "field": "authors",
+      "index": 12,
+      "target": "peter-g-neumann",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-concentrate-practical-compressed-capabilities.md",
+      "field": "authors",
+      "index": 13,
+      "target": "robert-watson",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-concentrate-practical-compressed-capabilities.md",
+      "field": "authors",
+      "index": 14,
+      "target": "simon-moore",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-hardware-enabled-c-c-memory-protection-at-scale.md",
+      "field": "authors",
+      "index": 0,
+      "target": "robert-watson",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-hardware-enabled-c-c-memory-protection-at-scale.md",
+      "field": "authors",
+      "index": 1,
+      "target": "david-chisnall",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-hardware-enabled-c-c-memory-protection-at-scale.md",
+      "field": "authors",
+      "index": 2,
+      "target": "jessica-clarke",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-hardware-enabled-c-c-memory-protection-at-scale.md",
+      "field": "authors",
+      "index": 3,
+      "target": "brooks-davis",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-hardware-enabled-c-c-memory-protection-at-scale.md",
+      "field": "authors",
+      "index": 4,
+      "target": "nathaniel-wesley-filardo",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-hardware-enabled-c-c-memory-protection-at-scale.md",
+      "field": "authors",
+      "index": 5,
+      "target": "ben-laurie",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-hardware-enabled-c-c-memory-protection-at-scale.md",
+      "field": "authors",
+      "index": 6,
+      "target": "simon-moore",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-hardware-enabled-c-c-memory-protection-at-scale.md",
+      "field": "authors",
+      "index": 7,
+      "target": "peter-g-neumann",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-hardware-enabled-c-c-memory-protection-at-scale.md",
+      "field": "authors",
+      "index": 8,
+      "target": "alex-richardson",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-hardware-enabled-c-c-memory-protection-at-scale.md",
+      "field": "authors",
+      "index": 9,
+      "target": "peter-sewell",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-hardware-enabled-c-c-memory-protection-at-scale.md",
+      "field": "authors",
+      "index": 10,
+      "target": "konrad-witaszczyk",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheri-hardware-enabled-c-c-memory-protection-at-scale.md",
+      "field": "authors",
+      "index": 11,
+      "target": "jonathan-woodruff",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p.md",
+      "field": "authors",
+      "index": 0,
+      "target": "brooks-davis",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p.md",
+      "field": "authors",
+      "index": 1,
+      "target": "robert-watson",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p.md",
+      "field": "authors",
+      "index": 2,
+      "target": "alex-richardson",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p.md",
+      "field": "authors",
+      "index": 3,
+      "target": "peter-g-neumann",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p.md",
+      "field": "authors",
+      "index": 4,
+      "target": "simon-moore",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p.md",
+      "field": "authors",
+      "index": 5,
+      "target": "john-baldwin",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p.md",
+      "field": "authors",
+      "index": 6,
+      "target": "david-chisnall",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p.md",
+      "field": "authors",
+      "index": 7,
+      "target": "jessica-clarke",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p.md",
+      "field": "authors",
+      "index": 8,
+      "target": "nathaniel-wesley-filardo",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p.md",
+      "field": "authors",
+      "index": 9,
+      "target": "khilan-gudka",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p.md",
+      "field": "authors",
+      "index": 10,
+      "target": "alexandre-joannou",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheriot-complete-memory-safety-for-embedded-devices.md",
+      "field": "authors",
+      "index": 0,
+      "target": "saar-amar",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheriot-complete-memory-safety-for-embedded-devices.md",
+      "field": "authors",
+      "index": 1,
+      "target": "david-chisnall",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheriot-complete-memory-safety-for-embedded-devices.md",
+      "field": "authors",
+      "index": 2,
+      "target": "tony-chen",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheriot-complete-memory-safety-for-embedded-devices.md",
+      "field": "authors",
+      "index": 3,
+      "target": "nathaniel-wesley-filardo",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheriot-complete-memory-safety-for-embedded-devices.md",
+      "field": "authors",
+      "index": 4,
+      "target": "ben-laurie",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheriot-complete-memory-safety-for-embedded-devices.md",
+      "field": "authors",
+      "index": 5,
+      "target": "kunyan-liu",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheriot-complete-memory-safety-for-embedded-devices.md",
+      "field": "authors",
+      "index": 6,
+      "target": "robert-m-norton",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheriot-complete-memory-safety-for-embedded-devices.md",
+      "field": "authors",
+      "index": 7,
+      "target": "simon-moore",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheriot-complete-memory-safety-for-embedded-devices.md",
+      "field": "authors",
+      "index": 8,
+      "target": "yucong-tao",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheriot-complete-memory-safety-for-embedded-devices.md",
+      "field": "authors",
+      "index": 9,
+      "target": "robert-watson",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheriot-complete-memory-safety-for-embedded-devices.md",
+      "field": "authors",
+      "index": 10,
+      "target": "hongyan-xia",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev.md",
+      "field": "authors",
+      "index": 0,
+      "target": "saar-amar",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev.md",
+      "field": "authors",
+      "index": 1,
+      "target": "tony-chen",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev.md",
+      "field": "authors",
+      "index": 2,
+      "target": "david-chisnall",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev.md",
+      "field": "authors",
+      "index": 3,
+      "target": "nathaniel-wesley-filardo",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev.md",
+      "field": "authors",
+      "index": 4,
+      "target": "ben-laurie",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev.md",
+      "field": "authors",
+      "index": 5,
+      "target": "hugo-lefeuvre",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev.md",
+      "field": "authors",
+      "index": 6,
+      "target": "kunyan-liu",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev.md",
+      "field": "authors",
+      "index": 7,
+      "target": "simon-moore",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev.md",
+      "field": "authors",
+      "index": 8,
+      "target": "robert-norton-wright",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev.md",
+      "field": "authors",
+      "index": 9,
+      "target": "margo-seltzer",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev.md",
+      "field": "authors",
+      "index": 10,
+      "target": "yucong-tao",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev.md",
+      "field": "authors",
+      "index": 11,
+      "target": "robert-watson",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev.md",
+      "field": "authors",
+      "index": 12,
+      "target": "hongyan-xia",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety.md",
+      "field": "authors",
+      "index": 0,
+      "target": "nathaniel-wesley-filardo",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety.md",
+      "field": "authors",
+      "index": 1,
+      "target": "brett-f-gutstein",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety.md",
+      "field": "authors",
+      "index": 2,
+      "target": "jonathan-woodruff",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety.md",
+      "field": "authors",
+      "index": 3,
+      "target": "jessica-clarke",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety.md",
+      "field": "authors",
+      "index": 4,
+      "target": "peter-rugg",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety.md",
+      "field": "authors",
+      "index": 5,
+      "target": "brooks-davis",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety.md",
+      "field": "authors",
+      "index": 6,
+      "target": "mark-johnston",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety.md",
+      "field": "authors",
+      "index": 7,
+      "target": "robert-norton-wright",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety.md",
+      "field": "authors",
+      "index": 8,
+      "target": "david-chisnall",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety.md",
+      "field": "authors",
+      "index": 9,
+      "target": "simon-moore",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety.md",
+      "field": "authors",
+      "index": 10,
+      "target": "peter-g-neumann",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety.md",
+      "field": "authors",
+      "index": 11,
+      "target": "robert-watson",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cornucopia-temporal-safety-for-cheri-heaps.md",
+      "field": "authors",
+      "index": 0,
+      "target": "nathaniel-wesley-filardo",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cornucopia-temporal-safety-for-cheri-heaps.md",
+      "field": "authors",
+      "index": 1,
+      "target": "brett-f-gutstein",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cornucopia-temporal-safety-for-cheri-heaps.md",
+      "field": "authors",
+      "index": 2,
+      "target": "jonathan-woodruff",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cornucopia-temporal-safety-for-cheri-heaps.md",
+      "field": "authors",
+      "index": 3,
+      "target": "sam-ainsworth",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cornucopia-temporal-safety-for-cheri-heaps.md",
+      "field": "authors",
+      "index": 4,
+      "target": "lucian-paul-trifu",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cornucopia-temporal-safety-for-cheri-heaps.md",
+      "field": "authors",
+      "index": 5,
+      "target": "brooks-davis",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cornucopia-temporal-safety-for-cheri-heaps.md",
+      "field": "authors",
+      "index": 6,
+      "target": "hongyan-xia",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cornucopia-temporal-safety-for-cheri-heaps.md",
+      "field": "authors",
+      "index": 7,
+      "target": "edward-tomasz-napieraa",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cornucopia-temporal-safety-for-cheri-heaps.md",
+      "field": "authors",
+      "index": 8,
+      "target": "alex-richardson",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cornucopia-temporal-safety-for-cheri-heaps.md",
+      "field": "authors",
+      "index": 9,
+      "target": "john-baldwin",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/cornucopia-temporal-safety-for-cheri-heaps.md",
+      "field": "authors",
+      "index": 10,
+      "target": "david-chisnall",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c.md",
+      "field": "authors",
+      "index": 0,
+      "target": "paul-metzger",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c.md",
+      "field": "authors",
+      "index": 1,
+      "target": "a-theodore-markettos",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c.md",
+      "field": "authors",
+      "index": 2,
+      "target": "edward-tomasz-napieraa",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c.md",
+      "field": "authors",
+      "index": 3,
+      "target": "matthew-naylor",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c.md",
+      "field": "authors",
+      "index": 4,
+      "target": "robert-watson",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c.md",
+      "field": "authors",
+      "index": 5,
+      "target": "timothy-m-jones",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou.md",
+      "field": "authors",
+      "index": 0,
+      "target": "vadim-zaliva",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou.md",
+      "field": "authors",
+      "index": 1,
+      "target": "kayvan-memarian",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou.md",
+      "field": "authors",
+      "index": 2,
+      "target": "ricardo-almeida",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou.md",
+      "field": "authors",
+      "index": 3,
+      "target": "jessica-clarke",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou.md",
+      "field": "authors",
+      "index": 4,
+      "target": "brooks-davis",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou.md",
+      "field": "authors",
+      "index": 5,
+      "target": "alex-richardson",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou.md",
+      "field": "authors",
+      "index": 6,
+      "target": "david-chisnall",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou.md",
+      "field": "authors",
+      "index": 7,
+      "target": "brian-campbell",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou.md",
+      "field": "authors",
+      "index": 8,
+      "target": "ian-stark",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou.md",
+      "field": "authors",
+      "index": 9,
+      "target": "robert-watson",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou.md",
+      "field": "authors",
+      "index": 10,
+      "target": "peter-sewell",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "index": 0,
+      "target": "robert-watson",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "index": 1,
+      "target": "john-baldwin",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "index": 2,
+      "target": "tony-chen",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "index": 3,
+      "target": "david-chisnall",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "index": 4,
+      "target": "jessica-clarke",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "index": 5,
+      "target": "brooks-davis",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "index": 6,
+      "target": "nathaniel-wesley-filardo",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "index": 7,
+      "target": "brett-f-gutstein",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "index": 8,
+      "target": "graeme-jenkinson",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "index": 9,
+      "target": "ben-laurie",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "index": 10,
+      "target": "alfredo-mazzinghi",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "index": 11,
+      "target": "simon-moore",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "index": 12,
+      "target": "peter-g-neumann",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "index": 13,
+      "target": "hamed-okhravi",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "index": 14,
+      "target": "alex-rebert",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "index": 15,
+      "target": "alex-richardson",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "index": 16,
+      "target": "peter-sewell",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "index": 17,
+      "target": "laurence-tratt",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "index": 18,
+      "target": "murali-vijayaraghavan",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "index": 19,
+      "target": "hugo-vincent",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "index": 20,
+      "target": "konrad-witaszczyk",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md",
+      "field": "authors",
+      "index": 0,
+      "target": "kyndylan-nienhuis",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md",
+      "field": "authors",
+      "index": 1,
+      "target": "alexandre-joannou",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md",
+      "field": "authors",
+      "index": 2,
+      "target": "thomas-bauereiss",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md",
+      "field": "authors",
+      "index": 3,
+      "target": "anthony-fox",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md",
+      "field": "authors",
+      "index": 4,
+      "target": "michael-roe",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md",
+      "field": "authors",
+      "index": 5,
+      "target": "brian-campbell",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md",
+      "field": "authors",
+      "index": 6,
+      "target": "matthew-naylor",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md",
+      "field": "authors",
+      "index": 7,
+      "target": "robert-m-norton",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md",
+      "field": "authors",
+      "index": 8,
+      "target": "simon-moore",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md",
+      "field": "authors",
+      "index": 9,
+      "target": "peter-g-neumann",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md",
+      "field": "authors",
+      "index": 10,
+      "target": "ian-stark",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md",
+      "field": "authors",
+      "index": 11,
+      "target": "robert-watson",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md",
+      "field": "authors",
+      "index": 12,
+      "target": "peter-sewell",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa.md",
+      "field": "authors",
+      "index": 0,
+      "target": "richard-grisenthwaite",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa.md",
+      "field": "authors",
+      "index": 1,
+      "target": "graeme-barnes",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa.md",
+      "field": "authors",
+      "index": 2,
+      "target": "robert-watson",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa.md",
+      "field": "authors",
+      "index": 3,
+      "target": "simon-moore",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa.md",
+      "field": "authors",
+      "index": 4,
+      "target": "peter-sewell",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa.md",
+      "field": "authors",
+      "index": 5,
+      "target": "jonathan-woodruff",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk.md",
+      "field": "authors",
+      "index": 0,
+      "target": "jonathan-woodruff",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk.md",
+      "field": "authors",
+      "index": 1,
+      "target": "robert-watson",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk.md",
+      "field": "authors",
+      "index": 2,
+      "target": "david-chisnall",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk.md",
+      "field": "authors",
+      "index": 3,
+      "target": "simon-moore",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk.md",
+      "field": "authors",
+      "index": 4,
+      "target": "jonathan-anderson",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk.md",
+      "field": "authors",
+      "index": 5,
+      "target": "brooks-davis",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk.md",
+      "field": "authors",
+      "index": 6,
+      "target": "ben-laurie",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk.md",
+      "field": "authors",
+      "index": 7,
+      "target": "peter-g-neumann",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk.md",
+      "field": "authors",
+      "index": 8,
+      "target": "robert-m-norton",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk.md",
+      "field": "authors",
+      "index": 9,
+      "target": "michael-roe",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/adam-finney.md",
+      "field": "organization",
+      "index": 0,
+      "target": "cheri-alliance",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/alastair-beresford.md",
+      "field": "organization",
+      "index": 0,
+      "target": "university-of-cambridge",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/alex-rebert.md",
+      "field": "organization",
+      "index": 0,
+      "target": "google",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/alex-richardson.md",
+      "field": "organization",
+      "index": 0,
+      "target": "google",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/alexander-voyevoda.md",
+      "field": "organization",
+      "index": 0,
+      "target": "um-labs",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/alfredo-mazzinghi.md",
+      "field": "organization",
+      "index": 0,
+      "target": "capabilities-limited",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/allison-randal.md",
+      "field": "organization",
+      "index": 0,
+      "target": "capabilities-limited",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/andrew-lindsay.md",
+      "field": "organization",
+      "index": 0,
+      "target": "codasip",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/andrew-murray.md",
+      "field": "organization",
+      "index": 0,
+      "target": "the-good-penguin",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/andy-moore.md",
+      "field": "organization",
+      "index": 0,
+      "target": "risc-v-international",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/ashish-darbari.md",
+      "field": "organization",
+      "index": 0,
+      "target": "axiomise-ltd",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/ben-fletcher.md",
+      "field": "organization",
+      "index": 0,
+      "target": "codasip",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/bradley-finn.md",
+      "field": "organization",
+      "index": 0,
+      "target": "dsit",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/carl-shaw.md",
+      "field": "organization",
+      "index": 0,
+      "target": "codasip",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/dave-harcourt.md",
+      "field": "organization",
+      "index": 0,
+      "target": "bt-group",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/david-chisnall.md",
+      "field": "organization",
+      "index": 0,
+      "target": "sci-semiconductor",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/david-musliner.md",
+      "field": "organization",
+      "index": 0,
+      "target": "smart-information-flow-technologies-sift",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/dmitriy-yeliseyev.md",
+      "field": "organization",
+      "index": 0,
+      "target": "wind-river",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/domagoj-stolfa.md",
+      "field": "organization",
+      "index": 0,
+      "target": "capabilities-limited",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/domagoj-stolfa.md",
+      "field": "organization",
+      "index": 1,
+      "target": "university-of-cambridge",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/donato-ferraro.md",
+      "field": "organization",
+      "index": 0,
+      "target": "minerva-systems",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/donato-ferraro.md",
+      "field": "organization",
+      "index": 1,
+      "target": "university-of-modena-and-reggio-emilia",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/edoardo-marangoni.md",
+      "field": "organization",
+      "index": 0,
+      "target": "sci-semiconductor",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/gavin-ferris.md",
+      "field": "organization",
+      "index": 0,
+      "target": "cheri-alliance",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/gavin-ferris.md",
+      "field": "organization",
+      "index": 1,
+      "target": "lowrisc",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/haydn-povey.md",
+      "field": "organization",
+      "index": 0,
+      "target": "sci-semiconductor",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/hesham-almatary.md",
+      "field": "organization",
+      "index": 0,
+      "target": "capabilities-limited",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/javier-orensanz-martinez.md",
+      "field": "organization",
+      "index": 0,
+      "target": "lowrisc",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/jennifer-jackson.md",
+      "field": "organization",
+      "index": 0,
+      "target": "university-of-birmingham",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/jeremy-singer.md",
+      "field": "organization",
+      "index": 0,
+      "target": "university-of-glasgow",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/jessica-clarke.md",
+      "field": "organization",
+      "index": 0,
+      "target": "university-of-cambridge",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/jianyi-cheng.md",
+      "field": "organization",
+      "index": 0,
+      "target": "university-of-edinburgh",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/johannes-muller.md",
+      "field": "organization",
+      "index": 0,
+      "target": "rptu",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/john-baldwin.md",
+      "field": "organization",
+      "index": 0,
+      "target": "ararat-river-consulting-llc",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/john-goodacre.md",
+      "field": "organization",
+      "index": 0,
+      "target": "ukri",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/john-thomson.md",
+      "field": "organization",
+      "index": 0,
+      "target": "lowrisc",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/jonathan-woodruff.md",
+      "field": "organization",
+      "index": 0,
+      "target": "capabilities-limited",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/joshua-lant.md",
+      "field": "organization",
+      "index": 0,
+      "target": "the-university-of-manchester",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/ka-wing-li.md",
+      "field": "organization",
+      "index": 0,
+      "target": "university-of-cambridge",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/kathleen-fisher.md",
+      "field": "organization",
+      "index": 0,
+      "target": "aria",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/kevin-brodsky.md",
+      "field": "organization",
+      "index": 0,
+      "target": "arm",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/louis-emile-ploix.md",
+      "field": "organization",
+      "index": 0,
+      "target": "lowrisc",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/luca-muller.md",
+      "field": "organization",
+      "index": 0,
+      "target": "german-research-center-for-artificial-intelligence-dfki",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/maika-fohrenbach.md",
+      "field": "organization",
+      "index": 0,
+      "target": "european-commission-dg-connect",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/manu-ravishankar.md",
+      "field": "organization",
+      "index": 0,
+      "target": "pa-consulting",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/mark-batty.md",
+      "field": "organization",
+      "index": 0,
+      "target": "university-of-kent",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/mark-hill.md",
+      "field": "organization",
+      "index": 0,
+      "target": "codasip",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/marno-van-der-maas.md",
+      "field": "organization",
+      "index": 0,
+      "target": "lowrisc",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/martin-atkins.md",
+      "field": "organization",
+      "index": 0,
+      "target": "mission-critical-applications-limited",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/merve-gulmez.md",
+      "field": "organization",
+      "index": 0,
+      "target": "ericsson",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/mike-eftimakis.md",
+      "field": "organization",
+      "index": 0,
+      "target": "cheri-alliance",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/mike-halsall.md",
+      "field": "organization",
+      "index": 0,
+      "target": "cheri-alliance",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/murali-vijayaraghavan.md",
+      "field": "organization",
+      "index": 0,
+      "target": "google",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/murat-cakmak.md",
+      "field": "organization",
+      "index": 0,
+      "target": "microservice-store",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/ollie-whitehouse.md",
+      "field": "organization",
+      "index": 0,
+      "target": "ncsc",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/paul-metzger.md",
+      "field": "organization",
+      "index": 0,
+      "target": "university-of-cambridge",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/paul-waller.md",
+      "field": "organization",
+      "index": 0,
+      "target": "ncsc",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/peter-cox.md",
+      "field": "organization",
+      "index": 0,
+      "target": "um-labs",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/phil-day.md",
+      "field": "organization",
+      "index": 0,
+      "target": "configured-things",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/robert-watson.md",
+      "field": "organization",
+      "index": 0,
+      "target": "cheri-alliance",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/robert-watson.md",
+      "field": "organization",
+      "index": 1,
+      "target": "university-of-cambridge",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/sam-cater.md",
+      "field": "organization",
+      "index": 0,
+      "target": "bt-group",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/samuel-stark.md",
+      "field": "organization",
+      "index": 0,
+      "target": "university-of-cambridge",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/simon-moore.md",
+      "field": "organization",
+      "index": 0,
+      "target": "university-of-cambridge",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/tariq-kurd.md",
+      "field": "organization",
+      "index": 0,
+      "target": "codasip",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/thomas-nyman.md",
+      "field": "organization",
+      "index": 0,
+      "target": "ericsson",
+      "resolves": true,
+      "has_source_evidence": true
+    },
+    {
+      "path": "_people/tora-fridholm.md",
+      "field": "organization",
+      "index": 0,
+      "target": "codasip",
+      "resolves": true,
+      "has_source_evidence": true
+    }
+  ],
+  "board": [
+    {
+      "id": "mike-eftimakis",
+      "resolves": true
+    },
+    {
+      "id": "andrew-lindsay",
+      "resolves": true
+    },
+    {
+      "id": "david-chisnall",
+      "resolves": true
+    },
+    {
+      "id": "sam-cater",
+      "resolves": true
+    },
+    {
+      "id": "adam-finney",
+      "resolves": true
+    },
+    {
+      "id": "simon-moore",
+      "resolves": true
+    },
+    {
+      "id": "alex-richardson",
+      "resolves": true
+    },
+    {
+      "id": "allison-randal",
+      "resolves": true
+    },
+    {
+      "id": "paul-waller",
+      "resolves": true
+    }
+  ],
+  "proof_count": 478
+}

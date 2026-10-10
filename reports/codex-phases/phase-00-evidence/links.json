@@ -1,0 +1,12 @@
+{
+  "html_files": 481,
+  "local_references": 59769,
+  "stylesheet_references": 7,
+  "errors": [
+    {
+      "path": "404.html",
+      "url": "/search/",
+      "reason": "missing local target"
+    }
+  ]
+}

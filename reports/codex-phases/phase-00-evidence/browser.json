@@ -1,0 +1,1926 @@
+{
+  "observations": [
+    {
+      "route": "/",
+      "width": 375,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "dark",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "dark",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/",
+      "width": 1024,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "dark",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "dark",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/alliance/leadership/governing-board/",
+      "width": 375,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/alliance/leadership/governing-board/",
+      "width": 768,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/alliance/leadership/governing-board/",
+      "width": 1024,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/alliance/leadership/governing-board/",
+      "width": 1440,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/alliance/leadership/members/",
+      "width": 375,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/alliance/leadership/members/",
+      "width": 768,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/alliance/leadership/members/",
+      "width": 1024,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/alliance/leadership/members/",
+      "width": 1440,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/news-and-events/people-and-opportunities/speakers/",
+      "width": 375,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/news-and-events/people-and-opportunities/speakers/",
+      "width": 768,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/news-and-events/people-and-opportunities/speakers/",
+      "width": 1024,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/news-and-events/people-and-opportunities/speakers/",
+      "width": 1440,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/people/robert-watson/",
+      "width": 375,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/people/robert-watson/",
+      "width": 768,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/people/robert-watson/",
+      "width": 1024,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/people/robert-watson/",
+      "width": 1440,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/people/anthony-fox/",
+      "width": 375,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 2,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/people/anthony-fox/",
+      "width": 768,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 2,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/people/anthony-fox/",
+      "width": 1024,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 2,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/people/anthony-fox/",
+      "width": 1440,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 2,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/organisations/codasip/",
+      "width": 375,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/organisations/codasip/",
+      "width": 768,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/organisations/codasip/",
+      "width": 1024,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/organisations/codasip/",
+      "width": 1440,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/news/one-bug-is-all-it-takes/",
+      "width": 375,
+      "http_status": 200,
+      "overflow": true,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/news/one-bug-is-all-it-takes/",
+      "width": 768,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/news/one-bug-is-all-it-takes/",
+      "width": 1024,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/news/one-bug-is-all-it-takes/",
+      "width": 1440,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/news/beyond-software-patching/",
+      "width": 375,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 2,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/news/beyond-software-patching/",
+      "width": 768,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 2,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/news/beyond-software-patching/",
+      "width": 1024,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 2,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/news/beyond-software-patching/",
+      "width": 1440,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 2,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/events/cheri-blossoms-conference-2026/",
+      "width": 375,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/events/cheri-blossoms-conference-2026/",
+      "width": 768,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/events/cheri-blossoms-conference-2026/",
+      "width": 1024,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/events/cheri-blossoms-conference-2026/",
+      "width": 1440,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/papers/cheri-concentrate-practical-compressed-capabilities/",
+      "width": 375,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/papers/cheri-concentrate-practical-compressed-capabilities/",
+      "width": 768,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/papers/cheri-concentrate-practical-compressed-capabilities/",
+      "width": 1024,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/papers/cheri-concentrate-practical-compressed-capabilities/",
+      "width": 1440,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/build/platforms/platform-comparison/",
+      "width": 375,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/build/platforms/platform-comparison/",
+      "width": 768,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/build/platforms/platform-comparison/",
+      "width": 1024,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/build/platforms/platform-comparison/",
+      "width": 1440,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/alliance/membership/contact/",
+      "width": 375,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/alliance/membership/contact/",
+      "width": 768,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/alliance/membership/contact/",
+      "width": 1024,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/alliance/membership/contact/",
+      "width": 1440,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/news-and-events/news-and-analysis/subscribe-newsletter/",
+      "width": 375,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/news-and-events/news-and-analysis/subscribe-newsletter/",
+      "width": 768,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/news-and-events/news-and-analysis/subscribe-newsletter/",
+      "width": 1024,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    },
+    {
+      "route": "/news-and-events/news-and-analysis/subscribe-newsletter/",
+      "width": 1440,
+      "http_status": 200,
+      "overflow": false,
+      "h1_count": 1,
+      "body_theme": "light",
+      "broken_images": [],
+      "faded_images": [],
+      "poppins_loaded": true,
+      "square_portraits": 0,
+      "native_where_next": 0,
+      "native_sliders": 0,
+      "active_form_elements": 0,
+      "javascript_errors": []
+    }
+  ],
+  "style_comparisons": [
+    {
+      "theme": "dark",
+      "width": 375,
+      "actual": {
+        "body": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "color": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(7, 19, 27)"
+        },
+        "body::before": {
+          "opacity": "0.48",
+          "backgroundRepeat": "repeat",
+          "backgroundSize": "auto"
+        },
+        "header": {
+          "backgroundColor": "rgba(16, 40, 50, 0.94)",
+          "paddingLeft": "20px",
+          "paddingRight": "20px"
+        },
+        ".brand img": {
+          "maxWidth": "144px",
+          "height": "48px"
+        },
+        "main": {
+          "backgroundColor": "rgba(7, 21, 30, 0.9)",
+          "maxWidth": "1264px",
+          "paddingLeft": "20px",
+          "paddingRight": "20px"
+        },
+        ".hero": {
+          "backgroundColor": "rgba(30, 94, 122, 0.6)",
+          "paddingLeft": "20px",
+          "paddingRight": "20px",
+          "paddingTop": "48px",
+          "paddingBottom": "48px"
+        },
+        ".hero h1": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "40px",
+          "fontWeight": "600",
+          "lineHeight": "42px",
+          "letterSpacing": "-2.2px",
+          "color": "rgb(255, 255, 255)"
+        },
+        ".hero-intro > p": {
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "color": "rgb(255, 255, 255)"
+        },
+        ".card": {
+          "backgroundColor": "rgba(45, 96, 121, 0.6)",
+          "paddingLeft": "24px",
+          "paddingRight": "24px"
+        },
+        "footer": {
+          "backgroundColor": "rgba(8, 35, 47, 0.82)",
+          "color": "rgb(255, 255, 255)"
+        }
+      },
+      "reference": {
+        "body": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "color": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(7, 19, 27)"
+        },
+        "body::before": {
+          "opacity": "0.48",
+          "backgroundRepeat": "repeat",
+          "backgroundSize": "auto"
+        },
+        "header": {
+          "backgroundColor": "rgba(16, 40, 50, 0.94)",
+          "paddingLeft": "20px",
+          "paddingRight": "20px"
+        },
+        ".brand img": {
+          "maxWidth": "144px",
+          "height": "48px"
+        },
+        "main": {
+          "backgroundColor": "rgba(7, 21, 30, 0.9)",
+          "maxWidth": "1264px",
+          "paddingLeft": "20px",
+          "paddingRight": "20px"
+        },
+        ".hero": {
+          "backgroundColor": "rgba(30, 94, 122, 0.6)",
+          "paddingLeft": "20px",
+          "paddingRight": "20px",
+          "paddingTop": "48px",
+          "paddingBottom": "48px"
+        },
+        ".hero h1": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "40px",
+          "fontWeight": "600",
+          "lineHeight": "42px",
+          "letterSpacing": "-2.2px",
+          "color": "rgb(255, 255, 255)"
+        },
+        ".hero-intro > p": {
+          "fontSize": "18px",
+          "lineHeight": "27px",
+          "color": "rgb(255, 255, 255)"
+        },
+        ".card": {
+          "backgroundColor": "rgba(45, 96, 121, 0.6)",
+          "paddingLeft": "24px",
+          "paddingRight": "24px"
+        },
+        "footer": {
+          "backgroundColor": "rgba(8, 35, 47, 0.82)",
+          "color": "rgb(255, 255, 255)"
+        }
+      },
+      "different_selectors": [
+        ".hero-intro > p"
+      ]
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "actual": {
+        "body": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "color": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(7, 19, 27)"
+        },
+        "body::before": {
+          "opacity": "0.48",
+          "backgroundRepeat": "repeat",
+          "backgroundSize": "auto"
+        },
+        "header": {
+          "backgroundColor": "rgba(16, 40, 50, 0.94)",
+          "paddingLeft": "32px",
+          "paddingRight": "32px"
+        },
+        ".brand img": {
+          "maxWidth": "144px",
+          "height": "48px"
+        },
+        "main": {
+          "backgroundColor": "rgba(7, 21, 30, 0.9)",
+          "maxWidth": "1264px",
+          "paddingLeft": "32px",
+          "paddingRight": "32px"
+        },
+        ".hero": {
+          "backgroundColor": "rgba(30, 94, 122, 0.6)",
+          "paddingLeft": "32px",
+          "paddingRight": "32px",
+          "paddingTop": "64px",
+          "paddingBottom": "64px"
+        },
+        ".hero h1": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "48px",
+          "fontWeight": "600",
+          "lineHeight": "50.4px",
+          "letterSpacing": "-2.64px",
+          "color": "rgb(255, 255, 255)"
+        },
+        ".hero-intro > p": {
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "color": "rgb(255, 255, 255)"
+        },
+        ".card": {
+          "backgroundColor": "rgba(45, 96, 121, 0.6)",
+          "paddingLeft": "24px",
+          "paddingRight": "24px"
+        },
+        "footer": {
+          "backgroundColor": "rgba(8, 35, 47, 0.82)",
+          "color": "rgb(255, 255, 255)"
+        }
+      },
+      "reference": {
+        "body": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "color": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(7, 19, 27)"
+        },
+        "body::before": {
+          "opacity": "0.48",
+          "backgroundRepeat": "repeat",
+          "backgroundSize": "auto"
+        },
+        "header": {
+          "backgroundColor": "rgba(16, 40, 50, 0.94)",
+          "paddingLeft": "32px",
+          "paddingRight": "32px"
+        },
+        ".brand img": {
+          "maxWidth": "144px",
+          "height": "48px"
+        },
+        "main": {
+          "backgroundColor": "rgba(7, 21, 30, 0.9)",
+          "maxWidth": "1264px",
+          "paddingLeft": "32px",
+          "paddingRight": "32px"
+        },
+        ".hero": {
+          "backgroundColor": "rgba(30, 94, 122, 0.6)",
+          "paddingLeft": "32px",
+          "paddingRight": "32px",
+          "paddingTop": "64px",
+          "paddingBottom": "64px"
+        },
+        ".hero h1": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "48px",
+          "fontWeight": "600",
+          "lineHeight": "50.4px",
+          "letterSpacing": "-2.64px",
+          "color": "rgb(255, 255, 255)"
+        },
+        ".hero-intro > p": {
+          "fontSize": "18px",
+          "lineHeight": "27px",
+          "color": "rgb(255, 255, 255)"
+        },
+        ".card": {
+          "backgroundColor": "rgba(45, 96, 121, 0.6)",
+          "paddingLeft": "24px",
+          "paddingRight": "24px"
+        },
+        "footer": {
+          "backgroundColor": "rgba(8, 35, 47, 0.82)",
+          "color": "rgb(255, 255, 255)"
+        }
+      },
+      "different_selectors": [
+        ".hero-intro > p"
+      ]
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "actual": {
+        "body": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "color": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(7, 19, 27)"
+        },
+        "body::before": {
+          "opacity": "0.48",
+          "backgroundRepeat": "repeat",
+          "backgroundSize": "auto"
+        },
+        "header": {
+          "backgroundColor": "rgba(16, 40, 50, 0.94)",
+          "paddingLeft": "32px",
+          "paddingRight": "32px"
+        },
+        ".brand img": {
+          "maxWidth": "144px",
+          "height": "48px"
+        },
+        "main": {
+          "backgroundColor": "rgba(7, 21, 30, 0.9)",
+          "maxWidth": "1264px",
+          "paddingLeft": "32px",
+          "paddingRight": "32px"
+        },
+        ".hero": {
+          "backgroundColor": "rgba(30, 94, 122, 0.6)",
+          "paddingLeft": "32px",
+          "paddingRight": "32px",
+          "paddingTop": "64px",
+          "paddingBottom": "64px"
+        },
+        ".hero h1": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "61.44px",
+          "fontWeight": "600",
+          "lineHeight": "64.512px",
+          "letterSpacing": "-3.3792px",
+          "color": "rgb(255, 255, 255)"
+        },
+        ".hero-intro > p": {
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "color": "rgb(255, 255, 255)"
+        },
+        ".card": {
+          "backgroundColor": "rgba(45, 96, 121, 0.6)",
+          "paddingLeft": "24px",
+          "paddingRight": "24px"
+        },
+        "footer": {
+          "backgroundColor": "rgba(8, 35, 47, 0.82)",
+          "color": "rgb(255, 255, 255)"
+        }
+      },
+      "reference": {
+        "body": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "color": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(7, 19, 27)"
+        },
+        "body::before": {
+          "opacity": "0.48",
+          "backgroundRepeat": "repeat",
+          "backgroundSize": "auto"
+        },
+        "header": {
+          "backgroundColor": "rgba(16, 40, 50, 0.94)",
+          "paddingLeft": "32px",
+          "paddingRight": "32px"
+        },
+        ".brand img": {
+          "maxWidth": "144px",
+          "height": "48px"
+        },
+        "main": {
+          "backgroundColor": "rgba(7, 21, 30, 0.9)",
+          "maxWidth": "1264px",
+          "paddingLeft": "32px",
+          "paddingRight": "32px"
+        },
+        ".hero": {
+          "backgroundColor": "rgba(30, 94, 122, 0.6)",
+          "paddingLeft": "32px",
+          "paddingRight": "32px",
+          "paddingTop": "64px",
+          "paddingBottom": "64px"
+        },
+        ".hero h1": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "61.44px",
+          "fontWeight": "600",
+          "lineHeight": "64.512px",
+          "letterSpacing": "-3.3792px",
+          "color": "rgb(255, 255, 255)"
+        },
+        ".hero-intro > p": {
+          "fontSize": "20px",
+          "lineHeight": "30px",
+          "color": "rgb(255, 255, 255)"
+        },
+        ".card": {
+          "backgroundColor": "rgba(45, 96, 121, 0.6)",
+          "paddingLeft": "24px",
+          "paddingRight": "24px"
+        },
+        "footer": {
+          "backgroundColor": "rgba(8, 35, 47, 0.82)",
+          "color": "rgb(255, 255, 255)"
+        }
+      },
+      "different_selectors": [
+        ".hero-intro > p"
+      ]
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "actual": {
+        "body": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "color": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(7, 19, 27)"
+        },
+        "body::before": {
+          "opacity": "0.48",
+          "backgroundRepeat": "repeat",
+          "backgroundSize": "auto"
+        },
+        "header": {
+          "backgroundColor": "rgba(16, 40, 50, 0.94)",
+          "paddingLeft": "32px",
+          "paddingRight": "32px"
+        },
+        ".brand img": {
+          "maxWidth": "144px",
+          "height": "48px"
+        },
+        "main": {
+          "backgroundColor": "rgba(7, 21, 30, 0.9)",
+          "maxWidth": "1264px",
+          "paddingLeft": "32px",
+          "paddingRight": "32px"
+        },
+        ".hero": {
+          "backgroundColor": "rgba(30, 94, 122, 0.6)",
+          "paddingLeft": "32px",
+          "paddingRight": "32px",
+          "paddingTop": "64px",
+          "paddingBottom": "64px"
+        },
+        ".hero h1": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "86.4px",
+          "fontWeight": "600",
+          "lineHeight": "90.72px",
+          "letterSpacing": "-4.752px",
+          "color": "rgb(255, 255, 255)"
+        },
+        ".hero-intro > p": {
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "color": "rgb(255, 255, 255)"
+        },
+        ".card": {
+          "backgroundColor": "rgba(45, 96, 121, 0.6)",
+          "paddingLeft": "32px",
+          "paddingRight": "32px"
+        },
+        "footer": {
+          "backgroundColor": "rgba(8, 35, 47, 0.82)",
+          "color": "rgb(255, 255, 255)"
+        }
+      },
+      "reference": {
+        "body": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "color": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(7, 19, 27)"
+        },
+        "body::before": {
+          "opacity": "0.48",
+          "backgroundRepeat": "repeat",
+          "backgroundSize": "auto"
+        },
+        "header": {
+          "backgroundColor": "rgba(16, 40, 50, 0.94)",
+          "paddingLeft": "32px",
+          "paddingRight": "32px"
+        },
+        ".brand img": {
+          "maxWidth": "144px",
+          "height": "48px"
+        },
+        "main": {
+          "backgroundColor": "rgba(7, 21, 30, 0.9)",
+          "maxWidth": "1264px",
+          "paddingLeft": "32px",
+          "paddingRight": "32px"
+        },
+        ".hero": {
+          "backgroundColor": "rgba(30, 94, 122, 0.6)",
+          "paddingLeft": "32px",
+          "paddingRight": "32px",
+          "paddingTop": "64px",
+          "paddingBottom": "64px"
+        },
+        ".hero h1": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "86.4px",
+          "fontWeight": "600",
+          "lineHeight": "90.72px",
+          "letterSpacing": "-4.752px",
+          "color": "rgb(255, 255, 255)"
+        },
+        ".hero-intro > p": {
+          "fontSize": "20px",
+          "lineHeight": "30px",
+          "color": "rgb(255, 255, 255)"
+        },
+        ".card": {
+          "backgroundColor": "rgba(45, 96, 121, 0.6)",
+          "paddingLeft": "32px",
+          "paddingRight": "32px"
+        },
+        "footer": {
+          "backgroundColor": "rgba(8, 35, 47, 0.82)",
+          "color": "rgb(255, 255, 255)"
+        }
+      },
+      "different_selectors": [
+        ".hero-intro > p"
+      ]
+    },
+    {
+      "theme": "light",
+      "width": 375,
+      "actual": {
+        "body": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "color": "rgb(20, 20, 20)",
+          "backgroundColor": "rgb(240, 243, 245)"
+        },
+        "body::before": {
+          "opacity": "0.32",
+          "backgroundRepeat": "repeat",
+          "backgroundSize": "auto"
+        },
+        "header": {
+          "backgroundColor": "rgba(255, 255, 255, 0.94)",
+          "paddingLeft": "20px",
+          "paddingRight": "20px"
+        },
+        ".brand img": {
+          "maxWidth": "144px",
+          "height": "48px"
+        },
+        "main": {
+          "backgroundColor": "rgba(255, 255, 255, 0.46)",
+          "maxWidth": "1264px",
+          "paddingLeft": "20px",
+          "paddingRight": "20px"
+        },
+        ".hero": {
+          "backgroundColor": "rgba(142, 190, 212, 0.66)",
+          "paddingLeft": "20px",
+          "paddingRight": "20px",
+          "paddingTop": "48px",
+          "paddingBottom": "48px"
+        },
+        ".hero h1": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "36px",
+          "fontWeight": "600",
+          "lineHeight": "41.4px",
+          "letterSpacing": "-1.44px",
+          "color": "rgb(20, 20, 20)"
+        },
+        ".hero-intro > p": null,
+        ".card": {
+          "backgroundColor": "rgba(116, 167, 191, 0.62)",
+          "paddingLeft": "24px",
+          "paddingRight": "24px"
+        },
+        "footer": {
+          "backgroundColor": "rgba(6, 44, 59, 0.82)",
+          "color": "rgb(255, 255, 255)"
+        }
+      },
+      "reference": {
+        "body": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "color": "rgb(20, 20, 20)",
+          "backgroundColor": "rgb(240, 243, 245)"
+        },
+        "body::before": {
+          "opacity": "0.32",
+          "backgroundRepeat": "repeat",
+          "backgroundSize": "auto"
+        },
+        "header": {
+          "backgroundColor": "rgba(255, 255, 255, 0.94)",
+          "paddingLeft": "20px",
+          "paddingRight": "20px"
+        },
+        ".brand img": {
+          "maxWidth": "144px",
+          "height": "48px"
+        },
+        "main": {
+          "backgroundColor": "rgba(255, 255, 255, 0.46)",
+          "maxWidth": "1264px",
+          "paddingLeft": "20px",
+          "paddingRight": "20px"
+        },
+        ".hero": {
+          "backgroundColor": "rgba(142, 190, 212, 0.66)",
+          "paddingLeft": "20px",
+          "paddingRight": "20px",
+          "paddingTop": "16px",
+          "paddingBottom": "48px"
+        },
+        ".hero h1": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "36px",
+          "fontWeight": "600",
+          "lineHeight": "41.4px",
+          "letterSpacing": "-1.44px",
+          "color": "rgb(20, 20, 20)"
+        },
+        ".hero-intro > p": {
+          "fontSize": "18px",
+          "lineHeight": "27px",
+          "color": "rgb(20, 20, 20)"
+        },
+        ".card": {
+          "backgroundColor": "rgba(116, 167, 191, 0.62)",
+          "paddingLeft": "24px",
+          "paddingRight": "24px"
+        },
+        "footer": {
+          "backgroundColor": "rgba(6, 44, 59, 0.82)",
+          "color": "rgb(255, 255, 255)"
+        }
+      },
+      "different_selectors": [
+        ".hero",
+        ".hero-intro > p"
+      ]
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "actual": {
+        "body": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "color": "rgb(20, 20, 20)",
+          "backgroundColor": "rgb(240, 243, 245)"
+        },
+        "body::before": {
+          "opacity": "0.32",
+          "backgroundRepeat": "repeat",
+          "backgroundSize": "auto"
+        },
+        "header": {
+          "backgroundColor": "rgba(255, 255, 255, 0.94)",
+          "paddingLeft": "32px",
+          "paddingRight": "32px"
+        },
+        ".brand img": {
+          "maxWidth": "144px",
+          "height": "48px"
+        },
+        "main": {
+          "backgroundColor": "rgba(255, 255, 255, 0.46)",
+          "maxWidth": "1264px",
+          "paddingLeft": "32px",
+          "paddingRight": "32px"
+        },
+        ".hero": {
+          "backgroundColor": "rgba(142, 190, 212, 0.66)",
+          "paddingLeft": "32px",
+          "paddingRight": "32px",
+          "paddingTop": "64px",
+          "paddingBottom": "64px"
+        },
+        ".hero h1": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "38.4px",
+          "fontWeight": "600",
+          "lineHeight": "44.16px",
+          "letterSpacing": "-1.536px",
+          "color": "rgb(20, 20, 20)"
+        },
+        ".hero-intro > p": null,
+        ".card": {
+          "backgroundColor": "rgba(116, 167, 191, 0.62)",
+          "paddingLeft": "24px",
+          "paddingRight": "24px"
+        },
+        "footer": {
+          "backgroundColor": "rgba(6, 44, 59, 0.82)",
+          "color": "rgb(255, 255, 255)"
+        }
+      },
+      "reference": {
+        "body": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "color": "rgb(20, 20, 20)",
+          "backgroundColor": "rgb(240, 243, 245)"
+        },
+        "body::before": {
+          "opacity": "0.32",
+          "backgroundRepeat": "repeat",
+          "backgroundSize": "auto"
+        },
+        "header": {
+          "backgroundColor": "rgba(255, 255, 255, 0.94)",
+          "paddingLeft": "32px",
+          "paddingRight": "32px"
+        },
+        ".brand img": {
+          "maxWidth": "144px",
+          "height": "48px"
+        },
+        "main": {
+          "backgroundColor": "rgba(255, 255, 255, 0.46)",
+          "maxWidth": "1264px",
+          "paddingLeft": "32px",
+          "paddingRight": "32px"
+        },
+        ".hero": {
+          "backgroundColor": "rgba(142, 190, 212, 0.66)",
+          "paddingLeft": "32px",
+          "paddingRight": "32px",
+          "paddingTop": "16px",
+          "paddingBottom": "64px"
+        },
+        ".hero h1": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "38.4px",
+          "fontWeight": "600",
+          "lineHeight": "44.16px",
+          "letterSpacing": "-1.536px",
+          "color": "rgb(20, 20, 20)"
+        },
+        ".hero-intro > p": {
+          "fontSize": "18px",
+          "lineHeight": "27px",
+          "color": "rgb(20, 20, 20)"
+        },
+        ".card": {
+          "backgroundColor": "rgba(116, 167, 191, 0.62)",
+          "paddingLeft": "24px",
+          "paddingRight": "24px"
+        },
+        "footer": {
+          "backgroundColor": "rgba(6, 44, 59, 0.82)",
+          "color": "rgb(255, 255, 255)"
+        }
+      },
+      "different_selectors": [
+        ".hero",
+        ".hero-intro > p"
+      ]
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "actual": {
+        "body": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "color": "rgb(20, 20, 20)",
+          "backgroundColor": "rgb(240, 243, 245)"
+        },
+        "body::before": {
+          "opacity": "0.32",
+          "backgroundRepeat": "repeat",
+          "backgroundSize": "auto"
+        },
+        "header": {
+          "backgroundColor": "rgba(255, 255, 255, 0.94)",
+          "paddingLeft": "32px",
+          "paddingRight": "32px"
+        },
+        ".brand img": {
+          "maxWidth": "144px",
+          "height": "48px"
+        },
+        "main": {
+          "backgroundColor": "rgba(255, 255, 255, 0.46)",
+          "maxWidth": "1264px",
+          "paddingLeft": "32px",
+          "paddingRight": "32px"
+        },
+        ".hero": {
+          "backgroundColor": "rgba(142, 190, 212, 0.66)",
+          "paddingLeft": "32px",
+          "paddingRight": "32px",
+          "paddingTop": "64px",
+          "paddingBottom": "64px"
+        },
+        ".hero h1": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "51.2px",
+          "fontWeight": "600",
+          "lineHeight": "58.88px",
+          "letterSpacing": "-2.048px",
+          "color": "rgb(20, 20, 20)"
+        },
+        ".hero-intro > p": null,
+        ".card": {
+          "backgroundColor": "rgba(116, 167, 191, 0.62)",
+          "paddingLeft": "24px",
+          "paddingRight": "24px"
+        },
+        "footer": {
+          "backgroundColor": "rgba(6, 44, 59, 0.82)",
+          "color": "rgb(255, 255, 255)"
+        }
+      },
+      "reference": {
+        "body": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "color": "rgb(20, 20, 20)",
+          "backgroundColor": "rgb(240, 243, 245)"
+        },
+        "body::before": {
+          "opacity": "0.32",
+          "backgroundRepeat": "repeat",
+          "backgroundSize": "auto"
+        },
+        "header": {
+          "backgroundColor": "rgba(255, 255, 255, 0.94)",
+          "paddingLeft": "32px",
+          "paddingRight": "32px"
+        },
+        ".brand img": {
+          "maxWidth": "144px",
+          "height": "48px"
+        },
+        "main": {
+          "backgroundColor": "rgba(255, 255, 255, 0.46)",
+          "maxWidth": "1264px",
+          "paddingLeft": "32px",
+          "paddingRight": "32px"
+        },
+        ".hero": {
+          "backgroundColor": "rgba(142, 190, 212, 0.66)",
+          "paddingLeft": "32px",
+          "paddingRight": "32px",
+          "paddingTop": "16px",
+          "paddingBottom": "64px"
+        },
+        ".hero h1": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "51.2px",
+          "fontWeight": "600",
+          "lineHeight": "58.88px",
+          "letterSpacing": "-2.048px",
+          "color": "rgb(20, 20, 20)"
+        },
+        ".hero-intro > p": {
+          "fontSize": "20px",
+          "lineHeight": "30px",
+          "color": "rgb(20, 20, 20)"
+        },
+        ".card": {
+          "backgroundColor": "rgba(116, 167, 191, 0.62)",
+          "paddingLeft": "24px",
+          "paddingRight": "24px"
+        },
+        "footer": {
+          "backgroundColor": "rgba(6, 44, 59, 0.82)",
+          "color": "rgb(255, 255, 255)"
+        }
+      },
+      "different_selectors": [
+        ".hero",
+        ".hero-intro > p"
+      ]
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "actual": {
+        "body": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "color": "rgb(20, 20, 20)",
+          "backgroundColor": "rgb(240, 243, 245)"
+        },
+        "body::before": {
+          "opacity": "0.32",
+          "backgroundRepeat": "repeat",
+          "backgroundSize": "auto"
+        },
+        "header": {
+          "backgroundColor": "rgba(255, 255, 255, 0.94)",
+          "paddingLeft": "32px",
+          "paddingRight": "32px"
+        },
+        ".brand img": {
+          "maxWidth": "144px",
+          "height": "48px"
+        },
+        "main": {
+          "backgroundColor": "rgba(255, 255, 255, 0.46)",
+          "maxWidth": "1264px",
+          "paddingLeft": "32px",
+          "paddingRight": "32px"
+        },
+        ".hero": {
+          "backgroundColor": "rgba(142, 190, 212, 0.66)",
+          "paddingLeft": "32px",
+          "paddingRight": "32px",
+          "paddingTop": "64px",
+          "paddingBottom": "64px"
+        },
+        ".hero h1": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "52px",
+          "fontWeight": "600",
+          "lineHeight": "59.8px",
+          "letterSpacing": "-2.08px",
+          "color": "rgb(20, 20, 20)"
+        },
+        ".hero-intro > p": null,
+        ".card": {
+          "backgroundColor": "rgba(116, 167, 191, 0.62)",
+          "paddingLeft": "32px",
+          "paddingRight": "32px"
+        },
+        "footer": {
+          "backgroundColor": "rgba(6, 44, 59, 0.82)",
+          "color": "rgb(255, 255, 255)"
+        }
+      },
+      "reference": {
+        "body": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "color": "rgb(20, 20, 20)",
+          "backgroundColor": "rgb(240, 243, 245)"
+        },
+        "body::before": {
+          "opacity": "0.32",
+          "backgroundRepeat": "repeat",
+          "backgroundSize": "auto"
+        },
+        "header": {
+          "backgroundColor": "rgba(255, 255, 255, 0.94)",
+          "paddingLeft": "32px",
+          "paddingRight": "32px"
+        },
+        ".brand img": {
+          "maxWidth": "144px",
+          "height": "48px"
+        },
+        "main": {
+          "backgroundColor": "rgba(255, 255, 255, 0.46)",
+          "maxWidth": "1264px",
+          "paddingLeft": "32px",
+          "paddingRight": "32px"
+        },
+        ".hero": {
+          "backgroundColor": "rgba(142, 190, 212, 0.66)",
+          "paddingLeft": "32px",
+          "paddingRight": "32px",
+          "paddingTop": "16px",
+          "paddingBottom": "64px"
+        },
+        ".hero h1": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "52px",
+          "fontWeight": "600",
+          "lineHeight": "59.8px",
+          "letterSpacing": "-2.08px",
+          "color": "rgb(20, 20, 20)"
+        },
+        ".hero-intro > p": {
+          "fontSize": "20px",
+          "lineHeight": "30px",
+          "color": "rgb(20, 20, 20)"
+        },
+        ".card": {
+          "backgroundColor": "rgba(116, 167, 191, 0.62)",
+          "paddingLeft": "32px",
+          "paddingRight": "32px"
+        },
+        "footer": {
+          "backgroundColor": "rgba(6, 44, 59, 0.82)",
+          "color": "rgb(255, 255, 255)"
+        }
+      },
+      "different_selectors": [
+        ".hero",
+        ".hero-intro > p"
+      ]
+    }
+  ],
+  "flows": [
+    {
+      "flow": "keyboard mobile navigation",
+      "menu_opened": true,
+      "submenu_opened": true,
+      "submenu_closed_on_escape": true
+    },
+    {
+      "flow": "image dialog",
+      "opened": true,
+      "closed_on_escape": true,
+      "focus_returned": true
+    },
+    {
+      "flow": "no JavaScript",
+      "route": "/people/",
+      "http_status": 200,
+      "visible_main": true,
+      "cards": 112,
+      "submitting_forms": 0
+    },
+    {
+      "flow": "no JavaScript",
+      "route": "/alliance/leadership/members/",
+      "http_status": 200,
+      "visible_main": true,
+      "cards": 52,
+      "submitting_forms": 0
+    },
+    {
+      "flow": "no JavaScript",
+      "route": "/alliance/membership/contact/",
+      "http_status": 200,
+      "visible_main": true,
+      "cards": 0,
+      "submitting_forms": 0
+    },
+    {
+      "flow": "no JavaScript",
+      "route": "/news-and-events/news-and-analysis/subscribe-newsletter/",
+      "http_status": 200,
+      "visible_main": true,
+      "cards": 0,
+      "submitting_forms": 0
+    }
+  ],
+  "limits": [
+    "14 representative routes, not every page.",
+    "Production slider has no data: autoplay/reduced-motion/hidden-tab behavior untestable.",
+    "No form submitted. External browser requests blocked.",
+    "ZIP reference output uses the same local Poppins; original archive remains unchanged."
+  ]
+}

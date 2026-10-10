@@ -1,0 +1,22 @@
+[
+  {
+    "command": "CHERI_SITE_DESTINATION=/tmp/cheri-phase0-native-site /workspace/cheri-migration-venv/bin/python scripts/check_build.py",
+    "exit_code": 1,
+    "output": "Traceback (most recent call last):\n  File \"/workspace/adam-3bian.github.io/scripts/check_build.py\", line 15, in <module>\n    base=f'http://127.0.0.1:{server.server_port}'+metadata()['baseurl'].rstrip('/')\n                                                  ^^^^^^^^^^\n  File \"/workspace/adam-3bian.github.io/scripts/site_server.py\", line 11, in metadata\n    return json.loads((SITE / 'site-build.json').read_text())\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py\", line 1027, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py\", line 1013, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/tmp/cheri-phase0-native-site/site-build.json'\n"
+  },
+  {
+    "command": "CHERI_SITE_DESTINATION=/tmp/cheri-phase0-native-site /workspace/cheri-migration-venv/bin/python scripts/check_site_links.py",
+    "exit_code": 1,
+    "output": "Traceback (most recent call last):\n  File \"/workspace/adam-3bian.github.io/scripts/check_site_links.py\", line 9, in <module>\n    baseurl=metadata()['baseurl'].rstrip('/')\n            ^^^^^^^^^^\n  File \"/workspace/adam-3bian.github.io/scripts/site_server.py\", line 11, in metadata\n    return json.loads((SITE / 'site-build.json').read_text())\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py\", line 1027, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py\", line 1013, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/tmp/cheri-phase0-native-site/site-build.json'\n"
+  },
+  {
+    "command": "CHERI_SITE_DESTINATION=/tmp/cheri-phase0-native-site /workspace/cheri-migration-venv/bin/python scripts/check_website.py",
+    "exit_code": 1,
+    "output": "Traceback (most recent call last):\n  File \"/workspace/adam-3bian.github.io/scripts/check_website.py\", line 17, in <module>\n    config = metadata()\n             ^^^^^^^^^^\n  File \"/workspace/adam-3bian.github.io/scripts/site_server.py\", line 11, in metadata\n    return json.loads((SITE / 'site-build.json').read_text())\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py\", line 1027, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py\", line 1013, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/tmp/cheri-phase0-native-site/site-build.json'\n"
+  },
+  {
+    "command": "CHERI_SITE_DESTINATION=/tmp/cheri-phase0-native-site /workspace/cheri-migration-venv/bin/python scripts/check_theme.py",
+    "exit_code": 1,
+    "output": "Traceback (most recent call last):\n  File \"/workspace/adam-3bian.github.io/scripts/check_theme.py\", line 20, in <module>\n    assert hashlib.sha256((ROOT / item['path']).read_bytes()).hexdigest() == item['zip_sha256'], item['path']\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: _includes/header.html\n"
+  }
+]

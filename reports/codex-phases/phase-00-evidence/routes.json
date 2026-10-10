@@ -1,0 +1,1638 @@
+{
+  "redirects": [
+    {
+      "path": "alliance/build/index.html",
+      "refresh": "0;url=/build/",
+      "canonical": "https://adam-3bian.github.io/build/"
+    },
+    {
+      "path": "contact/index.html",
+      "refresh": "0;url=/alliance/membership/contact/",
+      "canonical": "https://adam-3bian.github.io/alliance/membership/contact/"
+    },
+    {
+      "path": "members/index.html",
+      "refresh": "0;url=/alliance/leadership/members/",
+      "canonical": "https://adam-3bian.github.io/alliance/leadership/members/"
+    },
+    {
+      "path": "speakers/index.html",
+      "refresh": "0;url=/news-and-events/people-and-opportunities/speakers/",
+      "canonical": "https://adam-3bian.github.io/news-and-events/people-and-opportunities/speakers/"
+    },
+    {
+      "path": "subscribe/index.html",
+      "refresh": "0;url=/news-and-events/news-and-analysis/subscribe-newsletter/",
+      "canonical": "https://adam-3bian.github.io/news-and-events/news-and-analysis/subscribe-newsletter/"
+    }
+  ],
+  "mapped_routes": [
+    {
+      "route": "/",
+      "exists": true
+    },
+    {
+      "route": "/CHERI-seL4-Exercises/",
+      "exists": true
+    },
+    {
+      "route": "/CHERI-seL4-Exercises/exercises/buffer-overflow-global/",
+      "exists": true
+    },
+    {
+      "route": "/adopt/assurance-and-adoption/about-cheri-enabled/",
+      "exists": true
+    },
+    {
+      "route": "/adopt/assurance-and-adoption/assurance-and-certification/",
+      "exists": true
+    },
+    {
+      "route": "/adopt/assurance-and-adoption/case-studies/",
+      "exists": true
+    },
+    {
+      "route": "/adopt/assurance-and-adoption/certification/",
+      "exists": true
+    },
+    {
+      "route": "/adopt/assurance-and-adoption/cheri-enabled-products/",
+      "exists": true
+    },
+    {
+      "route": "/adopt/assurance-and-adoption/procurement/",
+      "exists": true
+    },
+    {
+      "route": "/adopt/business-case/adoption-costs-and-migration/",
+      "exists": true
+    },
+    {
+      "route": "/adopt/business-case/cost-of-memory-unsafety/",
+      "exists": true
+    },
+    {
+      "route": "/adopt/business-case/return-on-security-investment/",
+      "exists": true
+    },
+    {
+      "route": "/adopt/business-case/the-business-case/",
+      "exists": true
+    },
+    {
+      "route": "/adopt/policy/critical-infrastructure-and-resilience/",
+      "exists": true
+    },
+    {
+      "route": "/adopt/policy/cybersecurity-regulation/",
+      "exists": true
+    },
+    {
+      "route": "/adopt/policy/government-guidance/",
+      "exists": true
+    },
+    {
+      "route": "/adopt/use-cases/automotive/",
+      "exists": true
+    },
+    {
+      "route": "/adopt/use-cases/cloud-and-data-centre/",
+      "exists": true
+    },
+    {
+      "route": "/adopt/use-cases/critical-infrastructure/",
+      "exists": true
+    },
+    {
+      "route": "/adopt/use-cases/defence-and-aerospace/",
+      "exists": true
+    },
+    {
+      "route": "/adopt/use-cases/iot-and-embedded/",
+      "exists": true
+    },
+    {
+      "route": "/adopt/use-cases/safety-critical-systems/",
+      "exists": true
+    },
+    {
+      "route": "/alliance/about-and-governance/accelerating-together/",
+      "exists": true
+    },
+    {
+      "route": "/alliance/about-and-governance/collaboration-principles/",
+      "exists": true
+    },
+    {
+      "route": "/alliance/about-and-governance/governance/",
+      "exists": true
+    },
+    {
+      "route": "/alliance/about-and-governance/mission-and-role/",
+      "exists": true
+    },
+    {
+      "route": "/alliance/leadership/ambassadors/",
+      "exists": true
+    },
+    {
+      "route": "/alliance/leadership/governing-board/",
+      "exists": true
+    },
+    {
+      "route": "/alliance/leadership/members/",
+      "exists": true
+    },
+    {
+      "route": "/alliance/leadership/working-groups/",
+      "exists": true
+    },
+    {
+      "route": "/alliance/membership/contact/",
+      "exists": true
+    },
+    {
+      "route": "/alliance/membership/membership-benefits-and-options/",
+      "exists": true
+    },
+    {
+      "route": "/alliance/membership/why-join/",
+      "exists": true
+    },
+    {
+      "route": "/build/platforms/cheri-products/",
+      "exists": true
+    },
+    {
+      "route": "/build/platforms/platform-comparison/",
+      "exists": true
+    },
+    {
+      "route": "/build/software-ecosystem/",
+      "exists": true
+    },
+    {
+      "route": "/build/technology/bounds/",
+      "exists": true
+    },
+    {
+      "route": "/build/technology/capabilities/",
+      "exists": true
+    },
+    {
+      "route": "/build/technology/cheri-and-rust-technical/",
+      "exists": true
+    },
+    {
+      "route": "/build/technology/compartmentalisation/",
+      "exists": true
+    },
+    {
+      "route": "/build/technology/hybrid-systems/",
+      "exists": true
+    },
+    {
+      "route": "/build/technology/permissions/",
+      "exists": true
+    },
+    {
+      "route": "/build/technology/provenance/",
+      "exists": true
+    },
+    {
+      "route": "/build/technology/pure-capability-systems/",
+      "exists": true
+    },
+    {
+      "route": "/build/technology/sealing/",
+      "exists": true
+    },
+    {
+      "route": "/build/technology/spatial-memory-safety/",
+      "exists": true
+    },
+    {
+      "route": "/build/technology/tags-and-validity/",
+      "exists": true
+    },
+    {
+      "route": "/build/technology/temporal-memory-safety/",
+      "exists": true
+    },
+    {
+      "route": "/code-of-conduct/",
+      "exists": true
+    },
+    {
+      "route": "/competition-law-statement/",
+      "exists": true
+    },
+    {
+      "route": "/discover/history/cambridge-and-sri/",
+      "exists": true
+    },
+    {
+      "route": "/discover/history/commercialisation/",
+      "exists": true
+    },
+    {
+      "route": "/discover/history/darpa-programmes/",
+      "exists": true
+    },
+    {
+      "route": "/discover/history/development-of-cheri/",
+      "exists": true
+    },
+    {
+      "route": "/discover/history/early-capability-systems/",
+      "exists": true
+    },
+    {
+      "route": "/discover/history/formation-of-the-cheri-alliance/",
+      "exists": true
+    },
+    {
+      "route": "/discover/history/future-direction/",
+      "exists": true
+    },
+    {
+      "route": "/discover/history/morello-history/",
+      "exists": true
+    },
+    {
+      "route": "/discover/history/risc-v-and-embedded-development/",
+      "exists": true
+    },
+    {
+      "route": "/discover/history/ukri-digital-security-by-design/",
+      "exists": true
+    },
+    {
+      "route": "/discover/resources/academic-papers/",
+      "exists": true
+    },
+    {
+      "route": "/discover/resources/digital-security-by-design-archive/",
+      "exists": true
+    },
+    {
+      "route": "/discover/resources/documentation-and-guides/",
+      "exists": true
+    },
+    {
+      "route": "/discover/resources/glossary/",
+      "exists": true
+    },
+    {
+      "route": "/discover/resources/reports-and-white-papers/",
+      "exists": true
+    },
+    {
+      "route": "/discover/resources/specifications/",
+      "exists": true
+    },
+    {
+      "route": "/discover/resources/videos-and-presentations/",
+      "exists": true
+    },
+    {
+      "route": "/discover/understand/adapt-products/",
+      "exists": true
+    },
+    {
+      "route": "/discover/understand/cheri-and-existing-software/",
+      "exists": true
+    },
+    {
+      "route": "/discover/understand/cheri-history/",
+      "exists": true
+    },
+    {
+      "route": "/discover/understand/faq/",
+      "exists": true
+    },
+    {
+      "route": "/discover/understand/how-does-cheri-work/",
+      "exists": true
+    },
+    {
+      "route": "/discover/why-cheri/approaches-to-memory-safety/",
+      "exists": true
+    },
+    {
+      "route": "/discover/why-cheri/cheri-and-rust/",
+      "exists": true
+    },
+    {
+      "route": "/discover/why-cheri/vulnerabilities-in-everyday-technology/",
+      "exists": true
+    },
+    {
+      "route": "/discover/why-cheri/why-cheri/",
+      "exists": true
+    },
+    {
+      "route": "/discover/why-cheri/why-existing-defences-are-not-enough/",
+      "exists": true
+    },
+    {
+      "route": "/events/cheri-blossoms-conference-2025/",
+      "exists": true
+    },
+    {
+      "route": "/events/cheri-blossoms-conference-2026/",
+      "exists": true
+    },
+    {
+      "route": "/events/cheri-blossoms-conference-2026/#recordings--slides",
+      "exists": true
+    },
+    {
+      "route": "/events/cheri-blossoms-conference-2027/",
+      "exists": true
+    },
+    {
+      "route": "/events/cheri-blossoms-tutorial-2026/",
+      "exists": true
+    },
+    {
+      "route": "/events/cheritech25-reloaded/",
+      "exists": true
+    },
+    {
+      "route": "/events/cheritech25/",
+      "exists": true
+    },
+    {
+      "route": "/events/cheritech26/",
+      "exists": true
+    },
+    {
+      "route": "/events/cybersecurity-by-design-conference-2024/",
+      "exists": true
+    },
+    {
+      "route": "/events/cybersecurity-by-design-conference-2024/#talks--slides",
+      "exists": true
+    },
+    {
+      "route": "/events/embedded-world-2026/",
+      "exists": true
+    },
+    {
+      "route": "/events/webinar-cheri-cra-compliance/",
+      "exists": true
+    },
+    {
+      "route": "/groups/certification-working-group/",
+      "exists": true
+    },
+    {
+      "route": "/groups/cheri-c-cplusplus/",
+      "exists": true
+    },
+    {
+      "route": "/groups/cheri-for-sel4/",
+      "exists": true
+    },
+    {
+      "route": "/groups/cheri-freertos/",
+      "exists": true
+    },
+    {
+      "route": "/groups/cheri-in-soc/",
+      "exists": true
+    },
+    {
+      "route": "/groups/cheri-linux-working-group/",
+      "exists": true
+    },
+    {
+      "route": "/groups/cheri-plus-safety/",
+      "exists": true
+    },
+    {
+      "route": "/groups/cheri-qemu/",
+      "exists": true
+    },
+    {
+      "route": "/groups/cheri-virtual-machines/",
+      "exists": true
+    },
+    {
+      "route": "/groups/cheri-zephyr/",
+      "exists": true
+    },
+    {
+      "route": "/groups/marketing/",
+      "exists": true
+    },
+    {
+      "route": "/groups/mmu-less-systems/",
+      "exists": true
+    },
+    {
+      "route": "/groups/os-support-and-portability/",
+      "exists": true
+    },
+    {
+      "route": "/groups/promotion-and-ambassador-program/",
+      "exists": true
+    },
+    {
+      "route": "/groups/repository-management/",
+      "exists": true
+    },
+    {
+      "route": "/groups/rust-plus-cheri/",
+      "exists": true
+    },
+    {
+      "route": "/guides/build-compartments/",
+      "exists": true
+    },
+    {
+      "route": "/guides/build-your-first-application/",
+      "exists": true
+    },
+    {
+      "route": "/guides/building-secure-software/",
+      "exists": true
+    },
+    {
+      "route": "/guides/choose-a-platform/",
+      "exists": true
+    },
+    {
+      "route": "/guides/downloads/",
+      "exists": true
+    },
+    {
+      "route": "/guides/install-a-toolchain/",
+      "exists": true
+    },
+    {
+      "route": "/guides/port-existing-software/",
+      "exists": true
+    },
+    {
+      "route": "/guides/run-cheri-in-simulation/",
+      "exists": true
+    },
+    {
+      "route": "/guides/technical-faq/",
+      "exists": true
+    },
+    {
+      "route": "/guides/tutorials-and-training/",
+      "exists": true
+    },
+    {
+      "route": "/hardware/cheriot-ibex/",
+      "exists": true
+    },
+    {
+      "route": "/hardware/cheriot/",
+      "exists": true
+    },
+    {
+      "route": "/hardware/fpga-platforms/",
+      "exists": true
+    },
+    {
+      "route": "/hardware/morello/",
+      "exists": true
+    },
+    {
+      "route": "/hardware/sonata/",
+      "exists": true
+    },
+    {
+      "route": "/hardware/x730/",
+      "exists": true
+    },
+    {
+      "route": "/jobs/cheriot-software-engineer/",
+      "exists": true
+    },
+    {
+      "route": "/legal-and-policies/",
+      "exists": true
+    },
+    {
+      "route": "/linux-roadmap/",
+      "exists": true
+    },
+    {
+      "route": "/morello-return/",
+      "exists": true
+    },
+    {
+      "route": "/news-and-events/events-and-archive/cheri-blossoms/",
+      "exists": true
+    },
+    {
+      "route": "/news-and-events/events-and-archive/cheritech/",
+      "exists": true
+    },
+    {
+      "route": "/news-and-events/events-and-archive/past-events/",
+      "exists": true
+    },
+    {
+      "route": "/news-and-events/events-and-archive/upcoming-events/",
+      "exists": true
+    },
+    {
+      "route": "/news-and-events/news-and-analysis/latest-news/",
+      "exists": true
+    },
+    {
+      "route": "/news-and-events/news-and-analysis/press-resources/",
+      "exists": true
+    },
+    {
+      "route": "/news-and-events/news-and-analysis/subscribe-newsletter/",
+      "exists": true
+    },
+    {
+      "route": "/news-and-events/people-and-opportunities/job-opportunities/",
+      "exists": true
+    },
+    {
+      "route": "/news-and-events/people-and-opportunities/speakers/",
+      "exists": true
+    },
+    {
+      "route": "/news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/",
+      "exists": true
+    },
+    {
+      "route": "/news/ai-has-compressed-the-attack-timeline/",
+      "exists": true
+    },
+    {
+      "route": "/news/amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon/",
+      "exists": true
+    },
+    {
+      "route": "/news/behind-the-scenes-inside-the-promotion-and-ambassador-program-working-group/",
+      "exists": true
+    },
+    {
+      "route": "/news/beyond-software-patching/",
+      "exists": true
+    },
+    {
+      "route": "/news/bt-group-joins-the-cheri-alliance-to-advance-cybersecurity-innovation/",
+      "exists": true
+    },
+    {
+      "route": "/news/building-a-safer-digital-future/",
+      "exists": true
+    },
+    {
+      "route": "/news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level/",
+      "exists": true
+    },
+    {
+      "route": "/news/cheri-alliance-to-distribute-arm-morello-boards-the-journey-beyond-dsbd-continues/",
+      "exists": true
+    },
+    {
+      "route": "/news/cheri-memory-safety-mitigates-llm-discovered-vulnerability-in-freebsd/",
+      "exists": true
+    },
+    {
+      "route": "/news/cheri-or-cheriot-the-answer-is-not-what-you-think-original/",
+      "exists": true
+    },
+    {
+      "route": "/news/cheri-or-cheriot-the-answer-is-not-what-you-think/",
+      "exists": true
+    },
+    {
+      "route": "/news/cheri-sel4-and-cheri-microkit-released/",
+      "exists": true
+    },
+    {
+      "route": "/news/cheri-tag-bit-transport-overlay-standard-version-0-9-released/",
+      "exists": true
+    },
+    {
+      "route": "/news/cheri-zephyr-v0-4-0-release/",
+      "exists": true
+    },
+    {
+      "route": "/news/cheriot-1-0-specification-released-original/",
+      "exists": true
+    },
+    {
+      "route": "/news/cheriot-1-0-specification-released/",
+      "exists": true
+    },
+    {
+      "route": "/news/cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus/",
+      "exists": true
+    },
+    {
+      "route": "/news/codasip-enables-secure-linux-by-donating-cheri-risc-v-sdk-to-the-cheri-alliance/",
+      "exists": true
+    },
+    {
+      "route": "/news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology-original/",
+      "exists": true
+    },
+    {
+      "route": "/news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology/",
+      "exists": true
+    },
+    {
+      "route": "/news/combatting-the-ai-threat-with-cheri/",
+      "exists": true
+    },
+    {
+      "route": "/news/cybersecurity-by-design-from-research-to-industry-conference-report/",
+      "exists": true
+    },
+    {
+      "route": "/news/end-users-demand-memory-safety-in-their-systems/",
+      "exists": true
+    },
+    {
+      "route": "/news/iceni-first-look/",
+      "exists": true
+    },
+    {
+      "route": "/news/initial-members-join-cheri-alliance-to-drive-adoption-of-memory-safety-and-scalable-software-compartmentalization/",
+      "exists": true
+    },
+    {
+      "route": "/news/innovate-uk-project-winner-university-of-birmingham-original/",
+      "exists": true
+    },
+    {
+      "route": "/news/innovate-uk-project-winner-university-of-birmingham/",
+      "exists": true
+    },
+    {
+      "route": "/news/introducing-the-cheri-adoption-global-ecosystem-assessment-q1-2026/",
+      "exists": true
+    },
+    {
+      "route": "/news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences-original/",
+      "exists": true
+    },
+    {
+      "route": "/news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences/",
+      "exists": true
+    },
+    {
+      "route": "/news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support-original/",
+      "exists": true
+    },
+    {
+      "route": "/news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support/",
+      "exists": true
+    },
+    {
+      "route": "/news/lowrisc-and-sci-semiconductor-release-sunburst-chip-repository-for-secure-microcontroller-development/",
+      "exists": true
+    },
+    {
+      "route": "/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd-original/",
+      "exists": true
+    },
+    {
+      "route": "/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd/",
+      "exists": true
+    },
+    {
+      "route": "/news/one-bug-is-all-it-takes/",
+      "exists": true
+    },
+    {
+      "route": "/news/press/",
+      "exists": true
+    },
+    {
+      "route": "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl-original/",
+      "exists": true
+    },
+    {
+      "route": "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl/",
+      "exists": true
+    },
+    {
+      "route": "/news/sci-semiconductor-and-the-cheri-alliance-at-risc-v-summit-in-china-july-2025/",
+      "exists": true
+    },
+    {
+      "route": "/news/secure-and-resilient-systems-in-the-era-of-cra-and-iot/",
+      "exists": true
+    },
+    {
+      "route": "/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software-original/",
+      "exists": true
+    },
+    {
+      "route": "/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software/",
+      "exists": true
+    },
+    {
+      "route": "/news/siemens-joins-the-cheri-alliance-a-united-front-for-cutting-edge-cybersecurity/",
+      "exists": true
+    },
+    {
+      "route": "/news/streamlining-the-cheri-ecosystem-an-update-from-the-repository-management-working-group/",
+      "exists": true
+    },
+    {
+      "route": "/news/the-capable-hub-joins-the-cheri-alliance-to-accelerate-cybersecurity-collaboration/",
+      "exists": true
+    },
+    {
+      "route": "/news/the-eu-cyber-resilience-act-what-it-means-for-secure-by-design-systems-and-cheri/",
+      "exists": true
+    },
+    {
+      "route": "/news/the-leading-root-of-trust-now-integrates-cheri-security-technology/",
+      "exists": true
+    },
+    {
+      "route": "/news/the-white-house-promotes-cheri-as-a-solution-for-memory-safety/",
+      "exists": true
+    },
+    {
+      "route": "/news/towards-a-reference-qemu-for-cheri-platform-emulation/",
+      "exists": true
+    },
+    {
+      "route": "/news/uk-government-report-highlights-the-cheri-alliance/",
+      "exists": true
+    },
+    {
+      "route": "/news/unlocking-the-future-a-roadmap-for-cheri-technology-advancement/",
+      "exists": true
+    },
+    {
+      "route": "/news/why-codasip-went-all-in-on-cheri/",
+      "exists": true
+    },
+    {
+      "route": "/news/wind-river-joins-the-cheri-alliance/",
+      "exists": true
+    },
+    {
+      "route": "/news/working-group-spotlight-marketing/",
+      "exists": true
+    },
+    {
+      "route": "/news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/axiomise-ltd/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/bt-group/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/cantech-informatics-srl/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/capabilities-limited/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/centrale-supelec/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/cheri-alliance/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/chevin-technology/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/codasip/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/critical-technologies/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/cyberwhiz/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/cynam/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/digital-catapult/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/discribehub/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/dstl/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/durham-university/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/ensilica/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/freebsd-foundation/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/google/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/hildebrand/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/instituto-superior-de-engenharia-do-porto/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/johannes-kepler-university-linz/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/king-abdullah-university-of-science-and-technology-kaust/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/ku-leuven/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/light-momentum-technology-corp/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/lowrisc/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/misra/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/national-taiwan-university/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/ncsc/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/novomorphic/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/nquiringminds/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/pa-consulting/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/parvat-infotech/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/rptu/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/sci-semiconductor/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/sensor-it/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/siemens/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/sri/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/swansea-university/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/tccoe/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/techworks/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/the-capable-hub/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/the-university-of-manchester/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/um-labs/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/university-of-birmingham/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/university-of-cambridge/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/university-of-edinburgh/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/university-of-exeter/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/university-of-glasgow/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/university-of-kent/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/verisilicon/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/wind-river/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/wyvern-global/",
+      "exists": true
+    },
+    {
+      "route": "/organisations/zaya/",
+      "exists": true
+    },
+    {
+      "route": "/people/adam-finney/",
+      "exists": true
+    },
+    {
+      "route": "/people/alastair-beresford/",
+      "exists": true
+    },
+    {
+      "route": "/people/alex-rebert/",
+      "exists": true
+    },
+    {
+      "route": "/people/alex-richardson/",
+      "exists": true
+    },
+    {
+      "route": "/people/alexander-voyevoda/",
+      "exists": true
+    },
+    {
+      "route": "/people/alfredo-mazzinghi/",
+      "exists": true
+    },
+    {
+      "route": "/people/allison-randal/",
+      "exists": true
+    },
+    {
+      "route": "/people/andrew-lindsay/",
+      "exists": true
+    },
+    {
+      "route": "/people/andrew-murray/",
+      "exists": true
+    },
+    {
+      "route": "/people/andy-moore/",
+      "exists": true
+    },
+    {
+      "route": "/people/ashish-darbari/",
+      "exists": true
+    },
+    {
+      "route": "/people/ben-fletcher/",
+      "exists": true
+    },
+    {
+      "route": "/people/bradley-finn/",
+      "exists": true
+    },
+    {
+      "route": "/people/carl-shaw/",
+      "exists": true
+    },
+    {
+      "route": "/people/dave-harcourt/",
+      "exists": true
+    },
+    {
+      "route": "/people/david-chisnall/",
+      "exists": true
+    },
+    {
+      "route": "/people/david-musliner/",
+      "exists": true
+    },
+    {
+      "route": "/people/dmitriy-yeliseyev/",
+      "exists": true
+    },
+    {
+      "route": "/people/domagoj-stolfa/",
+      "exists": true
+    },
+    {
+      "route": "/people/donato-ferraro/",
+      "exists": true
+    },
+    {
+      "route": "/people/edoardo-marangoni/",
+      "exists": true
+    },
+    {
+      "route": "/people/gavin-ferris/",
+      "exists": true
+    },
+    {
+      "route": "/people/haydn-povey/",
+      "exists": true
+    },
+    {
+      "route": "/people/hesham-almatary/",
+      "exists": true
+    },
+    {
+      "route": "/people/javier-orensanz-martinez/",
+      "exists": true
+    },
+    {
+      "route": "/people/jennifer-jackson/",
+      "exists": true
+    },
+    {
+      "route": "/people/jeremy-singer/",
+      "exists": true
+    },
+    {
+      "route": "/people/jessica-clarke/",
+      "exists": true
+    },
+    {
+      "route": "/people/jianyi-cheng/",
+      "exists": true
+    },
+    {
+      "route": "/people/johannes-muller/",
+      "exists": true
+    },
+    {
+      "route": "/people/john-baldwin/",
+      "exists": true
+    },
+    {
+      "route": "/people/john-goodacre/",
+      "exists": true
+    },
+    {
+      "route": "/people/john-thomson/",
+      "exists": true
+    },
+    {
+      "route": "/people/jonathan-woodruff/",
+      "exists": true
+    },
+    {
+      "route": "/people/joshua-lant/",
+      "exists": true
+    },
+    {
+      "route": "/people/ka-wing-li/",
+      "exists": true
+    },
+    {
+      "route": "/people/kathleen-fisher/",
+      "exists": true
+    },
+    {
+      "route": "/people/kevin-brodsky/",
+      "exists": true
+    },
+    {
+      "route": "/people/louis-emile-ploix/",
+      "exists": true
+    },
+    {
+      "route": "/people/luca-muller/",
+      "exists": true
+    },
+    {
+      "route": "/people/maika-fohrenbach/",
+      "exists": true
+    },
+    {
+      "route": "/people/manu-ravishankar/",
+      "exists": true
+    },
+    {
+      "route": "/people/mark-batty/",
+      "exists": true
+    },
+    {
+      "route": "/people/mark-hill/",
+      "exists": true
+    },
+    {
+      "route": "/people/marno-van-der-maas/",
+      "exists": true
+    },
+    {
+      "route": "/people/martin-atkins/",
+      "exists": true
+    },
+    {
+      "route": "/people/merve-gulmez/",
+      "exists": true
+    },
+    {
+      "route": "/people/mike-eftimakis/",
+      "exists": true
+    },
+    {
+      "route": "/people/mike-halsall/",
+      "exists": true
+    },
+    {
+      "route": "/people/murali-vijayaraghavan/",
+      "exists": true
+    },
+    {
+      "route": "/people/murat-cakmak/",
+      "exists": true
+    },
+    {
+      "route": "/people/ollie-whitehouse/",
+      "exists": true
+    },
+    {
+      "route": "/people/paul-metzger/",
+      "exists": true
+    },
+    {
+      "route": "/people/paul-waller/",
+      "exists": true
+    },
+    {
+      "route": "/people/peter-cox/",
+      "exists": true
+    },
+    {
+      "route": "/people/phil-day/",
+      "exists": true
+    },
+    {
+      "route": "/people/robert-watson/",
+      "exists": true
+    },
+    {
+      "route": "/people/sam-cater/",
+      "exists": true
+    },
+    {
+      "route": "/people/samuel-stark/",
+      "exists": true
+    },
+    {
+      "route": "/people/simon-moore/",
+      "exists": true
+    },
+    {
+      "route": "/people/tariq-kurd/",
+      "exists": true
+    },
+    {
+      "route": "/people/thomas-nyman/",
+      "exists": true
+    },
+    {
+      "route": "/people/tora-fridholm/",
+      "exists": true
+    },
+    {
+      "route": "/policies/code-of-conduct/",
+      "exists": true
+    },
+    {
+      "route": "/policies/competition-law-statement/",
+      "exists": true
+    },
+    {
+      "route": "/policies/export-controls/",
+      "exists": true
+    },
+    {
+      "route": "/policies/intellectual-property-policy/",
+      "exists": true
+    },
+    {
+      "route": "/policies/ip-policy/",
+      "exists": true
+    },
+    {
+      "route": "/policies/policy-briefings/",
+      "exists": true
+    },
+    {
+      "route": "/policies/privacy-policy/",
+      "exists": true
+    },
+    {
+      "route": "/policies/privacy/",
+      "exists": true
+    },
+    {
+      "route": "/policies/trademark-policy/",
+      "exists": true
+    },
+    {
+      "route": "/policies/trademark/",
+      "exists": true
+    },
+    {
+      "route": "/reference/CHERI-seL4-Exercises/appendix/index.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/CHERI-seL4-Exercises/cover/index.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-global/answers.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-global/index.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-stack/answers.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-stack/index.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/CHERI-seL4-Exercises/exercises/cheri-allocator/answers.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/CHERI-seL4-Exercises/exercises/cheri-allocator/index.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/CHERI-seL4-Exercises/exercises/cheri-tags/answers.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/CHERI-seL4-Exercises/exercises/cheri-tags/index.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/CHERI-seL4-Exercises/exercises/compile-and-run/answers.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/CHERI-seL4-Exercises/exercises/compile-and-run/index.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/CHERI-seL4-Exercises/exercises/control-flow-pointer/answers.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/CHERI-seL4-Exercises/exercises/control-flow-pointer/index.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/CHERI-seL4-Exercises/exercises/debug-and-disassemble/answers.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/CHERI-seL4-Exercises/exercises/debug-and-disassemble/index.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/CHERI-seL4-Exercises/exercises/index.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/CHERI-seL4-Exercises/exercises/subobject-bounds/answers.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/CHERI-seL4-Exercises/exercises/subobject-bounds/index.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/CHERI-seL4-Exercises/exercises/type-confusion/answers.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/CHERI-seL4-Exercises/exercises/type-confusion/index.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/CHERI-seL4-Exercises/introduction/background.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/CHERI-seL4-Exercises/introduction/ccc.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/CHERI-seL4-Exercises/introduction/cross-compilation-execution.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/CHERI-seL4-Exercises/introduction/index.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/CHERI-seL4-Exercises/missions/buffer-overflow-control-flow/index.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/CHERI-seL4-Exercises/missions/index.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/CHERI-seL4-Exercises/missions/uninitialized-stack-frame-control-flow/index.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/CHERI-seL4-Exercises/print.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/linux-roadmap/cover.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/linux-roadmap/goals/bootloaders-firmware.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/linux-roadmap/goals/distros.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/linux-roadmap/goals/emulation-crossbuild.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/linux-roadmap/goals/index.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/linux-roadmap/goals/kernel.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/linux-roadmap/goals/testing.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/linux-roadmap/goals/toolchain.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/linux-roadmap/goals/user-space.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/linux-roadmap/intro.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/linux-roadmap/print.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/linux-roadmap/prior-work.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/linux-roadmap/research.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/linux-roadmap/techreports.html",
+      "exists": true
+    },
+    {
+      "route": "/reference/linux-roadmap/toc.html",
+      "exists": true
+    },
+    {
+      "route": "/software/cheri-linux/",
+      "exists": true
+    },
+    {
+      "route": "/software/cheribsd/",
+      "exists": true
+    },
+    {
+      "route": "/software/debugging-tools/",
+      "exists": true
+    },
+    {
+      "route": "/software/freebsd/",
+      "exists": true
+    },
+    {
+      "route": "/software/llvm-and-clang/",
+      "exists": true
+    },
+    {
+      "route": "/software/porting-status/",
+      "exists": true
+    },
+    {
+      "route": "/software/real-time-operating-systems/",
+      "exists": true
+    },
+    {
+      "route": "/software/rust/",
+      "exists": true
+    },
+    {
+      "route": "/software/simulators/",
+      "exists": true
+    },
+    {
+      "route": "/software/zephyr/",
+      "exists": true
+    },
+    {
+      "route": "/trademark/",
+      "exists": true
+    }
+  ],
+  "duplicate_editorial_routes": {},
+  "source_aliases": {
+    "https://cheri-alliance.org/member/siemens/": {
+      "target": "/organisations/siemens/",
+      "evidence": "Same named member organisation and canonical profile"
+    },
+    "https://cheri-alliance.org/member/sci-semiconductor/": {
+      "target": "/organisations/sci-semiconductor/",
+      "evidence": "Same named member organisation and canonical profile"
+    },
+    "https://cheri-alliance.org/member/university-of-cambridge/": {
+      "target": "/organisations/university-of-cambridge/",
+      "evidence": "Same named member organisation and canonical profile"
+    },
+    "https://cheri-alliance.org/member/google/": {
+      "target": "/organisations/google/",
+      "evidence": "Same named member organisation and canonical profile"
+    },
+    "https://cheri-alliance.org/member/sri/": {
+      "target": "/organisations/sri/",
+      "evidence": "Same named member organisation and canonical profile"
+    },
+    "https://cheri-alliance.org/member/techworks/": {
+      "target": "/organisations/techworks/",
+      "evidence": "Same named member organisation and canonical profile"
+    },
+    "https://cheri-alliance.org/member/the-university-of-manchester/": {
+      "target": "/organisations/the-university-of-manchester/",
+      "evidence": "Same named member organisation and canonical profile"
+    },
+    "https://cheri-alliance.org/member/capabilities-limited/": {
+      "target": "/organisations/capabilities-limited/",
+      "evidence": "Same named member organisation and canonical profile"
+    },
+    "https://cheri-alliance.org/member/codasip/": {
+      "target": "/organisations/codasip/",
+      "evidence": "Same named member organisation and canonical profile"
+    },
+    "https://cheri-alliance.org/member/lowrisc/": {
+      "target": "/organisations/lowrisc/",
+      "evidence": "Same named member organisation and canonical profile"
+    },
+    "https://cheri-alliance.org/member/university-of-birmingham-centre-for-cyber-security-and-privacy/": {
+      "target": "/organisations/university-of-birmingham/",
+      "evidence": "Published member name variant of the same institution"
+    },
+    "https://cheri-alliance.github.io/members/university-of-birmingham-centre-for-cyber-security-and-privacy/": {
+      "target": "/organisations/university-of-birmingham/",
+      "evidence": "Legacy profile slug of the same published institution"
+    },
+    "https://cheri-alliance.github.io/alliance/about-and-governance/working-groups/": {
+      "target": "/alliance/leadership/working-groups/",
+      "evidence": "Legacy spelling/section of the same published topic or event; use its existing canonical page"
+    },
+    "https://cheri-alliance.github.io/adopt/business-case/lifecycle-benefits-and-roi/": {
+      "target": "/adopt/business-case/return-on-security-investment/",
+      "evidence": "Legacy spelling/section of the same published topic or event; use its existing canonical page"
+    },
+    "https://cheri-alliance.github.io/discover/why-cheri/faqs/": {
+      "target": "/discover/understand/faq/",
+      "evidence": "Legacy spelling/section of the same published topic or event; use its existing canonical page"
+    },
+    "https://cheri-alliance.github.io/discover/why-cheri/faq": {
+      "target": "/discover/understand/faq/",
+      "evidence": "Legacy spelling/section of the same published topic or event; use its existing canonical page"
+    },
+    "https://cheri-alliance.github.io/discover/why-cheri/cheri-and-existing-software/": {
+      "target": "/discover/understand/cheri-and-existing-software/",
+      "evidence": "Legacy spelling/section of the same published topic or event; use its existing canonical page"
+    },
+    "https://cheri-alliance.github.io/discover/why-memory-safety/approaches-to-memory-safety/": {
+      "target": "/discover/why-cheri/approaches-to-memory-safety/",
+      "evidence": "Legacy spelling/section of the same published topic or event; use its existing canonical page"
+    },
+    "https://cheri-alliance.github.io/alliance/legal-and-policies/trademark-and-brand-use/": {
+      "target": "/policies/trademark-policy/",
+      "evidence": "Legacy spelling/section of the same published topic or event; use its existing canonical page"
+    },
+    "https://cheri-alliance.github.io/events/cheri-tech-conference-2025/": {
+      "target": "/events/cheritech25/",
+      "evidence": "Legacy spelling/section of the same published topic or event; use its existing canonical page"
+    },
+    "https://cheri-alliance.github.io/events/cheri-blossoms-conference-2026-intro-to-cheri-and-cheriot/": {
+      "target": "/events/cheri-blossoms-tutorial-2026/",
+      "evidence": "Legacy spelling/section of the same published topic or event; use its existing canonical page"
+    },
+    "https://cheri-alliance.org/contact/": {
+      "target": "/alliance/membership/contact/",
+      "evidence": "Legacy spelling/section of the same published topic or event; use its existing canonical page"
+    },
+    "https://cheri-alliance.org/cheri-enabled/": {
+      "target": "/adopt/assurance-and-adoption/about-cheri-enabled/",
+      "evidence": "Legacy spelling/section of the same published topic or event; use its existing canonical page"
+    },
+    "https://cheri-alliance.org/discover-cheri/cheri-products/morello/": {
+      "target": "/hardware/morello/",
+      "evidence": "Legacy spelling/section of the same published topic or event; use its existing canonical page"
+    },
+    "https://cheri-alliance.org/discover-cheri/cheri-products/": {
+      "target": "/build/platforms/cheri-products/",
+      "evidence": "Legacy spelling/section of the same published topic or event; use its existing canonical page"
+    },
+    "https://cheri-alliance.org/legal-and-policies/trademark-policy/": {
+      "target": "/policies/trademark-policy/",
+      "evidence": "Legacy spelling/section of the same published topic or event; use its existing canonical page"
+    },
+    "https://cheri-alliance.org/who-we-are/working-groups/cheri-qemu/": {
+      "target": "/groups/cheri-qemu/",
+      "evidence": "Same named working group"
+    },
+    "https://cheri-alliance.github.io/alliance/about-and-governance/working-groups/cheri-c-cplusplus/": {
+      "target": "/groups/cheri-c-cplusplus/",
+      "evidence": "Same named working group"
+    },
+    "https://cheri-alliance.org/who-we-are/working-groups/cheri-in-soc/": {
+      "target": "/groups/cheri-in-soc/",
+      "evidence": "Same named working group"
+    }
+  }
+}

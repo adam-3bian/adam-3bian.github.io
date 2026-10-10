@@ -2,6 +2,8 @@
 
 The presentation reference is the user-uploaded `cheri-alliance-starter-kit-simplified-authoring (3).zip`. The current goal is to retain existing content while using that theme, rather than reproducing the visual design of either source website.
 
+The original archive and detailed master prompt are now retained in [references/](references/README.md). [Phase 0](../reports/codex-phases/phase-00.md) records fresh native-Jekyll findings; the earlier integration and validation statements below remain historical evidence.
+
 The archive's actual `_layouts`, `_includes`, `_sass`, branded/background assets and JavaScript components were imported. No sample articles, biographies, placeholder assets, dependency manifests or sample navigation were substituted for this repository's content and configuration. `reports/template-integration.json` records archive/file hashes and the deliberate adaptations.
 
 ## Permitted adapters

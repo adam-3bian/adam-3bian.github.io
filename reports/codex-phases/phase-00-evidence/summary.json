@@ -1,0 +1,137 @@
+{
+  "starting_commit": "db809a9908f86aa57d7992fb596f52ea10836f09",
+  "site_directory": "/tmp/cheri-phase0-native-site",
+  "editorial_records": 476,
+  "collections": {
+    "events": 10,
+    "groups": 16,
+    "guides": 10,
+    "hardware": 6,
+    "news": 56,
+    "organisations": 69,
+    "papers": 15,
+    "people": 112,
+    "policies": 11,
+    "software": 10,
+    "pages": 161
+  },
+  "classifications": {
+    "complete captured source page": 352,
+    "preserved alternate source version": 19,
+    "source-backed name-only record": 65,
+    "paper catalogue entry": 15,
+    "repository-authored hub/index/utility": 16,
+    "published edition": 9
+  },
+  "layouts": {
+    "event": 10,
+    "page": 229,
+    "post": 56,
+    "member": 69,
+    "person": 112
+  },
+  "alternate_records": 19,
+  "member_flags": 52,
+  "speaker_flags": 60,
+  "relationship_edges": {
+    "speakers": 97,
+    "authors": 202,
+    "organization": 67
+  },
+  "unresolved_relationships": [],
+  "relationships_without_evidence": [],
+  "zip_files_identical": 46,
+  "zip_files_compared": 56,
+  "asset_files": 415,
+  "asset_bytes": 87022109,
+  "asset_extensions": {
+    ".scss": 1,
+    ".pdf": 17,
+    ".png": 129,
+    ".webp": 152,
+    ".jpg": 68,
+    ".svg": 7,
+    ".txt": 1,
+    ".js": 15,
+    ".zip": 1,
+    ".ttf": 4,
+    ".css": 19,
+    ".ico": 1
+  },
+  "original_asset_mappings": 430,
+  "failed_asset_mappings": [],
+  "html_files": 481,
+  "local_link_errors": 1,
+  "fidelity": {
+    "passed": 304,
+    "failed": 87
+  },
+  "multiple_h1_pages": 140,
+  "records_with_parent": 0,
+  "records_with_slider": 0,
+  "records_with_where_next": 0,
+  "records_with_related_pages": 0,
+  "records_with_thumbnail": 0,
+  "directory_records": [
+    {
+      "path": "pages/alliance/leadership/members.md",
+      "listing": "members"
+    },
+    {
+      "path": "pages/events.md",
+      "listing": "events"
+    },
+    {
+      "path": "pages/groups.md",
+      "listing": "groups"
+    },
+    {
+      "path": "pages/guides.md",
+      "listing": "guides"
+    },
+    {
+      "path": "pages/hardware.md",
+      "listing": "hardware"
+    },
+    {
+      "path": "pages/news-and-events/events-and-archive/past-events.md",
+      "listing": "events"
+    },
+    {
+      "path": "pages/news-and-events/events-and-archive/upcoming-events.md",
+      "listing": "events"
+    },
+    {
+      "path": "pages/news-and-events/news-and-analysis/latest-news.md",
+      "listing": "news"
+    },
+    {
+      "path": "pages/news-and-events/people-and-opportunities/speakers.md",
+      "listing": "speakers"
+    },
+    {
+      "path": "pages/news.md",
+      "listing": "news"
+    },
+    {
+      "path": "pages/organisations.md",
+      "listing": "organisations"
+    },
+    {
+      "path": "pages/papers.md",
+      "listing": "papers"
+    },
+    {
+      "path": "pages/people.md",
+      "listing": "people"
+    },
+    {
+      "path": "pages/policies.md",
+      "listing": "policies"
+    },
+    {
+      "path": "pages/software.md",
+      "listing": "software"
+    }
+  ]
+}
