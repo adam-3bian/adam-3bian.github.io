@@ -1,0 +1,28 @@
+[
+  {
+    "source": "_events/cheritech26.md",
+    "source_sha256": "acc87cedf40fa4f2b8b744d3fe016f6df2f51a522f1b253999554831452013c6",
+    "title": "CHERITech'26",
+    "text": "A two-day CHERI technical programme at SEMICON Europa in Munich, connecting implementation work with the wider electronics industry.",
+    "url": "/events/cheritech26/",
+    "action": "View event",
+    "image": {
+      "src": "/assets/events/cheritech26/408459d34c43-cheritech26.webp",
+      "alt": "CHERITech'26",
+      "fit": "contain"
+    }
+  },
+  {
+    "source": "_news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate.md",
+    "source_sha256": "44f487dbd9d9784b7cb8ee8086418209ede10f490ca14dee00d8ac5c53b372c9",
+    "title": "A new ETSI standard could rewrite the memory-safety debate",
+    "text": "Memory-safety vulnerabilities remain one of the largest sources of critical software vulnerabilities.",
+    "url": "/news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/",
+    "action": "Read article",
+    "image": {
+      "src": "/assets/news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/67e343f4b8d6-hero.png",
+      "alt": "ETSI standard",
+      "fit": "contain"
+    }
+  }
+]

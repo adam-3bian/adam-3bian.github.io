@@ -1,0 +1,33 @@
+[
+  {
+    "title": "Slack",
+    "url": "https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/cheri-slack.html",
+    "method": "HEAD",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "title": "LinkedIn",
+    "url": "https://www.linkedin.com/company/cheri-alliance/",
+    "method": "HEAD",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "title": "Mastodon",
+    "url": "https://infosec.exchange/@cheri_alliance",
+    "method": "HEAD",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "title": "GitHub",
+    "url": "https://github.com/CHERI-Alliance",
+    "method": "HEAD",
+    "status": 200,
+    "final_url": "https://github.com/CHERI-Alliance"
+  },
+  {
+    "title": "YouTube",
+    "url": "https://www.youtube.com/@CHERI-Alliance",
+    "method": "HEAD",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  }
+]

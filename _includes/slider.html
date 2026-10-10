@@ -38,6 +38,7 @@
     {% endfor %}
   </div>
   <div class="slider-controls" hidden>
+    {% if page.slider.autoplay %}<button class="button" type="button" data-slider-toggle>Pause slides</button>{% endif %}
     <div class="slider-indicators" role="group" aria-label="Choose a slide">
       {% for slide in page.slider.slides %}<button class="slider-dot" type="button" data-slide="{{ forloop.index0 }}" aria-controls="slide-{{ forloop.index }}" aria-label="Slide {{ forloop.index }}: {{ slide.title | escape }}"{% if forloop.first %} aria-current="true"{% endif %}><span aria-hidden="true">●</span></button>{% endfor %}
     </div>

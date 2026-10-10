@@ -440,24 +440,42 @@ navigation:
       url: /policies/trademark/
     - title: Privacy
       url: /policies/privacy/
-  - title: Explore
-    links:
-    - title: People
-      url: /people/
-    - title: Organisations
-      url: /organisations/
-    - title: Hardware
-      url: /hardware/
-    - title: Software
-      url: /software/
-    - title: Papers
-      url: /papers/
   social:
+  - title: Slack
+    url: https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/cheri-slack.html
+    image:
+      src: /assets/images/social/slack.svg
+      alt: Join the CHERI community on Slack
+    target: _blank
+    rel: noopener noreferrer
   - title: LinkedIn
     url: https://www.linkedin.com/company/cheri-alliance/
     image:
       src: /assets/images/social/linkedin.svg
       alt: CHERI Alliance on LinkedIn
+    target: _blank
+    rel: noopener noreferrer
+  - title: Mastodon
+    url: https://infosec.exchange/@cheri_alliance
+    image:
+      src: /assets/images/social/mastodon.svg
+      alt: CHERI Alliance on Mastodon
+    target: _blank
+    rel: noopener noreferrer
+  - title: GitHub
+    url: https://github.com/CHERI-Alliance
+    image:
+      src: /assets/images/social/github.svg
+      alt: CHERI Alliance on GitHub
+    target: _blank
+    rel: noopener noreferrer
+  - title: YouTube
+    url: https://www.youtube.com/@CHERI-Alliance
+    image:
+      src: /assets/images/social/youtube.svg
+      alt: CHERI Alliance on YouTube
+    target: _blank
+    rel: noopener noreferrer
 timezone: Europe/London
 
 subscribe:

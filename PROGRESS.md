@@ -1,3 +1,7 @@
+## Phase 6 — verified homepage and entry points (10 October 2026)
+
+The full dark homepage now has two authentic ZIP-style linked slides, accessible five-second playback and Pause/Play controls. The site has five header categories, three footer groups and five licensed local social icons. Tablet submenu controls and no-JavaScript fallback now work with the ZIP behavior. Contact/newsletter previews remain clearly non-submitting. All 476 source bodies and relationships are preserved; root/prefix native builds and the Phase 6 audits/browser checks pass. Live-reference and four external social checks were blocked by proxy 403 responses; the existing 404 search link and 1,406 historical prefix URLs remain for Phase 7. See [Phase 6](reports/codex-phases/phase-06.md).
+
 ## Phase 5 — verified directory integration (10 October 2026)
 
 Canonical organisations/members and all remaining collection directories use native list/detail layouts and universal cards. Five topic hubs derive 91 child links from parent references; 216 retained source fragments now use the same card shell without changing their copy, media or order. All 476 bodies/prose signatures and original assets are preserved. Native builds, 30 regressions, Markdown audit and 108 responsive browser views pass; the root 404 search link and historical prefix URLs remain Phase 7 exceptions. See [Phase 5](reports/codex-phases/phase-05.md) for fresh evidence and exact limits.

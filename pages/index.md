@@ -14,12 +14,36 @@ related-pages:
   action: Read this page
 - url: /organisations/cheri-alliance/
   title: About the CHERI Alliance
-  description: Learn how the Alliance connects organisations working across the CHERI ecosystem.
+  description: Learn how the Alliance connects organisations working across the CHERI
+    ecosystem.
   action: Read this page
 - url: /news-and-events/events-and-archive/upcoming-events/
   title: News & Events
   description: Meet the CHERI ecosystem, learn about the latest news.
   action: Read this page
+slider:
+  title: Featured CHERI news and events
+  autoplay: true
+  interval: 5000
+  slides:
+  - title: CHERITech'26
+    text: A two-day CHERI technical programme at SEMICON Europa in Munich, connecting
+      implementation work with the wider electronics industry.
+    url: /events/cheritech26/
+    action: View event
+    image:
+      src: /assets/events/cheritech26/408459d34c43-cheritech26.webp
+      alt: CHERITech'26
+      fit: contain
+  - title: A new ETSI standard could rewrite the memory-safety debate
+    text: Memory-safety vulnerabilities remain one of the largest sources of critical
+      software vulnerabilities.
+    url: /news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/
+    action: Read article
+    image:
+      src: /assets/news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/67e343f4b8d6-hero.png
+      alt: ETSI standard
+      fit: contain
 ---
 
 # Software runs our world. It deserves stronger security foundations.

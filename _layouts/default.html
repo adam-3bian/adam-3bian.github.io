@@ -93,6 +93,7 @@
       {{ source_preamble }}
       {% if heading_alias != '' and heading_alias != heading_id %}<span id="{{ heading_alias }}"></span>{% endif %}
       {% include hero.html heading=source_heading heading_id=heading_id %}
+      {% if page.hero %}{% include slider.html %}{% endif %}
       <article class="content" aria-label="{{ page.title | escape }}">
         {% include page-heading.html heading=source_heading %}
         {% if source_body contains 'collection-card__' %}
@@ -100,7 +101,7 @@
         {% else %}{{ source_body }}{% endif %}
       </article>
     </div>
-    {% include slider.html %}
+    {% unless page.hero %}{% include slider.html %}{% endunless %}
     {% include site-features.html %}
     {% include where-next.html %}
     {% include related-pages.html %}

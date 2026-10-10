@@ -1,0 +1,32 @@
+[
+  {
+    "name": "navigation",
+    "url": "https://cheri-alliance.github.io/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "name": "github-icon",
+    "url": "https://raw.githubusercontent.com/twbs/icons/v1.13.1/icons/github.svg",
+    "status": 200,
+    "sha256": "419c5de58f4bfeb06ed2e15e475965bd39cfb040d1c8627eed00bcba5f59ae96",
+    "bytes": 708,
+    "installed_sha256": "cee70e33638a46c56e8107b30d16d0a7266bedb488e6a9d8f9683eca3da96333",
+    "path_geometry_unchanged": true
+  },
+  {
+    "name": "youtube-icon",
+    "url": "https://raw.githubusercontent.com/twbs/icons/v1.13.1/icons/youtube.svg",
+    "status": 200,
+    "sha256": "c0b162de4d7b47a90a67b518d7890a94b65d8eefab11a05cb8d68ac7505d891f",
+    "bytes": 893,
+    "installed_sha256": "4ee016cf904b960f581216b0def626b7614ebb0ce47e529ff6cfc8f614b5c11d",
+    "path_geometry_unchanged": true
+  },
+  {
+    "name": "icons-license",
+    "url": "https://raw.githubusercontent.com/twbs/icons/v1.13.1/LICENSE",
+    "status": 200,
+    "sha256": "0fb3e11bd57e896c5a512afd64864d28a37de45d19835016c87ca1ad19ead969",
+    "bytes": 1093
+  }
+]

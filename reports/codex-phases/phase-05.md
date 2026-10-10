@@ -4,7 +4,7 @@ Verified **10 October 2026 (Europe/London)** on `codex/phased-site-transformatio
 
 ## Baseline and delivery
 
-Starting commit: **`f000ccde5c526ba573a23dcf1cc5524f469dc92c`**. Read Phase 4, fetched the working branch and confirmed it was current. Reviewed repository instructions and the actual retained ZIP's specification, authoring examples and list/detail components. The user requested Phases 5 and 6 together; this report covers Phase 5. The ending implementation commit is recorded in the following phase's delivery update.
+Starting commit: **`f000ccde5c526ba573a23dcf1cc5524f469dc92c`**. Read Phase 4, fetched the working branch and confirmed it was current. Reviewed repository instructions and the actual retained ZIP's specification, authoring examples and list/detail components. The user requested Phases 5 and 6 together; this report covers Phase 5. **Ending implementation/evidence commit: `f968fad0257c0b4fc5b71299aefb3b300480abeb`**, pushed to the working branch before Phase 6.
 
 Reused the cloud-onboarding native github-pages 232 / Jekyll 3.10.0 environment. No dependency, setup-draft or deployment changes. ZIP SHA-256 remains `9f097aeace78c13e2f169fdc378f58b64b119993ac031b011ae7a618c7a7325a`.
 
