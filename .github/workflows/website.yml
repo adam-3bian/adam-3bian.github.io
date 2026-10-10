@@ -39,7 +39,7 @@ jobs:
           python scripts/check_site_links.py
           python scripts/check_entities.py
           python scripts/check_website.py
-          python -m unittest discover -s tests -v
+          bundle exec python -m unittest discover -s tests -v
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

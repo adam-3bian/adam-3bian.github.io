@@ -32,6 +32,8 @@ bundle exec ruby scripts/build.rb
 python3 scripts/serve.py --port 4000
 ```
 
+`Gemfile.lock` uses upstream RubyGems dependency metadata, including Liquid 4 and `safe_yaml`. Debian's packaged Jekyll changes those dependencies. Keep the committed lockfile when using the private cloud runtime; regenerate dependency locks with upstream gems in an isolated Gem path. A frozen upstream install and build are recorded in `reports/dependency-validation.json`.
+
 The development server serves the configured `/cheri-alliance-content/` path and a branded 404. It stops with Ctrl-C. On the prepared cloud environment, use `scripts/setup.sh`, `scripts/ruby.sh` and `/workspace/cheri-migration-venv/bin/python` as described in [README_MIGRATION.md](../README_MIGRATION.md).
 
 Browser validation uses installed Playwright and Chromium: `python3 scripts/check_browser.py` checks 15 source-content routes on desktop/mobile; `python3 scripts/check_website_browser.py` exercises search, filters, keyboard menus, disconnected forms, responsive layouts and JavaScript-free fallbacks. Screenshots are local evidence and are ignored by Git.

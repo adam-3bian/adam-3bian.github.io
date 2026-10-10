@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-10T02:20:52.591060+00:00",
+  "source": "Checksum-verified upstream RubyGems packages in an isolated Gem path, without Debian gem specification overrides",
+  "bundler": "2.6.7",
+  "jekyll": "4.3.4",
+  "kramdown": "2.5.1",
+  "liquid": "4.0.4",
+  "jekyll-sass-converter": "2.2.0",
+  "checks": [
+    "fresh upstream dependency resolution",
+    "frozen local bundle install",
+    "loaded upstream Jekyll path and versions",
+    "complete site build"
+  ],
+  "initial_ci_issue": "Debian gem dependency declarations differed from upstream Jekyll and Kramdown. The lockfile was regenerated from upstream gems."
+}
