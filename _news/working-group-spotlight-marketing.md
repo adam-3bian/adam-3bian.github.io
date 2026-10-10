@@ -17,7 +17,7 @@ Join the CHERI Alliance – Collaborate, Communicate, Be Seen CHERI is reshaping
 *21 July 2025*{: .source-date }
 *CHERI Alliance news*{: .collection-tag }
 *Working Groups*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![Working Group Spotlight – Marketing](/assets/shared/source-assets/df8b50676c3b-working-group-spotlight-marketing.png){: .image-full }
 {: .collection-detail__lead-image }

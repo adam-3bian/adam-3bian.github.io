@@ -1,6 +1,7 @@
 ---
 title: AI has compressed the attack timeline
 date: '2026-04-14T09:25:48+01:00'
+authors: [mike-eftimakis]
 ---
 
 1. News &amp; Events
@@ -17,7 +18,7 @@ Mike Eftimakis – CHERI Alliance This article is part of a series of blogs publ
 *14 April 2026*{: .source-date }
 *CHERI Alliance news*{: .collection-tag }
 *Ecosystem*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![Red connectors leading to a key hole](/assets/news/ai-has-compressed-the-attack-timeline/a029b4887ff4-hero.jpg){: .image-full }
 {: .collection-detail__lead-image }

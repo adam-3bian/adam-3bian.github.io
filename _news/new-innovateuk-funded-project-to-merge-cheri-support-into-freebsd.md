@@ -1,6 +1,7 @@
 ---
 title: New InnovateUK-funded project to merge CHERI support into FreeBSD
 date: '2025-11-25T10:00:49+00:00'
+authors: [brooks-davis]
 ---
 
 1. News &amp; Events
@@ -18,7 +19,7 @@ Brooks Davis – Capabilities Limited Capabilities Limited, a founding member of
 *CHERI Alliance news*{: .collection-tag }
 *Ecosystem*{: .collection-tag }
 *Members*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![New InnovateUK-funded project to merge CHERI support into FreeBSD](/assets/shared/source-assets/5a6300ace656-cheri.png){: .image-full }
 {: .collection-detail__lead-image }

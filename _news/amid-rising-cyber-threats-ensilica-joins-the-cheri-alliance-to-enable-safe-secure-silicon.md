@@ -18,7 +18,7 @@ Oxford UK – 3 February 2026 – EnSilica, a leading provider of mixed-signal A
 *CHERI Alliance news*{: .collection-tag }
 *Ecosystem*{: .collection-tag }
 *Members*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![Welcome EnSilica](/assets/news/amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon/ddb56fdbe9e2-hero.png){: .image-full }
 {: .collection-detail__lead-image }

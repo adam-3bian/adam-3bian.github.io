@@ -1,0 +1,7 @@
+---
+layout: page
+---
+{% assign members = site.members | where_exp: 'item', 'item.redirect_to == nil' | sort_natural: 'title' %}
+{% include listing.html items=members label=page.title compact=true columns=page.listing.columns %}
+
+{{ content }}

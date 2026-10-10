@@ -1,14 +1,12 @@
 ---
 title: CHERI Tag Bit Transport Overlay Standard version 0.9 released
+authors: [benjamin-fletcher]
 ---
 
 # CHERI Tag Bit Transport Overlay Standard version 0.9 released
-{: .elementor-heading-title .elementor-size-default }
+
 
 Benjamin Fletcher – **CHERI Alliance**
-
-
-
 
 
 ![CHERITagBitTransportOverlayStandardBlogImage](/assets/news/cheri-tag-bit-transport-overlay-standard-version-0-9-released/c2fe66ccfd-CHERITagBitTransportOverlayStandardBlogImage-2.png){: .image-full width="1536" height="500" }

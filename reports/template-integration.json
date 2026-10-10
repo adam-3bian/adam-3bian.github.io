@@ -1,0 +1,362 @@
+{
+  "archive": "cheri-alliance-starter-kit-simplified-authoring (3).zip",
+  "archive_sha256": "9f097aeace78c13e2f169fdc378f58b64b119993ac031b011ae7a618c7a7325a",
+  "strategy": "Import ZIP theme files directly; adapt data and preserve full source bodies without source-theme styling",
+  "sample_content_imported": false,
+  "imported_files": [
+    {
+      "path": "_sass/settings.scss",
+      "zip_sha256": "b95590be0291155ecd0037125687422ab980e37a59ceda56d8a0cae5fb4d70dd",
+      "installed_sha256": "d169803080016447911eb21257f00025c293663e1ddd985780ea1088f0aa8806",
+      "status": "adapted"
+    },
+    {
+      "path": "_sass/_themes.scss",
+      "zip_sha256": "9786274487ba5afafd80133b09df707bfbd4344d0484961eb13b202ffba0dd32",
+      "installed_sha256": "9786274487ba5afafd80133b09df707bfbd4344d0484961eb13b202ffba0dd32",
+      "status": "unchanged"
+    },
+    {
+      "path": "_sass/_tables.scss",
+      "zip_sha256": "09058f818f2509e5804c211b03627dae0b6bc82ed4e701dda24a791cca66d0db",
+      "installed_sha256": "09058f818f2509e5804c211b03627dae0b6bc82ed4e701dda24a791cca66d0db",
+      "status": "unchanged"
+    },
+    {
+      "path": "_sass/_slider.scss",
+      "zip_sha256": "cd04f1caa25b072e8c0f24623748856fdd242495e0af38019b4fff14f9e65184",
+      "installed_sha256": "cd04f1caa25b072e8c0f24623748856fdd242495e0af38019b4fff14f9e65184",
+      "status": "unchanged"
+    },
+    {
+      "path": "_sass/_site.scss",
+      "zip_sha256": "29ee1f9aa6360be085ef3a11703aded7cbb46a5a261df242d92a76abf7a7ff60",
+      "installed_sha256": "b9c6220c8a7f50235b135f3091234490cb1d2a7424140c9cf5c732b0afc571be",
+      "status": "adapted"
+    },
+    {
+      "path": "_sass/_navigation.scss",
+      "zip_sha256": "5dbb28733d826c14c99c892809fd54c92b74fe3da4a3de0726305c8b5f046b71",
+      "installed_sha256": "5dbb28733d826c14c99c892809fd54c92b74fe3da4a3de0726305c8b5f046b71",
+      "status": "unchanged"
+    },
+    {
+      "path": "_sass/_main.scss",
+      "zip_sha256": "a3658842af1271abd81ebd36a5a9e522f0c3b81e78dcc2199bfdbbe778d53ec7",
+      "installed_sha256": "a3658842af1271abd81ebd36a5a9e522f0c3b81e78dcc2199bfdbbe778d53ec7",
+      "status": "unchanged"
+    },
+    {
+      "path": "_sass/_image-overlay.scss",
+      "zip_sha256": "c886362d6127c8bda1097e3bd144e0d3adcbad7b94e05a34c9941460a38a0b0e",
+      "installed_sha256": "c886362d6127c8bda1097e3bd144e0d3adcbad7b94e05a34c9941460a38a0b0e",
+      "status": "unchanged"
+    },
+    {
+      "path": "_sass/_hero.scss",
+      "zip_sha256": "0775a33c94543e0e3bb5352834a9e886d03ca444bbb8abf49c79ad080618e2d2",
+      "installed_sha256": "0775a33c94543e0e3bb5352834a9e886d03ca444bbb8abf49c79ad080618e2d2",
+      "status": "unchanged"
+    },
+    {
+      "path": "_sass/_header.scss",
+      "zip_sha256": "074194953045b3374c0dcafd0e728365ad6df3a2caaffa26eabe175175f10854",
+      "installed_sha256": "074194953045b3374c0dcafd0e728365ad6df3a2caaffa26eabe175175f10854",
+      "status": "unchanged"
+    },
+    {
+      "path": "_sass/_forms.scss",
+      "zip_sha256": "6928f3ab9e5556270cdc435f486f2b609952dcb9f62755fbf17b5edff0e388bb",
+      "installed_sha256": "6928f3ab9e5556270cdc435f486f2b609952dcb9f62755fbf17b5edff0e388bb",
+      "status": "unchanged"
+    },
+    {
+      "path": "_sass/_footer.scss",
+      "zip_sha256": "bf520f3884b3173319ae41b370ddcf952a1652379c77edaed965b1baf61a1ae4",
+      "installed_sha256": "bf520f3884b3173319ae41b370ddcf952a1652379c77edaed965b1baf61a1ae4",
+      "status": "unchanged"
+    },
+    {
+      "path": "_sass/_cards.scss",
+      "zip_sha256": "94a6fa0d3b22dd63fc9ae714698568112efe4c880da8a060cf0203b1ee898285",
+      "installed_sha256": "94a6fa0d3b22dd63fc9ae714698568112efe4c880da8a060cf0203b1ee898285",
+      "status": "unchanged"
+    },
+    {
+      "path": "_sass/_call-to-action.scss",
+      "zip_sha256": "f772f829a193b0a972fb831e21fd0767d20d788e8ec0bdf08ecf5fa8e7fd57b7",
+      "installed_sha256": "f772f829a193b0a972fb831e21fd0767d20d788e8ec0bdf08ecf5fa8e7fd57b7",
+      "status": "unchanged"
+    },
+    {
+      "path": "_sass/_breadcrumbs.scss",
+      "zip_sha256": "e7ea89ae24bb693c30d79a2c5d18fc0e68500d1204cbcf136adac44c499220ee",
+      "installed_sha256": "e7ea89ae24bb693c30d79a2c5d18fc0e68500d1204cbcf136adac44c499220ee",
+      "status": "unchanged"
+    },
+    {
+      "path": "_sass/_base.scss",
+      "zip_sha256": "dc8f0aa20779043eef17d6aa845c989d79794213ae25c6e42e4d73691eb336c5",
+      "installed_sha256": "dc8f0aa20779043eef17d6aa845c989d79794213ae25c6e42e4d73691eb336c5",
+      "status": "unchanged"
+    },
+    {
+      "path": "_layouts/post.html",
+      "zip_sha256": "6e83e03a23723b883141b9b36b5a7f5c1375c5558a42887683748ddf699454f0",
+      "installed_sha256": "6e83e03a23723b883141b9b36b5a7f5c1375c5558a42887683748ddf699454f0",
+      "status": "unchanged"
+    },
+    {
+      "path": "_layouts/person.html",
+      "zip_sha256": "4a20ebf2e226ab4903a068924bfc4a5a98aa0803533c1e4be0abb707a4c835bc",
+      "installed_sha256": "4e61d540ce320f68b136aff8dac33da042d374f72e7f1b962cd3c5100d573935",
+      "status": "adapted"
+    },
+    {
+      "path": "_layouts/people.html",
+      "zip_sha256": "c93e5e16ed217d5575c32d411657a61f331d330e5b2c284d0a91252773d181b8",
+      "installed_sha256": "c93e5e16ed217d5575c32d411657a61f331d330e5b2c284d0a91252773d181b8",
+      "status": "unchanged"
+    },
+    {
+      "path": "_layouts/page.html",
+      "zip_sha256": "3f1d9a544de1d9db4b2c075d9eda925ba3fce08b5c56f4f8926ea201ac7e94eb",
+      "installed_sha256": "3f1d9a544de1d9db4b2c075d9eda925ba3fce08b5c56f4f8926ea201ac7e94eb",
+      "status": "unchanged"
+    },
+    {
+      "path": "_layouts/news.html",
+      "zip_sha256": "0dd76ec4e902039553519acc1d8dd67ce2d4201ed28c048787f02ff6effb233d",
+      "installed_sha256": "0dd76ec4e902039553519acc1d8dd67ce2d4201ed28c048787f02ff6effb233d",
+      "status": "unchanged"
+    },
+    {
+      "path": "_layouts/members.html",
+      "zip_sha256": "6c1ee4f57d2e0e016023e12fabe4d0d6356c51593b5991e1e0785a7e81e9fe11",
+      "installed_sha256": "6c1ee4f57d2e0e016023e12fabe4d0d6356c51593b5991e1e0785a7e81e9fe11",
+      "status": "unchanged"
+    },
+    {
+      "path": "_layouts/member.html",
+      "zip_sha256": "6e83e03a23723b883141b9b36b5a7f5c1375c5558a42887683748ddf699454f0",
+      "installed_sha256": "6e83e03a23723b883141b9b36b5a7f5c1375c5558a42887683748ddf699454f0",
+      "status": "unchanged"
+    },
+    {
+      "path": "_layouts/list.html",
+      "zip_sha256": "e212fb04422a3b03948281fc95d1f1b502c2a397b19446880a27e97a32af8039",
+      "installed_sha256": "e212fb04422a3b03948281fc95d1f1b502c2a397b19446880a27e97a32af8039",
+      "status": "unchanged"
+    },
+    {
+      "path": "_layouts/index.html",
+      "zip_sha256": "e31426eafeeb8a9a32a7e9cef9260f7c422f74a655431c70cedc3cf4f2e6b115",
+      "installed_sha256": "e31426eafeeb8a9a32a7e9cef9260f7c422f74a655431c70cedc3cf4f2e6b115",
+      "status": "unchanged"
+    },
+    {
+      "path": "_layouts/forms.html",
+      "zip_sha256": "66d49f33eb19f6cbb371ca19680da645e2b49055413b5496234b8535dd89fd4a",
+      "installed_sha256": "66d49f33eb19f6cbb371ca19680da645e2b49055413b5496234b8535dd89fd4a",
+      "status": "unchanged"
+    },
+    {
+      "path": "_layouts/events.html",
+      "zip_sha256": "44a220af308a71a4d4950c612fc6d9f40f4fd04807f0468ed6a907e29754fc64",
+      "installed_sha256": "44a220af308a71a4d4950c612fc6d9f40f4fd04807f0468ed6a907e29754fc64",
+      "status": "unchanged"
+    },
+    {
+      "path": "_layouts/event.html",
+      "zip_sha256": "6e83e03a23723b883141b9b36b5a7f5c1375c5558a42887683748ddf699454f0",
+      "installed_sha256": "6e83e03a23723b883141b9b36b5a7f5c1375c5558a42887683748ddf699454f0",
+      "status": "unchanged"
+    },
+    {
+      "path": "_layouts/default.html",
+      "zip_sha256": "9f7f22cbbcce7f9e91c7a97f44888f9f18ad60a86f71f27095085dfb8d3c5e55",
+      "installed_sha256": "c102e5a58954ace04d648021fbe6ab993fe57e57c99c6b35f14942e5fc3be536",
+      "status": "adapted"
+    },
+    {
+      "path": "_includes/where-next.html",
+      "zip_sha256": "288a45fa500de481b62ed3cb8935fe39b44b3f4cf3359e232e54a09c36cca0e2",
+      "installed_sha256": "288a45fa500de481b62ed3cb8935fe39b44b3f4cf3359e232e54a09c36cca0e2",
+      "status": "unchanged"
+    },
+    {
+      "path": "_includes/subscribe.html",
+      "zip_sha256": "801c22262218b64e7cac1c448464ad50217aa7aedcff9bd8c8164e16c42857d4",
+      "installed_sha256": "801c22262218b64e7cac1c448464ad50217aa7aedcff9bd8c8164e16c42857d4",
+      "status": "unchanged"
+    },
+    {
+      "path": "_includes/slider.html",
+      "zip_sha256": "fd1df9783bf15719eb1f9894489ff38ca56880ed5700f07fd82514664165af73",
+      "installed_sha256": "fd1df9783bf15719eb1f9894489ff38ca56880ed5700f07fd82514664165af73",
+      "status": "unchanged"
+    },
+    {
+      "path": "_includes/related-pages.html",
+      "zip_sha256": "bffa204561f49f5f1f792ec898339b8c24f3f41c3c3ffd241426eae69c602981",
+      "installed_sha256": "bffa204561f49f5f1f792ec898339b8c24f3f41c3c3ffd241426eae69c602981",
+      "status": "unchanged"
+    },
+    {
+      "path": "_includes/page-heading.html",
+      "zip_sha256": "0df35a16a96f556330fc39e5f2139bfcf7a5aeb6c714f1485787b56c3352bf0e",
+      "installed_sha256": "1db496405695150ec7deb925ee6d97c67be5f525df7aea85daa1bc7b73c1235b",
+      "status": "adapted"
+    },
+    {
+      "path": "_includes/listing.html",
+      "zip_sha256": "61a4d736ec148f8d30214c9bf0fe126cb76a70fa6323671c60aad1e4585d0957",
+      "installed_sha256": "3b86d2404659d162379426d8b144e1e1f98a0bf61b3da0f7fe29fffb8661430c",
+      "status": "adapted"
+    },
+    {
+      "path": "_includes/image-overlay.html",
+      "zip_sha256": "3b168268ecaf6ddb4f6f91d968caa9fe2243cec556477414100a4c215cae21ed",
+      "installed_sha256": "3b168268ecaf6ddb4f6f91d968caa9fe2243cec556477414100a4c215cae21ed",
+      "status": "unchanged"
+    },
+    {
+      "path": "_includes/hero.html",
+      "zip_sha256": "bf62555bd1e51abd705db28954b851bf3442d745ce488aaf3e8711578050c1ef",
+      "installed_sha256": "70a57af02f45f3e73a60205deac0f2846b05ffc9a2d07b194ba87ecd25805011",
+      "status": "adapted"
+    },
+    {
+      "path": "_includes/header.html",
+      "zip_sha256": "7d00fd19982284496daca780e24f2481d18143eedbdd04e51c41acff8711168d",
+      "installed_sha256": "7d00fd19982284496daca780e24f2481d18143eedbdd04e51c41acff8711168d",
+      "status": "unchanged"
+    },
+    {
+      "path": "_includes/form-fields.html",
+      "zip_sha256": "00f87aa2de23f2a9803138fdae5d28fc63cccaed82a3dbfa5ae9a61ca268b0d8",
+      "installed_sha256": "00f87aa2de23f2a9803138fdae5d28fc63cccaed82a3dbfa5ae9a61ca268b0d8",
+      "status": "unchanged"
+    },
+    {
+      "path": "_includes/footer.html",
+      "zip_sha256": "1fe6bf36a4867adc186c5a81f97b7cdf1ede5a780c27a9170378b591126653fa",
+      "installed_sha256": "1fe6bf36a4867adc186c5a81f97b7cdf1ede5a780c27a9170378b591126653fa",
+      "status": "unchanged"
+    },
+    {
+      "path": "_includes/breadcrumbs.html",
+      "zip_sha256": "20f5c73f16f95ceab06cf1260f0db324d9b810e0561141b3cef929f5ddd4df82",
+      "installed_sha256": "f07a5197193773012e93fc7789c252f8e77d6b8ff5aaccf79e86ce2c84ab5592",
+      "status": "adapted"
+    },
+    {
+      "path": "assets/js/slider.js",
+      "zip_sha256": "9e12ef5afe5ca8b4543cddbff5478967d629108623fd0ea888022cfdce3acca2",
+      "installed_sha256": "9e12ef5afe5ca8b4543cddbff5478967d629108623fd0ea888022cfdce3acca2",
+      "status": "unchanged"
+    },
+    {
+      "path": "assets/js/navigation.js",
+      "zip_sha256": "ec908658e384c31904049e07d537278de9c74e89ce192a5c917bb50f4ed8efcf",
+      "installed_sha256": "ec908658e384c31904049e07d537278de9c74e89ce192a5c917bb50f4ed8efcf",
+      "status": "unchanged"
+    },
+    {
+      "path": "assets/js/image-overlay.js",
+      "zip_sha256": "c079b157093b8a9abbfb6e672f109b557eeb494efff4283675ecd55b8809f210",
+      "installed_sha256": "c079b157093b8a9abbfb6e672f109b557eeb494efff4283675ecd55b8809f210",
+      "status": "unchanged"
+    },
+    {
+      "path": "assets/js/content.js",
+      "zip_sha256": "aaf230cb410cce2e15182e51e26c0a751ceb0125bfc74f6eae31b34bacfa8e39",
+      "installed_sha256": "aaf230cb410cce2e15182e51e26c0a751ceb0125bfc74f6eae31b34bacfa8e39",
+      "status": "unchanged"
+    },
+    {
+      "path": "assets/css/main.scss",
+      "zip_sha256": "8c46fc7b71c98f0e0738a24f992f768a6a8794108a024db0bc9bef41b95f5a7c",
+      "installed_sha256": "8c46fc7b71c98f0e0738a24f992f768a6a8794108a024db0bc9bef41b95f5a7c",
+      "status": "unchanged"
+    },
+    {
+      "path": "assets/images/social/slack.svg",
+      "zip_sha256": "9dc0adf5c3d34bdc0439930002dd3116f17fc427dcbd262107226b8a4c94f93c",
+      "installed_sha256": "9dc0adf5c3d34bdc0439930002dd3116f17fc427dcbd262107226b8a4c94f93c",
+      "status": "unchanged"
+    },
+    {
+      "path": "assets/images/social/mastodon.svg",
+      "zip_sha256": "b42991bdb393c74aec5f46cac5334d29994b76c7cd26af6cd8504924803a97e3",
+      "installed_sha256": "b42991bdb393c74aec5f46cac5334d29994b76c7cd26af6cd8504924803a97e3",
+      "status": "unchanged"
+    },
+    {
+      "path": "assets/images/social/linkedin.svg",
+      "zip_sha256": "6866f0d1f48cabe1f96a7ba1637324baa38180768203e840db3994374d9e82f9",
+      "installed_sha256": "6866f0d1f48cabe1f96a7ba1637324baa38180768203e840db3994374d9e82f9",
+      "status": "unchanged"
+    },
+    {
+      "path": "assets/images/social/LICENSE.txt",
+      "zip_sha256": "93539b9a998e4e68b0afc05946e9ff4d3d659c7771f31dda6380020027c6ebc2",
+      "installed_sha256": "93539b9a998e4e68b0afc05946e9ff4d3d659c7771f31dda6380020027c6ebc2",
+      "status": "unchanged"
+    },
+    {
+      "path": "assets/images/brand/logo-white.svg",
+      "zip_sha256": "300942a3af639c38858efc8301343d6fa5d974962e1d7fc2fd9b9fb14c555f62",
+      "installed_sha256": "300942a3af639c38858efc8301343d6fa5d974962e1d7fc2fd9b9fb14c555f62",
+      "status": "unchanged"
+    },
+    {
+      "path": "assets/images/brand/logo-blue.svg",
+      "zip_sha256": "e5e71b65000e93a27de232bd71946cb69bb382742e8b88aa5fd9bebc755f8d4d",
+      "installed_sha256": "e5e71b65000e93a27de232bd71946cb69bb382742e8b88aa5fd9bebc755f8d4d",
+      "status": "unchanged"
+    },
+    {
+      "path": "assets/images/brand/favicon-source.png",
+      "zip_sha256": "1ee6946b1c5bcb50d37c9bcebbd0a9d7946fe78b450094ef455127680a4c94a5",
+      "installed_sha256": "1ee6946b1c5bcb50d37c9bcebbd0a9d7946fe78b450094ef455127680a4c94a5",
+      "status": "unchanged"
+    },
+    {
+      "path": "assets/images/background/hexagons.svg",
+      "zip_sha256": "ee91d36f26c1507a247a2f2a8427d606167be8b3b0cf1480aa0bc579173750c5",
+      "installed_sha256": "ee91d36f26c1507a247a2f2a8427d606167be8b3b0cf1480aa0bc579173750c5",
+      "status": "unchanged"
+    },
+    {
+      "path": "assets/images/background/hexagons-light.webp",
+      "zip_sha256": "0b45e4e7b8668a8924ee8931b2cb2f1fc6f8b100f6b4fcb5c0f1fc10a45fec7d",
+      "installed_sha256": "0b45e4e7b8668a8924ee8931b2cb2f1fc6f8b100f6b4fcb5c0f1fc10a45fec7d",
+      "status": "unchanged"
+    },
+    {
+      "path": "assets/images/background/hexagons-dark.webp",
+      "zip_sha256": "5f173e4cff505bf093758ad6333b946512bfd487dd7982dc8b8dac0241962ac3",
+      "installed_sha256": "5f173e4cff505bf093758ad6333b946512bfd487dd7982dc8b8dac0241962ac3",
+      "status": "unchanged"
+    }
+  ],
+  "content_files_unchanged": 477,
+  "unchanged_zip_files": 48,
+  "adaptations": [
+    "Local Poppins font URL",
+    "Native Sass imports plus isolated functional adapters",
+    "Preserved source headings/anchors in native hero/page-heading includes",
+    "Source comparison boundaries and existing functional includes in default layout",
+    "Reuse existing portraits in native person layout",
+    "Directory data attributes and existing news/event card metadata",
+    "Runtime navigation binding; no template sample navigation or content"
+  ],
+  "retired_styles": [
+    "_sass/_website.scss",
+    "_sass/_migration-content.scss"
+  ],
+  "validation_script": "scripts/check_theme.py",
+  "content_preservation": "passed: all 477 editorial files byte-for-byte unchanged in this theme-only task",
+  "rendered_reference_validation": "reports/theme-validation.json"
+}

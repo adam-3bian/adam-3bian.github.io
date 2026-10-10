@@ -16,7 +16,7 @@ Andy Frame – SCI Semiconductor In the latter half of July I got the fantastic 
 
 *8 September 2025*{: .source-date }
 *CHERI Alliance news*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![RISC-V Summit welcome board](/assets/news/sci-semiconductor-and-the-cheri-alliance-at-risc-v-summit-in-china-july-2025/d01a1b459692-hero.jpg){: .image-full }
 {: .collection-detail__lead-image }

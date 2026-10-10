@@ -45,7 +45,7 @@ Open each event for current dates, venue information, calls for participation, a
 
 Upcoming
 Conference
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 12 to 13 November 2026
 SEMICON Europa, Munich, Germany
@@ -69,7 +69,7 @@ Past event pages preserve the technical programme and supporting material publis
 
 Past
 Online event
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 4 December 2025
 Online
@@ -88,7 +88,7 @@ View event archive
 
 Past
 Conference
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 14 November 2025
 Sister, Manchester, UK
@@ -110,12 +110,8 @@ View event archive
 {: .where-next-card-title }
 
 
-
-
-
 [A directory of speakers available for CHERI-related events, briefings, and discussions.](/news-and-events/people-and-opportunities/speakers/)
 {: .where-next-summary }
-
 
 
 [Continue](/news-and-events/people-and-opportunities/speakers/)
@@ -128,50 +124,32 @@ View event archive
 {: .related-pages-item-title }
 
 
-
-
-
 [A calendar of upcoming CHERI-related events, talks, workshops, and community sessions.](/news-and-events/events-and-archive/upcoming-events/)
 {: .related-pages-item-summary }
-
 
 
 [Read this page](/news-and-events/events-and-archive/upcoming-events/)
 {: .source-card-label }
 
 
-
-
-
 ### [CHERI Blossoms Conference](/news-and-events/events-and-archive/cheri-blossoms/)
 {: .related-pages-item-title }
-
-
-
 
 
 [Information about CHERI Blossoms Conference, including its purpose, audience, and current event details.](/news-and-events/events-and-archive/cheri-blossoms/)
 {: .related-pages-item-summary }
 
 
-
 [Read this page](/news-and-events/events-and-archive/cheri-blossoms/)
 {: .source-card-label }
-
-
-
 
 
 ### [Latest News](/news-and-events/news-and-analysis/latest-news/)
 {: .related-pages-item-title }
 
 
-
-
-
 [The latest CHERI Alliance and ecosystem announcements, presented with clear dates and sources.](/news-and-events/news-and-analysis/latest-news/)
 {: .related-pages-item-summary }
-
 
 
 [Read this page](/news-and-events/news-and-analysis/latest-news/)

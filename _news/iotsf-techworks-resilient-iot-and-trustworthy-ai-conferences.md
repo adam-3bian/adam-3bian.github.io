@@ -1,6 +1,7 @@
 ---
 title: IoTSF + TechWorks – Resilient IoT and Trustworthy AI Conferences
 date: '2025-11-04T14:31:10+00:00'
+authors: [adam-finney]
 ---
 
 1. News &amp; Events
@@ -16,7 +17,7 @@ Adam Finney – CHERI Alliance 30 October 2025, London – Event Recap The IoT S
 
 *4 November 2025*{: .source-date }
 *CHERI Alliance news*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![IoTSF + TechWorks – Resilient IoT and Trustworthy AI Conferences](/assets/shared/source-assets/dca93f847af6-cheriot-1-0-specification-released.png){: .image-full }
 {: .collection-detail__lead-image }

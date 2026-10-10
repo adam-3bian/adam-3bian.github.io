@@ -242,7 +242,7 @@ View speaker
 
 Upcoming
 Conference
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 12 to 13 November 2026
 SEMICON Europa, Munich, Germany
@@ -261,7 +261,7 @@ View event
 
 Past
 Conference
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 14 November 2025
 Sister, Manchester, UK

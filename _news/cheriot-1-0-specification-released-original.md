@@ -1,10 +1,11 @@
 ---
 title: CHERIoT 1.0 Specification Released
 alternate: true
+authors: [adam-finney]
 ---
 
 # CHERIoT 1.0 Specification Released
-{: .elementor-heading-title .elementor-size-default }
+
 
 *Adam Finney – **CHERI Alliance***
 
@@ -19,11 +20,6 @@ Looking forward, the project is working closely with RISC V International on the
 The CHERIoT 1.0 line will be supported for years through the open source CHERIoT Platform and through partner companies bringing CHERIoT based products to market. This release marks the beginning of a stable, long term foundation for secure, scalable microcontroller class systems.
 
 You can read David’s full announcement here: [https://cheriot.org/sail/specification/release/2025/11/03/cheriot-1.0.html](https://cheriot.org/sail/specification/release/2025/11/03/cheriot-1.0.html)
-
-
-
-
-
 
 
 For more information on CHERI and capability-based security, visit [cheri-alliance.org](http://cheri-alliance.org), or find us on [LinkedIn](https://www.linkedin.com/company/cheri-alliance/) or [Mastodon](https://infosec.exchange/@cheri_alliance).

@@ -1,6 +1,7 @@
 ---
 title: The leading Root-of-Trust now integrates CHERI security technology
 date: '2026-07-15T12:35:43+01:00'
+authors: [adam-finney]
 ---
 
 1. News &amp; Events
@@ -17,7 +18,7 @@ Adam Finney – CHERI Alliance If you are building secure hardware, the way you 
 *15 July 2026*{: .source-date }
 *Ecosystem*{: .collection-tag }
 *Members*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![OpenTitan chip](/assets/news/the-leading-root-of-trust-now-integrates-cheri-security-technology/903fec6d1c34-hero.jpg){: .image-full }
 {: .collection-detail__lead-image }

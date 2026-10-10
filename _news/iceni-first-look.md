@@ -18,7 +18,7 @@ For more than a decade, CHERI research has demonstrated that hardware enforced m
 *CHERI Alliance news*{: .collection-tag }
 *Ecosystem*{: .collection-tag }
 *Members*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![ICENI](/assets/news/iceni-first-look/36d8eddd801e-hero.png){: .image-full }
 {: .collection-detail__lead-image }

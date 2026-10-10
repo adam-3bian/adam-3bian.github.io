@@ -6,7 +6,7 @@ permalink: /competition-law-statement/
 ---
 
 # CHERI ALLIANCE CIC Statement of competition compliance
-{: .elementor-heading-title .elementor-size-default }
+
 
 **Version:** 1.0  
 **Date:** August 2024

@@ -16,7 +16,7 @@ The White House has published a report highlighting the need for “securing the
 
 *27 February 2024*{: .source-date }
 *Government / Regulation*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![The White House promotes CHERI as a solution for memory safety](/assets/news/the-white-house-promotes-cheri-as-a-solution-for-memory-safety/55e2916c5bcf-hero.jpg){: .image-full }
 {: .collection-detail__lead-image }

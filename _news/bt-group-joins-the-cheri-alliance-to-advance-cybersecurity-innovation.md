@@ -16,7 +16,7 @@ Cambridge, UK – 18 June 2025 – The CHERI Alliance, a global coalition dedica
 
 *18 June 2025*{: .source-date }
 *CHERI Alliance news*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![BT Group Joins the CHERI Alliance to Advance Cybersecurity Innovation](/assets/shared/source-assets/df8b50676c3b-working-group-spotlight-marketing.png){: .image-full }
 {: .collection-detail__lead-image }

@@ -17,7 +17,7 @@ In 2025 alone, global cybercrime costs reached an estimated $1.2 billion every m
 *17 June 2026*{: .source-date }
 *CHERI Alliance news*{: .collection-tag }
 *Members*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![Augmented reality showing a ship.](/assets/news/combatting-the-ai-threat-with-cheri/13658ea5e276-hero.png){: .image-full }
 {: .collection-detail__lead-image }

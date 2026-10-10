@@ -1,6 +1,7 @@
 ---
 title: CHERI or CHERIoT? The Answer Is Not What You Think
 date: '2025-12-01T10:00:57+00:00'
+authors: [adam-finney]
 ---
 
 1. News &amp; Events
@@ -17,7 +18,7 @@ Adam Finney – CHERI Alliance Interest in capability based security has grown r
 *1 December 2025*{: .source-date }
 *CHERI Alliance news*{: .collection-tag }
 *Ecosystem*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![CHERI or CHERIoT? The Answer Is Not What You Think](/assets/shared/source-assets/dca93f847af6-cheriot-1-0-specification-released.png){: .image-full }
 {: .collection-detail__lead-image }

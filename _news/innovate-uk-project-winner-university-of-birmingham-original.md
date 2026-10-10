@@ -1,38 +1,17 @@
 ---
 title: 'Innovate UK Project Winner: University of Birmingham'
 alternate: true
+authors: [mihai-ordean]
 ---
 
 # Innovate UK Project Winner: University of Birmingham
-{: .elementor-heading-title .elementor-size-default }
+
 
 Mihai Ordean – [University of Birmingham](/organisations/university-of-birmingham/)
-{: .elementor-widget-container .source-div-text }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 Innovate UK Project Winner
-{: .elementor-ribbon-inner .source-div-text }
+
 
 At the [University of Birmingham, in the Centre for Cyber Security and Privacy](/organisations/university-of-birmingham/), we have over 15 years of combined experience working on the CHERI (Capability Hardware Enhanced RISC Instructions) architectures. Over the years, we have made multiple contributions to the development of CHERI, with a particular focus on confidential computing and trusted execution. One of the domains where these advances can have significant impact is real-time operating systems (RTOS), which are widely used in embedded systems and IoT devices.
 

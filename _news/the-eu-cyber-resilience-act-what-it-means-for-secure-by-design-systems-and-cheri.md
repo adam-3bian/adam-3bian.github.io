@@ -1,6 +1,7 @@
 ---
 title: 'The EU Cyber Resilience Act: What It Means for Secure-by-Design Systems and CHERI'
 date: '2026-02-04T10:00:45+00:00'
+authors: [tariq-kurd]
 ---
 
 1. News &amp; Events
@@ -17,7 +18,7 @@ In 2025 alone, global cybercrime costs reached an estimated $1.2 billion every m
 *4 February 2026*{: .source-date }
 *CHERI Alliance news*{: .collection-tag }
 *Government / Regulation*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![EU Flag](/assets/shared/source-assets/d4c0d2560e6f-eu-flag.jpg){: .image-full }
 {: .collection-detail__lead-image }

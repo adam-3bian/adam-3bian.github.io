@@ -3,6 +3,7 @@
 import json
 import re
 import os
+from pathlib import Path
 from datetime import datetime, date
 from zoneinfo import ZoneInfo
 from urllib.error import HTTPError
@@ -99,6 +100,22 @@ for path in ['/alliance/membership/contact/', '/news-and-events/news-and-analysi
     check('form controls are labelled: ' + path, all(form.select_one(f'label[for="{control.get("id")}"]') for control in form.select('input,select,textarea')))
 
 check('people have reverse paper links', bool(page('/people/anthony-fox/').select('[data-relationship=papers] a[href]')))
+for kind in ('news', 'papers'):
+    for slug, item in groups[kind].items():
+        authors = item['meta'].get('authors', [])
+        if isinstance(authors, str):
+            authors = [authors]
+        links = page('/'+kind+'/'+slug+'/').select('[data-relationship=authors] a.card[href]')
+        check('linked authors: '+kind+'/'+slug, [link['href'] for link in links] == [prefix+'/people/'+author+'/' for author in authors])
+for slug in groups['people']:
+    articles = [item for news_id, item in groups['news'].items() if item['meta'].get('alternate') is not True and slug in item['meta'].get('authors', [])]
+    articles.sort(key=lambda item: (str(item['meta'].get('date', '')), item['meta']['title']), reverse=True)
+    expected_links = [prefix+'/news/'+Path(item['path']).stem+'/' for item in articles]
+    links = page('/people/'+slug+'/').select('[data-relationship=news] a.card[href]')
+    check('canonical news on author profile: '+slug, [link['href'] for link in links] == expected_links)
+    record = next(entry for entry in index if entry['url'] == prefix+'/people/'+slug+'/')
+    if articles:
+        check('news authors included in author filter: '+slug, 'author' in record['roles'])
 check('profiles interlink organisations, papers and events', all(page('/people/robert-watson/').select(f'[data-relationship={kind}] a[href]') for kind in ['organization', 'papers', 'events']))
 check('only governing board uses _data', {path.name for path in (ROOT / '_data').iterdir()} == {'governing-board.yml'})
 locations = {node.text for node in ElementTree.parse(SITE / 'sitemap.xml').findall('.//{http://www.sitemaps.org/schemas/sitemap/0.9}loc')}

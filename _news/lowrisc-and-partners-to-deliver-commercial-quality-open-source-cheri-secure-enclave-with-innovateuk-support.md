@@ -18,7 +18,7 @@ lowRISC CIC and Capabilities Limited, two founding members of the CHERI Alliance
 *CHERI Alliance news*{: .collection-tag }
 *Ecosystem*{: .collection-tag }
 *Members*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure Enclave with InnovateUK Support](/assets/shared/source-assets/dca93f847af6-cheriot-1-0-specification-released.png){: .image-full }
 {: .collection-detail__lead-image }

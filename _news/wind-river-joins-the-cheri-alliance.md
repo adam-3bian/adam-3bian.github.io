@@ -18,7 +18,7 @@ We are pleased to welcome Wind River to the CHERI Alliance, marking another impo
 *CHERI Alliance news*{: .collection-tag }
 *Ecosystem*{: .collection-tag }
 *Members*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![Welcome Wind Rover - CHERI Alliance member](/assets/news/wind-river-joins-the-cheri-alliance/21bf3b105ad6-hero.png){: .image-full }
 {: .collection-detail__lead-image }
@@ -30,7 +30,6 @@ Building on its existing work with CHERI, Wind River was recently awarded a cont
 The addition of Wind River is a significant boost to our mission to accelerate CHERI adoption. By combining proven, industry-grade software with CHERI’s hardware-enforced protections, we move closer to reducing entire classes of memory safety vulnerabilities across critical infrastructure and intelligent edge devices.
 
 We look forward to working with Wind River as part of the Alliance.
-
 
 
 [Read the full announcement in Wind River’s press release.](https://www.windriver.com/news/press/news-20260421)

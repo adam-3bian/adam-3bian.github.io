@@ -1,9 +1,9 @@
 {
   "status": "passed",
   "baseurl": "/cheri-alliance-content",
-  "search_records": 453,
+  "search_records": 456,
   "directory_counts": {
-    "/people/": 109,
+    "/people/": 112,
     "/organisations/": 69,
     "/alliance/leadership/members/": 52,
     "/news-and-events/people-and-opportunities/speakers/": 60,
@@ -20,7 +20,7 @@
     {
       "check": "search routes are unique, titled and present",
       "status": "passed",
-      "detail": 453
+      "detail": 456
     },
     {
       "check": "search omits archived editions and error pages",
@@ -128,16 +128,6 @@
       "detail": null
     },
     {
-      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/debug-and-disassemble/answers.html",
-      "status": "passed",
-      "detail": null
-    },
-    {
-      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/debug-and-disassemble/answers.html",
-      "status": "passed",
-      "detail": null
-    },
-    {
       "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-stack/answers.html",
       "status": "passed",
       "detail": null
@@ -158,22 +148,12 @@
       "detail": null
     },
     {
-      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/control-flow-pointer/answers.html",
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/cheri-tags/answers.html",
       "status": "passed",
       "detail": null
     },
     {
-      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/control-flow-pointer/answers.html",
-      "status": "passed",
-      "detail": null
-    },
-    {
-      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/type-confusion/answers.html",
-      "status": "passed",
-      "detail": null
-    },
-    {
-      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/type-confusion/answers.html",
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/cheri-tags/answers.html",
       "status": "passed",
       "detail": null
     },
@@ -188,12 +168,22 @@
       "detail": null
     },
     {
-      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/cheri-tags/answers.html",
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/control-flow-pointer/answers.html",
       "status": "passed",
       "detail": null
     },
     {
-      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/cheri-tags/answers.html",
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/control-flow-pointer/answers.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/debug-and-disassemble/answers.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/debug-and-disassemble/answers.html",
       "status": "passed",
       "detail": null
     },
@@ -204,6 +194,16 @@
     },
     {
       "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/subobject-bounds/answers.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/type-confusion/answers.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/type-confusion/answers.html",
       "status": "passed",
       "detail": null
     },
@@ -778,22 +778,22 @@
       "detail": null
     },
     {
-      "check": "canonical: /cheri-alliance-content/reference/linux-roadmap/goals/index.html",
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/appendix/index.html",
       "status": "passed",
       "detail": null
     },
     {
-      "check": "search includes complete readable body: /cheri-alliance-content/reference/linux-roadmap/goals/index.html",
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/appendix/index.html",
       "status": "passed",
       "detail": null
     },
     {
-      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/introduction/index.html",
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/cover/index.html",
       "status": "passed",
       "detail": null
     },
     {
-      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/introduction/index.html",
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/cover/index.html",
       "status": "passed",
       "detail": null
     },
@@ -804,16 +804,6 @@
     },
     {
       "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-global/index.html",
-      "status": "passed",
-      "detail": null
-    },
-    {
-      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/debug-and-disassemble/index.html",
-      "status": "passed",
-      "detail": null
-    },
-    {
-      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/debug-and-disassemble/index.html",
       "status": "passed",
       "detail": null
     },
@@ -838,22 +828,12 @@
       "detail": null
     },
     {
-      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/control-flow-pointer/index.html",
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/cheri-tags/index.html",
       "status": "passed",
       "detail": null
     },
     {
-      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/control-flow-pointer/index.html",
-      "status": "passed",
-      "detail": null
-    },
-    {
-      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/type-confusion/index.html",
-      "status": "passed",
-      "detail": null
-    },
-    {
-      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/type-confusion/index.html",
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/cheri-tags/index.html",
       "status": "passed",
       "detail": null
     },
@@ -868,12 +848,22 @@
       "detail": null
     },
     {
-      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/cheri-tags/index.html",
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/control-flow-pointer/index.html",
       "status": "passed",
       "detail": null
     },
     {
-      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/cheri-tags/index.html",
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/control-flow-pointer/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/debug-and-disassemble/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/debug-and-disassemble/index.html",
       "status": "passed",
       "detail": null
     },
@@ -888,6 +878,16 @@
       "detail": null
     },
     {
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/type-confusion/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/type-confusion/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
       "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/index.html",
       "status": "passed",
       "detail": null
@@ -898,32 +898,12 @@
       "detail": null
     },
     {
-      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/cover/index.html",
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/introduction/index.html",
       "status": "passed",
       "detail": null
     },
     {
-      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/cover/index.html",
-      "status": "passed",
-      "detail": null
-    },
-    {
-      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/appendix/index.html",
-      "status": "passed",
-      "detail": null
-    },
-    {
-      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/appendix/index.html",
-      "status": "passed",
-      "detail": null
-    },
-    {
-      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/missions/uninitialized-stack-frame-control-flow/index.html",
-      "status": "passed",
-      "detail": null
-    },
-    {
-      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/missions/uninitialized-stack-frame-control-flow/index.html",
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/introduction/index.html",
       "status": "passed",
       "detail": null
     },
@@ -938,12 +918,32 @@
       "detail": null
     },
     {
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/missions/uninitialized-stack-frame-control-flow/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/missions/uninitialized-stack-frame-control-flow/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
       "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/missions/index.html",
       "status": "passed",
       "detail": null
     },
     {
       "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/missions/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/linux-roadmap/goals/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/linux-roadmap/goals/index.html",
       "status": "passed",
       "detail": null
     },
@@ -1188,22 +1188,22 @@
       "detail": null
     },
     {
-      "check": "canonical: /cheri-alliance-content/reference/linux-roadmap/print.html",
-      "status": "passed",
-      "detail": null
-    },
-    {
-      "check": "search includes complete readable body: /cheri-alliance-content/reference/linux-roadmap/print.html",
-      "status": "passed",
-      "detail": null
-    },
-    {
       "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/print.html",
       "status": "passed",
       "detail": null
     },
     {
       "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/print.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/linux-roadmap/print.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/linux-roadmap/print.html",
       "status": "passed",
       "detail": null
     },
@@ -1698,6 +1698,16 @@
       "detail": null
     },
     {
+      "check": "canonical: /cheri-alliance-content/people/benjamin-fletcher/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/benjamin-fletcher/",
+      "status": "passed",
+      "detail": null
+    },
+    {
       "check": "canonical: /cheri-alliance-content/people/bradley-finn/",
       "status": "passed",
       "detail": null
@@ -1974,6 +1984,16 @@
     },
     {
       "check": "search includes complete readable body: /cheri-alliance-content/people/jianyi-cheng/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/jim-wallace/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/jim-wallace/",
       "status": "passed",
       "detail": null
     },
@@ -2274,6 +2294,16 @@
     },
     {
       "check": "search includes complete readable body: /cheri-alliance-content/people/michael-roe/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/mihai-ordean/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/mihai-ordean/",
       "status": "passed",
       "detail": null
     },
@@ -4560,7 +4590,7 @@
     {
       "check": "directory inventory: /people/",
       "status": "passed",
-      "detail": 109
+      "detail": 112
     },
     {
       "check": "directory inventory: /organisations/",
@@ -4785,6 +4815,976 @@
     },
     {
       "check": "people have reverse paper links",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/ai-has-compressed-the-attack-timeline",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/behind-the-scenes-inside-the-promotion-and-ambassador-program-working-group",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/beyond-software-patching",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/bt-group-joins-the-cheri-alliance-to-advance-cybersecurity-innovation",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/building-a-safer-digital-future",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/cheri-alliance-to-distribute-arm-morello-boards-the-journey-beyond-dsbd-continues",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/cheri-memory-safety-mitigates-llm-discovered-vulnerability-in-freebsd",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/cheri-or-cheriot-the-answer-is-not-what-you-think-original",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/cheri-or-cheriot-the-answer-is-not-what-you-think",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/cheri-sel4-and-cheri-microkit-released",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/cheri-tag-bit-transport-overlay-standard-version-0-9-released",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/cheri-zephyr-v0-4-0-release",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/cheriot-1-0-specification-released-original",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/cheriot-1-0-specification-released",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/codasip-enables-secure-linux-by-donating-cheri-risc-v-sdk-to-the-cheri-alliance",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology-original",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/combatting-the-ai-threat-with-cheri",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/cybersecurity-by-design-from-research-to-industry-conference-report",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/end-users-demand-memory-safety-in-their-systems",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/iceni-first-look",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/initial-members-join-cheri-alliance-to-drive-adoption-of-memory-safety-and-scalable-software-compartmentalization",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/innovate-uk-project-winner-university-of-birmingham-original",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/innovate-uk-project-winner-university-of-birmingham",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/introducing-the-cheri-adoption-global-ecosystem-assessment-q1-2026",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences-original",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support-original",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/lowrisc-and-sci-semiconductor-release-sunburst-chip-repository-for-secure-microcontroller-development",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd-original",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/one-bug-is-all-it-takes",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl-original",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/sci-semiconductor-and-the-cheri-alliance-at-risc-v-summit-in-china-july-2025",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/secure-and-resilient-systems-in-the-era-of-cra-and-iot",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software-original",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/siemens-joins-the-cheri-alliance-a-united-front-for-cutting-edge-cybersecurity",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/streamlining-the-cheri-ecosystem-an-update-from-the-repository-management-working-group",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/the-capable-hub-joins-the-cheri-alliance-to-accelerate-cybersecurity-collaboration",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/the-eu-cyber-resilience-act-what-it-means-for-secure-by-design-systems-and-cheri",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/the-leading-root-of-trust-now-integrates-cheri-security-technology",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/the-white-house-promotes-cheri-as-a-solution-for-memory-safety",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/towards-a-reference-qemu-for-cheri-platform-emulation",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/uk-government-report-highlights-the-cheri-alliance",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/unlocking-the-future-a-roadmap-for-cheri-technology-advancement",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/why-codasip-went-all-in-on-cheri",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/wind-river-joins-the-cheri-alliance",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/working-group-spotlight-marketing",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: papers/cheri-concentrate-practical-compressed-capabilities",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: papers/cheri-hardware-enabled-c-c-memory-protection-at-scale",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: papers/cheriot-complete-memory-safety-for-embedded-devices",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: papers/cornucopia-temporal-safety-for-cheri-heaps",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "linked authors: papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: a-theodore-markettos",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: adam-finney",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "news authors included in author filter: adam-finney",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: alastair-beresford",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: alex-rebert",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: alex-richardson",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: alexander-voyevoda",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: alexandre-joannou",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: alfredo-mazzinghi",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "news authors included in author filter: alfredo-mazzinghi",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: allison-randal",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: andrew-lindsay",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "news authors included in author filter: andrew-lindsay",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: andrew-murray",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: andy-moore",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: anthony-fox",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: ashish-darbari",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: ben-fletcher",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: ben-laurie",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: benjamin-fletcher",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "news authors included in author filter: benjamin-fletcher",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: bradley-finn",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: brett-f-gutstein",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: brian-campbell",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: brooks-davis",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "news authors included in author filter: brooks-davis",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: carl-shaw",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: dave-harcourt",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: david-chisnall",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: david-musliner",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: dmitriy-yeliseyev",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: domagoj-stolfa",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: donato-ferraro",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: edoardo-marangoni",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: edward-tomasz-napieraa",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: gavin-ferris",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: graeme-barnes",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: graeme-jenkinson",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: hamed-okhravi",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: haydn-povey",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: hesham-almatary",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: hongyan-xia",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: hugo-lefeuvre",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: hugo-vincent",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: ian-stark",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: javier-orensanz-martinez",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: jennifer-jackson",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "news authors included in author filter: jennifer-jackson",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: jeremy-singer",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: jessica-clarke",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: jianyi-cheng",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: jim-wallace",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "news authors included in author filter: jim-wallace",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: johannes-muller",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: john-baldwin",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: john-goodacre",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: john-thomson",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: jonathan-anderson",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: jonathan-woodruff",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: joshua-lant",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: ka-wing-li",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: kathleen-fisher",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: kayvan-memarian",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: kevin-brodsky",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: khilan-gudka",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: konrad-witaszczyk",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: kunyan-liu",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: kyndylan-nienhuis",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: laurence-tratt",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: louis-emile-ploix",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: luca-muller",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: lucian-paul-trifu",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: maika-fohrenbach",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: manu-ravishankar",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: margo-seltzer",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: mark-batty",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: mark-hill",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: mark-johnston",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: marno-van-der-maas",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "news authors included in author filter: marno-van-der-maas",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: martin-atkins",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: matthew-naylor",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: merve-gulmez",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: michael-roe",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: mihai-ordean",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "news authors included in author filter: mihai-ordean",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: mike-eftimakis",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "news authors included in author filter: mike-eftimakis",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: mike-halsall",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: munraj-vadera",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: murali-vijayaraghavan",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: murat-cakmak",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: nathaniel-wesley-filardo",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: nirav-dave",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: ollie-whitehouse",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: paul-metzger",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: paul-waller",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: peter-cox",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: peter-g-neumann",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: peter-rugg",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: peter-sewell",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: phil-day",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: ricardo-almeida",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: richard-grisenthwaite",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: robert-m-norton",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: robert-norton-wright",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: robert-watson",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: saar-amar",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: sam-ainsworth",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: sam-cater",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: samuel-stark",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: simon-moore",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: stacey-son",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: steven-j-murdoch",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: tariq-kurd",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "news authors included in author filter: tariq-kurd",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: thomas-bauereiss",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: thomas-nyman",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: timothy-m-jones",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: tony-chen",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: tora-fridholm",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: vadim-zaliva",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical news on author profile: yucong-tao",
       "status": "passed",
       "detail": null
     },

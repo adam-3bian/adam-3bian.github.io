@@ -10,6 +10,11 @@ from capture import ROOT, write_csv
 from state import update_conversion,CONVERSION_FIELDS
 from site_model import document, collections, canonical_url, canonical_signature
 
+def editorial_class(name):
+    """Keep semantic styling, without importing CMS-specific presentation."""
+    return not (name.startswith(('elementor-', 'wp-', 'widget-', 'tablepress'))
+                or name in {'entry-title', 'source-div-text'})
+
 class Converter(MarkdownConverter):
     """Editorial content uses Kramdown only; presentation belongs to layouts."""
     def escape(self,text,parent_tags):
@@ -22,7 +27,7 @@ class Converter(MarkdownConverter):
     def attributes(self,el,extra=()):
         attrs=[]
         if el.get('id'):attrs.append('id="'+str(el['id']).replace('"','&quot;')+'"')
-        attrs.extend('.'+c for c in list(el.get('class',[]))+list(extra))
+        attrs.extend('.'+c for c in list(el.get('class',[]))+list(extra) if editorial_class(c))
         return '\n{: '+' '.join(attrs)+' }' if attrs else ''
     def emphasis(self,text,marker):
         core=text.strip()

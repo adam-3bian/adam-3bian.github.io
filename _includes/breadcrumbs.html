@@ -1,0 +1,22 @@
+{% if page.rendered_breadcrumbs %}
+<nav class="breadcrumbs" aria-label="Breadcrumb">{{ page.rendered_breadcrumbs }}</nav>
+{% else %}
+{% if page.parent %}
+  {% assign ancestor_url = page.parent %}
+  {% assign ancestor_items = '' %}
+  {% capture visited %}|{{ page.url }}|{% endcapture %}
+  {% for depth in (1..12) %}
+    {% assign ancestor = all_pages | where: 'url', ancestor_url | first %}
+    {% capture marker %}|{{ ancestor_url }}|{% endcapture %}
+    {% if ancestor == nil or visited contains marker %}{% break %}{% endif %}
+    {% capture visited %}{{ visited }}{{ marker }}{% endcapture %}
+    {% capture ancestor_items %}<li><a href="{{ ancestor.url | relative_url | escape }}">{{ ancestor['nav-title'] | default: ancestor.title | escape }}</a></li>{{ ancestor_items }}{% endcapture %}
+    {% unless ancestor.parent %}{% break %}{% endunless %}
+    {% assign ancestor_url = ancestor.parent %}
+  {% endfor %}
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>{{ ancestor_items }}<li><span aria-current="page">{{ page['nav-title'] | default: page.title | escape }}</span></li></ol>
+  </nav>
+{% endif %}
+
+{% endif %}

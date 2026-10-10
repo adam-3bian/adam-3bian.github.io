@@ -1,6 +1,7 @@
 ---
 title: Codasip Powers UK Digital Security by Design Innovation Contracts with CHERI Technology
 date: '2025-12-10T10:00:29+00:00'
+authors: [andrew-lindsay]
 ---
 
 1. News &amp; Events
@@ -18,7 +19,7 @@ Andrew Lindsay – Codasip Codasip’s CHERI-RISC-V processors and exploration k
 *CHERI Alliance news*{: .collection-tag }
 *Ecosystem*{: .collection-tag }
 *Members*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![Codasip Powers UK Digital Security by Design Innovation Contracts with CHERI Technology](/assets/shared/source-assets/5a6300ace656-cheri.png){: .image-full }
 {: .collection-detail__lead-image }

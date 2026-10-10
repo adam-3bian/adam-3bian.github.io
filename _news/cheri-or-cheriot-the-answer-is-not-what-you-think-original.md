@@ -1,10 +1,11 @@
 ---
 title: CHERI or CHERIoT? The Answer Is Not What You Think
 alternate: true
+authors: [adam-finney]
 ---
 
 # CHERI or CHERIoT? The Answer Is Not What You Think
-{: .elementor-heading-title .elementor-size-default }
+
 
 *Adam Finney – **CHERI Alliance***
 

@@ -1,0 +1,7 @@
+---
+layout: page
+---
+{% assign events = site.events | where_exp: 'item', 'item.redirect_to == nil' | sort: 'date' %}
+{% include listing.html items=events label=page.title action="View event" columns=page.listing.columns %}
+
+{{ content }}

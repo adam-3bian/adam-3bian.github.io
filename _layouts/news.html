@@ -1,0 +1,7 @@
+---
+layout: default
+---
+{% assign articles = site.posts | sort: 'date' | reverse %}
+{% include listing.html items=articles label="News articles" action="Read article" columns=page.listing.columns %}
+
+{{ content }}

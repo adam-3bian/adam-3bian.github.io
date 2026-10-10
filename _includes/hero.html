@@ -1,0 +1,20 @@
+{% if page.hero %}
+<section class="hero{% if page.hero.size == 'large' %} hero-large{% endif %}"{% if page.rendered_heading and page.heading_id == nil %} aria-label="{{ page.title | escape }}"{% else %} aria-labelledby="{{ page.heading_id | default: 'hero-title' | escape }}"{% endif %}>
+  <div class="hero-intro">
+    {% if page.rendered_heading %}{{ page.rendered_heading }}{% else %}
+    <h1 id="hero-title">{{ page.hero.title | default: page.title | escape }}</h1>
+    {% if page.date %}<span class="meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%-d %B %Y' }}</time>{% if page['end-date'] %} &ndash; <time datetime="{{ page['end-date'] | date_to_xmlschema }}">{{ page['end-date'] | date: '%-d %B %Y' }}</time>{% endif %}
+    </span>{% endif %}
+    {% if page.collection == 'posts' %}
+      {% assign author = page.author | default: '' | strip %}
+      {% assign company = page.company | default: '' | strip %}
+      {% if author != '' or company != '' %}
+    <p class="meta byline">{% if author != '' %}{{ author | escape }}{% endif %}{% if author != '' and company != '' %} · {% endif %}{% if company != '' %}{{ company | escape }}{% endif %}</p>
+      {% endif %}
+    {% endif %}
+    {{ heading_intro }}
+    {% endif %}
+  </div>
+</section>
+{% endif %}

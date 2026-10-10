@@ -18,7 +18,7 @@ Strengthening the CHERI ecosystem through Open-Source innovation We are excited 
 *CHERI Alliance news*{: .collection-tag }
 *Ecosystem*{: .collection-tag }
 *Members*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![Welcome The Capable Hub](/assets/news/the-capable-hub-joins-the-cheri-alliance-to-accelerate-cybersecurity-collaboration/e99d863fe4-hero.png){: .image-full }
 {: .collection-detail__lead-image }

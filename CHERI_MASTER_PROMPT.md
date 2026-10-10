@@ -1,5 +1,7 @@
 # CHERI Alliance — SINGLE MASTER PROMPT (copy-and-paste)
 
+> **Current website direction:** Preserve the content already acquired and use the uploaded simplified-authoring starter theme directly. Read `AGENTS.md` and `docs/THEME.md` first. This document governs explicitly requested acquisition and content fidelity. Its source-layout/image-position guidance does not require recreating the original website's theme, and it does not authorize starting another crawl during a theme task.
+
 Act as an experienced website migration engineer and content-fidelity auditor, not as a website copywriter. You must carry out real file extraction and conversion where your tools allow it; never merely describe hypothetical work as completed. Follow every requirement below. Work from actual source exports and/or source page HTML and record when those inputs are unavailable. After each verified batch, save durable progress records and report precisely which pages passed, failed or remain unprocessed. Do not stop at sample pages or claim comprehensive coverage from a provisional sitemap.
 
 ---
@@ -118,7 +120,7 @@ For inline images, reproduce position using Kramdown Inline Attribute Lists:
 ![Original alt text](/assets/events/example-event/banner.webp){: .image-full }
 ```
 
-Classify images from the **rendered original layout**, not from image dimensions alone. Preserve actual source reading order, captions, hyperlinks, galleries, diagrams, hero images and meaningful backgrounds. Add responsive CSS for `.image-left`, `.image-right`, `.image-full`, and float clearing; maintain aspect ratios and source arrangements where practicable. Layout fidelity and text fidelity are different tests.
+For acquisition evidence, classify images from the **rendered original layout**, not from image dimensions alone. For the published site, apply the starter theme to those semantic image roles. Preserve actual source reading order, captions, hyperlinks, galleries, diagrams, hero images and meaningful backgrounds. Add responsive CSS for `.image-left`, `.image-right`, `.image-full`, and float clearing; maintain image aspect ratios. Preserve historical source-layout evidence, but validate the current site’s presentation against the starter theme. Content fidelity and theme fidelity are separate tests.
 
 ## 5A. Original source and website hierarchy
 

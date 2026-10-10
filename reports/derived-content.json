@@ -471,11 +471,11 @@
   },
   {
     "path": "_people/edward-tomasz-napieraa.md",
-    "title": "Edward Tomasz Napierała",
+    "title": "Edward Tomasz Napiera\u0142a",
     "type": "paper-author",
     "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
     "source_names": [
-      "Edward Tomasz Napierała"
+      "Edward Tomasz Napiera\u0142a"
     ],
     "papers": [
       "deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c",
@@ -747,6 +747,43 @@
     ],
     "papers": [
       "cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat"
+    ]
+  },
+  {
+    "path": "_people/jim-wallace.md",
+    "title": "Jim Wallace",
+    "type": "news-author",
+    "source_url": "https://cheri-alliance.org/beyond-software-patching/",
+    "source_names": [
+      "Jim Wallace"
+    ],
+    "news": [
+      "beyond-software-patching"
+    ]
+  },
+  {
+    "path": "_people/benjamin-fletcher.md",
+    "title": "Benjamin Fletcher",
+    "type": "news-author",
+    "source_url": "https://cheri-alliance.org/cheri-tag-bit-transport-overlay-standard-version-0-9-released/",
+    "source_names": [
+      "Benjamin Fletcher"
+    ],
+    "news": [
+      "cheri-tag-bit-transport-overlay-standard-version-0-9-released"
+    ]
+  },
+  {
+    "path": "_people/mihai-ordean.md",
+    "title": "Mihai Ordean",
+    "type": "news-author",
+    "source_url": "https://cheri-alliance.org/innovate-uk-project-winner-university-of-birmingham/",
+    "source_names": [
+      "Mihai Ordean"
+    ],
+    "news": [
+      "innovate-uk-project-winner-university-of-birmingham-original",
+      "innovate-uk-project-winner-university-of-birmingham"
     ]
   }
 ]

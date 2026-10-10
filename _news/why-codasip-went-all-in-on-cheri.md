@@ -17,7 +17,7 @@ Interview with Ron Black, CEO of Codasip Codasip is a founding member of the CHE
 *29 April 2026*{: .source-date }
 *Ecosystem*{: .collection-tag }
 *Members*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![Ron Black in an office with the Codasip and CHERI Alliance member logos](/assets/news/why-codasip-went-all-in-on-cheri/4bc1f676007d-hero.jpg){: .image-full }
 {: .collection-detail__lead-image }

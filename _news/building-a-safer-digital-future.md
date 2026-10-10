@@ -16,7 +16,7 @@ The conversation around software memory safety is reaching a critical turning po
 
 *5 February 2025*{: .source-date }
 *CHERI Alliance news*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![A CPU with padlocks and protective shielding](/assets/news/building-a-safer-digital-future/87eb1aa83796-hero.png){: .image-full }
 {: .collection-detail__lead-image }

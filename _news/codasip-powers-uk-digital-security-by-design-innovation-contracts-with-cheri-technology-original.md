@@ -1,20 +1,21 @@
 ---
 title: Codasip Powers UK Digital Security by Design Innovation Contracts with CHERI Technology
 alternate: true
+authors: [andrew-lindsay]
 ---
 
 # Codasip Powers UK Digital Security by Design Innovation Contracts with CHERI Technology
-{: .elementor-heading-title .elementor-size-default }
+
 
 Andrew Lindsay – [Codasip](/organisations/codasip/)
-{: .elementor-widget-container .source-div-text }
+
 
 **Codasip’s CHERI-RISC-V processors and exploration kit enable breakthrough secure chip development and accelerate software innovation**
 
 The UK government’s ambitious Digital Security by Design initiative continues to gain momentum, with [Codasip](/organisations/codasip/) playing a pivotal role in two key innovation contracts [announced as part of the program’s £21 million investment to advance hardware-based cybersecurity technology](/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software-original/).
 
 ## EnSilica Partnership Delivers Quantum-Resilient Security Chip
-{: .elementor-heading-title .elementor-size-default }
+
 
 EnSilica has been awarded a £5 million ‘Contract for Innovation’ by the UK Government’s Department for Science, Innovation and Technology (DSIT) to develop a quantum-resilient secure processor chip for critical national infrastructure applications. At the heart of this groundbreaking development is [Codasip](/organisations/codasip/)‘s CHERI-RISC-V CPU technology.
 
@@ -27,7 +28,7 @@ The resulting commercial-off-the-shelf (COTS) CHERI-compliant secure processor c
 Ian Lankshear, Chief Executive of EnSilica, added: “Partnering with [Codasip](/organisations/codasip/) allows us to bring commercial-grade CHERI-enabled security into our next-generation secure quantum-resilient microcontroller.”
 
 ## Codasip Prime Enables Software Innovation Across Multiple Projects
-{: .elementor-heading-title .elementor-size-default }
+
 
 Beyond hardware development, [Codasip](/organisations/codasip/) is accelerating CHERI software adoption through its comprehensive exploration kit, [Codasip Prime](https://codasip.com/solutions/riscv-processor-safety-security/cheri/codasip-prime/). This platform is being provided to numerous Digital Security by Design contract winners working on software development and operating system porting initiatives.
 
@@ -44,7 +45,7 @@ The kit features:
 “[Codasip Prime](https://codasip.com/solutions/riscv-processor-safety-security/cheri/codasip-prime/) allows software developers to create and evaluate their applications before chips are built,” explained Jamie Broome, Codasip’s chief product officer. “In addition to hardware IP and software, we offer engineering support from our CHERI experts.”
 
 ## Advancing the CHERI Ecosystem
-{: .elementor-heading-title .elementor-size-default }
+
 
 [Codasip](/organisations/codasip/) is a founding member of the CHERI Alliance, whose engineers have played a key role in defining the CHERI-RISC-V specification, and whose embedded cores have earned industry recognition.
 
@@ -53,13 +54,13 @@ The company’s processors are developed in line with ISO 26262 functional safet
 The UK government has allocated £21 million to advance hardware-based cybersecurity technology designed to counter up to 70% of common cyberattacks through the CHERI security architecture. Almost £15 million is being distributed via the Advancing CHERI RISC-V Devices competition to three companies: EnSilica, SCI Semiconductor, and lowRISC.
 
 ## About CHERI Technology
-{: .elementor-heading-title .elementor-size-default }
+
 
 CHERI represents a transformative hardware security architecture designed to mitigate memory safety vulnerabilities, one of the most significant sources of modern cyberattacks, and provides fine-grained compartmentalisation to increase software robustness and resilience.
 
 Memory safety vulnerabilities are used in up to 87% of cyberattack chains according to one study, with losses due to the well-known Heartbleed bug estimated to exceed $500 million. CHERI is the most cost-effective way to protect against memory safety vulnerabilities, as it is backwards compatible, allows migration to safer code, and makes C/C++ memory safe, avoiding costly software re-writes.
 
 ### About Codasip
-{: .elementor-heading-title .elementor-size-default }
+
 
 [Codasip](/organisations/codasip/) is a processor technology company enabling system-on-chip developers to differentiate their products for competitive advantage. As a founding member of the CHERI Alliance, [Codasip](/organisations/codasip/) is at the forefront of delivering commercial CHERI-RISC-V processor solutions that combine hardware-enforced memory safety with high performance and functional safety compliance.

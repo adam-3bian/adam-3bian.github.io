@@ -990,6 +990,11 @@
     "status": "passed"
   },
   {
+    "path": "_people/benjamin-fletcher.md",
+    "format": "yaml-front-matter-and-kramdown-only",
+    "status": "passed"
+  },
+  {
     "path": "_people/bradley-finn.md",
     "format": "yaml-front-matter-and-kramdown-only",
     "status": "passed"
@@ -1126,6 +1131,11 @@
   },
   {
     "path": "_people/jianyi-cheng.md",
+    "format": "yaml-front-matter-and-kramdown-only",
+    "status": "passed"
+  },
+  {
+    "path": "_people/jim-wallace.md",
     "format": "yaml-front-matter-and-kramdown-only",
     "status": "passed"
   },
@@ -1276,6 +1286,11 @@
   },
   {
     "path": "_people/michael-roe.md",
+    "format": "yaml-front-matter-and-kramdown-only",
+    "status": "passed"
+  },
+  {
+    "path": "_people/mihai-ordean.md",
     "format": "yaml-front-matter-and-kramdown-only",
     "status": "passed"
   },

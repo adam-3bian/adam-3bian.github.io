@@ -17,6 +17,8 @@ checks = paths.flat_map { |path| Dir.glob(File.join(root, path, '**', '*.md')) }
   document = Kramdown::Document.new(body, input: 'Kramdown', auto_ids: false)
   walk = lambda do |node|
     raise "Raw HTML content in #{path}: #{node.type}" if [:html_element, :xml_comment, :xml_pi].include?(node.type)
+    cms_classes = node.attr.fetch('class', '').split.select { |name| name.match?(/\A(?:elementor-|wp-|widget-|tablepress)/) || %w[entry-title source-div-text].include?(name) }
+    raise "CMS formatting in #{path}: #{cms_classes.join(', ')}" unless cms_classes.empty?
     if node.type == :img
       classes = node.attr.fetch('class', '').split
       raise "Image alignment missing: #{path}" unless (classes & %w[image-left image-right image-full]).size == 1

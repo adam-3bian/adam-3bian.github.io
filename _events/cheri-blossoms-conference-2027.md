@@ -58,7 +58,7 @@ You can [view details of the previous conference, CHERI Blossoms 2026, here](/ev
 
 Past
 Tutorial
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 25 March 2026
 University of Cambridge, Cambridge, UK
@@ -77,7 +77,7 @@ View event archive
 
 Past
 Conference
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 25 to 27 March 2026
 University of Cambridge, Cambridge, UK
@@ -96,7 +96,7 @@ View event archive
 
 Past
 Conference
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 2 April 2025
 St John's College, Cambridge, UK

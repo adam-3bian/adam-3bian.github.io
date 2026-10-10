@@ -16,6 +16,7 @@ scripts/ruby.sh scripts/build.rb
 /workspace/cheri-migration-venv/bin/python scripts/check_site_links.py
 /workspace/cheri-migration-venv/bin/python scripts/check_entities.py
 /workspace/cheri-migration-venv/bin/python scripts/check_website.py
+python3 scripts/check_theme.py
 /workspace/cheri-migration-venv/bin/python -m unittest discover -s tests -v
 python3 scripts/check_browser.py
 python3 scripts/check_website_browser.py

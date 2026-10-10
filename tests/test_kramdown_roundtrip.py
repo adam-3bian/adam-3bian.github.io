@@ -34,4 +34,11 @@ class KramdownRoundtripTests(unittest.TestCase):
   self.check_roundtrip('<figure><img src="chart.png" alt="Chart"><figcaption>Complete published caption.</figcaption></figure>',image_classes={'chart.png':'image-full'})
  def test_membership_prefix_and_value_remain_one_list_paragraph(self):
   self.check_roundtrip('<ul><li><span class="elementor-post-info__item"><span>Membership: </span>\n\n<span><a href="/full-member/">Full Member</a></span></span></li></ul>')
+ def test_cms_classes_are_removed_without_losing_content_or_anchors(self):
+  html='<h2 id="original-anchor" class="elementor-heading-title elementor-size-default">Published heading</h2><p class="wp-caption-text image-caption">Complete caption and <a href="/download.pdf">download</a>.</p><table class="tablepress tablepress-id-9"><tr><td>Original cell</td></tr></table>'
+  self.check_roundtrip(html)
+  markdown=Converter(heading_style='ATX').convert_soup(BeautifulSoup(html,'html5lib'))
+  self.assertNotRegex(markdown,r'elementor-|wp-caption|tablepress')
+  self.assertIn('original-anchor',markdown)
+  self.assertIn('.image-caption',markdown)
 if __name__=='__main__':unittest.main()

@@ -23,7 +23,7 @@ Founding members are marked on their cards, with the current membership tier sho
 ![](/assets/pages/alliance--leadership--members/15a4ef36063e-axiomise-ltd.webp){: .image-full }
 
 Full Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [Axiomise Ltd](/organisations/axiomise-ltd/)
 {: .collection-card__title }
@@ -37,7 +37,7 @@ View member
 ![](/assets/pages/alliance--leadership--members/d1c99a735743-bt-group.webp){: .image-full }
 
 Full Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [BT Group](/organisations/bt-group/)
 {: .collection-card__title }
@@ -51,7 +51,7 @@ View member
 ![](/assets/pages/alliance--leadership--members/6f93694e1d19-cantech-informatics-srl.webp){: .image-full }
 
 Full Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [Cantech Informatics SRL](/organisations/cantech-informatics-srl/)
 {: .collection-card__title }
@@ -66,7 +66,7 @@ View member
 
 Founding member
 Full Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [Capabilities Limited](/organisations/capabilities-limited/)
 {: .collection-card__title }
@@ -80,7 +80,7 @@ View member
 ![](/assets/pages/alliance--leadership--members/f4d5b241c89f-centrale-supelec.webp){: .image-full }
 
 Community Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [Centrale Supélec](/organisations/centrale-supelec/)
 {: .collection-card__title }
@@ -95,7 +95,7 @@ View member
 
 Founding member
 Full Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [Chevin Technology](/organisations/chevin-technology/)
 {: .collection-card__title }
@@ -110,7 +110,7 @@ View member
 
 Founding member
 Full Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [Codasip](/organisations/codasip/)
 {: .collection-card__title }
@@ -125,7 +125,7 @@ View member
 
 Founding member
 Full Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [Critical Technologies Inc.](/organisations/critical-technologies/)
 {: .collection-card__title }
@@ -140,7 +140,7 @@ View member
 
 Founding member
 Community Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [CyNam](/organisations/cynam/)
 {: .collection-card__title }
@@ -154,7 +154,7 @@ View member
 ![](/assets/pages/alliance--leadership--members/12f55d298bc6-cyberwhiz.webp){: .image-full }
 
 Full Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [CyberWhiz](/organisations/cyberwhiz/)
 {: .collection-card__title }
@@ -169,7 +169,7 @@ View member
 
 Founding member
 Community Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [Defence Science and Technology Laboratory (Dstl)](/organisations/dstl/)
 {: .collection-card__title }
@@ -183,7 +183,7 @@ View member
 ![](/assets/pages/alliance--leadership--members/c9a6eee158e7-digital-catapult.webp){: .image-full }
 
 Community Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [Digital Catapult](/organisations/digital-catapult/)
 {: .collection-card__title }
@@ -197,7 +197,7 @@ View member
 ![](/assets/pages/alliance--leadership--members/0c6428d03000-discribehub.webp){: .image-full }
 
 Community Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [DiscribeHub+](/organisations/discribehub/)
 {: .collection-card__title }
@@ -211,7 +211,7 @@ View member
 ![](/assets/pages/alliance--leadership--members/4bfd995553c4-durham-university.webp){: .image-full }
 
 Community Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [Durham University](/organisations/durham-university/)
 {: .collection-card__title }
@@ -225,7 +225,7 @@ View member
 ![](/assets/pages/alliance--leadership--members/d3a82dd01ee1-ensilica.webp){: .image-full }
 
 Full Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [EnSilica](/organisations/ensilica/)
 {: .collection-card__title }
@@ -240,7 +240,7 @@ View member
 
 Founding member
 Full Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [FreeBSD Foundation](/organisations/freebsd-foundation/)
 {: .collection-card__title }
@@ -255,7 +255,7 @@ View member
 
 Founding member
 Full Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [Google](/organisations/google/)
 {: .collection-card__title }
@@ -269,7 +269,7 @@ View member
 ![](/assets/pages/alliance--leadership--members/56e48a94a74c-instituto-superior-de-engenharia-do-porto.webp){: .image-full }
 
 Community Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [Instituto Superior de Engenharia do Porto](/organisations/instituto-superior-de-engenharia-do-porto/)
 {: .collection-card__title }
@@ -283,7 +283,7 @@ View member
 ![](/assets/pages/alliance--leadership--members/e4eb3f0f30d7-johannes-kepler-university-linz.webp){: .image-full }
 
 Community Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [Johannes Kepler University Linz (JKU)](/organisations/johannes-kepler-university-linz/)
 {: .collection-card__title }
@@ -297,7 +297,7 @@ View member
 ![](/assets/pages/alliance--leadership--members/35651982123f-ku-leuven.webp){: .image-full }
 
 Community Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [KU Leuven](/organisations/ku-leuven/)
 {: .collection-card__title }
@@ -311,7 +311,7 @@ View member
 ![](/assets/pages/alliance--leadership--members/6dc10d986d08-king-abdullah-university-of-science-and-technology-kaust.webp){: .image-full }
 
 Full Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [King Abdullah University of Science and Technology (KAUST)](/organisations/king-abdullah-university-of-science-and-technology-kaust/)
 {: .collection-card__title }
@@ -326,7 +326,7 @@ View member
 
 Founding member
 Full Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [Light Momentum Technology Corp.](/organisations/light-momentum-technology-corp/)
 {: .collection-card__title }
@@ -340,7 +340,7 @@ View member
 ![](/assets/pages/alliance--leadership--members/87b7d58ab13b-misra.webp){: .image-full }
 
 Community Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [MISRA](/organisations/misra/)
 {: .collection-card__title }
@@ -355,7 +355,7 @@ View member
 
 Founding member
 Community Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [NCSC](/organisations/ncsc/)
 {: .collection-card__title }
@@ -369,7 +369,7 @@ View member
 ![](/assets/pages/alliance--leadership--members/73f7c30cf8f3-national-taiwan-university.webp){: .image-full }
 
 Community Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [National Taiwan University](/organisations/national-taiwan-university/)
 {: .collection-card__title }
@@ -383,7 +383,7 @@ View member
 ![](/assets/pages/alliance--leadership--members/657e91d2fbde-novomorphic.webp){: .image-full }
 
 Full Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [Novomorphic](/organisations/novomorphic/)
 {: .collection-card__title }
@@ -398,7 +398,7 @@ View member
 
 Founding member
 Full Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [NquiringMinds](/organisations/nquiringminds/)
 {: .collection-card__title }
@@ -412,7 +412,7 @@ View member
 ![](/assets/organisations/pa-consulting/8aba894151f8-logo.png){: .image-full }
 
 Full Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [PA Consulting](/organisations/pa-consulting/)
 {: .collection-card__title }
@@ -427,7 +427,7 @@ View member
 
 Founding member
 Full Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [Parvat Infotech](/organisations/parvat-infotech/)
 {: .collection-card__title }
@@ -441,7 +441,7 @@ View member
 ![](/assets/pages/alliance--leadership--members/872793f69e62-rptu.webp){: .image-full }
 
 Community Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [Rheinland-Pfälzische Technische Universität Kaiserslautern-Landau (RPTU)](/organisations/rptu/)
 {: .collection-card__title }
@@ -456,7 +456,7 @@ View member
 
 Founding member
 Full Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [SCI Semiconductor](/organisations/sci-semiconductor/)
 {: .collection-card__title }
@@ -471,7 +471,7 @@ View member
 
 Founding member
 Community Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [SRI](/organisations/sri/)
 {: .collection-card__title }
@@ -485,7 +485,7 @@ View member
 ![](/assets/pages/alliance--leadership--members/d89309051d71-sensor-it.webp){: .image-full }
 
 Full Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [Sensor IT](/organisations/sensor-it/)
 {: .collection-card__title }
@@ -499,7 +499,7 @@ View member
 ![](/assets/pages/alliance--leadership--members/0b0244eecd03-siemens.webp){: .image-full }
 
 Full Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [Siemens](/organisations/siemens/)
 {: .collection-card__title }
@@ -514,7 +514,7 @@ View member
 
 Founding member
 Community Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [Swansea University](/organisations/swansea-university/)
 {: .collection-card__title }
@@ -529,7 +529,7 @@ View member
 
 Founding member
 Community Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [TechWorks](/organisations/techworks/)
 {: .collection-card__title }
@@ -543,7 +543,7 @@ View member
 ![](/assets/pages/alliance--leadership--members/f25e53ffb87d-the-capable-hub.webp){: .image-full }
 
 Full Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [The Capable Hub](/organisations/the-capable-hub/)
 {: .collection-card__title }
@@ -557,7 +557,7 @@ View member
 ![](/assets/pages/alliance--leadership--members/8fc38ac81c4f-the-university-of-manchester.webp){: .image-full }
 
 Community Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [The University of Manchester](/organisations/the-university-of-manchester/)
 {: .collection-card__title }
@@ -572,7 +572,7 @@ View member
 
 Founding member
 Community Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [Trusted Computing Center of Excellence (TCCoE)](/organisations/tccoe/)
 {: .collection-card__title }
@@ -586,7 +586,7 @@ View member
 ![](/assets/pages/alliance--leadership--members/9abf3fe679ac-um-labs.webp){: .image-full }
 
 Full Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [UM Labs](/organisations/um-labs/)
 {: .collection-card__title }
@@ -601,7 +601,7 @@ View member
 
 Founding member
 Community Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [University of Birmingham](/organisations/university-of-birmingham/)
 {: .collection-card__title }
@@ -616,7 +616,7 @@ View member
 
 Founding member
 Full Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [University of Cambridge](/organisations/university-of-cambridge/)
 {: .collection-card__title }
@@ -630,7 +630,7 @@ View member
 ![](/assets/pages/alliance--leadership--members/0ff290b15dbf-university-of-edinburgh.webp){: .image-full }
 
 Community Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [University of Edinburgh](/organisations/university-of-edinburgh/)
 {: .collection-card__title }
@@ -644,7 +644,7 @@ View member
 ![](/assets/pages/alliance--leadership--members/52d2d227880f-university-of-exeter.webp){: .image-full }
 
 Community Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [University of Exeter](/organisations/university-of-exeter/)
 {: .collection-card__title }
@@ -659,7 +659,7 @@ View member
 
 Founding member
 Community Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [University of Glasgow](/organisations/university-of-glasgow/)
 {: .collection-card__title }
@@ -673,7 +673,7 @@ View member
 ![](/assets/pages/alliance--leadership--members/b746edbde9cb-university-of-kent.webp){: .image-full }
 
 Community Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [University of Kent](/organisations/university-of-kent/)
 {: .collection-card__title }
@@ -687,7 +687,7 @@ View member
 ![](/assets/pages/alliance--leadership--members/3c4d6db9a4d2-verisilicon.webp){: .image-full }
 
 Full Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [VeriSilicon](/organisations/verisilicon/)
 {: .collection-card__title }
@@ -701,7 +701,7 @@ View member
 ![](/assets/pages/alliance--leadership--members/f2b8cb188409-wind-river.webp){: .image-full }
 
 Full Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [Wind River](/organisations/wind-river/)
 {: .collection-card__title }
@@ -715,7 +715,7 @@ View member
 ![](/assets/pages/alliance--leadership--members/6b16bec36bc4-wyvern-global.webp){: .image-full }
 
 Full Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [Wyvern Global](/organisations/wyvern-global/)
 {: .collection-card__title }
@@ -729,7 +729,7 @@ View member
 ![](/assets/pages/alliance--leadership--members/fbc61ced09d2-zaya.webp){: .image-full }
 
 Full Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [ZAYA](/organisations/zaya/)
 {: .collection-card__title }
@@ -744,7 +744,7 @@ View member
 
 Founding member
 Full Member
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [lowRISC](/organisations/lowrisc/)
 {: .collection-card__title }
@@ -762,12 +762,8 @@ View member
 {: .where-next-card-title }
 
 
-
-
-
 [See the people helping connect CHERI work with wider technical and professional communities.](/alliance/leadership/ambassadors/)
 {: .where-next-summary }
-
 
 
 [Continue](/alliance/leadership/ambassadors/)
@@ -780,31 +776,20 @@ View member
 {: .related-pages-item-title }
 
 
-
-
-
 [Information on the Alliance governing board, its remit, and current representation.](/alliance/leadership/governing-board/)
 {: .related-pages-item-summary }
-
 
 
 [Read this page](/alliance/leadership/governing-board/)
 {: .source-card-label }
 
 
-
-
-
 ### [About the CHERI Alliance](/organisations/cheri-alliance/)
 {: .related-pages-item-title }
 
 
-
-
-
 [Learn how the Alliance connects organisations working across the CHERI ecosystem.](/organisations/cheri-alliance/)
 {: .related-pages-item-summary }
-
 
 
 [Read this page](/organisations/cheri-alliance/)

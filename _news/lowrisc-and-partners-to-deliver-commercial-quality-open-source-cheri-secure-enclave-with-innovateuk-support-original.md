@@ -4,7 +4,7 @@ alternate: true
 ---
 
 # lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure Enclave with InnovateUK Support
-{: .elementor-heading-title .elementor-size-default }
+
 
 [lowRISC CIC](/organisations/lowrisc/) and [Capabilities Limited](/organisations/capabilities-limited/), two founding members of the [CHERI Alliance](https://cheri-alliance.org/), have announced the launch of the [COSMIC Project](https://cosmic-project.lowrisc.org/), supported by the UK Department for Science, Innovation and Technology (DSIT) and InnovateUK.
 

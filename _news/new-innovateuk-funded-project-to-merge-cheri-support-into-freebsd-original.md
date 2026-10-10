@@ -1,10 +1,11 @@
 ---
 title: New InnovateUK-funded project to merge CHERI support into FreeBSD
 alternate: true
+authors: [brooks-davis]
 ---
 
 # New InnovateUK-funded project to merge CHERI support into FreeBSD
-{: .elementor-heading-title .elementor-size-default }
+
 
 Brooks Davis – [Capabilities Limited](/organisations/capabilities-limited/)
 
@@ -36,7 +37,7 @@ We anticipate that FreeBSD 16 will be the first mainstream OS release to include
 More information on this project can be found at [https://www.capabilitieslimited.co.uk/current-projects/cheribsd-upstreaming](https://www.capabilitieslimited.co.uk/current-projects/cheribsd-upstreaming)
 
 ## About Capabilities Limited
-{: .elementor-heading-title .elementor-size-default }
+
 
 [Capabilities Limited](/organisations/capabilities-limited/) as a UK-based small business founded by [Robert Watson](https://cheri-alliance.org/events/speakers/robert-watson/) (Professor at the University of Cambridge) and Ben Laurie (Lead for systems and security research at Google Research) in 2011. Our goal is to transition research security technologies to broad industrial use. We perform fundamental research, applied research, and product development as services to industrial, government, and defense clients.
 

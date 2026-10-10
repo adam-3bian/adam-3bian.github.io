@@ -1,6 +1,7 @@
 ---
 title: One Bug is All It Takes
 date: '2026-05-04T16:06:57+01:00'
+authors: [adam-finney]
 ---
 
 1. News &amp; Events
@@ -17,7 +18,7 @@ In 2025 alone, global cybercrime costs reached an estimated $1.2 billion every m
 *4 May 2026*{: .source-date }
 *CHERI Alliance news*{: .collection-tag }
 *Ecosystem*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![A red bug on a computer screen being focused by a magnifying glass](/assets/news/one-bug-is-all-it-takes/90741c3e8a15-hero.jpg){: .image-full }
 {: .collection-detail__lead-image }

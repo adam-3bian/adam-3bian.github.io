@@ -4,7 +4,7 @@ permalink: /legal-and-policies/
 ---
 
 # Legal and Policies
-{: .elementor-heading-title .elementor-size-default }
+
 
 | Document | PDF | HTML |
 | --- | --- | --- |
@@ -16,4 +16,4 @@ permalink: /legal-and-policies/
 | Privacy Policy |  | [View](/policies/privacy-policy/) |
 | Terms of Reference for the Governing Board | [Download](/assets/resources/legal-gb-terms-of-reference/CHERI-Alliance-GB-terms-of-reference.pdf) |  |
 | Trademark Policy | [Download](/assets/shared/source-assets/d904a00cfb15-trademark-policy.pdf) | [View](/policies/trademark-policy/) |
-{: id="tablepress-9" .tablepress .tablepress-id-9 }
+{: id="tablepress-9" }

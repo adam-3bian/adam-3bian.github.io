@@ -24,7 +24,7 @@ Many of the most important conversations in the CHERI ecosystem happen within wo
 Groups covering languages, operating systems, emulation, hardware integration, safety, and portability across CHERI platforms.
 
 Technical
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [©️ CHERI C/C++ WG](/groups/cheri-c-cplusplus/)
 {: .collection-card__title }
@@ -39,7 +39,7 @@ View working group
 {: .collection-card__link }
 
 Technical
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [⬛️ CHERI in SoC WG](/groups/cheri-in-soc/)
 {: .collection-card__title }
@@ -54,7 +54,7 @@ View working group
 {: .collection-card__link }
 
 Technical
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [🐧 CHERI Linux WG](/groups/cheri-linux-working-group/)
 {: .collection-card__title }
@@ -69,7 +69,7 @@ View working group
 {: .collection-card__link }
 
 Technical
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [🐦 CHERI QEMU WG](/groups/cheri-qemu/)
 {: .collection-card__title }
@@ -84,7 +84,7 @@ View working group
 {: .collection-card__link }
 
 Technical
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [🤖 CHERI Virtual Machines WG](/groups/cheri-virtual-machines/)
 {: .collection-card__title }
@@ -99,7 +99,7 @@ View working group
 {: .collection-card__link }
 
 Technical
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [⚙️ Rust + CHERI WG](/groups/rust-plus-cheri/)
 {: .collection-card__title }
@@ -114,7 +114,7 @@ View working group
 {: .collection-card__link }
 
 Technical
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [📋 CHERI + Safety WG](/groups/cheri-plus-safety/)
 {: .collection-card__title }
@@ -129,7 +129,7 @@ View working group
 {: .collection-card__link }
 
 Technical
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [4️⃣ CHERI for seL4 WG](/groups/cheri-for-sel4/)
 {: .collection-card__title }
@@ -144,7 +144,7 @@ View working group
 {: .collection-card__link }
 
 Technical
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [🆓 CHERI FreeRTOS WG](/groups/cheri-freertos/)
 {: .collection-card__title }
@@ -159,7 +159,7 @@ View working group
 {: .collection-card__link }
 
 Technical
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [🪁 CHERI Zephyr WG](/groups/cheri-zephyr/)
 {: .collection-card__title }
@@ -174,7 +174,7 @@ View working group
 {: .collection-card__link }
 
 Technical
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [👮 MMU-less Systems WG](/groups/mmu-less-systems/)
 {: .collection-card__title }
@@ -189,7 +189,7 @@ View working group
 {: .collection-card__link }
 
 Technical
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [🛠️ OS Support &amp; Portability WG](/groups/os-support-and-portability/)
 {: .collection-card__title }
@@ -209,7 +209,7 @@ View working group
 Groups supporting certification, shared repositories, accurate communication, and wider community participation.
 
 Programme and ecosystem
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [✅ Certification WG](/groups/certification-working-group/)
 {: .collection-card__title }
@@ -224,7 +224,7 @@ View working group
 {: .collection-card__link }
 
 Programme and ecosystem
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [📣 Marketing WG](/groups/marketing/)
 {: .collection-card__title }
@@ -239,7 +239,7 @@ View working group
 {: .collection-card__link }
 
 Programme and ecosystem
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [🪪 Promotion &amp; Ambassador Program WG](/groups/promotion-and-ambassador-program/)
 {: .collection-card__title }
@@ -254,7 +254,7 @@ View working group
 {: .collection-card__link }
 
 Programme and ecosystem
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 ### [💾 Repository Management WG](/groups/repository-management/)
 {: .collection-card__title }
@@ -289,12 +289,8 @@ Visit the [contact page](/alliance/membership/contact/) if you would like help f
 {: .where-next-card-title }
 
 
-
-
-
 [Start with the CHERI C/C++ working group and continue through the current working-group pages.](/groups/cheri-c-cplusplus/)
 {: .where-next-summary }
-
 
 
 [Continue](/groups/cheri-c-cplusplus/)
@@ -307,31 +303,20 @@ Visit the [contact page](/alliance/membership/contact/) if you would like help f
 {: .related-pages-item-title }
 
 
-
-
-
 [Learn how the Alliance connects organisations working across the CHERI ecosystem.](/organisations/cheri-alliance/)
 {: .related-pages-item-summary }
-
 
 
 [Read this page](/organisations/cheri-alliance/)
 {: .source-card-label }
 
 
-
-
-
 ### [Members](/alliance/leadership/members/)
 {: .related-pages-item-title }
 
 
-
-
-
 [See the organisations involved in the Alliance and the wider CHERI community.](/alliance/leadership/members/)
 {: .related-pages-item-summary }
-
 
 
 [Read this page](/alliance/leadership/members/)

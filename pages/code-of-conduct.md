@@ -6,7 +6,7 @@ permalink: /code-of-conduct/
 ---
 
 # CHERI ALLIANCE CIC Code of Conduct
-{: .elementor-heading-title .elementor-size-default }
+
 
 **Version:** 1.01  
 **Date:** 14/04/2025
@@ -45,12 +45,12 @@ If you believe someone is violating the code of conduct, we ask that you report 
 - **When we disagree, try to understand why.** Disagreements, both social and technical, happen all the time and the CHERI Alliance is no exception. It is important that we resolve disagreements and differing views constructively. Remember that we’re different. The strength of the CHERI Alliance comes from its varied community, people from a wide range of backgrounds. Different people have different perspectives on issues. Being unable to understand why someone holds a viewpoint doesn’t mean that they’re wrong. Don’t forget that it is human to err and blaming each other doesn’t get us anywhere. Instead, focus on helping to resolve issues and learning from mistakes.
 
 ## Questions?
-{: .elementor-heading-title .elementor-size-default }
+
 
 If you have questions, please feel free to contact the Code of Conduct team by getting in touch with us via our [contact page](/alliance/membership/contact/).
 
 ## Reporting Guide
-{: .elementor-heading-title .elementor-size-default }
+
 
 If you believe someone is violating the code of conduct you can always report it to the Code of Conduct team by getting in touch with us via our [contact page](/alliance/membership/contact/). All reports will be kept confidential. This isn’t a public list and only members of the team will receive the report.
 
@@ -59,7 +59,7 @@ If you believe anyone is in physical danger, please notify appropriate law enfor
 If the violation occurs at an event such as a conference or workshop and requires immediate attention, you can also reach out to any of the event organisers or staff. Event organisers and staff will be prepared to handle the incident and able to help. If you cannot find one of the organisers, the venue staff can locate one for you. We will also post detailed contact information for specific events as part of each events’ information. In person reports will still be kept confidential exactly as above, but also feel free to (anonymously if needed) get in touch with us via our [contact page](/alliance/membership/contact/).
 
 ## Filing a Report
-{: .elementor-heading-title .elementor-size-default }
+
 
 Reports can be as formal or informal as needed for the situation at hand. If possible, please include as much information as you can. If you feel comfortable, please consider including:
 

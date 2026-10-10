@@ -71,7 +71,7 @@ Watch the event overview from CHERITech’25:
 
 Past
 Online event
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 4 December 2025
 Online
@@ -90,7 +90,7 @@ View event archive
 
 Past
 Conference
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 14 November 2025
 Sister, Manchester, UK

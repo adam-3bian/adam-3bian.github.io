@@ -16,7 +16,7 @@ At the first CHERI Alliance conference, organised in partnership with CyNam and 
 
 *4 December 2024*{: .source-date }
 *CHERI Alliance news*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![‘Cybersecurity by Design – from Research to Industry’ — Conference Report](/assets/news/cybersecurity-by-design-from-research-to-industry-conference-report/8a1142aa0d27-hero.png){: .image-full }
 {: .collection-detail__lead-image }

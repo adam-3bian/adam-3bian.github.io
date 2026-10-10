@@ -24,7 +24,7 @@ Previous conferences, workshops, tutorials, and online sessions with their publi
 
 Past
 Webinar
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 9 September 2026, 14:00 BST
 Online via Zoom
@@ -43,7 +43,7 @@ View event archive
 
 Past
 Tutorial
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 25 March 2026
 University of Cambridge, Cambridge, UK
@@ -62,7 +62,7 @@ View event archive
 
 Past
 Conference
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 25 to 27 March 2026
 University of Cambridge, Cambridge, UK
@@ -81,7 +81,7 @@ View event archive
 
 Past
 Exhibition
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 10 to 12 March 2026
 Exhibition Centre Nuremberg, Germany
@@ -100,7 +100,7 @@ View event archive
 
 Past
 Online event
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 4 December 2025
 Online
@@ -119,7 +119,7 @@ View event archive
 
 Past
 Conference
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 14 November 2025
 Sister, Manchester, UK
@@ -138,7 +138,7 @@ View event archive
 
 Past
 Conference
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 2 April 2025
 St John's College, Cambridge, UK
@@ -157,7 +157,7 @@ View event archive
 
 Past
 Conference
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 12 November 2024
 Hub8 MX, Cheltenham, UK
@@ -179,12 +179,8 @@ View event archive
 {: .where-next-card-title }
 
 
-
-
-
 [A directory of speakers available for CHERI-related events, briefings, and discussions.](/news-and-events/people-and-opportunities/speakers/)
 {: .where-next-summary }
-
 
 
 [Continue](/news-and-events/people-and-opportunities/speakers/)
@@ -197,50 +193,32 @@ View event archive
 {: .related-pages-item-title }
 
 
-
-
-
 [A calendar of upcoming CHERI-related events, talks, workshops, and community sessions.](/news-and-events/events-and-archive/upcoming-events/)
 {: .related-pages-item-summary }
-
 
 
 [Read this page](/news-and-events/events-and-archive/upcoming-events/)
 {: .source-card-label }
 
 
-
-
-
 ### [Speakers](/news-and-events/people-and-opportunities/speakers/)
 {: .related-pages-item-title }
-
-
-
 
 
 [A directory of speakers available for CHERI-related events, briefings, and discussions.](/news-and-events/people-and-opportunities/speakers/)
 {: .related-pages-item-summary }
 
 
-
 [Read this page](/news-and-events/people-and-opportunities/speakers/)
 {: .source-card-label }
-
-
-
 
 
 ### [Latest News](/news-and-events/news-and-analysis/latest-news/)
 {: .related-pages-item-title }
 
 
-
-
-
 [The latest CHERI Alliance and ecosystem announcements, presented with clear dates and sources.](/news-and-events/news-and-analysis/latest-news/)
 {: .related-pages-item-summary }
-
 
 
 [Read this page](/news-and-events/news-and-analysis/latest-news/)

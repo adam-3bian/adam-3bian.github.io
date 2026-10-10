@@ -17,7 +17,7 @@ Hesham Almatary – Capabilities Limited We are happy to release a prototype of 
 *29 July 2025*{: .source-date }
 *Ecosystem*{: .collection-tag }
 *Working Groups*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![The software release roadmap for CHERI-seL4](/assets/news/cheri-sel4-and-cheri-microkit-released/8d44a7e5916e-hero.png){: .image-full }
 {: .collection-detail__lead-image }

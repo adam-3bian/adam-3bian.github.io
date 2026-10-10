@@ -17,7 +17,7 @@ Founding members include global commercial, research, and open-source organizati
 
 *12 November 2024*{: .source-date }
 *CHERI Alliance news*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![CHERI Alliance Officially Launches, Adds Major Partners including Google, to Tackle Cybersecurity Threats at the Hardware Level](/assets/shared/source-assets/b40f17e0c2fc-cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus.png){: .image-full }
 {: .collection-detail__lead-image }

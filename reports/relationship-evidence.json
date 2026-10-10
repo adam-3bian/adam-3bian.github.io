@@ -691,7 +691,7 @@
     "evidence": "reports/validation/7a28d476e00ee319/source-signature.json",
     "published_label": "RPTU Kaiserslautern-Landau",
     "published_name": "RPTU Kaiserslautern-Landau",
-    "target_title": "Rheinland-Pfälzische Technische Universität Kaiserslautern-Landau (RPTU)"
+    "target_title": "Rheinland-Pf\u00e4lzische Technische Universit\u00e4t Kaiserslautern-Landau (RPTU)"
   },
   {
     "path": "_people/john-baldwin.md",
@@ -2620,7 +2620,7 @@
     "path": "_papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c.md",
     "field": "authors",
     "value": "edward-tomasz-napieraa",
-    "published_name": "Edward Tomasz Napierała",
+    "published_name": "Edward Tomasz Napiera\u0142a",
     "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
     "publication_url": "https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/202510-ccs-gpu-driver-compartments.pdf",
     "evidence": "reports/paper-validation.json"
@@ -3304,7 +3304,7 @@
     "path": "_papers/cornucopia-temporal-safety-for-cheri-heaps.md",
     "field": "authors",
     "value": "edward-tomasz-napieraa",
-    "published_name": "Edward Tomasz Napierała",
+    "published_name": "Edward Tomasz Napiera\u0142a",
     "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
     "publication_url": "https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/2020oakland-cornucopia.pdf",
     "evidence": "reports/paper-validation.json"
@@ -3794,5 +3794,285 @@
     "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
     "publication_url": "https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/201406-isca2014-cheri.pdf",
     "evidence": "reports/paper-validation.json"
+  },
+  {
+    "path": "_news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate.md",
+    "field": "authors",
+    "value": "mike-eftimakis",
+    "published_name": "Mike Eftimakis",
+    "published_byline": "Mike Eftimakis \u2013 **CHERI Alliance**",
+    "source_url": "https://cheri-alliance.github.io/news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/",
+    "byline_source_path": "_news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate.md",
+    "evidence": "Explicit byline in retained article body; distinct source versions remain separate"
+  },
+  {
+    "path": "_news/ai-has-compressed-the-attack-timeline.md",
+    "field": "authors",
+    "value": "mike-eftimakis",
+    "published_name": "Mike Eftimakis",
+    "published_byline": "Mike Eftimakis \u2013 **CHERI Alliance**",
+    "source_url": "https://cheri-alliance.github.io/news/ai-has-compressed-the-attack-timeline/",
+    "byline_source_path": "_news/ai-has-compressed-the-attack-timeline.md",
+    "evidence": "Explicit byline in retained article body; distinct source versions remain separate"
+  },
+  {
+    "path": "_news/behind-the-scenes-inside-the-promotion-and-ambassador-program-working-group.md",
+    "field": "authors",
+    "value": "mike-eftimakis",
+    "published_name": "Mike Eftimakis",
+    "published_byline": "Mike Eftimakis \u2013 **CHERI Alliance**",
+    "source_url": "https://cheri-alliance.github.io/news/behind-the-scenes-inside-the-promotion-and-ambassador-program-working-group/",
+    "byline_source_path": "_news/behind-the-scenes-inside-the-promotion-and-ambassador-program-working-group.md",
+    "evidence": "Explicit byline in retained article body; distinct source versions remain separate"
+  },
+  {
+    "path": "_news/beyond-software-patching.md",
+    "field": "authors",
+    "value": "jim-wallace",
+    "published_name": "Jim Wallace",
+    "published_byline": "Jim Wallace \u2013 **CHERI Alliance / Cre8Vantage**",
+    "source_url": "https://cheri-alliance.org/beyond-software-patching/",
+    "byline_source_path": "_news/beyond-software-patching.md",
+    "evidence": "Explicit byline in retained article body; distinct source versions remain separate"
+  },
+  {
+    "path": "_news/cheri-alliance-to-distribute-arm-morello-boards-the-journey-beyond-dsbd-continues.md",
+    "field": "authors",
+    "value": "mike-eftimakis",
+    "published_name": "Mike Eftimakis",
+    "published_byline": "Mike Eftimakis \u2013 **CHERI Alliance**",
+    "source_url": "https://cheri-alliance.github.io/news/cheri-alliance-to-distribute-arm-morello-boards-the-journey-beyond-dsbd-continues/",
+    "byline_source_path": "_news/cheri-alliance-to-distribute-arm-morello-boards-the-journey-beyond-dsbd-continues.md",
+    "evidence": "Explicit byline in retained article body; distinct source versions remain separate"
+  },
+  {
+    "path": "_news/cheri-memory-safety-mitigates-llm-discovered-vulnerability-in-freebsd.md",
+    "field": "authors",
+    "value": "brooks-davis",
+    "published_name": "Brooks Davis",
+    "published_byline": "Brooks Davis \u2013 [Capabilities Limited](/organisations/capabilities-limited/)",
+    "source_url": "https://cheri-alliance.github.io/news/cheri-memory-safety-mitigates-llm-discovered-vulnerability-in-freebsd/",
+    "byline_source_path": "_news/cheri-memory-safety-mitigates-llm-discovered-vulnerability-in-freebsd.md",
+    "evidence": "Explicit byline in retained article body; distinct source versions remain separate"
+  },
+  {
+    "path": "_news/cheri-or-cheriot-the-answer-is-not-what-you-think-original.md",
+    "field": "authors",
+    "value": "adam-finney",
+    "published_name": "Adam Finney",
+    "published_byline": "*Adam Finney \u2013 **CHERI Alliance***",
+    "source_url": "https://cheri-alliance.org/cheri-or-cheriot-the-answer-is-not-what-you-think/",
+    "byline_source_path": "_news/cheri-or-cheriot-the-answer-is-not-what-you-think-original.md",
+    "evidence": "Explicit byline in retained article body; distinct source versions remain separate"
+  },
+  {
+    "path": "_news/cheri-or-cheriot-the-answer-is-not-what-you-think.md",
+    "field": "authors",
+    "value": "adam-finney",
+    "published_name": "Adam Finney",
+    "published_byline": "*Adam Finney \u2013 **CHERI Alliance***",
+    "source_url": "https://cheri-alliance.github.io/news/cheri-or-cheriot-the-answer-is-not-what-you-think/",
+    "byline_source_path": "_news/cheri-or-cheriot-the-answer-is-not-what-you-think.md",
+    "evidence": "Explicit byline in retained article body; distinct source versions remain separate"
+  },
+  {
+    "path": "_news/cheri-tag-bit-transport-overlay-standard-version-0-9-released.md",
+    "field": "authors",
+    "value": "benjamin-fletcher",
+    "published_name": "Benjamin Fletcher",
+    "published_byline": "Benjamin Fletcher \u2013 **CHERI Alliance**",
+    "source_url": "https://cheri-alliance.org/cheri-tag-bit-transport-overlay-standard-version-0-9-released/",
+    "byline_source_path": "_news/cheri-tag-bit-transport-overlay-standard-version-0-9-released.md",
+    "evidence": "Explicit byline in retained article body; distinct source versions remain separate"
+  },
+  {
+    "path": "_news/cheri-zephyr-v0-4-0-release.md",
+    "field": "authors",
+    "value": "jennifer-jackson",
+    "published_name": "Jennifer Jackson",
+    "published_byline": "Jennifer Jackson \u2013 [University of Birmingham](/organisations/university-of-birmingham/)",
+    "source_url": "https://cheri-alliance.org/cheri-zephyr-v0-4-0-release/",
+    "byline_source_path": "_news/cheri-zephyr-v0-4-0-release.md",
+    "evidence": "Explicit byline in retained article body; distinct source versions remain separate"
+  },
+  {
+    "path": "_news/cheriot-1-0-specification-released-original.md",
+    "field": "authors",
+    "value": "adam-finney",
+    "published_name": "Adam Finney",
+    "published_byline": "*Adam Finney \u2013 **CHERI Alliance***",
+    "source_url": "https://cheri-alliance.org/cheriot-1-0-specification-released/",
+    "byline_source_path": "_news/cheriot-1-0-specification-released-original.md",
+    "evidence": "Explicit byline in retained article body; distinct source versions remain separate"
+  },
+  {
+    "path": "_news/cheriot-1-0-specification-released.md",
+    "field": "authors",
+    "value": "adam-finney",
+    "published_name": "Adam Finney",
+    "published_byline": "*Adam Finney \u2013 **CHERI Alliance***",
+    "source_url": "https://cheri-alliance.github.io/news/cheriot-1-0-specification-released/",
+    "byline_source_path": "_news/cheriot-1-0-specification-released.md",
+    "evidence": "Explicit byline in retained article body; distinct source versions remain separate"
+  },
+  {
+    "path": "_news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology-original.md",
+    "field": "authors",
+    "value": "andrew-lindsay",
+    "published_name": "Andrew Lindsay",
+    "published_byline": "Andrew Lindsay \u2013 [Codasip](/organisations/codasip/)",
+    "source_url": "https://cheri-alliance.org/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology/",
+    "byline_source_path": "_news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology-original.md",
+    "evidence": "Explicit byline in retained article body; distinct source versions remain separate"
+  },
+  {
+    "path": "_news/innovate-uk-project-winner-university-of-birmingham-original.md",
+    "field": "authors",
+    "value": "mihai-ordean",
+    "published_name": "Mihai Ordean",
+    "published_byline": "Mihai Ordean \u2013 [University of Birmingham](/organisations/university-of-birmingham/)",
+    "source_url": "https://cheri-alliance.org/innovate-uk-project-winner-university-of-birmingham/",
+    "byline_source_path": "_news/innovate-uk-project-winner-university-of-birmingham-original.md",
+    "evidence": "Explicit byline in retained article body; distinct source versions remain separate"
+  },
+  {
+    "path": "_news/introducing-the-cheri-adoption-global-ecosystem-assessment-q1-2026.md",
+    "field": "authors",
+    "value": "adam-finney",
+    "published_name": "Adam Finney",
+    "published_byline": "Adam Finney \u2013 **CHERI Alliance**",
+    "source_url": "https://cheri-alliance.github.io/news/introducing-the-cheri-adoption-global-ecosystem-assessment-q1-2026/",
+    "byline_source_path": "_news/introducing-the-cheri-adoption-global-ecosystem-assessment-q1-2026.md",
+    "evidence": "Explicit byline in retained article body; distinct source versions remain separate"
+  },
+  {
+    "path": "_news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences-original.md",
+    "field": "authors",
+    "value": "adam-finney",
+    "published_name": "Adam Finney",
+    "published_byline": "*Adam Finney \u2013 **CHERI Alliance***",
+    "source_url": "https://cheri-alliance.org/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences/",
+    "byline_source_path": "_news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences-original.md",
+    "evidence": "Explicit byline in retained article body; distinct source versions remain separate"
+  },
+  {
+    "path": "_news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences.md",
+    "field": "authors",
+    "value": "adam-finney",
+    "published_name": "Adam Finney",
+    "published_byline": "*Adam Finney \u2013 **CHERI Alliance***",
+    "source_url": "https://cheri-alliance.github.io/news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences/",
+    "byline_source_path": "_news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences.md",
+    "evidence": "Explicit byline in retained article body; distinct source versions remain separate"
+  },
+  {
+    "path": "_news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd-original.md",
+    "field": "authors",
+    "value": "brooks-davis",
+    "published_name": "Brooks Davis",
+    "published_byline": "Brooks Davis \u2013 [Capabilities Limited](/organisations/capabilities-limited/)",
+    "source_url": "https://cheri-alliance.org/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd/",
+    "byline_source_path": "_news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd-original.md",
+    "evidence": "Explicit byline in retained article body; distinct source versions remain separate"
+  },
+  {
+    "path": "_news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd.md",
+    "field": "authors",
+    "value": "brooks-davis",
+    "published_name": "Brooks Davis",
+    "published_byline": "Brooks Davis \u2013 [Capabilities Limited](/organisations/capabilities-limited/)",
+    "source_url": "https://cheri-alliance.github.io/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd/",
+    "byline_source_path": "_news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd.md",
+    "evidence": "Explicit byline in retained article body; distinct source versions remain separate"
+  },
+  {
+    "path": "_news/one-bug-is-all-it-takes.md",
+    "field": "authors",
+    "value": "adam-finney",
+    "published_name": "Adam Finney",
+    "published_byline": "Adam Finney \u2013 **CHERI Alliance**",
+    "source_url": "https://cheri-alliance.github.io/news/one-bug-is-all-it-takes/",
+    "byline_source_path": "_news/one-bug-is-all-it-takes.md",
+    "evidence": "Explicit byline in retained article body; distinct source versions remain separate"
+  },
+  {
+    "path": "_news/streamlining-the-cheri-ecosystem-an-update-from-the-repository-management-working-group.md",
+    "field": "authors",
+    "value": "marno-van-der-maas",
+    "published_name": "Dr Marno van der Maas",
+    "published_byline": "Dr Marno van der Maas \u2013 **CHERI Alliance**",
+    "source_url": "https://cheri-alliance.github.io/news/streamlining-the-cheri-ecosystem-an-update-from-the-repository-management-working-group/",
+    "byline_source_path": "_news/streamlining-the-cheri-ecosystem-an-update-from-the-repository-management-working-group.md",
+    "evidence": "Explicit byline in retained article body; distinct source versions remain separate"
+  },
+  {
+    "path": "_news/the-eu-cyber-resilience-act-what-it-means-for-secure-by-design-systems-and-cheri.md",
+    "field": "authors",
+    "value": "tariq-kurd",
+    "published_name": "Tariq Kurd",
+    "published_byline": "Tariq Kurd \u2013 [Codasip](/organisations/codasip/)",
+    "source_url": "https://cheri-alliance.github.io/news/the-eu-cyber-resilience-act-what-it-means-for-secure-by-design-systems-and-cheri/",
+    "byline_source_path": "_news/the-eu-cyber-resilience-act-what-it-means-for-secure-by-design-systems-and-cheri.md",
+    "evidence": "Explicit byline in retained article body; distinct source versions remain separate"
+  },
+  {
+    "path": "_news/the-leading-root-of-trust-now-integrates-cheri-security-technology.md",
+    "field": "authors",
+    "value": "adam-finney",
+    "published_name": "Adam Finney",
+    "published_byline": "Adam Finney \u2013 **CHERI Alliance**",
+    "source_url": "https://cheri-alliance.github.io/news/the-leading-root-of-trust-now-integrates-cheri-security-technology/",
+    "byline_source_path": "_news/the-leading-root-of-trust-now-integrates-cheri-security-technology.md",
+    "evidence": "Explicit byline in retained article body; distinct source versions remain separate"
+  },
+  {
+    "path": "_news/towards-a-reference-qemu-for-cheri-platform-emulation.md",
+    "field": "authors",
+    "value": "alfredo-mazzinghi",
+    "published_name": "Alfredo Mazzinghi",
+    "published_byline": "Alfredo Mazzinghi \u2013 [Capabilities Limited](/organisations/capabilities-limited/)",
+    "source_url": "https://cheri-alliance.github.io/news/towards-a-reference-qemu-for-cheri-platform-emulation/",
+    "byline_source_path": "_news/towards-a-reference-qemu-for-cheri-platform-emulation.md",
+    "evidence": "Explicit byline in retained article body; distinct source versions remain separate"
+  },
+  {
+    "path": "_news/unlocking-the-future-a-roadmap-for-cheri-technology-advancement.md",
+    "field": "authors",
+    "value": "mike-eftimakis",
+    "published_name": "Mike Eftimakis",
+    "published_byline": "Mike Eftimakis \u2013 ***CHERI Alliance***",
+    "source_url": "https://cheri-alliance.github.io/news/unlocking-the-future-a-roadmap-for-cheri-technology-advancement/",
+    "byline_source_path": "_news/unlocking-the-future-a-roadmap-for-cheri-technology-advancement.md",
+    "evidence": "Explicit byline in retained article body; distinct source versions remain separate"
+  },
+  {
+    "path": "_news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay.md",
+    "field": "authors",
+    "value": "adam-finney",
+    "published_name": "Adam Finney",
+    "published_byline": "*Adam Finney \u2013 **CHERI Alliance***",
+    "source_url": "https://cheri-alliance.github.io/news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/",
+    "byline_source_path": "_news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay.md",
+    "evidence": "Explicit byline in retained article body; distinct source versions remain separate"
+  },
+  {
+    "path": "_news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology.md",
+    "field": "authors",
+    "value": "andrew-lindsay",
+    "published_name": "Andrew Lindsay",
+    "published_byline": "Andrew Lindsay \u2013 [Codasip](/organisations/codasip/)",
+    "source_url": "https://cheri-alliance.org/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology/",
+    "byline_source_path": "_news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology-original.md",
+    "evidence": "Explicit byline in retained article body; distinct source versions remain separate"
+  },
+  {
+    "path": "_news/innovate-uk-project-winner-university-of-birmingham.md",
+    "field": "authors",
+    "value": "mihai-ordean",
+    "published_name": "Mihai Ordean",
+    "published_byline": "Mihai Ordean \u2013 [University of Birmingham](/organisations/university-of-birmingham/)",
+    "source_url": "https://cheri-alliance.org/innovate-uk-project-winner-university-of-birmingham/",
+    "byline_source_path": "_news/innovate-uk-project-winner-university-of-birmingham-original.md",
+    "evidence": "Explicit byline in retained article body; distinct source versions remain separate"
   }
 ]

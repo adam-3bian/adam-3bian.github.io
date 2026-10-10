@@ -1,5 +1,7 @@
 # CHERI Alliance migration — prompt pack
 
+**Current phase:** Website development uses `AGENTS.md`, `START_PROMPT.md` and `docs/THEME.md`: preserve existing content and use the uploaded theme directly. The acquisition prompt below is for explicitly requested new capture work, not for changing the theme.
+
 This pack bundles a **single copy-and-paste prompt** and the **recommended Codex/Work file-based workflow**. It does not contain a completed website scrape.
 
 ## Recommended setup

@@ -24,7 +24,8 @@ module CheriContent
       groups = site.collections.transform_values(&:docs)
       index = groups.transform_values { |docs| docs.to_h { |doc| [doc.basename_without_ext, doc] } }
       refs = ->(value) { value.nil? ? [] : Array(value) }
-      author_ids = groups.fetch('papers').flat_map { |p| refs.call(p.data['authors']) }.uniq
+      authored = groups.fetch('papers') + groups.fetch('news')
+      author_ids = authored.flat_map { |p| refs.call(p.data['authors']) }.uniq
       today = Date.parse(ENV.fetch('CHERI_TODAY', site.time.strftime('%Y-%m-%d')))
       card = lambda do |doc|
         return doc.data['card'] if doc.data['card']
@@ -74,9 +75,12 @@ module CheriContent
         person.data['linked_organizations'] = resolve.call('organisations', person.data['organization'], person)
         person.data['related_events'] = groups.fetch('events').select { |e| refs.call(e.data['speakers']).include?(id) }.map(&card)
         person.data['related_papers'] = groups.fetch('papers').select { |p| refs.call(p.data['authors']).include?(id) }.map(&card)
+        person.data['related_news'] = groups.fetch('news').reject { |n| n.data['alternate'] == true }
+          .select { |n| refs.call(n.data['authors']).include?(id) }
+          .sort_by { |n| [n.data['card']['date'].to_s, n.data['title']] }.reverse.map(&card)
       end
       groups.fetch('events').each { |event| event.data['linked_speakers'] = resolve.call('people', event.data['speakers'], event) }
-      groups.fetch('papers').each { |paper| paper.data['linked_authors'] = resolve.call('people', paper.data['authors'], paper) }
+      authored.each { |article| article.data['linked_authors'] = resolve.call('people', article.data['authors'], article) }
       groups.fetch('organisations').each do |org|
         org.data['related_people'] = groups.fetch('people').select { |p| refs.call(p.data['organization']).include?(org.basename_without_ext) }.map(&card)
       end

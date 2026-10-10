@@ -1,6 +1,7 @@
 ---
 title: 'Streamlining the CHERI Ecosystem: An Update from the Repository Management Working Group'
 date: '2025-11-27T10:00:05+00:00'
+authors: [marno-van-der-maas]
 ---
 
 1. News &amp; Events
@@ -17,7 +18,7 @@ Dr Marno van der Maas – CHERI Alliance The CHERI Alliance is dedicated to adva
 *27 November 2025*{: .source-date }
 *CHERI Alliance news*{: .collection-tag }
 *Working Groups*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![CHERI Alliance Working Groups logo](/assets/shared/source-assets/bb889a4dc09e-cheri-alliance-working-groups.png){: .image-full }
 {: .collection-detail__lead-image }

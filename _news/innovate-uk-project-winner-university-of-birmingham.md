@@ -1,6 +1,7 @@
 ---
 title: 'Innovate UK Project Winner: University of Birmingham'
 date: '2025-11-20T10:00:32+00:00'
+authors: [mihai-ordean]
 ---
 
 1. News &amp; Events
@@ -18,7 +19,7 @@ Mihai Ordean – University of Birmingham Innovate UK Project Winner At the Univ
 *CHERI Alliance news*{: .collection-tag }
 *Ecosystem*{: .collection-tag }
 *Members*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![Innovate UK Project Winner: University of Birmingham](/assets/news/innovate-uk-project-winner-university-of-birmingham/fdb47b11533a-hero.png){: .image-full }
 {: .collection-detail__lead-image }

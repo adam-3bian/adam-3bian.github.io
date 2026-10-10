@@ -2,7 +2,7 @@
 
 The full requirements are in [CHERI_MIGRATION_SPEC.md](CHERI_MIGRATION_SPEC.md), with execution rules in [AGENTS.md](AGENTS.md). Both source websites remain separately traceable.
 
-The user's subsequent instruction requires **YAML front matter and Markdown only** for editorial content. This overrides the original spec's allowance for inline raw HTML. Use native Kramdown headings, lists, definitions, fenced code, pipe tables, links, images and attribute lists. Image roles remain source-derived `.image-left`, `.image-right` or `.image-full`; inline source images also retain `.image-inline` so they do not become floats. HTML examples inside fenced code remain literal code.
+The user's subsequent instruction requires **YAML front matter and Markdown only** for editorial content. This overrides the original spec's allowance for inline raw HTML. Use native Kramdown headings, lists, definitions, fenced code, pipe tables, links, images and attribute lists. Semantic image roles remain source-derived `.image-left`, `.image-right` or `.image-full`; inline source images also retain `.image-inline` so they do not become floats. HTML examples inside fenced code remain literal code.
 
 Do not add Liquid raw wrappers. Jekyll's `render_with_liquid: false` protects literal source text. Shared layouts and the presentation plugin generate browser HTML without embedding HTML in editorial Markdown.
 
@@ -16,7 +16,7 @@ The user clarified that boards means hardware boards. Use `_hardware/` for hardw
 
 ## Final website authoring and template
 
-The user requested the uploaded simplified-authoring starter as the presentation template while retaining the migrated collections and complete content. Theme and navigation controls now follow that starter; earlier source pixel comparisons are historical evidence. Complete body fidelity, original assets and image-role evidence still apply.
+The user requested the uploaded simplified-authoring starter as the presentation template while retaining the migrated collections and complete content. The starter’s actual layout/include/Sass/script files are the visual authority. Custom source-theme opacity, palette, profile/sidebar and card designs must not override them. Earlier source pixel comparisons are historical acquisition evidence. Complete body fidelity, original assets and semantic image-role evidence still apply; theme appearance is checked against the ZIP itself. Read [docs/THEME.md](docs/THEME.md) before presentation changes.
 
 Editorial filenames and canonical URLs omit source-host prefixes. Minimal front matter uses `title`, role flags `member`/`speaker`, and filename references `organization`/`speakers`/`authors`. Reverse links are generated. `_data/governing-board.yml` is the sole registry, containing ordered people IDs. Navigation belongs in `_config.yml`, and provenance belongs in reports. Name-only author records are explicitly authorized for contributors without profiles; no biographies or affiliations may be invented.
 

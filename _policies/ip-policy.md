@@ -3,7 +3,7 @@ title: CHERI ALLIANCE CIC IP Policy
 ---
 
 # CHERI ALLIANCE CIC IP Policy
-{: .elementor-heading-title .elementor-size-default }
+
 
 **Version:** 1.01  
 **Date:** August 2024

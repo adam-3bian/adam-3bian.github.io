@@ -16,7 +16,7 @@ The Digital Security by Design all-hands conference was held last week in Leeds,
 
 *25 September 2024*{: .source-date }
 *CHERI Alliance news*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![End-users demand memory safety in their systems](/assets/news/end-users-demand-memory-safety-in-their-systems/bd37f9598c14-hero.png){: .image-full }
 {: .collection-detail__lead-image }

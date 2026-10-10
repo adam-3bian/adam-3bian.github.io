@@ -1,6 +1,7 @@
 ---
 title: You just missed the CHERITech’25 Conference – but wait, you can still attend the virtual replay!
 date: '2025-11-17T15:10:57+00:00'
+authors: [adam-finney]
 ---
 
 1. News &amp; Events
@@ -17,7 +18,7 @@ Adam Finney – CHERI Alliance The CHERITech’25 Conference was held on the 14t
 *17 November 2025*{: .source-date }
 *CHERI Alliance news*{: .collection-tag }
 *Events*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![You just missed the CHERITech’25 Conference – but wait, you can still attend the virtual replay!](/assets/news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/2e1bb34a5f1e-hero.png){: .image-full }
 {: .collection-detail__lead-image }

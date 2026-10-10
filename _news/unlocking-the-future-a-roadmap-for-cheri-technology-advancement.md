@@ -1,6 +1,7 @@
 ---
 title: 'Unlocking the Future: A Roadmap for CHERI Technology Advancement'
 date: '2025-05-27T10:16:10+01:00'
+authors: [mike-eftimakis]
 ---
 
 1. News &amp; Events
@@ -16,7 +17,7 @@ Mike Eftimakis – CHERI Alliance In the rapidly evolving landscape of cybersecu
 
 *27 May 2025*{: .source-date }
 *CHERI Alliance news*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![World map with binary code](/assets/news/unlocking-the-future-a-roadmap-for-cheri-technology-advancement/9e54b16eecb6-hero.png){: .image-full }
 {: .collection-detail__lead-image }

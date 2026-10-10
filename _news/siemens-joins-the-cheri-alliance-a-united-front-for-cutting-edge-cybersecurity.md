@@ -16,7 +16,7 @@ Cambridge, UK – 5 September 2025 – The CHERI Alliance announces that the Ele
 
 *8 September 2025*{: .source-date }
 *CHERI Alliance news*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![Welcome Siemens with the CHERI Alliance Member logo in the bottom right.](/assets/news/siemens-joins-the-cheri-alliance-a-united-front-for-cutting-edge-cybersecurity/caba10383daf-hero.png){: .image-full }
 {: .collection-detail__lead-image }

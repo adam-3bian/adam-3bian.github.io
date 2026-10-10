@@ -52,7 +52,7 @@ Dates, venue information, registration updates, and programme details are kept o
 
 Upcoming
 Conference
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 21 to 23 April 2027
 University of Cambridge, Cambridge, UK
@@ -76,7 +76,7 @@ Previous conference, tutorial, and livestream pages retain the schedules, speake
 
 Past
 Tutorial
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 25 March 2026
 University of Cambridge, Cambridge, UK
@@ -95,7 +95,7 @@ View event archive
 
 Past
 Conference
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 25 to 27 March 2026
 University of Cambridge, Cambridge, UK
@@ -114,7 +114,7 @@ View event archive
 
 Past
 Conference
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 2 April 2025
 St John's College, Cambridge, UK
@@ -136,12 +136,8 @@ View event archive
 {: .where-next-card-title }
 
 
-
-
-
 [Information about CHERITech Conference, including its programme, audience, and current event details.](/news-and-events/events-and-archive/cheritech/)
 {: .where-next-summary }
-
 
 
 [Continue](/news-and-events/events-and-archive/cheritech/)
@@ -154,31 +150,20 @@ View event archive
 {: .related-pages-item-title }
 
 
-
-
-
 [A calendar of upcoming CHERI-related events, talks, workshops, and community sessions.](/news-and-events/events-and-archive/upcoming-events/)
 {: .related-pages-item-summary }
-
 
 
 [Read this page](/news-and-events/events-and-archive/upcoming-events/)
 {: .source-card-label }
 
 
-
-
-
 ### [Latest News](/news-and-events/news-and-analysis/latest-news/)
 {: .related-pages-item-title }
 
 
-
-
-
 [The latest CHERI Alliance and ecosystem announcements, presented with clear dates and sources.](/news-and-events/news-and-analysis/latest-news/)
 {: .related-pages-item-summary }
-
 
 
 [Read this page](/news-and-events/news-and-analysis/latest-news/)

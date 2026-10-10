@@ -4,7 +4,7 @@ alternate: true
 ---
 
 # Several CHERI Alliance members win the DSbD competition to deliver new CHERI chips and software
-{: .elementor-heading-title .elementor-size-default }
+
 
 Exciting news for the CHERI community! The winners of the latest Digital Security by Design (DSbD) innovation competitions have been announced, and once again the CHERI Alliance is right at the heart of the action.
 

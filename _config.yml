@@ -77,10 +77,32 @@ defaults:
     layout: page
     render_with_liquid: false
     theme: light
+    hero: true
+    image-overlay: true
 - scope:
     path: pages/index.md
   values:
     theme: dark
+- scope:
+    path: ''
+    type: people
+  values:
+    layout: person
+- scope:
+    path: ''
+    type: organisations
+  values:
+    layout: member
+- scope:
+    path: ''
+    type: events
+  values:
+    layout: event
+- scope:
+    path: ''
+    type: news
+  values:
+    layout: post
 title: CHERI Alliance
 description: 'CHERI Alliance: hardware-enforced memory safety, secure software and
   the CHERI community.'
@@ -381,3 +403,9 @@ navigation:
       src: /assets/images/social/linkedin.svg
       alt: CHERI Alliance on LinkedIn
 timezone: Europe/London
+
+subscribe:
+  enabled: true
+  title: Stay connected with CHERI
+  action: Explore the newsletter
+  url: /news-and-events/news-and-analysis/subscribe-newsletter/

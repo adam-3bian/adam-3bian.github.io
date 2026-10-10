@@ -35,9 +35,17 @@ for group,items in groups.items():
                     source=signature(by_url[proof['source_url']])[1]
                     assert any(url.rstrip('/')==proof['profile_url'].rstrip('/') for url,label in source['links'])
                 elif field=='authors':
-                    paper=next(p for p in json.loads((ROOT/'reports/paper-validation.json').read_text()) if p['local_path']==path)
-                    assert proof['published_name'] in paper['named_authors']
-                    assert proof['published_name'] in paper['source_signature']['text']
+                    if group=='news':
+                        source=signature(by_url[proof['source_url']])[1]
+                        assert proof['published_name'] in source['text']
+                        byline_body=document(proof['byline_source_path'])[1]
+                        assert proof['published_byline'] in byline_body.splitlines()
+                        assert proof['published_byline'].lstrip('*').startswith(proof['published_name']+' – ')
+                        assert proof['published_name'].removeprefix('Dr ')==groups['people'][target]['meta']['title']
+                    else:
+                        paper=next(p for p in json.loads((ROOT/'reports/paper-validation.json').read_text()) if p['local_path']==path)
+                        assert proof['published_name'] in paper['named_authors']
+                        assert proof['published_name'] in paper['source_signature']['text']
                 checks.append({'path':path,'field':field,'target':target,'source_url':proof['source_url'],'status':'passed'})
                 relation_list.append(field+': '+target)
         for role in ('member','speaker'):
@@ -66,6 +74,11 @@ for derived in json.loads((ROOT/'reports/derived-content.json').read_text()):
         source=signature(by_url[derived['source_url']])[1]
         assert derived['title'] in derived['source_label']
         assert derived['source_label'] in source['text']
+    elif derived['type']=='news-author':
+        source=signature(by_url[derived['source_url']])[1]
+        assert derived['title'] in source['text']
+        for news_id in derived['news']:
+            assert Path(derived['path']).stem in groups['news'][news_id]['meta']['authors']
     else:
         assert derived['title'] in derived['source_names']
         for paper_id in derived['papers']:

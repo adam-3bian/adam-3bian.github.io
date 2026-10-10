@@ -1,0 +1,466 @@
+{
+  "status": "passed",
+  "reference_archive_sha256": "9f097aeace78c13e2f169fdc378f58b64b119993ac031b011ae7a618c7a7325a",
+  "checks": [
+    {
+      "check": "exact ZIP file: _sass/_themes.scss",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: _sass/_tables.scss",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: _sass/_slider.scss",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: _sass/_navigation.scss",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: _sass/_main.scss",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: _sass/_image-overlay.scss",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: _sass/_hero.scss",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: _sass/_header.scss",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: _sass/_forms.scss",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: _sass/_footer.scss",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: _sass/_cards.scss",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: _sass/_call-to-action.scss",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: _sass/_breadcrumbs.scss",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: _sass/_base.scss",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: _layouts/post.html",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: _layouts/people.html",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: _layouts/page.html",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: _layouts/news.html",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: _layouts/members.html",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: _layouts/member.html",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: _layouts/list.html",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: _layouts/index.html",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: _layouts/forms.html",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: _layouts/events.html",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: _layouts/event.html",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: _includes/where-next.html",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: _includes/subscribe.html",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: _includes/slider.html",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: _includes/related-pages.html",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: _includes/image-overlay.html",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: _includes/header.html",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: _includes/form-fields.html",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: _includes/footer.html",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: assets/js/slider.js",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: assets/js/navigation.js",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: assets/js/image-overlay.js",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: assets/js/content.js",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: assets/css/main.scss",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: assets/images/social/slack.svg",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: assets/images/social/mastodon.svg",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: assets/images/social/linkedin.svg",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: assets/images/social/LICENSE.txt",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: assets/images/brand/logo-white.svg",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: assets/images/brand/logo-blue.svg",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: assets/images/brand/favicon-source.png",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: assets/images/background/hexagons.svg",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: assets/images/background/hexagons-light.webp",
+      "status": "passed"
+    },
+    {
+      "check": "exact ZIP file: assets/images/background/hexagons-dark.webp",
+      "status": "passed"
+    },
+    {
+      "check": "source-theme override styles are retired",
+      "status": "passed"
+    },
+    {
+      "check": "native theme active: /",
+      "status": "passed"
+    },
+    {
+      "check": "native theme active: /organisations/codasip",
+      "status": "passed"
+    },
+    {
+      "check": "native theme active: /people/robert-watson",
+      "status": "passed"
+    },
+    {
+      "check": "native theme active: /news/beyond-software-patching",
+      "status": "passed"
+    },
+    {
+      "check": "dark theme matches ZIP at 1440px",
+      "status": "passed",
+      "computed_styles": {
+        "body": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "color": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(7, 19, 27)"
+        },
+        "body::before": {
+          "opacity": "0.48",
+          "backgroundRepeat": "repeat",
+          "backgroundSize": "auto"
+        },
+        "header": {
+          "backgroundColor": "rgba(16, 40, 50, 0.94)",
+          "paddingLeft": "32px",
+          "paddingRight": "32px"
+        },
+        ".brand img": {
+          "maxWidth": "144px",
+          "height": "48px"
+        },
+        "main": {
+          "backgroundColor": "rgba(7, 21, 30, 0.9)",
+          "maxWidth": "1264px",
+          "paddingLeft": "32px",
+          "paddingRight": "32px"
+        },
+        ".hero": {
+          "backgroundColor": "rgba(30, 94, 122, 0.6)",
+          "paddingLeft": "32px",
+          "paddingRight": "32px",
+          "paddingTop": "64px",
+          "paddingBottom": "64px"
+        },
+        ".hero h1": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "86.4px",
+          "fontWeight": "600",
+          "lineHeight": "90.72px",
+          "letterSpacing": "-4.752px",
+          "color": "rgb(255, 255, 255)"
+        },
+        ".hero .lede": {
+          "fontSize": "20px",
+          "lineHeight": "30px",
+          "color": "rgb(255, 255, 255)"
+        },
+        ".card": {
+          "backgroundColor": "rgba(45, 96, 121, 0.6)",
+          "paddingLeft": "32px",
+          "paddingRight": "32px"
+        },
+        "footer": {
+          "backgroundColor": "rgba(8, 35, 47, 0.82)",
+          "color": "rgb(255, 255, 255)"
+        }
+      }
+    },
+    {
+      "check": "dark theme matches ZIP at 390px",
+      "status": "passed",
+      "computed_styles": {
+        "body": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "color": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(7, 19, 27)"
+        },
+        "body::before": {
+          "opacity": "0.48",
+          "backgroundRepeat": "repeat",
+          "backgroundSize": "auto"
+        },
+        "header": {
+          "backgroundColor": "rgba(16, 40, 50, 0.94)",
+          "paddingLeft": "20px",
+          "paddingRight": "20px"
+        },
+        ".brand img": {
+          "maxWidth": "144px",
+          "height": "48px"
+        },
+        "main": {
+          "backgroundColor": "rgba(7, 21, 30, 0.9)",
+          "maxWidth": "1264px",
+          "paddingLeft": "20px",
+          "paddingRight": "20px"
+        },
+        ".hero": {
+          "backgroundColor": "rgba(30, 94, 122, 0.6)",
+          "paddingLeft": "20px",
+          "paddingRight": "20px",
+          "paddingTop": "48px",
+          "paddingBottom": "48px"
+        },
+        ".hero h1": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "40px",
+          "fontWeight": "600",
+          "lineHeight": "42px",
+          "letterSpacing": "-2.2px",
+          "color": "rgb(255, 255, 255)"
+        },
+        ".hero .lede": {
+          "fontSize": "18px",
+          "lineHeight": "27px",
+          "color": "rgb(255, 255, 255)"
+        },
+        ".card": {
+          "backgroundColor": "rgba(45, 96, 121, 0.6)",
+          "paddingLeft": "24px",
+          "paddingRight": "24px"
+        },
+        "footer": {
+          "backgroundColor": "rgba(8, 35, 47, 0.82)",
+          "color": "rgb(255, 255, 255)"
+        }
+      }
+    },
+    {
+      "check": "light theme matches ZIP at 1440px",
+      "status": "passed",
+      "computed_styles": {
+        "body": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "color": "rgb(20, 20, 20)",
+          "backgroundColor": "rgb(240, 243, 245)"
+        },
+        "body::before": {
+          "opacity": "0.32",
+          "backgroundRepeat": "repeat",
+          "backgroundSize": "auto"
+        },
+        "header": {
+          "backgroundColor": "rgba(255, 255, 255, 0.94)",
+          "paddingLeft": "32px",
+          "paddingRight": "32px"
+        },
+        ".brand img": {
+          "maxWidth": "144px",
+          "height": "48px"
+        },
+        "main": {
+          "backgroundColor": "rgba(255, 255, 255, 0.46)",
+          "maxWidth": "1264px",
+          "paddingLeft": "32px",
+          "paddingRight": "32px"
+        },
+        ".hero": {
+          "backgroundColor": "rgba(142, 190, 212, 0.66)",
+          "paddingLeft": "32px",
+          "paddingRight": "32px",
+          "paddingTop": "16px",
+          "paddingBottom": "64px"
+        },
+        ".hero h1": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "52px",
+          "fontWeight": "600",
+          "lineHeight": "59.8px",
+          "letterSpacing": "-2.08px",
+          "color": "rgb(20, 20, 20)"
+        },
+        ".hero .lede": {
+          "fontSize": "20px",
+          "lineHeight": "30px",
+          "color": "rgb(20, 20, 20)"
+        },
+        ".card": {
+          "backgroundColor": "rgba(116, 167, 191, 0.62)",
+          "paddingLeft": "32px",
+          "paddingRight": "32px"
+        },
+        "footer": {
+          "backgroundColor": "rgba(6, 44, 59, 0.82)",
+          "color": "rgb(255, 255, 255)"
+        }
+      }
+    },
+    {
+      "check": "light theme matches ZIP at 390px",
+      "status": "passed",
+      "computed_styles": {
+        "body": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "color": "rgb(20, 20, 20)",
+          "backgroundColor": "rgb(240, 243, 245)"
+        },
+        "body::before": {
+          "opacity": "0.32",
+          "backgroundRepeat": "repeat",
+          "backgroundSize": "auto"
+        },
+        "header": {
+          "backgroundColor": "rgba(255, 255, 255, 0.94)",
+          "paddingLeft": "20px",
+          "paddingRight": "20px"
+        },
+        ".brand img": {
+          "maxWidth": "144px",
+          "height": "48px"
+        },
+        "main": {
+          "backgroundColor": "rgba(255, 255, 255, 0.46)",
+          "maxWidth": "1264px",
+          "paddingLeft": "20px",
+          "paddingRight": "20px"
+        },
+        ".hero": {
+          "backgroundColor": "rgba(142, 190, 212, 0.66)",
+          "paddingLeft": "20px",
+          "paddingRight": "20px",
+          "paddingTop": "16px",
+          "paddingBottom": "48px"
+        },
+        ".hero h1": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "36px",
+          "fontWeight": "600",
+          "lineHeight": "41.4px",
+          "letterSpacing": "-1.44px",
+          "color": "rgb(20, 20, 20)"
+        },
+        ".hero .lede": {
+          "fontSize": "18px",
+          "lineHeight": "27px",
+          "color": "rgb(20, 20, 20)"
+        },
+        ".card": {
+          "backgroundColor": "rgba(116, 167, 191, 0.62)",
+          "paddingLeft": "24px",
+          "paddingRight": "24px"
+        },
+        "footer": {
+          "backgroundColor": "rgba(6, 44, 59, 0.82)",
+          "color": "rgb(255, 255, 255)"
+        }
+      }
+    }
+  ]
+}

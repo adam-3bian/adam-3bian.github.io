@@ -3,7 +3,7 @@ title: Privacy policy
 ---
 
 # Privacy policy
-{: .entry-title }
+
 
 This Website collects some Personal data from its Users.
 

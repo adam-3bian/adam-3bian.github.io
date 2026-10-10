@@ -6,7 +6,7 @@
   <label for="directory-filter">Show
     <select id="directory-filter">
       <option value="">All {{ page.title | downcase | escape }}</option>
-      {% if page.listing == 'people' %}<option value="speaker">Speakers</option><option value="author">Paper authors</option>{% endif %}
+      {% if page.listing == 'people' %}<option value="speaker">Speakers</option><option value="author">Authors</option>{% endif %}
       {% if page.listing == 'organisations' %}<option value="member">Alliance members</option>{% endif %}
       {% if page.listing == 'events' %}<option value="upcoming">Upcoming events</option><option value="past">Past events</option>{% endif %}
     </select>

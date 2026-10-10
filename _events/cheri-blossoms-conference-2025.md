@@ -112,7 +112,7 @@ St. John’s College, St. Johns Street, Cambridge, CB2 1TP
 
 Upcoming
 Conference
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 21 to 23 April 2027
 University of Cambridge, Cambridge, UK
@@ -131,7 +131,7 @@ View event
 
 Past
 Tutorial
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 25 March 2026
 University of Cambridge, Cambridge, UK
@@ -150,7 +150,7 @@ View event archive
 
 Past
 Conference
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 25 to 27 March 2026
 University of Cambridge, Cambridge, UK

@@ -63,7 +63,7 @@ title: Anthony Fox
 
 Linked papers appear automatically. Do not invent a biography, photograph, speaker role or current affiliation. Unnamed contributors such as “and others” remain in the original citation; no fictional people records are created.
 
-## Events and papers
+## Events, news and papers
 
 Keep the full event body and reference existing people through `speakers`. Keep complete paper citations, descriptions and publication links in the body; use `authors` for existing people in citation order. The following abbreviated example shows the syntax:
 
@@ -74,7 +74,11 @@ authors: [jonathan-woodruff, alexandre-joannou, hongyan-xia, anthony-fox]
 
 The actual CHERI Concentrate record retains all 15 named authors. Existing records provide complete source-verified arrays. References must match filenames; the build fails on unknown people or organisation IDs.
 
-Do not repeat reverse relationships. A person's events come from event `speakers`; their publications come from paper `authors`; an organisation's people come from people `organization`. The build generates those sections without Liquid in editorial Markdown.
+News uses the same `authors` references. For example, `_news/one-bug-is-all-it-takes.md` uses `authors: [adam-finney]`. Add authors only from an explicit published byline, with evidence in `reports/relationship-evidence.json`; people mentioned, interviewed or quoted in a story are not automatically its authors. Reuse existing profiles. A bylined author without a profile gets a name-only people record, like a paper author, with provenance in `reports/derived-content.json`.
+
+News displays linked author cards. People display their canonical news articles newest first; retained `alternate: true` versions do not create duplicate cards. If a byline is preserved only in an original source version, record that distinct evidence rather than altering or merging the source bodies.
+
+Do not repeat reverse relationships. A person's events come from event `speakers`; their publications and news come from paper/news `authors`; an organisation's people come from people `organization`. The build generates those sections without Liquid in editorial Markdown.
 
 ## Governing board, directories and navigation
 
@@ -82,7 +86,7 @@ Do not repeat reverse relationships. A person's events come from event `speakers
 
 Published member and speaker directories list the canonical records selected by their flags. Their complete original source directories remain as separate Markdown source versions. Flags and affiliations describe captured sources, rather than asserting present employment.
 
-All collection directories support keyword filtering. The people directory can select speakers or paper authors; the organisations directory can select members. Paper-author roles are derived from `authors` references, without another flag. Member tiers and founding status come from the explicit published profile definitions, rather than duplicated YAML.
+All collection directories support keyword filtering. The people directory can select speakers or authors of papers and news; the organisations directory can select members. Author roles are derived from `authors` references, without another flag. Member tiers and founding status come from the explicit published profile definitions, rather than duplicated YAML.
 
 Event dates and locations come from the source-backed `Date` and `Location` definitions in the body. An event remains upcoming through its last published day, then moves into the past list at the next build. Dates are evaluated in Europe/London; the static preview updates when its build runs. Set `CHERI_TODAY=YYYY-MM-DD` when testing date-dependent changes. No additional date/status front matter is required.
 
@@ -94,7 +98,7 @@ Hardware platforms, boards and processor cores belong in `_hardware`. Operating 
 
 ## Markdown, assets and evidence
 
-Write native Kramdown headings, lists, links, tables, definitions and fenced code. Editorial HTML and Liquid wrappers are unnecessary. Images reference original local assets:
+Write native Kramdown headings, lists, links, tables, definitions and fenced code. Keep CMS classes such as `.elementor-*`, `.wp-*`, `.widget-*` and `.tablepress*` out of Markdown. The actual uploaded starter layout/includes/Sass supply breadcrumbs, page headings and native hero sections. Read [THEME.md](THEME.md) before presentation changes; source layout evidence does not override the theme. Preserve semantic image alignment classes and real heading anchors; the converter and Markdown validator enforce that separation. Editorial HTML and Liquid wrappers are unnecessary. Images reference original local assets:
 
 ```markdown
 ![Published description](/assets/events/event-id/original-image.png){: .image-full }

@@ -1,6 +1,7 @@
 ---
 title: 'Behind the Scenes: inside the promotion and ambassador program Working Group'
 date: '2025-09-30T10:51:40+01:00'
+authors: [mike-eftimakis]
 ---
 
 1. News &amp; Events
@@ -17,7 +18,7 @@ Mike Eftimakis – CHERI Alliance If you’ve been watching the CHERI Alliance g
 *30 September 2025*{: .source-date }
 *CHERI Alliance news*{: .collection-tag }
 *Working Groups*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![CHERI Alliance Working Groups logo](/assets/shared/source-assets/bb889a4dc09e-cheri-alliance-working-groups.png){: .image-full }
 {: .collection-detail__lead-image }

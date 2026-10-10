@@ -1,6 +1,7 @@
 ---
 title: CHERI Alliance to Distribute Arm Morello Boards – The Journey Beyond DSbD Continues!
 date: '2025-10-06T11:35:27+01:00'
+authors: [mike-eftimakis]
 ---
 
 1. News &amp; Events
@@ -16,7 +17,7 @@ Mike Eftimakis – CHERI Alliance The CHERI Alliance is now distributing Arm Mor
 
 *6 October 2025*{: .source-date }
 *CHERI Alliance news*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![arm Morello board](/assets/news/cheri-alliance-to-distribute-arm-morello-boards-the-journey-beyond-dsbd-continues/249865cad3c6-hero.png){: .image-full }
 {: .collection-detail__lead-image }

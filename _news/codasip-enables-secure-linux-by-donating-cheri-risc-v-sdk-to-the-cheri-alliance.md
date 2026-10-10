@@ -16,13 +16,12 @@ Open access to complete SDK with Linux kernel will simplify building and testing
 
 *22 October 2024*{: .source-date }
 *CHERI Alliance news*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![Codasip enables secure Linux by donating CHERI RISC-V SDK to the CHERI Alliance](/assets/shared/source-assets/b40f17e0c2fc-cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus.png){: .image-full }
 {: .collection-detail__lead-image }
 
 **Open access to complete SDK with Linux kernel will simplify building and testing of CHERI-enabled RISC-V applications**
-
 
 
 [Codasip](/organisations/codasip/) has donated its newly developed Software Development Kit (SDK) for CHERI to the community-interest organization CHERI Alliance, who makes the SDK freely available for download on [GitHub](https://github.com/CHERI-Alliance).
@@ -43,7 +42,6 @@ Open access to complete SDK with Linux kernel will simplify building and testing
 - The GNU Debugger
 - Yocto build system for Linux
 - Basic user space environment based on Busybox
-
 
 
 Access the SDK from [the CHERI Alliance GitHub](https://github.com/CHERI-Alliance).

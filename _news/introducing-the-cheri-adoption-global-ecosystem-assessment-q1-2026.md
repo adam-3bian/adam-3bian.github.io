@@ -1,6 +1,7 @@
 ---
 title: Introducing the CHERI Adoption Global Ecosystem Assessment Q1 2026
 date: '2026-05-13T10:00:21+01:00'
+authors: [adam-finney]
 ---
 
 1. News &amp; Events
@@ -18,7 +19,7 @@ In 2025 alone, global cybercrime costs reached an estimated $1.2 billion every m
 *CHERI Alliance news*{: .collection-tag }
 *Ecosystem*{: .collection-tag }
 *Working Groups*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![Data analytics dashboard](/assets/news/introducing-the-cheri-adoption-global-ecosystem-assessment-q1-2026/7c6a52fd196f-hero.jpg){: .image-full }
 {: .collection-detail__lead-image }

@@ -1,0 +1,25 @@
+    {% if page.url == '/alliance/membership/contact/' %}{% include contact-form.html %}{% endif %}
+    {% if page.url == '/news-and-events/news-and-analysis/subscribe-newsletter/' %}{% include newsletter-form.html %}{% endif %}
+    {% if page.url == '/search/' %}{% include search.html %}{% endif %}
+    {% if page.collection_items %}
+      <section class="index-list" aria-label="{{ page.title | escape }}" data-collection-index>
+        {% include directory-controls.html %}
+        {% include listing.html items=page.collection_items label=page.title columns=3 directory=true %}
+        <p data-directory-empty hidden>No matches. Try a different name or filter.</p>
+      </section>
+    {% endif %}
+    {% include relationships.html %}
+    {% if page.featured_news.size > 0 %}
+    <section aria-labelledby="home-news-title">
+      <h2 id="home-news-title">Latest from the CHERI ecosystem</h2>
+      {% include listing.html items=page.featured_news label="Latest news" columns=3 heading="h3" %}
+      <p class="section-link"><a href="{{ '/news/' | relative_url }}">View all news &rarr;</a></p>
+    </section>
+    {% endif %}
+    {% if page.featured_events.size > 0 %}
+    <section aria-labelledby="home-events-title">
+      <h2 id="home-events-title">Upcoming events</h2>
+      {% include listing.html items=page.featured_events label="Upcoming events" columns=2 heading="h3" %}
+      <p class="section-link"><a href="{{ '/events/' | relative_url }}">Explore all events &rarr;</a></p>
+    </section>
+    {% endif %}

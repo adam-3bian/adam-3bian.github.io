@@ -1,6 +1,7 @@
 ---
 title: Towards a reference QEMU for CHERI platform emulation
 date: '2026-01-28T10:00:59+00:00'
+authors: [alfredo-mazzinghi]
 ---
 
 1. News &amp; Events
@@ -17,7 +18,7 @@ Alfredo Mazzinghi – Capabilities Limited QEMU is one of the most popular open 
 *28 January 2026*{: .source-date }
 *CHERI Alliance news*{: .collection-tag }
 *Working Groups*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![CHERI Alliance Working Groups logo](/assets/shared/source-assets/bb889a4dc09e-cheri-alliance-working-groups.png){: .image-full }
 {: .collection-detail__lead-image }

@@ -1,0 +1,12 @@
+---
+layout: page
+---
+{% assign child_pages = site.html_pages | concat: site.documents | where_exp: 'item', 'item.redirect_to == nil' | where_exp: 'item', 'item.redirect == nil' | where_exp: 'item', 'item.collection != "redirects"' | where: 'parent', page.url | sort_natural: 'title' %}
+{% if child_pages.size > 0 %}
+<section class="index-list" aria-labelledby="index-pages">
+  <h2 id="index-pages">{{ page.listing.title | default: 'Explore this section' | escape }}</h2>
+  {% include listing.html items=child_pages label=page.title columns=page.listing.columns heading='h3' action='Explore' %}
+</section>
+{% endif %}
+
+{{ content }}

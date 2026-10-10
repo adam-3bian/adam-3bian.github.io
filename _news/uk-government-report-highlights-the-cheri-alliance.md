@@ -16,7 +16,7 @@ The Department for Science Innovation and Technology (DSIT) of the British Gover
 
 *16 May 2024*{: .source-date }
 *Government / Regulation*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![UK Government report highlights the CHERI Alliance](/assets/news/uk-government-report-highlights-the-cheri-alliance/d35a036dc982-hero.jpg){: .image-full }
 {: .collection-detail__lead-image }

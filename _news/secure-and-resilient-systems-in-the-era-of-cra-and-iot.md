@@ -17,7 +17,7 @@ On 21 January 2026, technology leaders, engineers, security practitioners and co
 *6 January 2026*{: .source-date }
 *Events*{: .collection-tag }
 *Members*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![Secure Horizons 2026. Navigating IoT compliance in a global regulatory landscape. Taking place at the IWM Duxford, Cambridge, England on Wednesday 21st January 2026, this is an official IoTSF partner event.](/assets/news/secure-and-resilient-systems-in-the-era-of-cra-and-iot/c43d0f35792b-hero.png){: .image-full }
 {: .collection-detail__lead-image }

@@ -24,7 +24,7 @@ The next opportunities to learn about CHERI, hear from the community, and take p
 
 Upcoming
 Conference
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 12 to 13 November 2026
 SEMICON Europa, Munich, Germany
@@ -43,7 +43,7 @@ View event
 
 Upcoming
 Conference
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 21 to 23 April 2027
 University of Cambridge, Cambridge, UK
@@ -65,12 +65,8 @@ View event
 {: .where-next-card-title }
 
 
-
-
-
 [Information about CHERI Blossoms, including its purpose, audience, and current event details.](/news-and-events/events-and-archive/cheri-blossoms/)
 {: .where-next-summary }
-
 
 
 [Continue](/news-and-events/events-and-archive/cheri-blossoms/)
@@ -83,12 +79,8 @@ View event
 {: .related-pages-item-title }
 
 
-
-
-
 [The latest CHERI Alliance and ecosystem announcements, presented with clear dates and sources.](/news-and-events/news-and-analysis/latest-news/)
 {: .related-pages-item-summary }
-
 
 
 [Read this page](/news-and-events/news-and-analysis/latest-news/)

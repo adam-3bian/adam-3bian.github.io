@@ -1,6 +1,7 @@
 ---
 title: A new ETSI standard could rewrite the memory-safety debate
 date: '2026-07-29T17:07:00+01:00'
+authors: [mike-eftimakis]
 ---
 
 1. News &amp; Events
@@ -18,7 +19,7 @@ Mike Eftimakis – CHERI Alliance ETSI TS 104 198 establishes a common language 
 *CHERI Alliance news*{: .collection-tag }
 *Ecosystem*{: .collection-tag }
 *Government / Regulation*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![ETSI standard](/assets/news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/67e343f4b8d6-hero.png){: .image-full }
 {: .collection-detail__lead-image }

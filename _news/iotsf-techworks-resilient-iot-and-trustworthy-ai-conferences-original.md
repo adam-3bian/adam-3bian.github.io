@@ -1,10 +1,11 @@
 ---
 title: IoTSF + TechWorks – Resilient IoT and Trustworthy AI Conferences
 alternate: true
+authors: [adam-finney]
 ---
 
 # IoTSF + TechWorks – Resilient IoT and Trustworthy AI Conferences
-{: .elementor-heading-title .elementor-size-default }
+
 
 *Adam Finney – **CHERI Alliance***
 
@@ -23,11 +24,6 @@ It was encouraging to see growing awareness of CHERI-enabled architectures and s
 Sessions throughout the event addressed hardware trust anchors, supply-chain security, evolving regulation and the rising intersection of IoT and AI. A shared view across discussions was that system-level security must be designed into platforms from the start rather than added as an afterthought.
 
 The event was co-hosted by IoTSF and [TechWorks](/organisations/techworks/) at the IET in London, with support from speakers, exhibitors and contributors across the IoT and cybersecurity community.
-
-
-
-
-
 
 
 For more information on CHERI and capability-based security, visit [cheri-alliance.org](http://cheri-alliance.org), or find us on [LinkedIn](https://www.linkedin.com/company/cheri-alliance/) or [Mastodon](https://infosec.exchange/@cheri_alliance).

@@ -16,7 +16,7 @@ Andy Lindsay &amp; Carl Shaw – Codasip The DSTL paper “Biting the CHERI bull
 
 *13 May 2025*{: .source-date }
 *CHERI Alliance news*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![Recent advances in CHERI enhancing stability, maturity, and accessibility as urged by the UK’s DSTL](/assets/shared/source-assets/b40f17e0c2fc-cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus.png){: .image-full }
 {: .collection-detail__lead-image }

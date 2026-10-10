@@ -34,6 +34,12 @@
   {% include listing.html items=page.related_people label="People" heading="h3" compact=true columns=3 %}
 </section>
 {% endif %}
+{% if page.related_news.size > 0 %}
+<section class="related-content" data-relationship="news" aria-labelledby="news-title">
+  <h2 id="news-title">News articles</h2>
+  {% include listing.html items=page.related_news label="News articles" heading="h3" columns=3 %}
+</section>
+{% endif %}
 
 {% if page.governing_board %}
 <section class="related-content" data-relationship="governing-board" aria-labelledby="board-title">

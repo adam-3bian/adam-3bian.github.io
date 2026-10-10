@@ -18,7 +18,7 @@ Exciting news for the CHERI community! The winners of the latest Digital Securit
 *CHERI Alliance news*{: .collection-tag }
 *Ecosystem*{: .collection-tag }
 *Members*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![Several CHERI Alliance members win the DSbD competition to deliver new CHERI chips and software](/assets/shared/source-assets/dca93f847af6-cheriot-1-0-specification-released.png){: .image-full }
 {: .collection-detail__lead-image }

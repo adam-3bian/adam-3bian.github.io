@@ -1,0 +1,32 @@
+{% if page['related-pages'] and page['related-pages'].size > 0 %}
+<section aria-labelledby="related-pages">
+  <h2 id="related-pages">Related pages</h2>
+
+  <ul class="cards columns-3">
+    {% for related_page in page['related-pages'] %}
+      {% assign destination_url = related_page.url | split: '#' | first | split: '?' | first %}
+      {% assign destination_page = all_pages | where: 'url', destination_url | first %}
+      {% assign related_title = related_page.title | default: destination_page.title | default: related_page.url %}
+      <li>
+        {% assign link_target = related_page.target | default: '' | strip %}
+        {% assign link_rel = related_page.rel | default: '' | strip %}
+        {% if link_target == '_blank' %}
+          {% assign rel_tokens = link_rel | split: ' ' %}
+          {% unless rel_tokens contains 'noopener' %}{% assign link_rel = link_rel | append: ' noopener' %}{% endunless %}
+          {% unless rel_tokens contains 'noreferrer' %}{% assign link_rel = link_rel | append: ' noreferrer' %}{% endunless %}
+        {% endif %}
+        {% assign link_url = related_page.url %}
+        {% assign url_prefix = link_url | slice: 0, 2 %}
+        {% assign url_first = link_url | slice: 0, 1 %}
+        {% unless link_url contains ':' or url_prefix == '//' or url_first == '#' %}
+          {% assign link_url = link_url | relative_url %}
+        {% endunless %}
+        <a class="card" href="{{ link_url | escape }}"{% if link_target != '' %} target="{{ link_target | escape }}"{% endif %}{% if link_rel != '' %} rel="{{ link_rel | strip | escape }}"{% endif %}{% if link_target == '_blank' %} title="Opens in a new tab"{% endif %}>
+          <h3>{{ related_title | escape }}</h3>
+          <span class="card-action">{{ related_page.action | default: 'Explore' | escape }} &rarr;</span>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}

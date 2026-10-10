@@ -21,7 +21,7 @@ Each entry distinguishes a formal vacancy from an early expression of interest a
 
 Expression of interest
 Fully remote
-{: .collection-card__labels .source-div-text }
+{: .collection-card__labels }
 
 United Kingdom
 *Posted 3 August 2026*{: .source-date }
@@ -48,12 +48,8 @@ Alliance members can use the [contact page](/alliance/membership/contact/) to pr
 {: .where-next-card-title }
 
 
-
-
-
 [Meet the people sharing CHERI work through Alliance talks and events.](/news-and-events/people-and-opportunities/speakers/)
 {: .where-next-summary }
-
 
 
 [Continue](/news-and-events/people-and-opportunities/speakers/)
@@ -66,12 +62,8 @@ Alliance members can use the [contact page](/alliance/membership/contact/) to pr
 {: .related-pages-item-title }
 
 
-
-
-
 [Learn how the Alliance connects organisations working across the CHERI ecosystem.](/organisations/cheri-alliance/)
 {: .related-pages-item-summary }
-
 
 
 [Read this page](/organisations/cheri-alliance/)

@@ -1,6 +1,7 @@
 ---
 title: CHERIoT 1.0 Specification Released
 date: '2025-11-05T10:00:12+00:00'
+authors: [adam-finney]
 ---
 
 1. News &amp; Events
@@ -17,7 +18,7 @@ Adam Finney – CHERI Alliance 5 November 2025, Cambridge – New Release CHERIo
 *5 November 2025*{: .source-date }
 *CHERI Alliance news*{: .collection-tag }
 *Ecosystem*{: .collection-tag }
-{: .collection-detail__metadata .source-div-text }
+{: .collection-detail__metadata }
 
 ![CHERIoT 1.0 Specification Released](/assets/shared/source-assets/dca93f847af6-cheriot-1-0-specification-released.png){: .image-full }
 {: .collection-detail__lead-image }

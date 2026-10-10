@@ -4,10 +4,10 @@ alternate: true
 ---
 
 # Recent advances in CHERI enhancing stability, maturity, and accessibility as urged by the UK’s DSTL
-{: .elementor-heading-title .elementor-size-default }
+
 
 *Andy Lindsay &amp; Carl Shaw –* [*Codasip*](/organisations/codasip/)
-{: .elementor-widget-container .source-div-text }
+
 
 The DSTL paper “[Biting the CHERI bullet: Blockers, Enablers and Security Implications of CHERI in Defence](https://arxiv.org/pdf/2504.17904)” collates and analyzes feedback on CHERI development by 15 independent teams across industry and academia on the Morello research platform.
 
@@ -16,7 +16,7 @@ This work provides a useful set of feedback based on their Morello experience th
 The paper had three common threads: stability, maturity, and accessibility.
 
 ## Stability
-{: .elementor-heading-title .elementor-size-default }
+
 
 Many of the companies involved commented on the stability of the hardware, the operating system (which was primarily CheriBSD), and the tooling.
 
@@ -27,7 +27,7 @@ As the timescales and budget to create Morello were very limited, CHERI had to b
 As this was a research project, the software was evolving very rapidly and sometimes even with multiple experimental implementations of security features. This naturally led to rapidly evolving software, tools (including the compiler) and associated documentation. Some architecture-specific features, such as CHERI debug, were not provided in the CHERI specification from the [University of Cambridge](/organisations/university-of-cambridge/) and were developed specifically for Morello. It is unsurprising that the participants encountered stability issues as everything would have been evolving under their feet and they were dealing with early-stage silicon.
 
 ## Maturity
-{: .elementor-heading-title .elementor-size-default }
+
 
 Morello was a platform released in January 2022 to explore how CHERI could be used, and as the [CHERI ISA implementation on Arm](https://developer.arm.com/documentation/ddi0606/latest/) offered a range of options, there was sometimes no prescribed “right way to do things”. This is why the companies in the paper, often projects in the early stages, found the technology to be immature. Over the course of the Digital-Security-by-Design (DSbD) program, the knowledge and consensus solidified, providing more guidance later on.
 
@@ -42,7 +42,7 @@ Some of the participants in this study may also have been better off porting the
 When a technology is first introduced, the focus is normally on functionality. In the case of CHERI, the focus was on security and then functional correctness. Once that is done, the experience allows for a period of optimization and then productization. The projects surveyed used the technology during the first phase, thus finding a number of sub-optimal implementations in both the hardware and the software. We now have more optimal hardware designs, such as [Codasip’s X730 64-bit application processor](https://codasip.com/solutions/riscv-processor-safety-security/cheri/x730-risc-v-application-processor/) that was designed from the ground up for CHERI. The LLVM compiler has been improved, with better optimization and better testing against compiler test suites. Operating systems such as Linux are currently being optimized to best use the CHERI hardware. Recent benchmarks are showing an average CHERI overhead of 3.8%, so rebuilding the study’s software today against more recent hardware and software releases are likely to give a much better experience.
 
 ## Accessibility
-{: .elementor-heading-title .elementor-size-default }
+
 
 The paper highlighted how the dissemination of knowledge is critical to speed the adoption of a new technology such as CHERI. The maturity and distribution of the CHERI documentation in particular was viewed as problematic. This is extremely useful as it identifies documentation, training and support for the hardware, technology fundamentals, operating systems, and development environments as being vital to enable companies to use CHERI with the same ease as existing technologies.
 
@@ -53,7 +53,7 @@ From this paper, the CHERI Alliance will need to continue to build its collectio
 As an example, the issue of CHERI compartmentalization documentation was highlighted in the paper. It is clear that each CHERI Operating System should create guidance on how to implement compartmentalization and how it links to the fundamental CHERI features implemented in capabilities. CHERI Operating systems now include BSD, Linux, FreeRTOS, Zephyr and CHERIoT OS and most of these are now managed within the CHERI Alliance and will have their own dedicated websites to provide OS-specific CHERI details.
 
 ## Other points of note
-{: .elementor-heading-title .elementor-size-default }
+
 
 The paper briefly comments on the use of CHERI in systems that have certification requirements. Two issues were raised: that of stability and the reliance on open-source dependencies. The issues of stability have been addressed above and, importantly, with the ratification of the CHERI-RISC-V specification, these industries will have a concrete base for their products. Open-source tools and operating systems are not the only options for those wishing to adopt CHERI. Defense and aerospace veterans AdaCore and Wind River have already invested significantly in porting toolchains and operating systems to CHERI.
 
@@ -62,7 +62,7 @@ The paper discusses the porting of legacy C/C++ applications to CHERI and questi
 It is important to realize that CHERI is not a solution for all security problems. CHERI protects against memory corruption (spatial and temporal), control flow integrity attacks (although this was not mentioned in the paper) and adds efficient support for compartmentalization (including co-existence with MMUs and hypervisors). It must be implemented correctly in hardware and software to be effective. A review of the top ten CWEs by the author highlighted that only two were mitigated, and a third (use after free) may be. This is correct as CHERI is a mitigation to memory safety weaknesses, not a panacea. It is also interesting to note that the weaknesses CHERI mitigates are the most **exploited** CWEs, with the \#1 Known Exploited Vulnerabilities (KEV) being “Out of bounds write” ([CWE – 2024 CWE Top 10 KEV Weaknesses](https://cwe.mitre.org/top25/archive/2024/2024_kev_list.html)).
 
 ## Conclusion
-{: .elementor-heading-title .elementor-size-default }
+
 
 This paper is an important reflection on the deployment of a new technology, highlighting the importance of stability and knowledge dissemination. The findings provide useful signposts for where the CHERI Alliance will continue to focus the efforts of its working groups and knowledge dissemination.
 
