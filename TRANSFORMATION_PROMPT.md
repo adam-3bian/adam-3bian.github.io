@@ -1,5 +1,7 @@
 # CHERI Alliance — complete content-to-ZIP website transformation
 
+**Current deployment constraint (10 October 2026):** This repository publishes through **GitHub Pages' native branch-based Jekyll build**. Do not recreate a repository-owned GitHub Actions workflow, add an `_plugins/` generator, or require a server-side runtime. Keep all data-derived pages, search, navigation, relationships and canonical routes working with supported Liquid, Markdown, static data and the existing local JavaScript. For verification, run `bundle exec jekyll build` with the GitHub Pages gem and review the hosted GitHub-managed Pages build/deployment result; older custom-build scripts are archival evidence and may not execute under native Pages.
+
 **This is the one active, executable implementation prompt for the full transformation.** Act as a senior Jekyll engineer, design-system implementer and lossless content-fidelity auditor. Implement a working website; do not stop at a proposal, mock-up, sample collection or short preview.
 
 ## Inputs and authority
@@ -33,7 +35,7 @@ Original photographs, portraits, logos, diagrams, presentations, PDFs and docume
 
 ## 3 — Keep the ZIP's design and methodology, not a visual imitation
 
-Retain the ZIP's Jekyll + Liquid + Kramdown + SCSS + vanilla JavaScript architecture and actual layouts/includes/Sass/scripts/brand files. Preserve the working repository's build toolchain and required plugins rather than blindly replacing pinned dependencies with the ZIP's smaller demonstration Gemfile.
+Retain the ZIP's Jekyll + Liquid + Kramdown + SCSS + vanilla JavaScript architecture and actual layouts/includes/Sass/scripts/brand files. Use the supported `github-pages` Gemfile and GitHub's restricted native Jekyll builder. Replace unsupported plugin behavior with Liquid/static data/JavaScript; never reintroduce unsupported Ruby plugins.
 
 Conform to the starter's precise presentation and behavior:
 
@@ -66,7 +68,7 @@ Acceptance gates:
 3. All internal links, canonical routes, fragments, redirects, sourced assets and relationship IDs resolve, or a detailed exception is recorded without false “pass”.
 4. Compare templates to the supplied ZIP and rendered reference at desktop, tablet and mobile (375, 768, 1024, 1440px), including home dark mode, long articles, cards, person/member detail, tables and navigation. Check actual palette, typography, hero, honeycomb opacity and surface states, not just screenshot similarity.
 5. Verify keyboard menus/focus, image overlay/Escape, carousel focus/autoplay and reduced motion, responsive overflow, no-JS content, disconnected forms, ordering/search and proper URLs at root and project baseurl.
-6. Keep GitHub Pages workflow functional. A local build is **not** evidence of a deployment; obtain separate permission before changing `main`, publishing or altering production settings.
+6. Keep GitHub Pages' branch-based native publishing functional with no custom workflow. A local build is **not** evidence of a deployment; obtain separate permission before changing `main`, publishing or altering production settings.
 
 ## 6 — Report and deliver
 

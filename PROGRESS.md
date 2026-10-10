@@ -1,8 +1,15 @@
 # CHERI content and authoring progress
 
+## Native GitHub Pages conversion — 10 October 2026
+
+Direct commit `0033782e982284241b63c23377c2927c1e525f38` removes the repository-owned GitHub Actions workflow and five custom Ruby plugins. Native Liquid collections, search-index/sitemap/robots, relationships, directory rendering, content heading/breadcrumb presentation and explicit compatibility redirects replace those generators. The `github-pages` Gemfile and empty baseurl publish as the `adam-3bian.github.io` **user-site root**. Original editorial Markdown and assets were not edited.
+
+GitHub's managed Pages run [38026622317](https://github.com/adam-3bian/adam-3bian.github.io/actions/runs/38026622317) completed with **successful Jekyll build and deployment**. A native build is now established, but desktop/mobile ZIP comparison, content equivalence, search/directory/relationship behavior, link/asset audit and browser flows **were not rerun**. The historical checks listed below were conducted under the earlier custom workflow; do not infer that they all passed on the new pipeline. See `docs/VALIDATION.md` for next verification steps.
+
+
 ## Current website
 
-The uploaded simplified-authoring starter supplies the theme, styles and navigation controls. Its demonstration content and placeholder images were not imported. Existing collections and full source bodies remain in use. The complete site uses the starter’s heroes and flowing profile layouts and adds generated linked directories, full-body search, working section hubs, dated event lists, canonical URLs, sitemap, a branded 404 and disconnected contact/newsletter forms. A locked GitHub Actions build deploys the preview artifact; hosting activation is a separate repository setting documented in docs/DEPLOYMENT.md.
+The uploaded simplified-authoring starter supplies the theme, styles and navigation controls. Its demonstration content and placeholder images were not imported. Existing collections and full source bodies remain in use. The complete site uses the starter’s heroes and flowing profile layouts and adds generated linked directories, full-body search, working section hubs, dated event lists, canonical URLs, sitemap, a branded 404 and disconnected contact/newsletter forms. The latest configuration uses native GitHub Pages branch-source publishing; see the dated conversion note above and docs/DEPLOYMENT.md.
 
 477 editorial Markdown files: 371 distinct complete source-page bodies, 15 full published paper catalogue entries, 65 minimal source-named people/organisation records, and 26 published editions, section hubs, directory/search/error pages. 9 original source bodies are retained as alternate reference versions while their primary routes use the declared published editions.
 
