@@ -4,7 +4,7 @@ Verified **10 October 2026 (Europe/London)** on `codex/phased-site-transformatio
 
 ## Baseline and delivery
 
-Starting commit: **`f968fad0257c0b4fc5b71299aefb3b300480abeb`**, the completed Phase 5 implementation/evidence commit. The combined task began from Phase 4's latest pushed `f000ccde5c526ba573a23dcf1cc5524f469dc92c`, after reading its report and fetching the working branch. Ending implementation/evidence commit is recorded by the following documentation-only delivery update.
+Starting commit: **`f968fad0257c0b4fc5b71299aefb3b300480abeb`**, the completed Phase 5 implementation/evidence commit. The combined task began from Phase 4's latest pushed `f000ccde5c526ba573a23dcf1cc5524f469dc92c`, after reading its report and fetching the working branch. **Ending implementation/evidence commit: `3f2fa2f60d5363f5e62316ecdce34210866d1e36`**, pushed to the working branch. A following documentation-only commit records that SHA; resolve the final delivery SHA with `git log -1 --format=%H -- reports/codex-phases/phase-06.md`.
 
 Reviewed the actual retained starter ZIP, its homepage/default layout, slider, header/footer, forms, specification, authoring examples and source/license notes, plus the user's supplied master prompt. No demonstration content/assets entered production. The existing cloud-onboarding native github-pages 232/Jekyll 3.10.0 bundle remains sufficient; dependencies and environment configuration are unchanged.
 
