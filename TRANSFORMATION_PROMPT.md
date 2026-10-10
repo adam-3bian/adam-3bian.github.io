@@ -1,6 +1,6 @@
 # CHERI Alliance — complete content-to-ZIP website transformation
 
-**Current deployment constraint (10 October 2026):** This repository publishes through **GitHub Pages' native branch-based Jekyll build**. Do not recreate a repository-owned GitHub Actions workflow, add an `_plugins/` generator, or require a server-side runtime. Keep all data-derived pages, search, navigation, relationships and canonical routes working with supported Liquid, Markdown, static data and the existing local JavaScript. For verification, run `bundle exec jekyll build` with the GitHub Pages gem and review the hosted GitHub-managed Pages build/deployment result; older custom-build scripts are archival evidence and may not execute under native Pages.
+**Current deployment constraint (10 October 2026):** This repository publishes through **GitHub Pages' native branch-based Jekyll build**. Do not recreate a repository-owned GitHub Actions workflow, add an `_plugins/` generator, or require a server-side runtime. Keep all real data-derived pages, navigation, relationships and canonical routes working with supported Liquid, Markdown, static data and the existing local JavaScript. For verification, run `bundle exec jekyll build` with the GitHub Pages gem and review the hosted GitHub-managed Pages build/deployment result; older custom-build scripts are archival evidence and may not execute under native Pages.
 
 **This is the one active, executable implementation prompt for the full transformation.** Act as a senior Jekyll engineer, design-system implementer and lossless content-fidelity auditor. Implement a working website; do not stop at a proposal, mock-up, sample collection or short preview.
 
@@ -45,17 +45,17 @@ Conform to the starter's precise presentation and behavior:
 - **Images:** square people/member portraits (reuse the genuine listing thumbnail on person detail); 16:9 news/events listing frames; 3:2 left/right inline framing, 16:9 full-width/slide framing where applicable; respect cover/contain, alt text, captions and responsive behavior. A source without a real image should render cleanly without a fake portrait.
 - **Navigation/carousels:** keyboard-accessible responsive nested menus; full-slide CTA surfaces with separate carousel controls and ZIP behavior, including the homepage five-second auto-advance and reduced-motion/focus/visibility handling where applicable. Use authentic sourced slides only, never create fake ones to populate a slot. Preserve functional first-slide/no-JS fallback.
 - **Links/tables/forms:** valid relative and external links with safe explicit new-tab target/rel, root and project-baseurl builds, scrolling narrow tables, viewport image dialog with Escape/focus return, focus states and no-JavaScript content. Forms remain **clearly non-submitting** absent a specifically authorized working endpoint; never fabricate integration or submit captured data.
-- **Listings:** newest-first news, earliest-first dated events, alphabetical people/member directories, native card/image treatment and accessible filters. Preserve useful repository functions beyond the ZIP sample: full-body search, relation-driven author pages, canonical metadata, sitemap, redirects, working directories and 404.
+- **Listings:** newest-first news, earliest-first dated events, alphabetical people/member directories, native card/image treatment and accessible filters. Preserve useful repository functions beyond the ZIP sample: relation-driven author pages, canonical metadata, sitemap, redirects, working directories and 404.
 
 When existing repository functionality needs a theme adapter, isolate it, document why, and test it. Do not override the ZIP's typography, palette, watermark strengths, hero geometry or card design merely to resemble an older website.
 
 ## 4 — Complete functional site, not a sample
 
-Map every public canonical page and real directory to a working ZIP layout or minimal adapter. Populate homepage, existing five major navigation sections, topic hubs, resource guides, working groups, people, members, papers, news, event chronology and related content from the real repository. Keep the homepage's entire published body.
+Map every public canonical page and real directory to a working ZIP layout or minimal adapter. Populate homepage, existing five major navigation sections, topic hubs, resource guides, working groups, people, members, papers, news, event chronology and related content from the real repository, with generic ZIP card and form components and no custom site search. Keep the homepage's entire published body.
 
 Preserve public URLs and slug stability, related links, actual source-backed cards, contact/newsletter notices, publisher metadata, article headings and fragment anchors. Keep working redirects and navigation, including compatibility routes; exclude alternate source-version duplicates from feeds and canonical indexes.
 
-Make canonical records discoverable through section hubs, directories, real internal links and/or search. Never publish `Lorem ipsum`, `Sample member`, `Example speaker`, `Coming soon`, `TODO`, `TBD`, “replace this”, mock testimonials, unsourced statistics or demo CTA links. Search the **rendered output**, exempting accurately quoted archival source text and developer-only authoring examples.
+Make canonical records discoverable through section hubs, directories and real internal links. Never publish `Lorem ipsum`, `Sample member`, `Example speaker`, `Coming soon`, `TODO`, `TBD`, “replace this”, mock testimonials, unsourced statistics or demo CTA links. Search the **rendered output**, exempting accurately quoted archival source text and developer-only authoring examples.
 
 ## 5 — Verify before calling it complete
 

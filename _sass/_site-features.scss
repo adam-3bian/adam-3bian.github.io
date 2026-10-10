@@ -11,29 +11,10 @@
 .entity-back { clear: both; }
 .related-content { clear: both; margin-top: $subsection-gap; }
 .related-content > h2 { margin-bottom: $space-5; }
-.directory-controls { display: flex; flex-wrap: wrap; gap: $space-4; margin-bottom: $space-6; }
-.directory-controls label { display: grid; gap: $space-2; font-weight: $font-weight-medium; flex: 1 1 16rem; }
-.directory-controls input, .directory-controls select, .search-form input, .search-form select { min-height: $control-height; width: 100%; }
-.directory-count { color: var(--colour-muted); margin-bottom: $space-5; }
 .cards li[hidden], [hidden] { display: none !important; }
-.search-form { display: grid; gap: $space-4; max-width: $text-width; margin-bottom: $space-8; }
-.search-form label { display: grid; gap: $space-2; font-weight: $font-weight-medium; }
-.search-results { list-style: none; padding: 0; display: grid; gap: $space-5; }
-.search-result { padding: $space-6; background: var(--colour-card); }
-.search-result > * + * { margin-top: $space-3; }
-.search-result h2 { font-size: $font-size-card; }
-.preview-form { background: var(--colour-card); padding: $space-6; max-width: $text-width; margin-block: $space-8; }
-.preview-form label { display: grid; gap: $space-2; font-weight: $font-weight-medium; }
-.preview-form .form-grid { display: grid; gap: $space-5; margin-block: $space-5; }
-.preview-form input, .preview-form select, .preview-form textarea { width: 100%; }
-.preview-form textarea { min-height: 10rem; }
-.preview-form button[disabled] { opacity: 0.65; cursor: not-allowed; }
-.preview-note { margin-top: $space-3; font-size: $font-size-meta; }
 .section-link { margin-top: $space-6; }
 @media (min-width: $desktop-breakpoint) {
   .theme-content > .content { margin-top: $section-gap-desktop; }
-  .preview-form .form-grid { grid-template-columns: 1fr 1fr; }
-  .preview-form .form-wide { grid-column: 1 / -1; }
 }
 // Existing navigation labels are longer than the starter's sample menu.
 // Use the starter's stacked menu at tablet widths, retaining its typography.

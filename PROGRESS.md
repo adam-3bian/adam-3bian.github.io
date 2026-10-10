@@ -1,5 +1,10 @@
 # CHERI content and authoring progress
 
+## Starter cards and forms alignment — 10 October 2026
+
+The ZIP's reusable `.card`, `.card-media`, `.form-panel`, `.form`, `.form-field` and `.button` design primitives are the presentation authority for directory cards, contact and newsletter. Cards use real locally archived organisation logos and sourced people/article/event images when available; no template placeholder images are inserted. Extra custom site search and directory filters are removed to match the starter's simpler navigation and lists. Actual content bodies and original image files remain unchanged. The static contact/newsletter forms remain explicitly non-submitting; external published services remain linked. Native GitHub Pages publishing continues. Build and visual checks must be recorded separately from this statement.
+
+
 ## Native GitHub Pages conversion — 10 October 2026
 
 Direct commit `0033782e982284241b63c23377c2927c1e525f38` removes the repository-owned GitHub Actions workflow and five custom Ruby plugins. Native Liquid collections, search-index/sitemap/robots, relationships, directory rendering, content heading/breadcrumb presentation and explicit compatibility redirects replace those generators. The `github-pages` Gemfile and empty baseurl publish as the `adam-3bian.github.io` **user-site root**. Original editorial Markdown and assets were not edited.

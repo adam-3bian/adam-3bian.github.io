@@ -1,50 +1,45 @@
+{% comment %}
+  The starter's reusable card and media classes remain the only card design.
+  Use genuine source media: explicit thumbnail metadata or the first local
+  Markdown image in a source-backed article/profile. No sample images.
+{% endcomment %}
 <ul class="cards columns-{{ include.columns | default: 3 }}" aria-label="{{ include.label | escape }}">
   {% for item in include.items %}
-  {% unless item.alternate or item.redirect_to %}
-    {% assign item_id = item.slug | default: item.basename %}
-    {% assign item_type = item.collection | default: include.kind | default: 'pages' %}
-    {% assign item_status = '' %}
-    {% if item_type == 'events' %}
-      {% capture upcoming_marker %}Status
-: Upcoming{% endcapture %}
-      {% if item.content contains upcoming_marker %}{% assign item_status = 'upcoming' %}{% else %}{% assign item_status = 'past' %}{% endif %}
-    {% endif %}
-    {% assign show_item = true %}
-    {% if include.filter != nil and include.filter != '' and item_type == 'events' and item_status != include.filter %}{% assign show_item = false %}{% endif %}
-    {% if show_item %}
-    {% assign item_roles = '' %}
-    {% if item.speaker %}{% assign item_roles = item_roles | append: ' speaker' %}{% endif %}
-    {% if item.member %}{% assign item_roles = item_roles | append: ' member' %}{% endif %}
-    {% if item_type == 'people' %}
-      {% for paper in site.papers %}{% if paper.authors contains item_id %}{% assign item_roles = item_roles | append: ' author' %}{% break %}{% endif %}{% endfor %}
-      {% for story in site.news %}{% if story.authors contains item_id %}{% assign item_roles = item_roles | append: ' author' %}{% break %}{% endif %}{% endfor %}
-    {% endif %}
-    {% assign thumbnail = item.thumbnail.src %}
-    {% assign thumbnail_alt = item.thumbnail.alt | default: item.title %}
-    {% unless thumbnail %}
-      {% assign media_fragments = item.content | split: '](/assets/' %}
-      {% if media_fragments.size > 1 %}
-        {% assign asset_tail = media_fragments[1] | split: ')' | first %}
-        {% assign thumbnail = '/assets/' | append: asset_tail %}
-        {% assign alt_fragment = media_fragments[0] | split: '![' | last %}
-        {% assign thumbnail_alt = alt_fragment %}
-      {% endif %}
-    {% endunless %}
-    <li{% if include.directory %} data-directory-item data-search="{{ item.title | append: ' ' | append: item.content | strip_html | normalize_whitespace | escape }}" data-roles="{{ item_roles | strip | escape }}" data-status="{{ item_status }}"{% endif %}>
-      <a class="card" href="{{ item.url | relative_url | escape }}">
-        {% if thumbnail %}
-        <span class="card-media{% if item_type == 'events' or item_type == 'news' %} card-media-landscape{% endif %}">
-          <img src="{{ thumbnail | relative_url | escape }}" alt="{{ thumbnail_alt | escape }}" class="card-image{% if item_type == 'organisations' %} image-contain{% endif %}" loading="lazy">
-        </span>
+    {% unless item.alternate or item.redirect_to or item.redirect %}
+      {% assign kind = include.kind | default: item.collection.label | default: 'pages' %}
+      {% assign thumbnail_url = item.thumbnail.src %}
+      {% assign thumbnail_alt = item.thumbnail.alt | default: item.title %}
+      {% assign thumbnail_fit = item.thumbnail.fit %}
+      {% unless thumbnail_url %}
+        {% assign image_fragments = item.content | split: '](/assets/' %}
+        {% if image_fragments.size > 1 %}
+          {% assign image_path = image_fragments[1] | split: ')' | first %}
+          {% assign thumbnail_url = '/assets/' | append: image_path %}
+          {% assign alt_parts = image_fragments[0] | split: '![' %}
+          {% assign thumbnail_alt = alt_parts | last | default: item.title %}
         {% endif %}
-        {% if include.heading == 'h3' %}<h3>{{ item.title | escape }}</h3>{% else %}<h2>{{ item.title | escape }}</h2>{% endif %}
-        {% unless include.compact %}
-          {% if item.date %}<span class="meta"><time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: '%-d %B %Y' }}</time></span>{% endif %}
-          <span class="card-action">{{ include.action | default: 'Read more' | escape }} &rarr;</span>
-        {% endunless %}
-      </a>
-    </li>
-    {% endif %}
-  {% endunless %}
+      {% endunless %}
+      {% if kind == 'organisations' and thumbnail_url %}{% assign thumbnail_fit = 'contain' %}{% endif %}
+      <li>
+        <a class="card" href="{{ item.url | relative_url | escape }}">
+          {% if thumbnail_url %}
+            <span class="card-media{% if kind == 'events' or kind == 'news' or kind == 'posts' %} card-media-landscape{% endif %}">
+              <img src="{{ thumbnail_url | relative_url | escape }}" alt="{{ thumbnail_alt | escape }}" class="card-image{% if thumbnail_fit == 'contain' %} image-contain{% endif %}{% if item.thumbnail.position == 'left' %} image-crop-left{% elsif item.thumbnail.position == 'right' %} image-crop-right{% endif %}" loading="lazy">
+            </span>
+          {% endif %}
+          {% if include.heading == 'h3' %}<h3>{{ item.title | escape }}</h3>{% else %}<h2>{{ item.title | escape }}</h2>{% endif %}
+          {% unless include.compact %}
+            {% if item.date %}
+              <span class="meta"><time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: '%-d %B %Y' }}</time></span>
+            {% elsif kind == 'organisations' and item.member %}
+              <span class="meta">Alliance member</span>
+            {% elsif kind == 'people' and item.speaker %}
+              <span class="meta">Speaker</span>
+            {% endif %}
+            <span class="card-action">{{ include.action | default: 'Read more' | escape }} &rarr;</span>
+          {% endunless %}
+        </a>
+      </li>
+    {% endunless %}
   {% endfor %}
 </ul>

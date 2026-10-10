@@ -25,7 +25,7 @@ bundle exec jekyll serve
 On the built/hosted output verify:
 
 1. Source-backed Markdown bodies preserve every heading, paragraph, table, definition, inline image, caption, link label, code block and original fragment anchor. Verify real people/organisations/news/events and canonical versus alternate source versions.
-2. GitHub Pages serves every canonical collection permalink, generated navigation directory, source-compatible redirect, sitemap, robots file and full-body search index. Check the search JSON parses and search UI finds long-body terms and authors.
+2. GitHub Pages serves every canonical collection permalink, generated navigation directory, source-compatible redirect, sitemap, robots file and full-body directory pages. The ZIP has no site search or directory-filter component; verify those are absent.
 3. Verify navigation, focus, keyboard accessibility, responsive cards, portrait/news images, source-side references, related-content links and metadata, light/dark Poppins/honeycomb presentation and long-page overflow. Compare at 375px, 768px, 1024px and 1440px with the actual ZIP.
 4. Verify disconnected contact/newsletter forms cannot submit. Test original images and downloadable assets and off-site link behavior.
 5. Verify root-site URLs use `https://adam-3bian.github.io/` and no stale `/cheri-alliance-content/` baseurl. Reassess any bookmarks of the former preview path before relying on redirects.

@@ -1,9 +1,1 @@
-<form class="preview-form" data-unconnected-form aria-describedby="newsletter-preview-note">
-  <h2>Get the quarterly newsletter</h2>
-  <p id="newsletter-preview-note" class="preview-note">Preview form — entering an email does not subscribe you.</p>
-  <div class="form-grid">
-    <label class="form-wide" for="newsletter-email">Email address<input id="newsletter-email" name="email" type="email" autocomplete="email"></label>
-  </div>
-  <button type="submit" disabled>Subscribe</button>
-  <p class="preview-note"><a href="https://cheri-alliance.kit.com/subscribe">Subscribe through the published Alliance mailing list</a>.</p>
-</form>
+{% include form-panel.html form=site.data.forms.newsletter %}

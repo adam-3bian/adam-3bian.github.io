@@ -1,6 +1,5 @@
 {% if page.url == '/alliance/membership/contact/' %}{% include contact-form.html %}{% endif %}
 {% if page.url == '/news-and-events/news-and-analysis/subscribe-newsletter/' %}{% include newsletter-form.html %}{% endif %}
-{% if page.url == '/search/' %}{% include search.html %}{% endif %}
 
 {% if page.listing %}
   {% assign collection_items = site[page.listing] %}
@@ -20,8 +19,7 @@
     {% assign collection_items = collection_items | sort_natural: 'title' %}
   {% endif %}
   <section class="index-list" aria-label="{{ page.title | escape }}" data-collection-index>
-    {% include directory-controls.html %}
-    {% include listing.html items=collection_items label=page.title kind=kind filter=page.filter columns=3 directory=true %}
+    {% include listing.html items=collection_items label=page.title kind=kind filter=page.filter columns=3 %}
     <p data-directory-empty hidden>No matches. Try a different name or filter.</p>
   </section>
 {% endif %}

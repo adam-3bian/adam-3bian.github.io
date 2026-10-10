@@ -8,7 +8,7 @@ The archive's actual `_layouts`, `_includes`, `_sass`, branded/background assets
 
 - The native header/footer read `site.navigation` from `_config.yml` directly, without a Ruby navigation adapter.
 - The default Liquid layout extracts source headings and breadcrumbs without dropping original Markdown body content; collection listing and relationship Liquid includes replace generated display data.
-- The default layout preserves SEO and functional includes for search, directories, author relationships and disconnected forms. The native `search-index.json`, `sitemap.xml` and redirects replace plugin-generated outputs.
+- The default layout preserves SEO and functional includes for search, directories, author relationships and disconnected forms. The native `sitemap.xml` and redirects replace the necessary plugin-generated routes; the former custom search feature is removed.
 - Native hero/page-heading includes accept original heading HTML to retain exact text and incoming fragment IDs. Migrated paragraphs are not removed or duplicated as synthesized introductions.
 - Person layouts reuse source-owned portraits rather than inserting a second image. Existing people, organisations, news and events use the starter's person/member/post/event layouts through configuration defaults.
 - `_sass/settings.scss` loads the same Poppins faces locally. `_sass/_site-features.scss` styles only added functionality and source-data adapters. It must not override theme colours, watermark opacity, hero typography or substitute a custom profile layout. The existing long navigation uses the native stacked menu at tablet widths.
