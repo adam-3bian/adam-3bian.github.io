@@ -1,11 +1,9 @@
-# Start development of the CHERI Alliance website
+# Start a CHERI Alliance website task
 
-Read `AGENTS.md`, `docs/THEME.md`, `docs/AUTHORING.md` and `PROGRESS.md`.
+Read `AGENTS.md` first. For the complete requested transformation, follow **`TRANSFORMATION_PROMPT.md`** as the single executable master prompt.
 
-**Current objective:** Keep the content already in this repository and apply the uploaded simplified-authoring starter's theme directly. Use its layouts, includes, Sass settings and JavaScript components as the presentation authority. Preserve the existing articles, profiles, assets, URLs, source versions, author links, search and directories. Do not copy its demonstration articles, biographies or placeholder images.
+Inputs are (1) this repository's complete existing editorial content, assets, relationships and URLs; and (2) the attached `cheri-alliance-starter-kit-simplified-authoring (3).zip` as the original design, component, interaction and authoring authority. Inspect `docs/THEME.md`, `docs/AUTHORING.md`, `MIGRATION_SPEC.md`, `docs/VALIDATION.md` and `PROGRESS.md` before acting.
 
-Adapt existing content metadata to the theme rather than rebuilding source-site presentation. Do not introduce source-theme sidebars, palette/opacity overrides, or Elementor/WordPress formatting. Theme changes should not rewrite content or start another scrape.
+Preserve every real content body, working route and feature. Do not import demonstration copy or placeholder graphics, invent missing facts, re-scrape external websites without separate authorization, or replace the starter's actual visual rules with a lookalike.
 
-Implement the requested change in this checkout, build it, verify full-content preservation and local links, and check representative desktop/mobile pages against the starter itself. Update the reports and progress with executed checks. Distinguish local results from deployed Pages results.
-
-If the user explicitly asks for new content acquisition, apply `CHERI_MIGRATION_SPEC.md` and its provenance/discovery requirements to that separate batch. Existing content work and source acquisition remain separately measured.
+**Execute the user's particular requested work in the repository, not a hypothetical sample.** Audit what already works, implement only the required changes, run and report the relevant tests, and keep deployment/merge separate from implementation. If only an instruction reset is requested, change only instructions/documentation; leave site content and implementation untouched.

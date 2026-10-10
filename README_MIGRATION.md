@@ -1,4 +1,6 @@
-# Develop and resume the migration
+# Development, validation and separately authorized acquisition
+
+**Active instructions:** [AGENTS.md](AGENTS.md) and [TRANSFORMATION_PROMPT.md](TRANSFORMATION_PROMPT.md), with [docs/THEME.md](docs/THEME.md), [docs/AUTHORING.md](docs/AUTHORING.md), [MIGRATION_SPEC.md](MIGRATION_SPEC.md) and [docs/VALIDATION.md](docs/VALIDATION.md). The commands below are a technical runbook, **not** automatic permission to crawl. Never begin external capture unless specifically requested.
 
 Use this existing checkout; cloud tasks are isolated. The migration remains partial; see [PROGRESS.md](PROGRESS.md). No form submissions are performed.
 

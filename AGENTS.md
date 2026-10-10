@@ -1,27 +1,32 @@
-# CHERI Alliance website — agent instructions
+# CHERI Alliance — authoritative repository agent instructions
 
-**Current goal:** Retain the existing content and use the uploaded `cheri-alliance-starter-kit-simplified-authoring (3).zip` theme directly. The archive is the presentation reference; [docs/THEME.md](docs/THEME.md) records its integration. The two original websites remain content/provenance sources, not visual design targets.
+**Entry point:** `AGENTS.md` governs how agents work in this repository. For a full template/content implementation, execute `TRANSFORMATION_PROMPT.md`. For a single requested edit, follow its narrower scope; do not run the full transformation unasked.
 
-## Priorities
+## Instruction precedence and boundaries
 
-1. Follow the user's current request. A theme task does not imply another scrape, content rewrite or inventory expansion.
-2. Preserve full existing article/page bodies, links, original assets, real relationships and distinct source versions. Never substitute excerpts or template sample content.
-3. Use the ZIP's layouts, includes, Sass settings, components and scripts. Adapt existing data to that theme. Keep template differences explicit; do not restore source-site wrappers, sidebar/profile designs, colours, opacity overrides or WordPress styling.
-4. Apply `CHERI_MIGRATION_SPEC.md` to acquisition and content-fidelity work only. Its original image-position/visual requirements do not override this theme direction. Keep semantic image classes and original aspect ratios, but let the starter control their presentation.
+1. The user's current explicit request and safety constraints determine the task.
+2. `TRANSFORMATION_PROMPT.md` defines the complete website transformation and its acceptance criteria, **only when that transformation has been requested**.
+3. The uploaded `cheri-alliance-starter-kit-simplified-authoring (3).zip` (Jekyll root `basic-site/`) is the design, component, interaction and authoring-method reference. Read its `SPECIFICATION.md`, `README.md`, `markup-examples.md`, `VERIFICATION.md` and actual layouts, includes, Sass, JS and assets. `docs/THEME.md` describes integration into this repository.
+4. This repository's actual editorial source files, original assets, URLs, relationships and provenance are the content authority. `docs/AUTHORING.md` and `MIGRATION_SPEC.md` give the content-fidelity contract.
+5. `docs/VALIDATION.md` and the current build scripts define reproducible checks. `PROGRESS.md` and `reports/` describe **historical measured evidence**, not permission to assume a fresh check passed.
 
-## Content and evidence
+Old prompt filenames are non-operative compatibility pointers. They do not override this hierarchy. `CHERI_HIERARCHICAL_SITEMAP.md` and `CHERI_SITE_INVENTORY.json` are provisional inventories, not proof of total external-source coverage.
 
-- Editorial files remain YAML front matter and Kramdown Markdown. Do not add HTML or Liquid wrappers to them.
-- Do not invent content, biographies, affiliations or authorship. Use source-backed `organization`, `speakers` and `authors` references; derive reverse links.
-- Retain provenance, original downloads and asset bytes. Distinct differing source versions remain separate; alternate versions do not duplicate public author/news lists.
-- Keep `.elementor-*`, `.wp-*`, widget and TablePress styling out of editorial Markdown. Preserve legitimate source URLs and fragment anchors.
-- Never submit forms or access private submission/subscriber data. Existing preview forms remain disconnected.
-- Preserve pre-existing user changes. Cloud tasks are isolated: use the existing checkout, without creating a worktree unless explicitly requested.
+## Non-negotiable preservation
 
-## Workflow
+- Keep all existing source-backed Markdown bodies **complete and in reading order**; never replace an article with an excerpt, fabricate copy or silently drop a record. Preserve original links, citations, headings/anchors, tables, images, downloads, author/order metadata, source versions and entity relationships.
+- Keep editorial content as minimal YAML front matter plus native Kramdown Markdown, without HTML/Liquid presentation wrappers. Preserve source-verifiable role flags and references; derive reverse relationships in code.
+- Use the ZIP's real layouts, includes, colour/opacity settings, Poppins typography, honeycomb background, responsive controls, native components and scripts. Do not copy its demonstration articles, people, sample records or placeholder artwork to production, or restore WordPress/source-site theming.
+- Keep working search, directories, news/events ordering, author links, source redirects, canonical pages, baseurl support, disconnected forms, 404 and GitHub Pages deployment configuration. Add only documented minimal theme adapters.
+- Treat incomplete external archives or missing PDFs honestly. A full catalogue record is not a locally acquired full paper; a verified name-only record is not a license to invent a biography.
+- Preserve user changes. Never force-push, merge, deploy, change DNS, publish private data, or submit forms without authorization.
 
-For theme/development tasks, inspect `docs/THEME.md`, `docs/AUTHORING.md`, the relevant theme files and existing content first. Build with the documented runtime and run relevant content, link, relationship and browser checks. Compare representative desktop/mobile rendering with the ZIP theme itself, not with the original WordPress website. Update `PROGRESS.md` and reports with measured results.
+## Work pattern
 
-Only when new acquisition is explicitly requested, use `CHERI_MIGRATION_SPEC.md`, inventories and source snapshots to expand discovery and process a verifiable batch. Do not announce complete migration coverage from partial captures.
+1. Record the baseline commit and inspect the relevant existing files, `docs/THEME.md`, `docs/AUTHORING.md` and the ZIP; audit before reimplementing features.
+2. Inventory the affected content, assets, routes and components; make the smallest change that meets the request.
+3. Run the appropriate existing build, integrity, link, relationship, template and responsive-browser checks from `README_MIGRATION.md` and `docs/VALIDATION.md`. Do **not** claim unrun checks passed.
+4. Update `PROGRESS.md`/reports with measured implementation changes, preserving historical evidence. Report remaining exceptions explicitly.
+5. Use a reviewable branch/PR when requested. A successful local build is not a live deployment.
 
-Changes in this checkout are local until committed/pushed and deployed by the Pages workflow. Do not claim the public site changed from a successful local build; deployment needs separate authorization.
+**Scope separation:** A theme task or an instruction-reset task never implicitly authorizes re-scraping `cheri-alliance.org` or `cheri-alliance.github.io`. New external acquisition requires a separate explicit request and recorded source/provenance evidence.

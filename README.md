@@ -1,5 +1,7 @@
 # CHERI Alliance website
 
+**For coding agents:** Begin at [AGENTS.md](AGENTS.md). The single complete website task is [TRANSFORMATION_PROMPT.md](TRANSFORMATION_PROMPT.md); [docs/THEME.md](docs/THEME.md) and [docs/AUTHORING.md](docs/AUTHORING.md) retain the ZIP design/methodology and real-content schema, and [docs/VALIDATION.md](docs/VALIDATION.md) defines verification. Historical master prompts are retired pointers, not active instructions.
+
 Complete static website using the uploaded simplified-authoring design and source-backed content from `cheri-alliance.github.io` and `cheri-alliance.org`. It includes responsive navigation and page/profile layouts, linked directories, full-body search, news and dated event lists, local fonts, canonical URLs, sitemap, compatibility redirects and a branded 404. Contact and newsletter forms are visible with submission disabled, as requested.
 
 The GitHub Actions workflow builds, validates and deploys a preview artifact. The configured preview target is **https://adam-3bian.github.io/cheri-alliance-content/**; enable **Settings → Pages → Source: GitHub Actions**, then run the workflow. See [deployment instructions](docs/DEPLOYMENT.md). Existing public CHERI domains are unchanged.
