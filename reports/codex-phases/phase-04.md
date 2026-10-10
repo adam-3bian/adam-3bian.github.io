@@ -5,7 +5,7 @@ Verified **10 October 2026 (Europe/London)** in `adam-3bian/adam-3bian.github.io
 ## Baseline and delivery
 
 - Starting commit: **`30d2824d68a1f4ada14dd2bc00d2648e77b2d00a`**. Read the Phase 3 report before implementation, fetched the working branch and confirmed it was current. Reviewed Phase 0's date/order findings, repository instructions, Phase 4 requirements, relevant runbooks and the actual ZIP news/event templates and specification.
-- Ending implementation/evidence commit: **recorded after committing**. A following documentation-only commit records that SHA. Resolve the final delivery SHA with `git log -1 --format=%H -- reports/codex-phases/phase-04.md`.
+- Ending implementation/evidence commit: **`b62b3491d85df34998e14ef85eb07d97776a25fd`**. A following documentation-only commit records that SHA. Resolve the final delivery SHA with `git log -1 --format=%H -- reports/codex-phases/phase-04.md`.
 - Remote `main` observed at **`7f3839872c8fea6a709b99d241880de0f3915c42`**. No modifications, merge, push or deployment to `main`; no Pages-setting changes or PR publication.
 - ZIP integrity passes; SHA-256 remains **`9f097aeace78c13e2f169fdc378f58b64b119993ac031b011ae7a618c7a7325a`**. No demonstration records/assets were imported into production.
 
