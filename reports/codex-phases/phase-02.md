@@ -5,7 +5,7 @@ Verified **10 October 2026 (UTC)** in `adam-3bian/adam-3bian.github.io`, branch 
 ## Baseline and delivery
 
 - Starting commit: **`b2135595fe3064cc5811a05c3f6867205d056b49`**. Read the Phase 1 report, fetched the working branch, and confirmed it was current before changing files.
-- Ending implementation/evidence commit: recorded by the following report-finalisation commit. Resolve the final delivery SHA with `git log -1 --format=%H -- reports/codex-phases/phase-02.md`; a commit cannot embed its own hash.
+- Ending implementation/evidence commit: **`54dfe805f379daac8a4ef6ae4a1ff8d2bc324f7f`**. A following documentation-only commit records that SHA. Resolve the final delivery SHA with `git log -1 --format=%H -- reports/codex-phases/phase-02.md`; a commit cannot embed its own hash.
 - `main` observed at **`7f3839872c8fea6a709b99d241880de0f3915c42`**. No changes, push, merge, deployment, Pages-setting changes or PR publication to `main`.
 
 Read `AGENTS.md`, `TRANSFORMATION_PROMPT.md`, `docs/CODEX_PHASES.md`, the Phase 0/1 findings and relevant theme/authoring/validation guidance. Inspected the actual retained ZIP and built it separately. ZIP integrity passes; SHA-256 remains **`9f097aeace78c13e2f169fdc378f58b64b119993ac031b011ae7a618c7a7325a`**. Its documents and examples are design references, not authority to import sample content or expand scope.
