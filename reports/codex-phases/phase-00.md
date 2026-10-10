@@ -7,8 +7,8 @@ Audit date: **10 October 2026 (Europe/London)**. Phase 0 only; no editorial-body
 - Repository: `adam-3bian/adam-3bian.github.io`.
 - Working branch: `codex/phased-site-transformation`.
 - Starting implementation commit: **`db809a9908f86aa57d7992fb596f52ea10836f09`**.
-- Ending audited implementation commit: **`db809a9908f86aa57d7992fb596f52ea10836f09`**. Application/content inputs remain unchanged; this phase adds audit documentation and evidence only.
-- Audit delivery commit: recorded in the delivery note after the audit commit is created. The containing final report commit can be resolved with `git log -1 --format=%H -- reports/codex-phases/phase-00.md` and is reported to the user.
+- Ending audit evidence commit: **`61f77b4031d15c95bf4ab41d95cbd295eb00892b`**. Application/content inputs remain unchanged from the starting implementation commit; this phase adds audit documentation and evidence only.
+- A following documentation-only finalisation records that audit SHA, preserves the reference prompt's CRLF bytes with a scoped Git attribute, and trims trailing spaces in the captured build logs. A commit cannot embed its own SHA; resolve the final delivery commit with `git log -1 --format=%H -- reports/codex-phases/phase-00.md`. Its full SHA is also reported to the user.
 - Remote `main` observed before work: `7f3839872c8fea6a709b99d241880de0f3915c42`. No checkout, push, merge or deployment to `main` is part of this task.
 
 Read `AGENTS.md`, `TRANSFORMATION_PROMPT.md`, `docs/CODEX_PHASES.md`, the theme/authoring/validation/deployment/fidelity runbooks and historical reports. Inspected the actual ZIP's specification, README, source notes, changes, verification, authoring examples, configuration, layouts, includes, Sass, scripts and assets. The current repository uses native Pages, with no `_plugins/` files or repository-owned Actions workflow. Earlier plugin-based reports are historical.
