@@ -1,5 +1,6 @@
 ---
 title: Hands-on Introduction to CHERI and CHERIoT
+date: '2026-03-25'
 ---
 
 1. News &amp; Events

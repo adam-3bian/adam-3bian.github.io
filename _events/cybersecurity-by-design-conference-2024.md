@@ -1,5 +1,6 @@
 ---
 title: '''Cybersecurity by design - from research to industry'' conference'
+date: '2024-11-12'
 ---
 
 1. News &amp; Events

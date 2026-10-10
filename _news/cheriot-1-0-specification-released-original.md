@@ -2,6 +2,7 @@
 title: CHERIoT 1.0 Specification Released
 alternate: true
 authors: [adam-finney]
+undated: true
 ---
 
 # CHERIoT 1.0 Specification Released

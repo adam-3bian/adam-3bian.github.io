@@ -1,5 +1,7 @@
 ---
 title: CHERI Blossoms Conference 2027
+date: '2027-04-21'
+end-date: '2027-04-23'
 ---
 
 1. News &amp; Events

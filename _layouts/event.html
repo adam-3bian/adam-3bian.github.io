@@ -1,4 +1,34 @@
 ---
 layout: page
 ---
-{{ content }}
+{% if page.source-speakers and content contains '<h2 id="speakers">' %}
+  {% assign event_sections = content | split: '<h2' %}
+  {% for event_section in event_sections %}
+    {% assign event_section_heading = event_section | split: '</h2>' | first %}
+    {% if forloop.first %}{{ event_section }}
+    {% elsif event_section_heading contains 'id="speakers"' %}
+      <section class="related-content" data-relationship="speakers" aria-labelledby="speakers">
+        <span id="speakers-title" aria-hidden="true"></span>
+        <h2{{ event_section_heading }}</h2>
+        {% assign speaker_heading = event_section_heading | append: '</h2>' %}
+        {% assign speaker_groups = event_section | remove_first: speaker_heading | split: '<h3>' %}
+        {% for speaker_group in speaker_groups %}
+          {% unless forloop.first %}<h3>{{ speaker_group | split: '</h3>' | first }}</h3>{% endunless %}
+          {% assign group_people = '' | split: ',' %}
+          {% for person_id in page.speakers %}
+            {% capture source_target %}href="/people/{{ person_id }}/"{% endcapture %}
+            {% if speaker_group contains source_target %}
+              {% assign person = site.people | where: 'slug', person_id | first %}
+              {% if person %}{% assign group_people = group_people | push: person %}{% endif %}
+            {% endif %}
+          {% endfor %}
+          {% if group_people.size > 0 %}
+            {% include listing.html items=group_people kind='people' heading='h3' compact=false label='Speakers' action='View speaker' source_cards=speaker_group columns=3 %}
+          {% endif %}
+        {% endfor %}
+      </section>
+    {% else %}<h2{{ event_section }}{% endif %}
+  {% endfor %}
+{% else %}
+  {{ content }}
+{% endif %}

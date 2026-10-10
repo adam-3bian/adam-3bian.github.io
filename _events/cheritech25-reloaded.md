@@ -2,6 +2,8 @@
 title: CHERITech'25 Reloaded
 speakers: [andrew-murray, carl-shaw, david-chisnall, jeremy-singer, john-thomson, jonathan-woodruff, marno-van-der-maas,
   mike-eftimakis, murali-vijayaraghavan, tariq-kurd, thomas-nyman]
+date: '2025-12-04'
+source-speakers: true
 ---
 
 1. News &amp; Events

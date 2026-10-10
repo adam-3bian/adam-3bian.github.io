@@ -1,0 +1,8 @@
+Configuration file: /tmp/cheri-phase4-fixture/source/_config.yml
+To use retry middleware with Faraday v2.0+, install `faraday-retry` gem
+            Source: /tmp/cheri-phase4-fixture/source
+       Destination: /tmp/cheri-phase4-fixture/site/cheri-preview
+ Incremental build: disabled. Enable with --incremental
+      Generating...
+                    done in 3.81 seconds.
+ Auto-regeneration: disabled. Use --watch to enable.

@@ -1,7 +1,7 @@
 ---
 title: News
 permalink: /news/
-listing: news
+layout: news
 ---
 
 # News

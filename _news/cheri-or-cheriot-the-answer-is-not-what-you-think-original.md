@@ -2,6 +2,7 @@
 title: CHERI or CHERIoT? The Answer Is Not What You Think
 alternate: true
 authors: [adam-finney]
+undated: true
 ---
 
 # CHERI or CHERIoT? The Answer Is Not What You Think

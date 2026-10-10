@@ -1,4 +1,6 @@
 markdown: kramdown
+# Event dates are occurrence dates: published upcoming events need output routes.
+future: true
 kramdown:
   input: Kramdown
   auto_ids: false

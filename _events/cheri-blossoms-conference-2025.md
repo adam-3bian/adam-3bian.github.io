@@ -4,6 +4,7 @@ speakers: [alastair-beresford, alfredo-mazzinghi, ashish-darbari, ben-fletcher, 
   dmitriy-yeliseyev, domagoj-stolfa, gavin-ferris, haydn-povey, hesham-almatary, jeremy-singer, john-goodacre, jonathan-woodruff,
   joshua-lant, kevin-brodsky, mark-batty, mark-hill, marno-van-der-maas, martin-atkins, mike-eftimakis, mike-halsall,
   phil-day, robert-watson, simon-moore, tariq-kurd, tora-fridholm]
+date: '2025-04-02'
 ---
 
 1. News &amp; Events

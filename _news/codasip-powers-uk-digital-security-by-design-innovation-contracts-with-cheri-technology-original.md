@@ -2,6 +2,7 @@
 title: Codasip Powers UK Digital Security by Design Innovation Contracts with CHERI Technology
 alternate: true
 authors: [andrew-lindsay]
+undated: true
 ---
 
 # Codasip Powers UK Digital Security by Design Innovation Contracts with CHERI Technology

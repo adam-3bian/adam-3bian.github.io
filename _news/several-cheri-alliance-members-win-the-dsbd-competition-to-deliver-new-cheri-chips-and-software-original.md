@@ -1,6 +1,7 @@
 ---
 title: Several CHERI Alliance members win the DSbD competition to deliver new CHERI chips and software
 alternate: true
+undated: true
 ---
 
 # Several CHERI Alliance members win the DSbD competition to deliver new CHERI chips and software

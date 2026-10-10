@@ -1,5 +1,7 @@
 ---
 title: CHERITech'26
+date: '2026-11-12'
+end-date: '2026-11-13'
 ---
 
 1. News &amp; Events

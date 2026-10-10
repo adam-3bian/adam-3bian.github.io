@@ -2,6 +2,7 @@
 title: New InnovateUK-funded project to merge CHERI support into FreeBSD
 alternate: true
 authors: [brooks-davis]
+undated: true
 ---
 
 # New InnovateUK-funded project to merge CHERI support into FreeBSD

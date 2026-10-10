@@ -1,0 +1,15 @@
+{
+  "records": 476,
+  "unchanged_bodies": 476,
+  "preserved_signatures": 476,
+  "source_speaker_cards": 68,
+  "source_speaker_sections": 3,
+  "unresolved_ids": [],
+  "forward_order_errors": 0,
+  "reverse_errors": 0,
+  "date_errors": 0,
+  "root_link_errors": 1,
+  "project_link_errors": 1864,
+  "project_component_errors": 0,
+  "signature_failures": []
+}

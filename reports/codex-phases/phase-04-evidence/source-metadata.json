@@ -1,0 +1,175 @@
+[
+  {
+    "path": "_events/cheri-blossoms-conference-2025.md",
+    "published_date": "2 April 2025",
+    "added": {
+      "date": "2025-04-02"
+    }
+  },
+  {
+    "path": "_events/cheri-blossoms-conference-2026.md",
+    "published_date": "25 to 27 March 2026",
+    "added": {
+      "date": "2026-03-25",
+      "end-date": "2026-03-27",
+      "source-speakers": true
+    }
+  },
+  {
+    "path": "_events/cheri-blossoms-conference-2027.md",
+    "published_date": "21 to 23 April 2027",
+    "added": {
+      "date": "2027-04-21",
+      "end-date": "2027-04-23"
+    }
+  },
+  {
+    "path": "_events/cheri-blossoms-tutorial-2026.md",
+    "published_date": "25 March 2026",
+    "added": {
+      "date": "2026-03-25"
+    }
+  },
+  {
+    "path": "_events/cheritech25-reloaded.md",
+    "published_date": "4 December 2025",
+    "added": {
+      "date": "2025-12-04",
+      "source-speakers": true
+    }
+  },
+  {
+    "path": "_events/cheritech25.md",
+    "published_date": "14 November 2025",
+    "added": {
+      "date": "2025-11-14",
+      "source-speakers": true
+    }
+  },
+  {
+    "path": "_events/cheritech26.md",
+    "published_date": "12 to 13 November 2026",
+    "added": {
+      "date": "2026-11-12",
+      "end-date": "2026-11-13"
+    }
+  },
+  {
+    "path": "_events/cybersecurity-by-design-conference-2024.md",
+    "published_date": "12 November 2024",
+    "added": {
+      "date": "2024-11-12"
+    }
+  },
+  {
+    "path": "_events/embedded-world-2026.md",
+    "published_date": "10 to 12 March 2026",
+    "added": {
+      "date": "2026-03-10",
+      "end-date": "2026-03-12"
+    }
+  },
+  {
+    "path": "_events/webinar-cheri-cra-compliance.md",
+    "published_date": "9 September 2026, 14:00 BST",
+    "added": {
+      "date": "2026-09-09T14:00:00+01:00"
+    }
+  },
+  {
+    "path": "_news/beyond-software-patching.md",
+    "published_date": null,
+    "alternate": false,
+    "added": {
+      "undated": true
+    }
+  },
+  {
+    "path": "_news/cheri-or-cheriot-the-answer-is-not-what-you-think-original.md",
+    "published_date": null,
+    "alternate": true,
+    "added": {
+      "undated": true
+    }
+  },
+  {
+    "path": "_news/cheri-tag-bit-transport-overlay-standard-version-0-9-released.md",
+    "published_date": null,
+    "alternate": false,
+    "added": {
+      "undated": true
+    }
+  },
+  {
+    "path": "_news/cheri-zephyr-v0-4-0-release.md",
+    "published_date": null,
+    "alternate": false,
+    "added": {
+      "undated": true
+    }
+  },
+  {
+    "path": "_news/cheriot-1-0-specification-released-original.md",
+    "published_date": null,
+    "alternate": true,
+    "added": {
+      "undated": true
+    }
+  },
+  {
+    "path": "_news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology-original.md",
+    "published_date": null,
+    "alternate": true,
+    "added": {
+      "undated": true
+    }
+  },
+  {
+    "path": "_news/innovate-uk-project-winner-university-of-birmingham-original.md",
+    "published_date": null,
+    "alternate": true,
+    "added": {
+      "undated": true
+    }
+  },
+  {
+    "path": "_news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences-original.md",
+    "published_date": null,
+    "alternate": true,
+    "added": {
+      "undated": true
+    }
+  },
+  {
+    "path": "_news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support-original.md",
+    "published_date": null,
+    "alternate": true,
+    "added": {
+      "undated": true
+    }
+  },
+  {
+    "path": "_news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd-original.md",
+    "published_date": null,
+    "alternate": true,
+    "added": {
+      "undated": true
+    }
+  },
+  {
+    "path": "_news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl-original.md",
+    "published_date": null,
+    "alternate": true,
+    "added": {
+      "undated": true
+    }
+  },
+  {
+    "path": "_news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software-original.md",
+    "published_date": null,
+    "alternate": true,
+    "added": {
+      "undated": true
+    }
+  }
+]

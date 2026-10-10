@@ -1,8 +1,9 @@
 ---
 title: Upcoming Events
 permalink: /news-and-events/events-and-archive/upcoming-events/
-listing: events
-filter: upcoming
+layout: events
+listing:
+  status: upcoming
 ---
 
 1. News &amp; Events

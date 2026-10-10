@@ -3,6 +3,8 @@ title: CHERITech'25 Conference
 speakers: [andrew-murray, carl-shaw, david-chisnall, dmitriy-yeliseyev, donato-ferraro, jeremy-singer, jessica-clarke,
   john-goodacre, john-thomson, jonathan-woodruff, ka-wing-li, marno-van-der-maas, merve-gulmez, mike-eftimakis,
   murali-vijayaraghavan, robert-watson, tariq-kurd, thomas-nyman]
+date: '2025-11-14'
+source-speakers: true
 ---
 
 1. News &amp; Events

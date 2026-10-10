@@ -1,7 +1,7 @@
 ---
 title: Latest News
 permalink: /news-and-events/news-and-analysis/latest-news/
-listing: news
+layout: news
 ---
 
 1. News &amp; Events

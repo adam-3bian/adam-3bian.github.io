@@ -4,6 +4,7 @@
   Source media may still be Markdown or already-rendered HTML during Jekyll's pass.
 {% endcomment %}
 {% assign card_items = include.items %}
+{% assign source_cards = include.source_cards | split: '<p class="collection-card__link">' %}
 {% if include.mode == 'onward' %}{% assign card_items = card_items | slice: 0, 1 %}{% else %}
 <ul class="cards columns-{{ include.columns | default: 3 }}" aria-label="{{ include.label | escape }}">
 {% endif %}
@@ -23,7 +24,16 @@
       {% endif %}
     {% endunless %}
     {% assign card_date = nil %}
-    {% if kind == 'news' or kind == 'events' or kind == 'posts' %}{% assign card_date = item.date %}{% endif %}
+    {% assign card_end_date = nil %}
+    {% assign card_location = nil %}
+    {% if kind == 'news' or kind == 'events' or kind == 'posts' %}
+      {% unless item.undated %}{% assign card_date = item.date %}{% endunless %}
+    {% endif %}
+    {% if kind == 'events' %}
+      {% assign card_end_date = item['end-date'] %}
+      {% assign event_facts = card_record.content | markdownify %}
+      {% if event_facts contains '<dt>Location</dt>' %}{% assign card_location = event_facts | split: '<dt>Location</dt>' | last | split: '<dd>' | slice: 1, 1 | first | split: '</dd>' | first | strip_html | strip %}{% endif %}
+    {% endif %}
     {% assign card_image = item.thumbnail | default: card_record.thumbnail %}
     {% assign image_url = card_image.src %}
     {% assign image_alt = card_title %}
@@ -75,6 +85,18 @@
             <img src="{{ image_url | escape_once }}" alt="{{ image_alt | escape_once }}" class="{% if include.mode == 'onward' %}onward-image{% else %}card-image{% endif %}{% if image_fit == 'contain' %} image-contain{% endif %}{% if card_image.position == 'left' %} image-crop-left{% elsif card_image.position == 'right' %} image-crop-right{% endif %}"{% if card_image.width %} width="{{ card_image.width | escape }}"{% endif %}{% if card_image.height %} height="{{ card_image.height | escape }}"{% endif %} loading="lazy">
           {% unless include.mode == 'onward' %}</span>{% endunless %}
         {% endif %}
+        {% assign source_description = nil %}
+        {% if include.source_cards %}
+          {% capture source_target %}href="{{ item.url }}"{% endcapture %}
+          {% for source_card in source_cards %}
+            {% if source_card contains source_target %}
+              {% assign source_affiliation = source_card | split: '<p class="collection-card__meta">' | last | split: '</p>' | first %}
+              {% assign source_description = source_card | split: '<p class="collection-card__summary">' | last | split: '</p>' | first %}
+              <span>{{ source_affiliation }}</span>
+              {% break %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
         {% if include.context == 'governing-board' %}
           {% comment %}Published board facts already live in the canonical person's
             definition list. markdownify accepts both raw and converted records.{% endcomment %}
@@ -88,15 +110,16 @@
         {% endif %}
         {% if include.heading == 'h3' %}<h3>{{ card_title | escape_once }}</h3>{% else %}<h2>{{ card_title | escape_once }}</h2>{% endif %}
         {% if include.context == 'governing-board' and board_role %}<p class="card-description">{{ board_role | escape_once }}</p>{% endif %}
+        {% if source_description %}<p class="card-description">{{ source_description }}</p>{% endif %}
         {% unless include.mode == 'onward' %}
           {% if item.description %}<p class="card-description">{{ item.description | escape_once }}</p>{% endif %}
         {% endunless %}
         {% unless card_compact %}
           {% unless include.mode == 'onward' or include.resolve %}
             {% if card_date %}
-              <span class="meta"><time datetime="{{ card_date | date_to_xmlschema }}">{{ card_date | date: '%-d %B %Y' }}</time></span>
+              <span class="meta"><time datetime="{{ card_date | date_to_xmlschema }}">{{ card_date | date: '%-d %B %Y' }}</time>{% if card_end_date %} &ndash; <time datetime="{{ card_end_date | date_to_xmlschema }}">{{ card_end_date | date: '%-d %B %Y' }}</time>{% endif %}{% if card_location %}<br>{{ card_location | escape_once }}{% endif %}</span>
             {% elsif kind == 'organisations' and item.member %}<span class="meta">Alliance member</span>
-            {% elsif kind == 'people' and item.speaker and include.context != 'governing-board' %}<span class="meta">Speaker</span>{% endif %}
+            {% elsif kind == 'people' and item.speaker and include.context != 'governing-board' and include.source_cards == nil %}<span class="meta">Speaker</span>{% endif %}
           {% endunless %}
           <span class="card-action">{{ item.action | default: include.action | default: 'Read more' | escape_once }} <span aria-hidden="true">&rarr;</span></span>
         {% endunless %}

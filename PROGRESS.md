@@ -1,5 +1,13 @@
 # CHERI content and authoring progress
 
+## Phase 4 news, events and ordered relationships — 10 October 2026
+
+Continued from `30d2824d68a1f4ada14dd2bc00d2648e77b2d00a` on `codex/phased-site-transformation`. All 16 author/speaker ordering failures are repaired. Three conference pages now render their 68 original speaker summaries/affiliations through canonical person cards once, retaining source grouping, wording and anchors. Every reference resolves; all 112 people retain correct derived reverse relationships.
+
+The native news/event list layouts now use the existing collections and shared chronology. News contains 44 genuinely dated articles newest first plus three undated articles; nine alternates remain excluded. Source-backed event dates/ranges drive earliest-first lists and inclusive final-day classification: eight past/two upcoming at verification. Homepage and reverse lists reuse that selection. `future: true` keeps published upcoming event routes available in native Jekyll; unknown dates never become build-day labels.
+
+All 476 Markdown bodies, 415 assets and 430 original asset mappings are preserved. Native root/project/reference/fixture builds, 30 regressions, the 476-file Markdown audit, full source/output checks, 64 production browser observations, eight ZIP style comparisons, keyboard/no-JavaScript flows and 88 date-boundary checks pass. The pre-existing `/search/` error and 1,864 project source-URL errors remain Phase 7 work. See the [Phase 4 report](reports/codex-phases/phase-04.md) for source-image substitutions, exact checks and remaining phase work. No merge or deployment was performed.
+
 ## Phase 3 canonical people — 10 October 2026
 
 Continued from `71969d69c2ed90aec6ba6291f80dd4d658c5c110` on `codex/phased-site-transformation`. Governing Board, Speakers and People now use the named `people` layout and universal cards: nine registry-ordered board members, 60 alphabetized verified speakers and 112 canonical people. Board roles/affiliations come from existing person definitions, and all portraits link the canonical details. The `person` layout reuses 63 genuine portraits in square frames; 49 name-only profiles remain unchanged. The nine former board images/fragments remain in source as evidence while the rendered cards use the canonical profile portraits.

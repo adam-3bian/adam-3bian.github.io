@@ -12,11 +12,12 @@ Each entity lives in one Markdown file. Its filename is its ID: `_people/robert-
 | `organization` | People | Organisation ID, or an array for explicitly published multiple affiliations. |
 | `speakers` | Events | Array of people IDs, in source order. |
 | `authors` | Papers | Array of named contributor IDs, in citation order. |
-| `date` | News where published | Explicit source publication date. Omit when unavailable. |
+| `date` | News and events | Source publication date for news; source occurrence date/time for events. |
+| `end-date` | Multi-day events | Last published event day, inclusive. Omit for a single day. |
+| `undated: true` | A news/event record without a verified date | Prevent Jekyll's implicit build date from being displayed or used as a genuine date. Omit `date` in this case. |
 | `alternate: true` | Differing source versions | Retain a distinct alternate body without repeating it in the primary news feed. |
 | `permalink` | Ordinary pages under `pages/` | Public route; collection routes come from filenames. |
-| `listing` | Directory pages | For `layout: people`, optional grouped `role: speaker`, `registry: governing-board`, and `columns`. Other directories retain their collection-name adapter. |
-| `filter` | Event indexes only | Optional `upcoming` or `past`; event dates come from published body definitions. |
+| `listing` | Directory pages | For `layout: people`, optional `role: speaker` or `registry: governing-board`; for `layout: events`, optional `status: upcoming` or `status: past`. Group optional `columns` here. Other directories retain their collection-name adapter. |
 | `thumbnail` | A record with genuine media | Optional grouped `src`, `alt`, `fit`, `position`, `width` and `height`; otherwise cards reuse its first local source image. |
 | `where-next` | A page with a known next destination | One `url`, with optional `title`, `action`, `image`, `target` and `rel`. No description is rendered. |
 | `related-pages` | A page with known related destinations | Ordered URL objects; infer destination titles unless an explicit override is needed. Optional source-backed `description`, `action`, `target` and `rel`. |
@@ -99,6 +100,10 @@ News displays linked author cards. People display their canonical news articles 
 
 Do not repeat reverse relationships. A person's events come from event `speakers`; their publications and news come from paper/news `authors`; an organisation's people come from people `organization`. The build generates those sections without Liquid in editorial Markdown.
 
+Author and speaker cards follow the stored ID array exactly. Keep that order when it is source-backed; do not alphabetize citations or keynote selections. Authors appear below the complete article/paper body. New events get one generated Speakers section below the body. The three migrated conference records with `source-speakers: true` instead reuse their source Speakers position and keynote/featured grouping, preserving each published excerpt and affiliation in the generic cards. Their original Markdown fragments remain provenance, not a second maintained card list. All person cards link canonical `_people` profiles and reuse their real portraits; a missing portrait stays absent.
+
+Use `layout: news` for the two news indexes and `layout: events` for event indexes. The shared chronology include reads `_news` (not `_posts`), excludes alternate versions, orders dated news newest first, and appends undated records alphabetically without date labels. The homepage selects the three latest genuinely dated news records. All-event and past/upcoming lists sort earliest first; person reverse lists reuse the same chronology. The original news bylines, source dates, event programmes and citations remain in their full bodies.
+
 ## Governing board, directories and navigation
 
 `_data/governing-board.yml` is the only data registry: an ordered list of nine people IDs. Names, affiliations and biographies stay in people files. The full source board page remains, with board links back from profiles. When membership changes, update the list and board page together against an authoritative source.
@@ -111,9 +116,11 @@ Existing people reuse their first genuine Markdown portrait for both cards and s
 
 Published member and speaker directories list the canonical records selected by their flags. Their complete original source directories remain as separate Markdown source versions. Flags and affiliations describe captured sources, rather than asserting present employment.
 
-All collection directories support keyword filtering. The people directory can select speakers or authors of papers and news; the organisations directory can select members. Author roles are derived from `authors` references, without another flag. Member tiers and founding status come from the explicit published profile definitions, rather than duplicated YAML.
+Directories use native cards without keyword filters. Author roles are derived from `authors` references, without another flag. Member tiers and founding status come from the explicit published profile definitions, rather than duplicated YAML.
 
-Event dates and locations come from the source-backed `Date` and `Location` definitions in the body. An event remains upcoming through its last published day, then moves into the past list at the next build. Dates are evaluated in Europe/London; the static preview updates when its build runs. Set `CHERI_TODAY=YYYY-MM-DD` when testing date-dependent changes. No additional date/status front matter is required.
+Event `date` and optional `end-date` now mirror the source-backed `Date` definition in the unchanged body. Keep them consistent; the Phase 4 audit checks their provenance. Location labels still come from the existing `Location` definition, without duplicated metadata. An event remains upcoming through its last published day, then moves into the past list at the next build. Production classification uses `site.time` in the configured Europe/London timezone, not a browser clock or the historical `CHERI_TODAY` environment variable. Unknown-date events appear only in the all-events list and receive no invented past/upcoming classification.
+
+`future: true` is necessary for native Jekyll to write already-published upcoming event pages: their `date` is an occurrence date, not a scheduled publication date. Draft content should explicitly use `published: false`. This is a build setting, not a deployment. The isolated Phase 4 fixture supplies dates directly to the chronology include and uses a temporary Jekyll `time` override to check the empty-upcoming state; neither override is in production configuration. An empty event selection displays a simple factual message rather than placeholder cards.
 
 Navigation lives in `_config.yml` under `navigation`. Header and footer edits do not need `_data/navigation.yml`. Primary navigation follows the primary site's published sections.
 

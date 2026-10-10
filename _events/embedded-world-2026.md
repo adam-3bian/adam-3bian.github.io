@@ -1,5 +1,7 @@
 ---
 title: CHERI Alliance at Embedded World 2026
+date: '2026-03-10'
+end-date: '2026-03-12'
 ---
 
 1. News &amp; Events

@@ -1,6 +1,7 @@
 ---
 title: Webinar - CHERI & CRA Compliance
 speakers: [tariq-kurd]
+date: '2026-09-09T14:00:00+01:00'
 ---
 
 1. News &amp; Events

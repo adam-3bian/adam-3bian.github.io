@@ -1,8 +1,9 @@
 ---
 title: Past Events
 permalink: /news-and-events/events-and-archive/past-events/
-listing: events
-filter: past
+layout: events
+listing:
+  status: past
 ---
 
 1. News &amp; Events

@@ -2,6 +2,7 @@
 title: IoTSF + TechWorks – Resilient IoT and Trustworthy AI Conferences
 alternate: true
 authors: [adam-finney]
+undated: true
 ---
 
 # IoTSF + TechWorks – Resilient IoT and Trustworthy AI Conferences

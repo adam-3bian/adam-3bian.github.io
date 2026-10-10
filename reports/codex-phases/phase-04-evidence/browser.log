@@ -1,0 +1,691 @@
+{
+  "observations": 64,
+  "project_observations": 16,
+  "comparisons": [
+    {
+      "route": "/news/",
+      "width": 375,
+      "actual": {
+        ".cards": {
+          "gap": "24px",
+          "gridTemplateColumns": "320px"
+        },
+        ".cards .card": {
+          "padding": "24px",
+          "backgroundColor": "rgba(116, 167, 191, 0.62)",
+          "color": "rgb(20, 20, 20)",
+          "opacity": "1"
+        },
+        ".cards .card :is(h2,h3)": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "600",
+          "lineHeight": "25px",
+          "letterSpacing": "-0.5px"
+        },
+        ".card-media": {
+          "aspectRatio": "16 / 9",
+          "marginBottom": "20px"
+        },
+        ".card-image": {
+          "objectFit": "cover",
+          "opacity": "1"
+        },
+        ".card .meta": {
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "fontWeight": "400"
+        }
+      },
+      "reference": {
+        ".cards": {
+          "gap": "24px",
+          "gridTemplateColumns": "320px"
+        },
+        ".cards .card": {
+          "padding": "24px",
+          "backgroundColor": "rgba(116, 167, 191, 0.62)",
+          "color": "rgb(20, 20, 20)",
+          "opacity": "1"
+        },
+        ".cards .card :is(h2,h3)": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "600",
+          "lineHeight": "25px",
+          "letterSpacing": "-0.5px"
+        },
+        ".card-media": {
+          "aspectRatio": "16 / 9",
+          "marginBottom": "20px"
+        },
+        ".card-image": {
+          "objectFit": "cover",
+          "opacity": "1"
+        },
+        ".card .meta": {
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "fontWeight": "400"
+        }
+      },
+      "differences": [],
+      "states_match": true
+    },
+    {
+      "route": "/news/",
+      "width": 768,
+      "actual": {
+        ".cards": {
+          "gap": "24px",
+          "gridTemplateColumns": "213.656px 213.672px 213.672px"
+        },
+        ".cards .card": {
+          "padding": "24px",
+          "backgroundColor": "rgba(116, 167, 191, 0.62)",
+          "color": "rgb(20, 20, 20)",
+          "opacity": "1"
+        },
+        ".cards .card :is(h2,h3)": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "600",
+          "lineHeight": "25px",
+          "letterSpacing": "-0.5px"
+        },
+        ".card-media": {
+          "aspectRatio": "16 / 9",
+          "marginBottom": "20px"
+        },
+        ".card-image": {
+          "objectFit": "cover",
+          "opacity": "1"
+        },
+        ".card .meta": {
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "fontWeight": "400"
+        }
+      },
+      "reference": {
+        ".cards": {
+          "gap": "24px",
+          "gridTemplateColumns": "213.656px 213.672px 213.672px"
+        },
+        ".cards .card": {
+          "padding": "24px",
+          "backgroundColor": "rgba(116, 167, 191, 0.62)",
+          "color": "rgb(20, 20, 20)",
+          "opacity": "1"
+        },
+        ".cards .card :is(h2,h3)": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "600",
+          "lineHeight": "25px",
+          "letterSpacing": "-0.5px"
+        },
+        ".card-media": {
+          "aspectRatio": "16 / 9",
+          "marginBottom": "20px"
+        },
+        ".card-image": {
+          "objectFit": "cover",
+          "opacity": "1"
+        },
+        ".card .meta": {
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "fontWeight": "400"
+        }
+      },
+      "differences": [],
+      "states_match": true
+    },
+    {
+      "route": "/news/",
+      "width": 1024,
+      "actual": {
+        ".cards": {
+          "gap": "24px",
+          "gridTemplateColumns": "299px 299px 299px"
+        },
+        ".cards .card": {
+          "padding": "24px",
+          "backgroundColor": "rgba(116, 167, 191, 0.62)",
+          "color": "rgb(20, 20, 20)",
+          "opacity": "1"
+        },
+        ".cards .card :is(h2,h3)": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "600",
+          "lineHeight": "25px",
+          "letterSpacing": "-0.5px"
+        },
+        ".card-media": {
+          "aspectRatio": "16 / 9",
+          "marginBottom": "20px"
+        },
+        ".card-image": {
+          "objectFit": "cover",
+          "opacity": "1"
+        },
+        ".card .meta": {
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "fontWeight": "400"
+        }
+      },
+      "reference": {
+        ".cards": {
+          "gap": "24px",
+          "gridTemplateColumns": "299px 299px 299px"
+        },
+        ".cards .card": {
+          "padding": "24px",
+          "backgroundColor": "rgba(116, 167, 191, 0.62)",
+          "color": "rgb(20, 20, 20)",
+          "opacity": "1"
+        },
+        ".cards .card :is(h2,h3)": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "600",
+          "lineHeight": "25px",
+          "letterSpacing": "-0.5px"
+        },
+        ".card-media": {
+          "aspectRatio": "16 / 9",
+          "marginBottom": "20px"
+        },
+        ".card-image": {
+          "objectFit": "cover",
+          "opacity": "1"
+        },
+        ".card .meta": {
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "fontWeight": "400"
+        }
+      },
+      "differences": [],
+      "states_match": true
+    },
+    {
+      "route": "/news/",
+      "width": 1440,
+      "actual": {
+        ".cards": {
+          "gap": "24px",
+          "gridTemplateColumns": "384px 384px 384px"
+        },
+        ".cards .card": {
+          "padding": "32px",
+          "backgroundColor": "rgba(116, 167, 191, 0.62)",
+          "color": "rgb(20, 20, 20)",
+          "opacity": "1"
+        },
+        ".cards .card :is(h2,h3)": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "600",
+          "lineHeight": "25px",
+          "letterSpacing": "-0.5px"
+        },
+        ".card-media": {
+          "aspectRatio": "16 / 9",
+          "marginBottom": "20px"
+        },
+        ".card-image": {
+          "objectFit": "cover",
+          "opacity": "1"
+        },
+        ".card .meta": {
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "fontWeight": "400"
+        }
+      },
+      "reference": {
+        ".cards": {
+          "gap": "24px",
+          "gridTemplateColumns": "384px 384px 384px"
+        },
+        ".cards .card": {
+          "padding": "32px",
+          "backgroundColor": "rgba(116, 167, 191, 0.62)",
+          "color": "rgb(20, 20, 20)",
+          "opacity": "1"
+        },
+        ".cards .card :is(h2,h3)": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "600",
+          "lineHeight": "25px",
+          "letterSpacing": "-0.5px"
+        },
+        ".card-media": {
+          "aspectRatio": "16 / 9",
+          "marginBottom": "20px"
+        },
+        ".card-image": {
+          "objectFit": "cover",
+          "opacity": "1"
+        },
+        ".card .meta": {
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "fontWeight": "400"
+        }
+      },
+      "differences": [],
+      "states_match": true
+    },
+    {
+      "route": "/events/",
+      "width": 375,
+      "actual": {
+        ".cards": {
+          "gap": "24px",
+          "gridTemplateColumns": "320px"
+        },
+        ".cards .card": {
+          "padding": "24px",
+          "backgroundColor": "rgba(116, 167, 191, 0.62)",
+          "color": "rgb(20, 20, 20)",
+          "opacity": "1"
+        },
+        ".cards .card :is(h2,h3)": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "600",
+          "lineHeight": "25px",
+          "letterSpacing": "-0.5px"
+        },
+        ".card-media": {
+          "aspectRatio": "16 / 9",
+          "marginBottom": "20px"
+        },
+        ".card-image": {
+          "objectFit": "cover",
+          "opacity": "1"
+        },
+        ".card .meta": {
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "fontWeight": "400"
+        }
+      },
+      "reference": {
+        ".cards": {
+          "gap": "24px",
+          "gridTemplateColumns": "320px"
+        },
+        ".cards .card": {
+          "padding": "24px",
+          "backgroundColor": "rgba(116, 167, 191, 0.62)",
+          "color": "rgb(20, 20, 20)",
+          "opacity": "1"
+        },
+        ".cards .card :is(h2,h3)": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "600",
+          "lineHeight": "25px",
+          "letterSpacing": "-0.5px"
+        },
+        ".card-media": {
+          "aspectRatio": "16 / 9",
+          "marginBottom": "20px"
+        },
+        ".card-image": {
+          "objectFit": "cover",
+          "opacity": "1"
+        },
+        ".card .meta": {
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "fontWeight": "400"
+        }
+      },
+      "differences": [],
+      "states_match": true
+    },
+    {
+      "route": "/events/",
+      "width": 768,
+      "actual": {
+        ".cards": {
+          "gap": "24px",
+          "gridTemplateColumns": "213.656px 213.672px 213.672px"
+        },
+        ".cards .card": {
+          "padding": "24px",
+          "backgroundColor": "rgba(116, 167, 191, 0.62)",
+          "color": "rgb(20, 20, 20)",
+          "opacity": "1"
+        },
+        ".cards .card :is(h2,h3)": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "600",
+          "lineHeight": "25px",
+          "letterSpacing": "-0.5px"
+        },
+        ".card-media": {
+          "aspectRatio": "16 / 9",
+          "marginBottom": "20px"
+        },
+        ".card-image": {
+          "objectFit": "cover",
+          "opacity": "1"
+        },
+        ".card .meta": {
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "fontWeight": "400"
+        }
+      },
+      "reference": {
+        ".cards": {
+          "gap": "24px",
+          "gridTemplateColumns": "213.656px 213.672px 213.672px"
+        },
+        ".cards .card": {
+          "padding": "24px",
+          "backgroundColor": "rgba(116, 167, 191, 0.62)",
+          "color": "rgb(20, 20, 20)",
+          "opacity": "1"
+        },
+        ".cards .card :is(h2,h3)": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "600",
+          "lineHeight": "25px",
+          "letterSpacing": "-0.5px"
+        },
+        ".card-media": {
+          "aspectRatio": "16 / 9",
+          "marginBottom": "20px"
+        },
+        ".card-image": {
+          "objectFit": "cover",
+          "opacity": "1"
+        },
+        ".card .meta": {
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "fontWeight": "400"
+        }
+      },
+      "differences": [],
+      "states_match": true
+    },
+    {
+      "route": "/events/",
+      "width": 1024,
+      "actual": {
+        ".cards": {
+          "gap": "24px",
+          "gridTemplateColumns": "299px 299px 299px"
+        },
+        ".cards .card": {
+          "padding": "24px",
+          "backgroundColor": "rgba(116, 167, 191, 0.62)",
+          "color": "rgb(20, 20, 20)",
+          "opacity": "1"
+        },
+        ".cards .card :is(h2,h3)": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "600",
+          "lineHeight": "25px",
+          "letterSpacing": "-0.5px"
+        },
+        ".card-media": {
+          "aspectRatio": "16 / 9",
+          "marginBottom": "20px"
+        },
+        ".card-image": {
+          "objectFit": "cover",
+          "opacity": "1"
+        },
+        ".card .meta": {
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "fontWeight": "400"
+        }
+      },
+      "reference": {
+        ".cards": {
+          "gap": "24px",
+          "gridTemplateColumns": "299px 299px 299px"
+        },
+        ".cards .card": {
+          "padding": "24px",
+          "backgroundColor": "rgba(116, 167, 191, 0.62)",
+          "color": "rgb(20, 20, 20)",
+          "opacity": "1"
+        },
+        ".cards .card :is(h2,h3)": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "600",
+          "lineHeight": "25px",
+          "letterSpacing": "-0.5px"
+        },
+        ".card-media": {
+          "aspectRatio": "16 / 9",
+          "marginBottom": "20px"
+        },
+        ".card-image": {
+          "objectFit": "cover",
+          "opacity": "1"
+        },
+        ".card .meta": {
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "fontWeight": "400"
+        }
+      },
+      "differences": [],
+      "states_match": true
+    },
+    {
+      "route": "/events/",
+      "width": 1440,
+      "actual": {
+        ".cards": {
+          "gap": "24px",
+          "gridTemplateColumns": "384px 384px 384px"
+        },
+        ".cards .card": {
+          "padding": "32px",
+          "backgroundColor": "rgba(116, 167, 191, 0.62)",
+          "color": "rgb(20, 20, 20)",
+          "opacity": "1"
+        },
+        ".cards .card :is(h2,h3)": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "600",
+          "lineHeight": "25px",
+          "letterSpacing": "-0.5px"
+        },
+        ".card-media": {
+          "aspectRatio": "16 / 9",
+          "marginBottom": "20px"
+        },
+        ".card-image": {
+          "objectFit": "cover",
+          "opacity": "1"
+        },
+        ".card .meta": {
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "fontWeight": "400"
+        }
+      },
+      "reference": {
+        ".cards": {
+          "gap": "24px",
+          "gridTemplateColumns": "384px 384px 384px"
+        },
+        ".cards .card": {
+          "padding": "32px",
+          "backgroundColor": "rgba(116, 167, 191, 0.62)",
+          "color": "rgb(20, 20, 20)",
+          "opacity": "1"
+        },
+        ".cards .card :is(h2,h3)": {
+          "fontFamily": "Poppins, Arial, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "600",
+          "lineHeight": "25px",
+          "letterSpacing": "-0.5px"
+        },
+        ".card-media": {
+          "aspectRatio": "16 / 9",
+          "marginBottom": "20px"
+        },
+        ".card-image": {
+          "objectFit": "cover",
+          "opacity": "1"
+        },
+        ".card .meta": {
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "fontWeight": "400"
+        }
+      },
+      "differences": [],
+      "states_match": true
+    }
+  ],
+  "flows": [
+    {
+      "flow": "keyboard /news/one-bug-is-all-it-takes/",
+      "target": "/people/adam-finney/",
+      "focus_visible": true,
+      "canonical_destination": true,
+      "one_h1": true
+    },
+    {
+      "flow": "keyboard /events/cheri-blossoms-conference-2026/",
+      "target": "/people/alex-rebert/",
+      "focus_visible": true,
+      "canonical_destination": true,
+      "one_h1": true
+    },
+    {
+      "flow": "keyboard /papers/cheri-concentrate-practical-compressed-capabilities/",
+      "target": "/people/jonathan-woodruff/",
+      "focus_visible": true,
+      "canonical_destination": true,
+      "one_h1": true
+    },
+    {
+      "flow": "keyboard /news-and-events/events-and-archive/upcoming-events/",
+      "target": "/events/cheritech26/",
+      "focus_visible": true,
+      "canonical_destination": true,
+      "one_h1": true
+    },
+    {
+      "flow": "keyboard /people/robert-watson/",
+      "target": "/events/cheri-blossoms-conference-2025/",
+      "focus_visible": true,
+      "canonical_destination": true,
+      "one_h1": true
+    },
+    {
+      "flow": "keyboard /people/brooks-davis/",
+      "target": "/news/cheri-memory-safety-mitigates-llm-discovered-vulnerability-in-freebsd/",
+      "focus_visible": true,
+      "canonical_destination": true,
+      "one_h1": true
+    },
+    {
+      "flow": "no JavaScript /news/",
+      "width": 375,
+      "http_ok": true,
+      "count_correct": true,
+      "fits_viewport": true,
+      "images_decoded": true
+    },
+    {
+      "flow": "no JavaScript /news-and-events/events-and-archive/upcoming-events/",
+      "width": 375,
+      "http_ok": true,
+      "count_correct": true,
+      "fits_viewport": true,
+      "images_decoded": true
+    },
+    {
+      "flow": "no JavaScript /events/cheri-blossoms-conference-2026/",
+      "width": 375,
+      "http_ok": true,
+      "count_correct": true,
+      "fits_viewport": true,
+      "images_decoded": true
+    },
+    {
+      "flow": "no JavaScript /news/one-bug-is-all-it-takes/",
+      "width": 375,
+      "http_ok": true,
+      "count_correct": true,
+      "fits_viewport": true,
+      "images_decoded": true
+    },
+    {
+      "flow": "no JavaScript /papers/cheri-concentrate-practical-compressed-capabilities/",
+      "width": 375,
+      "http_ok": true,
+      "count_correct": true,
+      "fits_viewport": true,
+      "images_decoded": true
+    },
+    {
+      "flow": "no JavaScript /news/",
+      "width": 1440,
+      "http_ok": true,
+      "count_correct": true,
+      "fits_viewport": true,
+      "images_decoded": true
+    },
+    {
+      "flow": "no JavaScript /news-and-events/events-and-archive/upcoming-events/",
+      "width": 1440,
+      "http_ok": true,
+      "count_correct": true,
+      "fits_viewport": true,
+      "images_decoded": true
+    },
+    {
+      "flow": "no JavaScript /events/cheri-blossoms-conference-2026/",
+      "width": 1440,
+      "http_ok": true,
+      "count_correct": true,
+      "fits_viewport": true,
+      "images_decoded": true
+    },
+    {
+      "flow": "no JavaScript /news/one-bug-is-all-it-takes/",
+      "width": 1440,
+      "http_ok": true,
+      "count_correct": true,
+      "fits_viewport": true,
+      "images_decoded": true
+    },
+    {
+      "flow": "no JavaScript /papers/cheri-concentrate-practical-compressed-capabilities/",
+      "width": 1440,
+      "http_ok": true,
+      "count_correct": true,
+      "fits_viewport": true,
+      "images_decoded": true
+    }
+  ],
+  "fixture_errors": []
+}

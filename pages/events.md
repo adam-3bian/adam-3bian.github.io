@@ -1,7 +1,7 @@
 ---
 title: Events
 permalink: /events/
-listing: events
+layout: events
 ---
 
 # Events

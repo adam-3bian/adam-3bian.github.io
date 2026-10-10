@@ -6,6 +6,9 @@ speakers: [alex-rebert, kathleen-fisher, maika-fohrenbach, ollie-whitehouse, sam
   john-baldwin, john-goodacre, jonathan-woodruff, louis-emile-ploix, luca-muller, marno-van-der-maas, manu-ravishankar,
   merve-gulmez, mike-eftimakis, murat-cakmak, paul-metzger, peter-cox, robert-watson, samuel-stark, simon-moore,
   tariq-kurd, thomas-nyman]
+date: '2026-03-25'
+end-date: '2026-03-27'
+source-speakers: true
 ---
 
 1. News &amp; Events

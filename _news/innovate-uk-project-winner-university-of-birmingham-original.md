@@ -2,6 +2,7 @@
 title: 'Innovate UK Project Winner: University of Birmingham'
 alternate: true
 authors: [mihai-ordean]
+undated: true
 ---
 
 # Innovate UK Project Winner: University of Birmingham

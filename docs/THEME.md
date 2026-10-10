@@ -36,6 +36,14 @@ The board's `listing.source-fragments: true` marks its retained source-card bloc
 
 The `person` layout gives the existing first source portrait the ZIP's `image-square` treatment in place; its alt text, alignment, caption and surrounding biography remain intact. Both cards and details therefore use the same real image without adding portrait metadata to 63 existing records. Explicit native `thumbnail` metadata takes precedence on both surfaces and replaces the existing primary image in place, avoiding duplicates. A record without a source image or thumbnail stays image-free. All original person Markdown remains unchanged, and published reverse links continue to derive from news/event/paper IDs.
 
+## News, events and ordered relationships after Phase 4
+
+The named `news`/`post` and `events`/`event` paths now use the real `_news` and `_events` collections. A shared native `chronological-items.html` include supplies directories, homepage selections and person reverse lists. Dated news is newest first; undated records follow alphabetically with no fallback date. Events use verified `date`/`end-date` metadata copied from their retained source definitions, earliest first, and past/upcoming selection uses the inclusive final day at build time. Cards preserve the ZIP's 16:9 frames and date-range treatment, adding the existing source Location label. No JavaScript filtering or custom plugin is introduced.
+
+The native `future: true` setting keeps future event occurrence dates from suppressing their published routes. `undated: true` explicitly identifies the three canonical and nine alternate news records without verified date metadata; no publication date was inferred from related versions or a build timestamp.
+
+`relationships.html` resolves each stored author/speaker ID in order. Three source conference Speakers sections render their 68 original excerpts and affiliations through the same card include, at the original position and with original keynote/featured headings. The redundant generated speaker section is suppressed there; its old `speakers-title` anchor remains as an alias. Cards use canonical person portraits, while all former source pictures/fragments remain in Markdown/assets and [Phase 4 mapping evidence](../reports/codex-phases/phase-04-evidence/audit.json). Other events receive the shared generated section once below the body. No author/speaker ID, canonical profile or reverse relationship is copied or inferred.
+
 ## Validation and delivery
 
 Run the repository's build, full-content/asset/link checks, author relationship checks and desktop/mobile browser flows. Compare computed visual styles and representative screenshots against a build of the ZIP itself. Keep content hashes unchanged during theme-only tasks. Shared presentation and newly generated navigation can differ from archival body text; complete bodies must still match their retained signatures.
