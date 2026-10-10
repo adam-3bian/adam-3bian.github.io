@@ -1,6 +1,7 @@
 ---
 title: Build with CHERI
 permalink: /build/
+layout: index
 ---
 
 # Build with CHERI

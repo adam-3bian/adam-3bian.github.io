@@ -17,7 +17,7 @@ Each entity lives in one Markdown file. Its filename is its ID: `_people/robert-
 | `undated: true` | A news/event record without a verified date | Prevent Jekyll's implicit build date from being displayed or used as a genuine date. Omit `date` in this case. |
 | `alternate: true` | Differing source versions | Retain a distinct alternate body without repeating it in the primary news feed. |
 | `permalink` | Ordinary pages under `pages/` | Public route; collection routes come from filenames. |
-| `listing` | Directory pages | For `layout: people`, optional `role: speaker` or `registry: governing-board`; for `layout: events`, optional `status: upcoming` or `status: past`. Group optional `columns` here. Other directories retain their collection-name adapter. |
+| `listing` | Directory pages | For `layout: people`, optional `role: speaker` or `registry: governing-board`; for `layout: events`, optional `status: upcoming` or `status: past`. Group optional `columns` here. Other directories use `layout: list` with `listing.collection`; members use `layout: members`. |
 | `thumbnail` | A record with genuine media | Optional grouped `src`, `alt`, `fit`, `position`, `width` and `height`; otherwise cards reuse its first local source image. |
 | `where-next` | A page with a known next destination | One `url`, with optional `title`, `action`, `image`, `target` and `rel`. No description is rendered. |
 | `related-pages` | A page with known related destinations | Ordered URL objects; infer destination titles unless an explicit override is needed. Optional source-backed `description`, `action`, `target` and `rel`. |
@@ -154,3 +154,13 @@ scripts/ruby.sh scripts/build.rb
 ```
 
 Source comparison checks detect changes to migrated bodies. Intentional editorial changes should update associated provenance and evidence rather than weaken comparisons. See [README_MIGRATION.md](../README_MIGRATION.md) for the full workflow and limits.
+
+## Other directories and section hubs (Phase 5)
+
+Use `layout: members` for the verified member directory; it selects only `member: true` from `_organisations`. Do not create `_members`. The universal compact cards reuse genuine logos, with the source-backed Founding member designation where present. Organisation details contain their original descriptions, membership definitions and reverse-linked people; no missing profile is filled with invented text.
+
+Other collections use `layout: list` and grouped `listing.collection` (organisations, papers, hardware, software, policies, guides or groups). Optional `columns`, `compact`, `action`, `sort` and `order` follow the starter schema. The complete directory introduction appears before its cards. A paper remains a catalogue record with its genuine publication links; no local full paper is implied.
+
+The five main hubs use `layout: index`. Their cards derive from `parent` references; collection and section defaults live in `_config.yml`, with explicit parent overrides on directory pages. Keep those references aligned with real destinations. Hubs preserve their original curated text/link lists before the generated children. Alternate source versions stay out of derived indexes.
+
+The remaining 216 migrated source-card entries render through `source-card-groups.html` and the universal `listing.html` shell. Their images, labels, dated/status text, headings, summaries, actions and curated order stay verbatim from the retained Kramdown. This includes historical source-version directories; they are not replaced with today's canonical feed. New content should use collection/parent references or `related-pages`, not add migration fragments. The Phase 5 audit checks each retained fragment independently as well as all other rendered prose.

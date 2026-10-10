@@ -1,7 +1,10 @@
 ---
 title: Hardware
 permalink: /hardware/
-listing: hardware
+listing:
+  collection: hardware
+layout: list
+parent: /build/
 ---
 
 # Hardware

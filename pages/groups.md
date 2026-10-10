@@ -1,7 +1,10 @@
 ---
 title: Working groups
 permalink: /groups/
-listing: groups
+listing:
+  collection: groups
+layout: list
+parent: /alliance/
 ---
 
 # Working groups

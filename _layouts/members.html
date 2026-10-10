@@ -1,7 +1,8 @@
 ---
 layout: page
 ---
-{% assign members = site.members | where_exp: 'item', 'item.redirect_to == nil' | sort_natural: 'title' %}
-{% include listing.html items=members label=page.title compact=true columns=page.listing.columns %}
-
 {{ content }}
+{% assign members = site.organisations | where: 'member', true | where_exp: 'item', 'item.redirect_to == nil' | where_exp: 'item', 'item.alternate != true' | sort_natural: 'title' %}
+<section class="index-list" aria-label="{{ page.title | escape }}" data-collection-index>
+  {% include listing.html items=members kind='organisations' label=page.title compact=true columns=page.listing.columns heading='h3' context='members' %}
+</section>

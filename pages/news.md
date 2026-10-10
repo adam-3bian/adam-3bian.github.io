@@ -2,6 +2,7 @@
 title: News
 permalink: /news/
 layout: news
+parent: /news-and-events/
 ---
 
 # News

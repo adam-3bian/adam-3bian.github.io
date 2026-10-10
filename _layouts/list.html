@@ -1,13 +1,10 @@
 ---
-layout: default
+layout: page
 ---
-{% assign items = site[page.listing.collection] | where_exp: 'item', 'item.redirect_to == nil' %}
-{% if page.listing.sort == 'date' %}
-  {% assign items = items | sort: 'date' %}
-{% else %}
-  {% assign items = items | sort_natural: 'title' %}
-{% endif %}
-{% if page.listing.order == 'desc' %}{% assign items = items | reverse %}{% endif %}
-{% include listing.html items=items label=page.title compact=page.listing.compact action=page.listing.action columns=page.listing.columns %}
-
 {{ content }}
+{% assign items = site[page.listing.collection] | where_exp: 'item', 'item.redirect_to == nil' | where_exp: 'item', 'item.alternate != true' %}
+{% if page.listing.sort == 'date' %}{% assign items = items | sort: 'date' %}{% else %}{% assign items = items | sort_natural: 'title' %}{% endif %}
+{% if page.listing.order == 'desc' %}{% assign items = items | reverse %}{% endif %}
+<section class="index-list" aria-label="{{ page.title | escape }}" data-collection-index>
+  {% include listing.html items=items kind=page.listing.collection label=page.title compact=page.listing.compact action=page.listing.action columns=page.listing.columns %}
+</section>

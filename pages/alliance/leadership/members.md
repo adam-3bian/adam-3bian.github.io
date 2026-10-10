@@ -1,7 +1,7 @@
 ---
 title: Members
 permalink: /alliance/leadership/members/
-listing: members
+layout: members
 ---
 
 1. Alliance

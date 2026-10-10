@@ -1,7 +1,10 @@
 ---
 title: Organisations
 permalink: /organisations/
-listing: organisations
+listing:
+  collection: organisations
+layout: list
+parent: /alliance/
 ---
 
 # Organisations

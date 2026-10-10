@@ -1,7 +1,10 @@
 ---
 title: Software
 permalink: /software/
-listing: software
+listing:
+  collection: software
+layout: list
+parent: /build/
 ---
 
 # Software

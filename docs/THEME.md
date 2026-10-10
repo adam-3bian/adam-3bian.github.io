@@ -54,3 +54,9 @@ A local build or cloud-environment publication does not deploy GitHub Pages. Loc
 
 
 For the standard build, `python3 scripts/check_theme.py` verifies exact imported files and active native components. For a rendered reference comparison, build the extracted starter into a separate directory with the same local Poppins faces, then run `python3 scripts/check_theme.py --reference-site /path/to/reference-build`. Redirect plugins can be omitted when building that typography/component reference; source-content and route correctness are validated independently against the application build.
+
+## Phase 5 directory adapters
+
+Activated the native `members` layout against canonical `site.organisations`, and the generic `list` layout against grouped collection settings. Both render full source content before cards. Organisation detail logos reuse their first genuine source image in place, with the ZIP square frame and containment; name-only records remain image-free. Source-backed Founding member labels are read from canonical Status definitions.
+
+The five topic hubs use the native `index` layout and parent-derived children. The legacy string-listing/filter adapter in `site-features` is removed. Existing card fragments are parsed only at their known Kramdown block boundaries by `source-card-groups`; `listing` emits their common native card shell while retaining original inner text/media order and one destination. All 216 fragments are checked individually against the Phase 4 rendering. No source bodies, original assets or CSS primitives changed. See [Phase 5](../reports/codex-phases/phase-05.md).

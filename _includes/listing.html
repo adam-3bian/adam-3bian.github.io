@@ -5,7 +5,7 @@
 {% endcomment %}
 {% assign card_items = include.items %}
 {% assign source_cards = include.source_cards | split: '<p class="collection-card__link">' %}
-{% if include.mode == 'onward' %}{% assign card_items = card_items | slice: 0, 1 %}{% else %}
+{% if include.mode == 'onward' %}{% assign card_items = card_items | slice: 0, 1 %}{% elsif include.bare != true %}
 <ul class="cards columns-{{ include.columns | default: 3 }}" aria-label="{{ include.label | escape }}">
 {% endif %}
 {% for item in card_items %}
@@ -66,6 +66,25 @@
     {% endif %}
     {% if kind == 'organisations' and image_url %}{% assign image_fit = 'contain' %}{% endif %}
     {% assign link_url = item.url %}
+    {% if include.source_entry %}
+      {% assign source_body = include.source_entry %}
+      {% assign link_url = source_body | split: 'href="' | slice: 1, 1 | first | split: '"' | first %}
+      {% assign card_record = all_pages | where: 'url', link_url | first %}
+      {% assign kind = card_record.collection | default: 'pages' %}
+      {% assign image_url = nil %}
+      {% if source_body contains '<img ' %}
+        {% assign source_image = source_body | split: '<img ' | slice: 1, 1 | first | split: '>' | first %}
+        {% assign image_url = source_image | split: 'src="' | last | split: '"' | first %}
+        {% assign image_alt = source_image | split: 'alt="' | last | split: '"' | first %}
+        {% assign source_image_block = source_body | split: '</p>' | first | append: '</p>' %}
+        {% assign source_body = source_body | remove_first: source_image_block %}
+      {% endif %}
+      {% assign image_fit = nil %}
+      {% if kind == 'organisations' %}{% assign image_fit = 'contain' %}{% endif %}
+      {% assign source_links = source_body | split: '<a ' %}
+      {% capture source_body %}{% for source_link in source_links %}{% if forloop.first %}{{ source_link }}{% else %}{% assign source_attributes = source_link | split: '>' | first | append: '>' %}<span>{{ source_link | remove_first: source_attributes | replace: '</a>', '</span>' }}{% endif %}{% endfor %}{% endcapture %}
+      {% assign source_body = source_body | replace: 'collection-card__title', 'card-title' | replace: 'collection-card__summary', 'card-description' | replace: 'collection-card__labels', 'meta' | replace: 'collection-card__meta', 'meta' | replace: 'collection-card__link', 'card-action' %}
+    {% endif %}
     {% assign url_prefix = link_url | slice: 0, 2 %}
     {% assign url_first = link_url | slice: 0, 1 %}
     {% unless link_url contains ':' or url_prefix == '//' or url_first == '#' %}{% assign link_url = link_url | relative_url %}{% endunless %}
@@ -85,6 +104,7 @@
             <img src="{{ image_url | escape_once }}" alt="{{ image_alt | escape_once }}" class="{% if include.mode == 'onward' %}onward-image{% else %}card-image{% endif %}{% if image_fit == 'contain' %} image-contain{% endif %}{% if card_image.position == 'left' %} image-crop-left{% elsif card_image.position == 'right' %} image-crop-right{% endif %}"{% if card_image.width %} width="{{ card_image.width | escape }}"{% endif %}{% if card_image.height %} height="{{ card_image.height | escape }}"{% endif %} loading="lazy">
           {% unless include.mode == 'onward' %}</span>{% endunless %}
         {% endif %}
+        {% if include.source_entry %}{{ source_body }}{% else %}
         {% assign source_description = nil %}
         {% if include.source_cards %}
           {% capture source_target %}href="{{ item.url }}"{% endcapture %}
@@ -114,6 +134,10 @@
         {% unless include.mode == 'onward' %}
           {% if item.description %}<p class="card-description">{{ item.description | escape_once }}</p>{% endif %}
         {% endunless %}
+        {% if include.context == 'members' %}
+          {% assign member_facts = card_record.content | markdownify %}
+          {% if member_facts contains '<dd>Founding member</dd>' %}<span class="meta">Founding member</span>{% endif %}
+        {% endif %}
         {% unless card_compact %}
           {% unless include.mode == 'onward' or include.resolve %}
             {% if card_date %}
@@ -123,8 +147,9 @@
           {% endunless %}
           <span class="card-action">{{ item.action | default: include.action | default: 'Read more' | escape_once }} <span aria-hidden="true">&rarr;</span></span>
         {% endunless %}
+        {% endif %}
       </a>
     {% unless include.mode == 'onward' %}</li>{% endunless %}
   {% endunless %}
 {% endfor %}
-{% unless include.mode == 'onward' %}</ul>{% endunless %}
+{% unless include.mode == 'onward' or include.bare %}</ul>{% endunless %}

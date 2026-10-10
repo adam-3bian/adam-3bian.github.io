@@ -1,6 +1,7 @@
 ---
 title: Discover CHERI
 permalink: /discover/
+layout: index
 ---
 
 # Discover CHERI

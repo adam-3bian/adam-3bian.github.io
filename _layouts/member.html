@@ -1,4 +1,46 @@
 ---
 layout: page
 ---
-{{ content }}
+{% assign source_portrait = nil %}
+{% if content contains '<img ' %}
+  {% assign source_image = content | split: '<img ' | slice: 1, 1 | first | split: '>' | first %}
+  {% if source_image contains 'src="/assets/' %}
+    {% assign source_portrait = source_image | prepend: '<img ' | append: '>' %}
+  {% endif %}
+{% endif %}
+{% if source_portrait and page.thumbnail.src == nil %}
+  {% comment %}The first genuine source portrait is also the card fallback. Reuse it
+    in place, preserving its alt, alignment, caption and all following biography.{% endcomment %}
+  {% assign portrait = source_portrait %}
+  {% unless portrait contains 'image-square image-contain' %}
+    {% if portrait contains 'class="' %}
+      {% assign portrait = portrait | replace_first: 'class="', 'class="image-square image-contain ' %}
+    {% else %}
+      {% assign portrait = portrait | replace_first: '<img ', '<img class="image-left image-square image-contain" ' %}
+    {% endif %}
+  {% endunless %}
+  {% assign portrait_url = source_image | split: 'src="' | last | split: '"' | first %}
+  {% assign relative_portrait_url = portrait_url | relative_url %}
+  {% assign portrait = portrait | replace_first: portrait_url, relative_portrait_url %}
+  {{ content | replace_first: source_portrait, portrait }}
+{% elsif page.thumbnail.src %}
+  {% assign image_url = page.thumbnail.src %}
+  {% assign url_prefix = image_url | slice: 0, 2 %}
+  {% assign url_first = image_url | slice: 0, 1 %}
+  {% unless image_url contains ':' or url_prefix == '//' or url_first == '#' %}
+    {% assign image_url = image_url | relative_url %}
+  {% endunless %}
+  {% capture portrait %}<p><img src="{{ image_url | escape }}" alt="{{ page.thumbnail.alt | escape }}" class="image-left image-square image-contain{% if page.thumbnail.fit == 'contain' %} image-contain{% endif %}{% if page.thumbnail.position == 'left' %} image-crop-left{% elsif page.thumbnail.position == 'right' %} image-crop-right{% endif %}"{% if page.thumbnail.width %} width="{{ page.thumbnail.width | escape }}"{% endif %}{% if page.thumbnail.height %} height="{{ page.thumbnail.height | escape }}"{% endif %} loading="lazy"></p>{% endcapture %}
+  {% if source_portrait %}
+    {% assign portrait_image = portrait | remove_first: '<p>' | remove_first: '</p>' %}
+    {{ content | replace_first: source_portrait, portrait_image }}
+  {% elsif content contains '</h2>' %}
+    {% capture section_start %}</h2>{{ portrait }}{% endcapture %}
+    {{ content | replace_first: '</h2>', section_start }}
+  {% else %}
+    {{ portrait }}
+    {{ content }}
+  {% endif %}
+{% else %}
+  {{ content }}
+{% endif %}

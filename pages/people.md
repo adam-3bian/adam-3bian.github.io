@@ -2,6 +2,7 @@
 title: People
 permalink: /people/
 layout: people
+parent: /news-and-events/
 ---
 
 # People

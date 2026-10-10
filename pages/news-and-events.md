@@ -1,6 +1,7 @@
 ---
 title: News and events
 permalink: /news-and-events/
+layout: index
 ---
 
 # News and events

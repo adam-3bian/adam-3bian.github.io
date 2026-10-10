@@ -92,21 +92,75 @@ defaults:
     type: people
   values:
     layout: person
+    parent: /people/
 - scope:
     path: ''
     type: organisations
   values:
     layout: member
+    parent: /organisations/
 - scope:
     path: ''
     type: events
   values:
     layout: event
+    parent: /events/
 - scope:
     path: ''
     type: news
   values:
     layout: post
+    parent: /news/
+- scope:
+    path: ''
+    type: papers
+  values:
+    parent: /papers/
+- scope:
+    path: ''
+    type: hardware
+  values:
+    parent: /hardware/
+- scope:
+    path: ''
+    type: software
+  values:
+    parent: /software/
+- scope:
+    path: ''
+    type: groups
+  values:
+    parent: /groups/
+- scope:
+    path: ''
+    type: guides
+  values:
+    parent: /guides/
+- scope:
+    path: ''
+    type: policies
+  values:
+    parent: /policies/
+- scope:
+    path: pages/discover
+  values:
+    parent: /discover/
+- scope:
+    path: pages/adopt
+  values:
+    parent: /adopt/
+- scope:
+    path: pages/build
+  values:
+    parent: /build/
+- scope:
+    path: pages/alliance
+  values:
+    parent: /alliance/
+- scope:
+    path: pages/news-and-events
+  values:
+    parent: /news-and-events/
 title: CHERI Alliance
 description: 'CHERI Alliance: hardware-enforced memory safety, secure software and
   the CHERI community.'

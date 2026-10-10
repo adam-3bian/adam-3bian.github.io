@@ -1,28 +1,6 @@
 {% if page.url == '/alliance/membership/contact/' %}{% include contact-form.html %}{% endif %}
 {% if page.url == '/news-and-events/news-and-analysis/subscribe-newsletter/' %}{% include newsletter-form.html %}{% endif %}
 
-{% if page.listing and page.layout != 'people' and page.layout != 'news' and page.layout != 'events' %}
-  {% assign collection_items = site[page.listing] %}
-  {% assign kind = page.listing %}
-  {% if page.listing == 'members' %}
-    {% assign collection_items = site.organisations | where: 'member', true %}
-    {% assign kind = 'organisations' %}
-  {% elsif page.listing == 'speakers' %}
-    {% assign collection_items = site.people | where: 'speaker', true %}
-    {% assign kind = 'people' %}
-  {% endif %}
-  {% if page.listing == 'news' %}
-    {% assign collection_items = collection_items | where_exp: 'item', 'item.alternate != true' | sort: 'date' | reverse %}
-  {% elsif page.listing == 'events' %}
-    {% assign collection_items = collection_items | sort: 'title' %}
-  {% else %}
-    {% assign collection_items = collection_items | sort_natural: 'title' %}
-  {% endif %}
-  <section class="index-list" aria-label="{{ page.title | escape }}" data-collection-index>
-    {% include listing.html items=collection_items label=page.title kind=kind filter=page.filter columns=3 %}
-    <p data-directory-empty hidden>No matches. Try a different name or filter.</p>
-  </section>
-{% endif %}
 {% include relationships.html %}
 {% if page.url == '/' %}
   {% include chronological-items.html items=site.news kind='news' %}

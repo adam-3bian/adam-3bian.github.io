@@ -1,6 +1,7 @@
 ---
 title: Adopt CHERI
 permalink: /adopt/
+layout: index
 ---
 
 # Adopt CHERI

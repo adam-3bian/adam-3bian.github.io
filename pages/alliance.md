@@ -1,6 +1,7 @@
 ---
 title: CHERI Alliance
 permalink: /alliance/
+layout: index
 ---
 
 # CHERI Alliance

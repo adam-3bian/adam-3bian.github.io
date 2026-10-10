@@ -95,7 +95,9 @@
       {% include hero.html heading=source_heading heading_id=heading_id %}
       <article class="content" aria-label="{{ page.title | escape }}">
         {% include page-heading.html heading=source_heading %}
-        {{ source_body }}
+        {% if source_body contains 'collection-card__' %}
+          {% include source-card-groups.html content=source_body %}
+        {% else %}{{ source_body }}{% endif %}
       </article>
     </div>
     {% include slider.html %}

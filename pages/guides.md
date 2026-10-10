@@ -1,7 +1,10 @@
 ---
 title: Developer guides
 permalink: /guides/
-listing: guides
+listing:
+  collection: guides
+layout: list
+parent: /build/
 ---
 
 # Developer guides

@@ -1,3 +1,7 @@
+## Phase 5 — verified directory integration (10 October 2026)
+
+Canonical organisations/members and all remaining collection directories use native list/detail layouts and universal cards. Five topic hubs derive 91 child links from parent references; 216 retained source fragments now use the same card shell without changing their copy, media or order. All 476 bodies/prose signatures and original assets are preserved. Native builds, 30 regressions, Markdown audit and 108 responsive browser views pass; the root 404 search link and historical prefix URLs remain Phase 7 exceptions. See [Phase 5](reports/codex-phases/phase-05.md) for fresh evidence and exact limits.
+
 # CHERI content and authoring progress
 
 ## Phase 4 news, events and ordered relationships — 10 October 2026
