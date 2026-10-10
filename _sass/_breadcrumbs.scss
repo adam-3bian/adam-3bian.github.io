@@ -1,0 +1,30 @@
+.breadcrumbs {
+  background: var(--colour-hero);
+  font-size: $font-size-meta;
+  margin-inline: -$gutter-mobile;
+  padding: $space-2 $gutter-mobile;
+}
+.breadcrumbs ol {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.breadcrumbs li { align-items: center; display: flex; min-width: 0; }
+.breadcrumbs li + li::before { color: var(--colour-muted); content: "/"; padding-inline: $space-1; }
+.breadcrumbs a, .breadcrumbs span {
+  align-items: center;
+  display: flex;
+  min-height: $control-height;
+  overflow-wrap: anywhere;
+  margin: 0;
+  padding: $space-2 $navigation-row-padding;
+}
+.breadcrumbs [aria-current] { color: var(--colour-muted); }
+.breadcrumbs + .hero { padding-top: $space-4; }
+@media (min-width: $desktop-breakpoint) {
+  .breadcrumbs { margin-inline: -$gutter-desktop; padding-inline: $gutter-desktop; }
+}

@@ -1,0 +1,118 @@
+{
+  "https://cheri-alliance.org/member/siemens/": {
+    "target": "/organisations/siemens/",
+    "evidence": "Same named member organisation and canonical profile"
+  },
+  "https://cheri-alliance.org/member/sci-semiconductor/": {
+    "target": "/organisations/sci-semiconductor/",
+    "evidence": "Same named member organisation and canonical profile"
+  },
+  "https://cheri-alliance.org/member/university-of-cambridge/": {
+    "target": "/organisations/university-of-cambridge/",
+    "evidence": "Same named member organisation and canonical profile"
+  },
+  "https://cheri-alliance.org/member/google/": {
+    "target": "/organisations/google/",
+    "evidence": "Same named member organisation and canonical profile"
+  },
+  "https://cheri-alliance.org/member/sri/": {
+    "target": "/organisations/sri/",
+    "evidence": "Same named member organisation and canonical profile"
+  },
+  "https://cheri-alliance.org/member/techworks/": {
+    "target": "/organisations/techworks/",
+    "evidence": "Same named member organisation and canonical profile"
+  },
+  "https://cheri-alliance.org/member/the-university-of-manchester/": {
+    "target": "/organisations/the-university-of-manchester/",
+    "evidence": "Same named member organisation and canonical profile"
+  },
+  "https://cheri-alliance.org/member/capabilities-limited/": {
+    "target": "/organisations/capabilities-limited/",
+    "evidence": "Same named member organisation and canonical profile"
+  },
+  "https://cheri-alliance.org/member/codasip/": {
+    "target": "/organisations/codasip/",
+    "evidence": "Same named member organisation and canonical profile"
+  },
+  "https://cheri-alliance.org/member/lowrisc/": {
+    "target": "/organisations/lowrisc/",
+    "evidence": "Same named member organisation and canonical profile"
+  },
+  "https://cheri-alliance.org/member/university-of-birmingham-centre-for-cyber-security-and-privacy/": {
+    "target": "/organisations/university-of-birmingham/",
+    "evidence": "Published member name variant of the same institution"
+  },
+  "https://cheri-alliance.github.io/members/university-of-birmingham-centre-for-cyber-security-and-privacy/": {
+    "target": "/organisations/university-of-birmingham/",
+    "evidence": "Legacy profile slug of the same published institution"
+  },
+  "https://cheri-alliance.github.io/alliance/about-and-governance/working-groups/": {
+    "target": "/alliance/leadership/working-groups/",
+    "evidence": "Legacy spelling/section of the same published topic or event; use its existing canonical page"
+  },
+  "https://cheri-alliance.github.io/adopt/business-case/lifecycle-benefits-and-roi/": {
+    "target": "/adopt/business-case/return-on-security-investment/",
+    "evidence": "Legacy spelling/section of the same published topic or event; use its existing canonical page"
+  },
+  "https://cheri-alliance.github.io/discover/why-cheri/faqs/": {
+    "target": "/discover/understand/faq/",
+    "evidence": "Legacy spelling/section of the same published topic or event; use its existing canonical page"
+  },
+  "https://cheri-alliance.github.io/discover/why-cheri/faq": {
+    "target": "/discover/understand/faq/",
+    "evidence": "Legacy spelling/section of the same published topic or event; use its existing canonical page"
+  },
+  "https://cheri-alliance.github.io/discover/why-cheri/cheri-and-existing-software/": {
+    "target": "/discover/understand/cheri-and-existing-software/",
+    "evidence": "Legacy spelling/section of the same published topic or event; use its existing canonical page"
+  },
+  "https://cheri-alliance.github.io/discover/why-memory-safety/approaches-to-memory-safety/": {
+    "target": "/discover/why-cheri/approaches-to-memory-safety/",
+    "evidence": "Legacy spelling/section of the same published topic or event; use its existing canonical page"
+  },
+  "https://cheri-alliance.github.io/alliance/legal-and-policies/trademark-and-brand-use/": {
+    "target": "/policies/trademark-policy/",
+    "evidence": "Legacy spelling/section of the same published topic or event; use its existing canonical page"
+  },
+  "https://cheri-alliance.github.io/events/cheri-tech-conference-2025/": {
+    "target": "/events/cheritech25/",
+    "evidence": "Legacy spelling/section of the same published topic or event; use its existing canonical page"
+  },
+  "https://cheri-alliance.github.io/events/cheri-blossoms-conference-2026-intro-to-cheri-and-cheriot/": {
+    "target": "/events/cheri-blossoms-tutorial-2026/",
+    "evidence": "Legacy spelling/section of the same published topic or event; use its existing canonical page"
+  },
+  "https://cheri-alliance.org/contact/": {
+    "target": "/alliance/membership/contact/",
+    "evidence": "Legacy spelling/section of the same published topic or event; use its existing canonical page"
+  },
+  "https://cheri-alliance.org/cheri-enabled/": {
+    "target": "/adopt/assurance-and-adoption/about-cheri-enabled/",
+    "evidence": "Legacy spelling/section of the same published topic or event; use its existing canonical page"
+  },
+  "https://cheri-alliance.org/discover-cheri/cheri-products/morello/": {
+    "target": "/hardware/morello/",
+    "evidence": "Legacy spelling/section of the same published topic or event; use its existing canonical page"
+  },
+  "https://cheri-alliance.org/discover-cheri/cheri-products/": {
+    "target": "/build/platforms/cheri-products/",
+    "evidence": "Legacy spelling/section of the same published topic or event; use its existing canonical page"
+  },
+  "https://cheri-alliance.org/legal-and-policies/trademark-policy/": {
+    "target": "/policies/trademark-policy/",
+    "evidence": "Legacy spelling/section of the same published topic or event; use its existing canonical page"
+  },
+  "https://cheri-alliance.org/who-we-are/working-groups/cheri-qemu/": {
+    "target": "/groups/cheri-qemu/",
+    "evidence": "Same named working group"
+  },
+  "https://cheri-alliance.github.io/alliance/about-and-governance/working-groups/cheri-c-cplusplus/": {
+    "target": "/groups/cheri-c-cplusplus/",
+    "evidence": "Same named working group"
+  },
+  "https://cheri-alliance.org/who-we-are/working-groups/cheri-in-soc/": {
+    "target": "/groups/cheri-in-soc/",
+    "evidence": "Same named working group"
+  }
+}

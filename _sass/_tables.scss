@@ -1,0 +1,41 @@
+// The block fallback scrolls even when JavaScript is unavailable.
+.content table {
+  border-collapse: collapse;
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  width: 100%;
+}
+.content th, .content td {
+  border: $control-border-width solid var(--colour-control-border);
+  min-width: $table-cell-min-width;
+  padding: $space-3 $space-4;
+  text-align: left;
+  vertical-align: top;
+}
+.content th {
+  background: var(--colour-card);
+  font-weight: $font-weight-semibold;
+}
+.content caption {
+  font-weight: $font-weight-medium;
+  padding-bottom: $space-3;
+  text-align: left;
+}
+.table-scroll {
+  clear: both;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  width: 100%;
+}
+.table-scroll:focus-visible {
+  outline: $focus-width solid var(--colour-focus);
+  outline-offset: $focus-width;
+}
+.content .table-scroll > table {
+  display: table;
+  max-width: none;
+  overflow: visible;
+}

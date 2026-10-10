@@ -6614,5 +6614,109 @@
       },
       "inline": false
     }
+  },
+  "https://cheri-alliance.org/member/hildebrand/": {
+    "https://cheri-alliance.org/wp-content/uploads/2026/09/hildebrandlogo-1024x177.png": {
+      "class": "image-full",
+      "rationale": "Rendered non-floating image occupies a separate media block; retain intrinsic size with max-width rather than stretching",
+      "evidence_path": "reports/browser/dcc149cc90a8516a/source-layout.json",
+      "geometry": {
+        "x": 745,
+        "y": 459.984375,
+        "width": 545,
+        "height": 300
+      },
+      "inline": false
+    }
+  },
+  "https://cheri-alliance.org/beyond-software-patching/": {
+    "https://cheri-alliance.org/wp-content/uploads/2023/10/cheri-logo.png": {
+      "class": "image-full",
+      "rationale": "Rendered non-floating image occupies a separate media block; retain intrinsic size with max-width rather than stretching",
+      "evidence_path": "reports/browser/46228374314e7a18/source-layout.json",
+      "geometry": {
+        "x": 504,
+        "y": 357.1875,
+        "width": 432,
+        "height": 145
+      },
+      "inline": false
+    },
+    "https://cheri-alliance.org/wp-content/uploads/2026/09/beyond_software_patching_blog_1.png": {
+      "class": "image-full",
+      "rationale": "Source caption block computed float, or standalone non-floating media block",
+      "evidence_path": "reports/browser/46228374314e7a18/source-layout.json",
+      "geometry": {
+        "x": 242.5,
+        "y": 861.75,
+        "width": 955,
+        "height": 537
+      },
+      "inline": false
+    },
+    "https://cheri-alliance.org/wp-content/uploads/2026/09/Picture1.png": {
+      "class": "image-full",
+      "rationale": "Source caption block computed float, or standalone non-floating media block",
+      "evidence_path": "reports/browser/46228374314e7a18/source-layout.json",
+      "geometry": {
+        "x": 160,
+        "y": 4784.078125,
+        "width": 1120,
+        "height": 625.96875
+      },
+      "inline": false
+    },
+    "https://cheri-alliance.org/wp-content/uploads/2026/09/Picture2.png": {
+      "class": "image-full",
+      "rationale": "Source caption block computed float, or standalone non-floating media block",
+      "evidence_path": "reports/browser/46228374314e7a18/source-layout.json",
+      "geometry": {
+        "x": 160,
+        "y": 5614.4375,
+        "width": 1120,
+        "height": 373.84375
+      },
+      "inline": false
+    },
+    "https://cheri-alliance.org/wp-content/uploads/2026/09/Picture3.png": {
+      "class": "image-full",
+      "rationale": "Source caption block computed float, or standalone non-floating media block",
+      "evidence_path": "reports/browser/46228374314e7a18/source-layout.json",
+      "geometry": {
+        "x": 160,
+        "y": 7306.96875,
+        "width": 1120,
+        "height": 374.65625
+      },
+      "inline": false
+    }
+  },
+  "https://cheri-alliance.org/cheri-tag-bit-transport-overlay-standard-version-0-9-released/": {
+    "https://cheri-alliance.org/wp-content/uploads/2026/09/CHERITagBitTransportOverlayStandardBlogImage-2.png": {
+      "class": "image-full",
+      "rationale": "Rendered non-floating image occupies a separate media block; retain intrinsic size with max-width rather than stretching",
+      "evidence_path": "reports/browser/4c430499f1470d74/source-layout.json",
+      "geometry": {
+        "x": 160,
+        "y": 397.375,
+        "width": 1120,
+        "height": 364.578125
+      },
+      "inline": false
+    }
+  },
+  "https://cheri-alliance.org/cheri-zephyr-v0-4-0-release/": {
+    "https://cheri-alliance.org/wp-content/uploads/2026/09/zephyr_buffer_overflow.jpg": {
+      "class": "image-full",
+      "rationale": "Rendered non-floating image occupies a separate media block; retain intrinsic size with max-width rather than stretching",
+      "evidence_path": "reports/browser/fcc71da32469ddd1/source-layout.json",
+      "geometry": {
+        "x": 465,
+        "y": 352.984375,
+        "width": 510,
+        "height": 500
+      },
+      "inline": false
+    }
   }
 }

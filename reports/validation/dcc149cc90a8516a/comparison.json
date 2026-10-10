@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.org/member/hildebrand/",
+  "selector": "body > div.elementor",
+  "asset_mapping": {
+    "/assets/organisations/hildebrand/80cf16d93e-hildebrandlogo-1024x177.png": "https://cheri-alliance.org/wp-content/uploads/2026/09/hildebrandlogo-1024x177.png"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

@@ -21,20 +21,24 @@ with sync_playwright() as playwright:
     if existing.is_file():
      target=history/existing.name
      if not target.exists():shutil.copy2(existing,target)
-  page=browser.new_page(user_agent='Mozilla/5.0',viewport={'width':1440,'height':1000})
+  if 'cheri-alliance.org/' in url:time.sleep(10)
+  page=browser.new_page(user_agent='Mozilla/5.0 (compatible; CHERI-Public-Migration/0.1)',viewport={'width':1440,'height':1000})
   failed=[]
   page.on('requestfailed',lambda request:failed.append({'url':request.url,'error':request.failure}))
   page.route('**/*',lambda route:route.continue_() if route.request.method in ('GET','HEAD') else route.abort())
   try:
    response=page.goto(url,wait_until='networkidle',timeout=45000)
    assert response and response.status==200,f'HTTP {response.status if response else "unknown"}'
-   page.locator('main').wait_for()
+   boundary='main' if page.locator('main').count() else 'body > div.elementor'
+   page.locator(boundary).wait_for()
+   page.locator(boundary+' img[loading=lazy]').evaluate_all('(images) => images.forEach(image => image.loading = \'eager\')')
+   page.wait_for_function('(boundary) => [...document.querySelectorAll(boundary+\' img\')].every(image => image.complete)',arg=boundary,timeout=45000)
    page.screenshot(path=str(folder/'source-desktop.png'),full_page=True)
    (folder/'rendered-dom.html').write_text(page.content())
-   info=page.evaluate('''() => {
-    const main=document.querySelector('main');const rect=e=>{let r=e.getBoundingClientRect();return {x:r.x,y:r.y,width:r.width,height:r.height}};
-    return {main_text:main.innerText,main_rect:rect(main),images:[...main.querySelectorAll('img')].map(e=>({url:e.currentSrc||e.src,alt:e.alt,rect:rect(e),natural_width:e.naturalWidth,natural_height:e.naturalHeight,style:{float:getComputedStyle(e).float,display:getComputedStyle(e).display},parent:rect(e.parentElement),parent_classes:[...e.parentElement.classList],body_rect:rect(main.querySelector('.entity-body,.collection-detail__body')||main)})),header_text:[...document.querySelectorAll('header')].map(e=>e.innerText),copyright_text:[...document.querySelectorAll('.copyright-bar')].map(e=>e.innerText),footer_text:[...document.querySelectorAll('footer')].map(e=>e.innerText)};
-   }''')
+   info=page.evaluate('''(boundary) => {
+    const main=document.querySelector(boundary);const rect=e=>{let r=e.getBoundingClientRect();return {x:r.x,y:r.y,width:r.width,height:r.height}};
+    return {main_text:main.innerText,main_rect:rect(main),images:[...main.querySelectorAll('img')].map(e=>({url:e.currentSrc||e.src,alt:e.alt,rect:rect(e),natural_width:e.naturalWidth,natural_height:e.naturalHeight,style:{float:getComputedStyle(e).float,display:getComputedStyle(e).display},parent:rect(e.parentElement),parent_style:{float:getComputedStyle(e.parentElement).float,display:getComputedStyle(e.parentElement).display},parent_classes:[...e.parentElement.classList],body_rect:rect(main.querySelector('.entity-body,.collection-detail__body')||main)})),header_text:[...document.querySelectorAll('header')].map(e=>e.innerText),copyright_text:[...document.querySelectorAll('.copyright-bar')].map(e=>e.innerText),footer_text:[...document.querySelectorAll('footer')].map(e=>e.innerText)};
+   }''',boundary)
    info.update(url=url,final_url=page.url,retrieved_at=datetime.now(timezone.utc).isoformat(),http_status=response.status,viewport={'width':1440,'height':1000},failed_requests=failed)
    (folder/'source-layout.json').write_text(json.dumps(info,indent=2,ensure_ascii=False)+'\n')
    summaries.append({'url':url,'status':'captured','evidence_path':str(folder.relative_to(ROOT)),'failed_resource_count':len(failed)})

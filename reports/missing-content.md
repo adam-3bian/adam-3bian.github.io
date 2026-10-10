@@ -2,13 +2,13 @@
 
 Run: 2026-10-09T21:31:37.556761+00:00. This is a partial static capture, not a complete scrape.
 
-3301 discovered URL records; 691 HTML URL mappings retained; 372 main bodies converted; 372 main-body comparisons passed; 0 fully verified pages. Distinct retained HTML snapshots: 691.
+3301 discovered URL records; 691 HTML URL mappings retained; 376 main bodies converted; 376 main-body comparisons passed; 0 fully verified pages. Distinct retained HTML snapshots: 691.
 
-1809 asset URL references recorded; 421 local assets passed acquisition/integrity checks; remaining assets include pending downloads and documented source failures.
+1809 asset URL references recorded; 430 local assets passed acquisition/integrity checks; remaining assets include pending downloads and documented source failures.
 
 cheri-alliance.org: 0 public HTML URLs pending; cheri-alliance.github.io: 0 public HTML URLs pending.
 
-cheri-alliance.org: 56 queued records remain; cheri-alliance.github.io: current static queue exhausted. Static queue exhaustion is not exhaustive public-source discovery. JavaScript, complete query/pagination coverage, shared chrome across other pages, local routing, and remaining asset/layout/local-route validation remain unfinished. Exports are optional complementary evidence.
+cheri-alliance.org: 56 queued records remain; cheri-alliance.github.io: current static queue exhausted. Static queue exhaustion is not exhaustive public-source discovery. JavaScript, complete query/pagination coverage, remaining original-site conversion/assets and full-site browser coverage remain unfinished. All current rendered local targets and anchors passed. Exports are optional complementary evidence.
 
 WordPress REST API HTTP 401 responses are retained as failures; public HTML is available. Do not bypass API access controls. Failure status counts: {'malformed-link': 2, '404': 22, '401': 57}
 
@@ -18,7 +18,7 @@ The literal source placeholder “Add Link to CRA Webinar” is retained as a ma
 
 cheri-alliance.github.io-mike (1).zip: blocked-transfer-limit; cheri-alliance.org.zip: blocked-transfer-limit
 
-Blocked uploads have not been downloaded or inspected. The user selected live crawling; no replacement uploads are needed to continue. Archives remain optional evidence. No coverage claims are based on unread archives.
+The two oversized original-site archives remain unread. The user selected live crawling for content. The smaller simplified-authoring starter archive was inspected as the requested theme; its provenance is in template-provenance.json. No coverage claims are based on unread archives.
 
 ## Failed acquisition URLs
 
@@ -109,3 +109,7 @@ Blocked uploads have not been downloaded or inspected. The user selected live cr
 - https://cheri-alliance.github.io/assets/images/thumbnails/members/pa-consulting.webp — HTTPError: HTTP Error 404: Not Found
 - https://cheri-alliance.github.io/assets/images/content/members/pa-consulting/logo.png — HTTPError: HTTP Error 404: Not Found
 - https://cheri-alliance.github.io/assets/images/content/events/cheri-tech-conference-2025/hero.png — HTTPError: HTTP Error 404: Not Found
+
+## Current website corrections
+
+Three broken source image references use verified same-entity original assets; two source fragment typos are corrected. See source-image-repairs.json and source-link-repairs.json. Original failed acquisition records remain historical evidence.

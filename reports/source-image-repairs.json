@@ -1,0 +1,32 @@
+[
+  {
+    "path": "pages/alliance/leadership/members.md",
+    "source_url": "https://cheri-alliance.github.io/alliance/leadership/members/",
+    "broken_reference": "https://cheri-alliance.github.io/assets/images/thumbnails/members/pa-consulting.webp",
+    "source_http_status": 404,
+    "replacement_original_url": "https://cheri-alliance.org/wp-content/uploads/2026/09/Pa-logo-1024x908.png",
+    "local_path": "assets/organisations/pa-consulting/8aba894151f8-logo.png",
+    "evidence": "Same PA Consulting member organisation; original source logo is reused without another binary copy",
+    "status": "repaired-from-same-entity-source"
+  },
+  {
+    "path": "_organisations/pa-consulting.md",
+    "source_url": "https://cheri-alliance.github.io/members/pa-consulting/",
+    "broken_reference": "https://cheri-alliance.github.io/assets/images/content/members/pa-consulting/logo.png",
+    "source_http_status": 404,
+    "replacement_original_url": "https://cheri-alliance.org/wp-content/uploads/2026/09/Pa-logo-1024x908.png",
+    "local_path": "assets/organisations/pa-consulting/8aba894151f8-logo.png",
+    "evidence": "Same PA Consulting member organisation; original WordPress profile explicitly labels this asset PA Consulting logo",
+    "status": "repaired-from-same-entity-source"
+  },
+  {
+    "path": "_news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay.md",
+    "source_url": "https://cheri-alliance.github.io/news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/",
+    "broken_reference": "https://cheri-alliance.github.io/assets/images/content/events/cheri-tech-conference-2025/hero.png",
+    "source_http_status": 404,
+    "replacement_original_url": "https://cheri-alliance.github.io/assets/images/thumbnails/events/cheritech25.webp",
+    "local_path": "assets/events/cheritech25/0e6d3180c4d1-cheritech25.webp",
+    "evidence": "Article is about the CHERITech25 Conference; reuse the original image published on that event's own page",
+    "status": "repaired-from-same-entity-source"
+  }
+]

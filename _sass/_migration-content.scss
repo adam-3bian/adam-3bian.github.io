@@ -1,0 +1,31 @@
+// Retain browser-backed image alignment while adopting the starter's theme.
+.content .image-inline.image-left, .content .image-inline.image-right {
+  display: inline;
+  float: none;
+  height: auto;
+  margin: 0;
+  max-height: none;
+  max-width: 100%;
+  width: auto;
+}
+.content img.image-full { width: auto; }
+.content .page-hero-summary { font-size: $font-size-lede; }
+.content .source-breadcrumbs {
+  color: var(--colour-muted);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: $font-size-meta;
+  gap: $space-3;
+  list-style: none;
+  padding-left: 0;
+}
+.content .entity-facts { clear: both; }
+.content .entity-facts dt { font-weight: $font-weight-semibold; }
+.content .entity-facts dd { margin: 0 0 $space-3; }
+.related-content { clear: both; margin-top: $subsection-gap; }
+.related-content > h2 { margin-bottom: $space-5; }
+.source-card-grid { display: grid; gap: $card-gap; grid-template-columns: minmax(0, 1fr); }
+.source-card-grid .card { display: flex; flex-direction: column; }
+.source-card-grid .card > * + * { margin-top: $space-3; }
+.source-card-grid .card img { height: auto; max-height: 16rem; object-fit: contain; width: 100%; }
+@media (min-width: $desktop-breakpoint) { .source-card-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }

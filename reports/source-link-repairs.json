@@ -1,0 +1,20 @@
+[
+  {
+    "source_reference": "https://cheri-alliance.github.io/events/cheri-blossoms-conference-2026/#recordings-slides",
+    "canonical_target": "/events/cheri-blossoms-conference-2026/#recordings--slides",
+    "changed_paths": [
+      "_events/cheri-blossoms-conference-2026.md"
+    ],
+    "evidence": "Existing source heading ID; original source fragment has no target",
+    "status": "repaired"
+  },
+  {
+    "source_reference": "https://cheri-alliance.github.io/events/cybersecurity-by-design-conference-2024/#talks",
+    "canonical_target": "/events/cybersecurity-by-design-conference-2024/#talks--slides",
+    "changed_paths": [
+      "_events/cybersecurity-by-design-conference-2024.md"
+    ],
+    "evidence": "Existing source heading ID; original source fragment has no target",
+    "status": "repaired"
+  }
+]

@@ -1,0 +1,41 @@
+<ul class="cards columns-{{ include.columns | default: 3 }}" aria-label="{{ include.label | escape }}">
+  {% for item in include.items %}
+    {% unless item.collection == 'redirects' or item.redirect_to or item.redirect %}
+    <li>
+      {% assign link_target = item.target | default: '' | strip %}
+      {% assign link_rel = item.rel | default: '' | strip %}
+      {% if link_target == '_blank' %}
+        {% assign rel_tokens = link_rel | split: ' ' %}
+        {% unless rel_tokens contains 'noopener' %}{% assign link_rel = link_rel | append: ' noopener' %}{% endunless %}
+        {% unless rel_tokens contains 'noreferrer' %}{% assign link_rel = link_rel | append: ' noreferrer' %}{% endunless %}
+      {% endif %}
+      {% assign link_url = item.url %}
+      {% assign url_prefix = link_url | slice: 0, 2 %}
+      {% assign url_first = link_url | slice: 0, 1 %}
+      {% unless link_url contains ':' or url_prefix == '//' or url_first == '#' %}
+        {% assign link_url = link_url | relative_url %}
+      {% endunless %}
+      <a class="card" href="{{ link_url | escape }}"{% if link_target != '' %} target="{{ link_target | escape }}"{% endif %}{% if link_rel != '' %} rel="{{ link_rel | strip | escape }}"{% endif %}{% if link_target == '_blank' %} title="Opens in a new tab"{% endif %}>
+        {% if item.thumbnail.src %}
+        <span class="card-media{% if item.collection == 'events' or item.collection == 'posts' or item.collection == 'news' %} card-media-landscape{% endif %}">
+          {% assign image_url = item.thumbnail.src %}
+          {% assign url_prefix = image_url | slice: 0, 2 %}
+          {% assign url_first = image_url | slice: 0, 1 %}
+          {% unless image_url contains ':' or url_prefix == '//' or url_first == '#' %}
+            {% assign image_url = image_url | relative_url %}
+          {% endunless %}
+          <img src="{{ image_url | escape }}" alt="{{ item.thumbnail.alt | escape }}" class="card-image{% if item.thumbnail.fit == 'contain' %} image-contain{% endif %}{% if item.thumbnail.position == 'left' %} image-crop-left{% elsif item.thumbnail.position == 'right' %} image-crop-right{% endif %}"{% if item.thumbnail.width %} width="{{ item.thumbnail.width | escape }}"{% endif %}{% if item.thumbnail.height %} height="{{ item.thumbnail.height | escape }}"{% endif %} loading="lazy">
+        </span>
+        {% endif %}
+        {% if include.heading == 'h3' %}<h3>{{ item.title | escape }}</h3>{% else %}<h2>{{ item.title | escape }}</h2>{% endif %}
+        {% unless include.compact %}
+          {% if item.date %}<span class="meta">
+            <time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: '%-d %B %Y' }}</time>{% if item['end-date'] %} &ndash; <time datetime="{{ item['end-date'] | date_to_xmlschema }}">{{ item['end-date'] | date: '%-d %B %Y' }}</time>{% endif %}
+          </span>{% endif %}
+          <span class="card-action">{{ include.action | default: 'Read more' | escape }} &rarr;</span>
+        {% endunless %}
+      </a>
+    </li>
+    {% endunless %}
+  {% endfor %}
+</ul>

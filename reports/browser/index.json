@@ -1162,5 +1162,29 @@
     "status": "captured",
     "evidence_path": "reports/browser/34b3566841a69551",
     "failed_resource_count": 0
+  },
+  {
+    "url": "https://cheri-alliance.org/member/hildebrand/",
+    "status": "captured",
+    "evidence_path": "reports/browser/dcc149cc90a8516a",
+    "failed_resource_count": 2
+  },
+  {
+    "url": "https://cheri-alliance.org/beyond-software-patching/",
+    "status": "captured",
+    "evidence_path": "reports/browser/46228374314e7a18",
+    "failed_resource_count": 2
+  },
+  {
+    "url": "https://cheri-alliance.org/cheri-tag-bit-transport-overlay-standard-version-0-9-released/",
+    "status": "captured",
+    "evidence_path": "reports/browser/4c430499f1470d74",
+    "failed_resource_count": 2
+  },
+  {
+    "url": "https://cheri-alliance.org/cheri-zephyr-v0-4-0-release/",
+    "status": "captured",
+    "evidence_path": "reports/browser/fcc71da32469ddd1",
+    "failed_resource_count": 7
   }
 ]

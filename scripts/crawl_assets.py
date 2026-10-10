@@ -7,7 +7,6 @@ from urllib.robotparser import RobotFileParser
 from urllib.error import HTTPError
 import xml.etree.ElementTree as ET
 from PIL import Image
-import yaml
 from capture import ROOT,request,STAMP,UA
 
 STOP=False
@@ -15,9 +14,9 @@ def stop(*_):
  global STOP;STOP=True
 
 def owner(url,refs):
- paper_path=ROOT/'_data/papers.yml'
+ paper_path=ROOT/'reports/paper-sources.json'
  if paper_path.exists():
-  for slug,paper in yaml.safe_load(paper_path.read_text()).items():
+  for slug,paper in json.loads(paper_path.read_text()).items():
    if paper.get('publication_url')==url:return 'papers',slug,'Explicit publication link on the source paper catalogue entry'
  path=urlsplit(url).path
  match=re.search(r'/assets/images/(?:content|thumbnails)/(people|news|events|members|products|shared)/([^/]+?)(?:/|\.[A-Za-z0-9]+$)',path)

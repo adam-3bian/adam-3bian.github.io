@@ -5539,7 +5539,8 @@
       "https://cheri-alliance.github.io/events/cheritech25/",
       "https://cheri-alliance.github.io/events/cheritech26/",
       "https://cheri-alliance.github.io/news-and-events/events-and-archive/cheritech/",
-      "https://cheri-alliance.github.io/news-and-events/events-and-archive/past-events/"
+      "https://cheri-alliance.github.io/news-and-events/events-and-archive/past-events/",
+      "https://cheri-alliance.github.io/news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/"
     ],
     "owning_entity": "events/cheritech25",
     "ownership_evidence": "Original asset path names owner; page references retained",
@@ -10241,5 +10242,179 @@
     "final_url": "https://cheri-alliance.org/wp-content/uploads/2026/09/What-Is-Memory-Safety-v0.9.pdf",
     "acquisition_method": "reuse-captured-public-binary-response",
     "image_role": "download"
+  },
+  "https://cheri-alliance.org/wp-content/uploads/2026/09/hildebrandlogo-1024x177.png": {
+    "source_url": "https://cheri-alliance.org/wp-content/uploads/2026/09/hildebrandlogo-1024x177.png",
+    "owning_entity": "organisations/hildebrand",
+    "referencing_urls": [
+      "https://cheri-alliance.org/member/hildebrand/"
+    ],
+    "download_status": "downloaded",
+    "verification_status": "integrity-checked",
+    "browser_dimensions": "800x138",
+    "local_path": "assets/organisations/hildebrand/80cf16d93e-hildebrandlogo-1024x177.png",
+    "sha256": "a5f7aa24ff0878dfa4cd9899737d76280886d0de8a76a357498f356d91b88f64",
+    "http_status": 200,
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2026/09/hildebrandlogo-1024x177.png",
+    "content_type": "image/png",
+    "retrieved_at": "2026-10-10T01:09:29.352534+00:00",
+    "original_dimensions": "1024x177",
+    "image_role": "image-full",
+    "layout_evidence": "reports/browser/dcc149cc90a8516a/source-layout.json",
+    "ownership_evidence": "https://cheri-alliance.org/member/hildebrand/ \u2014 Source article image"
+  },
+  "https://cheri-alliance.org/wp-content/uploads/2023/10/cheri-logo.png": {
+    "source_url": "https://cheri-alliance.org/wp-content/uploads/2023/10/cheri-logo.png",
+    "owning_entity": "news/beyond-software-patching",
+    "referencing_urls": [
+      "https://cheri-alliance.org/beyond-software-patching/"
+    ],
+    "download_status": "downloaded",
+    "verification_status": "integrity-checked",
+    "local_path": "assets/news/beyond-software-patching/bb1ce7a6a7-cheri-logo.png",
+    "sha256": "d175f8085be9482652762db5e468d6569226d32572cac03c6b97ed915183ad15",
+    "http_status": 200,
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2023/10/cheri-logo.png",
+    "content_type": "image/png",
+    "retrieved_at": "2026-10-10T01:06:03.288931+00:00",
+    "original_dimensions": "432x145",
+    "image_role": "image-full",
+    "layout_evidence": "reports/browser/46228374314e7a18/source-layout.json",
+    "ownership_evidence": "https://cheri-alliance.org/beyond-software-patching/ \u2014 Source article image"
+  },
+  "https://cheri-alliance.org/wp-content/uploads/2026/09/beyond_software_patching_blog_1.png": {
+    "source_url": "https://cheri-alliance.org/wp-content/uploads/2026/09/beyond_software_patching_blog_1.png",
+    "owning_entity": "news/beyond-software-patching",
+    "referencing_urls": [
+      "https://cheri-alliance.org/beyond-software-patching/"
+    ],
+    "download_status": "downloaded",
+    "verification_status": "integrity-checked",
+    "local_path": "assets/news/beyond-software-patching/80ee4d1338-beyond_software_patching_blog_1.png",
+    "sha256": "d3979a6194fd563e314769ffe3e1ee43ffc3778b51374ddc71573e1349dc24ce",
+    "http_status": 200,
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2026/09/beyond_software_patching_blog_1.png",
+    "content_type": "image/png",
+    "retrieved_at": "2026-10-10T01:06:13.620570+00:00",
+    "original_dimensions": "955x537",
+    "image_role": "image-full",
+    "layout_evidence": "reports/browser/46228374314e7a18/source-layout.json",
+    "ownership_evidence": "https://cheri-alliance.org/beyond-software-patching/ \u2014 Source article image"
+  },
+  "https://cheri-alliance.org/wp-content/uploads/2026/09/Picture1.png": {
+    "source_url": "https://cheri-alliance.org/wp-content/uploads/2026/09/Picture1.png",
+    "owning_entity": "news/beyond-software-patching",
+    "referencing_urls": [
+      "https://cheri-alliance.org/beyond-software-patching/"
+    ],
+    "download_status": "downloaded",
+    "verification_status": "integrity-checked",
+    "local_path": "assets/news/beyond-software-patching/dea3b9883d-Picture1.png",
+    "sha256": "cb5d6f93ac3f24299033f510241f73b377a908f7ccee3c8337b965ef9b40bf77",
+    "http_status": 200,
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2026/09/Picture1.png",
+    "content_type": "image/png",
+    "retrieved_at": "2026-10-10T01:06:24.080750+00:00",
+    "original_dimensions": "1426x797",
+    "image_role": "image-full",
+    "layout_evidence": "reports/browser/46228374314e7a18/source-layout.json",
+    "ownership_evidence": "https://cheri-alliance.org/beyond-software-patching/ \u2014 Source article image"
+  },
+  "https://cheri-alliance.org/wp-content/uploads/2026/09/Picture2.png": {
+    "source_url": "https://cheri-alliance.org/wp-content/uploads/2026/09/Picture2.png",
+    "owning_entity": "news/beyond-software-patching",
+    "referencing_urls": [
+      "https://cheri-alliance.org/beyond-software-patching/"
+    ],
+    "download_status": "downloaded",
+    "verification_status": "integrity-checked",
+    "browser_dimensions": "1435x479",
+    "local_path": "assets/news/beyond-software-patching/d1b9354a30-Picture2.png",
+    "sha256": "89531d915205b96ec84fc75d6d9d3e4f9def95447435e0b344ae712898a127ef",
+    "http_status": 200,
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2026/09/Picture2.png",
+    "content_type": "image/png",
+    "retrieved_at": "2026-10-10T01:09:39.651460+00:00",
+    "original_dimensions": "1435x479",
+    "image_role": "image-full",
+    "layout_evidence": "reports/browser/46228374314e7a18/source-layout.json",
+    "ownership_evidence": "https://cheri-alliance.org/beyond-software-patching/ \u2014 Source article image"
+  },
+  "https://cheri-alliance.org/wp-content/uploads/2026/09/Picture3.png": {
+    "source_url": "https://cheri-alliance.org/wp-content/uploads/2026/09/Picture3.png",
+    "owning_entity": "news/beyond-software-patching",
+    "referencing_urls": [
+      "https://cheri-alliance.org/beyond-software-patching/"
+    ],
+    "download_status": "downloaded",
+    "verification_status": "integrity-checked",
+    "browser_dimensions": "1402x469",
+    "local_path": "assets/news/beyond-software-patching/cef8c62f96-Picture3.png",
+    "sha256": "b3a47d95d4b1f3d35c6ad12816ba332de1f738bdab0c01e921f55173aa32828b",
+    "http_status": 200,
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2026/09/Picture3.png",
+    "content_type": "image/png",
+    "retrieved_at": "2026-10-10T01:09:49.832351+00:00",
+    "original_dimensions": "1402x469",
+    "image_role": "image-full",
+    "layout_evidence": "reports/browser/46228374314e7a18/source-layout.json",
+    "ownership_evidence": "https://cheri-alliance.org/beyond-software-patching/ \u2014 Source article image"
+  },
+  "https://cheri-alliance.org/wp-content/uploads/2026/09/CHERITagBitTransportOverlayStandardBlogImage-2.png": {
+    "source_url": "https://cheri-alliance.org/wp-content/uploads/2026/09/CHERITagBitTransportOverlayStandardBlogImage-2.png",
+    "owning_entity": "news/cheri-tag-bit-transport-overlay-standard-version-0-9-released",
+    "referencing_urls": [
+      "https://cheri-alliance.org/cheri-tag-bit-transport-overlay-standard-version-0-9-released/"
+    ],
+    "download_status": "downloaded",
+    "verification_status": "integrity-checked",
+    "browser_dimensions": "1439x468",
+    "local_path": "assets/news/cheri-tag-bit-transport-overlay-standard-version-0-9-released/c2fe66ccfd-CHERITagBitTransportOverlayStandardBlogImage-2.png",
+    "sha256": "7b97ea756745c82a8a39b70d68e4b034c5990041c47acfba1717088d4067b062",
+    "http_status": 200,
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2026/09/CHERITagBitTransportOverlayStandardBlogImage-2.png",
+    "content_type": "image/png",
+    "retrieved_at": "2026-10-10T01:10:00.034571+00:00",
+    "original_dimensions": "1536x500",
+    "image_role": "image-full",
+    "layout_evidence": "reports/browser/4c430499f1470d74/source-layout.json",
+    "ownership_evidence": "https://cheri-alliance.org/cheri-tag-bit-transport-overlay-standard-version-0-9-released/ \u2014 Source article image"
+  },
+  "https://cheri-alliance.org/wp-content/uploads/2026/09/zephyr_buffer_overflow.jpg": {
+    "source_url": "https://cheri-alliance.org/wp-content/uploads/2026/09/zephyr_buffer_overflow.jpg",
+    "owning_entity": "news/cheri-zephyr-v0-4-0-release",
+    "referencing_urls": [
+      "https://cheri-alliance.org/cheri-zephyr-v0-4-0-release/"
+    ],
+    "download_status": "downloaded",
+    "verification_status": "integrity-checked",
+    "local_path": "assets/news/cheri-zephyr-v0-4-0-release/fc61421e7d-zephyr_buffer_overflow.jpg",
+    "sha256": "894a193ddbd324c3a2c9bcfc1178d298330eb3db96b31975b2def831f4e8b26a",
+    "http_status": 200,
+    "final_url": "https://cheri-alliance.org/wp-content/uploads/2026/09/zephyr_buffer_overflow.jpg",
+    "content_type": "image/jpeg",
+    "retrieved_at": "2026-10-10T01:07:05.394309+00:00",
+    "original_dimensions": "510x500",
+    "image_role": "image-full",
+    "layout_evidence": "reports/browser/fcc71da32469ddd1/source-layout.json",
+    "ownership_evidence": "https://cheri-alliance.org/cheri-zephyr-v0-4-0-release/ \u2014 Source article image"
+  },
+  "https://cheri-alliance.org/wp-content/uploads/2026/09/Pa-logo-1024x908.png": {
+    "source_url": "https://cheri-alliance.org/wp-content/uploads/2026/09/Pa-logo-1024x908.png",
+    "local_path": "assets/organisations/pa-consulting/8aba894151f8-logo.png",
+    "sha256": "8aba894151f81b5e517bb6360b6ec502307ffa2c944aed2f189b39d204762849",
+    "owning_entity": "organisations/pa-consulting",
+    "referencing_urls": [
+      "https://cheri-alliance.github.io/alliance/leadership/members/",
+      "https://cheri-alliance.github.io/members/pa-consulting/",
+      "https://cheri-alliance.org/member/pa-consulting/"
+    ],
+    "download_status": "downloaded",
+    "verification_status": "integrity-checked",
+    "original_dimensions": "1024x908",
+    "http_status": 200,
+    "content_type": "image/png",
+    "retrieved_at": "2026-10-10T01:18:14.001551+00:00",
+    "ownership_evidence": "Published PA Consulting member profile labels this original asset PA Consulting logo"
   }
 }

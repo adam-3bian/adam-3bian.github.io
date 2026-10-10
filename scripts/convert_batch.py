@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup, NavigableString, Comment
 from markdownify import MarkdownConverter
 from capture import ROOT, write_csv
 from state import update_conversion,CONVERSION_FIELDS
+from site_model import document, collections, canonical_url, canonical_signature
 
 class Converter(MarkdownConverter):
     """Editorial content uses Kramdown only; presentation belongs to layouts."""
@@ -110,7 +111,10 @@ class Converter(MarkdownConverter):
         if code:
             language=next((c[len('language-'):] for c in code.get('class',[]) if c.startswith('language-')),'')
         return '\n\n'+fence+language+'\n'+value.rstrip('\n')+'\n'+fence+'\n\n'
+    def convert_figcaption(self,el,text,parent_tags):
+        return '\n\n'+text.strip()+self.attributes(el,('image-caption',))+'\n\n'
     def convert_span(self,el,text,parent_tags):
+        if 'elementor-post-info__item' in el.get('class',[]):return ' '.join(text.split())
         if 'collection-tag' in el.get('class',[]):return '*'+text.strip()+'*{: .collection-tag }'
         return text
     def convert_time(self,el,text,parent_tags):return '*'+text.strip()+'*{: .source-date }'
@@ -139,6 +143,7 @@ def text(node):return normalized(meaningful_text(node))
 def semantic_dom(soup):
     """Normalize equivalent paragraph containers, never their content or order."""
     soup=BeautifulSoup(str(soup),'html5lib')
+    for caption in soup.select('figcaption'):caption.name='p'
     for node in soup.select('div,nav'):
         if node.get_text(strip=True) and not node.select('p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dt,dd,pre,blockquote,table,div,section,article,figure'):
             node.name='p'
@@ -189,6 +194,8 @@ def main():
     records={r['url']:r for r in index['records']};checks=[]
     decisions=json.loads((ROOT/'reports/layout-decisions.json').read_text()) if (ROOT/'reports/layout-decisions.json').exists() else {}
     assets=json.loads((ROOT/'reports/asset-index.json').read_text()) if (ROOT/'reports/asset-index.json').exists() else {}
+    routes=json.loads((ROOT/'reports/route-map.json').read_text()) if (ROOT/'reports/route-map.json').exists() else {}
+    downloaded={a['local_path']:a for a in assets.values() if a.get('download_status')=='downloaded'}
     for url in urls:
         if urlsplit(url).query:raise ValueError('Convert the canonical page, not a query alias: '+url)
         record=records[url]; raw=(ROOT/record['snapshot_path']).read_bytes()
@@ -200,6 +207,9 @@ def main():
         for el in main_content.select('img[src],a[href]'):
             attr='src' if el.name=='img' else 'href';original=el[attr]
             asset=assets.get(original)
+            # Keep declared same-entity repairs when reconverting a source with a 404 image.
+            replacement=next((local.lstrip('/') for local,source_url in record.get('asset_mapping',{}).items() if source_url==original),None)
+            if replacement in downloaded:asset=downloaded[replacement]
             if el.name=='img' and (not asset or asset.get('download_status')!='downloaded'):
                 if not asset or asset.get('http_status')!=404:raise ValueError(f'Missing original image asset: {original}')
                 decision=decisions.get(url,{}).get(original)
@@ -214,32 +224,38 @@ def main():
                     if not decision:raise ValueError('Image lacks page-specific browser layout evidence: '+original)
                     image_classes[el[attr]]=decision['class'];inline_images[el[attr]]=decision.get('inline',False)
         markdown=Converter(heading_style='ATX',bullets='-',strong_em_symbol='*',escape_misc=True,autolinks=False,image_classes=image_classes,inline_images=inline_images).convert_soup(main_content)
+        markdown=re.sub(r'(\]\()([^\n)]+)(\))',lambda m:m[1]+canonical_url(m[2],routes)+m[3],markdown)
         # Render the Markdown and compare against the immutable source before saving.
         rendered=subprocess.run([str(ROOT/'scripts/ruby.sh'),str(ROOT/'scripts/render.rb')],input=markdown,text=True,capture_output=True,check=True).stdout
-        target=signature(BeautifulSoup(rendered,'html.parser'),mappings)
-        differences={key:{'source':source[key],'output':target[key]} for key in source if source[key]!=target[key]}
+        target=json.loads(json.dumps(signature(BeautifulSoup(rendered,'html.parser'),mappings)))
+        expected=canonical_signature(source,routes)
+        differences={key:{'source':expected[key],'output':target[key]} for key in source if expected[key]!=target[key]}
         host=urlsplit(url).hostname; relative=urlsplit(url).path.strip('/') or 'index'
         collection=content_collection(url,soup)
-        local=(ROOT/('_'+collection)/(host+'--'+relative.split('/')[-1]+'.md')) if collection else ROOT/'pages'/host/(relative+'.md')
         previous_local=record.get('local_path')
+        local=ROOT/previous_local if previous_local else ((ROOT/('_'+collection)/(relative.split('/')[-1]+'.md')) if collection else ROOT/'pages'/((('reference/' if relative.endswith('.html') else '')+relative)+'.md'))
+        if not previous_local and local.exists():
+            if host=='cheri-alliance.org':local=local.with_name(local.stem+'-original.md')
+            if local.exists():raise ValueError('Distinct source content needs an explicit canonical path: '+str(local))
         local.parent.mkdir(parents=True,exist_ok=True)
         title_node=main_content.select_one('h1') or soup.title
         title=title_node.get_text(' ',strip=True) if title_node else Path(urlsplit(url).path).name
-        route='/sources/'+host+('/html-pages/' if relative.endswith('.html') else '/')+relative+('' if relative.endswith('.html') else '/')
-        fm={'title':title,'layout':'source-github' if image_classes and host=='cheri-alliance.github.io' else 'source','permalink':route}
-        if relative=='alliance/leadership/governing-board':
-            members=[a['href'].rstrip('/').split('/')[-1] for a in main_content.select('a[href]') if '/people/' in urlsplit(a['href']).path]
-            if members:fm['members']=list(dict.fromkeys(members))
-        if collection=='people':
-            registry_path=ROOT/'_data/organisations.yml'
-            registry=yaml.safe_load(registry_path.read_text()) if registry_path.exists() else {}
+        canonical_collection=local.relative_to(ROOT).parts[0]
+        route=record.get('local_route') or ('/'+canonical_collection[1:]+'/'+local.stem+'/' if canonical_collection.startswith('_') else ('/' if relative=='index' else '/'+str(local.relative_to(ROOT/'pages')).removesuffix('.md')+('' if relative.endswith('.html') else '/')))
+        fm=document(str(local.relative_to(ROOT)))[0] if local.exists() else {'title':title}
+        for key in ('layout','source_url','slug'):fm.pop(key,None)
+        if canonical_collection.startswith('_'):fm.pop('permalink',None)
+        else:fm['permalink']=route
+        if canonical_collection=='_organisations' and urlsplit(url).path.startswith(('/members/','/member/')):fm['member']=True
+        if local.stem.endswith('-original'):fm['alternate']=True
+        if collection=='people' and 'organization' not in fm:
+            registry=collections()['organisations']
             for label in main_content.select('dt'):
                 value=label.find_next_sibling('dd')
                 if label.get_text(strip=True)=='Organisation' and value:
-                    matches=[slug for slug,organisation in registry.items() if organisation.get('title')==value.get_text(strip=True)]
+                    matches=[slug for slug,organisation in registry.items() if organisation['meta'].get('title')==value.get_text(strip=True)]
                     if len(matches)==1:fm['organization']=matches[0]
-        source_date=main_content.select_one('time[datetime]')
-        if collection=='news' and source_date:fm['date']=source_date['datetime']
+        if differences:raise ValueError(f'{url}: complete source comparison failed: {list(differences)}')
         local.write_text('---\n'+yaml.safe_dump(fm,sort_keys=False,allow_unicode=True)+'---\n\n'+markdown.strip()+'\n')
         if previous_local and previous_local!=str(local.relative_to(ROOT)):
             (ROOT/previous_local).unlink(missing_ok=True)
@@ -251,7 +267,7 @@ def main():
         (evidence/'comparison.json').write_text(json.dumps({'url':url,'selector':selector,'asset_mapping':mappings,'checks':{k:k not in differences for k in source},'differences':differences},ensure_ascii=False,indent=2)+'\n')
         checks.append({'url':url,'local_path':str(local.relative_to(ROOT)),'main_content_checks':'passed' if not differences else 'failed',
                        'failed_checks':','.join(differences),'source_selector':selector,'evidence_path':str(evidence.relative_to(ROOT)),
-                       'verification_status':'unverified','reason':'Shared chrome, complete asset/link routing and rendered layout not yet validated',
+                       'verification_status':'unverified','reason':'Reconverted body passed; build, relationship and browser checks must be refreshed',
                        'suspected_source_placeholder':bool(re.search(r'lorem ipsum|placeholder|coming soon|will appear',source['text'],re.I))})
         record.update(asset_mapping=mappings,local_path=str(local.relative_to(ROOT)),local_route=route,conversion_status='converted',verification_status='unverified',
                       reason_if_unresolved=checks[-1]['reason'],main_content_checks=checks[-1]['main_content_checks'])

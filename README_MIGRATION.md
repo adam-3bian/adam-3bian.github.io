@@ -4,7 +4,7 @@ Use this existing checkout; cloud tasks are isolated. The migration remains part
 
 ## Runtime and verification
 
-On the Debian 13 cloud environment, `scripts/setup.sh` installs pinned Python dependencies in `/workspace/cheri-migration-venv` and a private Ruby/Jekyll runtime in `/workspace/cheri-tools/ruby`. Debian package signatures/checksums and TLS validation remain enabled. Dependencies and retained tools are outside the checkout.
+On the Debian 13 cloud environment, `scripts/setup.sh` installs pinned Python dependencies in `/workspace/cheri-migration-venv` and a private Ruby/Jekyll runtime in `/workspace/cheri-tools/ruby`. Package signatures, checksums and TLS validation remain enabled. Retained tools and dependencies are outside the checkout.
 
 From the repository root:
 
@@ -13,42 +13,54 @@ scripts/setup.sh
 scripts/ruby.sh scripts/check_markdown.rb
 scripts/ruby.sh scripts/build.rb
 /workspace/cheri-migration-venv/bin/python scripts/check_build.py
+/workspace/cheri-migration-venv/bin/python scripts/check_site_links.py
 /workspace/cheri-migration-venv/bin/python scripts/check_entities.py
 /workspace/cheri-migration-venv/bin/python -m unittest discover -s tests -v
 python3 scripts/check_browser.py
 /workspace/cheri-migration-venv/bin/python scripts/report.py
 ```
 
-Validated runtime: Python 3.12, Ruby 3.3.8, Jekyll 4.3.4, Kramdown 2.5.1, Chromium 151.0.7922.173. Browser commands use the environment's installed Playwright and `/usr/bin/chromium`. Build and HTTP comparison work from the published semantic signatures without raw source HTML. Browser checks use published `source-layout.json`; new captures require access to the live sites.
+Validated runtime: Python 3.12, Ruby 3.3.8, Jekyll 4.3.4, Kramdown 2.5.1 and Chromium 151.0.7922.173. Browser commands use the environment's installed Playwright and `/usr/bin/chromium`. Build, HTTP, relationship and current-theme browser checks use published evidence without raw source HTML. `report.py` additionally audits locally retained raw snapshots and requires those files. Temporary local HTTP servers stop when checks finish; no persistent service is required.
 
-Chromium must trust the provided platform CA using its supported NSS database. This environment's existing `/home/agent/.pki/nssdb` was updated with `certutil -A` and the CA certificates from `/usr/local/share/ca-certificates/` after obtaining write permission. Preserve existing entries; initialize only an absent database. Do not disable TLS/certificate verification.
+Live source captures require Chromium to trust the platform CA through its supported NSS database. Preserve existing entries and request filesystem access if that database needs updating. Do not disable TLS verification.
 
-## Editorial content
+## Editorial content and theme
 
-All editorial files use YAML front matter and native Kramdown Markdown, with no embedded HTML or Liquid wrappers. The format audit inspects the parsed Markdown tree; literal HTML inside fenced code remains code. Collections and counts are listed in the root README and progress report. Shared layouts/plugins generate presentation HTML, including profile sidebars and article heroes.
+See [docs/AUTHORING.md](docs/AUTHORING.md) for minimal front matter, roles, IDs and relationships. `_data` contains only governing-board people IDs. Navigation belongs in `_config.yml`; provenance belongs in reports. The supplied starter's theme, styles, brand assets and navigation controls were integrated without its sample content. Its dependency manifest was not substituted for the working Jekyll runtime.
 
-The converter checks complete source bodies against rendered output: text order, headings/IDs, lists, definitions, code, table cells, links and images. HTML5 parsing preserves browser handling of malformed source HTML. Browser-derived image classes are stored in `reports/layout-decisions.json`. Source-backed registry relationships are separate from page content; no affiliations are guessed.
+Editorial files contain YAML front matter and native Kramdown, without embedded HTML or Liquid. Literal HTML inside fenced code remains code. Shared layouts and plugins generate presentation and reverse relationships. The requested theme supersedes earlier source pixel geometry comparisons; current browser checks exercise 15 representative routes at desktop and mobile sizes, including menus, image decoding, font loading, overflow and full visible source-body text.
+
+Deployment must run the custom Jekyll build so the relationship and presentation plugins execute. GitHub Pages' restricted native build does not load repository plugins; use a build workflow when deploying this theme. Pushing content to this repository does not itself replace either source website.
+
+Source signatures check complete bodies: text order, headings/IDs, paragraphs, lists, definitions, code, tables, links and original images. Canonical links, two broken source fragments and three source image repairs retain separate provenance. All rendered local routes, assets and anchors are checked; outbound links and every browser route have not been exhaustively validated.
 
 ## Resume acquisition and conversion
 
+Run acquisition only for a deliberate next batch:
+
 ```sh
-/workspace/cheri-migration-venv/bin/python scripts/capture.py --limit-per-site 250 --time-budget 600
+/workspace/cheri-migration-venv/bin/python scripts/capture.py --limit-per-site 250 --time-budget 180
 /workspace/cheri-migration-venv/bin/python scripts/report.py
-/workspace/cheri-migration-venv/bin/python scripts/crawl_assets.py --host cheri-alliance.github.io --time-budget 600
-python3 scripts/browser_capture.py scripts/browser-crawl-009.json
+/workspace/cheri-migration-venv/bin/python scripts/crawl_assets.py --host cheri-alliance.github.io --time-budget 180
+python3 scripts/browser_capture.py scripts/batch-012.json
 /workspace/cheri-migration-venv/bin/python scripts/classify_layouts.py
-/workspace/cheri-migration-venv/bin/python scripts/convert_batch.py scripts/batch-011.json
+/workspace/cheri-migration-venv/bin/python scripts/convert_batch.py scripts/batch-012.json
 /workspace/cheri-migration-venv/bin/python scripts/extract_papers.py
 ```
 
-Only run acquisition/conversion commands when their input snapshots exist. `sources/`, raw browser HTML/screenshots and temporary logs stay local and are ignored by Git. Published capture records keep timestamps, source URLs and SHA-256 hashes; `reports/validation/*/source-signature.json` preserves build comparison evidence. A fresh checkout must re-capture missing raw snapshots for conversion, not claim snapshots exist because their paths are listed. Successfully retained local snapshots are checksum-checked and reused.
+The example batch is already converted. New work needs a new URL list and source evidence; rerunning it checks conversion reproducibility. Converters preserve existing canonical paths and relationship front matter and write paper provenance to `reports/paper-sources.json`. New entities still require a source-backed role/relationship audit. `prepare_authoring.py` records the initial restructuring; it is not an everyday authoring command. A wholesale restructure requires reapplying and checking declared link/image repairs.
 
-The public crawler consults robots.txt, reads sitemaps and follows internal links, with one network worker per source and the original WordPress site's ten-second crawl delay. It checkpoints periodically and on graceful termination; use SIGINT/SIGTERM for restartable interruption. Static discovery does not prove exhaustive JavaScript/query coverage. Failed requests retain reasons and are not silently retried; preserve their earlier evidence before a diagnosed retry. `capture-index.json` is restart state, not proof of complete migration. Keep both origins separate.
+Raw `sources/`, browser HTML/screenshots and temporary logs remain local and ignored by Git. Published records retain timestamps, source URLs and SHA-256 hashes; `reports/validation/*/source-signature.json` preserves comparison evidence. A fresh checkout must recapture missing raw snapshots for conversion. Listed snapshot paths alone do not establish that files exist.
 
-`crawl_assets.py` retains original bytes, verifies file structure and deduplicates by SHA-256. Asset ownership follows source paths or explicit publication records. Source image 404s remain original references and reported exceptions. Paper entries reproduce the complete source catalogue; full external PDFs remain blocked by network policy. Poppins source CSS/fonts are local; derived font CSS rewrites only asset URLs.
+When raw snapshots are available, additional source checks are:
 
-The final declared batch covers all 372 converted source URL mappings. Incremental batches remain as acquisition history. All 382 editorial files pass format checks; 99 browser-backed profiles/articles pass desktop image geometry and visible-content checks. Additional collection source screenshots do not imply completed whole-page layout verification. Local navigation routing, remaining WordPress conversion/assets and full mobile/whole-site validation are still outstanding.
+```sh
+/workspace/cheri-migration-venv/bin/python scripts/check_source_content.py
+/workspace/cheri-migration-venv/bin/python scripts/check_live_sources.py
+```
 
-## Hardware and software collections
+The live check fetches one primary body per migrated file, uses one worker per host and honors the original site's ten-second delay. It records changed and failed pages separately. Full discovery follows robots.txt, sitemaps and internal links, checkpoints on interruption, and preserves failed-request history. Static queue exhaustion does not establish exhaustive JavaScript, query or pagination coverage.
 
-The user clarified that boards means hardware boards. Use `_hardware/` for hardware platforms, boards and processor cores, and `_software/` for operating systems, tools and simulators. Hardware product profiles join `_hardware/`; retain each original body and source route. The governing board is a standalone page under `pages/cheri-alliance.github.io/alliance/leadership/`, with its source-backed member registry retained in `_data/governing-board.yml`. Do not create a `_boards/` collection for governance.
+Asset acquisition retains original bytes, verifies file structure and deduplicates by SHA-256. Ownership follows explicit source paths/publication records. Original 404s remain recorded even when a separately documented same-entity image repair exists. Paper files reproduce complete catalogue entries; external PDFs remain unacquired. Local Poppins CSS/fonts remove the external font dependency.
+
+Current scope and limits are measured in [PROGRESS.md](PROGRESS.md). The original large archives remain unread; the user-selected live sites are the content sources. The smaller starter archive was inspected solely as the requested template.

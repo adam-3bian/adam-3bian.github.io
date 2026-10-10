@@ -1,0 +1,39 @@
+---
+title: Wind River Joins the CHERI Alliance
+date: '2026-04-21T13:14:00+01:00'
+---
+
+1. News &amp; Events
+2. News &amp; Analysis
+3. Wind River Joins the CHERI Alliance
+{: .source-breadcrumbs }
+
+# Wind River Joins the CHERI Alliance
+{: id="page-hero-title" .page-hero-title }
+
+We are pleased to welcome Wind River to the CHERI Alliance, marking another important step forward in building a more secure computing ecosystem. Building on its existing work with CHERI, Wind River was recently awarded a contract as part of a…
+{: .page-hero-summary }
+
+*21 April 2026*{: .source-date }
+*CHERI Alliance news*{: .collection-tag }
+*Ecosystem*{: .collection-tag }
+*Members*{: .collection-tag }
+{: .collection-detail__metadata .source-div-text }
+
+![Welcome Wind Rover - CHERI Alliance member](/assets/news/wind-river-joins-the-cheri-alliance/21bf3b105ad6-hero.png){: .image-full }
+{: .collection-detail__lead-image }
+
+We are pleased to welcome [Wind River](/organisations/wind-river/) to the CHERI Alliance, marking another important step forward in building a more secure computing ecosystem.
+
+Building on its existing work with CHERI, Wind River was recently awarded a contract as part of a strategic initiative led by Innovate UK and the Department for Science, Innovation and Technology to support the wider adoption of CHERI technology. As part of this effort, they will be working to port and extend the [VxWorks](https://www.windriver.com/products/embedded/vxworks) Real-Time Operating System (RTOS) and [Wind River Helix Virtualization Platform](https://www.windriver.com/products/embedded/helix) (Helix Platform) to leverage the CHERI architecture on RISC-V.
+
+The addition of Wind River is a significant boost to our mission to accelerate CHERI adoption. By combining proven, industry-grade software with CHERI’s hardware-enforced protections, we move closer to reducing entire classes of memory safety vulnerabilities across critical infrastructure and intelligent edge devices.
+
+We look forward to working with Wind River as part of the Alliance.
+
+
+
+[Read the full announcement in Wind River’s press release.](https://www.windriver.com/news/press/news-20260421)
+
+[Back to Latest News](/news-and-events/news-and-analysis/latest-news/)
+{: .collection-detail__back }

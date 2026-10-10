@@ -1,0 +1,34 @@
+.call-to-action .card {
+  align-items: center;
+  background: var(--colour-cta);
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-5 $space-8;
+}
+.call-to-action .card:is(:hover, :focus-visible) { background: var(--colour-cta-hover); }
+.call-to-action .card :is(h2, h3) { flex: 1 1 $onward-image-width; font-size: $font-size-cta; }
+.call-to-action .card-action { margin: 0; }
+.onward-image {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  width: $onward-image-width;
+}
+.site-call-to-action {
+  --colour-cta: var(--colour-subscribe-card);
+  --colour-cta-hover: var(--colour-subscribe-card-hover);
+  --colour-focus: var(--colour-subscribe-text);
+  background: var(--colour-subscribe-band);
+  margin-inline: auto;
+  max-width: $max-site;
+  padding: $section-gap-mobile $gutter-mobile;
+  width: 100%;
+}
+.site-call-to-action .card { color: var(--colour-subscribe-text); }
+@media (min-width: $desktop-breakpoint) {
+  .site-call-to-action { padding: $section-gap-desktop $gutter-desktop; }
+}
+@media (max-width: $desktop-breakpoint - 1px) {
+  .call-to-action .card-with-image { align-items: flex-start; flex-direction: column; }
+  .call-to-action .card-with-image h3 { flex-basis: auto; }
+}

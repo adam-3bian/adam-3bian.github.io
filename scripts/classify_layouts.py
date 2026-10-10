@@ -12,9 +12,11 @@ for row in json.loads((ROOT/'reports/browser/index.json').read_text()):
   r=im['rect'];body=im['body_rect'];classes=im['parent_classes'];role=None;rationale=None;inline=False
   if im['style']['float'] in {'left','right'}:role='image-'+im['style']['float'];rationale='Source computed CSS float'
   elif any(c.startswith('entity-media--') for c in classes) and r['x']+r['width']<=body['x']+3:role='image-left';rationale='Rendered entity media sidebar is to the left of the entity body'
+  elif 'wp-caption' in classes:
+   side=im.get('parent_style',{}).get('float');role='image-'+side if side in {'left','right'} else 'image-full';rationale='Source caption block computed float, or standalone non-floating media block'
   elif 'collection-detail__lead-image' in classes:role='image-full';rationale='Rendered article hero occupies its own full content media block'
   else:
-   node=next((n for n in dom.select('main img[src]') if urljoin(info['final_url'],n['src'])==im['url']),None)
+   node=next((n for n in dom.select('main img[src],body > div.elementor img[src]') if urljoin(info['final_url'],n['src'])==im['url']),None)
    if node and not node.parent.get_text(strip=True) and node.parent.name in {'figure','a','p','div','td','th'}:
     role='image-full';rationale='Rendered non-floating image occupies a separate media block; retain intrinsic size with max-width rather than stretching'
    elif node and node.parent.name in {'p','li','h1','h2','h3','h4','h5','h6'} and im['style']['display']=='inline':

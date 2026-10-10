@@ -1,0 +1,82 @@
+---
+title: 'Unlocking the Future: A Roadmap for CHERI Technology Advancement'
+date: '2025-05-27T10:16:10+01:00'
+---
+
+1. News &amp; Events
+2. News &amp; Analysis
+3. Unlocking the Future: A Roadmap for CHERI Technology Advancement
+{: .source-breadcrumbs }
+
+# Unlocking the Future: A Roadmap for CHERI Technology Advancement
+{: id="page-hero-title" .page-hero-title }
+
+Mike Eftimakis – CHERI Alliance In the rapidly evolving landscape of cybersecurity, the quest for robust and secure hardware foundations has never been more critical. A groundbreaking paper from the Defence Science and Technology Laboratory (DSTL) –…
+{: .page-hero-summary }
+
+*27 May 2025*{: .source-date }
+*CHERI Alliance news*{: .collection-tag }
+{: .collection-detail__metadata .source-div-text }
+
+![World map with binary code](/assets/news/unlocking-the-future-a-roadmap-for-cheri-technology-advancement/9e54b16eecb6-hero.png){: .image-full }
+{: .collection-detail__lead-image }
+
+Mike Eftimakis – ***CHERI Alliance***
+
+In the rapidly evolving landscape of cybersecurity, the quest for robust and secure hardware foundations has never been more critical. A groundbreaking paper from the Defence Science and Technology Laboratory (DSTL) – [Biting the CHERI bullet: Blockers, Enablers and Security Implications of CHERI in Defence](https://arxiv.org/pdf/2504.17904) –  sheds light on the transformative potential of CHERI (Capability Hardware Enhanced RISC Instructions) technology, offering a beacon of hope for enhancing cyber resilience. The paper described:
+
+- Issues with tools and maturity of development platforms
+- Knowledge premium to adopt CHERI
+- Benefits of CHERI
+
+This insightful study not only identifies the challenges faced during the adoption of CHERI but also help us chart a clear roadmap for future improvements, and acceleration of the adoption of the technology by the industry.:
+
+- Continued investment in software porting and enablement
+- Training and support of developers
+- Communication and promotion of the technology
+
+## About the paper
+{: id="about-the-paper" }
+
+The positive contributions of this paper are manifold. By meticulously evaluating CHERI through a 12-month assessment involving 15 teams from industry and academia, the DSTL paper provides a comprehensive understanding of the technology’s strengths and areas for improvement. It highlights the significant strides made in memory safety, the effectiveness of CHERI-enabled tools, and the improved code quality and security that CHERI brings to the table.
+
+Moreover, the paper’s findings have already sparked significant interest and action within the tech community. Codasip, a leading player in the field, has written a [compelling blog post](/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl/) discussing the recent advances in CHERI, emphasizing progress in stability, maturity, and accessibility. This growing momentum underscores the importance of the DSTL paper and its potential to drive widespread adoption of CHERI.
+
+As we delve deeper into the key findings and define a roadmap from the ideas extracted from the DSTL paper, we invite you to join us on this journey towards a more secure and resilient digital world. Together, we can unlock the full potential of CHERI technology and pave the way for a safer future.
+
+## Tools and maturity
+{: id="tools-and-maturity" }
+
+One of the primary challenges identified by DSTL, and that inhibit the smooth adoption of CHERI is the tool chain instability and lack of maturity at the time of the study. Teams struggled with the absence of familiar utilities, such as Integrated Development Environments (IDEs) and functional debuggers, and often had to resort to less efficient development methods, which complicated the development process. Performance of the early prototypes was also highlighted as a negative point. These topics have already been addressed in the Codasip paper and indeed a huge amount of work has already been done to provide stable tools and good development platforms. For example, the mention of a lack of temporal safety is now inaccurate: all specifications and actual implementations include it.
+
+That doesn’t mean that everything is in place yet! I will highlight that the work on tools and software continues and the CHERI Alliance is taking a proactive approach in getting all contributors to collaborate as part of its [working groups](/alliance/leadership/working-groups/). This is already leading to faster progress on major operating systems (Linux, FreeRTOS, Zephyr, seL4) as more people and companies join the effort. We need to continue and extend this collaboration to make sure that the Alliance helps reduce duplication of effort and therefore improves the efficiency of this porting activity.
+
+## Knowledge
+{: id="knowledge" }
+
+Since the DSTL teams were new to CHERI, they found the learning curve difficult, because of inaccurate or missing documentation, lack of guidance, and a shortage of comprehensive examples. Again, although much progress has been done made since then and it is still an area that needs to improve: there is no practical reason why using CHERI should be difficult.
+
+Furthermore, amongst the millions of software developers worldwide, there is a broad variety of expertise, especially about the lowest levels of memory management, even more as the focus of education has shifted to high-level languages like Python. This lack of background knowledge might make understanding of memory safety issues more difficult.
+
+This stimulates us to focus our energy on this “developer enablement”, where the CHERI Alliance would help get easier access to available documentation, but also create new content targeted towards different audiences. This is part of our mission to accelerate adoption of CHERI.
+
+The paper also highlights that technical debt in existing software was a critical issue, with teams encountering problems related to pointer size assumptions, new signal handling mechanisms, and the need to refactor legacy code to be handled by the latest tool versions. These challenges necessitated careful consideration and additional effort to ensure compatibility and stability. Even though some teams found the process of porting code to CHERI to be relatively straightforward, requiring minimal changes to their existing codebase, we definitely need to develop “CHERI adaption skills” as it will encourage more teams to adopt CHERI and reduce the effort and resources required for migration.
+
+Since one of the key values of CHERI resides in the ability to reuse existing software, it is crucial to train developers to understand how to best adapt and optimise code to run on CHERI systems. A lot of experience has been accumulated by the teams working on CHERI for the past years (and some for more than a decade!), and we need to find the best ways to transfer this knowledge to the industry. At the moment, the Alliance is solving this by facilitating collaboration between experienced CHERI developers and new ones within the working groups and the various networking opportunities, but we indeed need to find more scalable ways to train the teams that need to update thousands (or even millions) of different products.
+
+## CHERI Benefits
+{: id="cheri-benefits" }
+
+Despite these challenges, the DSTL paper also identifies several enablers that can facilitate the adoption and success of CHERI technology. One of the most significant enablers is the effectiveness of CHERI-enabled compilers and debuggers, which are notably more adept at detecting memory safety issues. These tools can significantly enhance the security and reliability of software developed for CHERI. Obviously, as this is the key benefit of CHERI, teams reported improved code quality and security as a result of adopting CHERI, thanks to its fine-grained memory protection capabilities.
+
+As part of its mission to popularise CHERI, the CHERI Alliance should definitely continue focusing on communicating the benefits of the technology, to all concerned audiences. The [marketing working group](/groups/marketing/) relies on the help and resources of the members of the Alliance, and will need to continue this evangelisation effort, while also adapting the message to different audiences. Again, a lot of energy needs to be spent there, but the benefit of a growing collaborative community is that its efforts get multiplied by the number of participating members… So we can only continue to encourage all motivated parties to [join our community](/alliance/membership/why-join/)!
+
+## Conculsion
+{: id="conculsion" }
+
+The DSTL paper provides valuable insights into the adoption of CHERI technology. By addressing the identified technical and knowledge blockers and highlighting the benefits of the technology, the CHERI Alliance can pave the way for wider adoption and improved security in hardware foundations.
+
+This paper stimulates us to further advance our initiatives and broaden the integration of “security by design” into products across all industry segments. The CHERI Alliance has only just started its mission of accelerating CHERI adoption, and we count on you to help us achieve this goal!
+
+[Back to Latest News](/news-and-events/news-and-analysis/latest-news/)
+{: .collection-detail__back }

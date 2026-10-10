@@ -1,0 +1,20 @@
+{
+  "url": "https://cheri-alliance.org/cheri-tag-bit-transport-overlay-standard-version-0-9-released/",
+  "selector": "body > div.elementor",
+  "asset_mapping": {
+    "/assets/news/cheri-tag-bit-transport-overlay-standard-version-0-9-released/c2fe66ccfd-CHERITagBitTransportOverlayStandardBlogImage-2.png": "https://cheri-alliance.org/wp-content/uploads/2026/09/CHERITagBitTransportOverlayStandardBlogImage-2.png",
+    "/assets/pages/discover--resources--documentation-and-guides/9bbe9f6de06c-cheri-tag-bit-transport-overlay-standard-v0.9.pdf": "https://cheri-alliance.org/cheri-tag-bit-transport-overlay-standard/"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

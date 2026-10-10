@@ -7,6 +7,7 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 from capture import ROOT, write_csv
 from convert_batch import signature
+from site_model import canonical_signature
 
 class QuietHandler(SimpleHTTPRequestHandler):
     def log_message(self,*args): pass
@@ -14,6 +15,7 @@ server=ThreadingHTTPServer(('127.0.0.1',0),partial(QuietHandler,directory=str(RO
 threading.Thread(target=server.serve_forever,daemon=True).start()
 try:
     rows=[]
+    routes=json.loads((ROOT/'reports/route-map.json').read_text()) if (ROOT/'reports/route-map.json').exists() else {}
     asset_index=json.loads((ROOT/'reports/asset-index.json').read_text()) if (ROOT/'reports/asset-index.json').exists() else {}
     for asset in asset_index.values():
         if asset.get('download_status')!='downloaded':continue
@@ -30,11 +32,11 @@ try:
         if row.get('conversion_status')!='converted':continue
         url=row['url']
         evidence=ROOT/'reports/validation'/__import__('hashlib').sha256(url.encode()).hexdigest()[:16]
-        expected=json.loads((evidence/'source-signature.json').read_text())
+        expected=canonical_signature(json.loads((evidence/'source-signature.json').read_text()),routes)
         with urllib.request.urlopen(f'http://127.0.0.1:{server.server_port}'+row['local_route']) as response:
             built=BeautifulSoup(response.read(),'html.parser')
             assert response.status==200
-            actual=json.loads(json.dumps(signature(built.select_one('main'),row.get('asset_mapping'))))
+            actual=json.loads(json.dumps(signature(built.select_one('[data-source-body]') or built.select_one('main'),row.get('asset_mapping'))))
             assert expected==actual,url
         rows.append({'url':url,'local_route':row['local_route'],'http_status':200,'built_content_checks':'passed'})
     paper_path=ROOT/'reports/paper-validation.json'
@@ -43,8 +45,8 @@ try:
         for paper in papers:
             with urllib.request.urlopen(f'http://127.0.0.1:{server.server_port}'+paper['local_route']) as response:
                 built=BeautifulSoup(response.read(),'html.parser')
-                actual=json.loads(json.dumps(signature(built.select_one('main'),paper.get('asset_mapping'))))
-                assert actual==paper['source_signature'],paper['slug']
+                actual=json.loads(json.dumps(signature(built.select_one('[data-source-body]') or built.select_one('main'),paper.get('asset_mapping'))))
+                assert actual==canonical_signature(paper['source_signature'],routes),paper['slug']
         print(f'PASS: {len(papers)} paper entry routes match complete source catalogue entries.')
     write_csv(ROOT/'reports/build-validation.csv',rows,list(rows[0]))
     print(f'PASS: {len(rows)} source URL mappings on {len(set(r["local_route"] for r in rows))} distinct routes served HTTP 200 and match captured main content; {sum(a.get('download_status')=='downloaded' for a in asset_index.values())} asset responses match original checksums.')

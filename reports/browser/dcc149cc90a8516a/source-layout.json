@@ -1,0 +1,70 @@
+{
+  "main_text": "All Members\nHildebrand\nMembership: Full Member\nDescription\nWe are a forward-thinking technology company dedicated to creating innovative solutions in the energy sector that transform how organisations operate and serve their communities.\nMember Website\nCHERI Activities\nEarly adopter and demonstrator; product launch targeted for 2027.\nOpen-source Assets for CHERI\nComing with product launch.",
+  "main_rect": {
+    "x": 0,
+    "y": 210.984375,
+    "width": 1440,
+    "height": 963
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.org/wp-content/uploads/2026/09/hildebrandlogo-1024x177.png",
+      "alt": "Hildebrand logo",
+      "rect": {
+        "x": 745,
+        "y": 459.984375,
+        "width": 545,
+        "height": 300
+      },
+      "natural_width": 800,
+      "natural_height": 138,
+      "style": {
+        "float": "none",
+        "display": "inline-block"
+      },
+      "parent": {
+        "x": 745,
+        "y": 459.984375,
+        "width": 545,
+        "height": 300
+      },
+      "parent_style": {
+        "float": "none",
+        "display": "inline-block"
+      },
+      "parent_classes": [],
+      "body_rect": {
+        "x": 0,
+        "y": 210.984375,
+        "width": 1440,
+        "height": 963
+      }
+    }
+  ],
+  "header_text": [
+    "WHO WE ARE\nMEMBERSHIP\nDISCOVER CHERI\nNEWS\nEVENTS\nCONTACT US\n\nHome » Members » Hildebrand",
+    "WHO WE ARE\nMEMBERSHIP\nDISCOVER CHERI\nNEWS\nEVENTS\nCONTACT US"
+  ],
+  "copyright_text": [],
+  "footer_text": [
+    "Subscribe to our newsletter\n\nLegal & Policies | Contact\n\nGithub\n \nLinkedin\n \nMastodon\n \nYoutube"
+  ],
+  "url": "https://cheri-alliance.org/member/hildebrand/",
+  "final_url": "https://cheri-alliance.org/member/hildebrand/",
+  "retrieved_at": "2026-10-10T01:08:19.537054+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": [
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=GT-NMJZHBHH",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "url": "https://events.cheri-alliance.org/widget.js",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    }
+  ]
+}

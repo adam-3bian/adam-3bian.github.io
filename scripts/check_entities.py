@@ -1,66 +1,79 @@
 #!/usr/bin/env python3
-"""Audit declared entity relationships against published source signatures."""
-import hashlib, json
+"""Audit canonical references, role flags and citations against source evidence."""
+import hashlib,json,re
 from pathlib import Path
-from urllib.parse import urlsplit
 import yaml
-from capture import ROOT, write_csv
-
-records = [r for r in json.loads((ROOT/'reports/capture-index.json').read_text())['records']
-           if r.get('conversion_status') == 'converted']
-by_url = {r['url']: r for r in records}
-organisations = yaml.safe_load((ROOT/'_data/organisations.yml').read_text())
-def frontmatter(path):
-    return yaml.safe_load((ROOT/path).read_text().split('---', 2)[1])
-def evidence(url):
-    path = 'reports/validation/' + hashlib.sha256(url.encode()).hexdigest()[:16] + '/source-signature.json'
-    return path, json.loads((ROOT/path).read_text())
-
-manifest, checks = [], []
-seen = set()
-for record in records:
-    path = record['local_path']
-    if path in seen: continue
-    seen.add(path)
-    meta = frontmatter(path)
-    ev, source = evidence(record['url'])
-    collection = Path(path).parts[0]
-    relationship = ''
-    if meta.get('organization'):
-        org = organisations[meta['organization']]
-        definitions = source['definitions']
-        assert any(definitions[i] == ['dt', 'Organisation'] and definitions[i+1] == ['dd', org['title']]
-                   for i in range(len(definitions)-1)), path
-        relationship = 'organization: ' + meta['organization']
-        checks.append({'path': path, 'relationship': relationship, 'evidence': ev, 'status': 'passed'})
-    manifest.append({'entity_slug': Path(path).stem, 'entity_type': collection.lstrip('_'),
-                     'source_url': record['url'], 'relationship': relationship,
-                     'relationship_evidence': ev, 'verification_status': 'source-backed'})
-for slug, org in organisations.items():
-    if not org.get('source_url'): continue
-    r = by_url[org['source_url']]
-    assert r['local_path'].startswith('_organisations/')
-    assert frontmatter(r['local_path'])['title'] == org['title']
-board = yaml.safe_load((ROOT/'_data/governing-board.yml').read_text())
-board_record = by_url[board[0]['source_url']]
-assert frontmatter(board_record['local_path'])['members'] == [m['person'] for m in board]
-for member in board:
-    ev, source = evidence(member['source_url'])
-    assert [member['profile_url'], member['name']] in source['links']
-    profile = by_url[member['profile_url']]
-    assert profile['local_path'].startswith('_people/')
-    assert frontmatter(profile['local_path'])['title'] == member['name']
-    assert urlsplit(member['profile_url']).path.strip('/').split('/')[-1] == member['person']
-    checks.append({'path': board_record['local_path'], 'relationship': 'member: '+member['person'],
-                   'evidence': ev, 'profile_path': profile['local_path'], 'status': 'passed'})
-papers = yaml.safe_load((ROOT/'_data/papers.yml').read_text())
-for slug, paper in papers.items():
-    meta = frontmatter(paper['local_path'])
-    assert meta['source_url'] == paper['publication_url']
-    manifest.append({'entity_slug': slug, 'entity_type': 'papers', 'source_url': paper['source_catalogue'],
-                     'relationship': 'publication: '+paper['publication_url'],
-                     'relationship_evidence': 'reports/paper-validation.json', 'verification_status': 'source-backed'})
-write_csv(ROOT/'reports/entity-manifest.csv', manifest,
-          ['entity_slug','entity_type','source_url','relationship','relationship_evidence','verification_status'])
+from capture import ROOT,write_csv
+from site_model import collections,document
+records=[r for r in json.loads((ROOT/'reports/capture-index.json').read_text())['records'] if r.get('conversion_status')=='converted']
+by_path={r['local_path']:r for r in records};by_url={r['url']:r for r in records}
+groups=collections();proofs=json.loads((ROOT/'reports/relationship-evidence.json').read_text())
+proof_index={(p['path'],p['field'],str(p['value'])):p for p in proofs}
+checks=[];manifest=[]
+def signature(row):
+    path='reports/validation/'+hashlib.sha256(row['url'].encode()).hexdigest()[:16]+'/source-signature.json'
+    return path,json.loads((ROOT/path).read_text())
+def refs(value):return value if isinstance(value,list) else [value] if value else []
+for group,items in groups.items():
+    for identifier,item in items.items():
+        path,meta=item['path'],item['meta']
+        assert 'cheri-alliance.' not in identifier,path
+        assert not any(key in meta for key in ('layout','source_url','slug')),path
+        relation_list=[]
+        for field,target_group in [('organization','organisations'),('speakers','people'),('authors','people')]:
+            values=refs(meta.get(field));assert len(values)==len(set(values)),path
+            for target in values:
+                assert target in groups[target_group],(path,field,target)
+                proof=proof_index[(path,field,str(target))]
+                if field=='organization':
+                    source=signature(by_url[proof['source_url']])[1]
+                    definitions=source['definitions']
+                    assert any(v==['dt','Organisation'] and definitions[i+1]==['dd',proof['published_label']] for i,v in enumerate(definitions[:-1]))
+                    assert proof['published_name'] in proof['published_label']
+                    assert proof['target_title']==groups['organisations'][target]['meta']['title']
+                elif field=='speakers':
+                    source=signature(by_url[proof['source_url']])[1]
+                    assert any(url.rstrip('/')==proof['profile_url'].rstrip('/') for url,label in source['links'])
+                elif field=='authors':
+                    paper=next(p for p in json.loads((ROOT/'reports/paper-validation.json').read_text()) if p['local_path']==path)
+                    assert proof['published_name'] in paper['named_authors']
+                    assert proof['published_name'] in paper['source_signature']['text']
+                checks.append({'path':path,'field':field,'target':target,'source_url':proof['source_url'],'status':'passed'})
+                relation_list.append(field+': '+target)
+        for role in ('member','speaker'):
+            if meta.get(role) is not None:
+                assert meta[role] is True,(path,role)
+                assert (path,role,'True') in proof_index or (role=='speaker' and any(p['field']=='speakers' and p['value']==identifier for p in proofs)),path
+                checks.append({'path':path,'field':role,'value':True,'status':'passed'})
+        row=by_path.get(path)
+        manifest.append({'entity_slug':identifier,'entity_type':group,'source_url':row['url'] if row else '',
+                         'relationship':' | '.join(relation_list),'relationship_evidence':'reports/relationship-evidence.json','verification_status':'source-backed'})
+board=yaml.safe_load((ROOT/'_data/governing-board.yml').read_text())
+assert all(isinstance(p,str) for p in board)
+assert len(board)==len(set(board))
+board_source=by_url['https://cheri-alliance.github.io/alliance/leadership/governing-board/']
+source=signature(board_source)[1]
+for person in board:
+    assert person in groups['people']
+    target=by_path[groups['people'][person]['path']]
+    assert [target['url'],groups['people'][person]['meta']['title']] in source['links']
+    checks.append({'path':'_data/governing-board.yml','field':'member','target':person,'status':'passed'})
+# Minimal records contain names actually published in an affiliation or a citation.
+for derived in json.loads((ROOT/'reports/derived-content.json').read_text()):
+    meta,body=document(derived['path']);assert meta=={'title':derived['title']},derived['path']
+    assert body.strip()=='# '+derived['title'],derived['path']
+    if derived['type']=='organisation-name':
+        source=signature(by_url[derived['source_url']])[1]
+        assert derived['title'] in derived['source_label']
+        assert derived['source_label'] in source['text']
+    else:
+        assert derived['title'] in derived['source_names']
+        for paper_id in derived['papers']:
+            assert Path(derived['path']).stem in groups['papers'][paper_id]['meta']['authors']
+            paper=next(p for p in json.loads((ROOT/'reports/paper-validation.json').read_text()) if p['slug']==paper_id)
+            assert any(name in paper['named_authors'] for name in derived['source_names'])
+    checks.append({'path':derived['path'],'scope':'Published name and derived links; no invented biography or affiliation','status':'passed'})
+assert [p.name for p in (ROOT/'_data').glob('*')]==['governing-board.yml']
+write_csv(ROOT/'reports/entity-manifest.csv',manifest,['entity_slug','entity_type','source_url','relationship','relationship_evidence','verification_status'])
 (ROOT/'reports/entity-validation.json').write_text(json.dumps(checks,indent=2)+'\n')
-print(f'PASS: {len(seen)} source entities, {len(papers)} paper records, {len(organisations)-1} organisation profiles and {len(checks)} explicit relationships.')
+print(f'PASS: {sum(len(v) for v in groups.values())} collection records, {len(checks)} reference/role/name checks and {len(board)} governing board references. Only governing-board.yml remains in _data.')

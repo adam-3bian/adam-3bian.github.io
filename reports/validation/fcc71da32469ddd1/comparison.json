@@ -1,0 +1,19 @@
+{
+  "url": "https://cheri-alliance.org/cheri-zephyr-v0-4-0-release/",
+  "selector": "body > div.elementor",
+  "asset_mapping": {
+    "/assets/news/cheri-zephyr-v0-4-0-release/fc61421e7d-zephyr_buffer_overflow.jpg": "https://cheri-alliance.org/wp-content/uploads/2026/09/zephyr_buffer_overflow.jpg"
+  },
+  "checks": {
+    "text": true,
+    "headings": true,
+    "paragraphs": true,
+    "lists": true,
+    "tables": true,
+    "links": true,
+    "images": true,
+    "definitions": true,
+    "code_blocks": true
+  },
+  "differences": {}
+}

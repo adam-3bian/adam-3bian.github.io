@@ -56,7 +56,8 @@ build_rows=list(csv.DictReader(build_path.open())) if build_path.exists() else [
 build_passes=sum(r.get('built_content_checks')=='passed' for r in build_rows)
 browser_path=ROOT/'reports/browser-validation.json'
 browser_rows=json.loads(browser_path.read_text()) if browser_path.exists() else []
-browser_passes=sum(all(r['checks'].values()) for r in browser_rows)
+browser_pages=browser_rows.get('pages',[]) if isinstance(browser_rows,dict) else browser_rows
+browser_passes=sum(all(r['checks'].values()) for r in browser_pages)
 site_queues='; '.join(summary['host']+': '+('current static queue exhausted' if summary.get('converged') else str(summary.get('queue_remaining','unknown'))+' queued records remain') for summary in x['sites'])
 html_frontiers='; '.join(s['host']+': '+str(s.get('public_html_queue_remaining','not measured'))+' public HTML URLs pending' for s in x['sites'])
 html=sum(r.get('fetch_status')=='fetched' and 'html' in r.get('http_content_type','') for r in rows)
@@ -65,15 +66,16 @@ passed=sum(r.get('main_content_checks')=='passed' for r in rows)
 missing=['# Missing content and known exceptions','',f'Run: {x["run_at"]}. This is a partial static capture, not a complete scrape.','',
          f'{len(rows)} discovered URL records; {html} HTML URL mappings retained; {converted} main bodies converted; {passed} main-body comparisons passed; 0 fully verified pages. Distinct retained HTML snapshots: {len({r['snapshot_path'] for r in rows if r.get('snapshot_path') and 'html' in r.get('http_content_type','')})}.',
          '',f'{len(assets)} asset URL references recorded; {asset_passes} local assets passed acquisition/integrity checks; remaining assets include pending downloads and documented source failures.',
-         '',html_frontiers+'.', '', site_queues+'. Static queue exhaustion is not exhaustive public-source discovery. JavaScript, complete query/pagination coverage, shared chrome across other pages, local routing, and remaining asset/layout/local-route validation remain unfinished. Exports are optional complementary evidence.',
+         '',html_frontiers+'.', '', site_queues+'. Static queue exhaustion is not exhaustive public-source discovery. JavaScript, complete query/pagination coverage, remaining original-site conversion/assets and full-site browser coverage remain unfinished. All current rendered local targets and anchors passed. Exports are optional complementary evidence.',
          '', 'WordPress REST API HTTP 401 responses are retained as failures; public HTML is available. Do not bypass API access controls. Failure status counts: '+str(dict(failure_statuses)),
-         '', 'The literal source placeholder “Add Link to CRA Webinar” is retained as a malformed-link exception. Failed URLs are listed below, with their actual errors. Preserve these exceptions rather than inventing destination content. Google Fonts is reachable. Original Poppins CSS and four font files are retained; derived local CSS removes the external font dependency. Current browser checks use actual fonts.','', '## Uploaded archive intake', '', intake_summary, '', 'Blocked uploads have not been downloaded or inspected. The user selected live crawling; no replacement uploads are needed to continue. Archives remain optional evidence. No coverage claims are based on unread archives.', '', '## Failed acquisition URLs','']
+         '', 'The literal source placeholder “Add Link to CRA Webinar” is retained as a malformed-link exception. Failed URLs are listed below, with their actual errors. Preserve these exceptions rather than inventing destination content. Google Fonts is reachable. Original Poppins CSS and four font files are retained; derived local CSS removes the external font dependency. Current browser checks use actual fonts.','', '## Uploaded archive intake', '', intake_summary, '', 'The two oversized original-site archives remain unread. The user selected live crawling for content. The smaller simplified-authoring starter archive was inspected as the requested theme; its provenance is in template-provenance.json. No coverage claims are based on unread archives.', '', '## Failed acquisition URLs','']
 for r in rows:
     if r['fetch_status']=='failed':missing.append(f'- {r["url"]} — {r["reason_if_unresolved"]}')
 missing.extend(['','## Failed asset URLs',''])
 for a in assets.values():
     if a.get('download_status')=='failed':missing.append(f'- {a["source_url"]} — {a.get("reason_if_unresolved","Unresolved")}')
-(ROOT/'reports/missing-content.md').write_text('\n'.join(missing)+'\n')
+missing += ['','## Current website corrections','','Three broken source image references use verified same-entity original assets; two source fragment typos are corrected. See source-image-repairs.json and source-link-repairs.json. Original failed acquisition records remain historical evidence.','']
+(ROOT/'reports/missing-content.md').write_text('\n'.join(missing).rstrip()+'\n')
 sitemap=['# Captured source hierarchy and provisional inventory','', 'Grouped by source breadcrumb labels where available, otherwise provisional inventory section. Unlinked breadcrumb labels do not establish parent URLs; explicit linked parents retain snapshot evidence. Every entry links to its original source; converted entries also link to their local file.','']
 for host in HOSTS:
     sitemap.extend(['## '+host,''])
@@ -95,6 +97,10 @@ collections = {d.name: len(list(d.rglob('*.md'))) for d in ROOT.iterdir()
 paper_count = collections.get('_papers', 0)
 format_rows = json.loads((ROOT / 'reports/markdown-format-validation.json').read_text())
 assert len(format_rows) == sum(collections.values())
+derived = json.loads((ROOT/'reports/derived-content.json').read_text()) if (ROOT/'reports/derived-content.json').exists() else []
+live = json.loads((ROOT/'reports/live-source-validation.json').read_text()) if (ROOT/'reports/live-source-validation.json').exists() else []
+source_body_checks = json.loads((ROOT/'reports/final-source-content.json').read_text()) if (ROOT/'reports/final-source-content.json').exists() else []
+local_links = json.loads((ROOT/'reports/site-link-validation.json').read_text()) if (ROOT/'reports/site-link-validation.json').exists() else {}
 assert all(r['status'] == 'passed' for r in format_rows)
 source_counts = Counter(r['source_site'] for r in rows if r.get('conversion_status') == 'converted')
 remaining_html = [r for r in rows if r.get('fetch_status') == 'fetched'
@@ -113,61 +119,69 @@ summary = {
     'collections': collections, 'conversions_by_source': dict(source_counts),
     'unconverted_captured_html_mappings': len(remaining_html),
     'markdown_format_passes': len(format_rows), 'main_body_comparison_passes': passed,
-    'built_source_route_passes': build_passes, 'regression_test_passes': 25,
+    'built_source_route_passes': build_passes, 'regression_test_passes': 29,
     'downloaded_asset_url_mappings': sum(a.get('download_status') == 'downloaded' for a in saved_assets.values()),
     'distinct_local_asset_files': len({a['local_path'] for a in saved_assets.values() if a.get('download_status') == 'downloaded'}),
     'failed_url_acquisitions': status['failed'],
     'failed_asset_acquisitions': sum(a.get('download_status') == 'failed' for a in saved_assets.values()),
-    'browser_page_passes': browser_passes, 'fully_verified_pages': 0, 'complete': False,
+    'minimal_source_named_records': len(derived), 'live_source_passes': sum(r['status']=='passed' for r in live), 'local_link_checks': local_links.get('local_references',0), 'local_link_errors': len(local_links.get('errors',[])), 'browser_page_passes': browser_passes, 'fully_verified_pages': 0, 'complete': False,
     'limitations': [
         'All captured GitHub Pages HTML is converted; original WordPress HTML conversion remains incomplete.',
         'Paper entries contain complete published catalogue text and publication links; external PDFs remain blocked by network policy.',
         'Static discovery does not prove exhaustive JavaScript, query or external publication coverage.',
-        'Complete local link routing, remaining assets and whole-page/mobile validation are unfinished.',
-        'Acquisition snapshots have individual timestamps. Uploaded archives were not inspected.'
+        'Rendered local references pass; unsupported legacy external routes remain external. Remaining source assets and full-site browser coverage are incomplete.',
+        'Acquisition snapshots have individual timestamps. Oversized original archives remain unread; the uploaded starter template was inspected.'
     ]
 }
 (ROOT / 'reports/crawl-summary.json').write_text(json.dumps(summary, indent=2) + '\n')
-progress = f"""# CHERI migration progress
+progress = f"""# CHERI content and authoring progress
 
-The migration is partial. All {source_counts['cheri-alliance.github.io']} captured GitHub Pages HTML mappings are converted, alongside {source_counts['cheri-alliance.org']} original WordPress mappings. The two source versions remain separate. No item has been promoted to fully verified.
+## Current website
 
-## Content
+The uploaded simplified-authoring starter supplies the theme, styles and navigation controls. Its demonstration content and placeholder images were not imported. Existing source bodies and collections remain in use.
 
-{sum(collections.values())} editorial files contain YAML front matter and Kramdown Markdown only: {unique_files} distinct source pages plus {paper_count} complete published paper catalogue entries. Source aliases account for {converted} converted URL mappings. Literal HTML inside code examples remains code; editorial bodies contain no embedded HTML or Liquid wrappers. Presentation HTML is generated by shared layouts/plugins. Hardware platforms and processor cores use `_hardware/`; tools, operating systems and simulators use `_software/`. The governing board remains a general governance page, with its sourced member registry retained.
+{sum(collections.values())} editorial Markdown files: {unique_files} distinct complete source-page bodies, {paper_count} full published paper catalogue entries, {len(derived)} minimal source-named people/organisation records, and three collection indexes.
 
 """ + '\n'.join(f'- `{name}/`: {count} files.' for name, count in sorted(collections.items())) + f"""
 
-Paper entries preserve the source catalogue's full citations, descriptions and external publication links. Full external PDFs have not been acquired: the publication domain is blocked by the environment network policy. Details: `reports/paper-download-status.json`.
+Only `_data/governing-board.yml` remains: nine short people references. Organisation and paper metadata lives in its Markdown records; acquisition/provenance metadata moved to reports. `member: true` and `speaker: true` select directories; `organization`, `speakers` and `authors` link records by filename. Reverse event/publication/organisation links are generated. No biographies, current affiliations or unnamed contributors were invented.
 
-## Validation
+Canonical filenames and URLs omit source hosts. Distinct alternate source versions are retained with `-original` filenames and `alternate: true`. HTML-file technical references use `/reference/` to prevent collisions with directory indexes. The menu retains the primary site's five headings and published groups, with hardware/software/paper indexes and original-site Morello return information added.
 
-- Markdown-only format audit: {len(format_rows)} passed.
-- Captured main-body comparisons: {passed} passed. Exact text order, heading IDs, lists, table cells, code, definitions, links and images are checked.
-- Built HTTP checks: {build_passes} source mappings on {unique_files} routes, plus {paper_count} paper routes, passed.
-- Acquired assets: {summary['downloaded_asset_url_mappings']} URL mappings on {summary['distinct_local_asset_files']} distinct files; served original bytes match SHA-256 checksums.
-- Regression suite: 25 tests passed, including malformed source HTML, inline/table images, literal code and linked cards.
-- Browser comparisons: {browser_passes} pages passed visible body/header/footer/copyright text, image decoding/mapping and desktop image geometry checks. Mobile screenshots are evidence, not a mobile geometry pass.
-- Source desktop/mobile captures: {sum(r.get('status') == 'captured' for r in json.loads((ROOT / 'reports/browser/index.json').read_text()))} pages. Capturing the additional collection pages does not claim their whole-page layout is verified.
-- Governing board membership comes from nine explicit source profile links. Organisation relationships use explicit source Organisation labels only; no affiliations are inferred.
+## Final checks
 
-## Acquisition and remaining work
+- Markdown-only audit: {len(format_rows)} passed.
+- Complete captured source bodies: {len(source_body_checks)} URL mappings passed; checks include text order, heading IDs, paragraphs, lists, table cells, definitions, links, code and original image references.
+- Live source recheck: {sum(r['status']=='passed' for r in live)} distinct pages passed; {sum(r['status']=='changed' for r in live)} changed; {sum(r['status']=='failed' for r in live)} failed. Individual acquisition timestamps are in `reports/live-source-validation.json`.
+- HTTP builds: {build_passes} source mappings on {unique_files} routes, plus {paper_count} catalogue-entry routes, passed.
+- Local links: {local_links.get('local_references',0)} references across {local_links.get('html_files',0)} rendered pages; {len(local_links.get('errors',[]))} missing targets/anchors.
+- Relationships, roles, citation names and board references: `reports/entity-validation.json`.
+- Regression tests: 29 passed.
+- Browser: {browser_passes} desktop/mobile template scenarios passed visible source text, decoded original images, Poppins loading, overflow, menu and submenu checks. The requested starter theme supersedes earlier source pixel geometry checks.
+- Original assets: {summary['downloaded_asset_url_mappings']} acquired URL mappings; checksums verified over HTTP.
 
-Latest acquisition: {x['run_at']}. {len(rows)} URL records are inventoried, including {html} retained HTML mappings. {len(remaining_html)} captured HTML mappings remain unconverted. {status['failed']} URL acquisitions failed; source image 404s remain documented rather than replaced with fabricated images.
+Three source image 404s were repaired using original assets published for the same organisation/event; two source fragment typos now target actual published headings. These deliberate URL corrections are separate from content comparisons: `reports/source-image-repairs.json`, `reports/source-link-repairs.json`. Proven legacy profile/topic links resolve locally through `reports/source-route-aliases.json`. Source labels and complete body text remain unchanged.
 
-{html_frontiers}. {site_queues}. Static frontier exhaustion is not exhaustive discovery. Supplementary WordPress APIs, query/JavaScript discovery, remaining WordPress content and assets, full local link routing and whole-page validation remain unfinished. The original site's ten-second crawl delay is honored.
+## Coverage and remaining limits
 
-Uploads: {intake_summary}. Oversized archives remain unread; the user selected live crawling. No coverage claims rely on unread archives. Snapshots have individual timestamps rather than one atomic baseline.
+All {source_counts['cheri-alliance.github.io']} captured primary-site HTML mappings are converted. {source_counts['cheri-alliance.org']} original WordPress mappings are converted, including Hildebrand and three original-only articles. {len(remaining_html)} retained HTML mappings remain unconverted, including original archives, aliases and differing source versions. Migration-wide exhaustive discovery is not claimed.
 
-## Restart and evidence
+Paper entries contain complete catalogue citations, descriptions and original publication links. Full external PDFs remain unacquired; no full-paper migration is claimed. A literal source webinar-link placeholder and unsupported external source routes remain documented; real form endpoints stay external. No forms were submitted.
 
-- Setup, build and verification: `README_MIGRATION.md`.
-- Capture state and provenance: `reports/capture-index.json`, `reports/source-manifest.csv`, `sitemap.json`.
-- Asset ownership/checksums: `reports/asset-index.json`, `reports/asset-manifest.csv`.
-- Main-content comparisons: `reports/validation/*/comparison.json` and `source-signature.json`.
-- Build/format/paper/browser results: `reports/build-validation.csv`, `reports/markdown-format-validation.json`, `reports/paper-validation.json`, `reports/browser-validation.json`.
-- Known acquisition failures: `reports/missing-content.md`.
-- Raw source HTML and screenshots are retained locally and excluded from Git. Published semantic signatures allow build verification from a fresh checkout. Re-capture source snapshots before acquisition/conversion that needs raw HTML.
+Sources retain individual timestamps; oversized original archives remain unread. Static frontier exhaustion does not prove complete JavaScript/query/export coverage. {len(rows)} URL records are inventoried; {status['failed']} historical acquisition failures remain recorded. The original ten-second crawl delay is honored.
+
+## Authoring and evidence
+
+- Authoring schema: `docs/AUTHORING.md`; setup/build/check commands: `README_MIGRATION.md`.
+- Editorial requirements: `MIGRATION_SPEC.md`.
+- Capture provenance: `reports/capture-index.json`, `reports/source-manifest.csv`, `sitemap.json`.
+- Current source comparisons: `reports/final-source-content.json`, `reports/live-source-validation.json`.
+- Published immutable comparison signatures: `reports/validation/*/source-signature.json`.
+- Relationship provenance: `reports/relationship-evidence.json`, `reports/derived-content.json`, `reports/author-name-matches.json`.
+- Canonical mappings: `reports/route-map.json`; asset ownership/checksums: `reports/asset-index.json`.
+- Browser/template, local-link and format checks: `reports/browser-validation.json`, `reports/site-link-validation.json`, `reports/markdown-format-validation.json`.
+
+Raw source HTML, screenshots, logs and runtime files stay local and are ignored by Git. Build, link and relationship checks work from the published repository; raw-source rechecks require locally retained captures.
 """
 (ROOT / 'PROGRESS.md').write_text(progress)
 print(f'Reports saved: {html} HTML mappings, {converted} conversions, {sum(collections.values())} Markdown files, {browser_passes} browser passes.')

@@ -1,45 +1,9 @@
-- person: mike-eftimakis
-  name: Mike Eftimakis
-  source_url: https://cheri-alliance.github.io/alliance/leadership/governing-board/
-  profile_url: https://cheri-alliance.github.io/people/mike-eftimakis/
-  evidence_path: sources/cheri-alliance.github.io/ba671276976c6eca1d983e87f57973cfe0ec8915a2b2da79032ebaa990103f6f.html
-- person: andrew-lindsay
-  name: Andrew Lindsay
-  source_url: https://cheri-alliance.github.io/alliance/leadership/governing-board/
-  profile_url: https://cheri-alliance.github.io/people/andrew-lindsay/
-  evidence_path: sources/cheri-alliance.github.io/ba671276976c6eca1d983e87f57973cfe0ec8915a2b2da79032ebaa990103f6f.html
-- person: david-chisnall
-  name: David Chisnall
-  source_url: https://cheri-alliance.github.io/alliance/leadership/governing-board/
-  profile_url: https://cheri-alliance.github.io/people/david-chisnall/
-  evidence_path: sources/cheri-alliance.github.io/ba671276976c6eca1d983e87f57973cfe0ec8915a2b2da79032ebaa990103f6f.html
-- person: sam-cater
-  name: Sam Cater
-  source_url: https://cheri-alliance.github.io/alliance/leadership/governing-board/
-  profile_url: https://cheri-alliance.github.io/people/sam-cater/
-  evidence_path: sources/cheri-alliance.github.io/ba671276976c6eca1d983e87f57973cfe0ec8915a2b2da79032ebaa990103f6f.html
-- person: adam-finney
-  name: Adam Finney
-  source_url: https://cheri-alliance.github.io/alliance/leadership/governing-board/
-  profile_url: https://cheri-alliance.github.io/people/adam-finney/
-  evidence_path: sources/cheri-alliance.github.io/ba671276976c6eca1d983e87f57973cfe0ec8915a2b2da79032ebaa990103f6f.html
-- person: simon-moore
-  name: Simon Moore
-  source_url: https://cheri-alliance.github.io/alliance/leadership/governing-board/
-  profile_url: https://cheri-alliance.github.io/people/simon-moore/
-  evidence_path: sources/cheri-alliance.github.io/ba671276976c6eca1d983e87f57973cfe0ec8915a2b2da79032ebaa990103f6f.html
-- person: alex-richardson
-  name: Alex Richardson
-  source_url: https://cheri-alliance.github.io/alliance/leadership/governing-board/
-  profile_url: https://cheri-alliance.github.io/people/alex-richardson/
-  evidence_path: sources/cheri-alliance.github.io/ba671276976c6eca1d983e87f57973cfe0ec8915a2b2da79032ebaa990103f6f.html
-- person: allison-randal
-  name: Allison Randal
-  source_url: https://cheri-alliance.github.io/alliance/leadership/governing-board/
-  profile_url: https://cheri-alliance.github.io/people/allison-randal/
-  evidence_path: sources/cheri-alliance.github.io/ba671276976c6eca1d983e87f57973cfe0ec8915a2b2da79032ebaa990103f6f.html
-- person: paul-waller
-  name: Paul Waller
-  source_url: https://cheri-alliance.github.io/alliance/leadership/governing-board/
-  profile_url: https://cheri-alliance.github.io/people/paul-waller/
-  evidence_path: sources/cheri-alliance.github.io/ba671276976c6eca1d983e87f57973cfe0ec8915a2b2da79032ebaa990103f6f.html
+- mike-eftimakis
+- andrew-lindsay
+- david-chisnall
+- sam-cater
+- adam-finney
+- simon-moore
+- alex-richardson
+- allison-randal
+- paul-waller

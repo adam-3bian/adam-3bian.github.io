@@ -12,4 +12,12 @@ Paper records reproduce complete published catalogue entries and external public
 
 ## Hardware and software collections
 
-The user clarified that boards means hardware boards. Use `_hardware/` for hardware platforms, boards and processor cores, and `_software/` for operating systems, tools and simulators. Hardware product profiles join `_hardware/`; retain each original body and source route. The governing board is a standalone page under `pages/cheri-alliance.github.io/alliance/leadership/`, with its source-backed member registry retained in `_data/governing-board.yml`. Do not create a `_boards/` collection for governance.
+The user clarified that boards means hardware boards. Use `_hardware/` for hardware platforms, boards and processor cores, and `_software/` for operating systems, tools and simulators. Hardware product profiles join `_hardware/`; retain each original body and source route. The governing board is a standalone page under `pages/alliance/leadership/`, with its source-backed people IDs retained in `_data/governing-board.yml`. Do not create a `_boards/` collection for governance.
+
+## Final website authoring and template
+
+The user requested the uploaded simplified-authoring starter as the presentation template while retaining the migrated collections and complete content. Theme and navigation controls now follow that starter; earlier source pixel comparisons are historical evidence. Complete body fidelity, original assets and image-role evidence still apply.
+
+Editorial filenames and canonical URLs omit source-host prefixes. Minimal front matter uses `title`, role flags `member`/`speaker`, and filename references `organization`/`speakers`/`authors`. Reverse links are generated. `_data/governing-board.yml` is the sole registry, containing ordered people IDs. Navigation belongs in `_config.yml`, and provenance belongs in reports. Name-only author records are explicitly authorized for contributors without profiles; no biographies or affiliations may be invented.
+
+The final-source comparison translates only declared canonical link destinations, retaining source link labels and all body text. Same-entity source image repairs and broken source fragment corrections are recorded separately. Distinct source versions remain separately traceable. See [docs/AUTHORING.md](docs/AUTHORING.md) for the schema.

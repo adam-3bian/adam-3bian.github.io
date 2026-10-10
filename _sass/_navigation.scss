@@ -1,0 +1,147 @@
+nav a { text-decoration: none; }
+nav a, nav button {
+  color: inherit;
+  font: inherit;
+  font-weight: $font-weight-medium;
+  letter-spacing: $letter-spacing-interface;
+}
+nav :where(a, button):is(:hover, :focus-visible), #hamburger:is(:hover, :focus-visible) {
+  background: var(--colour-navigation-hover);
+  text-decoration: none;
+}
+nav button, #hamburger { background: var(--navigation-background, transparent); border: 0; cursor: pointer; }
+nav ul { list-style: none; margin: 0; padding: 0; }
+.submenu {
+  --colour-navigation-hover: var(--colour-submenu-hover);
+  --navigation-row-inset: #{$submenu-row-padding};
+  --navigation-indent: 0px;
+  background: var(--colour-submenu);
+  padding: 0;
+  position: static;
+}
+// Every nested dropdown gets a slightly darker surface. Depth four is the
+// final palette step; deeper levels retain it rather than losing contrast.
+$submenu-selector: ".submenu";
+@for $depth from 2 through $menu-depths {
+  $submenu-selector: "#{$submenu-selector} .submenu";
+  #{$submenu-selector} {
+    --colour-submenu: var(--colour-submenu-level-#{$depth});
+    --colour-submenu-hover: var(--colour-submenu-hover-level-#{$depth});
+    --navigation-indent: #{$submenu-row-padding * ($depth - 1)};
+    @media (min-width: $desktop-breakpoint) { --navigation-indent: 0px; }
+  }
+}
+.submenu[hidden] { display: none; }
+// Expanded links remain available when scripts are disabled or fail to load.
+html:not(.js) .submenu[hidden] { display: block; position: static; }
+html:not(.js) .submenu-row > button { display: none; }
+.submenu a {
+  align-items: center;
+  display: flex;
+  font-weight: $font-weight-regular;
+  letter-spacing: 0;
+  min-height: $control-height;
+  overflow-wrap: break-word;
+  margin: 0;
+  padding: $space-2 var(--navigation-row-inset);
+  padding-left: calc(var(--navigation-row-inset) + var(--navigation-indent));
+  width: 100%;
+}
+.submenu-row { align-items: stretch; display: flex; }
+.submenu-row:has(> :is(a, button):is(:hover, :focus-visible)) { background: var(--colour-navigation-hover); }
+.submenu-row > :is(a, button) { background: transparent; }
+.submenu-row > a { flex: 1; min-width: 0; }
+.submenu-row > button {
+  align-items: center;
+  display: flex;
+  flex: 0 0 $control-height;
+  justify-content: center;
+  min-height: $control-height;
+  padding: $space-3;
+}
+.submenu-toggle::after {
+  border-bottom: $control-border-width solid currentColor;
+  border-right: $control-border-width solid currentColor;
+  content: "";
+  flex-shrink: 0;
+  height: $space-2;
+  margin-left: auto;
+  margin-top: -$space-1;
+  transform: rotate(45deg);
+  width: $space-2;
+}
+.submenu-row > .submenu-toggle::after { margin-left: 0; }
+.submenu-toggle[aria-expanded="true"] { --navigation-background: var(--colour-submenu); }
+.submenu-toggle[aria-expanded="true"]::after {
+  margin-top: $space-1;
+  transform: rotate(225deg);
+}
+.flyout { padding: 0; }
+.megamenu { gap: 0; }
+.menu-group-title {
+  display: block;
+  font-size: $font-size-navigation;
+  font-weight: $font-weight-semibold;
+  letter-spacing: $letter-spacing-menu-group;
+  line-height: $line-height-menu-group;
+  padding-inline: var(--navigation-row-inset, #{$navigation-row-padding});
+}
+.menu-group > ul { display: grid; gap: 0; margin: 0; }
+.menu-group-links { --navigation-indent: #{$submenu-row-padding}; padding: 0; }
+.menu-group-links[hidden] { display: none; }
+html:not(.js) .menu-group-links[hidden] { display: grid; }
+.menu-group-toggle { display: none; }
+.js .menu-group-toggle {
+  align-items: center;
+  display: flex;
+  gap: $space-4;
+  min-height: $control-height;
+  padding: $space-3 var(--navigation-row-inset);
+  text-align: left;
+  width: 100%;
+}
+.js .megamenu .menu-group-label { display: none; }
+.dropdown .menu-group { margin: 0; }
+.dropdown .menu-group-title { padding-block: $space-2; }
+.dropdown .menu-group > ul { margin-top: 0; }
+@media (min-width: $desktop-breakpoint) {
+  .js .menu-group-toggle { display: none; }
+  .js .megamenu .menu-group-label { display: block; }
+  .menu-group-links { --navigation-indent: 0px; }
+  .js .submenu { position: absolute; top: 100%; z-index: $menu-layer; }
+  .dropdown {
+    min-width: $dropdown-min-width;
+    padding: 0;
+    right: 0;
+    width: $dropdown-min-width;
+  }
+  .submenu .has-submenu { position: relative; }
+  .js .flyout { left: 100%; right: auto; top: 0; }
+  .js .flyout.opens-left { left: auto; right: 100%; }
+  .js .flyout.opens-up { bottom: 0; top: auto; }
+  .js .dropdown.align-start { left: 0; right: auto; }
+  .submenu-row > .submenu-toggle::after { margin-top: 0; transform: rotate(-45deg); }
+  .submenu-row > .submenu-toggle[aria-expanded="true"]::after { transform: rotate(135deg); }
+  .megamenu {
+    --navigation-row-inset: #{$navigation-row-padding};
+    gap: $grid-gap;
+    left: 0;
+    padding: $space-8 $gutter-desktop;
+    right: 0;
+  }
+  .menu-group-title { line-height: $line-height-body; }
+  .megamenu > li > ul { gap: 0; margin-top: $space-3; }
+  // Very short viewports get a scrollable panel, positioned by state classes.
+  .js .submenu.menu-docked {
+    bottom: auto;
+    left: auto;
+    max-height: calc(100vh - #{$menu-viewport-gap * 2});
+    max-height: calc(100dvh - #{$menu-viewport-gap * 2});
+    overflow: auto;
+    position: fixed;
+    right: $menu-viewport-gap;
+    top: $menu-viewport-gap;
+  }
+  .js .submenu.menu-docked.docked-left { left: $menu-viewport-gap; right: auto; }
+  .js .megamenu.menu-docked { left: $menu-viewport-gap; }
+}

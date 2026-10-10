@@ -30,4 +30,8 @@ class KramdownRoundtripTests(unittest.TestCase):
   self.check_roundtrip('<p>Leaders from<strong>\u00a0NCSC</strong>, and researchers.</p>')
  def test_table_image_and_literal_pipe_are_preserved(self):
   self.check_roundtrip('<table><tr><td><img src="logo.svg" alt="Logo"></td><td>Choice A | Choice B</td></tr></table>',image_classes={'logo.svg':'image-full'})
+ def test_image_caption_is_preserved_as_a_markdown_paragraph(self):
+  self.check_roundtrip('<figure><img src="chart.png" alt="Chart"><figcaption>Complete published caption.</figcaption></figure>',image_classes={'chart.png':'image-full'})
+ def test_membership_prefix_and_value_remain_one_list_paragraph(self):
+  self.check_roundtrip('<ul><li><span class="elementor-post-info__item"><span>Membership: </span>\n\n<span><a href="/full-member/">Full Member</a></span></span></li></ul>')
 if __name__=='__main__':unittest.main()

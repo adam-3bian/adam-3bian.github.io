@@ -1,0 +1,92 @@
+{
+  "main_text": "CHERI-Zephyr v0.4.0 Release\nJennifer Jackson – University of Birmingham\n\nIn this blog covering the fourth official development release of CHERI-Zephyr, we’ll look at what’s already CHERI-supported in the kernel and highlight some of the key features added over the course of development. Whether you’re interested in porting an existing Zephyr application, exploring new projects, evaluating CHERI-enabled software, or simply seeing how CHERI changes the behaviour of real systems, there’s plenty already included to begin experimenting.\n\nCHERI platforms\n\nCHERI-Zephyr now supports various CHERI-RISC-V platforms (in addition to Zephyr’s current boards). With RISC-V rapidly becoming one of the most exciting architectures in the embedded space, and CHERI bringing hardware-enforced security to the mix, the pairing is a perfect match for Zephyr’s target applications. If you’re lucky enough to have access to CHERI hardware such as Codasip’s Prime board you can run it directly, otherwise CHERI QEMU provides an easy way to get started.\n\nIt is worth mentioning that CHERI-Zephyr, together with the underlying QEMU and hardware platforms, supports both CHERI and non-CHERI modes of operation. This allows an existing Zephyr application to be built and run in non-CHERI mode using the CHERI toolchain, before being rebuilt and executed in CHERI mode. This makes it easy to compare performance, memory usage, and the impact of CHERI’s memory-safety protections.\n\nProof CHERI is doing its job\n\nIf you are looking for some proof that CHERI is doing its job, then there are several CHERI-specific samples demonstrating how CHERI can prevent memory corruption and buffer overflows to try out. For more detailed testing of CHERI-specific kernel edits then the CHERI test suites can be run as part of Zephyr’s Twister test matrix. Once all the tools and software have been installed you can build and run a CHERI sample like you would build a normal Zephyr application using west:\n\n\t\t\t\t\n\t\t\t\t\t\nwest build -p always -b qemu_riscv32cheri_zcheripurecap samples/cheri/buffer_overflow\n\nwest build -t run\n\n\t\t\t\t\n\t\t\t\nWhat’s been CHERI-enabled?\n\nFor a more detailed view of what’s been CHERI-enabled so far, you will find that the most fundamental parts have been ported to allow you to run a basic CHERI application. This includes most of the RISC-V assembly including additional CHERI early boot up code to allow global capabilities to be correctly placed in memory. For those who are already familiar with CHERI terminology CHERI-Zephyr supports only the CHERI purecap mode of operation and quickly switches out of any hybrid mode if hardware is designed to support both. Limiting to purecap provides stronger memory safety where all pointers become CHERI capabilities, enforcing memory-safety consistently across the system.\n\nApart from the RISC-V assembly, the focus to date has been on porting the underlying kernel and selective libraries that are either used directly by the kernel or are heavily memory orientated. This includes things like the system heap API and derivatives of it such as multi-heap, kernel heap, k-malloc, as well as mem-slabs, mem_blocks and stack allocation. In terms of general C code modifications, porting to CHERI quickly exposes assumptions that conventional architectures have traditionally tolerated. Structures containing capabilities cannot be packed due to capability alignment requirements, integer-to-pointer casts or the use of fixed addresses are prohibited, and uses of unsigned long need to be replaced with uintptr_t when representing pointer-sized values. Many of these issues were caught by the CHERI compiler, but others slipped through the net resulting in CHERI exceptions that were required to be diagnosed after.\n\nTesting this modified code has primarily relied on the Twister test matrix to uncover issues, but in some cases the actual tests themselves also fell victim to some of these CHERI coding requirements and needed modification. Along with this, extra CHERI-specific test suites have been added to check things that are not already covered in the standard Zephyr test suites such as checking CHERI alignment and bounds are correct.\n\nSo far, three-quarters of kernel-specific Twister tests are passing, demonstrating substantial kernel coverage. Some issues remain to be resolved, while other code paths have not yet been exercised due to the sheer number of CONFIG combinations supported by Zephyr.\n\nLooking to the future\n\nOn the research side, we are now experimenting with compartmentalisation and recovery mechanisms for CHERI hardware exceptions. After all, if a zero-day attack can be contained within a compartment, or a buffer overflow can be prevented, the next logical step is enabling the operating system to recover and continue operating without compromising system availability.\n\nTo sum things up, CHERI-Zephyr remains an active development project, and there are still libraries to port, bugs to find, and areas that need further testing. Nevertheless, the project has come a long way over the past year and already provides a substantial platform for experimenting with CHERI-enabled software making it well worth exploring!\n\nIn the meantime, we welcome feedback, contributions, offers to help port Zephyr libraries to CHERI, and assistance with upstreaming activities. The latest release can be found here: https://github.com/CHERI-Alliance/CHERI-zephyr/releases/tag/CHERI-Zephyr-v0.4.0",
+  "main_rect": {
+    "x": 0,
+    "y": 160.984375,
+    "width": 1440,
+    "height": 2927.296875
+  },
+  "images": [
+    {
+      "url": "https://cheri-alliance.org/wp-content/uploads/2026/09/zephyr_buffer_overflow.jpg",
+      "alt": "Code showing a Zephyr buffer overflow",
+      "rect": {
+        "x": 465,
+        "y": 352.984375,
+        "width": 510,
+        "height": 500
+      },
+      "natural_width": 510,
+      "natural_height": 500,
+      "style": {
+        "float": "none",
+        "display": "inline-block"
+      },
+      "parent": {
+        "x": 160,
+        "y": 352.984375,
+        "width": 1120,
+        "height": 500
+      },
+      "parent_style": {
+        "float": "none",
+        "display": "block"
+      },
+      "parent_classes": [
+        "elementor-widget-container"
+      ],
+      "body_rect": {
+        "x": 0,
+        "y": 160.984375,
+        "width": 1440,
+        "height": 2927.296875
+      }
+    }
+  ],
+  "header_text": [
+    "WHO WE ARE\nMEMBERSHIP\nDISCOVER CHERI\nNEWS\nEVENTS\nCONTACT US\n\nHome » News » CHERI-Zephyr v0.4.0 Release",
+    "WHO WE ARE\nMEMBERSHIP\nDISCOVER CHERI\nNEWS\nEVENTS\nCONTACT US"
+  ],
+  "copyright_text": [],
+  "footer_text": [
+    "Subscribe to our newsletter\n\nLegal & Policies | Contact\n\nGithub\n \nLinkedin\n \nMastodon\n \nYoutube"
+  ],
+  "url": "https://cheri-alliance.org/cheri-zephyr-v0-4-0-release/",
+  "final_url": "https://cheri-alliance.org/cheri-zephyr-v0-4-0-release/",
+  "retrieved_at": "2026-10-10T01:08:54.831167+00:00",
+  "http_status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "failed_requests": [
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-core.min.js?ver=1.23.0",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=GT-NMJZHBHH",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/autoloader/prism-autoloader.min.js?ver=1.23.0",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js?ver=1.23.0",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/toolbar/prism-toolbar.min.js?ver=1.23.0",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js?ver=1.23.0",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "url": "https://events.cheri-alliance.org/widget.js",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    }
+  ]
+}

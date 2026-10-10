@@ -1,1289 +1,231 @@
-[
-  {
-    "url": "https://cheri-alliance.github.io/people/adam-finney/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/747f21957d762628"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/the-capable-hub-joins-the-cheri-alliance-to-accelerate-cybersecurity-collaboration/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/ee3e3414449dd680"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/ee19a84a90553fdc"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/ai-has-compressed-the-attack-timeline/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/f67abd1ef22f0022"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/58f9a8f76c8b5b3d"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/behind-the-scenes-inside-the-promotion-and-ambassador-program-working-group/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/1c076c303eac4438"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/bt-group-joins-the-cheri-alliance-to-advance-cybersecurity-innovation/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/5580400058f304db"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/building-a-safer-digital-future/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/880b2302130d5467"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/bdb541ddace0c4f3"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/cheri-alliance-to-distribute-arm-morello-boards-the-journey-beyond-dsbd-continues/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/1095a57366cce500"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/cheri-memory-safety-mitigates-llm-discovered-vulnerability-in-freebsd/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/2e53841856172d7d"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/cheri-or-cheriot-the-answer-is-not-what-you-think/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/0efb12051fd8f942"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/cheriot-1-0-specification-released/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/9f445ec7f853e65f"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/9b694eb693c7a799"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/codasip-enables-secure-linux-by-donating-cheri-risc-v-sdk-to-the-cheri-alliance/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/01151c736cfa6012"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/a0c501b7745968b9"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/end-users-demand-memory-safety-in-their-systems/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/c01b2df07f7edf32"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/iceni-first-look/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/03d719f45f5b8eb6"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/initial-members-join-cheri-alliance-to-drive-adoption-of-memory-safety-and-scalable-software-compartmentalization/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/e18f3c0ba19f8e76"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/innovate-uk-project-winner-university-of-birmingham/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/20caf8d453ec28ef"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/introducing-the-cheri-adoption-global-ecosystem-assessment-q1-2026/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/8a74da1f26372a95"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/ac1a0231ae902dfd"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/92ace6d106f066cb"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/fe38b2a4dda6f78d"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/one-bug-is-all-it-takes/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/1808e003760434d0"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/bedbea1a837d2af5"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/secure-and-resilient-systems-in-the-era-of-cra-and-iot/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/b515ddd43d893948"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/ebcd6b4a40d480a8"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/siemens-joins-the-cheri-alliance-a-united-front-for-cutting-edge-cybersecurity/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/1c2ad72bd30c132f"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/streamlining-the-cheri-ecosystem-an-update-from-the-repository-management-working-group/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/9be707d1d88ceef3"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/the-eu-cyber-resilience-act-what-it-means-for-secure-by-design-systems-and-cheri/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/1af7ae5a59c90a64"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/the-leading-root-of-trust-now-integrates-cheri-security-technology/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/051d10e7e629f104"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/the-white-house-promotes-cheri-as-a-solution-for-memory-safety/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/6880e72319061ea1"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/towards-a-reference-qemu-for-cheri-platform-emulation/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/e310b991e1936442"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/uk-government-report-highlights-the-cheri-alliance/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/c37ca324705b352f"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/unlocking-the-future-a-roadmap-for-cheri-technology-advancement/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/4c377f89da2a2ba1"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/news/wind-river-joins-the-cheri-alliance/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/f7772f5752f0c843"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/alastair-beresford/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/aeddad56817de9e8"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/alex-rebert/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/74573ab79a40ed15"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/alex-richardson/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/da82925d62898730"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/alexander-voyevoda/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/6d8c6df1860b6abb"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/alfredo-mazzinghi/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/45cb8693c80a0224"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/allison-randal/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/8a887c9a9f30ad0c"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/andrew-lindsay/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/f3f617430ecef669"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/andrew-murray/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/ce84eed56beb593b"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/andy-moore/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/e19f3dbb7ef947ad"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/ashish-darbari/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/3079e599813ecdd9"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/ben-fletcher/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/7457f4c840d048ed"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/bradley-finn/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/e3ef594741343b34"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/carl-shaw/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/7145d9783fd5543f"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/dave-harcourt/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/1c8222f023dabf22"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/david-chisnall/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/98b6ec89bf55bb0c"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/david-musliner/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/9b698745b6a1bd40"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/dmitriy-yeliseyev/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/2dcfd47113c127f7"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/domagoj-stolfa/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/667c0ef6f0b39a40"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/donato-ferraro/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/27508c8b827fedc4"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/edoardo-marangoni/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/6085ce79d38587b2"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/gavin-ferris/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/6fe4e40ac5e6f813"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/haydn-povey/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/224837474661187f"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/hesham-almatary/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/77b65e727e4614f6"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/javier-orensanz-martinez/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/c8f2842e9a5725f3"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/jennifer-jackson/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/5e6f6654cda867bd"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/jeremy-singer/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/fd75e09fbdff23f5"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/jessica-clarke/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/18a0d124400b3626"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/jianyi-cheng/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/92ad3ee1451cf8f3"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/johannes-muller/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/7a28d476e00ee319"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/john-baldwin/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/bf70ae996824e5bd"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/john-goodacre/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/d35bc78e55134358"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/john-thomson/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/1c9c926adce6c22c"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/jonathan-woodruff/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/891db4c5f7c80372"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/joshua-lant/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/7a2c6ef8ff4e9d94"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/ka-wing-li/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/41de251751ddd4e4"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/kathleen-fisher/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/9c8023ddf9a74ee9"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/kevin-brodsky/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/95a0b573b73b9400"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/louis-emile-ploix/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/86b6cf60591ca301"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/luca-muller/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/40be8e476aec7569"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/maika-fohrenbach/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/65509eb0d3d3f7b6"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/manu-ravishankar/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/7466a01de202c9fd"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/mark-batty/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/bb2b7c2600f105d9"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/mark-hill/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/13b408a22973c3c5"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/marno-van-der-maas/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/1a7d9a3e2a7b05e3"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/martin-atkins/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/7c567067660ba090"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/merve-gulmez/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/5d06594eca22f92a"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/mike-eftimakis/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/872805652eecd39f"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/mike-halsall/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/5ee1ad6eb2d82328"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/murali-vijayaraghavan/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/c621365c7f2abdc5"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/murat-cakmak/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/90142a7b18e2e591"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/ollie-whitehouse/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/6a94675424849aed"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/paul-metzger/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/822472353d299926"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/paul-waller/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/fba30a46a5c32aa4"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/peter-cox/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/4edca19c5fc696ac"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/phil-day/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/81e99c686ba8a8fe"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/robert-watson/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/93cb3e19b2d64603"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/sam-cater/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/8fad51fce2d57909"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/samuel-stark/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/532900ae669322d4"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/simon-moore/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/d8e9719b06aaacd0"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/tariq-kurd/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/6c7374fb5ef82af4"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/thomas-nyman/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/358171cbc0d5114c"
-  },
-  {
-    "url": "https://cheri-alliance.github.io/people/tora-fridholm/",
-    "checks": {
-      "visible_main_text": true,
-      "header_text": true,
-      "footer_text": true,
-      "copyright_text": true,
-      "image_count": true,
-      "image_integrity": true,
-      "desktop_image_geometry": true
-    },
-    "evidence_path": "reports/browser/223e0b4740e4385e"
-  }
-]
+{
+  "theme": "uploaded simplified-authoring starter",
+  "scope": "Visible source body, original asset decoding, Poppins, responsive layout and navigation; source pixel geometry is superseded by the requested new theme",
+  "pages": [
+    {
+      "route": "/",
+      "checks": {
+        "http_200": true,
+        "javascript": true,
+        "body_text": true,
+        "images_decode": true,
+        "poppins_loaded": true,
+        "desktop_overflow": true,
+        "mobile_overflow": true,
+        "mobile_menu": true,
+        "mobile_submenu": true
+      },
+      "javascript_errors": []
+    },
+    {
+      "route": "/alliance/leadership/members/",
+      "checks": {
+        "http_200": true,
+        "javascript": true,
+        "body_text": true,
+        "images_decode": true,
+        "poppins_loaded": true,
+        "desktop_overflow": true,
+        "mobile_overflow": true,
+        "mobile_menu": true,
+        "mobile_submenu": true
+      },
+      "javascript_errors": []
+    },
+    {
+      "route": "/alliance/leadership/governing-board/",
+      "checks": {
+        "http_200": true,
+        "javascript": true,
+        "body_text": true,
+        "images_decode": true,
+        "poppins_loaded": true,
+        "desktop_overflow": true,
+        "mobile_overflow": true,
+        "mobile_menu": true,
+        "mobile_submenu": true
+      },
+      "javascript_errors": []
+    },
+    {
+      "route": "/organisations/codasip/",
+      "checks": {
+        "http_200": true,
+        "javascript": true,
+        "body_text": true,
+        "images_decode": true,
+        "poppins_loaded": true,
+        "desktop_overflow": true,
+        "mobile_overflow": true,
+        "mobile_menu": true,
+        "mobile_submenu": true
+      },
+      "javascript_errors": []
+    },
+    {
+      "route": "/organisations/pa-consulting/",
+      "checks": {
+        "http_200": true,
+        "javascript": true,
+        "body_text": true,
+        "images_decode": true,
+        "poppins_loaded": true,
+        "desktop_overflow": true,
+        "mobile_overflow": true,
+        "mobile_menu": true,
+        "mobile_submenu": true
+      },
+      "javascript_errors": []
+    },
+    {
+      "route": "/organisations/hildebrand/",
+      "checks": {
+        "http_200": true,
+        "javascript": true,
+        "body_text": true,
+        "images_decode": true,
+        "poppins_loaded": true,
+        "desktop_overflow": true,
+        "mobile_overflow": true,
+        "mobile_menu": true,
+        "mobile_submenu": true
+      },
+      "javascript_errors": []
+    },
+    {
+      "route": "/organisations/dsit/",
+      "checks": {
+        "http_200": true,
+        "javascript": true,
+        "body_text": true,
+        "images_decode": true,
+        "poppins_loaded": true,
+        "desktop_overflow": true,
+        "mobile_overflow": true,
+        "mobile_menu": true,
+        "mobile_submenu": true
+      },
+      "javascript_errors": []
+    },
+    {
+      "route": "/people/robert-watson/",
+      "checks": {
+        "http_200": true,
+        "javascript": true,
+        "body_text": true,
+        "images_decode": true,
+        "poppins_loaded": true,
+        "desktop_overflow": true,
+        "mobile_overflow": true,
+        "mobile_menu": true,
+        "mobile_submenu": true
+      },
+      "javascript_errors": []
+    },
+    {
+      "route": "/people/ben-laurie/",
+      "checks": {
+        "http_200": true,
+        "javascript": true,
+        "body_text": true,
+        "images_decode": true,
+        "poppins_loaded": true,
+        "desktop_overflow": true,
+        "mobile_overflow": true,
+        "mobile_menu": true,
+        "mobile_submenu": true
+      },
+      "javascript_errors": []
+    },
+    {
+      "route": "/events/cheri-blossoms-conference-2026/",
+      "checks": {
+        "http_200": true,
+        "javascript": true,
+        "body_text": true,
+        "images_decode": true,
+        "poppins_loaded": true,
+        "desktop_overflow": true,
+        "mobile_overflow": true,
+        "mobile_menu": true,
+        "mobile_submenu": true
+      },
+      "javascript_errors": []
+    },
+    {
+      "route": "/news/beyond-software-patching/",
+      "checks": {
+        "http_200": true,
+        "javascript": true,
+        "body_text": true,
+        "images_decode": true,
+        "poppins_loaded": true,
+        "desktop_overflow": true,
+        "mobile_overflow": true,
+        "mobile_menu": true,
+        "mobile_submenu": true
+      },
+      "javascript_errors": []
+    },
+    {
+      "route": "/news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/",
+      "checks": {
+        "http_200": true,
+        "javascript": true,
+        "body_text": true,
+        "images_decode": true,
+        "poppins_loaded": true,
+        "desktop_overflow": true,
+        "mobile_overflow": true,
+        "mobile_menu": true,
+        "mobile_submenu": true
+      },
+      "javascript_errors": []
+    },
+    {
+      "route": "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
+      "checks": {
+        "http_200": true,
+        "javascript": true,
+        "body_text": true,
+        "images_decode": true,
+        "poppins_loaded": true,
+        "desktop_overflow": true,
+        "mobile_overflow": true,
+        "mobile_menu": true,
+        "mobile_submenu": true
+      },
+      "javascript_errors": []
+    },
+    {
+      "route": "/hardware/",
+      "checks": {
+        "http_200": true,
+        "javascript": true,
+        "body_text": true,
+        "images_decode": true,
+        "poppins_loaded": true,
+        "desktop_overflow": true,
+        "mobile_overflow": true,
+        "mobile_menu": true,
+        "mobile_submenu": true
+      },
+      "javascript_errors": []
+    },
+    {
+      "route": "/software/",
+      "checks": {
+        "http_200": true,
+        "javascript": true,
+        "body_text": true,
+        "images_decode": true,
+        "poppins_loaded": true,
+        "desktop_overflow": true,
+        "mobile_overflow": true,
+        "mobile_menu": true,
+        "mobile_submenu": true
+      },
+      "javascript_errors": []
+    }
+  ]
+}
