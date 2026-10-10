@@ -16,6 +16,8 @@ kramdown:
 exclude:
 - sources
 - reports
+- sitemap.json
+- sitemap.md
 - scripts
 - requirements-migration.txt
 - CHERI_SITE_INVENTORY.json

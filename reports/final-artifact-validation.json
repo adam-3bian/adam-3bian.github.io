@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "preview_files": 901,
+  "domain_root_files": 901,
+  "checks": [
+    "All previously validated rendered pages, assets, search and metadata remain byte-identical",
+    "Only migration inventory exports are excluded from public deployment",
+    "Upstream domain-root build matches the validated domain-root output for every published file"
+  ],
+  "excluded_from_deployment": [
+    "sitemap.json",
+    "sitemap.md"
+  ],
+  "content_source_comparisons": 376,
+  "original_asset_checks": 430,
+  "website_checks": 964,
+  "browser_flows": 11
+}
