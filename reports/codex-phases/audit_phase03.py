@@ -242,4 +242,3 @@ assert all(all(p[k] for k in ['source_bytes_unchanged', 'genuine_square_portrait
 assert all(asset_checks[k] for k in ['tracked_assets_unchanged', 'original_assets_match_both_builds'])
 assert len(root_links['errors']) == 1 and root_links['errors'][0]['url'] == '/search/'
 assert not [r for r in project_links['errors'] if r['component']]
-

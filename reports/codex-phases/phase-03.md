@@ -5,7 +5,7 @@ Verified **10 October 2026**, in `adam-3bian/adam-3bian.github.io` on `codex/pha
 ## Baseline and delivery
 
 - Starting commit: **`71969d69c2ed90aec6ba6291f80dd4d658c5c110`**. Read Phase 2 before implementation, fetched the working branch and confirmed it was current. Reviewed Phase 0, `AGENTS.md`, `TRANSFORMATION_PROMPT.md`, `docs/CODEX_PHASES.md`, relevant runbooks, actual people records and ZIP layouts/specifications.
-- Ending implementation/evidence commit: **recorded after committing**. A following documentation-only commit records that SHA; resolve the final delivery SHA with `git log -1 --format=%H -- reports/codex-phases/phase-03.md`.
+- Ending implementation/evidence commit: **`4d2ce3f4f548eb31a875cb49bc8583a99bf5028b`**. A following report-finalisation commit records that SHA and removes an extra trailing blank line from the audit helper; resolve the final delivery SHA with `git log -1 --format=%H -- reports/codex-phases/phase-03.md`.
 - Remote `main` observed at **`7f3839872c8fea6a709b99d241880de0f3915c42`**. No changes, merge, push, deployment or publishing-setting changes to `main`.
 - Authoritative ZIP integrity passes; SHA-256 remains **`9f097aeace78c13e2f169fdc378f58b64b119993ac031b011ae7a618c7a7325a`**. Its sample records remain outside production.
 
