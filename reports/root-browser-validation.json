@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "scope": "Domain-root compatibility build only",
+  "checks": [
+    "search query and type filter",
+    "result navigation",
+    "local Poppins",
+    "mobile overflow"
+  ]
+}

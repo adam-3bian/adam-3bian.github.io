@@ -1,0 +1,14 @@
+<section data-site-search data-index="{{ '/search-index.json' | relative_url }}">
+  <form class="search-form" role="search" action="{{ '/search/' | relative_url }}" method="get">
+    <label for="site-query">Search<input id="site-query" name="q" type="search" autocomplete="off" placeholder="Try Morello, memory safety or a name"></label>
+    <label for="site-type">Content type
+      <select id="site-type" name="type"><option value="">Everything</option>
+        <option value="people">People</option><option value="organisations">Organisations</option><option value="events">Events</option><option value="news">News</option><option value="papers">Papers</option><option value="hardware">Hardware</option><option value="software">Software</option><option value="groups">Working groups</option><option value="guides">Guides</option><option value="policies">Policies</option><option value="pages">Other pages</option>
+      </select>
+    </label>
+    <button type="submit">Search</button>
+  </form>
+  <p role="status" aria-live="polite" data-search-status>Enter a name or topic to search.</p>
+  <ul class="search-results" data-search-results aria-label="Search results"></ul>
+  <noscript><p>Search needs JavaScript. You can browse <a href="{{ '/people/' | relative_url }}">people</a>, <a href="{{ '/organisations/' | relative_url }}">organisations</a>, <a href="{{ '/papers/' | relative_url }}">papers</a> or <a href="{{ '/build/' | relative_url }}">developer resources</a>.</p></noscript>
+</section>

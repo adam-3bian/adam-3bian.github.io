@@ -722,7 +722,7 @@ Grouped by source breadcrumb labels where available, otherwise provisional inven
 ### Adopt / Business Case
 
 - [Adoption Costs & Migration · CHERI Alliance](https://cheri-alliance.github.io/adopt/business-case/adoption-costs-and-migration/) → [pages/adopt/business-case/adoption-costs-and-migration.md](pages/adopt/business-case/adoption-costs-and-migration.md) — fetched; converted; unverified
-- [The Cost of Memory Unsafety · CHERI Alliance](https://cheri-alliance.github.io/adopt/business-case/cost-of-memory-unsafety/) → [pages/adopt/business-case/cost-of-memory-unsafety.md](pages/adopt/business-case/cost-of-memory-unsafety.md) — fetched; converted; unverified
+- [The Cost of Memory Unsafety · CHERI Alliance](https://cheri-alliance.github.io/adopt/business-case/cost-of-memory-unsafety/) → [pages/reference/source-versions/cost-of-memory-unsafety.md](pages/reference/source-versions/cost-of-memory-unsafety.md) — fetched; converted; unverified
 - [Lifecycle Benefits and ROI](https://cheri-alliance.github.io/adopt/business-case/lifecycle-benefits-and-roi/) — failed; unprocessed; unverified
 - [The Return on Security Investment · CHERI Alliance](https://cheri-alliance.github.io/adopt/business-case/return-on-security-investment/) → [pages/adopt/business-case/return-on-security-investment.md](pages/adopt/business-case/return-on-security-investment.md) — fetched; converted; unverified
 - [The Strategic Case for CHERI · CHERI Alliance](https://cheri-alliance.github.io/adopt/business-case/the-business-case/) → [pages/adopt/business-case/the-business-case.md](pages/adopt/business-case/the-business-case.md) — fetched; converted; unverified
@@ -776,7 +776,7 @@ Grouped by source breadcrumb labels where available, otherwise provisional inven
 
 - [Ambassadors · CHERI Alliance](https://cheri-alliance.github.io/alliance/leadership/ambassadors/) → [pages/alliance/leadership/ambassadors.md](pages/alliance/leadership/ambassadors.md) — fetched; converted; unverified
 - [Governing Board · CHERI Alliance](https://cheri-alliance.github.io/alliance/leadership/governing-board/) → [pages/alliance/leadership/governing-board.md](pages/alliance/leadership/governing-board.md) — fetched; converted; unverified
-- [Members · CHERI Alliance](https://cheri-alliance.github.io/alliance/leadership/members/) → [pages/alliance/leadership/members.md](pages/alliance/leadership/members.md) — fetched; converted; unverified
+- [Members · CHERI Alliance](https://cheri-alliance.github.io/alliance/leadership/members/) → [pages/reference/source-versions/members.md](pages/reference/source-versions/members.md) — fetched; converted; unverified
 - [Working Groups · CHERI Alliance](https://cheri-alliance.github.io/alliance/leadership/working-groups/) → [pages/alliance/leadership/working-groups.md](pages/alliance/leadership/working-groups.md) — fetched; converted; unverified
 
 ### Alliance / Legal & Policies
@@ -844,8 +844,8 @@ Grouped by source breadcrumb labels where available, otherwise provisional inven
 
 ### Alliance / Membership
 
-- [Contact the Alliance · CHERI Alliance](https://cheri-alliance.github.io/alliance/membership/contact) → [pages/alliance/membership/contact.md](pages/alliance/membership/contact.md) — fetched; converted; unverified
-- [Contact the Alliance · CHERI Alliance](https://cheri-alliance.github.io/alliance/membership/contact/) → [pages/alliance/membership/contact.md](pages/alliance/membership/contact.md) — fetched; converted; unverified
+- [Contact the Alliance · CHERI Alliance](https://cheri-alliance.github.io/alliance/membership/contact) → [pages/reference/source-versions/contact.md](pages/reference/source-versions/contact.md) — fetched; converted; unverified
+- [Contact the Alliance · CHERI Alliance](https://cheri-alliance.github.io/alliance/membership/contact/) → [pages/reference/source-versions/contact.md](pages/reference/source-versions/contact.md) — fetched; converted; unverified
 - [Membership Benefits & Options · CHERI Alliance](https://cheri-alliance.github.io/alliance/membership/membership-benefits-and-options/) → [pages/alliance/membership/membership-benefits-and-options.md](pages/alliance/membership/membership-benefits-and-options.md) — fetched; converted; unverified
 - [Why Join? · CHERI Alliance](https://cheri-alliance.github.io/alliance/membership/why-join/) → [pages/alliance/membership/why-join.md](pages/alliance/membership/why-join.md) — fetched; converted; unverified
 
@@ -942,7 +942,7 @@ Grouped by source breadcrumb labels where available, otherwise provisional inven
 
 ### Homepage
 
-- [Software runs our world.It deserves stronger security foundations. · CHERI Alliance](https://cheri-alliance.github.io/) → [pages/index.md](pages/index.md) — fetched; converted; unverified
+- [Software runs our world.It deserves stronger security foundations. · CHERI Alliance](https://cheri-alliance.github.io/) → [pages/reference/source-versions/home.md](pages/reference/source-versions/home.md) — fetched; converted; unverified
 
 ### News & Events / Events & Archive
 
@@ -958,14 +958,14 @@ Grouped by source breadcrumb labels where available, otherwise provisional inven
 - [Webinar - CHERI & CRA Compliance · CHERI Alliance](https://cheri-alliance.github.io/events/webinar-cheri-cra-compliance/) → [_events/webinar-cheri-cra-compliance.md](_events/webinar-cheri-cra-compliance.md) — fetched; converted; unverified
 - [CHERI Blossoms Conference · CHERI Alliance](https://cheri-alliance.github.io/news-and-events/events-and-archive/cheri-blossoms/) → [pages/news-and-events/events-and-archive/cheri-blossoms.md](pages/news-and-events/events-and-archive/cheri-blossoms.md) — fetched; converted; unverified
 - [CHERITech Conference · CHERI Alliance](https://cheri-alliance.github.io/news-and-events/events-and-archive/cheritech/) → [pages/news-and-events/events-and-archive/cheritech.md](pages/news-and-events/events-and-archive/cheritech.md) — fetched; converted; unverified
-- [Past Events · CHERI Alliance](https://cheri-alliance.github.io/news-and-events/events-and-archive/past-events/) → [pages/news-and-events/events-and-archive/past-events.md](pages/news-and-events/events-and-archive/past-events.md) — fetched; converted; unverified
-- [Upcoming Events · CHERI Alliance](https://cheri-alliance.github.io/news-and-events/events-and-archive/upcoming-events/) → [pages/news-and-events/events-and-archive/upcoming-events.md](pages/news-and-events/events-and-archive/upcoming-events.md) — fetched; converted; unverified
+- [Past Events · CHERI Alliance](https://cheri-alliance.github.io/news-and-events/events-and-archive/past-events/) → [pages/reference/source-versions/past-events.md](pages/reference/source-versions/past-events.md) — fetched; converted; unverified
+- [Upcoming Events · CHERI Alliance](https://cheri-alliance.github.io/news-and-events/events-and-archive/upcoming-events/) → [pages/reference/source-versions/upcoming-events.md](pages/reference/source-versions/upcoming-events.md) — fetched; converted; unverified
 
 ### News & Events / News & Analysis
 
-- [Latest News · CHERI Alliance](https://cheri-alliance.github.io/news-and-events/news-and-analysis/latest-news/) → [pages/news-and-events/news-and-analysis/latest-news.md](pages/news-and-events/news-and-analysis/latest-news.md) — fetched; converted; unverified
+- [Latest News · CHERI Alliance](https://cheri-alliance.github.io/news-and-events/news-and-analysis/latest-news/) → [pages/reference/source-versions/latest-news.md](pages/reference/source-versions/latest-news.md) — fetched; converted; unverified
 - [Press Resources · CHERI Alliance](https://cheri-alliance.github.io/news-and-events/news-and-analysis/press-resources/) → [pages/news-and-events/news-and-analysis/press-resources.md](pages/news-and-events/news-and-analysis/press-resources.md) — fetched; converted; unverified
-- [Subscribe to our quarterly newsletter · CHERI Alliance](https://cheri-alliance.github.io/news-and-events/news-and-analysis/subscribe-newsletter/) → [pages/news-and-events/news-and-analysis/subscribe-newsletter.md](pages/news-and-events/news-and-analysis/subscribe-newsletter.md) — fetched; converted; unverified
+- [Subscribe to our quarterly newsletter · CHERI Alliance](https://cheri-alliance.github.io/news-and-events/news-and-analysis/subscribe-newsletter/) → [pages/reference/source-versions/newsletter.md](pages/reference/source-versions/newsletter.md) — fetched; converted; unverified
 - [A new ETSI standard could rewrite the memory-safety debate · CHERI Alliance](https://cheri-alliance.github.io/news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/) → [_news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate.md](_news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate.md) — fetched; converted; unverified
 - [AI has compressed the attack timeline · CHERI Alliance](https://cheri-alliance.github.io/news/ai-has-compressed-the-attack-timeline/) → [_news/ai-has-compressed-the-attack-timeline.md](_news/ai-has-compressed-the-attack-timeline.md) — fetched; converted; unverified
 - [Amid rising cyber threats, EnSilica joins the CHERI Alliance to enable safe & secure silicon · CHERI Alliance](https://cheri-alliance.github.io/news/amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon/) → [_news/amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon.md](_news/amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon.md) — fetched; converted; unverified
@@ -1015,7 +1015,7 @@ Grouped by source breadcrumb labels where available, otherwise provisional inven
 
 - [CHERIoT Software Engineer · CHERI Alliance](https://cheri-alliance.github.io/jobs/cheriot-software-engineer/) → [pages/jobs/cheriot-software-engineer.md](pages/jobs/cheriot-software-engineer.md) — fetched; converted; unverified
 - [Job Opportunities · CHERI Alliance](https://cheri-alliance.github.io/news-and-events/people-and-opportunities/job-opportunities/) → [pages/news-and-events/people-and-opportunities/job-opportunities.md](pages/news-and-events/people-and-opportunities/job-opportunities.md) — fetched; converted; unverified
-- [Speakers · CHERI Alliance](https://cheri-alliance.github.io/news-and-events/people-and-opportunities/speakers/) → [pages/news-and-events/people-and-opportunities/speakers.md](pages/news-and-events/people-and-opportunities/speakers.md) — fetched; converted; unverified
+- [Speakers · CHERI Alliance](https://cheri-alliance.github.io/news-and-events/people-and-opportunities/speakers/) → [pages/reference/source-versions/speakers.md](pages/reference/source-versions/speakers.md) — fetched; converted; unverified
 
 ### News & Events / Speakers
 

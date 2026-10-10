@@ -27,7 +27,7 @@
   "converted_url_mappings": 376,
   "distinct_source_page_files": 371,
   "paper_catalogue_entry_files": 15,
-  "distinct_generated_content_files": 451,
+  "distinct_generated_content_files": 474,
   "collections": {
     "_events": 10,
     "_groups": 16,
@@ -39,14 +39,18 @@
     "_people": 109,
     "_policies": 11,
     "_software": 10,
-    "pages": 139
+    "pages": 162
   },
   "conversions_by_source": {
     "cheri-alliance.github.io": 353,
     "cheri-alliance.org": 23
   },
+  "published_website_editions": 9,
+  "website_search_records": 453,
+  "website_checks": 964,
+  "website_browser_flows": 11,
   "unconverted_captured_html_mappings": 315,
-  "markdown_format_passes": 451,
+  "markdown_format_passes": 474,
   "main_body_comparison_passes": 376,
   "built_source_route_passes": 376,
   "regression_test_passes": 29,
@@ -56,7 +60,7 @@
   "failed_asset_acquisitions": 3,
   "minimal_source_named_records": 62,
   "live_source_passes": 371,
-  "local_link_checks": 53312,
+  "local_link_checks": 61428,
   "local_link_errors": 0,
   "browser_page_passes": 15,
   "fully_verified_pages": 0,

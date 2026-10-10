@@ -1,7 +1,7 @@
 <ul class="cards columns-{{ include.columns | default: 3 }}" aria-label="{{ include.label | escape }}">
   {% for item in include.items %}
     {% unless item.collection == 'redirects' or item.redirect_to or item.redirect %}
-    <li>
+    <li{% if include.directory %} data-directory-item data-search="{{ item.search | escape }}" data-roles="{{ item.roles | join: ' ' | escape }}" data-status="{{ item.status | escape }}"{% endif %}>
       {% assign link_target = item.target | default: '' | strip %}
       {% assign link_rel = item.rel | default: '' | strip %}
       {% if link_target == '_blank' %}
@@ -16,6 +16,7 @@
         {% assign link_url = link_url | relative_url %}
       {% endunless %}
       <a class="card" href="{{ link_url | escape }}"{% if link_target != '' %} target="{{ link_target | escape }}"{% endif %}{% if link_rel != '' %} rel="{{ link_rel | strip | escape }}"{% endif %}{% if link_target == '_blank' %} title="Opens in a new tab"{% endif %}>
+        {% if item.founding or item.membership != '' and item.membership %}<span class="card-badges">{% if item.founding %}<span class="badge">Founding member</span>{% endif %}{% if item.membership != '' and item.membership %}<span class="badge">{{ item.membership | escape }}</span>{% endif %}</span>{% endif %}
         {% if item.thumbnail.src %}
         <span class="card-media{% if item.collection == 'events' or item.collection == 'posts' or item.collection == 'news' %} card-media-landscape{% endif %}">
           {% assign image_url = item.thumbnail.src %}
@@ -29,6 +30,8 @@
         {% endif %}
         {% if include.heading == 'h3' %}<h3>{{ item.title | escape }}</h3>{% else %}<h2>{{ item.title | escape }}</h2>{% endif %}
         {% unless include.compact %}
+          {% if item.summary %}<p class="card-summary">{{ item.summary | escape }}</p>{% endif %}
+          {% if item.date_label %}<span class="meta">{{ item.date_label | escape }}{% if item.location != '' %}<br>{{ item.location | escape }}{% endif %}</span>{% endif %}
           {% if item.date %}<span class="meta">
             <time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: '%-d %B %Y' }}</time>{% if item['end-date'] %} &ndash; <time datetime="{{ item['end-date'] | date_to_xmlschema }}">{{ item['end-date'] | date: '%-d %B %Y' }}</time>{% endif %}
           </span>{% endif %}

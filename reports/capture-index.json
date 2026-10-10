@@ -161,8 +161,8 @@
       "retrieved_at": "2026-10-09T19:28:25.757998+00:00",
       "reason_if_unresolved": "Shared chrome, complete asset/link routing and rendered layout not yet validated",
       "canonical_url": "https://cheri-alliance.github.io/",
-      "local_path": "pages/index.md",
-      "local_route": "/",
+      "local_path": "pages/reference/source-versions/home.md",
+      "local_route": "/reference/source-versions/home/",
       "main_content_checks": "passed",
       "asset_mapping": {}
     },
@@ -1632,8 +1632,8 @@
       "asset_mapping": {
         "/assets/shared/source-assets/55d113947b39-vulnerability-handling.webp": "https://cheri-alliance.github.io/assets/images/content/shared/vulnerability-handling.webp"
       },
-      "local_path": "pages/adopt/business-case/cost-of-memory-unsafety.md",
-      "local_route": "/adopt/business-case/cost-of-memory-unsafety/",
+      "local_path": "pages/reference/source-versions/cost-of-memory-unsafety.md",
+      "local_route": "/reference/source-versions/cost-of-memory-unsafety/",
       "main_content_checks": "passed"
     },
     {
@@ -2442,8 +2442,8 @@
         "/assets/pages/alliance--leadership--members/0b3c19c294d6-lowrisc.webp": "https://cheri-alliance.github.io/assets/images/thumbnails/members/lowrisc.webp",
         "/assets/organisations/pa-consulting/8aba894151f8-logo.png": "https://cheri-alliance.github.io/assets/images/thumbnails/members/pa-consulting.webp"
       },
-      "local_path": "pages/alliance/leadership/members.md",
-      "local_route": "/alliance/leadership/members/",
+      "local_path": "pages/reference/source-versions/members.md",
+      "local_route": "/reference/source-versions/members/",
       "main_content_checks": "passed"
     },
     {
@@ -3209,8 +3209,8 @@
       "reason_if_unresolved": "Shared chrome, complete asset/link routing and rendered layout not yet validated",
       "title": "Contact the Alliance \u00b7 CHERI Alliance",
       "canonical_url": "https://cheri-alliance.github.io/alliance/membership/contact/",
-      "local_path": "pages/alliance/membership/contact.md",
-      "local_route": "/alliance/membership/contact/",
+      "local_path": "pages/reference/source-versions/contact.md",
+      "local_route": "/reference/source-versions/contact/",
       "main_content_checks": "passed",
       "source_breadcrumb": [
         "Alliance",
@@ -3240,8 +3240,8 @@
       "retrieved_at": "2026-10-09T19:29:25.015346+00:00",
       "reason_if_unresolved": "Shared chrome, complete asset/link routing and rendered layout not yet validated",
       "canonical_url": "https://cheri-alliance.github.io/alliance/membership/contact/",
-      "local_path": "pages/alliance/membership/contact.md",
-      "local_route": "/alliance/membership/contact/",
+      "local_path": "pages/reference/source-versions/contact.md",
+      "local_route": "/reference/source-versions/contact/",
       "main_content_checks": "passed",
       "source_breadcrumb": [
         "Alliance",
@@ -16017,8 +16017,8 @@
         "/assets/events/cheri-blossoms-conference-2025/ae43d5d29c6c-cheri-blossoms-conference-2025.webp": "https://cheri-alliance.github.io/assets/images/thumbnails/events/cheri-blossoms-conference-2025.webp",
         "/assets/events/cybersecurity-by-design-conference-2024/ab41005be5b4-cybersecurity-by-design-conference-2024.webp": "https://cheri-alliance.github.io/assets/images/thumbnails/events/cybersecurity-by-design-conference-2024.webp"
       },
-      "local_path": "pages/news-and-events/events-and-archive/past-events.md",
-      "local_route": "/news-and-events/events-and-archive/past-events/",
+      "local_path": "pages/reference/source-versions/past-events.md",
+      "local_route": "/reference/source-versions/past-events/",
       "main_content_checks": "passed"
     },
     {
@@ -16051,8 +16051,8 @@
         "/assets/events/cheritech26/408459d34c43-cheritech26.webp": "https://cheri-alliance.github.io/assets/images/thumbnails/events/cheritech26.webp",
         "/assets/events/cheri-blossoms-conference-2027/17bb25790594-cheri-blossoms-conference-2027.webp": "https://cheri-alliance.github.io/assets/images/thumbnails/events/cheri-blossoms-conference-2027.webp"
       },
-      "local_path": "pages/news-and-events/events-and-archive/upcoming-events.md",
-      "local_route": "/news-and-events/events-and-archive/upcoming-events/",
+      "local_path": "pages/reference/source-versions/upcoming-events.md",
+      "local_route": "/reference/source-versions/upcoming-events/",
       "main_content_checks": "passed"
     },
     {
@@ -16115,8 +16115,8 @@
         "/assets/news/uk-government-report-highlights-the-cheri-alliance/d35a036dc982-hero.jpg": "https://cheri-alliance.github.io/assets/images/content/news/uk-government-report-highlights-the-cheri-alliance/hero.jpg",
         "/assets/news/the-white-house-promotes-cheri-as-a-solution-for-memory-safety/55e2916c5bcf-hero.jpg": "https://cheri-alliance.github.io/assets/images/content/news/the-white-house-promotes-cheri-as-a-solution-for-memory-safety/hero.jpg"
       },
-      "local_path": "pages/news-and-events/news-and-analysis/latest-news.md",
-      "local_route": "/news-and-events/news-and-analysis/latest-news/",
+      "local_path": "pages/reference/source-versions/latest-news.md",
+      "local_route": "/reference/source-versions/latest-news/",
       "main_content_checks": "passed"
     },
     {
@@ -16171,8 +16171,8 @@
       "retrieved_at": "2026-10-09T19:29:29.072371+00:00",
       "reason_if_unresolved": "Shared chrome, complete asset/link routing and rendered layout not yet validated",
       "canonical_url": "https://cheri-alliance.github.io/news-and-events/news-and-analysis/subscribe-newsletter/",
-      "local_path": "pages/news-and-events/news-and-analysis/subscribe-newsletter.md",
-      "local_route": "/news-and-events/news-and-analysis/subscribe-newsletter/",
+      "local_path": "pages/reference/source-versions/newsletter.md",
+      "local_route": "/reference/source-versions/newsletter/",
       "main_content_checks": "passed",
       "source_breadcrumb": [
         "News & Events",
@@ -16302,8 +16302,8 @@
         "/assets/people/thomas-nyman/0e748fba225e-thomas-nyman.webp": "https://cheri-alliance.github.io/assets/images/thumbnails/people/thomas-nyman.webp",
         "/assets/pages/news-and-events--people-and-opportunities--speakers/6ac6b9e93f63-tora-fridholm.webp": "https://cheri-alliance.github.io/assets/images/thumbnails/people/tora-fridholm.webp"
       },
-      "local_path": "pages/news-and-events/people-and-opportunities/speakers.md",
-      "local_route": "/news-and-events/people-and-opportunities/speakers/",
+      "local_path": "pages/reference/source-versions/speakers.md",
+      "local_route": "/reference/source-versions/speakers/",
       "main_content_checks": "passed"
     },
     {

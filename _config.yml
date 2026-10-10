@@ -35,6 +35,7 @@ exclude:
 - docs
 - Gemfile
 - Gemfile.lock
+- vendor
 collections:
   people:
     output: true
@@ -74,11 +75,16 @@ defaults:
     layout: page
     render_with_liquid: false
     theme: light
+- scope:
+    path: pages/index.md
+  values:
+    theme: dark
 title: CHERI Alliance
-description: 'CHERI Alliance: hardware-enforced memory safety, secure software and the CHERI community.'
+description: 'CHERI Alliance: hardware-enforced memory safety, secure software and
+  the CHERI community.'
 lang: en-GB
-url: ''
-baseurl: ''
+url: https://adam-3bian.github.io
+baseurl: /cheri-alliance-content
 sass:
   sass_dir: _sass
   style: compressed
@@ -352,3 +358,24 @@ navigation:
       url: /policies/trademark/
     - title: Privacy
       url: /policies/privacy/
+  - title: Explore
+    links:
+    - title: Search
+      url: /search/
+    - title: People
+      url: /people/
+    - title: Organisations
+      url: /organisations/
+    - title: Hardware
+      url: /hardware/
+    - title: Software
+      url: /software/
+    - title: Papers
+      url: /papers/
+  social:
+  - title: LinkedIn
+    url: https://www.linkedin.com/company/cheri-alliance/
+    image:
+      src: /assets/images/social/linkedin.svg
+      alt: CHERI Alliance on LinkedIn
+timezone: Europe/London

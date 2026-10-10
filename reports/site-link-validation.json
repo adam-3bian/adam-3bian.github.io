@@ -1,6 +1,8 @@
 {
-  "html_files": 451,
-  "local_references": 53312,
+  "html_files": 479,
+  "local_references": 61428,
+  "active_stylesheets": 2,
+  "stylesheet_references": 7,
   "errors": [],
   "status": "passed"
 }

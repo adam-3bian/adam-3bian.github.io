@@ -1,0 +1,13 @@
+{
+  "target": "https://adam-3bian.github.io/cheri-alliance-content/",
+  "workflow": ".github/workflows/website.yml",
+  "repository_private": true,
+  "pages_enabled_at_last_check": false,
+  "preview_http_status_at_last_check": 404,
+  "pages_settings_api_status": 403,
+  "pages_settings_api_message": "Resource not accessible by integration",
+  "local_build_status": "passed",
+  "hosting_status": "not_enabled",
+  "public_domains_changed": false,
+  "forms": "visible disconnected previews"
+}

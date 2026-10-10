@@ -1560,12 +1560,22 @@
     "status": "passed"
   },
   {
+    "path": "pages/404.md",
+    "format": "yaml-front-matter-and-kramdown-only",
+    "status": "passed"
+  },
+  {
     "path": "pages/CHERI-seL4-Exercises.md",
     "format": "yaml-front-matter-and-kramdown-only",
     "status": "passed"
   },
   {
     "path": "pages/CHERI-seL4-Exercises/exercises/buffer-overflow-global.md",
+    "format": "yaml-front-matter-and-kramdown-only",
+    "status": "passed"
+  },
+  {
+    "path": "pages/adopt.md",
     "format": "yaml-front-matter-and-kramdown-only",
     "status": "passed"
   },
@@ -1665,6 +1675,11 @@
     "status": "passed"
   },
   {
+    "path": "pages/alliance.md",
+    "format": "yaml-front-matter-and-kramdown-only",
+    "status": "passed"
+  },
+  {
     "path": "pages/alliance/about-and-governance/accelerating-together.md",
     "format": "yaml-front-matter-and-kramdown-only",
     "status": "passed"
@@ -1716,6 +1731,11 @@
   },
   {
     "path": "pages/alliance/membership/why-join.md",
+    "format": "yaml-front-matter-and-kramdown-only",
+    "status": "passed"
+  },
+  {
+    "path": "pages/build.md",
     "format": "yaml-front-matter-and-kramdown-only",
     "status": "passed"
   },
@@ -1801,6 +1821,11 @@
   },
   {
     "path": "pages/competition-law-statement.md",
+    "format": "yaml-front-matter-and-kramdown-only",
+    "status": "passed"
+  },
+  {
+    "path": "pages/discover.md",
     "format": "yaml-front-matter-and-kramdown-only",
     "status": "passed"
   },
@@ -1940,6 +1965,21 @@
     "status": "passed"
   },
   {
+    "path": "pages/events.md",
+    "format": "yaml-front-matter-and-kramdown-only",
+    "status": "passed"
+  },
+  {
+    "path": "pages/groups.md",
+    "format": "yaml-front-matter-and-kramdown-only",
+    "status": "passed"
+  },
+  {
+    "path": "pages/guides.md",
+    "format": "yaml-front-matter-and-kramdown-only",
+    "status": "passed"
+  },
+  {
     "path": "pages/hardware.md",
     "format": "yaml-front-matter-and-kramdown-only",
     "status": "passed"
@@ -1966,6 +2006,11 @@
   },
   {
     "path": "pages/morello-return.md",
+    "format": "yaml-front-matter-and-kramdown-only",
+    "status": "passed"
+  },
+  {
+    "path": "pages/news-and-events.md",
     "format": "yaml-front-matter-and-kramdown-only",
     "status": "passed"
   },
@@ -2015,12 +2060,32 @@
     "status": "passed"
   },
   {
+    "path": "pages/news.md",
+    "format": "yaml-front-matter-and-kramdown-only",
+    "status": "passed"
+  },
+  {
     "path": "pages/news/press.md",
     "format": "yaml-front-matter-and-kramdown-only",
     "status": "passed"
   },
   {
+    "path": "pages/organisations.md",
+    "format": "yaml-front-matter-and-kramdown-only",
+    "status": "passed"
+  },
+  {
     "path": "pages/papers.md",
+    "format": "yaml-front-matter-and-kramdown-only",
+    "status": "passed"
+  },
+  {
+    "path": "pages/people.md",
+    "format": "yaml-front-matter-and-kramdown-only",
+    "status": "passed"
+  },
+  {
+    "path": "pages/policies.md",
     "format": "yaml-front-matter-and-kramdown-only",
     "status": "passed"
   },
@@ -2241,6 +2306,56 @@
   },
   {
     "path": "pages/reference/linux-roadmap/toc.html.md",
+    "format": "yaml-front-matter-and-kramdown-only",
+    "status": "passed"
+  },
+  {
+    "path": "pages/reference/source-versions/contact.md",
+    "format": "yaml-front-matter-and-kramdown-only",
+    "status": "passed"
+  },
+  {
+    "path": "pages/reference/source-versions/cost-of-memory-unsafety.md",
+    "format": "yaml-front-matter-and-kramdown-only",
+    "status": "passed"
+  },
+  {
+    "path": "pages/reference/source-versions/home.md",
+    "format": "yaml-front-matter-and-kramdown-only",
+    "status": "passed"
+  },
+  {
+    "path": "pages/reference/source-versions/latest-news.md",
+    "format": "yaml-front-matter-and-kramdown-only",
+    "status": "passed"
+  },
+  {
+    "path": "pages/reference/source-versions/members.md",
+    "format": "yaml-front-matter-and-kramdown-only",
+    "status": "passed"
+  },
+  {
+    "path": "pages/reference/source-versions/newsletter.md",
+    "format": "yaml-front-matter-and-kramdown-only",
+    "status": "passed"
+  },
+  {
+    "path": "pages/reference/source-versions/past-events.md",
+    "format": "yaml-front-matter-and-kramdown-only",
+    "status": "passed"
+  },
+  {
+    "path": "pages/reference/source-versions/speakers.md",
+    "format": "yaml-front-matter-and-kramdown-only",
+    "status": "passed"
+  },
+  {
+    "path": "pages/reference/source-versions/upcoming-events.md",
+    "format": "yaml-front-matter-and-kramdown-only",
+    "status": "passed"
+  },
+  {
+    "path": "pages/search.md",
     "format": "yaml-front-matter-and-kramdown-only",
     "status": "passed"
   },

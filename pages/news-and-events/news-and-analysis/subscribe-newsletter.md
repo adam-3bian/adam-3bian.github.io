@@ -18,7 +18,9 @@ The CHERI ecosystem is moving fast. Get the latest news, milestones, events, and
 
 ---
 
-TBD include registration iframe
+The signup form below is a preview and does not subscribe you.
+
+[Subscribe through the published Alliance mailing list](https://cheri-alliance.kit.com/subscribe).
 
 ---
 

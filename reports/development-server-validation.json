@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "port": 4000,
+  "checks": [
+    "startup",
+    "home",
+    "people",
+    "project root with query",
+    "HEAD asset",
+    "Ctrl-C clean shutdown"
+  ]
+}

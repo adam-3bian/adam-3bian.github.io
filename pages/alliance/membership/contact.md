@@ -17,7 +17,9 @@ Contact the Alliance for membership, working groups, certification, events, medi
 ## Contact form
 {: id="contact-webform-title" }
 
-The Alliance contact form will appear here before publication.
+Use the enquiry form below to explore the contact options. This preview does not send messages.
+
+[Open the published Alliance contact form](https://cheri-alliance.org/contact/#contact_form).
 
 ## Help us route your message
 {: id="help-us-route-your-message" }

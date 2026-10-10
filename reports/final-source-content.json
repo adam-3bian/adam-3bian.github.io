@@ -1,7 +1,7 @@
 [
   {
     "source_url": "https://cheri-alliance.github.io/",
-    "path": "pages/index.md",
+    "path": "pages/reference/source-versions/home.md",
     "source_sha256": "bd6324e7bb32627965082e4f7e51bb27df33d8a1882e1d9b0d2a128a91c213d1",
     "selector": "main",
     "checks": {
@@ -775,7 +775,7 @@
   },
   {
     "source_url": "https://cheri-alliance.github.io/adopt/business-case/cost-of-memory-unsafety/",
-    "path": "pages/adopt/business-case/cost-of-memory-unsafety.md",
+    "path": "pages/reference/source-versions/cost-of-memory-unsafety.md",
     "source_sha256": "e33cccbe75e518c63b265ac5df479c06f044109a3f64fe90d4dd7ede01261343",
     "selector": "main",
     "checks": {
@@ -1153,7 +1153,7 @@
   },
   {
     "source_url": "https://cheri-alliance.github.io/alliance/leadership/members/",
-    "path": "pages/alliance/leadership/members.md",
+    "path": "pages/reference/source-versions/members.md",
     "source_sha256": "c2ff5b726ef0291605cc7b6f062cbb4a8ce4a25a8b91f1467ce8709a70e9f135",
     "selector": "main",
     "checks": {
@@ -1585,7 +1585,7 @@
   },
   {
     "source_url": "https://cheri-alliance.github.io/alliance/membership/contact",
-    "path": "pages/alliance/membership/contact.md",
+    "path": "pages/reference/source-versions/contact.md",
     "source_sha256": "432f1af9504b97a7bb69e6aa2fe8861eab45e2a9a1fe21e0a6d13d21aa385114",
     "selector": "main",
     "checks": {
@@ -1603,7 +1603,7 @@
   },
   {
     "source_url": "https://cheri-alliance.github.io/alliance/membership/contact/",
-    "path": "pages/alliance/membership/contact.md",
+    "path": "pages/reference/source-versions/contact.md",
     "source_sha256": "432f1af9504b97a7bb69e6aa2fe8861eab45e2a9a1fe21e0a6d13d21aa385114",
     "selector": "main",
     "checks": {
@@ -4303,7 +4303,7 @@
   },
   {
     "source_url": "https://cheri-alliance.github.io/news-and-events/events-and-archive/past-events/",
-    "path": "pages/news-and-events/events-and-archive/past-events.md",
+    "path": "pages/reference/source-versions/past-events.md",
     "source_sha256": "aa2d96d856c8074635783deda8890f41b860449e6ea884af3028d08936e89334",
     "selector": "main",
     "checks": {
@@ -4321,7 +4321,7 @@
   },
   {
     "source_url": "https://cheri-alliance.github.io/news-and-events/events-and-archive/upcoming-events/",
-    "path": "pages/news-and-events/events-and-archive/upcoming-events.md",
+    "path": "pages/reference/source-versions/upcoming-events.md",
     "source_sha256": "c42b0dec16c5c1e9b02e39f786ab4bad22613c6a46092e998119b7c9ec4ae456",
     "selector": "main",
     "checks": {
@@ -4339,7 +4339,7 @@
   },
   {
     "source_url": "https://cheri-alliance.github.io/news-and-events/news-and-analysis/latest-news/",
-    "path": "pages/news-and-events/news-and-analysis/latest-news.md",
+    "path": "pages/reference/source-versions/latest-news.md",
     "source_sha256": "c9f4ce66d96faeeeef867194a922f1300bca9b19e4dc0caa738acbab38b939e5",
     "selector": "main",
     "checks": {
@@ -4375,7 +4375,7 @@
   },
   {
     "source_url": "https://cheri-alliance.github.io/news-and-events/news-and-analysis/subscribe-newsletter/",
-    "path": "pages/news-and-events/news-and-analysis/subscribe-newsletter.md",
+    "path": "pages/reference/source-versions/newsletter.md",
     "source_sha256": "0c601bbc541e5979fbc2316c848bfa8339691bb446de4c613f025d31023a0662",
     "selector": "main",
     "checks": {
@@ -4411,7 +4411,7 @@
   },
   {
     "source_url": "https://cheri-alliance.github.io/news-and-events/people-and-opportunities/speakers/",
-    "path": "pages/news-and-events/people-and-opportunities/speakers.md",
+    "path": "pages/reference/source-versions/speakers.md",
     "source_sha256": "b76fb36dddc77641e7acef59425145b31e128608c7712b2891071a11cb12a001",
     "selector": "main",
     "checks": {

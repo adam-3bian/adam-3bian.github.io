@@ -101,6 +101,10 @@ derived = json.loads((ROOT/'reports/derived-content.json').read_text()) if (ROOT
 live = json.loads((ROOT/'reports/live-source-validation.json').read_text()) if (ROOT/'reports/live-source-validation.json').exists() else []
 source_body_checks = json.loads((ROOT/'reports/final-source-content.json').read_text()) if (ROOT/'reports/final-source-content.json').exists() else []
 local_links = json.loads((ROOT/'reports/site-link-validation.json').read_text()) if (ROOT/'reports/site-link-validation.json').exists() else {}
+website = json.loads((ROOT/'reports/website-validation.json').read_text()) if (ROOT/'reports/website-validation.json').exists() else {}
+website_browser = json.loads((ROOT/'reports/website-browser-validation.json').read_text()) if (ROOT/'reports/website-browser-validation.json').exists() else {}
+editions = json.loads((ROOT/'reports/website-editions.json').read_text())
+additional_pages = sum(collections.values()) - unique_files - paper_count - len(derived)
 assert all(r['status'] == 'passed' for r in format_rows)
 source_counts = Counter(r['source_site'] for r in rows if r.get('conversion_status') == 'converted')
 remaining_html = [r for r in rows if r.get('fetch_status') == 'fetched'
@@ -117,6 +121,8 @@ summary = {
     'converted_url_mappings': converted, 'distinct_source_page_files': unique_files,
     'paper_catalogue_entry_files': paper_count, 'distinct_generated_content_files': sum(collections.values()),
     'collections': collections, 'conversions_by_source': dict(source_counts),
+    'published_website_editions': len(editions), 'website_search_records': website.get('search_records'),
+    'website_checks': len(website.get('checks', [])), 'website_browser_flows': len(website_browser.get('flows', [])),
     'unconverted_captured_html_mappings': len(remaining_html),
     'markdown_format_passes': len(format_rows), 'main_body_comparison_passes': passed,
     'built_source_route_passes': build_passes, 'regression_test_passes': 29,
@@ -138,9 +144,9 @@ progress = f"""# CHERI content and authoring progress
 
 ## Current website
 
-The uploaded simplified-authoring starter supplies the theme, styles and navigation controls. Its demonstration content and placeholder images were not imported. Existing source bodies and collections remain in use.
+The uploaded simplified-authoring starter supplies the theme, styles and navigation controls. Its demonstration content and placeholder images were not imported. Existing collections and full source bodies remain in use. The complete site adds responsive heroes/profile layouts, generated linked directories, full-body search, working section hubs, dated event lists, canonical URLs, sitemap, a branded 404 and disconnected contact/newsletter forms. A locked GitHub Actions build deploys the preview artifact; hosting activation is a separate repository setting documented in docs/DEPLOYMENT.md.
 
-{sum(collections.values())} editorial Markdown files: {unique_files} distinct complete source-page bodies, {paper_count} full published paper catalogue entries, {len(derived)} minimal source-named people/organisation records, and three collection indexes.
+{sum(collections.values())} editorial Markdown files: {unique_files} distinct complete source-page bodies, {paper_count} full published paper catalogue entries, {len(derived)} minimal source-named people/organisation records, and {additional_pages} published editions, section hubs, directory/search/error pages. {len(editions)} original source bodies are retained as alternate reference versions while their primary routes use the declared published editions.
 
 """ + '\n'.join(f'- `{name}/`: {count} files.' for name, count in sorted(collections.items())) + f"""
 
@@ -154,25 +160,30 @@ Canonical filenames and URLs omit source hosts. Distinct alternate source versio
 - Complete captured source bodies: {len(source_body_checks)} URL mappings passed; checks include text order, heading IDs, paragraphs, lists, table cells, definitions, links, code and original image references.
 - Live source recheck: {sum(r['status']=='passed' for r in live)} distinct pages passed; {sum(r['status']=='changed' for r in live)} changed; {sum(r['status']=='failed' for r in live)} failed. Individual acquisition timestamps are in `reports/live-source-validation.json`.
 - HTTP builds: {build_passes} source mappings on {unique_files} routes, plus {paper_count} catalogue-entry routes, passed.
-- Local links: {local_links.get('local_references',0)} references across {local_links.get('html_files',0)} rendered pages; {len(local_links.get('errors',[]))} missing targets/anchors.
+- Local links: {local_links.get('local_references',0)} references across {local_links.get('html_files',0)} rendered pages, plus {local_links.get('stylesheet_references',0)} active CSS/font dependencies; {len(local_links.get('errors',[]))} missing targets/anchors.
+- Published website: {len(website.get('checks',[]))} checks passed; {website.get('search_records',0)} searchable pages, event chronology, directory counts, exact edition changes, disabled forms, canonical/sitemap routes, compatibility redirects and HTTP 404.
+- Browser user flows: {len(website_browser.get('flows',[]))} passed for search recovery, contributor search, role filters, keyboard navigation, responsive layouts, disconnected forms and JavaScript-free fallbacks.
+- Build: both the prepared runtime and the exact locked Bundler dependencies pass. Project-path and domain-root compatibility are validated; public domains are unchanged.
 - Relationships, roles, citation names and board references: `reports/entity-validation.json`.
 - Regression tests: 29 passed.
 - Browser: {browser_passes} desktop/mobile template scenarios passed visible source text, decoded original images, Poppins loading, overflow, menu and submenu checks. The requested starter theme supersedes earlier source pixel geometry checks.
 - Original assets: {summary['downloaded_asset_url_mappings']} acquired URL mappings; checksums verified over HTTP.
 
-Three source image 404s were repaired using original assets published for the same organisation/event; two source fragment typos now target actual published headings. These deliberate URL corrections are separate from content comparisons: `reports/source-image-repairs.json`, `reports/source-link-repairs.json`. Proven legacy profile/topic links resolve locally through `reports/source-route-aliases.json`. Source labels and complete body text remain unchanged.
+Three source image 404s were repaired using original assets published for the same organisation/event; two source fragment typos now target actual published headings. These deliberate URL corrections are separate from content comparisons: `reports/source-image-repairs.json`, `reports/source-link-repairs.json`. Proven legacy profile/topic links resolve locally through `reports/source-route-aliases.json`. Complete originals retain their source labels and body text. Published edition changes are explicit in website-editions.json and do not overwrite original source bodies.
 
 ## Coverage and remaining limits
 
 All {source_counts['cheri-alliance.github.io']} captured primary-site HTML mappings are converted. {source_counts['cheri-alliance.org']} original WordPress mappings are converted, including Hildebrand and three original-only articles. {len(remaining_html)} retained HTML mappings remain unconverted, including original archives, aliases and differing source versions. Migration-wide exhaustive discovery is not claimed.
 
-Paper entries contain complete catalogue citations, descriptions and original publication links. Full external PDFs remain unacquired; no full-paper migration is claimed. A literal source webinar-link placeholder and unsupported external source routes remain documented; real form endpoints stay external. No forms were submitted.
+Paper entries contain complete catalogue citations, descriptions and original publication links. Full external PDFs remain unacquired; no full-paper migration is claimed. The literal source webinar-link placeholder remains in its original source version; the published edition preserves its wording without an invented destination. Unsupported external source routes remain documented; preview forms are disconnected and published service links stay external. No forms were submitted.
 
 Sources retain individual timestamps; oversized original archives remain unread. Static frontier exhaustion does not prove complete JavaScript/query/export coverage. {len(rows)} URL records are inventoried; {status['failed']} historical acquisition failures remain recorded. The original ten-second crawl delay is honored.
 
 ## Authoring and evidence
 
 - Authoring schema: `docs/AUTHORING.md`; setup/build/check commands: `README_MIGRATION.md`.
+- Preview hosting and domain-path configuration: `docs/DEPLOYMENT.md`.
+- Published editions and site checks: `reports/website-editions.json`, `reports/website-validation.json`, `reports/website-browser-validation.json`.
 - Editorial requirements: `MIGRATION_SPEC.md`.
 - Capture provenance: `reports/capture-index.json`, `reports/source-manifest.csv`, `sitemap.json`.
 - Current source comparisons: `reports/final-source-content.json`, `reports/live-source-validation.json`.

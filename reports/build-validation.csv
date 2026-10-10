@@ -1,5 +1,5 @@
 url,local_route,http_status,built_content_checks
-https://cheri-alliance.github.io/,/,200,passed
+https://cheri-alliance.github.io/,/reference/source-versions/home/,200,passed
 https://cheri-alliance.github.io/CHERI-seL4-Exercises,/CHERI-seL4-Exercises/,200,passed
 https://cheri-alliance.github.io/CHERI-seL4-Exercises/,/CHERI-seL4-Exercises/,200,passed
 https://cheri-alliance.github.io/CHERI-seL4-Exercises/appendix/index.html,/reference/CHERI-seL4-Exercises/appendix/index.html,200,passed
@@ -42,7 +42,7 @@ https://cheri-alliance.github.io/adopt/assurance-and-adoption/cheri-enabled-prod
 https://cheri-alliance.github.io/adopt/assurance-and-adoption/cheri-enabled-products/x730/,/hardware/x730/,200,passed
 https://cheri-alliance.github.io/adopt/assurance-and-adoption/procurement/,/adopt/assurance-and-adoption/procurement/,200,passed
 https://cheri-alliance.github.io/adopt/business-case/adoption-costs-and-migration/,/adopt/business-case/adoption-costs-and-migration/,200,passed
-https://cheri-alliance.github.io/adopt/business-case/cost-of-memory-unsafety/,/adopt/business-case/cost-of-memory-unsafety/,200,passed
+https://cheri-alliance.github.io/adopt/business-case/cost-of-memory-unsafety/,/reference/source-versions/cost-of-memory-unsafety/,200,passed
 https://cheri-alliance.github.io/adopt/business-case/return-on-security-investment/,/adopt/business-case/return-on-security-investment/,200,passed
 https://cheri-alliance.github.io/adopt/business-case/the-business-case/,/adopt/business-case/the-business-case/,200,passed
 https://cheri-alliance.github.io/adopt/policy/critical-infrastructure-and-resilience/,/adopt/policy/critical-infrastructure-and-resilience/,200,passed
@@ -63,7 +63,7 @@ https://cheri-alliance.github.io/alliance/about-and-governance/mission-and-role/
 https://cheri-alliance.github.io/alliance/about-and-governance/trademark/,/policies/trademark/,200,passed
 https://cheri-alliance.github.io/alliance/leadership/ambassadors/,/alliance/leadership/ambassadors/,200,passed
 https://cheri-alliance.github.io/alliance/leadership/governing-board/,/alliance/leadership/governing-board/,200,passed
-https://cheri-alliance.github.io/alliance/leadership/members/,/alliance/leadership/members/,200,passed
+https://cheri-alliance.github.io/alliance/leadership/members/,/reference/source-versions/members/,200,passed
 https://cheri-alliance.github.io/alliance/leadership/working-groups/,/alliance/leadership/working-groups/,200,passed
 https://cheri-alliance.github.io/alliance/leadership/working-groups/certification-working-group/,/groups/certification-working-group/,200,passed
 https://cheri-alliance.github.io/alliance/leadership/working-groups/cheri-c-cplusplus/,/groups/cheri-c-cplusplus/,200,passed
@@ -87,8 +87,8 @@ https://cheri-alliance.github.io/alliance/legal-and-policies/export-controls/,/p
 https://cheri-alliance.github.io/alliance/legal-and-policies/intellectual-property-policy/,/policies/intellectual-property-policy/,200,passed
 https://cheri-alliance.github.io/alliance/legal-and-policies/privacy/,/policies/privacy/,200,passed
 https://cheri-alliance.github.io/alliance/legal-and-policies/trademark-policy/,/policies/trademark-policy/,200,passed
-https://cheri-alliance.github.io/alliance/membership/contact,/alliance/membership/contact/,200,passed
-https://cheri-alliance.github.io/alliance/membership/contact/,/alliance/membership/contact/,200,passed
+https://cheri-alliance.github.io/alliance/membership/contact,/reference/source-versions/contact/,200,passed
+https://cheri-alliance.github.io/alliance/membership/contact/,/reference/source-versions/contact/,200,passed
 https://cheri-alliance.github.io/alliance/membership/membership-benefits-and-options/,/alliance/membership/membership-benefits-and-options/,200,passed
 https://cheri-alliance.github.io/alliance/membership/why-join/,/alliance/membership/why-join/,200,passed
 https://cheri-alliance.github.io/build/developers/build-compartments/,/guides/build-compartments/,200,passed
@@ -238,13 +238,13 @@ https://cheri-alliance.github.io/members/wyvern-global/,/organisations/wyvern-gl
 https://cheri-alliance.github.io/members/zaya/,/organisations/zaya/,200,passed
 https://cheri-alliance.github.io/news-and-events/events-and-archive/cheri-blossoms/,/news-and-events/events-and-archive/cheri-blossoms/,200,passed
 https://cheri-alliance.github.io/news-and-events/events-and-archive/cheritech/,/news-and-events/events-and-archive/cheritech/,200,passed
-https://cheri-alliance.github.io/news-and-events/events-and-archive/past-events/,/news-and-events/events-and-archive/past-events/,200,passed
-https://cheri-alliance.github.io/news-and-events/events-and-archive/upcoming-events/,/news-and-events/events-and-archive/upcoming-events/,200,passed
-https://cheri-alliance.github.io/news-and-events/news-and-analysis/latest-news/,/news-and-events/news-and-analysis/latest-news/,200,passed
+https://cheri-alliance.github.io/news-and-events/events-and-archive/past-events/,/reference/source-versions/past-events/,200,passed
+https://cheri-alliance.github.io/news-and-events/events-and-archive/upcoming-events/,/reference/source-versions/upcoming-events/,200,passed
+https://cheri-alliance.github.io/news-and-events/news-and-analysis/latest-news/,/reference/source-versions/latest-news/,200,passed
 https://cheri-alliance.github.io/news-and-events/news-and-analysis/press-resources/,/news-and-events/news-and-analysis/press-resources/,200,passed
-https://cheri-alliance.github.io/news-and-events/news-and-analysis/subscribe-newsletter/,/news-and-events/news-and-analysis/subscribe-newsletter/,200,passed
+https://cheri-alliance.github.io/news-and-events/news-and-analysis/subscribe-newsletter/,/reference/source-versions/newsletter/,200,passed
 https://cheri-alliance.github.io/news-and-events/people-and-opportunities/job-opportunities/,/news-and-events/people-and-opportunities/job-opportunities/,200,passed
-https://cheri-alliance.github.io/news-and-events/people-and-opportunities/speakers/,/news-and-events/people-and-opportunities/speakers/,200,passed
+https://cheri-alliance.github.io/news-and-events/people-and-opportunities/speakers/,/reference/source-versions/speakers/,200,passed
 https://cheri-alliance.github.io/news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/,/news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/,200,passed
 https://cheri-alliance.github.io/news/ai-has-compressed-the-attack-timeline/,/news/ai-has-compressed-the-attack-timeline/,200,passed
 https://cheri-alliance.github.io/news/amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon/,/news/amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon/,200,passed

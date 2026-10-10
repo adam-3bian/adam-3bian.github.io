@@ -9,7 +9,7 @@ permalink: /
 Enabled by CHERI.
 {: .page-hero-summary }
 
-CHERI in an **open** security technology, that enhances processors with hardware-enforced mechanisms to help software manage memory more safely, contain vulnerabilities, and reduce the impact of attacks.
+CHERI is an **open** security technology, that enhances processors with hardware-enforced mechanisms to help software manage memory more safely, contain vulnerabilities, and reduce the impact of attacks.
 
 ## Protect your organisation
 {: id="protect-your-organisation" }
@@ -36,7 +36,7 @@ For semiconductor, IP, software, tools, architects and developers.
 
 - [Why do you need CHERI](/discover/why-cheri/why-cheri/)
 - [Bringing CHERI to your product](/discover/understand/adapt-products/)
-- [Getting started with the technical work](/)
+- [Getting started with the technical work](/build/)
 
 ---
 
@@ -105,19 +105,19 @@ Join the organisations helping make secure computing the norm.
 
 
 
-### [Developer section](https://cheri-alliance.github.io/alliance/build/)
+### [Developer section](/build/)
 {: .related-pages-item-title }
 
 
 
 
 
-[Ressources and knowledge to develop with CHERI.](https://cheri-alliance.github.io/alliance/build/)
+[Ressources and knowledge to develop with CHERI.](/build/)
 {: .related-pages-item-summary }
 
 
 
-[Read this page](https://cheri-alliance.github.io/alliance/build/)
+[Read this page](/build/)
 {: .source-card-label }
 
 

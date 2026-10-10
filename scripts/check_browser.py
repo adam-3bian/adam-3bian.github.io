@@ -5,12 +5,13 @@ from pathlib import Path
 from functools import partial
 from http.server import ThreadingHTTPServer,SimpleHTTPRequestHandler
 from playwright.sync_api import sync_playwright
+from site_server import SiteHandler,SITE,metadata
 ROOT=Path(__file__).resolve().parents[1]
 class Quiet(SimpleHTTPRequestHandler):
     def log_message(self,*args):pass
-server=ThreadingHTTPServer(('127.0.0.1',0),partial(Quiet,directory=str(ROOT/'_site')))
+server=ThreadingHTTPServer(('127.0.0.1',0),SiteHandler)
 threading.Thread(target=server.serve_forever,daemon=True).start()
-base=f'http://127.0.0.1:{server.server_port}'
+base=f'http://127.0.0.1:{server.server_port}'+metadata()['baseurl'].rstrip('/')
 paths=['/','/alliance/leadership/members/','/alliance/leadership/governing-board/',
        '/organisations/codasip/','/organisations/pa-consulting/','/organisations/hildebrand/',
        '/organisations/dsit/','/people/robert-watson/','/people/ben-laurie/',

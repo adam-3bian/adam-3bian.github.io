@@ -33,6 +33,17 @@ def canonical_signature(source,routes):
     output['links']=links
     return output
 
+def without_baseurl(soup, baseurl):
+    """Normalize a known deployment prefix before immutable source comparison."""
+    baseurl=baseurl.rstrip('/')
+    if not baseurl:return soup
+    for element in soup.select('[href],[src]'):
+        for attr in ('href','src'):
+            value=element.get(attr,'')
+            if value==baseurl or value.startswith(baseurl+'/'):
+                element[attr]=value[len(baseurl):] or '/'
+    return soup
+
 def collections():
     names=yaml.safe_load((ROOT/'_config.yml').read_text())['collections']
     return {name:{p.stem:{'path':str(p.relative_to(ROOT)),'meta':document(str(p.relative_to(ROOT)))[0]}

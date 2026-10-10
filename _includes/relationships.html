@@ -1,37 +1,37 @@
 {% if page.linked_organizations.size > 0 %}
 <section class="related-content" data-relationship="organization" aria-labelledby="organizations-title">
   <h2 id="organizations-title">Organisations</h2>
-  {% include listing.html items=page.linked_organizations label="Organisations" compact=true columns=3 %}
+  {% include listing.html items=page.linked_organizations label="Organisations" heading="h3" compact=true columns=3 %}
 </section>
 {% endif %}
 {% if page.linked_speakers.size > 0 %}
 <section class="related-content" data-relationship="speakers" aria-labelledby="speakers-title">
   <h2 id="speakers-title">Speakers</h2>
-  {% include listing.html items=page.linked_speakers label="Speakers" compact=true columns=3 %}
+  {% include listing.html items=page.linked_speakers label="Speakers" heading="h3" compact=true columns=3 %}
 </section>
 {% endif %}
 {% if page.linked_authors.size > 0 %}
 <section class="related-content" data-relationship="authors" aria-labelledby="authors-title">
   <h2 id="authors-title">Authors</h2>
-  {% include listing.html items=page.linked_authors label="Authors" compact=true columns=3 %}
+  {% include listing.html items=page.linked_authors label="Authors" heading="h3" compact=true columns=3 %}
 </section>
 {% endif %}
 {% if page.related_events.size > 0 %}
 <section class="related-content" data-relationship="events" aria-labelledby="events-title">
   <h2 id="events-title">Events</h2>
-  {% include listing.html items=page.related_events label="Events" compact=true columns=3 %}
+  {% include listing.html items=page.related_events label="Events" heading="h3" compact=true columns=3 %}
 </section>
 {% endif %}
 {% if page.related_papers.size > 0 %}
 <section class="related-content" data-relationship="papers" aria-labelledby="papers-title">
   <h2 id="papers-title">Publications</h2>
-  {% include listing.html items=page.related_papers label="Publications" compact=true columns=2 %}
+  {% include listing.html items=page.related_papers label="Publications" heading="h3" compact=true columns=2 %}
 </section>
 {% endif %}
 {% if page.related_people.size > 0 %}
 <section class="related-content" data-relationship="people" aria-labelledby="people-title">
   <h2 id="people-title">People</h2>
-  {% include listing.html items=page.related_people label="People" compact=true columns=3 %}
+  {% include listing.html items=page.related_people label="People" heading="h3" compact=true columns=3 %}
 </section>
 {% endif %}
 

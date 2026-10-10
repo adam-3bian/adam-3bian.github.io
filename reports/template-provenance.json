@@ -137,7 +137,9 @@
     "Page/default layouts render complete Markdown bodies and generated relationships",
     "Typography uses retained original local Poppins fonts",
     "Footer uses published Alliance trademark statement",
-    "Source card presentation and Markdown image roles supported"
+    "Source card presentation and Markdown image roles supported",
+    "Responsive source-preserving heroes and profiles, generated directory filters, client-side full-body search and disconnected preview forms",
+    "Project-base-path-aware assets, canonical URLs, sitemap, 404 and GitHub Actions Pages deployment"
   ],
   "excluded": [
     "Sample content and fabricated profiles",

@@ -1,14 +1,15 @@
 [
   {
     "source_url": "https://cheri-alliance.github.io/",
-    "path": "pages/index.md",
+    "path": "pages/reference/source-versions/home.md",
     "checked_at": "2026-10-10T01:14:17.911075+00:00",
     "http_status": 200,
     "final_url": "https://cheri-alliance.github.io/",
     "snapshot_path": "sources/live-final-pass/cheri-alliance.github.io/2f14844a8ee75b0ad8717c7379de33971d98490aaba77142abeff949e87c1a96.html",
     "sha256": "bd6324e7bb32627965082e4f7e51bb27df33d8a1882e1d9b0d2a128a91c213d1",
     "status": "passed",
-    "differences": {}
+    "differences": {},
+    "scope_note": "Complete source version retained; published edition changes are recorded separately in website-editions.json. Live check timestamp and evidence are unchanged."
   },
   {
     "source_url": "https://cheri-alliance.github.io/CHERI-seL4-Exercises",
@@ -452,14 +453,15 @@
   },
   {
     "source_url": "https://cheri-alliance.github.io/adopt/business-case/cost-of-memory-unsafety/",
-    "path": "pages/adopt/business-case/cost-of-memory-unsafety.md",
+    "path": "pages/reference/source-versions/cost-of-memory-unsafety.md",
     "checked_at": "2026-10-10T01:14:38.520707+00:00",
     "http_status": 200,
     "final_url": "https://cheri-alliance.github.io/adopt/business-case/cost-of-memory-unsafety/",
     "snapshot_path": "sources/live-final-pass/cheri-alliance.github.io/dedf1e5d2103096a70818e182d1bc6a11c0097a5d7ec23fd163d3c0d2104f70e.html",
     "sha256": "e33cccbe75e518c63b265ac5df479c06f044109a3f64fe90d4dd7ede01261343",
     "status": "passed",
-    "differences": {}
+    "differences": {},
+    "scope_note": "Complete source version retained; published edition changes are recorded separately in website-editions.json. Live check timestamp and evidence are unchanged."
   },
   {
     "source_url": "https://cheri-alliance.github.io/adopt/business-case/return-on-security-investment/",
@@ -683,14 +685,15 @@
   },
   {
     "source_url": "https://cheri-alliance.github.io/alliance/leadership/members/",
-    "path": "pages/alliance/leadership/members.md",
+    "path": "pages/reference/source-versions/members.md",
     "checked_at": "2026-10-10T01:14:48.540931+00:00",
     "http_status": 200,
     "final_url": "https://cheri-alliance.github.io/alliance/leadership/members/",
     "snapshot_path": "sources/live-final-pass/cheri-alliance.github.io/29c9a7b8f2881fd850b9237743b7cf8f150d09df013cd2980190414c6f16f674.html",
     "sha256": "c2ff5b726ef0291605cc7b6f062cbb4a8ce4a25a8b91f1467ce8709a70e9f135",
     "status": "passed",
-    "differences": {}
+    "differences": {},
+    "scope_note": "Complete source version retained; published edition changes are recorded separately in website-editions.json. Live check timestamp and evidence are unchanged."
   },
   {
     "source_url": "https://cheri-alliance.github.io/alliance/leadership/working-groups/",
@@ -947,14 +950,15 @@
   },
   {
     "source_url": "https://cheri-alliance.github.io/alliance/membership/contact",
-    "path": "pages/alliance/membership/contact.md",
+    "path": "pages/reference/source-versions/contact.md",
     "checked_at": "2026-10-10T01:14:59.606496+00:00",
     "http_status": 200,
     "final_url": "https://cheri-alliance.github.io/alliance/membership/contact/",
     "snapshot_path": "sources/live-final-pass/cheri-alliance.github.io/c369b067e5f5cd27407182852f87056711ea7793108ad234cd19f3ec7cbaff82.html",
     "sha256": "432f1af9504b97a7bb69e6aa2fe8861eab45e2a9a1fe21e0a6d13d21aa385114",
     "status": "passed",
-    "differences": {}
+    "differences": {},
+    "scope_note": "Complete source version retained; published edition changes are recorded separately in website-editions.json. Live check timestamp and evidence are unchanged."
   },
   {
     "source_url": "https://cheri-alliance.github.io/alliance/membership/membership-benefits-and-options/",
@@ -2586,36 +2590,39 @@
   },
   {
     "source_url": "https://cheri-alliance.github.io/news-and-events/events-and-archive/past-events/",
-    "path": "pages/news-and-events/events-and-archive/past-events.md",
+    "path": "pages/reference/source-versions/past-events.md",
     "checked_at": "2026-10-10T01:16:15.590348+00:00",
     "http_status": 200,
     "final_url": "https://cheri-alliance.github.io/news-and-events/events-and-archive/past-events/",
     "snapshot_path": "sources/live-final-pass/cheri-alliance.github.io/f091dea538cf2a56dc92b38b0ba4cbd707a03cd4eb798dbc8c79da9dac90b4ab.html",
     "sha256": "aa2d96d856c8074635783deda8890f41b860449e6ea884af3028d08936e89334",
     "status": "passed",
-    "differences": {}
+    "differences": {},
+    "scope_note": "Complete source version retained; published edition changes are recorded separately in website-editions.json. Live check timestamp and evidence are unchanged."
   },
   {
     "source_url": "https://cheri-alliance.github.io/news-and-events/events-and-archive/upcoming-events/",
-    "path": "pages/news-and-events/events-and-archive/upcoming-events.md",
+    "path": "pages/reference/source-versions/upcoming-events.md",
     "checked_at": "2026-10-10T01:16:16.048338+00:00",
     "http_status": 200,
     "final_url": "https://cheri-alliance.github.io/news-and-events/events-and-archive/upcoming-events/",
     "snapshot_path": "sources/live-final-pass/cheri-alliance.github.io/dd1814412c001ed92802c94d0a96fc8a7cb9d65adf7af4ca6032061a0572a7c4.html",
     "sha256": "c42b0dec16c5c1e9b02e39f786ab4bad22613c6a46092e998119b7c9ec4ae456",
     "status": "passed",
-    "differences": {}
+    "differences": {},
+    "scope_note": "Complete source version retained; published edition changes are recorded separately in website-editions.json. Live check timestamp and evidence are unchanged."
   },
   {
     "source_url": "https://cheri-alliance.github.io/news-and-events/news-and-analysis/latest-news/",
-    "path": "pages/news-and-events/news-and-analysis/latest-news.md",
+    "path": "pages/reference/source-versions/latest-news.md",
     "checked_at": "2026-10-10T01:16:16.639876+00:00",
     "http_status": 200,
     "final_url": "https://cheri-alliance.github.io/news-and-events/news-and-analysis/latest-news/",
     "snapshot_path": "sources/live-final-pass/cheri-alliance.github.io/6cc264aa4ae96f68625c8eb139f29a42045943ed86cff661d9768ea0075cf074.html",
     "sha256": "c9f4ce66d96faeeeef867194a922f1300bca9b19e4dc0caa738acbab38b939e5",
     "status": "passed",
-    "differences": {}
+    "differences": {},
+    "scope_note": "Complete source version retained; published edition changes are recorded separately in website-editions.json. Live check timestamp and evidence are unchanged."
   },
   {
     "source_url": "https://cheri-alliance.github.io/news-and-events/news-and-analysis/press-resources/",
@@ -2630,14 +2637,15 @@
   },
   {
     "source_url": "https://cheri-alliance.github.io/news-and-events/news-and-analysis/subscribe-newsletter/",
-    "path": "pages/news-and-events/news-and-analysis/subscribe-newsletter.md",
+    "path": "pages/reference/source-versions/newsletter.md",
     "checked_at": "2026-10-10T01:16:17.723182+00:00",
     "http_status": 200,
     "final_url": "https://cheri-alliance.github.io/news-and-events/news-and-analysis/subscribe-newsletter/",
     "snapshot_path": "sources/live-final-pass/cheri-alliance.github.io/5ce87edff13126e0f50a5ab51ab35722c1184689eb8d757587a9af18c89be8eb.html",
     "sha256": "0c601bbc541e5979fbc2316c848bfa8339691bb446de4c613f025d31023a0662",
     "status": "passed",
-    "differences": {}
+    "differences": {},
+    "scope_note": "Complete source version retained; published edition changes are recorded separately in website-editions.json. Live check timestamp and evidence are unchanged."
   },
   {
     "source_url": "https://cheri-alliance.github.io/news-and-events/people-and-opportunities/job-opportunities/",
@@ -2652,14 +2660,15 @@
   },
   {
     "source_url": "https://cheri-alliance.github.io/news-and-events/people-and-opportunities/speakers/",
-    "path": "pages/news-and-events/people-and-opportunities/speakers.md",
+    "path": "pages/reference/source-versions/speakers.md",
     "checked_at": "2026-10-10T01:16:18.653904+00:00",
     "http_status": 200,
     "final_url": "https://cheri-alliance.github.io/news-and-events/people-and-opportunities/speakers/",
     "snapshot_path": "sources/live-final-pass/cheri-alliance.github.io/f4625bc1d9e682d38f3eb8f5777590c7cc7dc5eeda4cae8c581a41bbccfea98d.html",
     "sha256": "b76fb36dddc77641e7acef59425145b31e128608c7712b2891071a11cb12a001",
     "status": "passed",
-    "differences": {}
+    "differences": {},
+    "scope_note": "Complete source version retained; published edition changes are recorded separately in website-editions.json. Live check timestamp and evidence are unchanged."
   },
   {
     "source_url": "https://cheri-alliance.github.io/news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/",

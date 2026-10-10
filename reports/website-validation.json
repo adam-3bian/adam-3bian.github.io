@@ -1,0 +1,4847 @@
+{
+  "status": "passed",
+  "baseurl": "/cheri-alliance-content",
+  "search_records": 453,
+  "directory_counts": {
+    "/people/": 109,
+    "/organisations/": 69,
+    "/alliance/leadership/members/": 52,
+    "/news-and-events/people-and-opportunities/speakers/": 60,
+    "/news/": 47,
+    "/events/": 10,
+    "/papers/": 15,
+    "/hardware/": 6,
+    "/software/": 10
+  },
+  "events_as_of": "2026-10-10",
+  "upcoming_events": 2,
+  "past_events": 8,
+  "checks": [
+    {
+      "check": "search routes are unique, titled and present",
+      "status": "passed",
+      "detail": 453
+    },
+    {
+      "check": "search omits archived editions and error pages",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/CHERI-seL4-Exercises/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/CHERI-seL4-Exercises/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/adopt/assurance-and-adoption/about-cheri-enabled/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/adopt/assurance-and-adoption/about-cheri-enabled/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/discover/resources/academic-papers/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/discover/resources/academic-papers/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/alliance/about-and-governance/accelerating-together/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/alliance/about-and-governance/accelerating-together/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/discover/understand/adapt-products/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/discover/understand/adapt-products/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/adopt/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/adopt/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/adopt/business-case/adoption-costs-and-migration/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/adopt/business-case/adoption-costs-and-migration/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/alliance/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/alliance/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/alliance/leadership/ambassadors/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/alliance/leadership/ambassadors/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-global/answers.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-global/answers.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/debug-and-disassemble/answers.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/debug-and-disassemble/answers.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-stack/answers.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-stack/answers.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/cheri-allocator/answers.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/cheri-allocator/answers.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/control-flow-pointer/answers.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/control-flow-pointer/answers.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/type-confusion/answers.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/type-confusion/answers.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/compile-and-run/answers.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/compile-and-run/answers.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/cheri-tags/answers.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/cheri-tags/answers.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/subobject-bounds/answers.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/subobject-bounds/answers.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/discover/why-cheri/approaches-to-memory-safety/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/discover/why-cheri/approaches-to-memory-safety/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/adopt/assurance-and-adoption/assurance-and-certification/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/adopt/assurance-and-adoption/assurance-and-certification/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/adopt/use-cases/automotive/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/adopt/use-cases/automotive/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/introduction/background.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/introduction/background.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/linux-roadmap/goals/bootloaders-firmware.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/linux-roadmap/goals/bootloaders-firmware.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/build/technology/bounds/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/build/technology/bounds/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/CHERI-seL4-Exercises/exercises/buffer-overflow-global/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/CHERI-seL4-Exercises/exercises/buffer-overflow-global/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/build/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/build/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/discover/history/cambridge-and-sri/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/discover/history/cambridge-and-sri/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/build/technology/capabilities/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/build/technology/capabilities/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/adopt/assurance-and-adoption/case-studies/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/adopt/assurance-and-adoption/case-studies/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/introduction/ccc.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/introduction/ccc.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/adopt/assurance-and-adoption/certification/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/adopt/assurance-and-adoption/certification/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/discover/understand/cheri-and-existing-software/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/discover/understand/cheri-and-existing-software/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/build/technology/cheri-and-rust-technical/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/build/technology/cheri-and-rust-technical/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/discover/why-cheri/cheri-and-rust/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/discover/why-cheri/cheri-and-rust/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news-and-events/events-and-archive/cheri-blossoms/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news-and-events/events-and-archive/cheri-blossoms/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/adopt/assurance-and-adoption/cheri-enabled-products/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/adopt/assurance-and-adoption/cheri-enabled-products/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/discover/understand/cheri-history/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/discover/understand/cheri-history/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/build/platforms/cheri-products/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/build/platforms/cheri-products/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/jobs/cheriot-software-engineer/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/jobs/cheriot-software-engineer/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news-and-events/events-and-archive/cheritech/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news-and-events/events-and-archive/cheritech/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/adopt/use-cases/cloud-and-data-centre/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/adopt/use-cases/cloud-and-data-centre/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/code-of-conduct/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/code-of-conduct/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/alliance/about-and-governance/collaboration-principles/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/alliance/about-and-governance/collaboration-principles/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/discover/history/commercialisation/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/discover/history/commercialisation/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/build/technology/compartmentalisation/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/build/technology/compartmentalisation/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/competition-law-statement/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/competition-law-statement/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/alliance/membership/contact/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/alliance/membership/contact/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/adopt/business-case/cost-of-memory-unsafety/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/adopt/business-case/cost-of-memory-unsafety/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/linux-roadmap/cover.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/linux-roadmap/cover.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/adopt/policy/critical-infrastructure-and-resilience/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/adopt/policy/critical-infrastructure-and-resilience/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/adopt/use-cases/critical-infrastructure/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/adopt/use-cases/critical-infrastructure/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/introduction/cross-compilation-execution.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/introduction/cross-compilation-execution.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/adopt/policy/cybersecurity-regulation/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/adopt/policy/cybersecurity-regulation/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/discover/history/darpa-programmes/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/discover/history/darpa-programmes/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/adopt/use-cases/defence-and-aerospace/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/adopt/use-cases/defence-and-aerospace/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/discover/history/development-of-cheri/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/discover/history/development-of-cheri/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/discover/resources/digital-security-by-design-archive/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/discover/resources/digital-security-by-design-archive/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/discover/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/discover/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/linux-roadmap/goals/distros.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/linux-roadmap/goals/distros.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/discover/resources/documentation-and-guides/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/discover/resources/documentation-and-guides/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/discover/history/early-capability-systems/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/discover/history/early-capability-systems/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/linux-roadmap/goals/emulation-crossbuild.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/linux-roadmap/goals/emulation-crossbuild.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/events/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/events/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/discover/understand/faq/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/discover/understand/faq/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/discover/history/formation-of-the-cheri-alliance/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/discover/history/formation-of-the-cheri-alliance/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/discover/history/future-direction/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/discover/history/future-direction/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/discover/resources/glossary/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/discover/resources/glossary/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/alliance/about-and-governance/governance/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/alliance/about-and-governance/governance/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/alliance/leadership/governing-board/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/alliance/leadership/governing-board/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/adopt/policy/government-guidance/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/adopt/policy/government-guidance/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/groups/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/groups/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/guides/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/guides/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/hardware/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/hardware/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/discover/understand/how-does-cheri-work/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/discover/understand/how-does-cheri-work/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/build/technology/hybrid-systems/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/build/technology/hybrid-systems/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/linux-roadmap/goals/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/linux-roadmap/goals/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/introduction/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/introduction/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-global/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-global/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/debug-and-disassemble/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/debug-and-disassemble/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-stack/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-stack/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/cheri-allocator/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/cheri-allocator/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/control-flow-pointer/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/control-flow-pointer/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/type-confusion/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/type-confusion/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/compile-and-run/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/compile-and-run/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/cheri-tags/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/cheri-tags/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/subobject-bounds/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/subobject-bounds/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/exercises/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/cover/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/cover/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/appendix/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/appendix/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/missions/uninitialized-stack-frame-control-flow/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/missions/uninitialized-stack-frame-control-flow/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/missions/buffer-overflow-control-flow/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/missions/buffer-overflow-control-flow/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/missions/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/missions/index.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/linux-roadmap/intro.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/linux-roadmap/intro.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/adopt/use-cases/iot-and-embedded/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/adopt/use-cases/iot-and-embedded/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news-and-events/people-and-opportunities/job-opportunities/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news-and-events/people-and-opportunities/job-opportunities/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/linux-roadmap/goals/kernel.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/linux-roadmap/goals/kernel.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news-and-events/news-and-analysis/latest-news/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news-and-events/news-and-analysis/latest-news/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/legal-and-policies/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/legal-and-policies/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/linux-roadmap/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/linux-roadmap/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/alliance/leadership/members/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/alliance/leadership/members/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/alliance/membership/membership-benefits-and-options/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/alliance/membership/membership-benefits-and-options/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/alliance/about-and-governance/mission-and-role/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/alliance/about-and-governance/mission-and-role/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/discover/history/morello-history/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/discover/history/morello-history/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/morello-return/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/morello-return/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news-and-events/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news-and-events/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/papers/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/papers/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news-and-events/events-and-archive/past-events/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news-and-events/events-and-archive/past-events/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/build/technology/permissions/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/build/technology/permissions/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/build/platforms/platform-comparison/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/build/platforms/platform-comparison/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/policies/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/policies/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news-and-events/news-and-analysis/press-resources/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news-and-events/news-and-analysis/press-resources/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/press/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/press/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/linux-roadmap/print.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/linux-roadmap/print.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/CHERI-seL4-Exercises/print.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/CHERI-seL4-Exercises/print.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/linux-roadmap/prior-work.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/linux-roadmap/prior-work.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/adopt/assurance-and-adoption/procurement/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/adopt/assurance-and-adoption/procurement/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/build/technology/provenance/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/build/technology/provenance/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/build/technology/pure-capability-systems/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/build/technology/pure-capability-systems/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/discover/resources/reports-and-white-papers/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/discover/resources/reports-and-white-papers/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/linux-roadmap/research.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/linux-roadmap/research.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/adopt/business-case/return-on-security-investment/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/adopt/business-case/return-on-security-investment/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/discover/history/risc-v-and-embedded-development/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/discover/history/risc-v-and-embedded-development/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/adopt/use-cases/safety-critical-systems/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/adopt/use-cases/safety-critical-systems/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/build/technology/sealing/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/build/technology/sealing/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/build/software-ecosystem/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/build/software-ecosystem/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/software/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/software/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/build/technology/spatial-memory-safety/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/build/technology/spatial-memory-safety/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news-and-events/people-and-opportunities/speakers/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news-and-events/people-and-opportunities/speakers/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/discover/resources/specifications/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/discover/resources/specifications/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news-and-events/news-and-analysis/subscribe-newsletter/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news-and-events/news-and-analysis/subscribe-newsletter/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/build/technology/tags-and-validity/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/build/technology/tags-and-validity/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/linux-roadmap/techreports.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/linux-roadmap/techreports.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/build/technology/temporal-memory-safety/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/build/technology/temporal-memory-safety/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/linux-roadmap/goals/testing.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/linux-roadmap/goals/testing.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/adopt/business-case/the-business-case/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/adopt/business-case/the-business-case/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/linux-roadmap/toc.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/linux-roadmap/toc.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/linux-roadmap/goals/toolchain.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/linux-roadmap/goals/toolchain.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/trademark/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/trademark/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/discover/history/ukri-digital-security-by-design/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/discover/history/ukri-digital-security-by-design/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news-and-events/events-and-archive/upcoming-events/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news-and-events/events-and-archive/upcoming-events/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/reference/linux-roadmap/goals/user-space.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/reference/linux-roadmap/goals/user-space.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/discover/resources/videos-and-presentations/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/discover/resources/videos-and-presentations/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/discover/why-cheri/vulnerabilities-in-everyday-technology/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/discover/why-cheri/vulnerabilities-in-everyday-technology/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/discover/why-cheri/why-cheri/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/discover/why-cheri/why-cheri/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/discover/why-cheri/why-existing-defences-are-not-enough/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/discover/why-cheri/why-existing-defences-are-not-enough/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/alliance/membership/why-join/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/alliance/membership/why-join/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/alliance/leadership/working-groups/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/alliance/leadership/working-groups/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/a-theodore-markettos/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/a-theodore-markettos/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/adam-finney/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/adam-finney/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/alastair-beresford/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/alastair-beresford/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/alex-rebert/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/alex-rebert/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/alex-richardson/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/alex-richardson/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/alexander-voyevoda/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/alexander-voyevoda/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/alexandre-joannou/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/alexandre-joannou/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/alfredo-mazzinghi/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/alfredo-mazzinghi/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/allison-randal/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/allison-randal/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/andrew-lindsay/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/andrew-lindsay/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/andrew-murray/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/andrew-murray/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/andy-moore/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/andy-moore/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/anthony-fox/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/anthony-fox/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/ashish-darbari/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/ashish-darbari/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/ben-fletcher/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/ben-fletcher/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/ben-laurie/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/ben-laurie/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/bradley-finn/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/bradley-finn/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/brett-f-gutstein/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/brett-f-gutstein/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/brian-campbell/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/brian-campbell/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/brooks-davis/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/brooks-davis/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/carl-shaw/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/carl-shaw/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/dave-harcourt/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/dave-harcourt/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/david-chisnall/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/david-chisnall/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/david-musliner/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/david-musliner/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/dmitriy-yeliseyev/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/dmitriy-yeliseyev/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/domagoj-stolfa/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/domagoj-stolfa/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/donato-ferraro/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/donato-ferraro/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/edoardo-marangoni/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/edoardo-marangoni/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/edward-tomasz-napieraa/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/edward-tomasz-napieraa/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/gavin-ferris/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/gavin-ferris/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/graeme-barnes/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/graeme-barnes/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/graeme-jenkinson/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/graeme-jenkinson/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/hamed-okhravi/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/hamed-okhravi/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/haydn-povey/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/haydn-povey/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/hesham-almatary/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/hesham-almatary/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/hongyan-xia/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/hongyan-xia/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/hugo-lefeuvre/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/hugo-lefeuvre/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/hugo-vincent/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/hugo-vincent/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/ian-stark/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/ian-stark/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/javier-orensanz-martinez/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/javier-orensanz-martinez/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/jennifer-jackson/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/jennifer-jackson/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/jeremy-singer/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/jeremy-singer/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/jessica-clarke/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/jessica-clarke/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/jianyi-cheng/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/jianyi-cheng/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/johannes-muller/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/johannes-muller/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/john-baldwin/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/john-baldwin/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/john-goodacre/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/john-goodacre/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/john-thomson/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/john-thomson/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/jonathan-anderson/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/jonathan-anderson/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/jonathan-woodruff/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/jonathan-woodruff/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/joshua-lant/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/joshua-lant/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/ka-wing-li/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/ka-wing-li/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/kathleen-fisher/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/kathleen-fisher/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/kayvan-memarian/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/kayvan-memarian/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/kevin-brodsky/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/kevin-brodsky/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/khilan-gudka/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/khilan-gudka/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/konrad-witaszczyk/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/konrad-witaszczyk/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/kunyan-liu/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/kunyan-liu/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/kyndylan-nienhuis/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/kyndylan-nienhuis/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/laurence-tratt/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/laurence-tratt/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/louis-emile-ploix/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/louis-emile-ploix/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/luca-muller/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/luca-muller/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/lucian-paul-trifu/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/lucian-paul-trifu/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/maika-fohrenbach/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/maika-fohrenbach/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/manu-ravishankar/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/manu-ravishankar/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/margo-seltzer/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/margo-seltzer/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/mark-batty/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/mark-batty/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/mark-hill/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/mark-hill/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/mark-johnston/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/mark-johnston/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/marno-van-der-maas/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/marno-van-der-maas/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/martin-atkins/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/martin-atkins/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/matthew-naylor/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/matthew-naylor/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/merve-gulmez/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/merve-gulmez/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/michael-roe/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/michael-roe/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/mike-eftimakis/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/mike-eftimakis/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/mike-halsall/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/mike-halsall/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/munraj-vadera/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/munraj-vadera/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/murali-vijayaraghavan/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/murali-vijayaraghavan/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/murat-cakmak/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/murat-cakmak/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/nathaniel-wesley-filardo/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/nathaniel-wesley-filardo/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/nirav-dave/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/nirav-dave/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/ollie-whitehouse/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/ollie-whitehouse/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/paul-metzger/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/paul-metzger/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/paul-waller/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/paul-waller/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/peter-cox/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/peter-cox/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/peter-g-neumann/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/peter-g-neumann/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/peter-rugg/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/peter-rugg/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/peter-sewell/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/peter-sewell/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/phil-day/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/phil-day/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/ricardo-almeida/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/ricardo-almeida/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/richard-grisenthwaite/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/richard-grisenthwaite/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/robert-m-norton/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/robert-m-norton/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/robert-norton-wright/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/robert-norton-wright/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/robert-watson/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/robert-watson/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/saar-amar/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/saar-amar/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/sam-ainsworth/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/sam-ainsworth/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/sam-cater/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/sam-cater/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/samuel-stark/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/samuel-stark/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/simon-moore/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/simon-moore/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/stacey-son/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/stacey-son/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/steven-j-murdoch/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/steven-j-murdoch/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/tariq-kurd/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/tariq-kurd/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/thomas-bauereiss/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/thomas-bauereiss/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/thomas-nyman/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/thomas-nyman/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/timothy-m-jones/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/timothy-m-jones/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/tony-chen/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/tony-chen/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/tora-fridholm/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/tora-fridholm/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/vadim-zaliva/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/vadim-zaliva/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/people/yucong-tao/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/people/yucong-tao/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/the-white-house-promotes-cheri-as-a-solution-for-memory-safety/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/the-white-house-promotes-cheri-as-a-solution-for-memory-safety/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/uk-government-report-highlights-the-cheri-alliance/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/uk-government-report-highlights-the-cheri-alliance/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/building-a-safer-digital-future/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/building-a-safer-digital-future/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/unlocking-the-future-a-roadmap-for-cheri-technology-advancement/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/unlocking-the-future-a-roadmap-for-cheri-technology-advancement/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/bt-group-joins-the-cheri-alliance-to-advance-cybersecurity-innovation/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/bt-group-joins-the-cheri-alliance-to-advance-cybersecurity-innovation/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/working-group-spotlight-marketing/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/working-group-spotlight-marketing/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/sci-semiconductor-and-the-cheri-alliance-at-risc-v-summit-in-china-july-2025/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/sci-semiconductor-and-the-cheri-alliance-at-risc-v-summit-in-china-july-2025/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/siemens-joins-the-cheri-alliance-a-united-front-for-cutting-edge-cybersecurity/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/siemens-joins-the-cheri-alliance-a-united-front-for-cutting-edge-cybersecurity/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/behind-the-scenes-inside-the-promotion-and-ambassador-program-working-group/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/behind-the-scenes-inside-the-promotion-and-ambassador-program-working-group/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/cheri-alliance-to-distribute-arm-morello-boards-the-journey-beyond-dsbd-continues/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/cheri-alliance-to-distribute-arm-morello-boards-the-journey-beyond-dsbd-continues/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/streamlining-the-cheri-ecosystem-an-update-from-the-repository-management-working-group/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/streamlining-the-cheri-ecosystem-an-update-from-the-repository-management-working-group/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/secure-and-resilient-systems-in-the-era-of-cra-and-iot/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/secure-and-resilient-systems-in-the-era-of-cra-and-iot/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/towards-a-reference-qemu-for-cheri-platform-emulation/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/towards-a-reference-qemu-for-cheri-platform-emulation/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/the-eu-cyber-resilience-act-what-it-means-for-secure-by-design-systems-and-cheri/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/the-eu-cyber-resilience-act-what-it-means-for-secure-by-design-systems-and-cheri/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/the-capable-hub-joins-the-cheri-alliance-to-accelerate-cybersecurity-collaboration/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/the-capable-hub-joins-the-cheri-alliance-to-accelerate-cybersecurity-collaboration/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/ai-has-compressed-the-attack-timeline/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/ai-has-compressed-the-attack-timeline/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/wind-river-joins-the-cheri-alliance/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/wind-river-joins-the-cheri-alliance/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/cheri-memory-safety-mitigates-llm-discovered-vulnerability-in-freebsd/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/cheri-memory-safety-mitigates-llm-discovered-vulnerability-in-freebsd/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/why-codasip-went-all-in-on-cheri/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/why-codasip-went-all-in-on-cheri/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/one-bug-is-all-it-takes/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/one-bug-is-all-it-takes/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/introducing-the-cheri-adoption-global-ecosystem-assessment-q1-2026/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/introducing-the-cheri-adoption-global-ecosystem-assessment-q1-2026/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/beyond-software-patching/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/beyond-software-patching/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/cheri-sel4-and-cheri-microkit-released/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/cheri-sel4-and-cheri-microkit-released/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/cheri-or-cheriot-the-answer-is-not-what-you-think/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/cheri-or-cheriot-the-answer-is-not-what-you-think/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/cheri-tag-bit-transport-overlay-standard-version-0-9-released/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/cheri-tag-bit-transport-overlay-standard-version-0-9-released/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/cheri-zephyr-v0-4-0-release/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/cheri-zephyr-v0-4-0-release/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/initial-members-join-cheri-alliance-to-drive-adoption-of-memory-safety-and-scalable-software-compartmentalization/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/initial-members-join-cheri-alliance-to-drive-adoption-of-memory-safety-and-scalable-software-compartmentalization/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/end-users-demand-memory-safety-in-their-systems/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/end-users-demand-memory-safety-in-their-systems/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/codasip-enables-secure-linux-by-donating-cheri-risc-v-sdk-to-the-cheri-alliance/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/codasip-enables-secure-linux-by-donating-cheri-risc-v-sdk-to-the-cheri-alliance/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/cybersecurity-by-design-from-research-to-industry-conference-report/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/cybersecurity-by-design-from-research-to-industry-conference-report/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/cheriot-1-0-specification-released/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/cheriot-1-0-specification-released/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/iceni-first-look/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/iceni-first-look/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/combatting-the-ai-threat-with-cheri/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/combatting-the-ai-threat-with-cheri/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/innovate-uk-project-winner-university-of-birmingham/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/innovate-uk-project-winner-university-of-birmingham/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/lowrisc-and-sci-semiconductor-release-sunburst-chip-repository-for-secure-microcontroller-development/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/lowrisc-and-sci-semiconductor-release-sunburst-chip-repository-for-secure-microcontroller-development/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/news/the-leading-root-of-trust-now-integrates-cheri-security-technology/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/news/the-leading-root-of-trust-now-integrates-cheri-security-technology/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/ararat-river-consulting-llc/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/ararat-river-consulting-llc/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/aria/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/aria/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/arm/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/arm/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/axiomise-ltd/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/axiomise-ltd/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/bt-group/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/bt-group/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/cantech-informatics-srl/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/cantech-informatics-srl/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/capabilities-limited/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/capabilities-limited/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/centrale-supelec/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/centrale-supelec/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/cheri-alliance/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/cheri-alliance/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/chevin-technology/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/chevin-technology/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/codasip/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/codasip/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/configured-things/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/configured-things/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/critical-technologies/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/critical-technologies/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/cyberwhiz/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/cyberwhiz/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/cynam/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/cynam/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/digital-catapult/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/digital-catapult/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/discribehub/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/discribehub/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/dsit/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/dsit/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/dstl/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/dstl/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/durham-university/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/durham-university/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/ensilica/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/ensilica/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/ericsson/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/ericsson/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/european-commission-dg-connect/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/european-commission-dg-connect/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/freebsd-foundation/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/freebsd-foundation/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/german-research-center-for-artificial-intelligence-dfki/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/german-research-center-for-artificial-intelligence-dfki/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/google/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/google/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/hildebrand/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/hildebrand/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/instituto-superior-de-engenharia-do-porto/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/instituto-superior-de-engenharia-do-porto/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/johannes-kepler-university-linz/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/johannes-kepler-university-linz/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/king-abdullah-university-of-science-and-technology-kaust/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/king-abdullah-university-of-science-and-technology-kaust/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/ku-leuven/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/ku-leuven/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/light-momentum-technology-corp/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/light-momentum-technology-corp/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/lowrisc/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/lowrisc/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/microservice-store/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/microservice-store/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/minerva-systems/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/minerva-systems/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/misra/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/misra/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/mission-critical-applications-limited/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/mission-critical-applications-limited/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/national-taiwan-university/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/national-taiwan-university/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/ncsc/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/ncsc/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/novomorphic/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/novomorphic/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/nquiringminds/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/nquiringminds/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/pa-consulting/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/pa-consulting/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/parvat-infotech/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/parvat-infotech/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/risc-v-international/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/risc-v-international/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/rptu/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/rptu/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/sci-semiconductor/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/sci-semiconductor/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/sensor-it/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/sensor-it/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/siemens/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/siemens/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/smart-information-flow-technologies-sift/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/smart-information-flow-technologies-sift/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/sri/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/sri/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/swansea-university/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/swansea-university/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/tccoe/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/tccoe/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/techworks/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/techworks/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/the-capable-hub/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/the-capable-hub/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/the-good-penguin/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/the-good-penguin/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/the-university-of-manchester/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/the-university-of-manchester/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/ukri/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/ukri/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/um-labs/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/um-labs/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/university-of-birmingham/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/university-of-birmingham/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/university-of-cambridge/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/university-of-cambridge/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/university-of-edinburgh/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/university-of-edinburgh/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/university-of-exeter/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/university-of-exeter/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/university-of-glasgow/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/university-of-glasgow/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/university-of-kent/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/university-of-kent/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/university-of-modena-and-reggio-emilia/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/university-of-modena-and-reggio-emilia/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/verisilicon/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/verisilicon/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/wind-river/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/wind-river/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/wyvern-global/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/wyvern-global/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/organisations/zaya/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/organisations/zaya/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/events/cheri-blossoms-conference-2025/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/events/cheri-blossoms-conference-2025/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/events/cheri-blossoms-conference-2026/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/events/cheri-blossoms-conference-2026/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/events/cheri-blossoms-conference-2027/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/events/cheri-blossoms-conference-2027/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/events/cheri-blossoms-tutorial-2026/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/events/cheri-blossoms-tutorial-2026/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/events/cheritech25-reloaded/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/events/cheritech25-reloaded/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/events/cheritech25/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/events/cheritech25/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/events/cheritech26/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/events/cheritech26/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/events/cybersecurity-by-design-conference-2024/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/events/cybersecurity-by-design-conference-2024/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/events/embedded-world-2026/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/events/embedded-world-2026/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/events/webinar-cheri-cra-compliance/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/events/webinar-cheri-cra-compliance/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/papers/cheri-concentrate-practical-compressed-capabilities/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/papers/cheri-concentrate-practical-compressed-capabilities/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/papers/cheriot-complete-memory-safety-for-embedded-devices/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/papers/cheriot-complete-memory-safety-for-embedded-devices/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/papers/cornucopia-temporal-safety-for-cheri-heaps/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/papers/cornucopia-temporal-safety-for-cheri-heaps/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/hardware/cheriot-ibex/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/hardware/cheriot-ibex/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/hardware/cheriot/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/hardware/cheriot/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/hardware/fpga-platforms/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/hardware/fpga-platforms/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/hardware/morello/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/hardware/morello/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/hardware/sonata/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/hardware/sonata/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/hardware/x730/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/hardware/x730/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/software/cheri-linux/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/software/cheri-linux/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/software/cheribsd/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/software/cheribsd/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/software/debugging-tools/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/software/debugging-tools/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/software/freebsd/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/software/freebsd/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/software/llvm-and-clang/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/software/llvm-and-clang/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/software/porting-status/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/software/porting-status/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/software/real-time-operating-systems/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/software/real-time-operating-systems/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/software/rust/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/software/rust/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/software/simulators/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/software/simulators/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/software/zephyr/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/software/zephyr/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/groups/certification-working-group/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/groups/certification-working-group/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/groups/cheri-c-cplusplus/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/groups/cheri-c-cplusplus/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/groups/cheri-for-sel4/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/groups/cheri-for-sel4/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/groups/cheri-freertos/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/groups/cheri-freertos/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/groups/cheri-in-soc/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/groups/cheri-in-soc/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/groups/cheri-linux-working-group/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/groups/cheri-linux-working-group/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/groups/cheri-plus-safety/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/groups/cheri-plus-safety/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/groups/cheri-qemu/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/groups/cheri-qemu/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/groups/cheri-virtual-machines/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/groups/cheri-virtual-machines/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/groups/cheri-zephyr/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/groups/cheri-zephyr/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/groups/marketing/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/groups/marketing/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/groups/mmu-less-systems/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/groups/mmu-less-systems/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/groups/os-support-and-portability/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/groups/os-support-and-portability/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/groups/promotion-and-ambassador-program/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/groups/promotion-and-ambassador-program/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/groups/repository-management/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/groups/repository-management/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/groups/rust-plus-cheri/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/groups/rust-plus-cheri/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/guides/build-compartments/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/guides/build-compartments/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/guides/build-your-first-application/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/guides/build-your-first-application/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/guides/building-secure-software/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/guides/building-secure-software/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/guides/choose-a-platform/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/guides/choose-a-platform/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/guides/downloads/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/guides/downloads/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/guides/install-a-toolchain/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/guides/install-a-toolchain/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/guides/port-existing-software/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/guides/port-existing-software/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/guides/run-cheri-in-simulation/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/guides/run-cheri-in-simulation/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/guides/technical-faq/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/guides/technical-faq/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/guides/tutorials-and-training/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/guides/tutorials-and-training/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/policies/code-of-conduct/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/policies/code-of-conduct/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/policies/competition-law-statement/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/policies/competition-law-statement/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/policies/export-controls/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/policies/export-controls/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/policies/intellectual-property-policy/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/policies/intellectual-property-policy/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/policies/ip-policy/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/policies/ip-policy/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/policies/policy-briefings/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/policies/policy-briefings/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/policies/privacy-policy/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/policies/privacy-policy/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/policies/privacy/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/policies/privacy/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/policies/trademark-policy/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/policies/trademark-policy/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "canonical: /cheri-alliance-content/policies/trademark/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "search includes complete readable body: /cheri-alliance-content/policies/trademark/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "directory inventory: /people/",
+      "status": "passed",
+      "detail": 109
+    },
+    {
+      "check": "directory inventory: /organisations/",
+      "status": "passed",
+      "detail": 69
+    },
+    {
+      "check": "directory inventory: /alliance/leadership/members/",
+      "status": "passed",
+      "detail": 52
+    },
+    {
+      "check": "directory inventory: /news-and-events/people-and-opportunities/speakers/",
+      "status": "passed",
+      "detail": 60
+    },
+    {
+      "check": "directory inventory: /news/",
+      "status": "passed",
+      "detail": 47
+    },
+    {
+      "check": "directory inventory: /events/",
+      "status": "passed",
+      "detail": 10
+    },
+    {
+      "check": "directory inventory: /papers/",
+      "status": "passed",
+      "detail": 15
+    },
+    {
+      "check": "directory inventory: /hardware/",
+      "status": "passed",
+      "detail": 6
+    },
+    {
+      "check": "directory inventory: /software/",
+      "status": "passed",
+      "detail": 10
+    },
+    {
+      "check": "events reflect published dates: upcoming",
+      "status": "passed",
+      "detail": {
+        "as_of": "2026-10-10",
+        "events": 2
+      }
+    },
+    {
+      "check": "event status: upcoming",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "events reflect published dates: past",
+      "status": "passed",
+      "detail": {
+        "as_of": "2026-10-10",
+        "events": 8
+      }
+    },
+    {
+      "check": "event status: past",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "source edition excluded from indexing: pages/index.md",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "published changes match explicit editorial record: pages/index.md",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "source edition excluded from indexing: pages/alliance/membership/contact.md",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "published changes match explicit editorial record: pages/alliance/membership/contact.md",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "source edition excluded from indexing: pages/news-and-events/news-and-analysis/subscribe-newsletter.md",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "published changes match explicit editorial record: pages/news-and-events/news-and-analysis/subscribe-newsletter.md",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "source edition excluded from indexing: pages/alliance/leadership/members.md",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "directory retains complete source introduction: pages/alliance/leadership/members.md",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "directory uses canonical collection: pages/alliance/leadership/members.md",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "source edition excluded from indexing: pages/news-and-events/people-and-opportunities/speakers.md",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "directory retains complete source introduction: pages/news-and-events/people-and-opportunities/speakers.md",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "directory uses canonical collection: pages/news-and-events/people-and-opportunities/speakers.md",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "source edition excluded from indexing: pages/news-and-events/news-and-analysis/latest-news.md",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "directory retains complete source introduction: pages/news-and-events/news-and-analysis/latest-news.md",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "directory uses canonical collection: pages/news-and-events/news-and-analysis/latest-news.md",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "source edition excluded from indexing: pages/news-and-events/events-and-archive/upcoming-events.md",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "directory retains complete source introduction: pages/news-and-events/events-and-archive/upcoming-events.md",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "directory uses canonical collection: pages/news-and-events/events-and-archive/upcoming-events.md",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "source edition excluded from indexing: pages/news-and-events/events-and-archive/past-events.md",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "directory retains complete source introduction: pages/news-and-events/events-and-archive/past-events.md",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "directory uses canonical collection: pages/news-and-events/events-and-archive/past-events.md",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "source edition excluded from indexing: pages/adopt/business-case/cost-of-memory-unsafety.md",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "published changes match explicit editorial record: pages/adopt/business-case/cost-of-memory-unsafety.md",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "preview form has no submission endpoint: /alliance/membership/contact/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "preview form cannot submit: /alliance/membership/contact/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "preview form is explained: /alliance/membership/contact/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "form controls are labelled: /alliance/membership/contact/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "preview form has no submission endpoint: /news-and-events/news-and-analysis/subscribe-newsletter/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "preview form cannot submit: /news-and-events/news-and-analysis/subscribe-newsletter/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "preview form is explained: /news-and-events/news-and-analysis/subscribe-newsletter/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "form controls are labelled: /news-and-events/news-and-analysis/subscribe-newsletter/",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "people have reverse paper links",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "profiles interlink organisations, papers and events",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "only governing board uses _data",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "sitemap matches public routes",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "robots references deployed sitemap",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "static Pages artifact ready",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "missing route returns branded 404",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "compatibility redirect: members",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "compatibility redirect: speakers",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "compatibility redirect: contact",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "compatibility redirect: subscribe",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "check": "compatibility redirect: alliance/build",
+      "status": "passed",
+      "detail": null
+    }
+  ]
+}

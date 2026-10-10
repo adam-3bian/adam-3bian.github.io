@@ -15,8 +15,10 @@ scripts/ruby.sh scripts/build.rb
 /workspace/cheri-migration-venv/bin/python scripts/check_build.py
 /workspace/cheri-migration-venv/bin/python scripts/check_site_links.py
 /workspace/cheri-migration-venv/bin/python scripts/check_entities.py
+/workspace/cheri-migration-venv/bin/python scripts/check_website.py
 /workspace/cheri-migration-venv/bin/python -m unittest discover -s tests -v
 python3 scripts/check_browser.py
+python3 scripts/check_website_browser.py
 /workspace/cheri-migration-venv/bin/python scripts/report.py
 ```
 
@@ -30,7 +32,9 @@ See [docs/AUTHORING.md](docs/AUTHORING.md) for minimal front matter, roles, IDs 
 
 Editorial files contain YAML front matter and native Kramdown, without embedded HTML or Liquid. Literal HTML inside fenced code remains code. Shared layouts and plugins generate presentation and reverse relationships. The requested theme supersedes earlier source pixel geometry comparisons; current browser checks exercise 15 representative routes at desktop and mobile sizes, including menus, image decoding, font loading, overflow and full visible source-body text.
 
-Deployment must run the custom Jekyll build so the relationship and presentation plugins execute. GitHub Pages' restricted native build does not load repository plugins; use a build workflow when deploying this theme. Pushing content to this repository does not itself replace either source website.
+Deployment runs the custom Jekyll build so the relationship, presentation and website-output plugins execute. The locked `Gemfile` and GitHub Actions workflow build and validate a Pages artifact. See [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) to enable the preview at the configured project path. Pushing this repository does not replace either source website.
+
+The main site now includes generated member/speaker/news/event directories, search, section hubs, profile layouts and disconnected forms. Nine complete original bodies remain as alternate Markdown source versions; `reports/website-editions.json` records each primary-route correction/substitution. Source checks follow the retained original bodies; website checks validate the published editions and generated directories separately. Normal Ruby/Bundler and the prepared private runtime both build successfully.
 
 Source signatures check complete bodies: text order, headings/IDs, paragraphs, lists, definitions, code, tables, links and original images. Canonical links, two broken source fragments and three source image repairs retain separate provenance. All rendered local routes, assets and anchors are checked; outbound links and every browser route have not been exhaustively validated.
 

@@ -1,6 +1,7 @@
 _site/
 .jekyll-cache/
 .bundle/
+vendor/
 __pycache__/
 .venv/
 reports/checkpoint-*.json

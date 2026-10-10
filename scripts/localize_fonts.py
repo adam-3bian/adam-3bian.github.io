@@ -13,7 +13,7 @@ for font_url in sorted(set(re.findall(r'url\((?:[\"\']?)(https://fonts\.gstatic\
  assert data[:4] in (b'\x00\x01\x00\x00',b'OTTO',b'wOFF',b'wOF2'),'Invalid font signature'
  checksum=hashlib.sha256(data).hexdigest();target=folder/(checksum[:12]+'-'+font_url.rsplit('/',1)[-1])
  target=by_hash.get(checksum,target);target.write_bytes(data);by_hash[checksum]=target
- replacements[font_url]='/'+str(target.relative_to(ROOT))
+ replacements[font_url]=target.name
  assets[font_url]={'source_url':font_url,'local_path':str(target.relative_to(ROOT)),'owning_entity':'shared/fonts','referencing_urls':[url],'download_status':'downloaded','verification_status':'integrity-checked','sha256':checksum,'http_status':status,'content_type':ct,'retrieved_at':STAMP(),'image_role':'font'}
 for remote,local in replacements.items():css=css.replace(remote,local)
 (folder/'poppins-local.css').write_text(css)

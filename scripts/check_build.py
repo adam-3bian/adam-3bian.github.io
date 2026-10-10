@@ -7,25 +7,25 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 from capture import ROOT, write_csv
 from convert_batch import signature
-from site_model import canonical_signature
+from site_model import canonical_signature,without_baseurl
+from site_server import SiteHandler,SITE,metadata
 
-class QuietHandler(SimpleHTTPRequestHandler):
-    def log_message(self,*args): pass
-server=ThreadingHTTPServer(('127.0.0.1',0),partial(QuietHandler,directory=str(ROOT/'_site')))
+server=ThreadingHTTPServer(('127.0.0.1',0),SiteHandler)
 threading.Thread(target=server.serve_forever,daemon=True).start()
+base=f'http://127.0.0.1:{server.server_port}'+metadata()['baseurl'].rstrip('/')
 try:
     rows=[]
     routes=json.loads((ROOT/'reports/route-map.json').read_text()) if (ROOT/'reports/route-map.json').exists() else {}
     asset_index=json.loads((ROOT/'reports/asset-index.json').read_text()) if (ROOT/'reports/asset-index.json').exists() else {}
     for asset in asset_index.values():
         if asset.get('download_status')!='downloaded':continue
-        with urllib.request.urlopen(f'http://127.0.0.1:{server.server_port}/'+asset['local_path']) as response:
+        with urllib.request.urlopen(base+'/'+asset['local_path']) as response:
             assert response.status==200
             assert __import__('hashlib').sha256(response.read()).hexdigest()==asset['sha256'],'Served asset bytes changed'
     font_status=json.loads((ROOT/'reports/font-status.json').read_text())
     for derived in font_status['derived_files']:
         path,checksum=derived['path'],derived['sha256']
-        with urllib.request.urlopen(f'http://127.0.0.1:{server.server_port}/'+path) as response:
+        with urllib.request.urlopen(base+'/'+path) as response:
             assert __import__('hashlib').sha256(response.read()).hexdigest()==checksum,'Derived font CSS changed'
     index=json.loads((ROOT/'reports/capture-index.json').read_text())
     for row in index['records']:
@@ -33,8 +33,8 @@ try:
         url=row['url']
         evidence=ROOT/'reports/validation'/__import__('hashlib').sha256(url.encode()).hexdigest()[:16]
         expected=canonical_signature(json.loads((evidence/'source-signature.json').read_text()),routes)
-        with urllib.request.urlopen(f'http://127.0.0.1:{server.server_port}'+row['local_route']) as response:
-            built=BeautifulSoup(response.read(),'html.parser')
+        with urllib.request.urlopen(base+row['local_route']) as response:
+            built=without_baseurl(BeautifulSoup(response.read(),'html.parser'),metadata()['baseurl'])
             assert response.status==200
             actual=json.loads(json.dumps(signature(built.select_one('[data-source-body]') or built.select_one('main'),row.get('asset_mapping'))))
             assert expected==actual,url
@@ -43,8 +43,8 @@ try:
     if paper_path.exists():
         papers=json.loads(paper_path.read_text())
         for paper in papers:
-            with urllib.request.urlopen(f'http://127.0.0.1:{server.server_port}'+paper['local_route']) as response:
-                built=BeautifulSoup(response.read(),'html.parser')
+            with urllib.request.urlopen(base+paper['local_route']) as response:
+                built=without_baseurl(BeautifulSoup(response.read(),'html.parser'),metadata()['baseurl'])
                 actual=json.loads(json.dumps(signature(built.select_one('[data-source-body]') or built.select_one('main'),paper.get('asset_mapping'))))
                 assert actual==canonical_signature(paper['source_signature'],routes),paper['slug']
         print(f'PASS: {len(papers)} paper entry routes match complete source catalogue entries.')
