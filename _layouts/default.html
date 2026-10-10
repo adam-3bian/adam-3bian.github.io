@@ -18,6 +18,7 @@
   {%- assign summary_segment = source_body | split: '<p class="page-hero-summary"' | last | split: '</p>' | first -%}
   {%- assign heading_intro = summary_segment | prepend: '<p class="page-hero-summary"' | append: '</p>' -%}
   {%- assign source_body = source_body | remove_first: heading_intro -%}
+  {%- assign heading_intro = heading_intro | replace_first: 'class="page-hero-summary"', 'class="page-hero-summary lede"' -%}
 {%- elsif page.summary -%}
   {%- capture heading_intro -%}<p class="page-hero-summary lede">{{ page.summary | escape }}</p>{%- endcapture -%}
 {%- endif -%}

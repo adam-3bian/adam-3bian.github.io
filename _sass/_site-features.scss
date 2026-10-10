@@ -2,6 +2,8 @@
 .theme-content { display: contents; }
 .theme-content > .content { margin-top: $section-gap-mobile; }
 .theme-content > .content > :first-child { margin-top: 0; }
+// Source citations can display full URLs; wrap them without changing their text.
+.content a { overflow-wrap: anywhere; }
 .breadcrumbs li { min-height: $control-height; }
 .content .cards > .card > * + * { margin-top: $space-4; }
 .content .cards img { height: auto; max-width: 100%; }

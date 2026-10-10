@@ -1,0 +1,34 @@
+{
+  "editorial_records": 476,
+  "adapted_introductions": 306,
+  "preserved_assets": 415,
+  "original_asset_mappings": 430,
+  "exact_zip_files": 46,
+  "root_link_errors": 1,
+  "project_link_errors": 3149,
+  "project_theme_asset_errors": 0,
+  "background_tiles": [
+    {
+      "path": "assets/images/background/hexagons-dark.webp",
+      "dimensions": [
+        1518,
+        1926
+      ],
+      "lossless_vp8l": true,
+      "even_height": true,
+      "transparent_gap_rows": 963,
+      "alternating_1px_rows": true
+    },
+    {
+      "path": "assets/images/background/hexagons-light.webp",
+      "dimensions": [
+        1518,
+        1926
+      ],
+      "lossless_vp8l": true,
+      "even_height": true,
+      "transparent_gap_rows": 963,
+      "alternating_1px_rows": true
+    }
+  ]
+}

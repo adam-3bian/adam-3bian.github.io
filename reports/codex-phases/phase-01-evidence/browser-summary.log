@@ -1,0 +1,113 @@
+{
+  "observations": 56,
+  "overflow": [],
+  "comparisons": [
+    {
+      "theme": "dark",
+      "width": 375,
+      "differences": [],
+      "card_states_match": true
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "differences": [],
+      "card_states_match": true
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "differences": [],
+      "card_states_match": true
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "differences": [],
+      "card_states_match": true
+    },
+    {
+      "theme": "light",
+      "width": 375,
+      "differences": [],
+      "card_states_match": true
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "differences": [],
+      "card_states_match": true
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "differences": [],
+      "card_states_match": true
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "differences": [],
+      "card_states_match": true
+    }
+  ],
+  "project_failed_requests": [
+    [],
+    [],
+    [],
+    [],
+    [
+      {
+        "url": "/assets/news/one-bug-is-all-it-takes/90741c3e8a15-hero.jpg",
+        "status": 404
+      }
+    ],
+    [
+      {
+        "url": "/assets/news/one-bug-is-all-it-takes/90741c3e8a15-hero.jpg",
+        "status": 404
+      }
+    ],
+    [
+      {
+        "url": "/assets/news/one-bug-is-all-it-takes/90741c3e8a15-hero.jpg",
+        "status": 404
+      }
+    ],
+    [
+      {
+        "url": "/assets/news/one-bug-is-all-it-takes/90741c3e8a15-hero.jpg",
+        "status": 404
+      }
+    ]
+  ],
+  "flows": [
+    {
+      "flow": "keyboard menu",
+      "menu_opened": true,
+      "submenu_opened": true,
+      "submenu_closed_on_escape": true
+    },
+    {
+      "flow": "image overlay",
+      "opened": true,
+      "image_and_ancestors_opaque": true,
+      "closed_on_escape": true,
+      "focus_returned": true
+    },
+    {
+      "flow": "no JavaScript",
+      "route": "/",
+      "status": 200,
+      "visible_main": true,
+      "fits_viewport": true
+    },
+    {
+      "flow": "no JavaScript",
+      "route": "/news/one-bug-is-all-it-takes/",
+      "status": 200,
+      "visible_main": true,
+      "fits_viewport": true
+    }
+  ]
+}

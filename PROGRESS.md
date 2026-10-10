@@ -1,5 +1,13 @@
 # CHERI content and authoring progress
 
+## Phase 1 theme fidelity — 10 October 2026
+
+Continued from Phase 0 commit `15c7aafe7a47e54f01f44519ce463fc23ece0fb9` on `codex/phased-site-transformation`. Extracted introductions now use the ZIP's native `lede` typography, and complete citation URLs wrap inside the content area, fixing the measured 375px news-article overflow. Original tokens, logos, favicon, honeycomb assets and image opacity already matched and remain unchanged.
+
+Native root and safe `/cheri-preview` builds pass; all 30 regression tests pass. Eight light/dark four-width ZIP comparisons match shared styles and card hover/focus states. Across 56 browser observations there are no overflows, missing/faded images or JavaScript errors. All 476 editorial hashes and rendered before/after signatures, 415 tracked assets and 430 original asset mappings are preserved.
+
+The full link audit still reports the existing root `/search/` failure and 3,149 project-prefix failures in source URLs (zero shared-theme asset failures). Component, heading, relationship, chronology and footer/slider gaps remain assigned to later phases. See [Phase 1 report](reports/codex-phases/phase-01.md) for exact evidence, commands and limits. No merge or deployment was performed.
+
 ## Phase 0 audit — 10 October 2026
 
 Audited `db809a9908f86aa57d7992fb596f52ea10836f09` on `codex/phased-site-transformation`. No editorial bodies, theme components, original assets, application configuration or publishing settings were changed. Original supplied references are retained under `docs/references/`, which is already excluded from the site.
