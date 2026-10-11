@@ -1,0 +1,55 @@
+{%- comment -%}
+  Arrange complete, explicitly selected Markdown H2 sections using the ZIP grid
+  and card primitives. Multiple destinations remain separate native links.
+  Unselected content passes through in order; no excerpts or copied YAML prose.
+  Select by existing heading ID, or exact title when the source has no ID.
+{%- endcomment -%}
+{%- assign card_sections = include.content | split: '<h2' -%}
+{%- assign open_group = nil -%}
+{%- for card_section in card_sections -%}
+  {%- assign selected_group = nil -%}
+  {%- assign section_heading = card_section | split: '</h2>' | first -%}
+  {%- assign section_title = section_heading | prepend: '<h2' | append: '</h2>' | strip_html | strip -%}
+  {%- assign section_id = nil -%}
+  {%- assign heading_attributes = section_heading | split: '>' | first -%}
+  {%- if heading_attributes contains 'id="' -%}
+    {%- assign section_id = heading_attributes | split: 'id="' | last | split: '"' | first -%}
+  {%- endif -%}
+  {%- unless forloop.first -%}
+    {%- for group in include.groups -%}
+      {%- if group.headings contains section_id or group.headings contains section_title -%}
+        {%- assign selected_group = group -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endunless -%}
+  {%- if open_group and selected_group != open_group -%}</div>{%- assign open_group = nil -%}{%- endif -%}
+  {%- if selected_group.presentation == 'cards' -%}
+    {%- unless open_group -%}
+      <div class="cards columns-{{ selected_group.columns | default: 3 }}" data-section-cards>
+      {%- assign open_group = selected_group -%}
+    {%- endunless -%}
+    {%- assign section_html = card_section | prepend: '<h2' -%}
+    {%- assign rule_parts = section_html | split: '<hr />' -%}
+    {%- assign trailing_rule = rule_parts | last | strip -%}
+    {%- assign has_trailing_rule = false -%}
+    {%- if rule_parts.size == 2 and trailing_rule == '' -%}
+      {%- assign has_trailing_rule = true -%}
+      {%- assign section_html = section_html | remove_first: '<hr />' -%}
+    {%- endif -%}
+    <section class="card content"{% if section_id %} aria-labelledby="{{ section_id | escape }}"{% endif %}>{{ section_html }}</section>
+    {%- if has_trailing_rule -%}</div><hr />{%- assign open_group = nil -%}{%- endif -%}
+  {%- elsif selected_group.presentation == 'action' -%}
+    {%- assign action_paragraphs = card_section | prepend: '<h2' | split: '<p>' -%}
+    {%- for action_paragraph in action_paragraphs -%}
+      {%- assign opening_link = action_paragraph | slice: 0, 3 -%}
+      {%- assign action_body = action_paragraph | split: '</p>' | first -%}
+      {%- assign closing_link = action_body | slice: -4, 4 -%}
+      {%- if forloop.first -%}{{ action_paragraph }}
+      {%- elsif opening_link == '<a ' and closing_link == '</a>' -%}
+        <p class="call-to-action">{{ action_paragraph | replace_first: '<a ', '<a class="card" ' }}
+      {%- else -%}<p>{{ action_paragraph }}{%- endif -%}
+    {%- endfor -%}
+  {%- elsif forloop.first -%}{{ card_section }}
+  {%- else -%}<h2{{ card_section }}{%- endif -%}
+{%- endfor -%}
+{%- if open_group -%}</div>{%- endif -%}

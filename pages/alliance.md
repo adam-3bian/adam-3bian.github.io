@@ -2,6 +2,10 @@
 title: CHERI Alliance
 permalink: /alliance/
 layout: index
+sections:
+- presentation: cards
+  columns: 2
+  headings: ["About the Alliance", "Take part"]
 ---
 
 # CHERI Alliance

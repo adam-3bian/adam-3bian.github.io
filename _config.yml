@@ -42,6 +42,11 @@ exclude:
 - TRANSFORMATION_PROMPT.md
 - _plugins
 - vendor
+# Retain acquired source bytes for provenance, but do not publish unused search
+# engines from the former mdBook site. No page or active component references them.
+- assets/shared/source-assets/dcabdf6735d3-searcher.js
+- assets/shared/source-assets/9da9f832380b-searcher.js
+- assets/shared/source-assets/0845a75c73d4-elasticlunr.min.js
 collections:
   people:
     output: true

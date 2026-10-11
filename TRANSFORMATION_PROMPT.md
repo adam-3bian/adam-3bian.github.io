@@ -15,7 +15,7 @@ When sources conflict, preserve real repository content, established URLs and wo
 
 ## 1 — Freeze the real-content baseline
 
-Enumerate every tracked editorial file in `_people/`, `_organisations/`, `_events/`, `_news/`, `_groups/`, `_guides/`, `_hardware/`, `_software/`, `_papers/`, `_policies/` and `pages/`, plus any additional populated content. Inventory public routes, aliases, source versions, shared/navigation content, entity references, search documents, attachments, images and downloads.
+Enumerate every tracked editorial file in `_people/`, `_organisations/`, `_events/`, `_news/`, `_groups/`, `_guides/`, `_hardware/`, `_software/`, `_papers/`, `_policies/` and `pages/`, plus any additional populated content. Inventory public routes, aliases, source versions, shared/navigation content, entity references, attachments, images and downloads. Do not generate a site-search index or interface.
 
 Produce a content-to-output mapping with source path, commit/hash, type, canonical route, selected ZIP layout/adapter, related assets and verification result. Prefer existing reliable `reports/` evidence; measure counts from the checkout instead of assuming the numbers in previous progress notes remain current. Keep all original provenance/evidence and existing source signatures.
 
@@ -27,7 +27,7 @@ All available published content is mandatory, not representative. Keep **the ent
 
 **Never** substitute summaries, excerpts, ellipses, generic advertising prose, rewritten shorter pages, synthetic authors/bios/affiliations/quotes/dates, stock artwork or illustrative placeholder images. Keep the source's genuine wording even if awkward. An archival source's own placeholder may remain verbatim in its separately retained source version and must be reported, never masked by an invented link or sentence.
 
-Retain source-backed `member: true`, `speaker: true`, `organization`, `speakers` and `authors` references, order of event speakers and paper authors, and distinct canonical versus alternate published source versions. Derive reverse relationships from established IDs; exclude `alternate: true` records from duplicate feeds and search where appropriate.
+Retain source-backed `member: true`, `speaker: true`, `organization`, `speakers` and `authors` references, order of event speakers and paper authors, and distinct canonical versus alternate published source versions. Derive reverse relationships from established IDs; exclude `alternate: true` records from duplicate feeds and directories where appropriate.
 
 Use **YAML front matter and native Kramdown Markdown only** in editorial files, with minimal supported fields; no added HTML, Liquid or CMS styling wrappers. Retain actual heading IDs and full text while presenting a single visible H1 and exactly one introduction. The ZIP's first-paragraph-as-introduction convention must not cause dropped, duplicated or fabricated paragraphs. Preserve original image roles (`.image-left`, `.image-right`, `.image-full` and inline role) and natural aspect ratios.
 
@@ -45,7 +45,7 @@ Conform to the starter's precise presentation and behavior:
 - **Images:** square people/member portraits (reuse the genuine listing thumbnail on person detail); 16:9 news/events listing frames; 3:2 left/right inline framing, 16:9 full-width/slide framing where applicable; respect cover/contain, alt text, captions and responsive behavior. A source without a real image should render cleanly without a fake portrait.
 - **Navigation/carousels:** keyboard-accessible responsive nested menus; full-slide CTA surfaces with separate carousel controls and ZIP behavior, including the homepage five-second auto-advance and reduced-motion/focus/visibility handling where applicable. Use authentic sourced slides only, never create fake ones to populate a slot. Preserve functional first-slide/no-JS fallback.
 - **Links/tables/forms:** valid relative and external links with safe explicit new-tab target/rel, root and project-baseurl builds, scrolling narrow tables, viewport image dialog with Escape/focus return, focus states and no-JavaScript content. Forms remain **clearly non-submitting** absent a specifically authorized working endpoint; never fabricate integration or submit captured data.
-- **Listings:** newest-first news, earliest-first dated events, alphabetical people/member directories, native card/image treatment and accessible filters. Preserve useful repository functions beyond the ZIP sample: relation-driven author pages, canonical metadata, sitemap, redirects, working directories and 404.
+- **Listings:** newest-first news, earliest-first dated events, alphabetical people/member directories and native card/image treatment. Use navigation and directories for discovery; do not add search or custom filters. Preserve useful repository functions beyond the ZIP sample: relation-driven author pages, canonical metadata, sitemap, redirects, working directories and 404.
 
 When existing repository functionality needs a theme adapter, isolate it, document why, and test it. Do not override the ZIP's typography, palette, watermark strengths, hero geometry or card design merely to resemble an older website.
 
@@ -67,7 +67,7 @@ Acceptance gates:
 2. Every captured source body retains full text order, tables, headings/IDs, links, images and code; zero unexplained omissions or truncation versus frozen signatures.
 3. All internal links, canonical routes, fragments, redirects, sourced assets and relationship IDs resolve, or a detailed exception is recorded without false “pass”.
 4. Compare templates to the supplied ZIP and rendered reference at desktop, tablet and mobile (375, 768, 1024, 1440px), including home dark mode, long articles, cards, person/member detail, tables and navigation. Check actual palette, typography, hero, honeycomb opacity and surface states, not just screenshot similarity.
-5. Verify keyboard menus/focus, image overlay/Escape, carousel focus/autoplay and reduced motion, responsive overflow, no-JS content, disconnected forms, ordering/search and proper URLs at root and project baseurl.
+5. Verify keyboard menus/focus, image overlay/Escape, carousel focus/autoplay and reduced motion, responsive overflow, no-JS content, disconnected forms, directory ordering, absence of site search and proper URLs at root and project baseurl.
 6. Keep GitHub Pages' branch-based native publishing functional with no custom workflow. A local build is **not** evidence of a deployment; obtain separate permission before changing `main`, publishing or altering production settings.
 
 ## 6 — Report and deliver

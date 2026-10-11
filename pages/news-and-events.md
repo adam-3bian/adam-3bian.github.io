@@ -2,6 +2,10 @@
 title: News and events
 permalink: /news-and-events/
 layout: index
+sections:
+- presentation: cards
+  columns: 1
+  headings: ["Follow the ecosystem"]
 ---
 
 # News and events

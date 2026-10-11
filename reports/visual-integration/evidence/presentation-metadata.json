@@ -1,0 +1,92 @@
+{
+  "pages/adopt.md": {
+    "sections": [
+      {
+        "presentation": "cards",
+        "columns": 2,
+        "headings": [
+          "Make the business case",
+          "Plan adoption"
+        ]
+      }
+    ]
+  },
+  "pages/alliance.md": {
+    "sections": [
+      {
+        "presentation": "cards",
+        "columns": 2,
+        "headings": [
+          "About the Alliance",
+          "Take part"
+        ]
+      }
+    ]
+  },
+  "pages/build.md": {
+    "sections": [
+      {
+        "presentation": "cards",
+        "columns": 3,
+        "headings": [
+          "Platforms and software",
+          "Get started",
+          "Work with the community"
+        ]
+      }
+    ]
+  },
+  "pages/discover.md": {
+    "sections": [
+      {
+        "presentation": "cards",
+        "columns": 2,
+        "headings": [
+          "Understand CHERI",
+          "Explore the resources"
+        ]
+      }
+    ]
+  },
+  "pages/index.md": {
+    "hero": {
+      "intro-paragraphs": 2
+    },
+    "sections": [
+      {
+        "presentation": "cards",
+        "columns": 3,
+        "headings": [
+          "protect-your-organisation",
+          "build-more-secure-products",
+          "build-the-technology"
+        ]
+      },
+      {
+        "presentation": "cards",
+        "columns": 2,
+        "headings": [
+          "join-the-ecosystem",
+          "meet-the-community"
+        ]
+      },
+      {
+        "presentation": "action",
+        "headings": [
+          "become-part-of-the-journey"
+        ]
+      }
+    ]
+  },
+  "pages/news-and-events.md": {
+    "sections": [
+      {
+        "presentation": "cards",
+        "columns": 1,
+        "headings": [
+          "Follow the ecosystem"
+        ]
+      }
+    ]
+  }
+}

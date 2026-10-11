@@ -1,0 +1,11 @@
+Checked 1/476 editorial routes at all four widths
+Checked 81/476 editorial routes at all four widths
+Checked 161/476 editorial routes at all four widths
+Checked 241/476 editorial routes at all four widths
+Checked 321/476 editorial routes at all four widths
+Checked 401/476 editorial routes at all four widths
+Traceback (most recent call last):
+  File "/workspace/adam-3bian.github.io/reports/visual-integration/browser.py", line 173, in <module>
+    assert not failures and not console_errors and not request_errors, 'See full browser evidence'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: See full browser evidence

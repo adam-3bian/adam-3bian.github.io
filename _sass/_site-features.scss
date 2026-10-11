@@ -3,7 +3,9 @@
 .theme-content > .content, .theme-content > .slider { margin-top: $section-gap-mobile; }
 .theme-content > .content > :first-child { margin-top: 0; }
 // Source citations can display full URLs; wrap them without changing their text.
-.content a { overflow-wrap: anywhere; }
+// Retained citations include bare URLs as well as links. Let long text wrap
+// without altering its wording; native pre/table regions retain their scrolling.
+.content { overflow-wrap: anywhere; }
 .breadcrumbs li { min-height: $control-height; }
 .content .cards > .card > * + * { margin-top: $space-4; }
 .card-description { margin-top: $space-4; }

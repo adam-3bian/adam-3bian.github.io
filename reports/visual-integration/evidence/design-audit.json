@@ -1,0 +1,734 @@
+{
+  "zip_sha256": "9f097aeace78c13e2f169fdc378f58b64b119993ac031b011ae7a618c7a7325a",
+  "design_files": [
+    {
+      "path": "_sass/_base.scss",
+      "zip_sha256": "dc8f0aa20779043eef17d6aa845c989d79794213ae25c6e42e4d73691eb336c5",
+      "current_sha256": "dc8f0aa20779043eef17d6aa845c989d79794213ae25c6e42e4d73691eb336c5",
+      "matches_with_documented_adapter": true
+    },
+    {
+      "path": "_sass/_breadcrumbs.scss",
+      "zip_sha256": "e7ea89ae24bb693c30d79a2c5d18fc0e68500d1204cbcf136adac44c499220ee",
+      "current_sha256": "e7ea89ae24bb693c30d79a2c5d18fc0e68500d1204cbcf136adac44c499220ee",
+      "matches_with_documented_adapter": true
+    },
+    {
+      "path": "_sass/_call-to-action.scss",
+      "zip_sha256": "f772f829a193b0a972fb831e21fd0767d20d788e8ec0bdf08ecf5fa8e7fd57b7",
+      "current_sha256": "f772f829a193b0a972fb831e21fd0767d20d788e8ec0bdf08ecf5fa8e7fd57b7",
+      "matches_with_documented_adapter": true
+    },
+    {
+      "path": "_sass/_cards.scss",
+      "zip_sha256": "94a6fa0d3b22dd63fc9ae714698568112efe4c880da8a060cf0203b1ee898285",
+      "current_sha256": "94a6fa0d3b22dd63fc9ae714698568112efe4c880da8a060cf0203b1ee898285",
+      "matches_with_documented_adapter": true
+    },
+    {
+      "path": "_sass/_footer.scss",
+      "zip_sha256": "bf520f3884b3173319ae41b370ddcf952a1652379c77edaed965b1baf61a1ae4",
+      "current_sha256": "bf520f3884b3173319ae41b370ddcf952a1652379c77edaed965b1baf61a1ae4",
+      "matches_with_documented_adapter": true
+    },
+    {
+      "path": "_sass/_forms.scss",
+      "zip_sha256": "6928f3ab9e5556270cdc435f486f2b609952dcb9f62755fbf17b5edff0e388bb",
+      "current_sha256": "6928f3ab9e5556270cdc435f486f2b609952dcb9f62755fbf17b5edff0e388bb",
+      "matches_with_documented_adapter": true
+    },
+    {
+      "path": "_sass/_header.scss",
+      "zip_sha256": "074194953045b3374c0dcafd0e728365ad6df3a2caaffa26eabe175175f10854",
+      "current_sha256": "074194953045b3374c0dcafd0e728365ad6df3a2caaffa26eabe175175f10854",
+      "matches_with_documented_adapter": true
+    },
+    {
+      "path": "_sass/_hero.scss",
+      "zip_sha256": "0775a33c94543e0e3bb5352834a9e886d03ca444bbb8abf49c79ad080618e2d2",
+      "current_sha256": "0775a33c94543e0e3bb5352834a9e886d03ca444bbb8abf49c79ad080618e2d2",
+      "matches_with_documented_adapter": true
+    },
+    {
+      "path": "_sass/_image-overlay.scss",
+      "zip_sha256": "c886362d6127c8bda1097e3bd144e0d3adcbad7b94e05a34c9941460a38a0b0e",
+      "current_sha256": "c886362d6127c8bda1097e3bd144e0d3adcbad7b94e05a34c9941460a38a0b0e",
+      "matches_with_documented_adapter": true
+    },
+    {
+      "path": "_sass/_main.scss",
+      "zip_sha256": "a3658842af1271abd81ebd36a5a9e522f0c3b81e78dcc2199bfdbbe778d53ec7",
+      "current_sha256": "a3658842af1271abd81ebd36a5a9e522f0c3b81e78dcc2199bfdbbe778d53ec7",
+      "matches_with_documented_adapter": true
+    },
+    {
+      "path": "_sass/_navigation.scss",
+      "zip_sha256": "5dbb28733d826c14c99c892809fd54c92b74fe3da4a3de0726305c8b5f046b71",
+      "current_sha256": "5dbb28733d826c14c99c892809fd54c92b74fe3da4a3de0726305c8b5f046b71",
+      "matches_with_documented_adapter": true
+    },
+    {
+      "path": "_sass/_site.scss",
+      "zip_sha256": "29ee1f9aa6360be085ef3a11703aded7cbb46a5a261df242d92a76abf7a7ff60",
+      "current_sha256": "b9c6220c8a7f50235b135f3091234490cb1d2a7424140c9cf5c732b0afc571be",
+      "matches_with_documented_adapter": true
+    },
+    {
+      "path": "_sass/_slider.scss",
+      "zip_sha256": "cd04f1caa25b072e8c0f24623748856fdd242495e0af38019b4fff14f9e65184",
+      "current_sha256": "cd04f1caa25b072e8c0f24623748856fdd242495e0af38019b4fff14f9e65184",
+      "matches_with_documented_adapter": true
+    },
+    {
+      "path": "_sass/_tables.scss",
+      "zip_sha256": "09058f818f2509e5804c211b03627dae0b6bc82ed4e701dda24a791cca66d0db",
+      "current_sha256": "09058f818f2509e5804c211b03627dae0b6bc82ed4e701dda24a791cca66d0db",
+      "matches_with_documented_adapter": true
+    },
+    {
+      "path": "_sass/_themes.scss",
+      "zip_sha256": "9786274487ba5afafd80133b09df707bfbd4344d0484961eb13b202ffba0dd32",
+      "current_sha256": "9786274487ba5afafd80133b09df707bfbd4344d0484961eb13b202ffba0dd32",
+      "matches_with_documented_adapter": true
+    },
+    {
+      "path": "_sass/settings.scss",
+      "zip_sha256": "b95590be0291155ecd0037125687422ab980e37a59ceda56d8a0cae5fb4d70dd",
+      "current_sha256": "d169803080016447911eb21257f00025c293663e1ddd985780ea1088f0aa8806",
+      "matches_with_documented_adapter": true
+    },
+    {
+      "path": "assets/images/background/hexagons-dark.webp",
+      "zip_sha256": "5f173e4cff505bf093758ad6333b946512bfd487dd7982dc8b8dac0241962ac3",
+      "current_sha256": "5f173e4cff505bf093758ad6333b946512bfd487dd7982dc8b8dac0241962ac3",
+      "matches_with_documented_adapter": true
+    },
+    {
+      "path": "assets/images/background/hexagons-light.webp",
+      "zip_sha256": "0b45e4e7b8668a8924ee8931b2cb2f1fc6f8b100f6b4fcb5c0f1fc10a45fec7d",
+      "current_sha256": "0b45e4e7b8668a8924ee8931b2cb2f1fc6f8b100f6b4fcb5c0f1fc10a45fec7d",
+      "matches_with_documented_adapter": true
+    },
+    {
+      "path": "assets/images/background/hexagons.svg",
+      "zip_sha256": "ee91d36f26c1507a247a2f2a8427d606167be8b3b0cf1480aa0bc579173750c5",
+      "current_sha256": "ee91d36f26c1507a247a2f2a8427d606167be8b3b0cf1480aa0bc579173750c5",
+      "matches_with_documented_adapter": true
+    },
+    {
+      "path": "assets/images/brand/favicon-source.png",
+      "zip_sha256": "1ee6946b1c5bcb50d37c9bcebbd0a9d7946fe78b450094ef455127680a4c94a5",
+      "current_sha256": "1ee6946b1c5bcb50d37c9bcebbd0a9d7946fe78b450094ef455127680a4c94a5",
+      "matches_with_documented_adapter": true
+    },
+    {
+      "path": "assets/images/brand/logo-blue.svg",
+      "zip_sha256": "e5e71b65000e93a27de232bd71946cb69bb382742e8b88aa5fd9bebc755f8d4d",
+      "current_sha256": "e5e71b65000e93a27de232bd71946cb69bb382742e8b88aa5fd9bebc755f8d4d",
+      "matches_with_documented_adapter": true
+    },
+    {
+      "path": "assets/images/brand/logo-white.svg",
+      "zip_sha256": "300942a3af639c38858efc8301343d6fa5d974962e1d7fc2fd9b9fb14c555f62",
+      "current_sha256": "300942a3af639c38858efc8301343d6fa5d974962e1d7fc2fd9b9fb14c555f62",
+      "matches_with_documented_adapter": true
+    },
+    {
+      "path": "assets/js/content.js",
+      "zip_sha256": "aaf230cb410cce2e15182e51e26c0a751ceb0125bfc74f6eae31b34bacfa8e39",
+      "current_sha256": "aaf230cb410cce2e15182e51e26c0a751ceb0125bfc74f6eae31b34bacfa8e39",
+      "matches_with_documented_adapter": true
+    },
+    {
+      "path": "assets/js/image-overlay.js",
+      "zip_sha256": "c079b157093b8a9abbfb6e672f109b557eeb494efff4283675ecd55b8809f210",
+      "current_sha256": "c079b157093b8a9abbfb6e672f109b557eeb494efff4283675ecd55b8809f210",
+      "matches_with_documented_adapter": true
+    },
+    {
+      "path": "assets/js/navigation.js",
+      "zip_sha256": "ec908658e384c31904049e07d537278de9c74e89ce192a5c917bb50f4ed8efcf",
+      "current_sha256": "ec908658e384c31904049e07d537278de9c74e89ce192a5c917bb50f4ed8efcf",
+      "matches_with_documented_adapter": true
+    },
+    {
+      "path": "assets/js/slider.js",
+      "zip_sha256": "9e12ef5afe5ca8b4543cddbff5478967d629108623fd0ea888022cfdce3acca2",
+      "current_sha256": "9e12ef5afe5ca8b4543cddbff5478967d629108623fd0ea888022cfdce3acca2",
+      "matches_with_documented_adapter": true
+    },
+    {
+      "path": "favicon.ico",
+      "zip_sha256": "a75a2f6140af4240ee069fc2923fd11e9cdba908f87ac0bca6ddadb1b731c08a",
+      "current_sha256": "a75a2f6140af4240ee069fc2923fd11e9cdba908f87ac0bca6ddadb1b731c08a",
+      "matches_with_documented_adapter": true
+    }
+  ],
+  "section_grids": [
+    {
+      "page": "index.html",
+      "headings": [
+        "Protect your organisation",
+        "Build more secure products",
+        "Build the technology"
+      ],
+      "destinations": [
+        "/discover/why-cheri/vulnerabilities-in-everyday-technology/",
+        "/adopt/business-case/cost-of-memory-unsafety/",
+        "/adopt/business-case/the-business-case/",
+        "/discover/why-cheri/why-existing-defences-are-not-enough/",
+        "/discover/why-cheri/why-cheri/",
+        "/discover/understand/adapt-products/",
+        "/discover/why-cheri/why-cheri/",
+        "/discover/understand/adapt-products/",
+        "/build/"
+      ]
+    },
+    {
+      "page": "index.html",
+      "headings": [
+        "Join the ecosystem",
+        "Meet the community"
+      ],
+      "destinations": [
+        "/organisations/cheri-alliance/",
+        "/alliance/leadership/members/",
+        "/news-and-events/news-and-analysis/latest-news/",
+        "/news-and-events/events-and-archive/upcoming-events/"
+      ]
+    },
+    {
+      "page": "news-and-events/index.html",
+      "headings": [
+        "Follow the ecosystem"
+      ],
+      "destinations": [
+        "/news/",
+        "/news-and-events/events-and-archive/upcoming-events/",
+        "/news-and-events/events-and-archive/past-events/",
+        "/news-and-events/people-and-opportunities/speakers/",
+        "/news-and-events/news-and-analysis/subscribe-newsletter/"
+      ]
+    },
+    {
+      "page": "build/index.html",
+      "headings": [
+        "Platforms and software",
+        "Get started",
+        "Work with the community"
+      ],
+      "destinations": [
+        "/hardware/",
+        "/software/",
+        "/build/platforms/platform-comparison/",
+        "/guides/choose-a-platform/",
+        "/guides/install-a-toolchain/",
+        "/guides/build-your-first-application/",
+        "/guides/",
+        "/groups/",
+        "/papers/",
+        "/alliance/membership/contact/"
+      ]
+    },
+    {
+      "page": "alliance/index.html",
+      "headings": [
+        "About the Alliance",
+        "Take part"
+      ],
+      "destinations": [
+        "/organisations/cheri-alliance/",
+        "/alliance/about-and-governance/mission-and-role/",
+        "/alliance/leadership/members/",
+        "/alliance/leadership/governing-board/",
+        "/groups/",
+        "/alliance/membership/why-join/",
+        "/alliance/membership/membership-benefits-and-options/",
+        "/alliance/membership/contact/"
+      ]
+    },
+    {
+      "page": "discover/index.html",
+      "headings": [
+        "Understand CHERI",
+        "Explore the resources"
+      ],
+      "destinations": [
+        "/discover/why-cheri/why-cheri/",
+        "/discover/understand/how-does-cheri-work/",
+        "/discover/understand/cheri-history/",
+        "/discover/understand/faq/",
+        "/papers/",
+        "/discover/resources/documentation-and-guides/",
+        "/discover/resources/videos-and-presentations/",
+        "/discover/resources/glossary/"
+      ]
+    },
+    {
+      "page": "adopt/index.html",
+      "headings": [
+        "Make the business case",
+        "Plan adoption"
+      ],
+      "destinations": [
+        "/adopt/business-case/cost-of-memory-unsafety/",
+        "/adopt/business-case/the-business-case/",
+        "/adopt/business-case/return-on-security-investment/",
+        "/adopt/assurance-and-adoption/case-studies/",
+        "/adopt/assurance-and-adoption/about-cheri-enabled/",
+        "/adopt/assurance-and-adoption/cheri-enabled-products/",
+        "/adopt/policy/cybersecurity-regulation/"
+      ]
+    }
+  ],
+  "talk_cards": [
+    {
+      "page": "people/tora-fridholm/index.html",
+      "cards": 1,
+      "titles": [
+        "Marketing Working Group presentation | CHERI Blossoms 2025"
+      ]
+    },
+    {
+      "page": "people/thomas-nyman/index.html",
+      "cards": 2,
+      "titles": [
+        "PICASSO: Scaling CHERI Use-After-Free Protection to Millions of Allocations\u00a0| CHERI Blossoms 2026",
+        "BLACKOUT: Data-Oblivious Computation with Blinded Capabilities | CHERITech\u201925"
+      ]
+    },
+    {
+      "page": "people/tariq-kurd/index.html",
+      "cards": 4,
+      "titles": [
+        "MMU-based revocation for temporal safety on CHERI application cores | CHERI Blossoms 2026",
+        "CHERI RISC-V Standardisation Status | CHERI Blossoms 2026",
+        "CHERI-RISC-V standardisation status | CHERITech\u201925",
+        "CHERI RISC-V Standardisation | CHERI Blossoms 2025"
+      ]
+    },
+    {
+      "page": "people/simon-moore/index.html",
+      "cards": 2,
+      "titles": [
+        "CHERI is being standardised, so why do we still need to do research? | CHERI Blossoms 2026",
+        "About CHERI | CHERI Blossoms 2025"
+      ]
+    },
+    {
+      "page": "people/samuel-stark/index.html",
+      "cards": 1,
+      "titles": [
+        "All-Caps \u2014 Extending Capabilities Across the Whole SoC | CHERI Blossoms 2026"
+      ]
+    },
+    {
+      "page": "people/sam-cater/index.html",
+      "cards": 1,
+      "titles": [
+        "BT\u2019s Engagement with CHERI Technology | CHERI Blossoms 2026"
+      ]
+    },
+    {
+      "page": "people/robert-watson/index.html",
+      "cards": 4,
+      "titles": [
+        "The CHERI Research Centre | CHERI Blossoms 2026",
+        "CHERI Crash Course: High-level Introduction | CHERI Blossoms 2026",
+        "Progress of CHERI | CHERITech\u201925",
+        "Latest news about CHERI | CHERI Blossoms 2025"
+      ]
+    },
+    {
+      "page": "people/phil-day/index.html",
+      "cards": 1,
+      "titles": [
+        "Implementing safe and resilient configuration management with CHERIoT | CHERI Blossoms 2025"
+      ]
+    },
+    {
+      "page": "people/peter-cox/index.html",
+      "cards": 1,
+      "titles": [
+        "Securing Real-Time Communication: Porting and running Edge Computing for mission critical services on Morello CHERI | CHERI Blossoms 2026"
+      ]
+    },
+    {
+      "page": "people/paul-waller/index.html",
+      "cards": 1,
+      "titles": [
+        "ETSI Standardisation status | CHERI Blossoms 2026"
+      ]
+    },
+    {
+      "page": "people/paul-metzger/index.html",
+      "cards": 1,
+      "titles": [
+        "Portable CHERI\nOS APIs | CHERI Blossoms 2026"
+      ]
+    },
+    {
+      "page": "people/ollie-whitehouse/index.html",
+      "cards": 1,
+      "titles": [
+        "Keynote \u2013 CHERI: quantifying the value of a strategic imperative | CHERI Blossoms 2026"
+      ]
+    },
+    {
+      "page": "people/murat-cakmak/index.html",
+      "cards": 1,
+      "titles": [
+        "Microservice Store | CHERI Blossoms 2026"
+      ]
+    },
+    {
+      "page": "people/murali-vijayaraghavan/index.html",
+      "cards": 1,
+      "titles": [
+        "Rigorous Hardware-Software Codesign for Secure Compartmentalization on Embedded Devices | CHERITech\u201925"
+      ]
+    },
+    {
+      "page": "people/mike-halsall/index.html",
+      "cards": 1,
+      "titles": [
+        "CHERI Blossoms 2025"
+      ]
+    },
+    {
+      "page": "people/merve-gulmez/index.html",
+      "cards": 1,
+      "titles": [
+        "PICASSO: Scaling CHERI Use-After-Free Protection to Millions of Allocations\u00a0| CHERI Blossoms 2026"
+      ]
+    },
+    {
+      "page": "people/martin-atkins/index.html",
+      "cards": 1,
+      "titles": [
+        "Hybrid CHERI in seL4 user space | CHERI Blossoms 2025"
+      ]
+    },
+    {
+      "page": "people/marno-van-der-maas/index.html",
+      "cards": 3,
+      "titles": [
+        "COSMIC verification: comprehensive, end-to-end formal proofs of CVA6-CHERI | CHERI Blossoms 2026",
+        "Sonata\u00ae: A platform for high-integrity operational technology | CHERITech\u201925",
+        "Repository Working Group presentation | CHERI Blossoms 2025"
+      ]
+    },
+    {
+      "page": "people/mark-hill/index.html",
+      "cards": 1,
+      "titles": [
+        "Efficient system-level support for CHERI Capabilities | CHERI Blossoms 2025"
+      ]
+    },
+    {
+      "page": "people/mark-batty/index.html",
+      "cards": 1,
+      "titles": [
+        "Rust for Morello: Always-On Memory Safety, Even in Unsafe Code | CHERI Blossoms 2025"
+      ]
+    },
+    {
+      "page": "people/manu-ravishankar/index.html",
+      "cards": 1,
+      "titles": [
+        "Accelerating commercial adoption of CHERI | CHERI Blossoms 2026"
+      ]
+    },
+    {
+      "page": "people/maika-fohrenbach/index.html",
+      "cards": 1,
+      "titles": [
+        "Keynote \u2013 Getting ready for the CRA: from compliance to confidence | CHERI Blossoms 2026"
+      ]
+    },
+    {
+      "page": "people/luca-muller/index.html",
+      "cards": 1,
+      "titles": [
+        "CHERI-enabled RISC-V VP: Capabilities and Applications | CHERI Blossoms 2026"
+      ]
+    },
+    {
+      "page": "people/louis-emile-ploix/index.html",
+      "cards": 1,
+      "titles": [
+        "COSMIC verification: comprehensive, end-to-end formal proofs of CVA6-CHERI | CHERI Blossoms 2026"
+      ]
+    },
+    {
+      "page": "people/kevin-brodsky/index.html",
+      "cards": 1,
+      "titles": [
+        "Porting Linux to CHERI | CHERI Blossoms 2025"
+      ]
+    },
+    {
+      "page": "people/kathleen-fisher/index.html",
+      "cards": 1,
+      "titles": [
+        "Featured Message | CHERI Blossoms 2026"
+      ]
+    },
+    {
+      "page": "people/ka-wing-li/index.html",
+      "cards": 1,
+      "titles": [
+        "Failure-Oblivious CHERI | CHERITech\u201925"
+      ]
+    },
+    {
+      "page": "people/joshua-lant/index.html",
+      "cards": 1,
+      "titles": [
+        "Securing Secure Networking tools for Morello Linux | CHERI Blossoms 2025"
+      ]
+    },
+    {
+      "page": "people/jonathan-woodruff/index.html",
+      "cards": 3,
+      "titles": [
+        "Performance Progress of CVA6-CHERI | CHERI Blossoms 2026",
+        "An open-source RV64Y implementation for commercialization\u00a0| CHERITech\u201925",
+        "CHERI support for CVA6 | CHERI Blossoms 2025"
+      ]
+    },
+    {
+      "page": "people/john-thomson/index.html",
+      "cards": 1,
+      "titles": [
+        "Announcing COSMIC | CHERITech\u201925"
+      ]
+    },
+    {
+      "page": "people/john-goodacre/index.html",
+      "cards": 3,
+      "titles": [
+        "UKRI Talk | CHERI Blossoms 2026",
+        "Welcome & Innovate UK Competition Results\u00a0| CHERITech\u201925",
+        "Findings from DSbD program | CHERI Blossoms 2025"
+      ]
+    },
+    {
+      "page": "people/john-baldwin/index.html",
+      "cards": 1,
+      "titles": [
+        "CHERI Linking through the Ages | CHERI Blossoms 2026"
+      ]
+    },
+    {
+      "page": "people/johannes-muller/index.html",
+      "cards": 1,
+      "titles": [
+        "Verifying Secure Memory Compartmentalization in CHERI Processors at the RTL | CHERI Blossoms 2026"
+      ]
+    },
+    {
+      "page": "people/jianyi-cheng/index.html",
+      "cards": 1,
+      "titles": [
+        "Towards Heterogeneous CHERI Compartmentalization | CHERI Blossoms 2026"
+      ]
+    },
+    {
+      "page": "people/jessica-clarke/index.html",
+      "cards": 2,
+      "titles": [
+        "CHERI Linking through the Ages | CHERI Blossoms 2026",
+        "Redesigning Thread Local Storage For CHERI | CHERITech\u201925"
+      ]
+    },
+    {
+      "page": "people/jeremy-singer/index.html",
+      "cards": 2,
+      "titles": [
+        "State of the Union: Which Virtual Machines can I run on CHERI? | CHERITech\u201925",
+        "CHERI MicroPython: Challenges and Opportunities | CHERI Blossoms 2025"
+      ]
+    },
+    {
+      "page": "people/jennifer-jackson/index.html",
+      "cards": 1,
+      "titles": [
+        "CHERI-Zephyr | CHERI Blossoms 2026"
+      ]
+    },
+    {
+      "page": "people/javier-orensanz-martinez/index.html",
+      "cards": 1,
+      "titles": [
+        "CHERI Mocha: an open-source memory-safe application system\u00a0| CHERI Blossoms 2026"
+      ]
+    },
+    {
+      "page": "people/hesham-almatary/index.html",
+      "cards": 1,
+      "titles": [
+        "seL4 Working Group presentation | CHERI Blossoms 2025"
+      ]
+    },
+    {
+      "page": "people/haydn-povey/index.html",
+      "cards": 1,
+      "titles": [
+        "Project Sunburst: An Open-Source CHERIoT SoC Top-Level and its Path to Market with Iceni | CHERI Blossoms 2025"
+      ]
+    },
+    {
+      "page": "people/gavin-ferris/index.html",
+      "cards": 1,
+      "titles": [
+        "Project Sunburst: An Open-Source CHERIoT SoC Top-Level and its Path to Market with Iceni | CHERI Blossoms 2025"
+      ]
+    },
+    {
+      "page": "people/edoardo-marangoni/index.html",
+      "cards": 1,
+      "titles": [
+        "Rust on CHERIoT | CHERI Blossoms 2026"
+      ]
+    },
+    {
+      "page": "people/donato-ferraro/index.html",
+      "cards": 1,
+      "titles": [
+        "Capability-Based Isolation for UAV Software Stacks: Porting PX4/NuttX to CHERI | CHERITech\u201925"
+      ]
+    },
+    {
+      "page": "people/domagoj-stolfa/index.html",
+      "cards": 1,
+      "titles": [
+        "Porting V8 to CHERI: An Overview | CHERI Blossoms 2025"
+      ]
+    },
+    {
+      "page": "people/dmitriy-yeliseyev/index.html",
+      "cards": 2,
+      "titles": [
+        "Industrializing CHERI for Safety-Critical Real-Time and Virtualized Systems: Capability Support in Hypervisor and VxWorks RTOS | CHERITech\u201925",
+        "Implementation of CHERI Capabilities in a Safety-Critical Real-Time Operating System for Intelligent Edge Systems | CHERI Blossoms 2025"
+      ]
+    },
+    {
+      "page": "people/david-musliner/index.html",
+      "cards": 1,
+      "titles": [
+        "CHERI-PIT:\nPort Integrity Tool | CHERI Blossoms 2026"
+      ]
+    },
+    {
+      "page": "people/david-chisnall/index.html",
+      "cards": 3,
+      "titles": [
+        "CHERIoT-Kudu | CHERI Blossoms 2026",
+        "CHERIoT Audit | CHERITech\u201925",
+        "CHERIoT 2025 | CHERI Blossoms 2025"
+      ]
+    },
+    {
+      "page": "people/dave-harcourt/index.html",
+      "cards": 1,
+      "titles": [
+        "BT business keynote | CHERI Blossoms 2026"
+      ]
+    },
+    {
+      "page": "people/carl-shaw/index.html",
+      "cards": 4,
+      "titles": [
+        "CHERI performance improvement update | CHERI Blossoms 2026",
+        "A new analysis of CVE vulnerabilities : trends, changes and CHERI | CHERI Blossoms 2026",
+        "CHERI Performance | CHERITech\u201925",
+        "Porting Linux to CHERI | CHERI Blossoms 2025"
+      ]
+    },
+    {
+      "page": "people/bradley-finn/index.html",
+      "cards": 2,
+      "titles": [
+        "DSIT @ CHERI Blossoms 2026 | CHERI Blossoms 2026",
+        "Building Resilience: Enhancing productivity through Secure by Design systems | CHERI Blossoms 2025"
+      ]
+    },
+    {
+      "page": "people/ben-fletcher/index.html",
+      "cards": 2,
+      "titles": [
+        "Inside the CHERI in SoC Working Group | CHERI Blossoms 2026",
+        "SoC Working Group presentation | CHERI Blossoms 2025"
+      ]
+    },
+    {
+      "page": "people/ashish-darbari/index.html",
+      "cards": 1,
+      "titles": [
+        "Industrial-Strength Formal Verification of RISC-V Processors\u00a0 | CHERI Blossoms 2025"
+      ]
+    },
+    {
+      "page": "people/andy-moore/index.html",
+      "cards": 1,
+      "titles": [
+        "RISC-V: Driving the Future of Open Compute | CHERI Blossoms 2026"
+      ]
+    },
+    {
+      "page": "people/andrew-murray/index.html",
+      "cards": 2,
+      "titles": [
+        "The Capable Hub: Our Recent Work and Next Steps | CHERI Blossoms 2026",
+        "Introducing a development Hub | CHERITech\u201925"
+      ]
+    },
+    {
+      "page": "people/alfredo-mazzinghi/index.html",
+      "cards": 2,
+      "titles": [
+        "MMU-based revocation for temporal safety on CHERI application cores | CHERI Blossoms 2026",
+        "QEMU Working Group presentation | CHERI Blossoms 2025"
+      ]
+    },
+    {
+      "page": "people/alexander-voyevoda/index.html",
+      "cards": 1,
+      "titles": [
+        "Securing Real-Time Communication: Porting and running Edge Computing for mission critical services on Morello CHERI | CHERI Blossoms 2026"
+      ]
+    },
+    {
+      "page": "people/alex-rebert/index.html",
+      "cards": 1,
+      "titles": [
+        "Keynote \u2013 Memory Safety at Scale: An Industry Perspective | CHERI Blossoms 2026"
+      ]
+    },
+    {
+      "page": "people/alastair-beresford/index.html",
+      "cards": 1,
+      "titles": [
+        "CHERI Blossoms 2025"
+      ]
+    },
+    {
+      "page": "people/adam-finney/index.html",
+      "cards": 1,
+      "titles": [
+        "CHERI Adoption study | CHERI Blossoms 2026"
+      ]
+    }
+  ],
+  "active_search": [],
+  "unpublished_search_sources": [
+    "assets/shared/source-assets/dcabdf6735d3-searcher.js",
+    "assets/shared/source-assets/9da9f832380b-searcher.js",
+    "assets/shared/source-assets/0845a75c73d4-elasticlunr.min.js"
+  ],
+  "native_pages": true,
+  "root_url": "https://adam-3bian.github.io",
+  "baseurl": ""
+}

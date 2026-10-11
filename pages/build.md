@@ -2,6 +2,10 @@
 title: Build with CHERI
 permalink: /build/
 layout: index
+sections:
+- presentation: cards
+  columns: 3
+  headings: ["Platforms and software", "Get started", "Work with the community"]
 ---
 
 # Build with CHERI

@@ -1,6 +1,17 @@
 ---
 title: Software runs our world. It deserves stronger security foundations.
 permalink: /
+hero:
+  intro-paragraphs: 2
+sections:
+- presentation: cards
+  columns: 3
+  headings: [protect-your-organisation, build-more-secure-products, build-the-technology]
+- presentation: cards
+  columns: 2
+  headings: [join-the-ecosystem, meet-the-community]
+- presentation: action
+  headings: [become-part-of-the-journey]
 where-next:
   url: /discover/why-cheri/vulnerabilities-in-everyday-technology/
   title: Discover CHERI

@@ -54,6 +54,20 @@
     {%- endunless -%}
   {%- endif -%}
 {%- endif -%}
+{%- comment -%}Some retained introductions span more than one paragraph. Move
+  only contiguous opening paragraphs; leave images and all other blocks in place.{%- endcomment -%}
+{%- assign extra_intro_paragraphs = page.hero.intro-paragraphs | default: 1 | minus: 1 -%}
+{%- if page.hero and heading_intro != '' and extra_intro_paragraphs > 0 -%}
+  {%- for intro_index in (1..extra_intro_paragraphs) -%}
+    {%- assign opening_body = source_body | strip -%}
+    {%- assign opening_tag = opening_body | slice: 0, 3 -%}
+    {%- assign opening_paragraph = opening_body | split: '</p>' | first | append: '</p>' -%}
+    {%- if opening_tag != '<p>' or opening_paragraph contains '<img' -%}{%- break -%}{%- endif -%}
+    {%- assign source_body = source_body | remove_first: opening_paragraph -%}
+    {%- assign intro_paragraph = opening_paragraph | replace_first: '<p>', '<p class="lede">' -%}
+    {%- assign heading_intro = heading_intro | append: intro_paragraph -%}
+  {%- endfor -%}
+{%- endif -%}
 {%- comment -%}
   Retained source navigation fragments have explicit YAML counterparts. Replace only
   those measured sections; the article's Markdown and all other blocks stay intact.
@@ -98,14 +112,16 @@
       <nav class="breadcrumbs" aria-label="Breadcrumb">{{ source_breadcrumbs }}</nav>
       {% else %}{% include breadcrumbs.html %}{% endif %}
       {{ source_preamble }}
-      {% if heading_alias != '' and heading_alias != heading_id %}<span id="{{ heading_alias }}"></span>{% endif %}
       {% include hero.html heading=source_heading heading_id=heading_id %}
       {% if page.hero %}{% include slider.html %}{% endif %}
       <article class="content" aria-label="{{ page.title | escape }}">
         {% include page-heading.html heading=source_heading %}
-        {% if source_body contains 'collection-card__' %}
+        {% capture themed_body %}{% if source_body contains 'collection-card__' %}
           {% include source-card-groups.html content=source_body %}
-        {% else %}{{ source_body }}{% endif %}
+        {% else %}{{ source_body }}{% endif %}{% endcapture %}
+        {% if page.sections and page.layout != 'index' %}
+          {% include section-cards.html content=themed_body groups=page.sections %}
+        {% else %}{{ themed_body }}{% endif %}
       </article>
     </div>
     {% endcapture %}

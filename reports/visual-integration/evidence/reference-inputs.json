@@ -1,0 +1,10 @@
+{
+  "archive_sha256": "9f097aeace78c13e2f169fdc378f58b64b119993ac031b011ae7a618c7a7325a",
+  "reference_source": "/tmp/cheri-integration-reference/basic-site",
+  "adaptations": [
+    "Local copies of the same Poppins faces",
+    "Separate real-slider fixture with authentic slide data/images",
+    "Light hub fixture without breadcrumbs, matching the real hub hierarchy"
+  ],
+  "fixture_sha256": "b51e987dd4b4ad87912ee2631d62f7867b1049eddf30b0805b518edd11deab4d"
+}

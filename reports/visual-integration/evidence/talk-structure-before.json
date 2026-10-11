@@ -1,0 +1,2412 @@
+[
+  {
+    "route": "/people/tora-fridholm/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "Marketing Working Group presentation | CHERI Blossoms 2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "02/04/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/thomas-nyman/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "PICASSO: Scaling CHERI Use-After-Free Protection to Millions of Allocations | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "27/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "BLACKOUT: Data-Oblivious Computation with Blinded Capabilities | CHERITech’25",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "14/11/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Manchester, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/tariq-kurd/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "MMU-based revocation for temporal safety on CHERI application cores | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "27/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "CHERI RISC-V Standardisation Status | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "26/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "CHERI-RISC-V standardisation status | CHERITech’25",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "14/11/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Manchester, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "CHERI RISC-V Standardisation | CHERI Blossoms 2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "02/04/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/simon-moore/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "CHERI is being standardised, so why do we still need to do research? | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "26/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "About CHERI | CHERI Blossoms 2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "02/04/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/samuel-stark/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "All-Caps — Extending Capabilities Across the Whole SoC | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "27/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/sam-cater/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "BT’s Engagement with CHERI Technology | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "27/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/robert-watson/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "The CHERI Research Centre | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "26/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "CHERI Crash Course: High-level Introduction | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "26/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Progress of CHERI | CHERITech’25",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "14/11/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Manchester, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Latest news about CHERI | CHERI Blossoms 2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "02/04/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "–",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/phil-day/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "Implementing safe and resilient configuration management with CHERIoT | CHERI Blossoms 2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "02/04/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/peter-cox/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "Securing Real-Time Communication: Porting and running Edge Computing for mission critical services on Morello CHERI | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "27/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/paul-waller/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "ETSI Standardisation status | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "26/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "No Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/paul-metzger/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "Portable CHERI OS APIs | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "26/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/ollie-whitehouse/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "Keynote – CHERI: quantifying the value of a strategic imperative | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "26/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/murat-cakmak/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "Microservice Store | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "27/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/murali-vijayaraghavan/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "Rigorous Hardware-Software Codesign for Secure Compartmentalization on Embedded Devices | CHERITech’25",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "14/11/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Manchester, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/mike-halsall/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "CHERI Blossoms 2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "02/04/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Slides coming soon",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Video coming soon",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/mike-eftimakis/",
+    "nodes": [
+      {
+        "tag": "table",
+        "text": "Date Conference Talk title Slides Video 26/03/2026 CHERI Blossoms 2026 Cambridge, UK Certification Program: Awards – ▶️ 26/03/2026 CHERI Blossoms 2026 Cambridge, UK Progress of the Alliance 📕 ▶️ 14/11/2025 CHERITech’25 Manchester, UK Poster Highlights 📕 ▶️ 14/11/2025 CHERITech’25 Manchester, UK Progress of the Alliance 📕 ▶️ 02/04/2025 CHERI Blossoms 2025 Cambridge, UK Progress of the Alliance 📕 ▶️ 02/04/2025 CHERI Blossoms 2025 Cambridge, UK Promotion & Ambassador Working Group 📕 ▶️",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/merve-gulmez/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "PICASSO: Scaling CHERI Use-After-Free Protection to Millions of Allocations | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "27/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/martin-atkins/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "Hybrid CHERI in seL4 user space | CHERI Blossoms 2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "02/04/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/marno-van-der-maas/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "COSMIC verification: comprehensive, end-to-end formal proofs of CVA6-CHERI | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "26/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Sonata®: A platform for high-integrity operational technology | CHERITech’25",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "14/11/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Manchester, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Repository Working Group presentation | CHERI Blossoms 2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "02/04/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/mark-hill/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "Efficient system-level support for CHERI Capabilities | CHERI Blossoms 2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "02/04/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/mark-batty/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "Rust for Morello: Always-On Memory Safety, Even in Unsafe Code | CHERI Blossoms 2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "02/04/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/manu-ravishankar/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "Accelerating commercial adoption of CHERI | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "26/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/maika-fohrenbach/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "Keynote – Getting ready for the CRA: from compliance to confidence | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "26/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/luca-muller/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "CHERI-enabled RISC-V VP: Capabilities and Applications | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "27/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/louis-emile-ploix/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "COSMIC verification: comprehensive, end-to-end formal proofs of CVA6-CHERI | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "26/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/kevin-brodsky/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "Porting Linux to CHERI | CHERI Blossoms 2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "02/04/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/kathleen-fisher/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "Featured Message | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "26/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "No Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/ka-wing-li/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "Failure-Oblivious CHERI | CHERITech’25",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "14/11/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Manchester, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/joshua-lant/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "Securing Secure Networking tools for Morello Linux | CHERI Blossoms 2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "02/04/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/jonathan-woodruff/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "Performance Progress of CVA6-CHERI | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "26/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "An open-source RV64Y implementation for commercialization | CHERITech’25",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "14/11/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Manchester, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Talk",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "CHERI support for CVA6 | CHERI Blossoms 2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "02/04/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/john-thomson/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "Announcing COSMIC | CHERITech’25",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "14/11/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Manchester, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/john-goodacre/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "UKRI Talk | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "26/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "No slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Talk",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Welcome & Innovate UK Competition Results | CHERITech’25",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "14/11/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Manchester, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "No slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Talk",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Findings from DSbD program | CHERI Blossoms 2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "02/04/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "No slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/john-baldwin/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "CHERI Linking through the Ages | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "27/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/johannes-muller/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "Verifying Secure Memory Compartmentalization in CHERI Processors at the RTL | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "27/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/jianyi-cheng/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "Towards Heterogeneous CHERI Compartmentalization | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "27/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/jessica-clarke/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "CHERI Linking through the Ages | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "27/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Redesigning Thread Local Storage For CHERI | CHERITech’25",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "14/11/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Manchester, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/jeremy-singer/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "State of the Union: Which Virtual Machines can I run on CHERI? | CHERITech’25",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "14/11/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Manchester, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "CHERI MicroPython: Challenges and Opportunities | CHERI Blossoms 2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "02/04/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/jennifer-jackson/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "CHERI-Zephyr | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "27/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/javier-orensanz-martinez/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "CHERI Mocha: an open-source memory-safe application system | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "26/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/hesham-almatary/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "seL4 Working Group presentation | CHERI Blossoms 2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "02/04/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/haydn-povey/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "Project Sunburst: An Open-Source CHERIoT SoC Top-Level and its Path to Market with Iceni | CHERI Blossoms 2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "02/04/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/gavin-ferris/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "Project Sunburst: An Open-Source CHERIoT SoC Top-Level and its Path to Market with Iceni | CHERI Blossoms 2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "02/04/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/edoardo-marangoni/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "Rust on CHERIoT | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "27/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/donato-ferraro/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "Capability-Based Isolation for UAV Software Stacks: Porting PX4/NuttX to CHERI | CHERITech’25",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "14/11/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Manchester, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/domagoj-stolfa/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "Porting V8 to CHERI: An Overview | CHERI Blossoms 2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "02/04/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/dmitriy-yeliseyev/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "Industrializing CHERI for Safety-Critical Real-Time and Virtualized Systems: Capability Support in Hypervisor and VxWorks RTOS | CHERITech’25",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "14/11/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Manchester, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Implementation of CHERI Capabilities in a Safety-Critical Real-Time Operating System for Intelligent Edge Systems | CHERI Blossoms 2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "02/04/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/david-musliner/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "CHERI-PIT: Port Integrity Tool | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "27/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/david-chisnall/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "CHERIoT-Kudu | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "26/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "CHERIoT Audit | CHERITech’25",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "14/11/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Manchester, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "CHERIoT 2025 | CHERI Blossoms 2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "02/04/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/dave-harcourt/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "BT business keynote | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "26/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "No Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/carl-shaw/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "CHERI performance improvement update | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "27/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "A new analysis of CVE vulnerabilities : trends, changes and CHERI | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "26/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "CHERI Performance | CHERITech’25",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "14/11/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Manchester, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Talk",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Porting Linux to CHERI | CHERI Blossoms 2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "02/04/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/bradley-finn/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "DSIT @ CHERI Blossoms 2026 | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "26/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Building Resilience: Enhancing productivity through Secure by Design systems | CHERI Blossoms 2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "02/04/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/ben-fletcher/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "Inside the CHERI in SoC Working Group | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "27/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "SoC Working Group presentation | CHERI Blossoms 2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "02/04/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/ashish-darbari/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "Industrial-Strength Formal Verification of RISC-V Processors  | CHERI Blossoms 2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "02/04/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/andy-moore/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "RISC-V: Driving the Future of Open Compute | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "26/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/andrew-murray/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "The Capable Hub: Our Recent Work and Next Steps | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "26/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Introducing a development Hub | CHERITech’25",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "14/11/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Manchester, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/alfredo-mazzinghi/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "MMU-based revocation for temporal safety on CHERI application cores | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "27/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "QEMU Working Group presentation | CHERI Blossoms 2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "02/04/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/alexander-voyevoda/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "Securing Real-Time Communication: Porting and running Edge Computing for mission critical services on Morello CHERI | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "27/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/alex-rebert/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "Keynote – Memory Safety at Scale: An Industry Perspective | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "26/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/alastair-beresford/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "CHERI Blossoms 2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "02/04/2025",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Video",
+        "class": []
+      }
+    ]
+  },
+  {
+    "route": "/people/adam-finney/",
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "CHERI Adoption study | CHERI Blossoms 2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "26/03/2026",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "Cambridge, UK",
+        "class": []
+      },
+      {
+        "tag": "p",
+        "text": "View Slides",
+        "class": []
+      }
+    ]
+  }
+]

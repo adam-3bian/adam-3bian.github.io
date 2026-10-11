@@ -1,6 +1,7 @@
 ---
 layout: page
 ---
+{% capture person_body %}
 {% assign source_portrait = nil %}
 {% if content contains '<img ' %}
   {% assign source_image = content | split: '<img ' | slice: 1, 1 | first | split: '>' | first %}
@@ -44,3 +45,5 @@ layout: page
 {% else %}
   {{ content }}
 {% endif %}
+{% endcapture %}
+{% include talk-cards.html content=person_body %}

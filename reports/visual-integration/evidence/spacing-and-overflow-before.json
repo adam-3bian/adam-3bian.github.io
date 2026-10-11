@@ -1,0 +1,45 @@
+[
+  {
+    "route": "/hardware/cheriot-ibex/",
+    "width": 375,
+    "scroll": 397,
+    "hero_padding": "16px 20px 48px",
+    "children": [
+      "NAV.breadcrumbs#",
+      "SECTION.hero#",
+      "ARTICLE.content#"
+    ],
+    "overflows": [
+      {
+        "text": "Anna Lena Duque Ant\u00f3n, Johannes M\u00fcller, Philipp Schmitz, Tobias Jauch, Alex Wezel, Lucas Deutschmann, Mohammad Rahmani Fadiheh, Dominik Stoffel, and Wolfgang Kunz. 2025. VeriCHERI: Exhaustive Formal Security Verification of CHERI at the RTL. Proceedings of the 43rd IEEE/ACM International Conference on Computer-Aided Design. Association for Computing Machinery, New York, NY, USA, Article 182, 1\u20139. https://doi.org/10.1145/3676536.3676841",
+        "width": 217,
+        "scroll": 314
+      }
+    ]
+  },
+  {
+    "route": "/people/anthony-fox/",
+    "width": 375,
+    "scroll": 360,
+    "hero_padding": "48px 20px",
+    "children": [
+      "NAV.breadcrumbs#",
+      "SPAN.#hero-title",
+      "SECTION.hero#",
+      "ARTICLE.content#"
+    ],
+    "overflows": []
+  },
+  {
+    "route": "/discover/",
+    "width": 375,
+    "scroll": 360,
+    "hero_padding": "48px 20px",
+    "children": [
+      "SPAN.#hero-title",
+      "SECTION.hero#",
+      "ARTICLE.content#"
+    ],
+    "overflows": []
+  }
+]

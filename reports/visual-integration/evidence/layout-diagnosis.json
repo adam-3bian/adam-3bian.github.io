@@ -1,0 +1,22 @@
+[
+  {
+    "route": "/hardware/cheriot-ibex/",
+    "hero_before": "<nav class=\"breadcrumbs\" aria-label=\"Breadcrumb\"><ol class=\"source-breadcrumbs\">\n  <li>Adopt</li>\n  <li>Assurance &amp; Adoption</li>\n  <li>CHERIoT Ibex Certification Record</li>\n</ol></nav>",
+    "overflow": []
+  },
+  {
+    "route": "/discover/",
+    "hero_before": "<span id=\"hero-title\"></span>",
+    "overflow": []
+  },
+  {
+    "route": "/people/robert-watson/",
+    "hero_before": "<nav class=\"breadcrumbs\" aria-label=\"Breadcrumb\">\n\n\n\n\n  \n  \n  \n  \n  \n  \n  <ol class=\"source-breadcrumbs\">\n  <li>News &amp; Events</li>\n  <li>Speakers</li>\n  <li>Robert Watson</li>\n</ol></nav>",
+    "overflow": []
+  },
+  {
+    "route": "/papers/cheri-concentrate-practical-compressed-capabilities/",
+    "hero_before": "<nav class=\"breadcrumbs\" aria-label=\"Breadcrumb\">\n    <ol><li><a href=\"/discover/\">Discover CHERI</a></li><li><a href=\"/papers/\">Papers</a></li><li><span aria-current=\"page\">CHERI Concentrate: Practical Compressed Capabilities</span></li></ol>\n  </nav>",
+    "overflow": []
+  }
+]

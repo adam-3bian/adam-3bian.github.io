@@ -10,9 +10,9 @@ The archive's actual `_layouts`, `_includes`, `_sass`, branded/background assets
 
 - The native header/footer read `site.navigation` from `_config.yml` directly, without a Ruby navigation adapter.
 - The default Liquid layout extracts source headings and breadcrumbs without dropping original Markdown body content; collection listing and relationship Liquid includes replace generated display data.
-- The default layout preserves SEO and functional includes for search, directories, author relationships and disconnected forms. The native `sitemap.xml` and redirects replace the necessary plugin-generated routes; the former custom search feature is removed.
+- The default layout preserves SEO and functional includes for directories, author relationships and disconnected forms. The native `sitemap.xml` and redirects replace the necessary plugin-generated routes. Site search is absent; the three unused acquired mdBook search scripts are retained as source evidence but excluded from publishing.
 - Native hero/page-heading includes accept original heading HTML to retain exact text and incoming fragment IDs. Migrated paragraphs are not removed or duplicated as synthesized introductions.
-- Extracted `page-hero-summary` paragraphs receive the ZIP's native `lede` class after removal from the body, so their text appears once with the shared introduction typography. Full citation URLs wrap within `.content a`; this narrow source-content adapter prevents mobile overflow without changing link labels or targets.
+- Extracted `page-hero-summary` paragraphs receive the ZIP's native `lede` class after removal from the body, so their text appears once with the shared introduction typography. Full citation URLs, including unlinked DOI text, wrap within `.content`; native code/table scrolling remains. Compatibility heading anchors sit inside `.hero-intro`, keeping the ZIP's `.breadcrumbs + .hero` spacing selector intact.
 - Person layouts reuse source-owned portraits rather than inserting a second image. Existing people, organisations, news and events use the starter's person/member/post/event layouts through configuration defaults.
 - `_sass/settings.scss` loads the same Poppins faces locally. `_sass/_site-features.scss` styles only added functionality and source-data adapters. It must not override theme colours, watermark opacity, hero typography or substitute a custom profile layout. The existing long navigation uses the native stacked menu at tablet widths.
 
@@ -53,7 +53,7 @@ The ZIP documents describe the example starter; they do not replace the user's i
 A local build or cloud-environment publication does not deploy GitHub Pages. Local edits must be committed/pushed and the configured Pages workflow must succeed before the public site can reflect them. Deployment is a separate action requiring the user's authorization.
 
 
-For the standard build, `python3 scripts/check_theme.py` verifies exact imported files and active native components. For a rendered reference comparison, build the extracted starter into a separate directory with the same local Poppins faces, then run `python3 scripts/check_theme.py --reference-site /path/to/reference-build`. Redirect plugins can be omitted when building that typography/component reference; source-content and route correctness are validated independently against the application build.
+For current native-build and reference comparisons, use the commands in [VALIDATION.md](VALIDATION.md). The older `scripts/check_theme.py` assumes the retired custom build and a historical import manifest; it is not the current integration gate. Build the extracted starter independently with the same local Poppins faces. Reference fixture content may reuse real slide data, but its layouts, Sass and JavaScript must remain from the ZIP.
 
 ## Phase 5 directory adapters
 
@@ -72,3 +72,11 @@ The five-category menu data, subscribe component and disconnected form fields we
 ## Phase 7 content URLs and compatibility
 
 `content-urls.html` adapts only quoted URL attributes in native rendered content tags when `baseurl` is nonempty. It runs after source-card conversion, preserving collection lookup, literal Markdown, escaped code and attribute text. The default layout also inserts two evidence-backed fragment aliases without changing article bodies. Native static redirect pages preserve known former paths; no custom plugin, client routing, source theme or extra design system is introduced. See [Phase 7](../reports/codex-phases/phase-07.md).
+
+## Complete visual integration
+
+The homepage's full opening explanation now stays in the hero through `hero.intro-paragraphs: 2`. `section-cards.html` composes complete selected Markdown H2 sections into the ZIP's existing `cards`, `columns-*`, `card` and `content` elements. It preserves multi-destination links, source heading IDs and reading order. Standalone membership links use `call-to-action`/`card`. The five topic hubs reuse this renderer before their derived child directories. No new design tokens or card/hero/slider CSS are introduced.
+
+`talk-cards.html` groups the known retained speaker-export paragraph sequences into native cards, including all original metadata and action text. Existing tables remain native scrolling tables. General and technical directory cards contain inferred source images so diagrams retain their labels; explicit thumbnails, news/event photos and portraits keep their existing fit rules.
+
+The slider's HTML, Sass and JavaScript remain byte-identical to the ZIP. The integration report at [reports/visual-integration/README.md](../reports/visual-integration/README.md) records baseline/final screenshots, independent reference comparisons and the exact current validation scope. The public URL and Pages API were blocked during this task, so local evidence must not be presented as confirmation of the live deployment.

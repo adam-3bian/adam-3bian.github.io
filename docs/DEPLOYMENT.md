@@ -17,6 +17,8 @@ This repository is a **user Pages repository** (`adam-3bian.github.io`), so it p
 
 Review edits on the working branch. A separately authorized merge or push to `main` triggers GitHub's built-in Jekyll publishing; pushing `codex/phased-site-transformation` alone does not update the public site. Use front matter and Kramdown according to [AUTHORING.md](AUTHORING.md). Do not add `_plugins/` or unsupported plugins, or GitHub Pages will ignore or reject them. Dynamic collection cards, source-backed references come from the included Liquid templates.
 
+The 11 October 2026 integration audit fetched `main` at `7f3839872c8fea6a709b99d241880de0f3915c42` and continued development from `565567f8a2db6416aa2917600a57e690d264c9b0`. The former has no homepage slider data; the latter already contains the restored ZIP slider and later content/route work. The public URL and Pages API were blocked during that audit, so the latest deployment and exact served commit remain unverified. The settings above describe the intended architecture, not a newly confirmed remote setting. No setting change or publication was made. See [measured evidence](../reports/visual-integration/README.md).
+
 ## Local build and verification
 
 Use Ruby and the supported GitHub Pages gems. From the repository root:

@@ -1,0 +1,146 @@
+[
+  {
+    "stage": "before",
+    "route": "/hardware/cheriot-ibex/",
+    "width": 375,
+    "scroll": 397,
+    "hero_padding": "16px 20px 48px",
+    "anchor_present": false,
+    "breadcrumbs_adjacent": true
+  },
+  {
+    "stage": "before",
+    "route": "/hardware/cheriot-ibex/",
+    "width": 768,
+    "scroll": 753,
+    "hero_padding": "16px 32px 64px",
+    "anchor_present": false,
+    "breadcrumbs_adjacent": true
+  },
+  {
+    "stage": "before",
+    "route": "/hardware/cheriot-ibex/",
+    "width": 1024,
+    "scroll": 1009,
+    "hero_padding": "16px 32px 64px",
+    "anchor_present": false,
+    "breadcrumbs_adjacent": true
+  },
+  {
+    "stage": "before",
+    "route": "/hardware/cheriot-ibex/",
+    "width": 1440,
+    "scroll": 1425,
+    "hero_padding": "16px 32px 64px",
+    "anchor_present": false,
+    "breadcrumbs_adjacent": true
+  },
+  {
+    "stage": "before",
+    "route": "/people/anthony-fox/",
+    "width": 375,
+    "scroll": 360,
+    "hero_padding": "48px 20px",
+    "anchor_present": true,
+    "breadcrumbs_adjacent": false
+  },
+  {
+    "stage": "before",
+    "route": "/people/anthony-fox/",
+    "width": 768,
+    "scroll": 753,
+    "hero_padding": "64px 32px",
+    "anchor_present": true,
+    "breadcrumbs_adjacent": false
+  },
+  {
+    "stage": "before",
+    "route": "/people/anthony-fox/",
+    "width": 1024,
+    "scroll": 1009,
+    "hero_padding": "64px 32px",
+    "anchor_present": true,
+    "breadcrumbs_adjacent": false
+  },
+  {
+    "stage": "before",
+    "route": "/people/anthony-fox/",
+    "width": 1440,
+    "scroll": 1425,
+    "hero_padding": "64px 32px",
+    "anchor_present": true,
+    "breadcrumbs_adjacent": false
+  },
+  {
+    "stage": "after",
+    "route": "/hardware/cheriot-ibex/",
+    "width": 375,
+    "scroll": 360,
+    "hero_padding": "16px 20px 48px",
+    "anchor_present": false,
+    "breadcrumbs_adjacent": true
+  },
+  {
+    "stage": "after",
+    "route": "/hardware/cheriot-ibex/",
+    "width": 768,
+    "scroll": 753,
+    "hero_padding": "16px 32px 64px",
+    "anchor_present": false,
+    "breadcrumbs_adjacent": true
+  },
+  {
+    "stage": "after",
+    "route": "/hardware/cheriot-ibex/",
+    "width": 1024,
+    "scroll": 1009,
+    "hero_padding": "16px 32px 64px",
+    "anchor_present": false,
+    "breadcrumbs_adjacent": true
+  },
+  {
+    "stage": "after",
+    "route": "/hardware/cheriot-ibex/",
+    "width": 1440,
+    "scroll": 1425,
+    "hero_padding": "16px 32px 64px",
+    "anchor_present": false,
+    "breadcrumbs_adjacent": true
+  },
+  {
+    "stage": "after",
+    "route": "/people/anthony-fox/",
+    "width": 375,
+    "scroll": 360,
+    "hero_padding": "16px 20px 48px",
+    "anchor_present": true,
+    "breadcrumbs_adjacent": true
+  },
+  {
+    "stage": "after",
+    "route": "/people/anthony-fox/",
+    "width": 768,
+    "scroll": 753,
+    "hero_padding": "16px 32px 64px",
+    "anchor_present": true,
+    "breadcrumbs_adjacent": true
+  },
+  {
+    "stage": "after",
+    "route": "/people/anthony-fox/",
+    "width": 1024,
+    "scroll": 1009,
+    "hero_padding": "16px 32px 64px",
+    "anchor_present": true,
+    "breadcrumbs_adjacent": true
+  },
+  {
+    "stage": "after",
+    "route": "/people/anthony-fox/",
+    "width": 1440,
+    "scroll": 1425,
+    "hero_padding": "16px 32px 64px",
+    "anchor_present": true,
+    "breadcrumbs_adjacent": true
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "width": 375,
+    "error": "Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://adam-3bian.github.io/\nCall log:\n  - navigating to \"https://adam-3bian.github.io/\", waiting until \"networkidle\"\n"
+  },
+  {
+    "width": 768,
+    "error": "Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://adam-3bian.github.io/\nCall log:\n  - navigating to \"https://adam-3bian.github.io/\", waiting until \"networkidle\"\n"
+  },
+  {
+    "width": 1024,
+    "error": "Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://adam-3bian.github.io/\nCall log:\n  - navigating to \"https://adam-3bian.github.io/\", waiting until \"networkidle\"\n"
+  },
+  {
+    "width": 1440,
+    "error": "Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://adam-3bian.github.io/\nCall log:\n  - navigating to \"https://adam-3bian.github.io/\", waiting until \"networkidle\"\n"
+  }
+]

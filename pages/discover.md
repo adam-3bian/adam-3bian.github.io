@@ -2,6 +2,10 @@
 title: Discover CHERI
 permalink: /discover/
 layout: index
+sections:
+- presentation: cards
+  columns: 2
+  headings: ["Understand CHERI", "Explore the resources"]
 ---
 
 # Discover CHERI

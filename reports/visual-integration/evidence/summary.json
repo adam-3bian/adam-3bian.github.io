@@ -1,0 +1,38 @@
+{
+  "baseline": "565567f8a2db6416aa2917600a57e690d264c9b0",
+  "records": 476,
+  "historical_mappings": 376,
+  "historical_unique_bodies": 371,
+  "papers": 15,
+  "name_only": 65,
+  "website_editions": 9,
+  "coverage": {
+    "captured-source-signature": 371,
+    "verified-name-only": 65,
+    "paper-catalogue": 15,
+    "repository-authored-index-or-system-page": 16,
+    "declared-website-edition": 9
+  },
+  "alternates": 19,
+  "source_cards": 293,
+  "source_navigation": 242,
+  "forward_edges": 366,
+  "reverse_edges": 293,
+  "original_asset_mappings": 430,
+  "unique_original_assets": 396,
+  "decoded_images_or_pdf_headers": 364,
+  "html_outputs": 742,
+  "redirects": 266,
+  "compatibility_redirects": 261,
+  "sitemap": 456,
+  "root_local_references": 60613,
+  "project_local_references": 60613,
+  "root_link_errors": 0,
+  "project_link_errors": 0,
+  "fidelity_failures": 0,
+  "slider_exact_zip_files": {
+    "_includes/slider.html": true,
+    "_sass/_slider.scss": true,
+    "assets/js/slider.js": true
+  }
+}

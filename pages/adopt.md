@@ -2,6 +2,10 @@
 title: Adopt CHERI
 permalink: /adopt/
 layout: index
+sections:
+- presentation: cards
+  columns: 2
+  headings: ["Make the business case", "Plan adoption"]
 ---
 
 # Adopt CHERI

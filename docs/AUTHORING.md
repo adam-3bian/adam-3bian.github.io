@@ -11,7 +11,7 @@ Each entity lives in one Markdown file. Its filename is its ID: `_people/robert-
 | `speaker: true` | People | Identify a source-listed speaker. Authors may also be speakers. |
 | `organization` | People | Organisation ID, or an array for explicitly published multiple affiliations. |
 | `speakers` | Events | Array of people IDs, in source order. |
-| `authors` | Papers | Array of named contributor IDs, in citation order. |
+| `authors` | Papers and news | Array of named contributor IDs, in the original citation/byline order. |
 | `date` | News and events | Source publication date for news; source occurrence date/time for events. |
 | `end-date` | Multi-day events | Last published event day, inclusive. Omit for a single day. |
 | `undated: true` | A news/event record without a verified date | Prevent Jekyll's implicit build date from being displayed or used as a genuine date. Omit `date` in this case. |
@@ -19,6 +19,8 @@ Each entity lives in one Markdown file. Its filename is its ID: `_people/robert-
 | `permalink` | Ordinary pages under `pages/` | Public route; collection routes come from filenames. |
 | `listing` | Directory pages | For `layout: people`, optional `role: speaker` or `registry: governing-board`; for `layout: events`, optional `status: upcoming` or `status: past`. Group optional `columns` here. Other directories use `layout: list` with `listing.collection`; members use `layout: members`. |
 | `thumbnail` | A record with genuine media | Optional grouped `src`, `alt`, `fit`, `position`, `width` and `height`; otherwise cards reuse its first local source image. |
+| `hero.intro-paragraphs` | A genuine introduction spanning multiple paragraphs | Optional total count of contiguous introductory paragraphs, including the first. Defaults to one; never consumes an image or a different block type. |
+| `sections` | A landing page with existing Markdown H2 sections | Ordered groups with `presentation: cards`, `columns` and `headings` (existing IDs or exact titles). `presentation: action` gives standalone links the native CTA surface. Text and destinations stay in Markdown. |
 | `where-next` | A page with a known next destination | One `url`, with optional `title`, `action`, `image`, `target` and `rel`. No description is rendered. |
 | `related-pages` | A page with known related destinations | Ordered URL objects; infer destination titles unless an explicit override is needed. Optional source-backed `description`, `action`, `target` and `rel`. |
 
@@ -37,6 +39,19 @@ related-pages:
 ```
 
 Where next always renders one full-width card with a title and action. Related pages uses a responsive grid. The shared renderer resolves internal titles from actual pages/records, preserves explicit overrides, prefixes local links/assets for project builds, and adds `noopener noreferrer` for explicit `target: _blank`. Person/member cards use square images, news/event cards use landscape frames, and a missing genuine image produces a text-only card. An explicit empty image alt remains empty; use `fit: contain` for a logo or diagram that must stay uncropped.
+
+The first source image on a general/technical card defaults to `contain`, so diagram labels remain visible. Explicit photographic thumbnails retain their specified fit. Speaker biographies keep their complete `CHERI Talks` paragraphs; the shared person adapter groups each existing title/date/location/actions sequence into a native card. Existing talk tables stay tables. Do not copy talk prose into YAML or add HTML wrappers.
+
+Landing-page sections can use the same card grid without duplicating content:
+
+```yaml
+sections:
+- presentation: cards
+  columns: 3
+  headings: [protect-your-organisation, build-more-secure-products, build-the-technology]
+```
+
+Keep those Markdown sections consecutive and in their original reading order. Selection changes presentation only; unmatched sections remain ordinary content. Multi-link cards preserve every independent destination and never nest anchors.
 
 For the migrated 137 records, retained `.where-next-title` / `.related-pages-title` blocks are original source evidence; their YAML fields now control display. Keep their historical wording intact. Existing Where next descriptions are intentionally omitted from the rendered component; Related content descriptions remain visible through the YAML mapping. New authored pages need only the YAML fields. See [Phase 2](../reports/codex-phases/phase-02.md) for measured preservation and the limits of older search/filter/date statements below.
 
@@ -138,7 +153,7 @@ Write native Kramdown headings, lists, links, tables, definitions and fenced cod
 
 Use `.image-left`, `.image-right` or `.image-full` from source evidence; inline images also use `.image-inline`. Captions remain Markdown paragraphs. Preserve original asset bytes.
 
-Differing original-site versions use `-original` filenames and `alternate: true`. Their complete bodies remain available. Published website editions use the primary routes; nine retained originals live in `pages/reference/source-versions/`. Exact corrections and directory substitutions are recorded in `reports/website-editions.json` and checked independently. Alternate bodies are excluded from directories/search and marked `noindex`. Capture records, `paper-sources.json`, `relationship-evidence.json`, `derived-content.json` and immutable signatures retain provenance in `reports/`. Deliberate source link/image repairs are recorded separately.
+Differing original-site versions use `-original` filenames and `alternate: true`. Their complete bodies remain available. Published website editions use the primary routes; nine retained originals live in `pages/reference/source-versions/`. Exact corrections and directory substitutions are recorded in `reports/website-editions.json` and checked independently. Alternate bodies are excluded from directories and marked `noindex`; the site has no search feature. Capture records, `paper-sources.json`, `relationship-evidence.json`, `derived-content.json` and immutable signatures retain provenance in `reports/`. Deliberate source link/image repairs are recorded separately.
 
 Contact/newsletter forms live in shared includes and are disconnected previews, as requested. Their notices and disabled buttons must remain until a separate integration is approved. Editorial Markdown contains no HTML or Liquid for these components. See [DEPLOYMENT.md](DEPLOYMENT.md) for build and preview hosting instructions.
 

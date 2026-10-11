@@ -64,7 +64,14 @@
         {% endif %}
       {% endif %}
     {% endif %}
-    {% if kind == 'organisations' and image_url %}{% assign image_fit = 'contain' %}{% endif %}
+    {% if image_url %}
+      {% if kind == 'organisations' %}{% assign image_fit = 'contain' %}
+      {% elsif card_image.src == nil and kind != 'people' and kind != 'news' and kind != 'events' and kind != 'posts' %}
+        {% comment %}A source diagram is not a cropped photographic thumbnail.
+          Keep its complete labels visible using the ZIP's native contain frame.{% endcomment %}
+        {% assign image_fit = 'contain' %}
+      {% endif %}
+    {% endif %}
     {% assign link_url = item.url %}
     {% if include.source_entry %}
       {% assign source_body = include.source_entry %}
