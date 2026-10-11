@@ -3,7 +3,7 @@
 Date: 11 October 2026. Branch: `codex/phased-site-transformation`.
 
 - Starting commit: `810c764c6f570ef821fa15a85b867e37ca3d7b7b`, fetched from the working branch before work.
-- Implementation commit: recorded after committing the verified changes.
+- Ending implementation/verification commit: `b44cf41beafdf79101bc21990423aa8ccd4304a2`. A subsequent report-only commit records this SHA; the final pushed branch tip is supplied in the completion message.
 - Exit gate: passed for the available repository content and routes, with the explicit exceptions below.
 
 The Phase 6 report and repository instructions were read first. This phase audits current content against retained historical evidence and actual native output, repairs proven URL gaps, and addresses the user's explicit slider complaint. The existing cloud setup and native GitHub Pages bundle were reused; no dependency or environment configuration change was needed.
