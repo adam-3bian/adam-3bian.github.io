@@ -1,0 +1,152 @@
+[
+  {
+    "prefix": "/cheri-preview",
+    "id": "root",
+    "correct": true
+  },
+  {
+    "prefix": "/cheri-preview",
+    "id": "prefixed",
+    "correct": true
+  },
+  {
+    "prefix": "/cheri-preview",
+    "id": "prefix-query",
+    "correct": true
+  },
+  {
+    "prefix": "/cheri-preview",
+    "id": "prefix-fragment",
+    "correct": true
+  },
+  {
+    "prefix": "/cheri-preview",
+    "id": "similar-prefix",
+    "correct": true
+  },
+  {
+    "prefix": "/cheri-preview",
+    "id": "relative",
+    "correct": true
+  },
+  {
+    "prefix": "/cheri-preview",
+    "id": "fragment",
+    "correct": true
+  },
+  {
+    "prefix": "/cheri-preview",
+    "id": "external",
+    "correct": true
+  },
+  {
+    "prefix": "/cheri-preview",
+    "id": "protocol",
+    "correct": true
+  },
+  {
+    "prefix": "/cheri-preview",
+    "id": "mail",
+    "correct": true
+  },
+  {
+    "prefix": "/cheri-preview",
+    "id": "single",
+    "correct": true
+  },
+  {
+    "prefix": "/cheri-preview",
+    "id": "image",
+    "correct": true
+  },
+  {
+    "prefix": "/cheri-preview",
+    "id": "media",
+    "correct": true
+  },
+  {
+    "prefix": "/cheri-preview",
+    "id": "source",
+    "correct": true
+  },
+  {
+    "prefix": "/cheri-preview",
+    "case": "escaped code, prose and alt untouched",
+    "correct": true
+  },
+  {
+    "prefix": "",
+    "id": "root",
+    "correct": true
+  },
+  {
+    "prefix": "",
+    "id": "prefixed",
+    "correct": true
+  },
+  {
+    "prefix": "",
+    "id": "prefix-query",
+    "correct": true
+  },
+  {
+    "prefix": "",
+    "id": "prefix-fragment",
+    "correct": true
+  },
+  {
+    "prefix": "",
+    "id": "similar-prefix",
+    "correct": true
+  },
+  {
+    "prefix": "",
+    "id": "relative",
+    "correct": true
+  },
+  {
+    "prefix": "",
+    "id": "fragment",
+    "correct": true
+  },
+  {
+    "prefix": "",
+    "id": "external",
+    "correct": true
+  },
+  {
+    "prefix": "",
+    "id": "protocol",
+    "correct": true
+  },
+  {
+    "prefix": "",
+    "id": "mail",
+    "correct": true
+  },
+  {
+    "prefix": "",
+    "id": "single",
+    "correct": true
+  },
+  {
+    "prefix": "",
+    "id": "image",
+    "correct": true
+  },
+  {
+    "prefix": "",
+    "id": "media",
+    "correct": true
+  },
+  {
+    "prefix": "",
+    "id": "source",
+    "correct": true
+  },
+  {
+    "prefix": "",
+    "case": "escaped code, prose and alt untouched",
+    "correct": true
+  }
+]

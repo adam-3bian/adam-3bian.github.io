@@ -15,7 +15,7 @@ This repository is a **user Pages repository** (`adam-3bian.github.io`), so it p
 
 ## Editing
 
-Edit any existing Markdown page or collection record and push it to `main`. GitHub's built-in Jekyll build publishes it automatically. Use front matter and Kramdown according to [AUTHORING.md](AUTHORING.md). Do not add `_plugins/` or unsupported plugins, or GitHub Pages will ignore or reject them. Dynamic collection cards, source-backed references and search indexing come from the included Liquid templates.
+Review edits on the working branch. A separately authorized merge or push to `main` triggers GitHub's built-in Jekyll publishing; pushing `codex/phased-site-transformation` alone does not update the public site. Use front matter and Kramdown according to [AUTHORING.md](AUTHORING.md). Do not add `_plugins/` or unsupported plugins, or GitHub Pages will ignore or reject them. Dynamic collection cards, source-backed references come from the included Liquid templates.
 
 ## Local build and verification
 
@@ -27,6 +27,6 @@ bundle exec jekyll build
 bundle exec jekyll serve
 ```
 
-Verify a representative sample of full article bodies, event/person pages, images, URLs, directory filters, relationships and search after the first native Pages build. The earlier custom-plugin Python/Ruby validators and old `reports/` builds are historical evidence; they are **not** automatically run by native Pages. GitHub-hosted visual parity with the original ZIP still requires a browser audit.
+Verify a representative sample of full article bodies, event/person pages, images, URLs, collection directories, relationships, static redirects, sitemap and 404 links after the first native Pages build. The earlier custom-plugin Python/Ruby validators and old `reports/` builds are historical evidence; they are **not** automatically run by native Pages. GitHub-hosted visual parity with the original ZIP still requires a browser audit.
 
 Contact and newsletter forms remain disabled previews and link to existing published external services. No database, WordPress installation or external hosting is required for the website.

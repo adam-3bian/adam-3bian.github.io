@@ -1,0 +1,1450 @@
+{
+  "papers": [
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "publication_url": "https://doi.org/10.1145/3708553",
+      "checks": {
+        "text": true,
+        "headings": true,
+        "paragraphs": true,
+        "lists": true,
+        "tables": true,
+        "links": true,
+        "images": true,
+        "definitions": true,
+        "code_blocks": true
+      },
+      "scope": "Complete catalogue entry; no acquired external full paper is claimed."
+    },
+    {
+      "path": "_papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators.md",
+      "publication_url": "https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/202506-isca-capchecker.pdf",
+      "checks": {
+        "text": true,
+        "headings": true,
+        "paragraphs": true,
+        "lists": true,
+        "tables": true,
+        "links": true,
+        "images": true,
+        "definitions": true,
+        "code_blocks": true
+      },
+      "scope": "Complete catalogue entry; no acquired external full paper is claimed."
+    },
+    {
+      "path": "_papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev.md",
+      "publication_url": "https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/202510-sosp-cheriot-rtos.pdf",
+      "checks": {
+        "text": true,
+        "headings": true,
+        "paragraphs": true,
+        "lists": true,
+        "tables": true,
+        "links": true,
+        "images": true,
+        "definitions": true,
+        "code_blocks": true
+      },
+      "scope": "Complete catalogue entry; no acquired external full paper is claimed."
+    },
+    {
+      "path": "_papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c.md",
+      "publication_url": "https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/202510-ccs-gpu-driver-compartments.pdf",
+      "checks": {
+        "text": true,
+        "headings": true,
+        "paragraphs": true,
+        "lists": true,
+        "tables": true,
+        "links": true,
+        "images": true,
+        "definitions": true,
+        "code_blocks": true
+      },
+      "scope": "Complete catalogue entry; no acquired external full paper is claimed."
+    },
+    {
+      "path": "_papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou.md",
+      "publication_url": "https://www.cl.cam.ac.uk/users/pes20/asplos24spring-paper110.pdf",
+      "checks": {
+        "text": true,
+        "headings": true,
+        "paragraphs": true,
+        "lists": true,
+        "tables": true,
+        "links": true,
+        "images": true,
+        "definitions": true,
+        "code_blocks": true
+      },
+      "scope": "Complete catalogue entry; no acquired external full paper is claimed."
+    },
+    {
+      "path": "_papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety.md",
+      "publication_url": "https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/202404asplos-cornucopia-reloaded.pdf",
+      "checks": {
+        "text": true,
+        "headings": true,
+        "paragraphs": true,
+        "lists": true,
+        "tables": true,
+        "links": true,
+        "images": true,
+        "definitions": true,
+        "code_blocks": true
+      },
+      "scope": "Complete catalogue entry; no acquired external full paper is claimed."
+    },
+    {
+      "path": "_papers/cheri-hardware-enabled-c-c-memory-protection-at-scale.md",
+      "publication_url": "https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/20240419-ieeesp-cheri-memory-safety.pdf",
+      "checks": {
+        "text": true,
+        "headings": true,
+        "paragraphs": true,
+        "lists": true,
+        "tables": true,
+        "links": true,
+        "images": true,
+        "definitions": true,
+        "code_blocks": true
+      },
+      "scope": "Complete catalogue entry; no acquired external full paper is claimed."
+    },
+    {
+      "path": "_papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa.md",
+      "publication_url": "https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/202305ieeemicro-morello-platform.pdf",
+      "checks": {
+        "text": true,
+        "headings": true,
+        "paragraphs": true,
+        "lists": true,
+        "tables": true,
+        "links": true,
+        "images": true,
+        "definitions": true,
+        "code_blocks": true
+      },
+      "scope": "Complete catalogue entry; no acquired external full paper is claimed."
+    },
+    {
+      "path": "_papers/cheriot-complete-memory-safety-for-embedded-devices.md",
+      "publication_url": "https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/202310ieeemicro-cheriot-uarch.pdf",
+      "checks": {
+        "text": true,
+        "headings": true,
+        "paragraphs": true,
+        "lists": true,
+        "tables": true,
+        "links": true,
+        "images": true,
+        "definitions": true,
+        "code_blocks": true
+      },
+      "scope": "Complete catalogue entry; no acquired external full paper is claimed."
+    },
+    {
+      "path": "_papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md",
+      "publication_url": "https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/202005oakland-cheri-formal.pdf",
+      "checks": {
+        "text": true,
+        "headings": true,
+        "paragraphs": true,
+        "lists": true,
+        "tables": true,
+        "links": true,
+        "images": true,
+        "definitions": true,
+        "code_blocks": true
+      },
+      "scope": "Complete catalogue entry; no acquired external full paper is claimed."
+    },
+    {
+      "path": "_papers/cornucopia-temporal-safety-for-cheri-heaps.md",
+      "publication_url": "https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/2020oakland-cornucopia.pdf",
+      "checks": {
+        "text": true,
+        "headings": true,
+        "paragraphs": true,
+        "lists": true,
+        "tables": true,
+        "links": true,
+        "images": true,
+        "definitions": true,
+        "code_blocks": true
+      },
+      "scope": "Complete catalogue entry; no acquired external full paper is claimed."
+    },
+    {
+      "path": "_papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p.md",
+      "publication_url": "https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/201904-asplos-cheriabi.pdf",
+      "checks": {
+        "text": true,
+        "headings": true,
+        "paragraphs": true,
+        "lists": true,
+        "tables": true,
+        "links": true,
+        "images": true,
+        "definitions": true,
+        "code_blocks": true
+      },
+      "scope": "Complete catalogue entry; no acquired external full paper is claimed."
+    },
+    {
+      "path": "_papers/cheri-concentrate-practical-compressed-capabilities.md",
+      "publication_url": "https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/2019tc-cheri-concentrate.pdf",
+      "checks": {
+        "text": true,
+        "headings": true,
+        "paragraphs": true,
+        "lists": true,
+        "tables": true,
+        "links": true,
+        "images": true,
+        "definitions": true,
+        "code_blocks": true
+      },
+      "scope": "Complete catalogue entry; no acquired external full paper is claimed."
+    },
+    {
+      "path": "_papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md",
+      "publication_url": "https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/201505-oakland2015-cheri-compartmentalization.pdf",
+      "checks": {
+        "text": true,
+        "headings": true,
+        "paragraphs": true,
+        "lists": true,
+        "tables": true,
+        "links": true,
+        "images": true,
+        "definitions": true,
+        "code_blocks": true
+      },
+      "scope": "Complete catalogue entry; no acquired external full paper is claimed."
+    },
+    {
+      "path": "_papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk.md",
+      "publication_url": "https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/201406-isca2014-cheri.pdf",
+      "checks": {
+        "text": true,
+        "headings": true,
+        "paragraphs": true,
+        "lists": true,
+        "tables": true,
+        "links": true,
+        "images": true,
+        "definitions": true,
+        "code_blocks": true
+      },
+      "scope": "Complete catalogue entry; no acquired external full paper is claimed."
+    }
+  ],
+  "name_only": [
+    {
+      "path": "_organisations/the-good-penguin.md",
+      "title": "The Good Penguin",
+      "type": "organisation-name",
+      "source_url": "https://cheri-alliance.github.io/people/andrew-murray/",
+      "evidence": "reports/validation/ce84eed56beb593b/source-signature.json",
+      "source_label": "The Good Penguin",
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_organisations/risc-v-international.md",
+      "title": "RISC-V International",
+      "type": "organisation-name",
+      "source_url": "https://cheri-alliance.github.io/people/andy-moore/",
+      "evidence": "reports/validation/e19f3dbb7ef947ad/source-signature.json",
+      "source_label": "RISC-V International",
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_organisations/dsit.md",
+      "title": "DSIT",
+      "type": "organisation-name",
+      "source_url": "https://cheri-alliance.github.io/people/bradley-finn/",
+      "evidence": "reports/validation/e3ef594741343b34/source-signature.json",
+      "source_label": "DSIT",
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_organisations/smart-information-flow-technologies-sift.md",
+      "title": "Smart Information Flow Technologies (SIFT)",
+      "type": "organisation-name",
+      "source_url": "https://cheri-alliance.github.io/people/david-musliner/",
+      "evidence": "reports/validation/9b698745b6a1bd40/source-signature.json",
+      "source_label": "Smart Information Flow Technologies (SIFT)",
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_organisations/minerva-systems.md",
+      "title": "Minerva Systems",
+      "type": "organisation-name",
+      "source_url": "https://cheri-alliance.github.io/people/donato-ferraro/",
+      "evidence": "reports/validation/27508c8b827fedc4/source-signature.json",
+      "source_label": "Minerva Systems, University of Modena and Reggio Emilia",
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_organisations/university-of-modena-and-reggio-emilia.md",
+      "title": "University of Modena and Reggio Emilia",
+      "type": "organisation-name",
+      "source_url": "https://cheri-alliance.github.io/people/donato-ferraro/",
+      "evidence": "reports/validation/27508c8b827fedc4/source-signature.json",
+      "source_label": "Minerva Systems, University of Modena and Reggio Emilia",
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_organisations/ararat-river-consulting-llc.md",
+      "title": "Ararat River Consulting, LLC",
+      "type": "organisation-name",
+      "source_url": "https://cheri-alliance.github.io/people/john-baldwin/",
+      "evidence": "reports/validation/bf70ae996824e5bd/source-signature.json",
+      "source_label": "Ararat River Consulting, LLC",
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_organisations/ukri.md",
+      "title": "UKRI",
+      "type": "organisation-name",
+      "source_url": "https://cheri-alliance.github.io/people/john-goodacre/",
+      "evidence": "reports/validation/d35bc78e55134358/source-signature.json",
+      "source_label": "UKRI",
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_organisations/aria.md",
+      "title": "ARIA",
+      "type": "organisation-name",
+      "source_url": "https://cheri-alliance.github.io/people/kathleen-fisher/",
+      "evidence": "reports/validation/9c8023ddf9a74ee9/source-signature.json",
+      "source_label": "ARIA",
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_organisations/arm.md",
+      "title": "Arm",
+      "type": "organisation-name",
+      "source_url": "https://cheri-alliance.github.io/people/kevin-brodsky/",
+      "evidence": "reports/validation/95a0b573b73b9400/source-signature.json",
+      "source_label": "Arm",
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_organisations/german-research-center-for-artificial-intelligence-dfki.md",
+      "title": "German Research Center for Artificial Intelligence (DFKI)",
+      "type": "organisation-name",
+      "source_url": "https://cheri-alliance.github.io/people/luca-muller/",
+      "evidence": "reports/validation/40be8e476aec7569/source-signature.json",
+      "source_label": "German Research Center for Artificial Intelligence (DFKI)",
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_organisations/european-commission-dg-connect.md",
+      "title": "European Commission (DG CONNECT)",
+      "type": "organisation-name",
+      "source_url": "https://cheri-alliance.github.io/people/maika-fohrenbach/",
+      "evidence": "reports/validation/65509eb0d3d3f7b6/source-signature.json",
+      "source_label": "European Commission (DG CONNECT)",
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_organisations/mission-critical-applications-limited.md",
+      "title": "Mission Critical Applications Limited",
+      "type": "organisation-name",
+      "source_url": "https://cheri-alliance.github.io/people/martin-atkins/",
+      "evidence": "reports/validation/7c567067660ba090/source-signature.json",
+      "source_label": "Mission Critical Applications Limited",
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_organisations/ericsson.md",
+      "title": "Ericsson",
+      "type": "organisation-name",
+      "source_url": "https://cheri-alliance.github.io/people/merve-gulmez/",
+      "evidence": "reports/validation/5d06594eca22f92a/source-signature.json",
+      "source_label": "Ericsson",
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_organisations/microservice-store.md",
+      "title": "Microservice Store",
+      "type": "organisation-name",
+      "source_url": "https://cheri-alliance.github.io/people/murat-cakmak/",
+      "evidence": "reports/validation/90142a7b18e2e591/source-signature.json",
+      "source_label": "Microservice Store",
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_organisations/configured-things.md",
+      "title": "Configured Things",
+      "type": "organisation-name",
+      "source_url": "https://cheri-alliance.github.io/people/phil-day/",
+      "evidence": "reports/validation/81e99c686ba8a8fe/source-signature.json",
+      "source_label": "Configured Things",
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/tony-chen.md",
+      "title": "Tony Chen",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Tony Chen"
+      ],
+      "papers": [
+        "it-is-time-to-standardize-principles-and-practices-for-software-memory-safety",
+        "cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev",
+        "cheriot-complete-memory-safety-for-embedded-devices"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/brooks-davis.md",
+      "title": "Brooks Davis",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Brooks Davis"
+      ],
+      "papers": [
+        "it-is-time-to-standardize-principles-and-practices-for-software-memory-safety",
+        "formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou",
+        "cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety",
+        "cheri-hardware-enabled-c-c-memory-protection-at-scale",
+        "cornucopia-temporal-safety-for-cheri-heaps",
+        "cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p",
+        "cheri-concentrate-practical-compressed-capabilities",
+        "cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat",
+        "the-cheri-capability-model-revisiting-risc-in-an-age-of-risk"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/nathaniel-wesley-filardo.md",
+      "title": "Nathaniel Wesley Filardo",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Nathaniel Wesley Filardo",
+        "Nathaniel W. Filardo"
+      ],
+      "papers": [
+        "it-is-time-to-standardize-principles-and-practices-for-software-memory-safety",
+        "cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev",
+        "cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety",
+        "cheri-hardware-enabled-c-c-memory-protection-at-scale",
+        "cheriot-complete-memory-safety-for-embedded-devices",
+        "cornucopia-temporal-safety-for-cheri-heaps",
+        "cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p",
+        "cheri-concentrate-practical-compressed-capabilities"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/brett-f-gutstein.md",
+      "title": "Brett F. Gutstein",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Brett Gutstein",
+        "Brett F. Gutstein"
+      ],
+      "papers": [
+        "it-is-time-to-standardize-principles-and-practices-for-software-memory-safety",
+        "cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety",
+        "cornucopia-temporal-safety-for-cheri-heaps"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/graeme-jenkinson.md",
+      "title": "Graeme Jenkinson",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Graeme Jenkinson"
+      ],
+      "papers": [
+        "it-is-time-to-standardize-principles-and-practices-for-software-memory-safety"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/ben-laurie.md",
+      "title": "Ben Laurie",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Ben Laurie"
+      ],
+      "papers": [
+        "it-is-time-to-standardize-principles-and-practices-for-software-memory-safety",
+        "cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev",
+        "cheri-hardware-enabled-c-c-memory-protection-at-scale",
+        "cheriot-complete-memory-safety-for-embedded-devices",
+        "cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat",
+        "the-cheri-capability-model-revisiting-risc-in-an-age-of-risk"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/peter-g-neumann.md",
+      "title": "Peter G. Neumann",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Peter G. Neumann"
+      ],
+      "papers": [
+        "it-is-time-to-standardize-principles-and-practices-for-software-memory-safety",
+        "cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety",
+        "cheri-hardware-enabled-c-c-memory-protection-at-scale",
+        "rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de",
+        "cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p",
+        "cheri-concentrate-practical-compressed-capabilities",
+        "cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat",
+        "the-cheri-capability-model-revisiting-risc-in-an-age-of-risk"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/hamed-okhravi.md",
+      "title": "Hamed Okhravi",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Hamed Okhravi"
+      ],
+      "papers": [
+        "it-is-time-to-standardize-principles-and-practices-for-software-memory-safety"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/peter-sewell.md",
+      "title": "Peter Sewell",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Peter Sewell"
+      ],
+      "papers": [
+        "it-is-time-to-standardize-principles-and-practices-for-software-memory-safety",
+        "formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou",
+        "cheri-hardware-enabled-c-c-memory-protection-at-scale",
+        "the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa",
+        "rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/laurence-tratt.md",
+      "title": "Laurence Tratt",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Laurence Tratt"
+      ],
+      "papers": [
+        "it-is-time-to-standardize-principles-and-practices-for-software-memory-safety"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/hugo-vincent.md",
+      "title": "Hugo Vincent",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Hugo Vincent"
+      ],
+      "papers": [
+        "it-is-time-to-standardize-principles-and-practices-for-software-memory-safety"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/konrad-witaszczyk.md",
+      "title": "Konrad Witaszczyk",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Konrad Witaszczyk"
+      ],
+      "papers": [
+        "it-is-time-to-standardize-principles-and-practices-for-software-memory-safety",
+        "cheri-hardware-enabled-c-c-memory-protection-at-scale"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/a-theodore-markettos.md",
+      "title": "A. Theodore Markettos",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "A. Theodore Markettos"
+      ],
+      "papers": [
+        "adaptive-cheri-compartmentalization-for-heterogeneous-accelerators",
+        "deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c",
+        "cheri-concentrate-practical-compressed-capabilities"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/alexandre-joannou.md",
+      "title": "Alexandre Joannou",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Alexandre Joannou"
+      ],
+      "papers": [
+        "adaptive-cheri-compartmentalization-for-heterogeneous-accelerators",
+        "rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de",
+        "cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p",
+        "cheri-concentrate-practical-compressed-capabilities"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/matthew-naylor.md",
+      "title": "Matthew Naylor",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Matthew Naylor"
+      ],
+      "papers": [
+        "adaptive-cheri-compartmentalization-for-heterogeneous-accelerators",
+        "deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c",
+        "rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/peter-rugg.md",
+      "title": "Peter Rugg",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Peter Rugg"
+      ],
+      "papers": [
+        "adaptive-cheri-compartmentalization-for-heterogeneous-accelerators",
+        "cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/timothy-m-jones.md",
+      "title": "Timothy M. Jones",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Timothy M. Jones"
+      ],
+      "papers": [
+        "adaptive-cheri-compartmentalization-for-heterogeneous-accelerators",
+        "deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/saar-amar.md",
+      "title": "Saar Amar",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Saar Amar"
+      ],
+      "papers": [
+        "cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev",
+        "cheriot-complete-memory-safety-for-embedded-devices"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/hugo-lefeuvre.md",
+      "title": "Hugo Lefeuvre",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Hugo Lefeuvre"
+      ],
+      "papers": [
+        "cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/kunyan-liu.md",
+      "title": "Kunyan Liu",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Kunyan Liu"
+      ],
+      "papers": [
+        "cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev",
+        "cheriot-complete-memory-safety-for-embedded-devices"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/robert-norton-wright.md",
+      "title": "Robert Norton-Wright",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Robert Norton-Wright"
+      ],
+      "papers": [
+        "cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev",
+        "cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/margo-seltzer.md",
+      "title": "Margo Seltzer",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Margo Seltzer"
+      ],
+      "papers": [
+        "cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/yucong-tao.md",
+      "title": "Yucong Tao",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Yucong Tao"
+      ],
+      "papers": [
+        "cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev",
+        "cheriot-complete-memory-safety-for-embedded-devices"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/hongyan-xia.md",
+      "title": "Hongyan Xia",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Hongyan Xia"
+      ],
+      "papers": [
+        "cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev",
+        "cheriot-complete-memory-safety-for-embedded-devices",
+        "cornucopia-temporal-safety-for-cheri-heaps",
+        "cheri-concentrate-practical-compressed-capabilities"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/edward-tomasz-napieraa.md",
+      "title": "Edward Tomasz Napierała",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Edward Tomasz Napierała"
+      ],
+      "papers": [
+        "deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c",
+        "cornucopia-temporal-safety-for-cheri-heaps"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/vadim-zaliva.md",
+      "title": "Vadim Zaliva",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Vadim Zaliva"
+      ],
+      "papers": [
+        "formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/kayvan-memarian.md",
+      "title": "Kayvan Memarian",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Kayvan Memarian"
+      ],
+      "papers": [
+        "formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/ricardo-almeida.md",
+      "title": "Ricardo Almeida",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Ricardo Almeida"
+      ],
+      "papers": [
+        "formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/brian-campbell.md",
+      "title": "Brian Campbell",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Brian Campbell"
+      ],
+      "papers": [
+        "formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou",
+        "rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/ian-stark.md",
+      "title": "Ian Stark",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Ian Stark"
+      ],
+      "papers": [
+        "formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou",
+        "rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/mark-johnston.md",
+      "title": "Mark Johnston",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Mark Johnston"
+      ],
+      "papers": [
+        "cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/richard-grisenthwaite.md",
+      "title": "Richard Grisenthwaite",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Richard Grisenthwaite"
+      ],
+      "papers": [
+        "the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/graeme-barnes.md",
+      "title": "Graeme Barnes",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Graeme Barnes"
+      ],
+      "papers": [
+        "the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/robert-m-norton.md",
+      "title": "Robert M. Norton",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Robert Norton",
+        "Robert M. Norton"
+      ],
+      "papers": [
+        "cheriot-complete-memory-safety-for-embedded-devices",
+        "rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de",
+        "cheri-concentrate-practical-compressed-capabilities",
+        "cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat",
+        "the-cheri-capability-model-revisiting-risc-in-an-age-of-risk"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/kyndylan-nienhuis.md",
+      "title": "Kyndylan Nienhuis",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Kyndylan Nienhuis"
+      ],
+      "papers": [
+        "rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/thomas-bauereiss.md",
+      "title": "Thomas Bauereiss",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Thomas Bauereiss"
+      ],
+      "papers": [
+        "rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de",
+        "cheri-concentrate-practical-compressed-capabilities"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/anthony-fox.md",
+      "title": "Anthony Fox",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Anthony Fox"
+      ],
+      "papers": [
+        "rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de",
+        "cheri-concentrate-practical-compressed-capabilities"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/michael-roe.md",
+      "title": "Michael Roe",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Michael Roe"
+      ],
+      "papers": [
+        "rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de",
+        "cheri-concentrate-practical-compressed-capabilities",
+        "cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat",
+        "the-cheri-capability-model-revisiting-risc-in-an-age-of-risk"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/sam-ainsworth.md",
+      "title": "Sam Ainsworth",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Sam Ainsworth"
+      ],
+      "papers": [
+        "cornucopia-temporal-safety-for-cheri-heaps"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/lucian-paul-trifu.md",
+      "title": "Lucian Paul-Trifu",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Lucian Paul-Trifu"
+      ],
+      "papers": [
+        "cornucopia-temporal-safety-for-cheri-heaps"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/khilan-gudka.md",
+      "title": "Khilan Gudka",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Khilan Gudka"
+      ],
+      "papers": [
+        "cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p",
+        "cheri-concentrate-practical-compressed-capabilities",
+        "cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/jonathan-anderson.md",
+      "title": "Jonathan Anderson",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Jonathan Anderson"
+      ],
+      "papers": [
+        "cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat",
+        "the-cheri-capability-model-revisiting-risc-in-an-age-of-risk"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/nirav-dave.md",
+      "title": "Nirav Dave",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Nirav Dave"
+      ],
+      "papers": [
+        "cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/steven-j-murdoch.md",
+      "title": "Steven J. Murdoch",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Steven J. Murdoch"
+      ],
+      "papers": [
+        "cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/stacey-son.md",
+      "title": "Stacey Son",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Stacey Son"
+      ],
+      "papers": [
+        "cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/munraj-vadera.md",
+      "title": "Munraj Vadera",
+      "type": "paper-author",
+      "source_url": "https://cheri-alliance.github.io/discover/resources/academic-papers/",
+      "source_names": [
+        "Munraj Vadera"
+      ],
+      "papers": [
+        "cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/jim-wallace.md",
+      "title": "Jim Wallace",
+      "type": "news-author",
+      "source_url": "https://cheri-alliance.org/beyond-software-patching/",
+      "source_names": [
+        "Jim Wallace"
+      ],
+      "news": [
+        "beyond-software-patching"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/benjamin-fletcher.md",
+      "title": "Benjamin Fletcher",
+      "type": "news-author",
+      "source_url": "https://cheri-alliance.org/cheri-tag-bit-transport-overlay-standard-version-0-9-released/",
+      "source_names": [
+        "Benjamin Fletcher"
+      ],
+      "news": [
+        "cheri-tag-bit-transport-overlay-standard-version-0-9-released"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    },
+    {
+      "path": "_people/mihai-ordean.md",
+      "title": "Mihai Ordean",
+      "type": "news-author",
+      "source_url": "https://cheri-alliance.org/innovate-uk-project-winner-university-of-birmingham/",
+      "source_names": [
+        "Mihai Ordean"
+      ],
+      "news": [
+        "innovate-uk-project-winner-university-of-birmingham-original",
+        "innovate-uk-project-winner-university-of-birmingham"
+      ],
+      "checks": {
+        "name_only": true,
+        "source_label_present": true
+      }
+    }
+  ],
+  "editions": [
+    {
+      "path": "pages/index.md",
+      "original_markdown": "pages/reference/source-versions/home.md",
+      "source_urls": [
+        "https://cheri-alliance.github.io/"
+      ],
+      "purpose": "Published website edition; complete original body retained in reference source version",
+      "edits": [
+        [
+          "CHERI in an **open** security technology",
+          "CHERI is an **open** security technology"
+        ],
+        [
+          "[Getting started with the technical work](/)",
+          "[Getting started with the technical work](/build/)"
+        ],
+        [
+          "https://cheri-alliance.github.io/alliance/build/",
+          "/build/"
+        ]
+      ],
+      "listing": null,
+      "checks": {
+        "retained_alternate": true,
+        "declared_edits_only": true
+      }
+    },
+    {
+      "path": "pages/alliance/membership/contact.md",
+      "original_markdown": "pages/reference/source-versions/contact.md",
+      "source_urls": [
+        "https://cheri-alliance.github.io/alliance/membership/contact",
+        "https://cheri-alliance.github.io/alliance/membership/contact/"
+      ],
+      "purpose": "Published website edition; complete original body retained in reference source version",
+      "edits": [
+        [
+          "The Alliance contact form will appear here before publication.",
+          "Use the enquiry form below to explore the contact options. This preview does not send messages.\n\n[Open the published Alliance contact form](https://cheri-alliance.org/contact/#contact_form)."
+        ]
+      ],
+      "listing": null,
+      "checks": {
+        "retained_alternate": true,
+        "declared_edits_only": true
+      }
+    },
+    {
+      "path": "pages/news-and-events/news-and-analysis/subscribe-newsletter.md",
+      "original_markdown": "pages/reference/source-versions/newsletter.md",
+      "source_urls": [
+        "https://cheri-alliance.github.io/news-and-events/news-and-analysis/subscribe-newsletter/"
+      ],
+      "purpose": "Published website edition; complete original body retained in reference source version",
+      "edits": [
+        [
+          "TBD include registration iframe",
+          "The signup form below is a preview and does not subscribe you.\n\n[Subscribe through the published Alliance mailing list](https://cheri-alliance.kit.com/subscribe)."
+        ]
+      ],
+      "listing": null,
+      "checks": {
+        "retained_alternate": true,
+        "declared_edits_only": true
+      }
+    },
+    {
+      "path": "pages/alliance/leadership/members.md",
+      "original_markdown": "pages/reference/source-versions/members.md",
+      "source_urls": [
+        "https://cheri-alliance.github.io/alliance/leadership/members/"
+      ],
+      "purpose": "Published website edition; complete original body retained in reference source version",
+      "edits": [],
+      "listing": "members",
+      "checks": {
+        "retained_alternate": true,
+        "declared_edits_only": true
+      }
+    },
+    {
+      "path": "pages/news-and-events/people-and-opportunities/speakers.md",
+      "original_markdown": "pages/reference/source-versions/speakers.md",
+      "source_urls": [
+        "https://cheri-alliance.github.io/news-and-events/people-and-opportunities/speakers/"
+      ],
+      "purpose": "Published website edition; complete original body retained in reference source version",
+      "edits": [],
+      "listing": "speakers",
+      "checks": {
+        "retained_alternate": true,
+        "declared_edits_only": true
+      }
+    },
+    {
+      "path": "pages/news-and-events/news-and-analysis/latest-news.md",
+      "original_markdown": "pages/reference/source-versions/latest-news.md",
+      "source_urls": [
+        "https://cheri-alliance.github.io/news-and-events/news-and-analysis/latest-news/"
+      ],
+      "purpose": "Published website edition; complete original body retained in reference source version",
+      "edits": [],
+      "listing": "news",
+      "checks": {
+        "retained_alternate": true,
+        "declared_edits_only": true
+      }
+    },
+    {
+      "path": "pages/news-and-events/events-and-archive/upcoming-events.md",
+      "original_markdown": "pages/reference/source-versions/upcoming-events.md",
+      "source_urls": [
+        "https://cheri-alliance.github.io/news-and-events/events-and-archive/upcoming-events/"
+      ],
+      "purpose": "Published website edition; complete original body retained in reference source version",
+      "edits": [],
+      "listing": "events",
+      "checks": {
+        "retained_alternate": true,
+        "declared_edits_only": true
+      }
+    },
+    {
+      "path": "pages/news-and-events/events-and-archive/past-events.md",
+      "original_markdown": "pages/reference/source-versions/past-events.md",
+      "source_urls": [
+        "https://cheri-alliance.github.io/news-and-events/events-and-archive/past-events/"
+      ],
+      "purpose": "Published website edition; complete original body retained in reference source version",
+      "edits": [],
+      "listing": "events",
+      "checks": {
+        "retained_alternate": true,
+        "declared_edits_only": true
+      }
+    },
+    {
+      "path": "pages/adopt/business-case/cost-of-memory-unsafety.md",
+      "original_markdown": "pages/reference/source-versions/cost-of-memory-unsafety.md",
+      "source_urls": [
+        "https://cheri-alliance.github.io/adopt/business-case/cost-of-memory-unsafety/"
+      ],
+      "purpose": "Published website edition; complete original body retained in reference source version",
+      "edits": [
+        [
+          "[recent study](https://cheri-alliance.github.io/adopt/business-case/cost-of-memory-unsafety/Add Link to CRA Webinar)",
+          "recent study"
+        ]
+      ],
+      "listing": null,
+      "checks": {
+        "retained_alternate": true,
+        "declared_edits_only": true
+      }
+    }
+  ]
+}

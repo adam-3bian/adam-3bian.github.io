@@ -1,0 +1,3949 @@
+{
+  "forward": [
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "id": "alastair-beresford"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "id": "alfredo-mazzinghi"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "id": "ashish-darbari"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "id": "ben-fletcher"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "id": "bradley-finn"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "id": "carl-shaw"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "id": "david-chisnall"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "id": "dmitriy-yeliseyev"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "id": "domagoj-stolfa"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "id": "gavin-ferris"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "id": "haydn-povey"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "id": "hesham-almatary"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "id": "jeremy-singer"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "id": "john-goodacre"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "id": "jonathan-woodruff"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "id": "joshua-lant"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "id": "kevin-brodsky"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "id": "mark-batty"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "id": "mark-hill"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "id": "marno-van-der-maas"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "id": "martin-atkins"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "id": "mike-eftimakis"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "id": "mike-halsall"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "id": "phil-day"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "id": "robert-watson"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "id": "simon-moore"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "id": "tariq-kurd"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2025.md",
+      "field": "speakers",
+      "id": "tora-fridholm"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "alex-rebert"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "kathleen-fisher"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "maika-fohrenbach"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "ollie-whitehouse"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "sam-cater"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "adam-finney"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "alexander-voyevoda"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "alfredo-mazzinghi"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "andrew-murray"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "andy-moore"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "ben-fletcher"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "bradley-finn"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "carl-shaw"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "dave-harcourt"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "david-chisnall"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "david-musliner"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "edoardo-marangoni"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "javier-orensanz-martinez"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "jennifer-jackson"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "jessica-clarke"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "jianyi-cheng"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "johannes-muller"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "john-baldwin"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "john-goodacre"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "jonathan-woodruff"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "louis-emile-ploix"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "luca-muller"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "marno-van-der-maas"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "manu-ravishankar"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "merve-gulmez"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "mike-eftimakis"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "murat-cakmak"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "paul-metzger"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "peter-cox"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "robert-watson"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "samuel-stark"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "simon-moore"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "tariq-kurd"
+    },
+    {
+      "path": "_events/cheri-blossoms-conference-2026.md",
+      "field": "speakers",
+      "id": "thomas-nyman"
+    },
+    {
+      "path": "_events/cheritech25-reloaded.md",
+      "field": "speakers",
+      "id": "andrew-murray"
+    },
+    {
+      "path": "_events/cheritech25-reloaded.md",
+      "field": "speakers",
+      "id": "carl-shaw"
+    },
+    {
+      "path": "_events/cheritech25-reloaded.md",
+      "field": "speakers",
+      "id": "david-chisnall"
+    },
+    {
+      "path": "_events/cheritech25-reloaded.md",
+      "field": "speakers",
+      "id": "jeremy-singer"
+    },
+    {
+      "path": "_events/cheritech25-reloaded.md",
+      "field": "speakers",
+      "id": "john-thomson"
+    },
+    {
+      "path": "_events/cheritech25-reloaded.md",
+      "field": "speakers",
+      "id": "jonathan-woodruff"
+    },
+    {
+      "path": "_events/cheritech25-reloaded.md",
+      "field": "speakers",
+      "id": "marno-van-der-maas"
+    },
+    {
+      "path": "_events/cheritech25-reloaded.md",
+      "field": "speakers",
+      "id": "mike-eftimakis"
+    },
+    {
+      "path": "_events/cheritech25-reloaded.md",
+      "field": "speakers",
+      "id": "murali-vijayaraghavan"
+    },
+    {
+      "path": "_events/cheritech25-reloaded.md",
+      "field": "speakers",
+      "id": "tariq-kurd"
+    },
+    {
+      "path": "_events/cheritech25-reloaded.md",
+      "field": "speakers",
+      "id": "thomas-nyman"
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "id": "andrew-murray"
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "id": "carl-shaw"
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "id": "david-chisnall"
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "id": "dmitriy-yeliseyev"
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "id": "donato-ferraro"
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "id": "jeremy-singer"
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "id": "jessica-clarke"
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "id": "john-goodacre"
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "id": "john-thomson"
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "id": "jonathan-woodruff"
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "id": "ka-wing-li"
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "id": "marno-van-der-maas"
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "id": "merve-gulmez"
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "id": "mike-eftimakis"
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "id": "murali-vijayaraghavan"
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "id": "robert-watson"
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "id": "tariq-kurd"
+    },
+    {
+      "path": "_events/cheritech25.md",
+      "field": "speakers",
+      "id": "thomas-nyman"
+    },
+    {
+      "path": "_events/webinar-cheri-cra-compliance.md",
+      "field": "speakers",
+      "id": "tariq-kurd"
+    },
+    {
+      "path": "_news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate.md",
+      "field": "authors",
+      "id": "mike-eftimakis"
+    },
+    {
+      "path": "_news/ai-has-compressed-the-attack-timeline.md",
+      "field": "authors",
+      "id": "mike-eftimakis"
+    },
+    {
+      "path": "_news/behind-the-scenes-inside-the-promotion-and-ambassador-program-working-group.md",
+      "field": "authors",
+      "id": "mike-eftimakis"
+    },
+    {
+      "path": "_news/beyond-software-patching.md",
+      "field": "authors",
+      "id": "jim-wallace"
+    },
+    {
+      "path": "_news/cheri-alliance-to-distribute-arm-morello-boards-the-journey-beyond-dsbd-continues.md",
+      "field": "authors",
+      "id": "mike-eftimakis"
+    },
+    {
+      "path": "_news/cheri-memory-safety-mitigates-llm-discovered-vulnerability-in-freebsd.md",
+      "field": "authors",
+      "id": "brooks-davis"
+    },
+    {
+      "path": "_news/cheri-or-cheriot-the-answer-is-not-what-you-think-original.md",
+      "field": "authors",
+      "id": "adam-finney"
+    },
+    {
+      "path": "_news/cheri-or-cheriot-the-answer-is-not-what-you-think.md",
+      "field": "authors",
+      "id": "adam-finney"
+    },
+    {
+      "path": "_news/cheri-tag-bit-transport-overlay-standard-version-0-9-released.md",
+      "field": "authors",
+      "id": "benjamin-fletcher"
+    },
+    {
+      "path": "_news/cheri-zephyr-v0-4-0-release.md",
+      "field": "authors",
+      "id": "jennifer-jackson"
+    },
+    {
+      "path": "_news/cheriot-1-0-specification-released-original.md",
+      "field": "authors",
+      "id": "adam-finney"
+    },
+    {
+      "path": "_news/cheriot-1-0-specification-released.md",
+      "field": "authors",
+      "id": "adam-finney"
+    },
+    {
+      "path": "_news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology-original.md",
+      "field": "authors",
+      "id": "andrew-lindsay"
+    },
+    {
+      "path": "_news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology.md",
+      "field": "authors",
+      "id": "andrew-lindsay"
+    },
+    {
+      "path": "_news/innovate-uk-project-winner-university-of-birmingham-original.md",
+      "field": "authors",
+      "id": "mihai-ordean"
+    },
+    {
+      "path": "_news/innovate-uk-project-winner-university-of-birmingham.md",
+      "field": "authors",
+      "id": "mihai-ordean"
+    },
+    {
+      "path": "_news/introducing-the-cheri-adoption-global-ecosystem-assessment-q1-2026.md",
+      "field": "authors",
+      "id": "adam-finney"
+    },
+    {
+      "path": "_news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences-original.md",
+      "field": "authors",
+      "id": "adam-finney"
+    },
+    {
+      "path": "_news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences.md",
+      "field": "authors",
+      "id": "adam-finney"
+    },
+    {
+      "path": "_news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd-original.md",
+      "field": "authors",
+      "id": "brooks-davis"
+    },
+    {
+      "path": "_news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd.md",
+      "field": "authors",
+      "id": "brooks-davis"
+    },
+    {
+      "path": "_news/one-bug-is-all-it-takes.md",
+      "field": "authors",
+      "id": "adam-finney"
+    },
+    {
+      "path": "_news/streamlining-the-cheri-ecosystem-an-update-from-the-repository-management-working-group.md",
+      "field": "authors",
+      "id": "marno-van-der-maas"
+    },
+    {
+      "path": "_news/the-eu-cyber-resilience-act-what-it-means-for-secure-by-design-systems-and-cheri.md",
+      "field": "authors",
+      "id": "tariq-kurd"
+    },
+    {
+      "path": "_news/the-leading-root-of-trust-now-integrates-cheri-security-technology.md",
+      "field": "authors",
+      "id": "adam-finney"
+    },
+    {
+      "path": "_news/towards-a-reference-qemu-for-cheri-platform-emulation.md",
+      "field": "authors",
+      "id": "alfredo-mazzinghi"
+    },
+    {
+      "path": "_news/unlocking-the-future-a-roadmap-for-cheri-technology-advancement.md",
+      "field": "authors",
+      "id": "mike-eftimakis"
+    },
+    {
+      "path": "_news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay.md",
+      "field": "authors",
+      "id": "adam-finney"
+    },
+    {
+      "path": "_papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators.md",
+      "field": "authors",
+      "id": "jianyi-cheng"
+    },
+    {
+      "path": "_papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators.md",
+      "field": "authors",
+      "id": "a-theodore-markettos"
+    },
+    {
+      "path": "_papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators.md",
+      "field": "authors",
+      "id": "alexandre-joannou"
+    },
+    {
+      "path": "_papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators.md",
+      "field": "authors",
+      "id": "paul-metzger"
+    },
+    {
+      "path": "_papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators.md",
+      "field": "authors",
+      "id": "matthew-naylor"
+    },
+    {
+      "path": "_papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators.md",
+      "field": "authors",
+      "id": "peter-rugg"
+    },
+    {
+      "path": "_papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators.md",
+      "field": "authors",
+      "id": "timothy-m-jones"
+    },
+    {
+      "path": "_papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md",
+      "field": "authors",
+      "id": "robert-watson"
+    },
+    {
+      "path": "_papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md",
+      "field": "authors",
+      "id": "jonathan-woodruff"
+    },
+    {
+      "path": "_papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md",
+      "field": "authors",
+      "id": "peter-g-neumann"
+    },
+    {
+      "path": "_papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md",
+      "field": "authors",
+      "id": "simon-moore"
+    },
+    {
+      "path": "_papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md",
+      "field": "authors",
+      "id": "jonathan-anderson"
+    },
+    {
+      "path": "_papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md",
+      "field": "authors",
+      "id": "david-chisnall"
+    },
+    {
+      "path": "_papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md",
+      "field": "authors",
+      "id": "nirav-dave"
+    },
+    {
+      "path": "_papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md",
+      "field": "authors",
+      "id": "brooks-davis"
+    },
+    {
+      "path": "_papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md",
+      "field": "authors",
+      "id": "khilan-gudka"
+    },
+    {
+      "path": "_papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md",
+      "field": "authors",
+      "id": "ben-laurie"
+    },
+    {
+      "path": "_papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md",
+      "field": "authors",
+      "id": "steven-j-murdoch"
+    },
+    {
+      "path": "_papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md",
+      "field": "authors",
+      "id": "robert-m-norton"
+    },
+    {
+      "path": "_papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md",
+      "field": "authors",
+      "id": "michael-roe"
+    },
+    {
+      "path": "_papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md",
+      "field": "authors",
+      "id": "stacey-son"
+    },
+    {
+      "path": "_papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md",
+      "field": "authors",
+      "id": "munraj-vadera"
+    },
+    {
+      "path": "_papers/cheri-concentrate-practical-compressed-capabilities.md",
+      "field": "authors",
+      "id": "jonathan-woodruff"
+    },
+    {
+      "path": "_papers/cheri-concentrate-practical-compressed-capabilities.md",
+      "field": "authors",
+      "id": "alexandre-joannou"
+    },
+    {
+      "path": "_papers/cheri-concentrate-practical-compressed-capabilities.md",
+      "field": "authors",
+      "id": "hongyan-xia"
+    },
+    {
+      "path": "_papers/cheri-concentrate-practical-compressed-capabilities.md",
+      "field": "authors",
+      "id": "anthony-fox"
+    },
+    {
+      "path": "_papers/cheri-concentrate-practical-compressed-capabilities.md",
+      "field": "authors",
+      "id": "robert-m-norton"
+    },
+    {
+      "path": "_papers/cheri-concentrate-practical-compressed-capabilities.md",
+      "field": "authors",
+      "id": "thomas-bauereiss"
+    },
+    {
+      "path": "_papers/cheri-concentrate-practical-compressed-capabilities.md",
+      "field": "authors",
+      "id": "david-chisnall"
+    },
+    {
+      "path": "_papers/cheri-concentrate-practical-compressed-capabilities.md",
+      "field": "authors",
+      "id": "brooks-davis"
+    },
+    {
+      "path": "_papers/cheri-concentrate-practical-compressed-capabilities.md",
+      "field": "authors",
+      "id": "khilan-gudka"
+    },
+    {
+      "path": "_papers/cheri-concentrate-practical-compressed-capabilities.md",
+      "field": "authors",
+      "id": "nathaniel-wesley-filardo"
+    },
+    {
+      "path": "_papers/cheri-concentrate-practical-compressed-capabilities.md",
+      "field": "authors",
+      "id": "a-theodore-markettos"
+    },
+    {
+      "path": "_papers/cheri-concentrate-practical-compressed-capabilities.md",
+      "field": "authors",
+      "id": "michael-roe"
+    },
+    {
+      "path": "_papers/cheri-concentrate-practical-compressed-capabilities.md",
+      "field": "authors",
+      "id": "peter-g-neumann"
+    },
+    {
+      "path": "_papers/cheri-concentrate-practical-compressed-capabilities.md",
+      "field": "authors",
+      "id": "robert-watson"
+    },
+    {
+      "path": "_papers/cheri-concentrate-practical-compressed-capabilities.md",
+      "field": "authors",
+      "id": "simon-moore"
+    },
+    {
+      "path": "_papers/cheri-hardware-enabled-c-c-memory-protection-at-scale.md",
+      "field": "authors",
+      "id": "robert-watson"
+    },
+    {
+      "path": "_papers/cheri-hardware-enabled-c-c-memory-protection-at-scale.md",
+      "field": "authors",
+      "id": "david-chisnall"
+    },
+    {
+      "path": "_papers/cheri-hardware-enabled-c-c-memory-protection-at-scale.md",
+      "field": "authors",
+      "id": "jessica-clarke"
+    },
+    {
+      "path": "_papers/cheri-hardware-enabled-c-c-memory-protection-at-scale.md",
+      "field": "authors",
+      "id": "brooks-davis"
+    },
+    {
+      "path": "_papers/cheri-hardware-enabled-c-c-memory-protection-at-scale.md",
+      "field": "authors",
+      "id": "nathaniel-wesley-filardo"
+    },
+    {
+      "path": "_papers/cheri-hardware-enabled-c-c-memory-protection-at-scale.md",
+      "field": "authors",
+      "id": "ben-laurie"
+    },
+    {
+      "path": "_papers/cheri-hardware-enabled-c-c-memory-protection-at-scale.md",
+      "field": "authors",
+      "id": "simon-moore"
+    },
+    {
+      "path": "_papers/cheri-hardware-enabled-c-c-memory-protection-at-scale.md",
+      "field": "authors",
+      "id": "peter-g-neumann"
+    },
+    {
+      "path": "_papers/cheri-hardware-enabled-c-c-memory-protection-at-scale.md",
+      "field": "authors",
+      "id": "alex-richardson"
+    },
+    {
+      "path": "_papers/cheri-hardware-enabled-c-c-memory-protection-at-scale.md",
+      "field": "authors",
+      "id": "peter-sewell"
+    },
+    {
+      "path": "_papers/cheri-hardware-enabled-c-c-memory-protection-at-scale.md",
+      "field": "authors",
+      "id": "konrad-witaszczyk"
+    },
+    {
+      "path": "_papers/cheri-hardware-enabled-c-c-memory-protection-at-scale.md",
+      "field": "authors",
+      "id": "jonathan-woodruff"
+    },
+    {
+      "path": "_papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p.md",
+      "field": "authors",
+      "id": "brooks-davis"
+    },
+    {
+      "path": "_papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p.md",
+      "field": "authors",
+      "id": "robert-watson"
+    },
+    {
+      "path": "_papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p.md",
+      "field": "authors",
+      "id": "alex-richardson"
+    },
+    {
+      "path": "_papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p.md",
+      "field": "authors",
+      "id": "peter-g-neumann"
+    },
+    {
+      "path": "_papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p.md",
+      "field": "authors",
+      "id": "simon-moore"
+    },
+    {
+      "path": "_papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p.md",
+      "field": "authors",
+      "id": "john-baldwin"
+    },
+    {
+      "path": "_papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p.md",
+      "field": "authors",
+      "id": "david-chisnall"
+    },
+    {
+      "path": "_papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p.md",
+      "field": "authors",
+      "id": "jessica-clarke"
+    },
+    {
+      "path": "_papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p.md",
+      "field": "authors",
+      "id": "nathaniel-wesley-filardo"
+    },
+    {
+      "path": "_papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p.md",
+      "field": "authors",
+      "id": "khilan-gudka"
+    },
+    {
+      "path": "_papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p.md",
+      "field": "authors",
+      "id": "alexandre-joannou"
+    },
+    {
+      "path": "_papers/cheriot-complete-memory-safety-for-embedded-devices.md",
+      "field": "authors",
+      "id": "saar-amar"
+    },
+    {
+      "path": "_papers/cheriot-complete-memory-safety-for-embedded-devices.md",
+      "field": "authors",
+      "id": "david-chisnall"
+    },
+    {
+      "path": "_papers/cheriot-complete-memory-safety-for-embedded-devices.md",
+      "field": "authors",
+      "id": "tony-chen"
+    },
+    {
+      "path": "_papers/cheriot-complete-memory-safety-for-embedded-devices.md",
+      "field": "authors",
+      "id": "nathaniel-wesley-filardo"
+    },
+    {
+      "path": "_papers/cheriot-complete-memory-safety-for-embedded-devices.md",
+      "field": "authors",
+      "id": "ben-laurie"
+    },
+    {
+      "path": "_papers/cheriot-complete-memory-safety-for-embedded-devices.md",
+      "field": "authors",
+      "id": "kunyan-liu"
+    },
+    {
+      "path": "_papers/cheriot-complete-memory-safety-for-embedded-devices.md",
+      "field": "authors",
+      "id": "robert-m-norton"
+    },
+    {
+      "path": "_papers/cheriot-complete-memory-safety-for-embedded-devices.md",
+      "field": "authors",
+      "id": "simon-moore"
+    },
+    {
+      "path": "_papers/cheriot-complete-memory-safety-for-embedded-devices.md",
+      "field": "authors",
+      "id": "yucong-tao"
+    },
+    {
+      "path": "_papers/cheriot-complete-memory-safety-for-embedded-devices.md",
+      "field": "authors",
+      "id": "robert-watson"
+    },
+    {
+      "path": "_papers/cheriot-complete-memory-safety-for-embedded-devices.md",
+      "field": "authors",
+      "id": "hongyan-xia"
+    },
+    {
+      "path": "_papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev.md",
+      "field": "authors",
+      "id": "saar-amar"
+    },
+    {
+      "path": "_papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev.md",
+      "field": "authors",
+      "id": "tony-chen"
+    },
+    {
+      "path": "_papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev.md",
+      "field": "authors",
+      "id": "david-chisnall"
+    },
+    {
+      "path": "_papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev.md",
+      "field": "authors",
+      "id": "nathaniel-wesley-filardo"
+    },
+    {
+      "path": "_papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev.md",
+      "field": "authors",
+      "id": "ben-laurie"
+    },
+    {
+      "path": "_papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev.md",
+      "field": "authors",
+      "id": "hugo-lefeuvre"
+    },
+    {
+      "path": "_papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev.md",
+      "field": "authors",
+      "id": "kunyan-liu"
+    },
+    {
+      "path": "_papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev.md",
+      "field": "authors",
+      "id": "simon-moore"
+    },
+    {
+      "path": "_papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev.md",
+      "field": "authors",
+      "id": "robert-norton-wright"
+    },
+    {
+      "path": "_papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev.md",
+      "field": "authors",
+      "id": "margo-seltzer"
+    },
+    {
+      "path": "_papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev.md",
+      "field": "authors",
+      "id": "yucong-tao"
+    },
+    {
+      "path": "_papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev.md",
+      "field": "authors",
+      "id": "robert-watson"
+    },
+    {
+      "path": "_papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev.md",
+      "field": "authors",
+      "id": "hongyan-xia"
+    },
+    {
+      "path": "_papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety.md",
+      "field": "authors",
+      "id": "nathaniel-wesley-filardo"
+    },
+    {
+      "path": "_papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety.md",
+      "field": "authors",
+      "id": "brett-f-gutstein"
+    },
+    {
+      "path": "_papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety.md",
+      "field": "authors",
+      "id": "jonathan-woodruff"
+    },
+    {
+      "path": "_papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety.md",
+      "field": "authors",
+      "id": "jessica-clarke"
+    },
+    {
+      "path": "_papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety.md",
+      "field": "authors",
+      "id": "peter-rugg"
+    },
+    {
+      "path": "_papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety.md",
+      "field": "authors",
+      "id": "brooks-davis"
+    },
+    {
+      "path": "_papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety.md",
+      "field": "authors",
+      "id": "mark-johnston"
+    },
+    {
+      "path": "_papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety.md",
+      "field": "authors",
+      "id": "robert-norton-wright"
+    },
+    {
+      "path": "_papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety.md",
+      "field": "authors",
+      "id": "david-chisnall"
+    },
+    {
+      "path": "_papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety.md",
+      "field": "authors",
+      "id": "simon-moore"
+    },
+    {
+      "path": "_papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety.md",
+      "field": "authors",
+      "id": "peter-g-neumann"
+    },
+    {
+      "path": "_papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety.md",
+      "field": "authors",
+      "id": "robert-watson"
+    },
+    {
+      "path": "_papers/cornucopia-temporal-safety-for-cheri-heaps.md",
+      "field": "authors",
+      "id": "nathaniel-wesley-filardo"
+    },
+    {
+      "path": "_papers/cornucopia-temporal-safety-for-cheri-heaps.md",
+      "field": "authors",
+      "id": "brett-f-gutstein"
+    },
+    {
+      "path": "_papers/cornucopia-temporal-safety-for-cheri-heaps.md",
+      "field": "authors",
+      "id": "jonathan-woodruff"
+    },
+    {
+      "path": "_papers/cornucopia-temporal-safety-for-cheri-heaps.md",
+      "field": "authors",
+      "id": "sam-ainsworth"
+    },
+    {
+      "path": "_papers/cornucopia-temporal-safety-for-cheri-heaps.md",
+      "field": "authors",
+      "id": "lucian-paul-trifu"
+    },
+    {
+      "path": "_papers/cornucopia-temporal-safety-for-cheri-heaps.md",
+      "field": "authors",
+      "id": "brooks-davis"
+    },
+    {
+      "path": "_papers/cornucopia-temporal-safety-for-cheri-heaps.md",
+      "field": "authors",
+      "id": "hongyan-xia"
+    },
+    {
+      "path": "_papers/cornucopia-temporal-safety-for-cheri-heaps.md",
+      "field": "authors",
+      "id": "edward-tomasz-napieraa"
+    },
+    {
+      "path": "_papers/cornucopia-temporal-safety-for-cheri-heaps.md",
+      "field": "authors",
+      "id": "alex-richardson"
+    },
+    {
+      "path": "_papers/cornucopia-temporal-safety-for-cheri-heaps.md",
+      "field": "authors",
+      "id": "john-baldwin"
+    },
+    {
+      "path": "_papers/cornucopia-temporal-safety-for-cheri-heaps.md",
+      "field": "authors",
+      "id": "david-chisnall"
+    },
+    {
+      "path": "_papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c.md",
+      "field": "authors",
+      "id": "paul-metzger"
+    },
+    {
+      "path": "_papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c.md",
+      "field": "authors",
+      "id": "a-theodore-markettos"
+    },
+    {
+      "path": "_papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c.md",
+      "field": "authors",
+      "id": "edward-tomasz-napieraa"
+    },
+    {
+      "path": "_papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c.md",
+      "field": "authors",
+      "id": "matthew-naylor"
+    },
+    {
+      "path": "_papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c.md",
+      "field": "authors",
+      "id": "robert-watson"
+    },
+    {
+      "path": "_papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c.md",
+      "field": "authors",
+      "id": "timothy-m-jones"
+    },
+    {
+      "path": "_papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou.md",
+      "field": "authors",
+      "id": "vadim-zaliva"
+    },
+    {
+      "path": "_papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou.md",
+      "field": "authors",
+      "id": "kayvan-memarian"
+    },
+    {
+      "path": "_papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou.md",
+      "field": "authors",
+      "id": "ricardo-almeida"
+    },
+    {
+      "path": "_papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou.md",
+      "field": "authors",
+      "id": "jessica-clarke"
+    },
+    {
+      "path": "_papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou.md",
+      "field": "authors",
+      "id": "brooks-davis"
+    },
+    {
+      "path": "_papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou.md",
+      "field": "authors",
+      "id": "alex-richardson"
+    },
+    {
+      "path": "_papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou.md",
+      "field": "authors",
+      "id": "david-chisnall"
+    },
+    {
+      "path": "_papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou.md",
+      "field": "authors",
+      "id": "brian-campbell"
+    },
+    {
+      "path": "_papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou.md",
+      "field": "authors",
+      "id": "ian-stark"
+    },
+    {
+      "path": "_papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou.md",
+      "field": "authors",
+      "id": "robert-watson"
+    },
+    {
+      "path": "_papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou.md",
+      "field": "authors",
+      "id": "peter-sewell"
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "id": "robert-watson"
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "id": "john-baldwin"
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "id": "tony-chen"
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "id": "david-chisnall"
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "id": "jessica-clarke"
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "id": "brooks-davis"
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "id": "nathaniel-wesley-filardo"
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "id": "brett-f-gutstein"
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "id": "graeme-jenkinson"
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "id": "ben-laurie"
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "id": "alfredo-mazzinghi"
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "id": "simon-moore"
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "id": "peter-g-neumann"
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "id": "hamed-okhravi"
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "id": "alex-rebert"
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "id": "alex-richardson"
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "id": "peter-sewell"
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "id": "laurence-tratt"
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "id": "murali-vijayaraghavan"
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "id": "hugo-vincent"
+    },
+    {
+      "path": "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "field": "authors",
+      "id": "konrad-witaszczyk"
+    },
+    {
+      "path": "_papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md",
+      "field": "authors",
+      "id": "kyndylan-nienhuis"
+    },
+    {
+      "path": "_papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md",
+      "field": "authors",
+      "id": "alexandre-joannou"
+    },
+    {
+      "path": "_papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md",
+      "field": "authors",
+      "id": "thomas-bauereiss"
+    },
+    {
+      "path": "_papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md",
+      "field": "authors",
+      "id": "anthony-fox"
+    },
+    {
+      "path": "_papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md",
+      "field": "authors",
+      "id": "michael-roe"
+    },
+    {
+      "path": "_papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md",
+      "field": "authors",
+      "id": "brian-campbell"
+    },
+    {
+      "path": "_papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md",
+      "field": "authors",
+      "id": "matthew-naylor"
+    },
+    {
+      "path": "_papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md",
+      "field": "authors",
+      "id": "robert-m-norton"
+    },
+    {
+      "path": "_papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md",
+      "field": "authors",
+      "id": "simon-moore"
+    },
+    {
+      "path": "_papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md",
+      "field": "authors",
+      "id": "peter-g-neumann"
+    },
+    {
+      "path": "_papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md",
+      "field": "authors",
+      "id": "ian-stark"
+    },
+    {
+      "path": "_papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md",
+      "field": "authors",
+      "id": "robert-watson"
+    },
+    {
+      "path": "_papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md",
+      "field": "authors",
+      "id": "peter-sewell"
+    },
+    {
+      "path": "_papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa.md",
+      "field": "authors",
+      "id": "richard-grisenthwaite"
+    },
+    {
+      "path": "_papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa.md",
+      "field": "authors",
+      "id": "graeme-barnes"
+    },
+    {
+      "path": "_papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa.md",
+      "field": "authors",
+      "id": "robert-watson"
+    },
+    {
+      "path": "_papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa.md",
+      "field": "authors",
+      "id": "simon-moore"
+    },
+    {
+      "path": "_papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa.md",
+      "field": "authors",
+      "id": "peter-sewell"
+    },
+    {
+      "path": "_papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa.md",
+      "field": "authors",
+      "id": "jonathan-woodruff"
+    },
+    {
+      "path": "_papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk.md",
+      "field": "authors",
+      "id": "jonathan-woodruff"
+    },
+    {
+      "path": "_papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk.md",
+      "field": "authors",
+      "id": "robert-watson"
+    },
+    {
+      "path": "_papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk.md",
+      "field": "authors",
+      "id": "david-chisnall"
+    },
+    {
+      "path": "_papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk.md",
+      "field": "authors",
+      "id": "simon-moore"
+    },
+    {
+      "path": "_papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk.md",
+      "field": "authors",
+      "id": "jonathan-anderson"
+    },
+    {
+      "path": "_papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk.md",
+      "field": "authors",
+      "id": "brooks-davis"
+    },
+    {
+      "path": "_papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk.md",
+      "field": "authors",
+      "id": "ben-laurie"
+    },
+    {
+      "path": "_papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk.md",
+      "field": "authors",
+      "id": "peter-g-neumann"
+    },
+    {
+      "path": "_papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk.md",
+      "field": "authors",
+      "id": "robert-m-norton"
+    },
+    {
+      "path": "_papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk.md",
+      "field": "authors",
+      "id": "michael-roe"
+    },
+    {
+      "path": "_people/adam-finney.md",
+      "field": "organization",
+      "id": "cheri-alliance"
+    },
+    {
+      "path": "_people/alastair-beresford.md",
+      "field": "organization",
+      "id": "university-of-cambridge"
+    },
+    {
+      "path": "_people/alex-rebert.md",
+      "field": "organization",
+      "id": "google"
+    },
+    {
+      "path": "_people/alex-richardson.md",
+      "field": "organization",
+      "id": "google"
+    },
+    {
+      "path": "_people/alexander-voyevoda.md",
+      "field": "organization",
+      "id": "um-labs"
+    },
+    {
+      "path": "_people/alfredo-mazzinghi.md",
+      "field": "organization",
+      "id": "capabilities-limited"
+    },
+    {
+      "path": "_people/allison-randal.md",
+      "field": "organization",
+      "id": "capabilities-limited"
+    },
+    {
+      "path": "_people/andrew-lindsay.md",
+      "field": "organization",
+      "id": "codasip"
+    },
+    {
+      "path": "_people/andrew-murray.md",
+      "field": "organization",
+      "id": "the-good-penguin"
+    },
+    {
+      "path": "_people/andy-moore.md",
+      "field": "organization",
+      "id": "risc-v-international"
+    },
+    {
+      "path": "_people/ashish-darbari.md",
+      "field": "organization",
+      "id": "axiomise-ltd"
+    },
+    {
+      "path": "_people/ben-fletcher.md",
+      "field": "organization",
+      "id": "codasip"
+    },
+    {
+      "path": "_people/bradley-finn.md",
+      "field": "organization",
+      "id": "dsit"
+    },
+    {
+      "path": "_people/carl-shaw.md",
+      "field": "organization",
+      "id": "codasip"
+    },
+    {
+      "path": "_people/dave-harcourt.md",
+      "field": "organization",
+      "id": "bt-group"
+    },
+    {
+      "path": "_people/david-chisnall.md",
+      "field": "organization",
+      "id": "sci-semiconductor"
+    },
+    {
+      "path": "_people/david-musliner.md",
+      "field": "organization",
+      "id": "smart-information-flow-technologies-sift"
+    },
+    {
+      "path": "_people/dmitriy-yeliseyev.md",
+      "field": "organization",
+      "id": "wind-river"
+    },
+    {
+      "path": "_people/domagoj-stolfa.md",
+      "field": "organization",
+      "id": "capabilities-limited"
+    },
+    {
+      "path": "_people/domagoj-stolfa.md",
+      "field": "organization",
+      "id": "university-of-cambridge"
+    },
+    {
+      "path": "_people/donato-ferraro.md",
+      "field": "organization",
+      "id": "minerva-systems"
+    },
+    {
+      "path": "_people/donato-ferraro.md",
+      "field": "organization",
+      "id": "university-of-modena-and-reggio-emilia"
+    },
+    {
+      "path": "_people/edoardo-marangoni.md",
+      "field": "organization",
+      "id": "sci-semiconductor"
+    },
+    {
+      "path": "_people/gavin-ferris.md",
+      "field": "organization",
+      "id": "cheri-alliance"
+    },
+    {
+      "path": "_people/gavin-ferris.md",
+      "field": "organization",
+      "id": "lowrisc"
+    },
+    {
+      "path": "_people/haydn-povey.md",
+      "field": "organization",
+      "id": "sci-semiconductor"
+    },
+    {
+      "path": "_people/hesham-almatary.md",
+      "field": "organization",
+      "id": "capabilities-limited"
+    },
+    {
+      "path": "_people/javier-orensanz-martinez.md",
+      "field": "organization",
+      "id": "lowrisc"
+    },
+    {
+      "path": "_people/jennifer-jackson.md",
+      "field": "organization",
+      "id": "university-of-birmingham"
+    },
+    {
+      "path": "_people/jeremy-singer.md",
+      "field": "organization",
+      "id": "university-of-glasgow"
+    },
+    {
+      "path": "_people/jessica-clarke.md",
+      "field": "organization",
+      "id": "university-of-cambridge"
+    },
+    {
+      "path": "_people/jianyi-cheng.md",
+      "field": "organization",
+      "id": "university-of-edinburgh"
+    },
+    {
+      "path": "_people/johannes-muller.md",
+      "field": "organization",
+      "id": "rptu"
+    },
+    {
+      "path": "_people/john-baldwin.md",
+      "field": "organization",
+      "id": "ararat-river-consulting-llc"
+    },
+    {
+      "path": "_people/john-goodacre.md",
+      "field": "organization",
+      "id": "ukri"
+    },
+    {
+      "path": "_people/john-thomson.md",
+      "field": "organization",
+      "id": "lowrisc"
+    },
+    {
+      "path": "_people/jonathan-woodruff.md",
+      "field": "organization",
+      "id": "capabilities-limited"
+    },
+    {
+      "path": "_people/joshua-lant.md",
+      "field": "organization",
+      "id": "the-university-of-manchester"
+    },
+    {
+      "path": "_people/ka-wing-li.md",
+      "field": "organization",
+      "id": "university-of-cambridge"
+    },
+    {
+      "path": "_people/kathleen-fisher.md",
+      "field": "organization",
+      "id": "aria"
+    },
+    {
+      "path": "_people/kevin-brodsky.md",
+      "field": "organization",
+      "id": "arm"
+    },
+    {
+      "path": "_people/louis-emile-ploix.md",
+      "field": "organization",
+      "id": "lowrisc"
+    },
+    {
+      "path": "_people/luca-muller.md",
+      "field": "organization",
+      "id": "german-research-center-for-artificial-intelligence-dfki"
+    },
+    {
+      "path": "_people/maika-fohrenbach.md",
+      "field": "organization",
+      "id": "european-commission-dg-connect"
+    },
+    {
+      "path": "_people/manu-ravishankar.md",
+      "field": "organization",
+      "id": "pa-consulting"
+    },
+    {
+      "path": "_people/mark-batty.md",
+      "field": "organization",
+      "id": "university-of-kent"
+    },
+    {
+      "path": "_people/mark-hill.md",
+      "field": "organization",
+      "id": "codasip"
+    },
+    {
+      "path": "_people/marno-van-der-maas.md",
+      "field": "organization",
+      "id": "lowrisc"
+    },
+    {
+      "path": "_people/martin-atkins.md",
+      "field": "organization",
+      "id": "mission-critical-applications-limited"
+    },
+    {
+      "path": "_people/merve-gulmez.md",
+      "field": "organization",
+      "id": "ericsson"
+    },
+    {
+      "path": "_people/mike-eftimakis.md",
+      "field": "organization",
+      "id": "cheri-alliance"
+    },
+    {
+      "path": "_people/mike-halsall.md",
+      "field": "organization",
+      "id": "cheri-alliance"
+    },
+    {
+      "path": "_people/murali-vijayaraghavan.md",
+      "field": "organization",
+      "id": "google"
+    },
+    {
+      "path": "_people/murat-cakmak.md",
+      "field": "organization",
+      "id": "microservice-store"
+    },
+    {
+      "path": "_people/ollie-whitehouse.md",
+      "field": "organization",
+      "id": "ncsc"
+    },
+    {
+      "path": "_people/paul-metzger.md",
+      "field": "organization",
+      "id": "university-of-cambridge"
+    },
+    {
+      "path": "_people/paul-waller.md",
+      "field": "organization",
+      "id": "ncsc"
+    },
+    {
+      "path": "_people/peter-cox.md",
+      "field": "organization",
+      "id": "um-labs"
+    },
+    {
+      "path": "_people/phil-day.md",
+      "field": "organization",
+      "id": "configured-things"
+    },
+    {
+      "path": "_people/robert-watson.md",
+      "field": "organization",
+      "id": "cheri-alliance"
+    },
+    {
+      "path": "_people/robert-watson.md",
+      "field": "organization",
+      "id": "university-of-cambridge"
+    },
+    {
+      "path": "_people/sam-cater.md",
+      "field": "organization",
+      "id": "bt-group"
+    },
+    {
+      "path": "_people/samuel-stark.md",
+      "field": "organization",
+      "id": "university-of-cambridge"
+    },
+    {
+      "path": "_people/simon-moore.md",
+      "field": "organization",
+      "id": "university-of-cambridge"
+    },
+    {
+      "path": "_people/tariq-kurd.md",
+      "field": "organization",
+      "id": "codasip"
+    },
+    {
+      "path": "_people/thomas-nyman.md",
+      "field": "organization",
+      "id": "ericsson"
+    },
+    {
+      "path": "_people/tora-fridholm.md",
+      "field": "organization",
+      "id": "codasip"
+    }
+  ],
+  "reverse": [
+    {
+      "person": "a-theodore-markettos",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "a-theodore-markettos",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "a-theodore-markettos",
+      "collection": "papers",
+      "targets": [
+        "/papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/",
+        "/papers/cheri-concentrate-practical-compressed-capabilities/",
+        "/papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/"
+      ]
+    },
+    {
+      "person": "adam-finney",
+      "collection": "news",
+      "targets": [
+        "/news/the-leading-root-of-trust-now-integrates-cheri-security-technology/",
+        "/news/introducing-the-cheri-adoption-global-ecosystem-assessment-q1-2026/",
+        "/news/one-bug-is-all-it-takes/",
+        "/news/cheri-or-cheriot-the-answer-is-not-what-you-think/",
+        "/news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/",
+        "/news/cheriot-1-0-specification-released/",
+        "/news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences/"
+      ]
+    },
+    {
+      "person": "adam-finney",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "adam-finney",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "alastair-beresford",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "alastair-beresford",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2025/"
+      ]
+    },
+    {
+      "person": "alastair-beresford",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "alex-rebert",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "alex-rebert",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "alex-rebert",
+      "collection": "papers",
+      "targets": [
+        "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+      ]
+    },
+    {
+      "person": "alex-richardson",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "alex-richardson",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "alex-richardson",
+      "collection": "papers",
+      "targets": [
+        "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
+        "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
+        "/papers/cornucopia-temporal-safety-for-cheri-heaps/",
+        "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
+        "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+      ]
+    },
+    {
+      "person": "alexander-voyevoda",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "alexander-voyevoda",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "alexander-voyevoda",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "alexandre-joannou",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "alexandre-joannou",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "alexandre-joannou",
+      "collection": "papers",
+      "targets": [
+        "/papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/",
+        "/papers/cheri-concentrate-practical-compressed-capabilities/",
+        "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
+        "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
+      ]
+    },
+    {
+      "person": "alfredo-mazzinghi",
+      "collection": "news",
+      "targets": [
+        "/news/towards-a-reference-qemu-for-cheri-platform-emulation/"
+      ]
+    },
+    {
+      "person": "alfredo-mazzinghi",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2025/",
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "alfredo-mazzinghi",
+      "collection": "papers",
+      "targets": [
+        "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+      ]
+    },
+    {
+      "person": "allison-randal",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "allison-randal",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "allison-randal",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "andrew-lindsay",
+      "collection": "news",
+      "targets": [
+        "/news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology/"
+      ]
+    },
+    {
+      "person": "andrew-lindsay",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "andrew-lindsay",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "andrew-murray",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "andrew-murray",
+      "collection": "events",
+      "targets": [
+        "/events/cheritech25/",
+        "/events/cheritech25-reloaded/",
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "andrew-murray",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "andy-moore",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "andy-moore",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "andy-moore",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "anthony-fox",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "anthony-fox",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "anthony-fox",
+      "collection": "papers",
+      "targets": [
+        "/papers/cheri-concentrate-practical-compressed-capabilities/",
+        "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
+      ]
+    },
+    {
+      "person": "ashish-darbari",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "ashish-darbari",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2025/"
+      ]
+    },
+    {
+      "person": "ashish-darbari",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "ben-fletcher",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "ben-fletcher",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2025/",
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "ben-fletcher",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "ben-laurie",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "ben-laurie",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "ben-laurie",
+      "collection": "papers",
+      "targets": [
+        "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
+        "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
+        "/papers/cheriot-complete-memory-safety-for-embedded-devices/",
+        "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
+        "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
+        "/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/"
+      ]
+    },
+    {
+      "person": "benjamin-fletcher",
+      "collection": "news",
+      "targets": [
+        "/news/cheri-tag-bit-transport-overlay-standard-version-0-9-released/"
+      ]
+    },
+    {
+      "person": "benjamin-fletcher",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "benjamin-fletcher",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "bradley-finn",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "bradley-finn",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2025/",
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "bradley-finn",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "brett-f-gutstein",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "brett-f-gutstein",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "brett-f-gutstein",
+      "collection": "papers",
+      "targets": [
+        "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
+        "/papers/cornucopia-temporal-safety-for-cheri-heaps/",
+        "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+      ]
+    },
+    {
+      "person": "brian-campbell",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "brian-campbell",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "brian-campbell",
+      "collection": "papers",
+      "targets": [
+        "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
+        "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
+      ]
+    },
+    {
+      "person": "brooks-davis",
+      "collection": "news",
+      "targets": [
+        "/news/cheri-memory-safety-mitigates-llm-discovered-vulnerability-in-freebsd/",
+        "/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd/"
+      ]
+    },
+    {
+      "person": "brooks-davis",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "brooks-davis",
+      "collection": "papers",
+      "targets": [
+        "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
+        "/papers/cheri-concentrate-practical-compressed-capabilities/",
+        "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
+        "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
+        "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
+        "/papers/cornucopia-temporal-safety-for-cheri-heaps/",
+        "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
+        "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
+        "/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/"
+      ]
+    },
+    {
+      "person": "carl-shaw",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "carl-shaw",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2025/",
+        "/events/cheritech25/",
+        "/events/cheritech25-reloaded/",
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "carl-shaw",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "dave-harcourt",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "dave-harcourt",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "dave-harcourt",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "david-chisnall",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "david-chisnall",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2025/",
+        "/events/cheritech25/",
+        "/events/cheritech25-reloaded/",
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "david-chisnall",
+      "collection": "papers",
+      "targets": [
+        "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
+        "/papers/cheri-concentrate-practical-compressed-capabilities/",
+        "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
+        "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
+        "/papers/cheriot-complete-memory-safety-for-embedded-devices/",
+        "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
+        "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
+        "/papers/cornucopia-temporal-safety-for-cheri-heaps/",
+        "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
+        "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
+        "/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/"
+      ]
+    },
+    {
+      "person": "david-musliner",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "david-musliner",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "david-musliner",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "dmitriy-yeliseyev",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "dmitriy-yeliseyev",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2025/",
+        "/events/cheritech25/"
+      ]
+    },
+    {
+      "person": "dmitriy-yeliseyev",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "domagoj-stolfa",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "domagoj-stolfa",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2025/"
+      ]
+    },
+    {
+      "person": "domagoj-stolfa",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "donato-ferraro",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "donato-ferraro",
+      "collection": "events",
+      "targets": [
+        "/events/cheritech25/"
+      ]
+    },
+    {
+      "person": "donato-ferraro",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "edoardo-marangoni",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "edoardo-marangoni",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "edoardo-marangoni",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "edward-tomasz-napieraa",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "edward-tomasz-napieraa",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "edward-tomasz-napieraa",
+      "collection": "papers",
+      "targets": [
+        "/papers/cornucopia-temporal-safety-for-cheri-heaps/",
+        "/papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/"
+      ]
+    },
+    {
+      "person": "gavin-ferris",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "gavin-ferris",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2025/"
+      ]
+    },
+    {
+      "person": "gavin-ferris",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "graeme-barnes",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "graeme-barnes",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "graeme-barnes",
+      "collection": "papers",
+      "targets": [
+        "/papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/"
+      ]
+    },
+    {
+      "person": "graeme-jenkinson",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "graeme-jenkinson",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "graeme-jenkinson",
+      "collection": "papers",
+      "targets": [
+        "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+      ]
+    },
+    {
+      "person": "hamed-okhravi",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "hamed-okhravi",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "hamed-okhravi",
+      "collection": "papers",
+      "targets": [
+        "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+      ]
+    },
+    {
+      "person": "haydn-povey",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "haydn-povey",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2025/"
+      ]
+    },
+    {
+      "person": "haydn-povey",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "hesham-almatary",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "hesham-almatary",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2025/"
+      ]
+    },
+    {
+      "person": "hesham-almatary",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "hongyan-xia",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "hongyan-xia",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "hongyan-xia",
+      "collection": "papers",
+      "targets": [
+        "/papers/cheri-concentrate-practical-compressed-capabilities/",
+        "/papers/cheriot-complete-memory-safety-for-embedded-devices/",
+        "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
+        "/papers/cornucopia-temporal-safety-for-cheri-heaps/"
+      ]
+    },
+    {
+      "person": "hugo-lefeuvre",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "hugo-lefeuvre",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "hugo-lefeuvre",
+      "collection": "papers",
+      "targets": [
+        "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
+      ]
+    },
+    {
+      "person": "hugo-vincent",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "hugo-vincent",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "hugo-vincent",
+      "collection": "papers",
+      "targets": [
+        "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+      ]
+    },
+    {
+      "person": "ian-stark",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "ian-stark",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "ian-stark",
+      "collection": "papers",
+      "targets": [
+        "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
+        "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
+      ]
+    },
+    {
+      "person": "javier-orensanz-martinez",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "javier-orensanz-martinez",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "javier-orensanz-martinez",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "jennifer-jackson",
+      "collection": "news",
+      "targets": [
+        "/news/cheri-zephyr-v0-4-0-release/"
+      ]
+    },
+    {
+      "person": "jennifer-jackson",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "jennifer-jackson",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "jeremy-singer",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "jeremy-singer",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2025/",
+        "/events/cheritech25/",
+        "/events/cheritech25-reloaded/"
+      ]
+    },
+    {
+      "person": "jeremy-singer",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "jessica-clarke",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "jessica-clarke",
+      "collection": "events",
+      "targets": [
+        "/events/cheritech25/",
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "jessica-clarke",
+      "collection": "papers",
+      "targets": [
+        "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
+        "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
+        "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
+        "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
+        "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+      ]
+    },
+    {
+      "person": "jianyi-cheng",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "jianyi-cheng",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "jianyi-cheng",
+      "collection": "papers",
+      "targets": [
+        "/papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/"
+      ]
+    },
+    {
+      "person": "jim-wallace",
+      "collection": "news",
+      "targets": [
+        "/news/beyond-software-patching/"
+      ]
+    },
+    {
+      "person": "jim-wallace",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "jim-wallace",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "johannes-muller",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "johannes-muller",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "johannes-muller",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "john-baldwin",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "john-baldwin",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "john-baldwin",
+      "collection": "papers",
+      "targets": [
+        "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
+        "/papers/cornucopia-temporal-safety-for-cheri-heaps/",
+        "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+      ]
+    },
+    {
+      "person": "john-goodacre",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "john-goodacre",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2025/",
+        "/events/cheritech25/",
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "john-goodacre",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "john-thomson",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "john-thomson",
+      "collection": "events",
+      "targets": [
+        "/events/cheritech25/",
+        "/events/cheritech25-reloaded/"
+      ]
+    },
+    {
+      "person": "john-thomson",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "jonathan-anderson",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "jonathan-anderson",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "jonathan-anderson",
+      "collection": "papers",
+      "targets": [
+        "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
+        "/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/"
+      ]
+    },
+    {
+      "person": "jonathan-woodruff",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "jonathan-woodruff",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2025/",
+        "/events/cheritech25/",
+        "/events/cheritech25-reloaded/",
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "jonathan-woodruff",
+      "collection": "papers",
+      "targets": [
+        "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
+        "/papers/cheri-concentrate-practical-compressed-capabilities/",
+        "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
+        "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
+        "/papers/cornucopia-temporal-safety-for-cheri-heaps/",
+        "/papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/",
+        "/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/"
+      ]
+    },
+    {
+      "person": "joshua-lant",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "joshua-lant",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2025/"
+      ]
+    },
+    {
+      "person": "joshua-lant",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "ka-wing-li",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "ka-wing-li",
+      "collection": "events",
+      "targets": [
+        "/events/cheritech25/"
+      ]
+    },
+    {
+      "person": "ka-wing-li",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "kathleen-fisher",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "kathleen-fisher",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "kathleen-fisher",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "kayvan-memarian",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "kayvan-memarian",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "kayvan-memarian",
+      "collection": "papers",
+      "targets": [
+        "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/"
+      ]
+    },
+    {
+      "person": "kevin-brodsky",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "kevin-brodsky",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2025/"
+      ]
+    },
+    {
+      "person": "kevin-brodsky",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "khilan-gudka",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "khilan-gudka",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "khilan-gudka",
+      "collection": "papers",
+      "targets": [
+        "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
+        "/papers/cheri-concentrate-practical-compressed-capabilities/",
+        "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/"
+      ]
+    },
+    {
+      "person": "konrad-witaszczyk",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "konrad-witaszczyk",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "konrad-witaszczyk",
+      "collection": "papers",
+      "targets": [
+        "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
+        "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+      ]
+    },
+    {
+      "person": "kunyan-liu",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "kunyan-liu",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "kunyan-liu",
+      "collection": "papers",
+      "targets": [
+        "/papers/cheriot-complete-memory-safety-for-embedded-devices/",
+        "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
+      ]
+    },
+    {
+      "person": "kyndylan-nienhuis",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "kyndylan-nienhuis",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "kyndylan-nienhuis",
+      "collection": "papers",
+      "targets": [
+        "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
+      ]
+    },
+    {
+      "person": "laurence-tratt",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "laurence-tratt",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "laurence-tratt",
+      "collection": "papers",
+      "targets": [
+        "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+      ]
+    },
+    {
+      "person": "louis-emile-ploix",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "louis-emile-ploix",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "louis-emile-ploix",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "luca-muller",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "luca-muller",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "luca-muller",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "lucian-paul-trifu",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "lucian-paul-trifu",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "lucian-paul-trifu",
+      "collection": "papers",
+      "targets": [
+        "/papers/cornucopia-temporal-safety-for-cheri-heaps/"
+      ]
+    },
+    {
+      "person": "maika-fohrenbach",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "maika-fohrenbach",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "maika-fohrenbach",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "manu-ravishankar",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "manu-ravishankar",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "manu-ravishankar",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "margo-seltzer",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "margo-seltzer",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "margo-seltzer",
+      "collection": "papers",
+      "targets": [
+        "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
+      ]
+    },
+    {
+      "person": "mark-batty",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "mark-batty",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2025/"
+      ]
+    },
+    {
+      "person": "mark-batty",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "mark-hill",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "mark-hill",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2025/"
+      ]
+    },
+    {
+      "person": "mark-hill",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "mark-johnston",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "mark-johnston",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "mark-johnston",
+      "collection": "papers",
+      "targets": [
+        "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/"
+      ]
+    },
+    {
+      "person": "marno-van-der-maas",
+      "collection": "news",
+      "targets": [
+        "/news/streamlining-the-cheri-ecosystem-an-update-from-the-repository-management-working-group/"
+      ]
+    },
+    {
+      "person": "marno-van-der-maas",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2025/",
+        "/events/cheritech25/",
+        "/events/cheritech25-reloaded/",
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "marno-van-der-maas",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "martin-atkins",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "martin-atkins",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2025/"
+      ]
+    },
+    {
+      "person": "martin-atkins",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "matthew-naylor",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "matthew-naylor",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "matthew-naylor",
+      "collection": "papers",
+      "targets": [
+        "/papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/",
+        "/papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/",
+        "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
+      ]
+    },
+    {
+      "person": "merve-gulmez",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "merve-gulmez",
+      "collection": "events",
+      "targets": [
+        "/events/cheritech25/",
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "merve-gulmez",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "michael-roe",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "michael-roe",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "michael-roe",
+      "collection": "papers",
+      "targets": [
+        "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
+        "/papers/cheri-concentrate-practical-compressed-capabilities/",
+        "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
+        "/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/"
+      ]
+    },
+    {
+      "person": "mihai-ordean",
+      "collection": "news",
+      "targets": [
+        "/news/innovate-uk-project-winner-university-of-birmingham/"
+      ]
+    },
+    {
+      "person": "mihai-ordean",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "mihai-ordean",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "mike-eftimakis",
+      "collection": "news",
+      "targets": [
+        "/news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/",
+        "/news/ai-has-compressed-the-attack-timeline/",
+        "/news/cheri-alliance-to-distribute-arm-morello-boards-the-journey-beyond-dsbd-continues/",
+        "/news/behind-the-scenes-inside-the-promotion-and-ambassador-program-working-group/",
+        "/news/unlocking-the-future-a-roadmap-for-cheri-technology-advancement/"
+      ]
+    },
+    {
+      "person": "mike-eftimakis",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2025/",
+        "/events/cheritech25/",
+        "/events/cheritech25-reloaded/",
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "mike-eftimakis",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "mike-halsall",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "mike-halsall",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2025/"
+      ]
+    },
+    {
+      "person": "mike-halsall",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "munraj-vadera",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "munraj-vadera",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "munraj-vadera",
+      "collection": "papers",
+      "targets": [
+        "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
+      ]
+    },
+    {
+      "person": "murali-vijayaraghavan",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "murali-vijayaraghavan",
+      "collection": "events",
+      "targets": [
+        "/events/cheritech25/",
+        "/events/cheritech25-reloaded/"
+      ]
+    },
+    {
+      "person": "murali-vijayaraghavan",
+      "collection": "papers",
+      "targets": [
+        "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+      ]
+    },
+    {
+      "person": "murat-cakmak",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "murat-cakmak",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "murat-cakmak",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "nathaniel-wesley-filardo",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "nathaniel-wesley-filardo",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "nathaniel-wesley-filardo",
+      "collection": "papers",
+      "targets": [
+        "/papers/cheri-concentrate-practical-compressed-capabilities/",
+        "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
+        "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
+        "/papers/cheriot-complete-memory-safety-for-embedded-devices/",
+        "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
+        "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
+        "/papers/cornucopia-temporal-safety-for-cheri-heaps/",
+        "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+      ]
+    },
+    {
+      "person": "nirav-dave",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "nirav-dave",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "nirav-dave",
+      "collection": "papers",
+      "targets": [
+        "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
+      ]
+    },
+    {
+      "person": "ollie-whitehouse",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "ollie-whitehouse",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "ollie-whitehouse",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "paul-metzger",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "paul-metzger",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "paul-metzger",
+      "collection": "papers",
+      "targets": [
+        "/papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/",
+        "/papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/"
+      ]
+    },
+    {
+      "person": "paul-waller",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "paul-waller",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "paul-waller",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "peter-cox",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "peter-cox",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "peter-cox",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "peter-g-neumann",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "peter-g-neumann",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "peter-g-neumann",
+      "collection": "papers",
+      "targets": [
+        "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
+        "/papers/cheri-concentrate-practical-compressed-capabilities/",
+        "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
+        "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
+        "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
+        "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
+        "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
+        "/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/"
+      ]
+    },
+    {
+      "person": "peter-rugg",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "peter-rugg",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "peter-rugg",
+      "collection": "papers",
+      "targets": [
+        "/papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/",
+        "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/"
+      ]
+    },
+    {
+      "person": "peter-sewell",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "peter-sewell",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "peter-sewell",
+      "collection": "papers",
+      "targets": [
+        "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
+        "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
+        "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
+        "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
+        "/papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/"
+      ]
+    },
+    {
+      "person": "phil-day",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "phil-day",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2025/"
+      ]
+    },
+    {
+      "person": "phil-day",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "ricardo-almeida",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "ricardo-almeida",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "ricardo-almeida",
+      "collection": "papers",
+      "targets": [
+        "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/"
+      ]
+    },
+    {
+      "person": "richard-grisenthwaite",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "richard-grisenthwaite",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "richard-grisenthwaite",
+      "collection": "papers",
+      "targets": [
+        "/papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/"
+      ]
+    },
+    {
+      "person": "robert-m-norton",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "robert-m-norton",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "robert-m-norton",
+      "collection": "papers",
+      "targets": [
+        "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
+        "/papers/cheri-concentrate-practical-compressed-capabilities/",
+        "/papers/cheriot-complete-memory-safety-for-embedded-devices/",
+        "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
+        "/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/"
+      ]
+    },
+    {
+      "person": "robert-norton-wright",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "robert-norton-wright",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "robert-norton-wright",
+      "collection": "papers",
+      "targets": [
+        "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
+        "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/"
+      ]
+    },
+    {
+      "person": "robert-watson",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "robert-watson",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2025/",
+        "/events/cheritech25/",
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "robert-watson",
+      "collection": "papers",
+      "targets": [
+        "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
+        "/papers/cheri-concentrate-practical-compressed-capabilities/",
+        "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
+        "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
+        "/papers/cheriot-complete-memory-safety-for-embedded-devices/",
+        "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
+        "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
+        "/papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/",
+        "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
+        "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
+        "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
+        "/papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/",
+        "/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/"
+      ]
+    },
+    {
+      "person": "saar-amar",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "saar-amar",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "saar-amar",
+      "collection": "papers",
+      "targets": [
+        "/papers/cheriot-complete-memory-safety-for-embedded-devices/",
+        "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
+      ]
+    },
+    {
+      "person": "sam-ainsworth",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "sam-ainsworth",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "sam-ainsworth",
+      "collection": "papers",
+      "targets": [
+        "/papers/cornucopia-temporal-safety-for-cheri-heaps/"
+      ]
+    },
+    {
+      "person": "sam-cater",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "sam-cater",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "sam-cater",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "samuel-stark",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "samuel-stark",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "samuel-stark",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "simon-moore",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "simon-moore",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2025/",
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "simon-moore",
+      "collection": "papers",
+      "targets": [
+        "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
+        "/papers/cheri-concentrate-practical-compressed-capabilities/",
+        "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
+        "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
+        "/papers/cheriot-complete-memory-safety-for-embedded-devices/",
+        "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
+        "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
+        "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
+        "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
+        "/papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/",
+        "/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/"
+      ]
+    },
+    {
+      "person": "stacey-son",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "stacey-son",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "stacey-son",
+      "collection": "papers",
+      "targets": [
+        "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
+      ]
+    },
+    {
+      "person": "steven-j-murdoch",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "steven-j-murdoch",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "steven-j-murdoch",
+      "collection": "papers",
+      "targets": [
+        "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
+      ]
+    },
+    {
+      "person": "tariq-kurd",
+      "collection": "news",
+      "targets": [
+        "/news/the-eu-cyber-resilience-act-what-it-means-for-secure-by-design-systems-and-cheri/"
+      ]
+    },
+    {
+      "person": "tariq-kurd",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2025/",
+        "/events/cheritech25/",
+        "/events/cheritech25-reloaded/",
+        "/events/cheri-blossoms-conference-2026/",
+        "/events/webinar-cheri-cra-compliance/"
+      ]
+    },
+    {
+      "person": "tariq-kurd",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "thomas-bauereiss",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "thomas-bauereiss",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "thomas-bauereiss",
+      "collection": "papers",
+      "targets": [
+        "/papers/cheri-concentrate-practical-compressed-capabilities/",
+        "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
+      ]
+    },
+    {
+      "person": "thomas-nyman",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "thomas-nyman",
+      "collection": "events",
+      "targets": [
+        "/events/cheritech25/",
+        "/events/cheritech25-reloaded/",
+        "/events/cheri-blossoms-conference-2026/"
+      ]
+    },
+    {
+      "person": "thomas-nyman",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "timothy-m-jones",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "timothy-m-jones",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "timothy-m-jones",
+      "collection": "papers",
+      "targets": [
+        "/papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/",
+        "/papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/"
+      ]
+    },
+    {
+      "person": "tony-chen",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "tony-chen",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "tony-chen",
+      "collection": "papers",
+      "targets": [
+        "/papers/cheriot-complete-memory-safety-for-embedded-devices/",
+        "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
+        "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+      ]
+    },
+    {
+      "person": "tora-fridholm",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "tora-fridholm",
+      "collection": "events",
+      "targets": [
+        "/events/cheri-blossoms-conference-2025/"
+      ]
+    },
+    {
+      "person": "tora-fridholm",
+      "collection": "papers",
+      "targets": []
+    },
+    {
+      "person": "vadim-zaliva",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "vadim-zaliva",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "vadim-zaliva",
+      "collection": "papers",
+      "targets": [
+        "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/"
+      ]
+    },
+    {
+      "person": "yucong-tao",
+      "collection": "news",
+      "targets": []
+    },
+    {
+      "person": "yucong-tao",
+      "collection": "events",
+      "targets": []
+    },
+    {
+      "person": "yucong-tao",
+      "collection": "papers",
+      "targets": [
+        "/papers/cheriot-complete-memory-safety-for-embedded-devices/",
+        "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
+      ]
+    }
+  ],
+  "board": [
+    "mike-eftimakis",
+    "andrew-lindsay",
+    "david-chisnall",
+    "sam-cater",
+    "adam-finney",
+    "simon-moore",
+    "alex-richardson",
+    "allison-randal",
+    "paul-waller"
+  ],
+  "missing_ids": []
+}

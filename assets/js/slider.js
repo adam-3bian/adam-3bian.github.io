@@ -10,22 +10,19 @@
     const allowAutoplay = slider.dataset.autoplay === 'true';
     let index = 0;
     let timer;
-    let paused = false;
-    const playback = slider.querySelector("[data-slider-toggle]");
 
-    function hasFocus() {
-      return slider.contains(document.activeElement);
-    }
-
-    function updatePlayback() {
-      if (!playback) return;
-      playback.disabled = motion.matches;
-      playback.textContent = motion.matches ? 'Automatic slides off' : paused ? 'Play slides' : 'Pause slides';
+    function hasKeyboardFocus() {
+      const focused = document.activeElement;
+      if (!focused || !slides[index].contains(focused)) return false;
+      // Do not hide a slide link while a keyboard user is about to follow it.
+      // Focus on the persistent dot selectors does not block playback.
+      try { return focused.matches(':focus-visible'); }
+      catch { return true; }
     }
 
     function schedule() {
       window.clearTimeout(timer);
-      if (!allowAutoplay || paused || motion.matches || document.hidden || hasFocus()) return;
+      if (!allowAutoplay || motion.matches || document.hidden || hasKeyboardFocus()) return;
       timer = window.setTimeout(() => show(index + 1), interval);
     }
 
@@ -45,12 +42,6 @@
       schedule();
     }
 
-    if (playback) playback.addEventListener('click', () => {
-      paused = !paused;
-      updatePlayback();
-      schedule();
-    });
-
     indicators.forEach((button) => button.addEventListener('click', () => {
       const next = Number(button.dataset.slide);
       if (Number.isInteger(next) && next >= 0 && next < slides.length) show(next);
@@ -62,13 +53,11 @@
     slider.addEventListener('pointerdown', afterInteraction);
     document.addEventListener('visibilitychange', schedule);
     // Re-evaluate the current preference without latching autoplay off.
-    const preferenceChanged = () => { updatePlayback(); schedule(); };
-    if (typeof motion.addEventListener === 'function') motion.addEventListener('change', preferenceChanged);
-    else if (typeof motion.addListener === 'function') motion.addListener(preferenceChanged);
+    if (typeof motion.addEventListener === 'function') motion.addEventListener('change', schedule);
+    else if (typeof motion.addListener === 'function') motion.addListener(schedule);
 
     slider.classList.add('is-enhanced');
     if (controls) controls.hidden = indicators.length < 2;
-    updatePlayback();
     show(0);
   });
 })();

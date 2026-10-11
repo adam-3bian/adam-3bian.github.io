@@ -1,4 +1,10 @@
 {%- assign source_body = content -%}
+{%- assign anchor_aliases = site.data['anchor-aliases'][page.url] -%}
+{%- for alias in anchor_aliases -%}
+  {%- capture anchor_target -%}<h2 id="{{ alias[1] }}"{%- endcapture -%}
+  {%- capture anchor_replacement -%}<span id="{{ alias[0] | escape }}"></span>{{ anchor_target }}{%- endcapture -%}
+  {%- assign source_body = source_body | replace_first: anchor_target, anchor_replacement -%}
+{%- endfor -%}
 {%- assign source_breadcrumbs = '' -%}
 {%- if source_body contains 'source-breadcrumbs' -%}
   {%- assign breadcrumb_segment = source_body | split: '</ol>' | first | append: '</ol>' -%}
@@ -86,6 +92,7 @@
   <a class="skip-link" href="#main-content">Skip to content</a>
   {% include header.html %}
   <main id="main-content" tabindex="-1">
+    {% capture rendered_source %}
     <div class="theme-content" data-source-body>
       {% if source_breadcrumbs != '' %}
       <nav class="breadcrumbs" aria-label="Breadcrumb">{{ source_breadcrumbs }}</nav>
@@ -101,6 +108,8 @@
         {% else %}{{ source_body }}{% endif %}
       </article>
     </div>
+    {% endcapture %}
+    {% include content-urls.html content=rendered_source %}
     {% unless page.hero %}{% include slider.html %}{% endunless %}
     {% include site-features.html %}
     {% include where-next.html %}

@@ -36,3 +36,9 @@ All validation must be evidence-driven. A built page is not automatically a pixe
 ## Instruction-only changes
 
 For a prompt/documentation-only change, verify the Git diff changes no editorial collection files, source assets or runtime code. Do not claim Jekyll/browser tests were run if they were not.
+
+## Phase 7 source and route audit
+
+The reproducible cloud audit is `reports/codex-phases/audit_phase07.py BEFORE_SITE SITE PROJECT_SITE`, using the migration Python environment and prepared native bundle. It reads the frozen Phase 7 inventory, renders all current Markdown through native Kramdown, compares all available saved source signatures and paper catalogue evidence, and checks complete rendered prose plus the explicitly mapped source cards/navigation. It also audits entity IDs, original asset hashes, source routes, redirect targets, sitemap and all local root/project URLs. Raw capture availability is recorded separately; retained signatures are not a fresh raw-HTML checksum check.
+
+`fixture_phase07.py` checks URL adaptation, including quoted attribute text, escaped code, existing prefixes, query strings and fragments. `browser_phase07.py SITE REFERENCE_SITE PROJECT_PARENT` tests the original ZIP slider with the same real slide data, root/project reading pages, redirects, anchors and JavaScript-free fallbacks. These are phase evidence helpers; older plugin-dependent search/filter validators remain historical and need the planned Phase 8 integration update. Do not run `check_live_sources.py` for a theme audit: it initiates external acquisition.
