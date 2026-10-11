@@ -2,7 +2,7 @@
 
 **CURRENT NATIVE PAGES NOTE (10 October 2026):** Deployment now uses GitHub Pages' built-in branch-source Jekyll build, with no custom workflow or Ruby `_plugins/` files. Use `bundle install` and `bundle exec jekyll build` for active website development; see [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) and [docs/VALIDATION.md](docs/VALIDATION.md). The historical commands and prepared-runtime details below document the *earlier custom-plugin migration pipeline* and must not be presented as proof of a current native-Pages check. Acquire new external source pages only on a separately authorized request.
 
-**Active instructions:** [AGENTS.md](AGENTS.md) and [TRANSFORMATION_PROMPT.md](TRANSFORMATION_PROMPT.md), with [docs/THEME.md](docs/THEME.md), [docs/AUTHORING.md](docs/AUTHORING.md), [MIGRATION_SPEC.md](MIGRATION_SPEC.md) and [docs/VALIDATION.md](docs/VALIDATION.md). The commands below are a technical runbook, **not** automatic permission to crawl. Never begin external capture unless specifically requested.
+**Documentation:** [docs/THEME.md](docs/THEME.md), [docs/AUTHORING.md](docs/AUTHORING.md), [MIGRATION_SPEC.md](MIGRATION_SPEC.md) and [docs/VALIDATION.md](docs/VALIDATION.md). The commands below are a technical runbook for separately requested content acquisition.
 
 Use this existing checkout; cloud tasks are isolated. The migration remains partial; see [PROGRESS.md](PROGRESS.md). No form submissions are performed.
 

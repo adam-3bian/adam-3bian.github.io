@@ -35,7 +35,7 @@ All validation must be evidence-driven. A built page is not automatically a pixe
 
 ## Instruction-only changes
 
-For a prompt/documentation-only change, verify the Git diff changes no editorial collection files, source assets or runtime code. Do not claim Jekyll/browser tests were run if they were not.
+For a documentation-only change, verify the Git diff changes no editorial collection files, source assets or runtime code. Do not claim Jekyll/browser tests were run if they were not.
 
 ## Phase 7 source and route audit
 

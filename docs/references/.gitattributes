@@ -1,2 +1,0 @@
-# Preserve the supplied prompt exactly, including its original CRLF endings.
-transformation-master-prompt.txt -text whitespace=cr-at-eol,-blank-at-eof

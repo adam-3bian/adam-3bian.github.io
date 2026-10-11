@@ -186,7 +186,7 @@ Maintain homepage slides under `slider` in `pages/index.md`. Use a genuine exist
 
 Each slide's media, text, action and padding form one native link. Phase 7 restores the ZIP's exact slider markup and script: dot buttons select slides; keyboard focus on the active slide link, a hidden document, or reduced motion pauses rotation. Persistent dot focus permits playback, as specified by the original script. The Phase 6 Pause/Play addition is removed. The first slide remains usable without JavaScript.
 
-Header navigation remains five categories in `_config.yml`. The footer has exactly Updates, CHERI Alliance and Legal, followed by Slack, LinkedIn, Mastodon, GitHub and YouTube links. Use the recorded public URLs from the supplied master prompt, with local licensed SVGs, meaningful alt text and `noopener noreferrer` for new tabs. These are ordinary links, not embedded trackers or widgets.
+Header navigation remains five categories in `_config.yml`. The footer has exactly Updates, CHERI Alliance and Legal, followed by Slack, LinkedIn, Mastodon, GitHub and YouTube links. Use the public URLs recorded in `_config.yml`, with local licensed SVGs, meaningful alt text and `noopener noreferrer` for new tabs. These are ordinary links, not embedded trackers or widgets.
 
 The contact/newsletter controls remain disconnected previews with visible notices and disabled buttons. Shared native fields are selected through `_data/forms.yml`; their external links point to the published contact page and mailing-list service. Typing or pressing Enter does not submit anything. Endpoint integration requires a separate task; never show a successful submission for these previews.
 

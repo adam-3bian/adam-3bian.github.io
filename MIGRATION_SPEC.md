@@ -1,6 +1,6 @@
 # CHERI Alliance — active content and migration fidelity contract
 
-This document supplies the **content rules** for `TRANSFORMATION_PROMPT.md`, not a request to start crawling. `AGENTS.md` is the instruction entry point; `docs/THEME.md` and the uploaded ZIP govern **presentation**. The two original CHERI sites are distinct sources of provenance, not required visual matches.
+This document records content-preservation requirements. [docs/THEME.md](docs/THEME.md) and the retained starter ZIP define presentation. The two original CHERI sites are distinct sources of provenance, not required visual matches.
 
 ## Scope and sources
 

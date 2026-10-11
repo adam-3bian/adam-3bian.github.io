@@ -1,6 +1,6 @@
 # CHERI Alliance website
 
-**For coding agents:** Begin at [AGENTS.md](AGENTS.md). The single complete website task is [TRANSFORMATION_PROMPT.md](TRANSFORMATION_PROMPT.md); [docs/THEME.md](docs/THEME.md) and [docs/AUTHORING.md](docs/AUTHORING.md) retain the ZIP design/methodology and real-content schema, and [docs/VALIDATION.md](docs/VALIDATION.md) defines verification. Historical master prompts are retired pointers, not active instructions.
+See [docs/THEME.md](docs/THEME.md) for the starter design, [docs/AUTHORING.md](docs/AUTHORING.md) for content and relationships, and [docs/VALIDATION.md](docs/VALIDATION.md) for verification.
 
 Complete static website using the uploaded simplified-authoring design and source-backed content from `cheri-alliance.github.io` and `cheri-alliance.org`. It includes responsive navigation and page/profile layouts, linked directories, news and dated event lists, local fonts, canonical URLs, sitemap, compatibility redirects and a branded 404. Contact and newsletter forms are visible with submission disabled, as requested.
 

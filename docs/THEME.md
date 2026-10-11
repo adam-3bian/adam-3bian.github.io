@@ -2,7 +2,7 @@
 
 The presentation reference is the user-uploaded `cheri-alliance-starter-kit-simplified-authoring (3).zip`. The current goal is to retain existing content while using that theme, rather than reproducing the visual design of either source website.
 
-The original archive and detailed master prompt are now retained in [references/](references/README.md). [Phase 0](../reports/codex-phases/phase-00.md) records fresh native-Jekyll findings; the earlier integration and validation statements below remain historical evidence.
+The original starter archive is retained in [references/](references/README.md). [Phase 0](../reports/codex-phases/phase-00.md) records the initial native-Jekyll findings; the earlier integration and validation statements below remain historical evidence.
 
 The archive's actual `_layouts`, `_includes`, `_sass`, branded/background assets and JavaScript components were imported. No sample articles, biographies, placeholder assets, dependency manifests or sample navigation were substituted for this repository's content and configuration. `reports/template-integration.json` records archive/file hashes and the deliberate adaptations.
 
@@ -48,7 +48,7 @@ The native `future: true` setting keeps future event occurrence dates from suppr
 
 Run the repository's build, full-content/asset/link checks, author relationship checks and desktop/mobile browser flows. Compare computed visual styles and representative screenshots against a build of the ZIP itself. Keep content hashes unchanged during theme-only tasks. Shared presentation and newly generated navigation can differ from archival body text; complete bodies must still match their retained signatures.
 
-The ZIP documents describe the example starter; they do not replace the user's instructions, this repository's content-fidelity rules or its supported runtime. The legacy acquisition prompts now identify their scope explicitly.
+The ZIP documents describe the example starter; they do not replace the user's instructions, this repository's content-fidelity rules or its supported runtime.
 
 A local build or cloud-environment publication does not deploy GitHub Pages. Local edits must be committed/pushed and the configured Pages workflow must succeed before the public site can reflect them. Deployment is a separate action requiring the user's authorization.
 

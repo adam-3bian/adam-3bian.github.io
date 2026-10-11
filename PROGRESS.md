@@ -1,3 +1,9 @@
+## AI prompt cleanup — 11 October 2026
+
+Removed the AI master/start prompts, agent instructions, phase task prompts, uploaded prompt text and obsolete prompt pointers. Updated current documentation and removed stale configuration entries. Retained the original starter ZIP, editorial content, site implementation and historical validation reports.
+
+Validation: checked the diff for whitespace errors, scanned remaining documentation for active prompt entry points, and verified that editorial records, runtime files and the starter archive are unchanged. No Jekyll or browser tests were rerun for this documentation cleanup.
+
 ## Complete visual integration and final review — 11 October 2026
 
 Continued from `565567f8a2db6416aa2917600a57e690d264c9b0` on `codex/phased-site-transformation`. The homepage now keeps its full introduction in the native hero, composes audience/community content as reusable card grids and presents membership as a native CTA. Five hubs reuse the section renderer. All 85 paragraph-form talks on 59 profiles now use complete native cards; existing talk tables remain intact. Technical card diagrams use containment. Moving compatibility anchors inside the hero restores original breadcrumb spacing on 90 pages, and wrapping bare citations fixes the measured 375px CHERIoT Ibex overflow. Three unused search scripts remain as source evidence but are excluded from publishing.
