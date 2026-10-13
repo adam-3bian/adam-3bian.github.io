@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T04:20:57Z",
+  "generated_at": "2026-10-13T05:14:52Z",
   "record_count": 481,
   "relationship_count": 526,
   "image_count": 341,
@@ -321,8 +321,8 @@
     },
     {
       "title": "Answers",
-      "url": "/reference/CHERI-seL4-Exercises/exercises/cheri-tags/answers.html",
-      "file": "pages/reference/CHERI-seL4-Exercises/exercises/cheri-tags/answers.html.md",
+      "url": "/reference/CHERI-seL4-Exercises/exercises/cheri-allocator/answers.html",
+      "file": "pages/reference/CHERI-seL4-Exercises/exercises/cheri-allocator/answers.html.md",
       "type": "Content Page (detail)",
       "collection": "pages",
       "has_image": false,
@@ -333,8 +333,8 @@
     },
     {
       "title": "Answers",
-      "url": "/reference/CHERI-seL4-Exercises/exercises/cheri-allocator/answers.html",
-      "file": "pages/reference/CHERI-seL4-Exercises/exercises/cheri-allocator/answers.html.md",
+      "url": "/reference/CHERI-seL4-Exercises/exercises/cheri-tags/answers.html",
+      "file": "pages/reference/CHERI-seL4-Exercises/exercises/cheri-tags/answers.html.md",
       "type": "Content Page (detail)",
       "collection": "pages",
       "has_image": false,
@@ -1617,18 +1617,6 @@
     },
     {
       "title": "Contact the Alliance",
-      "url": "/reference/source-versions/contact/",
-      "file": "pages/reference/source-versions/contact.md",
-      "type": "Content Page (detail)",
-      "collection": "pages",
-      "has_image": false,
-      "missing_news_date": false,
-      "display_date": null,
-      "alternate": true,
-      "alias_target": null
-    },
-    {
-      "title": "Contact the Alliance",
       "url": "/alliance/membership/contact/",
       "file": "pages/alliance/membership/contact.md",
       "type": "Content Page (detail)",
@@ -1637,6 +1625,18 @@
       "missing_news_date": false,
       "display_date": null,
       "alternate": false,
+      "alias_target": null
+    },
+    {
+      "title": "Contact the Alliance",
+      "url": "/reference/source-versions/contact/",
+      "file": "pages/reference/source-versions/contact.md",
+      "type": "Content Page (detail)",
+      "collection": "pages",
+      "has_image": false,
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": true,
       "alias_target": null
     },
     {
@@ -3357,18 +3357,6 @@
     },
     {
       "title": "Members",
-      "url": "/reference/source-versions/members/",
-      "file": "pages/reference/source-versions/members.md",
-      "type": "Content Page (detail)",
-      "collection": "pages",
-      "has_image": false,
-      "missing_news_date": false,
-      "display_date": null,
-      "alternate": true,
-      "alias_target": null
-    },
-    {
-      "title": "Members",
       "url": "/alliance/leadership/members/",
       "file": "pages/alliance/leadership/members.md",
       "type": "Organisations (list)",
@@ -3377,6 +3365,18 @@
       "missing_news_date": false,
       "display_date": null,
       "alternate": false,
+      "alias_target": null
+    },
+    {
+      "title": "Members",
+      "url": "/reference/source-versions/members/",
+      "file": "pages/reference/source-versions/members.md",
+      "type": "Content Page (detail)",
+      "collection": "pages",
+      "has_image": false,
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": true,
       "alias_target": null
     },
     {

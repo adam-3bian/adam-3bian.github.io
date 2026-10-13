@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-13T04:20:57Z'
+generated_at: '2026-10-13T05:14:52Z'
 record_count: 481
 relationship_count: 526
 image_count: 341
@@ -267,8 +267,8 @@ records:
   alternate: false
   alias_target:
 - title: Answers
-  url: "/reference/CHERI-seL4-Exercises/exercises/cheri-tags/answers.html"
-  file: pages/reference/CHERI-seL4-Exercises/exercises/cheri-tags/answers.html.md
+  url: "/reference/CHERI-seL4-Exercises/exercises/cheri-allocator/answers.html"
+  file: pages/reference/CHERI-seL4-Exercises/exercises/cheri-allocator/answers.html.md
   type: Content Page (detail)
   collection: pages
   has_image: false
@@ -277,8 +277,8 @@ records:
   alternate: false
   alias_target:
 - title: Answers
-  url: "/reference/CHERI-seL4-Exercises/exercises/cheri-allocator/answers.html"
-  file: pages/reference/CHERI-seL4-Exercises/exercises/cheri-allocator/answers.html.md
+  url: "/reference/CHERI-seL4-Exercises/exercises/cheri-tags/answers.html"
+  file: pages/reference/CHERI-seL4-Exercises/exercises/cheri-tags/answers.html.md
   type: Content Page (detail)
   collection: pages
   has_image: false
@@ -1357,16 +1357,6 @@ records:
   alternate: false
   alias_target:
 - title: Contact the Alliance
-  url: "/reference/source-versions/contact/"
-  file: pages/reference/source-versions/contact.md
-  type: Content Page (detail)
-  collection: pages
-  has_image: false
-  missing_news_date: false
-  display_date:
-  alternate: true
-  alias_target:
-- title: Contact the Alliance
   url: "/alliance/membership/contact/"
   file: pages/alliance/membership/contact.md
   type: Content Page (detail)
@@ -1375,6 +1365,16 @@ records:
   missing_news_date: false
   display_date:
   alternate: false
+  alias_target:
+- title: Contact the Alliance
+  url: "/reference/source-versions/contact/"
+  file: pages/reference/source-versions/contact.md
+  type: Content Page (detail)
+  collection: pages
+  has_image: false
+  missing_news_date: false
+  display_date:
+  alternate: true
   alias_target:
 - title: 'Cornucopia Reloaded: Load Barriers for CHERI Heap Temporal Safety'
   url: "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/"
@@ -2813,16 +2813,6 @@ records:
   alternate: false
   alias_target:
 - title: Members
-  url: "/reference/source-versions/members/"
-  file: pages/reference/source-versions/members.md
-  type: Content Page (detail)
-  collection: pages
-  has_image: false
-  missing_news_date: false
-  display_date:
-  alternate: true
-  alias_target:
-- title: Members
   url: "/alliance/leadership/members/"
   file: pages/alliance/leadership/members.md
   type: Organisations (list)
@@ -2831,6 +2821,16 @@ records:
   missing_news_date: false
   display_date:
   alternate: false
+  alias_target:
+- title: Members
+  url: "/reference/source-versions/members/"
+  file: pages/reference/source-versions/members.md
+  type: Content Page (detail)
+  collection: pages
+  has_image: false
+  missing_news_date: false
+  display_date:
+  alternate: true
   alias_target:
 - title: Membership Benefits & Options
   url: "/alliance/membership/membership-benefits-and-options/"

@@ -47,6 +47,9 @@ const report = { imagePages: imageRoutes.length, pages: routes.length, widths, r
 async function loaded(page, route) {
   const response = await page.goto(pageURL(route));
   assert.equal(response.status(), 200, route);
+  // Existing cards load offscreen thumbnails lazily. Request those assets in
+  // the test so the all-page broken-image check does not wait for scrolling.
+  await page.locator('img[loading="lazy"]').evaluateAll(images => images.forEach(image => { image.loading = 'eager'; }));
   await page.waitForFunction(() => [...document.images].every(image => image.complete));
 }
 
