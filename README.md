@@ -18,6 +18,8 @@ Open http://localhost:4000. The content checks page is at http://localhost:4000/
 
 The source menu and the ten collection links let you reach the content. Each detail page shows its title, primary image, populated metadata, article body, linked records, and an expandable front matter inspector. Unused null and empty values remain visible in the inspector. Primary images render once; body illustrations stay with the content.
 
+The header adapts the starter kit's column menus and mobile accordions. Edit `navigation.header` in `_config.yml` to change its links and column counts. Native `details`/`summary` controls remain usable without JavaScript; the small `assets/navigation.js` enhancement adds the mobile Menu button, arrow keys, Escape, outside-click dismissal, and focus handling. At 1024px and wider, menus overlay the content in three or four columns and scroll within short viewports. At smaller widths, they expand in the page flow. Footer navigation retains its existing disclosures.
+
 The content checks page lists every page and record, including retained source versions and aliases. Its small filter can find a title, type, or source file. Missing optional images or news dates are identified as unprovided values. Actual errors include incomplete schemas, invalid dates, unknown relationship references, broken navigation targets, and missing image files.
 
 News is newest first, with undated records after dated ones. Events are earliest first; upcoming and past lists use the final event day in the Europe/London timezone. People, organisations, and other collections sort alphabetically. The speaker list uses is_speaker, and the member list uses a confirmed membership_tier. Alternate source records remain accessible from the audit while canonical lists omit them.
@@ -92,9 +94,12 @@ NODE_PATH=/tmp/cheri-image-tests/node_modules /tmp/cheri-image-tests/node_module
 python3 -m http.server 4000 --directory _site
 # In another terminal:
 NODE_PATH=/tmp/cheri-image-tests/node_modules AXE_PATH=/tmp/cheri-image-tests/node_modules/axe-core/axe.min.js node scripts/test_images.cjs
+NODE_PATH=/tmp/cheri-image-tests/node_modules AXE_PATH=/tmp/cheri-image-tests/node_modules/axe-core/axe.min.js node scripts/test_navigation.cjs
 ```
 
 Set `SITE_DIR` and `SITE_URL` to test a different build or a repository subpath. Test results are written to `reports/image-tests/results.json`.
+
+The Pages workflow also checks all five primary menus at the same viewport widths, verifies the 96 existing primary links and ten collection links, and tests keyboard, focus, touch, no-JavaScript, and short-viewport behavior. Navigation screenshots and results are saved in `reports/navigation-tests/`; axe checks the open and closed header for WCAG A/AA violations before deployment.
 
 Jekyll writes the static site into _site. The site uses Jekyll 3.10, standard Liquid, and Kramdown. One small parser plugin keeps text containing a pipe character as a paragraph; the source Markdown stays unchanged. Set url and baseurl in _config.yml for your repository. Internal links and images use relative_url, including body illustrations, so repository subpaths work. For GitHub Pages, build with GitHub Actions and publish _site; the built-in Pages safe-mode build does not load custom plugins.
 

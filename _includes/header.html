@@ -1,0 +1,57 @@
+<header class="site-header">
+  <div class="container">
+    <div class="header-row">
+      <a class="brand" href="{{ '/' | relative_url }}">CHERI <span>Content viewer</span></a>
+      <button id="navigation-toggle" class="navigation-toggle" type="button" aria-expanded="false" aria-controls="header-navigation" aria-label="Open navigation" hidden>
+        <span aria-hidden="true">&#x2630;</span> Menu
+      </button>
+    </div>
+    <div id="header-navigation">
+      <nav id="primary-navigation" class="source-nav" aria-label="Primary">
+        <ul class="primary-menu-list">
+          {% for node in site.navigation.header %}
+          {% assign menu_number = forloop.index %}
+          <li>
+            {% if node.subcategories or node.links %}
+            <details class="primary-menu" name="primary-menu">
+              <summary aria-controls="primary-panel-{{ menu_number }}">{{ node.title | escape }}</summary>
+              <section id="primary-panel-{{ menu_number }}" class="primary-menu-panel" aria-label="{{ node.title | escape }} links">
+                {% if node.url %}<a class="section-link" href="{% include href.html url=node.url %}">{{ node.title | escape }} overview</a>{% endif %}
+                {% if node.subcategories %}
+                <ul class="menu-groups columns-{{ node.columns | default: 3 }}">
+                  {% for group in node.subcategories %}
+                  <li class="menu-group">
+                    <h2 class="menu-group-label">{{ group.title | escape }}</h2>
+                    <details class="menu-group-disclosure" open>
+                      <summary aria-controls="primary-group-{{ menu_number }}-{{ forloop.index }}">{{ group.title | escape }}</summary>
+                      <div id="primary-group-{{ menu_number }}-{{ forloop.index }}">
+                        {% if group.url %}<a class="section-link" href="{% include href.html url=group.url %}">{{ group.title | escape }} overview</a>{% endif %}
+                        {% include navigation.html items=group.links %}
+                      </div>
+                    </details>
+                  </li>
+                  {% endfor %}
+                </ul>
+                {% else %}
+                  {% include navigation.html items=node.links %}
+                {% endif %}
+              </section>
+            </details>
+            {% elsif node.url %}
+            <a href="{% include href.html url=node.url %}">{{ node.title | escape }}</a>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+      <div class="header-tools">
+        <nav class="collection-nav" aria-label="Collections">
+          {% for collection in site.collections %}{% unless collection.label == 'posts' %}
+          <a href="{{ '/' | append: collection.label | append: '/' | relative_url }}">{{ site.data.viewer.collections[collection.label].label | default: collection.label | capitalize }}</a>
+          {% endunless %}{% endfor %}
+        </nav>
+        <a class="checks-link" href="{{ '/checks/' | relative_url }}">Content checks</a>
+      </div>
+    </div>
+  </div>
+</header>
