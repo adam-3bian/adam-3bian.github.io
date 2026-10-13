@@ -459,11 +459,6 @@
       "ratio": "3:1"
     },
     {
-      "record": "_organisations/cheri-alliance.md",
-      "asset": "/assets/organisations/cheri-alliance/placeholder.svg",
-      "ratio": "3:1"
-    },
-    {
       "record": "_organisations/configured-things.md",
       "asset": "/assets/organisations/configured-things/placeholder.svg",
       "ratio": "3:1"
@@ -1052,6 +1047,10 @@
     {
       "from": "/assets/shared/source-assets/bb889a4dc09e-cheri-alliance-working-groups.png",
       "to": "/assets/groups/cheri-research/bb889a4dc09e-cheri-alliance-working-groups.png"
+    },
+    {
+      "from": "/assets/shared/branding/9899bc30b0-logo-blue.webp",
+      "to": "/assets/organisations/cheri-alliance/9899bc30b0-logo-blue.webp"
     }
   ],
   "relationships_added": [

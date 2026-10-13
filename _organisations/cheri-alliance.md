@@ -1,7 +1,7 @@
 ---
 title: CHERI Alliance
-image_url: /assets/organisations/cheri-alliance/placeholder.svg
-website_url: null
+image_url: /assets/organisations/cheri-alliance/9899bc30b0-logo-blue.webp
+website_url: https://cheri-alliance.org/
 membership_tier: null
 is_founding_member: null
 social:
@@ -10,7 +10,7 @@ social:
   github_url: null
 ---
 
-# About the CHERI Alliance
+# CHERI Alliance
 
 Building the ecosystem behind memory-safe computing.
 
@@ -46,18 +46,24 @@ The Alliance accelerates CHERI adoption by:
 
 The Alliance supports collaboration, technical exchange, education, and adoption across the CHERI ecosystem. Product vendors, standards bodies, governments, and research organisations continue to own their own technologies, priorities, and decisions.
 
-The Alliance works closely with partners across the ecosystem, including the CHERI Research Centre and [The Capable Hub](/organisations/the-capable-hub/). Learn more about how we accelerate CHERI together.
+The Alliance works closely with partners across the ecosystem, including the CHERI Research Centre and [The Capable Hub](/organisations/the-capable-hub/). Learn more about [how we accelerate CHERI together](/alliance/about-and-governance/accelerating-together/).
 
 ## Find us on the Web
 
-YouTube
+[YouTube](https://www.youtube.com/@CHERI-Alliance)
 
 ## The Alliance structure
 
 The CHERI Alliance is an independent, non-profit organisation, organised as a UK Community Interest Company (CIC). This means we are subject to the same accounting and reporting obligations as other companies, while also being regulated to ensure that our activities are carried out for the benefit of the wider community. In our case, the mission is to accelerate CHERI adoption by the industry. This structure also ensures that the Alliance cannot be acquired in the way a conventional company can.
 
-Administrative details:
+### Administrative details
 
-| --- | ---
+Legal address
+: Salisbury House, Station Road, Cambridge CB1 2LA, United Kingdom
 
-| | Legal address: | Salisbury House, Station Road, Cambridge CB1 2LA, United Kingdom | | Company number: | 15516512 | | Company directors: | [Mike Eftimakis](/people/mike-eftimakis/), [Robert Watson](/people/robert-watson/), [Mike Halsall](/people/mike-halsall/), [Gavin Ferris](/people/gavin-ferris/) |
+Company number
+: 15516512
+
+Company directors
+: [Mike Eftimakis](/people/mike-eftimakis/), [Robert Watson](/people/robert-watson/), [Mike Halsall](/people/mike-halsall/), [Gavin Ferris](/people/gavin-ferris/)
+{: .organisation-details }

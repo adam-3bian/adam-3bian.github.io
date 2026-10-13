@@ -15,7 +15,7 @@ const report = { widths: [1440, 1024, 768, 640, 375], layoutChecks: 0, accessibi
     const page = await browser.newPage();
     for (const width of report.widths) {
       await page.setViewportSize({ width, height: 900 });
-      for (const route of ['/policies/competition-law-statement/', '/policies/intellectual-property-policy/', '/policies/trademark-policy/', '/papers/', '/policies/']) {
+      for (const route of ['/policies/competition-law-statement/', '/policies/intellectual-property-policy/', '/policies/trademark-policy/', '/papers/', '/policies/', '/organisations/cheri-alliance/']) {
         await page.goto(url(route));
         const problems = await page.evaluate(() => {
           const errors = [];
@@ -32,6 +32,11 @@ const report = { widths: [1440, 1024, 768, 640, 375], layoutChecks: 0, accessibi
         });
         assert.deepEqual(problems, [], `${width}px ${route}`);
         report.layoutChecks++;
+        if (route === '/organisations/cheri-alliance/') {
+          assert.equal(await page.locator('main h1').count(), 1, 'Duplicate Alliance page heading');
+          assert.equal((await page.locator('.article-content').innerText()).includes('|'), false, 'Broken administrative table is visible');
+          await page.screenshot({ path: path.join(reportDir, `cheri-alliance-${width}.png`), fullPage: true });
+        }
         if (route === '/policies/competition-law-statement/') {
           assert.equal(await page.locator('.clause-number').count(), 28);
           assert.equal(await page.locator('.metadata time').textContent(), 'August 2024');

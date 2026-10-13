@@ -32,7 +32,7 @@ console.log(`Asset paths: ${references} local image references across ${htmlFile
 
 const representativeRoutes = [
   '/', '/checks/', '/people/', '/guides/install-a-toolchain/', '/software/cheri-linux/',
-  '/hardware/x730/', '/people/adam-finney/', '/organisations/codasip/',
+  '/hardware/x730/', '/people/adam-finney/', '/organisations/codasip/', '/organisations/cheri-alliance/',
   '/groups/cheri-linux-working-group/', '/papers/cheriot-complete-memory-safety-for-embedded-devices/',
   '/policies/code-of-conduct/',
 ];
