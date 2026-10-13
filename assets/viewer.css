@@ -21,7 +21,7 @@ img { max-width: 100%; }
 a { color: var(--teal); text-decoration-thickness: 1px; text-underline-offset: .18em; }
 a:hover { color: #0a444c; }
 a:focus-visible, summary:focus-visible, input:focus-visible, select:focus-visible,
-button:focus-visible, img[role="button"]:focus-visible {
+button:focus-visible, img[role="button"]:focus-visible, figcaption[tabindex]:focus-visible {
   outline: 3px solid #bd7216;
   outline-offset: 3px;
 }
@@ -172,7 +172,7 @@ body.image-viewer-open { position: fixed; inset-inline: 0; top: var(--image-view
 .image-viewer button:hover { background: #3b5960; }
 .image-viewer-close { justify-self: end; }
 .image-viewer figure { margin: 0; min-width: 0; }
-.image-viewer img { display: block; width: auto; height: auto; max-width: 100%; max-height: calc(100dvh - 16rem); object-fit: contain; margin-inline: auto; }
+.image-viewer img { display: block; width: auto; height: auto; max-width: 100%; max-height: calc(100dvh - 16rem); object-fit: contain; margin-inline: auto; background: var(--white); }
 .image-viewer figcaption { max-height: 4rem; overflow: auto; margin-top: .5rem; text-align: center; overflow-wrap: anywhere; }
 .image-viewer nav { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: .5rem; }
 .image-viewer-status { margin: 0; text-align: center; font-size: .85rem; }

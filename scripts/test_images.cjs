@@ -204,6 +204,7 @@ async function loaded(page, route) {
     await loaded(page, '/hardware/x730/');
     await page.locator('.article-content img[role="button"]').click();
     assert.equal(await page.locator('.image-viewer-previous:visible, .image-viewer-next:visible').count(), 0);
+    await page.screenshot({ path: path.join(reportDir, 'image-viewer-diagram-375.png') });
     await page.keyboard.press('Escape');
 
     // The touch controls work without swipe gestures, and no animation is used.

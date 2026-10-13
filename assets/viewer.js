@@ -46,7 +46,7 @@
     <button type="button" class="image-viewer-close" aria-label="Close image viewer" autofocus>Close ×</button>
     <figure>
       <img alt="">
-      <figcaption id="image-viewer-caption" aria-live="polite"></figcaption>
+      <figcaption id="image-viewer-caption" aria-live="polite" tabindex="0"></figcaption>
     </figure>
     <nav aria-label="Image navigation">
       <button type="button" class="image-viewer-previous" aria-label="Previous image">← Previous</button>
@@ -134,7 +134,7 @@
   next.addEventListener('click', () => move(1));
   dialog.addEventListener('keydown', event => {
     if (event.key === 'Tab') {
-      const controls = [...dialog.querySelectorAll('button:not([hidden])')];
+      const controls = [...dialog.querySelectorAll('button:not([hidden]), [tabindex="0"]:not([hidden])')];
       const first = controls[0];
       const last = controls[controls.length - 1];
       if (event.shiftKey && document.activeElement === first) {
