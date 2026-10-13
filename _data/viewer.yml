@@ -23,6 +23,7 @@ url_fields:
 - website_url
 - registration_url
 - publication_url
+- document_url
 classification_fields:
 - type
 - architecture
@@ -64,3 +65,12 @@ aliases:
   /news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd-original/: /news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd/
   /news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl-original/: /news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl/
   /news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software-original/: /news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software/
+  /discover/resources/academic-papers/: /papers/
+  /competition-law-statement/: /policies/competition-law-statement/
+  /code-of-conduct/: /policies/code-of-conduct/
+  /trademark/: /policies/trademark/
+  /legal-and-policies/: /policies/
+  /news-and-events/news-and-analysis/latest-news/: /news/
+  /policies/ip-policy/: /policies/intellectual-property-policy/
+  /policies/trademark-original/: /policies/trademark/
+  /policies/privacy-policy/: /policies/privacy/

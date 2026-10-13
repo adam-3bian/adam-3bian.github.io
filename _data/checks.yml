@@ -1,8 +1,8 @@
 ---
-generated_at: '2026-10-13T14:21:05Z'
+generated_at: '2026-10-13T16:58:34Z'
 record_count: 487
 relationship_count: 1096
-image_count: 516
+image_count: 512
 errors: []
 records:
 - title: "'Cybersecurity by design - from research to industry' conference"
@@ -63,8 +63,8 @@ records:
   has_image: false
   missing_news_date: false
   display_date:
-  alternate: false
-  alias_target:
+  alternate: true
+  alias_target: "/papers/"
 - title: Accelerating CHERI together
   url: "/alliance/about-and-governance/accelerating-together/"
   file: pages/alliance/about-and-governance/accelerating-together.md
@@ -785,9 +785,9 @@ records:
   collection: pages
   has_image: false
   missing_news_date: false
-  display_date:
-  alternate: false
-  alias_target:
+  display_date: '2025-04-14'
+  alternate: true
+  alias_target: "/policies/code-of-conduct/"
 - title: |-
     CHERI ALLIANCE CIC
     Statement of competition compliance
@@ -797,9 +797,9 @@ records:
   collection: pages
   has_image: false
   missing_news_date: false
-  display_date:
-  alternate: false
-  alias_target:
+  display_date: 2024-08
+  alternate: true
+  alias_target: "/policies/competition-law-statement/"
 - title: CHERI ALLIANCE CIC IP Policy
   url: "/policies/ip-policy/"
   file: _policies/ip-policy.md
@@ -807,9 +807,9 @@ records:
   collection: policies
   has_image: true
   missing_news_date: false
-  display_date:
-  alternate: false
-  alias_target:
+  display_date: 2024-08
+  alternate: true
+  alias_target: "/policies/intellectual-property-policy/"
 - title: CHERI Alliance Officially Launches, Adds Major Partners including Google,
     to Tackle Cybersecurity Threats at the Hardware Level
   url: "/news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level/"
@@ -1303,7 +1303,7 @@ records:
   collection: policies
   has_image: true
   missing_news_date: false
-  display_date:
+  display_date: '2025-04-14'
   alternate: false
   alias_target:
 - title: Collaboration Principles
@@ -1353,7 +1353,7 @@ records:
   collection: policies
   has_image: true
   missing_news_date: false
-  display_date:
+  display_date: 2024-08
   alternate: false
   alias_target:
 - title: Compile and run RISC-V and CHERI-RISC-V programs
@@ -2266,7 +2266,7 @@ records:
   collection: policies
   has_image: true
   missing_news_date: false
-  display_date:
+  display_date: 2024-08
   alternate: false
   alias_target:
 - title: Introducing the CHERI Adoption Global Ecosystem Assessment Q1 2026
@@ -2617,8 +2617,8 @@ records:
   has_image: false
   missing_news_date: false
   display_date:
-  alternate: false
-  alias_target:
+  alternate: true
+  alias_target: "/news/"
 - title: Laurence Tratt
   url: "/people/laurence-tratt/"
   file: _people/laurence-tratt.md
@@ -2637,8 +2637,8 @@ records:
   has_image: false
   missing_news_date: false
   display_date:
-  alternate: false
-  alias_target:
+  alternate: true
+  alias_target: "/policies/"
 - title: Light Momentum Technology Corp.
   url: "/organisations/light-momentum-technology-corp/"
   file: _organisations/light-momentum-technology-corp.md
@@ -3460,8 +3460,8 @@ records:
   has_image: true
   missing_news_date: false
   display_date:
-  alternate: false
-  alias_target:
+  alternate: true
+  alias_target: "/policies/privacy/"
 - title: Procurement
   url: "/adopt/assurance-and-adoption/procurement/"
   file: pages/adopt/assurance-and-adoption/procurement.md
@@ -4348,7 +4348,7 @@ records:
   collection: policies
   has_image: true
   missing_news_date: false
-  display_date:
+  display_date: 2025-09
   alternate: false
   alias_target:
 - title: Trusted Computing Center of Excellence (TCCoE)
@@ -4529,8 +4529,8 @@ records:
   has_image: false
   missing_news_date: false
   display_date:
-  alternate: false
-  alias_target:
+  alternate: true
+  alias_target: "/policies/trademark/"
 - title: Using the CHERI Alliance Trademark
   url: "/policies/trademark-original/"
   file: _policies/trademark-original.md
@@ -4540,7 +4540,7 @@ records:
   missing_news_date: false
   display_date:
   alternate: true
-  alias_target:
+  alias_target: "/policies/trademark/"
 - title: Vadim Zaliva
   url: "/people/vadim-zaliva/"
   file: _people/vadim-zaliva.md

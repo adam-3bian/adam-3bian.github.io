@@ -9,7 +9,7 @@ next_page_url: /discover/resources/videos-and-presentations/
 related:
   pages:
   - /discover/resources/specifications/
-  - /discover/resources/academic-papers/
+  - /papers/
   people: []
   organisations: []
   groups: []

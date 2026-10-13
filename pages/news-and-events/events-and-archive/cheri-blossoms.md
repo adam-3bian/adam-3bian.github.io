@@ -9,7 +9,7 @@ next_page_url: /news-and-events/events-and-archive/cheritech/
 related:
   pages:
   - /news-and-events/events-and-archive/upcoming-events/
-  - /news-and-events/news-and-analysis/latest-news/
+  - /news/
   people: []
   organisations: []
   groups: []

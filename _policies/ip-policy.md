@@ -2,11 +2,12 @@
 title: CHERI ALLIANCE CIC IP Policy
 image_url: /assets/policies/ip-policy/placeholder.svg
 author: null
+version: '1.01'
+document_date: '2024-08'
+document_url: https://cheri-alliance.org/legal-ip-policy/
 ---
 
 # CHERI ALLIANCE CIC IP Policy
-
-Version: 1.01 Date: August 2024
 
 ### 1 Introduction
 

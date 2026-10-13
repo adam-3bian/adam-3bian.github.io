@@ -902,14 +902,14 @@
     - News & Analysis
     - Latest News
     - A new ETSI standard could rewrite the memory-safety debate
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - A new ETSI standard could rewrite the memory-safety debate
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/ai-has-compressed-the-attack-timeline.md
@@ -924,14 +924,14 @@
     - News & Analysis
     - Latest News
     - AI has compressed the attack timeline
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - AI has compressed the attack timeline
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon.md
@@ -946,14 +946,14 @@
     - News & Analysis
     - Latest News
     - Amid rising cyber threats, EnSilica joins the CHERI Alliance to enable safe & secure silicon
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - Amid rising cyber threats, EnSilica joins the CHERI Alliance to enable safe & secure silicon
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/behind-the-scenes-inside-the-promotion-and-ambassador-program-working-group.md
@@ -968,14 +968,14 @@
     - News & Analysis
     - Latest News
     - 'Behind the Scenes: inside the promotion and ambassador program Working Group'
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - 'Behind the Scenes: inside the promotion and ambassador program Working Group'
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/beyond-software-patching.md
@@ -990,14 +990,14 @@
     - News & Analysis
     - Latest News
     - Beyond Software Patching
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - Beyond Software Patching
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/bt-group-joins-the-cheri-alliance-to-advance-cybersecurity-innovation.md
@@ -1012,14 +1012,14 @@
     - News & Analysis
     - Latest News
     - BT Group Joins the CHERI Alliance to Advance Cybersecurity Innovation
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - BT Group Joins the CHERI Alliance to Advance Cybersecurity Innovation
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/building-a-safer-digital-future.md
@@ -1034,14 +1034,14 @@
     - News & Analysis
     - Latest News
     - Building a Safer Digital Future
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - Building a Safer Digital Future
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level.md
@@ -1056,14 +1056,14 @@
     - News & Analysis
     - Latest News
     - CHERI Alliance Officially Launches, Adds Major Partners including Google, to Tackle Cybersecurity Threats at the Hardware Level
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - CHERI Alliance Officially Launches, Adds Major Partners including Google, to Tackle Cybersecurity Threats at the Hardware Level
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/cheri-alliance-to-distribute-arm-morello-boards-the-journey-beyond-dsbd-continues.md
@@ -1078,14 +1078,14 @@
     - News & Analysis
     - Latest News
     - CHERI Alliance to Distribute Arm Morello Boards – The Journey Beyond DSbD Continues!
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - CHERI Alliance to Distribute Arm Morello Boards – The Journey Beyond DSbD Continues!
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/cheri-memory-safety-mitigates-llm-discovered-vulnerability-in-freebsd.md
@@ -1100,14 +1100,14 @@
     - News & Analysis
     - Latest News
     - CHERI memory safety mitigates LLM-discovered vulnerability in FreeBSD
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - CHERI memory safety mitigates LLM-discovered vulnerability in FreeBSD
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/cheri-or-cheriot-the-answer-is-not-what-you-think-original.md
@@ -1122,14 +1122,14 @@
     - News & Analysis
     - Latest News
     - CHERI or CHERIoT? The Answer Is Not What You Think
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - CHERI or CHERIoT? The Answer Is Not What You Think
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
   alternate: true
@@ -1145,14 +1145,14 @@
     - News & Analysis
     - Latest News
     - CHERI or CHERIoT? The Answer Is Not What You Think
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - CHERI or CHERIoT? The Answer Is Not What You Think
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/cheri-sel4-and-cheri-microkit-released.md
@@ -1167,14 +1167,14 @@
     - News & Analysis
     - Latest News
     - CHERI-seL4 and CHERI-Microkit Released
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - CHERI-seL4 and CHERI-Microkit Released
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/cheri-tag-bit-transport-overlay-standard-version-0-9-released.md
@@ -1189,14 +1189,14 @@
     - News & Analysis
     - Latest News
     - CHERI Tag Bit Transport Overlay Standard version 0.9 released
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - CHERI Tag Bit Transport Overlay Standard version 0.9 released
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/cheri-zephyr-v0-4-0-release.md
@@ -1211,14 +1211,14 @@
     - News & Analysis
     - Latest News
     - CHERI-Zephyr v0.4.0 Release
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - CHERI-Zephyr v0.4.0 Release
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/cheriot-1-0-specification-released-original.md
@@ -1233,14 +1233,14 @@
     - News & Analysis
     - Latest News
     - CHERIoT 1.0 Specification Released
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - CHERIoT 1.0 Specification Released
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
   alternate: true
@@ -1256,14 +1256,14 @@
     - News & Analysis
     - Latest News
     - CHERIoT 1.0 Specification Released
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - CHERIoT 1.0 Specification Released
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus.md
@@ -1278,14 +1278,14 @@
     - News & Analysis
     - Latest News
     - CHERIoT-Ibex Core is Open Sourced to Enable Memory Safe MCUs
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - CHERIoT-Ibex Core is Open Sourced to Enable Memory Safe MCUs
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/codasip-enables-secure-linux-by-donating-cheri-risc-v-sdk-to-the-cheri-alliance.md
@@ -1300,14 +1300,14 @@
     - News & Analysis
     - Latest News
     - Codasip enables secure Linux by donating CHERI RISC-V SDK to the CHERI Alliance
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - Codasip enables secure Linux by donating CHERI RISC-V SDK to the CHERI Alliance
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology-original.md
@@ -1322,14 +1322,14 @@
     - News & Analysis
     - Latest News
     - Codasip Powers UK Digital Security by Design Innovation Contracts with CHERI Technology
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - Codasip Powers UK Digital Security by Design Innovation Contracts with CHERI Technology
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
   alternate: true
@@ -1345,14 +1345,14 @@
     - News & Analysis
     - Latest News
     - Codasip Powers UK Digital Security by Design Innovation Contracts with CHERI Technology
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - Codasip Powers UK Digital Security by Design Innovation Contracts with CHERI Technology
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/combatting-the-ai-threat-with-cheri.md
@@ -1367,14 +1367,14 @@
     - News & Analysis
     - Latest News
     - Combatting the AI threat with CHERI
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - Combatting the AI threat with CHERI
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/cybersecurity-by-design-from-research-to-industry-conference-report.md
@@ -1389,14 +1389,14 @@
     - News & Analysis
     - Latest News
     - ‘Cybersecurity by Design – from Research to Industry’ — Conference Report
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - ‘Cybersecurity by Design – from Research to Industry’ — Conference Report
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/end-users-demand-memory-safety-in-their-systems.md
@@ -1411,14 +1411,14 @@
     - News & Analysis
     - Latest News
     - End-users demand memory safety in their systems
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - End-users demand memory safety in their systems
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/iceni-first-look.md
@@ -1433,14 +1433,14 @@
     - News & Analysis
     - Latest News
     - 'ICENI: First Look'
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - 'ICENI: First Look'
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/initial-members-join-cheri-alliance-to-drive-adoption-of-memory-safety-and-scalable-software-compartmentalization.md
@@ -1455,14 +1455,14 @@
     - News & Analysis
     - Latest News
     - Initial members join CHERI Alliance to drive adoption of memory safety and scalable software compartmentalization
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - Initial members join CHERI Alliance to drive adoption of memory safety and scalable software compartmentalization
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/innovate-uk-project-winner-university-of-birmingham-original.md
@@ -1477,14 +1477,14 @@
     - News & Analysis
     - Latest News
     - 'Innovate UK Project Winner: University of Birmingham'
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - 'Innovate UK Project Winner: University of Birmingham'
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
   alternate: true
@@ -1500,14 +1500,14 @@
     - News & Analysis
     - Latest News
     - 'Innovate UK Project Winner: University of Birmingham'
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - 'Innovate UK Project Winner: University of Birmingham'
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/introducing-the-cheri-adoption-global-ecosystem-assessment-q1-2026.md
@@ -1522,14 +1522,14 @@
     - News & Analysis
     - Latest News
     - Introducing the CHERI Adoption Global Ecosystem Assessment Q1 2026
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - Introducing the CHERI Adoption Global Ecosystem Assessment Q1 2026
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences-original.md
@@ -1544,14 +1544,14 @@
     - News & Analysis
     - Latest News
     - IoTSF + TechWorks – Resilient IoT and Trustworthy AI Conferences
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - IoTSF + TechWorks – Resilient IoT and Trustworthy AI Conferences
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
   alternate: true
@@ -1567,14 +1567,14 @@
     - News & Analysis
     - Latest News
     - IoTSF + TechWorks – Resilient IoT and Trustworthy AI Conferences
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - IoTSF + TechWorks – Resilient IoT and Trustworthy AI Conferences
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support-original.md
@@ -1589,14 +1589,14 @@
     - News & Analysis
     - Latest News
     - lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure Enclave with InnovateUK Support
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure Enclave with InnovateUK Support
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
   alternate: true
@@ -1612,14 +1612,14 @@
     - News & Analysis
     - Latest News
     - lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure Enclave with InnovateUK Support
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure Enclave with InnovateUK Support
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/lowrisc-and-sci-semiconductor-release-sunburst-chip-repository-for-secure-microcontroller-development.md
@@ -1634,14 +1634,14 @@
     - News & Analysis
     - Latest News
     - lowRISC and SCI Semiconductor Release Sunburst Chip Repository for Secure Microcontroller Development
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - lowRISC and SCI Semiconductor Release Sunburst Chip Repository for Secure Microcontroller Development
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd-original.md
@@ -1656,14 +1656,14 @@
     - News & Analysis
     - Latest News
     - New InnovateUK-funded project to merge CHERI support into FreeBSD
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - New InnovateUK-funded project to merge CHERI support into FreeBSD
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
   alternate: true
@@ -1679,14 +1679,14 @@
     - News & Analysis
     - Latest News
     - New InnovateUK-funded project to merge CHERI support into FreeBSD
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - New InnovateUK-funded project to merge CHERI support into FreeBSD
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/one-bug-is-all-it-takes.md
@@ -1701,14 +1701,14 @@
     - News & Analysis
     - Latest News
     - One Bug is All It Takes
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - One Bug is All It Takes
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl-original.md
@@ -1723,14 +1723,14 @@
     - News & Analysis
     - Latest News
     - Recent advances in CHERI enhancing stability, maturity, and accessibility as urged by the UK’s DSTL
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - Recent advances in CHERI enhancing stability, maturity, and accessibility as urged by the UK’s DSTL
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
   alternate: true
@@ -1746,14 +1746,14 @@
     - News & Analysis
     - Latest News
     - Recent advances in CHERI enhancing stability, maturity, and accessibility as urged by the UK’s DSTL
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - Recent advances in CHERI enhancing stability, maturity, and accessibility as urged by the UK’s DSTL
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/sci-semiconductor-and-the-cheri-alliance-at-risc-v-summit-in-china-july-2025.md
@@ -1768,14 +1768,14 @@
     - News & Analysis
     - Latest News
     - SCI Semiconductor and the CHERI Alliance at RISC-V Summit in China, July 2025
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - SCI Semiconductor and the CHERI Alliance at RISC-V Summit in China, July 2025
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/secure-and-resilient-systems-in-the-era-of-cra-and-iot.md
@@ -1790,14 +1790,14 @@
     - News & Analysis
     - Latest News
     - Secure and Resilient Systems in the Era of CRA and IoT
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - Secure and Resilient Systems in the Era of CRA and IoT
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software-original.md
@@ -1812,14 +1812,14 @@
     - News & Analysis
     - Latest News
     - Several CHERI Alliance members win the DSbD competition to deliver new CHERI chips and software
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - Several CHERI Alliance members win the DSbD competition to deliver new CHERI chips and software
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
   alternate: true
@@ -1835,14 +1835,14 @@
     - News & Analysis
     - Latest News
     - Several CHERI Alliance members win the DSbD competition to deliver new CHERI chips and software
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - Several CHERI Alliance members win the DSbD competition to deliver new CHERI chips and software
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/siemens-joins-the-cheri-alliance-a-united-front-for-cutting-edge-cybersecurity.md
@@ -1857,14 +1857,14 @@
     - News & Analysis
     - Latest News
     - 'Siemens Joins the CHERI Alliance: a United Front for Cutting-Edge Cybersecurity'
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - 'Siemens Joins the CHERI Alliance: a United Front for Cutting-Edge Cybersecurity'
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/streamlining-the-cheri-ecosystem-an-update-from-the-repository-management-working-group.md
@@ -1879,14 +1879,14 @@
     - News & Analysis
     - Latest News
     - 'Streamlining the CHERI Ecosystem: An Update from the Repository Management Working Group'
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - 'Streamlining the CHERI Ecosystem: An Update from the Repository Management Working Group'
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/the-capable-hub-joins-the-cheri-alliance-to-accelerate-cybersecurity-collaboration.md
@@ -1901,14 +1901,14 @@
     - News & Analysis
     - Latest News
     - The Capable Hub joins the CHERI Alliance to accelerate cybersecurity collaboration
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - The Capable Hub joins the CHERI Alliance to accelerate cybersecurity collaboration
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/the-eu-cyber-resilience-act-what-it-means-for-secure-by-design-systems-and-cheri.md
@@ -1923,14 +1923,14 @@
     - News & Analysis
     - Latest News
     - 'The EU Cyber Resilience Act: What It Means for Secure-by-Design Systems and CHERI'
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - 'The EU Cyber Resilience Act: What It Means for Secure-by-Design Systems and CHERI'
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/the-leading-root-of-trust-now-integrates-cheri-security-technology.md
@@ -1945,14 +1945,14 @@
     - News & Analysis
     - Latest News
     - The leading Root-of-Trust now integrates CHERI security technology
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - The leading Root-of-Trust now integrates CHERI security technology
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/the-white-house-promotes-cheri-as-a-solution-for-memory-safety.md
@@ -1967,14 +1967,14 @@
     - News & Analysis
     - Latest News
     - The White House promotes CHERI as a solution for memory safety
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - The White House promotes CHERI as a solution for memory safety
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/towards-a-reference-qemu-for-cheri-platform-emulation.md
@@ -1989,14 +1989,14 @@
     - News & Analysis
     - Latest News
     - Towards a reference QEMU for CHERI platform emulation
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - Towards a reference QEMU for CHERI platform emulation
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/uk-government-report-highlights-the-cheri-alliance.md
@@ -2011,14 +2011,14 @@
     - News & Analysis
     - Latest News
     - UK Government report highlights the CHERI Alliance
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - UK Government report highlights the CHERI Alliance
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/unlocking-the-future-a-roadmap-for-cheri-technology-advancement.md
@@ -2033,14 +2033,14 @@
     - News & Analysis
     - Latest News
     - 'Unlocking the Future: A Roadmap for CHERI Technology Advancement'
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - 'Unlocking the Future: A Roadmap for CHERI Technology Advancement'
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/why-codasip-went-all-in-on-cheri.md
@@ -2055,14 +2055,14 @@
     - News & Analysis
     - Latest News
     - Why Codasip went all‑in on CHERI
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - Why Codasip went all‑in on CHERI
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/wind-river-joins-the-cheri-alliance.md
@@ -2077,14 +2077,14 @@
     - News & Analysis
     - Latest News
     - Wind River Joins the CHERI Alliance
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - Wind River Joins the CHERI Alliance
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/working-group-spotlight-marketing.md
@@ -2099,14 +2099,14 @@
     - News & Analysis
     - Latest News
     - Working Group Spotlight – Marketing
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - Working Group Spotlight – Marketing
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay.md
@@ -2121,14 +2121,14 @@
     - News & Analysis
     - Latest News
     - You just missed the CHERITech’25 Conference – but wait, you can still attend the virtual replay!
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
     - You just missed the CHERITech’25 Conference – but wait, you can still attend the virtual replay!
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: collection
   parent: /news/
 - file: _organisations/ararat-river-consulting-llc.md
@@ -6747,6 +6747,7 @@
   navigation: []
   parent: /policies/
   navigation_status: Outside header/footer navigation; retained at its existing route.
+  alternate: true
 - file: _policies/policy-briefings.md
   url: /policies/policy-briefings/
   title: Policy Briefings
@@ -6763,6 +6764,7 @@
   navigation: []
   parent: /policies/
   navigation_status: Outside header/footer navigation; retained at its existing route.
+  alternate: true
 - file: _policies/privacy.md
   url: /policies/privacy/
   title: Privacy
@@ -7711,6 +7713,7 @@
   navigation: []
   parent: /
   navigation_status: Outside header/footer navigation; retained at its existing route.
+  alternate: true
 - file: pages/competition-law-statement.md
   url: /competition-law-statement/
   title: 'CHERI ALLIANCE CIC
@@ -7721,6 +7724,7 @@
   navigation: []
   parent: /
   navigation_status: Outside header/footer navigation; retained at its existing route.
+  alternate: true
 - file: pages/discover.md
   url: /discover/
   title: Discover CHERI
@@ -7874,9 +7878,10 @@
     - Discover CHERI
     - Resources
     - Academic Papers
-    via_url: /discover/resources/academic-papers/
+    via_url: /papers/
     match: direct
   parent: /discover/
+  alternate: true
 - file: pages/discover/resources/digital-security-by-design-archive.md
   url: /discover/resources/digital-security-by-design-archive/
   title: Digital Security by Design Archive
@@ -8165,6 +8170,7 @@
   navigation: []
   parent: /
   navigation_status: Outside header/footer navigation; retained at its existing route.
+  alternate: true
 - file: pages/linux-roadmap.md
   url: /linux-roadmap/
   title: CHERI Roadmap for Linux
@@ -8322,15 +8328,16 @@
     - News & Events
     - News & Analysis
     - Latest News
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: direct
   - location: footer
     path:
     - Updates
     - Latest News
-    via_url: /news-and-events/news-and-analysis/latest-news/
+    via_url: /news/
     match: direct
   parent: /news-and-events/
+  alternate: true
 - file: pages/news-and-events/news-and-analysis/press-resources.md
   url: /news-and-events/news-and-analysis/press-resources/
   title: Press Resources
@@ -8431,7 +8438,7 @@
     path:
     - Discover CHERI
     - Resources
-    - Papers and authors
+    - Academic Papers
     via_url: /papers/
     match: direct
   - location: footer
@@ -8923,6 +8930,7 @@
   navigation: []
   parent: /
   navigation_status: Outside header/footer navigation; retained at its existing route.
+  alternate: true
 - file: _people/oliver-gray.md
   url: /people/oliver-gray/
   title: Oliver Gray

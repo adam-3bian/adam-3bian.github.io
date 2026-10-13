@@ -31,6 +31,8 @@ jobs:
         run: JEKYLL_ENV=production bundle exec jekyll build --destination _site
       - name: Validate every rendered collection reference
         run: python3 scripts/check_collection_links.py
+      - name: Validate every page, canonical route and metadata panel
+        run: python3 scripts/check_page_content.py
       - name: Check navigation, responsive images and accessible viewer
         run: |
           npm install --prefix "$RUNNER_TEMP/image-tests" --no-save playwright@1.56.1 axe-core
@@ -42,6 +44,14 @@ jobs:
           export AXE_PATH="$RUNNER_TEMP/image-tests/node_modules/axe-core/axe.min.js"
           node scripts/test_navigation.cjs
           node scripts/test_images.cjs
+          node scripts/test_content.cjs
+      - name: Save content test results and screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: content-tests
+          path: reports/content-tests/
+          if-no-files-found: ignore
       - name: Save navigation test results and screenshots
         if: always()
         uses: actions/upload-artifact@v4

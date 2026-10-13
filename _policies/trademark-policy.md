@@ -2,19 +2,16 @@
 title: Trademark Policy
 image_url: /assets/policies/trademark-policy/placeholder.svg
 author: null
+version: '2.0'
+document_date: '2025-09'
+document_url: https://cheri-alliance.org/legal-trademark-policy/
 ---
 
 # Trademark Policy
 
 Rules for using CHERI trademarks, logos, membership marks, and certification claims.
 
-Version: 2.0
-
-Date: September 2025
-
-![pdf](/assets/policies/trademark-policy/d63b7eac09b7-pdf-file-icon.webp){: .image-icon }
-
-Download the [CHERI Alliance](/organisations/cheri-alliance/) Trademark Policy – The PDF is the official version. The text is reproduced below for convenience, but if there is any difference between the two versions, the PDF takes precedence.
+The PDF is the official version. The text is reproduced below for convenience, but if there is any difference between the two versions, the PDF takes precedence.
 
 ## Preamble
 
@@ -44,9 +41,6 @@ When used in formal documents, the ® or ™ symbol must be included for the fir
 
 ### Logos
 
-| --- | ---
-
-| |
 
 <ul class="image-gallery logo-gallery" markdown="block">
 <li markdown="block">
@@ -55,7 +49,7 @@ When used in formal documents, the ® or ™ symbol must be included for the fir
 
 ![CHERI mark](/assets/policies/trademark-policy/514789203a81-cheri-mark.webp){: .image-logo }
 
-<figcaption markdown="span">| CHERI mark Reserved for CHERI Alliance documentation and projects, or CHERI Certified products and services, especially when space constraints prevent the use of the CHERI Certified logo (e.g., on a chip package). | |</figcaption>
+<figcaption markdown="span">CHERI mark Reserved for CHERI Alliance documentation and projects, or CHERI Certified products and services, especially when space constraints prevent the use of the CHERI Certified logo (e.g., on a chip package).</figcaption>
 </figure>
 
 </li>
@@ -65,7 +59,7 @@ When used in formal documents, the ® or ™ symbol must be included for the fir
 
 ![CHERI mark](/assets/policies/trademark-policy/e4cf8af68585-cheri-logo.webp){: .image-logo }
 
-<figcaption markdown="span">| CHERI logo Permitted for use in CHERI Alliance documentation and projects, or under a Sublicense from the CHERI Alliance. Nominative Fair Use is authorized for discussions about CHERI technology without implying endorsement. | |</figcaption>
+<figcaption markdown="span">CHERI logo Permitted for use in CHERI Alliance documentation and projects, or under a Sublicense from the CHERI Alliance. Nominative Fair Use is authorized for discussions about CHERI technology without implying endorsement.</figcaption>
 </figure>
 
 </li>
@@ -75,7 +69,7 @@ When used in formal documents, the ® or ™ symbol must be included for the fir
 
 ![CHERI mark](/assets/policies/trademark-policy/edeb264ff3b7-cheri-member.webp){: .image-logo }
 
-<figcaption markdown="span">| CHERI Alliance Member logo Reserved for use in any media by current, active CHERI Alliance members. | |</figcaption>
+<figcaption markdown="span">CHERI Alliance Member logo Reserved for use in any media by current, active CHERI Alliance members.</figcaption>
 </figure>
 
 </li>
@@ -85,7 +79,7 @@ When used in formal documents, the ® or ™ symbol must be included for the fir
 
 ![CHERI mark](/assets/policies/trademark-policy/213ed31db863-cheri-founder.webp){: .image-logo }
 
-<figcaption markdown="span">| CHERI Alliance Founder logo Reserved for use in any media by founding members of the CHERI Alliance, that are current, active members. | |</figcaption>
+<figcaption markdown="span">CHERI Alliance Founder logo Reserved for use in any media by founding members of the CHERI Alliance, that are current, active members.</figcaption>
 </figure>
 
 </li>
@@ -95,7 +89,7 @@ When used in formal documents, the ® or ™ symbol must be included for the fir
 
 ![CHERI mark](/assets/policies/trademark-policy/031e517df8f0-cheri-enabled.webp){: .image-logo }
 
-<figcaption markdown="span">| CHERI certification logo Reserved for products and services that incorporate CHERI technology and have successfully obtained written approval from the CHERI Alliance certification program. |</figcaption>
+<figcaption markdown="span">CHERI certification logo Reserved for products and services that incorporate CHERI technology and have successfully obtained written approval from the CHERI Alliance certification program.</figcaption>
 </figure>
 
 </li>

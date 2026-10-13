@@ -53,7 +53,7 @@ async function assertAccessible(page) {
       const navigation = page.locator('#primary-navigation');
       const menus = page.locator('.primary-menu');
       assert.equal(await menus.count(), 5);
-      assert.equal(await page.locator('.source-nav a').count(), 96, 'Existing primary routes were lost');
+      assert.equal(await page.locator('.source-nav a').count(), 95, 'Canonical primary routes were lost');
       assert.equal(await page.locator('.collection-nav a').count(), 10);
       assert.equal(await toggle.isVisible(), !desktop);
       assert.equal(await navigation.isVisible(), desktop);

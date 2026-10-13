@@ -1,8 +1,7 @@
 ---
 title: Past Events
 permalink: /reference/source-versions/past-events/
-summary: Previous CHERI Alliance events, with programmes, speakers, recordings, slides, and venue information
-  where available.
+summary: Previous CHERI Alliance events, with programmes, speakers, recordings, slides, and venue information where available.
 image_url: null
 updated_date: null
 parent: /
@@ -11,7 +10,7 @@ related:
   pages:
   - /news-and-events/events-and-archive/upcoming-events/
   - /news-and-events/people-and-opportunities/speakers/
-  - /news-and-events/news-and-analysis/latest-news/
+  - /news/
   people: []
   organisations: []
   groups: []

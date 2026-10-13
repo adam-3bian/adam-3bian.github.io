@@ -8,30 +8,6 @@
   - url: "/discover/resources/documentation-and-guides/"
     title: Documentation & Guides
     type: Content Page (detail)
-  - url: "/discover/resources/reports-and-white-papers/"
-    title: Reports & White Papers
-    type: Content Page (detail)
-"/discover/resources/specifications/":
-- label: Related pages
-  targets:
-  - url: "/discover/resources/academic-papers/"
-    title: Academic Papers
-    type: Content Page (detail)
-  - url: "/discover/resources/digital-security-by-design-archive/"
-    title: Digital Security by Design Archive
-    type: Content Page (detail)
-  - url: "/discover/resources/glossary/"
-    title: Glossary
-    type: Content Page (detail)
-  - url: "/discover/resources/reports-and-white-papers/"
-    title: Reports & White Papers
-    type: Content Page (detail)
-"/discover/resources/documentation-and-guides/":
-- label: Related pages
-  targets:
-  - url: "/discover/resources/academic-papers/"
-    title: Academic Papers
-    type: Content Page (detail)
 "/organisations/cheri-alliance/":
 - label: Related pages
   targets:
@@ -761,8 +737,8 @@
   - url: "/news-and-events/events-and-archive/upcoming-events/"
     title: Upcoming Events
     type: Events (list)
-  - url: "/news-and-events/news-and-analysis/latest-news/"
-    title: Latest News
+  - url: "/news/"
+    title: News
     type: News (list)
   - url: "/news-and-events/events-and-archive/cheritech/"
     title: CHERITech Conference
@@ -779,7 +755,7 @@
   - url: "/"
     title: Software runs our world. It deserves stronger security foundations.
     type: Section Landing Page (index)
-"/news-and-events/news-and-analysis/latest-news/":
+"/news/":
 - label: Related pages
   targets:
   - url: "/news-and-events/events-and-archive/cheri-blossoms/"
@@ -860,8 +836,8 @@
   - url: "/news-and-events/events-and-archive/cheri-blossoms/"
     title: CHERI Blossoms Conference
     type: Content Page (detail)
-  - url: "/news-and-events/news-and-analysis/latest-news/"
-    title: Latest News
+  - url: "/news/"
+    title: News
     type: News (list)
 "/adopt/use-cases/cloud-and-data-centre/":
 - label: Related pages
@@ -956,6 +932,15 @@
   - url: "/build/technology/spatial-memory-safety/"
     title: Spatial Memory Safety
     type: Content Page (detail)
+"/reference/source-versions/contact/":
+- label: Related pages
+  targets:
+  - url: "/alliance/membership/membership-benefits-and-options/"
+    title: Membership Benefits & Options
+    type: Content Page (detail)
+  - url: "/news-and-events/people-and-opportunities/job-opportunities/"
+    title: Job Opportunities
+    type: Content Page (detail)
 "/alliance/membership/contact/":
 - label: Related pages
   targets:
@@ -982,15 +967,6 @@
   targets:
   - url: "/alliance/membership/contact/"
     title: Contact the Alliance
-    type: Content Page (detail)
-"/reference/source-versions/contact/":
-- label: Related pages
-  targets:
-  - url: "/alliance/membership/membership-benefits-and-options/"
-    title: Membership Benefits & Options
-    type: Content Page (detail)
-  - url: "/news-and-events/people-and-opportunities/job-opportunities/"
-    title: Job Opportunities
     type: Content Page (detail)
 "/reference/source-versions/cost-of-memory-unsafety/":
 - label: Related pages
@@ -1090,6 +1066,18 @@
     type: Content Page (detail)
   - url: "/discover/resources/glossary/"
     title: Glossary
+    type: Content Page (detail)
+"/discover/resources/specifications/":
+- label: Related pages
+  targets:
+  - url: "/discover/resources/digital-security-by-design-archive/"
+    title: Digital Security by Design Archive
+    type: Content Page (detail)
+  - url: "/discover/resources/glossary/"
+    title: Glossary
+    type: Content Page (detail)
+  - url: "/discover/resources/reports-and-white-papers/"
+    title: Reports & White Papers
     type: Content Page (detail)
 "/discover/resources/videos-and-presentations/":
 - label: Related pages
@@ -1294,8 +1282,8 @@
 "/reference/source-versions/newsletter/":
 - label: Related pages
   targets:
-  - url: "/news-and-events/news-and-analysis/latest-news/"
-    title: Latest News
+  - url: "/news/"
+    title: News
     type: News (list)
 "/reference/source-versions/past-events/":
 - label: Related pages
@@ -1306,8 +1294,8 @@
   - url: "/news-and-events/people-and-opportunities/speakers/"
     title: Speakers
     type: People (list)
-  - url: "/news-and-events/news-and-analysis/latest-news/"
-    title: Latest News
+  - url: "/news/"
+    title: News
     type: News (list)
 "/build/technology/permissions/":
 - label: Related pages
@@ -1372,8 +1360,8 @@
 "/news-and-events/news-and-analysis/press-resources/":
 - label: Related pages
   targets:
-  - url: "/news-and-events/news-and-analysis/latest-news/"
-    title: Latest News
+  - url: "/news/"
+    title: News
     type: News (list)
 "/adopt/assurance-and-adoption/procurement/":
 - label: Related pages
@@ -1414,8 +1402,14 @@
   - url: "/discover/resources/specifications/"
     title: Specifications
     type: Content Page (detail)
-  - url: "/discover/resources/academic-papers/"
-    title: Academic Papers
+  - url: "/papers/"
+    title: Papers
+    type: Papers (list)
+"/papers/":
+- label: Related pages
+  targets:
+  - url: "/discover/resources/reports-and-white-papers/"
+    title: Reports & White Papers
     type: Content Page (detail)
 "/adopt/business-case/return-on-security-investment/":
 - label: Related pages
@@ -1485,20 +1479,20 @@
   - url: "/news-and-events/events-and-archive/cheritech/"
     title: CHERITech Conference
     type: Content Page (detail)
-  - url: "/news-and-events/news-and-analysis/latest-news/"
-    title: Latest News
+  - url: "/news/"
+    title: News
     type: News (list)
 "/news-and-events/news-and-analysis/subscribe-newsletter/":
 - label: Related pages
   targets:
-  - url: "/news-and-events/news-and-analysis/latest-news/"
-    title: Latest News
+  - url: "/news/"
+    title: News
     type: News (list)
 "/reference/source-versions/upcoming-events/":
 - label: Related pages
   targets:
-  - url: "/news-and-events/news-and-analysis/latest-news/"
-    title: Latest News
+  - url: "/news/"
+    title: News
     type: News (list)
 "/alliance/leadership/working-groups/":
 - label: Related pages

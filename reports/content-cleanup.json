@@ -1,0 +1,31 @@
+{
+  "markdown_files_inspected": 487,
+  "collection_files_inspected": 321,
+  "page_files_inspected": 166,
+  "markdown_content_or_metadata_modified": 25,
+  "canonical_redirects": {
+    "/discover/resources/academic-papers/": "/papers/",
+    "/competition-law-statement/": "/policies/competition-law-statement/",
+    "/code-of-conduct/": "/policies/code-of-conduct/",
+    "/trademark/": "/policies/trademark/",
+    "/legal-and-policies/": "/policies/",
+    "/news-and-events/news-and-analysis/latest-news/": "/news/",
+    "/policies/ip-policy/": "/policies/intellectual-property-policy/",
+    "/policies/trademark-original/": "/policies/trademark/"
+  },
+  "bibliographic_records_and_citations_preserved": 15,
+  "competition_law_clause_identifiers_preserved": 28,
+  "ip_policy_clause_identifiers_preserved": 38,
+  "previously_placeholder_only_metadata_records": 88,
+  "policy_version_and_document_date_front_matter_records": 7,
+  "hardware_version_front_matter_records": 2,
+  "reference": "FRONT_MATTER.md",
+  "documented_schema_specific_properties": 115,
+  "exceptions": [
+    {
+      "url": "/policies/privacy-policy/",
+      "canonical": "/policies/privacy/",
+      "reason": "Different privacy wording retained as a source version and omitted from the canonical listing; substantive reconciliation requires policy-owner review."
+    }
+  ]
+}

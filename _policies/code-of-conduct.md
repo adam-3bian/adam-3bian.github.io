@@ -2,19 +2,16 @@
 title: Code of Conduct
 image_url: /assets/policies/code-of-conduct/placeholder.svg
 author: null
+version: '1.01'
+document_date: '2025-04-14'
+document_url: https://cheri-alliance.org/legal-code-of-conduct/
 ---
 
 # Code of Conduct
 
 The Code of Conduct sets the standards of respectful, inclusive, and constructive behaviour expected in every Alliance space.
 
-Version: 1.01
-
-Date: 14 April 2025
-
-![pdf](/assets/policies/code-of-conduct/d63b7eac09b7-pdf-file-icon.webp){: .image-icon }
-
-Download the [CHERI Alliance](/organisations/cheri-alliance/) Code of Conduct – The PDF is the official version. The text is reproduced below for convenience, but if there is any difference between the two versions, the PDF takes precedence..
+The PDF is the official version. The text is reproduced below for convenience, but if there is any difference between the two versions, the PDF takes precedence.
 
 This text is based on the [lowRISC](/organisations/lowrisc/) Code of Conduct, which is based on the [LLVM](/software/llvm-and-clang/) Code of Conduct, which is based on the Django Project Code of Conduct, and so on…
 
@@ -80,6 +77,5 @@ Reports can be as formal or informal as needed for the situation at hand. If pos
 - When and where the incident occurred. Please be as specific as possible.
 - Your account of what occurred. If there is a publicly available record (e.g. a mailing list archive or a public IRC logger) please include a link.
 - Any extra context you believe existed for the incident.
-
-If you believe this incident is ongoing.
+- If you believe this incident is ongoing.
 - Any other information you believe we should have.

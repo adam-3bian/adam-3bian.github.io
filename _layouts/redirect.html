@@ -1,0 +1,9 @@
+---
+layout: default
+---
+{% assign destination = site.data.viewer.aliases[page.url] %}
+{% assign destination_record = site.data.page-map | where: 'url', destination | first %}
+<article data-content-route="{{ page.url | escape }}" data-collection="{{ page.collection | default: 'pages' | escape }}">
+  <h1>{{ page.title | escape }}</h1>
+  <p>This content is now available at <a href="{{ destination | relative_url }}">{{ destination_record.title | default: destination | escape }}</a>.</p>
+</article>

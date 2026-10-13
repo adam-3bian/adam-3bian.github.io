@@ -8,7 +8,7 @@ parent: /
 next_page_url: /news-and-events/events-and-archive/cheri-blossoms/
 related:
   pages:
-  - /news-and-events/news-and-analysis/latest-news/
+  - /news/
   people: []
   organisations: []
   groups: []

@@ -17,6 +17,13 @@ schemas = site.data.fetch('schemas')
 map = site.data.fetch('page-map')
 settings = site.data.fetch('viewer')
 errors = []
+# Keep the complete examples in the authoring reference executable.
+reference = File.read(File.join(root, 'FRONT_MATTER.md'))
+reference_examples = reference.scan(/<!-- schema: (\w+) -->\s*```yaml\n(.*?)\n```/m).map do |kind, example|
+  fields = YAML.safe_load(example, permitted_classes: [Date, Time], aliases: false)
+  required = fields.reject { |key, _| schemas.fetch('common', {}).key?(key) }
+  [kind, required]
+end
 objects = site.pages.select { |p| p.path.start_with?('pages/') } + site.documents
 lookup = objects.to_h { |object| [object.url, object] }
 map_lookup = map.to_h { |entry| [entry['url'], entry] }
@@ -32,6 +39,10 @@ def same_fields?(schema, value)
   else
     true
   end
+end
+
+reference_examples.each do |kind, fields|
+  errors << "Invalid FRONT_MATTER.md #{kind} example" unless schemas[kind] && same_fields?(schemas[kind], fields)
 end
 
 def schema_kind(object, entry)
@@ -67,11 +78,45 @@ objects.each do |object|
     next
   end
   fields = YAML.safe_load(front[1], permitted_classes: [Date, Time], aliases: true)
-  errors << "Incomplete or unexpected schema fields: #{entry['file']}" unless same_fields?(schemas[kind], fields)
+  required_fields = fields.reject { |key, _| schemas.fetch('common', {}).key?(key) }
+  errors << "Incomplete or unexpected schema fields: #{entry['file']}" unless same_fields?(schemas[kind], required_fields)
   errors << "Missing title: #{entry['file']}" if object.data['title'].to_s.strip.empty?
+  %w[parent next_page_url].each do |key|
+    target = fields[key]
+    if target.to_s.start_with?('/') && !lookup.key?(target)
+      errors << "Unknown #{key} route #{target}: #{entry['file']}"
+    end
+  end
+  if kind == 'listing'
+    listing = fields['listing'] || {}
+    errors << "Invalid listing role: #{entry['file']}" unless [nil, 'speaker', 'member'].include?(listing['role'])
+    errors << "Invalid listing status: #{entry['file']}" unless [nil, 'past', 'upcoming'].include?(listing['status'])
+    if fields['layout'] == 'list' && !settings['collections'].key?(listing['collection'])
+      errors << "Invalid listing collection: #{entry['file']}"
+    end
+  end
   fields.each do |key, value|
     next if value.nil?
-    if key.end_with?('_date')
+    if key == 'version'
+      errors << "Invalid version (use a quoted string): #{entry['file']}" unless value.is_a?(String) && !value.strip.empty?
+    elsif key == 'document_date'
+      begin
+        raise ArgumentError unless value.is_a?(String) && value.match?(/\A\d{4}-\d{2}(?:-\d{2})?\z/)
+        Date.iso8601(value.length == 7 ? "#{value}-01" : value)
+      rescue ArgumentError
+        errors << "Invalid document_date (use quoted YYYY-MM or YYYY-MM-DD): #{entry['file']}"
+      end
+    elsif key == 'document_url'
+      begin
+        uri = URI.parse(value.to_s)
+        raise URI::InvalidURIError unless value.is_a?(String) && ((uri.is_a?(URI::HTTP) && uri.host) || value.start_with?('/'))
+        if value.start_with?('/') && !File.file?(File.join(root, value.sub(%r{^/}, '')))
+          errors << "Missing document asset #{value}: #{entry['file']}"
+        end
+      rescue URI::InvalidURIError
+        errors << "Invalid document_url: #{entry['file']}"
+      end
+    elsif key.end_with?('_date')
       begin
         raise ArgumentError unless value.to_s.match?(/\A\d{4}-\d{2}-\d{2}\z/)
         Date.iso8601(value.to_s)
@@ -149,7 +194,14 @@ map.each do |entry|
   errors << "Unknown parent #{entry['parent']}" if entry['parent'] && !lookup.key?(entry['parent'])
 end
 settings.fetch('aliases', {}).each do |url, target|
+  errors << "Unknown alias source #{url}" unless lookup.key?(url)
   errors << "Unknown alias target #{url} -> #{target}" unless lookup.key?(target)
+  errors << "Chained or circular alias #{url} -> #{target}" if settings.fetch('aliases', {}).key?(target)
+end
+objects.each do |object|
+  if object.data['layout'] == 'redirect' && !settings.dig('aliases', object.url)
+    errors << "Redirect without an alias destination: #{object.url}"
+  end
 end
 
 images = {}
@@ -210,7 +262,7 @@ end
 records = objects.sort_by { |object| object.data['title'].to_s.downcase }.map do |object|
   entry = map_lookup[object.url]
   next unless entry
-  field_date = object.data['published_date'] || object.data['start_datetime'] || object.data['start_date'] || object.data['published_year'] || object.data['updated_date']
+  field_date = object.data['published_date'] || object.data['start_datetime'] || object.data['start_date'] || object.data['published_year'] || object.data['updated_date'] || object.data['document_date']
   {'title' => object.data['title'], 'url' => object.url, 'file' => entry['file'],
    'type' => entry['page_type'], 'collection' => entry['collection'],
    'has_image' => !object.data['image_url'].nil?,

@@ -8,7 +8,7 @@ parent: /news-and-events/
 next_page_url: /news-and-events/events-and-archive/upcoming-events/
 related:
   pages:
-  - /news-and-events/news-and-analysis/latest-news/
+  - /news/
   people: []
   organisations: []
   groups: []

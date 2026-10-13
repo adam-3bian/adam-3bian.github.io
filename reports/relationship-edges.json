@@ -131,7 +131,7 @@
   },
   {
     "from": "/news-and-events/events-and-archive/cheri-blossoms/",
-    "to": "/news-and-events/news-and-analysis/latest-news/",
+    "to": "/news/",
     "field": "related.pages"
   },
   {
@@ -156,7 +156,7 @@
   },
   {
     "from": "/news-and-events/events-and-archive/cheritech/",
-    "to": "/news-and-events/news-and-analysis/latest-news/",
+    "to": "/news/",
     "field": "related.pages"
   },
   {
@@ -205,16 +205,6 @@
     "field": "related.pages"
   },
   {
-    "from": "/alliance/membership/contact/",
-    "to": "/alliance/membership/membership-benefits-and-options/",
-    "field": "related.pages"
-  },
-  {
-    "from": "/alliance/membership/contact/",
-    "to": "/news-and-events/people-and-opportunities/job-opportunities/",
-    "field": "related.pages"
-  },
-  {
     "from": "/reference/source-versions/contact/",
     "to": "/alliance/membership/membership-benefits-and-options/",
     "field": "related.pages"
@@ -225,12 +215,22 @@
     "field": "related.pages"
   },
   {
-    "from": "/adopt/business-case/cost-of-memory-unsafety/",
-    "to": "/adopt/business-case/the-business-case/",
+    "from": "/alliance/membership/contact/",
+    "to": "/alliance/membership/membership-benefits-and-options/",
+    "field": "related.pages"
+  },
+  {
+    "from": "/alliance/membership/contact/",
+    "to": "/news-and-events/people-and-opportunities/job-opportunities/",
     "field": "related.pages"
   },
   {
     "from": "/reference/source-versions/cost-of-memory-unsafety/",
+    "to": "/adopt/business-case/the-business-case/",
+    "field": "related.pages"
+  },
+  {
+    "from": "/adopt/business-case/cost-of-memory-unsafety/",
     "to": "/adopt/business-case/the-business-case/",
     "field": "related.pages"
   },
@@ -486,7 +486,7 @@
   },
   {
     "from": "/reference/source-versions/newsletter/",
-    "to": "/news-and-events/news-and-analysis/latest-news/",
+    "to": "/news/",
     "field": "related.pages"
   },
   {
@@ -501,7 +501,7 @@
   },
   {
     "from": "/reference/source-versions/past-events/",
-    "to": "/news-and-events/news-and-analysis/latest-news/",
+    "to": "/news/",
     "field": "related.pages"
   },
   {
@@ -521,7 +521,7 @@
   },
   {
     "from": "/news-and-events/news-and-analysis/press-resources/",
-    "to": "/news-and-events/news-and-analysis/latest-news/",
+    "to": "/news/",
     "field": "related.pages"
   },
   {
@@ -566,7 +566,7 @@
   },
   {
     "from": "/discover/resources/reports-and-white-papers/",
-    "to": "/discover/resources/academic-papers/",
+    "to": "/papers/",
     "field": "related.pages"
   },
   {
@@ -651,12 +651,12 @@
   },
   {
     "from": "/reference/source-versions/speakers/",
-    "to": "/news-and-events/news-and-analysis/latest-news/",
+    "to": "/news/",
     "field": "related.pages"
   },
   {
     "from": "/news-and-events/news-and-analysis/subscribe-newsletter/",
-    "to": "/news-and-events/news-and-analysis/latest-news/",
+    "to": "/news/",
     "field": "related.pages"
   },
   {
@@ -686,7 +686,7 @@
   },
   {
     "from": "/reference/source-versions/upcoming-events/",
-    "to": "/news-and-events/news-and-analysis/latest-news/",
+    "to": "/news/",
     "field": "related.pages"
   },
   {

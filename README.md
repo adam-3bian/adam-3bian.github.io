@@ -26,13 +26,17 @@ News is newest first, with undated records after dated ones. Events are earliest
 
 Authors, speakers, affiliations, working-group leads, and generic related fields produce clickable forward and reverse relationships. Reverse links are derived by the check script; do not edit _data/relationships.yml. After changing content or front matter, run the check script again before building to refresh the audit and reverse links.
 
-Retained aliases show their destination links. Repeated original news articles and the Benjamin Fletcher alias point to their canonical records, preserving existing URLs. Contact and subscription pages are content examples; no form submits data.
+Consolidated duplicate directories and policy copies redirect to their canonical destinations, with ordinary destination links as a fallback. Other retained source versions show their destination links. Repeated original news articles and the Benjamin Fletcher alias point to their canonical records, preserving existing URLs. Contact and subscription pages are content examples; no form submits data.
+
+## Authoring reference
+
+See [FRONT_MATTER.md](FRONT_MATTER.md) for every supported collection and page property, types, relationships, date precision, complete examples, inherited defaults and canonical aliases. Record-level versions and document dates belong in front matter; shared optional fields are validated and displayed in metadata.
 
 ## Collection content and assets
 
 Store each record's primary image under `assets/<collection>/<record-name>/`, with neither an underscore prefix nor a `.md` suffix. Body images may reuse another collection record's canonical assets. Keep assets referenced by `pages/` when copying an image into a collection directory.
 
-All displayed collection images use contained 3:1 frames. Speaker portraits use 1:1 frames in detail headers, cards, and portrait galleries. Add `.image-portrait` to a speaker image used elsewhere. Containment preserves the entire photograph, logo, or diagram; the image viewer displays the original asset at its natural proportions. Missing source images use a clearly labelled local `placeholder.svg` with the appropriate ratio.
+All displayed collection images use contained 3:1 frames. Speaker portraits use 1:1 frames in detail headers, cards, and portrait galleries. Add `.image-portrait` to a speaker image used elsewhere. Containment preserves the entire photograph, logo, or diagram; the image viewer displays the original asset at its natural proportions. Missing source images use a clearly labelled local `placeholder.svg` with the appropriate ratio. These fallbacks do not create placeholder resource links or empty metadata panels.
 
 Working groups use `leads: []` so co-leads have separate person references. Policies include `image_url`. Other schema fields retain their existing shapes. Use arrays for authors, speakers, repositories, and related slugs; every referenced collection record must exist. Do not infer membership or speaker status from a mention in another article.
 
@@ -42,6 +46,7 @@ After a production build, check all rendered collection links, images, inverse r
 bundle exec ruby scripts/check_content.rb
 JEKYLL_ENV=production bundle exec jekyll build --destination _site
 python3 scripts/check_collection_links.py
+python3 scripts/check_page_content.py
 ```
 
 The link checker uses Python's standard library. To check a repository subpath, build with `--baseurl /preview` and run `python3 scripts/check_collection_links.py _site --baseurl /preview`. The audit details and explicitly missing illustrations are recorded in `reports/collection-audit.json`. External resource links recovered from source profiles retain their original targets.

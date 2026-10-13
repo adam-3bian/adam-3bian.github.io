@@ -1,3 +1,8 @@
+# Optional properties shared by all document and page schemas.
+common:
+  version: null
+  document_date: null
+  document_url: null
 people:
   title: null
   image_url: null

@@ -2,29 +2,37 @@
 title: Intellectual Property Policy
 image_url: /assets/policies/intellectual-property-policy/placeholder.svg
 author: null
+version: '1.01'
+document_date: '2024-08'
+document_url: https://cheri-alliance.org/legal-ip-policy/
 ---
 
 # Intellectual Property Policy
 
 The Intellectual Property Policy defines how contributions, essential rights, declarations, licensing commitments, and Alliance work products are handled.
 
-Version: 1.01
-
-Date: August 2024
-
-![pdf](/assets/policies/intellectual-property-policy/d63b7eac09b7-pdf-file-icon.webp){: .image-icon }
-
-Download the [CHERI Alliance](/organisations/cheri-alliance/) IP Policy – The PDF is the official version. The text is reproduced below for convenience, but if there is any difference between the two versions, the PDF takes precedence..
+The PDF is the official version. The text is reproduced below for convenience, but if there is any difference between the two versions, the PDF takes precedence.
 
 ## 1 Introduction
 
-1.1 This document (“the IP Policy“) contains the regulations of the Alliance in relation to Intellectual Property Rights (as defined below).
+<ol class="legal-clauses" role="list" markdown="block">
+<li markdown="block">
 
-1.2 Unless expressly specified by the Alliance in writing, the IP Policy is applicable to any activities undertaken by the Alliance or its committees and working groups.
+<span class="clause-number">1.1</span> This document (“the IP Policy“) contains the regulations of the Alliance in relation to Intellectual Property Rights (as defined below).
 
+</li>
+<li markdown="block">
+
+<span class="clause-number">1.2</span> Unless expressly specified by the Alliance in writing, the IP Policy is applicable to any activities undertaken by the Alliance or its committees and working groups.
+
+</li>
+</ol>
 ## 2 Definitions and Interpretation
 
-2.1 Definitions
+<ol class="legal-clauses" role="list" markdown="block">
+<li markdown="block">
+
+<span class="clause-number">2.1</span> Definitions
 
 “Alliance” means the CHERI Alliance CIC.
 
@@ -44,8 +52,25 @@ Download the [CHERI Alliance](/organisations/cheri-alliance/) IP Policy – The 
 
 “Implement” means in the context of Work Product:
 
-- a) to make, market, sell, licence, lease, otherwise dispose or make use of equipment: or b) repair, use or operate equipment; or c) use methods;
-- as specified in the respective Standard
+<ol type="a" markdown="block">
+<li value="1" markdown="block">
+
+to make, market, sell, licence, lease, otherwise dispose or make use of equipment: or
+
+</li>
+<li value="2" markdown="block">
+
+repair, use or operate equipment; or
+
+</li>
+<li value="3" markdown="block">
+
+use methods;
+
+</li>
+</ol>
+
+as specified in the respective Standard
 
 “Intellectual Property Rights” or “IPR” means any copyright, Patent, registered design, and any application thereof. Notwithstanding the foregoing, IPR does not include trademarks, trade secrets, moral rights, right of know-how and confidential information.
 
@@ -57,28 +82,69 @@ Download the [CHERI Alliance](/organisations/cheri-alliance/) IP Policy – The 
 
 “Participation Rights” means the right of a Member to:
 
-- a) participate in; and b) receive an Undertaking pursuant to Clause 6 for any Essential IPR in relation to a particular Project (and Standard) to which the Essential IPR relates.
-- “Project” means any activity undertaken by the Alliance or its committees and working groups in accordance with the Articles of Association.
-- “Right of Refusal to License” means, subject to Clause 4.4, a Member’s right of refusal to grant an “Undertaking”
-- “Standard” means Work Product officially adopted as a standard or technical specification by an Alliance committee or working group, associated with a particular Project.
-- “Undertaking” means an undertaking in accordance with Clause 6.1.
-- “Working Group” means any committee established by the Board of Directors, or a subcommittee or working group of such committee.
+<ol type="a" markdown="block">
+<li value="1" markdown="block">
+
+participate in; and
+
+</li>
+<li value="2" markdown="block">
+
+receive an Undertaking pursuant to Clause 6 for any Essential IPR in relation to a particular Project (and Standard) to which the Essential IPR relates.
+
+</li>
+</ol>
+
+“Project” means any activity undertaken by the Alliance or its committees and working groups in accordance with the Articles of Association.
+
+
+“Right of Refusal to License” means, subject to Clause 4.4, a Member’s right of refusal to grant an “Undertaking”
+
+
+“Standard” means Work Product officially adopted as a standard or technical specification by an Alliance committee or working group, associated with a particular Project.
+
+
+“Undertaking” means an undertaking in accordance with Clause 6.1.
+
+
+“Working Group” means any committee established by the Board of Directors, or a subcommittee or working group of such committee.
+
 
 “Work Product” means any deliverable of a Working Group that is formally adopted or published by the Alliance or such Working Group, including without limitation code, Standards, and related documentation.
 
-2.2 The headings, marginal notes and references to them, in this document shall be deemed not to be part of this document and shall not be taken into consideration in the interpretation of this document.
+</li>
+<li markdown="block">
 
-2.3 References to any gender shall include the other and words in the singular include the plural and vice versa.
+<span class="clause-number">2.2</span> The headings, marginal notes and references to them, in this document shall be deemed not to be part of this document and shall not be taken into consideration in the interpretation of this document.
 
+</li>
+<li markdown="block">
+
+<span class="clause-number">2.3</span> References to any gender shall include the other and words in the singular include the plural and vice versa.
+
+</li>
+</ol>
 ## 3 Contributions
 
-3.1 The ownership of the copyright in Work Product created by the Alliance or any of its Working Groups shall vest in the Alliance but due acknowledgement shall be given to copyrights owned by third parties that are identifiable in the Alliance copyrighted works.
+<ol class="legal-clauses" role="list" markdown="block">
+<li markdown="block">
 
-3.2 No Member is required to make any Contributions to the Alliance, and the Alliance including any Working Group is not required to incorporate any Working Group is not required to incorporate any Contributions or any part thereof into any Work Product or Standard.
+<span class="clause-number">3.1</span> The ownership of the copyright in Work Product created by the Alliance or any of its Working Groups shall vest in the Alliance but due acknowledgement shall be given to copyrights owned by third parties that are identifiable in the Alliance copyrighted works.
 
-3.3 Each Member represents and warrants that, to the best of its knowledge, the Member has the necessary rights to provide its Contributions to the Alliance if, as and when provided. All Contributions made by a Member shall be subject to the licenses and the other provisions of this IPR Policy. Other than as expressly provided in this Clause 3.3: (1) Contributions are provided “AS IS” with no warranties, express or implied, including but not limited to, the warranties of merchantability, fitness for a particular purpose and non-infringement of intellectual property rights and (2) neither the Member making the Contribution nor the Alliance shall be held liable in any event for any damages whatsoever (including, without limitation, damages for loss of profits, business interruption, loss of information, or any other pecuniary loss) arising out of or related to the use of or inability to use the Contribution.
+</li>
+<li markdown="block">
 
-3.4 Without prejudice to Clause 3.1, any Member contributing IPRs for inclusion in Work Product or Standard hereby grants, without monetary compensation or any restriction other than as set out in this Clause 3.4, an irrevocable, non-exclusive, worldwide, royalty-free, sub-licensable copyright licence to prepare derivative works of (including translations, adaptations, alterations) the contributed IPRs and reproduce, display, distribute and execute the contributed IPRs and derivative works for the following limited purposes:
+<span class="clause-number">3.2</span> No Member is required to make any Contributions to the Alliance, and the Alliance including any Working Group is not required to incorporate any Working Group is not required to incorporate any Contributions or any part thereof into any Work Product or Standard.
+
+</li>
+<li markdown="block">
+
+<span class="clause-number">3.3</span> Each Member represents and warrants that, to the best of its knowledge, the Member has the necessary rights to provide its Contributions to the Alliance if, as and when provided. All Contributions made by a Member shall be subject to the licenses and the other provisions of this IPR Policy. Other than as expressly provided in this Clause 3.3: (1) Contributions are provided “AS IS” with no warranties, express or implied, including but not limited to, the warranties of merchantability, fitness for a particular purpose and non-infringement of intellectual property rights and (2) neither the Member making the Contribution nor the Alliance shall be held liable in any event for any damages whatsoever (including, without limitation, damages for loss of profits, business interruption, loss of information, or any other pecuniary loss) arising out of or related to the use of or inability to use the Contribution.
+
+</li>
+<li markdown="block">
+
+<span class="clause-number">3.4</span> Without prejudice to Clause 3.1, any Member contributing IPRs for inclusion in Work Product or Standard hereby grants, without monetary compensation or any restriction other than as set out in this Clause 3.4, an irrevocable, non-exclusive, worldwide, royalty-free, sub-licensable copyright licence to prepare derivative works of (including translations, adaptations, alterations) the contributed IPRs and reproduce, display, distribute and execute the contributed IPRs and derivative works for the following limited purposes:
 
 <ol type="a" markdown="block">
 <li value="1" markdown="block">
@@ -98,19 +164,39 @@ to any implementer of that Standard to evaluate the Contribution and any derivat
 </li>
 </ol>
 
-3.5 The licence granted in Clause 3.4 shall also extend to any implementer of that Standard for the purpose of using the Contribution in any compliant implementation unless the contributing Member gives an irrevocable undertaking in writing at the time of contribution that it is prepared to grant an irrevocable licence on fair, reasonable and non-discriminatory terms and conditions for the purpose of using the Contribution in any compliant implementation.
+</li>
+<li markdown="block">
 
-3.6 With respect to the licenses set out in Clauses 3.4 and 3.5, no patent licence is granted by implication, estoppel or otherwise.
+<span class="clause-number">3.5</span> The licence granted in Clause 3.4 shall also extend to any implementer of that Standard for the purpose of using the Contribution in any compliant implementation unless the contributing Member gives an irrevocable undertaking in writing at the time of contribution that it is prepared to grant an irrevocable licence on fair, reasonable and non-discriminatory terms and conditions for the purpose of using the Contribution in any compliant implementation.
 
-3.7 The Alliance shall, on request by a non-member, grant licences to that non-member on fair and reasonable terms and conditions in respect of any IPRs, other than those referred to in Clause 3.1 above, owned by the Alliance. Members shall be allowed to use IPRs owned by the Alliance free of charge.
+</li>
+<li markdown="block">
 
-3.8 Each Member agrees that any Contributions shall be deemed to be made on a nonconfidential basis and that the Alliance shall be free to disclose these submissions for the purposes of developing and adopting any Standards and in connection with Project activities.
+<span class="clause-number">3.6</span> With respect to the licenses set out in Clauses 3.4 and 3.5, no patent licence is granted by implication, estoppel or otherwise.
 
+</li>
+<li markdown="block">
+
+<span class="clause-number">3.7</span> The Alliance shall, on request by a non-member, grant licences to that non-member on fair and reasonable terms and conditions in respect of any IPRs, other than those referred to in Clause 3.1 above, owned by the Alliance. Members shall be allowed to use IPRs owned by the Alliance free of charge.
+
+</li>
+<li markdown="block">
+
+<span class="clause-number">3.8</span> Each Member agrees that any Contributions shall be deemed to be made on a nonconfidential basis and that the Alliance shall be free to disclose these submissions for the purposes of developing and adopting any Standards and in connection with Project activities.
+
+</li>
+</ol>
 ## 4 Declarations of Essential IPR
 
-4.1 Each Member shall use its reasonable endeavours, in particular during the development of a Standard where it participates, to inform the Alliance of any Essential IPRs in a timely fashion.
+<ol class="legal-clauses" role="list" markdown="block">
+<li markdown="block">
 
-4.2 Subject to Clauses 4.5 and 4.1, prior to any official approval by the Alliance of any Deliverables associated with a particular Project, each Member shall provide the leader of the relevant Working Group or committee with a written declaration of the Essential IPR relevant to the aforementioned Project:
+<span class="clause-number">4.1</span> Each Member shall use its reasonable endeavours, in particular during the development of a Standard where it participates, to inform the Alliance of any Essential IPRs in a timely fashion.
+
+</li>
+<li markdown="block">
+
+<span class="clause-number">4.2</span> Subject to Clauses 4.5 and 4.1, prior to any official approval by the Alliance of any Deliverables associated with a particular Project, each Member shall provide the leader of the relevant Working Group or committee with a written declaration of the Essential IPR relevant to the aforementioned Project:
 
 <ol type="a" markdown="block">
 <li value="1" markdown="block">
@@ -125,7 +211,10 @@ in the form prescribed by the Alliance and with language consistent with the pol
 </li>
 </ol>
 
-4.3 The Declaration shall:
+</li>
+<li markdown="block">
+
+<span class="clause-number">4.3</span> The Declaration shall:
 
 <ol type="a" markdown="block">
 <li value="1" markdown="block">
@@ -150,7 +239,10 @@ identify whether the Declaration is made subject to the condition that those who
 </li>
 </ol>
 
-4.4 Any Declaration shall identify and describe in sufficient detail:
+</li>
+<li markdown="block">
+
+<span class="clause-number">4.4</span> Any Declaration shall identify and describe in sufficient detail:
 
 <ol type="a" markdown="block">
 <li value="1" markdown="block">
@@ -165,24 +257,50 @@ the reasons (for each of the above Essential Patents identified in Clause 4.4a),
 </li>
 </ol>
 
-4.5 The provisions pursuant to Clauses 4.2 and 4.3 above do not imply any obligation on the part of a Member to:
+</li>
+<li markdown="block">
+
+<span class="clause-number">4.5</span> The provisions pursuant to Clauses 4.2 and 4.3 above do not imply any obligation on the part of a Member to:
 
 - a) subject to Clause 4.7, declare any Essential IPR; or b) conduct any searches of Essential IPR (including, without limitation, Patents) that the Member or any of its Affiliates hold.
-- 4.6 The Member agrees that any Declarations may be made available as the Alliance thinks fit.
 
-4.7 Where a Member has elected not to Declare or has failed to Declare any Essential IPR for a given Project in accordance with Clauses 4.2, 4.3 and 4.4, the Member shall be deemed to have given the Undertaking in accordance with the terms of Clause 6.1.
+</li>
+<li markdown="block">
 
-4.8 The Alliance may establish additional guidelines for Working Group Leads with respect to Essential IPRs.
+<span class="clause-number">4.6</span> The Member agrees that any Declarations may be made available as the Alliance thinks fit.
 
-4.9 Any incorporation of declared Essential IPR shall be subject to approval by the Alliance.
+</li>
+<li markdown="block">
 
+<span class="clause-number">4.7</span> Where a Member has elected not to Declare or has failed to Declare any Essential IPR for a given Project in accordance with Clauses 4.2, 4.3 and 4.4, the Member shall be deemed to have given the Undertaking in accordance with the terms of Clause 6.1.
+
+</li>
+<li markdown="block">
+
+<span class="clause-number">4.8</span> The Alliance may establish additional guidelines for Working Group Leads with respect to Essential IPRs.
+
+</li>
+<li markdown="block">
+
+<span class="clause-number">4.9</span> Any incorporation of declared Essential IPR shall be subject to approval by the Alliance.
+
+</li>
+</ol>
 ## 5 Non-Assertion of Essential IPR
 
-5.1 Each Member agrees never to assert its Essential IPR against the Alliance in respect of the Alliance’s publications and promotions of any Work Product or Standards.
+<ol class="legal-clauses" role="list" markdown="block">
+<li markdown="block">
 
+<span class="clause-number">5.1</span> Each Member agrees never to assert its Essential IPR against the Alliance in respect of the Alliance’s publications and promotions of any Work Product or Standards.
+
+</li>
+</ol>
 ## 6 Licensing of Essential IPR
 
-6.1 Save in the case of any Essential Patents identified in accordance with Clause 4.4 and subject to Clause 8.1, a Member will have given an undertaking that it is prepared to grant licences:
+<ol class="legal-clauses" role="list" markdown="block">
+<li markdown="block">
+
+<span class="clause-number">6.1</span> Save in the case of any Essential Patents identified in accordance with Clause 4.4 and subject to Clause 8.1, a Member will have given an undertaking that it is prepared to grant licences:
 
 <ol type="a" markdown="block">
 <li value="1" markdown="block">
@@ -202,9 +320,15 @@ to the extent necessary to permit any Beneficiaries of the Undertaking to Implem
 </li>
 </ol>
 
-6.2 The Undertaking may be made subject to the condition that those who seek licences agree to reciprocate.
+</li>
+<li markdown="block">
 
-6.3 Both the Member, who is deemed to have given the Undertaking pursuant to Clause 6.1, and any Beneficiary of the Undertaking wishing to acquire a licence in accordance with Clause 6.1, acknowledge and agree that:
+<span class="clause-number">6.2</span> The Undertaking may be made subject to the condition that those who seek licences agree to reciprocate.
+
+</li>
+<li markdown="block">
+
+<span class="clause-number">6.3</span> Both the Member, who is deemed to have given the Undertaking pursuant to Clause 6.1, and any Beneficiary of the Undertaking wishing to acquire a licence in accordance with Clause 6.1, acknowledge and agree that:
 
 <ol type="a" markdown="block">
 <li value="1" markdown="block">
@@ -219,13 +343,24 @@ if they both have not been able to agree on an Essential IPR license pursuant to
 </li>
 </ol>
 
-6.4 Each Member will ensure that its Affiliates, and its Affiliates’ successors in title will give an Undertaking pursuant to Clauses 6.1,6.2 and 6.3 above. If a Member or its Affiliate transfers ownership of Essential IPR that is subject to an Undertaking pursuant to Clauses 6.1, 6.2 and 6.3 above, such Undertaking shall include appropriate provisions in the relevant transfer documents to ensure that the Undertaking is binding on the transferee and that the transferee will similarly include appropriate provisions in the event of future transfers with the goal of binding all successors-in-interest. The Undertaking shall be interpreted as binding on successors-in-interest regardless of whether such provisions are included in the relevant transfer documents.
+</li>
+<li markdown="block">
 
-6.5 It is acknowledged that the Member, owning any Essential IPR, shall be free to exploit such IPR outside the scope of the Alliance at its absolute discretion and any revenues or other benefits, which the Member may receive from such exploitation of such Essential IPR, shall be for the Member’s own account.
+<span class="clause-number">6.4</span> Each Member will ensure that its Affiliates, and its Affiliates’ successors in title will give an Undertaking pursuant to Clauses 6.1,6.2 and 6.3 above. If a Member or its Affiliate transfers ownership of Essential IPR that is subject to an Undertaking pursuant to Clauses 6.1, 6.2 and 6.3 above, such Undertaking shall include appropriate provisions in the relevant transfer documents to ensure that the Undertaking is binding on the transferee and that the transferee will similarly include appropriate provisions in the event of future transfers with the goal of binding all successors-in-interest. The Undertaking shall be interpreted as binding on successors-in-interest regardless of whether such provisions are included in the relevant transfer documents.
 
+</li>
+<li markdown="block">
+
+<span class="clause-number">6.5</span> It is acknowledged that the Member, owning any Essential IPR, shall be free to exploit such IPR outside the scope of the Alliance at its absolute discretion and any revenues or other benefits, which the Member may receive from such exploitation of such Essential IPR, shall be for the Member’s own account.
+
+</li>
+</ol>
 ## 7 Non-Availability/Refusal to License
 
-7.1 A Member shall only be able to exercise its Right of Refusal to License with regards to Essential Patents, but no other Essential IPR, which is:
+<ol class="legal-clauses" role="list" markdown="block">
+<li markdown="block">
+
+<span class="clause-number">7.1</span> A Member shall only be able to exercise its Right of Refusal to License with regards to Essential Patents, but no other Essential IPR, which is:
 
 <ol type="a" markdown="block">
 <li value="1" markdown="block">
@@ -250,7 +385,10 @@ Declared (in accordance with Clauses 4.2 and 4.3).
 </li>
 </ol>
 
-7.2 Where a Member, in accordance with Clause 4.4, has identified an Essential Patent, which the Member, or its Affiliates, is unwilling or unable to license in accordance with Clause 6, the Member will lose its Participation Rights in relation to the respective Project and Standard to which an Essential Patent relates, if any other Members of the particular Project, informs the Lead within a reasonable period, in writing, that it:
+</li>
+<li markdown="block">
+
+<span class="clause-number">7.2</span> Where a Member, in accordance with Clause 4.4, has identified an Essential Patent, which the Member, or its Affiliates, is unwilling or unable to license in accordance with Clause 6, the Member will lose its Participation Rights in relation to the respective Project and Standard to which an Essential Patent relates, if any other Members of the particular Project, informs the Lead within a reasonable period, in writing, that it:
 
 <ol type="a" markdown="block">
 <li value="1" markdown="block">
@@ -265,7 +403,10 @@ based on its duly justified non-acceptance of these reasons pursuant to Clause 7
 </li>
 </ol>
 
-7.3 In the event that, prior to the publication of Work Product, an IPR owner informs the Alliance that it is not prepared to license Essential IPR in respect of a Standard in accordance with this Clause 4, the Alliance shall review the requirement for that Standard and satisfy itself that a viable alternative is available for the Standard which:
+</li>
+<li markdown="block">
+
+<span class="clause-number">7.3</span> In the event that, prior to the publication of Work Product, an IPR owner informs the Alliance that it is not prepared to license Essential IPR in respect of a Standard in accordance with this Clause 4, the Alliance shall review the requirement for that Standard and satisfy itself that a viable alternative is available for the Standard which:
 
 <ol type="a" markdown="block">
 <li value="1" markdown="block">
@@ -280,9 +421,14 @@ satisfies the Alliance’s Requirements.
 </li>
 </ol>
 
+</li>
+</ol>
 ## 8 Disputes regarding Ownership of Essential IPR
 
-8.1 If more than one Member claims ownership of any Essential IPR, the Members claiming ownership shall:
+<ol class="legal-clauses" role="list" markdown="block">
+<li markdown="block">
+
+<span class="clause-number">8.1</span> If more than one Member claims ownership of any Essential IPR, the Members claiming ownership shall:
 
 <ol type="a" markdown="block">
 <li value="1" markdown="block">
@@ -297,13 +443,24 @@ if they cannot agree on who owns the Essential IPR pursuant to Clause 8.1a), hav
 </li>
 </ol>
 
+</li>
+</ol>
 ## 9 General
 
-9.1 The Alliance will seek to publish all Work Product to the public under permissive opensource licenses.
+<ol class="legal-clauses" role="list" markdown="block">
+<li markdown="block">
 
-9.2 Neither the Members, nor the Alliance, make any representations or give any warranties as to the non-infringement of third-party intellectual property rights, with regards, or in relation, to any provision of these IP Policy.
+<span class="clause-number">9.1</span> The Alliance will seek to publish all Work Product to the public under permissive opensource licenses.
 
-9.3 All Members acknowledge and agree that any obligation placed on (but no rights bestowed upon) a Member by virtue of:
+</li>
+<li markdown="block">
+
+<span class="clause-number">9.2</span> Neither the Members, nor the Alliance, make any representations or give any warranties as to the non-infringement of third-party intellectual property rights, with regards, or in relation, to any provision of these IP Policy.
+
+</li>
+<li markdown="block">
+
+<span class="clause-number">9.3</span> All Members acknowledge and agree that any obligation placed on (but no rights bestowed upon) a Member by virtue of:
 
 <ol type="a" markdown="block">
 <li value="1" markdown="block">
@@ -334,7 +491,10 @@ i. based on any information or input generated by the Alliance prior to or durin
 
 shall survive participation of a Member in a Project, even if such Member has withdrawn from or ceased to be a Member or Alliance Member of the Alliance.
 
-9.4 In the event that any Collaborator is in breach of any of its obligations under these IP Policy, the Alliance reserves the right to take any actions available to it under its policies, procedures and regulations or at law as it deems necessary in order to protect the interests of the Alliance, other Members, including;
+</li>
+<li markdown="block">
+
+<span class="clause-number">9.4</span> In the event that any Collaborator is in breach of any of its obligations under these IP Policy, the Alliance reserves the right to take any actions available to it under its policies, procedures and regulations or at law as it deems necessary in order to protect the interests of the Alliance, other Members, including;
 
 <ol type="a" markdown="block">
 <li value="1" markdown="block">
@@ -354,7 +514,10 @@ termination of the Collaborator’s membership of the Alliance.
 </li>
 </ol>
 
-9.5 Any dispute arising in relation to these IP Policy shall be resolved:
+</li>
+<li markdown="block">
+
+<span class="clause-number">9.5</span> Any dispute arising in relation to these IP Policy shall be resolved:
 
 <ol type="a" markdown="block">
 <li value="1" markdown="block">
@@ -384,4 +547,10 @@ failing that, by seeking redress in a court of competent jurisdiction.
 </li>
 </ol>
 
-10.5 The IPR Policy shall be interpreted in accordance with the law of England and Wales .
+</li>
+<li markdown="block">
+
+<span class="clause-number">10.5</span> The IPR Policy shall be interpreted in accordance with the law of England and Wales .
+
+</li>
+</ol>

@@ -15,6 +15,7 @@ related:
   software:
   - llvm-and-clang
   - rust
+version: '1.0'
 ---
 
 # CHERIoT Ibex Certification Record
@@ -37,7 +38,6 @@ Product type: processor intellectual property — CPU
 
 Reference: cheriot-ibex
 
-Version: 1.0
 
 Derivative of a qualified product: no
 

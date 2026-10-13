@@ -14,6 +14,7 @@ kramdown:
 exclude:
 - README.md
 - NAVIGATION.md
+- FRONT_MATTER.md
 - Gemfile
 - Gemfile.lock
 - scripts
@@ -279,6 +280,50 @@ defaults:
     path: _people/benjamin-fletcher.md
   values:
     alternate: true
+- scope:
+    path: pages/discover/resources/academic-papers.md
+  values:
+    alternate: true
+    layout: redirect
+- scope:
+    path: pages/competition-law-statement.md
+  values:
+    alternate: true
+    layout: redirect
+- scope:
+    path: pages/code-of-conduct.md
+  values:
+    alternate: true
+    layout: redirect
+- scope:
+    path: pages/trademark.md
+  values:
+    alternate: true
+    layout: redirect
+- scope:
+    path: pages/legal-and-policies.md
+  values:
+    alternate: true
+    layout: redirect
+- scope:
+    path: pages/news-and-events/news-and-analysis/latest-news.md
+  values:
+    alternate: true
+    layout: redirect
+- scope:
+    path: _policies/ip-policy.md
+  values:
+    alternate: true
+    layout: redirect
+- scope:
+    path: _policies/trademark-original.md
+  values:
+    alternate: true
+    layout: redirect
+- scope:
+    path: _policies/privacy-policy.md
+  values:
+    alternate: true
 title: CHERI Content Viewer
 description: A minimal Jekyll site for reviewing migrated CHERI Alliance records.
 lang: en-GB
@@ -321,11 +366,9 @@ navigation:
       - title: Documentation & Guides
         url: /discover/resources/documentation-and-guides/
       - title: Academic Papers
-        url: /discover/resources/academic-papers/
+        url: /papers/
       - title: Glossary
         url: /discover/resources/glossary/
-      - title: Papers and authors
-        url: /papers/
     url: /discover/
   - title: Adopt
     type: megamenu
@@ -503,7 +546,7 @@ navigation:
     - title: News & Analysis
       links:
       - title: Latest News
-        url: /news-and-events/news-and-analysis/latest-news/
+        url: /news/
       - title: Subscribe to our Newsletter
         url: /news-and-events/news-and-analysis/subscribe-newsletter/
       - title: Press Resources
@@ -531,7 +574,7 @@ navigation:
   - title: Updates
     links:
     - title: Latest News
-      url: /news-and-events/news-and-analysis/latest-news/
+      url: /news/
     - title: Upcoming Events
       url: /news-and-events/events-and-archive/upcoming-events/
     - title: Subscribe to our Newsletter

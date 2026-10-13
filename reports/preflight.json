@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-13T14:21:05Z",
+  "generated_at": "2026-10-13T16:58:34Z",
   "record_count": 487,
   "relationship_count": 1096,
-  "image_count": 516,
+  "image_count": 512,
   "errors": [
 
   ],
@@ -76,8 +76,8 @@
       "has_image": false,
       "missing_news_date": false,
       "display_date": null,
-      "alternate": false,
-      "alias_target": null
+      "alternate": true,
+      "alias_target": "/papers/"
     },
     {
       "title": "Accelerating CHERI together",
@@ -939,9 +939,9 @@
       "collection": "pages",
       "has_image": false,
       "missing_news_date": false,
-      "display_date": null,
-      "alternate": false,
-      "alias_target": null
+      "display_date": "2025-04-14",
+      "alternate": true,
+      "alias_target": "/policies/code-of-conduct/"
     },
     {
       "title": "CHERI ALLIANCE CIC\nStatement of competition compliance",
@@ -951,9 +951,9 @@
       "collection": "pages",
       "has_image": false,
       "missing_news_date": false,
-      "display_date": null,
-      "alternate": false,
-      "alias_target": null
+      "display_date": "2024-08",
+      "alternate": true,
+      "alias_target": "/policies/competition-law-statement/"
     },
     {
       "title": "CHERI ALLIANCE CIC IP Policy",
@@ -963,9 +963,9 @@
       "collection": "policies",
       "has_image": true,
       "missing_news_date": false,
-      "display_date": null,
-      "alternate": false,
-      "alias_target": null
+      "display_date": "2024-08",
+      "alternate": true,
+      "alias_target": "/policies/intellectual-property-policy/"
     },
     {
       "title": "CHERI Alliance Officially Launches, Adds Major Partners including Google, to Tackle Cybersecurity Threats at the Hardware Level",
@@ -1551,7 +1551,7 @@
       "collection": "policies",
       "has_image": true,
       "missing_news_date": false,
-      "display_date": null,
+      "display_date": "2025-04-14",
       "alternate": false,
       "alias_target": null
     },
@@ -1611,7 +1611,7 @@
       "collection": "policies",
       "has_image": true,
       "missing_news_date": false,
-      "display_date": null,
+      "display_date": "2024-08",
       "alternate": false,
       "alias_target": null
     },
@@ -2703,7 +2703,7 @@
       "collection": "policies",
       "has_image": true,
       "missing_news_date": false,
-      "display_date": null,
+      "display_date": "2024-08",
       "alternate": false,
       "alias_target": null
     },
@@ -3124,8 +3124,8 @@
       "has_image": false,
       "missing_news_date": false,
       "display_date": null,
-      "alternate": false,
-      "alias_target": null
+      "alternate": true,
+      "alias_target": "/news/"
     },
     {
       "title": "Laurence Tratt",
@@ -3148,8 +3148,8 @@
       "has_image": false,
       "missing_news_date": false,
       "display_date": null,
-      "alternate": false,
-      "alias_target": null
+      "alternate": true,
+      "alias_target": "/policies/"
     },
     {
       "title": "Light Momentum Technology Corp.",
@@ -4132,8 +4132,8 @@
       "has_image": true,
       "missing_news_date": false,
       "display_date": null,
-      "alternate": false,
-      "alias_target": null
+      "alternate": true,
+      "alias_target": "/policies/privacy/"
     },
     {
       "title": "Procurement",
@@ -5187,7 +5187,7 @@
       "collection": "policies",
       "has_image": true,
       "missing_news_date": false,
-      "display_date": null,
+      "display_date": "2025-09",
       "alternate": false,
       "alias_target": null
     },
@@ -5404,8 +5404,8 @@
       "has_image": false,
       "missing_news_date": false,
       "display_date": null,
-      "alternate": false,
-      "alias_target": null
+      "alternate": true,
+      "alias_target": "/policies/trademark/"
     },
     {
       "title": "Using the CHERI Alliance Trademark",
@@ -5417,7 +5417,7 @@
       "missing_news_date": false,
       "display_date": null,
       "alternate": true,
-      "alias_target": null
+      "alias_target": "/policies/trademark/"
     },
     {
       "title": "Vadim Zaliva",

@@ -181,6 +181,10 @@ p { margin: 0 0 1rem; }
 .metadata dl > div { min-width: 0; max-width: 100%; }
 .metadata dt { font-size: .72rem; font-weight: 650; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
 .metadata dd { margin: 0; overflow-wrap: anywhere; }
+.article-content .legal-clauses { list-style: none; padding-left: 0; }
+.article-content .legal-clauses > li { margin: 1rem 0; }
+.article-content .legal-clauses .legal-clauses { padding-left: 1.5rem; }
+.clause-number { font-weight: 650; margin-right: .35em; }
 .separator { color: var(--muted); padding: 0 .35rem; }
 .resource-links { display: flex; flex-wrap: wrap; gap: .4rem .7rem; }
 .resource-links:has(a) { border-top: 1px solid var(--line); margin-top: .8rem; padding-top: .7rem; }
