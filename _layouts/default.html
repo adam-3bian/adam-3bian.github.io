@@ -11,11 +11,28 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <div class="header-row"><a class="brand" href="{{ '/' | relative_url }}">CHERI <span>Content viewer</span></a><a class="checks-link" href="{{ '/checks/' | relative_url }}">Content checks</a></div>
-    <nav class="source-nav" aria-label="Source navigation">{% include navigation.html items=site.navigation.header %}</nav>
-    <nav class="collection-nav" aria-label="Collections">{% for collection in site.collections %}{% unless collection.label == 'posts' %}<a href="{{ '/' | append: collection.label | append: '/' | relative_url }}">{{ site.data.viewer.collections[collection.label].label | default: collection.label | capitalize }}</a>{% endunless %}{% endfor %}</nav>
+    <div class="container">
+      <div class="header-row">
+        <a class="brand" href="{{ '/' | relative_url }}">CHERI <span>Content viewer</span></a>
+        <a class="checks-link" href="{{ '/checks/' | relative_url }}">Content checks</a>
+      </div>
+      <nav class="source-nav" aria-label="Source navigation">
+        {% include navigation.html items=site.navigation.header %}
+      </nav>
+      <nav class="collection-nav" aria-label="Collections">
+        {% for collection in site.collections %}{% unless collection.label == 'posts' %}
+          <a href="{{ '/' | append: collection.label | append: '/' | relative_url }}">{{ site.data.viewer.collections[collection.label].label | default: collection.label | capitalize }}</a>
+        {% endunless %}{% endfor %}
+      </nav>
+    </div>
   </header>
-  <main id="main" class="main-container">{{ content }}</main>
-  <footer class="site-footer"><nav class="source-footer-nav" aria-label="Source footer navigation">{% include navigation.html items=site.navigation.footer %}</nav><p>Minimal Jekyll viewer · {{ site.data.checks.record_count }} source records · Built {{ site.time | date: '%d %B %Y' }}</p><a href="{{ '/checks/' | relative_url }}">View the content audit</a></footer>
+  <main id="main" class="container main-container">{{ content }}</main>
+  <footer class="site-footer">
+    <div class="container">
+      <nav class="source-footer-nav" aria-label="Source footer navigation">{% include navigation.html items=site.navigation.footer %}</nav>
+      <p>Minimal Jekyll viewer · {{ site.data.checks.record_count }} source records · Built {{ site.time | date: '%d %B %Y' }}</p>
+      <a href="{{ '/checks/' | relative_url }}">View the content audit</a>
+    </div>
+  </footer>
 </body>
 </html>

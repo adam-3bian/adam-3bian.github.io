@@ -26,6 +26,21 @@ Authors, speakers, affiliations, lead and author roles, and generic related fiel
 
 The five retained alias pages show their destination links. They are reviewable pages; this viewer does not automatically redirect them. Contact and subscription pages are content examples; no form submits data.
 
+
+## Markdown image layout
+
+All Markdown images are responsive and stay inside the shared page container. Use a Kramdown **inline** attribute list immediately after the image (on the same line) to opt into an alignment. Examples use placeholder paths; replace them with existing files in `assets/`:
+
+```markdown
+![Descriptive alt text](/assets/example.jpg){: .image-left }
+
+![Descriptive alt text](/assets/example.jpg){: .image-right }
+
+![Descriptive alt text](/assets/example.jpg){: .image-full }
+```
+
+Left and right images float beside text on larger screens (up to 45% width, capped at 25rem). At 640px and below, both stack at 100% of the container; `.image-full` always fills the container. Ordinary Markdown images retain their natural aspect ratio. A semantic `<figure class="image-left">` / `<figure class="image-right">` / `<figure class="image-full">` with `<figcaption>` also works when captions are needed. Do not use fixed inline widths or alignment HTML attributes. The `image-full` class means the entire **content** width, not an overflow beyond the viewport.
+
 ## Build and GitHub Pages
 
 ```sh
