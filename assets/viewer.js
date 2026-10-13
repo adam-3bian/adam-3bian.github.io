@@ -114,6 +114,19 @@
   previous.addEventListener('click', () => move(-1));
   next.addEventListener('click', () => move(1));
   dialog.addEventListener('keydown', event => {
+    if (event.key === 'Tab') {
+      const controls = [...dialog.querySelectorAll('button:not([hidden])')];
+      const first = controls[0];
+      const last = controls[controls.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+      return;
+    }
     if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
       event.preventDefault();
       move(event.key === 'ArrowLeft' ? -1 : 1);
