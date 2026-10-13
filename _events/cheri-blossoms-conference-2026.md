@@ -451,6 +451,9 @@ Sam is a Research Technical Manager within BT’s Research and Commercialisation
 
 ### Featured Speakers
 
+<ul class="image-gallery portrait-gallery" role="list" markdown="block">
+<li markdown="block">
+
 ![Adam Finney](/assets/people/adam-finney/594a07796a78-adam-finney.webp){: .image-portrait }
 
 CHERI Alliance

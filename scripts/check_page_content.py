@@ -91,6 +91,8 @@ def target_file(path):
 for file, doc in documents.items():
     route = '/' + str(file.relative_to(SITE))
     for node in doc.nodes:
+        if node.tag == 'li' and node.parent.tag not in ('ul', 'ol', 'menu'):
+            errors.append(f'{route}: list item without a parent list')
         if node.has_class('metadata'):
             stats['metadata_panels'] += 1
             if not node.text():

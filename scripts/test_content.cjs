@@ -65,7 +65,7 @@ const report = { widths: [1440, 1024, 768, 640, 375], layoutChecks: 0, accessibi
           await page.addScriptTag({ path: process.env.AXE_PATH });
           const violations = await page.evaluate(async () => (await axe.run('main', {
             runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21aa'] },
-          })).violations.map(v => ({ id: v.id, impact: v.impact })));
+          })).violations.map(v => ({ id: v.id, impact: v.impact, nodes: v.nodes.map(n => ({ target: n.target, summary: n.failureSummary })) })));
           assert.deepEqual(violations, [], route);
           report.accessibilityChecks++;
         }
