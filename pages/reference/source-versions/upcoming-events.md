@@ -30,7 +30,7 @@ The next opportunities to learn about CHERI, hear from the community, and take p
 <ul class="image-gallery record-gallery" markdown="block">
 <li markdown="block">
 
-![](/assets/events/cheritech26/408459d34c43-cheritech26.webp)
+![CHERITech'26](/assets/events/cheritech26/408459d34c43-cheritech26.webp)
 
 Upcoming Conference
 
@@ -43,7 +43,7 @@ CHERITech’26 will take place in Munich alongside Electronica / SEMICON Europa,
 </li>
 <li markdown="block">
 
-![](/assets/events/cheri-blossoms-conference-2027/17bb25790594-cheri-blossoms-conference-2027.webp)
+![CHERI Blossoms Conference 2027](/assets/events/cheri-blossoms-conference-2027/17bb25790594-cheri-blossoms-conference-2027.webp)
 
 Upcoming Conference
 

@@ -49,19 +49,13 @@ CHERIoT applies CHERI ideas to 32-bit embedded systems. Its processor and softwa
 
 The model is relevant to:
 
-wireless and network protocol handling;
-
-connected cameras, locks, alarms, and home devices;
-
-sensor and actuator drivers;
-
-update verification and boot services;
-
-cryptographic keys and device identity;
-
-third-party libraries and supplier code;
-
-industrial, medical, and infrastructure edge devices.
+- wireless and network protocol handling;
+- connected cameras, locks, alarms, and home devices;
+- sensor and actuator drivers;
+- update verification and boot services;
+- cryptographic keys and device identity;
+- third-party libraries and supplier code;
+- industrial, medical, and infrastructure edge devices.
 
 Other CHERI platforms cover richer operating systems and larger processors. The underlying value remains the same: memory access is tied to explicit authority rather than treated as an unrestricted address.
 

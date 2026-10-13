@@ -33,23 +33,20 @@ If the allocator gives the same storage to a new object, the stale reference may
 
 Consider this sequence:
 
-char \*message = malloc(64);
-
-char \*stale = message;
-
+```c
+char *message = malloc(64);
+char *stale = message;
 free(message);
-
-char \*secret = malloc(64);
-
-printf("%c\\n", stale\[0\]);
+char *secret = malloc(64);
+printf("%c\n", stale[0]);
+```
 
 The stale capability may still be tagged, bounded to 64 bytes, and permitted to read. If secret reuses the same address range, a bounds check alone cannot know that the logical object changed.
 
 This is a different question from spatial safety:
 
-Spatial: Is the address within the authorised range?
-
-Temporal: Does the authority still refer to the same live object?
+- Spatial: Is the address within the authorised range?
+- Temporal: Does the authority still refer to the same live object?
 
 ## Baseline CHERI behaviour
 
@@ -93,15 +90,11 @@ Temporal safety also applies to service handles and shared objects. If a compart
 
 Interface design should specify:
 
-who owns the object
-
-whether the callee may retain the capability
-
-how destruction is signalled
-
-when memory may be reused
-
-which mechanism invalidates outstanding references
+- who owns the object
+- whether the callee may retain the capability
+- how destruction is signalled
+- when memory may be reused
+- which mechanism invalidates outstanding references
 
 Sealing can make a handle opaque, but does not by itself revoke every sealed copy.
 
@@ -109,19 +102,13 @@ Sealing can make a handle opaque, but does not by itself revoke every sealed cop
 
 Ask:
 
-Which allocations and object types are covered?
-
-What happens to capabilities in registers and memory?
-
-Can memory be reused before revocation completes?
-
-How are concurrent readers handled?
-
-What is the cost in time, memory, and predictability?
-
-What happens on exhaustion, crash, or reset?
-
-Which tests or proofs support the claim?
+- Which allocations and object types are covered?
+- What happens to capabilities in registers and memory?
+- Can memory be reused before revocation completes?
+- How are concurrent readers handled?
+- What is the cost in time, memory, and predictability?
+- What happens on exhaustion, crash, or reset?
+- Which tests or proofs support the claim?
 
 ## Key takeaway
 

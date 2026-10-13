@@ -33,11 +33,9 @@ CHERI capability bounds let the pointer carry an authorised range. The processor
 
 A bounded capability has three useful positions:
 
-Base: the first address in the authorised range.
-
-Top: the address immediately after the authorised range.
-
-Address: the current location to which the capability points.
+- Base: the first address in the authorised range.
+- Top: the address immediately after the authorised range.
+- Address: the current location to which the capability points.
 
 For a capability covering bytes 1000 through 1031, the base is 1000 and the top is 1032. A four-byte read at 1028 fits. A four-byte read at 1030 crosses the top and faults.
 
@@ -47,11 +45,11 @@ The current address can move within the representable rules of the capability, b
 
 Software commonly begins with a capability for a larger region and derives a smaller one:
 
-Allocation capability:  \[--------------------------\]
-
-Record capability:            \[--------\]
-
-Field capability:                \[--\]
+```text
+Allocation capability:  [--------------------------]
+Record capability:            [--------]
+Field capability:                [--]
+```
 
 The record capability can be created from the allocation capability because its range is contained within the source authority. The field capability can be narrower again.
 
@@ -61,15 +59,11 @@ Unprivileged software cannot widen the field capability back to the allocation r
 
 In a pure-capability C or C++ environment, the compiler, linker, allocator, and operating system cooperate to create useful bounds for:
 
-stack allocations
-
-heap allocations
-
-global objects
-
-code and function entry points
-
-subobjects such as structure fields or array elements
+- stack allocations
+- heap allocations
+- global objects
+- code and function entry points
+- subobjects such as structure fields or array elements
 
 The exact policy matters. Some application binary interfaces (ABIs) place bounds at allocation granularity by default. Stronger subobject bounds may catch more errors but can affect compatibility with code that derives an enclosing object from a field pointer.
 
@@ -93,26 +87,18 @@ Code that temporarily moves a pointer far outside an object and later moves it b
 
 Correctly applied bounds can stop:
 
-buffer overreads and overwrites
-
-negative indexing before an object
-
-pointer arithmetic that reaches a neighbouring allocation
-
-some forms of stack and heap corruption
-
-a compartment reading shared memory outside the object it received
+- buffer overreads and overwrites
+- negative indexing before an object
+- pointer arithmetic that reaches a neighbouring allocation
+- some forms of stack and heap corruption
+- a compartment reading shared memory outside the object it received
 
 ## What bounds do not stop
 
-Access to the wrong value within an authorised object.
-
-A write that is in bounds but violates application logic.
-
-Use-after-free when a stale capability still has valid bounds and the memory has been reused.
-
-Access through a different, more powerful capability held elsewhere.
-
-Information leakage through side channels.
+- Access to the wrong value within an authorised object.
+- A write that is in bounds but violates application logic.
+- Use-after-free when a stale capability still has valid bounds and the memory has been reused.
+- Access through a different, more powerful capability held elsewhere.
+- Information leakage through side channels.
 
 Bounds are therefore strongest when paired with narrow Permissions, careful Provenance, lifetime protection, and least-privilege compartment design.

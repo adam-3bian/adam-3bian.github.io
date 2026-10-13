@@ -48,19 +48,13 @@ Availability and supported versions change. Use these descriptions to narrow the
 
 For a reproducible result, record:
 
-CHERI architecture and version
-
-processor implementation
-
-capability width and application binary interface (ABI)
-
-operating system or RTOS
-
-compiler and target system headers and libraries (sysroot)
-
-simulator, FPGA image, or silicon revision
-
-compartment and temporal-safety mechanisms
+- CHERI architecture and version
+- processor implementation
+- capability width and application binary interface (ABI)
+- operating system or RTOS
+- compiler and target system headers and libraries (sysroot)
+- simulator, FPGA image, or silicon revision
+- compartment and temporal-safety mechanisms
 
 “CHERI-RISC-V” alone may describe several instruction-set versions and processor scales. “Morello” identifies a prototype architecture and platform, not every CHERI design. “CHERIoT” identifies a coordinated embedded hardware-software platform with its own instruction-set architecture (ISA) profile.
 
@@ -86,28 +80,20 @@ Formal Sail models are useful as executable architectural references. Register-t
 
 ## Choose by evidence
 
-To check whether source compiles as pure capability, use the matching SDK and system headers and libraries, known as a sysroot.
-
-To check whether an invalid access causes an architectural fault, use a formal simulator, QEMU, RTL simulation, FPGA, or silicon that implements the selected architecture.
-
-To check whether a compartment lacks access to a secret, use a platform with a documented compartment runtime and tests that attempt the denied access.
-
-To check instruction behaviour, consult the architecture specification and its executable formal model.
-
-To measure performance or power, use representative FPGA hardware or silicon, preferably the intended product platform.
-
-To assess supply and support, use current lifecycle and support information from the commercial supplier.
+- To check whether source compiles as pure capability, use the matching SDK and system headers and libraries, known as a sysroot.
+- To check whether an invalid access causes an architectural fault, use a formal simulator, QEMU, RTL simulation, FPGA, or silicon that implements the selected architecture.
+- To check whether a compartment lacks access to a secret, use a platform with a documented compartment runtime and tests that attempt the denied access.
+- To check instruction behaviour, consult the architecture specification and its executable formal model.
+- To measure performance or power, use representative FPGA hardware or silicon, preferably the intended product platform.
+- To assess supply and support, use current lifecycle and support information from the commercial supplier.
 
 Simulator results should not be presented as silicon performance. Prototype-board results should not be generalised to a different processor implementation.
 
 ## A low-risk starting decision
 
-Choose CheriBSD in QEMU for a first application-class port.
-
-Choose CHERIoT in simulation for first embedded or compartment work.
-
-Choose Morello for an existing Morello programme or Morello-specific evidence.
-
-Choose a commercial SDK when the goal is a product rather than architecture learning.
+- Choose CheriBSD in QEMU for a first application-class port.
+- Choose CHERIoT in simulation for first embedded or compartment work.
+- Choose Morello for an existing Morello programme or Morello-specific evidence.
+- Choose a commercial SDK when the goal is a product rather than architecture learning.
 
 After the first functional result, repeat the experiment on the hardware and operating environment that matches the intended deployment.

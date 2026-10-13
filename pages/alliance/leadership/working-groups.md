@@ -38,7 +38,9 @@ Technical
 
 Coordinating portable C and C++ support for CHERI platforms.
 
-Language and ABI behaviour · Compiler and toolchain experience · Portability and standards
+- Language and ABI behaviour
+- Compiler and toolchain experience
+- Portability and standards
 
 Technical
 
@@ -46,7 +48,9 @@ Technical
 
 Brings together the architecture, integration, and verification questions involved in adding CHERI to a system-on-chip.
 
-SoC architecture and integration · CHERI feature profiles · Hardware and software interfaces
+- SoC architecture and integration
+- CHERI feature profiles
+- Hardware and software interfaces
 
 Technical
 
@@ -54,7 +58,9 @@ Technical
 
 Coordinates priorities, cross-architecture requirements, implementation experience, and contribution routes for CHERI support in Linux.
 
-Linux roadmap and priorities · Cross-architecture interfaces · Upstream contribution
+- Linux roadmap and priorities
+- Cross-architecture interfaces
+- Upstream contribution
 
 Technical
 
@@ -62,7 +68,9 @@ Technical
 
 Coordinates CHERI support in QEMU so developers have maintained, testable emulation aligned with current architectures and platforms.
 
-Architecture and platform models · Maintenance and version alignment · Testing and continuous integration
+- Architecture and platform models
+- Maintenance and version alignment
+- Testing and continuous integration
 
 Technical
 
@@ -70,7 +78,9 @@ Technical
 
 Examines how language runtimes, managed environments, and virtual machines can use and preserve CHERI capabilities.
 
-Language runtimes · Managed memory and native interfaces · Capability-aware VM design
+- Language runtimes
+- Managed memory and native interfaces
+- Capability-aware VM design
 
 Technical
 
@@ -78,7 +88,9 @@ Technical
 
 Combining memory-safe software and hardware-enforced protection.
 
-Rust targets and toolchains · Native interfaces and unsafe code · Platform and runtime support
+- Rust targets and toolchains
+- Native interfaces and unsafe code
+- Platform and runtime support
 
 Technical
 
@@ -86,7 +98,9 @@ Technical
 
 Explores how CHERI mechanisms, implementation evidence, and system integration relate to functional safety and assurance needs.
 
-Safety requirements and claims · Implementation evidence · Integration and assurance
+- Safety requirements and claims
+- Implementation evidence
+- Integration and assurance
 
 Technical
 
@@ -94,7 +108,9 @@ Technical
 
 Coordinates work at the intersection of CHERI capabilities, seL4, Microkit, verified kernels, and capability-oriented system design.
 
-seL4 and Microkit integration · Capability-oriented interfaces · Isolation and assurance
+- seL4 and Microkit integration
+- Capability-oriented interfaces
+- Isolation and assurance
 
 Technical
 
@@ -102,7 +118,9 @@ Technical
 
 Coordinates common approaches to memory protection, compartmentalisation, interfaces, and platform support for FreeRTOS on CHERI systems.
 
-FreeRTOS platform support · Compartments and interfaces · Embedded testing and portability
+- FreeRTOS platform support
+- Compartments and interfaces
+- Embedded testing and portability
 
 Technical
 
@@ -110,7 +128,9 @@ Technical
 
 Coordinates CHERI support for Zephyr across architecture ports, kernel and user interfaces, drivers, tooling, and supported platforms.
 
-Zephyr architecture support · Memory protection and compartments · Drivers, tooling, and platforms
+- Zephyr architecture support
+- Memory protection and compartments
+- Drivers, tooling, and platforms
 
 Technical
 
@@ -118,7 +138,9 @@ Technical
 
 Examines CHERI protection and compartmentalisation for systems that share an address space and do not depend on a conventional memory-management unit.
 
-Shared-address-space systems · Embedded compartment models · Resource and real-time constraints
+- Shared-address-space systems
+- Embedded compartment models
+- Resource and real-time constraints
 
 Technical
 
@@ -126,7 +148,9 @@ Technical
 
 Connects operating-system ports, shared interfaces, terminology, and documentation across CHERI architectures and software projects.
 
-Cross-OS interfaces · Portability and terminology · Documentation and integration
+- Cross-OS interfaces
+- Portability and terminology
+- Documentation and integration
 
 ## Programme and ecosystem groups
 
@@ -138,7 +162,9 @@ Programme and ecosystem
 
 Develops shared thinking around certification criteria, assurance needs, evidence, and the operation of Alliance certification programmes.
 
-Certification criteria · Evidence and assurance needs · Programme development
+- Certification criteria
+- Evidence and assurance needs
+- Programme development
 
 Programme and ecosystem
 
@@ -146,7 +172,9 @@ Programme and ecosystem
 
 Coordinates accurate CHERI messaging, shared material, campaigns, events, and communication across the Alliance ecosystem.
 
-Shared messaging and material · Campaigns and events · Ecosystem communication
+- Shared messaging and material
+- Campaigns and events
+- Ecosystem communication
 
 Programme and ecosystem
 
@@ -154,7 +182,9 @@ Programme and ecosystem
 
 Helping the CHERI ecosystem communicate clearly, consistently, and effectively.
 
-Ambassador participation · Talks, demonstrations, and events · Community connections
+- Ambassador participation
+- Talks, demonstrations, and events
+- Community connections
 
 Programme and ecosystem
 
@@ -162,7 +192,9 @@ Programme and ecosystem
 
 Develops consistent practices for the structure, maintenance, contribution, quality, and stewardship of shared Alliance repositories and technical collateral.
 
-Repository structure and ownership · Contribution and maintenance · Quality and long-term stewardship
+- Repository structure and ownership
+- Contribution and maintenance
+- Quality and long-term stewardship
 
 ## Participation
 

@@ -38,8 +38,6 @@ Helps readers understand where Digital Security by Design Archive fits, what evi
 
 ## Content
 
-What is included under Digital Security by Design Archive
-
-How entries are described, dated, and sourced
-
-Links to relevant primary or supporting material
+- What is included under Digital Security by Design Archive
+- How entries are described, dated, and sourced
+- Links to relevant primary or supporting material

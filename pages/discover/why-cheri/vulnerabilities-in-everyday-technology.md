@@ -31,15 +31,11 @@ If software contains a serious memory vulnerability, an attacker may be able to 
 
 Connected products often combine private data, physical control, and a route into a wider system, for example:
 
-Device: Video doorbell; What it handles: Video, audio, account details, Wi-Fi access; Potential impact of a serious compromise: Privacy loss, device control, access to other devices
-
-Device: Smart meter; What it handles: Usage readings, remote commands; Potential impact of a serious compromise: Presence detection, disruption of operation
-
-Device: Medical device; What it handles: Patient information, alarms, settings; Potential impact of a serious compromise: Loss of confidentiality or even life-threatening events
-
-Device: Factory sensor or gateway; What it handles: Production data, control messages, network connections; Potential impact of a serious compromise: Production disruption, industrial accident
-
-Device: Connected vehicle component; What it handles: Sensor and service communications; Potential impact of a serious compromise: Vehicle function disruptions, loss of availability, or safety impacts
+- Device: Video doorbell; What it handles: Video, audio, account details, Wi-Fi access; Potential impact of a serious compromise: Privacy loss, device control, access to other devices
+- Device: Smart meter; What it handles: Usage readings, remote commands; Potential impact of a serious compromise: Presence detection, disruption of operation
+- Device: Medical device; What it handles: Patient information, alarms, settings; Potential impact of a serious compromise: Loss of confidentiality or even life-threatening events
+- Device: Factory sensor or gateway; What it handles: Production data, control messages, network connections; Potential impact of a serious compromise: Production disruption, industrial accident
+- Device: Connected vehicle component; What it handles: Sensor and service communications; Potential impact of a serious compromise: Vehicle function disruptions, loss of availability, or safety impacts
 
 The risk depends on the flaw and the device, but even modest products can provide valuable access.
 
@@ -49,15 +45,11 @@ Software stores information in memory while it runs. Memory safety means softwar
 
 A memory-safety vulnerability occurs when software accidentally reads or modifies memory outside those intended limits. An attacker can sometimes trigger these mistakes using carefully crafted input, potentially allowing them to:
 
-read private information;
-
-alter settings or security decisions;
-
-make a device unavailable;
-
-run commands with the software’s privileges;
-
-access data and services the software was never meant to reach.
+- read private information;
+- alter settings or security decisions;
+- make a device unavailable;
+- run commands with the software’s privileges;
+- access data and services the software was never meant to reach.
 
 This is why a small coding mistake can become a significant security problem.
 

@@ -24,11 +24,11 @@ related:
 
 The objective of this mission is to demonstrate arbitrary code execution through the use of uninitialized variables on the stack, despite CHERI protections. You will attack three different versions of the program:
 
-A baseline RISC-V compilation, to establish that the vulnerability is exploitable without any CHERI protections.
+1. A baseline RISC-V compilation, to establish that the vulnerability is exploitable without any CHERI protections.
 
-A hardened CHERI-RISC-V compilation with stack clearing, which should be non-exploitable.
+2. A hardened CHERI-RISC-V compilation with stack clearing, which should be non-exploitable.
 
-A baseline CHERI-RISC-V compilation with no stack clearing, which should be non-exploitable due to pointer tagging.
+3. A baseline CHERI-RISC-V compilation with no stack clearing, which should be non-exploitable due to pointer tagging.
 
 The success condition for an exploit, given attacker-provided input overriding an on-stack buffer, is to modify control flow in the program such that the success function is executed.
 
@@ -44,640 +44,393 @@ The hardened CHERI-RISC-V version with stack clearing is built by adding -ftrivi
 
 stack-mission.c
 
-/\*
+```c
+/*
+ * SPDX-License-Identifier: BSD-2-Clause-DARPA-SSITH-ECATS-HR0011-18-C-0016
+ * Copyright (c) 2020 SRI International
+ */
 
-\* SPDX-License-Identifier: BSD-2-Clause-DARPA-SSITH-ECATS-HR0011-18-C-0016
+#include <sel4/assert.h>
+#include <stdalign.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <printf.h>
+#include <microkit.h>
 
-\* Copyright (c) 2020 SRI International
-
-\*/
-
-#include \<sel4/assert.h\>
-
-#include \<stdalign.h\>
-
-#include \<stddef.h\>
-
-#include \<stdint.h\>
-
-#include \<printf.h\>
-
-#include \<microkit.h\>
-
-#define SERIAL\_CHANNEL 1
-
-uintptr\_t serial\_to\_client\_vaddr;
-
-uintptr\_t client\_to\_serial\_vaddr;
+#define SERIAL_CHANNEL 1
+uintptr_t serial_to_client_vaddr;
+uintptr_t client_to_serial_vaddr;
 
 // Helper functions since we don't have a C library
-
 // ------------------------------------------------ //
-
 static char getchar() {
-
-microkit\_ppcall(SERIAL\_CHANNEL, microkit\_msginfo\_new(1, 0));
-
-return ((char \*)serial\_to\_client\_vaddr)\[0\];
-
+    microkit_ppcall(SERIAL_CHANNEL, microkit_msginfo_new(1, 0));
+    return ((char *)serial_to_client_vaddr)[0];
 }
 
 static int isxdigit(int c) {
-
-return (c \>= '0' && c \<= '9') ||
-
-(c \>= 'a' && c \<= 'f') ||
-
-(c \>= 'A' && c \<= 'F');
-
+    return (c >= '0' && c <= '9') ||
+           (c >= 'a' && c <= 'f') ||
+           (c >= 'A' && c <= 'F');
 }
 
 static int digittoint(int c) {
-
-if (c \>= '0' && c \<= '9')
-
-return c - '0';
-
-if (c \>= 'a' && c \<= 'f')
-
-return c - 'a' + 10;
-
-if (c \>= 'A' && c \<= 'F')
-
-return c - 'A' + 10;
-
-return -1;  // Not a valid hex digit
-
+    if (c >= '0' && c <= '9')
+        return c - '0';
+    if (c >= 'a' && c <= 'f')
+        return c - 'a' + 10;
+    if (c >= 'A' && c <= 'F')
+        return c - 'A' + 10;
+    return -1;  // Not a valid hex digit
 }
 
 static int isspace(int c) {
-
-return c == ' '  ||  // space
-
-c == '\\t' ||  // horizontal tab
-
-c == '\\n' ||  // newline
-
-c == '\\v' ||  // vertical tab
-
-c == '\\f' ||  // form feed
-
-c == '\\r';    // carriage return
-
+    return c == ' '  ||  // space
+           c == '\t' ||  // horizontal tab
+           c == '\n' ||  // newline
+           c == '\v' ||  // vertical tab
+           c == '\f' ||  // form feed
+           c == '\r';    // carriage return
 }
 
-static void errx(int err, const char \*msg) {
-
-printf("ERROR: %s\\n", msg);
-
-microkit\_internal\_crash(err);  // Crash the component with a specific error code
-
+static void errx(int err, const char *msg) {
+    printf("ERROR: %s\n", msg);
+    microkit_internal_crash(err);  // Crash the component with a specific error code
 }
 
 static void exit(int status) {
-
-microkit\_internal\_crash(status);
-
+    microkit_internal_crash(status);
 }
-
 // ------------------------------------------------ //
 
 void
-
 success(void)
-
 {
-
-printf("Exploit successful, yum!\\n");
-
-exit(42);
-
+	printf("Exploit successful, yum!\n");
+	exit(42);
 }
 
 void
-
-no\_cookies(void)
-
+no_cookies(void)
 {
-
-printf("No cookies??\\n");
-
-exit(1);
-
+	printf("No cookies??\n");
+	exit(1);
 }
 
-#pragma weak init\_pointer
-
+#pragma weak init_pointer
 void
-
-init\_pointer(void \*p)
-
+init_pointer(void *p)
 {
-
 }
 
-static void \_\_attribute\_\_((noinline))
-
-init\_cookie\_pointer(void)
-
+static void __attribute__((noinline))
+init_cookie_pointer(void)
 {
+	void *pointers[12];
+	void (* volatile cookie_fn)(void);
 
-void \*pointers\[12\];
-
-void (\* volatile cookie\_fn)(void);
-
-for (size\_t i = 0; i \< sizeof(pointers) / sizeof(pointers\[0\]); i++)
-
-init\_pointer(&pointers\[i\]);
-
-cookie\_fn = no\_cookies;
-
+	for (size_t i = 0; i < sizeof(pointers) / sizeof(pointers[0]); i++)
+		init_pointer(&pointers[i]);
+	cookie_fn = no_cookies;
 }
 
-static void \_\_attribute\_\_((noinline))
-
-get\_cookies(void)
-
+static void __attribute__((noinline))
+get_cookies(void)
 {
+	alignas(void *) char cookies[sizeof(void *) * 32];
+	char *cookiep;
+	int ch, cookie;
 
-alignas(void \*) char cookies\[sizeof(void \*) \* 32\];
+	printf("Cookie monster is hungry, provide some cookies!\n");
+	printf("'=' skips the next %zu bytes\n", sizeof(void *));
+	printf("'-' skips to the next character\n");
+	printf("XX as two hex digits stores a single cookie\n");
+	printf("> ");
 
-char \*cookiep;
+	cookiep = cookies;
+	for (;;) {
+		ch = getchar();
 
-int ch, cookie;
+		if (ch == '\n' || ch == '\r' || ch == -1)
+			break;
 
-printf("Cookie monster is hungry, provide some cookies!\\n");
+		if (isspace(ch))
+			continue;
 
-printf("'=' skips the next %zu bytes\\n", sizeof(void \*));
+		if (ch == '-') {
+			cookiep++;
+			continue;
+		}
 
-printf("'-' skips to the next character\\n");
+		if (ch == '=') {
+			cookiep += sizeof(void *);
+			continue;
+		}
 
-printf("XX as two hex digits stores a single cookie\\n");
+		if (isxdigit(ch)) {
+			cookie = digittoint(ch) << 4;
+			ch = getchar();
+			if (ch == -1)
+				errx(1, "Half-eaten cookie, yuck!");
+			if (!isxdigit(ch))
+				errx(1, "Malformed cookie");
+			cookie |= digittoint(ch);
+			*cookiep++ = cookie;
+			continue;
+		}
 
-printf("\> ");
-
-cookiep = cookies;
-
-for (;;) {
-
-ch = getchar();
-
-if (ch == '\\n' || ch == '\\r' || ch == -1)
-
-break;
-
-if (isspace(ch))
-
-continue;
-
-if (ch == '-') {
-
-cookiep++;
-
-continue;
-
+		errx(1, "Malformed cookie");
+	}
 }
 
-if (ch == '=') {
-
-cookiep += sizeof(void \*);
-
-continue;
-
-}
-
-if (isxdigit(ch)) {
-
-cookie = digittoint(ch) \<\< 4;
-
-ch = getchar();
-
-if (ch == -1)
-
-errx(1, "Half-eaten cookie, yuck!");
-
-if (!isxdigit(ch))
-
-errx(1, "Malformed cookie");
-
-cookie |= digittoint(ch);
-
-\*cookiep++ = cookie;
-
-continue;
-
-}
-
-errx(1, "Malformed cookie");
-
-}
-
-}
-
-static void \_\_attribute\_\_((noinline))
-
-eat\_cookies(void)
-
+static void __attribute__((noinline))
+eat_cookies(void)
 {
+	void *pointers[12];
+	void (* volatile cookie_fn)(void);
 
-void \*pointers\[12\];
-
-void (\* volatile cookie\_fn)(void);
-
-for (size\_t i = 0; i \< sizeof(pointers) / sizeof(pointers\[0\]); i++)
-
-init\_pointer(&pointers\[i\]);
-
-cookie\_fn();
-
+	for (size_t i = 0; i < sizeof(pointers) / sizeof(pointers[0]); i++)
+		init_pointer(&pointers[i]);
+	cookie_fn();
 }
 
 void
-
 init(void)
-
 {
-
-init\_cookie\_pointer();
-
-get\_cookies();
-
-eat\_cookies();
-
+	init_cookie_pointer();
+	get_cookies();
+	eat_cookies();
 }
 
-void notified(microkit\_channel channel) {
-
-switch (channel) {
-
-case SERIAL\_CHANNEL: {
-
-char ch = ((char \*)serial\_to\_client\_vaddr)\[0\];
-
-microkit\_dbg\_putc(ch);
-
-break;
-
+void notified(microkit_channel channel) {
+    switch (channel) {
+        case SERIAL_CHANNEL: {
+            char ch = ((char *)serial_to_client_vaddr)[0];
+            microkit_dbg_putc(ch);
+            break;
+        }
+    }
 }
-
-}
-
-}
+```
 
 serial\_server.c
 
-#include \<stdint.h\>
+```c
+#include <stdint.h>
+#include <microkit.h>
 
-#include \<microkit.h\>
-
-#if defined(BOARD\_qemu\_virt\_riscv64)
-
-typedef uint8\_t uart\_reg\_t;
-
-#elif defined(BOARD\_ariane)
-
-typedef uint32\_t uart\_reg\_t;
-
+#if defined(BOARD_qemu_virt_riscv64)
+typedef uint8_t uart_reg_t;
+#elif defined(BOARD_ariane)
+typedef uint32_t uart_reg_t;
 #else
-
 #error "Unsupported board for the serial driver"
-
 #endif
-
 // This variable will have the address of the UART device
+uintptr_t uart_base_vaddr;
 
-uintptr\_t uart\_base\_vaddr;
+/* QEMU RISC-V virt emulates a 16550 compatible UART. */
+#define BIT(n) (1ul<<(n))
 
-/\* QEMU RISC-V virt emulates a 16550 compatible UART. \*/
+#define UART_IER_ERBFI   BIT(0)   /* Enable Received Data Available Interrupt */
+#define UART_IER_ETBEI   BIT(1)   /* Enable Transmitter Holding Register Empty Interrupt */
+#define UART_IER_ELSI    BIT(2)   /* Enable Receiver Line Status Interrupt */
+#define UART_IER_EDSSI   BIT(3)   /* Enable MODEM Status Interrupt */
 
-#define BIT(n) (1ul\<\<(n))
+#define UART_FCR_ENABLE_FIFOS   BIT(0)
+#define UART_FCR_RESET_RX_FIFO  BIT(1)
+#define UART_FCR_RESET_TX_FIFO  BIT(2)
+#define UART_FCR_TRIGGER_1      (0u << 6)
+#define UART_FCR_TRIGGER_4      (1u << 6)
+#define UART_FCR_TRIGGER_8      (2u << 6)
+#define UART_FCR_TRIGGER_14     (3u << 6)
 
-#define UART\_IER\_ERBFI   BIT(0)   /\* Enable Received Data Available Interrupt \*/
+#define UART_LCR_DLAB    BIT(7)   /* Divisor Latch Access */
 
-#define UART\_IER\_ETBEI   BIT(1)   /\* Enable Transmitter Holding Register Empty Interrupt \*/
-
-#define UART\_IER\_ELSI    BIT(2)   /\* Enable Receiver Line Status Interrupt \*/
-
-#define UART\_IER\_EDSSI   BIT(3)   /\* Enable MODEM Status Interrupt \*/
-
-#define UART\_FCR\_ENABLE\_FIFOS   BIT(0)
-
-#define UART\_FCR\_RESET\_RX\_FIFO  BIT(1)
-
-#define UART\_FCR\_RESET\_TX\_FIFO  BIT(2)
-
-#define UART\_FCR\_TRIGGER\_1      (0u \<\< 6)
-
-#define UART\_FCR\_TRIGGER\_4      (1u \<\< 6)
-
-#define UART\_FCR\_TRIGGER\_8      (2u \<\< 6)
-
-#define UART\_FCR\_TRIGGER\_14     (3u \<\< 6)
-
-#define UART\_LCR\_DLAB    BIT(7)   /\* Divisor Latch Access \*/
-
-#define UART\_LSR\_DR      BIT(0)   /\* Data Ready \*/
-
-#define UART\_LSR\_THRE    BIT(5)   /\* Transmitter Holding Register Empty \*/
+#define UART_LSR_DR      BIT(0)   /* Data Ready */
+#define UART_LSR_THRE    BIT(5)   /* Transmitter Holding Register Empty */
 
 typedef volatile struct {
+    uart_reg_t rbr_dll_thr; /* 0x00 Receiver Buffer Register (Read Only)
+                             *   Divisor Latch (LSB)
+                             *   Transmitter Holding Register (Write Only)
+                             */
+    uart_reg_t dlm_ier;     /* 0x04 Divisor Latch (MSB)
+                             *   Interrupt Enable Register
+                             */
+    uart_reg_t iir_fcr;     /* 0x08 Interrupt Identification Register (Read Only)
+                             *   FIFO Control Register (Write Only)
+                             */
+    uart_reg_t lcr;         /* 0xC Line Control Register */
+    uart_reg_t mcr;         /* 0x10 MODEM Control Register */
+    uart_reg_t lsr;         /* 0x14 Line Status Register */
+    uart_reg_t msr;         /* 0x18 MODEM Status Register */
+} uart_regs_t;
 
-uart\_reg\_t rbr\_dll\_thr; /\* 0x00 Receiver Buffer Register (Read Only)
+#define REG_PTR(base, offset) ((volatile uint32_t *)((base) + (offset)))
+/*
+ *******************************************************************************
+ * UART access primitives
+ *******************************************************************************
+ */
 
-\*   Divisor Latch (LSB)
-
-\*   Transmitter Holding Register (Write Only)
-
-\*/
-
-uart\_reg\_t dlm\_ier;     /\* 0x04 Divisor Latch (MSB)
-
-\*   Interrupt Enable Register
-
-\*/
-
-uart\_reg\_t iir\_fcr;     /\* 0x08 Interrupt Identification Register (Read Only)
-
-\*   FIFO Control Register (Write Only)
-
-\*/
-
-uart\_reg\_t lcr;         /\* 0xC Line Control Register \*/
-
-uart\_reg\_t mcr;         /\* 0x10 MODEM Control Register \*/
-
-uart\_reg\_t lsr;         /\* 0x14 Line Status Register \*/
-
-uart\_reg\_t msr;         /\* 0x18 MODEM Status Register \*/
-
-} uart\_regs\_t;
-
-#define REG\_PTR(base, offset) ((volatile uint32\_t \*)((base) + (offset)))
-
-/\*
-
-\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
-
-\* UART access primitives
-
-\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
-
-\*/
-
-static int internal\_uart\_is\_tx\_empty(uart\_regs\_t \*regs)
-
+static int internal_uart_is_tx_empty(uart_regs_t *regs)
 {
-
-/\* The THRE bit is set when the FIFO is fully empty. On real hardware, there
-
-\* seems no way to detect if the FIFO is partially empty only, so we can't
-
-\* implement a "tx\_ready" check. Since QEMU does not emulate a FIFO, this
-
-\* does not really matter.
-
-\*/
-
-return (0 != (regs-\>lsr & UART\_LSR\_THRE));
-
+    /* The THRE bit is set when the FIFO is fully empty. On real hardware, there
+     * seems no way to detect if the FIFO is partially empty only, so we can't
+     * implement a "tx_ready" check. Since QEMU does not emulate a FIFO, this
+     * does not really matter.
+     */
+    return (0 != (regs->lsr & UART_LSR_THRE));
 }
 
-static void internal\_uart\_tx\_byte(uart\_regs\_t \*regs, uint8\_t byte)
-
+static void internal_uart_tx_byte(uart_regs_t *regs, uint8_t byte)
 {
-
-/\* Caller has to ensure TX FIFO is ready \*/
-
-regs-\>rbr\_dll\_thr = byte;
-
+    /* Caller has to ensure TX FIFO is ready */
+    regs->rbr_dll_thr = byte;
 }
 
-static int internal\_uart\_is\_rx\_empty(uart\_regs\_t \*regs)
-
+static int internal_uart_is_rx_empty(uart_regs_t *regs)
 {
-
-return (0 == (regs-\>lsr & UART\_LSR\_DR));
-
+    return (0 == (regs->lsr & UART_LSR_DR));
 }
 
-static int internal\_uart\_rx\_byte(uart\_regs\_t \*regs)
 
+static int internal_uart_rx_byte(uart_regs_t *regs)
 {
-
-/\* Caller has to ensure RX FIFO has data \*/
-
-return regs-\>rbr\_dll\_thr;
-
+    /* Caller has to ensure RX FIFO has data */
+    return regs->rbr_dll_thr;
 }
 
-void uart\_init() {
+void uart_init() {
+    uart_regs_t *regs = (uart_regs_t *) uart_base_vaddr;
+    regs->dlm_ier = 0; // disable interrupts
 
-uart\_regs\_t \*regs = (uart\_regs\_t \*) uart\_base\_vaddr;
+    /* Baudrates and serial line parameters are not emulated by QEMU, so the
+     * divisor is just a dummy.
+     */
+    uint16_t clk_divisor = 1; /* dummy, would be for 115200 baud */
+    regs->lcr = UART_LCR_DLAB; /* baud rate divisor setup */
+    regs->dlm_ier = (clk_divisor >> 8) & 0xFF;
+    regs->rbr_dll_thr = clk_divisor & 0xFF;
+    regs->lcr = 0x03; /* set 8N1, clear DLAB to end baud rate divisor setup */
 
-regs-\>dlm\_ier = 0; // disable interrupts
+    /* enable and reset FIFOs, interrupt for each byte */
+    regs->iir_fcr = UART_FCR_ENABLE_FIFOS
+                    | UART_FCR_RESET_RX_FIFO
+                    | UART_FCR_RESET_TX_FIFO
+                    | UART_FCR_TRIGGER_1;
 
-/\* Baudrates and serial line parameters are not emulated by QEMU, so the
-
-\* divisor is just a dummy.
-
-\*/
-
-uint16\_t clk\_divisor = 1; /\* dummy, would be for 115200 baud \*/
-
-regs-\>lcr = UART\_LCR\_DLAB; /\* baud rate divisor setup \*/
-
-regs-\>dlm\_ier = (clk\_divisor \>\> 8) & 0xFF;
-
-regs-\>rbr\_dll\_thr = clk\_divisor & 0xFF;
-
-regs-\>lcr = 0x03; /\* set 8N1, clear DLAB to end baud rate divisor setup \*/
-
-/\* enable and reset FIFOs, interrupt for each byte \*/
-
-regs-\>iir\_fcr = UART\_FCR\_ENABLE\_FIFOS
-
-| UART\_FCR\_RESET\_RX\_FIFO
-
-| UART\_FCR\_RESET\_TX\_FIFO
-
-| UART\_FCR\_TRIGGER\_1;
-
-/\* enable RX interrupts \*/
-
-regs-\>dlm\_ier = UART\_IER\_ERBFI;
-
+    /* enable RX interrupts */
+    regs->dlm_ier = UART_IER_ERBFI;
 }
 
-void uart\_put\_char(int c) {
+void uart_put_char(int c) {
+    uart_regs_t *regs = (uart_regs_t *) uart_base_vaddr;
 
-uart\_regs\_t \*regs = (uart\_regs\_t \*) uart\_base\_vaddr;
+    /* There is no way to check for "TX ready", the only thing we have is a
+     * check for "TX FIFO empty". This is not optimal, as we might wait here
+     * even if there is space in the FIFO. Seems the 16550 was built based on
+     * the idea that software keeps track of the FIFO usage. A driver would
+     * know how much space is left in the FIFO, so it can write new data
+     * either immediately or buffer it. If the FIFO empty interrupt arrives,
+     * data can be written from the buffer to fill the FIFO.
+     * However, since QEMU does not emulate a FIFO, we can just implement a
+     * simple model here and block - expecting to never block practically.
+     */
+    while (!internal_uart_is_tx_empty(regs)) {
+        /* busy waiting loop */
+    }
 
-/\* There is no way to check for "TX ready", the only thing we have is a
+    /* Extract the byte to send, drop any flags. */
+    uint8_t byte = (uint8_t)c;
 
-\* check for "TX FIFO empty". This is not optimal, as we might wait here
-
-\* even if there is space in the FIFO. Seems the 16550 was built based on
-
-\* the idea that software keeps track of the FIFO usage. A driver would
-
-\* know how much space is left in the FIFO, so it can write new data
-
-\* either immediately or buffer it. If the FIFO empty interrupt arrives,
-
-\* data can be written from the buffer to fill the FIFO.
-
-\* However, since QEMU does not emulate a FIFO, we can just implement a
-
-\* simple model here and block - expecting to never block practically.
-
-\*/
-
-while (!internal\_uart\_is\_tx\_empty(regs)) {
-
-/\* busy waiting loop \*/
-
+    internal_uart_tx_byte(regs, byte);
 }
 
-/\* Extract the byte to send, drop any flags. \*/
-
-uint8\_t byte = (uint8\_t)c;
-
-internal\_uart\_tx\_byte(regs, byte);
-
+void uart_handle_irq() {
 }
 
-void uart\_handle\_irq() {
-
+void uart_put_str(char *str) {
+    while (*str) {
+        uart_put_char(*str);
+        str++;
+    }
 }
 
-void uart\_put\_str(char \*str) {
+int uart_get_char() {
+    uart_regs_t *regs = (uart_regs_t *) uart_base_vaddr;
 
-while (\*str) {
+    /* if UART is empty return an error */
+    while(internal_uart_is_rx_empty(regs));
 
-uart\_put\_char(\*str);
-
-str++;
-
-}
-
-}
-
-int uart\_get\_char() {
-
-uart\_regs\_t \*regs = (uart\_regs\_t \*) uart\_base\_vaddr;
-
-/\* if UART is empty return an error \*/
-
-while(internal\_uart\_is\_rx\_empty(regs));
-
-return internal\_uart\_rx\_byte(regs) & 0xFF;
-
+    return internal_uart_rx_byte(regs) & 0xFF;
 }
 
 void init(void) {
-
-// First we initialise the UART device, which will write to the
-
-// device's hardware registers. Which means we need access to
-
-// the UART device.
-
-uart\_init();
-
-// After initialising the UART, print a message to the terminal
-
-// saying that the serial server has started.
-
-uart\_put\_str("SERIAL SERVER: starting\\n");
-
+    // First we initialise the UART device, which will write to the
+    // device's hardware registers. Which means we need access to
+    // the UART device.
+    uart_init();
+    // After initialising the UART, print a message to the terminal
+    // saying that the serial server has started.
+    uart_put_str("SERIAL SERVER: starting\n");
 }
 
-#define UART\_IRQ\_CH 0
+#define UART_IRQ_CH 0
+#define CLIENT_CH 2
 
-#define CLIENT\_CH 2
+uintptr_t serial_to_client_vaddr;
+uintptr_t client_to_serial_vaddr;
 
-uintptr\_t serial\_to\_client\_vaddr;
-
-uintptr\_t client\_to\_serial\_vaddr;
-
-microkit\_msginfo protected(microkit\_channel channel, microkit\_msginfo msginfo)
-
+microkit_msginfo protected(microkit_channel channel, microkit_msginfo msginfo)
 {
-
-switch (channel) {
-
-case CLIENT\_CH: {
-
-((char \*)serial\_to\_client\_vaddr)\[0\] = (char) uart\_get\_char();
-
-return microkit\_msginfo\_new(0, 1);
-
-break;
-
+    switch (channel) {
+        case CLIENT_CH: {
+            ((char *)serial_to_client_vaddr)[0] = (char) uart_get_char();
+            return microkit_msginfo_new(0, 1);
+            break;
+        }
+    }
+    return microkit_msginfo_new(0, 0);
 }
 
+void notified(microkit_channel channel) {
+    switch (channel) {
+        case CLIENT_CH:
+            uart_put_str((char *)client_to_serial_vaddr);
+            break;
+    }
 }
-
-return microkit\_msginfo\_new(0, 0);
-
-}
-
-void notified(microkit\_channel channel) {
-
-switch (channel) {
-
-case CLIENT\_CH:
-
-uart\_put\_str((char \*)client\_to\_serial\_vaddr);
-
-break;
-
-}
-
-}
+```
 
 uninitialized-stack-frame-control-flow.system
 
-\<?xml version="1.0" encoding="UTF-8"?\>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<system>
+    <!-- Define your system here -->
 
-\<system\>
+    <memory_region name="uart" size="0x1_000" phys_addr="0x10000000"/>
+    <memory_region name="client_to_serial" size="0x1000" />
+    <memory_region name="serial_to_client" size="0x1000" />
 
-\<!-- Define your system here --\>
+    <protection_domain name="serial_server" priority="254">
+        <program_image path="serial_server.elf" />
+        <map mr="uart" vaddr="0x2000000" perms="rw" cached="false" setvar_vaddr="uart_base_vaddr"/>
+        <map mr="serial_to_client" vaddr="0x4000000" perms="wr" setvar_vaddr="serial_to_client_vaddr"/>
+        <map mr="client_to_serial" vaddr="0x4001000" perms="r" setvar_vaddr="client_to_serial_vaddr"/>
+    </protection_domain>
 
-\<memory\_region name="uart" size="0x1\_000" phys\_addr="0x10000000"/\>
+    <protection_domain name="uninitialized-stack-frame-control-flow" priority="253">
+        <program_image path="uninitialized-stack-frame-control-flow.elf" />
+        <map mr="serial_to_client" vaddr="0x4000000" perms="r" setvar_vaddr="serial_to_client_vaddr"/>
+        <map mr="client_to_serial" vaddr="0x4001000" perms="rw" setvar_vaddr="client_to_serial_vaddr"/>
+    </protection_domain>
 
-\<memory\_region name="client\_to\_serial" size="0x1000" /\>
-
-\<memory\_region name="serial\_to\_client" size="0x1000" /\>
-
-\<protection\_domain name="serial\_server" priority="254"\>
-
-\<program\_image path="serial\_server.elf" /\>
-
-\<map mr="uart" vaddr="0x2000000" perms="rw" cached="false" setvar\_vaddr="uart\_base\_vaddr"/\>
-
-\<map mr="serial\_to\_client" vaddr="0x4000000" perms="wr" setvar\_vaddr="serial\_to\_client\_vaddr"/\>
-
-\<map mr="client\_to\_serial" vaddr="0x4001000" perms="r" setvar\_vaddr="client\_to\_serial\_vaddr"/\>
-
-\</protection\_domain\>
-
-\<protection\_domain name="uninitialized-stack-frame-control-flow" priority="253"\>
-
-\<program\_image path="uninitialized-stack-frame-control-flow.elf" /\>
-
-\<map mr="serial\_to\_client" vaddr="0x4000000" perms="r" setvar\_vaddr="serial\_to\_client\_vaddr"/\>
-
-\<map mr="client\_to\_serial" vaddr="0x4001000" perms="rw" setvar\_vaddr="client\_to\_serial\_vaddr"/\>
-
-\</protection\_domain\>
-
-\<channel\>
-
-\<end pd="uninitialized-stack-frame-control-flow" id="1" pp="true" /\>
-
-\<end pd="serial\_server" id="2" /\>
-
-\</channel\>
-
-\</system\>
+    <channel>
+        <end pd="uninitialized-stack-frame-control-flow" id="1" pp="true" />
+        <end pd="serial_server" id="2" />
+    </channel>
+</system>
+```

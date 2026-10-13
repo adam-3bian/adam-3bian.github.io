@@ -38,17 +38,12 @@ This makes CHERI relevant where a full process boundary is too costly, too coars
 
 Potential areas include:
 
-network and storage data paths;
-
-database extensions and native plug-ins;
-
-media, document, archive, and image parsers;
-
-hypervisor device models and hardware emulation;
-
-language runtimes and native foreign-function interfaces;
-
-host agents with access to credentials or management services.
+- network and storage data paths;
+- database extensions and native plug-ins;
+- media, document, archive, and image parsers;
+- hypervisor device models and hardware emulation;
+- language runtimes and native foreign-function interfaces;
+- host agents with access to credentials or management services.
 
 ## A further layer of isolation
 

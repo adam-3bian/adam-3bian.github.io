@@ -36,15 +36,11 @@ CHERI makes part of that boundary enforceable by the processor. Capabilities lim
 
 These mechanisms can support properties such as:
 
-spatial memory safety, keeping capability-mediated access within the intended object;
-
-access permissions such as read-only, write-only, or non-executable;
-
-separation between components with different criticality or provenance;
-
-restricted authority for diagnostics, communications, and third-party code;
-
-detection of invalid access at the operation that caused it.
+- spatial memory safety, keeping capability-mediated access within the intended object;
+- access permissions such as read-only, write-only, or non-executable;
+- separation between components with different criticality or provenance;
+- restricted authority for diagnostics, communications, and third-party code;
+- detection of invalid access at the operation that caused it.
 
 A diagnostics component, for example, can receive read-only access to selected measurements without authority over actuator state. A parser can handle an incoming message inside bounded buffers without direct access to the control loop.
 

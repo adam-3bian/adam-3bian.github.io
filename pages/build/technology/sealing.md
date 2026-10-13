@@ -33,7 +33,9 @@ CHERI sealing supports that pattern. A sealed capability is a protected token th
 
 An application programming interface often exposes an opaque handle:
 
-session\_t \*session;
+```c
+session_t *session;
+```
 
 Conventional C relies on type discipline and hidden structure definitions to discourage callers from inspecting the object. A memory error can still bypass that convention if the process holds a usable address.
 
@@ -45,15 +47,11 @@ Sealing associates a capability with an architecture-defined object type. The ty
 
 The exact encoding and instruction sequence differ between CHERI architectures. The general model is:
 
-A trusted component creates a capability for an object or entry point.
-
-It seals that capability with controlled sealing authority.
-
-It passes the sealed token to less-trusted code.
-
-The recipient can store, copy, and return the token but cannot dereference it directly.
-
-A trusted service validates and unseals it, or the architecture uses it through a defined entry mechanism.
+1. A trusted component creates a capability for an object or entry point.
+2. It seals that capability with controlled sealing authority.
+3. It passes the sealed token to less-trusted code.
+4. The recipient can store, copy, and return the token but cannot dereference it directly.
+5. A trusted service validates and unseals it, or the architecture uses it through a defined entry mechanism.
 
 ## Protected entry points
 
@@ -67,19 +65,13 @@ Use the platform’s supported compartment calling convention and runtime rather
 
 Sealed capabilities are useful for:
 
-object handles
-
-service references
-
-protected callbacks
-
-compartment entry points
-
-trusted-stack records
-
-allocator or runtime metadata
-
-representing authority that may be invoked but not inspected directly
+- object handles
+- service references
+- protected callbacks
+- compartment entry points
+- trusted-stack records
+- allocator or runtime metadata
+- representing authority that may be invoked but not inspected directly
 
 CHERIoT, for example, uses sealing as part of several software patterns, including protected objects and cross-compartment mechanisms.
 
@@ -95,24 +87,17 @@ The ability to seal or unseal a type is itself authority. If every component rec
 
 Apply least privilege:
 
-give each service only the sealing range or type authority it needs
-
-keep unsealing inside the trusted implementation
-
-validate object state after unsealing
-
-define lifetime and revocation for sealed handles
-
-prevent callers from substituting tokens of an unexpected type
+- give each service only the sealing range or type authority it needs
+- keep unsealing inside the trusted implementation
+- validate object state after unsealing
+- define lifetime and revocation for sealed handles
+- prevent callers from substituting tokens of an unexpected type
 
 ## Important limits
 
-Sealing does not provide temporal safety by itself. A sealed handle may still refer to an object whose lifetime ended.
-
-A sealed entry point is only one part of a safe compartment transition.
-
-Architecture-specific type widths and sentry behaviour differ.
-
-Copying a token delegates its authority unless the surrounding design prevents or tracks delegation.
+- Sealing does not provide temporal safety by itself. A sealed handle may still refer to an object whose lifetime ended.
+- A sealed entry point is only one part of a safe compartment transition.
+- Architecture-specific type widths and sentry behaviour differ.
+- Copying a token delegates its authority unless the surrounding design prevents or tracks delegation.
 
 Sealing turns capabilities into protected interface elements. It becomes most useful within a complete Compartmentalisation model with explicit authority and lifecycle rules.

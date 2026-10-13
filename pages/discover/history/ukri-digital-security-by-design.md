@@ -35,17 +35,12 @@ Arm’s Morello programme was the most visible technical platform. It produced a
 
 DSbD also supported the layers and activities needed around that platform:
 
-compilers, operating systems, libraries, and development tools
-
-demonstrator projects in multiple sectors
-
-software porting and security evaluation
-
-technical training and remote access to hardware
-
-economic, social, policy, and adoption research
-
-industry engagement and ecosystem development
+- compilers, operating systems, libraries, and development tools
+- demonstrator projects in multiple sectors
+- software porting and security evaluation
+- technical training and remote access to hardware
+- economic, social, policy, and adoption research
+- industry engagement and ecosystem development
 
 This breadth mattered because processor features create value only when developers can use them and organisations can justify deploying them.
 

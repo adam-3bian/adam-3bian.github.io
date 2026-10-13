@@ -54,11 +54,9 @@ CHERI can also reduce the impact of vulnerabilities in third-party software by l
 
 Rust and CHERI solve different parts of the problem:
 
-Rust helps prevent vulnerabilities from being introduced
-
-CHERI helps contain vulnerabilities that still occur
-
-Compartmentalisation, enforced by CHERI, limits the impact of compromise
+- Rust helps prevent vulnerabilities from being introduced
+- CHERI helps contain vulnerabilities that still occur
+- Compartmentalisation, enforced by CHERI, limits the impact of compromise
 
 Together they provide multiple layers of protection, consistent with the layered approach described by ETSI TS 104 198. This complementarity is increasingly recognised across industry and academia. The CHERI Alliance’s Rust+CHERI working group focuses specifically on advancing these technologies together.
 
@@ -70,12 +68,8 @@ Rust can help ensure the application calls the library safely. CHERI can ensure 
 
 ## Key takeaways
 
-Rust and CHERI are complementary technologies
-
-Rust helps prevent vulnerabilities in new code
-
-CHERI constrains unsafe code and native components at runtime
-
-CHERI enables fine-grained compartmentalisation and least privilege
-
-Together they provide stronger protection than either approach alone
+- Rust and CHERI are complementary technologies
+- Rust helps prevent vulnerabilities in new code
+- CHERI constrains unsafe code and native components at runtime
+- CHERI enables fine-grained compartmentalisation and least privilege
+- Together they provide stronger protection than either approach alone

@@ -48,15 +48,11 @@ Pure-capability systems use CHERI capabilities throughout the software stack, pr
 
 Many well-structured C and C++ projects require few source changes when moved to CHERI. Code is easier to port when it:
 
-uses pointer types for pointers rather than storing them in integers
-
-keeps array lengths with the arrays they describe
-
-uses standard allocation and library interfaces
-
-avoids relying on object layout outside the language rules
-
-separates serialised data formats from in-memory pointers
+- uses pointer types for pointers rather than storing them in integers
+- keeps array lengths with the arrays they describe
+- uses standard allocation and library interfaces
+- avoids relying on object layout outside the language rules
+- separates serialised data formats from in-memory pointers
 
 The compiler and runtime can then create capabilities with appropriate permissions and bounds automatically.
 
@@ -64,15 +60,11 @@ The compiler and runtime can then create capabilities with appropriate permissio
 
 Porting work often reveals software that:
 
-Treats pointers and integers as interchangeable
-
-Assumes a fixed pointer size
-
-Stores memory addresses in files or network messages
-
-Accesses memory beyond intended object boundaries
-
-Relies on low-level implementation details of a specific platform
+- Treats pointers and integers as interchangeable
+- Assumes a fixed pointer size
+- Stores memory addresses in files or network messages
+- Accesses memory beyond intended object boundaries
+- Relies on low-level implementation details of a specific platform
 
 Many of these patterns are already fragile and discouraged by modern coding practices. Porting to CHERI frequently uncovers hidden bugs, unsafe assumptions, and memory-safety vulnerabilities that existing testing may never have revealed. CHERI does not introduce these issues; it helps bring them to light.
 

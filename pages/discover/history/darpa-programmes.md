@@ -37,17 +37,12 @@ SRI International and the University of Cambridge began the CRASH-worthy Trustwo
 
 CRASH supported work including:
 
-capability extensions to a 64-bit MIPS architecture
-
-the BERI FPGA processor platform
-
-CHERI-aware compiler and operating-system support
-
-early compartmentalisation models
-
-formal methods and security analysis
-
-technology transfer and engagement with industry
+- capability extensions to a 64-bit MIPS architecture
+- the BERI FPGA processor platform
+- CHERI-aware compiler and operating-system support
+- early compartmentalisation models
+- formal methods and security analysis
+- technology transfer and engagement with industry
 
 The clean-slate framing did not mean ignoring existing systems. One of CHERI’s defining choices was a hybrid architecture that could coexist with conventional virtual memory and support incremental software adoption.
 
@@ -73,15 +68,11 @@ Subsequent DARPA support, including the Compartmentalization and Privilege Manag
 
 The sequence allowed the work to move through distinct questions:
 
-Can capabilities be integrated with a modern RISC architecture?
-
-Can a complete open-source operating system and C/C++ toolchain use them?
-
-Can the model move to other instruction sets and processor scales?
-
-Can security properties be tested through formal and adversarial methods?
-
-Can compartments be made practical for large, real software systems?
+1. Can capabilities be integrated with a modern RISC architecture?
+2. Can a complete open-source operating system and C/C++ toolchain use them?
+3. Can the model move to other instruction sets and processor scales?
+4. Can security properties be tested through formal and adversarial methods?
+5. Can compartments be made practical for large, real software systems?
 
 No one programme produced the entire current ecosystem. Together, they helped create the technical evidence and open artifacts that later work on Morello, CHERI-RISC-V, CHERIoT, commercial products, and standards could use.
 

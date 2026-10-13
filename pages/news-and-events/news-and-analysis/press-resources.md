@@ -33,31 +33,22 @@ For interview requests, expert commentary, speaking opportunities, or additional
 
 We can help with:
 
-Background on CHERI technology and memory safety
-
-Industry adoption and deployment activities
-
-CHERI Alliance initiatives and working groups
-
-Expert perspectives on secure-by-design development
-
-Commentary on cybersecurity and memory safety trends
+- Background on CHERI technology and memory safety
+- Industry adoption and deployment activities
+- CHERI Alliance initiatives and working groups
+- Expert perspectives on secure-by-design development
+- Commentary on cybersecurity and memory safety trends
 
 ## Resources for the media
 
 The following resources are available to support accurate reporting and coverage:
 
-CHERI Alliance introduction
-
-Logos and brand assets
-
-Leadership biographies and photographs
-
-Event information and media materials
-
-Technical background on CHERI technology
-
-Fact sheets and key messaging
+- CHERI Alliance introduction
+- Logos and brand assets
+- Leadership biographies and photographs
+- Event information and media materials
+- Technical background on CHERI technology
+- Fact sheets and key messaging
 
 ## Press releases and announcements
 

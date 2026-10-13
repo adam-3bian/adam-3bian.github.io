@@ -39,21 +39,14 @@ Public specifications, formal models, open-source compilers, operating systems, 
 
 Commercialisation is not only the sale of a chip. Different organisations provide different layers:
 
-licensable processor intellectual property
-
-system-on-chip and microcontroller silicon
-
-FPGA development platforms and evaluation boards
-
-compilers, debuggers, simulators, and software development kits
-
-operating systems and runtime support
-
-porting, integration, verification, and assurance services
-
-training and developer support
-
-end products that incorporate CHERI-enabled components
+- licensable processor intellectual property
+- system-on-chip and microcontroller silicon
+- FPGA development platforms and evaluation boards
+- compilers, debuggers, simulators, and software development kits
+- operating systems and runtime support
+- porting, integration, verification, and assurance services
+- training and developer support
+- end products that incorporate CHERI-enabled components
 
 An adopter may buy several of these layers from different suppliers. Interoperability and common software expectations therefore matter alongside individual product features.
 
@@ -79,17 +72,12 @@ In March 2026, the programme listed its first certified products, CHERIoT Ibex a
 
 Commercial availability does not remove integration risk. Product teams still need to answer:
 
-Which CHERI architecture and software application binary interface (ABI) does the product support?
-
-Can the required operating system, libraries, and language runtimes run on it?
-
-What source changes are needed for the workload?
-
-How are temporal safety and compartmentalisation implemented?
-
-What performance, area, power, and memory costs apply?
-
-What supplier support and lifecycle commitments are available?
+- Which CHERI architecture and software application binary interface (ABI) does the product support?
+- Can the required operating system, libraries, and language runtimes run on it?
+- What source changes are needed for the workload?
+- How are temporal safety and compartmentalisation implemented?
+- What performance, area, power, and memory costs apply?
+- What supplier support and lifecycle commitments are available?
 
 Which evidence can be reused in the product’s assurance case?
 

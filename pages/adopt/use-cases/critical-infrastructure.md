@@ -38,9 +38,8 @@ CHERI can protect that native software without requiring its purpose to change. 
 
 This provides two forms of protection:
 
-many invalid memory accesses can be stopped at the processor;
-
-a component compromised through another weakness can be prevented from reaching unrelated functions.
+- many invalid memory accesses can be stopped at the processor;
+- a component compromised through another weakness can be prevented from reaching unrelated functions.
 
 The second property is particularly relevant to resilience. An exposed service does not need authority over every part of the device because it shares the same processor.
 
@@ -48,17 +47,12 @@ The second property is particularly relevant to resilience. An exposed service d
 
 CHERI can be relevant inside:
 
-gateways between operational, enterprise, and external networks;
-
-protocol conversion and message-processing services;
-
-remote maintenance and software-update components;
-
-controllers containing modules from several suppliers;
-
-monitoring appliances and edge devices;
-
-systems that combine critical and non-critical functions on shared hardware.
+- gateways between operational, enterprise, and external networks;
+- protocol conversion and message-processing services;
+- remote maintenance and software-update components;
+- controllers containing modules from several suppliers;
+- monitoring appliances and edge devices;
+- systems that combine critical and non-critical functions on shared hardware.
 
 A gateway parser, for example, can receive access to an incoming message and a narrow interface to a control service while remaining unable to read credentials, alter configuration, or access unrelated device state.
 

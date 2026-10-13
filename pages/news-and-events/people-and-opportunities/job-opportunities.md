@@ -28,9 +28,8 @@ related:
 
 Each entry distinguishes a formal vacancy from an early expression of interest and links back to the original source for the latest status.
 
-Expression of interest Fully remote
-
-United Kingdom
+- Expression of interest Fully remote
+- United Kingdom
 
 ### CHERIoT Software Engineer
 

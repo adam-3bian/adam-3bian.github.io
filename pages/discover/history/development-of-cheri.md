@@ -73,18 +73,12 @@ The CHERI Alliance formally launched in 2024 to coordinate adoption, alignment, 
 
 CHERI’s development is best understood as a sequence of working systems, not a single invention date. Each stage broadened the evidence:
 
-early architecture and FPGA feasibility
-
-full compiler and operating-system integration
-
-pure-capability C and C++ at scale
-
-fine-grained compartments
-
-portability across MIPS, RISC-V, and Arm designs
-
-embedded and application-class platforms
-
-commercial implementations and product assessment
+- early architecture and FPGA feasibility
+- full compiler and operating-system integration
+- pure-capability C and C++ at scale
+- fine-grained compartments
+- portability across MIPS, RISC-V, and Arm designs
+- embedded and application-class platforms
+- commercial implementations and product assessment
 
 Current work focuses on standards, support in mainline software projects, product deployment, assurance, and the next generation of CHERI-enabled systems.

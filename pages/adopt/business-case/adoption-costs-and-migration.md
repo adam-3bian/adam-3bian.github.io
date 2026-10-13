@@ -31,13 +31,10 @@ Adopting CHERI does not imply rewriting an entire product. The scope can range f
 
 CHERI supports more than one transition model:
 
-Targeted compartments place selected components behind restricted interfaces, limiting their access to the rest of a system.
-
-Hybrid systems allow conventional pointers and capabilities to coexist, which supports gradual change and compatibility with software that has not yet moved.
-
-Pure-capability systems represent pointers as capabilities throughout the protected environment, providing broader and more consistent enforcement.
-
-New CHERI-native designs build capability boundaries into a platform from the outset, as seen in embedded systems such as CHERIoT.
+- Targeted compartments place selected components behind restricted interfaces, limiting their access to the rest of a system.
+- Hybrid systems allow conventional pointers and capabilities to coexist, which supports gradual change and compatibility with software that has not yet moved.
+- Pure-capability systems represent pointers as capabilities throughout the protected environment, providing broader and more consistent enforcement.
+- New CHERI-native designs build capability boundaries into a platform from the outset, as seen in embedded systems such as CHERIoT.
 
 These models offer different levels of coverage. A narrower change can reduce initial disruption, while a pure-capability environment exposes more unsafe assumptions and places more software under hardware enforcement.
 
@@ -47,15 +44,11 @@ Much existing C and C++ code compiles with limited change. Work tends to concent
 
 Costs can arise across several parts of a product:
 
-processor intellectual property, hardware, boards, simulators, and operating-system support;
-
-toolchains, build systems, continuous integration, debuggers, and analysis tools;
-
-source changes, third-party dependencies, assembly, and compartment interfaces;
-
-performance, memory, power, timing, and compatibility testing;
-
-training, documentation, assurance, supplier support, and long-term maintenance.
+- processor intellectual property, hardware, boards, simulators, and operating-system support;
+- toolchains, build systems, continuous integration, debuggers, and analysis tools;
+- source changes, third-party dependencies, assembly, and compartment interfaces;
+- performance, memory, power, timing, and compatibility testing;
+- training, documentation, assurance, supplier support, and long-term maintenance.
 
 The shape of those costs is highly product-specific. A self-contained parser may be a modest port, while a low-level runtime or large codebase with unusual memory handling may require deeper work.
 

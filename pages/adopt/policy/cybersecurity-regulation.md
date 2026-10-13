@@ -55,15 +55,11 @@ For essential and important services, CHERI can contribute to prevention and con
 
 A CHERI implementation can provide evidence at several levels:
 
-Demonstrating stronger memory protection
-
-Demonstrating restricted component authority
-
-Demonstrating compartment boundaries
-
-Demonstrating blocked invalid accesses
-
-Documenting assumptions and limitations
+- Demonstrating stronger memory protection
+- Demonstrating restricted component authority
+- Demonstrating compartment boundaries
+- Demonstrating blocked invalid accesses
+- Documenting assumptions and limitations
 
 That evidence can support a wider account of secure design and risk reduction. It does not replace legal interpretation or establish that every requirement has been met.
 

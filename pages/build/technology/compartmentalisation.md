@@ -41,23 +41,17 @@ The security boundary is therefore not “which addresses exist?” but “which
 
 The parser might receive:
 
-a read-only capability bounded to one packet
-
-a writable capability bounded to one output record
-
-a sealed capability for a logging service
-
-an entry capability for returning to the caller
+- a read-only capability bounded to one packet
+- a writable capability bounded to one output record
+- a sealed capability for a logging service
+- an entry capability for returning to the caller
 
 It should not receive:
 
-a capability for the application’s key store
-
-writable authority for unrelated heap objects
-
-general access to the filesystem or network
-
-a broad capability from which those authorities can be derived
+- a capability for the application’s key store
+- writable authority for unrelated heap objects
+- general access to the filesystem or network
+- a broad capability from which those authorities can be derived
 
 If a memory bug gives an attacker control of the parser, the attacker inherits this limited set rather than the authority of the entire process.
 
@@ -65,17 +59,12 @@ If a memory bug gives an attacker control of the parser, the attacker inherits t
 
 A secure call between compartments may need to:
 
-enter only at an approved entry point
-
-switch to a protected stack
-
-remove caller capabilities that are not explicit arguments
-
-establish the callee’s code and data authority
-
-preserve a protected return path
-
-handle faults without exposing privileged state
+- enter only at an approved entry point
+- switch to a protected stack
+- remove caller capabilities that are not explicit arguments
+- establish the callee’s code and data authority
+- preserve a protected return path
+- handle faults without exposing privileged state
 
 CHERI sealing and sentry capabilities provide architectural building blocks. A trusted switcher, operating system, or real-time operating system (RTOS) implements the complete transition model.
 
@@ -87,13 +76,10 @@ Capabilities make delegation explicit. A caller can derive a narrower capability
 
 This supports patterns such as:
 
-giving a decoder one image rather than the whole media library
-
-giving a driver access to one device queue rather than all physical memory
-
-giving a plugin one service interface rather than the host’s internal objects
-
-giving a crypto service a key handle rather than raw key bytes
+- giving a decoder one image rather than the whole media library
+- giving a driver access to one device queue rather than all physical memory
+- giving a plugin one service interface rather than the host’s internal objects
+- giving a crypto service a key handle rather than raw key bytes
 
 The receiver may be able to delegate the capability again unless the interface or platform restricts that behaviour. Authority-flow analysis should include onward transfer and retention.
 
@@ -105,9 +91,8 @@ Compartmentalisation constrains which valid objects and services a component rec
 
 Strong systems use both:
 
-memory safety to keep each access within its authorised object
-
-compartmentalisation to keep each component’s authorised objects small in number and scope
+- memory safety to keep each access within its authorised object
+- compartmentalisation to keep each component’s authorised objects small in number and scope
 
 ## Design limits
 
@@ -127,18 +112,12 @@ A trusted switcher or runtime becomes part of the trusted computing base.
 
 A compartment claim should include:
 
-assets and threats addressed
-
-an authority record for initial and passed capabilities
-
-interface and lifetime definitions
-
-negative tests for denied operations
-
-transition and fault-recovery behaviour
-
-performance on the intended platform
-
-the trusted components that enforce the boundary
+- assets and threats addressed
+- an authority record for initial and passed capabilities
+- interface and lifetime definitions
+- negative tests for denied operations
+- transition and fault-recovery behaviour
+- performance on the intended platform
+- the trusted components that enforce the boundary
 
 See Build Compartments for a practical workflow and Sealing for one of the underlying mechanisms.

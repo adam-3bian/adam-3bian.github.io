@@ -39,17 +39,12 @@ Standardisation must preserve useful security properties while allowing processo
 
 Long-term adoption depends on reducing the number of permanent forks. Important directions include:
 
-integrating CHERI support into mainstream compiler infrastructure
-
-maintaining cross-architecture Linux support and working towards acceptance in the main Linux project
-
-extending operating-system and runtime coverage
-
-improving package, library, debugger, and build-system portability
-
-strengthening Rust and other memory-safe language support
-
-providing continuous integration across simulators and hardware
+- integrating CHERI support into mainstream compiler infrastructure
+- maintaining cross-architecture Linux support and working towards acceptance in the main Linux project
+- extending operating-system and runtime coverage
+- improving package, library, debugger, and build-system portability
+- strengthening Rust and other memory-safe language support
+- providing continuous integration across simulators and hardware
 
 Moving support into mainline projects is not only a technical task. Projects need maintainers, review capacity, test infrastructure, and designs that serve users beyond one demonstration.
 
@@ -81,17 +76,12 @@ The CHERI Enabled programme provides one product-focused evidence route. It is e
 
 Technical demonstrations need repeatable evidence from real workloads. Organisations need to compare:
 
-vulnerabilities prevented or contained
-
-porting and training effort
-
-performance, memory, power, and silicon cost
-
-update and incident-response burden
-
-assurance evidence reused across a product line
-
-supplier availability and long-term support
+- vulnerabilities prevented or contained
+- porting and training effort
+- performance, memory, power, and silicon cost
+- update and incident-response burden
+- assurance evidence reused across a product line
+- supplier availability and long-term support
 
 Publishing both benefits and limitations will help buyers make decisions without treating CHERI as a universal answer.
 

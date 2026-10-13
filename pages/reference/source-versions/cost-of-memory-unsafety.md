@@ -45,13 +45,10 @@ Memory-safety vulnerabilities continue to account most serious software vulnerab
 
 At the same time:
 
-software is becoming more connected
-
-products remain deployed for longer
-
-regulatory expectations are increasing
-
-governments are placing greater emphasis on memory safety and secure-by-design practices
+- software is becoming more connected
+- products remain deployed for longer
+- regulatory expectations are increasing
+- governments are placing greater emphasis on memory safety and secure-by-design practices
 
 For many organisations, reducing memory-safety risk is becoming a strategic objective rather than simply an engineering concern. This is highlighted in CISA’s case for memory-safe roadmaps.
 
@@ -67,15 +64,11 @@ Combined with compartmentalisation, CHERI can also limit how far an attacker can
 
 ### Key benefits
 
-Reduce exposure to memory-safety vulnerabilities
-
-Limit the impact of software compromises
-
-Protect existing C and C++ investments
-
-Improve resilience of long-lived products
-
-Support secure-by-design strategies
+- Reduce exposure to memory-safety vulnerabilities
+- Limit the impact of software compromises
+- Protect existing C and C++ investments
+- Improve resilience of long-lived products
+- Support secure-by-design strategies
 
 ## The Business Outcome
 
@@ -85,12 +78,8 @@ The goal is not simply to prevent individual vulnerabilities. It is to reduce th
 
 By helping organisations detect faults earlier, contain compromises, and protect existing software investments, CHERI can help teams:
 
-reduce security risk
-
-improve product resilience
-
-simplify long-term support
-
-maintain customer trust
-
-focus resources on innovation rather than emergency response
+- reduce security risk
+- improve product resilience
+- simplify long-term support
+- maintain customer trust
+- focus resources on innovation rather than emergency response

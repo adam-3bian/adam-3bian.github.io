@@ -43,21 +43,14 @@ Early embedded work included compartmentalised real-time systems and CHERI-enabl
 
 CHERIoT developed into a complete 32-bit hardware-software platform for this environment. Its design co-ordinates:
 
-a compact CHERI-enabled RISC-V instruction set
-
-tagged-memory processor cores
-
-a privilege-separated real-time operating system
-
-fast, fine-grained software compartments
-
-a C and C++ toolchain and language extensions
-
-temporal-safety mechanisms integrated with allocation
-
-a formal instruction-set architecture (ISA) model and generated simulator
-
-auditing and firmware-development tools
+- a compact CHERI-enabled RISC-V instruction set
+- tagged-memory processor cores
+- a privilege-separated real-time operating system
+- fast, fine-grained software compartments
+- a C and C++ toolchain and language extensions
+- temporal-safety mechanisms integrated with allocation
+- a formal instruction-set architecture (ISA) model and generated simulator
+- auditing and firmware-development tools
 
 The platform treats security as a property of the whole embedded stack rather than one processor feature.
 

@@ -33,19 +33,13 @@ CHERI permissions let capabilities express these differences in hardware-enforce
 
 The precise permission set varies by CHERI architecture, but it commonly includes authority related to:
 
-loading ordinary data
-
-storing ordinary data
-
-fetching or executing instructions
-
-loading capabilities from memory
-
-storing capabilities to memory
-
-sealing or unsealing protected objects
-
-accessing privileged or system resources
+- loading ordinary data
+- storing ordinary data
+- fetching or executing instructions
+- loading capabilities from memory
+- storing capabilities to memory
+- sealing or unsealing protected objects
+- accessing privileged or system resources
 
 Separating data access from capability access is especially useful. A component may be allowed to copy ordinary bytes from a buffer while being prevented from loading and acquiring capabilities stored inside it.
 
@@ -53,9 +47,10 @@ Separating data access from capability access is especially useful. A component 
 
 Software can derive a less powerful capability by clearing permissions. For example:
 
+```text
 Original:  read + write + load-capability + store-capability
-
 Derived:   read
+```
 
 The derived capability can be passed to a parser that needs to inspect input but must not modify it or acquire embedded authority.
 
@@ -91,15 +86,11 @@ Similarly, store-capability permission can control whether a component may place
 
 When creating an interface, ask which individual operations are necessary:
 
-Parse input: Provide a capability bounded to the input, make it read-only, and remove capability-load permission where the architecture supports it.
-
-Fill output: Provide a capability bounded to the output, make it writable, and remove execute permission.
-
-Call one service: Provide a sealed or sentry entry capability for that service.
-
-Execute code: Provide execute authority without permission to write the code as data.
-
-Share immutable data: Provide read-only authority and avoid giving the recipient another writable reference to the same data.
+- Parse input: Provide a capability bounded to the input, make it read-only, and remove capability-load permission where the architecture supports it.
+- Fill output: Provide a capability bounded to the output, make it writable, and remove execute permission.
+- Call one service: Provide a sealed or sentry entry capability for that service.
+- Execute code: Provide execute authority without permission to write the code as data.
+- Share immutable data: Provide read-only authority and avoid giving the recipient another writable reference to the same data.
 
 Start narrow and add a permission only when a documented operation requires it.
 

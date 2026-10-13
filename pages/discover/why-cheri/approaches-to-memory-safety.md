@@ -44,11 +44,9 @@ However, many systems depend on large, long-lived codebases that cannot realisti
 
 Tools exist to help developpers finding bugs and improving code quality:
 
-Static analysers inspect source or compiled code without running it.
-
-Dynamic tools, such as sanitizers, observe a running program and detect invalid behaviour.
-
-Fuzzers repeatedly provide unusual inputs to find paths that ordinary tests miss.
+- Static analysers inspect source or compiled code without running it.
+- Dynamic tools, such as sanitizers, observe a running program and detect invalid behaviour.
+- Fuzzers repeatedly provide unusual inputs to find paths that ordinary tests miss.
 
 These tools help uncover many vulnerabilities, but no tool can find every possible bug.
 
@@ -72,9 +70,8 @@ CHERI extends processor architectures with hardware-protected capabilities. Thes
 
 This enables two powerful forms of protection:
 
-Fine-grained memory protection. Pointers can be bounded to objects and restricted to permitted operations.
-
-Scalable compartmentalisation. Software components can be given only the permissions they need, helping contain faults and reduce the impact of compromise
+- Fine-grained memory protection. Pointers can be bounded to objects and restricted to permitted operations.
+- Scalable compartmentalisation. Software components can be given only the permissions they need, helping contain faults and reduce the impact of compromise
 
 Unlike many approaches, CHERI can strengthen existing C and C++ software without requiring every component to be rewritten. It can also provide a stronger foundation beneath memory-safe languages and their runtimes.
 
@@ -86,12 +83,9 @@ The strongest solutions combine multiple layers. Memory-safe languages help prev
 
 ## Key takeaways
 
-No single technology or language delivers memory safety.
-
-Combining prevention, detection, and containment provide stronger assurance.
-
-Limiting authority limits risk.
-
-CHERI enables efficient hardware-enforced protection and compartmentalisation.
+- No single technology or language delivers memory safety.
+- Combining prevention, detection, and containment provide stronger assurance.
+- Limiting authority limits risk.
+- CHERI enables efficient hardware-enforced protection and compartmentalisation.
 
 See CHERI and Rust for a closer look at how language and hardware safety can work together.

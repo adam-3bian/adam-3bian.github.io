@@ -40,13 +40,10 @@ CHERI enhances processors with a new type of pointer called a capability. CHERI 
 
 In a CHERI system, any part of the memory can only be accessed with a capability, which describes:
 
-A memory location
-
-The exact bounds of the memory area that can be accessed
-
-Permissions such as read, write, or execute
-
-Additional metadata used by the processor to enforce security rules
+- A memory location
+- The exact bounds of the memory area that can be accessed
+- Permissions such as read, write, or execute
+- Additional metadata used by the processor to enforce security rules
 
 Capabilities are checked every time memory is accessed.
 
@@ -62,13 +59,10 @@ Protection is built into the hardware rather than relying solely on software che
 
 Capabilities can also be used to create secure compartments: isolated parts of a system that have access only to the resources they need. A compartment might be:
 
-An application
-
-A library
-
-A service
-
-A security-critical function
+- An application
+- A library
+- A service
+- A security-critical function
 
 Each compartment receives its own capabilities and cannot freely access the memory of other compartments. CHERI makes it practical to create and manage large numbers of small compartments with very low overhead. This enables much finer-grained isolation than traditional security approaches, without the important performance penalty.
 

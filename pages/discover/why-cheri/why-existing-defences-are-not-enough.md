@@ -29,17 +29,12 @@ A connected device may have strong passwords, encrypted communications, regular 
 
 ## Different protections solve different problems
 
-Passwords and authentication control who can connect.
-
-Encryption protects data while it travels.
-
-Firewalls limit which network traffic can reach a device.
-
-Testing and code review find many defects before release.
-
-Updates fix flaws and vulnerabilities after they are discovered.
-
-Isolation and sandboxes can restrict what compromised software can access.
+- Passwords and authentication control who can connect.
+- Encryption protects data while it travels.
+- Firewalls limit which network traffic can reach a device.
+- Testing and code review find many defects before release.
+- Updates fix flaws and vulnerabilities after they are discovered.
+- Isolation and sandboxes can restrict what compromised software can access.
 
 These layers are important, and should certainly be used in products, but a memory vulnerability can still remain.
 
@@ -69,11 +64,9 @@ CHERI also supports much smaller compartments than are practical in many convent
 
 CHERI does not replace passwords, encryption, testing, updates, or secure software development. It adds protection underneath them:
 
-Prevent many forms of invalid memory access.
-
-Support very small compartments with only the access they need.
-
-Limit the impact of vulnerabilities that remain in software.
+- Prevent many forms of invalid memory access.
+- Support very small compartments with only the access they need.
+- Limit the impact of vulnerabilities that remain in software.
 
 The goal is simple: one software mistake should not be enough to compromise an entire system.
 

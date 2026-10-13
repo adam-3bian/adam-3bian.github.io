@@ -56,29 +56,20 @@ Adopting CHERI involves an initial investment, which may include new hardware, s
 
 Depending on the case, this could mean:
 
-Switching to a CHERI processor when designing a chip
-
-Porting existing software - which is often a straightforward engineering task
-
-Changing some development habits for software developers
-
-Using CHERI chips when designing a product
-
-Requesting CHERI products instead of less secure ones
+- Switching to a CHERI processor when designing a chip
+- Porting existing software - which is often a straightforward engineering task
+- Changing some development habits for software developers
+- Using CHERI chips when designing a product
+- Requesting CHERI products instead of less secure ones
 
 The return on CHERI is not measured only by incidents that never happen. Organisations can also benefit from:
 
-Reduced engineering effort spent investigating vulnerabilities
-
-Faster remediation and response times
-
-Lower operational disruption
-
-Reduced maintenance and support costs
-
-Reuse of assurance activities across product generations
-
-Longer useful life for software and platforms
+- Reduced engineering effort spent investigating vulnerabilities
+- Faster remediation and response times
+- Lower operational disruption
+- Reduced maintenance and support costs
+- Reuse of assurance activities across product generations
+- Longer useful life for software and platforms
 
 These benefits can often be observed long before a major security incident is avoided.
 
@@ -88,15 +79,11 @@ For product vendors, stronger security can also create value through increased c
 
 CHERI can also help organisations:
 
-Meet customer security expectations
-
-Support secure-by-design objectives
-
-Respond to emerging regulatory requirements
-
-Build trust with customers and stakeholders
-
-Differentiate products in security-conscious markets
+- Meet customer security expectations
+- Support secure-by-design objectives
+- Respond to emerging regulatory requirements
+- Build trust with customers and stakeholders
+- Differentiate products in security-conscious markets
 
 As security becomes an increasingly important factor in purchasing, procurement, and regulation, these benefits can translate into commercial advantage as well as risk reduction.
 
@@ -104,15 +91,11 @@ As security becomes an increasingly important factor in purchasing, procurement,
 
 CHERI often delivers the greatest value when:
 
-Existing C or C++ software is expensive to replace
-
-Products are widely deployed or difficult to update
-
-Systems are expected to operate for many years
-
-Software handles sensitive data or critical functions
-
-Security incidents have significant operational or financial consequences
+- Existing C or C++ software is expensive to replace
+- Products are widely deployed or difficult to update
+- Systems are expected to operate for many years
+- Software handles sensitive data or critical functions
+- Security incidents have significant operational or financial consequences
 
 The case may be weaker where software is already memory-safe, strong isolation mechanisms already exist, or the protected code has limited access to valuable assets.
 

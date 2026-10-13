@@ -39,15 +39,11 @@ These systems differed substantially. Some used tagged memory to distinguish pro
 
 The early capability machines established several principles that remain useful:
 
-Unforgeability: ordinary software should not be able to invent authority by writing a number.
-
-Least privilege: a component should receive only the authority required for its task.
-
-Delegation: a component can pass a limited capability to another component without granting all of its own authority.
-
-Object-oriented protection: access can be tied to a specific object or service, not just a large memory region.
-
-Protected representation: hardware or trusted software must preserve the difference between authority and ordinary data.
+- Unforgeability: ordinary software should not be able to invent authority by writing a number.
+- Least privilege: a component should receive only the authority required for its task.
+- Delegation: a component can pass a limited capability to another component without granting all of its own authority.
+- Object-oriented protection: access can be tied to a specific object or service, not just a large memory region.
+- Protected representation: hardware or trusted software must preserve the difference between authority and ordinary data.
 
 They also showed that capability-based operating systems could support practical computing rather than remaining a purely theoretical model.
 
@@ -63,17 +59,12 @@ The engineering challenge was therefore to combine fine-grained capabilities wit
 
 CHERI revisits capability protection with several modern design goals:
 
-extend established instruction-set architectures rather than require an entirely separate computing model
-
-support conventional virtual memory alongside capabilities
-
-work efficiently with compiled C and C++
-
-enable hybrid migration as well as pure-capability software
-
-provide fine-grained compartmentalisation within applications and operating systems
-
-use protected tags so software cannot forge a valid capability from ordinary bytes
+- extend established instruction-set architectures rather than require an entirely separate computing model
+- support conventional virtual memory alongside capabilities
+- work efficiently with compiled C and C++
+- enable hybrid migration as well as pure-capability software
+- provide fine-grained compartmentalisation within applications and operating systems
+- use protected tags so software cannot forge a valid capability from ordinary bytes
 
 CHERI is not a direct copy of any one early machine. It draws on the capability tradition while responding to modern processors, language application binary interfaces (ABIs), caches, operating systems, and large software stacks.
 

@@ -18,18 +18,13 @@ related:
 
 ## Make the business case
 
-The cost of memory unsafety
-
-The strategic case for CHERI
-
-Return on security investment
+- The cost of memory unsafety
+- The strategic case for CHERI
+- Return on security investment
 
 ## Plan adoption
 
-Case studies
-
-The CHERI Enabled programme
-
-CHERI Enabled products
-
-Cybersecurity regulation
+- Case studies
+- The CHERI Enabled programme
+- CHERI Enabled products
+- Cybersecurity regulation

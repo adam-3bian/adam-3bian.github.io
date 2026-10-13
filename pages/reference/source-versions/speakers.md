@@ -32,7 +32,7 @@ Biographies, affiliations, profile links, and the CHERI talks associated with ea
 <ul class="image-gallery portrait-gallery" markdown="block">
 <li markdown="block">
 
-![](/assets/people/adam-finney/594a07796a78-adam-finney.webp)
+![Adam Finney](/assets/people/adam-finney/594a07796a78-adam-finney.webp)
 
 CHERI Alliance
 
@@ -43,7 +43,7 @@ Adam Finney is a CHERI technologist with over 20 years of systems experience, an
 </li>
 <li markdown="block">
 
-![](/assets/pages/news-and-events--people-and-opportunities--speakers/9f93f0f49182-alastair-beresford.webp)
+![Alastair Beresford](/assets/pages/news-and-events--people-and-opportunities--speakers/9f93f0f49182-alastair-beresford.webp)
 
 University of Cambridge
 
@@ -54,7 +54,7 @@ Dr Alastair Beresford is a Professor of Computer Security at the University of C
 </li>
 <li markdown="block">
 
-![](/assets/people/alex-rebert/165b3d94aa33-alex-rebert.webp)
+![Alex Rebert](/assets/people/alex-rebert/165b3d94aa33-alex-rebert.webp)
 
 Google
 
@@ -65,7 +65,7 @@ Alex Rebert is an engineer at Google, where he focuses on memory safety. Previou
 </li>
 <li markdown="block">
 
-![](/assets/people/alexander-voyevoda/d4590afa2a27-alexander-voyevoda.webp)
+![Alexander Voyevoda](/assets/people/alexander-voyevoda/d4590afa2a27-alexander-voyevoda.webp)
 
 UM Labs
 
@@ -76,7 +76,7 @@ Alex Voyevoda is a senior systems engineer focused on turning high‑assurance i
 </li>
 <li markdown="block">
 
-![](/assets/people/alfredo-mazzinghi/8eb5af657eda-alfredo-mazzinghi.webp)
+![Alfredo Mazzinghi](/assets/people/alfredo-mazzinghi/8eb5af657eda-alfredo-mazzinghi.webp)
 
 Capabilities Limited
 
@@ -87,7 +87,7 @@ Alfredo is a Research Assistant at University of Cambridge and Research Engineer
 </li>
 <li markdown="block">
 
-![](/assets/people/andrew-murray/4471744b8d2d-andrew-murray.webp)
+![Andrew Murray](/assets/people/andrew-murray/4471744b8d2d-andrew-murray.webp)
 
 The Good Penguin
 
@@ -98,7 +98,7 @@ Andrew Murray is founder and director of The Good Penguin, a UK based consultanc
 </li>
 <li markdown="block">
 
-![](/assets/people/andy-moore/fe1dfa258b62-andy-moore.webp)
+![Andy Moore](/assets/people/andy-moore/fe1dfa258b62-andy-moore.webp)
 
 RISC-V International
 
@@ -109,7 +109,7 @@ Andy Moore drives awareness and adoption of RISC‑V across its global member ec
 </li>
 <li markdown="block">
 
-![](/assets/pages/news-and-events--people-and-opportunities--speakers/477522a3b000-ashish-darbari.webp)
+![Ashish Darbari](/assets/pages/news-and-events--people-and-opportunities--speakers/477522a3b000-ashish-darbari.webp)
 
 Axiomise
 
@@ -120,7 +120,7 @@ As founder & CEO of Axiomise, Dr. Ashish Darbari has led the company to successf
 </li>
 <li markdown="block">
 
-![](/assets/people/ben-fletcher/e01148dd42e4-ben-fletcher.webp)
+![Ben Fletcher](/assets/people/ben-fletcher/e01148dd42e4-ben-fletcher.webp)
 
 Codasip
 
@@ -131,7 +131,7 @@ Ben Fletcher has been involved in SoC development for over 25 years. He has work
 </li>
 <li markdown="block">
 
-![](/assets/people/bradley-finn/6eb4013e94b7-bradley-finn.webp)
+![Bradley Finn](/assets/people/bradley-finn/6eb4013e94b7-bradley-finn.webp)
 
 DSIT
 
@@ -142,7 +142,7 @@ Bradley Finn is Head of Cyber Innovation Policy at the UK’s Department for Sci
 </li>
 <li markdown="block">
 
-![](/assets/people/carl-shaw/77510c8e2140-carl-shaw.webp)
+![Carl Shaw](/assets/people/carl-shaw/77510c8e2140-carl-shaw.webp)
 
 Codasip
 
@@ -153,7 +153,7 @@ Carl Shaw is a hands-on technical expert with a diverse background in embedded s
 </li>
 <li markdown="block">
 
-![](/assets/people/dave-harcourt/3c144f42f3a1-dave-harcourt.webp)
+![Dave Harcourt](/assets/people/dave-harcourt/3c144f42f3a1-dave-harcourt.webp)
 
 BT
 
@@ -164,7 +164,7 @@ Dave Harcourt is the CISO for BT International and a BT Fellow, with decades of 
 </li>
 <li markdown="block">
 
-![](/assets/people/david-chisnall/df30b5f06c8a-david-chisnall.webp)
+![David Chisnall](/assets/people/david-chisnall/df30b5f06c8a-david-chisnall.webp)
 
 SCI Semiconductor
 
@@ -175,7 +175,7 @@ David Chisnall has been working on CHERI since 2012, when he joined the Universi
 </li>
 <li markdown="block">
 
-![](/assets/people/david-musliner/c608481cf4e5-david-musliner.webp)
+![David Musliner](/assets/people/david-musliner/c608481cf4e5-david-musliner.webp)
 
 Smart Information Flow Technologies (SIFT)
 
@@ -186,7 +186,7 @@ Dr. David Musliner is a Senior Research Fellow at Smart Information Flow Technol
 </li>
 <li markdown="block">
 
-![](/assets/people/dmitriy-yeliseyev/c90838071bbb-dmitriy-yeliseyev.webp)
+![Dmitriy Yeliseyev](/assets/people/dmitriy-yeliseyev/c90838071bbb-dmitriy-yeliseyev.webp)
 
 Wind River
 
@@ -197,7 +197,7 @@ Dmitriy is an embedded systems software architect and technical expert with over
 </li>
 <li markdown="block">
 
-![](/assets/pages/news-and-events--people-and-opportunities--speakers/c5c797120068-domagoj-stolfa.webp)
+![Domagoj Stolfa](/assets/pages/news-and-events--people-and-opportunities--speakers/c5c797120068-domagoj-stolfa.webp)
 
 Capabilities Limited, University of Cambridge
 
@@ -208,7 +208,7 @@ Domagoj Stolfa is a researcher currently working at Capabilities Limited and Uni
 </li>
 <li markdown="block">
 
-![](/assets/people/donato-ferraro/cbef919a0a84-donato-ferraro.webp)
+![Donato Ferraro](/assets/people/donato-ferraro/cbef919a0a84-donato-ferraro.webp)
 
 Minerva Systems, University of Modena and Reggio Emilia
 
@@ -219,7 +219,7 @@ Donato Ferraro is a Ph.D. student in Computer and Data Science for Technological
 </li>
 <li markdown="block">
 
-![](/assets/people/edoardo-marangoni/a366a93d3f87-edoardo-marangoni.webp)
+![Edoardo Marangoni](/assets/people/edoardo-marangoni/a366a93d3f87-edoardo-marangoni.webp)
 
 SCI Semiconductor
 
@@ -230,7 +230,7 @@ Edoardo has been working with compilers for the majority of his professional car
 </li>
 <li markdown="block">
 
-![](/assets/pages/news-and-events--people-and-opportunities--speakers/8df8579f806b-gavin-ferris.webp)
+![Gavin Ferris](/assets/pages/news-and-events--people-and-opportunities--speakers/8df8579f806b-gavin-ferris.webp)
 
 CHERI Alliance, lowRISC
 
@@ -241,7 +241,7 @@ Dr. Ferris is a technologist and serial entrepreneur. Following his early career
 </li>
 <li markdown="block">
 
-![](/assets/pages/news-and-events--people-and-opportunities--speakers/98d57e5cbe7c-haydn-povey.webp)
+![Haydn Povey](/assets/pages/news-and-events--people-and-opportunities--speakers/98d57e5cbe7c-haydn-povey.webp)
 
 SCI Semiconductor
 
@@ -252,7 +252,7 @@ Details to follow.
 </li>
 <li markdown="block">
 
-![](/assets/pages/news-and-events--people-and-opportunities--speakers/fe779cb309eb-hesham-almatary.webp)
+![Hesham Almatary](/assets/pages/news-and-events--people-and-opportunities--speakers/fe779cb309eb-hesham-almatary.webp)
 
 Capabilities Limited
 
@@ -263,7 +263,7 @@ Hesham’s research interests involve security, operating systems, systems softw
 </li>
 <li markdown="block">
 
-![](/assets/people/javier-orensanz-martinez/f71577bde6b0-javier-orensanz-martinez.webp)
+![Javier Orensanz Martinez](/assets/people/javier-orensanz-martinez/f71577bde6b0-javier-orensanz-martinez.webp)
 
 lowRISC
 
@@ -274,7 +274,7 @@ Javier is a business leader with over 25 years of experience in the semiconducto
 </li>
 <li markdown="block">
 
-![](/assets/people/jennifer-jackson/8046421faf06-jennifer-jackson.webp)
+![Jennifer Jackson](/assets/people/jennifer-jackson/8046421faf06-jennifer-jackson.webp)
 
 University of Birmingham
 
@@ -285,7 +285,7 @@ Jennifer is an Electronic Engineer with experience in FPGA design, Arm v8.2, com
 </li>
 <li markdown="block">
 
-![](/assets/people/jeremy-singer/c47e35e4cac6-jeremy-singer.webp)
+![Jeremy Singer](/assets/people/jeremy-singer/c47e35e4cac6-jeremy-singer.webp)
 
 University of Glasgow
 
@@ -296,7 +296,7 @@ Jeremy is a Reader in Programming Language Implementation at the University of G
 </li>
 <li markdown="block">
 
-![](/assets/people/jessica-clarke/fd8c66132687-jessica-clarke.webp)
+![Jessica Clarke](/assets/people/jessica-clarke/fd8c66132687-jessica-clarke.webp)
 
 University of Cambridge
 
@@ -307,7 +307,7 @@ Jessica Clarke is a Senior Research Software Engineer at the University of Cambr
 </li>
 <li markdown="block">
 
-![](/assets/people/jianyi-cheng/c69c7513a086-jianyi-cheng.webp)
+![Jianyi Cheng](/assets/people/jianyi-cheng/c69c7513a086-jianyi-cheng.webp)
 
 University of Edinburgh
 
@@ -318,7 +318,7 @@ Jianyi Cheng is an Assistant Professor in the School of Informatics at the Unive
 </li>
 <li markdown="block">
 
-![](/assets/people/johannes-muller/2d9a131b99d2-johannes-muller.webp)
+![Johannes Müller](/assets/people/johannes-muller/2d9a131b99d2-johannes-muller.webp)
 
 RPTU Kaiserslautern-Landau
 
@@ -329,7 +329,7 @@ Johannes Müller received his Dipl.-Ing. degree in Electrical and Computer Engin
 </li>
 <li markdown="block">
 
-![](/assets/people/john-baldwin/175c0c4228f3-john-baldwin.webp)
+![John Baldwin](/assets/people/john-baldwin/175c0c4228f3-john-baldwin.webp)
 
 Ararat River Consulting, LLC
 
@@ -340,7 +340,7 @@ John Baldwin has been an active FreeBSD developer for over 25 years working on a
 </li>
 <li markdown="block">
 
-![](/assets/people/john-goodacre/e4083dbbb0d9-john-goodacre.webp)
+![John Goodacre](/assets/people/john-goodacre/e4083dbbb0d9-john-goodacre.webp)
 
 UKRI
 
@@ -351,7 +351,7 @@ Prof. John Goodacre: University of Manchester, Director Digital Security by Desi
 </li>
 <li markdown="block">
 
-![](/assets/people/john-thomson/a30b210fc678-john-thomson.webp)
+![John Thomson](/assets/people/john-thomson/a30b210fc678-john-thomson.webp)
 
 lowRISC
 
@@ -362,7 +362,7 @@ John works at lowRISC as a senior product manager where he advocates the company
 </li>
 <li markdown="block">
 
-![](/assets/people/jonathan-woodruff/efabe0a1a306-jonathan-woodruff.webp)
+![Jonathan Woodruff](/assets/people/jonathan-woodruff/efabe0a1a306-jonathan-woodruff.webp)
 
 Capabilities Limited
 
@@ -373,7 +373,7 @@ Dr Jonathan Woodruff is a Senior Research Associate with expertise in processor 
 </li>
 <li markdown="block">
 
-![](/assets/pages/news-and-events--people-and-opportunities--speakers/5aeaaf330603-joshua-lant.webp)
+![Joshua Lant](/assets/pages/news-and-events--people-and-opportunities--speakers/5aeaaf330603-joshua-lant.webp)
 
 University of Manchester
 
@@ -384,7 +384,7 @@ Joshua Lant is a Research Associate in the Department of Computer Science at the
 </li>
 <li markdown="block">
 
-![](/assets/people/ka-wing-li/559cc13375fd-ka-wing-li.webp)
+![Ka Wing Li](/assets/people/ka-wing-li/559cc13375fd-ka-wing-li.webp)
 
 University of Cambridge
 
@@ -395,7 +395,7 @@ Ka Wing Li is a PhD student from the University of Cambridge. He focuses on comp
 </li>
 <li markdown="block">
 
-![](/assets/people/kathleen-fisher/0a4fdc2deea1-kathleen-fisher.webp)
+![Kathleen Fisher](/assets/people/kathleen-fisher/0a4fdc2deea1-kathleen-fisher.webp)
 
 ARIA
 
@@ -406,7 +406,7 @@ Kathleen Fisher has been instrumental in bringing CHERI from research into natio
 </li>
 <li markdown="block">
 
-![](/assets/pages/news-and-events--people-and-opportunities--speakers/f21b0d18d1cc-kevin-brodsky.webp)
+![Kevin Brodsky](/assets/pages/news-and-events--people-and-opportunities--speakers/f21b0d18d1cc-kevin-brodsky.webp)
 
 Arm
 
@@ -417,7 +417,7 @@ Kevin Brodsky is a software engineer at Arm, specializing in the Morello project
 </li>
 <li markdown="block">
 
-![](/assets/people/louis-emile-ploix/4dbe468cc870-louis-emile-ploix.webp)
+![Louis-Emile Ploix](/assets/people/louis-emile-ploix/4dbe468cc870-louis-emile-ploix.webp)
 
 lowRISC
 
@@ -428,7 +428,7 @@ Louis-Emile is a current undergraduate at the University of Oxford, and a formal
 </li>
 <li markdown="block">
 
-![](/assets/people/luca-muller/77c9e62d16fb-luca-muller.webp)
+![Luca Müller](/assets/people/luca-muller/77c9e62d16fb-luca-muller.webp)
 
 German Research Center for Artificial Intelligence (DFKI)
 
@@ -439,7 +439,7 @@ Luca Müller received the M.Sc. degree in computer science from University of Br
 </li>
 <li markdown="block">
 
-![](/assets/people/maika-fohrenbach/0c4cb55de046-maika-fohrenbach.webp)
+![Maika Föhrenbach](/assets/people/maika-fohrenbach/0c4cb55de046-maika-fohrenbach.webp)
 
 European Commission (DG CONNECT)
 
@@ -450,7 +450,7 @@ Maika Föhrenbach connects CHERI to Europe’s regulatory future. She leads prod
 </li>
 <li markdown="block">
 
-![](/assets/people/manu-ravishankar/2413e0ff7418-manu-ravishankar.webp)
+![Manu Ravishankar](/assets/people/manu-ravishankar/2413e0ff7418-manu-ravishankar.webp)
 
 PA Consulting
 
@@ -461,7 +461,7 @@ Manu Ravishankar is a Principal Consultant specialising in innovation strategy, 
 </li>
 <li markdown="block">
 
-![](/assets/pages/news-and-events--people-and-opportunities--speakers/852af3832f2e-mark-batty.webp)
+![Mark Batty](/assets/pages/news-and-events--people-and-opportunities--speakers/852af3832f2e-mark-batty.webp)
 
 Kent University
 
@@ -472,7 +472,7 @@ Mark Batty has played a key role in the effort to building foundational specific
 </li>
 <li markdown="block">
 
-![](/assets/pages/news-and-events--people-and-opportunities--speakers/0dbd998beb6c-mark-hill.webp)
+![Mark Hill](/assets/pages/news-and-events--people-and-opportunities--speakers/0dbd998beb6c-mark-hill.webp)
 
 Codasip
 
@@ -483,7 +483,7 @@ Dr Mark B. Hill, BEng PhD CEng MIETMark is Lead CPU Architect at Codasip and has
 </li>
 <li markdown="block">
 
-![](/assets/people/marno-van-der-maas/339812a45c3f-marno-van-der-maas.webp)
+![Marno van der Maas](/assets/people/marno-van-der-maas/339812a45c3f-marno-van-der-maas.webp)
 
 lowRISC
 
@@ -494,7 +494,7 @@ Dr Marno van der Maas completed a PhD at the University of Cambridge in 2022 on 
 </li>
 <li markdown="block">
 
-![](/assets/pages/news-and-events--people-and-opportunities--speakers/a603f26d5c65-martin-atkins.webp)
+![Martin Atkins](/assets/pages/news-and-events--people-and-opportunities--speakers/a603f26d5c65-martin-atkins.webp)
 
 Mission Critical Applications Limited
 
@@ -505,7 +505,7 @@ Martin is a software consultant with over 35 years of experience in research, an
 </li>
 <li markdown="block">
 
-![](/assets/people/merve-gulmez/fadb272ff434-merve-gulmez.webp)
+![Merve Gülmez](/assets/people/merve-gulmez/fadb272ff434-merve-gulmez.webp)
 
 Ericsson
 
@@ -516,7 +516,7 @@ Merve Gülmez is a researcher at Ericsson Security Research. She holds a PhD in 
 </li>
 <li markdown="block">
 
-![](/assets/people/mike-eftimakis/95bf8c70c443-mike-eftimakis.webp)
+![Mike Eftimakis](/assets/people/mike-eftimakis/95bf8c70c443-mike-eftimakis.webp)
 
 CHERI Alliance
 
@@ -527,7 +527,7 @@ Mike Eftimakis has an extensive background in the semiconductor and electronics 
 </li>
 <li markdown="block">
 
-![](/assets/pages/news-and-events--people-and-opportunities--speakers/92e66d32b151-mike-halsall.webp)
+![Mike Halsall](/assets/pages/news-and-events--people-and-opportunities--speakers/92e66d32b151-mike-halsall.webp)
 
 CHERI Alliance
 
@@ -538,7 +538,7 @@ Details to follow.
 </li>
 <li markdown="block">
 
-![](/assets/people/murali-vijayaraghavan/326629bec34e-murali-vijayaraghavan.webp)
+![Murali Vijayaraghavan](/assets/people/murali-vijayaraghavan/326629bec34e-murali-vijayaraghavan.webp)
 
 Google
 
@@ -549,7 +549,7 @@ Murali is a formal methods and security researcher at Google.
 </li>
 <li markdown="block">
 
-![](/assets/people/murat-cakmak/b0884bf33a49-murat-cakmak.webp)
+![Murat Cakmak](/assets/people/murat-cakmak/b0884bf33a49-murat-cakmak.webp)
 
 Microservice Store
 
@@ -560,7 +560,7 @@ Murat is Co-CEO @ Microservice Store.
 </li>
 <li markdown="block">
 
-![](/assets/people/ollie-whitehouse/18733daf6b43-ollie-whitehouse.webp)
+![Ollie Whitehouse](/assets/people/ollie-whitehouse/18733daf6b43-ollie-whitehouse.webp)
 
 National Cyber Security Centre
 
@@ -571,7 +571,7 @@ Ollie is a fellow of the Royal Academy of Engineering whose career in cyber secu
 </li>
 <li markdown="block">
 
-![](/assets/people/paul-metzger/b93ea76e11ec-paul-metzger.webp)
+![Paul Metzger](/assets/people/paul-metzger/b93ea76e11ec-paul-metzger.webp)
 
 University of Cambridge
 
@@ -582,7 +582,7 @@ Dr Paul Metzger is a Research Associate in the Department of Computer Science an
 </li>
 <li markdown="block">
 
-![](/assets/people/paul-waller/366013f0e312-paul-waller.webp)
+![Paul Waller](/assets/people/paul-waller/366013f0e312-paul-waller.webp)
 
 NCSC
 
@@ -593,7 +593,7 @@ Paul Waller works on advancing practical, deployable cyber security at national 
 </li>
 <li markdown="block">
 
-![](/assets/people/peter-cox/3d6e1b48619c-peter-cox.webp)
+![Peter Cox](/assets/people/peter-cox/3d6e1b48619c-peter-cox.webp)
 
 UM Labs
 
@@ -604,7 +604,7 @@ Peter Cox is the CEO and founder of UM Labs, a UK R&D company specialising in cy
 </li>
 <li markdown="block">
 
-![](/assets/pages/news-and-events--people-and-opportunities--speakers/660854a6b1a4-phil-day.webp)
+![Phil Day](/assets/pages/news-and-events--people-and-opportunities--speakers/660854a6b1a4-phil-day.webp)
 
 Configured Things
 
@@ -615,7 +615,7 @@ Phil is the Director of Engineering at Configured Things, a startup founded by A
 </li>
 <li markdown="block">
 
-![](/assets/people/robert-watson/97c4cc7057eb-robert-watson.webp)
+![Robert Watson](/assets/people/robert-watson/97c4cc7057eb-robert-watson.webp)
 
 CHERI Alliance, University of Cambridge
 
@@ -626,7 +626,7 @@ Professor Robert N. M. Watson is a Professor of Systems, Security, and Architect
 </li>
 <li markdown="block">
 
-![](/assets/people/sam-cater/61e7a8222d5c-sam-cater.webp)
+![Sam Cater](/assets/people/sam-cater/61e7a8222d5c-sam-cater.webp)
 
 BT
 
@@ -637,7 +637,7 @@ Sam is a Research Technical Manager within BT’s Research and Commercialisation
 </li>
 <li markdown="block">
 
-![](/assets/people/samuel-stark/c3806563e058-samuel-stark.webp)
+![Samuel Stark](/assets/people/samuel-stark/c3806563e058-samuel-stark.webp)
 
 University of Cambridge
 
@@ -648,7 +648,7 @@ Samuel W. Stark is a final-year PhD student at the University of Cambridge, stud
 </li>
 <li markdown="block">
 
-![](/assets/people/simon-moore/867833a2bb89-simon-moore.webp)
+![Simon Moore](/assets/people/simon-moore/867833a2bb89-simon-moore.webp)
 
 University of Cambridge
 
@@ -659,7 +659,7 @@ Professor Simon Moore is Professor of Computer Engineering at the University of 
 </li>
 <li markdown="block">
 
-![](/assets/people/tariq-kurd/1284cdf835ad-tariq-kurd.webp)
+![Tariq Kurd](/assets/people/tariq-kurd/1284cdf835ad-tariq-kurd.webp)
 
 Codasip
 
@@ -670,7 +670,7 @@ Tariq Kurd has been involved in CPU architecture, design, and verification for o
 </li>
 <li markdown="block">
 
-![](/assets/people/thomas-nyman/0e748fba225e-thomas-nyman.webp)
+![Thomas Nyman](/assets/people/thomas-nyman/0e748fba225e-thomas-nyman.webp)
 
 Ericsson
 
@@ -681,7 +681,7 @@ Thomas Nyman holds a position as Expert in Trusted Hardware & Software Technolog
 </li>
 <li markdown="block">
 
-![](/assets/pages/news-and-events--people-and-opportunities--speakers/6ac6b9e93f63-tora-fridholm.webp)
+![Tora Fridholm](/assets/pages/news-and-events--people-and-opportunities--speakers/6ac6b9e93f63-tora-fridholm.webp)
 
 Codasip
 

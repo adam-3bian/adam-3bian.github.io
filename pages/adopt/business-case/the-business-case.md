@@ -36,11 +36,9 @@ Cyberattacks impose enormous costs on organisations worldwide, disrupting servic
 
 Investing in stronger security is a way to reduce that risk, at any level:
 
-Less operational risk for technology users
-
-Less risk of disrupting development or sales for product developers
-
-Reduced national cyber risk for governments
+- Less operational risk for technology users
+- Less risk of disrupting development or sales for product developers
+- Reduced national cyber risk for governments
 
 Reducing risk is not only about preventing incidents. It is also about reducing uncertainty and improving confidence in the systems your organisation depends on.
 
@@ -52,11 +50,9 @@ CHERI is designed to strengthen existing software rather than require a complete
 
 CHERI can help organisations:
 
-Extend the life of existing software assets
-
-Protect previous engineering investments
-
-Make new products and platforms more durable
+- Extend the life of existing software assets
+- Protect previous engineering investments
+- Make new products and platforms more durable
 
 Rather than choosing between accepting risk and rewriting everything, CHERI provides a third option: strengthen what already exists.
 
@@ -68,15 +64,11 @@ CHERI provides security mechanisms that are enforced by hardware, making protect
 
 The result can be:
 
-Greater customer confidence
-
-Stronger security assurance
-
-Support for regulatory and procurement expectations
-
-Improved product and brand reputation
-
-A clearer demonstration of secure-by-design principles
+- Greater customer confidence
+- Stronger security assurance
+- Support for regulatory and procurement expectations
+- Improved product and brand reputation
+- A clearer demonstration of secure-by-design principles
 
 Trust is difficult to build and easy to lose. Stronger foundations can help organisations protect both their systems and their reputation.
 
@@ -86,17 +78,12 @@ Security is increasingly influencing purchasing decisions, procurement requireme
 
 Depending on their role, organisations or their customers may benefit from:
 
-Lower ownership and maintenance costs
-
-Reduced disruption from security incidents
-
-Stronger product differentiation
-
-Increased customer confidence
-
-Better alignment with emerging security regulations
-
-Access to new markets and opportunities
+- Lower ownership and maintenance costs
+- Reduced disruption from security incidents
+- Stronger product differentiation
+- Increased customer confidence
+- Better alignment with emerging security regulations
+- Access to new markets and opportunities
 
 As security expectations continue to rise, investing in resilient technologies today can help organisations prepare for tomorrow’s requirements.
 

@@ -50,7 +50,7 @@ Open each event for current dates, venue information, calls for participation, a
 <ul class="image-gallery record-gallery" markdown="block">
 <li markdown="block">
 
-![](/assets/events/cheritech26/408459d34c43-cheritech26.webp)
+![CHERITech'26](/assets/events/cheritech26/408459d34c43-cheritech26.webp)
 
 Upcoming Conference
 
@@ -70,7 +70,7 @@ Past event pages preserve the technical programme and supporting material publis
 <ul class="image-gallery record-gallery" markdown="block">
 <li markdown="block">
 
-![](/assets/events/cheritech25-reloaded/7bce58279add-cheritech25-reloaded.webp)
+![CHERITech'25 Reloaded](/assets/events/cheritech25-reloaded/7bce58279add-cheritech25-reloaded.webp)
 
 Past Online event
 
@@ -83,7 +83,7 @@ CHERITech’25 Reloaded took place online on 4th December 2025. Participants joi
 </li>
 <li markdown="block">
 
-![](/assets/events/cheritech25/0e6d3180c4d1-cheritech25.webp)
+![CHERITech'25 Conference](/assets/events/cheritech25/0e6d3180c4d1-cheritech25.webp)
 
 Past Conference
 

@@ -44,13 +44,10 @@ As a result, software bugs can lead to out-of-bounds accesses, accidental modifi
 
 On a CHERI system, software uses a Capability instead of an unprotected address. A capability contains an address together with metadata such as:
 
-the range of memory it may access
-
-whether it may read, write, or execute
-
-whether it is valid for use
-
-information about where its permissions came from
+- the range of memory it may access
+- whether it may read, write, or execute
+- whether it is valid for use
+- information about where its permissions came from
 
 The metadata is protected by the hardware. Software can reduce the authority of a capability, for example by narrowing its bounds or removing write permission, but cannot invent greater authority.
 
@@ -98,16 +95,10 @@ Adopting CHERI requires a one-time investment in new hardware, migration, toolin
 
 Teams commonly investigate CHERI to:
 
-Protect existing C and C++ software without a full rewrite
-
-Enable practical fine-grained compartmentalisation and least privilege
-
-Prevent many classes of memory-safety vulnerability in hardware
-
-Reduce reliance on layers of probabilistic mitigations
-
-Preserve investment in long-lived software assets
-
-Improve fault visibility, testing, and assurance
-
-Build more resilient systems from the processor upwards
+- Protect existing C and C++ software without a full rewrite
+- Enable practical fine-grained compartmentalisation and least privilege
+- Prevent many classes of memory-safety vulnerability in hardware
+- Reduce reliance on layers of probabilistic mitigations
+- Preserve investment in long-lived software assets
+- Improve fault visibility, testing, and assurance
+- Build more resilient systems from the processor upwards

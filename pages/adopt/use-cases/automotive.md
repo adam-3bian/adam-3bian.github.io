@@ -32,17 +32,12 @@ This combination creates a demanding security problem. A media file, wireless me
 
 Automotive platforms combine several characteristics that make CHERI relevant:
 
-extensive use of established native software;
-
-long development and support lifecycles;
-
-components from different suppliers and assurance levels;
-
-growing consolidation onto shared processors;
-
-connections between externally exposed and safety-relevant functions;
-
-tight requirements for timing, memory, power, and dependable operation.
+- extensive use of established native software;
+- long development and support lifecycles;
+- components from different suppliers and assurance levels;
+- growing consolidation onto shared processors;
+- connections between externally exposed and safety-relevant functions;
+- tight requirements for timing, memory, power, and dependable operation.
 
 Rewriting every established component in a memory-safe language is unlikely to happen within one vehicle generation. Process or virtual-machine isolation can separate larger domains, but it may be too coarse for every parser, driver, library, or supplier service inside those domains.
 
@@ -54,17 +49,12 @@ A connected-service parser might receive access to one incoming message and a na
 
 Relevant areas include:
 
-wireless, media, and network protocol processing;
-
-central gateways between vehicle domains;
-
-infotainment and connected-service components;
-
-device drivers and third-party software modules;
-
-update, diagnostics, and vehicle-to-everything services;
-
-consolidated compute platforms containing mixed-criticality software.
+- wireless, media, and network protocol processing;
+- central gateways between vehicle domains;
+- infotainment and connected-service components;
+- device drivers and third-party software modules;
+- update, diagnostics, and vehicle-to-everything services;
+- consolidated compute platforms containing mixed-criticality software.
 
 The benefit is both preventative and protective. Many invalid accesses can be stopped where they occur, and a component that is compromised through another flaw can have less authority over the rest of the platform.
 

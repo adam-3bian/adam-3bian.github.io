@@ -31,17 +31,12 @@ The term “CHERI product” can cover anything from a processor core to a compl
 
 The Alliance’s programme is based on a technical questionnaire and review interviews. Its main stages are:
 
-definition of the product, version, configuration, and relationship to any previously certified product;
-
-written answers covering the CHERI implementation and supporting evidence;
-
-review questions and interviews with the Alliance team;
-
-a certification decision and, where approved, a published product record;
-
-authorised display of the CHERI Enabled mark under the programme’s trademark conditions;
-
-later reassessment as the product or programme changes.
+1. definition of the product, version, configuration, and relationship to any previously certified product;
+2. written answers covering the CHERI implementation and supporting evidence;
+3. review questions and interviews with the Alliance team;
+4. a certification decision and, where approved, a published product record;
+5. authorised display of the CHERI Enabled mark under the programme’s trademark conditions;
+6. later reassessment as the product or programme changes.
 
 First applications receive a full assessment. Updated, derivative, or previously certified products may follow a reduced reassessment path, with the differences from the earlier record remaining part of the scope.
 
@@ -49,23 +44,15 @@ First applications receive a full assessment. Updated, derivative, or previously
 
 The questionnaire goes beyond confirmation that CHERI instructions exist. It records details that affect whether capability protection works as intended, including:
 
-the architecture and extension versions implemented;
-
-supported execution modes and configurations outside certification;
-
-design verification and compliance testing;
-
-memory access that can occur without an explicit capability;
-
-protection of tags and capability metadata;
-
-temporal memory-safety mechanisms;
-
-debug, privilege, and integration behaviour;
-
-compiler and software support;
-
-known limitations and assumptions.
+- the architecture and extension versions implemented;
+- supported execution modes and configurations outside certification;
+- design verification and compliance testing;
+- memory access that can occur without an explicit capability;
+- protection of tags and capability metadata;
+- temporal memory-safety mechanisms;
+- debug, privilege, and integration behaviour;
+- compiler and software support;
+- known limitations and assumptions.
 
 These details help an integrator understand whether a certified component fits the architecture of a wider product. They also expose the difference between a processor capability and a system-level security outcome.
 
@@ -85,9 +72,8 @@ That review model gives the mark value beyond a one-time claim. The published re
 
 The application fee supports operation of the programme and is non-refundable. The published fees are:
 
-First certification: £3,000 for non-members or £1,000 for CHERI Alliance members.
-
-Recertification: £1,500 for non-members or £500 for CHERI Alliance members.
+- First certification: £3,000 for non-members or £1,000 for CHERI Alliance members.
+- Recertification: £1,500 for non-members or £500 for CHERI Alliance members.
 
 The lower recertification fee also applies to the review of a derivative of a certified product where the programme accepts the relationship to the earlier record.
 

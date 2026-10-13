@@ -35,19 +35,13 @@ By the early 2020s, CHERI had expanded well beyond its original institutional co
 
 This created common needs:
 
-align technical work across architectures and suppliers
-
-make software and tooling easier to find and maintain
-
-explain CHERI accurately to developers, buyers, and policymakers
-
-provide routes for contribution and shared engineering
-
-develop credible product certification
-
-support events, training, and community growth
-
-represent the ecosystem without being tied to one vendor
+- align technical work across architectures and suppliers
+- make software and tooling easier to find and maintain
+- explain CHERI accurately to developers, buyers, and policymakers
+- provide routes for contribution and shared engineering
+- develop credible product certification
+- support events, training, and community growth
+- represent the ecosystem without being tied to one vendor
 
 No single company or university could perform that neutral role for the whole market.
 

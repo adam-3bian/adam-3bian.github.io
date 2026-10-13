@@ -22,25 +22,16 @@ related:
 
 # CHERI Roadmap for Linux
 
-Allison Randal (Capabilities Limited)
-
-Hesham Almatary (Capabilities Limited)
-
-Kevin Brodsky (Arm Limited)
-
-Jessica Clarke (University of Cambridge)
-
-Brooks Davis (Capabilities Limited)
-
-Vincenzo Frascino (Arm Limited)
-
-Ben Laurie (Google)
-
-Alex Richardson (Google)
-
-Carl Shaw (Codasip)
-
-Robert N. M. Watson (Capabilities Limited and University of Cambridge)
+- Allison Randal (Capabilities Limited)
+- Hesham Almatary (Capabilities Limited)
+- Kevin Brodsky (Arm Limited)
+- Jessica Clarke (University of Cambridge)
+- Brooks Davis (Capabilities Limited)
+- Vincenzo Frascino (Arm Limited)
+- Ben Laurie (Google)
+- Alex Richardson (Google)
+- Carl Shaw (Codasip)
+- Robert N. M. Watson (Capabilities Limited and University of Cambridge)
 
 This roadmap was developed by the CHERI Alliance Linux Strategy working group, outlining a path toward unified Linux support for CHERI hardware.
 

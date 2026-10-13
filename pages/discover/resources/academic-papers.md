@@ -64,27 +64,27 @@ Richard Grisenthwaite, Graeme Barnes, Robert N. M. Watson, Simon W. Moore, Peter
 
 Saar Amar, David Chisnall, Tony Chen, Nathaniel Wesley Filardo, Ben Laurie, Kunyan Liu, Robert Norton, Simon W. Moore, Yucong Tao, Robert N. M. Watson, and Hongyan Xia. IEEE/ACM MICRO 2023, 2023.
 
-\### \[Rigorous Engineering for Hardware Security: Formal Modelling and Proof in the CHERI Design and Implementation Process\](https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/202005oakland-cheri-formal.pdf)
+### [Rigorous Engineering for Hardware Security: Formal Modelling and Proof in the CHERI Design and Implementation Process](https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/202005oakland-cheri-formal.pdf)
 
 Kyndylan Nienhuis, Alexandre Joannou, Thomas Bauereiss, Anthony Fox, Michael Roe, Brian Campbell, Matthew Naylor, Robert M. Norton, Simon W. Moore, Peter G. Neumann, Ian Stark, Robert N. M. Watson, and Peter Sewell. IEEE Symposium on Security and Privacy 2020, 2020.
 
-\### \[Cornucopia: Temporal Safety for CHERI Heaps\](https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/2020oakland-cornucopia.pdf)
+### [Cornucopia: Temporal Safety for CHERI Heaps](https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/2020oakland-cornucopia.pdf)
 
 Nathaniel Wesley Filardo, Brett F. Gutstein, Jonathan Woodruff, Sam Ainsworth, Lucian Paul-Trifu, Brooks Davis, Hongyan Xia, Edward Tomasz Napierała, Alexander Richardson, John Baldwin, David Chisnall, and others. IEEE Symposium on Security and Privacy 2020, 2020.
 
-\### \[CheriABI: Enforcing Valid Pointer Provenance and Minimizing Pointer Privilege in the POSIX C Run-time Environment\](https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/201904-asplos-cheriabi.pdf)
+### [CheriABI: Enforcing Valid Pointer Provenance and Minimizing Pointer Privilege in the POSIX C Run-time Environment](https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/201904-asplos-cheriabi.pdf)
 
 Brooks Davis, Robert N. M. Watson, Alexander Richardson, Peter G. Neumann, Simon W. Moore, John Baldwin, David Chisnall, Jessica Clarke, Nathaniel Wesley Filardo, Khilan Gudka, Alexandre Joannou, and others. ACM ASPLOS 2019, 2019.
 
-\### \[CHERI Concentrate: Practical Compressed Capabilities\](https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/2019tc-cheri-concentrate.pdf)
+### [CHERI Concentrate: Practical Compressed Capabilities](https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/2019tc-cheri-concentrate.pdf)
 
 Jonathan Woodruff, Alexandre Joannou, Hongyan Xia, Anthony Fox, Robert Norton, Thomas Bauereiss, David Chisnall, Brooks Davis, Khilan Gudka, Nathaniel W. Filardo, A. Theodore Markettos, Michael Roe, Peter G. Neumann, Robert N. M. Watson, and Simon W. Moore. IEEE Transactions on Computers, 2019.
 
-\### \[CHERI: A Hybrid Capability-System Architecture for Scalable Software Compartmentalization\](https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/201505-oakland2015-cheri-compartmentalization.pdf)
+### [CHERI: A Hybrid Capability-System Architecture for Scalable Software Compartmentalization](https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/201505-oakland2015-cheri-compartmentalization.pdf)
 
 Robert N. M. Watson, Jonathan Woodruff, Peter G. Neumann, Simon W. Moore, Jonathan Anderson, David Chisnall, Nirav Dave, Brooks Davis, Khilan Gudka, Ben Laurie, Steven J. Murdoch, Robert Norton, Michael Roe, Stacey Son, and Munraj Vadera. IEEE Symposium on Security and Privacy 2015, 2015.
 
-\### \[The CHERI Capability Model: Revisiting RISC in an Age of Risk\](https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/201406-isca2014-cheri.pdf)
+### [The CHERI Capability Model: Revisiting RISC in an Age of Risk](https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/201406-isca2014-cheri.pdf)
 
 Jonathan Woodruff, Robert N. M. Watson, David Chisnall, Simon W. Moore, Jonathan Anderson, Brooks Davis, Ben Laurie, Peter G. Neumann, Robert Norton, and Michael Roe. ACM/IEEE ISCA 2014, 2014.
 

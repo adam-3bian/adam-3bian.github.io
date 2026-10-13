@@ -40,9 +40,8 @@ Conventional mitigations reduce the likelihood of successful exploitation, but t
 
 This can lead to:
 
-Reducing the likelihood of compromise
-
-Limiting the impact of compromise
+- Reducing the likelihood of compromise
+- Limiting the impact of compromise
 
 The distinction is important in infrastructure. Preventing every attack is unrealistic, while preventing one compromised component from reaching an essential function can still preserve part of the service.
 

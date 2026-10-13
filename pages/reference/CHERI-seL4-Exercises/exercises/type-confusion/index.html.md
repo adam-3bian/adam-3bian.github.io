@@ -24,56 +24,41 @@ related:
 
 This exercise demonstrates how CHERI distinguishes between integer and pointer types, preventing certain types of type confusion. In this example, a union allows an integer value to be used as a pointer, which cannot then be dereferenced.
 
-Compile type-confusion.c with a RISC-V target and binary name of type-confusion-riscv, and with a CHERI-RISC-V target and binary name type-confusion-cheri.
+1. Compile type-confusion.c with a RISC-V target and binary name of type-confusion-riscv, and with a CHERI-RISC-V target and binary name type-confusion-cheri.
 
 type-confusion.c
 
-/\*
+```c
+/*
+ * SPDX-License-Identifier: BSD-2-Clause-DARPA-SSITH-ECATS-HR0011-18-C-0016
+ * Copyright (c) 2020 SRI International
+ */
+#include <printf.h>
 
-\* SPDX-License-Identifier: BSD-2-Clause-DARPA-SSITH-ECATS-HR0011-18-C-0016
+const char hello[] = "Hello World!";
 
-\* Copyright (c) 2020 SRI International
-
-\*/
-
-#include \<printf.h\>
-
-const char hello\[\] = "Hello World!";
-
-union long\_ptr {
-
-long l;
-
-const char \*ptr;
-
+union long_ptr {
+	long l;
+	const char *ptr;
 } lp = { .ptr = hello };
 
 void
-
-inc\_long\_ptr(union long\_ptr \*lpp)
-
+inc_long_ptr(union long_ptr *lpp)
 {
-
-lpp-\>l++;
-
+	lpp->l++;
 }
 
 void
-
 init(void)
-
 {
-
-printf("lp.ptr %s\\n", lp.ptr);
-
-inc\_long\_ptr(&lp);
-
-printf("lp.ptr %s\\n", lp.ptr);
-
+	printf("lp.ptr %s\n", lp.ptr);
+	inc_long_ptr(&lp);
+	printf("lp.ptr %s\n", lp.ptr);
 }
 
 void notified(void){}
+```
 
-Run the RISC-V program. What is the result?
+2. Run the RISC-V program. What is the result?
 
-Run the CHERI-RISC-V program. What is the result? Run under QEMU and gdb and explain why the program crashes in the second printf.
+3. Run the CHERI-RISC-V program. What is the result? Run under QEMU and gdb and explain why the program crashes in the second printf.

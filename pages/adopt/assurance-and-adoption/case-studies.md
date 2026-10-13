@@ -27,13 +27,10 @@ From experimental research systems to commercial processor IP, CHERI has been ap
 
 No single project can represent every possible use case. Together, however, these examples demonstrate that capability protection can coexist with substantial software stacks, resource-constrained devices, and existing C and C++ code.
 
-Project: Morello; Demonstrates: CHERI at application and server scale
-
-Project: CheriBSD; Demonstrates: Protection of large existing software stacks
-
-Project: CHERIoT; Demonstrates: CHERI for constrained embedded systems
-
-Project: Codasip X730; Demonstrates: Commercially application-class CHERI processor
+- Project: Morello; Demonstrates: CHERI at application and server scale
+- Project: CheriBSD; Demonstrates: Protection of large existing software stacks
+- Project: CHERIoT; Demonstrates: CHERI for constrained embedded systems
+- Project: Codasip X730; Demonstrates: Commercially application-class CHERI processor
 
 ## Morello: a complete experimental stack
 
@@ -75,13 +72,10 @@ This demonstrates that CHERI processor technology is available now for commercia
 
 Together, these examples show that CHERI is not limited to a single class of system. CHERI has been applied to the whole spectrum of computing applications:
 
-From the most constrained embedded devices to traditional application-class and large high-performance systems
-
-From tiny real-time operating systems to rich multi-user operating systems
-
-In open-source platforms and commercial processor products
-
-While reusing substantial existing C and C++ software
+- From the most constrained embedded devices to traditional application-class and large high-performance systems
+- From tiny real-time operating systems to rich multi-user operating systems
+- In open-source platforms and commercial processor products
+- While reusing substantial existing C and C++ software
 
 While each project has different goals and constraints, all demonstrate how capability protection can be introduced into real hardware and software systems, across the diversity of use cases, while reusing existing software. These examples also demonstrate that CHERI can often be introduced while reusing significant amounts of existing software, reducing the need for complete rewrites.
 

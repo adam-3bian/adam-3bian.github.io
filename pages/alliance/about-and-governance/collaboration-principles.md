@@ -36,17 +36,12 @@ Whenever practical, Alliance outputs are developed openly and made publicly avai
 
 Examples include:
 
-educational material and tutorials
-
-technical guidance, recommendations and standards-related material
-
-software demonstrations and examples
-
-community resources and outreach material
-
-shared compliance and test assets
-
-contributions to open-source projects
+- educational material and tutorials
+- technical guidance, recommendations and standards-related material
+- software demonstrations and examples
+- community resources and outreach material
+- shared compliance and test assets
+- contributions to open-source projects
 
 The Alliance aims to make outputs open whenever practical, but some discussions, planning activities, and collaborative work may take place within member-only groups before being released publicly, or even stay internal. This balance allows organisations to collaborate effectively while ensuring that the wider ecosystem benefits from the results.
 
@@ -56,17 +51,13 @@ Different types of collaboration have different requirements. The Alliance there
 
 In general:
 
-Educational material, tutorials, outreach content, and technical recommendations are normally released under an open Creative Commons licence - preferably CC-BY-SA
+- Educational material, tutorials, outreach content, and technical recommendations are normally released under an open Creative Commons licence - preferably CC-BY-SA
 
-![CC-BY-SA](/assets/shared/source-assets/bacc656ec8f4-cc-by-sa.webp){: .image-icon }
-
-Software examples, compliance assets, and technical contributions are normally released under permissive open-source licences to encourage adoption and contribution
-
-Contributions made to existing external projects generally retain the licence of that project
-
-Internal member discussions and confidential information remain protected where required
-
-The CHERI® trademark remains protected and subject to the Trademark Policy
+    ![CC-BY-SA](/assets/shared/source-assets/bacc656ec8f4-cc-by-sa.webp){: .image-icon }
+- Software examples, compliance assets, and technical contributions are normally released under permissive open-source licences to encourage adoption and contribution
+- Contributions made to existing external projects generally retain the licence of that project
+- Internal member discussions and confidential information remain protected where required
+- The CHERI® trademark remains protected and subject to the Trademark Policy
 
 The goal is simple: maximise reuse and collaboration while respecting legitimate confidentiality, ownership, and operational requirements.
 
@@ -82,17 +73,12 @@ This allows organisations to collaborate on common challenges without losing con
 
 Collaborative development creates benefits across the ecosystem:
 
-Reduced duplication of effort
-
-Faster adoption of CHERI technology
-
-Better interoperability across platforms
-
-Stronger educational resources
-
-Shared solutions to common problems
-
-Increased visibility for participating organisations
+- Reduced duplication of effort
+- Faster adoption of CHERI technology
+- Better interoperability across platforms
+- Stronger educational resources
+- Shared solutions to common problems
+- Increased visibility for participating organisations
 
 By working together on shared foundations, Alliance members can spend more time innovating and less time solving the same problems independently. This alignment work also creates opportunities for vendors to create solutions that would be compatible with multiple vendors, hence enabling profitable markets that ultimately benefit CHERI adoption.
 

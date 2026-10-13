@@ -33,7 +33,7 @@ Previous conferences, workshops, tutorials, and online sessions with their publi
 <ul class="image-gallery record-gallery" markdown="block">
 <li markdown="block">
 
-![](/assets/pages/news-and-events--events-and-archive--past-events/2ae771c72e07-webinar-cheri-cra-compliance.webp)
+![Webinar - CHERI & CRA Compliance](/assets/pages/news-and-events--events-and-archive--past-events/2ae771c72e07-webinar-cheri-cra-compliance.webp)
 
 Past Webinar
 
@@ -46,7 +46,7 @@ From December 2027 the EU will enforce the Cyber Resilience Act which forces com
 </li>
 <li markdown="block">
 
-![](/assets/events/cheri-blossoms-tutorial-2026/88adf0d2ae82-cheri-blossoms-tutorial-2026.webp)
+![Hands-on Introduction to CHERI and CHERIoT](/assets/events/cheri-blossoms-tutorial-2026/88adf0d2ae82-cheri-blossoms-tutorial-2026.webp)
 
 Past Tutorial
 
@@ -59,7 +59,7 @@ The CHERI Research Centre at the Computer Laboratory, Codasip, and lowRISC co-or
 </li>
 <li markdown="block">
 
-![](/assets/events/cheri-blossoms-conference-2026/1e39a7b87075-cheri-blossoms-conference-2026.webp)
+![CHERI Blossoms Conference 2026](/assets/events/cheri-blossoms-conference-2026/1e39a7b87075-cheri-blossoms-conference-2026.webp)
 
 Past Conference
 
@@ -72,7 +72,7 @@ The CHERI Blossoms Conference 2026 was the must-attend event for forward-thinkin
 </li>
 <li markdown="block">
 
-![](/assets/events/embedded-world-2026/4e96ccb7b522-embedded-world-2026.webp)
+![CHERI Alliance at Embedded World 2026](/assets/events/embedded-world-2026/4e96ccb7b522-embedded-world-2026.webp)
 
 Past Exhibition
 
@@ -85,7 +85,7 @@ Embedded World Exhibition – Nuremberg Messe – Hall 5, booth 5-177Find us on 
 </li>
 <li markdown="block">
 
-![](/assets/events/cheritech25-reloaded/7bce58279add-cheritech25-reloaded.webp)
+![CHERITech'25 Reloaded](/assets/events/cheritech25-reloaded/7bce58279add-cheritech25-reloaded.webp)
 
 Past Online event
 
@@ -98,7 +98,7 @@ CHERITech’25 Reloaded took place online on 4th December 2025. Participants joi
 </li>
 <li markdown="block">
 
-![](/assets/events/cheritech25/0e6d3180c4d1-cheritech25.webp)
+![CHERITech'25 Conference](/assets/events/cheritech25/0e6d3180c4d1-cheritech25.webp)
 
 Past Conference
 
@@ -111,7 +111,7 @@ CHERITech’25 brought together researchers, technologists, cybersecurity expert
 </li>
 <li markdown="block">
 
-![](/assets/events/cheri-blossoms-conference-2025/ae43d5d29c6c-cheri-blossoms-conference-2025.webp)
+![CHERI Blossoms Conference 2025](/assets/events/cheri-blossoms-conference-2025/ae43d5d29c6c-cheri-blossoms-conference-2025.webp)
 
 Past Conference
 
@@ -124,7 +124,7 @@ The CHERI Blossoms Conference 2025 invited researchers, technologists, industry 
 </li>
 <li markdown="block">
 
-![](/assets/events/cybersecurity-by-design-conference-2024/ab41005be5b4-cybersecurity-by-design-conference-2024.webp)
+!['Cybersecurity by design - from research to industry' conference](/assets/events/cybersecurity-by-design-conference-2024/ab41005be5b4-cybersecurity-by-design-conference-2024.webp)
 
 Past Conference
 

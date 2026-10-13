@@ -33,17 +33,12 @@ This is the main route for applying CHERI memory protection across existing C an
 
 An ABI defines how compiled components agree on calls, data layout, registers, binaries, and system interfaces. In a pure-capability ABI:
 
-data pointers use capability representations
-
-function pointers and return addresses use protected forms
-
-arguments and return values use capability-aware calling conventions
-
-relocations and dynamic linking preserve capability metadata
-
-the operating system passes capability-aware process state
-
-system calls and libraries use matching pointer representations
+- data pointers use capability representations
+- function pointers and return addresses use protected forms
+- arguments and return values use capability-aware calling conventions
+- relocations and dynamic linking preserve capability metadata
+- the operating system passes capability-aware process state
+- system calls and libraries use matching pointer representations
 
 Every linked component at an interface must follow compatible rules.
 
@@ -53,7 +48,9 @@ The operating system and program loader establish initial capabilities for code,
 
 This means a source declaration such as:
 
-char \*buffer = malloc(128);
+```c
+char *buffer = malloc(128);
+```
 
 can produce a capability bounded to the allocation. Loads and stores through buffer are checked by the processor without requiring the source programmer to call a CHERI instruction for each access.
 
@@ -61,17 +58,12 @@ can produce a capability bounded to the allocation. Loads and stores through buf
 
 Pure-capability systems provide:
 
-broad spatial protection for capability-based accesses
-
-hardware-enforced permissions on pointers and code
-
-protection of capability integrity through tags
-
-compiler diagnostics for unsafe pointer assumptions
-
-a strong foundation for in-process compartments
-
-clearer faults close to invalid memory operations
+- broad spatial protection for capability-based accesses
+- hardware-enforced permissions on pointers and code
+- protection of capability integrity through tags
+- compiler diagnostics for unsafe pointer assumptions
+- a strong foundation for in-process compartments
+- clearer faults close to invalid memory operations
 
 Large bodies of Unix software have been ported through CheriBSD, showing that this model can support complete operating-system and application stacks.
 
@@ -79,19 +71,13 @@ Large bodies of Unix software have been ported through CheriBSD, showing that th
 
 Well-structured source often compiles with little change. Problems usually appear where code:
 
-stores pointers in integers that are too small
-
-assumes pointer size equals address-space size
-
-embeds live pointers in files or network messages
-
-uses custom allocation or memory-copy code
-
-depends on out-of-object pointer arithmetic
-
-contains ABI-specific assembly
-
-calls libraries built for an incompatible ABI
+- stores pointers in integers that are too small
+- assumes pointer size equals address-space size
+- embeds live pointers in files or network messages
+- uses custom allocation or memory-copy code
+- depends on out-of-object pointer arithmetic
+- contains ABI-specific assembly
+- calls libraries built for an incompatible ABI
 
 These are often latent portability or security problems even before CHERI. The pure-capability build makes them visible.
 
@@ -125,17 +111,12 @@ Software must still validate input and enforce authentication and policy.
 
 The hardware name alone does not establish pure-capability operation. Check:
 
-compiler target and flags
-
-binary ABI metadata
-
-linked libraries and dynamic loader
-
-operating-system process mode
-
-capability-aware debugger output
-
-a controlled bounds test or platform conformance suite
+- compiler target and flags
+- binary ABI metadata
+- linked libraries and dynamic loader
+- operating-system process mode
+- capability-aware debugger output
+- a controlled bounds test or platform conformance suite
 
 CheriBSD, Morello software, CHERI-RISC-V software development kits (SDKs), and CHERIoT use different target names and ABIs. Use their current documentation.
 

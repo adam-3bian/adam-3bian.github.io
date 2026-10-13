@@ -42,13 +42,12 @@ In a pure-capability environment, a pointer used for memory access carries bound
 
 For an allocation covering \[base, top), an access is permitted only when every byte lies at or above base and below top.
 
-Capability bounds:  \[ valid object bytes        )
-
-Valid 4-byte load:      \[----\]
-
-Invalid 4-byte load:                         \[----\]
-
+```text
+Capability bounds:  [ valid object bytes        )
+Valid 4-byte load:      [----]
+Invalid 4-byte load:                         [----]
 ^ crosses top
+```
 
 The invalid operation raises a capability exception rather than reading neighbouring memory.
 
@@ -56,31 +55,24 @@ The invalid operation raises a capability exception rather than reading neighbou
 
 Several layers create and refine bounds:
 
-the loader bounds code and global data
-
-the operating system bounds mapped regions and process authority
-
-the allocator bounds heap allocations
-
-the compiler bounds stack objects and, under selected policies, subobjects
-
-application code derives narrower capabilities for interfaces
+- the loader bounds code and global data
+- the operating system bounds mapped regions and process authority
+- the allocator bounds heap allocations
+- the compiler bounds stack objects and, under selected policies, subobjects
+- application code derives narrower capabilities for interfaces
 
 Coverage depends on all of these layers. A pure-capability application binary interface (ABI) gives broad pointer coverage, but the precision of each bound still depends on object layout, compiler policy, representability, and source semantics.
 
 ## Example: protecting a parser
 
-int parse\_header(const unsigned char \*packet, size\_t length) {
-
-if (length \< 4) {
-
-return -1;
-
+```c
+int parse_header(const unsigned char *packet, size_t length) {
+    if (length < 4) {
+        return -1;
+    }
+    return packet[0] << 8 | packet[1];
 }
-
-return packet\[0\] \<\< 8 | packet\[1\];
-
-}
+```
 
 The length check is still required for correct logic and portable C. On a CHERI system, passing a capability bounded to the actual packet adds hardware enforcement. If a later edit mistakenly reads packet\[length + 1\], the capability check can stop the access even when the neighbouring memory page is mapped.
 
@@ -96,26 +88,18 @@ CHERI compilers therefore expose documented policies for subobject bounds and la
 
 Correctly configured capability bounds can prevent or contain:
 
-stack and heap buffer overflows
-
-reads past string or array storage
-
-writes into adjacent object metadata
-
-crossing a compartment’s shared-buffer boundary
-
-many pointer-corruption exploits that depend on arbitrary nearby access
+- stack and heap buffer overflows
+- reads past string or array storage
+- writes into adjacent object metadata
+- crossing a compartment’s shared-buffer boundary
+- many pointer-corruption exploits that depend on arbitrary nearby access
 
 ## What it does not prevent
 
-Use-after-free when the stale capability remains usable.
-
-In-bounds corruption of a field that code is authorised to write.
-
-Access through another capability with wider bounds.
-
-Integer overflow before an allocation or bounds calculation, unless separately checked.
-
-Logic, authentication, cryptographic, and side-channel flaws.
+- Use-after-free when the stale capability remains usable.
+- In-bounds corruption of a field that code is authorised to write.
+- Access through another capability with wider bounds.
+- Integer overflow before an allocation or bounds calculation, unless separately checked.
+- Logic, authentication, cryptographic, and side-channel flaws.
 
 Spatial memory safety removes a major class of unsafe access, but it is one property. Continue with Temporal Memory Safety to understand why object lifetime needs additional mechanisms.

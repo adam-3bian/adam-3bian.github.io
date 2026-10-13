@@ -55,7 +55,7 @@ Dates, venue information, registration updates, and programme details are kept o
 <ul class="image-gallery record-gallery" markdown="block">
 <li markdown="block">
 
-![](/assets/events/cheri-blossoms-conference-2027/17bb25790594-cheri-blossoms-conference-2027.webp)
+![CHERI Blossoms Conference 2027](/assets/events/cheri-blossoms-conference-2027/17bb25790594-cheri-blossoms-conference-2027.webp)
 
 Upcoming Conference
 
@@ -75,7 +75,7 @@ Previous conference, tutorial, and livestream pages retain the schedules, speake
 <ul class="image-gallery record-gallery" markdown="block">
 <li markdown="block">
 
-![](/assets/events/cheri-blossoms-tutorial-2026/88adf0d2ae82-cheri-blossoms-tutorial-2026.webp)
+![Hands-on Introduction to CHERI and CHERIoT](/assets/events/cheri-blossoms-tutorial-2026/88adf0d2ae82-cheri-blossoms-tutorial-2026.webp)
 
 Past Tutorial
 
@@ -88,7 +88,7 @@ The CHERI Research Centre at the Computer Laboratory, Codasip, and lowRISC co-or
 </li>
 <li markdown="block">
 
-![](/assets/events/cheri-blossoms-conference-2026/1e39a7b87075-cheri-blossoms-conference-2026.webp)
+![CHERI Blossoms Conference 2026](/assets/events/cheri-blossoms-conference-2026/1e39a7b87075-cheri-blossoms-conference-2026.webp)
 
 Past Conference
 
@@ -101,7 +101,7 @@ The CHERI Blossoms Conference 2026 was the must-attend event for forward-thinkin
 </li>
 <li markdown="block">
 
-![](/assets/events/cheri-blossoms-conference-2025/ae43d5d29c6c-cheri-blossoms-conference-2025.webp)
+![CHERI Blossoms Conference 2025](/assets/events/cheri-blossoms-conference-2025/ae43d5d29c6c-cheri-blossoms-conference-2025.webp)
 
 Past Conference
 

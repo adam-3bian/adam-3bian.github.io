@@ -43,9 +43,8 @@ Much public guidance focuses on increasing the use of memory-safe languages. CHE
 
 CHERI can contribute in two ways:
 
-Reducing the impact of memory vulnerabilities through processor-enforced memory protection.
-
-Limiting the consequences of compromise through stronger compartmentalisation between components.
+- Reducing the impact of memory vulnerabilities through processor-enforced memory protection.
+- Limiting the consequences of compromise through stronger compartmentalisation between components.
 
 These properties support policy goals around secure-by-design products, vulnerability reduction, resilience, and the protection of legacy investment. They also make CHERI complementary to language migration rather than a competing universal answer, as explained in CHERI and Rust.
 

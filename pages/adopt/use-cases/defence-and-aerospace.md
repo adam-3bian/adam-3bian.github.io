@@ -36,15 +36,11 @@ CHERI gives the processor a direct role in enforcing least authority. Capabiliti
 
 This is relevant to mission systems for several reasons:
 
-established C and C++ code may remain necessary for many years;
-
-software components can come from organisations with different trust relationships;
-
-full replacement may be constrained by qualification, hardware, or deployment cycles;
-
-exposed communications code may share a processor with sensitive functions;
-
-smaller platforms may not support heavyweight isolation for every component.
+- established C and C++ code may remain necessary for many years;
+- software components can come from organisations with different trust relationships;
+- full replacement may be constrained by qualification, hardware, or deployment cycles;
+- exposed communications code may share a processor with sensitive functions;
+- smaller platforms may not support heavyweight isolation for every component.
 
 CHERI can strengthen both existing and new architectures. A legacy parser can gain bounded memory access, while a redesigned platform can use compartments to make authority between components explicit from the outset.
 

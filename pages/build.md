@@ -19,26 +19,19 @@ related:
 
 ## Platforms and software
 
-Hardware platforms
-
-Software ecosystem
-
-Platform comparison
+- Hardware platforms
+- Software ecosystem
+- Platform comparison
 
 ## Get started
 
-Choose a platform
-
-Install a toolchain
-
-Build your first application
-
-All developer guides
+- Choose a platform
+- Install a toolchain
+- Build your first application
+- All developer guides
 
 ## Work with the community
 
-Working groups
-
-Academic papers and authors
-
-Contact the Alliance
+- Working groups
+- Academic papers and authors
+- Contact the Alliance

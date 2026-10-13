@@ -31,47 +31,39 @@ CHERI in an open security technology, that enhances processors with hardware-enf
 
 For governments, insurers, banks, telcos, Cloud Service Providers (CSPs) and other technology users.
 
-Learn about vulnerabilities in everyday technology
-
-Understand the costs of the status quo
-
-Read the strategic case for CHERI
+- Learn about vulnerabilities in everyday technology
+- Understand the costs of the status quo
+- Read the strategic case for CHERI
 
 ## Build more secure products
 
 For Original Equipment Manufacturers (OEMs), system companies and product vendors.
 
-See why your products need an upgrade
-
-Why do you need CHERI
-
-Bringing CHERI to your product
+- See why your products need an upgrade
+- Why do you need CHERI
+- Bringing CHERI to your product
 
 ## Build the technology
 
 For semiconductor, IP, software, tools, architects and developers.
 
-Why do you need CHERI
-
-Bringing CHERI to your product
-
-Getting started with the technical work
+- Why do you need CHERI
+- Bringing CHERI to your product
+- Getting started with the technical work
 
 ## Join the ecosystem
 
 The CHERI Alliance helps organisations collaborate, share experience, influence best practices, and accelerate adoption.
 
-About the Alliance
-
-See CHERI Alliance members
+- About the Alliance
+- See CHERI Alliance members
 
 ## Meet the community
 
 From technical workshops to international conferences, Alliance events bring together the people shaping the future of secure computing.
 
-Read the news
-
-View Upcoming Events
+- Read the news
+- View Upcoming Events
 
 ## Become part of the journey
 

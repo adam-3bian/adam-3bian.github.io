@@ -45,67 +45,46 @@ In particular, CHERIoT builds on CHERI with a rich compartmentalisation model th
 
 Legend: ● Covered, ○ Partial, blank = Not covered
 
-Property: Spatial memory safety
-
-Property: Buffer overflow prevention; Rust: ○; CHERI: ●; Rust + CHERI: ●; Notes: Only in safe Rust, via bounds checks on slices; CHERI uses hardware capability bounds on every pointer.
-
-Property: Out-of-bounds read; Rust: ○; CHERI: ●; Rust + CHERI: ●; Notes: This is caught in safe Rust; CHERI also catches it in inline assembly and FFI code.
-
-Property: Bounds on heap allocations; Rust: ○; CHERI: ●; Rust + CHERI: ●; Notes: Rust checks bounds only in safe code; CHERI tags every allocation with hardware bounds regardless of language.
-
-Property: Pointer-integer confusion; Rust: ○; CHERI: ●; Rust + CHERI: ●; Notes: CHERI capabilities cannot be forged from integers: a hardware tag bit enforces this. Rust’s type system allows raw pointer casts via unsafe.
-
-Property: Pointer provenance enforcement; Rust: ○; CHERI: ●; Rust + CHERI: ●; Notes: Safe Rust tracks provenance conceptually; CHERI enforces it in silicon, with no capability without derivation from a valid source.
-
-Property: Temporal memory safety
-
-Property: Use-after-free prevention; Rust: ●; CHERI: ○; Rust + CHERI: ●; Notes: Rust’s ownership model statically prevents this in safe code. CHERI provides use-after-free protection with capability revocation.
-
-Property: Dangling pointer prevention; Rust: ●; CHERI: ○; Rust + CHERI: ●; Notes: Rust’s borrow checker statically prevents dangling pointers; CHERI requires revocation support for equivalent temporal safety.
-
-Property: Double-free prevention; Rust: ●; CHERI: ●; Rust + CHERI: ●; Notes: Rust’s ownership enforces single deallocation; handled by the CHERI memory allocator.
-
-Property: Memory leak prevention; Rust: ○; Rust + CHERI: ○; Notes: Rust reduces accidental memory leaks but does not eliminate them entirely. Programmer care or dedicated tooling is still required.
-
-Property: Type and value safety
-
-Property: Type confusion between same-size structures; Rust: ●; Rust + CHERI: ●; Notes: Rust’s type system distinguishes structures of the same size; CHERI only tracks bounds and provenance.
-
-Property: Data race prevention; Rust: ●; CHERI: ○; Rust + CHERI: ●; Notes: Rust’s Send and Sync traits enforce thread safety at compile time. CHERI has no concurrency model, but guarantees relaxed atomicity for all pointer loads and stores.
-
-Property: Uninitialised reads and arithmetic errors; Rust: ●; Rust + CHERI: ●; Notes: Rust requires initialisation before use and panics on integer overflow in debug builds; these issues are outside CHERI’s scope.
-
-Property: Isolation and compartmentalisation
-
-Property: Cross-component memory isolation; CHERI: ●; Rust + CHERI: ●; Notes: CHERI compartmentalisation enforces that objects in one compartment cannot be accessed by another. Rust has no equivalent at the process or component boundary.
-
-Property: Prevent C/C++ code from corrupting Rust objects; CHERI: ●; Rust + CHERI: ●; Notes: Without CHERI, a bug in linked C code can corrupt any Rust object in the same process. CHERI enforces bounds on all code in a compartment, regardless of language.
-
-Property: Supply-chain isolation; CHERI: ●; Rust + CHERI: ●; Notes: CHERI provides tools for building compartments that isolate third-party or malicious library code.
-
-Property: Least-privilege enforcement; CHERI: ●; Rust + CHERI: ●; Notes: CHERI capabilities are monotonically non-increasing: a component can delegate only a subset of its own permissions.
-
-Property: Coverage and scope
-
-Property: Protects unsafe Rust blocks; CHERI: ●; Rust + CHERI: ●; Notes: Although tools can help, Rust waives its own guarantees in unsafe blocks. CHERI hardware checks continue to apply.
-
-Property: Protects assembly and non-Rust code; CHERI: ●; Rust + CHERI: ●; Notes: CHERI hardware protects all code, including inline assembly, operating-system kernels, and bootloaders that Rust cannot cover.
-
-Property: No compiler trust required; CHERI: ●; Rust + CHERI: ●; Notes: Rust’s guarantees depend on compiler correctness. CHERI enforces its properties in silicon, so a buggy or malicious compiler cannot bypass hardware capabilities.
-
-Property: Reuse existing software; CHERI: ●; Rust + CHERI: ●; Notes: Rust requires a complete code rewrite. CHERI requires recompilation and correction of a small number of issues.
-
-Property: Works on existing hardware; Rust: ●; Notes: Rust requires only compiler support. CHERI requires hardware support.
-
-Property: Developer experience and adoption
-
-Property: Zero runtime overhead for safe code; Rust: ●; CHERI: ●; Rust + CHERI: ●; Notes: Safe Rust has near-zero overhead. CHERI shows less than 3% overhead, while runtime protection can enable further optimisation at the same security level.
-
-Property: Protects legacy codebases without rewriting; CHERI: ●; Rust + CHERI: ○; Notes: CHERI requires only recompilation of most C/C++ code. Rust requires a full rewrite.
-
-Property: Capability sealing and object authority; CHERI: ●; Rust + CHERI: ●; Notes: CHERI supports sealing capabilities so they can be held but not dereferenced except by the designated unsealer, enabling secure object references and cross-compartment handles.
-
-Property: Embedded and bare-metal support; Rust: ●; CHERI: ●; Rust + CHERI: ●; Notes: Both support embedded systems without an operating system.
+<table>
+<thead><tr><th scope="col">Property</th><th scope="col">Rust</th><th scope="col">CHERI</th><th scope="col">Rust + CHERI</th><th scope="col">Notes</th></tr></thead>
+<tbody><tr><th scope="rowgroup" colspan="5">Spatial memory safety</th></tr>
+<tr><th scope="row">Buffer overflow prevention</th><td>○</td><td>●</td><td>●</td><td>Only in safe Rust, via bounds checks on slices; CHERI uses hardware capability bounds on every pointer.</td></tr>
+<tr><th scope="row">Out-of-bounds read</th><td>○</td><td>●</td><td>●</td><td>This is caught in safe Rust; CHERI also catches it in inline assembly and FFI code.</td></tr>
+<tr><th scope="row">Bounds on heap allocations</th><td>○</td><td>●</td><td>●</td><td>Rust checks bounds only in safe code; CHERI tags every allocation with hardware bounds regardless of language.</td></tr>
+<tr><th scope="row">Pointer-integer confusion</th><td>○</td><td>●</td><td>●</td><td>CHERI capabilities cannot be forged from integers: a hardware tag bit enforces this. Rust’s type system allows raw pointer casts via unsafe.</td></tr>
+<tr><th scope="row">Pointer provenance enforcement</th><td>○</td><td>●</td><td>●</td><td>Safe Rust tracks provenance conceptually; CHERI enforces it in silicon, with no capability without derivation from a valid source.</td></tr>
+</tbody>
+<tbody><tr><th scope="rowgroup" colspan="5">Temporal memory safety</th></tr>
+<tr><th scope="row">Use-after-free prevention</th><td>●</td><td>○</td><td>●</td><td>Rust’s ownership model statically prevents this in safe code. CHERI provides use-after-free protection with capability revocation.</td></tr>
+<tr><th scope="row">Dangling pointer prevention</th><td>●</td><td>○</td><td>●</td><td>Rust’s borrow checker statically prevents dangling pointers; CHERI requires revocation support for equivalent temporal safety.</td></tr>
+<tr><th scope="row">Double-free prevention</th><td>●</td><td>●</td><td>●</td><td>Rust’s ownership enforces single deallocation; handled by the CHERI memory allocator.</td></tr>
+<tr><th scope="row">Memory leak prevention</th><td>○</td><td></td><td>○</td><td>Rust reduces accidental memory leaks but does not eliminate them entirely. Programmer care or dedicated tooling is still required.</td></tr>
+</tbody>
+<tbody><tr><th scope="rowgroup" colspan="5">Type and value safety</th></tr>
+<tr><th scope="row">Type confusion between same-size structures</th><td>●</td><td></td><td>●</td><td>Rust’s type system distinguishes structures of the same size; CHERI only tracks bounds and provenance.</td></tr>
+<tr><th scope="row">Data race prevention</th><td>●</td><td>○</td><td>●</td><td>Rust’s Send and Sync traits enforce thread safety at compile time. CHERI has no concurrency model, but guarantees relaxed atomicity for all pointer loads and stores.</td></tr>
+<tr><th scope="row">Uninitialised reads and arithmetic errors</th><td>●</td><td></td><td>●</td><td>Rust requires initialisation before use and panics on integer overflow in debug builds; these issues are outside CHERI’s scope.</td></tr>
+</tbody>
+<tbody><tr><th scope="rowgroup" colspan="5">Isolation and compartmentalisation</th></tr>
+<tr><th scope="row">Cross-component memory isolation</th><td></td><td>●</td><td>●</td><td>CHERI compartmentalisation enforces that objects in one compartment cannot be accessed by another. Rust has no equivalent at the process or component boundary.</td></tr>
+<tr><th scope="row">Prevent C/C++ code from corrupting Rust objects</th><td></td><td>●</td><td>●</td><td>Without CHERI, a bug in linked C code can corrupt any Rust object in the same process. CHERI enforces bounds on all code in a compartment, regardless of language.</td></tr>
+<tr><th scope="row">Supply-chain isolation</th><td></td><td>●</td><td>●</td><td>CHERI provides tools for building compartments that isolate third-party or malicious library code.</td></tr>
+<tr><th scope="row">Least-privilege enforcement</th><td></td><td>●</td><td>●</td><td>CHERI capabilities are monotonically non-increasing: a component can delegate only a subset of its own permissions.</td></tr>
+</tbody>
+<tbody><tr><th scope="rowgroup" colspan="5">Coverage and scope</th></tr>
+<tr><th scope="row">Protects unsafe Rust blocks</th><td></td><td>●</td><td>●</td><td>Although tools can help, Rust waives its own guarantees in unsafe blocks. CHERI hardware checks continue to apply.</td></tr>
+<tr><th scope="row">Protects assembly and non-Rust code</th><td></td><td>●</td><td>●</td><td>CHERI hardware protects all code, including inline assembly, operating-system kernels, and bootloaders that Rust cannot cover.</td></tr>
+<tr><th scope="row">No compiler trust required</th><td></td><td>●</td><td>●</td><td>Rust’s guarantees depend on compiler correctness. CHERI enforces its properties in silicon, so a buggy or malicious compiler cannot bypass hardware capabilities.</td></tr>
+<tr><th scope="row">Reuse existing software</th><td></td><td>●</td><td>●</td><td>Rust requires a complete code rewrite. CHERI requires recompilation and correction of a small number of issues.</td></tr>
+<tr><th scope="row">Works on existing hardware</th><td>●</td><td></td><td></td><td>Rust requires only compiler support. CHERI requires hardware support.</td></tr>
+</tbody>
+<tbody><tr><th scope="rowgroup" colspan="5">Developer experience and adoption</th></tr>
+<tr><th scope="row">Zero runtime overhead for safe code</th><td>●</td><td>●</td><td>●</td><td>Safe Rust has near-zero overhead. CHERI shows less than 3% overhead, while runtime protection can enable further optimisation at the same security level.</td></tr>
+<tr><th scope="row">Protects legacy codebases without rewriting</th><td></td><td>●</td><td>○</td><td>CHERI requires only recompilation of most C/C++ code. Rust requires a full rewrite.</td></tr>
+<tr><th scope="row">Capability sealing and object authority</th><td></td><td>●</td><td>●</td><td>CHERI supports sealing capabilities so they can be held but not dereferenced except by the designated unsealer, enabling secure object references and cross-compartment handles.</td></tr>
+<tr><th scope="row">Embedded and bare-metal support</th><td>●</td><td>●</td><td>●</td><td>Both support embedded systems without an operating system.</td></tr>
+</tbody>
+</table>
 
 ## What safe Rust provides
 
@@ -123,15 +102,11 @@ unsafe does not disable the compiler or mean that anything is allowed. It means 
 
 Safe Rust may also depend on:
 
-an operating-system kernel written largely in C
-
-a memory allocator containing unsafe code
-
-C or C++ libraries reached through a foreign-function interface
-
-firmware and drivers outside the Rust component
-
-a compiler and runtime that form part of the trusted computing base
+- an operating-system kernel written largely in C
+- a memory allocator containing unsafe code
+- C or C++ libraries reached through a foreign-function interface
+- firmware and drivers outside the Rust component
+- a compiler and runtime that form part of the trusted computing base
 
 The whole system is only as well protected as these boundaries allow.
 
@@ -143,13 +118,10 @@ CHERI also supports compartmentalisation. Two memory-safe components may each be
 
 This creates complementary layers:
 
-Safe Rust prevents many invalid programs through language rules.
-
-CHERI memory protection enforces bounds and permissions on capability-based access.
-
-CHERI compartmentalisation limits authority between components, including components that are working as designed.
-
-Testing and assurance find logic errors and check that the intended policy is implemented.
+- Safe Rust prevents many invalid programs through language rules.
+- CHERI memory protection enforces bounds and permissions on capability-based access.
+- CHERI compartmentalisation limits authority between components, including components that are working as designed.
+- Testing and assurance find logic errors and check that the intended policy is implemented.
 
 ## Important limits
 
@@ -161,12 +133,8 @@ Rust support varies across CHERI platforms and continues to evolve. Check the Ru
 
 ## Key takeaways
 
-Prefer safe Rust for new code where practical.
-
-Keep unsafe code small, documented, and tested.
-
-Use CHERI to strengthen native boundaries and constrain low-level pointer use.
-
-Use compartments when components should not share the same authority.
-
-Assess the complete hardware and software stack rather than relying on a language label alone.
+- Prefer safe Rust for new code where practical.
+- Keep unsafe code small, documented, and tested.
+- Use CHERI to strengthen native boundaries and constrain low-level pointer use.
+- Use compartments when components should not share the same authority.
+- Assess the complete hardware and software stack rather than relying on a language label alone.

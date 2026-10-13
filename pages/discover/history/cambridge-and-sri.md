@@ -36,17 +36,12 @@ SRI brought a long history of trustworthy systems, formal methods, capability-ba
 
 The result was a total-system approach. Rather than adding one check to one compiler, the teams investigated coordinated changes to:
 
-instruction-set architecture
-
-processor implementations
-
-compiler and language models
-
-operating-system kernels and application binary interfaces (ABIs)
-
-application compartmentalisation
-
-formal models and security analysis
+- instruction-set architecture
+- processor implementations
+- compiler and language models
+- operating-system kernels and application binary interfaces (ABIs)
+- application compartmentalisation
+- formal models and security analysis
 
 ## Starting from a clean question
 

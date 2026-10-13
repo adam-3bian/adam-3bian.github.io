@@ -54,13 +54,10 @@ This has system-wide consequences. Caches, context switching, debuggers, direct 
 
 A tag may be cleared when software:
 
-writes ordinary data over all or part of a stored capability
-
-creates bounds or an address that the architecture cannot represent under the requested operation
-
-performs an operation whose defined result is not a valid capability
-
-receives memory that was cleared or initialised as ordinary data
+- writes ordinary data over all or part of a stored capability
+- creates bounds or an address that the architecture cannot represent under the requested operation
+- performs an operation whose defined result is not a valid capability
+- receives memory that was cleared or initialised as ordinary data
 
 Exact rules differ between CHERI architectures. Developers should use the target specification and compiler interfaces rather than infer tag behaviour from one implementation.
 
@@ -72,9 +69,8 @@ If an allocator frees an object, copies of its capability may remain tagged. If 
 
 The distinction is:
 
-Tag validity: Was this value created and preserved as a capability?
-
-Object lifetime: Is the authority still safe to use for the intended object?
+- Tag validity: Was this value created and preserved as a capability?
+- Object lifetime: Is the authority still safe to use for the intended object?
 
 ## Tags are not cryptographic signatures
 

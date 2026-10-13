@@ -32,7 +32,7 @@ Founding members are marked on their cards, with the current membership tier sho
 <ul class="image-gallery logo-gallery" markdown="block">
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/15a4ef36063e-axiomise-ltd.webp)
+![Axiomise Ltd](/assets/pages/alliance--leadership--members/15a4ef36063e-axiomise-ltd.webp)
 
 Full Member
 
@@ -43,7 +43,7 @@ At Axiomise, our vision is to make formal normal, and for the last seven years, 
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/d1c99a735743-bt-group.webp)
+![BT Group](/assets/pages/alliance--leadership--members/d1c99a735743-bt-group.webp)
 
 Full Member
 
@@ -54,7 +54,7 @@ BT Group is the UK’s leading provider of fixed and mobile telecommunications a
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/6f93694e1d19-cantech-informatics-srl.webp)
+![Cantech Informatics SRL](/assets/pages/alliance--leadership--members/6f93694e1d19-cantech-informatics-srl.webp)
 
 Full Member
 
@@ -65,7 +65,7 @@ Details to follow.
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/3197f024e57a-capabilities-limited.webp)
+![Capabilities Limited](/assets/pages/alliance--leadership--members/3197f024e57a-capabilities-limited.webp)
 
 Founding member Full Member
 
@@ -76,7 +76,7 @@ Capabilities Limited offers the deep industry knowledge of software and hardware
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/f4d5b241c89f-centrale-supelec.webp)
+![Centrale Supélec](/assets/pages/alliance--leadership--members/f4d5b241c89f-centrale-supelec.webp)
 
 Community Member
 
@@ -87,7 +87,7 @@ Details to follow.
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/13423c3b2743-chevin-technology.webp)
+![Chevin Technology](/assets/pages/alliance--leadership--members/13423c3b2743-chevin-technology.webp)
 
 Founding member Full Member
 
@@ -98,7 +98,7 @@ Chevin Technology designs and develops cutting-edge Ethernet protocol accelerato
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/e7ac07c57c57-codasip.webp)
+![Codasip](/assets/pages/alliance--leadership--members/e7ac07c57c57-codasip.webp)
 
 Founding member Full Member
 
@@ -109,7 +109,7 @@ Codasip is a processor technology company enabling system-on-chip developers to 
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/a79a82dc43a3-critical-technologies.webp)
+![Critical Technologies Inc.](/assets/pages/alliance--leadership--members/a79a82dc43a3-critical-technologies.webp)
 
 Founding member Full Member
 
@@ -120,7 +120,7 @@ The Critical Technologies Inc. (CTI) mission is trustworthy networked autonomy. 
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/c816a30cd636-cynam.webp)
+![CyNam](/assets/pages/alliance--leadership--members/c816a30cd636-cynam.webp)
 
 Founding member Community Member
 
@@ -131,7 +131,7 @@ CyNam is Cheltenham’s hub for cyber security and technology – connecting div
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/12f55d298bc6-cyberwhiz.webp)
+![CyberWhiz](/assets/pages/alliance--leadership--members/12f55d298bc6-cyberwhiz.webp)
 
 Full Member
 
@@ -142,7 +142,7 @@ IoT Cyber Security Solutions and Services for Edge – Mobile – Cloud.
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/56442164f813-dstl.webp)
+![Defence Science and Technology Laboratory (Dstl)](/assets/pages/alliance--leadership--members/56442164f813-dstl.webp)
 
 Founding member Community Member
 
@@ -153,7 +153,7 @@ The Defence Science and Technology Laboratory (Dstl) delivers high-impact scienc
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/c9a6eee158e7-digital-catapult.webp)
+![Digital Catapult](/assets/pages/alliance--leadership--members/c9a6eee158e7-digital-catapult.webp)
 
 Community Member
 
@@ -164,7 +164,7 @@ Digital Catapult is a deep tech innovation organisation. We help businesses grow
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/0c6428d03000-discribehub.webp)
+![DiscribeHub+](/assets/pages/alliance--leadership--members/0c6428d03000-discribehub.webp)
 
 Community Member
 
@@ -175,7 +175,7 @@ Details to follow.
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/4bfd995553c4-durham-university.webp)
+![Durham University](/assets/pages/alliance--leadership--members/4bfd995553c4-durham-university.webp)
 
 Community Member
 
@@ -186,7 +186,7 @@ The Department of Computer Science, based in the beautiful historic city of Durh
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/d3a82dd01ee1-ensilica.webp)
+![EnSilica](/assets/pages/alliance--leadership--members/d3a82dd01ee1-ensilica.webp)
 
 Full Member
 
@@ -197,7 +197,7 @@ EnSilica is a fabless, application-specific chipmaker combining deep system-leve
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/7fa2d1c94f5f-freebsd-foundation.webp)
+![FreeBSD Foundation](/assets/pages/alliance--leadership--members/7fa2d1c94f5f-freebsd-foundation.webp)
 
 Founding member Full Member
 
@@ -208,7 +208,7 @@ The FreeBSD Foundation is a 501(c)(3) non-profit organization supporting the Fre
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/fdda8d39d5fa-google.webp)
+![Google](/assets/pages/alliance--leadership--members/fdda8d39d5fa-google.webp)
 
 Founding member Full Member
 
@@ -219,7 +219,7 @@ Google’s mission is to organize the world’s information and make it universa
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/56e48a94a74c-instituto-superior-de-engenharia-do-porto.webp)
+![Instituto Superior de Engenharia do Porto](/assets/pages/alliance--leadership--members/56e48a94a74c-instituto-superior-de-engenharia-do-porto.webp)
 
 Community Member
 
@@ -230,7 +230,7 @@ The School of Engineering of the Polytechnic Institute of Porto (ISEP), Portugal
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/e4eb3f0f30d7-johannes-kepler-university-linz.webp)
+![Johannes Kepler University Linz (JKU)](/assets/pages/alliance--leadership--members/e4eb3f0f30d7-johannes-kepler-university-linz.webp)
 
 Community Member
 
@@ -241,7 +241,7 @@ Johannes Kepler University (JKU) Linz is a public research university in Linz, U
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/35651982123f-ku-leuven.webp)
+![KU Leuven](/assets/pages/alliance--leadership--members/35651982123f-ku-leuven.webp)
 
 Community Member
 
@@ -252,7 +252,7 @@ Founded in 1425, the multidisciplinary and research-driven university KU Leuven 
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/6dc10d986d08-king-abdullah-university-of-science-and-technology-kaust.webp)
+![King Abdullah University of Science and Technology (KAUST)](/assets/pages/alliance--leadership--members/6dc10d986d08-king-abdullah-university-of-science-and-technology-kaust.webp)
 
 Full Member
 
@@ -263,7 +263,7 @@ Details to follow.
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/d3c28b0acb70-light-momentum-technology-corp.webp)
+![Light Momentum Technology Corp.](/assets/pages/alliance--leadership--members/d3c28b0acb70-light-momentum-technology-corp.webp)
 
 Founding member Full Member
 
@@ -274,7 +274,7 @@ Light Momentum Technology Corp. (LMTech), founded in 2021 by top university alum
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/87b7d58ab13b-misra.webp)
+![MISRA](/assets/pages/alliance--leadership--members/87b7d58ab13b-misra.webp)
 
 Community Member
 
@@ -285,7 +285,7 @@ Details to follow.
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/3f395a725189-ncsc.webp)
+![NCSC](/assets/pages/alliance--leadership--members/3f395a725189-ncsc.webp)
 
 Founding member Community Member
 
@@ -296,7 +296,7 @@ UK National Cyber Security Centre
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/73f7c30cf8f3-national-taiwan-university.webp)
+![National Taiwan University](/assets/pages/alliance--leadership--members/73f7c30cf8f3-national-taiwan-university.webp)
 
 Community Member
 
@@ -307,7 +307,7 @@ Secure Systems Lab (SSLab) conducts research to advance the security, reliabilit
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/657e91d2fbde-novomorphic.webp)
+![Novomorphic](/assets/pages/alliance--leadership--members/657e91d2fbde-novomorphic.webp)
 
 Full Member
 
@@ -318,7 +318,7 @@ Details to follow.
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/7adeb546dabd-nquiringminds.webp)
+![NquiringMinds](/assets/pages/alliance--leadership--members/7adeb546dabd-nquiringminds.webp)
 
 Founding member Full Member
 
@@ -329,7 +329,7 @@ Secure AI Agents Our customers can develop, and deploy distributed AI agents, wi
 </li>
 <li markdown="block">
 
-![](/assets/organisations/pa-consulting/8aba894151f8-logo.png)
+![PA Consulting](/assets/organisations/pa-consulting/8aba894151f8-logo.png)
 
 Full Member
 
@@ -340,7 +340,7 @@ PA Consulting is a global innovation and transformation consultancy that combine
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/ebdf7fe70388-parvat-infotech.webp)
+![Parvat Infotech](/assets/pages/alliance--leadership--members/ebdf7fe70388-parvat-infotech.webp)
 
 Founding member Full Member
 
@@ -351,7 +351,7 @@ Parvat Infotech is an Indian software development consultancy, established in 20
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/872793f69e62-rptu.webp)
+![Rheinland-Pfälzische Technische Universität Kaiserslautern-Landau (RPTU)](/assets/pages/alliance--leadership--members/872793f69e62-rptu.webp)
 
 Community Member
 
@@ -362,7 +362,7 @@ RPTU is a public research university in Kaiserslautern and Landau in der Pfalz, 
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/94dc91ef371b-sci-semiconductor.webp)
+![SCI Semiconductor](/assets/pages/alliance--leadership--members/94dc91ef371b-sci-semiconductor.webp)
 
 Founding member Full Member
 
@@ -373,7 +373,7 @@ SCI Semiconductor was formed to lead the commercialisation of CHERI technologies
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/0eea38e7fc9b-sri.webp)
+![SRI](/assets/pages/alliance--leadership--members/0eea38e7fc9b-sri.webp)
 
 Founding member Community Member
 
@@ -384,7 +384,7 @@ SRI creates and delivers world-changing solutions for a safer, healthier, and mo
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/d89309051d71-sensor-it.webp)
+![Sensor IT](/assets/pages/alliance--leadership--members/d89309051d71-sensor-it.webp)
 
 Full Member
 
@@ -395,7 +395,7 @@ Details to follow.
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/0b0244eecd03-siemens.webp)
+![Siemens](/assets/pages/alliance--leadership--members/0b0244eecd03-siemens.webp)
 
 Full Member
 
@@ -406,7 +406,7 @@ Details to follow.
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/713cd926438e-swansea-university.webp)
+![Swansea University](/assets/pages/alliance--leadership--members/713cd926438e-swansea-university.webp)
 
 Founding member Community Member
 
@@ -417,7 +417,7 @@ Swansea University is a research university and one of the leading institutions 
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/fee4a942f3a3-techworks.webp)
+![TechWorks](/assets/pages/alliance--leadership--members/fee4a942f3a3-techworks.webp)
 
 Founding member Community Member
 
@@ -428,7 +428,7 @@ TechWorks is a new type of industry association at the core of the UK deep tech 
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/f25e53ffb87d-the-capable-hub.webp)
+![The Capable Hub](/assets/pages/alliance--leadership--members/f25e53ffb87d-the-capable-hub.webp)
 
 Full Member
 
@@ -439,7 +439,7 @@ The Capable Hub is a non-profit engineering organisation improving the availabil
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/8fc38ac81c4f-the-university-of-manchester.webp)
+![The University of Manchester](/assets/pages/alliance--leadership--members/8fc38ac81c4f-the-university-of-manchester.webp)
 
 Community Member
 
@@ -450,7 +450,7 @@ The University of Manchester, a charitable body incorporated by Royal Charter, i
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/771ab0bbdc9b-tccoe.webp)
+![Trusted Computing Center of Excellence (TCCoE)](/assets/pages/alliance--leadership--members/771ab0bbdc9b-tccoe.webp)
 
 Founding member Community Member
 
@@ -461,7 +461,7 @@ The Trusted Computing Center of Excellence™ (TCCoE) not-for-profit organizatio
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/9abf3fe679ac-um-labs.webp)
+![UM Labs](/assets/pages/alliance--leadership--members/9abf3fe679ac-um-labs.webp)
 
 Full Member
 
@@ -472,7 +472,7 @@ UM Labs is a cyber security company specialising in securing real-time communica
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/566203b1f2b2-university-of-birmingham.webp)
+![University of Birmingham](/assets/pages/alliance--leadership--members/566203b1f2b2-university-of-birmingham.webp)
 
 Founding member Community Member
 
@@ -483,7 +483,7 @@ The University of Birmingham is a world top 100 university and part of the prest
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/34fdc84a50ff-university-of-cambridge.webp)
+![University of Cambridge](/assets/pages/alliance--leadership--members/34fdc84a50ff-university-of-cambridge.webp)
 
 Founding member Full Member
 
@@ -494,7 +494,7 @@ University of Cambridge is one of the top ten universities in the world. Univers
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/0ff290b15dbf-university-of-edinburgh.webp)
+![University of Edinburgh](/assets/pages/alliance--leadership--members/0ff290b15dbf-university-of-edinburgh.webp)
 
 Community Member
 
@@ -505,7 +505,7 @@ Details to follow.
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/52d2d227880f-university-of-exeter.webp)
+![University of Exeter](/assets/pages/alliance--leadership--members/52d2d227880f-university-of-exeter.webp)
 
 Community Member
 
@@ -516,7 +516,7 @@ The University of Exeter is a Russell Group university and a leading research-in
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/79b9d7664fc3-university-of-glasgow.webp)
+![University of Glasgow](/assets/pages/alliance--leadership--members/79b9d7664fc3-university-of-glasgow.webp)
 
 Founding member Community Member
 
@@ -527,7 +527,7 @@ A Russell Group university with a strong sense of civic mission.
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/b746edbde9cb-university-of-kent.webp)
+![University of Kent](/assets/pages/alliance--leadership--members/b746edbde9cb-university-of-kent.webp)
 
 Community Member
 
@@ -538,7 +538,7 @@ The University of Kent is a British research and teaching University in the hist
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/3c4d6db9a4d2-verisilicon.webp)
+![VeriSilicon](/assets/pages/alliance--leadership--members/3c4d6db9a4d2-verisilicon.webp)
 
 Full Member
 
@@ -549,7 +549,7 @@ VeriSilicon Holdings Co., Ltd. (VeriSilicon, 688521.SH) is committed to providin
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/f2b8cb188409-wind-river.webp)
+![Wind River](/assets/pages/alliance--leadership--members/f2b8cb188409-wind-river.webp)
 
 Full Member
 
@@ -560,7 +560,7 @@ Wind River is a global leader in delivering software for the intelligent edge. F
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/6b16bec36bc4-wyvern-global.webp)
+![Wyvern Global](/assets/pages/alliance--leadership--members/6b16bec36bc4-wyvern-global.webp)
 
 Full Member
 
@@ -571,7 +571,7 @@ Wyvern Global Semiconductors is leading the way in memory-secure System on Chips
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/fbc61ced09d2-zaya.webp)
+![ZAYA](/assets/pages/alliance--leadership--members/fbc61ced09d2-zaya.webp)
 
 Full Member
 
@@ -582,7 +582,7 @@ We offer security solutions and containerisation for microcontrollers and embedd
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--members/0b3c19c294d6-lowrisc.webp)
+![lowRISC](/assets/pages/alliance--leadership--members/0b3c19c294d6-lowrisc.webp)
 
 Founding member Full Member
 

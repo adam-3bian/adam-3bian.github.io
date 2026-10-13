@@ -33,7 +33,7 @@ The Governing Board consists of individuals elected by our members for two-year 
 <ul class="image-gallery portrait-gallery" markdown="block">
 <li markdown="block">
 
-![](/assets/people/mike-eftimakis/95bf8c70c443-mike-eftimakis.webp)
+![Mike Eftimakis](/assets/people/mike-eftimakis/95bf8c70c443-mike-eftimakis.webp)
 
 CHERI Alliance
 
@@ -44,7 +44,7 @@ Founding Director
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--governing-board/12fb0801291a-andrew-lindsay.webp)
+![Andrew Lindsay](/assets/pages/alliance--leadership--governing-board/12fb0801291a-andrew-lindsay.webp)
 
 Codasip
 
@@ -55,7 +55,7 @@ Security Product Manager and Architect
 </li>
 <li markdown="block">
 
-![](/assets/people/david-chisnall/df30b5f06c8a-david-chisnall.webp)
+![David Chisnall](/assets/people/david-chisnall/df30b5f06c8a-david-chisnall.webp)
 
 SCI Semiconductor
 
@@ -66,7 +66,7 @@ Director of Systems Architecture
 </li>
 <li markdown="block">
 
-![](/assets/people/sam-cater/61e7a8222d5c-sam-cater.webp)
+![Sam Cater](/assets/people/sam-cater/61e7a8222d5c-sam-cater.webp)
 
 BT
 
@@ -77,7 +77,7 @@ Cloud Infrastructure Research Manager
 </li>
 <li markdown="block">
 
-![](/assets/people/adam-finney/594a07796a78-adam-finney.webp)
+![Adam Finney](/assets/people/adam-finney/594a07796a78-adam-finney.webp)
 
 CHERI Alliance
 
@@ -88,7 +88,7 @@ Community representative
 </li>
 <li markdown="block">
 
-![](/assets/people/simon-moore/867833a2bb89-simon-moore.webp)
+![Simon Moore](/assets/people/simon-moore/867833a2bb89-simon-moore.webp)
 
 University of Cambridge
 
@@ -99,7 +99,7 @@ Professor
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--governing-board/975c2bbe8ea3-alex-richardson.webp)
+![Alex Richardson](/assets/pages/alliance--leadership--governing-board/975c2bbe8ea3-alex-richardson.webp)
 
 Google
 
@@ -110,7 +110,7 @@ Senior Software Engineer
 </li>
 <li markdown="block">
 
-![](/assets/pages/alliance--leadership--governing-board/137b57602d01-allison-randal.webp)
+![Allison Randal](/assets/pages/alliance--leadership--governing-board/137b57602d01-allison-randal.webp)
 
 Capabilities Limited
 
@@ -121,7 +121,7 @@ Open Source/Hardware Strategist
 </li>
 <li markdown="block">
 
-![](/assets/people/paul-waller/366013f0e312-paul-waller.webp)
+![Paul Waller](/assets/people/paul-waller/366013f0e312-paul-waller.webp)
 
 NCSC
 

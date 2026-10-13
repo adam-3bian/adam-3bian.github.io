@@ -22,16 +22,12 @@ Why CHERI?
 
 How does CHERI work?
 
-The history of CHERI
-
-Frequently asked questions
+- The history of CHERI
+- Frequently asked questions
 
 ## Explore the resources
 
-Academic papers and authors
-
-Documentation and guides
-
-Videos and presentations
-
-Glossary
+- Academic papers and authors
+- Documentation and guides
+- Videos and presentations
+- Glossary

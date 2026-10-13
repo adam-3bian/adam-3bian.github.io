@@ -33,11 +33,11 @@ Provenance is the relationship between a pointer or capability and the authority
 
 Suppose an allocator holds a capability for a heap region and returns a smaller capability for one object:
 
-Heap authority:       \[--------------------------------\]
-
-Allocated object:             \[------\]
-
-Derived field:                  \[--\]
+```text
+Heap authority:       [--------------------------------]
+Allocated object:             [------]
+Derived field:                  [--]
+```
 
 The object capability is valid because it was derived within the heap capability’s range and permissions. The field capability carries no more authority than the object capability.
 
@@ -57,13 +57,10 @@ On CHERI, the integer representation does not contain all capability metadata or
 
 The safe rule is:
 
-keep references as pointer or capability types
-
-use uintptr\_t only for documented address-level operations
-
-do not expect an arbitrary integer to create authority
-
-do not serialise capabilities as portable addresses
+- keep references as pointer or capability types
+- use uintptr\_t only for documented address-level operations
+- do not expect an arbitrary integer to create authority
+- do not serialise capabilities as portable addresses
 
 Compiler diagnostics during a pure-capability port often reveal code that violated these rules implicitly.
 
@@ -77,28 +74,20 @@ The design improvement is to distinguish an identifier or offset from a capabili
 
 When a capability crosses a function or compartment boundary, the receiver gains the authority it carries. Interface review should therefore ask:
 
-Which original capability was used to derive it?
-
-Were bounds narrowed to the intended object?
-
-Were unnecessary permissions removed?
-
-May the receiver retain or delegate it?
-
-Does the object remain alive for the full permitted use?
+- Which original capability was used to derive it?
+- Were bounds narrowed to the intended object?
+- Were unnecessary permissions removed?
+- May the receiver retain or delegate it?
+- Does the object remain alive for the full permitted use?
 
 This makes authority flow reviewable in a way that a list of integer addresses is not.
 
 ## Important limits
 
-Provenance does not prove that application logic chose the right object.
-
-A valid capability can be over-broad if its source authority was over-broad.
-
-Provenance and tags do not automatically revoke stale capabilities after free.
-
-Language rules, compiler implementation, application binary interface (ABI), and hardware behaviour must align.
-
-Devices and direct-memory-access (DMA) engines need system designs that preserve or mediate capability authority.
+- Provenance does not prove that application logic chose the right object.
+- A valid capability can be over-broad if its source authority was over-broad.
+- Provenance and tags do not automatically revoke stale capabilities after free.
+- Language rules, compiler implementation, application binary interface (ABI), and hardware behaviour must align.
+- Devices and direct-memory-access (DMA) engines need system designs that preserve or mediate capability authority.
 
 Provenance is why Tags & Validity and monotonic derivation matter. Together they prevent “knowing the address” from becoming “owning the authority”.

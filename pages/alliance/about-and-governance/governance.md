@@ -47,15 +47,11 @@ Members contribute through governance, working groups, events, reviews, and shar
 
 Alliance activity is governed by published legal and policy documents, including:
 
-the Code of Conduct;
-
-Competition Law Statement;
-
-Intellectual Property Policy;
-
-Trademark Policy;
-
-export-control guidance;
+- the Code of Conduct;
+- Competition Law Statement;
+- Intellectual Property Policy;
+- Trademark Policy;
+- export-control guidance;
 
 Privacy Policy.
 

@@ -34,19 +34,13 @@ The phrase “CHERI-based” on its own says very little. A product may use a CH
 
 A well-scoped description can identify:
 
-the processor product, architecture profile, and supported execution modes;
-
-which firmware, operating-system, application, and third-party components use capabilities;
-
-which components are compartments and the authority available to each one;
-
-how spatial and temporal memory safety are addressed;
-
-whether debug, devices, direct memory access, or privileged software can bypass normal checks;
-
-the toolchain, update path, vulnerability process, and supported lifetime;
-
-limitations that remain outside the CHERI protection model.
+- the processor product, architecture profile, and supported execution modes;
+- which firmware, operating-system, application, and third-party components use capabilities;
+- which components are compartments and the authority available to each one;
+- how spatial and temporal memory safety are addressed;
+- whether debug, devices, direct memory access, or privileged software can bypass normal checks;
+- the toolchain, update path, vulnerability process, and supported lifetime;
+- limitations that remain outside the CHERI protection model.
 
 This information turns a technology label into a set of properties that can be compared with a product’s intended role.
 

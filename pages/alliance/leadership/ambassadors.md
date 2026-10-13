@@ -31,19 +31,13 @@ CHERI adoption grows when trusted community members can explain the technology i
 
 Ambassadors choose activities that match their interests, skills, and availability. These may include:
 
-writing tutorials, articles, demonstrations, or technical papers
-
-giving talks and creating video or presentation material
-
-sharing accurate news and practical experience
-
-helping with conferences, workshops, and online events
-
-introducing organisations and communities to the Alliance
-
-Mentoring newcomers and supporting community projects
-
-Providing feedback on educational materials and outreach activities
+- writing tutorials, articles, demonstrations, or technical papers
+- giving talks and creating video or presentation material
+- sharing accurate news and practical experience
+- helping with conferences, workshops, and online events
+- introducing organisations and communities to the Alliance
+- Mentoring newcomers and supporting community projects
+- Providing feedback on educational materials and outreach activities
 
 Ambassadors act in accordance with Alliance policies and programme guidance. The role does not make an ambassador a governing-board member, product certifier, or official spokesperson for the entire Alliance.
 
@@ -51,17 +45,12 @@ Ambassadors act in accordance with Alliance policies and programme guidance. The
 
 The programme provides opportunities to:
 
-Connect with the global CHERI community
-
-Participate in working groups and technical discussions
-
-Access community resources, events, and briefings
-
-Contribute to projects and outreach activities
-
-Gain recognition for community contributions
-
-Help shape the future of the CHERI ecosystem
+- Connect with the global CHERI community
+- Participate in working groups and technical discussions
+- Access community resources, events, and briefings
+- Contribute to projects and outreach activities
+- Gain recognition for community contributions
+- Help shape the future of the CHERI ecosystem
 
 Specific benefits and participation requirements may evolve as the programme develops.
 

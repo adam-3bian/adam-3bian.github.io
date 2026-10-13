@@ -24,9 +24,9 @@ related:
 
 This set of exercises and adversarial missions is intended to:
 
-Build a baseline skillset with RISC-V and CHERI-RISC-V, as well as awareness of some of the dynamics of CHERI-enabled software, through skills development exercises.
+- Build a baseline skillset with RISC-V and CHERI-RISC-V, as well as awareness of some of the dynamics of CHERI-enabled software, through skills development exercises.
 
-Develop adversarial experience with CHERI-RISC-V performing basic investigation around gradations of CHERI feature deployment through focused adversarial missions.
+- Develop adversarial experience with CHERI-RISC-V performing basic investigation around gradations of CHERI feature deployment through focused adversarial missions.
 
 These activities supplement existing experience with reverse engineering and exploitation on conventional architectures and software stacks.
 
@@ -40,13 +40,13 @@ Skills development exercises are intended to take 1-2 hours each, and ask you to
 
 These exercises take for granted a strong existing understanding of:
 
-The C/C++ languages
+- The C/C++ languages
 
-UNIX program compilation, execution, and debugging
+- UNIX program compilation, execution, and debugging
 
-RISC ISAs and binary structures/reverse engineering (e.g., on MIPS or ARMv8)
+- RISC ISAs and binary structures/reverse engineering (e.g., on MIPS or ARMv8)
 
-seL4 and Microkit concepts and development
+- seL4 and Microkit concepts and development
 
 ## Focused adversarial missions
 

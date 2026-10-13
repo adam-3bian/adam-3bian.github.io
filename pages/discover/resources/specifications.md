@@ -36,8 +36,6 @@ Helps readers understand where Specifications fits, what evidence matters, and w
 
 ## Content
 
-What is included under Specifications
-
-How entries are described, dated, and sourced
-
-Links to relevant primary or supporting material
+- What is included under Specifications
+- How entries are described, dated, and sourced
+- Links to relevant primary or supporting material

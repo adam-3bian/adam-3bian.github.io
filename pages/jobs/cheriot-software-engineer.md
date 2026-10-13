@@ -29,13 +29,10 @@ This is an early opportunity notice rather than a formal job advert. It describe
 
 The role is expected to combine practical driver development with work higher in the software stack. Initial responsibilities may include:
 
-turning hardware datasheets and device-class interfaces into working drivers;
-
-writing and maintaining C++ software, with more of the work expected to move towards Rust;
-
-designing secure, compartmentalised services and software stacks;
-
-working across the boundary between embedded hardware interfaces and higher-level system design.
+- turning hardware datasheets and device-class interfaces into working drivers;
+- writing and maintaining C++ software, with more of the work expected to move towards Rust;
+- designing secure, compartmentalised services and software stacks;
+- working across the boundary between embedded hardware interfaces and higher-level system design.
 
 ## Who the team would like to hear from
 
@@ -53,16 +50,10 @@ No employer name, salary, benefits, employment terms, or closing date were inclu
 
 Read the original opportunity post for its latest status and use the contact route provided there. Do not assume the opportunity has closed solely because some time has passed since publication.
 
-Status: Expression of interest
-
-Location: United Kingdom
-
-Working pattern: Fully remote
-
-Experience: Junior applicants welcome
-
-Posted
-
-Closing date: Not specified
-
-Relevant experience: C, C++, Rust, Device drivers, Secure systems design
+- Status: Expression of interest
+- Location: United Kingdom
+- Working pattern: Fully remote
+- Experience: Junior applicants welcome
+- Posted
+- Closing date: Not specified
+- Relevant experience: C, C++, Rust, Device drivers, Secure systems design

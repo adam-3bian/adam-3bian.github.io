@@ -20,7 +20,9 @@ layout: default
   {% endif %}
   {% assign image_prefix = '/assets/' | relative_url | prepend: 'src="' %}
   {% assign href_prefix = '/' | relative_url | prepend: 'href="' %}
-  <section class="article-content" aria-label="Article content">{{ reader_content | replace: 'src="/assets/', image_prefix | replace: 'href="/', href_prefix }}</section>
+  {% comment %}Generated page links already use relative_url; protect their prefix before rewriting raw Markdown links.{% endcomment %}
+  {% assign protected_href_prefix = 'data-relative-href="' %}
+  <section class="article-content" aria-label="Article content">{{ reader_content | replace: 'src="/assets/', image_prefix | replace: href_prefix, protected_href_prefix | replace: 'href="/', href_prefix | replace: protected_href_prefix, href_prefix }}</section>
   {% include relationships.html %}
   {% if page.next_page_url %}<div class="onward"><a href="{% include href.html url=page.next_page_url %}">Next page <span aria-hidden="true">→</span></a></div>{% endif %}
   {% include inspector.html %}

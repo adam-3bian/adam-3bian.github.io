@@ -41,17 +41,12 @@ That statement is narrower than “the product is secure,” but it is also far 
 
 CHERI-related assurance can draw on several layers:
 
-Architecture: the instruction-set specification, security model, capability rules, and behaviour when a check fails.
-
-Hardware: design verification, compliance testing, protection of capability tags, privileged paths, and debug behaviour.
-
-Toolchain: compiler behaviour, supported language models, conformance results, known limitations, and reproducible builds.
-
-Software: the code covered by capabilities, compartment configuration, interfaces, test results, and handling of unsafe operations.
-
-Integration: boot, devices, direct memory access, operating-system services, updates, monitoring, and fault response.
-
-Product lifecycle: traceable requirements, vulnerability handling, regression testing, maintenance, and recorded residual risk.
+- Architecture: the instruction-set specification, security model, capability rules, and behaviour when a check fails.
+- Hardware: design verification, compliance testing, protection of capability tags, privileged paths, and debug behaviour.
+- Toolchain: compiler behaviour, supported language models, conformance results, known limitations, and reproducible builds.
+- Software: the code covered by capabilities, compartment configuration, interfaces, test results, and handling of unsafe operations.
+- Integration: boot, devices, direct memory access, operating-system services, updates, monitoring, and fault response.
+- Product lifecycle: traceable requirements, vulnerability handling, regression testing, maintenance, and recorded residual risk.
 
 Evidence at one layer does not establish the others. A processor core can implement CHERI correctly while a wider system still includes direct-memory-access devices, debug paths, unsafe configuration, or software outside capability protection.
 

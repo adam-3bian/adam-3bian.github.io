@@ -35,13 +35,10 @@ Arm began collaborating with the University of Cambridge and SRI International d
 
 In 2019, Arm and UKRI announced Morello as a major part of the UK Digital Security by Design programme. The name covered several related outputs:
 
-a prototype CHERI-enabled Arm architecture
-
-a processor and system-on-chip implementation
-
-a physical development board
-
-firmware, toolchains, operating systems, and development resources
+- a prototype CHERI-enabled Arm architecture
+- a processor and system-on-chip implementation
+- a physical development board
+- firmware, toolchains, operating systems, and development resources
 
 Keeping these meanings separate is useful. A Morello board is one implementation of the Morello architecture, and Morello is one branch of the wider CHERI ecosystem.
 
@@ -57,19 +54,13 @@ This allowed developers to test more than isolated instructions. They could inve
 
 Morello created shared evidence about:
 
-compatibility of large C and C++ codebases
-
-the pure-capability application binary interface (ABI) at application-processor scale
-
-compiler diagnostics and porting patterns
-
-microarchitectural costs and optimisation opportunities
-
-compartmentalisation within operating systems and applications
-
-interactions with safe languages and managed runtimes
-
-assurance, testing, procurement, and adoption barriers
+- compatibility of large C and C++ codebases
+- the pure-capability application binary interface (ABI) at application-processor scale
+- compiler diagnostics and porting patterns
+- microarchitectural costs and optimisation opportunities
+- compartmentalisation within operating systems and applications
+- interactions with safe languages and managed runtimes
+- assurance, testing, procurement, and adoption barriers
 
 It also gave organisations a common target for demonstrators and training. That reduced fragmentation during a period when many projects needed to compare results.
 

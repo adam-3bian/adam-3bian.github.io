@@ -29,21 +29,14 @@ Adopting CHERI does not mean rebuilding the entire technology stack. One of CHER
 
 CHERI is a hardware technology, so it needs to be introduced across the layers of a system:
 
-Layer: Processor architecture; What changes?: CHERI adds capabilities and associated instructions to the architecture
-
-Layer: Processor IP; What changes?: Processor cores are modified or designed to implement the CHERI architecture
-
-Layer: Chips; What changes?: One or more CHERI-enabled processors are integrated into the device
-
-Layer: Operating systems; What changes?: OS to be recompiled and adapted to add compartmentalisation - Cf CHERI and existing software
-
-Layer: Development tools; What changes?: Compilers, debuggers, and toolchains are updated to support CHERI
-
-Layer: Software; What changes?: Applications and firmware are recompiled and, where necessary, adapted - Cf CHERI and existing software
-
-Layer: Platforms, modules, products; What changes?: CHERI-enabled hardware and software are integrated into final products
-
-Layer: Users; What changes?: CHERI is not visible to the users, they just see the benefits
+- Layer: Processor architecture; What changes?: CHERI adds capabilities and associated instructions to the architecture
+- Layer: Processor IP; What changes?: Processor cores are modified or designed to implement the CHERI architecture
+- Layer: Chips; What changes?: One or more CHERI-enabled processors are integrated into the device
+- Layer: Operating systems; What changes?: OS to be recompiled and adapted to add compartmentalisation - Cf CHERI and existing software
+- Layer: Development tools; What changes?: Compilers, debuggers, and toolchains are updated to support CHERI
+- Layer: Software; What changes?: Applications and firmware are recompiled and, where necessary, adapted - Cf CHERI and existing software
+- Layer: Platforms, modules, products; What changes?: CHERI-enabled hardware and software are integrated into final products
+- Layer: Users; What changes?: CHERI is not visible to the users, they just see the benefits
 
 Not every layer requires the same level of effort. Much of the complexity is handled by processor vendors, operating system developers, and toolchain providers, allowing many product teams to adopt CHERI incrementally.
 
@@ -55,13 +48,10 @@ Not every layer requires the same level of effort. Much of the complexity is han
 
 CHERI starts with the processor. Adding CHERI involves extending the processor with support for capabilities, including:
 
-Capability-aware registers and instructions
-
-Hardware enforcement of bounds and permissions
-
-Secure capability creation and derivation
-
-Support for compartmentalisation mechanisms
+- Capability-aware registers and instructions
+- Hardware enforcement of bounds and permissions
+- Secure capability creation and derivation
+- Support for compartmentalisation mechanisms
 
 This is the layer where most of the CHERI-specific engineering effort takes place. Fortunately, processor designers do not have to start from scratch. CHERI specifications, reference implementations, open-source designs, and standardisation work such as the RISC-V RVY architecture extension provide a clear path to implementation.
 

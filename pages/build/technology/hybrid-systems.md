@@ -33,15 +33,11 @@ Hybrid operation is a migration and experimentation tool. It is not the same sec
 
 The precise model depends on the architecture and application binary interface (ABI), but hybrid software commonly has:
 
-conventional language-visible pointers for ordinary C and C++ code
-
-explicit capability-qualified pointer types for selected objects or interfaces
-
-capability registers and instructions available to capability-aware code
-
-operating-system support for saving, mapping, and passing capabilities
-
-a conventional ABI preserved for much of the program
+- conventional language-visible pointers for ordinary C and C++ code
+- explicit capability-qualified pointer types for selected objects or interfaces
+- capability registers and instructions available to capability-aware code
+- operating-system support for saving, mapping, and passing capabilities
+- a conventional ABI preserved for much of the program
 
 Legacy loads and stores may be authorised relative to a broader default capability or architectural context. They do not automatically carry a separate bound for each C object.
 
@@ -49,17 +45,12 @@ Legacy loads and stores may be authorised relative to a broader default capabili
 
 Hybrid mode can help teams:
 
-introduce one capability-aware interface at a time
-
-build protected handles and service entry points
-
-experiment with compartment mechanisms
-
-run conventional libraries while porting selected components
-
-preserve a familiar ABI during architecture development
-
-measure and debug capability operations before wider conversion
+- introduce one capability-aware interface at a time
+- build protected handles and service entry points
+- experiment with compartment mechanisms
+- run conventional libraries while porting selected components
+- preserve a familiar ABI during architecture development
+- measure and debug capability operations before wider conversion
 
 It played an important role in the development of CheriBSD and the wider CHERI software model.
 
@@ -89,13 +80,10 @@ Hybrid mode provides strong enforcement where valid, tightly bounded capabilitie
 
 Coverage remains selective:
 
-ordinary pointers may retain broad address-space authority
-
-compiler-created object bounds may not cover conventional code
-
-a component may still hold ambient legacy authority
-
-conversions between pointer forms require careful review
+- ordinary pointers may retain broad address-space authority
+- compiler-created object bounds may not cover conventional code
+- a component may still hold ambient legacy authority
+- conversions between pointer forms require careful review
 
 This makes hybrid mode useful for transition but harder to describe with a single percentage or label.
 
@@ -103,17 +91,12 @@ This makes hybrid mode useful for transition but harder to describe with a singl
 
 A hybrid prototype can identify capability-aware interfaces and porting issues. To gain broader protection:
 
-build dependencies for the pure-capability ABI
-
-replace pointer-integer assumptions
-
-fix object-bound and allocator issues
-
-validate foreign-function and assembly boundaries
-
-run the complete test suite as pure-capability code
-
-confirm that conventional fallback paths are no longer used
+- build dependencies for the pure-capability ABI
+- replace pointer-integer assumptions
+- fix object-bound and allocator issues
+- validate foreign-function and assembly boundaries
+- run the complete test suite as pure-capability code
+- confirm that conventional fallback paths are no longer used
 
 Some systems may retain hybrid components deliberately where required. Document that residual authority and contain it behind a narrow boundary.
 

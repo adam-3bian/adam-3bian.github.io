@@ -32,23 +32,15 @@ The Alliance offers different routes for organisations and individuals, ranging 
 
 The Why Join? page explains why organisations choose to participate in the Alliance. In practice, those benefits come from:
 
-Using the applicable CHERI Alliance membership mark to gain recognition
-
-Participation in working groups
-
-Learning from experts and real-world implementation experience
-
-Building relationships with companies, researchers, and practitioners across the ecosystem
-
-Helping shape technical priorities, standards, and adoption activities
-
-Increasing visibility through events, publications, product listing and community activities
-
-Contributing to shared software, guidance, education, and outreach
-
-Support and benefit from a growing community working towards more secure computing
-
-Voting and eligibility in Governing Board elections
+- Using the applicable CHERI Alliance membership mark to gain recognition
+- Participation in working groups
+- Learning from experts and real-world implementation experience
+- Building relationships with companies, researchers, and practitioners across the ecosystem
+- Helping shape technical priorities, standards, and adoption activities
+- Increasing visibility through events, publications, product listing and community activities
+- Contributing to shared software, guidance, education, and outreach
+- Support and benefit from a growing community working towards more secure computing
+- Voting and eligibility in Governing Board elections
 
 For many organisations, access to working groups, increased visibility, and industry connections are the most valuable benefits of membership.
 
@@ -70,11 +62,9 @@ Commercial organisations must join as Full Members. Research organisations, publ
 
 Full Membership includes:
 
-Visibility – Showcase your organisation through a dedicated member page, Alliance communications, conferences, publications, speaking opportunities, and promotional activities
-
-Greater influence in Alliance governance – Full Members elect the majority of the representatives on the Governing Board and can nominate candidates
-
-Reduced certification fees – Discounts on CHERI product certification
+- Visibility – Showcase your organisation through a dedicated member page, Alliance communications, conferences, publications, speaking opportunities, and promotional activities
+- Greater influence in Alliance governance – Full Members elect the majority of the representatives on the Governing Board and can nominate candidates
+- Reduced certification fees – Discounts on CHERI product certification
 
 ### Community membership
 
@@ -106,9 +96,8 @@ We are fortunate to receive support from the UK Department for Digital, Culture,
 
 As our mission is to accelerate adoption of CHERI, we have decided to make the membership fee very accessible: we prefer more members than getting a lot from a small group of companies. This is why:
 
-for Full Members - our fees depend on company size. Additional discounts are available for multi-year memberships and successful referrals. Contact us to get all the details
-
-for Community Members - it’s free!
+- for Full Members - our fees depend on company size. Additional discounts are available for multi-year memberships and successful referrals. Contact us to get all the details
+- for Community Members - it’s free!
 
 ## Ready to get involved?
 

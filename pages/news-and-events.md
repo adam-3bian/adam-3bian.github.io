@@ -17,12 +17,8 @@ related:
 
 ## Follow the ecosystem
 
-Latest news
-
-Upcoming events
-
-Past events
-
-Speakers
-
-Newsletter
+- Latest news
+- Upcoming events
+- Past events
+- Speakers
+- Newsletter
