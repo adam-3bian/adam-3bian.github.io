@@ -3,10 +3,10 @@ layout: default
 ---
 {% assign current_kind = page.collection | default: 'pages' %}
 {% assign current_map = site.data.page-map | where: 'url', page.url | first %}
-{% if current_map %}<nav class="breadcrumb" aria-label="Breadcrumb"><a href="{{ '/' | relative_url }}">Home</a>{% if current_map.parent and current_map.parent != '/' %}{% assign parent_map = site.data.page-map | where: 'url', current_map.parent | first %}<span aria-hidden="true">/</span><a href="{{ current_map.parent | relative_url }}">{{ parent_map.title | default: current_map.parent | escape }}</a>{% endif %}<span aria-hidden="true">/</span><span aria-current="page">{{ page.title | escape }}</span></nav>{% endif %}
+{% if current_map %}<nav class="breadcrumb" aria-label="Breadcrumb"><ol role="list"><li><a href="{{ '/' | relative_url }}">Home</a></li>{% if current_map.parent and current_map.parent != '/' %}{% assign parent_map = site.data.page-map | where: 'url', current_map.parent | first %}<li><a href="{{ current_map.parent | relative_url }}">{{ parent_map.title | default: current_map.parent | escape }}</a></li>{% endif %}<li aria-current="page">{{ page.title | escape }}</li></ol></nav>{% endif %}
 <article data-content-route="{{ page.url | escape }}" data-collection="{{ current_kind | escape }}">
   <header class="record-header{% if page.image_url %} has-image{% endif %}">
-    <div class="record-intro"><p class="eyebrow">{{ current_map.page_type | default: 'Content viewer' | escape }}{% if page.alternate %} · Retained source version{% endif %}</p><h1>{{ page.title | escape }}</h1>{% if page.summary %}<p class="summary">{{ page.summary | escape }}</p>{% endif %}</div>
+    <hgroup class="record-intro"><p class="eyebrow">{{ current_map.page_type | default: 'Content viewer' | escape }}{% if page.alternate %} · Retained source version{% endif %}</p><h1>{{ page.title | escape }}</h1>{% if page.summary %}<p class="summary">{{ page.summary | escape }}</p>{% endif %}</hgroup>
     {% if page.image_url %}{% assign image_height = 120 %}{% if current_kind == 'people' and page.is_speaker %}{% assign image_height = 360 %}{% endif %}<img class="lead-image{% if image_height == 360 %} image-portrait{% endif %}" src="{% include href.html url=page.image_url %}" alt="{{ page.title | escape }}{% if page.image_url contains '/placeholder.svg' %} — image not provided{% endif %}" width="360" height="{{ image_height }}">{% endif %}
   </header>
   {% include metadata.html %}
@@ -24,6 +24,6 @@ layout: default
   {% assign protected_href_prefix = 'data-relative-href="' %}
   <section class="article-content" aria-label="Article content">{{ reader_content | replace: 'src="/assets/', image_prefix | replace: href_prefix, protected_href_prefix | replace: 'href="/', href_prefix | replace: protected_href_prefix, href_prefix }}</section>
   {% include relationships.html %}
-  {% if page.next_page_url %}<div class="onward"><a href="{% include href.html url=page.next_page_url %}">Next page <span aria-hidden="true">→</span></a></div>{% endif %}
+  {% if page.next_page_url %}<nav class="onward" aria-label="Next page"><a href="{% include href.html url=page.next_page_url %}">Next page</a></nav>{% endif %}
   {% include inspector.html %}
 </article>

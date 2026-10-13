@@ -6,13 +6,15 @@ This is the authoring reference for all ten collections and the three common pag
 
 Each document starts with a YAML block between two `---` lines. **Include every key in its collection or page schema**, including nested keys. An unused scalar is `null`; an unused list is `[]`. A key being required does not mean its value must be populated. `title` must be nonempty, pages need their registered `permalink`, and events need exactly one start date or start datetime.
 
-The three **shared optional properties** below may be omitted entirely, or supplied alongside any collection or page schema. Unknown extra properties fail validation. Keep human-readable article content in the body; keep record-level versions, dates, resource URLs and relationships in front matter.
+The three **shared optional properties** below may be omitted entirely, or supplied alongside any collection or page schema. Unknown extra properties fail validation. Populated metadata renders as a semantic definition list, with reference lists and resource navigation. Image paths supply the displayed image without adding an original-image download link. Empty metadata and resource sections are omitted.
+
+Keep human-readable article content in the body; keep record-level versions, dates, resource URLs and relationships in front matter.
 
 | Shared property | Type | Meaning and rendering |
 | --- | --- | --- |
 | `version` | Quoted string or `null` | The document, product or record version; displayed as Version. Use `"1.01"`, not a YAML number. Versions of individual ISA extensions remain with their technical descriptions. |
 | `document_date` | Quoted `YYYY-MM` or `YYYY-MM-DD` string, or `null` | The source document's stated date; displayed as Document date. `"2024-08"` displays **August 2024**, preserving month precision. This is separate from publication, event and editorial update dates. |
-| `document_url` | HTTP(S) URL, existing root-relative asset path, or `null` | The official document, normally a PDF; displayed as a Document resource link. Local files must exist. |
+| `document_url` | HTTP(S) URL, existing root-relative asset path, or `null` | The official document, normally a PDF; displayed as an Official document resource link. Local files must exist. |
 
 Use quoted strings for dates and URLs where YAML punctuation could be ambiguous. Ordinary `*_date` fields require a complete valid `YYYY-MM-DD` date. `*_datetime` fields require ISO 8601 with `Z` or a numeric timezone offset, for example `"2026-01-21T09:00:00+00:00"`. Only `document_date` accepts a month without a day. Do not guess missing dates or invent an effective date from a document's publication date.
 

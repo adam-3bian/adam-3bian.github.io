@@ -24,6 +24,14 @@ url_fields:
 - registration_url
 - publication_url
 - document_url
+resource_labels:
+  website_url: Website
+  registration_url: Registration
+  publication_url: Publication
+  document_url: Official document
+  linkedin_url: LinkedIn
+  mastodon_url: Mastodon
+  github_url: GitHub
 classification_fields:
 - type
 - architecture

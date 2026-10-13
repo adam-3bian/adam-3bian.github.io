@@ -15,13 +15,26 @@ const report = { widths: [1440, 1024, 768, 640, 375], layoutChecks: 0, accessibi
     const page = await browser.newPage();
     for (const width of report.widths) {
       await page.setViewportSize({ width, height: 900 });
-      for (const route of ['/policies/competition-law-statement/', '/policies/intellectual-property-policy/', '/policies/trademark-policy/', '/papers/', '/policies/', '/organisations/cheri-alliance/']) {
+      for (const route of ['/policies/competition-law-statement/', '/policies/intellectual-property-policy/', '/policies/trademark-policy/', '/papers/', '/policies/', '/organisations/cheri-alliance/', '/people/adam-finney/', '/news/ai-has-compressed-the-attack-timeline/', '/events/cheri-blossoms-conference-2026/', '/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/', '/hardware/x730/', '/software/cheri-linux/', '/groups/cheri-linux-working-group/', '/guides/install-a-toolchain/', '/discover/why-cheri/cheri-and-rust/']) {
         await page.goto(url(route));
         const problems = await page.evaluate(() => {
           const errors = [];
           if (document.documentElement.scrollWidth > innerWidth + 1) errors.push('Horizontal overflow');
           for (const panel of document.querySelectorAll('.metadata')) {
             if (!panel.textContent.trim() || panel.textContent.trim() === 'Placeholder image') errors.push('Empty metadata');
+            if (!panel.querySelector('dl > dt')) errors.push('Metadata without facts');
+          }
+          for (const nav of document.querySelectorAll('.resource-links')) {
+            if (nav.tagName !== 'NAV' || !nav.querySelector('ul > li > a')) errors.push('Resource links lack navigation/list semantics');
+            if (/Original image|Placeholder image/.test(nav.textContent)) errors.push('Unnecessary image download');
+            for (const link of nav.querySelectorAll('a')) {
+              const rect = link.getBoundingClientRect();
+              if (rect.height < 44 || rect.left < 0 || rect.right > innerWidth) errors.push('Resource link touch target or containment');
+            }
+          }
+          for (const value of document.querySelectorAll('.metadata dd')) {
+            const rect = value.getBoundingClientRect();
+            if (rect.left < 0 || rect.right > innerWidth || value.scrollWidth > value.clientWidth + 1) errors.push('Metadata value overflows');
           }
           for (const list of document.querySelectorAll('.legal-clauses')) {
             if (list.tagName !== 'OL' || getComputedStyle(list).listStyleType !== 'none') errors.push('Incorrect legal-list markers');
@@ -35,7 +48,12 @@ const report = { widths: [1440, 1024, 768, 640, 375], layoutChecks: 0, accessibi
         if (route === '/organisations/cheri-alliance/') {
           assert.equal(await page.locator('main h1').count(), 1, 'Duplicate Alliance page heading');
           assert.equal((await page.locator('.article-content').innerText()).includes('|'), false, 'Broken administrative table is visible');
+          assert.deepEqual(await page.locator('.resource-links a').allTextContents(), ['Website', 'LinkedIn']);
+          assert.equal(await page.locator('.metadata').count(), 0, 'Link-only page still has a metadata container');
           await page.screenshot({ path: path.join(reportDir, `cheri-alliance-${width}.png`), fullPage: true });
+        }
+        if (route === '/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/') {
+          await page.screenshot({ path: path.join(reportDir, `paper-metadata-${width}.png`) });
         }
         if (route === '/policies/competition-law-statement/') {
           assert.equal(await page.locator('.clause-number').count(), 28);

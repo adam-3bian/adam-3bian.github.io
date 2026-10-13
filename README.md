@@ -16,7 +16,7 @@ Open http://localhost:4000. The content checks page is at http://localhost:4000/
 
 ## What to check
 
-The source menu and the ten collection links let you reach the content. Each detail page shows its title, primary image, populated metadata, article body, linked records, and an expandable front matter inspector. Unused null and empty values remain visible in the inspector. Primary images render once; body illustrations stay with the content.
+The source menu and the ten collection links let you reach the content. Each detail page shows its title, primary image, populated metadata, article body, linked records, and an expandable front matter inspector. Unused null and empty values remain visible in the inspector. Primary images render once; body illustrations stay with the content. Record facts use a compact definition list, and resource URLs appear as labelled navigation links without a surrounding card. Original-image download links are omitted; eligible article images enlarge in the image viewer.
 
 The header adapts the starter kit's column menus and mobile accordions. Edit `navigation.header` in `_config.yml` to change its links and column counts. Native `details`/`summary` controls remain usable without JavaScript; the small `assets/navigation.js` enhancement adds the mobile Menu button, arrow keys, Escape, outside-click dismissal, and focus handling. At 1024px and wider, menus overlay the content in three or four columns and scroll within short viewports. At smaller widths, they expand in the page flow. Footer navigation retains its existing disclosures.
 

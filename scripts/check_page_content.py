@@ -73,7 +73,7 @@ errors = []
 documents = {p: Document(p.read_text()) for p in SITE.rglob('*.html')}
 ids = {p: {n.attrs['id'] for n in doc.nodes if 'id' in n.attrs} for p, doc in documents.items()}
 stats = {'html_files': len(documents), 'local_links': 0, 'local_images': 0,
-         'metadata_panels': 0, 'legal_clauses': 0, 'redirects': 0}
+         'metadata_panels': 0, 'resource_navigations': 0, 'legal_clauses': 0, 'redirects': 0}
 
 
 def target_file(path):
@@ -97,8 +97,24 @@ for file, doc in documents.items():
                 errors.append(f'{route}: empty metadata panel')
             if node.text() == 'Placeholder image':
                 errors.append(f'{route}: placeholder-only panel')
-        if node.tag == 'a' and node.text() == 'Placeholder image':
-            errors.append(f'{route}: useless placeholder resource link')
+            lists = [n for n in node.children if n.tag == 'dl']
+            if len(lists) != 1 or not lists[0].children:
+                errors.append(f'{route}: metadata without facts')
+            elif any(n.tag != ('dt' if i % 2 == 0 else 'dd') or not n.text() for i, n in enumerate(lists[0].children)) or len(lists[0].children) % 2:
+                errors.append(f'{route}: unpaired metadata terms and values')
+        if node.has_class('resource-links'):
+            stats['resource_navigations'] += 1
+            if node.tag != 'nav' or not node.attrs.get('aria-label') or not node.text():
+                errors.append(f'{route}: empty or unlabelled resource navigation')
+            lists = [n for n in node.children if n.tag == 'ul']
+            if len(lists) != 1 or not lists[0].children or any(n.tag != 'li' for n in lists[0].children):
+                errors.append(f'{route}: resource links lack list semantics')
+        if node.tag in ('div', 'span') and node.ancestor(lambda n: n.has_class('metadata') or n.has_class('resource-links') or n.has_class('breadcrumb') or n.has_class('record-intro') or n.has_class('onward')):
+            errors.append(f'{route}: unnecessary wrapper in shared record layout')
+        if node.tag == 'a' and node.text() in ('Placeholder image', 'Original image'):
+            errors.append(f'{route}: unnecessary image resource link')
+        if node.tag == 'a' and node.ancestor(lambda n: n.has_class('resource-links')) and not node.text():
+            errors.append(f'{route}: resource link without a label')
         if node.has_class('clause-number'):
             stats['legal_clauses'] += 1
             parent_list = node.ancestor(lambda n: n.tag in ('ol', 'ul'))
