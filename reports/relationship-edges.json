@@ -410,21 +410,6 @@
     "field": "related.pages"
   },
   {
-    "from": "/",
-    "to": "/discover/understand/how-does-cheri-work/",
-    "field": "related.pages"
-  },
-  {
-    "from": "/",
-    "to": "/build/",
-    "field": "related.pages"
-  },
-  {
-    "from": "/",
-    "to": "/news-and-events/events-and-archive/upcoming-events/",
-    "field": "related.pages"
-  },
-  {
     "from": "/adopt/use-cases/iot-and-embedded/",
     "to": "/adopt/use-cases/automotive/",
     "field": "related.pages"

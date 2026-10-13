@@ -1,8 +1,21 @@
 ---
-layout: document
+layout: default
 ---
-{{ content }}
-{% if page.url == '/' %}
-<section class="collection-overview" aria-labelledby="viewer-collections"><h2 id="viewer-collections">Browse the collections</h2><div class="overview-grid">{% for collection in site.collections %}{% unless collection.label == 'posts' %}{% assign all_items = collection.docs | where_exp: 'record', 'record.alternate != true' %}<a class="overview-card" href="{{ '/' | append: collection.label | append: '/' | relative_url }}"><strong>{{ site.data.viewer.collections[collection.label].label | default: collection.label | capitalize }}</strong><span>{{ all_items.size }} canonical records</span></a>{% endunless %}{% endfor %}</div><p><a href="{{ '/checks/' | relative_url }}">Check all {{ site.data.checks.record_count }} records, including reference pages and retained versions</a>.</p></section>
-{% endif %}
-{% assign child_maps = site.data.page-map | where: 'parent', page.url %}{% if child_maps.size > 0 %}<section><h2>Pages in this section</h2><ul class="link-grid">{% for child in child_maps %}{% unless child.alternate %}<li><a href="{{ child.url | relative_url }}">{{ child.title | escape }}</a></li>{% endunless %}{% endfor %}</ul></section>{% endif %}
+{% assign section_menu = site.navigation.header | where: 'url', page.url | first %}
+<article class="index-page" data-content-route="{{ page.url | escape }}" data-collection="pages">
+  <hgroup class="index-intro"><h1>{{ page.title | escape }}</h1><p>{{ page.summary | escape }}</p></hgroup>
+  <nav class="index-navigation" aria-label="Pages in {{ page.title | escape }}">
+    <ul class="index-pages{% if page.url != '/' %} columns-{{ section_menu.columns | default: 3 }}{% endif %}" role="list">
+      {% if page.url == '/' %}
+        {% for section in site.navigation.header %}{% if section.url %}<li><a href="{% include href.html url=section.url %}">{{ section.title | escape }}</a></li>{% endif %}{% endfor %}
+      {% else %}
+        {% for group in section_menu.subcategories %}
+        <li><strong class="index-group-label">{{ group.title | escape }}</strong><ul role="list">
+          {% if group.url %}<li><a href="{% include href.html url=group.url %}">{{ group.title | escape }} overview</a></li>{% endif %}
+          {% for item in group.links %}<li><a href="{% include href.html url=item.url %}">{{ item.title | escape }}</a></li>{% endfor %}
+        </ul></li>
+        {% endfor %}
+      {% endif %}
+    </ul>
+  </nav>
+</article>

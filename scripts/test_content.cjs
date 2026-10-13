@@ -7,8 +7,9 @@ const base = new URL(process.env.SITE_URL || 'http://127.0.0.1:4000/');
 const url = route => new URL(route.replace(/^\//, ''), base).href;
 const reportDir = 'reports/content-tests';
 fs.mkdirSync(reportDir, { recursive: true });
-const report = { widths: [1440, 1024, 768, 640, 375], layoutChecks: 0, accessibilityChecks: 0, redirects: 0 };
+const report = { widths: [1440, 1024, 768, 640, 375], layoutChecks: 0, accessibilityChecks: 0, redirects: 0, indexChecks: 0, noScriptIndexes: 0 };
 const preflight = JSON.parse(fs.readFileSync('reports/preflight.json', 'utf8'));
+const indexes = JSON.parse(fs.readFileSync('reports/index-navigation.json', 'utf8'));
 const groups = preflight.records.filter(r => r.collection === 'groups' && !r.alternate).map(r => r.url).sort();
 const board = fs.readFileSync('_data/governing-board.yml', 'utf8').split('\n').filter(l => l.startsWith('- ')).map(l => `/people/${l.slice(2)}/`);
 const routes = [
@@ -35,6 +36,7 @@ const routes = [
   '/news-and-events/people-and-opportunities/speakers/',
   '/organisations/3bian/',
   '/news/secure-and-resilient-systems-in-the-era-of-cra-and-iot/',
+  ...Object.keys(indexes),
 ];
 
 (async () => {
@@ -89,6 +91,29 @@ const routes = [
         });
         assert.deepEqual(problems, [], `${width}px ${route}`);
         report.layoutChecks++;
+        if (indexes[route]) {
+          const expected = indexes[route];
+          assert.equal(await page.locator('main h1').count(), 1, 'Index has one title');
+          assert.equal(await page.locator('main h1').textContent(), expected.title);
+          assert.equal(await page.locator('main p').count(), 1, 'Index has one short introduction');
+          assert.equal(await page.locator('main p').textContent(), expected.summary);
+          assert.equal(await page.locator('main .metadata, main .relationships, main .inspector, main .cards, main img, main div, main span, main h2, main h3, main details').count(), 0, 'Extra content on an index');
+          const actual = await page.locator('main .index-navigation a').evaluateAll(links => links.map(link => ({ title: link.textContent.trim(), href: link.href })));
+          assert.deepEqual(actual, expected.links.map(link => ({ title: link.title, href: url(link.url) })), 'Index must match the mega-menu labels and order');
+          assert.deepEqual(await page.locator('.index-group-label').allTextContents(), expected.groups.map(group => group.title));
+          const listProblems = await page.locator('main .index-navigation').evaluate(nav => [...nav.querySelectorAll('a')].flatMap(link => {
+            const rect = link.getBoundingClientRect();
+            return rect.left < 0 || rect.right > innerWidth || rect.height < 44 ? ['Index link containment or touch target'] : [];
+          }));
+          assert.deepEqual(listProblems, [], `${route} at ${width}px`);
+          if (expected.groups.length) {
+            const columns = await page.locator('.index-pages').evaluate(list => getComputedStyle(list).gridTemplateColumns.split(' ').length);
+            assert.equal(columns, width <= 640 ? 1 : width < 1024 ? 2 : expected.columns, 'Responsive menu grouping');
+          }
+          report.indexChecks++;
+          const name = route === '/' ? 'home' : route.replaceAll('/', '');
+          await page.screenshot({ path: path.join(reportDir, `index-${name}-${width}.png`), fullPage: true });
+        }
         if (route === '/alliance/leadership/working-groups/') {
           const targets = await page.locator('.listing .card').evaluateAll(cards => cards.map(c => c.dataset.recordUrl));
           assert.deepEqual(targets.sort(), groups, 'Complete working-group directory');
@@ -167,6 +192,16 @@ const routes = [
       await plain.keyboard.press('Enter');
       await plain.waitForURL(url(target));
       assert.equal(await plain.locator('main h1').count(), 1, 'Card must open a complete profile');
+    }
+    for (const [route, expected] of Object.entries(indexes)) {
+      await plain.goto(url(route));
+      assert.deepEqual(await plain.locator('main .index-navigation a').allTextContents(), expected.links.map(link => link.title));
+      const first = plain.locator('main .index-navigation a').first();
+      await first.focus();
+      await plain.keyboard.press('Enter');
+      await plain.waitForURL(url(expected.links[0].url));
+      assert.equal(await plain.locator('main h1').count(), 1, 'Index link opens its destination without JS');
+      report.noScriptIndexes++;
     }
     await context.close();
     fs.writeFileSync(path.join(reportDir, 'results.json'), JSON.stringify(report, null, 2) + '\n');

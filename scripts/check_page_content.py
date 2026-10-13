@@ -74,7 +74,7 @@ documents = {p: Document(p.read_text()) for p in SITE.rglob('*.html')}
 ids = {p: {n.attrs['id'] for n in doc.nodes if 'id' in n.attrs} for p, doc in documents.items()}
 stats = {'html_files': len(documents), 'local_links': 0, 'local_images': 0,
          'metadata_panels': 0, 'resource_navigations': 0, 'legal_clauses': 0, 'redirects': 0,
-         'directories': 0, 'cards': 0, 'body_property_lists': 0}
+         'directories': 0, 'cards': 0, 'body_property_lists': 0, 'index_pages': 0, 'index_links': 0}
 
 
 def target_file(path):
@@ -178,6 +178,32 @@ for file, doc in documents.items():
             errors.append(f'{route}: {exc}')
 
 report = json.loads((ROOT / 'reports/preflight.json').read_text())
+index_pages = json.loads((ROOT / 'reports/index-navigation.json').read_text())
+for route, expected_index in index_pages.items():
+    doc = documents.get(target_file(BASEURL + route))
+    indexes = [n for n in doc.nodes if n.has_class('index-page')] if doc else []
+    if len(indexes) != 1:
+        errors.append('Missing standard index layout: ' + route)
+        continue
+    index = indexes[0]
+    stats['index_pages'] += 1
+    if [n.tag for n in index.children] != ['hgroup', 'nav']:
+        errors.append('Index must contain only its introduction and page list: ' + route)
+    intro = next((n for n in index.children if n.tag == 'hgroup'), None)
+    if not intro or [n.tag for n in intro.children] != ['h1', 'p'] or [n.text() for n in intro.children] != [expected_index['title'], expected_index['summary']]:
+        errors.append('Index title or introduction differs from its source: ' + route)
+    nav = next((n for n in index.children if n.has_class('index-navigation')), None)
+    links = [n for n in doc.nodes if n.tag == 'a' and n.ancestor(lambda a: a is nav)] if nav else []
+    actual = [{'title': n.text(), 'url': n.attrs.get('href')} for n in links]
+    expected = [{'title': link['title'], 'url': BASEURL + link['url'] if link['url'].startswith('/') else link['url']} for link in expected_index['links']]
+    if actual != expected:
+        errors.append('Index page labels, destinations or order differ from the mega-menu: ' + route)
+    labels = [n.text() for n in doc.nodes if n.has_class('index-group-label')]
+    if labels != [group['title'] for group in expected_index['groups']]:
+        errors.append('Index groups differ from the mega-menu: ' + route)
+    if any(n.tag in ('div', 'span', 'img', 'h2', 'h3', 'details') and n.ancestor(lambda a: a is index) for n in doc.nodes):
+        errors.append('Extra markup or content in standard index: ' + route)
+    stats['index_links'] += len(links)
 for record in report['records']:
     file = target_file(BASEURL + record['url'])
     doc = documents.get(file)

@@ -746,9 +746,6 @@
   - url: "/news-and-events/events-and-archive/cheritech/"
     title: CHERITech Conference
     type: Content Page (detail)
-  - url: "/"
-    title: Software runs our world. It deserves stronger security foundations.
-    type: Section Landing Page (index)
 "/news/":
 - label: Related pages
   targets:
@@ -1195,9 +1192,6 @@
   - url: "/discover/understand/cheri-and-existing-software/"
     title: CHERI and Existing Software
     type: Content Page (detail)
-  - url: "/"
-    title: Software runs our world. It deserves stronger security foundations.
-    type: Section Landing Page (index)
 "/build/technology/hybrid-systems/":
 - label: Related pages
   targets:
@@ -1210,24 +1204,6 @@
   - url: "/build/technology/pure-capability-systems/"
     title: Pure-Capability Systems
     type: Content Page (detail)
-"/":
-- label: Related pages
-  targets:
-  - url: "/discover/understand/how-does-cheri-work/"
-    title: How does CHERI work?
-    type: Content Page (detail)
-  - url: "/build/"
-    title: Build with CHERI
-    type: Section Landing Page (index)
-  - url: "/news-and-events/events-and-archive/upcoming-events/"
-    title: Upcoming Events
-    type: Events (list)
-"/build/":
-- label: Related pages
-  targets:
-  - url: "/"
-    title: Software runs our world. It deserves stronger security foundations.
-    type: Section Landing Page (index)
 "/reference/source-versions/members/":
 - label: Related pages
   targets:

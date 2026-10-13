@@ -6,7 +6,7 @@ This is the authoring reference for all ten collections and the three common pag
 
 Each document starts with a YAML block between two `---` lines. **Include every key in its collection or page schema**, including nested keys. An unused scalar is `null`; an unused list is `[]`. A key being required does not mean its value must be populated. `title` must be nonempty, pages need their registered `permalink`, and events need exactly one start date or start datetime.
 
-The three **shared optional properties** below may be omitted entirely, or supplied alongside any collection or page schema. Unknown extra properties fail validation. Populated metadata renders as a semantic definition list, with reference lists and resource navigation. Image paths supply the displayed image without adding an original-image download link. Empty metadata and resource sections are omitted.
+The three **shared optional properties** below may be omitted entirely, or supplied alongside any collection or page schema. Unknown extra properties fail validation. Populated metadata on article and record pages renders as a semantic definition list, with reference lists and resource navigation. Index pages show their title, summary and page list. Image paths supply the displayed image without adding an original-image download link. Empty metadata and resource sections are omitted.
 
 Keep human-readable article content in the body; keep record-level versions, dates, resource URLs and relationships in front matter.
 
@@ -245,21 +245,18 @@ related:
 
 ## Section and home pages (`index` schema)
 
-Use for home and section landing pages. Parent routes are inherited through `_config.yml` and recorded in the page map.
+Use for home and section landing pages. Each index contains one title, one short introduction and a native list of linked pages. Parent routes are inherited through `_config.yml` and recorded in the page map.
 
 | Required property | Type | Meaning |
 | --- | --- | --- |
 | `title` | Nonempty string | Landing-page title. |
 | `permalink` | Registered page route | Stable URL, including `/` for home. |
 | `layout` | `index` | The section/home layout. |
-| `summary` | String or `null` | Introductory text. |
-| `image_url` | Existing asset path or `null` | Optional lead image. |
-| `sections` | Nonempty array of mappings | Retained authoring structure; each entry includes all three keys below. The current renderer derives child-page links from the page map rather than constructing components from these fields. |
-| `sections[].presentation` | String or `null` | Retained presentation descriptor. |
-| `sections[].columns` | Integer or `null` | Retained column descriptor. |
-| `sections[].headings` | String array | Section heading descriptors. |
-| `related` | Mapping | Include `pages`. |
-| `related.pages` | Page-route array | Related pages. |
+| `summary` | Nonempty string | One short introductory paragraph, rendered as plain text. |
+
+Leave the Markdown body empty. Group labels, page links, link labels, order and desktop column counts come directly from `navigation.header` in `_config.yml`, using the menu entry with the index's `permalink`. The home index lists the five top-level section links. Other indexes show their mega-menu's grouped child links, including pages in collections. Edit the menu to change these lists; do not maintain a second set in page content or `sections` front matter.
+
+Indexes render with `hgroup`, `nav`, `ul` and `li`; they need no JavaScript. Group lists use the menu's three or four columns on desktop, two on tablet and one on mobile. Index pages do not add hero images, collection overviews, front-matter inspectors or related-record panels.
 
 Complete index example:
 
@@ -268,14 +265,7 @@ Complete index example:
 title: CHERI Alliance
 permalink: /alliance/
 layout: index
-summary: null
-image_url: null
-sections:
-  - presentation: null
-    columns: null
-    headings: [About the Alliance, Take part]
-related:
-  pages: []
+summary: Learn about the Alliance’s mission, governance and membership, and find the people, working groups and policies that support its work.
 ```
 
 ## Directory pages (`listing` schema)

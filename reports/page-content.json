@@ -1,6 +1,6 @@
 {
   "html_files": 488,
-  "local_links": 65985,
+  "local_links": 65954,
   "local_images": 979,
   "metadata_panels": 241,
   "resource_navigations": 177,
@@ -9,6 +9,8 @@
   "directories": 15,
   "cards": 439,
   "body_property_lists": 38,
+  "index_pages": 6,
+  "index_links": 95,
   "baseurl": "",
   "errors": []
 }

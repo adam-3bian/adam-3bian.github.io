@@ -16,6 +16,8 @@ site.read
 schemas = site.data.fetch('schemas')
 map = site.data.fetch('page-map')
 settings = site.data.fetch('viewer')
+header_menu = site.config.fetch('navigation').fetch('header')
+index_pages = {}
 errors = []
 # Keep the complete examples in the authoring reference executable.
 reference = File.read(File.join(root, 'FRONT_MATTER.md'))
@@ -86,6 +88,24 @@ objects.each do |object|
     if target.to_s.start_with?('/') && !lookup.key?(target)
       errors << "Unknown #{key} route #{target}: #{entry['file']}"
     end
+  end
+  if kind == 'index'
+    errors << "Index introduction must be nonempty: #{entry['file']}" unless fields['summary'].is_a?(String) && !fields['summary'].strip.empty?
+    errors << "Index content belongs in summary, not its body: #{entry['file']}" unless object.content.strip.empty?
+    menu = header_menu.find { |section| section['url'] == object.url }
+    if object.url != '/' && !menu
+      errors << "Index has no matching mega-menu: #{entry['file']}"
+    end
+    groups = (menu && menu['subcategories'] || []).map do |group|
+      links = group.fetch('links', []).map { |link| link.slice('title', 'url') }
+      links.unshift({'title' => "#{group['title']} overview", 'url' => group['url']}) if group['url']
+      {'title' => group['title'], 'links' => links}
+    end
+    links = object.url == '/' ? header_menu.select { |section| section['url'] }.map { |section| section.slice('title', 'url') } : groups.flat_map { |group| group['links'] }
+    errors << "Index has no page links: #{entry['file']}" if links.empty?
+    index_pages[object.url] = {'title' => fields['title'], 'summary' => fields['summary'],
+                             'columns' => menu && menu.fetch('columns', 3) || 1,
+                             'groups' => groups, 'links' => links}
   end
   if kind == 'listing'
     listing = fields['listing'] || {}
@@ -289,6 +309,7 @@ end
 File.write(File.join(root, '_data/checks.yml'), YAML.dump(report))
 File.write(File.join(root, '_data/relationships.yml'), YAML.dump(relation_data))
 FileUtils.mkdir_p(File.join(root, 'reports'))
+File.write(File.join(root, 'reports/index-navigation.json'), JSON.pretty_generate(index_pages) + "\n")
 File.write(File.join(root, 'reports/preflight.json'), JSON.pretty_generate(report) + "\n")
 File.write(File.join(root, 'reports/relationship-edges.json'), JSON.pretty_generate(edges) + "\n")
 puts JSON.generate({'records' => records.length, 'relationships' => edges.length, 'images' => images.length, 'errors' => errors.uniq})
