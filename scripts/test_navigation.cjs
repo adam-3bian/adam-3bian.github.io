@@ -17,7 +17,7 @@ async function assertContained(page, desktop) {
     for (const element of document.querySelectorAll('.primary-menu[open] > .primary-menu-panel')) {
       const rect = element.getBoundingClientRect();
       if (rect.left < 0 || rect.right > innerWidth + 1) errors.push('Menu escapes the page');
-      if (isDesktop && (rect.top < 0 || rect.bottom > innerHeight + 1)) errors.push('Menu escapes the viewport');
+      if (isDesktop && (rect.top < 0 || rect.bottom > innerHeight + 1)) errors.push(`Menu escapes ${innerHeight}px viewport: top ${rect.top}, bottom ${rect.bottom}, max-height ${getComputedStyle(element).maxHeight}`);
       for (const link of element.querySelectorAll('a')) {
         if (!link.getClientRects().length) continue;
         const box = link.getBoundingClientRect();

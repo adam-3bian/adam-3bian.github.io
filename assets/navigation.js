@@ -15,14 +15,17 @@
   function setNavigation(open) {
     navigation.hidden = !desktop.matches && !open;
     toggle.setAttribute('aria-expanded', String(open));
-    toggle.setAttribute('aria-label', `${open ? 'Close' : 'Open'} navigation`);
+    toggle.setAttribute('aria-label', `${open ? 'Close' : 'Open'} navigation menu`);
   }
 
   function containPanels() {
     if (!desktop.matches) return;
-    for (const menu of menus.filter(menu => menu.open)) {
+    // Panels share the header container as their positioning boundary. Update
+    // closed panels too, so a resize cannot leave a stale height on opening.
+    const top = Math.max(0, header.querySelector('.container').getBoundingClientRect().bottom);
+    for (const menu of menus) {
       const panel = menu.querySelector('.primary-menu-panel');
-      panel.style.setProperty('--menu-top', `${Math.max(0, panel.getBoundingClientRect().top)}px`);
+      panel.style.setProperty('--menu-top', `${top}px`);
     }
   }
 
@@ -46,6 +49,7 @@
     if (!open) closeMenus();
     setNavigation(open);
   });
+  header.addEventListener('click', containPanels);
 
   header.addEventListener('keydown', event => {
     const summary = event.target.closest('summary');
@@ -99,6 +103,7 @@
     setNavigation(false);
     if (!desktop.matches && focusWasInNavigation) toggle.focus();
     if (desktop.matches && focused === toggle) summaryFor(menus[0])?.focus();
+    containPanels();
   }
   desktop.addEventListener('change', changeMode);
   window.addEventListener('resize', containPanels);
