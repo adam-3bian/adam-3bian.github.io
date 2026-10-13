@@ -80,7 +80,23 @@ Download the [CHERI Alliance](/organisations/cheri-alliance/) IP Policy – The 
 
 3.4 Without prejudice to Clause 3.1, any Member contributing IPRs for inclusion in Work Product or Standard hereby grants, without monetary compensation or any restriction other than as set out in this Clause 3.4, an irrevocable, non-exclusive, worldwide, royalty-free, sub-licensable copyright licence to prepare derivative works of (including translations, adaptations, alterations) the contributed IPRs and reproduce, display, distribute and execute the contributed IPRs and derivative works for the following limited purposes:
 
-a) to the Alliance and Members to evaluate Contribution and any derivative works thereof for determining whether to support the inclusion of the Contribution in a Standard; b) to the Alliance to publish the Contribution in that Standard; and c) to any implementer of that Standard to evaluate the Contribution and any derivative works thereof for inclusion in its implementation of Standard, and to determine whether its implementation conforms with that Standard.
+<ol type="a" markdown="block">
+<li value="1" markdown="block">
+
+to the Alliance and Members to evaluate Contribution and any derivative works thereof for determining whether to support the inclusion of the Contribution in a Standard;
+
+</li>
+<li value="2" markdown="block">
+
+to the Alliance to publish the Contribution in that Standard; and
+
+</li>
+<li value="3" markdown="block">
+
+to any implementer of that Standard to evaluate the Contribution and any derivative works thereof for inclusion in its implementation of Standard, and to determine whether its implementation conforms with that Standard.
+
+</li>
+</ol>
 
 3.5 The licence granted in Clause 3.4 shall also extend to any implementer of that Standard for the purpose of using the Contribution in any compliant implementation unless the contributing Member gives an irrevocable undertaking in writing at the time of contribution that it is prepared to grant an irrevocable licence on fair, reasonable and non-discriminatory terms and conditions for the purpose of using the Contribution in any compliant implementation.
 
@@ -96,15 +112,58 @@ a) to the Alliance and Members to evaluate Contribution and any derivative works
 
 4.2 Subject to Clauses 4.5 and 4.1, prior to any official approval by the Alliance of any Deliverables associated with a particular Project, each Member shall provide the leader of the relevant Working Group or committee with a written declaration of the Essential IPR relevant to the aforementioned Project:
 
-a) in accordance with Clause 4.3 and 4.4; and b) in the form prescribed by the Alliance and with language consistent with the policies set forth herein.
+<ol type="a" markdown="block">
+<li value="1" markdown="block">
+
+in accordance with Clause 4.3 and 4.4; and
+
+</li>
+<li value="2" markdown="block">
+
+in the form prescribed by the Alliance and with language consistent with the policies set forth herein.
+
+</li>
+</ol>
 
 4.3 The Declaration shall:
 
-a) to the Member’s knowledge, list any potentially Essential IPR that the Member or any of its Affiliates hold in relation to that particular Project; b) identify all such Essential Patents by way of filing number, date, and, if published, its title; and c) identify the terms (i.e. explicitly any non-FRAND Terms (as opposed to Clause 6.1, but without specifying royalty rates or any other royalty terms)) on which the Member or its Affiliate is prepared to grant licenses to the Essential IPR to the Collaborators and any third parties; and d) identify whether the Declaration is made subject to the condition that those who seek licences agree to reciprocate.
+<ol type="a" markdown="block">
+<li value="1" markdown="block">
+
+to the Member’s knowledge, list any potentially Essential IPR that the Member or any of its Affiliates hold in relation to that particular Project;
+
+</li>
+<li value="2" markdown="block">
+
+identify all such Essential Patents by way of filing number, date, and, if published, its title; and
+
+</li>
+<li value="3" markdown="block">
+
+identify the terms (i.e. explicitly any non-FRAND Terms (as opposed to Clause 6.1, but without specifying royalty rates or any other royalty terms)) on which the Member or its Affiliate is prepared to grant licenses to the Essential IPR to the Collaborators and any third parties; and
+
+</li>
+<li value="4" markdown="block">
+
+identify whether the Declaration is made subject to the condition that those who seek licences agree to reciprocate.
+
+</li>
+</ol>
 
 4.4 Any Declaration shall identify and describe in sufficient detail:
 
-a) by way of filing number, date, and if published, optionally its title, any Essential Patents, for which the Member or its Affiliate, in accordance with Clause 7.1, are unwilling or unable to give an Undertaking pursuant to Clause 6; and b) the reasons (for each of the above Essential Patents identified in Clause 4.4a), why the Member or its Affiliate are unwilling or unable to give an Undertaking for these Essential Patents pursuant to Clause 6.
+<ol type="a" markdown="block">
+<li value="1" markdown="block">
+
+by way of filing number, date, and if published, optionally its title, any Essential Patents, for which the Member or its Affiliate, in accordance with Clause 7.1, are unwilling or unable to give an Undertaking pursuant to Clause 6; and
+
+</li>
+<li value="2" markdown="block">
+
+the reasons (for each of the above Essential Patents identified in Clause 4.4a), why the Member or its Affiliate are unwilling or unable to give an Undertaking for these Essential Patents pursuant to Clause 6.
+
+</li>
+</ol>
 
 4.5 The provisions pursuant to Clauses 4.2 and 4.3 above do not imply any obligation on the part of a Member to:
 
@@ -125,13 +184,40 @@ a) by way of filing number, date, and if published, optionally its title, any Es
 
 6.1 Save in the case of any Essential Patents identified in accordance with Clause 4.4 and subject to Clause 8.1, a Member will have given an undertaking that it is prepared to grant licences:
 
-a) on FRAND Terms; b) to all its Essential IPR associated with a particular Project; and c) to the extent necessary to permit any Beneficiaries of the Undertaking to Implement the Standard to which the Essential IPR relates.
+<ol type="a" markdown="block">
+<li value="1" markdown="block">
+
+on FRAND Terms;
+
+</li>
+<li value="2" markdown="block">
+
+to all its Essential IPR associated with a particular Project; and
+
+</li>
+<li value="3" markdown="block">
+
+to the extent necessary to permit any Beneficiaries of the Undertaking to Implement the Standard to which the Essential IPR relates.
+
+</li>
+</ol>
 
 6.2 The Undertaking may be made subject to the condition that those who seek licences agree to reciprocate.
 
 6.3 Both the Member, who is deemed to have given the Undertaking pursuant to Clause 6.1, and any Beneficiary of the Undertaking wishing to acquire a licence in accordance with Clause 6.1, acknowledge and agree that:
 
-a) they will act in good faith, in order to negotiate a licence agreement pursuant to Clauses 6.1 and 6.2; and b) if they both have not been able to agree on an Essential IPR license pursuant to Clauses 6.1 and 6.2, either party shall have the right to seek redress from the courts directly against the other in order resolve the matter.
+<ol type="a" markdown="block">
+<li value="1" markdown="block">
+
+they will act in good faith, in order to negotiate a licence agreement pursuant to Clauses 6.1 and 6.2; and
+
+</li>
+<li value="2" markdown="block">
+
+if they both have not been able to agree on an Essential IPR license pursuant to Clauses 6.1 and 6.2, either party shall have the right to seek redress from the courts directly against the other in order resolve the matter.
+
+</li>
+</ol>
 
 6.4 Each Member will ensure that its Affiliates, and its Affiliates’ successors in title will give an Undertaking pursuant to Clauses 6.1,6.2 and 6.3 above. If a Member or its Affiliate transfers ownership of Essential IPR that is subject to an Undertaking pursuant to Clauses 6.1, 6.2 and 6.3 above, such Undertaking shall include appropriate provisions in the relevant transfer documents to ensure that the Undertaking is binding on the transferee and that the transferee will similarly include appropriate provisions in the event of future transfers with the goal of binding all successors-in-interest. The Undertaking shall be interpreted as binding on successors-in-interest regardless of whether such provisions are included in the relevant transfer documents.
 
@@ -141,21 +227,75 @@ a) they will act in good faith, in order to negotiate a licence agreement pursua
 
 7.1 A Member shall only be able to exercise its Right of Refusal to License with regards to Essential Patents, but no other Essential IPR, which is:
 
-a) not based on any information or input generated by the Alliance prior to or during the Members participation in the respective Project; b) developed independently of other Members, their Affiliates or the Alliance; c) not initiated or developed with the intention to be part of a Working Group deliverable; and d) Declared (in accordance with Clauses 4.2 and 4.3).
+<ol type="a" markdown="block">
+<li value="1" markdown="block">
+
+not based on any information or input generated by the Alliance prior to or during the Members participation in the respective Project;
+
+</li>
+<li value="2" markdown="block">
+
+developed independently of other Members, their Affiliates or the Alliance;
+
+</li>
+<li value="3" markdown="block">
+
+not initiated or developed with the intention to be part of a Working Group deliverable; and
+
+</li>
+<li value="4" markdown="block">
+
+Declared (in accordance with Clauses 4.2 and 4.3).
+
+</li>
+</ol>
 
 7.2 Where a Member, in accordance with Clause 4.4, has identified an Essential Patent, which the Member, or its Affiliates, is unwilling or unable to license in accordance with Clause 6, the Member will lose its Participation Rights in relation to the respective Project and Standard to which an Essential Patent relates, if any other Members of the particular Project, informs the Lead within a reasonable period, in writing, that it:
 
-a) does not accept that the reasons given by the Member in the relevant Declaration (as required in accordance with Clause 4.4b) are reasonable and justified; and b) based on its duly justified non-acceptance of these reasons pursuant to Clause 7.2a), wishes that the aforesaid Member shall not be able to rely on its Participation Rights.
+<ol type="a" markdown="block">
+<li value="1" markdown="block">
+
+does not accept that the reasons given by the Member in the relevant Declaration (as required in accordance with Clause 4.4b) are reasonable and justified; and
+
+</li>
+<li value="2" markdown="block">
+
+based on its duly justified non-acceptance of these reasons pursuant to Clause 7.2a), wishes that the aforesaid Member shall not be able to rely on its Participation Rights.
+
+</li>
+</ol>
 
 7.3 In the event that, prior to the publication of Work Product, an IPR owner informs the Alliance that it is not prepared to license Essential IPR in respect of a Standard in accordance with this Clause 4, the Alliance shall review the requirement for that Standard and satisfy itself that a viable alternative is available for the Standard which:
 
-a) is not blocked by that IPR; and b) satisfies the Alliance’s Requirements.
+<ol type="a" markdown="block">
+<li value="1" markdown="block">
+
+is not blocked by that IPR; and
+
+</li>
+<li value="2" markdown="block">
+
+satisfies the Alliance’s Requirements.
+
+</li>
+</ol>
 
 ## 8 Disputes regarding Ownership of Essential IPR
 
 8.1 If more than one Member claims ownership of any Essential IPR, the Members claiming ownership shall:
 
-a) act in good faith when negotiating and resolving the question of ownership; and b) if they cannot agree on who owns the Essential IPR pursuant to Clause 8.1a), have the right to seek redress from the courts against each other in order to resolve the matter.
+<ol type="a" markdown="block">
+<li value="1" markdown="block">
+
+act in good faith when negotiating and resolving the question of ownership; and
+
+</li>
+<li value="2" markdown="block">
+
+if they cannot agree on who owns the Essential IPR pursuant to Clause 8.1a), have the right to seek redress from the courts against each other in order to resolve the matter.
+
+</li>
+</ol>
 
 ## 9 General
 
@@ -165,7 +305,28 @@ a) act in good faith when negotiating and resolving the question of ownership; a
 
 9.3 All Members acknowledge and agree that any obligation placed on (but no rights bestowed upon) a Member by virtue of:
 
-a) Clause 5 (Non-Assertion of Essential IPR); b) Clause 6 (Licensing of Essential IPR); c) Clause 7 (Non-Availability/Refusal to License); and d) Clause 8 (Disputes regarding Ownership of Essential IPR);
+<ol type="a" markdown="block">
+<li value="1" markdown="block">
+
+Clause 5 (Non-Assertion of Essential IPR);
+
+</li>
+<li value="2" markdown="block">
+
+Clause 6 (Licensing of Essential IPR);
+
+</li>
+<li value="3" markdown="block">
+
+Clause 7 (Non-Availability/Refusal to License); and
+
+</li>
+<li value="4" markdown="block">
+
+Clause 8 (Disputes regarding Ownership of Essential IPR);
+
+</li>
+</ol>
 
 with regards to any Essential IPR of the Member, relevant to this Project or Working Group deliverable, but no other Essential IPR, which is:
 
@@ -175,10 +336,52 @@ shall survive participation of a Member in a Project, even if such Member has wi
 
 9.4 In the event that any Collaborator is in breach of any of its obligations under these IP Policy, the Alliance reserves the right to take any actions available to it under its policies, procedures and regulations or at law as it deems necessary in order to protect the interests of the Alliance, other Members, including;
 
-a) any legal actions; b) the exclusion from any Activities; and c) termination of the Collaborator’s membership of the Alliance.
+<ol type="a" markdown="block">
+<li value="1" markdown="block">
+
+any legal actions;
+
+</li>
+<li value="2" markdown="block">
+
+the exclusion from any Activities; and
+
+</li>
+<li value="3" markdown="block">
+
+termination of the Collaborator’s membership of the Alliance.
+
+</li>
+</ol>
 
 9.5 Any dispute arising in relation to these IP Policy shall be resolved:
 
-a) in good faith; b) in a reasonable manner; c) in accordance with the Articles of Association; d) within a reasonable period of time; and e) failing that, by seeking redress in a court of competent jurisdiction.
+<ol type="a" markdown="block">
+<li value="1" markdown="block">
+
+in good faith;
+
+</li>
+<li value="2" markdown="block">
+
+in a reasonable manner;
+
+</li>
+<li value="3" markdown="block">
+
+in accordance with the Articles of Association;
+
+</li>
+<li value="4" markdown="block">
+
+within a reasonable period of time; and
+
+</li>
+<li value="5" markdown="block">
+
+failing that, by seeking redress in a court of competent jurisdiction.
+
+</li>
+</ol>
 
 10.5 The IPR Policy shall be interpreted in accordance with the law of England and Wales .

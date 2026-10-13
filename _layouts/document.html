@@ -4,10 +4,10 @@ layout: default
 {% assign current_kind = page.collection | default: 'pages' %}
 {% assign current_map = site.data.page-map | where: 'url', page.url | first %}
 {% if current_map %}<nav class="breadcrumb" aria-label="Breadcrumb"><a href="{{ '/' | relative_url }}">Home</a>{% if current_map.parent and current_map.parent != '/' %}{% assign parent_map = site.data.page-map | where: 'url', current_map.parent | first %}<span aria-hidden="true">/</span><a href="{{ current_map.parent | relative_url }}">{{ parent_map.title | default: current_map.parent | escape }}</a>{% endif %}<span aria-hidden="true">/</span><span aria-current="page">{{ page.title | escape }}</span></nav>{% endif %}
-<article data-content-route="{{ page.url | escape }}">
+<article data-content-route="{{ page.url | escape }}" data-collection="{{ current_kind | escape }}">
   <header class="record-header{% if page.image_url %} has-image{% endif %}">
     <div class="record-intro"><p class="eyebrow">{{ current_map.page_type | default: 'Content viewer' | escape }}{% if page.alternate %} · Retained source version{% endif %}</p><h1>{{ page.title | escape }}</h1>{% if page.summary %}<p class="summary">{{ page.summary | escape }}</p>{% endif %}</div>
-    {% if page.image_url %}<img class="lead-image" src="{% include href.html url=page.image_url %}" alt="{{ page.title | escape }}" width="360" height="270">{% endif %}
+    {% if page.image_url %}{% assign image_height = 120 %}{% if current_kind == 'people' and page.is_speaker %}{% assign image_height = 360 %}{% endif %}<img class="lead-image{% if image_height == 360 %} image-portrait{% endif %}" src="{% include href.html url=page.image_url %}" alt="{{ page.title | escape }}{% if page.image_url contains '/placeholder.svg' %} — image not provided{% endif %}" width="360" height="{{ image_height }}">{% endif %}
   </header>
   {% include metadata.html %}
   {% assign alias_target = site.data.viewer.aliases[page.url] %}{% if alias_target %}<aside class="notice">This is a retained alias. <a href="{{ alias_target | relative_url }}">Continue to its destination</a>.</aside>{% endif %}
@@ -19,7 +19,8 @@ layout: default
     {% if first_heading_text == page.title %}{% assign reader_content = reader_content | remove_first: first_heading | remove_first: closing_heading %}{% endif %}
   {% endif %}
   {% assign image_prefix = '/assets/' | relative_url | prepend: 'src="' %}
-  <section class="article-content" aria-label="Article content">{{ reader_content | replace: 'src="/assets/', image_prefix }}</section>
+  {% assign href_prefix = '/' | relative_url | prepend: 'href="' %}
+  <section class="article-content" aria-label="Article content">{{ reader_content | replace: 'src="/assets/', image_prefix | replace: 'href="/', href_prefix }}</section>
   {% include relationships.html %}
   {% if page.next_page_url %}<div class="onward"><a href="{% include href.html url=page.next_page_url %}">Next page <span aria-hidden="true">→</span></a></div>{% endif %}
   {% include inspector.html %}

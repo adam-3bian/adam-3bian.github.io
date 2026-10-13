@@ -198,7 +198,9 @@
     "body_assets_relocated": 1,
     "duplicate_articles_consolidated": 9,
     "additional_resource_links": 24,
-    "empty_talk_sections_removed": 3
+    "empty_talk_sections_removed": 3,
+    "semantic_lettered_lists": 25,
+    "semantic_lettered_list_items": 73
   },
   "placeholders": [
     {

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-13T09:14:30Z'
+generated_at: '2026-10-13T14:21:05Z'
 record_count: 487
 relationship_count: 1096
 image_count: 516
@@ -1377,16 +1377,6 @@ records:
   alternate: false
   alias_target:
 - title: Contact the Alliance
-  url: "/alliance/membership/contact/"
-  file: pages/alliance/membership/contact.md
-  type: Content Page (detail)
-  collection: pages
-  has_image: false
-  missing_news_date: false
-  display_date:
-  alternate: false
-  alias_target:
-- title: Contact the Alliance
   url: "/reference/source-versions/contact/"
   file: pages/reference/source-versions/contact.md
   type: Content Page (detail)
@@ -1395,6 +1385,16 @@ records:
   missing_news_date: false
   display_date:
   alternate: true
+  alias_target:
+- title: Contact the Alliance
+  url: "/alliance/membership/contact/"
+  file: pages/alliance/membership/contact.md
+  type: Content Page (detail)
+  collection: pages
+  has_image: false
+  missing_news_date: false
+  display_date:
+  alternate: false
   alias_target:
 - title: 'Cornucopia Reloaded: Load Barriers for CHERI Heap Temporal Safety'
   url: "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/"
@@ -2600,16 +2600,6 @@ records:
   alternate: false
   alias_target:
 - title: Latest News
-  url: "/news-and-events/news-and-analysis/latest-news/"
-  file: pages/news-and-events/news-and-analysis/latest-news.md
-  type: News (list)
-  collection: pages
-  has_image: false
-  missing_news_date: false
-  display_date:
-  alternate: false
-  alias_target:
-- title: Latest News
   url: "/reference/source-versions/latest-news/"
   file: pages/reference/source-versions/latest-news.md
   type: Content Page (detail)
@@ -2618,6 +2608,16 @@ records:
   missing_news_date: false
   display_date:
   alternate: true
+  alias_target:
+- title: Latest News
+  url: "/news-and-events/news-and-analysis/latest-news/"
+  file: pages/news-and-events/news-and-analysis/latest-news.md
+  type: News (list)
+  collection: pages
+  has_image: false
+  missing_news_date: false
+  display_date:
+  alternate: false
   alias_target:
 - title: Laurence Tratt
   url: "/people/laurence-tratt/"
@@ -2843,16 +2843,6 @@ records:
   alternate: false
   alias_target:
 - title: Members
-  url: "/alliance/leadership/members/"
-  file: pages/alliance/leadership/members.md
-  type: Organisations (list)
-  collection: pages
-  has_image: false
-  missing_news_date: false
-  display_date:
-  alternate: false
-  alias_target:
-- title: Members
   url: "/reference/source-versions/members/"
   file: pages/reference/source-versions/members.md
   type: Content Page (detail)
@@ -2861,6 +2851,16 @@ records:
   missing_news_date: false
   display_date:
   alternate: true
+  alias_target:
+- title: Members
+  url: "/alliance/leadership/members/"
+  file: pages/alliance/leadership/members.md
+  type: Organisations (list)
+  collection: pages
+  has_image: false
+  missing_news_date: false
+  display_date:
+  alternate: false
   alias_target:
 - title: Membership Benefits & Options
   url: "/alliance/membership/membership-benefits-and-options/"
@@ -3253,16 +3253,6 @@ records:
   alternate: false
   alias_target:
 - title: Past Events
-  url: "/news-and-events/events-and-archive/past-events/"
-  file: pages/news-and-events/events-and-archive/past-events.md
-  type: Events (list)
-  collection: pages
-  has_image: false
-  missing_news_date: false
-  display_date:
-  alternate: false
-  alias_target:
-- title: Past Events
   url: "/reference/source-versions/past-events/"
   file: pages/reference/source-versions/past-events.md
   type: Content Page (detail)
@@ -3271,6 +3261,16 @@ records:
   missing_news_date: false
   display_date:
   alternate: true
+  alias_target:
+- title: Past Events
+  url: "/news-and-events/events-and-archive/past-events/"
+  file: pages/news-and-events/events-and-archive/past-events.md
+  type: Events (list)
+  collection: pages
+  has_image: false
+  missing_news_date: false
+  display_date:
+  alternate: false
   alias_target:
 - title: Paul Metzger
   url: "/people/paul-metzger/"
@@ -3929,16 +3929,6 @@ records:
   alternate: false
   alias_target:
 - title: Speakers
-  url: "/news-and-events/people-and-opportunities/speakers/"
-  file: pages/news-and-events/people-and-opportunities/speakers.md
-  type: People (list)
-  collection: pages
-  has_image: false
-  missing_news_date: false
-  display_date:
-  alternate: false
-  alias_target:
-- title: Speakers
   url: "/reference/source-versions/speakers/"
   file: pages/reference/source-versions/speakers.md
   type: Content Page (detail)
@@ -3947,6 +3937,16 @@ records:
   missing_news_date: false
   display_date:
   alternate: true
+  alias_target:
+- title: Speakers
+  url: "/news-and-events/people-and-opportunities/speakers/"
+  file: pages/news-and-events/people-and-opportunities/speakers.md
+  type: People (list)
+  collection: pages
+  has_image: false
+  missing_news_date: false
+  display_date:
+  alternate: false
   alias_target:
 - title: Specifications
   url: "/discover/resources/specifications/"
@@ -4151,16 +4151,6 @@ records:
   alternate: false
   alias_target:
 - title: The Cost of Memory Unsafety
-  url: "/adopt/business-case/cost-of-memory-unsafety/"
-  file: pages/adopt/business-case/cost-of-memory-unsafety.md
-  type: Content Page (detail)
-  collection: pages
-  has_image: false
-  missing_news_date: false
-  display_date:
-  alternate: false
-  alias_target:
-- title: The Cost of Memory Unsafety
   url: "/reference/source-versions/cost-of-memory-unsafety/"
   file: pages/reference/source-versions/cost-of-memory-unsafety.md
   type: Content Page (detail)
@@ -4169,6 +4159,16 @@ records:
   missing_news_date: false
   display_date:
   alternate: true
+  alias_target:
+- title: The Cost of Memory Unsafety
+  url: "/adopt/business-case/cost-of-memory-unsafety/"
+  file: pages/adopt/business-case/cost-of-memory-unsafety.md
+  type: Content Page (detail)
+  collection: pages
+  has_image: false
+  missing_news_date: false
+  display_date:
+  alternate: false
   alias_target:
 - title: 'The EU Cyber Resilience Act: What It Means for Secure-by-Design Systems
     and CHERI'
@@ -4492,16 +4492,6 @@ records:
   alternate: false
   alias_target:
 - title: Upcoming Events
-  url: "/news-and-events/events-and-archive/upcoming-events/"
-  file: pages/news-and-events/events-and-archive/upcoming-events.md
-  type: Events (list)
-  collection: pages
-  has_image: false
-  missing_news_date: false
-  display_date:
-  alternate: false
-  alias_target:
-- title: Upcoming Events
   url: "/reference/source-versions/upcoming-events/"
   file: pages/reference/source-versions/upcoming-events.md
   type: Content Page (detail)
@@ -4510,6 +4500,16 @@ records:
   missing_news_date: false
   display_date:
   alternate: true
+  alias_target:
+- title: Upcoming Events
+  url: "/news-and-events/events-and-archive/upcoming-events/"
+  file: pages/news-and-events/events-and-archive/upcoming-events.md
+  type: Events (list)
+  collection: pages
+  has_image: false
+  missing_news_date: false
+  display_date:
+  alternate: false
   alias_target:
 - title: User space support - CHERI Roadmap for Linux
   url: "/reference/linux-roadmap/goals/user-space.html"
