@@ -94,6 +94,21 @@
     showImage();
   }
 
+  function restorePage() {
+    if (!document.body.classList.contains('image-viewer-open')) return;
+    document.documentElement.classList.remove('image-viewer-open');
+    document.body.classList.remove('image-viewer-open');
+    document.body.style.removeProperty('--image-viewer-scroll-top');
+    window.scrollTo({ top: scrollY, behavior: 'instant' });
+    origin?.focus({ preventScroll: true });
+    enlarged.removeAttribute('src');
+  }
+
+  function closeImage() {
+    dialog.close();
+    restorePage();
+  }
+
   for (const articleImages of articles) {
     articleImages.forEach((image, selected) => {
       image.tabIndex = 0;
@@ -110,7 +125,11 @@
       });
     });
   }
-  close.addEventListener('click', () => dialog.close());
+  close.addEventListener('click', closeImage);
+  dialog.addEventListener('cancel', event => {
+    event.preventDefault();
+    closeImage();
+  });
   previous.addEventListener('click', () => move(-1));
   next.addEventListener('click', () => move(1));
   dialog.addEventListener('keydown', event => {
@@ -137,14 +156,9 @@
   const outsideImage = target => target === dialog || target === enlarged.parentElement;
   dialog.addEventListener('pointerdown', event => { dismiss = outsideImage(event.target); });
   dialog.addEventListener('click', event => {
-    if (dismiss && outsideImage(event.target)) dialog.close();
+    if (dismiss && outsideImage(event.target)) closeImage();
   });
   dialog.addEventListener('close', () => {
-    document.documentElement.classList.remove('image-viewer-open');
-    document.body.classList.remove('image-viewer-open');
-    document.body.style.removeProperty('--image-viewer-scroll-top');
-    window.scrollTo({ top: scrollY, behavior: 'instant' });
-    origin?.focus({ preventScroll: true });
-    enlarged.removeAttribute('src');
+    if (!dialog.open) restorePage();
   });
 })();
