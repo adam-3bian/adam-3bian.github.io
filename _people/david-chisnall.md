@@ -18,7 +18,9 @@ related:
 
 # David Chisnall
 
-Board role: Director of Systems Architecture
+Board role
+: Director of Systems Architecture
+{: .record-properties }
 
 ## Biography
 

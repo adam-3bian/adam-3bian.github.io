@@ -64,11 +64,12 @@ related:
 
 The 2025 CHERI Blossoms conference brought researchers, technologists, industry leaders, and business strategists together in Cambridge.
 
-Status: Past
+Format
+: Conference
 
-Format: Conference
-
-Series: CHERI Blossoms
+Series
+: CHERI Blossoms
+{: .record-properties }
 
 ## Cultivating a Safer Digital Future - from Tech to Business
 

@@ -20,17 +20,21 @@ related:
 
 The next CHERI Blossoms conference in Cambridge, beginning with a tutorial on 21 April and followed by the main conference on 22 and 23 April 2027.
 
-Status: Upcoming
+Format
+: Conference
 
-Format: Conference
-
-Series: CHERI Blossoms
+Series
+: CHERI Blossoms
+{: .record-properties }
 
 Pre-conference Tutorial: 21 April 2027
 
-Main Conference Date: 22-23 April 2027
+Main Conference Date
+: 22-23 April 2027
 
-Location: Department of Computer Science and Technology – William Gates Building, [University of Cambridge](/organisations/university-of-cambridge/), Cambridge, UK
+Venue
+: Department of Computer Science and Technology – William Gates Building, [University of Cambridge](/organisations/university-of-cambridge/), Cambridge, UK
+{: .record-properties }
 
 More details coming soon!
 

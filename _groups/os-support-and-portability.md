@@ -28,7 +28,9 @@ In addition, the group collects and shares general insights from OS porting that
 
 Relevant Alliance groups include [CHERI Linux](/software/cheri-linux/), CHERI FreeRTOS, CHERI [Zephyr](/software/zephyr/), CHERI for seL4, and MMU-less Systems. Each retains its own technical scope while contributing experience relevant to portability.
 
-Group type: Technical
+Group type
+: Technical
+{: .record-properties }
 
 ## Areas of collaboration
 

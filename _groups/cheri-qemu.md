@@ -19,7 +19,9 @@ Coordinates CHERI support in QEMU so developers have maintained, testable emulat
 
 The QEMU Working Group focuses on the support of CHERI within the QEMU software emulator.
 
-Group type: Technical
+Group type
+: Technical
+{: .record-properties }
 
 ## Areas of collaboration
 

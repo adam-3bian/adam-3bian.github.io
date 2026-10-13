@@ -27,7 +27,9 @@ The [Rust](/software/rust/) + CHERI Working Group explores how Rust and CHERI ca
 
 The Rust software ecosystem page explains the relationships between Rust and CHERI.
 
-Group type: Technical
+Group type
+: Technical
+{: .record-properties }
 
 ## Areas of collaboration
 

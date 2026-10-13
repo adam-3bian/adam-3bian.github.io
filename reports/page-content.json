@@ -1,11 +1,14 @@
 {
   "html_files": 488,
-  "local_links": 65988,
-  "local_images": 1112,
-  "metadata_panels": 243,
+  "local_links": 65985,
+  "local_images": 979,
+  "metadata_panels": 241,
   "resource_navigations": 177,
   "legal_clauses": 66,
-  "redirects": 8,
+  "redirects": 9,
+  "directories": 15,
+  "cards": 439,
+  "body_property_lists": 38,
   "baseurl": "",
   "errors": []
 }

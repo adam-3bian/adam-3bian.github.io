@@ -21,15 +21,17 @@ related:
 
 A live webinar on how CHERI can help organisations respond to the security requirements of the EU Cyber Resilience Act.
 
-Status: Past
-
-Format: Webinar
+Format
+: Webinar
+{: .record-properties }
 
 Why the industry needs CHERI to be able to meet the EU Cyber Resilience Act
 
 ## Event Details
 
-Location: Online – Zoom
+Venue
+: Online – Zoom
+{: .record-properties }
 
 ## Description
 

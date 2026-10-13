@@ -17,7 +17,9 @@ related:
 
 # Allison Randal
 
-Board role: Open Source/Hardware Strategist
+Board role
+: Open Source/Hardware Strategist
+{: .record-properties }
 
 ## Biography
 

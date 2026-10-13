@@ -1,4 +1,4 @@
-// Browser regressions for consolidated routes, legal lists and empty metadata.
+// Browser regressions for directories, semantic properties and consolidated routes.
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -8,6 +8,34 @@ const url = route => new URL(route.replace(/^\//, ''), base).href;
 const reportDir = 'reports/content-tests';
 fs.mkdirSync(reportDir, { recursive: true });
 const report = { widths: [1440, 1024, 768, 640, 375], layoutChecks: 0, accessibilityChecks: 0, redirects: 0 };
+const preflight = JSON.parse(fs.readFileSync('reports/preflight.json', 'utf8'));
+const groups = preflight.records.filter(r => r.collection === 'groups' && !r.alternate).map(r => r.url).sort();
+const board = fs.readFileSync('_data/governing-board.yml', 'utf8').split('\n').filter(l => l.startsWith('- ')).map(l => `/people/${l.slice(2)}/`);
+const routes = [
+  '/policies/competition-law-statement/',
+  '/policies/intellectual-property-policy/',
+  '/policies/trademark-policy/',
+  '/papers/',
+  '/policies/',
+  '/organisations/cheri-alliance/',
+  '/people/adam-finney/',
+  '/news/ai-has-compressed-the-attack-timeline/',
+  '/events/cheri-blossoms-conference-2026/',
+  '/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/',
+  '/hardware/x730/',
+  '/software/cheri-linux/',
+  '/groups/cheri-linux-working-group/',
+  '/guides/install-a-toolchain/',
+  '/discover/why-cheri/cheri-and-rust/',
+  '/alliance/leadership/working-groups/',
+  '/alliance/leadership/governing-board/',
+  '/news-and-events/events-and-archive/past-events/',
+  '/news-and-events/events-and-archive/upcoming-events/',
+  '/alliance/leadership/members/',
+  '/news-and-events/people-and-opportunities/speakers/',
+  '/organisations/3bian/',
+  '/news/secure-and-resilient-systems-in-the-era-of-cra-and-iot/',
+];
 
 (async () => {
   const browser = await chromium.launch({ headless: true });
@@ -15,7 +43,7 @@ const report = { widths: [1440, 1024, 768, 640, 375], layoutChecks: 0, accessibi
     const page = await browser.newPage();
     for (const width of report.widths) {
       await page.setViewportSize({ width, height: 900 });
-      for (const route of ['/policies/competition-law-statement/', '/policies/intellectual-property-policy/', '/policies/trademark-policy/', '/papers/', '/policies/', '/organisations/cheri-alliance/', '/people/adam-finney/', '/news/ai-has-compressed-the-attack-timeline/', '/events/cheri-blossoms-conference-2026/', '/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/', '/hardware/x730/', '/software/cheri-linux/', '/groups/cheri-linux-working-group/', '/guides/install-a-toolchain/', '/discover/why-cheri/cheri-and-rust/']) {
+      for (const route of routes) {
         await page.goto(url(route));
         const problems = await page.evaluate(() => {
           const errors = [];
@@ -32,9 +60,25 @@ const report = { widths: [1440, 1024, 768, 640, 375], layoutChecks: 0, accessibi
               if (rect.height < 44 || rect.left < 0 || rect.right > innerWidth) errors.push('Resource link touch target or containment');
             }
           }
-          for (const value of document.querySelectorAll('.metadata dd')) {
+          for (const value of document.querySelectorAll('.metadata dd, .organisation-details dd, .record-properties dd')) {
             const rect = value.getBoundingClientRect();
             if (rect.left < 0 || rect.right > innerWidth || value.scrollWidth > value.clientWidth + 1) errors.push('Metadata value overflows');
+            const label = value.previousElementSibling;
+            const labelRect = label.getBoundingClientRect();
+            if (label.tagName !== 'DT') errors.push('Unpaired property label');
+            if (innerWidth <= 640 && labelRect.bottom > rect.top + 1) errors.push('Mobile property does not stack');
+            if (innerWidth > 640 && Math.abs(labelRect.top - rect.top) > 1) errors.push('Desktop property row does not align');
+          }
+          for (const listing of document.querySelectorAll('.listing')) {
+            const cards = [...listing.querySelectorAll('.card')];
+            const destinations = cards.map(c => c.href);
+            if (new Set(destinations).size !== destinations.length) errors.push('Repeated directory cards');
+            for (const card of cards) {
+              const rect = card.getBoundingClientRect();
+              if (rect.left < 0 || rect.right > innerWidth || card.scrollWidth > card.clientWidth + 1) errors.push('Card overflows');
+              if (card.parentElement.tagName !== 'LI' || card.parentElement.parentElement.tagName !== 'UL') errors.push('Cards lack list semantics');
+              if (card.querySelector('div, span, a, button, img[src$="placeholder.svg"]')) errors.push('Unnecessary or interactive card content');
+            }
           }
           for (const list of document.querySelectorAll('.legal-clauses')) {
             if (list.tagName !== 'OL' || getComputedStyle(list).listStyleType !== 'none') errors.push('Incorrect legal-list markers');
@@ -45,6 +89,29 @@ const report = { widths: [1440, 1024, 768, 640, 375], layoutChecks: 0, accessibi
         });
         assert.deepEqual(problems, [], `${width}px ${route}`);
         report.layoutChecks++;
+        if (route === '/alliance/leadership/working-groups/') {
+          const targets = await page.locator('.listing .card').evaluateAll(cards => cards.map(c => c.dataset.recordUrl));
+          assert.deepEqual(targets.sort(), groups, 'Complete working-group directory');
+          assert.equal(await page.locator('.listing img').count(), 0, 'Repeated generic group image');
+          assert.equal(await page.locator('.listing .card-description').count(), groups.length);
+          await page.screenshot({ path: path.join(reportDir, `working-groups-${width}.png`), fullPage: true });
+        }
+        if (route === '/alliance/leadership/governing-board/') {
+          const targets = await page.locator('.listing .card').evaluateAll(cards => cards.map(c => c.dataset.recordUrl));
+          assert.deepEqual(targets, board, 'Board cards must match the ordered roster');
+          assert.equal(await page.locator('.listing img.image-portrait').count(), board.length);
+          assert.equal(await page.locator('.image-gallery').count(), 0, 'Duplicated static board gallery');
+          await page.screenshot({ path: path.join(reportDir, `governing-board-${width}.png`), fullPage: true });
+        }
+        if (route === '/news-and-events/events-and-archive/past-events/') {
+          assert.equal(await page.locator('#event-archive').count(), 0, 'Repeated Markdown archive heading');
+          const dates = await page.locator('.listing .card time').evaluateAll(nodes => nodes.map(n => n.dateTime));
+          assert.deepEqual(dates, [...dates].sort().reverse(), 'Past events must be newest first');
+          await page.screenshot({ path: path.join(reportDir, `past-events-${width}.png`), fullPage: true });
+        }
+        if (route === '/organisations/3bian/') {
+          assert.equal(await page.locator('main a').filter({ hasText: /^Source$/ }).count(), 0, 'Import citation label');
+        }
         if (route === '/organisations/cheri-alliance/') {
           assert.equal(await page.locator('main h1').count(), 1, 'Duplicate Alliance page heading');
           assert.equal((await page.locator('.article-content').innerText()).includes('|'), false, 'Broken administrative table is visible');
@@ -83,12 +150,23 @@ const report = { widths: [1440, 1024, 768, 640, 375], layoutChecks: 0, accessibi
       ['/news-and-events/news-and-analysis/latest-news/', '/news/'],
       ['/policies/ip-policy/', '/policies/intellectual-property-policy/'],
       ['/policies/trademark-original/', '/policies/trademark/'],
+      ['/groups/', '/alliance/leadership/working-groups/'],
     ];
     for (const [source, destination] of aliases) {
       await plain.goto(url(source));
       await plain.waitForURL(url(destination));
       assert.equal(await plain.locator('link[rel="canonical"]').getAttribute('href'), 'https://adam-3bian.github.io' + new URL(url(destination)).pathname);
       report.redirects++;
+    }
+    // Card navigation uses ordinary links, including keyboard use without JS.
+    for (const route of ['/alliance/leadership/working-groups/', '/alliance/leadership/governing-board/']) {
+      await plain.goto(url(route));
+      const first = plain.locator('.listing .card').first();
+      const target = await first.getAttribute('data-record-url');
+      await first.focus();
+      await plain.keyboard.press('Enter');
+      await plain.waitForURL(url(target));
+      assert.equal(await plain.locator('main h1').count(), 1, 'Card must open a complete profile');
     }
     await context.close();
     fs.writeFileSync(path.join(reportDir, 'results.json'), JSON.stringify(report, null, 2) + '\n');

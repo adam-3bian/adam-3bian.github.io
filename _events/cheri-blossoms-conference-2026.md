@@ -86,17 +86,21 @@ related:
 
 A three-day Cambridge programme of tutorials, ecosystem updates, and technical talks for people researching, building, and adopting CHERI.
 
-Status: Past
+Format
+: Conference
 
-Format: Conference
+Series
+: CHERI Blossoms
 
-Series: CHERI Blossoms
+Pre-Conference Tutorial
+: 25 March 2026
 
-Pre-Conference Tutorial: 25 March 2026
+Main Conference Date
+: 26 – 27 March 2026
 
-Main Conference Date: 26 – 27 March 2026
-
-Location: Department of Computer Science and Technology – William Gates Building, [University of Cambridge](/organisations/university-of-cambridge/), Cambridge, UK
+Venue
+: Department of Computer Science and Technology – William Gates Building, [University of Cambridge](/organisations/university-of-cambridge/), Cambridge, UK
+{: .record-properties }
 
 Thank you to all who attended!
 

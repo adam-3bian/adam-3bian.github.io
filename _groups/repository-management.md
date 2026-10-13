@@ -22,7 +22,9 @@ The Repository Management Working Group focuses on defining rules for participat
 
 Our aim is to have high quality resources available and to foster collaboration in the community. We also want to set up organisation-wide rules that improve the quality for our community.
 
-Group type: Programme and ecosystem
+Group type
+: Programme and ecosystem
+{: .record-properties }
 
 ## Areas of collaboration
 

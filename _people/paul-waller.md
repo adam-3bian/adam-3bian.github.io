@@ -15,7 +15,9 @@ related:
 
 # Paul Waller
 
-Board role: Head of Capability Research
+Board role
+: Head of Capability Research
+{: .record-properties }
 
 ## Biography
 

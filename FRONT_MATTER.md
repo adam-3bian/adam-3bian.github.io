@@ -10,6 +10,16 @@ The three **shared optional properties** below may be omitted entirely, or suppl
 
 Keep human-readable article content in the body; keep record-level versions, dates, resource URLs and relationships in front matter.
 
+Shared metadata and body property lists use the same label/value rows, with subtle dividers and stacked labels at 640px and below. For additional factual details that belong to the article, use Kramdown's native definition-list syntax:
+
+```markdown
+Group type
+: Technical
+{: .record-properties }
+```
+
+Do not repeat a front-matter property in the body unless it adds useful detail. Event status is derived from the final event date at build time, matching the past/upcoming directories; do not maintain a separate `Status: Upcoming` line.
+
 | Shared property | Type | Meaning and rendering |
 | --- | --- | --- |
 | `version` | Quoted string or `null` | The document, product or record version; displayed as Version. Use `"1.01"`, not a YAML number. Versions of individual ISA extensions remain with their technical descriptions. |
@@ -29,7 +39,7 @@ Every collection has these two required keys, in addition to its own keys listed
 
 Collection slugs come from Markdown filenames: `_people/adam-finney.md` becomes `/people/adam-finney/`. Do not put `slug` or `permalink` in collection front matter. Add the record to `_data/page-map.yml` when creating a new file.
 
-Images render in contained 3:1 frames; speaker portraits render in 1:1 frames. Asset bytes retain their original proportions. Placeholder assets remain useful fallbacks in headers and cards, but do not generate metadata links or empty panels. Image alignment classes belong in Markdown, not front matter: `.image-left`, `.image-right`, `.image-full`, `.image-logo`, `.image-icon` and `.image-portrait`. Keep consecutive photos, logos and portraits in an appropriate gallery; preserve captions with `figure`/`figcaption`.
+Images render in contained 3:1 frames; speaker portraits and the board's portrait cards render in 1:1 frames. Asset bytes retain their original proportions. Placeholder assets remain fallbacks in record headers; directories omit placeholder images and repeated generic group illustrations so that useful text leads the cards. Images do not generate metadata links or empty panels. Image alignment classes belong in Markdown, not front matter: `.image-left`, `.image-right`, `.image-full`, `.image-logo`, `.image-icon` and `.image-portrait`. Keep consecutive photos, logos and portraits in an appropriate gallery; preserve captions with `figure`/`figcaption`.
 
 All relationship arrays contain existing **collection slugs**, without directory prefixes, `.md`, or full URLs. `related.pages` is the exception: it contains registered page routes, including the leading and trailing slash. Do not use a comma-separated string in place of an array, and do not repeat values. Authors, speakers, leads and the singular policy author all reference `_people` records.
 
@@ -93,7 +103,7 @@ Do not infer membership, founder status or speaker status from a mention elsewhe
 | `related.organisations` | Slug array | Participating organisations. |
 | `related.papers` | Slug array | Relevant publications. |
 
-Events sort by start time/date, earliest first. Past/upcoming filters compare the final event day (end, falling back to start) with the build date. An event whose final day is today remains upcoming. This is a build-time filter, not a continuously running browser clock.
+Events and upcoming events sort by start time/date, earliest first; past-event archives show the newest first. Past/upcoming filters compare the final event day (end, falling back to start) with the build date. An event whose final day is today remains upcoming. This is a build-time filter, not a continuously running browser clock.
 
 ## Papers (`_papers`)
 
@@ -278,7 +288,7 @@ related:
 | `listing` | Mapping | Include all three keys below. |
 | `listing.collection` | Collection name or `null` | One of `people`, `news`, `organisations`, `events`, `papers`, `hardware`, `software`, `groups`, `guides`, `policies`. Required as a value for `layout: list`; normally null for the three dedicated layouts. |
 | `listing.status` | `past`, `upcoming`, or `null` | Event filtering only. |
-| `listing.role` | `speaker`, `member`, or `null` | People-speaker or organisation-member filtering. |
+| `listing.role` | `speaker`, `member`, `board`, or `null` | `speaker` and `board` require the people collection; `member` requires organisations. `board` uses the ordered person slugs in `_data/governing-board.yml`. |
 
 Complete collection directory example:
 
@@ -306,7 +316,13 @@ listing:
   role: null
 ```
 
-The member directory's `member` role currently comes from `listing_presets` in `_data/viewer.yml`. Explicit `listing.role`/`listing.status` takes precedence over a preset. News is newest first; events are earliest first; other collections sort by title. Canonical listings exclude records whose inherited `alternate` setting is true.
+Directory bodies contain introductory Markdown, followed by one automatically generated card list. Do not copy biographies, group descriptions, portraits or record links into a second hand-maintained list. Cards take their titles, dates, images and opening paragraph from the collection records; their action labels come from `_data/viewer.yml`. They use native lists, links and heading groups, and work without JavaScript.
+
+The Governing Board directory uses `layout: list`, `listing.collection: people` and `listing.role: board`. Update `_data/governing-board.yml` when the membership changes; each slug must identify one canonical person record. The cards preserve roster order, use square portraits, and link to biographies. This display treatment does not mark non-speakers as speakers.
+
+Working Groups uses `layout: list` and `listing.collection: groups`. Its complete directory is `/alliance/leadership/working-groups/`; `/groups/` redirects there. Keep each group's description in its own `_groups` record.
+
+The member directory's `member` role currently comes from `listing_presets` in `_data/viewer.yml`. Explicit `listing.role`/`listing.status` takes precedence over a preset. News and past-event archives are newest first; other event lists are earliest first; other collections sort by title. Canonical listings exclude records whose inherited `alternate` setting is true. `listing.status` is valid only for events.
 
 ## Inherited settings, aliases and generated properties
 

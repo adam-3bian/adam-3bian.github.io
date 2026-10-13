@@ -25,7 +25,9 @@ The resources we deliver will help accelerate:
 - Making the right trade-offs and choices for the devices and systems being developed.
 - Extending or innovating technologies to better enable CHERI at the system level.
 
-Group type: Technical
+Group type
+: Technical
+{: .record-properties }
 
 ## Areas of collaboration
 

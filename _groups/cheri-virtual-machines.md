@@ -18,7 +18,9 @@ Examines how language runtimes, managed environments, and virtual machines can u
 
 The CHERI Virtual Machines Working Group adapts VMs and language runtimes for CHERI platforms, exploring optimisations for enhanced security and functionality
 
-Group type: Technical
+Group type
+: Technical
+{: .record-properties }
 
 ## Areas of collaboration
 

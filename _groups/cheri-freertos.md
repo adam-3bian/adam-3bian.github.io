@@ -18,7 +18,9 @@ Coordinates common approaches to memory protection, compartmentalisation, interf
 
 The FreeRTOS Working Group aims to provide a common ground for CHERI-based solutions on FreeRTOS across the Alliance.
 
-Group type: Technical
+Group type
+: Technical
+{: .record-properties }
 
 ## Areas of collaboration
 

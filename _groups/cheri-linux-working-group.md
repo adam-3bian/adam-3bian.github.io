@@ -22,7 +22,9 @@ The [CHERI Linux](/software/cheri-linux/) Working Group defines and prioritises 
 
 The technical CHERI Linux page explains the wider software stack and current development.
 
-Group type: Technical
+Group type
+: Technical
+{: .record-properties }
 
 ## Areas of collaboration
 

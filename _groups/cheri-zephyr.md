@@ -22,7 +22,9 @@ The CHERI Zephyr Working Group focuses on adapting Zephyr to leverage CHERI’s 
 
 The CHERI Zephyr software ecosystem page provides the technical overview and links to current public development resources.
 
-Group type: Technical
+Group type
+: Technical
+{: .record-properties }
 
 ## Areas of collaboration
 

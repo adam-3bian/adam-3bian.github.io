@@ -20,7 +20,9 @@ CHERI needs explanations that are accurate, useful to different audiences, and c
 
 Activity can include editorial planning, member stories, event promotion, campaign material, and review of public explanations. The group works alongside the Promotion & Ambassador Program while retaining a distinct focus on Alliance-wide communication.
 
-Group type: Programme and ecosystem
+Group type
+: Programme and ecosystem
+{: .record-properties }
 
 ## Areas of collaboration
 

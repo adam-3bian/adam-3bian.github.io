@@ -33,7 +33,9 @@ Overall, the working group plays a crucial role in ensuring the compliance and c
 
 ## Group information
 
-Group type: Programme and ecosystem
+Group type
+: Programme and ecosystem
+{: .record-properties }
 
 ## Areas of collaboration
 

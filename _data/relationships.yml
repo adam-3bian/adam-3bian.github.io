@@ -23,9 +23,6 @@
   - url: "/alliance/about-and-governance/governance/"
     title: Governance
     type: Content Page (detail)
-  - url: "/alliance/leadership/governing-board/"
-    title: Governing Board
-    type: Content Page (detail)
   - url: "/news-and-events/people-and-opportunities/job-opportunities/"
     title: Job Opportunities
     type: Content Page (detail)
@@ -37,9 +34,6 @@
     type: Content Page (detail)
   - url: "/alliance/membership/why-join/"
     title: Why Join?
-    type: Content Page (detail)
-  - url: "/alliance/leadership/working-groups/"
-    title: Working Groups
     type: Content Page (detail)
 - label: Related People
   targets:
@@ -488,7 +482,7 @@
   targets:
   - url: "/alliance/leadership/governing-board/"
     title: Governing Board
-    type: Content Page (detail)
+    type: People (list)
 "/alliance/leadership/governing-board/":
 - label: Related pages
   targets:
@@ -1239,7 +1233,7 @@
   targets:
   - url: "/alliance/leadership/governing-board/"
     title: Governing Board
-    type: Content Page (detail)
+    type: People (list)
 "/alliance/membership/why-join/":
 - label: Related pages
   targets:
@@ -1251,9 +1245,6 @@
   targets:
   - url: "/alliance/membership/membership-benefits-and-options/"
     title: Membership Benefits & Options
-    type: Content Page (detail)
-  - url: "/alliance/leadership/working-groups/"
-    title: Working Groups
     type: Content Page (detail)
 "/discover/history/morello-history/":
 - label: Related pages
@@ -1494,12 +1485,6 @@
   - url: "/news/"
     title: News
     type: News (list)
-"/alliance/leadership/working-groups/":
-- label: Related pages
-  targets:
-  - url: "/alliance/leadership/members/"
-    title: Members
-    type: Organisations (list)
 "/organisations/3bian/":
 - label: Related People
   targets:

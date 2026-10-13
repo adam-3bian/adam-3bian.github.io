@@ -23,9 +23,9 @@ related:
 
 [CHERI Alliance](/organisations/cheri-alliance/) demonstrations and member activity at Embedded World 2026 in Nuremberg.
 
-Status: Past
-
-Format: Exhibition
+Format
+: Exhibition
+{: .record-properties }
 
 70% of vulnerabilities eliminated
 

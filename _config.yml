@@ -324,6 +324,10 @@ defaults:
     path: _policies/privacy-policy.md
   values:
     alternate: true
+- scope:
+    path: pages/groups.md
+  values:
+    alternate: true
 title: CHERI Content Viewer
 description: A minimal Jekyll site for reviewing migrated CHERI Alliance records.
 lang: en-GB

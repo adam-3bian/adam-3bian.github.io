@@ -9,6 +9,7 @@
 {% if page.published_date %}<dt>Published</dt><dd><time datetime="{{ page.published_date }}">{{ page.published_date | date: '%-d %B %Y' }}</time></dd>{% endif %}
 {% if page.published_year %}<dt>Publication year</dt><dd>{{ page.published_year }}</dd>{% endif %}
 {% if page.updated_date %}<dt>Updated</dt><dd>{{ page.updated_date | date: '%-d %B %Y' }}</dd>{% endif %}
+{% if page.collection == 'events' %}{% assign final_event_day = page.end_datetime | default: page.end_date | default: page.start_datetime | default: page.start_date | slice: 0, 10 %}{% assign current_day = site.time | date: '%Y-%m-%d' %}<dt>Status</dt><dd>{% if final_event_day < current_day %}Past{% else %}Upcoming{% endif %}</dd>{% endif %}
 {% if page.start_datetime %}<dt>Starts</dt><dd><time datetime="{{ page.start_datetime }}">{{ page.start_datetime | date: '%-d %B %Y, %H:%M %:z' }}</time></dd>{% elsif page.start_date %}<dt>Starts</dt><dd><time datetime="{{ page.start_date }}">{{ page.start_date | date: '%-d %B %Y' }}</time></dd>{% endif %}
 {% if page.end_datetime %}<dt>Ends</dt><dd><time datetime="{{ page.end_datetime }}">{{ page.end_datetime | date: '%-d %B %Y, %H:%M %:z' }}</time></dd>{% elsif page.end_date %}<dt>Ends</dt><dd><time datetime="{{ page.end_date }}">{{ page.end_date | date: '%-d %B %Y' }}</time></dd>{% endif %}
 {% if page.location %}<dt>Location</dt><dd>{{ page.location | escape }}</dd>{% endif %}

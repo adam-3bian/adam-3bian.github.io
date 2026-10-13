@@ -370,11 +370,6 @@
     "field": "related.organisations"
   },
   {
-    "from": "/alliance/leadership/governing-board/",
-    "to": "/organisations/cheri-alliance/",
-    "field": "related.organisations"
-  },
-  {
     "from": "/adopt/policy/government-guidance/",
     "to": "/adopt/business-case/the-business-case/",
     "field": "related.pages"
@@ -706,16 +701,6 @@
   },
   {
     "from": "/alliance/membership/why-join/",
-    "to": "/organisations/cheri-alliance/",
-    "field": "related.organisations"
-  },
-  {
-    "from": "/alliance/leadership/working-groups/",
-    "to": "/alliance/leadership/members/",
-    "field": "related.pages"
-  },
-  {
-    "from": "/alliance/leadership/working-groups/",
     "to": "/organisations/cheri-alliance/",
     "field": "related.organisations"
   },

@@ -16,7 +16,9 @@ related:
 
 # Andrew Lindsay
 
-Board role: Security Product Manager and Architect
+Board role
+: Security Product Manager and Architect
+{: .record-properties }
 
 ## Biography
 

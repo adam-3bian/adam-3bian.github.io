@@ -40,13 +40,15 @@ related:
 
 An online replay and live question-and-answer programme with speakers from the main CHERITech'25 conference.
 
-Status: Past
+Format
+: Online event
 
-Format: Online event
+Series
+: CHERITech
 
-Series: CHERITech
-
-Time: 09:00 to 17:45 GMT
+Time
+: 09:00 to 17:45 GMT
+{: .record-properties }
 
 Thank you to everyone who participated!
 

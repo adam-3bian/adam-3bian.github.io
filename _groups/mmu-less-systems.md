@@ -29,7 +29,9 @@ It is important to discuss both the hardware and software aspects of such a desi
 
 We will also propose and discuss other designs that broadly fall into the category of CHERI-based single-address space systems, or systems that don’t require traditional MMUs.
 
-Group type: Technical
+Group type
+: Technical
+{: .record-properties }
 
 ## Areas of collaboration
 

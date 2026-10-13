@@ -22,13 +22,15 @@ related:
 
 A practical introduction to CHERI and [CHERIoT](/hardware/cheriot/) for students, researchers, and developers, with presentations, examples, and guided exercises.
 
-Status: Past
+Format
+: Tutorial
 
-Format: Tutorial
+Series
+: CHERI Blossoms
 
-Series: CHERI Blossoms
-
-Location: Department of Computer Science and Technology – William Gates Building, [University of Cambridge](/organisations/university-of-cambridge/), Cambridge, UK
+Venue
+: Department of Computer Science and Technology – William Gates Building, [University of Cambridge](/organisations/university-of-cambridge/), Cambridge, UK
+{: .record-properties }
 
 Thank you to all who attended!
 

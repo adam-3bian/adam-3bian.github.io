@@ -49,7 +49,30 @@ Secure Horizons 2026 is for anyone responsible for building, deploying or govern
 
 ## Event Details at a Glance
 
-Date: 21 January 2026 Time: 9:00 to 16:30 GMT (doors open at 8:00) Location: IWM Duxford, Cambridge Format: In person Duration: 7 hours 30 minutes Category: Science and Tech, High Tech Cost: Free Register: Secure Horizons 2026 Registration
+Date
+: 21 January 2026
+
+Time
+: 9:00 to 16:30 GMT (doors open at 8:00)
+
+Location
+: IWM Duxford, Cambridge
+
+Format
+: In person
+
+Duration
+: 7 hours 30 minutes
+
+Category
+: Science and Tech, High Tech
+
+Cost
+: Free
+
+Register
+: Secure Horizons 2026 Registration
+{: .record-properties }
 
 Secure Horizons 2026 offers a rare opportunity to step back from day to day delivery pressures and think clearly about the future of secure and resilient systems. In a setting that powerfully connects past and present, it asks a simple but vital question: how do we build technology that is worthy of the trust we place in it?
 

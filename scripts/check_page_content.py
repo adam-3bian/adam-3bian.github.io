@@ -73,7 +73,8 @@ errors = []
 documents = {p: Document(p.read_text()) for p in SITE.rglob('*.html')}
 ids = {p: {n.attrs['id'] for n in doc.nodes if 'id' in n.attrs} for p, doc in documents.items()}
 stats = {'html_files': len(documents), 'local_links': 0, 'local_images': 0,
-         'metadata_panels': 0, 'resource_navigations': 0, 'legal_clauses': 0, 'redirects': 0}
+         'metadata_panels': 0, 'resource_navigations': 0, 'legal_clauses': 0, 'redirects': 0,
+         'directories': 0, 'cards': 0, 'body_property_lists': 0}
 
 
 def target_file(path):
@@ -90,6 +91,24 @@ def target_file(path):
 
 for file, doc in documents.items():
     route = '/' + str(file.relative_to(SITE))
+    listings = [n for n in doc.nodes if n.has_class('listing')]
+    if len(listings) > 1:
+        errors.append(f'{route}: repeated collection directory')
+    for listing in listings:
+        stats['directories'] += 1
+        cards = [n for n in doc.nodes if n.has_class('card') and n.ancestor(lambda a: a is listing)]
+        targets = [n.attrs.get('href') for n in cards]
+        if len(targets) != len(set(targets)):
+            errors.append(f'{route}: repeated card destination')
+        for card in cards:
+            stats['cards'] += 1
+            if card.tag != 'a' or card.parent.tag != 'li' or not card.parent.parent.has_class('cards'):
+                errors.append(f'{route}: card lacks native link/list semantics')
+            if len([n for n in doc.nodes if n.tag == 'h3' and n.ancestor(lambda a: a is card)]) != 1:
+                errors.append(f'{route}: card lacks a single title')
+    for card_list in [n for n in doc.nodes if n.has_class('cards')]:
+        if card_list.tag != 'ul' or any(n.tag != 'li' for n in card_list.children):
+            errors.append(f'{route}: card directory lacks list semantics')
     for node in doc.nodes:
         if node.tag == 'li' and node.parent.tag not in ('ul', 'ol', 'menu'):
             errors.append(f'{route}: list item without a parent list')
@@ -104,6 +123,10 @@ for file, doc in documents.items():
                 errors.append(f'{route}: metadata without facts')
             elif any(n.tag != ('dt' if i % 2 == 0 else 'dd') or not n.text() for i, n in enumerate(lists[0].children)) or len(lists[0].children) % 2:
                 errors.append(f'{route}: unpaired metadata terms and values')
+        if node.has_class('record-properties'):
+            stats['body_property_lists'] += 1
+            if node.tag != 'dl' or not node.children or len(node.children) % 2 or any(n.tag != ('dt' if i % 2 == 0 else 'dd') or not n.text() for i, n in enumerate(node.children)):
+                errors.append(f'{route}: unpaired body properties')
         if node.has_class('resource-links'):
             stats['resource_navigations'] += 1
             if node.tag != 'nav' or not node.attrs.get('aria-label') or not node.text():
@@ -111,7 +134,7 @@ for file, doc in documents.items():
             lists = [n for n in node.children if n.tag == 'ul']
             if len(lists) != 1 or not lists[0].children or any(n.tag != 'li' for n in lists[0].children):
                 errors.append(f'{route}: resource links lack list semantics')
-        if node.tag in ('div', 'span') and node.ancestor(lambda n: n.has_class('metadata') or n.has_class('resource-links') or n.has_class('breadcrumb') or n.has_class('record-intro') or n.has_class('onward')):
+        if node.tag in ('div', 'span') and node.ancestor(lambda n: n.has_class('metadata') or n.has_class('resource-links') or n.has_class('breadcrumb') or n.has_class('record-intro') or n.has_class('onward') or n.has_class('listing')):
             errors.append(f'{route}: unnecessary wrapper in shared record layout')
         if node.tag == 'a' and node.text() in ('Placeholder image', 'Original image'):
             errors.append(f'{route}: unnecessary image resource link')
@@ -127,7 +150,7 @@ for file, doc in documents.items():
                 json.loads(node.text())
             except ValueError:
                 errors.append(f'{route}: malformed front matter inspector JSON')
-        for attribute in ('aria-controls',):
+        for attribute in ('aria-controls', 'aria-labelledby'):
             for identifier in node.attrs.get(attribute, '').split():
                 if identifier not in ids[file]:
                     errors.append(f'{route}: missing controlled element {identifier}')
@@ -161,6 +184,14 @@ for record in report['records']:
     if not doc:
         errors.append('Missing record: ' + record['url'])
         continue
+    source = (ROOT / record['file']).read_text()
+    expected_properties = source.count('{: .record-properties }')
+    if sum(n.has_class('record-properties') for n in doc.nodes) != expected_properties:
+        errors.append('Body property markup did not render: ' + record['url'])
+    if record['collection'] == 'events':
+        content = next((n for n in doc.nodes if n.has_class('article-content')), None)
+        if content and re.search(r'\bStatus: (Past|Upcoming)\b', content.text()):
+            errors.append('Hardcoded event status: ' + record['url'])
     target = record.get('alias_target') or record['url']
     canonical = [n.attrs.get('href', '') for n in doc.nodes if n.tag == 'link' and n.attrs.get('rel') == 'canonical']
     if len(canonical) != 1 or urlsplit(canonical[0]).path != BASEURL + target:
@@ -172,6 +203,28 @@ for record in report['records']:
             errors.append('Incorrect redirect: ' + record['url'])
         if not any(n.tag == 'a' and n.attrs.get('href') == BASEURL + target for n in doc.nodes):
             errors.append('Redirect without ordinary fallback link: ' + record['url'])
+
+# Directory targets must match the existing canonical records, not copied prose.
+groups_route = '/alliance/leadership/working-groups/'
+groups_doc = documents[target_file(BASEURL + groups_route)]
+group_targets = [n.attrs.get('data-record-url') for n in groups_doc.nodes if n.has_class('card')]
+expected_groups = [r['url'] for r in report['records'] if r['collection'] == 'groups' and not r['alternate']]
+if sorted(group_targets) != sorted(expected_groups):
+    errors.append('Working Groups directory omits or repeats canonical groups')
+board_route = '/alliance/leadership/governing-board/'
+board_doc = documents[target_file(BASEURL + board_route)]
+board_targets = [n.attrs.get('data-record-url') for n in board_doc.nodes if n.has_class('card')]
+board_slugs = re.findall(r'^- (.+)$', (ROOT / '_data/governing-board.yml').read_text(), re.M)
+if board_targets != ['/people/' + slug + '/' for slug in board_slugs]:
+    errors.append('Governing Board directory differs from the ordered roster')
+for doc in (groups_doc, board_doc):
+    if any(n.has_class('image-gallery') for n in doc.nodes):
+        errors.append('Hand-maintained portraits or group lists remain beside generated cards')
+    if any(n.tag == 'img' and '/placeholder.svg' in n.attrs.get('src', '') and n.ancestor(lambda a: a.has_class('card')) for n in doc.nodes):
+        errors.append('Placeholder image in a directory card')
+org_doc = documents[target_file(BASEURL + '/organisations/3bian/')]
+if any(n.tag == 'a' and n.text() == 'Source' for n in org_doc.nodes):
+    errors.append('3bian still displays an import-source label')
 
 expected = ['1.1', '1.1.1', '1.1.2', '2.1'] + [f'2.1.{i}' for i in range(1, 6)] + ['3.1'] + [f'3.1.{i}' for i in range(1, 7)] + ['3.2'] + [f'3.2.{i}' for i in range(1, 9)] + ['3.3', '4.1', '4.2']
 competition = documents[target_file(BASEURL + '/policies/competition-law-statement/')]

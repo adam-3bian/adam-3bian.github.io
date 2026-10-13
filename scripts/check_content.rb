@@ -89,11 +89,17 @@ objects.each do |object|
   end
   if kind == 'listing'
     listing = fields['listing'] || {}
-    errors << "Invalid listing role: #{entry['file']}" unless [nil, 'speaker', 'member'].include?(listing['role'])
+    errors << "Invalid listing role: #{entry['file']}" unless [nil, 'speaker', 'member', 'board'].include?(listing['role'])
     errors << "Invalid listing status: #{entry['file']}" unless [nil, 'past', 'upcoming'].include?(listing['status'])
     if fields['layout'] == 'list' && !settings['collections'].key?(listing['collection'])
       errors << "Invalid listing collection: #{entry['file']}"
     end
+    collection = %w[people events news].include?(fields['layout']) ? fields['layout'] : listing['collection']
+    role = listing['role'] || settings.dig('listing_presets', object.url, 'role')
+    if (['speaker', 'board'].include?(role) && collection != 'people') || (role == 'member' && collection != 'organisations')
+      errors << "Listing role does not match its collection: #{entry['file']}"
+    end
+    errors << "Event status on non-event listing: #{entry['file']}" if listing['status'] && collection != 'events'
   end
   fields.each do |key, value|
     next if value.nil?
@@ -255,8 +261,11 @@ objects.each do |object|
 end
 errors << 'Duplicate routes in source map' unless map.map { |entry| entry['url'] }.uniq.length == map.length
 errors << 'Content record count differs from source map' unless objects.length == map.length
-site.data.fetch('governing-board').each do |slug|
+board = site.data.fetch('governing-board')
+errors << 'Duplicate governing-board people' unless board.uniq.length == board.length
+board.each do |slug|
   errors << "Unknown governing-board person: #{slug}" unless slugs.fetch('people', {}).key?(slug)
+  errors << "Alternate governing-board person: #{slug}" if slugs.dig('people', slug)&.data&.fetch('alternate', false)
 end
 
 records = objects.sort_by { |object| object.data['title'].to_s.downcase }.map do |object|

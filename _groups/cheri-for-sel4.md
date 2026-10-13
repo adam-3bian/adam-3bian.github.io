@@ -27,7 +27,9 @@ The CHERI for seL4 Working Group focuses on the integration and combination of t
 
 Please note that CHERI-seL4 is experimental and isn’t formally verified or upstream yet.
 
-Group type: Technical
+Group type
+: Technical
+{: .record-properties }
 
 ## Areas of collaboration
 

@@ -18,7 +18,9 @@ related:
 
 # Mike Eftimakis
 
-Board role: Founding Director
+Board role
+: Founding Director
+{: .record-properties }
 
 ## Biography
 

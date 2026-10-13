@@ -25,7 +25,9 @@ The group supports promotion of the [CHERI Alliance](/organisations/cheri-allian
 
 The group manages and supports the Ambassador programme, helping ambassadors share accurate information about CHERI within their professional, technical, academic, and regional networks.
 
-Group type: Programme and ecosystem
+Group type
+: Programme and ecosystem
+{: .record-properties }
 
 ## Areas of collaboration
 

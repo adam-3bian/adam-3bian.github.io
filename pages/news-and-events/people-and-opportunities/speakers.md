@@ -12,6 +12,4 @@ listing:
 
 People who have contributed to CHERI Alliance conferences, workshops, webinars, and community events.
 
-## Speaker directory
-
 Biographies, affiliations, profile links, and the CHERI talks associated with each person.

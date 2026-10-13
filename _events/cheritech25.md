@@ -53,13 +53,15 @@ related:
 
 A technical conference in Manchester for researchers, engineers, cybersecurity specialists, and product developers working across the CHERI stack.
 
-Status: Past
+Format
+: Conference
 
-Format: Conference
+Series
+: CHERITech
 
-Series: CHERITech
-
-Time: 09:00 to 17:00 GMT
+Time
+: 09:00 to 17:00 GMT
+{: .record-properties }
 
 Thank you to all those who attended!
 

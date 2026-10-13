@@ -19,17 +19,21 @@ related:
 
 A two-day CHERI technical programme at SEMICON Europa in Munich, connecting implementation work with the wider electronics industry.
 
-Status: Upcoming
+Format
+: Conference
 
-Format: Conference
+Series
+: CHERITech
 
-Series: CHERITech
+Main Conference Date
+: 12-13 November 2026
 
-Main Conference Date: 12-13 November 2026
+Exhibition
+: 10-13 November 2026
 
-Exhibition: 10-13 November 2026
-
-Location: Munich, DE @ SEMICON Europa
+Venue
+: Munich, DE @ SEMICON Europa
+{: .record-properties }
 
 Registration is open. [Purchase a SEMICON Europa 2026 ticket](https://tickets.messe-muenchen.de/MM-SHOP/SEM26/) to attend.
 

@@ -27,13 +27,15 @@ related:
 
 A Cheltenham conference connecting CHERI and secure-by-design research with practical industry implementation.
 
-Status: Past
+Format
+: Conference
 
-Format: Conference
+Time
+: 10:00 – 16:30 + evening networking until 20:00
 
-Time: 10:00 – 16:30 + evening networking until 20:00
-
-Entry: Free to attend
+Entry
+: Free to attend
+{: .record-properties }
 
 Hosted by [NCSC](/organisations/ncsc/), [CyNam](/organisations/cynam/), and the [CHERI Alliance](/organisations/cheri-alliance/)
 

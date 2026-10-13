@@ -19,7 +19,9 @@ Explores how CHERI mechanisms, implementation evidence, and system integration r
 
 The Safety Working Group focuses on implementing safety standards for CHERI hardware to leverage its memory safety and fine-grained protection capabilities, thereby enhancing the security and safety of safety-critical systems.
 
-Group type: Technical
+Group type
+: Technical
+{: .record-properties }
 
 ## Areas of collaboration
 

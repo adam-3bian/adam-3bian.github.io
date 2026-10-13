@@ -1,8 +1,8 @@
 ---
-generated_at: '2026-10-13T16:58:34Z'
+generated_at: '2026-10-13T21:23:28Z'
 record_count: 487
-relationship_count: 1096
-image_count: 512
+relationship_count: 1093
+image_count: 509
 errors: []
 records:
 - title: "'Cybersecurity by design - from research to industry' conference"
@@ -2041,7 +2041,7 @@ records:
 - title: Governing Board
   url: "/alliance/leadership/governing-board/"
   file: pages/alliance/leadership/governing-board.md
-  type: Content Page (detail)
+  type: People (list)
   collection: pages
   has_image: false
   missing_news_date: false
@@ -4669,12 +4669,12 @@ records:
   has_image: false
   missing_news_date: false
   display_date:
-  alternate: false
-  alias_target:
+  alternate: true
+  alias_target: "/alliance/leadership/working-groups/"
 - title: Working Groups
   url: "/alliance/leadership/working-groups/"
   file: pages/alliance/leadership/working-groups.md
-  type: Content Page (detail)
+  type: Groups (list)
   collection: pages
   has_image: false
   missing_news_date: false

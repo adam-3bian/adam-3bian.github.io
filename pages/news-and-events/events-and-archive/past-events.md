@@ -11,7 +11,3 @@ listing:
 # Past Events
 
 Previous CHERI Alliance events, with programmes, speakers, recordings, slides, and venue information where available.
-
-## Event archive
-
-Previous conferences, workshops, tutorials, and online sessions with their published programmes and supporting material.

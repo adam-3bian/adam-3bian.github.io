@@ -7368,7 +7368,7 @@
 - file: pages/alliance/leadership/governing-board.md
   url: /alliance/leadership/governing-board/
   title: Governing Board
-  page_type: Content Page (detail)
+  page_type: People (list)
   collection: pages
   navigation:
   - location: header
@@ -7409,7 +7409,7 @@
 - file: pages/alliance/leadership/working-groups.md
   url: /alliance/leadership/working-groups/
   title: Working Groups
-  page_type: Content Page (detail)
+  page_type: Groups (list)
   collection: pages
   navigation:
   - location: header
@@ -8119,6 +8119,7 @@
   navigation: []
   parent: /
   navigation_status: Outside header/footer navigation; retained at its existing route.
+  alternate: true
 - file: pages/guides.md
   url: /guides/
   title: Developer guides

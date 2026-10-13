@@ -16,7 +16,9 @@ related:
 
 # Alex Richardson
 
-Board role: Senior Software Engineer
+Board role
+: Senior Software Engineer
+{: .record-properties }
 
 ## Biography
 

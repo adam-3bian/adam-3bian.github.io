@@ -25,7 +25,9 @@ This working group has two overlapping goals:
 - To coordinate between CHERI C/C++ implementations to ensure portability.
 - To work with ISO WG14 and WG21 to ensure long-term alignment of the C and C++ standards with CHERI.
 
-Group type: Technical
+Group type
+: Technical
+{: .record-properties }
 
 ## Areas of collaboration
 

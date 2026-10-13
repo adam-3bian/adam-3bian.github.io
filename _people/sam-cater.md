@@ -15,7 +15,9 @@ related:
 
 # Sam Cater
 
-Board role: Cloud Infrastructure Research Manager
+Board role
+: Cloud Infrastructure Research Manager
+{: .record-properties }
 
 ## Biography
 

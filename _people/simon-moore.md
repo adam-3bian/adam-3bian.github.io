@@ -15,7 +15,9 @@ related:
 
 # Simon Moore
 
-Board role: Professor
+Board role
+: Professor
+{: .record-properties }
 
 ## Biography
 

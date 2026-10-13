@@ -17,7 +17,9 @@ related:
 
 # Adam Finney
 
-Board role: Community representative
+Board role
+: Community representative
+{: .record-properties }
 
 ## Biography
 

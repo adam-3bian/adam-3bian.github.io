@@ -12,6 +12,4 @@ listing:
 
 Alliance members contribute perspectives from processor design, software, research, product engineering, government, infrastructure, and open-source communities.
 
-## All members
-
 Founding members are marked on their cards, with the current membership tier shown on every profile.
