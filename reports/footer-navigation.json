@@ -1,0 +1,94 @@
+{
+  "groups": [
+    {
+      "title": "Updates",
+      "links": [
+        {
+          "title": "Latest News",
+          "url": "/news/"
+        },
+        {
+          "title": "Upcoming Events",
+          "url": "/news-and-events/events-and-archive/upcoming-events/"
+        },
+        {
+          "title": "Subscribe to our Newsletter",
+          "url": "/news-and-events/news-and-analysis/subscribe-newsletter/"
+        }
+      ]
+    },
+    {
+      "title": "CHERI Alliance",
+      "links": [
+        {
+          "title": "About the CHERI Alliance",
+          "url": "/organisations/cheri-alliance/"
+        },
+        {
+          "title": "Members",
+          "url": "/alliance/leadership/members/"
+        },
+        {
+          "title": "Working Groups",
+          "url": "/alliance/leadership/working-groups/"
+        },
+        {
+          "title": "Contact the Alliance",
+          "url": "/alliance/membership/contact/"
+        }
+      ]
+    },
+    {
+      "title": "Legal",
+      "links": [
+        {
+          "title": "Code of Conduct",
+          "url": "/policies/code-of-conduct/"
+        },
+        {
+          "title": "CHERI Trademark",
+          "url": "/policies/trademark/"
+        },
+        {
+          "title": "Privacy",
+          "url": "/policies/privacy/"
+        }
+      ]
+    },
+    {
+      "title": "Explore",
+      "links": [
+        {
+          "title": "People",
+          "url": "/people/"
+        },
+        {
+          "title": "Organisations",
+          "url": "/organisations/"
+        },
+        {
+          "title": "Hardware",
+          "url": "/hardware/"
+        },
+        {
+          "title": "Software",
+          "url": "/software/"
+        },
+        {
+          "title": "Papers",
+          "url": "/papers/"
+        }
+      ]
+    }
+  ],
+  "utilities": [
+    {
+      "title": "LinkedIn",
+      "url": "https://www.linkedin.com/company/cheri-alliance/"
+    },
+    {
+      "title": "Content audit",
+      "url": "/checks/"
+    }
+  ]
+}

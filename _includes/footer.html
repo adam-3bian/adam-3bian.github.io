@@ -1,0 +1,27 @@
+<footer class="site-footer">
+  <nav class="container footer-navigation" aria-label="Footer">
+    <ul class="footer-groups" role="list">
+      {% for group in site.navigation.footer %}
+      <li>
+        <strong class="footer-group-label">{{ group.title | escape }}</strong>
+        <ul role="list">
+          {% for link in group.links %}
+          <li><a href="{% include href.html url=link.url %}"{% if link.target == '_blank' %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ link.title | escape }}</a></li>
+          {% endfor %}
+        </ul>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+  <section class="container footer-bottom" aria-label="Site information">
+    <p class="footer-copyright">© {{ site.time | date: '%Y' }} {{ site.title | escape }}</p>
+    <nav class="footer-utilities" aria-label="Site and social links">
+      <ul role="list">
+        {% for link in site.navigation.social %}
+        <li><a href="{% include href.html url=link.url %}"{% if link.target == '_blank' %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ link.title | escape }}</a></li>
+        {% endfor %}
+        <li><a href="{{ '/checks/' | relative_url }}">Content audit</a></li>
+      </ul>
+    </nav>
+  </section>
+</footer>

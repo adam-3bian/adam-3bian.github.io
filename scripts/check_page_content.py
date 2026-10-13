@@ -74,7 +74,18 @@ documents = {p: Document(p.read_text()) for p in SITE.rglob('*.html')}
 ids = {p: {n.attrs['id'] for n in doc.nodes if 'id' in n.attrs} for p, doc in documents.items()}
 stats = {'html_files': len(documents), 'local_links': 0, 'local_images': 0,
          'metadata_panels': 0, 'resource_navigations': 0, 'legal_clauses': 0, 'redirects': 0,
-         'directories': 0, 'cards': 0, 'body_property_lists': 0, 'index_pages': 0, 'index_links': 0}
+         'directories': 0, 'cards': 0, 'body_property_lists': 0, 'index_pages': 0, 'index_links': 0,
+         'footers': 0, 'related_link_lists': 0}
+footer_navigation = json.loads((ROOT / 'reports/footer-navigation.json').read_text())
+
+
+def expected_links(links):
+    return [{'title': link['title'], 'url': BASEURL + link['url'] if link['url'].startswith('/') else link['url']} for link in links]
+
+
+def actual_links(doc, within):
+    return [{'title': node.text(), 'url': node.attrs.get('href')} for node in doc.nodes
+            if node.tag == 'a' and node.ancestor(lambda a: a is within)]
 
 
 def target_file(path):
@@ -91,6 +102,28 @@ def target_file(path):
 
 for file, doc in documents.items():
     route = '/' + str(file.relative_to(SITE))
+    footers = [n for n in doc.nodes if n.has_class('site-footer')]
+    if len(footers) != 1 or footers[0].tag != 'footer':
+        errors.append(f'{route}: missing shared semantic footer')
+    else:
+        footer = footers[0]
+        stats['footers'] += 1
+        group_lists = [n for n in doc.nodes if n.has_class('footer-groups') and n.ancestor(lambda a: a is footer)]
+        if len(group_lists) != 1 or group_lists[0].tag != 'ul':
+            errors.append(f'{route}: footer lacks column list semantics')
+        else:
+            groups = group_lists[0].children
+            labels = [n.text() for n in doc.nodes if n.has_class('footer-group-label') and n.ancestor(lambda a: a is footer)]
+            if len(groups) != len(footer_navigation['groups']) or labels != [g['title'] for g in footer_navigation['groups']]:
+                errors.append(f'{route}: footer groups differ from navigation configuration')
+            for group, expected in zip(groups, footer_navigation['groups']):
+                if group.tag != 'li' or [n.tag for n in group.children] != ['strong', 'ul'] or actual_links(doc, group) != expected_links(expected['links']):
+                    errors.append(f'{route}: footer links differ from navigation configuration')
+        utilities = [n for n in doc.nodes if n.has_class('footer-utilities') and n.ancestor(lambda a: a is footer)]
+        if len(utilities) != 1 or utilities[0].tag != 'nav' or actual_links(doc, utilities[0]) != expected_links(footer_navigation['utilities']):
+            errors.append(f'{route}: footer utility links missing or incorrect')
+        if any(n.tag in ('div', 'span', 'details', 'summary') and n.ancestor(lambda a: a is footer) for n in doc.nodes):
+            errors.append(f'{route}: unnecessary wrapper or hidden footer links')
     listings = [n for n in doc.nodes if n.has_class('listing')]
     if len(listings) > 1:
         errors.append(f'{route}: repeated collection directory')
@@ -110,6 +143,13 @@ for file, doc in documents.items():
         if card_list.tag != 'ul' or any(n.tag != 'li' for n in card_list.children):
             errors.append(f'{route}: card directory lacks list semantics')
     for node in doc.nodes:
+        if node.has_class('card'):
+            if node.tag != 'a' or not node.attrs.get('href') or any(n.tag in ('a', 'button', 'input', 'select', 'textarea', 'details') and n.ancestor(lambda a: a is node) for n in doc.nodes):
+                errors.append(f'{route}: card is not a single native link')
+        if node.has_class('link-grid'):
+            stats['related_link_lists'] += 1
+            if node.tag != 'ul' or node.attrs.get('role') != 'list' or any(n.tag != 'li' or len(n.children) != 1 or n.children[0].tag != 'a' for n in node.children):
+                errors.append(f'{route}: related links have extra labels or lack native list/link semantics')
         if node.tag == 'li' and node.parent.tag not in ('ul', 'ol', 'menu'):
             errors.append(f'{route}: list item without a parent list')
         if node.has_class('metadata'):

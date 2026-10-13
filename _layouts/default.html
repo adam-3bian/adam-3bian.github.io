@@ -16,12 +16,6 @@
   <a class="skip-link" href="#main">Skip to content</a>
   {% include header.html %}
   <main id="main" class="container main-container">{{ content }}</main>
-  <footer class="site-footer">
-    <div class="container">
-      <nav class="source-footer-nav" aria-label="Source footer navigation">{% include navigation.html items=site.navigation.footer %}</nav>
-      <p>Minimal Jekyll viewer · {{ site.data.checks.record_count }} source records · Built {{ site.time | date: '%d %B %Y' }}</p>
-      <a href="{{ '/checks/' | relative_url }}">View the content audit</a>
-    </div>
-  </footer>
+  {% include footer.html %}
 </body>
 </html>

@@ -7,9 +7,11 @@ const base = new URL(process.env.SITE_URL || 'http://127.0.0.1:4000/');
 const url = route => new URL(route.replace(/^\//, ''), base).href;
 const reportDir = 'reports/content-tests';
 fs.mkdirSync(reportDir, { recursive: true });
-const report = { widths: [1440, 1024, 768, 640, 375], layoutChecks: 0, accessibilityChecks: 0, redirects: 0, indexChecks: 0, noScriptIndexes: 0 };
+const report = { widths: [1440, 1024, 768, 640, 375], layoutChecks: 0, accessibilityChecks: 0, redirects: 0, indexChecks: 0, noScriptIndexes: 0, footerChecks: 0, footerAccessibilityChecks: 0, noScriptCards: 0, noScriptRelatedLinks: 0, noScriptFooter: 0 };
 const preflight = JSON.parse(fs.readFileSync('reports/preflight.json', 'utf8'));
 const indexes = JSON.parse(fs.readFileSync('reports/index-navigation.json', 'utf8'));
+const footer = JSON.parse(fs.readFileSync('reports/footer-navigation.json', 'utf8'));
+const cardRoutes = ['/people/', '/organisations/', '/news/', '/events/', '/papers/', '/hardware/', '/software/', '/guides/', '/policies/', '/alliance/leadership/working-groups/', '/alliance/leadership/governing-board/'];
 const groups = preflight.records.filter(r => r.collection === 'groups' && !r.alternate).map(r => r.url).sort();
 const board = fs.readFileSync('_data/governing-board.yml', 'utf8').split('\n').filter(l => l.startsWith('- ')).map(l => `/people/${l.slice(2)}/`);
 const routes = [
@@ -36,8 +38,11 @@ const routes = [
   '/news-and-events/people-and-opportunities/speakers/',
   '/organisations/3bian/',
   '/news/secure-and-resilient-systems-in-the-era-of-cra-and-iot/',
+  '/discover/resources/reports-and-white-papers/',
+  '/adopt/assurance-and-adoption/case-studies/',
+  ...cardRoutes,
   ...Object.keys(indexes),
-];
+].filter((route, index, all) => all.indexOf(route) === index);
 
 (async () => {
   const browser = await chromium.launch({ headless: true });
@@ -50,6 +55,17 @@ const routes = [
         const problems = await page.evaluate(() => {
           const errors = [];
           if (document.documentElement.scrollWidth > innerWidth + 1) errors.push('Horizontal overflow');
+          const footer = document.querySelector('.site-footer');
+          if (!footer || footer.querySelector('div, span, details, summary')) errors.push('Footer semantics or hidden links');
+          for (const link of document.querySelectorAll('.site-footer a, .link-grid a')) {
+            const rect = link.getBoundingClientRect();
+            if (rect.height < 44 || rect.left < 0 || rect.right > innerWidth) errors.push('Footer or related link touch target/containment');
+            if (link.closest('.link-grid')) {
+              const row = link.parentElement.getBoundingClientRect();
+              if (Math.abs(rect.width - row.width) > 1 || Math.abs(rect.height - row.height) > 1) errors.push('Related-link row is not fully clickable');
+            }
+          }
+          if (document.querySelector('.relationships small, .relationships div, .relationships span')) errors.push('Technical labels or wrappers in related content');
           for (const panel of document.querySelectorAll('.metadata')) {
             if (!panel.textContent.trim() || panel.textContent.trim() === 'Placeholder image') errors.push('Empty metadata');
             if (!panel.querySelector('dl > dt')) errors.push('Metadata without facts');
@@ -71,12 +87,14 @@ const routes = [
             if (innerWidth <= 640 && labelRect.bottom > rect.top + 1) errors.push('Mobile property does not stack');
             if (innerWidth > 640 && Math.abs(labelRect.top - rect.top) > 1) errors.push('Desktop property row does not align');
           }
-          for (const listing of document.querySelectorAll('.listing')) {
+          for (const listing of document.querySelectorAll('.cards')) {
             const cards = [...listing.querySelectorAll('.card')];
             const destinations = cards.map(c => c.href);
             if (new Set(destinations).size !== destinations.length) errors.push('Repeated directory cards');
             for (const card of cards) {
               const rect = card.getBoundingClientRect();
+              const item = card.parentElement.getBoundingClientRect();
+              if (card.tagName !== 'A' || Math.abs(rect.width - item.width) > 1 || Math.abs(rect.height - item.height) > 1) errors.push('Card does not have a full-area native link');
               if (rect.left < 0 || rect.right > innerWidth || card.scrollWidth > card.clientWidth + 1) errors.push('Card overflows');
               if (card.parentElement.tagName !== 'LI' || card.parentElement.parentElement.tagName !== 'UL') errors.push('Cards lack list semantics');
               if (card.querySelector('div, span, a, button, img[src$="placeholder.svg"]')) errors.push('Unnecessary or interactive card content');
@@ -91,6 +109,14 @@ const routes = [
         });
         assert.deepEqual(problems, [], `${width}px ${route}`);
         report.layoutChecks++;
+        const footerLinks = await page.locator('.footer-navigation a').evaluateAll(links => links.map(link => ({ title: link.textContent.trim(), href: link.href })));
+        assert.deepEqual(footerLinks, footer.groups.flatMap(group => group.links).map(link => ({ title: link.title, href: url(link.url) })), 'Footer must preserve configured links');
+        assert.deepEqual(await page.locator('.footer-group-label').allTextContents(), footer.groups.map(group => group.title));
+        assert.deepEqual(await page.locator('.footer-utilities a').evaluateAll(links => links.map(link => ({ title: link.textContent.trim(), href: link.href }))), footer.utilities.map(link => ({ title: link.title, href: url(link.url) })));
+        assert.equal(await page.locator('.footer-groups').evaluate(list => getComputedStyle(list).gridTemplateColumns.split(' ').length), width <= 640 ? 1 : width < 1024 ? 2 : 4, 'Footer column layout');
+        report.footerChecks++;
+        if (route === '/') await page.locator('.site-footer').screenshot({ path: path.join(reportDir, `footer-${width}.png`) });
+        if (route === '/adopt/assurance-and-adoption/case-studies/') await page.locator('.relationships').screenshot({ path: path.join(reportDir, `related-links-${width}.png`) });
         if (indexes[route]) {
           const expected = indexes[route];
           assert.equal(await page.locator('main h1').count(), 1, 'Index has one title');
@@ -155,11 +181,12 @@ const routes = [
         }
         if (width === 1440 && process.env.AXE_PATH) {
           await page.addScriptTag({ path: process.env.AXE_PATH });
-          const violations = await page.evaluate(async () => (await axe.run('main', {
+          const violations = await page.evaluate(async () => (await axe.run(['main', '.site-footer'], {
             runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21aa'] },
           })).violations.map(v => ({ id: v.id, impact: v.impact, nodes: v.nodes.map(n => ({ target: n.target, summary: n.failureSummary })) })));
           assert.deepEqual(violations, [], route);
           report.accessibilityChecks++;
+          report.footerAccessibilityChecks++;
         }
       }
     }
@@ -184,14 +211,39 @@ const routes = [
       report.redirects++;
     }
     // Card navigation uses ordinary links, including keyboard use without JS.
-    for (const route of ['/alliance/leadership/working-groups/', '/alliance/leadership/governing-board/']) {
-      await plain.goto(url(route));
-      const first = plain.locator('.listing .card').first();
-      const target = await first.getAttribute('data-record-url');
-      await first.focus();
+    for (const width of [1440, 375]) {
+      await plain.setViewportSize({ width, height: 900 });
+      for (const route of cardRoutes) {
+        await plain.goto(url(route));
+        const first = plain.locator('.card').first();
+        const target = await first.getAttribute('data-record-url');
+        const box = await first.boundingBox();
+        // Click empty bottom-right padding, then verify keyboard activation too.
+        await first.click({ position: { x: box.width - 8, y: box.height - 8 } });
+        await plain.waitForURL(url(target));
+        assert.equal(await plain.locator('main h1').count(), 1, 'Card padding must open a complete profile');
+        await plain.goto(url(route));
+        await plain.keyboard.press('Tab');
+        await first.focus();
+        assert.equal(await first.evaluate(link => getComputedStyle(link).outlineStyle !== 'none' && parseFloat(getComputedStyle(link).outlineWidth) >= 2), true, 'Visible card keyboard focus');
+        await plain.keyboard.press('Enter');
+        await plain.waitForURL(url(target));
+        report.noScriptCards++;
+      }
+      await plain.goto(url('/adopt/assurance-and-adoption/case-studies/'));
+      const related = plain.locator('.link-grid a').first();
+      const relatedTarget = new URL(await related.getAttribute('href'), plain.url()).href;
+      const relatedBox = await related.boundingBox();
+      await related.click({ position: { x: relatedBox.width - 8, y: relatedBox.height - 8 } });
+      await plain.waitForURL(relatedTarget);
+      report.noScriptRelatedLinks++;
+      await plain.goto(url('/'));
+      assert.equal(await plain.locator('.footer-navigation a').count(), footer.groups.flatMap(group => group.links).length, 'All footer links available without JS');
+      const footerLink = plain.locator('.footer-navigation a').first();
+      await footerLink.focus();
       await plain.keyboard.press('Enter');
-      await plain.waitForURL(url(target));
-      assert.equal(await plain.locator('main h1').count(), 1, 'Card must open a complete profile');
+      await plain.waitForURL(url(footer.groups[0].links[0].url));
+      report.noScriptFooter++;
     }
     for (const [route, expected] of Object.entries(indexes)) {
       await plain.goto(url(route));

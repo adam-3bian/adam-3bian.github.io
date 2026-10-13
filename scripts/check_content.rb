@@ -310,6 +310,14 @@ File.write(File.join(root, '_data/checks.yml'), YAML.dump(report))
 File.write(File.join(root, '_data/relationships.yml'), YAML.dump(relation_data))
 FileUtils.mkdir_p(File.join(root, 'reports'))
 File.write(File.join(root, 'reports/index-navigation.json'), JSON.pretty_generate(index_pages) + "\n")
+footer_navigation = {
+  'groups' => Array(config.dig('navigation', 'footer')).map do |group|
+    {'title' => group['title'], 'links' => Array(group['links']).map { |link| link.slice('title', 'url') }}
+  end,
+  'utilities' => Array(config.dig('navigation', 'social')).map { |link| link.slice('title', 'url') } +
+    [{'title' => 'Content audit', 'url' => '/checks/'}]
+}
+File.write(File.join(root, 'reports/footer-navigation.json'), JSON.pretty_generate(footer_navigation) + "\n")
 File.write(File.join(root, 'reports/preflight.json'), JSON.pretty_generate(report) + "\n")
 File.write(File.join(root, 'reports/relationship-edges.json'), JSON.pretty_generate(edges) + "\n")
 puts JSON.generate({'records' => records.length, 'relationships' => edges.length, 'images' => images.length, 'errors' => errors.uniq})

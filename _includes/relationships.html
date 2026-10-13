@@ -1,1 +1,14 @@
-{% assign relation_groups = site.data.relationships[page.url] %}{% if relation_groups.size > 0 %}<section class="relationships" aria-labelledby="relationships"><h2 id="relationships">Linked records</h2>{% for group in relation_groups %}<h3>{{ group.label | escape }}</h3><ul class="link-grid">{% for target in group.targets %}<li><a href="{{ target.url | relative_url }}">{{ target.title | escape }}</a><small class="small">{{ target.type | escape }}</small></li>{% endfor %}</ul>{% endfor %}</section>{% endif %}
+{% assign relation_groups = site.data.relationships[page.url] %}
+{% if relation_groups.size > 0 %}
+<section class="relationships" aria-labelledby="relationships">
+  <h2 id="relationships">Related content</h2>
+  {% for group in relation_groups %}
+  <h3>{{ group.label | escape }}</h3>
+  <ul class="link-grid" role="list">
+    {% for target in group.targets %}
+    <li><a href="{{ target.url | relative_url }}">{{ target.title | escape }}</a></li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+</section>
+{% endif %}
