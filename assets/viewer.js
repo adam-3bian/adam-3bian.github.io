@@ -32,7 +32,7 @@
   const selector = 'img.image-left, img.image-right, img.image-full, figure.image-left img, figure.image-right img, figure.image-full img, .image-gallery img';
   const excluded = 'a, button, label, summary, [role="button"], [role="link"], [aria-hidden="true"], [data-no-image-viewer], .cards, .logo-gallery, .portrait-gallery, .record-gallery, .image-logo, .image-icon, .lead-image';
   const articles = [...document.querySelectorAll('article .article-content')].map(article =>
-    [...article.querySelectorAll(selector)].filter(image => !image.closest(excluded) && !['none', 'presentation'].includes(image.getAttribute('role')))
+    [...article.querySelectorAll(selector)].filter(image => !image.closest(excluded) && !image.getAttribute('src')?.endsWith('/placeholder.svg') && !['none', 'presentation'].includes(image.getAttribute('role')))
   ).filter(images => images.length);
   if (!articles.length) return;
 

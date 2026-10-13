@@ -1,6 +1,6 @@
 ---
 title: Munraj Vadera
-image_url: null
+image_url: /assets/people/munraj-vadera/placeholder.svg
 website_url: null
 is_speaker: null
 social:
@@ -13,3 +13,7 @@ related:
 ---
 
 # Munraj Vadera
+
+## Publications
+
+- [CHERI: A Hybrid Capability-System Architecture for Scalable Software Compartmentalization](/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/)

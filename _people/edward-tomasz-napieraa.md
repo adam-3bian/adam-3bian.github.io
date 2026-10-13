@@ -1,6 +1,6 @@
 ---
 title: Edward Tomasz Napierała
-image_url: null
+image_url: /assets/people/edward-tomasz-napieraa/placeholder.svg
 website_url: null
 is_speaker: null
 social:
@@ -13,3 +13,8 @@ related:
 ---
 
 # Edward Tomasz Napierała
+
+## Publications
+
+- [Cornucopia: Temporal Safety for CHERI Heaps](/papers/cornucopia-temporal-safety-for-cheri-heaps/)
+- [Deprivileging Low-Level GPU Drivers Efficiently with User-Space Processes and CHERI Compartments](/papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/)

@@ -1,5 +1,6 @@
 ---
 title: Policy Briefings
+image_url: /assets/policies/policy-briefings/placeholder.svg
 author: null
 ---
 
@@ -21,7 +22,7 @@ This makes CHERI relevant to a portfolio of memory-safety measures rather than a
 
 ## Briefing: adoption depends on an ecosystem
 
-A processor feature becomes useful in products through toolchains, operating systems, libraries, runtimes, debugging, training, test platforms, and assurance. CHERI’s path from research through Morello, CheriBSD, CHERIoT, RISC-V work, and commercial processor intellectual property shows that these surrounding layers are developing together.
+A processor feature becomes useful in products through toolchains, operating systems, libraries, runtimes, debugging, training, test platforms, and assurance. CHERI’s path from research through [Morello](/hardware/morello/), [CheriBSD](/software/cheribsd/), [CHERIoT](/hardware/cheriot/), RISC-V work, and commercial processor intellectual property shows that these surrounding layers are developing together.
 
 Shared specifications, open software, compliance tests, and available development platforms reduce the amount of work repeated by each adopter. Commercial products and public certification records make the technology easier to compare with a real product need.
 
@@ -43,13 +44,10 @@ For essential services, fault response remains part of the result. A capability 
 
 The strongest policy case appears where four conditions meet:
 
-memory-unsafe software remains necessary;
-
-that software processes untrusted data or operates with significant authority;
-
-replacing it or placing it behind heavyweight isolation is impractical;
-
-the consequence of compromise extends beyond the component itself.
+- memory-unsafe software remains necessary;
+- that software processes untrusted data or operates with significant authority;
+- replacing it or placing it behind heavyweight isolation is impractical;
+- the consequence of compromise extends beyond the component itself.
 
 In those circumstances, CHERI offers a practical bridge between today’s software and stronger secure-by-design expectations. It can preserve valuable low-level code while changing what that code is permitted to access and how far a compromise can travel.
 

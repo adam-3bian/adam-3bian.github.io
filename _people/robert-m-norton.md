@@ -1,6 +1,6 @@
 ---
 title: Robert M. Norton
-image_url: null
+image_url: /assets/people/robert-m-norton/placeholder.svg
 website_url: null
 is_speaker: null
 social:
@@ -13,3 +13,11 @@ related:
 ---
 
 # Robert M. Norton
+
+## Publications
+
+- [CHERI: A Hybrid Capability-System Architecture for Scalable Software Compartmentalization](/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/)
+- [CHERI Concentrate: Practical Compressed Capabilities](/papers/cheri-concentrate-practical-compressed-capabilities/)
+- [CHERIoT: Complete Memory Safety for Embedded Devices](/papers/cheriot-complete-memory-safety-for-embedded-devices/)
+- [Rigorous Engineering for Hardware Security: Formal Modelling and Proof in the CHERI Design and Implementation Process](/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/)
+- [The CHERI Capability Model: Revisiting RISC in an Age of Risk](/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/)

@@ -20,7 +20,7 @@ A Russell Group university with a strong sense of civic mission.
 
 ## CHERI Activities
 
-Engagement with the Digital Security by Design UKRI research projects. Contributions to open source codebases with CHERI extensions, including multiple language runtimes and virtual machines.
+Engagement with the Digital Security by Design [UKRI](/organisations/ukri/) research projects. Contributions to open source codebases with CHERI extensions, including multiple language runtimes and virtual machines.
 
 ## Open-source Assets for CHERI
 

@@ -1,6 +1,6 @@
 ---
 title: CHERI Alliance
-image_url: null
+image_url: /assets/organisations/cheri-alliance/placeholder.svg
 website_url: null
 membership_tier: null
 is_founding_member: null
@@ -34,25 +34,19 @@ Members contribute expertise and requirements, share work where collaboration is
 
 The Alliance accelerates CHERI adoption by:
 
-connecting the ecosystem through events, workshops, and conferences
-
-coordinating technical collaboration through working groups
-
-supporting the development of shared software, guidance, standards and resources, and making them openly available wherever practical
-
-promoting alignment across instruction-set architectures and platforms
-
-providing education and outreach for technical and non-technical audiences
-
-operating the CHERI Enabled programme
-
-representing the interests of a growing commercial and open-source ecosystem
+- connecting the ecosystem through events, workshops, and conferences
+- coordinating technical collaboration through working groups
+- supporting the development of shared software, guidance, standards and resources, and making them openly available wherever practical
+- promoting alignment across instruction-set architectures and platforms
+- providing education and outreach for technical and non-technical audiences
+- operating the CHERI Enabled programme
+- representing the interests of a growing commercial and open-source ecosystem
 
 ## How the Alliance fits into the ecosystem
 
 The Alliance supports collaboration, technical exchange, education, and adoption across the CHERI ecosystem. Product vendors, standards bodies, governments, and research organisations continue to own their own technologies, priorities, and decisions.
 
-The Alliance works closely with partners across the ecosystem, including the CHERI Research Centre and The Capable Hub. Learn more about how we accelerate CHERI together.
+The Alliance works closely with partners across the ecosystem, including the CHERI Research Centre and [The Capable Hub](/organisations/the-capable-hub/). Learn more about how we accelerate CHERI together.
 
 ## Find us on the Web
 
@@ -64,4 +58,6 @@ The CHERI Alliance is an independent, non-profit organisation, organised as a UK
 
 Administrative details:
 
-| --- | --- | | Legal address: | Salisbury House, Station Road, Cambridge CB1 2LA, United Kingdom | | Company number: | 15516512 | | Company directors: | Mike Eftimakis, Robert Watson, Mike Halsall, Gavin Ferris |
+| --- | ---
+
+| | Legal address: | Salisbury House, Station Road, Cambridge CB1 2LA, United Kingdom | | Company number: | 15516512 | | Company directors: | [Mike Eftimakis](/people/mike-eftimakis/), [Robert Watson](/people/robert-watson/), [Mike Halsall](/people/mike-halsall/), [Gavin Ferris](/people/gavin-ferris/) |

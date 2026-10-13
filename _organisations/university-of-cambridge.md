@@ -12,11 +12,9 @@ social:
 
 # University of Cambridge
 
-University of Cambridge is one of the top ten universities in the world. University of Cambridge and SRI International started working on CHERI in 2010 and have broadened the collaboration to many industry and academic partners as this novel security…
-
 ## Description
 
-University of Cambridge is one of the top ten universities in the world. University of Cambridge and SRI International started working on CHERI in 2010 and have broadened the collaboration to many industry and academic partners as this novel security technology is deployed.
+University of Cambridge is one of the top ten universities in the world. University of Cambridge and [SRI International](/organisations/sri/) started working on CHERI in 2010 and have broadened the collaboration to many industry and academic partners as this novel security technology is deployed.
 
 ## CHERI Activities
 

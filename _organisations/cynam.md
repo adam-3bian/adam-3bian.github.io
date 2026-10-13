@@ -12,11 +12,9 @@ social:
 
 # CyNam
 
-CyNam is Cheltenham’s hub for cyber security and technology – connecting diverse minds to enable secure innovation and growth. We are the DSIT and UKC3 recognised cyber cluster for Cheltenham and Gloucestershire. CyNam is a network that connects…
-
 ## Description
 
-CyNam is Cheltenham’s hub for cyber security and technology – connecting diverse minds to enable secure innovation and growth. We are the DSIT and UKC3 recognised cyber cluster for Cheltenham and Gloucestershire. CyNam is a network that connects start-ups, investors, government, businesses, and academia to foster an environment for collaboration, knowledge sharing and innovation. CyNam offers people and organisations access to resources, partnerships and knowledge to succeed. Together, we’re building a secure digital future that addresses global challenges and drives economic growth.
+CyNam is Cheltenham’s hub for cyber security and technology – connecting diverse minds to enable secure innovation and growth. We are the [DSIT](/organisations/dsit/) and UKC3 recognised cyber cluster for Cheltenham and Gloucestershire. CyNam is a network that connects start-ups, investors, government, businesses, and academia to foster an environment for collaboration, knowledge sharing and innovation. CyNam offers people and organisations access to resources, partnerships and knowledge to succeed. Together, we’re building a secure digital future that addresses global challenges and drives economic growth.
 
 ## CHERI Activities
 

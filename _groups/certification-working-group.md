@@ -1,11 +1,13 @@
 ---
 title: ✅ Certification WG
-image_url: null
-website_url: null
+image_url: /assets/groups/certification-working-group/bb889a4dc09e-cheri-alliance-working-groups.png
+website_url: https://cheri-alliance.org/who-we-are/working-groups/certification-program/
 repository_urls: []
-lead: null
+leads:
+- mike-eftimakis
 related:
-  organisations: []
+  organisations:
+  - cheri-alliance
   hardware: []
   software: []
 ---
@@ -16,9 +18,8 @@ Develops shared thinking around certification criteria, assurance needs, evidenc
 
 The Certification Program Working Group is responsible for defining the CHERI Enabled program for CHERI products:
 
-Guidelines – We define the guidelines and rules that products must follow to be certified. This includes setting the standards and criteria that products need to meet
-
-Processes – We outline the processes and conditions necessary for product approval. This involves creating a structured pathway that products must go through to achieve certification
+- Guidelines – We define the guidelines and rules that products must follow to be certified. This includes setting the standards and criteria that products need to meet
+- Processes – We outline the processes and conditions necessary for product approval. This involves creating a structured pathway that products must go through to achieve certification
 
 Support – We provide support to assist companies in certifying their products. This support can come in various forms, including documents, test suites, or any other relevant deliverables that facilitate the certification process
 
@@ -30,12 +31,12 @@ The group aims to continuously improve the certification program. This involves 
 
 Overall, the working group plays a crucial role in ensuring the compliance and compatibility of certified CHERI products to make sure that users can trust the CHERI logo to guarantee a correct implementation of the technology.
 
-## Resources
+## Group information
 
 Group type: Programme and ecosystem
 
-Areas of collaboration: Certification criteria
+## Areas of collaboration
 
-Evidence and assurance needs
-
-Programme development
+- Certification criteria
+- Evidence and assurance needs
+- Programme development

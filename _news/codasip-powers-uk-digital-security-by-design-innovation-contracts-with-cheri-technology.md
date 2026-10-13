@@ -1,22 +1,27 @@
 ---
 title: Codasip Powers UK Digital Security by Design Innovation Contracts with CHERI Technology
-image_url: /assets/shared/source-assets/5a6300ace656-cheri.png
+image_url: /assets/news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology/5a6300ace656-cheri.png
 published_date: '2025-12-10'
 authors:
 - andrew-lindsay
 related:
   groups: []
-  organisations: []
+  organisations:
+  - sci-semiconductor
+  - cheri-alliance
+  - ensilica
+  - codasip
+  - lowrisc
+  - dsit
   hardware: []
-  software: []
+  software:
+  - cheri-linux
   papers: []
 ---
 
 # Codasip Powers UK Digital Security by Design Innovation Contracts with CHERI Technology
 
-Andrew Lindsay – Codasip Codasip’s CHERI-RISC-V processors and exploration kit enable breakthrough secure chip development and accelerate software innovation The UK government’s ambitious Digital Security by Design initiative continues to gain…
-
-Codasip
+[Codasip](/organisations/codasip/)
 
 Codasip’s CHERI-RISC-V processors and exploration kit enable breakthrough secure chip development and accelerate software innovation
 
@@ -24,7 +29,7 @@ The UK government’s ambitious Digital Security by Design initiative continues 
 
 ## EnSilica Partnership Delivers Quantum-Resilient Security Chip
 
-EnSilica has been awarded a £5 million ‘Contract for Innovation’ by the UK Government’s Department for Science, Innovation and Technology (DSIT) to develop a quantum-resilient secure processor chip for critical national infrastructure applications. At the heart of this groundbreaking development is Codasip‘s CHERI-RISC-V CPU technology.
+[EnSilica](/organisations/ensilica/) has been awarded a £5 million ‘Contract for Innovation’ by the UK Government’s Department for Science, Innovation and Technology ([DSIT](/organisations/dsit/)) to develop a quantum-resilient secure processor chip for critical national infrastructure applications. At the heart of this groundbreaking development is Codasip‘s CHERI-RISC-V CPU technology.
 
 Following their strategic partnership announced in September 2025, Codasip is supplying its leading-edge 32-bit and 64-bit CHERI-RISC-V CPUs to EnSilica. EnSilica will use Codasip‘s portfolio of CHERI RISC-V processors as the foundation for developing customer-specific System-on-Chip (SoC) integrated circuits.
 
@@ -42,25 +47,21 @@ Based on commercially available IP, Codasip Prime enables advanced development o
 
 The kit features:
 
-A high-performance FPGA system based on the Codasip X730 64-bit RISC-V CHERI Application CPU
-
-Security IP for secure boot and secure debug, including True Random Number Generator and a Test Access Port Protection Unit
-
-CHERI-specific IP for capability tag management for DDR memory
-
-CHERI Linux capability-only (purecap) kernel and userspace
-
-Complete CHERI Software Development Kit with a CHERI C/C++ tool chain including compiler and debugger, Secure Boot, and a QEMU virtual platform that matches the FPGA
+- A high-performance FPGA system based on the Codasip X730 64-bit RISC-V CHERI Application CPU
+- Security IP for secure boot and secure debug, including True Random Number Generator and a Test Access Port Protection Unit
+- CHERI-specific IP for capability tag management for DDR memory
+- [CHERI Linux](/software/cheri-linux/) capability-only (purecap) kernel and userspace
+- Complete CHERI Software Development Kit with a CHERI C/C++ tool chain including compiler and debugger, Secure Boot, and a QEMU virtual platform that matches the FPGA
 
 “Codasip Prime allows software developers to create and evaluate their applications before chips are built,” explained Jamie Broome, Codasip’s chief product officer. “In addition to hardware IP and software, we offer engineering support from our CHERI experts.”
 
 ## Advancing the CHERI Ecosystem
 
-Codasip is a founding member of the CHERI Alliance, whose engineers have played a key role in defining the CHERI-RISC-V specification, and whose embedded cores have earned industry recognition.
+Codasip is a founding member of the [CHERI Alliance](/organisations/cheri-alliance/), whose engineers have played a key role in defining the CHERI-RISC-V specification, and whose embedded cores have earned industry recognition.
 
 The company’s processors are developed in line with ISO 26262 functional safety and ISO 21434 cybersecurity standards, and come with a complete ecosystem including CHERI toolchain, CHERI Linux, and CHERI RTOSes.
 
-The UK government has allocated £21 million to advance hardware-based cybersecurity technology designed to counter up to 70% of common cyberattacks through the CHERI security architecture. Almost £15 million is being distributed via the Advancing CHERI RISC-V Devices competition to three companies: EnSilica, SCI Semiconductor, and lowRISC.
+The UK government has allocated £21 million to advance hardware-based cybersecurity technology designed to counter up to 70% of common cyberattacks through the CHERI security architecture. Almost £15 million is being distributed via the Advancing CHERI RISC-V Devices competition to three companies: EnSilica, [SCI Semiconductor](/organisations/sci-semiconductor/), and [lowRISC](/organisations/lowrisc/).
 
 ## About CHERI Technology
 

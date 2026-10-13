@@ -1046,8 +1046,7 @@
   parent: /news/
 - file: _news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level.md
   url: /news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level/
-  title: CHERI Alliance Officially Launches, Adds Major Partners including Google, to Tackle Cybersecurity
-    Threats at the Hardware Level
+  title: CHERI Alliance Officially Launches, Adds Major Partners including Google, to Tackle Cybersecurity Threats at the Hardware Level
   page_type: News Article (detail)
   collection: news
   navigation:
@@ -1056,16 +1055,14 @@
     - News & Events
     - News & Analysis
     - Latest News
-    - CHERI Alliance Officially Launches, Adds Major Partners including Google, to Tackle Cybersecurity Threats
-      at the Hardware Level
+    - CHERI Alliance Officially Launches, Adds Major Partners including Google, to Tackle Cybersecurity Threats at the Hardware Level
     via_url: /news-and-events/news-and-analysis/latest-news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
-    - CHERI Alliance Officially Launches, Adds Major Partners including Google, to Tackle Cybersecurity Threats
-      at the Hardware Level
+    - CHERI Alliance Officially Launches, Adds Major Partners including Google, to Tackle Cybersecurity Threats at the Hardware Level
     via_url: /news-and-events/news-and-analysis/latest-news/
     match: collection
   parent: /news/
@@ -1582,8 +1579,7 @@
   parent: /news/
 - file: _news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support-original.md
   url: /news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support-original/
-  title: lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure Enclave with InnovateUK
-    Support
+  title: lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure Enclave with InnovateUK Support
   page_type: News Article (detail)
   collection: news
   navigation:
@@ -1592,24 +1588,21 @@
     - News & Events
     - News & Analysis
     - Latest News
-    - lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure Enclave with InnovateUK
-      Support
+    - lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure Enclave with InnovateUK Support
     via_url: /news-and-events/news-and-analysis/latest-news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
-    - lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure Enclave with InnovateUK
-      Support
+    - lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure Enclave with InnovateUK Support
     via_url: /news-and-events/news-and-analysis/latest-news/
     match: collection
   parent: /news/
   alternate: true
 - file: _news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support.md
   url: /news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support/
-  title: lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure Enclave with InnovateUK
-    Support
+  title: lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure Enclave with InnovateUK Support
   page_type: News Article (detail)
   collection: news
   navigation:
@@ -1618,16 +1611,14 @@
     - News & Events
     - News & Analysis
     - Latest News
-    - lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure Enclave with InnovateUK
-      Support
+    - lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure Enclave with InnovateUK Support
     via_url: /news-and-events/news-and-analysis/latest-news/
     match: collection
   - location: footer
     path:
     - Updates
     - Latest News
-    - lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure Enclave with InnovateUK
-      Support
+    - lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure Enclave with InnovateUK Support
     via_url: /news-and-events/news-and-analysis/latest-news/
     match: collection
   parent: /news/
@@ -4398,8 +4389,7 @@
   parent: /papers/
 - file: _papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p.md
   url: /papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/
-  title: 'CheriABI: Enforcing Valid Pointer Provenance and Minimizing Pointer Privilege in the POSIX C Run-time
-    Environment'
+  title: 'CheriABI: Enforcing Valid Pointer Provenance and Minimizing Pointer Privilege in the POSIX C Run-time Environment'
   page_type: Paper (detail)
   collection: papers
   navigation:
@@ -4408,16 +4398,14 @@
     - Discover CHERI
     - Resources
     - Papers and authors
-    - 'CheriABI: Enforcing Valid Pointer Provenance and Minimizing Pointer Privilege in the POSIX C Run-time
-      Environment'
+    - 'CheriABI: Enforcing Valid Pointer Provenance and Minimizing Pointer Privilege in the POSIX C Run-time Environment'
     via_url: /papers/
     match: collection
   - location: footer
     path:
     - Explore
     - Papers
-    - 'CheriABI: Enforcing Valid Pointer Provenance and Minimizing Pointer Privilege in the POSIX C Run-time
-      Environment'
+    - 'CheriABI: Enforcing Valid Pointer Provenance and Minimizing Pointer Privilege in the POSIX C Run-time Environment'
     via_url: /papers/
     match: collection
   parent: /papers/
@@ -4577,8 +4565,7 @@
   parent: /papers/
 - file: _papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md
   url: /papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/
-  title: 'Rigorous Engineering for Hardware Security: Formal Modelling and Proof in the CHERI Design and Implementation
-    Process'
+  title: 'Rigorous Engineering for Hardware Security: Formal Modelling and Proof in the CHERI Design and Implementation Process'
   page_type: Paper (detail)
   collection: papers
   navigation:
@@ -4587,16 +4574,14 @@
     - Discover CHERI
     - Resources
     - Papers and authors
-    - 'Rigorous Engineering for Hardware Security: Formal Modelling and Proof in the CHERI Design and Implementation
-      Process'
+    - 'Rigorous Engineering for Hardware Security: Formal Modelling and Proof in the CHERI Design and Implementation Process'
     via_url: /papers/
     match: collection
   - location: footer
     path:
     - Explore
     - Papers
-    - 'Rigorous Engineering for Hardware Security: Formal Modelling and Proof in the CHERI Design and Implementation
-      Process'
+    - 'Rigorous Engineering for Hardware Security: Formal Modelling and Proof in the CHERI Design and Implementation Process'
     via_url: /papers/
     match: collection
   parent: /papers/
@@ -8938,3 +8923,45 @@
   navigation: []
   parent: /
   navigation_status: Outside header/footer navigation; retained at its existing route.
+- file: _people/oliver-gray.md
+  url: /people/oliver-gray/
+  title: Oliver Gray
+  page_type: Person (detail)
+  collection: people
+  navigation: []
+  parent: /people/
+- file: _people/maricel-ventura.md
+  url: /people/maricel-ventura/
+  title: Maricel Ventura
+  page_type: Person (detail)
+  collection: people
+  navigation: []
+  parent: /people/
+- file: _people/thierno-sene.md
+  url: /people/thierno-sene/
+  title: Thierno Sene
+  page_type: Person (detail)
+  collection: people
+  navigation: []
+  parent: /people/
+- file: _people/sarah-harris.md
+  url: /people/sarah-harris/
+  title: Sarah Harris
+  page_type: Person (detail)
+  collection: people
+  navigation: []
+  parent: /people/
+- file: _organisations/3bian.md
+  url: /organisations/3bian/
+  title: 3bian
+  page_type: Organisation (detail)
+  collection: organisations
+  navigation: []
+  parent: /organisations/
+- file: _groups/cheri-research.md
+  url: /groups/cheri-research/
+  title: CHERI Research WG
+  page_type: Working group (detail)
+  collection: groups
+  navigation: []
+  parent: /groups/

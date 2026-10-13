@@ -1,11 +1,13 @@
 ---
 title: 🆓 CHERI FreeRTOS WG
-image_url: null
-website_url: null
+image_url: /assets/groups/cheri-freertos/bb889a4dc09e-cheri-alliance-working-groups.png
+website_url: https://cheri-alliance.org/who-we-are/working-groups/cheri-freertos/
 repository_urls: []
-lead: null
+leads:
+- oliver-gray
 related:
-  organisations: []
+  organisations:
+  - codasip
   hardware: []
   software: []
 ---
@@ -18,8 +20,8 @@ The FreeRTOS Working Group aims to provide a common ground for CHERI-based solut
 
 Group type: Technical
 
-Areas of collaboration: FreeRTOS platform support
+## Areas of collaboration
 
-Compartments and interfaces
-
-Embedded testing and portability
+- FreeRTOS platform support
+- Compartments and interfaces
+- Embedded testing and portability

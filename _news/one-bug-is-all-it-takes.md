@@ -8,7 +8,8 @@ related:
   groups: []
   organisations: []
   hardware: []
-  software: []
+  software:
+  - freebsd
   papers: []
 ---
 
@@ -18,9 +19,8 @@ In 2025 alone, global cybercrime costs reached an estimated $1.2 billion every m
 
 This article is part of a series of blogs published after the announcement of Mythos vulnerabilities’ exploitation capabilities. The views from other experts on this topic are:
 
-AI has compressed the attack timeline – Mike Eftimakis
-
-CHERI memory safety mitigates LLM-discovered vulnerability in FreeBSD – Brooks Davis
+- AI has compressed the attack timeline – [Mike Eftimakis](/people/mike-eftimakis/)
+- CHERI memory safety mitigates LLM-discovered vulnerability in [FreeBSD](/software/freebsd/) – [Brooks Davis](/people/brooks-davis/)
 
 For many years, automated tools that scan software for defects have played a central role in improving system security. A major early effort in this space was a U.S. Department of Homeland Security funded initiative that used Coverity’s static analysis technology to examine widely used open source software projects. This work analysed over 150 projects, including 53 in detail, and led to the discovery and remediation of approximately 6,000 defects across those codebases. It demonstrated that large numbers of previously unknown flaws existed even in widely deployed software, many of which represented potential security risks.
 
@@ -40,14 +40,13 @@ There is also a fundamental asymmetry between defenders and attackers. Developer
 
 Further reading:
 
-AI has compressed the attack timeline
+- AI has compressed the attack timeline
+- LinkedIn article from [David Chisnall](/people/david-chisnall/)
 
-LinkedIn article from David Chisnall
+<https://arxiv.org/pdf/2101.08832>
 
-https://arxiv.org/pdf/2101.08832
+<https://download.101com.com/pub/gcn/newspics/Coverity_OpenSourceReport2008.pdf>
 
-https://download.101com.com/pub/gcn/newspics/Coverity\_OpenSourceReport2008.pdf
+<https://www.theregister.com/2009/09/25/open_source_code_audit>
 
-https://www.theregister.com/2009/09/25/open\_source\_code\_audit
-
-https://www.cs.cmu.edu/\~aldrich/courses/654-sp07/tools/cure-coverity-06.pdf
+<https://www.cs.cmu.edu/\~aldrich/courses/654-sp07/tools/cure-coverity-06.pdf>

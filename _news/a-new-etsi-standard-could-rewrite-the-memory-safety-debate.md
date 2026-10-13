@@ -8,13 +8,12 @@ related:
   groups: []
   organisations: []
   hardware: []
-  software: []
+  software:
+  - rust
   papers: []
 ---
 
 # A new ETSI standard could rewrite the memory-safety debate
-
-Mike Eftimakis – CHERI Alliance ETSI TS 104 198 establishes a common language for memory safety Memory-safety vulnerabilities remain one of the largest sources of critical software vulnerabilities. Despite years of investment in safer languages…
 
 Memory-safety vulnerabilities remain one of the largest sources of critical software vulnerabilities. Despite years of investment in safer languages, hardware protections, and secure development practices, the industry has lacked a common way to define and compare memory-safety technologies.
 
@@ -24,23 +23,17 @@ ETSI (the European Telecommunications Standards Institute) develops globally rec
 
 ## Why It Matters
 
-Today, organisations improve memory safety in many ways: memory-safe languages such as Rust and Java, hardware technologies such as CHERI and Arm MTE, formal verification, and secure development practices. Comparing these approaches has been difficult because there has been no shared vocabulary or evaluation framework.
+Today, organisations improve memory safety in many ways: memory-safe languages such as [Rust](/software/rust/) and Java, hardware technologies such as CHERI and Arm MTE, formal verification, and secure development practices. Comparing these approaches has been difficult because there has been no shared vocabulary or evaluation framework.
 
 The ETSI specification addresses this by defining memory safety as a collection of measurable properties, including:
 
-Reference safety
-
-Spatial safety
-
-Temporal safety
-
-Initialization safety
-
-Finalization safety
-
-Concurrency-safe memory safety
-
-Type-safe memory safety
+- Reference safety
+- Spatial safety
+- Temporal safety
+- Initialization safety
+- Finalization safety
+- Concurrency-safe memory safety
+- Type-safe memory safety
 
 Rather than asking whether a technology is simply “memory safe”, the framework enables discussion of which properties it provides, how completely they are enforced, and whether that enforcement is deterministic or probabilistic.
 
@@ -48,17 +41,12 @@ Rather than asking whether a technology is simply “memory safe”, the framewo
 
 A key contribution of the draft is a set of five assurance levels:
 
-Level 0: Basic development practices in memory-unsafe languages.
-
-Level 1: Hardened development using code reviews, static analysis, sanitizers, and fuzzing.
-
-Level 2: Memory-safety enforcement through memory-safe languages, formal methods, or hardware/software protection mechanisms.
-
-Level 3: Extends memory-safety requirements beyond the primary software component to dependencies that the organisation can control.
-
-Level 4: System-wide memory safety, including applications, dependencies, and the trusted computing base (TCB).
-
-The assurance levels acknowledge that memory safety is achieved progressively, rather than all at once, helping organisations communicate realistic improvement roadmaps.
+- Level 0: Basic development practices in memory-unsafe languages.
+- Level 1: Hardened development using code reviews, static analysis, sanitizers, and fuzzing.
+- Level 2: Memory-safety enforcement through memory-safe languages, formal methods, or hardware/software protection mechanisms.
+- Level 3: Extends memory-safety requirements beyond the primary software component to dependencies that the organisation can control.
+- Level 4: System-wide memory safety, including applications, dependencies, and the trusted computing base (TCB).
+- The assurance levels acknowledge that memory safety is achieved progressively, rather than all at once, helping organisations communicate realistic improvement roadmaps.
 
 ## A Neutral Framework for Comparing Technologies
 

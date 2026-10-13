@@ -1,6 +1,6 @@
 ---
 title: Peter Rugg
-image_url: null
+image_url: /assets/people/peter-rugg/placeholder.svg
 website_url: null
 is_speaker: null
 social:
@@ -13,3 +13,8 @@ related:
 ---
 
 # Peter Rugg
+
+## Publications
+
+- [Adaptive CHERI Compartmentalization for Heterogeneous Accelerators](/papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/)
+- [Cornucopia Reloaded: Load Barriers for CHERI Heap Temporal Safety](/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/)

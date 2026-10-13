@@ -1,6 +1,6 @@
 ---
 title: Debugging Tools
-image_url: null
+image_url: /assets/software/debugging-tools/placeholder.svg
 website_url: null
 repository_urls:
 - https://github.com/CHERI-Alliance/gdb
@@ -9,11 +9,14 @@ repository_urls:
 type: null
 status: null
 related:
-  organisations: []
+  organisations:
+  - cheri-alliance
   hardware:
   - cheriot
+  - morello
   software:
   - cheribsd
+  - cheri-linux
 ---
 
 # Debugging Tools
@@ -26,7 +29,7 @@ CHERI extends ordinary pointer state with protected metadata. Debugging support 
 
 A capability exception can identify the operation that exceeded the authority available to it. Depending on the platform, diagnostics can expose the capability register, attempted address, access type, bounds, permissions, tag state, and the process or compartment in which the fault occurred.
 
-The terminology and presentation differ across CheriBSD, CHERIoT, Linux, Morello, and CHERI-RISC-V environments.
+The terminology and presentation differ across [CheriBSD](/software/cheribsd/), [CHERIoT](/hardware/cheriot/), Linux, [Morello](/hardware/morello/), and CHERI-RISC-V environments.
 
 ## GDB and LLDB
 
@@ -42,7 +45,7 @@ The CHERI QEMU work covers architecture models, platform support, version mainte
 
 ## Operating-system and firmware support
 
-CheriBSD carries capability state through signals, core dumps, process tracing, kernel diagnostics, and target-aware debugging tools. CHERI Linux projects integrate similar concerns with their own kernel branches and user-space environments.
+CheriBSD carries capability state through signals, core dumps, process tracing, kernel diagnostics, and target-aware debugging tools. [CHERI Linux](/software/cheri-linux/) projects integrate similar concerns with their own kernel branches and user-space environments.
 
 CHERIoT exposes faults within a compartment-oriented embedded model. Its tooling also includes firmware audit information describing compartments, imports, exports, and authority relationships.
 
@@ -56,10 +59,7 @@ Debugger and diagnostic coverage follows the underlying platform projects. Archi
 
 ## Project links
 
-CHERI Alliance GDB
-
-CTSRD-CHERI GDB
-
-cheribuild
-
-CHERIoT Programmer’s Guide
+- [CHERI Alliance GDB](https://github.com/CHERI-Alliance/gdb)
+- [CTSRD-CHERI GDB](https://github.com/CTSRD-CHERI/gdb)
+- [cheribuild](https://github.com/CTSRD-CHERI/cheribuild)
+- [CHERIoT Programmer’s Guide](https://cheriot.org/book/)

@@ -5,7 +5,14 @@ published_date: '2024-09-25'
 authors: []
 related:
   groups: []
-  organisations: []
+  organisations:
+  - university-of-cambridge
+  - sci-semiconductor
+  - digital-catapult
+  - cheri-alliance
+  - codasip
+  - lowrisc
+  - ncsc
   hardware: []
   software: []
   papers: []
@@ -13,15 +20,13 @@ related:
 
 # End-users demand memory safety in their systems
 
-The Digital Security by Design all-hands conference was held last week in Leeds, and it was the opportunity to measure the progress of CHERI and see how much is already available. The new CHERI Alliance initiative had its own booth, and a number of…
-
 The Digital Security by Design all-hands conference was held last week in Leeds, and it was the opportunity to measure the progress of CHERI and see how much is already available.
 
-The new CHERI Alliance initiative had its own booth, and a number of its members (Codasip, lowRISC, SCI Semiconductor and University of Cambridge) were exhibiting at the show and gathered a lot of visitors eager to learn about the latest CHERI developments and products.
+The new [CHERI Alliance](/organisations/cheri-alliance/) initiative had its own booth, and a number of its members ([Codasip](/organisations/codasip/), [lowRISC](/organisations/lowrisc/), [SCI Semiconductor](/organisations/sci-semiconductor/) and [University of Cambridge](/organisations/university-of-cambridge/)) were exhibiting at the show and gathered a lot of visitors eager to learn about the latest CHERI developments and products.
 
 One of the most interesting sections of the conference were the cases studies, where the perspective of end-users was presented, explaining why cyber threats absolutely need to be mitigated for an increasing number of use cases, and highlighting the critical need for memory safety to be built into these systems.
 
-Paul Ceely, Director of Technology Strategy at Digital Catapult, and formerly employed in senior positions at BT (British Telecom) and EE (a major mobile network in UK), demonstrated how telecommunications, which represent 2% of the Gross Value Added of the UK economy, and 200,000 jobs, form a critical backbone of the country. NCSC argues that since the sector supports so many other activities, it is a national dependency, which requires a high level of security.
+Paul Ceely, Director of Technology Strategy at [Digital Catapult](/organisations/digital-catapult/), and formerly employed in senior positions at BT (British Telecom) and EE (a major mobile network in UK), demonstrated how telecommunications, which represent 2% of the Gross Value Added of the UK economy, and 200,000 jobs, form a critical backbone of the country. [NCSC](/organisations/ncsc/) argues that since the sector supports so many other activities, it is a national dependency, which requires a high level of security.
 
 In this context, built-in robustness, like the memory protection brought by CHERI, becomes necessary, and compartmentalisation (another key benefit of CHERI) is a primary topic, especially since physical equipment now are shared between providers, using virtualisation.
 

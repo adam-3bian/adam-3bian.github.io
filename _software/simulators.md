@@ -1,6 +1,6 @@
 ---
 title: Simulators
-image_url: null
+image_url: /assets/software/simulators/placeholder.svg
 website_url: null
 repository_urls: []
 type: null
@@ -9,7 +9,9 @@ related:
   organisations: []
   hardware:
   - fpga-platforms
-  software: []
+  - cheriot
+  software:
+  - cheribsd
 ---
 
 # Simulators
@@ -20,7 +22,7 @@ A simulator is often the first CHERI platform a developer uses, but different si
 
 ## Main simulator types
 
-A system emulator, such as CHERI QEMU, runs complete operating systems and applications relatively quickly. It suits CheriBSD or Linux porting and automated tests, but it does not model the final processor design or timing.
+A system emulator, such as CHERI QEMU, runs complete operating systems and applications relatively quickly. It suits [CheriBSD](/software/cheribsd/) or Linux porting and automated tests, but it does not model the final processor design or timing.
 
 An executable formal model, often written in Sail, stays close to the architectural specification. It is slower than optimised emulation and suits instruction behaviour, reference testing, and instruction-set development.
 
@@ -36,17 +38,12 @@ The CHERI-enabled QEMU work supports architectures used by CheriBSD and related 
 
 Choose QEMU when you need to:
 
-boot a pure-capability Unix environment
-
-compile and test application ports
-
-run automated test suites
-
-inspect architectural capability faults
-
-work without physical hardware
-
-QEMU execution time is not a prediction of processor performance. It also may not model caches, speculation, precise interrupt timing, or implementation-specific features.
+- boot a pure-capability Unix environment
+- compile and test application ports
+- run automated test suites
+- inspect architectural capability faults
+- work without physical hardware
+- QEMU execution time is not a prediction of processor performance. It also may not model caches, speculation, precise interrupt timing, or implementation-specific features.
 
 ## Sail and executable specifications
 
@@ -58,7 +55,7 @@ The model and prose specification must still be versioned together. A simulator 
 
 ## CHERIoT simulation
 
-The CHERIoT development environment includes simulator routes for its formal model and processor implementations. The real-time operating-system (RTOS) board descriptions connect firmware builds to an appropriate run command.
+The [CHERIoT](/hardware/cheriot/) development environment includes simulator routes for its formal model and processor implementations. The real-time operating-system (RTOS) board descriptions connect firmware builds to an appropriate run command.
 
 This lets developers run the same compartmentalised firmware through a reference simulator, implementation simulation, and supported hardware. Use the official example configuration before creating a new board definition.
 
@@ -66,40 +63,28 @@ This lets developers run the same compartmentalised firmware through a reference
 
 RTL simulation executes the processor and system hardware description. It can expose bugs in:
 
-capability instruction implementation
-
-tag storage and propagation
-
-cache and memory interfaces
-
-exceptions and interrupts
-
-reset and privilege behaviour
-
-integration with buses and peripherals
-
-Its speed usually limits the size of software workloads. Use small, targeted tests and combine them with higher-speed system emulation.
+- capability instruction implementation
+- tag storage and propagation
+- cache and memory interfaces
+- exceptions and interrupts
+- reset and privilege behaviour
+- integration with buses and peripherals
+- Its speed usually limits the size of software workloads. Use small, targeted tests and combine them with higher-speed system emulation.
 
 ## Selecting the right simulator
 
 Ask:
 
-Do I need a complete operating system or one instruction test?
-
-Is architectural behaviour enough, or do I need implementation cycles?
-
-Which CHERI ISA and revision is implemented?
-
-Does the model preserve capability tags through all memory paths?
-
-Can the debugger inspect capability state?
-
-Is the simulator deterministic and suitable for continuous integration?
-
-Which platform tests compare it with FPGA or silicon?
+- Do I need a complete operating system or one instruction test?
+- Is architectural behaviour enough, or do I need implementation cycles?
+- Which CHERI ISA and revision is implemented?
+- Does the model preserve capability tags through all memory paths?
+- Can the debugger inspect capability state?
+- Is the simulator deterministic and suitable for continuous integration?
+- Which platform tests compare it with FPGA or silicon?
 
 ## Record limitations with results
 
 Every result should name the simulator, revision, architecture, software stack, and configuration. State explicitly when timing, power, cache, or physical behaviour is outside the model.
 
-Use Run CHERI in Simulation for a first practical setup, and move to FPGA Platforms when the question depends on hardware implementation.
+Use [Run CHERI in Simulation](/guides/run-cheri-in-simulation/) for a first practical setup, and move to [FPGA Platforms](/hardware/fpga-platforms/) when the question depends on hardware implementation.

@@ -1,7 +1,7 @@
 ---
 title: Jonathan Woodruff
 image_url: /assets/people/jonathan-woodruff/7b6014d71dff-portrait.png
-website_url: null
+website_url: https://cheri-alliance.org/events/speakers/jonathan-woodruff/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/jonathan-woodruff-1a49502ab/
@@ -10,7 +10,9 @@ social:
 related:
   organisations:
   - capabilities-limited
-  groups: []
+  - university-of-cambridge
+  groups:
+  - cheri-research
 ---
 
 # Jonathan Woodruff
@@ -23,22 +25,6 @@ Specialising in capability processor design, he has pushed into full-system opti
 
 ## CHERI Talks
 
-Performance Progress of CVA6-CHERI | CHERI Blossoms 2026
-
-26/03/2026
-
-Cambridge, UK
-
-An open-source RV64Y implementation for commercialization | CHERITech’25
-
-14/11/2025
-
-Manchester, UK
-
-View Talk
-
-CHERI support for CVA6 | CHERI Blossoms 2025
-
-02/04/2025
-
-Cambridge, UK
+- Performance Progress of CVA6-CHERI | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK
+- An open-source RV64Y implementation for commercialization | [CHERITech’25](/events/cheritech25/) — 14/11/2025, Manchester, UK
+- CHERI support for CVA6 | [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK

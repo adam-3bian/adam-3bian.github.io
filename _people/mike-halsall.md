@@ -1,7 +1,7 @@
 ---
 title: Mike Halsall
 image_url: /assets/people/mike-halsall/aa8c2cd8052c-portrait.png
-website_url: null
+website_url: https://cheri-alliance.org/events/speakers/mike-halsall/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/mike-halsall/
@@ -20,13 +20,3 @@ related:
 Details to follow.
 
 ## CHERI Talks
-
-CHERI Blossoms 2025
-
-02/04/2025
-
-Cambridge, UK
-
-Slides coming soon
-
-Video coming soon

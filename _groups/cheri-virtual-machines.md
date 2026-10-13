@@ -1,11 +1,13 @@
 ---
 title: 🤖 CHERI Virtual Machines WG
-image_url: null
-website_url: null
+image_url: /assets/groups/cheri-virtual-machines/bb889a4dc09e-cheri-alliance-working-groups.png
+website_url: https://cheri-alliance.org/who-we-are/working-groups/cheri-virtual-machines/
 repository_urls: []
-lead: null
+leads:
+- jeremy-singer
 related:
-  organisations: []
+  organisations:
+  - university-of-glasgow
   hardware: []
   software: []
 ---
@@ -18,8 +20,8 @@ The CHERI Virtual Machines Working Group adapts VMs and language runtimes for CH
 
 Group type: Technical
 
-Areas of collaboration: Language runtimes
+## Areas of collaboration
 
-Managed memory and native interfaces
-
-Capability-aware VM design
+- Language runtimes
+- Managed memory and native interfaces
+- Capability-aware VM design

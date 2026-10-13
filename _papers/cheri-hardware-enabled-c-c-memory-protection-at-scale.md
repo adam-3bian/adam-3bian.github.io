@@ -1,6 +1,6 @@
 ---
 title: 'CHERI: Hardware-Enabled C/C++ Memory Protection at Scale'
-image_url: null
+image_url: /assets/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/placeholder.svg
 publication_url: https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/20240419-ieeesp-cheri-memory-safety.pdf
 published_year: 2024
 authors:
@@ -24,6 +24,6 @@ related:
 
 ### CHERI: Hardware-Enabled C/C++ Memory Protection at Scale
 
-Robert N. M. Watson, David Chisnall, Jessica Clarke, Brooks Davis, Nathaniel Wesley Filardo, Ben Laurie, Simon W. Moore, Peter G. Neumann, Alexander Richardson, Peter Sewell, Konrad Witaszczyk, and Jonathan Woodruff. IEEE Security & Privacy, 22(4), 2024.
+Robert N. M. Watson, [David Chisnall](/people/david-chisnall/), [Jessica Clarke](/people/jessica-clarke/), [Brooks Davis](/people/brooks-davis/), [Nathaniel Wesley Filardo](/people/nathaniel-wesley-filardo/), [Ben Laurie](/people/ben-laurie/), Simon W. Moore, [Peter G. Neumann](/people/peter-g-neumann/), Alexander Richardson, [Peter Sewell](/people/peter-sewell/), [Konrad Witaszczyk](/people/konrad-witaszczyk/), and [Jonathan Woodruff](/people/jonathan-woodruff/). IEEE Security & Privacy, 22(4), 2024.
 
 Reviews CHERI's hardware-supported protection model and experience applying it to large C and C++ software stacks.

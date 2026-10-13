@@ -19,7 +19,7 @@ let references = 0;
 for (const file of htmlFiles) {
   const html = fs.readFileSync(file, 'utf8');
   const route = routeFor(file);
-  if (/class="[^"]*\b(?:image-(?:left|right|full|logo|icon|gallery))\b/.test(html)) imageRoutes.push(route);
+  if (/class="[^"]*\b(?:image-(?:left|right|full|logo|icon|gallery|portrait))\b/.test(html)) imageRoutes.push(route);
   for (const match of html.matchAll(/<img\b[^>]*\bsrc="([^"]+)"/g)) {
     const url = new URL(match[1].replaceAll('&amp;', '&'), pageURL(route));
     if (url.origin !== base.origin || url.protocol === 'data:') continue;
@@ -68,6 +68,13 @@ async function loaded(page, route) {
           if (root.scrollWidth > window.innerWidth + 1) errors.push(`Page overflow: ${root.scrollWidth}`);
           for (const image of document.querySelectorAll('img[src]')) {
             if (!image.naturalWidth) errors.push(`Broken image: ${image.getAttribute('src')}`);
+            const collection = image.closest('article[data-collection]:not([data-collection="pages"])');
+            if ((collection && !image.closest('.image-viewer')) || image.closest('.card')) {
+              const rect = image.getBoundingClientRect();
+              const expected = image.classList.contains('image-portrait') || image.closest('.portrait-gallery') ? 1 : 3;
+              if (rect.width && Math.abs(rect.width / rect.height - expected) > .02) errors.push(`Incorrect image ratio (${expected}:1): ${image.src}`);
+              if (getComputedStyle(image).objectFit !== 'contain') errors.push(`Image may crop labels or portraits: ${image.src}`);
+            }
           }
           for (const article of document.querySelectorAll('.article-content')) {
             const bounds = article.getBoundingClientRect();

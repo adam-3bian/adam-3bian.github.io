@@ -10,6 +10,7 @@ social:
 related:
   organisations:
   - google
+  - cheri-alliance
   groups: []
 ---
 
@@ -19,4 +20,4 @@ Board role: Senior Software Engineer
 
 ## Biography
 
-Alex Richardson represents Google on the CHERI Alliance Governing Board. His board role is Senior Software Engineer.
+Alex Richardson represents [Google](/organisations/google/) on the [CHERI Alliance](/organisations/cheri-alliance/) Governing Board. His board role is Senior Software Engineer.

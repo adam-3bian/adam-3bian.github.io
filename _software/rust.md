@@ -1,15 +1,18 @@
 ---
 title: Rust
-image_url: null
+image_url: /assets/software/rust/placeholder.svg
 website_url: null
 repository_urls: []
 type: null
 status: null
 related:
   organisations: []
-  hardware: []
+  hardware:
+  - cheriot
+  - morello
   software:
   - llvm-and-clang
+  - cheribsd
 ---
 
 # Rust
@@ -34,7 +37,7 @@ Capability pointers may be wider than the virtual address range. That distinctio
 
 ### Morello and CheriBSD
 
-Rust work for Morello has covered freestanding and CheriBSD environments, including compiler targets, libraries, and native interfaces. Complete environments can depend on project forks and pinned toolchain revisions.
+Rust work for [Morello](/hardware/morello/) has covered freestanding and [CheriBSD](/software/cheribsd/) environments, including compiler targets, libraries, and native interfaces. Complete environments can depend on project forks and pinned toolchain revisions.
 
 ### CHERI-RISC-V
 
@@ -42,7 +45,7 @@ CHERI-RISC-V work includes pure-capability targets and operating-system integrat
 
 ### CHERIoT
 
-Rust support for CHERIoT is developing within its embedded hardware-software ecosystem. The established CHERIoT platform remains centred on its C and C++ SDK, while Rust work extends the compiler, runtime, and compartment interfaces.
+Rust support for [CHERIoT](/hardware/cheriot/) is developing within its embedded hardware-software ecosystem. The established CHERIoT platform remains centred on its C and C++ SDK, while Rust work extends the compiler, runtime, and compartment interfaces.
 
 ## Unsafe Rust and native interfaces
 
@@ -56,4 +59,4 @@ Native interfaces also carry ABI, ownership, callback, layout, and allocation as
 
 Rust support is not one uniform CHERI product line. Compiler revisions, operating systems, libraries, Cargo support, target hardware, and test coverage vary between platform projects.
 
-The Rust + CHERI Working Group connects this work across the Alliance. CHERI and Rust provides the broader architectural context.
+The [Rust + CHERI Working Group](/groups/rust-plus-cheri/) connects this work across the Alliance. CHERI and Rust provides the broader architectural context.

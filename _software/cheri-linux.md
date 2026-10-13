@@ -1,15 +1,19 @@
 ---
 title: CHERI Linux
-image_url: null
+image_url: /assets/software/cheri-linux/placeholder.svg
 website_url: https://cheri-linux.org/
 repository_urls: []
 type: null
 status: null
 related:
-  organisations: []
-  hardware: []
+  organisations:
+  - cheri-alliance
+  hardware:
+  - cheriot
+  - morello
   software:
   - cheribsd
+  - zephyr
 ---
 
 # CHERI Linux
@@ -28,7 +32,7 @@ These layers form one compatible stack. Kernel capability support and pure-capab
 
 ## Current organisation
 
-The CHERI Alliance Linux Working Group coordinates a cross-architecture roadmap, priorities, public repositories, and contribution routes. Public development includes CHERI-RISC-V kernel and user-space work as well as experience from earlier Morello Linux projects.
+The [CHERI Alliance Linux Working Group](/groups/cheri-linux-working-group/) coordinates a cross-architecture roadmap, priorities, public repositories, and contribution routes. Public development includes CHERI-RISC-V kernel and user-space work as well as experience from earlier [Morello](/hardware/morello/) Linux projects.
 
 CHERI support is not currently a standard feature of a mainline Linux release. Active branches are rebased as the base kernel, architecture specifications, toolchains, and platform software develop.
 
@@ -40,16 +44,13 @@ Commercial processor platforms may package these components as a tested SDK for 
 
 ## Where CHERI Linux fits
 
-CHERI Linux is relevant where Linux APIs, drivers, services, or deployment models are central to the intended system. It complements CheriBSD, which has a longer history as a complete pure-capability research environment, and embedded routes such as CHERIoT and CHERI-enabled Zephyr.
+CHERI Linux is relevant where Linux APIs, drivers, services, or deployment models are central to the intended system. It complements [CheriBSD](/software/cheribsd/), which has a longer history as a complete pure-capability research environment, and embedded routes such as [CHERIoT](/hardware/cheriot/) and CHERI-enabled [Zephyr](/software/zephyr/).
 
 Coverage varies by kernel branch, processor, ABI, C library, package set, system-call surface, driver support, and test platform. A small bootable environment and a broad distribution therefore represent different stages of software coverage.
 
 ## Project links
 
-CHERI Roadmap for Linux
-
-CHERI Linux project documentation
-
-CHERI Alliance repositories
-
-CHERI Linux Working Group
+- [CHERI Roadmap for Linux](https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/cheri-linux.html)
+- [CHERI Linux project documentation](https://cheri-linux.org/)
+- [CHERI Alliance repositories](https://github.com/CHERI-Alliance)
+- [CHERI Linux Working Group](/groups/cheri-linux-working-group/)

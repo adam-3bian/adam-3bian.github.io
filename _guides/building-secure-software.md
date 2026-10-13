@@ -1,6 +1,6 @@
 ---
 title: Building Secure Software with CHERI
-image_url: null
+image_url: /assets/guides/building-secure-software/placeholder.svg
 repository_urls: []
 updated_date: null
 authors: []
@@ -22,29 +22,20 @@ To understand what protection a system actually provides, engineers should ask a
 
 Before discussing CHERI features, identify the data, services, and operations that matter:
 
-customer or patient data
-
-cryptographic keys
-
-privileged management interfaces
-
-device control functions
-
-service availability
-
-software update mechanisms
-
-safety-critical state
+- customer or patient data
+- cryptographic keys
+- privileged management interfaces
+- device control functions
+- service availability
+- software update mechanisms
+- safety-critical state
 
 Then identify:
 
-which components can access them
-
-how authority is granted
-
-which interfaces can reach them
-
-which components do not need access
+- which components can access them
+- how authority is granted
+- which interfaces can reach them
+- which components do not need access
 
 CHERI can only enforce security boundaries that exist in the software architecture. If every component has access to everything, there is little isolation for the hardware to enforce.
 
@@ -54,19 +45,13 @@ Security depends on what you expect the system to defend against. A browser rend
 
 A threat model describes the conditions the design is expected to withstand, e.g. whether an attacker can:
 
-send untrusted network data
-
-supply files or media for parsing
-
-install an untrusted extension
-
-compromise a third-party library
-
-gain local user access
-
-physically access the device
-
-observe timing or power use
+- send untrusted network data
+- supply files or media for parsing
+- install an untrusted extension
+- compromise a third-party library
+- gain local user access
+- physically access the device
+- observe timing or power use
 
 ## 3\. Which CHERI execution mode is used?
 
@@ -74,13 +59,10 @@ The most important question is often: what code is actually using CHERI protecti
 
 Ask what the relevant software actually does:
 
-Conventional binary on CHERI hardware: CHERI hardware may be able to run legacy binary code, which is then not protected.
-
-Hybrid code: Selected pointers or interfaces use capabilities. The protection depends on where and how they are used.
-
-Pure-capability code: Pointers visible to the language use capabilities broadly, giving strong coverage for capability-enforced accesses.
-
-Compartmentalised code: Authority is divided between components. The outcome depends on the boundaries and the capabilities each component receives.
+- Conventional binary on CHERI hardware: CHERI hardware may be able to run legacy binary code, which is then not protected.
+- Hybrid code: Selected pointers or interfaces use capabilities. The protection depends on where and how they are used.
+- Pure-capability code: Pointers visible to the language use capabilities broadly, giving strong coverage for capability-enforced accesses.
+- Compartmentalised code: Authority is divided between components. The outcome depends on the boundaries and the capabilities each component receives.
 
 These modes describe related but distinct protections. A pure-capability application is not necessarily compartmentalised, and a hybrid application may protect only selected interfaces.
 
@@ -90,15 +72,11 @@ Different CHERI deployments provide different security properties. Verify which 
 
 Check each relevant property separately:
 
-Spatial safety: Are accesses constrained to the intended object or allocation?
-
-Permissions: Are read, write, and execute rights reduced to what the code needs?
-
-Capability integrity: Can software forge or modify protected metadata?
-
-Temporal safety: What stops a stale capability being used after an object is freed and its memory reused?
-
-Control-flow protection: How are return addresses, function pointers, and protected entry points handled?
+- Spatial safety: Are accesses constrained to the intended object or allocation?
+- Permissions: Are read, write, and execute rights reduced to what the code needs?
+- Capability integrity: Can software forge or modify protected metadata?
+- Temporal safety: What stops a stale capability being used after an object is freed and its memory reused?
+- Control-flow protection: How are return addresses, function pointers, and protected entry points handled?
 
 CHERI provides architectural building blocks, but some properties require compiler, allocator, operating-system, or runtime support. Temporal safety is an important example. Record the mechanism in use rather than assuming it from the processor alone.
 
@@ -108,43 +86,28 @@ A component can still become a major security risk if it holds capabilities that
 
 When reviewing a system, draw the authority flow between components. Explicitly identify which capabilities cross each boundary:
 
-capabilities available when the component starts
-
-capabilities accepted through interfaces
-
-services it can invoke
-
-capabilities it can retain or pass onwards
-
-whether shared memory is read-only or writable
-
-how the system revokes or replaces authority
-
-Least privilege means giving each component only the authority required for its current task.
+- capabilities available when the component starts
+- capabilities accepted through interfaces
+- services it can invoke
+- capabilities it can retain or pass onwards
+- whether shared memory is read-only or writable
+- how the system revokes or replaces authority
+- Least privilege means giving each component only the authority required for its current task.
 
 ## 6\. How do you verify the design?
 
 Useful evidence for engineering reviews includes:
 
-the architecture and implementation version
-
-compiler target and flags
-
-application binary interface (ABI) and operating-system mode
-
-software bill of materials
-
-porting diagnostics and resolved capability faults
-
-tests that deliberately exceed bounds or permissions
-
-compartment interface definitions
-
-threat modelling and security review
-
-independent assessment or scheme-specific certification
-
-performance and failure-recovery results for the real workload
+- the architecture and implementation version
+- compiler target and flags
+- application binary interface (ABI) and operating-system mode
+- software bill of materials
+- porting diagnostics and resolved capability faults
+- tests that deliberately exceed bounds or permissions
+- compartment interface definitions
+- threat modelling and security review
+- independent assessment or scheme-specific certification
+- performance and failure-recovery results for the real workload
 
 A demonstration shows that one scenario worked. It is not automatically evidence for every build, platform, or attack path.
 
@@ -162,14 +125,9 @@ The second statement can be reviewed, tested, and improved. It also makes the re
 
 ## Key takeaways
 
-Treat CHERI as a set of security mechanisms rather than a single security property
-
-Be explicit about what code is running in pure-capability, hybrid, or compartmentalised modes
-
-Define authority boundaries and minimise the capabilities each component receives
-
-Verify memory-safety, isolation, and least-privilege assumptions with testing
-
-Support security claims with evidence from the actual product, build, and deployment configuration
-
-CHERI complements secure design, code review, testing, and operational controls; it does not replace them
+- Treat CHERI as a set of security mechanisms rather than a single security property
+- Be explicit about what code is running in pure-capability, hybrid, or compartmentalised modes
+- Define authority boundaries and minimise the capabilities each component receives
+- Verify memory-safety, isolation, and least-privilege assumptions with testing
+- Support security claims with evidence from the actual product, build, and deployment configuration
+- CHERI complements secure design, code review, testing, and operational controls; it does not replace them

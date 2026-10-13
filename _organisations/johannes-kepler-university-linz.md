@@ -12,8 +12,6 @@ social:
 
 # Johannes Kepler University Linz (JKU)
 
-Johannes Kepler University (JKU) Linz is a public research university in Linz, Upper Austria. Located on a modern campus just outside the city center, JKU brings together a broad range of study and research across its faculties and interdisciplinary…
-
 ## Description
 
 Johannes Kepler University (JKU) Linz is a public research university in Linz, Upper Austria. Located on a modern campus just outside the city center, JKU brings together a broad range of study and research across its faculties and interdisciplinary institutes. With a strong focus on innovation, international collaboration, and close ties to industry, JKU offers an excellent environment for studying, teaching, and research—preparing graduates to shape the future in business, science, and society.
@@ -24,4 +22,4 @@ The Institute for Complex Systems (ICS) at JKU Linz focuses on mastering the eve
 
 ## Open-source Assets for CHERI
 
-https://github.com/ics-jku/riscv-vp-plusplus
+<https://github.com/ics-jku/riscv-vp-plusplus>

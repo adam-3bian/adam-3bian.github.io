@@ -1,7 +1,7 @@
 ---
 title: Johannes Müller
 image_url: /assets/people/johannes-muller/41d6bed18ae7-portrait.png
-website_url: null
+website_url: https://cheri-alliance.org/events/speakers/johannes-muller/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/johannes-m%C3%BCller-b67831247/
@@ -23,8 +23,4 @@ His research interests include formal security verification, access control mech
 
 ## CHERI Talks
 
-Verifying Secure Memory Compartmentalization in CHERI Processors at the RTL | CHERI Blossoms 2026
-
-27/03/2026
-
-Cambridge, UK
+- Verifying Secure Memory Compartmentalization in CHERI Processors at the RTL | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 27/03/2026, Cambridge, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D2-3.1-Johannes-Mueller-Verifying-Secure-Memory-Compartmentalization-in-CHERI-Processors-at-the-RTL-CHERI-Blossoms-2026.pdf) · [Video](https://youtu.be/8q_uNOS_h9M)

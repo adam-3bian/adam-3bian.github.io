@@ -6,21 +6,20 @@ authors:
 - mike-eftimakis
 related:
   groups: []
-  organisations: []
+  organisations:
+  - google
   hardware: []
-  software: []
+  software:
+  - freebsd
   papers: []
 ---
 
 # AI has compressed the attack timeline
 
-Mike Eftimakis – CHERI Alliance This article is part of a series of blogs published after the announcement of Mythos vulnerabilities’ exploitation capabilities. The views from other experts on this topic are: CHERI memory safety mitigates…
-
 This article is part of a series of blogs published after the announcement of Mythos vulnerabilities’ exploitation capabilities. The views from other experts on this topic are:
 
-CHERI memory safety mitigates LLM-discovered vulnerability in FreeBSD – Brooks Davis
-
-One Bug is All It Takes – Adam Finney
+- CHERI memory safety mitigates LLM-discovered vulnerability in [FreeBSD](/software/freebsd/) – [Brooks Davis](/people/brooks-davis/)
+- One Bug is All It Takes – [Adam Finney](/people/adam-finney/)
 
 ## Security by Design can’t wait!
 
@@ -32,7 +31,7 @@ That decision alone should give pause. But what is more concerning is this: we n
 
 ## AI accelerates exploitation
 
-New research by Buzz, a Sequoia-backed cybersecurity startup, demonstrates that existing, publicly available AI models are already sufficient to automate sophisticated exploitation at scale. By chaining together models from Anthropic, OpenAI, and Google into an autonomous agent, the researchers managed to get AI to exploit known exploited vulnerabilities (KEVs, flaws that are publicly documented by authorities like CISA specifically so organizations can patch them) in a record time.
+New research by Buzz, a Sequoia-backed cybersecurity startup, demonstrates that existing, publicly available AI models are already sufficient to automate sophisticated exploitation at scale. By chaining together models from Anthropic, OpenAI, and [Google](/organisations/google/) into an autonomous agent, the researchers managed to get AI to exploit known exploited vulnerabilities (KEVs, flaws that are publicly documented by authorities like CISA specifically so organizations can patch them) in a record time.
 
 For defenders, this exposes a structural asymmetry as patching remains labor-intensive, risky, and slow, often taking days or weeks.
 
@@ -42,9 +41,8 @@ In short: AI has compressed the time-to-exploit below the human time-to-patch.
 
 For decades, cybersecurity has relied on a reactive loop:
 
-discover → disclose → patch → deploy
-
-That loop assumed attackers needed time, skill, and scale. AI breaks all three assumptions.
+- discover → disclose → patch → deploy
+- That loop assumed attackers needed time, skill, and scale. AI breaks all three assumptions.
 
 The vulnerability window has collapsed! AI agents do not get tired. They do not wait for working hours. And once a vulnerability is public, they can weaponize it repeatedly, automatically, and in parallel. Attackers are now default early adopters of AI, while defenders remain risk-averse by necessity.
 
@@ -62,27 +60,19 @@ As Anthropic itself has acknowledged, models like Mythos are a preview of capabi
 
 In this environment, defenders must assume:
 
-Vulnerabilities will be discovered and exploited quickly
-
-Attackers will use AI by default
-
-Reactive defences will always lag
-
-That shifts the focus from finding and fixing bugs to limiting the consequences when bugs exist.
+- Vulnerabilities will be discovered and exploited quickly
+- Attackers will use AI by default
+- Reactive defences will always lag
+- That shifts the focus from finding and fixing bugs to limiting the consequences when bugs exist.
 
 This is the core principle behind security by design:
 
-Strong isolation between components
-
-Fine-grained memory safety
-
-Hardware-enforced compartmentalization
-
-Architectures that prevent a single flaw from becoming a systemic failure
-
-Segmentation, preventing a breach in one application from compromising others, is no longer optional. It is foundational.
-
-Unfortunately, software implementation of these principles often suffers from unacceptable performance impact and weak protection mechanisms.
+- Strong isolation between components
+- Fine-grained memory safety
+- Hardware-enforced compartmentalization
+- Architectures that prevent a single flaw from becoming a systemic failure
+- Segmentation, preventing a breach in one application from compromising others, is no longer optional. It is foundational.
+- Unfortunately, software implementation of these principles often suffers from unacceptable performance impact and weak protection mechanisms.
 
 This is precisely where CHERI-enabled systems matter. By enforcing memory safety and strong compartment boundaries in hardware, CHERI reduces entire classes of vulnerabilities and sharply limits what an automated attacker can achieve—even when a bug exists.
 

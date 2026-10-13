@@ -1,11 +1,13 @@
 ---
 title: ©️ CHERI C/C++ WG
-image_url: null
-website_url: null
+image_url: /assets/groups/cheri-c-cplusplus/bb889a4dc09e-cheri-alliance-working-groups.png
+website_url: https://cheri-alliance.org/who-we-are/working-groups/cheri-c-c/
 repository_urls: []
-lead: null
+leads:
+- david-chisnall
 related:
-  organisations: []
+  organisations:
+  - sci-semiconductor
   hardware: []
   software: []
 ---
@@ -20,14 +22,13 @@ CHERI provides memory safety for C-like languages. Every CHERI implementation wi
 
 This working group has two overlapping goals:
 
-To coordinate between CHERI C/C++ implementations to ensure portability.
-
-To work with ISO WG14 and WG21 to ensure long-term alignment of the C and C++ standards with CHERI.
+- To coordinate between CHERI C/C++ implementations to ensure portability.
+- To work with ISO WG14 and WG21 to ensure long-term alignment of the C and C++ standards with CHERI.
 
 Group type: Technical
 
-Areas of collaboration: Language and ABI behaviour
+## Areas of collaboration
 
-Compiler and toolchain experience
-
-Portability and standards
+- Language and ABI behaviour
+- Compiler and toolchain experience
+- Portability and standards

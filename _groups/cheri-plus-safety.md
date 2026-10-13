@@ -1,11 +1,14 @@
 ---
 title: 📋 CHERI + Safety WG
-image_url: null
-website_url: null
+image_url: /assets/groups/cheri-plus-safety/bb889a4dc09e-cheri-alliance-working-groups.png
+website_url: https://cheri-alliance.org/who-we-are/working-groups/cheri-safety/
 repository_urls: []
-lead: null
+leads:
+- maricel-ventura
+- thierno-sene
 related:
-  organisations: []
+  organisations:
+  - codasip
   hardware: []
   software: []
 ---
@@ -18,8 +21,8 @@ The Safety Working Group focuses on implementing safety standards for CHERI hard
 
 Group type: Technical
 
-Areas of collaboration: Safety requirements and claims
+## Areas of collaboration
 
-Implementation evidence
-
-Integration and assurance
+- Safety requirements and claims
+- Implementation evidence
+- Integration and assurance

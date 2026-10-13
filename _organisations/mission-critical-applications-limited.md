@@ -1,6 +1,6 @@
 ---
 title: Mission Critical Applications Limited
-image_url: null
+image_url: /assets/organisations/mission-critical-applications-limited/placeholder.svg
 website_url: null
 membership_tier: null
 is_founding_member: null
@@ -11,3 +11,7 @@ social:
 ---
 
 # Mission Critical Applications Limited
+
+## People
+
+- [Martin Atkins](/people/martin-atkins/)

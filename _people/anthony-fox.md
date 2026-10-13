@@ -1,6 +1,6 @@
 ---
 title: Anthony Fox
-image_url: null
+image_url: /assets/people/anthony-fox/placeholder.svg
 website_url: null
 is_speaker: null
 social:
@@ -13,3 +13,8 @@ related:
 ---
 
 # Anthony Fox
+
+## Publications
+
+- [CHERI Concentrate: Practical Compressed Capabilities](/papers/cheri-concentrate-practical-compressed-capabilities/)
+- [Rigorous Engineering for Hardware Security: Formal Modelling and Proof in the CHERI Design and Implementation Process](/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/)

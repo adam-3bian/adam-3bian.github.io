@@ -6,15 +6,25 @@ authors:
 - jim-wallace
 related:
   groups: []
-  organisations: []
-  hardware: []
-  software: []
+  organisations:
+  - university-of-cambridge
+  - sci-semiconductor
+  - cheri-alliance
+  - ensilica
+  - codasip
+  - lowrisc
+  hardware:
+  - fpga-platforms
+  software:
+  - cheri-linux
+  - zephyr
+  - rust
   papers: []
 ---
 
 # Beyond Software Patching
 
-Jim Wallace – CHERI Alliance / Cre8Vantage
+[Jim Wallace](/people/jim-wallace/) – [CHERI Alliance](/organisations/cheri-alliance/) / Cre8Vantage
 
 ## How CHERI Can Limit the Blast Radius in Long-Life CNI Systems
 
@@ -81,11 +91,10 @@ For example, software processing incoming network data could be given access to 
 
 CHERI complements rather than replaces existing security controls:
 
-Secure boot and signed firmware help ensure authorised software starts; CHERI helps control what that software can access once it is running.
+- Secure boot and signed firmware help ensure authorised software starts; CHERI helps control what that software can access once it is running.
+- MPUs, MMUs, processes, VMs and containers provide broader isolation boundaries; CHERI can add finer-grained protection within them.
 
-MPUs, MMUs, processes, VMs and containers provide broader isolation boundaries; CHERI can add finer-grained protection within them.
-
-Memory-safe languages such as Rust can prevent many memory-safety defects, while CHERI provides hardware-enforced access control and compartmentalisation regardless of programming language. It can strengthen protection for existing C/C++ software without requiring a complete rewrite, while supporting a phased migration to memory-safe languages over time.
+Memory-safe languages such as [Rust](/software/rust/) can prevent many memory-safety defects, while CHERI provides hardware-enforced access control and compartmentalisation regardless of programming language. It can strengthen protection for existing C/C++ software without requiring a complete rewrite, while supporting a phased migration to memory-safe languages over time.
 
 CHERI can also enable compartmentalisation, allowing individual software components to operate with only the authority they need. If one component is compromised, its ability to reach other parts of the system can be restricted.
 
@@ -131,13 +140,10 @@ A useful CHERI evaluation should begin with a product risk analysis, not a plan 
 
 Four questions usually reveal the strongest first candidate:
 
-Exposure: Does the component process untrusted network, device or partner data?
-
-Consequence: Is it close to keys, identity, billing, update authority or real-time control?
-
-Change: Is it frequently updated, supplied by a third party or likely to host new analytics or AI?
-
-Recovery cost: Would a defect trigger extensive testing, approval, recertification or physical intervention?
+- Exposure: Does the component process untrusted network, device or partner data?
+- Consequence: Is it close to keys, identity, billing, update authority or real-time control?
+- Change: Is it frequently updated, supplied by a third party or likely to host new analytics or AI?
+- Recovery cost: Would a defect trigger extensive testing, approval, recertification or physical intervention?
 
 Good candidates include network-facing services such as protocol parsers and time-synchronisation services, update agents, device-management software, and third-party or fast-changing applications close to sensitive assets.
 
@@ -151,13 +157,13 @@ As these workloads evolve and incorporate third-party or AI-assisted software, s
 
 Over the past few years, CHERI has moved from research and experimental platforms towards commercially available processor IP, evaluation systems, silicon and increasingly mature software support.
 
-These include processor IP, Linux-capable FPGA platforms, CHERI-enabled silicon and open-source reference designs from organisations including Codasip, SCI Semiconductor and lowRISC, with further commercial silicon programmes under development.
+These include processor IP, Linux-capable FPGA platforms, CHERI-enabled silicon and open-source reference designs from organisations including [Codasip](/organisations/codasip/), [SCI Semiconductor](/organisations/sci-semiconductor/) and [lowRISC](/organisations/lowrisc/), with further commercial silicon programmes under development.
 
 Product teams can now run representative software on CHERI platforms and generate evidence against their own performance, integration and security requirements, rather than relying primarily on generic benchmark results.
 
 ## A practical five-stage evaluation
 
-A focused pilot can place one CHERI-enabled workload alongside an existing software stack. CHERI support is already available or under active development across major operating environments including Linux, FreeRTOS and Zephyr, reducing the need for product teams to start from scratch.
+A focused pilot can place one CHERI-enabled workload alongside an existing software stack. CHERI support is already available or under active development across major operating environments including Linux, FreeRTOS and [Zephyr](/software/zephyr/), reducing the need for product teams to start from scratch.
 
 <figure class="image-full" markdown="block">
 
@@ -184,17 +190,12 @@ A CHERI evaluation should answer a practical product question: does the addition
 
 Using the company’s own software and realistic fault or attack scenarios, it should show whether CHERI can:
 
-reduce the routes from a vulnerable service to critical assets;
-
-prevent a compromised component from accessing assets beyond its intended authority;
-
-reduce the scope of remediation, regression testing and recertification;
-
-strengthen secure-by-design assurance for customers, operators and regulators;
-
-provide safer boundaries for third-party and rapidly changing software; and
-
-help extend the secure operational life of the product.
+- reduce the routes from a vulnerable service to critical assets;
+- prevent a compromised component from accessing assets beyond its intended authority;
+- reduce the scope of remediation, regression testing and recertification;
+- strengthen secure-by-design assurance for customers, operators and regulators;
+- provide safer boundaries for third-party and rapidly changing software; and
+- help extend the secure operational life of the product.
 
 For CRA-regulated products, fewer vulnerabilities becoming successful exploits and stronger limits on what compromised software can access can mean less engineering time spent on investigation, remediation and field updates, while reducing operational, reputational and revenue risk.
 
@@ -208,13 +209,13 @@ The goal is not to promise that software will never fail. It is to prevent one f
 
 European Commission: Cyber Resilience Act summary
 
-University of Cambridge: CHERI Frequently Asked Questions
+[University of Cambridge](/organisations/university-of-cambridge/): CHERI Frequently Asked Questions
 
 Rust Programming Language
 
 NSA and CISA: Memory Safe Languages—Reducing Vulnerabilities in Modern Software Development
 
-CHERI Linux Project
+[CHERI Linux](/software/cheri-linux/) Project
 
 CERT/CC: Treck TCP/IP Vulnerabilities — Ripple20
 
@@ -236,7 +237,7 @@ SCI Semiconductor: ICENI First-Silicon Announcement
 
 lowRISC: CHERI-Mocha Memory-Safe Compute Subsystem Is Now Open
 
-EnSilica and Codasip: Strategic Partnership to Bring CHERI Cybersecurity to Critical Applications
+[EnSilica](/organisations/ensilica/) and Codasip: Strategic Partnership to Bring CHERI Cybersecurity to Critical Applications
 
 ## About the author
 

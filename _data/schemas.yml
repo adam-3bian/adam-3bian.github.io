@@ -84,7 +84,7 @@ groups:
   image_url: null
   website_url: null
   repository_urls: []
-  lead: null
+  leads: []
   related:
     organisations: []
     hardware: []
@@ -101,6 +101,7 @@ guides:
     software: []
 policies:
   title: null
+  image_url: null
   author: null
 content:
   title: null

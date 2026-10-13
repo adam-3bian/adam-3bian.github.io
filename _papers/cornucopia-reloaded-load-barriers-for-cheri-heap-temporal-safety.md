@@ -1,6 +1,6 @@
 ---
 title: 'Cornucopia Reloaded: Load Barriers for CHERI Heap Temporal Safety'
-image_url: null
+image_url: /assets/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/placeholder.svg
 publication_url: https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/202404asplos-cornucopia-reloaded.pdf
 published_year: 2024
 authors:
@@ -24,6 +24,6 @@ related:
 
 ### Cornucopia Reloaded: Load Barriers for CHERI Heap Temporal Safety
 
-Nathaniel Wesley Filardo, Brett F. Gutstein, Jonathan Woodruff, Jessica Clarke, Peter Rugg, Brooks Davis, Mark Johnston, Robert Norton-Wright, David Chisnall, Simon W. Moore, Peter G. Neumann, and Robert N. M. Watson. ACM ASPLOS 2024, 2024.
+[Nathaniel Wesley Filardo](/people/nathaniel-wesley-filardo/), [Brett F. Gutstein](/people/brett-f-gutstein/), [Jonathan Woodruff](/people/jonathan-woodruff/), [Jessica Clarke](/people/jessica-clarke/), [Peter Rugg](/people/peter-rugg/), [Brooks Davis](/people/brooks-davis/), [Mark Johnston](/people/mark-johnston/), [Robert Norton-Wright](/people/robert-norton-wright/), [David Chisnall](/people/david-chisnall/), Simon W. Moore, [Peter G. Neumann](/people/peter-g-neumann/), and Robert N. M. Watson. ACM ASPLOS 2024, 2024.
 
 Develops a load-barrier approach to temporal heap safety for CHERI systems.

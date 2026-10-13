@@ -1,12 +1,16 @@
 ---
-title: lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure Enclave with InnovateUK
-  Support
-image_url: /assets/shared/source-assets/dca93f847af6-cheriot-1-0-specification-released.png
+title: lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure Enclave with InnovateUK Support
+image_url: /assets/news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support/dca93f847af6-cheriot-1-0-specification-released.png
 published_date: '2025-11-12'
 authors: []
 related:
   groups: []
-  organisations: []
+  organisations:
+  - capabilities-limited
+  - cheri-alliance
+  - lowrisc
+  - google
+  - dsit
   hardware: []
   software: []
   papers: []
@@ -14,9 +18,7 @@ related:
 
 # lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure Enclave with InnovateUK Support
 
-lowRISC CIC and Capabilities Limited, two founding members of the CHERI Alliance, have announced the launch of the COSMIC Project, supported by the UK Department for Science, Innovation and Technology (DSIT) and InnovateUK. The 3 year initiative will…
-
-lowRISC CIC and Capabilities Limited, two founding members of the CHERI Alliance, have announced the launch of the COSMIC Project, supported by the UK Department for Science, Innovation and Technology (DSIT) and InnovateUK.
+[lowRISC](/organisations/lowrisc/) CIC and [Capabilities Limited](/organisations/capabilities-limited/), two founding members of the [CHERI Alliance](/organisations/cheri-alliance/), have announced the launch of the COSMIC Project, supported by the UK Department for Science, Innovation and Technology ([DSIT](/organisations/dsit/)) and InnovateUK.
 
 The 3 year initiative will deliver the first commercial-quality, open-source, CHERI-enabled 64-bit Secure Enclave for application-class system-on-chips (SoCs). By combining CHERI hardware memory safety and compartmentalisation with formal verification, COSMIC aims to create a secure foundation for future high-assurance silicon designs.
 
@@ -24,6 +26,6 @@ Built on OpenTitan® design principles and featuring the CVA6-CHERI processor fr
 
 The CHERI Alliance welcomes the announcement. COSMIC is an important step towards embedding CHERI-based security in next-generation commercial products.
 
-COSMIC continues lowRISC CIC‘s mission to make commercial open-source silicon real. It follows the success of OpenTitan and Sunburst and is supported by partners including Google, also a founding member of the CHERI Alliance, and Rivos.
+COSMIC continues lowRISC CIC‘s mission to make commercial open-source silicon real. It follows the success of OpenTitan and Sunburst and is supported by partners including [Google](/organisations/google/), also a founding member of the CHERI Alliance, and Rivos.
 
 You can read the full the press release here.

@@ -1,5 +1,6 @@
 ---
 title: Code of Conduct
+image_url: /assets/policies/code-of-conduct/placeholder.svg
 author: null
 ---
 
@@ -11,25 +12,20 @@ Version: 1.01
 
 Date: 14 April 2025
 
-![pdf](/assets/shared/source-assets/d63b7eac09b7-pdf-file-icon.webp){: .image-icon }
+![pdf](/assets/policies/code-of-conduct/d63b7eac09b7-pdf-file-icon.webp){: .image-icon }
 
-Download the CHERI Alliance Code of Conduct – The PDF is the official version. The text is reproduced below for convenience, but if there is any difference between the two versions, the PDF takes precedence..
+Download the [CHERI Alliance](/organisations/cheri-alliance/) Code of Conduct – The PDF is the official version. The text is reproduced below for convenience, but if there is any difference between the two versions, the PDF takes precedence..
 
-This text is based on the lowRISC Code of Conduct, which is based on the LLVM Code of Conduct, which is based on the Django Project Code of Conduct, and so on…
+This text is based on the [lowRISC](/organisations/lowrisc/) Code of Conduct, which is based on the [LLVM](/software/llvm-and-clang/) Code of Conduct, which is based on the Django Project Code of Conduct, and so on…
 
 The CHERI community is a welcoming and respectful community, and we want to ensure that doesn’t change as we grow and evolve. To that end, we have a few ground rules that we ask people to adhere to:
 
-be friendly and patient,
-
-be welcoming,
-
-be considerate,
-
-be respectful,
-
-be careful in the words that you choose and be kind to others, and
-
-when we disagree, try to understand why.
+- be friendly and patient,
+- be welcoming,
+- be considerate,
+- be respectful,
+- be careful in the words that you choose and be kind to others, and
+- when we disagree, try to understand why.
 
 This isn’t an exhaustive list of things that you can’t do. Rather, take it in the spirit in which it’s intended – a guide to make it easier to communicate and participate in the community.
 
@@ -49,19 +45,13 @@ Be respectful. Not all of us will agree all the time, but disagreement is no exc
 
 Be careful in the words and images that you choose and be kind to others. Do not insult or put down other participants. Harassment and other exclusionary behaviour aren’t acceptable. In general, if someone asks you to stop, then stop. Persisting in such behaviour after being asked to stop is considered harassment. This includes, but is not limited to:
 
-Violent threats or language directed against another person.
-
-Discriminatory jokes and language.
-
-Posting sexually explicit or violent material.
-
-Posting (or threatening to post) other people’s personally identifying information (“doxing”).
-
-Personal insults, especially those using racist or sexist terms.
-
-Unwelcome sexual attention.
-
-Advocating for, or encouraging, any of the above behaviour.
+- Violent threats or language directed against another person.
+- Discriminatory jokes and language.
+- Posting sexually explicit or violent material.
+- Posting (or threatening to post) other people’s personally identifying information (“doxing”).
+- Personal insults, especially those using racist or sexist terms.
+- Unwelcome sexual attention.
+- Advocating for, or encouraging, any of the above behaviour.
 
 When we disagree, try to understand why. Disagreements, both social and technical, happen all the time and the CHERI Alliance is no exception. It is important that we resolve disagreements and differing views constructively. Remember that we’re different. The strength of the CHERI Alliance comes from its varied community, people from a wide range of backgrounds. Different people have different perspectives on issues.
 
@@ -85,16 +75,11 @@ In person reports will still be kept confidential exactly as above, but also fee
 
 Reports can be as formal or informal as needed for the situation at hand. If possible, please include as much information as you can. If you feel comfortable, please consider including:
 
-Your contact info (so we can get in touch with you if we need to follow up).
-
-Names (real, nicknames, or pseudonyms) of any individuals involved. If there were other witnesses besides you, please try to include them as well.
-
-When and where the incident occurred. Please be as specific as possible.
-
-Your account of what occurred. If there is a publicly available record (e.g. a mailing list archive or a public IRC logger) please include a link.
-
-Any extra context you believe existed for the incident.
+- Your contact info (so we can get in touch with you if we need to follow up).
+- Names (real, nicknames, or pseudonyms) of any individuals involved. If there were other witnesses besides you, please try to include them as well.
+- When and where the incident occurred. Please be as specific as possible.
+- Your account of what occurred. If there is a publicly available record (e.g. a mailing list archive or a public IRC logger) please include a link.
+- Any extra context you believe existed for the incident.
 
 If you believe this incident is ongoing.
-
-Any other information you believe we should have.
+- Any other information you believe we should have.

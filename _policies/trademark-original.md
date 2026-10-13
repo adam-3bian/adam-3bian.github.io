@@ -1,5 +1,6 @@
 ---
 title: Using the CHERI Alliance Trademark
+image_url: /assets/policies/trademark-original/placeholder.svg
 author: null
 ---
 
@@ -9,7 +10,7 @@ CHERI® is an open technology, but there are conditions to use the CHERI brand, 
 
 ## Trademark Policy
 
-The CHERI Alliance Trademark Policy ensures the CHERI name and logos are used accurately and fairly, supporting our mission to advance CHERI technology. It applies to all, even non-members. Certain uses require explicit permission, please check the full document.
+The [CHERI Alliance](/organisations/cheri-alliance/) Trademark Policy ensures the CHERI name and logos are used accurately and fairly, supporting our mission to advance CHERI technology. It applies to all, even non-members. Certain uses require explicit permission, please check the full document.
 
 For questions or permissions, please contact us.
 

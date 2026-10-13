@@ -275,6 +275,10 @@ defaults:
     path: pages/reference/source-versions/upcoming-events.md
   values:
     alternate: true
+- scope:
+    path: _people/benjamin-fletcher.md
+  values:
+    alternate: true
 title: CHERI Content Viewer
 description: A minimal Jekyll site for reviewing migrated CHERI Alliance records.
 lang: en-GB

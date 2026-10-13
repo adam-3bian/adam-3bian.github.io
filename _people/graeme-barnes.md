@@ -1,6 +1,6 @@
 ---
 title: Graeme Barnes
-image_url: null
+image_url: /assets/people/graeme-barnes/placeholder.svg
 website_url: null
 is_speaker: null
 social:
@@ -13,3 +13,7 @@ related:
 ---
 
 # Graeme Barnes
+
+## Publications
+
+- [The Arm Morello Evaluation Platform—Validating CHERI-Based Security in a High-Performance System](/papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/)

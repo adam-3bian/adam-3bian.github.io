@@ -1,5 +1,6 @@
 ---
 title: Intellectual Property Policy
+image_url: /assets/policies/intellectual-property-policy/placeholder.svg
 author: null
 ---
 
@@ -11,9 +12,9 @@ Version: 1.01
 
 Date: August 2024
 
-![pdf](/assets/shared/source-assets/d63b7eac09b7-pdf-file-icon.webp){: .image-icon }
+![pdf](/assets/policies/intellectual-property-policy/d63b7eac09b7-pdf-file-icon.webp){: .image-icon }
 
-Download the CHERI Alliance IP Policy – The PDF is the official version. The text is reproduced below for convenience, but if there is any difference between the two versions, the PDF takes precedence..
+Download the [CHERI Alliance](/organisations/cheri-alliance/) IP Policy – The PDF is the official version. The text is reproduced below for convenience, but if there is any difference between the two versions, the PDF takes precedence..
 
 ## 1 Introduction
 
@@ -43,9 +44,8 @@ Download the CHERI Alliance IP Policy – The PDF is the official version. The t
 
 “Implement” means in the context of Work Product:
 
-a) to make, market, sell, licence, lease, otherwise dispose or make use of equipment: or b) repair, use or operate equipment; or c) use methods;
-
-as specified in the respective Standard
+- a) to make, market, sell, licence, lease, otherwise dispose or make use of equipment: or b) repair, use or operate equipment; or c) use methods;
+- as specified in the respective Standard
 
 “Intellectual Property Rights” or “IPR” means any copyright, Patent, registered design, and any application thereof. Notwithstanding the foregoing, IPR does not include trademarks, trade secrets, moral rights, right of know-how and confidential information.
 
@@ -57,17 +57,12 @@ as specified in the respective Standard
 
 “Participation Rights” means the right of a Member to:
 
-a) participate in; and b) receive an Undertaking pursuant to Clause 6 for any Essential IPR in relation to a particular Project (and Standard) to which the Essential IPR relates.
-
-“Project” means any activity undertaken by the Alliance or its committees and working groups in accordance with the Articles of Association.
-
-“Right of Refusal to License” means, subject to Clause 4.4, a Member’s right of refusal to grant an “Undertaking”
-
-“Standard” means Work Product officially adopted as a standard or technical specification by an Alliance committee or working group, associated with a particular Project.
-
-“Undertaking” means an undertaking in accordance with Clause 6.1.
-
-“Working Group” means any committee established by the Board of Directors, or a subcommittee or working group of such committee.
+- a) participate in; and b) receive an Undertaking pursuant to Clause 6 for any Essential IPR in relation to a particular Project (and Standard) to which the Essential IPR relates.
+- “Project” means any activity undertaken by the Alliance or its committees and working groups in accordance with the Articles of Association.
+- “Right of Refusal to License” means, subject to Clause 4.4, a Member’s right of refusal to grant an “Undertaking”
+- “Standard” means Work Product officially adopted as a standard or technical specification by an Alliance committee or working group, associated with a particular Project.
+- “Undertaking” means an undertaking in accordance with Clause 6.1.
+- “Working Group” means any committee established by the Board of Directors, or a subcommittee or working group of such committee.
 
 “Work Product” means any deliverable of a Working Group that is formally adopted or published by the Alliance or such Working Group, including without limitation code, Standards, and related documentation.
 
@@ -113,9 +108,8 @@ a) by way of filing number, date, and if published, optionally its title, any Es
 
 4.5 The provisions pursuant to Clauses 4.2 and 4.3 above do not imply any obligation on the part of a Member to:
 
-a) subject to Clause 4.7, declare any Essential IPR; or b) conduct any searches of Essential IPR (including, without limitation, Patents) that the Member or any of its Affiliates hold.
-
-4.6 The Member agrees that any Declarations may be made available as the Alliance thinks fit.
+- a) subject to Clause 4.7, declare any Essential IPR; or b) conduct any searches of Essential IPR (including, without limitation, Patents) that the Member or any of its Affiliates hold.
+- 4.6 The Member agrees that any Declarations may be made available as the Alliance thinks fit.
 
 4.7 Where a Member has elected not to Declare or has failed to Declare any Essential IPR for a given Project in accordance with Clauses 4.2, 4.3 and 4.4, the Member shall be deemed to have given the Undertaking in accordance with the terms of Clause 6.1.
 

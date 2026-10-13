@@ -1,7 +1,7 @@
 ---
 title: Dave Harcourt
 image_url: /assets/people/dave-harcourt/9bdef3ab7087-portrait.jpg
-website_url: null
+website_url: https://cheri-alliance.org/events/speakers/dave-harcourt/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/davidharcourt/
@@ -21,10 +21,4 @@ Dave Harcourt is the CISO for BT International and a BT Fellow, with decades of 
 
 ## CHERI Talks
 
-BT business keynote | CHERI Blossoms 2026
-
-26/03/2026
-
-Cambridge, UK
-
-No Slides
+- BT business keynote | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK. [Video](https://youtu.be/R3ZbEAoGFp4)

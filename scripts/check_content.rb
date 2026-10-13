@@ -167,6 +167,39 @@ objects.each do |object|
     errors << "Missing image #{url}: #{entry['file']}" unless File.file?(path)
     images[url] = true
   end
+  next unless object.is_a?(Jekyll::Document)
+  # Every collection record has a local image (a clearly labelled SVG when no
+  # source image exists), stored under its owning collection and record name.
+  expected_assets = "/assets/#{object.collection.label}/#{object.data['slug']}/"
+  unless object.data['image_url'].to_s.start_with?(expected_assets)
+    errors << "Collection image outside its record directory: #{entry['file']}"
+  end
+  validate_values = lambda do |value, field|
+    if value.is_a?(Hash)
+      value.each { |key, child| validate_values.call(child, [field, key].reject(&:empty?).join('.')) }
+    elsif value.is_a?(Array)
+      errors << "Duplicate #{field} values: #{entry['file']}" unless value.uniq.length == value.length
+      value.each { |child| validate_values.call(child, field) }
+    elsif value && (field.end_with?('_url') || field == 'repository_urls')
+      begin
+        uri = URI.parse(value.to_s)
+        raise URI::InvalidURIError unless (uri.is_a?(URI::HTTP) && uri.host) || value.to_s.start_with?('/')
+      rescue URI::InvalidURIError
+        errors << "Invalid #{field} URL: #{entry['file']}"
+      end
+    end
+  end
+  validate_values.call(object.data, '')
+  rendered = markdown.convert(object.content)
+  rendered.scan(/<a\b[^>]*?\bhref\s*=\s*["']([^"']*)["']/i).flatten.each do |href|
+    href = CGI.unescapeHTML(href)
+    errors << "Empty Markdown link: #{entry['file']}" if href.empty?
+    next unless href.start_with?('/')
+    target = URI::DEFAULT_PARSER.unescape(href.split(/[?#]/).first)
+    unless lookup.key?(target) || File.file?(File.join(root, target.sub(%r{^/}, '')))
+      errors << "Unknown collection content link #{href}: #{entry['file']}"
+    end
+  end
 end
 errors << 'Duplicate routes in source map' unless map.map { |entry| entry['url'] }.uniq.length == map.length
 errors << 'Content record count differs from source map' unless objects.length == map.length

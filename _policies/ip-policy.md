@@ -1,5 +1,6 @@
 ---
 title: CHERI ALLIANCE CIC IP Policy
+image_url: /assets/policies/ip-policy/placeholder.svg
 author: null
 ---
 
@@ -17,7 +18,7 @@ Version: 1.01 Date: August 2024
 
 2.1 Definitions
 
-“Alliance” means the CHERI Alliance CIC.
+“Alliance” means the [CHERI Alliance](/organisations/cheri-alliance/) CIC.
 
 “Affiliate” means any subsidiary or holding company of a Member, any subsidiary of any of its holding companies and any partnership, company or undertaking (whether incorporated or unincorporated) in which a Member has the majority of the voting rights or economic interest.
 
@@ -35,9 +36,8 @@ Version: 1.01 Date: August 2024
 
 “Implement” means in the context of Work Product:
 
-a) to make, market, sell, licence, lease, otherwise dispose or make use of equipment: or b) repair, use or operate equipment; or c) use methods;
-
-as specified in the respective Standard
+- a) to make, market, sell, licence, lease, otherwise dispose or make use of equipment: or b) repair, use or operate equipment; or c) use methods;
+- as specified in the respective Standard
 
 “Intellectual Property Rights” or “IPR” means any copyright, Patent, registered design, and any application thereof. Notwithstanding the foregoing, IPR does not include trademarks, trade secrets, moral rights, right of know-how and confidential information.
 
@@ -49,17 +49,12 @@ as specified in the respective Standard
 
 “Participation Rights” means the right of a Member to:
 
-a) participate in; and b) receive an Undertaking pursuant to Clause 6 for any Essential IPR in relation to a particular Project (and Standard) to which the Essential IPR relates.
-
-“Project” means any activity undertaken by the Alliance or its committees and working groups in accordance with the Articles of Association.
-
-“Right of Refusal to License” means, subject to Clause 4.4, a Member’s right of refusal to grant an “Undertaking”
-
-“Standard” means Work Product officially adopted as a standard or technical specification by an Alliance committee or working group, associated with a particular Project.
-
-“Undertaking” means an undertaking in accordance with Clause 6.1.
-
-“Working Group” means any committee established by the Board of Directors, or a subcommittee or working group of such committee.
+- a) participate in; and b) receive an Undertaking pursuant to Clause 6 for any Essential IPR in relation to a particular Project (and Standard) to which the Essential IPR relates.
+- “Project” means any activity undertaken by the Alliance or its committees and working groups in accordance with the Articles of Association.
+- “Right of Refusal to License” means, subject to Clause 4.4, a Member’s right of refusal to grant an “Undertaking”
+- “Standard” means Work Product officially adopted as a standard or technical specification by an Alliance committee or working group, associated with a particular Project.
+- “Undertaking” means an undertaking in accordance with Clause 6.1.
+- “Working Group” means any committee established by the Board of Directors, or a subcommittee or working group of such committee.
 
 “Work Product” means any deliverable of a Working Group that is formally adopted or published by the Alliance or such Working Group, including without limitation code, Standards, and related documentation.
 
@@ -105,9 +100,8 @@ a) by way of filing number, date, and if published, optionally its title, any Es
 
 4.5 The provisions pursuant to Clauses 4.2 and 4.3 above do not imply any obligation on the part of a Member to:
 
-a) subject to Clause 4.7, declare any Essential IPR; or b) conduct any searches of Essential IPR (including, without limitation, Patents) that the Member or any of its Affiliates hold.
-
-4.6 The Member agrees that any Declarations may be made available as the Alliance thinks fit.
+- a) subject to Clause 4.7, declare any Essential IPR; or b) conduct any searches of Essential IPR (including, without limitation, Patents) that the Member or any of its Affiliates hold.
+- 4.6 The Member agrees that any Declarations may be made available as the Alliance thinks fit.
 
 4.7 Where a Member has elected not to Declare or has failed to Declare any Essential IPR for a given Project in accordance with Clauses 4.2, 4.3 and 4.4, the Member shall be deemed to have given the Undertaking in accordance with the terms of Clause 6.1.
 
@@ -123,9 +117,8 @@ a) subject to Clause 4.7, declare any Essential IPR; or b) conduct any searches 
 
 6.1 Save in the case of any Essential Patents identified in accordance with Clause 4.4 and subject to Clause 8.1, a Member will have given an undertaking that it is prepared to grant licences:
 
-a) on FRAND Terms; c) to the extent necessary to permit any Beneficiaries of the Undertaking to Implement the Standard to which the Essential IPR relates.
-
-6.2 The Undertaking may be made subject to the condition that those who seek licences agree to reciprocate.
+- a) on FRAND Terms; c) to the extent necessary to permit any Beneficiaries of the Undertaking to Implement the Standard to which the Essential IPR relates.
+- 6.2 The Undertaking may be made subject to the condition that those who seek licences agree to reciprocate.
 
 6.3 Both the Member, who is deemed to have given the Undertaking pursuant to Clause 6.1, and any Beneficiary of the Undertaking wishing to acquire a licence in accordance with Clause 6.1, acknowledge and agree that:
 

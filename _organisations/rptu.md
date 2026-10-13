@@ -12,8 +12,6 @@ social:
 
 # Rheinland-Pfälzische Technische Universität Kaiserslautern-Landau (RPTU)
 
-RPTU is a public research university in Kaiserslautern and Landau in der Pfalz, Germany. RPTU is home to 17,000 students, 300 professorships, and 160 degree programs. As a place of top international research and an academic talent factory for…
-
 ## Description
 
 RPTU is a public research university in Kaiserslautern and Landau in der Pfalz, Germany. RPTU is home to 17,000 students, 300 professorships, and 160 degree programs. As a place of top international research and an academic talent factory for business and science, we offer an excellent, well-connected environment for study and research.
@@ -26,4 +24,4 @@ The Chair of Electronic Design Automation at RPTU in Kaiserslautern has a long b
 
 VeriCHERI Verification IP:
 
-https://github.com/RPTU-EIS/VeriCHERI
+<https://github.com/RPTU-EIS/VeriCHERI>

@@ -1,6 +1,6 @@
 ---
 title: FreeBSD
-image_url: null
+image_url: /assets/software/freebsd/placeholder.svg
 website_url: https://www.freebsd.org/
 repository_urls:
 - https://github.com/CTSRD-CHERI/cheribsd
@@ -16,7 +16,7 @@ related:
 
 # FreeBSD
 
-FreeBSD provides the upstream operating-system foundation from which CheriBSD develops application-class CHERI support.
+FreeBSD provides the upstream operating-system foundation from which [CheriBSD](/software/cheribsd/) develops application-class CHERI support.
 
 FreeBSD is the general-purpose operating system on which CheriBSD is based. Its kernel, C library, runtime linker, command-line tools, ports framework, filesystems, and network stack provide the software foundation for much of the application-class CHERI work.
 
@@ -38,8 +38,6 @@ Complete CHERI support remains in CheriBSD rather than a stock FreeBSD release. 
 
 ## Project links
 
-FreeBSD Project
-
-CheriBSD source
-
-CheriBSD overview
+- [FreeBSD Project](https://www.freebsd.org/)
+- [CheriBSD source](https://github.com/CTSRD-CHERI/cheribsd)
+- [CheriBSD overview](/software/cheribsd/)

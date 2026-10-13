@@ -12,17 +12,13 @@ social:
 
 # TechWorks
 
-TechWorks is a new type of industry association at the core of the UK deep tech community with an ambition to harness our fantastic engineering and innovation to develop the UK’s position as a global technology super-power. TechWorks operates beyond…
-
 ## Description
 
 TechWorks is a new type of industry association at the core of the UK deep tech community with an ambition to harness our fantastic engineering and innovation to develop the UK’s position as a global technology super-power. TechWorks operates beyond established silos by:
 
-Creating dynamic, connected technical and business communities to empower innovation and collaboration, supporting business growth and investment.
-
-Identifying the critical common challenges and leading responses to tackle them.
-
-Developing the UK tech ecosystem and partnerships across industry, academia and government to ensure the UK is amongst the best location globally to start, build and scale a Deep Tech organisation.
+- Creating dynamic, connected technical and business communities to empower innovation and collaboration, supporting business growth and investment.
+- Identifying the critical common challenges and leading responses to tackle them.
+- Developing the UK tech ecosystem and partnerships across industry, academia and government to ensure the UK is amongst the best location globally to start, build and scale a Deep Tech organisation.
 
 ## CHERI Activities
 

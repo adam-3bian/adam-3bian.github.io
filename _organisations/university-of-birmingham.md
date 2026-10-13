@@ -12,11 +12,9 @@ social:
 
 # University of Birmingham
 
-The University of Birmingham is a world top 100 university and part of the prestigious Russell Group. Its School of Computer Science is ranked 3rd in the UK for Research (REF’21) and 7th for Education (CUG’23), employing \~70 staff and teaching over…
-
 ## Description
 
-The University of Birmingham is a world top 100 university and part of the prestigious Russell Group. Its School of Computer Science is ranked 3rd in the UK for Research (REF’21) and 7th for Education (CUG’23), employing \~70 staff and teaching over 2000 students. Within the School of Computer Science, the Birmingham Centre for Cyber Security and Privacy is a world leading group in security and privacy. The group is recognised as an NCSC Academic Centre of Excellence in Cyber Security Research (ACE-CSR), and leads the NCSC-certified MSc programme in Cyber Security.
+The University of Birmingham is a world top 100 university and part of the prestigious Russell Group. Its School of Computer Science is ranked 3rd in the UK for Research (REF’21) and 7th for Education (CUG’23), employing \~70 staff and teaching over 2000 students. Within the School of Computer Science, the Birmingham Centre for Cyber Security and Privacy is a world leading group in security and privacy. The group is recognised as an [NCSC](/organisations/ncsc/) Academic Centre of Excellence in Cyber Security Research (ACE-CSR), and leads the NCSC-certified MSc programme in Cyber Security.
 
 ## CHERI Activities
 
@@ -28,4 +26,4 @@ CAP-TEE project led by Prof David Oswald, the Centre for Cyber Security and Priv
 
 See the Github organisation for all open-source assets:
 
-https://github.com/cap-tee See also: https://cap-tee.org/publications/
+<https://github.com/cap-tee> See also: <https://cap-tee.org/publications/>

@@ -1,6 +1,6 @@
 ---
 title: Real-Time Operating Systems
-image_url: null
+image_url: /assets/software/real-time-operating-systems/placeholder.svg
 website_url: null
 repository_urls: []
 type: null
@@ -23,11 +23,11 @@ Embedded systems cover a wide range of timing, memory, power, assurance, device,
 
 ### CHERIoT
 
-CHERIoT co-designs a CHERI instruction-set profile, RTOS, compartment model, linker, allocator, and SDK for small embedded systems. Capability protection is part of the platform’s foundation rather than an extension to a conventional process model.
+[CHERIoT](/hardware/cheriot/) co-designs a CHERI instruction-set profile, RTOS, compartment model, linker, allocator, and SDK for small embedded systems. Capability protection is part of the platform’s foundation rather than an extension to a conventional process model.
 
 ### Zephyr
 
-CHERI-enabled Zephyr brings capability state and memory protection into Zephyr’s existing kernel, APIs, drivers, configuration system, and board ecosystem. Its attraction is continuity with software already built around Zephyr.
+CHERI-enabled [Zephyr](/software/zephyr/) brings capability state and memory protection into Zephyr’s existing kernel, APIs, drivers, configuration system, and board ecosystem. Its attraction is continuity with software already built around Zephyr.
 
 ### FreeRTOS
 

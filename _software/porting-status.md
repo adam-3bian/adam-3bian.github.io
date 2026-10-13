@@ -1,15 +1,20 @@
 ---
 title: Porting Status
-image_url: null
+image_url: /assets/software/porting-status/placeholder.svg
 website_url: null
 repository_urls: []
 type: null
 status: null
 related:
   organisations: []
-  hardware: []
+  hardware:
+  - cheriot
   software:
   - debugging-tools
+  - cheri-linux
+  - cheribsd
+  - zephyr
+  - rust
 ---
 
 # Porting Status
@@ -26,15 +31,15 @@ Status claims also change with architecture revisions, toolchain branches, kerne
 
 ## Current areas of public work
 
-CheriBSD combines a capability-aware kernel, hybrid and pure-capability user space, developer tools, and a substantial history of third-party software ports.
+[CheriBSD](/software/cheribsd/) combines a capability-aware kernel, hybrid and pure-capability user space, developer tools, and a substantial history of third-party software ports.
 
-CHERI Linux spans kernel, user-space, toolchain, and platform work across active branches and processor environments.
+[CHERI Linux](/software/cheri-linux/) spans kernel, user-space, toolchain, and platform work across active branches and processor environments.
 
-CHERIoT provides an embedded architecture, RTOS, compartment model, SDK, and growing application ecosystem designed together.
+[CHERIoT](/hardware/cheriot/) provides an embedded architecture, RTOS, compartment model, SDK, and growing application ecosystem designed together.
 
-CHERI-enabled Zephyr and FreeRTOS bring capability work into established embedded operating-system communities.
+CHERI-enabled [Zephyr](/software/zephyr/) and FreeRTOS bring capability work into established embedded operating-system communities.
 
-Rust and managed runtimes extend CHERI beyond established C and C++ toolchains, with support varying between target projects.
+[Rust](/software/rust/) and managed runtimes extend CHERI beyond established C and C++ toolchains, with support varying between target projects.
 
 ## Where status is recorded
 

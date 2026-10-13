@@ -1,20 +1,28 @@
 ---
 title: Technical FAQ
-image_url: null
+image_url: /assets/guides/technical-faq/placeholder.svg
 repository_urls: []
 updated_date: null
 authors: []
 related:
-  groups: []
-  hardware: []
-  software: []
+  groups:
+  - cheri-linux-working-group
+  hardware:
+  - morello
+  - cheriot
+  - sonata
+  software:
+  - cheri-linux
+  - simulators
+  - cheribsd
+  - freebsd
 ---
 
 # Technical FAQ
 
 Clear answers to common technical questions about CHERI.
 
-If you are looking for a high-leval FAQ, please go to FAQ. You can also take a look at the University of Cambridge’s CHERI FAQ
+If you are looking for a high-leval FAQ, please go to FAQ. You can also take a look at the [University of Cambridge](/organisations/university-of-cambridge/)’s CHERI FAQ
 
 ## How does CHERI align with ETSI TS 104 198?
 
@@ -22,7 +30,7 @@ ETSI TS 104 198 defines a framework for achieving different levels of memory-saf
 
 ## Is CHERI a processor or an operating system?
 
-Neither. CHERI is a capability architecture that can be incorporated into instruction-set architectures (ISA), processor implementations, operating systems, and software. Examples in the ecosystem include CHERI-RISC-V, Arm Morello, CHERIoT, CheriBSD, and CHERI Linux.
+Neither. CHERI is a capability architecture that can be incorporated into instruction-set architectures (ISA), processor implementations, operating systems, and software. Examples in the ecosystem include CHERI-RISC-V, [Arm Morello](/hardware/morello/), [CHERIoT](/hardware/cheriot/), [CheriBSD](/software/cheribsd/), and [CHERI Linux](/software/cheri-linux/).
 
 ## Do we have to rewrite existing software?
 
@@ -48,24 +56,24 @@ Hybrid software uses conventional pointers alongside explicitly managed capabili
 
 ## Can I try CHERI without hardware?
 
-Yes. QEMU and formal-model simulators support several CHERI environments. The right route depends on whether you want an application-class CheriBSD environment or an embedded CHERIoT environment. Start with Run CHERI in Simulation.
+Yes. QEMU and formal-model simulators support several CHERI environments. The right route depends on whether you want an application-class CheriBSD environment or an embedded CHERIoT environment. Start with [Run CHERI in Simulation](/guides/run-cheri-in-simulation/).
 
 ## What is Morello?
 
-Morello is an Arm-developed prototype architecture, system-on-chip, and development board designed to evaluate CHERI at application-processor scale. It has supported extensive work on compilers, CheriBSD, Linux, applications, and security evaluation. It is a good platform for development and the CHERI Alliance can help teams get a loan of a Morello board. See Morello
+Morello is an Arm-developed prototype architecture, system-on-chip, and development board designed to evaluate CHERI at application-processor scale. It has supported extensive work on compilers, CheriBSD, Linux, applications, and security evaluation. It is a good platform for development and the [CHERI Alliance](/organisations/cheri-alliance/) can help teams get a loan of a Morello board. See Morello
 
 ## What is CHERIoT?
 
-CHERIoT is a 32-bit CHERI-based hardware-software platform designed for embedded and Internet of Things systems. It combines a CHERI-enabled RISC-V instruction set, processor cores, a compartmentalised real-time operating system, a toolchain, simulators, and development platforms such as Sonata. See CHERIoT
+CHERIoT is a 32-bit CHERI-based hardware-software platform designed for embedded and Internet of Things systems. It combines a CHERI-enabled RISC-V instruction set, processor cores, a compartmentalised real-time operating system, a toolchain, simulators, and development platforms such as [Sonata](/hardware/sonata/). See CHERIoT
 
 ## What is CheriBSD?
 
-CheriBSD is FreeBSD adapted for CHERI-RISC-V and Arm Morello. It provides a mature environment for architecture, operating-system, application-porting, and compartmentalisation work. See CheriBSD
+CheriBSD is [FreeBSD](/software/freebsd/) adapted for CHERI-RISC-V and Arm Morello. It provides a mature environment for architecture, operating-system, application-porting, and compartmentalisation work. See CheriBSD
 
 ## What is CHERI Linux?
 
-CHERI Linux is Linux adapted to CHERI systems. The CHERI Alliance Linux Working Group coordinates the porting effort, cross-architecture roadmap, and public repositories. Check current project documentation for supported branches, targets, and maturity. See CHERI Linux
+CHERI Linux is Linux adapted to CHERI systems. The [CHERI Alliance Linux Working Group](/groups/cheri-linux-working-group/) coordinates the porting effort, cross-architecture roadmap, and public repositories. Check current project documentation for supported branches, targets, and maturity. See CHERI Linux
 
 ## What is CHERI-RISC-V?
 
-CHERI-RISC-V applies CHERI capability concepts to the RISC-V instruction-set architecture. It is used across application-class, embedded, FPGA, simulation, operating-system, and commercial processor work. This is being standardised through RISC-V International.
+CHERI-RISC-V applies CHERI capability concepts to the RISC-V instruction-set architecture. It is used across application-class, embedded, FPGA, simulation, operating-system, and commercial processor work. This is being standardised through [RISC-V International](/organisations/risc-v-international/).

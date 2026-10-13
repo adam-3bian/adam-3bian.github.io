@@ -205,16 +205,6 @@
     "field": "related.pages"
   },
   {
-    "from": "/reference/source-versions/contact/",
-    "to": "/alliance/membership/membership-benefits-and-options/",
-    "field": "related.pages"
-  },
-  {
-    "from": "/reference/source-versions/contact/",
-    "to": "/news-and-events/people-and-opportunities/job-opportunities/",
-    "field": "related.pages"
-  },
-  {
     "from": "/alliance/membership/contact/",
     "to": "/alliance/membership/membership-benefits-and-options/",
     "field": "related.pages"
@@ -225,12 +215,22 @@
     "field": "related.pages"
   },
   {
-    "from": "/reference/source-versions/cost-of-memory-unsafety/",
-    "to": "/adopt/business-case/the-business-case/",
+    "from": "/reference/source-versions/contact/",
+    "to": "/alliance/membership/membership-benefits-and-options/",
+    "field": "related.pages"
+  },
+  {
+    "from": "/reference/source-versions/contact/",
+    "to": "/news-and-events/people-and-opportunities/job-opportunities/",
     "field": "related.pages"
   },
   {
     "from": "/adopt/business-case/cost-of-memory-unsafety/",
+    "to": "/adopt/business-case/the-business-case/",
+    "field": "related.pages"
+  },
+  {
+    "from": "/reference/source-versions/cost-of-memory-unsafety/",
     "to": "/adopt/business-case/the-business-case/",
     "field": "related.pages"
   },
@@ -725,6 +725,16 @@
     "field": "related.organisations"
   },
   {
+    "from": "/people/adam-finney/",
+    "to": "/organisations/3bian/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/people/adam-finney/",
+    "to": "/groups/marketing/",
+    "field": "related.groups"
+  },
+  {
     "from": "/people/alastair-beresford/",
     "to": "/organisations/university-of-cambridge/",
     "field": "related.organisations"
@@ -740,6 +750,11 @@
     "field": "related.organisations"
   },
   {
+    "from": "/people/alex-richardson/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
     "from": "/people/alexander-voyevoda/",
     "to": "/organisations/um-labs/",
     "field": "related.organisations"
@@ -750,9 +765,29 @@
     "field": "related.organisations"
   },
   {
+    "from": "/people/alfredo-mazzinghi/",
+    "to": "/organisations/university-of-cambridge/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/people/alfredo-mazzinghi/",
+    "to": "/groups/cheri-qemu/",
+    "field": "related.groups"
+  },
+  {
     "from": "/people/allison-randal/",
     "to": "/organisations/capabilities-limited/",
     "field": "related.organisations"
+  },
+  {
+    "from": "/people/allison-randal/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/people/allison-randal/",
+    "to": "/groups/cheri-linux-working-group/",
+    "field": "related.groups"
   },
   {
     "from": "/people/andrew-lindsay/",
@@ -760,8 +795,18 @@
     "field": "related.organisations"
   },
   {
+    "from": "/people/andrew-lindsay/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
     "from": "/people/andrew-murray/",
     "to": "/organisations/the-good-penguin/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/people/andrew-murray/",
+    "to": "/organisations/the-capable-hub/",
     "field": "related.organisations"
   },
   {
@@ -780,9 +825,29 @@
     "field": "related.organisations"
   },
   {
+    "from": "/people/ben-fletcher/",
+    "to": "/groups/cheri-in-soc/",
+    "field": "related.groups"
+  },
+  {
+    "from": "/people/benjamin-fletcher/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
     "from": "/people/bradley-finn/",
     "to": "/organisations/dsit/",
     "field": "related.organisations"
+  },
+  {
+    "from": "/people/brooks-davis/",
+    "to": "/organisations/capabilities-limited/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/people/brooks-davis/",
+    "to": "/groups/os-support-and-portability/",
+    "field": "related.groups"
   },
   {
     "from": "/people/carl-shaw/",
@@ -798,6 +863,21 @@
     "from": "/people/david-chisnall/",
     "to": "/organisations/sci-semiconductor/",
     "field": "related.organisations"
+  },
+  {
+    "from": "/people/david-chisnall/",
+    "to": "/organisations/university-of-cambridge/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/people/david-chisnall/",
+    "to": "/organisations/google/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/people/david-chisnall/",
+    "to": "/groups/cheri-c-cplusplus/",
+    "field": "related.groups"
   },
   {
     "from": "/people/david-musliner/",
@@ -835,6 +915,11 @@
     "field": "related.organisations"
   },
   {
+    "from": "/people/edoardo-marangoni/",
+    "to": "/groups/rust-plus-cheri/",
+    "field": "related.groups"
+  },
+  {
     "from": "/people/gavin-ferris/",
     "to": "/organisations/cheri-alliance/",
     "field": "related.organisations"
@@ -855,6 +940,16 @@
     "field": "related.organisations"
   },
   {
+    "from": "/people/hesham-almatary/",
+    "to": "/organisations/university-of-cambridge/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/people/hesham-almatary/",
+    "to": "/groups/cheri-for-sel4/",
+    "field": "related.groups"
+  },
+  {
     "from": "/people/javier-orensanz-martinez/",
     "to": "/organisations/lowrisc/",
     "field": "related.organisations"
@@ -865,9 +960,24 @@
     "field": "related.organisations"
   },
   {
+    "from": "/people/jennifer-jackson/",
+    "to": "/groups/cheri-zephyr/",
+    "field": "related.groups"
+  },
+  {
     "from": "/people/jeremy-singer/",
     "to": "/organisations/university-of-glasgow/",
     "field": "related.organisations"
+  },
+  {
+    "from": "/people/jeremy-singer/",
+    "to": "/organisations/lowrisc/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/people/jeremy-singer/",
+    "to": "/groups/cheri-virtual-machines/",
+    "field": "related.groups"
   },
   {
     "from": "/people/jessica-clarke/",
@@ -877,6 +987,11 @@
   {
     "from": "/people/jianyi-cheng/",
     "to": "/organisations/university-of-edinburgh/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/people/jianyi-cheng/",
+    "to": "/organisations/university-of-cambridge/",
     "field": "related.organisations"
   },
   {
@@ -895,6 +1010,11 @@
     "field": "related.organisations"
   },
   {
+    "from": "/people/john-goodacre/",
+    "to": "/organisations/the-university-of-manchester/",
+    "field": "related.organisations"
+  },
+  {
     "from": "/people/john-thomson/",
     "to": "/organisations/lowrisc/",
     "field": "related.organisations"
@@ -903,6 +1023,16 @@
     "from": "/people/jonathan-woodruff/",
     "to": "/organisations/capabilities-limited/",
     "field": "related.organisations"
+  },
+  {
+    "from": "/people/jonathan-woodruff/",
+    "to": "/organisations/university-of-cambridge/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/people/jonathan-woodruff/",
+    "to": "/groups/cheri-research/",
+    "field": "related.groups"
   },
   {
     "from": "/people/joshua-lant/",
@@ -945,8 +1075,33 @@
     "field": "related.organisations"
   },
   {
+    "from": "/people/manu-ravishankar/",
+    "to": "/organisations/dsit/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/people/maricel-ventura/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/people/maricel-ventura/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/people/maricel-ventura/",
+    "to": "/groups/cheri-plus-safety/",
+    "field": "related.groups"
+  },
+  {
     "from": "/people/mark-batty/",
     "to": "/organisations/university-of-kent/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/people/mark-batty/",
+    "to": "/organisations/ukri/",
     "field": "related.organisations"
   },
   {
@@ -960,6 +1115,16 @@
     "field": "related.organisations"
   },
   {
+    "from": "/people/marno-van-der-maas/",
+    "to": "/organisations/university-of-cambridge/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/people/marno-van-der-maas/",
+    "to": "/groups/repository-management/",
+    "field": "related.groups"
+  },
+  {
     "from": "/people/martin-atkins/",
     "to": "/organisations/mission-critical-applications-limited/",
     "field": "related.organisations"
@@ -970,9 +1135,29 @@
     "field": "related.organisations"
   },
   {
+    "from": "/people/merve-gulmez/",
+    "to": "/organisations/ku-leuven/",
+    "field": "related.organisations"
+  },
+  {
     "from": "/people/mike-eftimakis/",
     "to": "/organisations/cheri-alliance/",
     "field": "related.organisations"
+  },
+  {
+    "from": "/people/mike-eftimakis/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/people/mike-eftimakis/",
+    "to": "/groups/certification-working-group/",
+    "field": "related.groups"
+  },
+  {
+    "from": "/people/mike-eftimakis/",
+    "to": "/groups/promotion-and-ambassador-program/",
+    "field": "related.groups"
   },
   {
     "from": "/people/mike-halsall/",
@@ -985,9 +1170,29 @@
     "field": "related.organisations"
   },
   {
+    "from": "/people/murali-vijayaraghavan/",
+    "to": "/groups/mmu-less-systems/",
+    "field": "related.groups"
+  },
+  {
     "from": "/people/murat-cakmak/",
     "to": "/organisations/microservice-store/",
     "field": "related.organisations"
+  },
+  {
+    "from": "/people/oliver-gray/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/people/oliver-gray/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/people/oliver-gray/",
+    "to": "/groups/cheri-freertos/",
+    "field": "related.groups"
   },
   {
     "from": "/people/ollie-whitehouse/",
@@ -1000,6 +1205,11 @@
     "field": "related.organisations"
   },
   {
+    "from": "/people/paul-metzger/",
+    "to": "/organisations/university-of-edinburgh/",
+    "field": "related.organisations"
+  },
+  {
     "from": "/people/paul-waller/",
     "to": "/organisations/ncsc/",
     "field": "related.organisations"
@@ -1007,6 +1217,11 @@
   {
     "from": "/people/peter-cox/",
     "to": "/organisations/um-labs/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/people/peter-cox/",
+    "to": "/organisations/dstl/",
     "field": "related.organisations"
   },
   {
@@ -1025,6 +1240,11 @@
     "field": "related.organisations"
   },
   {
+    "from": "/people/robert-watson/",
+    "to": "/organisations/freebsd-foundation/",
+    "field": "related.organisations"
+  },
+  {
     "from": "/people/sam-cater/",
     "to": "/organisations/bt-group/",
     "field": "related.organisations"
@@ -1033,6 +1253,21 @@
     "from": "/people/samuel-stark/",
     "to": "/organisations/university-of-cambridge/",
     "field": "related.organisations"
+  },
+  {
+    "from": "/people/sarah-harris/",
+    "to": "/organisations/university-of-kent/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/people/sarah-harris/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/people/sarah-harris/",
+    "to": "/groups/rust-plus-cheri/",
+    "field": "related.groups"
   },
   {
     "from": "/people/simon-moore/",
@@ -1045,6 +1280,26 @@
     "field": "related.organisations"
   },
   {
+    "from": "/people/tariq-kurd/",
+    "to": "/organisations/risc-v-international/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/people/thierno-sene/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/people/thierno-sene/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/people/thierno-sene/",
+    "to": "/groups/cheri-plus-safety/",
+    "field": "related.groups"
+  },
+  {
     "from": "/people/thomas-nyman/",
     "to": "/organisations/ericsson/",
     "field": "related.organisations"
@@ -1055,9 +1310,19 @@
     "field": "related.organisations"
   },
   {
+    "from": "/people/tora-fridholm/",
+    "to": "/groups/marketing/",
+    "field": "related.groups"
+  },
+  {
     "from": "/news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/",
     "to": "/people/mike-eftimakis/",
     "field": "authors"
+  },
+  {
+    "from": "/news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/",
+    "to": "/software/rust/",
+    "field": "related.software"
   },
   {
     "from": "/news/ai-has-compressed-the-attack-timeline/",
@@ -1065,9 +1330,69 @@
     "field": "authors"
   },
   {
+    "from": "/news/ai-has-compressed-the-attack-timeline/",
+    "to": "/organisations/google/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/ai-has-compressed-the-attack-timeline/",
+    "to": "/software/freebsd/",
+    "field": "related.software"
+  },
+  {
+    "from": "/news/amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon/",
+    "to": "/organisations/university-of-cambridge/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon/",
+    "to": "/organisations/verisilicon/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon/",
+    "to": "/organisations/ensilica/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon/",
+    "to": "/organisations/lowrisc/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon/",
+    "to": "/organisations/siemens/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon/",
+    "to": "/organisations/google/",
+    "field": "related.organisations"
+  },
+  {
     "from": "/news/behind-the-scenes-inside-the-promotion-and-ambassador-program-working-group/",
     "to": "/people/mike-eftimakis/",
     "field": "authors"
+  },
+  {
+    "from": "/news/behind-the-scenes-inside-the-promotion-and-ambassador-program-working-group/",
+    "to": "/groups/promotion-and-ambassador-program/",
+    "field": "related.groups"
+  },
+  {
+    "from": "/news/behind-the-scenes-inside-the-promotion-and-ambassador-program-working-group/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
   },
   {
     "from": "/news/beyond-software-patching/",
@@ -1075,9 +1400,209 @@
     "field": "authors"
   },
   {
+    "from": "/news/beyond-software-patching/",
+    "to": "/organisations/university-of-cambridge/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/beyond-software-patching/",
+    "to": "/organisations/sci-semiconductor/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/beyond-software-patching/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/beyond-software-patching/",
+    "to": "/organisations/ensilica/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/beyond-software-patching/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/beyond-software-patching/",
+    "to": "/organisations/lowrisc/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/beyond-software-patching/",
+    "to": "/hardware/fpga-platforms/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/news/beyond-software-patching/",
+    "to": "/software/cheri-linux/",
+    "field": "related.software"
+  },
+  {
+    "from": "/news/beyond-software-patching/",
+    "to": "/software/zephyr/",
+    "field": "related.software"
+  },
+  {
+    "from": "/news/beyond-software-patching/",
+    "to": "/software/rust/",
+    "field": "related.software"
+  },
+  {
+    "from": "/news/bt-group-joins-the-cheri-alliance-to-advance-cybersecurity-innovation/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/bt-group-joins-the-cheri-alliance-to-advance-cybersecurity-innovation/",
+    "to": "/organisations/bt-group/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/building-a-safer-digital-future/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/building-a-safer-digital-future/",
+    "to": "/hardware/morello/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/news/building-a-safer-digital-future/",
+    "to": "/software/freebsd/",
+    "field": "related.software"
+  },
+  {
+    "from": "/news/building-a-safer-digital-future/",
+    "to": "/software/llvm-and-clang/",
+    "field": "related.software"
+  },
+  {
+    "from": "/news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level/",
+    "to": "/organisations/tccoe/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level/",
+    "to": "/organisations/critical-technologies/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level/",
+    "to": "/organisations/university-of-birmingham/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level/",
+    "to": "/organisations/university-of-cambridge/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level/",
+    "to": "/organisations/university-of-glasgow/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level/",
+    "to": "/organisations/capabilities-limited/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level/",
+    "to": "/organisations/freebsd-foundation/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level/",
+    "to": "/organisations/swansea-university/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level/",
+    "to": "/organisations/chevin-technology/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level/",
+    "to": "/organisations/sci-semiconductor/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level/",
+    "to": "/organisations/sri/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level/",
+    "to": "/organisations/parvat-infotech/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level/",
+    "to": "/organisations/techworks/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level/",
+    "to": "/organisations/lowrisc/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level/",
+    "to": "/organisations/google/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level/",
+    "to": "/organisations/cynam/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level/",
+    "to": "/organisations/dsit/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level/",
+    "to": "/organisations/dstl/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level/",
+    "to": "/organisations/ncsc/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level/",
+    "to": "/software/freebsd/",
+    "field": "related.software"
+  },
+  {
     "from": "/news/cheri-alliance-to-distribute-arm-morello-boards-the-journey-beyond-dsbd-continues/",
     "to": "/people/mike-eftimakis/",
     "field": "authors"
+  },
+  {
+    "from": "/news/cheri-alliance-to-distribute-arm-morello-boards-the-journey-beyond-dsbd-continues/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cheri-alliance-to-distribute-arm-morello-boards-the-journey-beyond-dsbd-continues/",
+    "to": "/hardware/morello/",
+    "field": "related.hardware"
   },
   {
     "from": "/news/cheri-memory-safety-mitigates-llm-discovered-vulnerability-in-freebsd/",
@@ -1085,9 +1610,39 @@
     "field": "authors"
   },
   {
+    "from": "/news/cheri-memory-safety-mitigates-llm-discovered-vulnerability-in-freebsd/",
+    "to": "/organisations/university-of-cambridge/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cheri-memory-safety-mitigates-llm-discovered-vulnerability-in-freebsd/",
+    "to": "/organisations/capabilities-limited/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cheri-memory-safety-mitigates-llm-discovered-vulnerability-in-freebsd/",
+    "to": "/software/cheribsd/",
+    "field": "related.software"
+  },
+  {
+    "from": "/news/cheri-memory-safety-mitigates-llm-discovered-vulnerability-in-freebsd/",
+    "to": "/software/freebsd/",
+    "field": "related.software"
+  },
+  {
     "from": "/news/cheri-or-cheriot-the-answer-is-not-what-you-think-original/",
     "to": "/people/adam-finney/",
     "field": "authors"
+  },
+  {
+    "from": "/news/cheri-or-cheriot-the-answer-is-not-what-you-think-original/",
+    "to": "/organisations/sci-semiconductor/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cheri-or-cheriot-the-answer-is-not-what-you-think-original/",
+    "to": "/hardware/cheriot/",
+    "field": "related.hardware"
   },
   {
     "from": "/news/cheri-or-cheriot-the-answer-is-not-what-you-think/",
@@ -1095,9 +1650,49 @@
     "field": "authors"
   },
   {
-    "from": "/news/cheri-tag-bit-transport-overlay-standard-version-0-9-released/",
-    "to": "/people/benjamin-fletcher/",
+    "from": "/news/cheri-or-cheriot-the-answer-is-not-what-you-think/",
+    "to": "/organisations/sci-semiconductor/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cheri-or-cheriot-the-answer-is-not-what-you-think/",
+    "to": "/hardware/cheriot/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/news/cheri-sel4-and-cheri-microkit-released/",
+    "to": "/people/hesham-almatary/",
     "field": "authors"
+  },
+  {
+    "from": "/news/cheri-sel4-and-cheri-microkit-released/",
+    "to": "/groups/cheri-for-sel4/",
+    "field": "related.groups"
+  },
+  {
+    "from": "/news/cheri-sel4-and-cheri-microkit-released/",
+    "to": "/organisations/capabilities-limited/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cheri-sel4-and-cheri-microkit-released/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cheri-sel4-and-cheri-microkit-released/",
+    "to": "/software/rust/",
+    "field": "related.software"
+  },
+  {
+    "from": "/news/cheri-tag-bit-transport-overlay-standard-version-0-9-released/",
+    "to": "/people/ben-fletcher/",
+    "field": "authors"
+  },
+  {
+    "from": "/news/cheri-tag-bit-transport-overlay-standard-version-0-9-released/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
   },
   {
     "from": "/news/cheri-zephyr-v0-4-0-release/",
@@ -1105,9 +1700,29 @@
     "field": "authors"
   },
   {
+    "from": "/news/cheri-zephyr-v0-4-0-release/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cheri-zephyr-v0-4-0-release/",
+    "to": "/software/zephyr/",
+    "field": "related.software"
+  },
+  {
     "from": "/news/cheriot-1-0-specification-released-original/",
     "to": "/people/adam-finney/",
     "field": "authors"
+  },
+  {
+    "from": "/news/cheriot-1-0-specification-released-original/",
+    "to": "/hardware/cheriot-ibex/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/news/cheriot-1-0-specification-released-original/",
+    "to": "/hardware/cheriot/",
+    "field": "related.hardware"
   },
   {
     "from": "/news/cheriot-1-0-specification-released/",
@@ -1115,9 +1730,69 @@
     "field": "authors"
   },
   {
+    "from": "/news/cheriot-1-0-specification-released/",
+    "to": "/hardware/cheriot-ibex/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/news/cheriot-1-0-specification-released/",
+    "to": "/hardware/cheriot/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/news/cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus/",
+    "to": "/hardware/cheriot-ibex/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/news/codasip-enables-secure-linux-by-donating-cheri-risc-v-sdk-to-the-cheri-alliance/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/codasip-enables-secure-linux-by-donating-cheri-risc-v-sdk-to-the-cheri-alliance/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
     "from": "/news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology-original/",
     "to": "/people/andrew-lindsay/",
     "field": "authors"
+  },
+  {
+    "from": "/news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology-original/",
+    "to": "/organisations/sci-semiconductor/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology-original/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology-original/",
+    "to": "/organisations/ensilica/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology-original/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology-original/",
+    "to": "/organisations/lowrisc/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology-original/",
+    "to": "/organisations/dsit/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology-original/",
+    "to": "/software/cheri-linux/",
+    "field": "related.software"
   },
   {
     "from": "/news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology/",
@@ -1125,9 +1800,259 @@
     "field": "authors"
   },
   {
+    "from": "/news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology/",
+    "to": "/organisations/sci-semiconductor/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology/",
+    "to": "/organisations/ensilica/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology/",
+    "to": "/organisations/lowrisc/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology/",
+    "to": "/organisations/dsit/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology/",
+    "to": "/software/cheri-linux/",
+    "field": "related.software"
+  },
+  {
+    "from": "/news/combatting-the-ai-threat-with-cheri/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/combatting-the-ai-threat-with-cheri/",
+    "to": "/organisations/um-labs/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/combatting-the-ai-threat-with-cheri/",
+    "to": "/hardware/morello/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/news/combatting-the-ai-threat-with-cheri/",
+    "to": "/software/cheri-linux/",
+    "field": "related.software"
+  },
+  {
+    "from": "/news/combatting-the-ai-threat-with-cheri/",
+    "to": "/software/cheribsd/",
+    "field": "related.software"
+  },
+  {
+    "from": "/news/combatting-the-ai-threat-with-cheri/",
+    "to": "/software/freebsd/",
+    "field": "related.software"
+  },
+  {
+    "from": "/news/cybersecurity-by-design-from-research-to-industry-conference-report/",
+    "to": "/organisations/sci-semiconductor/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cybersecurity-by-design-from-research-to-industry-conference-report/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cybersecurity-by-design-from-research-to-industry-conference-report/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cybersecurity-by-design-from-research-to-industry-conference-report/",
+    "to": "/organisations/lowrisc/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cybersecurity-by-design-from-research-to-industry-conference-report/",
+    "to": "/organisations/google/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cybersecurity-by-design-from-research-to-industry-conference-report/",
+    "to": "/organisations/cynam/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cybersecurity-by-design-from-research-to-industry-conference-report/",
+    "to": "/organisations/ncsc/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cybersecurity-by-design-from-research-to-industry-conference-report/",
+    "to": "/organisations/ukri/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/cybersecurity-by-design-from-research-to-industry-conference-report/",
+    "to": "/hardware/cheriot-ibex/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/news/cybersecurity-by-design-from-research-to-industry-conference-report/",
+    "to": "/hardware/cheriot/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/news/cybersecurity-by-design-from-research-to-industry-conference-report/",
+    "to": "/hardware/morello/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/news/cybersecurity-by-design-from-research-to-industry-conference-report/",
+    "to": "/hardware/sonata/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/news/end-users-demand-memory-safety-in-their-systems/",
+    "to": "/organisations/university-of-cambridge/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/end-users-demand-memory-safety-in-their-systems/",
+    "to": "/organisations/sci-semiconductor/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/end-users-demand-memory-safety-in-their-systems/",
+    "to": "/organisations/digital-catapult/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/end-users-demand-memory-safety-in-their-systems/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/end-users-demand-memory-safety-in-their-systems/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/end-users-demand-memory-safety-in-their-systems/",
+    "to": "/organisations/lowrisc/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/end-users-demand-memory-safety-in-their-systems/",
+    "to": "/organisations/ncsc/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/iceni-first-look/",
+    "to": "/organisations/sci-semiconductor/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/iceni-first-look/",
+    "to": "/hardware/fpga-platforms/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/news/iceni-first-look/",
+    "to": "/hardware/cheriot/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/news/iceni-first-look/",
+    "to": "/hardware/sonata/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/news/iceni-first-look/",
+    "to": "/software/simulators/",
+    "field": "related.software"
+  },
+  {
+    "from": "/news/initial-members-join-cheri-alliance-to-drive-adoption-of-memory-safety-and-scalable-software-compartmentalization/",
+    "to": "/organisations/university-of-cambridge/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/initial-members-join-cheri-alliance-to-drive-adoption-of-memory-safety-and-scalable-software-compartmentalization/",
+    "to": "/organisations/capabilities-limited/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/initial-members-join-cheri-alliance-to-drive-adoption-of-memory-safety-and-scalable-software-compartmentalization/",
+    "to": "/organisations/freebsd-foundation/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/initial-members-join-cheri-alliance-to-drive-adoption-of-memory-safety-and-scalable-software-compartmentalization/",
+    "to": "/organisations/sci-semiconductor/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/initial-members-join-cheri-alliance-to-drive-adoption-of-memory-safety-and-scalable-software-compartmentalization/",
+    "to": "/organisations/sri/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/initial-members-join-cheri-alliance-to-drive-adoption-of-memory-safety-and-scalable-software-compartmentalization/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/initial-members-join-cheri-alliance-to-drive-adoption-of-memory-safety-and-scalable-software-compartmentalization/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/initial-members-join-cheri-alliance-to-drive-adoption-of-memory-safety-and-scalable-software-compartmentalization/",
+    "to": "/organisations/lowrisc/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/initial-members-join-cheri-alliance-to-drive-adoption-of-memory-safety-and-scalable-software-compartmentalization/",
+    "to": "/software/freebsd/",
+    "field": "related.software"
+  },
+  {
     "from": "/news/innovate-uk-project-winner-university-of-birmingham-original/",
     "to": "/people/mihai-ordean/",
     "field": "authors"
+  },
+  {
+    "from": "/news/innovate-uk-project-winner-university-of-birmingham-original/",
+    "to": "/organisations/university-of-birmingham/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/innovate-uk-project-winner-university-of-birmingham-original/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/innovate-uk-project-winner-university-of-birmingham-original/",
+    "to": "/software/real-time-operating-systems/",
+    "field": "related.software"
+  },
+  {
+    "from": "/news/innovate-uk-project-winner-university-of-birmingham-original/",
+    "to": "/software/zephyr/",
+    "field": "related.software"
   },
   {
     "from": "/news/innovate-uk-project-winner-university-of-birmingham/",
@@ -1135,9 +2060,34 @@
     "field": "authors"
   },
   {
+    "from": "/news/innovate-uk-project-winner-university-of-birmingham/",
+    "to": "/organisations/university-of-birmingham/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/innovate-uk-project-winner-university-of-birmingham/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/innovate-uk-project-winner-university-of-birmingham/",
+    "to": "/software/real-time-operating-systems/",
+    "field": "related.software"
+  },
+  {
+    "from": "/news/innovate-uk-project-winner-university-of-birmingham/",
+    "to": "/software/zephyr/",
+    "field": "related.software"
+  },
+  {
     "from": "/news/introducing-the-cheri-adoption-global-ecosystem-assessment-q1-2026/",
     "to": "/people/adam-finney/",
     "field": "authors"
+  },
+  {
+    "from": "/news/introducing-the-cheri-adoption-global-ecosystem-assessment-q1-2026/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
   },
   {
     "from": "/news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences-original/",
@@ -1145,9 +2095,154 @@
     "field": "authors"
   },
   {
+    "from": "/news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences-original/",
+    "to": "/organisations/university-of-cambridge/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences-original/",
+    "to": "/organisations/sci-semiconductor/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences-original/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences-original/",
+    "to": "/organisations/techworks/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences-original/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences-original/",
+    "to": "/organisations/lowrisc/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences-original/",
+    "to": "/organisations/siemens/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences-original/",
+    "to": "/hardware/morello/",
+    "field": "related.hardware"
+  },
+  {
     "from": "/news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences/",
     "to": "/people/adam-finney/",
     "field": "authors"
+  },
+  {
+    "from": "/news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences/",
+    "to": "/organisations/university-of-cambridge/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences/",
+    "to": "/organisations/sci-semiconductor/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences/",
+    "to": "/organisations/techworks/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences/",
+    "to": "/organisations/lowrisc/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences/",
+    "to": "/organisations/siemens/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences/",
+    "to": "/hardware/morello/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support-original/",
+    "to": "/organisations/capabilities-limited/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support-original/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support-original/",
+    "to": "/organisations/lowrisc/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support-original/",
+    "to": "/organisations/google/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support-original/",
+    "to": "/organisations/dsit/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support/",
+    "to": "/organisations/capabilities-limited/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support/",
+    "to": "/organisations/lowrisc/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support/",
+    "to": "/organisations/google/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support/",
+    "to": "/organisations/dsit/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/lowrisc-and-sci-semiconductor-release-sunburst-chip-repository-for-secure-microcontroller-development/",
+    "to": "/organisations/sci-semiconductor/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/lowrisc-and-sci-semiconductor-release-sunburst-chip-repository-for-secure-microcontroller-development/",
+    "to": "/organisations/lowrisc/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/lowrisc-and-sci-semiconductor-release-sunburst-chip-repository-for-secure-microcontroller-development/",
+    "to": "/hardware/cheriot-ibex/",
+    "field": "related.hardware"
   },
   {
     "from": "/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd-original/",
@@ -1155,9 +2250,129 @@
     "field": "authors"
   },
   {
+    "from": "/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd-original/",
+    "to": "/organisations/university-of-cambridge/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd-original/",
+    "to": "/organisations/capabilities-limited/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd-original/",
+    "to": "/organisations/risc-v-international/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd-original/",
+    "to": "/organisations/freebsd-foundation/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd-original/",
+    "to": "/organisations/sri/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd-original/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd-original/",
+    "to": "/organisations/google/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd-original/",
+    "to": "/organisations/ukri/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd-original/",
+    "to": "/hardware/morello/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd-original/",
+    "to": "/software/cheri-linux/",
+    "field": "related.software"
+  },
+  {
+    "from": "/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd-original/",
+    "to": "/software/cheribsd/",
+    "field": "related.software"
+  },
+  {
+    "from": "/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd-original/",
+    "to": "/software/freebsd/",
+    "field": "related.software"
+  },
+  {
     "from": "/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd/",
     "to": "/people/brooks-davis/",
     "field": "authors"
+  },
+  {
+    "from": "/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd/",
+    "to": "/organisations/university-of-cambridge/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd/",
+    "to": "/organisations/capabilities-limited/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd/",
+    "to": "/organisations/risc-v-international/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd/",
+    "to": "/organisations/freebsd-foundation/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd/",
+    "to": "/organisations/sri/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd/",
+    "to": "/organisations/google/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd/",
+    "to": "/organisations/ukri/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd/",
+    "to": "/hardware/morello/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd/",
+    "to": "/software/cheri-linux/",
+    "field": "related.software"
+  },
+  {
+    "from": "/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd/",
+    "to": "/software/cheribsd/",
+    "field": "related.software"
+  },
+  {
+    "from": "/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd/",
+    "to": "/software/freebsd/",
+    "field": "related.software"
   },
   {
     "from": "/news/one-bug-is-all-it-takes/",
@@ -1165,9 +2380,344 @@
     "field": "authors"
   },
   {
+    "from": "/news/one-bug-is-all-it-takes/",
+    "to": "/software/freebsd/",
+    "field": "related.software"
+  },
+  {
+    "from": "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl-original/",
+    "to": "/organisations/university-of-cambridge/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl-original/",
+    "to": "/organisations/risc-v-international/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl-original/",
+    "to": "/organisations/sri/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl-original/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl-original/",
+    "to": "/organisations/wind-river/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl-original/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl-original/",
+    "to": "/organisations/dstl/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl-original/",
+    "to": "/hardware/morello/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl-original/",
+    "to": "/hardware/cheriot/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl-original/",
+    "to": "/hardware/sonata/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl-original/",
+    "to": "/software/cheri-linux/",
+    "field": "related.software"
+  },
+  {
+    "from": "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl-original/",
+    "to": "/software/cheribsd/",
+    "field": "related.software"
+  },
+  {
+    "from": "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl-original/",
+    "to": "/software/freebsd/",
+    "field": "related.software"
+  },
+  {
+    "from": "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl-original/",
+    "to": "/software/zephyr/",
+    "field": "related.software"
+  },
+  {
+    "from": "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl-original/",
+    "to": "/software/llvm-and-clang/",
+    "field": "related.software"
+  },
+  {
+    "from": "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl/",
+    "to": "/organisations/university-of-cambridge/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl/",
+    "to": "/organisations/risc-v-international/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl/",
+    "to": "/organisations/sri/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl/",
+    "to": "/organisations/wind-river/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl/",
+    "to": "/organisations/dstl/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl/",
+    "to": "/hardware/morello/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl/",
+    "to": "/hardware/cheriot/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl/",
+    "to": "/hardware/sonata/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl/",
+    "to": "/software/cheri-linux/",
+    "field": "related.software"
+  },
+  {
+    "from": "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl/",
+    "to": "/software/cheribsd/",
+    "field": "related.software"
+  },
+  {
+    "from": "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl/",
+    "to": "/software/freebsd/",
+    "field": "related.software"
+  },
+  {
+    "from": "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl/",
+    "to": "/software/zephyr/",
+    "field": "related.software"
+  },
+  {
+    "from": "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl/",
+    "to": "/software/llvm-and-clang/",
+    "field": "related.software"
+  },
+  {
+    "from": "/news/sci-semiconductor-and-the-cheri-alliance-at-risc-v-summit-in-china-july-2025/",
+    "to": "/organisations/risc-v-international/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/sci-semiconductor-and-the-cheri-alliance-at-risc-v-summit-in-china-july-2025/",
+    "to": "/organisations/sci-semiconductor/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/sci-semiconductor-and-the-cheri-alliance-at-risc-v-summit-in-china-july-2025/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/sci-semiconductor-and-the-cheri-alliance-at-risc-v-summit-in-china-july-2025/",
+    "to": "/organisations/verisilicon/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/sci-semiconductor-and-the-cheri-alliance-at-risc-v-summit-in-china-july-2025/",
+    "to": "/organisations/google/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/sci-semiconductor-and-the-cheri-alliance-at-risc-v-summit-in-china-july-2025/",
+    "to": "/hardware/cheriot-ibex/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/news/sci-semiconductor-and-the-cheri-alliance-at-risc-v-summit-in-china-july-2025/",
+    "to": "/hardware/cheriot/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software-original/",
+    "to": "/organisations/the-university-of-manchester/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software-original/",
+    "to": "/organisations/university-of-birmingham/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software-original/",
+    "to": "/organisations/capabilities-limited/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software-original/",
+    "to": "/organisations/sci-semiconductor/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software-original/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software-original/",
+    "to": "/organisations/sensor-it/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software-original/",
+    "to": "/organisations/ensilica/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software-original/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software-original/",
+    "to": "/organisations/lowrisc/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software-original/",
+    "to": "/organisations/dsit/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software-original/",
+    "to": "/organisations/ukri/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software/",
+    "to": "/organisations/the-university-of-manchester/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software/",
+    "to": "/organisations/university-of-birmingham/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software/",
+    "to": "/organisations/capabilities-limited/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software/",
+    "to": "/organisations/sci-semiconductor/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software/",
+    "to": "/organisations/sensor-it/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software/",
+    "to": "/organisations/ensilica/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software/",
+    "to": "/organisations/lowrisc/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software/",
+    "to": "/organisations/dsit/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software/",
+    "to": "/organisations/ukri/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/siemens-joins-the-cheri-alliance-a-united-front-for-cutting-edge-cybersecurity/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/siemens-joins-the-cheri-alliance-a-united-front-for-cutting-edge-cybersecurity/",
+    "to": "/organisations/siemens/",
+    "field": "related.organisations"
+  },
+  {
     "from": "/news/streamlining-the-cheri-ecosystem-an-update-from-the-repository-management-working-group/",
     "to": "/people/marno-van-der-maas/",
     "field": "authors"
+  },
+  {
+    "from": "/news/streamlining-the-cheri-ecosystem-an-update-from-the-repository-management-working-group/",
+    "to": "/groups/repository-management/",
+    "field": "related.groups"
+  },
+  {
+    "from": "/news/streamlining-the-cheri-ecosystem-an-update-from-the-repository-management-working-group/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/the-capable-hub-joins-the-cheri-alliance-to-accelerate-cybersecurity-collaboration/",
+    "to": "/organisations/university-of-cambridge/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/the-capable-hub-joins-the-cheri-alliance-to-accelerate-cybersecurity-collaboration/",
+    "to": "/organisations/the-capable-hub/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/the-capable-hub-joins-the-cheri-alliance-to-accelerate-cybersecurity-collaboration/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
   },
   {
     "from": "/news/the-eu-cyber-resilience-act-what-it-means-for-secure-by-design-systems-and-cheri/",
@@ -1180,9 +2730,69 @@
     "field": "authors"
   },
   {
+    "from": "/news/the-leading-root-of-trust-now-integrates-cheri-security-technology/",
+    "to": "/organisations/lowrisc/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/the-leading-root-of-trust-now-integrates-cheri-security-technology/",
+    "to": "/hardware/cheriot/",
+    "field": "related.hardware"
+  },
+  {
     "from": "/news/towards-a-reference-qemu-for-cheri-platform-emulation/",
     "to": "/people/alfredo-mazzinghi/",
     "field": "authors"
+  },
+  {
+    "from": "/news/towards-a-reference-qemu-for-cheri-platform-emulation/",
+    "to": "/groups/cheri-qemu/",
+    "field": "related.groups"
+  },
+  {
+    "from": "/news/towards-a-reference-qemu-for-cheri-platform-emulation/",
+    "to": "/organisations/university-of-cambridge/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/towards-a-reference-qemu-for-cheri-platform-emulation/",
+    "to": "/organisations/capabilities-limited/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/towards-a-reference-qemu-for-cheri-platform-emulation/",
+    "to": "/organisations/the-capable-hub/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/towards-a-reference-qemu-for-cheri-platform-emulation/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/towards-a-reference-qemu-for-cheri-platform-emulation/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/towards-a-reference-qemu-for-cheri-platform-emulation/",
+    "to": "/organisations/google/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/towards-a-reference-qemu-for-cheri-platform-emulation/",
+    "to": "/hardware/morello/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/news/uk-government-report-highlights-the-cheri-alliance/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/uk-government-report-highlights-the-cheri-alliance/",
+    "to": "/organisations/dsit/",
+    "field": "related.organisations"
   },
   {
     "from": "/news/unlocking-the-future-a-roadmap-for-cheri-technology-advancement/",
@@ -1190,9 +2800,129 @@
     "field": "authors"
   },
   {
+    "from": "/news/unlocking-the-future-a-roadmap-for-cheri-technology-advancement/",
+    "to": "/groups/marketing/",
+    "field": "related.groups"
+  },
+  {
+    "from": "/news/unlocking-the-future-a-roadmap-for-cheri-technology-advancement/",
+    "to": "/organisations/dstl/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/unlocking-the-future-a-roadmap-for-cheri-technology-advancement/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/unlocking-the-future-a-roadmap-for-cheri-technology-advancement/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/unlocking-the-future-a-roadmap-for-cheri-technology-advancement/",
+    "to": "/software/zephyr/",
+    "field": "related.software"
+  },
+  {
+    "from": "/news/why-codasip-went-all-in-on-cheri/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/why-codasip-went-all-in-on-cheri/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/wind-river-joins-the-cheri-alliance/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/wind-river-joins-the-cheri-alliance/",
+    "to": "/organisations/wind-river/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/working-group-spotlight-marketing/",
+    "to": "/groups/marketing/",
+    "field": "related.groups"
+  },
+  {
+    "from": "/news/working-group-spotlight-marketing/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
     "from": "/news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/",
     "to": "/people/adam-finney/",
     "field": "authors"
+  },
+  {
+    "from": "/news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/",
+    "to": "/organisations/university-of-modena-and-reggio-emilia/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/",
+    "to": "/organisations/the-university-of-manchester/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/",
+    "to": "/organisations/capabilities-limited/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/",
+    "to": "/organisations/sci-semiconductor/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/",
+    "to": "/organisations/the-good-penguin/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/",
+    "to": "/organisations/wind-river/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/",
+    "to": "/organisations/ericsson/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/",
+    "to": "/organisations/lowrisc/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/",
+    "to": "/organisations/google/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/",
+    "to": "/organisations/dstl/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/",
+    "to": "/organisations/ukri/",
+    "field": "related.organisations"
   },
   {
     "from": "/events/cheri-blossoms-conference-2025/",
@@ -1333,6 +3063,91 @@
     "from": "/events/cheri-blossoms-conference-2025/",
     "to": "/people/tora-fridholm/",
     "field": "speakers"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2025/",
+    "to": "/groups/marketing/",
+    "field": "related.groups"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2025/",
+    "to": "/groups/cheri-qemu/",
+    "field": "related.groups"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2025/",
+    "to": "/groups/cheri-in-soc/",
+    "field": "related.groups"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2025/",
+    "to": "/organisations/mission-critical-applications-limited/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2025/",
+    "to": "/organisations/the-university-of-manchester/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2025/",
+    "to": "/organisations/university-of-cambridge/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2025/",
+    "to": "/organisations/university-of-glasgow/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2025/",
+    "to": "/organisations/capabilities-limited/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2025/",
+    "to": "/organisations/configured-things/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2025/",
+    "to": "/organisations/sci-semiconductor/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2025/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2025/",
+    "to": "/organisations/wind-river/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2025/",
+    "to": "/organisations/axiomise-ltd/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2025/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2025/",
+    "to": "/organisations/lowrisc/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2025/",
+    "to": "/organisations/dsit/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2025/",
+    "to": "/organisations/ukri/",
+    "field": "related.organisations"
   },
   {
     "from": "/events/cheri-blossoms-conference-2026/",
@@ -1530,6 +3345,166 @@
     "field": "speakers"
   },
   {
+    "from": "/events/cheri-blossoms-conference-2026/",
+    "to": "/groups/cheri-in-soc/",
+    "field": "related.groups"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2026/",
+    "to": "/organisations/german-research-center-for-artificial-intelligence-dfki/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2026/",
+    "to": "/organisations/smart-information-flow-technologies-sift/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2026/",
+    "to": "/organisations/european-commission-dg-connect/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2026/",
+    "to": "/organisations/ararat-river-consulting-llc/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2026/",
+    "to": "/organisations/the-university-of-manchester/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2026/",
+    "to": "/organisations/university-of-birmingham/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2026/",
+    "to": "/organisations/university-of-cambridge/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2026/",
+    "to": "/organisations/university-of-edinburgh/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2026/",
+    "to": "/organisations/capabilities-limited/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2026/",
+    "to": "/organisations/risc-v-international/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2026/",
+    "to": "/organisations/microservice-store/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2026/",
+    "to": "/organisations/sci-semiconductor/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2026/",
+    "to": "/organisations/the-good-penguin/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2026/",
+    "to": "/organisations/the-capable-hub/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2026/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2026/",
+    "to": "/organisations/pa-consulting/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2026/",
+    "to": "/organisations/ku-leuven/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2026/",
+    "to": "/organisations/ericsson/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2026/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2026/",
+    "to": "/organisations/lowrisc/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2026/",
+    "to": "/organisations/um-labs/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2026/",
+    "to": "/organisations/google/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2026/",
+    "to": "/organisations/aria/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2026/",
+    "to": "/organisations/dsit/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2026/",
+    "to": "/organisations/ncsc/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2026/",
+    "to": "/organisations/rptu/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2026/",
+    "to": "/organisations/ukri/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-conference-2027/",
+    "to": "/organisations/university-of-cambridge/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-tutorial-2026/",
+    "to": "/organisations/university-of-cambridge/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-tutorial-2026/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheri-blossoms-tutorial-2026/",
+    "to": "/organisations/lowrisc/",
+    "field": "related.organisations"
+  },
+  {
     "from": "/events/cheritech25-reloaded/",
     "to": "/people/andrew-murray/",
     "field": "speakers"
@@ -1583,6 +3558,56 @@
     "from": "/events/cheritech25-reloaded/",
     "to": "/people/thomas-nyman/",
     "field": "speakers"
+  },
+  {
+    "from": "/events/cheritech25-reloaded/",
+    "to": "/organisations/university-of-cambridge/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheritech25-reloaded/",
+    "to": "/organisations/university-of-glasgow/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheritech25-reloaded/",
+    "to": "/organisations/capabilities-limited/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheritech25-reloaded/",
+    "to": "/organisations/sci-semiconductor/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheritech25-reloaded/",
+    "to": "/organisations/the-good-penguin/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheritech25-reloaded/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheritech25-reloaded/",
+    "to": "/organisations/ericsson/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheritech25-reloaded/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheritech25-reloaded/",
+    "to": "/organisations/lowrisc/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheritech25-reloaded/",
+    "to": "/organisations/google/",
+    "field": "related.organisations"
   },
   {
     "from": "/events/cheritech25/",
@@ -1675,9 +3700,154 @@
     "field": "speakers"
   },
   {
+    "from": "/events/cheritech25/",
+    "to": "/organisations/university-of-modena-and-reggio-emilia/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheritech25/",
+    "to": "/organisations/the-university-of-manchester/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheritech25/",
+    "to": "/organisations/university-of-cambridge/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheritech25/",
+    "to": "/organisations/university-of-glasgow/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheritech25/",
+    "to": "/organisations/capabilities-limited/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheritech25/",
+    "to": "/organisations/sci-semiconductor/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheritech25/",
+    "to": "/organisations/the-good-penguin/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheritech25/",
+    "to": "/organisations/minerva-systems/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheritech25/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheritech25/",
+    "to": "/organisations/wind-river/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheritech25/",
+    "to": "/organisations/ku-leuven/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheritech25/",
+    "to": "/organisations/ericsson/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheritech25/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheritech25/",
+    "to": "/organisations/lowrisc/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheritech25/",
+    "to": "/organisations/google/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cheritech25/",
+    "to": "/organisations/ukri/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cybersecurity-by-design-conference-2024/",
+    "to": "/organisations/university-of-cambridge/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cybersecurity-by-design-conference-2024/",
+    "to": "/organisations/capabilities-limited/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cybersecurity-by-design-conference-2024/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cybersecurity-by-design-conference-2024/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cybersecurity-by-design-conference-2024/",
+    "to": "/organisations/lowrisc/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cybersecurity-by-design-conference-2024/",
+    "to": "/organisations/google/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cybersecurity-by-design-conference-2024/",
+    "to": "/organisations/cynam/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/cybersecurity-by-design-conference-2024/",
+    "to": "/organisations/ncsc/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/embedded-world-2026/",
+    "to": "/organisations/capabilities-limited/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/embedded-world-2026/",
+    "to": "/organisations/the-capable-hub/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/embedded-world-2026/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/events/embedded-world-2026/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
     "from": "/events/webinar-cheri-cra-compliance/",
     "to": "/people/tariq-kurd/",
     "field": "speakers"
+  },
+  {
+    "from": "/events/webinar-cheri-cra-compliance/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
   },
   {
     "from": "/papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/",
@@ -2035,6 +4205,11 @@
     "field": "authors"
   },
   {
+    "from": "/papers/cheriot-complete-memory-safety-for-embedded-devices/",
+    "to": "/hardware/cheriot/",
+    "field": "related.hardware"
+  },
+  {
     "from": "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
     "to": "/people/saar-amar/",
     "field": "authors"
@@ -2098,6 +4273,11 @@
     "from": "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
     "to": "/people/hongyan-xia/",
     "field": "authors"
+  },
+  {
+    "from": "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
+    "to": "/hardware/cheriot/",
+    "field": "related.hardware"
   },
   {
     "from": "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
@@ -2500,6 +4680,11 @@
     "field": "authors"
   },
   {
+    "from": "/papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/",
+    "to": "/hardware/morello/",
+    "field": "related.hardware"
+  },
+  {
     "from": "/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/",
     "to": "/people/jonathan-woodruff/",
     "field": "authors"
@@ -2551,13 +4736,98 @@
   },
   {
     "from": "/hardware/cheriot-ibex/",
+    "to": "/organisations/rptu/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/hardware/cheriot-ibex/",
     "to": "/hardware/cheriot/",
     "field": "related.hardware"
+  },
+  {
+    "from": "/hardware/cheriot-ibex/",
+    "to": "/software/llvm-and-clang/",
+    "field": "related.software"
+  },
+  {
+    "from": "/hardware/cheriot-ibex/",
+    "to": "/software/rust/",
+    "field": "related.software"
   },
   {
     "from": "/hardware/cheriot/",
     "to": "/hardware/morello/",
     "field": "related.hardware"
+  },
+  {
+    "from": "/hardware/cheriot/",
+    "to": "/hardware/fpga-platforms/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/hardware/cheriot/",
+    "to": "/hardware/cheriot-ibex/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/hardware/cheriot/",
+    "to": "/hardware/sonata/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/hardware/cheriot/",
+    "to": "/software/debugging-tools/",
+    "field": "related.software"
+  },
+  {
+    "from": "/hardware/fpga-platforms/",
+    "to": "/hardware/cheriot/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/hardware/fpga-platforms/",
+    "to": "/hardware/sonata/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/hardware/fpga-platforms/",
+    "to": "/software/cheribsd/",
+    "field": "related.software"
+  },
+  {
+    "from": "/hardware/morello/",
+    "to": "/organisations/university-of-cambridge/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/hardware/morello/",
+    "to": "/organisations/sri/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/hardware/morello/",
+    "to": "/hardware/cheriot/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/hardware/morello/",
+    "to": "/software/debugging-tools/",
+    "field": "related.software"
+  },
+  {
+    "from": "/hardware/morello/",
+    "to": "/software/cheribsd/",
+    "field": "related.software"
+  },
+  {
+    "from": "/hardware/morello/",
+    "to": "/software/llvm-and-clang/",
+    "field": "related.software"
+  },
+  {
+    "from": "/hardware/sonata/",
+    "to": "/organisations/lowrisc/",
+    "field": "related.organisations"
   },
   {
     "from": "/hardware/sonata/",
@@ -2570,14 +4840,64 @@
     "field": "related.organisations"
   },
   {
+    "from": "/hardware/x730/",
+    "to": "/software/llvm-and-clang/",
+    "field": "related.software"
+  },
+  {
+    "from": "/hardware/x730/",
+    "to": "/software/rust/",
+    "field": "related.software"
+  },
+  {
+    "from": "/software/cheri-linux/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/software/cheri-linux/",
+    "to": "/hardware/cheriot/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/software/cheri-linux/",
+    "to": "/hardware/morello/",
+    "field": "related.hardware"
+  },
+  {
     "from": "/software/cheri-linux/",
     "to": "/software/cheribsd/",
     "field": "related.software"
   },
   {
+    "from": "/software/cheri-linux/",
+    "to": "/software/zephyr/",
+    "field": "related.software"
+  },
+  {
+    "from": "/software/cheribsd/",
+    "to": "/organisations/freebsd-foundation/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/software/cheribsd/",
+    "to": "/hardware/morello/",
+    "field": "related.hardware"
+  },
+  {
     "from": "/software/cheribsd/",
     "to": "/software/llvm-and-clang/",
     "field": "related.software"
+  },
+  {
+    "from": "/software/cheribsd/",
+    "to": "/software/freebsd/",
+    "field": "related.software"
+  },
+  {
+    "from": "/software/debugging-tools/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
   },
   {
     "from": "/software/debugging-tools/",
@@ -2586,7 +4906,17 @@
   },
   {
     "from": "/software/debugging-tools/",
+    "to": "/hardware/morello/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/software/debugging-tools/",
     "to": "/software/cheribsd/",
+    "field": "related.software"
+  },
+  {
+    "from": "/software/debugging-tools/",
+    "to": "/software/cheri-linux/",
     "field": "related.software"
   },
   {
@@ -2600,8 +4930,48 @@
     "field": "related.software"
   },
   {
+    "from": "/software/llvm-and-clang/",
+    "to": "/hardware/cheriot/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/software/llvm-and-clang/",
+    "to": "/hardware/morello/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/software/llvm-and-clang/",
+    "to": "/software/cheribsd/",
+    "field": "related.software"
+  },
+  {
+    "from": "/software/porting-status/",
+    "to": "/hardware/cheriot/",
+    "field": "related.hardware"
+  },
+  {
     "from": "/software/porting-status/",
     "to": "/software/debugging-tools/",
+    "field": "related.software"
+  },
+  {
+    "from": "/software/porting-status/",
+    "to": "/software/cheri-linux/",
+    "field": "related.software"
+  },
+  {
+    "from": "/software/porting-status/",
+    "to": "/software/cheribsd/",
+    "field": "related.software"
+  },
+  {
+    "from": "/software/porting-status/",
+    "to": "/software/zephyr/",
+    "field": "related.software"
+  },
+  {
+    "from": "/software/porting-status/",
+    "to": "/software/rust/",
     "field": "related.software"
   },
   {
@@ -2616,7 +4986,22 @@
   },
   {
     "from": "/software/rust/",
+    "to": "/hardware/cheriot/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/software/rust/",
+    "to": "/hardware/morello/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/software/rust/",
     "to": "/software/llvm-and-clang/",
+    "field": "related.software"
+  },
+  {
+    "from": "/software/rust/",
+    "to": "/software/cheribsd/",
     "field": "related.software"
   },
   {
@@ -2625,8 +5010,473 @@
     "field": "related.hardware"
   },
   {
+    "from": "/software/simulators/",
+    "to": "/hardware/cheriot/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/software/simulators/",
+    "to": "/software/cheribsd/",
+    "field": "related.software"
+  },
+  {
+    "from": "/software/zephyr/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
     "from": "/software/zephyr/",
     "to": "/hardware/cheriot/",
     "field": "related.hardware"
+  },
+  {
+    "from": "/groups/certification-working-group/",
+    "to": "/people/mike-eftimakis/",
+    "field": "leads"
+  },
+  {
+    "from": "/groups/certification-working-group/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/groups/cheri-c-cplusplus/",
+    "to": "/people/david-chisnall/",
+    "field": "leads"
+  },
+  {
+    "from": "/groups/cheri-c-cplusplus/",
+    "to": "/organisations/sci-semiconductor/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/groups/cheri-for-sel4/",
+    "to": "/people/hesham-almatary/",
+    "field": "leads"
+  },
+  {
+    "from": "/groups/cheri-for-sel4/",
+    "to": "/organisations/capabilities-limited/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/groups/cheri-freertos/",
+    "to": "/people/oliver-gray/",
+    "field": "leads"
+  },
+  {
+    "from": "/groups/cheri-freertos/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/groups/cheri-in-soc/",
+    "to": "/people/ben-fletcher/",
+    "field": "leads"
+  },
+  {
+    "from": "/groups/cheri-in-soc/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/groups/cheri-linux-working-group/",
+    "to": "/people/allison-randal/",
+    "field": "leads"
+  },
+  {
+    "from": "/groups/cheri-linux-working-group/",
+    "to": "/organisations/capabilities-limited/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/groups/cheri-linux-working-group/",
+    "to": "/software/cheri-linux/",
+    "field": "related.software"
+  },
+  {
+    "from": "/groups/cheri-plus-safety/",
+    "to": "/people/maricel-ventura/",
+    "field": "leads"
+  },
+  {
+    "from": "/groups/cheri-plus-safety/",
+    "to": "/people/thierno-sene/",
+    "field": "leads"
+  },
+  {
+    "from": "/groups/cheri-plus-safety/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/groups/cheri-qemu/",
+    "to": "/people/alfredo-mazzinghi/",
+    "field": "leads"
+  },
+  {
+    "from": "/groups/cheri-qemu/",
+    "to": "/organisations/capabilities-limited/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/groups/cheri-research/",
+    "to": "/people/jonathan-woodruff/",
+    "field": "leads"
+  },
+  {
+    "from": "/groups/cheri-research/",
+    "to": "/organisations/university-of-cambridge/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/groups/cheri-virtual-machines/",
+    "to": "/people/jeremy-singer/",
+    "field": "leads"
+  },
+  {
+    "from": "/groups/cheri-virtual-machines/",
+    "to": "/organisations/university-of-glasgow/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/groups/cheri-zephyr/",
+    "to": "/people/jennifer-jackson/",
+    "field": "leads"
+  },
+  {
+    "from": "/groups/cheri-zephyr/",
+    "to": "/organisations/university-of-birmingham/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/groups/cheri-zephyr/",
+    "to": "/software/zephyr/",
+    "field": "related.software"
+  },
+  {
+    "from": "/groups/marketing/",
+    "to": "/people/adam-finney/",
+    "field": "leads"
+  },
+  {
+    "from": "/groups/marketing/",
+    "to": "/organisations/3bian/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/groups/mmu-less-systems/",
+    "to": "/people/murali-vijayaraghavan/",
+    "field": "leads"
+  },
+  {
+    "from": "/groups/mmu-less-systems/",
+    "to": "/organisations/google/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/groups/mmu-less-systems/",
+    "to": "/hardware/cheriot/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/groups/os-support-and-portability/",
+    "to": "/people/brooks-davis/",
+    "field": "leads"
+  },
+  {
+    "from": "/groups/os-support-and-portability/",
+    "to": "/organisations/capabilities-limited/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/groups/os-support-and-portability/",
+    "to": "/software/cheri-linux/",
+    "field": "related.software"
+  },
+  {
+    "from": "/groups/os-support-and-portability/",
+    "to": "/software/zephyr/",
+    "field": "related.software"
+  },
+  {
+    "from": "/groups/promotion-and-ambassador-program/",
+    "to": "/people/mike-eftimakis/",
+    "field": "leads"
+  },
+  {
+    "from": "/groups/promotion-and-ambassador-program/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/groups/promotion-and-ambassador-program/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/groups/repository-management/",
+    "to": "/people/marno-van-der-maas/",
+    "field": "leads"
+  },
+  {
+    "from": "/groups/repository-management/",
+    "to": "/organisations/lowrisc/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/groups/repository-management/",
+    "to": "/organisations/cheri-alliance/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/groups/rust-plus-cheri/",
+    "to": "/people/edoardo-marangoni/",
+    "field": "leads"
+  },
+  {
+    "from": "/groups/rust-plus-cheri/",
+    "to": "/people/sarah-harris/",
+    "field": "leads"
+  },
+  {
+    "from": "/groups/rust-plus-cheri/",
+    "to": "/organisations/sci-semiconductor/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/groups/rust-plus-cheri/",
+    "to": "/organisations/university-of-kent/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/groups/rust-plus-cheri/",
+    "to": "/hardware/cheriot/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/groups/rust-plus-cheri/",
+    "to": "/hardware/morello/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/groups/rust-plus-cheri/",
+    "to": "/software/rust/",
+    "field": "related.software"
+  },
+  {
+    "from": "/guides/build-compartments/",
+    "to": "/hardware/cheriot/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/guides/build-compartments/",
+    "to": "/software/cheribsd/",
+    "field": "related.software"
+  },
+  {
+    "from": "/guides/build-your-first-application/",
+    "to": "/hardware/cheriot/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/guides/build-your-first-application/",
+    "to": "/software/cheribsd/",
+    "field": "related.software"
+  },
+  {
+    "from": "/guides/choose-a-platform/",
+    "to": "/hardware/cheriot/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/guides/choose-a-platform/",
+    "to": "/hardware/morello/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/guides/choose-a-platform/",
+    "to": "/hardware/sonata/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/guides/choose-a-platform/",
+    "to": "/software/cheri-linux/",
+    "field": "related.software"
+  },
+  {
+    "from": "/guides/choose-a-platform/",
+    "to": "/software/simulators/",
+    "field": "related.software"
+  },
+  {
+    "from": "/guides/choose-a-platform/",
+    "to": "/software/cheribsd/",
+    "field": "related.software"
+  },
+  {
+    "from": "/guides/choose-a-platform/",
+    "to": "/software/zephyr/",
+    "field": "related.software"
+  },
+  {
+    "from": "/guides/choose-a-platform/",
+    "to": "/software/llvm-and-clang/",
+    "field": "related.software"
+  },
+  {
+    "from": "/guides/downloads/",
+    "to": "/hardware/cheriot-ibex/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/guides/downloads/",
+    "to": "/hardware/morello/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/guides/downloads/",
+    "to": "/hardware/cheriot/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/guides/downloads/",
+    "to": "/hardware/sonata/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/guides/downloads/",
+    "to": "/software/cheri-linux/",
+    "field": "related.software"
+  },
+  {
+    "from": "/guides/downloads/",
+    "to": "/software/simulators/",
+    "field": "related.software"
+  },
+  {
+    "from": "/guides/downloads/",
+    "to": "/software/cheribsd/",
+    "field": "related.software"
+  },
+  {
+    "from": "/guides/downloads/",
+    "to": "/software/freebsd/",
+    "field": "related.software"
+  },
+  {
+    "from": "/guides/downloads/",
+    "to": "/software/zephyr/",
+    "field": "related.software"
+  },
+  {
+    "from": "/guides/downloads/",
+    "to": "/software/llvm-and-clang/",
+    "field": "related.software"
+  },
+  {
+    "from": "/guides/install-a-toolchain/",
+    "to": "/hardware/cheriot/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/guides/install-a-toolchain/",
+    "to": "/hardware/morello/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/guides/install-a-toolchain/",
+    "to": "/software/cheri-linux/",
+    "field": "related.software"
+  },
+  {
+    "from": "/guides/install-a-toolchain/",
+    "to": "/software/cheribsd/",
+    "field": "related.software"
+  },
+  {
+    "from": "/guides/install-a-toolchain/",
+    "to": "/software/llvm-and-clang/",
+    "field": "related.software"
+  },
+  {
+    "from": "/guides/run-cheri-in-simulation/",
+    "to": "/hardware/cheriot/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/guides/run-cheri-in-simulation/",
+    "to": "/software/cheribsd/",
+    "field": "related.software"
+  },
+  {
+    "from": "/guides/technical-faq/",
+    "to": "/groups/cheri-linux-working-group/",
+    "field": "related.groups"
+  },
+  {
+    "from": "/guides/technical-faq/",
+    "to": "/hardware/morello/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/guides/technical-faq/",
+    "to": "/hardware/cheriot/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/guides/technical-faq/",
+    "to": "/hardware/sonata/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/guides/technical-faq/",
+    "to": "/software/cheri-linux/",
+    "field": "related.software"
+  },
+  {
+    "from": "/guides/technical-faq/",
+    "to": "/software/simulators/",
+    "field": "related.software"
+  },
+  {
+    "from": "/guides/technical-faq/",
+    "to": "/software/cheribsd/",
+    "field": "related.software"
+  },
+  {
+    "from": "/guides/technical-faq/",
+    "to": "/software/freebsd/",
+    "field": "related.software"
+  },
+  {
+    "from": "/guides/tutorials-and-training/",
+    "to": "/hardware/cheriot/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/guides/tutorials-and-training/",
+    "to": "/hardware/morello/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/guides/tutorials-and-training/",
+    "to": "/software/debugging-tools/",
+    "field": "related.software"
+  },
+  {
+    "from": "/guides/tutorials-and-training/",
+    "to": "/software/cheri-linux/",
+    "field": "related.software"
+  },
+  {
+    "from": "/guides/tutorials-and-training/",
+    "to": "/software/cheribsd/",
+    "field": "related.software"
+  },
+  {
+    "from": "/guides/tutorials-and-training/",
+    "to": "/software/zephyr/",
+    "field": "related.software"
   }
 ]

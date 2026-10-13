@@ -6,19 +6,21 @@ authors:
 - jennifer-jackson
 related:
   groups: []
-  organisations: []
+  organisations:
+  - codasip
   hardware: []
-  software: []
+  software:
+  - zephyr
   papers: []
 ---
 
 # CHERI-Zephyr v0.4.0 Release
 
-In this blog covering the fourth official development release of CHERI-Zephyr, we’ll look at what’s already CHERI-supported in the kernel and highlight some of the key features added over the course of development. Whether you’re interested in porting an existing Zephyr application, exploring new projects, evaluating CHERI-enabled software, or simply seeing how CHERI changes the behaviour of real systems, there’s plenty already included to begin experimenting.
+In this blog covering the fourth official development release of [CHERI-Zephyr](/software/zephyr/), we’ll look at what’s already CHERI-supported in the kernel and highlight some of the key features added over the course of development. Whether you’re interested in porting an existing Zephyr application, exploring new projects, evaluating CHERI-enabled software, or simply seeing how CHERI changes the behaviour of real systems, there’s plenty already included to begin experimenting.
 
 ## CHERI platforms
 
-CHERI-Zephyr now supports various CHERI-RISC-V platforms (in addition to Zephyr’s current boards). With RISC-V rapidly becoming one of the most exciting architectures in the embedded space, and CHERI bringing hardware-enforced security to the mix, the pairing is a perfect match for Zephyr’s target applications. If you’re lucky enough to have access to CHERI hardware such as Codasip’s Prime board you can run it directly, otherwise CHERI QEMU provides an easy way to get started.
+CHERI-Zephyr now supports various CHERI-RISC-V platforms (in addition to Zephyr’s current boards). With RISC-V rapidly becoming one of the most exciting architectures in the embedded space, and CHERI bringing hardware-enforced security to the mix, the pairing is a perfect match for Zephyr’s target applications. If you’re lucky enough to have access to CHERI hardware such as [Codasip](/organisations/codasip/)’s Prime board you can run it directly, otherwise CHERI QEMU provides an easy way to get started.
 
 It is worth mentioning that CHERI-Zephyr, together with the underlying QEMU and hardware platforms, supports both CHERI and non-CHERI modes of operation. This allows an existing Zephyr application to be built and run in non-CHERI mode using the CHERI toolchain, before being rebuilt and executed in CHERI mode. This makes it easy to compare performance, memory usage, and the impact of CHERI’s memory-safety protections.
 
@@ -26,9 +28,10 @@ It is worth mentioning that CHERI-Zephyr, together with the underlying QEMU and 
 
 If you are looking for some proof that CHERI is doing its job, then there are several CHERI-specific samples demonstrating how CHERI can prevent memory corruption and buffer overflows to try out. For more detailed testing of CHERI-specific kernel edits then the CHERI test suites can be run as part of Zephyr’s Twister test matrix. Once all the tools and software have been installed you can build and run a CHERI sample like you would build a normal Zephyr application using west:
 
-west build -p always -b qemu\_riscv32cheri\_zcheripurecap samples/cheri/buffer\_overflow
-
+```bash
+west build -p always -b qemu_riscv32cheri_zcheripurecap samples/cheri/buffer_overflow
 west build -t run
+```
 
 ## What’s been CHERI-enabled?
 
@@ -46,4 +49,4 @@ On the research side, we are now experimenting with compartmentalisation and rec
 
 To sum things up, CHERI-Zephyr remains an active development project, and there are still libraries to port, bugs to find, and areas that need further testing. Nevertheless, the project has come a long way over the past year and already provides a substantial platform for experimenting with CHERI-enabled software making it well worth exploring!
 
-In the meantime, we welcome feedback, contributions, offers to help port Zephyr libraries to CHERI, and assistance with upstreaming activities. The latest release can be found here: https://github.com/CHERI-Alliance/CHERI-zephyr/releases/tag/CHERI-Zephyr-v0.4.0
+In the meantime, we welcome feedback, contributions, offers to help port Zephyr libraries to CHERI, and assistance with upstreaming activities. The latest release can be found here: <https://github.com/CHERI-Alliance/CHERI-zephyr/releases/tag/CHERI-Zephyr-v0.4.0>

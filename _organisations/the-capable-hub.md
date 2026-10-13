@@ -16,8 +16,6 @@ The Capable Hub is a non-profit engineering organisation improving the availabil
 
 ## Description
 
-The Capable Hub is a non-profit engineering organisation improving the availability, quality and upstream alignment of open-source CHERI software.
-
 ## CHERI Activities
 
 The Capable Hub provides infrastructure and tooling for CHERI ecosystem, including AWS backed CI, artifact hosting and community mailing lists. To support automated testing, we are currently developing a hardware board farm.
@@ -28,4 +26,4 @@ Our initial work includes mapping the ecosystem to centralise available artifact
 
 ## Open-source Assets for CHERI
 
-https://www.thecapablehub.org/software/
+<https://www.thecapablehub.org/software/>

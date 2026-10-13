@@ -1,6 +1,6 @@
 ---
 title: University of Modena and Reggio Emilia
-image_url: null
+image_url: /assets/organisations/university-of-modena-and-reggio-emilia/placeholder.svg
 website_url: null
 membership_tier: null
 is_founding_member: null
@@ -11,3 +11,7 @@ social:
 ---
 
 # University of Modena and Reggio Emilia
+
+## People
+
+- [Donato Ferraro](/people/donato-ferraro/)

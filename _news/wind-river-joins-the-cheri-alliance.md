@@ -5,7 +5,9 @@ published_date: '2026-04-21'
 authors: []
 related:
   groups: []
-  organisations: []
+  organisations:
+  - cheri-alliance
+  - wind-river
   hardware: []
   software: []
   papers: []
@@ -13,9 +15,7 @@ related:
 
 # Wind River Joins the CHERI Alliance
 
-We are pleased to welcome Wind River to the CHERI Alliance, marking another important step forward in building a more secure computing ecosystem. Building on its existing work with CHERI, Wind River was recently awarded a contract as part of a…
-
-We are pleased to welcome Wind River to the CHERI Alliance, marking another important step forward in building a more secure computing ecosystem.
+We are pleased to welcome [Wind River](/organisations/wind-river/) to the [CHERI Alliance](/organisations/cheri-alliance/), marking another important step forward in building a more secure computing ecosystem.
 
 Building on its existing work with CHERI, Wind River was recently awarded a contract as part of a strategic initiative led by Innovate UK and the Department for Science, Innovation and Technology to support the wider adoption of CHERI technology. As part of this effort, they will be working to port and extend the VxWorks Real-Time Operating System (RTOS) and Wind River Helix Virtualization Platform (Helix Platform) to leverage the CHERI architecture on RISC-V.
 

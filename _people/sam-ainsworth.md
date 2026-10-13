@@ -1,6 +1,6 @@
 ---
 title: Sam Ainsworth
-image_url: null
+image_url: /assets/people/sam-ainsworth/placeholder.svg
 website_url: null
 is_speaker: null
 social:
@@ -13,3 +13,7 @@ related:
 ---
 
 # Sam Ainsworth
+
+## Publications
+
+- [Cornucopia: Temporal Safety for CHERI Heaps](/papers/cornucopia-temporal-safety-for-cheri-heaps/)

@@ -1,8 +1,8 @@
 ---
-generated_at: '2026-10-13T05:54:59Z'
-record_count: 481
-relationship_count: 526
-image_count: 341
+generated_at: '2026-10-13T09:14:30Z'
+record_count: 487
+relationship_count: 1096
+image_count: 516
 errors: []
 records:
 - title: "'Cybersecurity by design - from research to industry' conference"
@@ -15,12 +15,22 @@ records:
   display_date: '2024-11-12'
   alternate: false
   alias_target:
+- title: 3bian
+  url: "/organisations/3bian/"
+  file: _organisations/3bian.md
+  type: Organisation (detail)
+  collection: organisations
+  has_image: true
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target:
 - title: 4️⃣ CHERI for seL4 WG
   url: "/groups/cheri-for-sel4/"
   file: _groups/cheri-for-sel4.md
   type: Group (detail)
   collection: groups
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -40,7 +50,7 @@ records:
   file: _people/a-theodore-markettos.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -80,7 +90,7 @@ records:
   file: _papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators.md
   type: Paper (detail)
   collection: papers
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date: '2025'
   alternate: false
@@ -190,7 +200,7 @@ records:
   file: _people/alexandre-joannou.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -361,7 +371,7 @@ records:
   file: _people/anthony-fox.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -391,7 +401,7 @@ records:
   file: _organisations/ararat-river-consulting-llc.md
   type: Organisation (detail)
   collection: organisations
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -401,7 +411,7 @@ records:
   file: _organisations/aria.md
   type: Organisation (detail)
   collection: organisations
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -411,7 +421,7 @@ records:
   file: _organisations/arm.md
   type: Organisation (detail)
   collection: organisations
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -491,7 +501,7 @@ records:
   file: _people/ben-laurie.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -501,11 +511,11 @@ records:
   file: _people/benjamin-fletcher.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
-  alternate: false
-  alias_target:
+  alternate: true
+  alias_target: "/people/ben-fletcher/"
 - title: Beyond Software Patching
   url: "/news/beyond-software-patching/"
   file: _news/beyond-software-patching.md
@@ -551,7 +561,7 @@ records:
   file: _people/brett-f-gutstein.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -561,7 +571,7 @@ records:
   file: _people/brian-campbell.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -581,7 +591,7 @@ records:
   file: _people/brooks-davis.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -611,7 +621,7 @@ records:
   file: _guides/build-compartments.md
   type: Guide (detail)
   collection: guides
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -631,7 +641,7 @@ records:
   file: _guides/build-your-first-application.md
   type: Guide (detail)
   collection: guides
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -651,7 +661,7 @@ records:
   file: _guides/building-secure-software.md
   type: Guide (detail)
   collection: guides
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -751,7 +761,7 @@ records:
   file: _organisations/cheri-alliance.md
   type: Organisation (detail)
   collection: organisations
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -795,7 +805,7 @@ records:
   file: _policies/ip-policy.md
   type: Policy (detail)
   collection: policies
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -907,7 +917,7 @@ records:
   file: _papers/cheri-concentrate-practical-compressed-capabilities.md
   type: Paper (detail)
   collection: papers
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date: '2019'
   alternate: false
@@ -927,7 +937,7 @@ records:
   file: _software/cheri-linux.md
   type: Software Project (detail)
   collection: software
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -947,11 +957,11 @@ records:
   file: _news/cheri-or-cheriot-the-answer-is-not-what-you-think-original.md
   type: News Article (detail)
   collection: news
-  has_image: false
+  has_image: true
   missing_news_date: true
   display_date:
   alternate: true
-  alias_target:
+  alias_target: "/news/cheri-or-cheriot-the-answer-is-not-what-you-think/"
 - title: CHERI or CHERIoT? The Answer Is Not What You Think
   url: "/news/cheri-or-cheriot-the-answer-is-not-what-you-think/"
   file: _news/cheri-or-cheriot-the-answer-is-not-what-you-think.md
@@ -968,6 +978,16 @@ records:
   type: Content Page (detail)
   collection: pages
   has_image: false
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target:
+- title: CHERI Research WG
+  url: "/groups/cheri-research/"
+  file: _groups/cheri-research.md
+  type: Working group (detail)
+  collection: groups
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -1017,7 +1037,7 @@ records:
   file: _policies/trademark.md
   type: Policy (detail)
   collection: policies
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -1047,7 +1067,7 @@ records:
   file: _papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md
   type: Paper (detail)
   collection: papers
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date: '2015'
   alternate: false
@@ -1057,7 +1077,7 @@ records:
   file: _papers/cheri-hardware-enabled-c-c-memory-protection-at-scale.md
   type: Paper (detail)
   collection: papers
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date: '2024'
   alternate: false
@@ -1068,7 +1088,7 @@ records:
   file: _papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p.md
   type: Paper (detail)
   collection: papers
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date: '2019'
   alternate: false
@@ -1078,7 +1098,7 @@ records:
   file: _software/cheribsd.md
   type: Software Project (detail)
   collection: software
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -1088,7 +1108,7 @@ records:
   file: _hardware/cheriot.md
   type: Hardware Item (detail)
   collection: hardware
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -1098,11 +1118,11 @@ records:
   file: _news/cheriot-1-0-specification-released-original.md
   type: News Article (detail)
   collection: news
-  has_image: false
+  has_image: true
   missing_news_date: true
   display_date:
   alternate: true
-  alias_target:
+  alias_target: "/news/cheriot-1-0-specification-released/"
 - title: CHERIoT 1.0 Specification Released
   url: "/news/cheriot-1-0-specification-released/"
   file: _news/cheriot-1-0-specification-released.md
@@ -1129,7 +1149,7 @@ records:
   file: _papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev.md
   type: Paper (detail)
   collection: papers
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date: '2025'
   alternate: false
@@ -1159,7 +1179,7 @@ records:
   file: _papers/cheriot-complete-memory-safety-for-embedded-devices.md
   type: Paper (detail)
   collection: papers
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date: '2023'
   alternate: false
@@ -1219,7 +1239,7 @@ records:
   file: _guides/choose-a-platform.md
   type: Guide (detail)
   collection: guides
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -1260,11 +1280,11 @@ records:
   file: _news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology-original.md
   type: News Article (detail)
   collection: news
-  has_image: false
+  has_image: true
   missing_news_date: true
   display_date:
   alternate: true
-  alias_target:
+  alias_target: "/news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology/"
 - title: Codasip Powers UK Digital Security by Design Innovation Contracts with CHERI
     Technology
   url: "/news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology/"
@@ -1281,7 +1301,7 @@ records:
   file: _policies/code-of-conduct.md
   type: Policy (detail)
   collection: policies
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -1331,7 +1351,7 @@ records:
   file: _policies/competition-law-statement.md
   type: Policy (detail)
   collection: policies
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -1351,7 +1371,7 @@ records:
   file: _organisations/configured-things.md
   type: Organisation (detail)
   collection: organisations
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -1381,7 +1401,7 @@ records:
   file: _papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety.md
   type: Paper (detail)
   collection: papers
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date: '2024'
   alternate: false
@@ -1391,7 +1411,7 @@ records:
   file: _papers/cornucopia-temporal-safety-for-cheri-heaps.md
   type: Paper (detail)
   collection: papers
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date: '2020'
   alternate: false
@@ -1511,7 +1531,7 @@ records:
   file: _software/debugging-tools.md
   type: Software Project (detail)
   collection: software
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -1552,7 +1572,7 @@ records:
   file: _papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c.md
   type: Paper (detail)
   collection: papers
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date: '2025'
   alternate: false
@@ -1672,7 +1692,7 @@ records:
   file: _guides/downloads.md
   type: Guide (detail)
   collection: guides
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -1682,7 +1702,7 @@ records:
   file: _organisations/dsit.md
   type: Organisation (detail)
   collection: organisations
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -1722,7 +1742,7 @@ records:
   file: _people/edward-tomasz-napieraa.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -1762,7 +1782,7 @@ records:
   file: _organisations/ericsson.md
   type: Organisation (detail)
   collection: organisations
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -1772,7 +1792,7 @@ records:
   file: _organisations/european-commission-dg-connect.md
   type: Organisation (detail)
   collection: organisations
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -1862,7 +1882,7 @@ records:
   file: _policies/export-controls.md
   type: Policy (detail)
   collection: policies
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -1903,7 +1923,7 @@ records:
   file: _papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou.md
   type: Paper (detail)
   collection: papers
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date: '2024'
   alternate: false
@@ -1923,7 +1943,7 @@ records:
   file: _hardware/fpga-platforms.md
   type: Hardware Item (detail)
   collection: hardware
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -1933,7 +1953,7 @@ records:
   file: _software/freebsd.md
   type: Software Project (detail)
   collection: software
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -1973,7 +1993,7 @@ records:
   file: _organisations/german-research-center-for-artificial-intelligence-dfki.md
   type: Organisation (detail)
   collection: organisations
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -2033,7 +2053,7 @@ records:
   file: _people/graeme-barnes.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -2043,7 +2063,7 @@ records:
   file: _people/graeme-jenkinson.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -2053,7 +2073,7 @@ records:
   file: _people/hamed-okhravi.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -2123,7 +2143,7 @@ records:
   file: _people/hongyan-xia.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -2143,7 +2163,7 @@ records:
   file: _people/hugo-lefeuvre.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -2153,7 +2173,7 @@ records:
   file: _people/hugo-vincent.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -2173,7 +2193,7 @@ records:
   file: _people/ian-stark.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -2204,11 +2224,11 @@ records:
   file: _news/innovate-uk-project-winner-university-of-birmingham-original.md
   type: News Article (detail)
   collection: news
-  has_image: false
+  has_image: true
   missing_news_date: true
   display_date:
   alternate: true
-  alias_target:
+  alias_target: "/news/innovate-uk-project-winner-university-of-birmingham/"
 - title: 'Innovate UK Project Winner: University of Birmingham'
   url: "/news/innovate-uk-project-winner-university-of-birmingham/"
   file: _news/innovate-uk-project-winner-university-of-birmingham.md
@@ -2224,7 +2244,7 @@ records:
   file: _guides/install-a-toolchain.md
   type: Guide (detail)
   collection: guides
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -2244,7 +2264,7 @@ records:
   file: _policies/intellectual-property-policy.md
   type: Policy (detail)
   collection: policies
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -2294,11 +2314,11 @@ records:
   file: _news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences-original.md
   type: News Article (detail)
   collection: news
-  has_image: false
+  has_image: true
   missing_news_date: true
   display_date:
   alternate: true
-  alias_target:
+  alias_target: "/news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences/"
 - title: IoTSF + TechWorks – Resilient IoT and Trustworthy AI Conferences
   url: "/news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences/"
   file: _news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences.md
@@ -2314,7 +2334,7 @@ records:
   file: _papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md
   type: Paper (detail)
   collection: papers
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date: '2025'
   alternate: false
@@ -2374,7 +2394,7 @@ records:
   file: _people/jim-wallace.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -2444,7 +2464,7 @@ records:
   file: _people/jonathan-anderson.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -2494,7 +2514,7 @@ records:
   file: _people/kayvan-memarian.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -2524,7 +2544,7 @@ records:
   file: _people/khilan-gudka.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -2544,7 +2564,7 @@ records:
   file: _people/konrad-witaszczyk.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -2564,7 +2584,7 @@ records:
   file: _people/kunyan-liu.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -2574,6 +2594,16 @@ records:
   file: _people/kyndylan-nienhuis.md
   type: Person (detail)
   collection: people
+  has_image: true
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target:
+- title: Latest News
+  url: "/news-and-events/news-and-analysis/latest-news/"
+  file: pages/news-and-events/news-and-analysis/latest-news.md
+  type: News (list)
+  collection: pages
   has_image: false
   missing_news_date: false
   display_date:
@@ -2589,22 +2619,12 @@ records:
   display_date:
   alternate: true
   alias_target:
-- title: Latest News
-  url: "/news-and-events/news-and-analysis/latest-news/"
-  file: pages/news-and-events/news-and-analysis/latest-news.md
-  type: News (list)
-  collection: pages
-  has_image: false
-  missing_news_date: false
-  display_date:
-  alternate: false
-  alias_target:
 - title: Laurence Tratt
   url: "/people/laurence-tratt/"
   file: _people/laurence-tratt.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -2644,7 +2664,7 @@ records:
   file: _software/llvm-and-clang.md
   type: Software Project (detail)
   collection: software
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -2675,11 +2695,11 @@ records:
   file: _news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support-original.md
   type: News Article (detail)
   collection: news
-  has_image: false
+  has_image: true
   missing_news_date: true
   display_date:
   alternate: true
-  alias_target:
+  alias_target: "/news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support/"
 - title: lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure
     Enclave with InnovateUK Support
   url: "/news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support/"
@@ -2717,7 +2737,7 @@ records:
   file: _people/lucian-paul-trifu.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -2747,7 +2767,17 @@ records:
   file: _people/margo-seltzer.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target:
+- title: Maricel Ventura
+  url: "/people/maricel-ventura/"
+  file: _people/maricel-ventura.md
+  type: Person (detail)
+  collection: people
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -2777,7 +2807,7 @@ records:
   file: _people/mark-johnston.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -2807,7 +2837,7 @@ records:
   file: _people/matthew-naylor.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -2857,7 +2887,7 @@ records:
   file: _people/michael-roe.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -2867,7 +2897,7 @@ records:
   file: _organisations/microservice-store.md
   type: Organisation (detail)
   collection: organisations
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -2877,7 +2907,7 @@ records:
   file: _people/mihai-ordean.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -2907,7 +2937,7 @@ records:
   file: _organisations/minerva-systems.md
   type: Organisation (detail)
   collection: organisations
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -2937,7 +2967,7 @@ records:
   file: _organisations/mission-critical-applications-limited.md
   type: Organisation (detail)
   collection: organisations
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -2947,7 +2977,7 @@ records:
   file: _hardware/morello.md
   type: Hardware Item (detail)
   collection: hardware
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -2967,7 +2997,7 @@ records:
   file: _people/munraj-vadera.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -2997,7 +3027,7 @@ records:
   file: _people/nathaniel-wesley-filardo.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -3027,11 +3057,11 @@ records:
   file: _news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd-original.md
   type: News Article (detail)
   collection: news
-  has_image: false
+  has_image: true
   missing_news_date: true
   display_date:
   alternate: true
-  alias_target:
+  alias_target: "/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd/"
 - title: New InnovateUK-funded project to merge CHERI support into FreeBSD
   url: "/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd/"
   file: _news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd.md
@@ -3067,7 +3097,7 @@ records:
   file: _people/nirav-dave.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -3087,6 +3117,16 @@ records:
   file: _organisations/nquiringminds.md
   type: Organisation (detail)
   collection: organisations
+  has_image: true
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target:
+- title: Oliver Gray
+  url: "/people/oliver-gray/"
+  file: _people/oliver-gray.md
+  type: Person (detail)
+  collection: people
   has_image: true
   missing_news_date: false
   display_date:
@@ -3213,16 +3253,6 @@ records:
   alternate: false
   alias_target:
 - title: Past Events
-  url: "/reference/source-versions/past-events/"
-  file: pages/reference/source-versions/past-events.md
-  type: Content Page (detail)
-  collection: pages
-  has_image: false
-  missing_news_date: false
-  display_date:
-  alternate: true
-  alias_target:
-- title: Past Events
   url: "/news-and-events/events-and-archive/past-events/"
   file: pages/news-and-events/events-and-archive/past-events.md
   type: Events (list)
@@ -3231,6 +3261,16 @@ records:
   missing_news_date: false
   display_date:
   alternate: false
+  alias_target:
+- title: Past Events
+  url: "/reference/source-versions/past-events/"
+  file: pages/reference/source-versions/past-events.md
+  type: Content Page (detail)
+  collection: pages
+  has_image: false
+  missing_news_date: false
+  display_date:
+  alternate: true
   alias_target:
 - title: Paul Metzger
   url: "/people/paul-metzger/"
@@ -3287,7 +3327,7 @@ records:
   file: _people/peter-g-neumann.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -3297,7 +3337,7 @@ records:
   file: _people/peter-rugg.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -3307,7 +3347,7 @@ records:
   file: _people/peter-sewell.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -3347,7 +3387,7 @@ records:
   file: _policies/policy-briefings.md
   type: Policy (detail)
   collection: policies
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -3357,7 +3397,7 @@ records:
   file: _guides/port-existing-software.md
   type: Guide (detail)
   collection: guides
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -3367,7 +3407,7 @@ records:
   file: _software/porting-status.md
   type: Software Project (detail)
   collection: software
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -3407,7 +3447,7 @@ records:
   file: _policies/privacy.md
   type: Policy (detail)
   collection: policies
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -3417,7 +3457,7 @@ records:
   file: _policies/privacy-policy.md
   type: Policy (detail)
   collection: policies
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -3467,7 +3507,7 @@ records:
   file: _software/real-time-operating-systems.md
   type: Software Project (detail)
   collection: software
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -3478,11 +3518,11 @@ records:
   file: _news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl-original.md
   type: News Article (detail)
   collection: news
-  has_image: false
+  has_image: true
   missing_news_date: true
   display_date:
   alternate: true
-  alias_target:
+  alias_target: "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl/"
 - title: Recent advances in CHERI enhancing stability, maturity, and accessibility
     as urged by the UK’s DSTL
   url: "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl/"
@@ -3529,7 +3569,7 @@ records:
   file: _people/ricardo-almeida.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -3539,7 +3579,7 @@ records:
   file: _people/richard-grisenthwaite.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -3550,7 +3590,7 @@ records:
   file: _papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md
   type: Paper (detail)
   collection: papers
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date: '2020'
   alternate: false
@@ -3570,7 +3610,7 @@ records:
   file: _organisations/risc-v-international.md
   type: Organisation (detail)
   collection: organisations
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -3580,7 +3620,7 @@ records:
   file: _people/robert-m-norton.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -3590,7 +3630,7 @@ records:
   file: _people/robert-norton-wright.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -3610,7 +3650,7 @@ records:
   file: _guides/run-cheri-in-simulation.md
   type: Guide (detail)
   collection: guides
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -3620,7 +3660,7 @@ records:
   file: _software/rust.md
   type: Software Project (detail)
   collection: software
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -3630,7 +3670,7 @@ records:
   file: _people/saar-amar.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -3650,7 +3690,7 @@ records:
   file: _people/sam-ainsworth.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -3668,6 +3708,16 @@ records:
 - title: Samuel Stark
   url: "/people/samuel-stark/"
   file: _people/samuel-stark.md
+  type: Person (detail)
+  collection: people
+  has_image: true
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target:
+- title: Sarah Harris
+  url: "/people/sarah-harris/"
+  file: _people/sarah-harris.md
   type: Person (detail)
   collection: people
   has_image: true
@@ -3742,11 +3792,11 @@ records:
   file: _news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software-original.md
   type: News Article (detail)
   collection: news
-  has_image: false
+  has_image: true
   missing_news_date: true
   display_date:
   alternate: true
-  alias_target:
+  alias_target: "/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software/"
 - title: Several CHERI Alliance members win the DSbD competition to deliver new CHERI
     chips and software
   url: "/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software/"
@@ -3793,7 +3843,7 @@ records:
   file: _software/simulators.md
   type: Software Project (detail)
   collection: software
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -3813,7 +3863,7 @@ records:
   file: _organisations/smart-information-flow-technologies-sift.md
   type: Organisation (detail)
   collection: organisations
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -3863,7 +3913,7 @@ records:
   file: _hardware/sonata.md
   type: Hardware Item (detail)
   collection: hardware
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -3879,16 +3929,6 @@ records:
   alternate: false
   alias_target:
 - title: Speakers
-  url: "/reference/source-versions/speakers/"
-  file: pages/reference/source-versions/speakers.md
-  type: Content Page (detail)
-  collection: pages
-  has_image: false
-  missing_news_date: false
-  display_date:
-  alternate: true
-  alias_target:
-- title: Speakers
   url: "/news-and-events/people-and-opportunities/speakers/"
   file: pages/news-and-events/people-and-opportunities/speakers.md
   type: People (list)
@@ -3897,6 +3937,16 @@ records:
   missing_news_date: false
   display_date:
   alternate: false
+  alias_target:
+- title: Speakers
+  url: "/reference/source-versions/speakers/"
+  file: pages/reference/source-versions/speakers.md
+  type: Content Page (detail)
+  collection: pages
+  has_image: false
+  missing_news_date: false
+  display_date:
+  alternate: true
   alias_target:
 - title: Specifications
   url: "/discover/resources/specifications/"
@@ -3923,7 +3973,7 @@ records:
   file: _people/stacey-son.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -3933,7 +3983,7 @@ records:
   file: _people/steven-j-murdoch.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -4004,7 +4054,7 @@ records:
   file: _guides/technical-faq.md
   type: Guide (detail)
   collection: guides
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -4055,7 +4105,7 @@ records:
   file: _papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa.md
   type: Paper (detail)
   collection: papers
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date: '2023'
   alternate: false
@@ -4085,7 +4135,7 @@ records:
   file: _papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk.md
   type: Paper (detail)
   collection: papers
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date: '2014'
   alternate: false
@@ -4101,16 +4151,6 @@ records:
   alternate: false
   alias_target:
 - title: The Cost of Memory Unsafety
-  url: "/reference/source-versions/cost-of-memory-unsafety/"
-  file: pages/reference/source-versions/cost-of-memory-unsafety.md
-  type: Content Page (detail)
-  collection: pages
-  has_image: false
-  missing_news_date: false
-  display_date:
-  alternate: true
-  alias_target:
-- title: The Cost of Memory Unsafety
   url: "/adopt/business-case/cost-of-memory-unsafety/"
   file: pages/adopt/business-case/cost-of-memory-unsafety.md
   type: Content Page (detail)
@@ -4119,6 +4159,16 @@ records:
   missing_news_date: false
   display_date:
   alternate: false
+  alias_target:
+- title: The Cost of Memory Unsafety
+  url: "/reference/source-versions/cost-of-memory-unsafety/"
+  file: pages/reference/source-versions/cost-of-memory-unsafety.md
+  type: Content Page (detail)
+  collection: pages
+  has_image: false
+  missing_news_date: false
+  display_date:
+  alternate: true
   alias_target:
 - title: 'The EU Cyber Resilience Act: What It Means for Secure-by-Design Systems
     and CHERI'
@@ -4136,7 +4186,7 @@ records:
   file: _organisations/the-good-penguin.md
   type: Organisation (detail)
   collection: organisations
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -4201,12 +4251,22 @@ records:
   display_date: '2024-02-27'
   alternate: false
   alias_target:
+- title: Thierno Sene
+  url: "/people/thierno-sene/"
+  file: _people/thierno-sene.md
+  type: Person (detail)
+  collection: people
+  has_image: true
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target:
 - title: Thomas Bauereiss
   url: "/people/thomas-bauereiss/"
   file: _people/thomas-bauereiss.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -4226,7 +4286,7 @@ records:
   file: _people/timothy-m-jones.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -4246,7 +4306,7 @@ records:
   file: _people/tony-chen.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -4286,7 +4346,7 @@ records:
   file: _policies/trademark-policy.md
   type: Policy (detail)
   collection: policies
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -4306,7 +4366,7 @@ records:
   file: _guides/tutorials-and-training.md
   type: Guide (detail)
   collection: guides
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -4326,7 +4386,7 @@ records:
   file: _organisations/ukri.md
   type: Organisation (detail)
   collection: organisations
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -4416,7 +4476,7 @@ records:
   file: _organisations/university-of-modena-and-reggio-emilia.md
   type: Organisation (detail)
   collection: organisations
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -4432,16 +4492,6 @@ records:
   alternate: false
   alias_target:
 - title: Upcoming Events
-  url: "/reference/source-versions/upcoming-events/"
-  file: pages/reference/source-versions/upcoming-events.md
-  type: Content Page (detail)
-  collection: pages
-  has_image: false
-  missing_news_date: false
-  display_date:
-  alternate: true
-  alias_target:
-- title: Upcoming Events
   url: "/news-and-events/events-and-archive/upcoming-events/"
   file: pages/news-and-events/events-and-archive/upcoming-events.md
   type: Events (list)
@@ -4450,6 +4500,16 @@ records:
   missing_news_date: false
   display_date:
   alternate: false
+  alias_target:
+- title: Upcoming Events
+  url: "/reference/source-versions/upcoming-events/"
+  file: pages/reference/source-versions/upcoming-events.md
+  type: Content Page (detail)
+  collection: pages
+  has_image: false
+  missing_news_date: false
+  display_date:
+  alternate: true
   alias_target:
 - title: User space support - CHERI Roadmap for Linux
   url: "/reference/linux-roadmap/goals/user-space.html"
@@ -4476,7 +4536,7 @@ records:
   file: _policies/trademark-original.md
   type: Policy (detail)
   collection: policies
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: true
@@ -4486,7 +4546,7 @@ records:
   file: _people/vadim-zaliva.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -4657,7 +4717,7 @@ records:
   file: _people/yucong-tao.md
   type: Person (detail)
   collection: people
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -4677,7 +4737,7 @@ records:
   file: _software/zephyr.md
   type: Software Project (detail)
   collection: software
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -4687,7 +4747,7 @@ records:
   file: _groups/cheri-c-cplusplus.md
   type: Group (detail)
   collection: groups
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -4707,7 +4767,7 @@ records:
   file: _groups/rust-plus-cheri.md
   type: Group (detail)
   collection: groups
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -4717,7 +4777,7 @@ records:
   file: _groups/certification-working-group.md
   type: Group (detail)
   collection: groups
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -4727,7 +4787,7 @@ records:
   file: _groups/cheri-in-soc.md
   type: Group (detail)
   collection: groups
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -4737,7 +4797,7 @@ records:
   file: _groups/cheri-freertos.md
   type: Group (detail)
   collection: groups
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -4747,7 +4807,7 @@ records:
   file: _groups/cheri-qemu.md
   type: Group (detail)
   collection: groups
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -4757,7 +4817,7 @@ records:
   file: _groups/cheri-linux-working-group.md
   type: Group (detail)
   collection: groups
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -4767,7 +4827,7 @@ records:
   file: _groups/mmu-less-systems.md
   type: Group (detail)
   collection: groups
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -4777,7 +4837,7 @@ records:
   file: _groups/repository-management.md
   type: Group (detail)
   collection: groups
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -4787,7 +4847,7 @@ records:
   file: _groups/cheri-plus-safety.md
   type: Group (detail)
   collection: groups
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -4797,7 +4857,7 @@ records:
   file: _groups/marketing.md
   type: Group (detail)
   collection: groups
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -4807,7 +4867,7 @@ records:
   file: _groups/os-support-and-portability.md
   type: Group (detail)
   collection: groups
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -4817,7 +4877,7 @@ records:
   file: _groups/cheri-virtual-machines.md
   type: Group (detail)
   collection: groups
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -4827,7 +4887,7 @@ records:
   file: _groups/cheri-zephyr.md
   type: Group (detail)
   collection: groups
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false
@@ -4837,7 +4897,7 @@ records:
   file: _groups/promotion-and-ambassador-program.md
   type: Group (detail)
   collection: groups
-  has_image: false
+  has_image: true
   missing_news_date: false
   display_date:
   alternate: false

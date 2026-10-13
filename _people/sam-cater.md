@@ -1,7 +1,7 @@
 ---
 title: Sam Cater
 image_url: /assets/people/sam-cater/9f23030312fd-portrait.jpg
-website_url: null
+website_url: https://cheri-alliance.org/events/speakers/sam-cater/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/samalexcater/
@@ -25,8 +25,4 @@ Today, Sam is working to advance and advocate the CHERI ecosystem from the persp
 
 ## CHERI Talks
 
-BT’s Engagement with CHERI Technology | CHERI Blossoms 2026
-
-27/03/2026
-
-Cambridge, UK
+- BT’s Engagement with CHERI Technology | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 27/03/2026, Cambridge, UK

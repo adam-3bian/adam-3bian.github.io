@@ -1,6 +1,6 @@
 ---
 title: Arm
-image_url: null
+image_url: /assets/organisations/arm/placeholder.svg
 website_url: null
 membership_tier: null
 is_founding_member: null
@@ -11,3 +11,7 @@ social:
 ---
 
 # Arm
+
+## People
+
+- [Kevin Brodsky](/people/kevin-brodsky/)

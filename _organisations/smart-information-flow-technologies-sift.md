@@ -1,6 +1,6 @@
 ---
 title: Smart Information Flow Technologies (SIFT)
-image_url: null
+image_url: /assets/organisations/smart-information-flow-technologies-sift/placeholder.svg
 website_url: null
 membership_tier: null
 is_founding_member: null
@@ -11,3 +11,7 @@ social:
 ---
 
 # Smart Information Flow Technologies (SIFT)
+
+## People
+
+- [David Musliner](/people/david-musliner/)

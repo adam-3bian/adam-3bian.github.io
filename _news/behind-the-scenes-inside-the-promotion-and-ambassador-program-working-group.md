@@ -1,12 +1,14 @@
 ---
 title: 'Behind the Scenes: inside the promotion and ambassador program Working Group'
-image_url: /assets/shared/source-assets/bb889a4dc09e-cheri-alliance-working-groups.png
+image_url: /assets/news/behind-the-scenes-inside-the-promotion-and-ambassador-program-working-group/bb889a4dc09e-cheri-alliance-working-groups.png
 published_date: '2025-09-30'
 authors:
 - mike-eftimakis
 related:
-  groups: []
-  organisations: []
+  groups:
+  - promotion-and-ambassador-program
+  organisations:
+  - cheri-alliance
   hardware: []
   software: []
   papers: []
@@ -14,9 +16,7 @@ related:
 
 # Behind the Scenes: inside the promotion and ambassador program Working Group
 
-Mike Eftimakis – CHERI Alliance If you’ve been watching the CHERI Alliance gather momentum, you’ve probably noticed a growing wave of community activity—talks, demos, explainers, and friendly faces spreading the word about capability-based security.…
-
-If you’ve been watching the CHERI Alliance gather momentum, you’ve probably noticed a growing wave of community activity—talks, demos, explainers, and friendly faces spreading the word about capability-based security. A lot of that energy is coordinated by the Promotion & Ambassador Program Working Group (WG). Here’s a clear look at what the WG does, how it empowers ambassadors, and how you can plug in.
+If you’ve been watching the [CHERI Alliance](/organisations/cheri-alliance/) gather momentum, you’ve probably noticed a growing wave of community activity—talks, demos, explainers, and friendly faces spreading the word about capability-based security. A lot of that energy is coordinated by the [Promotion & Ambassador Program Working Group](/groups/promotion-and-ambassador-program/) (WG). Here’s a clear look at what the WG does, how it empowers ambassadors, and how you can plug in.
 
 ## What we do
 
@@ -36,15 +36,11 @@ Initially we didn’t really know what to expect or what these ambassadors would
 
 We left the candidates decide what they wanted to do to help, while of course guiding them with our own ideas. As no one is expected to be the best at everything, they picked the activities that best fit their strengths:
 
-Create technical content: tutorials, presentations, code examples/demos, blog posts, and videos.
-
-Communicate consistently: share updates, news, and stories across channels.
-
-Drive events: help organise or represent the Alliance at meetups, workshops, and conferences.
-
-Outreach & growth: contact organisations, network widely, and help new folks discover CHERI.
-
-Participate: contribute to the life of the CHERI Alliance, by joining WG, or by designing collateral, help with admin/events, and bringing creative ideas.
+- Create technical content: tutorials, presentations, code examples/demos, blog posts, and videos.
+- Communicate consistently: share updates, news, and stories across channels.
+- Drive events: help organise or represent the Alliance at meetups, workshops, and conferences.
+- Outreach & growth: contact organisations, network widely, and help new folks discover CHERI.
+- Participate: contribute to the life of the CHERI Alliance, by joining WG, or by designing collateral, help with admin/events, and bringing creative ideas.
 
 ## Supporting ambassadors
 

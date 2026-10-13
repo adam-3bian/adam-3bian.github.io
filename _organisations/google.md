@@ -16,8 +16,6 @@ Google’s mission is to organize the world’s information and make it universa
 
 ## Description
 
-Google’s mission is to organize the world’s information and make it universally accessible and useful.
-
 ## CHERI Activities
 
-Google has collaborated with the University of Cambridge on the CHERI project, providing funding and engineering expertise to support its development and implementation. Google is engaged in security research related to CHERI, exploring its potential to enhance software security and mitigate vulnerabilities. This research helps to identify and address potential challenges and refine the CHERI architecture.
+Google has collaborated with the [University of Cambridge](/organisations/university-of-cambridge/) on the CHERI project, providing funding and engineering expertise to support its development and implementation. Google is engaged in security research related to CHERI, exploring its potential to enhance software security and mitigate vulnerabilities. This research helps to identify and address potential challenges and refine the CHERI architecture.

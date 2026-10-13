@@ -1,11 +1,13 @@
 ---
 title: BT Group Joins the CHERI Alliance to Advance Cybersecurity Innovation
-image_url: /assets/shared/source-assets/df8b50676c3b-working-group-spotlight-marketing.png
+image_url: /assets/news/bt-group-joins-the-cheri-alliance-to-advance-cybersecurity-innovation/df8b50676c3b-working-group-spotlight-marketing.png
 published_date: '2025-06-18'
 authors: []
 related:
   groups: []
-  organisations: []
+  organisations:
+  - cheri-alliance
+  - bt-group
   hardware: []
   software: []
   papers: []
@@ -13,9 +15,7 @@ related:
 
 # BT Group Joins the CHERI Alliance to Advance Cybersecurity Innovation
 
-Cambridge, UK – 18 June 2025 – The CHERI Alliance, a global coalition dedicated to enhancing cybersecurity through groundbreaking hardware memory safety technology, is proud to announce that BT Group has joined its ranks. As one of the world’s…
-
-Cambridge, UK – 18 June 2025 – The CHERI Alliance, a global coalition dedicated to enhancing cybersecurity through groundbreaking hardware memory safety technology, is proud to announce that BT Group has joined its ranks. As one of the world’s leading telecommunications companies, BT brings decades of expertise in network security and innovation to the Alliance, further strengthening the mission to create a safer digital future.
+Cambridge, UK – 18 June 2025 – The [CHERI Alliance](/organisations/cheri-alliance/), a global coalition dedicated to enhancing cybersecurity through groundbreaking hardware memory safety technology, is proud to announce that [BT Group](/organisations/bt-group/) has joined its ranks. As one of the world’s leading telecommunications companies, BT brings decades of expertise in network security and innovation to the Alliance, further strengthening the mission to create a safer digital future.
 
 The CHERI Alliance is an international consortium uniting industry leaders, researchers, and governments to drive the adoption of Capability Hardware Enhanced RISC Instructions (CHERI) technology. CHERI technology offers a transformative approach to preventing memory safety vulnerabilities, which are the root cause of certain cyberattacks, by incorporating hardware-enforced protections.
 
@@ -23,7 +23,7 @@ BT’s decision to join the CHERI Alliance underscores its commitment to staying
 
 “BT’s leadership in secure communications is unparalleled, and their involvement in the CHERI Alliance marks a significant step forward for our mission,” said Mike EFTIMAKIS, Founding Director of the CHERI Alliance. “Together, we can ensure that CHERI technology is adopted widely, making systems safer and more resilient for everyone.”
 
-“As a global leader in telecommunications, BT recognises the critical importance of securing the digital infrastructure that underpins our economy and society,” said Dave Harcourt, Chief Security Authority and Automation Director at BT Group. “Joining the CHERI Alliance allows us to work with like-minded organizations to push the boundaries of what’s possible in hardware-enabled cybersecurity.”
+“As a global leader in telecommunications, BT recognises the critical importance of securing the digital infrastructure that underpins our economy and society,” said [Dave Harcourt](/people/dave-harcourt/), Chief Security Authority and Automation Director at BT Group. “Joining the CHERI Alliance allows us to work with like-minded organizations to push the boundaries of what’s possible in hardware-enabled cybersecurity.”
 
 The Alliance has recently been named as a partner of the British government for the adoption of CHERI and operates a collaborative model through working groups. In addition to raising awareness about the benefits of CHERI, the Alliance’s working groups bring recommendations, tools, open-source software, and documentation to accelerate product development and empower developers, fostering a robust ecosystem for CHERI adoption.
 
@@ -31,7 +31,7 @@ The Alliance has recently been named as a partner of the British government for 
 
 ## Media Contact:
 
-Adam Finney, CHERI Alliance, media@cheri-alliance.org
+[Adam Finney](/people/adam-finney/), CHERI Alliance, media@cheri-alliance.org
 
 ## About the CHERI Alliance
 

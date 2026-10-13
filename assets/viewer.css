@@ -192,7 +192,8 @@ body.image-viewer-open { position: fixed; inset-inline: 0; top: var(--image-view
 }
 .card { display: flex; flex-direction: column; overflow: hidden; color: var(--ink); text-decoration: none; }
 .card:hover, .overview-card:hover { color: var(--ink); background: var(--soft); }
-.card img, .no-image { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; background: var(--soft); }
+.card img, .no-image { width: 100%; height: auto; aspect-ratio: 3 / 1; object-fit: contain; background: var(--soft); }
+.card img.image-portrait { aspect-ratio: 1 / 1; }
 .no-image { display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: .8rem; }
 .card-text { display: flex; flex-direction: column; flex: 1; padding: 1rem; }
 .card-text h3 { margin: 0 0 .6rem; overflow-wrap: anywhere; }
@@ -269,4 +270,23 @@ code { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
   .overview-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .audit-controls label { width: 100%; }
   .audit-controls input, .audit-controls select { min-width: 0; }
+}
+
+/* Collections use a consistent frame; contain keeps labels and diagrams whole.
+   Original assets retain their resolution and proportions for the viewer. */
+article[data-collection]:not([data-collection="pages"]) :is(.lead-image, .article-content img) {
+  height: auto;
+  max-height: none;
+  aspect-ratio: 3 / 1;
+  object-fit: contain;
+  background: var(--soft);
+}
+article[data-collection]:not([data-collection="pages"]) :is(img.image-portrait, .portrait-gallery img) {
+  aspect-ratio: 1 / 1;
+}
+article[data-collection]:not([data-collection="pages"]) .article-content :is(.portrait-gallery img, .logo-gallery img, img.image-logo) {
+  width: min(100%, 14rem);
+}
+article[data-collection]:not([data-collection="pages"]) .article-content img.image-icon {
+  width: min(100%, 6rem);
 }

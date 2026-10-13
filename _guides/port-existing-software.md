@@ -1,6 +1,6 @@
 ---
 title: Port Existing Software
-image_url: null
+image_url: /assets/guides/port-existing-software/placeholder.svg
 repository_urls: []
 updated_date: null
 authors: []
@@ -22,17 +22,12 @@ A good port makes those assumptions visible and fixes their root cause. Suppress
 
 Before changing source code:
 
-Select the architecture, operating system, and application binary interface (ABI).
-
-Build and test the unmodified software on its conventional target.
-
-Record test coverage, representative inputs, performance, and memory use.
-
-Pin the CHERI software development kit (SDK) and target revisions.
-
-Build dependencies through the same ABI and target system headers and libraries, known as a sysroot.
-
-Start with a small leaf library or command-line component. A narrow target makes compiler diagnostics and runtime faults easier to understand.
+- Select the architecture, operating system, and application binary interface (ABI).
+- Build and test the unmodified software on its conventional target.
+- Record test coverage, representative inputs, performance, and memory use.
+- Pin the CHERI software development kit (SDK) and target revisions.
+- Build dependencies through the same ABI and target system headers and libraries, known as a sysroot.
+- Start with a small leaf library or command-line component. A narrow target makes compiler diagnostics and runtime faults easier to understand.
 
 ## Common porting issues
 
@@ -50,19 +45,13 @@ Converting an integer back to a pointer does not, by itself, create a valid capa
 
 Pure-capability pointers may be larger than conventional pointers. Review:
 
-packed structures and unions
-
-hard-coded sizeof(void \*) assumptions
-
-binary file and network formats
-
-variadic arguments
-
-foreign-function interfaces
-
-alignment calculations
-
-Store an index, offset, or validated protocol identifier in a persistent or wire format rather than a live in-memory pointer.
+- packed structures and unions
+- hard-coded sizeof(void \*) assumptions
+- binary file and network formats
+- variadic arguments
+- foreign-function interfaces
+- alignment calculations
+- Store an index, offset, or validated protocol identifier in a persistent or wire format rather than a live in-memory pointer.
 
 ### Bounds and object intent
 
@@ -88,37 +77,25 @@ Inline assembly must use the correct capability registers, constraints, calling 
 
 Classify each warning or fault:
 
-Pointer truncated into an integer: Retain a pointer or capability type.
-
-ABI mismatch: Rebuild the library for the same target and application binary interface.
-
-Out-of-bounds access: Correct the object model or derive bounds from the enclosing allocation.
-
-Missing permission: Pass a capability with the minimum permission the operation needs.
-
-Invalid tag: Avoid reconstructing capabilities from raw bytes or integers.
-
-Stale reference: Use the platform’s lifetime and revocation mechanism.
-
-Keep this log with the port. It helps reviewers distinguish compatibility changes from changes that alter the security model.
+- Pointer truncated into an integer: Retain a pointer or capability type.
+- ABI mismatch: Rebuild the library for the same target and application binary interface.
+- Out-of-bounds access: Correct the object model or derive bounds from the enclosing allocation.
+- Missing permission: Pass a capability with the minimum permission the operation needs.
+- Invalid tag: Avoid reconstructing capabilities from raw bytes or integers.
+- Stale reference: Use the platform’s lifetime and revocation mechanism.
+- Keep this log with the port. It helps reviewers distinguish compatibility changes from changes that alter the security model.
 
 ## Test the protection, not only the happy path
 
 Run existing unit and integration tests, then add cases for:
 
-minimum and maximum object sizes
-
-malformed lengths and offsets
-
-null and empty inputs
-
-integer overflow in size calculations
-
-objects crossing interface boundaries
-
-concurrent lifetime changes
-
-compartment calls with missing or excessive authority
+- minimum and maximum object sizes
+- malformed lengths and offsets
+- null and empty inputs
+- integer overflow in size calculations
+- objects crossing interface boundaries
+- concurrent lifetime changes
+- compartment calls with missing or excessive authority
 
 Use fuzzing and sanitizers where supported. CHERI faults can make invalid accesses easier to locate, while sanitizers may still find undefined behaviour before it becomes a capability violation.
 

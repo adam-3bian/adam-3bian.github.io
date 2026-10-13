@@ -2,26 +2,29 @@
 title: CHERI-seL4 and CHERI-Microkit Released
 image_url: /assets/news/cheri-sel4-and-cheri-microkit-released/8d44a7e5916e-hero.png
 published_date: '2025-07-29'
-authors: []
+authors:
+- hesham-almatary
 related:
-  groups: []
-  organisations: []
+  groups:
+  - cheri-for-sel4
+  organisations:
+  - capabilities-limited
+  - codasip
   hardware: []
-  software: []
+  software:
+  - rust
   papers: []
 ---
 
 # CHERI-seL4 and CHERI-Microkit Released
 
-Hesham Almatary – Capabilities Limited We are happy to release a prototype of CHERI-seL4, an experimental version of the seL4 microkernel with CHERI support. This comes with CHERI-Microkit, a lightweight userspace framework, and a set of exercises…
+[Hesham Almatary](/people/hesham-almatary/)
 
-Hesham Almatary
-
-– Capabilities Limited
+– [Capabilities Limited](/organisations/capabilities-limited/)
 
 We are happy to release a prototype of CHERI-seL4, an experimental version of the seL4 microkernel with CHERI support. This comes with CHERI-Microkit, a lightweight userspace framework, and a set of exercises and tutorials designed to help developers explore CHERI’s potential in a real microkernel environment.
 
-The release is aimed at developers who want to build and experiment with memory-safe C/C++ software on seL4. It supports the draft CHERI-RISC-V architecture and runs on QEMU, Codasip’s x730 processor, CHERI-Toooba and CHERI-CVA6 on FPGA.
+The release is aimed at developers who want to build and experiment with memory-safe C/C++ software on seL4. It supports the draft CHERI-RISC-V architecture and runs on QEMU, [Codasip](/organisations/codasip/)’s x730 processor, CHERI-Toooba and CHERI-CVA6 on FPGA.
 
 ## Why Try CHERI-seL4
 
@@ -33,11 +36,9 @@ CHERI is a hardware capability architecture that enables fine-grained memory saf
 
 This opens up use cases where:
 
-Isolation is needed between mixed-trust components without separate address spaces
-
-You want hardware enforcement of memory safety for C/C++ userspace
-
-You need a lightweight runtime that avoids the complexity of full MMU-based separation
+- Isolation is needed between mixed-trust components without separate address spaces
+- You want hardware enforcement of memory safety for C/C++ userspace
+- You need a lightweight runtime that avoids the complexity of full MMU-based separation
 
 CHERI-seL4 enables all of this with minimal changes to the kernel and no need to rewrite existing C code in managed languages.
 
@@ -45,31 +46,24 @@ CHERI-seL4 enables all of this with minimal changes to the kernel and no need to
 
 This initial release provides:
 
-A prototype implementation of the CHERI-seL4 RFC discussed with the seL4 community
-
-Support for the draft CHERI-RISC-V (Zcheri) architecture
-
-Compatibility with Codasip’s x730 processor, CHERI-Toooba and CHERI-CVA6
-
-A minimal kernel extension that supports memory-safe CHERI C in userspace while keeping the kernel unchanged when CHERI is disabled
-
-CHERI-Microkit: a lightweight framework for running CHERI-enabled and unmodified C/C++ or Rust programs side by side
-
-A set of exercises and tutorials to get developers started with CHERI on seL4
+- A prototype implementation of the CHERI-seL4 RFC discussed with the seL4 community
+- Support for the draft CHERI-RISC-V (Zcheri) architecture
+- Compatibility with Codasip’s x730 processor, CHERI-Toooba and CHERI-CVA6
+- A minimal kernel extension that supports memory-safe CHERI C in userspace while keeping the kernel unchanged when CHERI is disabled
+- CHERI-Microkit: a lightweight framework for running CHERI-enabled and unmodified C/C++ or [Rust](/software/rust/) programs side by side
+- A set of exercises and tutorials to get developers started with CHERI on seL4
 
 ## About Microkit
 
-![](/assets/news/cheri-sel4-and-cheri-microkit-released/16467bfc72a2-cheri-sel4-5.png){: .image-full }
+![CHERI-Microkit system diagram](/assets/news/cheri-sel4-and-cheri-microkit-released/16467bfc72a2-cheri-sel4-5.png){: .image-full }
 
 Microkit simplifies seL4 development by abstracting away low-level kernel primitives. It allows you to define a static security policy and deploy isolated components without needing to write complex seL4 setup code.
 
 Microkit consists of:
 
-A runtime library for applications
-
-A monitor (root task) that manages startup
-
-A Rust-based build tool that generates the required bootstrapping and system setup logic
+- A runtime library for applications
+- A monitor (root task) that manages startup
+- A Rust-based build tool that generates the required bootstrapping and system setup logic
 
 CHERI support in Microkit lets you run legacy C/C++ (non-CHERI), memory-safe C/C++ (using CHERI capabilities), and Rust programs in distinct protection domains.
 
@@ -83,29 +77,24 @@ To run the CHERI-Microkit system on QEMU, start by installing the following depe
 
 ### Install dependencies (Ubuntu example):
 
-\# Install cheribuild dependencies:
-
+```bash
+# Install cheribuild dependencies:
 sudo apt install autoconf automake libtool pkg-config clang bison cmake mercurial ninja-build samba flex texinfo time libglib2.0-dev libpixman-1-dev libarchive-dev libarchive-tools libbz2-dev libattr1-dev libcap-ng-dev libexpat1-dev libgmp-dev bc
-
-\# Install Microkit dependencies (Rust and XML tools):
-
+# Install Microkit dependencies (Rust and XML tools):
 curl https://sh.rustup.rs -sSf | sh
-
-rustup target add x86\_64-unknown-linux-musl
-
+rustup target add x86_64-unknown-linux-musl
 sudo apt install libxml2-utils
-
-\# Clone and build:
-
+# Clone and build:
 git clone https://github.com/CTSRD-CHERI/cheribuild.git
-
 cd cheribuild
-
-./cheribuild.py run-cheri-microkit-baremetal-riscv64-purecap --riscv-cheri-isa experimental\_std093 -d
+./cheribuild.py run-cheri-microkit-baremetal-riscv64-purecap --riscv-cheri-isa experimental_std093 -d
+```
 
 ### Run tests and examples:
 
-./cheribuild.py cheri-microkit-baremetal-riscv64-purecap --build-and-test --riscv-cheri-isa experimental\_std093
+```bash
+./cheribuild.py cheri-microkit-baremetal-riscv64-purecap --build-and-test --riscv-cheri-isa experimental_std093
+```
 
 ## CHERI-seL4 Tutorials and Exercises
 
@@ -117,14 +106,14 @@ We welcome contributions, questions and feedback. If you run into issues, have f
 
 ## Resources
 
-CHERI-seL4 GitHub: https://github.com/CHERI-Alliance/CHERI-seL4
+CHERI-seL4 GitHub: <https://github.com/CHERI-Alliance/CHERI-seL4>
 
-CHERI-Microkit GitHub: https://github.com/CHERI-Alliance/CHERI-Microkit
+CHERI-Microkit GitHub: <https://github.com/CHERI-Alliance/CHERI-Microkit>
 
-CHERI-seL4 Exercises and Tutorials: https://cheri-alliance.github.io/CHERI-seL4-Exercises
+CHERI-seL4 Exercises and Tutorials: <https://cheri-alliance.github.io/CHERI-seL4-Exercises>
 
-CHERI-seL4 RFC: https://github.com/seL4/rfcs/pull/21
+CHERI-seL4 RFC: <https://github.com/seL4/rfcs/pull/21>
 
-seL4 upstream PRs: https://github.com/seL4/seL4/pull/1469
+seL4 upstream PRs: <https://github.com/seL4/seL4/pull/1469>
 
-CHERI-seL4 Working Group: https://cheri-alliance.org/who-we-are/working-groups/cheri-sel4/
+[CHERI-seL4 Working Group](/groups/cheri-for-sel4/): <https://cheri-alliance.org/who-we-are/working-groups/cheri-sel4/>

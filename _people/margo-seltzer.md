@@ -1,6 +1,6 @@
 ---
 title: Margo Seltzer
-image_url: null
+image_url: /assets/people/margo-seltzer/placeholder.svg
 website_url: null
 is_speaker: null
 social:
@@ -13,3 +13,7 @@ related:
 ---
 
 # Margo Seltzer
+
+## Publications
+
+- [CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost Embedded Devices](/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/)

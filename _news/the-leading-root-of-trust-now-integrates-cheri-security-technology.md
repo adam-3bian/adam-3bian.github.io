@@ -6,21 +6,21 @@ authors:
 - adam-finney
 related:
   groups: []
-  organisations: []
-  hardware: []
+  organisations:
+  - lowrisc
+  hardware:
+  - cheriot
   software: []
   papers: []
 ---
 
 # The leading Root-of-Trust now integrates CHERI security technology
 
-Adam Finney – CHERI Alliance If you are building secure hardware, the way you protect software running inside that hardware matters just as much as the cryptography around it. That is why lowRISC‘s announcement that OpenTitan Earl Grey 2 will support…
-
 If you are building secure hardware, the way you protect software running inside that hardware matters just as much as the cryptography around it.
 
-That is why lowRISC‘s announcement that OpenTitan Earl Grey 2 will support CHERI is important.
+That is why [lowRISC](/organisations/lowrisc/)‘s announcement that OpenTitan Earl Grey 2 will support CHERI is important.
 
-OpenTitan is an open source hardware Root of Trust platform designed to protect some of the most sensitive parts of a system. The Earl Grey 2 version will add CHERI support through a CHERIoT configuration of the Ibex processor, alongside post-quantum cryptography and other security improvements.
+OpenTitan is an open source hardware Root of Trust platform designed to protect some of the most sensitive parts of a system. The Earl Grey 2 version will add CHERI support through a [CHERIoT](/hardware/cheriot/) configuration of the Ibex processor, alongside post-quantum cryptography and other security improvements.
 
 For developers and organisations, this means another practical route to using CHERI in real hardware.
 

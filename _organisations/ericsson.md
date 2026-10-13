@@ -1,6 +1,6 @@
 ---
 title: Ericsson
-image_url: null
+image_url: /assets/organisations/ericsson/placeholder.svg
 website_url: null
 membership_tier: null
 is_founding_member: null
@@ -11,3 +11,8 @@ social:
 ---
 
 # Ericsson
+
+## People
+
+- [Merve Gülmez](/people/merve-gulmez/)
+- [Thomas Nyman](/people/thomas-nyman/)

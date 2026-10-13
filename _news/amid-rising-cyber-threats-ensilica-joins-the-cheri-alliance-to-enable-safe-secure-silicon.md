@@ -5,7 +5,15 @@ published_date: '2026-02-03'
 authors: []
 related:
   groups: []
-  organisations: []
+  organisations:
+  - university-of-cambridge
+  - cheri-alliance
+  - verisilicon
+  - ensilica
+  - codasip
+  - lowrisc
+  - siemens
+  - google
   hardware: []
   software: []
   papers: []
@@ -13,9 +21,7 @@ related:
 
 # Amid rising cyber threats, EnSilica joins the CHERI Alliance to enable safe & secure silicon
 
-Oxford UK – 3 February 2026 – EnSilica, a leading provider of mixed-signal ASICs (Application-Specific Integrated Circuits), today announced that it has joined the CHERI Alliance. In a world facing an explosion of cyber threats, this collaboration…
-
-Oxford UK – 3 February 2026 – EnSilica, a leading provider of mixed-signal ASICs (Application-Specific Integrated Circuits), today announced that it has joined the CHERI Alliance. In a world facing an explosion of cyber threats, this collaboration will accelerate the adoption of a technology that could eliminate more than 70% of current vulnerabilities.
+Oxford UK – 3 February 2026 – [EnSilica](/organisations/ensilica/), a leading provider of mixed-signal ASICs (Application-Specific Integrated Circuits), today announced that it has joined the [CHERI Alliance](/organisations/cheri-alliance/). In a world facing an explosion of cyber threats, this collaboration will accelerate the adoption of a technology that could eliminate more than 70% of current vulnerabilities.
 
 ## The Power of CHERI Technology
 
@@ -27,7 +33,7 @@ With security built into chips, CHERI enables existing software to be made more 
 
 ## The Role of the CHERI Alliance
 
-The CHERI Alliance is a catalyst for industry-wide adoption, bringing industrial members like Google, Codasip, lowRISC, Siemens or Verisilicon together with researchers from SRI, the University of Cambridge, or many other universities, and government organisations. The Alliance bridges the gap between research and commercial deployment, ensuring CHERI is accessible to hardware designers, software developers, and system integrators.
+The CHERI Alliance is a catalyst for industry-wide adoption, bringing industrial members like [Google](/organisations/google/), [Codasip](/organisations/codasip/), [lowRISC](/organisations/lowrisc/), [Siemens](/organisations/siemens/) or Verisilicon together with researchers from SRI, the [University of Cambridge](/organisations/university-of-cambridge/), or many other universities, and government organisations. The Alliance bridges the gap between research and commercial deployment, ensuring CHERI is accessible to hardware designers, software developers, and system integrators.
 
 Like other members of the CHERI Alliance, EnSilica will benefit from collaborating in working groups, sharing experience, and networking with new partners including potential customers. Their focus on CHERI-enabled ASICs will be complemented by software and tools developed by the ecosystem, enabling a fast development of end products.
 
@@ -35,7 +41,7 @@ Like other members of the CHERI Alliance, EnSilica will benefit from collaborati
 
 EnSilica is developing safe and secure chips and it will leverage its expertise to produce CHERI-enabled ASICs, enabling customers to build systems that are secure by design. This partnership reflects a shared commitment to making CHERI the gold standard for hardware security.
 
-“The CHERI Alliance exists to build an ecosystem that turns groundbreaking research into real-world impact,” said Mike Eftimakis, Founding Director at the CHERI Alliance. “As soon as next year, regulators will ban insecure devices, and product manufacturers will rush to integrate security by design. EnSilica and our members will enable CHERI-enabled products that meet security requirements.”
+“The CHERI Alliance exists to build an ecosystem that turns groundbreaking research into real-world impact,” said [Mike Eftimakis](/people/mike-eftimakis/), Founding Director at the CHERI Alliance. “As soon as next year, regulators will ban insecure devices, and product manufacturers will rush to integrate security by design. EnSilica and our members will enable CHERI-enabled products that meet security requirements.”
 
 “Security is a cornerstone of modern computing, and CHERI represents a paradigm shift in how we achieve it,” said Ian Lankshear, Chief Executive Officer of EnSilica. “Joining the Alliance allows us to collaborate with the brightest minds in the industry and deliver CHERI’s benefits to our customers at scale.”
 

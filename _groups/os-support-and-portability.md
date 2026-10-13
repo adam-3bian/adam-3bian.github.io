@@ -1,13 +1,17 @@
 ---
 title: 🛠️ OS Support & Portability WG
-image_url: null
-website_url: null
+image_url: /assets/groups/os-support-and-portability/bb889a4dc09e-cheri-alliance-working-groups.png
+website_url: https://cheri-alliance.org/who-we-are/working-groups/os-support-portability/
 repository_urls: []
-lead: null
+leads:
+- brooks-davis
 related:
-  organisations: []
+  organisations:
+  - capabilities-limited
   hardware: []
-  software: []
+  software:
+  - cheri-linux
+  - zephyr
 ---
 
 # 🛠️ OS Support & Portability WG
@@ -22,12 +26,12 @@ In addition, the group collects and shares general insights from OS porting that
 
 ## Relationship to other groups
 
-Relevant Alliance groups include CHERI Linux, CHERI FreeRTOS, CHERI Zephyr, CHERI for seL4, and MMU-less Systems. Each retains its own technical scope while contributing experience relevant to portability.
+Relevant Alliance groups include [CHERI Linux](/software/cheri-linux/), CHERI FreeRTOS, CHERI [Zephyr](/software/zephyr/), CHERI for seL4, and MMU-less Systems. Each retains its own technical scope while contributing experience relevant to portability.
 
 Group type: Technical
 
-Areas of collaboration: Cross-OS interfaces
+## Areas of collaboration
 
-Portability and terminology
-
-Documentation and integration
+- Cross-OS interfaces
+- Portability and terminology
+- Documentation and integration

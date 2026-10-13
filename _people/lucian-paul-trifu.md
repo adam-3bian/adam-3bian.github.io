@@ -1,6 +1,6 @@
 ---
 title: Lucian Paul-Trifu
-image_url: null
+image_url: /assets/people/lucian-paul-trifu/placeholder.svg
 website_url: null
 is_speaker: null
 social:
@@ -13,3 +13,7 @@ related:
 ---
 
 # Lucian Paul-Trifu
+
+## Publications
+
+- [Cornucopia: Temporal Safety for CHERI Heaps](/papers/cornucopia-temporal-safety-for-cheri-heaps/)

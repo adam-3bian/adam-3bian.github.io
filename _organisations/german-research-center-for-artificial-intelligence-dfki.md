@@ -1,6 +1,6 @@
 ---
 title: German Research Center for Artificial Intelligence (DFKI)
-image_url: null
+image_url: /assets/organisations/german-research-center-for-artificial-intelligence-dfki/placeholder.svg
 website_url: null
 membership_tier: null
 is_founding_member: null
@@ -11,3 +11,7 @@ social:
 ---
 
 # German Research Center for Artificial Intelligence (DFKI)
+
+## People
+
+- [Luca Müller](/people/luca-muller/)

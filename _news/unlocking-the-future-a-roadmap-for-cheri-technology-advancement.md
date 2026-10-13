@@ -5,38 +5,37 @@ published_date: '2025-05-27'
 authors:
 - mike-eftimakis
 related:
-  groups: []
-  organisations: []
+  groups:
+  - marketing
+  organisations:
+  - dstl
+  - cheri-alliance
+  - codasip
   hardware: []
-  software: []
+  software:
+  - zephyr
   papers: []
 ---
 
 # Unlocking the Future: A Roadmap for CHERI Technology Advancement
 
-Mike Eftimakis – CHERI Alliance In the rapidly evolving landscape of cybersecurity, the quest for robust and secure hardware foundations has never been more critical. A groundbreaking paper from the Defence Science and Technology Laboratory (DSTL) –…
-
 In the rapidly evolving landscape of cybersecurity, the quest for robust and secure hardware foundations has never been more critical. A groundbreaking paper from the Defence Science and Technology Laboratory (DSTL) – Biting the CHERI bullet: Blockers, Enablers and Security Implications of CHERI in Defence – sheds light on the transformative potential of CHERI (Capability Hardware Enhanced RISC Instructions) technology, offering a beacon of hope for enhancing cyber resilience. The paper described:
 
-Issues with tools and maturity of development platforms
-
-Knowledge premium to adopt CHERI
-
-Benefits of CHERI
+- Issues with tools and maturity of development platforms
+- Knowledge premium to adopt CHERI
+- Benefits of CHERI
 
 This insightful study not only identifies the challenges faced during the adoption of CHERI but also help us chart a clear roadmap for future improvements, and acceleration of the adoption of the technology by the industry.:
 
-Continued investment in software porting and enablement
-
-Training and support of developers
-
-Communication and promotion of the technology
+- Continued investment in software porting and enablement
+- Training and support of developers
+- Communication and promotion of the technology
 
 ## About the paper
 
 The positive contributions of this paper are manifold. By meticulously evaluating CHERI through a 12-month assessment involving 15 teams from industry and academia, the DSTL paper provides a comprehensive understanding of the technology’s strengths and areas for improvement. It highlights the significant strides made in memory safety, the effectiveness of CHERI-enabled tools, and the improved code quality and security that CHERI brings to the table.
 
-Moreover, the paper’s findings have already sparked significant interest and action within the tech community. Codasip, a leading player in the field, has written a compelling blog post discussing the recent advances in CHERI, emphasizing progress in stability, maturity, and accessibility. This growing momentum underscores the importance of the DSTL paper and its potential to drive widespread adoption of CHERI.
+Moreover, the paper’s findings have already sparked significant interest and action within the tech community. [Codasip](/organisations/codasip/), a leading player in the field, has written a compelling blog post discussing the recent advances in CHERI, emphasizing progress in stability, maturity, and accessibility. This growing momentum underscores the importance of the DSTL paper and its potential to drive widespread adoption of CHERI.
 
 As we delve deeper into the key findings and define a roadmap from the ideas extracted from the DSTL paper, we invite you to join us on this journey towards a more secure and resilient digital world. Together, we can unlock the full potential of CHERI technology and pave the way for a safer future.
 
@@ -44,7 +43,7 @@ As we delve deeper into the key findings and define a roadmap from the ideas ext
 
 One of the primary challenges identified by DSTL, and that inhibit the smooth adoption of CHERI is the tool chain instability and lack of maturity at the time of the study. Teams struggled with the absence of familiar utilities, such as Integrated Development Environments (IDEs) and functional debuggers, and often had to resort to less efficient development methods, which complicated the development process. Performance of the early prototypes was also highlighted as a negative point. These topics have already been addressed in the Codasip paper and indeed a huge amount of work has already been done to provide stable tools and good development platforms. For example, the mention of a lack of temporal safety is now inaccurate: all specifications and actual implementations include it.
 
-That doesn’t mean that everything is in place yet! I will highlight that the work on tools and software continues and the CHERI Alliance is taking a proactive approach in getting all contributors to collaborate as part of its working groups. This is already leading to faster progress on major operating systems (Linux, FreeRTOS, Zephyr, seL4) as more people and companies join the effort. We need to continue and extend this collaboration to make sure that the Alliance helps reduce duplication of effort and therefore improves the efficiency of this porting activity.
+That doesn’t mean that everything is in place yet! I will highlight that the work on tools and software continues and the [CHERI Alliance](/organisations/cheri-alliance/) is taking a proactive approach in getting all contributors to collaborate as part of its working groups. This is already leading to faster progress on major operating systems (Linux, FreeRTOS, [Zephyr](/software/zephyr/), seL4) as more people and companies join the effort. We need to continue and extend this collaboration to make sure that the Alliance helps reduce duplication of effort and therefore improves the efficiency of this porting activity.
 
 ## Knowledge
 

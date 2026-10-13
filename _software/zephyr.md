@@ -1,13 +1,14 @@
 ---
 title: Zephyr
-image_url: null
+image_url: /assets/software/zephyr/placeholder.svg
 website_url: https://docs.zephyrproject.org/
 repository_urls:
 - https://github.com/CHERI-Alliance/CHERI-zephyr
 type: null
 status: null
 related:
-  organisations: []
+  organisations:
+  - cheri-alliance
   hardware:
   - cheriot
   software: []
@@ -27,7 +28,7 @@ The port therefore spans the architecture layer and the operating-system service
 
 ## Current project structure
 
-Development takes place in a CHERI Alliance repository and is coordinated through the CHERI Zephyr Working Group. The repository carries active source, platform configurations, samples, tests, and contribution history.
+Development takes place in a [CHERI Alliance](/organisations/cheri-alliance/) repository and is coordinated through the [CHERI Zephyr Working Group](/groups/cheri-zephyr/). The repository carries active source, platform configurations, samples, tests, and contribution history.
 
 This remains an active port rather than a feature present across every mainline Zephyr release and board. Architecture targets, boards, drivers, kernel configurations, and test coverage develop at different rates.
 
@@ -35,7 +36,7 @@ This remains an active port rather than a feature present across every mainline 
 
 Both address embedded systems, but they start from different software models.
 
-Foundation; CHERI-enabled Zephyr: The Zephyr RTOS ecosystem; CHERIoT: A hardware-software design built around CHERI
+Foundation; CHERI-enabled Zephyr: The Zephyr RTOS ecosystem; [CHERIoT](/hardware/cheriot/): A hardware-software design built around CHERI
 
 Existing interfaces; CHERI-enabled Zephyr: Zephyr APIs, drivers, Kconfig, west, and board support; CHERIoT: CHERIoT SDK, RTOS, compartments, and xmake build system
 
@@ -47,8 +48,6 @@ The distinction is architectural rather than a simple maturity ranking. Each rou
 
 ## Project links
 
-CHERI Zephyr source
-
-CHERI Zephyr Working Group
-
-Zephyr Project documentation
+- [CHERI Zephyr source](https://github.com/CHERI-Alliance/CHERI-zephyr)
+- [CHERI Zephyr Working Group](/groups/cheri-zephyr/)
+- [Zephyr Project documentation](https://docs.zephyrproject.org/latest/)

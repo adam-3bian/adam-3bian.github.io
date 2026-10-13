@@ -40,9 +40,9 @@ roles:
     target: people
     label: Author
     inverse: Authored
-  lead:
+  leads:
     target: people
-    label: Lead
+    label: Leads
     inverse: Leads
 listing_presets:
   /alliance/leadership/members/:
@@ -53,3 +53,14 @@ aliases:
   /members/: /alliance/leadership/members/
   /speakers/: /news-and-events/people-and-opportunities/speakers/
   /subscribe/: /news-and-events/news-and-analysis/subscribe-newsletter/
+  /people/benjamin-fletcher/: /people/ben-fletcher/
+  /news/cheri-or-cheriot-the-answer-is-not-what-you-think-original/: /news/cheri-or-cheriot-the-answer-is-not-what-you-think/
+  /news/cheriot-1-0-specification-released-original/: /news/cheriot-1-0-specification-released/
+  /news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology-original/: /news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology/
+  /news/innovate-uk-project-winner-university-of-birmingham-original/: /news/innovate-uk-project-winner-university-of-birmingham/
+  /news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences-original/: /news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences/
+  ? /news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support-original/
+  : /news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support/
+  /news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd-original/: /news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd/
+  /news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl-original/: /news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl/
+  /news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software-original/: /news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software/

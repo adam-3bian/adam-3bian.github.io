@@ -1,6 +1,6 @@
 ---
 title: Mark Johnston
-image_url: null
+image_url: /assets/people/mark-johnston/placeholder.svg
 website_url: null
 is_speaker: null
 social:
@@ -13,3 +13,7 @@ related:
 ---
 
 # Mark Johnston
+
+## Publications
+
+- [Cornucopia Reloaded: Load Barriers for CHERI Heap Temporal Safety](/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/)

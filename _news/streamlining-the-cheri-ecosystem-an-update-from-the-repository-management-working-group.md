@@ -1,12 +1,14 @@
 ---
 title: 'Streamlining the CHERI Ecosystem: An Update from the Repository Management Working Group'
-image_url: /assets/shared/source-assets/bb889a4dc09e-cheri-alliance-working-groups.png
+image_url: /assets/news/streamlining-the-cheri-ecosystem-an-update-from-the-repository-management-working-group/bb889a4dc09e-cheri-alliance-working-groups.png
 published_date: '2025-11-27'
 authors:
 - marno-van-der-maas
 related:
-  groups: []
-  organisations: []
+  groups:
+  - repository-management
+  organisations:
+  - cheri-alliance
   hardware: []
   software: []
   papers: []
@@ -14,11 +16,9 @@ related:
 
 # Streamlining the CHERI Ecosystem: An Update from the Repository Management Working Group
 
-Dr Marno van der Maas – CHERI Alliance The CHERI Alliance is dedicated to advancing the state-of-the-art in capability-based security. As our collaborative efforts and technical output grow, so does the need for a standardised, clear, and efficient…
+Dr [Marno van der Maas](/people/marno-van-der-maas/) – [CHERI Alliance](/organisations/cheri-alliance/)
 
-Dr Marno van der Maas – CHERI Alliance
-
-The CHERI Alliance is dedicated to advancing the state-of-the-art in capability-based security. As our collaborative efforts and technical output grow, so does the need for a standardised, clear, and efficient way to manage that output. This is why the Repository Management Working Group was established: to systematically oversee all the technical collateral produced by the alliance.
+The CHERI Alliance is dedicated to advancing the state-of-the-art in capability-based security. As our collaborative efforts and technical output grow, so does the need for a standardised, clear, and efficient way to manage that output. This is why the [Repository Management Working Group](/groups/repository-management/) was established: to systematically oversee all the technical collateral produced by the alliance.
 
 ## Establishing the Foundation: Repository Creation and Management
 

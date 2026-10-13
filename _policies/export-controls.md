@@ -1,5 +1,6 @@
 ---
 title: Export Controls
+image_url: /assets/policies/export-controls/placeholder.svg
 author: null
 ---
 
@@ -9,7 +10,7 @@ Public CHERI material supports an open global ecosystem, but organisations must 
 
 ## A Note to the CHERI Community
 
-The CHERI Alliance is a global community of organisations and individuals working to advance secure computing through CHERI technology.
+The [CHERI Alliance](/organisations/cheri-alliance/) is a global community of organisations and individuals working to advance secure computing through CHERI technology.
 
 CHERI research, specifications, software and standards activities are conducted across multiple jurisdictions, each with its own export-control framework. As a result, export-control obligations can differ significantly depending on the country, organisation, technology, recipient and intended use.
 
@@ -21,17 +22,12 @@ In general, the CHERI Alliance considers the core CHERI architecture, publicly r
 
 Examples include:
 
-Public CHERI architectural specifications
-
-Public CHERI RISC-V specifications
-
-Published technical reports
-
-Academic publications
-
-Public source-code repositories
-
-Public educational materials
+- Public CHERI architectural specifications
+- Public CHERI RISC-V specifications
+- Published technical reports
+- Academic publications
+- Public source-code repositories
+- Public educational materials
 
 Where these materials have been lawfully published and made broadly available without restriction, they are generally consistent with concepts such as public-domain information, publicly available information or fundamental research recognised in various export-control frameworks. Relevant source materials are listed in the References section.
 
@@ -47,19 +43,13 @@ Many export-control frameworks distinguish between information that is publicly 
 
 Additional care should be taken with:
 
-Private repositories
-
-Unreleased source code
-
-Restricted-access collaboration platforms
-
-Proprietary implementation documentation
-
-Internal engineering discussions
-
-Confidential design information
-
-Customer-specific developments
+- Private repositories
+- Unreleased source code
+- Restricted-access collaboration platforms
+- Proprietary implementation documentation
+- Internal engineering discussions
+- Confidential design information
+- Customer-specific developments
 
 Information stored in private or restricted repositories may not benefit from the same treatment as information that has already been openly published. In many jurisdictions, publication-related exemptions depend on information being genuinely available without restrictions on further dissemination.
 
@@ -75,7 +65,7 @@ Similarly, publication should not be used as a mechanism to transfer otherwise r
 
 ## Standards Development and International Collaboration
 
-The CHERI ecosystem relies heavily on international collaboration through academia, industry, open-source projects and standards organisations, including bodies such as RISC-V International and ETSI.
+The CHERI ecosystem relies heavily on international collaboration through academia, industry, open-source projects and standards organisations, including bodies such as [RISC-V International](/organisations/risc-v-international/) and ETSI.
 
 Standards organisations provide important governance frameworks that support international participation and open technical discussion. However, participation in a standards body, research project or CHERI Alliance activity does not automatically exempt participants from export-control, sanctions or other legal obligations.
 
@@ -93,15 +83,11 @@ Export-control compliance for commercial products remains the responsibility of 
 
 The CHERI Alliance does not:
 
-Determine export-control classifications
-
-Assign ECCNs or equivalent classifications
-
-Apply for export licences on behalf of members
-
-Provide legal advice
-
-Certify compliance with export regulations
+- Determine export-control classifications
+- Assign ECCNs or equivalent classifications
+- Apply for export licences on behalf of members
+- Provide legal advice
+- Certify compliance with export regulations
 
 ## Organisation-Specific Responsibilities
 
@@ -109,13 +95,10 @@ Export-control requirements vary significantly between jurisdictions.
 
 For example:
 
-The European Union operates under the Dual-Use Regulation and encourages research organisations to establish compliance processes for dual-use research.
-
-The United States recognises concepts such as Fundamental Research and Publicly Available Information under EAR and ITAR regulations.
-
-The United Kingdom recognises exemptions relating to public-domain information and basic scientific research.
-
-The guidance available to a university, standards body, commercial company or non-profit organisation may differ, and rules are not identical across countries.
+- The European Union operates under the Dual-Use Regulation and encourages research organisations to establish compliance processes for dual-use research.
+- The United States recognises concepts such as Fundamental Research and Publicly Available Information under EAR and ITAR regulations.
+- The United Kingdom recognises exemptions relating to public-domain information and basic scientific research.
+- The guidance available to a university, standards body, commercial company or non-profit organisation may differ, and rules are not identical across countries.
 
 Accordingly, every organisation is responsible for obtaining its own export-control advice and determining its own compliance obligations. The CHERI Alliance cannot provide definitive export-control guidance on behalf of its members.
 
@@ -139,7 +122,7 @@ Guidance on Publicly Available Information under EAR and ITAR.
 
 Export Controls Applying to Academic Research (UK Export Control Joint Unit).
 
-Publications and Export Controls (University of Cambridge Research Services).
+Publications and Export Controls ([University of Cambridge](/organisations/university-of-cambridge/) Research Services).
 
 ## Disclaimer
 

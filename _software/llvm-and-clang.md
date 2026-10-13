@@ -1,6 +1,6 @@
 ---
 title: LLVM & Clang
-image_url: null
+image_url: /assets/software/llvm-and-clang/placeholder.svg
 website_url: https://llvm.org/
 repository_urls:
 - https://github.com/CTSRD-CHERI/cheribuild
@@ -8,8 +8,11 @@ type: null
 status: null
 related:
   organisations: []
-  hardware: []
-  software: []
+  hardware:
+  - cheriot
+  - morello
+  software:
+  - cheribsd
 ---
 
 # LLVM & Clang
@@ -18,7 +21,7 @@ LLVM and Clang translate language pointers, calling conventions, bounds, permiss
 
 A processor can enforce capability bounds only when the software stack creates and preserves meaningful capabilities. The compiler is where source-language pointers, object layouts, calls, and optimisations meet the CHERI architecture.
 
-LLVM and Clang provide the main compiler infrastructure used across CheriBSD, Morello, CHERI-RISC-V, and CHERIoT.
+LLVM and Clang provide the main compiler infrastructure used across [CheriBSD](/software/cheribsd/), [Morello](/hardware/morello/), CHERI-RISC-V, and [CHERIoT](/hardware/cheriot/).
 
 ## Clang and the source-language model
 
@@ -58,8 +61,6 @@ Bounds precision is also a policy choice rather than a single property of the co
 
 ## Project links
 
-cheribuild
-
-LLVM project
-
-CHERIoT Programmer’s Guide
+- [cheribuild](https://github.com/CTSRD-CHERI/cheribuild)
+- [LLVM project](https://llvm.org/)
+- [CHERIoT Programmer’s Guide](https://cheriot.org/book/)

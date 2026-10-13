@@ -5,15 +5,17 @@ published_date: '2025-02-05'
 authors: []
 related:
   groups: []
-  organisations: []
-  hardware: []
-  software: []
+  organisations:
+  - cheri-alliance
+  hardware:
+  - morello
+  software:
+  - freebsd
+  - llvm-and-clang
   papers: []
 ---
 
 # Building a Safer Digital Future
-
-The conversation around software memory safety is reaching a critical turning point. In a recent publication in the Communications of the ACM, industry experts have called for a decisive move toward standardizing principles and practices to mitigate…
 
 The Call for Memory Safety Standards and CHERI’s Role
 
@@ -33,7 +35,7 @@ The paper highlights that CHERI brings the strongest level of memory safety:
 
 Hardware-Enforced Security: Unlike purely software-based solutions, CHERI builds memory safety guarantees directly into the hardware. This approach not only improves performance but also ensures that protection mechanisms cannot be bypassed.
 
-Backward Compatibility: CHERI has been designed to work with existing software. Adaptations of FreeBSD, Linux, nginx, and LLVM for CHERI-enabled platforms such as Arm’s Morello and CHERI-RISC-V demonstrate how it can easily be applied to legacy codebases, making it a practical option for wide-scale adoption. Critically, CHERI brings memory safety throughout a C/C++ software stack without a ground-up rewrite in a new programming language.
+Backward Compatibility: CHERI has been designed to work with existing software. Adaptations of [FreeBSD](/software/freebsd/), Linux, nginx, and [LLVM](/software/llvm-and-clang/) for CHERI-enabled platforms such as Arm’s [Morello](/hardware/morello/) and CHERI-RISC-V demonstrate how it can easily be applied to legacy codebases, making it a practical option for wide-scale adoption. Critically, CHERI brings memory safety throughout a C/C++ software stack without a ground-up rewrite in a new programming language.
 
 Scalable Compartmentalization: By enabling fine-grained compartmentalization, CHERI allows applications to be divided into isolated components. This significantly limits the impact of potential exploits, aligning with regulatory goals of minimizing risk.
 
@@ -45,7 +47,7 @@ Imagine a world where regulatory compliance mandates memory-safe architectures f
 
 ### Challenges and the Path Forward
 
-Of course, challenges remain. While CHERI offers a compelling solution, difficulties like scalability, adoption by diverse ecosystems, and developer training remain. The CHERI Alliance addresses these hurdles by uniting industry leaders, academics, and policymakers to promote and facilitate adoption.
+Of course, challenges remain. While CHERI offers a compelling solution, difficulties like scalability, adoption by diverse ecosystems, and developer training remain. The [CHERI Alliance](/organisations/cheri-alliance/) addresses these hurdles by uniting industry leaders, academics, and policymakers to promote and facilitate adoption.
 
 Key efforts include educational programs, technical collaboration, and advocacy for memory safety policies. By fostering teamwork and aligning on standards, the alliance helps bridge the gap between CHERI’s potential and real-world implementation, paving the way for broader adoption.
 
@@ -55,4 +57,4 @@ The CACM article’s call for standardized memory safety principles is more than
 
 The time to act is now. With CHERI leading the way, we have the tools to make memory safety a cornerstone of modern computing—and to build a more secure world for everyone.
 
-– Mike Eftimakis, CHERI Alliance
+– [Mike Eftimakis](/people/mike-eftimakis/), CHERI Alliance

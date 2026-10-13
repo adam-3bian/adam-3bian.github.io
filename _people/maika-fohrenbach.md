@@ -1,7 +1,7 @@
 ---
 title: Maika Föhrenbach
 image_url: /assets/people/maika-fohrenbach/e33f816c987d-portrait.jpg
-website_url: null
+website_url: https://cheri-alliance.org/events/speakers/maika-fohrenbach/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/maikafohrenbach/
@@ -21,8 +21,4 @@ Maika Föhrenbach connects CHERI to Europe’s regulatory future. She leads prod
 
 ## CHERI Talks
 
-Keynote – Getting ready for the CRA: from compliance to confidence | CHERI Blossoms 2026
-
-26/03/2026
-
-Cambridge, UK
+- Keynote – Getting ready for the CRA: from compliance to confidence | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK

@@ -1,6 +1,6 @@
 ---
 title: DSIT
-image_url: null
+image_url: /assets/organisations/dsit/placeholder.svg
 website_url: null
 membership_tier: null
 is_founding_member: null
@@ -11,3 +11,8 @@ social:
 ---
 
 # DSIT
+
+## People
+
+- [Bradley Finn](/people/bradley-finn/)
+- [Manu Ravishankar](/people/manu-ravishankar/)

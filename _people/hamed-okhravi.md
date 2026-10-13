@@ -1,6 +1,6 @@
 ---
 title: Hamed Okhravi
-image_url: null
+image_url: /assets/people/hamed-okhravi/placeholder.svg
 website_url: null
 is_speaker: null
 social:
@@ -13,3 +13,7 @@ related:
 ---
 
 # Hamed Okhravi
+
+## Publications
+
+- [It Is Time to Standardize Principles and Practices for Software Memory Safety](/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/)

@@ -1,5 +1,6 @@
 ---
 title: CHERI Trademark
+image_url: /assets/policies/trademark/placeholder.svg
 author: null
 ---
 
@@ -15,7 +16,7 @@ If you reference CHERI, use CHERI branding, claim CHERI compatibility, or descri
 
 ## Trademark Policy
 
-The CHERI Alliance Trademark Policy explains how the CHERI name, logos, membership marks, and certification marks may be used. It helps ensure that references to CHERI are accurate, fair, and not misleading.
+The [CHERI Alliance](/organisations/cheri-alliance/) Trademark Policy explains how the CHERI name, logos, membership marks, and certification marks may be used. It helps ensure that references to CHERI are accurate, fair, and not misleading.
 
 The policy applies to everyone, including organisations that are not members of the Alliance. Some uses require prior permission, so please review the full policy before using CHERI trademarks or marks.
 

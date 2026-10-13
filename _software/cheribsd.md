@@ -1,6 +1,6 @@
 ---
 title: CheriBSD
-image_url: null
+image_url: /assets/software/cheribsd/placeholder.svg
 website_url: https://www.cheribsd.org/getting-started/
 repository_urls:
 - https://github.com/CTSRD-CHERI/cheribuild
@@ -9,15 +9,18 @@ repository_urls:
 type: null
 status: null
 related:
-  organisations: []
-  hardware: []
+  organisations:
+  - freebsd-foundation
+  hardware:
+  - morello
   software:
   - llvm-and-clang
+  - freebsd
 ---
 
 # CheriBSD
 
-CheriBSD adapts FreeBSD for CHERI-RISC-V and Morello, providing a complete environment for pure-capability software and compartment research.
+CheriBSD adapts [FreeBSD](/software/freebsd/) for CHERI-RISC-V and [Morello](/hardware/morello/), providing a complete environment for pure-capability software and compartment research.
 
 CHERI support in a general-purpose operating system reaches far beyond the processor and compiler. Capability state passes through process management, virtual memory, executable loading, dynamic linking, system calls, signals, faults, debugging, and application libraries.
 
@@ -61,10 +64,7 @@ CheriBSD is an important research and development platform rather than a Linux s
 
 ## Project links
 
-cheribuild
-
-CheriBSD source
-
-CheriBSD Getting Started
-
-CheriBSD ports
+- [cheribuild](https://github.com/CTSRD-CHERI/cheribuild)
+- [CheriBSD source](https://github.com/CTSRD-CHERI/cheribsd)
+- [CheriBSD Getting Started](https://www.cheribsd.org/getting-started/)
+- [CheriBSD ports](https://github.com/CTSRD-CHERI/cheribsd-ports)

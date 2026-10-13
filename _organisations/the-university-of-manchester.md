@@ -12,8 +12,6 @@ social:
 
 # The University of Manchester
 
-The University of Manchester, a charitable body incorporated by Royal Charter, is a centre of teaching excellence, world-class research, outstanding student experience. Founded in 1824 for the advancement of education, we’ve since been home to 26…
-
 ## Description
 
 The University of Manchester, a charitable body incorporated by Royal Charter, is a centre of teaching excellence, world-class research, outstanding student experience.
@@ -22,7 +20,7 @@ Founded in 1824 for the advancement of education, we’ve since been home to 26 
 
 ## CHERI Activities
 
-We participated in three DSbD projects using the Morello infrastructure.
+We participated in three DSbD projects using the [Morello](/hardware/morello/) infrastructure.
 
 The “”Soteria”” project investigated, prototyped and performed an evaluation that demonstrated the security capabilities of the Arm-developed Morello system in the e-commerce vertical industrial segment. A modified minimum viable product version of THG’s Ingenuity e-commerce platform was demonstrated to run on a JVM that was modified to support CHERI spatial memory safety on a Morello system.
 

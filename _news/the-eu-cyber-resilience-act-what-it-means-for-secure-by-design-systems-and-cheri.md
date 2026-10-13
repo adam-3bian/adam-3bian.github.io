@@ -1,6 +1,6 @@
 ---
 title: 'The EU Cyber Resilience Act: What It Means for Secure-by-Design Systems and CHERI'
-image_url: /assets/shared/source-assets/d4c0d2560e6f-eu-flag.jpg
+image_url: /assets/news/the-eu-cyber-resilience-act-what-it-means-for-secure-by-design-systems-and-cheri/d4c0d2560e6f-eu-flag.jpg
 published_date: '2026-02-04'
 authors:
 - tariq-kurd
@@ -13,8 +13,6 @@ related:
 ---
 
 # The EU Cyber Resilience Act: What It Means for Secure-by-Design Systems and CHERI
-
-In 2025 alone, global cybercrime costs reached an estimated $1.2 billion every minute, with projections rising to $1.8 billion per minute by 2029. Just seven years earlier, the figure was “only” $100 million per minute—already enormous, but now…
 
 ## Cybercrime has become a trillion-dollar tax on the global economy — and it’s accelerating.
 
@@ -42,17 +40,12 @@ The Cyber Resilience Act is a horizontal EU regulation that applies to “produc
 
 Unlike previous frameworks that focused heavily on users and operators, the CRA places responsibility firmly on manufacturers and vendors. It requires products to be designed, developed, and maintained with cybersecurity in mind throughout their entire lifecycle. Key requirements include:
 
-Security by design and by default, ensuring that products ship in a secure state
-
-Documented risk assessments and technical documentation
-
-Vulnerability handling processes, including monitoring, patching, and coordinated disclosure
-
-Mandatory vulnerability and incident reporting within defined timelines
-
-Conformity assessments, including third-party evaluation for higher-risk product categories
-
-Non-compliance can lead to significant penalties, making the CRA both a regulatory and commercial risk for organisations targeting the EU market.
+- Security by design and by default, ensuring that products ship in a secure state
+- Documented risk assessments and technical documentation
+- Vulnerability handling processes, including monitoring, patching, and coordinated disclosure
+- Mandatory vulnerability and incident reporting within defined timelines
+- Conformity assessments, including third-party evaluation for higher-risk product categories
+- Non-compliance can lead to significant penalties, making the CRA both a regulatory and commercial risk for organisations targeting the EU market.
 
 ## Lifecycle Security Becomes a Legal Requirement
 
@@ -68,15 +61,11 @@ This is where CHERI becomes especially relevant. By enforcing fine-grained memor
 
 From a CRA perspective, architectures that provide built-in memory safety can:
 
-Reduce the volume and severity of vulnerabilities that must be managed
-
-Lower the operational burden of ongoing patching and disclosure
-
-Decrease long-term maintenance and compliance costs
-
-Reduce legal and reputational exposure resulting from security incidents
-
-Although CHERI-based systems may initially involve higher learning and adoption costs, these can be offset by improved security outcomes and reduced lifecycle risk.
+- Reduce the volume and severity of vulnerabilities that must be managed
+- Lower the operational burden of ongoing patching and disclosure
+- Decrease long-term maintenance and compliance costs
+- Reduce legal and reputational exposure resulting from security incidents
+- Although CHERI-based systems may initially involve higher learning and adoption costs, these can be offset by improved security outcomes and reduced lifecycle risk.
 
 ## Conformity Assessments and Supply Chain Pressure
 
@@ -92,15 +81,11 @@ Although full enforcement is still over a year away, time is running out! The CR
 
 Organisations should be:
 
-Identifying which products fall within the CRA’s scope
-
-Assessing existing development practices against CRA requirements
-
-Embedding security-by-design principles into engineering workflows
-
-Evaluating architectural approaches that reduce vulnerability exposure at source
-
-Those that act early will be better positioned not only to meet compliance deadlines, but to compete in a market where security is increasingly a differentiator rather than a checkbox.
+- Identifying which products fall within the CRA’s scope
+- Assessing existing development practices against CRA requirements
+- Embedding security-by-design principles into engineering workflows
+- Evaluating architectural approaches that reduce vulnerability exposure at source
+- Those that act early will be better positioned not only to meet compliance deadlines, but to compete in a market where security is increasingly a differentiator rather than a checkbox.
 
 ## Regulation as an Architectural Turning Point
 

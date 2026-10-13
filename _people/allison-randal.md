@@ -10,7 +10,9 @@ social:
 related:
   organisations:
   - capabilities-limited
-  groups: []
+  - cheri-alliance
+  groups:
+  - cheri-linux-working-group
 ---
 
 # Allison Randal
@@ -19,4 +21,4 @@ Board role: Open Source/Hardware Strategist
 
 ## Biography
 
-Allison Randal represents Capabilities Limited on the CHERI Alliance Governing Board. Her board role is Open Source/Hardware Strategist.
+Allison Randal represents [Capabilities Limited](/organisations/capabilities-limited/) on the [CHERI Alliance](/organisations/cheri-alliance/) Governing Board. Her board role is Open Source/Hardware Strategist.

@@ -12,11 +12,9 @@ social:
 
 # Axiomise Ltd
 
-At Axiomise, our vision is to make formal normal, and for the last seven years, we have been doing just that! We have pioneered the adoption of formal verification in the semiconductor industry since 2017. Led by our visionary CEO, Dr. Ashish…
-
 ## Description
 
-At Axiomise, our vision is to make formal normal, and for the last seven years, we have been doing just that! We have pioneered the adoption of formal verification in the semiconductor industry since 2017. Led by our visionary CEO, Dr. Ashish Darbari, who has 67 patents in formal verification, and Neil Dunlop an industry veteran with 40 years of experience, Axiomise has helped twenty customers over the last seven years by providing them access to bleeding-edge formal verification methodology via its training programmes, consulting & services and vendor-neutral formal verification app for end-to-end verification of RISC-V processors.
+At Axiomise, our vision is to make formal normal, and for the last seven years, we have been doing just that! We have pioneered the adoption of formal verification in the semiconductor industry since 2017. Led by our visionary CEO, Dr. [Ashish Darbari](/people/ashish-darbari/), who has 67 patents in formal verification, and Neil Dunlop an industry veteran with 40 years of experience, Axiomise has helped twenty customers over the last seven years by providing them access to bleeding-edge formal verification methodology via its training programmes, consulting & services and vendor-neutral formal verification app for end-to-end verification of RISC-V processors.
 
 ## CHERI Activities
 

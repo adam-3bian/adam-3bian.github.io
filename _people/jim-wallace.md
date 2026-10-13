@@ -1,6 +1,6 @@
 ---
 title: Jim Wallace
-image_url: null
+image_url: /assets/people/jim-wallace/placeholder.svg
 website_url: null
 is_speaker: null
 social:
@@ -13,3 +13,5 @@ related:
 ---
 
 # Jim Wallace
+
+See the linked records for this person’s contributions to the CHERI ecosystem.

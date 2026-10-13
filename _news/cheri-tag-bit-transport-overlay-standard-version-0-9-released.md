@@ -3,10 +3,11 @@ title: CHERI Tag Bit Transport Overlay Standard version 0.9 released
 image_url: /assets/news/cheri-tag-bit-transport-overlay-standard-version-0-9-released/c2fe66ccfd-CHERITagBitTransportOverlayStandardBlogImage-2.png
 published_date: null
 authors:
-- benjamin-fletcher
+- ben-fletcher
 related:
   groups: []
-  organisations: []
+  organisations:
+  - cheri-alliance
   hardware: []
   software: []
   papers: []
@@ -14,7 +15,7 @@ related:
 
 # CHERI Tag Bit Transport Overlay Standard version 0.9 released
 
-Benjamin Fletcher – CHERI Alliance
+[Benjamin Fletcher](/people/ben-fletcher/) – [CHERI Alliance](/organisations/cheri-alliance/)
 
 Over the last few months I’ve had the pleasure of working with members of the CHERI Alliance’s CHERI-in-SoC Working Group to put together the first version of the CHERI Tag Bit Transport Overlay Standard.
 

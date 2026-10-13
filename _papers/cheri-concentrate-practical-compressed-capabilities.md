@@ -1,6 +1,6 @@
 ---
 title: 'CHERI Concentrate: Practical Compressed Capabilities'
-image_url: null
+image_url: /assets/papers/cheri-concentrate-practical-compressed-capabilities/placeholder.svg
 publication_url: https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/2019tc-cheri-concentrate.pdf
 published_year: 2019
 authors:
@@ -27,6 +27,6 @@ related:
 
 ### CHERI Concentrate: Practical Compressed Capabilities
 
-Jonathan Woodruff, Alexandre Joannou, Hongyan Xia, Anthony Fox, Robert Norton, Thomas Bauereiss, David Chisnall, Brooks Davis, Khilan Gudka, Nathaniel W. Filardo, A. Theodore Markettos, Michael Roe, Peter G. Neumann, Robert N. M. Watson, and Simon W. Moore. IEEE Transactions on Computers, 2019.
+[Jonathan Woodruff](/people/jonathan-woodruff/), [Alexandre Joannou](/people/alexandre-joannou/), [Hongyan Xia](/people/hongyan-xia/), [Anthony Fox](/people/anthony-fox/), Robert Norton, [Thomas Bauereiss](/people/thomas-bauereiss/), [David Chisnall](/people/david-chisnall/), [Brooks Davis](/people/brooks-davis/), [Khilan Gudka](/people/khilan-gudka/), Nathaniel W. Filardo, [A. Theodore Markettos](/people/a-theodore-markettos/), [Michael Roe](/people/michael-roe/), [Peter G. Neumann](/people/peter-g-neumann/), Robert N. M. Watson, and Simon W. Moore. IEEE Transactions on Computers, 2019.
 
 Explains the compressed capability representation used to carry bounds and permissions efficiently.

@@ -1,11 +1,14 @@
 ---
 title: 🐦 CHERI QEMU WG
-image_url: null
-website_url: null
-repository_urls: []
-lead: null
+image_url: /assets/groups/cheri-qemu/bb889a4dc09e-cheri-alliance-working-groups.png
+website_url: https://cheri-alliance.org/who-we-are/working-groups/cheri-qemu/
+repository_urls:
+- https://github.com/CHERI-Alliance/qemu
+leads:
+- alfredo-mazzinghi
 related:
-  organisations: []
+  organisations:
+  - capabilities-limited
   hardware: []
   software: []
 ---
@@ -18,8 +21,12 @@ The QEMU Working Group focuses on the support of CHERI within the QEMU software 
 
 Group type: Technical
 
-Areas of collaboration: Architecture and platform models
+## Areas of collaboration
 
-Maintenance and version alignment
+- Architecture and platform models
+- Maintenance and version alignment
+- Testing and continuous integration
 
-Testing and continuous integration
+## Working-group resources
+
+- [qemu repository](https://github.com/CHERI-Alliance/qemu)

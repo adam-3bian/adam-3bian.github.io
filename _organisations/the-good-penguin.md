@@ -1,6 +1,6 @@
 ---
 title: The Good Penguin
-image_url: null
+image_url: /assets/organisations/the-good-penguin/placeholder.svg
 website_url: null
 membership_tier: null
 is_founding_member: null
@@ -11,3 +11,7 @@ social:
 ---
 
 # The Good Penguin
+
+## People
+
+- [Andrew Murray](/people/andrew-murray/)

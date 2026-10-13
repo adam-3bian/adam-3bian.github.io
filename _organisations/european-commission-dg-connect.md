@@ -1,6 +1,6 @@
 ---
 title: European Commission (DG CONNECT)
-image_url: null
+image_url: /assets/organisations/european-commission-dg-connect/placeholder.svg
 website_url: null
 membership_tier: null
 is_founding_member: null
@@ -11,3 +11,7 @@ social:
 ---
 
 # European Commission (DG CONNECT)
+
+## People
+
+- [Maika Föhrenbach](/people/maika-fohrenbach/)

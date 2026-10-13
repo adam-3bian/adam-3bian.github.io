@@ -1,6 +1,6 @@
 # CHERI Content Viewer
 
-A minimal, reusable Jekyll site for reviewing the 481 migrated content records. The latest deduplicated Markdown files are included unchanged, with all specification fields and 341 original images.
+A minimal Jekyll site with 321 collection records and 166 pages. Collection content has been audited against CHERI Alliance profiles and resources; original image bytes remain bundled.
 
 ## Run locally
 
@@ -22,9 +22,27 @@ The content checks page lists every page and record, including retained source v
 
 News is newest first, with undated records after dated ones. Events are earliest first; upcoming and past lists use the final event day in the Europe/London timezone. People, organisations, and other collections sort alphabetically. The speaker list uses is_speaker, and the member list uses a confirmed membership_tier. Alternate source records remain accessible from the audit while canonical lists omit them.
 
-Authors, speakers, affiliations, lead and author roles, and generic related fields produce clickable forward and reverse relationships. Reverse links are derived by the check script; do not edit _data/relationships.yml. After changing content or front matter, run the check script again before building to refresh the audit and reverse links.
+Authors, speakers, affiliations, working-group leads, and generic related fields produce clickable forward and reverse relationships. Reverse links are derived by the check script; do not edit _data/relationships.yml. After changing content or front matter, run the check script again before building to refresh the audit and reverse links.
 
-The five retained alias pages show their destination links. They are reviewable pages; this viewer does not automatically redirect them. Contact and subscription pages are content examples; no form submits data.
+Retained aliases show their destination links. Repeated original news articles and the Benjamin Fletcher alias point to their canonical records, preserving existing URLs. Contact and subscription pages are content examples; no form submits data.
+
+## Collection content and assets
+
+Store each record's primary image under `assets/<collection>/<record-name>/`, with neither an underscore prefix nor a `.md` suffix. Body images may reuse another collection record's canonical assets. Keep assets referenced by `pages/` when copying an image into a collection directory.
+
+All displayed collection images use contained 3:1 frames. Speaker portraits use 1:1 frames in detail headers, cards, and portrait galleries. Add `.image-portrait` to a speaker image used elsewhere. Containment preserves the entire photograph, logo, or diagram; the image viewer displays the original asset at its natural proportions. Missing source images use a clearly labelled local `placeholder.svg` with the appropriate ratio.
+
+Working groups use `leads: []` so co-leads have separate person references. Policies include `image_url`. Other schema fields retain their existing shapes. Use arrays for authors, speakers, repositories, and related slugs; every referenced collection record must exist. Do not infer membership or speaker status from a mention in another article.
+
+After a production build, check all rendered collection links, images, inverse references, and anchors:
+
+```sh
+bundle exec ruby scripts/check_content.rb
+JEKYLL_ENV=production bundle exec jekyll build --destination _site
+python3 scripts/check_collection_links.py
+```
+
+The link checker uses Python's standard library. To check a repository subpath, build with `--baseurl /preview` and run `python3 scripts/check_collection_links.py _site --baseurl /preview`. The audit details and explicitly missing illustrations are recorded in `reports/collection-audit.json`. External resource links recovered from source profiles retain their original targets.
 
 
 ## Markdown image layout
@@ -41,7 +59,7 @@ All Markdown images are responsive and stay inside the shared page container. Us
 
 Alternate ordinary editorial illustrations left, right, left throughout each document, resetting at its beginning. Place an image before the prose it illustrates so that the text can wrap alongside it. Existing explicit choices take precedence; exclude hero images, logos, portraits, galleries, and full-width technical illustrations from the sequence.
 
-Left and right images float at 42% of the article width above 960px. They stack at 100% at tablet and mobile widths, including 640px and below, to keep text columns readable. Headings, galleries, and the end of the article clear floats. `.image-full` fills the entire content container without an additional article-width cap. Images retain their aspect ratio. Do not use fixed inline widths or alignment HTML attributes.
+Left and right images float at 42% of the article width above 960px. They stack at 100% at tablet and mobile widths, including 640px and below, to keep text columns readable. Headings, galleries, and the end of the article clear floats. `.image-full` fills the entire content container without an additional article-width cap. Image content retains its proportions within the frame. Do not use fixed inline widths or alignment HTML attributes.
 
 Use a semantic figure for an existing caption, keeping the image as native Markdown:
 
@@ -84,6 +102,6 @@ For a hosted static build, use bundle exec jekyll build --destination dist. The 
 
 ## Files
 
-The content stays under pages and the ten separate collection folders. One document layout, one card component, and one listing include render all types; the people, news, and events layout files only select their collection. The schemas come from the supplied v1.4 document. Presentation lives in assets/viewer.css and assets/viewer.js. The Content checks page shows missing optional values and the latest data audit; reports also include verification results for the native build, rendered links, and a repository subpath.
+The content stays under pages and the ten separate collection folders. One document layout, one card component, and one listing include render all types; the people, news, and events layout files only select their collection. The schemas extend the supplied v1.4 document with policy images and multiple group leads. Presentation lives in assets/viewer.css and assets/viewer.js. The Content checks page shows optional values and the latest data audit; reports also include verification results for the build and rendered collection links.
 
 The source snapshot is adam-3bian/adam-3bian.github.io at commit 7f3839872c8fea6a709b99d241880de0f3915c42. Original image bytes are bundled. The check script validates data and image paths; it does not claim that external websites or downloads are available.

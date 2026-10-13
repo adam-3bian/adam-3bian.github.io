@@ -1,6 +1,6 @@
 ---
 title: 'CHERIoT: Complete Memory Safety for Embedded Devices'
-image_url: null
+image_url: /assets/papers/cheriot-complete-memory-safety-for-embedded-devices/placeholder.svg
 publication_url: https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/202310ieeemicro-cheriot-uarch.pdf
 published_year: 2023
 authors:
@@ -17,12 +17,13 @@ authors:
 - hongyan-xia
 related:
   groups: []
-  hardware: []
+  hardware:
+  - cheriot
   software: []
 ---
 
 ### CHERIoT: Complete Memory Safety for Embedded Devices
 
-Saar Amar, David Chisnall, Tony Chen, Nathaniel Wesley Filardo, Ben Laurie, Kunyan Liu, Robert Norton, Simon W. Moore, Yucong Tao, Robert N. M. Watson, and Hongyan Xia. IEEE/ACM MICRO 2023, 2023.
+[Saar Amar](/people/saar-amar/), [David Chisnall](/people/david-chisnall/), [Tony Chen](/people/tony-chen/), [Nathaniel Wesley Filardo](/people/nathaniel-wesley-filardo/), [Ben Laurie](/people/ben-laurie/), [Kunyan Liu](/people/kunyan-liu/), Robert Norton, Simon W. Moore, [Yucong Tao](/people/yucong-tao/), Robert N. M. Watson, and [Hongyan Xia](/people/hongyan-xia/). IEEE/ACM MICRO 2023, 2023.
 
-Presents the CHERIoT hardware-software design for spatial and temporal memory safety on embedded devices.
+Presents the [CHERIoT](/hardware/cheriot/) hardware-software design for spatial and temporal memory safety on embedded devices.

@@ -12,8 +12,6 @@ social:
 
 # University of Exeter
 
-The University of Exeter is a Russell Group university and a leading research-intensive institution located in the South West of England, UK. The Faculty of Environment, Science and Economy (ESE) at the University of Exeter is globally recognised for…
-
 ## Description
 
 The

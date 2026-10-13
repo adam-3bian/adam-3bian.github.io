@@ -1,11 +1,13 @@
 ---
 title: 📣 Marketing WG
-image_url: null
-website_url: null
+image_url: /assets/groups/marketing/bb889a4dc09e-cheri-alliance-working-groups.png
+website_url: https://cheri-alliance.org/who-we-are/working-groups/marketing/
 repository_urls: []
-lead: null
+leads:
+- adam-finney
 related:
-  organisations: []
+  organisations:
+  - 3bian
   hardware: []
   software: []
 ---
@@ -20,8 +22,8 @@ Activity can include editorial planning, member stories, event promotion, campai
 
 Group type: Programme and ecosystem
 
-Areas of collaboration: Shared messaging and material
+## Areas of collaboration
 
-Campaigns and events
-
-Ecosystem communication
+- Shared messaging and material
+- Campaigns and events
+- Ecosystem communication

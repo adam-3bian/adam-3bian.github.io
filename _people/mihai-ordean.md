@@ -1,6 +1,6 @@
 ---
 title: Mihai Ordean
-image_url: null
+image_url: /assets/people/mihai-ordean/placeholder.svg
 website_url: null
 is_speaker: null
 social:
@@ -13,3 +13,5 @@ related:
 ---
 
 # Mihai Ordean
+
+See the linked records for this person’s contributions to the CHERI ecosystem.

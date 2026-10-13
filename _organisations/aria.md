@@ -1,6 +1,6 @@
 ---
 title: ARIA
-image_url: null
+image_url: /assets/organisations/aria/placeholder.svg
 website_url: null
 membership_tier: null
 is_founding_member: null
@@ -11,3 +11,7 @@ social:
 ---
 
 # ARIA
+
+## People
+
+- [Kathleen Fisher](/people/kathleen-fisher/)

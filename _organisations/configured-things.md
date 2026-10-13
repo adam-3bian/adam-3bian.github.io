@@ -1,6 +1,6 @@
 ---
 title: Configured Things
-image_url: null
+image_url: /assets/organisations/configured-things/placeholder.svg
 website_url: null
 membership_tier: null
 is_founding_member: null
@@ -11,3 +11,7 @@ social:
 ---
 
 # Configured Things
+
+## People
+
+- [Phil Day](/people/phil-day/)

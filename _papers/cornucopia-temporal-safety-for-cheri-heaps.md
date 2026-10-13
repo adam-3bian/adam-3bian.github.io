@@ -1,6 +1,6 @@
 ---
 title: 'Cornucopia: Temporal Safety for CHERI Heaps'
-image_url: null
+image_url: /assets/papers/cornucopia-temporal-safety-for-cheri-heaps/placeholder.svg
 publication_url: https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/2020oakland-cornucopia.pdf
 published_year: 2020
 authors:
@@ -23,6 +23,6 @@ related:
 
 ### Cornucopia: Temporal Safety for CHERI Heaps
 
-Nathaniel Wesley Filardo, Brett F. Gutstein, Jonathan Woodruff, Sam Ainsworth, Lucian Paul-Trifu, Brooks Davis, Hongyan Xia, Edward Tomasz Napierała, Alexander Richardson, John Baldwin, David Chisnall, and others. IEEE Symposium on Security and Privacy 2020, 2020.
+[Nathaniel Wesley Filardo](/people/nathaniel-wesley-filardo/), [Brett F. Gutstein](/people/brett-f-gutstein/), [Jonathan Woodruff](/people/jonathan-woodruff/), [Sam Ainsworth](/people/sam-ainsworth/), [Lucian Paul-Trifu](/people/lucian-paul-trifu/), [Brooks Davis](/people/brooks-davis/), [Hongyan Xia](/people/hongyan-xia/), [Edward Tomasz Napierała](/people/edward-tomasz-napieraa/), Alexander Richardson, [John Baldwin](/people/john-baldwin/), [David Chisnall](/people/david-chisnall/), and others. IEEE Symposium on Security and Privacy 2020, 2020.
 
 Investigates capability revocation and temporal safety for heap allocations in CHERI systems.

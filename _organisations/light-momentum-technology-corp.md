@@ -12,8 +12,6 @@ social:
 
 # Light Momentum Technology Corp.
 
-Light Momentum Technology Corp. (LMTech), founded in 2021 by top university alumni in Taiwan, specializes in IC design, AI, and edge computing. LMTech provides integrated services in FinTech, automotive, security, and AI applications, excelling in…
-
 ## Description
 
 Light Momentum Technology Corp. (LMTech), founded in 2021 by top university alumni in Taiwan, specializes in IC design, AI, and edge computing. LMTech provides integrated services in FinTech, automotive, security, and AI applications, excelling in technical solutions and meeting diverse customer needs. LMTech develops custom chips, enhancing power efficiency, performance, and cost-effectiveness. Through innovative hardware-software integration, LMTech fuses software functionalities with hardware implementations, boosting system performance and stability, reducing power consumption, and enhancing overall system performance and security. The company aims to deliver innovative, efficient, and reliable solutions.

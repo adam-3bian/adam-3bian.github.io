@@ -13,8 +13,6 @@ related:
 
 # Secure and Resilient Systems in the Era of CRA and IoT
 
-On 21 January 2026, technology leaders, engineers, security practitioners and compliance specialists will gather at IWM Duxford for Secure Horizons 2026, a one day, in person event hosted by EPS Global. Set against the powerful backdrop of a former…
-
 On 21 January 2026, technology leaders, engineers, security practitioners and compliance specialists will gather at IWM Duxford for Secure Horizons 2026, a one day, in person event hosted by EPS Global.
 
 Set against the powerful backdrop of a former Second World War airfield, Secure Horizons 2026 explores a challenge that feels increasingly urgent across every sector: how do we build digital systems that are not only compliant, but genuinely secure and resilient, in a rapidly evolving global regulatory landscape?
@@ -31,17 +29,12 @@ The day begins with arrivals and networking in the Concorde Suite, followed by a
 
 Sessions include:
 
-Overcoming CRA challenges and going beyond compliance through practical security frameworks
-
-Delivering memory safe computing for resilient systems
-
-Strengthening IoT devices through high quality randomness and secure key generation
-
-Simplifying semiconductor provisioning without sacrificing security
-
-Achieving comprehensive CRA compliance across edge, mobile and cloud environments
-
-Speakers come from across the cybersecurity, semiconductor, IoT and compliance ecosystems, offering perspectives that span hardware through to cloud services.
+- Overcoming CRA challenges and going beyond compliance through practical security frameworks
+- Delivering memory safe computing for resilient systems
+- Strengthening IoT devices through high quality randomness and secure key generation
+- Simplifying semiconductor provisioning without sacrificing security
+- Achieving comprehensive CRA compliance across edge, mobile and cloud environments
+- Speakers come from across the cybersecurity, semiconductor, IoT and compliance ecosystems, offering perspectives that span hardware through to cloud services.
 
 Midday, attendees will enjoy lunch, live demonstrations, networking and a guided tour of the museum itself. Walking among historic aircraft and artefacts provides a rare moment of reflection on how resilience, engineering and security have always played a defining role in protecting people, infrastructure and values.
 
@@ -49,13 +42,10 @@ Midday, attendees will enjoy lunch, live demonstrations, networking and a guided
 
 Secure Horizons 2026 is for anyone responsible for building, deploying or governing connected systems, including:
 
-Security and compliance leaders
-
-Embedded and hardware engineers IoT architects and product owners
-
-Technology strategists navigating new regulatory requirements
-
-More than a conference, the event is a space to connect disciplines that are too often siloed, and to learn how regulation can become a driver for better engineering rather than a constraint.
+- Security and compliance leaders
+- Embedded and hardware engineers IoT architects and product owners
+- Technology strategists navigating new regulatory requirements
+- More than a conference, the event is a space to connect disciplines that are too often siloed, and to learn how regulation can become a driver for better engineering rather than a constraint.
 
 ## Event Details at a Glance
 

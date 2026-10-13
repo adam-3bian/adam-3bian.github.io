@@ -1,7 +1,7 @@
 ---
 title: CHERI Blossoms Conference 2025
 image_url: /assets/events/cheri-blossoms-conference-2025/838829e021a2-hero.png
-website_url: null
+website_url: https://cheri-alliance.org/events/cheri-blossoms-conference-apr-2025/
 registration_url: null
 start_date: '2025-04-02'
 start_datetime: null
@@ -38,8 +38,25 @@ speakers:
 - tariq-kurd
 - tora-fridholm
 related:
-  groups: []
-  organisations: []
+  groups:
+  - marketing
+  - cheri-qemu
+  - cheri-in-soc
+  organisations:
+  - mission-critical-applications-limited
+  - the-university-of-manchester
+  - university-of-cambridge
+  - university-of-glasgow
+  - capabilities-limited
+  - configured-things
+  - sci-semiconductor
+  - cheri-alliance
+  - wind-river
+  - axiomise-ltd
+  - codasip
+  - lowrisc
+  - dsit
+  - ukri
   papers: []
 ---
 
@@ -59,61 +76,61 @@ The CHERI Blossoms Conference 2025 invited researchers, technologists, industry 
 
 ## Conference Presentations
 
-Talk Title: Keynote; Author: Alastair Beresford; Organisation: University of Cambridge; Speaker, Slides & Video: Speaker, Slides & Video
+- **Keynote** — [Alastair Beresford](/people/alastair-beresford/) ([University of Cambridge](/organisations/university-of-cambridge/))
 
-Talk Title: CHERI Alliance - QEMU Working Group; Author: Alfredo Mazzinghi; Organisation: Capabilities Limited; Speaker, Slides & Video: Speaker, Slides & Video
+- **[CHERI Alliance](/organisations/cheri-alliance/) - [QEMU Working Group](/groups/cheri-qemu/)** — [Alfredo Mazzinghi](/people/alfredo-mazzinghi/) ([Capabilities Limited](/organisations/capabilities-limited/))
 
-Talk Title: Industrial-Strength Formal Verification of RISC-V Processors; Author: Ashish Darbari; Organisation: Axiomise; Speaker, Slides & Video: Speaker, Slides & Video
+- **Industrial-Strength Formal Verification of RISC-V Processors** — [Ashish Darbari](/people/ashish-darbari/) ([Axiomise](/organisations/axiomise-ltd/))
 
-Talk Title: CHERI Alliance - SoC Working Group; Author: Ben Fletcher; Organisation: Codasip; Speaker, Slides & Video: Speaker, Slides & Video
+- **CHERI Alliance - [SoC Working Group](/groups/cheri-in-soc/)** — [Ben Fletcher](/people/ben-fletcher/) ([Codasip](/organisations/codasip/))
 
-Talk Title: Building Resilience: Enhancing productivity through Secure by Design systems; Author: Bradley Finn; Organisation: DSIT; Speaker, Slides & Video: Speaker, Slides & Video
+- **Building Resilience: Enhancing productivity through Secure by Design systems** — [Bradley Finn](/people/bradley-finn/) ([DSIT](/organisations/dsit/))
 
-Talk Title: Porting Linux to CHERI; Author: Carl Shaw; Organisation: Codasip; Speaker, Slides & Video: Speaker, Slides & Video
+- **Porting Linux to CHERI** — [Carl Shaw](/people/carl-shaw/) (Codasip)
 
-Talk Title: CHERIoT 2025; Author: David Chisnall; Organisation: SCI Semiconductor; Speaker, Slides & Video: Speaker, Slides & Video
+- **[CHERIoT](/hardware/cheriot/) 2025** — [David Chisnall](/people/david-chisnall/) ([SCI Semiconductor](/organisations/sci-semiconductor/))
 
-Talk Title: Implementation of CHERI Capabilities in a Safety-Critical Real-Time Operating System for Intelligent Edge Systems; Author: Dmitriy Yeliseyev; Organisation: Wind River; Speaker, Slides & Video: Speaker, Slides & Video
+- **Implementation of CHERI Capabilities in a Safety-Critical Real-Time Operating System for Intelligent Edge Systems** — [Dmitriy Yeliseyev](/people/dmitriy-yeliseyev/) ([Wind River](/organisations/wind-river/))
 
-Talk Title: Porting V8 to CHERI: An Overview; Author: Domagoj Stolfa; Organisation: Capabilities Limited, University of Cambridge; Speaker, Slides & Video: Speaker, Slides & Video
+- **Porting V8 to CHERI: An Overview** — [Domagoj Stolfa](/people/domagoj-stolfa/) (Capabilities Limited, University of Cambridge)
 
-Talk Title: Project Sunburst: An Open-Source CHERIoT SoC Top-Level and its Path to Market with Iceni; Author: Gavin Ferris; Organisation: lowRISC; Speaker, Slides & Video: Speaker, Slides & Video
+- **Project Sunburst: An Open-Source CHERIoT SoC Top-Level and its Path to Market with Iceni** — [Gavin Ferris](/people/gavin-ferris/) ([lowRISC](/organisations/lowrisc/))
 
-Talk Title: Project Sunburst: An Open-Source CHERIoT SoC Top-Level and its Path to Market with Iceni; Author: Haydn Povey; Organisation: SCI Semiconductor; Speaker, Slides & Video: Speaker, Slides & Video
+- **Project Sunburst: An Open-Source CHERIoT SoC Top-Level and its Path to Market with Iceni** — [Haydn Povey](/people/haydn-povey/) (SCI Semiconductor)
 
-Talk Title: CHERI Alliance - seL4 Working Group; Author: Hesham Almatary; Organisation: Capabilities Limited; Speaker, Slides & Video: Speaker, Slides & Video
+- **CHERI Alliance - seL4 Working Group** — [Hesham Almatary](/people/hesham-almatary/) (Capabilities Limited)
 
-Talk Title: CHERI MicroPython: Challenges and Opportunities; Author: Jeremy Singer; Organisation: University of Glasgow; Speaker, Slides & Video: Speaker, Slides & Video
+- **CHERI MicroPython: Challenges and Opportunities** — [Jeremy Singer](/people/jeremy-singer/) ([University of Glasgow](/organisations/university-of-glasgow/))
 
-Talk Title: Findings from DSbD program; Author: John Goodacre; Organisation: UKRI; Speaker, Slides & Video: Speaker, Slides & Video
+- **Findings from DSbD program** — [John Goodacre](/people/john-goodacre/) ([UKRI](/organisations/ukri/))
 
-Talk Title: CHERI support for CVA6; Author: Jonathan Woodruff; Organisation: Capabilities Limited; Speaker, Slides & Video: Speaker, Slides & Video
+- **CHERI support for CVA6** — [Jonathan Woodruff](/people/jonathan-woodruff/) (Capabilities Limited)
 
-Talk Title: Securing Secure Networking tools for Morello Linux; Author: Joshua Lant; Organisation: University of Manchester; Speaker, Slides & Video: Speaker, Slides & Video
+- **Securing Secure Networking tools for [Morello](/hardware/morello/) Linux** — [Joshua Lant](/people/joshua-lant/) ([University of Manchester](/organisations/the-university-of-manchester/))
 
-Talk Title: Porting Linux to CHERI; Author: Kevin Brodsky; Organisation: Arm; Speaker, Slides & Video: Speaker, Slides & Video
+- **Porting Linux to CHERI** — [Kevin Brodsky](/people/kevin-brodsky/) (Arm)
 
-Talk Title: Rust for Morello: Always-On Memory Safety, Even in Unsafe Code; Author: Mark Batty; Organisation: Kent University; Speaker, Slides & Video: Speaker, Slides & Video
+- **[Rust](/software/rust/) for Morello: Always-On Memory Safety, Even in Unsafe Code** — [Mark Batty](/people/mark-batty/) (Kent University)
 
-Talk Title: Efficient system-level support for CHERI Capabilities; Author: Mark Hill; Organisation: Codasip; Speaker, Slides & Video: Speaker, Slides & Video
+- **Efficient system-level support for CHERI Capabilities** — [Mark Hill](/people/mark-hill/) (Codasip)
 
-Talk Title: CHERI Alliance - Repository Working Group; Author: Marno van der Maas; Organisation: lowRISC; Speaker, Slides & Video: Speaker, Slides & Video
+- **CHERI Alliance - Repository Working Group** — [Marno van der Maas](/people/marno-van-der-maas/) (lowRISC)
 
-Talk Title: Hybrid CHERI in seL4 user space; Author: Martin Atkins; Organisation: Mission Critical Applications Limited; Speaker, Slides & Video: Speaker, Slides & Video
+- **Hybrid CHERI in seL4 user space** — [Martin Atkins](/people/martin-atkins/) ([Mission Critical Applications Limited](/organisations/mission-critical-applications-limited/))
 
-Talk Title: Progress of the Alliance, CHERI Alliance - Promotion & Ambassador Working Group; Author: Mike Eftimakis; Organisation: CHERI Alliance; Speaker, Slides & Video: Speaker, Slides & Video
+- **Progress of the Alliance, CHERI Alliance - Promotion & Ambassador Working Group** — [Mike Eftimakis](/people/mike-eftimakis/) (CHERI Alliance)
 
-Talk Title: Surprise!; Author: Mike Halsall; Organisation: CHERI Alliance; Speaker, Slides & Video: Speaker, Slides & Video
+- **Surprise!** — [Mike Halsall](/people/mike-halsall/) (CHERI Alliance)
 
-Talk Title: Implementing safe and resilient configuration management with CHERIoT; Author: Phil Day; Organisation: Configured Things; Speaker, Slides & Video: Speaker, Slides & Video
+- **Implementing safe and resilient configuration management with CHERIoT** — [Phil Day](/people/phil-day/) ([Configured Things](/organisations/configured-things/))
 
-Talk Title: Latest news about CHERI; Author: Robert Watson; Organisation: CHERI Alliance; Speaker, Slides & Video: Speaker, Slides & Video
+- **Latest news about CHERI** — [Robert Watson](/people/robert-watson/) (CHERI Alliance)
 
-Talk Title: About CHERI; Author: Simon Moore; Organisation: University of Cambridge; Speaker, Slides & Video: Speaker, Slides & Video
+- **About CHERI** — [Simon Moore](/people/simon-moore/) (University of Cambridge)
 
-Talk Title: CHERI RISC-V Standardisation; Author: Tariq Kurd; Organisation: Codasip; Speaker, Slides & Video: Speaker, Slides & Video
+- **CHERI RISC-V Standardisation** — [Tariq Kurd](/people/tariq-kurd/) (Codasip)
 
-Talk Title: CHERI Alliance - Marketing Working Group; Author: Tora Fridholm; Organisation: Codasip; Speaker, Slides & Video: Speaker, Slides & Video
+- **CHERI Alliance - [Marketing Working Group](/groups/marketing/)** — [Tora Fridholm](/people/tora-fridholm/) (Codasip)
 
 ## Agenda
 
@@ -138,50 +155,49 @@ Fisher Building, St John’s College, Cambridge, UK
 
 ### Address:
 
-St. John’s College, St. Johns Street, Cambridge, CB2 1TP
-
-View map
+- St. John’s College, St. Johns Street, Cambridge, CB2 1TP
+- View map
 
 ## More CHERI Blossoms events
 
-View the complete series
+[View all events](/events/).
 
 <ul class="image-gallery record-gallery" markdown="block">
 <li markdown="block">
 
-![](/assets/events/cheri-blossoms-conference-2027/17bb25790594-cheri-blossoms-conference-2027.webp)
+[![cheri blossoms conference 2027](/assets/events/cheri-blossoms-conference-2027/17bb25790594-cheri-blossoms-conference-2027.webp)](/events/cheri-blossoms-conference-2027/)
 
 Upcoming Conference
 
 21 to 23 April 2027 University of Cambridge, Cambridge, UK
 
-### CHERI Blossoms Conference 2027
+### [CHERI Blossoms Conference 2027](/events/cheri-blossoms-conference-2027/)
 
 CHERI Blossoms Conference 2027 Pre-conference Tutorial: 21 April 2027 Main Conference Date: 22-23 April 2027 Location: Department of Computer Science and Technology – ...
 
 </li>
 <li markdown="block">
 
-![](/assets/events/cheri-blossoms-tutorial-2026/88adf0d2ae82-cheri-blossoms-tutorial-2026.webp)
+[![cheri blossoms tutorial 2026](/assets/events/cheri-blossoms-tutorial-2026/88adf0d2ae82-cheri-blossoms-tutorial-2026.webp)](/events/cheri-blossoms-tutorial-2026/)
 
 Past Tutorial
 
 25 March 2026 University of Cambridge, Cambridge, UK
 
-### Hands-on Introduction to CHERI and CHERIoT
+### [Hands-on Introduction to CHERI and CHERIoT](/events/cheri-blossoms-tutorial-2026/)
 
 The CHERI Research Centre at the Computer Laboratory, Codasip, and lowRISC co-organised a comprehensive tutorial on CHERI alongside the CHERI Blossoms 2026 conference....
 
 </li>
 <li markdown="block">
 
-![](/assets/events/cheri-blossoms-conference-2026/1e39a7b87075-cheri-blossoms-conference-2026.webp)
+[![cheri blossoms conference 2026](/assets/events/cheri-blossoms-conference-2026/1e39a7b87075-cheri-blossoms-conference-2026.webp)](/events/cheri-blossoms-conference-2026/)
 
 Past Conference
 
 25 to 27 March 2026 University of Cambridge, Cambridge, UK
 
-### CHERI Blossoms Conference 2026
+### [CHERI Blossoms Conference 2026](/events/cheri-blossoms-conference-2026/)
 
 The CHERI Blossoms Conference 2026 was the must-attend event for forward-thinking decision-makers and innovators! This exclusive gathering was tailored for industry le...
 

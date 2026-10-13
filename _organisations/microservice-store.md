@@ -1,6 +1,6 @@
 ---
 title: Microservice Store
-image_url: null
+image_url: /assets/organisations/microservice-store/placeholder.svg
 website_url: null
 membership_tier: null
 is_founding_member: null
@@ -11,3 +11,7 @@ social:
 ---
 
 # Microservice Store
+
+## People
+
+- [Murat Cakmak](/people/murat-cakmak/)

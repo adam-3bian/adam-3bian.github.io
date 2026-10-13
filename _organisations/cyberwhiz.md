@@ -20,4 +20,4 @@ IoT Cyber Security Solutions and Services for Edge – Mobile – Cloud.
 
 ## CHERI Activities
 
-We are a new member. We have just attended the last CHERI Alliance event.
+We are a new member. We have just attended the last [CHERI Alliance](/organisations/cheri-alliance/) event.

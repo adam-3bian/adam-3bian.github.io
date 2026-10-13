@@ -12,8 +12,6 @@ social:
 
 # Swansea University
 
-Swansea University is a research university and one of the leading institutions in Wales (United Kingdom). The Faculty of Science & Engineering (FSE) at Swansea is nationally and globally recognised as a centre of excellence providing an innovative…
-
 ## Description
 
 Swansea University is a research university and one of the leading institutions in Wales (United Kingdom). The Faculty of Science & Engineering (FSE) at Swansea is nationally and globally recognised as a centre of excellence providing an innovative, inclusive learning environment that produces lifelong learners who are prepared for the global economy. The Faculty has strengths in engineering, computer science and mathematics. The Systems Security Group (SSG), part of the Department of Computer Science at FSE, is one of the leading groups researching on security assurance of cyber-physical systems and adoption of secure technology across a number of industrial sectors.
