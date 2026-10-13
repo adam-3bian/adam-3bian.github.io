@@ -176,7 +176,7 @@ async function loaded(page, route) {
     });
     await loaded(linked, editorial);
     assert.equal(await linked.locator('#linked-image img, #interactive-image img').evaluateAll(images => images.some(image => image.hasAttribute('role') || image.hasAttribute('tabindex'))), false);
-    await linked.locator('#linked-image').click();
+    await linked.locator('#linked-image img').click();
     assert(new URL(linked.url()).hash === '#linked-image');
     assert.equal(await linked.locator('dialog[open]').count(), 0);
     await linked.close();
