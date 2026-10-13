@@ -1,0 +1,1 @@
+{%- assign href_value = include.url | default: '' -%}{%- assign href_first = href_value | slice: 0, 1 -%}{%- assign href_first_two = href_value | slice: 0, 2 -%}{%- if href_value contains ':' or href_first_two == '//' or href_first == '#' -%}{{- href_value | escape -}}{%- else -%}{{- href_value | relative_url | escape -}}{%- endif -%}

@@ -1,7 +1,11 @@
 ---
 title: Papers
 permalink: /papers/
-listing: papers
+layout: list
+listing:
+  collection: papers
+  status: null
+  role: null
 ---
 
 # Papers

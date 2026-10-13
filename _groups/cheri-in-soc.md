@@ -1,56 +1,35 @@
 ---
 title: ⬛️ CHERI in SoC WG
+image_url: null
+website_url: null
+repository_urls: []
+lead: null
+related:
+  organisations: []
+  hardware: []
+  software: []
 ---
 
-1. Alliance
-2. About &amp; Governance
-3. ⬛️ CHERI in SoC WG
-{: .source-breadcrumbs }
-
 # ⬛️ CHERI in SoC WG
-{: id="page-hero-title" .page-hero-title }
 
 Brings together the architecture, integration, and verification questions involved in adding CHERI to a system-on-chip.
-{: .page-hero-summary }
 
 The CHERI in SoC Working Group focuses on defining and standardizing what needs to be included in a system to support CHERI, and to provide useful resources to speed the wider adoption of CHERI within chiplets and SoCs.
 
 The resources we deliver will help accelerate:
 
-- Learning what is involved when creating a device or system that supports CHERI.
-- Understanding the different levels of CHERI support, and what guarantees they can offer.
-- Making the right trade-offs and choices for the devices and systems being developed.
-- Extending or innovating technologies to better enable CHERI at the system level.
+Learning what is involved when creating a device or system that supports CHERI.
 
-Group type
-: Technical
+Understanding the different levels of CHERI support, and what guarantees they can offer.
 
-Areas of collaboration
-: - SoC architecture and integration
-  - CHERI feature profiles
-  - Hardware and software interfaces
-{: .entity-facts }
+Making the right trade-offs and choices for the devices and systems being developed.
 
-[Enquire about this group](/alliance/membership/contact/)
-{: .entity-primary-link }
+Extending or innovating technologies to better enable CHERI at the system level.
 
-[Back to all working groups](/alliance/leadership/working-groups/)
-{: .entity-back }
+Group type: Technical
 
-## Where next
-{: .where-next-title }
+Areas of collaboration: SoC architecture and integration
 
-### [CHERI Linux Working Group](/groups/cheri-linux-working-group/)
-{: .where-next-card-title }
+CHERI feature profiles
 
-
-
-
-
-[See the group coordinating shared work on CHERI support in Linux.](/groups/cheri-linux-working-group/)
-{: .where-next-summary }
-
-
-
-[Continue](/groups/cheri-linux-working-group/)
-{: .source-card-label }
+Hardware and software interfaces

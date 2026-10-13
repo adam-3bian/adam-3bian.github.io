@@ -1,13 +1,5 @@
 ---
-layout: default
+layout: document
 ---
-{% assign items = site[page.listing.collection] | where_exp: 'item', 'item.redirect_to == nil' %}
-{% if page.listing.sort == 'date' %}
-  {% assign items = items | sort: 'date' %}
-{% else %}
-  {% assign items = items | sort_natural: 'title' %}
-{% endif %}
-{% if page.listing.order == 'desc' %}{% assign items = items | reverse %}{% endif %}
-{% include listing.html items=items label=page.title compact=page.listing.compact action=page.listing.action columns=page.listing.columns %}
-
 {{ content }}
+{% include listing.html collection=page.listing.collection %}

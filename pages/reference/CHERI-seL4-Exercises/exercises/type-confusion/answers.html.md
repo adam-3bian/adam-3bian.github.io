@@ -1,36 +1,51 @@
 ---
 title: 'Answers: Exercise integer-pointer type confusion bug'
 permalink: /reference/CHERI-seL4-Exercises/exercises/type-confusion/answers.html
+summary: null
+image_url: null
+updated_date: null
+parent: /CHERI-seL4-Exercises/
+next_page_url: null
+related:
+  pages: []
+  people: []
+  organisations: []
+  groups: []
+  news: []
+  events: []
+  papers: []
+  hardware: []
+  software: []
+  guides: []
+  policies: []
 ---
 
-# [Answers: Exercise integer-pointer type confusion bug](/reference/CHERI-seL4-Exercises/exercises/type-confusion/answers.html#answers-exercise-integer-pointer-type-confusion-bug)
-{: id="answers-exercise-integer-pointer-type-confusion-bug" }
+# Answers: Exercise integer-pointer type confusion bug
 
-When the integer value is updated, with CHERI-RISC-V compilation the
-pointer side will no longer be dereferenceable, as the tag has been cleared.
+When the integer value is updated, with CHERI-RISC-V compilation the pointer side will no longer be dereferenceable, as the tag has been cleared.
 
-2. Expected output:
+Expected output:
 
-~~~
-# run_qemu ./type-confusion-riscv
+\# run\_qemu ./type-confusion-riscv
+
 lp.ptr Hello World!
+
 lp.ptr ello World!
-~~~
 
-The `long` member was loaded and stored as an integer (this is identical
-to the way it would have been handled if the pointer member were
-incremented instead).
+The long member was loaded and stored as an integer (this is identical to the way it would have been handled if the pointer member were incremented instead).
 
-3. Expected output:
+Expected output:
 
-~~~
-# run_qemu ./type-confusion-cheri
+\# run\_qemu ./type-confusion-cheri
+
 lp.ptr Hello World!
-...
-MON|ERROR: CHERI Security Violation: ip=0x0000000000200750  fault_addr=0x00000000002023f1  fsr=0x0000000000000810  (data fault)
-MON|ERROR: description of fault: Tag violation
-MON|ERROR: CHERI fault type: CHERI data fault due to load, store or AMO
-~~~
 
-When the `long` member was loaded and stored, it caused the tag to be
-cleared on the pointer.
+...
+
+MON|ERROR: CHERI Security Violation: ip=0x0000000000200750  fault\_addr=0x00000000002023f1  fsr=0x0000000000000810  (data fault)
+
+MON|ERROR: description of fault: Tag violation
+
+MON|ERROR: CHERI fault type: CHERI data fault due to load, store or AMO
+
+When the long member was loaded and stored, it caused the tag to be cleared on the pointer.

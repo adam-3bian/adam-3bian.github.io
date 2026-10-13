@@ -1,22 +1,17 @@
 ---
 title: Past Events
 permalink: /news-and-events/events-and-archive/past-events/
-listing: events
-filter: past
+layout: events
+listing:
+  collection: null
+  status: past
+  role: null
 ---
 
-1. News &amp; Events
-2. Events &amp; Archive
-3. Past Events
-{: .source-breadcrumbs }
-
 # Past Events
-{: id="page-hero-title" .page-hero-title }
 
 Previous CHERI Alliance events, with programmes, speakers, recordings, slides, and venue information where available.
-{: .page-hero-summary }
 
 ## Event archive
-{: id="directory-event-archive" }
 
 Previous conferences, workshops, tutorials, and online sessions with their published programmes and supporting material.

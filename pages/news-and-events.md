@@ -1,14 +1,28 @@
 ---
 title: News and events
 permalink: /news-and-events/
+layout: index
+summary: null
+image_url: null
+sections:
+- presentation: null
+  columns: null
+  headings:
+  - Follow the ecosystem
+related:
+  pages: []
 ---
 
 # News and events
 
 ## Follow the ecosystem
 
-- [Latest news](/news/)
-- [Upcoming events](/news-and-events/events-and-archive/upcoming-events/)
-- [Past events](/news-and-events/events-and-archive/past-events/)
-- [Speakers](/news-and-events/people-and-opportunities/speakers/)
-- [Newsletter](/news-and-events/news-and-analysis/subscribe-newsletter/)
+Latest news
+
+Upcoming events
+
+Past events
+
+Speakers
+
+Newsletter

@@ -1,7 +1,0 @@
-body { margin: 2rem auto; max-width: 72rem; padding: 0 1rem; font-family: sans-serif; line-height: 1.6; }
-img { max-width: 100%; height: auto; }
-.image-left { float: left; margin: 0 1rem 1rem 0; }
-.image-right { float: right; margin: 0 0 1rem 1rem; }
-.image-full { display: block; width: 100%; clear: both; }
-main::after { content: ""; display: block; clear: both; }
-@media (max-width: 40rem) { .image-left, .image-right { float: none; margin: 1rem 0; } }

@@ -1,7 +1,11 @@
 ---
 title: Software
 permalink: /software/
-listing: software
+layout: list
+listing:
+  collection: software
+  status: null
+  role: null
 ---
 
 # Software

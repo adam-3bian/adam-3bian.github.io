@@ -1,41 +1,23 @@
 ---
 title: CyberWhiz
-member: true
+image_url: /assets/organisations/cyberwhiz/1e18de21cd71-logo.png
+website_url: https://www.cyberwhiz.co.uk/
+membership_tier: full
+is_founding_member: null
+social:
+  linkedin_url: null
+  mastodon_url: null
+  github_url: null
 ---
 
-1. Alliance
-2. Members
-3. CyberWhiz
-{: .source-breadcrumbs }
-
 # CyberWhiz
-{: id="page-hero-title" .page-hero-title }
 
 IoT Cyber Security Solutions and Services for Edge – Mobile – Cloud.
-{: .page-hero-summary }
-
-![CyberWhiz Logo](/assets/organisations/cyberwhiz/1e18de21cd71-logo.png){: .image-left }
-{: .entity-media .entity-media--logo }
-
-Status
-: Member
-
-Membership
-: Full Member
-
-Website
-: [Visit member website](https://www.cyberwhiz.co.uk/)
-{: .entity-facts }
 
 ## Description
-{: id="description" }
 
 IoT Cyber Security Solutions and Services for Edge – Mobile – Cloud.
 
 ## CHERI Activities
-{: id="cheri-activities" }
 
 We are a new member. We have just attended the last CHERI Alliance event.
-
-[Back to all members](/alliance/leadership/members/)
-{: .entity-back }

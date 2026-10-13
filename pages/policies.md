@@ -1,7 +1,11 @@
 ---
 title: Policies
 permalink: /policies/
-listing: policies
+layout: list
+listing:
+  collection: policies
+  status: null
+  role: null
 ---
 
 # Policies

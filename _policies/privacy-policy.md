@@ -1,9 +1,9 @@
 ---
 title: Privacy policy
+author: null
 ---
 
 # Privacy policy
-
 
 This Website collects some Personal data from its Users.
 
@@ -11,13 +11,9 @@ This document can be printed for reference by using the print command in the set
 
 Owner and Data Controller:
 
-**CHERI Alliance C.I.C.**  
-Salisbury House, Station Road  
-Cambridge, CB1 2LA  
-United Kingdom  
-(“CHERI Alliance”)
+CHERI Alliance C.I.C. Salisbury House, Station Road Cambridge, CB1 2LA United Kingdom (“CHERI Alliance”)
 
-This Privacy Policy document contains types of information that is collected and recorded by the CHERI Alliance and how we use it. If you have additional questions or require more information about our Privacy Policy, do not hesitate to [contact us](/alliance/membership/contact/).
+This Privacy Policy document contains types of information that is collected and recorded by the CHERI Alliance and how we use it. If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.
 
 #### GENERAL DATA PROTECTION REGULATION (GDPR)
 
@@ -25,23 +21,31 @@ We are a Data Controller of your information.
 
 CHERI Alliance legal basis for collecting and using the personal information described in this Privacy Policy depends on the Personal Information we collect and the specific context in which we collect the information:
 
-- CHERI Alliance needs to perform a contract with you,
-- You have given CHERI Alliance permission to do so,
-- Processing your personal information is in CHERI Alliance legitimate interests,
-- CHERI Alliance needs to comply with the applicable law.
+CHERI Alliance needs to perform a contract with you,
 
-CHERI Alliance will retain your personal information only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use your information to the extent necessary to comply with our legal obligations, resolve disputes, and enforce our policies. Our Privacy Policy was generated with the help of [GDPR Privacy Policy Generator](https://www.gdprprivacynotice.com/) and the [GDPR Privacy Policy Generator](https://www.gdprcontracts.com/privacy-policy-generator/).
+You have given CHERI Alliance permission to do so,
+
+Processing your personal information is in CHERI Alliance legitimate interests,
+
+CHERI Alliance needs to comply with the applicable law.
+
+CHERI Alliance will retain your personal information only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use your information to the extent necessary to comply with our legal obligations, resolve disputes, and enforce our policies. Our Privacy Policy was generated with the help of GDPR Privacy Policy Generator and the GDPR Privacy Policy Generator.
 
 If you are a resident of the European Economic Area (EEA), you have certain data protection rights. If you wish to be informed what Personal Information we hold about you and if you want it to be removed from our systems, please contact us.
 
 In certain circumstances, you have the following data protection rights:
 
-- The right to access, update or to delete the information we have on you.
-- The right of rectification.
-- The right to object.
-- The right of restriction.
-- The right to data portability.
-- The right to withdraw consent.
+The right to access, update or to delete the information we have on you.
+
+The right of rectification.
+
+The right to object.
+
+The right of restriction.
+
+The right to data portability.
+
+The right to withdraw consent.
 
 #### LOG FILES
 

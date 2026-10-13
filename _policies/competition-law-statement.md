@@ -1,31 +1,21 @@
 ---
 title: Competition Law Statement
+author: null
 ---
-
-1. Alliance
-2. Legal &amp; Policies
-3. Competition Law Statement
-{: .source-breadcrumbs }
 
 # Competition Law Statement
-{: id="page-hero-title" .page-hero-title }
 
 Alliance collaboration must never be used to exchange competitively sensitive information or coordinate market behaviour.
-{: .page-hero-summary }
 
-Version
-: 1.0
+Version: 1.0
 
-Date
-: August 2024
-{: .page-hero-meta }
+Date: August 2024
 
-![pdf](/assets/shared/source-assets/d63b7eac09b7-pdf-file-icon.webp){: .image-left .image-inline } Download the [CHERI Alliance Competition Law Statement](/assets/pages/alliance--legal-and-policies--competition-law-statement/0053779e62ce-competition.pdf) – The PDF is the official version. The text is reproduced below for convenience, but if there is any difference between the two versions, the PDF takes precedence.
+![pdf](/assets/shared/source-assets/d63b7eac09b7-pdf-file-icon.webp)
 
----
+Download the CHERI Alliance Competition Law Statement – The PDF is the official version. The text is reproduced below for convenience, but if there is any difference between the two versions, the PDF takes precedence.
 
-## 1. Introduction
-{: id="1-introduction" }
+## 1\. Introduction
 
 1.1 The purpose of CHERI Alliance C.I.C. (the Alliance) is to carry on activities which benefit the community and in particular (without limitation) to promote the use and adoption of CHERI open security technology, methodology and/or standards to improve system security and memory protection in software and hardware products. In carrying this out, Alliance members and non-member attendees must:
 
@@ -33,8 +23,7 @@ Date
 
 1.1.2 follow the Guiding Principles as follows.
 
-## 2. Guiding principles – what information can be shared
-{: id="2-guiding-principles--what-information-can-be-shared" }
+## 2\. Guiding principles – what information can be shared
 
 2.1 There are many positive aspects to associations such as the Alliance and information that can be shared can include:
 
@@ -48,8 +37,7 @@ Date
 
 2.1.5 industry standards that increase product interoperability, compatibility or safety, provided advice has been taken on the development, transparency, accessibility and potential competitive impact of these standards.
 
-## 3. Guiding principles – what information cannot be shared
-{: id="3-guiding-principles--what-information-cannot-be-shared" }
+## 3\. Guiding principles – what information cannot be shared
 
 3.1 There are certain areas of sensitive commercial information that should never be discussed between our members or between members and non-members through the Alliance, either formally or informally, intentionally or inadvertently, directly or indirectly through a third party. These include:
 
@@ -85,64 +73,8 @@ Date
 
 3.3 These types of agreements (cartel agreements) are automatically illegal in the UK, the jurisdiction in which the Alliance is established. There can be no justification; the agreement itself is unlawful.
 
-## 4. Queries
-{: id="4-queries" }
+## 4\. Queries
 
 4.1 Any questions relating to this statement, or its contents, should be directed to the Board of Directors of the Alliance.
 
 4.2 Any suspected breach of this statement should be reported to the Board of Directors of the Alliance.
-
-## Where next
-{: .where-next-title }
-
-### [Intellectual Property Policy](/policies/intellectual-property-policy/)
-{: .where-next-card-title }
-
-
-
-
-
-[The policy governing intellectual property in Alliance activities and contributions.](/policies/intellectual-property-policy/)
-{: .where-next-summary }
-
-
-
-[Continue](/policies/intellectual-property-policy/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Code of Conduct](/policies/code-of-conduct/)
-{: .related-pages-item-title }
-
-
-
-
-
-[The behaviour and participation expectations that apply to Alliance spaces and activities.](/policies/code-of-conduct/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/policies/code-of-conduct/)
-{: .source-card-label }
-
-
-
-
-
-### [About the CHERI Alliance](/organisations/cheri-alliance/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Learn how the Alliance connects organisations working across the CHERI ecosystem.](/organisations/cheri-alliance/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/organisations/cheri-alliance/)
-{: .source-card-label }

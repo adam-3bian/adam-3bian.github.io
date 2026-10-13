@@ -1,495 +1,761 @@
 ---
 title: Exploiting a buffer overflow to manipulate control flow
 permalink: /reference/CHERI-seL4-Exercises/missions/buffer-overflow-control-flow/index.html
+summary: null
+image_url: null
+updated_date: null
+parent: /CHERI-seL4-Exercises/
+next_page_url: null
+related:
+  pages: []
+  people: []
+  organisations: []
+  groups: []
+  news: []
+  events: []
+  papers: []
+  hardware: []
+  software: []
+  guides: []
+  policies: []
 ---
 
-# [Exploiting a buffer overflow to manipulate control flow](/reference/CHERI-seL4-Exercises/missions/buffer-overflow-control-flow/index.html#exploiting-a-buffer-overflow-to-manipulate-control-flow)
-{: id="exploiting-a-buffer-overflow-to-manipulate-control-flow" }
+# Exploiting a buffer overflow to manipulate control flow
 
-The objective of this mission is to demonstrate arbitrary code execution
-through a control-flow attack, despite CHERI protections. You will attack three
-different versions of the program:
+The objective of this mission is to demonstrate arbitrary code execution through a control-flow attack, despite CHERI protections. You will attack three different versions of the program:
 
-1. A baseline RISC-V compilation, to establish that the vulnerability is
-   exploitable without any CHERI protections.
-2. A baseline CHERI-RISC-V compilation, offering strong spatial safety between
-   heap allocations, including accounting for imprecision in the bounds of large
-   capabilities.
-3. A weakened CHERI-RISC-V compilation, reflecting what would occur if a memory
-   allocator failed to pad allocations to account for capability bounds
-   imprecision.
+A baseline RISC-V compilation, to establish that the vulnerability is exploitable without any CHERI protections.
 
-The success condition for an exploit, given attacker-provided input overflowing
-a buffer, is to modify control flow in the program such that the `success`
-function is executed.
+A baseline CHERI-RISC-V compilation, offering strong spatial safety between heap allocations, including accounting for imprecision in the bounds of large capabilities.
 
-1. Compile `buffer-overflow.c` and `btpalloc.c` together with a RISC-V target
-   and exploit the binary to execute the `success` function. You also need
-   to compile `serial_server.c` to an ELF and place it in a separate
-   Microkit protection domain, with the highest priority, then generate an
-   image using the Microkit tool.
+A weakened CHERI-RISC-V compilation, reflecting what would occur if a memory allocator failed to pad allocations to account for capability bounds imprecision.
 
-**buffer-overflow.c**
+The success condition for an exploit, given attacker-provided input overflowing a buffer, is to modify control flow in the program such that the success function is executed.
 
-~~~C
-/*
- * SPDX-License-Identifier: BSD-2-Clause-DARPA-SSITH-ECATS-HR0011-18-C-0016
- * Copyright (c) 2020 Jessica Clarke
- */
-#include <stdint.h>
-#include <printf.h>
-#include <microkit.h>
-#include <sel4/sel4.h>
+Compile buffer-overflow.c and btpalloc.c together with a RISC-V target and exploit the binary to execute the success function. You also need to compile serial\_server.c to an ELF and place it in a separate Microkit protection domain, with the highest priority, then generate an image using the Microkit tool.
+
+buffer-overflow.c
+
+/\*
+
+\* SPDX-License-Identifier: BSD-2-Clause-DARPA-SSITH-ECATS-HR0011-18-C-0016
+
+\* Copyright (c) 2020 Jessica Clarke
+
+\*/
+
+#include \<stdint.h\>
+
+#include \<printf.h\>
+
+#include \<microkit.h\>
+
+#include \<sel4/sel4.h\>
 
 #include "btpalloc.h"
 
-#define SERIAL_CHANNEL 1
+#define SERIAL\_CHANNEL 1
 
-uintptr_t serial_to_client_vaddr;
-uintptr_t client_to_serial_vaddr;
+uintptr\_t serial\_to\_client\_vaddr;
 
-#define MOVE_CURSOR_UP "\033[5A"
-#define CLEAR_TERMINAL_BELOW_CURSOR "\033[0J"
-#define GREEN "\033[32;1;40m"
-#define YELLOW "\033[39;103m"
-#define DEFAULT_COLOUR "\033[0m"
+uintptr\_t client\_to\_serial\_vaddr;
+
+#define MOVE\_CURSOR\_UP "\\033\[5A"
+
+#define CLEAR\_TERMINAL\_BELOW\_CURSOR "\\033\[0J"
+
+#define GREEN "\\033\[32;1;40m"
+
+#define YELLOW "\\033\[39;103m"
+
+#define DEFAULT\_COLOUR "\\033\[0m"
 
 void
+
 success(void)
+
 {
-	printf("Exploit successful!");
+
+printf("Exploit successful!");
+
 }
 
 void
+
 failure(void)
+
 {
-	printf("Exploit unsuccessful!");
+
+printf("Exploit unsuccessful!");
+
 }
 
-static uint16_t
-ipv4_checksum(uint16_t *buf, size_t words)
+static uint16\_t
+
+ipv4\_checksum(uint16\_t \*buf, size\_t words)
+
 {
-	uint16_t *p;
-	uint_fast32_t sum;
 
-	sum = 0;
-	for (p = buf; words > 0; --words, ++p) {
-		sum += *p;
-		if (sum > 0xffff)
-			sum -= 0xffff;
-	}
+uint16\_t \*p;
 
-	return (~sum & 0xffff);
+uint\_fast32\_t sum;
+
+sum = 0;
+
+for (p = buf; words \> 0; --words, ++p) {
+
+sum += \*p;
+
+if (sum \> 0xffff)
+
+sum -= 0xffff;
+
+}
+
+return (\~sum & 0xffff);
+
 }
 
 #include "main-asserts.inc"
 
 static char getchar() {
-    microkit_ppcall(SERIAL_CHANNEL, microkit_msginfo_new(1, 0));
-    return ((char *)serial_to_client_vaddr)[0];
+
+microkit\_ppcall(SERIAL\_CHANNEL, microkit\_msginfo\_new(1, 0));
+
+return ((char \*)serial\_to\_client\_vaddr)\[0\];
+
 }
 
 void
+
 init(void)
+
 {
-	int ch;
-	char *buf, *p;
-	uint16_t sum;
-	void (**fptr)(void);
 
-	buf = btpmalloc(25000);
-	fptr = btpmalloc(sizeof(*fptr));
-	main_asserts(buf, fptr);
+int ch;
 
-	*fptr = &failure;
+char \*buf, \*p;
 
-	p = buf;
-	while ((ch = getchar()) != -1) {
-    if(ch == '\n' || ch == '\r')
-        break;
+uint16\_t sum;
 
-		*p++ = (char)ch;
-  }
+void (\*\*fptr)(void);
 
-	if ((uintptr_t)p & 1)
-		*p++ = '\0';
+buf = btpmalloc(25000);
 
-	sum = ipv4_checksum((uint16_t *)buf, (p - buf) / 2);
-	printf("Checksum: 0x%04x\n", sum);
+fptr = btpmalloc(sizeof(\*fptr));
 
-	btpfree(buf);
+main\_asserts(buf, fptr);
 
-	(**fptr)();
+\*fptr = &failure;
 
-	btpfree(fptr);
+p = buf;
+
+while ((ch = getchar()) != -1) {
+
+if(ch == '\\n' || ch == '\\r')
+
+break;
+
+\*p++ = (char)ch;
+
 }
 
-void notified(microkit_channel channel) {
-    switch (channel) {
-        case SERIAL_CHANNEL: {
-            char ch = ((char *)serial_to_client_vaddr)[0];
-            microkit_dbg_putc(ch);
-            break;
-        }
-    }
+if ((uintptr\_t)p & 1)
+
+\*p++ = '\\0';
+
+sum = ipv4\_checksum((uint16\_t \*)buf, (p - buf) / 2);
+
+printf("Checksum: 0x%04x\\n", sum);
+
+btpfree(buf);
+
+(\*\*fptr)();
+
+btpfree(fptr);
+
 }
-~~~
 
-2. Recompile with a CHERI-RISC-V target, attempt to exploit the binary and, if
-   it cannot be exploited, explain why.
-3. Recompile with a CHERI-RISC-V target but this time adding
-   `-DCHERI_NO_ALIGN_PAD`, attempt to exploit the binary and, if it cannot be
-   exploited, explain why.
+void notified(microkit\_channel channel) {
 
-**btpalloc.c**
+switch (channel) {
 
-~~~C
-/*
- * SPDX-License-Identifier: BSD-2-Clause-DARPA-SSITH-ECATS-HR0011-18-C-0016
- * Copyright (c) 2020 Jessica Clarke
- */
+case SERIAL\_CHANNEL: {
+
+char ch = ((char \*)serial\_to\_client\_vaddr)\[0\];
+
+microkit\_dbg\_putc(ch);
+
+break;
+
+}
+
+}
+
+}
+
+Recompile with a CHERI-RISC-V target, attempt to exploit the binary and, if it cannot be exploited, explain why.
+
+Recompile with a CHERI-RISC-V target but this time adding -DCHERI\_NO\_ALIGN\_PAD, attempt to exploit the binary and, if it cannot be exploited, explain why.
+
+btpalloc.c
+
+/\*
+
+\* SPDX-License-Identifier: BSD-2-Clause-DARPA-SSITH-ECATS-HR0011-18-C-0016
+
+\* Copyright (c) 2020 Jessica Clarke
+
+\*/
+
 #include "btpalloc.h"
 
-#include <stddef.h>
-#include <printf.h>
-#include <sel4/assert.h>
+#include \<stddef.h\>
 
-#ifdef __CHERI_PURE_CAPABILITY__
-#include <cheriintrin.h>
+#include \<printf.h\>
+
+#include \<sel4/assert.h\>
+
+#ifdef \_\_CHERI\_PURE\_CAPABILITY\_\_
+
+#include \<cheriintrin.h\>
+
 #endif
 
-void *btpmem;
-size_t btpmem_size;
+void \*btpmem;
 
-void *
-btpmalloc(size_t size)
+size\_t btpmem\_size;
+
+void \*
+
+btpmalloc(size\_t size)
+
 {
-	void *alloc;
-	size_t allocsize;
 
-	/* Microkit should have mapped and patched btpmem memory region during bootstrapping */
-	seL4_Assert(btpmem != NULL);
-	seL4_Assert(btpmem_size != 0);
+void \*alloc;
 
-	printf("btpmem = 0x%lx\n", (size_t) btpmem);
-	printf("btpmemsize = 0x%lx\n", (size_t) btpmem_size);
+size\_t allocsize;
 
-	alloc = btpmem;
-	/* RISC-V ABIs require 16-byte alignment */
-	allocsize = __builtin_align_up(size, 16);
+/\* Microkit should have mapped and patched btpmem memory region during bootstrapping \*/
 
-#if defined(__CHERI_PURE_CAPABILITY__) && !defined(CHERI_NO_ALIGN_PAD)
-	allocsize = cheri_representable_length(allocsize);
-	alloc = __builtin_align_up(alloc,
-	    ~cheri_representable_alignment_mask(allocsize) + 1);
-	allocsize += (char *)alloc - (char *)btpmem;
+seL4\_Assert(btpmem != NULL);
+
+seL4\_Assert(btpmem\_size != 0);
+
+printf("btpmem = 0x%lx\\n", (size\_t) btpmem);
+
+printf("btpmemsize = 0x%lx\\n", (size\_t) btpmem\_size);
+
+alloc = btpmem;
+
+/\* RISC-V ABIs require 16-byte alignment \*/
+
+allocsize = \_\_builtin\_align\_up(size, 16);
+
+#if defined(\_\_CHERI\_PURE\_CAPABILITY\_\_) && !defined(CHERI\_NO\_ALIGN\_PAD)
+
+allocsize = cheri\_representable\_length(allocsize);
+
+alloc = \_\_builtin\_align\_up(alloc,
+
+\~cheri\_representable\_alignment\_mask(allocsize) + 1);
+
+allocsize += (char \*)alloc - (char \*)btpmem;
+
 #endif
 
-	if (allocsize > btpmem_size)
-		return (NULL);
+if (allocsize \> btpmem\_size)
 
-	btpmem = (char *)btpmem + allocsize;
-	btpmem_size -= allocsize;
-#ifdef __CHERI_PURE_CAPABILITY__
-	alloc = cheri_bounds_set(alloc, size);
+return (NULL);
+
+btpmem = (char \*)btpmem + allocsize;
+
+btpmem\_size -= allocsize;
+
+#ifdef \_\_CHERI\_PURE\_CAPABILITY\_\_
+
+alloc = cheri\_bounds\_set(alloc, size);
+
 #endif
-	printf("Returning alloc = 0x%lx\n", (size_t) alloc);
-	return (alloc);
+
+printf("Returning alloc = 0x%lx\\n", (size\_t) alloc);
+
+return (alloc);
+
 }
 
 void
-btpfree(void *ptr)
+
+btpfree(void \*ptr)
+
 {
-	(void)ptr;
+
+(void)ptr;
+
 }
-~~~
 
-## [Support code](/reference/CHERI-seL4-Exercises/missions/buffer-overflow-control-flow/index.html#support-code)
-{: id="support-code" }
+## Support code
 
-**btpalloc.h**
+btpalloc.h
 
-~~~C
-/*
- * SPDX-License-Identifier: BSD-2-Clause-DARPA-SSITH-ECATS-HR0011-18-C-0016
- * Copyright (c) 2020 Jessica Clarke
- */
-#include <stddef.h>
+/\*
 
-void	*btpmalloc(size_t size);
-void	 btpfree(void *ptr);
-~~~
+\* SPDX-License-Identifier: BSD-2-Clause-DARPA-SSITH-ECATS-HR0011-18-C-0016
 
-**serial\_server.c**
+\* Copyright (c) 2020 Jessica Clarke
 
-~~~C
-#include <stdint.h>
-#include <microkit.h>
+\*/
 
-#if defined(BOARD_qemu_virt_riscv64)
-typedef uint8_t uart_reg_t;
-#elif defined(BOARD_ariane)
-typedef uint32_t uart_reg_t;
+#include \<stddef.h\>
+
+void	\*btpmalloc(size\_t size);
+
+void	 btpfree(void \*ptr);
+
+serial\_server.c
+
+#include \<stdint.h\>
+
+#include \<microkit.h\>
+
+#if defined(BOARD\_qemu\_virt\_riscv64)
+
+typedef uint8\_t uart\_reg\_t;
+
+#elif defined(BOARD\_ariane)
+
+typedef uint32\_t uart\_reg\_t;
+
 #else
+
 #error "Unsupported board for the serial driver"
+
 #endif
+
 // This variable will have the address of the UART device
-uintptr_t uart_base_vaddr;
 
-/* QEMU RISC-V virt emulates a 16550 compatible UART. */
-#define BIT(n) (1ul<<(n))
+uintptr\_t uart\_base\_vaddr;
 
-#define UART_IER_ERBFI   BIT(0)   /* Enable Received Data Available Interrupt */
-#define UART_IER_ETBEI   BIT(1)   /* Enable Transmitter Holding Register Empty Interrupt */
-#define UART_IER_ELSI    BIT(2)   /* Enable Receiver Line Status Interrupt */
-#define UART_IER_EDSSI   BIT(3)   /* Enable MODEM Status Interrupt */
+/\* QEMU RISC-V virt emulates a 16550 compatible UART. \*/
 
-#define UART_FCR_ENABLE_FIFOS   BIT(0)
-#define UART_FCR_RESET_RX_FIFO  BIT(1)
-#define UART_FCR_RESET_TX_FIFO  BIT(2)
-#define UART_FCR_TRIGGER_1      (0u << 6)
-#define UART_FCR_TRIGGER_4      (1u << 6)
-#define UART_FCR_TRIGGER_8      (2u << 6)
-#define UART_FCR_TRIGGER_14     (3u << 6)
+#define BIT(n) (1ul\<\<(n))
 
-#define UART_LCR_DLAB    BIT(7)   /* Divisor Latch Access */
+#define UART\_IER\_ERBFI   BIT(0)   /\* Enable Received Data Available Interrupt \*/
 
-#define UART_LSR_DR      BIT(0)   /* Data Ready */
-#define UART_LSR_THRE    BIT(5)   /* Transmitter Holding Register Empty */
+#define UART\_IER\_ETBEI   BIT(1)   /\* Enable Transmitter Holding Register Empty Interrupt \*/
+
+#define UART\_IER\_ELSI    BIT(2)   /\* Enable Receiver Line Status Interrupt \*/
+
+#define UART\_IER\_EDSSI   BIT(3)   /\* Enable MODEM Status Interrupt \*/
+
+#define UART\_FCR\_ENABLE\_FIFOS   BIT(0)
+
+#define UART\_FCR\_RESET\_RX\_FIFO  BIT(1)
+
+#define UART\_FCR\_RESET\_TX\_FIFO  BIT(2)
+
+#define UART\_FCR\_TRIGGER\_1      (0u \<\< 6)
+
+#define UART\_FCR\_TRIGGER\_4      (1u \<\< 6)
+
+#define UART\_FCR\_TRIGGER\_8      (2u \<\< 6)
+
+#define UART\_FCR\_TRIGGER\_14     (3u \<\< 6)
+
+#define UART\_LCR\_DLAB    BIT(7)   /\* Divisor Latch Access \*/
+
+#define UART\_LSR\_DR      BIT(0)   /\* Data Ready \*/
+
+#define UART\_LSR\_THRE    BIT(5)   /\* Transmitter Holding Register Empty \*/
 
 typedef volatile struct {
-    uart_reg_t rbr_dll_thr; /* 0x00 Receiver Buffer Register (Read Only)
-                             *   Divisor Latch (LSB)
-                             *   Transmitter Holding Register (Write Only)
-                             */
-    uart_reg_t dlm_ier;     /* 0x04 Divisor Latch (MSB)
-                             *   Interrupt Enable Register
-                             */
-    uart_reg_t iir_fcr;     /* 0x08 Interrupt Identification Register (Read Only)
-                             *   FIFO Control Register (Write Only)
-                             */
-    uart_reg_t lcr;         /* 0xC Line Control Register */
-    uart_reg_t mcr;         /* 0x10 MODEM Control Register */
-    uart_reg_t lsr;         /* 0x14 Line Status Register */
-    uart_reg_t msr;         /* 0x18 MODEM Status Register */
-} uart_regs_t;
 
-#define REG_PTR(base, offset) ((volatile uint32_t *)((base) + (offset)))
-/*
- *******************************************************************************
- * UART access primitives
- *******************************************************************************
- */
+uart\_reg\_t rbr\_dll\_thr; /\* 0x00 Receiver Buffer Register (Read Only)
 
-static int internal_uart_is_tx_empty(uart_regs_t *regs)
+\*   Divisor Latch (LSB)
+
+\*   Transmitter Holding Register (Write Only)
+
+\*/
+
+uart\_reg\_t dlm\_ier;     /\* 0x04 Divisor Latch (MSB)
+
+\*   Interrupt Enable Register
+
+\*/
+
+uart\_reg\_t iir\_fcr;     /\* 0x08 Interrupt Identification Register (Read Only)
+
+\*   FIFO Control Register (Write Only)
+
+\*/
+
+uart\_reg\_t lcr;         /\* 0xC Line Control Register \*/
+
+uart\_reg\_t mcr;         /\* 0x10 MODEM Control Register \*/
+
+uart\_reg\_t lsr;         /\* 0x14 Line Status Register \*/
+
+uart\_reg\_t msr;         /\* 0x18 MODEM Status Register \*/
+
+} uart\_regs\_t;
+
+#define REG\_PTR(base, offset) ((volatile uint32\_t \*)((base) + (offset)))
+
+/\*
+
+\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
+
+\* UART access primitives
+
+\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
+
+\*/
+
+static int internal\_uart\_is\_tx\_empty(uart\_regs\_t \*regs)
+
 {
-    /* The THRE bit is set when the FIFO is fully empty. On real hardware, there
-     * seems no way to detect if the FIFO is partially empty only, so we can't
-     * implement a "tx_ready" check. Since QEMU does not emulate a FIFO, this
-     * does not really matter.
-     */
-    return (0 != (regs->lsr & UART_LSR_THRE));
+
+/\* The THRE bit is set when the FIFO is fully empty. On real hardware, there
+
+\* seems no way to detect if the FIFO is partially empty only, so we can't
+
+\* implement a "tx\_ready" check. Since QEMU does not emulate a FIFO, this
+
+\* does not really matter.
+
+\*/
+
+return (0 != (regs-\>lsr & UART\_LSR\_THRE));
+
 }
 
-static void internal_uart_tx_byte(uart_regs_t *regs, uint8_t byte)
+static void internal\_uart\_tx\_byte(uart\_regs\_t \*regs, uint8\_t byte)
+
 {
-    /* Caller has to ensure TX FIFO is ready */
-    regs->rbr_dll_thr = byte;
+
+/\* Caller has to ensure TX FIFO is ready \*/
+
+regs-\>rbr\_dll\_thr = byte;
+
 }
 
-static int internal_uart_is_rx_empty(uart_regs_t *regs)
+static int internal\_uart\_is\_rx\_empty(uart\_regs\_t \*regs)
+
 {
-    return (0 == (regs->lsr & UART_LSR_DR));
+
+return (0 == (regs-\>lsr & UART\_LSR\_DR));
+
 }
 
+static int internal\_uart\_rx\_byte(uart\_regs\_t \*regs)
 
-static int internal_uart_rx_byte(uart_regs_t *regs)
 {
-    /* Caller has to ensure RX FIFO has data */
-    return regs->rbr_dll_thr;
+
+/\* Caller has to ensure RX FIFO has data \*/
+
+return regs-\>rbr\_dll\_thr;
+
 }
 
-void uart_init() {
-    uart_regs_t *regs = (uart_regs_t *) uart_base_vaddr;
-    regs->dlm_ier = 0; // disable interrupts
+void uart\_init() {
 
-    /* Baudrates and serial line parameters are not emulated by QEMU, so the
-     * divisor is just a dummy.
-     */
-    uint16_t clk_divisor = 1; /* dummy, would be for 115200 baud */
-    regs->lcr = UART_LCR_DLAB; /* baud rate divisor setup */
-    regs->dlm_ier = (clk_divisor >> 8) & 0xFF;
-    regs->rbr_dll_thr = clk_divisor & 0xFF;
-    regs->lcr = 0x03; /* set 8N1, clear DLAB to end baud rate divisor setup */
+uart\_regs\_t \*regs = (uart\_regs\_t \*) uart\_base\_vaddr;
 
-    /* enable and reset FIFOs, interrupt for each byte */
-    regs->iir_fcr = UART_FCR_ENABLE_FIFOS
-                    | UART_FCR_RESET_RX_FIFO
-                    | UART_FCR_RESET_TX_FIFO
-                    | UART_FCR_TRIGGER_1;
+regs-\>dlm\_ier = 0; // disable interrupts
 
-    /* enable RX interrupts */
-    regs->dlm_ier = UART_IER_ERBFI;
+/\* Baudrates and serial line parameters are not emulated by QEMU, so the
+
+\* divisor is just a dummy.
+
+\*/
+
+uint16\_t clk\_divisor = 1; /\* dummy, would be for 115200 baud \*/
+
+regs-\>lcr = UART\_LCR\_DLAB; /\* baud rate divisor setup \*/
+
+regs-\>dlm\_ier = (clk\_divisor \>\> 8) & 0xFF;
+
+regs-\>rbr\_dll\_thr = clk\_divisor & 0xFF;
+
+regs-\>lcr = 0x03; /\* set 8N1, clear DLAB to end baud rate divisor setup \*/
+
+/\* enable and reset FIFOs, interrupt for each byte \*/
+
+regs-\>iir\_fcr = UART\_FCR\_ENABLE\_FIFOS
+
+| UART\_FCR\_RESET\_RX\_FIFO
+
+| UART\_FCR\_RESET\_TX\_FIFO
+
+| UART\_FCR\_TRIGGER\_1;
+
+/\* enable RX interrupts \*/
+
+regs-\>dlm\_ier = UART\_IER\_ERBFI;
+
 }
 
-void uart_put_char(int c) {
-    uart_regs_t *regs = (uart_regs_t *) uart_base_vaddr;
+void uart\_put\_char(int c) {
 
-    /* There is no way to check for "TX ready", the only thing we have is a
-     * check for "TX FIFO empty". This is not optimal, as we might wait here
-     * even if there is space in the FIFO. Seems the 16550 was built based on
-     * the idea that software keeps track of the FIFO usage. A driver would
-     * know how much space is left in the FIFO, so it can write new data
-     * either immediately or buffer it. If the FIFO empty interrupt arrives,
-     * data can be written from the buffer to fill the FIFO.
-     * However, since QEMU does not emulate a FIFO, we can just implement a
-     * simple model here and block - expecting to never block practically.
-     */
-    while (!internal_uart_is_tx_empty(regs)) {
-        /* busy waiting loop */
-    }
+uart\_regs\_t \*regs = (uart\_regs\_t \*) uart\_base\_vaddr;
 
-    /* Extract the byte to send, drop any flags. */
-    uint8_t byte = (uint8_t)c;
+/\* There is no way to check for "TX ready", the only thing we have is a
 
-    internal_uart_tx_byte(regs, byte);
+\* check for "TX FIFO empty". This is not optimal, as we might wait here
+
+\* even if there is space in the FIFO. Seems the 16550 was built based on
+
+\* the idea that software keeps track of the FIFO usage. A driver would
+
+\* know how much space is left in the FIFO, so it can write new data
+
+\* either immediately or buffer it. If the FIFO empty interrupt arrives,
+
+\* data can be written from the buffer to fill the FIFO.
+
+\* However, since QEMU does not emulate a FIFO, we can just implement a
+
+\* simple model here and block - expecting to never block practically.
+
+\*/
+
+while (!internal\_uart\_is\_tx\_empty(regs)) {
+
+/\* busy waiting loop \*/
+
 }
 
-void uart_handle_irq() {
+/\* Extract the byte to send, drop any flags. \*/
+
+uint8\_t byte = (uint8\_t)c;
+
+internal\_uart\_tx\_byte(regs, byte);
+
 }
 
-void uart_put_str(char *str) {
-    while (*str) {
-        uart_put_char(*str);
-        str++;
-    }
+void uart\_handle\_irq() {
+
 }
 
-int uart_get_char() {
-    uart_regs_t *regs = (uart_regs_t *) uart_base_vaddr;
+void uart\_put\_str(char \*str) {
 
-    /* if UART is empty return an error */
-    while(internal_uart_is_rx_empty(regs));
+while (\*str) {
 
-    return internal_uart_rx_byte(regs) & 0xFF;
+uart\_put\_char(\*str);
+
+str++;
+
+}
+
+}
+
+int uart\_get\_char() {
+
+uart\_regs\_t \*regs = (uart\_regs\_t \*) uart\_base\_vaddr;
+
+/\* if UART is empty return an error \*/
+
+while(internal\_uart\_is\_rx\_empty(regs));
+
+return internal\_uart\_rx\_byte(regs) & 0xFF;
+
 }
 
 void init(void) {
-    // First we initialise the UART device, which will write to the
-    // device's hardware registers. Which means we need access to
-    // the UART device.
-    uart_init();
-    // After initialising the UART, print a message to the terminal
-    // saying that the serial server has started.
-    uart_put_str("SERIAL SERVER: starting\n");
+
+// First we initialise the UART device, which will write to the
+
+// device's hardware registers. Which means we need access to
+
+// the UART device.
+
+uart\_init();
+
+// After initialising the UART, print a message to the terminal
+
+// saying that the serial server has started.
+
+uart\_put\_str("SERIAL SERVER: starting\\n");
+
 }
 
-#define UART_IRQ_CH 0
-#define CLIENT_CH 2
+#define UART\_IRQ\_CH 0
 
-uintptr_t serial_to_client_vaddr;
-uintptr_t client_to_serial_vaddr;
+#define CLIENT\_CH 2
 
-microkit_msginfo protected(microkit_channel channel, microkit_msginfo msginfo)
+uintptr\_t serial\_to\_client\_vaddr;
+
+uintptr\_t client\_to\_serial\_vaddr;
+
+microkit\_msginfo protected(microkit\_channel channel, microkit\_msginfo msginfo)
+
 {
-    switch (channel) {
-        case CLIENT_CH: {
-            ((char *)serial_to_client_vaddr)[0] = (char) uart_get_char();
-            return microkit_msginfo_new(0, 1);
-            break;
-        }
-    }
-    return microkit_msginfo_new(0, 0);
+
+switch (channel) {
+
+case CLIENT\_CH: {
+
+((char \*)serial\_to\_client\_vaddr)\[0\] = (char) uart\_get\_char();
+
+return microkit\_msginfo\_new(0, 1);
+
+break;
+
 }
 
-void notified(microkit_channel channel) {
-    switch (channel) {
-        case CLIENT_CH:
-            uart_put_str((char *)client_to_serial_vaddr);
-            break;
-    }
 }
-~~~
 
-**buffer-overflow-control-flow.system**
+return microkit\_msginfo\_new(0, 0);
 
-~~~XML
-<?xml version="1.0" encoding="UTF-8"?>
-<system>
-    <!-- Define your system here -->
+}
 
-    <memory_region name="uart" size="0x1_000" phys_addr="0x10000000"/>
-    <memory_region name="client_to_serial" size="0x1000" />
-    <memory_region name="serial_to_client" size="0x1000" />
-    <memory_region name="mr0" size="0x100000" />
+void notified(microkit\_channel channel) {
 
-    <protection_domain name="serial_server" priority="254">
-        <program_image path="serial_server.elf" />
-        <map mr="uart" vaddr="0x2000000" perms="rw" cached="false" setvar_vaddr="uart_base_vaddr"/>
-        <map mr="serial_to_client" vaddr="0x4000000" perms="wr" setvar_vaddr="serial_to_client_vaddr"/>
-        <map mr="client_to_serial" vaddr="0x4001000" perms="r" setvar_vaddr="client_to_serial_vaddr"/>
-    </protection_domain>
+switch (channel) {
 
-    <protection_domain name="buffer-overflow-control-flow" priority="253">
-        <program_image path="buffer-overflow-control-flow.elf" />
-        <map mr="serial_to_client" vaddr="0x4000000" perms="r" setvar_vaddr="serial_to_client_vaddr"/>
-        <map mr="client_to_serial" vaddr="0x4001000" perms="rw" setvar_vaddr="client_to_serial_vaddr"/>
-        <map mr="mr0" vaddr="0x4002000" perms="rw" setvar_vaddr="btpmem" setvar_size="btpmem_size"/>
-    </protection_domain>
+case CLIENT\_CH:
 
-    <channel>
-        <end pd="buffer-overflow-control-flow" id="1" pp="true" />
-        <end pd="serial_server" id="2" />
-    </channel>
-</system>
-~~~
+uart\_put\_str((char \*)client\_to\_serial\_vaddr);
 
-**main-asserts.inc**
+break;
 
-~~~C
-/*
- * SPDX-License-Identifier: BSD-2-Clause-DARPA-SSITH-ECATS-HR0011-18-C-0016
- * Copyright (c) 2020 Jessica Clarke
- */
-#include <sel4/assert.h>
-#include <stdint.h>
-#ifdef __CHERI_PURE_CAPABILITY__
-#include <cheriintrin.h>
+}
+
+}
+
+buffer-overflow-control-flow.system
+
+\<?xml version="1.0" encoding="UTF-8"?\>
+
+\<system\>
+
+\<!-- Define your system here --\>
+
+\<memory\_region name="uart" size="0x1\_000" phys\_addr="0x10000000"/\>
+
+\<memory\_region name="client\_to\_serial" size="0x1000" /\>
+
+\<memory\_region name="serial\_to\_client" size="0x1000" /\>
+
+\<memory\_region name="mr0" size="0x100000" /\>
+
+\<protection\_domain name="serial\_server" priority="254"\>
+
+\<program\_image path="serial\_server.elf" /\>
+
+\<map mr="uart" vaddr="0x2000000" perms="rw" cached="false" setvar\_vaddr="uart\_base\_vaddr"/\>
+
+\<map mr="serial\_to\_client" vaddr="0x4000000" perms="wr" setvar\_vaddr="serial\_to\_client\_vaddr"/\>
+
+\<map mr="client\_to\_serial" vaddr="0x4001000" perms="r" setvar\_vaddr="client\_to\_serial\_vaddr"/\>
+
+\</protection\_domain\>
+
+\<protection\_domain name="buffer-overflow-control-flow" priority="253"\>
+
+\<program\_image path="buffer-overflow-control-flow.elf" /\>
+
+\<map mr="serial\_to\_client" vaddr="0x4000000" perms="r" setvar\_vaddr="serial\_to\_client\_vaddr"/\>
+
+\<map mr="client\_to\_serial" vaddr="0x4001000" perms="rw" setvar\_vaddr="client\_to\_serial\_vaddr"/\>
+
+\<map mr="mr0" vaddr="0x4002000" perms="rw" setvar\_vaddr="btpmem" setvar\_size="btpmem\_size"/\>
+
+\</protection\_domain\>
+
+\<channel\>
+
+\<end pd="buffer-overflow-control-flow" id="1" pp="true" /\>
+
+\<end pd="serial\_server" id="2" /\>
+
+\</channel\>
+
+\</system\>
+
+main-asserts.inc
+
+/\*
+
+\* SPDX-License-Identifier: BSD-2-Clause-DARPA-SSITH-ECATS-HR0011-18-C-0016
+
+\* Copyright (c) 2020 Jessica Clarke
+
+\*/
+
+#include \<sel4/assert.h\>
+
+#include \<stdint.h\>
+
+#ifdef \_\_CHERI\_PURE\_CAPABILITY\_\_
+
+#include \<cheriintrin.h\>
+
 #endif
 
 static void
-main_asserts(void *buf, void *fptr)
+
+main\_asserts(void \*buf, void \*fptr)
+
 {
-	uintptr_t ubuf = (uintptr_t)buf;
-	uintptr_t ufptr = (uintptr_t)fptr;
-#ifdef __CHERI_PURE_CAPABILITY__
-	ptraddr_t ubuf_top;
+
+uintptr\_t ubuf = (uintptr\_t)buf;
+
+uintptr\_t ufptr = (uintptr\_t)fptr;
+
+#ifdef \_\_CHERI\_PURE\_CAPABILITY\_\_
+
+ptraddr\_t ubuf\_top;
+
 #endif
 
-#ifdef __CHERI_PURE_CAPABILITY__
-	ubuf_top = cheri_base_get(ubuf) + cheri_length_get(ubuf);
+#ifdef \_\_CHERI\_PURE\_CAPABILITY\_\_
+
+ubuf\_top = cheri\_base\_get(ubuf) + cheri\_length\_get(ubuf);
+
 #endif
 
-#if defined(__CHERI_PURE_CAPABILITY__) && !defined(CHERI_NO_ALIGN_PAD)
-	/*
-	 * For the normal pure-capability case, `buf`'s allocation should be
-	 * adequately padded to ensure precise capability bounds and `fptr`
-	 * should be adjacent.
-	 */
-	seL4_Assert(ubuf_top == ufptr);
+#if defined(\_\_CHERI\_PURE\_CAPABILITY\_\_) && !defined(CHERI\_NO\_ALIGN\_PAD)
+
+/\*
+
+\* For the normal pure-capability case, \`buf\`'s allocation should be
+
+\* adequately padded to ensure precise capability bounds and \`fptr\`
+
+\* should be adjacent.
+
+\*/
+
+seL4\_Assert(ubuf\_top == ufptr);
+
 #else
-	/*
-	 * Otherwise `fptr` should be 8 bytes (not 0 due to malloc's alignment
-	 * requirements) after the end of `buf`.
-	 */
-	seL4_Assert(ubuf + 25008 == ufptr);
-#ifdef __CHERI_PURE_CAPABILITY__
-	/*
-	 * For pure-capability code this should result in the bounds of the
-	 * large `buf` allocation including all of `fptr`.
-	 */
-	seL4_Assert(ubuf_top >= ufptr + sizeof(void *));
+
+/\*
+
+\* Otherwise \`fptr\` should be 8 bytes (not 0 due to malloc's alignment
+
+\* requirements) after the end of \`buf\`.
+
+\*/
+
+seL4\_Assert(ubuf + 25008 == ufptr);
+
+#ifdef \_\_CHERI\_PURE\_CAPABILITY\_\_
+
+/\*
+
+\* For pure-capability code this should result in the bounds of the
+
+\* large \`buf\` allocation including all of \`fptr\`.
+
+\*/
+
+seL4\_Assert(ubuf\_top \>= ufptr + sizeof(void \*));
+
 #endif
+
 #endif
+
 }
-~~~

@@ -1,7 +1,11 @@
 ---
 title: Organisations
 permalink: /organisations/
-listing: organisations
+layout: list
+listing:
+  collection: organisations
+  status: null
+  role: null
 ---
 
 # Organisations

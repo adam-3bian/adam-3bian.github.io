@@ -1,41 +1,23 @@
 ---
 title: DiscribeHub+
-member: true
+image_url: /assets/organisations/discribehub/70266a6e4d93-logo.jpg
+website_url: https://www.discribehub.org/
+membership_tier: community
+is_founding_member: null
+social:
+  linkedin_url: null
+  mastodon_url: null
+  github_url: null
 ---
 
-1. Alliance
-2. Members
-3. DiscribeHub+
-{: .source-breadcrumbs }
-
 # DiscribeHub+
-{: id="page-hero-title" .page-hero-title }
 
 Details to follow.
-{: .page-hero-summary }
-
-![DiscribeHub+](/assets/organisations/discribehub/70266a6e4d93-logo.jpg){: .image-left }
-{: .entity-media .entity-media--logo }
-
-Status
-: Member
-
-Membership
-: Community Member
-
-Website
-: [Visit member website](https://www.discribehub.org/)
-{: .entity-facts }
 
 ## Description
-{: id="description" }
 
 Details to follow.
 
 ## CHERI Activities
-{: id="cheri-activities" }
 
 Details to follow.
-
-[Back to all members](/alliance/leadership/members/)
-{: .entity-back }

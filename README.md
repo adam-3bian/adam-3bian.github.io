@@ -1,37 +1,44 @@
-# CHERI Alliance website
+# CHERI Content Viewer
 
-**For coding agents:** Begin at [AGENTS.md](AGENTS.md). The single complete website task is [TRANSFORMATION_PROMPT.md](TRANSFORMATION_PROMPT.md); [docs/THEME.md](docs/THEME.md) and [docs/AUTHORING.md](docs/AUTHORING.md) retain the ZIP design/methodology and real-content schema, and [docs/VALIDATION.md](docs/VALIDATION.md) defines verification. Historical master prompts are retired pointers, not active instructions.
+A minimal, reusable Jekyll site for reviewing the 481 migrated content records. The latest deduplicated Markdown files are included unchanged, with all specification fields and 341 original images.
 
-Complete static website using the uploaded simplified-authoring design and source-backed content from `cheri-alliance.github.io` and `cheri-alliance.org`. It includes responsive navigation and page/profile layouts, linked directories, news and dated event lists, local fonts, canonical URLs, sitemap, compatibility redirects and a branded 404. Contact and newsletter forms are visible with submission disabled, as requested.
+## Run locally
 
-Deployment now uses the built-in GitHub Pages Jekyll build from **main /(root)**; no repository-owned GitHub Actions workflow is required. An administrator must select **Settings → Pages → Deploy from a branch → main /(root)**. The canonical user-site address is **https://adam-3bian.github.io/**. See [deployment instructions](docs/DEPLOYMENT.md).
+Install Ruby 3.2 or later and Bundler, then run these commands in this directory:
 
-Editorial content is **YAML front matter and Kramdown Markdown only**. Provenance stays in reports; filenames and website URLs omit source-host prefixes. **477 editorial files** retain complete original bodies, paper catalogue entries, minimal source-named records and the working site's indexes/hubs:
+```sh
+bundle install
+bundle exec ruby scripts/check_content.rb
+bundle exec jekyll serve
+```
 
-| Content | Folder | Files |
-| --- | --- | ---: |
-| Organisations | [_organisations/](_organisations/) | 69 |
-| People | [_people/](_people/) | 112 |
-| Events | [_events/](_events/) | 10 |
-| Paper catalogue entries | [_papers/](_papers/) | 15 |
-| Hardware | [_hardware/](_hardware/) | 6 |
-| Software | [_software/](_software/) | 10 |
-| News | [_news/](_news/) | 56 |
-| Working groups | [_groups/](_groups/) | 16 |
-| Guides | [_guides/](_guides/) | 10 |
-| Policies | [_policies/](_policies/) | 11 |
-| Other pages, hubs, indexes and retained source versions | [pages/](pages/) | 162 |
+Open http://localhost:4000. The content checks page is at http://localhost:4000/checks/.
 
-Use `member: true` for the 52 member organisations and `speaker: true` for the 60 source-listed speakers. Link records with `organization`, `speakers` and `authors`; related events, publications, news and people are generated automatically. The only `_data` file is [governing-board.yml](_data/governing-board.yml), containing nine people references. See [the authoring guide](docs/AUTHORING.md) for examples.
+## What to check
 
-The site retains the uploaded starter layouts, includes, Sass modules and scripts. Native Liquid/Jekyll templates now replace custom Ruby generators while preserving existing content records; [theme integration notes](docs/THEME.md) document the adaptation.
+The source menu and the ten collection links let you reach the content. Each detail page shows its title, primary image, populated metadata, article body, linked records, and an expandable front matter inspector. Unused null and empty values remain visible in the inspector. Primary images render once; body illustrations stay with the content.
 
-The menu follows the primary site's five sections and published groups, adding hardware/software/paper indexes and original-site Morello return information. Original images and downloads are in [assets/](assets/). No template sample biographies or placeholder content were imported.
+The content checks page lists every page and record, including retained source versions and aliases. Its small filter can find a title, type, or source file. Missing optional images or news dates are identified as unprovided values. Actual errors include incomplete schemas, invalid dates, unknown relationship references, broken navigation targets, and missing image files.
 
-Nine published editions replace static directory lists and form placeholders or correct explicit source mistakes; their complete original bodies remain as separate Markdown source versions. [The editorial change record](reports/website-editions.json) and website validation keep those changes distinct from source-body fidelity checks.
+News is newest first, with undated records after dated ones. Events are earliest first; upcoming and past lists use the final event day in the Europe/London timezone. People, organisations, and other collections sort alphabetically. The speaker list uses is_speaker, and the member list uses a confirmed membership_tier. Alternate source records remain accessible from the audit while canonical lists omit them.
 
-Earlier custom-build validation evidence for 477 Markdown files and site functions is retained in reports. The native GitHub Pages conversion must be verified against a successful GitHub-managed Pages build and representative rendered pages; historical checks do not prove a new native build passed.
+Authors, speakers, affiliations, lead and author roles, and generic related fields produce clickable forward and reverse relationships. Reverse links are derived by the check script; do not edit _data/relationships.yml. After changing content or front matter, run the check script again before building to refresh the audit and reverse links.
 
-The website works with the converted content. The broader migration remains partial: original WordPress archives and other retained pages remain unconverted, and external full-paper PDFs remain unacquired. Paper records contain complete source catalogue entries and original publication links. Earlier live checks passed for 371 distinct source pages; individual timestamps remain in the evidence reports.
+The five retained alias pages show their destination links. They are reviewable pages; this viewer does not automatically redirect them. Contact and subscription pages are content examples; no form submits data.
 
-See [PROGRESS.md](PROGRESS.md) for measured coverage and exceptions, [README_MIGRATION.md](README_MIGRATION.md) for build/check commands, and [MIGRATION_SPEC.md](MIGRATION_SPEC.md) for editorial requirements.
+## Build and GitHub Pages
+
+```sh
+bundle exec ruby scripts/check_content.rb
+bundle exec jekyll build
+```
+
+Jekyll writes the static site into _site. The site uses Jekyll 3.10, standard Liquid, and Kramdown. One small parser plugin keeps text containing a pipe character as a paragraph; the source Markdown stays unchanged. Set url and baseurl in _config.yml for your repository. Internal links and images use relative_url, including body illustrations, so repository subpaths work. For GitHub Pages, build with GitHub Actions and publish _site; the built-in Pages safe-mode build does not load custom plugins.
+
+For a hosted static build, use bundle exec jekyll build --destination dist. The .openai directory only identifies the private hosted preview; it is omitted from the downloadable project ZIP.
+
+## Files
+
+The content stays under pages and the ten separate collection folders. One document layout, one card component, and one listing include render all types; the people, news, and events layout files only select their collection. The schemas come from the supplied v1.4 document. Presentation lives in assets/viewer.css and assets/viewer.js. The Content checks page shows missing optional values and the latest data audit; reports also include verification results for the native build, rendered links, and a repository subpath. Browser visual testing was unavailable in the build environment.
+
+The source snapshot is adam-3bian/adam-3bian.github.io at commit 7f3839872c8fea6a709b99d241880de0f3915c42. Original image bytes are bundled. The check script validates data and image paths; it does not claim that external websites or downloads are available.

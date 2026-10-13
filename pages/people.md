@@ -1,7 +1,11 @@
 ---
 title: People
 permalink: /people/
-listing: people
+layout: people
+listing:
+  collection: null
+  status: null
+  role: null
 ---
 
 # People

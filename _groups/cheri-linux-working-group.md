@@ -1,51 +1,27 @@
 ---
 title: 🐧 CHERI Linux WG
+image_url: null
+website_url: null
+repository_urls: []
+lead: null
+related:
+  organisations: []
+  hardware: []
+  software: []
 ---
 
-1. Alliance
-2. About &amp; Governance
-3. 🐧 CHERI Linux WG
-{: .source-breadcrumbs }
-
 # 🐧 CHERI Linux WG
-{: id="page-hero-title" .page-hero-title }
 
 Coordinates priorities, cross-architecture requirements, implementation experience, and contribution routes for CHERI support in Linux.
-{: .page-hero-summary }
 
 The CHERI Linux Working Group defines and prioritises a roadmap for the porting of Linux to CHERI, while stimulating open-source communities to work on these element.
 
-The technical [CHERI Linux page](/software/cheri-linux/) explains the wider software stack and current development.
+The technical CHERI Linux page explains the wider software stack and current development.
 
-Group type
-: Technical
+Group type: Technical
 
-Areas of collaboration
-: - Linux roadmap and priorities
-  - Cross-architecture interfaces
-  - Upstream contribution
-{: .entity-facts }
+Areas of collaboration: Linux roadmap and priorities
 
-[Enquire about this group](/alliance/membership/contact/)
-{: .entity-primary-link }
+Cross-architecture interfaces
 
-[Back to all working groups](/alliance/leadership/working-groups/)
-{: .entity-back }
-
-## Where next
-{: .where-next-title }
-
-### [CHERI QEMU](/groups/cheri-qemu/)
-{: .where-next-card-title }
-
-
-
-
-
-[Explore the reference emulation work that supports CHERI software development and testing.](/groups/cheri-qemu/)
-{: .where-next-summary }
-
-
-
-[Continue](/groups/cheri-qemu/)
-{: .source-card-label }
+Upstream contribution

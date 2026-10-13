@@ -1,7 +1,11 @@
 ---
 title: Hardware
 permalink: /hardware/
-listing: hardware
+layout: list
+listing:
+  collection: hardware
+  status: null
+  role: null
 ---
 
 # Hardware

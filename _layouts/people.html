@@ -1,7 +1,5 @@
 ---
-layout: page
+layout: document
 ---
-{% assign people = site.people | where_exp: 'item', 'item.redirect_to == nil' | sort_natural: 'title' %}
-{% include listing.html items=people label=page.title compact=true columns=page.listing.columns %}
-
 {{ content }}
+{% include listing.html collection='people' %}

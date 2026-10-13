@@ -1,40 +1,54 @@
 ---
 title: Defence & Aerospace
 permalink: /adopt/use-cases/defence-and-aerospace/
+summary: CHERI can reinforce least authority in mission systems that combine established software, mixed suppliers,
+  long lifecycles, and demanding assurance.
+image_url: null
+updated_date: null
+parent: /adopt/
+next_page_url: /adopt/use-cases/safety-critical-systems/
+related:
+  pages:
+  - /adopt/use-cases/automotive/
+  - /adopt/use-cases/cloud-and-data-centre/
+  - /adopt/business-case/the-business-case/
+  people: []
+  organisations: []
+  groups: []
+  news: []
+  events: []
+  papers: []
+  hardware: []
+  software: []
+  guides: []
+  policies: []
 ---
 
-1. Adopt
-2. Use Cases
-3. Defence &amp; Aerospace
-{: .source-breadcrumbs }
-
-# Defence &amp; Aerospace
-{: id="page-hero-title" .page-hero-title }
-
-CHERI can reinforce least authority in mission systems that combine established software, mixed suppliers, long lifecycles, and demanding assurance.
-{: .page-hero-summary }
+# Defence & Aerospace
 
 Defence and aerospace systems often bring together software from different decades, suppliers, and assurance levels. They may operate with intermittent connectivity, strict timing and power limits, long hardware lifecycles, and active attempts to compromise them.
 
 In this setting, one exposed component can sit close to mission data, communications, sensors, or control functions. A memory vulnerability in a message parser, driver, or supplier library can therefore create authority far beyond the component’s intended role.
 
 ## Why CHERI can fit mission systems
-{: id="why-cheri-can-fit-mission-systems" }
 
 CHERI gives the processor a direct role in enforcing least authority. Capabilities limit memory references by range and permission. Compartments can receive access to selected memory, devices, and callable services while remaining unable to reach the rest of the platform.
 
 This is relevant to mission systems for several reasons:
 
-- established C and C++ code may remain necessary for many years;
-- software components can come from organisations with different trust relationships;
-- full replacement may be constrained by qualification, hardware, or deployment cycles;
-- exposed communications code may share a processor with sensitive functions;
-- smaller platforms may not support heavyweight isolation for every component.
+established C and C++ code may remain necessary for many years;
+
+software components can come from organisations with different trust relationships;
+
+full replacement may be constrained by qualification, hardware, or deployment cycles;
+
+exposed communications code may share a processor with sensitive functions;
+
+smaller platforms may not support heavyweight isolation for every component.
 
 CHERI can strengthen both existing and new architectures. A legacy parser can gain bounded memory access, while a redesigned platform can use compartments to make authority between components explicit from the outset.
 
 ## Prevention and containment
-{: id="prevention-and-containment" }
 
 The first benefit is prevention. The processor can stop many out-of-bounds accesses, unauthorised writes, and attempts to execute data when the relevant capability lacks permission.
 
@@ -43,7 +57,6 @@ The second is containment. A component compromised through a logic flaw or anoth
 For a mission system, the difference between compromise of one parser and compromise of mission state can be more important than the original vulnerability.
 
 ## A contribution to assurance
-{: id="a-contribution-to-assurance" }
 
 CHERI supports precise claims. A system can describe that a parser has access to particular buffers and services, or that one supplier component cannot access another component’s state. Those claims can be connected to the processor architecture, software configuration, and test evidence.
 
@@ -52,82 +65,7 @@ This precision is valuable in systems where broad claims such as “secure” or
 CHERI does not replace system safety, cryptography, cross-domain controls, secure boot, emissions security, supply-chain assurance, or operational procedures. Export-control and information-handling obligations also remain specific to the product, organisations, information, and jurisdictions involved.
 
 ## Where the fit is strongest
-{: id="where-the-fit-is-strongest" }
 
 The case is strongest where software is both exposed and close to mission assets, especially when that software cannot be rewritten or separated into a conventional process without unacceptable cost. Timing, power, recovery behaviour, update support, and platform availability remain important constraints.
 
 Within those constraints, CHERI offers a concrete architectural advantage: valuable native software can remain part of the mission system while the processor enforces a much narrower account of what each component is allowed to reach.
-
-## Where next
-{: .where-next-title }
-
-### [Safety-Critical Systems](/adopt/use-cases/safety-critical-systems/)
-{: .where-next-card-title }
-
-
-
-
-
-[Safety-critical systems show how bounded memory and explicit authority can contribute evidence within a wider safety and security case.](/adopt/use-cases/safety-critical-systems/)
-{: .where-next-summary }
-
-
-
-[Continue](/adopt/use-cases/safety-critical-systems/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Automotive](/adopt/use-cases/automotive/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Connected vehicles combine exposed software, long lifecycles, and components with very different levels of trust.](/adopt/use-cases/automotive/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/adopt/use-cases/automotive/)
-{: .source-card-label }
-
-
-
-
-
-### [Cloud &amp; Data Centre](/adopt/use-cases/cloud-and-data-centre/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Cloud infrastructure benefits from finer protection inside processes, containers, and virtual machines.](/adopt/use-cases/cloud-and-data-centre/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/adopt/use-cases/cloud-and-data-centre/)
-{: .source-card-label }
-
-
-
-
-
-### [The Business Case](/adopt/business-case/the-business-case/)
-{: .related-pages-item-title }
-
-
-
-
-
-[CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.](/adopt/business-case/the-business-case/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/adopt/business-case/the-business-case/)
-{: .source-card-label }

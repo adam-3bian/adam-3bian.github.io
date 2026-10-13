@@ -1,9 +1,0 @@
-{
-  "status": "pending-network-access",
-  "host": "www.cl.cam.ac.uk",
-  "operation": "read robots.txt before acquiring publication PDFs",
-  "observed_error": "HTTPS proxy returned 403 Forbidden",
-  "publication_pdf_requests": 0,
-  "content_retained": "Complete published source catalogue entries and original publication links",
-  "limitation": "External publication PDF bytes were not acquired; no full external-paper migration is claimed."
-}

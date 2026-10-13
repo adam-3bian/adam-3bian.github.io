@@ -1,45 +1,32 @@
 ---
 title: Subscribe to our quarterly newsletter
 permalink: /news-and-events/news-and-analysis/subscribe-newsletter/
+summary: Get news from the CHERI ecosystem every quarter.
+image_url: null
+updated_date: null
+parent: /news-and-events/
+next_page_url: null
+related:
+  pages:
+  - /news-and-events/news-and-analysis/latest-news/
+  people: []
+  organisations: []
+  groups: []
+  news: []
+  events: []
+  papers: []
+  hardware: []
+  software: []
+  guides: []
+  policies: []
 ---
-
-1. News &amp; Events
-2. News &amp; Analysis
-3. Subscribe to our quarterly newsletter
-{: .source-breadcrumbs }
 
 # Subscribe to our quarterly newsletter
-{: id="page-hero-title" .page-hero-title }
 
-Get news from the CHERI ecosystem every quarter.
-{: .page-hero-summary }
-
-The CHERI ecosystem is moving fast. Get the latest news, milestones, events, and opportunities delivered to your inbox **every quarter**.
-
----
+The CHERI ecosystem is moving fast. Get the latest news, milestones, events, and opportunities delivered to your inbox every quarter.
 
 The signup form below is a preview and does not subscribe you.
 
-[Subscribe through the published Alliance mailing list](https://cheri-alliance.kit.com/subscribe).
+Subscribe through the published Alliance mailing list.
 
----
-
-*Privacy: We value your privacy. Your email address will only be used for CHERI Alliance communications and will never be shared with third parties. Unsubscribe at any time.*
-
-## Related content
-{: .related-pages-title }
-
-### [Latest News](/news-and-events/news-and-analysis/latest-news/)
-{: .related-pages-item-title }
-
-
-
-
-
-[The latest CHERI Alliance and ecosystem announcements, presented with clear dates and sources.](/news-and-events/news-and-analysis/latest-news/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/news-and-events/news-and-analysis/latest-news/)
-{: .source-card-label }
+Privacy: We value your privacy. Your email address will only be used for CHERI Alliance communications and will never be shared with third parties. Unsubscribe at any time.

@@ -1,45 +1,8 @@
-{% comment %}
-  The starter's reusable card and media classes remain the only card design.
-  Use genuine source media: explicit thumbnail metadata or the first local
-  Markdown image in a source-backed article/profile. No sample images.
-{% endcomment %}
-<ul class="cards columns-{{ include.columns | default: 3 }}" aria-label="{{ include.label | escape }}">
-  {% for item in include.items %}
-    {% unless item.alternate or item.redirect_to or item.redirect %}
-      {% assign kind = include.kind | default: item.collection.label | default: 'pages' %}
-      {% assign thumbnail_url = item.thumbnail.src %}
-      {% assign thumbnail_alt = item.thumbnail.alt | default: item.title %}
-      {% assign thumbnail_fit = item.thumbnail.fit %}
-      {% unless thumbnail_url %}
-        {% assign image_fragments = item.content | split: '](/assets/' %}
-        {% if image_fragments.size > 1 %}
-          {% assign image_path = image_fragments[1] | split: ')' | first %}
-          {% assign thumbnail_url = '/assets/' | append: image_path %}
-          {% assign alt_parts = image_fragments[0] | split: '![' %}
-          {% assign thumbnail_alt = alt_parts | last | default: item.title %}
-        {% endif %}
-      {% endunless %}
-      {% if kind == 'organisations' and thumbnail_url %}{% assign thumbnail_fit = 'contain' %}{% endif %}
-      <li>
-        <a class="card" href="{{ item.url | relative_url | escape }}">
-          {% if thumbnail_url %}
-            <span class="card-media{% if kind == 'events' or kind == 'news' or kind == 'posts' %} card-media-landscape{% endif %}">
-              <img src="{{ thumbnail_url | relative_url | escape }}" alt="{{ thumbnail_alt | escape }}" class="card-image{% if thumbnail_fit == 'contain' %} image-contain{% endif %}{% if item.thumbnail.position == 'left' %} image-crop-left{% elsif item.thumbnail.position == 'right' %} image-crop-right{% endif %}" loading="lazy">
-            </span>
-          {% endif %}
-          {% if include.heading == 'h3' %}<h3>{{ item.title | escape }}</h3>{% else %}<h2>{{ item.title | escape }}</h2>{% endif %}
-          {% unless include.compact %}
-            {% if item.date %}
-              <span class="meta"><time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: '%-d %B %Y' }}</time></span>
-            {% elsif kind == 'organisations' and item.member %}
-              <span class="meta">Alliance member</span>
-            {% elsif kind == 'people' and item.speaker %}
-              <span class="meta">Speaker</span>
-            {% endif %}
-            <span class="card-action">{{ include.action | default: 'Read more' | escape }} &rarr;</span>
-          {% endunless %}
-        </a>
-      </li>
-    {% endunless %}
-  {% endfor %}
-</ul>
+{% assign list_collection = include.collection %}{% assign list_items = site[list_collection] | where_exp: 'record', 'record.alternate != true' %}
+{% assign preset = site.data.viewer.listing_presets[page.url] %}{% assign list_role = page.listing.role | default: preset.role %}{% assign list_status = page.listing.status | default: preset.status %}
+{% if list_role == 'speaker' %}{% assign list_items = list_items | where: 'is_speaker', true %}{% elsif list_role == 'member' %}{% assign list_items = list_items | where_exp: 'record', 'record.membership_tier != nil' %}{% endif %}
+{% if list_collection == 'events' and list_status %}{% assign eligible = '' | split: '' %}{% assign today_key = site.time | date: '%Y-%m-%d' %}{% for candidate in list_items %}{% assign last_date = candidate.end_datetime | default: candidate.end_date | default: candidate.start_datetime | default: candidate.start_date | slice: 0, 10 %}{% if last_date != '' %}{% if list_status == 'upcoming' and last_date >= today_key %}{% assign eligible = eligible | push: candidate %}{% elsif list_status == 'past' and last_date < today_key %}{% assign eligible = eligible | push: candidate %}{% endif %}{% endif %}{% endfor %}{% assign list_items = eligible %}{% endif %}
+{% if list_collection == 'news' %}{% assign dated_items = list_items | where_exp: 'record', 'record.published_date != nil' | sort: 'published_date' | reverse %}{% assign undated_items = list_items | where_exp: 'record', 'record.published_date == nil' | sort_natural: 'title' %}{% assign list_items = dated_items | concat: undated_items %}
+{% elsif list_collection == 'events' %}{% capture event_sort_rows %}{% for event_item in list_items %}{% assign event_key = event_item.start_datetime | default: event_item.start_date | default: '9999-12-31' %}{{ event_key }}~{{ event_item.url }}|{% endfor %}{% endcapture %}{% assign event_sort_rows = event_sort_rows | split: '|' | sort %}{% assign sorted_events = '' | split: '' %}{% for row in event_sort_rows %}{% assign event_url = row | split: '~' | last %}{% assign sorted_event = list_items | where: 'url', event_url | first %}{% if sorted_event %}{% assign sorted_events = sorted_events | push: sorted_event %}{% endif %}{% endfor %}{% assign list_items = sorted_events %}
+{% else %}{% assign list_items = list_items | sort_natural: 'title' %}{% endif %}
+<section class="listing" data-listing="{{ list_collection | escape }}" data-role="{{ list_role | escape }}" data-status="{{ list_status | escape }}"><div class="section-heading"><h2>{{ site.data.viewer.collections[list_collection].label | default: list_collection | capitalize }}</h2><p>{{ list_items.size }} records{% if list_role %} · {{ list_role | capitalize }}{% endif %}{% if list_status %} · {{ list_status | capitalize }}{% endif %}</p></div>{% if list_items.size > 0 %}{% include cards.html items=list_items %}{% else %}<p class="notice">No records match this listing.</p>{% endif %}</section>

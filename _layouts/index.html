@@ -1,12 +1,8 @@
 ---
-layout: page
+layout: document
 ---
-{% assign child_pages = site.html_pages | concat: site.documents | where_exp: 'item', 'item.redirect_to == nil' | where_exp: 'item', 'item.redirect == nil' | where_exp: 'item', 'item.collection != "redirects"' | where: 'parent', page.url | sort_natural: 'title' %}
-{% if child_pages.size > 0 %}
-<section class="index-list" aria-labelledby="index-pages">
-  <h2 id="index-pages">{{ page.listing.title | default: 'Explore this section' | escape }}</h2>
-  {% include listing.html items=child_pages label=page.title columns=page.listing.columns heading='h3' action='Explore' %}
-</section>
-{% endif %}
-
 {{ content }}
+{% if page.url == '/' %}
+<section class="collection-overview" aria-labelledby="viewer-collections"><h2 id="viewer-collections">Browse the collections</h2><div class="overview-grid">{% for collection in site.collections %}{% unless collection.label == 'posts' %}{% assign all_items = collection.docs | where_exp: 'record', 'record.alternate != true' %}<a class="overview-card" href="{{ '/' | append: collection.label | append: '/' | relative_url }}"><strong>{{ site.data.viewer.collections[collection.label].label | default: collection.label | capitalize }}</strong><span>{{ all_items.size }} canonical records</span></a>{% endunless %}{% endfor %}</div><p><a href="{{ '/checks/' | relative_url }}">Check all {{ site.data.checks.record_count }} records, including reference pages and retained versions</a>.</p></section>
+{% endif %}
+{% assign child_maps = site.data.page-map | where: 'parent', page.url %}{% if child_maps.size > 0 %}<section><h2>Pages in this section</h2><ul class="link-grid">{% for child in child_maps %}{% unless child.alternate %}<li><a href="{{ child.url | relative_url }}">{{ child.title | escape }}</a></li>{% endunless %}{% endfor %}</ul></section>{% endif %}

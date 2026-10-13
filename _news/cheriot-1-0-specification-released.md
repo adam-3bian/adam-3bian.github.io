@@ -1,31 +1,22 @@
 ---
 title: CHERIoT 1.0 Specification Released
-date: '2025-11-05T10:00:12+00:00'
-authors: [adam-finney]
+image_url: /assets/shared/source-assets/dca93f847af6-cheriot-1-0-specification-released.png
+published_date: '2025-11-05'
+authors:
+- adam-finney
+related:
+  groups: []
+  organisations: []
+  hardware: []
+  software: []
+  papers: []
 ---
 
-1. News &amp; Events
-2. News &amp; Analysis
-3. CHERIoT 1.0 Specification Released
-{: .source-breadcrumbs }
-
 # CHERIoT 1.0 Specification Released
-{: id="page-hero-title" .page-hero-title }
 
 Adam Finney – CHERI Alliance 5 November 2025, Cambridge – New Release CHERIoT 1.0 provides a stable, hardware-enforced platform for building memory safe, compartmentalised systems in the microcontroller class. The specification defines the…
-{: .page-hero-summary }
 
-*5 November 2025*{: .source-date }
-*CHERI Alliance news*{: .collection-tag }
-*Ecosystem*{: .collection-tag }
-{: .collection-detail__metadata }
-
-![CHERIoT 1.0 Specification Released](/assets/shared/source-assets/dca93f847af6-cheriot-1-0-specification-released.png){: .image-full }
-{: .collection-detail__lead-image }
-
-*Adam Finney – **CHERI Alliance***
-
-*5 November 2025, Cambridge – New Release*
+5 November 2025, Cambridge – New Release
 
 CHERIoT 1.0 provides a stable, hardware-enforced platform for building memory safe, compartmentalised systems in the microcontroller class. The specification defines the instruction set architecture, language extensions, and the complete compilation and relocation model, enabling developers to build software that is safeguarded against buffer overflows and use after free errors, even in hand written assembly.
 
@@ -35,9 +26,6 @@ Looking forward, the project is working closely with RISC V International on the
 
 The CHERIoT 1.0 line will be supported for years through the open source CHERIoT Platform and through partner companies bringing CHERIoT based products to market. This release marks the beginning of a stable, long term foundation for secure, scalable microcontroller class systems.
 
-You can read David’s full announcement here: [https://cheriot.org/sail/specification/release/2025/11/03/cheriot-1.0.html](https://cheriot.org/sail/specification/release/2025/11/03/cheriot-1.0.html)
+You can read David’s full announcement here: https://cheriot.org/sail/specification/release/2025/11/03/cheriot-1.0.html
 
-For more information on CHERI and capability-based security, visit [cheri-alliance.org](http://cheri-alliance.org), or find us on [LinkedIn](https://www.linkedin.com/company/cheri-alliance/) or [Mastodon](https://infosec.exchange/@cheri_alliance).
-
-[Back to Latest News](/news-and-events/news-and-analysis/latest-news/)
-{: .collection-detail__back }
+For more information on CHERI and capability-based security, visit cheri-alliance.org, or find us on LinkedIn or Mastodon.

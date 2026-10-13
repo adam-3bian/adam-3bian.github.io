@@ -1,7 +1,11 @@
 ---
 title: News
 permalink: /news/
-listing: news
+layout: news
+listing:
+  collection: null
+  status: null
+  role: null
 ---
 
 # News

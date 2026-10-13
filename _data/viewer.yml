@@ -1,0 +1,55 @@
+collections:
+  people:
+    label: People
+  news:
+    label: News
+  organisations:
+    label: Organisations
+  events:
+    label: Events
+  papers:
+    label: Papers
+  hardware:
+    label: Hardware
+  software:
+    label: Software
+  groups:
+    label: Groups
+  guides:
+    label: Guides
+  policies:
+    label: Policies
+url_fields:
+- website_url
+- registration_url
+- publication_url
+classification_fields:
+- type
+- architecture
+- status
+roles:
+  authors:
+    target: people
+    label: Authors
+    inverse: Authored
+  speakers:
+    target: people
+    label: Speakers
+    inverse: Speaker at
+  author:
+    target: people
+    label: Author
+    inverse: Authored
+  lead:
+    target: people
+    label: Lead
+    inverse: Leads
+listing_presets:
+  /alliance/leadership/members/:
+    role: member
+aliases:
+  /alliance/build/: /build/
+  /contact/: /alliance/membership/contact/
+  /members/: /alliance/leadership/members/
+  /speakers/: /news-and-events/people-and-opportunities/speakers/
+  /subscribe/: /news-and-events/news-and-analysis/subscribe-newsletter/

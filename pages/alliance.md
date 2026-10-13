@@ -1,20 +1,37 @@
 ---
 title: CHERI Alliance
 permalink: /alliance/
+layout: index
+summary: null
+image_url: null
+sections:
+- presentation: null
+  columns: null
+  headings:
+  - About the Alliance
+  - Take part
+related:
+  pages: []
 ---
 
 # CHERI Alliance
 
 ## About the Alliance
 
-- [About the CHERI Alliance](/organisations/cheri-alliance/)
-- [Mission and role](/alliance/about-and-governance/mission-and-role/)
-- [Members](/alliance/leadership/members/)
-- [Governing board](/alliance/leadership/governing-board/)
-- [Working groups](/groups/)
+About the CHERI Alliance
+
+Mission and role
+
+Members
+
+Governing board
+
+Working groups
 
 ## Take part
 
-- [Why join?](/alliance/membership/why-join/)
-- [Membership benefits and options](/alliance/membership/membership-benefits-and-options/)
-- [Contact the Alliance](/alliance/membership/contact/)
+Why join?
+
+Membership benefits and options
+
+Contact the Alliance

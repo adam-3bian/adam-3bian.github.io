@@ -1,0 +1,144 @@
+people:
+  title: null
+  image_url: null
+  website_url: null
+  is_speaker: null
+  social:
+    linkedin_url: null
+    mastodon_url: null
+    github_url: null
+  related:
+    organisations: []
+    groups: []
+news:
+  title: null
+  image_url: null
+  published_date: null
+  authors: []
+  related:
+    groups: []
+    organisations: []
+    hardware: []
+    software: []
+    papers: []
+organisations:
+  title: null
+  image_url: null
+  website_url: null
+  membership_tier: null
+  is_founding_member: null
+  social:
+    linkedin_url: null
+    mastodon_url: null
+    github_url: null
+events:
+  title: null
+  image_url: null
+  website_url: null
+  registration_url: null
+  start_date: null
+  start_datetime: null
+  end_date: null
+  end_datetime: null
+  location: null
+  speakers: []
+  related:
+    groups: []
+    organisations: []
+    papers: []
+papers:
+  title: null
+  image_url: null
+  publication_url: null
+  published_year: null
+  authors: []
+  related:
+    groups: []
+    hardware: []
+    software: []
+hardware:
+  title: null
+  image_url: null
+  website_url: null
+  repository_urls: []
+  type: null
+  architecture: null
+  status: null
+  related:
+    organisations: []
+    hardware: []
+    software: []
+software:
+  title: null
+  image_url: null
+  website_url: null
+  repository_urls: []
+  type: null
+  status: null
+  related:
+    organisations: []
+    hardware: []
+    software: []
+groups:
+  title: null
+  image_url: null
+  website_url: null
+  repository_urls: []
+  lead: null
+  related:
+    organisations: []
+    hardware: []
+    software: []
+guides:
+  title: null
+  image_url: null
+  repository_urls: []
+  updated_date: null
+  authors: []
+  related:
+    groups: []
+    hardware: []
+    software: []
+policies:
+  title: null
+  author: null
+content:
+  title: null
+  permalink: null
+  summary: null
+  image_url: null
+  updated_date: null
+  parent: null
+  next_page_url: null
+  related:
+    pages: []
+    people: []
+    organisations: []
+    groups: []
+    news: []
+    events: []
+    papers: []
+    hardware: []
+    software: []
+    guides: []
+    policies: []
+index:
+  title: null
+  permalink: null
+  layout: index
+  summary: null
+  image_url: null
+  sections:
+  - presentation: null
+    columns: null
+    headings: []
+  related:
+    pages: []
+listing:
+  title: null
+  permalink: null
+  layout: null
+  listing:
+    collection: null
+    status: null
+    role: null

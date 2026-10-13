@@ -1,173 +1,128 @@
 ---
 title: Temporal Memory Safety
 permalink: /build/technology/temporal-memory-safety/
+summary: Temporal memory safety stops references being used after an object’s lifetime ends, including when
+  its storage has been reused.
+image_url: null
+updated_date: null
+parent: /build/
+next_page_url: /build/technology/compartmentalisation/
+related:
+  pages:
+  - /build/technology/capabilities/
+  - /build/technology/spatial-memory-safety/
+  people: []
+  organisations: []
+  groups: []
+  news: []
+  events: []
+  papers: []
+  hardware: []
+  software: []
+  guides: []
+  policies: []
 ---
 
-1. Build
-2. Technology
-3. Temporal Memory Safety
-{: .source-breadcrumbs }
-
 # Temporal Memory Safety
-{: id="page-hero-title" .page-hero-title }
 
-Temporal memory safety stops references being used after an object’s lifetime ends, including when its storage has been reused.
-{: .page-hero-summary }
+An object can be perfectly bounded and still be unsafe to use. If a program frees the object but keeps a copy of its capability, that copy has become stale. Using it later is a use-after-free error.
 
-An object can be perfectly bounded and still be unsafe to use. If a program frees the object but keeps a copy of its capability, that copy has become stale. Using it later is a **use-after-free** error.
-
-If the allocator gives the same storage to a new object, the stale reference may access data that did not exist when the capability was created. Preventing this is **temporal memory safety**.
+If the allocator gives the same storage to a new object, the stale reference may access data that did not exist when the capability was created. Preventing this is temporal memory safety.
 
 ## Why bounds do not solve lifetime
-{: id="why-bounds-do-not-solve-lifetime" }
 
 Consider this sequence:
 
-~~~
-char *message = malloc(64);
-char *stale = message;
+char \*message = malloc(64);
+
+char \*stale = message;
 
 free(message);
-char *secret = malloc(64);
 
-printf("%c\n", stale[0]);
-~~~
+char \*secret = malloc(64);
 
-The stale capability may still be tagged, bounded to 64 bytes, and permitted to read. If `secret` reuses the same address range, a bounds check alone cannot know that the logical object changed.
+printf("%c\\n", stale\[0\]);
+
+The stale capability may still be tagged, bounded to 64 bytes, and permitted to read. If secret reuses the same address range, a bounds check alone cannot know that the logical object changed.
 
 This is a different question from spatial safety:
 
-- Spatial: Is the address within the authorised range?
-- Temporal: Does the authority still refer to the same live object?
+Spatial: Is the address within the authorised range?
+
+Temporal: Does the authority still refer to the same live object?
 
 ## Baseline CHERI behaviour
-{: id="baseline-cheri-behaviour" }
 
 CHERI tags prevent software forging capabilities, but copying a valid capability creates another valid copy. Freeing memory does not automatically find and invalidate every copy in registers, stacks, heaps, message queues, or compartments.
 
 General CHERI architectures therefore provide important building blocks but do not, by themselves, guarantee complete temporal safety for every allocator and software stack.
 
 ## System-level approaches
-{: id="system-level-approaches" }
 
 Different environments can combine CHERI with one or more mechanisms:
 
 ### Quarantine
-{: id="quarantine" }
 
 Freed memory is held aside before reuse. This reduces the chance that a stale capability reaches a new object, but a finite quarantine may delay rather than eliminate reuse.
 
 ### Revocation scans
-{: id="revocation-scans" }
 
 The system finds capabilities that refer to a retired region and clears or invalidates them before reusing the memory. Tags make capabilities distinguishable from ordinary data, which can make precise scanning possible. The cost and concurrency model need careful design.
 
 ### Epochs or generations
-{: id="epochs-or-generations" }
 
 Memory reuse is associated with a changing generation, colour, or epoch. A stale reference carries an older value and fails when compared with the current allocation state. Implementations vary in where this metadata lives and how wraparound is handled.
 
 ### Allocator and architecture support
-{: id="allocator-and-architecture-support" }
 
 An allocator can align, partition, and recycle memory in ways that work with capability bounds and revocation. Some processors or platforms add operations that accelerate this process.
 
 ### Language-managed lifetime
-{: id="language-managed-lifetime" }
 
 Rust ownership, garbage collection, reference counting, or region-based allocation can prevent many stale references at a higher layer. Unsafe code, native interfaces, runtimes, and logic errors still need a complete system model.
 
 ## CHERIoT
-{: id="cheriot" }
 
 CHERIoT integrates temporal safety into its hardware-software design. Its allocator and revocation mechanisms are designed to prevent stale capabilities from gaining access to reallocated objects while meeting embedded-system constraints.
 
 That does not mean every CHERI platform inherits the same mechanism. Name CHERIoT or the specific temporal-safety implementation when making the claim.
 
 ## Compartment lifetimes
-{: id="compartment-lifetimes" }
 
 Temporal safety also applies to service handles and shared objects. If a compartment retains a capability after the caller destroys the object, memory safety depends on revoking or invalidating that delegated authority.
 
 Interface design should specify:
 
-- who owns the object
-- whether the callee may retain the capability
-- how destruction is signalled
-- when memory may be reused
-- which mechanism invalidates outstanding references
+who owns the object
+
+whether the callee may retain the capability
+
+how destruction is signalled
+
+when memory may be reused
+
+which mechanism invalidates outstanding references
 
 Sealing can make a handle opaque, but does not by itself revoke every sealed copy.
 
 ## Evaluating a temporal-safety claim
-{: id="evaluating-a-temporal-safety-claim" }
 
 Ask:
 
-1. Which allocations and object types are covered?
-2. What happens to capabilities in registers and memory?
-3. Can memory be reused before revocation completes?
-4. How are concurrent readers handled?
-5. What is the cost in time, memory, and predictability?
-6. What happens on exhaustion, crash, or reset?
-7. Which tests or proofs support the claim?
+Which allocations and object types are covered?
+
+What happens to capabilities in registers and memory?
+
+Can memory be reused before revocation completes?
+
+How are concurrent readers handled?
+
+What is the cost in time, memory, and predictability?
+
+What happens on exhaustion, crash, or reset?
+
+Which tests or proofs support the claim?
 
 ## Key takeaway
-{: id="key-takeaway" }
 
 CHERI makes spatial authority explicit and capabilities identifiable. These properties provide a strong foundation for temporal safety, but object lifetime remains a system responsibility. Always distinguish architectural capability protection from the allocator, runtime, or operating-system mechanism that prevents reuse through stale references.
-
-## Where next
-{: .where-next-title }
-
-### [Compartmentalisation](/build/technology/compartmentalisation/)
-{: .where-next-card-title }
-
-
-
-
-
-[A media application may include millions of lines of code, dozens of libraries, and parsers for hostile input.](/build/technology/compartmentalisation/)
-{: .where-next-summary }
-
-
-
-[Continue](/build/technology/compartmentalisation/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Capabilities](/build/technology/capabilities/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A pointer bug becomes dangerous when changing a number changes authority.](/build/technology/capabilities/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/build/technology/capabilities/)
-{: .source-card-label }
-
-
-
-
-
-### [Spatial Memory Safety](/build/technology/spatial-memory-safety/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A program allocates eight bytes and writes sixteen.](/build/technology/spatial-memory-safety/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/build/technology/spatial-memory-safety/)
-{: .source-card-label }

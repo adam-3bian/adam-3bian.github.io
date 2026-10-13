@@ -1,51 +1,27 @@
 ---
 title: ⚙️ Rust + CHERI WG
+image_url: null
+website_url: null
+repository_urls: []
+lead: null
+related:
+  organisations: []
+  hardware: []
+  software: []
 ---
 
-1. Alliance
-2. About &amp; Governance
-3. ⚙️ Rust + CHERI WG
-{: .source-breadcrumbs }
-
 # ⚙️ Rust + CHERI WG
-{: id="page-hero-title" .page-hero-title }
 
 Combining memory-safe software and hardware-enforced protection.
-{: .page-hero-summary }
 
 The Rust + CHERI Working Group explores how Rust and CHERI can work together to strengthen software security. By combining Rust’s memory-safety guarantees with CHERI’s hardware-enforced memory protection and compartmentalisation capabilities, the group helps advance practical approaches to building more resilient systems.
 
-The [Rust software ecosystem page](/software/rust/) explains the relationships between Rust and CHERI.
+The Rust software ecosystem page explains the relationships between Rust and CHERI.
 
-Group type
-: Technical
+Group type: Technical
 
-Areas of collaboration
-: - Rust targets and toolchains
-  - Native interfaces and unsafe code
-  - Platform and runtime support
-{: .entity-facts }
+Areas of collaboration: Rust targets and toolchains
 
-[Enquire about this group](/alliance/membership/contact/)
-{: .entity-primary-link }
+Native interfaces and unsafe code
 
-[Back to all working groups](/alliance/leadership/working-groups/)
-{: .entity-back }
-
-## Where next
-{: .where-next-title }
-
-### [CHERI + Safety](/groups/cheri-plus-safety/)
-{: .where-next-card-title }
-
-
-
-
-
-[See how the Alliance explores CHERI in safety-related systems and assurance work.](/groups/cheri-plus-safety/)
-{: .where-next-summary }
-
-
-
-[Continue](/groups/cheri-plus-safety/)
-{: .source-card-label }
+Platform and runtime support

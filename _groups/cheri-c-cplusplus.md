@@ -1,17 +1,18 @@
 ---
 title: ©️ CHERI C/C++ WG
+image_url: null
+website_url: null
+repository_urls: []
+lead: null
+related:
+  organisations: []
+  hardware: []
+  software: []
 ---
 
-1. Alliance
-2. About &amp; Governance
-3. ©️ CHERI C/C++ WG
-{: .source-breadcrumbs }
-
 # ©️ CHERI C/C++ WG
-{: id="page-hero-title" .page-hero-title }
 
 Coordinating portable C and C++ support for CHERI platforms.
-{: .page-hero-summary }
 
 The C/C++ Working Group aims to ensure portability for C and C++ code written for CHERI platforms.
 
@@ -19,38 +20,14 @@ CHERI provides memory safety for C-like languages. Every CHERI implementation wi
 
 This working group has two overlapping goals:
 
-- To coordinate between CHERI C/C++ implementations to ensure portability.
-- To work with ISO WG14 and WG21 to ensure long-term alignment of the C and C++ standards with CHERI.
+To coordinate between CHERI C/C++ implementations to ensure portability.
 
-Group type
-: Technical
+To work with ISO WG14 and WG21 to ensure long-term alignment of the C and C++ standards with CHERI.
 
-Areas of collaboration
-: - Language and ABI behaviour
-  - Compiler and toolchain experience
-  - Portability and standards
-{: .entity-facts }
+Group type: Technical
 
-[Enquire about this group](/alliance/membership/contact/)
-{: .entity-primary-link }
+Areas of collaboration: Language and ABI behaviour
 
-[Back to all working groups](/alliance/leadership/working-groups/)
-{: .entity-back }
+Compiler and toolchain experience
 
-## Where next
-{: .where-next-title }
-
-### [CHERI in SoC](/groups/cheri-in-soc/)
-{: .where-next-card-title }
-
-
-
-
-
-[Explore how CHERI requirements and components fit into systems-on-chip.](/groups/cheri-in-soc/)
-{: .where-next-summary }
-
-
-
-[Continue](/groups/cheri-in-soc/)
-{: .source-card-label }
+Portability and standards

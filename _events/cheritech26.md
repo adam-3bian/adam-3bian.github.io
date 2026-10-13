@@ -1,109 +1,76 @@
 ---
 title: CHERITech'26
+image_url: /assets/events/cheritech26/408459d34c43-cheritech26.webp
+website_url: null
+registration_url: null
+start_date: '2026-11-12'
+start_datetime: null
+end_date: '2026-11-13'
+end_datetime: null
+location: SEMICON Europa, Munich, Germany
+speakers: []
+related:
+  groups: []
+  organisations: []
+  papers: []
 ---
 
-1. News &amp; Events
-2. Events &amp; Archive
-3. CHERITech'26
-{: .source-breadcrumbs }
-
 # CHERITech'26
-{: id="page-hero-title" .page-hero-title }
 
 A two-day CHERI technical programme at SEMICON Europa in Munich, connecting implementation work with the wider electronics industry.
-{: .page-hero-summary }
 
-![CHERITech'26](/assets/events/cheritech26/408459d34c43-cheritech26.webp){: .image-left }
-{: .entity-media .entity-media--event }
+Status: Upcoming
 
-Status
-: Upcoming
+Format: Conference
 
-Format
-: Conference
+Series: CHERITech
 
-Date
-: 12 to 13 November 2026
+Main Conference Date: 12-13 November 2026
 
-Location
-: SEMICON Europa, Munich, Germany
+Exhibition: 10-13 November 2026
 
-Series
-: [CHERITech](/news-and-events/events-and-archive/cheritech/)
-{: .entity-facts }
+Location: Munich, DE @ SEMICON Europa
 
-**Main Conference** **Date:** 12-13 November 2026
+The Call for Papers is now live. Subscribe to our newsletter to be notified when registrations are live:
 
-**Exhibition:** 10-13 November 2026
+Call for Papers
 
-**Location:** Munich, DE @ [SEMICON Europa](https://www.semiconeuropa.org/)
-
-**The Call for Papers is now live.** Subscribe to our newsletter to be notified when registrations are live:
-
-[Call for Papers](https://cheri-alliance.org/events/cheritech26/call-for-papers/)
-
-[Subscribe to Newsletter](https://cheri-alliance.kit.com/subscribe)
+Subscribe to Newsletter
 
 ## Overview
-{: id="overview" }
 
-CHERITech’26 will take place in Munich alongside [Electronica](https://electronica.de/en/) / [SEMICON Europa](https://www.semiconeuropa.org/), one of the world’s largest electronics industry events!
+CHERITech’26 will take place in Munich alongside Electronica / SEMICON Europa, one of the world’s largest electronics industry events!
 
 Hosted at the heart of the exhibition floor and open to all attendees, CHERITech’26 will put CHERI in front of around 80,000 visitors from across industry, academia, government, and investment communities. It’s an unprecedented opportunity for attendees to be part of showcasing the momentum behind CHERI and secure-by-design computing.
 
 More details to follow.
 
-![Munich Messe](/assets/events/cheritech26/91e5fea56bd1-munich-messe.jpg){: .image-full }
+![Munich Messe](/assets/events/cheritech26/91e5fea56bd1-munich-messe.jpg)
 
 ## Previous event: CHERITech’25
-{: id="previous-event-cheritech25" }
 
 Watch the event overview from CHERITech’25:
 
-[Watch video](https://youtu.be/PeMYZsSoUto?si=N1JnyQct5OmABfEa)
-
 ## More CHERITech events
-{: id="related-series-events" }
 
-[View the complete series](/news-and-events/events-and-archive/cheritech/)
+View the complete series
 
-![](/assets/events/cheritech25-reloaded/7bce58279add-cheritech25-reloaded.webp){: .image-full }
+![](/assets/events/cheritech25-reloaded/7bce58279add-cheritech25-reloaded.webp)
 
-Past
-Online event
-{: .collection-card__labels }
+Past Online event
 
-4 December 2025
-Online
-{: .collection-card__meta }
+4 December 2025 Online
 
-### [CHERITech'25 Reloaded](/events/cheritech25-reloaded/)
-{: .collection-card__title }
+### CHERITech'25 Reloaded
 
-CHERITech’25 Reloaded took place online on 4th December 2025. Participants joined us for live Q&amp;A sessions with speakers from the main CHERITech’25 conference and revi...
-{: .collection-card__summary }
+CHERITech’25 Reloaded took place online on 4th December 2025. Participants joined us for live Q&A sessions with speakers from the main CHERITech’25 conference and revi...
 
-View event archive
-{: .collection-card__link }
+![](/assets/events/cheritech25/0e6d3180c4d1-cheritech25.webp)
 
-![](/assets/events/cheritech25/0e6d3180c4d1-cheritech25.webp){: .image-full }
+Past Conference
 
-Past
-Conference
-{: .collection-card__labels }
+14 November 2025 Sister, Manchester, UK
 
-14 November 2025
-Sister, Manchester, UK
-{: .collection-card__meta }
-
-### [CHERITech'25 Conference](/events/cheritech25/)
-{: .collection-card__title }
+### CHERITech'25 Conference
 
 CHERITech’25 brought together researchers, technologists, cybersecurity experts, and product developers for a dynamic exploration of Digital Security by Design. Now un...
-{: .collection-card__summary }
-
-View event archive
-{: .collection-card__link }
-
-[Back to upcoming events](/news-and-events/events-and-archive/upcoming-events/)
-{: .entity-back }

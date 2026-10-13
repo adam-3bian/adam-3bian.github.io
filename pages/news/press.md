@@ -1,46 +1,51 @@
 ---
 title: Press Resources
 permalink: /news/press/
+summary: null
+image_url: null
+updated_date: null
+parent: /news/
+next_page_url: null
+related:
+  pages: []
+  people: []
+  organisations: []
+  groups: []
+  news: []
+  events: []
+  papers: []
+  hardware: []
+  software: []
+  guides: []
+  policies: []
 ---
 
 # Press Resources
 
-
 Welcome to the CHERI Alliance Press Resources page. Here you’ll find our official logos, brand guidelines and press contacts.
-
 
 ## Press Contact
 
-
-Please use the form on our [contact page](/alliance/membership/contact/) to get in touch.
+Please use the form on our contact page to get in touch.
 
 ## Media Kit Downloads
 
-
 ### Logo Pack
 
+Download Zip
 
-[Download Zip](/assets/pages/alliance--about-and-governance--trademark/5ff7f679f608-cheri-alliance-logo-pack.zip)
-
-
-Please use our logos without alteration. Minimum clear space and sizing rules can be found in the [branding guidelines](/assets/pages/discover--resources--documentation-and-guides/3d933a481b79-cheri-branding-guidelines.pdf).
+Please use our logos without alteration. Minimum clear space and sizing rules can be found in the branding guidelines.
 
 ### CHERI Alliance Introduction
 
+Download PDF
 
-[Download PDF](/assets/shared/source-assets/c275143b35fc-cheri-alliance-presentation.pdf)
-
-
-## Policies &amp; Guidelines
-
+## Policies & Guidelines
 
 ### Branding Guidelines
 
-
-[Download PDF](/assets/pages/discover--resources--documentation-and-guides/3d933a481b79-cheri-branding-guidelines.pdf)
-
+Download PDF
 
 ### Press Usage Policy
-
 
 You may use the assets provided here for editorial and press purposes only.

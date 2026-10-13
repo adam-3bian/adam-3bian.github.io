@@ -1,0 +1,26 @@
+---
+layout: default
+---
+{% assign current_kind = page.collection | default: 'pages' %}
+{% assign current_map = site.data.page-map | where: 'url', page.url | first %}
+{% if current_map %}<nav class="breadcrumb" aria-label="Breadcrumb"><a href="{{ '/' | relative_url }}">Home</a>{% if current_map.parent and current_map.parent != '/' %}{% assign parent_map = site.data.page-map | where: 'url', current_map.parent | first %}<span aria-hidden="true">/</span><a href="{{ current_map.parent | relative_url }}">{{ parent_map.title | default: current_map.parent | escape }}</a>{% endif %}<span aria-hidden="true">/</span><span aria-current="page">{{ page.title | escape }}</span></nav>{% endif %}
+<article data-content-route="{{ page.url | escape }}">
+  <header class="record-header{% if page.image_url %} has-image{% endif %}">
+    <div><p class="eyebrow">{{ current_map.page_type | default: 'Content viewer' | escape }}{% if page.alternate %} · Retained source version{% endif %}</p><h1>{{ page.title | escape }}</h1>{% if page.summary %}<p class="summary">{{ page.summary | escape }}</p>{% endif %}</div>
+    {% if page.image_url %}<img class="lead-image" src="{% include href.html url=page.image_url %}" alt="{{ page.title | escape }}" width="360" height="270">{% endif %}
+  </header>
+  {% include metadata.html %}
+  {% assign alias_target = site.data.viewer.aliases[page.url] %}{% if alias_target %}<aside class="notice">This is a retained alias. <a href="{{ alias_target | relative_url }}">Continue to its destination</a>.</aside>{% endif %}
+  {% assign reader_content = content | strip %}
+  {% assign heading_prefix = reader_content | slice: 0, 3 %}
+  {% if heading_prefix == '<h1' or heading_prefix == '<h2' or heading_prefix == '<h3' or heading_prefix == '<h4' or heading_prefix == '<h5' or heading_prefix == '<h6' %}
+    {% assign heading_level = reader_content | slice: 2, 1 %}{% assign closing_heading = '</h' | append: heading_level | append: '>' %}{% assign first_heading = reader_content | split: closing_heading | first %}
+    {% assign first_heading_text = first_heading | strip_html | strip | replace: '&amp;', '&' | replace: '&quot;', '"' | replace: '&#39;', "'" | replace: '&lt;', '<' | replace: '&gt;', '>' %}
+    {% if first_heading_text == page.title %}{% assign reader_content = reader_content | remove_first: first_heading | remove_first: closing_heading %}{% endif %}
+  {% endif %}
+  {% assign image_prefix = '/assets/' | relative_url | prepend: 'src="' %}
+  <div class="article-content">{{ reader_content | replace: 'src="/assets/', image_prefix }}</div>
+  {% include relationships.html %}
+  {% if page.next_page_url %}<div class="onward"><a href="{% include href.html url=page.next_page_url %}">Next page <span aria-hidden="true">→</span></a></div>{% endif %}
+  {% include inspector.html %}
+</article>

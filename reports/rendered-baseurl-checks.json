@@ -1,0 +1,18 @@
+{
+  "checked_at": "2026-10-13T02:33:47.674182+00:00",
+  "baseurl": "/content-review",
+  "checks": {
+    "exact_front_matter_inspectors": 481,
+    "record_titles": 481,
+    "primary_images": 177,
+    "relationship_sections": 481,
+    "forward_role_links": 299,
+    "explicit_event_timezones": 2,
+    "forward_affiliation_links": 82,
+    "collection_listings": 15,
+    "valid_internal_links": 64028,
+    "valid_local_resources": 1366,
+    "audit_records": 481
+  },
+  "errors": []
+}

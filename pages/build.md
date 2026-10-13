@@ -1,25 +1,44 @@
 ---
 title: Build with CHERI
 permalink: /build/
+layout: index
+summary: null
+image_url: null
+sections:
+- presentation: null
+  columns: null
+  headings:
+  - Platforms and software
+  - Get started
+  - Work with the community
+related:
+  pages: []
 ---
 
 # Build with CHERI
 
 ## Platforms and software
 
-- [Hardware platforms](/hardware/)
-- [Software ecosystem](/software/)
-- [Platform comparison](/build/platforms/platform-comparison/)
+Hardware platforms
+
+Software ecosystem
+
+Platform comparison
 
 ## Get started
 
-- [Choose a platform](/guides/choose-a-platform/)
-- [Install a toolchain](/guides/install-a-toolchain/)
-- [Build your first application](/guides/build-your-first-application/)
-- [All developer guides](/guides/)
+Choose a platform
+
+Install a toolchain
+
+Build your first application
+
+All developer guides
 
 ## Work with the community
 
-- [Working groups](/groups/)
-- [Academic papers and authors](/papers/)
-- [Contact the Alliance](/alliance/membership/contact/)
+Working groups
+
+Academic papers and authors
+
+Contact the Alliance

@@ -1,46 +1,36 @@
 ---
 title: Towards a reference QEMU for CHERI platform emulation
-date: '2026-01-28T10:00:59+00:00'
-authors: [alfredo-mazzinghi]
+image_url: /assets/shared/source-assets/bb889a4dc09e-cheri-alliance-working-groups.png
+published_date: '2026-01-28'
+authors:
+- alfredo-mazzinghi
+related:
+  groups: []
+  organisations: []
+  hardware: []
+  software: []
+  papers: []
 ---
 
-1. News &amp; Events
-2. News &amp; Analysis
-3. Towards a reference QEMU for CHERI platform emulation
-{: .source-breadcrumbs }
-
 # Towards a reference QEMU for CHERI platform emulation
-{: id="page-hero-title" .page-hero-title }
 
 Alfredo Mazzinghi – Capabilities Limited QEMU is one of the most popular open source machine emulators (https://www.qemu.org), with support for many CPU architectures, including x86\_64, Arm and RISC-V. The QEMU emulator is critical for systems…
-{: .page-hero-summary }
 
-*28 January 2026*{: .source-date }
-*CHERI Alliance news*{: .collection-tag }
-*Working Groups*{: .collection-tag }
-{: .collection-detail__metadata }
-
-![CHERI Alliance Working Groups logo](/assets/shared/source-assets/bb889a4dc09e-cheri-alliance-working-groups.png){: .image-full }
-{: .collection-detail__lead-image }
-
-Alfredo Mazzinghi – [Capabilities Limited](/organisations/capabilities-limited/)
-
-QEMU is one of the most popular open source machine emulators ([https://www.qemu.org](https://www.qemu.org)), with support for many CPU architectures, including x86\_64, Arm and RISC-V.
+QEMU is one of the most popular open source machine emulators (https://www.qemu.org), with support for many CPU architectures, including x86\_64, Arm and RISC-V.
 
 The QEMU emulator is critical for systems research and development: it makes it possible to quickly prototype, debug and analyse architectural extensions and OS implementations without the need of dedicated hardware implementations in FPGA or silicon.
 
 QEMU monitoring features, such as instruction-level tracing and GDB integration are particularly important to make system software development easier.
 
-It is important to remember that QEMU is not a system simulator (such as gem5 [https://www.gem5.org](https://www.gem5.org)) and it does not attempt to be cycle-accurate. Instead, it is a functionally accurate emulation of the target platform. This is very useful for systems validation and development, but it is not representative of CHERI systems’ performance.
+It is important to remember that QEMU is not a system simulator (such as gem5 https://www.gem5.org) and it does not attempt to be cycle-accurate. Instead, it is a functionally accurate emulation of the target platform. This is very useful for systems validation and development, but it is not representative of CHERI systems’ performance.
 
 ## QEMU in the CHERI ecosystem
-{: id="qemu-in-the-cheri-ecosystem" }
 
-The QEMU emulator maintains a central role in the CHERI software ecosystem. Historically, CHERI support in QEMU dates back to the initial MIPS CHERI prototypes, with both 128-bit compressed and 256-bit uncompressed capabilities, developed at the [University of Cambridge](/organisations/university-of-cambridge/) and [SRI](/organisations/sri/).
+The QEMU emulator maintains a central role in the CHERI software ecosystem. Historically, CHERI support in QEMU dates back to the initial MIPS CHERI prototypes, with both 128-bit compressed and 256-bit uncompressed capabilities, developed at the University of Cambridge and SRI.
 
-The convergence of multiple QEMU CHERI patches into a single reference implementation has been almost a year-long process throughout 2025 that involved contributors from multiple organisations, including the [University of Cambridge](/organisations/university-of-cambridge/), [Capabilities Limited](/organisations/capabilities-limited/), [Codasip](/organisations/codasip/) and [Google](/organisations/google/).
+The convergence of multiple QEMU CHERI patches into a single reference implementation has been almost a year-long process throughout 2025 that involved contributors from multiple organisations, including the University of Cambridge, Capabilities Limited, Codasip and Google.
 
-As of January 2026, we are excited to announce that the CHERI Alliance hosts a reference QEMU implementation that supports multiple modern CHERI platforms based on Arm and RISC-V. These include the [Arm Morello platform](/hardware/morello/), the [CHERI RISC-V standard draft 0.9.3](https://riscv.github.io/riscv-cheri/) and the University of Cambridge RISC-V ISA v9.
+As of January 2026, we are excited to announce that the CHERI Alliance hosts a reference QEMU implementation that supports multiple modern CHERI platforms based on Arm and RISC-V. These include the Arm Morello platform, the CHERI RISC-V standard draft 0.9.3 and the University of Cambridge RISC-V ISA v9.
 
 The CHERI Alliance reference implementation is an important milestone for future development and integration of CHERI support in QEMU.
 
@@ -55,9 +45,5 @@ As the CHERI RISC-V standard is finalised, the goal of the QEMU Working Group is
 Finally, the Working Group is refining the approach for testing and validation of the reference QEMU CHERI. In particular, The Capable Hub is contributing to establish a robust CI infrastructure for QEMU and the wider CHERI Alliance software ecosystem.
 
 ## Conclusions
-{: id="conclusions" }
 
-We expect 2026 to be an exciting year for the CHERI Alliance and the CHERI QEMU community as a whole. With no shortage of work in sight, we would like to encourage members of the Alliance and any other organisation interested in CHERI to check out the latest developments at [https://github.com/CHERI-Alliance/qemu](https://github.com/CHERI-Alliance/qemu) and join the monthly QEMU WG meetings by registering to the wg-qemu mailing list [https://lists.cheri-alliance.org](https://lists.cheri-alliance.org).
-
-[Back to Latest News](/news-and-events/news-and-analysis/latest-news/)
-{: .collection-detail__back }
+We expect 2026 to be an exciting year for the CHERI Alliance and the CHERI QEMU community as a whole. With no shortage of work in sight, we would like to encourage members of the Alliance and any other organisation interested in CHERI to check out the latest developments at https://github.com/CHERI-Alliance/qemu and join the monthly QEMU WG meetings by registering to the wg-qemu mailing list https://lists.cheri-alliance.org.

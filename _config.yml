@@ -1,45 +1,27 @@
 markdown: kramdown
 kramdown:
-  input: Kramdown
-  auto_ids: false
+  input: PlainContent
+  hard_wrap: false
+  gfm_quirks:
+  - paragraph_end
+  - no_auto_typographic
+  auto_ids: true
   smart_quotes:
   - apos
   - apos
   - quot
   - quot
-  typographic_symbols:
-    hellip: '...'
-    mdash: '---'
-    ndash: --
-    laquo: '<<'
-    raquo: '>>'
 exclude:
-- sources
-- reports
-- sitemap.json
-- sitemap.md
-- scripts
-- requirements-migration.txt
-- CHERI_SITE_INVENTORY.json
-- CHERI_HIERARCHICAL_SITEMAP.md
-- CHERI_MASTER_PROMPT.md
-- CHERI_MIGRATION_SPEC.md
-- CHERI_SCRAPE_UPLOAD_GUIDE.md
-- AGENTS.md
-- README_CHERI_PROMPT_PACK.md
-- START_PROMPT.md
-- PROGRESS.md
-- MIGRATION_SPEC.md
-- README_MIGRATION.md
-- tests
 - README.md
-- _data
-- docs
+- NAVIGATION.md
 - Gemfile
 - Gemfile.lock
-- TRANSFORMATION_PROMPT.md
-- _plugins
+- scripts
+- reports
+- dist
+- dist-baseurl
 - vendor
+- .bundle
 collections:
   people:
     output: true
@@ -71,54 +53,233 @@ collections:
   policies:
     output: true
     permalink: /policies/:name/
-excerpt_separator: ''
 defaults:
 - scope:
     path: ''
   values:
-    layout: page
+    layout: document
     render_with_liquid: false
-    theme: light
-    hero: true
-    image-overlay: true
-- scope:
-    path: pages/index.md
-  values:
-    theme: dark
 - scope:
     path: ''
     type: people
   values:
-    layout: person
-- scope:
-    path: ''
-    type: organisations
-  values:
-    layout: member
-- scope:
-    path: ''
-    type: events
-  values:
-    layout: event
+    layout: document
+    parent: /people/
 - scope:
     path: ''
     type: news
   values:
-    layout: post
-title: CHERI Alliance
-description: 'CHERI Alliance: hardware-enforced memory safety, secure software and
-  the CHERI community.'
+    layout: document
+    parent: /news/
+- scope:
+    path: ''
+    type: organisations
+  values:
+    layout: document
+    parent: /organisations/
+- scope:
+    path: ''
+    type: events
+  values:
+    layout: document
+    parent: /events/
+- scope:
+    path: ''
+    type: papers
+  values:
+    layout: document
+    parent: /papers/
+- scope:
+    path: ''
+    type: hardware
+  values:
+    layout: document
+    parent: /hardware/
+- scope:
+    path: ''
+    type: software
+  values:
+    layout: document
+    parent: /software/
+- scope:
+    path: ''
+    type: groups
+  values:
+    layout: document
+    parent: /groups/
+- scope:
+    path: ''
+    type: guides
+  values:
+    layout: document
+    parent: /guides/
+- scope:
+    path: ''
+    type: policies
+  values:
+    layout: document
+    parent: /policies/
+- scope:
+    path: pages/adopt.md
+  values:
+    parent: /
+- scope:
+    path: pages/alliance.md
+  values:
+    parent: /
+- scope:
+    path: pages/alliance/leadership/members.md
+  values:
+    parent: /alliance/
+- scope:
+    path: pages/build.md
+  values:
+    parent: /
+- scope:
+    path: pages/discover.md
+  values:
+    parent: /
+- scope:
+    path: pages/events.md
+  values:
+    parent: /
+- scope:
+    path: pages/groups.md
+  values:
+    parent: /
+- scope:
+    path: pages/guides.md
+  values:
+    parent: /
+- scope:
+    path: pages/hardware.md
+  values:
+    parent: /build/
+- scope:
+    path: pages/news-and-events.md
+  values:
+    parent: /
+- scope:
+    path: pages/news-and-events/events-and-archive/past-events.md
+  values:
+    parent: /news-and-events/
+- scope:
+    path: pages/news-and-events/events-and-archive/upcoming-events.md
+  values:
+    parent: /news-and-events/
+- scope:
+    path: pages/news-and-events/news-and-analysis/latest-news.md
+  values:
+    parent: /news-and-events/
+- scope:
+    path: pages/news-and-events/people-and-opportunities/speakers.md
+  values:
+    parent: /news-and-events/
+- scope:
+    path: pages/news.md
+  values:
+    parent: /
+- scope:
+    path: pages/organisations.md
+  values:
+    parent: /
+- scope:
+    path: pages/papers.md
+  values:
+    parent: /discover/
+- scope:
+    path: pages/people.md
+  values:
+    parent: /
+- scope:
+    path: pages/policies.md
+  values:
+    parent: /
+- scope:
+    path: pages/software.md
+  values:
+    parent: /build/
+- scope:
+    path: _news/cheri-or-cheriot-the-answer-is-not-what-you-think-original.md
+  values:
+    alternate: true
+- scope:
+    path: _news/cheriot-1-0-specification-released-original.md
+  values:
+    alternate: true
+- scope:
+    path: _news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology-original.md
+  values:
+    alternate: true
+- scope:
+    path: _news/innovate-uk-project-winner-university-of-birmingham-original.md
+  values:
+    alternate: true
+- scope:
+    path: _news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences-original.md
+  values:
+    alternate: true
+- scope:
+    path: _news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support-original.md
+  values:
+    alternate: true
+- scope:
+    path: _news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd-original.md
+  values:
+    alternate: true
+- scope:
+    path: _news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl-original.md
+  values:
+    alternate: true
+- scope:
+    path: _news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software-original.md
+  values:
+    alternate: true
+- scope:
+    path: _policies/trademark-original.md
+  values:
+    alternate: true
+- scope:
+    path: pages/reference/source-versions/contact.md
+  values:
+    alternate: true
+- scope:
+    path: pages/reference/source-versions/cost-of-memory-unsafety.md
+  values:
+    alternate: true
+- scope:
+    path: pages/reference/source-versions/home.md
+  values:
+    alternate: true
+- scope:
+    path: pages/reference/source-versions/latest-news.md
+  values:
+    alternate: true
+- scope:
+    path: pages/reference/source-versions/members.md
+  values:
+    alternate: true
+- scope:
+    path: pages/reference/source-versions/newsletter.md
+  values:
+    alternate: true
+- scope:
+    path: pages/reference/source-versions/past-events.md
+  values:
+    alternate: true
+- scope:
+    path: pages/reference/source-versions/speakers.md
+  values:
+    alternate: true
+- scope:
+    path: pages/reference/source-versions/upcoming-events.md
+  values:
+    alternate: true
+title: CHERI Content Viewer
+description: A minimal Jekyll site for reviewing migrated CHERI Alliance records.
 lang: en-GB
 url: https://adam-3bian.github.io
 baseurl: ''
-sass:
-  sass_dir: _sass
-  style: compressed
-logo:
-  light: /assets/images/brand/logo-blue.svg
-  dark: /assets/images/brand/logo-white.svg
-  width: 326
-  height: 112
 navigation:
   header:
   - title: Discover CHERI
@@ -161,6 +322,7 @@ navigation:
         url: /discover/resources/glossary/
       - title: Papers and authors
         url: /papers/
+    url: /discover/
   - title: Adopt
     type: megamenu
     columns: 3
@@ -189,6 +351,7 @@ navigation:
         url: /adopt/policy/cybersecurity-regulation/
       - title: Critical Infrastructure & Resilience
         url: /adopt/policy/critical-infrastructure-and-resilience/
+    url: /adopt/
   - title: Build
     type: megamenu
     columns: 4
@@ -279,6 +442,7 @@ navigation:
         url: /software/debugging-tools/
       - title: All software
         url: /software/
+    url: /build/
   - title: CHERI Alliance
     type: megamenu
     columns: 4
@@ -327,6 +491,7 @@ navigation:
         url: /policies/export-controls/
       - title: Privacy
         url: /policies/privacy/
+    url: /alliance/
   - title: News & Events
     type: megamenu
     columns: 3
@@ -357,6 +522,7 @@ navigation:
         url: /alliance/leadership/members/
       - title: Contact the Alliance
         url: /alliance/membership/contact/
+    url: /news-and-events/
   footer:
   - title: Updates
     links:
@@ -403,9 +569,7 @@ navigation:
       src: /assets/images/social/linkedin.svg
       alt: CHERI Alliance on LinkedIn
 timezone: Europe/London
-
-subscribe:
-  enabled: true
-  title: Stay connected with CHERI
-  action: Explore the newsletter
-  url: /news-and-events/news-and-analysis/subscribe-newsletter/
+destination: _site
+strict_front_matter: true
+plugins: []
+permalink: pretty

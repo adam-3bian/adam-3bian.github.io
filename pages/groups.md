@@ -1,7 +1,11 @@
 ---
 title: Working groups
 permalink: /groups/
-listing: groups
+layout: list
+listing:
+  collection: groups
+  status: null
+  role: null
 ---
 
 # Working groups
