@@ -37,13 +37,13 @@ Project: Codasip X730; Demonstrates: Commercially application-class CHERI proces
 
 ## Morello: a complete experimental stack
 
+![Arm Morello board](/assets/pages/adopt--assurance-and-adoption--case-studies/bfeebb3ac676-morello-board.webp){: .image-left }
+
 The Arm Morello programme demonstrated that CHERI concepts can scale to a modern high-performance 64-bit processor and support real operating systems, toolchains, and applications.
 
 Morello gave research and industry teams a realistic platform for porting operating systems and applications, examining compatibility, and measuring performance. It showed that CHERI could be applied to the most demanding high-performance processors.
 
 Morello remains an experimental platform. Its importance lies in the full-stack evidence and experience it created, not in representing a production Arm architecture.
-
-![Arm Morello board](/assets/pages/adopt--assurance-and-adoption--case-studies/bfeebb3ac676-morello-board.webp)
 
 ## CheriBSD: established software at operating-system scale
 
@@ -55,21 +55,21 @@ This makes CheriBSD relevant to products that depend on mature native software a
 
 ## CHERIoT: protection for small embedded devices
 
+![CHERIoT processor on a Sonata board](/assets/pages/adopt--assurance-and-adoption--case-studies/645cc3b9a905-sonata-cheriot.webp){: .image-right }
+
 CHERIoT brings CHERI protection to resource-constrained embedded systems and microcontrollers. The CHERIoT platform combines a 32-bit CHERI-RISC-V architecture, processor core, toolchain, and real-time operating system. It is designed around small compartments that do not trust one another and can communicate through controlled interfaces.
 
 CHERIoT shows why CHERI can fit microcontrollers that lack the memory-management hardware used for process isolation on larger systems. It also combines capability protection with mechanisms intended to support temporal memory safety in constrained devices.
 
 The cheriot-ibex core has been certified under the CHERI Enabled programme.
 
-![CHERIoT processor on a Sonata board](/assets/pages/adopt--assurance-and-adoption--case-studies/645cc3b9a905-sonata-cheriot.webp)
-
 ## CHERI in commercial processor products
+
+![Codsaip X730 on FPGA](/assets/pages/adopt--assurance-and-adoption--case-studies/e8738d5ec725-codasip-prime-kit.webp){: .image-left }
 
 Codasip has decided to adopt CHERI throughout its whole line of products. X730-MP4-Lux is the first commercial 64-bit application-class processor implementing CHERI-RISC-V. It has been certified under the CHERI Enabled programme and can run rich operating systems like CheriBSD or Linux.
 
 This demonstrates that CHERI processor technology is available now for commercial system-on-chip designs.
-
-![Codsaip X730 on FPGA](/assets/pages/adopt--assurance-and-adoption--case-studies/e8738d5ec725-codasip-prime-kit.webp)
 
 ## What these case studies demonstrate
 

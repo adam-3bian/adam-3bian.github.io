@@ -92,6 +92,9 @@ Start (GMT): 17:33; Section: End
 
 ## Speakers
 
+<ul class="image-gallery portrait-gallery" markdown="block">
+<li markdown="block">
+
 ![](/assets/people/andrew-murray/4471744b8d2d-andrew-murray.webp)
 
 The Good Penguin
@@ -99,6 +102,9 @@ The Good Penguin
 ### Andrew Murray
 
 Andrew Murray is founder and director of The Good Penguin, a UK based consultancy with a focus and passion for embedded Linux, low level and open-source software. The ...
+
+</li>
+<li markdown="block">
 
 ![](/assets/people/carl-shaw/77510c8e2140-carl-shaw.webp)
 
@@ -108,6 +114,9 @@ Codasip
 
 Carl Shaw is a hands-on technical expert with a diverse background in embedded systems and security engineering. His work focuses on the intersection of hardware and s...
 
+</li>
+<li markdown="block">
+
 ![](/assets/people/david-chisnall/df30b5f06c8a-david-chisnall.webp)
 
 SCI Semiconductor
@@ -115,6 +124,9 @@ SCI Semiconductor
 ### David Chisnall
 
 David Chisnall has been working on CHERI since 2012, when he joined the University of Cambridge to lead the languages and compiler work on the CHERI project. He joined...
+
+</li>
+<li markdown="block">
 
 ![](/assets/people/jeremy-singer/c47e35e4cac6-jeremy-singer.webp)
 
@@ -124,6 +136,9 @@ University of Glasgow
 
 Jeremy is a Reader in Programming Language Implementation at the University of Glasgow. He is the proud owner (or at least, custodian) of four Arm Morello boxes and tw...
 
+</li>
+<li markdown="block">
+
 ![](/assets/people/john-thomson/a30b210fc678-john-thomson.webp)
 
 lowRISC
@@ -131,6 +146,9 @@ lowRISC
 ### John Thomson
 
 John works at lowRISC as a senior product manager where he advocates the company’s mission of getting open silicon source everywhere. He worked on delivery of key proj...
+
+</li>
+<li markdown="block">
 
 ![](/assets/people/jonathan-woodruff/efabe0a1a306-jonathan-woodruff.webp)
 
@@ -140,6 +158,9 @@ Capabilities Limited
 
 Dr Jonathan Woodruff is a Senior Research Associate with expertise in processor architecture and microarchitecture as well as low-level software optimisation. Speciali...
 
+</li>
+<li markdown="block">
+
 ![](/assets/people/marno-van-der-maas/339812a45c3f-marno-van-der-maas.webp)
 
 lowRISC
@@ -147,6 +168,9 @@ lowRISC
 ### Marno van der Maas
 
 Dr Marno van der Maas completed a PhD at the University of Cambridge in 2022 on protecting trusted execution environments from side-channel attacks. During this time, ...
+
+</li>
+<li markdown="block">
 
 ![](/assets/people/mike-eftimakis/95bf8c70c443-mike-eftimakis.webp)
 
@@ -156,6 +180,9 @@ CHERI Alliance
 
 Mike Eftimakis has an extensive background in the semiconductor and electronics industry with 30 years in senior technical and business roles. He has a rich history of...
 
+</li>
+<li markdown="block">
+
 ![](/assets/people/murali-vijayaraghavan/326629bec34e-murali-vijayaraghavan.webp)
 
 Google
@@ -163,6 +190,9 @@ Google
 ### Murali Vijayaraghavan
 
 Murali is a formal methods and security researcher at Google.
+
+</li>
+<li markdown="block">
 
 ![](/assets/people/tariq-kurd/1284cdf835ad-tariq-kurd.webp)
 
@@ -172,6 +202,9 @@ Codasip
 
 Tariq Kurd has been involved in CPU architecture, design, and verification for over 25 years, primarily in the embedded field. He has worked on VLIW, multithreading, o...
 
+</li>
+<li markdown="block">
+
 ![](/assets/people/thomas-nyman/0e748fba225e-thomas-nyman.webp)
 
 Ericsson
@@ -180,9 +213,15 @@ Ericsson
 
 Thomas Nyman holds a position as Expert in Trusted Hardware & Software Technologies at the telecommunications company Ericsson where he works with software and platfor...
 
+</li>
+</ul>
+
 ## More CHERITech events
 
 View the complete series
+
+<ul class="image-gallery record-gallery" markdown="block">
+<li markdown="block">
 
 ![](/assets/events/cheritech26/408459d34c43-cheritech26.webp)
 
@@ -194,6 +233,9 @@ Upcoming Conference
 
 CHERITech’26 will take place in Munich alongside Electronica / SEMICON Europa, one of the world’s largest electronics industry events!Hosted at the heart of the exhibi...
 
+</li>
+<li markdown="block">
+
 ![](/assets/events/cheritech25/0e6d3180c4d1-cheritech25.webp)
 
 Past Conference
@@ -203,3 +245,6 @@ Past Conference
 ### CHERITech'25 Conference
 
 CHERITech’25 brought together researchers, technologists, cybersecurity experts, and product developers for a dynamic exploration of Digital Security by Design. Now un...
+
+</li>
+</ul>

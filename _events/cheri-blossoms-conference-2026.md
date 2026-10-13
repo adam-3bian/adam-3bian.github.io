@@ -92,11 +92,11 @@ The CHERI Research Centre at the Computer Laboratory, Codasip, and lowRISC hoste
 
 ### Pre-Conference Tutorial: Hands-on Introduction to CHERI and CHERIoT
 
+![CHERI tutorial showing a demonstration in a classroom](/assets/events/cheri-blossoms-conference-2026/aff155aa7b69-cheri-tutorial-showing-a-demonstration-in-a-classroom.jpg){: .image-left }
+
 The CHERI Research Centre at the Computer Laboratory, Codasip, and lowRISC co-organised a comprehensive tutorial on CHERI alongside the conference.
 
 The agenda for the tutorial can be found on the tutorial webpage.
-
-![CHERI tutorial showing a demonstration in a classroom](/assets/events/cheri-blossoms-conference-2026/aff155aa7b69-cheri-tutorial-showing-a-demonstration-in-a-classroom.jpg)
 
 ## Agenda
 
@@ -270,29 +270,68 @@ Talk Title: All-Caps — Extending Capabilities Across the Whole SoC; Author: Sa
 
 ## Exhibitors
 
+<ul class="image-gallery logo-gallery" markdown="block">
+<li markdown="block">
+
 ![Cantech Informatics logo](/assets/organisations/cantech-informatics-srl/7ef3653af98e-logo.png)
+
+</li>
+<li markdown="block">
 
 ![Capabilities Limited logo](/assets/organisations/capabilities-limited/0c30741ff5ce-logo.png)
 
+</li>
+<li markdown="block">
+
 ![CHERI logo](/assets/shared/source-assets/5a6300ace656-cheri.png)
+
+</li>
+<li markdown="block">
 
 ![CHERI Research Centre logo](/assets/shared/source-assets/171acadadd69-cheri-research-centre.png)
 
+</li>
+<li markdown="block">
+
 ![Codasip logo](/assets/organisations/codasip/ef815ad95752-logo.png)
+
+</li>
+<li markdown="block">
 
 ![lowRISC logo](/assets/organisations/lowrisc/d432df8a7ccf-logo.png)
 
+</li>
+<li markdown="block">
+
 ![Novomorphic logo](/assets/organisations/novomorphic/3f35c8ed2eaa-logo.png)
+
+</li>
+<li markdown="block">
 
 ![Parvat logo](/assets/organisations/parvat-infotech/983927485935-logo.png)
 
+</li>
+<li markdown="block">
+
 ![SCI Semiconductor logo](/assets/organisations/sci-semiconductor/89396ef186d7-logo.png)
+
+</li>
+<li markdown="block">
 
 ![Sensor IT logo](/assets/organisations/sensor-it/dc3ef17868db-logo.png)
 
+</li>
+<li markdown="block">
+
 ![UM Labs logo](/assets/organisations/um-labs/768e679cb95a-logo.png)
 
+</li>
+<li markdown="block">
+
 ![Wyvern Global logo](/assets/organisations/wyvern-global/795076e4b546-logo.png)
+
+</li>
+</ul>
 
 ## Venue
 
@@ -306,17 +345,32 @@ William Gates Building
 
 Cambridge CB3 0FD
 
+<ul class="image-gallery" markdown="block">
+<li markdown="block">
+
 ![William Gates building - Outside view](/assets/events/cheri-blossoms-conference-2026/32a1b43504b4-william-gates-building-outside-view.jpg)
+
+</li>
+<li markdown="block">
 
 ![CHERI Blossoms 2026 Robert Watson giving a talk](/assets/events/cheri-blossoms-conference-2026/aca481f6e08b-cheri-blossoms-2026-robert-watson-giving-a-talk.jpg)
 
+</li>
+<li markdown="block">
+
 ![CHERI Blossoms 2026 exhibition](/assets/events/cheri-blossoms-conference-2026/5d0055b14ce5-exhibition.jpg)
+
+</li>
+</ul>
 
 View map
 
 ## Speakers
 
 ### Keynote Speakers
+
+<ul class="image-gallery portrait-gallery" markdown="block">
+<li markdown="block">
 
 ![](/assets/people/alex-rebert/165b3d94aa33-alex-rebert.webp)
 
@@ -326,6 +380,9 @@ Google
 
 Alex Rebert is an engineer at Google, where he focuses on memory safety. Previously, he co-founded ForAllSecure and led the creation of Mayhem, the autonomous cyber re...
 
+</li>
+<li markdown="block">
+
 ![](/assets/people/kathleen-fisher/0a4fdc2deea1-kathleen-fisher.webp)
 
 ARIA
@@ -333,6 +390,9 @@ ARIA
 ### Kathleen Fisher
 
 Kathleen Fisher has been instrumental in bringing CHERI from research into national programmes. A long‑standing leader in secure systems and programming languages, she...
+
+</li>
+<li markdown="block">
 
 ![](/assets/people/maika-fohrenbach/0c4cb55de046-maika-fohrenbach.webp)
 
@@ -342,6 +402,9 @@ European Commission (DG CONNECT)
 
 Maika Föhrenbach connects CHERI to Europe’s regulatory future. She leads product security and certification policy at the European Commission and coordinates implement...
 
+</li>
+<li markdown="block">
+
 ![](/assets/people/ollie-whitehouse/18733daf6b43-ollie-whitehouse.webp)
 
 National Cyber Security Centre
@@ -349,6 +412,9 @@ National Cyber Security Centre
 ### Ollie Whitehouse
 
 Ollie is a fellow of the Royal Academy of Engineering whose career in cyber security spans over 30 years. Today he serves as the Chief Technical Officer for the Nation...
+
+</li>
+<li markdown="block">
 
 ![](/assets/people/sam-cater/61e7a8222d5c-sam-cater.webp)
 
@@ -358,7 +424,13 @@ BT
 
 Sam is a Research Technical Manager within BT’s Research and Commercialisation department, focussing on Cybersecurity technologies. Throughout his career, he has held ...
 
+</li>
+</ul>
+
 ### Featured Speakers
+
+<ul class="image-gallery portrait-gallery" markdown="block">
+<li markdown="block">
 
 ![](/assets/people/adam-finney/594a07796a78-adam-finney.webp)
 
@@ -368,6 +440,9 @@ CHERI Alliance
 
 Adam Finney is a CHERI technologist with over 20 years of systems experience, and a key driver of CHERI adoption. As Lead of the Adoption Programme and Marketing Worki...
 
+</li>
+<li markdown="block">
+
 ![](/assets/people/alexander-voyevoda/d4590afa2a27-alexander-voyevoda.webp)
 
 UM Labs
@@ -375,6 +450,9 @@ UM Labs
 ### Alexander Voyevoda
 
 Alex Voyevoda is a senior systems engineer focused on turning high‑assurance ideas into production systems. With over 30 years of experience in low‑level C systems on ...
+
+</li>
+<li markdown="block">
 
 ![](/assets/people/alfredo-mazzinghi/8eb5af657eda-alfredo-mazzinghi.webp)
 
@@ -384,6 +462,9 @@ Capabilities Limited
 
 Alfredo is a Research Assistant at University of Cambridge and Research Engineer at Capabilities Limited. Their main research interest is on memory safety in operating...
 
+</li>
+<li markdown="block">
+
 ![](/assets/people/andrew-murray/4471744b8d2d-andrew-murray.webp)
 
 The Good Penguin
@@ -391,6 +472,9 @@ The Good Penguin
 ### Andrew Murray
 
 Andrew Murray is founder and director of The Good Penguin, a UK based consultancy with a focus and passion for embedded Linux, low level and open-source software. The ...
+
+</li>
+<li markdown="block">
 
 ![](/assets/people/andy-moore/fe1dfa258b62-andy-moore.webp)
 
@@ -400,6 +484,9 @@ RISC-V International
 
 Andy Moore drives awareness and adoption of RISC‑V across its global member ecosystem. As Director of Marketing at RISC‑V International, and with deep prior experience...
 
+</li>
+<li markdown="block">
+
 ![](/assets/people/ben-fletcher/e01148dd42e4-ben-fletcher.webp)
 
 Codasip
@@ -407,6 +494,9 @@ Codasip
 ### Ben Fletcher
 
 Ben Fletcher has been involved in SoC development for over 25 years. He has worked in design, verification, software, and more recently Architecture. He has worked for...
+
+</li>
+<li markdown="block">
 
 ![](/assets/people/bradley-finn/6eb4013e94b7-bradley-finn.webp)
 
@@ -416,6 +506,9 @@ DSIT
 
 Bradley Finn is Head of Cyber Innovation Policy at the UK’s Department for Science, Innovation and Technology. He is responsible for polices and programmes to support ...
 
+</li>
+<li markdown="block">
+
 ![](/assets/people/carl-shaw/77510c8e2140-carl-shaw.webp)
 
 Codasip
@@ -423,6 +516,9 @@ Codasip
 ### Carl Shaw
 
 Carl Shaw is a hands-on technical expert with a diverse background in embedded systems and security engineering. His work focuses on the intersection of hardware and s...
+
+</li>
+<li markdown="block">
 
 ![](/assets/people/dave-harcourt/3c144f42f3a1-dave-harcourt.webp)
 
@@ -432,6 +528,9 @@ BT
 
 Dave Harcourt is the CISO for BT International and a BT Fellow, with decades of experience shaping cyber security at scale. He sets security strategy for BT and influe...
 
+</li>
+<li markdown="block">
+
 ![](/assets/people/david-chisnall/df30b5f06c8a-david-chisnall.webp)
 
 SCI Semiconductor
@@ -439,6 +538,9 @@ SCI Semiconductor
 ### David Chisnall
 
 David Chisnall has been working on CHERI since 2012, when he joined the University of Cambridge to lead the languages and compiler work on the CHERI project. He joined...
+
+</li>
+<li markdown="block">
 
 ![](/assets/people/david-musliner/c608481cf4e5-david-musliner.webp)
 
@@ -448,6 +550,9 @@ Smart Information Flow Technologies (SIFT)
 
 Dr. David Musliner is a Senior Research Fellow at Smart Information Flow Technologies (SIFT).
 
+</li>
+<li markdown="block">
+
 ![](/assets/people/edoardo-marangoni/a366a93d3f87-edoardo-marangoni.webp)
 
 SCI Semiconductor
@@ -455,6 +560,9 @@ SCI Semiconductor
 ### Edoardo Marangoni
 
 Edoardo has been working with compilers for the majority of his professional career. After working in the Wasm space, he joined SCI Semiconductor and started working o...
+
+</li>
+<li markdown="block">
 
 ![](/assets/people/javier-orensanz-martinez/f71577bde6b0-javier-orensanz-martinez.webp)
 
@@ -464,6 +572,9 @@ lowRISC
 
 Javier is a business leader with over 25 years of experience in the semiconductors industry. He was the general manager of Arm’s tools business unit for 8 years, and i...
 
+</li>
+<li markdown="block">
+
 ![](/assets/people/jennifer-jackson/8046421faf06-jennifer-jackson.webp)
 
 University of Birmingham
@@ -471,6 +582,9 @@ University of Birmingham
 ### Jennifer Jackson
 
 Jennifer is an Electronic Engineer with experience in FPGA design, Arm v8.2, computer security, capability architectures, CHERI, LLVM tool chain, RISC-V development an...
+
+</li>
+<li markdown="block">
 
 ![](/assets/people/jessica-clarke/fd8c66132687-jessica-clarke.webp)
 
@@ -480,6 +594,9 @@ University of Cambridge
 
 Jessica Clarke is a Senior Research Software Engineer at the University of Cambridge, contributing to the maintenance and development of CHERI LLVM and CheriBSD, and h...
 
+</li>
+<li markdown="block">
+
 ![](/assets/people/jianyi-cheng/c69c7513a086-jianyi-cheng.webp)
 
 University of Edinburgh
@@ -487,6 +604,9 @@ University of Edinburgh
 ### Jianyi Cheng
 
 Jianyi Cheng is an Assistant Professor in the School of Informatics at the University of Edinburgh. His research aims to automatically produce small, fast, low-energy,...
+
+</li>
+<li markdown="block">
 
 ![](/assets/people/johannes-muller/2d9a131b99d2-johannes-muller.webp)
 
@@ -496,6 +616,9 @@ RPTU Kaiserslautern-Landau
 
 Johannes Müller received his Dipl.-Ing. degree in Electrical and Computer Engineering from the Technische Universität Kaiserslautern in 2018. He is currently a Ph.D. c...
 
+</li>
+<li markdown="block">
+
 ![](/assets/people/john-baldwin/175c0c4228f3-john-baldwin.webp)
 
 Ararat River Consulting, LLC
@@ -503,6 +626,9 @@ Ararat River Consulting, LLC
 ### John Baldwin
 
 John Baldwin has been an active FreeBSD developer for over 25 years working on a broad range of subsystems in the kernel and bits of userspace. John has also contribut...
+
+</li>
+<li markdown="block">
 
 ![](/assets/people/john-goodacre/e4083dbbb0d9-john-goodacre.webp)
 
@@ -512,6 +638,9 @@ UKRI
 
 Prof. John Goodacre: University of Manchester, Director Digital Security by Design: UKRIJohn is Professor of Computer Architectures at the Department of Computer Scien...
 
+</li>
+<li markdown="block">
+
 ![](/assets/people/jonathan-woodruff/efabe0a1a306-jonathan-woodruff.webp)
 
 Capabilities Limited
@@ -519,6 +648,9 @@ Capabilities Limited
 ### Jonathan Woodruff
 
 Dr Jonathan Woodruff is a Senior Research Associate with expertise in processor architecture and microarchitecture as well as low-level software optimisation. Speciali...
+
+</li>
+<li markdown="block">
 
 ![](/assets/people/louis-emile-ploix/4dbe468cc870-louis-emile-ploix.webp)
 
@@ -528,6 +660,9 @@ lowRISC
 
 Louis-Emile is a current undergraduate at the University of Oxford, and a formal verification engineer for lowRISC working on the COSMIC project.
 
+</li>
+<li markdown="block">
+
 ![](/assets/people/luca-muller/77c9e62d16fb-luca-muller.webp)
 
 German Research Center for Artificial Intelligence (DFKI)
@@ -535,6 +670,9 @@ German Research Center for Artificial Intelligence (DFKI)
 ### Luca Müller
 
 Luca Müller received the M.Sc. degree in computer science from University of Bremen in 2025. He is currently a Researcher in the Cyber-Physical Systems Group at the Ge...
+
+</li>
+<li markdown="block">
 
 ![](/assets/people/marno-van-der-maas/339812a45c3f-marno-van-der-maas.webp)
 
@@ -544,6 +682,9 @@ lowRISC
 
 Dr Marno van der Maas completed a PhD at the University of Cambridge in 2022 on protecting trusted execution environments from side-channel attacks. During this time, ...
 
+</li>
+<li markdown="block">
+
 ![](/assets/people/manu-ravishankar/2413e0ff7418-manu-ravishankar.webp)
 
 PA Consulting
@@ -551,6 +692,9 @@ PA Consulting
 ### Manu Ravishankar
 
 Manu Ravishankar is a Principal Consultant specialising in innovation strategy, programme design and technology commercialisation. Formerly Head of Insights and Impact...
+
+</li>
+<li markdown="block">
 
 ![](/assets/people/merve-gulmez/fadb272ff434-merve-gulmez.webp)
 
@@ -560,6 +704,9 @@ Ericsson
 
 Merve Gülmez is a researcher at Ericsson Security Research. She holds a PhD in Computer Science from KU Leuven, and her research focuses on systems security, memory sa...
 
+</li>
+<li markdown="block">
+
 ![](/assets/people/mike-eftimakis/95bf8c70c443-mike-eftimakis.webp)
 
 CHERI Alliance
@@ -567,6 +714,9 @@ CHERI Alliance
 ### Mike Eftimakis
 
 Mike Eftimakis has an extensive background in the semiconductor and electronics industry with 30 years in senior technical and business roles. He has a rich history of...
+
+</li>
+<li markdown="block">
 
 ![](/assets/people/murat-cakmak/b0884bf33a49-murat-cakmak.webp)
 
@@ -576,6 +726,9 @@ Microservice Store
 
 Murat is Co-CEO @ Microservice Store.
 
+</li>
+<li markdown="block">
+
 ![](/assets/people/paul-metzger/b93ea76e11ec-paul-metzger.webp)
 
 University of Cambridge
@@ -583,6 +736,9 @@ University of Cambridge
 ### Paul Metzger
 
 Dr Paul Metzger is a Research Associate in the Department of Computer Science and Technology at the University of Cambridge. He recently started working on CHERI OS AP...
+
+</li>
+<li markdown="block">
 
 ![](/assets/people/peter-cox/3d6e1b48619c-peter-cox.webp)
 
@@ -592,6 +748,9 @@ UM Labs
 
 Peter Cox is the CEO and founder of UM Labs, a UK R&D company specialising in cybersecurity for real-time application on IP networks. Peter has over 30 years’ experien...
 
+</li>
+<li markdown="block">
+
 ![](/assets/people/robert-watson/97c4cc7057eb-robert-watson.webp)
 
 CHERI Alliance, University of Cambridge
@@ -599,6 +758,9 @@ CHERI Alliance, University of Cambridge
 ### Robert Watson
 
 Professor Robert N. M. Watson is a Professor of Systems, Security, and Architecture at the University of Cambridge’s Department of Computer Science and Technology. His...
+
+</li>
+<li markdown="block">
 
 ![](/assets/people/samuel-stark/c3806563e058-samuel-stark.webp)
 
@@ -608,6 +770,9 @@ University of Cambridge
 
 Samuel W. Stark is a final-year PhD student at the University of Cambridge, studying alternate capabilty systems under Simon W. Moore, with a published article on the ...
 
+</li>
+<li markdown="block">
+
 ![](/assets/people/simon-moore/867833a2bb89-simon-moore.webp)
 
 University of Cambridge
@@ -615,6 +780,9 @@ University of Cambridge
 ### Simon Moore
 
 Professor Simon Moore is Professor of Computer Engineering at the University of Cambridge, where he leads research in computer architecture with a focus on secure and ...
+
+</li>
+<li markdown="block">
 
 ![](/assets/people/tariq-kurd/1284cdf835ad-tariq-kurd.webp)
 
@@ -624,6 +792,9 @@ Codasip
 
 Tariq Kurd has been involved in CPU architecture, design, and verification for over 25 years, primarily in the embedded field. He has worked on VLIW, multithreading, o...
 
+</li>
+<li markdown="block">
+
 ![](/assets/people/thomas-nyman/0e748fba225e-thomas-nyman.webp)
 
 Ericsson
@@ -632,9 +803,15 @@ Ericsson
 
 Thomas Nyman holds a position as Expert in Trusted Hardware & Software Technologies at the telecommunications company Ericsson where he works with software and platfor...
 
+</li>
+</ul>
+
 ## More CHERI Blossoms events
 
 View the complete series
+
+<ul class="image-gallery record-gallery" markdown="block">
+<li markdown="block">
 
 ![](/assets/events/cheri-blossoms-conference-2027/17bb25790594-cheri-blossoms-conference-2027.webp)
 
@@ -646,6 +823,9 @@ Upcoming Conference
 
 CHERI Blossoms Conference 2027 Pre-conference Tutorial: 21 April 2027 Main Conference Date: 22-23 April 2027 Location: Department of Computer Science and Technology – ...
 
+</li>
+<li markdown="block">
+
 ![](/assets/events/cheri-blossoms-tutorial-2026/88adf0d2ae82-cheri-blossoms-tutorial-2026.webp)
 
 Past Tutorial
@@ -656,6 +836,9 @@ Past Tutorial
 
 The CHERI Research Centre at the Computer Laboratory, Codasip, and lowRISC co-organised a comprehensive tutorial on CHERI alongside the CHERI Blossoms 2026 conference....
 
+</li>
+<li markdown="block">
+
 ![](/assets/events/cheri-blossoms-conference-2025/ae43d5d29c6c-cheri-blossoms-conference-2025.webp)
 
 Past Conference
@@ -665,3 +848,6 @@ Past Conference
 ### CHERI Blossoms Conference 2025
 
 The CHERI Blossoms Conference 2025 invited researchers, technologists, industry leaders, and business strategists to contribute to the advancement of digital security ...
+
+</li>
+</ul>

@@ -49,7 +49,7 @@ Not every layer requires the same level of effort. Much of the complexity is han
 
 ## Where are you in the value chain?
 
-![Value chain](/assets/shared/source-assets/42beef82414f-value-chain.webp)
+![Value chain](/assets/shared/source-assets/42beef82414f-value-chain.webp){: .image-full }
 
 ### Processor designers
 

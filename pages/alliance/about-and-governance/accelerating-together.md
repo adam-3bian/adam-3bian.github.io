@@ -29,7 +29,7 @@ The CHERI ecosystem includes several organisations with complementary missions. 
 
 ## Strengthening the CHERI Ecosystem Together
 
-![CHERI Logo](/assets/shared/branding/9899bc30b0-logo-blue.webp)
+![CHERI Logo](/assets/shared/branding/9899bc30b0-logo-blue.webp){: .image-logo }
 
 ; The CHERI Alliance Coordinating the global CHERI ecosystem
 
@@ -43,7 +43,7 @@ Supporting ecosystem alignment through standards activities, certification, and 
 
 Promoting CHERI adoption through education, outreach, and community engagement.
 
-![The Capable Hub logo](/assets/shared/source-assets/70ab53193721-the-capable-hub.png)
+![The Capable Hub logo](/assets/shared/source-assets/70ab53193721-the-capable-hub.png){: .image-logo }
 
 ; The Capable Hub Engineering open-source CHERI software
 
@@ -57,7 +57,7 @@ Providing shared engineering infrastructure, including CI systems and hardware-i
 
 Helping mature research software and prototypes into reusable components for real-world deployment.
 
-![CHERI Research Centre logo](/assets/shared/source-assets/171acadadd69-cheri-research-centre.png)
+![CHERI Research Centre logo](/assets/shared/source-assets/171acadadd69-cheri-research-centre.png){: .image-logo }
 
 ; The CHERI Research Centre Advancing CHERI through world leading research
 

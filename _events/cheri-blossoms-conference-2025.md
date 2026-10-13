@@ -123,9 +123,18 @@ View Agenda
 
 Fisher Building, St John’s College, Cambridge, UK
 
+<ul class="image-gallery" markdown="block">
+<li markdown="block">
+
 ![St John's College, Cambridge](/assets/events/cheri-blossoms-conference-2025/ed92a3406ed6-st-johns-college-front.jpg)
 
+</li>
+<li markdown="block">
+
 ![St John's College, Cambridge, with the Bridge of Sighs](/assets/events/cheri-blossoms-conference-2025/c901fe4e463d-st-johns-college-bridge-of-sighs.jpg)
+
+</li>
+</ul>
 
 ### Address:
 
@@ -137,6 +146,9 @@ View map
 
 View the complete series
 
+<ul class="image-gallery record-gallery" markdown="block">
+<li markdown="block">
+
 ![](/assets/events/cheri-blossoms-conference-2027/17bb25790594-cheri-blossoms-conference-2027.webp)
 
 Upcoming Conference
@@ -146,6 +158,9 @@ Upcoming Conference
 ### CHERI Blossoms Conference 2027
 
 CHERI Blossoms Conference 2027 Pre-conference Tutorial: 21 April 2027 Main Conference Date: 22-23 April 2027 Location: Department of Computer Science and Technology – ...
+
+</li>
+<li markdown="block">
 
 ![](/assets/events/cheri-blossoms-tutorial-2026/88adf0d2ae82-cheri-blossoms-tutorial-2026.webp)
 
@@ -157,6 +172,9 @@ Past Tutorial
 
 The CHERI Research Centre at the Computer Laboratory, Codasip, and lowRISC co-organised a comprehensive tutorial on CHERI alongside the CHERI Blossoms 2026 conference....
 
+</li>
+<li markdown="block">
+
 ![](/assets/events/cheri-blossoms-conference-2026/1e39a7b87075-cheri-blossoms-conference-2026.webp)
 
 Past Conference
@@ -166,3 +184,6 @@ Past Conference
 ### CHERI Blossoms Conference 2026
 
 The CHERI Blossoms Conference 2026 was the must-attend event for forward-thinking decision-makers and innovators! This exclusive gathering was tailored for industry le...
+
+</li>
+</ul>

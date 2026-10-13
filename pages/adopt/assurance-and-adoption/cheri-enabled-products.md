@@ -30,7 +30,7 @@ The CHERI Enabled programme provides a structured way to review and document CHE
 
 The CHERI Enabled product directory contains products certified under the programme. Each entry identifies a specific product and version and publishes the associated certification record.
 
-![CHERI Enabled logo - 2026](/assets/shared/cheri-enabled-2026/f85dd9d7f416-cheri-enabled-2026.webp)
+![CHERI Enabled logo - 2026](/assets/shared/cheri-enabled-2026/f85dd9d7f416-cheri-enabled-2026.webp){: .image-logo }
 
 ### Microsoft CHERIoT-Ibex 1.0
 
@@ -38,7 +38,7 @@ An open-source 32-bit RISC-V microcontroller processor IP implementing the CHERI
 
 The product was certified on 26 March 2026. The CHERIoT certification record covers its architecture, formal verification, test approach, tag protection, temporal-safety model, debug assumptions, and excluded non-CHERI configuration.
 
-![CHERI Enabled logo - 2026](/assets/shared/cheri-enabled-2026/f85dd9d7f416-cheri-enabled-2026.webp)
+![CHERI Enabled logo - 2026](/assets/shared/cheri-enabled-2026/f85dd9d7f416-cheri-enabled-2026.webp){: .image-logo }
 
 ### Codasip X730-MP4-Lux 1.0
 

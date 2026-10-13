@@ -33,7 +33,7 @@ Thank you to all who attended!
 
 You can find the recordings and slides for the event below or view the recordings directly on our YouTube channel.
 
-![CHERI Alliance 12th November conference flyer](/assets/news/cybersecurity-by-design-from-research-to-industry-conference-report/8a1142aa0d27-hero.png)
+![CHERI Alliance 12th November conference flyer](/assets/news/cybersecurity-by-design-from-research-to-industry-conference-report/8a1142aa0d27-hero.png){: .image-full }
 
 ## About
 
@@ -97,9 +97,18 @@ CHERI Software Ecosystem | Carl Shaw - Codasip
 
 The Hub8 MX – the white building opposite the church at the end of Chester Walk.
 
+<ul class="image-gallery" markdown="block">
+<li markdown="block">
+
 ![Hub8 MX building](/assets/events/cybersecurity-by-design-conference-2024/91b8f80f186f-hub8-mx-building.jpg)
 
+</li>
+<li markdown="block">
+
 ![Hub8 MX building with the conference banner outside](/assets/events/cybersecurity-by-design-conference-2024/c3d2b6621166-hub8-mx-building-with-the-conference-banner-outside.jpg)
+
+</li>
+</ul>
 
 ### Address:
 

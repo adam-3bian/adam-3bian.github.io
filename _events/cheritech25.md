@@ -135,17 +135,38 @@ Talk Title: State of the Union: Which Virtual Machines can I run on CHERI?; Auth
 
 ## Exhibitors
 
+<ul class="image-gallery logo-gallery" markdown="block">
+<li markdown="block">
+
 ![Cantech Informatics logo](/assets/organisations/cantech-informatics-srl/7ef3653af98e-logo.png)
+
+</li>
+<li markdown="block">
 
 ![Capabilities Limited logo](/assets/organisations/capabilities-limited/0c30741ff5ce-logo.png)
 
+</li>
+<li markdown="block">
+
 ![CHERI logo](/assets/shared/source-assets/5a6300ace656-cheri.png)
+
+</li>
+<li markdown="block">
 
 ![Codasip logo](/assets/organisations/codasip/ef815ad95752-logo.png)
 
+</li>
+<li markdown="block">
+
 ![lowRISC logo](/assets/organisations/lowrisc/d432df8a7ccf-logo.png)
 
+</li>
+<li markdown="block">
+
 ![SCI Semiconductor logo](/assets/organisations/sci-semiconductor/89396ef186d7-logo.png)
+
+</li>
+</ul>
 
 ## Venue
 
@@ -161,15 +182,30 @@ Manchester
 
 M1 7JR
 
+<ul class="image-gallery" markdown="block">
+<li markdown="block">
+
 ![](/assets/events/cheritech25/ef637dc529a7-renold-exterior-1.webp)
+
+</li>
+<li markdown="block">
 
 ![](/assets/events/cheritech25/fac017a9829e-renold-front-aspect-2-full-size-1.webp)
 
+</li>
+<li markdown="block">
+
 ![](/assets/events/cheritech25/52890a4990fd-renold-lecture-theatre.webp)
+
+</li>
+</ul>
 
 View map
 
 ## Speakers
+
+<ul class="image-gallery portrait-gallery" markdown="block">
+<li markdown="block">
 
 ![](/assets/people/andrew-murray/4471744b8d2d-andrew-murray.webp)
 
@@ -179,6 +215,9 @@ The Good Penguin
 
 Andrew Murray is founder and director of The Good Penguin, a UK based consultancy with a focus and passion for embedded Linux, low level and open-source software. The ...
 
+</li>
+<li markdown="block">
+
 ![](/assets/people/carl-shaw/77510c8e2140-carl-shaw.webp)
 
 Codasip
@@ -186,6 +225,9 @@ Codasip
 ### Carl Shaw
 
 Carl Shaw is a hands-on technical expert with a diverse background in embedded systems and security engineering. His work focuses on the intersection of hardware and s...
+
+</li>
+<li markdown="block">
 
 ![](/assets/people/david-chisnall/df30b5f06c8a-david-chisnall.webp)
 
@@ -195,6 +237,9 @@ SCI Semiconductor
 
 David Chisnall has been working on CHERI since 2012, when he joined the University of Cambridge to lead the languages and compiler work on the CHERI project. He joined...
 
+</li>
+<li markdown="block">
+
 ![](/assets/people/dmitriy-yeliseyev/c90838071bbb-dmitriy-yeliseyev.webp)
 
 Wind River
@@ -202,6 +247,9 @@ Wind River
 ### Dmitriy Yeliseyev
 
 Dmitriy is an embedded systems software architect and technical expert with over 25 years of experience. Their career began in telecommunications, developing embedded ...
+
+</li>
+<li markdown="block">
 
 ![](/assets/people/donato-ferraro/cbef919a0a84-donato-ferraro.webp)
 
@@ -211,6 +259,9 @@ Minerva Systems, University of Modena and Reggio Emilia
 
 Donato Ferraro is a Ph.D. student in Computer and Data Science for Technological and Social Innovation at the University of Modena and Reggio Emilia. He works with Min...
 
+</li>
+<li markdown="block">
+
 ![](/assets/people/jeremy-singer/c47e35e4cac6-jeremy-singer.webp)
 
 University of Glasgow
@@ -218,6 +269,9 @@ University of Glasgow
 ### Jeremy Singer
 
 Jeremy is a Reader in Programming Language Implementation at the University of Glasgow. He is the proud owner (or at least, custodian) of four Arm Morello boxes and tw...
+
+</li>
+<li markdown="block">
 
 ![](/assets/people/jessica-clarke/fd8c66132687-jessica-clarke.webp)
 
@@ -227,6 +281,9 @@ University of Cambridge
 
 Jessica Clarke is a Senior Research Software Engineer at the University of Cambridge, contributing to the maintenance and development of CHERI LLVM and CheriBSD, and h...
 
+</li>
+<li markdown="block">
+
 ![](/assets/people/john-goodacre/e4083dbbb0d9-john-goodacre.webp)
 
 UKRI
@@ -234,6 +291,9 @@ UKRI
 ### John Goodacre
 
 Prof. John Goodacre: University of Manchester, Director Digital Security by Design: UKRIJohn is Professor of Computer Architectures at the Department of Computer Scien...
+
+</li>
+<li markdown="block">
 
 ![](/assets/people/john-thomson/a30b210fc678-john-thomson.webp)
 
@@ -243,6 +303,9 @@ lowRISC
 
 John works at lowRISC as a senior product manager where he advocates the company’s mission of getting open silicon source everywhere. He worked on delivery of key proj...
 
+</li>
+<li markdown="block">
+
 ![](/assets/people/jonathan-woodruff/efabe0a1a306-jonathan-woodruff.webp)
 
 Capabilities Limited
@@ -250,6 +313,9 @@ Capabilities Limited
 ### Jonathan Woodruff
 
 Dr Jonathan Woodruff is a Senior Research Associate with expertise in processor architecture and microarchitecture as well as low-level software optimisation. Speciali...
+
+</li>
+<li markdown="block">
 
 ![](/assets/people/ka-wing-li/559cc13375fd-ka-wing-li.webp)
 
@@ -259,6 +325,9 @@ University of Cambridge
 
 Ka Wing Li is a PhD student from the University of Cambridge. He focuses on computer security, with backgrounds in compilers, programming languages, operating systems ...
 
+</li>
+<li markdown="block">
+
 ![](/assets/people/marno-van-der-maas/339812a45c3f-marno-van-der-maas.webp)
 
 lowRISC
@@ -266,6 +335,9 @@ lowRISC
 ### Marno van der Maas
 
 Dr Marno van der Maas completed a PhD at the University of Cambridge in 2022 on protecting trusted execution environments from side-channel attacks. During this time, ...
+
+</li>
+<li markdown="block">
 
 ![](/assets/people/merve-gulmez/fadb272ff434-merve-gulmez.webp)
 
@@ -275,6 +347,9 @@ Ericsson
 
 Merve Gülmez is a researcher at Ericsson Security Research. She holds a PhD in Computer Science from KU Leuven, and her research focuses on systems security, memory sa...
 
+</li>
+<li markdown="block">
+
 ![](/assets/people/mike-eftimakis/95bf8c70c443-mike-eftimakis.webp)
 
 CHERI Alliance
@@ -282,6 +357,9 @@ CHERI Alliance
 ### Mike Eftimakis
 
 Mike Eftimakis has an extensive background in the semiconductor and electronics industry with 30 years in senior technical and business roles. He has a rich history of...
+
+</li>
+<li markdown="block">
 
 ![](/assets/people/murali-vijayaraghavan/326629bec34e-murali-vijayaraghavan.webp)
 
@@ -291,6 +369,9 @@ Google
 
 Murali is a formal methods and security researcher at Google.
 
+</li>
+<li markdown="block">
+
 ![](/assets/people/robert-watson/97c4cc7057eb-robert-watson.webp)
 
 CHERI Alliance, University of Cambridge
@@ -298,6 +379,9 @@ CHERI Alliance, University of Cambridge
 ### Robert Watson
 
 Professor Robert N. M. Watson is a Professor of Systems, Security, and Architecture at the University of Cambridge’s Department of Computer Science and Technology. His...
+
+</li>
+<li markdown="block">
 
 ![](/assets/people/tariq-kurd/1284cdf835ad-tariq-kurd.webp)
 
@@ -307,6 +391,9 @@ Codasip
 
 Tariq Kurd has been involved in CPU architecture, design, and verification for over 25 years, primarily in the embedded field. He has worked on VLIW, multithreading, o...
 
+</li>
+<li markdown="block">
+
 ![](/assets/people/thomas-nyman/0e748fba225e-thomas-nyman.webp)
 
 Ericsson
@@ -315,9 +402,15 @@ Ericsson
 
 Thomas Nyman holds a position as Expert in Trusted Hardware & Software Technologies at the telecommunications company Ericsson where he works with software and platfor...
 
+</li>
+</ul>
+
 ## More CHERITech events
 
 View the complete series
+
+<ul class="image-gallery record-gallery" markdown="block">
+<li markdown="block">
 
 ![](/assets/events/cheritech26/408459d34c43-cheritech26.webp)
 
@@ -329,6 +422,9 @@ Upcoming Conference
 
 CHERITech’26 will take place in Munich alongside Electronica / SEMICON Europa, one of the world’s largest electronics industry events!Hosted at the heart of the exhibi...
 
+</li>
+<li markdown="block">
+
 ![](/assets/events/cheritech25-reloaded/7bce58279add-cheritech25-reloaded.webp)
 
 Past Online event
@@ -338,3 +434,6 @@ Past Online event
 ### CHERITech'25 Reloaded
 
 CHERITech’25 Reloaded took place online on 4th December 2025. Participants joined us for live Q&A sessions with speakers from the main CHERITech’25 conference and revi...
+
+</li>
+</ul>

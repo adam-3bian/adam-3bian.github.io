@@ -34,7 +34,7 @@ For a detailed technical comparison of Rust and CHERI, see CHERI and Rust - Tech
 
 Rust provides strong protection for safe Rust code. This makes Rust a strong choice for new software. However, real systems rarely consist entirely of safe Rust.
 
-![Impossible to control all code](/assets/shared/source-assets/a9f89a0614af-rust-and-cheri.webp)
+![Impossible to control all code](/assets/shared/source-assets/a9f89a0614af-rust-and-cheri.webp){: .image-full }
 
 Most applications rely on more than just their own code. They also depend on unsafe Rust code, existing C and C++ libraries, third-party components, operating systems, drivers, runtimes, memory allocators, and firmware.
 

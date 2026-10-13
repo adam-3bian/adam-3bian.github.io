@@ -47,15 +47,30 @@ The tutorial was a perfect opportunity to get to know what the CHERI technology 
 
 The Hands-on Introduction to CHERI and CHERIoT was held in Cambridge UK, at the Department of Computer Science and Technology in the William Gates Building, on the University of Cambridge’s West Cambridge site, located off Madingley Road.
 
+<ul class="image-gallery" markdown="block">
+<li markdown="block">
+
 ![](/assets/events/cheri-blossoms-tutorial-2026/0f7d142b47af-1920px-university-of-cambridge-computer-laboratory.jpg)
+
+</li>
+<li markdown="block">
 
 ![Welcome booth](/assets/events/cheri-blossoms-tutorial-2026/0e31e40cf715-welcome.jpg)
 
+</li>
+<li markdown="block">
+
 ![Tutorial Room](/assets/events/cheri-blossoms-tutorial-2026/2a691dd331b2-tutorial-session.jpg)
+
+</li>
+</ul>
 
 ## More CHERI Blossoms events
 
 View the complete series
+
+<ul class="image-gallery record-gallery" markdown="block">
+<li markdown="block">
 
 ![](/assets/events/cheri-blossoms-conference-2027/17bb25790594-cheri-blossoms-conference-2027.webp)
 
@@ -67,6 +82,9 @@ Upcoming Conference
 
 CHERI Blossoms Conference 2027 Pre-conference Tutorial: 21 April 2027 Main Conference Date: 22-23 April 2027 Location: Department of Computer Science and Technology – ...
 
+</li>
+<li markdown="block">
+
 ![](/assets/events/cheri-blossoms-conference-2026/1e39a7b87075-cheri-blossoms-conference-2026.webp)
 
 Past Conference
@@ -77,6 +95,9 @@ Past Conference
 
 The CHERI Blossoms Conference 2026 was the must-attend event for forward-thinking decision-makers and innovators! This exclusive gathering was tailored for industry le...
 
+</li>
+<li markdown="block">
+
 ![](/assets/events/cheri-blossoms-conference-2025/ae43d5d29c6c-cheri-blossoms-conference-2025.webp)
 
 Past Conference
@@ -86,3 +107,6 @@ Past Conference
 ### CHERI Blossoms Conference 2025
 
 The CHERI Blossoms Conference 2025 invited researchers, technologists, industry leaders, and business strategists to contribute to the advancement of digital security ...
+
+</li>
+</ul>

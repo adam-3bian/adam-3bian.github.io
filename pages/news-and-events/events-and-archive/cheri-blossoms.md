@@ -52,6 +52,9 @@ Connect with the people building, deploying, researching, and standardising CHER
 
 Dates, venue information, registration updates, and programme details are kept on each event page.
 
+<ul class="image-gallery record-gallery" markdown="block">
+<li markdown="block">
+
 ![](/assets/events/cheri-blossoms-conference-2027/17bb25790594-cheri-blossoms-conference-2027.webp)
 
 Upcoming Conference
@@ -62,9 +65,15 @@ Upcoming Conference
 
 CHERI Blossoms Conference 2027 Pre-conference Tutorial: 21 April 2027 Main Conference Date: 22-23 April 2027 Location: Department of Computer Science and Technology – ...
 
+</li>
+</ul>
+
 ## CHERI Blossoms archive
 
 Previous conference, tutorial, and livestream pages retain the schedules, speakers, slides, and recordings published by the Alliance.
+
+<ul class="image-gallery record-gallery" markdown="block">
+<li markdown="block">
 
 ![](/assets/events/cheri-blossoms-tutorial-2026/88adf0d2ae82-cheri-blossoms-tutorial-2026.webp)
 
@@ -76,6 +85,9 @@ Past Tutorial
 
 The CHERI Research Centre at the Computer Laboratory, Codasip, and lowRISC co-organised a comprehensive tutorial on CHERI alongside the CHERI Blossoms 2026 conference....
 
+</li>
+<li markdown="block">
+
 ![](/assets/events/cheri-blossoms-conference-2026/1e39a7b87075-cheri-blossoms-conference-2026.webp)
 
 Past Conference
@@ -86,6 +98,9 @@ Past Conference
 
 The CHERI Blossoms Conference 2026 was the must-attend event for forward-thinking decision-makers and innovators! This exclusive gathering was tailored for industry le...
 
+</li>
+<li markdown="block">
+
 ![](/assets/events/cheri-blossoms-conference-2025/ae43d5d29c6c-cheri-blossoms-conference-2025.webp)
 
 Past Conference
@@ -95,3 +110,6 @@ Past Conference
 ### CHERI Blossoms Conference 2025
 
 The CHERI Blossoms Conference 2025 invited researchers, technologists, industry leaders, and business strategists to contribute to the advancement of digital security ...
+
+</li>
+</ul>

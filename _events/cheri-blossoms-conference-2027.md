@@ -41,6 +41,9 @@ You can view details of the previous conference, CHERI Blossoms 2026, here.
 
 View the complete series
 
+<ul class="image-gallery record-gallery" markdown="block">
+<li markdown="block">
+
 ![](/assets/events/cheri-blossoms-tutorial-2026/88adf0d2ae82-cheri-blossoms-tutorial-2026.webp)
 
 Past Tutorial
@@ -50,6 +53,9 @@ Past Tutorial
 ### Hands-on Introduction to CHERI and CHERIoT
 
 The CHERI Research Centre at the Computer Laboratory, Codasip, and lowRISC co-organised a comprehensive tutorial on CHERI alongside the CHERI Blossoms 2026 conference....
+
+</li>
+<li markdown="block">
 
 ![](/assets/events/cheri-blossoms-conference-2026/1e39a7b87075-cheri-blossoms-conference-2026.webp)
 
@@ -61,6 +67,9 @@ Past Conference
 
 The CHERI Blossoms Conference 2026 was the must-attend event for forward-thinking decision-makers and innovators! This exclusive gathering was tailored for industry le...
 
+</li>
+<li markdown="block">
+
 ![](/assets/events/cheri-blossoms-conference-2025/ae43d5d29c6c-cheri-blossoms-conference-2025.webp)
 
 Past Conference
@@ -70,3 +79,6 @@ Past Conference
 ### CHERI Blossoms Conference 2025
 
 The CHERI Blossoms Conference 2025 invited researchers, technologists, industry leaders, and business strategists to contribute to the advancement of digital security ...
+
+</li>
+</ul>

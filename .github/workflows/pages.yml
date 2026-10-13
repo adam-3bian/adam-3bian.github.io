@@ -28,7 +28,24 @@ jobs:
       - name: Validate content
         run: bundle exec ruby scripts/check_content.rb
       - name: Build Jekyll
-        run: bundle exec jekyll build --destination _site
+        run: JEKYLL_ENV=production bundle exec jekyll build --destination _site
+      - name: Check responsive images and accessible viewer
+        run: |
+          npm install --prefix "$RUNNER_TEMP/image-tests" --no-save playwright@1.56.1 axe-core
+          "$RUNNER_TEMP/image-tests/node_modules/.bin/playwright" install --with-deps chromium --only-shell
+          python3 -m http.server 4000 --bind 127.0.0.1 --directory _site > "$RUNNER_TEMP/image-server.log" 2>&1 &
+          image_server_pid=$!
+          trap 'kill "$image_server_pid"' EXIT
+          export NODE_PATH="$RUNNER_TEMP/image-tests/node_modules"
+          export AXE_PATH="$RUNNER_TEMP/image-tests/node_modules/axe-core/axe.min.js"
+          node scripts/test_images.cjs
+      - name: Save image test results and screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: image-tests
+          path: reports/image-tests/
+          if-no-files-found: ignore
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload site

@@ -26,9 +26,12 @@ If your product is compromised in the field, can its underlying platform limit t
 
 This is one of the central problems CHERI can help address.
 
+<figure class="image-full" markdown="block">
+
 ![Long-life utility platforms must keep evolving without allowing each new software component to enlarge the blast radius of a failure.](/assets/news/beyond-software-patching/80ee4d1338-beyond_software_patching_blog_1.png)
 
-Long-life utility platforms must keep evolving without allowing each new software component to enlarge the blast radius of a failure.
+<figcaption>Long-life utility platforms must keep evolving without allowing each new software component to enlarge the blast radius of a failure.</figcaption>
+</figure>
 
 ## The cost often extends far beyond "just the patch"
 
@@ -102,15 +105,21 @@ The Energy Management System could decide when electricity should be consumed, s
 
 Over time, third-party energy providers, aggregators or equipment suppliers may also introduce applications that participate in optimisation or flexibility services, increasing the importance of giving each component only the authority it requires.
 
+<figure class="image-full" markdown="block">
+
 ![Figure 1: Greater intelligence at the grid edge across smart metering and energy management platforms](/assets/news/beyond-software-patching/dea3b9883d-Picture1.png)
 
-Figure 1: Greater intelligence at the grid edge across smart metering and energy management platforms
+<figcaption>Figure 1: Greater intelligence at the grid edge across smart metering and energy management platforms</figcaption>
+</figure>
 
 CHERI can strengthen this architecture by enforcing separation between software components. Communications software could exchange approved messages without being able to read cryptographic keys or invoke energy-control functions, while an analytics or optimisation application could use selected operational data without gaining access to billing information, device identity or the wider metering platform.
 
+<figure class="image-full" markdown="block">
+
 ![Figure 2: CHERI can permit approved interfaces while blocking access between compartments by default](/assets/news/beyond-software-patching/d1b9354a30-Picture2.png)
 
-Figure 2: CHERI can permit approved interfaces while blocking access between compartments by default
+<figcaption>Figure 2: CHERI can permit approved interfaces while blocking access between compartments by default</figcaption>
+</figure>
 
 If one compartment is compromised, attacker-controlled code can remain limited to the access that compartment was explicitly given, provided the boundaries and approved interfaces are correctly designed.
 
@@ -150,9 +159,12 @@ Product teams can now run representative software on CHERI platforms and generat
 
 A focused pilot can place one CHERI-enabled workload alongside an existing software stack. CHERI support is already available or under active development across major operating environments including Linux, FreeRTOS and Zephyr, reducing the need for product teams to start from scratch.
 
+<figure class="image-full" markdown="block">
+
 ![Figure 3: A focused evaluation produces evidence before a wider platform commitment](/assets/news/beyond-software-patching/cef8c62f96-Picture3.png)
 
-Figure 3: A focused evaluation produces evidence before a wider platform commitment
+<figcaption>Figure 3: A focused evaluation produces evidence before a wider platform commitment</figcaption>
+</figure>
 
 Identify: Select one product, workload or security boundary with meaningful exposure and consequence.
 

@@ -11,7 +11,7 @@ Version: 1.01
 
 Date: August 2024
 
-![pdf](/assets/shared/source-assets/d63b7eac09b7-pdf-file-icon.webp)
+![pdf](/assets/shared/source-assets/d63b7eac09b7-pdf-file-icon.webp){: .image-icon }
 
 Download the CHERI Alliance IP Policy – The PDF is the official version. The text is reproduced below for convenience, but if there is any difference between the two versions, the PDF takes precedence..
 

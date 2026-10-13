@@ -58,7 +58,7 @@ In general:
 
 Educational material, tutorials, outreach content, and technical recommendations are normally released under an open Creative Commons licence - preferably CC-BY-SA
 
-![CC-BY-SA](/assets/shared/source-assets/bacc656ec8f4-cc-by-sa.webp)
+![CC-BY-SA](/assets/shared/source-assets/bacc656ec8f4-cc-by-sa.webp){: .image-icon }
 
 Software examples, compliance assets, and technical contributions are normally released under permissive open-source licences to encourage adoption and contribution
 

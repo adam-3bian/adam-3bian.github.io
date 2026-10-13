@@ -27,6 +27,9 @@ related:
 
 The next opportunities to learn about CHERI, hear from the community, and take part in Alliance activity.
 
+<ul class="image-gallery record-gallery" markdown="block">
+<li markdown="block">
+
 ![](/assets/events/cheritech26/408459d34c43-cheritech26.webp)
 
 Upcoming Conference
@@ -37,6 +40,9 @@ Upcoming Conference
 
 CHERITech’26 will take place in Munich alongside Electronica / SEMICON Europa, one of the world’s largest electronics industry events!Hosted at the heart of the exhibi...
 
+</li>
+<li markdown="block">
+
 ![](/assets/events/cheri-blossoms-conference-2027/17bb25790594-cheri-blossoms-conference-2027.webp)
 
 Upcoming Conference
@@ -46,3 +52,6 @@ Upcoming Conference
 ### CHERI Blossoms Conference 2027
 
 CHERI Blossoms Conference 2027 Pre-conference Tutorial: 21 April 2027 Main Conference Date: 22-23 April 2027 Location: Department of Computer Science and Technology – ...
+
+</li>
+</ul>

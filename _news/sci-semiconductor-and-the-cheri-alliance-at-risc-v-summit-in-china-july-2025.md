@@ -23,11 +23,23 @@ In the latter half of July I got the fantastic opportunity to re-visit Shanghai 
 
 The reason for this trip was to exhibit at the 5th China RISC-V Summit and represent SCI Semiconductor, the CHERI Alliance, and the CHERIoT-Ibex open-source project jointly maintained by Google, Microsoft and SCI Semiconductor. In collaboration with the fantastic teams at both SOPIC and VeriSilicon, SCI Semi had the opportunity to present a comprehensive half day CHERI Memory Safety workshop, and promote the technology at an impressive booth on the exhibit floor.
 
+<ul class="image-gallery" markdown="block">
+<li markdown="block">
+
 ![SCI Semiconductor booth with people](/assets/news/sci-semiconductor-and-the-cheri-alliance-at-risc-v-summit-in-china-july-2025/93d639039375-sci-semiconductor-booth-with-people.jpg)
+
+</li>
+<li markdown="block">
 
 ![SCI Semiconductor Banner with information about CHERI](/assets/news/sci-semiconductor-and-the-cheri-alliance-at-risc-v-summit-in-china-july-2025/a59ec32de96f-sci-semiconductor-banner-with-information-about-cheri.jpg)
 
+</li>
+<li markdown="block">
+
 ![SCI Semiconductor booth](/assets/news/sci-semiconductor-and-the-cheri-alliance-at-risc-v-summit-in-china-july-2025/3612ad4b48e4-sci-semiconductor-booth.jpg)
+
+</li>
+</ul>
 
 The 5th RISC-V summit was the biggest and most successful so far with over 4,000 in-person attendees from 17 countries, and a whopping 250K+ viewers attending the live streaming.
 
@@ -51,17 +63,26 @@ We had a super busy time at our booth with lots of visitors eager to know more a
 
 For the first time the China conference event was preceded by a tutorial day where SCI Semi presented to a packed room and eager audience on cyber security challenges, and the CHERI background, technology, opportunity, and growth. The introduction was followed by an interactive practical session on how to implement compartmentalisation as enabled by CHERIoT-RTOS.
 
+<ul class="image-gallery" markdown="block">
+<li markdown="block">
+
 ![](/assets/news/sci-semiconductor-and-the-cheri-alliance-at-risc-v-summit-in-china-july-2025/e33736ec8b38-afb4-1.jpg)
+
+</li>
+<li markdown="block">
 
 ![](/assets/news/sci-semiconductor-and-the-cheri-alliance-at-risc-v-summit-in-china-july-2025/59b22363f2af-afb5.jpg)
 
+</li>
+</ul>
+
 The practical session was similar to one that can be found on the CHERIoT GitHub site at https://github.com/CHERIoT-Platform/cheriot-rtos/tree/main/exercises/01.compartmentalisation. This exercise starts from a firmware image that simulates a bug that gives an attacker arbitrary-code execution. It reads JavaScript programs (as compiled bytecode) from the UART and executes them. The JavaScript has a set of FFI functions exposed that allow arbitrary capability manipulation, including pointer chasing. This simulates an attacker building a code-reuse attack, with a lot more power than is normally possible on a CHERI system. The goal of the exercise was to show how, by applying compartmentalisation, we can limit the damage that an attacker can do.
 
-![Practical session with participants](/assets/news/sci-semiconductor-and-the-cheri-alliance-at-risc-v-summit-in-china-july-2025/199829da2761-practical-session-with-participants.jpg)
+![Practical session with participants](/assets/news/sci-semiconductor-and-the-cheri-alliance-at-risc-v-summit-in-china-july-2025/199829da2761-practical-session-with-participants.jpg){: .image-left }
 
 The CHERIoT (CHERI for IoT) platform was originally developed at Microsoft and is now part of an effort spanning multiple companies. It builds on top of CHERI to provide a solid foundation for secure embedded devices. Whilst CHERI provides referential integrity (pointers cannot be forged), spatial memory safety (pointers carry bounds that cannot be extended), call gates, and so on, CHERIoT extends this with a complete platform providing deterministic use-after-free protection, a lightweight compartment model, lexically-scoped delegation of objects across compartment calls, and many more benefits. (Source https://cheriot.org/)
 
-![CHERIoT Platform GitHub page](/assets/news/sci-semiconductor-and-the-cheri-alliance-at-risc-v-summit-in-china-july-2025/4b07d130970c-cheriot-platform-github-page.png)
+![CHERIoT Platform GitHub page](/assets/news/sci-semiconductor-and-the-cheri-alliance-at-risc-v-summit-in-china-july-2025/4b07d130970c-cheriot-platform-github-page.png){: .image-full }
 
 More details on CHERIoT can be found at https://cheriot.org/ along with the latest version of CHERIoT Programmers’ Guide authored by David Chisnall, Director of Systems Architecture at SCI Semi, and one of the inventors of CHERIoT.
 
@@ -69,11 +90,20 @@ The Microsoft background Technical Report can be found here: https://www.microso
 
 To finish of a wonderful event, we were invited to join the organizing team on a Huangpu River Cruise Dinner for some great food, drink and networking, on a slightly drizzly evening, where I took my latest favourite wallpaper image.
 
+<ul class="image-gallery" markdown="block">
+<li markdown="block">
+
 ![Shanghai skyline](/assets/news/sci-semiconductor-and-the-cheri-alliance-at-risc-v-summit-in-china-july-2025/e739a07e0647-shanghai-skyline.jpg)
 
 Many thanks to SOPIC and the fantastic team at VeriSilicon for their support throughout the whole event, and for a final shot of the nighttime Shanghai skyline.
 
+</li>
+<li markdown="block">
+
 ![Shanghai skyline](/assets/news/sci-semiconductor-and-the-cheri-alliance-at-risc-v-summit-in-china-july-2025/718c52c29d70-shanghai-skyline-2.jpg)
+
+</li>
+</ul>
 
 Official Image library (be warned there’s hundreds of pictures):
 

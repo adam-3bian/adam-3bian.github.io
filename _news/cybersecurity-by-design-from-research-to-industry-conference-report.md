@@ -21,7 +21,7 @@ Following this, John Goodacre took us through the Digital Security by Design (DS
 
 The first round of keynotes was rounded off with an excellent deep dive into CHERI at a (semi!) technical level, delivered by Prof. Robert Watson from Cambridge University, one of the primary researchers behind CHERI technology.
 
-![Robert Watson speaking at the 'Cybersecurity by Design' conference on 12th November 2024](/assets/news/cybersecurity-by-design-from-research-to-industry-conference-report/3436bc5cd5b7-robert-watson-speaking.png)
+![Robert Watson speaking at the 'Cybersecurity by Design' conference on 12th November 2024](/assets/news/cybersecurity-by-design-from-research-to-industry-conference-report/3436bc5cd5b7-robert-watson-speaking.png){: .image-left }
 
 The session breaks gave attendees a chance to explore the exhibition stands and network with a great mix of familiar faces and new people. Whilst we’re waiting on CHERI silicon beyond Morello there’s lots of good work happening with FPGA based systems. Codasip had their FPGA evaluation platform on show and my company, lowRISC, brought along some Sonata boards (a CHERIoT evaluation platform that has been generating significant interest and uptake within the CHERI community). SCI Semi were also present, demonstrating their latest CHERIoT RTOS work on Sonata.
 
@@ -29,7 +29,7 @@ The second round of keynotes opened with Reid Derby from CyNam whose talk took a
 
 My own keynote was next; I talked about the role of collaborative engineering and how we at lowRISC, a non-profit engineering company, leverage this approach to build open silicon, highlighting as a case study our co-creation of the world’s first commercial-grade open source chip, OpenTitan Earl Grey. This has been developed with a number of industrial and academic partners including Google, and is now the plan of record security chip for Chromebooks. I also covered our work with the UKRI funded Sunburst project — to which we have recently welcomed SCI Semiconductor as partners — to develop Sonata, an evaluation platform for the CHERI derived CHERIoT-Ibex CPU core that has received significant interest and is the primary platform for the latest DSbD cohort. SCI will be using this as a base to accelerate the development of their recently announced Iceni line of CHERIoT microcontrollers.
 
-![Gavin Ferris speaking at the 'Cybersecurity by Design' conference on 12th November 2024](/assets/news/cybersecurity-by-design-from-research-to-industry-conference-report/9b753de7e859-gavin-ferris-speaking.png)
+![Gavin Ferris speaking at the 'Cybersecurity by Design' conference on 12th November 2024](/assets/news/cybersecurity-by-design-from-research-to-industry-conference-report/9b753de7e859-gavin-ferris-speaking.png){: .image-right }
 
 With the keynotes complete, Mike Eftimakis, a fellow Founding Director, took the stage to officially launch the CHERI Alliance! He discussed why this is such an exciting time for CHERI, with over a decade of research and development now bearing fruit. For example, in addition to Arm’s existing Morello platform, Codasip have announced availability of commercial CHERI enabled IP and SCI aims to release the first members of their Iceni family of CHERIoT-based silicon next year. The Alliance will play a critical role as we enter the first phase of true commercial adoption for CHERI, everyone together to drive standardisation and create a coherent ecosystem around this seminal hardware security technology.
 

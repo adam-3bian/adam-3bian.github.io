@@ -35,7 +35,7 @@ Because they operate at different layers, Rust and CHERI are best viewed as comp
 
 Even developers taking great care in developing code usually only write a very small part of the end application. Most code comes from operating systems, libraries and drivers developed by third parties, sourced from open-source repositories, or increasingly generated using AI-assisted tools.
 
-![Impossible to control all code](/assets/shared/source-assets/a9f89a0614af-rust-and-cheri.webp)
+![Impossible to control all code](/assets/shared/source-assets/a9f89a0614af-rust-and-cheri.webp){: .image-full }
 
 As we see a surge in software supply chain attacks, with repositories being compromised through malicious contributions, it becomes increasingly difficult to blindly trust these elements. CHERI helps protect your system by isolating various elements in compartments, and operating systems can even be optimised for CHERI. This is the work we do in the related working groups (Linux, FreeRTOS, Zephyr, seL4… but also that commercial vendors do, e.g. VxWorks by Wind River.
 

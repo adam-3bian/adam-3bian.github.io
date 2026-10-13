@@ -32,7 +32,7 @@ Today’s processors access memory using pointers, which represent an address in
 
 If a program contains a bug, a pointer can accidentally (or maliciously) be changed to access memory that it was never supposed to reach.
 
-![Traditional pointers vs capabilities](/assets/shared/source-assets/6b266981fee5-pointer-vs-capability.webp)
+![Traditional pointers vs capabilities](/assets/shared/source-assets/6b266981fee5-pointer-vs-capability.webp){: .image-full }
 
 ## Capabilities: pointers with built-in protection
 
@@ -74,7 +74,7 @@ Each compartment receives its own capabilities and cannot freely access the memo
 
 This approach, known as compartmentalisation, helps contain bugs and security vulnerabilities, preventing problems in one part of a system from affecting everything else. The smaller the compartment, the smaller the impact of a bug or attack.
 
-![Compartmentalisation prevents contagion](/assets/shared/source-assets/ec94c211adbb-compartmentalisation.webp)
+![Compartmentalisation prevents contagion](/assets/shared/source-assets/ec94c211adbb-compartmentalisation.webp){: .image-full }
 
 ## Working with existing software
 

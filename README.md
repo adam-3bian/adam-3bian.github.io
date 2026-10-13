@@ -39,7 +39,24 @@ All Markdown images are responsive and stay inside the shared page container. Us
 ![Descriptive alt text](/assets/example.jpg){: .image-full }
 ```
 
-Left and right images float beside text on larger screens (up to 45% width, capped at 25rem). At 640px and below, both stack at 100% of the container; `.image-full` always fills the container. Ordinary Markdown images retain their natural aspect ratio. A semantic `<figure class="image-left">` / `<figure class="image-right">` / `<figure class="image-full">` with `<figcaption>` also works when captions are needed. Do not use fixed inline widths or alignment HTML attributes. The `image-full` class means the entire **content** width, not an overflow beyond the viewport.
+Alternate ordinary editorial illustrations left, right, left throughout each document, resetting at its beginning. Place an image before the prose it illustrates so that the text can wrap alongside it. Existing explicit choices take precedence; exclude hero images, logos, portraits, galleries, and full-width technical illustrations from the sequence.
+
+Left and right images float at 42% of the article width above 960px. They stack at 100% at tablet and mobile widths, including 640px and below, to keep text columns readable. Headings, galleries, and the end of the article clear floats. `.image-full` fills the entire content container without an additional article-width cap. Images retain their aspect ratio. Do not use fixed inline widths or alignment HTML attributes.
+
+Use a semantic figure for an existing caption, keeping the image as native Markdown:
+
+```html
+<figure class="image-full" markdown="block">
+
+![Descriptive alt text](/assets/example.jpg)
+
+<figcaption>Existing caption text</figcaption>
+</figure>
+```
+
+Use `.image-logo` or `.image-icon` for an isolated mark with bounded display dimensions. Consecutive photographs and imported directories use a simple `<ul class="image-gallery" markdown="block">` with `<li markdown="block">` items. Add `.portrait-gallery`, `.logo-gallery`, or `.record-gallery` for portraits, logo collections, or related-record teasers respectively; keep each image with its existing name, caption, or description. These groups never participate in the left/right sequence. Use detailed diagrams, charts, and screenshots at full width, and do not invent captions.
+
+Editorial images and photo galleries can be enlarged in a native `<dialog>` viewer. Click/tap a suitable image, or focus it and press Enter/Space. Previous/Next buttons and arrow keys navigate only the current article's images; Escape, Close, or the backdrop dismisses the viewer. Captions come from existing figcaptions or alt text. Focus and page scroll position return to the opening image. There is no animation. Logos, icons, portraits, record teasers, hero images, and images in links or interactive elements are excluded. Add `data-no-image-viewer` to opt another image or group out; `data-full-src` can identify an original if a thumbnail is added later. Without JavaScript or native dialog support, the original content stays readable.
 
 ## Build and GitHub Pages
 
@@ -48,12 +65,25 @@ bundle exec ruby scripts/check_content.rb
 bundle exec jekyll build
 ```
 
+The content validator renders Markdown before checking image references, so it also covers figures, galleries, reference-style images, and HTML images while ignoring fenced examples. Browser regression checks run in the Pages workflow before deployment and cover every page with body images and representative records from all ten collections at 1440, 1024, 768, 640, and 375px. They check built image paths, containment, wrapping, float clearing, the viewer's keyboard/focus/scroll behaviour, captions, touch controls, reduced motion, linked-image exclusions, and the no-JavaScript fallback. Run the same checks locally with:
+
+```sh
+# Install test tooling separately from the site (not a production dependency).
+npm install --prefix /tmp/cheri-image-tests --no-save playwright@1.56.1 axe-core
+NODE_PATH=/tmp/cheri-image-tests/node_modules /tmp/cheri-image-tests/node_modules/.bin/playwright install chromium --only-shell
+python3 -m http.server 4000 --directory _site
+# In another terminal:
+NODE_PATH=/tmp/cheri-image-tests/node_modules AXE_PATH=/tmp/cheri-image-tests/node_modules/axe-core/axe.min.js node scripts/test_images.cjs
+```
+
+Set `SITE_DIR` and `SITE_URL` to test a different build or a repository subpath. Test results are written to `reports/image-tests/results.json`.
+
 Jekyll writes the static site into _site. The site uses Jekyll 3.10, standard Liquid, and Kramdown. One small parser plugin keeps text containing a pipe character as a paragraph; the source Markdown stays unchanged. Set url and baseurl in _config.yml for your repository. Internal links and images use relative_url, including body illustrations, so repository subpaths work. For GitHub Pages, build with GitHub Actions and publish _site; the built-in Pages safe-mode build does not load custom plugins.
 
 For a hosted static build, use bundle exec jekyll build --destination dist. The .openai directory only identifies the private hosted preview; it is omitted from the downloadable project ZIP.
 
 ## Files
 
-The content stays under pages and the ten separate collection folders. One document layout, one card component, and one listing include render all types; the people, news, and events layout files only select their collection. The schemas come from the supplied v1.4 document. Presentation lives in assets/viewer.css and assets/viewer.js. The Content checks page shows missing optional values and the latest data audit; reports also include verification results for the native build, rendered links, and a repository subpath. Browser visual testing was unavailable in the build environment.
+The content stays under pages and the ten separate collection folders. One document layout, one card component, and one listing include render all types; the people, news, and events layout files only select their collection. The schemas come from the supplied v1.4 document. Presentation lives in assets/viewer.css and assets/viewer.js. The Content checks page shows missing optional values and the latest data audit; reports also include verification results for the native build, rendered links, and a repository subpath.
 
 The source snapshot is adam-3bian/adam-3bian.github.io at commit 7f3839872c8fea6a709b99d241880de0f3915c42. Original image bytes are bundled. The check script validates data and image paths; it does not claim that external websites or downloads are available.

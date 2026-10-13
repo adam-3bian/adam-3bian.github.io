@@ -5,6 +5,8 @@ require 'yaml'
 require 'date'
 require 'time'
 require 'fileutils'
+require 'cgi'
+require 'uri'
 
 root = File.expand_path('..', __dir__)
 config = Jekyll.configuration('source' => root, 'quiet' => true)
@@ -151,14 +153,17 @@ settings.fetch('aliases', {}).each do |url, target|
 end
 
 images = {}
+markdown = site.find_converter_instance(Jekyll::Converters::Markdown)
 objects.each do |object|
   entry = map_lookup[object.url]
   next unless entry
-  image_urls = object.content.scan(/!\[[^\n]*?\]\(([^\s)]+)\)/).flatten
+  # Render before extracting: also validate reference-style Markdown and images
+  # inside semantic galleries/figures, while ignoring examples in code fences.
+  image_urls = markdown.convert(object.content).scan(/<img\b[^>]*?\bsrc\s*=\s*["']([^"']+)["']/i).flatten.map { |url| CGI.unescapeHTML(url) }
   image_urls << object.data['image_url'] if object.data['image_url']
   image_urls.each do |url|
     next unless url.start_with?('/')
-    path = File.join(root, url.sub(%r{^/}, ''))
+    path = File.join(root, URI::DEFAULT_PARSER.unescape(url.split(/[?#]/).first).sub(%r{^/}, ''))
     errors << "Missing image #{url}: #{entry['file']}" unless File.file?(path)
     images[url] = true
   end

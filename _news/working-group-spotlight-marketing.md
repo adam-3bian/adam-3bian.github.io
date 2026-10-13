@@ -15,7 +15,7 @@ related:
 
 Join the CHERI Alliance – Collaborate, Communicate, Be Seen CHERI is reshaping how we think about secure technology. At the heart of this effort is the CHERI Alliance, a growing community committed to secure by design innovation. By joining us, you…
 
-![CHERI logo](/assets/shared/source-assets/5a6300ace656-cheri.png)
+![CHERI logo](/assets/shared/source-assets/5a6300ace656-cheri.png){: .image-logo }
 
 ## Join the CHERI Alliance - Collaborate, Communicate, Be Seen
 

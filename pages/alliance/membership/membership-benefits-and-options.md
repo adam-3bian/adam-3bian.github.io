@@ -100,7 +100,7 @@ For motivated people interested in education, outreach, events, content creation
 
 The CHERI Alliance is a small, lean, non-profit organisation. Membership fees help fund collaboration infrastructure, administration, communication activities, and community events, many of which are offered with free attendance to maximise participation and encourage more organisations to discover CHERI.
 
-![DCMS Logo](/assets/shared/source-assets/62e58da9da64-dcms-s.webp)
+![DCMS Logo](/assets/shared/source-assets/62e58da9da64-dcms-s.webp){: .image-logo }
 
 We are fortunate to receive support from the UK Department for Digital, Culture, Media and Sport (DCMS), but membership contributions remain essential to sustaining and growing Alliance activities.
 

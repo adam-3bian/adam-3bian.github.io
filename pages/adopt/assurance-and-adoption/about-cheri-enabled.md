@@ -46,7 +46,7 @@ For buyers, this reduces uncertainty. For product developers, it provides an ind
 
 ## How certification works
 
-![Certification Process](/assets/shared/source-assets/8651dcf7d9cf-certification-process.webp)
+![Certification Process](/assets/shared/source-assets/8651dcf7d9cf-certification-process.webp){: .image-full }
 
 Products are assessed through a structured review process:
 

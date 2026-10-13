@@ -25,7 +25,7 @@ The release is aimed at developers who want to build and experiment with memory-
 
 ## Why Try CHERI-seL4
 
-![CHERI-seL4: Why?](/assets/news/cheri-sel4-and-cheri-microkit-released/8b01b36a4468-cheri-sel4-why.png)
+![CHERI-seL4: Why?](/assets/news/cheri-sel4-and-cheri-microkit-released/8b01b36a4468-cheri-sel4-why.png){: .image-full }
 
 seL4 is a formally verified microkernel known for enforcing strong isolation between protection domains in separate address spaces. However, seL4 does not currently provide protection between components in the same address space.
 
@@ -59,7 +59,7 @@ A set of exercises and tutorials to get developers started with CHERI on seL4
 
 ## About Microkit
 
-![](/assets/news/cheri-sel4-and-cheri-microkit-released/16467bfc72a2-cheri-sel4-5.png)
+![](/assets/news/cheri-sel4-and-cheri-microkit-released/16467bfc72a2-cheri-sel4-5.png){: .image-full }
 
 Microkit simplifies seL4 development by abstracting away low-level kernel primitives. It allows you to define a static security policy and deploy isolated components without needing to write complex seL4 setup code.
 
