@@ -1,0 +1,7 @@
+{%- assign image_fragments = reader_content | split: '<img ' -%}
+{%- capture sized_content -%}{{- image_fragments[0] -}}{%- for fragment in image_fragments offset: 1 -%}
+  {%- assign image_attributes = fragment | split: '>' | first -%}{%- assign intrinsic_source = image_attributes | split: 'src="' | last | split: '"' | first -%}
+  {%- if site.baseurl != '' -%}{%- assign intrinsic_prefix = intrinsic_source | slice: 0, site.baseurl.size -%}{%- if intrinsic_prefix == site.baseurl -%}{%- assign intrinsic_source = intrinsic_source | remove_first: site.baseurl -%}{%- endif -%}{%- endif -%}
+  {%- assign intrinsic_size = site.data.image_sizes[intrinsic_source] -%}<img {% if intrinsic_size %}{% unless image_attributes contains 'width=' or image_attributes contains 'height=' %}width="{{ intrinsic_size[0] }}" height="{{ intrinsic_size[1] }}" {% endunless %}{% endif %}{{- fragment -}}
+{%- endfor -%}{%- endcapture -%}
+{%- assign reader_content = sized_content -%}

@@ -16,6 +16,7 @@ layout: default
   {% if reader_content contains '<h1' %}{% assign reader_content = reader_content | replace: '<h5', '<h6' | replace: '</h5>', '</h6>' | replace: '<h4', '<h5' | replace: '</h4>', '</h5>' | replace: '<h3', '<h4' | replace: '</h3>', '</h4>' | replace: '<h2', '<h3' | replace: '</h2>', '</h3>' | replace: '<h1', '<h2' | replace: '</h1>', '</h2>' %}{% endif %}
   {% if reader_content contains '<table' %}{% assign reader_content = reader_content | replace: '<table', '<div class="table-scroll" role="region" aria-label="Scrollable table" tabindex="0"><table' | replace: '</table>', '</table></div>' %}{% endif %}
   {% assign reader_content = reader_content | replace: '<pre', '<pre tabindex="0"' %}
+  {% include intrinsic-images.html %}
   {% assign image_prefix = '/assets/' | relative_url | prepend: 'src="' %}
   {% assign href_prefix = '/' | relative_url | prepend: 'href="' %}
   {% comment %}Generated page links already use relative_url; protect their prefix before rewriting raw Markdown links.{% endcomment %}

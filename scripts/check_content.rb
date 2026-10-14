@@ -8,6 +8,7 @@ require 'fileutils'
 require 'cgi'
 require 'uri'
 require 'digest'
+require_relative 'image_dimensions'
 
 root = File.expand_path('..', __dir__)
 config = Jekyll.configuration('source' => root, 'quiet' => true)
@@ -405,6 +406,13 @@ end
 File.write(File.join(root, '_data/checks.yml'), YAML.dump(report))
 File.write(File.join(root, '_data/relationships.yml'), YAML.dump(relation_data))
 File.write(File.join(root, '_data/contents.json'), JSON.pretty_generate(contents) + "\n")
+image_sizes = images.keys.filter_map do |url|
+  next unless url.start_with?('/')
+  path = File.join(root, URI::DEFAULT_PARSER.unescape(url.split(/[?#]/).first).sub(%r{^/}, ''))
+  size = ImageDimensions.read(path) if File.file?(path)
+  [url, size] if size
+end.to_h
+File.write(File.join(root, '_data/image_sizes.json'), JSON.pretty_generate(image_sizes) + "\n")
 FileUtils.mkdir_p(File.join(root, 'reports'))
 File.write(File.join(root, 'reports/index-navigation.json'), JSON.pretty_generate(index_pages) + "\n")
 public_urls = objects.reject { |object| object.data['alternate'] || object.data['published'] == false || object.data['layout'] == 'redirect' || settings.fetch('aliases', {}).key?(object.url) || settings.fetch('discovery_exclusions', []).include?(object.url) }.map(&:url).uniq.sort

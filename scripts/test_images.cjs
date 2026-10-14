@@ -71,8 +71,12 @@ async function loaded(page, route) {
             const collection = image.closest('article[data-collection]');
             if ((collection && !image.closest('.image-viewer')) || image.closest('.card')) {
               const rect = image.getBoundingClientRect();
-              const expected = image.classList.contains('image-portrait') || image.closest('.portrait-gallery') ? 1 : 3;
-              if (rect.width && Math.abs(rect.width / rect.height - expected) > .02) errors.push(`Incorrect image ratio (${expected}:1): ${image.src}`);
+              const portrait = image.classList.contains('image-portrait') || image.closest('.portrait-gallery');
+              const framed = image.classList.contains('lead-image') || image.closest('.card, .record-gallery');
+              const boundedBrand = image.matches('.image-logo, .image-icon') || image.closest('.logo-gallery');
+              const expected = portrait ? 1 : framed ? 3 : boundedBrand ? null : image.naturalWidth / image.naturalHeight;
+              if (!framed && image.closest('.article-content') && !image.hasAttribute('width')) errors.push(`No intrinsic layout dimensions: ${image.src}`);
+              if (expected && rect.width && Math.abs(rect.width / rect.height - expected) > .02) errors.push(`Incorrect image ratio (${expected}:1): ${image.src}`);
               if (getComputedStyle(image).objectFit !== 'contain') errors.push(`Image may crop labels or portraits: ${image.src}`);
               if (getComputedStyle(image).objectPosition !== '50% 50%') errors.push(`Image is not centred: ${image.src}`);
             }

@@ -134,8 +134,16 @@ ordinary directory links in disclosures. No JavaScript is needed for disclosure.
 
 Use original artwork and verified portraits. Centre images with
 `object-position: center` and `object-fit: contain`; never stretch, trim lettering
-or manufacture photographs. Non-portrait frames are 3:1; speaker, team and board
-portraits are 1:1. Logos have transparent frames and inset spacing. Preserve
+or manufacture photographs. Header and thumbnail frames are 3:1; speaker, team and board
+portraits are 1:1. Article illustrations, screenshots and technical diagrams use
+their intrinsic proportions. `.image-full` allows detailed artwork to use the
+whole article width; galleries align their images and captions at the top.
+The content validator derives intrinsic dimensions from bundled image files
+using standard-library readers. The article template adds width/height hints
+where the source has none, reserving layout space while retaining original
+assets, alt text, captions and existing dimensions.
+
+Logos have transparent frames and inset spacing. Preserve
 intentional artwork backgrounds; remove accidental canvas backgrounds through
 reproducible SVG treatments, retaining original assets. For light artwork, the
 optional `image_background: dark` property supplies a contrasting primary-image
