@@ -28,6 +28,6 @@ David Chisnall has been working on CHERI since 2012, when he joined the [Univers
 
 ## CHERI Talks
 
-- CHERIoT-Kudu | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK
-- CHERIoT Audit | [CHERITech’25](/events/cheritech25/) — 14/11/2025, Manchester, UK
-- CHERIoT 2025 | [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK
+- CHERIoT-Kudu \| [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK
+- CHERIoT Audit \| [CHERITech’25](/events/cheritech25/) — 14/11/2025, Manchester, UK
+- CHERIoT 2025 \| [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK

@@ -23,4 +23,4 @@ Alex holds a Ph.D. in Computer Aided Design from the National Technical Universi
 
 ## CHERI Talks
 
-- Securing Real-Time Communication: Porting and running Edge Computing for mission critical services on Morello CHERI | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 27/03/2026, Cambridge, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D2-2.3-Peter-Cox-Securing-Real-Time-Communication-Porting-and-running-Edge-Computing-for-mission-critical-services-on-Morello-CHERI-CHERI-Blossoms-2026.pdf) · [Video](https://youtu.be/1s8YwStewjE)
+- Securing Real-Time Communication: Porting and running Edge Computing for mission critical services on Morello CHERI \| [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 27/03/2026, Cambridge, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D2-2.3-Peter-Cox-Securing-Real-Time-Communication-Porting-and-running-Edge-Computing-for-mission-critical-services-on-Morello-CHERI-CHERI-Blossoms-2026.pdf) · [Video](https://youtu.be/1s8YwStewjE)

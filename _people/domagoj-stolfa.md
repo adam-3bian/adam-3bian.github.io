@@ -22,4 +22,4 @@ Domagoj Stolfa is a researcher currently working at [Capabilities Limited](/orga
 
 ## CHERI Talks
 
-- Porting V8 to CHERI: An Overview | [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK
+- Porting V8 to CHERI: An Overview \| [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK

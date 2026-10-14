@@ -24,5 +24,5 @@ Andrew has previously worked at Arm within the Open Source Software team working
 
 ## CHERI Talks
 
-- The Capable Hub: Our Recent Work and Next Steps | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D1-2.6-Andrew-Murray-The-Capable-Hub-Our-Recent-Work-and-Next-Steps-CHERI-Blossoms-2026.pdf) · [Video](https://youtu.be/3f_bzB9HJxw)
-- Introducing a development Hub | [CHERITech’25](/events/cheritech25/) — 14/11/2025, Manchester, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2025/11/4.1-Andrew-Murray-A-development-hub-CHERITech25.pdf) · [Video](https://youtu.be/kl8KozsDjuc)
+- The Capable Hub: Our Recent Work and Next Steps \| [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D1-2.6-Andrew-Murray-The-Capable-Hub-Our-Recent-Work-and-Next-Steps-CHERI-Blossoms-2026.pdf) · [Video](https://youtu.be/3f_bzB9HJxw)
+- Introducing a development Hub \| [CHERITech’25](/events/cheritech25/) — 14/11/2025, Manchester, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2025/11/4.1-Andrew-Murray-A-development-hub-CHERITech25.pdf) · [Video](https://youtu.be/kl8KozsDjuc)

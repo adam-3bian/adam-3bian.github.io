@@ -70,6 +70,8 @@ The link checker uses Python's standard library. To check a repository subpath, 
 
 All Markdown images are responsive and stay inside the shared page container. Use a Kramdown **inline** attribute list immediately after the image (on the same line) to opt into an alignment. Examples use placeholder paths; replace them with existing files in `assets/`:
 
+The site uses native GFM, supported by both production and GitHub Pages builds. Escape literal pipes as `\|` in prose and lists so they do not become accidental tables; leave fenced code literal.
+
 ```markdown
 ![Descriptive alt text](/assets/example.jpg){: .image-left }
 

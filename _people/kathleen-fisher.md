@@ -21,4 +21,4 @@ Kathleen Fisher has been instrumental in bringing CHERI from research into natio
 
 ## CHERI Talks
 
-- Featured Message | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK
+- Featured Message \| [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK

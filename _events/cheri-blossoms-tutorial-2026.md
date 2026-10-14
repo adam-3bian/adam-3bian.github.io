@@ -44,9 +44,9 @@ Participants explored memory safety, compartmentalisation, CHERI-enabled operati
 
 The agenda of the tutorial was:
 
-| --- | --- | ---
+\| --- \| --- \| ---
 
-| | 9:30 – 10:30 | Part I | Introduction to CHERI, memory safety and compartmentalization (1h) | | 10:45 – 11:45 | Part I | CHERI software experimentation on CheriBSD/Morello (1h) | | 11:45 – 12:45 | Light lunch with sandwiches (1h) | | | 12:45 – 13:45 | Part II | CHERI-RISC-V, Codasip X730 and [CHERI Linux](/software/cheri-linux/) (1h) | | 14:00 – 15:00 | Part II | CHERI-RISC-V, Codasip X730 and CHERI Linux (1h) | | 15:15 – 16:15 | Part III | CHERIoT, lowRISC’s [Sonata](/hardware/sonata/) FPGA and CHERIoT RTOS (1h) | | 16:30 – 17:30 | Part III | CHERIoT, lowRISC’s Sonata FPGA and CHERIoT RTOS (1h) |
+\| \| 9:30 – 10:30 \| Part I \| Introduction to CHERI, memory safety and compartmentalization (1h) \| \| 10:45 – 11:45 \| Part I \| CHERI software experimentation on CheriBSD/Morello (1h) \| \| 11:45 – 12:45 \| Light lunch with sandwiches (1h) \| \| \| 12:45 – 13:45 \| Part II \| CHERI-RISC-V, Codasip X730 and [CHERI Linux](/software/cheri-linux/) (1h) \| \| 14:00 – 15:00 \| Part II \| CHERI-RISC-V, Codasip X730 and CHERI Linux (1h) \| \| 15:15 – 16:15 \| Part III \| CHERIoT, lowRISC’s [Sonata](/hardware/sonata/) FPGA and CHERIoT RTOS (1h) \| \| 16:30 – 17:30 \| Part III \| CHERIoT, lowRISC’s Sonata FPGA and CHERIoT RTOS (1h) \|
 
 The tutorial was a perfect opportunity to get to know what the CHERI technology is, what research areas are related to it, and how to get started experimenting with CHERI-extended hardware-software stacks. Participants were expected to read the “CHERI: Hardware-Enabled C/C++ Memory Protection at Scale” article published in the IEEE Security & Privacy magazine.
 

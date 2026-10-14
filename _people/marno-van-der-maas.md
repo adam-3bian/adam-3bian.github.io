@@ -25,6 +25,6 @@ At [lowRISC](/organisations/lowrisc/) CIC, Dr Van der Maas works on open silicon
 
 ## CHERI Talks
 
-- COSMIC verification: comprehensive, end-to-end formal proofs of CVA6-CHERI | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK
-- Sonata®: A platform for high-integrity operational technology | [CHERITech’25](/events/cheritech25/) — 14/11/2025, Manchester, UK
-- Repository Working Group presentation | [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK
+- COSMIC verification: comprehensive, end-to-end formal proofs of CVA6-CHERI \| [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK
+- Sonata®: A platform for high-integrity operational technology \| [CHERITech’25](/events/cheritech25/) — 14/11/2025, Manchester, UK
+- Repository Working Group presentation \| [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK

@@ -55,27 +55,27 @@ There were thought-provoking speeches, exhibitions showcasing open-source and co
 
 ## Talks & Slides
 
-Incentivising future security | [Paul Waller](/people/paul-waller/) - NCSC (12:37)
+Incentivising future security \| [Paul Waller](/people/paul-waller/) - NCSC (12:37)
 
-Digital Security by Design Challenge - Securing the future of computing | [John Goodacre](/people/john-goodacre/) - DSbD (20:52)
+Digital Security by Design Challenge - Securing the future of computing \| [John Goodacre](/people/john-goodacre/) - DSbD (20:52)
 
-CHERI Capability Hardware Enhanced RISC Instructions | Dr [Robert Watson](/people/robert-watson/) - University of Cambridge (33:51)
+CHERI Capability Hardware Enhanced RISC Instructions \| Dr [Robert Watson](/people/robert-watson/) - University of Cambridge (33:51)
 
-An Innovation Ecosystem to encourage Cybersecurity by Design? | Reid Derby - CyNam (18:49)
+An Innovation Ecosystem to encourage Cybersecurity by Design? \| Reid Derby - CyNam (18:49)
 
-Collaborative engineering | [Gavin Ferris](/people/gavin-ferris/) - [lowRISC](/organisations/lowrisc/) (20:56)
+Collaborative engineering \| [Gavin Ferris](/people/gavin-ferris/) - [lowRISC](/organisations/lowrisc/) (20:56)
 
-Launching the CHERI Alliance | [Mike Eftimakis](/people/mike-eftimakis/) - CHERI Alliance (27:12)
+Launching the CHERI Alliance \| [Mike Eftimakis](/people/mike-eftimakis/) - CHERI Alliance (27:12)
 
-CHERI Standardisation | Prof. Simon W. Moore - University of Cambridge (14:17)
+CHERI Standardisation \| Prof. Simon W. Moore - University of Cambridge (14:17)
 
-Porting Software to CHERI | Dr [Graeme Jenkinson](/people/graeme-jenkinson/) - [Capabilities Limited](/organisations/capabilities-limited/) (14:38)
+Porting Software to CHERI \| Dr [Graeme Jenkinson](/people/graeme-jenkinson/) - [Capabilities Limited](/organisations/capabilities-limited/) (14:38)
 
-CHERI Prototyping and Open Source | Greg Chadwick - lowRISC (19:32)
+CHERI Prototyping and Open Source \| Greg Chadwick - lowRISC (19:32)
 
-CHERI Software Ecosystem | [Carl Shaw](/people/carl-shaw/) - [Codasip](/organisations/codasip/) (18:58)
+CHERI Software Ecosystem \| [Carl Shaw](/people/carl-shaw/) - [Codasip](/organisations/codasip/) (18:58)
 
-‘Cybersecurity by design’ Conference Closing Remarks | Gavin Ferris - CHERI Alliance (8:34)
+‘Cybersecurity by design’ Conference Closing Remarks \| Gavin Ferris - CHERI Alliance (8:34)
 
 You can view the playlist directly on YouTube [here](https://youtube.com/playlist?list=PLTe5zG6binjk675uhnNIF03oBddgvhSbr&feature=shared).
 
@@ -83,25 +83,25 @@ The slides available for download are intended for personal and educational use 
 
 Thank you for respecting these terms.
 
-Incentivising future security | Paul W. - NCSC
+Incentivising future security \| Paul W. - NCSC
 
-Digital Security by Design Challenge - Securing the future of computing | John Goodacre - DSbD
+Digital Security by Design Challenge - Securing the future of computing \| John Goodacre - DSbD
 
-CHERI Capability Hardware Enhanced RISC Instructions | Dr Robert Watson - University of Cambridge
+CHERI Capability Hardware Enhanced RISC Instructions \| Dr Robert Watson - University of Cambridge
 
-An Innovation Ecosystem to encourage Cybersecurity by Design? | Reid Derby - CyNam
+An Innovation Ecosystem to encourage Cybersecurity by Design? \| Reid Derby - CyNam
 
-Collaborative engineering | Gavin Ferris - lowRISC
+Collaborative engineering \| Gavin Ferris - lowRISC
 
-Launching the CHERI Alliance | Mike Eftimakis - CHERI Alliance
+Launching the CHERI Alliance \| Mike Eftimakis - CHERI Alliance
 
-CHERI Standardisation | Prof. Simon W. Moore - University of Cambridge
+CHERI Standardisation \| Prof. Simon W. Moore - University of Cambridge
 
-Porting Software to CHERI | Dr Graeme Jenkinson - Capabilities Limited
+Porting Software to CHERI \| Dr Graeme Jenkinson - Capabilities Limited
 
-CHERI Prototyping and Open Source | Greg Chadwick - lowRISC
+CHERI Prototyping and Open Source \| Greg Chadwick - lowRISC
 
-CHERI Software Ecosystem | Carl Shaw - Codasip
+CHERI Software Ecosystem \| Carl Shaw - Codasip
 
 ## Venue
 

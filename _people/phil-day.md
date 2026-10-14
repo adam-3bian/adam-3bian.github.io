@@ -21,4 +21,4 @@ Phil is the Director of Engineering at [Configured Things](/organisations/config
 
 ## CHERI Talks
 
-- Implementing safe and resilient configuration management with CHERIoT | [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK
+- Implementing safe and resilient configuration management with CHERIoT \| [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK

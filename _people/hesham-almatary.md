@@ -25,4 +25,4 @@ Beyond research, they have been working with and contributing to open-source pro
 
 ## CHERI Talks
 
-- seL4 Working Group presentation | [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2025/04/20250402-cheri-blossoms-sel4.pdf) · [Video](https://youtu.be/cuj3L52ut04)
+- seL4 Working Group presentation \| [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2025/04/20250402-cheri-blossoms-sel4.pdf) · [Video](https://youtu.be/cuj3L52ut04)

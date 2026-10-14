@@ -25,4 +25,4 @@ Paul Waller works on advancing practical, deployable cyber security at national 
 
 ## CHERI Talks
 
-- ETSI Standardisation status | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK
+- ETSI Standardisation status \| [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK

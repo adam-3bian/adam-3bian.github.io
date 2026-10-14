@@ -27,4 +27,4 @@ Adam Finney is a CHERI technologist with over 20 years of systems experience, an
 
 ## CHERI Talks
 
-- CHERI Adoption study | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D1-2.7-Adam-Finney-CHERI-Adoption-Study-CHERI-Blossoms-2026.pdf)
+- CHERI Adoption study \| [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D1-2.7-Adam-Finney-CHERI-Adoption-Study-CHERI-Blossoms-2026.pdf)

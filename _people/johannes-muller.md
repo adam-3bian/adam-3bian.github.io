@@ -23,4 +23,4 @@ His research interests include formal security verification, access control mech
 
 ## CHERI Talks
 
-- Verifying Secure Memory Compartmentalization in CHERI Processors at the RTL | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 27/03/2026, Cambridge, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D2-3.1-Johannes-Mueller-Verifying-Secure-Memory-Compartmentalization-in-CHERI-Processors-at-the-RTL-CHERI-Blossoms-2026.pdf) · [Video](https://youtu.be/8q_uNOS_h9M)
+- Verifying Secure Memory Compartmentalization in CHERI Processors at the RTL \| [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 27/03/2026, Cambridge, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D2-3.1-Johannes-Mueller-Verifying-Secure-Memory-Compartmentalization-in-CHERI-Processors-at-the-RTL-CHERI-Blossoms-2026.pdf) · [Video](https://youtu.be/8q_uNOS_h9M)

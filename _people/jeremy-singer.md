@@ -23,5 +23,5 @@ Jeremy is a Reader in Programming Language Implementation at the [University of 
 
 ## CHERI Talks
 
-- State of the Union: Which Virtual Machines can I run on CHERI? | [CHERITech’25](/events/cheritech25/) — 14/11/2025, Manchester, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2025/11/4.5-Jeremy-Singer-State-of-the-Union-Which-Virtual-Machines-can-I-run-on-CHERI-CHERITech25.pdf) · [Video](https://youtu.be/UF4mSM8YOao)
-- CHERI MicroPython: Challenges and Opportunities | [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2025/04/4.5-Jeremy-Singer-CHERI-MicroPython.pdf) · [Video](https://youtu.be/GJwvjsb8lg4)
+- State of the Union: Which Virtual Machines can I run on CHERI? \| [CHERITech’25](/events/cheritech25/) — 14/11/2025, Manchester, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2025/11/4.5-Jeremy-Singer-State-of-the-Union-Which-Virtual-Machines-can-I-run-on-CHERI-CHERITech25.pdf) · [Video](https://youtu.be/UF4mSM8YOao)
+- CHERI MicroPython: Challenges and Opportunities \| [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2025/04/4.5-Jeremy-Singer-CHERI-MicroPython.pdf) · [Video](https://youtu.be/GJwvjsb8lg4)

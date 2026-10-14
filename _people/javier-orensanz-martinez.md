@@ -21,4 +21,4 @@ Javier is a business leader with over 25 years of experience in the semiconducto
 
 ## CHERI Talks
 
-- CHERI Mocha: an open-source memory-safe application system | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D1-3.2-Javier-Orensanz-Martinez-Mocha-at-CHERI-Blossoms-2026.pdf) · [Video](https://youtu.be/FLv1uxMOzEg)
+- CHERI Mocha: an open-source memory-safe application system \| [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D1-3.2-Javier-Orensanz-Martinez-Mocha-at-CHERI-Blossoms-2026.pdf) · [Video](https://youtu.be/FLv1uxMOzEg)

@@ -23,4 +23,4 @@ He is a proponent of open source having worked at an open source Linux and softw
 
 ## CHERI Talks
 
-- Announcing COSMIC | [CHERITech’25](/events/cheritech25/) — 14/11/2025, Manchester, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2025/11/2.2-John-Thomson-COSMIC-CHERITech25.pdf) · [Video](https://youtu.be/XeE2iWDukwU)
+- Announcing COSMIC \| [CHERITech’25](/events/cheritech25/) — 14/11/2025, Manchester, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2025/11/2.2-John-Thomson-COSMIC-CHERITech25.pdf) · [Video](https://youtu.be/XeE2iWDukwU)

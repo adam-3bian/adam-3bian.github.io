@@ -21,4 +21,4 @@ Murat is Co-CEO @ [Microservice Store](/organisations/microservice-store/).
 
 ## CHERI Talks
 
-- Microservice Store | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 27/03/2026, Cambridge, UK
+- Microservice Store \| [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 27/03/2026, Cambridge, UK

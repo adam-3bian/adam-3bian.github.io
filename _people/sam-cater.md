@@ -27,4 +27,4 @@ Today, Sam is working to advance and advocate the CHERI ecosystem from the persp
 
 ## CHERI Talks
 
-- BT’s Engagement with CHERI Technology | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 27/03/2026, Cambridge, UK
+- BT’s Engagement with CHERI Technology \| [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 27/03/2026, Cambridge, UK

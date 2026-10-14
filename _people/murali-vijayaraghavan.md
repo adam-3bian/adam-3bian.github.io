@@ -24,4 +24,4 @@ Murali is a formal methods and security researcher at
 
 ## CHERI Talks
 
-- Rigorous Hardware-Software Codesign for Secure Compartmentalization on Embedded Devices | [CHERITech’25](/events/cheritech25/) — 14/11/2025, Manchester, UK
+- Rigorous Hardware-Software Codesign for Secure Compartmentalization on Embedded Devices \| [CHERITech’25](/events/cheritech25/) — 14/11/2025, Manchester, UK

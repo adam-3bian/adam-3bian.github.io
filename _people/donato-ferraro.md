@@ -24,4 +24,4 @@ He works with [Minerva Systems](/organisations/minerva-systems/), and his resear
 
 ## CHERI Talks
 
-- Capability-Based Isolation for UAV Software Stacks: Porting PX4/NuttX to CHERI | [CHERITech’25](/events/cheritech25/) — 14/11/2025, Manchester, UK
+- Capability-Based Isolation for UAV Software Stacks: Porting PX4/NuttX to CHERI \| [CHERITech’25](/events/cheritech25/) — 14/11/2025, Manchester, UK

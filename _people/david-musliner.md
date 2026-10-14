@@ -21,4 +21,4 @@ Dr. David Musliner is a Senior Research Fellow at [Smart Information Flow Techno
 
 ## CHERI Talks
 
-- CHERI-PIT: Port Integrity Tool | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 27/03/2026, Cambridge, UK
+- CHERI-PIT: Port Integrity Tool \| [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 27/03/2026, Cambridge, UK

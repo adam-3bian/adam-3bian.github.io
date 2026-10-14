@@ -146,75 +146,75 @@ Each day of the conference had a distinct focus:
 
 CHERI Blossoms 2026 Conference - Event Showcase (2:14)
 
-- CHERI crash course - [Robert Watson](/people/robert-watson/) | CHERI Blossoms 2026 (15:39)
+- CHERI crash course - [Robert Watson](/people/robert-watson/) \| CHERI Blossoms 2026 (15:39)
 
-- Keynote - CHERI: quantifying the value of a strategic imperative - [Ollie Whitehouse](/people/ollie-whitehouse/) | CB2026 (21:32)
+- Keynote - CHERI: quantifying the value of a strategic imperative - [Ollie Whitehouse](/people/ollie-whitehouse/) \| CB2026 (21:32)
 
-- Keynote - Featured Message - [Kathleen Fisher](/people/kathleen-fisher/) | CHERI Blossoms 2026 (4:55)
+- Keynote - Featured Message - [Kathleen Fisher](/people/kathleen-fisher/) \| CHERI Blossoms 2026 (4:55)
 
-- Keynote – Memory Safety at Scale: An Industry Perspective - [Alex Rebert](/people/alex-rebert/) | CHERI Blossoms 2026 (21:26)
+- Keynote – Memory Safety at Scale: An Industry Perspective - [Alex Rebert](/people/alex-rebert/) \| CHERI Blossoms 2026 (21:26)
 
-- [DSIT](/organisations/dsit/): Government Strategy, Signals & Next Steps - [Bradley Finn](/people/bradley-finn/) | CHERI Blossoms 2026 (7:33)
+- [DSIT](/organisations/dsit/): Government Strategy, Signals & Next Steps - [Bradley Finn](/people/bradley-finn/) \| CHERI Blossoms 2026 (7:33)
 
-- [UKRI](/organisations/ukri/) Talk - [John Goodacre](/people/john-goodacre/) | CHERI Blossoms 2026 (7:37)
+- [UKRI](/organisations/ukri/) Talk - [John Goodacre](/people/john-goodacre/) \| CHERI Blossoms 2026 (7:37)
 
-- Progress of the Alliance - [Mike Eftimakis](/people/mike-eftimakis/) | CHERI Blossoms 2026 (16:36)
+- Progress of the Alliance - [Mike Eftimakis](/people/mike-eftimakis/) \| CHERI Blossoms 2026 (16:36)
 
-- Certification Program: Awards - Mike Eftimakis | CHERI Blossoms 2026 (4:09)
+- Certification Program: Awards - Mike Eftimakis \| CHERI Blossoms 2026 (4:09)
 
-- CHERI Research Centre - Robert Watson | CHERI Blossoms 2026 (22:07)
+- CHERI Research Centre - Robert Watson \| CHERI Blossoms 2026 (22:07)
 
-- [The Capable Hub](/organisations/the-capable-hub/): Our Recent Work and Next Steps - [Andrew Murray](/people/andrew-murray/) | CHERI Blossoms 2026 (16:34)
+- [The Capable Hub](/organisations/the-capable-hub/): Our Recent Work and Next Steps - [Andrew Murray](/people/andrew-murray/) \| CHERI Blossoms 2026 (16:34)
 
-- Accelerating commercial adoption of CHERI - [Manu Ravishankar](/people/manu-ravishankar/) | CHERI Blossoms 2026 (12:56)
+- Accelerating commercial adoption of CHERI - [Manu Ravishankar](/people/manu-ravishankar/) \| CHERI Blossoms 2026 (12:56)
 
-- A new analysis of CVE vulnerabilities: trends, changes and CHERI - [Carl Shaw](/people/carl-shaw/) | CHERI Blossoms 2026 (17:17)
+- A new analysis of CVE vulnerabilities: trends, changes and CHERI - [Carl Shaw](/people/carl-shaw/) \| CHERI Blossoms 2026 (17:17)
 
-CHERI Mocha: an open-source memory-safe application system - [Javier Orensanz Martinez](/people/javier-orensanz-martinez/) | CB 2026 (9:50)
+CHERI Mocha: an open-source memory-safe application system - [Javier Orensanz Martinez](/people/javier-orensanz-martinez/) \| CB 2026 (9:50)
 
-- BT Business Keynote - [Dave Harcourt](/people/dave-harcourt/) | CHERI Blossoms 2026 (13:02)
+- BT Business Keynote - [Dave Harcourt](/people/dave-harcourt/) \| CHERI Blossoms 2026 (13:02)
 
-- ETSI Standardisation status - [Paul Waller](/people/paul-waller/) | CHERI Blossoms 2026 (16:08)
+- ETSI Standardisation status - [Paul Waller](/people/paul-waller/) \| CHERI Blossoms 2026 (16:08)
 
-- RISC-V: Driving the Future of Open Compute - [Andy Moore](/people/andy-moore/) | CHERI Blossoms 2026 (12:01)
+- RISC-V: Driving the Future of Open Compute - [Andy Moore](/people/andy-moore/) \| CHERI Blossoms 2026 (12:01)
 
-- BT’s Engagement with CHERI Technology - [Sam Cater](/people/sam-cater/) | CHERI Blossoms 2026 (25:19)
+- BT’s Engagement with CHERI Technology - [Sam Cater](/people/sam-cater/) \| CHERI Blossoms 2026 (25:19)
 
-- Inside the [CHERI in SoC Working Group](/groups/cheri-in-soc/) - [Ben Fletcher](/people/ben-fletcher/) | CHERI Blossoms 2026 (15:51)
+- Inside the [CHERI in SoC Working Group](/groups/cheri-in-soc/) - [Ben Fletcher](/people/ben-fletcher/) \| CHERI Blossoms 2026 (15:51)
 
 MMU-based revocation for temporal safety on CHERI application cores - [Tariq Kurd](/people/tariq-kurd/) & [Alfredo Mazzinghi](/people/alfredo-mazzinghi/) (17:40)
 
 COSMIC verification: comprehensive, end-to-end formal proofs of CVA6-CHERI - [Louis-Emile Ploix](/people/louis-emile-ploix/) (22:24)
 
-- CHERI is being standardised, so why do we still need to do research? - [Simon Moore](/people/simon-moore/) | CB2026 (14:27)
+- CHERI is being standardised, so why do we still need to do research? - [Simon Moore](/people/simon-moore/) \| CB2026 (14:27)
 
-- CHERIoT-Kudu: A high-performance CHERIoT microcontroller - [David Chisnall](/people/david-chisnall/) | CHERI Blossoms 2026 (3:40)
+- CHERIoT-Kudu: A high-performance CHERIoT microcontroller - [David Chisnall](/people/david-chisnall/) \| CHERI Blossoms 2026 (3:40)
 
-- CHERI-PIT: Automatically porting C/C++ to CHERI - [David Musliner](/people/david-musliner/) | CHERI Blossoms 2026 (3:32)
+- CHERI-PIT: Automatically porting C/C++ to CHERI - [David Musliner](/people/david-musliner/) \| CHERI Blossoms 2026 (3:32)
 
-- [CHERI-Zephyr](/software/zephyr/) - New release information! - [Jennifer Jackson](/people/jennifer-jackson/) | CHERI Blossoms 2026 (3:28)
+- [CHERI-Zephyr](/software/zephyr/) - New release information! - [Jennifer Jackson](/people/jennifer-jackson/) \| CHERI Blossoms 2026 (3:28)
 
-- [Microservice Store](/organisations/microservice-store/) for CHERI - [Murat Cakmak](/people/murat-cakmak/) | CHERI Blossoms 2026 (3:26)
+- [Microservice Store](/organisations/microservice-store/) for CHERI - [Murat Cakmak](/people/murat-cakmak/) \| CHERI Blossoms 2026 (3:26)
 
-- Performance Progress of CVA6-CHERI - [Jonathan Woodruff](/people/jonathan-woodruff/) | CHERI Blossoms 2026 (13:13)
+- Performance Progress of CVA6-CHERI - [Jonathan Woodruff](/people/jonathan-woodruff/) \| CHERI Blossoms 2026 (13:13)
 
-- CHERI Performance Improvement Update - Carl Shaw | CHERI Blossoms 2026 (15:32)
+- CHERI Performance Improvement Update - Carl Shaw \| CHERI Blossoms 2026 (15:32)
 
-- Securing Real-Time Communication - [Peter Cox](/people/peter-cox/) & Alexander Voevoda | CHERI Blossoms 2026 (16:46)
+- Securing Real-Time Communication - [Peter Cox](/people/peter-cox/) & Alexander Voevoda \| CHERI Blossoms 2026 (16:46)
 
-- [Rust](/software/rust/) on CHERIoT - [Edoardo Marangoni](/people/edoardo-marangoni/) | CHERI Blossoms 2026 (17:25)
+- [Rust](/software/rust/) on CHERIoT - [Edoardo Marangoni](/people/edoardo-marangoni/) \| CHERI Blossoms 2026 (17:25)
 
-- CHERI Linking through the Ages - [John Baldwin](/people/john-baldwin/) & [Jessica Clarke](/people/jessica-clarke/) | CHERI Blossoms 2026 (47:11)
+- CHERI Linking through the Ages - [John Baldwin](/people/john-baldwin/) & [Jessica Clarke](/people/jessica-clarke/) \| CHERI Blossoms 2026 (47:11)
 
 Verifying Secure Memory Compartmentalization in CHERI Processors at the RTL - [Johannes Müller](/people/johannes-muller/) (19:18)
 
-- CHERI-enabled RISC-V VP: Capabilities and Applications - [Luca Müller](/people/luca-muller/) | CHERI Blossoms 2026 (13:19)
+- CHERI-enabled RISC-V VP: Capabilities and Applications - [Luca Müller](/people/luca-muller/) \| CHERI Blossoms 2026 (13:19)
 
-- PICASSO: Scaling CHERI Use-After-Free Protection to Millions of Allocations | CHERI Blossoms 2026 (26:58)
+- PICASSO: Scaling CHERI Use-After-Free Protection to Millions of Allocations \| CHERI Blossoms 2026 (26:58)
 
-- Towards Heterogeneous CHERI Compartmentalization - [Jianyi Cheng](/people/jianyi-cheng/) | CHERI Blossoms 2026 (19:46)
+- Towards Heterogeneous CHERI Compartmentalization - [Jianyi Cheng](/people/jianyi-cheng/) \| CHERI Blossoms 2026 (19:46)
 
-- All-Caps — Extending Capabilities Across the Whole SoC - [Samuel Stark](/people/samuel-stark/) | CHERI Blossoms 2026 (18:22)
+- All-Caps — Extending Capabilities Across the Whole SoC - [Samuel Stark](/people/samuel-stark/) \| CHERI Blossoms 2026 (18:22)
 
 - **CHERI crash course - high-level introduction** — Robert Watson · University of Cambridge · [Video](https://youtu.be/5YEkHpFgWTs) · [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D1-0.2-Robert-Watson-CHERI-crash-course-high-level-introduction-CHERI-Blossoms-2026.pdf) · [Speaker](/people/robert-watson/)
 

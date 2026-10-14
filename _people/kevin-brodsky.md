@@ -21,4 +21,4 @@ Kevin Brodsky is a software engineer at Arm, specializing in the [Morello](/hard
 
 ## CHERI Talks
 
-- Porting Linux to CHERI | [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK
+- Porting Linux to CHERI \| [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK

@@ -21,5 +21,5 @@ Bradley Finn is Head of Cyber Innovation Policy at the UK’s Department for Sci
 
 ## CHERI Talks
 
-- DSIT @ [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK
-- Building Resilience: Enhancing productivity through Secure by Design systems | [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK
+- DSIT @ [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) \| [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK
+- Building Resilience: Enhancing productivity through Secure by Design systems \| [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK

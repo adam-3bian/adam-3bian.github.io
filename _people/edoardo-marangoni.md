@@ -22,4 +22,4 @@ Edoardo has been working with compilers for the majority of his professional car
 
 ## CHERI Talks
 
-- Rust on CHERIoT | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 27/03/2026, Cambridge, UK
+- Rust on CHERIoT \| [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 27/03/2026, Cambridge, UK

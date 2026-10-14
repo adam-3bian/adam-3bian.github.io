@@ -25,6 +25,6 @@ Specialising in capability processor design, he has pushed into full-system opti
 
 ## CHERI Talks
 
-- Performance Progress of CVA6-CHERI | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK
-- An open-source RV64Y implementation for commercialization | [CHERITech’25](/events/cheritech25/) — 14/11/2025, Manchester, UK
-- CHERI support for CVA6 | [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK
+- Performance Progress of CVA6-CHERI \| [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK
+- An open-source RV64Y implementation for commercialization \| [CHERITech’25](/events/cheritech25/) — 14/11/2025, Manchester, UK
+- CHERI support for CVA6 \| [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK

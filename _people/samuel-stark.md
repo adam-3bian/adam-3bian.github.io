@@ -21,4 +21,4 @@ Samuel W. Stark is a final-year PhD student at the [University of Cambridge](/or
 
 ## CHERI Talks
 
-- All-Caps — Extending Capabilities Across the Whole SoC | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 27/03/2026, Cambridge, UK
+- All-Caps — Extending Capabilities Across the Whole SoC \| [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 27/03/2026, Cambridge, UK

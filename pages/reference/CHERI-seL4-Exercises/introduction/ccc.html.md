@@ -304,9 +304,9 @@ SDK\_CLANG=${CLANG:-${SDKDIR}/bin/clang}
 
 case $name in
 
-\*clang|\*cc)	prog="${SDK\_CLANG}" ;;
+\*clang\|\*cc)	prog="${SDK\_CLANG}" ;;
 
-\*clang++|\*c++)	prog="${SDK\_CLANG}++" ;;
+\*clang++\|\*c++)	prog="${SDK\_CLANG}++" ;;
 
 \*)	err 1 "Unsupported program name '$name'" ;;
 
@@ -416,7 +416,7 @@ BIOS="$SDKDIR/cheri-alliance-opensbi/riscv64/share/opensbi/l64pc128/generic/firm
 
 if \[ $# -lt 1 \]; then
 
-echo "Usage: $0 \<image.elf | image.img\>"
+echo "Usage: $0 \<image.elf \| image.img\>"
 
 exit 1
 
@@ -648,7 +648,7 @@ done
 
 case "$TARGET" in
 
-riscv64|riscv64-purecap)
+riscv64\|riscv64-purecap)
 
 BOARD="${BOARD:-qemu\_virt\_riscv64}"
 
@@ -656,7 +656,7 @@ cheri\_sdk\_name="cheri-alliance-sdk"
 
 ;;
 
-morello-aarch64|morello-purecap)
+morello-aarch64\|morello-purecap)
 
 BOARD="${BOARD:-morello\_qemu}"
 

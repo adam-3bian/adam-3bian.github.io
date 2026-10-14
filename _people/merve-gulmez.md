@@ -22,4 +22,4 @@ Merve Gülmez is a researcher at [Ericsson](/organisations/ericsson/) Security R
 
 ## CHERI Talks
 
-- PICASSO: Scaling CHERI Use-After-Free Protection to Millions of Allocations | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 27/03/2026, Cambridge, UK
+- PICASSO: Scaling CHERI Use-After-Free Protection to Millions of Allocations \| [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 27/03/2026, Cambridge, UK

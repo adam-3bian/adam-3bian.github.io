@@ -21,4 +21,4 @@ John Baldwin has been an active [FreeBSD](/software/freebsd/) developer for over
 
 ## CHERI Talks
 
-- CHERI Linking through the Ages | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 27/03/2026, Cambridge, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D2-2.5-John-Baldwin-Jessica-Clarke-CHERI-Linking-through-the-Ages-CHERI-Blossoms-2026.pdf) · [Video](https://youtu.be/ORl43tjaVGM)
+- CHERI Linking through the Ages \| [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 27/03/2026, Cambridge, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D2-2.5-John-Baldwin-Jessica-Clarke-CHERI-Linking-through-the-Ages-CHERI-Blossoms-2026.pdf) · [Video](https://youtu.be/ORl43tjaVGM)

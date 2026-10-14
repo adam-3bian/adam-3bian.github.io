@@ -21,4 +21,4 @@ Maika Föhrenbach connects CHERI to Europe’s regulatory future. She leads prod
 
 ## CHERI Talks
 
-- Keynote – Getting ready for the CRA: from compliance to confidence | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK
+- Keynote – Getting ready for the CRA: from compliance to confidence \| [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK

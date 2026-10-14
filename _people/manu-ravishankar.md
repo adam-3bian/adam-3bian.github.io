@@ -24,4 +24,4 @@ He has shaped national innovation programmes for DESNZ, [DSIT](/organisations/ds
 
 ## CHERI Talks
 
-- Accelerating commercial adoption of CHERI | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK
+- Accelerating commercial adoption of CHERI \| [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK

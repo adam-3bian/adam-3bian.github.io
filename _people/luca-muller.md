@@ -21,4 +21,4 @@ Luca Müller received the M.Sc. degree in computer science from University of Br
 
 ## CHERI Talks
 
-- CHERI-enabled RISC-V VP: Capabilities and Applications | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 27/03/2026, Cambridge, UK
+- CHERI-enabled RISC-V VP: Capabilities and Applications \| [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 27/03/2026, Cambridge, UK

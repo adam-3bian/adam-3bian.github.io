@@ -233,7 +233,7 @@ async function loaded(page, route) {
     const noJS = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 375, height: 812 } });
     const fallback = await noJS.newPage();
     await fallback.goto(pageURL(editorial));
-    assert.equal(await fallback.locator('.article-content img').count(), 3);
+    assert.equal(await fallback.locator('.article-content img').count(), 2);
     assert.equal(await fallback.locator('.article-content img[role="button"], dialog').count(), 0);
     await noJS.close();
     report.viewer = 'Mouse, Enter/Space, arrows, wraparound, buttons, Escape, backdrop, focus return, scroll lock, captions, exclusions, single image, touch, reduced motion and no-JS passed';

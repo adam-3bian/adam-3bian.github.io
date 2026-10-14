@@ -22,4 +22,4 @@ Tora Fridholm is an experienced B2B marketing professional with a focus on trans
 
 ## CHERI Talks
 
-- Marketing Working Group presentation | [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK
+- Marketing Working Group presentation \| [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK

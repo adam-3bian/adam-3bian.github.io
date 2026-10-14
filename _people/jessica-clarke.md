@@ -23,5 +23,5 @@ She takes a particular interest in the low-level parts of toolchains and runtime
 
 ## CHERI Talks
 
-- CHERI Linking through the Ages | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 27/03/2026, Cambridge, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D2-2.5-John-Baldwin-Jessica-Clarke-CHERI-Linking-through-the-Ages-CHERI-Blossoms-2026.pdf) · [Video](https://youtu.be/ORl43tjaVGM)
-- Redesigning Thread Local Storage For CHERI | [CHERITech’25](/events/cheritech25/) — 14/11/2025, Manchester, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2025/11/3.5-Jessica-Clarke-Redesigning-Thread-Local-Storage-For-CHERI-CHERITech25.pdf) · [Video](https://youtu.be/7RvclCy4Zvg)
+- CHERI Linking through the Ages \| [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 27/03/2026, Cambridge, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D2-2.5-John-Baldwin-Jessica-Clarke-CHERI-Linking-through-the-Ages-CHERI-Blossoms-2026.pdf) · [Video](https://youtu.be/ORl43tjaVGM)
+- Redesigning Thread Local Storage For CHERI \| [CHERITech’25](/events/cheritech25/) — 14/11/2025, Manchester, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2025/11/3.5-Jessica-Clarke-Redesigning-Thread-Local-Storage-For-CHERI-CHERITech25.pdf) · [Video](https://youtu.be/7RvclCy4Zvg)

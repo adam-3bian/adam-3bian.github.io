@@ -24,4 +24,4 @@ Prior to this, he was a Research Associate in the [University of Cambridge](/org
 
 ## CHERI Talks
 
-- Towards Heterogeneous CHERI Compartmentalization | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 27/03/2026, Cambridge, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D2-3.4-Jianyi-Cheng-Towards-Heterogeneous-CHERI-Compartmentalization-CHERI-Blossoms-2026.pdf) · [Video](https://youtu.be/wRi7jf6RWWE)
+- Towards Heterogeneous CHERI Compartmentalization \| [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 27/03/2026, Cambridge, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D2-3.4-Jianyi-Cheng-Towards-Heterogeneous-CHERI-Compartmentalization-CHERI-Blossoms-2026.pdf) · [Video](https://youtu.be/wRi7jf6RWWE)

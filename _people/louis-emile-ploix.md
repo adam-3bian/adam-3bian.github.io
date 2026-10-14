@@ -21,4 +21,4 @@ Louis-Emile is a current undergraduate at the University of Oxford, and a formal
 
 ## CHERI Talks
 
-- COSMIC verification: comprehensive, end-to-end formal proofs of CVA6-CHERI | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK
+- COSMIC verification: comprehensive, end-to-end formal proofs of CVA6-CHERI \| [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK

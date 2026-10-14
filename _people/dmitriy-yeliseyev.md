@@ -21,5 +21,5 @@ Dmitriy is an embedded systems software architect and technical expert with over
 
 ## CHERI Talks
 
-- Industrializing CHERI for Safety-Critical Real-Time and Virtualized Systems: Capability Support in Hypervisor and VxWorks RTOS | [CHERITech’25](/events/cheritech25/) — 14/11/2025, Manchester, UK
-- Implementation of CHERI Capabilities in a Safety-Critical Real-Time Operating System for Intelligent Edge Systems | [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK
+- Industrializing CHERI for Safety-Critical Real-Time and Virtualized Systems: Capability Support in Hypervisor and VxWorks RTOS \| [CHERITech’25](/events/cheritech25/) — 14/11/2025, Manchester, UK
+- Implementation of CHERI Capabilities in a Safety-Critical Real-Time Operating System for Intelligent Edge Systems \| [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK

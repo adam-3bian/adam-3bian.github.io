@@ -27,5 +27,5 @@ He is the senior member of the Computer Architecture research group and has exte
 
 ## CHERI Talks
 
-- CHERI is being standardised, so why do we still need to do research? | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK
-- About CHERI | [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK
+- CHERI is being standardised, so why do we still need to do research? \| [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK
+- About CHERI \| [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK

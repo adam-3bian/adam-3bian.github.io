@@ -23,4 +23,4 @@ He focuses on computer security, with backgrounds in compilers, programming lang
 
 ## CHERI Talks
 
-- Failure-Oblivious CHERI | [CHERITech’25](/events/cheritech25/) — 14/11/2025, Manchester, UK
+- Failure-Oblivious CHERI \| [CHERITech’25](/events/cheritech25/) — 14/11/2025, Manchester, UK

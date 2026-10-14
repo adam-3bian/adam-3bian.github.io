@@ -25,4 +25,4 @@ At the NCSC, Ollie is responsible for maintaining the NCSC’s status as the Nat
 
 ## CHERI Talks
 
-- Keynote – CHERI: quantifying the value of a strategic imperative | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK
+- Keynote – CHERI: quantifying the value of a strategic imperative \| [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK

@@ -27,5 +27,5 @@ Other notable interests are CHERI extensions to QEMU and program tracing and ana
 
 ## CHERI Talks
 
-- MMU-based revocation for temporal safety on CHERI application cores | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 27/03/2026, Cambridge, UK
-- QEMU Working Group presentation | [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK
+- MMU-based revocation for temporal safety on CHERI application cores \| [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 27/03/2026, Cambridge, UK
+- QEMU Working Group presentation \| [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK

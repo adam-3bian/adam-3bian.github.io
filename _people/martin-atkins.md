@@ -23,4 +23,4 @@ Martin specialises in rapid prototyping in Python, test harnesses, safety-critic
 
 ## CHERI Talks
 
-- Hybrid CHERI in seL4 user space | [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK
+- Hybrid CHERI in seL4 user space \| [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK

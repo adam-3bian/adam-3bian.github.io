@@ -21,4 +21,4 @@ Dave Harcourt is the CISO for BT International and a BT Fellow, with decades of 
 
 ## CHERI Talks
 
-- BT business keynote | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK. [Video](https://youtu.be/R3ZbEAoGFp4)
+- BT business keynote \| [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK. [Video](https://youtu.be/R3ZbEAoGFp4)

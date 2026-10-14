@@ -21,4 +21,4 @@ Alex Rebert is an engineer at [Google](/organisations/google/), where he focuses
 
 ## CHERI Talks
 
-- Keynote – Memory Safety at Scale: An Industry Perspective | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D1-1.4-Alex-Rebert-Memory-Safety-at-Scale-An-Industry-Perspective-CHERI-Blossoms-2026.pdf) · [Video](https://youtu.be/zRZnks7P-uE)
+- Keynote – Memory Safety at Scale: An Industry Perspective \| [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D1-1.4-Alex-Rebert-Memory-Safety-at-Scale-An-Industry-Perspective-CHERI-Blossoms-2026.pdf) · [Video](https://youtu.be/zRZnks7P-uE)

@@ -22,4 +22,4 @@ Dr Paul Metzger is a Research Associate in the Department of Computer Science an
 
 ## CHERI Talks
 
-- Portable CHERI OS APIs | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK
+- Portable CHERI OS APIs \| [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK

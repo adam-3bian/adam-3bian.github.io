@@ -24,6 +24,6 @@ John is Professor of Computer Architectures at the Department of Computer Scienc
 
 ## CHERI Talks
 
-- UKRI Talk | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK
-- Welcome & Innovate UK Competition Results | [CHERITech’25](/events/cheritech25/) — 14/11/2025, Manchester, UK
-- Findings from DSbD program | [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK. [Video](https://youtu.be/rPVnNIt3W_A)
+- UKRI Talk \| [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK
+- Welcome & Innovate UK Competition Results \| [CHERITech’25](/events/cheritech25/) — 14/11/2025, Manchester, UK
+- Findings from DSbD program \| [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK. [Video](https://youtu.be/rPVnNIt3W_A)

@@ -24,4 +24,4 @@ Gavin holds a computer science degree and Ph.D. in AI from Cambridge University.
 
 ## CHERI Talks
 
-- Project Sunburst: An Open-Source CHERIoT SoC Top-Level and its Path to Market with Iceni | [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2025/04/2.1-Gavin-Ferris-Haydn-Povey-Project-Sunburst.pdf) · [Video](https://youtu.be/HSHdB_4Ra2E)
+- Project Sunburst: An Open-Source CHERIoT SoC Top-Level and its Path to Market with Iceni \| [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2025/04/2.1-Gavin-Ferris-Haydn-Povey-Project-Sunburst.pdf) · [Video](https://youtu.be/HSHdB_4Ra2E)

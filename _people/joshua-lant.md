@@ -23,4 +23,4 @@ His primary research interests are in Linux networking and PCIe, FPGA interconne
 
 ## CHERI Talks
 
-- Securing Secure Networking tools for Morello Linux | [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK
+- Securing Secure Networking tools for Morello Linux \| [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK

@@ -22,4 +22,4 @@ Jennifer is an Electronic Engineer with experience in FPGA design, Arm v8.2, com
 
 ## CHERI Talks
 
-- CHERI-Zephyr | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 27/03/2026, Cambridge, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D2-1.7.4-Jennifer-Jackson-CHERI-Zephyr-CHERI-Blossoms-2026.pdf) · [Video](https://youtu.be/Kzqdy5Ta4Us)
+- CHERI-Zephyr \| [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 27/03/2026, Cambridge, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D2-1.7.4-Jennifer-Jackson-CHERI-Zephyr-CHERI-Blossoms-2026.pdf) · [Video](https://youtu.be/Kzqdy5Ta4Us)

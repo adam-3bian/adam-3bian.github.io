@@ -23,4 +23,4 @@ Before starting Axiomise, Ashish worked at Intel, Arm, Imagination Technologies 
 
 ## CHERI Talks
 
-- Industrial-Strength Formal Verification of RISC-V Processors | [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2025/04/2.6-Ashish-Dabari-Formal-Verification-of-RISC-V-Processors.pdf) · [Video](https://youtu.be/O6UyhX0aue4)
+- Industrial-Strength Formal Verification of RISC-V Processors \| [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK. [Slides](https://cheri-alliance.org/wp-content/uploads/2025/04/2.6-Ashish-Dabari-Formal-Verification-of-RISC-V-Processors.pdf) · [Video](https://youtu.be/O6UyhX0aue4)

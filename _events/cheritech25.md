@@ -75,45 +75,45 @@ Now under the stewardship of the [CHERI Alliance](/organisations/cheri-alliance/
 
 CHERITech’25 Conference - Event Overview (1:52)
 
-- Welcome & Innovate UK Competition Results - [John Goodacre](/people/john-goodacre/) | CHERITech’25 (12:25)
+- Welcome & Innovate UK Competition Results - [John Goodacre](/people/john-goodacre/) \| CHERITech’25 (12:25)
 
-- Progress of the Alliance - [Mike Eftimakis](/people/mike-eftimakis/) | CHERITech’25 (10:27)
+- Progress of the Alliance - [Mike Eftimakis](/people/mike-eftimakis/) \| CHERITech’25 (10:27)
 
-- Posters Pitch - Mike Eftimakis & [Mark Batty](/people/mark-batty/) | CHERITech’25 (3:08)
+- Posters Pitch - Mike Eftimakis & [Mark Batty](/people/mark-batty/) \| CHERITech’25 (3:08)
 
-- An open-source RV64Y implementation for commercialization - [Jonathan Woodruff](/people/jonathan-woodruff/) | CHERITech’25 (10:20)
+- An open-source RV64Y implementation for commercialization - [Jonathan Woodruff](/people/jonathan-woodruff/) \| CHERITech’25 (10:20)
 
-- Announcing COSMIC - [John Thomson](/people/john-thomson/) | CHERITech’25 (15:03)
+- Announcing COSMIC - [John Thomson](/people/john-thomson/) \| CHERITech’25 (15:03)
 
-- CHERI Performance - [Carl Shaw](/people/carl-shaw/) | CHERITech’25 (17:21)
+- CHERI Performance - [Carl Shaw](/people/carl-shaw/) \| CHERITech’25 (17:21)
 
-- [Sonata](/hardware/sonata/)®: A platform for high-integrity operational technology - [Marno van der Maas](/people/marno-van-der-maas/) | CHERITech’25 (15:02)
+- [Sonata](/hardware/sonata/)®: A platform for high-integrity operational technology - [Marno van der Maas](/people/marno-van-der-maas/) \| CHERITech’25 (15:02)
 
-- BLACKOUT: Data-Oblivious Computation with Blinded Capabilities - [Thomas Nyman](/people/thomas-nyman/) | CHERITech’25 (15:44)
+- BLACKOUT: Data-Oblivious Computation with Blinded Capabilities - [Thomas Nyman](/people/thomas-nyman/) \| CHERITech’25 (15:44)
 
-- Progress of CHERI - [Robert Watson](/people/robert-watson/) | CHERITech’25 (20:42)
+- Progress of CHERI - [Robert Watson](/people/robert-watson/) \| CHERITech’25 (20:42)
 
-- [CHERIoT](/hardware/cheriot/) Audit - [David Chisnall](/people/david-chisnall/) | CHERITech’25 (14:32)
+- [CHERIoT](/hardware/cheriot/) Audit - [David Chisnall](/people/david-chisnall/) \| CHERITech’25 (14:32)
 
 Rigorous Hardware-Software Codesign for Secure Compartmentalization on Embedded Devices (20:15)
 
-- CHERI-RISC-V standardisation status - [Tariq Kurd](/people/tariq-kurd/) | CHERITech’25 (15:58)
+- CHERI-RISC-V standardisation status - [Tariq Kurd](/people/tariq-kurd/) \| CHERITech’25 (15:58)
 
-- Redesigning Thread Local Storage For CHERI - [Jessica Clarke](/people/jessica-clarke/) | CHERITech’25 (15:03)
+- Redesigning Thread Local Storage For CHERI - [Jessica Clarke](/people/jessica-clarke/) \| CHERITech’25 (15:03)
 
-- Introducing a development Hub - [Andrew Murray](/people/andrew-murray/) | CHERITech’25 (8:45)
+- Introducing a development Hub - [Andrew Murray](/people/andrew-murray/) \| CHERITech’25 (8:45)
 
 Capability-Based Isolation for UAV Software Stacks: Porting PX4/NuttX to CHERI - [Donato Ferraro](/people/donato-ferraro/) (10:42)
 
-- Failure-Oblivious CHERI - [Ka Wing Li](/people/ka-wing-li/) | CHERITech’25 (10:25)
+- Failure-Oblivious CHERI - [Ka Wing Li](/people/ka-wing-li/) \| CHERITech’25 (10:25)
 
 Industrializing CHERI for Safety-Critical Real-Time and Virtualized Systems - [Dmitriy Yeliseyev](/people/dmitriy-yeliseyev/) (15:00)
 
-- State of the Union: Which Virtual Machines can I run on CHERI? - [Jeremy Singer](/people/jeremy-singer/) | CHERITech’25 (14:43)
+- State of the Union: Which Virtual Machines can I run on CHERI? - [Jeremy Singer](/people/jeremy-singer/) \| CHERITech’25 (14:43)
 
-- CHERI Demo - [lowRISC](/organisations/lowrisc/) | CHERITech’25 (2:25)
+- CHERI Demo - [lowRISC](/organisations/lowrisc/) \| CHERITech’25 (2:25)
 
-- Commercial CHERI RISC-V Processors Demo - [Codasip](/organisations/codasip/) | CHERITech’25 (1:51)
+- Commercial CHERI RISC-V Processors Demo - [Codasip](/organisations/codasip/) \| CHERITech’25 (1:51)
 
 - **Welcome / [UKRI](/organisations/ukri/) presentation** — John Goodacre (UKRI, [University of Manchester](/organisations/the-university-of-manchester/))
 

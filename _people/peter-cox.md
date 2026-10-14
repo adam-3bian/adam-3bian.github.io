@@ -24,4 +24,4 @@ Peter founded UM Labs to research and develop effective cybersecurity defences f
 
 ## CHERI Talks
 
-- Securing Real-Time Communication: Porting and running Edge Computing for mission critical services on Morello CHERI | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 27/03/2026, Cambridge, UK
+- Securing Real-Time Communication: Porting and running Edge Computing for mission critical services on Morello CHERI \| [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 27/03/2026, Cambridge, UK

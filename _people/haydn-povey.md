@@ -21,4 +21,4 @@ Details to follow.
 
 ## CHERI Talks
 
-- Project Sunburst: An Open-Source CHERIoT SoC Top-Level and its Path to Market with Iceni | [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK
+- Project Sunburst: An Open-Source CHERIoT SoC Top-Level and its Path to Market with Iceni \| [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK

@@ -23,5 +23,5 @@ He also leads the C/C++ Compiler Hardening Guide initiative under the Open Sourc
 
 ## CHERI Talks
 
-- PICASSO: Scaling CHERI Use-After-Free Protection to Millions of Allocations | [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 27/03/2026, Cambridge, UK
-- BLACKOUT: Data-Oblivious Computation with Blinded Capabilities | [CHERITech’25](/events/cheritech25/) — 14/11/2025, Manchester, UK
+- PICASSO: Scaling CHERI Use-After-Free Protection to Millions of Allocations \| [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 27/03/2026, Cambridge, UK
+- BLACKOUT: Data-Oblivious Computation with Blinded Capabilities \| [CHERITech’25](/events/cheritech25/) — 14/11/2025, Manchester, UK

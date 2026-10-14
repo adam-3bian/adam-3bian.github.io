@@ -23,4 +23,4 @@ Mark is Lead CPU Architect at [Codasip](/organisations/codasip/) and has 30 year
 
 ## CHERI Talks
 
-- Efficient system-level support for CHERI Capabilities | [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK
+- Efficient system-level support for CHERI Capabilities \| [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK

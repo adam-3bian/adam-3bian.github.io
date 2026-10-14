@@ -24,4 +24,4 @@ He is a Professor at the [University of Kent](/organisations/university-of-kent/
 
 ## CHERI Talks
 
-- Rust for Morello: Always-On Memory Safety, Even in Unsafe Code | [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK
+- Rust for Morello: Always-On Memory Safety, Even in Unsafe Code \| [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK
