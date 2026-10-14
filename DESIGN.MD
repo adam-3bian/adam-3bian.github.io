@@ -15,6 +15,7 @@ framework, remote font or third-party image viewer is needed.
 | Brand and links | CHERI blue `#125770`; darker blue on hover |
 | Accent | CHERI red `#ba1e1e`, used sparingly as a section keyline |
 | Borders | Soft blue-grey `#d6e2e8` |
+| Form boundaries | `--control-line: #738b98`, at least 3:1 against white |
 | Focus | A visible 3px amber outline; never colour alone |
 | Typeface | Locally served Poppins, with system sans-serif fallbacks; monospace for code |
 | Body | 1rem, line height 1.7; scalable headings with tighter line height |

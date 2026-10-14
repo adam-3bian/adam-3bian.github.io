@@ -24,6 +24,18 @@ const routes = ['/', '/build/', '/search/', '/people/', '/organisations/', '/eve
         assert.equal(await page.locator('main h1').count(), 1);
         report.reflow++;
         if (width === 320) {
+          const boundaries = await page.locator('main input:not([type="hidden"])').evaluateAll(inputs => {
+            function luminance(colour) {
+              const channels = colour.match(/[\d.]+/g).slice(0, 3).map(value => Number(value) / 255).map(value => value <= .04045 ? value / 12.92 : ((value + .055) / 1.055) ** 2.4);
+              return channels.reduce((sum, value, index) => sum + value * [.2126, .7152, .0722][index], 0);
+            }
+            return inputs.filter(input => input.getClientRects().length && !input.disabled).map(input => {
+              const style = getComputedStyle(input);
+              const values = [luminance(style.borderTopColor), luminance(style.backgroundColor)].sort((a, b) => b - a);
+              return { id: input.id, contrast: (values[0] + .05) / (values[1] + .05) };
+            });
+          });
+          assert(boundaries.every(boundary => boundary.contrast >= 3), `${route}: visible input boundaries require 3:1 contrast`);
           await page.addScriptTag({ path: process.env.AXE_PATH || require.resolve('axe-core/axe.min.js') });
           const issues = await page.evaluate(async () => (await axe.run({ runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa'] } })).violations.map(v => ({ id: v.id, nodes: v.nodes.map(n => n.target) })));
           assert.deepEqual(issues, [], `${route}: whole-page accessibility`);
