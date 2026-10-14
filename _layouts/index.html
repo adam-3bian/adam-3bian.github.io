@@ -2,7 +2,7 @@
 layout: default
 ---
 {% assign section_menu = site.navigation.header | where: 'url', page.url | first %}
-<article class="index-page" data-content-route="{{ page.url | escape }}" data-collection="pages">
+<article class="index-page{% if page.url == '/' %} home-page{% endif %}" data-content-route="{{ page.url | escape }}" data-collection="pages">
   <hgroup class="index-intro"><h1>{{ page.title | escape }}</h1><p>{{ page.summary | escape }}</p></hgroup>
   <nav class="index-navigation" aria-label="Pages in {{ page.title | escape }}">
     <ul class="index-pages{% if page.url != '/' %} columns-{{ section_menu.columns | default: 3 }}{% endif %}" role="list">

@@ -9,12 +9,14 @@
     <div id="header-navigation">
       <nav id="primary-navigation" class="source-nav" aria-label="Primary">
         <ul class="primary-menu-list">
+          {% assign page_section = page.url | split: '/' | slice: 1 | first %}
           {% for node in site.navigation.header %}
           {% assign menu_number = forloop.index %}
+          {% assign menu_section = node.url | split: '/' | slice: 1 | first %}
           <li>
             {% if node.subcategories or node.links %}
             <details class="primary-menu" name="primary-menu">
-              <summary aria-controls="primary-panel-{{ menu_number }}">{{ node.title | escape }}</summary>
+              <summary{% if page_section == menu_section %} class="current-section"{% endif %} aria-controls="primary-panel-{{ menu_number }}">{{ node.title | escape }}</summary>
               <section id="primary-panel-{{ menu_number }}" class="primary-menu-panel" aria-label="{{ node.title | escape }} links">
                 {% if node.url %}<a class="section-link" href="{% include href.html url=node.url %}">{{ node.title | escape }} overview</a>{% endif %}
                 {% if node.subcategories %}

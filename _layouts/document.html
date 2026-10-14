@@ -4,7 +4,7 @@ layout: default
 {% assign current_kind = page.collection | default: 'pages' %}
 {% assign current_map = site.data.page-map | where: 'url', page.url | first %}
 {% if current_map %}<nav class="breadcrumb" aria-label="Breadcrumb"><ol role="list"><li><a href="{{ '/' | relative_url }}">Home</a></li>{% if current_map.parent and current_map.parent != '/' %}{% assign parent_map = site.data.page-map | where: 'url', current_map.parent | first %}<li><a href="{{ current_map.parent | relative_url }}">{{ parent_map.title | default: current_map.parent | escape }}</a></li>{% endif %}<li aria-current="page">{{ page.title | escape }}</li></ol></nav>{% endif %}
-<article data-content-route="{{ page.url | escape }}" data-collection="{{ current_kind | escape }}">
+<article{% if current_kind == 'pages' and page.listing == nil %} class="ordinary-page"{% endif %} data-content-route="{{ page.url | escape }}" data-collection="{{ current_kind | escape }}">
   {% assign show_lead_image = false %}{% if page.image_url %}{% unless page.image_url contains '/placeholder.svg' or current_kind == 'case-studies' %}{% assign show_lead_image = true %}{% endunless %}{% endif %}
   <header class="record-header{% if show_lead_image %} has-image{% endif %}">
     <hgroup class="record-intro">{% if current_kind != 'pages' %}<p class="eyebrow">{{ site.data.viewer.collections[current_kind].label | escape }}{% if page.alternate %} · Archived version{% endif %}</p>{% elsif page.alternate %}<p class="eyebrow">Archived page</p>{% endif %}<h1>{{ page.title | escape }}</h1>{% if page.summary %}<p class="summary">{{ page.summary | escape }}</p>{% endif %}</hgroup>
