@@ -166,10 +166,22 @@ const routes = [
         if (indexes[route]) {
           const expected = indexes[route];
           assert.equal(await page.locator('main h1').count(), 1, 'Index has one title');
-          assert.equal(await page.locator('main h1').textContent(), expected.title);
-          assert.equal(await page.locator('main p').count(), 1, 'Index has one short introduction');
-          assert.equal(await page.locator('main p').textContent(), expected.summary);
-          assert.equal(await page.locator('main .metadata, main .relationships, main .inspector, main .cards, main img, main div, main span, main h2, main h3, main details').count(), 0, 'Extra content on an index');
+          assert.equal(await page.locator('main h1').textContent(), expected.home?.title || expected.title);
+          if (route === '/') {
+            assert.equal(await page.locator('.home-hero .summary').textContent(), expected.summary);
+            assert.equal(await page.locator('.home-purpose').textContent(), expected.title, 'Preserve the original introduction');
+            assert.deepEqual(await page.locator('.home-hero .action-links a').evaluateAll(links => links.map(link => ({ title: link.textContent.trim(), href: link.href }))), [expected.home.primary, expected.home.secondary].map(link => ({ title: link.title, href: url(link.url) })), 'Homepage calls to action');
+            assert.equal(await page.locator('.home-journeys > li').count(), 4, 'Four audience pathways');
+            assert.deepEqual(await page.locator('.home-page .cards .card').evaluateAll(links => links.map(link => link.href)), expected.home.examples.map(slug => url(`/case-studies/${slug}/`)), 'Verified canonical case studies');
+            const newsDates = await page.locator('[data-featured="news"] time').evaluateAll(times => times.map(time => time.dateTime));
+            assert.ok(newsDates.length > 0 && newsDates.every(date => /^\d{4}-\d{2}-\d{2}$/.test(date)), 'Only source-dated news is featured');
+            assert.deepEqual(newsDates, [...newsDates].sort().reverse(), 'Recent news is newest first');
+            assert.equal(await page.locator('main .metadata, main .relationships, main .inspector, main .front-matter-json').count(), 0, 'Homepage does not expose record or authoring panels');
+          } else {
+            assert.equal(await page.locator('main p').count(), 1, 'Index has one short introduction');
+            assert.equal(await page.locator('main p').textContent(), expected.summary);
+            assert.equal(await page.locator('main .metadata, main .relationships, main .inspector, main .cards, main img, main div, main span, main h2, main h3, main details').count(), 0, 'Extra content on an index');
+          }
           const actual = await page.locator('main .index-navigation a').evaluateAll(links => links.map(link => ({ title: link.textContent.trim(), href: link.href })));
           assert.deepEqual(actual, expected.links.map(link => ({ title: link.title, href: url(link.url) })), 'Index must match the mega-menu labels and order');
           assert.deepEqual(await page.locator('.index-group-label').allTextContents(), expected.groups.map(group => group.title));

@@ -1,0 +1,30 @@
+# Presentation copy is drawn from the linked, existing public resources.
+home:
+  title: 'CHERI: hardware foundations for safer software'
+  primary:
+    title: Understand CHERI
+    url: /discover/understand/how-does-cheri-work/
+  secondary:
+    title: Start building
+    url: /guides/choose-a-platform/
+  problem: Memory-safety vulnerabilities remain one of the biggest challenges in cybersecurity. Attackers routinely exploit software bugs to steal data, take control of systems, bypass security boundaries, and disrupt critical services.
+  problem_source: /discover/why-cheri/why-cheri/
+  topics:
+  - /build/technology/capabilities/
+  - /discover/why-cheri/approaches-to-memory-safety/
+  - /build/technology/compartmentalisation/
+  journeys:
+  - title: New to CHERI?
+    url: /discover/
+  - title: Developing software or hardware?
+    url: /build/
+  - title: Evaluating CHERI for your organisation?
+    url: /adopt/
+  - title: Interested in Alliance membership?
+    url: /alliance/membership/why-join/
+  examples:
+  - morello
+  - cheriot
+  - codasip-x730
+  alliance_intro: The CHERI Alliance brings together industry, research, government, and open-source communities to accelerate the adoption of CHERI technology.
+  alliance_source: /organisations/cheri-alliance/

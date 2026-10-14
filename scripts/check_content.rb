@@ -116,6 +116,14 @@ objects.each do |object|
     index_pages[object.url] = {'title' => fields['title'], 'summary' => fields['summary'],
                              'columns' => menu && menu.fetch('columns', 3) || 1,
                              'groups' => groups, 'links' => links}
+    if object.url == '/'
+      home = site.data.dig('landing', 'home') || {}
+      errors << 'Missing homepage heading' if home['title'].to_s.strip.empty?
+      routes = [home.dig('primary', 'url'), home.dig('secondary', 'url'), home['problem_source'], home['alliance_source']] + Array(home['topics']) + Array(home['journeys']).map { |journey| journey['url'] }
+      routes.each { |route| errors << "Unknown homepage route: #{route}" unless lookup.key?(route) }
+      Array(home['examples']).each { |slug| errors << "Unknown homepage case study: #{slug}" unless slugs.fetch('case-studies').key?(slug) }
+      index_pages[object.url]['home'] = home
+    end
   end
   if kind == 'listing'
     listing = fields['listing'] || {}

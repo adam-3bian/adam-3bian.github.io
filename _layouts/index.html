@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% if page.url == '/' %}{% include home.html %}{% else %}
 {% assign section_menu = site.navigation.header | where: 'url', page.url | first %}
 <article class="index-page{% if page.url == '/' %} home-page{% endif %}" data-content-route="{{ page.url | escape }}" data-collection="pages">
   <hgroup class="index-intro"><h1>{{ page.title | escape }}</h1><p>{{ page.summary | escape }}</p></hgroup>
@@ -19,3 +20,4 @@ layout: default
     </ul>
   </nav>
 </article>
+{% endif %}

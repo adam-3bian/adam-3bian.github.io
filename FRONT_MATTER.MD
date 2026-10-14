@@ -364,9 +364,9 @@ Use for home and section landing pages. Each index contains one title, one short
 | `layout` | `index` | The section/home layout. |
 | `summary` | Nonempty string | One short introductory paragraph, rendered as plain text. |
 
-Leave the Markdown body empty. Group labels, page links, link labels, order and desktop column counts come directly from `navigation.header` in `_config.yml`, using the menu entry with the index's `permalink`. The home index lists the five top-level section links. Other indexes show their mega-menu's grouped child links, including pages in collections. Edit the menu to change these lists; do not maintain a second set in page content or `sections` front matter.
+Leave the Markdown body empty. Group labels, page links, link labels, order and desktop column counts come directly from `navigation.header` in `_config.yml`, using the menu entry with the index's `permalink`. The homepage additionally uses `_data/landing.yml` for source-backed presentation and canonical featured routes, and generates recent news and upcoming events from their collections. It retains the five top-level section links and the original title and summary. Other indexes show their mega-menu's grouped child links, including pages in collections. Edit the menu to change these lists; do not maintain a second set in page content or `sections` front matter.
 
-Indexes render with `hgroup`, `nav`, `ul` and `li`; they need no JavaScript. Group lists use the menu's three or four columns on desktop, two on tablet and one on mobile. Index pages do not add hero images, collection overviews, front-matter inspectors or related-record panels.
+Indexes render with semantic headings, navigation and lists; they need no JavaScript. Group lists use the menu's three or four columns on desktop, two on tablet and one on mobile. Section indexes do not add hero images, collection overviews, front-matter inspectors or related-record panels. The homepage uses sections and the shared card include for approved case studies, omitting placeholder artwork.
 
 Complete index example:
 

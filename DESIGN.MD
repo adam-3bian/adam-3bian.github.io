@@ -55,7 +55,12 @@ images; paragraphs use the available content container.
 A section index has its title, short existing introduction and columns of links
 drawn from the matching mega-menu groups. Link rows have generous spacing and
 visible focus. Indexes do not duplicate record lists or add promotional copy.
-The home index follows the same rule.
+The home index uses a dedicated shared include: one CHERI introduction, two
+starting actions, source-backed topic and audience routes, selected canonical
+case studies, build-time news/events and Alliance participation links. Its
+original introduction and five main section destinations remain available.
+Presentation metadata lives in `_data/landing.yml`; activity is generated from
+the existing collections, with a useful empty-event state.
 
 ## Lists and directories
 

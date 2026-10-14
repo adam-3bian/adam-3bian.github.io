@@ -1,0 +1,23 @@
+{% assign home = site.data.landing.home %}
+<article class="index-page home-page" data-content-route="{{ page.url | escape }}" data-collection="pages">
+  <header class="home-hero">
+    <hgroup><h1>{{ home.title | escape }}</h1><p class="summary">{{ page.summary | escape }}</p></hgroup>
+    <nav class="action-links" aria-label="Get started"><ul role="list"><li><a class="primary-action" href="{{ home.primary.url | relative_url }}">{{ home.primary.title | escape }}</a></li><li><a href="{{ home.secondary.url | relative_url }}">{{ home.secondary.title | escape }}</a></li></ul></nav>
+  </header>
+  <section class="home-explanation" aria-labelledby="home-explanation-heading">
+    <h2 id="home-explanation-heading">Why memory safety matters</h2>
+    <p class="home-purpose">{{ page.title | escape }}</p>
+    <p>{{ home.problem | escape }} <a href="{{ home.problem_source | relative_url }}">Why CHERI?</a></p>
+    <ul class="home-topics" role="list">{% for route in home.topics %}{% assign topic = site.pages | where: 'url', route | first %}{% if topic %}<li><h3><a href="{{ topic.url | relative_url }}">{{ topic.title | escape }}</a></h3><p>{{ topic.summary | escape }}</p></li>{% endif %}{% endfor %}</ul>
+  </section>
+  <section aria-labelledby="home-journeys-heading"><h2 id="home-journeys-heading">Find your next step</h2>
+    <ul class="home-journeys" role="list">{% for journey in home.journeys %}{% assign destination = site.pages | where: 'url', journey.url | first %}{% if destination %}<li><h3><a href="{{ journey.url | relative_url }}">{{ journey.title | escape }}</a></h3><p>{{ destination.summary | escape }}</p></li>{% endif %}{% endfor %}</ul>
+  </section>
+  <section aria-labelledby="home-examples-heading"><h2 id="home-examples-heading">CHERI in practice</h2><p>Explore existing platform and software examples, from research and evaluation to commercial processors.</p>
+    {% assign examples = '' | split: '' %}{% for slug in home.examples %}{% assign example = site['case-studies'] | where: 'slug', slug | first %}{% if example %}{% assign examples = examples | push: example %}{% endif %}{% endfor %}{% include cards.html items=examples collection='case-studies' %}
+    <p><a href="{{ '/case-studies/' | relative_url }}">Explore all case studies</a></p>
+  </section>
+  {% include featured-activity.html %}
+  <section class="home-alliance" aria-labelledby="home-alliance-heading"><h2 id="home-alliance-heading">Building the CHERI ecosystem together</h2><p>{{ home.alliance_intro | escape }} <a href="{{ home.alliance_source | relative_url }}">About the CHERI Alliance</a></p><nav class="action-links" aria-label="Participate"><ul role="list"><li><a class="primary-action" href="{{ '/alliance/membership/why-join/' | relative_url }}">Explore membership</a></li><li><a href="{{ '/working-groups/' | relative_url }}">Find a working group</a></li><li><a href="{{ '/organisations/' | relative_url }}">Explore the ecosystem</a></li></ul></nav></section>
+  <nav class="index-navigation" aria-label="Explore the website"><h2>Explore the website</h2><ul class="index-pages" role="list">{% for section in site.navigation.header %}{% if section.url %}<li><a href="{{ section.url | relative_url }}">{{ section.title | escape }}</a></li>{% endif %}{% endfor %}</ul></nav>
+</article>
