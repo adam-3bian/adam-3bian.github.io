@@ -387,6 +387,14 @@ File.write(File.join(root, '_data/checks.yml'), YAML.dump(report))
 File.write(File.join(root, '_data/relationships.yml'), YAML.dump(relation_data))
 FileUtils.mkdir_p(File.join(root, 'reports'))
 File.write(File.join(root, 'reports/index-navigation.json'), JSON.pretty_generate(index_pages) + "\n")
+primary_navigation = header_menu.map do |section|
+  presentation = site.data.dig('landing', 'sections', section['url']) || {}
+  groups = [['Start here', 'introductory_routes'], ['Explore resources', 'featured_routes']].map do |label, key|
+    {'title' => label, 'links' => Array(presentation[key]).filter_map { |route| target = lookup[route]; {'title' => target.data['title'], 'url' => route} if target }}
+  end
+  {'title' => section['title'], 'url' => section['url'], 'groups' => groups}
+end
+File.write(File.join(root, '_data/primary-navigation.json'), JSON.pretty_generate(primary_navigation) + "\n")
 footer_navigation = {
   'groups' => Array(config.dig('navigation', 'footer')).map do |group|
     {'title' => group['title'], 'links' => Array(group['links']).map { |link| link.slice('title', 'url') }}

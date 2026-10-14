@@ -36,9 +36,17 @@ avoid per-record overrides.
 
 ## Site frame
 
-The header contains the original Alliance logo and the existing mega menu.
+The header contains the original Alliance logo and five compact native menus.
+Source-backed starting points and featured resources supply the secondary links;
+complete subject navigation remains on section landing pages. The content
+validator generates `_data/primary-navigation.json` from the source records and
+shared landing metadata, avoiding repeated document lookups during rendering.
+Collection active sections use `_data/viewer.yml` associations, with route and
+registered-navigation fallbacks for ordinary pages.
 Native `details` and `summary` keep links available without JavaScript; the small
-navigation script adds keyboard behaviour and the mobile toggle. Give the logo
+navigation script adds keyboard behaviour and the mobile toggle. Mobile menus
+show their second-level destinations directly, without a third disclosure step.
+Give the logo
 an accessible home-link name and explicit intrinsic dimensions.
 
 The light footer has four visible link groups on desktop, two on tablet and one

@@ -574,7 +574,7 @@ navigation:
       - title: Privacy
         url: /policies/privacy/
     url: /alliance/
-  - title: News & Events
+  - title: News and Events
     type: megamenu
     columns: 3
     subcategories:

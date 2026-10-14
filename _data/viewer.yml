@@ -141,3 +141,17 @@ aliases:
   /papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/: /academic-papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/
   /papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/: /academic-papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/
   /groups/cheri-research/: /working-groups/cheri-research/
+# Conceptual sections for collections whose public routes have other prefixes.
+navigation_sections:
+  people: /alliance/
+  organisations: /alliance/
+  working-groups: /alliance/
+  policies: /alliance/
+  news: /news-and-events/
+  events: /news-and-events/
+  academic-papers: /discover/
+  reports: /discover/
+  case-studies: /adopt/
+  guides: /build/
+  hardware: /build/
+  software: /build/

@@ -11,7 +11,8 @@ const widths = [1440, 1024, 768, 640, 375];
 const report = { widths, panelsChecked: 0, accessibilityChecks: 0 };
 const audit = JSON.parse(fs.readFileSync('reports/preflight.json', 'utf8'));
 const indexes = JSON.parse(fs.readFileSync('reports/index-navigation.json', 'utf8'));
-const expectedMenuLinks = Object.values(indexes).reduce((count, index) => count + index.links.length, 0);
+const primarySource = JSON.parse(fs.readFileSync('_data/primary-navigation.json', 'utf8'));
+const expectedMenuLinks = primarySource.reduce((count, section) => count + 1 + section.groups.reduce((total, group) => total + group.links.length, 0), 0);
 
 async function assertContained(page, desktop) {
   const problems = await page.evaluate(isDesktop => {
@@ -48,6 +49,27 @@ async function assertAccessible(page) {
   try {
     page = await browser.newPage();
     page.on('pageerror', error => { throw error; });
+    const coverage = await browser.newPage();
+    const destinations = new Set(primarySource.flatMap(section => [section.url, ...section.groups.flatMap(group => group.links.map(link => link.url))]).map(route => new URL(route.replace(/^\//, ''), base).pathname));
+    for (const route of Object.keys(indexes)) {
+      await coverage.goto(new URL(route.replace(/^\//, ''), base).href);
+      for (const href of await coverage.locator('main .index-navigation a').evaluateAll(links => links.map(a => new URL(a.href).pathname))) destinations.add(href);
+    }
+    for (const route of Object.values(indexes).flatMap(index => index.links.map(link => link.url))) assert(destinations.has(new URL(route.replace(/^\//, ''), base).pathname), `Canonical destination coverage: ${route}`);
+    report.destinationCoverage = destinations.size;
+    report.activeSectionChecks = 0;
+    for (const width of [1440, 375]) {
+      await coverage.setViewportSize({ width, height: 900 });
+      for (const [route, section] of [['/hardware/morello/', '/build/'], ['/guides/install-a-toolchain/', '/build/'], ['/software/cheribsd/', '/build/'], ['/case-studies/morello/', '/adopt/'], ['/people/adam-finney/', '/alliance/'], ['/organisations/codasip/', '/alliance/'], ['/academic-papers/cheri-concentrate-practical-compressed-capabilities/', '/discover/'], ['/news/ai-has-compressed-the-attack-timeline/', '/news-and-events/']]) {
+        await coverage.goto(new URL(route.replace(/^\//, ''), base).href);
+        assert.equal(await coverage.locator('.primary-menu > .current-section').count(), 1, 'One conceptual active section');
+        const current = coverage.locator('.primary-menu:has(> .current-section) > .primary-menu-panel > .section-link');
+        assert.equal(await current.getAttribute('aria-current'), 'true');
+        assert.equal(await current.getAttribute('href'), new URL(section.replace(/^\//, ''), base).pathname);
+        report.activeSectionChecks++;
+      }
+    }
+    await coverage.close();
     for (const width of widths) {
       await page.setViewportSize({ width, height: 900 });
       assert.equal((await page.goto(base)).status(), 200);
@@ -56,7 +78,8 @@ async function assertAccessible(page) {
       const navigation = page.locator('#primary-navigation');
       const menus = page.locator('.primary-menu');
       assert.equal(await menus.count(), 5);
-      assert.equal(await page.locator('.source-nav a').count(), expectedMenuLinks, 'Canonical primary routes were lost');
+      assert.equal(await page.locator('.source-nav a').count(), expectedMenuLinks, 'Primary menu must match source-derived priorities');
+      assert.deepEqual(await page.locator('.source-nav a').evaluateAll(links => links.map(a => new URL(a.href).pathname)), primarySource.flatMap(section => [section.url, ...section.groups.flatMap(group => group.links.map(link => link.url))]).map(route => new URL(route.replace(/^\//, ''), base).pathname));
       assert.equal(await page.locator('.collection-nav a').count(), audit.collection_count);
       assert.equal(await page.locator('.site-header .collection-nav, .site-header .checks-link').count(), 0);
       assert.equal(await page.locator('.collection-footer .checks-link').getAttribute('href'), new URL('checks/', base).pathname);
@@ -83,16 +106,14 @@ async function assertAccessible(page) {
           const groups = panel.locator('.menu-groups');
           const columns = await groups.evaluate(element => getComputedStyle(element).gridTemplateColumns.split(' ').length);
           assert.equal(columns, await groups.locator(':scope > li').count(), 'Menu groups are not separate columns');
-          assert.equal(await panel.locator('.menu-group-disclosure > summary:visible').count(), 0);
+          assert.equal(await panel.locator('details').count(), 0, 'No unnecessary nested disclosure level');
           const last = panel.locator('a').last();
           await last.scrollIntoViewIfNeeded();
           const rect = await last.boundingBox();
           assert(rect.y >= 0 && rect.y + rect.height <= 900, 'Last link is inaccessible in a long menu');
         } else {
-          const group = panel.locator('.menu-group-disclosure').first();
-          assert.equal(await group.locator('a').first().isVisible(), false);
-          await group.locator(':scope > summary').click();
-          assert.equal(await group.locator('a').first().isVisible(), true);
+          assert.equal(await panel.locator('.menu-group a').first().isVisible(), true, 'Second-level links available immediately');
+          assert.equal(await panel.locator('details').count(), 0, 'Mobile needs no third disclosure level');
         }
         await assertContained(page, desktop);
         report.panelsChecked++;
@@ -158,13 +179,8 @@ async function assertAccessible(page) {
     await page.keyboard.press('Tab');
     await page.keyboard.press('Enter');
     await page.keyboard.press('Tab'); // Overview link.
-    await page.keyboard.press('Tab'); // First mobile group disclosure.
-    assert.equal(await page.locator('.primary-menu[open] .menu-group-disclosure > summary').first().evaluate(element => element === document.activeElement), true);
-    await page.keyboard.press('Enter');
-    await page.keyboard.press('Tab');
-    assert.equal(await page.locator('.primary-menu[open] .menu-group-disclosure').first().locator('a').first().evaluate(element => element === document.activeElement), true);
-    await page.keyboard.press('Escape');
-    assert.equal(await page.locator('.primary-menu[open] .menu-group-disclosure').first().getAttribute('open'), null);
+    await page.keyboard.press('Tab'); // First second-level destination.
+    assert.equal(await page.locator('.primary-menu[open] .menu-group a').first().evaluate(element => element === document.activeElement), true);
     await page.keyboard.press('Escape');
     assert.equal(await page.locator('.primary-menu[open]').count(), 0);
     await page.keyboard.press('Escape');
@@ -180,10 +196,9 @@ async function assertAccessible(page) {
     await mobile.goto(base);
     await mobile.locator('#navigation-toggle').tap();
     await mobile.locator('.primary-menu > summary').first().tap();
-    await mobile.locator('.primary-menu[open] .menu-group-disclosure > summary').first().tap();
     await assertContained(mobile, false);
-    const destination = await mobile.locator('.primary-menu[open] .menu-group-disclosure a').first().getAttribute('href');
-    await mobile.locator('.primary-menu[open] .menu-group-disclosure a').first().tap();
+    const destination = await mobile.locator('.primary-menu[open] .menu-group a').first().getAttribute('href');
+    await mobile.locator('.primary-menu[open] .menu-group a').first().tap();
     await mobile.waitForURL(new URL(destination, base).href);
     assert.equal(await mobile.locator('#primary-navigation').isVisible(), false);
     await touch.close();
@@ -195,7 +210,7 @@ async function assertAccessible(page) {
       assert.equal(await fallback.locator('#navigation-toggle').isVisible(), false);
       assert.equal(await fallback.locator('#primary-navigation').isVisible(), true);
       await fallback.locator('.primary-menu > summary').first().click();
-      assert.equal(await fallback.locator('.primary-menu[open] .menu-group-disclosure a').first().isVisible(), true);
+      assert.equal(await fallback.locator('.primary-menu[open] .menu-group a').first().isVisible(), true);
       await assertContained(fallback, width >= 1024);
       await context.close();
     }

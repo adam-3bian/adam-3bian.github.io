@@ -1,0 +1,202 @@
+[
+  {
+    "title": "Discover CHERI",
+    "url": "/discover/",
+    "groups": [
+      {
+        "title": "Start here",
+        "links": [
+          {
+            "title": "Why CHERI?",
+            "url": "/discover/why-cheri/why-cheri/"
+          },
+          {
+            "title": "How does CHERI work?",
+            "url": "/discover/understand/how-does-cheri-work/"
+          },
+          {
+            "title": "FAQ",
+            "url": "/discover/understand/faq/"
+          }
+        ]
+      },
+      {
+        "title": "Explore resources",
+        "links": [
+          {
+            "title": "An Introduction to CHERI",
+            "url": "/reports/an-introduction-to-cheri/"
+          },
+          {
+            "title": "Papers",
+            "url": "/academic-papers/"
+          },
+          {
+            "title": "Documentation & Guides",
+            "url": "/discover/resources/documentation-and-guides/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Adopt",
+    "url": "/adopt/",
+    "groups": [
+      {
+        "title": "Start here",
+        "links": [
+          {
+            "title": "The Strategic Case for CHERI",
+            "url": "/adopt/business-case/the-business-case/"
+          },
+          {
+            "title": "The Cost of Memory Unsafety",
+            "url": "/adopt/business-case/cost-of-memory-unsafety/"
+          },
+          {
+            "title": "The CHERI Enabled Programme",
+            "url": "/adopt/assurance-and-adoption/about-cheri-enabled/"
+          }
+        ]
+      },
+      {
+        "title": "Explore resources",
+        "links": [
+          {
+            "title": "Morello: a complete experimental stack",
+            "url": "/case-studies/morello/"
+          },
+          {
+            "title": "CHERIoT: protection for small embedded devices",
+            "url": "/case-studies/cheriot/"
+          },
+          {
+            "title": "CHERI in commercial processor products",
+            "url": "/case-studies/codasip-x730/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Build",
+    "url": "/build/",
+    "groups": [
+      {
+        "title": "Start here",
+        "links": [
+          {
+            "title": "Choosing a CHERI Development Platform",
+            "url": "/guides/choose-a-platform/"
+          },
+          {
+            "title": "Building Secure Software with CHERI",
+            "url": "/guides/building-secure-software/"
+          },
+          {
+            "title": "Tutorials & Training",
+            "url": "/guides/tutorials-and-training/"
+          }
+        ]
+      },
+      {
+        "title": "Explore resources",
+        "links": [
+          {
+            "title": "Morello",
+            "url": "/hardware/morello/"
+          },
+          {
+            "title": "CHERIoT",
+            "url": "/hardware/cheriot/"
+          },
+          {
+            "title": "CheriBSD",
+            "url": "/software/cheribsd/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "CHERI Alliance",
+    "url": "/alliance/",
+    "groups": [
+      {
+        "title": "Start here",
+        "links": [
+          {
+            "title": "CHERI Alliance",
+            "url": "/organisations/cheri-alliance/"
+          },
+          {
+            "title": "Why Join?",
+            "url": "/alliance/membership/why-join/"
+          },
+          {
+            "title": "Working Groups",
+            "url": "/working-groups/"
+          }
+        ]
+      },
+      {
+        "title": "Explore resources",
+        "links": [
+          {
+            "title": "Members",
+            "url": "/alliance/leadership/members/"
+          },
+          {
+            "title": "Governing Board",
+            "url": "/alliance/leadership/governing-board/"
+          },
+          {
+            "title": "Accelerating CHERI together",
+            "url": "/alliance/about-and-governance/accelerating-together/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "News and Events",
+    "url": "/news-and-events/",
+    "groups": [
+      {
+        "title": "Start here",
+        "links": [
+          {
+            "title": "News",
+            "url": "/news/"
+          },
+          {
+            "title": "Upcoming Events",
+            "url": "/news-and-events/events-and-archive/upcoming-events/"
+          },
+          {
+            "title": "Subscribe to our quarterly newsletter",
+            "url": "/news-and-events/news-and-analysis/subscribe-newsletter/"
+          }
+        ]
+      },
+      {
+        "title": "Explore resources",
+        "links": [
+          {
+            "title": "Past Events",
+            "url": "/news-and-events/events-and-archive/past-events/"
+          },
+          {
+            "title": "Speakers",
+            "url": "/news-and-events/people-and-opportunities/speakers/"
+          },
+          {
+            "title": "Press Resources",
+            "url": "/news-and-events/news-and-analysis/press-resources/"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -8,7 +8,6 @@
 
   const desktop = window.matchMedia('(min-width: 64rem)');
   const menus = [...primary.querySelectorAll('.primary-menu')];
-  const groups = [...primary.querySelectorAll('.menu-group-disclosure')];
   const summaryFor = menu => menu.querySelector(':scope > summary');
   const closeMenus = () => menus.forEach(menu => { menu.open = false; });
 
@@ -16,6 +15,8 @@
     navigation.hidden = !desktop.matches && !open;
     toggle.setAttribute('aria-expanded', String(open));
     toggle.setAttribute('aria-label', `${open ? 'Close' : 'Open'} navigation menu`);
+    toggle.querySelector('[aria-hidden]').textContent = open ? '×' : '☰';
+    toggle.querySelector('[data-menu-label]').textContent = open ? 'Close' : 'Menu';
   }
 
   function containPanels() {
@@ -67,8 +68,7 @@
       closeMenus();
       summaryFor(menus[next]).focus();
     } else if (event.key === 'Escape' || (event.key === 'ArrowLeft' && !summary)) {
-      const group = !desktop.matches && event.target.closest('.menu-group-disclosure[open]');
-      const open = group || menus.find(menu => menu.open);
+      const open = menus.find(menu => menu.open);
       if (open) {
         event.preventDefault();
         open.open = false;
@@ -98,7 +98,6 @@
     const focused = document.activeElement;
     const focusWasInNavigation = navigation.contains(focused);
     closeMenus();
-    groups.forEach(group => { group.open = desktop.matches; });
     toggle.hidden = desktop.matches;
     setNavigation(false);
     if (!desktop.matches && focusWasInNavigation) toggle.focus();
