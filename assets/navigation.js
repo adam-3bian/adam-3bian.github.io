@@ -109,4 +109,5 @@
   window.addEventListener('scroll', containPanels, { passive: true });
   changeMode();
   navigation.setAttribute('data-navigation-ready', '');
+  document.documentElement.classList.remove('navigation-enhanced');
 })();
