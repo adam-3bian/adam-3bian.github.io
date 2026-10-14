@@ -1,4 +1,5 @@
-<ul class="record-list" id="directory-list" role="list">
+{% assign list_kind = include.items | first %}
+<ul class="record-list{% if list_kind.collection == 'people' or list_kind.collection == 'organisations' %} with-images{% endif %}" id="directory-list" role="list">
 {% for item in include.items %}
   {% assign row_image = false %}{% if item.image_url and include.show_images != false %}{% assign row_image = true %}{% endif %}
   {% assign row_title_id = 'record-title-' | append: forloop.index %}

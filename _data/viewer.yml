@@ -4,7 +4,7 @@ collections:
     card_action: View profile
     listing_view: list
     searchable: true
-    website_action: Visit personal website
+    website_action: View {title}'s profile
   news:
     label: News
     card_action: Read article
@@ -14,7 +14,7 @@ collections:
     card_action: View organisation
     listing_view: list
     searchable: true
-    website_action: Visit organisation website
+    website_action: Visit {title}
   events:
     label: Events
     card_action: View event
@@ -29,18 +29,18 @@ collections:
   hardware:
     label: Hardware
     card_action: View hardware
-    website_action: Visit project website
+    website_action: Explore {title}
   software:
     label: Software
     card_action: View software
     listing_view: list
-    website_action: Visit project website
+    website_action: Explore {title}
   working-groups:
     label: Working groups
     url: /working-groups/
     card_action: View working group
     listing_view: list
-    website_action: Visit project website
+    website_action: View group information
   guides:
     label: Guides
     card_action: Read guide

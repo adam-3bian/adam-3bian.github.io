@@ -370,12 +370,13 @@ body.image-viewer-open { position: fixed; inset-inline: 0; top: var(--image-view
 .record-list { list-style: none; margin: 1rem 0 0; padding: 0; border-top: 1px solid var(--line); }
 .record-list > li { margin: 0; min-width: 0; border-bottom: 1px solid var(--line); }
 .record-link { display: block; width: 100%; min-height: 44px; padding: 1.25rem; color: var(--ink); text-decoration: none; }
-.record-link.has-image { display: grid; grid-template-columns: 5rem minmax(0, 1fr); align-items: start; gap: 1.25rem; }
+.record-list.with-images .record-link { display: grid; grid-template-columns: 5rem minmax(0, 1fr); align-items: start; gap: 1.25rem; }
 .record-link:is(:hover, :focus-visible) { color: var(--ink); background: var(--soft); }
 .record-link:is(:hover, :focus-visible) h3 { text-decoration: underline; }
 .record-link img { display: block; width: 5rem; aspect-ratio: 3 / 1; height: auto; object-fit: contain; background: var(--image-background, transparent); }
 .record-link img.image-portrait { aspect-ratio: 1 / 1; }
 .record-link img.image-logo { padding: .25rem; }
+.record-list.with-images .record-list-text { grid-column: 2; }
 .record-list-text { min-width: 0; margin: 0; }
 .record-list-text h3 { color: var(--teal); margin: 0 0 .35rem; font-size: 1.125rem; }
 .record-list-text p { max-width: 86ch; margin: .25rem 0 0; }
@@ -466,7 +467,7 @@ code { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
   .record-content.has-facts:not(.is-wide) .metadata dl { grid-template-columns: minmax(0, 1fr); gap: .25rem; }
   .record-content.has-facts:not(.is-wide) .metadata dt:not(:first-child) { margin-top: .75rem; }
   .record-link { padding: 1rem .5rem; }
-  .record-link.has-image { grid-template-columns: 3.5rem minmax(0, 1fr); gap: 1rem; }
+  .record-list.with-images .record-link { grid-template-columns: 3.5rem minmax(0, 1fr); gap: 1rem; }
   .record-link img { width: 3.5rem; }
   .audit-stats { grid-template-columns: minmax(0, 1fr) max-content; grid-template-rows: none; grid-auto-flow: row; align-items: baseline; }
   .audit-stats dt, .audit-stats dd { grid-row: auto; }

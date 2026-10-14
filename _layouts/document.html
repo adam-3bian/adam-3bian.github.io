@@ -5,14 +5,6 @@ layout: default
 {% assign current_map = site.data.page-map | where: 'url', page.url | first %}
 {% if current_map %}<nav class="breadcrumb" aria-label="Breadcrumb"><ol role="list"><li><a href="{{ '/' | relative_url }}">Home</a></li>{% if current_map.parent and current_map.parent != '/' %}{% assign parent_map = site.data.page-map | where: 'url', current_map.parent | first %}<li><a href="{{ current_map.parent | relative_url }}">{{ parent_map.title | default: current_map.parent | escape }}</a></li>{% endif %}<li aria-current="page">{{ page.title | escape }}</li></ol></nav>{% endif %}
 {% assign directory_page = false %}{% if page.layout == 'list' or page.layout == 'people' or page.layout == 'news' or page.layout == 'events' %}{% assign directory_page = true %}{% endif %}
-<article class="record-page{% if directory_page %} directory-page{% endif %}" data-content-route="{{ page.url | escape }}" data-collection="{{ current_kind | escape }}">
-  {% assign show_lead_image = false %}{% if page.image_url %}{% unless page.image_url contains '/placeholder.svg' or current_kind == 'case-studies' %}{% assign show_lead_image = true %}{% endunless %}{% endif %}
-  <header class="record-header{% if show_lead_image %} has-image{% endif %}">
-    <hgroup class="record-intro">{% if current_kind != 'pages' %}<p class="eyebrow">{{ site.data.viewer.collections[current_kind].label | escape }}{% if page.alternate %} · Archived version{% endif %}</p>{% elsif page.alternate %}<p class="eyebrow">Archived page</p>{% endif %}<h1>{{ page.title | escape }}</h1>{% if page.summary %}<p class="summary">{{ page.summary | escape }}</p>{% endif %}</hgroup>
-    {% if show_lead_image %}{% assign image_height = 120 %}{% if current_kind == 'people' %}{% assign image_height = 360 %}{% endif %}<img class="lead-image{% if image_height == 360 %} image-portrait{% elsif current_kind == 'organisations' %} image-logo{% endif %}" src="{% include href.html url=page.image_url %}" alt="{{ page.title | escape }}"{% if page.image_background == 'dark' %} data-image-background="dark"{% endif %} width="360" height="{{ image_height }}">{% endif %}
-  </header>
-  {% include resources.html %}
-  {% assign alias_target = site.data.viewer.aliases[page.url] %}{% if alias_target %}<aside class="notice">This is a retained alias. <a href="{{ alias_target | relative_url }}">Continue to its destination</a>.</aside>{% endif %}
   {% assign reader_content = content | strip %}
   {% assign heading_prefix = reader_content | slice: 0, 3 %}
   {% if heading_prefix == '<h1' or heading_prefix == '<h2' or heading_prefix == '<h3' or heading_prefix == '<h4' or heading_prefix == '<h5' or heading_prefix == '<h6' %}
@@ -20,15 +12,41 @@ layout: default
     {% assign first_heading_text = first_heading | strip_html | strip | replace: '&amp;', '&' | replace: '&quot;', '"' | replace: '&#39;', "'" | replace: '&lt;', '<' | replace: '&gt;', '>' %}
     {% if first_heading_text == page.title %}{% assign reader_content = reader_content | remove_first: first_heading | remove_first: closing_heading %}{% endif %}
   {% endif %}
-  {% assign image_prefix = '/assets/' | relative_url | prepend: 'src="' %}
-  {% assign href_prefix = '/' | relative_url | prepend: 'href="' %}
-  {% comment %}Generated page links already use relative_url; protect their prefix before rewriting raw Markdown links.{% endcomment %}
-  {% assign protected_href_prefix = 'data-relative-href="' %}
+  {% assign reader_content = reader_content | strip %}
+  {% assign introduction_html = '' %}
+  {% assign introduction_parts = reader_content | split: '<p>' %}
+  {% assign introduction_index = 1 %}
+  {% if current_kind == 'academic-papers' or current_kind == 'reports' %}{% assign introduction_index = 2 %}{% endif %}
+  {% assign introduction_prefix = reader_content | slice: 0, 3 %}
+  {% if introduction_prefix == '<p>' or introduction_index == 2 %}
+    {% if introduction_parts.size > introduction_index %}
+      {% assign introduction_candidate = introduction_parts[introduction_index] | split: '</p>' | first %}
+      {% assign introduction_text = introduction_candidate | strip_html | strip | replace: '&amp;', '&' %}
+      {% assign introduction_length = introduction_text | size %}
+      {% unless introduction_candidate contains '<img' %}
+        {% assign use_introduction = false %}
+        {% if page.summary == nil and introduction_length > 0 and introduction_length <= 380 %}{% assign use_introduction = true %}{% elsif introduction_text == page.summary %}{% assign use_introduction = true %}{% endif %}
+        {% if use_introduction %}
+          {% assign introduction_html = introduction_candidate %}
+          {% assign introduction_paragraph = '<p>' | append: introduction_candidate | append: '</p>' %}
+          {% assign reader_content = reader_content | remove_first: introduction_paragraph %}
+        {% endif %}
+      {% endunless %}
+    {% endif %}
+  {% endif %}
+<article class="record-page{% if directory_page %} directory-page{% endif %}" data-content-route="{{ page.url | escape }}" data-collection="{{ current_kind | escape }}">
+  {% assign show_lead_image = false %}{% if page.image_url %}{% unless page.image_url contains '/placeholder.svg' or current_kind == 'case-studies' %}{% assign show_lead_image = true %}{% endunless %}{% endif %}
+  <header class="record-header{% if show_lead_image %} has-image{% endif %}">
+    <hgroup class="record-intro">{% if current_kind != 'pages' %}<p class="eyebrow">{{ site.data.viewer.collections[current_kind].label | escape }}{% if page.alternate %} · Archived version{% endif %}</p>{% elsif page.alternate %}<p class="eyebrow">Archived page</p>{% endif %}<h1>{{ page.title | escape }}</h1>{% if introduction_html != '' %}<p class="summary">{% include reader-content.html html=introduction_html %}</p>{% elsif page.summary %}<p class="summary">{{ page.summary | escape }}</p>{% endif %}</hgroup>
+    {% if show_lead_image %}{% assign image_height = 120 %}{% if current_kind == 'people' %}{% assign image_height = 360 %}{% endif %}<img class="lead-image{% if image_height == 360 %} image-portrait{% elsif current_kind == 'organisations' %} image-logo{% endif %}" src="{% include href.html url=page.image_url %}" alt="{{ page.title | escape }}"{% if page.image_background == 'dark' %} data-image-background="dark"{% endif %} width="360" height="{{ image_height }}">{% endif %}
+  </header>
+  {% include resources.html %}
+  {% assign alias_target = site.data.viewer.aliases[page.url] %}{% if alias_target %}<aside class="notice">This is a retained alias. <a href="{{ alias_target | relative_url }}">Continue to its destination</a>.</aside>{% endif %}
   {% capture record_facts %}{% include metadata.html %}{% endcapture %}{% assign record_facts = record_facts | strip %}
   {% assign wide_content = false %}{% if directory_page or reader_content contains 'image-full' or reader_content contains 'image-left' or reader_content contains 'image-right' or reader_content contains 'image-gallery' or reader_content contains '<table' %}{% assign wide_content = true %}{% endif %}
   <div class="record-content{% if record_facts != '' %} has-facts{% endif %}{% if wide_content %} is-wide{% endif %}">
   {{ record_facts }}
-  <section class="article-content" aria-label="Article content">{{ reader_content | replace: 'src="/assets/', image_prefix | replace: href_prefix, protected_href_prefix | replace: 'href="/', href_prefix | replace: protected_href_prefix, href_prefix }}</section>
+  <section class="article-content" aria-label="Article content">{% include reader-content.html html=reader_content %}</section>
   </div>
   {% include relationships.html %}
   {% if page.next_page_url %}<nav class="onward" aria-label="Next page"><a href="{% include href.html url=page.next_page_url %}">{% assign next_map = site.data.page-map | where: 'url', page.next_page_url | first %}{{ next_map.title | default: 'Continue reading' | escape }} →</a></nav>{% endif %}

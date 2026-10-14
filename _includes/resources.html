@@ -8,8 +8,9 @@
     {% assign is_source_profile = false %}
     {% if key == 'website_url' %}
       {% assign resource_label = page.website_label | default: site.data.viewer.collections[page.collection].website_action %}
-      {% if page.website_label == nil and page.collection == 'organisations' %}{% capture resource_label %}Visit {{ page.title }}{% endcapture %}{% elsif resource_label == nil %}{% capture resource_label %}Visit {{ page.title }}{% endcapture %}{% endif %}
-      {% if resource_url contains 'cheri-alliance.org/events/speakers/' %}{% assign resource_label = 'View original speaker profile' %}{% assign is_source_profile = true %}{% endif %}
+      {% assign resource_subject = page.title | remove: ' Certification Record' %}
+      {% assign resource_label = resource_label | replace: '{title}', resource_subject %}
+      {% if resource_url contains 'cheri-alliance.org/events/speakers/' %}{% if page.website_label == nil %}{% assign resource_label = 'View original speaker profile' %}{% endif %}{% assign is_source_profile = true %}{% endif %}
     {% elsif key == 'publication_url' %}{% assign resource_label = site.data.viewer.collections[page.collection].publication_action | default: resource_label %}{% endif %}
     <li><a{% if resource_primary and is_source_profile == false %} class="resource-primary"{% endif %} href="{% include href.html url=resource_url %}">{{ resource_label | escape }}</a></li>
     {% assign resource_primary = false %}

@@ -56,7 +56,7 @@ A section index has its title, existing introduction and clearly headed groups f
 
 ## Lists and directories
 
-Directories contain introductory Markdown and a native `ul`. Visual collections use cards; bibliographies, policies, guides, software and dense people/organisation directories use compact rows. Presentation defaults live in `_data/viewer.yml`; the ordered governing board retains portrait cards. Every record is one native link including padding, with an accessible name drawn from its title and no nested links. Missing images reserve no blank space.
+Directories contain introductory Markdown and a native `ul`. Visual collections use cards; bibliographies, policies, guides, software and dense people/organisation directories use compact rows. Presentation defaults live in `_data/viewer.yml`; the ordered governing board retains portrait cards. Every record is one native link including padding, with an accessible name drawn from its title and no nested links. Missing images render no placeholder panel; directory titles retain their column alignment.
 
 Keep titles intact, previews concise and useful metadata visible. Papers skip the bibliographic citation when choosing a preview; reports can use publisher/year alone when no descriptive paragraph exists. Counts are secondary and headings avoid repeating the page title. Search progressively enhances large people and organisation directories with native form controls, counts, Clear and an empty-result message; all records remain usable without JavaScript.
 
@@ -69,7 +69,7 @@ contain large technical tables with horizontal scrolling.
 
 ## Details and properties
 
-A detail page uses `article`, a compact `header`/`hgroup`, meaningful resource actions, selected facts, the existing body and onward links. Portraits and logos support the introduction without dominating it. One real layout wrapper places facts beside prose on desktop; it stacks in native document order on tablet/mobile. Wide technical content remains full width. Properties use `dl`, `dt` and `dd`, with open spacing rather than cell
+A detail page uses `article`, a compact `header`/`hgroup`, meaningful resource actions, selected facts, the existing body and onward links. Short opening introductions move into the header with their native links; publication abstracts precede their full citations. Explicit summary fields remain optional. Portraits and logos support the introduction without dominating it. One real layout wrapper places facts beside prose on desktop; it stacks in native document order on tablet/mobile. Wide technical content remains full width. Properties use `dl`, `dt` and `dd`, with open spacing rather than cell
 borders. Sidebar facts stack labels over values. Full-width facts place labels beside values on desktop and above them on mobile. Event
 dates retain source precision and timezone. Resources are distinct native links with meaningful destination names. One useful action may have visual priority; supporting source/profile links remain quieter. Repository entries use label and URL, without numbering. Hide empty fields and keep raw front matter, provenance and asset
 inspection in `/checks/`.

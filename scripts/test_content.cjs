@@ -258,6 +258,22 @@ const routes = [
     }
     await page.goto(url('/software/cheribsd/'));
     assert.deepEqual(await page.locator('.resource-links a').allTextContents(), ['Get started with CheriBSD', 'Build tools (cheribuild)', 'CheriBSD source', 'CheriBSD ports']);
+    assert.match(await page.locator('.record-intro .summary').innerText(), /CheriBSD adapts/);
+    assert.equal(await page.locator('.article-content').innerText().then(text => text.includes('CheriBSD adapts')), false, 'Introduction is displayed once');
+    const introTarget = await page.locator('.record-intro .summary a').first().getAttribute('href');
+    assert.equal(introTarget, new URL(url('/software/freebsd/')).pathname, 'Introduction links retain the configured base URL');
+    for (const width of [1440, 375]) {
+      await page.setViewportSize({width, height: 900});
+      await page.goto(url('/software/cheribsd/'));
+      await page.screenshot({path: path.join(reportDir, `cheribsd-details-${width}.png`)});
+      await page.goto(url('/academic-papers/'));
+      await page.screenshot({path: path.join(reportDir, `papers-directory-${width}.png`)});
+      await page.goto(url('/people/'));
+      const titlePositions = await page.locator('.record-list h3').evaluateAll(nodes => nodes.slice(0, 3).map(node => node.getBoundingClientRect().left));
+      assert(titlePositions.every(left => Math.abs(left - titlePositions[0]) < 1), 'Names align when a portrait is absent');
+      await page.screenshot({path: path.join(reportDir, `people-directory-${width}.png`)});
+    }
+
     for (const width of [1440, 375]) {
       await page.setViewportSize({ width, height: 900 });
       await page.goto(url('/hardware/cheriot/'));

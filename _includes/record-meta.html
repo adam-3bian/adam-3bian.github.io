@@ -1,6 +1,6 @@
 {% if include.role == 'board' or include.item.collection == 'people' %}
-  {% assign affiliation_slug = include.item.related.organisations | first %}{% assign affiliation = site.organisations | where: 'slug', affiliation_slug | first %}
-  {% if affiliation %}<p class="card-meta">{{ affiliation.title | escape }}{% if include.item.is_speaker %} · Speaker{% endif %}</p>{% elsif include.item.is_speaker %}<p class="card-meta">Speaker</p>{% endif %}
+  {% capture affiliations %}{% for affiliation_slug in include.item.related.organisations %}{% assign affiliation = site.organisations | where: 'slug', affiliation_slug | first %}{% if affiliation %}{% unless forloop.first %} · {% endunless %}{{ affiliation.title | escape }}{% endif %}{% endfor %}{% endcapture %}{% assign affiliations = affiliations | strip %}
+  {% if affiliations != '' %}<p class="card-meta">{{ affiliations }}{% if include.item.is_speaker %} · Speaker{% endif %}</p>{% elsif include.item.is_speaker %}<p class="card-meta">Speaker</p>{% endif %}
 {% elsif include.item.published_date %}<p class="card-meta"><time datetime="{{ include.item.published_date }}">{{ include.item.published_date | date: '%-d %B %Y' }}</time></p>
 {% elsif include.item.start_datetime or include.item.start_date %}
   {% assign card_date = include.item.start_datetime | default: include.item.start_date %}

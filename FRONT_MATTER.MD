@@ -39,7 +39,7 @@ Records use `/<collection>/<slug>/`; genuine record images use `/assets/<collect
 
 | Field | Type and purpose |
 | --- | --- |
-| `summary` | Short plain-text introduction. Optional on records and ordinary pages; required on indexes. Prefer existing wording. Avoid repeating it verbatim in the body. |
+| `summary` | Short plain-text introduction. Optional on records and ordinary pages; required on indexes. Prefer existing wording. Short body introductions are derived for the header when possible; a field is needed only for a deliberate alternative. Avoid repeating it verbatim in the body. |
 | `version` | Nonempty quoted string such as `"1.01"`; record/document/product version. Individual extension versions stay in technical prose. |
 | `document_date` | Quoted `YYYY-MM` or `YYYY-MM-DD`; retain source precision. A month is displayed as a month, not an invented day. |
 | `document_url` | HTTP(S) URL or existing root-relative document asset. |

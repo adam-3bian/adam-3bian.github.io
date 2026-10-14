@@ -1,0 +1,4 @@
+{%- assign reader_image_prefix = '/assets/' | relative_url | prepend: 'src="' -%}
+{%- assign reader_href_prefix = '/' | relative_url | prepend: 'href="' -%}
+{%- assign reader_protected_prefix = 'data-relative-href="' -%}
+{{- include.html | replace: 'src="/assets/', reader_image_prefix | replace: reader_href_prefix, reader_protected_prefix | replace: 'href="/', reader_href_prefix | replace: reader_protected_prefix, reader_href_prefix -}}
