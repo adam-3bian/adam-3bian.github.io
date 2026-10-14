@@ -137,7 +137,7 @@ for file, doc in documents.items():
             stats['cards'] += 1
             if card.tag != 'a' or card.parent.tag != 'li' or not card.parent.parent.has_class('cards'):
                 errors.append(f'{route}: card lacks native link/list semantics')
-            if len([n for n in doc.nodes if n.tag == 'h3' and n.ancestor(lambda a: a is card)]) != 1:
+            if len([n for n in doc.nodes if n.tag in ('h3', 'h4') and n.ancestor(lambda a: a is card)]) != 1:
                 errors.append(f'{route}: card lacks a single title')
     for card_list in [n for n in doc.nodes if n.has_class('cards')]:
         if card_list.tag != 'ul' or any(n.tag != 'li' for n in card_list.children):

@@ -1,6 +1,6 @@
 {% assign activity_news = site.news | where_exp: 'record', 'record.alternate != true' | where_exp: 'record', 'record.published_date != nil' | sort: 'published_date' | reverse %}
-{% assign today_key = site.time | date: '%Y-%m-%d' %}{% assign activity_events = '' | split: '' %}
-{% capture activity_sort_rows %}{% for candidate in site.events %}{% unless candidate.alternate %}{% assign final_day = candidate.end_datetime | default: candidate.end_date | default: candidate.start_datetime | default: candidate.start_date | slice: 0, 10 %}{% if final_day >= today_key %}{% assign start_key = candidate.start_datetime | default: candidate.start_date %}{{ start_key }}~{{ candidate.url }}|{% endif %}{% endunless %}{% endfor %}{% endcapture %}
+{% assign activity_events = '' | split: '' %}
+{% capture activity_sort_rows %}{% for candidate in site.events %}{% unless candidate.alternate %}{% capture activity_status %}{% include event-status.html item=candidate %}{% endcapture %}{% assign activity_status = activity_status | strip %}{% if activity_status == 'upcoming' %}{% assign start_key = candidate.start_datetime | default: candidate.start_date %}{{ start_key }}~{{ candidate.url }}|{% endif %}{% endunless %}{% endfor %}{% endcapture %}
 {% assign activity_sort_rows = activity_sort_rows | split: '|' | sort %}{% for row in activity_sort_rows %}{% assign event_url = row | split: '~' | last %}{% assign event_record = site.events | where: 'url', event_url | first %}{% if event_record %}{% assign activity_events = activity_events | push: event_record %}{% endif %}{% endfor %}
 <section class="recent-activity" aria-labelledby="recent-activity-heading">
   <h2 id="recent-activity-heading">Latest news and events</h2>

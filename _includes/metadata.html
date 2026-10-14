@@ -3,7 +3,7 @@
 {% assign event_start = page.start_datetime | default: page.start_date %}{% assign event_end = page.end_datetime | default: page.end_date %}
 {% if event_start %}<dt>When</dt><dd><time datetime="{{ event_start }}">{% if page.start_datetime %}{{ event_start | date: '%-d %B %Y, %H:%M %:z' }}{% else %}{{ event_start | date: '%-d %B %Y' }}{% endif %}</time>{% if event_end and event_end != event_start %} – <time datetime="{{ event_end }}">{% if page.end_datetime %}{{ event_end | date: '%-d %B %Y, %H:%M %:z' }}{% else %}{{ event_end | date: '%-d %B %Y' }}{% endif %}</time>{% endif %}</dd>{% endif %}
 {% if page.location %}<dt>Where</dt><dd>{{ page.location | escape }}</dd>{% endif %}
-{% assign final_event_day = event_end | default: event_start | slice: 0, 10 %}{% assign current_day = site.time | date: '%Y-%m-%d' %}<dt>Event status</dt><dd>{% if final_event_day < current_day %}Past event{% else %}Upcoming event{% endif %}</dd>
+{% capture current_event_status %}{% include event-status.html item=page %}{% endcapture %}{% assign current_event_status = current_event_status | strip %}<dt>Event status</dt><dd>{% if current_event_status == 'past' %}Past event{% else %}Upcoming event{% endif %}</dd>
 {% endif %}
 {% if page.is_speaker %}<dt>Role</dt><dd>Speaker</dd>{% endif %}
 {% if page.related.organisations.size > 0 %}<dt>{% if page.collection == 'events' %}Taking part{% else %}Organisations{% endif %}</dt><dd>{% include reference-links.html collection='organisations' ids=page.related.organisations %}</dd>{% endif %}

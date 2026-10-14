@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="{{ '/assets/viewer.css' | relative_url }}">
   <script src="{{ '/assets/navigation.js' | relative_url }}" defer></script>
   <script src="{{ '/assets/viewer.js' | relative_url }}" defer></script>
+  {% if page.listing %}<script src="{{ '/assets/directories.js' | relative_url }}" defer></script>{% endif %}
   {% if page.url == '/search/' %}<script src="{{ '/assets/search.js' | relative_url }}" defer></script>{% endif %}
 </head>
 <body>

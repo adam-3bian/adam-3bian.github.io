@@ -80,11 +80,22 @@ the existing collections, with a useful empty-event state.
 
 ## Lists and directories
 
-Directories contain introductory Markdown followed by a native `ul` of cards
-from the collection. Three columns become two on tablet and one on mobile.
-Every card is one native link, including its image and padding; no nested links
-or click handlers. Keep titles, source-derived previews and useful dates clear,
-with a consistent action at the foot.
+Directories contain introductory Markdown followed by complete native lists.
+People and organisations use compact rows; papers use bibliography rows;
+policies use document rows; software, guides and groups use text resource lists.
+Image-led resources retain three/two/one responsive columns. Every entry remains
+one native link, including its image and padding; no nested controls or click
+handlers. Keep complete titles, source-derived previews and useful dates clear.
+
+Directory search, sorting and metadata facets are progressive enhancements,
+generated only from confirmed roles, membership tiers, dates, types and hardware
+relationships. Native organisation alphabet jumps work without JavaScript.
+Control state can be shared in the page URL; counts and empty states are labelled.
+Missing metadata stays in the default complete view. Events have distinct upcoming/
+current and past lists. The shared event-status include honours exact timestamps
+and inclusive date-only final days; clients refresh period filters from those
+same source values. A daily run of the existing Pages workflow refreshes static
+activity/directory information for visitors without JavaScript.
 
 Member, speaker, board and certified-product directories filter real front
 matter. Working groups and academic papers use `/working-groups/` and

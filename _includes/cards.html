@@ -17,10 +17,11 @@
   {% unless include.show_images == false or card_image contains '/placeholder.svg' %}{% if card_image != '' %}{% assign show_card_image = true %}{% endif %}{% endunless %}
   {% capture card_metadata %}{% include list-item-metadata.html item=item role=include.role %}{% endcapture %}{% assign card_metadata = card_metadata | strip %}
   {% capture card_title_id %}listing-{{ item.collection }}-{{ item.slug | default: forloop.index }}{% endcapture %}
-  <li><a class="card{% if show_card_image %} has-image{% endif %}{% if card_metadata != '' %} has-metadata{% endif %}{% if card_summary != '' %} has-description{% endif %}" href="{{ item.url | relative_url }}" data-record-url="{{ item.url | escape }}" aria-labelledby="{{ card_title_id | escape }}">
+  {% capture directory_metadata %}{% if include.directory %}{% include directory-data.html item=item %}{% endif %}{% endcapture %}
+  <li{% if include.directory and include.collection == 'organisations' %} id="directory-row-{{ item.collection }}-{{ item.slug }}" tabindex="-1"{% endif %}{% if include.directory %} data-directory-item="{{ directory_metadata | strip | escape }}"{% endif %}><a class="card{% if show_card_image %} has-image{% endif %}{% if card_metadata != '' %} has-metadata{% endif %}{% if card_summary != '' %} has-description{% endif %}" href="{{ item.url | relative_url }}" data-record-url="{{ item.url | escape }}" aria-labelledby="{{ card_title_id | escape }}">
     {% if show_card_image %}<img class="{% if card_image_height == 360 %}image-portrait{% elsif item.collection == 'organisations' %}image-logo{% endif %}" src="{% include href.html url=card_image %}" alt="{{ item.title | escape }}"{% if item.image_background == 'dark' %} data-image-background="dark"{% endif %} width="360" height="{{ card_image_height }}" loading="lazy">{% endif %}
     <hgroup class="card-text">
-      <h3 id="{{ card_title_id | escape }}">{{ item.title | escape }}</h3>
+      <h{{ include.heading_level | default: 3 }} id="{{ card_title_id | escape }}">{{ item.title | escape }}</h{{ include.heading_level | default: 3 }}>
       {{ card_metadata }}
       {% if card_summary != '' %}<p class="card-description{% if item.collection == 'academic-papers' %} card-citation{% endif %}">{{ card_summary | replace: '&amp;', '&' | replace: '&quot;', '"' | replace: '&#39;', "'" | replace: '&lt;', '<' | replace: '&gt;', '>' | escape }}</p>{% endif %}
       {% if paper_description != '' %}<p class="paper-description">{{ paper_description | replace: '&amp;', '&' | replace: '&quot;', '"' | replace: '&#39;', "'" | replace: '&lt;', '<' | replace: '&gt;', '>' | escape }}</p>{% endif %}
