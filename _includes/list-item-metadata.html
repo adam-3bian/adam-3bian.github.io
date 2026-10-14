@@ -1,0 +1,33 @@
+{% assign metadata_item = include.item %}
+{% assign card_start_time = metadata_item.start_datetime | default: '' | strip %}{% assign card_end_time = metadata_item.end_datetime | default: '' | strip %}
+{% assign card_published_date = metadata_item.published_date | default: '' | strip %}{% assign card_date = metadata_item.start_datetime | default: metadata_item.start_date | default: '' | strip %}{% assign card_year = metadata_item.published_year | default: '' | strip %}{% assign card_tier = metadata_item.membership_tier | default: '' | strip %}
+{% capture list_item_meta %}
+  {% if include.role == 'board' %}
+    {% assign affiliation_slug = metadata_item.related.organisations | first %}{% assign affiliation = site.organisations | where: 'slug', affiliation_slug | first %}{% if affiliation %}{{ affiliation.title | escape }}{% endif %}
+  {% elsif card_published_date != '' %}
+    <time datetime="{{ card_published_date | escape }}">{{ card_published_date | date: '%-d %B %Y' }}</time>
+  {% elsif card_date != '' %}
+    {% assign card_end = metadata_item.end_datetime | default: metadata_item.end_date | default: '' | strip %}
+    <time datetime="{{ card_date | escape }}">{{ card_date | date: '%-d %B %Y' }}{% if card_start_time != '' %}, {{ card_date | date: '%H:%M %:z' }}{% endif %}</time>{% if card_end != '' and card_end != card_date %} – {{ card_end | date: '%-d %B %Y' }}{% if card_end_time != '' %}, {{ card_end | date: '%H:%M %:z' }}{% endif %}{% endif %}
+  {% elsif card_tier != '' %}
+    {{ card_tier | capitalize }} member{% if metadata_item.is_founding_member %} · Founder{% endif %}
+  {% elsif metadata_item.is_speaker %}Speaker
+  {% elsif card_year != '' %}<time datetime="{{ card_year | escape }}">{{ card_year }}</time>
+  {% endif %}
+{% endcapture %}
+{% assign list_item_meta = list_item_meta | strip %}
+{% if list_item_meta != '' %}<p class="card-meta">{{ list_item_meta }}</p>{% endif %}
+{% if metadata_item.collection == 'policies' %}
+  {% assign policy_version = metadata_item.version | default: '' | strip %}{% assign policy_date = metadata_item.document_date | default: '' | strip %}
+  {% if policy_version != '' or policy_date != '' %}<p class="card-meta">{% if policy_version != '' %}Version {{ policy_version | escape }}{% endif %}{% if policy_version != '' and policy_date != '' %} · {% endif %}{% if policy_date != '' %}<time datetime="{{ policy_date | escape }}">{% assign date_length = policy_date | size %}{% if date_length == 7 %}{{ policy_date | append: '-01' | date: '%B %Y' }}{% else %}{{ policy_date | date: '%-d %B %Y' }}{% endif %}</time>{% endif %}</p>{% endif %}
+{% elsif metadata_item.collection == 'hardware' or metadata_item.collection == 'software' %}
+  {% capture classification_meta %}{% for field in site.data.viewer.classification_fields %}{% assign classification_value = metadata_item[field] | default: '' | strip %}{% if classification_value != '' %}{{ classification_value | escape }}<br>{% endif %}{% endfor %}{% endcapture %}
+  {% assign classification_meta = classification_meta | strip | split: '<br>' | join: ' · ' %}
+  {% if classification_meta != '' %}<p class="card-meta">{{ classification_meta }}</p>{% endif %}
+{% elsif metadata_item.collection == 'events' %}
+  {% assign event_location = metadata_item.location | default: '' | strip %}{% if event_location != '' %}<p class="card-meta">{{ event_location | escape }}</p>{% endif %}
+{% elsif metadata_item.collection == 'working-groups' %}
+  {% capture group_leads %}{% for lead_slug in metadata_item.leads %}{% assign group_lead = site.people | where: 'slug', lead_slug | first %}{% if group_lead %}{{ group_lead.title | escape }}<br>{% endif %}{% endfor %}{% endcapture %}
+  {% assign group_leads = group_leads | strip | split: '<br>' | join: ', ' %}
+  {% if group_leads != '' %}<p class="card-meta">Leads: {{ group_leads }}</p>{% endif %}
+{% endif %}

@@ -14,7 +14,14 @@
 {% if list_status == 'past' %}{% assign listing_heading = 'Event archive' %}{% elsif list_status == 'upcoming' %}{% assign listing_heading = 'Scheduled events' %}{% elsif list_collection == 'working-groups' %}{% assign listing_heading = 'Working group directory' %}{% endif %}
 {% if page.certification == 'cheri-enabled' %}{% assign listing_heading = 'Certified products' %}{% endif %}
 {% assign show_card_images = true %}{% if list_collection == 'working-groups' %}{% assign show_card_images = false %}{% endif %}
+{% assign list_style = 'image-list' %}
+{% case list_collection %}
+  {% when 'people', 'organisations' %}{% assign list_style = 'directory-list' %}
+  {% when 'academic-papers' %}{% assign list_style = 'bibliography-list' %}
+  {% when 'policies' %}{% assign list_style = 'document-list' %}
+  {% when 'software', 'guides', 'working-groups' %}{% assign list_style = 'resource-list' %}
+{% endcase %}
 <section class="listing" aria-labelledby="listing-heading" data-listing="{{ list_collection | escape }}" data-role="{{ list_role | escape }}" data-status="{{ list_status | escape }}">
   <header class="section-heading"><h2 id="listing-heading">{{ listing_heading | escape }}</h2><p>{{ list_items.size }} {% if list_items.size == 1 %}result{% else %}results{% endif %}</p></header>
-  {% if list_items.size > 0 %}{% include cards.html items=list_items role=list_role show_images=show_card_images %}{% else %}<p class="notice">No {{ collection_label | downcase | escape }} to display yet.</p>{% endif %}
+  {% if list_items.size > 0 %}{% include cards.html items=list_items role=list_role show_images=show_card_images style=list_style collection=list_collection %}{% else %}<p class="notice">No {{ collection_label | downcase | escape }} to display yet.</p>{% endif %}
 </section>
