@@ -14,11 +14,13 @@ permissions:
 
 concurrency:
   group: github-pages
-  cancel-in-progress: false
+  # A superseded build must not leave the latest reviewed commit queued.
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
     steps:
       - name: Check out main
         uses: actions/checkout@v6

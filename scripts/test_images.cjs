@@ -147,7 +147,8 @@ async function loaded(page, route) {
     const imageGate = new Promise(resolve => { releaseImage = resolve; });
     await dimensionsPage.route('**/bfeebb3ac676-morello-board.webp', async route => { await imageGate; await route.continue(); });
     await dimensionsPage.goto(pageURL('/case-studies/morello/'), { waitUntil: 'domcontentloaded' });
-    await dimensionsPage.evaluate(() => document.fonts.ready);
+    // Do not wait for document load while the image request is held.
+    await dimensionsPage.evaluate(() => Promise.all([document.fonts.load('400 16px Poppins'), document.fonts.load('600 16px Poppins')]));
     const reserved = await dimensionsPage.locator('.article-content .image-left').boundingBox();
     releaseImage();
     await dimensionsPage.waitForLoadState('load');

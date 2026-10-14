@@ -221,7 +221,9 @@ async function assertAccessible(page) {
     await delayed.goto(base, { waitUntil: 'commit' });
     await delayed.locator('#navigation-toggle').waitFor({ state: 'visible' });
     await delayed.locator('main').waitFor({ state: 'visible' });
-    await delayed.evaluate(() => document.fonts.ready);
+    // FontFaceSet.ready can wait for document load in older Chromium. The
+    // navigation request is intentionally held here, so load only these fonts.
+    await delayed.evaluate(() => Promise.all([document.fonts.load('400 16px Poppins'), document.fonts.load('600 16px Poppins')]));
     const reservedFrame = await delayed.locator('main').boundingBox();
     releaseNavigation();
     await delayed.waitForLoadState('load');
