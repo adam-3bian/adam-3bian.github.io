@@ -28,7 +28,7 @@ The port therefore spans the architecture layer and the operating-system service
 
 ## Current project structure
 
-Development takes place in a [CHERI Alliance](/organisations/cheri-alliance/) repository and is coordinated through the [CHERI Zephyr Working Group](/groups/cheri-zephyr/). The repository carries active source, platform configurations, samples, tests, and contribution history.
+Development takes place in a [CHERI Alliance](/organisations/cheri-alliance/) repository and is coordinated through the [CHERI Zephyr Working Group](/working-groups/cheri-zephyr/). The repository carries active source, platform configurations, samples, tests, and contribution history.
 
 This remains an active port rather than a feature present across every mainline Zephyr release and board. Architecture targets, boards, drivers, kernel configurations, and test coverage develop at different rates.
 
@@ -49,5 +49,5 @@ The distinction is architectural rather than a simple maturity ranking. Each rou
 ## Project links
 
 - [CHERI Zephyr source](https://github.com/CHERI-Alliance/CHERI-zephyr)
-- [CHERI Zephyr Working Group](/groups/cheri-zephyr/)
+- [CHERI Zephyr Working Group](/working-groups/cheri-zephyr/)
 - [Zephyr Project documentation](https://docs.zephyrproject.org/latest/)

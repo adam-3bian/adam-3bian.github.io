@@ -7,7 +7,7 @@ const { chromium } = require('playwright');
 
 const siteDir = path.resolve(process.env.SITE_DIR || '_site');
 const base = new URL(process.env.SITE_URL || 'http://127.0.0.1:4000/');
-const reportDir = path.resolve('reports/image-tests');
+const reportDir = path.resolve(process.env.REPORT_ROOT || 'reports', 'image-tests');
 fs.mkdirSync(reportDir, { recursive: true });
 const walk = dir => fs.readdirSync(dir, { withFileTypes: true }).flatMap(entry =>
   entry.isDirectory() ? walk(path.join(dir, entry.name)) : [path.join(dir, entry.name)]);
@@ -33,7 +33,7 @@ console.log(`Asset paths: ${references} local image references across ${htmlFile
 const representativeRoutes = [
   '/', '/checks/', '/people/', '/guides/install-a-toolchain/', '/software/cheri-linux/',
   '/hardware/x730/', '/people/adam-finney/', '/people/alex-richardson/', '/organisations/codasip/', '/organisations/cheri-alliance/',
-  '/groups/cheri-linux-working-group/', '/papers/cheriot-complete-memory-safety-for-embedded-devices/',
+  '/working-groups/cheri-linux-working-group/', '/academic-papers/cheriot-complete-memory-safety-for-embedded-devices/',
   '/policies/code-of-conduct/',
 ];
 const routes = [...new Set([...imageRoutes, ...representativeRoutes])];
@@ -74,6 +74,7 @@ async function loaded(page, route) {
               const expected = image.classList.contains('image-portrait') || image.closest('.portrait-gallery') ? 1 : 3;
               if (rect.width && Math.abs(rect.width / rect.height - expected) > .02) errors.push(`Incorrect image ratio (${expected}:1): ${image.src}`);
               if (getComputedStyle(image).objectFit !== 'contain') errors.push(`Image may crop labels or portraits: ${image.src}`);
+              if (getComputedStyle(image).objectPosition !== '50% 50%') errors.push(`Image is not centred: ${image.src}`);
             }
           }
           for (const article of document.querySelectorAll('.article-content')) {

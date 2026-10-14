@@ -1,6 +1,36 @@
 # Front matter reference
 
-This is the authoring reference for all twelve collections and the three common page schemas. The executable field shapes are in [`_data/schemas.yml`](_data/schemas.yml); [`scripts/check_content.rb`](scripts/check_content.rb) validates them. Rendering, aliases, role relationships and listing presets are defined in [`_data/viewer.yml`](_data/viewer.yml) and [`_config.yml`](_config.yml).
+This is the authoring reference for all twelve collections and the four common page schemas (content, index, listing and redirect). The executable field shapes are in [`_data/schemas.yml`](_data/schemas.yml); [`scripts/check_content.rb`](scripts/check_content.rb) validates them. Rendering, aliases, role relationships and listing presets are defined in [`_data/viewer.yml`](_data/viewer.yml) and [`_config.yml`](_config.yml).
+
+## Collections and canonical routes
+
+Hyphenated Jekyll collection names are supported. Collection keys, folders,
+asset directories and record URLs use the same spelling. Use Liquid bracket
+access for hyphenated keys, for example `site['academic-papers']`; use
+`relative_url` for generated internal links so non-empty base URLs work.
+
+| Collection key | Source folder | Directory | Record and asset path |
+| --- | --- | --- | --- |
+| `people` | `_people` | `/people/` | `/people/<slug>/`; `assets/people/<slug>/` |
+| `news` | `_news` | `/news/` | `/news/<slug>/`; `assets/news/<slug>/` |
+| `organisations` | `_organisations` | `/organisations/` | `/organisations/<slug>/`; `assets/organisations/<slug>/` |
+| `events` | `_events` | `/events/` | `/events/<slug>/`; `assets/events/<slug>/` |
+| `academic-papers` | `_academic-papers` | `/academic-papers/` | `/academic-papers/<slug>/`; `assets/academic-papers/<slug>/` |
+| `hardware` | `_hardware` | `/hardware/` | `/hardware/<slug>/`; `assets/hardware/<slug>/` |
+| `software` | `_software` | `/software/` | `/software/<slug>/`; `assets/software/<slug>/` |
+| `working-groups` | `_working-groups` | `/working-groups/` | `/working-groups/<slug>/`; `assets/working-groups/<slug>/` |
+| `guides` | `_guides` | `/guides/` | `/guides/<slug>/`; `assets/guides/<slug>/` |
+| `policies` | `_policies` | `/policies/` | `/policies/<slug>/`; `assets/policies/<slug>/` |
+| `case-studies` | `_case-studies` | `/case-studies/` | `/case-studies/<slug>/`; `assets/case-studies/<slug>/` |
+| `reports` | `_reports` | `/reports/` | `/reports/<slug>/`; `assets/reports/<slug>/` |
+
+White papers remain in `_reports` with `publication_type: white-paper`. Do not
+create a duplicate `_white-papers` bibliography. Academic citations belong in
+`_academic-papers`; adoption stories belong in `_case-studies`.
+
+All collections share the image convention below. Complete examples for every
+collection appear later and are validated against their schema. Layout and
+presentation rules are in [DESIGN.MD](DESIGN.MD).
 
 ## Required keys and optional values
 
@@ -27,7 +57,7 @@ Do not repeat a front-matter property in the body unless it adds useful detail. 
 | `document_url` | HTTP(S) URL, existing root-relative asset path, or `null` | The official document, normally a PDF; displayed as a Read document resource link. Local files must exist. |
 | `summary` | String or `null` | A short introduction under the title and, when provided, the card preview. It remains required by content/index schemas. |
 | `parent` | Registered page route or `null` | Optional breadcrumb parent override; update the page map to agree. Collection defaults normally supply it. |
-| `next_page_url` | Registered page route or `null` | Optional next-page navigation. |
+| `next_page_url` | Registered page route, HTTP(S) URL, or `null` | Optional next-page navigation. |
 | `related` | Mapping of registered collection keys to slug arrays; `pages` contains page routes | Optional on listings. For collections/content pages, keep their required related keys and add other registered collection keys when useful. For example, `related.case-studies: [cheribsd]` and `related.reports: [an-introduction-to-cheri]`. Unknown collections, duplicate values and unresolved targets fail validation. |
 
 Use quoted strings for dates and URLs where YAML punctuation could be ambiguous. Ordinary `*_date` fields require a complete valid `YYYY-MM-DD` date. `*_datetime` fields require ISO 8601 with `Z` or a numeric timezone offset, for example `"2026-01-21T09:00:00+00:00"`. Only `document_date` accepts a month without a day. Do not guess missing dates or invent an effective date from a document's publication date.
@@ -74,7 +104,7 @@ All relationship arrays contain existing **collection slugs**, without directory
 | `related.software` | Slug array | Relevant software. |
 | `related.academic-papers` | Slug array | Relevant publications. |
 
-An event mentioned in news can be linked in the body; `related.events` is not currently a news-schema property.
+The five related keys above are required. Shared `related` support also permits other registered collection keys, such as `related.events`, for verified relationships.
 
 ## Organisations (`_organisations`)
 
@@ -121,7 +151,7 @@ Events and upcoming events sort by start time/date, earliest first; past-event a
 | `related.hardware` | Slug array | Referenced hardware. |
 | `related.software` | Slug array | Referenced software. |
 
-The canonical bibliography is `/papers/`; academic records are stored in `_academic-papers` with assets under `assets/academic-papers/<record-name>/`. Existing `/papers/<record-name>/` URLs remain unchanged. Do not maintain a second list of the same citations in a general page.
+The canonical bibliography is `/academic-papers/`; academic records are stored in `_academic-papers` with assets under `assets/academic-papers/<record-name>/`. Record URLs now use `/academic-papers/<record-name>/`. The former `/papers/` directory, all `/papers/<record-name>/` records and the old Discover overview redirect directly to their canonical destinations. Do not maintain a second list of the same citations in a general page.
 
 ## Case studies (`_case-studies`)
 
@@ -257,7 +287,7 @@ The CHERI Enabled Products directory uses `layout: list`, `listing.collection: h
 | --- | --- | --- |
 | `author` | One people slug or `null` | A named individual author, if provided by the source. Do not put an organisation name here. |
 
-Policies also support the three shared optional properties. Preserve the source's legal wording and clause identifiers. Use semantic ordered lists for numbered clauses and lettered lists; do not turn `2.1.1` into a bullet with an unrelated visible `1.` marker.
+Policies also support all shared optional properties. Preserve the source's legal wording and clause identifiers. Use semantic ordered lists for numbered clauses and lettered lists; do not turn `2.1.1` into a bullet with an unrelated visible `1.` marker.
 
 Complete policy example:
 
@@ -307,7 +337,7 @@ summary: Publications and guidance from the CHERI Alliance.
 image_url: null
 updated_date: null
 parent: /discover/
-next_page_url: /alliance/leadership/working-groups/
+next_page_url: /working-groups/
 related:
   pages: []
   people: []
@@ -364,7 +394,7 @@ Complete collection directory example:
 <!-- schema: listing -->
 ```yaml
 title: Papers
-permalink: /papers/
+permalink: /academic-papers/
 layout: list
 listing:
   collection: academic-papers
@@ -389,11 +419,36 @@ Directory bodies contain introductory Markdown, followed by one automatically ge
 
 The Governing Board directory uses `layout: list`, `listing.collection: people` and `listing.role: board`. Update `_data/governing-board.yml` when the membership changes; each slug must identify one canonical person record. The cards preserve roster order, use square portraits, and link to biographies. This display treatment does not mark non-speakers as speakers.
 
-Working Groups uses `layout: list` and `listing.collection: working-groups`. Its complete directory is `/alliance/leadership/working-groups/`; `/groups/` redirects there. Keep each group's description in its own `_working-groups` record.
+Working Groups uses `layout: list` and `listing.collection: working-groups`. Its complete directory is `/working-groups/`; `/groups/`, old `/groups/<slug>/` details and `/alliance/leadership/working-groups/` redirect to the new directory or record. Keep each group's description in its own `_working-groups` record.
 
 The member directory's `member` role currently comes from `listing_presets` in `_data/viewer.yml`. Explicit `listing.role`/`listing.status` takes precedence over a preset. News and past-event archives are newest first; other event lists are earliest first; other collections sort by title. Canonical listings exclude records whose inherited `alternate` setting is true. `listing.status` is valid only for events.
 
 Record properties render as an unboxed “At a glance” definition list. Events combine their start/end values into one When entry and retain both dates/times. Raw authoring properties are available in the audit at `/checks/`, rather than at the end of public articles.
+
+## Redirect pages (`redirect` schema)
+
+Use a small Markdown stub for an obsolete record or directory. Keep canonical
+content in its collection or page; do not copy its body into the stub.
+
+| Required property | Type | Meaning |
+| --- | --- | --- |
+| `title` | Nonempty string | Existing destination title. |
+| `permalink` | Old registered route | Retained public URL. |
+| `layout` | `redirect` | Native HTML refresh and normal destination link. |
+
+<!-- schema: redirect -->
+```yaml
+title: Papers
+permalink: /papers/
+layout: redirect
+```
+
+Register the stub with `page_type: Redirect` in `_data/page-map.yml` and add its
+source-to-destination mapping to `aliases` in `_data/viewer.yml`. Alias keys
+retain the old URLs; values use the final canonical route, never another alias.
+Existing content-schema source pages may also inherit a redirect layout from
+`_config.yml`. Redirects work without JavaScript and provide a normal fallback
+link. Navigation, relationships and Markdown links use canonical destinations.
 
 ## Inherited settings, aliases and generated properties
 
@@ -410,11 +465,273 @@ These are Jekyll settings used by the site, **not extra keys to add to a strict 
 | `url`, `collection`, `slug`, `path` | Generated by Jekyll | Do not author these in front matter. |
 | `date` | Jekyll-generated document metadata | Not the site's supported publication field. Use `published_date`, event date fields, `updated_date` or `document_date` according to meaning. |
 
-No `redirect_to`, `hero`, `image_alt`, `caption`, `tags`, `categories`, `published`, `lead` or arbitrary `related.*` key is currently part of these schemas. Add a property to the schema, validator, rendering and this reference together before using it. Body images provide their own alt text and captions in Markdown/semantic HTML.
+No `redirect_to`, `hero`, `image_alt`, `caption`, `tags`, `categories`, `published`, `lead` or unregistered `related.*` key is currently part of these schemas. Add a property to the schema, validator, rendering and this reference together before using it. Body images provide their own alt text and captions in Markdown/semantic HTML.
 
 Distinct overviews and filtered directories are useful even when they link to the same collection: members versus all organisations, speakers versus all people, past/upcoming versus all events, or an explanatory working-group overview versus the group directory. Repeated full articles and bibliographies should share one canonical destination.
 
 The older `/policies/privacy-policy/` text differs from `/policies/privacy/`. It remains a clearly labelled retained source version, outside the canonical policy listing; its wording has not been merged into the current policy.
+
+## Verified image provenance
+
+`_data/image-sources.yml` records the source page, asset URL, retrieval date and
+SHA-256 for newly obtained original organisation artwork. Validation checks the
+local bytes against these hashes. The audit exposes this as computed
+`image_source` metadata, alongside the effective inherited `layout`; neither is
+an extra authoring key. The supplied Alliance vector is unchanged in
+`assets/brand/` and its organisation record directory. Earlier bitmap-to-SVG
+background treatments remain reproducible using
+`scripts/prepare_organisation_logos.py --check`.
+
+## Complete collection examples
+
+These examples use existing records and preserve their full required field
+shape. Replace factual values for another record; retain required nested keys,
+use `null` or `[]` when unknown, and add only documented optional properties.
+Placeholder paths refer to valid local assets, not factual illustrations.
+
+### `people`
+
+<!-- schema: people -->
+```yaml
+title: Adam Finney
+image_url: /assets/people/adam-finney/4600c140bf-portrait.jpg
+website_url: https://cheri-alliance.org/events/speakers/adam-finney/
+is_speaker: true
+social:
+  linkedin_url: null
+  mastodon_url: null
+  github_url: null
+related:
+  organisations:
+  - cheri-alliance
+  - 3bian
+  working-groups:
+  - marketing
+```
+
+### `news`
+
+<!-- schema: news -->
+```yaml
+title: Combatting the AI threat with CHERI
+image_url: /assets/news/combatting-the-ai-threat-with-cheri/13658ea5e276-hero.png
+published_date: '2026-06-17'
+authors: []
+related:
+  working-groups: []
+  organisations:
+  - cheri-alliance
+  - um-labs
+  hardware:
+  - morello
+  software:
+  - cheri-linux
+  - cheribsd
+  - freebsd
+  academic-papers: []
+```
+
+### `organisations`
+
+<!-- schema: organisations -->
+```yaml
+title: CHERI Alliance
+image_url: /assets/organisations/cheri-alliance/logo.svg
+website_url: https://cheri-alliance.org/
+membership_tier: null
+is_founding_member: null
+social:
+  linkedin_url: https://www.linkedin.com/company/cheri-alliance
+  mastodon_url: null
+  github_url: null
+```
+
+### `events`
+
+<!-- schema: events -->
+```yaml
+title: CHERI Alliance at Embedded World 2026
+image_url: /assets/events/embedded-world-2026/4e96ccb7b522-embedded-world-2026.webp
+website_url: https://cheri-alliance.org/events/embedded-world-2026/
+registration_url: null
+start_date: '2026-03-10'
+start_datetime: null
+end_date: '2026-03-12'
+end_datetime: null
+location: Exhibition Centre Nuremberg, Germany
+speakers: []
+related:
+  working-groups: []
+  organisations:
+  - capabilities-limited
+  - the-capable-hub
+  - cheri-alliance
+  - codasip
+  academic-papers: []
+```
+
+### `academic-papers`
+
+<!-- schema: academic-papers -->
+```yaml
+title: 'CHERIoT: Complete Memory Safety for Embedded Devices'
+image_url: /assets/academic-papers/cheriot-complete-memory-safety-for-embedded-devices/placeholder.svg
+publication_url: https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/202310ieeemicro-cheriot-uarch.pdf
+published_year: 2023
+authors:
+- saar-amar
+- david-chisnall
+- tony-chen
+- nathaniel-wesley-filardo
+- ben-laurie
+- kunyan-liu
+- robert-m-norton
+- simon-moore
+- yucong-tao
+- robert-watson
+- hongyan-xia
+related:
+  working-groups: []
+  hardware:
+  - cheriot
+  software: []
+```
+
+### `hardware`
+
+<!-- schema: hardware -->
+```yaml
+title: X730 Certification Record
+image_url: /assets/hardware/x730/c53c4c1378ba-cheri-enabled-2026.webp
+website_url: https://codasip.com/solutions/riscv-processor-safety-security/cheri/x730-risc-v-application-processor/
+repository_urls: []
+type: processor
+architecture: RISC-V (64-bit)
+status: null
+related:
+  organisations:
+  - codasip
+  hardware: []
+  software:
+  - llvm-and-clang
+  - rust
+version: '1.0'
+certification: cheri-enabled
+certification_url: https://cheri-alliance.org/cheri-enabled/x730/
+summary: A commercially licensable 64-bit CHERI-RISC-V application processor IP designed for larger systems that
+  require operating-system support and protection of substantial software stacks.
+```
+
+### `software`
+
+<!-- schema: software -->
+```yaml
+title: CheriBSD
+image_url: /assets/software/cheribsd/placeholder.svg
+website_url: https://www.cheribsd.org/getting-started/
+repository_urls:
+- https://github.com/CTSRD-CHERI/cheribuild
+- https://github.com/CTSRD-CHERI/cheribsd
+- https://github.com/CTSRD-CHERI/cheribsd-ports
+type: null
+status: null
+related:
+  organisations:
+  - freebsd-foundation
+  hardware:
+  - morello
+  software:
+  - llvm-and-clang
+  - freebsd
+```
+
+### `working-groups`
+
+<!-- schema: working-groups -->
+```yaml
+title: 🐧 CHERI Linux WG
+image_url: /assets/working-groups/cheri-linux-working-group/bb889a4dc09e-cheri-alliance-working-groups.png
+website_url: https://cheri-alliance.org/who-we-are/working-groups/cheri-linux/
+repository_urls:
+- https://github.com/CHERI-Alliance/linux
+leads:
+- allison-randal
+related:
+  organisations:
+  - capabilities-limited
+  hardware: []
+  software:
+  - cheri-linux
+```
+
+### `guides`
+
+<!-- schema: guides -->
+```yaml
+title: Build Compartments
+image_url: /assets/guides/build-compartments/placeholder.svg
+repository_urls: []
+updated_date: null
+authors: []
+related:
+  working-groups: []
+  hardware:
+  - cheriot
+  software:
+  - cheribsd
+```
+
+### `policies`
+
+<!-- schema: policies -->
+```yaml
+title: Competition Law Statement
+image_url: /assets/policies/competition-law-statement/placeholder.svg
+author: null
+version: '1.0'
+document_date: 2024-08
+document_url: https://cheri-alliance.org/legal-competition/
+```
+
+### `case-studies`
+
+<!-- schema: case-studies -->
+```yaml
+title: 'Morello: a complete experimental stack'
+image_url: /assets/case-studies/morello/bfeebb3ac676-morello-board.webp
+summary: CHERI at application and server scale
+related:
+  organisations:
+  - arm
+  hardware:
+  - morello
+  software:
+  - cheribsd
+  reports: []
+```
+
+### `reports`
+
+<!-- schema: reports -->
+```yaml
+title: An Introduction to CHERI
+image_url: /assets/reports/an-introduction-to-cheri/placeholder.svg
+publication_url: https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-941.html
+published_year: 2019
+publication_type: technical-report
+publisher: University of Cambridge
+authors:
+- robert-watson
+- simon-moore
+- peter-sewell
+- peter-g-neumann
+related:
+  organisations:
+  - university-of-cambridge
+  case-studies: []
+  hardware: []
+  software: []
+```
 
 ## Adding or changing content
 

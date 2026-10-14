@@ -120,7 +120,7 @@ Architecture reports and project publications: [University of Cambridge CHERI](h
 
 Practical questions: [CHERI FAQ](https://cheri-alliance.org/discover-cheri/)
 
-Alliance repositories and working groups: [Working Groups](/groups/)
+Alliance repositories and working groups: [Working Groups](/working-groups/)
 
 ## Before using a download
 

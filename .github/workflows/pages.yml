@@ -29,6 +29,11 @@ jobs:
         run: bundle exec ruby scripts/check_content.rb
       - name: Verify original organisation artwork in SVG masks
         run: python3 scripts/prepare_organisation_logos.py --check
+      - name: Verify safe Jekyll and non-empty base URL
+        run: |
+          JEKYLL_ENV=production bundle exec jekyll build --safe --baseurl /preview --destination "$RUNNER_TEMP/baseurl-site/preview"
+          python3 scripts/check_collection_links.py "$RUNNER_TEMP/baseurl-site/preview" --baseurl /preview
+          python3 scripts/check_page_content.py "$RUNNER_TEMP/baseurl-site/preview" /preview
       - name: Build Jekyll
         run: JEKYLL_ENV=production bundle exec jekyll build --destination _site
       - name: Validate every rendered collection reference
@@ -41,12 +46,27 @@ jobs:
           "$RUNNER_TEMP/image-tests/node_modules/.bin/playwright" install --with-deps chromium --only-shell
           python3 -m http.server 4000 --bind 127.0.0.1 --directory _site > "$RUNNER_TEMP/image-server.log" 2>&1 &
           image_server_pid=$!
-          trap 'kill "$image_server_pid"' EXIT
+          python3 -m http.server 4001 --bind 127.0.0.1 --directory "$RUNNER_TEMP/baseurl-site" > "$RUNNER_TEMP/baseurl-server.log" 2>&1 &
+          baseurl_server_pid=$!
+          trap 'kill "$image_server_pid" "$baseurl_server_pid"' EXIT
           export NODE_PATH="$RUNNER_TEMP/image-tests/node_modules"
           export AXE_PATH="$RUNNER_TEMP/image-tests/node_modules/axe-core/axe.min.js"
           node scripts/test_navigation.cjs
           node scripts/test_images.cjs
           node scripts/test_content.cjs
+          export SITE_DIR="$RUNNER_TEMP/baseurl-site/preview"
+          export SITE_URL="http://127.0.0.1:4001/preview/"
+          export REPORT_ROOT="reports/baseurl-tests"
+          node scripts/test_navigation.cjs
+          node scripts/test_images.cjs
+          node scripts/test_content.cjs
+      - name: Save base URL test results and screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: baseurl-tests
+          path: reports/baseurl-tests/
+          if-no-files-found: ignore
       - name: Save content test results and screenshots
         if: always()
         uses: actions/upload-artifact@v4

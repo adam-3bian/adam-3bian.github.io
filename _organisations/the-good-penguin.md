@@ -1,6 +1,6 @@
 ---
 title: The Good Penguin
-image_url: /assets/organisations/the-good-penguin/placeholder.svg
+image_url: /assets/organisations/the-good-penguin/logo-source.png
 website_url: null
 membership_tier: null
 is_founding_member: null

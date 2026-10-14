@@ -5,21 +5,21 @@ const path = require('node:path');
 const { chromium } = require('playwright');
 const base = new URL(process.env.SITE_URL || 'http://127.0.0.1:4000/');
 const url = route => new URL(route.replace(/^\//, ''), base).href;
-const reportDir = 'reports/content-tests';
+const reportDir = path.join(process.env.REPORT_ROOT || 'reports', 'content-tests');
 fs.mkdirSync(reportDir, { recursive: true });
 const report = { widths: [1440, 1024, 768, 640, 375], layoutChecks: 0, accessibilityChecks: 0, redirects: 0, indexChecks: 0, noScriptIndexes: 0, footerChecks: 0, footerAccessibilityChecks: 0, noScriptCards: 0, noScriptRelatedLinks: 0, noScriptFooter: 0 };
 const preflight = JSON.parse(fs.readFileSync('reports/preflight.json', 'utf8'));
 const indexes = JSON.parse(fs.readFileSync('reports/index-navigation.json', 'utf8'));
 const footer = JSON.parse(fs.readFileSync('reports/footer-navigation.json', 'utf8'));
 const logoMasks = JSON.parse(fs.readFileSync('_data/organisation-logos.json', 'utf8'));
-const cardRoutes = ['/people/', '/organisations/', '/news/', '/events/', '/papers/', '/hardware/', '/software/', '/guides/', '/policies/', '/case-studies/', '/reports/', '/checks/', '/alliance/leadership/working-groups/', '/alliance/leadership/governing-board/', '/adopt/assurance-and-adoption/cheri-enabled-products/'];
+const cardRoutes = ['/people/', '/organisations/', '/news/', '/events/', '/academic-papers/', '/hardware/', '/software/', '/guides/', '/policies/', '/case-studies/', '/reports/', '/checks/', '/working-groups/', '/alliance/leadership/governing-board/', '/adopt/assurance-and-adoption/cheri-enabled-products/'];
 const groups = preflight.records.filter(r => r.collection === 'working-groups' && !r.alternate).map(r => r.url).sort();
 const board = fs.readFileSync('_data/governing-board.yml', 'utf8').split('\n').filter(l => l.startsWith('- ')).map(l => `/people/${l.slice(2)}/`);
 const routes = [
   '/policies/competition-law-statement/',
   '/policies/intellectual-property-policy/',
   '/policies/trademark-policy/',
-  '/papers/',
+  '/academic-papers/',
   '/policies/',
   '/organisations/cheri-alliance/',
   '/people/adam-finney/',
@@ -28,13 +28,13 @@ const routes = [
   '/people/andrew-lindsay/',
   '/news/ai-has-compressed-the-attack-timeline/',
   '/events/cheri-blossoms-conference-2026/',
-  '/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/',
+  '/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/',
   '/hardware/x730/',
   '/software/cheri-linux/',
-  '/groups/cheri-linux-working-group/',
+  '/working-groups/cheri-linux-working-group/',
   '/guides/install-a-toolchain/',
   '/discover/why-cheri/cheri-and-rust/',
-  '/alliance/leadership/working-groups/',
+  '/working-groups/',
   '/alliance/leadership/governing-board/',
   '/news-and-events/events-and-archive/past-events/',
   '/news-and-events/events-and-archive/upcoming-events/',
@@ -69,7 +69,7 @@ const routes = [
           if (document.documentElement.scrollWidth > innerWidth + 1) errors.push('Horizontal overflow');
           const footer = document.querySelector('.site-footer');
           if (!footer || footer.querySelector('div, span, details, summary')) errors.push('Footer semantics or hidden links');
-          for (const link of document.querySelectorAll('.site-footer a, .link-grid a')) {
+          for (const link of document.querySelectorAll('.site-footer a, .collection-footer a, .link-grid a')) {
             const rect = link.getBoundingClientRect();
             if (rect.height < 44 || rect.left < 0 || rect.right > innerWidth) errors.push('Footer or related link touch target/containment');
             if (link.closest('.link-grid')) {
@@ -183,7 +183,7 @@ const routes = [
           const name = route === '/' ? 'home' : route.replaceAll('/', '');
           await page.screenshot({ path: path.join(reportDir, `index-${name}-${width}.png`), fullPage: true });
         }
-        if (route === '/alliance/leadership/working-groups/') {
+        if (route === '/working-groups/') {
           const targets = await page.locator('.listing .card').evaluateAll(cards => cards.map(c => c.dataset.recordUrl));
           assert.deepEqual(targets.sort(), groups, 'Complete working-group directory');
           assert.equal(await page.locator('.listing img').count(), 0, 'Repeated generic group image');
@@ -213,7 +213,7 @@ const routes = [
           assert.equal(await page.locator('.metadata').count(), 0, 'Link-only page still has a metadata container');
           await page.screenshot({ path: path.join(reportDir, `cheri-alliance-${width}.png`), fullPage: true });
         }
-        if (route === '/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/') {
+        if (route === '/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/') {
           await page.screenshot({ path: path.join(reportDir, `paper-metadata-${width}.png`) });
         }
         if (route === '/policies/competition-law-statement/') {
@@ -224,7 +224,7 @@ const routes = [
         }
         if (width === 1440 && process.env.AXE_PATH) {
           await page.addScriptTag({ path: process.env.AXE_PATH });
-          const violations = await page.evaluate(async () => (await axe.run(['main', '.site-footer'], {
+          const violations = await page.evaluate(async () => (await axe.run(['main', '.site-footer', '.collection-footer'], {
             runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21aa'] },
           })).violations.map(v => ({ id: v.id, impact: v.impact, nodes: v.nodes.map(n => ({ target: n.target, summary: n.failureSummary })) })));
           assert.deepEqual(violations, [], route);
@@ -232,6 +232,13 @@ const routes = [
           report.footerAccessibilityChecks++;
         }
       }
+    }
+    // Review all verified source logos at their actual detail-page size.
+    for (const record of preflight.records.filter(record => record.collection === 'organisations' && record.properties.image_source)) {
+      await page.setViewportSize({ width: 1440, height: 900 });
+      await page.goto(url(record.url));
+      await page.locator('.lead-image').evaluate(image => image.decode());
+      await page.locator('.record-header').screenshot({ path: path.join(reportDir, `source-logo-${record.url.split('/')[2]}.png`) });
     }
     // Verify actual rendered transparency and original pixels, including the
     // intentionally white S and cream seal interior that must remain visible.
@@ -295,19 +302,7 @@ const routes = [
     // Native refresh redirects and normal destination links survive without JS.
     const context = await browser.newContext({ javaScriptEnabled: false });
     const plain = await context.newPage();
-    const aliases = [
-      ['/discover/resources/academic-papers/', '/papers/'],
-      ['/competition-law-statement/', '/policies/competition-law-statement/'],
-      ['/code-of-conduct/', '/policies/code-of-conduct/'],
-      ['/trademark/', '/policies/trademark/'],
-      ['/legal-and-policies/', '/policies/'],
-      ['/news-and-events/news-and-analysis/latest-news/', '/news/'],
-      ['/policies/ip-policy/', '/policies/intellectual-property-policy/'],
-      ['/policies/trademark-original/', '/policies/trademark/'],
-      ['/groups/', '/alliance/leadership/working-groups/'],
-      ['/adopt/assurance-and-adoption/case-studies/', '/case-studies/'],
-      ['/discover/resources/reports-and-white-papers/', '/reports/'],
-    ];
+    const aliases = preflight.records.filter(record => record.alias_target && record.properties.layout === 'redirect').map(record => [record.url, record.alias_target]);
     for (const [source, destination] of aliases) {
       await plain.goto(url(source));
       await plain.waitForURL(url(destination));

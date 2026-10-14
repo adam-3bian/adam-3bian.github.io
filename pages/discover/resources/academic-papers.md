@@ -22,4 +22,4 @@ related:
   policies: []
 ---
 
-This content is maintained at [its canonical destination](/papers/).
+This content is maintained at [its canonical destination](/academic-papers/).

@@ -1,6 +1,6 @@
 ---
-generated_at: '2026-10-14T02:14:39Z'
-record_count: 498
+generated_at: '2026-10-14T10:16:26Z'
+record_count: 532
 relationship_count: 1122
 image_count: 508
 collection_count: 12
@@ -24,8 +24,8 @@ collections:
   url: "/organisations/"
   records: 70
   canonical: 70
-  provided_images: 53
-  placeholders: 17
+  provided_images: 66
+  placeholders: 4
 - key: events
   label: Events
   url: "/events/"
@@ -35,7 +35,7 @@ collections:
   placeholders: 0
 - key: academic-papers
   label: Academic papers
-  url: "/papers/"
+  url: "/academic-papers/"
   records: 15
   canonical: 15
   provided_images: 0
@@ -56,7 +56,7 @@ collections:
   placeholders: 10
 - key: working-groups
   label: Working groups
-  url: "/alliance/leadership/working-groups/"
+  url: "/working-groups/"
   records: 17
   canonical: 17
   provided_images: 17
@@ -126,6 +126,7 @@ records:
       - ncsc
       academic-papers: []
     parent: "/events/"
+    layout: document
 - title: 3bian
   url: "/organisations/3bian/"
   file: _organisations/3bian.md
@@ -148,8 +149,24 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: 4️⃣ CHERI for seL4 WG
   url: "/groups/cheri-for-sel4/"
+  file: pages/redirects/groups/cheri-for-sel4.md
+  type: Redirect
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target: "/working-groups/cheri-for-sel4/"
+  properties:
+    title: 4️⃣ CHERI for seL4 WG
+    permalink: "/groups/cheri-for-sel4/"
+    layout: redirect
+- title: 4️⃣ CHERI for seL4 WG
+  url: "/working-groups/cheri-for-sel4/"
   file: _working-groups/cheri-for-sel4.md
   type: Group (detail)
   collection: working-groups
@@ -173,7 +190,8 @@ records:
       - capabilities-limited
       hardware: []
       software: []
-    parent: "/groups/"
+    parent: "/working-groups/"
+    layout: document
 - title: A new ETSI standard could rewrite the memory-safety debate
   url: "/news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/"
   file: _news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate.md
@@ -199,6 +217,7 @@ records:
       - rust
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: A. Theodore Markettos
   url: "/people/a-theodore-markettos/"
   file: _people/a-theodore-markettos.md
@@ -223,6 +242,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Academic Papers
   url: "/discover/resources/academic-papers/"
   file: pages/discover/resources/academic-papers.md
@@ -233,7 +253,7 @@ records:
   missing_news_date: false
   display_date:
   alternate: true
-  alias_target: "/papers/"
+  alias_target: "/academic-papers/"
   properties:
     title: Academic Papers
     permalink: "/discover/resources/academic-papers/"
@@ -256,6 +276,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: redirect
 - title: Accelerating CHERI together
   url: "/alliance/about-and-governance/accelerating-together/"
   file: pages/alliance/about-and-governance/accelerating-together.md
@@ -290,6 +311,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Adam Finney
   url: "/people/adam-finney/"
   file: _people/adam-finney.md
@@ -317,8 +339,24 @@ records:
       working-groups:
       - marketing
     parent: "/people/"
+    layout: document
 - title: Adaptive CHERI Compartmentalization for Heterogeneous Accelerators
   url: "/papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/"
+  file: pages/redirects/papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators.md
+  type: Redirect
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target: "/academic-papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/"
+  properties:
+    title: Adaptive CHERI Compartmentalization for Heterogeneous Accelerators
+    permalink: "/papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/"
+    layout: redirect
+- title: Adaptive CHERI Compartmentalization for Heterogeneous Accelerators
+  url: "/academic-papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/"
   file: _academic-papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators.md
   type: Paper (detail)
   collection: academic-papers
@@ -345,7 +383,8 @@ records:
       working-groups: []
       hardware: []
       software: []
-    parent: "/papers/"
+    parent: "/academic-papers/"
+    layout: document
 - title: Adopt CHERI
   url: "/adopt/"
   file: pages/adopt.md
@@ -398,6 +437,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Adversarial CHERI Exercises and Missions on CHERI-seL4 microkernel and CHERI-Microkit
   url: "/CHERI-seL4-Exercises/"
   file: pages/CHERI-seL4-Exercises.md
@@ -430,6 +470,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Adversarial CHERI Exercises and Missions on CHERI-seL4 microkernel and CHERI-Microkit
   url: "/reference/CHERI-seL4-Exercises/cover/index.html"
   file: pages/reference/CHERI-seL4-Exercises/cover/index.html.md
@@ -462,6 +503,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Adversarial CHERI Exercises and Missions on CHERI-seL4 microkernel and CHERI-Microkit
   url: "/reference/CHERI-seL4-Exercises/print.html"
   file: pages/reference/CHERI-seL4-Exercises/print.html.md
@@ -494,6 +536,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: AI has compressed the attack timeline
   url: "/news/ai-has-compressed-the-attack-timeline/"
   file: _news/ai-has-compressed-the-attack-timeline.md
@@ -520,6 +563,7 @@ records:
       - freebsd
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: Alastair Beresford
   url: "/people/alastair-beresford/"
   file: _people/alastair-beresford.md
@@ -545,6 +589,7 @@ records:
       - university-of-cambridge
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Alex Rebert
   url: "/people/alex-rebert/"
   file: _people/alex-rebert.md
@@ -570,6 +615,7 @@ records:
       - google
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Alex Richardson
   url: "/people/alex-richardson/"
   file: _people/alex-richardson.md
@@ -596,6 +642,7 @@ records:
       - cheri-alliance
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Alexander Voyevoda
   url: "/people/alexander-voyevoda/"
   file: _people/alexander-voyevoda.md
@@ -621,6 +668,7 @@ records:
       - um-labs
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Alexandre Joannou
   url: "/people/alexandre-joannou/"
   file: _people/alexandre-joannou.md
@@ -645,6 +693,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Alfredo Mazzinghi
   url: "/people/alfredo-mazzinghi/"
   file: _people/alfredo-mazzinghi.md
@@ -672,6 +721,7 @@ records:
       working-groups:
       - cheri-qemu
     parent: "/people/"
+    layout: document
 - title: Allison Randal
   url: "/people/allison-randal/"
   file: _people/allison-randal.md
@@ -699,6 +749,7 @@ records:
       working-groups:
       - cheri-linux-working-group
     parent: "/people/"
+    layout: document
 - title: Ambassadors
   url: "/alliance/leadership/ambassadors/"
   file: pages/alliance/leadership/ambassadors.md
@@ -733,6 +784,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Amid rising cyber threats, EnSilica joins the CHERI Alliance to enable safe
     & secure silicon
   url: "/news/amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon/"
@@ -766,6 +818,7 @@ records:
       software: []
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: An Introduction to CHERI
   url: "/reports/an-introduction-to-cheri/"
   file: _reports/an-introduction-to-cheri.md
@@ -796,6 +849,7 @@ records:
       hardware: []
       software: []
     parent: "/reports/"
+    layout: document
 - title: Andrew Lindsay
   url: "/people/andrew-lindsay/"
   file: _people/andrew-lindsay.md
@@ -822,6 +876,7 @@ records:
       - cheri-alliance
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Andrew Murray
   url: "/people/andrew-murray/"
   file: _people/andrew-murray.md
@@ -848,6 +903,7 @@ records:
       - the-capable-hub
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Andy Moore
   url: "/people/andy-moore/"
   file: _people/andy-moore.md
@@ -873,6 +929,7 @@ records:
       - risc-v-international
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Answers
   url: "/reference/CHERI-seL4-Exercises/exercises/cheri-allocator/answers.html"
   file: pages/reference/CHERI-seL4-Exercises/exercises/cheri-allocator/answers.html.md
@@ -904,6 +961,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Answers
   url: "/reference/CHERI-seL4-Exercises/exercises/cheri-tags/answers.html"
   file: pages/reference/CHERI-seL4-Exercises/exercises/cheri-tags/answers.html.md
@@ -935,6 +993,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Answers - Compile and run RISC-V and CHERI-RISC-V programs
   url: "/reference/CHERI-seL4-Exercises/exercises/compile-and-run/answers.html"
   file: pages/reference/CHERI-seL4-Exercises/exercises/compile-and-run/answers.html.md
@@ -966,6 +1025,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Answers - Corrupt a control-flow pointer using a subobject buffer overflow
   url: "/reference/CHERI-seL4-Exercises/exercises/control-flow-pointer/answers.html"
   file: pages/reference/CHERI-seL4-Exercises/exercises/control-flow-pointer/answers.html.md
@@ -997,6 +1057,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Answers - Disassemble and debug RISC-V and CHERI-RISC-V programs
   url: "/reference/CHERI-seL4-Exercises/exercises/debug-and-disassemble/answers.html"
   file: pages/reference/CHERI-seL4-Exercises/exercises/debug-and-disassemble/answers.html.md
@@ -1028,6 +1089,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Answers - Exercise an inter-global-object buffer overflow
   url: "/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-global/answers.html"
   file: pages/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-global/answers.html.md
@@ -1059,6 +1121,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Answers - Exercise an inter-stack-object buffer overflow
   url: "/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-stack/answers.html"
   file: pages/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-stack/answers.html.md
@@ -1090,6 +1153,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Answers - Explore Subobject Bounds
   url: "/reference/CHERI-seL4-Exercises/exercises/subobject-bounds/answers.html"
   file: pages/reference/CHERI-seL4-Exercises/exercises/subobject-bounds/answers.html.md
@@ -1121,6 +1185,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: 'Answers: Exercise integer-pointer type confusion bug'
   url: "/reference/CHERI-seL4-Exercises/exercises/type-confusion/answers.html"
   file: pages/reference/CHERI-seL4-Exercises/exercises/type-confusion/answers.html.md
@@ -1152,6 +1217,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Anthony Fox
   url: "/people/anthony-fox/"
   file: _people/anthony-fox.md
@@ -1176,6 +1242,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Appendix
   url: "/reference/CHERI-seL4-Exercises/appendix/index.html"
   file: pages/reference/CHERI-seL4-Exercises/appendix/index.html.md
@@ -1207,6 +1274,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Approaches to Memory Safety
   url: "/discover/why-cheri/approaches-to-memory-safety/"
   file: pages/discover/why-cheri/approaches-to-memory-safety.md
@@ -1240,6 +1308,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Ararat River Consulting, LLC
   url: "/organisations/ararat-river-consulting-llc/"
   file: _organisations/ararat-river-consulting-llc.md
@@ -1262,20 +1331,21 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: ARIA
   url: "/organisations/aria/"
   file: _organisations/aria.md
   type: Organisation (detail)
   collection: organisations
-  has_image: false
-  image_status: placeholder
+  has_image: true
+  image_status: provided
   missing_news_date: false
   display_date:
   alternate: false
   alias_target:
   properties:
     title: ARIA
-    image_url: "/assets/organisations/aria/placeholder.svg"
+    image_url: "/assets/organisations/aria/logo-source.svg"
     website_url:
     membership_tier:
     is_founding_member:
@@ -1284,20 +1354,26 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
+    image_source:
+      source_page: https://www.aria.org.uk/
+      source_url: https://www.aria.org.uk/media/hsxblxrf/logo-aria-black.svg
+      retrieved_date: '2026-10-14'
+      sha256: 31cf8cadf6d302eb04f708df91a9c1221fe73274d795da232175916e8a8fefec
 - title: Arm
   url: "/organisations/arm/"
   file: _organisations/arm.md
   type: Organisation (detail)
   collection: organisations
-  has_image: false
-  image_status: placeholder
+  has_image: true
+  image_status: provided
   missing_news_date: false
   display_date:
   alternate: false
   alias_target:
   properties:
     title: Arm
-    image_url: "/assets/organisations/arm/placeholder.svg"
+    image_url: "/assets/organisations/arm/logo-source.svg"
     website_url:
     membership_tier:
     is_founding_member:
@@ -1306,6 +1382,12 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
+    image_source:
+      source_page: https://www.arm.com/
+      source_url: https://www.arm.com/-/media/global/logos/arm-logo-blue-rgb.svg
+      retrieved_date: '2026-10-14'
+      sha256: d9b831e3d9436e8ff252913fa7e00a1d8ef652ffe9b21dc7f7bda35cf5cd0508
 - title: Ashish Darbari
   url: "/people/ashish-darbari/"
   file: _people/ashish-darbari.md
@@ -1331,6 +1413,7 @@ records:
       - axiomise-ltd
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Assessing the Viability of an Open-Source CHERI Desktop Software Ecosystem
   url: "/reports/assessing-the-viability-of-an-open-source-cheri-desktop-software-ecosystem/"
   file: _reports/assessing-the-viability-of-an-open-source-cheri-desktop-software-ecosystem.md
@@ -1362,6 +1445,7 @@ records:
       software:
       - cheribsd
     parent: "/reports/"
+    layout: document
 - title: Assurance & Certification
   url: "/adopt/assurance-and-adoption/assurance-and-certification/"
   file: pages/adopt/assurance-and-adoption/assurance-and-certification.md
@@ -1396,6 +1480,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Automotive
   url: "/adopt/use-cases/automotive/"
   file: pages/adopt/use-cases/automotive.md
@@ -1429,6 +1514,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Axiomise Ltd
   url: "/organisations/axiomise-ltd/"
   file: _organisations/axiomise-ltd.md
@@ -1451,6 +1537,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: Background reading
   url: "/reference/CHERI-seL4-Exercises/introduction/background.html"
   file: pages/reference/CHERI-seL4-Exercises/introduction/background.html.md
@@ -1482,6 +1569,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: 'Behind the Scenes: inside the promotion and ambassador program Working Group'
   url: "/news/behind-the-scenes-inside-the-promotion-and-ambassador-program-working-group/"
   file: _news/behind-the-scenes-inside-the-promotion-and-ambassador-program-working-group.md
@@ -1509,6 +1597,7 @@ records:
       software: []
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: Ben Fletcher
   url: "/people/ben-fletcher/"
   file: _people/ben-fletcher.md
@@ -1535,6 +1624,7 @@ records:
       working-groups:
       - cheri-in-soc
     parent: "/people/"
+    layout: document
 - title: Ben Laurie
   url: "/people/ben-laurie/"
   file: _people/ben-laurie.md
@@ -1559,6 +1649,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Benjamin Fletcher
   url: "/people/benjamin-fletcher/"
   file: _people/benjamin-fletcher.md
@@ -1584,6 +1675,7 @@ records:
       - codasip
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Beyond Software Patching
   url: "/news/beyond-software-patching/"
   file: _news/beyond-software-patching.md
@@ -1618,6 +1710,7 @@ records:
       - rust
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: Bootloaders and firmware - CHERI Roadmap for Linux
   url: "/reference/linux-roadmap/goals/bootloaders-firmware.html"
   file: pages/reference/linux-roadmap/goals/bootloaders-firmware.html.md
@@ -1649,6 +1742,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Bounds
   url: "/build/technology/bounds/"
   file: pages/build/technology/bounds.md
@@ -1683,6 +1777,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Bradley Finn
   url: "/people/bradley-finn/"
   file: _people/bradley-finn.md
@@ -1708,6 +1803,7 @@ records:
       - dsit
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Brett F. Gutstein
   url: "/people/brett-f-gutstein/"
   file: _people/brett-f-gutstein.md
@@ -1732,6 +1828,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Brian Campbell
   url: "/people/brian-campbell/"
   file: _people/brian-campbell.md
@@ -1756,6 +1853,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Bringing CHERI to your product
   url: "/discover/understand/adapt-products/"
   file: pages/discover/understand/adapt-products.md
@@ -1788,6 +1886,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Brooks Davis
   url: "/people/brooks-davis/"
   file: _people/brooks-davis.md
@@ -1814,6 +1913,7 @@ records:
       working-groups:
       - os-support-and-portability
     parent: "/people/"
+    layout: document
 - title: BT Group
   url: "/organisations/bt-group/"
   file: _organisations/bt-group.md
@@ -1836,6 +1936,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: BT Group Joins the CHERI Alliance to Advance Cybersecurity Innovation
   url: "/news/bt-group-joins-the-cheri-alliance-to-advance-cybersecurity-innovation/"
   file: _news/bt-group-joins-the-cheri-alliance-to-advance-cybersecurity-innovation.md
@@ -1861,6 +1962,7 @@ records:
       software: []
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: Build Compartments
   url: "/guides/build-compartments/"
   file: _guides/build-compartments.md
@@ -1885,6 +1987,7 @@ records:
       software:
       - cheribsd
     parent: "/guides/"
+    layout: document
 - title: Build with CHERI
   url: "/build/"
   file: pages/build.md
@@ -1927,6 +2030,7 @@ records:
       software:
       - cheribsd
     parent: "/guides/"
+    layout: document
 - title: Building a Safer Digital Future
   url: "/news/building-a-safer-digital-future/"
   file: _news/building-a-safer-digital-future.md
@@ -1954,6 +2058,7 @@ records:
       - llvm-and-clang
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: Building Secure Software with CHERI
   url: "/guides/building-secure-software/"
   file: _guides/building-secure-software.md
@@ -1976,6 +2081,7 @@ records:
       hardware: []
       software: []
     parent: "/guides/"
+    layout: document
 - title: Cambridge and SRI
   url: "/discover/history/cambridge-and-sri/"
   file: pages/discover/history/cambridge-and-sri.md
@@ -2009,6 +2115,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Cantech Informatics SRL
   url: "/organisations/cantech-informatics-srl/"
   file: _organisations/cantech-informatics-srl.md
@@ -2031,6 +2138,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: Capabilities
   url: "/build/technology/capabilities/"
   file: pages/build/technology/capabilities.md
@@ -2063,6 +2171,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Capabilities Limited
   url: "/organisations/capabilities-limited/"
   file: _organisations/capabilities-limited.md
@@ -2085,6 +2194,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: Carl Shaw
   url: "/people/carl-shaw/"
   file: _people/carl-shaw.md
@@ -2110,6 +2220,7 @@ records:
       - codasip
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Case Studies
   url: "/adopt/assurance-and-adoption/case-studies/"
   file: pages/adopt/assurance-and-adoption/case-studies.md
@@ -2142,6 +2253,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: redirect
 - title: Case Studies
   url: "/case-studies/"
   file: pages/case-studies.md
@@ -2199,6 +2311,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: Certification
   url: "/adopt/assurance-and-adoption/certification/"
   file: pages/adopt/assurance-and-adoption/certification.md
@@ -2233,6 +2346,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: CHERI Adoption and Diffusion Research
   url: "/reports/cheri-adoption-and-diffusion-research/"
   file: _reports/cheri-adoption-and-diffusion-research.md
@@ -2259,6 +2373,7 @@ records:
       hardware: []
       software: []
     parent: "/reports/"
+    layout: document
 - title: CHERI Alliance
   url: "/alliance/"
   file: pages/alliance.md
@@ -2290,7 +2405,7 @@ records:
   alias_target:
   properties:
     title: CHERI Alliance
-    image_url: "/assets/organisations/cheri-alliance/9899bc30b0-logo-blue.webp"
+    image_url: "/assets/organisations/cheri-alliance/logo.svg"
     website_url: https://cheri-alliance.org/
     membership_tier:
     is_founding_member:
@@ -2299,6 +2414,12 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
+    image_source:
+      source_page: cheri-alliance-starter-kit-simplified-authoring (3)(4).zip
+      source_url: basic-site/assets/images/brand/logo-blue.svg
+      retrieved_date: '2026-10-14'
+      sha256: e5e71b65000e93a27de232bd71946cb69bb382742e8b88aa5fd9bebc755f8d4d
 - title: CHERI Alliance at Embedded World 2026
   url: "/events/embedded-world-2026/"
   file: _events/embedded-world-2026.md
@@ -2330,6 +2451,7 @@ records:
       - codasip
       academic-papers: []
     parent: "/events/"
+    layout: document
 - title: |-
     CHERI ALLIANCE CIC
     Code of Conduct
@@ -2368,6 +2490,7 @@ records:
     version: '1.01'
     document_date: '2025-04-14'
     document_url: https://cheri-alliance.org/legal-code-of-conduct/
+    layout: redirect
 - title: |-
     CHERI ALLIANCE CIC
     Statement of competition compliance
@@ -2406,6 +2529,7 @@ records:
     version: '1.0'
     document_date: 2024-08
     document_url: https://cheri-alliance.org/legal-competition/
+    layout: redirect
 - title: CHERI ALLIANCE CIC IP Policy
   url: "/policies/ip-policy/"
   file: _policies/ip-policy.md
@@ -2425,6 +2549,7 @@ records:
     document_date: 2024-08
     document_url: https://cheri-alliance.org/legal-ip-policy/
     parent: "/policies/"
+    layout: redirect
 - title: CHERI Alliance Officially Launches, Adds Major Partners including Google,
     to Tackle Cybersecurity Threats at the Hardware Level
   url: "/news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level/"
@@ -2472,6 +2597,7 @@ records:
       - freebsd
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: CHERI Alliance to Distribute Arm Morello Boards – The Journey Beyond DSbD
     Continues!
   url: "/news/cheri-alliance-to-distribute-arm-morello-boards-the-journey-beyond-dsbd-continues/"
@@ -2500,6 +2626,7 @@ records:
       software: []
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: CHERI and Cybersecurity Regulation
   url: "/adopt/policy/cybersecurity-regulation/"
   file: pages/adopt/policy/cybersecurity-regulation.md
@@ -2534,6 +2661,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: CHERI and Existing Software
   url: "/discover/understand/cheri-and-existing-software/"
   file: pages/discover/understand/cheri-and-existing-software.md
@@ -2568,6 +2696,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: CHERI and Rust
   url: "/discover/why-cheri/cheri-and-rust/"
   file: pages/discover/why-cheri/cheri-and-rust.md
@@ -2601,6 +2730,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: CHERI and Rust - Technical Overview
   url: "/build/technology/cheri-and-rust-technical/"
   file: pages/build/technology/cheri-and-rust-technical.md
@@ -2633,6 +2763,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: CHERI Blossoms Conference
   url: "/news-and-events/events-and-archive/cheri-blossoms/"
   file: pages/news-and-events/events-and-archive/cheri-blossoms.md
@@ -2667,6 +2798,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: CHERI Blossoms Conference 2025
   url: "/events/cheri-blossoms-conference-2025/"
   file: _events/cheri-blossoms-conference-2025.md
@@ -2739,6 +2871,7 @@ records:
       - ukri
       academic-papers: []
     parent: "/events/"
+    layout: document
 - title: CHERI Blossoms Conference 2026
   url: "/events/cheri-blossoms-conference-2026/"
   file: _events/cheri-blossoms-conference-2026.md
@@ -2833,6 +2966,7 @@ records:
       - ukri
       academic-papers: []
     parent: "/events/"
+    layout: document
 - title: CHERI Blossoms Conference 2027
   url: "/events/cheri-blossoms-conference-2027/"
   file: _events/cheri-blossoms-conference-2027.md
@@ -2861,8 +2995,24 @@ records:
       - university-of-cambridge
       academic-papers: []
     parent: "/events/"
+    layout: document
 - title: 'CHERI Concentrate: Practical Compressed Capabilities'
   url: "/papers/cheri-concentrate-practical-compressed-capabilities/"
+  file: pages/redirects/papers/cheri-concentrate-practical-compressed-capabilities.md
+  type: Redirect
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target: "/academic-papers/cheri-concentrate-practical-compressed-capabilities/"
+  properties:
+    title: 'CHERI Concentrate: Practical Compressed Capabilities'
+    permalink: "/papers/cheri-concentrate-practical-compressed-capabilities/"
+    layout: redirect
+- title: 'CHERI Concentrate: Practical Compressed Capabilities'
+  url: "/academic-papers/cheri-concentrate-practical-compressed-capabilities/"
   file: _academic-papers/cheri-concentrate-practical-compressed-capabilities.md
   type: Paper (detail)
   collection: academic-papers
@@ -2897,7 +3047,8 @@ records:
       working-groups: []
       hardware: []
       software: []
-    parent: "/papers/"
+    parent: "/academic-papers/"
+    layout: document
 - title: CHERI Enabled Products
   url: "/adopt/assurance-and-adoption/cheri-enabled-products/"
   file: pages/adopt/assurance-and-adoption/cheri-enabled-products.md
@@ -2959,6 +3110,7 @@ records:
       reports: []
     summary: Commercially application-class CHERI processor
     parent: "/case-studies/"
+    layout: document
 - title: CHERI Linux
   url: "/software/cheri-linux/"
   file: _software/cheri-linux.md
@@ -2987,6 +3139,7 @@ records:
       - cheribsd
       - zephyr
     parent: "/software/"
+    layout: document
 - title: CHERI memory safety mitigates LLM-discovered vulnerability in FreeBSD
   url: "/news/cheri-memory-safety-mitigates-llm-discovered-vulnerability-in-freebsd/"
   file: _news/cheri-memory-safety-mitigates-llm-discovered-vulnerability-in-freebsd.md
@@ -3015,6 +3168,7 @@ records:
       - freebsd
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: CHERI or CHERIoT? The Answer Is Not What You Think
   url: "/news/cheri-or-cheriot-the-answer-is-not-what-you-think-original/"
   file: _news/cheri-or-cheriot-the-answer-is-not-what-you-think-original.md
@@ -3041,6 +3195,7 @@ records:
       software: []
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: CHERI or CHERIoT? The Answer Is Not What You Think
   url: "/news/cheri-or-cheriot-the-answer-is-not-what-you-think/"
   file: _news/cheri-or-cheriot-the-answer-is-not-what-you-think.md
@@ -3067,6 +3222,7 @@ records:
       software: []
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: CHERI Products
   url: "/build/platforms/cheri-products/"
   file: pages/build/platforms/cheri-products.md
@@ -3102,8 +3258,24 @@ records:
       guides:
       - downloads
       policies: []
+    layout: document
 - title: CHERI Research WG
   url: "/groups/cheri-research/"
+  file: pages/redirects/groups/cheri-research.md
+  type: Redirect
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target: "/working-groups/cheri-research/"
+  properties:
+    title: CHERI Research WG
+    permalink: "/groups/cheri-research/"
+    layout: redirect
+- title: CHERI Research WG
+  url: "/working-groups/cheri-research/"
   file: _working-groups/cheri-research.md
   type: Working group (detail)
   collection: working-groups
@@ -3125,7 +3297,8 @@ records:
       - university-of-cambridge
       hardware: []
       software: []
-    parent: "/groups/"
+    parent: "/working-groups/"
+    layout: document
 - title: CHERI Roadmap for Linux
   url: "/reference/linux-roadmap/cover.html"
   file: pages/reference/linux-roadmap/cover.html.md
@@ -3157,6 +3330,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: CHERI Roadmap for Linux
   url: "/linux-roadmap/"
   file: pages/linux-roadmap.md
@@ -3188,6 +3362,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: CHERI Roadmap for Linux
   url: "/reference/linux-roadmap/print.html"
   file: pages/reference/linux-roadmap/print.html.md
@@ -3219,6 +3394,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: CHERI Tag Bit Transport Overlay Standard version 0.9 released
   url: "/news/cheri-tag-bit-transport-overlay-standard-version-0-9-released/"
   file: _news/cheri-tag-bit-transport-overlay-standard-version-0-9-released.md
@@ -3244,6 +3420,7 @@ records:
       software: []
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: CHERI Technology for Cyber Security
   url: "/reports/cheri-technology-for-cyber-security/"
   file: _reports/cheri-technology-for-cyber-security.md
@@ -3270,6 +3447,7 @@ records:
       hardware: []
       software: []
     parent: "/reports/"
+    layout: document
 - title: CHERI Trademark
   url: "/policies/trademark/"
   file: _policies/trademark.md
@@ -3286,6 +3464,7 @@ records:
     image_url: "/assets/policies/trademark/placeholder.svg"
     author:
     parent: "/policies/"
+    layout: document
 - title: CHERI-seL4 and CHERI-Microkit Released
   url: "/news/cheri-sel4-and-cheri-microkit-released/"
   file: _news/cheri-sel4-and-cheri-microkit-released.md
@@ -3314,6 +3493,7 @@ records:
       - rust
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: CHERI-Zephyr v0.4.0 Release
   url: "/news/cheri-zephyr-v0-4-0-release/"
   file: _news/cheri-zephyr-v0-4-0-release.md
@@ -3340,8 +3520,24 @@ records:
       - zephyr
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: 'CHERI: A Hybrid Capability-System Architecture for Scalable Software Compartmentalization'
   url: "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
+  file: pages/redirects/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md
+  type: Redirect
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target: "/academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
+  properties:
+    title: 'CHERI: A Hybrid Capability-System Architecture for Scalable Software Compartmentalization'
+    permalink: "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
+    layout: redirect
+- title: 'CHERI: A Hybrid Capability-System Architecture for Scalable Software Compartmentalization'
+  url: "/academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
   file: _academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md
   type: Paper (detail)
   collection: academic-papers
@@ -3376,9 +3572,25 @@ records:
       working-groups: []
       hardware: []
       software: []
-    parent: "/papers/"
+    parent: "/academic-papers/"
+    layout: document
 - title: 'CHERI: Hardware-Enabled C/C++ Memory Protection at Scale'
   url: "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/"
+  file: pages/redirects/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale.md
+  type: Redirect
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target: "/academic-papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/"
+  properties:
+    title: 'CHERI: Hardware-Enabled C/C++ Memory Protection at Scale'
+    permalink: "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/"
+    layout: redirect
+- title: 'CHERI: Hardware-Enabled C/C++ Memory Protection at Scale'
+  url: "/academic-papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/"
   file: _academic-papers/cheri-hardware-enabled-c-c-memory-protection-at-scale.md
   type: Paper (detail)
   collection: academic-papers
@@ -3410,10 +3622,28 @@ records:
       working-groups: []
       hardware: []
       software: []
-    parent: "/papers/"
+    parent: "/academic-papers/"
+    layout: document
 - title: 'CheriABI: Enforcing Valid Pointer Provenance and Minimizing Pointer Privilege
     in the POSIX C Run-time Environment'
   url: "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/"
+  file: pages/redirects/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p.md
+  type: Redirect
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target: "/academic-papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/"
+  properties:
+    title: 'CheriABI: Enforcing Valid Pointer Provenance and Minimizing Pointer Privilege
+      in the POSIX C Run-time Environment'
+    permalink: "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/"
+    layout: redirect
+- title: 'CheriABI: Enforcing Valid Pointer Provenance and Minimizing Pointer Privilege
+    in the POSIX C Run-time Environment'
+  url: "/academic-papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/"
   file: _academic-papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p.md
   type: Paper (detail)
   collection: academic-papers
@@ -3445,7 +3675,8 @@ records:
       working-groups: []
       hardware: []
       software: []
-    parent: "/papers/"
+    parent: "/academic-papers/"
+    layout: document
 - title: CheriBSD
   url: "/software/cheribsd/"
   file: _software/cheribsd.md
@@ -3476,6 +3707,7 @@ records:
       - llvm-and-clang
       - freebsd
     parent: "/software/"
+    layout: document
 - title: 'CheriBSD: established software at operating-system scale'
   url: "/case-studies/cheribsd/"
   file: _case-studies/cheribsd.md
@@ -3501,6 +3733,7 @@ records:
       - assessing-the-viability-of-an-open-source-cheri-desktop-software-ecosystem
     summary: Protection of large existing software stacks
     parent: "/case-studies/"
+    layout: document
 - title: CHERIoT
   url: "/hardware/cheriot/"
   file: _hardware/cheriot.md
@@ -3530,6 +3763,7 @@ records:
       software:
       - debugging-tools
     parent: "/hardware/"
+    layout: document
 - title: CHERIoT 1.0 Specification Released
   url: "/news/cheriot-1-0-specification-released-original/"
   file: _news/cheriot-1-0-specification-released-original.md
@@ -3556,6 +3790,7 @@ records:
       software: []
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: CHERIoT 1.0 Specification Released
   url: "/news/cheriot-1-0-specification-released/"
   file: _news/cheriot-1-0-specification-released.md
@@ -3582,6 +3817,7 @@ records:
       software: []
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: CHERIoT Ibex Certification Record
   url: "/hardware/cheriot-ibex/"
   file: _hardware/cheriot-ibex.md
@@ -3617,9 +3853,27 @@ records:
     parent: "/hardware/"
     certification: cheri-enabled
     certification_url: https://cheri-alliance.org/cheri-enabled/cheriot/
+    layout: document
 - title: 'CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost
     Embedded Devices'
   url: "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
+  file: pages/redirects/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev.md
+  type: Redirect
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target: "/academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
+  properties:
+    title: 'CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost
+      Embedded Devices'
+    permalink: "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
+    layout: redirect
+- title: 'CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost
+    Embedded Devices'
+  url: "/academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
   file: _academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev.md
   type: Paper (detail)
   collection: academic-papers
@@ -3654,7 +3908,8 @@ records:
       hardware:
       - cheriot
       software: []
-    parent: "/papers/"
+    parent: "/academic-papers/"
+    layout: document
 - title: CHERIoT Software Engineer
   url: "/jobs/cheriot-software-engineer/"
   file: pages/jobs/cheriot-software-engineer.md
@@ -3687,6 +3942,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: CHERIoT-Ibex Core is Open Sourced to Enable Memory Safe MCUs
   url: "/news/cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus/"
   file: _news/cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus.md
@@ -3711,8 +3967,24 @@ records:
       software: []
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: 'CHERIoT: Complete Memory Safety for Embedded Devices'
   url: "/papers/cheriot-complete-memory-safety-for-embedded-devices/"
+  file: pages/redirects/papers/cheriot-complete-memory-safety-for-embedded-devices.md
+  type: Redirect
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target: "/academic-papers/cheriot-complete-memory-safety-for-embedded-devices/"
+  properties:
+    title: 'CHERIoT: Complete Memory Safety for Embedded Devices'
+    permalink: "/papers/cheriot-complete-memory-safety-for-embedded-devices/"
+    layout: redirect
+- title: 'CHERIoT: Complete Memory Safety for Embedded Devices'
+  url: "/academic-papers/cheriot-complete-memory-safety-for-embedded-devices/"
   file: _academic-papers/cheriot-complete-memory-safety-for-embedded-devices.md
   type: Paper (detail)
   collection: academic-papers
@@ -3744,7 +4016,8 @@ records:
       hardware:
       - cheriot
       software: []
-    parent: "/papers/"
+    parent: "/academic-papers/"
+    layout: document
 - title: 'CHERIoT: protection for small embedded devices'
   url: "/case-studies/cheriot/"
   file: _case-studies/cheriot.md
@@ -3770,6 +4043,7 @@ records:
       reports: []
     summary: CHERI for constrained embedded systems
     parent: "/case-studies/"
+    layout: document
 - title: CHERITech Conference
   url: "/news-and-events/events-and-archive/cheritech/"
   file: pages/news-and-events/events-and-archive/cheritech.md
@@ -3805,6 +4079,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: CHERITech'25 Conference
   url: "/events/cheritech25/"
   file: _events/cheritech25.md
@@ -3866,6 +4141,7 @@ records:
       - ukri
       academic-papers: []
     parent: "/events/"
+    layout: document
 - title: CHERITech'25 Reloaded
   url: "/events/cheritech25-reloaded/"
   file: _events/cheritech25-reloaded.md
@@ -3914,6 +4190,7 @@ records:
       - google
       academic-papers: []
     parent: "/events/"
+    layout: document
 - title: CHERITech'26
   url: "/events/cheritech26/"
   file: _events/cheritech26.md
@@ -3941,6 +4218,7 @@ records:
       organisations: []
       academic-papers: []
     parent: "/events/"
+    layout: document
 - title: Chevin Technology
   url: "/organisations/chevin-technology/"
   file: _organisations/chevin-technology.md
@@ -3963,6 +4241,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: Choosing a CHERI Development Platform
   url: "/guides/choose-a-platform/"
   file: _guides/choose-a-platform.md
@@ -3993,6 +4272,7 @@ records:
       - zephyr
       - llvm-and-clang
     parent: "/guides/"
+    layout: document
 - title: Cloud & Data Centre
   url: "/adopt/use-cases/cloud-and-data-centre/"
   file: pages/adopt/use-cases/cloud-and-data-centre.md
@@ -4028,6 +4308,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Codasip
   url: "/organisations/codasip/"
   file: _organisations/codasip.md
@@ -4050,6 +4331,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: Codasip enables secure Linux by donating CHERI RISC-V SDK to the CHERI Alliance
   url: "/news/codasip-enables-secure-linux-by-donating-cheri-risc-v-sdk-to-the-cheri-alliance/"
   file: _news/codasip-enables-secure-linux-by-donating-cheri-risc-v-sdk-to-the-cheri-alliance.md
@@ -4076,6 +4358,7 @@ records:
       software: []
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: Codasip Powers UK Digital Security by Design Innovation Contracts with CHERI
     Technology
   url: "/news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology-original/"
@@ -4109,6 +4392,7 @@ records:
       - cheri-linux
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: Codasip Powers UK Digital Security by Design Innovation Contracts with CHERI
     Technology
   url: "/news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology/"
@@ -4142,6 +4426,7 @@ records:
       - cheri-linux
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: Code of Conduct
   url: "/policies/code-of-conduct/"
   file: _policies/code-of-conduct.md
@@ -4161,6 +4446,7 @@ records:
     document_date: '2025-04-14'
     document_url: https://cheri-alliance.org/legal-code-of-conduct/
     parent: "/policies/"
+    layout: document
 - title: Collaboration Principles
   url: "/alliance/about-and-governance/collaboration-principles/"
   file: pages/alliance/about-and-governance/collaboration-principles.md
@@ -4195,6 +4481,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Combatting the AI threat with CHERI
   url: "/news/combatting-the-ai-threat-with-cheri/"
   file: _news/combatting-the-ai-threat-with-cheri.md
@@ -4224,6 +4511,7 @@ records:
       - freebsd
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: Commercialisation
   url: "/discover/history/commercialisation/"
   file: pages/discover/history/commercialisation.md
@@ -4258,6 +4546,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Compartmentalisation
   url: "/build/technology/compartmentalisation/"
   file: pages/build/technology/compartmentalisation.md
@@ -4292,6 +4581,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Competition Law Statement
   url: "/policies/competition-law-statement/"
   file: _policies/competition-law-statement.md
@@ -4311,6 +4601,7 @@ records:
     document_date: 2024-08
     document_url: https://cheri-alliance.org/legal-competition/
     parent: "/policies/"
+    layout: document
 - title: Compile and run RISC-V and CHERI-RISC-V programs
   url: "/reference/CHERI-seL4-Exercises/exercises/compile-and-run/index.html"
   file: pages/reference/CHERI-seL4-Exercises/exercises/compile-and-run/index.html.md
@@ -4342,6 +4633,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Configured Things
   url: "/organisations/configured-things/"
   file: _organisations/configured-things.md
@@ -4364,40 +4656,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
-- title: Contact the Alliance
-  url: "/alliance/membership/contact/"
-  file: pages/alliance/membership/contact.md
-  type: Content Page (detail)
-  collection: pages
-  has_image: false
-  image_status: none
-  missing_news_date: false
-  display_date:
-  alternate: false
-  alias_target:
-  properties:
-    title: Contact the Alliance
-    permalink: "/alliance/membership/contact/"
-    summary: Contact the Alliance for membership, working groups, certification, events,
-      media, trademarks, or help finding the right CHERI resource.
-    image_url:
-    updated_date:
-    parent: "/alliance/"
-    next_page_url: "/organisations/cheri-alliance/"
-    related:
-      pages:
-      - "/alliance/membership/membership-benefits-and-options/"
-      - "/news-and-events/people-and-opportunities/job-opportunities/"
-      people: []
-      organisations: []
-      working-groups: []
-      news: []
-      events: []
-      academic-papers: []
-      hardware: []
-      software: []
-      guides: []
-      policies: []
+    layout: document
 - title: Contact the Alliance
   url: "/reference/source-versions/contact/"
   file: pages/reference/source-versions/contact.md
@@ -4432,8 +4691,59 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
+- title: Contact the Alliance
+  url: "/alliance/membership/contact/"
+  file: pages/alliance/membership/contact.md
+  type: Content Page (detail)
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target:
+  properties:
+    title: Contact the Alliance
+    permalink: "/alliance/membership/contact/"
+    summary: Contact the Alliance for membership, working groups, certification, events,
+      media, trademarks, or help finding the right CHERI resource.
+    image_url:
+    updated_date:
+    parent: "/alliance/"
+    next_page_url: "/organisations/cheri-alliance/"
+    related:
+      pages:
+      - "/alliance/membership/membership-benefits-and-options/"
+      - "/news-and-events/people-and-opportunities/job-opportunities/"
+      people: []
+      organisations: []
+      working-groups: []
+      news: []
+      events: []
+      academic-papers: []
+      hardware: []
+      software: []
+      guides: []
+      policies: []
+    layout: document
 - title: 'Cornucopia Reloaded: Load Barriers for CHERI Heap Temporal Safety'
   url: "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/"
+  file: pages/redirects/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety.md
+  type: Redirect
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target: "/academic-papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/"
+  properties:
+    title: 'Cornucopia Reloaded: Load Barriers for CHERI Heap Temporal Safety'
+    permalink: "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/"
+    layout: redirect
+- title: 'Cornucopia Reloaded: Load Barriers for CHERI Heap Temporal Safety'
+  url: "/academic-papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/"
   file: _academic-papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety.md
   type: Paper (detail)
   collection: academic-papers
@@ -4465,9 +4775,25 @@ records:
       working-groups: []
       hardware: []
       software: []
-    parent: "/papers/"
+    parent: "/academic-papers/"
+    layout: document
 - title: 'Cornucopia: Temporal Safety for CHERI Heaps'
   url: "/papers/cornucopia-temporal-safety-for-cheri-heaps/"
+  file: pages/redirects/papers/cornucopia-temporal-safety-for-cheri-heaps.md
+  type: Redirect
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target: "/academic-papers/cornucopia-temporal-safety-for-cheri-heaps/"
+  properties:
+    title: 'Cornucopia: Temporal Safety for CHERI Heaps'
+    permalink: "/papers/cornucopia-temporal-safety-for-cheri-heaps/"
+    layout: redirect
+- title: 'Cornucopia: Temporal Safety for CHERI Heaps'
+  url: "/academic-papers/cornucopia-temporal-safety-for-cheri-heaps/"
   file: _academic-papers/cornucopia-temporal-safety-for-cheri-heaps.md
   type: Paper (detail)
   collection: academic-papers
@@ -4498,7 +4824,8 @@ records:
       working-groups: []
       hardware: []
       software: []
-    parent: "/papers/"
+    parent: "/academic-papers/"
+    layout: document
 - title: Corrupt a control-flow pointer using a subobject buffer overflow
   url: "/reference/CHERI-seL4-Exercises/exercises/control-flow-pointer/index.html"
   file: pages/reference/CHERI-seL4-Exercises/exercises/control-flow-pointer/index.html.md
@@ -4530,6 +4857,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Critical Infrastructure
   url: "/adopt/use-cases/critical-infrastructure/"
   file: pages/adopt/use-cases/critical-infrastructure.md
@@ -4566,6 +4894,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Critical Infrastructure & Resilience
   url: "/adopt/policy/critical-infrastructure-and-resilience/"
   file: pages/adopt/policy/critical-infrastructure-and-resilience.md
@@ -4600,6 +4929,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Critical Technologies Inc.
   url: "/organisations/critical-technologies/"
   file: _organisations/critical-technologies.md
@@ -4622,6 +4952,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: Cross compilation and execution
   url: "/reference/CHERI-seL4-Exercises/introduction/cross-compilation-execution.html"
   file: pages/reference/CHERI-seL4-Exercises/introduction/cross-compilation-execution.html.md
@@ -4653,6 +4984,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: CyberWhiz
   url: "/organisations/cyberwhiz/"
   file: _organisations/cyberwhiz.md
@@ -4675,6 +5007,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: CyNam
   url: "/organisations/cynam/"
   file: _organisations/cynam.md
@@ -4697,6 +5030,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: DARPA Programmes
   url: "/discover/history/darpa-programmes/"
   file: pages/discover/history/darpa-programmes.md
@@ -4731,6 +5065,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Dave Harcourt
   url: "/people/dave-harcourt/"
   file: _people/dave-harcourt.md
@@ -4756,6 +5091,7 @@ records:
       - bt-group
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: David Chisnall
   url: "/people/david-chisnall/"
   file: _people/david-chisnall.md
@@ -4784,6 +5120,7 @@ records:
       working-groups:
       - cheri-c-cplusplus
     parent: "/people/"
+    layout: document
 - title: David Musliner
   url: "/people/david-musliner/"
   file: _people/david-musliner.md
@@ -4809,6 +5146,7 @@ records:
       - smart-information-flow-technologies-sift
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Debugging Tools
   url: "/software/debugging-tools/"
   file: _software/debugging-tools.md
@@ -4840,6 +5178,7 @@ records:
       - cheribsd
       - cheri-linux
     parent: "/software/"
+    layout: document
 - title: Defence & Aerospace
   url: "/adopt/use-cases/defence-and-aerospace/"
   file: pages/adopt/use-cases/defence-and-aerospace.md
@@ -4875,6 +5214,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Defence Science and Technology Laboratory (Dstl)
   url: "/organisations/dstl/"
   file: _organisations/dstl.md
@@ -4897,6 +5237,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: Demonstrate CHERI Tag Protection
   url: "/reference/CHERI-seL4-Exercises/exercises/cheri-tags/index.html"
   file: pages/reference/CHERI-seL4-Exercises/exercises/cheri-tags/index.html.md
@@ -4928,9 +5269,27 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Deprivileging Low-Level GPU Drivers Efficiently with User-Space Processes
     and CHERI Compartments
   url: "/papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/"
+  file: pages/redirects/papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c.md
+  type: Redirect
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target: "/academic-papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/"
+  properties:
+    title: Deprivileging Low-Level GPU Drivers Efficiently with User-Space Processes
+      and CHERI Compartments
+    permalink: "/papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/"
+    layout: redirect
+- title: Deprivileging Low-Level GPU Drivers Efficiently with User-Space Processes
+    and CHERI Compartments
+  url: "/academic-papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/"
   file: _academic-papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c.md
   type: Paper (detail)
   collection: academic-papers
@@ -4957,7 +5316,8 @@ records:
       working-groups: []
       hardware: []
       software: []
-    parent: "/papers/"
+    parent: "/academic-papers/"
+    layout: document
 - title: Developer guides
   url: "/guides/"
   file: pages/guides.md
@@ -5012,6 +5372,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Digital Catapult
   url: "/organisations/digital-catapult/"
   file: _organisations/digital-catapult.md
@@ -5034,6 +5395,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: Digital Security by Design Archive
   url: "/discover/resources/digital-security-by-design-archive/"
   file: pages/discover/resources/digital-security-by-design-archive.md
@@ -5067,6 +5429,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Digital Security by Design Programme Outcomes
   url: "/reports/digital-security-by-design-programme-outcomes/"
   file: _reports/digital-security-by-design-programme-outcomes.md
@@ -5093,6 +5456,7 @@ records:
       hardware: []
       software: []
     parent: "/reports/"
+    layout: document
 - title: Disassemble and debug RISC-V and CHERI-RISC-V programs
   url: "/reference/CHERI-seL4-Exercises/exercises/debug-and-disassemble/index.html"
   file: pages/reference/CHERI-seL4-Exercises/exercises/debug-and-disassemble/index.html.md
@@ -5124,6 +5488,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Discover CHERI
   url: "/discover/"
   file: pages/discover.md
@@ -5164,6 +5529,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: Dmitriy Yeliseyev
   url: "/people/dmitriy-yeliseyev/"
   file: _people/dmitriy-yeliseyev.md
@@ -5189,6 +5555,7 @@ records:
       - wind-river
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Documentation & Guides
   url: "/discover/resources/documentation-and-guides/"
   file: pages/discover/resources/documentation-and-guides.md
@@ -5207,7 +5574,7 @@ records:
     image_url:
     updated_date:
     parent: "/discover/"
-    next_page_url: "/alliance/leadership/working-groups/"
+    next_page_url: "/working-groups/"
     related:
       pages: []
       people: []
@@ -5220,6 +5587,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Domagoj Stolfa
   url: "/people/domagoj-stolfa/"
   file: _people/domagoj-stolfa.md
@@ -5246,6 +5614,7 @@ records:
       - university-of-cambridge
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Donato Ferraro
   url: "/people/donato-ferraro/"
   file: _people/donato-ferraro.md
@@ -5272,6 +5641,7 @@ records:
       - university-of-modena-and-reggio-emilia
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Downloads
   url: "/guides/downloads/"
   file: _guides/downloads.md
@@ -5310,6 +5680,7 @@ records:
       - zephyr
       - llvm-and-clang
     parent: "/guides/"
+    layout: document
 - title: DSIT
   url: "/organisations/dsit/"
   file: _organisations/dsit.md
@@ -5332,6 +5703,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: Durham University
   url: "/organisations/durham-university/"
   file: _organisations/durham-university.md
@@ -5354,6 +5726,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: Early Capability Systems
   url: "/discover/history/early-capability-systems/"
   file: pages/discover/history/early-capability-systems.md
@@ -5386,6 +5759,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Edoardo Marangoni
   url: "/people/edoardo-marangoni/"
   file: _people/edoardo-marangoni.md
@@ -5412,6 +5786,7 @@ records:
       working-groups:
       - rust-plus-cheri
     parent: "/people/"
+    layout: document
 - title: Edward Tomasz Napierała
   url: "/people/edward-tomasz-napieraa/"
   file: _people/edward-tomasz-napieraa.md
@@ -5436,6 +5811,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Emulation and crossbuild platforms - CHERI Roadmap for Linux
   url: "/reference/linux-roadmap/goals/emulation-crossbuild.html"
   file: pages/reference/linux-roadmap/goals/emulation-crossbuild.html.md
@@ -5467,6 +5843,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: End-users demand memory safety in their systems
   url: "/news/end-users-demand-memory-safety-in-their-systems/"
   file: _news/end-users-demand-memory-safety-in-their-systems.md
@@ -5497,6 +5874,7 @@ records:
       software: []
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: EnSilica
   url: "/organisations/ensilica/"
   file: _organisations/ensilica.md
@@ -5519,20 +5897,21 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: Ericsson
   url: "/organisations/ericsson/"
   file: _organisations/ericsson.md
   type: Organisation (detail)
   collection: organisations
-  has_image: false
-  image_status: placeholder
+  has_image: true
+  image_status: provided
   missing_news_date: false
   display_date:
   alternate: false
   alias_target:
   properties:
     title: Ericsson
-    image_url: "/assets/organisations/ericsson/placeholder.svg"
+    image_url: "/assets/organisations/ericsson/logo-source.png"
     website_url:
     membership_tier:
     is_founding_member:
@@ -5541,20 +5920,26 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
+    image_source:
+      source_page: https://www.ericsson.com/
+      source_url: https://www.ericsson.com/48eb4e/assets/global/qbank/2024/01/16/e-con-vertical-1500x1500px-88604d41d8cd98f00b204e9800998ecf8427e.png
+      retrieved_date: '2026-10-14'
+      sha256: 8ed21ad219147c15e74a73c0426c314e7ad32268c9edd0c35fc14fa268323869
 - title: European Commission (DG CONNECT)
   url: "/organisations/european-commission-dg-connect/"
   file: _organisations/european-commission-dg-connect.md
   type: Organisation (detail)
   collection: organisations
-  has_image: false
-  image_status: placeholder
+  has_image: true
+  image_status: provided
   missing_news_date: false
   display_date:
   alternate: false
   alias_target:
   properties:
     title: European Commission (DG CONNECT)
-    image_url: "/assets/organisations/european-commission-dg-connect/placeholder.svg"
+    image_url: "/assets/organisations/european-commission-dg-connect/logo-source.svg"
     website_url:
     membership_tier:
     is_founding_member:
@@ -5563,6 +5948,12 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
+    image_source:
+      source_page: https://digital-strategy.ec.europa.eu/en
+      source_url: https://digital-strategy.ec.europa.eu/themes/contrib/oe_theme/dist/ec/images/logo/logo-ec--mute.svg
+      retrieved_date: '2026-10-14'
+      sha256: 73fee8ee4f5140b6439d646883ff35ddca8a80001908cd5ca71ff4e3f04b559b
 - title: Events
   url: "/events/"
   file: pages/events.md
@@ -5614,6 +6005,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Exercise an inter-global-object buffer overflow
   url: "/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-global/index.html"
   file: pages/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-global/index.html.md
@@ -5645,6 +6037,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Exercise an inter-stack-object buffer overflow
   url: "/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-stack/index.html"
   file: pages/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-stack/index.html.md
@@ -5676,6 +6069,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Exercise integer-pointer type confusion bug
   url: "/reference/CHERI-seL4-Exercises/exercises/type-confusion/index.html"
   file: pages/reference/CHERI-seL4-Exercises/exercises/type-confusion/index.html.md
@@ -5707,6 +6101,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Exploiting a buffer overflow to manipulate control flow
   url: "/reference/CHERI-seL4-Exercises/missions/buffer-overflow-control-flow/index.html"
   file: pages/reference/CHERI-seL4-Exercises/missions/buffer-overflow-control-flow/index.html.md
@@ -5738,6 +6133,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Exploiting an uninitialized stack frame to manipulate control flow
   url: "/reference/CHERI-seL4-Exercises/missions/uninitialized-stack-frame-control-flow/index.html"
   file: pages/reference/CHERI-seL4-Exercises/missions/uninitialized-stack-frame-control-flow/index.html.md
@@ -5769,6 +6165,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Explore Subobject Bounds
   url: "/reference/CHERI-seL4-Exercises/exercises/subobject-bounds/index.html"
   file: pages/reference/CHERI-seL4-Exercises/exercises/subobject-bounds/index.html.md
@@ -5800,6 +6197,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Export Controls
   url: "/policies/export-controls/"
   file: _policies/export-controls.md
@@ -5816,6 +6214,7 @@ records:
     image_url: "/assets/policies/export-controls/placeholder.svg"
     author:
     parent: "/policies/"
+    layout: document
 - title: Extending heap allocators for CHERI
   url: "/reference/CHERI-seL4-Exercises/exercises/cheri-allocator/index.html"
   file: pages/reference/CHERI-seL4-Exercises/exercises/cheri-allocator/index.html.md
@@ -5847,6 +6246,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: FAQ
   url: "/discover/understand/faq/"
   file: pages/discover/understand/faq.md
@@ -5881,6 +6281,7 @@ records:
       guides:
       - technical-faq
       policies: []
+    layout: document
 - title: Focused Adversarial Missions
   url: "/reference/CHERI-seL4-Exercises/missions/index.html"
   file: pages/reference/CHERI-seL4-Exercises/missions/index.html.md
@@ -5912,9 +6313,27 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: 'Formal Mechanised Semantics of CHERI C: Capabilities, Provenance, and Undefined
     Behaviour'
   url: "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/"
+  file: pages/redirects/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou.md
+  type: Redirect
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target: "/academic-papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/"
+  properties:
+    title: 'Formal Mechanised Semantics of CHERI C: Capabilities, Provenance, and
+      Undefined Behaviour'
+    permalink: "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/"
+    layout: redirect
+- title: 'Formal Mechanised Semantics of CHERI C: Capabilities, Provenance, and Undefined
+    Behaviour'
+  url: "/academic-papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/"
   file: _academic-papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou.md
   type: Paper (detail)
   collection: academic-papers
@@ -5946,7 +6365,8 @@ records:
       working-groups: []
       hardware: []
       software: []
-    parent: "/papers/"
+    parent: "/academic-papers/"
+    layout: document
 - title: Formation of the CHERI Alliance
   url: "/discover/history/formation-of-the-cheri-alliance/"
   file: pages/discover/history/formation-of-the-cheri-alliance.md
@@ -5981,6 +6401,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: FPGA Platforms
   url: "/hardware/fpga-platforms/"
   file: _hardware/fpga-platforms.md
@@ -6008,6 +6429,7 @@ records:
       software:
       - cheribsd
     parent: "/hardware/"
+    layout: document
 - title: FreeBSD
   url: "/software/freebsd/"
   file: _software/freebsd.md
@@ -6034,6 +6456,7 @@ records:
       - cheribsd
       - real-time-operating-systems
     parent: "/software/"
+    layout: document
 - title: FreeBSD Foundation
   url: "/organisations/freebsd-foundation/"
   file: _organisations/freebsd-foundation.md
@@ -6056,6 +6479,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: Future Direction
   url: "/discover/history/future-direction/"
   file: pages/discover/history/future-direction.md
@@ -6091,6 +6515,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Gavin Ferris
   url: "/people/gavin-ferris/"
   file: _people/gavin-ferris.md
@@ -6117,20 +6542,21 @@ records:
       - lowrisc
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: German Research Center for Artificial Intelligence (DFKI)
   url: "/organisations/german-research-center-for-artificial-intelligence-dfki/"
   file: _organisations/german-research-center-for-artificial-intelligence-dfki.md
   type: Organisation (detail)
   collection: organisations
-  has_image: false
-  image_status: placeholder
+  has_image: true
+  image_status: provided
   missing_news_date: false
   display_date:
   alternate: false
   alias_target:
   properties:
     title: German Research Center for Artificial Intelligence (DFKI)
-    image_url: "/assets/organisations/german-research-center-for-artificial-intelligence-dfki/placeholder.svg"
+    image_url: "/assets/organisations/german-research-center-for-artificial-intelligence-dfki/logo-source.png"
     website_url:
     membership_tier:
     is_founding_member:
@@ -6139,6 +6565,12 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
+    image_source:
+      source_page: https://www.dfki.de/en/web/
+      source_url: https://www-live.dfki.de/fileadmin/_processed_/d/f/csm_DFKI_Logo_Farbverlauf_8970221e55.png
+      retrieved_date: '2026-10-14'
+      sha256: bc225a2b4b654e97c0a0a84fd3a45f7dd906c764647e021a3a77aefd3f323f18
 - title: Glossary
   url: "/discover/resources/glossary/"
   file: pages/discover/resources/glossary.md
@@ -6172,6 +6604,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Goals
   url: "/reference/linux-roadmap/goals/index.html"
   file: pages/reference/linux-roadmap/goals/index.html.md
@@ -6203,6 +6636,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Google
   url: "/organisations/google/"
   file: _organisations/google.md
@@ -6225,6 +6659,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: Governance
   url: "/alliance/about-and-governance/governance/"
   file: pages/alliance/about-and-governance/governance.md
@@ -6259,6 +6694,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Governing Board
   url: "/alliance/leadership/governing-board/"
   file: pages/alliance/leadership/governing-board.md
@@ -6302,6 +6738,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Graeme Jenkinson
   url: "/people/graeme-jenkinson/"
   file: _people/graeme-jenkinson.md
@@ -6326,6 +6763,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Hamed Okhravi
   url: "/people/hamed-okhravi/"
   file: _people/hamed-okhravi.md
@@ -6350,6 +6788,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Hands-on Introduction to CHERI and CHERIoT
   url: "/events/cheri-blossoms-tutorial-2026/"
   file: _events/cheri-blossoms-tutorial-2026.md
@@ -6380,6 +6819,7 @@ records:
       - lowrisc
       academic-papers: []
     parent: "/events/"
+    layout: document
 - title: Hardware
   url: "/hardware/"
   file: pages/hardware.md
@@ -6425,6 +6865,7 @@ records:
       - sci-semiconductor
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Helper scripts
   url: "/reference/CHERI-seL4-Exercises/introduction/ccc.html"
   file: pages/reference/CHERI-seL4-Exercises/introduction/ccc.html.md
@@ -6456,6 +6897,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Hesham Almatary
   url: "/people/hesham-almatary/"
   file: _people/hesham-almatary.md
@@ -6483,6 +6925,7 @@ records:
       working-groups:
       - cheri-for-sel4
     parent: "/people/"
+    layout: document
 - title: Hildebrand
   url: "/organisations/hildebrand/"
   file: _organisations/hildebrand.md
@@ -6505,6 +6948,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: Hongyan Xia
   url: "/people/hongyan-xia/"
   file: _people/hongyan-xia.md
@@ -6529,6 +6973,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: How does CHERI work?
   url: "/discover/understand/how-does-cheri-work/"
   file: pages/discover/understand/how-does-cheri-work.md
@@ -6562,6 +7007,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Hugo Lefeuvre
   url: "/people/hugo-lefeuvre/"
   file: _people/hugo-lefeuvre.md
@@ -6586,6 +7032,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Hugo Vincent
   url: "/people/hugo-vincent/"
   file: _people/hugo-vincent.md
@@ -6610,6 +7057,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Hybrid Systems
   url: "/build/technology/hybrid-systems/"
   file: pages/build/technology/hybrid-systems.md
@@ -6644,6 +7092,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Ian Stark
   url: "/people/ian-stark/"
   file: _people/ian-stark.md
@@ -6668,6 +7117,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: 'ICENI: First Look'
   url: "/news/iceni-first-look/"
   file: _news/iceni-first-look.md
@@ -6696,6 +7146,7 @@ records:
       - simulators
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: Initial members join CHERI Alliance to drive adoption of memory safety and
     scalable software compartmentalization
   url: "/news/initial-members-join-cheri-alliance-to-drive-adoption-of-memory-safety-and-scalable-software-compartmentalization/"
@@ -6730,6 +7181,7 @@ records:
       - freebsd
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: 'Innovate UK Project Winner: University of Birmingham'
   url: "/news/innovate-uk-project-winner-university-of-birmingham-original/"
   file: _news/innovate-uk-project-winner-university-of-birmingham-original.md
@@ -6758,6 +7210,7 @@ records:
       - zephyr
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: 'Innovate UK Project Winner: University of Birmingham'
   url: "/news/innovate-uk-project-winner-university-of-birmingham/"
   file: _news/innovate-uk-project-winner-university-of-birmingham.md
@@ -6786,6 +7239,7 @@ records:
       - zephyr
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: Install a CHERI Toolchain
   url: "/guides/install-a-toolchain/"
   file: _guides/install-a-toolchain.md
@@ -6813,6 +7267,7 @@ records:
       - cheribsd
       - llvm-and-clang
     parent: "/guides/"
+    layout: document
 - title: Instituto Superior de Engenharia do Porto
   url: "/organisations/instituto-superior-de-engenharia-do-porto/"
   file: _organisations/instituto-superior-de-engenharia-do-porto.md
@@ -6835,6 +7290,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: Intellectual Property Policy
   url: "/policies/intellectual-property-policy/"
   file: _policies/intellectual-property-policy.md
@@ -6854,6 +7310,7 @@ records:
     document_date: 2024-08
     document_url: https://cheri-alliance.org/legal-ip-policy/
     parent: "/policies/"
+    layout: document
 - title: Introducing the CHERI Adoption Global Ecosystem Assessment Q1 2026
   url: "/news/introducing-the-cheri-adoption-global-ecosystem-assessment-q1-2026/"
   file: _news/introducing-the-cheri-adoption-global-ecosystem-assessment-q1-2026.md
@@ -6879,6 +7336,7 @@ records:
       software: []
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: Introduction
   url: "/reference/CHERI-seL4-Exercises/introduction/index.html"
   file: pages/reference/CHERI-seL4-Exercises/introduction/index.html.md
@@ -6910,6 +7368,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Introduction
   url: "/reference/linux-roadmap/intro.html"
   file: pages/reference/linux-roadmap/intro.html.md
@@ -6941,6 +7400,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: IoT & Embedded
   url: "/adopt/use-cases/iot-and-embedded/"
   file: pages/adopt/use-cases/iot-and-embedded.md
@@ -6976,6 +7436,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: IoTSF + TechWorks – Resilient IoT and Trustworthy AI Conferences
   url: "/news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences-original/"
   file: _news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences-original.md
@@ -7008,6 +7469,7 @@ records:
       software: []
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: IoTSF + TechWorks – Resilient IoT and Trustworthy AI Conferences
   url: "/news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences/"
   file: _news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences.md
@@ -7040,8 +7502,25 @@ records:
       software: []
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: It Is Time to Standardize Principles and Practices for Software Memory Safety
   url: "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+  file: pages/redirects/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md
+  type: Redirect
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target: "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+  properties:
+    title: It Is Time to Standardize Principles and Practices for Software Memory
+      Safety
+    permalink: "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+    layout: redirect
+- title: It Is Time to Standardize Principles and Practices for Software Memory Safety
+  url: "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
   file: _academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md
   type: Paper (detail)
   collection: academic-papers
@@ -7083,7 +7562,8 @@ records:
       working-groups: []
       hardware: []
       software: []
-    parent: "/papers/"
+    parent: "/academic-papers/"
+    layout: document
 - title: Javier Orensanz Martinez
   url: "/people/javier-orensanz-martinez/"
   file: _people/javier-orensanz-martinez.md
@@ -7109,6 +7589,7 @@ records:
       - lowrisc
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Jennifer Jackson
   url: "/people/jennifer-jackson/"
   file: _people/jennifer-jackson.md
@@ -7135,6 +7616,7 @@ records:
       working-groups:
       - cheri-zephyr
     parent: "/people/"
+    layout: document
 - title: Jeremy Singer
   url: "/people/jeremy-singer/"
   file: _people/jeremy-singer.md
@@ -7162,6 +7644,7 @@ records:
       working-groups:
       - cheri-virtual-machines
     parent: "/people/"
+    layout: document
 - title: Jessica Clarke
   url: "/people/jessica-clarke/"
   file: _people/jessica-clarke.md
@@ -7187,6 +7670,7 @@ records:
       - university-of-cambridge
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Jianyi Cheng
   url: "/people/jianyi-cheng/"
   file: _people/jianyi-cheng.md
@@ -7213,6 +7697,7 @@ records:
       - university-of-cambridge
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Jim Wallace
   url: "/people/jim-wallace/"
   file: _people/jim-wallace.md
@@ -7237,6 +7722,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Job Opportunities
   url: "/news-and-events/people-and-opportunities/job-opportunities/"
   file: pages/news-and-events/people-and-opportunities/job-opportunities.md
@@ -7270,6 +7756,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Johannes Kepler University Linz (JKU)
   url: "/organisations/johannes-kepler-university-linz/"
   file: _organisations/johannes-kepler-university-linz.md
@@ -7292,6 +7779,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: Johannes Müller
   url: "/people/johannes-muller/"
   file: _people/johannes-muller.md
@@ -7317,6 +7805,7 @@ records:
       - rptu
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: John Baldwin
   url: "/people/john-baldwin/"
   file: _people/john-baldwin.md
@@ -7342,6 +7831,7 @@ records:
       - ararat-river-consulting-llc
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: John Goodacre
   url: "/people/john-goodacre/"
   file: _people/john-goodacre.md
@@ -7368,6 +7858,7 @@ records:
       - the-university-of-manchester
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: John Thomson
   url: "/people/john-thomson/"
   file: _people/john-thomson.md
@@ -7393,6 +7884,7 @@ records:
       - lowrisc
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Jonathan Anderson
   url: "/people/jonathan-anderson/"
   file: _people/jonathan-anderson.md
@@ -7417,6 +7909,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Jonathan Woodruff
   url: "/people/jonathan-woodruff/"
   file: _people/jonathan-woodruff.md
@@ -7444,6 +7937,7 @@ records:
       working-groups:
       - cheri-research
     parent: "/people/"
+    layout: document
 - title: Joshua Lant
   url: "/people/joshua-lant/"
   file: _people/joshua-lant.md
@@ -7469,6 +7963,7 @@ records:
       - the-university-of-manchester
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Ka Wing Li
   url: "/people/ka-wing-li/"
   file: _people/ka-wing-li.md
@@ -7494,6 +7989,7 @@ records:
       - university-of-cambridge
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Kathleen Fisher
   url: "/people/kathleen-fisher/"
   file: _people/kathleen-fisher.md
@@ -7519,6 +8015,7 @@ records:
       - aria
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Kayvan Memarian
   url: "/people/kayvan-memarian/"
   file: _people/kayvan-memarian.md
@@ -7543,6 +8040,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Kernel support - CHERI Roadmap for Linux
   url: "/reference/linux-roadmap/goals/kernel.html"
   file: pages/reference/linux-roadmap/goals/kernel.html.md
@@ -7574,6 +8072,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Kevin Brodsky
   url: "/people/kevin-brodsky/"
   file: _people/kevin-brodsky.md
@@ -7599,6 +8098,7 @@ records:
       - arm
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Khilan Gudka
   url: "/people/khilan-gudka/"
   file: _people/khilan-gudka.md
@@ -7623,6 +8123,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: King Abdullah University of Science and Technology (KAUST)
   url: "/organisations/king-abdullah-university-of-science-and-technology-kaust/"
   file: _organisations/king-abdullah-university-of-science-and-technology-kaust.md
@@ -7645,6 +8146,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: Konrad Witaszczyk
   url: "/people/konrad-witaszczyk/"
   file: _people/konrad-witaszczyk.md
@@ -7669,6 +8171,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: KU Leuven
   url: "/organisations/ku-leuven/"
   file: _organisations/ku-leuven.md
@@ -7691,6 +8194,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: Kunyan Liu
   url: "/people/kunyan-liu/"
   file: _people/kunyan-liu.md
@@ -7715,6 +8219,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Kyndylan Nienhuis
   url: "/people/kyndylan-nienhuis/"
   file: _people/kyndylan-nienhuis.md
@@ -7739,26 +8244,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
-- title: Latest News
-  url: "/news-and-events/news-and-analysis/latest-news/"
-  file: pages/news-and-events/news-and-analysis/latest-news.md
-  type: News (list)
-  collection: pages
-  has_image: false
-  image_status: none
-  missing_news_date: false
-  display_date:
-  alternate: true
-  alias_target: "/news/"
-  properties:
-    title: Latest News
-    permalink: "/news-and-events/news-and-analysis/latest-news/"
-    layout: redirect
-    listing:
-      collection:
-      status:
-      role:
-    parent: "/news-and-events/"
+    layout: document
 - title: Latest News
   url: "/reference/source-versions/latest-news/"
   file: pages/reference/source-versions/latest-news.md
@@ -7790,6 +8276,27 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
+- title: Latest News
+  url: "/news-and-events/news-and-analysis/latest-news/"
+  file: pages/news-and-events/news-and-analysis/latest-news.md
+  type: News (list)
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: true
+  alias_target: "/news/"
+  properties:
+    title: Latest News
+    permalink: "/news-and-events/news-and-analysis/latest-news/"
+    layout: redirect
+    listing:
+      collection:
+      status:
+      role:
+    parent: "/news-and-events/"
 - title: Laurence Tratt
   url: "/people/laurence-tratt/"
   file: _people/laurence-tratt.md
@@ -7814,6 +8321,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Legal and Policies
   url: "/legal-and-policies/"
   file: pages/legal-and-policies.md
@@ -7845,6 +8353,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: redirect
 - title: Light Momentum Technology Corp.
   url: "/organisations/light-momentum-technology-corp/"
   file: _organisations/light-momentum-technology-corp.md
@@ -7867,6 +8376,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: Linux distributions - CHERI Roadmap for Linux
   url: "/reference/linux-roadmap/goals/distros.html"
   file: pages/reference/linux-roadmap/goals/distros.html.md
@@ -7898,6 +8408,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: LLVM & Clang
   url: "/software/llvm-and-clang/"
   file: _software/llvm-and-clang.md
@@ -7925,6 +8436,7 @@ records:
       software:
       - cheribsd
     parent: "/software/"
+    layout: document
 - title: Louis-Emile Ploix
   url: "/people/louis-emile-ploix/"
   file: _people/louis-emile-ploix.md
@@ -7950,6 +8462,7 @@ records:
       - lowrisc
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: lowRISC
   url: "/organisations/lowrisc/"
   file: _organisations/lowrisc.md
@@ -7972,6 +8485,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure
     Enclave with InnovateUK Support
   url: "/news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support-original/"
@@ -8002,6 +8516,7 @@ records:
       software: []
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure
     Enclave with InnovateUK Support
   url: "/news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support/"
@@ -8032,6 +8547,7 @@ records:
       software: []
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: lowRISC and SCI Semiconductor Release Sunburst Chip Repository for Secure
     Microcontroller Development
   url: "/news/lowrisc-and-sci-semiconductor-release-sunburst-chip-repository-for-secure-microcontroller-development/"
@@ -8060,6 +8576,7 @@ records:
       software: []
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: Luca Müller
   url: "/people/luca-muller/"
   file: _people/luca-muller.md
@@ -8085,6 +8602,7 @@ records:
       - german-research-center-for-artificial-intelligence-dfki
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Lucian Paul-Trifu
   url: "/people/lucian-paul-trifu/"
   file: _people/lucian-paul-trifu.md
@@ -8109,6 +8627,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Maika Föhrenbach
   url: "/people/maika-fohrenbach/"
   file: _people/maika-fohrenbach.md
@@ -8134,6 +8653,7 @@ records:
       - european-commission-dg-connect
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Manu Ravishankar
   url: "/people/manu-ravishankar/"
   file: _people/manu-ravishankar.md
@@ -8160,6 +8680,7 @@ records:
       - dsit
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Margo Seltzer
   url: "/people/margo-seltzer/"
   file: _people/margo-seltzer.md
@@ -8184,6 +8705,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Maricel Ventura
   url: "/people/maricel-ventura/"
   file: _people/maricel-ventura.md
@@ -8211,6 +8733,7 @@ records:
       working-groups:
       - cheri-plus-safety
     parent: "/people/"
+    layout: document
 - title: Mark Batty
   url: "/people/mark-batty/"
   file: _people/mark-batty.md
@@ -8237,6 +8760,7 @@ records:
       - ukri
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Mark Hill
   url: "/people/mark-hill/"
   file: _people/mark-hill.md
@@ -8262,6 +8786,7 @@ records:
       - codasip
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Mark Johnston
   url: "/people/mark-johnston/"
   file: _people/mark-johnston.md
@@ -8286,6 +8811,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Marno van der Maas
   url: "/people/marno-van-der-maas/"
   file: _people/marno-van-der-maas.md
@@ -8313,6 +8839,7 @@ records:
       working-groups:
       - repository-management
     parent: "/people/"
+    layout: document
 - title: Martin Atkins
   url: "/people/martin-atkins/"
   file: _people/martin-atkins.md
@@ -8338,6 +8865,7 @@ records:
       - mission-critical-applications-limited
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Matthew Naylor
   url: "/people/matthew-naylor/"
   file: _people/matthew-naylor.md
@@ -8362,26 +8890,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
-- title: Members
-  url: "/alliance/leadership/members/"
-  file: pages/alliance/leadership/members.md
-  type: Organisations (list)
-  collection: pages
-  has_image: false
-  image_status: none
-  missing_news_date: false
-  display_date:
-  alternate: false
-  alias_target:
-  properties:
-    title: Members
-    permalink: "/alliance/leadership/members/"
-    layout: list
-    listing:
-      collection: organisations
-      status:
-      role:
-    parent: "/alliance/"
+    layout: document
 - title: Members
   url: "/reference/source-versions/members/"
   file: pages/reference/source-versions/members.md
@@ -8416,6 +8925,27 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
+- title: Members
+  url: "/alliance/leadership/members/"
+  file: pages/alliance/leadership/members.md
+  type: Organisations (list)
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target:
+  properties:
+    title: Members
+    permalink: "/alliance/leadership/members/"
+    layout: list
+    listing:
+      collection: organisations
+      status:
+      role:
+    parent: "/alliance/"
 - title: Membership Benefits & Options
   url: "/alliance/membership/membership-benefits-and-options/"
   file: pages/alliance/membership/membership-benefits-and-options.md
@@ -8452,6 +8982,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Merve Gülmez
   url: "/people/merve-gulmez/"
   file: _people/merve-gulmez.md
@@ -8478,6 +9009,7 @@ records:
       - ku-leuven
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Michael Roe
   url: "/people/michael-roe/"
   file: _people/michael-roe.md
@@ -8502,20 +9034,21 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Microservice Store
   url: "/organisations/microservice-store/"
   file: _organisations/microservice-store.md
   type: Organisation (detail)
   collection: organisations
-  has_image: false
-  image_status: placeholder
+  has_image: true
+  image_status: provided
   missing_news_date: false
   display_date:
   alternate: false
   alias_target:
   properties:
     title: Microservice Store
-    image_url: "/assets/organisations/microservice-store/placeholder.svg"
+    image_url: "/assets/organisations/microservice-store/logo-source.png"
     website_url:
     membership_tier:
     is_founding_member:
@@ -8524,6 +9057,12 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
+    image_source:
+      source_page: https://www.microservicestore.com/
+      source_url: https://static.wixstatic.com/media/0cfa32_26f4cf7af1484dd1930bc4f91ab192b1~mv2.png
+      retrieved_date: '2026-10-14'
+      sha256: 345e665ff246f83055008b6ff416fd1918d1783afc3c3c3da7d60f173e2d05f1
 - title: Mihai Ordean
   url: "/people/mihai-ordean/"
   file: _people/mihai-ordean.md
@@ -8548,6 +9087,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Mike Eftimakis
   url: "/people/mike-eftimakis/"
   file: _people/mike-eftimakis.md
@@ -8576,6 +9116,7 @@ records:
       - certification-working-group
       - promotion-and-ambassador-program
     parent: "/people/"
+    layout: document
 - title: Mike Halsall
   url: "/people/mike-halsall/"
   file: _people/mike-halsall.md
@@ -8601,20 +9142,21 @@ records:
       - cheri-alliance
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Minerva Systems
   url: "/organisations/minerva-systems/"
   file: _organisations/minerva-systems.md
   type: Organisation (detail)
   collection: organisations
-  has_image: false
-  image_status: placeholder
+  has_image: true
+  image_status: provided
   missing_news_date: false
   display_date:
   alternate: false
   alias_target:
   properties:
     title: Minerva Systems
-    image_url: "/assets/organisations/minerva-systems/placeholder.svg"
+    image_url: "/assets/organisations/minerva-systems/logo-source.svg"
     website_url:
     membership_tier:
     is_founding_member:
@@ -8623,6 +9165,12 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
+    image_source:
+      source_page: https://www.minervasys.tech/
+      source_url: https://www.minervasys.tech/#header-logo
+      retrieved_date: '2026-10-14'
+      sha256: 68e79b2485ecc073eada26acc22a3b53f2d3fd105c3fa10ca15478f88df406e8
 - title: MISRA
   url: "/organisations/misra/"
   file: _organisations/misra.md
@@ -8645,6 +9193,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: Mission & Role
   url: "/alliance/about-and-governance/mission-and-role/"
   file: pages/alliance/about-and-governance/mission-and-role.md
@@ -8678,20 +9227,21 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Mission Critical Applications Limited
   url: "/organisations/mission-critical-applications-limited/"
   file: _organisations/mission-critical-applications-limited.md
   type: Organisation (detail)
   collection: organisations
-  has_image: false
-  image_status: placeholder
+  has_image: true
+  image_status: provided
   missing_news_date: false
   display_date:
   alternate: false
   alias_target:
   properties:
     title: Mission Critical Applications Limited
-    image_url: "/assets/organisations/mission-critical-applications-limited/placeholder.svg"
+    image_url: "/assets/organisations/mission-critical-applications-limited/logo-source.svg"
     website_url:
     membership_tier:
     is_founding_member:
@@ -8700,6 +9250,12 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
+    image_source:
+      source_page: https://www.mca-ltd.com/
+      source_url: https://www.mca-ltd.com/images/MCA_logo_black.svg
+      retrieved_date: '2026-10-14'
+      sha256: 7248790491bec7bca09b830ce5bb95d690b37a1cb666fb1741bd23e3aee6c1bc
 - title: Morello
   url: "/hardware/morello/"
   file: _hardware/morello.md
@@ -8731,6 +9287,7 @@ records:
       - cheribsd
       - llvm-and-clang
     parent: "/hardware/"
+    layout: document
 - title: Morello History
   url: "/discover/history/morello-history/"
   file: pages/discover/history/morello-history.md
@@ -8765,6 +9322,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: 'Morello: a complete experimental stack'
   url: "/case-studies/morello/"
   file: _case-studies/morello.md
@@ -8789,6 +9347,7 @@ records:
       reports: []
     summary: CHERI at application and server scale
     parent: "/case-studies/"
+    layout: document
 - title: Munraj Vadera
   url: "/people/munraj-vadera/"
   file: _people/munraj-vadera.md
@@ -8813,6 +9372,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Murali Vijayaraghavan
   url: "/people/murali-vijayaraghavan/"
   file: _people/murali-vijayaraghavan.md
@@ -8839,6 +9399,7 @@ records:
       working-groups:
       - mmu-less-systems
     parent: "/people/"
+    layout: document
 - title: Murat Cakmak
   url: "/people/murat-cakmak/"
   file: _people/murat-cakmak.md
@@ -8864,6 +9425,7 @@ records:
       - microservice-store
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Nathaniel Wesley Filardo
   url: "/people/nathaniel-wesley-filardo/"
   file: _people/nathaniel-wesley-filardo.md
@@ -8888,6 +9450,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: National Taiwan University
   url: "/organisations/national-taiwan-university/"
   file: _organisations/national-taiwan-university.md
@@ -8910,6 +9473,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: NCSC
   url: "/organisations/ncsc/"
   file: _organisations/ncsc.md
@@ -8932,6 +9496,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: New InnovateUK-funded project to merge CHERI support into FreeBSD
   url: "/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd-original/"
   file: _news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd-original.md
@@ -8968,6 +9533,7 @@ records:
       - freebsd
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: New InnovateUK-funded project to merge CHERI support into FreeBSD
   url: "/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd/"
   file: _news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd.md
@@ -9004,6 +9570,7 @@ records:
       - freebsd
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: News
   url: "/news/"
   file: pages/news.md
@@ -9066,6 +9633,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Novomorphic
   url: "/organisations/novomorphic/"
   file: _organisations/novomorphic.md
@@ -9088,6 +9656,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: NquiringMinds
   url: "/organisations/nquiringminds/"
   file: _organisations/nquiringminds.md
@@ -9110,6 +9679,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: Oliver Gray
   url: "/people/oliver-gray/"
   file: _people/oliver-gray.md
@@ -9137,6 +9707,7 @@ records:
       working-groups:
       - cheri-freertos
     parent: "/people/"
+    layout: document
 - title: Ollie Whitehouse
   url: "/people/ollie-whitehouse/"
   file: _people/ollie-whitehouse.md
@@ -9162,6 +9733,7 @@ records:
       - ncsc
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: One Bug is All It Takes
   url: "/news/one-bug-is-all-it-takes/"
   file: _news/one-bug-is-all-it-takes.md
@@ -9187,6 +9759,7 @@ records:
       - freebsd
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: Organisations
   url: "/organisations/"
   file: pages/organisations.md
@@ -9229,6 +9802,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: Page moved
   url: "/alliance/build/"
   file: pages/native-redirects/build.md
@@ -9260,6 +9834,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Page moved
   url: "/contact/"
   file: pages/native-redirects/contact.md
@@ -9291,6 +9866,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Page moved
   url: "/members/"
   file: pages/native-redirects/members.md
@@ -9322,6 +9898,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Page moved
   url: "/speakers/"
   file: pages/native-redirects/speakers.md
@@ -9353,6 +9930,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Page moved
   url: "/subscribe/"
   file: pages/native-redirects/subscribe.md
@@ -9384,6 +9962,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Page not found
   url: "/404.html"
   file: pages/404.md
@@ -9415,9 +9994,10 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Papers
-  url: "/papers/"
-  file: pages/papers.md
+  url: "/academic-papers/"
+  file: pages/academic-papers.md
   type: Papers (list)
   collection: pages
   has_image: false
@@ -9428,12 +10008,27 @@ records:
   alias_target:
   properties:
     title: Papers
-    permalink: "/papers/"
+    permalink: "/academic-papers/"
     layout: list
     listing:
       collection: academic-papers
       status:
       role:
+- title: Papers
+  url: "/papers/"
+  file: pages/papers.md
+  type: Redirect
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target: "/academic-papers/"
+  properties:
+    title: Papers
+    permalink: "/papers/"
+    layout: redirect
     parent: "/discover/"
 - title: Parvat Infotech
   url: "/organisations/parvat-infotech/"
@@ -9457,26 +10052,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
-- title: Past Events
-  url: "/news-and-events/events-and-archive/past-events/"
-  file: pages/news-and-events/events-and-archive/past-events.md
-  type: Events (list)
-  collection: pages
-  has_image: false
-  image_status: none
-  missing_news_date: false
-  display_date:
-  alternate: false
-  alias_target:
-  properties:
-    title: Past Events
-    permalink: "/news-and-events/events-and-archive/past-events/"
-    layout: events
-    listing:
-      collection:
-      status: past
-      role:
-    parent: "/news-and-events/"
+    layout: document
 - title: Past Events
   url: "/reference/source-versions/past-events/"
   file: pages/reference/source-versions/past-events.md
@@ -9512,6 +10088,27 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
+- title: Past Events
+  url: "/news-and-events/events-and-archive/past-events/"
+  file: pages/news-and-events/events-and-archive/past-events.md
+  type: Events (list)
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target:
+  properties:
+    title: Past Events
+    permalink: "/news-and-events/events-and-archive/past-events/"
+    layout: events
+    listing:
+      collection:
+      status: past
+      role:
+    parent: "/news-and-events/"
 - title: Paul Metzger
   url: "/people/paul-metzger/"
   file: _people/paul-metzger.md
@@ -9538,6 +10135,7 @@ records:
       - university-of-edinburgh
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Paul Waller
   url: "/people/paul-waller/"
   file: _people/paul-waller.md
@@ -9563,6 +10161,7 @@ records:
       - ncsc
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: People
   url: "/people/"
   file: pages/people.md
@@ -9617,6 +10216,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Peter Cox
   url: "/people/peter-cox/"
   file: _people/peter-cox.md
@@ -9643,6 +10243,7 @@ records:
       - dstl
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Peter G. Neumann
   url: "/people/peter-g-neumann/"
   file: _people/peter-g-neumann.md
@@ -9667,6 +10268,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Peter Rugg
   url: "/people/peter-rugg/"
   file: _people/peter-rugg.md
@@ -9691,6 +10293,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Peter Sewell
   url: "/people/peter-sewell/"
   file: _people/peter-sewell.md
@@ -9715,6 +10318,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Phil Day
   url: "/people/phil-day/"
   file: _people/phil-day.md
@@ -9740,6 +10344,7 @@ records:
       - configured-things
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Platform Comparison
   url: "/build/platforms/platform-comparison/"
   file: pages/build/platforms/platform-comparison.md
@@ -9773,6 +10378,7 @@ records:
       guides:
       - choose-a-platform
       policies: []
+    layout: document
 - title: Policies
   url: "/policies/"
   file: pages/policies.md
@@ -9809,6 +10415,7 @@ records:
     image_url: "/assets/policies/policy-briefings/placeholder.svg"
     author:
     parent: "/policies/"
+    layout: document
 - title: Port Existing Software
   url: "/guides/port-existing-software/"
   file: _guides/port-existing-software.md
@@ -9831,6 +10438,7 @@ records:
       hardware: []
       software: []
     parent: "/guides/"
+    layout: document
 - title: Porting Status
   url: "/software/porting-status/"
   file: _software/porting-status.md
@@ -9860,6 +10468,7 @@ records:
       - zephyr
       - rust
     parent: "/software/"
+    layout: document
 - title: Press Resources
   url: "/news-and-events/news-and-analysis/press-resources/"
   file: pages/news-and-events/news-and-analysis/press-resources.md
@@ -9892,6 +10501,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Press Resources
   url: "/news/press/"
   file: pages/news/press.md
@@ -9923,6 +10533,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Prior work on Linux adaptation
   url: "/reference/linux-roadmap/prior-work.html"
   file: pages/reference/linux-roadmap/prior-work.html.md
@@ -9954,6 +10565,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Privacy
   url: "/policies/privacy/"
   file: _policies/privacy.md
@@ -9970,6 +10582,7 @@ records:
     image_url: "/assets/policies/privacy/placeholder.svg"
     author:
     parent: "/policies/"
+    layout: document
 - title: Privacy policy
   url: "/policies/privacy-policy/"
   file: _policies/privacy-policy.md
@@ -9986,6 +10599,7 @@ records:
     image_url: "/assets/policies/privacy-policy/placeholder.svg"
     author:
     parent: "/policies/"
+    layout: document
 - title: Procurement
   url: "/adopt/assurance-and-adoption/procurement/"
   file: pages/adopt/assurance-and-adoption/procurement.md
@@ -10022,6 +10636,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Provenance
   url: "/build/technology/provenance/"
   file: pages/build/technology/provenance.md
@@ -10056,6 +10671,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Public Policy and CHERI
   url: "/adopt/policy/government-guidance/"
   file: pages/adopt/policy/government-guidance.md
@@ -10089,6 +10705,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Pure-Capability Systems
   url: "/build/technology/pure-capability-systems/"
   file: pages/build/technology/pure-capability-systems.md
@@ -10123,6 +10740,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Real-Time Operating Systems
   url: "/software/real-time-operating-systems/"
   file: _software/real-time-operating-systems.md
@@ -10148,6 +10766,7 @@ records:
       software:
       - zephyr
     parent: "/software/"
+    layout: document
 - title: Recent advances in CHERI enhancing stability, maturity, and accessibility
     as urged by the UK’s DSTL
   url: "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl-original/"
@@ -10188,6 +10807,7 @@ records:
       - llvm-and-clang
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: Recent advances in CHERI enhancing stability, maturity, and accessibility
     as urged by the UK’s DSTL
   url: "/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl/"
@@ -10228,6 +10848,7 @@ records:
       - llvm-and-clang
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: Reports & White Papers
   url: "/discover/resources/reports-and-white-papers/"
   file: pages/discover/resources/reports-and-white-papers.md
@@ -10250,7 +10871,7 @@ records:
     related:
       pages:
       - "/discover/resources/specifications/"
-      - "/papers/"
+      - "/academic-papers/"
       people: []
       organisations: []
       working-groups: []
@@ -10261,6 +10882,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: redirect
 - title: Reports & White Papers
   url: "/reports/"
   file: pages/reports.md
@@ -10285,7 +10907,7 @@ records:
     related:
       pages:
       - "/discover/resources/specifications/"
-      - "/papers/"
+      - "/academic-papers/"
       people: []
       organisations: []
       working-groups: []
@@ -10327,6 +10949,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Rheinland-Pfälzische Technische Universität Kaiserslautern-Landau (RPTU)
   url: "/organisations/rptu/"
   file: _organisations/rptu.md
@@ -10349,6 +10972,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: Ricardo Almeida
   url: "/people/ricardo-almeida/"
   file: _people/ricardo-almeida.md
@@ -10373,6 +10997,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Richard Grisenthwaite
   url: "/people/richard-grisenthwaite/"
   file: _people/richard-grisenthwaite.md
@@ -10397,9 +11022,27 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: 'Rigorous Engineering for Hardware Security: Formal Modelling and Proof in
     the CHERI Design and Implementation Process'
   url: "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
+  file: pages/redirects/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md
+  type: Redirect
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target: "/academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
+  properties:
+    title: 'Rigorous Engineering for Hardware Security: Formal Modelling and Proof
+      in the CHERI Design and Implementation Process'
+    permalink: "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
+    layout: redirect
+- title: 'Rigorous Engineering for Hardware Security: Formal Modelling and Proof in
+    the CHERI Design and Implementation Process'
+  url: "/academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
   file: _academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md
   type: Paper (detail)
   collection: academic-papers
@@ -10433,7 +11076,8 @@ records:
       working-groups: []
       hardware: []
       software: []
-    parent: "/papers/"
+    parent: "/academic-papers/"
+    layout: document
 - title: RISC-V and Embedded Development
   url: "/discover/history/risc-v-and-embedded-development/"
   file: pages/discover/history/risc-v-and-embedded-development.md
@@ -10468,20 +11112,21 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: RISC-V International
   url: "/organisations/risc-v-international/"
   file: _organisations/risc-v-international.md
   type: Organisation (detail)
   collection: organisations
-  has_image: false
-  image_status: placeholder
+  has_image: true
+  image_status: provided
   missing_news_date: false
   display_date:
   alternate: false
   alias_target:
   properties:
     title: RISC-V International
-    image_url: "/assets/organisations/risc-v-international/placeholder.svg"
+    image_url: "/assets/organisations/risc-v-international/logo-source.svg"
     website_url:
     membership_tier:
     is_founding_member:
@@ -10490,6 +11135,12 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
+    image_source:
+      source_page: https://riscv.org/
+      source_url: https://riscv.org/wp-content/uploads/2024/08/riscv-color.svg
+      retrieved_date: '2026-10-14'
+      sha256: 47ddb2284a82e47007281472f5b5c42ebbfa1fe73eafe5ae021b46fc48384a11
 - title: Robert M. Norton
   url: "/people/robert-m-norton/"
   file: _people/robert-m-norton.md
@@ -10514,6 +11165,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Robert Norton-Wright
   url: "/people/robert-norton-wright/"
   file: _people/robert-norton-wright.md
@@ -10538,6 +11190,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Robert Watson
   url: "/people/robert-watson/"
   file: _people/robert-watson.md
@@ -10565,6 +11218,7 @@ records:
       - freebsd-foundation
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Run CHERI in Simulation
   url: "/guides/run-cheri-in-simulation/"
   file: _guides/run-cheri-in-simulation.md
@@ -10590,6 +11244,7 @@ records:
       software:
       - cheribsd
     parent: "/guides/"
+    layout: document
 - title: Rust
   url: "/software/rust/"
   file: _software/rust.md
@@ -10617,6 +11272,7 @@ records:
       - llvm-and-clang
       - cheribsd
     parent: "/software/"
+    layout: document
 - title: Saar Amar
   url: "/people/saar-amar/"
   file: _people/saar-amar.md
@@ -10641,6 +11297,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Safety-Critical Systems
   url: "/adopt/use-cases/safety-critical-systems/"
   file: pages/adopt/use-cases/safety-critical-systems.md
@@ -10676,6 +11333,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Sam Ainsworth
   url: "/people/sam-ainsworth/"
   file: _people/sam-ainsworth.md
@@ -10700,6 +11358,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Sam Cater
   url: "/people/sam-cater/"
   file: _people/sam-cater.md
@@ -10725,6 +11384,7 @@ records:
       - bt-group
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Samuel Stark
   url: "/people/samuel-stark/"
   file: _people/samuel-stark.md
@@ -10750,6 +11410,7 @@ records:
       - university-of-cambridge
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Sarah Harris
   url: "/people/sarah-harris/"
   file: _people/sarah-harris.md
@@ -10777,6 +11438,7 @@ records:
       working-groups:
       - rust-plus-cheri
     parent: "/people/"
+    layout: document
 - title: SCI Semiconductor
   url: "/organisations/sci-semiconductor/"
   file: _organisations/sci-semiconductor.md
@@ -10799,6 +11461,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: SCI Semiconductor and the CHERI Alliance at RISC-V Summit in China, July
     2025
   url: "/news/sci-semiconductor-and-the-cheri-alliance-at-risc-v-summit-in-china-july-2025/"
@@ -10831,6 +11494,7 @@ records:
       software: []
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: Sealing
   url: "/build/technology/sealing/"
   file: pages/build/technology/sealing.md
@@ -10865,6 +11529,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Secure and Resilient Systems in the Era of CRA and IoT
   url: "/news/secure-and-resilient-systems-in-the-era-of-cra-and-iot/"
   file: _news/secure-and-resilient-systems-in-the-era-of-cra-and-iot.md
@@ -10888,6 +11553,7 @@ records:
       software: []
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: Selected CHERI research papers - CHERI Roadmap for Linux
   url: "/reference/linux-roadmap/research.html"
   file: pages/reference/linux-roadmap/research.html.md
@@ -10919,6 +11585,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Sensor IT
   url: "/organisations/sensor-it/"
   file: _organisations/sensor-it.md
@@ -10941,6 +11608,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: Several CHERI Alliance members win the DSbD competition to deliver new CHERI
     chips and software
   url: "/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software-original/"
@@ -10977,6 +11645,7 @@ records:
       software: []
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: Several CHERI Alliance members win the DSbD competition to deliver new CHERI
     chips and software
   url: "/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software/"
@@ -11013,6 +11682,7 @@ records:
       software: []
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: Siemens
   url: "/organisations/siemens/"
   file: _organisations/siemens.md
@@ -11035,6 +11705,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: 'Siemens Joins the CHERI Alliance: a United Front for Cutting-Edge Cybersecurity'
   url: "/news/siemens-joins-the-cheri-alliance-a-united-front-for-cutting-edge-cybersecurity/"
   file: _news/siemens-joins-the-cheri-alliance-a-united-front-for-cutting-edge-cybersecurity.md
@@ -11060,6 +11731,7 @@ records:
       software: []
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: Simon Moore
   url: "/people/simon-moore/"
   file: _people/simon-moore.md
@@ -11085,6 +11757,7 @@ records:
       - university-of-cambridge
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Simulators
   url: "/software/simulators/"
   file: _software/simulators.md
@@ -11111,6 +11784,7 @@ records:
       software:
       - cheribsd
     parent: "/software/"
+    layout: document
 - title: Skills Development Exercises
   url: "/reference/CHERI-seL4-Exercises/exercises/index.html"
   file: pages/reference/CHERI-seL4-Exercises/exercises/index.html.md
@@ -11142,20 +11816,21 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Smart Information Flow Technologies (SIFT)
   url: "/organisations/smart-information-flow-technologies-sift/"
   file: _organisations/smart-information-flow-technologies-sift.md
   type: Organisation (detail)
   collection: organisations
-  has_image: false
-  image_status: placeholder
+  has_image: true
+  image_status: provided
   missing_news_date: false
   display_date:
   alternate: false
   alias_target:
   properties:
     title: Smart Information Flow Technologies (SIFT)
-    image_url: "/assets/organisations/smart-information-flow-technologies-sift/placeholder.svg"
+    image_url: "/assets/organisations/smart-information-flow-technologies-sift/logo-source.png"
     website_url:
     membership_tier:
     is_founding_member:
@@ -11164,6 +11839,12 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
+    image_source:
+      source_page: https://www.sift.net/
+      source_url: https://www.sift.net/sites/all/themes/venture_theme/logo.png
+      retrieved_date: '2026-10-14'
+      sha256: 8a8924a2a18266a2b1108d357575c3457fd448f4bfadfd58336f26d993d36ffc
 - title: Software
   url: "/software/"
   file: pages/software.md
@@ -11220,6 +11901,7 @@ records:
       guides:
       - choose-a-platform
       policies: []
+    layout: document
 - title: Software runs our world. It deserves stronger security foundations.
   url: "/reference/source-versions/home/"
   file: pages/reference/source-versions/home.md
@@ -11254,6 +11936,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Software runs our world. It deserves stronger security foundations.
   url: "/"
   file: pages/index.md
@@ -11298,6 +11981,7 @@ records:
       - cheriot
       software: []
     parent: "/hardware/"
+    layout: document
 - title: Spatial Memory Safety
   url: "/build/technology/spatial-memory-safety/"
   file: pages/build/technology/spatial-memory-safety.md
@@ -11332,26 +12016,7 @@ records:
       software: []
       guides: []
       policies: []
-- title: Speakers
-  url: "/news-and-events/people-and-opportunities/speakers/"
-  file: pages/news-and-events/people-and-opportunities/speakers.md
-  type: People (list)
-  collection: pages
-  has_image: false
-  image_status: none
-  missing_news_date: false
-  display_date:
-  alternate: false
-  alias_target:
-  properties:
-    title: Speakers
-    permalink: "/news-and-events/people-and-opportunities/speakers/"
-    layout: people
-    listing:
-      collection:
-      status:
-      role: speaker
-    parent: "/news-and-events/"
+    layout: document
 - title: Speakers
   url: "/reference/source-versions/speakers/"
   file: pages/reference/source-versions/speakers.md
@@ -11387,6 +12052,27 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
+- title: Speakers
+  url: "/news-and-events/people-and-opportunities/speakers/"
+  file: pages/news-and-events/people-and-opportunities/speakers.md
+  type: People (list)
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target:
+  properties:
+    title: Speakers
+    permalink: "/news-and-events/people-and-opportunities/speakers/"
+    layout: people
+    listing:
+      collection:
+      status:
+      role: speaker
+    parent: "/news-and-events/"
 - title: Specifications
   url: "/discover/resources/specifications/"
   file: pages/discover/resources/specifications.md
@@ -11418,6 +12104,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: SRI
   url: "/organisations/sri/"
   file: _organisations/sri.md
@@ -11440,6 +12127,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: Stacey Son
   url: "/people/stacey-son/"
   file: _people/stacey-son.md
@@ -11464,6 +12152,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Steven J. Murdoch
   url: "/people/steven-j-murdoch/"
   file: _people/steven-j-murdoch.md
@@ -11488,6 +12177,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: 'Streamlining the CHERI Ecosystem: An Update from the Repository Management
     Working Group'
   url: "/news/streamlining-the-cheri-ecosystem-an-update-from-the-repository-management-working-group/"
@@ -11516,6 +12206,7 @@ records:
       software: []
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: Subscribe to our quarterly newsletter
   url: "/reference/source-versions/newsletter/"
   file: pages/reference/source-versions/newsletter.md
@@ -11548,6 +12239,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Subscribe to our quarterly newsletter
   url: "/news-and-events/news-and-analysis/subscribe-newsletter/"
   file: pages/news-and-events/news-and-analysis/subscribe-newsletter.md
@@ -11580,6 +12272,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Swansea University
   url: "/organisations/swansea-university/"
   file: _organisations/swansea-university.md
@@ -11602,6 +12295,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: Tags & Validity
   url: "/build/technology/tags-and-validity/"
   file: pages/build/technology/tags-and-validity.md
@@ -11635,6 +12329,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Tariq Kurd
   url: "/people/tariq-kurd/"
   file: _people/tariq-kurd.md
@@ -11661,6 +12356,7 @@ records:
       - risc-v-international
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Technical FAQ
   url: "/guides/technical-faq/"
   file: _guides/technical-faq.md
@@ -11691,6 +12387,7 @@ records:
       - cheribsd
       - freebsd
     parent: "/guides/"
+    layout: document
 - title: Technical Reports - CHERI Roadmap for Linux
   url: "/reference/linux-roadmap/techreports.html"
   file: pages/reference/linux-roadmap/techreports.html.md
@@ -11722,6 +12419,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: TechWorks
   url: "/organisations/techworks/"
   file: _organisations/techworks.md
@@ -11744,6 +12442,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: Temporal Memory Safety
   url: "/build/technology/temporal-memory-safety/"
   file: pages/build/technology/temporal-memory-safety.md
@@ -11778,6 +12477,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Testing - CHERI Roadmap for Linux
   url: "/reference/linux-roadmap/goals/testing.html"
   file: pages/reference/linux-roadmap/goals/testing.html.md
@@ -11809,9 +12509,27 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: The Arm Morello Evaluation Platform—Validating CHERI-Based Security in a
     High-Performance System
   url: "/papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/"
+  file: pages/redirects/papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa.md
+  type: Redirect
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target: "/academic-papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/"
+  properties:
+    title: The Arm Morello Evaluation Platform—Validating CHERI-Based Security in
+      a High-Performance System
+    permalink: "/papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/"
+    layout: redirect
+- title: The Arm Morello Evaluation Platform—Validating CHERI-Based Security in a
+    High-Performance System
+  url: "/academic-papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/"
   file: _academic-papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa.md
   type: Paper (detail)
   collection: academic-papers
@@ -11839,7 +12557,8 @@ records:
       hardware:
       - morello
       software: []
-    parent: "/papers/"
+    parent: "/academic-papers/"
+    layout: document
 - title: The Capable Hub
   url: "/organisations/the-capable-hub/"
   file: _organisations/the-capable-hub.md
@@ -11862,6 +12581,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: The Capable Hub joins the CHERI Alliance to accelerate cybersecurity collaboration
   url: "/news/the-capable-hub-joins-the-cheri-alliance-to-accelerate-cybersecurity-collaboration/"
   file: _news/the-capable-hub-joins-the-cheri-alliance-to-accelerate-cybersecurity-collaboration.md
@@ -11888,8 +12608,24 @@ records:
       software: []
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: 'The CHERI Capability Model: Revisiting RISC in an Age of Risk'
   url: "/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/"
+  file: pages/redirects/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk.md
+  type: Redirect
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target: "/academic-papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/"
+  properties:
+    title: 'The CHERI Capability Model: Revisiting RISC in an Age of Risk'
+    permalink: "/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/"
+    layout: redirect
+- title: 'The CHERI Capability Model: Revisiting RISC in an Age of Risk'
+  url: "/academic-papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/"
   file: _academic-papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk.md
   type: Paper (detail)
   collection: academic-papers
@@ -11919,7 +12655,8 @@ records:
       working-groups: []
       hardware: []
       software: []
-    parent: "/papers/"
+    parent: "/academic-papers/"
+    layout: document
 - title: The CHERI Enabled Programme
   url: "/adopt/assurance-and-adoption/about-cheri-enabled/"
   file: pages/adopt/assurance-and-adoption/about-cheri-enabled.md
@@ -11951,6 +12688,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: The Cost of Memory Unsafety
   url: "/adopt/business-case/cost-of-memory-unsafety/"
   file: pages/adopt/business-case/cost-of-memory-unsafety.md
@@ -11983,6 +12721,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: The Cost of Memory Unsafety
   url: "/reference/source-versions/cost-of-memory-unsafety/"
   file: pages/reference/source-versions/cost-of-memory-unsafety.md
@@ -12015,6 +12754,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: 'The EU Cyber Resilience Act: What It Means for Secure-by-Design Systems
     and CHERI'
   url: "/news/the-eu-cyber-resilience-act-what-it-means-for-secure-by-design-systems-and-cheri/"
@@ -12041,20 +12781,21 @@ records:
       software: []
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: The Good Penguin
   url: "/organisations/the-good-penguin/"
   file: _organisations/the-good-penguin.md
   type: Organisation (detail)
   collection: organisations
-  has_image: false
-  image_status: placeholder
+  has_image: true
+  image_status: provided
   missing_news_date: false
   display_date:
   alternate: false
   alias_target:
   properties:
     title: The Good Penguin
-    image_url: "/assets/organisations/the-good-penguin/placeholder.svg"
+    image_url: "/assets/organisations/the-good-penguin/logo-source.png"
     website_url:
     membership_tier:
     is_founding_member:
@@ -12063,6 +12804,12 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
+    image_source:
+      source_page: https://www.thegoodpenguin.co.uk/
+      source_url: https://www.thegoodpenguin.co.uk/wp-content/uploads/2020/07/thegoodpenguinstacklogo.png
+      retrieved_date: '2026-10-14'
+      sha256: 3450f579249d9bd4680428d044dca05e7df4d55abcfd99ca055eb039554d4f3f
 - title: The History of CHERI
   url: "/discover/understand/cheri-history/"
   file: pages/discover/understand/cheri-history.md
@@ -12095,6 +12842,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: The leading Root-of-Trust now integrates CHERI security technology
   url: "/news/the-leading-root-of-trust-now-integrates-cheri-security-technology/"
   file: _news/the-leading-root-of-trust-now-integrates-cheri-security-technology.md
@@ -12121,6 +12869,7 @@ records:
       software: []
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: The Return on Security Investment
   url: "/adopt/business-case/return-on-security-investment/"
   file: pages/adopt/business-case/return-on-security-investment.md
@@ -12154,6 +12903,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: The Strategic Case for CHERI
   url: "/adopt/business-case/the-business-case/"
   file: pages/adopt/business-case/the-business-case.md
@@ -12186,6 +12936,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: The University of Manchester
   url: "/organisations/the-university-of-manchester/"
   file: _organisations/the-university-of-manchester.md
@@ -12208,6 +12959,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: The White House promotes CHERI as a solution for memory safety
   url: "/news/the-white-house-promotes-cheri-as-a-solution-for-memory-safety/"
   file: _news/the-white-house-promotes-cheri-as-a-solution-for-memory-safety.md
@@ -12231,6 +12983,7 @@ records:
       software: []
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: Thierno Sene
   url: "/people/thierno-sene/"
   file: _people/thierno-sene.md
@@ -12258,6 +13011,7 @@ records:
       working-groups:
       - cheri-plus-safety
     parent: "/people/"
+    layout: document
 - title: Thomas Bauereiss
   url: "/people/thomas-bauereiss/"
   file: _people/thomas-bauereiss.md
@@ -12282,6 +13036,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Thomas Nyman
   url: "/people/thomas-nyman/"
   file: _people/thomas-nyman.md
@@ -12307,6 +13062,7 @@ records:
       - ericsson
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Timothy M. Jones
   url: "/people/timothy-m-jones/"
   file: _people/timothy-m-jones.md
@@ -12331,6 +13087,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: toc.html
   url: "/reference/linux-roadmap/toc.html"
   file: pages/reference/linux-roadmap/toc.html.md
@@ -12362,6 +13119,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Tony Chen
   url: "/people/tony-chen/"
   file: _people/tony-chen.md
@@ -12386,6 +13144,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: Toolchain - CHERI Roadmap for Linux
   url: "/reference/linux-roadmap/goals/toolchain.html"
   file: pages/reference/linux-roadmap/goals/toolchain.html.md
@@ -12417,6 +13176,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Tora Fridholm
   url: "/people/tora-fridholm/"
   file: _people/tora-fridholm.md
@@ -12443,6 +13203,7 @@ records:
       working-groups:
       - marketing
     parent: "/people/"
+    layout: document
 - title: Towards a reference QEMU for CHERI platform emulation
   url: "/news/towards-a-reference-qemu-for-cheri-platform-emulation/"
   file: _news/towards-a-reference-qemu-for-cheri-platform-emulation.md
@@ -12475,6 +13236,7 @@ records:
       software: []
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: Trademark Policy
   url: "/policies/trademark-policy/"
   file: _policies/trademark-policy.md
@@ -12494,6 +13256,7 @@ records:
     document_date: 2025-09
     document_url: https://cheri-alliance.org/legal-trademark-policy/
     parent: "/policies/"
+    layout: document
 - title: Trusted Computing Center of Excellence (TCCoE)
   url: "/organisations/tccoe/"
   file: _organisations/tccoe.md
@@ -12516,6 +13279,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: Tutorials & Training
   url: "/guides/tutorials-and-training/"
   file: _guides/tutorials-and-training.md
@@ -12546,6 +13310,7 @@ records:
       - cheribsd
       - zephyr
     parent: "/guides/"
+    layout: document
 - title: UK Government report highlights the CHERI Alliance
   url: "/news/uk-government-report-highlights-the-cheri-alliance/"
   file: _news/uk-government-report-highlights-the-cheri-alliance.md
@@ -12571,20 +13336,21 @@ records:
       software: []
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: UKRI
   url: "/organisations/ukri/"
   file: _organisations/ukri.md
   type: Organisation (detail)
   collection: organisations
-  has_image: false
-  image_status: placeholder
+  has_image: true
+  image_status: provided
   missing_news_date: false
   display_date:
   alternate: false
   alias_target:
   properties:
     title: UKRI
-    image_url: "/assets/organisations/ukri/placeholder.svg"
+    image_url: "/assets/organisations/ukri/logo-source.svg"
     website_url:
     membership_tier:
     is_founding_member:
@@ -12593,6 +13359,12 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
+    image_source:
+      source_page: https://www.ukri.org/
+      source_url: https://www.ukri.org/#header-logo
+      retrieved_date: '2026-10-14'
+      sha256: 3beac62ba3fdd3f446e25ac307e84010ca1a9a49296be63db8de55348086679b
 - title: UKRI Digital Security by Design
   url: "/discover/history/ukri-digital-security-by-design/"
   file: pages/discover/history/ukri-digital-security-by-design.md
@@ -12627,6 +13399,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: UM Labs
   url: "/organisations/um-labs/"
   file: _organisations/um-labs.md
@@ -12649,6 +13422,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: University of Birmingham
   url: "/organisations/university-of-birmingham/"
   file: _organisations/university-of-birmingham.md
@@ -12671,6 +13445,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: University of Cambridge
   url: "/organisations/university-of-cambridge/"
   file: _organisations/university-of-cambridge.md
@@ -12693,6 +13468,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: University of Edinburgh
   url: "/organisations/university-of-edinburgh/"
   file: _organisations/university-of-edinburgh.md
@@ -12715,6 +13491,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: University of Exeter
   url: "/organisations/university-of-exeter/"
   file: _organisations/university-of-exeter.md
@@ -12737,6 +13514,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: University of Glasgow
   url: "/organisations/university-of-glasgow/"
   file: _organisations/university-of-glasgow.md
@@ -12759,6 +13537,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: University of Kent
   url: "/organisations/university-of-kent/"
   file: _organisations/university-of-kent.md
@@ -12781,20 +13560,21 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: University of Modena and Reggio Emilia
   url: "/organisations/university-of-modena-and-reggio-emilia/"
   file: _organisations/university-of-modena-and-reggio-emilia.md
   type: Organisation (detail)
   collection: organisations
-  has_image: false
-  image_status: placeholder
+  has_image: true
+  image_status: provided
   missing_news_date: false
   display_date:
   alternate: false
   alias_target:
   properties:
     title: University of Modena and Reggio Emilia
-    image_url: "/assets/organisations/university-of-modena-and-reggio-emilia/placeholder.svg"
+    image_url: "/assets/organisations/university-of-modena-and-reggio-emilia/logo-source.svg"
     website_url:
     membership_tier:
     is_founding_member:
@@ -12803,6 +13583,12 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
+    image_source:
+      source_page: https://www.unimore.it/en
+      source_url: https://www.unimore.it/themes/custom/unimore_base/icons/logo.svg
+      retrieved_date: '2026-10-14'
+      sha256: 6cb7b47f9c77419b029bbb82b302a8356416cee16f178a5f9b0687bf4d88009a
 - title: 'Unlocking the Future: A Roadmap for CHERI Technology Advancement'
   url: "/news/unlocking-the-future-a-roadmap-for-cheri-technology-advancement/"
   file: _news/unlocking-the-future-a-roadmap-for-cheri-technology-advancement.md
@@ -12832,26 +13618,7 @@ records:
       - zephyr
       academic-papers: []
     parent: "/news/"
-- title: Upcoming Events
-  url: "/news-and-events/events-and-archive/upcoming-events/"
-  file: pages/news-and-events/events-and-archive/upcoming-events.md
-  type: Events (list)
-  collection: pages
-  has_image: false
-  image_status: none
-  missing_news_date: false
-  display_date:
-  alternate: false
-  alias_target:
-  properties:
-    title: Upcoming Events
-    permalink: "/news-and-events/events-and-archive/upcoming-events/"
-    layout: events
-    listing:
-      collection:
-      status: upcoming
-      role:
-    parent: "/news-and-events/"
+    layout: document
 - title: Upcoming Events
   url: "/reference/source-versions/upcoming-events/"
   file: pages/reference/source-versions/upcoming-events.md
@@ -12885,6 +13652,27 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
+- title: Upcoming Events
+  url: "/news-and-events/events-and-archive/upcoming-events/"
+  file: pages/news-and-events/events-and-archive/upcoming-events.md
+  type: Events (list)
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target:
+  properties:
+    title: Upcoming Events
+    permalink: "/news-and-events/events-and-archive/upcoming-events/"
+    layout: events
+    listing:
+      collection:
+      status: upcoming
+      role:
+    parent: "/news-and-events/"
 - title: User space support - CHERI Roadmap for Linux
   url: "/reference/linux-roadmap/goals/user-space.html"
   file: pages/reference/linux-roadmap/goals/user-space.html.md
@@ -12916,6 +13704,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Using the CHERI Alliance Trademark
   url: "/trademark/"
   file: pages/trademark.md
@@ -12947,6 +13736,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: redirect
 - title: Using the CHERI Alliance Trademark
   url: "/policies/trademark-original/"
   file: _policies/trademark-original.md
@@ -12963,6 +13753,7 @@ records:
     image_url: "/assets/policies/trademark-original/placeholder.svg"
     author:
     parent: "/policies/"
+    layout: redirect
 - title: Vadim Zaliva
   url: "/people/vadim-zaliva/"
   file: _people/vadim-zaliva.md
@@ -12987,6 +13778,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: VeriSilicon
   url: "/organisations/verisilicon/"
   file: _organisations/verisilicon.md
@@ -13009,6 +13801,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: Videos & Presentations
   url: "/discover/resources/videos-and-presentations/"
   file: pages/discover/resources/videos-and-presentations.md
@@ -13040,6 +13833,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Vulnerabilities in Everyday Technology
   url: "/discover/why-cheri/vulnerabilities-in-everyday-technology/"
   file: pages/discover/why-cheri/vulnerabilities-in-everyday-technology.md
@@ -13072,6 +13866,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Webinar - CHERI & CRA Compliance
   url: "/events/webinar-cheri-cra-compliance/"
   file: _events/webinar-cheri-cra-compliance.md
@@ -13101,6 +13896,7 @@ records:
       - codasip
       academic-papers: []
     parent: "/events/"
+    layout: document
 - title: Why CHERI?
   url: "/discover/why-cheri/why-cheri/"
   file: pages/discover/why-cheri/why-cheri.md
@@ -13134,6 +13930,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Why Codasip went all‑in on CHERI
   url: "/news/why-codasip-went-all-in-on-cheri/"
   file: _news/why-codasip-went-all-in-on-cheri.md
@@ -13159,6 +13956,7 @@ records:
       software: []
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: Why Existing Defences Are Not Enough
   url: "/discover/why-cheri/why-existing-defences-are-not-enough/"
   file: pages/discover/why-cheri/why-existing-defences-are-not-enough.md
@@ -13192,6 +13990,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Why Join?
   url: "/alliance/membership/why-join/"
   file: pages/alliance/membership/why-join.md
@@ -13225,6 +14024,7 @@ records:
       software: []
       guides: []
       policies: []
+    layout: document
 - title: Wind River
   url: "/organisations/wind-river/"
   file: _organisations/wind-river.md
@@ -13247,6 +14047,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: Wind River Joins the CHERI Alliance
   url: "/news/wind-river-joins-the-cheri-alliance/"
   file: _news/wind-river-joins-the-cheri-alliance.md
@@ -13272,6 +14073,7 @@ records:
       software: []
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: Working Group Spotlight – Marketing
   url: "/news/working-group-spotlight-marketing/"
   file: _news/working-group-spotlight-marketing.md
@@ -13297,29 +14099,41 @@ records:
       software: []
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: Working groups
   url: "/groups/"
   file: pages/groups.md
-  type: Groups (list)
+  type: Redirect
   collection: pages
   has_image: false
   image_status: none
   missing_news_date: false
   display_date:
   alternate: true
-  alias_target: "/alliance/leadership/working-groups/"
+  alias_target: "/working-groups/"
   properties:
     title: Working groups
     permalink: "/groups/"
     layout: redirect
-    listing:
-      collection: working-groups
-      status:
-      role:
     parent: "/"
 - title: Working Groups
   url: "/alliance/leadership/working-groups/"
   file: pages/alliance/leadership/working-groups.md
+  type: Redirect
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target: "/working-groups/"
+  properties:
+    title: Working Groups
+    permalink: "/alliance/leadership/working-groups/"
+    layout: redirect
+- title: Working Groups
+  url: "/working-groups/"
+  file: pages/working-groups.md
   type: Groups (list)
   collection: pages
   has_image: false
@@ -13330,7 +14144,7 @@ records:
   alias_target:
   properties:
     title: Working Groups
-    permalink: "/alliance/leadership/working-groups/"
+    permalink: "/working-groups/"
     layout: list
     listing:
       collection: working-groups
@@ -13358,6 +14172,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: X730 Certification Record
   url: "/hardware/x730/"
   file: _hardware/x730.md
@@ -13391,6 +14206,7 @@ records:
     parent: "/hardware/"
     certification: cheri-enabled
     certification_url: https://cheri-alliance.org/cheri-enabled/x730/
+    layout: document
 - title: You just missed the CHERITech’25 Conference – but wait, you can still attend
     the virtual replay!
   url: "/news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/"
@@ -13430,6 +14246,7 @@ records:
       software: []
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: Yucong Tao
   url: "/people/yucong-tao/"
   file: _people/yucong-tao.md
@@ -13454,6 +14271,7 @@ records:
       organisations: []
       working-groups: []
     parent: "/people/"
+    layout: document
 - title: ZAYA
   url: "/organisations/zaya/"
   file: _organisations/zaya.md
@@ -13476,6 +14294,7 @@ records:
       mastodon_url:
       github_url:
     parent: "/organisations/"
+    layout: document
 - title: Zephyr
   url: "/software/zephyr/"
   file: _software/zephyr.md
@@ -13502,8 +14321,24 @@ records:
       - cheriot
       software: []
     parent: "/software/"
+    layout: document
 - title: "©️ CHERI C/C++ WG"
   url: "/groups/cheri-c-cplusplus/"
+  file: pages/redirects/groups/cheri-c-cplusplus.md
+  type: Redirect
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target: "/working-groups/cheri-c-cplusplus/"
+  properties:
+    title: "©️ CHERI C/C++ WG"
+    permalink: "/groups/cheri-c-cplusplus/"
+    layout: redirect
+- title: "©️ CHERI C/C++ WG"
+  url: "/working-groups/cheri-c-cplusplus/"
   file: _working-groups/cheri-c-cplusplus.md
   type: Group (detail)
   collection: working-groups
@@ -13525,7 +14360,8 @@ records:
       - sci-semiconductor
       hardware: []
       software: []
-    parent: "/groups/"
+    parent: "/working-groups/"
+    layout: document
 - title: "‘Cybersecurity by Design – from Research to Industry’ — Conference Report"
   url: "/news/cybersecurity-by-design-from-research-to-industry-conference-report/"
   file: _news/cybersecurity-by-design-from-research-to-industry-conference-report.md
@@ -13561,8 +14397,24 @@ records:
       software: []
       academic-papers: []
     parent: "/news/"
+    layout: document
 - title: "⚙️ Rust + CHERI WG"
   url: "/groups/rust-plus-cheri/"
+  file: pages/redirects/groups/rust-plus-cheri.md
+  type: Redirect
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target: "/working-groups/rust-plus-cheri/"
+  properties:
+    title: "⚙️ Rust + CHERI WG"
+    permalink: "/groups/rust-plus-cheri/"
+    layout: redirect
+- title: "⚙️ Rust + CHERI WG"
+  url: "/working-groups/rust-plus-cheri/"
   file: _working-groups/rust-plus-cheri.md
   type: Group (detail)
   collection: working-groups
@@ -13591,9 +14443,25 @@ records:
       - morello
       software:
       - rust
-    parent: "/groups/"
+    parent: "/working-groups/"
+    layout: document
 - title: "✅ Certification WG"
   url: "/groups/certification-working-group/"
+  file: pages/redirects/groups/certification-working-group.md
+  type: Redirect
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target: "/working-groups/certification-working-group/"
+  properties:
+    title: "✅ Certification WG"
+    permalink: "/groups/certification-working-group/"
+    layout: redirect
+- title: "✅ Certification WG"
+  url: "/working-groups/certification-working-group/"
   file: _working-groups/certification-working-group.md
   type: Group (detail)
   collection: working-groups
@@ -13615,9 +14483,25 @@ records:
       - cheri-alliance
       hardware: []
       software: []
-    parent: "/groups/"
+    parent: "/working-groups/"
+    layout: document
 - title: "⬛️ CHERI in SoC WG"
   url: "/groups/cheri-in-soc/"
+  file: pages/redirects/groups/cheri-in-soc.md
+  type: Redirect
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target: "/working-groups/cheri-in-soc/"
+  properties:
+    title: "⬛️ CHERI in SoC WG"
+    permalink: "/groups/cheri-in-soc/"
+    layout: redirect
+- title: "⬛️ CHERI in SoC WG"
+  url: "/working-groups/cheri-in-soc/"
   file: _working-groups/cheri-in-soc.md
   type: Group (detail)
   collection: working-groups
@@ -13639,9 +14523,25 @@ records:
       - codasip
       hardware: []
       software: []
-    parent: "/groups/"
+    parent: "/working-groups/"
+    layout: document
 - title: "\U0001F193 CHERI FreeRTOS WG"
   url: "/groups/cheri-freertos/"
+  file: pages/redirects/groups/cheri-freertos.md
+  type: Redirect
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target: "/working-groups/cheri-freertos/"
+  properties:
+    title: "\U0001F193 CHERI FreeRTOS WG"
+    permalink: "/groups/cheri-freertos/"
+    layout: redirect
+- title: "\U0001F193 CHERI FreeRTOS WG"
+  url: "/working-groups/cheri-freertos/"
   file: _working-groups/cheri-freertos.md
   type: Group (detail)
   collection: working-groups
@@ -13663,9 +14563,25 @@ records:
       - codasip
       hardware: []
       software: []
-    parent: "/groups/"
+    parent: "/working-groups/"
+    layout: document
 - title: "\U0001F426 CHERI QEMU WG"
   url: "/groups/cheri-qemu/"
+  file: pages/redirects/groups/cheri-qemu.md
+  type: Redirect
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target: "/working-groups/cheri-qemu/"
+  properties:
+    title: "\U0001F426 CHERI QEMU WG"
+    permalink: "/groups/cheri-qemu/"
+    layout: redirect
+- title: "\U0001F426 CHERI QEMU WG"
+  url: "/working-groups/cheri-qemu/"
   file: _working-groups/cheri-qemu.md
   type: Group (detail)
   collection: working-groups
@@ -13688,9 +14604,25 @@ records:
       - capabilities-limited
       hardware: []
       software: []
-    parent: "/groups/"
+    parent: "/working-groups/"
+    layout: document
 - title: "\U0001F427 CHERI Linux WG"
   url: "/groups/cheri-linux-working-group/"
+  file: pages/redirects/groups/cheri-linux-working-group.md
+  type: Redirect
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target: "/working-groups/cheri-linux-working-group/"
+  properties:
+    title: "\U0001F427 CHERI Linux WG"
+    permalink: "/groups/cheri-linux-working-group/"
+    layout: redirect
+- title: "\U0001F427 CHERI Linux WG"
+  url: "/working-groups/cheri-linux-working-group/"
   file: _working-groups/cheri-linux-working-group.md
   type: Group (detail)
   collection: working-groups
@@ -13714,9 +14646,25 @@ records:
       hardware: []
       software:
       - cheri-linux
-    parent: "/groups/"
+    parent: "/working-groups/"
+    layout: document
 - title: "\U0001F46E MMU-less Systems WG"
   url: "/groups/mmu-less-systems/"
+  file: pages/redirects/groups/mmu-less-systems.md
+  type: Redirect
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target: "/working-groups/mmu-less-systems/"
+  properties:
+    title: "\U0001F46E MMU-less Systems WG"
+    permalink: "/groups/mmu-less-systems/"
+    layout: redirect
+- title: "\U0001F46E MMU-less Systems WG"
+  url: "/working-groups/mmu-less-systems/"
   file: _working-groups/mmu-less-systems.md
   type: Group (detail)
   collection: working-groups
@@ -13739,9 +14687,25 @@ records:
       hardware:
       - cheriot
       software: []
-    parent: "/groups/"
+    parent: "/working-groups/"
+    layout: document
 - title: "\U0001F4BE Repository Management WG"
   url: "/groups/repository-management/"
+  file: pages/redirects/groups/repository-management.md
+  type: Redirect
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target: "/working-groups/repository-management/"
+  properties:
+    title: "\U0001F4BE Repository Management WG"
+    permalink: "/groups/repository-management/"
+    layout: redirect
+- title: "\U0001F4BE Repository Management WG"
+  url: "/working-groups/repository-management/"
   file: _working-groups/repository-management.md
   type: Group (detail)
   collection: working-groups
@@ -13765,9 +14729,25 @@ records:
       - cheri-alliance
       hardware: []
       software: []
-    parent: "/groups/"
+    parent: "/working-groups/"
+    layout: document
 - title: "\U0001F4CB CHERI + Safety WG"
   url: "/groups/cheri-plus-safety/"
+  file: pages/redirects/groups/cheri-plus-safety.md
+  type: Redirect
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target: "/working-groups/cheri-plus-safety/"
+  properties:
+    title: "\U0001F4CB CHERI + Safety WG"
+    permalink: "/groups/cheri-plus-safety/"
+    layout: redirect
+- title: "\U0001F4CB CHERI + Safety WG"
+  url: "/working-groups/cheri-plus-safety/"
   file: _working-groups/cheri-plus-safety.md
   type: Group (detail)
   collection: working-groups
@@ -13790,9 +14770,25 @@ records:
       - codasip
       hardware: []
       software: []
-    parent: "/groups/"
+    parent: "/working-groups/"
+    layout: document
 - title: "\U0001F4E3 Marketing WG"
   url: "/groups/marketing/"
+  file: pages/redirects/groups/marketing.md
+  type: Redirect
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target: "/working-groups/marketing/"
+  properties:
+    title: "\U0001F4E3 Marketing WG"
+    permalink: "/groups/marketing/"
+    layout: redirect
+- title: "\U0001F4E3 Marketing WG"
+  url: "/working-groups/marketing/"
   file: _working-groups/marketing.md
   type: Group (detail)
   collection: working-groups
@@ -13814,9 +14810,25 @@ records:
       - 3bian
       hardware: []
       software: []
-    parent: "/groups/"
+    parent: "/working-groups/"
+    layout: document
 - title: "\U0001F6E0️ OS Support & Portability WG"
   url: "/groups/os-support-and-portability/"
+  file: pages/redirects/groups/os-support-and-portability.md
+  type: Redirect
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target: "/working-groups/os-support-and-portability/"
+  properties:
+    title: "\U0001F6E0️ OS Support & Portability WG"
+    permalink: "/groups/os-support-and-portability/"
+    layout: redirect
+- title: "\U0001F6E0️ OS Support & Portability WG"
+  url: "/working-groups/os-support-and-portability/"
   file: _working-groups/os-support-and-portability.md
   type: Group (detail)
   collection: working-groups
@@ -13840,9 +14852,25 @@ records:
       software:
       - cheri-linux
       - zephyr
-    parent: "/groups/"
+    parent: "/working-groups/"
+    layout: document
 - title: "\U0001F916 CHERI Virtual Machines WG"
   url: "/groups/cheri-virtual-machines/"
+  file: pages/redirects/groups/cheri-virtual-machines.md
+  type: Redirect
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target: "/working-groups/cheri-virtual-machines/"
+  properties:
+    title: "\U0001F916 CHERI Virtual Machines WG"
+    permalink: "/groups/cheri-virtual-machines/"
+    layout: redirect
+- title: "\U0001F916 CHERI Virtual Machines WG"
+  url: "/working-groups/cheri-virtual-machines/"
   file: _working-groups/cheri-virtual-machines.md
   type: Group (detail)
   collection: working-groups
@@ -13864,9 +14892,25 @@ records:
       - university-of-glasgow
       hardware: []
       software: []
-    parent: "/groups/"
+    parent: "/working-groups/"
+    layout: document
 - title: "\U0001FA81 CHERI Zephyr WG"
   url: "/groups/cheri-zephyr/"
+  file: pages/redirects/groups/cheri-zephyr.md
+  type: Redirect
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target: "/working-groups/cheri-zephyr/"
+  properties:
+    title: "\U0001FA81 CHERI Zephyr WG"
+    permalink: "/groups/cheri-zephyr/"
+    layout: redirect
+- title: "\U0001FA81 CHERI Zephyr WG"
+  url: "/working-groups/cheri-zephyr/"
   file: _working-groups/cheri-zephyr.md
   type: Group (detail)
   collection: working-groups
@@ -13890,9 +14934,25 @@ records:
       hardware: []
       software:
       - zephyr
-    parent: "/groups/"
+    parent: "/working-groups/"
+    layout: document
 - title: "\U0001FAAA Promotion & Ambassador Program WG"
   url: "/groups/promotion-and-ambassador-program/"
+  file: pages/redirects/groups/promotion-and-ambassador-program.md
+  type: Redirect
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target: "/working-groups/promotion-and-ambassador-program/"
+  properties:
+    title: "\U0001FAAA Promotion & Ambassador Program WG"
+    permalink: "/groups/promotion-and-ambassador-program/"
+    layout: redirect
+- title: "\U0001FAAA Promotion & Ambassador Program WG"
+  url: "/working-groups/promotion-and-ambassador-program/"
   file: _working-groups/promotion-and-ambassador-program.md
   type: Group (detail)
   collection: working-groups
@@ -13915,4 +14975,5 @@ records:
       - cheri-alliance
       hardware: []
       software: []
-    parent: "/groups/"
+    parent: "/working-groups/"
+    layout: document

@@ -79,11 +79,11 @@ The CHERI Blossoms Conference 2025 invited researchers, technologists, industry 
 
 - **Keynote** — [Alastair Beresford](/people/alastair-beresford/) ([University of Cambridge](/organisations/university-of-cambridge/))
 
-- **[CHERI Alliance](/organisations/cheri-alliance/) - [QEMU Working Group](/groups/cheri-qemu/)** — [Alfredo Mazzinghi](/people/alfredo-mazzinghi/) ([Capabilities Limited](/organisations/capabilities-limited/))
+- **[CHERI Alliance](/organisations/cheri-alliance/) - [QEMU Working Group](/working-groups/cheri-qemu/)** — [Alfredo Mazzinghi](/people/alfredo-mazzinghi/) ([Capabilities Limited](/organisations/capabilities-limited/))
 
 - **Industrial-Strength Formal Verification of RISC-V Processors** — [Ashish Darbari](/people/ashish-darbari/) ([Axiomise](/organisations/axiomise-ltd/))
 
-- **CHERI Alliance - [SoC Working Group](/groups/cheri-in-soc/)** — [Ben Fletcher](/people/ben-fletcher/) ([Codasip](/organisations/codasip/))
+- **CHERI Alliance - [SoC Working Group](/working-groups/cheri-in-soc/)** — [Ben Fletcher](/people/ben-fletcher/) ([Codasip](/organisations/codasip/))
 
 - **Building Resilience: Enhancing productivity through Secure by Design systems** — [Bradley Finn](/people/bradley-finn/) ([DSIT](/organisations/dsit/))
 
@@ -131,7 +131,7 @@ The CHERI Blossoms Conference 2025 invited researchers, technologists, industry 
 
 - **CHERI RISC-V Standardisation** — [Tariq Kurd](/people/tariq-kurd/) (Codasip)
 
-- **CHERI Alliance - [Marketing Working Group](/groups/marketing/)** — [Tora Fridholm](/people/tora-fridholm/) (Codasip)
+- **CHERI Alliance - [Marketing Working Group](/working-groups/marketing/)** — [Tora Fridholm](/people/tora-fridholm/) (Codasip)
 
 ## Agenda
 

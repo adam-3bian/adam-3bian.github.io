@@ -1,6 +1,6 @@
 ---
 title: Arm
-image_url: /assets/organisations/arm/placeholder.svg
+image_url: /assets/organisations/arm/logo-source.svg
 website_url: null
 membership_tier: null
 is_founding_member: null

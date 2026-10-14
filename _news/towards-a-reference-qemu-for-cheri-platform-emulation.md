@@ -42,7 +42,7 @@ The CHERI Alliance reference implementation is an important milestone for future
 
 Downstream users can now rely on a common implementation and a central repository for tracking issues and submitting CHERI-related patches. This effort is also contributing to the expansion of the CHERI Alliance CI infrastructure, with the goal to both provide stable QEMU images to test third-party software and validate QEMU itself.
 
-The [QEMU Working Group](/groups/cheri-qemu/) has set out three major goals for 2026: integrate CHERI patches on more modern QEMU versions, continue work to support the latest and upcoming iterations of the CHERI RISC-V standard, and improve the QEMU CI infrastructure.
+The [QEMU Working Group](/working-groups/cheri-qemu/) has set out three major goals for 2026: integrate CHERI patches on more modern QEMU versions, continue work to support the latest and upcoming iterations of the CHERI RISC-V standard, and improve the QEMU CI infrastructure.
 
 The current CHERI patches are maintained on top of a relatively old QEMU version v7.0.0. This is becoming a substantial limitation for CHERI development, as this version lacks support for some important RISC-V extensions. The reference implementation is expected to reach QEMU v8 in the coming months.
 

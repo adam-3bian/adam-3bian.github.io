@@ -1,6 +1,6 @@
 ---
 title: UKRI
-image_url: /assets/organisations/ukri/placeholder.svg
+image_url: /assets/organisations/ukri/logo-source.svg
 website_url: null
 membership_tier: null
 is_founding_member: null

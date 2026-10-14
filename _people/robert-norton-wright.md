@@ -16,5 +16,5 @@ related:
 
 ## Publications
 
-- [CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost Embedded Devices](/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/)
-- [Cornucopia Reloaded: Load Barriers for CHERI Heap Temporal Safety](/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/)
+- [CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost Embedded Devices](/academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/)
+- [Cornucopia Reloaded: Load Barriers for CHERI Heap Temporal Safety](/academic-papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/)

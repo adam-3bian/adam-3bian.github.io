@@ -32,7 +32,7 @@ These layers form one compatible stack. Kernel capability support and pure-capab
 
 ## Current organisation
 
-The [CHERI Alliance Linux Working Group](/groups/cheri-linux-working-group/) coordinates a cross-architecture roadmap, priorities, public repositories, and contribution routes. Public development includes CHERI-RISC-V kernel and user-space work as well as experience from earlier [Morello](/hardware/morello/) Linux projects.
+The [CHERI Alliance Linux Working Group](/working-groups/cheri-linux-working-group/) coordinates a cross-architecture roadmap, priorities, public repositories, and contribution routes. Public development includes CHERI-RISC-V kernel and user-space work as well as experience from earlier [Morello](/hardware/morello/) Linux projects.
 
 CHERI support is not currently a standard feature of a mainline Linux release. Active branches are rebased as the base kernel, architecture specifications, toolchains, and platform software develop.
 
@@ -53,4 +53,4 @@ Coverage varies by kernel branch, processor, ABI, C library, package set, system
 - [CHERI Roadmap for Linux](https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/cheri-linux.html)
 - [CHERI Linux project documentation](https://cheri-linux.org/)
 - [CHERI Alliance repositories](https://github.com/CHERI-Alliance)
-- [CHERI Linux Working Group](/groups/cheri-linux-working-group/)
+- [CHERI Linux Working Group](/working-groups/cheri-linux-working-group/)

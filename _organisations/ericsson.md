@@ -1,6 +1,6 @@
 ---
 title: Ericsson
-image_url: /assets/organisations/ericsson/placeholder.svg
+image_url: /assets/organisations/ericsson/logo-source.png
 website_url: null
 membership_tier: null
 is_founding_member: null

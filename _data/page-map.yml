@@ -299,7 +299,7 @@
     match: collection
   parent: /events/
 - file: _working-groups/certification-working-group.md
-  url: /groups/certification-working-group/
+  url: /working-groups/certification-working-group/
   title: ✅ Certification WG
   page_type: Group (detail)
   collection: working-groups
@@ -310,18 +310,18 @@
     - Leadership
     - Working Groups
     - ✅ Certification WG
-    via_url: /alliance/leadership/working-groups/
+    via_url: /working-groups/
     match: collection
   - location: footer
     path:
     - CHERI Alliance
     - Working Groups
     - ✅ Certification WG
-    via_url: /alliance/leadership/working-groups/
+    via_url: /working-groups/
     match: collection
-  parent: /groups/
+  parent: /working-groups/
 - file: _working-groups/cheri-c-cplusplus.md
-  url: /groups/cheri-c-cplusplus/
+  url: /working-groups/cheri-c-cplusplus/
   title: ©️ CHERI C/C++ WG
   page_type: Group (detail)
   collection: working-groups
@@ -332,18 +332,18 @@
     - Leadership
     - Working Groups
     - ©️ CHERI C/C++ WG
-    via_url: /alliance/leadership/working-groups/
+    via_url: /working-groups/
     match: collection
   - location: footer
     path:
     - CHERI Alliance
     - Working Groups
     - ©️ CHERI C/C++ WG
-    via_url: /alliance/leadership/working-groups/
+    via_url: /working-groups/
     match: collection
-  parent: /groups/
+  parent: /working-groups/
 - file: _working-groups/cheri-for-sel4.md
-  url: /groups/cheri-for-sel4/
+  url: /working-groups/cheri-for-sel4/
   title: 4️⃣ CHERI for seL4 WG
   page_type: Group (detail)
   collection: working-groups
@@ -354,18 +354,18 @@
     - Leadership
     - Working Groups
     - 4️⃣ CHERI for seL4 WG
-    via_url: /alliance/leadership/working-groups/
+    via_url: /working-groups/
     match: collection
   - location: footer
     path:
     - CHERI Alliance
     - Working Groups
     - 4️⃣ CHERI for seL4 WG
-    via_url: /alliance/leadership/working-groups/
+    via_url: /working-groups/
     match: collection
-  parent: /groups/
+  parent: /working-groups/
 - file: _working-groups/cheri-freertos.md
-  url: /groups/cheri-freertos/
+  url: /working-groups/cheri-freertos/
   title: 🆓 CHERI FreeRTOS WG
   page_type: Group (detail)
   collection: working-groups
@@ -376,18 +376,18 @@
     - Leadership
     - Working Groups
     - 🆓 CHERI FreeRTOS WG
-    via_url: /alliance/leadership/working-groups/
+    via_url: /working-groups/
     match: collection
   - location: footer
     path:
     - CHERI Alliance
     - Working Groups
     - 🆓 CHERI FreeRTOS WG
-    via_url: /alliance/leadership/working-groups/
+    via_url: /working-groups/
     match: collection
-  parent: /groups/
+  parent: /working-groups/
 - file: _working-groups/cheri-in-soc.md
-  url: /groups/cheri-in-soc/
+  url: /working-groups/cheri-in-soc/
   title: ⬛️ CHERI in SoC WG
   page_type: Group (detail)
   collection: working-groups
@@ -398,18 +398,18 @@
     - Leadership
     - Working Groups
     - ⬛️ CHERI in SoC WG
-    via_url: /alliance/leadership/working-groups/
+    via_url: /working-groups/
     match: collection
   - location: footer
     path:
     - CHERI Alliance
     - Working Groups
     - ⬛️ CHERI in SoC WG
-    via_url: /alliance/leadership/working-groups/
+    via_url: /working-groups/
     match: collection
-  parent: /groups/
+  parent: /working-groups/
 - file: _working-groups/cheri-linux-working-group.md
-  url: /groups/cheri-linux-working-group/
+  url: /working-groups/cheri-linux-working-group/
   title: 🐧 CHERI Linux WG
   page_type: Group (detail)
   collection: working-groups
@@ -420,18 +420,18 @@
     - Leadership
     - Working Groups
     - 🐧 CHERI Linux WG
-    via_url: /alliance/leadership/working-groups/
+    via_url: /working-groups/
     match: collection
   - location: footer
     path:
     - CHERI Alliance
     - Working Groups
     - 🐧 CHERI Linux WG
-    via_url: /alliance/leadership/working-groups/
+    via_url: /working-groups/
     match: collection
-  parent: /groups/
+  parent: /working-groups/
 - file: _working-groups/cheri-plus-safety.md
-  url: /groups/cheri-plus-safety/
+  url: /working-groups/cheri-plus-safety/
   title: 📋 CHERI + Safety WG
   page_type: Group (detail)
   collection: working-groups
@@ -442,18 +442,18 @@
     - Leadership
     - Working Groups
     - 📋 CHERI + Safety WG
-    via_url: /alliance/leadership/working-groups/
+    via_url: /working-groups/
     match: collection
   - location: footer
     path:
     - CHERI Alliance
     - Working Groups
     - 📋 CHERI + Safety WG
-    via_url: /alliance/leadership/working-groups/
+    via_url: /working-groups/
     match: collection
-  parent: /groups/
+  parent: /working-groups/
 - file: _working-groups/cheri-qemu.md
-  url: /groups/cheri-qemu/
+  url: /working-groups/cheri-qemu/
   title: 🐦 CHERI QEMU WG
   page_type: Group (detail)
   collection: working-groups
@@ -464,18 +464,18 @@
     - Leadership
     - Working Groups
     - 🐦 CHERI QEMU WG
-    via_url: /alliance/leadership/working-groups/
+    via_url: /working-groups/
     match: collection
   - location: footer
     path:
     - CHERI Alliance
     - Working Groups
     - 🐦 CHERI QEMU WG
-    via_url: /alliance/leadership/working-groups/
+    via_url: /working-groups/
     match: collection
-  parent: /groups/
+  parent: /working-groups/
 - file: _working-groups/cheri-virtual-machines.md
-  url: /groups/cheri-virtual-machines/
+  url: /working-groups/cheri-virtual-machines/
   title: 🤖 CHERI Virtual Machines WG
   page_type: Group (detail)
   collection: working-groups
@@ -486,18 +486,18 @@
     - Leadership
     - Working Groups
     - 🤖 CHERI Virtual Machines WG
-    via_url: /alliance/leadership/working-groups/
+    via_url: /working-groups/
     match: collection
   - location: footer
     path:
     - CHERI Alliance
     - Working Groups
     - 🤖 CHERI Virtual Machines WG
-    via_url: /alliance/leadership/working-groups/
+    via_url: /working-groups/
     match: collection
-  parent: /groups/
+  parent: /working-groups/
 - file: _working-groups/cheri-zephyr.md
-  url: /groups/cheri-zephyr/
+  url: /working-groups/cheri-zephyr/
   title: 🪁 CHERI Zephyr WG
   page_type: Group (detail)
   collection: working-groups
@@ -508,18 +508,18 @@
     - Leadership
     - Working Groups
     - 🪁 CHERI Zephyr WG
-    via_url: /alliance/leadership/working-groups/
+    via_url: /working-groups/
     match: collection
   - location: footer
     path:
     - CHERI Alliance
     - Working Groups
     - 🪁 CHERI Zephyr WG
-    via_url: /alliance/leadership/working-groups/
+    via_url: /working-groups/
     match: collection
-  parent: /groups/
+  parent: /working-groups/
 - file: _working-groups/marketing.md
-  url: /groups/marketing/
+  url: /working-groups/marketing/
   title: 📣 Marketing WG
   page_type: Group (detail)
   collection: working-groups
@@ -530,18 +530,18 @@
     - Leadership
     - Working Groups
     - 📣 Marketing WG
-    via_url: /alliance/leadership/working-groups/
+    via_url: /working-groups/
     match: collection
   - location: footer
     path:
     - CHERI Alliance
     - Working Groups
     - 📣 Marketing WG
-    via_url: /alliance/leadership/working-groups/
+    via_url: /working-groups/
     match: collection
-  parent: /groups/
+  parent: /working-groups/
 - file: _working-groups/mmu-less-systems.md
-  url: /groups/mmu-less-systems/
+  url: /working-groups/mmu-less-systems/
   title: 👮 MMU-less Systems WG
   page_type: Group (detail)
   collection: working-groups
@@ -552,18 +552,18 @@
     - Leadership
     - Working Groups
     - 👮 MMU-less Systems WG
-    via_url: /alliance/leadership/working-groups/
+    via_url: /working-groups/
     match: collection
   - location: footer
     path:
     - CHERI Alliance
     - Working Groups
     - 👮 MMU-less Systems WG
-    via_url: /alliance/leadership/working-groups/
+    via_url: /working-groups/
     match: collection
-  parent: /groups/
+  parent: /working-groups/
 - file: _working-groups/os-support-and-portability.md
-  url: /groups/os-support-and-portability/
+  url: /working-groups/os-support-and-portability/
   title: 🛠️ OS Support & Portability WG
   page_type: Group (detail)
   collection: working-groups
@@ -574,18 +574,18 @@
     - Leadership
     - Working Groups
     - 🛠️ OS Support & Portability WG
-    via_url: /alliance/leadership/working-groups/
+    via_url: /working-groups/
     match: collection
   - location: footer
     path:
     - CHERI Alliance
     - Working Groups
     - 🛠️ OS Support & Portability WG
-    via_url: /alliance/leadership/working-groups/
+    via_url: /working-groups/
     match: collection
-  parent: /groups/
+  parent: /working-groups/
 - file: _working-groups/promotion-and-ambassador-program.md
-  url: /groups/promotion-and-ambassador-program/
+  url: /working-groups/promotion-and-ambassador-program/
   title: 🪪 Promotion & Ambassador Program WG
   page_type: Group (detail)
   collection: working-groups
@@ -596,18 +596,18 @@
     - Leadership
     - Working Groups
     - 🪪 Promotion & Ambassador Program WG
-    via_url: /alliance/leadership/working-groups/
+    via_url: /working-groups/
     match: collection
   - location: footer
     path:
     - CHERI Alliance
     - Working Groups
     - 🪪 Promotion & Ambassador Program WG
-    via_url: /alliance/leadership/working-groups/
+    via_url: /working-groups/
     match: collection
-  parent: /groups/
+  parent: /working-groups/
 - file: _working-groups/repository-management.md
-  url: /groups/repository-management/
+  url: /working-groups/repository-management/
   title: 💾 Repository Management WG
   page_type: Group (detail)
   collection: working-groups
@@ -618,18 +618,18 @@
     - Leadership
     - Working Groups
     - 💾 Repository Management WG
-    via_url: /alliance/leadership/working-groups/
+    via_url: /working-groups/
     match: collection
   - location: footer
     path:
     - CHERI Alliance
     - Working Groups
     - 💾 Repository Management WG
-    via_url: /alliance/leadership/working-groups/
+    via_url: /working-groups/
     match: collection
-  parent: /groups/
+  parent: /working-groups/
 - file: _working-groups/rust-plus-cheri.md
-  url: /groups/rust-plus-cheri/
+  url: /working-groups/rust-plus-cheri/
   title: ⚙️ Rust + CHERI WG
   page_type: Group (detail)
   collection: working-groups
@@ -640,16 +640,16 @@
     - Leadership
     - Working Groups
     - ⚙️ Rust + CHERI WG
-    via_url: /alliance/leadership/working-groups/
+    via_url: /working-groups/
     match: collection
   - location: footer
     path:
     - CHERI Alliance
     - Working Groups
     - ⚙️ Rust + CHERI WG
-    via_url: /alliance/leadership/working-groups/
+    via_url: /working-groups/
     match: collection
-  parent: /groups/
+  parent: /working-groups/
 - file: _guides/build-compartments.md
   url: /guides/build-compartments/
   title: Build Compartments
@@ -4300,7 +4300,7 @@
     match: collection
   parent: /organisations/
 - file: _academic-papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators.md
-  url: /papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/
+  url: /academic-papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/
   title: Adaptive CHERI Compartmentalization for Heterogeneous Accelerators
   page_type: Paper (detail)
   collection: academic-papers
@@ -4311,18 +4311,18 @@
     - Resources
     - Papers and authors
     - Adaptive CHERI Compartmentalization for Heterogeneous Accelerators
-    via_url: /papers/
+    via_url: /academic-papers/
     match: collection
   - location: footer
     path:
     - Explore
     - Papers
     - Adaptive CHERI Compartmentalization for Heterogeneous Accelerators
-    via_url: /papers/
+    via_url: /academic-papers/
     match: collection
-  parent: /papers/
+  parent: /academic-papers/
 - file: _academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md
-  url: /papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/
+  url: /academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/
   title: 'CHERI: A Hybrid Capability-System Architecture for Scalable Software Compartmentalization'
   page_type: Paper (detail)
   collection: academic-papers
@@ -4333,18 +4333,18 @@
     - Resources
     - Papers and authors
     - 'CHERI: A Hybrid Capability-System Architecture for Scalable Software Compartmentalization'
-    via_url: /papers/
+    via_url: /academic-papers/
     match: collection
   - location: footer
     path:
     - Explore
     - Papers
     - 'CHERI: A Hybrid Capability-System Architecture for Scalable Software Compartmentalization'
-    via_url: /papers/
+    via_url: /academic-papers/
     match: collection
-  parent: /papers/
+  parent: /academic-papers/
 - file: _academic-papers/cheri-concentrate-practical-compressed-capabilities.md
-  url: /papers/cheri-concentrate-practical-compressed-capabilities/
+  url: /academic-papers/cheri-concentrate-practical-compressed-capabilities/
   title: 'CHERI Concentrate: Practical Compressed Capabilities'
   page_type: Paper (detail)
   collection: academic-papers
@@ -4355,18 +4355,18 @@
     - Resources
     - Papers and authors
     - 'CHERI Concentrate: Practical Compressed Capabilities'
-    via_url: /papers/
+    via_url: /academic-papers/
     match: collection
   - location: footer
     path:
     - Explore
     - Papers
     - 'CHERI Concentrate: Practical Compressed Capabilities'
-    via_url: /papers/
+    via_url: /academic-papers/
     match: collection
-  parent: /papers/
+  parent: /academic-papers/
 - file: _academic-papers/cheri-hardware-enabled-c-c-memory-protection-at-scale.md
-  url: /papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/
+  url: /academic-papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/
   title: 'CHERI: Hardware-Enabled C/C++ Memory Protection at Scale'
   page_type: Paper (detail)
   collection: academic-papers
@@ -4377,18 +4377,18 @@
     - Resources
     - Papers and authors
     - 'CHERI: Hardware-Enabled C/C++ Memory Protection at Scale'
-    via_url: /papers/
+    via_url: /academic-papers/
     match: collection
   - location: footer
     path:
     - Explore
     - Papers
     - 'CHERI: Hardware-Enabled C/C++ Memory Protection at Scale'
-    via_url: /papers/
+    via_url: /academic-papers/
     match: collection
-  parent: /papers/
+  parent: /academic-papers/
 - file: _academic-papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p.md
-  url: /papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/
+  url: /academic-papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/
   title: 'CheriABI: Enforcing Valid Pointer Provenance and Minimizing Pointer Privilege in the POSIX C Run-time Environment'
   page_type: Paper (detail)
   collection: academic-papers
@@ -4399,18 +4399,18 @@
     - Resources
     - Papers and authors
     - 'CheriABI: Enforcing Valid Pointer Provenance and Minimizing Pointer Privilege in the POSIX C Run-time Environment'
-    via_url: /papers/
+    via_url: /academic-papers/
     match: collection
   - location: footer
     path:
     - Explore
     - Papers
     - 'CheriABI: Enforcing Valid Pointer Provenance and Minimizing Pointer Privilege in the POSIX C Run-time Environment'
-    via_url: /papers/
+    via_url: /academic-papers/
     match: collection
-  parent: /papers/
+  parent: /academic-papers/
 - file: _academic-papers/cheriot-complete-memory-safety-for-embedded-devices.md
-  url: /papers/cheriot-complete-memory-safety-for-embedded-devices/
+  url: /academic-papers/cheriot-complete-memory-safety-for-embedded-devices/
   title: 'CHERIoT: Complete Memory Safety for Embedded Devices'
   page_type: Paper (detail)
   collection: academic-papers
@@ -4421,18 +4421,18 @@
     - Resources
     - Papers and authors
     - 'CHERIoT: Complete Memory Safety for Embedded Devices'
-    via_url: /papers/
+    via_url: /academic-papers/
     match: collection
   - location: footer
     path:
     - Explore
     - Papers
     - 'CHERIoT: Complete Memory Safety for Embedded Devices'
-    via_url: /papers/
+    via_url: /academic-papers/
     match: collection
-  parent: /papers/
+  parent: /academic-papers/
 - file: _academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev.md
-  url: /papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/
+  url: /academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/
   title: 'CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost Embedded Devices'
   page_type: Paper (detail)
   collection: academic-papers
@@ -4443,18 +4443,18 @@
     - Resources
     - Papers and authors
     - 'CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost Embedded Devices'
-    via_url: /papers/
+    via_url: /academic-papers/
     match: collection
   - location: footer
     path:
     - Explore
     - Papers
     - 'CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost Embedded Devices'
-    via_url: /papers/
+    via_url: /academic-papers/
     match: collection
-  parent: /papers/
+  parent: /academic-papers/
 - file: _academic-papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety.md
-  url: /papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/
+  url: /academic-papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/
   title: 'Cornucopia Reloaded: Load Barriers for CHERI Heap Temporal Safety'
   page_type: Paper (detail)
   collection: academic-papers
@@ -4465,18 +4465,18 @@
     - Resources
     - Papers and authors
     - 'Cornucopia Reloaded: Load Barriers for CHERI Heap Temporal Safety'
-    via_url: /papers/
+    via_url: /academic-papers/
     match: collection
   - location: footer
     path:
     - Explore
     - Papers
     - 'Cornucopia Reloaded: Load Barriers for CHERI Heap Temporal Safety'
-    via_url: /papers/
+    via_url: /academic-papers/
     match: collection
-  parent: /papers/
+  parent: /academic-papers/
 - file: _academic-papers/cornucopia-temporal-safety-for-cheri-heaps.md
-  url: /papers/cornucopia-temporal-safety-for-cheri-heaps/
+  url: /academic-papers/cornucopia-temporal-safety-for-cheri-heaps/
   title: 'Cornucopia: Temporal Safety for CHERI Heaps'
   page_type: Paper (detail)
   collection: academic-papers
@@ -4487,18 +4487,18 @@
     - Resources
     - Papers and authors
     - 'Cornucopia: Temporal Safety for CHERI Heaps'
-    via_url: /papers/
+    via_url: /academic-papers/
     match: collection
   - location: footer
     path:
     - Explore
     - Papers
     - 'Cornucopia: Temporal Safety for CHERI Heaps'
-    via_url: /papers/
+    via_url: /academic-papers/
     match: collection
-  parent: /papers/
+  parent: /academic-papers/
 - file: _academic-papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c.md
-  url: /papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/
+  url: /academic-papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/
   title: Deprivileging Low-Level GPU Drivers Efficiently with User-Space Processes and CHERI Compartments
   page_type: Paper (detail)
   collection: academic-papers
@@ -4509,18 +4509,18 @@
     - Resources
     - Papers and authors
     - Deprivileging Low-Level GPU Drivers Efficiently with User-Space Processes and CHERI Compartments
-    via_url: /papers/
+    via_url: /academic-papers/
     match: collection
   - location: footer
     path:
     - Explore
     - Papers
     - Deprivileging Low-Level GPU Drivers Efficiently with User-Space Processes and CHERI Compartments
-    via_url: /papers/
+    via_url: /academic-papers/
     match: collection
-  parent: /papers/
+  parent: /academic-papers/
 - file: _academic-papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou.md
-  url: /papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/
+  url: /academic-papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/
   title: 'Formal Mechanised Semantics of CHERI C: Capabilities, Provenance, and Undefined Behaviour'
   page_type: Paper (detail)
   collection: academic-papers
@@ -4531,18 +4531,18 @@
     - Resources
     - Papers and authors
     - 'Formal Mechanised Semantics of CHERI C: Capabilities, Provenance, and Undefined Behaviour'
-    via_url: /papers/
+    via_url: /academic-papers/
     match: collection
   - location: footer
     path:
     - Explore
     - Papers
     - 'Formal Mechanised Semantics of CHERI C: Capabilities, Provenance, and Undefined Behaviour'
-    via_url: /papers/
+    via_url: /academic-papers/
     match: collection
-  parent: /papers/
+  parent: /academic-papers/
 - file: _academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md
-  url: /papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/
+  url: /academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/
   title: It Is Time to Standardize Principles and Practices for Software Memory Safety
   page_type: Paper (detail)
   collection: academic-papers
@@ -4553,18 +4553,18 @@
     - Resources
     - Papers and authors
     - It Is Time to Standardize Principles and Practices for Software Memory Safety
-    via_url: /papers/
+    via_url: /academic-papers/
     match: collection
   - location: footer
     path:
     - Explore
     - Papers
     - It Is Time to Standardize Principles and Practices for Software Memory Safety
-    via_url: /papers/
+    via_url: /academic-papers/
     match: collection
-  parent: /papers/
+  parent: /academic-papers/
 - file: _academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md
-  url: /papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/
+  url: /academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/
   title: 'Rigorous Engineering for Hardware Security: Formal Modelling and Proof in the CHERI Design and Implementation Process'
   page_type: Paper (detail)
   collection: academic-papers
@@ -4575,18 +4575,18 @@
     - Resources
     - Papers and authors
     - 'Rigorous Engineering for Hardware Security: Formal Modelling and Proof in the CHERI Design and Implementation Process'
-    via_url: /papers/
+    via_url: /academic-papers/
     match: collection
   - location: footer
     path:
     - Explore
     - Papers
     - 'Rigorous Engineering for Hardware Security: Formal Modelling and Proof in the CHERI Design and Implementation Process'
-    via_url: /papers/
+    via_url: /academic-papers/
     match: collection
-  parent: /papers/
+  parent: /academic-papers/
 - file: _academic-papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa.md
-  url: /papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/
+  url: /academic-papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/
   title: The Arm Morello Evaluation Platform—Validating CHERI-Based Security in a High-Performance System
   page_type: Paper (detail)
   collection: academic-papers
@@ -4597,18 +4597,18 @@
     - Resources
     - Papers and authors
     - The Arm Morello Evaluation Platform—Validating CHERI-Based Security in a High-Performance System
-    via_url: /papers/
+    via_url: /academic-papers/
     match: collection
   - location: footer
     path:
     - Explore
     - Papers
     - The Arm Morello Evaluation Platform—Validating CHERI-Based Security in a High-Performance System
-    via_url: /papers/
+    via_url: /academic-papers/
     match: collection
-  parent: /papers/
+  parent: /academic-papers/
 - file: _academic-papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk.md
-  url: /papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/
+  url: /academic-papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/
   title: 'The CHERI Capability Model: Revisiting RISC in an Age of Risk'
   page_type: Paper (detail)
   collection: academic-papers
@@ -4619,16 +4619,16 @@
     - Resources
     - Papers and authors
     - 'The CHERI Capability Model: Revisiting RISC in an Age of Risk'
-    via_url: /papers/
+    via_url: /academic-papers/
     match: collection
   - location: footer
     path:
     - Explore
     - Papers
     - 'The CHERI Capability Model: Revisiting RISC in an Age of Risk'
-    via_url: /papers/
+    via_url: /academic-papers/
     match: collection
-  parent: /papers/
+  parent: /academic-papers/
 - file: _people/a-theodore-markettos.md
   url: /people/a-theodore-markettos/
   title: A. Theodore Markettos
@@ -7406,8 +7406,8 @@
     via_url: /alliance/leadership/members/
     match: direct
   parent: /alliance/
-- file: pages/alliance/leadership/working-groups.md
-  url: /alliance/leadership/working-groups/
+- file: pages/working-groups.md
+  url: /working-groups/
   title: Working Groups
   page_type: Groups (list)
   collection: pages
@@ -7417,13 +7417,13 @@
     - CHERI Alliance
     - Leadership
     - Working Groups
-    via_url: /alliance/leadership/working-groups/
+    via_url: /working-groups/
     match: direct
   - location: footer
     path:
     - CHERI Alliance
     - Working Groups
-    via_url: /alliance/leadership/working-groups/
+    via_url: /working-groups/
     match: direct
   parent: /alliance/
 - file: pages/alliance/membership/contact.md
@@ -7878,7 +7878,7 @@
     - Discover CHERI
     - Resources
     - Academic Papers
-    via_url: /papers/
+    via_url: /academic-papers/
     match: direct
   parent: /discover/
   alternate: true
@@ -8114,10 +8114,10 @@
 - file: pages/groups.md
   url: /groups/
   title: Working groups
-  page_type: Groups (list)
+  page_type: Redirect
   collection: pages
   navigation: []
-  parent: /
+  parent: /working-groups/
   navigation_status: Outside header/footer navigation; retained at its existing route.
   alternate: true
 - file: pages/guides.md
@@ -8429,8 +8429,8 @@
     via_url: /organisations/
     match: direct
   parent: /
-- file: pages/papers.md
-  url: /papers/
+- file: pages/academic-papers.md
+  url: /academic-papers/
   title: Papers
   page_type: Papers (list)
   collection: pages
@@ -8440,13 +8440,13 @@
     - Discover CHERI
     - Resources
     - Academic Papers
-    via_url: /papers/
+    via_url: /academic-papers/
     match: direct
   - location: footer
     path:
     - Explore
     - Papers
-    via_url: /papers/
+    via_url: /academic-papers/
     match: direct
   parent: /discover/
 - file: pages/people.md
@@ -8968,12 +8968,12 @@
   navigation: []
   parent: /organisations/
 - file: _working-groups/cheri-research.md
-  url: /groups/cheri-research/
+  url: /working-groups/cheri-research/
   title: CHERI Research WG
   page_type: Working group (detail)
   collection: working-groups
   navigation: []
-  parent: /groups/
+  parent: /working-groups/
 - file: _case-studies/morello.md
   url: /case-studies/morello/
   title: 'Morello: a complete experimental stack'
@@ -9137,3 +9137,241 @@
     via_url: /reports/
     match: direct
   parent: /discover/
+- file: pages/papers.md
+  url: /papers/
+  title: Papers
+  page_type: Redirect
+  collection: pages
+  navigation: []
+  parent: /academic-papers/
+- file: pages/alliance/leadership/working-groups.md
+  url: /alliance/leadership/working-groups/
+  title: Working Groups
+  page_type: Redirect
+  collection: pages
+  navigation: []
+  parent: /working-groups/
+- file: pages/redirects/groups/certification-working-group.md
+  url: /groups/certification-working-group/
+  title: ✅ Certification WG
+  page_type: Redirect
+  collection: pages
+  navigation: []
+  parent: /working-groups/
+- file: pages/redirects/groups/cheri-c-cplusplus.md
+  url: /groups/cheri-c-cplusplus/
+  title: ©️ CHERI C/C++ WG
+  page_type: Redirect
+  collection: pages
+  navigation: []
+  parent: /working-groups/
+- file: pages/redirects/groups/cheri-for-sel4.md
+  url: /groups/cheri-for-sel4/
+  title: 4️⃣ CHERI for seL4 WG
+  page_type: Redirect
+  collection: pages
+  navigation: []
+  parent: /working-groups/
+- file: pages/redirects/groups/cheri-freertos.md
+  url: /groups/cheri-freertos/
+  title: 🆓 CHERI FreeRTOS WG
+  page_type: Redirect
+  collection: pages
+  navigation: []
+  parent: /working-groups/
+- file: pages/redirects/groups/cheri-in-soc.md
+  url: /groups/cheri-in-soc/
+  title: ⬛️ CHERI in SoC WG
+  page_type: Redirect
+  collection: pages
+  navigation: []
+  parent: /working-groups/
+- file: pages/redirects/groups/cheri-linux-working-group.md
+  url: /groups/cheri-linux-working-group/
+  title: 🐧 CHERI Linux WG
+  page_type: Redirect
+  collection: pages
+  navigation: []
+  parent: /working-groups/
+- file: pages/redirects/groups/cheri-plus-safety.md
+  url: /groups/cheri-plus-safety/
+  title: 📋 CHERI + Safety WG
+  page_type: Redirect
+  collection: pages
+  navigation: []
+  parent: /working-groups/
+- file: pages/redirects/groups/cheri-qemu.md
+  url: /groups/cheri-qemu/
+  title: 🐦 CHERI QEMU WG
+  page_type: Redirect
+  collection: pages
+  navigation: []
+  parent: /working-groups/
+- file: pages/redirects/groups/cheri-virtual-machines.md
+  url: /groups/cheri-virtual-machines/
+  title: 🤖 CHERI Virtual Machines WG
+  page_type: Redirect
+  collection: pages
+  navigation: []
+  parent: /working-groups/
+- file: pages/redirects/groups/cheri-zephyr.md
+  url: /groups/cheri-zephyr/
+  title: 🪁 CHERI Zephyr WG
+  page_type: Redirect
+  collection: pages
+  navigation: []
+  parent: /working-groups/
+- file: pages/redirects/groups/marketing.md
+  url: /groups/marketing/
+  title: 📣 Marketing WG
+  page_type: Redirect
+  collection: pages
+  navigation: []
+  parent: /working-groups/
+- file: pages/redirects/groups/mmu-less-systems.md
+  url: /groups/mmu-less-systems/
+  title: 👮 MMU-less Systems WG
+  page_type: Redirect
+  collection: pages
+  navigation: []
+  parent: /working-groups/
+- file: pages/redirects/groups/os-support-and-portability.md
+  url: /groups/os-support-and-portability/
+  title: 🛠️ OS Support & Portability WG
+  page_type: Redirect
+  collection: pages
+  navigation: []
+  parent: /working-groups/
+- file: pages/redirects/groups/promotion-and-ambassador-program.md
+  url: /groups/promotion-and-ambassador-program/
+  title: 🪪 Promotion & Ambassador Program WG
+  page_type: Redirect
+  collection: pages
+  navigation: []
+  parent: /working-groups/
+- file: pages/redirects/groups/repository-management.md
+  url: /groups/repository-management/
+  title: 💾 Repository Management WG
+  page_type: Redirect
+  collection: pages
+  navigation: []
+  parent: /working-groups/
+- file: pages/redirects/groups/rust-plus-cheri.md
+  url: /groups/rust-plus-cheri/
+  title: ⚙️ Rust + CHERI WG
+  page_type: Redirect
+  collection: pages
+  navigation: []
+  parent: /working-groups/
+- file: pages/redirects/papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators.md
+  url: /papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/
+  title: Adaptive CHERI Compartmentalization for Heterogeneous Accelerators
+  page_type: Redirect
+  collection: pages
+  navigation: []
+  parent: /academic-papers/
+- file: pages/redirects/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md
+  url: /papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/
+  title: 'CHERI: A Hybrid Capability-System Architecture for Scalable Software Compartmentalization'
+  page_type: Redirect
+  collection: pages
+  navigation: []
+  parent: /academic-papers/
+- file: pages/redirects/papers/cheri-concentrate-practical-compressed-capabilities.md
+  url: /papers/cheri-concentrate-practical-compressed-capabilities/
+  title: 'CHERI Concentrate: Practical Compressed Capabilities'
+  page_type: Redirect
+  collection: pages
+  navigation: []
+  parent: /academic-papers/
+- file: pages/redirects/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale.md
+  url: /papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/
+  title: 'CHERI: Hardware-Enabled C/C++ Memory Protection at Scale'
+  page_type: Redirect
+  collection: pages
+  navigation: []
+  parent: /academic-papers/
+- file: pages/redirects/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p.md
+  url: /papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/
+  title: 'CheriABI: Enforcing Valid Pointer Provenance and Minimizing Pointer Privilege in the POSIX C Run-time Environment'
+  page_type: Redirect
+  collection: pages
+  navigation: []
+  parent: /academic-papers/
+- file: pages/redirects/papers/cheriot-complete-memory-safety-for-embedded-devices.md
+  url: /papers/cheriot-complete-memory-safety-for-embedded-devices/
+  title: 'CHERIoT: Complete Memory Safety for Embedded Devices'
+  page_type: Redirect
+  collection: pages
+  navigation: []
+  parent: /academic-papers/
+- file: pages/redirects/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev.md
+  url: /papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/
+  title: 'CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost Embedded Devices'
+  page_type: Redirect
+  collection: pages
+  navigation: []
+  parent: /academic-papers/
+- file: pages/redirects/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety.md
+  url: /papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/
+  title: 'Cornucopia Reloaded: Load Barriers for CHERI Heap Temporal Safety'
+  page_type: Redirect
+  collection: pages
+  navigation: []
+  parent: /academic-papers/
+- file: pages/redirects/papers/cornucopia-temporal-safety-for-cheri-heaps.md
+  url: /papers/cornucopia-temporal-safety-for-cheri-heaps/
+  title: 'Cornucopia: Temporal Safety for CHERI Heaps'
+  page_type: Redirect
+  collection: pages
+  navigation: []
+  parent: /academic-papers/
+- file: pages/redirects/papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c.md
+  url: /papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/
+  title: Deprivileging Low-Level GPU Drivers Efficiently with User-Space Processes and CHERI Compartments
+  page_type: Redirect
+  collection: pages
+  navigation: []
+  parent: /academic-papers/
+- file: pages/redirects/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou.md
+  url: /papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/
+  title: 'Formal Mechanised Semantics of CHERI C: Capabilities, Provenance, and Undefined Behaviour'
+  page_type: Redirect
+  collection: pages
+  navigation: []
+  parent: /academic-papers/
+- file: pages/redirects/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md
+  url: /papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/
+  title: It Is Time to Standardize Principles and Practices for Software Memory Safety
+  page_type: Redirect
+  collection: pages
+  navigation: []
+  parent: /academic-papers/
+- file: pages/redirects/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md
+  url: /papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/
+  title: 'Rigorous Engineering for Hardware Security: Formal Modelling and Proof in the CHERI Design and Implementation Process'
+  page_type: Redirect
+  collection: pages
+  navigation: []
+  parent: /academic-papers/
+- file: pages/redirects/papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa.md
+  url: /papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/
+  title: The Arm Morello Evaluation Platform—Validating CHERI-Based Security in a High-Performance System
+  page_type: Redirect
+  collection: pages
+  navigation: []
+  parent: /academic-papers/
+- file: pages/redirects/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk.md
+  url: /papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/
+  title: 'The CHERI Capability Model: Revisiting RISC in an Age of Risk'
+  page_type: Redirect
+  collection: pages
+  navigation: []
+  parent: /academic-papers/
+- file: pages/redirects/groups/cheri-research.md
+  url: /groups/cheri-research/
+  title: CHERI Research WG
+  page_type: Redirect
+  collection: pages
+  navigation: []
+  parent: /working-groups/

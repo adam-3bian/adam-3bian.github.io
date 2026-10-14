@@ -39,13 +39,13 @@ Embedded World Exhibition – Nuremberg Messe – Hall 5, booth 5-177
 
 ## CHERI Alliance Presentations
 
-Flyer CHERI
+- [Flyer CHERI](https://cheri-alliance.org/flyer-cheri/)
 
-Flyer CHERI Alliance
+- [Flyer CHERI Alliance](https://cheri-alliance.org/flyer-cheri-alliance/)
 
-Slides CHERI
+- [Slides CHERI](https://cheri-alliance.org/cheri-basics/)
 
-Slides CHERI Alliance
+- [Slides CHERI Alliance](https://cheri-alliance.org/cheri-alliance-presentation/)
 
 ## Demonstrations
 

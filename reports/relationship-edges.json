@@ -126,7 +126,7 @@
   },
   {
     "from": "/discover/why-cheri/cheri-and-rust/",
-    "to": "/groups/rust-plus-cheri/",
+    "to": "/working-groups/rust-plus-cheri/",
     "field": "related.working-groups"
   },
   {
@@ -210,22 +210,22 @@
     "field": "related.pages"
   },
   {
-    "from": "/alliance/membership/contact/",
+    "from": "/reference/source-versions/contact/",
     "to": "/alliance/membership/membership-benefits-and-options/",
     "field": "related.pages"
   },
   {
-    "from": "/alliance/membership/contact/",
+    "from": "/reference/source-versions/contact/",
     "to": "/news-and-events/people-and-opportunities/job-opportunities/",
     "field": "related.pages"
   },
   {
-    "from": "/reference/source-versions/contact/",
+    "from": "/alliance/membership/contact/",
     "to": "/alliance/membership/membership-benefits-and-options/",
     "field": "related.pages"
   },
   {
-    "from": "/reference/source-versions/contact/",
+    "from": "/alliance/membership/contact/",
     "to": "/news-and-events/people-and-opportunities/job-opportunities/",
     "field": "related.pages"
   },
@@ -551,7 +551,7 @@
   },
   {
     "from": "/discover/resources/reports-and-white-papers/",
-    "to": "/papers/",
+    "to": "/academic-papers/",
     "field": "related.pages"
   },
   {
@@ -561,7 +561,7 @@
   },
   {
     "from": "/reports/",
-    "to": "/papers/",
+    "to": "/academic-papers/",
     "field": "related.pages"
   },
   {
@@ -716,7 +716,7 @@
   },
   {
     "from": "/people/adam-finney/",
-    "to": "/groups/marketing/",
+    "to": "/working-groups/marketing/",
     "field": "related.working-groups"
   },
   {
@@ -756,7 +756,7 @@
   },
   {
     "from": "/people/alfredo-mazzinghi/",
-    "to": "/groups/cheri-qemu/",
+    "to": "/working-groups/cheri-qemu/",
     "field": "related.working-groups"
   },
   {
@@ -771,7 +771,7 @@
   },
   {
     "from": "/people/allison-randal/",
-    "to": "/groups/cheri-linux-working-group/",
+    "to": "/working-groups/cheri-linux-working-group/",
     "field": "related.working-groups"
   },
   {
@@ -811,7 +811,7 @@
   },
   {
     "from": "/people/ben-fletcher/",
-    "to": "/groups/cheri-in-soc/",
+    "to": "/working-groups/cheri-in-soc/",
     "field": "related.working-groups"
   },
   {
@@ -831,7 +831,7 @@
   },
   {
     "from": "/people/brooks-davis/",
-    "to": "/groups/os-support-and-portability/",
+    "to": "/working-groups/os-support-and-portability/",
     "field": "related.working-groups"
   },
   {
@@ -861,7 +861,7 @@
   },
   {
     "from": "/people/david-chisnall/",
-    "to": "/groups/cheri-c-cplusplus/",
+    "to": "/working-groups/cheri-c-cplusplus/",
     "field": "related.working-groups"
   },
   {
@@ -901,7 +901,7 @@
   },
   {
     "from": "/people/edoardo-marangoni/",
-    "to": "/groups/rust-plus-cheri/",
+    "to": "/working-groups/rust-plus-cheri/",
     "field": "related.working-groups"
   },
   {
@@ -931,7 +931,7 @@
   },
   {
     "from": "/people/hesham-almatary/",
-    "to": "/groups/cheri-for-sel4/",
+    "to": "/working-groups/cheri-for-sel4/",
     "field": "related.working-groups"
   },
   {
@@ -946,7 +946,7 @@
   },
   {
     "from": "/people/jennifer-jackson/",
-    "to": "/groups/cheri-zephyr/",
+    "to": "/working-groups/cheri-zephyr/",
     "field": "related.working-groups"
   },
   {
@@ -961,7 +961,7 @@
   },
   {
     "from": "/people/jeremy-singer/",
-    "to": "/groups/cheri-virtual-machines/",
+    "to": "/working-groups/cheri-virtual-machines/",
     "field": "related.working-groups"
   },
   {
@@ -1016,7 +1016,7 @@
   },
   {
     "from": "/people/jonathan-woodruff/",
-    "to": "/groups/cheri-research/",
+    "to": "/working-groups/cheri-research/",
     "field": "related.working-groups"
   },
   {
@@ -1076,7 +1076,7 @@
   },
   {
     "from": "/people/maricel-ventura/",
-    "to": "/groups/cheri-plus-safety/",
+    "to": "/working-groups/cheri-plus-safety/",
     "field": "related.working-groups"
   },
   {
@@ -1106,7 +1106,7 @@
   },
   {
     "from": "/people/marno-van-der-maas/",
-    "to": "/groups/repository-management/",
+    "to": "/working-groups/repository-management/",
     "field": "related.working-groups"
   },
   {
@@ -1136,12 +1136,12 @@
   },
   {
     "from": "/people/mike-eftimakis/",
-    "to": "/groups/certification-working-group/",
+    "to": "/working-groups/certification-working-group/",
     "field": "related.working-groups"
   },
   {
     "from": "/people/mike-eftimakis/",
-    "to": "/groups/promotion-and-ambassador-program/",
+    "to": "/working-groups/promotion-and-ambassador-program/",
     "field": "related.working-groups"
   },
   {
@@ -1156,7 +1156,7 @@
   },
   {
     "from": "/people/murali-vijayaraghavan/",
-    "to": "/groups/mmu-less-systems/",
+    "to": "/working-groups/mmu-less-systems/",
     "field": "related.working-groups"
   },
   {
@@ -1176,7 +1176,7 @@
   },
   {
     "from": "/people/oliver-gray/",
-    "to": "/groups/cheri-freertos/",
+    "to": "/working-groups/cheri-freertos/",
     "field": "related.working-groups"
   },
   {
@@ -1251,7 +1251,7 @@
   },
   {
     "from": "/people/sarah-harris/",
-    "to": "/groups/rust-plus-cheri/",
+    "to": "/working-groups/rust-plus-cheri/",
     "field": "related.working-groups"
   },
   {
@@ -1281,7 +1281,7 @@
   },
   {
     "from": "/people/thierno-sene/",
-    "to": "/groups/cheri-plus-safety/",
+    "to": "/working-groups/cheri-plus-safety/",
     "field": "related.working-groups"
   },
   {
@@ -1296,7 +1296,7 @@
   },
   {
     "from": "/people/tora-fridholm/",
-    "to": "/groups/marketing/",
+    "to": "/working-groups/marketing/",
     "field": "related.working-groups"
   },
   {
@@ -1371,7 +1371,7 @@
   },
   {
     "from": "/news/behind-the-scenes-inside-the-promotion-and-ambassador-program-working-group/",
-    "to": "/groups/promotion-and-ambassador-program/",
+    "to": "/working-groups/promotion-and-ambassador-program/",
     "field": "related.working-groups"
   },
   {
@@ -1651,7 +1651,7 @@
   },
   {
     "from": "/news/cheri-sel4-and-cheri-microkit-released/",
-    "to": "/groups/cheri-for-sel4/",
+    "to": "/working-groups/cheri-for-sel4/",
     "field": "related.working-groups"
   },
   {
@@ -2681,7 +2681,7 @@
   },
   {
     "from": "/news/streamlining-the-cheri-ecosystem-an-update-from-the-repository-management-working-group/",
-    "to": "/groups/repository-management/",
+    "to": "/working-groups/repository-management/",
     "field": "related.working-groups"
   },
   {
@@ -2731,7 +2731,7 @@
   },
   {
     "from": "/news/towards-a-reference-qemu-for-cheri-platform-emulation/",
-    "to": "/groups/cheri-qemu/",
+    "to": "/working-groups/cheri-qemu/",
     "field": "related.working-groups"
   },
   {
@@ -2786,7 +2786,7 @@
   },
   {
     "from": "/news/unlocking-the-future-a-roadmap-for-cheri-technology-advancement/",
-    "to": "/groups/marketing/",
+    "to": "/working-groups/marketing/",
     "field": "related.working-groups"
   },
   {
@@ -2831,7 +2831,7 @@
   },
   {
     "from": "/news/working-group-spotlight-marketing/",
-    "to": "/groups/marketing/",
+    "to": "/working-groups/marketing/",
     "field": "related.working-groups"
   },
   {
@@ -3051,17 +3051,17 @@
   },
   {
     "from": "/events/cheri-blossoms-conference-2025/",
-    "to": "/groups/marketing/",
+    "to": "/working-groups/marketing/",
     "field": "related.working-groups"
   },
   {
     "from": "/events/cheri-blossoms-conference-2025/",
-    "to": "/groups/cheri-qemu/",
+    "to": "/working-groups/cheri-qemu/",
     "field": "related.working-groups"
   },
   {
     "from": "/events/cheri-blossoms-conference-2025/",
-    "to": "/groups/cheri-in-soc/",
+    "to": "/working-groups/cheri-in-soc/",
     "field": "related.working-groups"
   },
   {
@@ -3331,7 +3331,7 @@
   },
   {
     "from": "/events/cheri-blossoms-conference-2026/",
-    "to": "/groups/cheri-in-soc/",
+    "to": "/working-groups/cheri-in-soc/",
     "field": "related.working-groups"
   },
   {
@@ -3835,887 +3835,887 @@
     "field": "related.organisations"
   },
   {
-    "from": "/papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/",
+    "from": "/academic-papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/",
     "to": "/people/jianyi-cheng/",
     "field": "authors"
   },
   {
-    "from": "/papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/",
+    "from": "/academic-papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/",
     "to": "/people/a-theodore-markettos/",
     "field": "authors"
   },
   {
-    "from": "/papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/",
+    "from": "/academic-papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/",
     "to": "/people/alexandre-joannou/",
     "field": "authors"
   },
   {
-    "from": "/papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/",
+    "from": "/academic-papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/",
     "to": "/people/paul-metzger/",
     "field": "authors"
   },
   {
-    "from": "/papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/",
+    "from": "/academic-papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/",
     "to": "/people/matthew-naylor/",
     "field": "authors"
   },
   {
-    "from": "/papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/",
+    "from": "/academic-papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/",
     "to": "/people/peter-rugg/",
     "field": "authors"
   },
   {
-    "from": "/papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/",
+    "from": "/academic-papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/",
     "to": "/people/timothy-m-jones/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
+    "from": "/academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
     "to": "/people/robert-watson/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
+    "from": "/academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
     "to": "/people/jonathan-woodruff/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
+    "from": "/academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
     "to": "/people/peter-g-neumann/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
+    "from": "/academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
     "to": "/people/simon-moore/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
+    "from": "/academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
     "to": "/people/jonathan-anderson/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
+    "from": "/academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
     "to": "/people/david-chisnall/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
+    "from": "/academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
     "to": "/people/nirav-dave/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
+    "from": "/academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
     "to": "/people/brooks-davis/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
+    "from": "/academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
     "to": "/people/khilan-gudka/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
+    "from": "/academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
     "to": "/people/ben-laurie/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
+    "from": "/academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
     "to": "/people/steven-j-murdoch/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
+    "from": "/academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
     "to": "/people/robert-m-norton/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
+    "from": "/academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
     "to": "/people/michael-roe/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
+    "from": "/academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
     "to": "/people/stacey-son/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
+    "from": "/academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
     "to": "/people/munraj-vadera/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-concentrate-practical-compressed-capabilities/",
+    "from": "/academic-papers/cheri-concentrate-practical-compressed-capabilities/",
     "to": "/people/jonathan-woodruff/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-concentrate-practical-compressed-capabilities/",
+    "from": "/academic-papers/cheri-concentrate-practical-compressed-capabilities/",
     "to": "/people/alexandre-joannou/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-concentrate-practical-compressed-capabilities/",
+    "from": "/academic-papers/cheri-concentrate-practical-compressed-capabilities/",
     "to": "/people/hongyan-xia/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-concentrate-practical-compressed-capabilities/",
+    "from": "/academic-papers/cheri-concentrate-practical-compressed-capabilities/",
     "to": "/people/anthony-fox/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-concentrate-practical-compressed-capabilities/",
+    "from": "/academic-papers/cheri-concentrate-practical-compressed-capabilities/",
     "to": "/people/robert-m-norton/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-concentrate-practical-compressed-capabilities/",
+    "from": "/academic-papers/cheri-concentrate-practical-compressed-capabilities/",
     "to": "/people/thomas-bauereiss/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-concentrate-practical-compressed-capabilities/",
+    "from": "/academic-papers/cheri-concentrate-practical-compressed-capabilities/",
     "to": "/people/david-chisnall/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-concentrate-practical-compressed-capabilities/",
+    "from": "/academic-papers/cheri-concentrate-practical-compressed-capabilities/",
     "to": "/people/brooks-davis/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-concentrate-practical-compressed-capabilities/",
+    "from": "/academic-papers/cheri-concentrate-practical-compressed-capabilities/",
     "to": "/people/khilan-gudka/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-concentrate-practical-compressed-capabilities/",
+    "from": "/academic-papers/cheri-concentrate-practical-compressed-capabilities/",
     "to": "/people/nathaniel-wesley-filardo/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-concentrate-practical-compressed-capabilities/",
+    "from": "/academic-papers/cheri-concentrate-practical-compressed-capabilities/",
     "to": "/people/a-theodore-markettos/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-concentrate-practical-compressed-capabilities/",
+    "from": "/academic-papers/cheri-concentrate-practical-compressed-capabilities/",
     "to": "/people/michael-roe/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-concentrate-practical-compressed-capabilities/",
+    "from": "/academic-papers/cheri-concentrate-practical-compressed-capabilities/",
     "to": "/people/peter-g-neumann/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-concentrate-practical-compressed-capabilities/",
+    "from": "/academic-papers/cheri-concentrate-practical-compressed-capabilities/",
     "to": "/people/robert-watson/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-concentrate-practical-compressed-capabilities/",
+    "from": "/academic-papers/cheri-concentrate-practical-compressed-capabilities/",
     "to": "/people/simon-moore/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
+    "from": "/academic-papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
     "to": "/people/robert-watson/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
+    "from": "/academic-papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
     "to": "/people/david-chisnall/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
+    "from": "/academic-papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
     "to": "/people/jessica-clarke/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
+    "from": "/academic-papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
     "to": "/people/brooks-davis/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
+    "from": "/academic-papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
     "to": "/people/nathaniel-wesley-filardo/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
+    "from": "/academic-papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
     "to": "/people/ben-laurie/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
+    "from": "/academic-papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
     "to": "/people/simon-moore/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
+    "from": "/academic-papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
     "to": "/people/peter-g-neumann/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
+    "from": "/academic-papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
     "to": "/people/alex-richardson/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
+    "from": "/academic-papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
     "to": "/people/peter-sewell/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
+    "from": "/academic-papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
     "to": "/people/konrad-witaszczyk/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
+    "from": "/academic-papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
     "to": "/people/jonathan-woodruff/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
+    "from": "/academic-papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
     "to": "/people/brooks-davis/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
+    "from": "/academic-papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
     "to": "/people/robert-watson/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
+    "from": "/academic-papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
     "to": "/people/alex-richardson/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
+    "from": "/academic-papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
     "to": "/people/peter-g-neumann/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
+    "from": "/academic-papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
     "to": "/people/simon-moore/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
+    "from": "/academic-papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
     "to": "/people/john-baldwin/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
+    "from": "/academic-papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
     "to": "/people/david-chisnall/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
+    "from": "/academic-papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
     "to": "/people/jessica-clarke/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
+    "from": "/academic-papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
     "to": "/people/nathaniel-wesley-filardo/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
+    "from": "/academic-papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
     "to": "/people/khilan-gudka/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
+    "from": "/academic-papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
     "to": "/people/alexandre-joannou/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriot-complete-memory-safety-for-embedded-devices/",
+    "from": "/academic-papers/cheriot-complete-memory-safety-for-embedded-devices/",
     "to": "/people/saar-amar/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriot-complete-memory-safety-for-embedded-devices/",
+    "from": "/academic-papers/cheriot-complete-memory-safety-for-embedded-devices/",
     "to": "/people/david-chisnall/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriot-complete-memory-safety-for-embedded-devices/",
+    "from": "/academic-papers/cheriot-complete-memory-safety-for-embedded-devices/",
     "to": "/people/tony-chen/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriot-complete-memory-safety-for-embedded-devices/",
+    "from": "/academic-papers/cheriot-complete-memory-safety-for-embedded-devices/",
     "to": "/people/nathaniel-wesley-filardo/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriot-complete-memory-safety-for-embedded-devices/",
+    "from": "/academic-papers/cheriot-complete-memory-safety-for-embedded-devices/",
     "to": "/people/ben-laurie/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriot-complete-memory-safety-for-embedded-devices/",
+    "from": "/academic-papers/cheriot-complete-memory-safety-for-embedded-devices/",
     "to": "/people/kunyan-liu/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriot-complete-memory-safety-for-embedded-devices/",
+    "from": "/academic-papers/cheriot-complete-memory-safety-for-embedded-devices/",
     "to": "/people/robert-m-norton/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriot-complete-memory-safety-for-embedded-devices/",
+    "from": "/academic-papers/cheriot-complete-memory-safety-for-embedded-devices/",
     "to": "/people/simon-moore/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriot-complete-memory-safety-for-embedded-devices/",
+    "from": "/academic-papers/cheriot-complete-memory-safety-for-embedded-devices/",
     "to": "/people/yucong-tao/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriot-complete-memory-safety-for-embedded-devices/",
+    "from": "/academic-papers/cheriot-complete-memory-safety-for-embedded-devices/",
     "to": "/people/robert-watson/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriot-complete-memory-safety-for-embedded-devices/",
+    "from": "/academic-papers/cheriot-complete-memory-safety-for-embedded-devices/",
     "to": "/people/hongyan-xia/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriot-complete-memory-safety-for-embedded-devices/",
+    "from": "/academic-papers/cheriot-complete-memory-safety-for-embedded-devices/",
     "to": "/hardware/cheriot/",
     "field": "related.hardware"
   },
   {
-    "from": "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
+    "from": "/academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
     "to": "/people/saar-amar/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
+    "from": "/academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
     "to": "/people/tony-chen/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
+    "from": "/academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
     "to": "/people/david-chisnall/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
+    "from": "/academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
     "to": "/people/nathaniel-wesley-filardo/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
+    "from": "/academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
     "to": "/people/ben-laurie/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
+    "from": "/academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
     "to": "/people/hugo-lefeuvre/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
+    "from": "/academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
     "to": "/people/kunyan-liu/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
+    "from": "/academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
     "to": "/people/simon-moore/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
+    "from": "/academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
     "to": "/people/robert-norton-wright/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
+    "from": "/academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
     "to": "/people/margo-seltzer/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
+    "from": "/academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
     "to": "/people/yucong-tao/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
+    "from": "/academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
     "to": "/people/robert-watson/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
+    "from": "/academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
     "to": "/people/hongyan-xia/",
     "field": "authors"
   },
   {
-    "from": "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
+    "from": "/academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
     "to": "/hardware/cheriot/",
     "field": "related.hardware"
   },
   {
-    "from": "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
+    "from": "/academic-papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
     "to": "/people/nathaniel-wesley-filardo/",
     "field": "authors"
   },
   {
-    "from": "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
+    "from": "/academic-papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
     "to": "/people/brett-f-gutstein/",
     "field": "authors"
   },
   {
-    "from": "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
+    "from": "/academic-papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
     "to": "/people/jonathan-woodruff/",
     "field": "authors"
   },
   {
-    "from": "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
+    "from": "/academic-papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
     "to": "/people/jessica-clarke/",
     "field": "authors"
   },
   {
-    "from": "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
+    "from": "/academic-papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
     "to": "/people/peter-rugg/",
     "field": "authors"
   },
   {
-    "from": "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
+    "from": "/academic-papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
     "to": "/people/brooks-davis/",
     "field": "authors"
   },
   {
-    "from": "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
+    "from": "/academic-papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
     "to": "/people/mark-johnston/",
     "field": "authors"
   },
   {
-    "from": "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
+    "from": "/academic-papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
     "to": "/people/robert-norton-wright/",
     "field": "authors"
   },
   {
-    "from": "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
+    "from": "/academic-papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
     "to": "/people/david-chisnall/",
     "field": "authors"
   },
   {
-    "from": "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
+    "from": "/academic-papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
     "to": "/people/simon-moore/",
     "field": "authors"
   },
   {
-    "from": "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
+    "from": "/academic-papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
     "to": "/people/peter-g-neumann/",
     "field": "authors"
   },
   {
-    "from": "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
+    "from": "/academic-papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
     "to": "/people/robert-watson/",
     "field": "authors"
   },
   {
-    "from": "/papers/cornucopia-temporal-safety-for-cheri-heaps/",
+    "from": "/academic-papers/cornucopia-temporal-safety-for-cheri-heaps/",
     "to": "/people/nathaniel-wesley-filardo/",
     "field": "authors"
   },
   {
-    "from": "/papers/cornucopia-temporal-safety-for-cheri-heaps/",
+    "from": "/academic-papers/cornucopia-temporal-safety-for-cheri-heaps/",
     "to": "/people/brett-f-gutstein/",
     "field": "authors"
   },
   {
-    "from": "/papers/cornucopia-temporal-safety-for-cheri-heaps/",
+    "from": "/academic-papers/cornucopia-temporal-safety-for-cheri-heaps/",
     "to": "/people/jonathan-woodruff/",
     "field": "authors"
   },
   {
-    "from": "/papers/cornucopia-temporal-safety-for-cheri-heaps/",
+    "from": "/academic-papers/cornucopia-temporal-safety-for-cheri-heaps/",
     "to": "/people/sam-ainsworth/",
     "field": "authors"
   },
   {
-    "from": "/papers/cornucopia-temporal-safety-for-cheri-heaps/",
+    "from": "/academic-papers/cornucopia-temporal-safety-for-cheri-heaps/",
     "to": "/people/lucian-paul-trifu/",
     "field": "authors"
   },
   {
-    "from": "/papers/cornucopia-temporal-safety-for-cheri-heaps/",
+    "from": "/academic-papers/cornucopia-temporal-safety-for-cheri-heaps/",
     "to": "/people/brooks-davis/",
     "field": "authors"
   },
   {
-    "from": "/papers/cornucopia-temporal-safety-for-cheri-heaps/",
+    "from": "/academic-papers/cornucopia-temporal-safety-for-cheri-heaps/",
     "to": "/people/hongyan-xia/",
     "field": "authors"
   },
   {
-    "from": "/papers/cornucopia-temporal-safety-for-cheri-heaps/",
+    "from": "/academic-papers/cornucopia-temporal-safety-for-cheri-heaps/",
     "to": "/people/edward-tomasz-napieraa/",
     "field": "authors"
   },
   {
-    "from": "/papers/cornucopia-temporal-safety-for-cheri-heaps/",
+    "from": "/academic-papers/cornucopia-temporal-safety-for-cheri-heaps/",
     "to": "/people/alex-richardson/",
     "field": "authors"
   },
   {
-    "from": "/papers/cornucopia-temporal-safety-for-cheri-heaps/",
+    "from": "/academic-papers/cornucopia-temporal-safety-for-cheri-heaps/",
     "to": "/people/john-baldwin/",
     "field": "authors"
   },
   {
-    "from": "/papers/cornucopia-temporal-safety-for-cheri-heaps/",
+    "from": "/academic-papers/cornucopia-temporal-safety-for-cheri-heaps/",
     "to": "/people/david-chisnall/",
     "field": "authors"
   },
   {
-    "from": "/papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/",
+    "from": "/academic-papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/",
     "to": "/people/paul-metzger/",
     "field": "authors"
   },
   {
-    "from": "/papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/",
+    "from": "/academic-papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/",
     "to": "/people/a-theodore-markettos/",
     "field": "authors"
   },
   {
-    "from": "/papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/",
+    "from": "/academic-papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/",
     "to": "/people/edward-tomasz-napieraa/",
     "field": "authors"
   },
   {
-    "from": "/papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/",
+    "from": "/academic-papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/",
     "to": "/people/matthew-naylor/",
     "field": "authors"
   },
   {
-    "from": "/papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/",
+    "from": "/academic-papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/",
     "to": "/people/robert-watson/",
     "field": "authors"
   },
   {
-    "from": "/papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/",
+    "from": "/academic-papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/",
     "to": "/people/timothy-m-jones/",
     "field": "authors"
   },
   {
-    "from": "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
+    "from": "/academic-papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
     "to": "/people/vadim-zaliva/",
     "field": "authors"
   },
   {
-    "from": "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
+    "from": "/academic-papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
     "to": "/people/kayvan-memarian/",
     "field": "authors"
   },
   {
-    "from": "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
+    "from": "/academic-papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
     "to": "/people/ricardo-almeida/",
     "field": "authors"
   },
   {
-    "from": "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
+    "from": "/academic-papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
     "to": "/people/jessica-clarke/",
     "field": "authors"
   },
   {
-    "from": "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
+    "from": "/academic-papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
     "to": "/people/brooks-davis/",
     "field": "authors"
   },
   {
-    "from": "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
+    "from": "/academic-papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
     "to": "/people/alex-richardson/",
     "field": "authors"
   },
   {
-    "from": "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
+    "from": "/academic-papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
     "to": "/people/david-chisnall/",
     "field": "authors"
   },
   {
-    "from": "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
+    "from": "/academic-papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
     "to": "/people/brian-campbell/",
     "field": "authors"
   },
   {
-    "from": "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
+    "from": "/academic-papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
     "to": "/people/ian-stark/",
     "field": "authors"
   },
   {
-    "from": "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
+    "from": "/academic-papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
     "to": "/people/robert-watson/",
     "field": "authors"
   },
   {
-    "from": "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
+    "from": "/academic-papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
     "to": "/people/peter-sewell/",
     "field": "authors"
   },
   {
-    "from": "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
+    "from": "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
     "to": "/people/robert-watson/",
     "field": "authors"
   },
   {
-    "from": "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
+    "from": "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
     "to": "/people/john-baldwin/",
     "field": "authors"
   },
   {
-    "from": "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
+    "from": "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
     "to": "/people/tony-chen/",
     "field": "authors"
   },
   {
-    "from": "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
+    "from": "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
     "to": "/people/david-chisnall/",
     "field": "authors"
   },
   {
-    "from": "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
+    "from": "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
     "to": "/people/jessica-clarke/",
     "field": "authors"
   },
   {
-    "from": "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
+    "from": "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
     "to": "/people/brooks-davis/",
     "field": "authors"
   },
   {
-    "from": "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
+    "from": "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
     "to": "/people/nathaniel-wesley-filardo/",
     "field": "authors"
   },
   {
-    "from": "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
+    "from": "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
     "to": "/people/brett-f-gutstein/",
     "field": "authors"
   },
   {
-    "from": "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
+    "from": "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
     "to": "/people/graeme-jenkinson/",
     "field": "authors"
   },
   {
-    "from": "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
+    "from": "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
     "to": "/people/ben-laurie/",
     "field": "authors"
   },
   {
-    "from": "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
+    "from": "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
     "to": "/people/alfredo-mazzinghi/",
     "field": "authors"
   },
   {
-    "from": "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
+    "from": "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
     "to": "/people/simon-moore/",
     "field": "authors"
   },
   {
-    "from": "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
+    "from": "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
     "to": "/people/peter-g-neumann/",
     "field": "authors"
   },
   {
-    "from": "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
+    "from": "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
     "to": "/people/hamed-okhravi/",
     "field": "authors"
   },
   {
-    "from": "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
+    "from": "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
     "to": "/people/alex-rebert/",
     "field": "authors"
   },
   {
-    "from": "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
+    "from": "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
     "to": "/people/alex-richardson/",
     "field": "authors"
   },
   {
-    "from": "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
+    "from": "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
     "to": "/people/peter-sewell/",
     "field": "authors"
   },
   {
-    "from": "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
+    "from": "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
     "to": "/people/laurence-tratt/",
     "field": "authors"
   },
   {
-    "from": "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
+    "from": "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
     "to": "/people/murali-vijayaraghavan/",
     "field": "authors"
   },
   {
-    "from": "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
+    "from": "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
     "to": "/people/hugo-vincent/",
     "field": "authors"
   },
   {
-    "from": "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
+    "from": "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
     "to": "/people/konrad-witaszczyk/",
     "field": "authors"
   },
   {
-    "from": "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
+    "from": "/academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
     "to": "/people/kyndylan-nienhuis/",
     "field": "authors"
   },
   {
-    "from": "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
+    "from": "/academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
     "to": "/people/alexandre-joannou/",
     "field": "authors"
   },
   {
-    "from": "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
+    "from": "/academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
     "to": "/people/thomas-bauereiss/",
     "field": "authors"
   },
   {
-    "from": "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
+    "from": "/academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
     "to": "/people/anthony-fox/",
     "field": "authors"
   },
   {
-    "from": "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
+    "from": "/academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
     "to": "/people/michael-roe/",
     "field": "authors"
   },
   {
-    "from": "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
+    "from": "/academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
     "to": "/people/brian-campbell/",
     "field": "authors"
   },
   {
-    "from": "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
+    "from": "/academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
     "to": "/people/matthew-naylor/",
     "field": "authors"
   },
   {
-    "from": "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
+    "from": "/academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
     "to": "/people/robert-m-norton/",
     "field": "authors"
   },
   {
-    "from": "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
+    "from": "/academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
     "to": "/people/simon-moore/",
     "field": "authors"
   },
   {
-    "from": "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
+    "from": "/academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
     "to": "/people/peter-g-neumann/",
     "field": "authors"
   },
   {
-    "from": "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
+    "from": "/academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
     "to": "/people/ian-stark/",
     "field": "authors"
   },
   {
-    "from": "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
+    "from": "/academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
     "to": "/people/robert-watson/",
     "field": "authors"
   },
   {
-    "from": "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
+    "from": "/academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
     "to": "/people/peter-sewell/",
     "field": "authors"
   },
   {
-    "from": "/papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/",
+    "from": "/academic-papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/",
     "to": "/people/richard-grisenthwaite/",
     "field": "authors"
   },
   {
-    "from": "/papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/",
+    "from": "/academic-papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/",
     "to": "/people/graeme-barnes/",
     "field": "authors"
   },
   {
-    "from": "/papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/",
+    "from": "/academic-papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/",
     "to": "/people/robert-watson/",
     "field": "authors"
   },
   {
-    "from": "/papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/",
+    "from": "/academic-papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/",
     "to": "/people/simon-moore/",
     "field": "authors"
   },
   {
-    "from": "/papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/",
+    "from": "/academic-papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/",
     "to": "/people/peter-sewell/",
     "field": "authors"
   },
   {
-    "from": "/papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/",
+    "from": "/academic-papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/",
     "to": "/people/jonathan-woodruff/",
     "field": "authors"
   },
   {
-    "from": "/papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/",
+    "from": "/academic-papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/",
     "to": "/hardware/morello/",
     "field": "related.hardware"
   },
   {
-    "from": "/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/",
+    "from": "/academic-papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/",
     "to": "/people/jonathan-woodruff/",
     "field": "authors"
   },
   {
-    "from": "/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/",
+    "from": "/academic-papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/",
     "to": "/people/robert-watson/",
     "field": "authors"
   },
   {
-    "from": "/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/",
+    "from": "/academic-papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/",
     "to": "/people/david-chisnall/",
     "field": "authors"
   },
   {
-    "from": "/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/",
+    "from": "/academic-papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/",
     "to": "/people/simon-moore/",
     "field": "authors"
   },
   {
-    "from": "/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/",
+    "from": "/academic-papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/",
     "to": "/people/jonathan-anderson/",
     "field": "authors"
   },
   {
-    "from": "/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/",
+    "from": "/academic-papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/",
     "to": "/people/brooks-davis/",
     "field": "authors"
   },
   {
-    "from": "/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/",
+    "from": "/academic-papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/",
     "to": "/people/ben-laurie/",
     "field": "authors"
   },
   {
-    "from": "/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/",
+    "from": "/academic-papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/",
     "to": "/people/peter-g-neumann/",
     "field": "authors"
   },
   {
-    "from": "/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/",
+    "from": "/academic-papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/",
     "to": "/people/robert-m-norton/",
     "field": "authors"
   },
   {
-    "from": "/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/",
+    "from": "/academic-papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/",
     "to": "/people/michael-roe/",
     "field": "authors"
   },
@@ -5015,237 +5015,237 @@
     "field": "related.hardware"
   },
   {
-    "from": "/groups/certification-working-group/",
+    "from": "/working-groups/certification-working-group/",
     "to": "/people/mike-eftimakis/",
     "field": "leads"
   },
   {
-    "from": "/groups/certification-working-group/",
+    "from": "/working-groups/certification-working-group/",
     "to": "/organisations/cheri-alliance/",
     "field": "related.organisations"
   },
   {
-    "from": "/groups/cheri-c-cplusplus/",
+    "from": "/working-groups/cheri-c-cplusplus/",
     "to": "/people/david-chisnall/",
     "field": "leads"
   },
   {
-    "from": "/groups/cheri-c-cplusplus/",
+    "from": "/working-groups/cheri-c-cplusplus/",
     "to": "/organisations/sci-semiconductor/",
     "field": "related.organisations"
   },
   {
-    "from": "/groups/cheri-for-sel4/",
+    "from": "/working-groups/cheri-for-sel4/",
     "to": "/people/hesham-almatary/",
     "field": "leads"
   },
   {
-    "from": "/groups/cheri-for-sel4/",
+    "from": "/working-groups/cheri-for-sel4/",
     "to": "/organisations/capabilities-limited/",
     "field": "related.organisations"
   },
   {
-    "from": "/groups/cheri-freertos/",
+    "from": "/working-groups/cheri-freertos/",
     "to": "/people/oliver-gray/",
     "field": "leads"
   },
   {
-    "from": "/groups/cheri-freertos/",
+    "from": "/working-groups/cheri-freertos/",
     "to": "/organisations/codasip/",
     "field": "related.organisations"
   },
   {
-    "from": "/groups/cheri-in-soc/",
+    "from": "/working-groups/cheri-in-soc/",
     "to": "/people/ben-fletcher/",
     "field": "leads"
   },
   {
-    "from": "/groups/cheri-in-soc/",
+    "from": "/working-groups/cheri-in-soc/",
     "to": "/organisations/codasip/",
     "field": "related.organisations"
   },
   {
-    "from": "/groups/cheri-linux-working-group/",
+    "from": "/working-groups/cheri-linux-working-group/",
     "to": "/people/allison-randal/",
     "field": "leads"
   },
   {
-    "from": "/groups/cheri-linux-working-group/",
+    "from": "/working-groups/cheri-linux-working-group/",
     "to": "/organisations/capabilities-limited/",
     "field": "related.organisations"
   },
   {
-    "from": "/groups/cheri-linux-working-group/",
+    "from": "/working-groups/cheri-linux-working-group/",
     "to": "/software/cheri-linux/",
     "field": "related.software"
   },
   {
-    "from": "/groups/cheri-plus-safety/",
+    "from": "/working-groups/cheri-plus-safety/",
     "to": "/people/maricel-ventura/",
     "field": "leads"
   },
   {
-    "from": "/groups/cheri-plus-safety/",
+    "from": "/working-groups/cheri-plus-safety/",
     "to": "/people/thierno-sene/",
     "field": "leads"
   },
   {
-    "from": "/groups/cheri-plus-safety/",
+    "from": "/working-groups/cheri-plus-safety/",
     "to": "/organisations/codasip/",
     "field": "related.organisations"
   },
   {
-    "from": "/groups/cheri-qemu/",
+    "from": "/working-groups/cheri-qemu/",
     "to": "/people/alfredo-mazzinghi/",
     "field": "leads"
   },
   {
-    "from": "/groups/cheri-qemu/",
+    "from": "/working-groups/cheri-qemu/",
     "to": "/organisations/capabilities-limited/",
     "field": "related.organisations"
   },
   {
-    "from": "/groups/cheri-research/",
+    "from": "/working-groups/cheri-research/",
     "to": "/people/jonathan-woodruff/",
     "field": "leads"
   },
   {
-    "from": "/groups/cheri-research/",
+    "from": "/working-groups/cheri-research/",
     "to": "/organisations/university-of-cambridge/",
     "field": "related.organisations"
   },
   {
-    "from": "/groups/cheri-virtual-machines/",
+    "from": "/working-groups/cheri-virtual-machines/",
     "to": "/people/jeremy-singer/",
     "field": "leads"
   },
   {
-    "from": "/groups/cheri-virtual-machines/",
+    "from": "/working-groups/cheri-virtual-machines/",
     "to": "/organisations/university-of-glasgow/",
     "field": "related.organisations"
   },
   {
-    "from": "/groups/cheri-zephyr/",
+    "from": "/working-groups/cheri-zephyr/",
     "to": "/people/jennifer-jackson/",
     "field": "leads"
   },
   {
-    "from": "/groups/cheri-zephyr/",
+    "from": "/working-groups/cheri-zephyr/",
     "to": "/organisations/university-of-birmingham/",
     "field": "related.organisations"
   },
   {
-    "from": "/groups/cheri-zephyr/",
+    "from": "/working-groups/cheri-zephyr/",
     "to": "/software/zephyr/",
     "field": "related.software"
   },
   {
-    "from": "/groups/marketing/",
+    "from": "/working-groups/marketing/",
     "to": "/people/adam-finney/",
     "field": "leads"
   },
   {
-    "from": "/groups/marketing/",
+    "from": "/working-groups/marketing/",
     "to": "/organisations/3bian/",
     "field": "related.organisations"
   },
   {
-    "from": "/groups/mmu-less-systems/",
+    "from": "/working-groups/mmu-less-systems/",
     "to": "/people/murali-vijayaraghavan/",
     "field": "leads"
   },
   {
-    "from": "/groups/mmu-less-systems/",
+    "from": "/working-groups/mmu-less-systems/",
     "to": "/organisations/google/",
     "field": "related.organisations"
   },
   {
-    "from": "/groups/mmu-less-systems/",
+    "from": "/working-groups/mmu-less-systems/",
     "to": "/hardware/cheriot/",
     "field": "related.hardware"
   },
   {
-    "from": "/groups/os-support-and-portability/",
+    "from": "/working-groups/os-support-and-portability/",
     "to": "/people/brooks-davis/",
     "field": "leads"
   },
   {
-    "from": "/groups/os-support-and-portability/",
+    "from": "/working-groups/os-support-and-portability/",
     "to": "/organisations/capabilities-limited/",
     "field": "related.organisations"
   },
   {
-    "from": "/groups/os-support-and-portability/",
+    "from": "/working-groups/os-support-and-portability/",
     "to": "/software/cheri-linux/",
     "field": "related.software"
   },
   {
-    "from": "/groups/os-support-and-portability/",
+    "from": "/working-groups/os-support-and-portability/",
     "to": "/software/zephyr/",
     "field": "related.software"
   },
   {
-    "from": "/groups/promotion-and-ambassador-program/",
+    "from": "/working-groups/promotion-and-ambassador-program/",
     "to": "/people/mike-eftimakis/",
     "field": "leads"
   },
   {
-    "from": "/groups/promotion-and-ambassador-program/",
+    "from": "/working-groups/promotion-and-ambassador-program/",
     "to": "/organisations/codasip/",
     "field": "related.organisations"
   },
   {
-    "from": "/groups/promotion-and-ambassador-program/",
+    "from": "/working-groups/promotion-and-ambassador-program/",
     "to": "/organisations/cheri-alliance/",
     "field": "related.organisations"
   },
   {
-    "from": "/groups/repository-management/",
+    "from": "/working-groups/repository-management/",
     "to": "/people/marno-van-der-maas/",
     "field": "leads"
   },
   {
-    "from": "/groups/repository-management/",
+    "from": "/working-groups/repository-management/",
     "to": "/organisations/lowrisc/",
     "field": "related.organisations"
   },
   {
-    "from": "/groups/repository-management/",
+    "from": "/working-groups/repository-management/",
     "to": "/organisations/cheri-alliance/",
     "field": "related.organisations"
   },
   {
-    "from": "/groups/rust-plus-cheri/",
+    "from": "/working-groups/rust-plus-cheri/",
     "to": "/people/edoardo-marangoni/",
     "field": "leads"
   },
   {
-    "from": "/groups/rust-plus-cheri/",
+    "from": "/working-groups/rust-plus-cheri/",
     "to": "/people/sarah-harris/",
     "field": "leads"
   },
   {
-    "from": "/groups/rust-plus-cheri/",
+    "from": "/working-groups/rust-plus-cheri/",
     "to": "/organisations/sci-semiconductor/",
     "field": "related.organisations"
   },
   {
-    "from": "/groups/rust-plus-cheri/",
+    "from": "/working-groups/rust-plus-cheri/",
     "to": "/organisations/university-of-kent/",
     "field": "related.organisations"
   },
   {
-    "from": "/groups/rust-plus-cheri/",
+    "from": "/working-groups/rust-plus-cheri/",
     "to": "/hardware/cheriot/",
     "field": "related.hardware"
   },
   {
-    "from": "/groups/rust-plus-cheri/",
+    "from": "/working-groups/rust-plus-cheri/",
     "to": "/hardware/morello/",
     "field": "related.hardware"
   },
   {
-    "from": "/groups/rust-plus-cheri/",
+    "from": "/working-groups/rust-plus-cheri/",
     "to": "/software/rust/",
     "field": "related.software"
   },
@@ -5396,7 +5396,7 @@
   },
   {
     "from": "/guides/technical-faq/",
-    "to": "/groups/cheri-linux-working-group/",
+    "to": "/working-groups/cheri-linux-working-group/",
     "field": "related.working-groups"
   },
   {

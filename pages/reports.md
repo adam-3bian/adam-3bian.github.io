@@ -11,7 +11,7 @@ next_page_url: /discover/resources/videos-and-presentations/
 related:
   pages:
   - /discover/resources/specifications/
-  - /papers/
+  - /academic-papers/
   people: []
   organisations: []
   working-groups: []

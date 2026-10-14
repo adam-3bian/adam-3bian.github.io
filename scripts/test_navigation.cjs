@@ -5,7 +5,7 @@ const path = require('node:path');
 const { chromium } = require('playwright');
 
 const base = process.env.SITE_URL || 'http://127.0.0.1:4000/';
-const reportDir = path.resolve('reports/navigation-tests');
+const reportDir = path.resolve(process.env.REPORT_ROOT || 'reports', 'navigation-tests');
 fs.mkdirSync(reportDir, { recursive: true });
 const widths = [1440, 1024, 768, 640, 375];
 const report = { widths, panelsChecked: 0, accessibilityChecks: 0 };
@@ -58,6 +58,10 @@ async function assertAccessible(page) {
       assert.equal(await menus.count(), 5);
       assert.equal(await page.locator('.source-nav a').count(), expectedMenuLinks, 'Canonical primary routes were lost');
       assert.equal(await page.locator('.collection-nav a').count(), audit.collection_count);
+      assert.equal(await page.locator('.site-header .collection-nav, .site-header .checks-link').count(), 0);
+      assert.equal(await page.locator('.collection-footer .checks-link').getAttribute('href'), new URL('checks/', base).pathname);
+      assert.equal(await page.locator('.collection-footer').evaluate(element => element.previousElementSibling.matches('footer.site-footer')), true, 'Collection shortcuts must follow the footer');
+      assert.equal(await page.locator('.site-header .brand img').getAttribute('alt'), 'CHERI Alliance');
       assert.deepEqual(await page.locator('.collection-nav a').evaluateAll(links => links.map(link => new URL(link.href).pathname).sort()), audit.collections.map(collection => new URL(collection.url.replace(/^\//, ''), base).pathname).sort(), 'Collection directory routes');
       assert.equal(await toggle.isVisible(), !desktop);
       assert.equal(await navigation.isVisible(), desktop);

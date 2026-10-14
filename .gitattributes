@@ -1,0 +1,2 @@
+# Keep downloaded SVG artwork byte-for-byte, including its source whitespace.
+assets/organisations/**/logo-source.svg -text whitespace=-blank-at-eol

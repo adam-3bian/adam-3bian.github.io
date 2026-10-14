@@ -14,7 +14,8 @@ kramdown:
 exclude:
 - README.md
 - NAVIGATION.md
-- FRONT_MATTER.md
+- FRONT_MATTER.MD
+- DESIGN.MD
 - Gemfile
 - Gemfile.lock
 - scripts
@@ -38,7 +39,7 @@ collections:
     permalink: /events/:name/
   academic-papers:
     output: true
-    permalink: /papers/:name/
+    permalink: /academic-papers/:name/
   hardware:
     output: true
     permalink: /hardware/:name/
@@ -47,7 +48,7 @@ collections:
     permalink: /software/:name/
   working-groups:
     output: true
-    permalink: /groups/:name/
+    permalink: /working-groups/:name/
   guides:
     output: true
     permalink: /guides/:name/
@@ -95,7 +96,7 @@ defaults:
     type: academic-papers
   values:
     layout: document
-    parent: /papers/
+    parent: /academic-papers/
 - scope:
     path: ''
     type: hardware
@@ -113,7 +114,7 @@ defaults:
     type: working-groups
   values:
     layout: document
-    parent: /groups/
+    parent: /working-groups/
 - scope:
     path: ''
     type: guides
@@ -356,8 +357,8 @@ defaults:
     path: pages/groups.md
   values:
     alternate: true
-title: CHERI Content Viewer
-description: A minimal Jekyll site for reviewing migrated CHERI Alliance records.
+title: CHERI Alliance
+description: Building the ecosystem behind memory-safe computing.
 lang: en-GB
 url: https://adam-3bian.github.io
 baseurl: ''
@@ -398,7 +399,7 @@ navigation:
       - title: Documentation & Guides
         url: /discover/resources/documentation-and-guides/
       - title: Academic Papers
-        url: /papers/
+        url: /academic-papers/
       - title: Reports & White Papers
         url: /reports/
       - title: Glossary
@@ -547,7 +548,7 @@ navigation:
       - title: Governing Board
         url: /alliance/leadership/governing-board/
       - title: Working Groups
-        url: /alliance/leadership/working-groups/
+        url: /working-groups/
       - title: Ambassadors
         url: /alliance/leadership/ambassadors/
     - title: Membership
@@ -620,7 +621,7 @@ navigation:
     - title: Members
       url: /alliance/leadership/members/
     - title: Working Groups
-      url: /alliance/leadership/working-groups/
+      url: /working-groups/
     - title: Contact the Alliance
       url: /alliance/membership/contact/
   - title: Legal
@@ -642,7 +643,7 @@ navigation:
     - title: Software
       url: /software/
     - title: Papers
-      url: /papers/
+      url: /academic-papers/
   social:
   - title: LinkedIn
     url: https://www.linkedin.com/company/cheri-alliance/

@@ -1,6 +1,6 @@
 ---
 title: Microservice Store
-image_url: /assets/organisations/microservice-store/placeholder.svg
+image_url: /assets/organisations/microservice-store/logo-source.png
 website_url: null
 membership_tier: null
 is_founding_member: null

@@ -28,6 +28,13 @@ related:
 
 ## How CHERI Can Limit the Blast Radius in Long-Life CNI Systems
 
+<figure class="image-left" markdown="block">
+
+![Long-life utility platforms must keep evolving without allowing each new software component to enlarge the blast radius of a failure.](/assets/news/beyond-software-patching/80ee4d1338-beyond_software_patching_blog_1.png)
+
+<figcaption>Long-life utility platforms must keep evolving without allowing each new software component to enlarge the blast radius of a failure.</figcaption>
+</figure>
+
 Critical National Infrastructure (CNI) products may remain in service for 10, 15 or even 20 years. During that time, software changes, attack techniques evolve and regulation is now becoming more demanding.
 
 No product team or company can guarantee that every defect will be found before deployment. The more practical question is:
@@ -36,12 +43,7 @@ If your product is compromised in the field, can its underlying platform limit t
 
 This is one of the central problems CHERI can help address.
 
-<figure class="image-full" markdown="block">
 
-![Long-life utility platforms must keep evolving without allowing each new software component to enlarge the blast radius of a failure.](/assets/news/beyond-software-patching/80ee4d1338-beyond_software_patching_blog_1.png)
-
-<figcaption>Long-life utility platforms must keep evolving without allowing each new software component to enlarge the blast radius of a failure.</figcaption>
-</figure>
 
 ## The cost often extends far beyond "just the patch"
 

@@ -1,6 +1,6 @@
 ---
 title: European Commission (DG CONNECT)
-image_url: /assets/organisations/european-commission-dg-connect/placeholder.svg
+image_url: /assets/organisations/european-commission-dg-connect/logo-source.svg
 website_url: null
 membership_tier: null
 is_founding_member: null

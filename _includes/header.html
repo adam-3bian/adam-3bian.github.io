@@ -1,11 +1,11 @@
 <header class="site-header">
   <div class="container">
-    <div class="header-row">
-      <a class="brand" href="{{ '/' | relative_url }}">CHERI <span>Content viewer</span></a>
+    <p class="header-row">
+      <a class="brand" href="{{ '/' | relative_url }}" aria-label="CHERI Alliance home"><img src="{{ '/assets/brand/cheri-alliance.svg' | relative_url }}" alt="CHERI Alliance" width="326" height="112"></a>
       <button id="navigation-toggle" class="navigation-toggle" type="button" aria-expanded="false" aria-controls="header-navigation" aria-label="Open navigation menu" hidden>
         <span aria-hidden="true">&#x2630;</span> Menu
       </button>
-    </div>
+    </p>
     <div id="header-navigation">
       <nav id="primary-navigation" class="source-nav" aria-label="Primary">
         <ul class="primary-menu-list">
@@ -44,15 +44,7 @@
           {% endfor %}
         </ul>
       </nav>
-      <div class="header-tools">
-        <nav class="collection-nav" aria-label="Collections">
-          {% for collection in site.collections %}{% unless collection.label == 'posts' %}
-          {% assign collection_url = '/' | append: collection.label | append: '/' %}{% assign collection_url = site.data.viewer.collections[collection.label].url | default: collection_url %}
-          <a href="{{ collection_url | relative_url }}">{{ site.data.viewer.collections[collection.label].label | default: collection.label | escape }}</a>
-          {% endunless %}{% endfor %}
-        </nav>
-        <a class="checks-link" href="{{ '/checks/' | relative_url }}">Content checks</a>
-      </div>
+
     </div>
   </div>
 </header>

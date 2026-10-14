@@ -1,6 +1,6 @@
 ---
 title: University of Modena and Reggio Emilia
-image_url: /assets/organisations/university-of-modena-and-reggio-emilia/placeholder.svg
+image_url: /assets/organisations/university-of-modena-and-reggio-emilia/logo-source.svg
 website_url: null
 membership_tier: null
 is_founding_member: null

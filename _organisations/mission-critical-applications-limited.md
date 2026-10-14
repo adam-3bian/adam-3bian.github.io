@@ -1,6 +1,6 @@
 ---
 title: Mission Critical Applications Limited
-image_url: /assets/organisations/mission-critical-applications-limited/placeholder.svg
+image_url: /assets/organisations/mission-critical-applications-limited/logo-source.svg
 website_url: null
 membership_tier: null
 is_founding_member: null

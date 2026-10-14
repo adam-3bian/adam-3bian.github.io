@@ -59,4 +59,4 @@ Native interfaces also carry ABI, ownership, callback, layout, and allocation as
 
 Rust support is not one uniform CHERI product line. Compiler revisions, operating systems, libraries, Cargo support, target hardware, and test coverage vary between platform projects.
 
-The [Rust + CHERI Working Group](/groups/rust-plus-cheri/) connects this work across the Alliance. CHERI and Rust provides the broader architectural context.
+The [Rust + CHERI Working Group](/working-groups/rust-plus-cheri/) connects this work across the Alliance. CHERI and Rust provides the broader architectural context.

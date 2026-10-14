@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-14T02:14:39Z",
-  "record_count": 498,
+  "generated_at": "2026-10-14T10:16:26Z",
+  "record_count": 532,
   "relationship_count": 1122,
   "image_count": 508,
   "collection_count": 12,
@@ -29,8 +29,8 @@
       "url": "/organisations/",
       "records": 70,
       "canonical": 70,
-      "provided_images": 53,
-      "placeholders": 17
+      "provided_images": 66,
+      "placeholders": 4
     },
     {
       "key": "events",
@@ -44,7 +44,7 @@
     {
       "key": "academic-papers",
       "label": "Academic papers",
-      "url": "/papers/",
+      "url": "/academic-papers/",
       "records": 15,
       "canonical": 15,
       "provided_images": 0,
@@ -71,7 +71,7 @@
     {
       "key": "working-groups",
       "label": "Working groups",
-      "url": "/alliance/leadership/working-groups/",
+      "url": "/working-groups/",
       "records": 17,
       "canonical": 17,
       "provided_images": 17,
@@ -161,7 +161,8 @@
 
           ]
         },
-        "parent": "/events/"
+        "parent": "/events/",
+        "layout": "document"
       }
     },
     {
@@ -187,12 +188,31 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
       "title": "4️⃣ CHERI for seL4 WG",
       "url": "/groups/cheri-for-sel4/",
+      "file": "pages/redirects/groups/cheri-for-sel4.md",
+      "type": "Redirect",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": "/working-groups/cheri-for-sel4/",
+      "properties": {
+        "title": "4️⃣ CHERI for seL4 WG",
+        "permalink": "/groups/cheri-for-sel4/",
+        "layout": "redirect"
+      }
+    },
+    {
+      "title": "4️⃣ CHERI for seL4 WG",
+      "url": "/working-groups/cheri-for-sel4/",
       "file": "_working-groups/cheri-for-sel4.md",
       "type": "Group (detail)",
       "collection": "working-groups",
@@ -224,7 +244,8 @@
 
           ]
         },
-        "parent": "/groups/"
+        "parent": "/working-groups/",
+        "layout": "document"
       }
     },
     {
@@ -263,7 +284,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -296,7 +318,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -310,7 +333,7 @@
       "missing_news_date": false,
       "display_date": null,
       "alternate": true,
-      "alias_target": "/papers/",
+      "alias_target": "/academic-papers/",
       "properties": {
         "title": "Academic Papers",
         "permalink": "/discover/resources/academic-papers/",
@@ -354,7 +377,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "redirect"
       }
     },
     {
@@ -413,7 +437,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -447,12 +472,31 @@
             "marketing"
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
       "title": "Adaptive CHERI Compartmentalization for Heterogeneous Accelerators",
       "url": "/papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/",
+      "file": "pages/redirects/papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators.md",
+      "type": "Redirect",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": "/academic-papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/",
+      "properties": {
+        "title": "Adaptive CHERI Compartmentalization for Heterogeneous Accelerators",
+        "permalink": "/papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/",
+        "layout": "redirect"
+      }
+    },
+    {
+      "title": "Adaptive CHERI Compartmentalization for Heterogeneous Accelerators",
+      "url": "/academic-papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/",
       "file": "_academic-papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators.md",
       "type": "Paper (detail)",
       "collection": "academic-papers",
@@ -487,7 +531,8 @@
 
           ]
         },
-        "parent": "/papers/"
+        "parent": "/academic-papers/",
+        "layout": "document"
       }
     },
     {
@@ -565,7 +610,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -622,7 +668,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -679,7 +726,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -736,7 +784,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -775,7 +824,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -808,7 +858,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -841,7 +892,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -875,7 +927,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -908,7 +961,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -941,7 +995,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -975,7 +1030,8 @@
             "cheri-qemu"
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -1009,7 +1065,8 @@
             "cheri-linux-working-group"
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -1066,7 +1123,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -1112,7 +1170,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -1154,7 +1213,8 @@
 
           ]
         },
-        "parent": "/reports/"
+        "parent": "/reports/",
+        "layout": "document"
       }
     },
     {
@@ -1188,7 +1248,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -1222,7 +1283,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -1255,7 +1317,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -1312,7 +1375,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -1369,7 +1433,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -1426,7 +1491,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -1483,7 +1549,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -1540,7 +1607,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -1597,7 +1665,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -1654,7 +1723,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -1711,7 +1781,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -1768,7 +1839,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -1801,7 +1873,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -1858,7 +1931,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -1915,7 +1989,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -1941,7 +2016,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -1950,15 +2026,15 @@
       "file": "_organisations/aria.md",
       "type": "Organisation (detail)",
       "collection": "organisations",
-      "has_image": false,
-      "image_status": "placeholder",
+      "has_image": true,
+      "image_status": "provided",
       "missing_news_date": false,
       "display_date": null,
       "alternate": false,
       "alias_target": null,
       "properties": {
         "title": "ARIA",
-        "image_url": "/assets/organisations/aria/placeholder.svg",
+        "image_url": "/assets/organisations/aria/logo-source.svg",
         "website_url": null,
         "membership_tier": null,
         "is_founding_member": null,
@@ -1967,7 +2043,14 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document",
+        "image_source": {
+          "source_page": "https://www.aria.org.uk/",
+          "source_url": "https://www.aria.org.uk/media/hsxblxrf/logo-aria-black.svg",
+          "retrieved_date": "2026-10-14",
+          "sha256": "31cf8cadf6d302eb04f708df91a9c1221fe73274d795da232175916e8a8fefec"
+        }
       }
     },
     {
@@ -1976,15 +2059,15 @@
       "file": "_organisations/arm.md",
       "type": "Organisation (detail)",
       "collection": "organisations",
-      "has_image": false,
-      "image_status": "placeholder",
+      "has_image": true,
+      "image_status": "provided",
       "missing_news_date": false,
       "display_date": null,
       "alternate": false,
       "alias_target": null,
       "properties": {
         "title": "Arm",
-        "image_url": "/assets/organisations/arm/placeholder.svg",
+        "image_url": "/assets/organisations/arm/logo-source.svg",
         "website_url": null,
         "membership_tier": null,
         "is_founding_member": null,
@@ -1993,7 +2076,14 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document",
+        "image_source": {
+          "source_page": "https://www.arm.com/",
+          "source_url": "https://www.arm.com/-/media/global/logos/arm-logo-blue-rgb.svg",
+          "retrieved_date": "2026-10-14",
+          "sha256": "d9b831e3d9436e8ff252913fa7e00a1d8ef652ffe9b21dc7f7bda35cf5cd0508"
+        }
       }
     },
     {
@@ -2026,7 +2116,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -2067,7 +2158,8 @@
             "cheribsd"
           ]
         },
-        "parent": "/reports/"
+        "parent": "/reports/",
+        "layout": "document"
       }
     },
     {
@@ -2125,7 +2217,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -2182,7 +2275,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -2208,7 +2302,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -2265,7 +2360,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -2304,7 +2400,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -2337,7 +2434,8 @@
             "cheri-in-soc"
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -2370,7 +2468,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -2403,7 +2502,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -2449,7 +2549,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -2506,7 +2607,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -2564,7 +2666,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -2597,7 +2700,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -2630,7 +2734,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -2663,7 +2768,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -2720,7 +2826,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -2753,7 +2860,8 @@
             "os-support-and-portability"
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -2779,7 +2887,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -2819,7 +2928,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -2855,7 +2965,8 @@
             "cheribsd"
           ]
         },
-        "parent": "/guides/"
+        "parent": "/guides/",
+        "layout": "document"
       }
     },
     {
@@ -2911,7 +3022,8 @@
             "cheribsd"
           ]
         },
-        "parent": "/guides/"
+        "parent": "/guides/",
+        "layout": "document"
       }
     },
     {
@@ -2951,7 +3063,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -2987,7 +3100,8 @@
 
           ]
         },
-        "parent": "/guides/"
+        "parent": "/guides/",
+        "layout": "document"
       }
     },
     {
@@ -3044,7 +3158,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -3070,7 +3185,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -3127,7 +3243,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -3153,7 +3270,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -3186,7 +3304,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -3243,7 +3362,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "redirect"
       }
     },
     {
@@ -3330,7 +3450,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -3388,7 +3509,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -3427,7 +3549,8 @@
 
           ]
         },
-        "parent": "/reports/"
+        "parent": "/reports/",
+        "layout": "document"
       }
     },
     {
@@ -3464,7 +3587,7 @@
       "alias_target": null,
       "properties": {
         "title": "CHERI Alliance",
-        "image_url": "/assets/organisations/cheri-alliance/9899bc30b0-logo-blue.webp",
+        "image_url": "/assets/organisations/cheri-alliance/logo.svg",
         "website_url": "https://cheri-alliance.org/",
         "membership_tier": null,
         "is_founding_member": null,
@@ -3473,7 +3596,14 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document",
+        "image_source": {
+          "source_page": "cheri-alliance-starter-kit-simplified-authoring (3)(4).zip",
+          "source_url": "basic-site/assets/images/brand/logo-blue.svg",
+          "retrieved_date": "2026-10-14",
+          "sha256": "e5e71b65000e93a27de232bd71946cb69bb382742e8b88aa5fd9bebc755f8d4d"
+        }
       }
     },
     {
@@ -3515,7 +3645,8 @@
 
           ]
         },
-        "parent": "/events/"
+        "parent": "/events/",
+        "layout": "document"
       }
     },
     {
@@ -3575,7 +3706,8 @@
         },
         "version": "1.01",
         "document_date": "2025-04-14",
-        "document_url": "https://cheri-alliance.org/legal-code-of-conduct/"
+        "document_url": "https://cheri-alliance.org/legal-code-of-conduct/",
+        "layout": "redirect"
       }
     },
     {
@@ -3635,7 +3767,8 @@
         },
         "version": "1.0",
         "document_date": "2024-08",
-        "document_url": "https://cheri-alliance.org/legal-competition/"
+        "document_url": "https://cheri-alliance.org/legal-competition/",
+        "layout": "redirect"
       }
     },
     {
@@ -3657,7 +3790,8 @@
         "version": "1.01",
         "document_date": "2024-08",
         "document_url": "https://cheri-alliance.org/legal-ip-policy/",
-        "parent": "/policies/"
+        "parent": "/policies/",
+        "layout": "redirect"
       }
     },
     {
@@ -3716,7 +3850,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -3755,7 +3890,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -3813,7 +3949,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -3871,7 +4008,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -3928,7 +4066,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -3985,7 +4124,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -4043,7 +4183,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -4124,7 +4265,8 @@
 
           ]
         },
-        "parent": "/events/"
+        "parent": "/events/",
+        "layout": "document"
       }
     },
     {
@@ -4227,7 +4369,8 @@
 
           ]
         },
-        "parent": "/events/"
+        "parent": "/events/",
+        "layout": "document"
       }
     },
     {
@@ -4266,12 +4409,31 @@
 
           ]
         },
-        "parent": "/events/"
+        "parent": "/events/",
+        "layout": "document"
       }
     },
     {
       "title": "CHERI Concentrate: Practical Compressed Capabilities",
       "url": "/papers/cheri-concentrate-practical-compressed-capabilities/",
+      "file": "pages/redirects/papers/cheri-concentrate-practical-compressed-capabilities.md",
+      "type": "Redirect",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": "/academic-papers/cheri-concentrate-practical-compressed-capabilities/",
+      "properties": {
+        "title": "CHERI Concentrate: Practical Compressed Capabilities",
+        "permalink": "/papers/cheri-concentrate-practical-compressed-capabilities/",
+        "layout": "redirect"
+      }
+    },
+    {
+      "title": "CHERI Concentrate: Practical Compressed Capabilities",
+      "url": "/academic-papers/cheri-concentrate-practical-compressed-capabilities/",
       "file": "_academic-papers/cheri-concentrate-practical-compressed-capabilities.md",
       "type": "Paper (detail)",
       "collection": "academic-papers",
@@ -4314,7 +4476,8 @@
 
           ]
         },
-        "parent": "/papers/"
+        "parent": "/academic-papers/",
+        "layout": "document"
       }
     },
     {
@@ -4410,7 +4573,8 @@
           ]
         },
         "summary": "Commercially application-class CHERI processor",
-        "parent": "/case-studies/"
+        "parent": "/case-studies/",
+        "layout": "document"
       }
     },
     {
@@ -4447,7 +4611,8 @@
             "zephyr"
           ]
         },
-        "parent": "/software/"
+        "parent": "/software/",
+        "layout": "document"
       }
     },
     {
@@ -4488,7 +4653,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -4527,7 +4693,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -4566,7 +4733,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -4623,12 +4791,31 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
       "title": "CHERI Research WG",
       "url": "/groups/cheri-research/",
+      "file": "pages/redirects/groups/cheri-research.md",
+      "type": "Redirect",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": "/working-groups/cheri-research/",
+      "properties": {
+        "title": "CHERI Research WG",
+        "permalink": "/groups/cheri-research/",
+        "layout": "redirect"
+      }
+    },
+    {
+      "title": "CHERI Research WG",
+      "url": "/working-groups/cheri-research/",
       "file": "_working-groups/cheri-research.md",
       "type": "Working group (detail)",
       "collection": "working-groups",
@@ -4659,7 +4846,8 @@
 
           ]
         },
-        "parent": "/groups/"
+        "parent": "/working-groups/",
+        "layout": "document"
       }
     },
     {
@@ -4716,7 +4904,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -4773,7 +4962,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -4830,7 +5020,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -4869,7 +5060,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -4908,7 +5100,8 @@
 
           ]
         },
-        "parent": "/reports/"
+        "parent": "/reports/",
+        "layout": "document"
       }
     },
     {
@@ -4927,7 +5120,8 @@
         "title": "CHERI Trademark",
         "image_url": "/assets/policies/trademark/placeholder.svg",
         "author": null,
-        "parent": "/policies/"
+        "parent": "/policies/",
+        "layout": "document"
       }
     },
     {
@@ -4967,7 +5161,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -5006,12 +5201,31 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
       "title": "CHERI: A Hybrid Capability-System Architecture for Scalable Software Compartmentalization",
       "url": "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
+      "file": "pages/redirects/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md",
+      "type": "Redirect",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": "/academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
+      "properties": {
+        "title": "CHERI: A Hybrid Capability-System Architecture for Scalable Software Compartmentalization",
+        "permalink": "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
+        "layout": "redirect"
+      }
+    },
+    {
+      "title": "CHERI: A Hybrid Capability-System Architecture for Scalable Software Compartmentalization",
+      "url": "/academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/",
       "file": "_academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md",
       "type": "Paper (detail)",
       "collection": "academic-papers",
@@ -5054,12 +5268,31 @@
 
           ]
         },
-        "parent": "/papers/"
+        "parent": "/academic-papers/",
+        "layout": "document"
       }
     },
     {
       "title": "CHERI: Hardware-Enabled C/C++ Memory Protection at Scale",
       "url": "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
+      "file": "pages/redirects/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale.md",
+      "type": "Redirect",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": "/academic-papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
+      "properties": {
+        "title": "CHERI: Hardware-Enabled C/C++ Memory Protection at Scale",
+        "permalink": "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
+        "layout": "redirect"
+      }
+    },
+    {
+      "title": "CHERI: Hardware-Enabled C/C++ Memory Protection at Scale",
+      "url": "/academic-papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/",
       "file": "_academic-papers/cheri-hardware-enabled-c-c-memory-protection-at-scale.md",
       "type": "Paper (detail)",
       "collection": "academic-papers",
@@ -5099,12 +5332,31 @@
 
           ]
         },
-        "parent": "/papers/"
+        "parent": "/academic-papers/",
+        "layout": "document"
       }
     },
     {
       "title": "CheriABI: Enforcing Valid Pointer Provenance and Minimizing Pointer Privilege in the POSIX C Run-time Environment",
       "url": "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
+      "file": "pages/redirects/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p.md",
+      "type": "Redirect",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": "/academic-papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
+      "properties": {
+        "title": "CheriABI: Enforcing Valid Pointer Provenance and Minimizing Pointer Privilege in the POSIX C Run-time Environment",
+        "permalink": "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
+        "layout": "redirect"
+      }
+    },
+    {
+      "title": "CheriABI: Enforcing Valid Pointer Provenance and Minimizing Pointer Privilege in the POSIX C Run-time Environment",
+      "url": "/academic-papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/",
       "file": "_academic-papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p.md",
       "type": "Paper (detail)",
       "collection": "academic-papers",
@@ -5143,7 +5395,8 @@
 
           ]
         },
-        "parent": "/papers/"
+        "parent": "/academic-papers/",
+        "layout": "document"
       }
     },
     {
@@ -5181,7 +5434,8 @@
             "freebsd"
           ]
         },
-        "parent": "/software/"
+        "parent": "/software/",
+        "layout": "document"
       }
     },
     {
@@ -5215,7 +5469,8 @@
           ]
         },
         "summary": "Protection of large existing software stacks",
-        "parent": "/case-studies/"
+        "parent": "/case-studies/",
+        "layout": "document"
       }
     },
     {
@@ -5254,7 +5509,8 @@
             "debugging-tools"
           ]
         },
-        "parent": "/hardware/"
+        "parent": "/hardware/",
+        "layout": "document"
       }
     },
     {
@@ -5294,7 +5550,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -5334,7 +5591,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -5375,12 +5633,31 @@
         "summary": "An open-source 32-bit RISC-V microcontroller processor IP implementing the CHERIoT 1.0 instruction-set architecture. It is designed for constrained embedded systems that require compartmentalisation and memory protection.",
         "parent": "/hardware/",
         "certification": "cheri-enabled",
-        "certification_url": "https://cheri-alliance.org/cheri-enabled/cheriot/"
+        "certification_url": "https://cheri-alliance.org/cheri-enabled/cheriot/",
+        "layout": "document"
       }
     },
     {
       "title": "CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost Embedded Devices",
       "url": "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
+      "file": "pages/redirects/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev.md",
+      "type": "Redirect",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": "/academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
+      "properties": {
+        "title": "CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost Embedded Devices",
+        "permalink": "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
+        "layout": "redirect"
+      }
+    },
+    {
+      "title": "CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost Embedded Devices",
+      "url": "/academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/",
       "file": "_academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev.md",
       "type": "Paper (detail)",
       "collection": "academic-papers",
@@ -5421,7 +5698,8 @@
 
           ]
         },
-        "parent": "/papers/"
+        "parent": "/academic-papers/",
+        "layout": "document"
       }
     },
     {
@@ -5478,7 +5756,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -5517,12 +5796,31 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
       "title": "CHERIoT: Complete Memory Safety for Embedded Devices",
       "url": "/papers/cheriot-complete-memory-safety-for-embedded-devices/",
+      "file": "pages/redirects/papers/cheriot-complete-memory-safety-for-embedded-devices.md",
+      "type": "Redirect",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": "/academic-papers/cheriot-complete-memory-safety-for-embedded-devices/",
+      "properties": {
+        "title": "CHERIoT: Complete Memory Safety for Embedded Devices",
+        "permalink": "/papers/cheriot-complete-memory-safety-for-embedded-devices/",
+        "layout": "redirect"
+      }
+    },
+    {
+      "title": "CHERIoT: Complete Memory Safety for Embedded Devices",
+      "url": "/academic-papers/cheriot-complete-memory-safety-for-embedded-devices/",
       "file": "_academic-papers/cheriot-complete-memory-safety-for-embedded-devices.md",
       "type": "Paper (detail)",
       "collection": "academic-papers",
@@ -5561,7 +5859,8 @@
 
           ]
         },
-        "parent": "/papers/"
+        "parent": "/academic-papers/",
+        "layout": "document"
       }
     },
     {
@@ -5596,7 +5895,8 @@
           ]
         },
         "summary": "CHERI for constrained embedded systems",
-        "parent": "/case-studies/"
+        "parent": "/case-studies/",
+        "layout": "document"
       }
     },
     {
@@ -5655,7 +5955,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -5726,7 +6027,8 @@
 
           ]
         },
-        "parent": "/events/"
+        "parent": "/events/",
+        "layout": "document"
       }
     },
     {
@@ -5784,7 +6086,8 @@
 
           ]
         },
-        "parent": "/events/"
+        "parent": "/events/",
+        "layout": "document"
       }
     },
     {
@@ -5823,7 +6126,8 @@
 
           ]
         },
-        "parent": "/events/"
+        "parent": "/events/",
+        "layout": "document"
       }
     },
     {
@@ -5849,7 +6153,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -5891,7 +6196,8 @@
             "llvm-and-clang"
           ]
         },
-        "parent": "/guides/"
+        "parent": "/guides/",
+        "layout": "document"
       }
     },
     {
@@ -5950,7 +6256,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -5976,7 +6283,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -6016,7 +6324,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -6060,7 +6369,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -6104,7 +6414,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -6126,7 +6437,8 @@
         "version": "1.01",
         "document_date": "2025-04-14",
         "document_url": "https://cheri-alliance.org/legal-code-of-conduct/",
-        "parent": "/policies/"
+        "parent": "/policies/",
+        "layout": "document"
       }
     },
     {
@@ -6183,7 +6495,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -6225,7 +6538,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -6283,7 +6597,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -6341,7 +6656,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -6363,7 +6679,8 @@
         "version": "1.0",
         "document_date": "2024-08",
         "document_url": "https://cheri-alliance.org/legal-competition/",
-        "parent": "/policies/"
+        "parent": "/policies/",
+        "layout": "document"
       }
     },
     {
@@ -6420,7 +6737,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -6446,65 +6764,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
-      }
-    },
-    {
-      "title": "Contact the Alliance",
-      "url": "/alliance/membership/contact/",
-      "file": "pages/alliance/membership/contact.md",
-      "type": "Content Page (detail)",
-      "collection": "pages",
-      "has_image": false,
-      "image_status": "none",
-      "missing_news_date": false,
-      "display_date": null,
-      "alternate": false,
-      "alias_target": null,
-      "properties": {
-        "title": "Contact the Alliance",
-        "permalink": "/alliance/membership/contact/",
-        "summary": "Contact the Alliance for membership, working groups, certification, events, media, trademarks, or help finding the right CHERI resource.",
-        "image_url": null,
-        "updated_date": null,
-        "parent": "/alliance/",
-        "next_page_url": "/organisations/cheri-alliance/",
-        "related": {
-          "pages": [
-            "/alliance/membership/membership-benefits-and-options/",
-            "/news-and-events/people-and-opportunities/job-opportunities/"
-          ],
-          "people": [
-
-          ],
-          "organisations": [
-
-          ],
-          "working-groups": [
-
-          ],
-          "news": [
-
-          ],
-          "events": [
-
-          ],
-          "academic-papers": [
-
-          ],
-          "hardware": [
-
-          ],
-          "software": [
-
-          ],
-          "guides": [
-
-          ],
-          "policies": [
-
-          ]
-        }
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -6562,12 +6823,90 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
+      }
+    },
+    {
+      "title": "Contact the Alliance",
+      "url": "/alliance/membership/contact/",
+      "file": "pages/alliance/membership/contact.md",
+      "type": "Content Page (detail)",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": null,
+      "properties": {
+        "title": "Contact the Alliance",
+        "permalink": "/alliance/membership/contact/",
+        "summary": "Contact the Alliance for membership, working groups, certification, events, media, trademarks, or help finding the right CHERI resource.",
+        "image_url": null,
+        "updated_date": null,
+        "parent": "/alliance/",
+        "next_page_url": "/organisations/cheri-alliance/",
+        "related": {
+          "pages": [
+            "/alliance/membership/membership-benefits-and-options/",
+            "/news-and-events/people-and-opportunities/job-opportunities/"
+          ],
+          "people": [
+
+          ],
+          "organisations": [
+
+          ],
+          "working-groups": [
+
+          ],
+          "news": [
+
+          ],
+          "events": [
+
+          ],
+          "academic-papers": [
+
+          ],
+          "hardware": [
+
+          ],
+          "software": [
+
+          ],
+          "guides": [
+
+          ],
+          "policies": [
+
+          ]
+        },
+        "layout": "document"
       }
     },
     {
       "title": "Cornucopia Reloaded: Load Barriers for CHERI Heap Temporal Safety",
       "url": "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
+      "file": "pages/redirects/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety.md",
+      "type": "Redirect",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": "/academic-papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
+      "properties": {
+        "title": "Cornucopia Reloaded: Load Barriers for CHERI Heap Temporal Safety",
+        "permalink": "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
+        "layout": "redirect"
+      }
+    },
+    {
+      "title": "Cornucopia Reloaded: Load Barriers for CHERI Heap Temporal Safety",
+      "url": "/academic-papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/",
       "file": "_academic-papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety.md",
       "type": "Paper (detail)",
       "collection": "academic-papers",
@@ -6607,12 +6946,31 @@
 
           ]
         },
-        "parent": "/papers/"
+        "parent": "/academic-papers/",
+        "layout": "document"
       }
     },
     {
       "title": "Cornucopia: Temporal Safety for CHERI Heaps",
       "url": "/papers/cornucopia-temporal-safety-for-cheri-heaps/",
+      "file": "pages/redirects/papers/cornucopia-temporal-safety-for-cheri-heaps.md",
+      "type": "Redirect",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": "/academic-papers/cornucopia-temporal-safety-for-cheri-heaps/",
+      "properties": {
+        "title": "Cornucopia: Temporal Safety for CHERI Heaps",
+        "permalink": "/papers/cornucopia-temporal-safety-for-cheri-heaps/",
+        "layout": "redirect"
+      }
+    },
+    {
+      "title": "Cornucopia: Temporal Safety for CHERI Heaps",
+      "url": "/academic-papers/cornucopia-temporal-safety-for-cheri-heaps/",
       "file": "_academic-papers/cornucopia-temporal-safety-for-cheri-heaps.md",
       "type": "Paper (detail)",
       "collection": "academic-papers",
@@ -6651,7 +7009,8 @@
 
           ]
         },
-        "parent": "/papers/"
+        "parent": "/academic-papers/",
+        "layout": "document"
       }
     },
     {
@@ -6708,7 +7067,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -6767,7 +7127,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -6825,7 +7186,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -6851,7 +7213,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -6908,7 +7271,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -6934,7 +7298,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -6960,7 +7325,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -7018,7 +7384,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -7051,7 +7418,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -7086,7 +7454,8 @@
             "cheri-c-cplusplus"
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -7119,7 +7488,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -7158,7 +7528,8 @@
             "cheri-linux"
           ]
         },
-        "parent": "/software/"
+        "parent": "/software/",
+        "layout": "document"
       }
     },
     {
@@ -7217,7 +7588,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -7243,7 +7615,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -7300,12 +7673,31 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
       "title": "Deprivileging Low-Level GPU Drivers Efficiently with User-Space Processes and CHERI Compartments",
       "url": "/papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/",
+      "file": "pages/redirects/papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c.md",
+      "type": "Redirect",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": "/academic-papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/",
+      "properties": {
+        "title": "Deprivileging Low-Level GPU Drivers Efficiently with User-Space Processes and CHERI Compartments",
+        "permalink": "/papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/",
+        "layout": "redirect"
+      }
+    },
+    {
+      "title": "Deprivileging Low-Level GPU Drivers Efficiently with User-Space Processes and CHERI Compartments",
+      "url": "/academic-papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/",
       "file": "_academic-papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c.md",
       "type": "Paper (detail)",
       "collection": "academic-papers",
@@ -7339,7 +7731,8 @@
 
           ]
         },
-        "parent": "/papers/"
+        "parent": "/academic-papers/",
+        "layout": "document"
       }
     },
     {
@@ -7421,7 +7814,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -7447,7 +7841,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -7505,7 +7900,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -7544,7 +7940,8 @@
 
           ]
         },
-        "parent": "/reports/"
+        "parent": "/reports/",
+        "layout": "document"
       }
     },
     {
@@ -7601,7 +7998,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -7647,7 +8045,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -7680,7 +8079,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -7702,7 +8102,7 @@
         "image_url": null,
         "updated_date": null,
         "parent": "/discover/",
-        "next_page_url": "/alliance/leadership/working-groups/",
+        "next_page_url": "/working-groups/",
         "related": {
           "pages": [
 
@@ -7737,7 +8137,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -7771,7 +8172,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -7805,7 +8207,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -7854,7 +8257,8 @@
             "llvm-and-clang"
           ]
         },
-        "parent": "/guides/"
+        "parent": "/guides/",
+        "layout": "document"
       }
     },
     {
@@ -7880,7 +8284,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -7906,7 +8311,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -7963,7 +8369,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -7996,7 +8403,8 @@
             "rust-plus-cheri"
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -8029,7 +8437,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -8086,7 +8495,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -8131,7 +8541,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -8157,7 +8568,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -8166,15 +8578,15 @@
       "file": "_organisations/ericsson.md",
       "type": "Organisation (detail)",
       "collection": "organisations",
-      "has_image": false,
-      "image_status": "placeholder",
+      "has_image": true,
+      "image_status": "provided",
       "missing_news_date": false,
       "display_date": null,
       "alternate": false,
       "alias_target": null,
       "properties": {
         "title": "Ericsson",
-        "image_url": "/assets/organisations/ericsson/placeholder.svg",
+        "image_url": "/assets/organisations/ericsson/logo-source.png",
         "website_url": null,
         "membership_tier": null,
         "is_founding_member": null,
@@ -8183,7 +8595,14 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document",
+        "image_source": {
+          "source_page": "https://www.ericsson.com/",
+          "source_url": "https://www.ericsson.com/48eb4e/assets/global/qbank/2024/01/16/e-con-vertical-1500x1500px-88604d41d8cd98f00b204e9800998ecf8427e.png",
+          "retrieved_date": "2026-10-14",
+          "sha256": "8ed21ad219147c15e74a73c0426c314e7ad32268c9edd0c35fc14fa268323869"
+        }
       }
     },
     {
@@ -8192,15 +8611,15 @@
       "file": "_organisations/european-commission-dg-connect.md",
       "type": "Organisation (detail)",
       "collection": "organisations",
-      "has_image": false,
-      "image_status": "placeholder",
+      "has_image": true,
+      "image_status": "provided",
       "missing_news_date": false,
       "display_date": null,
       "alternate": false,
       "alias_target": null,
       "properties": {
         "title": "European Commission (DG CONNECT)",
-        "image_url": "/assets/organisations/european-commission-dg-connect/placeholder.svg",
+        "image_url": "/assets/organisations/european-commission-dg-connect/logo-source.svg",
         "website_url": null,
         "membership_tier": null,
         "is_founding_member": null,
@@ -8209,7 +8628,14 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document",
+        "image_source": {
+          "source_page": "https://digital-strategy.ec.europa.eu/en",
+          "source_url": "https://digital-strategy.ec.europa.eu/themes/contrib/oe_theme/dist/ec/images/logo/logo-ec--mute.svg",
+          "retrieved_date": "2026-10-14",
+          "sha256": "73fee8ee4f5140b6439d646883ff35ddca8a80001908cd5ca71ff4e3f04b559b"
+        }
       }
     },
     {
@@ -8290,7 +8716,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -8347,7 +8774,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -8404,7 +8832,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -8461,7 +8890,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -8518,7 +8948,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -8575,7 +9006,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -8632,7 +9064,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -8651,7 +9084,8 @@
         "title": "Export Controls",
         "image_url": "/assets/policies/export-controls/placeholder.svg",
         "author": null,
-        "parent": "/policies/"
+        "parent": "/policies/",
+        "layout": "document"
       }
     },
     {
@@ -8708,7 +9142,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -8766,7 +9201,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -8823,12 +9259,31 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
       "title": "Formal Mechanised Semantics of CHERI C: Capabilities, Provenance, and Undefined Behaviour",
       "url": "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
+      "file": "pages/redirects/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou.md",
+      "type": "Redirect",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": "/academic-papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
+      "properties": {
+        "title": "Formal Mechanised Semantics of CHERI C: Capabilities, Provenance, and Undefined Behaviour",
+        "permalink": "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
+        "layout": "redirect"
+      }
+    },
+    {
+      "title": "Formal Mechanised Semantics of CHERI C: Capabilities, Provenance, and Undefined Behaviour",
+      "url": "/academic-papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/",
       "file": "_academic-papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou.md",
       "type": "Paper (detail)",
       "collection": "academic-papers",
@@ -8867,7 +9322,8 @@
 
           ]
         },
-        "parent": "/papers/"
+        "parent": "/academic-papers/",
+        "layout": "document"
       }
     },
     {
@@ -8925,7 +9381,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -8962,7 +9419,8 @@
             "cheribsd"
           ]
         },
-        "parent": "/hardware/"
+        "parent": "/hardware/",
+        "layout": "document"
       }
     },
     {
@@ -8998,7 +9456,8 @@
             "real-time-operating-systems"
           ]
         },
-        "parent": "/software/"
+        "parent": "/software/",
+        "layout": "document"
       }
     },
     {
@@ -9024,7 +9483,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -9082,7 +9542,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -9116,7 +9577,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -9125,15 +9587,15 @@
       "file": "_organisations/german-research-center-for-artificial-intelligence-dfki.md",
       "type": "Organisation (detail)",
       "collection": "organisations",
-      "has_image": false,
-      "image_status": "placeholder",
+      "has_image": true,
+      "image_status": "provided",
       "missing_news_date": false,
       "display_date": null,
       "alternate": false,
       "alias_target": null,
       "properties": {
         "title": "German Research Center for Artificial Intelligence (DFKI)",
-        "image_url": "/assets/organisations/german-research-center-for-artificial-intelligence-dfki/placeholder.svg",
+        "image_url": "/assets/organisations/german-research-center-for-artificial-intelligence-dfki/logo-source.png",
         "website_url": null,
         "membership_tier": null,
         "is_founding_member": null,
@@ -9142,7 +9604,14 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document",
+        "image_source": {
+          "source_page": "https://www.dfki.de/en/web/",
+          "source_url": "https://www-live.dfki.de/fileadmin/_processed_/d/f/csm_DFKI_Logo_Farbverlauf_8970221e55.png",
+          "retrieved_date": "2026-10-14",
+          "sha256": "bc225a2b4b654e97c0a0a84fd3a45f7dd906c764647e021a3a77aefd3f323f18"
+        }
       }
     },
     {
@@ -9200,7 +9669,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -9257,7 +9727,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -9283,7 +9754,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -9340,7 +9812,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -9396,7 +9869,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -9429,7 +9903,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -9462,7 +9937,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -9503,7 +9979,8 @@
 
           ]
         },
-        "parent": "/events/"
+        "parent": "/events/",
+        "layout": "document"
       }
     },
     {
@@ -9560,7 +10037,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -9617,7 +10095,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -9651,7 +10130,8 @@
             "cheri-for-sel4"
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -9677,7 +10157,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -9710,7 +10191,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -9768,7 +10250,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -9801,7 +10284,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -9834,7 +10318,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -9892,7 +10377,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -9925,7 +10411,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -9966,7 +10453,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -10012,7 +10500,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -10053,7 +10542,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -10094,7 +10584,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -10133,7 +10624,8 @@
             "llvm-and-clang"
           ]
         },
-        "parent": "/guides/"
+        "parent": "/guides/",
+        "layout": "document"
       }
     },
     {
@@ -10159,7 +10651,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -10181,7 +10674,8 @@
         "version": "1.01",
         "document_date": "2024-08",
         "document_url": "https://cheri-alliance.org/legal-ip-policy/",
-        "parent": "/policies/"
+        "parent": "/policies/",
+        "layout": "document"
       }
     },
     {
@@ -10220,7 +10714,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -10277,7 +10772,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -10334,7 +10830,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -10392,7 +10889,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -10437,7 +10935,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -10482,12 +10981,31 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
       "title": "It Is Time to Standardize Principles and Practices for Software Memory Safety",
       "url": "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
+      "file": "pages/redirects/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
+      "type": "Redirect",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
+      "properties": {
+        "title": "It Is Time to Standardize Principles and Practices for Software Memory Safety",
+        "permalink": "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
+        "layout": "redirect"
+      }
+    },
+    {
+      "title": "It Is Time to Standardize Principles and Practices for Software Memory Safety",
+      "url": "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/",
       "file": "_academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md",
       "type": "Paper (detail)",
       "collection": "academic-papers",
@@ -10536,7 +11054,8 @@
 
           ]
         },
-        "parent": "/papers/"
+        "parent": "/academic-papers/",
+        "layout": "document"
       }
     },
     {
@@ -10569,7 +11088,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -10602,7 +11122,8 @@
             "cheri-zephyr"
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -10636,7 +11157,8 @@
             "cheri-virtual-machines"
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -10669,7 +11191,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -10703,7 +11226,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -10736,7 +11260,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -10793,7 +11318,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -10819,7 +11345,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -10852,7 +11379,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -10885,7 +11413,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -10919,7 +11448,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -10952,7 +11482,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -10985,7 +11516,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -11019,7 +11551,8 @@
             "cheri-research"
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -11052,7 +11585,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -11085,7 +11619,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -11118,7 +11653,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -11151,7 +11687,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -11208,7 +11745,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -11241,7 +11779,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -11274,7 +11813,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -11300,7 +11840,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -11333,7 +11874,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -11359,7 +11901,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -11392,7 +11935,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -11425,31 +11969,8 @@
 
           ]
         },
-        "parent": "/people/"
-      }
-    },
-    {
-      "title": "Latest News",
-      "url": "/news-and-events/news-and-analysis/latest-news/",
-      "file": "pages/news-and-events/news-and-analysis/latest-news.md",
-      "type": "News (list)",
-      "collection": "pages",
-      "has_image": false,
-      "image_status": "none",
-      "missing_news_date": false,
-      "display_date": null,
-      "alternate": true,
-      "alias_target": "/news/",
-      "properties": {
-        "title": "Latest News",
-        "permalink": "/news-and-events/news-and-analysis/latest-news/",
-        "layout": "redirect",
-        "listing": {
-          "collection": null,
-          "status": null,
-          "role": null
-        },
-        "parent": "/news-and-events/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -11506,7 +12027,32 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
+      }
+    },
+    {
+      "title": "Latest News",
+      "url": "/news-and-events/news-and-analysis/latest-news/",
+      "file": "pages/news-and-events/news-and-analysis/latest-news.md",
+      "type": "News (list)",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": true,
+      "alias_target": "/news/",
+      "properties": {
+        "title": "Latest News",
+        "permalink": "/news-and-events/news-and-analysis/latest-news/",
+        "layout": "redirect",
+        "listing": {
+          "collection": null,
+          "status": null,
+          "role": null
+        },
+        "parent": "/news-and-events/"
       }
     },
     {
@@ -11539,7 +12085,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -11596,7 +12143,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "redirect"
       }
     },
     {
@@ -11622,7 +12170,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -11679,7 +12228,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -11715,7 +12265,8 @@
             "cheribsd"
           ]
         },
-        "parent": "/software/"
+        "parent": "/software/",
+        "layout": "document"
       }
     },
     {
@@ -11748,7 +12299,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -11774,7 +12326,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -11817,7 +12370,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -11860,7 +12414,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -11900,7 +12455,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -11933,7 +12489,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -11966,7 +12523,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -11999,7 +12557,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -12033,7 +12592,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -12066,7 +12626,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -12100,7 +12661,8 @@
             "cheri-plus-safety"
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -12134,7 +12696,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -12167,7 +12730,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -12200,7 +12764,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -12234,7 +12799,8 @@
             "repository-management"
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -12267,7 +12833,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -12300,31 +12867,8 @@
 
           ]
         },
-        "parent": "/people/"
-      }
-    },
-    {
-      "title": "Members",
-      "url": "/alliance/leadership/members/",
-      "file": "pages/alliance/leadership/members.md",
-      "type": "Organisations (list)",
-      "collection": "pages",
-      "has_image": false,
-      "image_status": "none",
-      "missing_news_date": false,
-      "display_date": null,
-      "alternate": false,
-      "alias_target": null,
-      "properties": {
-        "title": "Members",
-        "permalink": "/alliance/leadership/members/",
-        "layout": "list",
-        "listing": {
-          "collection": "organisations",
-          "status": null,
-          "role": null
-        },
-        "parent": "/alliance/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -12381,7 +12925,32 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
+      }
+    },
+    {
+      "title": "Members",
+      "url": "/alliance/leadership/members/",
+      "file": "pages/alliance/leadership/members.md",
+      "type": "Organisations (list)",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": null,
+      "properties": {
+        "title": "Members",
+        "permalink": "/alliance/leadership/members/",
+        "layout": "list",
+        "listing": {
+          "collection": "organisations",
+          "status": null,
+          "role": null
+        },
+        "parent": "/alliance/"
       }
     },
     {
@@ -12439,7 +13008,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -12473,7 +13043,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -12506,7 +13077,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -12515,15 +13087,15 @@
       "file": "_organisations/microservice-store.md",
       "type": "Organisation (detail)",
       "collection": "organisations",
-      "has_image": false,
-      "image_status": "placeholder",
+      "has_image": true,
+      "image_status": "provided",
       "missing_news_date": false,
       "display_date": null,
       "alternate": false,
       "alias_target": null,
       "properties": {
         "title": "Microservice Store",
-        "image_url": "/assets/organisations/microservice-store/placeholder.svg",
+        "image_url": "/assets/organisations/microservice-store/logo-source.png",
         "website_url": null,
         "membership_tier": null,
         "is_founding_member": null,
@@ -12532,7 +13104,14 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document",
+        "image_source": {
+          "source_page": "https://www.microservicestore.com/",
+          "source_url": "https://static.wixstatic.com/media/0cfa32_26f4cf7af1484dd1930bc4f91ab192b1~mv2.png",
+          "retrieved_date": "2026-10-14",
+          "sha256": "345e665ff246f83055008b6ff416fd1918d1783afc3c3c3da7d60f173e2d05f1"
+        }
       }
     },
     {
@@ -12565,7 +13144,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -12600,7 +13180,8 @@
             "promotion-and-ambassador-program"
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -12633,7 +13214,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -12642,15 +13224,15 @@
       "file": "_organisations/minerva-systems.md",
       "type": "Organisation (detail)",
       "collection": "organisations",
-      "has_image": false,
-      "image_status": "placeholder",
+      "has_image": true,
+      "image_status": "provided",
       "missing_news_date": false,
       "display_date": null,
       "alternate": false,
       "alias_target": null,
       "properties": {
         "title": "Minerva Systems",
-        "image_url": "/assets/organisations/minerva-systems/placeholder.svg",
+        "image_url": "/assets/organisations/minerva-systems/logo-source.svg",
         "website_url": null,
         "membership_tier": null,
         "is_founding_member": null,
@@ -12659,7 +13241,14 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document",
+        "image_source": {
+          "source_page": "https://www.minervasys.tech/",
+          "source_url": "https://www.minervasys.tech/#header-logo",
+          "retrieved_date": "2026-10-14",
+          "sha256": "68e79b2485ecc073eada26acc22a3b53f2d3fd105c3fa10ca15478f88df406e8"
+        }
       }
     },
     {
@@ -12685,7 +13274,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -12742,7 +13332,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -12751,15 +13342,15 @@
       "file": "_organisations/mission-critical-applications-limited.md",
       "type": "Organisation (detail)",
       "collection": "organisations",
-      "has_image": false,
-      "image_status": "placeholder",
+      "has_image": true,
+      "image_status": "provided",
       "missing_news_date": false,
       "display_date": null,
       "alternate": false,
       "alias_target": null,
       "properties": {
         "title": "Mission Critical Applications Limited",
-        "image_url": "/assets/organisations/mission-critical-applications-limited/placeholder.svg",
+        "image_url": "/assets/organisations/mission-critical-applications-limited/logo-source.svg",
         "website_url": null,
         "membership_tier": null,
         "is_founding_member": null,
@@ -12768,7 +13359,14 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document",
+        "image_source": {
+          "source_page": "https://www.mca-ltd.com/",
+          "source_url": "https://www.mca-ltd.com/images/MCA_logo_black.svg",
+          "retrieved_date": "2026-10-14",
+          "sha256": "7248790491bec7bca09b830ce5bb95d690b37a1cb666fb1741bd23e3aee6c1bc"
+        }
       }
     },
     {
@@ -12807,7 +13405,8 @@
             "llvm-and-clang"
           ]
         },
-        "parent": "/hardware/"
+        "parent": "/hardware/",
+        "layout": "document"
       }
     },
     {
@@ -12865,7 +13464,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -12898,7 +13498,8 @@
           ]
         },
         "summary": "CHERI at application and server scale",
-        "parent": "/case-studies/"
+        "parent": "/case-studies/",
+        "layout": "document"
       }
     },
     {
@@ -12931,7 +13532,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -12964,7 +13566,8 @@
             "mmu-less-systems"
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -12997,7 +13600,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -13030,7 +13634,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -13056,7 +13661,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -13082,7 +13688,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -13130,7 +13737,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -13178,7 +13786,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -13255,7 +13864,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -13281,7 +13891,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -13307,7 +13918,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -13341,7 +13953,8 @@
             "cheri-freertos"
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -13374,7 +13987,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -13413,7 +14027,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -13463,7 +14078,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -13520,7 +14136,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -13577,7 +14194,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -13634,7 +14252,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -13691,7 +14310,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -13748,7 +14368,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -13805,13 +14426,14 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
       "title": "Papers",
-      "url": "/papers/",
-      "file": "pages/papers.md",
+      "url": "/academic-papers/",
+      "file": "pages/academic-papers.md",
       "type": "Papers (list)",
       "collection": "pages",
       "has_image": false,
@@ -13822,13 +14444,31 @@
       "alias_target": null,
       "properties": {
         "title": "Papers",
-        "permalink": "/papers/",
+        "permalink": "/academic-papers/",
         "layout": "list",
         "listing": {
           "collection": "academic-papers",
           "status": null,
           "role": null
-        },
+        }
+      }
+    },
+    {
+      "title": "Papers",
+      "url": "/papers/",
+      "file": "pages/papers.md",
+      "type": "Redirect",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": "/academic-papers/",
+      "properties": {
+        "title": "Papers",
+        "permalink": "/papers/",
+        "layout": "redirect",
         "parent": "/discover/"
       }
     },
@@ -13855,31 +14495,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
-      }
-    },
-    {
-      "title": "Past Events",
-      "url": "/news-and-events/events-and-archive/past-events/",
-      "file": "pages/news-and-events/events-and-archive/past-events.md",
-      "type": "Events (list)",
-      "collection": "pages",
-      "has_image": false,
-      "image_status": "none",
-      "missing_news_date": false,
-      "display_date": null,
-      "alternate": false,
-      "alias_target": null,
-      "properties": {
-        "title": "Past Events",
-        "permalink": "/news-and-events/events-and-archive/past-events/",
-        "layout": "events",
-        "listing": {
-          "collection": null,
-          "status": "past",
-          "role": null
-        },
-        "parent": "/news-and-events/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -13938,7 +14555,32 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
+      }
+    },
+    {
+      "title": "Past Events",
+      "url": "/news-and-events/events-and-archive/past-events/",
+      "file": "pages/news-and-events/events-and-archive/past-events.md",
+      "type": "Events (list)",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": null,
+      "properties": {
+        "title": "Past Events",
+        "permalink": "/news-and-events/events-and-archive/past-events/",
+        "layout": "events",
+        "listing": {
+          "collection": null,
+          "status": "past",
+          "role": null
+        },
+        "parent": "/news-and-events/"
       }
     },
     {
@@ -13972,7 +14614,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -14005,7 +14648,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -14087,7 +14731,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -14121,7 +14766,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -14154,7 +14800,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -14187,7 +14834,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -14220,7 +14868,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -14253,7 +14902,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -14310,7 +14960,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -14353,7 +15004,8 @@
         "title": "Policy Briefings",
         "image_url": "/assets/policies/policy-briefings/placeholder.svg",
         "author": null,
-        "parent": "/policies/"
+        "parent": "/policies/",
+        "layout": "document"
       }
     },
     {
@@ -14389,7 +15041,8 @@
 
           ]
         },
-        "parent": "/guides/"
+        "parent": "/guides/",
+        "layout": "document"
       }
     },
     {
@@ -14428,7 +15081,8 @@
             "rust"
           ]
         },
-        "parent": "/software/"
+        "parent": "/software/",
+        "layout": "document"
       }
     },
     {
@@ -14485,7 +15139,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -14542,7 +15197,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -14599,7 +15255,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -14618,7 +15275,8 @@
         "title": "Privacy",
         "image_url": "/assets/policies/privacy/placeholder.svg",
         "author": null,
-        "parent": "/policies/"
+        "parent": "/policies/",
+        "layout": "document"
       }
     },
     {
@@ -14637,7 +15295,8 @@
         "title": "Privacy policy",
         "image_url": "/assets/policies/privacy-policy/placeholder.svg",
         "author": null,
-        "parent": "/policies/"
+        "parent": "/policies/",
+        "layout": "document"
       }
     },
     {
@@ -14696,7 +15355,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -14754,7 +15414,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -14811,7 +15472,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -14869,7 +15531,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -14904,7 +15567,8 @@
             "zephyr"
           ]
         },
-        "parent": "/software/"
+        "parent": "/software/",
+        "layout": "document"
       }
     },
     {
@@ -14955,7 +15619,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -15006,7 +15671,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -15032,7 +15698,7 @@
         "related": {
           "pages": [
             "/discover/resources/specifications/",
-            "/papers/"
+            "/academic-papers/"
           ],
           "people": [
 
@@ -15064,7 +15730,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "redirect"
       }
     },
     {
@@ -15093,7 +15760,7 @@
         "related": {
           "pages": [
             "/discover/resources/specifications/",
-            "/papers/"
+            "/academic-papers/"
           ],
           "people": [
 
@@ -15182,7 +15849,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -15208,7 +15876,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -15241,7 +15910,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -15274,12 +15944,31 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
       "title": "Rigorous Engineering for Hardware Security: Formal Modelling and Proof in the CHERI Design and Implementation Process",
       "url": "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
+      "file": "pages/redirects/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md",
+      "type": "Redirect",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": "/academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
+      "properties": {
+        "title": "Rigorous Engineering for Hardware Security: Formal Modelling and Proof in the CHERI Design and Implementation Process",
+        "permalink": "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
+        "layout": "redirect"
+      }
+    },
+    {
+      "title": "Rigorous Engineering for Hardware Security: Formal Modelling and Proof in the CHERI Design and Implementation Process",
+      "url": "/academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/",
       "file": "_academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md",
       "type": "Paper (detail)",
       "collection": "academic-papers",
@@ -15320,7 +16009,8 @@
 
           ]
         },
-        "parent": "/papers/"
+        "parent": "/academic-papers/",
+        "layout": "document"
       }
     },
     {
@@ -15378,7 +16068,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -15387,15 +16078,15 @@
       "file": "_organisations/risc-v-international.md",
       "type": "Organisation (detail)",
       "collection": "organisations",
-      "has_image": false,
-      "image_status": "placeholder",
+      "has_image": true,
+      "image_status": "provided",
       "missing_news_date": false,
       "display_date": null,
       "alternate": false,
       "alias_target": null,
       "properties": {
         "title": "RISC-V International",
-        "image_url": "/assets/organisations/risc-v-international/placeholder.svg",
+        "image_url": "/assets/organisations/risc-v-international/logo-source.svg",
         "website_url": null,
         "membership_tier": null,
         "is_founding_member": null,
@@ -15404,7 +16095,14 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document",
+        "image_source": {
+          "source_page": "https://riscv.org/",
+          "source_url": "https://riscv.org/wp-content/uploads/2024/08/riscv-color.svg",
+          "retrieved_date": "2026-10-14",
+          "sha256": "47ddb2284a82e47007281472f5b5c42ebbfa1fe73eafe5ae021b46fc48384a11"
+        }
       }
     },
     {
@@ -15437,7 +16135,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -15470,7 +16169,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -15505,7 +16205,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -15541,7 +16242,8 @@
             "cheribsd"
           ]
         },
-        "parent": "/guides/"
+        "parent": "/guides/",
+        "layout": "document"
       }
     },
     {
@@ -15578,7 +16280,8 @@
             "cheribsd"
           ]
         },
-        "parent": "/software/"
+        "parent": "/software/",
+        "layout": "document"
       }
     },
     {
@@ -15611,7 +16314,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -15670,7 +16374,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -15703,7 +16408,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -15736,7 +16442,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -15769,7 +16476,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -15803,7 +16511,8 @@
             "rust-plus-cheri"
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -15829,7 +16538,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -15873,7 +16583,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -15931,7 +16642,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -15970,7 +16682,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -16027,7 +16740,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -16053,7 +16767,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -16102,7 +16817,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -16151,7 +16867,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -16177,7 +16894,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -16217,7 +16935,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -16250,7 +16969,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -16286,7 +17006,8 @@
             "cheribsd"
           ]
         },
-        "parent": "/software/"
+        "parent": "/software/",
+        "layout": "document"
       }
     },
     {
@@ -16343,7 +17064,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -16352,15 +17074,15 @@
       "file": "_organisations/smart-information-flow-technologies-sift.md",
       "type": "Organisation (detail)",
       "collection": "organisations",
-      "has_image": false,
-      "image_status": "placeholder",
+      "has_image": true,
+      "image_status": "provided",
       "missing_news_date": false,
       "display_date": null,
       "alternate": false,
       "alias_target": null,
       "properties": {
         "title": "Smart Information Flow Technologies (SIFT)",
-        "image_url": "/assets/organisations/smart-information-flow-technologies-sift/placeholder.svg",
+        "image_url": "/assets/organisations/smart-information-flow-technologies-sift/logo-source.png",
         "website_url": null,
         "membership_tier": null,
         "is_founding_member": null,
@@ -16369,7 +17091,14 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document",
+        "image_source": {
+          "source_page": "https://www.sift.net/",
+          "source_url": "https://www.sift.net/sites/all/themes/venture_theme/logo.png",
+          "retrieved_date": "2026-10-14",
+          "sha256": "8a8924a2a18266a2b1108d357575c3457fd448f4bfadfd58336f26d993d36ffc"
+        }
       }
     },
     {
@@ -16451,7 +17180,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -16509,7 +17239,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -16564,7 +17295,8 @@
 
           ]
         },
-        "parent": "/hardware/"
+        "parent": "/hardware/",
+        "layout": "document"
       }
     },
     {
@@ -16622,31 +17354,8 @@
           "policies": [
 
           ]
-        }
-      }
-    },
-    {
-      "title": "Speakers",
-      "url": "/news-and-events/people-and-opportunities/speakers/",
-      "file": "pages/news-and-events/people-and-opportunities/speakers.md",
-      "type": "People (list)",
-      "collection": "pages",
-      "has_image": false,
-      "image_status": "none",
-      "missing_news_date": false,
-      "display_date": null,
-      "alternate": false,
-      "alias_target": null,
-      "properties": {
-        "title": "Speakers",
-        "permalink": "/news-and-events/people-and-opportunities/speakers/",
-        "layout": "people",
-        "listing": {
-          "collection": null,
-          "status": null,
-          "role": "speaker"
         },
-        "parent": "/news-and-events/"
+        "layout": "document"
       }
     },
     {
@@ -16705,7 +17414,32 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
+      }
+    },
+    {
+      "title": "Speakers",
+      "url": "/news-and-events/people-and-opportunities/speakers/",
+      "file": "pages/news-and-events/people-and-opportunities/speakers.md",
+      "type": "People (list)",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": null,
+      "properties": {
+        "title": "Speakers",
+        "permalink": "/news-and-events/people-and-opportunities/speakers/",
+        "layout": "people",
+        "listing": {
+          "collection": null,
+          "status": null,
+          "role": "speaker"
+        },
+        "parent": "/news-and-events/"
       }
     },
     {
@@ -16762,7 +17496,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -16788,7 +17523,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -16821,7 +17557,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -16854,7 +17591,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -16893,7 +17631,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -16950,7 +17689,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -17007,7 +17747,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -17033,7 +17774,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -17090,7 +17832,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -17124,7 +17867,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -17165,7 +17909,8 @@
             "freebsd"
           ]
         },
-        "parent": "/guides/"
+        "parent": "/guides/",
+        "layout": "document"
       }
     },
     {
@@ -17222,7 +17967,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -17248,7 +17994,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -17306,7 +18053,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -17363,12 +18111,31 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
       "title": "The Arm Morello Evaluation Platform—Validating CHERI-Based Security in a High-Performance System",
       "url": "/papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/",
+      "file": "pages/redirects/papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa.md",
+      "type": "Redirect",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": "/academic-papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/",
+      "properties": {
+        "title": "The Arm Morello Evaluation Platform—Validating CHERI-Based Security in a High-Performance System",
+        "permalink": "/papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/",
+        "layout": "redirect"
+      }
+    },
+    {
+      "title": "The Arm Morello Evaluation Platform—Validating CHERI-Based Security in a High-Performance System",
+      "url": "/academic-papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/",
       "file": "_academic-papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa.md",
       "type": "Paper (detail)",
       "collection": "academic-papers",
@@ -17402,7 +18169,8 @@
 
           ]
         },
-        "parent": "/papers/"
+        "parent": "/academic-papers/",
+        "layout": "document"
       }
     },
     {
@@ -17428,7 +18196,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -17469,12 +18238,31 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
       "title": "The CHERI Capability Model: Revisiting RISC in an Age of Risk",
       "url": "/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/",
+      "file": "pages/redirects/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk.md",
+      "type": "Redirect",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": "/academic-papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/",
+      "properties": {
+        "title": "The CHERI Capability Model: Revisiting RISC in an Age of Risk",
+        "permalink": "/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/",
+        "layout": "redirect"
+      }
+    },
+    {
+      "title": "The CHERI Capability Model: Revisiting RISC in an Age of Risk",
+      "url": "/academic-papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/",
       "file": "_academic-papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk.md",
       "type": "Paper (detail)",
       "collection": "academic-papers",
@@ -17512,7 +18300,8 @@
 
           ]
         },
-        "parent": "/papers/"
+        "parent": "/academic-papers/",
+        "layout": "document"
       }
     },
     {
@@ -17569,7 +18358,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -17626,7 +18416,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -17683,7 +18474,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -17722,7 +18514,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -17731,15 +18524,15 @@
       "file": "_organisations/the-good-penguin.md",
       "type": "Organisation (detail)",
       "collection": "organisations",
-      "has_image": false,
-      "image_status": "placeholder",
+      "has_image": true,
+      "image_status": "provided",
       "missing_news_date": false,
       "display_date": null,
       "alternate": false,
       "alias_target": null,
       "properties": {
         "title": "The Good Penguin",
-        "image_url": "/assets/organisations/the-good-penguin/placeholder.svg",
+        "image_url": "/assets/organisations/the-good-penguin/logo-source.png",
         "website_url": null,
         "membership_tier": null,
         "is_founding_member": null,
@@ -17748,7 +18541,14 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document",
+        "image_source": {
+          "source_page": "https://www.thegoodpenguin.co.uk/",
+          "source_url": "https://www.thegoodpenguin.co.uk/wp-content/uploads/2020/07/thegoodpenguinstacklogo.png",
+          "retrieved_date": "2026-10-14",
+          "sha256": "3450f579249d9bd4680428d044dca05e7df4d55abcfd99ca055eb039554d4f3f"
+        }
       }
     },
     {
@@ -17805,7 +18605,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -17844,7 +18645,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -17902,7 +18704,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -17959,7 +18762,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -17985,7 +18789,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -18024,7 +18829,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -18058,7 +18864,8 @@
             "cheri-plus-safety"
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -18091,7 +18898,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -18124,7 +18932,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -18157,7 +18966,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -18214,7 +19024,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -18247,7 +19058,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -18304,7 +19116,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -18337,7 +19150,8 @@
             "marketing"
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -18381,7 +19195,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -18403,7 +19218,8 @@
         "version": "2.0",
         "document_date": "2025-09",
         "document_url": "https://cheri-alliance.org/legal-trademark-policy/",
-        "parent": "/policies/"
+        "parent": "/policies/",
+        "layout": "document"
       }
     },
     {
@@ -18429,7 +19245,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -18470,7 +19287,8 @@
             "zephyr"
           ]
         },
-        "parent": "/guides/"
+        "parent": "/guides/",
+        "layout": "document"
       }
     },
     {
@@ -18510,7 +19328,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -18519,15 +19338,15 @@
       "file": "_organisations/ukri.md",
       "type": "Organisation (detail)",
       "collection": "organisations",
-      "has_image": false,
-      "image_status": "placeholder",
+      "has_image": true,
+      "image_status": "provided",
       "missing_news_date": false,
       "display_date": null,
       "alternate": false,
       "alias_target": null,
       "properties": {
         "title": "UKRI",
-        "image_url": "/assets/organisations/ukri/placeholder.svg",
+        "image_url": "/assets/organisations/ukri/logo-source.svg",
         "website_url": null,
         "membership_tier": null,
         "is_founding_member": null,
@@ -18536,7 +19355,14 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document",
+        "image_source": {
+          "source_page": "https://www.ukri.org/",
+          "source_url": "https://www.ukri.org/#header-logo",
+          "retrieved_date": "2026-10-14",
+          "sha256": "3beac62ba3fdd3f446e25ac307e84010ca1a9a49296be63db8de55348086679b"
+        }
       }
     },
     {
@@ -18594,7 +19420,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -18620,7 +19447,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -18646,7 +19474,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -18672,7 +19501,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -18698,7 +19528,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -18724,7 +19555,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -18750,7 +19582,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -18776,7 +19609,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -18785,15 +19619,15 @@
       "file": "_organisations/university-of-modena-and-reggio-emilia.md",
       "type": "Organisation (detail)",
       "collection": "organisations",
-      "has_image": false,
-      "image_status": "placeholder",
+      "has_image": true,
+      "image_status": "provided",
       "missing_news_date": false,
       "display_date": null,
       "alternate": false,
       "alias_target": null,
       "properties": {
         "title": "University of Modena and Reggio Emilia",
-        "image_url": "/assets/organisations/university-of-modena-and-reggio-emilia/placeholder.svg",
+        "image_url": "/assets/organisations/university-of-modena-and-reggio-emilia/logo-source.svg",
         "website_url": null,
         "membership_tier": null,
         "is_founding_member": null,
@@ -18802,7 +19636,14 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document",
+        "image_source": {
+          "source_page": "https://www.unimore.it/en",
+          "source_url": "https://www.unimore.it/themes/custom/unimore_base/icons/logo.svg",
+          "retrieved_date": "2026-10-14",
+          "sha256": "6cb7b47f9c77419b029bbb82b302a8356416cee16f178a5f9b0687bf4d88009a"
+        }
       }
     },
     {
@@ -18843,31 +19684,8 @@
 
           ]
         },
-        "parent": "/news/"
-      }
-    },
-    {
-      "title": "Upcoming Events",
-      "url": "/news-and-events/events-and-archive/upcoming-events/",
-      "file": "pages/news-and-events/events-and-archive/upcoming-events.md",
-      "type": "Events (list)",
-      "collection": "pages",
-      "has_image": false,
-      "image_status": "none",
-      "missing_news_date": false,
-      "display_date": null,
-      "alternate": false,
-      "alias_target": null,
-      "properties": {
-        "title": "Upcoming Events",
-        "permalink": "/news-and-events/events-and-archive/upcoming-events/",
-        "layout": "events",
-        "listing": {
-          "collection": null,
-          "status": "upcoming",
-          "role": null
-        },
-        "parent": "/news-and-events/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -18924,7 +19742,32 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
+      }
+    },
+    {
+      "title": "Upcoming Events",
+      "url": "/news-and-events/events-and-archive/upcoming-events/",
+      "file": "pages/news-and-events/events-and-archive/upcoming-events.md",
+      "type": "Events (list)",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": null,
+      "properties": {
+        "title": "Upcoming Events",
+        "permalink": "/news-and-events/events-and-archive/upcoming-events/",
+        "layout": "events",
+        "listing": {
+          "collection": null,
+          "status": "upcoming",
+          "role": null
+        },
+        "parent": "/news-and-events/"
       }
     },
     {
@@ -18981,7 +19824,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -19038,7 +19882,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "redirect"
       }
     },
     {
@@ -19057,7 +19902,8 @@
         "title": "Using the CHERI Alliance Trademark",
         "image_url": "/assets/policies/trademark-original/placeholder.svg",
         "author": null,
-        "parent": "/policies/"
+        "parent": "/policies/",
+        "layout": "redirect"
       }
     },
     {
@@ -19090,7 +19936,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -19116,7 +19963,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -19173,7 +20021,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -19230,7 +20079,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -19269,7 +20119,8 @@
 
           ]
         },
-        "parent": "/events/"
+        "parent": "/events/",
+        "layout": "document"
       }
     },
     {
@@ -19327,7 +20178,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -19367,7 +20219,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -19424,7 +20277,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -19481,7 +20335,8 @@
           "policies": [
 
           ]
-        }
+        },
+        "layout": "document"
       }
     },
     {
@@ -19507,7 +20362,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -19547,7 +20403,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -19586,30 +20443,26 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
       "title": "Working groups",
       "url": "/groups/",
       "file": "pages/groups.md",
-      "type": "Groups (list)",
+      "type": "Redirect",
       "collection": "pages",
       "has_image": false,
       "image_status": "none",
       "missing_news_date": false,
       "display_date": null,
       "alternate": true,
-      "alias_target": "/alliance/leadership/working-groups/",
+      "alias_target": "/working-groups/",
       "properties": {
         "title": "Working groups",
         "permalink": "/groups/",
         "layout": "redirect",
-        "listing": {
-          "collection": "working-groups",
-          "status": null,
-          "role": null
-        },
         "parent": "/"
       }
     },
@@ -19617,6 +20470,24 @@
       "title": "Working Groups",
       "url": "/alliance/leadership/working-groups/",
       "file": "pages/alliance/leadership/working-groups.md",
+      "type": "Redirect",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": "/working-groups/",
+      "properties": {
+        "title": "Working Groups",
+        "permalink": "/alliance/leadership/working-groups/",
+        "layout": "redirect"
+      }
+    },
+    {
+      "title": "Working Groups",
+      "url": "/working-groups/",
+      "file": "pages/working-groups.md",
       "type": "Groups (list)",
       "collection": "pages",
       "has_image": false,
@@ -19627,7 +20498,7 @@
       "alias_target": null,
       "properties": {
         "title": "Working Groups",
-        "permalink": "/alliance/leadership/working-groups/",
+        "permalink": "/working-groups/",
         "layout": "list",
         "listing": {
           "collection": "working-groups",
@@ -19659,7 +20530,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -19700,7 +20572,8 @@
         "summary": "A commercially licensable 64-bit CHERI-RISC-V application processor IP designed for larger systems that require operating-system support and protection of substantial software stacks.",
         "parent": "/hardware/",
         "certification": "cheri-enabled",
-        "certification_url": "https://cheri-alliance.org/cheri-enabled/x730/"
+        "certification_url": "https://cheri-alliance.org/cheri-enabled/x730/",
+        "layout": "document"
       }
     },
     {
@@ -19751,7 +20624,8 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
@@ -19784,7 +20658,8 @@
 
           ]
         },
-        "parent": "/people/"
+        "parent": "/people/",
+        "layout": "document"
       }
     },
     {
@@ -19810,7 +20685,8 @@
           "mastodon_url": null,
           "github_url": null
         },
-        "parent": "/organisations/"
+        "parent": "/organisations/",
+        "layout": "document"
       }
     },
     {
@@ -19845,12 +20721,31 @@
 
           ]
         },
-        "parent": "/software/"
+        "parent": "/software/",
+        "layout": "document"
       }
     },
     {
       "title": "©️ CHERI C/C++ WG",
       "url": "/groups/cheri-c-cplusplus/",
+      "file": "pages/redirects/groups/cheri-c-cplusplus.md",
+      "type": "Redirect",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": "/working-groups/cheri-c-cplusplus/",
+      "properties": {
+        "title": "©️ CHERI C/C++ WG",
+        "permalink": "/groups/cheri-c-cplusplus/",
+        "layout": "redirect"
+      }
+    },
+    {
+      "title": "©️ CHERI C/C++ WG",
+      "url": "/working-groups/cheri-c-cplusplus/",
       "file": "_working-groups/cheri-c-cplusplus.md",
       "type": "Group (detail)",
       "collection": "working-groups",
@@ -19881,7 +20776,8 @@
 
           ]
         },
-        "parent": "/groups/"
+        "parent": "/working-groups/",
+        "layout": "document"
       }
     },
     {
@@ -19930,12 +20826,31 @@
 
           ]
         },
-        "parent": "/news/"
+        "parent": "/news/",
+        "layout": "document"
       }
     },
     {
       "title": "⚙️ Rust + CHERI WG",
       "url": "/groups/rust-plus-cheri/",
+      "file": "pages/redirects/groups/rust-plus-cheri.md",
+      "type": "Redirect",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": "/working-groups/rust-plus-cheri/",
+      "properties": {
+        "title": "⚙️ Rust + CHERI WG",
+        "permalink": "/groups/rust-plus-cheri/",
+        "layout": "redirect"
+      }
+    },
+    {
+      "title": "⚙️ Rust + CHERI WG",
+      "url": "/working-groups/rust-plus-cheri/",
       "file": "_working-groups/rust-plus-cheri.md",
       "type": "Group (detail)",
       "collection": "working-groups",
@@ -19970,12 +20885,31 @@
             "rust"
           ]
         },
-        "parent": "/groups/"
+        "parent": "/working-groups/",
+        "layout": "document"
       }
     },
     {
       "title": "✅ Certification WG",
       "url": "/groups/certification-working-group/",
+      "file": "pages/redirects/groups/certification-working-group.md",
+      "type": "Redirect",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": "/working-groups/certification-working-group/",
+      "properties": {
+        "title": "✅ Certification WG",
+        "permalink": "/groups/certification-working-group/",
+        "layout": "redirect"
+      }
+    },
+    {
+      "title": "✅ Certification WG",
+      "url": "/working-groups/certification-working-group/",
       "file": "_working-groups/certification-working-group.md",
       "type": "Group (detail)",
       "collection": "working-groups",
@@ -20006,12 +20940,31 @@
 
           ]
         },
-        "parent": "/groups/"
+        "parent": "/working-groups/",
+        "layout": "document"
       }
     },
     {
       "title": "⬛️ CHERI in SoC WG",
       "url": "/groups/cheri-in-soc/",
+      "file": "pages/redirects/groups/cheri-in-soc.md",
+      "type": "Redirect",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": "/working-groups/cheri-in-soc/",
+      "properties": {
+        "title": "⬛️ CHERI in SoC WG",
+        "permalink": "/groups/cheri-in-soc/",
+        "layout": "redirect"
+      }
+    },
+    {
+      "title": "⬛️ CHERI in SoC WG",
+      "url": "/working-groups/cheri-in-soc/",
       "file": "_working-groups/cheri-in-soc.md",
       "type": "Group (detail)",
       "collection": "working-groups",
@@ -20042,12 +20995,31 @@
 
           ]
         },
-        "parent": "/groups/"
+        "parent": "/working-groups/",
+        "layout": "document"
       }
     },
     {
       "title": "🆓 CHERI FreeRTOS WG",
       "url": "/groups/cheri-freertos/",
+      "file": "pages/redirects/groups/cheri-freertos.md",
+      "type": "Redirect",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": "/working-groups/cheri-freertos/",
+      "properties": {
+        "title": "🆓 CHERI FreeRTOS WG",
+        "permalink": "/groups/cheri-freertos/",
+        "layout": "redirect"
+      }
+    },
+    {
+      "title": "🆓 CHERI FreeRTOS WG",
+      "url": "/working-groups/cheri-freertos/",
       "file": "_working-groups/cheri-freertos.md",
       "type": "Group (detail)",
       "collection": "working-groups",
@@ -20078,12 +21050,31 @@
 
           ]
         },
-        "parent": "/groups/"
+        "parent": "/working-groups/",
+        "layout": "document"
       }
     },
     {
       "title": "🐦 CHERI QEMU WG",
       "url": "/groups/cheri-qemu/",
+      "file": "pages/redirects/groups/cheri-qemu.md",
+      "type": "Redirect",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": "/working-groups/cheri-qemu/",
+      "properties": {
+        "title": "🐦 CHERI QEMU WG",
+        "permalink": "/groups/cheri-qemu/",
+        "layout": "redirect"
+      }
+    },
+    {
+      "title": "🐦 CHERI QEMU WG",
+      "url": "/working-groups/cheri-qemu/",
       "file": "_working-groups/cheri-qemu.md",
       "type": "Group (detail)",
       "collection": "working-groups",
@@ -20114,12 +21105,31 @@
 
           ]
         },
-        "parent": "/groups/"
+        "parent": "/working-groups/",
+        "layout": "document"
       }
     },
     {
       "title": "🐧 CHERI Linux WG",
       "url": "/groups/cheri-linux-working-group/",
+      "file": "pages/redirects/groups/cheri-linux-working-group.md",
+      "type": "Redirect",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": "/working-groups/cheri-linux-working-group/",
+      "properties": {
+        "title": "🐧 CHERI Linux WG",
+        "permalink": "/groups/cheri-linux-working-group/",
+        "layout": "redirect"
+      }
+    },
+    {
+      "title": "🐧 CHERI Linux WG",
+      "url": "/working-groups/cheri-linux-working-group/",
       "file": "_working-groups/cheri-linux-working-group.md",
       "type": "Group (detail)",
       "collection": "working-groups",
@@ -20150,12 +21160,31 @@
             "cheri-linux"
           ]
         },
-        "parent": "/groups/"
+        "parent": "/working-groups/",
+        "layout": "document"
       }
     },
     {
       "title": "👮 MMU-less Systems WG",
       "url": "/groups/mmu-less-systems/",
+      "file": "pages/redirects/groups/mmu-less-systems.md",
+      "type": "Redirect",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": "/working-groups/mmu-less-systems/",
+      "properties": {
+        "title": "👮 MMU-less Systems WG",
+        "permalink": "/groups/mmu-less-systems/",
+        "layout": "redirect"
+      }
+    },
+    {
+      "title": "👮 MMU-less Systems WG",
+      "url": "/working-groups/mmu-less-systems/",
       "file": "_working-groups/mmu-less-systems.md",
       "type": "Group (detail)",
       "collection": "working-groups",
@@ -20186,12 +21215,31 @@
 
           ]
         },
-        "parent": "/groups/"
+        "parent": "/working-groups/",
+        "layout": "document"
       }
     },
     {
       "title": "💾 Repository Management WG",
       "url": "/groups/repository-management/",
+      "file": "pages/redirects/groups/repository-management.md",
+      "type": "Redirect",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": "/working-groups/repository-management/",
+      "properties": {
+        "title": "💾 Repository Management WG",
+        "permalink": "/groups/repository-management/",
+        "layout": "redirect"
+      }
+    },
+    {
+      "title": "💾 Repository Management WG",
+      "url": "/working-groups/repository-management/",
       "file": "_working-groups/repository-management.md",
       "type": "Group (detail)",
       "collection": "working-groups",
@@ -20223,12 +21271,31 @@
 
           ]
         },
-        "parent": "/groups/"
+        "parent": "/working-groups/",
+        "layout": "document"
       }
     },
     {
       "title": "📋 CHERI + Safety WG",
       "url": "/groups/cheri-plus-safety/",
+      "file": "pages/redirects/groups/cheri-plus-safety.md",
+      "type": "Redirect",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": "/working-groups/cheri-plus-safety/",
+      "properties": {
+        "title": "📋 CHERI + Safety WG",
+        "permalink": "/groups/cheri-plus-safety/",
+        "layout": "redirect"
+      }
+    },
+    {
+      "title": "📋 CHERI + Safety WG",
+      "url": "/working-groups/cheri-plus-safety/",
       "file": "_working-groups/cheri-plus-safety.md",
       "type": "Group (detail)",
       "collection": "working-groups",
@@ -20260,12 +21327,31 @@
 
           ]
         },
-        "parent": "/groups/"
+        "parent": "/working-groups/",
+        "layout": "document"
       }
     },
     {
       "title": "📣 Marketing WG",
       "url": "/groups/marketing/",
+      "file": "pages/redirects/groups/marketing.md",
+      "type": "Redirect",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": "/working-groups/marketing/",
+      "properties": {
+        "title": "📣 Marketing WG",
+        "permalink": "/groups/marketing/",
+        "layout": "redirect"
+      }
+    },
+    {
+      "title": "📣 Marketing WG",
+      "url": "/working-groups/marketing/",
       "file": "_working-groups/marketing.md",
       "type": "Group (detail)",
       "collection": "working-groups",
@@ -20296,12 +21382,31 @@
 
           ]
         },
-        "parent": "/groups/"
+        "parent": "/working-groups/",
+        "layout": "document"
       }
     },
     {
       "title": "🛠️ OS Support & Portability WG",
       "url": "/groups/os-support-and-portability/",
+      "file": "pages/redirects/groups/os-support-and-portability.md",
+      "type": "Redirect",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": "/working-groups/os-support-and-portability/",
+      "properties": {
+        "title": "🛠️ OS Support & Portability WG",
+        "permalink": "/groups/os-support-and-portability/",
+        "layout": "redirect"
+      }
+    },
+    {
+      "title": "🛠️ OS Support & Portability WG",
+      "url": "/working-groups/os-support-and-portability/",
       "file": "_working-groups/os-support-and-portability.md",
       "type": "Group (detail)",
       "collection": "working-groups",
@@ -20333,12 +21438,31 @@
             "zephyr"
           ]
         },
-        "parent": "/groups/"
+        "parent": "/working-groups/",
+        "layout": "document"
       }
     },
     {
       "title": "🤖 CHERI Virtual Machines WG",
       "url": "/groups/cheri-virtual-machines/",
+      "file": "pages/redirects/groups/cheri-virtual-machines.md",
+      "type": "Redirect",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": "/working-groups/cheri-virtual-machines/",
+      "properties": {
+        "title": "🤖 CHERI Virtual Machines WG",
+        "permalink": "/groups/cheri-virtual-machines/",
+        "layout": "redirect"
+      }
+    },
+    {
+      "title": "🤖 CHERI Virtual Machines WG",
+      "url": "/working-groups/cheri-virtual-machines/",
       "file": "_working-groups/cheri-virtual-machines.md",
       "type": "Group (detail)",
       "collection": "working-groups",
@@ -20369,12 +21493,31 @@
 
           ]
         },
-        "parent": "/groups/"
+        "parent": "/working-groups/",
+        "layout": "document"
       }
     },
     {
       "title": "🪁 CHERI Zephyr WG",
       "url": "/groups/cheri-zephyr/",
+      "file": "pages/redirects/groups/cheri-zephyr.md",
+      "type": "Redirect",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": "/working-groups/cheri-zephyr/",
+      "properties": {
+        "title": "🪁 CHERI Zephyr WG",
+        "permalink": "/groups/cheri-zephyr/",
+        "layout": "redirect"
+      }
+    },
+    {
+      "title": "🪁 CHERI Zephyr WG",
+      "url": "/working-groups/cheri-zephyr/",
       "file": "_working-groups/cheri-zephyr.md",
       "type": "Group (detail)",
       "collection": "working-groups",
@@ -20405,12 +21548,31 @@
             "zephyr"
           ]
         },
-        "parent": "/groups/"
+        "parent": "/working-groups/",
+        "layout": "document"
       }
     },
     {
       "title": "🪪 Promotion & Ambassador Program WG",
       "url": "/groups/promotion-and-ambassador-program/",
+      "file": "pages/redirects/groups/promotion-and-ambassador-program.md",
+      "type": "Redirect",
+      "collection": "pages",
+      "has_image": false,
+      "image_status": "none",
+      "missing_news_date": false,
+      "display_date": null,
+      "alternate": false,
+      "alias_target": "/working-groups/promotion-and-ambassador-program/",
+      "properties": {
+        "title": "🪪 Promotion & Ambassador Program WG",
+        "permalink": "/groups/promotion-and-ambassador-program/",
+        "layout": "redirect"
+      }
+    },
+    {
+      "title": "🪪 Promotion & Ambassador Program WG",
+      "url": "/working-groups/promotion-and-ambassador-program/",
       "file": "_working-groups/promotion-and-ambassador-program.md",
       "type": "Group (detail)",
       "collection": "working-groups",
@@ -20442,7 +21604,8 @@
 
           ]
         },
-        "parent": "/groups/"
+        "parent": "/working-groups/",
+        "layout": "document"
       }
     }
   ]

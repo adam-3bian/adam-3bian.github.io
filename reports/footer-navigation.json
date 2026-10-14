@@ -30,7 +30,7 @@
         },
         {
           "title": "Working Groups",
-          "url": "/alliance/leadership/working-groups/"
+          "url": "/working-groups/"
         },
         {
           "title": "Contact the Alliance",
@@ -76,7 +76,7 @@
         },
         {
           "title": "Papers",
-          "url": "/papers/"
+          "url": "/academic-papers/"
         }
       ]
     }
@@ -85,10 +85,6 @@
     {
       "title": "LinkedIn",
       "url": "https://www.linkedin.com/company/cheri-alliance/"
-    },
-    {
-      "title": "Content audit",
-      "url": "/checks/"
     }
   ]
 }

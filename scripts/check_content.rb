@@ -7,6 +7,7 @@ require 'time'
 require 'fileutils'
 require 'cgi'
 require 'uri'
+require 'digest'
 
 root = File.expand_path('..', __dir__)
 config = Jekyll.configuration('source' => root, 'quiet' => true)
@@ -20,7 +21,7 @@ header_menu = site.config.fetch('navigation').fetch('header')
 index_pages = {}
 errors = []
 # Keep the complete examples in the authoring reference executable.
-reference = File.read(File.join(root, 'FRONT_MATTER.md'))
+reference = File.read(File.join(root, 'FRONT_MATTER.MD'))
 reference_examples = reference.scan(/<!-- schema: ([\w-]+) -->\s*```yaml\n(.*?)\n```/m).map do |kind, example|
   fields = YAML.safe_load(example, permitted_classes: [Date, Time], aliases: false)
   [kind, fields]
@@ -52,11 +53,12 @@ def required_schema_fields(schema, fields, common, optional = {})
 end
 
 reference_examples.each do |kind, fields|
-  errors << "Invalid FRONT_MATTER.md #{kind} example" unless schemas[kind] && same_fields?(schemas[kind], required_schema_fields(schemas[kind], fields, schemas.fetch('common', {}), schemas.dig('optional', kind) || {}))
+  errors << "Invalid FRONT_MATTER.MD #{kind} example" unless schemas[kind] && same_fields?(schemas[kind], required_schema_fields(schemas[kind], fields, schemas.fetch('common', {}), schemas.dig('optional', kind) || {}))
 end
 
 def schema_kind(object, entry)
   return object.collection.label if object.is_a?(Jekyll::Document)
+  return 'redirect' if entry['page_type'] == 'Redirect'
   return 'listing' if entry['page_type'].include?('(list)')
   return 'index' if entry['page_type'].include?('(index)')
   'content'
@@ -329,6 +331,9 @@ records = objects.sort_by { |object| object.data['title'].to_s.downcase }.map do
   properties = (schema.keys + schemas.fetch('common', {}).keys + (schemas.dig('optional', schema_kind(object, entry)) || {}).keys).uniq.each_with_object({}) do |key, values|
     values[key] = object.data[key] if schema.key?(key) || !object.data[key].nil?
   end
+  properties['layout'] = object.data['layout']
+  image_source = site.data.fetch('image-sources', {})[image]
+  properties['image_source'] = image_source if image_source
   {'title' => object.data['title'], 'url' => object.url, 'file' => entry['file'],
    'type' => entry['page_type'], 'collection' => entry['collection'],
    'has_image' => image_status == 'provided', 'image_status' => image_status,
@@ -337,6 +342,12 @@ records = objects.sort_by { |object| object.data['title'].to_s.downcase }.map do
    'alternate' => object.data['alternate'] == true,
    'alias_target' => settings.dig('aliases', object.url), 'properties' => properties}
 end.compact
+site.data.fetch('image-sources', {}).each do |image, source|
+  asset = File.join(root, image.sub(%r{^/}, ''))
+  if !File.file?(asset) || Digest::SHA256.file(asset).hexdigest != source['sha256']
+    errors << "Image source artwork missing or changed: #{image}"
+  end
+end
 collection_summary = settings['collections'].map do |key, value|
   collection_records = records.select { |record| record['collection'] == key }
   {'key' => key, 'label' => value['label'], 'url' => value['url'] || "/#{key}/",
@@ -359,8 +370,7 @@ footer_navigation = {
   'groups' => Array(config.dig('navigation', 'footer')).map do |group|
     {'title' => group['title'], 'links' => Array(group['links']).map { |link| link.slice('title', 'url') }}
   end,
-  'utilities' => Array(config.dig('navigation', 'social')).map { |link| link.slice('title', 'url') } +
-    [{'title' => 'Content audit', 'url' => '/checks/'}]
+  'utilities' => Array(config.dig('navigation', 'social')).map { |link| link.slice('title', 'url') }
 }
 File.write(File.join(root, 'reports/footer-navigation.json'), JSON.pretty_generate(footer_navigation) + "\n")
 File.write(File.join(root, 'reports/preflight.json'), JSON.pretty_generate(report) + "\n")

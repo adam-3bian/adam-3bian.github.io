@@ -1,6 +1,6 @@
 ---
 title: ARIA
-image_url: /assets/organisations/aria/placeholder.svg
+image_url: /assets/organisations/aria/logo-source.svg
 website_url: null
 membership_tier: null
 is_founding_member: null

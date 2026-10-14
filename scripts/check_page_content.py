@@ -295,7 +295,7 @@ for record in report['records']:
             errors.append('Redirect without ordinary fallback link: ' + record['url'])
 
 # Directory targets must match the existing canonical records, not copied prose.
-groups_route = '/alliance/leadership/working-groups/'
+groups_route = '/working-groups/'
 groups_doc = documents[target_file(BASEURL + groups_route)]
 group_targets = [n.attrs.get('data-record-url') for n in groups_doc.nodes if n.has_class('card')]
 expected_groups = [r['url'] for r in report['records'] if r['collection'] == 'working-groups' and not r['alternate']]

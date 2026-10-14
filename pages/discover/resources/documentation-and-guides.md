@@ -5,7 +5,7 @@ summary: Interesting publications from the CHERI Alliance and others.
 image_url: null
 updated_date: null
 parent: /discover/
-next_page_url: /alliance/leadership/working-groups/
+next_page_url: /working-groups/
 related:
   pages: []
   people: []

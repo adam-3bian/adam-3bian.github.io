@@ -1,6 +1,6 @@
 ---
 title: CHERI Alliance
-image_url: /assets/organisations/cheri-alliance/9899bc30b0-logo-blue.webp
+image_url: /assets/organisations/cheri-alliance/logo.svg
 website_url: https://cheri-alliance.org/
 membership_tier: null
 is_founding_member: null

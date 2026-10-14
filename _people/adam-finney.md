@@ -23,7 +23,7 @@ Board role
 
 ## Biography
 
-Adam Finney is a CHERI technologist with over 20 years of systems experience, and a key driver of CHERI adoption. As Lead of the Adoption Programme and [Marketing Working Group](/groups/marketing/), he focuses on turning security into something developers and businesses can actually use. Adam has worked at the sharp end of the stack—from porting Linux to [Morello](/hardware/morello/) to shaping next‑generation CHERI‑enabled FPGA platforms and developer boards.
+Adam Finney is a CHERI technologist with over 20 years of systems experience, and a key driver of CHERI adoption. As Lead of the Adoption Programme and [Marketing Working Group](/working-groups/marketing/), he focuses on turning security into something developers and businesses can actually use. Adam has worked at the sharp end of the stack—from porting Linux to [Morello](/hardware/morello/) to shaping next‑generation CHERI‑enabled FPGA platforms and developer boards.
 
 ## CHERI Talks
 

@@ -72,7 +72,7 @@ CheriBSD is [FreeBSD](/software/freebsd/) adapted for CHERI-RISC-V and Arm Morel
 
 ## What is CHERI Linux?
 
-CHERI Linux is Linux adapted to CHERI systems. The [CHERI Alliance Linux Working Group](/groups/cheri-linux-working-group/) coordinates the porting effort, cross-architecture roadmap, and public repositories. Check current project documentation for supported branches, targets, and maturity. See CHERI Linux
+CHERI Linux is Linux adapted to CHERI systems. The [CHERI Alliance Linux Working Group](/working-groups/cheri-linux-working-group/) coordinates the porting effort, cross-architecture roadmap, and public repositories. Check current project documentation for supported branches, targets, and maturity. See CHERI Linux
 
 ## What is CHERI-RISC-V?
 

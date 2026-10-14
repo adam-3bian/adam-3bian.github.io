@@ -126,4 +126,4 @@ The Hub8 MX – the white building opposite the church at the end of Chester Wal
 - Off Chester Walk
 - Cheltenham
 - GL50 3JY (Please note that this differs from the postcode on [Google](/organisations/google/) Maps)
-- View map
+- [View map](https://maps.google.com/maps?q=hub8%20mx)

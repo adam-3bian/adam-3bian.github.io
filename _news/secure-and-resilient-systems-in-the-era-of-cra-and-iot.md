@@ -71,7 +71,7 @@ Cost
 : Free
 
 Register
-: Secure Horizons 2026 Registration
+: [Secure Horizons 2026 Registration](https://www.eventbrite.ie/e/secure-horizons-2026-tickets-1976167642616)
 {: .record-properties }
 
 Secure Horizons 2026 offers a rare opportunity to step back from day to day delivery pressures and think clearly about the future of secure and resilient systems. In a setting that powerfully connects past and present, it asks a simple but vital question: how do we build technology that is worthy of the trust we place in it?

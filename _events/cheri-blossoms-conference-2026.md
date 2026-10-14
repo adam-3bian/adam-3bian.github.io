@@ -180,7 +180,7 @@ CHERI Mocha: an open-source memory-safe application system - [Javier Orensanz Ma
 
 - BT’s Engagement with CHERI Technology - [Sam Cater](/people/sam-cater/) \| CHERI Blossoms 2026 (25:19)
 
-- Inside the [CHERI in SoC Working Group](/groups/cheri-in-soc/) - [Ben Fletcher](/people/ben-fletcher/) \| CHERI Blossoms 2026 (15:51)
+- Inside the [CHERI in SoC Working Group](/working-groups/cheri-in-soc/) - [Ben Fletcher](/people/ben-fletcher/) \| CHERI Blossoms 2026 (15:51)
 
 MMU-based revocation for temporal safety on CHERI application cores - [Tariq Kurd](/people/tariq-kurd/) & [Alfredo Mazzinghi](/people/alfredo-mazzinghi/) (17:40)
 

@@ -1,6 +1,6 @@
 ---
 title: German Research Center for Artificial Intelligence (DFKI)
-image_url: /assets/organisations/german-research-center-for-artificial-intelligence-dfki/placeholder.svg
+image_url: /assets/organisations/german-research-center-for-artificial-intelligence-dfki/logo-source.png
 website_url: null
 membership_tier: null
 is_founding_member: null

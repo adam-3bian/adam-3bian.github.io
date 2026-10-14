@@ -13,7 +13,7 @@ collections:
     card_action: View event
   academic-papers:
     label: Academic papers
-    url: /papers/
+    url: /academic-papers/
     card_action: View paper
   hardware:
     label: Hardware
@@ -23,7 +23,7 @@ collections:
     card_action: View software
   working-groups:
     label: Working groups
-    url: /alliance/leadership/working-groups/
+    url: /working-groups/
     card_action: View working group
   guides:
     label: Guides
@@ -81,7 +81,7 @@ listing_presets:
 aliases:
   /adopt/assurance-and-adoption/case-studies/: /case-studies/
   /discover/resources/reports-and-white-papers/: /reports/
-  /groups/: /alliance/leadership/working-groups/
+  /groups/: /working-groups/
   /alliance/build/: /build/
   /contact/: /alliance/membership/contact/
   /members/: /alliance/leadership/members/
@@ -98,7 +98,7 @@ aliases:
   /news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd-original/: /news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd/
   /news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl-original/: /news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl/
   /news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software-original/: /news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software/
-  /discover/resources/academic-papers/: /papers/
+  /discover/resources/academic-papers/: /academic-papers/
   /competition-law-statement/: /policies/competition-law-statement/
   /code-of-conduct/: /policies/code-of-conduct/
   /trademark/: /policies/trademark/
@@ -107,3 +107,37 @@ aliases:
   /policies/ip-policy/: /policies/intellectual-property-policy/
   /policies/trademark-original/: /policies/trademark/
   /policies/privacy-policy/: /policies/privacy/
+  /papers/: /academic-papers/
+  /alliance/leadership/working-groups/: /working-groups/
+  /groups/certification-working-group/: /working-groups/certification-working-group/
+  /groups/cheri-c-cplusplus/: /working-groups/cheri-c-cplusplus/
+  /groups/cheri-for-sel4/: /working-groups/cheri-for-sel4/
+  /groups/cheri-freertos/: /working-groups/cheri-freertos/
+  /groups/cheri-in-soc/: /working-groups/cheri-in-soc/
+  /groups/cheri-linux-working-group/: /working-groups/cheri-linux-working-group/
+  /groups/cheri-plus-safety/: /working-groups/cheri-plus-safety/
+  /groups/cheri-qemu/: /working-groups/cheri-qemu/
+  /groups/cheri-virtual-machines/: /working-groups/cheri-virtual-machines/
+  /groups/cheri-zephyr/: /working-groups/cheri-zephyr/
+  /groups/marketing/: /working-groups/marketing/
+  /groups/mmu-less-systems/: /working-groups/mmu-less-systems/
+  /groups/os-support-and-portability/: /working-groups/os-support-and-portability/
+  /groups/promotion-and-ambassador-program/: /working-groups/promotion-and-ambassador-program/
+  /groups/repository-management/: /working-groups/repository-management/
+  /groups/rust-plus-cheri/: /working-groups/rust-plus-cheri/
+  /papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/: /academic-papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/
+  /papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/: /academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/
+  /papers/cheri-concentrate-practical-compressed-capabilities/: /academic-papers/cheri-concentrate-practical-compressed-capabilities/
+  /papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/: /academic-papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/
+  /papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/: /academic-papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/
+  /papers/cheriot-complete-memory-safety-for-embedded-devices/: /academic-papers/cheriot-complete-memory-safety-for-embedded-devices/
+  /papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/: /academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/
+  /papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/: /academic-papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/
+  /papers/cornucopia-temporal-safety-for-cheri-heaps/: /academic-papers/cornucopia-temporal-safety-for-cheri-heaps/
+  /papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/: /academic-papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/
+  /papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/: /academic-papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/
+  /papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/: /academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/
+  /papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/: /academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/
+  /papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/: /academic-papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/
+  /papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/: /academic-papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/
+  /groups/cheri-research/: /working-groups/cheri-research/

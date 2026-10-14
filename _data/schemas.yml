@@ -13,6 +13,10 @@ optional:
     certification_url: null
   listing:
     certification: null
+redirect:
+  title: null
+  permalink: null
+  layout: redirect
 people:
   title: null
   image_url: null

@@ -217,13 +217,13 @@
     type: Software Project (detail)
 - label: Related Working groups
   targets:
-  - url: "/groups/certification-working-group/"
+  - url: "/working-groups/certification-working-group/"
     title: "✅ Certification WG"
     type: Group (detail)
-  - url: "/groups/promotion-and-ambassador-program/"
+  - url: "/working-groups/promotion-and-ambassador-program/"
     title: "\U0001FAAA Promotion & Ambassador Program WG"
     type: Group (detail)
-  - url: "/groups/repository-management/"
+  - url: "/working-groups/repository-management/"
     title: "\U0001F4BE Repository Management WG"
     type: Group (detail)
 "/organisations/university-of-cambridge/":
@@ -345,7 +345,7 @@
     type: Hardware Item (detail)
 - label: Related Working groups
   targets:
-  - url: "/groups/cheri-research/"
+  - url: "/working-groups/cheri-research/"
     title: CHERI Research WG
     type: Working group (detail)
 - label: Related Reports & White Papers
@@ -706,10 +706,10 @@
     type: Content Page (detail)
 - label: Working groups
   targets:
-  - url: "/groups/rust-plus-cheri/"
+  - url: "/working-groups/rust-plus-cheri/"
     title: "⚙️ Rust + CHERI WG"
     type: Group (detail)
-"/groups/rust-plus-cheri/":
+"/working-groups/rust-plus-cheri/":
 - label: Related pages
   targets:
   - url: "/discover/why-cheri/cheri-and-rust/"
@@ -934,6 +934,15 @@
   - url: "/build/technology/spatial-memory-safety/"
     title: Spatial Memory Safety
     type: Content Page (detail)
+"/reference/source-versions/contact/":
+- label: Related pages
+  targets:
+  - url: "/alliance/membership/membership-benefits-and-options/"
+    title: Membership Benefits & Options
+    type: Content Page (detail)
+  - url: "/news-and-events/people-and-opportunities/job-opportunities/"
+    title: Job Opportunities
+    type: Content Page (detail)
 "/alliance/membership/contact/":
 - label: Related pages
   targets:
@@ -960,15 +969,6 @@
   targets:
   - url: "/alliance/membership/contact/"
     title: Contact the Alliance
-    type: Content Page (detail)
-"/reference/source-versions/contact/":
-- label: Related pages
-  targets:
-  - url: "/alliance/membership/membership-benefits-and-options/"
-    title: Membership Benefits & Options
-    type: Content Page (detail)
-  - url: "/news-and-events/people-and-opportunities/job-opportunities/"
-    title: Job Opportunities
     type: Content Page (detail)
 "/reference/source-versions/cost-of-memory-unsafety/":
 - label: Related pages
@@ -1130,7 +1130,7 @@
     type: Content Page (detail)
 - label: Working groups
   targets:
-  - url: "/groups/cheri-linux-working-group/"
+  - url: "/working-groups/cheri-linux-working-group/"
     title: "\U0001F427 CHERI Linux WG"
     type: Group (detail)
 - label: Hardware
@@ -1380,7 +1380,7 @@
   - url: "/discover/resources/specifications/"
     title: Specifications
     type: Content Page (detail)
-  - url: "/papers/"
+  - url: "/academic-papers/"
     title: Papers
     type: Papers (list)
 "/reports/":
@@ -1389,10 +1389,10 @@
   - url: "/discover/resources/specifications/"
     title: Specifications
     type: Content Page (detail)
-  - url: "/papers/"
+  - url: "/academic-papers/"
     title: Papers
     type: Papers (list)
-"/papers/":
+"/academic-papers/":
 - label: Related pages
   targets:
   - url: "/reports/"
@@ -1489,13 +1489,13 @@
     type: Person (detail)
 - label: Related Working groups
   targets:
-  - url: "/groups/marketing/"
+  - url: "/working-groups/marketing/"
     title: "\U0001F4E3 Marketing WG"
     type: Group (detail)
 "/people/adam-finney/":
 - label: Working groups
   targets:
-  - url: "/groups/marketing/"
+  - url: "/working-groups/marketing/"
     title: "\U0001F4E3 Marketing WG"
     type: Group (detail)
 - label: Authored News
@@ -1529,10 +1529,10 @@
     type: Event (detail)
 - label: Leads Working groups
   targets:
-  - url: "/groups/marketing/"
+  - url: "/working-groups/marketing/"
     title: "\U0001F4E3 Marketing WG"
     type: Group (detail)
-"/groups/marketing/":
+"/working-groups/marketing/":
 - label: Related People
   targets:
   - url: "/people/adam-finney/"
@@ -1619,7 +1619,7 @@
     type: Event (detail)
 - label: Related Working groups
   targets:
-  - url: "/groups/mmu-less-systems/"
+  - url: "/working-groups/mmu-less-systems/"
     title: "\U0001F46E MMU-less Systems WG"
     type: Group (detail)
 "/organisations/um-labs/":
@@ -1718,16 +1718,16 @@
     type: Event (detail)
 - label: Related Working groups
   targets:
-  - url: "/groups/cheri-for-sel4/"
+  - url: "/working-groups/cheri-for-sel4/"
     title: 4️⃣ CHERI for seL4 WG
     type: Group (detail)
-  - url: "/groups/cheri-linux-working-group/"
+  - url: "/working-groups/cheri-linux-working-group/"
     title: "\U0001F427 CHERI Linux WG"
     type: Group (detail)
-  - url: "/groups/cheri-qemu/"
+  - url: "/working-groups/cheri-qemu/"
     title: "\U0001F426 CHERI QEMU WG"
     type: Group (detail)
-  - url: "/groups/os-support-and-portability/"
+  - url: "/working-groups/os-support-and-portability/"
     title: "\U0001F6E0️ OS Support & Portability WG"
     type: Group (detail)
 - label: Related Reports & White Papers
@@ -1738,7 +1738,7 @@
 "/people/alfredo-mazzinghi/":
 - label: Working groups
   targets:
-  - url: "/groups/cheri-qemu/"
+  - url: "/working-groups/cheri-qemu/"
     title: "\U0001F426 CHERI QEMU WG"
     type: Group (detail)
 - label: Authored News
@@ -1756,16 +1756,16 @@
     type: Event (detail)
 - label: Authored Academic papers
   targets:
-  - url: "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+  - url: "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
     title: It Is Time to Standardize Principles and Practices for Software Memory
       Safety
     type: Paper (detail)
 - label: Leads Working groups
   targets:
-  - url: "/groups/cheri-qemu/"
+  - url: "/working-groups/cheri-qemu/"
     title: "\U0001F426 CHERI QEMU WG"
     type: Group (detail)
-"/groups/cheri-qemu/":
+"/working-groups/cheri-qemu/":
 - label: Related People
   targets:
   - url: "/people/alfredo-mazzinghi/"
@@ -1784,15 +1784,15 @@
 "/people/allison-randal/":
 - label: Working groups
   targets:
-  - url: "/groups/cheri-linux-working-group/"
+  - url: "/working-groups/cheri-linux-working-group/"
     title: "\U0001F427 CHERI Linux WG"
     type: Group (detail)
 - label: Leads Working groups
   targets:
-  - url: "/groups/cheri-linux-working-group/"
+  - url: "/working-groups/cheri-linux-working-group/"
     title: "\U0001F427 CHERI Linux WG"
     type: Group (detail)
-"/groups/cheri-linux-working-group/":
+"/working-groups/cheri-linux-working-group/":
 - label: Related People
   targets:
   - url: "/people/allison-randal/"
@@ -1935,16 +1935,16 @@
     type: Hardware Item (detail)
 - label: Related Working groups
   targets:
-  - url: "/groups/cheri-freertos/"
+  - url: "/working-groups/cheri-freertos/"
     title: "\U0001F193 CHERI FreeRTOS WG"
     type: Group (detail)
-  - url: "/groups/cheri-in-soc/"
+  - url: "/working-groups/cheri-in-soc/"
     title: "⬛️ CHERI in SoC WG"
     type: Group (detail)
-  - url: "/groups/cheri-plus-safety/"
+  - url: "/working-groups/cheri-plus-safety/"
     title: "\U0001F4CB CHERI + Safety WG"
     type: Group (detail)
-  - url: "/groups/promotion-and-ambassador-program/"
+  - url: "/working-groups/promotion-and-ambassador-program/"
     title: "\U0001FAAA Promotion & Ambassador Program WG"
     type: Group (detail)
 - label: Related Case studies
@@ -2016,7 +2016,7 @@
 "/people/ben-fletcher/":
 - label: Working groups
   targets:
-  - url: "/groups/cheri-in-soc/"
+  - url: "/working-groups/cheri-in-soc/"
     title: "⬛️ CHERI in SoC WG"
     type: Group (detail)
 - label: Authored News
@@ -2034,10 +2034,10 @@
     type: Event (detail)
 - label: Leads Working groups
   targets:
-  - url: "/groups/cheri-in-soc/"
+  - url: "/working-groups/cheri-in-soc/"
     title: "⬛️ CHERI in SoC WG"
     type: Group (detail)
-"/groups/cheri-in-soc/":
+"/working-groups/cheri-in-soc/":
 - label: Related People
   targets:
   - url: "/people/ben-fletcher/"
@@ -2100,7 +2100,7 @@
 "/people/brooks-davis/":
 - label: Working groups
   targets:
-  - url: "/groups/os-support-and-portability/"
+  - url: "/working-groups/os-support-and-portability/"
     title: "\U0001F6E0️ OS Support & Portability WG"
     type: Group (detail)
 - label: Authored News
@@ -2113,42 +2113,42 @@
     type: News Article (detail)
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
+  - url: "/academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
     title: 'CHERI: A Hybrid Capability-System Architecture for Scalable Software Compartmentalization'
     type: Paper (detail)
-  - url: "/papers/cheri-concentrate-practical-compressed-capabilities/"
+  - url: "/academic-papers/cheri-concentrate-practical-compressed-capabilities/"
     title: 'CHERI Concentrate: Practical Compressed Capabilities'
     type: Paper (detail)
-  - url: "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/"
+  - url: "/academic-papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/"
     title: 'CHERI: Hardware-Enabled C/C++ Memory Protection at Scale'
     type: Paper (detail)
-  - url: "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/"
+  - url: "/academic-papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/"
     title: 'CheriABI: Enforcing Valid Pointer Provenance and Minimizing Pointer Privilege
       in the POSIX C Run-time Environment'
     type: Paper (detail)
-  - url: "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/"
+  - url: "/academic-papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/"
     title: 'Cornucopia Reloaded: Load Barriers for CHERI Heap Temporal Safety'
     type: Paper (detail)
-  - url: "/papers/cornucopia-temporal-safety-for-cheri-heaps/"
+  - url: "/academic-papers/cornucopia-temporal-safety-for-cheri-heaps/"
     title: 'Cornucopia: Temporal Safety for CHERI Heaps'
     type: Paper (detail)
-  - url: "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/"
+  - url: "/academic-papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/"
     title: 'Formal Mechanised Semantics of CHERI C: Capabilities, Provenance, and
       Undefined Behaviour'
     type: Paper (detail)
-  - url: "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+  - url: "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
     title: It Is Time to Standardize Principles and Practices for Software Memory
       Safety
     type: Paper (detail)
-  - url: "/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/"
+  - url: "/academic-papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/"
     title: 'The CHERI Capability Model: Revisiting RISC in an Age of Risk'
     type: Paper (detail)
 - label: Leads Working groups
   targets:
-  - url: "/groups/os-support-and-portability/"
+  - url: "/working-groups/os-support-and-portability/"
     title: "\U0001F6E0️ OS Support & Portability WG"
     type: Group (detail)
-"/groups/os-support-and-portability/":
+"/working-groups/os-support-and-portability/":
 - label: Related People
   targets:
   - url: "/people/brooks-davis/"
@@ -2252,16 +2252,16 @@
     type: Event (detail)
 - label: Related Working groups
   targets:
-  - url: "/groups/cheri-c-cplusplus/"
+  - url: "/working-groups/cheri-c-cplusplus/"
     title: "©️ CHERI C/C++ WG"
     type: Group (detail)
-  - url: "/groups/rust-plus-cheri/"
+  - url: "/working-groups/rust-plus-cheri/"
     title: "⚙️ Rust + CHERI WG"
     type: Group (detail)
 "/people/david-chisnall/":
 - label: Working groups
   targets:
-  - url: "/groups/cheri-c-cplusplus/"
+  - url: "/working-groups/cheri-c-cplusplus/"
     title: "©️ CHERI C/C++ WG"
     type: Group (detail)
 - label: Speaker at Events
@@ -2280,49 +2280,49 @@
     type: Event (detail)
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
+  - url: "/academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
     title: 'CHERI: A Hybrid Capability-System Architecture for Scalable Software Compartmentalization'
     type: Paper (detail)
-  - url: "/papers/cheri-concentrate-practical-compressed-capabilities/"
+  - url: "/academic-papers/cheri-concentrate-practical-compressed-capabilities/"
     title: 'CHERI Concentrate: Practical Compressed Capabilities'
     type: Paper (detail)
-  - url: "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/"
+  - url: "/academic-papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/"
     title: 'CHERI: Hardware-Enabled C/C++ Memory Protection at Scale'
     type: Paper (detail)
-  - url: "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/"
+  - url: "/academic-papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/"
     title: 'CheriABI: Enforcing Valid Pointer Provenance and Minimizing Pointer Privilege
       in the POSIX C Run-time Environment'
     type: Paper (detail)
-  - url: "/papers/cheriot-complete-memory-safety-for-embedded-devices/"
+  - url: "/academic-papers/cheriot-complete-memory-safety-for-embedded-devices/"
     title: 'CHERIoT: Complete Memory Safety for Embedded Devices'
     type: Paper (detail)
-  - url: "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
+  - url: "/academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
     title: 'CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost
       Embedded Devices'
     type: Paper (detail)
-  - url: "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/"
+  - url: "/academic-papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/"
     title: 'Cornucopia Reloaded: Load Barriers for CHERI Heap Temporal Safety'
     type: Paper (detail)
-  - url: "/papers/cornucopia-temporal-safety-for-cheri-heaps/"
+  - url: "/academic-papers/cornucopia-temporal-safety-for-cheri-heaps/"
     title: 'Cornucopia: Temporal Safety for CHERI Heaps'
     type: Paper (detail)
-  - url: "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/"
+  - url: "/academic-papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/"
     title: 'Formal Mechanised Semantics of CHERI C: Capabilities, Provenance, and
       Undefined Behaviour'
     type: Paper (detail)
-  - url: "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+  - url: "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
     title: It Is Time to Standardize Principles and Practices for Software Memory
       Safety
     type: Paper (detail)
-  - url: "/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/"
+  - url: "/academic-papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/"
     title: 'The CHERI Capability Model: Revisiting RISC in an Age of Risk'
     type: Paper (detail)
 - label: Leads Working groups
   targets:
-  - url: "/groups/cheri-c-cplusplus/"
+  - url: "/working-groups/cheri-c-cplusplus/"
     title: "©️ CHERI C/C++ WG"
     type: Group (detail)
-"/groups/cheri-c-cplusplus/":
+"/working-groups/cheri-c-cplusplus/":
 - label: Related People
   targets:
   - url: "/people/david-chisnall/"
@@ -2397,7 +2397,7 @@
 "/people/edoardo-marangoni/":
 - label: Working groups
   targets:
-  - url: "/groups/rust-plus-cheri/"
+  - url: "/working-groups/rust-plus-cheri/"
     title: "⚙️ Rust + CHERI WG"
     type: Group (detail)
 - label: Speaker at Events
@@ -2407,7 +2407,7 @@
     type: Event (detail)
 - label: Leads Working groups
   targets:
-  - url: "/groups/rust-plus-cheri/"
+  - url: "/working-groups/rust-plus-cheri/"
     title: "⚙️ Rust + CHERI WG"
     type: Group (detail)
 "/organisations/lowrisc/":
@@ -2507,13 +2507,13 @@
     type: Hardware Item (detail)
 - label: Related Working groups
   targets:
-  - url: "/groups/repository-management/"
+  - url: "/working-groups/repository-management/"
     title: "\U0001F4BE Repository Management WG"
     type: Group (detail)
 "/people/hesham-almatary/":
 - label: Working groups
   targets:
-  - url: "/groups/cheri-for-sel4/"
+  - url: "/working-groups/cheri-for-sel4/"
     title: 4️⃣ CHERI for seL4 WG
     type: Group (detail)
 - label: Authored News
@@ -2528,10 +2528,10 @@
     type: Event (detail)
 - label: Leads Working groups
   targets:
-  - url: "/groups/cheri-for-sel4/"
+  - url: "/working-groups/cheri-for-sel4/"
     title: 4️⃣ CHERI for seL4 WG
     type: Group (detail)
-"/groups/cheri-for-sel4/":
+"/working-groups/cheri-for-sel4/":
 - label: Related People
   targets:
   - url: "/people/hesham-almatary/"
@@ -2568,13 +2568,13 @@
     type: Event (detail)
 - label: Related Working groups
   targets:
-  - url: "/groups/cheri-zephyr/"
+  - url: "/working-groups/cheri-zephyr/"
     title: "\U0001FA81 CHERI Zephyr WG"
     type: Group (detail)
 "/people/jennifer-jackson/":
 - label: Working groups
   targets:
-  - url: "/groups/cheri-zephyr/"
+  - url: "/working-groups/cheri-zephyr/"
     title: "\U0001FA81 CHERI Zephyr WG"
     type: Group (detail)
 - label: Authored News
@@ -2589,10 +2589,10 @@
     type: Event (detail)
 - label: Leads Working groups
   targets:
-  - url: "/groups/cheri-zephyr/"
+  - url: "/working-groups/cheri-zephyr/"
     title: "\U0001FA81 CHERI Zephyr WG"
     type: Group (detail)
-"/groups/cheri-zephyr/":
+"/working-groups/cheri-zephyr/":
 - label: Related People
   targets:
   - url: "/people/jennifer-jackson/"
@@ -2628,13 +2628,13 @@
     type: Event (detail)
 - label: Related Working groups
   targets:
-  - url: "/groups/cheri-virtual-machines/"
+  - url: "/working-groups/cheri-virtual-machines/"
     title: "\U0001F916 CHERI Virtual Machines WG"
     type: Group (detail)
 "/people/jeremy-singer/":
 - label: Working groups
   targets:
-  - url: "/groups/cheri-virtual-machines/"
+  - url: "/working-groups/cheri-virtual-machines/"
     title: "\U0001F916 CHERI Virtual Machines WG"
     type: Group (detail)
 - label: Speaker at Events
@@ -2650,10 +2650,10 @@
     type: Event (detail)
 - label: Leads Working groups
   targets:
-  - url: "/groups/cheri-virtual-machines/"
+  - url: "/working-groups/cheri-virtual-machines/"
     title: "\U0001F916 CHERI Virtual Machines WG"
     type: Group (detail)
-"/groups/cheri-virtual-machines/":
+"/working-groups/cheri-virtual-machines/":
 - label: Related People
   targets:
   - url: "/people/jeremy-singer/"
@@ -2774,7 +2774,7 @@
 "/people/jonathan-woodruff/":
 - label: Working groups
   targets:
-  - url: "/groups/cheri-research/"
+  - url: "/working-groups/cheri-research/"
     title: CHERI Research WG
     type: Working group (detail)
 - label: Speaker at Events
@@ -2793,34 +2793,34 @@
     type: Event (detail)
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
+  - url: "/academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
     title: 'CHERI: A Hybrid Capability-System Architecture for Scalable Software Compartmentalization'
     type: Paper (detail)
-  - url: "/papers/cheri-concentrate-practical-compressed-capabilities/"
+  - url: "/academic-papers/cheri-concentrate-practical-compressed-capabilities/"
     title: 'CHERI Concentrate: Practical Compressed Capabilities'
     type: Paper (detail)
-  - url: "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/"
+  - url: "/academic-papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/"
     title: 'CHERI: Hardware-Enabled C/C++ Memory Protection at Scale'
     type: Paper (detail)
-  - url: "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/"
+  - url: "/academic-papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/"
     title: 'Cornucopia Reloaded: Load Barriers for CHERI Heap Temporal Safety'
     type: Paper (detail)
-  - url: "/papers/cornucopia-temporal-safety-for-cheri-heaps/"
+  - url: "/academic-papers/cornucopia-temporal-safety-for-cheri-heaps/"
     title: 'Cornucopia: Temporal Safety for CHERI Heaps'
     type: Paper (detail)
-  - url: "/papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/"
+  - url: "/academic-papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/"
     title: The Arm Morello Evaluation Platform—Validating CHERI-Based Security in
       a High-Performance System
     type: Paper (detail)
-  - url: "/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/"
+  - url: "/academic-papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/"
     title: 'The CHERI Capability Model: Revisiting RISC in an Age of Risk'
     type: Paper (detail)
 - label: Leads Working groups
   targets:
-  - url: "/groups/cheri-research/"
+  - url: "/working-groups/cheri-research/"
     title: CHERI Research WG
     type: Working group (detail)
-"/groups/cheri-research/":
+"/working-groups/cheri-research/":
 - label: Related People
   targets:
   - url: "/people/jonathan-woodruff/"
@@ -2884,15 +2884,15 @@
 "/people/maricel-ventura/":
 - label: Working groups
   targets:
-  - url: "/groups/cheri-plus-safety/"
+  - url: "/working-groups/cheri-plus-safety/"
     title: "\U0001F4CB CHERI + Safety WG"
     type: Group (detail)
 - label: Leads Working groups
   targets:
-  - url: "/groups/cheri-plus-safety/"
+  - url: "/working-groups/cheri-plus-safety/"
     title: "\U0001F4CB CHERI + Safety WG"
     type: Group (detail)
-"/groups/cheri-plus-safety/":
+"/working-groups/cheri-plus-safety/":
 - label: Related People
   targets:
   - url: "/people/maricel-ventura/"
@@ -2912,13 +2912,13 @@
     type: Person (detail)
 - label: Related Working groups
   targets:
-  - url: "/groups/rust-plus-cheri/"
+  - url: "/working-groups/rust-plus-cheri/"
     title: "⚙️ Rust + CHERI WG"
     type: Group (detail)
 "/people/marno-van-der-maas/":
 - label: Working groups
   targets:
-  - url: "/groups/repository-management/"
+  - url: "/working-groups/repository-management/"
     title: "\U0001F4BE Repository Management WG"
     type: Group (detail)
 - label: Authored News
@@ -2943,10 +2943,10 @@
     type: Event (detail)
 - label: Leads Working groups
   targets:
-  - url: "/groups/repository-management/"
+  - url: "/working-groups/repository-management/"
     title: "\U0001F4BE Repository Management WG"
     type: Group (detail)
-"/groups/repository-management/":
+"/working-groups/repository-management/":
 - label: Related People
   targets:
   - url: "/people/marno-van-der-maas/"
@@ -3012,10 +3012,10 @@
 "/people/mike-eftimakis/":
 - label: Working groups
   targets:
-  - url: "/groups/certification-working-group/"
+  - url: "/working-groups/certification-working-group/"
     title: "✅ Certification WG"
     type: Group (detail)
-  - url: "/groups/promotion-and-ambassador-program/"
+  - url: "/working-groups/promotion-and-ambassador-program/"
     title: "\U0001FAAA Promotion & Ambassador Program WG"
     type: Group (detail)
 - label: Authored News
@@ -3053,19 +3053,19 @@
     type: Event (detail)
 - label: Leads Working groups
   targets:
-  - url: "/groups/certification-working-group/"
+  - url: "/working-groups/certification-working-group/"
     title: "✅ Certification WG"
     type: Group (detail)
-  - url: "/groups/promotion-and-ambassador-program/"
+  - url: "/working-groups/promotion-and-ambassador-program/"
     title: "\U0001FAAA Promotion & Ambassador Program WG"
     type: Group (detail)
-"/groups/certification-working-group/":
+"/working-groups/certification-working-group/":
 - label: Related People
   targets:
   - url: "/people/mike-eftimakis/"
     title: Mike Eftimakis
     type: Person (detail)
-"/groups/promotion-and-ambassador-program/":
+"/working-groups/promotion-and-ambassador-program/":
 - label: Related People
   targets:
   - url: "/people/mike-eftimakis/"
@@ -3080,7 +3080,7 @@
 "/people/murali-vijayaraghavan/":
 - label: Working groups
   targets:
-  - url: "/groups/mmu-less-systems/"
+  - url: "/working-groups/mmu-less-systems/"
     title: "\U0001F46E MMU-less Systems WG"
     type: Group (detail)
 - label: Speaker at Events
@@ -3093,16 +3093,16 @@
     type: Event (detail)
 - label: Authored Academic papers
   targets:
-  - url: "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+  - url: "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
     title: It Is Time to Standardize Principles and Practices for Software Memory
       Safety
     type: Paper (detail)
 - label: Leads Working groups
   targets:
-  - url: "/groups/mmu-less-systems/"
+  - url: "/working-groups/mmu-less-systems/"
     title: "\U0001F46E MMU-less Systems WG"
     type: Group (detail)
-"/groups/mmu-less-systems/":
+"/working-groups/mmu-less-systems/":
 - label: Related People
   targets:
   - url: "/people/murali-vijayaraghavan/"
@@ -3127,15 +3127,15 @@
 "/people/oliver-gray/":
 - label: Working groups
   targets:
-  - url: "/groups/cheri-freertos/"
+  - url: "/working-groups/cheri-freertos/"
     title: "\U0001F193 CHERI FreeRTOS WG"
     type: Group (detail)
 - label: Leads Working groups
   targets:
-  - url: "/groups/cheri-freertos/"
+  - url: "/working-groups/cheri-freertos/"
     title: "\U0001F193 CHERI FreeRTOS WG"
     type: Group (detail)
-"/groups/cheri-freertos/":
+"/working-groups/cheri-freertos/":
 - label: Related People
   targets:
   - url: "/people/oliver-gray/"
@@ -3236,29 +3236,29 @@
 "/people/sarah-harris/":
 - label: Working groups
   targets:
-  - url: "/groups/rust-plus-cheri/"
+  - url: "/working-groups/rust-plus-cheri/"
     title: "⚙️ Rust + CHERI WG"
     type: Group (detail)
 - label: Leads Working groups
   targets:
-  - url: "/groups/rust-plus-cheri/"
+  - url: "/working-groups/rust-plus-cheri/"
     title: "⚙️ Rust + CHERI WG"
     type: Group (detail)
 "/people/thierno-sene/":
 - label: Working groups
   targets:
-  - url: "/groups/cheri-plus-safety/"
+  - url: "/working-groups/cheri-plus-safety/"
     title: "\U0001F4CB CHERI + Safety WG"
     type: Group (detail)
 - label: Leads Working groups
   targets:
-  - url: "/groups/cheri-plus-safety/"
+  - url: "/working-groups/cheri-plus-safety/"
     title: "\U0001F4CB CHERI + Safety WG"
     type: Group (detail)
 "/people/tora-fridholm/":
 - label: Working groups
   targets:
-  - url: "/groups/marketing/"
+  - url: "/working-groups/marketing/"
     title: "\U0001F4E3 Marketing WG"
     type: Group (detail)
 - label: Speaker at Events
@@ -3315,7 +3315,7 @@
     type: Software Project (detail)
 - label: Related Working groups
   targets:
-  - url: "/groups/rust-plus-cheri/"
+  - url: "/working-groups/rust-plus-cheri/"
     title: "⚙️ Rust + CHERI WG"
     type: Group (detail)
 "/news/ai-has-compressed-the-attack-timeline/":
@@ -3428,7 +3428,7 @@
 "/news/behind-the-scenes-inside-the-promotion-and-ambassador-program-working-group/":
 - label: Working groups
   targets:
-  - url: "/groups/promotion-and-ambassador-program/"
+  - url: "/working-groups/promotion-and-ambassador-program/"
     title: "\U0001FAAA Promotion & Ambassador Program WG"
     type: Group (detail)
 "/people/jim-wallace/":
@@ -3532,10 +3532,10 @@
     type: Software Project (detail)
 - label: Related Working groups
   targets:
-  - url: "/groups/cheri-linux-working-group/"
+  - url: "/working-groups/cheri-linux-working-group/"
     title: "\U0001F427 CHERI Linux WG"
     type: Group (detail)
-  - url: "/groups/os-support-and-portability/"
+  - url: "/working-groups/os-support-and-portability/"
     title: "\U0001F6E0️ OS Support & Portability WG"
     type: Group (detail)
 - label: Related Guides
@@ -3597,10 +3597,10 @@
     type: Hardware Item (detail)
 - label: Related Working groups
   targets:
-  - url: "/groups/cheri-zephyr/"
+  - url: "/working-groups/cheri-zephyr/"
     title: "\U0001FA81 CHERI Zephyr WG"
     type: Group (detail)
-  - url: "/groups/os-support-and-portability/"
+  - url: "/working-groups/os-support-and-portability/"
     title: "\U0001F6E0️ OS Support & Portability WG"
     type: Group (detail)
 - label: Related Guides
@@ -3659,7 +3659,7 @@
     type: News Article (detail)
 - label: Related Academic papers
   targets:
-  - url: "/papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/"
+  - url: "/academic-papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/"
     title: The Arm Morello Evaluation Platform—Validating CHERI-Based Security in
       a High-Performance System
     type: Paper (detail)
@@ -3703,7 +3703,7 @@
     type: Software Project (detail)
 - label: Related Working groups
   targets:
-  - url: "/groups/rust-plus-cheri/"
+  - url: "/working-groups/rust-plus-cheri/"
     title: "⚙️ Rust + CHERI WG"
     type: Group (detail)
 - label: Related Guides
@@ -4027,10 +4027,10 @@
     type: News Article (detail)
 - label: Related Academic papers
   targets:
-  - url: "/papers/cheriot-complete-memory-safety-for-embedded-devices/"
+  - url: "/academic-papers/cheriot-complete-memory-safety-for-embedded-devices/"
     title: 'CHERIoT: Complete Memory Safety for Embedded Devices'
     type: Paper (detail)
-  - url: "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
+  - url: "/academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
     title: 'CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost
       Embedded Devices'
     type: Paper (detail)
@@ -4095,10 +4095,10 @@
     type: Software Project (detail)
 - label: Related Working groups
   targets:
-  - url: "/groups/mmu-less-systems/"
+  - url: "/working-groups/mmu-less-systems/"
     title: "\U0001F46E MMU-less Systems WG"
     type: Group (detail)
-  - url: "/groups/rust-plus-cheri/"
+  - url: "/working-groups/rust-plus-cheri/"
     title: "⚙️ Rust + CHERI WG"
     type: Group (detail)
 - label: Related Guides
@@ -4135,7 +4135,7 @@
 "/news/cheri-sel4-and-cheri-microkit-released/":
 - label: Working groups
   targets:
-  - url: "/groups/cheri-for-sel4/"
+  - url: "/working-groups/cheri-for-sel4/"
     title: 4️⃣ CHERI for seL4 WG
     type: Group (detail)
 - label: Software
@@ -4558,7 +4558,7 @@
 "/news/streamlining-the-cheri-ecosystem-an-update-from-the-repository-management-working-group/":
 - label: Working groups
   targets:
-  - url: "/groups/repository-management/"
+  - url: "/working-groups/repository-management/"
     title: "\U0001F4BE Repository Management WG"
     type: Group (detail)
 "/people/tariq-kurd/":
@@ -4594,7 +4594,7 @@
 "/news/towards-a-reference-qemu-for-cheri-platform-emulation/":
 - label: Working groups
   targets:
-  - url: "/groups/cheri-qemu/"
+  - url: "/working-groups/cheri-qemu/"
     title: "\U0001F426 CHERI QEMU WG"
     type: Group (detail)
 - label: Hardware
@@ -4605,7 +4605,7 @@
 "/news/unlocking-the-future-a-roadmap-for-cheri-technology-advancement/":
 - label: Working groups
   targets:
-  - url: "/groups/marketing/"
+  - url: "/working-groups/marketing/"
     title: "\U0001F4E3 Marketing WG"
     type: Group (detail)
 - label: Software
@@ -4616,7 +4616,7 @@
 "/news/working-group-spotlight-marketing/":
 - label: Working groups
   targets:
-  - url: "/groups/marketing/"
+  - url: "/working-groups/marketing/"
     title: "\U0001F4E3 Marketing WG"
     type: Group (detail)
 "/people/alastair-beresford/":
@@ -4750,50 +4750,50 @@
     type: Event (detail)
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
+  - url: "/academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
     title: 'CHERI: A Hybrid Capability-System Architecture for Scalable Software Compartmentalization'
     type: Paper (detail)
-  - url: "/papers/cheri-concentrate-practical-compressed-capabilities/"
+  - url: "/academic-papers/cheri-concentrate-practical-compressed-capabilities/"
     title: 'CHERI Concentrate: Practical Compressed Capabilities'
     type: Paper (detail)
-  - url: "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/"
+  - url: "/academic-papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/"
     title: 'CHERI: Hardware-Enabled C/C++ Memory Protection at Scale'
     type: Paper (detail)
-  - url: "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/"
+  - url: "/academic-papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/"
     title: 'CheriABI: Enforcing Valid Pointer Provenance and Minimizing Pointer Privilege
       in the POSIX C Run-time Environment'
     type: Paper (detail)
-  - url: "/papers/cheriot-complete-memory-safety-for-embedded-devices/"
+  - url: "/academic-papers/cheriot-complete-memory-safety-for-embedded-devices/"
     title: 'CHERIoT: Complete Memory Safety for Embedded Devices'
     type: Paper (detail)
-  - url: "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
+  - url: "/academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
     title: 'CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost
       Embedded Devices'
     type: Paper (detail)
-  - url: "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/"
+  - url: "/academic-papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/"
     title: 'Cornucopia Reloaded: Load Barriers for CHERI Heap Temporal Safety'
     type: Paper (detail)
-  - url: "/papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/"
+  - url: "/academic-papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/"
     title: Deprivileging Low-Level GPU Drivers Efficiently with User-Space Processes
       and CHERI Compartments
     type: Paper (detail)
-  - url: "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/"
+  - url: "/academic-papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/"
     title: 'Formal Mechanised Semantics of CHERI C: Capabilities, Provenance, and
       Undefined Behaviour'
     type: Paper (detail)
-  - url: "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+  - url: "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
     title: It Is Time to Standardize Principles and Practices for Software Memory
       Safety
     type: Paper (detail)
-  - url: "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
+  - url: "/academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
     title: 'Rigorous Engineering for Hardware Security: Formal Modelling and Proof
       in the CHERI Design and Implementation Process'
     type: Paper (detail)
-  - url: "/papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/"
+  - url: "/academic-papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/"
     title: The Arm Morello Evaluation Platform—Validating CHERI-Based Security in
       a High-Performance System
     type: Paper (detail)
-  - url: "/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/"
+  - url: "/academic-papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/"
     title: 'The CHERI Capability Model: Revisiting RISC in an Age of Risk'
     type: Paper (detail)
 - label: Authored Reports & White Papers
@@ -4815,42 +4815,42 @@
     type: Event (detail)
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
+  - url: "/academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
     title: 'CHERI: A Hybrid Capability-System Architecture for Scalable Software Compartmentalization'
     type: Paper (detail)
-  - url: "/papers/cheri-concentrate-practical-compressed-capabilities/"
+  - url: "/academic-papers/cheri-concentrate-practical-compressed-capabilities/"
     title: 'CHERI Concentrate: Practical Compressed Capabilities'
     type: Paper (detail)
-  - url: "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/"
+  - url: "/academic-papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/"
     title: 'CHERI: Hardware-Enabled C/C++ Memory Protection at Scale'
     type: Paper (detail)
-  - url: "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/"
+  - url: "/academic-papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/"
     title: 'CheriABI: Enforcing Valid Pointer Provenance and Minimizing Pointer Privilege
       in the POSIX C Run-time Environment'
     type: Paper (detail)
-  - url: "/papers/cheriot-complete-memory-safety-for-embedded-devices/"
+  - url: "/academic-papers/cheriot-complete-memory-safety-for-embedded-devices/"
     title: 'CHERIoT: Complete Memory Safety for Embedded Devices'
     type: Paper (detail)
-  - url: "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
+  - url: "/academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
     title: 'CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost
       Embedded Devices'
     type: Paper (detail)
-  - url: "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/"
+  - url: "/academic-papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/"
     title: 'Cornucopia Reloaded: Load Barriers for CHERI Heap Temporal Safety'
     type: Paper (detail)
-  - url: "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+  - url: "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
     title: It Is Time to Standardize Principles and Practices for Software Memory
       Safety
     type: Paper (detail)
-  - url: "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
+  - url: "/academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
     title: 'Rigorous Engineering for Hardware Security: Formal Modelling and Proof
       in the CHERI Design and Implementation Process'
     type: Paper (detail)
-  - url: "/papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/"
+  - url: "/academic-papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/"
     title: The Arm Morello Evaluation Platform—Validating CHERI-Based Security in
       a High-Performance System
     type: Paper (detail)
-  - url: "/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/"
+  - url: "/academic-papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/"
     title: 'The CHERI Capability Model: Revisiting RISC in an Age of Risk'
     type: Paper (detail)
 - label: Authored Reports & White Papers
@@ -4861,13 +4861,13 @@
 "/events/cheri-blossoms-conference-2025/":
 - label: Working groups
   targets:
-  - url: "/groups/marketing/"
+  - url: "/working-groups/marketing/"
     title: "\U0001F4E3 Marketing WG"
     type: Group (detail)
-  - url: "/groups/cheri-qemu/"
+  - url: "/working-groups/cheri-qemu/"
     title: "\U0001F426 CHERI QEMU WG"
     type: Group (detail)
-  - url: "/groups/cheri-in-soc/"
+  - url: "/working-groups/cheri-in-soc/"
     title: "⬛️ CHERI in SoC WG"
     type: Group (detail)
 "/people/alex-rebert/":
@@ -4878,7 +4878,7 @@
     type: Event (detail)
 - label: Authored Academic papers
   targets:
-  - url: "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+  - url: "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
     title: It Is Time to Standardize Principles and Practices for Software Memory
       Safety
     type: Paper (detail)
@@ -4959,21 +4959,21 @@
     type: Event (detail)
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/"
+  - url: "/academic-papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/"
     title: 'CHERI: Hardware-Enabled C/C++ Memory Protection at Scale'
     type: Paper (detail)
-  - url: "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/"
+  - url: "/academic-papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/"
     title: 'CheriABI: Enforcing Valid Pointer Provenance and Minimizing Pointer Privilege
       in the POSIX C Run-time Environment'
     type: Paper (detail)
-  - url: "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/"
+  - url: "/academic-papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/"
     title: 'Cornucopia Reloaded: Load Barriers for CHERI Heap Temporal Safety'
     type: Paper (detail)
-  - url: "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/"
+  - url: "/academic-papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/"
     title: 'Formal Mechanised Semantics of CHERI C: Capabilities, Provenance, and
       Undefined Behaviour'
     type: Paper (detail)
-  - url: "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+  - url: "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
     title: It Is Time to Standardize Principles and Practices for Software Memory
       Safety
     type: Paper (detail)
@@ -4985,7 +4985,7 @@
     type: Event (detail)
 - label: Authored Academic papers
   targets:
-  - url: "/papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/"
+  - url: "/academic-papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/"
     title: Adaptive CHERI Compartmentalization for Heterogeneous Accelerators
     type: Paper (detail)
 "/people/johannes-muller/":
@@ -5002,14 +5002,14 @@
     type: Event (detail)
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/"
+  - url: "/academic-papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/"
     title: 'CheriABI: Enforcing Valid Pointer Provenance and Minimizing Pointer Privilege
       in the POSIX C Run-time Environment'
     type: Paper (detail)
-  - url: "/papers/cornucopia-temporal-safety-for-cheri-heaps/"
+  - url: "/academic-papers/cornucopia-temporal-safety-for-cheri-heaps/"
     title: 'Cornucopia: Temporal Safety for CHERI Heaps'
     type: Paper (detail)
-  - url: "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+  - url: "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
     title: It Is Time to Standardize Principles and Practices for Software Memory
       Safety
     type: Paper (detail)
@@ -5054,10 +5054,10 @@
     type: Event (detail)
 - label: Authored Academic papers
   targets:
-  - url: "/papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/"
+  - url: "/academic-papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/"
     title: Adaptive CHERI Compartmentalization for Heterogeneous Accelerators
     type: Paper (detail)
-  - url: "/papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/"
+  - url: "/academic-papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/"
     title: Deprivileging Low-Level GPU Drivers Efficiently with User-Space Processes
       and CHERI Compartments
     type: Paper (detail)
@@ -5088,7 +5088,7 @@
 "/events/cheri-blossoms-conference-2026/":
 - label: Working groups
   targets:
-  - url: "/groups/cheri-in-soc/"
+  - url: "/working-groups/cheri-in-soc/"
     title: "⬛️ CHERI in SoC WG"
     type: Group (detail)
 "/people/john-thomson/":
@@ -5115,94 +5115,94 @@
 "/people/a-theodore-markettos/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/"
+  - url: "/academic-papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/"
     title: Adaptive CHERI Compartmentalization for Heterogeneous Accelerators
     type: Paper (detail)
-  - url: "/papers/cheri-concentrate-practical-compressed-capabilities/"
+  - url: "/academic-papers/cheri-concentrate-practical-compressed-capabilities/"
     title: 'CHERI Concentrate: Practical Compressed Capabilities'
     type: Paper (detail)
-  - url: "/papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/"
+  - url: "/academic-papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/"
     title: Deprivileging Low-Level GPU Drivers Efficiently with User-Space Processes
       and CHERI Compartments
     type: Paper (detail)
 "/people/alexandre-joannou/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/"
+  - url: "/academic-papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/"
     title: Adaptive CHERI Compartmentalization for Heterogeneous Accelerators
     type: Paper (detail)
-  - url: "/papers/cheri-concentrate-practical-compressed-capabilities/"
+  - url: "/academic-papers/cheri-concentrate-practical-compressed-capabilities/"
     title: 'CHERI Concentrate: Practical Compressed Capabilities'
     type: Paper (detail)
-  - url: "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/"
+  - url: "/academic-papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/"
     title: 'CheriABI: Enforcing Valid Pointer Provenance and Minimizing Pointer Privilege
       in the POSIX C Run-time Environment'
     type: Paper (detail)
-  - url: "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
+  - url: "/academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
     title: 'Rigorous Engineering for Hardware Security: Formal Modelling and Proof
       in the CHERI Design and Implementation Process'
     type: Paper (detail)
 "/people/matthew-naylor/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/"
+  - url: "/academic-papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/"
     title: Adaptive CHERI Compartmentalization for Heterogeneous Accelerators
     type: Paper (detail)
-  - url: "/papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/"
+  - url: "/academic-papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/"
     title: Deprivileging Low-Level GPU Drivers Efficiently with User-Space Processes
       and CHERI Compartments
     type: Paper (detail)
-  - url: "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
+  - url: "/academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
     title: 'Rigorous Engineering for Hardware Security: Formal Modelling and Proof
       in the CHERI Design and Implementation Process'
     type: Paper (detail)
 "/people/peter-rugg/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/"
+  - url: "/academic-papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/"
     title: Adaptive CHERI Compartmentalization for Heterogeneous Accelerators
     type: Paper (detail)
-  - url: "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/"
+  - url: "/academic-papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/"
     title: 'Cornucopia Reloaded: Load Barriers for CHERI Heap Temporal Safety'
     type: Paper (detail)
 "/people/timothy-m-jones/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/"
+  - url: "/academic-papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/"
     title: Adaptive CHERI Compartmentalization for Heterogeneous Accelerators
     type: Paper (detail)
-  - url: "/papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/"
+  - url: "/academic-papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/"
     title: Deprivileging Low-Level GPU Drivers Efficiently with User-Space Processes
       and CHERI Compartments
     type: Paper (detail)
 "/people/peter-g-neumann/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
+  - url: "/academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
     title: 'CHERI: A Hybrid Capability-System Architecture for Scalable Software Compartmentalization'
     type: Paper (detail)
-  - url: "/papers/cheri-concentrate-practical-compressed-capabilities/"
+  - url: "/academic-papers/cheri-concentrate-practical-compressed-capabilities/"
     title: 'CHERI Concentrate: Practical Compressed Capabilities'
     type: Paper (detail)
-  - url: "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/"
+  - url: "/academic-papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/"
     title: 'CHERI: Hardware-Enabled C/C++ Memory Protection at Scale'
     type: Paper (detail)
-  - url: "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/"
+  - url: "/academic-papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/"
     title: 'CheriABI: Enforcing Valid Pointer Provenance and Minimizing Pointer Privilege
       in the POSIX C Run-time Environment'
     type: Paper (detail)
-  - url: "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/"
+  - url: "/academic-papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/"
     title: 'Cornucopia Reloaded: Load Barriers for CHERI Heap Temporal Safety'
     type: Paper (detail)
-  - url: "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+  - url: "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
     title: It Is Time to Standardize Principles and Practices for Software Memory
       Safety
     type: Paper (detail)
-  - url: "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
+  - url: "/academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
     title: 'Rigorous Engineering for Hardware Security: Formal Modelling and Proof
       in the CHERI Design and Implementation Process'
     type: Paper (detail)
-  - url: "/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/"
+  - url: "/academic-papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/"
     title: 'The CHERI Capability Model: Revisiting RISC in an Age of Risk'
     type: Paper (detail)
 - label: Authored Reports & White Papers
@@ -5213,52 +5213,52 @@
 "/people/jonathan-anderson/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
+  - url: "/academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
     title: 'CHERI: A Hybrid Capability-System Architecture for Scalable Software Compartmentalization'
     type: Paper (detail)
-  - url: "/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/"
+  - url: "/academic-papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/"
     title: 'The CHERI Capability Model: Revisiting RISC in an Age of Risk'
     type: Paper (detail)
 "/people/nirav-dave/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
+  - url: "/academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
     title: 'CHERI: A Hybrid Capability-System Architecture for Scalable Software Compartmentalization'
     type: Paper (detail)
 "/people/khilan-gudka/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
+  - url: "/academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
     title: 'CHERI: A Hybrid Capability-System Architecture for Scalable Software Compartmentalization'
     type: Paper (detail)
-  - url: "/papers/cheri-concentrate-practical-compressed-capabilities/"
+  - url: "/academic-papers/cheri-concentrate-practical-compressed-capabilities/"
     title: 'CHERI Concentrate: Practical Compressed Capabilities'
     type: Paper (detail)
-  - url: "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/"
+  - url: "/academic-papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/"
     title: 'CheriABI: Enforcing Valid Pointer Provenance and Minimizing Pointer Privilege
       in the POSIX C Run-time Environment'
     type: Paper (detail)
 "/people/ben-laurie/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
+  - url: "/academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
     title: 'CHERI: A Hybrid Capability-System Architecture for Scalable Software Compartmentalization'
     type: Paper (detail)
-  - url: "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/"
+  - url: "/academic-papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/"
     title: 'CHERI: Hardware-Enabled C/C++ Memory Protection at Scale'
     type: Paper (detail)
-  - url: "/papers/cheriot-complete-memory-safety-for-embedded-devices/"
+  - url: "/academic-papers/cheriot-complete-memory-safety-for-embedded-devices/"
     title: 'CHERIoT: Complete Memory Safety for Embedded Devices'
     type: Paper (detail)
-  - url: "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
+  - url: "/academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
     title: 'CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost
       Embedded Devices'
     type: Paper (detail)
-  - url: "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+  - url: "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
     title: It Is Time to Standardize Principles and Practices for Software Memory
       Safety
     type: Paper (detail)
-  - url: "/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/"
+  - url: "/academic-papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/"
     title: 'The CHERI Capability Model: Revisiting RISC in an Age of Risk'
     type: Paper (detail)
 - label: Authored Reports & White Papers
@@ -5269,140 +5269,140 @@
 "/people/steven-j-murdoch/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
+  - url: "/academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
     title: 'CHERI: A Hybrid Capability-System Architecture for Scalable Software Compartmentalization'
     type: Paper (detail)
 "/people/robert-m-norton/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
+  - url: "/academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
     title: 'CHERI: A Hybrid Capability-System Architecture for Scalable Software Compartmentalization'
     type: Paper (detail)
-  - url: "/papers/cheri-concentrate-practical-compressed-capabilities/"
+  - url: "/academic-papers/cheri-concentrate-practical-compressed-capabilities/"
     title: 'CHERI Concentrate: Practical Compressed Capabilities'
     type: Paper (detail)
-  - url: "/papers/cheriot-complete-memory-safety-for-embedded-devices/"
+  - url: "/academic-papers/cheriot-complete-memory-safety-for-embedded-devices/"
     title: 'CHERIoT: Complete Memory Safety for Embedded Devices'
     type: Paper (detail)
-  - url: "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
+  - url: "/academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
     title: 'Rigorous Engineering for Hardware Security: Formal Modelling and Proof
       in the CHERI Design and Implementation Process'
     type: Paper (detail)
-  - url: "/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/"
+  - url: "/academic-papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/"
     title: 'The CHERI Capability Model: Revisiting RISC in an Age of Risk'
     type: Paper (detail)
 "/people/michael-roe/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
+  - url: "/academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
     title: 'CHERI: A Hybrid Capability-System Architecture for Scalable Software Compartmentalization'
     type: Paper (detail)
-  - url: "/papers/cheri-concentrate-practical-compressed-capabilities/"
+  - url: "/academic-papers/cheri-concentrate-practical-compressed-capabilities/"
     title: 'CHERI Concentrate: Practical Compressed Capabilities'
     type: Paper (detail)
-  - url: "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
+  - url: "/academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
     title: 'Rigorous Engineering for Hardware Security: Formal Modelling and Proof
       in the CHERI Design and Implementation Process'
     type: Paper (detail)
-  - url: "/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/"
+  - url: "/academic-papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/"
     title: 'The CHERI Capability Model: Revisiting RISC in an Age of Risk'
     type: Paper (detail)
 "/people/stacey-son/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
+  - url: "/academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
     title: 'CHERI: A Hybrid Capability-System Architecture for Scalable Software Compartmentalization'
     type: Paper (detail)
 "/people/munraj-vadera/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
+  - url: "/academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/"
     title: 'CHERI: A Hybrid Capability-System Architecture for Scalable Software Compartmentalization'
     type: Paper (detail)
 "/people/hongyan-xia/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cheri-concentrate-practical-compressed-capabilities/"
+  - url: "/academic-papers/cheri-concentrate-practical-compressed-capabilities/"
     title: 'CHERI Concentrate: Practical Compressed Capabilities'
     type: Paper (detail)
-  - url: "/papers/cheriot-complete-memory-safety-for-embedded-devices/"
+  - url: "/academic-papers/cheriot-complete-memory-safety-for-embedded-devices/"
     title: 'CHERIoT: Complete Memory Safety for Embedded Devices'
     type: Paper (detail)
-  - url: "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
+  - url: "/academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
     title: 'CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost
       Embedded Devices'
     type: Paper (detail)
-  - url: "/papers/cornucopia-temporal-safety-for-cheri-heaps/"
+  - url: "/academic-papers/cornucopia-temporal-safety-for-cheri-heaps/"
     title: 'Cornucopia: Temporal Safety for CHERI Heaps'
     type: Paper (detail)
 "/people/anthony-fox/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cheri-concentrate-practical-compressed-capabilities/"
+  - url: "/academic-papers/cheri-concentrate-practical-compressed-capabilities/"
     title: 'CHERI Concentrate: Practical Compressed Capabilities'
     type: Paper (detail)
-  - url: "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
+  - url: "/academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
     title: 'Rigorous Engineering for Hardware Security: Formal Modelling and Proof
       in the CHERI Design and Implementation Process'
     type: Paper (detail)
 "/people/thomas-bauereiss/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cheri-concentrate-practical-compressed-capabilities/"
+  - url: "/academic-papers/cheri-concentrate-practical-compressed-capabilities/"
     title: 'CHERI Concentrate: Practical Compressed Capabilities'
     type: Paper (detail)
-  - url: "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
+  - url: "/academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
     title: 'Rigorous Engineering for Hardware Security: Formal Modelling and Proof
       in the CHERI Design and Implementation Process'
     type: Paper (detail)
 "/people/nathaniel-wesley-filardo/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cheri-concentrate-practical-compressed-capabilities/"
+  - url: "/academic-papers/cheri-concentrate-practical-compressed-capabilities/"
     title: 'CHERI Concentrate: Practical Compressed Capabilities'
     type: Paper (detail)
-  - url: "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/"
+  - url: "/academic-papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/"
     title: 'CHERI: Hardware-Enabled C/C++ Memory Protection at Scale'
     type: Paper (detail)
-  - url: "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/"
+  - url: "/academic-papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/"
     title: 'CheriABI: Enforcing Valid Pointer Provenance and Minimizing Pointer Privilege
       in the POSIX C Run-time Environment'
     type: Paper (detail)
-  - url: "/papers/cheriot-complete-memory-safety-for-embedded-devices/"
+  - url: "/academic-papers/cheriot-complete-memory-safety-for-embedded-devices/"
     title: 'CHERIoT: Complete Memory Safety for Embedded Devices'
     type: Paper (detail)
-  - url: "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
+  - url: "/academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
     title: 'CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost
       Embedded Devices'
     type: Paper (detail)
-  - url: "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/"
+  - url: "/academic-papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/"
     title: 'Cornucopia Reloaded: Load Barriers for CHERI Heap Temporal Safety'
     type: Paper (detail)
-  - url: "/papers/cornucopia-temporal-safety-for-cheri-heaps/"
+  - url: "/academic-papers/cornucopia-temporal-safety-for-cheri-heaps/"
     title: 'Cornucopia: Temporal Safety for CHERI Heaps'
     type: Paper (detail)
-  - url: "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+  - url: "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
     title: It Is Time to Standardize Principles and Practices for Software Memory
       Safety
     type: Paper (detail)
 "/people/alex-richardson/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/"
+  - url: "/academic-papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/"
     title: 'CHERI: Hardware-Enabled C/C++ Memory Protection at Scale'
     type: Paper (detail)
-  - url: "/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/"
+  - url: "/academic-papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/"
     title: 'CheriABI: Enforcing Valid Pointer Provenance and Minimizing Pointer Privilege
       in the POSIX C Run-time Environment'
     type: Paper (detail)
-  - url: "/papers/cornucopia-temporal-safety-for-cheri-heaps/"
+  - url: "/academic-papers/cornucopia-temporal-safety-for-cheri-heaps/"
     title: 'Cornucopia: Temporal Safety for CHERI Heaps'
     type: Paper (detail)
-  - url: "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/"
+  - url: "/academic-papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/"
     title: 'Formal Mechanised Semantics of CHERI C: Capabilities, Provenance, and
       Undefined Behaviour'
     type: Paper (detail)
-  - url: "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+  - url: "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
     title: It Is Time to Standardize Principles and Practices for Software Memory
       Safety
     type: Paper (detail)
@@ -5414,22 +5414,22 @@
 "/people/peter-sewell/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/"
+  - url: "/academic-papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/"
     title: 'CHERI: Hardware-Enabled C/C++ Memory Protection at Scale'
     type: Paper (detail)
-  - url: "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/"
+  - url: "/academic-papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/"
     title: 'Formal Mechanised Semantics of CHERI C: Capabilities, Provenance, and
       Undefined Behaviour'
     type: Paper (detail)
-  - url: "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+  - url: "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
     title: It Is Time to Standardize Principles and Practices for Software Memory
       Safety
     type: Paper (detail)
-  - url: "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
+  - url: "/academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
     title: 'Rigorous Engineering for Hardware Security: Formal Modelling and Proof
       in the CHERI Design and Implementation Process'
     type: Paper (detail)
-  - url: "/papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/"
+  - url: "/academic-papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/"
     title: The Arm Morello Evaluation Platform—Validating CHERI-Based Security in
       a High-Performance System
     type: Paper (detail)
@@ -5441,58 +5441,58 @@
 "/people/konrad-witaszczyk/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/"
+  - url: "/academic-papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/"
     title: 'CHERI: Hardware-Enabled C/C++ Memory Protection at Scale'
     type: Paper (detail)
-  - url: "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+  - url: "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
     title: It Is Time to Standardize Principles and Practices for Software Memory
       Safety
     type: Paper (detail)
 "/people/saar-amar/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cheriot-complete-memory-safety-for-embedded-devices/"
+  - url: "/academic-papers/cheriot-complete-memory-safety-for-embedded-devices/"
     title: 'CHERIoT: Complete Memory Safety for Embedded Devices'
     type: Paper (detail)
-  - url: "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
+  - url: "/academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
     title: 'CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost
       Embedded Devices'
     type: Paper (detail)
 "/people/tony-chen/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cheriot-complete-memory-safety-for-embedded-devices/"
+  - url: "/academic-papers/cheriot-complete-memory-safety-for-embedded-devices/"
     title: 'CHERIoT: Complete Memory Safety for Embedded Devices'
     type: Paper (detail)
-  - url: "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
+  - url: "/academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
     title: 'CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost
       Embedded Devices'
     type: Paper (detail)
-  - url: "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+  - url: "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
     title: It Is Time to Standardize Principles and Practices for Software Memory
       Safety
     type: Paper (detail)
 "/people/kunyan-liu/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cheriot-complete-memory-safety-for-embedded-devices/"
+  - url: "/academic-papers/cheriot-complete-memory-safety-for-embedded-devices/"
     title: 'CHERIoT: Complete Memory Safety for Embedded Devices'
     type: Paper (detail)
-  - url: "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
+  - url: "/academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
     title: 'CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost
       Embedded Devices'
     type: Paper (detail)
 "/people/yucong-tao/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cheriot-complete-memory-safety-for-embedded-devices/"
+  - url: "/academic-papers/cheriot-complete-memory-safety-for-embedded-devices/"
     title: 'CHERIoT: Complete Memory Safety for Embedded Devices'
     type: Paper (detail)
-  - url: "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
+  - url: "/academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
     title: 'CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost
       Embedded Devices'
     type: Paper (detail)
-"/papers/cheriot-complete-memory-safety-for-embedded-devices/":
+"/academic-papers/cheriot-complete-memory-safety-for-embedded-devices/":
 - label: Hardware
   targets:
   - url: "/hardware/cheriot/"
@@ -5501,28 +5501,28 @@
 "/people/hugo-lefeuvre/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
+  - url: "/academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
     title: 'CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost
       Embedded Devices'
     type: Paper (detail)
 "/people/robert-norton-wright/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
+  - url: "/academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
     title: 'CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost
       Embedded Devices'
     type: Paper (detail)
-  - url: "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/"
+  - url: "/academic-papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/"
     title: 'Cornucopia Reloaded: Load Barriers for CHERI Heap Temporal Safety'
     type: Paper (detail)
 "/people/margo-seltzer/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
+  - url: "/academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/"
     title: 'CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost
       Embedded Devices'
     type: Paper (detail)
-"/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/":
+"/academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/":
 - label: Hardware
   targets:
   - url: "/hardware/cheriot/"
@@ -5531,137 +5531,137 @@
 "/people/brett-f-gutstein/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/"
+  - url: "/academic-papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/"
     title: 'Cornucopia Reloaded: Load Barriers for CHERI Heap Temporal Safety'
     type: Paper (detail)
-  - url: "/papers/cornucopia-temporal-safety-for-cheri-heaps/"
+  - url: "/academic-papers/cornucopia-temporal-safety-for-cheri-heaps/"
     title: 'Cornucopia: Temporal Safety for CHERI Heaps'
     type: Paper (detail)
-  - url: "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+  - url: "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
     title: It Is Time to Standardize Principles and Practices for Software Memory
       Safety
     type: Paper (detail)
 "/people/mark-johnston/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/"
+  - url: "/academic-papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/"
     title: 'Cornucopia Reloaded: Load Barriers for CHERI Heap Temporal Safety'
     type: Paper (detail)
 "/people/sam-ainsworth/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cornucopia-temporal-safety-for-cheri-heaps/"
+  - url: "/academic-papers/cornucopia-temporal-safety-for-cheri-heaps/"
     title: 'Cornucopia: Temporal Safety for CHERI Heaps'
     type: Paper (detail)
 "/people/lucian-paul-trifu/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cornucopia-temporal-safety-for-cheri-heaps/"
+  - url: "/academic-papers/cornucopia-temporal-safety-for-cheri-heaps/"
     title: 'Cornucopia: Temporal Safety for CHERI Heaps'
     type: Paper (detail)
 "/people/edward-tomasz-napieraa/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/cornucopia-temporal-safety-for-cheri-heaps/"
+  - url: "/academic-papers/cornucopia-temporal-safety-for-cheri-heaps/"
     title: 'Cornucopia: Temporal Safety for CHERI Heaps'
     type: Paper (detail)
-  - url: "/papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/"
+  - url: "/academic-papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/"
     title: Deprivileging Low-Level GPU Drivers Efficiently with User-Space Processes
       and CHERI Compartments
     type: Paper (detail)
 "/people/vadim-zaliva/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/"
+  - url: "/academic-papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/"
     title: 'Formal Mechanised Semantics of CHERI C: Capabilities, Provenance, and
       Undefined Behaviour'
     type: Paper (detail)
 "/people/kayvan-memarian/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/"
+  - url: "/academic-papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/"
     title: 'Formal Mechanised Semantics of CHERI C: Capabilities, Provenance, and
       Undefined Behaviour'
     type: Paper (detail)
 "/people/ricardo-almeida/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/"
+  - url: "/academic-papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/"
     title: 'Formal Mechanised Semantics of CHERI C: Capabilities, Provenance, and
       Undefined Behaviour'
     type: Paper (detail)
 "/people/brian-campbell/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/"
+  - url: "/academic-papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/"
     title: 'Formal Mechanised Semantics of CHERI C: Capabilities, Provenance, and
       Undefined Behaviour'
     type: Paper (detail)
-  - url: "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
+  - url: "/academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
     title: 'Rigorous Engineering for Hardware Security: Formal Modelling and Proof
       in the CHERI Design and Implementation Process'
     type: Paper (detail)
 "/people/ian-stark/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/"
+  - url: "/academic-papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/"
     title: 'Formal Mechanised Semantics of CHERI C: Capabilities, Provenance, and
       Undefined Behaviour'
     type: Paper (detail)
-  - url: "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
+  - url: "/academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
     title: 'Rigorous Engineering for Hardware Security: Formal Modelling and Proof
       in the CHERI Design and Implementation Process'
     type: Paper (detail)
 "/people/graeme-jenkinson/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+  - url: "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
     title: It Is Time to Standardize Principles and Practices for Software Memory
       Safety
     type: Paper (detail)
 "/people/hamed-okhravi/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+  - url: "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
     title: It Is Time to Standardize Principles and Practices for Software Memory
       Safety
     type: Paper (detail)
 "/people/laurence-tratt/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+  - url: "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
     title: It Is Time to Standardize Principles and Practices for Software Memory
       Safety
     type: Paper (detail)
 "/people/hugo-vincent/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
+  - url: "/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/"
     title: It Is Time to Standardize Principles and Practices for Software Memory
       Safety
     type: Paper (detail)
 "/people/kyndylan-nienhuis/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
+  - url: "/academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/"
     title: 'Rigorous Engineering for Hardware Security: Formal Modelling and Proof
       in the CHERI Design and Implementation Process'
     type: Paper (detail)
 "/people/richard-grisenthwaite/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/"
+  - url: "/academic-papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/"
     title: The Arm Morello Evaluation Platform—Validating CHERI-Based Security in
       a High-Performance System
     type: Paper (detail)
 "/people/graeme-barnes/":
 - label: Authored Academic papers
   targets:
-  - url: "/papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/"
+  - url: "/academic-papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/"
     title: The Arm Morello Evaluation Platform—Validating CHERI-Based Security in
       a High-Performance System
     type: Paper (detail)
-"/papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/":
+"/academic-papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/":
 - label: Hardware
   targets:
   - url: "/hardware/morello/"

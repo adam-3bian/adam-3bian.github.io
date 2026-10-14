@@ -17,6 +17,6 @@ related:
 
 # Sarah Harris
 
-Sarah Harris is listed as a lead of the [CHERI Alliance working group](/groups/rust-plus-cheri/), representing the organisation shown in the record metadata.
+Sarah Harris is listed as a lead of the [CHERI Alliance working group](/working-groups/rust-plus-cheri/), representing the organisation shown in the record metadata.
 
 [Working-group profile](https://cheri-alliance.org/who-we-are/working-groups/rust-cheri/).

@@ -116,4 +116,4 @@ CHERI-seL4 RFC: <https://github.com/seL4/rfcs/pull/21>
 
 seL4 upstream PRs: <https://github.com/seL4/seL4/pull/1469>
 
-[CHERI-seL4 Working Group](/groups/cheri-for-sel4/): <https://cheri-alliance.org/who-we-are/working-groups/cheri-sel4/>
+[CHERI-seL4 Working Group](/working-groups/cheri-for-sel4/): <https://cheri-alliance.org/who-we-are/working-groups/cheri-sel4/>
