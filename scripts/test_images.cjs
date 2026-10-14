@@ -78,6 +78,9 @@ async function loaded(page, route) {
             }
           }
           for (const article of document.querySelectorAll('.article-content')) {
+            // A short record can put its entire introduction in the header;
+            // the intentionally empty body has no rendered layout box.
+            if (!article.getClientRects().length) continue;
             const bounds = article.getBoundingClientRect();
             const main = document.querySelector('main').getBoundingClientRect();
             if (article.closest('.record-content.is-wide') && Math.abs(bounds.width - main.width) > 1) errors.push('Wide technical article does not span the page container');

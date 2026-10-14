@@ -43,7 +43,8 @@ layout: default
   {% include resources.html %}
   {% assign alias_target = site.data.viewer.aliases[page.url] %}{% if alias_target %}<aside class="notice">This is a retained alias. <a href="{{ alias_target | relative_url }}">Continue to its destination</a>.</aside>{% endif %}
   {% capture record_facts %}{% include metadata.html %}{% endcapture %}{% assign record_facts = record_facts | strip %}
-  {% assign wide_content = false %}{% if directory_page or reader_content contains 'image-full' or reader_content contains 'image-left' or reader_content contains 'image-right' or reader_content contains 'image-gallery' or reader_content contains '<table' %}{% assign wide_content = true %}{% endif %}
+  {% assign remaining_content = reader_content | strip %}
+  {% assign wide_content = false %}{% if directory_page or remaining_content == '' or reader_content contains 'image-full' or reader_content contains 'image-left' or reader_content contains 'image-right' or reader_content contains 'image-gallery' or reader_content contains '<table' %}{% assign wide_content = true %}{% endif %}
   <div class="record-content{% if record_facts != '' %} has-facts{% endif %}{% if wide_content %} is-wide{% endif %}">
   {{ record_facts }}
   <section class="article-content" aria-label="Article content">{% include reader-content.html html=reader_content %}</section>
