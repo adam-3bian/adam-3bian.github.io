@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-10-14T10:16:26Z'
+generated_at: '2026-10-14T10:54:21Z'
 record_count: 532
 relationship_count: 1122
 image_count: 508
@@ -9056,6 +9056,7 @@ records:
       linkedin_url:
       mastodon_url:
       github_url:
+    image_background: dark
     parent: "/organisations/"
     layout: document
     image_source:

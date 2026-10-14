@@ -6,7 +6,7 @@
   {% if include.role == 'board' %}{% assign board_properties = card_content | split: '<dd>' %}{% if board_properties.size > 1 %}{% assign card_summary = board_properties[1] | split: '</dd>' | first | strip_html | strip %}{% endif %}{% endif %}
   {% assign card_summary = item.summary | default: card_summary %}
   <li><a class="card" href="{{ item.url | relative_url }}" data-record-url="{{ item.url | escape }}">
-    {% unless include.show_images == false or item.image_url contains '/placeholder.svg' %}{% if item.image_url %}<img class="{% if card_image_height == 360 %}image-portrait{% elsif item.collection == 'organisations' %}image-logo{% endif %}" src="{% include href.html url=item.image_url %}" alt="{{ item.title | escape }}" width="360" height="{{ card_image_height }}" loading="lazy">{% endif %}{% endunless %}
+    {% unless include.show_images == false or item.image_url contains '/placeholder.svg' %}{% if item.image_url %}<img class="{% if card_image_height == 360 %}image-portrait{% elsif item.collection == 'organisations' %}image-logo{% endif %}" src="{% include href.html url=item.image_url %}" alt="{{ item.title | escape }}"{% if item.image_background == 'dark' %} data-image-background="dark"{% endif %} width="360" height="{{ card_image_height }}" loading="lazy">{% endif %}{% endunless %}
     <hgroup class="card-text">
       <h3>{{ item.title | escape }}</h3>
       {% if include.role == 'board' %}{% assign affiliation_slug = item.related.organisations | first %}{% assign affiliation = site.organisations | where: 'slug', affiliation_slug | first %}{% if affiliation %}<p class="card-meta">{{ affiliation.title | escape }}</p>{% endif %}

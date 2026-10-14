@@ -146,6 +146,8 @@ objects.each do |object|
     next if value.nil?
     if key == 'version'
       errors << "Invalid version (use a quoted string): #{entry['file']}" unless value.is_a?(String) && !value.strip.empty?
+    elsif key == 'image_background'
+      errors << "Invalid image_background (use dark or null): #{entry['file']}" unless value == 'dark'
     elsif key == 'document_date'
       begin
         raise ArgumentError unless value.is_a?(String) && value.match?(/\A\d{4}-\d{2}(?:-\d{2})?\z/)

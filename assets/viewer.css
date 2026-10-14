@@ -210,6 +210,7 @@ nav li + li, .cards > li + li, .image-gallery > li + li, .site-footer li + li { 
 .summary { font-size: 1.12rem; color: var(--muted); }
 .lead-image { display: block; flex: 0 1 30%; min-width: 0; width: 100%; height: auto; max-height: 20rem; object-fit: contain; background: var(--image-background, var(--soft)); border-radius: .5rem; }
 .image-logo, .logo-gallery { --image-background: transparent; }
+img[data-image-background="dark"] { --image-background: var(--ink); }
 .lead-image.image-logo, .card img.image-logo { padding: 1rem; }
 
 .metadata { margin: 0 0 2.5rem; padding-block: 1.5rem; border-block: 1px solid var(--line); }

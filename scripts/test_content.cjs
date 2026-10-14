@@ -85,7 +85,10 @@ const routes = [
           }
           if (document.querySelector('article .inspector, article .front-matter-json, .lead-image[src$="placeholder.svg"]')) errors.push('Authoring data or empty image fallback on a public record');
           for (const logo of document.querySelectorAll('img.image-logo')) {
-            if (getComputedStyle(logo).backgroundColor !== 'rgba(0, 0, 0, 0)') errors.push('Unnecessary logo display background');
+            const background = getComputedStyle(logo).backgroundColor;
+            if (logo.dataset.imageBackground === 'dark') {
+              if (background !== getComputedStyle(document.documentElement).color) errors.push('Light logo artwork lacks its contrast frame');
+            } else if (background !== 'rgba(0, 0, 0, 0)') errors.push('Unnecessary logo display background');
           }
           for (const nav of document.querySelectorAll('.resource-links')) {
             if (nav.tagName !== 'NAV' || !nav.querySelector('ul > li > a')) errors.push('Resource links lack navigation/list semantics');
@@ -239,6 +242,13 @@ const routes = [
       await page.goto(url(record.url));
       await page.locator('.lead-image').evaluate(image => image.decode());
       await page.locator('.record-header').screenshot({ path: path.join(reportDir, `source-logo-${record.url.split('/')[2]}.png`) });
+      if (record.properties.image_background === 'dark') {
+        assert.equal(await page.locator('.lead-image').getAttribute('data-image-background'), 'dark');
+        await page.goto(url('/organisations/'));
+        const darkCard = page.locator(`.card[data-record-url="${record.url}"]`);
+        assert.equal(await darkCard.locator('img').getAttribute('data-image-background'), 'dark');
+        await darkCard.screenshot({ path: path.join(reportDir, 'light-artwork-card.png') });
+      }
     }
     // Verify actual rendered transparency and original pixels, including the
     // intentionally white S and cream seal interior that must remain visible.

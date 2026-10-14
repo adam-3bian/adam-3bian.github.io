@@ -4,6 +4,7 @@ common:
   document_date: null
   document_url: null
   summary: null
+  image_background: null
   parent: null
   next_page_url: null
   related: {}

@@ -96,7 +96,10 @@ Use original artwork and verified portraits. Centre images with
 or manufacture photographs. Non-portrait frames are 3:1; speaker, team and board
 portraits are 1:1. Logos have transparent frames and inset spacing. Preserve
 intentional artwork backgrounds; remove accidental canvas backgrounds through
-reproducible SVG treatments, retaining original assets.
+reproducible SVG treatments, retaining original assets. For light artwork, the
+optional `image_background: dark` property supplies a contrasting primary-image
+frame on headers and cards. The page stays light and the artwork stays intact.
+Inline images can use `data-image-background="dark"` in native Markdown attributes.
 
 Normal prose illustrations alternate `.image-left`, `.image-right` in each
 document, starting left. Desktop floats occupy 42% with a 1.5rem text gutter.
