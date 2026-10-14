@@ -3137,7 +3137,7 @@
 - label: Related working groups
   targets:
   - url: "/working-groups/cheri-research/"
-    title: HERI Research Working Group
+    title: CHERI Research Working Group
     type: Working group (detail)
 - label: Related reports & white papers
   targets:
@@ -4051,7 +4051,7 @@
 - label: Working groups
   targets:
   - url: "/working-groups/cheri-research/"
-    title: HERI Research Working Group
+    title: CHERI Research Working Group
     type: Working group (detail)
     context: Lead
 - label: Papers by Jonathan Woodruff

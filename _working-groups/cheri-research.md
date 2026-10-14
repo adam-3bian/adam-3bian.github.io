@@ -1,5 +1,5 @@
 ---
-title: HERI Research Working Group
+title: CHERI Research Working Group
 image_url: /assets/working-groups/cheri-research/bb889a4dc09e-cheri-alliance-working-groups.png
 website_url: https://cheri-alliance.org/who-we-are/working-groups/cheri-research/
 leads:
@@ -9,7 +9,7 @@ related:
   - university-of-cambridge
 ---
 
-# HERI Research Working Group
+# CHERI Research Working Group
 
 The CHERI Research Working Group connects researchers in academia and industry, providing a forum to identify shared interests and collaborate.
 
