@@ -151,6 +151,13 @@ uses source summaries/excerpts, absolute canonical URLs, approved local raster
 artwork and safely encoded, source-backed WebSite/Organization/Event JSON-LD.
 Generic reference browser titles may gain context without changing their h1.
 
+Search is a dedicated static page with a Jekyll-generated JSON index. Its small
+client loads only on `/search/`, fetches the index on the first query, weights
+title matches and uses native form controls, text nodes and same-origin links.
+Type filters, status announcements, reset/focus and shareable query state are
+progressive enhancements. Without JavaScript, an explicit message and complete
+section browse links remain available. No hosted search service is involved.
+
 Use `FRONT_MATTER.MD` and `_data/schemas.yml` for fields; use native Markdown and
 the existing image classes instead of hand-built page components. Navigation
 comes from `_config.yml`, display roles from `_data/viewer.yml`, and the complete

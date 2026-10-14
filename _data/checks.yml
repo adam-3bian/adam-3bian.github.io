@@ -1,6 +1,6 @@
 ---
-generated_at: '2026-10-14T10:54:21Z'
-record_count: 532
+generated_at: '2026-10-14T20:49:06Z'
+record_count: 533
 relationship_count: 1122
 image_count: 508
 collection_count: 12
@@ -4658,41 +4658,6 @@ records:
     parent: "/organisations/"
     layout: document
 - title: Contact the Alliance
-  url: "/reference/source-versions/contact/"
-  file: pages/reference/source-versions/contact.md
-  type: Content Page (detail)
-  collection: pages
-  has_image: false
-  image_status: none
-  missing_news_date: false
-  display_date:
-  alternate: true
-  alias_target:
-  properties:
-    title: Contact the Alliance
-    permalink: "/reference/source-versions/contact/"
-    summary: Contact the Alliance for membership, working groups, certification, events,
-      media, trademarks, or help finding the right CHERI resource.
-    image_url:
-    updated_date:
-    parent: "/"
-    next_page_url: "/organisations/cheri-alliance/"
-    related:
-      pages:
-      - "/alliance/membership/membership-benefits-and-options/"
-      - "/news-and-events/people-and-opportunities/job-opportunities/"
-      people: []
-      organisations: []
-      working-groups: []
-      news: []
-      events: []
-      academic-papers: []
-      hardware: []
-      software: []
-      guides: []
-      policies: []
-    layout: document
-- title: Contact the Alliance
   url: "/alliance/membership/contact/"
   file: pages/alliance/membership/contact.md
   type: Content Page (detail)
@@ -4711,6 +4676,41 @@ records:
     image_url:
     updated_date:
     parent: "/alliance/"
+    next_page_url: "/organisations/cheri-alliance/"
+    related:
+      pages:
+      - "/alliance/membership/membership-benefits-and-options/"
+      - "/news-and-events/people-and-opportunities/job-opportunities/"
+      people: []
+      organisations: []
+      working-groups: []
+      news: []
+      events: []
+      academic-papers: []
+      hardware: []
+      software: []
+      guides: []
+      policies: []
+    layout: document
+- title: Contact the Alliance
+  url: "/reference/source-versions/contact/"
+  file: pages/reference/source-versions/contact.md
+  type: Content Page (detail)
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: true
+  alias_target:
+  properties:
+    title: Contact the Alliance
+    permalink: "/reference/source-versions/contact/"
+    summary: Contact the Alliance for membership, working groups, certification, events,
+      media, trademarks, or help finding the right CHERI resource.
+    image_url:
+    updated_date:
+    parent: "/"
     next_page_url: "/organisations/cheri-alliance/"
     related:
       pages:
@@ -8246,6 +8246,26 @@ records:
     parent: "/people/"
     layout: document
 - title: Latest News
+  url: "/news-and-events/news-and-analysis/latest-news/"
+  file: pages/news-and-events/news-and-analysis/latest-news.md
+  type: News (list)
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: true
+  alias_target: "/news/"
+  properties:
+    title: Latest News
+    permalink: "/news-and-events/news-and-analysis/latest-news/"
+    layout: redirect
+    listing:
+      collection:
+      status:
+      role:
+    parent: "/news-and-events/"
+- title: Latest News
   url: "/reference/source-versions/latest-news/"
   file: pages/reference/source-versions/latest-news.md
   type: Content Page (detail)
@@ -8277,26 +8297,6 @@ records:
       guides: []
       policies: []
     layout: document
-- title: Latest News
-  url: "/news-and-events/news-and-analysis/latest-news/"
-  file: pages/news-and-events/news-and-analysis/latest-news.md
-  type: News (list)
-  collection: pages
-  has_image: false
-  image_status: none
-  missing_news_date: false
-  display_date:
-  alternate: true
-  alias_target: "/news/"
-  properties:
-    title: Latest News
-    permalink: "/news-and-events/news-and-analysis/latest-news/"
-    layout: redirect
-    listing:
-      collection:
-      status:
-      role:
-    parent: "/news-and-events/"
 - title: Laurence Tratt
   url: "/people/laurence-tratt/"
   file: _people/laurence-tratt.md
@@ -8892,6 +8892,26 @@ records:
     parent: "/people/"
     layout: document
 - title: Members
+  url: "/alliance/leadership/members/"
+  file: pages/alliance/leadership/members.md
+  type: Organisations (list)
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target:
+  properties:
+    title: Members
+    permalink: "/alliance/leadership/members/"
+    layout: list
+    listing:
+      collection: organisations
+      status:
+      role:
+    parent: "/alliance/"
+- title: Members
   url: "/reference/source-versions/members/"
   file: pages/reference/source-versions/members.md
   type: Content Page (detail)
@@ -8926,26 +8946,6 @@ records:
       guides: []
       policies: []
     layout: document
-- title: Members
-  url: "/alliance/leadership/members/"
-  file: pages/alliance/leadership/members.md
-  type: Organisations (list)
-  collection: pages
-  has_image: false
-  image_status: none
-  missing_news_date: false
-  display_date:
-  alternate: false
-  alias_target:
-  properties:
-    title: Members
-    permalink: "/alliance/leadership/members/"
-    layout: list
-    listing:
-      collection: organisations
-      status:
-      role:
-    parent: "/alliance/"
 - title: Membership Benefits & Options
   url: "/alliance/membership/membership-benefits-and-options/"
   file: pages/alliance/membership/membership-benefits-and-options.md
@@ -10055,6 +10055,26 @@ records:
     parent: "/organisations/"
     layout: document
 - title: Past Events
+  url: "/news-and-events/events-and-archive/past-events/"
+  file: pages/news-and-events/events-and-archive/past-events.md
+  type: Events (list)
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target:
+  properties:
+    title: Past Events
+    permalink: "/news-and-events/events-and-archive/past-events/"
+    layout: events
+    listing:
+      collection:
+      status: past
+      role:
+    parent: "/news-and-events/"
+- title: Past Events
   url: "/reference/source-versions/past-events/"
   file: pages/reference/source-versions/past-events.md
   type: Content Page (detail)
@@ -10090,26 +10110,6 @@ records:
       guides: []
       policies: []
     layout: document
-- title: Past Events
-  url: "/news-and-events/events-and-archive/past-events/"
-  file: pages/news-and-events/events-and-archive/past-events.md
-  type: Events (list)
-  collection: pages
-  has_image: false
-  image_status: none
-  missing_news_date: false
-  display_date:
-  alternate: false
-  alias_target:
-  properties:
-    title: Past Events
-    permalink: "/news-and-events/events-and-archive/past-events/"
-    layout: events
-    listing:
-      collection:
-      status: past
-      role:
-    parent: "/news-and-events/"
 - title: Paul Metzger
   url: "/people/paul-metzger/"
   file: _people/paul-metzger.md
@@ -11531,6 +11531,39 @@ records:
       guides: []
       policies: []
     layout: document
+- title: Search the CHERI website
+  url: "/search/"
+  file: pages/search.md
+  type: Content Page (detail)
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target:
+  properties:
+    title: Search the CHERI website
+    permalink: "/search/"
+    summary: Find CHERI guides, research, platforms, people, organisations, news and
+      events.
+    image_url:
+    updated_date:
+    parent: "/"
+    next_page_url:
+    related:
+      pages: []
+      people: []
+      organisations: []
+      working-groups: []
+      news: []
+      events: []
+      academic-papers: []
+      hardware: []
+      software: []
+      guides: []
+      policies: []
+    layout: search
 - title: Secure and Resilient Systems in the Era of CRA and IoT
   url: "/news/secure-and-resilient-systems-in-the-era-of-cra-and-iot/"
   file: _news/secure-and-resilient-systems-in-the-era-of-cra-and-iot.md
@@ -12019,6 +12052,26 @@ records:
       policies: []
     layout: document
 - title: Speakers
+  url: "/news-and-events/people-and-opportunities/speakers/"
+  file: pages/news-and-events/people-and-opportunities/speakers.md
+  type: People (list)
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target:
+  properties:
+    title: Speakers
+    permalink: "/news-and-events/people-and-opportunities/speakers/"
+    layout: people
+    listing:
+      collection:
+      status:
+      role: speaker
+    parent: "/news-and-events/"
+- title: Speakers
   url: "/reference/source-versions/speakers/"
   file: pages/reference/source-versions/speakers.md
   type: Content Page (detail)
@@ -12054,26 +12107,6 @@ records:
       guides: []
       policies: []
     layout: document
-- title: Speakers
-  url: "/news-and-events/people-and-opportunities/speakers/"
-  file: pages/news-and-events/people-and-opportunities/speakers.md
-  type: People (list)
-  collection: pages
-  has_image: false
-  image_status: none
-  missing_news_date: false
-  display_date:
-  alternate: false
-  alias_target:
-  properties:
-    title: Speakers
-    permalink: "/news-and-events/people-and-opportunities/speakers/"
-    layout: people
-    listing:
-      collection:
-      status:
-      role: speaker
-    parent: "/news-and-events/"
 - title: Specifications
   url: "/discover/resources/specifications/"
   file: pages/discover/resources/specifications.md
@@ -13621,6 +13654,26 @@ records:
     parent: "/news/"
     layout: document
 - title: Upcoming Events
+  url: "/news-and-events/events-and-archive/upcoming-events/"
+  file: pages/news-and-events/events-and-archive/upcoming-events.md
+  type: Events (list)
+  collection: pages
+  has_image: false
+  image_status: none
+  missing_news_date: false
+  display_date:
+  alternate: false
+  alias_target:
+  properties:
+    title: Upcoming Events
+    permalink: "/news-and-events/events-and-archive/upcoming-events/"
+    layout: events
+    listing:
+      collection:
+      status: upcoming
+      role:
+    parent: "/news-and-events/"
+- title: Upcoming Events
   url: "/reference/source-versions/upcoming-events/"
   file: pages/reference/source-versions/upcoming-events.md
   type: Content Page (detail)
@@ -13654,26 +13707,6 @@ records:
       guides: []
       policies: []
     layout: document
-- title: Upcoming Events
-  url: "/news-and-events/events-and-archive/upcoming-events/"
-  file: pages/news-and-events/events-and-archive/upcoming-events.md
-  type: Events (list)
-  collection: pages
-  has_image: false
-  image_status: none
-  missing_news_date: false
-  display_date:
-  alternate: false
-  alias_target:
-  properties:
-    title: Upcoming Events
-    permalink: "/news-and-events/events-and-archive/upcoming-events/"
-    layout: events
-    listing:
-      collection:
-      status: upcoming
-      role:
-    parent: "/news-and-events/"
 - title: User space support - CHERI Roadmap for Linux
   url: "/reference/linux-roadmap/goals/user-space.html"
   file: pages/reference/linux-roadmap/goals/user-space.html.md

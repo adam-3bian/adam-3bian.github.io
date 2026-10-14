@@ -9375,3 +9375,10 @@
   collection: pages
   navigation: []
   parent: /working-groups/
+- file: pages/search.md
+  url: /search/
+  title: Search the CHERI website
+  page_type: Content Page (detail)
+  collection: pages
+  navigation: []
+  parent: /

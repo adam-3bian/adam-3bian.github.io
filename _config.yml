@@ -63,6 +63,10 @@ collections:
     permalink: /reports/:name/
 defaults:
 - scope:
+    path: pages/search.md
+  values:
+    layout: search
+- scope:
     path: ''
   values:
     layout: document
