@@ -69,7 +69,7 @@ img { max-width: 100%; height: auto; object-position: center; }
 a { color: var(--teal); text-decoration-thickness: .08em; text-underline-offset: .2em; }
 a:hover { color: var(--teal-hover); }
 a:focus-visible, summary:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible,
-[tabindex="-1"]:focus-visible, button:focus-visible, img[role="button"]:focus-visible, figcaption[tabindex]:focus-visible, .table-scroll:focus-visible {
+[tabindex="-1"]:focus-visible, button:focus-visible, img[role="button"]:focus-visible, figcaption[tabindex]:focus-visible, .table-scroll:focus-visible, pre:focus-visible {
   outline: 3px solid var(--focus);
   outline-offset: 3px;
 }
@@ -345,10 +345,11 @@ dl.organisation-details, dl.record-properties { clear: both; margin-block: 1rem 
 .record-actions a { border: 0; padding: .4rem .5rem; background: transparent; font-size: .9375rem; text-decoration: underline; }
 
 
-/* Images and tables retain the full container. Text-only pages use a readable
-   measure; illustrated pages retain the established float and gallery flow. */
+/* Independent prose blocks keep their reading measure beside floats. Images,
+   galleries, code and tables retain the wider article container. */
 .article-content { display: flow-root; width: 100%; min-width: 0; overflow-wrap: break-word; }
-:is(.ordinary-page, .collection-detail) .article-content:not(:has(.image-left, .image-right)) > :is(p, ul, ol, dl, blockquote):not(.image-gallery, .cards, .link-grid):not(:has(img)) { max-width: var(--reading-width); }
+:is(.ordinary-page, .collection-detail) .article-content > :is(p, ul, ol, dl, blockquote):not(.image-gallery, .cards, .link-grid):not(:has(img)) { max-width: var(--reading-width); }
+:is(.ordinary-page, .collection-detail) .article-content > :is(p, ul, ol, blockquote):not(.image-gallery, .cards, .link-grid):not(:has(img)) { display: flow-root; }
 .article-content:empty { display: none; }
 .ordinary-page .article-content > :last-child { margin-bottom: 0; }
 .article-content :is(h1, h2, h3, h4, h5, h6, hr, section, .cards) { clear: both; }
@@ -426,8 +427,14 @@ body.image-viewer-open { position: fixed; inset-inline: 0; top: var(--image-view
 .image-viewer-status { margin: 0; text-align: center; font-size: var(--text-small); }
 /* No animation or smooth scrolling, including when reduced motion is requested. */
 .article-content :is(table, pre, iframe, video) { max-width: 100%; }
-.article-content pre { overflow-x: auto; }
-.article-content table { display: block; width: max-content; max-width: 100%; overflow-x: auto; border-collapse: collapse; }
+.article-content pre { overflow-x: auto; font-size: .9375rem; tab-size: 4; }
+.article-content pre code { font-size: 1em; }
+.article-content .table-scroll { clear: both; margin-block: 1.5rem; }
+.article-content table { display: table; width: max-content; min-width: 100%; max-width: none; border-collapse: collapse; }
+.table-of-contents { margin-block: 1.5rem; max-width: var(--reading-width); border-block: 1px solid var(--line); }
+.table-of-contents > summary { min-height: 44px; padding-block: .625rem; font-weight: 500; }
+.table-of-contents ul { list-style: none; padding: 0; margin: .5rem 0 1rem; }
+.table-of-contents a { display: inline-flex; align-items: center; min-height: 44px; }
 .article-content th, .article-content td { border: 1px solid var(--line); padding: .4rem .65rem; text-align: left; }
 
 .cards, .link-grid { display: grid; gap: 1.5rem; }

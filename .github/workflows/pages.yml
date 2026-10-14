@@ -64,6 +64,7 @@ jobs:
           node scripts/test_homepage.cjs
           node scripts/test_search.cjs
           node scripts/test_directories.cjs
+          node scripts/test_reading.cjs
           export SITE_DIR="$RUNNER_TEMP/baseurl-site/preview"
           export SITE_URL="http://127.0.0.1:4001/preview/"
           export REPORT_ROOT="reports/baseurl-tests"
@@ -73,6 +74,7 @@ jobs:
           node scripts/test_homepage.cjs
           node scripts/test_search.cjs
           node scripts/test_directories.cjs
+          node scripts/test_reading.cjs
       - name: Save base URL test results and screenshots
         if: always()
         uses: actions/upload-artifact@v4

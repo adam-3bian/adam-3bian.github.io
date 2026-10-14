@@ -165,6 +165,8 @@ objects.each do |object|
     next if value.nil?
     if key == 'version'
       errors << "Invalid version (use a quoted string): #{entry['file']}" unless value.is_a?(String) && !value.strip.empty?
+    elsif key == 'toc'
+      errors << "Invalid toc (use true, false or null): #{entry['file']}" unless [true, false].include?(value)
     elsif key == 'image_background'
       errors << "Invalid image_background (use dark or null): #{entry['file']}" unless value == 'dark'
     elsif key == 'document_date'
@@ -288,13 +290,27 @@ objects.each do |object|
 end
 
 images = {}
+contents = {}
 markdown = site.find_converter_instance(Jekyll::Converters::Markdown)
 objects.each do |object|
   entry = map_lookup[object.url]
   next unless entry
   # Render before extracting: also validate reference-style Markdown and images
   # inside semantic galleries/figures, while ignoring examples in code fences.
-  image_urls = markdown.convert(object.content).scan(/<img\b[^>]*?\bsrc\s*=\s*["']([^"']+)["']/i).flatten.map { |url| CGI.unescapeHTML(url) }
+  rendered_body = markdown.convert(object.content)
+  image_urls = rendered_body.scan(/<img\b[^>]*?\bsrc\s*=\s*["']([^"']+)["']/i).flatten.map { |url| CGI.unescapeHTML(url) }
+  reader_body = rendered_body.sub(/\A\s*<h([1-6])\b[^>]*>(.*?)<\/h\1>/m) do |heading|
+    CGI.unescapeHTML(Regexp.last_match(2).gsub(/<[^>]+>/, '')).strip == object.data['title'] ? '' : heading
+  end
+  shift = reader_body.match?(/<h1\b/) ? 1 : 0
+  headings = reader_body.scan(/<h([1-6])\b([^>]*)>(.*?)<\/h\1>/m).filter_map do |level, attributes, text|
+    id = attributes[/\bid="([^"]+)"/, 1]
+    {'id' => id, 'title' => CGI.unescapeHTML(text.gsub(/<[^>]+>/, '')).strip} if id && level.to_i + shift == 2
+  end
+  technical = object.is_a?(Jekyll::Document) && object.collection.label == 'guides' || object.url.start_with?('/build/technology/', '/reference/')
+  sufficiently_long = reader_body.gsub(/<[^>]+>/, '').split.size >= 500 && headings.size >= 4
+  enabled = object.data['toc'] == true || object.data['toc'] != false && technical && sufficiently_long
+  contents[object.url] = headings if enabled && headings.size >= 2
   image_urls << object.data['image_url'] if object.data['image_url']
   image_urls.each do |url|
     next unless url.start_with?('/')
@@ -388,6 +404,7 @@ relation_data = relationships.transform_values do |groups|
 end
 File.write(File.join(root, '_data/checks.yml'), YAML.dump(report))
 File.write(File.join(root, '_data/relationships.yml'), YAML.dump(relation_data))
+File.write(File.join(root, '_data/contents.json'), JSON.pretty_generate(contents) + "\n")
 FileUtils.mkdir_p(File.join(root, 'reports'))
 File.write(File.join(root, 'reports/index-navigation.json'), JSON.pretty_generate(index_pages) + "\n")
 public_urls = objects.reject { |object| object.data['alternate'] || object.data['published'] == false || object.data['layout'] == 'redirect' || settings.fetch('aliases', {}).key?(object.url) || settings.fetch('discovery_exclusions', []).include?(object.url) }.map(&:url).uniq.sort

@@ -1,5 +1,6 @@
 # Optional properties shared by all document and page schemas.
 common:
+  toc: null
   version: null
   document_date: null
   document_url: null

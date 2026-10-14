@@ -11,6 +11,11 @@ layout: default
     {% assign first_heading_text = first_heading | strip_html | strip | replace: '&amp;', '&' | replace: '&quot;', '"' | replace: '&#39;', "'" | replace: '&lt;', '<' | replace: '&gt;', '>' %}
     {% if first_heading_text == page.title %}{% assign reader_content = reader_content | remove_first: first_heading | remove_first: closing_heading %}{% endif %}
   {% endif %}
+  {% comment %}Book print views contain chapter h1s. Shift their body outline
+  consistently below the page title, retaining every label and anchor.{% endcomment %}
+  {% if reader_content contains '<h1' %}{% assign reader_content = reader_content | replace: '<h5', '<h6' | replace: '</h5>', '</h6>' | replace: '<h4', '<h5' | replace: '</h4>', '</h5>' | replace: '<h3', '<h4' | replace: '</h3>', '</h4>' | replace: '<h2', '<h3' | replace: '</h2>', '</h3>' | replace: '<h1', '<h2' | replace: '</h1>', '</h2>' %}{% endif %}
+  {% if reader_content contains '<table' %}{% assign reader_content = reader_content | replace: '<table', '<div class="table-scroll" role="region" aria-label="Scrollable table" tabindex="0"><table' | replace: '</table>', '</table></div>' %}{% endif %}
+  {% assign reader_content = reader_content | replace: '<pre', '<pre tabindex="0"' %}
   {% assign image_prefix = '/assets/' | relative_url | prepend: 'src="' %}
   {% assign href_prefix = '/' | relative_url | prepend: 'href="' %}
   {% comment %}Generated page links already use relative_url; protect their prefix before rewriting raw Markdown links.{% endcomment %}
@@ -36,6 +41,7 @@ layout: default
   </header>
   {% if current_kind == 'pages' %}{% include metadata.html %}{% else %}{% include metadata.html facts_only=true %}{% endif %}
   {% assign alias_target = site.data.viewer.aliases[page.url] %}{% if alias_target %}<aside class="notice">This is a retained alias. <a href="{{ alias_target | relative_url }}">Continue to its destination</a>.</aside>{% endif %}
+  {% include contents.html %}
   <section class="article-content" aria-label="Article content">{{ reader_content }}</section>
   {% include relationships.html %}
   {% if page.next_page_url %}<nav class="onward" aria-label="Next page"><a href="{% include href.html url=page.next_page_url %}">Next page</a></nav>{% endif %}

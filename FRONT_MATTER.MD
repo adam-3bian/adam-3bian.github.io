@@ -52,6 +52,7 @@ Do not repeat a front-matter property in the body unless it adds useful detail. 
 
 | Shared property | Type | Meaning and rendering |
 | --- | --- | --- |
+| `toc` | Boolean or `null` | `true` enables native contents links when at least two headings exist; `false` omits them. The default automatically offers contents on long guides and technical/reference articles with at least four section headings. Existing heading IDs and wording are retained. |
 | `version` | Quoted string or `null` | The document, product or record version; displayed as Version. Use `"1.01"`, not a YAML number. Versions of individual ISA extensions remain with their technical descriptions. |
 | `document_date` | Quoted `YYYY-MM` or `YYYY-MM-DD` string, or `null` | The source document's stated date; displayed as Document date. `"2024-08"` displays **August 2024**, preserving month precision. This is separate from publication, event and editorial update dates. |
 | `document_url` | HTTP(S) URL, existing root-relative asset path, or `null` | The official document, normally a PDF; displayed as a Read document resource link. Local files must exist. |

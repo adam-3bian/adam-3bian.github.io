@@ -1,0 +1,2 @@
+{% assign page_contents = site.data.contents[page.url] %}
+{% if page_contents.size > 0 %}<details class="table-of-contents"><summary>On this page</summary><nav aria-label="On this page"><ul role="list">{% for heading in page_contents %}<li><a href="#{{ heading.id | escape }}">{{ heading.title | escape }}</a></li>{% endfor %}</ul></nav></details>{% endif %}

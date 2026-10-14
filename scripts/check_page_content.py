@@ -102,6 +102,9 @@ def target_file(path):
 
 for file, doc in documents.items():
     route = '/' + str(file.relative_to(SITE))
+    mains = [n for n in doc.nodes if n.tag == 'main']
+    if len(mains) != 1 or len([n for n in doc.nodes if n.tag == 'h1' and n.ancestor(lambda a: a in mains)]) != 1:
+        errors.append(f'{route}: expected one main landmark and primary heading')
     footers = [n for n in doc.nodes if n.has_class('site-footer')]
     if len(footers) != 1 or footers[0].tag != 'footer':
         errors.append(f'{route}: missing shared semantic footer')
