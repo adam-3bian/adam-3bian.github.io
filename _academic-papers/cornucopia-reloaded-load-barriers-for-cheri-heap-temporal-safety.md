@@ -1,6 +1,5 @@
 ---
 title: 'Cornucopia Reloaded: Load Barriers for CHERI Heap Temporal Safety'
-image_url: /assets/academic-papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/placeholder.svg
 publication_url: https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/202404asplos-cornucopia-reloaded.pdf
 published_year: 2024
 authors:
@@ -16,10 +15,6 @@ authors:
 - simon-moore
 - peter-g-neumann
 - robert-watson
-related:
-  working-groups: []
-  hardware: []
-  software: []
 ---
 
 ### Cornucopia Reloaded: Load Barriers for CHERI Heap Temporal Safety

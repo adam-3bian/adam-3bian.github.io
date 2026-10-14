@@ -1,25 +1,12 @@
 ---
 title: Glossary
 permalink: /discover/resources/glossary/
-summary: null
-image_url: null
-updated_date: null
 parent: /discover/
 next_page_url: /discover/understand/faq/
 related:
   pages:
   - /discover/resources/specifications/
   - /discover/resources/digital-security-by-design-archive/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Glossary

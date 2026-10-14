@@ -1,11 +1,9 @@
 ---
 title: 'CheriBSD: established software at operating-system scale'
-image_url: /assets/case-studies/cheribsd/placeholder.svg
 summary: Protection of large existing software stacks
 related:
   organisations:
   - freebsd-foundation
-  hardware: []
   software:
   - cheribsd
   - freebsd

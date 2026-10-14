@@ -1,6 +1,5 @@
 ---
 title: It Is Time to Standardize Principles and Practices for Software Memory Safety
-image_url: /assets/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/placeholder.svg
 publication_url: https://doi.org/10.1145/3708553
 published_year: 2025
 authors:
@@ -25,10 +24,6 @@ authors:
 - murali-vijayaraghavan
 - hugo-vincent
 - konrad-witaszczyk
-related:
-  working-groups: []
-  hardware: []
-  software: []
 ---
 
 ### It Is Time to Standardize Principles and Practices for Software Memory Safety

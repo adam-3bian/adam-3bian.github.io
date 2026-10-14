@@ -1,26 +1,13 @@
 ---
 title: Morello History
 permalink: /discover/history/morello-history/
-summary: Morello brought CHERI to a high-performance Arm prototype platform and enabled large-scale evaluation
-  by industry, academia, and government.
-image_url: null
-updated_date: null
+summary: Morello brought CHERI to a high-performance Arm prototype platform and enabled large-scale evaluation by industry, academia, and government.
 parent: /discover/
 next_page_url: /discover/history/risc-v-and-embedded-development/
 related:
   pages:
   - /discover/history/early-capability-systems/
   - /discover/history/ukri-digital-security-by-design/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Morello History

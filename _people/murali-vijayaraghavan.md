@@ -5,8 +5,6 @@ website_url: https://cheri-alliance.org/events/speakers/murali-vijayaraghavan/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/vmurali15/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - google

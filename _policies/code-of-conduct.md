@@ -1,7 +1,5 @@
 ---
 title: Code of Conduct
-image_url: /assets/policies/code-of-conduct/placeholder.svg
-author: null
 version: '1.01'
 document_date: '2025-04-14'
 document_url: https://cheri-alliance.org/legal-code-of-conduct/

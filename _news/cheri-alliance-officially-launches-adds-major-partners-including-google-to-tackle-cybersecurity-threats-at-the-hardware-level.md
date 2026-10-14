@@ -2,9 +2,7 @@
 title: CHERI Alliance Officially Launches, Adds Major Partners including Google, to Tackle Cybersecurity Threats at the Hardware Level
 image_url: /assets/news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level/b40f17e0c2fc-cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus.png
 published_date: '2024-11-12'
-authors: []
 related:
-  working-groups: []
   organisations:
   - tccoe
   - critical-technologies
@@ -27,10 +25,8 @@ related:
   - dsit
   - dstl
   - ncsc
-  hardware: []
   software:
   - freebsd
-  academic-papers: []
 ---
 
 # CHERI Alliance Officially Launches, Adds Major Partners including Google, to Tackle Cybersecurity Threats at the Hardware Level

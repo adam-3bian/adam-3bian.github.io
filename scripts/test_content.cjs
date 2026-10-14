@@ -31,6 +31,8 @@ const routes = [
   '/academic-papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/',
   '/hardware/x730/',
   '/software/cheri-linux/',
+  '/software/cheribsd/',
+  '/hardware/cheriot/',
   '/working-groups/cheri-linux-working-group/',
   '/guides/install-a-toolchain/',
   '/discover/why-cheri/cheri-and-rust/',
@@ -70,6 +72,7 @@ const routes = [
           const footer = document.querySelector('.site-footer');
           if (!footer || footer.querySelector('div, span, details, summary')) errors.push('Footer semantics or hidden links');
           for (const link of document.querySelectorAll('.site-footer a, .collection-footer a, .link-grid a')) {
+            if (!link.getClientRects().length) continue;
             const rect = link.getBoundingClientRect();
             if (rect.height < 44 || rect.left < 0 || rect.right > innerWidth) errors.push('Footer or related link touch target/containment');
             if (link.closest('.link-grid')) {
@@ -107,10 +110,10 @@ const routes = [
             const labelRect = label.getBoundingClientRect();
             if (label.tagName !== 'DT') errors.push('Unpaired property label');
             if (innerWidth <= 640 && labelRect.bottom > rect.top + 1) errors.push('Mobile property does not stack');
-            if (innerWidth > 640 && Math.abs(labelRect.top - rect.top) > 1) errors.push('Desktop property row does not align');
+            if (innerWidth > 640 && !(innerWidth > 960 && value.closest('.metadata') && value.closest('.record-content.has-facts:not(.is-wide)')) && Math.abs(labelRect.top - rect.top) > 1) errors.push('Desktop property row does not align');
           }
-          for (const listing of document.querySelectorAll('.cards')) {
-            const cards = [...listing.querySelectorAll('.card')];
+          for (const listing of document.querySelectorAll('.cards, .record-list')) {
+            const cards = [...listing.querySelectorAll('.card, .record-link')];
             const destinations = cards.map(c => c.href);
             if (new Set(destinations).size !== destinations.length) errors.push('Repeated directory cards');
             for (const card of cards) {
@@ -131,17 +134,17 @@ const routes = [
         });
         assert.deepEqual(problems, [], `${width}px ${route}`);
         report.layoutChecks++;
-        const footerLinks = await page.locator('.footer-navigation a').evaluateAll(links => links.map(link => ({ title: link.textContent.trim(), href: link.href })));
+        const footerLinks = await page.locator('.footer-navigation a').evaluateAll(links => links.map(link => ({ title: link.getAttribute('aria-labelledby') ? document.getElementById(link.getAttribute('aria-labelledby')).textContent.trim() : link.textContent.trim(), href: link.href })));
         assert.deepEqual(footerLinks, footer.groups.flatMap(group => group.links).map(link => ({ title: link.title, href: url(link.url) })), 'Footer must preserve configured links');
         assert.deepEqual(await page.locator('.footer-group-label').allTextContents(), footer.groups.map(group => group.title));
-        assert.deepEqual(await page.locator('.footer-utilities a').evaluateAll(links => links.map(link => ({ title: link.textContent.trim(), href: link.href }))), footer.utilities.map(link => ({ title: link.title, href: url(link.url) })));
+        assert.deepEqual(await page.locator('.footer-utilities a').evaluateAll(links => links.map(link => ({ title: link.getAttribute('aria-labelledby') ? document.getElementById(link.getAttribute('aria-labelledby')).textContent.trim() : link.textContent.trim(), href: link.href }))), footer.utilities.map(link => ({ title: link.title, href: url(link.url) })));
         assert.equal(await page.locator('.footer-groups').evaluate(list => getComputedStyle(list).gridTemplateColumns.split(' ').length), width <= 640 ? 1 : width < 1024 ? 2 : 4, 'Footer column layout');
         report.footerChecks++;
         if (route === '/') await page.locator('.site-footer').screenshot({ path: path.join(reportDir, `footer-${width}.png`) });
         if (route === '/case-studies/') await page.locator('.relationships').screenshot({ path: path.join(reportDir, `related-links-${width}.png`) });
         if (['/case-studies/', '/reports/'].includes(route)) {
           const collection = route === '/case-studies/' ? 'case-studies' : 'reports';
-          const targets = await page.locator('.listing .card').evaluateAll(cards => cards.map(card => card.dataset.recordUrl).sort());
+          const targets = await page.locator('.listing [data-record-url]').evaluateAll(cards => cards.map(card => card.dataset.recordUrl).sort());
           assert.deepEqual(targets, preflight.records.filter(record => record.collection === collection && !record.alternate).map(record => record.url).sort(), 'Complete new collection directory');
           await page.screenshot({ path: path.join(reportDir, `${collection}-directory-${width}.png`), fullPage: true });
         }
@@ -151,7 +154,7 @@ const routes = [
           await page.screenshot({ path: path.join(reportDir, `event-details-${width}.png`), fullPage: true });
         }
         if (route === '/adopt/assurance-and-adoption/cheri-enabled-products/') {
-          const targets = await page.locator('.listing .card').evaluateAll(cards => cards.map(card => card.dataset.recordUrl).sort());
+          const targets = await page.locator('.listing [data-record-url]').evaluateAll(cards => cards.map(card => card.dataset.recordUrl).sort());
           const certified = preflight.records.filter(record => record.collection === 'hardware' && record.properties.certification === 'cheri-enabled' && !record.alternate);
           assert(certified.length > 0, 'No certified hardware source records');
           assert.deepEqual(targets, certified.map(record => record.url).sort(), 'Certified directory must follow hardware front matter');
@@ -167,10 +170,10 @@ const routes = [
           const expected = indexes[route];
           assert.equal(await page.locator('main h1').count(), 1, 'Index has one title');
           assert.equal(await page.locator('main h1').textContent(), expected.title);
-          assert.equal(await page.locator('main p').count(), 1, 'Index has one short introduction');
-          assert.equal(await page.locator('main p').textContent(), expected.summary);
-          assert.equal(await page.locator('main .metadata, main .relationships, main .inspector, main .cards, main img, main div, main span, main h2, main h3, main details').count(), 0, 'Extra content on an index');
-          const actual = await page.locator('main .index-navigation a').evaluateAll(links => links.map(link => ({ title: link.textContent.trim(), href: link.href })));
+          assert.equal(await page.locator('.index-intro > p').count(), 1, 'Index has one short introduction');
+          assert.equal(await page.locator('.index-intro > p').textContent(), expected.summary);
+          assert.equal(await page.locator('main .metadata, main .relationships, main .inspector, main .cards, main img, main div, main span, main h3, main details').count(), 0, 'Extra content on an index');
+          const actual = await page.locator('main .index-navigation a').evaluateAll(links => links.map(link => ({ title: link.getAttribute('aria-labelledby') ? document.getElementById(link.getAttribute('aria-labelledby')).textContent.trim() : link.textContent.trim(), href: link.href })));
           assert.deepEqual(actual, expected.links.map(link => ({ title: link.title, href: url(link.url) })), 'Index must match the mega-menu labels and order');
           assert.deepEqual(await page.locator('.index-group-label').allTextContents(), expected.groups.map(group => group.title));
           const listProblems = await page.locator('main .index-navigation').evaluate(nav => [...nav.querySelectorAll('a')].flatMap(link => {
@@ -187,14 +190,14 @@ const routes = [
           await page.screenshot({ path: path.join(reportDir, `index-${name}-${width}.png`), fullPage: true });
         }
         if (route === '/working-groups/') {
-          const targets = await page.locator('.listing .card').evaluateAll(cards => cards.map(c => c.dataset.recordUrl));
+          const targets = await page.locator('.listing [data-record-url]').evaluateAll(cards => cards.map(c => c.dataset.recordUrl));
           assert.deepEqual(targets.sort(), groups, 'Complete working-group directory');
           assert.equal(await page.locator('.listing img').count(), 0, 'Repeated generic group image');
           assert.equal(await page.locator('.listing .card-description').count(), groups.length);
           await page.screenshot({ path: path.join(reportDir, `working-groups-${width}.png`), fullPage: true });
         }
         if (route === '/alliance/leadership/governing-board/') {
-          const targets = await page.locator('.listing .card').evaluateAll(cards => cards.map(c => c.dataset.recordUrl));
+          const targets = await page.locator('.listing [data-record-url]').evaluateAll(cards => cards.map(c => c.dataset.recordUrl));
           assert.deepEqual(targets, board, 'Board cards must match the ordered roster');
           assert.equal(await page.locator('.listing img.image-portrait').count(), board.length);
           assert.equal(await page.locator('.image-gallery').count(), 0, 'Duplicated static board gallery');
@@ -212,7 +215,7 @@ const routes = [
         if (route === '/organisations/cheri-alliance/') {
           assert.equal(await page.locator('main h1').count(), 1, 'Duplicate Alliance page heading');
           assert.equal((await page.locator('.article-content').innerText()).includes('|'), false, 'Broken administrative table is visible');
-          assert.deepEqual(await page.locator('.resource-links a').allTextContents(), ['Visit website', 'LinkedIn']);
+          assert.deepEqual(await page.locator('.resource-links a').allTextContents(), ['Visit CHERI Alliance', 'LinkedIn']);
           assert.equal(await page.locator('.metadata').count(), 0, 'Link-only page still has a metadata container');
           await page.screenshot({ path: path.join(reportDir, `cheri-alliance-${width}.png`), fullPage: true });
         }
@@ -236,6 +239,56 @@ const routes = [
         }
       }
     }
+    // The dense directories are usable before and after progressive search.
+    for (const [route, query, collection] of [['/people/', 'Adam Finney', 'people'], ['/organisations/', '3bian', 'organisations']]) {
+      await page.goto(url(route));
+      const expected = preflight.records.filter(record => record.collection === collection && !record.alternate).length;
+      assert.equal(await page.locator('.record-link').count(), expected);
+      assert.equal(await page.locator('.directory-search').isVisible(), true);
+      await page.locator('#directory-query').fill(query);
+      assert(await page.locator('.record-link:visible').count() > 0);
+      assert(await page.locator('.record-link:visible').count() < expected);
+      assert.match(await page.locator('#listing-count').textContent(), new RegExp(`of ${expected} results`));
+      await page.locator('#directory-query').fill('no-such-record-cheri-1144');
+      assert.equal(await page.locator('.record-link:visible').count(), 0);
+      assert.equal(await page.locator('.directory-empty').isVisible(), true);
+      await page.locator('.directory-search button').click();
+      assert.equal(await page.locator('.record-link:visible').count(), expected);
+      assert.equal(await page.locator('#directory-query').evaluate(input => input === document.activeElement), true);
+    }
+    await page.goto(url('/software/cheribsd/'));
+    assert.deepEqual(await page.locator('.resource-links a').allTextContents(), ['Get started with CheriBSD', 'Build tools (cheribuild)', 'CheriBSD source', 'CheriBSD ports']);
+    assert.match(await page.locator('.record-intro .summary').innerText(), /CheriBSD adapts/);
+    assert.equal(await page.locator('.article-content').innerText().then(text => text.includes('CheriBSD adapts')), false, 'Introduction is displayed once');
+    const introTarget = await page.locator('.record-intro .summary a').first().getAttribute('href');
+    assert.equal(introTarget, new URL(url('/software/freebsd/')).pathname, 'Introduction links retain the configured base URL');
+    for (const width of [1440, 375]) {
+      await page.setViewportSize({width, height: 900});
+      await page.goto(url('/software/cheribsd/'));
+      await page.screenshot({path: path.join(reportDir, `cheribsd-details-${width}.png`)});
+      await page.goto(url('/academic-papers/'));
+      await page.screenshot({path: path.join(reportDir, `papers-directory-${width}.png`)});
+      await page.goto(url('/people/'));
+      const titlePositions = await page.locator('.record-list h3').evaluateAll(nodes => nodes.slice(0, 3).map(node => node.getBoundingClientRect().left));
+      assert(titlePositions.every(left => Math.abs(left - titlePositions[0]) < 1), 'Names align when a portrait is absent');
+      await page.screenshot({path: path.join(reportDir, `people-directory-${width}.png`)});
+    }
+
+    for (const width of [1440, 375]) {
+      await page.setViewportSize({ width, height: 900 });
+      await page.goto(url('/hardware/cheriot/'));
+      const targets = await page.locator('.relationships a').evaluateAll(links => links.map(link => link.href));
+      assert.equal(new Set(targets).size, targets.length, 'Related destinations are canonical and unique');
+      const initial = await page.locator('.relationships a:visible').count();
+      assert(initial <= 12 && initial < targets.length, 'Initial selection remains manageable');
+      await page.locator('.more-relationships > summary').click();
+      assert.equal(await page.locator('.relationships a:visible').count(), targets.length, 'Remaining relations are discoverable');
+      const problems = await page.locator('.relationships a').evaluateAll(links => links.flatMap(link => {
+        const rect = link.getBoundingClientRect();
+        return rect.height < 44 || rect.left < 0 || rect.right > innerWidth ? ['Expanded relation containment/touch target'] : [];
+      }));
+      assert.deepEqual(problems, []);
+    }
     // Review all verified source logos at their actual detail-page size.
     for (const record of preflight.records.filter(record => record.collection === 'organisations' && record.properties.image_source)) {
       await page.setViewportSize({ width: 1440, height: 900 });
@@ -245,7 +298,7 @@ const routes = [
       if (record.properties.image_background === 'dark') {
         assert.equal(await page.locator('.lead-image').getAttribute('data-image-background'), 'dark');
         await page.goto(url('/organisations/'));
-        const darkCard = page.locator(`.card[data-record-url="${record.url}"]`);
+        const darkCard = page.locator(`[data-record-url="${record.url}"]`);
         assert.equal(await darkCard.locator('img').getAttribute('data-image-background'), 'dark');
         await darkCard.screenshot({ path: path.join(reportDir, 'light-artwork-card.png') });
       }
@@ -303,7 +356,7 @@ const routes = [
     await page.goto(url('/checks/'));
     await page.locator('#record-collection').selectOption('reports');
     assert.equal(await page.locator('[data-audit-row]:visible').count(), 5);
-    await page.locator('#record-view').selectOption('placeholder');
+    await page.locator('#record-view').selectOption('missing-image');
     assert.equal(await page.locator('[data-audit-row]:visible').count(), 5, 'Report image coverage uses actual source-image status');
     await page.locator('#record-filter').fill('introduction');
     assert.equal(await page.locator('[data-audit-row]:visible').count(), 1);
@@ -324,7 +377,7 @@ const routes = [
       await plain.setViewportSize({ width, height: 900 });
       for (const route of cardRoutes) {
         await plain.goto(url(route));
-        const first = plain.locator('.card').first();
+        const first = plain.locator('.card, .record-link').first();
         const target = await first.getAttribute('data-record-url');
         const box = await first.boundingBox();
         // Click empty bottom-right padding, then verify keyboard activation too.
@@ -356,7 +409,7 @@ const routes = [
     }
     for (const [route, expected] of Object.entries(indexes)) {
       await plain.goto(url(route));
-      assert.deepEqual(await plain.locator('main .index-navigation a').allTextContents(), expected.links.map(link => link.title));
+      assert.deepEqual(await plain.locator('main .index-navigation a').evaluateAll(links => links.map(link => link.getAttribute('aria-labelledby') ? document.getElementById(link.getAttribute('aria-labelledby')).textContent : link.textContent.trim())), expected.links.map(link => link.title));
       const first = plain.locator('main .index-navigation a').first();
       await first.focus();
       await plain.keyboard.press('Enter');
@@ -364,6 +417,16 @@ const routes = [
       assert.equal(await plain.locator('main h1').count(), 1, 'Index link opens its destination without JS');
       report.noScriptIndexes++;
     }
+    for (const [route, collection] of [['/people/', 'people'], ['/organisations/', 'organisations']]) {
+      await plain.goto(url(route));
+      assert.equal(await plain.locator('.directory-search').isVisible(), false);
+      assert.equal(await plain.locator('.record-link:visible').count(), preflight.records.filter(record => record.collection === collection && !record.alternate).length);
+    }
+    await plain.goto(url('/hardware/cheriot/'));
+    const initialRelated = await plain.locator('.relationships a:visible').count();
+    await plain.locator('.more-relationships > summary').focus();
+    await plain.keyboard.press('Enter');
+    assert(await plain.locator('.relationships a:visible').count() > initialRelated, 'Native related disclosure works without JS');
     await plain.goto(url('/checks/'));
     assert.equal(await plain.locator('[data-audit-row]:visible').count(), preflight.record_count, 'Complete audit remains available without JS');
     const properties = plain.locator('.audit-properties').first();

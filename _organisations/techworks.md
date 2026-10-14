@@ -4,10 +4,6 @@ image_url: /assets/organisations/techworks/2bce694630e0-logo.png
 website_url: http://www.techworks.org.uk/
 membership_tier: community
 is_founding_member: true
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # TechWorks

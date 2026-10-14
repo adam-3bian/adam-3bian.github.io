@@ -2,24 +2,12 @@
 title: CHERI Blossoms Conference
 permalink: /news-and-events/events-and-archive/cheri-blossoms/
 summary: From research to real-world deployment, CHERI Blossoms brings the ecosystem together in Cambridge.
-image_url: null
-updated_date: null
 parent: /news-and-events/
 next_page_url: /news-and-events/events-and-archive/cheritech/
 related:
   pages:
   - /news-and-events/events-and-archive/upcoming-events/
   - /news/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # CHERI Blossoms Conference

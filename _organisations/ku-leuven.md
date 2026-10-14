@@ -3,11 +3,6 @@ title: KU Leuven
 image_url: /assets/organisations/ku-leuven/ed23aaf4cc00-logo.png
 website_url: https://www.kuleuven.be/
 membership_tier: community
-is_founding_member: null
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # KU Leuven

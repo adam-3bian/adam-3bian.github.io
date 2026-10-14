@@ -5,12 +5,9 @@ website_url: https://cheri-alliance.org/events/speakers/sam-cater/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/samalexcater/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - bt-group
-  working-groups: []
 ---
 
 # Sam Cater

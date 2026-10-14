@@ -5,7 +5,6 @@ published_date: '2025-11-17'
 authors:
 - adam-finney
 related:
-  working-groups: []
   organisations:
   - university-of-modena-and-reggio-emilia
   - the-university-of-manchester
@@ -20,9 +19,6 @@ related:
   - google
   - dstl
   - ukri
-  hardware: []
-  software: []
-  academic-papers: []
 ---
 
 # You just missed the CHERITech’25 Conference – but wait, you can still attend the virtual replay!

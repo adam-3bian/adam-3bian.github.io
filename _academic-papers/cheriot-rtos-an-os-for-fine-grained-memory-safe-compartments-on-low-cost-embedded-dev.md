@@ -1,6 +1,5 @@
 ---
 title: 'CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost Embedded Devices'
-image_url: /assets/academic-papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/placeholder.svg
 publication_url: https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/202510-sosp-cheriot-rtos.pdf
 published_year: 2025
 authors:
@@ -18,10 +17,8 @@ authors:
 - robert-watson
 - hongyan-xia
 related:
-  working-groups: []
   hardware:
   - cheriot
-  software: []
 ---
 
 ### CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost Embedded Devices

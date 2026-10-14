@@ -2,15 +2,10 @@
 title: UK Government report highlights the CHERI Alliance
 image_url: /assets/news/uk-government-report-highlights-the-cheri-alliance/d35a036dc982-hero.jpg
 published_date: '2024-05-16'
-authors: []
 related:
-  working-groups: []
   organisations:
   - cheri-alliance
   - dsit
-  hardware: []
-  software: []
-  academic-papers: []
 ---
 
 # UK Government report highlights the CHERI Alliance

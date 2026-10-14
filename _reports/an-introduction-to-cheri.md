@@ -1,6 +1,5 @@
 ---
 title: An Introduction to CHERI
-image_url: /assets/reports/an-introduction-to-cheri/placeholder.svg
 publication_url: https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-941.html
 published_year: 2019
 publication_type: technical-report
@@ -13,9 +12,6 @@ authors:
 related:
   organisations:
   - university-of-cambridge
-  case-studies: []
-  hardware: []
-  software: []
 ---
 
 # An Introduction to CHERI

@@ -5,12 +5,9 @@ website_url: https://cheri-alliance.org/events/speakers/haydn-povey/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/haydn-povey-373b14/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - sci-semiconductor
-  working-groups: []
 ---
 
 # Haydn Povey

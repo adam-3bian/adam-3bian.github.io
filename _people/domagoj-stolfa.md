@@ -5,13 +5,10 @@ website_url: https://cheri-alliance.org/events/speakers/domagoj-stolfa/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/domagoj-stolfa-4432a1347/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - capabilities-limited
   - university-of-cambridge
-  working-groups: []
 ---
 
 # Domagoj Stolfa

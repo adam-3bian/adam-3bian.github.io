@@ -1,22 +1,16 @@
-<ul class="cards" role="list">
+<ul class="cards" id="directory-list" role="list">
 {% for item in include.items %}
   {% assign card_image_height = 120 %}{% if item.collection == 'people' or include.role == 'board' %}{% assign card_image_height = 360 %}{% endif %}
-  {% assign card_summary = '' %}{% assign card_content = item.content | markdownify %}{% assign card_paragraphs = card_content | split: '<p>' %}
-  {% for paragraph in card_paragraphs offset: 1 %}{% assign candidate_summary = paragraph | split: '</p>' | first | strip_html | strip %}{% if candidate_summary != '' %}{% assign card_summary = candidate_summary | remove_first: 'Board role: ' %}{% break %}{% endif %}{% endfor %}
-  {% if include.role == 'board' %}{% assign board_properties = card_content | split: '<dd>' %}{% if board_properties.size > 1 %}{% assign card_summary = board_properties[1] | split: '</dd>' | first | strip_html | strip %}{% endif %}{% endif %}
-  {% assign card_summary = item.summary | default: card_summary %}
-  <li><a class="card" href="{{ item.url | relative_url }}" data-record-url="{{ item.url | escape }}">
+  {% assign card_title_id = 'record-title-' | append: forloop.index %}
+  {% capture card_summary %}{% include preview.html item=item %}{% endcapture %}{% assign card_summary = card_summary | strip %}
+  {% if include.role == 'board' %}{% assign card_content = item.content | markdownify %}{% assign board_properties = card_content | split: '<dd>' %}{% if board_properties.size > 1 %}{% assign card_summary = board_properties[1] | split: '</dd>' | first | strip_html | strip %}{% endif %}{% endif %}
+  <li><a class="card" href="{{ item.url | relative_url }}" data-record-url="{{ item.url | escape }}" aria-labelledby="{{ card_title_id }}">
     {% unless include.show_images == false or item.image_url contains '/placeholder.svg' %}{% if item.image_url %}<img class="{% if card_image_height == 360 %}image-portrait{% elsif item.collection == 'organisations' %}image-logo{% endif %}" src="{% include href.html url=item.image_url %}" alt="{{ item.title | escape }}"{% if item.image_background == 'dark' %} data-image-background="dark"{% endif %} width="360" height="{{ card_image_height }}" loading="lazy">{% endif %}{% endunless %}
     <hgroup class="card-text">
-      <h3>{{ item.title | escape }}</h3>
-      {% if include.role == 'board' %}{% assign affiliation_slug = item.related.organisations | first %}{% assign affiliation = site.organisations | where: 'slug', affiliation_slug | first %}{% if affiliation %}<p class="card-meta">{{ affiliation.title | escape }}</p>{% endif %}
-      {% elsif item.published_date %}<p class="card-meta"><time datetime="{{ item.published_date }}">{{ item.published_date | date: '%-d %B %Y' }}</time></p>
-      {% elsif item.start_datetime or item.start_date %}{% assign card_date = item.start_datetime | default: item.start_date %}<p class="card-meta"><time datetime="{{ card_date }}">{{ card_date | date: '%-d %B %Y' }}</time></p>
-      {% elsif item.membership_tier %}<p class="card-meta">{{ item.membership_tier | capitalize }} member{% if item.is_founding_member %} · Founder{% endif %}</p>
-      {% elsif item.is_speaker %}<p class="card-meta">Speaker</p>
-      {% elsif item.published_year %}<p class="card-meta">{{ item.published_year }}</p>{% endif %}
-      {% if card_summary != '' %}<p class="card-description">{{ card_summary | replace: '&amp;', '&' | replace: '&quot;', '"' | replace: '&#39;', "'" | replace: '&lt;', '<' | replace: '&gt;', '>' | truncate: 220 | escape }}</p>{% endif %}
-      <p class="card-action">{{ site.data.viewer.collections[item.collection].card_action | default: 'Read more' | escape }}</p>
+      <h3 id="{{ card_title_id }}">{{ item.title | escape }}</h3>
+      {% include record-meta.html item=item role=include.role %}
+      {% if card_summary != '' %}<p class="card-description">{{ card_summary | truncate: 220 | escape }}</p>{% endif %}
+      <p class="card-action">{{ site.data.viewer.collections[item.collection].card_action | default: 'Read more' | escape }} →</p>
     </hgroup>
   </a></li>
 {% endfor %}

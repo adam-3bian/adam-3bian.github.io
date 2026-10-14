@@ -1,0 +1,13 @@
+{%- assign preview = include.item.summary | default: '' -%}
+{%- if preview == '' -%}
+  {%- assign preview_content = include.item.content | markdownify -%}
+  {%- assign preview_paragraphs = preview_content | split: '<p>' -%}
+  {%- assign skip_citation = false -%}
+  {%- if include.item.collection == 'academic-papers' or include.item.collection == 'reports' -%}{%- assign skip_citation = true -%}{%- endif -%}
+  {%- for paragraph in preview_paragraphs offset: 1 -%}
+    {%- if skip_citation and forloop.first -%}{%- continue -%}{%- endif -%}
+    {%- assign candidate = paragraph | split: '</p>' | first | strip_html | strip -%}
+    {%- if candidate != '' -%}{%- assign preview = candidate | remove_first: 'Board role: ' -%}{%- break -%}{%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+{{- preview | replace: '&amp;', '&' | replace: '&quot;', '"' | replace: '&#39;', "'" | replace: '&lt;', '<' | replace: '&gt;', '>' -}}

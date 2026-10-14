@@ -1,6 +1,5 @@
 ---
 title: 'Formal Mechanised Semantics of CHERI C: Capabilities, Provenance, and Undefined Behaviour'
-image_url: /assets/academic-papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/placeholder.svg
 publication_url: https://www.cl.cam.ac.uk/users/pes20/asplos24spring-paper110.pdf
 published_year: 2024
 authors:
@@ -15,10 +14,6 @@ authors:
 - ian-stark
 - robert-watson
 - peter-sewell
-related:
-  working-groups: []
-  hardware: []
-  software: []
 ---
 
 ### Formal Mechanised Semantics of CHERI C: Capabilities, Provenance, and Undefined Behaviour

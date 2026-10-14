@@ -3,10 +3,6 @@ title: Adam Finney
 image_url: /assets/people/adam-finney/4600c140bf-portrait.jpg
 website_url: https://cheri-alliance.org/events/speakers/adam-finney/
 is_speaker: true
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - cheri-alliance

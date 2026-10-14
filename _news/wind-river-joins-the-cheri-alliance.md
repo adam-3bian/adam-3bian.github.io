@@ -2,15 +2,10 @@
 title: Wind River Joins the CHERI Alliance
 image_url: /assets/news/wind-river-joins-the-cheri-alliance/21bf3b105ad6-hero.png
 published_date: '2026-04-21'
-authors: []
 related:
-  working-groups: []
   organisations:
   - cheri-alliance
   - wind-river
-  hardware: []
-  software: []
-  academic-papers: []
 ---
 
 # Wind River Joins the CHERI Alliance

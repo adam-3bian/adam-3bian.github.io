@@ -1,26 +1,13 @@
 ---
 title: Commercialisation
 permalink: /discover/history/commercialisation/
-summary: CHERI commercialisation turns architecture and open-source evidence into licensable processors, silicon,
-  tools, platforms, services, and certified products.
-image_url: null
-updated_date: null
+summary: CHERI commercialisation turns architecture and open-source evidence into licensable processors, silicon, tools, platforms, services, and certified products.
 parent: /discover/
 next_page_url: /discover/history/formation-of-the-cheri-alliance/
 related:
   pages:
   - /discover/history/early-capability-systems/
   - /discover/history/risc-v-and-embedded-development/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Commercialisation

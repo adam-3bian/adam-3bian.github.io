@@ -2,24 +2,11 @@
 title: The Return on Security Investment
 permalink: /adopt/business-case/return-on-security-investment/
 summary: Turn stronger security into lasting business value.
-image_url: null
-updated_date: null
 parent: /adopt/
-next_page_url: null
 related:
   pages:
   - /adopt/business-case/the-business-case/
   - /adopt/business-case/adoption-costs-and-migration/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # The Return on Security Investment

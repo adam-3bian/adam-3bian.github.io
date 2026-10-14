@@ -2,20 +2,13 @@
 title: Hands-on Introduction to CHERI and CHERIoT
 image_url: /assets/events/cheri-blossoms-tutorial-2026/07d08258896f-hero.png
 website_url: https://cheri-alliance.org/events/cheri-blossoms-conference-2026/intro-to-cheri-and-cheriot/
-registration_url: null
 start_date: '2026-03-25'
-start_datetime: null
-end_date: null
-end_datetime: null
 location: University of Cambridge, Cambridge, UK
-speakers: []
 related:
-  working-groups: []
   organisations:
   - university-of-cambridge
   - codasip
   - lowrisc
-  academic-papers: []
 ---
 
 # Hands-on Introduction to CHERI and CHERIoT

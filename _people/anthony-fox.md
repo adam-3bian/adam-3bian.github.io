@@ -1,15 +1,5 @@
 ---
 title: Anthony Fox
-image_url: /assets/people/anthony-fox/placeholder.svg
-website_url: null
-is_speaker: null
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
-related:
-  organisations: []
-  working-groups: []
 ---
 
 # Anthony Fox

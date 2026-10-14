@@ -1,11 +1,6 @@
 ---
 title: Choosing a CHERI Development Platform
-image_url: /assets/guides/choose-a-platform/placeholder.svg
-repository_urls: []
-updated_date: null
-authors: []
 related:
-  working-groups: []
   hardware:
   - cheriot
   - morello

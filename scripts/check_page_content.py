@@ -124,26 +124,34 @@ for file, doc in documents.items():
             errors.append(f'{route}: footer utility links missing or incorrect')
         if any(n.tag in ('div', 'span', 'details', 'summary') and n.ancestor(lambda a: a is footer) for n in doc.nodes):
             errors.append(f'{route}: unnecessary wrapper or hidden footer links')
+    for region in [n for n in doc.nodes if n.has_class('relationships')]:
+        destinations = [n.attrs.get('href') for n in doc.nodes if n.tag == 'a' and n.ancestor(lambda a: a is region)]
+        if len(destinations) != len(set(destinations)):
+            errors.append(f'{route}: repeated related destination')
+    for nav in [n for n in doc.nodes if n.has_class('resource-links')]:
+        for link in [n for n in doc.nodes if n.tag == 'a' and n.ancestor(lambda a: a is nav)]:
+            if re.fullmatch(r'Repository(?: \d+)?', link.text()):
+                errors.append(f'{route}: numbered or unnamed repository')
     listings = [n for n in doc.nodes if n.has_class('listing')]
     if len(listings) > 1:
         errors.append(f'{route}: repeated collection directory')
     for listing in listings:
         stats['directories'] += 1
-        cards = [n for n in doc.nodes if n.has_class('card') and n.ancestor(lambda a: a is listing)]
+        cards = [n for n in doc.nodes if (n.has_class('card') or n.has_class('record-link')) and n.ancestor(lambda a: a is listing)]
         targets = [n.attrs.get('href') for n in cards]
         if len(targets) != len(set(targets)):
             errors.append(f'{route}: repeated card destination')
         for card in cards:
             stats['cards'] += 1
-            if card.tag != 'a' or card.parent.tag != 'li' or not card.parent.parent.has_class('cards'):
+            if card.tag != 'a' or card.parent.tag != 'li' or not (card.parent.parent.has_class('cards') or card.parent.parent.has_class('record-list')):
                 errors.append(f'{route}: card lacks native link/list semantics')
             if len([n for n in doc.nodes if n.tag == 'h3' and n.ancestor(lambda a: a is card)]) != 1:
                 errors.append(f'{route}: card lacks a single title')
-    for card_list in [n for n in doc.nodes if n.has_class('cards')]:
+    for card_list in [n for n in doc.nodes if (n.has_class('cards') or n.has_class('record-list'))]:
         if card_list.tag != 'ul' or any(n.tag != 'li' for n in card_list.children):
             errors.append(f'{route}: card directory lacks list semantics')
     for node in doc.nodes:
-        if node.has_class('card'):
+        if (node.has_class('card') or node.has_class('record-link')):
             if node.tag != 'a' or not node.attrs.get('href') or any(n.tag in ('a', 'button', 'input', 'select', 'textarea', 'details') and n.ancestor(lambda a: a is node) for n in doc.nodes):
                 errors.append(f'{route}: card is not a single native link')
         if node.has_class('link-grid'):
@@ -214,7 +222,7 @@ for file, doc in documents.items():
             elif parsed.fragment and node.tag == 'a' and target.suffix == '.html' and unquote(parsed.fragment) not in ids.get(target, set()):
                 errors.append(f'{route}: missing anchor {value}')
             stats['local_links' if node.tag == 'a' else 'local_images'] += 1
-            if node.tag == 'img' and not node.attrs.get('alt', '').strip():
+            if node.tag == 'img' and not node.attrs.get('alt', '').strip() and not node.ancestor(lambda a: a.has_class('record-link')):
                 errors.append(f'{route}: empty image description {value}')
         except ValueError as exc:
             errors.append(f'{route}: {exc}')
@@ -226,19 +234,19 @@ if len(audit_rows) != report['record_count']:
     errors.append('Audit record count differs from current preflight')
 if len([n for n in audit.nodes if n.has_class('front-matter-json')]) != report['record_count']:
     errors.append('Audit omits authoring properties')
-if len([n for n in audit.nodes if n.has_class('card')]) != report['collection_count']:
+if len([n for n in audit.nodes if (n.has_class('card') or n.has_class('record-link'))]) != report['collection_count']:
     errors.append('Audit collection coverage omits a collection')
 if any(n.attrs.get('data-primary-image') != str(n.attrs.get('data-image-status') == 'provided').lower() for n in audit_rows):
     errors.append('Audit treats a placeholder as a provided source image')
 for collection, route in [('case-studies', '/case-studies/'), ('reports', '/reports/')]:
     directory = documents[target_file(BASEURL + route)]
-    targets = [n.attrs.get('data-record-url') for n in directory.nodes if n.has_class('card')]
+    targets = [n.attrs.get('data-record-url') for n in directory.nodes if (n.has_class('card') or n.has_class('record-link'))]
     expected = [r['url'] for r in report['records'] if r['collection'] == collection and not r['alternate']]
     if sorted(targets) != sorted(expected):
         errors.append('Incomplete collection directory: ' + route)
 certified_route = '/adopt/assurance-and-adoption/cheri-enabled-products/'
 certified_directory = documents.get(target_file(BASEURL + certified_route))
-certified_targets = [n.attrs.get('data-record-url') for n in certified_directory.nodes if n.has_class('card')] if certified_directory else []
+certified_targets = [n.attrs.get('data-record-url') for n in certified_directory.nodes if (n.has_class('card') or n.has_class('record-link'))] if certified_directory else []
 expected_certified = [r['url'] for r in report['records'] if r['collection'] == 'hardware' and r.get('properties', {}).get('certification') == 'cheri-enabled' and not r['alternate']]
 if not expected_certified or sorted(certified_targets) != sorted(expected_certified):
     errors.append('Certified products directory does not match hardware certification properties')
@@ -258,14 +266,14 @@ for route, expected_index in index_pages.items():
         errors.append('Index title or introduction differs from its source: ' + route)
     nav = next((n for n in index.children if n.has_class('index-navigation')), None)
     links = [n for n in doc.nodes if n.tag == 'a' and n.ancestor(lambda a: a is nav)] if nav else []
-    actual = [{'title': n.text(), 'url': n.attrs.get('href')} for n in links]
+    actual = [{'title': next((label.text() for label in doc.nodes if n.attrs.get('aria-labelledby') and label.attrs.get('id') == n.attrs.get('aria-labelledby')), n.text()), 'url': n.attrs.get('href')} for n in links]
     expected = [{'title': link['title'], 'url': BASEURL + link['url'] if link['url'].startswith('/') else link['url']} for link in expected_index['links']]
     if actual != expected:
         errors.append('Index page labels, destinations or order differ from the mega-menu: ' + route)
     labels = [n.text() for n in doc.nodes if n.has_class('index-group-label')]
     if labels != [group['title'] for group in expected_index['groups']]:
         errors.append('Index groups differ from the mega-menu: ' + route)
-    if any(n.tag in ('div', 'span', 'img', 'h2', 'h3', 'details') and n.ancestor(lambda a: a is index) for n in doc.nodes):
+    if any(n.tag in ('div', 'span', 'img', 'h3', 'details') and n.ancestor(lambda a: a is index) for n in doc.nodes):
         errors.append('Extra markup or content in standard index: ' + route)
     stats['index_links'] += len(links)
 for record in report['records']:
@@ -297,13 +305,13 @@ for record in report['records']:
 # Directory targets must match the existing canonical records, not copied prose.
 groups_route = '/working-groups/'
 groups_doc = documents[target_file(BASEURL + groups_route)]
-group_targets = [n.attrs.get('data-record-url') for n in groups_doc.nodes if n.has_class('card')]
+group_targets = [n.attrs.get('data-record-url') for n in groups_doc.nodes if (n.has_class('card') or n.has_class('record-link'))]
 expected_groups = [r['url'] for r in report['records'] if r['collection'] == 'working-groups' and not r['alternate']]
 if sorted(group_targets) != sorted(expected_groups):
     errors.append('Working Groups directory omits or repeats canonical groups')
 board_route = '/alliance/leadership/governing-board/'
 board_doc = documents[target_file(BASEURL + board_route)]
-board_targets = [n.attrs.get('data-record-url') for n in board_doc.nodes if n.has_class('card')]
+board_targets = [n.attrs.get('data-record-url') for n in board_doc.nodes if (n.has_class('card') or n.has_class('record-link'))]
 board_slugs = re.findall(r'^- (.+)$', (ROOT / '_data/governing-board.yml').read_text(), re.M)
 if board_targets != ['/people/' + slug + '/' for slug in board_slugs]:
     errors.append('Governing Board directory differs from the ordered roster')

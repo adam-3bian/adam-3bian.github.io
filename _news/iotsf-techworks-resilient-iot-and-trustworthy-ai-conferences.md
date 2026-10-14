@@ -5,7 +5,6 @@ published_date: '2025-11-04'
 authors:
 - adam-finney
 related:
-  working-groups: []
   organisations:
   - university-of-cambridge
   - sci-semiconductor
@@ -16,8 +15,6 @@ related:
   - siemens
   hardware:
   - morello
-  software: []
-  academic-papers: []
 ---
 
 # IoTSF + TechWorks – Resilient IoT and Trustworthy AI Conferences

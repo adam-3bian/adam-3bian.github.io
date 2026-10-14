@@ -2,24 +2,12 @@
 title: Why CHERI?
 permalink: /discover/why-cheri/why-cheri/
 summary: Hardware-enforced memory protection for existing and future software.
-image_url: null
-updated_date: null
 parent: /discover/
 next_page_url: /discover/why-cheri/vulnerabilities-in-everyday-technology/
 related:
   pages:
   - /discover/why-cheri/why-existing-defences-are-not-enough/
   - /discover/why-cheri/approaches-to-memory-safety/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Why CHERI?

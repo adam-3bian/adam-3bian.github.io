@@ -1,13 +1,6 @@
 ---
 title: Tutorials & Training
-image_url: /assets/guides/tutorials-and-training/placeholder.svg
-repository_urls:
-- https://github.com/CTSRD-CHERI/cheribuild
-- https://github.com/CHERIoT-Platform/cheriot-rtos
-updated_date: null
-authors: []
 related:
-  working-groups: []
   hardware:
   - cheriot
   - morello
@@ -16,6 +9,11 @@ related:
   - cheri-linux
   - cheribsd
   - zephyr
+repositories:
+- label: Build tools (cheribuild)
+  url: https://github.com/CTSRD-CHERI/cheribuild
+- label: CHERIoT RTOS source
+  url: https://github.com/CHERIoT-Platform/cheriot-rtos
 ---
 
 # Tutorials & Training

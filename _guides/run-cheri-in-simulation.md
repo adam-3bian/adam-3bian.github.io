@@ -1,16 +1,13 @@
 ---
 title: Run CHERI in Simulation
-image_url: /assets/guides/run-cheri-in-simulation/placeholder.svg
-repository_urls:
-- https://github.com/CTSRD-CHERI/cheribuild
-updated_date: null
-authors: []
 related:
-  working-groups: []
   hardware:
   - cheriot
   software:
   - cheribsd
+repositories:
+- label: Build tools (cheribuild)
+  url: https://github.com/CTSRD-CHERI/cheribuild
 ---
 
 # Run CHERI in Simulation

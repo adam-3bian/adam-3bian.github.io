@@ -5,13 +5,10 @@ website_url: https://cheri-alliance.org/events/speakers/manu-ravishankar/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/manu-ravishankar-8a373734/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - pa-consulting
   - dsit
-  working-groups: []
 ---
 
 # Manu Ravishankar

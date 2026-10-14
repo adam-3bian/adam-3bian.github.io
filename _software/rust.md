@@ -1,12 +1,6 @@
 ---
 title: Rust
-image_url: /assets/software/rust/placeholder.svg
-website_url: null
-repository_urls: []
-type: null
-status: null
 related:
-  organisations: []
   hardware:
   - cheriot
   - morello

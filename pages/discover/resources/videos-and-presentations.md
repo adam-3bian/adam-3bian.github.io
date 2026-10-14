@@ -2,22 +2,8 @@
 title: Videos & Presentations
 permalink: /discover/resources/videos-and-presentations/
 summary: Material to learn about CHERI and related developments.
-image_url: null
-updated_date: null
 parent: /discover/
 next_page_url: /news-and-events/events-and-archive/upcoming-events/
-related:
-  pages: []
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Videos & Presentations

@@ -5,8 +5,6 @@ website_url: https://cheri-alliance.org/events/speakers/jonathan-woodruff/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/jonathan-woodruff-1a49502ab/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - capabilities-limited

@@ -300,7 +300,7 @@
   parent: /events/
 - file: _working-groups/certification-working-group.md
   url: /working-groups/certification-working-group/
-  title: ✅ Certification WG
+  title: Certification Working Group
   page_type: Group (detail)
   collection: working-groups
   navigation:
@@ -322,7 +322,7 @@
   parent: /working-groups/
 - file: _working-groups/cheri-c-cplusplus.md
   url: /working-groups/cheri-c-cplusplus/
-  title: ©️ CHERI C/C++ WG
+  title: CHERI C/C++ Working Group
   page_type: Group (detail)
   collection: working-groups
   navigation:
@@ -344,7 +344,7 @@
   parent: /working-groups/
 - file: _working-groups/cheri-for-sel4.md
   url: /working-groups/cheri-for-sel4/
-  title: 4️⃣ CHERI for seL4 WG
+  title: CHERI for seL4 Working Group
   page_type: Group (detail)
   collection: working-groups
   navigation:
@@ -366,7 +366,7 @@
   parent: /working-groups/
 - file: _working-groups/cheri-freertos.md
   url: /working-groups/cheri-freertos/
-  title: 🆓 CHERI FreeRTOS WG
+  title: CHERI FreeRTOS Working Group
   page_type: Group (detail)
   collection: working-groups
   navigation:
@@ -388,7 +388,7 @@
   parent: /working-groups/
 - file: _working-groups/cheri-in-soc.md
   url: /working-groups/cheri-in-soc/
-  title: ⬛️ CHERI in SoC WG
+  title: CHERI in SoC Working Group
   page_type: Group (detail)
   collection: working-groups
   navigation:
@@ -410,7 +410,7 @@
   parent: /working-groups/
 - file: _working-groups/cheri-linux-working-group.md
   url: /working-groups/cheri-linux-working-group/
-  title: 🐧 CHERI Linux WG
+  title: CHERI Linux Working Group
   page_type: Group (detail)
   collection: working-groups
   navigation:
@@ -432,7 +432,7 @@
   parent: /working-groups/
 - file: _working-groups/cheri-plus-safety.md
   url: /working-groups/cheri-plus-safety/
-  title: 📋 CHERI + Safety WG
+  title: CHERI + Safety Working Group
   page_type: Group (detail)
   collection: working-groups
   navigation:
@@ -454,7 +454,7 @@
   parent: /working-groups/
 - file: _working-groups/cheri-qemu.md
   url: /working-groups/cheri-qemu/
-  title: 🐦 CHERI QEMU WG
+  title: CHERI QEMU Working Group
   page_type: Group (detail)
   collection: working-groups
   navigation:
@@ -476,7 +476,7 @@
   parent: /working-groups/
 - file: _working-groups/cheri-virtual-machines.md
   url: /working-groups/cheri-virtual-machines/
-  title: 🤖 CHERI Virtual Machines WG
+  title: CHERI Virtual Machines Working Group
   page_type: Group (detail)
   collection: working-groups
   navigation:
@@ -498,7 +498,7 @@
   parent: /working-groups/
 - file: _working-groups/cheri-zephyr.md
   url: /working-groups/cheri-zephyr/
-  title: 🪁 CHERI Zephyr WG
+  title: CHERI Zephyr Working Group
   page_type: Group (detail)
   collection: working-groups
   navigation:
@@ -520,7 +520,7 @@
   parent: /working-groups/
 - file: _working-groups/marketing.md
   url: /working-groups/marketing/
-  title: 📣 Marketing WG
+  title: Marketing Working Group
   page_type: Group (detail)
   collection: working-groups
   navigation:
@@ -542,7 +542,7 @@
   parent: /working-groups/
 - file: _working-groups/mmu-less-systems.md
   url: /working-groups/mmu-less-systems/
-  title: 👮 MMU-less Systems WG
+  title: MMU-less Systems Working Group
   page_type: Group (detail)
   collection: working-groups
   navigation:
@@ -564,7 +564,7 @@
   parent: /working-groups/
 - file: _working-groups/os-support-and-portability.md
   url: /working-groups/os-support-and-portability/
-  title: 🛠️ OS Support & Portability WG
+  title: OS Support & Portability Working Group
   page_type: Group (detail)
   collection: working-groups
   navigation:
@@ -586,7 +586,7 @@
   parent: /working-groups/
 - file: _working-groups/promotion-and-ambassador-program.md
   url: /working-groups/promotion-and-ambassador-program/
-  title: 🪪 Promotion & Ambassador Program WG
+  title: Promotion & Ambassador Program Working Group
   page_type: Group (detail)
   collection: working-groups
   navigation:
@@ -608,7 +608,7 @@
   parent: /working-groups/
 - file: _working-groups/repository-management.md
   url: /working-groups/repository-management/
-  title: 💾 Repository Management WG
+  title: Repository Management Working Group
   page_type: Group (detail)
   collection: working-groups
   navigation:
@@ -630,7 +630,7 @@
   parent: /working-groups/
 - file: _working-groups/rust-plus-cheri.md
   url: /working-groups/rust-plus-cheri/
-  title: ⚙️ Rust + CHERI WG
+  title: Rust + CHERI Working Group
   page_type: Group (detail)
   collection: working-groups
   navigation:
@@ -8969,7 +8969,7 @@
   parent: /organisations/
 - file: _working-groups/cheri-research.md
   url: /working-groups/cheri-research/
-  title: CHERI Research WG
+  title: CHERI Research Working Group
   page_type: Working group (detail)
   collection: working-groups
   navigation: []

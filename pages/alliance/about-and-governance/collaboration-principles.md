@@ -2,24 +2,13 @@
 title: Collaboration Principles
 permalink: /alliance/about-and-governance/collaboration-principles/
 summary: Collaboration, openness, and shared effort are at the heart of CHERI adoption.
-image_url: null
-updated_date: null
 parent: /alliance/
 next_page_url: https://cheri-alliance.github.io/alliance/about-and-governance/technical-leadership/
 related:
   pages:
   - /alliance/about-and-governance/mission-and-role/
-  people: []
   organisations:
   - cheri-alliance
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Collaboration Principles

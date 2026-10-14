@@ -1,26 +1,13 @@
 ---
 title: Compartmentalisation
 permalink: /build/technology/compartmentalisation/
-summary: CHERI compartmentalisation limits each software component to explicitly granted memory and services,
-  containing faults inside smaller trust boundaries.
-image_url: null
-updated_date: null
+summary: CHERI compartmentalisation limits each software component to explicitly granted memory and services, containing faults inside smaller trust boundaries.
 parent: /build/
 next_page_url: /build/technology/hybrid-systems/
 related:
   pages:
   - /build/technology/capabilities/
   - /build/technology/temporal-memory-safety/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Compartmentalisation

@@ -3,25 +3,11 @@ title: CHERI Enabled Products
 layout: list
 listing:
   collection: hardware
-  status: null
-  role: null
 certification: cheri-enabled
 permalink: /adopt/assurance-and-adoption/cheri-enabled-products/
 summary: The CHERI Alliance's certification program. How products are reviewed, certified, and published.
 parent: /adopt/
 next_page_url: /adopt/assurance-and-adoption/about-cheri-enabled/
-related:
-  pages: []
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # CHERI Enabled Products

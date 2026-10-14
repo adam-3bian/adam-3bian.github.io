@@ -1,13 +1,6 @@
 ---
 title: FPGA Platforms
-image_url: /assets/hardware/fpga-platforms/placeholder.svg
-website_url: null
-repository_urls: []
-type: null
-architecture: null
-status: null
 related:
-  organisations: []
   hardware:
   - cheriot
   - sonata

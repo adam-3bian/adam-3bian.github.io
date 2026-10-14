@@ -1,13 +1,5 @@
 ---
 title: Port Existing Software
-image_url: /assets/guides/port-existing-software/placeholder.svg
-repository_urls: []
-updated_date: null
-authors: []
-related:
-  working-groups: []
-  hardware: []
-  software: []
 ---
 
 # Port Existing Software

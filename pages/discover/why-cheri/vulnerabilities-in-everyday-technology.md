@@ -1,24 +1,10 @@
 ---
 title: Vulnerabilities in Everyday Technology
 permalink: /discover/why-cheri/vulnerabilities-in-everyday-technology/
-summary: A memory mistake in a connected device can expose private information, change how the device behaves,
-  or provide a way into a wider network.
+summary: A memory mistake in a connected device can expose private information, change how the device behaves, or provide a way into a wider network.
 image_url: /assets/shared/source-assets/b68c7fc17613-cve.webp
-updated_date: null
 parent: /discover/
 next_page_url: /discover/why-cheri/why-existing-defences-are-not-enough/
-related:
-  pages: []
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Vulnerabilities in Everyday Technology

@@ -3,21 +3,8 @@ title: The CHERI Enabled Programme
 permalink: /adopt/assurance-and-adoption/about-cheri-enabled/
 summary: Independent review. Transparent evidence. Greater confidence.
 image_url: /assets/shared/cheri-enabled/be89fa8f9b81-cheri-enabled.webp
-updated_date: null
 parent: /adopt/
 next_page_url: /adopt/assurance-and-adoption/cheri-enabled-products/
-related:
-  pages: []
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # The CHERI Enabled Programme

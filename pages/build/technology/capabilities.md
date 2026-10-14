@@ -1,24 +1,9 @@
 ---
 title: Capabilities
 permalink: /build/technology/capabilities/
-summary: A CHERI capability is a hardware-protected reference that combines where an object is with the authority
-  to access it.
-image_url: null
-updated_date: null
+summary: A CHERI capability is a hardware-protected reference that combines where an object is with the authority to access it.
 parent: /build/
 next_page_url: /build/technology/tags-and-validity/
-related:
-  pages: []
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Capabilities

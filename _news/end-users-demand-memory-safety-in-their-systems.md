@@ -2,9 +2,7 @@
 title: End-users demand memory safety in their systems
 image_url: /assets/news/end-users-demand-memory-safety-in-their-systems/bd37f9598c14-hero.png
 published_date: '2024-09-25'
-authors: []
 related:
-  working-groups: []
   organisations:
   - university-of-cambridge
   - sci-semiconductor
@@ -13,9 +11,6 @@ related:
   - codasip
   - lowrisc
   - ncsc
-  hardware: []
-  software: []
-  academic-papers: []
 ---
 
 # End-users demand memory safety in their systems

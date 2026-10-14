@@ -5,12 +5,9 @@ website_url: https://cheri-alliance.org/events/speakers/andy-moore/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/andrew-moore-7bb19b161
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - risc-v-international
-  working-groups: []
 ---
 
 # Andy Moore

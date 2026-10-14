@@ -5,12 +5,9 @@ website_url: https://cheri-alliance.org/events/speakers/louis-emile-ploix/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/louis-emile-ploix-3206a6293
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - lowrisc
-  working-groups: []
 ---
 
 # Louis-Emile Ploix

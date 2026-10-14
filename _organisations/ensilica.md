@@ -3,11 +3,6 @@ title: EnSilica
 image_url: /assets/organisations/ensilica/e9bd1058262d-logo.png
 website_url: https://www.ensilica.com/
 membership_tier: full
-is_founding_member: null
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # EnSilica

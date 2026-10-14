@@ -2,22 +2,8 @@
 title: The History of CHERI
 permalink: /discover/understand/cheri-history/
 summary: From capability systems research to a growing ecosystem for memory-safe computing.
-image_url: null
-updated_date: null
 parent: /discover/
 next_page_url: /organisations/cheri-alliance/
-related:
-  pages: []
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # The History of CHERI

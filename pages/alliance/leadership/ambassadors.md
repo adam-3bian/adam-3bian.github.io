@@ -1,26 +1,14 @@
 ---
 title: Ambassadors
 permalink: /alliance/leadership/ambassadors/
-summary: CHERI Alliance Ambassadors help explain CHERI, create resources, support events, and introduce new
-  communities to the ecosystem..
-image_url: null
-updated_date: null
+summary: CHERI Alliance Ambassadors help explain CHERI, create resources, support events, and introduce new communities to the ecosystem..
 parent: /alliance/
 next_page_url: /alliance/membership/why-join/
 related:
   pages:
   - /alliance/leadership/governing-board/
-  people: []
   organisations:
   - cheri-alliance
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Ambassadors

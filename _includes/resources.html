@@ -1,0 +1,22 @@
+{% capture resources %}
+{% assign resource_primary = true %}
+{% for key in site.data.viewer.url_fields %}
+  {% assign resource_url = page[key] %}
+  {% if resource_url %}
+    {% if key == 'registration_url' and page.collection == 'events' %}{% assign last_event_day = page.end_datetime | default: page.end_date | default: page.start_datetime | default: page.start_date | slice: 0, 10 %}{% assign current_day = site.time | date: '%Y-%m-%d' %}{% if last_event_day < current_day %}{% continue %}{% endif %}{% endif %}
+    {% assign resource_label = site.data.viewer.resource_labels[key] %}
+    {% assign is_source_profile = false %}
+    {% if key == 'website_url' %}
+      {% assign resource_label = page.website_label | default: site.data.viewer.collections[page.collection].website_action %}
+      {% assign resource_subject = page.title | remove: ' Certification Record' %}
+      {% assign resource_label = resource_label | replace: '{title}', resource_subject %}
+      {% if resource_url contains 'cheri-alliance.org/events/speakers/' %}{% if page.website_label == nil %}{% assign resource_label = 'View original speaker profile' %}{% endif %}{% assign is_source_profile = true %}{% endif %}
+    {% elsif key == 'publication_url' %}{% assign resource_label = site.data.viewer.collections[page.collection].publication_action | default: resource_label %}{% endif %}
+    <li><a{% if resource_primary and is_source_profile == false %} class="resource-primary"{% endif %} href="{% include href.html url=resource_url %}">{{ resource_label | escape }}</a></li>
+    {% assign resource_primary = false %}
+  {% endif %}
+{% endfor %}
+{% for repository in page.repositories %}<li><a href="{% include href.html url=repository.url %}">{{ repository.label | escape }}</a></li>{% endfor %}
+{% for social in page.social %}{% assign social_key = social[0] %}{% assign social_url = social[1] %}{% if social_url %}<li><a href="{% include href.html url=social_url %}">{{ site.data.viewer.resource_labels[social_key] | escape }}</a></li>{% endif %}{% endfor %}
+{% endcapture %}{% assign resources = resources | strip %}
+{% if resources != '' %}<nav class="resource-links" aria-label="Resources"><ul role="list">{{ resources }}</ul></nav>{% endif %}

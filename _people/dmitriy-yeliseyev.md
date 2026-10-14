@@ -5,12 +5,9 @@ website_url: https://cheri-alliance.org/events/speakers/dmitriy-yeliseyev/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/dmitriy-yeliseyev-6582844/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - wind-river
-  working-groups: []
 ---
 
 # Dmitriy Yeliseyev

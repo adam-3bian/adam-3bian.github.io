@@ -3,11 +3,6 @@ title: Axiomise Ltd
 image_url: /assets/organisations/axiomise-ltd/fda655ce8b21-logo.png
 website_url: https://www.axiomise.com/
 membership_tier: full
-is_founding_member: null
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # Axiomise Ltd

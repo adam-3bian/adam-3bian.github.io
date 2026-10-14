@@ -1,14 +1,21 @@
 {% assign relation_groups = site.data.relationships[page.url] %}
 {% if relation_groups.size > 0 %}
+{% assign remaining_relations = 0 %}
+{% for group in relation_groups %}{% if forloop.index > 3 %}{% assign remaining_relations = remaining_relations | plus: group.targets.size %}{% elsif group.targets.size > 4 %}{% assign extra = group.targets.size | minus: 4 %}{% assign remaining_relations = remaining_relations | plus: extra %}{% endif %}{% endfor %}
 <section class="relationships" aria-labelledby="relationships">
-  <h2 id="relationships">Related content</h2>
-  {% for group in relation_groups %}
-  <h3>{{ group.label | escape }}</h3>
-  <ul class="link-grid" role="list">
-    {% for target in group.targets %}
-    <li><a href="{{ target.url | relative_url }}">{{ target.title | escape }}</a></li>
-    {% endfor %}
+  <h2 id="relationships">Explore next</h2>
+  <ul class="relationship-groups" role="list">
+    {% for group in relation_groups limit: 3 %}{% include relationship-group.html group=group offset=0 limit=4 %}{% endfor %}
   </ul>
-  {% endfor %}
+  {% if remaining_relations > 0 %}
+  <details class="more-relationships">
+    <summary>More related resources ({{ remaining_relations }})</summary>
+    <ul class="relationship-groups" role="list">
+      {% for group in relation_groups %}
+        {% if forloop.index > 3 %}{% include relationship-group.html group=group offset=0 limit=999 %}{% elsif group.targets.size > 4 %}{% include relationship-group.html group=group offset=4 limit=999 more=true %}{% endif %}
+      {% endfor %}
+    </ul>
+  </details>
+  {% endif %}
 </section>
 {% endif %}

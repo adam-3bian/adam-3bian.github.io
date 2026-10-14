@@ -5,13 +5,10 @@ published_date: '2025-12-01'
 authors:
 - adam-finney
 related:
-  working-groups: []
   organisations:
   - sci-semiconductor
   hardware:
   - cheriot
-  software: []
-  academic-papers: []
 ---
 
 # CHERI or CHERIoT? The Answer Is Not What You Think

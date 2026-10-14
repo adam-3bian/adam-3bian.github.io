@@ -2,23 +2,11 @@
 title: Mission & Role
 permalink: /alliance/about-and-governance/mission-and-role/
 summary: We accelerates CHERI adoption through collaboration, interoperability, and ecosystem growth.
-image_url: null
-updated_date: null
 parent: /alliance/
 next_page_url: /alliance/about-and-governance/governance/
 related:
-  pages: []
-  people: []
   organisations:
   - cheri-alliance
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Mission & Role

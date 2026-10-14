@@ -1,6 +1,5 @@
 ---
 title: Deprivileging Low-Level GPU Drivers Efficiently with User-Space Processes and CHERI Compartments
-image_url: /assets/academic-papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/placeholder.svg
 publication_url: https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/202510-ccs-gpu-driver-compartments.pdf
 published_year: 2025
 authors:
@@ -10,10 +9,6 @@ authors:
 - matthew-naylor
 - robert-watson
 - timothy-m-jones
-related:
-  working-groups: []
-  hardware: []
-  software: []
 ---
 
 ### Deprivileging Low-Level GPU Drivers Efficiently with User-Space Processes and CHERI Compartments

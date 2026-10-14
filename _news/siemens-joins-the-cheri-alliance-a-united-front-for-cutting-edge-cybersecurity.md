@@ -2,15 +2,10 @@
 title: 'Siemens Joins the CHERI Alliance: a United Front for Cutting-Edge Cybersecurity'
 image_url: /assets/news/siemens-joins-the-cheri-alliance-a-united-front-for-cutting-edge-cybersecurity/caba10383daf-hero.png
 published_date: '2025-09-08'
-authors: []
 related:
-  working-groups: []
   organisations:
   - cheri-alliance
   - siemens
-  hardware: []
-  software: []
-  academic-papers: []
 ---
 
 # Siemens Joins the CHERI Alliance: a United Front for Cutting-Edge Cybersecurity

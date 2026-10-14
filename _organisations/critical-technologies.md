@@ -4,10 +4,6 @@ image_url: /assets/organisations/critical-technologies/logo-transparent.svg
 website_url: https://www.critical.com/
 membership_tier: full
 is_founding_member: true
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # Critical Technologies Inc.

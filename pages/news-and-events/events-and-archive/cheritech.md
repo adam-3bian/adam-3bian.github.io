@@ -2,8 +2,6 @@
 title: CHERITech Conference
 permalink: /news-and-events/events-and-archive/cheritech/
 summary: The technical conference for the people building the future of CHERI-enabled systems.
-image_url: null
-updated_date: null
 parent: /news-and-events/
 next_page_url: /news-and-events/people-and-opportunities/speakers/
 related:
@@ -11,16 +9,6 @@ related:
   - /news-and-events/events-and-archive/upcoming-events/
   - /news-and-events/events-and-archive/cheri-blossoms/
   - /news/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # CHERITech Conference

@@ -1,15 +1,5 @@
 ---
 title: Brett F. Gutstein
-image_url: /assets/people/brett-f-gutstein/placeholder.svg
-website_url: null
-is_speaker: null
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
-related:
-  organisations: []
-  working-groups: []
 ---
 
 # Brett F. Gutstein

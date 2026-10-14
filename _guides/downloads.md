@@ -1,17 +1,6 @@
 ---
 title: Downloads
-image_url: /assets/guides/downloads/placeholder.svg
-repository_urls:
-- https://github.com/CTSRD-CHERI/cheribuild
-- https://github.com/CTSRD-CHERI/cheribsd
-- https://github.com/CTSRD-CHERI/cheribsd-ports
-- https://github.com/CHERIoT-Platform/cheriot-rtos
-- https://github.com/CHERIoT-Platform/cheriot-sail
-- https://github.com/microsoft/cheriot-ibex
-updated_date: null
-authors: []
 related:
-  working-groups: []
   hardware:
   - cheriot-ibex
   - morello
@@ -24,6 +13,19 @@ related:
   - freebsd
   - zephyr
   - llvm-and-clang
+repositories:
+- label: Build tools (cheribuild)
+  url: https://github.com/CTSRD-CHERI/cheribuild
+- label: CheriBSD source
+  url: https://github.com/CTSRD-CHERI/cheribsd
+- label: CheriBSD ports
+  url: https://github.com/CTSRD-CHERI/cheribsd-ports
+- label: CHERIoT RTOS source
+  url: https://github.com/CHERIoT-Platform/cheriot-rtos
+- label: CHERIoT Sail model
+  url: https://github.com/CHERIoT-Platform/cheriot-sail
+- label: CHERIoT Ibex source
+  url: https://github.com/microsoft/cheriot-ibex
 ---
 
 # Downloads

@@ -2,23 +2,11 @@
 title: CHERI and Rust - Technical Overview
 permalink: /build/technology/cheri-and-rust-technical/
 summary: Why it is not CHERI vs Rust, but CHERI and Rust.
-image_url: null
-updated_date: null
 parent: /build/
 next_page_url: /guides/building-secure-software/
 related:
   pages:
   - /discover/understand/cheri-and-existing-software/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # CHERI and Rust - Technical Overview

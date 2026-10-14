@@ -3,14 +3,9 @@ title: Thomas Nyman
 image_url: /assets/people/thomas-nyman/e1347087a71c-portrait.png
 website_url: https://cheri-alliance.org/events/speakers/thomas-nyman/
 is_speaker: true
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - ericsson
-  working-groups: []
 ---
 
 # Thomas Nyman

@@ -5,13 +5,10 @@ website_url: https://cheri-alliance.org/events/speakers/merve-gulmez/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/merve-g%C3%BClmez/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - ericsson
   - ku-leuven
-  working-groups: []
 ---
 
 # Merve Gülmez

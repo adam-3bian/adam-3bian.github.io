@@ -3,11 +3,6 @@ title: National Taiwan University
 image_url: /assets/organisations/national-taiwan-university/logo-transparent.svg
 website_url: https://sslab.csie.ntu.edu.tw/
 membership_tier: community
-is_founding_member: null
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # National Taiwan University

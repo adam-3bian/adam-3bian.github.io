@@ -4,10 +4,6 @@ image_url: /assets/organisations/chevin-technology/6322b1596ac2-logo.png
 website_url: http://www.chevintechnology.com/
 membership_tier: full
 is_founding_member: true
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # Chevin Technology

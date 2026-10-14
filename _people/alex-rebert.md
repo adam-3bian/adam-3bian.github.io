@@ -5,12 +5,9 @@ website_url: https://cheri-alliance.org/events/speakers/alex-rebert/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/alexandre-rebert/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - google
-  working-groups: []
 ---
 
 # Alex Rebert

@@ -1,12 +1,6 @@
 ---
 title: Porting Status
-image_url: /assets/software/porting-status/placeholder.svg
-website_url: null
-repository_urls: []
-type: null
-status: null
 related:
-  organisations: []
   hardware:
   - cheriot
   software:

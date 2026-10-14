@@ -1,8 +1,7 @@
 ---
-title: 👮 MMU-less Systems WG
+title: MMU-less Systems Working Group
 image_url: /assets/working-groups/mmu-less-systems/bb889a4dc09e-cheri-alliance-working-groups.png
 website_url: https://cheri-alliance.org/who-we-are/working-groups/mmu-less-systems/
-repository_urls: []
 leads:
 - murali-vijayaraghavan
 related:
@@ -10,10 +9,9 @@ related:
   - google
   hardware:
   - cheriot
-  software: []
 ---
 
-# 👮 MMU-less Systems WG
+# MMU-less Systems Working Group
 
 Examines CHERI protection and compartmentalisation for systems that share an address space and do not depend on a conventional memory-management unit.
 

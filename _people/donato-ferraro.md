@@ -5,13 +5,10 @@ website_url: https://cheri-alliance.org/events/speakers/donato-ferraro/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/donato-ferraro-2718b317a/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - minerva-systems
   - university-of-modena-and-reggio-emilia
-  working-groups: []
 ---
 
 # Donato Ferraro

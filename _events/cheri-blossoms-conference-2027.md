@@ -2,18 +2,12 @@
 title: CHERI Blossoms Conference 2027
 image_url: /assets/events/cheri-blossoms-conference-2027/18a3bce9f22d-hero.png
 website_url: https://cheri-alliance.org/events/cheri-blossoms-conference-2027/
-registration_url: null
 start_date: '2027-04-21'
-start_datetime: null
 end_date: '2027-04-23'
-end_datetime: null
 location: University of Cambridge, Cambridge, UK
-speakers: []
 related:
-  working-groups: []
   organisations:
   - university-of-cambridge
-  academic-papers: []
 ---
 
 # CHERI Blossoms Conference 2027

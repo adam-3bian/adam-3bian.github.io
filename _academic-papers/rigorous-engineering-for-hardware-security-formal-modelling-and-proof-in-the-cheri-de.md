@@ -1,6 +1,5 @@
 ---
 title: 'Rigorous Engineering for Hardware Security: Formal Modelling and Proof in the CHERI Design and Implementation Process'
-image_url: /assets/academic-papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/placeholder.svg
 publication_url: https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/202005oakland-cheri-formal.pdf
 published_year: 2020
 authors:
@@ -17,10 +16,6 @@ authors:
 - ian-stark
 - robert-watson
 - peter-sewell
-related:
-  working-groups: []
-  hardware: []
-  software: []
 ---
 
 ### Rigorous Engineering for Hardware Security: Formal Modelling and Proof in the CHERI Design and Implementation Process

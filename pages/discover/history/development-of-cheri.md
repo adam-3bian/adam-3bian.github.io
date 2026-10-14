@@ -1,26 +1,13 @@
 ---
 title: Development of CHERI
 permalink: /discover/history/development-of-cheri/
-summary: CHERI developed through repeated hardware and software prototypes, moving from a clean-slate security
-  question to multiple working ecosystems.
-image_url: null
-updated_date: null
+summary: CHERI developed through repeated hardware and software prototypes, moving from a clean-slate security question to multiple working ecosystems.
 parent: /discover/
 next_page_url: /discover/history/darpa-programmes/
 related:
   pages:
   - /discover/history/early-capability-systems/
   - /discover/history/cambridge-and-sri/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Development of CHERI

@@ -1,25 +1,12 @@
 ---
 title: Tags & Validity
 permalink: /build/technology/tags-and-validity/
-summary: Protected tags let hardware distinguish authentic capabilities from ordinary data, even when both
-  contain the same address bits.
-image_url: null
-updated_date: null
+summary: Protected tags let hardware distinguish authentic capabilities from ordinary data, even when both contain the same address bits.
 parent: /build/
 next_page_url: /build/technology/bounds/
 related:
   pages:
   - /build/technology/capabilities/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Tags & Validity

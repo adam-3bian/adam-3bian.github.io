@@ -2,11 +2,8 @@
 title: CHERI Blossoms Conference 2026
 image_url: /assets/events/cheri-blossoms-conference-2026/81eb02fb9092-hero.png
 website_url: https://cheri-alliance.org/events/cheri-blossoms-conference-2026/
-registration_url: null
 start_date: '2026-03-25'
-start_datetime: null
 end_date: '2026-03-27'
-end_datetime: null
 location: University of Cambridge, Cambridge, UK
 speakers:
 - alex-rebert
@@ -79,7 +76,6 @@ related:
   - ncsc
   - rptu
   - ukri
-  academic-papers: []
 ---
 
 # CHERI Blossoms Conference 2026

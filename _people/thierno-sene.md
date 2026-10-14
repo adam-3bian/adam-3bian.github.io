@@ -1,12 +1,6 @@
 ---
 title: Thierno Sene
-image_url: /assets/people/thierno-sene/placeholder.svg
 website_url: https://cheri-alliance.org/who-we-are/working-groups/cheri-safety/
-is_speaker: null
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - codasip

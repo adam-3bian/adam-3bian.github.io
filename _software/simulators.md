@@ -1,12 +1,6 @@
 ---
 title: Simulators
-image_url: /assets/software/simulators/placeholder.svg
-website_url: null
-repository_urls: []
-type: null
-status: null
 related:
-  organisations: []
   hardware:
   - fpga-platforms
   - cheriot

@@ -1,11 +1,9 @@
 ---
 title: Beyond Software Patching
 image_url: /assets/news/beyond-software-patching/bb1ce7a6a7-cheri-logo.png
-published_date: null
 authors:
 - jim-wallace
 related:
-  working-groups: []
   organisations:
   - university-of-cambridge
   - sci-semiconductor
@@ -19,7 +17,6 @@ related:
   - cheri-linux
   - zephyr
   - rust
-  academic-papers: []
 ---
 
 # Beyond Software Patching

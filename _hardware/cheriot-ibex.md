@@ -1,12 +1,8 @@
 ---
 title: CHERIoT Ibex Certification Record
 image_url: /assets/hardware/cheriot-ibex/c53c4c1378ba-cheri-enabled-2026.webp
-website_url: null
-repository_urls:
-- https://github.com/microsoft/cheriot-ibex/
 type: processor
 architecture: RISC-V (32-bit)
-status: null
 related:
   organisations:
   - rptu
@@ -18,7 +14,10 @@ related:
 version: '1.0'
 certification: cheri-enabled
 certification_url: https://cheri-alliance.org/cheri-enabled/cheriot/
-summary: "An open-source 32-bit RISC-V microcontroller processor IP implementing the CHERIoT 1.0 instruction-set architecture. It is designed for constrained embedded systems that require compartmentalisation and memory protection."
+summary: An open-source 32-bit RISC-V microcontroller processor IP implementing the CHERIoT 1.0 instruction-set architecture. It is designed for constrained embedded systems that require compartmentalisation and memory protection.
+repositories:
+- label: CHERIoT Ibex source
+  url: https://github.com/microsoft/cheriot-ibex/
 ---
 
 # CHERIoT Ibex Certification Record

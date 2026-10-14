@@ -1,26 +1,13 @@
 ---
 title: UKRI Digital Security by Design
 permalink: /discover/history/ukri-digital-security-by-design/
-summary: Digital Security by Design connected CHERI hardware, software, demonstrators, skills, and adoption
-  work across a major UK programme.
-image_url: null
-updated_date: null
+summary: Digital Security by Design connected CHERI hardware, software, demonstrators, skills, and adoption work across a major UK programme.
 parent: /discover/
 next_page_url: /discover/history/morello-history/
 related:
   pages:
   - /discover/history/early-capability-systems/
   - /discover/history/darpa-programmes/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # UKRI Digital Security by Design

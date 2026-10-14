@@ -2,9 +2,7 @@
 title: Combatting the AI threat with CHERI
 image_url: /assets/news/combatting-the-ai-threat-with-cheri/13658ea5e276-hero.png
 published_date: '2026-06-17'
-authors: []
 related:
-  working-groups: []
   organisations:
   - cheri-alliance
   - um-labs
@@ -14,7 +12,6 @@ related:
   - cheri-linux
   - cheribsd
   - freebsd
-  academic-papers: []
 ---
 
 # Combatting the AI threat with CHERI

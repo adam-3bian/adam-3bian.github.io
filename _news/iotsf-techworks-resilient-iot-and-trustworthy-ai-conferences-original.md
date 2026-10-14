@@ -1,11 +1,9 @@
 ---
 title: IoTSF + TechWorks – Resilient IoT and Trustworthy AI Conferences
 image_url: /assets/news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences-original/dca93f847af6-cheriot-1-0-specification-released.png
-published_date: null
 authors:
 - adam-finney
 related:
-  working-groups: []
   organisations:
   - university-of-cambridge
   - sci-semiconductor
@@ -16,8 +14,6 @@ related:
   - siemens
   hardware:
   - morello
-  software: []
-  academic-papers: []
 ---
 
 # IoTSF + TechWorks – Resilient IoT and Trustworthy AI Conferences

@@ -5,8 +5,6 @@ website_url: https://cheri-alliance.org/events/speakers/jennifer-jackson/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/jennifer-jackson-a3127b1b5/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - university-of-birmingham

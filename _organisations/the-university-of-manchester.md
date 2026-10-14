@@ -3,11 +3,6 @@ title: The University of Manchester
 image_url: /assets/organisations/the-university-of-manchester/03379609c33b-logo.png
 website_url: https://www.manchester.ac.uk/
 membership_tier: community
-is_founding_member: null
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # The University of Manchester

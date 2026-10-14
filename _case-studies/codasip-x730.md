@@ -1,7 +1,7 @@
 ---
 title: CHERI in commercial processor products
 image_url: /assets/case-studies/codasip-x730/e8738d5ec725-codasip-prime-kit.webp
-summary: Commercially application-class CHERI processor
+summary: A commercial application-class CHERI processor
 related:
   organisations:
   - codasip
@@ -10,7 +10,6 @@ related:
   software:
   - cheribsd
   - cheri-linux
-  reports: []
 ---
 
 # CHERI in commercial processor products

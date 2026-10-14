@@ -1,6 +1,5 @@
 ---
 title: 'The CHERI Capability Model: Revisiting RISC in an Age of Risk'
-image_url: /assets/academic-papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/placeholder.svg
 publication_url: https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/201406-isca2014-cheri.pdf
 published_year: 2014
 authors:
@@ -14,10 +13,6 @@ authors:
 - peter-g-neumann
 - robert-m-norton
 - michael-roe
-related:
-  working-groups: []
-  hardware: []
-  software: []
 ---
 
 ### The CHERI Capability Model: Revisiting RISC in an Age of Risk

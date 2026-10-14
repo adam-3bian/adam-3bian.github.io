@@ -1,7 +1,5 @@
 ---
 title: Privacy
-image_url: /assets/policies/privacy/placeholder.svg
-author: null
 ---
 
 # Privacy

@@ -1,10 +1,6 @@
 ---
 title: CHERI Linux
-image_url: /assets/software/cheri-linux/placeholder.svg
 website_url: https://cheri-linux.org/
-repository_urls: []
-type: null
-status: null
 related:
   organisations:
   - cheri-alliance

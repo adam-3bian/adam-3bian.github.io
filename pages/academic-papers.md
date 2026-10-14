@@ -4,8 +4,6 @@ permalink: /academic-papers/
 layout: list
 listing:
   collection: academic-papers
-  status: null
-  role: null
 ---
 
 # Papers

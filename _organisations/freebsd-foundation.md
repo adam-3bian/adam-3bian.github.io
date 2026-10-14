@@ -4,10 +4,6 @@ image_url: /assets/organisations/freebsd-foundation/dd73c0888388-logo.png
 website_url: https://freebsdfoundation.org/
 membership_tier: full
 is_founding_member: true
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # FreeBSD Foundation

@@ -2,19 +2,14 @@
 title: Webinar - CHERI & CRA Compliance
 image_url: /assets/events/webinar-cheri-cra-compliance/d4c0d2560e6f-eu-flag.jpg
 website_url: https://cheri-alliance.org/events/webinar-cheri-cra-compliance/
-registration_url: null
-start_date: null
 start_datetime: '2026-09-09T14:00:00+01:00'
-end_date: null
 end_datetime: '2026-09-09T14:30:00+01:00'
 location: Online via Zoom
 speakers:
 - tariq-kurd
 related:
-  working-groups: []
   organisations:
   - codasip
-  academic-papers: []
 ---
 
 # Webinar - CHERI & CRA Compliance

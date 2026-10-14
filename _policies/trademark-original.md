@@ -1,7 +1,5 @@
 ---
 title: Using the CHERI Alliance Trademark
-image_url: /assets/policies/trademark-original/placeholder.svg
-author: null
 ---
 
 # Using the CHERI Alliance Trademark

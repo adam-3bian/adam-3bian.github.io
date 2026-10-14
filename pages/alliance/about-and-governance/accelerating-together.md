@@ -3,24 +3,13 @@ title: Accelerating CHERI together
 permalink: /alliance/about-and-governance/accelerating-together/
 summary: Three organisations, one shared goal. Accelerating CHERI adoption.
 image_url: /assets/shared/source-assets/9540283f8f64-ca-crc-tch.png
-updated_date: null
 parent: /alliance/
 next_page_url: /alliance/about-and-governance/governance/
 related:
-  pages: []
-  people: []
   organisations:
   - cheri-alliance
   - university-of-cambridge
   - the-capable-hub
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Accelerating CHERI together

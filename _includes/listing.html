@@ -8,13 +8,30 @@
 {% elsif list_collection == 'events' %}{% capture event_sort_rows %}{% for event_item in list_items %}{% assign event_key = event_item.start_datetime | default: event_item.start_date | default: '9999-12-31' %}{{ event_key }}~{{ event_item.url }}|{% endfor %}{% endcapture %}{% assign event_sort_rows = event_sort_rows | split: '|' | sort %}{% assign sorted_events = '' | split: '' %}{% for row in event_sort_rows %}{% assign event_url = row | split: '~' | last %}{% assign sorted_event = list_items | where: 'url', event_url | first %}{% if sorted_event %}{% assign sorted_events = sorted_events | push: sorted_event %}{% endif %}{% endfor %}{% assign list_items = sorted_events %}
 {% elsif list_role != 'board' %}{% assign list_items = list_items | sort_natural: 'title' %}{% endif %}
 {% if list_status == 'past' %}{% assign list_items = list_items | reverse %}{% endif %}
+{% if list_collection == 'events' and list_status == nil %}
+  {% assign future_events = '' | split: '' %}{% assign archived_events = '' | split: '' %}{% assign today_key = site.time | date: '%Y-%m-%d' %}
+  {% for event_item in list_items %}{% assign final_day = event_item.end_datetime | default: event_item.end_date | default: event_item.start_datetime | default: event_item.start_date | slice: 0, 10 %}{% if final_day >= today_key %}{% assign future_events = future_events | push: event_item %}{% else %}{% assign archived_events = archived_events | push: event_item %}{% endif %}{% endfor %}
+  {% assign archived_events = archived_events | reverse %}{% assign list_items = future_events | concat: archived_events %}
+{% endif %}
 {% assign collection_label = site.data.viewer.collections[list_collection].label | default: list_collection %}
 {% assign listing_heading = 'Browse ' | append: collection_label | downcase | capitalize %}
 {% case list_role %}{% when 'board' %}{% assign listing_heading = 'Board members' %}{% when 'member' %}{% assign listing_heading = 'Member directory' %}{% when 'speaker' %}{% assign listing_heading = 'Speaker directory' %}{% endcase %}
 {% if list_status == 'past' %}{% assign listing_heading = 'Event archive' %}{% elsif list_status == 'upcoming' %}{% assign listing_heading = 'Scheduled events' %}{% elsif list_collection == 'working-groups' %}{% assign listing_heading = 'Working group directory' %}{% endif %}
 {% if page.certification == 'cheri-enabled' %}{% assign listing_heading = 'Certified products' %}{% endif %}
 {% assign show_card_images = true %}{% if list_collection == 'working-groups' %}{% assign show_card_images = false %}{% endif %}
+{% assign listing_view = site.data.viewer.collections[list_collection].listing_view | default: 'cards' %}
+{% if list_role == 'board' %}{% assign listing_view = 'cards' %}{% endif %}
 <section class="listing" aria-labelledby="listing-heading" data-listing="{{ list_collection | escape }}" data-role="{{ list_role | escape }}" data-status="{{ list_status | escape }}">
-  <header class="section-heading"><h2 id="listing-heading">{{ listing_heading | escape }}</h2><p>{{ list_items.size }} {% if list_items.size == 1 %}result{% else %}results{% endif %}</p></header>
-  {% if list_items.size > 0 %}{% include cards.html items=list_items role=list_role show_images=show_card_images %}{% else %}<p class="notice">No {{ collection_label | downcase | escape }} to display yet.</p>{% endif %}
+  <header class="section-heading"><h2 id="listing-heading" class="visually-hidden">{{ listing_heading | escape }}</h2><p id="listing-count" aria-live="polite" aria-atomic="true">{{ list_items.size }} {% if list_items.size == 1 %}result{% else %}results{% endif %}</p></header>
+  {% if site.data.viewer.collections[list_collection].searchable and list_items.size > 20 %}
+  <form class="directory-search" role="search" aria-label="Search {{ collection_label | downcase | escape }}" hidden>
+    <label for="directory-query">Search {{ collection_label | downcase | escape }}</label>
+    <input id="directory-query" name="q" type="search" autocomplete="off" aria-controls="directory-list" placeholder="Search by name or keyword">
+    <button type="reset">Clear</button>
+  </form>
+  {% endif %}
+  {% if list_items.size > 0 %}
+    {% if listing_view == 'list' %}{% include record-list.html items=list_items role=list_role show_images=show_card_images %}{% else %}{% include cards.html items=list_items role=list_role show_images=show_card_images %}{% endif %}
+    <p class="directory-empty notice" hidden>No matching results. Try another name or clear the search.</p>
+  {% else %}<p class="notice">No {{ collection_label | downcase | escape }} to display yet.</p>{% endif %}
 </section>

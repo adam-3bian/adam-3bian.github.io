@@ -5,12 +5,9 @@ website_url: https://cheri-alliance.org/events/speakers/alastair-beresford/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/alastair-beresford/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - university-of-cambridge
-  working-groups: []
 ---
 
 # Alastair Beresford

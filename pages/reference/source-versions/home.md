@@ -2,25 +2,14 @@
 title: Software runs our world. It deserves stronger security foundations.
 permalink: /reference/source-versions/home/
 summary: Enabled by CHERI.
-image_url: null
-updated_date: null
 parent: /
 next_page_url: /discover/why-cheri/vulnerabilities-in-everyday-technology/
 related:
   pages:
   - /discover/understand/how-does-cheri-work/
   - /news-and-events/events-and-archive/upcoming-events/
-  people: []
   organisations:
   - cheri-alliance
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Software runs our world. It deserves stronger security foundations.

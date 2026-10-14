@@ -3,11 +3,6 @@ title: Durham University
 image_url: /assets/organisations/durham-university/e89df94fa360-logo.png
 website_url: https://www.durham.ac.uk/departments/academic/computer-science/
 membership_tier: community
-is_founding_member: null
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # Durham University

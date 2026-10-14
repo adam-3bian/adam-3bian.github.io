@@ -1,4 +1,4 @@
-# Optional properties shared by all document and page schemas.
+# Allowed fields; only keys in required are mandatory. Omit unused values.
 common:
   version: null
   document_date: null
@@ -12,8 +12,19 @@ optional:
   hardware:
     certification: null
     certification_url: null
+    website_label: null
   listing:
     certification: null
+  people:
+    website_label: null
+  organisations:
+    website_label: null
+  events:
+    website_label: null
+  software:
+    website_label: null
+  working-groups:
+    website_label: null
 redirect:
   title: null
   permalink: null
@@ -80,7 +91,6 @@ hardware:
   title: null
   image_url: null
   website_url: null
-  repository_urls: []
   type: null
   architecture: null
   status: null
@@ -88,41 +98,50 @@ hardware:
     organisations: []
     hardware: []
     software: []
+  repositories:
+  - label: null
+    url: null
 software:
   title: null
   image_url: null
   website_url: null
-  repository_urls: []
   type: null
   status: null
   related:
     organisations: []
     hardware: []
     software: []
+  repositories:
+  - label: null
+    url: null
 working-groups:
   title: null
   image_url: null
   website_url: null
-  repository_urls: []
   leads: []
   related:
     organisations: []
     hardware: []
     software: []
+  repositories:
+  - label: null
+    url: null
 guides:
   title: null
   image_url: null
-  repository_urls: []
   updated_date: null
   authors: []
   related:
     working-groups: []
     hardware: []
     software: []
+  repositories:
+  - label: null
+    url: null
 policies:
   title: null
   image_url: null
-  author: null
+  authors: []
 case-studies:
   title: null
   image_url: null
@@ -177,3 +196,47 @@ listing:
     collection: null
     status: null
     role: null
+required:
+  people:
+  - title
+  news:
+  - title
+  organisations:
+  - title
+  events:
+  - title
+  academic-papers:
+  - title
+  hardware:
+  - title
+  software:
+  - title
+  working-groups:
+  - title
+  guides:
+  - title
+  policies:
+  - title
+  case-studies:
+  - title
+  reports:
+  - title
+  - publication_url
+  - publication_type
+  - publisher
+  content:
+  - title
+  - permalink
+  index:
+  - title
+  - permalink
+  - layout
+  - summary
+  listing:
+  - title
+  - permalink
+  - layout
+  redirect:
+  - title
+  - permalink
+  - layout

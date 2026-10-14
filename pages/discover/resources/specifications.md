@@ -1,23 +1,8 @@
 ---
 title: Specifications
 permalink: /discover/resources/specifications/
-summary: null
-image_url: null
-updated_date: null
 parent: /discover/
 next_page_url: /discover/resources/documentation-and-guides/
-related:
-  pages: []
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Specifications

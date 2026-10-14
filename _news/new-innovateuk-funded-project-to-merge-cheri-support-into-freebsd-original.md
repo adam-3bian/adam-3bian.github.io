@@ -1,11 +1,9 @@
 ---
 title: New InnovateUK-funded project to merge CHERI support into FreeBSD
 image_url: /assets/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd-original/5a6300ace656-cheri.png
-published_date: null
 authors:
 - brooks-davis
 related:
-  working-groups: []
   organisations:
   - university-of-cambridge
   - capabilities-limited
@@ -21,7 +19,6 @@ related:
   - cheri-linux
   - cheribsd
   - freebsd
-  academic-papers: []
 ---
 
 # New InnovateUK-funded project to merge CHERI support into FreeBSD

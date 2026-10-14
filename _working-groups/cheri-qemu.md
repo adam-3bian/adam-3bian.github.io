@@ -1,19 +1,18 @@
 ---
-title: 🐦 CHERI QEMU WG
+title: CHERI QEMU Working Group
 image_url: /assets/working-groups/cheri-qemu/bb889a4dc09e-cheri-alliance-working-groups.png
 website_url: https://cheri-alliance.org/who-we-are/working-groups/cheri-qemu/
-repository_urls:
-- https://github.com/CHERI-Alliance/qemu
 leads:
 - alfredo-mazzinghi
 related:
   organisations:
   - capabilities-limited
-  hardware: []
-  software: []
+repositories:
+- label: CHERI QEMU source
+  url: https://github.com/CHERI-Alliance/qemu
 ---
 
-# 🐦 CHERI QEMU WG
+# CHERI QEMU Working Group
 
 Coordinates CHERI support in QEMU so developers have maintained, testable emulation aligned with current architectures and platforms.
 

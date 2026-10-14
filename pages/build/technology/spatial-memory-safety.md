@@ -2,24 +2,12 @@
 title: Spatial Memory Safety
 permalink: /build/technology/spatial-memory-safety/
 summary: Spatial memory safety stops code accessing before or beyond the memory object authorised by a capability.
-image_url: null
-updated_date: null
 parent: /build/
 next_page_url: /build/technology/temporal-memory-safety/
 related:
   pages:
   - /build/technology/capabilities/
   - /build/technology/sealing/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Spatial Memory Safety

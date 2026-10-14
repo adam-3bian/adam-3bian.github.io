@@ -1,0 +1,12 @@
+{% if include.role == 'board' or include.item.collection == 'people' %}
+  {% capture affiliations %}{% for affiliation_slug in include.item.related.organisations %}{% assign affiliation = site.organisations | where: 'slug', affiliation_slug | first %}{% if affiliation %}{% unless forloop.first %} · {% endunless %}{{ affiliation.title | escape }}{% endif %}{% endfor %}{% endcapture %}{% assign affiliations = affiliations | strip %}
+  {% if affiliations != '' %}<p class="card-meta">{{ affiliations }}{% if include.item.is_speaker %} · Speaker{% endif %}</p>{% elsif include.item.is_speaker %}<p class="card-meta">Speaker</p>{% endif %}
+{% elsif include.item.published_date %}<p class="card-meta"><time datetime="{{ include.item.published_date }}">{{ include.item.published_date | date: '%-d %B %Y' }}</time></p>
+{% elsif include.item.start_datetime or include.item.start_date %}
+  {% assign card_date = include.item.start_datetime | default: include.item.start_date %}
+  {% assign card_end = include.item.end_datetime | default: include.item.end_date | default: card_date | slice: 0, 10 %}{% assign today = site.time | date: '%Y-%m-%d' %}
+  <p class="card-meta"><time datetime="{{ card_date }}">{{ card_date | date: '%-d %B %Y' }}</time>{% if card_end < today %} · Past event{% else %} · Upcoming{% endif %}{% if include.item.location %} · {{ include.item.location | escape }}{% endif %}</p>
+{% elsif include.item.membership_tier %}<p class="card-meta">{{ include.item.membership_tier | capitalize }} member{% if include.item.is_founding_member %} · Founding member{% endif %}</p>
+{% elsif include.item.published_year or include.item.publisher %}<p class="card-meta">{{ include.item.published_year }}{% if include.item.published_year and include.item.publisher %} · {% endif %}{{ include.item.publisher | escape }}</p>
+{% elsif include.item.type or include.item.architecture %}<p class="card-meta">{{ include.item.type | capitalize | escape }}{% if include.item.type and include.item.architecture %} · {% endif %}{{ include.item.architecture | escape }}</p>
+{% endif %}

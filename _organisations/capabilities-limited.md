@@ -4,10 +4,6 @@ image_url: /assets/organisations/capabilities-limited/0c30741ff5ce-logo.png
 website_url: https://www.capabilitieslimited.co.uk/
 membership_tier: full
 is_founding_member: true
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # Capabilities Limited

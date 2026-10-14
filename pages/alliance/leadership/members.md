@@ -4,8 +4,6 @@ permalink: /alliance/leadership/members/
 layout: list
 listing:
   collection: organisations
-  status: null
-  role: null
 ---
 
 # Members

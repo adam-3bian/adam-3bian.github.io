@@ -2,24 +2,12 @@
 title: Critical Infrastructure & Resilience
 permalink: /adopt/policy/critical-infrastructure-and-resilience/
 summary: CHERI can support infrastructure resilience by preventing or limiting attacks.
-image_url: null
-updated_date: null
 parent: /adopt/
 next_page_url: /adopt/policy/cybersecurity-regulation/
 related:
   pages:
   - /adopt/policy/government-guidance/
   - /adopt/business-case/the-business-case/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Critical Infrastructure & Resilience

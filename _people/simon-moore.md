@@ -5,12 +5,9 @@ website_url: https://cheri-alliance.org/events/speakers/simon-moore/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/simon-moore-409767/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - university-of-cambridge
-  working-groups: []
 ---
 
 # Simon Moore

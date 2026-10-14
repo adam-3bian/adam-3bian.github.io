@@ -5,13 +5,10 @@ website_url: https://cheri-alliance.org/events/speakers/gavin-ferris/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/gavin-ferris-b416922b4/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - cheri-alliance
   - lowrisc
-  working-groups: []
 ---
 
 # Gavin Ferris

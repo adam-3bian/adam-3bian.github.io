@@ -1,7 +1,5 @@
 ---
 title: Policy Briefings
-image_url: /assets/policies/policy-briefings/placeholder.svg
-author: null
 ---
 
 # Policy Briefings

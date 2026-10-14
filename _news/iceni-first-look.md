@@ -2,9 +2,7 @@
 title: 'ICENI: First Look'
 image_url: /assets/news/iceni-first-look/36d8eddd801e-hero.png
 published_date: '2026-03-16'
-authors: []
 related:
-  working-groups: []
   organisations:
   - sci-semiconductor
   hardware:
@@ -13,7 +11,6 @@ related:
   - sonata
   software:
   - simulators
-  academic-papers: []
 ---
 
 # ICENI: First Look

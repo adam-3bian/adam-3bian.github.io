@@ -1,13 +1,5 @@
 ---
 title: Debugging Tools
-image_url: /assets/software/debugging-tools/placeholder.svg
-website_url: null
-repository_urls:
-- https://github.com/CHERI-Alliance/gdb
-- https://github.com/CTSRD-CHERI/gdb
-- https://github.com/CTSRD-CHERI/cheribuild
-type: null
-status: null
 related:
   organisations:
   - cheri-alliance
@@ -17,6 +9,13 @@ related:
   software:
   - cheribsd
   - cheri-linux
+repositories:
+- label: CHERI Alliance GDB source
+  url: https://github.com/CHERI-Alliance/gdb
+- label: CHERI GDB source
+  url: https://github.com/CTSRD-CHERI/gdb
+- label: Build tools (cheribuild)
+  url: https://github.com/CTSRD-CHERI/cheribuild
 ---
 
 # Debugging Tools

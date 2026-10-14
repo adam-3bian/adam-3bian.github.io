@@ -1,18 +1,15 @@
 ---
-title: 🆓 CHERI FreeRTOS WG
+title: CHERI FreeRTOS Working Group
 image_url: /assets/working-groups/cheri-freertos/bb889a4dc09e-cheri-alliance-working-groups.png
 website_url: https://cheri-alliance.org/who-we-are/working-groups/cheri-freertos/
-repository_urls: []
 leads:
 - oliver-gray
 related:
   organisations:
   - codasip
-  hardware: []
-  software: []
 ---
 
-# 🆓 CHERI FreeRTOS WG
+# CHERI FreeRTOS Working Group
 
 Coordinates common approaches to memory protection, compartmentalisation, interfaces, and platform support for FreeRTOS on CHERI systems.
 

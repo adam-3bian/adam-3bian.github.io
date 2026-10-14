@@ -4,10 +4,6 @@ image_url: /assets/organisations/ncsc/9d718e909b7a-logo.png
 website_url: http://www.ncsc.gov.uk/
 membership_tier: community
 is_founding_member: true
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # NCSC

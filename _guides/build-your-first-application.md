@@ -1,11 +1,6 @@
 ---
 title: Build Your First Application
-image_url: /assets/guides/build-your-first-application/placeholder.svg
-repository_urls: []
-updated_date: null
-authors: []
 related:
-  working-groups: []
   hardware:
   - cheriot
   software:

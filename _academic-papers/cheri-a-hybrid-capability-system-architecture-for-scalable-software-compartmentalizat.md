@@ -1,6 +1,5 @@
 ---
 title: 'CHERI: A Hybrid Capability-System Architecture for Scalable Software Compartmentalization'
-image_url: /assets/academic-papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/placeholder.svg
 publication_url: https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/201505-oakland2015-cheri-compartmentalization.pdf
 published_year: 2015
 authors:
@@ -19,10 +18,6 @@ authors:
 - michael-roe
 - stacey-son
 - munraj-vadera
-related:
-  working-groups: []
-  hardware: []
-  software: []
 ---
 
 ### CHERI: A Hybrid Capability-System Architecture for Scalable Software Compartmentalization

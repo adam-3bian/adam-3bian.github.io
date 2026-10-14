@@ -5,12 +5,9 @@ website_url: https://cheri-alliance.org/events/speakers/martin-atkins/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/martin-atkins-71aa185/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - mission-critical-applications-limited
-  working-groups: []
 ---
 
 # Martin Atkins

@@ -4,8 +4,6 @@ permalink: /guides/
 layout: list
 listing:
   collection: guides
-  status: null
-  role: null
 ---
 
 # Developer guides

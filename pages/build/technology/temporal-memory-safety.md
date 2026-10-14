@@ -1,26 +1,13 @@
 ---
 title: Temporal Memory Safety
 permalink: /build/technology/temporal-memory-safety/
-summary: Temporal memory safety stops references being used after an object’s lifetime ends, including when
-  its storage has been reused.
-image_url: null
-updated_date: null
+summary: Temporal memory safety stops references being used after an object’s lifetime ends, including when its storage has been reused.
 parent: /build/
 next_page_url: /build/technology/compartmentalisation/
 related:
   pages:
   - /build/technology/capabilities/
   - /build/technology/spatial-memory-safety/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Temporal Memory Safety

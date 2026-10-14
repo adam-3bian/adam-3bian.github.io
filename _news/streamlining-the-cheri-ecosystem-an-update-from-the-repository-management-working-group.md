@@ -9,9 +9,6 @@ related:
   - repository-management
   organisations:
   - cheri-alliance
-  hardware: []
-  software: []
-  academic-papers: []
 ---
 
 # Streamlining the CHERI Ecosystem: An Update from the Repository Management Working Group

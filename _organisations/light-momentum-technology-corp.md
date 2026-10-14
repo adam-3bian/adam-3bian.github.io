@@ -4,10 +4,6 @@ image_url: /assets/organisations/light-momentum-technology-corp/logo-transparent
 website_url: http://lmtec.net/index_en.html
 membership_tier: full
 is_founding_member: true
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # Light Momentum Technology Corp.

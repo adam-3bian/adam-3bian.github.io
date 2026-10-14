@@ -210,22 +210,22 @@
     "field": "related.pages"
   },
   {
-    "from": "/reference/source-versions/contact/",
+    "from": "/alliance/membership/contact/",
     "to": "/alliance/membership/membership-benefits-and-options/",
     "field": "related.pages"
   },
   {
-    "from": "/reference/source-versions/contact/",
+    "from": "/alliance/membership/contact/",
     "to": "/news-and-events/people-and-opportunities/job-opportunities/",
     "field": "related.pages"
   },
   {
-    "from": "/alliance/membership/contact/",
+    "from": "/reference/source-versions/contact/",
     "to": "/alliance/membership/membership-benefits-and-options/",
     "field": "related.pages"
   },
   {
-    "from": "/alliance/membership/contact/",
+    "from": "/reference/source-versions/contact/",
     "to": "/news-and-events/people-and-opportunities/job-opportunities/",
     "field": "related.pages"
   },

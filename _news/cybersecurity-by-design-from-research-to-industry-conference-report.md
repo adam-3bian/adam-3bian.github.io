@@ -2,9 +2,7 @@
 title: ‘Cybersecurity by Design – from Research to Industry’ — Conference Report
 image_url: /assets/news/cybersecurity-by-design-from-research-to-industry-conference-report/8a1142aa0d27-hero.png
 published_date: '2024-12-04'
-authors: []
 related:
-  working-groups: []
   organisations:
   - sci-semiconductor
   - cheri-alliance
@@ -19,8 +17,6 @@ related:
   - cheriot
   - morello
   - sonata
-  software: []
-  academic-papers: []
 ---
 
 # ‘Cybersecurity by Design – from Research to Industry’ — Conference Report

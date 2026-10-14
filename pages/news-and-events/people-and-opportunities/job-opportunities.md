@@ -1,25 +1,12 @@
 ---
 title: Job Opportunities
 permalink: /news-and-events/people-and-opportunities/job-opportunities/
-summary: Current roles and early opportunity notices for people who want to work on CHERI, CHERIoT, capability
-  systems, and the supporting software ecosystem.
-image_url: null
-updated_date: null
+summary: Current roles and early opportunity notices for people who want to work on CHERI, CHERIoT, capability systems, and the supporting software ecosystem.
 parent: /news-and-events/
 next_page_url: /news-and-events/people-and-opportunities/speakers/
 related:
-  pages: []
-  people: []
   organisations:
   - cheri-alliance
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Job Opportunities

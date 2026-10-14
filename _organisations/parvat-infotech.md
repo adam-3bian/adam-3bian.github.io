@@ -4,10 +4,6 @@ image_url: /assets/organisations/parvat-infotech/983927485935-logo.png
 website_url: https://parvat.com/
 membership_tier: full
 is_founding_member: true
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # Parvat Infotech

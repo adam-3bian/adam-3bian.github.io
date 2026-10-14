@@ -1,6 +1,5 @@
 ---
 title: Assessing the Viability of an Open-Source CHERI Desktop Software Ecosystem
-image_url: /assets/reports/assessing-the-viability-of-an-open-source-cheri-desktop-software-ecosystem/placeholder.svg
 publication_url: https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/20210917-capltd-cheri-desktop-report-version1-FINAL.pdf
 published_year: 2021
 publication_type: technical-report
@@ -14,7 +13,6 @@ related:
   - capabilities-limited
   case-studies:
   - cheribsd
-  hardware: []
   software:
   - cheribsd
 ---

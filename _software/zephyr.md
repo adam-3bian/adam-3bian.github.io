@@ -1,17 +1,14 @@
 ---
 title: Zephyr
-image_url: /assets/software/zephyr/placeholder.svg
 website_url: https://docs.zephyrproject.org/
-repository_urls:
-- https://github.com/CHERI-Alliance/CHERI-zephyr
-type: null
-status: null
 related:
   organisations:
   - cheri-alliance
   hardware:
   - cheriot
-  software: []
+repositories:
+- label: CHERI Zephyr source
+  url: https://github.com/CHERI-Alliance/CHERI-zephyr
 ---
 
 # Zephyr

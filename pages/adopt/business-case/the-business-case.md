@@ -2,22 +2,8 @@
 title: The Strategic Case for CHERI
 permalink: /adopt/business-case/the-business-case/
 summary: CHERI helps reduce risk, protect software investments, build trust and create competitive advantage.
-image_url: null
-updated_date: null
 parent: /adopt/
 next_page_url: /adopt/business-case/cost-of-memory-unsafety/
-related:
-  pages: []
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # The Strategic Case for CHERI

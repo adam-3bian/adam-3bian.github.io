@@ -1,10 +1,7 @@
 ---
 title: Recent advances in CHERI enhancing stability, maturity, and accessibility as urged by the UK’s DSTL
 image_url: /assets/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl-original/b40f17e0c2fc-cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus.png
-published_date: null
-authors: []
 related:
-  working-groups: []
   organisations:
   - university-of-cambridge
   - risc-v-international
@@ -23,7 +20,6 @@ related:
   - freebsd
   - zephyr
   - llvm-and-clang
-  academic-papers: []
 ---
 
 # Recent advances in CHERI enhancing stability, maturity, and accessibility as urged by the UK’s DSTL

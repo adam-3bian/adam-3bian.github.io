@@ -2,15 +2,10 @@
 title: Codasip enables secure Linux by donating CHERI RISC-V SDK to the CHERI Alliance
 image_url: /assets/news/codasip-enables-secure-linux-by-donating-cheri-risc-v-sdk-to-the-cheri-alliance/b40f17e0c2fc-cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus.png
 published_date: '2024-10-22'
-authors: []
 related:
-  working-groups: []
   organisations:
   - cheri-alliance
   - codasip
-  hardware: []
-  software: []
-  academic-papers: []
 ---
 
 # Codasip enables secure Linux by donating CHERI RISC-V SDK to the CHERI Alliance

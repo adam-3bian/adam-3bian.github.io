@@ -5,12 +5,9 @@ website_url: https://cheri-alliance.org/events/speakers/ashish-darbari/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/ashish-darbari/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - axiomise-ltd
-  working-groups: []
 ---
 
 # Ashish Darbari

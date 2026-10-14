@@ -3,11 +3,6 @@ title: The Capable Hub
 image_url: /assets/organisations/the-capable-hub/5f69ed560bdc-logo.png
 website_url: https://www.thecapablehub.org/
 membership_tier: full
-is_founding_member: null
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # The Capable Hub

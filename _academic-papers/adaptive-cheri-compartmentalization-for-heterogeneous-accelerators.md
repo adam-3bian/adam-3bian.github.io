@@ -1,6 +1,5 @@
 ---
 title: Adaptive CHERI Compartmentalization for Heterogeneous Accelerators
-image_url: /assets/academic-papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/placeholder.svg
 publication_url: https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/202506-isca-capchecker.pdf
 published_year: 2025
 authors:
@@ -11,10 +10,6 @@ authors:
 - matthew-naylor
 - peter-rugg
 - timothy-m-jones
-related:
-  working-groups: []
-  hardware: []
-  software: []
 ---
 
 ### Adaptive CHERI Compartmentalization for Heterogeneous Accelerators

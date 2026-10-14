@@ -2,13 +2,6 @@
 title: The White House promotes CHERI as a solution for memory safety
 image_url: /assets/news/the-white-house-promotes-cheri-as-a-solution-for-memory-safety/55e2916c5bcf-hero.jpg
 published_date: '2024-02-27'
-authors: []
-related:
-  working-groups: []
-  organisations: []
-  hardware: []
-  software: []
-  academic-papers: []
 ---
 
 # The White House promotes CHERI as a solution for memory safety

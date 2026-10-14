@@ -1,10 +1,7 @@
 ---
 title: Several CHERI Alliance members win the DSbD competition to deliver new CHERI chips and software
 image_url: /assets/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software-original/dca93f847af6-cheriot-1-0-specification-released.png
-published_date: null
-authors: []
 related:
-  working-groups: []
   organisations:
   - the-university-of-manchester
   - university-of-birmingham
@@ -17,9 +14,6 @@ related:
   - lowrisc
   - dsit
   - ukri
-  hardware: []
-  software: []
-  academic-papers: []
 ---
 
 # Several CHERI Alliance members win the DSbD competition to deliver new CHERI chips and software

@@ -9,7 +9,6 @@ related:
   - morello
   software:
   - cheribsd
-  reports: []
 ---
 
 # Morello: a complete experimental stack

@@ -3,11 +3,6 @@ title: Digital Catapult
 image_url: /assets/organisations/digital-catapult/797be91526b2-logo.jpg
 website_url: https://www.digicatapult.org.uk/
 membership_tier: community
-is_founding_member: null
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # Digital Catapult

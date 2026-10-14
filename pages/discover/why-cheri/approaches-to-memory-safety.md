@@ -1,25 +1,12 @@
 ---
 title: Approaches to Memory Safety
 permalink: /discover/why-cheri/approaches-to-memory-safety/
-summary: No single technology delivers memory safety. The strongest solutions combine processes, tools, hardware
-  protections, and isolation.
-image_url: null
-updated_date: null
+summary: No single technology delivers memory safety. The strongest solutions combine processes, tools, hardware protections, and isolation.
 parent: /discover/
 next_page_url: /discover/understand/cheri-and-existing-software/
 related:
   pages:
   - /discover/why-cheri/why-existing-defences-are-not-enough/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Approaches to Memory Safety

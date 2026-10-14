@@ -1,26 +1,13 @@
 ---
 title: Future Direction
 permalink: /discover/history/future-direction/
-summary: CHERI’s next phase depends on stable standards, broader products, support in widely used software
-  projects, practical assurance, and evidence from real deployments.
-image_url: null
-updated_date: null
+summary: CHERI’s next phase depends on stable standards, broader products, support in widely used software projects, practical assurance, and evidence from real deployments.
 parent: /discover/
 next_page_url: /discover/resources/specifications/
 related:
   pages:
   - /discover/history/early-capability-systems/
   - /discover/history/formation-of-the-cheri-alliance/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Future Direction

@@ -2,11 +2,7 @@
 title: CHERI Blossoms Conference 2025
 image_url: /assets/events/cheri-blossoms-conference-2025/838829e021a2-hero.png
 website_url: https://cheri-alliance.org/events/cheri-blossoms-conference-apr-2025/
-registration_url: null
 start_date: '2025-04-02'
-start_datetime: null
-end_date: null
-end_datetime: null
 location: St John's College, Cambridge, UK
 speakers:
 - alastair-beresford
@@ -57,7 +53,6 @@ related:
   - lowrisc
   - dsit
   - ukri
-  academic-papers: []
 ---
 
 # CHERI Blossoms Conference 2025

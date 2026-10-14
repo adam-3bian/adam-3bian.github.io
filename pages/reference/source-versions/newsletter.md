@@ -2,23 +2,10 @@
 title: Subscribe to our quarterly newsletter
 permalink: /reference/source-versions/newsletter/
 summary: Get news from the CHERI ecosystem every quarter.
-image_url: null
-updated_date: null
 parent: /
-next_page_url: null
 related:
   pages:
   - /news/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Subscribe to our quarterly newsletter

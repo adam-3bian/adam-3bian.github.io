@@ -2,16 +2,11 @@
 title: The Capable Hub joins the CHERI Alliance to accelerate cybersecurity collaboration
 image_url: /assets/news/the-capable-hub-joins-the-cheri-alliance-to-accelerate-cybersecurity-collaboration/e99d863fe4-hero.png
 published_date: '2026-02-19'
-authors: []
 related:
-  working-groups: []
   organisations:
   - university-of-cambridge
   - the-capable-hub
   - cheri-alliance
-  hardware: []
-  software: []
-  academic-papers: []
 ---
 
 # The Capable Hub joins the CHERI Alliance to accelerate cybersecurity collaboration

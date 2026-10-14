@@ -1,26 +1,13 @@
 ---
 title: Provenance
 permalink: /build/technology/provenance/
-summary: Capability provenance preserves the connection between a usable pointer and the valid authority from
-  which that pointer was derived.
-image_url: null
-updated_date: null
+summary: Capability provenance preserves the connection between a usable pointer and the valid authority from which that pointer was derived.
 parent: /build/
 next_page_url: /build/technology/sealing/
 related:
   pages:
   - /build/technology/capabilities/
   - /build/technology/permissions/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Provenance

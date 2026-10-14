@@ -1,18 +1,15 @@
 ---
 title: LLVM & Clang
-image_url: /assets/software/llvm-and-clang/placeholder.svg
 website_url: https://llvm.org/
-repository_urls:
-- https://github.com/CTSRD-CHERI/cheribuild
-type: null
-status: null
 related:
-  organisations: []
   hardware:
   - cheriot
   - morello
   software:
   - cheribsd
+repositories:
+- label: Build tools (cheribuild)
+  url: https://github.com/CTSRD-CHERI/cheribuild
 ---
 
 # LLVM & Clang
