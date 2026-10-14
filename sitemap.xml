@@ -1,0 +1,9 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
+{%- include public-records.html -%}
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% for record in public_records %}<url><loc>{{ record.url | absolute_url | xml_escape }}</loc>{% if record.updated_date %}<lastmod>{{ record.updated_date | date: '%Y-%m-%d' }}</lastmod>{% endif %}</url>{% endfor %}
+</urlset>

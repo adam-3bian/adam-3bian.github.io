@@ -278,6 +278,9 @@ settings.fetch('aliases', {}).each do |url, target|
   errors << "Unknown alias target #{url} -> #{target}" unless lookup.key?(target)
   errors << "Chained or circular alias #{url} -> #{target}" if settings.fetch('aliases', {}).key?(target)
 end
+settings.fetch('discovery_exclusions', []).each do |url|
+  errors << "Unknown discovery exclusion: #{url}" unless lookup.key?(url)
+end
 objects.each do |object|
   if object.data['layout'] == 'redirect' && !settings.dig('aliases', object.url)
     errors << "Redirect without an alias destination: #{object.url}"
@@ -387,6 +390,8 @@ File.write(File.join(root, '_data/checks.yml'), YAML.dump(report))
 File.write(File.join(root, '_data/relationships.yml'), YAML.dump(relation_data))
 FileUtils.mkdir_p(File.join(root, 'reports'))
 File.write(File.join(root, 'reports/index-navigation.json'), JSON.pretty_generate(index_pages) + "\n")
+public_urls = objects.reject { |object| object.data['alternate'] || object.data['published'] == false || object.data['layout'] == 'redirect' || settings.fetch('aliases', {}).key?(object.url) || settings.fetch('discovery_exclusions', []).include?(object.url) }.map(&:url).uniq.sort
+File.write(File.join(root, 'reports/public-records.json'), JSON.pretty_generate(public_urls) + "\n")
 primary_navigation = header_menu.map do |section|
   presentation = site.data.dig('landing', 'sections', section['url']) || {}
   groups = [['Start here', 'introductory_routes'], ['Explore resources', 'featured_routes']].map do |label, key|

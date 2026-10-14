@@ -36,12 +36,15 @@ jobs:
           JEKYLL_ENV=production bundle exec jekyll build --safe --baseurl /preview --destination "$RUNNER_TEMP/baseurl-site/preview"
           python3 scripts/check_collection_links.py "$RUNNER_TEMP/baseurl-site/preview" --baseurl /preview
           python3 scripts/check_page_content.py "$RUNNER_TEMP/baseurl-site/preview" /preview
+          python3 scripts/check_discovery.py "$RUNNER_TEMP/baseurl-site/preview" /preview
       - name: Build Jekyll
         run: JEKYLL_ENV=production bundle exec jekyll build --destination _site
       - name: Validate every rendered collection reference
         run: python3 scripts/check_collection_links.py
       - name: Validate every page, canonical route and metadata panel
         run: python3 scripts/check_page_content.py
+      - name: Verify static discovery and social metadata
+        run: python3 scripts/check_discovery.py
       - name: Check navigation, responsive images and accessible viewer
         run: |
           npm install --prefix "$RUNNER_TEMP/image-tests" --no-save playwright@1.56.1 axe-core

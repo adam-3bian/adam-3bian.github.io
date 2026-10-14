@@ -142,6 +142,15 @@ users. Content and ordinary links work without JavaScript.
 
 ## Authoring and verification
 
+Public discovery uses one shared canonical-record include for search and the
+static XML sitemap. Redirects, aliases, alternates, checks and verified mirror/
+print views are excluded. Excluded routes remain available and use `noindex`;
+this is discovery guidance, not access control. The content validator generates
+an independent expected-route manifest for regression checks. Shared metadata
+uses source summaries/excerpts, absolute canonical URLs, approved local raster
+artwork and safely encoded, source-backed WebSite/Organization/Event JSON-LD.
+Generic reference browser titles may gain context without changing their h1.
+
 Use `FRONT_MATTER.MD` and `_data/schemas.yml` for fields; use native Markdown and
 the existing image classes instead of hand-built page components. Navigation
 comes from `_config.yml`, display roles from `_data/viewer.yml`, and the complete

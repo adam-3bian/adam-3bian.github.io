@@ -155,3 +155,21 @@ navigation_sections:
   guides: /build/
   hardware: /build/
   software: /build/
+# Existing approved branding for records without a suitable raster preview.
+social_image: /assets/shared/source-assets/e4cf8af68585-cheri-logo.webp
+meta_titles:
+  /: CHERI technology
+  /alliance/: 'CHERI Alliance: membership and collaboration'
+  /organisations/cheri-alliance/: About the CHERI Alliance
+  /reference/CHERI-seL4-Exercises/introduction/index.html: Introduction to the CHERI-seL4 exercises
+  /reference/linux-roadmap/intro.html: Introduction to the CHERI Linux roadmap
+  /reference/CHERI-seL4-Exercises/exercises/cheri-allocator/answers.html: CHERI allocator exercise answers
+  /reference/CHERI-seL4-Exercises/exercises/cheri-tags/answers.html: CHERI tags exercise answers
+  /news/press/: CHERI Alliance logos and press contacts
+# Verified mirrors and aggregate print views remain reachable at their routes.
+discovery_exclusions:
+- /reference/CHERI-seL4-Exercises/cover/index.html
+- /reference/CHERI-seL4-Exercises/exercises/buffer-overflow-global/index.html
+- /reference/linux-roadmap/cover.html
+- /reference/CHERI-seL4-Exercises/print.html
+- /reference/linux-roadmap/print.html

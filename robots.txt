@@ -1,0 +1,8 @@
+---
+layout: null
+permalink: /robots.txt
+---
+User-agent: *
+Disallow: {{ '/checks/' | relative_url }}
+Disallow: {{ '/reference/source-versions/' | relative_url }}
+Sitemap: {{ '/sitemap.xml' | absolute_url }}
