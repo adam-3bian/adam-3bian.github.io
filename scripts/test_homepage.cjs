@@ -45,6 +45,28 @@ const events = source.records.filter(r => r.collection === 'events' && !r.altern
     await plain.waitForURL(url(home.home.primary.url));
     assert.equal(await plain.locator('main h1').count(), 1);
     report.nativeNavigation++;
+    // Every audience route and the platform-aware developer sequence is native.
+    for (const journey of home.home.journeys) {
+      await plain.goto(base);
+      const link = plain.locator('.home-journeys a').filter({ hasText: journey.title });
+      assert.equal(await link.count(), 1);
+      await link.focus(); await plain.keyboard.press('Enter');
+      await plain.waitForURL(url(journey.url));
+      assert.equal(await plain.locator('main h1').count(), 1);
+      report.nativeNavigation++;
+    }
+    await plain.goto(url('/build/'));
+    const sequence = plain.locator('.learning-path h3 a');
+    const expectedSteps = ['/guides/choose-a-platform/', '/guides/run-cheri-in-simulation/', '/guides/install-a-toolchain/', '/guides/build-your-first-application/', '/guides/port-existing-software/', '/guides/technical-faq/'];
+    assert.deepEqual(await sequence.evaluateAll(links => links.map(a => a.href)), expectedSteps.map(url));
+    for (const step of expectedSteps) {
+      await plain.goto(url('/build/'));
+      const link = plain.locator(`.learning-path a[href="${new URL(url(step)).pathname}"]`);
+      await link.focus(); await plain.keyboard.press('Enter');
+      await plain.waitForURL(url(step));
+      assert.equal(await plain.locator('main h1').count(), 1);
+      report.nativeNavigation++;
+    }
     fs.writeFileSync(path.join(output, 'results.json'), JSON.stringify(report, null, 2) + '\n');
     console.log(JSON.stringify(report));
   } finally { await browser.close(); }

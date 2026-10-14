@@ -171,7 +171,7 @@ const routes = [
             assert.equal(await page.locator('.home-hero .summary').textContent(), expected.summary);
             assert.equal(await page.locator('.home-purpose').textContent(), expected.title, 'Preserve the original introduction');
             assert.deepEqual(await page.locator('.home-hero .action-links a').evaluateAll(links => links.map(link => ({ title: link.textContent.trim(), href: link.href }))), [expected.home.primary, expected.home.secondary].map(link => ({ title: link.title, href: url(link.url) })), 'Homepage calls to action');
-            assert.equal(await page.locator('.home-journeys > li').count(), 4, 'Four audience pathways');
+            assert.equal(await page.locator('.home-journeys > li').count(), expected.home.journeys.length, 'All source-backed audience pathways');
             assert.deepEqual(await page.locator('.home-page .cards .card').evaluateAll(links => links.map(link => link.href)), expected.home.examples.map(slug => url(`/case-studies/${slug}/`)), 'Verified canonical case studies');
             const newsDates = await page.locator('[data-featured="news"] time').evaluateAll(times => times.map(time => time.dateTime));
             assert.ok(newsDates.length > 0 && newsDates.every(date => /^\d{4}-\d{2}-\d{2}$/.test(date)), 'Only source-dated news is featured');
