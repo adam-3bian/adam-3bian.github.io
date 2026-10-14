@@ -50,9 +50,12 @@ Give the logo
 an accessible home-link name and explicit intrinsic dimensions.
 
 The light footer has four visible link groups on desktop, two on tablet and one
-on mobile, followed by copyright and social links. Collection shortcuts and
-Content checks form a separate utility band below the footer. They are available
-without opening the main menu and do not compete with primary routes.
+on mobile, followed by copyright and social links. Useful directories appear
+once within those visitor-oriented groups, without a separate shortcut band.
+The retained `/checks/` compatibility route stays outside visitor navigation,
+search and sitemap and carries `noindex`. It remains public: this is not access
+control. Maintainers can also download validation reports and the checks page
+as a CI artifact; do not put private authoring information in published sources.
 
 Use one `main` landmark and one page title. Use `article` for records, `nav` for
 destinations, `section` for named content regions, and `aside` for supplementary

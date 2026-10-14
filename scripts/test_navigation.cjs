@@ -80,12 +80,12 @@ async function assertAccessible(page) {
       assert.equal(await menus.count(), 5);
       assert.equal(await page.locator('.source-nav a').count(), expectedMenuLinks, 'Primary menu must match source-derived priorities');
       assert.deepEqual(await page.locator('.source-nav a').evaluateAll(links => links.map(a => new URL(a.href).pathname)), primarySource.flatMap(section => [section.url, ...section.groups.flatMap(group => group.links.map(link => link.url))]).map(route => new URL(route.replace(/^\//, ''), base).pathname));
-      assert.equal(await page.locator('.collection-nav a').count(), audit.collection_count);
-      assert.equal(await page.locator('.site-header .collection-nav, .site-header .checks-link').count(), 0);
-      assert.equal(await page.locator('.collection-footer .checks-link').getAttribute('href'), new URL('checks/', base).pathname);
-      assert.equal(await page.locator('.collection-footer').evaluate(element => element.previousElementSibling.matches('footer.site-footer')), true, 'Collection shortcuts must follow the footer');
+      assert.equal(await page.locator('.collection-footer').count(), 0, 'No redundant shortcut band');
+      assert.equal(await page.locator('.site-header a[href$="/checks/"], .site-footer a[href$="/checks/"]').count(), 0, 'No editorial utility in visitor navigation');
       assert.equal(await page.locator('.site-header .brand img').getAttribute('alt'), 'CHERI Alliance');
-      assert.deepEqual(await page.locator('.collection-nav a').evaluateAll(links => links.map(link => new URL(link.href).pathname).sort()), audit.collections.map(collection => new URL(collection.url.replace(/^\//, ''), base).pathname).sort(), 'Collection directory routes');
+      const footerRoutes = await page.locator('.footer-navigation a').evaluateAll(links => links.map(link => new URL(link.href).pathname));
+      assert.equal(new Set(footerRoutes).size, footerRoutes.length, 'Footer destinations appear once');
+      for (const collection of audit.collections) assert(footerRoutes.includes(new URL(collection.url.replace(/^\//, ''), base).pathname), `Directory remains reachable: ${collection.url}`);
       assert.equal(await toggle.isVisible(), !desktop);
       assert.equal(await navigation.isVisible(), desktop);
       if (!desktop) {

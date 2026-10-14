@@ -69,7 +69,7 @@ const routes = [
           if (document.documentElement.scrollWidth > innerWidth + 1) errors.push('Horizontal overflow');
           const footer = document.querySelector('.site-footer');
           if (!footer || footer.querySelector('div, span, details, summary')) errors.push('Footer semantics or hidden links');
-          for (const link of document.querySelectorAll('.site-footer a, .collection-footer a, .link-grid a')) {
+          for (const link of document.querySelectorAll('.site-footer a, .link-grid a')) {
             const rect = link.getBoundingClientRect();
             if (rect.height < 44 || rect.left < 0 || rect.right > innerWidth) errors.push('Footer or related link touch target/containment');
             if (link.closest('.link-grid')) {
@@ -241,7 +241,7 @@ const routes = [
         }
         if (width === 1440 && process.env.AXE_PATH) {
           await page.addScriptTag({ path: process.env.AXE_PATH });
-          const violations = await page.evaluate(async () => (await axe.run(['main', '.site-footer', '.collection-footer'], {
+          const violations = await page.evaluate(async () => (await axe.run(['main', '.site-footer'], {
             runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21aa'] },
           })).violations.map(v => ({ id: v.id, impact: v.impact, nodes: v.nodes.map(n => ({ target: n.target, summary: n.failureSummary })) })));
           assert.deepEqual(violations, [], route);

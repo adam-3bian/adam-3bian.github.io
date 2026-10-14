@@ -173,8 +173,6 @@ nav li + li, .cards > li + li, .image-gallery > li + li, .site-footer li + li { 
 .header-row { margin: 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; }
 .brand { display: inline-flex; align-items: center; text-decoration: none; flex-shrink: 0; }
 .brand img { display: block; width: 10rem; height: auto; }
-.checks-link { display: inline-flex; align-items: center; min-height: 44px; border: 1px solid var(--line); border-radius: var(--radius); padding: .45rem .7rem; font-size: var(--text-small); white-space: nowrap; text-decoration: none; }
-.checks-link:is(:hover, :focus-visible) { background: var(--soft); text-decoration: underline; }
 .skip-link { position: absolute; top: -5rem; left: 1rem; padding: .7rem; background: var(--ink); color: white; z-index: 20; }
 .skip-link:focus { top: 1rem; }
 .skip-link:hover { color: var(--white); }
@@ -187,17 +185,6 @@ nav li + li, .cards > li + li, .image-gallery > li + li, .site-footer li + li { 
 }
 .nav-panel a { display: inline-block; padding-block: .15rem; }
 .section-link { font-weight: 600; }
-.collection-nav ul { display: flex; flex-wrap: wrap; gap: .25rem .5rem; list-style: none; padding: 0; margin: 0; }
-.collection-nav a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  border-radius: var(--radius);
-  font-size: var(--text-small);
-  padding: .45rem .5rem;
-  text-decoration: none;
-}
-.collection-nav a:is(:hover, :focus-visible) { background: var(--soft); text-decoration: underline; }
 
 /* Starter-kit style column menus, with native disclosures as the fallback. */
 .navigation-toggle {
@@ -251,8 +238,6 @@ nav li + li, .cards > li + li, .image-gallery > li + li, .site-footer li + li { 
 .primary-menu-panel a { display: flex; align-items: center; min-height: 2.75rem; padding: .5rem .75rem; }
 .primary-menu-panel > .section-link { border-bottom: 1px solid var(--line); margin-bottom: .5rem; }
 .menu-group-label { font-size: 1rem; font-weight: 600; margin: .75rem .75rem .25rem; }
-.collection-footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem 1rem; padding-block: 1rem; }
-.collection-nav { flex: 1 1 auto; }
 @media (min-width: 64rem) {
   .footer-groups { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .index-pages.columns-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }

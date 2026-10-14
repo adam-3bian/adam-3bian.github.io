@@ -616,6 +616,8 @@ navigation:
       url: /news/
     - title: Upcoming Events
       url: /news-and-events/events-and-archive/upcoming-events/
+    - title: All Events
+      url: /events/
     - title: Subscribe to our Newsletter
       url: /news-and-events/news-and-analysis/subscribe-newsletter/
   - title: CHERI Alliance
@@ -628,7 +630,25 @@ navigation:
       url: /working-groups/
     - title: Contact the Alliance
       url: /alliance/membership/contact/
-  - title: Legal
+    - title: People
+      url: /people/
+    - title: Organisations
+      url: /organisations/
+  - title: Learn and Build
+    links:
+    - title: Guides
+      url: /guides/
+    - title: Hardware
+      url: /hardware/
+    - title: Software
+      url: /software/
+    - title: Papers
+      url: /academic-papers/
+    - title: Reports
+      url: /reports/
+    - title: Case Studies
+      url: /case-studies/
+  - title: Policies
     links:
     - title: Code of Conduct
       url: /policies/code-of-conduct/
@@ -636,18 +656,8 @@ navigation:
       url: /policies/trademark/
     - title: Privacy
       url: /policies/privacy/
-  - title: Explore
-    links:
-    - title: People
-      url: /people/
-    - title: Organisations
-      url: /organisations/
-    - title: Hardware
-      url: /hardware/
-    - title: Software
-      url: /software/
-    - title: Papers
-      url: /academic-papers/
+    - title: All Policies
+      url: /policies/
   social:
   - title: LinkedIn
     url: https://www.linkedin.com/company/cheri-alliance/

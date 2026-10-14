@@ -25,14 +25,3 @@
     </nav>
   </section>
 </footer>
-<aside class="container collection-footer" aria-label="Collection shortcuts">
-  <nav class="collection-nav" aria-label="Collections">
-    <ul role="list">
-      {% for collection in site.collections %}{% unless collection.label == 'posts' %}
-      {% assign collection_url = '/' | append: collection.label | append: '/' %}{% assign collection_url = site.data.viewer.collections[collection.label].url | default: collection_url %}
-      <li><a href="{{ collection_url | relative_url }}">{{ site.data.viewer.collections[collection.label].label | default: collection.label | escape }}</a></li>
-      {% endunless %}{% endfor %}
-    </ul>
-  </nav>
-  <a class="checks-link" href="{{ '/checks/' | relative_url }}">Content checks</a>
-</aside>

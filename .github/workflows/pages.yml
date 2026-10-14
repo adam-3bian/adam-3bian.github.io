@@ -103,6 +103,16 @@ jobs:
           name: image-tests
           path: reports/image-tests/
           if-no-files-found: ignore
+      # Audit outputs remain available even though public navigation omits them.
+      - name: Save maintainer validation reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: content-audit
+          path: |
+            reports/*.json
+            _site/checks/index.html
+          if-no-files-found: ignore
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload site
