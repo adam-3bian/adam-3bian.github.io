@@ -16,13 +16,18 @@ framework, remote font or third-party image viewer is needed.
 | Accent | CHERI red `#ba1e1e`, used sparingly as a section keyline |
 | Borders | Soft blue-grey `#d6e2e8` |
 | Focus | A visible 3px amber outline; never colour alone |
-| Typeface | Local system sans-serif; monospace for code |
-| Body | 1rem, line height 1.65; scalable headings with tighter line height |
+| Typeface | Locally served Poppins, with system sans-serif fallbacks; monospace for code |
+| Body | 1rem, line height 1.7; scalable headings with tighter line height |
 | Spacing | A quarter-rem rhythm: .25, .5, .75, 1, 1.5, 2, 3 and 4rem |
-| Container | One shared 88rem maximum; no separate 850px article restriction |
+| Container | One shared 76rem maximum; prose measure `--reading-width: 78ch` |
 | Gutters | 2.5rem desktop, 1.5rem tablet, 1rem mobile |
 | Controls | At least 44px for navigation, buttons and touch targets |
 | Corners | Small .4rem rounding on cards and controls |
+
+CSS tokens also define a 72ch summary measure, .875rem supporting text, scalable
+page and hero titles, a 2rem section rhythm, the shared hover colour and focus
+outline. Native primary links share one treatment across page actions, resource
+links and onward navigation. Root text sizing respects the browser font setting.
 
 Style elements first: headings, paragraphs, links, lists, definition lists,
 tables, figures, details, forms and code. Classes identify real layout roles,
@@ -50,7 +55,7 @@ solely to replace a layout wrapper.
 
 Ordinary pages have breadcrumbs, a title, optional introduction, Markdown body
 and relevant onward links. Preserve supplied wording. Headings clear floated
-images; paragraphs use the available content container.
+images; paragraphs use a comfortable reading measure, with wider diagrams and tables.
 
 A section index has its title, short existing introduction and columns of links
 drawn from the matching mega-menu groups. Link rows have generous spacing and
