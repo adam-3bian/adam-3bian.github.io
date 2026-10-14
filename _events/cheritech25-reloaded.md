@@ -21,7 +21,7 @@ speakers:
 - tariq-kurd
 - thomas-nyman
 related:
-  groups: []
+  working-groups: []
   organisations:
   - university-of-cambridge
   - university-of-glasgow
@@ -33,7 +33,7 @@ related:
   - codasip
   - lowrisc
   - google
-  papers: []
+  academic-papers: []
 ---
 
 # CHERITech'25 Reloaded

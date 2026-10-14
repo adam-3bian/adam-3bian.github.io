@@ -3,7 +3,7 @@ title: Papers
 permalink: /papers/
 layout: list
 listing:
-  collection: papers
+  collection: academic-papers
   status: null
   role: null
 ---

@@ -10,7 +10,7 @@ social:
 related:
   organisations:
   - capabilities-limited
-  groups:
+  working-groups:
   - os-support-and-portability
 ---
 

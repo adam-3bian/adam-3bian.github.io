@@ -49,7 +49,7 @@ speakers:
 - tariq-kurd
 - thomas-nyman
 related:
-  groups:
+  working-groups:
   - cheri-in-soc
   organisations:
   - german-research-center-for-artificial-intelligence-dfki
@@ -79,7 +79,7 @@ related:
   - ncsc
   - rptu
   - ukri
-  papers: []
+  academic-papers: []
 ---
 
 # CHERI Blossoms Conference 2026
@@ -104,13 +104,11 @@ Venue
 
 Thank you to all who attended!
 
-You can find details about CHERI Blossoms 2027 here.
+You can find details about CHERI Blossoms 2027 [here](/events/cheri-blossoms-conference-2027/).
 
-Recordings & Slides
-
-Speakers
-
-Exhibitors
+- [Recordings & Slides](#recordings--slides)
+- [Speakers](#speakers)
+- [Exhibitors](#exhibitors)
 
 ## Conference Overview
 
@@ -218,81 +216,81 @@ Verifying Secure Memory Compartmentalization in CHERI Processors at the RTL - [J
 
 - All-Caps — Extending Capabilities Across the Whole SoC - [Samuel Stark](/people/samuel-stark/) | CHERI Blossoms 2026 (18:22)
 
-Talk Title: CHERI crash course - high-level introduction; Author: Robert Watson; Organisation: University of Cambridge; Video: Video; Slides: Slides; Speaker: Speaker
+- **CHERI crash course - high-level introduction** — Robert Watson · University of Cambridge · [Video](https://youtu.be/5YEkHpFgWTs) · [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D1-0.2-Robert-Watson-CHERI-crash-course-high-level-introduction-CHERI-Blossoms-2026.pdf) · [Speaker](/people/robert-watson/)
 
-Talk Title: Keynote – CHERI: quantifying the value of a strategic imperative; Author: Ollie Whitehouse; Organisation: National Cyber Security Centre; Video: Video; Slides: Slides; Speaker: Speaker
+- **Keynote – CHERI: quantifying the value of a strategic imperative** — Ollie Whitehouse · National Cyber Security Centre · [Video](https://youtu.be/9cXL0Bu9XzE) · [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D1-1.2-Ollie-Whitehouse-Keynote-%E2%80%93-CHERI-quantifying-the-value-of-a-strategic-imperative-CHERI-Blossoms-2026.pdf) · [Speaker](/people/ollie-whitehouse/)
 
-Talk Title: Featured Message; Author: Kathleen Fisher; Organisation: [ARIA](/organisations/aria/); Video: Video; Slides: -; Speaker: Speaker
+- **Featured Message** — Kathleen Fisher · [ARIA](/organisations/aria/) · [Video](https://youtu.be/fhQkbrQK2j4) · [Speaker](/people/kathleen-fisher/)
 
-Talk Title: Keynote – Memory Safety at Scale: An Industry Perspective; Author: Alex Rebert; Organisation: [Google](/organisations/google/); Video: Video; Slides: Slides; Speaker: Speaker
+- **Keynote – Memory Safety at Scale: An Industry Perspective** — Alex Rebert · [Google](/organisations/google/) · [Video](https://youtu.be/zRZnks7P-uE) · [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D1-1.4-Alex-Rebert-Memory-Safety-at-Scale-An-Industry-Perspective-CHERI-Blossoms-2026.pdf) · [Speaker](/people/alex-rebert/)
 
-Talk Title: Keynote – Getting ready for the CRA: from compliance to confidence; Author: [Maika Föhrenbach](/people/maika-fohrenbach/); Organisation: [European Commission (DG CONNECT)](/organisations/european-commission-dg-connect/); Video: -; Slides: Slides; Speaker: Speaker
+- **Keynote – Getting ready for the CRA: from compliance to confidence** — [Maika Föhrenbach](/people/maika-fohrenbach/) · [European Commission (DG CONNECT)](/organisations/european-commission-dg-connect/) · [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D1-1.5-Maika-Fohrenbach-Keynote-%E2%80%93-Getting-ready-for-the-CRA-from-compliance-to-confidence-CHERI-Blossoms-2026.pdf) · [Speaker](/people/maika-fohrenbach/)
 
-Talk Title: DSIT message; Author: Bradley Finn; Organisation: DSIT; Video: Video; Slides: Slides; Speaker: Speaker
+- **DSIT message** — Bradley Finn · DSIT · [Video](https://youtu.be/NRISUDg4r-w) · [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D1-2.1-Bradley-Finn-DSIT-at-CHERI-Blossoms-2026.pdf) · [Speaker](/people/bradley-finn/)
 
-Talk Title: UKRI message; Author: John Goodacre; Organisation: UKRI; Video: Video; Slides: -; Speaker: Speaker
+- **UKRI message** — John Goodacre · UKRI · [Video](https://youtu.be/W9vnKbXIR8g) · [Speaker](/people/john-goodacre/)
 
-Talk Title: Progress of the Alliance; Author: Mike Eftimakis; Organisation: [CHERI Alliance](/organisations/cheri-alliance/); Video: Video; Slides: Slides; Speaker: Speaker
+- **Progress of the Alliance** — Mike Eftimakis · [CHERI Alliance](/organisations/cheri-alliance/) · [Video](https://youtu.be/5IuLXI_uE2M) · [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D1-2.3-Mike-Eftimakis-Progress-of-the-Alliance-CHERI-Blossoms-2026.pdf) · [Speaker](/people/mike-eftimakis/)
 
-Talk Title: CHERI Research Centre; Author: Robert Watson; Organisation: CHERI Research Centre; Video: Video; Slides: Slides; Speaker: Speaker
+- **CHERI Research Centre** — Robert Watson · CHERI Research Centre · [Video](https://youtu.be/jHIshRpvaYU) · [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D1-2.5-Robert-Watson-CHERI-Research-Centre-CHERI-Blossoms-2026.pdf) · [Speaker](/people/robert-watson/)
 
-Talk Title: The Capable Hub: Our Recent Work and Next Steps; Author: Andrew Murray; Organisation: The Capable Hub; Video: Video; Slides: Slides; Speaker: Speaker
+- **The Capable Hub: Our Recent Work and Next Steps** — Andrew Murray · The Capable Hub · [Video](https://youtu.be/3f_bzB9HJxw) · [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D1-2.6-Andrew-Murray-The-Capable-Hub-Our-Recent-Work-and-Next-Steps-CHERI-Blossoms-2026.pdf) · [Speaker](/people/andrew-murray/)
 
-Talk Title: CHERI Adoption study; Author: [Adam Finney](/people/adam-finney/); Organisation: CHERI Alliance; Video: -; Slides: Slides; Speaker: Speaker
+- **CHERI Adoption study** — [Adam Finney](/people/adam-finney/) · CHERI Alliance · [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D1-2.7-Adam-Finney-CHERI-Adoption-Study-CHERI-Blossoms-2026.pdf) · [Speaker](/people/adam-finney/)
 
-Talk Title: Accelerating commercial adoption of CHERI; Author: Manu Ravishankar; Organisation: [PA Consulting](/organisations/pa-consulting/); Video: Video; Slides: Slides; Speaker: Speaker
+- **Accelerating commercial adoption of CHERI** — Manu Ravishankar · [PA Consulting](/organisations/pa-consulting/) · [Video](https://youtu.be/b35HIP3PPiU) · [Slides](https://cheri-alliance.org/wp-content/uploads/2026/05/D1-2.8-Manu-Ravishankar-CHERI-Secure-by-Design-Managed-Deployment_Programme-CHERI-Blossoms-2026.pdf) · [Speaker](/people/manu-ravishankar/)
 
-Talk Title: A new analysis of CVE vulnerabilities : trends, changes and CHERI; Author: Carl Shaw; Organisation: Codasip; Video: Video; Slides: Slides; Speaker: Speaker
+- **A new analysis of CVE vulnerabilities : trends, changes and CHERI** — Carl Shaw · Codasip · [Video](https://youtu.be/-r5XKUuNCRw) · [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D1-3.1-Carl-Shaw-A-new-analysis-of-CVE-vulnerabilities-CHERI-Blossoms-2026.pdf) · [Speaker](/people/carl-shaw/)
 
-Talk Title: CHERI Mocha: an open-source memory-safe application system; Author: Javier Orensanz Martinez; Organisation: lowRISC; Video: Video; Slides: Slides; Speaker: Speaker
+- **CHERI Mocha: an open-source memory-safe application system** — Javier Orensanz Martinez · lowRISC · [Video](https://youtu.be/FLv1uxMOzEg) · [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D1-3.2-Javier-Orensanz-Martinez-Mocha-at-CHERI-Blossoms-2026.pdf) · [Speaker](/people/javier-orensanz-martinez/)
 
-Talk Title: BT business keynote; Author: Dave Harcourt; Organisation: BT; Video: Video; Slides: -; Speaker: Speaker
+- **BT business keynote** — Dave Harcourt · BT · [Video](https://youtu.be/R3ZbEAoGFp4) · [Speaker](/people/dave-harcourt/)
 
-Talk Title: ETSI Standardisation status; Author: Paul Waller; Organisation: [NCSC](/organisations/ncsc/); Video: Video; Slides: -; Speaker: Speaker
+- **ETSI Standardisation status** — Paul Waller · [NCSC](/organisations/ncsc/) · [Video](https://youtu.be/KP7WU5ScEi8) · [Speaker](/people/paul-waller/)
 
-Talk Title: RISC-V: Driving the Future of Open Compute; Author: Andy Moore; Organisation: [RISC-V International](/organisations/risc-v-international/); Video: Video; Slides: Slides; Speaker: Speaker
+- **RISC-V: Driving the Future of Open Compute** — Andy Moore · [RISC-V International](/organisations/risc-v-international/) · [Video](https://youtu.be/5uR8-ujSrLI) · [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D1-3.5-Andy-Moore-RISC-V-International-CHERI-Blossoms-2026.pdf) · [Speaker](/people/andy-moore/)
 
-Talk Title: CHERI RISC-V Standardisation Status; Author: Tariq Kurd; Organisation: Codasip; Video: -; Slides: Slides; Speaker: Speaker
+- **CHERI RISC-V Standardisation Status** — Tariq Kurd · Codasip · [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D1-3.6-Tariq-Kurd-CHERI-Standardisation-Status-CHERI-Blossoms-2026.pdf) · [Speaker](/people/tariq-kurd/)
 
-Talk Title: BT’s Engagement with CHERI Technology; Author: Sam Cater; Organisation: BT; Video: Video; Slides: Slides; Speaker: Speaker
+- **BT’s Engagement with CHERI Technology** — Sam Cater · BT · [Video](https://youtu.be/xOHOPsrtjiQ) · [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D2-1.2-Sam-Cater-BTs-Engagement-with-CHERI-Technology-CHERI-Blossoms-2026.pdf) · [Speaker](/people/sam-cater/)
 
-Talk Title: Inside the CHERI in SoC Working Group; Author: Ben Fletcher; Organisation: CHERI Alliance; Video: Video; Slides: Slides; Speaker: Speaker
+- **Inside the CHERI in SoC Working Group** — Ben Fletcher · CHERI Alliance · [Video](https://youtu.be/9RTiFIZqyVM) · [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D2-1.3-Ben-Fletcher-Inside-the-CHERI-in-SoC-Working-Group-CHERI-Blossoms-2026.pdf) · [Speaker](/people/ben-fletcher/)
 
-Talk Title: MMU-based revocation for temporal safety on CHERI application cores; Author: Tariq Kurd / Alfredo Mazzinghi; Organisation: Codasip / [Capabilities Limited](/organisations/capabilities-limited/); Video: Video; Slides: Slides; Speaker: Speaker
+- **MMU-based revocation for temporal safety on CHERI application cores** — Tariq Kurd / Alfredo Mazzinghi · Codasip / [Capabilities Limited](/organisations/capabilities-limited/) · [Video](https://youtu.be/TLPYTtTkDP8) · [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D2-1.4-Tariq-Kurd-MMU-based-revocation-CHERI-Blossoms-2026.pdf) · [Speaker](/people/tariq-kurd/)
 
-Talk Title: COSMIC verification: comprehensive, end-to-end formal proofs of CVA6-CHERI; Author: Louis-Emile Ploix / [Marno van der Maas](/people/marno-van-der-maas/); Organisation: lowRISC CIC; Video: Video; Slides: Slides; Speaker: Speaker
+- **COSMIC verification: comprehensive, end-to-end formal proofs of CVA6-CHERI** — Louis-Emile Ploix / [Marno van der Maas](/people/marno-van-der-maas/) · lowRISC CIC · [Video](https://youtu.be/ZUqcw9pbGL0) · [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D2-1.5-Louis-Emile-Ploix-COSMIC-Formal-Verification-CHERI-Blossoms-2026.pdf) · [Speaker](/people/louis-emile-ploix/)
 
-Talk Title: CHERI is being standardised, so why do we still need to do research?; Author: Simon Moore; Organisation: University of Cambridge; Video: Video; Slides: Slides; Speaker: Speaker
+- **CHERI is being standardised, so why do we still need to do research?** — Simon Moore · University of Cambridge · [Video](https://youtu.be/iv-Pro9CV5k) · [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D2-1.6-Simon-Moore-CHERI-RvsD-CHERI-Blossoms-2026.pdf) · [Speaker](/people/simon-moore/)
 
-Talk Title: Lightning talk - CHERIoT-Kudu; Author: David Chisnall; Organisation: [SCI Semiconductor](/organisations/sci-semiconductor/); Video: Video; Slides: Slides; Speaker: Speaker
+- **Lightning talk - CHERIoT-Kudu** — David Chisnall · [SCI Semiconductor](/organisations/sci-semiconductor/) · [Video](https://youtu.be/BTAQkdx_fsM) · [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D2-1.7.1-David-Chisnall-CHERIoT-Kudu-A-high-performance-CHERIoT-microcontroller-CHERI-Blossoms-2026.pdf) · [Speaker](/people/david-chisnall/)
 
-Talk Title: Lightning talk - Portable CHERI OS APIs; Author: [Paul Metzger](/people/paul-metzger/); Organisation: University of Cambridge; Video: -; Slides: Slides; Speaker: Speaker
+- **Lightning talk - Portable CHERI OS APIs** — [Paul Metzger](/people/paul-metzger/) · University of Cambridge · [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D2-1.7.2-Paul-Metzger-Lightning-Talk-Portable-CHERI-OS-APIs-CHERI-Blossoms-2026.pdf) · [Speaker](/people/paul-metzger/)
 
-Talk Title: Lightning talk - CHERI-PIT: Port Integrity Tool; Author: David Musliner; Organisation: SIFT; Video: Video; Slides: Slides; Speaker: Speaker
+- **Lightning talk - CHERI-PIT: Port Integrity Tool** — David Musliner · SIFT · [Video](https://youtu.be/9xeW8SM6Ir0) · [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D2-1.7.3-David-Musliner-SIFT-CHERI-PIT-CHERI-Blossoms-2026.pdf) · [Speaker](/people/david-musliner/)
 
-Talk Title: Lightning talk - CHERI-Zephyr; Author: Jennifer Jackson; Organisation: [University of Birmingham](/organisations/university-of-birmingham/); Video: Video; Slides: Slides; Speaker: Speaker
+- **Lightning talk - CHERI-Zephyr** — Jennifer Jackson · [University of Birmingham](/organisations/university-of-birmingham/) · [Video](https://youtu.be/Kzqdy5Ta4Us) · [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D2-1.7.4-Jennifer-Jackson-CHERI-Zephyr-CHERI-Blossoms-2026.pdf) · [Speaker](/people/jennifer-jackson/)
 
-Talk Title: Lightning talk - Microservice Store; Author: Murat Cakmak; Organisation: Microservice Store; Video: Video; Slides: Slides; Speaker: Speaker
+- **Lightning talk - Microservice Store** — Murat Cakmak · Microservice Store · [Video](https://youtu.be/zsJvGBs28H4) · [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D2-1.7.5-Murat-Cakmak-Microservice-Store-for-CHERI-CHERI-Blossoms-2026.pdf) · [Speaker](/people/murat-cakmak/)
 
-Talk Title: Performance Progress of CVA6-CHERI; Author: Jonathan Woodruff; Organisation: Capabilities Limited; Video: Video; Slides: Slides; Speaker: Speaker
+- **Performance Progress of CVA6-CHERI** — Jonathan Woodruff · Capabilities Limited · [Video](https://youtu.be/cMhIKvF0-kw) · [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D2-2.1-Jonathan-Woodruff-CVA6-CHERI-Performance-CHERI-Blossoms-2026.pdf) · [Speaker](/people/jonathan-woodruff/)
 
-Talk Title: CHERI performance improvement update; Author: Carl Shaw; Organisation: Codasip; Video: Video; Slides: Slides; Speaker: Speaker
+- **CHERI performance improvement update** — Carl Shaw · Codasip · [Video](https://youtu.be/44wVBZ4NxZA) · [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D2-2.2-Carl-Shaw-CHERI-performance-improvement-update-CHERI-Blossoms-2026.pdf) · [Speaker](/people/carl-shaw/)
 
-Talk Title: Securing Real-Time Communication: Porting and running Edge Computing for mission critical services on [Morello](/hardware/morello/) CHERI; Author: Peter Cox / Alexander Voevoda; Organisation: [UM Labs](/organisations/um-labs/); Video: Video; Slides: Slides; Speaker: Speaker
+- **Securing Real-Time Communication: Porting and running Edge Computing for mission critical services on [Morello](/hardware/morello/) CHERI** — Peter Cox / Alexander Voevoda · [UM Labs](/organisations/um-labs/) · [Video](https://youtu.be/1s8YwStewjE) · [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D2-2.3-Peter-Cox-Securing-Real-Time-Communication-Porting-and-running-Edge-Computing-for-mission-critical-services-on-Morello-CHERI-CHERI-Blossoms-2026.pdf) · [Speaker](/people/peter-cox/)
 
-Talk Title: Rust on CHERIoT; Author: Edoardo Marangoni; Organisation: SCI Semiconductor; Video: Video; Slides: Slides; Speaker: Speaker
+- **Rust on CHERIoT** — Edoardo Marangoni · SCI Semiconductor · [Video](https://youtu.be/w96UJaagWlg) · [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D2-2.4-Edoardo-Marangoni-Rust-On-CHERIoT-CHERI-Blossoms-2026.pdf) · [Speaker](/people/edoardo-marangoni/)
 
-Talk Title: CHERI Linking through the Ages; Author: John Baldwin / Jessica Clarke; Organisation: [Ararat River Consulting, LLC](/organisations/ararat-river-consulting-llc/) / University of Cambridge; Video: Video; Slides: Slides; Speaker: Speaker
+- **CHERI Linking through the Ages** — John Baldwin / Jessica Clarke · [Ararat River Consulting, LLC](/organisations/ararat-river-consulting-llc/) / University of Cambridge · [Video](https://youtu.be/ORl43tjaVGM) · [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D2-2.5-John-Baldwin-Jessica-Clarke-CHERI-Linking-through-the-Ages-CHERI-Blossoms-2026.pdf) · [Speaker](/people/jessica-clarke/)
 
-Talk Title: Verifying Secure Memory Compartmentalization in CHERI Processors at the RTL; Author: Johannes Müller; Organisation: [RPTU](/organisations/rptu/) Kaiserslautern-Landau; Video: Video; Slides: Slides; Speaker: Speaker
+- **Verifying Secure Memory Compartmentalization in CHERI Processors at the RTL** — Johannes Müller · [RPTU](/organisations/rptu/) Kaiserslautern-Landau · [Video](https://youtu.be/8q_uNOS_h9M) · [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D2-3.1-Johannes-Mueller-Verifying-Secure-Memory-Compartmentalization-in-CHERI-Processors-at-the-RTL-CHERI-Blossoms-2026.pdf) · [Speaker](/people/johannes-muller/)
 
-Talk Title: CHERI-enabled RISC-V VP: Capabilities and Applications; Author: Luca Müller; Organisation: [German Research Center for Artificial Intelligence (DFKI)](/organisations/german-research-center-for-artificial-intelligence-dfki/); Video: Video; Slides: Slides; Speaker: Speaker
+- **CHERI-enabled RISC-V VP: Capabilities and Applications** — Luca Müller · [German Research Center for Artificial Intelligence (DFKI)](/organisations/german-research-center-for-artificial-intelligence-dfki/) · [Video](https://youtu.be/7XzzG8-FU1g) · [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D2-3.2-Luca-Mueller-CHERI-enabled-RISC-V-VP-Capabilities-and-Applications-CHERI-Blossoms-2026.pdf) · [Speaker](/people/luca-muller/)
 
-Talk Title: PICASSO: Scaling CHERI Use-After-Free Protection to Millions of Allocations; Author: [Merve Gülmez](/people/merve-gulmez/) / [Thomas Nyman](/people/thomas-nyman/); Organisation: [Ericsson](/organisations/ericsson/); Video: Video; Slides: Slides; Speaker: Speaker
+- **PICASSO: Scaling CHERI Use-After-Free Protection to Millions of Allocations** — [Merve Gülmez](/people/merve-gulmez/) / [Thomas Nyman](/people/thomas-nyman/) · [Ericsson](/organisations/ericsson/) · [Video](https://youtu.be/kkjG78h1KQk) · [Slides](https://cheri-alliance.org/wp-content/uploads/2026/06/D2-3.3-Thomas-Nyman-Merve-Gulmez-Scaling-CHERI-Use-After-Free-Protection-to-Millions-of-Allocations-CHERI-Blossoms-2026.pdf) · [Speaker](/people/merve-gulmez/)
 
-Talk Title: Towards Heterogeneous CHERI Compartmentalization; Author: Jianyi Cheng; Organisation: [University of Edinburgh](/organisations/university-of-edinburgh/); Video: Video; Slides: Slides; Speaker: Speaker
+- **Towards Heterogeneous CHERI Compartmentalization** — Jianyi Cheng · [University of Edinburgh](/organisations/university-of-edinburgh/) · [Video](https://youtu.be/wRi7jf6RWWE) · [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D2-3.4-Jianyi-Cheng-Towards-Heterogeneous-CHERI-Compartmentalization-CHERI-Blossoms-2026.pdf) · [Speaker](/people/jianyi-cheng/)
 
-Talk Title: All-Caps — Extending Capabilities Across the Whole SoC; Author: Samuel Stark; Organisation: University of Cambridge; Video: Video; Slides: Slides; Speaker: Speaker
+- **All-Caps — Extending Capabilities Across the Whole SoC** — Samuel Stark · University of Cambridge · [Video](https://youtu.be/qV_4stih5tc) · [Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D2-3.5-Samuel-Stark-All-Caps-CHERI-Blossoms-2026.pdf) · [Speaker](/people/samuel-stark/)
 
 ## Exhibitors
 
@@ -349,7 +347,7 @@ Talk Title: All-Caps — Extending Capabilities Across the Whole SoC; Author: Sa
 </li>
 <li markdown="block">
 
-[![UM Labs logo](/assets/organisations/um-labs/768e679cb95a-logo.png)](/organisations/um-labs/)
+[![UM Labs logo](/assets/organisations/um-labs/logo-transparent.svg)](/organisations/um-labs/)
 
 </li>
 <li markdown="block">
@@ -389,7 +387,7 @@ Cambridge CB3 0FD
 </li>
 </ul>
 
-View map
+[View map](https://maps.google.com/maps?q=William%20Gates%20Building)
 
 ## Speakers
 

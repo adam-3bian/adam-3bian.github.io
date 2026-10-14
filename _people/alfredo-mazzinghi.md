@@ -11,7 +11,7 @@ related:
   organisations:
   - capabilities-limited
   - university-of-cambridge
-  groups:
+  working-groups:
   - cheri-qemu
 ---
 

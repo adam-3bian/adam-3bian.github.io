@@ -4,7 +4,7 @@ image_url: /assets/news/sci-semiconductor-and-the-cheri-alliance-at-risc-v-summi
 published_date: '2025-09-08'
 authors: []
 related:
-  groups: []
+  working-groups: []
   organisations:
   - risc-v-international
   - sci-semiconductor
@@ -15,7 +15,7 @@ related:
   - cheriot-ibex
   - cheriot
   software: []
-  papers: []
+  academic-papers: []
 ---
 
 # SCI Semiconductor and the CHERI Alliance at RISC-V Summit in China, July 2025

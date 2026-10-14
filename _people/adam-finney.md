@@ -11,7 +11,7 @@ related:
   organisations:
   - cheri-alliance
   - 3bian
-  groups:
+  working-groups:
   - marketing
 ---
 

@@ -11,7 +11,7 @@ related:
   organisations:
   - university-of-kent
   - cheri-alliance
-  groups:
+  working-groups:
   - rust-plus-cheri
 ---
 

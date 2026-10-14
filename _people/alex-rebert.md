@@ -10,7 +10,7 @@ social:
 related:
   organisations:
   - google
-  groups: []
+  working-groups: []
 ---
 
 # Alex Rebert

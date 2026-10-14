@@ -5,13 +5,13 @@ published_date: '2025-11-27'
 authors:
 - marno-van-der-maas
 related:
-  groups:
+  working-groups:
   - repository-management
   organisations:
   - cheri-alliance
   hardware: []
   software: []
-  papers: []
+  academic-papers: []
 ---
 
 # Streamlining the CHERI Ecosystem: An Update from the Repository Management Working Group

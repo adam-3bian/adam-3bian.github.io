@@ -11,7 +11,7 @@ related:
   organisations:
   - ukri
   - the-university-of-manchester
-  groups: []
+  working-groups: []
 ---
 
 # John Goodacre

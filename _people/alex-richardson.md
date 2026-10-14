@@ -11,7 +11,7 @@ related:
   organisations:
   - google
   - cheri-alliance
-  groups: []
+  working-groups: []
 ---
 
 # Alex Richardson

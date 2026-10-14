@@ -13,10 +13,10 @@ related:
   - /news-and-events/people-and-opportunities/job-opportunities/
   people: []
   organisations: []
-  groups: []
+  working-groups: []
   news: []
   events: []
-  papers: []
+  academic-papers: []
   hardware: []
   software: []
   guides: []

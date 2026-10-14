@@ -11,10 +11,10 @@ location: Online via Zoom
 speakers:
 - tariq-kurd
 related:
-  groups: []
+  working-groups: []
   organisations:
   - codasip
-  papers: []
+  academic-papers: []
 ---
 
 # Webinar - CHERI & CRA Compliance

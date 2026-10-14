@@ -11,8 +11,9 @@ collections:
   events:
     label: Events
     card_action: View event
-  papers:
-    label: Papers
+  academic-papers:
+    label: Academic papers
+    url: /papers/
     card_action: View paper
   hardware:
     label: Hardware
@@ -20,8 +21,9 @@ collections:
   software:
     label: Software
     card_action: View software
-  groups:
-    label: Groups
+  working-groups:
+    label: Working groups
+    url: /alliance/leadership/working-groups/
     card_action: View working group
   guides:
     label: Guides
@@ -29,16 +31,26 @@ collections:
   policies:
     label: Policies
     card_action: Read policy
+  case-studies:
+    label: Case studies
+    url: /case-studies/
+    card_action: Read case study
+  reports:
+    label: Reports & White Papers
+    url: /reports/
+    card_action: View publication
 url_fields:
 - website_url
 - registration_url
 - publication_url
 - document_url
+- certification_url
 resource_labels:
-  website_url: Website
-  registration_url: Registration
-  publication_url: Publication
-  document_url: Official document
+  website_url: Visit website
+  registration_url: Register
+  publication_url: Read publication
+  document_url: Read document
+  certification_url: Certification record
   linkedin_url: LinkedIn
   mastodon_url: Mastodon
   github_url: GitHub
@@ -67,6 +79,8 @@ listing_presets:
   /alliance/leadership/members/:
     role: member
 aliases:
+  /adopt/assurance-and-adoption/case-studies/: /case-studies/
+  /discover/resources/reports-and-white-papers/: /reports/
   /groups/: /alliance/leadership/working-groups/
   /alliance/build/: /build/
   /contact/: /alliance/membership/contact/

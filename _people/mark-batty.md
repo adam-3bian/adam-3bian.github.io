@@ -11,7 +11,7 @@ related:
   organisations:
   - university-of-kent
   - ukri
-  groups: []
+  working-groups: []
 ---
 
 # Mark Batty

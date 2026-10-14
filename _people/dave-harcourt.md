@@ -10,7 +10,7 @@ social:
 related:
   organisations:
   - bt-group
-  groups: []
+  working-groups: []
 ---
 
 # Dave Harcourt

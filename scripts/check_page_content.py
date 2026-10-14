@@ -186,6 +186,8 @@ for file, doc in documents.items():
             if not parent_list or parent_list.tag != 'ol':
                 errors.append(f'{route}: legal clause outside ordered list')
         if node.has_class('front-matter-json'):
+            if file != target_file(BASEURL + '/checks/'):
+                errors.append(f'{route}: raw authoring properties on a public record')
             try:
                 json.loads(node.text())
             except ValueError:
@@ -218,6 +220,28 @@ for file, doc in documents.items():
             errors.append(f'{route}: {exc}')
 
 report = json.loads((ROOT / 'reports/preflight.json').read_text())
+audit = documents[target_file(BASEURL + '/checks/')]
+audit_rows = [n for n in audit.nodes if 'data-audit-row' in n.attrs]
+if len(audit_rows) != report['record_count']:
+    errors.append('Audit record count differs from current preflight')
+if len([n for n in audit.nodes if n.has_class('front-matter-json')]) != report['record_count']:
+    errors.append('Audit omits authoring properties')
+if len([n for n in audit.nodes if n.has_class('card')]) != report['collection_count']:
+    errors.append('Audit collection coverage omits a collection')
+if any(n.attrs.get('data-primary-image') != str(n.attrs.get('data-image-status') == 'provided').lower() for n in audit_rows):
+    errors.append('Audit treats a placeholder as a provided source image')
+for collection, route in [('case-studies', '/case-studies/'), ('reports', '/reports/')]:
+    directory = documents[target_file(BASEURL + route)]
+    targets = [n.attrs.get('data-record-url') for n in directory.nodes if n.has_class('card')]
+    expected = [r['url'] for r in report['records'] if r['collection'] == collection and not r['alternate']]
+    if sorted(targets) != sorted(expected):
+        errors.append('Incomplete collection directory: ' + route)
+certified_route = '/adopt/assurance-and-adoption/cheri-enabled-products/'
+certified_directory = documents.get(target_file(BASEURL + certified_route))
+certified_targets = [n.attrs.get('data-record-url') for n in certified_directory.nodes if n.has_class('card')] if certified_directory else []
+expected_certified = [r['url'] for r in report['records'] if r['collection'] == 'hardware' and r.get('properties', {}).get('certification') == 'cheri-enabled' and not r['alternate']]
+if not expected_certified or sorted(certified_targets) != sorted(expected_certified):
+    errors.append('Certified products directory does not match hardware certification properties')
 index_pages = json.loads((ROOT / 'reports/index-navigation.json').read_text())
 for route, expected_index in index_pages.items():
     doc = documents.get(target_file(BASEURL + route))
@@ -274,7 +298,7 @@ for record in report['records']:
 groups_route = '/alliance/leadership/working-groups/'
 groups_doc = documents[target_file(BASEURL + groups_route)]
 group_targets = [n.attrs.get('data-record-url') for n in groups_doc.nodes if n.has_class('card')]
-expected_groups = [r['url'] for r in report['records'] if r['collection'] == 'groups' and not r['alternate']]
+expected_groups = [r['url'] for r in report['records'] if r['collection'] == 'working-groups' and not r['alternate']]
 if sorted(group_targets) != sorted(expected_groups):
     errors.append('Working Groups directory omits or repeats canonical groups')
 board_route = '/alliance/leadership/governing-board/'

@@ -4,7 +4,7 @@ image_url: /assets/news/several-cheri-alliance-members-win-the-dsbd-competition-
 published_date: '2025-11-17'
 authors: []
 related:
-  groups: []
+  working-groups: []
   organisations:
   - the-university-of-manchester
   - university-of-birmingham
@@ -19,7 +19,7 @@ related:
   - ukri
   hardware: []
   software: []
-  papers: []
+  academic-papers: []
 ---
 
 # Several CHERI Alliance members win the DSbD competition to deliver new CHERI chips and software
@@ -42,4 +42,4 @@ The competitions, delivered by Innovate UK with funding from [DSIT](/organisatio
 
 The CHERI Alliance congratulates all winners and looks forward to driving this wave of innovation together, as we build the foundations of a safer, more secure digital world.
 
-You can read the full press release from [UKRI](/organisations/ukri/) here.
+You can read the full press release from [UKRI](/organisations/ukri/) [here](https://www.ukri.org/news/21-million-backing-for-technology-to-stop-cyber-attackers/).

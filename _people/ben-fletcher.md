@@ -10,7 +10,7 @@ social:
 related:
   organisations:
   - codasip
-  groups:
+  working-groups:
   - cheri-in-soc
 ---
 

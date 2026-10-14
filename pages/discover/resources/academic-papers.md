@@ -12,10 +12,10 @@ related:
   - /discover/resources/documentation-and-guides/
   people: []
   organisations: []
-  groups: []
+  working-groups: []
   news: []
   events: []
-  papers: []
+  academic-papers: []
   hardware: []
   software: []
   guides: []

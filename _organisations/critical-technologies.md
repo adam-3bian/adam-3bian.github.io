@@ -1,6 +1,6 @@
 ---
 title: Critical Technologies Inc.
-image_url: /assets/organisations/critical-technologies/a7937cf454b7-logo.png
+image_url: /assets/organisations/critical-technologies/logo-transparent.svg
 website_url: https://www.critical.com/
 membership_tier: full
 is_founding_member: true

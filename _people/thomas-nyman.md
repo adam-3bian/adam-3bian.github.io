@@ -10,7 +10,7 @@ social:
 related:
   organisations:
   - ericsson
-  groups: []
+  working-groups: []
 ---
 
 # Thomas Nyman

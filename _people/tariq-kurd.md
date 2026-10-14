@@ -11,7 +11,7 @@ related:
   organisations:
   - codasip
   - risc-v-international
-  groups: []
+  working-groups: []
 ---
 
 # Tariq Kurd

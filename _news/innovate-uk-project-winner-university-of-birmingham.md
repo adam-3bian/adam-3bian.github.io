@@ -5,7 +5,7 @@ published_date: '2025-11-20'
 authors:
 - mihai-ordean
 related:
-  groups: []
+  working-groups: []
   organisations:
   - university-of-birmingham
   - cheri-alliance
@@ -13,7 +13,7 @@ related:
   software:
   - real-time-operating-systems
   - zephyr
-  papers: []
+  academic-papers: []
 ---
 
 # Innovate UK Project Winner: University of Birmingham

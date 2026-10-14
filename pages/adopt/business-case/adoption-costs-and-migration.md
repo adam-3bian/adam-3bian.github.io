@@ -13,10 +13,10 @@ related:
   - /adopt/business-case/cost-of-memory-unsafety/
   people: []
   organisations: []
-  groups: []
+  working-groups: []
   news: []
   events: []
-  papers: []
+  academic-papers: []
   hardware: []
   software: []
   guides: []

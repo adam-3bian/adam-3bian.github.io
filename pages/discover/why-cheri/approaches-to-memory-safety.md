@@ -12,10 +12,10 @@ related:
   - /discover/why-cheri/why-existing-defences-are-not-enough/
   people: []
   organisations: []
-  groups: []
+  working-groups: []
   news: []
   events: []
-  papers: []
+  academic-papers: []
   hardware: []
   software: []
   guides: []

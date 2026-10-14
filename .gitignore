@@ -5,5 +5,5 @@ dist-baseurl/
 .jekyll-metadata
 .bundle/
 vendor/
-reports/
+/reports/
 *.zip

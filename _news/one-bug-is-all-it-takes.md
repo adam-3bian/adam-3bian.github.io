@@ -5,12 +5,12 @@ published_date: '2026-05-04'
 authors:
 - adam-finney
 related:
-  groups: []
+  working-groups: []
   organisations: []
   hardware: []
   software:
   - freebsd
-  papers: []
+  academic-papers: []
 ---
 
 # One Bug is All It Takes

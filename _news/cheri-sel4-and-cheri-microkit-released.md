@@ -5,7 +5,7 @@ published_date: '2025-07-29'
 authors:
 - hesham-almatary
 related:
-  groups:
+  working-groups:
   - cheri-for-sel4
   organisations:
   - capabilities-limited
@@ -13,7 +13,7 @@ related:
   hardware: []
   software:
   - rust
-  papers: []
+  academic-papers: []
 ---
 
 # CHERI-seL4 and CHERI-Microkit Released

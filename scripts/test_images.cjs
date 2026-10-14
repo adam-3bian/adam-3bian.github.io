@@ -32,14 +32,14 @@ console.log(`Asset paths: ${references} local image references across ${htmlFile
 
 const representativeRoutes = [
   '/', '/checks/', '/people/', '/guides/install-a-toolchain/', '/software/cheri-linux/',
-  '/hardware/x730/', '/people/adam-finney/', '/organisations/codasip/', '/organisations/cheri-alliance/',
+  '/hardware/x730/', '/people/adam-finney/', '/people/alex-richardson/', '/organisations/codasip/', '/organisations/cheri-alliance/',
   '/groups/cheri-linux-working-group/', '/papers/cheriot-complete-memory-safety-for-embedded-devices/',
   '/policies/code-of-conduct/',
 ];
 const routes = [...new Set([...imageRoutes, ...representativeRoutes])];
 const widths = [1440, 1024, 768, 640, 375];
 const screenshotRoutes = [
-  '/adopt/assurance-and-adoption/case-studies/', '/alliance/leadership/governing-board/',
+  '/discover/understand/how-does-cheri-work/', '/case-studies/morello/', '/alliance/leadership/governing-board/',
   '/events/embedded-world-2026/', '/hardware/x730/',
 ];
 const report = { imagePages: imageRoutes.length, pages: routes.length, widths, references, layoutChecks: 0 };
@@ -68,7 +68,7 @@ async function loaded(page, route) {
           if (root.scrollWidth > window.innerWidth + 1) errors.push(`Page overflow: ${root.scrollWidth}`);
           for (const image of document.querySelectorAll('img[src]')) {
             if (!image.naturalWidth) errors.push(`Broken image: ${image.getAttribute('src')}`);
-            const collection = image.closest('article[data-collection]:not([data-collection="pages"])');
+            const collection = image.closest('article[data-collection]');
             if ((collection && !image.closest('.image-viewer')) || image.closest('.card')) {
               const rect = image.getBoundingClientRect();
               const expected = image.classList.contains('image-portrait') || image.closest('.portrait-gallery') ? 1 : 3;
@@ -135,9 +135,9 @@ async function loaded(page, route) {
       console.log(`${width}px: ${routes.length} pages passed containment, wrapping, clearing and asset checks.`);
     }
 
-    const editorial = '/adopt/assurance-and-adoption/case-studies/';
+    const editorial = '/discover/understand/how-does-cheri-work/';
     await loaded(page, editorial);
-    assert.deepEqual(await page.locator('.article-content img').evaluateAll(images => images.map(image => image.className)), ['image-left', 'image-right', 'image-left']);
+    assert.deepEqual(await page.locator('.article-content img').evaluateAll(images => images.map(image => image.className)), ['image-left', 'image-right']);
     const first = page.locator('.article-content img[role="button"]').first();
     await first.scrollIntoViewIfNeeded();
     await first.focus();
@@ -146,15 +146,15 @@ async function loaded(page, route) {
     const dialog = page.getByRole('dialog', { name: 'Image viewer' });
     await dialog.waitFor({ state: 'visible' });
     assert.equal(await page.getByRole('button', { name: 'Close image viewer' }).evaluate(element => document.activeElement === element), true);
-    assert.equal(await page.locator('.image-viewer-status').textContent(), 'Image 1 of 3');
+    assert.equal(await page.locator('.image-viewer-status').textContent(), 'Image 1 of 2');
     await page.keyboard.press('ArrowRight');
-    assert.equal(await page.locator('.image-viewer-status').textContent(), 'Image 2 of 3');
+    assert.equal(await page.locator('.image-viewer-status').textContent(), 'Image 2 of 2');
     await page.keyboard.press('ArrowLeft');
-    assert.equal(await page.locator('.image-viewer-status').textContent(), 'Image 1 of 3');
+    assert.equal(await page.locator('.image-viewer-status').textContent(), 'Image 1 of 2');
     await page.getByRole('button', { name: 'Previous image' }).click();
-    assert.equal(await page.locator('.image-viewer-status').textContent(), 'Image 3 of 3');
+    assert.equal(await page.locator('.image-viewer-status').textContent(), 'Image 2 of 2');
     await page.getByRole('button', { name: 'Next image' }).click();
-    assert.equal(await page.locator('.image-viewer-status').textContent(), 'Image 1 of 3');
+    assert.equal(await page.locator('.image-viewer-status').textContent(), 'Image 1 of 2');
     for (let i = 0; i < 8; i++) {
       await page.keyboard.press(i < 5 ? 'Tab' : 'Shift+Tab');
       assert(await page.evaluate(() => document.activeElement.closest('dialog') !== null), 'Focus left the modal');
@@ -179,10 +179,10 @@ async function loaded(page, route) {
     const linked = await browser.newPage();
     await linked.route('**/assets/viewer.js', async route => {
       const response = await route.fetch();
-      await route.fulfill({ response, body: `document.querySelector('.article-content').insertAdjacentHTML('beforeend', '<a id="linked-image" href="#linked-image"><img class="image-left" src="/assets/shared/source-assets/5a6300ace656-cheri.png" alt="Linked example"></a><button id="interactive-image"><img class="image-right" src="/assets/shared/source-assets/5a6300ace656-cheri.png" alt="Interactive example"></button>');\n${await response.text()}` });
+      await route.fulfill({ response, body: `document.querySelector('.article-content').insertAdjacentHTML('beforeend', '<a id="linked-image" href="#linked-image"><img class="image-left" src="/assets/shared/source-assets/5a6300ace656-cheri.png" alt="Linked example"></a><button id="interactive-image"><img class="image-right" src="/assets/shared/source-assets/5a6300ace656-cheri.png" alt="Interactive example"></button><img id="decorative-image" class="image-left" src="/assets/shared/source-assets/5a6300ace656-cheri.png" alt=""><img id="portrait-image" class="image-full image-portrait" src="/assets/shared/source-assets/5a6300ace656-cheri.png" alt="Portrait example">');\n${await response.text()}` });
     });
     await loaded(linked, editorial);
-    assert.equal(await linked.locator('#linked-image img, #interactive-image img').evaluateAll(images => images.some(image => image.hasAttribute('role') || image.hasAttribute('tabindex'))), false);
+    assert.equal(await linked.locator('#linked-image img, #interactive-image img, #decorative-image, #portrait-image').evaluateAll(images => images.some(image => image.hasAttribute('role') || image.hasAttribute('tabindex'))), false);
     await linked.locator('#linked-image img').click();
     assert(new URL(linked.url()).hash === '#linked-image');
     assert.equal(await linked.locator('dialog[open]').count(), 0);
@@ -220,7 +220,7 @@ async function loaded(page, route) {
     await loaded(mobile, editorial);
     await mobile.locator('.article-content img[role="button"]').first().tap();
     await mobile.getByRole('button', { name: 'Next image' }).tap();
-    assert.equal(await mobile.locator('.image-viewer-status').textContent(), 'Image 2 of 3');
+    assert.equal(await mobile.locator('.image-viewer-status').textContent(), 'Image 2 of 2');
     const containment = await mobile.locator('.image-viewer img').evaluate(image => {
       const rect = image.getBoundingClientRect();
       return rect.left >= 0 && rect.right <= innerWidth && rect.top >= 0 && rect.bottom <= innerHeight && getComputedStyle(image).animationName === 'none';

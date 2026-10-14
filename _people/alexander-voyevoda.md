@@ -10,7 +10,7 @@ social:
 related:
   organisations:
   - um-labs
-  groups: []
+  working-groups: []
 ---
 
 # Alexander Voyevoda

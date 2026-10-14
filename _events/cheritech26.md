@@ -10,9 +10,9 @@ end_datetime: null
 location: SEMICON Europa, Munich, Germany
 speakers: []
 related:
-  groups: []
+  working-groups: []
   organisations: []
-  papers: []
+  academic-papers: []
 ---
 
 # CHERITech'26

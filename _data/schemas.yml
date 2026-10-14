@@ -3,6 +3,16 @@ common:
   version: null
   document_date: null
   document_url: null
+  summary: null
+  parent: null
+  next_page_url: null
+  related: {}
+optional:
+  hardware:
+    certification: null
+    certification_url: null
+  listing:
+    certification: null
 people:
   title: null
   image_url: null
@@ -14,18 +24,18 @@ people:
     github_url: null
   related:
     organisations: []
-    groups: []
+    working-groups: []
 news:
   title: null
   image_url: null
   published_date: null
   authors: []
   related:
-    groups: []
+    working-groups: []
     organisations: []
     hardware: []
     software: []
-    papers: []
+    academic-papers: []
 organisations:
   title: null
   image_url: null
@@ -48,17 +58,17 @@ events:
   location: null
   speakers: []
   related:
-    groups: []
+    working-groups: []
     organisations: []
-    papers: []
-papers:
+    academic-papers: []
+academic-papers:
   title: null
   image_url: null
   publication_url: null
   published_year: null
   authors: []
   related:
-    groups: []
+    working-groups: []
     hardware: []
     software: []
 hardware:
@@ -84,7 +94,7 @@ software:
     organisations: []
     hardware: []
     software: []
-groups:
+working-groups:
   title: null
   image_url: null
   website_url: null
@@ -101,13 +111,34 @@ guides:
   updated_date: null
   authors: []
   related:
-    groups: []
+    working-groups: []
     hardware: []
     software: []
 policies:
   title: null
   image_url: null
   author: null
+case-studies:
+  title: null
+  image_url: null
+  related:
+    organisations: []
+    hardware: []
+    software: []
+    reports: []
+reports:
+  title: null
+  image_url: null
+  publication_url: null
+  published_year: null
+  publication_type: null
+  publisher: null
+  authors: []
+  related:
+    organisations: []
+    case-studies: []
+    hardware: []
+    software: []
 content:
   title: null
   permalink: null
@@ -120,10 +151,10 @@ content:
     pages: []
     people: []
     organisations: []
-    groups: []
+    working-groups: []
     news: []
     events: []
-    papers: []
+    academic-papers: []
     hardware: []
     software: []
     guides: []

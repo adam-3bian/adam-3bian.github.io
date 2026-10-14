@@ -13,10 +13,10 @@ related:
   people: []
   organisations:
   - cheri-alliance
-  groups: []
+  working-groups: []
   news: []
   events: []
-  papers: []
+  academic-papers: []
   hardware: []
   software: []
   guides: []
@@ -76,7 +76,7 @@ Capabilities Limited offers the deep industry knowledge of software and hardware
 </li>
 <li markdown="block">
 
-![Centrale Supélec](/assets/pages/alliance--leadership--members/f4d5b241c89f-centrale-supelec.webp)
+![Centrale Supélec](/assets/organisations/centrale-supelec/logo-transparent.svg)
 
 Community Member
 
@@ -109,7 +109,7 @@ Codasip is a processor technology company enabling system-on-chip developers to 
 </li>
 <li markdown="block">
 
-![Critical Technologies Inc.](/assets/pages/alliance--leadership--members/a79a82dc43a3-critical-technologies.webp)
+![Critical Technologies Inc.](/assets/organisations/critical-technologies/logo-transparent.svg)
 
 Founding member Full Member
 
@@ -164,7 +164,7 @@ Digital Catapult is a deep tech innovation organisation. We help businesses grow
 </li>
 <li markdown="block">
 
-![DiscribeHub+](/assets/pages/alliance--leadership--members/0c6428d03000-discribehub.webp)
+![DiscribeHub+](/assets/organisations/discribehub/logo-transparent.svg)
 
 Community Member
 
@@ -263,7 +263,7 @@ Details to follow.
 </li>
 <li markdown="block">
 
-![Light Momentum Technology Corp.](/assets/pages/alliance--leadership--members/d3c28b0acb70-light-momentum-technology-corp.webp)
+![Light Momentum Technology Corp.](/assets/organisations/light-momentum-technology-corp/logo-transparent.svg)
 
 Founding member Full Member
 
@@ -296,7 +296,7 @@ UK National Cyber Security Centre
 </li>
 <li markdown="block">
 
-![National Taiwan University](/assets/pages/alliance--leadership--members/73f7c30cf8f3-national-taiwan-university.webp)
+![National Taiwan University](/assets/organisations/national-taiwan-university/logo-transparent.svg)
 
 Community Member
 
@@ -461,7 +461,7 @@ The Trusted Computing Center of Excellence™ (TCCoE) not-for-profit organizatio
 </li>
 <li markdown="block">
 
-![UM Labs](/assets/pages/alliance--leadership--members/9abf3fe679ac-um-labs.webp)
+![UM Labs](/assets/organisations/um-labs/logo-transparent.svg)
 
 Full Member
 

@@ -4,7 +4,7 @@ image_url: /assets/news/lowrisc-and-partners-to-deliver-commercial-quality-open-
 published_date: null
 authors: []
 related:
-  groups: []
+  working-groups: []
   organisations:
   - capabilities-limited
   - cheri-alliance
@@ -13,7 +13,7 @@ related:
   - dsit
   hardware: []
   software: []
-  papers: []
+  academic-papers: []
 ---
 
 # lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure Enclave with InnovateUK Support

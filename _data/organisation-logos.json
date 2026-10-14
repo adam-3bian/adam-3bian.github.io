@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "centrale-supelec",
+    "title": "Centrale Supélec",
+    "source": "/assets/organisations/centrale-supelec/216a613f848d-logo.jpg",
+    "output": "/assets/organisations/centrale-supelec/logo-transparent.svg",
+    "width": 2000,
+    "height": 1205
+  },
+  {
+    "slug": "critical-technologies",
+    "title": "Critical Technologies Inc.",
+    "source": "/assets/organisations/critical-technologies/a7937cf454b7-logo.png",
+    "output": "/assets/organisations/critical-technologies/logo-transparent.svg",
+    "width": 903,
+    "height": 396
+  },
+  {
+    "slug": "discribehub",
+    "title": "DiscribeHub+",
+    "source": "/assets/organisations/discribehub/70266a6e4d93-logo.jpg",
+    "output": "/assets/organisations/discribehub/logo-transparent.svg",
+    "width": 2000,
+    "height": 1139,
+    "preserve_rectangle": [
+      821,
+      100,
+      284,
+      337
+    ]
+  },
+  {
+    "slug": "light-momentum-technology-corp",
+    "title": "Light Momentum Technology Corp.",
+    "source": "/assets/organisations/light-momentum-technology-corp/baa4c8d4b03f-logo.png",
+    "output": "/assets/organisations/light-momentum-technology-corp/logo-transparent.svg",
+    "width": 478,
+    "height": 99
+  },
+  {
+    "slug": "national-taiwan-university",
+    "title": "National Taiwan University",
+    "source": "/assets/organisations/national-taiwan-university/e691a20d3fdd-logo.jpg",
+    "output": "/assets/organisations/national-taiwan-university/logo-transparent.svg",
+    "width": 295,
+    "height": 294,
+    "clip_ellipse": [
+      148,
+      147,
+      126,
+      126
+    ]
+  },
+  {
+    "slug": "um-labs",
+    "title": "UM Labs",
+    "source": "/assets/organisations/um-labs/768e679cb95a-logo.png",
+    "output": "/assets/organisations/um-labs/logo-transparent.svg",
+    "width": 2000,
+    "height": 1365
+  }
+]

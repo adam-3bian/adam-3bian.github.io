@@ -5,6 +5,7 @@
   }
   const input = document.getElementById('record-filter');
   const select = document.getElementById('record-view');
+  const collection = document.getElementById('record-collection');
   const rows = [...document.querySelectorAll('[data-audit-row]')];
   if (!input || !select) return;
   function update() {
@@ -14,15 +15,20 @@
     for (const row of rows) {
       const matchesView = view === 'all' ||
         view === 'missing-image' && row.dataset.primaryImage === 'false' ||
+        view === 'placeholder' && row.dataset.imageStatus === 'placeholder' ||
         view === 'missing-date' && row.dataset.missingDate === 'true' ||
         view === 'alternate' && row.dataset.alternate === 'true';
-      row.hidden = !(matchesView && row.textContent.toLocaleLowerCase().includes(query));
+      const matchesCollection = !collection || collection.value === 'all' || row.dataset.collection === collection.value;
+      row.hidden = !(matchesView && matchesCollection && (row.dataset.search || row.textContent).toLocaleLowerCase().includes(query));
       if (!row.hidden) count++;
     }
     document.getElementById('visible-count').textContent = `${count} ${count === 1 ? 'record' : 'records'}`;
   }
   input.addEventListener('input', update);
   select.addEventListener('change', update);
+  collection?.addEventListener('change', update);
+  document.querySelector('.audit-controls').hidden = false;
+  update();
 })();
 
 // Only editorial illustrations and photo galleries opt into the viewer. Lists,
@@ -30,9 +36,9 @@
 (() => {
   if (typeof HTMLDialogElement === 'undefined' || !HTMLDialogElement.prototype.showModal) return;
   const selector = 'img.image-left, img.image-right, img.image-full, figure.image-left img, figure.image-right img, figure.image-full img, .image-gallery img';
-  const excluded = 'a, button, label, summary, [role="button"], [role="link"], [aria-hidden="true"], [data-no-image-viewer], .cards, .logo-gallery, .portrait-gallery, .record-gallery, .image-logo, .image-icon, .lead-image';
+  const excluded = 'a, button, label, summary, [role="button"], [role="link"], [aria-hidden="true"], [data-no-image-viewer], .cards, .logo-gallery, .portrait-gallery, .record-gallery, .image-logo, .image-icon, .image-portrait, .lead-image';
   const articles = [...document.querySelectorAll('article .article-content')].map(article =>
-    [...article.querySelectorAll(selector)].filter(image => !image.closest(excluded) && !image.getAttribute('src')?.endsWith('/placeholder.svg') && !['none', 'presentation'].includes(image.getAttribute('role')))
+    [...article.querySelectorAll(selector)].filter(image => image.alt.trim() && !image.closest(excluded) && !image.getAttribute('src')?.endsWith('/placeholder.svg') && !['none', 'presentation'].includes(image.getAttribute('role')))
   ).filter(images => images.length);
   if (!articles.length) return;
 

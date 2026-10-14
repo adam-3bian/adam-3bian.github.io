@@ -3,7 +3,7 @@ title: Working groups
 permalink: /groups/
 layout: redirect
 listing:
-  collection: groups
+  collection: working-groups
   status: null
   role: null
 ---

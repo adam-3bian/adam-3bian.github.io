@@ -10,7 +10,7 @@ social:
 related:
   organisations:
   - google
-  groups:
+  working-groups:
   - mmu-less-systems
 ---
 

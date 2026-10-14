@@ -12,10 +12,10 @@ related:
   - /discover/resources/digital-security-by-design-archive/
   people: []
   organisations: []
-  groups: []
+  working-groups: []
   news: []
   events: []
-  papers: []
+  academic-papers: []
   hardware: []
   software: []
   guides: []

@@ -13,10 +13,10 @@ related:
   - /discover/history/development-of-cheri/
   people: []
   organisations: []
-  groups: []
+  working-groups: []
   news: []
   events: []
-  papers: []
+  academic-papers: []
   hardware: []
   software: []
   guides: []

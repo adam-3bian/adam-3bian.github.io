@@ -4,13 +4,13 @@ image_url: /assets/news/siemens-joins-the-cheri-alliance-a-united-front-for-cutt
 published_date: '2025-09-08'
 authors: []
 related:
-  groups: []
+  working-groups: []
   organisations:
   - cheri-alliance
   - siemens
   hardware: []
   software: []
-  papers: []
+  academic-papers: []
 ---
 
 # Siemens Joins the CHERI Alliance: a United Front for Cutting-Edge Cybersecurity

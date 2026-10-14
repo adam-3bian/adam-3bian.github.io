@@ -5,7 +5,7 @@ repository_urls: []
 updated_date: null
 authors: []
 related:
-  groups:
+  working-groups:
   - cheri-linux-working-group
   hardware:
   - morello

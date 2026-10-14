@@ -10,7 +10,7 @@ social:
 related:
   organisations:
   - university-of-cambridge
-  groups: []
+  working-groups: []
 ---
 
 # Samuel Stark

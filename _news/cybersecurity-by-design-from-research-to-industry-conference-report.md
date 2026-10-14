@@ -4,7 +4,7 @@ image_url: /assets/news/cybersecurity-by-design-from-research-to-industry-confer
 published_date: '2024-12-04'
 authors: []
 related:
-  groups: []
+  working-groups: []
   organisations:
   - sci-semiconductor
   - cheri-alliance
@@ -20,7 +20,7 @@ related:
   - morello
   - sonata
   software: []
-  papers: []
+  academic-papers: []
 ---
 
 # ‘Cybersecurity by Design – from Research to Industry’ — Conference Report

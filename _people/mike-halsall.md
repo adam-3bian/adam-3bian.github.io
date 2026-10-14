@@ -10,7 +10,7 @@ social:
 related:
   organisations:
   - cheri-alliance
-  groups: []
+  working-groups: []
 ---
 
 # Mike Halsall

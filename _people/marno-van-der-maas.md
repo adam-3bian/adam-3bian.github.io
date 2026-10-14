@@ -11,7 +11,7 @@ related:
   organisations:
   - lowrisc
   - university-of-cambridge
-  groups:
+  working-groups:
   - repository-management
 ---
 

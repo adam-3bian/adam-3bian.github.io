@@ -5,7 +5,7 @@ published_date: '2025-05-27'
 authors:
 - mike-eftimakis
 related:
-  groups:
+  working-groups:
   - marketing
   organisations:
   - dstl
@@ -14,7 +14,7 @@ related:
   hardware: []
   software:
   - zephyr
-  papers: []
+  academic-papers: []
 ---
 
 # Unlocking the Future: A Roadmap for CHERI Technology Advancement

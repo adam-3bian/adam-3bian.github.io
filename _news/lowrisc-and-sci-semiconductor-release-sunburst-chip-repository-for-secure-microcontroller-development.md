@@ -4,14 +4,14 @@ image_url: /assets/news/lowrisc-and-sci-semiconductor-release-sunburst-chip-repo
 published_date: '2025-04-07'
 authors: []
 related:
-  groups: []
+  working-groups: []
   organisations:
   - sci-semiconductor
   - lowrisc
   hardware:
   - cheriot-ibex
   software: []
-  papers: []
+  academic-papers: []
 ---
 
 # lowRISC and SCI Semiconductor Release Sunburst Chip Repository for Secure Microcontroller Development

@@ -10,7 +10,7 @@ social:
 related:
   organisations:
   - wind-river
-  groups: []
+  working-groups: []
 ---
 
 # Dmitriy Yeliseyev

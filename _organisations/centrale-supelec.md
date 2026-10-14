@@ -1,6 +1,6 @@
 ---
 title: Centrale Supélec
-image_url: /assets/organisations/centrale-supelec/216a613f848d-logo.jpg
+image_url: /assets/organisations/centrale-supelec/logo-transparent.svg
 website_url: https://www.centralesupelec.fr/
 membership_tier: community
 is_founding_member: null

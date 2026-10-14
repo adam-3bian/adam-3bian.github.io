@@ -1,18 +1,23 @@
 {% capture metadata_rows %}
+{% if page.collection == 'events' %}
+{% assign event_start = page.start_datetime | default: page.start_date %}{% assign event_end = page.end_datetime | default: page.end_date %}
+{% if event_start %}<dt>When</dt><dd><time datetime="{{ event_start }}">{% if page.start_datetime %}{{ event_start | date: '%-d %B %Y, %H:%M %:z' }}{% else %}{{ event_start | date: '%-d %B %Y' }}{% endif %}</time>{% if event_end and event_end != event_start %} – <time datetime="{{ event_end }}">{% if page.end_datetime %}{{ event_end | date: '%-d %B %Y, %H:%M %:z' }}{% else %}{{ event_end | date: '%-d %B %Y' }}{% endif %}</time>{% endif %}</dd>{% endif %}
+{% if page.location %}<dt>Where</dt><dd>{{ page.location | escape }}</dd>{% endif %}
+{% assign final_event_day = event_end | default: event_start | slice: 0, 10 %}{% assign current_day = site.time | date: '%Y-%m-%d' %}<dt>Event status</dt><dd>{% if final_event_day < current_day %}Past event{% else %}Upcoming event{% endif %}</dd>
+{% endif %}
 {% if page.is_speaker %}<dt>Role</dt><dd>Speaker</dd>{% endif %}
-{% if page.related.organisations.size > 0 %}<dt>Organisations</dt><dd>{% include reference-links.html collection='organisations' ids=page.related.organisations %}</dd>{% endif %}
-{% if page.authors.size > 0 %}<dt>Authors</dt><dd>{% include reference-links.html collection='people' ids=page.authors %}</dd>{% endif %}
+{% if page.related.organisations.size > 0 %}<dt>{% if page.collection == 'events' %}Taking part{% else %}Organisations{% endif %}</dt><dd>{% include reference-links.html collection='organisations' ids=page.related.organisations %}</dd>{% endif %}
+{% if page.authors.size > 0 %}<dt>Written by</dt><dd>{% include reference-links.html collection='people' ids=page.authors %}</dd>{% endif %}
 {% if page.speakers.size > 0 %}<dt>Speakers</dt><dd>{% include reference-links.html collection='people' ids=page.speakers %}</dd>{% endif %}
 {% if page.author %}{% assign single_author = page.author | split: '||' %}<dt>Author</dt><dd>{% include reference-links.html collection='people' ids=single_author %}</dd>{% endif %}
-{% if page.leads.size > 0 %}<dt>Leads</dt><dd>{% include reference-links.html collection='people' ids=page.leads %}</dd>{% endif %}
+{% if page.leads.size > 0 %}<dt>Group leads</dt><dd>{% include reference-links.html collection='people' ids=page.leads %}</dd>{% endif %}
 {% if page.membership_tier %}<dt>Membership</dt><dd>{{ page.membership_tier | capitalize }} member{% if page.is_founding_member %} · Founding member{% endif %}</dd>{% elsif page.is_founding_member %}<dt>Membership</dt><dd>Founding member</dd>{% endif %}
+{% if page.collection == 'hardware' and page.certification == 'cheri-enabled' %}<dt>Certification</dt><dd>CHERI Enabled</dd>{% endif %}
 {% if page.published_date %}<dt>Published</dt><dd><time datetime="{{ page.published_date }}">{{ page.published_date | date: '%-d %B %Y' }}</time></dd>{% endif %}
-{% if page.published_year %}<dt>Publication year</dt><dd>{{ page.published_year }}</dd>{% endif %}
+{% if page.published_year %}<dt>Published</dt><dd>{{ page.published_year }}</dd>{% endif %}
+{% if page.publisher %}<dt>Published by</dt><dd>{{ page.publisher | escape }}</dd>{% endif %}
+{% if page.publication_type %}<dt>Publication</dt><dd>{{ page.publication_type | replace: '-', ' ' | capitalize | escape }}</dd>{% endif %}
 {% if page.updated_date %}<dt>Updated</dt><dd>{{ page.updated_date | date: '%-d %B %Y' }}</dd>{% endif %}
-{% if page.collection == 'events' %}{% assign final_event_day = page.end_datetime | default: page.end_date | default: page.start_datetime | default: page.start_date | slice: 0, 10 %}{% assign current_day = site.time | date: '%Y-%m-%d' %}<dt>Status</dt><dd>{% if final_event_day < current_day %}Past{% else %}Upcoming{% endif %}</dd>{% endif %}
-{% if page.start_datetime %}<dt>Starts</dt><dd><time datetime="{{ page.start_datetime }}">{{ page.start_datetime | date: '%-d %B %Y, %H:%M %:z' }}</time></dd>{% elsif page.start_date %}<dt>Starts</dt><dd><time datetime="{{ page.start_date }}">{{ page.start_date | date: '%-d %B %Y' }}</time></dd>{% endif %}
-{% if page.end_datetime %}<dt>Ends</dt><dd><time datetime="{{ page.end_datetime }}">{{ page.end_datetime | date: '%-d %B %Y, %H:%M %:z' }}</time></dd>{% elsif page.end_date %}<dt>Ends</dt><dd><time datetime="{{ page.end_date }}">{{ page.end_date | date: '%-d %B %Y' }}</time></dd>{% endif %}
-{% if page.location %}<dt>Location</dt><dd>{{ page.location | escape }}</dd>{% endif %}
 {% for key in site.data.viewer.classification_fields %}{% if page[key] %}<dt>{{ key | capitalize }}</dt><dd>{{ page[key] | escape }}</dd>{% endif %}{% endfor %}
 {% if page.version %}<dt>Version</dt><dd>{{ page.version | escape }}</dd>{% endif %}
 {% if page.document_date %}<dt>Document date</dt><dd><time datetime="{{ page.document_date | escape }}">{% assign date_length = page.document_date | size %}{% if date_length == 7 %}{{ page.document_date | append: '-01' | date: '%B %Y' }}{% else %}{{ page.document_date | date: '%-d %B %Y' }}{% endif %}</time></dd>{% endif %}
@@ -24,4 +29,4 @@
 {% endcapture %}
 {% assign populated_rows = metadata_rows | strip %}{% assign populated_resources = metadata_resources | strip %}
 {% capture resource_navigation %}{% if populated_resources != '' %}<nav class="resource-links" aria-label="Resources"><ul role="list">{{ populated_resources }}</ul></nav>{% endif %}{% endcapture %}
-{% if populated_rows != '' %}<section class="metadata" aria-label="Record details"><dl>{{ populated_rows }}</dl>{{ resource_navigation }}</section>{% else %}{{ resource_navigation }}{% endif %}
+{% if populated_rows != '' %}<section class="metadata" aria-labelledby="record-details"><h2 id="record-details">At a glance</h2><dl>{{ populated_rows }}</dl>{{ resource_navigation }}</section>{% else %}{{ resource_navigation }}{% endif %}

@@ -1,6 +1,6 @@
 ---
 title: DiscribeHub+
-image_url: /assets/organisations/discribehub/70266a6e4d93-logo.jpg
+image_url: /assets/organisations/discribehub/logo-transparent.svg
 website_url: https://www.discribehub.org/
 membership_tier: community
 is_founding_member: null

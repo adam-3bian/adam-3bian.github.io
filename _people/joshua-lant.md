@@ -10,7 +10,7 @@ social:
 related:
   organisations:
   - the-university-of-manchester
-  groups: []
+  working-groups: []
 ---
 
 # Joshua Lant

@@ -1,11 +1,12 @@
 <ul class="cards" role="list">
 {% for item in include.items %}
-  {% assign card_image_height = 120 %}{% if item.collection == 'people' and item.is_speaker or include.role == 'board' %}{% assign card_image_height = 360 %}{% endif %}
+  {% assign card_image_height = 120 %}{% if item.collection == 'people' or include.role == 'board' %}{% assign card_image_height = 360 %}{% endif %}
   {% assign card_summary = '' %}{% assign card_content = item.content | markdownify %}{% assign card_paragraphs = card_content | split: '<p>' %}
   {% for paragraph in card_paragraphs offset: 1 %}{% assign candidate_summary = paragraph | split: '</p>' | first | strip_html | strip %}{% if candidate_summary != '' %}{% assign card_summary = candidate_summary | remove_first: 'Board role: ' %}{% break %}{% endif %}{% endfor %}
   {% if include.role == 'board' %}{% assign board_properties = card_content | split: '<dd>' %}{% if board_properties.size > 1 %}{% assign card_summary = board_properties[1] | split: '</dd>' | first | strip_html | strip %}{% endif %}{% endif %}
+  {% assign card_summary = item.summary | default: card_summary %}
   <li><a class="card" href="{{ item.url | relative_url }}" data-record-url="{{ item.url | escape }}">
-    {% unless include.show_images == false or item.image_url contains '/placeholder.svg' %}{% if item.image_url %}<img class="{% if card_image_height == 360 %}image-portrait{% endif %}" src="{% include href.html url=item.image_url %}" alt="{{ item.title | escape }}" width="360" height="{{ card_image_height }}" loading="lazy">{% endif %}{% endunless %}
+    {% unless include.show_images == false or item.image_url contains '/placeholder.svg' %}{% if item.image_url %}<img class="{% if card_image_height == 360 %}image-portrait{% elsif item.collection == 'organisations' %}image-logo{% endif %}" src="{% include href.html url=item.image_url %}" alt="{{ item.title | escape }}" width="360" height="{{ card_image_height }}" loading="lazy">{% endif %}{% endunless %}
     <hgroup class="card-text">
       <h3>{{ item.title | escape }}</h3>
       {% if include.role == 'board' %}{% assign affiliation_slug = item.related.organisations | first %}{% assign affiliation = site.organisations | where: 'slug', affiliation_slug | first %}{% if affiliation %}<p class="card-meta">{{ affiliation.title | escape }}</p>{% endif %}

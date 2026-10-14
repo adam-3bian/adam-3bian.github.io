@@ -11,8 +11,9 @@ const report = { widths: [1440, 1024, 768, 640, 375], layoutChecks: 0, accessibi
 const preflight = JSON.parse(fs.readFileSync('reports/preflight.json', 'utf8'));
 const indexes = JSON.parse(fs.readFileSync('reports/index-navigation.json', 'utf8'));
 const footer = JSON.parse(fs.readFileSync('reports/footer-navigation.json', 'utf8'));
-const cardRoutes = ['/people/', '/organisations/', '/news/', '/events/', '/papers/', '/hardware/', '/software/', '/guides/', '/policies/', '/alliance/leadership/working-groups/', '/alliance/leadership/governing-board/'];
-const groups = preflight.records.filter(r => r.collection === 'groups' && !r.alternate).map(r => r.url).sort();
+const logoMasks = JSON.parse(fs.readFileSync('_data/organisation-logos.json', 'utf8'));
+const cardRoutes = ['/people/', '/organisations/', '/news/', '/events/', '/papers/', '/hardware/', '/software/', '/guides/', '/policies/', '/case-studies/', '/reports/', '/checks/', '/alliance/leadership/working-groups/', '/alliance/leadership/governing-board/', '/adopt/assurance-and-adoption/cheri-enabled-products/'];
+const groups = preflight.records.filter(r => r.collection === 'working-groups' && !r.alternate).map(r => r.url).sort();
 const board = fs.readFileSync('_data/governing-board.yml', 'utf8').split('\n').filter(l => l.startsWith('- ')).map(l => `/people/${l.slice(2)}/`);
 const routes = [
   '/policies/competition-law-statement/',
@@ -22,6 +23,9 @@ const routes = [
   '/policies/',
   '/organisations/cheri-alliance/',
   '/people/adam-finney/',
+  '/people/alex-richardson/',
+  '/people/allison-randal/',
+  '/people/andrew-lindsay/',
   '/news/ai-has-compressed-the-attack-timeline/',
   '/events/cheri-blossoms-conference-2026/',
   '/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/',
@@ -38,8 +42,16 @@ const routes = [
   '/news-and-events/people-and-opportunities/speakers/',
   '/organisations/3bian/',
   '/news/secure-and-resilient-systems-in-the-era-of-cra-and-iot/',
-  '/discover/resources/reports-and-white-papers/',
-  '/adopt/assurance-and-adoption/case-studies/',
+  '/reports/',
+  '/case-studies/',
+  '/case-studies/morello/',
+  '/case-studies/cheribsd/',
+  '/case-studies/cheriot/',
+  '/case-studies/codasip-x730/',
+  '/reports/an-introduction-to-cheri/',
+  '/events/embedded-world-2026/',
+  '/discover/understand/how-does-cheri-work/',
+  '/checks/',
   ...cardRoutes,
   ...Object.keys(indexes),
 ].filter((route, index, all) => all.indexOf(route) === index);
@@ -69,6 +81,11 @@ const routes = [
           for (const panel of document.querySelectorAll('.metadata')) {
             if (!panel.textContent.trim() || panel.textContent.trim() === 'Placeholder image') errors.push('Empty metadata');
             if (!panel.querySelector('dl > dt')) errors.push('Metadata without facts');
+            if (panel.querySelector('table, div, span') || panel.querySelector('h2')?.textContent !== 'At a glance') errors.push('Record summary is not reader-facing');
+          }
+          if (document.querySelector('article .inspector, article .front-matter-json, .lead-image[src$="placeholder.svg"]')) errors.push('Authoring data or empty image fallback on a public record');
+          for (const logo of document.querySelectorAll('img.image-logo')) {
+            if (getComputedStyle(logo).backgroundColor !== 'rgba(0, 0, 0, 0)') errors.push('Unnecessary logo display background');
           }
           for (const nav of document.querySelectorAll('.resource-links')) {
             if (nav.tagName !== 'NAV' || !nav.querySelector('ul > li > a')) errors.push('Resource links lack navigation/list semantics');
@@ -80,6 +97,8 @@ const routes = [
           }
           for (const value of document.querySelectorAll('.metadata dd, .organisation-details dd, .record-properties dd')) {
             const rect = value.getBoundingClientRect();
+            const style = getComputedStyle(value);
+            if (style.backgroundColor !== 'rgba(0, 0, 0, 0)' || parseFloat(style.borderBottomWidth) !== 0) errors.push('Property value still styled as a table cell');
             if (rect.left < 0 || rect.right > innerWidth || value.scrollWidth > value.clientWidth + 1) errors.push('Metadata value overflows');
             const label = value.previousElementSibling;
             const labelRect = label.getBoundingClientRect();
@@ -116,7 +135,31 @@ const routes = [
         assert.equal(await page.locator('.footer-groups').evaluate(list => getComputedStyle(list).gridTemplateColumns.split(' ').length), width <= 640 ? 1 : width < 1024 ? 2 : 4, 'Footer column layout');
         report.footerChecks++;
         if (route === '/') await page.locator('.site-footer').screenshot({ path: path.join(reportDir, `footer-${width}.png`) });
-        if (route === '/adopt/assurance-and-adoption/case-studies/') await page.locator('.relationships').screenshot({ path: path.join(reportDir, `related-links-${width}.png`) });
+        if (route === '/case-studies/') await page.locator('.relationships').screenshot({ path: path.join(reportDir, `related-links-${width}.png`) });
+        if (['/case-studies/', '/reports/'].includes(route)) {
+          const collection = route === '/case-studies/' ? 'case-studies' : 'reports';
+          const targets = await page.locator('.listing .card').evaluateAll(cards => cards.map(card => card.dataset.recordUrl).sort());
+          assert.deepEqual(targets, preflight.records.filter(record => record.collection === collection && !record.alternate).map(record => record.url).sort(), 'Complete new collection directory');
+          await page.screenshot({ path: path.join(reportDir, `${collection}-directory-${width}.png`), fullPage: true });
+        }
+        if (route === '/events/embedded-world-2026/') {
+          assert.equal(await page.locator('.metadata dt').first().textContent(), 'When');
+          assert.deepEqual(await page.locator('.metadata time').evaluateAll(times => times.map(time => time.dateTime)), ['2026-03-10', '2026-03-12']);
+          await page.screenshot({ path: path.join(reportDir, `event-details-${width}.png`), fullPage: true });
+        }
+        if (route === '/adopt/assurance-and-adoption/cheri-enabled-products/') {
+          const targets = await page.locator('.listing .card').evaluateAll(cards => cards.map(card => card.dataset.recordUrl).sort());
+          const certified = preflight.records.filter(record => record.collection === 'hardware' && record.properties.certification === 'cheri-enabled' && !record.alternate);
+          assert(certified.length > 0, 'No certified hardware source records');
+          assert.deepEqual(targets, certified.map(record => record.url).sort(), 'Certified directory must follow hardware front matter');
+          assert.equal(await page.locator('.article-content > img, .article-content > p > img').count(), 0, 'Repeated certification logos');
+          await page.screenshot({ path: path.join(reportDir, `certified-products-${width}.png`), fullPage: true });
+        }
+        if (route === '/checks/') {
+          assert.equal(await page.locator('[data-audit-row]').count(), preflight.record_count);
+          assert.equal(await page.locator('.cards .card').count(), preflight.collection_count);
+          await page.screenshot({ path: path.join(reportDir, `audit-summary-${width}.png`) });
+        }
         if (indexes[route]) {
           const expected = indexes[route];
           assert.equal(await page.locator('main h1').count(), 1, 'Index has one title');
@@ -166,7 +209,7 @@ const routes = [
         if (route === '/organisations/cheri-alliance/') {
           assert.equal(await page.locator('main h1').count(), 1, 'Duplicate Alliance page heading');
           assert.equal((await page.locator('.article-content').innerText()).includes('|'), false, 'Broken administrative table is visible');
-          assert.deepEqual(await page.locator('.resource-links a').allTextContents(), ['Website', 'LinkedIn']);
+          assert.deepEqual(await page.locator('.resource-links a').allTextContents(), ['Visit website', 'LinkedIn']);
           assert.equal(await page.locator('.metadata').count(), 0, 'Link-only page still has a metadata container');
           await page.screenshot({ path: path.join(reportDir, `cheri-alliance-${width}.png`), fullPage: true });
         }
@@ -190,6 +233,65 @@ const routes = [
         }
       }
     }
+    // Verify actual rendered transparency and original pixels, including the
+    // intentionally white S and cream seal interior that must remain visible.
+    await page.setViewportSize({ width: 1440, height: 900 });
+    for (const logo of logoMasks) {
+      await page.goto(url(`/organisations/${logo.slug}/`));
+      const problems = await page.locator('.lead-image.image-logo').evaluate(async (displayed, config) => {
+        await displayed.decode();
+        const original = new Image(); original.src = config.sourceURL; await original.decode();
+        const canvas = document.createElement('canvas'); canvas.width = original.naturalWidth; canvas.height = original.naturalHeight;
+        const ctx = canvas.getContext('2d', { willReadFrequently: true });
+        ctx.drawImage(original, 0, 0); const before = ctx.getImageData(0, 0, canvas.width, canvas.height).data;
+        ctx.clearRect(0, 0, canvas.width, canvas.height); ctx.drawImage(displayed, 0, 0, canvas.width, canvas.height);
+        const after = ctx.getImageData(0, 0, canvas.width, canvas.height).data; const errors = [];
+        for (const [x, y] of [[0,0],[canvas.width-1,0],[0,canvas.height-1],[canvas.width-1,canvas.height-1]]) {
+          if (after[(y * canvas.width + x) * 4 + 3] !== 0) errors.push('Canvas background remains opaque');
+        }
+        let checked = 0;
+        for (let y = Math.floor(canvas.height * .15); y < canvas.height * .85; y += Math.max(1, Math.floor(canvas.height / 24))) {
+          for (let x = Math.floor(canvas.width * .15); x < canvas.width * .85; x += Math.max(1, Math.floor(canvas.width / 30))) {
+            const i = (y * canvas.width + x) * 4;
+            if (before[i+3] === 255 && before[i]+before[i+1]+before[i+2] < 660) {
+              if ([0,1,2,3].some(channel => Math.abs(before[i+channel] - after[i+channel]) > 2)) errors.push('Original logo artwork changed');
+              checked++;
+            }
+          }
+        }
+        if (!checked) errors.push('No original artwork pixels checked');
+        if (config.preserveRectangle) {
+          const [left, top, width, height] = config.preserveRectangle; let whites = 0;
+          for (let y = top; y < top + height; y += 4) for (let x = left; x < left + width; x += 4) {
+            const i = (y * canvas.width + x) * 4;
+            if (before[i] > 248 && before[i+1] > 248 && before[i+2] > 248 && before[i+3] === 255) {
+              if ([0,1,2,3].some(channel => Math.abs(before[i+channel] - after[i+channel]) > 2)) errors.push('Intentional white artwork removed');
+              whites++;
+            }
+          }
+          if (!whites) errors.push('No intentional white artwork checked');
+        }
+        if (config.clipEllipse) {
+          const [cx, cy, rx, ry] = config.clipEllipse;
+          for (const [dx,dy] of [[0,0],[-.4,-.4],[.4,-.4],[-.4,.4],[.4,.4]]) {
+            const i = (Math.round(cy + dy * ry) * canvas.width + Math.round(cx + dx * rx)) * 4;
+            if ([0,1,2,3].some(channel => Math.abs(before[i+channel] - after[i+channel]) > 2)) errors.push('Seal interior changed');
+          }
+        }
+        return [...new Set(errors)];
+      }, { sourceURL: url(logo.source), preserveRectangle: logo.preserve_rectangle, clipEllipse: logo.clip_ellipse });
+      assert.deepEqual(problems, [], logo.slug);
+      await page.locator('.record-header').screenshot({ path: path.join(reportDir, `logo-${logo.slug}.png`) });
+    }
+    await page.goto(url('/checks/'));
+    await page.locator('#record-collection').selectOption('reports');
+    assert.equal(await page.locator('[data-audit-row]:visible').count(), 5);
+    await page.locator('#record-view').selectOption('placeholder');
+    assert.equal(await page.locator('[data-audit-row]:visible').count(), 5, 'Report image coverage uses actual source-image status');
+    await page.locator('#record-filter').fill('introduction');
+    assert.equal(await page.locator('[data-audit-row]:visible').count(), 1);
+    await page.locator('[data-audit-row]:visible .audit-properties > summary').click();
+    assert.equal(JSON.parse(await page.locator('[data-audit-row]:visible .front-matter-json').textContent()).published_year, 2019);
     // Native refresh redirects and normal destination links survive without JS.
     const context = await browser.newContext({ javaScriptEnabled: false });
     const plain = await context.newPage();
@@ -203,6 +305,8 @@ const routes = [
       ['/policies/ip-policy/', '/policies/intellectual-property-policy/'],
       ['/policies/trademark-original/', '/policies/trademark/'],
       ['/groups/', '/alliance/leadership/working-groups/'],
+      ['/adopt/assurance-and-adoption/case-studies/', '/case-studies/'],
+      ['/discover/resources/reports-and-white-papers/', '/reports/'],
     ];
     for (const [source, destination] of aliases) {
       await plain.goto(url(source));
@@ -230,7 +334,7 @@ const routes = [
         await plain.waitForURL(url(target));
         report.noScriptCards++;
       }
-      await plain.goto(url('/adopt/assurance-and-adoption/case-studies/'));
+      await plain.goto(url('/case-studies/'));
       const related = plain.locator('.link-grid a').first();
       const relatedTarget = new URL(await related.getAttribute('href'), plain.url()).href;
       const relatedBox = await related.boundingBox();
@@ -255,6 +359,12 @@ const routes = [
       assert.equal(await plain.locator('main h1').count(), 1, 'Index link opens its destination without JS');
       report.noScriptIndexes++;
     }
+    await plain.goto(url('/checks/'));
+    assert.equal(await plain.locator('[data-audit-row]:visible').count(), preflight.record_count, 'Complete audit remains available without JS');
+    const properties = plain.locator('.audit-properties').first();
+    await properties.locator('summary').focus();
+    await plain.keyboard.press('Enter');
+    assert.equal(await properties.getAttribute('open'), '', 'Native properties disclosure works without JS');
     await context.close();
     fs.writeFileSync(path.join(reportDir, 'results.json'), JSON.stringify(report, null, 2) + '\n');
     console.log(JSON.stringify(report));

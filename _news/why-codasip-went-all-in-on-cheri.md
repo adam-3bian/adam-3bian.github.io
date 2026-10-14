@@ -4,13 +4,13 @@ image_url: /assets/news/why-codasip-went-all-in-on-cheri/4bc1f676007d-hero.jpg
 published_date: '2026-04-29'
 authors: []
 related:
-  groups: []
+  working-groups: []
   organisations:
   - cheri-alliance
   - codasip
   hardware: []
   software: []
-  papers: []
+  academic-papers: []
 ---
 
 # Why Codasip went all‑in on CHERI

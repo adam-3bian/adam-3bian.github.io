@@ -11,7 +11,7 @@ related:
   organisations:
   - university-of-glasgow
   - lowrisc
-  groups:
+  working-groups:
   - cheri-virtual-machines
 ---
 

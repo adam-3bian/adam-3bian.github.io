@@ -11,7 +11,7 @@ related:
   organisations:
   - ericsson
   - ku-leuven
-  groups: []
+  working-groups: []
 ---
 
 # Merve Gülmez

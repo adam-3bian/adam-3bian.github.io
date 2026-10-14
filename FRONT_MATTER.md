@@ -1,16 +1,16 @@
 # Front matter reference
 
-This is the authoring reference for all ten collections and the three common page schemas. The executable field shapes are in [`_data/schemas.yml`](_data/schemas.yml); [`scripts/check_content.rb`](scripts/check_content.rb) validates them. Rendering, aliases, role relationships and listing presets are defined in [`_data/viewer.yml`](_data/viewer.yml) and [`_config.yml`](_config.yml).
+This is the authoring reference for all twelve collections and the three common page schemas. The executable field shapes are in [`_data/schemas.yml`](_data/schemas.yml); [`scripts/check_content.rb`](scripts/check_content.rb) validates them. Rendering, aliases, role relationships and listing presets are defined in [`_data/viewer.yml`](_data/viewer.yml) and [`_config.yml`](_config.yml).
 
 ## Required keys and optional values
 
 Each document starts with a YAML block between two `---` lines. **Include every key in its collection or page schema**, including nested keys. An unused scalar is `null`; an unused list is `[]`. A key being required does not mean its value must be populated. `title` must be nonempty, pages need their registered `permalink`, and events need exactly one start date or start datetime.
 
-The three **shared optional properties** below may be omitted entirely, or supplied alongside any collection or page schema. Unknown extra properties fail validation. Populated metadata on article and record pages renders as a semantic definition list, with reference lists and resource navigation. Index pages show their title, summary and page list. Image paths supply the displayed image without adding an original-image download link. Empty metadata and resource sections are omitted.
+The **shared optional properties** below may be omitted entirely, or supplied alongside any collection or page schema. Unknown extra properties fail validation. Populated metadata on article and record pages renders as a semantic definition list, with reference lists and resource navigation. Index pages show their title, summary and page list. Image paths supply the displayed image without adding an original-image download link. Empty metadata and resource sections are omitted.
 
 Keep human-readable article content in the body; keep record-level versions, dates, resource URLs and relationships in front matter.
 
-Shared metadata and body property lists use the same label/value rows, with subtle dividers and stacked labels at 640px and below. For additional factual details that belong to the article, use Kramdown's native definition-list syntax:
+Shared metadata and body property lists use the same label/value rows, with open spacing and stacked labels at 640px and below. For additional factual details that belong to the article, use Kramdown's native definition-list syntax:
 
 ```markdown
 Group type
@@ -24,7 +24,11 @@ Do not repeat a front-matter property in the body unless it adds useful detail. 
 | --- | --- | --- |
 | `version` | Quoted string or `null` | The document, product or record version; displayed as Version. Use `"1.01"`, not a YAML number. Versions of individual ISA extensions remain with their technical descriptions. |
 | `document_date` | Quoted `YYYY-MM` or `YYYY-MM-DD` string, or `null` | The source document's stated date; displayed as Document date. `"2024-08"` displays **August 2024**, preserving month precision. This is separate from publication, event and editorial update dates. |
-| `document_url` | HTTP(S) URL, existing root-relative asset path, or `null` | The official document, normally a PDF; displayed as an Official document resource link. Local files must exist. |
+| `document_url` | HTTP(S) URL, existing root-relative asset path, or `null` | The official document, normally a PDF; displayed as a Read document resource link. Local files must exist. |
+| `summary` | String or `null` | A short introduction under the title and, when provided, the card preview. It remains required by content/index schemas. |
+| `parent` | Registered page route or `null` | Optional breadcrumb parent override; update the page map to agree. Collection defaults normally supply it. |
+| `next_page_url` | Registered page route or `null` | Optional next-page navigation. |
+| `related` | Mapping of registered collection keys to slug arrays; `pages` contains page routes | Optional on listings. For collections/content pages, keep their required related keys and add other registered collection keys when useful. For example, `related.case-studies: [cheribsd]` and `related.reports: [an-introduction-to-cheri]`. Unknown collections, duplicate values and unresolved targets fail validation. |
 
 Use quoted strings for dates and URLs where YAML punctuation could be ambiguous. Ordinary `*_date` fields require a complete valid `YYYY-MM-DD` date. `*_datetime` fields require ISO 8601 with `Z` or a numeric timezone offset, for example `"2026-01-21T09:00:00+00:00"`. Only `document_date` accepts a month without a day. Do not guess missing dates or invent an effective date from a document's publication date.
 
@@ -39,7 +43,7 @@ Every collection has these two required keys, in addition to its own keys listed
 
 Collection slugs come from Markdown filenames: `_people/adam-finney.md` becomes `/people/adam-finney/`. Do not put `slug` or `permalink` in collection front matter. Add the record to `_data/page-map.yml` when creating a new file.
 
-Images render in contained 3:1 frames; speaker portraits and the board's portrait cards render in 1:1 frames. Asset bytes retain their original proportions. Placeholder assets remain fallbacks in record headers; directories omit placeholder images and repeated generic group illustrations so that useful text leads the cards. Images do not generate metadata links or empty panels. Image alignment classes belong in Markdown, not front matter: `.image-left`, `.image-right`, `.image-full`, `.image-logo`, `.image-icon` and `.image-portrait`. Keep consecutive photos, logos and portraits in an appropriate gallery; preserve captions with `figure`/`figcaption`.
+Images render in contained 3:1 frames; people portraits, including speakers and board members, render in 1:1 frames. Asset bytes retain their original proportions. Placeholder assets remain local fallbacks for validation and image coverage; public headers and directories omit them. Organisation logos use transparent display frames. Case-study primary images supply the directory cards; their body illustrations render beside the prose without a duplicate header image. Images do not generate metadata links or empty panels. Image alignment classes belong in Markdown, not front matter: `.image-left`, `.image-right`, `.image-full`, `.image-logo`, `.image-icon` and `.image-portrait`. Keep consecutive photos, logos and portraits in an appropriate gallery; preserve captions with `figure`/`figcaption`.
 
 All relationship arrays contain existing **collection slugs**, without directory prefixes, `.md`, or full URLs. `related.pages` is the exception: it contains registered page routes, including the leading and trailing slash. Do not use a comma-separated string in place of an array, and do not repeat values. Authors, speakers, leads and the singular policy author all reference `_people` records.
 
@@ -55,7 +59,7 @@ All relationship arrays contain existing **collection slugs**, without directory
 | `social.github_url` | URL or `null` | GitHub profile. |
 | `related` | Mapping | Include both relationship keys below. |
 | `related.organisations` | Slug array | Affiliations; displayed in metadata and as reverse relationships. |
-| `related.groups` | Slug array | Related working groups. |
+| `related.working-groups` | Slug array | Related working groups. |
 
 ## News (`_news`)
 
@@ -64,11 +68,11 @@ All relationship arrays contain existing **collection slugs**, without directory
 | `published_date` | Full date or `null` | Publication date. Dated news sorts newest first; undated records follow it. |
 | `authors` | People slug array | Named authors, with links back to their authored news. |
 | `related` | Mapping | Include all five keys below. |
-| `related.groups` | Slug array | Relevant working groups. |
+| `related.working-groups` | Slug array | Relevant working groups. |
 | `related.organisations` | Slug array | Relevant organisations. |
 | `related.hardware` | Slug array | Relevant hardware. |
 | `related.software` | Slug array | Relevant software. |
-| `related.papers` | Slug array | Relevant publications. |
+| `related.academic-papers` | Slug array | Relevant publications. |
 
 An event mentioned in news can be linked in the body; `related.events` is not currently a news-schema property.
 
@@ -99,13 +103,13 @@ Do not infer membership, founder status or speaker status from a mention elsewhe
 | `location` | String or `null` | Venue, locality or online location. |
 | `speakers` | People slug array | Confirmed speakers. This relationship does not automatically set their `is_speaker` value. |
 | `related` | Mapping | Include all three keys below. |
-| `related.groups` | Slug array | Participating working groups. |
+| `related.working-groups` | Slug array | Participating working groups. |
 | `related.organisations` | Slug array | Participating organisations. |
-| `related.papers` | Slug array | Relevant publications. |
+| `related.academic-papers` | Slug array | Relevant publications. |
 
 Events and upcoming events sort by start time/date, earliest first; past-event archives show the newest first. Past/upcoming filters compare the final event day (end, falling back to start) with the build date. An event whose final day is today remains upcoming. This is a build-time filter, not a continuously running browser clock.
 
-## Papers (`_papers`)
+## Academic papers (`_academic-papers`)
 
 | Additional property | Type | Meaning |
 | --- | --- | --- |
@@ -113,11 +117,79 @@ Events and upcoming events sort by start time/date, earliest first; past-event a
 | `published_year` | Integer from 1000 to 9999, or `null` | Publication year, displayed on detail pages and cards. |
 | `authors` | People slug array | Paper authors. Keep any full bibliographic citation in the body. |
 | `related` | Mapping | Include all three keys below. |
-| `related.groups` | Slug array | Relevant working groups. |
+| `related.working-groups` | Slug array | Relevant working groups. |
 | `related.hardware` | Slug array | Referenced hardware. |
 | `related.software` | Slug array | Referenced software. |
 
-The canonical bibliography is `/papers/`; do not maintain a second list of the same citations in a general page.
+The canonical bibliography is `/papers/`; academic records are stored in `_academic-papers` with assets under `assets/academic-papers/<record-name>/`. Existing `/papers/<record-name>/` URLs remain unchanged. Do not maintain a second list of the same citations in a general page.
+
+## Case studies (`_case-studies`)
+
+Use for individual application or adoption stories. Keep hardware and software catalogue records separate, and link them through `related`. The directory is `/case-studies/`, and `_case-studies/cheribsd.md` renders at `/case-studies/cheribsd/`. Store assets under `/assets/case-studies/cheribsd/`. The previous overview URL redirects to the directory.
+
+| Additional property | Type | Meaning |
+| --- | --- | --- |
+| `related` | Mapping | Include all four keys below. |
+| `related.organisations` | Slug array | Participating organisations. |
+| `related.hardware` | Slug array | Platforms used or discussed. |
+| `related.software` | Slug array | Software used or discussed. |
+| `related.reports` | Slug array | Supporting reports. |
+
+A `summary` can reuse the existing overview's short description. Do not invent outcomes, certification claims or dates when migrating a story. The primary image appears on directory cards; body images remain with their prose and captions, with left/right alternation reset for each new document.
+
+<!-- schema: case-studies -->
+```yaml
+title: 'Morello: a complete experimental stack'
+image_url: /assets/case-studies/morello/bfeebb3ac676-morello-board.webp
+summary: CHERI at application and server scale
+related:
+  organisations:
+  - arm
+  hardware:
+  - morello
+  software:
+  - cheribsd
+  reports: []
+```
+
+## Reports and white papers (`_reports`)
+
+Use one collection for reports and white papers, with a publication type. Academic papers remain in `_academic-papers`. The directory is `/reports/`; each record has its own `/reports/<slug>/` page. Keep the existing citation and descriptive text in the body, and link the original publisher's page or document.
+
+| Additional property | Type | Meaning |
+| --- | --- | --- |
+| `publication_url` | Required HTTP(S) URL | Original publication or publisher record; shown as Read publication. |
+| `published_year` | Integer from 1000 to 9999, or `null` | The stated year, preserving the source's precision. |
+| `publication_type` | `report`, `white-paper`, `policy-paper` or `technical-report` | Reader-facing publication classification. |
+| `publisher` | Required nonempty string | Publisher's existing name. |
+| `authors` | People slug array | Named authors; leave empty for institution-authored documents without person records. |
+| `related` | Mapping | Include all four keys below. |
+| `related.organisations` | Slug array | Publishers or participating organisations. |
+| `related.case-studies` | Slug array | Relevant application stories. |
+| `related.hardware` | Slug array | Referenced platforms. |
+| `related.software` | Slug array | Referenced software. |
+
+<!-- schema: reports -->
+```yaml
+title: An Introduction to CHERI
+image_url: /assets/reports/an-introduction-to-cheri/placeholder.svg
+publication_url: https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-941.html
+published_year: 2019
+publication_type: technical-report
+publisher: University of Cambridge
+authors:
+- robert-watson
+- simon-moore
+- peter-sewell
+- peter-g-neumann
+related:
+  organisations:
+  - university-of-cambridge
+  case-studies: []
+  hardware: []
+  software: []
+```
+
 
 ## Hardware (`_hardware`)
 
@@ -135,6 +207,13 @@ The canonical bibliography is `/papers/`; do not maintain a second list of the s
 
 `type`, `architecture` and `status` are descriptive strings, not fixed enumerations. Record-level product versions can use the shared `version` property; detailed component versions and certification evidence stay with their descriptions.
 
+| Optional hardware property | Type | Meaning |
+| --- | --- | --- |
+| `certification` | `cheri-enabled` or `null` | Confirmed CHERI Enabled certification for the specific product and version. Omit for other implementations; do not infer certification from a family name. |
+| `certification_url` | URL or `null` | Required authoritative certification record when `certification` is set. |
+
+The CHERI Enabled Products directory uses `layout: list`, `listing.collection: hardware`, and the optional top-level filter `certification: cheri-enabled`. Its cards are generated from matching hardware records; maintain product descriptions and evidence in those records rather than a second list on the page.
+
 ## Software (`_software`)
 
 | Additional property | Type | Meaning |
@@ -148,7 +227,7 @@ The canonical bibliography is `/papers/`; do not maintain a second list of the s
 | `related.hardware` | Slug array | Relevant platforms. |
 | `related.software` | Slug array | Related software. |
 
-## Groups (`_groups`)
+## Working groups (`_working-groups`)
 
 | Additional property | Type | Meaning |
 | --- | --- | --- |
@@ -168,7 +247,7 @@ The canonical bibliography is `/papers/`; do not maintain a second list of the s
 | `updated_date` | Full date or `null` | Known editorial update date. |
 | `authors` | People slug array | Guide authors. |
 | `related` | Mapping | Include all three keys below. |
-| `related.groups` | Slug array | Relevant working groups. |
+| `related.working-groups` | Slug array | Relevant working groups. |
 | `related.hardware` | Slug array | Referenced hardware. |
 | `related.software` | Slug array | Referenced software. |
 
@@ -209,10 +288,10 @@ Use this for prose pages under `pages/`, including technical explanations, exerc
 | `related.pages` | Page-route array | Related general pages. |
 | `related.people` | Slug array | People. |
 | `related.organisations` | Slug array | Organisations. |
-| `related.groups` | Slug array | Groups. |
+| `related.working-groups` | Slug array | Groups. |
 | `related.news` | Slug array | News. |
 | `related.events` | Slug array | Events. |
-| `related.papers` | Slug array | Papers. |
+| `related.academic-papers` | Slug array | Papers. |
 | `related.hardware` | Slug array | Hardware. |
 | `related.software` | Slug array | Software. |
 | `related.guides` | Slug array | Guides. |
@@ -233,10 +312,10 @@ related:
   pages: []
   people: []
   organisations: []
-  groups: []
+  working-groups: []
   news: []
   events: []
-  papers: []
+  academic-papers: []
   hardware: []
   software: []
   guides: []
@@ -276,7 +355,7 @@ summary: Learn about the Alliance’s mission, governance and membership, and fi
 | `permalink` | Registered page route | Directory URL. |
 | `layout` | `list`, `news`, `events`, or `people` | `list` selects `listing.collection`; the other layouts select their named collection. Retained duplicate directories use `redirect`. |
 | `listing` | Mapping | Include all three keys below. |
-| `listing.collection` | Collection name or `null` | One of `people`, `news`, `organisations`, `events`, `papers`, `hardware`, `software`, `groups`, `guides`, `policies`. Required as a value for `layout: list`; normally null for the three dedicated layouts. |
+| `listing.collection` | Collection name or `null` | One of `people`, `news`, `organisations`, `events`, `academic-papers`, `hardware`, `software`, `working-groups`, `guides`, `policies`, `case-studies`, `reports`. Required as a value for `layout: list`; normally null for the three dedicated layouts. |
 | `listing.status` | `past`, `upcoming`, or `null` | Event filtering only. |
 | `listing.role` | `speaker`, `member`, `board`, or `null` | `speaker` and `board` require the people collection; `member` requires organisations. `board` uses the ordered person slugs in `_data/governing-board.yml`. |
 
@@ -288,7 +367,7 @@ title: Papers
 permalink: /papers/
 layout: list
 listing:
-  collection: papers
+  collection: academic-papers
   status: null
   role: null
 ```
@@ -310,9 +389,11 @@ Directory bodies contain introductory Markdown, followed by one automatically ge
 
 The Governing Board directory uses `layout: list`, `listing.collection: people` and `listing.role: board`. Update `_data/governing-board.yml` when the membership changes; each slug must identify one canonical person record. The cards preserve roster order, use square portraits, and link to biographies. This display treatment does not mark non-speakers as speakers.
 
-Working Groups uses `layout: list` and `listing.collection: groups`. Its complete directory is `/alliance/leadership/working-groups/`; `/groups/` redirects there. Keep each group's description in its own `_groups` record.
+Working Groups uses `layout: list` and `listing.collection: working-groups`. Its complete directory is `/alliance/leadership/working-groups/`; `/groups/` redirects there. Keep each group's description in its own `_working-groups` record.
 
 The member directory's `member` role currently comes from `listing_presets` in `_data/viewer.yml`. Explicit `listing.role`/`listing.status` takes precedence over a preset. News and past-event archives are newest first; other event lists are earliest first; other collections sort by title. Canonical listings exclude records whose inherited `alternate` setting is true. `listing.status` is valid only for events.
+
+Record properties render as an unboxed “At a glance” definition list. Events combine their start/end values into one When entry and retain both dates/times. Raw authoring properties are available in the audit at `/checks/`, rather than at the end of public articles.
 
 ## Inherited settings, aliases and generated properties
 

@@ -4,7 +4,7 @@ image_url: /assets/news/cheri-alliance-officially-launches-adds-major-partners-i
 published_date: '2024-11-12'
 authors: []
 related:
-  groups: []
+  working-groups: []
   organisations:
   - tccoe
   - critical-technologies
@@ -30,7 +30,7 @@ related:
   hardware: []
   software:
   - freebsd
-  papers: []
+  academic-papers: []
 ---
 
 # CHERI Alliance Officially Launches, Adds Major Partners including Google, to Tackle Cybersecurity Threats at the Hardware Level

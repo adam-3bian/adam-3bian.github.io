@@ -5,7 +5,7 @@ published_date: '2025-11-17'
 authors:
 - adam-finney
 related:
-  groups: []
+  working-groups: []
   organisations:
   - university-of-modena-and-reggio-emilia
   - the-university-of-manchester
@@ -22,7 +22,7 @@ related:
   - ukri
   hardware: []
   software: []
-  papers: []
+  academic-papers: []
 ---
 
 # You just missed the CHERITech’25 Conference – but wait, you can still attend the virtual replay!
@@ -41,4 +41,4 @@ Exhibitors including Cantech Informatics, Capabilities Limited, Codasip, lowRISC
 
 We are genuinely grateful to all speakers, exhibitors and attendees for the time, energy and insight they brought to the day. The continued growth of CHERITech shows what can be achieved when this community comes together.
 
-People who could not attend the event will have a chance to attend CHERITech’25 Reloaded: a virtual event on the 4th of December where recorded talks will be available and speakers from the conference will answer questions live from an international audience. Please register here.
+People who could not attend the event will have a chance to attend CHERITech’25 Reloaded: a virtual event on the 4th of December where recorded talks will be available and speakers from the conference will answer questions live from an international audience. Please register [here](/events/cheritech25-reloaded/).

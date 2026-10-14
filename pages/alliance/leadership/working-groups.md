@@ -3,7 +3,7 @@ title: Working Groups
 permalink: /alliance/leadership/working-groups/
 layout: list
 listing:
-  collection: groups
+  collection: working-groups
   status: null
   role: null
 ---

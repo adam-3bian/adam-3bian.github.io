@@ -36,7 +36,7 @@ collections:
   events:
     output: true
     permalink: /events/:name/
-  papers:
+  academic-papers:
     output: true
     permalink: /papers/:name/
   hardware:
@@ -45,7 +45,7 @@ collections:
   software:
     output: true
     permalink: /software/:name/
-  groups:
+  working-groups:
     output: true
     permalink: /groups/:name/
   guides:
@@ -54,6 +54,12 @@ collections:
   policies:
     output: true
     permalink: /policies/:name/
+  case-studies:
+    output: true
+    permalink: /case-studies/:name/
+  reports:
+    output: true
+    permalink: /reports/:name/
 defaults:
 - scope:
     path: ''
@@ -86,7 +92,7 @@ defaults:
     parent: /events/
 - scope:
     path: ''
-    type: papers
+    type: academic-papers
   values:
     layout: document
     parent: /papers/
@@ -104,7 +110,7 @@ defaults:
     parent: /software/
 - scope:
     path: ''
-    type: groups
+    type: working-groups
   values:
     layout: document
     parent: /groups/
@@ -120,6 +126,28 @@ defaults:
   values:
     layout: document
     parent: /policies/
+- scope:
+    path: ''
+    type: case-studies
+  values:
+    layout: document
+    parent: /case-studies/
+- scope:
+    path: ''
+    type: reports
+  values:
+    layout: document
+    parent: /reports/
+- scope:
+    path: pages/adopt/assurance-and-adoption/case-studies.md
+  values:
+    alternate: true
+    layout: redirect
+- scope:
+    path: pages/discover/resources/reports-and-white-papers.md
+  values:
+    alternate: true
+    layout: redirect
 - scope:
     path: pages/adopt.md
   values:
@@ -371,6 +399,8 @@ navigation:
         url: /discover/resources/documentation-and-guides/
       - title: Academic Papers
         url: /papers/
+      - title: Reports & White Papers
+        url: /reports/
       - title: Glossary
         url: /discover/resources/glossary/
     url: /discover/
@@ -389,7 +419,7 @@ navigation:
     - title: Assurance & Adoption
       links:
       - title: Case Studies
-        url: /adopt/assurance-and-adoption/case-studies/
+        url: /case-studies/
       - title: The CHERI Enabled Programme
         url: /adopt/assurance-and-adoption/about-cheri-enabled/
       - title: CHERI Enabled Products

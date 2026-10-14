@@ -4,11 +4,11 @@ image_url: /assets/news/the-white-house-promotes-cheri-as-a-solution-for-memory-
 published_date: '2024-02-27'
 authors: []
 related:
-  groups: []
+  working-groups: []
   organisations: []
   hardware: []
   software: []
-  papers: []
+  academic-papers: []
 ---
 
 # The White House promotes CHERI as a solution for memory safety

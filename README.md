@@ -1,6 +1,6 @@
 # CHERI Content Viewer
 
-A minimal Jekyll site with 321 collection records and 166 pages. Collection content has been audited against CHERI Alliance profiles and resources; original image bytes remain bundled.
+A minimal Jekyll site with 330 collection records and 168 pages. Collection content has been audited against CHERI Alliance profiles and resources; original image bytes remain bundled.
 
 ## Run locally
 
@@ -16,7 +16,7 @@ Open http://localhost:4000. The content checks page is at http://localhost:4000/
 
 ## What to check
 
-The source menu and the ten collection links let you reach the content. Each detail page shows its title, primary image, populated metadata, article body, related content, and an expandable front matter inspector. Unused null and empty values remain visible in the inspector. Primary images render once; body illustrations stay with the content. Record facts use a compact definition list, and resource URLs appear as labelled navigation links without a surrounding card. Original-image download links are omitted; eligible article images enlarge in the image viewer.
+The source menu and the twelve collection links let you reach the content. Each detail page shows its title, a supplied primary image, an At a glance summary, article body and related content. Raw authoring properties and unused values are available in the content audit. Primary images render once; body illustrations stay with the content. Record facts use an unboxed definition list, and resource URLs appear as labelled navigation links without a surrounding card. Original-image download links are omitted; eligible article images enlarge in the image viewer.
 
 The header adapts the starter kit's column menus and mobile accordions. Edit `navigation.header` in `_config.yml` to change its links and column counts. Native `details`/`summary` controls remain usable without JavaScript; the small `assets/navigation.js` enhancement adds the mobile Menu button, arrow keys, Escape, outside-click dismissal, and focus handling. At 1024px and wider, menus overlay the content in three or four columns and scroll within short viewports. At smaller widths, they expand in the page flow.
 
@@ -24,11 +24,11 @@ The shared footer follows the starter kit's dark column layout: four visible gro
 
 The six home and section index pages have a title, a short introductory paragraph and a native list of page links. Their labels, grouping and order come from the same `navigation.header` data as the mega-menu; collection destinations are included too. The home index links to the five main sections. Edit an index's `summary` for its introduction and leave its Markdown body empty. These lists work without JavaScript and adapt to desktop, tablet and mobile widths.
 
-The content checks page lists every page and record, including retained source versions and aliases. Its small filter can find a title, type, or source file. Missing optional images or news dates are identified as unprovided values. Actual errors include incomplete schemas, invalid dates, unknown relationship references, broken navigation targets, and missing image files.
+The content checks page shows coverage for all twelve collections and lists every page and record, including retained source versions and aliases. Filter by collection, source-image availability, placeholder fallback, missing news date, retained version or title/source file; inspect each record’s raw properties using its native disclosure. Its small filter can find a title, type, or source file. Missing optional images or news dates are identified as unprovided values. Actual errors include incomplete schemas, invalid dates, unknown relationship references, broken navigation targets, and missing image files.
 
 News is newest first, with undated records after dated ones. Events are earliest first; past archives are newest first. Upcoming and past lists use the final event day in the Europe/London timezone. People, organisations, and other collections sort alphabetically. The speaker list uses is_speaker, and the member list uses a confirmed membership_tier. The board list uses the ordered canonical people in _data/governing-board.yml. Alternate source records remain accessible from the audit while canonical lists omit them.
 
-Directories consist of introductory Markdown followed by linked cards drawn from collection records. Each entire card, including its image and padding, is one native link with a visible keyboard focus state; no click-handler script is needed. Cards use native lists and heading groups, include an opening-paragraph preview, and omit empty placeholders. Working Groups is the complete group directory; /groups/ redirects to it. Board cards have consistent square portraits and open the person profiles. Shared record properties and company details use aligned definition lists with row separators, stacking labels above values on mobile.
+Directories consist of introductory Markdown followed by linked cards drawn from collection records. Each entire card, including its image and padding, is one native link with a visible keyboard focus state; no click-handler script is needed. Cards use native lists and heading groups, include an opening-paragraph preview, and omit empty placeholders. Working Groups is the complete group directory; /groups/ redirects to it. Board cards have consistent square portraits and open the person profiles. Shared record properties and company details use readable definition lists with open spacing, stacking labels above values on mobile. Events group their date range under When and location under Where.
 
 Authors, speakers, affiliations, working-group leads, and generic related fields produce clickable forward and reverse relationships. Related content uses compact columns of full-row links, consistent with the section indexes; record-type audit labels stay out of this navigation. Reserve cards for collection directories where images and summaries help readers choose a record. Reverse links are derived by the check script; do not edit _data/relationships.yml. After changing content or front matter, run the check script again before building to refresh the audit and reverse links.
 
@@ -38,13 +38,21 @@ Consolidated duplicate directories and policy copies redirect to their canonical
 
 See [FRONT_MATTER.md](FRONT_MATTER.md) for every supported collection and page property, types, relationships, date precision, complete examples, inherited defaults and canonical aliases. Record-level versions and document dates belong in front matter; shared optional fields are validated and displayed in metadata.
 
+## Case studies and reports
+
+Organisation logos with accidental white canvases use self-contained SVG masks over their original source files, preserving the lettering and artwork. Regenerate these display assets with `python3 scripts/prepare_organisation_logos.py`; `--check` verifies them without writing. Intentional white artwork and the seal interior are protected.
+
+The four original case-study sections are now `_case-studies` records, with cards at `/case-studies/`. Their article text is preserved; images moved into their record directories and each document starts its own left/right sequence. The five original report entries are `_reports` records at `/reports/`, with publication type, year, publisher, author references and original publication URLs. Academic papers remain in `_academic-papers`. The previous overview routes redirect to the canonical directories. Schemas, menus, breadcrumbs, relationships and the audit all include these collections.
+
 ## Collection content and assets
 
 Store each record's primary image under `assets/<collection>/<record-name>/`, with neither an underscore prefix nor a `.md` suffix. Body images may reuse another collection record's canonical assets. Keep assets referenced by `pages/` when copying an image into a collection directory.
 
-All displayed collection images use contained 3:1 frames. Speaker portraits use 1:1 frames in detail headers, cards, and portrait galleries. Add `.image-portrait` to a speaker image used elsewhere. Containment preserves the entire photograph, logo, or diagram; the image viewer displays the original asset at its natural proportions. Missing source images use a clearly labelled local `placeholder.svg` with the appropriate ratio. These fallbacks do not create placeholder resource links or empty metadata panels.
+All displayed content images use contained 3:1 frames. People portraits use 1:1 frames in detail headers, cards, and portrait galleries, including board members who are not speakers. Add `.image-portrait` to a portrait used elsewhere. Containment preserves the entire photograph, logo, or diagram; the image viewer displays the original asset at its natural proportions. Missing source images use a clearly labelled local `placeholder.svg` with the appropriate ratio. These fallbacks do not appear in public headers or cards and do not create resource links or empty metadata panels. The audit distinguishes them from supplied source images.
 
-Working groups use `leads: []` so co-leads have separate person references. Policies include `image_url`. Other schema fields retain their existing shapes. Use arrays for authors, speakers, repositories, and related slugs; every referenced collection record must exist. Do not infer membership or speaker status from a mention in another article.
+Working groups are stored in `_working-groups`, with assets under `assets/working-groups/<record-name>/` and existing detail URLs retained at `/groups/<record-name>/`. Use `related.working-groups` for references and `leads: []` so co-leads have separate person references. Policies include `image_url`. Other schema fields retain their existing shapes. Use arrays for authors, speakers, repositories, and related slugs; every referenced collection record must exist. Do not infer membership or speaker status from a mention in another article.
+
+CHERI Enabled Products is a hardware directory filtered by `certification: cheri-enabled`. Set that property only on a confirmed certified product/version and include its authoritative `certification_url`. The directory cards, descriptions and drill-through links come from the hardware records. Original product summaries and certification explanations are retained there; no second product list is maintained on the page.
 
 After a production build, check all rendered collection links, images, inverse references, and anchors:
 
@@ -96,7 +104,7 @@ bundle exec ruby scripts/check_content.rb
 bundle exec jekyll build
 ```
 
-The content validator renders Markdown before checking image references, so it also covers figures, galleries, reference-style images, and HTML images while ignoring fenced examples. Browser regression checks run in the Pages workflow before deployment and cover every page with body images and representative records from all ten collections at 1440, 1024, 768, 640, and 375px. They check built image paths, containment, wrapping, float clearing, the viewer's keyboard/focus/scroll behaviour, captions, touch controls, reduced motion, linked-image exclusions, and the no-JavaScript fallback. Run the same checks locally with:
+The content validator renders Markdown before checking image references, so it also covers figures, galleries, reference-style images, and HTML images while ignoring fenced examples. Browser regression checks run in the Pages workflow before deployment and cover every page with body images and representative records from all twelve collections at 1440, 1024, 768, 640, and 375px. They check built image paths, containment, wrapping, float clearing, the viewer's keyboard/focus/scroll behaviour, captions, touch controls, reduced motion, linked-image exclusions, and the no-JavaScript fallback. Run the same checks locally with:
 
 ```sh
 # Install test tooling separately from the site (not a production dependency).

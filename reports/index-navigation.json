@@ -26,7 +26,7 @@
         "links": [
           {
             "title": "Case Studies",
-            "url": "/adopt/assurance-and-adoption/case-studies/"
+            "url": "/case-studies/"
           },
           {
             "title": "The CHERI Enabled Programme",
@@ -71,7 +71,7 @@
       },
       {
         "title": "Case Studies",
-        "url": "/adopt/assurance-and-adoption/case-studies/"
+        "url": "/case-studies/"
       },
       {
         "title": "The CHERI Enabled Programme",
@@ -680,6 +680,10 @@
             "url": "/papers/"
           },
           {
+            "title": "Reports & White Papers",
+            "url": "/reports/"
+          },
+          {
             "title": "Glossary",
             "url": "/discover/resources/glossary/"
           }
@@ -738,6 +742,10 @@
       {
         "title": "Academic Papers",
         "url": "/papers/"
+      },
+      {
+        "title": "Reports & White Papers",
+        "url": "/reports/"
       },
       {
         "title": "Glossary",

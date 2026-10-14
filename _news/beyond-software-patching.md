@@ -5,7 +5,7 @@ published_date: null
 authors:
 - jim-wallace
 related:
-  groups: []
+  working-groups: []
   organisations:
   - university-of-cambridge
   - sci-semiconductor
@@ -19,7 +19,7 @@ related:
   - cheri-linux
   - zephyr
   - rust
-  papers: []
+  academic-papers: []
 ---
 
 # Beyond Software Patching

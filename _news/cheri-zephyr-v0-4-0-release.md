@@ -5,13 +5,13 @@ published_date: null
 authors:
 - jennifer-jackson
 related:
-  groups: []
+  working-groups: []
   organisations:
   - codasip
   hardware: []
   software:
   - zephyr
-  papers: []
+  academic-papers: []
 ---
 
 # CHERI-Zephyr v0.4.0 Release

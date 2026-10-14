@@ -4,7 +4,7 @@ image_url: /assets/news/amid-rising-cyber-threats-ensilica-joins-the-cheri-allia
 published_date: '2026-02-03'
 authors: []
 related:
-  groups: []
+  working-groups: []
   organisations:
   - university-of-cambridge
   - cheri-alliance
@@ -16,7 +16,7 @@ related:
   - google
   hardware: []
   software: []
-  papers: []
+  academic-papers: []
 ---
 
 # Amid rising cyber threats, EnSilica joins the CHERI Alliance to enable safe & secure silicon

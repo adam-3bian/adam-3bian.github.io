@@ -14,10 +14,10 @@ related:
   people: []
   organisations:
   - cheri-alliance
-  groups: []
+  working-groups: []
   news: []
   events: []
-  papers: []
+  academic-papers: []
   hardware: []
   software: []
   guides: []

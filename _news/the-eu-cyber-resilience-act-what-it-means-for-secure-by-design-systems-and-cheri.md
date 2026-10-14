@@ -5,11 +5,11 @@ published_date: '2026-02-04'
 authors:
 - tariq-kurd
 related:
-  groups: []
+  working-groups: []
   organisations: []
   hardware: []
   software: []
-  papers: []
+  academic-papers: []
 ---
 
 # The EU Cyber Resilience Act: What It Means for Secure-by-Design Systems and CHERI

@@ -4,7 +4,7 @@ image_url: /assets/news/lowrisc-and-partners-to-deliver-commercial-quality-open-
 published_date: '2025-11-12'
 authors: []
 related:
-  groups: []
+  working-groups: []
   organisations:
   - capabilities-limited
   - cheri-alliance
@@ -13,7 +13,7 @@ related:
   - dsit
   hardware: []
   software: []
-  papers: []
+  academic-papers: []
 ---
 
 # lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure Enclave with InnovateUK Support
@@ -28,4 +28,4 @@ The CHERI Alliance welcomes the announcement. COSMIC is an important step toward
 
 COSMIC continues lowRISC CIC‘s mission to make commercial open-source silicon real. It follows the success of OpenTitan and Sunburst and is supported by partners including [Google](/organisations/google/), also a founding member of the CHERI Alliance, and Rivos.
 
-You can read the full the press release here.
+You can read the full the press release [here](https://www.globenewswire.com/news-release/2025/11/12/3185998/0/en/lowRISC-and-Partners-to-Deliver-Commercial-Quality-Open-Source-CHERI-Secure-Enclave-with-InnovateUK-Support.html).

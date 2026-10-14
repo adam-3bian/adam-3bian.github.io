@@ -10,7 +10,7 @@ social:
 related:
   organisations:
   - arm
-  groups: []
+  working-groups: []
 ---
 
 # Kevin Brodsky

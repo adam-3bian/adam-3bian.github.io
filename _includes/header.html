@@ -47,7 +47,8 @@
       <div class="header-tools">
         <nav class="collection-nav" aria-label="Collections">
           {% for collection in site.collections %}{% unless collection.label == 'posts' %}
-          <a href="{{ '/' | append: collection.label | append: '/' | relative_url }}">{{ site.data.viewer.collections[collection.label].label | default: collection.label | capitalize }}</a>
+          {% assign collection_url = '/' | append: collection.label | append: '/' %}{% assign collection_url = site.data.viewer.collections[collection.label].url | default: collection_url %}
+          <a href="{{ collection_url | relative_url }}">{{ site.data.viewer.collections[collection.label].label | default: collection.label | escape }}</a>
           {% endunless %}{% endfor %}
         </nav>
         <a class="checks-link" href="{{ '/checks/' | relative_url }}">Content checks</a>

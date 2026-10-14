@@ -4,11 +4,11 @@ image_url: /assets/news/secure-and-resilient-systems-in-the-era-of-cra-and-iot/c
 published_date: '2026-01-06'
 authors: []
 related:
-  groups: []
+  working-groups: []
   organisations: []
   hardware: []
   software: []
-  papers: []
+  academic-papers: []
 ---
 
 # Secure and Resilient Systems in the Era of CRA and IoT

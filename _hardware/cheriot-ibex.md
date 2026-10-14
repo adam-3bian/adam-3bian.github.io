@@ -16,30 +16,43 @@ related:
   - llvm-and-clang
   - rust
 version: '1.0'
+certification: cheri-enabled
+certification_url: https://cheri-alliance.org/cheri-enabled/cheriot/
+summary: "An open-source 32-bit RISC-V microcontroller processor IP implementing the CHERIoT 1.0 instruction-set architecture. It is designed for constrained embedded systems that require compartmentalisation and memory protection."
 ---
 
 # CHERIoT Ibex Certification Record
 
 The [CHERIoT](/hardware/cheriot/) Ibex 1.0 record describes the certified processor core, its CHERI architecture, verification evidence, temporal-safety mechanism, and integration assumptions.
 
+The product was certified on 26 March 2026. The CHERIoT certification record covers its architecture, formal verification, test approach, tag protection, temporal-safety model, debug assumptions, and excluded non-CHERI configuration.
+
 ## Product information
 
-Certification date: 26 March 2026
+Certification date
+: 26 March 2026
 
-Certification programme version: 1.0
+Certification programme version
+: 1.0
 
-Organisation: Microsoft
+Organisation
+: Microsoft
 
-Organisation type: commercial company
+Organisation type
+: commercial company
 
-Product: cheriot-ibex
+Product
+: cheriot-ibex
 
-Product type: processor intellectual property — CPU
+Product type
+: processor intellectual property — CPU
 
-Reference: cheriot-ibex
+Reference
+: cheriot-ibex
 
-
-Derivative of a qualified product: no
+Derivative of a qualified product
+: no
+{: .record-properties }
 
 cheriot-ibex is a 32-bit RISC-V microcontroller core implementing the CHERIoT 1.0 instruction-set architecture.
 

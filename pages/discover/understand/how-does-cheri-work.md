@@ -12,10 +12,10 @@ related:
   - /discover/understand/cheri-and-existing-software/
   people: []
   organisations: []
-  groups: []
+  working-groups: []
   news: []
   events: []
-  papers: []
+  academic-papers: []
   hardware: []
   software: []
   guides: []
@@ -28,11 +28,11 @@ At the heart of CHERI is a simple idea: the processor should understand the boun
 
 ## Today’s systems trust software too much
 
+![Traditional pointers vs capabilities](/assets/shared/source-assets/6b266981fee5-pointer-vs-capability.webp){: .image-left }
+
 Today’s processors access memory using pointers, which represent an address in memory. A pointer is essentially a number managed entirely by software. Memory is largely an open book: software can read, write, or execute wherever a pointer leads it, with few built-in checks on whether that access was actually intended.
 
 If a program contains a bug, a pointer can accidentally (or maliciously) be changed to access memory that it was never supposed to reach.
-
-![Traditional pointers vs capabilities](/assets/shared/source-assets/6b266981fee5-pointer-vs-capability.webp){: .image-full }
 
 ## Capabilities: pointers with built-in protection
 
@@ -57,6 +57,8 @@ Protection is built into the hardware rather than relying solely on software che
 
 ## Compartmentalisation
 
+![Compartmentalisation prevents contagion](/assets/shared/source-assets/ec94c211adbb-compartmentalisation.webp){: .image-right }
+
 Capabilities can also be used to create secure compartments: isolated parts of a system that have access only to the resources they need. A compartment might be:
 
 - An application
@@ -67,8 +69,6 @@ Capabilities can also be used to create secure compartments: isolated parts of a
 Each compartment receives its own capabilities and cannot freely access the memory of other compartments. CHERI makes it practical to create and manage large numbers of small compartments with very low overhead. This enables much finer-grained isolation than traditional security approaches, without the important performance penalty.
 
 This approach, known as compartmentalisation, helps contain bugs and security vulnerabilities, preventing problems in one part of a system from affecting everything else. The smaller the compartment, the smaller the impact of a bug or attack.
-
-![Compartmentalisation prevents contagion](/assets/shared/source-assets/ec94c211adbb-compartmentalisation.webp){: .image-full }
 
 ## Working with existing software
 

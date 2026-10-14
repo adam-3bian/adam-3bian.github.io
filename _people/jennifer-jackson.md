@@ -10,7 +10,7 @@ social:
 related:
   organisations:
   - university-of-birmingham
-  groups:
+  working-groups:
   - cheri-zephyr
 ---
 

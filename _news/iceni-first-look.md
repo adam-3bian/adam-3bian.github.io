@@ -4,7 +4,7 @@ image_url: /assets/news/iceni-first-look/36d8eddd801e-hero.png
 published_date: '2026-03-16'
 authors: []
 related:
-  groups: []
+  working-groups: []
   organisations:
   - sci-semiconductor
   hardware:
@@ -13,7 +13,7 @@ related:
   - sonata
   software:
   - simulators
-  papers: []
+  academic-papers: []
 ---
 
 # ICENI: First Look
@@ -26,4 +26,4 @@ This article marks an important milestone for the CHERIoT ecosystem: the arrival
 
 The following announcement from [David Chisnall](/people/david-chisnall/) describes the ICENI development board, the architecture behind the chip, and what this step means for developers building secure embedded systems with CHERI.
 
-Read the announcement from SCI Semiconductor here.
+Read the announcement from SCI Semiconductor [here](https://www.linkedin.com/pulse/sci-semiconductor-announces-first-silicon-cybersecure-mcu-iceni-ataoe/?trackingId=t1JmXXqbTFGTbTscISnvaQ%3D%3D).

@@ -9,6 +9,9 @@ const reportDir = path.resolve('reports/navigation-tests');
 fs.mkdirSync(reportDir, { recursive: true });
 const widths = [1440, 1024, 768, 640, 375];
 const report = { widths, panelsChecked: 0, accessibilityChecks: 0 };
+const audit = JSON.parse(fs.readFileSync('reports/preflight.json', 'utf8'));
+const indexes = JSON.parse(fs.readFileSync('reports/index-navigation.json', 'utf8'));
+const expectedMenuLinks = Object.values(indexes).reduce((count, index) => count + index.links.length, 0);
 
 async function assertContained(page, desktop) {
   const problems = await page.evaluate(isDesktop => {
@@ -53,8 +56,9 @@ async function assertAccessible(page) {
       const navigation = page.locator('#primary-navigation');
       const menus = page.locator('.primary-menu');
       assert.equal(await menus.count(), 5);
-      assert.equal(await page.locator('.source-nav a').count(), 95, 'Canonical primary routes were lost');
-      assert.equal(await page.locator('.collection-nav a').count(), 10);
+      assert.equal(await page.locator('.source-nav a').count(), expectedMenuLinks, 'Canonical primary routes were lost');
+      assert.equal(await page.locator('.collection-nav a').count(), audit.collection_count);
+      assert.deepEqual(await page.locator('.collection-nav a').evaluateAll(links => links.map(link => new URL(link.href).pathname).sort()), audit.collections.map(collection => new URL(collection.url.replace(/^\//, ''), base).pathname).sort(), 'Collection directory routes');
       assert.equal(await toggle.isVisible(), !desktop);
       assert.equal(await navigation.isVisible(), desktop);
       if (!desktop) {

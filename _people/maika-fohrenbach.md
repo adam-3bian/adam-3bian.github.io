@@ -10,7 +10,7 @@ social:
 related:
   organisations:
   - european-commission-dg-connect
-  groups: []
+  working-groups: []
 ---
 
 # Maika Föhrenbach

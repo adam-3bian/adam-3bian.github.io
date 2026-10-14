@@ -11,7 +11,7 @@ related:
   organisations:
   - cheri-alliance
   - codasip
-  groups:
+  working-groups:
   - certification-working-group
   - promotion-and-ambassador-program
 ---

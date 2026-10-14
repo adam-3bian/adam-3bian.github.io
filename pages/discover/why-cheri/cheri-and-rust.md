@@ -11,11 +11,11 @@ related:
   - /discover/understand/cheri-and-existing-software/
   people: []
   organisations: []
-  groups:
+  working-groups:
   - rust-plus-cheri
   news: []
   events: []
-  papers: []
+  academic-papers: []
   hardware: []
   software: []
   guides: []

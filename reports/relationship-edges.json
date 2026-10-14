@@ -56,7 +56,7 @@
   },
   {
     "from": "/adopt/assurance-and-adoption/assurance-and-certification/",
-    "to": "/adopt/assurance-and-adoption/case-studies/",
+    "to": "/case-studies/",
     "field": "related.pages"
   },
   {
@@ -86,6 +86,11 @@
   },
   {
     "from": "/adopt/assurance-and-adoption/case-studies/",
+    "to": "/adopt/business-case/the-business-case/",
+    "field": "related.pages"
+  },
+  {
+    "from": "/case-studies/",
     "to": "/adopt/business-case/the-business-case/",
     "field": "related.pages"
   },
@@ -122,7 +127,7 @@
   {
     "from": "/discover/why-cheri/cheri-and-rust/",
     "to": "/groups/rust-plus-cheri/",
-    "field": "related.groups"
+    "field": "related.working-groups"
   },
   {
     "from": "/news-and-events/events-and-archive/cheri-blossoms/",
@@ -205,16 +210,6 @@
     "field": "related.pages"
   },
   {
-    "from": "/reference/source-versions/contact/",
-    "to": "/alliance/membership/membership-benefits-and-options/",
-    "field": "related.pages"
-  },
-  {
-    "from": "/reference/source-versions/contact/",
-    "to": "/news-and-events/people-and-opportunities/job-opportunities/",
-    "field": "related.pages"
-  },
-  {
     "from": "/alliance/membership/contact/",
     "to": "/alliance/membership/membership-benefits-and-options/",
     "field": "related.pages"
@@ -225,12 +220,22 @@
     "field": "related.pages"
   },
   {
-    "from": "/reference/source-versions/cost-of-memory-unsafety/",
-    "to": "/adopt/business-case/the-business-case/",
+    "from": "/reference/source-versions/contact/",
+    "to": "/alliance/membership/membership-benefits-and-options/",
+    "field": "related.pages"
+  },
+  {
+    "from": "/reference/source-versions/contact/",
+    "to": "/news-and-events/people-and-opportunities/job-opportunities/",
     "field": "related.pages"
   },
   {
     "from": "/adopt/business-case/cost-of-memory-unsafety/",
+    "to": "/adopt/business-case/the-business-case/",
+    "field": "related.pages"
+  },
+  {
+    "from": "/reference/source-versions/cost-of-memory-unsafety/",
     "to": "/adopt/business-case/the-business-case/",
     "field": "related.pages"
   },
@@ -506,7 +511,7 @@
   },
   {
     "from": "/adopt/assurance-and-adoption/procurement/",
-    "to": "/adopt/assurance-and-adoption/case-studies/",
+    "to": "/case-studies/",
     "field": "related.pages"
   },
   {
@@ -546,6 +551,16 @@
   },
   {
     "from": "/discover/resources/reports-and-white-papers/",
+    "to": "/papers/",
+    "field": "related.pages"
+  },
+  {
+    "from": "/reports/",
+    "to": "/discover/resources/specifications/",
+    "field": "related.pages"
+  },
+  {
+    "from": "/reports/",
     "to": "/papers/",
     "field": "related.pages"
   },
@@ -702,7 +717,7 @@
   {
     "from": "/people/adam-finney/",
     "to": "/groups/marketing/",
-    "field": "related.groups"
+    "field": "related.working-groups"
   },
   {
     "from": "/people/alastair-beresford/",
@@ -742,7 +757,7 @@
   {
     "from": "/people/alfredo-mazzinghi/",
     "to": "/groups/cheri-qemu/",
-    "field": "related.groups"
+    "field": "related.working-groups"
   },
   {
     "from": "/people/allison-randal/",
@@ -757,7 +772,7 @@
   {
     "from": "/people/allison-randal/",
     "to": "/groups/cheri-linux-working-group/",
-    "field": "related.groups"
+    "field": "related.working-groups"
   },
   {
     "from": "/people/andrew-lindsay/",
@@ -797,7 +812,7 @@
   {
     "from": "/people/ben-fletcher/",
     "to": "/groups/cheri-in-soc/",
-    "field": "related.groups"
+    "field": "related.working-groups"
   },
   {
     "from": "/people/benjamin-fletcher/",
@@ -817,7 +832,7 @@
   {
     "from": "/people/brooks-davis/",
     "to": "/groups/os-support-and-portability/",
-    "field": "related.groups"
+    "field": "related.working-groups"
   },
   {
     "from": "/people/carl-shaw/",
@@ -847,7 +862,7 @@
   {
     "from": "/people/david-chisnall/",
     "to": "/groups/cheri-c-cplusplus/",
-    "field": "related.groups"
+    "field": "related.working-groups"
   },
   {
     "from": "/people/david-musliner/",
@@ -887,7 +902,7 @@
   {
     "from": "/people/edoardo-marangoni/",
     "to": "/groups/rust-plus-cheri/",
-    "field": "related.groups"
+    "field": "related.working-groups"
   },
   {
     "from": "/people/gavin-ferris/",
@@ -917,7 +932,7 @@
   {
     "from": "/people/hesham-almatary/",
     "to": "/groups/cheri-for-sel4/",
-    "field": "related.groups"
+    "field": "related.working-groups"
   },
   {
     "from": "/people/javier-orensanz-martinez/",
@@ -932,7 +947,7 @@
   {
     "from": "/people/jennifer-jackson/",
     "to": "/groups/cheri-zephyr/",
-    "field": "related.groups"
+    "field": "related.working-groups"
   },
   {
     "from": "/people/jeremy-singer/",
@@ -947,7 +962,7 @@
   {
     "from": "/people/jeremy-singer/",
     "to": "/groups/cheri-virtual-machines/",
-    "field": "related.groups"
+    "field": "related.working-groups"
   },
   {
     "from": "/people/jessica-clarke/",
@@ -1002,7 +1017,7 @@
   {
     "from": "/people/jonathan-woodruff/",
     "to": "/groups/cheri-research/",
-    "field": "related.groups"
+    "field": "related.working-groups"
   },
   {
     "from": "/people/joshua-lant/",
@@ -1062,7 +1077,7 @@
   {
     "from": "/people/maricel-ventura/",
     "to": "/groups/cheri-plus-safety/",
-    "field": "related.groups"
+    "field": "related.working-groups"
   },
   {
     "from": "/people/mark-batty/",
@@ -1092,7 +1107,7 @@
   {
     "from": "/people/marno-van-der-maas/",
     "to": "/groups/repository-management/",
-    "field": "related.groups"
+    "field": "related.working-groups"
   },
   {
     "from": "/people/martin-atkins/",
@@ -1122,12 +1137,12 @@
   {
     "from": "/people/mike-eftimakis/",
     "to": "/groups/certification-working-group/",
-    "field": "related.groups"
+    "field": "related.working-groups"
   },
   {
     "from": "/people/mike-eftimakis/",
     "to": "/groups/promotion-and-ambassador-program/",
-    "field": "related.groups"
+    "field": "related.working-groups"
   },
   {
     "from": "/people/mike-halsall/",
@@ -1142,7 +1157,7 @@
   {
     "from": "/people/murali-vijayaraghavan/",
     "to": "/groups/mmu-less-systems/",
-    "field": "related.groups"
+    "field": "related.working-groups"
   },
   {
     "from": "/people/murat-cakmak/",
@@ -1162,7 +1177,7 @@
   {
     "from": "/people/oliver-gray/",
     "to": "/groups/cheri-freertos/",
-    "field": "related.groups"
+    "field": "related.working-groups"
   },
   {
     "from": "/people/ollie-whitehouse/",
@@ -1237,7 +1252,7 @@
   {
     "from": "/people/sarah-harris/",
     "to": "/groups/rust-plus-cheri/",
-    "field": "related.groups"
+    "field": "related.working-groups"
   },
   {
     "from": "/people/simon-moore/",
@@ -1267,7 +1282,7 @@
   {
     "from": "/people/thierno-sene/",
     "to": "/groups/cheri-plus-safety/",
-    "field": "related.groups"
+    "field": "related.working-groups"
   },
   {
     "from": "/people/thomas-nyman/",
@@ -1282,7 +1297,7 @@
   {
     "from": "/people/tora-fridholm/",
     "to": "/groups/marketing/",
-    "field": "related.groups"
+    "field": "related.working-groups"
   },
   {
     "from": "/news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/",
@@ -1357,7 +1372,7 @@
   {
     "from": "/news/behind-the-scenes-inside-the-promotion-and-ambassador-program-working-group/",
     "to": "/groups/promotion-and-ambassador-program/",
-    "field": "related.groups"
+    "field": "related.working-groups"
   },
   {
     "from": "/news/behind-the-scenes-inside-the-promotion-and-ambassador-program-working-group/",
@@ -1637,7 +1652,7 @@
   {
     "from": "/news/cheri-sel4-and-cheri-microkit-released/",
     "to": "/groups/cheri-for-sel4/",
-    "field": "related.groups"
+    "field": "related.working-groups"
   },
   {
     "from": "/news/cheri-sel4-and-cheri-microkit-released/",
@@ -2667,7 +2682,7 @@
   {
     "from": "/news/streamlining-the-cheri-ecosystem-an-update-from-the-repository-management-working-group/",
     "to": "/groups/repository-management/",
-    "field": "related.groups"
+    "field": "related.working-groups"
   },
   {
     "from": "/news/streamlining-the-cheri-ecosystem-an-update-from-the-repository-management-working-group/",
@@ -2717,7 +2732,7 @@
   {
     "from": "/news/towards-a-reference-qemu-for-cheri-platform-emulation/",
     "to": "/groups/cheri-qemu/",
-    "field": "related.groups"
+    "field": "related.working-groups"
   },
   {
     "from": "/news/towards-a-reference-qemu-for-cheri-platform-emulation/",
@@ -2772,7 +2787,7 @@
   {
     "from": "/news/unlocking-the-future-a-roadmap-for-cheri-technology-advancement/",
     "to": "/groups/marketing/",
-    "field": "related.groups"
+    "field": "related.working-groups"
   },
   {
     "from": "/news/unlocking-the-future-a-roadmap-for-cheri-technology-advancement/",
@@ -2817,7 +2832,7 @@
   {
     "from": "/news/working-group-spotlight-marketing/",
     "to": "/groups/marketing/",
-    "field": "related.groups"
+    "field": "related.working-groups"
   },
   {
     "from": "/news/working-group-spotlight-marketing/",
@@ -3037,17 +3052,17 @@
   {
     "from": "/events/cheri-blossoms-conference-2025/",
     "to": "/groups/marketing/",
-    "field": "related.groups"
+    "field": "related.working-groups"
   },
   {
     "from": "/events/cheri-blossoms-conference-2025/",
     "to": "/groups/cheri-qemu/",
-    "field": "related.groups"
+    "field": "related.working-groups"
   },
   {
     "from": "/events/cheri-blossoms-conference-2025/",
     "to": "/groups/cheri-in-soc/",
-    "field": "related.groups"
+    "field": "related.working-groups"
   },
   {
     "from": "/events/cheri-blossoms-conference-2025/",
@@ -3317,7 +3332,7 @@
   {
     "from": "/events/cheri-blossoms-conference-2026/",
     "to": "/groups/cheri-in-soc/",
-    "field": "related.groups"
+    "field": "related.working-groups"
   },
   {
     "from": "/events/cheri-blossoms-conference-2026/",
@@ -5382,7 +5397,7 @@
   {
     "from": "/guides/technical-faq/",
     "to": "/groups/cheri-linux-working-group/",
-    "field": "related.groups"
+    "field": "related.working-groups"
   },
   {
     "from": "/guides/technical-faq/",
@@ -5448,5 +5463,150 @@
     "from": "/guides/tutorials-and-training/",
     "to": "/software/zephyr/",
     "field": "related.software"
+  },
+  {
+    "from": "/case-studies/cheribsd/",
+    "to": "/organisations/freebsd-foundation/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/case-studies/cheribsd/",
+    "to": "/software/cheribsd/",
+    "field": "related.software"
+  },
+  {
+    "from": "/case-studies/cheribsd/",
+    "to": "/software/freebsd/",
+    "field": "related.software"
+  },
+  {
+    "from": "/case-studies/cheribsd/",
+    "to": "/reports/assessing-the-viability-of-an-open-source-cheri-desktop-software-ecosystem/",
+    "field": "related.reports"
+  },
+  {
+    "from": "/case-studies/cheriot/",
+    "to": "/hardware/cheriot/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/case-studies/cheriot/",
+    "to": "/hardware/cheriot-ibex/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/case-studies/cheriot/",
+    "to": "/hardware/sonata/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/case-studies/cheriot/",
+    "to": "/software/real-time-operating-systems/",
+    "field": "related.software"
+  },
+  {
+    "from": "/case-studies/codasip-x730/",
+    "to": "/organisations/codasip/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/case-studies/codasip-x730/",
+    "to": "/hardware/x730/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/case-studies/codasip-x730/",
+    "to": "/software/cheribsd/",
+    "field": "related.software"
+  },
+  {
+    "from": "/case-studies/codasip-x730/",
+    "to": "/software/cheri-linux/",
+    "field": "related.software"
+  },
+  {
+    "from": "/case-studies/morello/",
+    "to": "/organisations/arm/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/case-studies/morello/",
+    "to": "/hardware/morello/",
+    "field": "related.hardware"
+  },
+  {
+    "from": "/case-studies/morello/",
+    "to": "/software/cheribsd/",
+    "field": "related.software"
+  },
+  {
+    "from": "/reports/an-introduction-to-cheri/",
+    "to": "/people/robert-watson/",
+    "field": "authors"
+  },
+  {
+    "from": "/reports/an-introduction-to-cheri/",
+    "to": "/people/simon-moore/",
+    "field": "authors"
+  },
+  {
+    "from": "/reports/an-introduction-to-cheri/",
+    "to": "/people/peter-sewell/",
+    "field": "authors"
+  },
+  {
+    "from": "/reports/an-introduction-to-cheri/",
+    "to": "/people/peter-g-neumann/",
+    "field": "authors"
+  },
+  {
+    "from": "/reports/an-introduction-to-cheri/",
+    "to": "/organisations/university-of-cambridge/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/reports/assessing-the-viability-of-an-open-source-cheri-desktop-software-ecosystem/",
+    "to": "/people/robert-watson/",
+    "field": "authors"
+  },
+  {
+    "from": "/reports/assessing-the-viability-of-an-open-source-cheri-desktop-software-ecosystem/",
+    "to": "/people/ben-laurie/",
+    "field": "authors"
+  },
+  {
+    "from": "/reports/assessing-the-viability-of-an-open-source-cheri-desktop-software-ecosystem/",
+    "to": "/people/alex-richardson/",
+    "field": "authors"
+  },
+  {
+    "from": "/reports/assessing-the-viability-of-an-open-source-cheri-desktop-software-ecosystem/",
+    "to": "/organisations/capabilities-limited/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/reports/assessing-the-viability-of-an-open-source-cheri-desktop-software-ecosystem/",
+    "to": "/case-studies/cheribsd/",
+    "field": "related.case-studies"
+  },
+  {
+    "from": "/reports/assessing-the-viability-of-an-open-source-cheri-desktop-software-ecosystem/",
+    "to": "/software/cheribsd/",
+    "field": "related.software"
+  },
+  {
+    "from": "/reports/cheri-adoption-and-diffusion-research/",
+    "to": "/organisations/dsit/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/reports/cheri-technology-for-cyber-security/",
+    "to": "/organisations/dsit/",
+    "field": "related.organisations"
+  },
+  {
+    "from": "/reports/digital-security-by-design-programme-outcomes/",
+    "to": "/organisations/ukri/",
+    "field": "related.organisations"
   }
 ]

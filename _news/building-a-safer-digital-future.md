@@ -4,7 +4,7 @@ image_url: /assets/news/building-a-safer-digital-future/87eb1aa83796-hero.png
 published_date: '2025-02-05'
 authors: []
 related:
-  groups: []
+  working-groups: []
   organisations:
   - cheri-alliance
   hardware:
@@ -12,7 +12,7 @@ related:
   software:
   - freebsd
   - llvm-and-clang
-  papers: []
+  academic-papers: []
 ---
 
 # Building a Safer Digital Future

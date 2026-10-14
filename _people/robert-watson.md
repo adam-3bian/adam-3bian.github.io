@@ -12,7 +12,7 @@ related:
   - cheri-alliance
   - university-of-cambridge
   - freebsd-foundation
-  groups: []
+  working-groups: []
 ---
 
 # Robert Watson

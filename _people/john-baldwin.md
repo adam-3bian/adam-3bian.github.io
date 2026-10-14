@@ -10,7 +10,7 @@ social:
 related:
   organisations:
   - ararat-river-consulting-llc
-  groups: []
+  working-groups: []
 ---
 
 # John Baldwin

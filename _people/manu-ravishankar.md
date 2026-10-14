@@ -11,7 +11,7 @@ related:
   organisations:
   - pa-consulting
   - dsit
-  groups: []
+  working-groups: []
 ---
 
 # Manu Ravishankar

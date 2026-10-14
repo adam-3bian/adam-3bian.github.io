@@ -12,10 +12,10 @@ related:
   - /adopt/business-case/adoption-costs-and-migration/
   people: []
   organisations: []
-  groups: []
+  working-groups: []
   news: []
   events: []
-  papers: []
+  academic-papers: []
   hardware: []
   software: []
   guides: []

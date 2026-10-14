@@ -10,7 +10,7 @@ end_datetime: null
 location: Hub8 MX, Cheltenham, UK
 speakers: []
 related:
-  groups: []
+  working-groups: []
   organisations:
   - university-of-cambridge
   - capabilities-limited
@@ -20,7 +20,7 @@ related:
   - google
   - cynam
   - ncsc
-  papers: []
+  academic-papers: []
 ---
 
 # 'Cybersecurity by design - from research to industry' conference
@@ -77,7 +77,7 @@ CHERI Software Ecosystem | [Carl Shaw](/people/carl-shaw/) - [Codasip](/organisa
 
 ‘Cybersecurity by design’ Conference Closing Remarks | Gavin Ferris - CHERI Alliance (8:34)
 
-You can view the playlist directly on YouTube here.
+You can view the playlist directly on YouTube [here](https://youtube.com/playlist?list=PLTe5zG6binjk675uhnNIF03oBddgvhSbr&feature=shared).
 
 The slides available for download are intended for personal and educational use only. By downloading the slides, you agree not to use, reproduce, or distribute them for any commercial purposes without explicit prior written consent. Any commercial use, including but not limited to resale, redistribution, or incorporation into other products or services, is strictly prohibited. All rights to the content remain with the original creators.
 

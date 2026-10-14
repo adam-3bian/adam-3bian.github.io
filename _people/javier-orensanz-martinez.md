@@ -10,7 +10,7 @@ social:
 related:
   organisations:
   - lowrisc
-  groups: []
+  working-groups: []
 ---
 
 # Javier Orensanz Martinez

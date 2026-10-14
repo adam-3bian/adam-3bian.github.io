@@ -28,7 +28,7 @@ speakers:
 - tariq-kurd
 - thomas-nyman
 related:
-  groups: []
+  working-groups: []
   organisations:
   - university-of-modena-and-reggio-emilia
   - the-university-of-manchester
@@ -46,7 +46,7 @@ related:
   - lowrisc
   - google
   - ukri
-  papers: []
+  academic-papers: []
 ---
 
 # CHERITech'25 Conference

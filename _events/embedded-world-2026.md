@@ -10,13 +10,13 @@ end_datetime: null
 location: Exhibition Centre Nuremberg, Germany
 speakers: []
 related:
-  groups: []
+  working-groups: []
   organisations:
   - capabilities-limited
   - the-capable-hub
   - cheri-alliance
   - codasip
-  papers: []
+  academic-papers: []
 ---
 
 # CHERI Alliance at Embedded World 2026

@@ -11,7 +11,7 @@ related:
   organisations:
   - university-of-edinburgh
   - university-of-cambridge
-  groups: []
+  working-groups: []
 ---
 
 # Jianyi Cheng

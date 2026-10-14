@@ -11,7 +11,7 @@ related:
   organisations:
   - university-of-cambridge
   - university-of-edinburgh
-  groups: []
+  working-groups: []
 ---
 
 # Paul Metzger

@@ -10,7 +10,7 @@ social:
 related:
   organisations:
   - smart-information-flow-technologies-sift
-  groups: []
+  working-groups: []
 ---
 
 # David Musliner

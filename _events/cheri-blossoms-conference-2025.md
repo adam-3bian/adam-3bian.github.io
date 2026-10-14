@@ -38,7 +38,7 @@ speakers:
 - tariq-kurd
 - tora-fridholm
 related:
-  groups:
+  working-groups:
   - marketing
   - cheri-qemu
   - cheri-in-soc
@@ -57,7 +57,7 @@ related:
   - lowrisc
   - dsit
   - ukri
-  papers: []
+  academic-papers: []
 ---
 
 # CHERI Blossoms Conference 2025
@@ -135,7 +135,7 @@ The CHERI Blossoms Conference 2025 invited researchers, technologists, industry 
 
 ## Agenda
 
-View Agenda
+[View Agenda](https://cheri-alliance.org/wp-content/uploads/2025/04/CHERI-Blossoms-2025-Agenda-2-Portrait-v2.pdf)
 
 ## Venue
 
@@ -157,7 +157,7 @@ Fisher Building, St John’s College, Cambridge, UK
 ### Address:
 
 - St. John’s College, St. Johns Street, Cambridge, CB2 1TP
-- View map
+- [View map](https://www.google.com/maps/search/?api=1&query=St.+Johns+College+Cambridge+CB2+1TP)
 
 ## More CHERI Blossoms events
 

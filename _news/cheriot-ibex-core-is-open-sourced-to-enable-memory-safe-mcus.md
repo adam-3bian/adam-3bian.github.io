@@ -4,12 +4,12 @@ image_url: /assets/news/cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-
 published_date: '2025-04-07'
 authors: []
 related:
-  groups: []
+  working-groups: []
   organisations: []
   hardware:
   - cheriot-ibex
   software: []
-  papers: []
+  academic-papers: []
 ---
 
 # CHERIoT-Ibex Core is Open Sourced to Enable Memory Safe MCUs

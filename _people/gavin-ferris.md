@@ -11,7 +11,7 @@ related:
   organisations:
   - cheri-alliance
   - lowrisc
-  groups: []
+  working-groups: []
 ---
 
 # Gavin Ferris

@@ -10,7 +10,7 @@ social:
 related:
   organisations:
   - microservice-store
-  groups: []
+  working-groups: []
 ---
 
 # Murat Cakmak

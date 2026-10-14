@@ -5,12 +5,12 @@ published_date: null
 authors:
 - ben-fletcher
 related:
-  groups: []
+  working-groups: []
   organisations:
   - cheri-alliance
   hardware: []
   software: []
-  papers: []
+  academic-papers: []
 ---
 
 # CHERI Tag Bit Transport Overlay Standard version 0.9 released

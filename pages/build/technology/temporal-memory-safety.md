@@ -13,10 +13,10 @@ related:
   - /build/technology/spatial-memory-safety/
   people: []
   organisations: []
-  groups: []
+  working-groups: []
   news: []
   events: []
-  papers: []
+  academic-papers: []
   hardware: []
   software: []
   guides: []

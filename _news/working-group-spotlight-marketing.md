@@ -4,13 +4,13 @@ image_url: /assets/news/working-group-spotlight-marketing/df8b50676c3b-working-g
 published_date: '2025-07-21'
 authors: []
 related:
-  groups:
+  working-groups:
   - marketing
   organisations:
   - cheri-alliance
   hardware: []
   software: []
-  papers: []
+  academic-papers: []
 ---
 
 # Working Group Spotlight – Marketing

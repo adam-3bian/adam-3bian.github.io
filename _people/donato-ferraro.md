@@ -11,7 +11,7 @@ related:
   organisations:
   - minerva-systems
   - university-of-modena-and-reggio-emilia
-  groups: []
+  working-groups: []
 ---
 
 # Donato Ferraro

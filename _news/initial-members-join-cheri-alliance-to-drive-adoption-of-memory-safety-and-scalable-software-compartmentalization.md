@@ -4,7 +4,7 @@ image_url: /assets/news/initial-members-join-cheri-alliance-to-drive-adoption-of
 published_date: '2024-06-17'
 authors: []
 related:
-  groups: []
+  working-groups: []
   organisations:
   - university-of-cambridge
   - capabilities-limited
@@ -17,7 +17,7 @@ related:
   hardware: []
   software:
   - freebsd
-  papers: []
+  academic-papers: []
 ---
 
 # Initial members join CHERI Alliance to drive adoption of memory safety and scalable software compartmentalization

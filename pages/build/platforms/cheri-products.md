@@ -12,10 +12,10 @@ related:
   - /adopt/assurance-and-adoption/cheri-enabled-products/
   people: []
   organisations: []
-  groups: []
+  working-groups: []
   news: []
   events: []
-  papers: []
+  academic-papers: []
   hardware: []
   software: []
   guides:

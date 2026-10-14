@@ -21,10 +21,9 @@ index_pages = {}
 errors = []
 # Keep the complete examples in the authoring reference executable.
 reference = File.read(File.join(root, 'FRONT_MATTER.md'))
-reference_examples = reference.scan(/<!-- schema: (\w+) -->\s*```yaml\n(.*?)\n```/m).map do |kind, example|
+reference_examples = reference.scan(/<!-- schema: ([\w-]+) -->\s*```yaml\n(.*?)\n```/m).map do |kind, example|
   fields = YAML.safe_load(example, permitted_classes: [Date, Time], aliases: false)
-  required = fields.reject { |key, _| schemas.fetch('common', {}).key?(key) }
-  [kind, required]
+  [kind, fields]
 end
 objects = site.pages.select { |p| p.path.start_with?('pages/') } + site.documents
 lookup = objects.to_h { |object| [object.url, object] }
@@ -43,8 +42,17 @@ def same_fields?(schema, value)
   end
 end
 
+def required_schema_fields(schema, fields, common, optional = {})
+  optional_fields = common.merge(optional)
+  required = fields.reject { |key, _| optional_fields.key?(key) && !schema.key?(key) }
+  if schema['related'].is_a?(Hash) && required['related'].is_a?(Hash)
+    required['related'] = required['related'].select { |key, _| schema['related'].key?(key) }
+  end
+  required
+end
+
 reference_examples.each do |kind, fields|
-  errors << "Invalid FRONT_MATTER.md #{kind} example" unless schemas[kind] && same_fields?(schemas[kind], fields)
+  errors << "Invalid FRONT_MATTER.md #{kind} example" unless schemas[kind] && same_fields?(schemas[kind], required_schema_fields(schemas[kind], fields, schemas.fetch('common', {}), schemas.dig('optional', kind) || {}))
 end
 
 def schema_kind(object, entry)
@@ -80,7 +88,7 @@ objects.each do |object|
     next
   end
   fields = YAML.safe_load(front[1], permitted_classes: [Date, Time], aliases: true)
-  required_fields = fields.reject { |key, _| schemas.fetch('common', {}).key?(key) }
+  required_fields = required_schema_fields(schemas.fetch(kind), fields, schemas.fetch('common', {}), schemas.dig('optional', kind) || {})
   errors << "Incomplete or unexpected schema fields: #{entry['file']}" unless same_fields?(schemas[kind], required_fields)
   errors << "Missing title: #{entry['file']}" if object.data['title'].to_s.strip.empty?
   %w[parent next_page_url].each do |key|
@@ -120,6 +128,17 @@ objects.each do |object|
       errors << "Listing role does not match its collection: #{entry['file']}"
     end
     errors << "Event status on non-event listing: #{entry['file']}" if listing['status'] && collection != 'events'
+    if fields['certification']
+      errors << "Invalid certification listing: #{entry['file']}" unless collection == 'hardware' && fields['certification'] == 'cheri-enabled'
+    end
+  end
+  if kind == 'hardware'
+    if fields['certification']
+      errors << "Invalid hardware certification: #{entry['file']}" unless fields['certification'] == 'cheri-enabled'
+      errors << "Missing certification evidence URL: #{entry['file']}" if fields['certification_url'].to_s.strip.empty?
+    elsif fields['certification_url']
+      errors << "Certification evidence without a certification: #{entry['file']}"
+    end
   end
   fields.each do |key, value|
     next if value.nil?
@@ -170,6 +189,11 @@ objects.each do |object|
   if fields['published_year'] && (!fields['published_year'].is_a?(Integer) || fields['published_year'] < 1000 || fields['published_year'] > 9999)
     errors << "Invalid publication year: #{entry['file']}"
   end
+  if kind == 'reports'
+    errors << "Invalid report publication type: #{entry['file']}" unless %w[report white-paper policy-paper technical-report].include?(fields['publication_type'])
+    errors << "Missing report publication URL: #{entry['file']}" if fields['publication_url'].to_s.strip.empty?
+    errors << "Missing report publisher: #{entry['file']}" if fields['publisher'].to_s.strip.empty?
+  end
   settings['roles'].each do |key, role|
     references = fields[key].nil? ? [] : Array(fields[key])
     references.each do |slug|
@@ -186,9 +210,16 @@ objects.each do |object|
       end
     end
   end
-  (fields['related'] || {}).each do |collection, references|
+  related = fields['related'] || {}
+  errors << "Invalid related mapping: #{entry['file']}" unless related.is_a?(Hash)
+  (related.is_a?(Hash) ? related : {}).each do |collection, references|
+    unless (collection == 'pages' || settings['collections'].key?(collection)) && references.is_a?(Array) && references.all? { |slug| slug.is_a?(String) }
+      errors << "Invalid related #{collection} references: #{entry['file']}"
+      next
+    end
+    errors << "Duplicate related #{collection} references: #{entry['file']}" unless references.uniq.length == references.length
     references.each do |slug|
-      target = collection == 'pages' ? lookup[slug] : slugs.fetch(collection, {})[slug]
+      target = collection == 'pages' ? lookup[settings.fetch('aliases', {}).fetch(slug, slug)] : slugs.fetch(collection, {})[slug]
       unless target
         errors << "Unknown related #{collection} reference #{slug}: #{entry['file']}"
         next
@@ -292,16 +323,30 @@ records = objects.sort_by { |object| object.data['title'].to_s.downcase }.map do
   entry = map_lookup[object.url]
   next unless entry
   field_date = object.data['published_date'] || object.data['start_datetime'] || object.data['start_date'] || object.data['published_year'] || object.data['updated_date'] || object.data['document_date']
+  image = object.data['image_url'].to_s
+  image_status = image.empty? ? 'none' : image.end_with?('/placeholder.svg') ? 'placeholder' : 'provided'
+  schema = schemas.fetch(schema_kind(object, entry))
+  properties = (schema.keys + schemas.fetch('common', {}).keys + (schemas.dig('optional', schema_kind(object, entry)) || {}).keys).uniq.each_with_object({}) do |key, values|
+    values[key] = object.data[key] if schema.key?(key) || !object.data[key].nil?
+  end
   {'title' => object.data['title'], 'url' => object.url, 'file' => entry['file'],
    'type' => entry['page_type'], 'collection' => entry['collection'],
-   'has_image' => !object.data['image_url'].nil?,
+   'has_image' => image_status == 'provided', 'image_status' => image_status,
    'missing_news_date' => entry['collection'] == 'news' && object.data['published_date'].nil?,
    'display_date' => field_date && field_date.to_s,
    'alternate' => object.data['alternate'] == true,
-   'alias_target' => settings.dig('aliases', object.url)}
+   'alias_target' => settings.dig('aliases', object.url), 'properties' => properties}
 end.compact
+collection_summary = settings['collections'].map do |key, value|
+  collection_records = records.select { |record| record['collection'] == key }
+  {'key' => key, 'label' => value['label'], 'url' => value['url'] || "/#{key}/",
+   'records' => collection_records.length, 'canonical' => collection_records.count { |record| !record['alternate'] },
+   'provided_images' => collection_records.count { |record| record['image_status'] == 'provided' },
+   'placeholders' => collection_records.count { |record| record['image_status'] == 'placeholder' }}
+end
 report = {'generated_at' => Time.now.utc.iso8601, 'record_count' => records.length,
           'relationship_count' => edges.length, 'image_count' => images.length,
+          'collection_count' => collection_summary.length, 'collections' => collection_summary,
           'errors' => errors.uniq, 'records' => records}
 relation_data = relationships.transform_values do |groups|
   groups.map { |label, targets| {'label' => label, 'targets' => targets} }

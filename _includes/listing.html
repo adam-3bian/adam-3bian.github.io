@@ -1,5 +1,6 @@
 {% assign list_collection = include.collection %}{% assign list_items = site[list_collection] | where_exp: 'record', 'record.alternate != true' %}
 {% assign preset = site.data.viewer.listing_presets[page.url] %}{% assign list_role = page.listing.role | default: preset.role %}{% assign list_status = page.listing.status | default: preset.status %}
+{% if page.certification %}{% assign list_items = list_items | where: 'certification', page.certification %}{% endif %}
 {% if list_role == 'speaker' %}{% assign list_items = list_items | where: 'is_speaker', true %}{% elsif list_role == 'member' %}{% assign list_items = list_items | where_exp: 'record', 'record.membership_tier != nil' %}
 {% elsif list_role == 'board' %}{% assign board_items = '' | split: '' %}{% for person_slug in site.data.governing-board %}{% assign person = list_items | where: 'slug', person_slug | first %}{% if person %}{% assign board_items = board_items | push: person %}{% endif %}{% endfor %}{% assign list_items = board_items %}{% endif %}
 {% if list_collection == 'events' and list_status %}{% assign eligible = '' | split: '' %}{% assign today_key = site.time | date: '%Y-%m-%d' %}{% for candidate in list_items %}{% assign last_date = candidate.end_datetime | default: candidate.end_date | default: candidate.start_datetime | default: candidate.start_date | slice: 0, 10 %}{% if last_date != '' %}{% if list_status == 'upcoming' and last_date >= today_key %}{% assign eligible = eligible | push: candidate %}{% elsif list_status == 'past' and last_date < today_key %}{% assign eligible = eligible | push: candidate %}{% endif %}{% endif %}{% endfor %}{% assign list_items = eligible %}{% endif %}
@@ -10,8 +11,9 @@
 {% assign collection_label = site.data.viewer.collections[list_collection].label | default: list_collection %}
 {% assign listing_heading = 'Browse ' | append: collection_label | downcase | capitalize %}
 {% case list_role %}{% when 'board' %}{% assign listing_heading = 'Board members' %}{% when 'member' %}{% assign listing_heading = 'Member directory' %}{% when 'speaker' %}{% assign listing_heading = 'Speaker directory' %}{% endcase %}
-{% if list_status == 'past' %}{% assign listing_heading = 'Event archive' %}{% elsif list_status == 'upcoming' %}{% assign listing_heading = 'Scheduled events' %}{% elsif list_collection == 'groups' %}{% assign listing_heading = 'Working group directory' %}{% endif %}
-{% assign show_card_images = true %}{% if list_collection == 'groups' %}{% assign show_card_images = false %}{% endif %}
+{% if list_status == 'past' %}{% assign listing_heading = 'Event archive' %}{% elsif list_status == 'upcoming' %}{% assign listing_heading = 'Scheduled events' %}{% elsif list_collection == 'working-groups' %}{% assign listing_heading = 'Working group directory' %}{% endif %}
+{% if page.certification == 'cheri-enabled' %}{% assign listing_heading = 'Certified products' %}{% endif %}
+{% assign show_card_images = true %}{% if list_collection == 'working-groups' %}{% assign show_card_images = false %}{% endif %}
 <section class="listing" aria-labelledby="listing-heading" data-listing="{{ list_collection | escape }}" data-role="{{ list_role | escape }}" data-status="{{ list_status | escape }}">
   <header class="section-heading"><h2 id="listing-heading">{{ listing_heading | escape }}</h2><p>{{ list_items.size }} {% if list_items.size == 1 %}result{% else %}results{% endif %}</p></header>
   {% if list_items.size > 0 %}{% include cards.html items=list_items role=list_role show_images=show_card_images %}{% else %}<p class="notice">No {{ collection_label | downcase | escape }} to display yet.</p>{% endif %}

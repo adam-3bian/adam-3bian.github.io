@@ -5,13 +5,13 @@ published_date: '2026-04-14'
 authors:
 - mike-eftimakis
 related:
-  groups: []
+  working-groups: []
   organisations:
   - google
   hardware: []
   software:
   - freebsd
-  papers: []
+  academic-papers: []
 ---
 
 # AI has compressed the attack timeline

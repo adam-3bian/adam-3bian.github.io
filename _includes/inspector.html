@@ -1,6 +1,0 @@
-{% if current_map %}{% assign schema_kind = current_kind %}{% if current_kind == 'pages' %}{% assign schema_kind = 'content' %}{% if current_map.page_type contains '(list)' %}{% assign schema_kind = 'listing' %}{% elsif current_map.page_type contains '(index)' %}{% assign schema_kind = 'index' %}{% endif %}{% endif %}{% assign field_schema = site.data.schemas[schema_kind] %}
-<details class="inspector"><summary>Inspect front matter</summary><p class="small">{{ current_map.file | escape }} · {{ page.url | escape }}</p><pre class="front-matter-json"><code>{
-{% for field in field_schema %}{% assign field_key = field[0] %}  {{ field_key | jsonify }}: {{ page[field_key] | jsonify }}{% unless forloop.last %},{% endunless %}
-{% endfor %}{% for field in site.data.schemas.common %}{% assign field_key = field[0] %}{% if page[field_key] != nil %},
-  {{ field_key | jsonify }}: {{ page[field_key] | jsonify }}{% endif %}{% endfor %}
-}</code></pre><p class="small">Null and empty values are shown exactly. Linked-record sections are derived from these references.</p></details>{% endif %}

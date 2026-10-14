@@ -9,7 +9,7 @@ social:
   github_url: null
 related:
   organisations: []
-  groups: []
+  working-groups: []
 ---
 
 # Lucian Paul-Trifu

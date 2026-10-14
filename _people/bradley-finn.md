@@ -10,7 +10,7 @@ social:
 related:
   organisations:
   - dsit
-  groups: []
+  working-groups: []
 ---
 
 # Bradley Finn

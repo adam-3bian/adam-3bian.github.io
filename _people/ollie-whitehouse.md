@@ -10,7 +10,7 @@ social:
 related:
   organisations:
   - ncsc
-  groups: []
+  working-groups: []
 ---
 
 # Ollie Whitehouse

@@ -5,7 +5,7 @@ published_date: '2026-01-28'
 authors:
 - alfredo-mazzinghi
 related:
-  groups:
+  working-groups:
   - cheri-qemu
   organisations:
   - university-of-cambridge
@@ -17,7 +17,7 @@ related:
   hardware:
   - morello
   software: []
-  papers: []
+  academic-papers: []
 ---
 
 # Towards a reference QEMU for CHERI platform emulation

@@ -4,7 +4,7 @@ image_url: /assets/news/recent-advances-in-cheri-enhancing-stability-maturity-an
 published_date: '2025-05-13'
 authors: []
 related:
-  groups: []
+  working-groups: []
   organisations:
   - university-of-cambridge
   - risc-v-international
@@ -23,7 +23,7 @@ related:
   - freebsd
   - zephyr
   - llvm-and-clang
-  papers: []
+  academic-papers: []
 ---
 
 # Recent advances in CHERI enhancing stability, maturity, and accessibility as urged by the UK’s DSTL

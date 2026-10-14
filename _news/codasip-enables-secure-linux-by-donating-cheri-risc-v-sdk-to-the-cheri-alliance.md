@@ -4,13 +4,13 @@ image_url: /assets/news/codasip-enables-secure-linux-by-donating-cheri-risc-v-sd
 published_date: '2024-10-22'
 authors: []
 related:
-  groups: []
+  working-groups: []
   organisations:
   - cheri-alliance
   - codasip
   hardware: []
   software: []
-  papers: []
+  academic-papers: []
 ---
 
 # Codasip enables secure Linux by donating CHERI RISC-V SDK to the CHERI Alliance

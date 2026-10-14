@@ -10,10 +10,10 @@ end_datetime: null
 location: University of Cambridge, Cambridge, UK
 speakers: []
 related:
-  groups: []
+  working-groups: []
   organisations:
   - university-of-cambridge
-  papers: []
+  academic-papers: []
 ---
 
 # CHERI Blossoms Conference 2027

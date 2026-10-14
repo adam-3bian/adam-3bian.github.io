@@ -5,13 +5,13 @@ published_date: '2026-07-15'
 authors:
 - adam-finney
 related:
-  groups: []
+  working-groups: []
   organisations:
   - lowrisc
   hardware:
   - cheriot
   software: []
-  papers: []
+  academic-papers: []
 ---
 
 # The leading Root-of-Trust now integrates CHERI security technology

@@ -10,7 +10,7 @@ social:
 related:
   organisations:
   - german-research-center-for-artificial-intelligence-dfki
-  groups: []
+  working-groups: []
 ---
 
 # Luca Müller

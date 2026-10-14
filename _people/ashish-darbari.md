@@ -10,7 +10,7 @@ social:
 related:
   organisations:
   - axiomise-ltd
-  groups: []
+  working-groups: []
 ---
 
 # Ashish Darbari

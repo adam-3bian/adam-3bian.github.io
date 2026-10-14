@@ -12,7 +12,7 @@ related:
   - sci-semiconductor
   - university-of-cambridge
   - google
-  groups:
+  working-groups:
   - cheri-c-cplusplus
 ---
 

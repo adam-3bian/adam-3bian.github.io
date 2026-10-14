@@ -11,10 +11,10 @@ related:
   - /discover/why-cheri/vulnerabilities-in-everyday-technology/
   people: []
   organisations: []
-  groups: []
+  working-groups: []
   news: []
   events: []
-  papers: []
+  academic-papers: []
   hardware: []
   software: []
   guides: []

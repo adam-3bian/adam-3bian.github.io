@@ -7,7 +7,7 @@ repository_urls:
 updated_date: null
 authors: []
 related:
-  groups: []
+  working-groups: []
   hardware:
   - cheriot
   - morello

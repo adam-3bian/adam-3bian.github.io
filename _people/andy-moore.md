@@ -10,7 +10,7 @@ social:
 related:
   organisations:
   - risc-v-international
-  groups: []
+  working-groups: []
 ---
 
 # Andy Moore

@@ -13,10 +13,10 @@ related:
   - /discover/history/cambridge-and-sri/
   people: []
   organisations: []
-  groups: []
+  working-groups: []
   news: []
   events: []
-  papers: []
+  academic-papers: []
   hardware: []
   software: []
   guides: []

@@ -1,6 +1,6 @@
 ---
 title: Light Momentum Technology Corp.
-image_url: /assets/organisations/light-momentum-technology-corp/baa4c8d4b03f-logo.png
+image_url: /assets/organisations/light-momentum-technology-corp/logo-transparent.svg
 website_url: http://lmtec.net/index_en.html
 membership_tier: full
 is_founding_member: true
