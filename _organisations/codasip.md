@@ -4,10 +4,6 @@ image_url: /assets/organisations/codasip/ef815ad95752-logo.png
 website_url: http://www.codasip.com/
 membership_tier: full
 is_founding_member: true
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # Codasip

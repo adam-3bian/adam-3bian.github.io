@@ -5,12 +5,9 @@ website_url: https://cheri-alliance.org/events/speakers/samuel-stark/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/samuel-stark/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - university-of-cambridge
-  working-groups: []
 ---
 
 # Samuel Stark

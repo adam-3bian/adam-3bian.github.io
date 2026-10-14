@@ -1,26 +1,13 @@
 ---
 title: RISC-V and Embedded Development
 permalink: /discover/history/risc-v-and-embedded-development/
-summary: CHERI-RISC-V opened the architecture to configurable processors, embedded platforms, formal models,
-  FPGA boards, and commercial product development.
-image_url: null
-updated_date: null
+summary: CHERI-RISC-V opened the architecture to configurable processors, embedded platforms, formal models, FPGA boards, and commercial product development.
 parent: /discover/
 next_page_url: /discover/history/commercialisation/
 related:
   pages:
   - /discover/history/early-capability-systems/
   - /discover/history/morello-history/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # RISC-V and Embedded Development

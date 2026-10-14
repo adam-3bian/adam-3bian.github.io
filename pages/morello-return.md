@@ -1,23 +1,7 @@
 ---
 title: Return an unused Morello Board
 permalink: /morello-return/
-summary: null
-image_url: null
-updated_date: null
 parent: /build/
-next_page_url: null
-related:
-  pages: []
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Return an unused Morello Board

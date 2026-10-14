@@ -1,20 +1,18 @@
 ---
-title: 🛠️ OS Support & Portability WG
+title: OS Support & Portability Working Group
 image_url: /assets/working-groups/os-support-and-portability/bb889a4dc09e-cheri-alliance-working-groups.png
 website_url: https://cheri-alliance.org/who-we-are/working-groups/os-support-portability/
-repository_urls: []
 leads:
 - brooks-davis
 related:
   organisations:
   - capabilities-limited
-  hardware: []
   software:
   - cheri-linux
   - zephyr
 ---
 
-# 🛠️ OS Support & Portability WG
+# OS Support & Portability Working Group
 
 Connects operating-system ports, shared interfaces, terminology, and documentation across CHERI architectures and software projects.
 

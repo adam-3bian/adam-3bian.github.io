@@ -2,22 +2,8 @@
 title: Latest News
 permalink: /reference/source-versions/latest-news/
 summary: News, announcements, and analysis from the CHERI Alliance and its members.
-image_url: null
-updated_date: null
 parent: /
 next_page_url: /news-and-events/news-and-analysis/press-resources/
-related:
-  pages: []
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Latest News

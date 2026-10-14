@@ -4,10 +4,6 @@ image_url: /assets/organisations/university-of-birmingham/527814188d27-logo.png
 website_url: https://www.birmingham.ac.uk/research/centres-institutes/cyber-security-and-privacy
 membership_tier: community
 is_founding_member: true
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # University of Birmingham

@@ -1,12 +1,6 @@
 ---
 title: Real-Time Operating Systems
-image_url: /assets/software/real-time-operating-systems/placeholder.svg
-website_url: null
-repository_urls: []
-type: null
-status: null
 related:
-  organisations: []
   hardware:
   - cheriot
   software:

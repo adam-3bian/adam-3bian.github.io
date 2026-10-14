@@ -4,24 +4,12 @@ permalink: /case-studies/
 layout: list
 listing:
   collection: case-studies
-  status: null
-  role: null
 summary: Applying CHERI in real products and platforms
 parent: /adopt/
 next_page_url: /adopt/assurance-and-adoption/assurance-and-certification/
 related:
   pages:
   - /adopt/business-case/the-business-case/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Case Studies

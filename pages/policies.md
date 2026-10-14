@@ -4,8 +4,6 @@ permalink: /policies/
 layout: list
 listing:
   collection: policies
-  status: null
-  role: null
 ---
 
 # Policies

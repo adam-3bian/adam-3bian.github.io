@@ -1,11 +1,6 @@
 ---
 title: Build Compartments
-image_url: /assets/guides/build-compartments/placeholder.svg
-repository_urls: []
-updated_date: null
-authors: []
 related:
-  working-groups: []
   hardware:
   - cheriot
   software:

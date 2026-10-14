@@ -1,12 +1,6 @@
 ---
 title: Morello
-image_url: /assets/hardware/morello/placeholder.svg
 website_url: https://developer.arm.com/Architectures/Morello
-repository_urls:
-- https://github.com/CTSRD-CHERI/cheribuild
-type: null
-architecture: null
-status: null
 related:
   organisations:
   - university-of-cambridge
@@ -17,6 +11,9 @@ related:
   - debugging-tools
   - cheribsd
   - llvm-and-clang
+repositories:
+- label: Build tools (cheribuild)
+  url: https://github.com/CTSRD-CHERI/cheribuild
 ---
 
 # Morello

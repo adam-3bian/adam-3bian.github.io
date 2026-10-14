@@ -4,10 +4,6 @@ image_url: /assets/organisations/sri/9a4b300a18a6-logo.png
 website_url: https://sri.com/
 membership_tier: community
 is_founding_member: true
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # SRI

@@ -1,26 +1,13 @@
 ---
 title: Hybrid Systems
 permalink: /build/technology/hybrid-systems/
-summary: Hybrid CHERI systems combine conventional pointers with explicit capabilities, supporting staged adoption
-  while leaving some accesses outside capability protection.
-image_url: null
-updated_date: null
+summary: Hybrid CHERI systems combine conventional pointers with explicit capabilities, supporting staged adoption while leaving some accesses outside capability protection.
 parent: /build/
 next_page_url: /build/technology/pure-capability-systems/
 related:
   pages:
   - /build/technology/capabilities/
   - /build/technology/compartmentalisation/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Hybrid Systems

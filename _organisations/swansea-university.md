@@ -4,10 +4,6 @@ image_url: /assets/organisations/swansea-university/02d91abeda67-logo.png
 website_url: https://www.swansea.ac.uk/
 membership_tier: community
 is_founding_member: true
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # Swansea University

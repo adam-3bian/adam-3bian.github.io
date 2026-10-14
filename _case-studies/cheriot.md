@@ -3,14 +3,12 @@ title: 'CHERIoT: protection for small embedded devices'
 image_url: /assets/case-studies/cheriot/645cc3b9a905-sonata-cheriot.webp
 summary: CHERI for constrained embedded systems
 related:
-  organisations: []
   hardware:
   - cheriot
   - cheriot-ibex
   - sonata
   software:
   - real-time-operating-systems
-  reports: []
 ---
 
 # CHERIoT: protection for small embedded devices

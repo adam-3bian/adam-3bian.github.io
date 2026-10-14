@@ -3,11 +3,6 @@ title: ZAYA
 image_url: /assets/organisations/zaya/3c3279257b4f-logo.png
 website_url: https://www.zayatech.com/
 membership_tier: full
-is_founding_member: null
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # ZAYA

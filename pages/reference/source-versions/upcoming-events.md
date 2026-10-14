@@ -2,23 +2,11 @@
 title: Upcoming Events
 permalink: /reference/source-versions/upcoming-events/
 summary: Upcoming CHERI Alliance conferences, workshops, webinars, and community sessions.
-image_url: null
-updated_date: null
 parent: /
 next_page_url: /news-and-events/events-and-archive/cheri-blossoms/
 related:
   pages:
   - /news/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Upcoming Events

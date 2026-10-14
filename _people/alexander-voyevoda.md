@@ -5,12 +5,9 @@ website_url: https://cheri-alliance.org/events/speakers/alexander-voyevoda/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/alexandervoevoda/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - um-labs
-  working-groups: []
 ---
 
 # Alexander Voyevoda

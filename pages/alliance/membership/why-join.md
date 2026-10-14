@@ -1,25 +1,12 @@
 ---
 title: Why Join?
 permalink: /alliance/membership/why-join/
-summary: Membership gives organisations a voice in the future of CHERI while accelerating their own adoption
-  journey.
-image_url: null
-updated_date: null
+summary: Membership gives organisations a voice in the future of CHERI while accelerating their own adoption journey.
 parent: /alliance/
 next_page_url: /alliance/membership/membership-benefits-and-options/
 related:
-  pages: []
-  people: []
   organisations:
   - cheri-alliance
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Why Join?

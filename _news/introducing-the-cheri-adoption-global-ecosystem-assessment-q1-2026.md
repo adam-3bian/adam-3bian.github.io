@@ -5,12 +5,8 @@ published_date: '2026-05-13'
 authors:
 - adam-finney
 related:
-  working-groups: []
   organisations:
   - cheri-alliance
-  hardware: []
-  software: []
-  academic-papers: []
 ---
 
 # Introducing the CHERI Adoption Global Ecosystem Assessment Q1 2026

@@ -1,23 +1,7 @@
 ---
 title: Prior work on Linux adaptation
 permalink: /reference/linux-roadmap/prior-work.html
-summary: null
-image_url: null
-updated_date: null
 parent: /linux-roadmap/
-next_page_url: null
-related:
-  pages: []
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Prior work on Linux adaptation

@@ -1,19 +1,16 @@
 ---
-title: 🪪 Promotion & Ambassador Program WG
+title: Promotion & Ambassador Program Working Group
 image_url: /assets/working-groups/promotion-and-ambassador-program/bb889a4dc09e-cheri-alliance-working-groups.png
 website_url: https://cheri-alliance.org/who-we-are/working-groups/promotion-ambassador-program/
-repository_urls: []
 leads:
 - mike-eftimakis
 related:
   organisations:
   - codasip
   - cheri-alliance
-  hardware: []
-  software: []
 ---
 
-# 🪪 Promotion & Ambassador Program WG
+# Promotion & Ambassador Program Working Group
 
 Helping the CHERI ecosystem communicate clearly, consistently, and effectively.
 

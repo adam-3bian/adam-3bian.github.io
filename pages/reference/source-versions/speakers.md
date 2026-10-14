@@ -2,8 +2,6 @@
 title: Speakers
 permalink: /reference/source-versions/speakers/
 summary: People who have contributed to CHERI Alliance conferences, workshops, webinars, and community events.
-image_url: null
-updated_date: null
 parent: /
 next_page_url: /news-and-events/events-and-archive/past-events/
 related:
@@ -11,16 +9,6 @@ related:
   - /news-and-events/events-and-archive/upcoming-events/
   - /news-and-events/events-and-archive/cheritech/
   - /news/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Speakers

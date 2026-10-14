@@ -1,9 +1,5 @@
 ---
 title: Technical FAQ
-image_url: /assets/guides/technical-faq/placeholder.svg
-repository_urls: []
-updated_date: null
-authors: []
 related:
   working-groups:
   - cheri-linux-working-group

@@ -16,8 +16,6 @@ related:
   - google
   hardware:
   - morello
-  software: []
-  academic-papers: []
 ---
 
 # Towards a reference QEMU for CHERI platform emulation

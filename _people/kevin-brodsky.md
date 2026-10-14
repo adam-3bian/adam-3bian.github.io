@@ -3,14 +3,9 @@ title: Kevin Brodsky
 image_url: /assets/people/kevin-brodsky/a2904824ec93-portrait.png
 website_url: https://cheri-alliance.org/events/speakers/kevin-brodsky/
 is_speaker: true
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - arm
-  working-groups: []
 ---
 
 # Kevin Brodsky

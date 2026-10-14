@@ -5,13 +5,10 @@ website_url: https://cheri-alliance.org/events/speakers/john-goodacre/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/john-goodacre-722b59/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - ukri
   - the-university-of-manchester
-  working-groups: []
 ---
 
 # John Goodacre

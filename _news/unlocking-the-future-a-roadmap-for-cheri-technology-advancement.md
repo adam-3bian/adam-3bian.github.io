@@ -11,10 +11,8 @@ related:
   - dstl
   - cheri-alliance
   - codasip
-  hardware: []
   software:
   - zephyr
-  academic-papers: []
 ---
 
 # Unlocking the Future: A Roadmap for CHERI Technology Advancement

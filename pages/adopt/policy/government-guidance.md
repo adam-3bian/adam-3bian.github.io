@@ -2,23 +2,11 @@
 title: Public Policy and CHERI
 permalink: /adopt/policy/government-guidance/
 summary: Policy makers, regulators, and cybersecurity agencies are pushing for safer software foundations.
-image_url: null
-updated_date: null
 parent: /adopt/
 next_page_url: /adopt/policy/cybersecurity-regulation/
 related:
   pages:
   - /adopt/business-case/the-business-case/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Public Policy and CHERI

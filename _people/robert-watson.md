@@ -5,14 +5,11 @@ website_url: https://cheri-alliance.org/events/speakers/robert-watson/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/robert-watson-3747a6253/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - cheri-alliance
   - university-of-cambridge
   - freebsd-foundation
-  working-groups: []
 ---
 
 # Robert Watson

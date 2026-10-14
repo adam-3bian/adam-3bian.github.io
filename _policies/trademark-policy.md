@@ -1,9 +1,7 @@
 ---
 title: Trademark Policy
-image_url: /assets/policies/trademark-policy/placeholder.svg
-author: null
 version: '2.0'
-document_date: '2025-09'
+document_date: 2025-09
 document_url: https://cheri-alliance.org/legal-trademark-policy/
 ---
 

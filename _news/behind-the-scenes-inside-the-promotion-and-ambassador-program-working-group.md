@@ -9,9 +9,6 @@ related:
   - promotion-and-ambassador-program
   organisations:
   - cheri-alliance
-  hardware: []
-  software: []
-  academic-papers: []
 ---
 
 # Behind the Scenes: inside the promotion and ambassador program Working Group

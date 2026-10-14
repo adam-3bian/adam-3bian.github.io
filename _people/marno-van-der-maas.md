@@ -3,10 +3,6 @@ title: Marno van der Maas
 image_url: /assets/people/marno-van-der-maas/de74ac7aa3f7-portrait.png
 website_url: https://cheri-alliance.org/events/speakers/marno-van-der-maas/
 is_speaker: true
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - lowrisc

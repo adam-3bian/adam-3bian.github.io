@@ -3,11 +3,6 @@ title: Johannes Kepler University Linz (JKU)
 image_url: /assets/organisations/johannes-kepler-university-linz/6d91a83f4ac8-logo.png
 website_url: https://www.jku.at/
 membership_tier: community
-is_founding_member: null
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # Johannes Kepler University Linz (JKU)

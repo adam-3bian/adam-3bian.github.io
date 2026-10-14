@@ -1,17 +1,13 @@
 ---
 title: FreeBSD
-image_url: /assets/software/freebsd/placeholder.svg
 website_url: https://www.freebsd.org/
-repository_urls:
-- https://github.com/CTSRD-CHERI/cheribsd
-type: null
-status: null
 related:
-  organisations: []
-  hardware: []
   software:
   - cheribsd
   - real-time-operating-systems
+repositories:
+- label: CheriBSD source
+  url: https://github.com/CTSRD-CHERI/cheribsd
 ---
 
 # FreeBSD

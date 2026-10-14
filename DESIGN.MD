@@ -19,7 +19,7 @@ framework, remote font or third-party image viewer is needed.
 | Typeface | Local system sans-serif; monospace for code |
 | Body | 1rem, line height 1.65; scalable headings with tighter line height |
 | Spacing | A quarter-rem rhythm: .25, .5, .75, 1, 1.5, 2, 3 and 4rem |
-| Container | One shared 88rem maximum; no separate 850px article restriction |
+| Container | One shared 88rem site frame; prose uses a 74ch reading column, with facts alongside when useful |
 | Gutters | 2.5rem desktop, 1.5rem tablet, 1rem mobile |
 | Controls | At least 44px for navigation, buttons and touch targets |
 | Corners | Small .4rem rounding on cards and controls |
@@ -50,26 +50,17 @@ solely to replace a layout wrapper.
 
 Ordinary pages have breadcrumbs, a title, optional introduction, Markdown body
 and relevant onward links. Preserve supplied wording. Headings clear floated
-images; paragraphs use the available content container.
+images; plain-text articles use a readable column. Wide diagrams, galleries and technical tables use the full content container.
 
-A section index has its title, short existing introduction and columns of links
-drawn from the matching mega-menu groups. Link rows have generous spacing and
-visible focus. Indexes do not duplicate record lists or add promotional copy.
-The home index follows the same rule.
+A section index has its title, existing introduction and clearly headed groups from the matching mega menu. Home links have section titles and their existing introductions so visitors can choose between learning, adoption, building and participation. The menu remains the single route source. Indexes use native navigation and headings with generous spacing and visible focus, without per-page component configuration.
 
 ## Lists and directories
 
-Directories contain introductory Markdown followed by a native `ul` of cards
-from the collection. Three columns become two on tablet and one on mobile.
-Every card is one native link, including its image and padding; no nested links
-or click handlers. Keep titles, source-derived previews and useful dates clear,
-with a consistent action at the foot.
+Directories contain introductory Markdown and a native `ul`. Visual collections use cards; bibliographies, policies, guides, software and dense people/organisation directories use compact rows. Presentation defaults live in `_data/viewer.yml`; the ordered governing board retains portrait cards. Every record is one native link including padding, with an accessible name drawn from its title and no nested links. Missing images reserve no blank space.
 
-Member, speaker, board and certified-product directories filter real front
-matter. Working groups and academic papers use `/working-groups/` and
-`/academic-papers/`; record URLs match collection names. Preserve old routes
-with small redirect pages, rather than duplicate listings. Related records use
-compact columns of links rather than another large card grid.
+Keep titles intact, previews concise and useful metadata visible. Papers skip the bibliographic citation when choosing a preview; reports can use publisher/year alone when no descriptive paragraph exists. Counts are secondary and headings avoid repeating the page title. Search progressively enhances large people and organisation directories with native form controls, counts, Clear and an empty-result message; all records remain usable without JavaScript.
+
+Member, speaker, board and certified-product directories filter verified data. General events put upcoming events first and then recent archive items. Preserve old routes with redirects. Related resources resolve canonical URLs, merge duplicate destinations and keep meaningful role context. Show up to three groups of four links initially, with remaining links in a native More related resources disclosure. Do not invent filtered routes or compatibility claims.
 
 Ordinary Markdown lists keep their indentation and vertical rhythm. Numbered
 legal clauses retain their established numbering and nesting. Use definition
@@ -78,11 +69,9 @@ contain large technical tables with horizontal scrolling.
 
 ## Details and properties
 
-A detail page uses `article`, `header`/`hgroup`, the existing body and relevant
-links. Properties use `dl`, `dt` and `dd`, with open spacing rather than cell
-borders. Labels sit beside values on desktop and above values on mobile. Event
-dates retain source precision and timezone. Resources are distinct native
-links. Hide empty fields and keep raw front matter, provenance and asset
+A detail page uses `article`, a compact `header`/`hgroup`, meaningful resource actions, selected facts, the existing body and onward links. Portraits and logos support the introduction without dominating it. One real layout wrapper places facts beside prose on desktop; it stacks in native document order on tablet/mobile. Wide technical content remains full width. Properties use `dl`, `dt` and `dd`, with open spacing rather than cell
+borders. Sidebar facts stack labels over values. Full-width facts place labels beside values on desktop and above them on mobile. Event
+dates retain source precision and timezone. Resources are distinct native links with meaningful destination names. One useful action may have visual priority; supporting source/profile links remain quieter. Repository entries use label and URL, without numbering. Hide empty fields and keep raw front matter, provenance and asset
 inspection in `/checks/`.
 
 Native `details` reveals supplementary content, with a visible, descriptive
@@ -109,8 +98,7 @@ smaller rendering would hide detail. Preserve deliberate working alignments.
 Consecutive images use one responsive gallery. Preserve existing captions in
 `figure` and `figcaption`.
 
-Missing assets may have a local schema placeholder, but public cards and headers
-omit empty placeholder blocks. Record assets live under
+Missing primary images are omitted from front matter and the public layout. Do not add placeholders merely to satisfy a schema. Record assets live under
 `assets/<collection>/<record-slug>/`.
 
 Eligible article images use a native `dialog` viewer with full-resolution

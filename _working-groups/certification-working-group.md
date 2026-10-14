@@ -1,18 +1,15 @@
 ---
-title: ✅ Certification WG
+title: Certification Working Group
 image_url: /assets/working-groups/certification-working-group/bb889a4dc09e-cheri-alliance-working-groups.png
 website_url: https://cheri-alliance.org/who-we-are/working-groups/certification-program/
-repository_urls: []
 leads:
 - mike-eftimakis
 related:
   organisations:
   - cheri-alliance
-  hardware: []
-  software: []
 ---
 
-# ✅ Certification WG
+# Certification Working Group
 
 Develops shared thinking around certification criteria, assurance needs, evidence, and the operation of Alliance certification programmes.
 

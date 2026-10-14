@@ -1,26 +1,13 @@
 ---
 title: Permissions
 permalink: /build/technology/permissions/
-summary: Capability permissions let software grant read, write, execute, and other authority separately instead
-  of treating every pointer as equally powerful.
-image_url: null
-updated_date: null
+summary: Capability permissions let software grant read, write, execute, and other authority separately instead of treating every pointer as equally powerful.
 parent: /build/
 next_page_url: /build/technology/provenance/
 related:
   pages:
   - /build/technology/capabilities/
   - /build/technology/bounds/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Permissions

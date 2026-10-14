@@ -4,10 +4,6 @@ image_url: /assets/organisations/tccoe/b326be17471b-logo.png
 website_url: https://trustedcomputingcoe.org/
 membership_tier: community
 is_founding_member: true
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # Trusted Computing Center of Excellence (TCCoE)

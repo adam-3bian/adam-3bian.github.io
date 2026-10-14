@@ -4,12 +4,6 @@ image_url: /assets/news/the-eu-cyber-resilience-act-what-it-means-for-secure-by-
 published_date: '2026-02-04'
 authors:
 - tariq-kurd
-related:
-  working-groups: []
-  organisations: []
-  hardware: []
-  software: []
-  academic-papers: []
 ---
 
 # The EU Cyber Resilience Act: What It Means for Secure-by-Design Systems and CHERI

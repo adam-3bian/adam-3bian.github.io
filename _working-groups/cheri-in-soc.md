@@ -1,18 +1,15 @@
 ---
-title: ⬛️ CHERI in SoC WG
+title: CHERI in SoC Working Group
 image_url: /assets/working-groups/cheri-in-soc/bb889a4dc09e-cheri-alliance-working-groups.png
 website_url: https://cheri-alliance.org/who-we-are/working-groups/cheri-in-soc/
-repository_urls: []
 leads:
 - ben-fletcher
 related:
   organisations:
   - codasip
-  hardware: []
-  software: []
 ---
 
-# ⬛️ CHERI in SoC WG
+# CHERI in SoC Working Group
 
 Brings together the architecture, integration, and verification questions involved in adding CHERI to a system-on-chip.
 

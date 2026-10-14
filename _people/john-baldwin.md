@@ -5,12 +5,9 @@ website_url: https://cheri-alliance.org/events/speakers/john-baldwin/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/john-baldwin-86241a10a
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - ararat-river-consulting-llc
-  working-groups: []
 ---
 
 # John Baldwin

@@ -1,133 +1,88 @@
-# CHERI Content Viewer
+# CHERI Alliance website
 
-A minimal Jekyll site with 330 collection records and 168 pages. Collection content has been audited against CHERI Alliance profiles and resources; original image bytes remain bundled.
+A native Jekyll site with 330 collection records, 202 registered pages and twelve collections. Shared Liquid templates and CSS provide semantic, responsive pages without a component framework or remote fonts.
 
 ## Run locally
 
-Install Ruby 3.2 or later and Bundler, then run these commands in this directory:
+Use Ruby 3.2 or later and Bundler:
 
 ```sh
 bundle install
+bundle exec ruby scripts/test_content_model.rb
 bundle exec ruby scripts/check_content.rb
 bundle exec jekyll serve
 ```
 
-Open http://localhost:4000. The content checks page is at http://localhost:4000/checks/.
+Open http://localhost:4000. The authoring audit is at `/checks/`.
 
-## What to check
+## Authoring and presentation
 
-The source menu and the twelve collection links let you reach the content. Each detail page shows its title, a supplied primary image, an At a glance summary, article body and related content. Raw authoring properties and unused values are available in the content audit. Primary images render once; body illustrations stay with the content. Record facts use an unboxed definition list, and resource URLs appear as labelled navigation links without a surrounding card. Original-image download links are omitted; eligible article images enlarge in the image viewer.
+Read [FRONT_MATTER.MD](FRONT_MATTER.MD) for required/optional fields, dates, resources, references, minimal examples and migration notes. Read [DESIGN.MD](DESIGN.MD) for layout, typography, media and accessibility.
 
-The header adapts the starter kit's column menus and mobile accordions. Edit `navigation.header` in `_config.yml` to change its links and column counts. Native `details`/`summary` controls remain usable without JavaScript; the small `assets/navigation.js` enhancement adds the mobile Menu button, arrow keys, Escape, outside-click dismissal, and focus handling. At 1024px and wider, menus overlay the content in three or four columns and scroll within short viewports. At smaller widths, they expand in the page flow.
+Write only required fields and useful populated optional values. Missing images, unknown facts and unused relationships need no empty fields or placeholder references. Use `repositories` entries with `label` and `url`; policy authors use `authors`. Exceptional website destinations can have a `website_label`. The completed migration can be checked or reapplied with `scripts/normalise_front_matter.py` (a maintenance tool requiring PyYAML).
 
-The shared light footer follows the starter kit's column layout: four visible groups on desktop, two on tablet and one on mobile, followed by copyright and social links. Collection shortcuts and Content checks occupy a separate utility band below the footer. Its native navigation and lists work without JavaScript. Edit `navigation.footer` and `navigation.social` in `_config.yml`; internal links respect the configured baseurl. Social links use visible text labels, without extra decorative assets.
+Keep substantive prose, technical properties and full citations in Markdown. Collection slugs, folders, assets and routes share the same spelling, including hyphenated collection names. Add new routes to `_data/page-map.yml`. Inherit layouts and parents through `_config.yml`; do not add record-level styling fields.
 
-The six home and section index pages have a title, a short introductory paragraph and a native list of page links. Their labels, grouping and order come from the same `navigation.header` data as the mega-menu; collection destinations are included too. The home index links to the five main sections. Edit an index's `summary` for its introduction and leave its Markdown body empty. These lists work without JavaScript and adapt to desktop, tablet and mobile widths.
+Presentation defaults belong in `_data/viewer.yml`. News, events, hardware and case studies use cards; bibliographies and dense directories use compact rows. The ordered governing board retains portrait cards. Each item is one native link named by its title. People and organisation directories add accessible search, counts and Clear with a small enhancement; without JavaScript all records remain available. General events show upcoming items before a recent archive; specialised directories preserve verified member, speaker, board and certification filters.
 
-The content checks page shows coverage for all twelve collections and lists every page and record, including retained source versions and aliases. Filter by collection, source-image availability, placeholder fallback, missing news date, retained version or title/source file; inspect each record’s raw properties using its native disclosure. Its small filter can find a title, type, or source file. Missing optional images or news dates are identified as unprovided values. Actual errors include incomplete schemas, invalid dates, unknown relationship references, broken navigation targets, and missing image files.
+Detail pages prioritise the introduction and meaningful actions, with selected facts alongside a readable prose column. Wide technical diagrams, galleries and tables retain the shared site width. Full paper citations remain in the body. Native image viewing, caption preservation, legal numbering and metadata date precision are retained.
 
-News is newest first, with undated records after dated ones. Events are earliest first; past archives are newest first. Upcoming and past lists use the final event day in the Europe/London timezone. People, organisations, and other collections sort alphabetically. The speaker list uses is_speaker, and the member list uses a confirmed membership_tier. The board list uses the ordered canonical people in _data/governing-board.yml. Alternate source records remain accessible from the audit while canonical lists omit them.
+Related resources resolve aliases and merge forward/reverse duplicates. Role context and useful date ordering are preserved. A small initial selection leads to a native disclosure containing the remaining destinations. `_data/relationships.yml` is generated by the validator; never hand-edit it. The audit retains authored properties and relationship provenance.
 
-Directories consist of introductory Markdown followed by linked cards drawn from collection records. Each entire card, including its image and padding, is one native link with a visible keyboard focus state; no click-handler script is needed. Cards use native lists and heading groups, include an opening-paragraph preview, and omit empty placeholders. Working Groups is the complete directory at `/working-groups/`; former `/groups/` routes redirect to the new directory and records. Board cards have consistent square portraits and open the person profiles. Shared record properties and company details use readable definition lists with open spacing, stacking labels above values on mobile. Events group their date range under When and location under Where.
+Navigation routes and group order come from `_config.yml`. Home descriptions reuse section summaries instead of maintaining another navigation tree. The existing mega menu, light footer, collection shortcuts, native disclosures and keyboard behaviour remain available without JavaScript. Existing aliases redirect to canonical destinations with normal links as a fallback.
 
-Authors, speakers, affiliations, working-group leads, and generic related fields produce clickable forward and reverse relationships. Related content uses compact columns of full-row links, consistent with the section indexes; record-type audit labels stay out of this navigation. Reserve cards for collection directories where images and summaries help readers choose a record. Reverse links are derived by the check script; do not edit _data/relationships.yml. After changing content or front matter, run the check script again before building to refresh the audit and reverse links.
+## Images
 
-Consolidated duplicate directories and policy copies redirect to their canonical destinations, with ordinary destination links as a fallback. Other retained source versions show their destination links. Repeated original news articles and the Benjamin Fletcher alias point to their canonical records, preserving existing URLs. Contact and subscription pages are content examples; no form submits data.
+Store genuine primary images in `assets/<collection>/<slug>/`. Preserve original artwork, verified portraits and captions. Primary frames contain the image; portraits are square and other primary artwork uses a 3:1 frame. Missing images create no public panel. Transparent logo frames and the optional `image_background: dark` treatment preserve light artwork without changing source pixels.
 
-## Authoring reference
+Use native Kramdown image attributes such as `.image-left`, `.image-right`, `.image-full`, `.image-portrait`, `.image-logo` and `.image-icon`. Alternate ordinary editorial images per document; they stack on tablet/mobile. Detailed diagrams and galleries can use full width. Preserve ordered legal clauses and their identifiers. The native dialog viewer supports keyboard navigation, Escape, captions and focus return; ordinary images remain readable without JavaScript.
 
-See [DESIGN.MD](DESIGN.MD) for the design language and [FRONT_MATTER.MD](FRONT_MATTER.MD) for every supported collection and page property, types, relationships, date precision, complete examples, inherited defaults and canonical aliases. Record-level versions and document dates belong in front matter; shared optional fields are validated and displayed in metadata.
-
-## Case studies and reports
-
-Organisation logos with accidental white canvases use self-contained SVG masks over their original source files, preserving the lettering and artwork. Regenerate these display assets with `python3 scripts/prepare_organisation_logos.py`; `--check` verifies them without writing. Intentional white artwork and the seal interior are protected.
-
-The four original case-study sections are now `_case-studies` records, with cards at `/case-studies/`. Their article text is preserved; images moved into their record directories and each document starts its own left/right sequence. The five original report entries are `_reports` records at `/reports/`, with publication type, year, publisher, author references and original publication URLs. Academic papers remain in `_academic-papers`. The previous overview routes redirect to the canonical directories. Schemas, menus, breadcrumbs, relationships and the audit all include these collections.
-
-## Collection content and assets
-
-Store each record's primary image under `assets/<collection>/<record-name>/`, with neither an underscore prefix nor a `.md` suffix. Body images may reuse another collection record's canonical assets. Keep assets referenced by `pages/` when copying an image into a collection directory.
-
-All displayed content images use contained 3:1 frames. People portraits use 1:1 frames in detail headers, cards, and portrait galleries, including board members who are not speakers. Add `.image-portrait` to a portrait used elsewhere. Containment preserves the entire photograph, logo, or diagram; the image viewer displays the original asset at its natural proportions. Missing source images use a clearly labelled local `placeholder.svg` with the appropriate ratio. These fallbacks do not appear in public headers or cards and do not create resource links or empty metadata panels. The audit distinguishes them from supplied source images.
-
-Working groups are stored in `_working-groups`, with assets under `assets/working-groups/<record-name>/` and detail URLs at `/working-groups/<record-name>/`. Former `/groups/` URLs are redirects. Use `related.working-groups` for references and `leads: []` so co-leads have separate person references. Policies include `image_url`. Other schema fields retain their existing shapes. Use arrays for authors, speakers, repositories, and related slugs; every referenced collection record must exist. Do not infer membership or speaker status from a mention in another article.
-
-CHERI Enabled Products is a hardware directory filtered by `certification: cheri-enabled`. Set that property only on a confirmed certified product/version and include its authoritative `certification_url`. The directory cards, descriptions and drill-through links come from the hardware records. Original product summaries and certification explanations are retained there; no second product list is maintained on the page.
-
-After a production build, check all rendered collection links, images, inverse references, and anchors:
+Verify original logo treatments with:
 
 ```sh
+python3 scripts/prepare_organisation_logos.py --check
+```
+
+## Validate a build
+
+```sh
+bundle exec ruby scripts/test_content_model.rb
 bundle exec ruby scripts/check_content.rb
 JEKYLL_ENV=production bundle exec jekyll build --destination _site
 python3 scripts/check_collection_links.py
 python3 scripts/check_page_content.py
 ```
 
-The link checker uses Python's standard library. To check a repository subpath, build with `--baseurl /preview` and run `python3 scripts/check_collection_links.py _site --baseurl /preview`. The audit details and explicitly missing illustrations are recorded in `reports/collection-audit.json`. External resource links recovered from source profiles retain their original targets.
+The validator checks values, required fields, reference resolution, assets and registered routes, then refreshes audit and relationship data. The page checker verifies native lists/links, names, deduplicated related destinations, legal clauses, canonical routes and local links across the whole build.
 
-
-## Markdown image layout
-
-All Markdown images are responsive and stay inside the shared page container. Use a Kramdown **inline** attribute list immediately after the image (on the same line) to opt into an alignment. Examples use placeholder paths; replace them with existing files in `assets/`:
-
-The site uses native GFM, supported by both production and GitHub Pages builds. Escape literal pipes as `\|` in prose and lists so they do not become accidental tables; leave fenced code literal.
-
-```markdown
-![Descriptive alt text](/assets/example.jpg){: .image-left }
-
-![Descriptive alt text](/assets/example.jpg){: .image-right }
-
-![Descriptive alt text](/assets/example.jpg){: .image-full }
-```
-
-Alternate ordinary editorial illustrations left, right, left throughout each document, resetting at its beginning. Place an image before the prose it illustrates so that the text can wrap alongside it. Existing explicit choices take precedence; exclude hero images, logos, portraits, galleries, and full-width technical illustrations from the sequence.
-
-Left and right images float at 42% of the article width above 960px. They stack at 100% at tablet and mobile widths, including 640px and below, to keep text columns readable. Headings, galleries, and the end of the article clear floats. `.image-full` fills the entire content container without an additional article-width cap. Image content retains its proportions within the frame. Do not use fixed inline widths or alignment HTML attributes.
-
-Use a semantic figure for an existing caption, keeping the image as native Markdown:
-
-```html
-<figure class="image-full" markdown="block">
-
-![Descriptive alt text](/assets/example.jpg)
-
-<figcaption>Existing caption text</figcaption>
-</figure>
-```
-
-Use `.image-logo` or `.image-icon` for an isolated mark with bounded display dimensions. Consecutive photographs and imported directories use a simple `<ul class="image-gallery" markdown="block">` with `<li markdown="block">` items. Add `.portrait-gallery`, `.logo-gallery`, or `.record-gallery` for portraits, logo collections, or related-record teasers respectively; keep each image with its existing name, caption, or description. These groups never participate in the left/right sequence. Use detailed diagrams, charts, and screenshots at full width, and do not invent captions.
-
-Editorial images and photo galleries can be enlarged in a native `<dialog>` viewer. Click/tap a suitable image, or focus it and press Enter/Space. Previous/Next buttons and arrow keys navigate only the current article's images; Escape, Close, or the backdrop dismisses the viewer. Captions come from existing figcaptions or alt text. Focus and page scroll position return to the opening image. There is no animation. Logos, icons, portraits, record teasers, hero images, and images in links or interactive elements are excluded. Add `data-no-image-viewer` to opt another image or group out; `data-full-src` can identify an original if a thumbnail is added later. Without JavaScript or native dialog support, the original content stays readable.
-
-## Build and GitHub Pages
+Check safe mode and a nonempty base URL too:
 
 ```sh
-bundle exec ruby scripts/check_content.rb
-bundle exec jekyll build
+JEKYLL_ENV=production bundle exec jekyll build --safe --baseurl /preview --destination dist-baseurl/preview
+python3 scripts/check_collection_links.py dist-baseurl/preview --baseurl /preview
+python3 scripts/check_page_content.py dist-baseurl/preview /preview
 ```
 
-The content validator renders Markdown before checking image references, so it also covers figures, galleries, reference-style images, and HTML images while ignoring fenced examples. Browser regression checks run in the Pages workflow before deployment and cover every page with body images and representative records from all twelve collections at 1440, 1024, 768, 640, and 375px. They check built image paths, containment, wrapping, float clearing, the viewer's keyboard/focus/scroll behaviour, captions, touch controls, reduced motion, linked-image exclusions, and the no-JavaScript fallback. Run the same checks locally with:
+## Browser checks
+
+Install test tooling separately from the site, then serve `_site` on port 4000:
 
 ```sh
-# Install test tooling separately from the site (not a production dependency).
 npm install --prefix /tmp/cheri-image-tests --no-save playwright@1.56.1 axe-core
-NODE_PATH=/tmp/cheri-image-tests/node_modules /tmp/cheri-image-tests/node_modules/.bin/playwright install chromium --only-shell
+/tmp/cheri-image-tests/node_modules/.bin/playwright install --with-deps chromium --only-shell
 python3 -m http.server 4000 --directory _site
-# In another terminal:
-NODE_PATH=/tmp/cheri-image-tests/node_modules AXE_PATH=/tmp/cheri-image-tests/node_modules/axe-core/axe.min.js node scripts/test_images.cjs
-NODE_PATH=/tmp/cheri-image-tests/node_modules AXE_PATH=/tmp/cheri-image-tests/node_modules/axe-core/axe.min.js node scripts/test_navigation.cjs
 ```
 
-Set `SITE_DIR` and `SITE_URL` to test a different build or a repository subpath. Test results are written to `reports/image-tests/results.json`.
+In another terminal:
 
-The Pages workflow also checks all five primary menus at the same viewport widths, verifies the 96 existing primary links and ten collection links, and tests keyboard, focus, touch, no-JavaScript, and short-viewport behavior. Navigation screenshots and results are saved in `reports/navigation-tests/`; axe checks the open and closed header for WCAG A/AA violations before deployment.
+```sh
+export NODE_PATH=/tmp/cheri-image-tests/node_modules
+export AXE_PATH=/tmp/cheri-image-tests/node_modules/axe-core/axe.min.js
+node scripts/test_navigation.cjs
+node scripts/test_images.cjs
+node scripts/test_content.cjs
+```
 
-Jekyll writes the static site into _site. The site uses Jekyll 3.10, standard Liquid, and Kramdown. One small parser plugin keeps text containing a pipe character as a paragraph; the source Markdown stays unchanged. Set url and baseurl in _config.yml for your repository. Internal links and images use relative_url, including body illustrations, so repository subpaths work. For GitHub Pages, build with GitHub Actions and publish _site; the built-in Pages safe-mode build does not load custom plugins.
+The suites cover 1440, 1024, 768, 640 and 375px, containment, native navigation, accessibility, image proportions, the image viewer, search, related disclosures and no-JavaScript operation. Set `SITE_DIR`, `SITE_URL` and `REPORT_ROOT` to check a different build, including `/preview/`. Results and screenshots are written under `reports/`.
 
-For a hosted static build, use bundle exec jekyll build --destination dist. The .openai directory only identifies the private hosted preview; it is omitted from the downloadable project ZIP.
-
-## Files
-
-The content stays under pages and the ten separate collection folders. One document layout, one card component, and one listing include render all types; the people, news, and events layout files only select their collection. The schemas extend the supplied v1.4 document with policy images and multiple group leads. Presentation lives in assets/viewer.css and assets/viewer.js. The Content checks page shows optional values and the latest data audit; reports also include verification results for the build and rendered collection links.
-
-The source snapshot is adam-3bian/adam-3bian.github.io at commit 7f3839872c8fea6a709b99d241880de0f3915c42. Original image bytes are bundled. The check script validates data and image paths; it does not claim that external websites or downloads are available.
+The Pages workflow validates pull requests and uploads test evidence. Only the main branch publishes to GitHub Pages after the same checks pass. Production uses Jekyll 3.10, Liquid 4 and native GFM/Kramdown; all generated internal links respect `relative_url` and base URLs.

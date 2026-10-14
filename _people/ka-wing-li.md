@@ -3,14 +3,9 @@ title: Ka Wing Li
 image_url: /assets/people/ka-wing-li/f1b3ce0c92c4-portrait.png
 website_url: https://cheri-alliance.org/events/speakers/ka-wing-li/
 is_speaker: true
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - university-of-cambridge
-  working-groups: []
 ---
 
 # Ka Wing Li

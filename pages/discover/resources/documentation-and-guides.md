@@ -2,22 +2,8 @@
 title: Documentation & Guides
 permalink: /discover/resources/documentation-and-guides/
 summary: Interesting publications from the CHERI Alliance and others.
-image_url: null
-updated_date: null
 parent: /discover/
 next_page_url: /working-groups/
-related:
-  pages: []
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Documentation & Guides

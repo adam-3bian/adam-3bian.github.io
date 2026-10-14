@@ -1,7 +1,5 @@
 ---
 title: Export Controls
-image_url: /assets/policies/export-controls/placeholder.svg
-author: null
 ---
 
 # Export Controls

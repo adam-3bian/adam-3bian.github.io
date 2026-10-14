@@ -2,23 +2,11 @@
 title: The Cost of Memory Unsafety
 permalink: /reference/source-versions/cost-of-memory-unsafety/
 summary: Reduce Risk. Protect Investment. Build Trust.
-image_url: null
-updated_date: null
 parent: /
 next_page_url: /adopt/business-case/adoption-costs-and-migration/
 related:
   pages:
   - /adopt/business-case/the-business-case/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # The Cost of Memory Unsafety

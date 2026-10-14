@@ -1,23 +1,7 @@
 ---
 title: Exercise integer-pointer type confusion bug
 permalink: /reference/CHERI-seL4-Exercises/exercises/type-confusion/index.html
-summary: null
-image_url: null
-updated_date: null
 parent: /CHERI-seL4-Exercises/
-next_page_url: null
-related:
-  pages: []
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Exercise integer-pointer type confusion bug

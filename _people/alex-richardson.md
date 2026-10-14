@@ -1,17 +1,10 @@
 ---
 title: Alex Richardson
 image_url: /assets/people/alex-richardson/637a9e5f0218-portrait.jpg
-website_url: null
-is_speaker: null
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - google
   - cheri-alliance
-  working-groups: []
 ---
 
 # Alex Richardson

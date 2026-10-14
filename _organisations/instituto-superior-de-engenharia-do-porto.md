@@ -3,11 +3,6 @@ title: Instituto Superior de Engenharia do Porto
 image_url: /assets/organisations/instituto-superior-de-engenharia-do-porto/b4a785fb379b-logo.png
 website_url: https://www.isep.ipp.pt/softcps
 membership_tier: community
-is_founding_member: null
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # Instituto Superior de Engenharia do Porto

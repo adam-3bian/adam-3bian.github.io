@@ -5,12 +5,9 @@ website_url: https://cheri-alliance.org/events/speakers/mark-hill/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/markbowenhill/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - codasip
-  working-groups: []
 ---
 
 # Mark Hill

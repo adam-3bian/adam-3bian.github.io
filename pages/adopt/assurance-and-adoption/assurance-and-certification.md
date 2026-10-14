@@ -1,26 +1,13 @@
 ---
 title: Assurance & Certification
 permalink: /adopt/assurance-and-adoption/assurance-and-certification/
-summary: CHERI can strengthen assurance by turning intended memory and component boundaries into processor-enforced
-  properties that can be described and tested.
-image_url: null
-updated_date: null
+summary: CHERI can strengthen assurance by turning intended memory and component boundaries into processor-enforced properties that can be described and tested.
 parent: /adopt/
 next_page_url: /adopt/assurance-and-adoption/procurement/
 related:
   pages:
   - /adopt/assurance-and-adoption/case-studies/
   - /adopt/business-case/the-business-case/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Assurance & Certification

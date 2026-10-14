@@ -2,9 +2,7 @@
 title: Initial members join CHERI Alliance to drive adoption of memory safety and scalable software compartmentalization
 image_url: /assets/news/initial-members-join-cheri-alliance-to-drive-adoption-of-memory-safety-and-scalable-software-compartmentalization/b40f17e0c2fc-cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus.png
 published_date: '2024-06-17'
-authors: []
 related:
-  working-groups: []
   organisations:
   - university-of-cambridge
   - capabilities-limited
@@ -14,10 +12,8 @@ related:
   - cheri-alliance
   - codasip
   - lowrisc
-  hardware: []
   software:
   - freebsd
-  academic-papers: []
 ---
 
 # Initial members join CHERI Alliance to drive adoption of memory safety and scalable software compartmentalization

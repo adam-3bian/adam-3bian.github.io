@@ -5,12 +5,9 @@ website_url: https://cheri-alliance.org/events/speakers/joshua-lant/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/joshua-lant-4b465b120/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - the-university-of-manchester
-  working-groups: []
 ---
 
 # Joshua Lant

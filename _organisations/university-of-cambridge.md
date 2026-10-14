@@ -4,10 +4,6 @@ image_url: /assets/organisations/university-of-cambridge/ea303349d4e1-logo.png
 website_url: https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/
 membership_tier: full
 is_founding_member: true
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # University of Cambridge

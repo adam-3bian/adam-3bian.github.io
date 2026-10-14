@@ -5,13 +5,10 @@ website_url: https://cheri-alliance.org/events/speakers/jianyi-cheng/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/jianyi-cheng/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - university-of-edinburgh
   - university-of-cambridge
-  working-groups: []
 ---
 
 # Jianyi Cheng

@@ -1,26 +1,13 @@
 ---
 title: Pure-Capability Systems
 permalink: /build/technology/pure-capability-systems/
-summary: Pure-capability systems represent language-visible pointers as capabilities throughout compiled software,
-  applying CHERI checks broadly across the system.
-image_url: null
-updated_date: null
+summary: Pure-capability systems represent language-visible pointers as capabilities throughout compiled software, applying CHERI checks broadly across the system.
 parent: /build/
 next_page_url: /discover/history/early-capability-systems/
 related:
   pages:
   - /build/technology/capabilities/
   - /build/technology/hybrid-systems/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Pure-Capability Systems

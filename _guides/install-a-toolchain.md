@@ -1,11 +1,6 @@
 ---
 title: Install a CHERI Toolchain
-image_url: /assets/guides/install-a-toolchain/placeholder.svg
-repository_urls: []
-updated_date: null
-authors: []
 related:
-  working-groups: []
   hardware:
   - cheriot
   - morello

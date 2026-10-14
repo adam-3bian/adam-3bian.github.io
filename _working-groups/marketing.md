@@ -1,18 +1,15 @@
 ---
-title: 📣 Marketing WG
+title: Marketing Working Group
 image_url: /assets/working-groups/marketing/bb889a4dc09e-cheri-alliance-working-groups.png
 website_url: https://cheri-alliance.org/who-we-are/working-groups/marketing/
-repository_urls: []
 leads:
 - adam-finney
 related:
   organisations:
   - 3bian
-  hardware: []
-  software: []
 ---
 
-# 📣 Marketing WG
+# Marketing Working Group
 
 Coordinates accurate CHERI messaging, shared material, campaigns, events, and communication across the Alliance ecosystem.
 

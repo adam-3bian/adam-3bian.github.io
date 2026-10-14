@@ -3,11 +3,6 @@ title: Hildebrand
 image_url: /assets/organisations/hildebrand/80cf16d93e-hildebrandlogo-1024x177.png
 website_url: https://www.hildebrand.co.uk/
 membership_tier: full
-is_founding_member: null
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # Hildebrand

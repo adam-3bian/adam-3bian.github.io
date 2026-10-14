@@ -1,26 +1,14 @@
 ---
 title: Governance
 permalink: /alliance/about-and-governance/governance/
-summary: Alliance governance separates organisational oversight from focused member collaboration, with published
-  policies setting clear boundaries for participation.
-image_url: null
-updated_date: null
+summary: Alliance governance separates organisational oversight from focused member collaboration, with published policies setting clear boundaries for participation.
 parent: /alliance/
 next_page_url: https://cheri-alliance.github.io/alliance/about-and-governance/technical-leadership/
 related:
   pages:
   - /alliance/about-and-governance/mission-and-role/
-  people: []
   organisations:
   - cheri-alliance
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Governance

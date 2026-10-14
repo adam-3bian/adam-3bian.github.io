@@ -1,24 +1,9 @@
 ---
 title: Early Capability Systems
 permalink: /discover/history/early-capability-systems/
-summary: Long before CHERI, capability systems explored how computers could grant precise authority instead
-  of trusting every address equally.
-image_url: null
-updated_date: null
+summary: Long before CHERI, capability systems explored how computers could grant precise authority instead of trusting every address equally.
 parent: /discover/
 next_page_url: /discover/history/cambridge-and-sri/
-related:
-  pages: []
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Early Capability Systems

@@ -4,10 +4,6 @@ image_url: /assets/organisations/lowrisc/d432df8a7ccf-logo.png
 website_url: https://lowrisc.org/
 membership_tier: full
 is_founding_member: true
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # lowRISC

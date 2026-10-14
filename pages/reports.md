@@ -4,24 +4,12 @@ permalink: /reports/
 layout: list
 listing:
   collection: reports
-  status: null
-  role: null
 parent: /discover/
 next_page_url: /discover/resources/videos-and-presentations/
 related:
   pages:
   - /discover/resources/specifications/
   - /academic-papers/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Reports & White Papers

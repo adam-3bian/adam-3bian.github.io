@@ -2,10 +2,6 @@
 title: News
 permalink: /news/
 layout: news
-listing:
-  collection: null
-  status: null
-  role: null
 ---
 
 # News

@@ -1,27 +1,15 @@
 ---
 title: Membership Benefits & Options
 permalink: /alliance/membership/membership-benefits-and-options/
-summary: Whether you want to shape the future of CHERI, learn from experts, increase your visibility, or help
-  accelerate adoption, there are several ways to get involved.
-image_url: null
-updated_date: null
+summary: Whether you want to shape the future of CHERI, learn from experts, increase your visibility, or help accelerate adoption, there are several ways to get involved.
 parent: /alliance/
 next_page_url: /alliance/membership/contact/
 related:
   pages:
   - /alliance/membership/why-join/
   - /alliance/leadership/members/
-  people: []
   organisations:
   - cheri-alliance
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Membership Benefits & Options

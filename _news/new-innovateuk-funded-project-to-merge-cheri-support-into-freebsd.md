@@ -5,7 +5,6 @@ published_date: '2025-11-25'
 authors:
 - brooks-davis
 related:
-  working-groups: []
   organisations:
   - university-of-cambridge
   - capabilities-limited
@@ -21,7 +20,6 @@ related:
   - cheri-linux
   - cheribsd
   - freebsd
-  academic-papers: []
 ---
 
 # New InnovateUK-funded project to merge CHERI support into FreeBSD

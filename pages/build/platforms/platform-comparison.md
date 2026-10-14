@@ -1,25 +1,12 @@
 ---
 title: Platform Comparison
 permalink: /build/platforms/platform-comparison/
-summary: Compare CHERI platforms by workload, architecture, operating system, access route, compartment model,
-  and evidence rather than by name alone.
-image_url: null
-updated_date: null
+summary: Compare CHERI platforms by workload, architecture, operating system, access route, compartment model, and evidence rather than by name alone.
 parent: /build/
 next_page_url: /hardware/morello/
 related:
-  pages: []
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
   guides:
   - choose-a-platform
-  policies: []
 ---
 
 # Platform Comparison

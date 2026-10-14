@@ -5,13 +5,9 @@ published_date: '2025-11-05'
 authors:
 - adam-finney
 related:
-  working-groups: []
-  organisations: []
   hardware:
   - cheriot-ibex
   - cheriot
-  software: []
-  academic-papers: []
 ---
 
 # CHERIoT 1.0 Specification Released

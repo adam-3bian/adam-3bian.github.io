@@ -1,26 +1,13 @@
 ---
 title: Adoption Costs & Migration
 permalink: /adopt/business-case/adoption-costs-and-migration/
-summary: CHERI adoption can range from protecting one exposed component to moving a complete platform, allowing
-  cost and benefit to follow the scope of change.
-image_url: null
-updated_date: null
+summary: CHERI adoption can range from protecting one exposed component to moving a complete platform, allowing cost and benefit to follow the scope of change.
 parent: /adopt/
 next_page_url: /adopt/business-case/return-on-security-investment/
 related:
   pages:
   - /adopt/business-case/the-business-case/
   - /adopt/business-case/cost-of-memory-unsafety/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Adoption Costs & Migration

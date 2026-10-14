@@ -1,6 +1,5 @@
 ---
 title: 'CHERI Concentrate: Practical Compressed Capabilities'
-image_url: /assets/academic-papers/cheri-concentrate-practical-compressed-capabilities/placeholder.svg
 publication_url: https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/2019tc-cheri-concentrate.pdf
 published_year: 2019
 authors:
@@ -19,10 +18,6 @@ authors:
 - peter-g-neumann
 - robert-watson
 - simon-moore
-related:
-  working-groups: []
-  hardware: []
-  software: []
 ---
 
 ### CHERI Concentrate: Practical Compressed Capabilities

@@ -1,20 +1,20 @@
 ---
-title: 4️⃣ CHERI for seL4 WG
+title: CHERI for seL4 Working Group
 image_url: /assets/working-groups/cheri-for-sel4/bb889a4dc09e-cheri-alliance-working-groups.png
 website_url: https://cheri-alliance.org/who-we-are/working-groups/cheri-sel4/
-repository_urls:
-- https://github.com/CHERI-Alliance/CHERI-seL4
-- https://github.com/CHERI-Alliance/CHERI-Microkit
 leads:
 - hesham-almatary
 related:
   organisations:
   - capabilities-limited
-  hardware: []
-  software: []
+repositories:
+- label: CHERI seL4 source
+  url: https://github.com/CHERI-Alliance/CHERI-seL4
+- label: CHERI Microkit source
+  url: https://github.com/CHERI-Alliance/CHERI-Microkit
 ---
 
-# 4️⃣ CHERI for seL4 WG
+# CHERI for seL4 Working Group
 
 Coordinates work at the intersection of CHERI capabilities, seL4, Microkit, verified kernels, and capability-oriented system design.
 

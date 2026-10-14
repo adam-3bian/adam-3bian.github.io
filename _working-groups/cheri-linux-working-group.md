@@ -1,20 +1,20 @@
 ---
-title: 🐧 CHERI Linux WG
+title: CHERI Linux Working Group
 image_url: /assets/working-groups/cheri-linux-working-group/bb889a4dc09e-cheri-alliance-working-groups.png
 website_url: https://cheri-alliance.org/who-we-are/working-groups/cheri-linux/
-repository_urls:
-- https://github.com/CHERI-Alliance/linux
 leads:
 - allison-randal
 related:
   organisations:
   - capabilities-limited
-  hardware: []
   software:
   - cheri-linux
+repositories:
+- label: CHERI Linux source
+  url: https://github.com/CHERI-Alliance/linux
 ---
 
-# 🐧 CHERI Linux WG
+# CHERI Linux Working Group
 
 Coordinates priorities, cross-architecture requirements, implementation experience, and contribution routes for CHERI support in Linux.
 

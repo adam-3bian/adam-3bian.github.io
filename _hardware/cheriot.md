@@ -1,13 +1,6 @@
 ---
 title: CHERIoT
-image_url: /assets/hardware/cheriot/placeholder.svg
-website_url: null
-repository_urls: []
-type: null
-architecture: null
-status: null
 related:
-  organisations: []
   hardware:
   - morello
   - fpga-platforms

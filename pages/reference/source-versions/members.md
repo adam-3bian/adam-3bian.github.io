@@ -1,26 +1,14 @@
 ---
 title: Members
 permalink: /reference/source-versions/members/
-summary: Alliance members contribute perspectives from processor design, software, research, product engineering,
-  government, infrastructure, and open-source communities.
-image_url: null
-updated_date: null
+summary: Alliance members contribute perspectives from processor design, software, research, product engineering, government, infrastructure, and open-source communities.
 parent: /
 next_page_url: /alliance/leadership/ambassadors/
 related:
   pages:
   - /alliance/leadership/governing-board/
-  people: []
   organisations:
   - cheri-alliance
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Members

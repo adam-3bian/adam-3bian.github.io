@@ -2,24 +2,13 @@
 title: CHERI and Rust
 permalink: /discover/why-cheri/cheri-and-rust/
 summary: Rust and CHERI are complementary, not competing approaches.
-image_url: null
-updated_date: null
 parent: /discover/
 next_page_url: /build/technology/cheri-and-rust-technical/
 related:
   pages:
   - /discover/understand/cheri-and-existing-software/
-  people: []
-  organisations: []
   working-groups:
   - rust-plus-cheri
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # CHERI and Rust

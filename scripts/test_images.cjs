@@ -80,7 +80,8 @@ async function loaded(page, route) {
           for (const article of document.querySelectorAll('.article-content')) {
             const bounds = article.getBoundingClientRect();
             const main = document.querySelector('main').getBoundingClientRect();
-            if (Math.abs(bounds.width - main.width) > 1) errors.push('Article does not span the page container');
+            if (article.closest('.record-content.is-wide') && Math.abs(bounds.width - main.width) > 1) errors.push('Wide technical article does not span the page container');
+            if (bounds.width > main.width + 1 || bounds.left < main.left - 1 || bounds.right > main.right + 1) errors.push('Reading column escapes the page container');
             const floats = [];
             for (const image of article.querySelectorAll('img')) {
               const rect = image.getBoundingClientRect();

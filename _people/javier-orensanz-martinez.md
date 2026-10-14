@@ -3,14 +3,9 @@ title: Javier Orensanz Martinez
 image_url: /assets/people/javier-orensanz-martinez/eeab172bbb0d-portrait.jpg
 website_url: https://cheri-alliance.org/events/speakers/javier-orensanz-martinez/
 is_speaker: true
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - lowrisc
-  working-groups: []
 ---
 
 # Javier Orensanz Martinez

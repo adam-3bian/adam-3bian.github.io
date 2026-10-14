@@ -3,11 +3,6 @@ title: UM Labs
 image_url: /assets/organisations/um-labs/logo-transparent.svg
 website_url: https://www.um-labs.com/
 membership_tier: full
-is_founding_member: null
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # UM Labs

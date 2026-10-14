@@ -1,26 +1,13 @@
 ---
 title: DARPA Programmes
 permalink: /discover/history/darpa-programmes/
-summary: DARPA programmes funded the long-running cross-layer work that turned CHERI concepts into tested hardware,
-  software, and compartmentalised systems.
-image_url: null
-updated_date: null
+summary: DARPA programmes funded the long-running cross-layer work that turned CHERI concepts into tested hardware, software, and compartmentalised systems.
 parent: /discover/
 next_page_url: /discover/history/ukri-digital-security-by-design/
 related:
   pages:
   - /discover/history/early-capability-systems/
   - /discover/history/development-of-cheri/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # DARPA Programmes

@@ -3,11 +3,6 @@ title: PA Consulting
 image_url: /assets/organisations/pa-consulting/8aba894151f8-logo.png
 website_url: https://www.paconsulting.com/
 membership_tier: full
-is_founding_member: null
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # PA Consulting

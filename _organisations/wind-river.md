@@ -3,11 +3,6 @@ title: Wind River
 image_url: /assets/organisations/wind-river/4ff9d998b332-logo.png
 website_url: https://www.windriver.com/
 membership_tier: full
-is_founding_member: null
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # Wind River

@@ -1,26 +1,13 @@
 ---
 title: Certification
 permalink: /adopt/assurance-and-adoption/certification/
-summary: CHERI Enabled certification turns a broad technology claim into a product-specific record of implementation,
-  evidence, limitations, and review.
-image_url: null
-updated_date: null
+summary: CHERI Enabled certification turns a broad technology claim into a product-specific record of implementation, evidence, limitations, and review.
 parent: /adopt/
 next_page_url: /adopt/assurance-and-adoption/cheri-enabled-products/
 related:
   pages:
   - /adopt/assurance-and-adoption/about-cheri-enabled/
   - /adopt/business-case/the-business-case/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Certification

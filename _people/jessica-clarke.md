@@ -5,12 +5,9 @@ website_url: https://cheri-alliance.org/events/speakers/jessica-clarke/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/jessica-clarke-428b7247/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - university-of-cambridge
-  working-groups: []
 ---
 
 # Jessica Clarke

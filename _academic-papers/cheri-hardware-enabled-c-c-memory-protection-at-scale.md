@@ -1,6 +1,5 @@
 ---
 title: 'CHERI: Hardware-Enabled C/C++ Memory Protection at Scale'
-image_url: /assets/academic-papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/placeholder.svg
 publication_url: https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/20240419-ieeesp-cheri-memory-safety.pdf
 published_year: 2024
 authors:
@@ -16,10 +15,6 @@ authors:
 - peter-sewell
 - konrad-witaszczyk
 - jonathan-woodruff
-related:
-  working-groups: []
-  hardware: []
-  software: []
 ---
 
 ### CHERI: Hardware-Enabled C/C++ Memory Protection at Scale

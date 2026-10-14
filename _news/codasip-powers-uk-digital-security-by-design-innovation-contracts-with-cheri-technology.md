@@ -5,7 +5,6 @@ published_date: '2025-12-10'
 authors:
 - andrew-lindsay
 related:
-  working-groups: []
   organisations:
   - sci-semiconductor
   - cheri-alliance
@@ -13,10 +12,8 @@ related:
   - codasip
   - lowrisc
   - dsit
-  hardware: []
   software:
   - cheri-linux
-  academic-papers: []
 ---
 
 # Codasip Powers UK Digital Security by Design Innovation Contracts with CHERI Technology

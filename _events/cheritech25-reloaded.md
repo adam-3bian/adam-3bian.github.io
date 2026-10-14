@@ -2,11 +2,7 @@
 title: CHERITech'25 Reloaded
 image_url: /assets/events/cheritech25-reloaded/7bce58279add-cheritech25-reloaded.webp
 website_url: https://cheri-alliance.org/events/cheritech25-reloaded/
-registration_url: null
 start_date: '2025-12-04'
-start_datetime: null
-end_date: null
-end_datetime: null
 location: Online
 speakers:
 - andrew-murray
@@ -21,7 +17,6 @@ speakers:
 - tariq-kurd
 - thomas-nyman
 related:
-  working-groups: []
   organisations:
   - university-of-cambridge
   - university-of-glasgow
@@ -33,7 +28,6 @@ related:
   - codasip
   - lowrisc
   - google
-  academic-papers: []
 ---
 
 # CHERITech'25 Reloaded

@@ -1,18 +1,15 @@
 ---
-title: ©️ CHERI C/C++ WG
+title: CHERI C/C++ Working Group
 image_url: /assets/working-groups/cheri-c-cplusplus/bb889a4dc09e-cheri-alliance-working-groups.png
 website_url: https://cheri-alliance.org/who-we-are/working-groups/cheri-c-c/
-repository_urls: []
 leads:
 - david-chisnall
 related:
   organisations:
   - sci-semiconductor
-  hardware: []
-  software: []
 ---
 
-# ©️ CHERI C/C++ WG
+# CHERI C/C++ Working Group
 
 Coordinating portable C and C++ support for CHERI platforms.
 

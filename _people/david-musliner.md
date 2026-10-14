@@ -5,12 +5,9 @@ website_url: https://cheri-alliance.org/events/speakers/david-musliner/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/david-musliner-01ab81/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - smart-information-flow-technologies-sift
-  working-groups: []
 ---
 
 # David Musliner

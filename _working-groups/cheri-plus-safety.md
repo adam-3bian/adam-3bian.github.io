@@ -1,19 +1,16 @@
 ---
-title: 📋 CHERI + Safety WG
+title: CHERI + Safety Working Group
 image_url: /assets/working-groups/cheri-plus-safety/bb889a4dc09e-cheri-alliance-working-groups.png
 website_url: https://cheri-alliance.org/who-we-are/working-groups/cheri-safety/
-repository_urls: []
 leads:
 - maricel-ventura
 - thierno-sene
 related:
   organisations:
   - codasip
-  hardware: []
-  software: []
 ---
 
-# 📋 CHERI + Safety WG
+# CHERI + Safety Working Group
 
 Explores how CHERI mechanisms, implementation evidence, and system integration relate to functional safety and assurance needs.
 

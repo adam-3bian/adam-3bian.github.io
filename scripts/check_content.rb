@@ -8,6 +8,8 @@ require 'fileutils'
 require 'cgi'
 require 'uri'
 require 'digest'
+require_relative 'content_schema'
+require_relative 'content_relationships'
 
 root = File.expand_path('..', __dir__)
 config = Jekyll.configuration('source' => root, 'quiet' => true)
@@ -31,29 +33,14 @@ lookup = objects.to_h { |object| [object.url, object] }
 map_lookup = map.to_h { |entry| [entry['url'], entry] }
 slugs = site.collections.transform_values { |collection| collection.docs.to_h { |doc| [doc.data['slug'], doc] } }
 
-def same_fields?(schema, value)
-  if schema.is_a?(Hash)
-    return false unless value.is_a?(Hash) && schema.keys.sort == value.keys.sort
-    schema.all? { |key, sub| same_fields?(sub, value[key]) }
-  elsif schema.is_a?(Array)
-    return false unless value.is_a?(Array)
-    schema.empty? || (!value.empty? && value.all? { |entry| same_fields?(schema.first, entry) })
-  else
-    true
-  end
-end
-
-def required_schema_fields(schema, fields, common, optional = {})
-  optional_fields = common.merge(optional)
-  required = fields.reject { |key, _| optional_fields.key?(key) && !schema.key?(key) }
-  if schema['related'].is_a?(Hash) && required['related'].is_a?(Hash)
-    required['related'] = required['related'].select { |key, _| schema['related'].key?(key) }
-  end
-  required
-end
-
 reference_examples.each do |kind, fields|
-  errors << "Invalid FRONT_MATTER.MD #{kind} example" unless schemas[kind] && same_fields?(schemas[kind], required_schema_fields(schemas[kind], fields, schemas.fetch('common', {}), schemas.dig('optional', kind) || {}))
+  if schemas.key?(kind)
+    ContentSchema.errors(kind, fields, schemas, settings['collections'].keys).each do |problem|
+      errors << "FRONT_MATTER.MD #{kind}: #{problem}"
+    end
+  else
+    errors << "Unknown FRONT_MATTER.MD example: #{kind}"
+  end
 end
 
 def schema_kind(object, entry)
@@ -65,16 +52,7 @@ def schema_kind(object, entry)
 end
 
 edges = []
-relationships = Hash.new { |hash, key| hash[key] = {} }
-add_group = lambda do |from, label, target|
-  groups = relationships[from.url]
-  groups[label] ||= []
-  unless groups[label].any? { |item| item['url'] == target.url }
-    target_entry = map_lookup[target.url]
-    groups[label] << {'url' => target.url, 'title' => target.data['title'],
-                     'type' => target_entry ? target_entry['page_type'] : 'Content page'}
-  end
-end
+relationships = ContentRelationships.new(lookup: lookup, map: map_lookup, settings: settings, today: site.time.strftime('%Y-%m-%d'))
 
 objects.each do |object|
   entry = map_lookup[object.url]
@@ -90,8 +68,16 @@ objects.each do |object|
     next
   end
   fields = YAML.safe_load(front[1], permitted_classes: [Date, Time], aliases: true)
-  required_fields = required_schema_fields(schemas.fetch(kind), fields, schemas.fetch('common', {}), schemas.dig('optional', kind) || {})
-  errors << "Incomplete or unexpected schema fields: #{entry['file']}" unless same_fields?(schemas[kind], required_fields)
+  ContentSchema.errors(kind, fields, schemas, settings['collections'].keys).each do |problem|
+    errors << "#{problem}: #{entry['file']}"
+  end
+  if fields['website_label'] && (!fields['website_label'].is_a?(String) || fields['website_label'].strip.empty? || !fields['website_url'])
+    errors << "website_label requires a website_url and nonempty text: #{entry['file']}"
+  end
+  if fields['repositories'].is_a?(Array)
+    urls = fields['repositories'].filter_map { |repository| repository['url'] if repository.is_a?(Hash) }
+    errors << "Duplicate repository destinations: #{entry['file']}" unless urls.uniq.length == urls.length
+  end
   errors << "Missing title: #{entry['file']}" if object.data['title'].to_s.strip.empty?
   %w[parent next_page_url].each do |key|
     target = fields[key]
@@ -202,6 +188,7 @@ objects.each do |object|
     references = fields[key].nil? ? [] : Array(fields[key])
     references.each do |slug|
       target = slugs.fetch(role['target'], {})[slug]
+      target = relationships.canonical(target) if target
       unless target
         errors << "Unknown #{key} reference #{slug}: #{entry['file']}"
         next
@@ -209,8 +196,14 @@ objects.each do |object|
       edges << {'from' => object.url, 'to' => target.url, 'field' => key}
       # Role-specific forward links already appear in the metadata strip.
       unless object.data['alternate']
-        label = "#{role['inverse']} #{settings['collections'].fetch(entry['collection'], {'label' => 'Pages'})['label']}"
-        add_group.call(target, label, object)
+        label = case key
+                when 'authors'
+                  noun = {'news' => 'Articles', 'academic-papers' => 'Papers', 'reports' => 'Reports'}.fetch(entry['collection'], 'Writing')
+                  "#{noun} by #{target.data['title']}"
+                when 'speakers' then "Events featuring #{target.data['title']}"
+                when 'leads' then 'Working groups'
+                end
+        relationships.add(target, object, priority: 0, label: label, context: key == 'leads' ? 'Lead' : nil)
       end
     end
   end
@@ -224,6 +217,7 @@ objects.each do |object|
     errors << "Duplicate related #{collection} references: #{entry['file']}" unless references.uniq.length == references.length
     references.each do |slug|
       target = collection == 'pages' ? lookup[settings.fetch('aliases', {}).fetch(slug, slug)] : slugs.fetch(collection, {})[slug]
+      target = relationships.canonical(target) if target
       unless target
         errors << "Unknown related #{collection} reference #{slug}: #{entry['file']}"
         next
@@ -231,11 +225,10 @@ objects.each do |object|
       edges << {'from' => object.url, 'to' => target.url, 'field' => "related.#{collection}"}
       # Organisations have one forward display in the metadata strip.
       unless collection == 'organisations'
-        add_group.call(object, settings['collections'].fetch(collection, {'label' => 'Related pages'})['label'], target)
+        relationships.add(object, target, priority: 1)
       end
       unless object.data['alternate']
-        label = "Related #{settings['collections'].fetch(entry['collection'], {'label' => 'pages'})['label']}"
-        add_group.call(target, label, object)
+        relationships.add(target, object, priority: 2)
       end
     end
   end
@@ -281,10 +274,9 @@ objects.each do |object|
     images[url] = true
   end
   next unless object.is_a?(Jekyll::Document)
-  # Every collection record has a local image (a clearly labelled SVG when no
-  # source image exists), stored under its owning collection and record name.
+  # Genuine primary images stay in their owning record; absent images need no fallback.
   expected_assets = "/assets/#{object.collection.label}/#{object.data['slug']}/"
-  unless object.data['image_url'].to_s.start_with?(expected_assets)
+  if object.data['image_url'] && !object.data['image_url'].start_with?(expected_assets)
     errors << "Collection image outside its record directory: #{entry['file']}"
   end
   validate_values = lambda do |value, field|
@@ -293,7 +285,7 @@ objects.each do |object|
     elsif value.is_a?(Array)
       errors << "Duplicate #{field} values: #{entry['file']}" unless value.uniq.length == value.length
       value.each { |child| validate_values.call(child, field) }
-    elsif value && (field.end_with?('_url') || field == 'repository_urls')
+    elsif value && (field.end_with?('_url') || field.match?(/\Arepositories\.url\z/))
       begin
         uri = URI.parse(value.to_s)
         raise URI::InvalidURIError unless (uri.is_a?(URI::HTTP) && uri.host) || value.to_s.start_with?('/')
@@ -331,7 +323,7 @@ records = objects.sort_by { |object| object.data['title'].to_s.downcase }.map do
   image_status = image.empty? ? 'none' : image.end_with?('/placeholder.svg') ? 'placeholder' : 'provided'
   schema = schemas.fetch(schema_kind(object, entry))
   properties = (schema.keys + schemas.fetch('common', {}).keys + (schemas.dig('optional', schema_kind(object, entry)) || {}).keys).uniq.each_with_object({}) do |key, values|
-    values[key] = object.data[key] if schema.key?(key) || !object.data[key].nil?
+    values[key] = object.data[key] unless object.data[key].nil?
   end
   properties['layout'] = object.data['layout']
   image_source = site.data.fetch('image-sources', {})[image]
@@ -361,9 +353,7 @@ report = {'generated_at' => Time.now.utc.iso8601, 'record_count' => records.leng
           'relationship_count' => edges.length, 'image_count' => images.length,
           'collection_count' => collection_summary.length, 'collections' => collection_summary,
           'errors' => errors.uniq, 'records' => records}
-relation_data = relationships.transform_values do |groups|
-  groups.map { |label, targets| {'label' => label, 'targets' => targets} }
-end
+relation_data = relationships.data
 File.write(File.join(root, '_data/checks.yml'), YAML.dump(report))
 File.write(File.join(root, '_data/relationships.yml'), YAML.dump(relation_data))
 FileUtils.mkdir_p(File.join(root, 'reports'))

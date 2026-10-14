@@ -1,10 +1,7 @@
 ---
 title: Defence & Aerospace
 permalink: /adopt/use-cases/defence-and-aerospace/
-summary: CHERI can reinforce least authority in mission systems that combine established software, mixed suppliers,
-  long lifecycles, and demanding assurance.
-image_url: null
-updated_date: null
+summary: CHERI can reinforce least authority in mission systems that combine established software, mixed suppliers, long lifecycles, and demanding assurance.
 parent: /adopt/
 next_page_url: /adopt/use-cases/safety-critical-systems/
 related:
@@ -12,16 +9,6 @@ related:
   - /adopt/use-cases/automotive/
   - /adopt/use-cases/cloud-and-data-centre/
   - /adopt/business-case/the-business-case/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Defence & Aerospace

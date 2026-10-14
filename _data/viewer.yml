@@ -2,55 +2,79 @@ collections:
   people:
     label: People
     card_action: View profile
+    listing_view: list
+    searchable: true
+    website_action: Visit personal website
   news:
     label: News
     card_action: Read article
+    website_action: Visit project website
   organisations:
     label: Organisations
     card_action: View organisation
+    listing_view: list
+    searchable: true
+    website_action: Visit organisation website
   events:
     label: Events
     card_action: View event
+    website_action: View event information
   academic-papers:
     label: Academic papers
     url: /academic-papers/
     card_action: View paper
+    listing_view: list
+    website_action: Visit project website
+    publication_action: Read paper
   hardware:
     label: Hardware
     card_action: View hardware
+    website_action: Visit project website
   software:
     label: Software
     card_action: View software
+    listing_view: list
+    website_action: Visit project website
   working-groups:
     label: Working groups
     url: /working-groups/
     card_action: View working group
+    listing_view: list
+    website_action: Visit project website
   guides:
     label: Guides
     card_action: Read guide
+    listing_view: list
+    website_action: Visit project website
   policies:
     label: Policies
     card_action: Read policy
+    listing_view: list
+    website_action: Visit project website
   case-studies:
     label: Case studies
     url: /case-studies/
     card_action: Read case study
+    website_action: Visit project website
   reports:
     label: Reports & White Papers
     url: /reports/
     card_action: View publication
+    listing_view: list
+    website_action: Visit project website
+    publication_action: Read report
 url_fields:
-- website_url
 - registration_url
 - publication_url
 - document_url
 - certification_url
+- website_url
 resource_labels:
   website_url: Visit website
   registration_url: Register
   publication_url: Read publication
   document_url: Read document
-  certification_url: Certification record
+  certification_url: View certification record
   linkedin_url: LinkedIn
   mastodon_url: Mastodon
   github_url: GitHub
@@ -67,10 +91,6 @@ roles:
     target: people
     label: Speakers
     inverse: Speaker at
-  author:
-    target: people
-    label: Author
-    inverse: Authored
   leads:
     target: people
     label: Leads
@@ -141,3 +161,16 @@ aliases:
   /papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/: /academic-papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/
   /papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/: /academic-papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/
   /groups/cheri-research/: /working-groups/cheri-research/
+related_order:
+- guides
+- hardware
+- software
+- working-groups
+- academic-papers
+- case-studies
+- reports
+- people
+- organisations
+- events
+- news
+- pages

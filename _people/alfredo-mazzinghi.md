@@ -5,8 +5,6 @@ website_url: https://cheri-alliance.org/events/speakers/alfredo-mazzinghi/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/alfredo-mazzinghi/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - capabilities-limited

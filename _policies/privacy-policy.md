@@ -1,7 +1,5 @@
 ---
 title: Privacy policy
-image_url: /assets/policies/privacy-policy/placeholder.svg
-author: null
 ---
 
 # Privacy policy

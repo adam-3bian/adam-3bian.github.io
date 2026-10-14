@@ -1,25 +1,12 @@
 ---
 title: Digital Security by Design Archive
 permalink: /discover/resources/digital-security-by-design-archive/
-summary: null
-image_url: null
-updated_date: null
 parent: /discover/
 next_page_url: /discover/resources/glossary/
 related:
   pages:
   - /discover/resources/specifications/
   - /discover/resources/videos-and-presentations/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Digital Security by Design Archive

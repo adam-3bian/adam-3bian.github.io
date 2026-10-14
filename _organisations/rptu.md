@@ -3,11 +3,6 @@ title: Rheinland-Pfälzische Technische Universität Kaiserslautern-Landau (RPTU
 image_url: /assets/organisations/rptu/b844461177bf-logo.png
 website_url: https://rptu.de/
 membership_tier: community
-is_founding_member: null
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # Rheinland-Pfälzische Technische Universität Kaiserslautern-Landau (RPTU)

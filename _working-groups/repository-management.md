@@ -1,20 +1,19 @@
 ---
-title: 💾 Repository Management WG
+title: Repository Management Working Group
 image_url: /assets/working-groups/repository-management/bb889a4dc09e-cheri-alliance-working-groups.png
 website_url: https://cheri-alliance.org/who-we-are/working-groups/repository-management/
-repository_urls:
-- https://github.com/CHERI-Alliance/RepoMgmtWG
 leads:
 - marno-van-der-maas
 related:
   organisations:
   - lowrisc
   - cheri-alliance
-  hardware: []
-  software: []
+repositories:
+- label: Repository management working group
+  url: https://github.com/CHERI-Alliance/RepoMgmtWG
 ---
 
-# 💾 Repository Management WG
+# Repository Management Working Group
 
 Develops consistent practices for the structure, maintenance, contribution, quality, and stewardship of shared Alliance repositories and technical collateral.
 

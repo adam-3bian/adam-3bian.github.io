@@ -1,9 +1,7 @@
 ---
 title: Intellectual Property Policy
-image_url: /assets/policies/intellectual-property-policy/placeholder.svg
-author: null
 version: '1.01'
-document_date: '2024-08'
+document_date: 2024-08
 document_url: https://cheri-alliance.org/legal-ip-policy/
 ---
 

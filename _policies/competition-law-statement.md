@@ -1,9 +1,7 @@
 ---
 title: Competition Law Statement
-image_url: /assets/policies/competition-law-statement/placeholder.svg
-author: null
 version: '1.0'
-document_date: '2024-08'
+document_date: 2024-08
 document_url: https://cheri-alliance.org/legal-competition/
 ---
 

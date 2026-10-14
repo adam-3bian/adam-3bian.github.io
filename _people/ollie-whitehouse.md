@@ -5,12 +5,9 @@ website_url: https://cheri-alliance.org/events/speakers/ollie-whitehouse/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/olliewhitehouse/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - ncsc
-  working-groups: []
 ---
 
 # Ollie Whitehouse

@@ -1,13 +1,5 @@
 ---
 title: Building Secure Software with CHERI
-image_url: /assets/guides/building-secure-software/placeholder.svg
-repository_urls: []
-updated_date: null
-authors: []
-related:
-  working-groups: []
-  hardware: []
-  software: []
 ---
 
 # Building Secure Software with CHERI

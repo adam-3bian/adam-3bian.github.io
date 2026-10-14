@@ -2,15 +2,9 @@
 title: '''Cybersecurity by design - from research to industry'' conference'
 image_url: /assets/events/cybersecurity-by-design-conference-2024/ab41005be5b4-cybersecurity-by-design-conference-2024.webp
 website_url: https://cheri-alliance.org/events/cybersecurity-by-design-conference-nov-2024/
-registration_url: null
 start_date: '2024-11-12'
-start_datetime: null
-end_date: null
-end_datetime: null
 location: Hub8 MX, Cheltenham, UK
-speakers: []
 related:
-  working-groups: []
   organisations:
   - university-of-cambridge
   - capabilities-limited
@@ -20,7 +14,6 @@ related:
   - google
   - cynam
   - ncsc
-  academic-papers: []
 ---
 
 # 'Cybersecurity by design - from research to industry' conference

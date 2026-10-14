@@ -1,6 +1,5 @@
 ---
 title: 'CHERIoT: Complete Memory Safety for Embedded Devices'
-image_url: /assets/academic-papers/cheriot-complete-memory-safety-for-embedded-devices/placeholder.svg
 publication_url: https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/202310ieeemicro-cheriot-uarch.pdf
 published_year: 2023
 authors:
@@ -16,10 +15,8 @@ authors:
 - robert-watson
 - hongyan-xia
 related:
-  working-groups: []
   hardware:
   - cheriot
-  software: []
 ---
 
 ### CHERIoT: Complete Memory Safety for Embedded Devices

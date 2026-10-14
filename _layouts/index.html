@@ -2,15 +2,19 @@
 layout: default
 ---
 {% assign section_menu = site.navigation.header | where: 'url', page.url | first %}
+{% unless page.url == '/' %}<nav class="breadcrumb" aria-label="Breadcrumb"><ol role="list"><li><a href="{{ '/' | relative_url }}">Home</a></li><li aria-current="page">{{ page.title | escape }}</li></ol></nav>{% endunless %}
 <article class="index-page" data-content-route="{{ page.url | escape }}" data-collection="pages">
   <hgroup class="index-intro"><h1>{{ page.title | escape }}</h1><p>{{ page.summary | escape }}</p></hgroup>
   <nav class="index-navigation" aria-label="Pages in {{ page.title | escape }}">
-    <ul class="index-pages{% if page.url != '/' %} columns-{{ section_menu.columns | default: 3 }}{% endif %}" role="list">
+    <ul class="index-pages{% if page.url == '/' %} home-destinations{% else %} columns-{{ section_menu.columns | default: 3 }}{% endif %}" role="list">
       {% if page.url == '/' %}
-        {% for section in site.navigation.header %}{% if section.url %}<li><a href="{% include href.html url=section.url %}">{{ section.title | escape }}</a></li>{% endif %}{% endfor %}
+        {% for section in site.navigation.header %}{% if section.url %}
+        {% assign destination = site.pages | where: 'url', section.url | first %}
+        <li><a href="{% include href.html url=section.url %}" aria-labelledby="home-route-{{ forloop.index }}"><h2 id="home-route-{{ forloop.index }}">{{ section.title | escape }}</h2>{% if destination.summary %}<p>{{ destination.summary | escape }}</p>{% endif %}</a></li>
+        {% endif %}{% endfor %}
       {% else %}
         {% for group in section_menu.subcategories %}
-        <li><strong class="index-group-label">{{ group.title | escape }}</strong><ul role="list">
+        <li><h2 class="index-group-label">{{ group.title | escape }}</h2><ul role="list">
           {% if group.url %}<li><a href="{% include href.html url=group.url %}">{{ group.title | escape }} overview</a></li>{% endif %}
           {% for item in group.links %}<li><a href="{% include href.html url=item.url %}">{{ item.title | escape }}</a></li>{% endfor %}
         </ul></li>

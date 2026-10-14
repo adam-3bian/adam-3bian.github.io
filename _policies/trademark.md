@@ -1,7 +1,5 @@
 ---
 title: CHERI Trademark
-image_url: /assets/policies/trademark/placeholder.svg
-author: null
 ---
 
 # CHERI Trademark

@@ -1,17 +1,13 @@
 ---
 title: CHERI-Zephyr v0.4.0 Release
 image_url: /assets/news/cheri-zephyr-v0-4-0-release/fc61421e7d-zephyr_buffer_overflow.jpg
-published_date: null
 authors:
 - jennifer-jackson
 related:
-  working-groups: []
   organisations:
   - codasip
-  hardware: []
   software:
   - zephyr
-  academic-papers: []
 ---
 
 # CHERI-Zephyr v0.4.0 Release

@@ -1,6 +1,5 @@
 ---
 title: 'CheriABI: Enforcing Valid Pointer Provenance and Minimizing Pointer Privilege in the POSIX C Run-time Environment'
-image_url: /assets/academic-papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/placeholder.svg
 publication_url: https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/201904-asplos-cheriabi.pdf
 published_year: 2019
 authors:
@@ -15,10 +14,6 @@ authors:
 - nathaniel-wesley-filardo
 - khilan-gudka
 - alexandre-joannou
-related:
-  working-groups: []
-  hardware: []
-  software: []
 ---
 
 ### CheriABI: Enforcing Valid Pointer Provenance and Minimizing Pointer Privilege in the POSIX C Run-time Environment

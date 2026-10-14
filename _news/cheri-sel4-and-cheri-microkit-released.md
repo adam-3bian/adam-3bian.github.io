@@ -10,10 +10,8 @@ related:
   organisations:
   - capabilities-limited
   - codasip
-  hardware: []
   software:
   - rust
-  academic-papers: []
 ---
 
 # CHERI-seL4 and CHERI-Microkit Released

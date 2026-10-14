@@ -3,11 +3,6 @@ title: CyberWhiz
 image_url: /assets/organisations/cyberwhiz/1e18de21cd71-logo.png
 website_url: https://www.cyberwhiz.co.uk/
 membership_tier: full
-is_founding_member: null
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # CyberWhiz

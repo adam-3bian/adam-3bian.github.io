@@ -1,10 +1,7 @@
 ---
-title: ⚙️ Rust + CHERI WG
+title: Rust + CHERI Working Group
 image_url: /assets/working-groups/rust-plus-cheri/bb889a4dc09e-cheri-alliance-working-groups.png
 website_url: https://cheri-alliance.org/who-we-are/working-groups/rust-cheri/
-repository_urls:
-- https://github.com/kent-weak-memory/rust
-- https://github.com/CHERIoT-Platform/cheri-rust
 leads:
 - edoardo-marangoni
 - sarah-harris
@@ -17,9 +14,14 @@ related:
   - morello
   software:
   - rust
+repositories:
+- label: Rust CHERI toolchain
+  url: https://github.com/kent-weak-memory/rust
+- label: CHERIoT Rust source
+  url: https://github.com/CHERIoT-Platform/cheri-rust
 ---
 
-# ⚙️ Rust + CHERI WG
+# Rust + CHERI Working Group
 
 Combining memory-safe software and hardware-enforced protection.
 

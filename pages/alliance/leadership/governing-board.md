@@ -4,7 +4,6 @@ permalink: /alliance/leadership/governing-board/
 layout: list
 listing:
   collection: people
-  status: null
   role: board
 ---
 

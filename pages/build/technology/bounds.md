@@ -1,26 +1,13 @@
 ---
 title: Bounds
 permalink: /build/technology/bounds/
-summary: Capability bounds restrict a pointer to an authorised memory range, so mapped memory outside that
-  range remains inaccessible through it.
-image_url: null
-updated_date: null
+summary: Capability bounds restrict a pointer to an authorised memory range, so mapped memory outside that range remains inaccessible through it.
 parent: /build/
 next_page_url: /build/technology/permissions/
 related:
   pages:
   - /build/technology/capabilities/
   - /build/technology/tags-and-validity/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Bounds

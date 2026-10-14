@@ -1,23 +1,7 @@
 ---
 title: Adversarial CHERI Exercises and Missions on CHERI-seL4 microkernel and CHERI-Microkit
 permalink: /reference/CHERI-seL4-Exercises/print.html
-summary: null
-image_url: null
-updated_date: null
 parent: /CHERI-seL4-Exercises/
-next_page_url: null
-related:
-  pages: []
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Adversarial CHERI Exercises and Missions on CHERI-seL4 microkernel and CHERI-Microkit

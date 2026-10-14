@@ -5,12 +5,9 @@ website_url: https://cheri-alliance.org/events/speakers/kathleen-fisher/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/kathleen-fisher-4000964
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - aria
-  working-groups: []
 ---
 
 # Kathleen Fisher

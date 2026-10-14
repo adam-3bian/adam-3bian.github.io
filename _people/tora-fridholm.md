@@ -5,8 +5,6 @@ website_url: https://cheri-alliance.org/events/speakers/tora-fridholm/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/torafridholm/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - codasip

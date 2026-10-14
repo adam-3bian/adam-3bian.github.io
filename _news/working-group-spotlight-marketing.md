@@ -2,15 +2,11 @@
 title: Working Group Spotlight – Marketing
 image_url: /assets/news/working-group-spotlight-marketing/df8b50676c3b-working-group-spotlight-marketing.png
 published_date: '2025-07-21'
-authors: []
 related:
   working-groups:
   - marketing
   organisations:
   - cheri-alliance
-  hardware: []
-  software: []
-  academic-papers: []
 ---
 
 # Working Group Spotlight – Marketing

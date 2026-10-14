@@ -3,14 +3,9 @@ title: Paul Waller
 image_url: /assets/people/paul-waller/b30ab394d940-portrait.jpg
 website_url: https://cheri-alliance.org/events/speakers/paul-waller/
 is_speaker: true
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - ncsc
-  working-groups: []
 ---
 
 # Paul Waller

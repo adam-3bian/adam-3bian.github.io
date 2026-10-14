@@ -1,0 +1,15 @@
+<ul class="record-list" id="directory-list" role="list">
+{% for item in include.items %}
+  {% assign row_image = false %}{% if item.image_url and include.show_images != false %}{% assign row_image = true %}{% endif %}
+  {% assign row_title_id = 'record-title-' | append: forloop.index %}
+  <li><a class="record-link{% if row_image %} has-image{% endif %}" href="{{ item.url | relative_url }}" data-record-url="{{ item.url | escape }}" aria-labelledby="{{ row_title_id }}">
+    {% if row_image %}<img class="{% if item.collection == 'people' %}image-portrait{% elsif item.collection == 'organisations' %}image-logo{% endif %}" src="{% include href.html url=item.image_url %}" alt=""{% if item.image_background == 'dark' %} data-image-background="dark"{% endif %} width="96" height="{% if item.collection == 'people' %}96{% else %}32{% endif %}" loading="lazy">{% endif %}
+    <hgroup class="record-list-text">
+      <h3 id="{{ row_title_id }}">{{ item.title | escape }}</h3>
+      {% include record-meta.html item=item role=include.role %}
+      {% capture row_preview %}{% include preview.html item=item %}{% endcapture %}{% assign row_preview = row_preview | strip %}
+      {% if row_preview != '' %}<p class="card-description">{{ row_preview | truncate: 220 | escape }}</p>{% endif %}
+    </hgroup>
+  </a></li>
+{% endfor %}
+</ul>

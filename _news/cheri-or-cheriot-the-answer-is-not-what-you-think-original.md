@@ -1,17 +1,13 @@
 ---
 title: CHERI or CHERIoT? The Answer Is Not What You Think
 image_url: /assets/news/cheri-or-cheriot-the-answer-is-not-what-you-think-original/dca93f847af6-cheriot-1-0-specification-released.png
-published_date: null
 authors:
 - adam-finney
 related:
-  working-groups: []
   organisations:
   - sci-semiconductor
   hardware:
   - cheriot
-  software: []
-  academic-papers: []
 ---
 
 # CHERI or CHERIoT? The Answer Is Not What You Think

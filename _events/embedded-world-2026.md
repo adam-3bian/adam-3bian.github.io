@@ -2,21 +2,15 @@
 title: CHERI Alliance at Embedded World 2026
 image_url: /assets/events/embedded-world-2026/4e96ccb7b522-embedded-world-2026.webp
 website_url: https://cheri-alliance.org/events/embedded-world-2026/
-registration_url: null
 start_date: '2026-03-10'
-start_datetime: null
 end_date: '2026-03-12'
-end_datetime: null
 location: Exhibition Centre Nuremberg, Germany
-speakers: []
 related:
-  working-groups: []
   organisations:
   - capabilities-limited
   - the-capable-hub
   - cheri-alliance
   - codasip
-  academic-papers: []
 ---
 
 # CHERI Alliance at Embedded World 2026

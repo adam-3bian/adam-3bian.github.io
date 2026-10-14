@@ -1,26 +1,13 @@
 ---
 title: IoT & Embedded
 permalink: /adopt/use-cases/iot-and-embedded/
-summary: CHERI can bring memory protection and compartmentalisation to connected devices that have limited
-  resources but still handle private data, network access, or physical functions.
-image_url: null
-updated_date: null
+summary: CHERI can bring memory protection and compartmentalisation to connected devices that have limited resources but still handle private data, network access, or physical functions.
 parent: /adopt/
 next_page_url: /adopt/use-cases/critical-infrastructure/
 related:
   pages:
   - /adopt/use-cases/automotive/
   - /adopt/business-case/the-business-case/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # IoT & Embedded

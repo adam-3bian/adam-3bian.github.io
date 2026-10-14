@@ -3,11 +3,6 @@ title: Wyvern Global
 image_url: /assets/organisations/wyvern-global/795076e4b546-logo.png
 website_url: https://wyvern.global/
 membership_tier: full
-is_founding_member: null
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # Wyvern Global

@@ -2,24 +2,12 @@
 title: CHERI and Existing Software
 permalink: /discover/understand/cheri-and-existing-software/
 summary: Improve the security of existing C and C++ software without starting again.
-image_url: null
-updated_date: null
 parent: /discover/
 next_page_url: /discover/why-cheri/cheri-and-rust/
 related:
   pages:
   - /discover/why-cheri/why-cheri/
   - /discover/why-cheri/approaches-to-memory-safety/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # CHERI and Existing Software

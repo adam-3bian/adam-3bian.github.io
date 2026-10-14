@@ -2,23 +2,11 @@
 title: Bringing CHERI to your product
 permalink: /discover/understand/adapt-products/
 summary: What needs to change, and what doesn't.
-image_url: null
-updated_date: null
 parent: /discover/
 next_page_url: /build/technology/cheri-and-rust-technical/
 related:
   pages:
   - /discover/understand/cheri-and-existing-software/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Bringing CHERI to your product

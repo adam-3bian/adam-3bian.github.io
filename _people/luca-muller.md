@@ -5,12 +5,9 @@ website_url: https://cheri-alliance.org/events/speakers/luca-muller/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/luca-m%C3%BCller-84690a324/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - german-research-center-for-artificial-intelligence-dfki
-  working-groups: []
 ---
 
 # Luca Müller

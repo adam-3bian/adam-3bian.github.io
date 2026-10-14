@@ -5,12 +5,9 @@ website_url: https://cheri-alliance.org/events/speakers/bradley-finn/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/bradley-finn-845266b6/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - dsit
-  working-groups: []
 ---
 
 # Bradley Finn

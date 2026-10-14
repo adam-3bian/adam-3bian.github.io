@@ -1,0 +1,8 @@
+<li>
+  <h3>{% if include.more %}More {% endif %}{{ include.group.label | escape }}</h3>
+  <ul class="link-grid" role="list">
+    {% for target in include.group.targets offset: include.offset limit: include.limit %}
+    <li><a href="{{ target.url | relative_url }}">{{ target.title | escape }}{% if target.context %}<em class="relationship-context">{{ target.context | escape }}</em>{% endif %}</a></li>
+    {% endfor %}
+  </ul>
+</li>

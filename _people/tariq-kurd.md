@@ -5,13 +5,10 @@ website_url: https://cheri-alliance.org/events/speakers/tariq-kurd/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/tariq-kurd-8ab0011/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - codasip
   - risc-v-international
-  working-groups: []
 ---
 
 # Tariq Kurd

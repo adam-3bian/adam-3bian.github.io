@@ -2,12 +2,8 @@
 title: CHERI Alliance
 image_url: /assets/organisations/cheri-alliance/logo.svg
 website_url: https://cheri-alliance.org/
-membership_tier: null
-is_founding_member: null
 social:
   linkedin_url: https://www.linkedin.com/company/cheri-alliance
-  mastodon_url: null
-  github_url: null
 ---
 
 # CHERI Alliance

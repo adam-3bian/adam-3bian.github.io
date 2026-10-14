@@ -1,20 +1,20 @@
 ---
-title: 🪁 CHERI Zephyr WG
+title: CHERI Zephyr Working Group
 image_url: /assets/working-groups/cheri-zephyr/bb889a4dc09e-cheri-alliance-working-groups.png
 website_url: https://cheri-alliance.org/who-we-are/working-groups/cheri-zephyr/
-repository_urls:
-- https://github.com/CHERI-Alliance/CHERI-zephyr
 leads:
 - jennifer-jackson
 related:
   organisations:
   - university-of-birmingham
-  hardware: []
   software:
   - zephyr
+repositories:
+- label: CHERI Zephyr source
+  url: https://github.com/CHERI-Alliance/CHERI-zephyr
 ---
 
-# 🪁 CHERI Zephyr WG
+# CHERI Zephyr Working Group
 
 Coordinates CHERI support for [Zephyr](/software/zephyr/) across architecture ports, kernel and user interfaces, drivers, tooling, and supported platforms.
 

@@ -2,23 +2,11 @@
 title: Press Resources
 permalink: /news-and-events/news-and-analysis/press-resources/
 summary: Everything you need to cover the CHERI Alliance and CHERI technology.
-image_url: null
-updated_date: null
 parent: /news-and-events/
 next_page_url: /news-and-events/events-and-archive/upcoming-events/
 related:
   pages:
   - /news/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Press Resources

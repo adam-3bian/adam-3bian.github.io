@@ -1,23 +1,7 @@
 ---
 title: Technical Reports - CHERI Roadmap for Linux
 permalink: /reference/linux-roadmap/techreports.html
-summary: null
-image_url: null
-updated_date: null
 parent: /linux-roadmap/
-next_page_url: null
-related:
-  pages: []
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 ## Technical reports

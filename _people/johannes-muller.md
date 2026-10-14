@@ -5,12 +5,9 @@ website_url: https://cheri-alliance.org/events/speakers/johannes-muller/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/johannes-m%C3%BCller-b67831247/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - rptu
-  working-groups: []
 ---
 
 # Johannes Müller

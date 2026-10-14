@@ -1,25 +1,12 @@
 ---
 title: Cambridge and SRI
 permalink: /discover/history/cambridge-and-sri/
-summary: The University of Cambridge and SRI International combined systems, hardware, and assurance expertise
-  to establish the modern CHERI architecture.
-image_url: null
-updated_date: null
+summary: The University of Cambridge and SRI International combined systems, hardware, and assurance expertise to establish the modern CHERI architecture.
 parent: /discover/
 next_page_url: /discover/history/development-of-cheri/
 related:
   pages:
   - /discover/history/early-capability-systems/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Cambridge and SRI

@@ -5,13 +5,10 @@ published_date: '2025-10-06'
 authors:
 - mike-eftimakis
 related:
-  working-groups: []
   organisations:
   - cheri-alliance
   hardware:
   - morello
-  software: []
-  academic-papers: []
 ---
 
 # CHERI Alliance to Distribute Arm Morello Boards – The Journey Beyond DSbD Continues!

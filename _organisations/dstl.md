@@ -4,10 +4,6 @@ image_url: /assets/organisations/dstl/1291f932f092-logo.png
 website_url: https://www.gov.uk/government/organisations/defence-science-and-technology-laboratory
 membership_tier: community
 is_founding_member: true
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # Defence Science and Technology Laboratory (Dstl)

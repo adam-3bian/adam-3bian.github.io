@@ -5,12 +5,8 @@ published_date: '2026-07-29'
 authors:
 - mike-eftimakis
 related:
-  working-groups: []
-  organisations: []
-  hardware: []
   software:
   - rust
-  academic-papers: []
 ---
 
 # A new ETSI standard could rewrite the memory-safety debate

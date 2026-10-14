@@ -3,10 +3,6 @@ title: Jeremy Singer
 image_url: /assets/people/jeremy-singer/5d91f083d9ea-portrait.png
 website_url: https://cheri-alliance.org/events/speakers/jeremy-singer/
 is_speaker: true
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - university-of-glasgow

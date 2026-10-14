@@ -1,26 +1,13 @@
 ---
 title: Sealing
 permalink: /build/technology/sealing/
-summary: Sealing turns a capability into a protected, non-dereferenceable token that can support opaque objects
-  and controlled compartment entry points.
-image_url: null
-updated_date: null
+summary: Sealing turns a capability into a protected, non-dereferenceable token that can support opaque objects and controlled compartment entry points.
 parent: /build/
 next_page_url: /build/technology/spatial-memory-safety/
 related:
   pages:
   - /build/technology/capabilities/
   - /build/technology/provenance/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Sealing

@@ -1,26 +1,13 @@
 ---
 title: Contact the Alliance
 permalink: /alliance/membership/contact/
-summary: Contact the Alliance for membership, working groups, certification, events, media, trademarks, or
-  help finding the right CHERI resource.
-image_url: null
-updated_date: null
+summary: Contact the Alliance for membership, working groups, certification, events, media, trademarks, or help finding the right CHERI resource.
 parent: /alliance/
 next_page_url: /organisations/cheri-alliance/
 related:
   pages:
   - /alliance/membership/membership-benefits-and-options/
   - /news-and-events/people-and-opportunities/job-opportunities/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # Contact the Alliance

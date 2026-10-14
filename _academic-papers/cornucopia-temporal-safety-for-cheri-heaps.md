@@ -1,6 +1,5 @@
 ---
 title: 'Cornucopia: Temporal Safety for CHERI Heaps'
-image_url: /assets/academic-papers/cornucopia-temporal-safety-for-cheri-heaps/placeholder.svg
 publication_url: https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/2020oakland-cornucopia.pdf
 published_year: 2020
 authors:
@@ -15,10 +14,6 @@ authors:
 - alex-richardson
 - john-baldwin
 - david-chisnall
-related:
-  working-groups: []
-  hardware: []
-  software: []
 ---
 
 ### Cornucopia: Temporal Safety for CHERI Heaps

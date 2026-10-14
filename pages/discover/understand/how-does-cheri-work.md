@@ -2,24 +2,12 @@
 title: How does CHERI work?
 permalink: /discover/understand/how-does-cheri-work/
 summary: Helping software stay within its boundaries.
-image_url: null
-updated_date: null
 parent: /discover/
 next_page_url: /build/technology/cheri-and-rust-technical/
 related:
   pages:
   - /discover/understand/adapt-products/
   - /discover/understand/cheri-and-existing-software/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
 # How does CHERI work?

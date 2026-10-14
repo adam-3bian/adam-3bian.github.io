@@ -2,15 +2,10 @@
 title: BT Group Joins the CHERI Alliance to Advance Cybersecurity Innovation
 image_url: /assets/news/bt-group-joins-the-cheri-alliance-to-advance-cybersecurity-innovation/df8b50676c3b-working-group-spotlight-marketing.png
 published_date: '2025-06-18'
-authors: []
 related:
-  working-groups: []
   organisations:
   - cheri-alliance
   - bt-group
-  hardware: []
-  software: []
-  academic-papers: []
 ---
 
 # BT Group Joins the CHERI Alliance to Advance Cybersecurity Innovation

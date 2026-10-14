@@ -1,17 +1,12 @@
 ---
 title: Sonata
-image_url: /assets/hardware/sonata/placeholder.svg
 website_url: https://sonata-system.github.io/sonata-system/
-repository_urls: []
-type: null
-architecture: null
-status: null
 related:
   organisations:
   - lowrisc
   hardware:
   - cheriot
-  software: []
+website_label: Read Sonata documentation
 ---
 
 # Sonata

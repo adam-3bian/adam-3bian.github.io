@@ -3,6 +3,8 @@ name: Build and deploy Jekyll to GitHub Pages
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -25,6 +27,8 @@ jobs:
         with:
           ruby-version: '3.2'
           bundler-cache: true
+      - name: Validate authoring and relationship models
+        run: bundle exec ruby scripts/test_content_model.rb
       - name: Validate content
         run: bundle exec ruby scripts/check_content.rb
       - name: Verify original organisation artwork in SVG masks
@@ -89,13 +93,16 @@ jobs:
           path: reports/image-tests/
           if-no-files-found: ignore
       - name: Configure Pages
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         uses: actions/configure-pages@v5
       - name: Upload site
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v4
         with:
           path: _site
 
   deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     needs: build
     runs-on: ubuntu-latest
     environment:

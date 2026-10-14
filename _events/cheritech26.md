@@ -4,15 +4,8 @@ image_url: /assets/events/cheritech26/408459d34c43-cheritech26.webp
 website_url: https://cheri-alliance.org/events/cheritech26/
 registration_url: https://tickets.messe-muenchen.de/MM-SHOP/SEM26/
 start_date: '2026-11-12'
-start_datetime: null
 end_date: '2026-11-13'
-end_datetime: null
 location: SEMICON Europa, Munich, Germany
-speakers: []
-related:
-  working-groups: []
-  organisations: []
-  academic-papers: []
 ---
 
 # CHERITech'26

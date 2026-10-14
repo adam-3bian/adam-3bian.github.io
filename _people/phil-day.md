@@ -5,12 +5,9 @@ website_url: https://cheri-alliance.org/events/speakers/phil-day/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/philday2/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - configured-things
-  working-groups: []
 ---
 
 # Phil Day

@@ -3,11 +3,6 @@ title: University of Exeter
 image_url: /assets/organisations/university-of-exeter/ecd832b543d0-logo.png
 website_url: https://logicalhacking.com/
 membership_tier: community
-is_founding_member: null
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # University of Exeter

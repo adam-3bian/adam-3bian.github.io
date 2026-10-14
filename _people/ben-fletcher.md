@@ -5,8 +5,6 @@ website_url: https://cheri-alliance.org/events/speakers/ben-fletcher/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/ben-fletcher-38b8b12/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - codasip

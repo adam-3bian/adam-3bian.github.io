@@ -3,11 +3,6 @@ title: VeriSilicon
 image_url: /assets/organisations/verisilicon/b35ed2559906-logo.png
 website_url: https://www.verisilicon.com/en/Home
 membership_tier: full
-is_founding_member: null
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # VeriSilicon

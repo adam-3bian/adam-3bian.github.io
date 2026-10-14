@@ -5,13 +5,10 @@ website_url: https://cheri-alliance.org/events/speakers/peter-cox/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/uml/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - um-labs
   - dstl
-  working-groups: []
 ---
 
 # Peter Cox

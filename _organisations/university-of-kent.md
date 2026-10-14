@@ -3,11 +3,6 @@ title: University of Kent
 image_url: /assets/organisations/university-of-kent/17d3f2e7b137-logo.png
 website_url: https://www.cs.kent.ac.uk/people/staff/mjb211/rust/index.htm
 membership_tier: community
-is_founding_member: null
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # University of Kent

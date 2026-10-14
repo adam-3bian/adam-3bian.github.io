@@ -1,6 +1,5 @@
 ---
 title: The Arm Morello Evaluation Platform—Validating CHERI-Based Security in a High-Performance System
-image_url: /assets/academic-papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/placeholder.svg
 publication_url: https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/202305ieeemicro-morello-platform.pdf
 published_year: 2023
 authors:
@@ -11,10 +10,8 @@ authors:
 - peter-sewell
 - jonathan-woodruff
 related:
-  working-groups: []
   hardware:
   - morello
-  software: []
 ---
 
 ### The Arm Morello Evaluation Platform—Validating CHERI-Based Security in a High-Performance System

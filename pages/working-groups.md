@@ -4,8 +4,6 @@ permalink: /working-groups/
 layout: list
 listing:
   collection: working-groups
-  status: null
-  role: null
 ---
 
 # Working Groups

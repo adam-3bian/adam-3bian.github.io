@@ -2,25 +2,14 @@
 title: FAQ
 permalink: /discover/understand/faq/
 summary: Clear answers to common questions about CHERI and the CHERI Alliance.
-image_url: null
-updated_date: null
 parent: /discover/
 next_page_url: /adopt/business-case/cost-of-memory-unsafety/
 related:
   pages:
   - /discover/why-cheri/vulnerabilities-in-everyday-technology/
   - /discover/resources/glossary/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
   guides:
   - technical-faq
-  policies: []
 ---
 
 # FAQ

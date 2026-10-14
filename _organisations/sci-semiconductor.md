@@ -4,10 +4,6 @@ image_url: /assets/organisations/sci-semiconductor/89396ef186d7-logo.png
 website_url: http://www.scisemi.com/
 membership_tier: full
 is_founding_member: true
-social:
-  linkedin_url: null
-  mastodon_url: null
-  github_url: null
 ---
 
 # SCI Semiconductor

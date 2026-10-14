@@ -5,13 +5,10 @@ website_url: https://cheri-alliance.org/events/speakers/paul-metzger/
 is_speaker: true
 social:
   linkedin_url: https://www.linkedin.com/in/metzgerpaul/
-  mastodon_url: null
-  github_url: null
 related:
   organisations:
   - university-of-cambridge
   - university-of-edinburgh
-  working-groups: []
 ---
 
 # Paul Metzger

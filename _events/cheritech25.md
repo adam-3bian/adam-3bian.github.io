@@ -2,11 +2,7 @@
 title: CHERITech'25 Conference
 image_url: /assets/events/cheritech25/0e6d3180c4d1-cheritech25.webp
 website_url: https://cheri-alliance.org/events/cheri-tech-conference-2025/
-registration_url: null
 start_date: '2025-11-14'
-start_datetime: null
-end_date: null
-end_datetime: null
 location: Sister, Manchester, UK
 speakers:
 - andrew-murray
@@ -28,7 +24,6 @@ speakers:
 - tariq-kurd
 - thomas-nyman
 related:
-  working-groups: []
   organisations:
   - university-of-modena-and-reggio-emilia
   - the-university-of-manchester
@@ -46,7 +41,6 @@ related:
   - lowrisc
   - google
   - ukri
-  academic-papers: []
 ---
 
 # CHERITech'25 Conference
