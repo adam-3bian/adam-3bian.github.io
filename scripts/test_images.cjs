@@ -178,9 +178,10 @@ async function loaded(page, route) {
     // Preserve the actions of linked/interactive images, even if aligned.
     // A separate context avoids adding these fixtures to the audited pages.
     const linked = await browser.newPage();
+    const fixtureImageURL = new URL('assets/shared/source-assets/5a6300ace656-cheri.png', base).pathname;
     await linked.route('**/assets/viewer.js', async route => {
       const response = await route.fetch();
-      await route.fulfill({ response, body: `document.querySelector('.article-content').insertAdjacentHTML('beforeend', '<a id="linked-image" href="#linked-image"><img class="image-left" src="/assets/shared/source-assets/5a6300ace656-cheri.png" alt="Linked example"></a><button id="interactive-image"><img class="image-right" src="/assets/shared/source-assets/5a6300ace656-cheri.png" alt="Interactive example"></button><img id="decorative-image" class="image-left" src="/assets/shared/source-assets/5a6300ace656-cheri.png" alt=""><img id="portrait-image" class="image-full image-portrait" src="/assets/shared/source-assets/5a6300ace656-cheri.png" alt="Portrait example">');\n${await response.text()}` });
+      await route.fulfill({ response, body: `document.querySelector('.article-content').insertAdjacentHTML('beforeend', '<a id="linked-image" href="#linked-image"><img class="image-left" src="${fixtureImageURL}" alt="Linked example"></a><button id="interactive-image"><img class="image-right" src="${fixtureImageURL}" alt="Interactive example"></button><img id="decorative-image" class="image-left" src="${fixtureImageURL}" alt=""><img id="portrait-image" class="image-full image-portrait" src="${fixtureImageURL}" alt="Portrait example">');\n${await response.text()}` });
     });
     await loaded(linked, editorial);
     assert.equal(await linked.locator('#linked-image img, #interactive-image img, #decorative-image, #portrait-image').evaluateAll(images => images.some(image => image.hasAttribute('role') || image.hasAttribute('tabindex'))), false);
@@ -190,8 +191,10 @@ async function loaded(page, route) {
     await linked.close();
 
     await loaded(page, '/news/beyond-software-patching/');
-    await page.locator('figure.image-full img[role="button"]').nth(1).click();
-    assert.equal(await page.locator('.image-viewer figcaption').textContent(), await page.locator('.article-content figcaption').nth(1).textContent());
+    const captionedFigure = page.locator('.article-content figure').filter({ has: page.locator('figcaption', { hasText: 'Figure 1: Greater intelligence at the grid edge across smart metering and energy management platforms' }) });
+    assert.equal(await captionedFigure.count(), 1);
+    await captionedFigure.locator('img[role="button"]').click();
+    assert.equal(await page.locator('.image-viewer figcaption').textContent(), await captionedFigure.locator('figcaption').textContent());
     await page.screenshot({ path: path.join(reportDir, 'image-viewer-375.png') });
     const axePath = process.env.AXE_PATH;
     if (axePath) {
