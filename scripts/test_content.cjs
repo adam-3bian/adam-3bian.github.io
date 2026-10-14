@@ -178,9 +178,11 @@ const routes = [
             assert.deepEqual(newsDates, [...newsDates].sort().reverse(), 'Recent news is newest first');
             assert.equal(await page.locator('main .metadata, main .relationships, main .inspector, main .front-matter-json').count(), 0, 'Homepage does not expose record or authoring panels');
           } else {
-            assert.equal(await page.locator('main p').count(), 1, 'Index has one short introduction');
-            assert.equal(await page.locator('main p').textContent(), expected.summary);
-            assert.equal(await page.locator('main .metadata, main .relationships, main .inspector, main .cards, main img, main div, main span, main h2, main h3, main details').count(), 0, 'Extra content on an index');
+            assert.equal(await page.locator('.index-intro > p').textContent(), expected.landing.description);
+            assert.deepEqual(await page.locator('.recommended-routes a').evaluateAll(links => links.map(a => a.href)), expected.landing.introductory_routes.map(url), 'Source-backed starting points');
+            assert.deepEqual(await page.locator('.featured-resources a').evaluateAll(links => links.map(a => a.href)), expected.landing.featured_routes.map(url), 'Source-backed featured resources');
+            assert.deepEqual(await page.locator('.learning-path a').evaluateAll(links => links.map(a => a.href)), (expected.landing.learning_routes || []).map(url), 'Developer progression');
+            assert.equal(await page.locator('main .metadata, main .relationships, main .inspector, main .front-matter-json').count(), 0, 'Landing pages do not expose record or authoring panels');
           }
           const actual = await page.locator('main .index-navigation a').evaluateAll(links => links.map(link => ({ title: link.textContent.trim(), href: link.href })));
           assert.deepEqual(actual, expected.links.map(link => ({ title: link.title, href: url(link.url) })), 'Index must match the mega-menu labels and order');

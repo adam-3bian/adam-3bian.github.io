@@ -57,9 +57,12 @@ Ordinary pages have breadcrumbs, a title, optional introduction, Markdown body
 and relevant onward links. Preserve supplied wording. Headings clear floated
 images; paragraphs use a comfortable reading measure, with wider diagrams and tables.
 
-A section index has its title, short existing introduction and columns of links
-drawn from the matching mega-menu groups. Link rows have generous spacing and
-visible focus. Indexes do not duplicate record lists or add promotional copy.
+A section landing page has its existing title and introduction, source-backed
+starting points, relevant featured resources and a complete browse navigation
+drawn from the matching `_config.yml` groups. Brief group descriptions come from
+shared presentation metadata. Build adds a platform-aware developer progression;
+News and Events reuses the build-time activity include. Native links work without
+JavaScript. Full article text remains in its canonical source page.
 The home index uses a dedicated shared include: one CHERI introduction, two
 starting actions, source-backed topic and audience routes, selected canonical
 case studies, build-time news/events and Alliance participation links. Its

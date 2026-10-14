@@ -28,3 +28,94 @@ home:
   - codasip-x730
   alliance_intro: The CHERI Alliance brings together industry, research, government, and open-source communities to accelerate the adoption of CHERI technology.
   alliance_source: /organisations/cheri-alliance/
+sections:
+  /discover/:
+    introductory_routes:
+    - /discover/why-cheri/why-cheri/
+    - /discover/understand/how-does-cheri-work/
+    - /discover/understand/faq/
+    featured_routes:
+    - /reports/an-introduction-to-cheri/
+    - /academic-papers/
+    - /discover/resources/documentation-and-guides/
+    group_descriptions:
+      Why CHERI: Memory-safety risks, existing defences and complementary approaches.
+      Understand CHERI: The technology, its history and its relationship with existing software.
+      Resources: Research, documentation, presentations and terminology.
+    next:
+      title: Choose a development platform
+      url: /guides/choose-a-platform/
+  /adopt/:
+    introductory_routes:
+    - /adopt/business-case/the-business-case/
+    - /adopt/business-case/cost-of-memory-unsafety/
+    - /adopt/assurance-and-adoption/about-cheri-enabled/
+    featured_routes:
+    - /case-studies/morello/
+    - /case-studies/cheriot/
+    - /case-studies/codasip-x730/
+    group_descriptions:
+      Business Case: Business considerations, the cost of vulnerabilities and security investment.
+      Assurance & Adoption: Existing case studies, the CHERI Enabled programme and certified products.
+      Policy: Government guidance, regulation and infrastructure resilience.
+    next:
+      title: Discuss adoption with the Alliance
+      url: /alliance/membership/contact/
+  /build/:
+    introductory_routes:
+    - /guides/choose-a-platform/
+    - /guides/building-secure-software/
+    - /guides/tutorials-and-training/
+    featured_routes:
+    - /hardware/morello/
+    - /hardware/cheriot/
+    - /software/cheribsd/
+    learning_routes:
+    - /guides/choose-a-platform/
+    - /guides/run-cheri-in-simulation/
+    - /guides/install-a-toolchain/
+    - /guides/build-your-first-application/
+    - /guides/port-existing-software/
+    - /guides/technical-faq/
+    learning_note: Use the installation route supplied by your platform rather than assembling unrelated binaries by hand.
+    group_descriptions:
+      Software Developers: Development guides, platform choices, training and porting.
+      Technology: Capabilities, memory protection, compartmentalisation and system models.
+      Platforms: Evaluation hardware, embedded platforms, commercial products and simulation.
+      Software Ecosystem: Operating systems, compilers, languages and debugging tools.
+    next:
+      title: Browse all development guides
+      url: /guides/
+  /alliance/:
+    introductory_routes:
+    - /organisations/cheri-alliance/
+    - /alliance/membership/why-join/
+    - /working-groups/
+    featured_routes:
+    - /alliance/leadership/members/
+    - /alliance/leadership/governing-board/
+    - /alliance/about-and-governance/accelerating-together/
+    group_descriptions:
+      About & Governance: The Alliance's role, collaboration and shared direction.
+      Leadership: Confirmed members, the board, working groups and ambassadors.
+      Membership: Participation, membership options and contact information.
+      Legal & Policies: The policies that support Alliance participation and collaboration.
+    next:
+      title: Explore membership options
+      url: /alliance/membership/membership-benefits-and-options/
+  /news-and-events/:
+    introductory_routes:
+    - /news/
+    - /news-and-events/events-and-archive/upcoming-events/
+    - /news-and-events/news-and-analysis/subscribe-newsletter/
+    featured_routes:
+    - /news-and-events/events-and-archive/past-events/
+    - /news-and-events/people-and-opportunities/speakers/
+    - /news-and-events/news-and-analysis/press-resources/
+    group_descriptions:
+      News & Analysis: Announcements, newsletters and resources for the press.
+      Events & Archive: Upcoming gatherings and records of previous conferences.
+      People & Opportunities: Speakers, ecosystem participation and Alliance contacts.
+    next:
+      title: Subscribe to the newsletter
+      url: /news-and-events/news-and-analysis/subscribe-newsletter/

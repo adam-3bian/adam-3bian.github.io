@@ -252,11 +252,10 @@ for route, expected_index in index_pages.items():
     index = indexes[0]
     stats['index_pages'] += 1
     is_home = route == '/'
-    if not is_home and [n.tag for n in index.children] != ['hgroup', 'nav']:
-        errors.append('Index must contain only its introduction and page list: ' + route)
     intro = next((n for n in doc.nodes if n.tag == 'hgroup' and n.parent.has_class('home-hero')), None) if is_home else next((n for n in index.children if n.tag == 'hgroup'), None)
     expected_title = expected_index['home']['title'] if is_home else expected_index['title']
-    if not intro or [n.tag for n in intro.children] != ['h1', 'p'] or [n.text() for n in intro.children] != [expected_title, expected_index['summary']]:
+    expected_summary = expected_index.get('landing', {}).get('description', expected_index['summary'])
+    if not intro or [n.tag for n in intro.children] != ['h1', 'p'] or [n.text() for n in intro.children] != [expected_title, expected_summary]:
         errors.append('Index title or introduction differs from its source: ' + route)
     nav = next((n for n in index.children if n.has_class('index-navigation')), None)
     links = [n for n in doc.nodes if n.tag == 'a' and n.ancestor(lambda a: a is nav)] if nav else []
@@ -275,8 +274,13 @@ for route, expected_index in index_pages.items():
             errors.append('Homepage needs one primary heading')
         if not any(n.has_class('home-purpose') and n.text() == expected_index['title'] for n in doc.nodes):
             errors.append('Original homepage introduction is missing')
-    elif any(n.tag in ('div', 'span', 'img', 'h2', 'h3', 'details') and n.ancestor(lambda a: a is index) for n in doc.nodes):
-        errors.append('Extra markup or content in standard index: ' + route)
+    else:
+        for css_class, key in [('recommended-routes', 'introductory_routes'), ('featured-resources', 'featured_routes')]:
+            actual_routes = [n.attrs.get('href') for n in doc.nodes if n.tag == 'a' and n.ancestor(lambda a: a.has_class(css_class))]
+            if actual_routes != [BASEURL + r for r in expected_index['landing'][key]]:
+                errors.append('Landing-page recommendations differ from their sources: ' + route)
+        if len([n for n in doc.nodes if n.tag == 'h1' and n.ancestor(lambda a: a is index)]) != 1:
+            errors.append('Landing page needs one primary heading: ' + route)
     stats['index_links'] += len(links)
 for record in report['records']:
     file = target_file(BASEURL + record['url'])

@@ -3,21 +3,25 @@ layout: default
 ---
 {% if page.url == '/' %}{% include home.html %}{% else %}
 {% assign section_menu = site.navigation.header | where: 'url', page.url | first %}
-<article class="index-page{% if page.url == '/' %} home-page{% endif %}" data-content-route="{{ page.url | escape }}" data-collection="pages">
-  <hgroup class="index-intro"><h1>{{ page.title | escape }}</h1><p>{{ page.summary | escape }}</p></hgroup>
-  <nav class="index-navigation" aria-label="Pages in {{ page.title | escape }}">
-    <ul class="index-pages{% if page.url != '/' %} columns-{{ section_menu.columns | default: 3 }}{% endif %}" role="list">
-      {% if page.url == '/' %}
-        {% for section in site.navigation.header %}{% if section.url %}<li><a href="{% include href.html url=section.url %}">{{ section.title | escape }}</a></li>{% endif %}{% endfor %}
-      {% else %}
-        {% for group in section_menu.subcategories %}
-        <li><strong class="index-group-label">{{ group.title | escape }}</strong><ul role="list">
-          {% if group.url %}<li><a href="{% include href.html url=group.url %}">{{ group.title | escape }} overview</a></li>{% endif %}
-          {% for item in group.links %}<li><a href="{% include href.html url=item.url %}">{{ item.title | escape }}</a></li>{% endfor %}
-        </ul></li>
-        {% endfor %}
-      {% endif %}
+{% assign section_data = site.data.landing.sections[page.url] %}
+{% assign introductory_routes = section_data.introductory_routes %}{% if page.introductory_routes != nil %}{% assign introductory_routes = page.introductory_routes %}{% endif %}
+{% assign featured_routes = section_data.featured_routes %}{% if page.featured_routes != nil %}{% assign featured_routes = page.featured_routes %}{% endif %}
+<article class="index-page landing-page" data-content-route="{{ page.url | escape }}" data-collection="pages">
+  <hgroup class="index-intro"><h1>{{ page.title | escape }}</h1><p>{{ page.section_description | default: page.summary | escape }}</p></hgroup>
+  {% if introductory_routes.size > 0 %}<section class="recommended-routes" aria-labelledby="recommended-heading"><h2 id="recommended-heading">Start here</h2>{% include route-list.html routes=introductory_routes %}</section>{% endif %}
+  {% if section_data.learning_routes %}<section aria-labelledby="learning-heading"><h2 id="learning-heading">A developer starting sequence</h2><p>{{ section_data.learning_note | escape }}</p>{% include route-list.html routes=section_data.learning_routes ordered=true compact=true %}</section>{% endif %}
+  {% if page.url == '/news-and-events/' %}{% include featured-activity.html %}{% endif %}
+  {% if featured_routes.size > 0 %}<section class="featured-resources" aria-labelledby="featured-heading"><h2 id="featured-heading">Explore further</h2>{% include route-list.html routes=featured_routes %}</section>{% endif %}
+  <nav class="index-navigation" aria-labelledby="browse-heading"><h2 id="browse-heading">Browse all {{ section_menu.title | escape }} resources</h2>
+    <ul class="index-pages columns-{{ section_menu.columns | default: 3 }}" role="list">
+      {% for group in section_menu.subcategories %}
+      <li><h3 class="index-group-label">{{ group.title | escape }}</h3>{% if section_data.group_descriptions[group.title] %}<p class="group-description">{{ section_data.group_descriptions[group.title] | escape }}</p>{% endif %}<ul role="list">
+        {% if group.url %}<li><a href="{% include href.html url=group.url %}">{{ group.title | escape }} overview</a></li>{% endif %}
+        {% for item in group.links %}<li><a href="{% include href.html url=item.url %}">{{ item.title | escape }}</a></li>{% endfor %}
+      </ul></li>
+      {% endfor %}
     </ul>
   </nav>
+  {% if section_data.next %}<nav class="onward" aria-label="Next step"><a href="{{ section_data.next.url | relative_url }}">{{ section_data.next.title | escape }}</a></nav>{% endif %}
 </article>
 {% endif %}

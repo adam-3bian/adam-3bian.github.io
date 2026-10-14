@@ -364,9 +364,21 @@ Use for home and section landing pages. Each index contains one title, one short
 | `layout` | `index` | The section/home layout. |
 | `summary` | Nonempty string | One short introductory paragraph, rendered as plain text. |
 
-Leave the Markdown body empty. Group labels, page links, link labels, order and desktop column counts come directly from `navigation.header` in `_config.yml`, using the menu entry with the index's `permalink`. The homepage additionally uses `_data/landing.yml` for source-backed presentation and canonical featured routes, and generates recent news and upcoming events from their collections. It retains the five top-level section links and the original title and summary. Other indexes show their mega-menu's grouped child links, including pages in collections. Edit the menu to change these lists; do not maintain a second set in page content or `sections` front matter.
+Leave the Markdown body empty. Group labels, page links, link labels, order and desktop column counts come directly from `navigation.header` in `_config.yml`, using the menu entry with the index's `permalink`. The homepage and section landings use `_data/landing.yml` for source-backed starting points, group descriptions, featured canonical routes and next actions. News and events are generated from their collections. The homepage retains the five top-level section links and original title and summary; section pages retain their complete grouped browse links. Edit the navigation configuration to change those browse lists rather than maintaining another complete copy.
 
-Indexes render with semantic headings, navigation and lists; they need no JavaScript. Group lists use the menu's three or four columns on desktop, two on tablet and one on mobile. Section indexes do not add hero images, collection overviews, front-matter inspectors or related-record panels. The homepage uses sections and the shared card include for approved case studies, omitting placeholder artwork.
+Indexes render with semantic headings, navigation and lists; they need no JavaScript. Browse groups use the configuration's three or four columns on desktop, two on tablet and one on mobile. Source-backed route lists and optional featured sections use shared includes; no authoring inspectors or raw relationship panels appear. The homepage uses the shared card include for approved case studies, omitting placeholder artwork.
+
+Optional index presentation properties are additive; existing index front matter
+remains valid. They override the corresponding shared presentation value:
+
+| Optional property | Type | Purpose |
+| --- | --- | --- |
+| `introductory_routes` | Array of canonical internal routes | Recommended starting points; an empty array omits the section. |
+| `featured_routes` | Array of canonical internal routes | Featured resources; an empty array omits the section. |
+| `section_description` | Nonempty string or `null` | Introductory description, falling back to the existing summary. |
+
+The content validator checks recommended routes and descriptions. Titles,
+summaries and first-paragraph previews are read from each linked source record.
 
 Complete index example:
 

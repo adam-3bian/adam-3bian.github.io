@@ -9,6 +9,10 @@ common:
   next_page_url: null
   related: {}
 optional:
+  index:
+    introductory_routes: []
+    featured_routes: []
+    section_description: null
   hardware:
     certification: null
     certification_url: null

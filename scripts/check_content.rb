@@ -123,6 +123,17 @@ objects.each do |object|
       routes.each { |route| errors << "Unknown homepage route: #{route}" unless lookup.key?(route) }
       Array(home['examples']).each { |slug| errors << "Unknown homepage case study: #{slug}" unless slugs.fetch('case-studies').key?(slug) }
       index_pages[object.url]['home'] = home
+    else
+      presentation = (site.data.dig('landing', 'sections', object.url) || {}).dup
+      %w[introductory_routes featured_routes].each do |key|
+        presentation[key] = fields[key] if fields.key?(key)
+        errors << "Invalid #{key}: #{object.url}" unless presentation[key].is_a?(Array)
+      end
+      presentation['description'] = fields['section_description'] || fields['summary']
+      errors << "Invalid section description: #{object.url}" unless presentation['description'].is_a?(String) && !presentation['description'].strip.empty?
+      routes = Array(presentation['introductory_routes']) + Array(presentation['featured_routes']) + Array(presentation['learning_routes']) + [presentation.dig('next', 'url')].compact
+      routes.each { |route| errors << "Unknown landing-page route: #{route}" unless lookup.key?(route) && !settings.fetch('aliases', {}).key?(route) }
+      index_pages[object.url]['landing'] = presentation
     end
   end
   if kind == 'listing'
