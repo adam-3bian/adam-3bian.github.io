@@ -30,7 +30,7 @@ const routes = ['/guides/install-a-toolchain/', '/guides/choose-a-platform/', '/
           return problems;
         });
         assert.deepEqual(errors, [], `${route} ${width}`);
-        if (width === 375 && route !== '/reference/CHERI-seL4-Exercises/print.html') {
+        if (width === 375) {
           await page.addScriptTag({ path: process.env.AXE_PATH || require.resolve('axe-core/axe.min.js') });
           const issues = await page.evaluate(async () => (await axe.run('main', { runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa'] } })).violations.map(v => ({ id: v.id, nodes: v.nodes.map(n => n.target) })));
           assert.deepEqual(issues, [], `${route} accessibility`); report.accessibility++;
@@ -46,6 +46,7 @@ const routes = ['/guides/install-a-toolchain/', '/guides/choose-a-platform/', '/
     const first = plain.locator('.table-of-contents a').first();
     const fragment = await first.getAttribute('href');
     await first.focus(); await plain.keyboard.press('Enter');
+    await plain.waitForURL(address => address.hash === fragment);
     assert.equal(new URL(plain.url()).hash, fragment);
     assert.equal(await plain.locator(fragment).count(), 1);
     report.nativeContents++;

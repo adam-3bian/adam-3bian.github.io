@@ -65,6 +65,7 @@ jobs:
           node scripts/test_search.cjs
           node scripts/test_directories.cjs
           node scripts/test_reading.cjs
+          node scripts/test_accessibility.cjs
           export SITE_DIR="$RUNNER_TEMP/baseurl-site/preview"
           export SITE_URL="http://127.0.0.1:4001/preview/"
           export REPORT_ROOT="reports/baseurl-tests"
@@ -75,6 +76,7 @@ jobs:
           node scripts/test_search.cjs
           node scripts/test_directories.cjs
           node scripts/test_reading.cjs
+          node scripts/test_accessibility.cjs
       - name: Save base URL test results and screenshots
         if: always()
         uses: actions/upload-artifact@v4
@@ -102,6 +104,18 @@ jobs:
         with:
           name: image-tests
           path: reports/image-tests/
+          if-no-files-found: ignore
+      - name: Save homepage, discovery and reading review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: visitor-experience-tests
+          path: |
+            reports/homepage-tests/
+            reports/search-tests/
+            reports/directory-tests/
+            reports/reading-tests/
+            reports/accessibility-tests/
           if-no-files-found: ignore
       # Audit outputs remain available even though public navigation omits them.
       - name: Save maintainer validation reports

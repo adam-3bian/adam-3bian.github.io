@@ -140,6 +140,22 @@ async function loaded(page, route) {
       console.log(`${width}px: ${routes.length} pages passed containment, wrapping, clearing and asset checks.`);
     }
 
+    // A slow image must retain the dimensions reserved before decoding.
+    const dimensionsContext = await browser.newContext({ viewport: { width: 375, height: 1000 } });
+    const dimensionsPage = await dimensionsContext.newPage();
+    let releaseImage;
+    const imageGate = new Promise(resolve => { releaseImage = resolve; });
+    await dimensionsPage.route('**/bfeebb3ac676-morello-board.webp', async route => { await imageGate; await route.continue(); });
+    await dimensionsPage.goto(pageURL('/case-studies/morello/'), { waitUntil: 'domcontentloaded' });
+    await dimensionsPage.evaluate(() => document.fonts.ready);
+    const reserved = await dimensionsPage.locator('.article-content .image-left').boundingBox();
+    releaseImage();
+    await dimensionsPage.waitForLoadState('load');
+    const decoded = await dimensionsPage.locator('.article-content .image-left').boundingBox();
+    assert(reserved.height > 0 && Math.abs(reserved.height - decoded.height) < 1, 'Intrinsic dimensions reserve the editorial image height');
+    report.slowImageDimensions = 'Reserved height remains stable before and after decoding';
+    await dimensionsContext.close();
+
     const editorial = '/discover/understand/how-does-cheri-work/';
     await loaded(page, editorial);
     assert.deepEqual(await page.locator('.article-content img').evaluateAll(images => images.map(image => image.className)), ['image-left', 'image-right']);

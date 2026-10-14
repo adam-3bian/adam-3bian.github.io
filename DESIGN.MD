@@ -48,6 +48,12 @@ navigation script adds keyboard behaviour and the mobile toggle. Mobile menus
 show their second-level destinations directly, without a third disclosure step.
 Give the logo
 an accessible home-link name and explicit intrinsic dimensions.
+Desktop menu items can wrap when text is enlarged, keeping every label and
+control within the header. Directory titles and introductions use compact
+spacing before controls; long titles and summaries remain complete.
+An early, local enhancement flag reserves the mobile menu frame before deferred
+code runs. If that code cannot load, DOMContentLoaded restores native navigation;
+with JavaScript disabled the complete native disclosures remain visible.
 
 The light footer has four visible link groups on desktop, two on tablet and one
 on mobile, followed by copyright and social links. Useful directories appear

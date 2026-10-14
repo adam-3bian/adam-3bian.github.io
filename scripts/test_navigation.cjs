@@ -7,7 +7,7 @@ const { chromium } = require('playwright');
 const base = process.env.SITE_URL || 'http://127.0.0.1:4000/';
 const reportDir = path.resolve(process.env.REPORT_ROOT || 'reports', 'navigation-tests');
 fs.mkdirSync(reportDir, { recursive: true });
-const widths = [1440, 1024, 768, 640, 375];
+const widths = [1440, 1024, 768, 640, 375, 320];
 const report = { widths, panelsChecked: 0, accessibilityChecks: 0 };
 const audit = JSON.parse(fs.readFileSync('reports/preflight.json', 'utf8'));
 const indexes = JSON.parse(fs.readFileSync('reports/index-navigation.json', 'utf8'));
@@ -37,7 +37,7 @@ async function assertAccessible(page) {
   if (!process.env.AXE_PATH) return;
   await page.addScriptTag({ path: process.env.AXE_PATH });
   const violations = await page.evaluate(async () => (await axe.run('.site-header', {
-    runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21aa'] },
+    runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa'] },
   })).violations.map(issue => ({ id: issue.id, impact: issue.impact })));
   assert.deepEqual(violations, [], 'Header accessibility violations');
   report.accessibilityChecks++;
@@ -214,6 +214,29 @@ async function assertAccessible(page) {
       await assertContained(fallback, width >= 1024);
       await context.close();
     }
+    const delayed = await browser.newPage({ viewport: { width: 375, height: 900 } });
+    let releaseNavigation;
+    const navigationGate = new Promise(resolve => { releaseNavigation = resolve; });
+    await delayed.route('**/navigation.js', async route => { await navigationGate; await route.continue(); });
+    await delayed.goto(base, { waitUntil: 'commit' });
+    await delayed.locator('#navigation-toggle').waitFor({ state: 'visible' });
+    await delayed.locator('main').waitFor({ state: 'visible' });
+    await delayed.evaluate(() => document.fonts.ready);
+    const reservedFrame = await delayed.locator('main').boundingBox();
+    releaseNavigation();
+    await delayed.waitForLoadState('load');
+    assert(Math.abs(reservedFrame.y - (await delayed.locator('main').boundingBox()).y) < 1, 'Deferred mobile navigation does not shift the content');
+    await delayed.close();
+    const unavailable = await browser.newPage({ viewport: { width: 375, height: 900 } });
+    await unavailable.route('**/navigation.js', route => route.abort());
+    await unavailable.goto(base);
+    assert.equal(await unavailable.locator('#navigation-toggle').isVisible(), false, 'Failed enhancement hides its inert control');
+    assert.equal(await unavailable.locator('#primary-navigation').isVisible(), true, 'Failed enhancement retains native navigation');
+    await unavailable.locator('.primary-menu > summary').first().focus();
+    await unavailable.keyboard.press('Enter');
+    assert.equal(await unavailable.locator('.primary-menu[open] .menu-group a').first().isVisible(), true);
+    await unavailable.close();
+    report.loading = 'Stable deferred mobile frame and native navigation after script failure';
     report.behavior = 'Native disclosures, Enter/Space, Tab, arrow keys, Escape/focus return, outside click, focus exit, breakpoint changes, short viewports, touch, links, reduced motion and no-JS passed';
     fs.writeFileSync(path.join(reportDir, 'results.json'), JSON.stringify(report, null, 2) + '\n');
     console.log(report.behavior);

@@ -108,4 +108,5 @@
   window.addEventListener('resize', containPanels);
   window.addEventListener('scroll', containPanels, { passive: true });
   changeMode();
+  navigation.setAttribute('data-navigation-ready', '');
 })();
