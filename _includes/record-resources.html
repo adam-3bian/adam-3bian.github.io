@@ -1,0 +1,16 @@
+{% assign primary_resource = '' %}
+{% if include.prominent %}
+  {% case page.collection %}{% when 'events' %}{% assign primary_resource = page.registration_url %}{% when 'academic-papers', 'reports' %}{% assign primary_resource = page.publication_url %}{% when 'policies' %}{% assign primary_resource = page.document_url %}{% endcase %}
+  {% unless primary_resource %}{% assign primary_resource = '' %}{% endunless %}
+  {% if primary_resource == '' %}{% for key in site.data.viewer.url_fields %}{% assign candidate_resource = page[key] | default: '' | strip %}{% if candidate_resource != '' %}{% assign primary_resource = candidate_resource %}{% break %}{% endif %}{% endfor %}{% endif %}
+  {% if primary_resource == '' %}{% assign primary_resource = page.repository_urls | first | default: '' | strip %}{% endif %}
+  {% if primary_resource == '' %}{% for social in page.social %}{% assign candidate_resource = social[1] | default: '' | strip %}{% if candidate_resource != '' %}{% assign primary_resource = candidate_resource %}{% break %}{% endif %}{% endfor %}{% endif %}
+{% endif %}
+{% assign primary_rendered = false %}{% assign primary_link = '' %}
+{% capture record_resources %}
+{% for key in site.data.viewer.url_fields %}{% assign resource_url = page[key] | default: '' | strip %}{% if resource_url != '' %}{% capture resource_anchor %}<a href="{% include href.html url=resource_url %}">{{ site.data.viewer.resource_labels[key] | escape }}</a>{% endcapture %}{% if include.prominent and resource_url == primary_resource and primary_rendered == false %}{% capture primary_link %}<li class="primary-resource">{{ resource_anchor }}</li>{% endcapture %}{% assign primary_rendered = true %}{% else %}<li>{{ resource_anchor }}</li>{% endif %}{% endif %}{% endfor %}
+{% for repository in page.repository_urls %}{% assign resource_url = repository | default: '' | strip %}{% if resource_url != '' %}{% capture resource_anchor %}<a href="{% include href.html url=resource_url %}">Repository{% if page.repository_urls.size > 1 %} {{ forloop.index }}{% endif %}</a>{% endcapture %}{% if include.prominent and resource_url == primary_resource and primary_rendered == false %}{% capture primary_link %}<li class="primary-resource">{{ resource_anchor }}</li>{% endcapture %}{% assign primary_rendered = true %}{% else %}<li>{{ resource_anchor }}</li>{% endif %}{% endif %}{% endfor %}
+{% for social in page.social %}{% assign social_key = social[0] %}{% assign resource_url = social[1] | default: '' | strip %}{% if resource_url != '' %}{% capture resource_anchor %}<a href="{% include href.html url=resource_url %}">{{ site.data.viewer.resource_labels[social_key] | escape }}</a>{% endcapture %}{% if include.prominent and resource_url == primary_resource and primary_rendered == false %}{% capture primary_link %}<li class="primary-resource">{{ resource_anchor }}</li>{% endcapture %}{% assign primary_rendered = true %}{% else %}<li>{{ resource_anchor }}</li>{% endif %}{% endif %}{% endfor %}
+{% endcapture %}
+{% assign record_resources = record_resources | strip %}
+{% if record_resources != '' or primary_link != '' %}<nav class="resource-links{% if include.prominent %} record-actions{% endif %}" aria-label="Resources"><ul role="list">{{ primary_link }}{{ record_resources }}</ul></nav>{% endif %}

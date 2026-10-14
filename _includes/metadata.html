@@ -22,11 +22,6 @@
 {% if page.version %}<dt>Version</dt><dd>{{ page.version | escape }}</dd>{% endif %}
 {% if page.document_date %}<dt>Document date</dt><dd><time datetime="{{ page.document_date | escape }}">{% assign date_length = page.document_date | size %}{% if date_length == 7 %}{{ page.document_date | append: '-01' | date: '%B %Y' }}{% else %}{{ page.document_date | date: '%-d %B %Y' }}{% endif %}</time></dd>{% endif %}
 {% endcapture %}
-{% capture metadata_resources %}
-{% for key in site.data.viewer.url_fields %}{% assign metadata_url = page[key] %}{% if metadata_url %}<li><a href="{% include href.html url=metadata_url %}">{{ site.data.viewer.resource_labels[key] | escape }}</a></li>{% endif %}{% endfor %}
-{% for repository in page.repository_urls %}<li><a href="{% include href.html url=repository %}">Repository{% if page.repository_urls.size > 1 %} {{ forloop.index }}{% endif %}</a></li>{% endfor %}
-{% for social in page.social %}{% assign social_key = social[0] %}{% assign social_url = social[1] %}{% if social_url %}<li><a href="{% include href.html url=social_url %}">{{ site.data.viewer.resource_labels[social_key] | escape }}</a></li>{% endif %}{% endfor %}
-{% endcapture %}
-{% assign populated_rows = metadata_rows | strip %}{% assign populated_resources = metadata_resources | strip %}
-{% capture resource_navigation %}{% if populated_resources != '' %}<nav class="resource-links" aria-label="Resources"><ul role="list">{{ populated_resources }}</ul></nav>{% endif %}{% endcapture %}
+{% assign populated_rows = metadata_rows | strip %}
+{% capture resource_navigation %}{% unless include.facts_only %}{% include record-resources.html %}{% endunless %}{% endcapture %}
 {% if populated_rows != '' %}<section class="metadata" aria-labelledby="record-details"><h2 id="record-details">At a glance</h2><dl>{{ populated_rows }}</dl>{{ resource_navigation }}</section>{% else %}{{ resource_navigation }}{% endif %}
