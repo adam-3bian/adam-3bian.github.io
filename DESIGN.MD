@@ -53,6 +53,9 @@ readability. Keep overview
 and general directory routes alongside the detailed destinations.
 Collection active sections use `_data/viewer.yml` associations, with route and
 registered-navigation fallbacks for ordinary pages.
+Curated directories under a section use that section's route first: Speakers
+belongs to News & Events, while Certified Products belongs to Adopt. General
+directories and individual records retain their collection association.
 Native `details` and `summary` keep links available without JavaScript; the small
 navigation script adds keyboard behaviour and the mobile toggle. Mobile menus
 show grouped destinations directly within each primary disclosure, without

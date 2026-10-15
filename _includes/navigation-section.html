@@ -1,8 +1,14 @@
 {%- assign association_url = site.data.viewer.aliases[page.url] | default: page.url -%}
-{%- assign association_kind = page.collection | default: page.listing.collection -%}
-{%- if association_kind == nil -%}{%- case page.layout -%}{%- when 'people', 'news', 'events' -%}{%- assign association_kind = page.layout -%}{%- endcase -%}{%- endif -%}
+{%- comment -%}Records follow their conceptual collection. Ordinary section
+pages, including curated directories, follow their configured section route.{%- endcomment -%}
+{%- assign association_kind = page.collection -%}
 {%- assign association_section = site.data.viewer.navigation_sections[association_kind] | default: '' -%}
 {%- if association_section == '' -%}{%- for section in site.navigation.header -%}{%- assign section_prefix = association_url | slice: 0, section.url.size -%}{%- if section_prefix == section.url -%}{%- assign association_section = section.url -%}{%- break -%}{%- endif -%}{%- endfor -%}{%- endif -%}
+{%- if association_section == '' -%}
+  {%- assign association_kind = page.listing.collection -%}
+  {%- if association_kind == nil -%}{%- case page.layout -%}{%- when 'people', 'news', 'events' -%}{%- assign association_kind = page.layout -%}{%- endcase -%}{%- endif -%}
+  {%- assign association_section = site.data.viewer.navigation_sections[association_kind] | default: '' -%}
+{%- endif -%}
 {%- if association_section == '' -%}
   {%- assign association_entry = site.data.page-map | where: 'url', association_url | first -%}
   {%- assign association_path = association_entry.navigation | where: 'location', 'header' | first -%}

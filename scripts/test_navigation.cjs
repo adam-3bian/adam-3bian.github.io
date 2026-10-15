@@ -69,7 +69,7 @@ async function assertAccessible(page) {
     report.activeSectionChecks = 0;
     for (const width of [1440, 375]) {
       await coverage.setViewportSize({ width, height: 900 });
-      for (const [route, section] of [['/hardware/morello/', '/build/'], ['/guides/install-a-toolchain/', '/build/'], ['/software/cheribsd/', '/build/'], ['/case-studies/morello/', '/adopt/'], ['/people/adam-finney/', '/alliance/'], ['/organisations/codasip/', '/alliance/'], ['/academic-papers/cheri-concentrate-practical-compressed-capabilities/', '/discover/'], ['/news/ai-has-compressed-the-attack-timeline/', '/news-and-events/']]) {
+      for (const [route, section] of [['/hardware/morello/', '/build/'], ['/guides/install-a-toolchain/', '/build/'], ['/software/cheribsd/', '/build/'], ['/case-studies/morello/', '/adopt/'], ['/people/adam-finney/', '/alliance/'], ['/organisations/codasip/', '/alliance/'], ['/academic-papers/cheri-concentrate-practical-compressed-capabilities/', '/discover/'], ['/news/ai-has-compressed-the-attack-timeline/', '/news-and-events/'], ['/news-and-events/people-and-opportunities/speakers/', '/news-and-events/'], ['/adopt/assurance-and-adoption/cheri-enabled-products/', '/adopt/']]) {
         await coverage.goto(new URL(route.replace(/^\//, ''), base).href);
         assert.equal(await coverage.locator('.primary-menu > .current-section').count(), 1, 'One conceptual active section');
         const current = coverage.locator('.primary-menu:has(> .current-section) > .primary-menu-panel > .section-link');
