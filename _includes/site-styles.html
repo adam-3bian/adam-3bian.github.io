@@ -57,7 +57,8 @@ hr { border-color: var(--line); }
 .main-container > article > .record-header,
 .main-container > article > .metadata,
 .main-container > article > .relationships,
-.main-container > article > .listing {
+.main-container > article > .listing,
+.main-container > article > .onward {
   width: 100%;
   max-width: var(--page-width);
   margin-inline: auto;
@@ -235,7 +236,8 @@ hr { border-color: var(--line); }
 .index-intro h1 { max-width: 21ch; }
 .index-intro p { font-size: 1rem; line-height: 1.8; }
 .landing-page > :is(section, .index-navigation) { margin-block: 3rem; }
-.landing-page h2 { font-size: 1.5rem; }
+.landing-page h2 { margin-top: 0; font-size: 1.5rem; }
+.landing-page > .recent-activity { padding-bottom: 0; }
 .resource-paths { gap: 1.5rem 2.5rem; }
 .resource-paths li { border-color: var(--line); padding-top: 1rem; }
 .resource-paths h3 { font-size: 1.0625rem; line-height: 1.5; }
@@ -260,7 +262,7 @@ article[data-collection="pages"] .record-intro > .detail-introduction { grid-col
 .collection-detail .record-intro h1 { max-width: 36ch; font-size: clamp(2rem, 1.4rem + 1.8vw, 3.375rem); }
 .collection-detail .record-header:not(.has-image) .record-intro:has(.summary, .detail-introduction) { grid-template-columns: 1.1fr 1fr; gap: .75rem 4rem; }
 .collection-detail :is(.summary, .detail-introduction) { font-size: 1rem; line-height: 1.8; }
-.collection-detail .record-header .lead-image { border-radius: var(--radius); }
+.collection-detail .record-header .lead-image { border-radius: var(--radius); background: var(--image-background, transparent); }
 .record-actions { margin-top: .4rem; }
 .record-actions a { font-size: .875rem; }
 .collection-detail .metadata { display: grid; grid-template-columns: minmax(11rem, 1fr) minmax(0, 2fr); gap: 1rem 3rem; margin-bottom: 2.25rem; font-size: .9375rem; }
@@ -285,6 +287,8 @@ article[data-collection="pages"] .record-intro > .detail-introduction { grid-col
 .table-of-contents a { font-size: .875rem; }
 .relationships { border-color: var(--line); gap: 1.5rem 3rem; padding-top: 2rem; margin-top: 3rem; }
 .relationships > h2 { font-size: 1.5rem; }
+.relationship-group:only-of-type { grid-column: 1 / -1; }
+.relationship-group:only-of-type .link-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .relationship-group h3 { font-size: 1.0625rem; }
 .link-grid a { padding-block: .65rem; font-size: .9375rem; }
 .notice { background: #eef5f7; border-radius: var(--radius); }
@@ -397,7 +401,7 @@ article[data-collection="pages"] .record-intro > .detail-introduction { grid-col
   .landing-page > :is(section, .index-navigation) { margin-block: 2.5rem; }
   article[data-collection="pages"] .record-intro { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
   article[data-collection="pages"] .record-intro > .detail-introduction { grid-column: 1; }
-  .record-header h1 { font-size: clamp(1.875rem, 7.5vw, 2.625rem); }
+  .record-header h1, .collection-detail .record-intro h1 { font-size: clamp(1.625rem, 7.5vw, 2.25rem); }
   .collection-detail .record-header:not(.has-image) .record-intro:has(.summary, .detail-introduction) { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
   .collection-detail .metadata { grid-template-columns: minmax(0, 1fr); gap: .5rem; }
   .collection-detail .metadata dl { grid-template-columns: minmax(0, 1fr); gap: .25rem; }
@@ -405,6 +409,7 @@ article[data-collection="pages"] .record-intro > .detail-introduction { grid-col
   .article-content > h2 { margin-top: 2rem; }
   .article-content pre { padding: 1rem; }
   .relationships { gap: 1.25rem; }
+  .relationship-group:only-of-type .link-grid { grid-template-columns: minmax(0, 1fr); }
   .directory-list .card.has-image:not(.has-description) .card-text, .directory-list .has-image .card-text { display: contents; }
   .site-footer { padding-top: 2.5rem; }
   .site-footer .footer-brand { margin-bottom: 2rem; }

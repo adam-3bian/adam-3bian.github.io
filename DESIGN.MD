@@ -347,8 +347,12 @@ or protected content references were relocated.
 
 Standard containers align at 1280px on wide screens. Article media may extend
 to 1440px, while paragraphs, body headings and native contents retain one 46rem
-reading column. Header introductions, metadata and related resources return to
-the common frame. Tablet compositions reduce columns; mobile stacks text and
+reading column. Header introductions, metadata, related resources and onward
+navigation return to the common frame. A lone related-resource group uses two
+link columns on desktop and one on mobile. Contained record artwork uses a
+transparent frame unless an explicit artwork background is required. Mobile
+record titles scale down enough to retain complete technical words.
+Tablet compositions reduce columns; mobile stacks text and
 art, preserves complete titles, retains 44px controls and permits native table
 and code scrolling. Artwork keeps intrinsic dimensions and `object-fit: contain`.
 Reduced-motion preferences disable transitions, including immediate skip-link
