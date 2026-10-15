@@ -244,8 +244,8 @@ nav li + li, .cards > li + li, .image-gallery > li + li, .site-footer li + li { 
 .header-row { margin: 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; }
 .brand { display: inline-flex; align-items: center; text-decoration: none; flex-shrink: 0; }
 .brand img { display: block; width: 10.5rem; height: auto; }
-.skip-link { position: absolute; top: -5rem; left: 1rem; padding: .7rem; background: var(--ink); color: white; z-index: 20; }
-.skip-link:focus { top: 1rem; }
+.skip-link { position: fixed; top: -5rem; left: 1rem; padding: .7rem; background: var(--ink); color: white; z-index: 20; }
+.skip-link:focus { top: 1rem; outline: 3px solid var(--focus); outline-offset: 3px; }
 .skip-link:hover { color: var(--white); }
 
 .nav-panel {
@@ -761,5 +761,5 @@ article[data-collection] .article-content img.image-icon {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }

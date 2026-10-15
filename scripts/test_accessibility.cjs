@@ -42,7 +42,8 @@ const routes = ['/', '/build/', '/search/', '/people/', '/organisations/', '/eve
           report.accessibility++;
           await page.keyboard.press('Tab');
           assert.equal(await page.locator('.skip-link').evaluate(a => a === document.activeElement), true, 'Skip link is first keyboard stop');
-          assert.equal(await page.locator('.skip-link').evaluate(a => a.getBoundingClientRect().top >= 0 && parseFloat(getComputedStyle(a).outlineWidth) >= 3), true, 'Skip link visible with focus');
+          assert.equal(await page.locator('.skip-link').evaluate(a => getComputedStyle(a).transitionDuration), '0s', `${route}: reduced motion must not animate the skip link`);
+          assert.equal(await page.locator('.skip-link').evaluate(a => a.getBoundingClientRect().top >= 0 && parseFloat(getComputedStyle(a).outlineWidth) >= 3), true, `${route}: skip link visible with focus`);
           await page.keyboard.press('Enter');
           assert.equal(await page.locator('main').evaluate(main => main === document.activeElement), true, 'Skip link moves focus to main');
           report.skipLinks++;
