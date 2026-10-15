@@ -1,4 +1,4 @@
-// Long-form measure, native contents, and keyboard scrolling for static articles.
+// Full-width starter-kit content flow, native contents, and keyboard scrolling for static articles.
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -22,8 +22,8 @@ const routes = ['/adopt/assurance-and-adoption/about-cheri-enabled/', '/guides/i
         const errors = await page.evaluate(() => {
           const problems = [];
           for (const p of document.querySelectorAll('.article-content > p:not(:has(img))')) {
-            const maximum = parseFloat(getComputedStyle(p).maxWidth);
-            if (Number.isFinite(maximum) && p.getBoundingClientRect().width > maximum + 1) problems.push('Prose measure exceeded');
+            const available = p.parentElement.getBoundingClientRect().width;
+            if (Math.abs(p.getBoundingClientRect().width - available) > 1) problems.push('Prose is restricted inside the article frame');
           }
           for (const link of document.querySelectorAll('.table-of-contents a')) if (!document.getElementById(decodeURIComponent(link.hash.slice(1)))) problems.push('Contents target missing');
           for (const table of document.querySelectorAll('.article-content table')) if (!table.parentElement.matches('.table-scroll[tabindex="0"][role="region"]')) problems.push('Table lacks native scrolling region');
@@ -35,12 +35,12 @@ const routes = ['/adopt/assurance-and-adoption/about-cheri-enabled/', '/guides/i
             const main = document.querySelector('main').getBoundingClientRect();
             const article = document.querySelector('.article-content').getBoundingClientRect();
             const paragraphs = [...document.querySelectorAll('.article-content > p:not(:has(img))')].filter(p => p.getBoundingClientRect().width > 100);
-            return { main: main.width, article: article.width, paragraphs: paragraphs.map(p => ({width: p.getBoundingClientRect().width, max: parseFloat(getComputedStyle(p).maxWidth)})) };
+            return { main: main.width, article: article.width, paragraphs: paragraphs.map(p => p.getBoundingClientRect().width) };
           });
           assert(Math.abs(geometry.main - geometry.article) <= 1, 'Technical region uses the full frame');
           assert(geometry.main >= Math.min(width * .9, 1280) - 8, 'Shared frame expands with available space');
           assert(geometry.main <= 1280 + 1, 'Technical content shares the 1280px site frame');
-          assert(geometry.paragraphs.every(p => p.width <= p.max + 1), 'Wide media never expand prose');
+          assert(geometry.paragraphs.every(width => Math.abs(width - geometry.article) < 1), 'Body paragraphs use the available frame, including pages with wide media');
           if (route.includes('about-cheri-enabled')) {
             const alignment = await page.evaluate(() => {
               const box = selector => document.querySelector(selector).getBoundingClientRect();

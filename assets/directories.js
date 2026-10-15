@@ -8,12 +8,11 @@
     if (!form) continue;
     const count = listing.querySelector('.directory-count');
     const empty = listing.querySelector('.directory-empty');
-    const input = form.elements.q;
     const sort = form.elements.sort;
     const collection = listing.dataset.listing;
     let rows;
     try {
-      rows = [...listing.querySelectorAll('[data-directory-item]')].map((element, position) => ({ element, parent: element.parentElement, position, data: JSON.parse(element.dataset.directoryItem), text: normalise(element.textContent) }));
+      rows = [...listing.querySelectorAll('[data-directory-item]')].map((element, position) => ({ element, parent: element.parentElement, position, data: JSON.parse(element.dataset.directoryItem) }));
     } catch { continue; } // Keep the complete static list when enhancement fails.
     const total = rows.length;
     const facets = [];
@@ -68,16 +67,16 @@
     }
     function storeState() {
       const address = new URL(location.href);
-      for (const [key, value] of [['q', input.value.trim()], ['sort', sort.value === 'original' ? '' : sort.value], ...facets.map(facet => [facet.key, facet.select.value])]) {
+      address.searchParams.delete('q');
+      for (const [key, value] of [['sort', sort.value === 'original' ? '' : sort.value], ...facets.map(facet => [facet.key, facet.select.value])]) {
         if (value) address.searchParams.set(key, value); else address.searchParams.delete(key);
       }
       history.replaceState(null, '', address);
     }
     function update() {
-      const terms = normalise(input.value.trim()).split(/\s+/u).filter(Boolean);
       let shown = 0;
       for (const row of rows) {
-        row.element.hidden = !(terms.every(term => row.text.includes(term)) && facets.every(facet => !facet.select.value || facet.valuesFor(row.data).includes(facet.select.value)));
+        row.element.hidden = !facets.every(facet => !facet.select.value || facet.valuesFor(row.data).includes(facet.select.value));
         if (!row.element.hidden) shown++;
       }
       for (const parent of parents) for (const row of rows.filter(row => row.parent === parent).sort(compare)) parent.append(row.element);
@@ -85,7 +84,7 @@
         const matches = [...group.querySelectorAll('[data-directory-item]')].some(element => !element.hidden);
         const message = group.querySelector(':scope > p');
         if (message) message.hidden = matches;
-        group.hidden = !matches && (terms.length > 0 || facets.some(facet => facet.select.value));
+        group.hidden = !matches && facets.some(facet => facet.select.value);
       }
       for (const link of listing.querySelectorAll('.alphabet-navigation a')) {
         const target = rows.filter(row => !row.element.hidden && normalise(row.data.title).startsWith(normalise(link.dataset.letter))).sort(compare)[0];
@@ -98,14 +97,11 @@
       storeState();
     }
     const state = new URLSearchParams(location.search);
-    input.value = (state.get('q') || '').slice(0, input.maxLength);
     if ([...sort.options].some(option => option.value === state.get('sort'))) sort.value = state.get('sort');
     for (const facet of facets) if ([...facet.select.options].some(option => option.value === state.get(facet.key))) facet.select.value = state.get(facet.key);
-    let timer;
-    input.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(update, 250); });
     form.addEventListener('change', update);
-    form.addEventListener('submit', event => { event.preventDefault(); clearTimeout(timer); update(); });
-    form.addEventListener('reset', event => { event.preventDefault(); clearTimeout(timer); input.value = ''; sort.value = 'original'; facets.forEach(facet => { facet.select.value = ''; }); update(); input.focus(); });
+    form.addEventListener('submit', event => { event.preventDefault(); update(); });
+    form.addEventListener('reset', event => { event.preventDefault(); sort.value = 'original'; facets.forEach(facet => { facet.select.value = ''; }); update(); sort.focus(); });
     form.hidden = false;
     form.querySelector('fieldset').disabled = false;
     form.removeAttribute('aria-busy');

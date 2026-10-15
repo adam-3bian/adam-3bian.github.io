@@ -98,7 +98,7 @@ const events = source.records.filter(r => r.collection === 'events' && !r.altern
       report.nativeNavigation++;
     }
     await plain.goto(url('/build/'));
-    const sequence = plain.locator('.learning-path h3 a');
+    const sequence = plain.locator('.learning-path > li > a.card');
     const expectedSteps = ['/guides/choose-a-platform/', '/guides/run-cheri-in-simulation/', '/guides/install-a-toolchain/', '/guides/build-your-first-application/', '/guides/port-existing-software/', '/guides/technical-faq/'];
     assert.deepEqual(await sequence.evaluateAll(links => links.map(a => a.href)), expectedSteps.map(url));
     for (const step of expectedSteps) {

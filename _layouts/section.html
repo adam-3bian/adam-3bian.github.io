@@ -44,25 +44,26 @@ layout: default
             <p>{{ section_data.learning_note | escape }}</p>
           {% endif %}
           <{% if route_section == 'learning' %}ol{% else %}ul{% endif %} class="resource-paths{% if route_section == 'learning' %} learning-path{% endif %}"{% unless route_section == 'learning' %} role="list"{% endunless %}>
-          {% for route in resource_routes %}
-            {% assign resource = route_records | where: 'url', route | first %}
-            {% if resource %}
-              <li>
-                <h3><a href="{{ resource.url | relative_url }}">{{ resource.title | escape }}</a></h3>
-                {% unless route_section == 'learning' %}
-                  {% if resource.summary %}
-                    <p>{{ resource.summary | escape }}</p>
-                  {% else %}
-                    {% assign resource_paragraphs = resource.content | markdownify | split: '<p>' %}
-                    {% if resource_paragraphs.size > 1 %}
-                      <p>{{ resource_paragraphs[1] | split: '</p>' | first | strip_html | normalize_whitespace | escape }}
-                    </p>
-                  {% endif %}
-                {% endif %}
-              {% endunless %}
-            </li>
-          {% endif %}
-        {% endfor %}
+            {% for route in resource_routes %}
+              {% assign resource = route_records | where: 'url', route | first %}
+              {% if resource %}
+                <li>
+                  <a class="card" href="{{ resource.url | relative_url }}">
+                    <h3>{{ resource.title | escape }}</h3>
+                    {% unless route_section == 'learning' %}
+                      {% if resource.summary %}
+                        <p>{{ resource.summary | escape }}</p>
+                      {% else %}
+                        {% assign resource_paragraphs = resource.content | markdownify | split: '<p>' %}
+                        {% if resource_paragraphs.size > 1 %}
+                          <p>{{ resource_paragraphs[1] | split: '</p>' | first | strip_html | normalize_whitespace | escape }}</p>
+                        {% endif %}
+                      {% endif %}
+                    {% endunless %}
+                  </a>
+                </li>
+              {% endif %}
+            {% endfor %}
           </{% if route_section == 'learning' %}ol{% else %}ul{% endif %}>
       </section>
     {% endif %}

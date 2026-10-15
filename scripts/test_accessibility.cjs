@@ -74,14 +74,15 @@ const routes = ['/', '/build/', '/search/', '/people/', '/organisations/', '/eve
     await page.waitForURL(url('/hardware/morello/'));
     report.keyboardControls++;
     await page.goto(url('/people/'));
-    const filter = page.getByLabel('Find in this directory');
-    await filter.focus(); await filter.fill('no-match-491503');
-    await page.locator('.directory-empty').waitFor({ state: 'visible' });
+    const filter = page.getByLabel('Documented role');
+    await filter.focus(); await page.keyboard.press('s'); await page.keyboard.press('Enter');
+    await filter.selectOption('speaker');
     assert.equal(await filter.evaluate(input => input === document.activeElement), true, 'Filter retains focus');
-    const reset = page.getByRole('button', { name: 'Reset', exact: true });
+    assert.equal(await filter.inputValue(), 'speaker');
+    const reset = page.getByRole('button', {name: 'Reset', exact: true});
     await reset.focus(); await page.keyboard.press('Enter');
     assert.equal(await filter.inputValue(), '');
-    assert.equal(await filter.evaluate(input => input === document.activeElement), true, 'Reset returns focus to query');
+    assert.equal(await page.getByLabel('Sort by').evaluate(input => input === document.activeElement), true, 'Reset returns focus to the first control');
     report.keyboardControls++;
     const plain = await browser.newPage({ javaScriptEnabled: false, viewport: { width: 320, height: 1000 } });
     for (const route of routes) {

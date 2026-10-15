@@ -62,7 +62,7 @@
     <link rel="icon" href="{{ '/assets/brand/favicon.ico' | relative_url }}">
     <link rel="preload" href="{{ '/assets/fonts/poppins-latin-400-normal.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="{{ '/assets/fonts/poppins-latin-600-normal.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="{{ '/assets/viewer.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
     <script src="{{ '/assets/navigation.js' | relative_url }}" defer></script>
     <script src="{{ '/assets/viewer.js' | relative_url }}" defer></script>
     {% if page.listing %}
@@ -78,7 +78,20 @@
   <body data-theme="{% if page.url == '/' %}dark{% else %}light{% endif %}">
     <a class="skip-link" href="#main">Skip to content</a>
     {% include header.html %}
-    <main id="main" tabindex="-1" class="container main-container{% unless page.layout == 'index' or page.layout == 'section' or page.listing %} width-technical{% endunless %}">
+    <main id="main" tabindex="-1" class="container main-container">
+    {% unless page.url == '/' or page.layout == 'redirect' %}
+      {% assign current_map = site.data.page-map | where: 'url', page.url | first %}
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol role="list">
+          <li><a href="{{ '/' | relative_url }}">Home</a></li>
+          {% if current_map.parent and current_map.parent != '/' %}
+            {% assign parent_map = site.data.page-map | where: 'url', current_map.parent | first %}
+            <li><a href="{{ current_map.parent | relative_url }}">{{ parent_map.title | default: current_map.parent | escape }}</a></li>
+          {% endif %}
+          <li aria-current="page">{{ page.title | escape }}</li>
+        </ol>
+      </nav>
+    {% endunless %}
     {{ content }}
     </main>
     {% include footer.html %}

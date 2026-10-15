@@ -123,7 +123,6 @@ layout: record
     <form class="directory-controls" aria-label="Filter this directory" aria-busy="true">
       <fieldset disabled>
         <legend class="visually-hidden">Directory controls</legend>
-        <p class="control-field"><label for="directory-query">Find in this directory</label><input id="directory-query" type="search" name="q" maxlength="200" autocomplete="off"></p>
         <p class="control-field"><label for="directory-sort">Sort by</label><select id="directory-sort" name="sort"><option value="original">Default order</option><option value="title">Title A–Z</option><option value="title-desc">Title Z–A</option>{% if list_collection == 'news' or list_collection == 'events' or list_collection == 'academic-papers' or list_collection == 'reports' or list_collection == 'policies' %}<option value="newest">Newest first</option><option value="oldest">Oldest first</option>{% endif %}</select></p>
         {% for facet in site.data.directory_facets[list_collection] %}
           {% unless facet.key == 'period' and list_status %}
@@ -133,7 +132,7 @@ layout: record
         <button type="reset">Reset</button>
       </fieldset>
     </form>
-    <p class="directory-empty notice" hidden>No entries match. Try fewer terms or reset the filters.</p>
+    <p class="directory-empty notice" hidden>No entries match. Choose different filters or reset the directory.</p>
     {% assign directory_groups = 'all' | split: '|' %}
     {% if list_collection == 'events' and list_status == nil %}
       {% assign directory_groups = 'upcoming|past' | split: '|' %}

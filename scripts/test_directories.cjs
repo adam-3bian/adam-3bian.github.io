@@ -15,7 +15,7 @@ const routes = ['/people/', '/organisations/', '/news/', '/events/', '/academic-
 (async () => {
   fs.mkdirSync(output, { recursive: true });
   const browser = await chromium.launch({ headless: true });
-  const report = { widths: [1440, 1024, 768, 640, 375, 320], layouts: 0, accessibility: 0, functionality: 0, noJavaScript: 0, defaultOrdering: 0, curatedOrdering: 0 };
+  const report = { widths: [1920, 1440, 1024, 768, 640, 375, 320], layouts: 0, accessibility: 0, functionality: 0, noJavaScript: 0, defaultOrdering: 0, curatedOrdering: 0 };
   try {
     const page = await browser.newPage();
     page.on('pageerror', error => { throw error; });
@@ -38,14 +38,29 @@ const routes = ['/people/', '/organisations/', '/news/', '/events/', '/academic-
         report.defaultOrdering++;
 
         assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, `${route} ${width}`);
-        const query = listing.getByLabel('Find in this directory');
-        await query.fill('cheri-directory-no-result-329432');
-        await query.press('Enter');
-        assert.equal(await listing.locator('.directory-empty').isVisible(), true);
-        assert.equal(await listing.locator('[data-directory-item]:visible').count(), 0);
-        await listing.getByRole('button', { name: 'Reset', exact: true }).click();
+        assert.equal(await listing.locator('input[type=search], input[name=q]').count(), 0, 'No embedded search on directory indexes');
+        const breadcrumbs = page.getByRole('navigation', {name: 'Breadcrumb', exact: true});
+        assert.equal(await breadcrumbs.count(), 1, 'One shared breadcrumb trail');
+        assert.equal(await breadcrumbs.locator('a').first().getAttribute('href'), new URL(base).pathname, 'Home respects the baseurl');
+        assert.equal((await breadcrumbs.locator('[aria-current=page]').innerText()).trim(), (await page.locator('main h1').innerText()).trim());
+        const geometry = await listing.evaluate(element => {
+          const grid = element.querySelector('.cards');
+          const card = grid.querySelector('.card');
+          return {width: grid.getBoundingClientRect().width, frame: document.querySelector('main').getBoundingClientRect().width, columns: getComputedStyle(grid).gridTemplateColumns.split(' ').length, card: card?.getBoundingClientRect().width};
+        });
+        assert(Math.abs(geometry.width - geometry.frame) < 1, 'Directory grid fills the shared frame');
+        assert.equal(geometry.columns, width <= 640 ? 1 : collection === 'academic-papers' || collection === 'reports' || width < 1024 ? 2 : 3, 'Responsive card columns');
+        const sort = listing.getByLabel('Sort by');
+        await sort.selectOption('title-desc');
+        const titles = await listing.locator('.card h3, .card h4').allTextContents();
+        // Event groups remain separate; every other directory sorts as one grid.
+        if (collection !== 'events') {
+          const names = titles.map(title => title.trim());
+          assert.deepEqual(names, [...names].sort(new Intl.Collator('en-GB', {sensitivity: 'base', numeric: true}).compare).reverse());
+        }
+        await listing.getByRole('button', {name: 'Reset', exact: true}).click();
         assert.equal(await listing.locator('[data-directory-item]:visible').count(), records.length);
-        assert.equal(await query.evaluate(input => document.activeElement === input), true);
+        assert.equal(await sort.evaluate(input => document.activeElement === input), true, 'Reset returns focus to sorting');
         assert.equal(await listing.locator('.directory-count').getAttribute('role'), 'status');
         if (width === 375 || width === 1440) {
           await page.addScriptTag({ path: process.env.AXE_PATH || require.resolve('axe-core/axe.min.js') });
@@ -56,7 +71,9 @@ const routes = ['/people/', '/organisations/', '/news/', '/events/', '/academic-
         report.layouts++; report.functionality += 2;
       }
     }
-    await page.goto(url('/people/'));
+    await page.goto(url('/people/?q=retired-directory-query'));
+    assert.equal(await page.locator('[data-directory-item]:visible').count(), ordering.collections.people.length, 'Retired query parameters cannot invisibly hide records');
+    assert.equal(new URL(page.url()).searchParams.has('q'), false);
     for (const [value, expected] of [['speaker', source.records.filter(record => record.collection === 'people' && !record.alternate && record.properties.is_speaker).map(record => record.url)], ['board', board.map(slug => `/people/${slug}/`)]]) {
       await page.getByLabel('Documented role').selectOption(value);
       assert.deepEqual(await page.locator('[data-directory-item]:visible .card').evaluateAll(cards => cards.map(card => card.dataset.recordUrl).sort()), expected.sort());
@@ -87,6 +104,16 @@ const routes = ['/people/', '/organisations/', '/news/', '/events/', '/academic-
     assert.equal(await page.locator('[data-event-period="upcoming"]').isVisible(), false);
     assert.equal(await page.locator('[data-event-period="past"]').isVisible(), true);
     report.functionality++;
+    const pastYear = source.records.find(record => record.collection === 'events' && eventPeriod(record) === 'past')?.properties.start_date?.slice(0, 4);
+    if (pastYear) {
+      await page.getByRole('button', {name: 'Reset', exact: true}).click();
+      await page.getByLabel('Source year').selectOption(pastYear);
+      await page.getByLabel('Event period').selectOption('upcoming');
+      assert.equal(await page.locator('.directory-empty').isVisible(), true, 'Empty facet combination has a clear state');
+      await page.getByRole('button', {name: 'Reset', exact: true}).click();
+      assert.equal(await page.locator('.directory-empty').isVisible(), false);
+      report.functionality++;
+    }
     const plain = await browser.newPage({ javaScriptEnabled: false, viewport: { width: 375, height: 900 } });
     for (const route of routes) {
       await plain.goto(url(route));
@@ -121,13 +148,13 @@ const routes = ['/people/', '/organisations/', '/news/', '/events/', '/academic-
     await delayed.locator('.listing .cards').waitFor({state: 'visible'});
     await delayed.evaluate(() => Promise.all([document.fonts.load('400 16px Poppins'), document.fonts.load('600 16px Poppins')]));
     assert.equal(await delayed.locator('.directory-controls fieldset').evaluate(fieldset => fieldset.disabled), true);
-    assert.equal(await delayed.getByLabel('Find in this directory').isDisabled(), true);
+    assert.equal(await delayed.getByLabel('Sort by').isDisabled(), true);
     const reserved = await delayed.locator('.listing .cards').boundingBox();
     release();
     await delayed.waitForLoadState('load');
     const enhanced = await delayed.locator('.listing .cards').boundingBox();
     assert(Math.abs(reserved.y - enhanced.y) < 1, 'Directory enhancement must not shift the list');
-    assert.equal(await delayed.getByLabel('Find in this directory').isDisabled(), false);
+    assert.equal(await delayed.getByLabel('Sort by').isDisabled(), false);
     await delayed.close();
     const unavailable = await browser.newPage({viewport: {width: 375, height: 900}});
     await unavailable.route('**/directories.js', route => route.abort());

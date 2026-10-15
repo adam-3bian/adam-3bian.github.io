@@ -64,15 +64,21 @@ const routes = [
       await page.setViewportSize({ width, height: 900 });
       for (const route of routes) {
         await page.goto(url(route));
+        if (route !== '/' && !route.includes('/checks/')) {
+          const trail = page.getByRole('navigation', {name: 'Breadcrumb', exact: true});
+          assert.equal(await trail.count(), 1, `Breadcrumb on ${route}`);
+          assert.equal((await trail.locator('[aria-current=page]').innerText()).trim(), (await page.locator('main h1').innerText()).trim());
+          assert.equal(await trail.locator('a').first().getAttribute('href'), new URL(base).pathname);
+        }
         const problems = await page.evaluate(() => {
           const errors = [];
           if (document.documentElement.scrollWidth > innerWidth + 1) errors.push('Horizontal overflow');
           const footer = document.querySelector('.site-footer');
           if (!footer || footer.querySelector('div, span, details, summary')) errors.push('Footer semantics or hidden links');
-          for (const link of document.querySelectorAll('.site-footer a, .link-grid a')) {
+          for (const link of document.querySelectorAll('.site-footer a, .link-grid a, .resource-paths > li > .card')) {
             const rect = link.getBoundingClientRect();
             if (rect.height < 44 || rect.left < 0 || rect.right > innerWidth) errors.push('Footer or related link touch target/containment');
-            if (link.closest('.link-grid')) {
+            if (link.closest('.link-grid') || link.matches('.resource-paths > li > .card')) {
               const row = link.parentElement.getBoundingClientRect();
               if (Math.abs(rect.width - row.width) > 1 || Math.abs(rect.height - row.height) > 1) errors.push('Related-link row is not fully clickable');
             }
@@ -88,7 +94,10 @@ const routes = [
             const background = getComputedStyle(logo).backgroundColor;
             if (logo.dataset.imageBackground === 'dark') {
               if (background !== getComputedStyle(document.documentElement).color) errors.push('Light logo artwork lacks its contrast frame');
-            } else if (background !== 'rgba(0, 0, 0, 0)') errors.push('Unnecessary logo display background');
+            } else {
+              const expected = logo.closest('.card, .record-header') ? 'rgb(255, 255, 255)' : 'rgba(0, 0, 0, 0)';
+              if (background !== expected) errors.push('Logo contrast surface does not match its card or header');
+            }
           }
           for (const nav of document.querySelectorAll('.resource-links')) {
             if (nav.tagName !== 'NAV' || !nav.querySelector('ul > li > a')) errors.push('Resource links lack navigation/list semantics');

@@ -74,7 +74,7 @@ async function loaded(page, route) {
               const portrait = image.classList.contains('image-portrait') || image.closest('.portrait-gallery');
               const framed = image.classList.contains('lead-image') || image.closest('.card, .record-gallery');
               const boundedBrand = image.matches('.image-logo, .image-icon') || image.closest('.logo-gallery, .member-strip');
-              const expected = portrait ? 1 : image.closest('.home-practice .card') ? 4 / 3 : framed ? 3 : boundedBrand ? null : image.naturalWidth / image.naturalHeight;
+              const expected = portrait ? 1 : image.closest('.home-practice .card') ? 4 / 3 : image.closest('.card') ? image.classList.contains('image-logo') ? 3 / 2 : 16 / 9 : framed ? 3 : boundedBrand ? null : image.naturalWidth / image.naturalHeight;
               if (image.closest('.member-strip') && (rect.height > 80 || image.closest('a').getBoundingClientRect().height < 44)) errors.push(`Member logo is not bounded or accessible: ${image.src}`);
               if (!framed && image.closest('.article-content') && !image.hasAttribute('width')) errors.push(`No intrinsic layout dimensions: ${image.src}`);
               if (expected && rect.width && Math.abs(rect.width / rect.height - expected) > .02) errors.push(`Incorrect image ratio (${expected}:1): ${image.src}`);
@@ -99,9 +99,9 @@ async function loaded(page, route) {
               if (aligned) {
                 const style = getComputedStyle(aligned);
                 const alignedRect = aligned.getBoundingClientRect();
-                const expected = window.innerWidth > 960 ? .42 : 1;
+                const expected = window.innerWidth > 768 ? Math.min(bounds.width * .4, 28 * parseFloat(getComputedStyle(root).fontSize)) / bounds.width : 1;
                 if (Math.abs(alignedRect.width / bounds.width - expected) > .01) errors.push('Incorrect aligned image width');
-                if (style.float !== (window.innerWidth > 960 ? aligned.classList.contains('image-left') ? 'left' : 'right' : 'none')) errors.push('Incorrect responsive float');
+                if (style.float !== (window.innerWidth > 768 ? aligned.classList.contains('image-left') ? 'left' : 'right' : 'none')) errors.push('Incorrect responsive float');
                 if (style.float !== 'none') {
                   floats.push({ element: aligned, rect: alignedRect });
                   // Check a real text line, not merely the paragraph's box.

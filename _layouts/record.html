@@ -2,25 +2,6 @@
 layout: default
 ---
 {% assign current_kind = page.collection | default: 'pages' %}
-{% assign current_map = site.data.page-map | where: 'url', page.url | first %}
-{% if current_map %}
-  <nav class="breadcrumb" aria-label="Breadcrumb">
-    <ol role="list">
-      <li>
-        <a href="{{ '/' | relative_url }}">Home</a>
-      </li>
-      {% if current_map.parent and current_map.parent != '/' %}
-        {% assign parent_map = site.data.page-map | where: 'url', current_map.parent | first %}
-        <li>
-          <a href="{{ current_map.parent | relative_url }}">{{ parent_map.title | default: current_map.parent | escape }}</a>
-        </li>
-      {% endif %}
-      <li aria-current="page">
-      {{ page.title | escape }}
-      </li>
-    </ol>
-  </nav>
-{% endif %}
 {% assign reader_content = content | strip %}
 {% assign heading_prefix = reader_content | slice: 0, 3 %}
 {% if heading_prefix == '<h1' or heading_prefix == '<h2' or heading_prefix == '<h3' or heading_prefix == '<h4' or heading_prefix == '<h5' or heading_prefix == '<h6' %}

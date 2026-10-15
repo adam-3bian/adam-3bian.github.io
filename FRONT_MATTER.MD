@@ -29,7 +29,7 @@ create a duplicate `_white-papers` bibliography. Academic citations belong in
 `_academic-papers`; adoption stories belong in `_case-studies`.
 
 All collections share the image convention below. Complete examples for every
-collection appear later and are validated against their schema. The shared visual rules live in `assets/viewer.css`.
+collection appear later and are validated against their schema. The shared visual rules live in `assets/site.css`.
 
 ## Required keys and optional values
 
