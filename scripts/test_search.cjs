@@ -33,6 +33,11 @@ const output = path.resolve(process.env.REPORT_ROOT || 'reports', 'search-tests'
     for (const width of report.widths) {
       await page.setViewportSize({ width, height: 900 });
       await page.goto(url('/search/'));
+      const entry = page.locator('.site-header .search-link');
+      assert.equal(await entry.innerText(), 'Search');
+      assert.equal(await entry.locator('svg[aria-hidden="true"]').count(), 1, 'Search has a visible decorative magnifier and a text name');
+      assert.equal(await entry.evaluate(a => a.getBoundingClientRect().height >= 44 && a.getBoundingClientRect().width >= 44), true, 'Header search touch target');
+      await page.screenshot({ path: path.join(output, `search-empty-${width}.png`), fullPage: true });
       await page.locator('#site-search fieldset').evaluate(field => { if (field.disabled) throw new Error('Search controls disabled'); });
       const before = requests.filter(address => address.includes('/assets/search-index.json')).length;
       await page.getByLabel('Search terms').fill('MoReLLo');

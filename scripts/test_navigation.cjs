@@ -141,6 +141,11 @@ async function assertAccessible(page) {
         assert.equal(await page.locator('.primary-menu[open]').count(), 1, 'More than one primary menu is open');
         const panel = menu.locator('.primary-menu-panel');
         await panel.waitFor({ state: 'visible' });
+        assert.deepEqual(await panel.locator('.menu-group-label').allTextContents(), primarySource[index].groups.map(group => group.title), 'Every category heading is preserved');
+        assert.equal(await panel.locator('.menu-group-label').evaluateAll(headings => headings.every(heading => {
+          const style = getComputedStyle(heading);
+          return heading.getClientRects().length > 0 && style.visibility === 'visible' && parseFloat(style.fontSize) >= 16 && Number(style.fontWeight) >= 600;
+        })), true, 'Category headings remain visible and prominent at every viewport');
         if (desktop) {
           assert.equal(await page.locator('main').evaluate(element => element.getBoundingClientRect().top), mainTop, 'Desktop menu moved article content');
           const groups = panel.locator('.menu-groups');
@@ -157,9 +162,9 @@ async function assertAccessible(page) {
         }
         await assertContained(page, desktop);
         report.panelsChecked++;
-        if (index === 2) {
+        if (index === 2 || index === 3) {
           await page.evaluate(() => scrollTo(0, 0));
-          await page.screenshot({ path: path.join(reportDir, `build-menu-${width}.png`) });
+          await page.screenshot({ path: path.join(reportDir, `${index === 2 ? 'build' : 'alliance'}-menu-${width}.png`) });
           await assertAccessible(page);
         }
         await menu.locator(':scope > summary').click();

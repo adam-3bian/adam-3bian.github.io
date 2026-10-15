@@ -6,7 +6,7 @@ const { chromium } = require('playwright');
 const base = process.env.SITE_URL || 'http://127.0.0.1:4000/';
 const url = route => new URL(route.replace(/^\//, ''), base).href;
 const output = path.resolve(process.env.REPORT_ROOT || 'reports', 'reading-tests');
-const routes = ['/guides/install-a-toolchain/', '/guides/choose-a-platform/', '/build/technology/capabilities/', '/build/technology/cheri-and-rust-technical/', '/case-studies/morello/', '/case-studies/cheriot/', '/reference/linux-roadmap/print.html', '/reference/CHERI-seL4-Exercises/print.html'];
+const routes = ['/adopt/assurance-and-adoption/about-cheri-enabled/', '/guides/install-a-toolchain/', '/guides/choose-a-platform/', '/build/technology/capabilities/', '/build/technology/cheri-and-rust-technical/', '/case-studies/morello/', '/case-studies/cheriot/', '/reference/linux-roadmap/print.html', '/reference/CHERI-seL4-Exercises/print.html'];
 (async () => {
   fs.mkdirSync(output, { recursive: true });
   const browser = await chromium.launch({ headless: true });
@@ -38,8 +38,19 @@ const routes = ['/guides/install-a-toolchain/', '/guides/choose-a-platform/', '/
             return { main: main.width, article: article.width, paragraphs: paragraphs.map(p => ({width: p.getBoundingClientRect().width, max: parseFloat(getComputedStyle(p).maxWidth)})) };
           });
           assert(Math.abs(geometry.main - geometry.article) <= 1, 'Technical region uses the full frame');
-          assert(geometry.main >= Math.min(width * .9, 1440) - 8, 'Shared frame expands with available space');
+          assert(geometry.main >= Math.min(width * .9, 1280) - 8, 'Shared frame expands with available space');
+          assert(geometry.main <= 1280 + 1, 'Technical content shares the 1280px site frame');
           assert(geometry.paragraphs.every(p => p.width <= p.max + 1), 'Wide media never expand prose');
+          if (route.includes('about-cheri-enabled')) {
+            const alignment = await page.evaluate(() => {
+              const box = selector => document.querySelector(selector).getBoundingClientRect();
+              return {title: box('.record-intro h1').toJSON(), summary: box('.record-intro .summary').toJSON(), body: box('.article-content > p').toJSON(), main: box('main').toJSON()};
+            });
+            assert(Math.abs(alignment.title.left - alignment.body.left) < 1, 'Title and body share an editorial edge');
+            assert(Math.abs(alignment.summary.left - alignment.title.left) < 1, 'Summary stays with its title');
+            assert(alignment.summary.top >= alignment.title.bottom, 'Summary follows the title, not an unrelated column');
+            assert(Math.abs(alignment.main.left - alignment.body.left) < 1, 'Prose aligns with the shared site frame');
+          }
         }
 
         if (width === 375) {
@@ -47,7 +58,7 @@ const routes = ['/guides/install-a-toolchain/', '/guides/choose-a-platform/', '/
           const issues = await page.evaluate(async () => (await axe.run('main', { runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa'] } })).violations.map(v => ({ id: v.id, nodes: v.nodes.map(n => n.target) })));
           assert.deepEqual(issues, [], `${route} accessibility`); report.accessibility++;
         }
-        if (['/guides/install-a-toolchain/', '/case-studies/morello/'].includes(route) && [1440, 375].includes(width)) await page.screenshot({ path: path.join(output, `${route.split('/').filter(Boolean).at(-1)}-${width}.png`), fullPage: true });
+        if (['/guides/install-a-toolchain/', '/case-studies/morello/', '/adopt/assurance-and-adoption/about-cheri-enabled/'].includes(route) && [1440, 375].includes(width)) await page.screenshot({ path: path.join(output, `${route.split('/').filter(Boolean).at(-1)}-${width}.png`), fullPage: true });
         report.layouts++;
       }
     }
