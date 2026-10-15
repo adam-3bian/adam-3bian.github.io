@@ -1,8 +1,0 @@
-{%- assign public_records = '' | split: '' -%}{%- assign public_urls = '' | split: '' -%}
-{%- assign public_candidates = site.pages | concat: site.documents | sort: 'url' -%}
-{%- for candidate in public_candidates -%}
-  {%- assign public_entry = site.data.page-map | where: 'url', candidate.url | first -%}
-  {%- if public_entry -%}{%- unless candidate.alternate or candidate.layout == 'redirect' or candidate.published == false or site.data.viewer.aliases[candidate.url] or candidate.url == '/checks/' or site.data.viewer.discovery_exclusions contains candidate.url -%}
-    {%- unless public_urls contains candidate.url -%}{%- assign public_records = public_records | push: candidate -%}{%- assign public_urls = public_urls | push: candidate.url -%}{%- endunless -%}
-  {%- endunless -%}{%- endif -%}
-{%- endfor -%}

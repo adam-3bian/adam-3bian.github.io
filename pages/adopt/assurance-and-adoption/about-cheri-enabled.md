@@ -18,6 +18,11 @@ related:
   software: []
   guides: []
   policies: []
+navigation:
+  header:
+    category: Adopt
+    subcategory: Assurance & Adoption
+    order: 2
 ---
 
 # The CHERI Enabled Programme

@@ -13,6 +13,12 @@ related:
   - sonata
   software:
   - cheribsd
+navigation:
+  header:
+    category: Build
+    subcategory: Resources
+    parent: development-platforms
+    order: 3
 ---
 
 # FPGA Platforms

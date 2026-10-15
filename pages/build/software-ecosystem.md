@@ -22,6 +22,12 @@ related:
   guides:
   - choose-a-platform
   policies: []
+navigation:
+  header:
+    category: Build
+    subcategory: Resources
+    order: 3
+    heading: software-ecosystem
 ---
 
 # Software Ecosystem

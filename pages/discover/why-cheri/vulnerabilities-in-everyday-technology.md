@@ -19,6 +19,11 @@ related:
   software: []
   guides: []
   policies: []
+navigation:
+  header:
+    category: Discover CHERI
+    subcategory: Why CHERI
+    order: 2
 ---
 
 # Vulnerabilities in Everyday Technology

@@ -5,6 +5,11 @@ author: null
 version: '1.01'
 document_date: '2024-08'
 document_url: https://cheri-alliance.org/legal-ip-policy/
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Legal & Policies
+    order: 3
 ---
 
 # Intellectual Property Policy

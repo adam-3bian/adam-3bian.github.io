@@ -2,6 +2,14 @@
 title: Privacy
 image_url: /assets/policies/privacy/placeholder.svg
 author: null
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Legal & Policies
+    order: 6
+  footer:
+    category: Policies
+    order: 3
 ---
 
 # Privacy

@@ -2,6 +2,7 @@
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
+const { createHash } = require('node:crypto');
 const { chromium } = require('playwright');
 
 const base = process.env.SITE_URL || 'http://127.0.0.1:4000/';
@@ -12,9 +13,19 @@ const report = { widths, panelsChecked: 0, accessibilityChecks: 0 };
 const audit = JSON.parse(fs.readFileSync('reports/preflight.json', 'utf8'));
 const indexes = JSON.parse(fs.readFileSync('reports/index-navigation.json', 'utf8'));
 const primarySource = JSON.parse(fs.readFileSync('_data/primary-navigation.json', 'utf8'));
+const footerSource = JSON.parse(fs.readFileSync('_data/footer_navigation.json', 'utf8'));
+const navigationBaseline = JSON.parse(fs.readFileSync('scripts/fixtures/navigation-baseline.json', 'utf8'));
+const stableNavigation = value => Array.isArray(value) ? value.map(stableNavigation) : value && typeof value === 'object' ? Object.fromEntries(Object.keys(value).sort().map(key => [key, stableNavigation(value[key])])) : value;
+const navigationDigest = value => createHash('sha256').update(JSON.stringify(stableNavigation(value))).digest('hex');
+assert.equal(navigationDigest(primarySource), navigationBaseline.header_sha256, 'Front-matter migration must preserve every header label, route, column, group and position');
+assert.equal(navigationDigest(footerSource), navigationBaseline.footer_sha256, 'Front-matter migration must preserve every footer group, label, route and position');
+assert.deepEqual(footerSource, JSON.parse(fs.readFileSync('reports/footer-navigation.json', 'utf8')), 'Rendered footer and verification report share generated navigation');
+report.navigationBaseline = navigationBaseline.commit;
 const flatten = nodes => nodes.flatMap(node => [...(node.url ? [node.url] : []), ...flatten(node.groups || node.links || [])]);
 const expectedPrimaryRoutes = flatten(primarySource);
 const expectedMenuLinks = expectedPrimaryRoutes.length;
+assert.equal(expectedMenuLinks, navigationBaseline.header_link_occurrences);
+assert.equal(footerSource.groups.flatMap(group => group.links).length, navigationBaseline.footer_link_occurrences);
 const buildSource = primarySource.find(section => section.url === '/build/');
 assert.deepEqual(buildSource.groups.map(group => group.title), ['Build', 'Technology', 'Resources']);
 assert.deepEqual(buildSource.groups[0].links[0].links.map(link => link.title), ['Building Secure Software', 'Choose a Platform', 'Run CHERI in Simulation', 'Install a Toolchain', 'Build Your First Application', 'Port Existing Software', 'Build Compartments']);

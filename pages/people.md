@@ -6,6 +6,10 @@ listing:
   collection: null
   status: null
   role: null
+navigation:
+  footer:
+    category: CHERI Alliance
+    order: 5
 ---
 
 # People

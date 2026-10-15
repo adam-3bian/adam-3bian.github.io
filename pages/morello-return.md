@@ -18,6 +18,12 @@ related:
   software: []
   guides: []
   policies: []
+navigation:
+  header:
+    category: Build
+    subcategory: Resources
+    parent: development-platforms
+    order: 6
 ---
 
 # Return an unused Morello Board

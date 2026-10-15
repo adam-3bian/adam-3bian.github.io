@@ -19,6 +19,13 @@ related:
   software: []
   guides: []
   policies: []
+navigation:
+  header:
+    category: Build
+    subcategory: Technology
+    order: 1
+    heading: how-cheri-capabilities-work
+    label: How CHERI Capabilities Work
 ---
 
 # Capabilities

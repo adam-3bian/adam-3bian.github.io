@@ -13,6 +13,13 @@ related:
   - cheri-linux
   - cheribsd
   - llvm-and-clang
+navigation:
+  header:
+    category: Build
+    subcategory: Build
+    parent: software-developers
+    order: 4
+    label: Install a Toolchain
 ---
 
 # Install a CHERI Toolchain

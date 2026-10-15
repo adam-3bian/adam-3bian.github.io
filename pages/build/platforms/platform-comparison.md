@@ -20,6 +20,12 @@ related:
   guides:
   - choose-a-platform
   policies: []
+navigation:
+  header:
+    category: Build
+    subcategory: Resources
+    parent: development-platforms
+    order: 7
 ---
 
 # Platform Comparison

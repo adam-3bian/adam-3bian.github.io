@@ -20,6 +20,11 @@ related:
   software: []
   guides: []
   policies: []
+navigation:
+  header:
+    category: Discover CHERI
+    subcategory: Why CHERI
+    order: 5
 ---
 
 # CHERI and Rust

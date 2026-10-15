@@ -19,6 +19,11 @@ related:
   software: []
   guides: []
   policies: []
+navigation:
+  header:
+    category: Discover CHERI
+    subcategory: Why CHERI
+    order: 3
 ---
 
 # Why Existing Defences Are Not Enough

@@ -22,6 +22,14 @@ related:
   software: []
   guides: []
   policies: []
+navigation:
+  header:
+    category: Adopt
+    subcategory: Assurance & Adoption
+    order: 1
+  footer:
+    category: Learn and Build
+    order: 6
 ---
 
 # Case Studies

@@ -6,6 +6,15 @@ listing:
   collection: academic-papers
   status: null
   role: null
+navigation:
+  header:
+    category: Discover CHERI
+    subcategory: Resources
+    order: 3
+    label: Academic Papers
+  footer:
+    category: Learn and Build
+    order: 4
 ---
 
 # Papers

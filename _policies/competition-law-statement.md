@@ -5,6 +5,11 @@ author: null
 version: '1.0'
 document_date: '2024-08'
 document_url: https://cheri-alliance.org/legal-competition/
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Legal & Policies
+    order: 2
 ---
 
 # Competition Law Statement

@@ -21,6 +21,11 @@ related:
   guides:
   - technical-faq
   policies: []
+navigation:
+  header:
+    category: Discover CHERI
+    subcategory: Understand CHERI
+    order: 5
 ---
 
 # FAQ

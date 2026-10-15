@@ -17,6 +17,12 @@ related:
   - debugging-tools
   - cheribsd
   - llvm-and-clang
+navigation:
+  header:
+    category: Build
+    subcategory: Resources
+    parent: development-platforms
+    order: 5
 ---
 
 # Morello

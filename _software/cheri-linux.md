@@ -14,6 +14,12 @@ related:
   software:
   - cheribsd
   - zephyr
+navigation:
+  header:
+    category: Build
+    subcategory: Resources
+    parent: software-ecosystem
+    order: 4
 ---
 
 # CHERI Linux

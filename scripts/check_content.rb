@@ -20,7 +20,6 @@ site.read
 schemas = site.data.fetch('schemas')
 map = site.data.fetch('page-map')
 settings = site.data.fetch('viewer')
-header_menu = site.config.fetch('navigation').fetch('header')
 index_pages = {}
 errors = []
 # Keep the complete examples in the authoring reference executable.
@@ -31,6 +30,97 @@ reference_examples = reference.scan(/<!-- schema: ([\w-]+) -->\s*```yaml\n(.*?)\
 end
 objects = site.pages.select { |p| p.path.start_with?('pages/') } + site.documents
 lookup = objects.to_h { |object| [object.url, object] }
+
+# The scaffold owns presentation groups; source front matter owns internal links.
+# This runs before index validation so landing pages and menus share one hierarchy.
+def generate_navigation(scaffold, objects, errors)
+  header = Marshal.load(Marshal.dump(scaffold.fetch('header')))
+  footer = Marshal.load(Marshal.dump(scaffold.fetch('footer')))
+  footer.each { |group| group['links'] ||= [] }
+  header.each do |section|
+    Array(section['subcategories']).each do |group|
+      Array(group['links']).each { |node| node['_order'] = node.delete('order') }
+    end
+  end
+
+  objects.each do |object|
+    navigation = object.data['navigation']
+    next if navigation.nil?
+    unless navigation.is_a?(Hash) && (navigation.keys - %w[header footer]).empty? && !navigation.empty?
+      errors << "Invalid navigation mapping: #{object.url}"
+      next
+    end
+    navigation.each do |part, membership|
+      unless membership.is_a?(Hash) && !(part == 'footer' && membership.key?('additional'))
+        errors << "Invalid navigation.#{part}: #{object.url}"
+        next
+      end
+      additional = membership['additional'] || []
+      unless additional.is_a?(Array)
+        errors << "Invalid additional navigation placements: #{object.url}"
+        next
+      end
+      ([membership.reject { |key, _| key == 'additional' }] + additional).each do |placement|
+        allowed = part == 'header' ? %w[category subcategory label order parent heading status] : %w[category label order]
+        unless placement.is_a?(Hash) && (placement.keys - allowed).empty? &&
+               placement['category'].is_a?(String) &&
+               (part != 'header' || placement['subcategory'].is_a?(String)) &&
+               %w[label parent heading].all? { |key| !placement.key?(key) || placement[key].is_a?(String) && !placement[key].strip.empty? } &&
+               (!placement.key?('order') || placement['order'].is_a?(Integer) && placement['order'].positive?) &&
+               (!placement.key?('status') || placement['status'] == 'TBD') &&
+               !(placement['parent'] && placement['heading']) &&
+               (part == 'header' || additional.empty?)
+          errors << "Invalid navigation.#{part} placement: #{object.url}"
+          next
+        end
+        category = (part == 'header' ? header : footer).find { |section| section['title'] == placement['category'] }
+        group = part == 'header' && category ? Array(category['subcategories']).find { |node| node['title'] == placement['subcategory'] } : category
+        unless group
+          errors << "Unknown navigation.#{part} category or subcategory: #{object.url}"
+          next
+        end
+        target = group
+        if placement['parent'] || placement['heading']
+          target = Array(group['links']).find { |node| node['key'] == (placement['parent'] || placement['heading']) }
+          unless target
+            errors << "Unknown nested navigation group: #{object.url}"
+            next
+          end
+        end
+        link = {'title' => placement['label'] || object.data['title'], 'url' => object.url,
+                '_order' => placement.fetch('order', Float::INFINITY)}
+        link['status'] = placement['status'] if placement['status']
+        if placement['heading']
+          if target['url']
+            errors << "Duplicate linked navigation heading: #{object.url}"
+            next
+          end
+          target.merge!(link)
+        else
+          target['links'] ||= []
+          target['links'] << link
+        end
+      end
+    end
+  end
+
+  clean = lambda do |nodes|
+    explicit_orders = Array(nodes).filter_map { |node| node['_order'] if node['_order'].is_a?(Integer) }
+    errors << 'Duplicate explicit navigation order in a group' if explicit_orders.uniq.length != explicit_orders.length
+    Array(nodes).sort_by { |node| [node['_order'] || Float::INFINITY, node['title'].to_s.downcase, node['url'].to_s] }.map do |node|
+      errors << "Missing linked navigation heading: #{node['key']}" if node['title'].to_s.strip.empty?
+      result = node.slice('title', 'status', 'url').merge(node.reject { |key, _| %w[key _order].include?(key) })
+      result['links'] = clean.call(node['links']) if node.key?('links')
+      result
+    end
+  end
+  header.each { |section| section.fetch('subcategories').each { |group| group['links'] = clean.call(group['links']) } }
+  footer.each { |group| group['links'] = clean.call(group['links']) }
+  {'header' => header, 'footer' => footer, 'social' => scaffold.fetch('social', [])}
+end
+
+config['navigation'] = generate_navigation(config.fetch('navigation'), objects, errors)
+header_menu = config.fetch('navigation').fetch('header')
 def navigation_links(nodes)
   Array(nodes).flat_map do |node|
     own = node['url'] ? [node.slice('title', 'url')] : []
@@ -381,7 +471,7 @@ records = objects.sort_by { |object| object.data['title'].to_s.downcase }.map do
   image = object.data['image_url'].to_s
   image_status = image.empty? ? 'none' : image.end_with?('/placeholder.svg') ? 'placeholder' : 'provided'
   schema = schemas.fetch(schema_kind(object, entry))
-  properties = (schema.keys + schemas.fetch('common', {}).keys + (schemas.dig('optional', schema_kind(object, entry)) || {}).keys).uniq.each_with_object({}) do |key, values|
+  properties = (schema.keys + schemas.fetch('common', {}).keys + (schemas.dig('optional', schema_kind(object, entry)) || {}).keys).uniq.reject { |key| key == 'navigation' }.each_with_object({}) do |key, values|
     values[key] = object.data[key] if schema.key?(key) || !object.data[key].nil?
   end
   properties['layout'] = object.data['layout']
@@ -430,7 +520,7 @@ File.write(File.join(root, 'reports/index-navigation.json'), JSON.pretty_generat
 public_urls = objects.reject { |object| object.data['alternate'] || object.data['published'] == false || object.data['layout'] == 'redirect' || settings.fetch('aliases', {}).key?(object.url) || settings.fetch('discovery_exclusions', []).include?(object.url) }.map(&:url).uniq.sort
 File.write(File.join(root, 'reports/public-records.json'), JSON.pretty_generate(public_urls) + "\n")
 primary_navigation = header_menu.map do |section|
-  # Configuration is authoritative, including supported nested link groups.
+  # The validated scaffold and front matter generate the full nested hierarchy.
   {'title' => section['title'], 'url' => section['url'], 'columns' => section.fetch('columns', 3), 'groups' => section.fetch('subcategories', [])}
 end
 File.write(File.join(root, '_data/primary-navigation.json'), JSON.pretty_generate(primary_navigation) + "\n")
@@ -443,6 +533,7 @@ footer_navigation = {
   'utilities' => Array(config.dig('navigation', 'social')).map { |link| link.slice('title', 'url') }
 }
 File.write(File.join(root, 'reports/footer-navigation.json'), JSON.pretty_generate(footer_navigation) + "\n")
+File.write(File.join(root, '_data/footer_navigation.json'), JSON.pretty_generate(footer_navigation) + "\n")
 File.write(File.join(root, 'reports/preflight.json'), JSON.pretty_generate(report) + "\n")
 File.write(File.join(root, 'reports/relationship-edges.json'), JSON.pretty_generate(edges) + "\n")
 puts JSON.generate({'records' => records.length, 'relationships' => edges.length, 'images' => images.length, 'errors' => errors.uniq})

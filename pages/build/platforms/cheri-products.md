@@ -21,6 +21,11 @@ related:
   guides:
   - downloads
   policies: []
+navigation:
+  header:
+    category: Build
+    subcategory: Resources
+    order: 4
 ---
 
 # CHERI Products

@@ -1,2 +1,0 @@
-{% assign reference_collection = site[include.collection] %}
-<ul class="reference-links" role="list">{% for reference_slug in include.ids %}{% assign reference_item = reference_collection | where: 'slug', reference_slug | first %}{% if reference_item %}<li><a href="{{ reference_item.url | relative_url }}">{{ reference_item.title | escape }}</a></li>{% else %}<li class="missing-reference" data-missing-reference="{{ reference_slug | escape }}">Unknown {{ include.collection | escape }} reference: {{ reference_slug | escape }}</li>{% endif %}{% endfor %}</ul>

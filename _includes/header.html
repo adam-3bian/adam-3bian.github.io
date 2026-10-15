@@ -7,18 +7,56 @@
     </p>
     <div id="header-navigation">
       <nav id="primary-navigation" class="source-nav" aria-label="Primary">
+        {% comment %}Records follow their collection; section routes take precedence for curated directories.{% endcomment %}
+        {% assign association_url = site.data.viewer.aliases[page.url] | default: page.url %}
+        {% assign association_kind = page.collection %}
+        {% assign current_section = site.data.viewer.navigation_sections[association_kind] | default: '' %}
+        {% if current_section == '' %}
+          {% for section in site.data.primary-navigation %}
+            {% assign section_prefix = association_url | slice: 0, section.url.size %}
+            {% if section_prefix == section.url %}{% assign current_section = section.url %}{% break %}{% endif %}
+          {% endfor %}
+        {% endif %}
+        {% if current_section == '' %}
+          {% assign association_kind = page.listing.collection %}
+          {% if association_kind == nil %}
+            {% case page.layout %}{% when 'people', 'news', 'events' %}{% assign association_kind = page.layout %}{% endcase %}
+          {% endif %}
+          {% assign current_section = site.data.viewer.navigation_sections[association_kind] | default: '' %}
+        {% endif %}
+        {% if current_section == '' %}
+          {% for section in site.data.primary-navigation %}
+            {% if section.title == page.navigation.header.category %}{% assign current_section = section.url %}{% break %}{% endif %}
+          {% endfor %}
+        {% endif %}
+        {% if current_section == '' %}
+          {% assign association_entry = site.data.page-map | where: 'url', association_url | first %}
+          {% assign association_path = association_entry.navigation | where: 'location', 'header' | first %}
+          {% assign association_label = association_path.path | first | replace: '&', 'and' %}
+          {% for section in site.data.primary-navigation %}
+            {% assign section_label = section.title | replace: '&', 'and' %}
+            {% if section_label == association_label %}{% assign current_section = section.url %}{% break %}{% endif %}
+          {% endfor %}
+        {% endif %}
         <ul class="primary-menu-list">
-          {% capture current_section %}{% include navigation-section.html %}{% endcapture %}{% assign current_section = current_section | strip %}
-          {% for node in site.data.primary-navigation %}{% assign menu_number = forloop.index %}
-          <li><details class="primary-menu{% if node.url == '/build/' %} build-menu{% endif %}" name="primary-menu">
-            <summary{% if current_section == node.url %} class="current-section"{% endif %} aria-controls="primary-panel-{{ menu_number }}">{{ node.title | escape }}</summary>
-            <section id="primary-panel-{{ menu_number }}" class="primary-menu-panel" aria-label="{{ node.title | escape }} links">
-              <a class="section-link" href="{{ node.url | relative_url }}"{% if current_section == node.url %} aria-current="{% if page.url == node.url %}page{% else %}true{% endif %}"{% endif %}>{{ node.title | escape }} overview</a>
-              <ul class="menu-groups columns-{{ node.columns }}">
-                {% for group in node.groups %}<li class="menu-group menu-group-{{ group.title | slugify }}{% if group.columns == 2 %} menu-group-wide{% endif %}"><h2 class="menu-group-label">{{ group.title | escape }}</h2>{% if group.url %}{% include navigation-link.html url=group.url title=group.title %}{% endif %}{% include menu-links.html items=group.links %}</li>{% endfor %}
-              </ul>
-            </section>
-          </details></li>
+          {% for node in site.data.primary-navigation %}
+          <li>
+            <details class="primary-menu{% if node.url == '/build/' %} build-menu{% endif %}" name="primary-menu">
+              <summary{% if current_section == node.url %} class="current-section"{% endif %} aria-controls="primary-panel-{{ forloop.index }}">{{ node.title | escape }}</summary>
+              <section id="primary-panel-{{ forloop.index }}" class="primary-menu-panel" aria-label="{{ node.title | escape }} links">
+                <a class="section-link" href="{{ node.url | relative_url }}"{% if current_section == node.url %} aria-current="{% if page.url == node.url %}page{% else %}true{% endif %}"{% endif %}>{{ node.title | escape }} overview</a>
+                <ul class="menu-groups columns-{{ node.columns }}">
+                  {% for group in node.groups %}
+                  <li class="menu-group menu-group-{{ group.title | slugify }}{% if group.columns == 2 %} menu-group-wide{% endif %}">
+                    <h2 class="menu-group-label">{{ group.title | escape }}</h2>
+                    {% if group.url %}<a href="{{ group.url | relative_url }}"{% if page.url == group.url %} aria-current="page"{% endif %}>{{ group.title | escape }}</a>{% endif %}
+                    {% include menu-links.html items=group.links %}
+                  </li>
+                  {% endfor %}
+                </ul>
+              </section>
+            </details>
+          </li>
           {% endfor %}
         </ul>
       </nav>

@@ -16,6 +16,13 @@ related:
   - cheribsd
   - zephyr
   - llvm-and-clang
+navigation:
+  header:
+    category: Build
+    subcategory: Build
+    parent: software-developers
+    order: 2
+    label: Choose a Platform
 ---
 
 # Choosing a CHERI Development Platform

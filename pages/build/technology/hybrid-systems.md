@@ -21,6 +21,12 @@ related:
   software: []
   guides: []
   policies: []
+navigation:
+  header:
+    category: Build
+    subcategory: Technology
+    parent: memory-protection-system-models
+    order: 4
 ---
 
 # Hybrid Systems

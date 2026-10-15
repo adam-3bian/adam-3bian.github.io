@@ -16,6 +16,11 @@ related:
   - cheri-linux
   - cheribsd
   - zephyr
+navigation:
+  header:
+    category: Build
+    subcategory: Resources
+    order: 1
 ---
 
 # Tutorials & Training

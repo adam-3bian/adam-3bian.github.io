@@ -17,6 +17,12 @@ related:
   software:
   - cheribsd
   - cheri-linux
+navigation:
+  header:
+    category: Build
+    subcategory: Resources
+    parent: software-ecosystem
+    order: 6
 ---
 
 # Debugging Tools

@@ -22,6 +22,11 @@ related:
   software: []
   guides: []
   policies: []
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Membership
+    order: 2
 ---
 
 # Membership Benefits & Options

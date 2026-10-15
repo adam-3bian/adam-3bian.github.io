@@ -20,6 +20,11 @@ related:
   software: []
   guides: []
   policies: []
+navigation:
+  header:
+    category: Discover CHERI
+    subcategory: Resources
+    order: 5
 ---
 
 # Glossary

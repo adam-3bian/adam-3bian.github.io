@@ -6,6 +6,11 @@ listing:
   collection: null
   status: null
   role: speaker
+navigation:
+  header:
+    category: News & Events
+    subcategory: People & Opportunities
+    order: 1
 ---
 
 # Speakers

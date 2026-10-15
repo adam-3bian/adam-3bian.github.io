@@ -13,6 +13,12 @@ related:
   software:
   - llvm-and-clang
   - cheribsd
+navigation:
+  header:
+    category: Build
+    subcategory: Resources
+    parent: software-ecosystem
+    order: 2
 ---
 
 # Rust

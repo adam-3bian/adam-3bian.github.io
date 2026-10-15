@@ -6,6 +6,11 @@ listing:
   collection: policies
   status: null
   role: null
+navigation:
+  footer:
+    category: Policies
+    order: 4
+    label: All Policies
 ---
 
 # Policies

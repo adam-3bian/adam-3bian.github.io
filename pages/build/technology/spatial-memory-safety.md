@@ -20,6 +20,12 @@ related:
   software: []
   guides: []
   policies: []
+navigation:
+  header:
+    category: Build
+    subcategory: Technology
+    parent: memory-protection-system-models
+    order: 1
 ---
 
 # Spatial Memory Safety

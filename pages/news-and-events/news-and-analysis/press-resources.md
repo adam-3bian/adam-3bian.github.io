@@ -19,6 +19,11 @@ related:
   software: []
   guides: []
   policies: []
+navigation:
+  header:
+    category: News & Events
+    subcategory: News & Analysis
+    order: 3
 ---
 
 # Press Resources

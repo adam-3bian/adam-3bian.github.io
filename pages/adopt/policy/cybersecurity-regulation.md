@@ -21,6 +21,12 @@ related:
   software: []
   guides: []
   policies: []
+navigation:
+  header:
+    category: Adopt
+    subcategory: Policy
+    order: 2
+    label: Cybersecurity Regulation
 ---
 
 # CHERI and Cybersecurity Regulation

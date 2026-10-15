@@ -6,6 +6,10 @@ listing:
   collection: organisations
   status: null
   role: null
+navigation:
+  footer:
+    category: CHERI Alliance
+    order: 6
 ---
 
 # Organisations

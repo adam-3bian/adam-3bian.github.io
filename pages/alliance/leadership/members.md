@@ -6,6 +6,19 @@ listing:
   collection: organisations
   status: null
   role: null
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Leadership
+    order: 1
+    additional:
+    - category: News & Events
+      subcategory: People & Opportunities
+      order: 2
+      label: Alliance Members
+  footer:
+    category: CHERI Alliance
+    order: 2
 ---
 
 # Members

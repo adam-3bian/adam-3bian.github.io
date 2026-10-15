@@ -19,6 +19,11 @@ related:
   software: []
   guides: []
   policies: []
+navigation:
+  header:
+    category: Adopt
+    subcategory: Business Case
+    order: 1
 ---
 
 # The Cost of Memory Unsafety

@@ -16,6 +16,12 @@ related:
   software:
   - llvm-and-clang
   - freebsd
+navigation:
+  header:
+    category: Build
+    subcategory: Resources
+    parent: software-ecosystem
+    order: 3
 ---
 
 # CheriBSD

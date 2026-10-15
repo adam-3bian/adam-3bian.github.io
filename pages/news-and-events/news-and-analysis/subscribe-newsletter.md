@@ -19,6 +19,16 @@ related:
   software: []
   guides: []
   policies: []
+navigation:
+  header:
+    category: News & Events
+    subcategory: News & Analysis
+    order: 2
+    label: Subscribe to our Newsletter
+  footer:
+    category: Updates
+    order: 4
+    label: Subscribe to our Newsletter
 ---
 
 # Subscribe to our quarterly newsletter

@@ -8,6 +8,13 @@ related:
   working-groups: []
   hardware: []
   software: []
+navigation:
+  header:
+    category: Build
+    subcategory: Build
+    parent: software-developers
+    order: 1
+    label: Building Secure Software
 ---
 
 # Building Secure Software with CHERI

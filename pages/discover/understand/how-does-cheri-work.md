@@ -20,6 +20,11 @@ related:
   software: []
   guides: []
   policies: []
+navigation:
+  header:
+    category: Discover CHERI
+    subcategory: Understand CHERI
+    order: 2
 ---
 
 # How does CHERI work?

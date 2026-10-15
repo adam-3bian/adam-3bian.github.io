@@ -13,6 +13,12 @@ related:
   - morello
   software:
   - cheribsd
+navigation:
+  header:
+    category: Build
+    subcategory: Resources
+    parent: software-ecosystem
+    order: 1
 ---
 
 # LLVM & Clang

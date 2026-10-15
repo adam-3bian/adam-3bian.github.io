@@ -20,6 +20,11 @@ related:
   software: []
   guides: []
   policies: []
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: About & Governance
+    order: 3
 ---
 
 # Collaboration Principles

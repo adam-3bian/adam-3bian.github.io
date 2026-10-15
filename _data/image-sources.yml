@@ -68,3 +68,17 @@
   source_url: basic-site/assets/images/brand/logo-blue.svg
   retrieved_date: '2026-10-14'
   sha256: e5e71b65000e93a27de232bd71946cb69bb382742e8b88aa5fd9bebc755f8d4d
+/assets/common/hexagons.svg:
+  source_page: User-supplied CHERI Alliance artwork
+  source_url: hexagons.svg (original attachment, identical to supplied starter kit)
+  retrieved_date: '2026-10-15'
+  sha256: ee91d36f26c1507a247a2f2a8427d606167be8b3b0cf1480aa0bc579173750c5
+  width: 1518
+  height: 1926
+/assets/common/hexagons-light.webp:
+  source_page: User-supplied CHERI Alliance starter kit
+  source_url: basic-site/assets/images/background/hexagons-light.webp
+  retrieved_date: '2026-10-15'
+  sha256: 0b45e4e7b8668a8924ee8931b2cb2f1fc6f8b100f6b4fcb5c0f1fc10a45fec7d
+  width: 1518
+  height: 1926

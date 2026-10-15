@@ -1,0 +1,96 @@
+---
+layout: default
+---
+{% if page.url == '/' %}
+  {{ content }}
+{% else %}
+  {% assign section_menu = site.data.primary-navigation | where: 'url', page.url | first %}
+  {% assign section_data = site.data.landing.sections[page.url] %}
+  {% assign introductory_routes = section_data.introductory_routes %}
+  {% if page.introductory_routes != nil %}
+    {% assign introductory_routes = page.introductory_routes %}
+  {% endif %}
+  {% assign featured_routes = section_data.featured_routes %}
+  {% if page.featured_routes != nil %}
+    {% assign featured_routes = page.featured_routes %}
+  {% endif %}
+  <article class="index-page landing-page" data-content-route="{{ page.url | escape }}" data-collection="pages">
+    <hgroup class="index-intro">
+      <h1>{{ page.title | escape }}</h1>
+      <p>{{ page.section_description | default: page.summary | escape }}</p>
+    </hgroup>
+    {% assign route_records = site.pages | concat: site.documents %}
+    {% assign route_sections = 'start|learning|featured' | split: '|' %}
+    {% for route_section in route_sections %}
+      {% assign resource_routes = introductory_routes %}
+      {% assign route_heading = 'Start here' %}
+      {% assign route_id = 'recommended-heading' %}
+      {% assign route_class = 'recommended-routes' %}
+      {% if route_section == 'learning' %}
+        {% assign resource_routes = section_data.learning_routes %}
+        {% assign route_heading = 'A developer starting sequence' %}
+        {% assign route_id = 'learning-heading' %}
+        {% assign route_class = 'learning-routes' %}
+      {% elsif route_section == 'featured' %}
+        {% assign resource_routes = featured_routes %}
+        {% assign route_heading = 'Explore further' %}
+        {% assign route_id = 'featured-heading' %}
+        {% assign route_class = 'featured-resources' %}
+      {% endif %}
+      {% if resource_routes.size > 0 %}
+        <section class="{{ route_class }}" aria-labelledby="{{ route_id }}">
+          <h2 id="{{ route_id }}">{{ route_heading }}</h2>
+          {% if route_section == 'learning' %}
+            <p>{{ section_data.learning_note | escape }}</p>
+          {% endif %}
+          <{% if route_section == 'learning' %}ol{% else %}ul{% endif %} class="resource-paths{% if route_section == 'learning' %} learning-path{% endif %}"{% unless route_section == 'learning' %} role="list"{% endunless %}>
+          {% for route in resource_routes %}
+            {% assign resource = route_records | where: 'url', route | first %}
+            {% if resource %}
+              <li>
+                <h3><a href="{{ resource.url | relative_url }}">{{ resource.title | escape }}</a></h3>
+                {% unless route_section == 'learning' %}
+                  {% if resource.summary %}
+                    <p>{{ resource.summary | escape }}</p>
+                  {% else %}
+                    {% assign resource_paragraphs = resource.content | markdownify | split: '<p>' %}
+                    {% if resource_paragraphs.size > 1 %}
+                      <p>{{ resource_paragraphs[1] | split: '</p>' | first | strip_html | normalize_whitespace | escape }}
+                    </p>
+                  {% endif %}
+                {% endif %}
+              {% endunless %}
+            </li>
+          {% endif %}
+        {% endfor %}
+          </{% if route_section == 'learning' %}ol{% else %}ul{% endif %}>
+      </section>
+    {% endif %}
+    {% if route_section == 'learning' and page.url == '/news-and-events/' %}
+      {% include featured-activity.html %}
+    {% endif %}
+  {% endfor %}
+  <nav class="index-navigation" aria-labelledby="browse-heading">
+    <h2 id="browse-heading">Browse all {{ section_menu.title | escape }} resources</h2>
+    <ul class="index-pages columns-{{ section_menu.columns | default: 3 }}" role="list">
+      {% for group in section_menu.groups %}
+        <li class="menu-group-{{ group.title | slugify }}{% if group.columns == 2 %} menu-group-wide{% endif %}">
+          <h3 class="index-group-label">{{ group.title | escape }}</h3>
+          {% if section_data.group_descriptions[group.title] %}
+            <p class="group-description">{{ section_data.group_descriptions[group.title] | escape }}</p>
+          {% endif %}
+          {% if group.url %}
+            <a href="{% assign link_url = group.url %}{% assign link_start = link_url | slice: 0, 1 %}{% assign link_pair = link_url | slice: 0, 2 %}{% if link_url contains ':' or link_pair == '//' or link_start == '#' %}{{ link_url | escape }}{% else %}{{ link_url | relative_url | escape }}{% endif %}">{{ group.title | escape }} overview</a>
+          {% endif %}
+          {% include menu-links.html items=group.links %}
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+  {% if section_data.next %}
+    <nav class="onward" aria-label="Next step">
+      <a href="{{ section_data.next.url | relative_url }}">{{ section_data.next.title | escape }}</a>
+    </nav>
+  {% endif %}
+</article>
+{% endif %}

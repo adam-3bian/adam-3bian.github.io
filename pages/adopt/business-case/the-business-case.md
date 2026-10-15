@@ -18,6 +18,11 @@ related:
   software: []
   guides: []
   policies: []
+navigation:
+  header:
+    category: Adopt
+    subcategory: Business Case
+    order: 2
 ---
 
 # The Strategic Case for CHERI

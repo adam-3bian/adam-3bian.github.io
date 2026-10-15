@@ -15,6 +15,12 @@ related:
   - sonata
   software:
   - debugging-tools
+navigation:
+  header:
+    category: Build
+    subcategory: Resources
+    parent: development-platforms
+    order: 1
 ---
 
 # CHERIoT

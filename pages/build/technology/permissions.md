@@ -21,6 +21,12 @@ related:
   software: []
   guides: []
   policies: []
+navigation:
+  header:
+    category: Build
+    subcategory: Technology
+    parent: how-cheri-capabilities-work
+    order: 3
 ---
 
 # Permissions

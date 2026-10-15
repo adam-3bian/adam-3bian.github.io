@@ -6,6 +6,11 @@ listing:
   collection: people
   status: null
   role: board
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Leadership
+    order: 2
 ---
 
 # Governing Board

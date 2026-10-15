@@ -19,6 +19,11 @@ related:
   software: []
   guides: []
   policies: []
+navigation:
+  header:
+    category: Adopt
+    subcategory: Policy
+    order: 1
 ---
 
 # Public Policy and CHERI

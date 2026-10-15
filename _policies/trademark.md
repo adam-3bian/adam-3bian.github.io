@@ -2,6 +2,14 @@
 title: CHERI Trademark
 image_url: /assets/policies/trademark/placeholder.svg
 author: null
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: About & Governance
+    order: 5
+  footer:
+    category: Policies
+    order: 2
 ---
 
 # CHERI Trademark

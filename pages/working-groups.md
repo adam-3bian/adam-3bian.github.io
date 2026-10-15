@@ -6,6 +6,14 @@ listing:
   collection: working-groups
   status: null
   role: null
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Leadership
+    order: 3
+  footer:
+    category: CHERI Alliance
+    order: 3
 ---
 
 # Working Groups

@@ -61,8 +61,44 @@ Do not repeat a front-matter property in the body unless it adds useful detail. 
 | `parent` | Registered page route or `null` | Optional breadcrumb parent override; update the page map to agree. Collection defaults normally supply it. |
 | `next_page_url` | Registered page route, HTTP(S) URL, or `null` | Optional next-page navigation. |
 | `related` | Mapping of registered collection keys to slug arrays; `pages` contains page routes | Optional on listings. For collections/content pages, keep their required related keys and add other registered collection keys when useful. For example, `related.case-studies: [cheribsd]` and `related.reports: [an-introduction-to-cheri]`. Unknown collections, duplicate values and unresolved targets fail validation. |
+| `navigation` | Optional header/footer membership mapping | Selects existing menu groups. Omit either placement independently; omission does not hide the page from its ordinary directory. See the navigation contract below. |
 
 Use quoted strings for dates and URLs where YAML punctuation could be ambiguous. Ordinary `*_date` fields require a complete valid `YYYY-MM-DD` date. `*_datetime` fields require ISO 8601 with `Z` or a numeric timezone offset, for example `"2026-01-21T09:00:00+00:00"`. Only `document_date` accepts a month without a day. Do not guess missing dates or invent an effective date from a document's publication date.
+
+## Navigation membership
+
+Internal menu links belong to the page or collection record that supplies their canonical destination. Add only the placements that are wanted; records do not automatically enter either menu.
+
+```yaml
+navigation:
+  header:
+    category: "Adopt"
+    subcategory: "Business Case"
+  footer:
+    category: "CHERI Alliance"
+```
+
+The five header categories are **Discover CHERI**, **Adopt**, **Build**, **CHERI Alliance** and **News & Events**. The four footer categories are **Updates**, **CHERI Alliance**, **Learn and Build** and **Policies**. Category and header subcategory names must match the existing scaffold in `_config.yml`. The scaffold defines headings, columns, section overview routes, fixed external/social links and the arrangement of nested groups; it no longer maintains a second list of internal page links.
+
+Each placement may supply `label` when the preserved menu label differs from the page's complete `title`, and a positive integer `order` within its group. Existing placements have explicit orders so their editorial sequences remain unchanged. Unordered additions follow ordered entries, with case-insensitive label and canonical URL tie-breaks. The destination is always the source record's Jekyll URL, including registered redirects; do not add a second `url` field under navigation.
+
+Build's nested groups use the scaffold keys `software-developers`, `how-cheri-capabilities-work`, `memory-protection-system-models`, `development-platforms` and `software-ecosystem`. A child placement supplies `parent` with that key. A page supplying a linked group heading uses `heading` instead of `parent`; the capabilities overview and Software Ecosystem are the two existing examples. `status: TBD` preserves the existing Hardware Developers label and does not create a missing hardware-developer page.
+
+```yaml
+navigation:
+  header:
+    category: "Build"
+    subcategory: "Build"
+    parent: "software-developers"
+    order: 1
+    label: "Building Secure Software"
+```
+
+Members and Contact the Alliance intentionally occur in two header sections. Their primary header mapping has an `additional` array containing the second placement in the same shape, without nested `additional` mappings. This preserves those two cross-section routes without duplicating source records. Footer membership remains a single independent mapping.
+
+Run `bundle exec ruby scripts/check_content.rb` after editing navigation. It validates membership and generates `_data/primary-navigation.json`, `_data/footer_navigation.json`, `reports/index-navigation.json` and `reports/footer-navigation.json`; these are outputs, not editable navigation sources. Header and section landing pages consume the same generated hierarchy, and the footer consumes the matching generated footer data. `_data/page-map.yml` retains route/provenance information and is not a second editable menu.
+
+The navigation browser regression also checks compact structural hashes in `scripts/fixtures/navigation-baseline.json` against the preserved menu at commit `f9c1f2518af5283d524ac64961a43a8be8aa7ced`: 96 header link occurrences and 20 footer links, including all labels, nesting, columns and order. An intentionally approved future menu change requires reviewing and updating that baseline as well as its source membership; do not change it merely to silence a migration regression.
 
 ## Fields shared by collection records
 
@@ -366,9 +402,9 @@ Use for home and section landing pages. Each index contains one title, one short
 | `layout` | `index` | The section/home layout. |
 | `summary` | Nonempty string | One short introductory paragraph, rendered as plain text. |
 
-Leave the Markdown body empty. Group labels, page links, link labels, order and desktop column counts come directly from `navigation.header` in `_config.yml`, using the menu entry with the index's `permalink`. The homepage and section landings use `_data/landing.yml` for source-backed starting points, group descriptions, featured canonical routes and next actions. News and events are generated from their collections. The homepage retains the five top-level section links and original title and summary; section pages retain their complete grouped browse links. Edit the navigation configuration to change those browse lists rather than maintaining another complete copy.
+Leave the Markdown body empty. Group labels and desktop column counts come from the navigation scaffold in `_config.yml`; internal page membership, link labels and order come from source front matter. The generator combines these in `_data/primary-navigation.json`, matched to the index's `permalink`. The homepage and section landings use `_data/landing.yml` for source-backed starting points, group descriptions, featured canonical routes and next actions. News and events are generated from their collections. The homepage retains the five top-level section links and original title and summary; section pages retain their complete grouped browse links. Edit source navigation membership to change those browse lists rather than maintaining another complete copy.
 
-Indexes render with semantic headings, navigation and lists; they need no JavaScript. Browse groups use the configuration's three or four columns on desktop, two on tablet and one on mobile. Source-backed route lists and optional featured sections use shared includes; no authoring inspectors or raw relationship panels appear. The homepage uses the shared card include for approved case studies, omitting placeholder artwork.
+Indexes render with semantic headings, navigation and lists; they need no JavaScript. Browse groups use the scaffold's three or four columns on desktop, two on tablet and one on mobile. Source-backed route lists and optional featured sections retain their existing records; no authoring inspectors or raw relationship panels appear. Approved homepage case studies omit placeholder artwork.
 
 Optional index presentation properties are additive; existing index front matter
 remains valid. They override the corresponding shared presentation value:
@@ -752,7 +788,7 @@ related:
 
 1. Copy the complete shape for the appropriate schema from `_data/schemas.yml`, fill confirmed values, and retain null/empty keys.
 2. Store assets in the owning record directory, write useful alt text, and format prose, lists and captions semantically.
-3. Register the URL and parent in `_data/page-map.yml`. Update navigation in `_config.yml` only when a menu link is needed.
+3. Register the URL and parent in `_data/page-map.yml`. Add optional `navigation.header` or `navigation.footer` membership to the source front matter only when a menu link is needed; use existing scaffold groups.
 4. Use existing slugs for typed relationships; link to canonical URLs rather than repeating another record's content.
 5. Run `bundle exec ruby scripts/check_content.rb`, then `JEKYLL_ENV=production bundle exec jekyll build --destination _site`, `python3 scripts/check_collection_links.py` and `python3 scripts/check_page_content.py`.
 

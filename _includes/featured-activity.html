@@ -1,15 +1,54 @@
-{% include ordered-collection.html collection='news' %}{% assign activity_news = ordered_items | where_exp: 'record', 'record.published_date != nil' %}
-{% include ordered-collection.html collection='events' %}{% assign activity_events = '' | split: '' %}{% for candidate in ordered_items %}{% capture activity_status %}{% include event-status.html item=candidate %}{% endcapture %}{% assign activity_status = activity_status | strip %}{% if activity_status == 'upcoming' %}{% assign activity_events = activity_events | push: candidate %}{% endif %}{% endfor %}
+{% comment %}Shared by the homepage and News & Events landing page. Use the
+validated source ordering and the same precision-aware expiry as directories.{% endcomment %}
+{% assign activity_news = '' | split: '' %}
+{% for activity_url in site.data.collection_order.collections.news %}
+  {% assign activity_record = site.news | where: 'url', activity_url | first %}
+  {% if activity_record.published_date %}{% assign activity_news = activity_news | push: activity_record %}{% endif %}
+{% endfor %}
+{% assign activity_events = '' | split: '' %}
+{% for activity_url in site.data.collection_order.collections.events %}
+  {% assign candidate = site.events | where: 'url', activity_url | first %}
+  {% if candidate %}
+    {% capture activity_status %}{% include event-status.html item=candidate %}{% endcapture %}
+    {% assign activity_status = activity_status | strip %}
+    {% if activity_status == 'upcoming' %}{% assign activity_events = activity_events | push: candidate %}{% endif %}
+  {% endif %}
+{% endfor %}
 <section class="recent-activity" aria-labelledby="recent-activity-heading">
   <h2 id="recent-activity-heading">Latest news and events</h2>
   <div class="activity-columns">
-    <section aria-labelledby="featured-news-heading"><h3 id="featured-news-heading">Recent news</h3>
-      {% if activity_news.size > 0 %}<ul class="activity-list" role="list" data-featured="news">{% for item in activity_news limit: 3 %}<li><h4><a href="{{ item.url | relative_url }}">{{ item.title | escape }}</a></h4>{% include list-item-metadata.html item=item %}</li>{% endfor %}</ul>{% else %}<p>No dated announcements to feature yet.</p>{% endif %}
-      <p><a href="{{ '/news/' | relative_url }}">Browse all news</a></p>
-    </section>
-    <section aria-labelledby="featured-events-heading"><h3 id="featured-events-heading">Upcoming events</h3>
-      {% if activity_events.size > 0 %}<ul class="activity-list" role="list" data-featured="events">{% for item in activity_events limit: 2 %}<li><h4><a href="{{ item.url | relative_url }}">{{ item.title | escape }}</a></h4>{% include list-item-metadata.html item=item %}</li>{% endfor %}</ul>{% else %}<p>No upcoming events are listed at the moment. Explore the event archive for previous conferences and talks.</p>{% endif %}
-      <p><a href="{{ '/news-and-events/events-and-archive/upcoming-events/' | relative_url }}">Browse upcoming events</a> · <a href="{{ '/news-and-events/events-and-archive/past-events/' | relative_url }}">Event archive</a></p>
-    </section>
+    {% assign activity_types = 'news|events' | split: '|' %}
+    {% for activity_type in activity_types %}
+      {% if activity_type == 'news' %}
+        {% assign activity_items = activity_news %}{% assign activity_limit = 3 %}{% assign activity_heading = 'Recent news' %}
+      {% else %}
+        {% assign activity_items = activity_events %}{% assign activity_limit = 2 %}{% assign activity_heading = 'Upcoming events' %}
+      {% endif %}
+      <section aria-labelledby="featured-{{ activity_type }}-heading">
+        <h3 id="featured-{{ activity_type }}-heading">{{ activity_heading }}</h3>
+        {% if activity_items.size > 0 %}
+          <ul class="activity-list" role="list" data-featured="{{ activity_type }}">
+            {% for item in activity_items limit: activity_limit %}
+              {% assign activity_date = item.published_date | default: item.start_datetime | default: item.start_date %}
+              {% assign activity_end = item.end_datetime | default: item.end_date %}
+              <li>
+                <h4><a href="{{ item.url | relative_url }}">{{ item.title | escape }}</a></h4>
+                <p class="card-meta"><time datetime="{{ activity_date | escape }}">{{ activity_date | date: '%-d %B %Y' }}{% if item.start_datetime %}, {{ activity_date | date: '%H:%M %:z' }}{% endif %}</time>{% if activity_end and activity_end != activity_date %} – {{ activity_end | date: '%-d %B %Y' }}{% if item.end_datetime %}, {{ activity_end | date: '%H:%M %:z' }}{% endif %}{% endif %}</p>
+                {% if item.location %}<p class="card-meta">{{ item.location | escape }}</p>{% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        {% elsif activity_type == 'news' %}
+          <p>No dated announcements to feature yet.</p>
+        {% else %}
+          <p>No upcoming events are listed at the moment. Explore the event archive for previous conferences and talks.</p>
+        {% endif %}
+        {% if activity_type == 'news' %}
+          <p><a href="{{ '/news/' | relative_url }}">Browse all news</a></p>
+        {% else %}
+          <p><a href="{{ '/news-and-events/events-and-archive/upcoming-events/' | relative_url }}">Browse upcoming events</a> · <a href="{{ '/news-and-events/events-and-archive/past-events/' | relative_url }}">Event archive</a></p>
+        {% endif %}
+      </section>
+    {% endfor %}
   </div>
 </section>

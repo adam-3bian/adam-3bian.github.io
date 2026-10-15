@@ -22,6 +22,11 @@ related:
   software: []
   guides: []
   policies: []
+navigation:
+  header:
+    category: Adopt
+    subcategory: Assurance & Adoption
+    order: 3
 ---
 
 # CHERI Enabled Products

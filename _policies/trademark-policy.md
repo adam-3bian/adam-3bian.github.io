@@ -5,6 +5,11 @@ author: null
 version: '2.0'
 document_date: '2025-09'
 document_url: https://cheri-alliance.org/legal-trademark-policy/
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Legal & Policies
+    order: 4
 ---
 
 # Trademark Policy

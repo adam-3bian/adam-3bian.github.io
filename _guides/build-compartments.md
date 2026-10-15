@@ -10,6 +10,12 @@ related:
   - cheriot
   software:
   - cheribsd
+navigation:
+  header:
+    category: Build
+    subcategory: Build
+    parent: software-developers
+    order: 7
 ---
 
 # Build Compartments

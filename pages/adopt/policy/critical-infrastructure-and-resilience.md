@@ -20,6 +20,11 @@ related:
   software: []
   guides: []
   policies: []
+navigation:
+  header:
+    category: Adopt
+    subcategory: Policy
+    order: 3
 ---
 
 # Critical Infrastructure & Resilience

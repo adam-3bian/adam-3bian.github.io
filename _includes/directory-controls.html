@@ -1,9 +1,0 @@
-<form class="directory-controls" aria-label="Filter this directory" aria-busy="true">
-  <fieldset disabled><legend class="visually-hidden">Directory controls</legend>
-    <p class="control-field"><label for="directory-query">Find in this directory</label><input id="directory-query" type="search" name="q" maxlength="200" autocomplete="off"></p>
-    <p class="control-field"><label for="directory-sort">Sort by</label><select id="directory-sort" name="sort"><option value="original">Default order</option><option value="title">Title A–Z</option><option value="title-desc">Title Z–A</option>{% if include.collection == 'news' or include.collection == 'events' or include.collection == 'academic-papers' or include.collection == 'reports' or include.collection == 'policies' %}<option value="newest">Newest first</option><option value="oldest">Oldest first</option>{% endif %}</select></p>
-    {% for facet in site.data.directory_facets[include.collection] %}{% unless facet.key == 'period' and list_status %}<p class="control-field"><label for="directory-{{ include.collection }}-{{ facet.key }}">{{ facet.label | escape }}</label><select id="directory-{{ include.collection }}-{{ facet.key }}" name="{{ facet.key }}"><option value="">All</option>{% for option in facet.options %}<option value="{{ option.value | escape }}">{{ option.label | escape }}</option>{% endfor %}</select></p>{% endunless %}{% endfor %}
-    <button type="reset">Reset</button>
-  </fieldset>
-</form>
-<p class="directory-empty notice" hidden>No entries match. Try fewer terms or reset the filters.</p>

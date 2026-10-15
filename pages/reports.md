@@ -22,6 +22,15 @@ related:
   software: []
   guides: []
   policies: []
+navigation:
+  header:
+    category: Discover CHERI
+    subcategory: Resources
+    order: 4
+  footer:
+    category: Learn and Build
+    order: 5
+    label: Reports
 ---
 
 # Reports & White Papers

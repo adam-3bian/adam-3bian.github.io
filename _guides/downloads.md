@@ -24,6 +24,11 @@ related:
   - freebsd
   - zephyr
   - llvm-and-clang
+navigation:
+  header:
+    category: Build
+    subcategory: Resources
+    order: 5
 ---
 
 # Downloads

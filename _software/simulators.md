@@ -12,6 +12,12 @@ related:
   - cheriot
   software:
   - cheribsd
+navigation:
+  header:
+    category: Build
+    subcategory: Resources
+    parent: development-platforms
+    order: 4
 ---
 
 # Simulators

@@ -12,17 +12,17 @@ framework, remote font or third-party image viewer is needed.
 
 | Rule | Value or purpose |
 | --- | --- |
-| Page | White `#ffffff` with cool `#f3f7f9` supporting surfaces |
-| Text | Deep blue `#163747`; secondary text `#536874` |
+| Page | White `#ffffff`, off-white `#e9f3f5`, and a deliberate navy closing scene |
+| Text | Deep navy `#071c2b`; secondary text `#536874` |
 | Brand and links | CHERI blue `#125770`; darker blue on hover |
-| Accent | CHERI red `#ba1e1e`, reserved for rejection or meaningful emphasis |
+| Accent | CHERI red `#ba1e1e` for rejection; restrained cyan `#54dae3` for technical relationships |
 | Borders | Soft blue-grey `#d6e2e8` |
 | Form boundaries | `--control-line: #738b98`, at least 3:1 against white |
 | Focus | A visible 3px amber outline; never colour alone |
 | Typeface | Locally served Poppins, with system sans-serif fallbacks; monospace for code |
 | Body | 1rem, line height 1.7; scalable headings with tighter line height |
 | Spacing | A quarter-rem rhythm: .25, .5, .75, 1, 1.5, 2, 3 and 4rem |
-| Container | Full/technical frame 90rem; editorial 76rem; reading 48rem (approximately 78ch at base Poppins size) |
+| Container | Common frame 80rem (1280px); technical media 90rem; reading 46rem (approximately 72 characters at base Poppins size) |
 | Gutters | Fluid 4vw desktop, bounded at 4.5rem; 1.5rem tablet and 1rem mobile |
 | Controls | At least 44px for navigation, buttons and touch targets |
 | Corners | Precise .15rem rounding; avoid pill-shaped decorative controls |
@@ -34,15 +34,23 @@ links and onward navigation. Root text sizing respects the browser font setting.
 
 Style elements first: headings, paragraphs, links, lists, definition lists,
 tables, figures, details, forms and code. Classes identify real layout roles,
-rather than every field or page. Keep tokens and rules in `assets/viewer.css`;
-avoid per-record overrides.
+rather than every field or page. Keep the complete visual theme in `_includes/site-styles.html`, loaded after the
+unchanged `assets/viewer.css`. The latter retains established image-viewer, native
+disclosure, progressive-enhancement and content contracts. Do not add a third
+stylesheet or per-record overrides. Theme rules run from tokens and elements to
+layout roles, shared patterns and documented special cases.
 
 ## Site frame
 
-The header contains the original Alliance logo and five native menus. The complete
-hierarchy is authoritative in `_config.yml`, including nested `links` groups.
-The validator generates `_data/primary-navigation.json` directly from it. Header
-and section browse share `menu-links.html`; never edit the generated JSON by hand.
+The header contains the original Alliance logo and five native menus. The central scaffold in `_config.yml` preserves category names, order, columns,
+overviews, fixed destinations and nested group headings. Internal membership is
+authored in each source page’s `navigation.header` and `navigation.footer` mapping;
+`FRONT_MATTER.MD` documents the contract. The validator combines the scaffold and
+source front matter into `_data/primary-navigation.json` and
+`_data/footer_navigation.json`. Header and section browse share `menu-links.html`;
+never edit generated navigation by hand. The migration preserves every baseline
+label, destination, group, nested sequence and footer option. Exact structural
+hashes in `scripts/fixtures/navigation-baseline.json` guard that contract.
 Build has three topic areas: Build, Technology and Resources. Software Developers
 retains its seven-step sequence; Hardware Developers is explicitly TBD and links
 to the existing hardware directory. Capability concepts are nested under their
@@ -100,11 +108,11 @@ below the page title while retaining labels, relative hierarchy and anchors.
 
 A section landing page has its existing title and introduction, source-backed
 starting points, relevant featured resources and a complete browse navigation
-drawn from the matching `_config.yml` groups. Brief group descriptions come from
+drawn from the matching generated navigation groups. Brief group descriptions come from
 shared presentation metadata. Build adds a platform-aware developer progression;
 News and Events reuses the build-time activity include. Native links work without
 JavaScript. Full article text remains in its canonical source page.
-The home index uses a dedicated shared include: the hardware-security headline,
+The home index contains its complete page-specific presentation in `_layouts/index.html`: the hardware-security headline,
 two starting actions, Living Memory Architecture, the preserved CHERI introduction,
 source-backed topics and audience routes, selected canonical case studies,
 verified member logos, build-time news/events and Alliance participation links. Its
@@ -199,8 +207,9 @@ users. Content and ordinary links work without JavaScript.
 
 ## Authoring and verification
 
-Public discovery uses one shared canonical-record include for search and the
-static XML sitemap. Redirects, aliases, alternates, checks and verified mirror/
+Public discovery selects the same registered canonical records in the search-index
+and sitemap endpoint templates. The small source-selection loops remain local to
+these two endpoints instead of requiring an extra presentation include. Redirects, aliases, alternates, checks and verified mirror/
 print views are excluded. Excluded routes remain available and use `noindex`;
 this is discovery guidance, not access control. The content validator generates
 an independent expected-route manifest for regression checks. Shared metadata
@@ -216,9 +225,9 @@ progressive enhancements. Without JavaScript, an explicit message and complete
 section browse links remain available. No hosted search service is involved.
 
 Use `FRONT_MATTER.MD` and `_data/schemas.yml` for fields; use native Markdown and
-the existing image classes instead of hand-built page components. Navigation
-comes from `_config.yml`, display roles from `_data/viewer.yml`, and the complete
-registry from `_data/page-map.yml`.
+the existing image classes instead of hand-built page components. Navigation membership comes from source front matter and the fixed `_config.yml`
+scaffold; display roles come from `_data/viewer.yml`, and the complete registry
+from `_data/page-map.yml`.
 
 Validate content, assets, relationships and logo generation. Build at the root
 and with a non-empty base URL, including safe Jekyll mode. Check content families,
@@ -234,9 +243,9 @@ administration; it is not controlled by the Liquid layouts or Pages artifact.
 
 ## Width and responsive composition
 
-Use `.width-full` / `.width-technical` for the shared 90rem frame,
-`.width-editorial` for a 76rem composition and `.width-reading` for centred 48rem
-prose. The reading token uses rem so headings and paragraphs align to the same
+Use `.container`, `.width-full` and `.width-editorial` for the common 80rem frame,
+`.width-technical` for the deliberate 90rem technical-media region, and
+`.width-reading` for 46rem prose. The reading token uses rem so headings and paragraphs align to the same
 physical column rather than each interpreting ch at a different font size.
 The article region always spans the full frame. Prose, headings and contents
 centre within it; diagrams, galleries, scrollable tables and full illustrations
@@ -252,7 +261,7 @@ well as the required 375px. Never solve page overflow by hiding body content.
 
 ## Living Memory Architecture
 
-`memory-architecture.html` is original SVG, with 64 isometric cells, elevated
+The homepage’s local Living Memory Architecture SVG contains 64 isometric cells, elevated
 bounded memory, a translucent authority plane, permitted and rejected paths, and
 separate compartment authority. `_data/memory.yml` contains source-linked example
 explanations. `assets/memory-architecture.js` loads only on the homepage and
@@ -268,7 +277,7 @@ JavaScript. Transitions are brief, user initiated and respect reduced motion.
 
 ## Default collection ordering
 
-`ordered-collection.html` reads `_data/collection_order.json`, generated by the
+The shared directory layout reads `_data/collection_order.json`, generated by the
 existing validator using `scripts/collection_order.rb`. No custom Jekyll plugin
 is involved: safe-mode Pages builds read the committed cache. Regenerate it after
 content changes; never maintain it by hand. Alphabetic comparison is natural,
@@ -291,10 +300,56 @@ case insensitive, with original title and canonical URL ties.
 
 Governing Board pages retain `_data/governing-board.yml` roster order. Curated
 home features, learning pathways and configured navigation retain their explicit
-sequence: pass their selected arrays directly to `cards.html` or `route-list.html`
-rather than applying directory defaults. These are the documented presentation
+sequence: render their selected arrays in the relevant layout rather than
+applying directory defaults. These are the documented presentation
 overrides; no new front-matter field is needed. Automatic news/events features
-use the shared ordered include. Source timestamps retain their offsets and exact
+read the same generated order cache. Source timestamps retain their offsets and exact
 expiry; date-only final days remain inclusive through `event-status.html`.
 Client date sorting uses the same collection-specific source field, never an
 update timestamp or a date inferred from a filename.
+
+
+## Theme architecture and approved artwork
+
+The shell is `default.html`. `index.html` owns the entire homepage, including its
+SVG and source-backed feature loops; it inherits `section.html`, which passes the
+homepage through and renders the five existing index routes as section landings.
+This inheritance keeps existing protected `layout: index` front matter valid.
+`document.html` is a minimal compatibility adapter to `record.html`; the common
+record layout processes content, images, metadata, resources and relationships
+once for ordinary and collection pages. `pages.html` offers the same editorial
+entry point. `list.html` adds complete directories before the record shell;
+`news.html`, `people.html` and `events.html` remain minimal source compatibility
+adapters. Events share the same semantic detail presentation, so no duplicate
+`event.html` is needed. Search and redirects retain their specialised layouts.
+
+The six retained includes are header, footer, menu-links, site-styles,
+event-status and featured-activity. Consolidation removed every other helper
+rather than keeping legacy wrappers. The two exceptions to the four-file target
+are genuinely shared: event-status preserves one precision-sensitive expiry
+implementation across listings, records and activity; featured-activity renders
+identical source-dated news/event presentation on the homepage and News & Events
+landing page. The unchanged `scripts/test_activity.rb` directly renders both
+helpers, including inclusive final days and timezone offsets. Inlining them
+would duplicate this logic or break that regression contract. SEO lives in the
+shell, image/content processing in the record layout, directory controls/cards
+in the list layout, and the search interface in its specialised layout.
+
+`assets/common/hexagons.svg` is the original supplied black-stroke artwork;
+`hexagons-light.webp` is the original transparent blue-stroke export from the
+supplied starter kit. Both are 1518 × 1926 and remain byte-for-byte unchanged.
+Their provenance and hashes are recorded in `_data/image-sources.yml`. CSS uses
+these through `relative_url`, selectively behind hero/section introductions and
+the closing invitation. They are decorative identity, not representations of
+capabilities or physical memory. Do not place the pattern behind navigation,
+directory controls, technical tables or long-form reading. No existing artwork
+or protected content references were relocated.
+
+Standard containers align at 1280px on wide screens. Article media may extend
+to 1440px, while paragraphs, body headings and native contents retain one 46rem
+reading column. Header introductions, metadata and related resources return to
+the common frame. Tablet compositions reduce columns; mobile stacks text and
+art, preserves complete titles, retains 44px controls and permits native table
+and code scrolling. Artwork keeps intrinsic dimensions and `object-fit: contain`.
+Reduced-motion preferences disable transitions, including immediate skip-link
+focus. No remote fonts, image runtime or application backend is required.

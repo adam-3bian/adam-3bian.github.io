@@ -1,4 +1,31 @@
 ---
-layout: document
+layout: record
 ---
-{% include search.html %}
+<noscript>
+  <p class="notice">Search requires JavaScript. You can browse all public resources using the section links below.</p>
+</noscript>
+<form class="search-controls" id="site-search" role="search" aria-label="Site search" action="{{ '/search/' | relative_url }}" data-index-url="{{ '/assets/search-index.json' | relative_url }}">
+  <fieldset disabled>
+    <legend class="visually-hidden">Search the CHERI website</legend>
+    <label for="search-query">Search terms<input id="search-query" type="search" name="q" maxlength="200" autocomplete="off"></label>
+    <label for="search-type">Content type<select id="search-type" name="type"><option value="">All content</option><option value="pages">Pages</option>{% for collection in site.data.viewer.collections %}<option value="{{ collection[0] | escape }}">{{ collection[1].label | escape }}</option>{% endfor %}</select></label>
+    <button type="submit" class="primary-action">Search</button>
+    <button type="reset">Clear</button>
+  </fieldset>
+</form>
+<p id="search-status" role="status" aria-live="polite" aria-atomic="true">Enter a topic, resource or person's name to search.</p>
+<section id="search-results-region" aria-labelledby="search-results-heading" hidden>
+  <h2 id="search-results-heading">Search results</h2>
+  <ol id="search-results" class="search-results">
+  </ol>
+</section>
+<nav aria-labelledby="search-browse-heading">
+  <h2 id="search-browse-heading">Browse by section</h2>
+  <ul class="link-grid" role="list">
+    {% for section in site.navigation.header %}
+      <li>
+        <a href="{{ section.url | relative_url }}">{{ section.title | escape }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

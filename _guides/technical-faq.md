@@ -16,6 +16,11 @@ related:
   - simulators
   - cheribsd
   - freebsd
+navigation:
+  header:
+    category: Build
+    subcategory: Resources
+    order: 6
 ---
 
 # Technical FAQ

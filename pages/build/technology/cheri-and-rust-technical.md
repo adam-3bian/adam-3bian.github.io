@@ -19,6 +19,13 @@ related:
   software: []
   guides: []
   policies: []
+navigation:
+  header:
+    category: Build
+    subcategory: Technology
+    parent: memory-protection-system-models
+    order: 6
+    label: CHERI and Rust — Technical Overview
 ---
 
 # CHERI and Rust - Technical Overview

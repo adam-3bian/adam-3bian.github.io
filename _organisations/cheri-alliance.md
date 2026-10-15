@@ -8,6 +8,16 @@ social:
   linkedin_url: https://www.linkedin.com/company/cheri-alliance
   mastodon_url: null
   github_url: null
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: About & Governance
+    order: 1
+    label: About the CHERI Alliance
+  footer:
+    category: CHERI Alliance
+    order: 1
+    label: About the CHERI Alliance
 ---
 
 # CHERI Alliance

@@ -21,6 +21,11 @@ related:
   software: []
   guides: []
   policies: []
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Leadership
+    order: 4
 ---
 
 # Ambassadors

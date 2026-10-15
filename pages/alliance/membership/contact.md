@@ -21,6 +21,18 @@ related:
   software: []
   guides: []
   policies: []
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Membership
+    order: 3
+    additional:
+    - category: News & Events
+      subcategory: People & Opportunities
+      order: 3
+  footer:
+    category: CHERI Alliance
+    order: 4
 ---
 
 # Contact the Alliance

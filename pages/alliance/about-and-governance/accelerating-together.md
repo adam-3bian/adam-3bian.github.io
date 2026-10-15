@@ -21,6 +21,11 @@ related:
   software: []
   guides: []
   policies: []
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: About & Governance
+    order: 4
 ---
 
 # Accelerating CHERI together

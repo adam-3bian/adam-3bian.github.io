@@ -21,6 +21,11 @@ related:
   software: []
   guides: []
   policies: []
+navigation:
+  header:
+    category: News & Events
+    subcategory: Events & Archive
+    order: 4
 ---
 
 # CHERITech Conference

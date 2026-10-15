@@ -1,5 +1,393 @@
 ---
-layout: document
+layout: record
 ---
 {{ content }}
-{% include listing.html collection=page.listing.collection %}
+{% assign list_collection = page.listing.collection %}
+{% if list_collection == nil %}
+  {% case page.layout %}
+  {% when 'people' %}
+    {% assign list_collection = 'people' %}
+  {% when 'news' %}
+    {% assign list_collection = 'news' %}
+  {% when 'events' %}
+    {% assign list_collection = 'events' %}
+  {% endcase %}
+{% endif %}
+{% assign list_items = '' | split: '' %}
+{% for ordered_url in site.data.collection_order.collections[list_collection] %}
+  {% assign ordered_record = site[list_collection] | where: 'url', ordered_url | first %}
+  {% if ordered_record %}
+    {% assign list_items = list_items | push: ordered_record %}
+  {% endif %}
+{% endfor %}
+{% assign preset = site.data.viewer.listing_presets[page.url] %}
+{% assign list_role = page.listing.role | default: preset.role %}
+{% assign list_status = page.listing.status | default: preset.status %}
+{% if page.certification %}
+  {% assign list_items = list_items | where: 'certification', page.certification %}
+{% endif %}
+{% if list_role == 'speaker' %}
+  {% assign list_items = list_items | where: 'is_speaker', true %}
+{% elsif list_role == 'member' %}
+  {% assign list_items = list_items | where_exp: 'record', 'record.membership_tier != nil' %}
+{% elsif list_role == 'board' %}
+  {% assign board_items = '' | split: '' %}
+  {% for person_slug in site.data.governing-board %}
+    {% assign person = list_items | where: 'slug', person_slug | first %}
+    {% if person %}
+      {% assign board_items = board_items | push: person %}
+    {% endif %}
+  {% endfor %}
+  {% assign list_items = board_items %}
+{% endif %}
+{% if list_collection == 'events' and list_status %}
+  {% assign eligible = '' | split: '' %}
+  {% for candidate in list_items %}
+    {% capture candidate_status %}
+      {% include event-status.html item=candidate %}
+    {% endcapture %}
+    {% assign candidate_status = candidate_status | strip %}
+    {% if candidate_status == list_status %}
+      {% assign eligible = eligible | push: candidate %}
+    {% endif %}
+  {% endfor %}
+  {% assign list_items = eligible %}
+{% endif %}
+{% if list_status == 'past' %}
+  {% assign archive_items = '' | split: '' %}
+  {% for archive_url in site.data.collection_order.event_archive %}
+    {% assign archive_record = list_items | where: 'url', archive_url | first %}
+    {% if archive_record %}
+      {% assign archive_items = archive_items | push: archive_record %}
+    {% endif %}
+  {% endfor %}
+  {% assign list_items = archive_items %}
+{% endif %}
+{% assign collection_label = site.data.viewer.collections[list_collection].label | default: list_collection %}
+{% assign listing_heading = 'Browse ' | append: collection_label | downcase | capitalize %}
+{% case list_role %}
+{% when 'board' %}
+  {% assign listing_heading = 'Board members' %}
+{% when 'member' %}
+  {% assign listing_heading = 'Member directory' %}
+{% when 'speaker' %}
+  {% assign listing_heading = 'Speaker directory' %}
+{% endcase %}
+{% if list_status == 'past' %}
+  {% assign listing_heading = 'Event archive' %}
+{% elsif list_status == 'upcoming' %}
+  {% assign listing_heading = 'Scheduled events' %}
+{% elsif list_collection == 'working-groups' %}
+  {% assign listing_heading = 'Working group directory' %}
+{% endif %}
+{% if page.certification == 'cheri-enabled' %}
+  {% assign listing_heading = 'Certified products' %}
+{% endif %}
+{% assign show_card_images = true %}
+{% if list_collection == 'working-groups' %}
+  {% assign show_card_images = false %}
+{% endif %}
+{% assign list_style = 'image-list' %}
+{% case list_collection %}
+{% when 'people', 'organisations' %}
+  {% assign list_style = 'directory-list' %}
+{% when 'academic-papers', 'reports' %}
+  {% assign list_style = 'bibliography-list' %}
+{% when 'policies' %}
+  {% assign list_style = 'document-list' %}
+{% when 'software', 'guides', 'working-groups' %}
+  {% assign list_style = 'resource-list' %}
+{% endcase %}
+<section class="listing" aria-labelledby="listing-heading" data-listing="{{ list_collection | escape }}" data-role="{{ list_role | escape }}" data-status="{{ list_status | escape }}" data-time-zone="{{ site.timezone | default: 'UTC' | escape }}">
+  <header class="section-heading">
+    <h2 id="listing-heading">{{ listing_heading | escape }}</h2>
+    <p class="directory-count" role="status" aria-live="polite" aria-atomic="true">{{ list_items.size }} {% if list_items.size == 1 %}result{% else %}results{% endif %}</p>
+  </header>
+  {% if list_items.size > 0 %}
+    {% if list_collection == 'organisations' %}
+      {% assign directory_letters = '' | split: '' %}
+      <nav class="alphabet-navigation" aria-label="Organisations by name">
+        <ul role="list">
+          {% for item in list_items %}
+            {% assign directory_letter = item.title | slice: 0, 1 | upcase %}
+            {% unless directory_letters contains directory_letter %}
+              {% assign directory_letters = directory_letters | push: directory_letter %}
+              <li>
+                <a href="#directory-row-{{ item.collection }}-{{ item.slug }}" data-letter="{{ directory_letter | escape }}">{{ directory_letter | escape }}</a>
+              </li>
+            {% endunless %}
+          {% endfor %}
+        </ul>
+      </nav>
+    {% endif %}
+    <form class="directory-controls" aria-label="Filter this directory" aria-busy="true">
+      <fieldset disabled>
+        <legend class="visually-hidden">Directory controls</legend>
+        <p class="control-field"><label for="directory-query">Find in this directory</label><input id="directory-query" type="search" name="q" maxlength="200" autocomplete="off"></p>
+        <p class="control-field"><label for="directory-sort">Sort by</label><select id="directory-sort" name="sort"><option value="original">Default order</option><option value="title">Title A–Z</option><option value="title-desc">Title Z–A</option>{% if list_collection == 'news' or list_collection == 'events' or list_collection == 'academic-papers' or list_collection == 'reports' or list_collection == 'policies' %}<option value="newest">Newest first</option><option value="oldest">Oldest first</option>{% endif %}</select></p>
+        {% for facet in site.data.directory_facets[list_collection] %}
+          {% unless facet.key == 'period' and list_status %}
+            <p class="control-field"><label for="directory-{{ list_collection }}-{{ facet.key }}">{{ facet.label | escape }}</label><select id="directory-{{ list_collection }}-{{ facet.key }}" name="{{ facet.key }}"><option value="">All</option>{% for option in facet.options %}<option value="{{ option.value | escape }}">{{ option.label | escape }}</option>{% endfor %}</select></p>
+          {% endunless %}
+        {% endfor %}
+        <button type="reset">Reset</button>
+      </fieldset>
+    </form>
+    <p class="directory-empty notice" hidden>No entries match. Try fewer terms or reset the filters.</p>
+    {% assign directory_groups = 'all' | split: '|' %}
+    {% if list_collection == 'events' and list_status == nil %}
+      {% assign directory_groups = 'upcoming|past' | split: '|' %}
+      {% assign upcoming_items = '' | split: '' %}
+      {% assign past_items = '' | split: '' %}
+      {% for item in list_items %}
+        {% capture item_status %}
+          {% include event-status.html item=item %}
+        {% endcapture %}
+        {% assign item_status = item_status | strip %}
+        {% if item_status == 'upcoming' %}
+          {% assign upcoming_items = upcoming_items | push: item %}
+        {% else %}
+          {% assign past_items = past_items | push: item %}
+        {% endif %}
+      {% endfor %}
+      {% assign archive_items = '' | split: '' %}
+      {% for archive_url in site.data.collection_order.event_archive %}
+        {% assign archive_record = past_items | where: 'url', archive_url | first %}
+        {% if archive_record %}
+          {% assign archive_items = archive_items | push: archive_record %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+    {% for directory_group in directory_groups %}
+      {% assign group_items = list_items %}
+      {% assign card_heading_level = 3 %}
+      {% unless directory_group == 'all' %}
+        {% assign card_heading_level = 4 %}
+        {% if directory_group == 'upcoming' %}
+          {% assign group_items = upcoming_items %}
+          {% assign period_heading = 'Upcoming and current events' %}
+        {% else %}
+          {% assign group_items = archive_items %}
+          {% assign period_heading = 'Past events' %}
+        {% endif %}
+        <section class="event-period" data-event-period="{{ directory_group }}" aria-labelledby="{{ directory_group }}-directory-heading">
+          <h3 id="{{ directory_group }}-directory-heading">{{ period_heading }}</h3>
+        {% endunless %}
+        {% if group_items.size > 0 %}
+          <ul class="cards {{ list_style | default: 'image-list' }}{% if list_collection == 'organisations' %} organisation-directory{% endif %}" role="list">
+            {% for item in group_items %}
+              {% assign card_image_height = 120 %}
+              {% if item.collection == 'people' or list_role == 'board' %}
+                {% assign card_image_height = 360 %}
+              {% endif %}
+              {% assign card_summary = '' %}
+              {% assign paper_description = '' %}
+              {% assign card_content = item.content | markdownify %}
+              {% assign card_paragraphs = card_content | split: '<p>' %}
+              {% for paragraph in card_paragraphs offset: 1 %}
+                {% assign candidate_summary = paragraph | split: '</p>' | first | strip_html | strip %}
+                {% if candidate_summary != '' %}
+                  {% if card_summary == '' %}
+                    {% assign card_summary = candidate_summary | remove_first: 'Board role: ' %}
+                  {% elsif item.collection == 'academic-papers' %}
+                    {% assign paper_description = candidate_summary %}
+                    {% break %}
+                  {% endif %}
+                  {% unless item.collection == 'academic-papers' %}
+                    {% break %}
+                  {% endunless %}
+                {% endif %}
+              {% endfor %}
+              {% if list_role == 'board' %}
+                {% assign board_properties = card_content | split: '<dd>' %}
+                {% if board_properties.size > 1 %}
+                  {% assign card_summary = board_properties[1] | split: '</dd>' | first | strip_html | strip %}
+                {% endif %}
+              {% endif %}
+              {% assign card_summary = item.summary | default: card_summary %}
+              {% assign card_image = item.image_url | default: '' | strip %}
+              {% assign show_card_image = false %}
+              {% unless show_card_images == false or card_image contains '/placeholder.svg' %}
+                {% if card_image != '' %}
+                  {% assign show_card_image = true %}
+                {% endif %}
+              {% endunless %}
+              {% capture card_metadata %}
+                {% assign metadata_item = item %}
+                {% assign card_start_time = metadata_item.start_datetime | default: '' | strip %}
+                {% assign card_end_time = metadata_item.end_datetime | default: '' | strip %}
+                {% assign card_published_date = metadata_item.published_date | default: '' | strip %}
+                {% assign card_date = metadata_item.start_datetime | default: metadata_item.start_date | default: '' | strip %}
+                {% assign card_year = metadata_item.published_year | default: '' | strip %}
+                {% assign card_tier = metadata_item.membership_tier | default: '' | strip %}
+                {% capture list_item_meta %}
+                  {% if list_role == 'board' %}
+                    {% assign affiliation_slug = metadata_item.related.organisations | first %}
+                    {% assign affiliation = site.organisations | where: 'slug', affiliation_slug | first %}
+                    {% if affiliation %}
+                    {{ affiliation.title | escape }}
+                    {% endif %}
+                  {% elsif card_published_date != '' %}
+                    <time datetime="{{ card_published_date | escape }}">{{ card_published_date | date: '%-d %B %Y' }}</time>
+                  {% elsif card_date != '' %}
+                    {% assign card_end = metadata_item.end_datetime | default: metadata_item.end_date | default: '' | strip %}
+                    <time datetime="{{ card_date | escape }}">{{ card_date | date: '%-d %B %Y' }}{% if card_start_time != '' %}, {{ card_date | date: '%H:%M %:z' }}{% endif %}</time>
+                    {% if card_end != '' and card_end != card_date %}
+                      – {{ card_end | date: '%-d %B %Y' }}
+                      {% if card_end_time != '' %}
+                      , {{ card_end | date: '%H:%M %:z' }}
+                      {% endif %}
+                    {% endif %}
+                  {% elsif card_tier != '' %}
+                    {{ card_tier | capitalize }} member
+                    {% if metadata_item.is_founding_member %}
+                    · Founder
+                    {% endif %}
+                  {% elsif metadata_item.is_speaker %}
+                    Speaker
+                  {% elsif card_year != '' %}
+                    <time datetime="{{ card_year | escape }}">{{ card_year }}</time>
+                  {% endif %}
+                {% endcapture %}
+                {% assign list_item_meta = list_item_meta | strip %}
+                {% if list_item_meta != '' %}
+                  <p class="card-meta">{{ list_item_meta }}</p>
+                {% endif %}
+                {% if metadata_item.collection == 'policies' %}
+                  {% assign policy_version = metadata_item.version | default: '' | strip %}
+                  {% assign policy_date = metadata_item.document_date | default: '' | strip %}
+                  {% if policy_version != '' or policy_date != '' %}
+                    <p class="card-meta">{% if policy_version != '' %}Version {{ policy_version | escape }}{% endif %}{% if policy_version != '' and policy_date != '' %} · {% endif %}{% if policy_date != '' %}<time datetime="{{ policy_date | escape }}">{% assign date_length = policy_date | size %}{% if date_length == 7 %}{{ policy_date | append: '-01' | date: '%B %Y' }}{% else %}{{ policy_date | date: '%-d %B %Y' }}{% endif %}</time>{% endif %}</p>
+                  {% endif %}
+                {% elsif metadata_item.collection == 'hardware' or metadata_item.collection == 'software' %}
+                  {% capture classification_meta %}
+                    {% for field in site.data.viewer.classification_fields %}
+                      {% assign classification_value = metadata_item[field] | default: '' | strip %}
+                      {% if classification_value != '' %}
+                        {{ classification_value | escape }}
+                        <br>
+                      {% endif %}
+                    {% endfor %}
+                  {% endcapture %}
+                  {% assign classification_meta = classification_meta | strip | split: '<br>' | join: ' · ' %}
+                  {% if classification_meta != '' %}
+                    <p class="card-meta">{{ classification_meta }}</p>
+                  {% endif %}
+                {% elsif metadata_item.collection == 'events' %}
+                  {% assign event_location = metadata_item.location | default: '' | strip %}
+                  {% if event_location != '' %}
+                    <p class="card-meta">{{ event_location | escape }}</p>
+                  {% endif %}
+                {% elsif metadata_item.collection == 'working-groups' %}
+                  {% capture group_leads %}
+                    {% for lead_slug in metadata_item.leads %}
+                      {% assign group_lead = site.people | where: 'slug', lead_slug | first %}
+                      {% if group_lead %}
+                        {{ group_lead.title | escape }}
+                        <br>
+                      {% endif %}
+                    {% endfor %}
+                  {% endcapture %}
+                  {% assign group_leads = group_leads | strip | split: '<br>' | join: ', ' %}
+                  {% if group_leads != '' %}
+                    <p class="card-meta">Leads: {{ group_leads }}</p>
+                  {% endif %}
+                {% endif %}
+              {% endcapture %}
+              {% assign card_metadata = card_metadata | strip %}
+              {% assign card_slug = item.slug | default: forloop.index %}
+              {% assign card_title_id = 'listing-' | append: item.collection | append: '-' | append: card_slug %}
+              {% capture directory_metadata %}
+                {% assign directory_item = item %}
+                {% assign directory_date = '' %}
+                {% case directory_item.collection %}
+                {% when 'news' %}
+                  {% assign directory_date = directory_item.published_date %}
+                {% when 'academic-papers', 'reports' %}
+                  {% assign directory_date = directory_item.published_year %}
+                {% when 'events' %}
+                  {% assign directory_date = directory_item.start_datetime | default: directory_item.start_date %}
+                {% when 'policies' %}
+                  {% assign directory_date = directory_item.document_date %}
+                {% endcase %}
+                {% assign directory_date = directory_date | default: '' | append: '' %}
+                {% assign directory_authored = site.data.relationships[directory_item.url] | where: 'label', 'Authored' | first %}
+                {"title":{{ directory_item.title | jsonify | replace: '<', '\u003c' | replace: '>', '\u003e' | replace: '&', '\u0026' }},"date":{{ directory_date | jsonify | replace: '<', '\u003c' | replace: '>', '\u003e' | replace: '&', '\u0026' }},"type":{{ directory_item.type | jsonify | replace: '<', '\u003c' | replace: '>', '\u003e' | replace: '&', '\u0026' }},"tier":{{ directory_item.membership_tier | jsonify | replace: '<', '\u003c' | replace: '>', '\u003e' | replace: '&', '\u0026' }},"founder":
+                {% if directory_item.is_founding_member %}
+                  true
+                {% else %}
+                false
+                {% endif %}
+                ,"roles":[
+                {% assign role_separator = '' %}
+                {% if directory_item.is_speaker %}
+                  "speaker"
+                  {% assign role_separator = ',' %}
+                {% endif %}
+                {% if site.data.governing-board contains directory_item.slug %}
+                  {{ role_separator }}"board"
+                  {% assign role_separator = ',' %}
+                {% endif %}
+                {% if directory_authored.targets.size > 0 %}
+                {{ role_separator }}"author"
+                {% endif %}
+                ],"platforms":[
+                {% for slug in directory_item.related.hardware %}
+                  {% assign directory_platform = site.hardware | where: 'slug', slug | first %}
+                  {% if directory_platform %}
+                    {"value":{{ slug | jsonify | replace: '<', '\u003c' | replace: '>', '\u003e' | replace: '&', '\u0026' }},"label":{{ directory_platform.title | jsonify | replace: '<', '\u003c' | replace: '>', '\u003e' | replace: '&', '\u0026' }}}
+                    {% unless forloop.last %}
+                    ,
+                    {% endunless %}
+                  {% endif %}
+                {% endfor %}
+                ]
+                {% if directory_item.collection == 'events' %}
+                  ,"final":
+                  {% assign directory_final = directory_item.end_datetime | default: directory_item.end_date | default: directory_item.start_datetime | default: directory_item.start_date %}
+                  {{ directory_final | jsonify | replace: '<', '\u003c' | replace: '>', '\u003e' | replace: '&', '\u0026' }},"exact":
+                  {% if directory_item.end_datetime %}
+                    true
+                  {% elsif directory_item.end_date == nil and directory_item.start_datetime %}
+                    true
+                  {% else %}
+                  false
+                  {% endif %}
+                {% endif %}
+              }
+              {% endcapture %}
+              <li{% if list_collection == 'organisations' %} id="directory-row-{{ item.collection }}-{{ item.slug }}" tabindex="-1"{% endif %} data-directory-item="{{ directory_metadata | strip | escape }}">
+                <a class="card{% if show_card_image %} has-image{% endif %}{% if card_metadata != '' %} has-metadata{% endif %}{% if card_summary != '' %} has-description{% endif %}" href="{{ item.url | relative_url }}" data-record-url="{{ item.url | escape }}" aria-labelledby="{{ card_title_id | escape }}">
+                  {% if show_card_image %}
+                    <img class="{% if card_image_height == 360 %}image-portrait{% elsif item.collection == 'organisations' %}image-logo{% endif %}" src="{% assign link_url = card_image %}{% assign link_start = link_url | slice: 0, 1 %}{% assign link_pair = link_url | slice: 0, 2 %}{% if link_url contains ':' or link_pair == '//' or link_start == '#' %}{{ link_url | escape }}{% else %}{{ link_url | relative_url | escape }}{% endif %}" alt="{{ item.title | escape }}"{% if item.image_background == 'dark' %} data-image-background="dark"{% endif %} width="360" height="{{ card_image_height }}" loading="lazy">
+                  {% endif %}
+                  <hgroup class="card-text">
+                    <h{{ card_heading_level | default: 3 }} id="{{ card_title_id | escape }}">
+                    {{ item.title | escape }}
+                    </h{{ card_heading_level | default: 3 }}>
+                    {{ card_metadata }}
+                    {% if card_summary != '' %}
+                      <p class="card-description{% if item.collection == 'academic-papers' %} card-citation{% endif %}">{{ card_summary | replace: '&amp;', '&' | replace: '&quot;', '"' | replace: '&#39;', "'" | replace: '&lt;', '<' | replace: '&gt;', '>' | escape }}</p>
+                    {% endif %}
+                    {% if paper_description != '' %}
+                      <p class="paper-description">{{ paper_description | replace: '&amp;', '&' | replace: '&quot;', '"' | replace: '&#39;', "'" | replace: '&lt;', '<' | replace: '&gt;', '>' | escape }}</p>
+                    {% endif %}
+                    <p class="card-action">{{ site.data.viewer.collections[item.collection].card_action | default: 'Read more' | escape }}</p>
+                  </hgroup>
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p>No {{ directory_group }} events are listed at the moment.</p>
+          <ul class="cards image-list" role="list">
+          </ul>
+        {% endif %}
+        {% unless directory_group == 'all' %}
+        </section>
+      {% endunless %}
+    {% endfor %}
+  {% else %}
+    <p class="notice">No {{ collection_label | downcase | escape }} to display yet.</p>
+  {% endif %}
+</section>

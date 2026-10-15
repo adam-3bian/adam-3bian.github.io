@@ -6,6 +6,16 @@ listing:
   collection: null
   status: null
   role: null
+navigation:
+  header:
+    category: News & Events
+    subcategory: News & Analysis
+    order: 1
+    label: Latest News
+  footer:
+    category: Updates
+    order: 1
+    label: Latest News
 ---
 
 # News

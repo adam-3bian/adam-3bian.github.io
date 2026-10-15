@@ -20,6 +20,11 @@ related:
   software: []
   guides: []
   policies: []
+navigation:
+  header:
+    category: News & Events
+    subcategory: Events & Archive
+    order: 3
 ---
 
 # CHERI Blossoms Conference

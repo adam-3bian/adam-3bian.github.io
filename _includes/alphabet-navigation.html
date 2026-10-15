@@ -1,2 +1,0 @@
-{% assign directory_letters = '' | split: '' %}
-<nav class="alphabet-navigation" aria-label="Organisations by name"><ul role="list">{% for item in include.items %}{% assign directory_letter = item.title | slice: 0, 1 | upcase %}{% unless directory_letters contains directory_letter %}{% assign directory_letters = directory_letters | push: directory_letter %}<li><a href="#directory-row-{{ item.collection }}-{{ item.slug }}" data-letter="{{ directory_letter | escape }}">{{ directory_letter | escape }}</a></li>{% endunless %}{% endfor %}</ul></nav>

@@ -12,6 +12,12 @@ related:
   hardware:
   - cheriot
   software: []
+navigation:
+  header:
+    category: Build
+    subcategory: Resources
+    parent: software-ecosystem
+    order: 5
 ---
 
 # Zephyr

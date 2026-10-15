@@ -2,6 +2,11 @@
 title: Export Controls
 image_url: /assets/policies/export-controls/placeholder.svg
 author: null
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Legal & Policies
+    order: 5
 ---
 
 # Export Controls

@@ -1,27 +1,324 @@
 ---
-layout: default
+layout: section
 ---
-{% if page.url == '/' %}{% include home.html %}{% else %}
-{% assign section_menu = site.navigation.header | where: 'url', page.url | first %}
-{% assign section_data = site.data.landing.sections[page.url] %}
-{% assign introductory_routes = section_data.introductory_routes %}{% if page.introductory_routes != nil %}{% assign introductory_routes = page.introductory_routes %}{% endif %}
-{% assign featured_routes = section_data.featured_routes %}{% if page.featured_routes != nil %}{% assign featured_routes = page.featured_routes %}{% endif %}
-<article class="index-page landing-page" data-content-route="{{ page.url | escape }}" data-collection="pages">
-  <hgroup class="index-intro"><h1>{{ page.title | escape }}</h1><p>{{ page.section_description | default: page.summary | escape }}</p></hgroup>
-  {% if introductory_routes.size > 0 %}<section class="recommended-routes" aria-labelledby="recommended-heading"><h2 id="recommended-heading">Start here</h2>{% include route-list.html routes=introductory_routes %}</section>{% endif %}
-  {% if section_data.learning_routes %}<section aria-labelledby="learning-heading"><h2 id="learning-heading">A developer starting sequence</h2><p>{{ section_data.learning_note | escape }}</p>{% include route-list.html routes=section_data.learning_routes ordered=true compact=true %}</section>{% endif %}
-  {% if page.url == '/news-and-events/' %}{% include featured-activity.html %}{% endif %}
-  {% if featured_routes.size > 0 %}<section class="featured-resources" aria-labelledby="featured-heading"><h2 id="featured-heading">Explore further</h2>{% include route-list.html routes=featured_routes %}</section>{% endif %}
-  <nav class="index-navigation" aria-labelledby="browse-heading"><h2 id="browse-heading">Browse all {{ section_menu.title | escape }} resources</h2>
-    <ul class="index-pages columns-{{ section_menu.columns | default: 3 }}" role="list">
-      {% for group in section_menu.subcategories %}
-      <li class="menu-group-{{ group.title | slugify }}{% if group.columns == 2 %} menu-group-wide{% endif %}"><h3 class="index-group-label">{{ group.title | escape }}</h3>{% if section_data.group_descriptions[group.title] %}<p class="group-description">{{ section_data.group_descriptions[group.title] | escape }}</p>{% endif %}
-        {% if group.url %}<a href="{% include href.html url=group.url %}">{{ group.title | escape }} overview</a>{% endif %}
-        {% include menu-links.html items=group.links %}
-      </li>
+{% if page.url == '/' %}
+  {% assign home = site.data.landing.home %}
+  <article class="index-page home-page width-full" data-content-route="{{ page.url | escape }}" data-collection="pages">
+    <header class="home-hero">
+      <div class="hero-copy">
+        <p class="eyebrow">CHERI / Open security technology</p>
+        <h1>{{ home.title | replace: 'in Hardware.', '<span>in Hardware.</span>' }}</h1>
+        <p class="hero-statement">{{ home.statement | escape }}</p>
+        <nav class="action-links" aria-label="Get started">
+          <ul role="list">
+            <li>
+              <a class="primary-action" href="{{ home.primary.url | relative_url }}">{{ home.primary.title | escape }} <svg class="link-arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13L13 3M3 3H13V13" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
+            </li>
+            <li>
+              <a href="{{ home.secondary.url | relative_url }}">{{ home.secondary.title | escape }} <svg class="link-arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13L13 3M3 3H13V13" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
+            </li>
+          </ul>
+        </nav>
+        <p class="hero-definition">{{ page.summary | escape }}</p>
+      </div>
+      <figure class="memory-architecture" data-memory-model data-state="bounds" aria-labelledby="memory-title">
+        <div class="memory-drawing">
+          <p class="diagram-label"><span>CHERI / Living Memory Architecture</span><span aria-hidden="true">01—05</span></p>
+          <svg class="memory-svg" viewBox="35 60 815 515" role="img" aria-labelledby="memory-svg-title memory-svg-desc">
+            <title id="memory-svg-title">A landscape of memory, with hardware-enforced authority</title>
+            <desc id="memory-svg-desc">
+            An isometric grid of memory cells. A translucent blue boundary marks the range authorised by one capability. A blue path shows a permitted read; a red path ends outside the boundary. A second compartment has separate authority. This is a conceptual illustration, not a physical memory layout.
+            </desc>
+            <defs>
+              <pattern id="memory-grid" width="50" height="50" patternUnits="userSpaceOnUse">
+                <path d="M50 0H0V50" fill="none" stroke="#d6e2e8" stroke-width="1"/>
+              </pattern>
+              <linearGradient id="memory-glass" x1="0" y1="0" x2="1" y2="1">
+                <stop stop-color="#d3f3f8" stop-opacity=".8"/>
+                <stop offset="1" stop-color="#ffffff" stop-opacity=".3"/>
+              </linearGradient>
+              <linearGradient id="memory-side" x1="0" y1="0" x2="0" y2="1">
+                <stop stop-color="#c4dce5"/>
+                <stop offset="1" stop-color="#eff5f8"/>
+              </linearGradient>
+              <filter id="memory-shadow" x="-30%" y="-50%" width="160%" height="220%">
+                <feGaussianBlur stdDeviation="12"/>
+              </filter>
+              <marker id="memory-arrow" markerWidth="8" markerHeight="8" refX="5" refY="3" orient="auto">
+                <path d="M0 0L6 3 0 6" fill="none" stroke="#125770" stroke-width="1.4"/>
+              </marker>
+            </defs>
+            <ellipse cx="450" cy="407" rx="302" ry="72" fill="#c6d9e2" opacity=".27" filter="url(#memory-shadow)"/>
+            <g transform="matrix(.866 .5 -.866 .5 450 92)">
+              <rect x="-105" y="-105" width="610" height="610" fill="url(#memory-grid)"/>
+              <rect x="-5" y="-5" width="410" height="410" fill="#f3f7f9" stroke="#b8cfd9"/>
+            </g>
+            <path d="M95 292L450 497 805 292V309L450 514 95 309Z" fill="#e5eff3" stroke="#c6d9e2"/>
+            <g class="memory-cells" stroke="#b6cdd8" stroke-width=".8" stroke-linejoin="round">
+              {% for row in (0..7) %}
+                {% for column in (0..7) %}
+                  {% assign cell_x = column | minus: row | times: 44 | plus: 450 %}
+                  {% assign cell_y = column | plus: row | times: 25 | plus: 100 %}
+                  {% assign cell_depth = 13 %}
+                  {% if row >= 2 and row <= 4 and column >= 2 and column <= 5 %}
+                    {% assign cell_y = cell_y | minus: 12 %}
+                    {% assign cell_depth = 25 %}
+                  {% endif %}
+                  {% assign side_y = cell_depth | plus: 23 %}
+                  {% assign bottom_y = cell_depth | plus: 46 %}
+                  <g transform="translate({{ cell_x }},{{ cell_y }})"{% if row >= 2 and row <= 4 and column >= 2 and column <= 5 %} class="memory-cell authorised-cell"{% elsif row >= 5 and column <= 2 %} class="memory-cell compartment-cell"{% else %} class="memory-cell"{% endif %}>
+                    <path class="cell-side" d="M-39 23L0 46 39 23V{{ side_y }}L0 {{ bottom_y }}-39 {{ side_y }}Z" fill="url(#memory-side)"/>
+                    <path class="cell-top" d="M0 0L39 23 0 46-39 23Z" fill="#fff"/>
+                    <path d="M0 46V{{ bottom_y }}" fill="none"/>
+                  </g>
+                {% endfor %}
+              {% endfor %}
+            </g>
+            <g class="memory-boundary">
+              <path d="M450 164L626 264 494 339 318 239Z" fill="url(#memory-glass)" stroke="#3a91a9" stroke-width="1.5"/>
+              <path d="M450 164V200M626 264V300M494 339V375M318 239V275" fill="none" stroke="#3a91a9" stroke-dasharray="3 4"/>
+              <path d="M450 200L626 300 494 375 318 275Z" fill="none" stroke="#125770" stroke-width="1.5"/>
+              <path d="M450 149L641 258M307 231L441 154" fill="none" stroke="#7cbdce" stroke-width=".7"/>
+            </g>
+            <g class="memory-compartment" fill="#dcecf3" fill-opacity=".65" stroke="#125770" stroke-width="1.5">
+              <path d="M230 197L362 272 230 347 98 272Z"/>
+              <path d="M230 197V225M362 272V300M230 347V375M98 272V300" fill="none" stroke-dasharray="3 4"/>
+            </g>
+            <g class="memory-access" fill="none" stroke="#125770" stroke-width="2.5">
+              <path d="M723 156H654L538 224" marker-end="url(#memory-arrow)"/>
+              <circle cx="538" cy="224" r="9" fill="#fff"/>
+              <path d="M533 224L537 228 544 220"/>
+            </g>
+            <g class="memory-rejection" fill="none" stroke="#ba1e1e" stroke-width="2.5">
+              <path d="M729 370H663L626 349" stroke-dasharray="5 5"/>
+              <path d="M616 339L636 359M636 339L616 359"/>
+              <circle cx="626" cy="349" r="18" stroke-width="1"/>
+            </g>
+            <g class="memory-write-rejection" fill="none" stroke="#ba1e1e" stroke-width="2.5">
+              <path d="M723 156H654L538 224" stroke-dasharray="5 5"/>
+              <path d="M528 214L548 234M548 214L528 234"/>
+              <circle cx="538" cy="224" r="18" stroke-width="1"/>
+            </g>
+            <g fill="#536874" font-family="ui-monospace, monospace" font-size="13">
+              <path d="M196 154H263L353 205" fill="none" stroke="#738b98"/>
+              <text x="87" y="123" fill="#125770" font-size="16" data-memory-capability>CAPABILITY C0</text>
+              <text x="87" y="146">tag: valid</text>
+              <text x="87" y="169" data-memory-permission>load + store</text>
+              <text x="620" y="139" fill="#125770" data-memory-access-label>AUTHORISED ACCESS</text>
+              <text class="memory-rejection" x="660" y="398" fill="#ba1e1e">ACCESS FAULT</text>
+              <path d="M527 374V466H687" fill="none" stroke="#738b98"/>
+              <text x="556" y="490">HARDWARE-ENFORCED BOUNDS</text>
+              <path class="memory-compartment" d="M230 375V465H112" fill="none" stroke="#738b98"/>
+              <text class="memory-compartment" x="112" y="493" fill="#125770" stroke="none">COMPARTMENT B</text>
+              <text x="92" y="556">ADDRESS + AUTHORITY</text>
+              <text x="674" y="556">CHERI</text>
+            </g>
+          </svg>
+        </div>
+        <figcaption>
+          <hgroup class="memory-caption-head">
+            <h2 id="memory-title">Memory. With boundaries.</h2>
+            <p class="technical-label" data-memory-result>{{ site.data.memory.steps.first.result | escape }}</p>
+          </hgroup>
+          <div class="memory-controls" role="group" aria-label="Explore the memory model">
+            {% for step in site.data.memory.steps %}
+              <button type="button" data-memory-state="{{ step.id }}" aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}" aria-controls="memory-explanation" disabled>{{ step.label | escape }}</button>
+            {% endfor %}
+          </div>
+          <noscript>
+            <p>The illustration is static without JavaScript. Read every example in “About this illustration” below.</p>
+          </noscript>
+          <div id="memory-explanation" class="memory-explanation" aria-live="polite" aria-atomic="true">
+            <h3>{{ site.data.memory.steps.first.title | escape }}</h3>
+            <p>{{ site.data.memory.steps.first.description | escape }} <a href="{{ site.data.memory.steps.first.url | relative_url }}">Explore the technology</a></p>
+          </div>
+          <details class="memory-notes">
+            <summary>About this illustration</summary>
+            <p>This conceptual model makes capability authority visible. Capabilities are hardware-protected references, not physical boxes around memory. CHERI does not eliminate every vulnerability; temporal safety and secure compartment transitions also depend on the system design.</p>
+            <dl>
+              {% for step in site.data.memory.steps %}
+                <dt>{{ step.label | escape }}</dt>
+                <dd data-memory-copy="{{ step.id }}" data-result="{{ step.result | escape }}" data-title="{{ step.title | escape }}">{{ step.description | escape }} <a href="{{ step.url | relative_url }}">Read more</a></dd>
+              {% endfor %}
+            </dl>
+            <p>A valid tag distinguishes authentic capabilities. Provenance constrains derivation from existing authority. Sealing prevents ordinary dereferencing through a sealed capability; it is not encryption. <a href="{{ '/build/technology/tags-and-validity/' | relative_url }}">Tags and validity</a> · <a href="{{ '/build/technology/provenance/' | relative_url }}">Provenance</a> · <a href="{{ '/build/technology/sealing/' | relative_url }}">Sealing</a></p>
+          </details>
+        </figcaption>
+      </figure>
+    </header>
+    <section class="home-explanation home-scene" aria-labelledby="home-explanation-heading">
+      <hgroup class="scene-heading">
+        <p class="eyebrow">01 / A stronger foundation</p>
+        <h2 id="home-explanation-heading">Software security needs a stronger foundation.</h2>
+      </hgroup>
+      <div class="scene-introduction">
+        <p class="home-purpose">{{ page.title | escape }}</p>
+        <p>{{ home.problem | escape }}</p>
+        <a class="text-action" href="{{ home.problem_source | relative_url }}">Understand the memory-safety challenge <svg class="link-arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13L13 3M3 3H13V13" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
+      </div>
+      <ol class="home-topics" role="list">
+        {% for route in home.topics %}
+          {% assign topic = site.pages | where: 'url', route | first %}
+          {% if topic %}
+            <li>
+              <span class="technical-label" aria-hidden="true">0{{ forloop.index }} /</span>
+              <h3><a href="{{ topic.url | relative_url }}">{{ topic.title | escape }}</a></h3>
+              <p>{{ topic.summary | escape }}</p>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ol>
+    </section>
+    <section class="home-practice home-scene" aria-labelledby="home-examples-heading">
+      <hgroup class="scene-heading">
+        <p class="eyebrow">02 / From architecture to application</p>
+        <h2 id="home-examples-heading">Built on research.<br>Building in the real world.</h2>
+      </hgroup>
+      <div class="scene-introduction">
+        <p>Explore existing platform and software examples, from research and evaluation to commercial processors.</p>
+        <a class="text-action" href="{{ '/academic-papers/' | relative_url }}">Explore the research <svg class="link-arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13L13 3M3 3H13V13" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
+      </div>
+      <div class="scene-wide">
+        {% assign examples = '' | split: '' %}
+        {% for slug in home.examples %}
+          {% assign example = site['case-studies'] | where: 'slug', slug | first %}
+          {% if example %}
+            {% assign examples = examples | push: example %}
+          {% endif %}
+        {% endfor %}
+        <ul class="cards image-list" role="list">
+          {% for item in examples %}
+            {% assign card_title_id = 'listing-case-studies-' | append: item.slug %}
+            <li>
+              <a class="card{% if item.image_url %} has-image{% endif %}{% if item.summary %} has-description{% endif %}" href="{{ item.url | relative_url }}" data-record-url="{{ item.url | escape }}" aria-labelledby="{{ card_title_id | escape }}">
+                {% if item.image_url %}
+                  <img src="{{ item.image_url | relative_url }}" alt="{{ item.title | escape }}" width="360" height="120" loading="lazy"{% if item.image_background == 'dark' %} data-image-background="dark"{% endif %}>
+                {% endif %}
+                <hgroup class="card-text">
+                  <h3 id="{{ card_title_id | escape }}">{{ item.title | escape }}</h3>
+                  {% if item.summary %}
+                    <p class="card-description">{{ item.summary | escape }}</p>
+                  {% endif %}
+                  <p class="card-action">{{ site.data.viewer.collections['case-studies'].card_action | escape }}</p>
+                </hgroup>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+        <p class="section-afterword"><a href="{{ '/case-studies/' | relative_url }}">Explore all case studies <svg class="link-arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13L13 3M3 3H13V13" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a></p>
+      </div>
+    </section>
+    <section class="home-ecosystem home-scene" aria-labelledby="ecosystem-heading">
+      <hgroup class="scene-heading">
+        <p class="eyebrow">03 / An open ecosystem</p>
+        <h2 id="ecosystem-heading">Hardware. Software.<br>Shared possibility.</h2>
+      </hgroup>
+      <div class="scene-introduction">
+        <p>Explore CHERI development platforms, operating systems, compilers and language support.</p>
+        <a class="text-action" href="{{ '/build/software-ecosystem/' | relative_url }}">Meet the software ecosystem <svg class="link-arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13L13 3M3 3H13V13" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
+      </div>
+      <div class="scene-wide">
+        {% assign route_records = site.pages | concat: site.documents %}
+        <ul class="resource-paths" role="list">
+          {% for route in home.ecosystem_routes %}
+            {% assign resource = route_records | where: 'url', route | first %}
+            {% if resource %}
+              <li>
+                <h3><a href="{{ resource.url | relative_url }}">{{ resource.title | escape }}</a></h3>
+                {% if resource.summary %}
+                  <p>{{ resource.summary | escape }}</p>
+                {% else %}
+                  {% assign resource_paragraphs = resource.content | markdownify | split: '<p>' %}
+                  {% if resource_paragraphs.size > 1 %}
+                    <p>{{ resource_paragraphs[1] | split: '</p>' | first | strip_html | normalize_whitespace | escape }}
+                  </p>
+                {% endif %}
+              {% endif %}
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+  <section class="home-pathways" aria-labelledby="home-journeys-heading">
+    <p class="eyebrow">04 / Find your next step</p>
+    <h2 id="home-journeys-heading">Start where you are.<br>Build what comes next.</h2>
+    <ul class="home-journeys" role="list">
+      {% for journey in home.journeys %}
+        {% assign destination = site.pages | where: 'url', journey.url | first %}
+        {% if destination %}
+          <li>
+            <h3><a href="{{ journey.url | relative_url }}">{{ journey.title | escape }} <svg class="link-arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13L13 3M3 3H13V13" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a></h3>
+            <p>{{ destination.summary | escape }}</p>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
+  <section class="home-alliance home-scene" aria-labelledby="home-alliance-heading">
+    <hgroup class="scene-heading">
+      <p class="eyebrow">05 / The CHERI Alliance</p>
+      <h2 id="home-alliance-heading">A shared challenge.<br>A collective effort.</h2>
+    </hgroup>
+    <div class="scene-introduction">
+      <p>{{ home.alliance_intro | escape }}</p>
+      <a class="text-action" href="{{ home.alliance_source | relative_url }}">About the CHERI Alliance <svg class="link-arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13L13 3M3 3H13V13" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
+    </div>
+    <div class="scene-wide">
+      <h3 class="eyebrow">Across the Alliance membership</h3>
+      <ul class="member-strip" role="list">
+        {% for slug in home.member_examples %}
+          {% assign member = site.organisations | where: 'slug', slug | first %}
+          {% if member.membership_tier and member.image_url %}
+            <li>
+              <a href="{{ member.url | relative_url }}">
+                <img src="{{ member.image_url | relative_url }}" alt="{{ member.title | escape }}" width="200" height="80" loading="lazy"{% if member.image_background == 'dark' %} data-image-background="dark"{% endif %}>
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+      <nav class="action-links" aria-label="Participate">
+        <ul role="list">
+          <li>
+            <a class="primary-action" href="{{ '/alliance/membership/why-join/' | relative_url }}">Explore membership <svg class="link-arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13L13 3M3 3H13V13" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
+          </li>
+          <li>
+            <a href="{{ '/working-groups/' | relative_url }}">Find a working group</a>
+          </li>
+          <li>
+            <a href="{{ '/organisations/' | relative_url }}">Explore the ecosystem</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+  {% include featured-activity.html %}
+  <section class="home-future" aria-labelledby="future-heading">
+    <p class="eyebrow">Open technology. Collective progress.</p>
+    <h2 id="future-heading">The Future of Secure Computing Is Being Built Now.</h2>
+    <nav class="action-links" aria-label="Build the future">
+      <ul role="list">
+        <li>
+          <a class="primary-action" href="{{ '/build/' | relative_url }}">Start Building <svg class="link-arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13L13 3M3 3H13V13" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
+        </li>
+        <li>
+          <a href="{{ '/alliance/membership/why-join/' | relative_url }}">Join the Alliance <svg class="link-arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13L13 3M3 3H13V13" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+  <nav class="index-navigation" aria-label="Explore the website">
+    <h2>Explore the website</h2>
+    <ul class="index-pages" role="list">
+      {% for section in site.navigation.header %}
+        {% if section.url %}
+          <li>
+            <a href="{{ section.url | relative_url }}">{{ section.title | escape }}</a>
+          </li>
+        {% endif %}
       {% endfor %}
     </ul>
   </nav>
-  {% if section_data.next %}<nav class="onward" aria-label="Next step"><a href="{{ section_data.next.url | relative_url }}">{{ section_data.next.title | escape }}</a></nav>{% endif %}
 </article>
 {% endif %}

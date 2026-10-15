@@ -6,6 +6,11 @@ listing:
   collection: null
   status: past
   role: null
+navigation:
+  header:
+    category: News & Events
+    subcategory: Events & Archive
+    order: 2
 ---
 
 # Past Events

@@ -12,6 +12,12 @@ related:
   hardware:
   - cheriot
   software: []
+navigation:
+  header:
+    category: Build
+    subcategory: Resources
+    parent: development-platforms
+    order: 2
 ---
 
 # Sonata
