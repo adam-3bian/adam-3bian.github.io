@@ -171,7 +171,7 @@ nav li + li, .cards > li + li, .image-gallery > li + li, .site-footer li + li { 
 .index-pages li { min-width: 0; }
 .index-group-label { display: block; font-weight: 600; margin-bottom: .5rem; padding-bottom: .75rem; border-bottom: 1px solid var(--line); border-color: var(--line); color: var(--ink); font-size: 1.25rem; }
 .index-navigation a, .link-grid a { display: flex; align-items: center; width: 100%; min-height: 44px; overflow-wrap: anywhere; text-decoration: none; }
-.index-navigation a:is(:hover, :focus-visible), .link-grid a:is(:hover, :focus-visible) { text-decoration: underline; background: #f0f6f8; }
+.index-navigation a:is(:hover, :focus-visible), .link-grid a:is(:hover, :focus-visible) { text-decoration: underline; background: var(--soft); }
 .index-navigation a { padding: .625rem 0; border-radius: var(--radius); padding-block: .65rem; line-height: 1.5; }
 .index-pages > li > ul > li + li { border-top: 1px solid var(--line); border-color: var(--line); }
 .landing-page > :is(section, .index-navigation) { margin-block: 3rem; }
@@ -422,7 +422,7 @@ body.image-viewer-open { position: fixed; inset-inline: 0; top: var(--image-view
 .cards { --card-columns: 3; grid-template-columns: repeat(var(--card-columns), minmax(0, 1fr)); list-style: none; padding: 0; margin: 1rem 0 0; gap: 1.5rem; }
 .cards > li { display: flex; min-width: 0; }
 .card { display: flex; flex-direction: column; flex: 1; min-width: 0; overflow: hidden; color: var(--ink); text-decoration: none; border: 1px solid var(--line); background: var(--surface); border-color: var(--line); border-radius: var(--radius); transition: background-color 160ms ease, border-color 160ms ease; }
-.card:is(:hover, :focus-visible) { color: var(--ink); border-color: var(--teal); background: #f3f8fa; }
+.card:is(:hover, :focus-visible) { color: var(--ink); border-color: var(--teal); background: var(--soft); }
 .card:is(:hover, :focus-visible) :is(h3, h4) { text-decoration: underline; text-underline-offset: .18em; }
 .card img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 1; object-fit: contain; margin: 0; background: var(--image-background, #f1f6f8); }
 .card img.image-portrait { aspect-ratio: 1 / 1; }

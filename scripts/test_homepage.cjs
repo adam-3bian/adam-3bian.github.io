@@ -14,7 +14,7 @@ const events = source.records.filter(r => r.collection === 'events' && !r.altern
 (async () => {
   fs.mkdirSync(output, { recursive: true });
   const browser = await chromium.launch({ headless: true });
-  const report = { widths: [1440, 1024, 768, 640, 375, 320], layouts: 0, accessibility: 0, nativeNavigation: 0, modelStates: 0, staticModel: 0 };
+  const report = { widths: [1440, 1024, 768, 640, 375, 320], layouts: 0, accessibility: 0, nativeNavigation: 0, modelStates: 0, staticModel: 0, interactionContrast: 0 };
   try {
     const page = await browser.newPage();
     for (const width of report.widths) {
@@ -53,6 +53,19 @@ const events = source.records.filter(r => r.collection === 'events' && !r.altern
       const violations = await page.evaluate(async () => (await axe.run('main', { runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa'] } })).violations.map(v => ({ id: v.id, nodes: v.nodes.map(n => n.target) })));
       assert.deepEqual(violations, [], `Accessibility at ${width}`);
       report.layouts++; report.accessibility++;
+      for (const selector of ['.home-practice .card', '.home-page .index-navigation a']) {
+        const link = page.locator(selector).first();
+        for (const mode of ['hover', 'focus']) {
+          if (mode === 'hover') await link.hover();
+          else { await page.mouse.move(0, 0); await link.focus(); }
+          await page.waitForTimeout(200); // Allow the existing 160ms colour transition to finish.
+          const contrast = await page.evaluate(async selector => (await axe.run(selector, {runOnly: {type: 'rule', values: ['color-contrast']}})).violations.map(v => ({id: v.id, nodes: v.nodes.map(n => n.target)})), selector);
+          assert.deepEqual(contrast, [], `${selector}: ${mode} contrast at ${width}`);
+          report.interactionContrast++;
+        }
+        await link.evaluate(a => a.blur());
+      }
+
       // Full-page screenshots must include the deliberately lazy artwork.
       for (const artwork of await page.locator('main img[loading="lazy"]').all()) {
         await artwork.scrollIntoViewIfNeeded();
