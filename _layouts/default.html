@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>
     document.documentElement.classList.add('navigation-enhanced');
+    {% if page.listing %}document.documentElement.classList.add('directory-enhanced');{% endif %}
     document.addEventListener('DOMContentLoaded', function () {
       if (!document.querySelector('#header-navigation[data-navigation-ready]')) document.documentElement.classList.remove('navigation-enhanced');
+      if (!document.querySelector('.directory-controls[data-directory-ready]')) document.documentElement.classList.remove('directory-enhanced');
     });
   </script>
   {% include seo.html %}
@@ -19,6 +21,7 @@
   <script src="{{ '/assets/viewer.js' | relative_url }}" defer></script>
   {% if page.listing %}<script src="{{ '/assets/directories.js' | relative_url }}" defer></script>{% endif %}
   {% if page.url == '/search/' %}<script src="{{ '/assets/search.js' | relative_url }}" defer></script>{% endif %}
+  {% if page.url == '/' %}<script src="{{ '/assets/memory-architecture.js' | relative_url }}" defer></script>{% endif %}
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>

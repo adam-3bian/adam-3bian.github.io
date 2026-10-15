@@ -1,7 +1,9 @@
 # CHERI Alliance design language
 
-Use the supplied blue CHERI Alliance logo and a light editorial layout. The
-starter kit informs the spacing, column navigation and fully linked cards.
+The creative idea is **Security Starts in Hardware**. Use the supplied blue
+CHERI Alliance logo and a luminous scientific visual language: architectural
+geometries, precise typography, open editorial compositions and restrained
+translucent layers. Depth explains capability authority; it is not decoration.
 Preserve article wording. Build with native Markdown, YAML and shared Jekyll
 includes, generic CSS first, and minimal vanilla JavaScript. No component
 framework, remote font or third-party image viewer is needed.
@@ -10,20 +12,20 @@ framework, remote font or third-party image viewer is needed.
 
 | Rule | Value or purpose |
 | --- | --- |
-| Page | White with pale blue navigation and image surfaces |
+| Page | White `#ffffff` with cool `#f3f7f9` supporting surfaces |
 | Text | Deep blue `#163747`; secondary text `#536874` |
 | Brand and links | CHERI blue `#125770`; darker blue on hover |
-| Accent | CHERI red `#ba1e1e`, used sparingly as a section keyline |
+| Accent | CHERI red `#ba1e1e`, reserved for rejection or meaningful emphasis |
 | Borders | Soft blue-grey `#d6e2e8` |
 | Form boundaries | `--control-line: #738b98`, at least 3:1 against white |
 | Focus | A visible 3px amber outline; never colour alone |
 | Typeface | Locally served Poppins, with system sans-serif fallbacks; monospace for code |
 | Body | 1rem, line height 1.7; scalable headings with tighter line height |
 | Spacing | A quarter-rem rhythm: .25, .5, .75, 1, 1.5, 2, 3 and 4rem |
-| Container | One shared 76rem maximum; prose measure `--reading-width: 78ch` |
-| Gutters | 2.5rem desktop, 1.5rem tablet, 1rem mobile |
+| Container | Full/technical frame 90rem; editorial 76rem; reading 48rem (approximately 78ch at base Poppins size) |
+| Gutters | Fluid 4vw desktop, bounded at 4.5rem; 1.5rem tablet and 1rem mobile |
 | Controls | At least 44px for navigation, buttons and touch targets |
-| Corners | Small .4rem rounding on cards and controls |
+| Corners | Precise .15rem rounding; avoid pill-shaped decorative controls |
 
 CSS tokens also define a 72ch summary measure, .875rem supporting text, scalable
 page and hero titles, a 2rem section rhythm, the shared hover colour and focus
@@ -37,16 +39,25 @@ avoid per-record overrides.
 
 ## Site frame
 
-The header contains the original Alliance logo and five compact native menus.
-Source-backed starting points and featured resources supply the secondary links;
-complete subject navigation remains on section landing pages. The content
-validator generates `_data/primary-navigation.json` from the source records and
-shared landing metadata, avoiding repeated document lookups during rendering.
+The header contains the original Alliance logo and five native menus. The complete
+hierarchy is authoritative in `_config.yml`, including nested `links` groups.
+The validator generates `_data/primary-navigation.json` directly from it. Header
+and section browse share `menu-links.html`; never edit the generated JSON by hand.
+Build has three topic areas: Build, Technology and Resources. Software Developers
+retains its seven-step sequence; Hardware Developers is explicitly TBD and links
+to the existing hardware directory. Capability concepts are nested under their
+overview, beside memory protection and system models in a second technical
+subcolumn on wide screens; platform and software resources also have separate
+subcolumns. Narrower desktop and tablet layouts stack technical subgroups for
+readability. Keep overview
+and general directory routes alongside the detailed destinations.
 Collection active sections use `_data/viewer.yml` associations, with route and
 registered-navigation fallbacks for ordinary pages.
 Native `details` and `summary` keep links available without JavaScript; the small
 navigation script adds keyboard behaviour and the mobile toggle. Mobile menus
-show their second-level destinations directly, without a third disclosure step.
+show grouped destinations directly within each primary disclosure, without
+requiring another disclosure step. Desktop panels use the full shared frame and
+scroll within short viewports; mobile follows document flow.
 Give the logo
 an accessible home-link name and explicit intrinsic dimensions.
 Desktop menu items can wrap when text is enlarged, keeping every label and
@@ -90,9 +101,10 @@ drawn from the matching `_config.yml` groups. Brief group descriptions come from
 shared presentation metadata. Build adds a platform-aware developer progression;
 News and Events reuses the build-time activity include. Native links work without
 JavaScript. Full article text remains in its canonical source page.
-The home index uses a dedicated shared include: one CHERI introduction, two
-starting actions, source-backed topic and audience routes, selected canonical
-case studies, build-time news/events and Alliance participation links. Its
+The home index uses a dedicated shared include: the hardware-security headline,
+two starting actions, Living Memory Architecture, the preserved CHERI introduction,
+source-backed topics and audience routes, selected canonical case studies,
+verified member logos, build-time news/events and Alliance participation links. Its
 original introduction and five main section destinations remain available.
 Presentation metadata lives in `_data/landing.yml`; activity is generated from
 the existing collections, with a useful empty-event state.
@@ -100,7 +112,7 @@ the existing collections, with a useful empty-event state.
 ## Lists and directories
 
 Directories contain introductory Markdown followed by complete native lists.
-People and organisations use compact rows; papers use bibliography rows;
+People and organisations use compact rows; papers and reports use bibliography rows;
 policies use document rows; software, guides and groups use text resource lists.
 Image-led resources retain three/two/one responsive columns. Every entry remains
 one native link, including its image and padding; no nested controls or click
@@ -110,6 +122,10 @@ Directory search, sorting and metadata facets are progressive enhancements,
 generated only from confirmed roles, membership tiers, dates, types and hardware
 relationships. Native organisation alphabet jumps work without JavaScript.
 Control state can be shared in the page URL; counts and empty states are labelled.
+The validator generates confirmed facet options in `_data/directory_facets.json`.
+Real disabled controls reserve their space before enhancement, avoiding a late
+list jump. A small early flag reveals them only for scripting-capable browsers;
+script failure restores the complete native directory without controls.
 Missing metadata stays in the default complete view. Events have distinct upcoming/
 current and past lists. The shared event-status include honours exact timestamps
 and inclusive date-only final days; clients refresh period filters from those
@@ -203,6 +219,79 @@ registry from `_data/page-map.yml`.
 
 Validate content, assets, relationships and logo generation. Build at the root
 and with a non-empty base URL, including safe Jekyll mode. Check content families,
-menus, the footer band, image viewer and no-JavaScript behaviour at 1440, 1024,
+menus, the footer, image viewer and no-JavaScript behaviour at 1920, 1440, 1024,
 768, 640 and 375px. Browser checks cover containment, keyboard operation,
 accessible semantics and centred imagery. Verify the deployed revision.
+
+Select **GitHub Actions** as the Pages publishing source in repository settings.
+A simultaneous legacy branch publisher can bypass the validation workflow and
+use stale generated caches. Changing that source requires repository
+administration; it is not controlled by the Liquid layouts or Pages artifact.
+
+
+## Width and responsive composition
+
+Use `.width-full` / `.width-technical` for the shared 90rem frame,
+`.width-editorial` for a 76rem composition and `.width-reading` for centred 48rem
+prose. The reading token uses rem so headings and paragraphs align to the same
+physical column rather than each interpreting ch at a different font size.
+The article region always spans the full frame. Prose, headings and contents
+centre within it; diagrams, galleries, scrollable tables and full illustrations
+remain wide. Code can use the editorial measure. Floats retain their wrap and
+clear behaviour, without widening every paragraph in their document.
+
+Title/summary regions and homepage scenes balance two columns on desktop.
+Resource grids fill their region; general directory rows use meaningful content
+columns rather than narrow cards. Tablet reduces columns, stacks the home hero
+and editorial illustrations, and retains usable two-column resources. Small
+screens stack headings, introductions, metadata and resources. Test at 320px as
+well as the required 375px. Never solve page overflow by hiding body content.
+
+## Living Memory Architecture
+
+`memory-architecture.html` is original SVG, with 64 isometric cells, elevated
+bounded memory, a translucent authority plane, permitted and rejected paths, and
+separate compartment authority. `_data/memory.yml` contains source-linked example
+explanations. `assets/memory-architecture.js` loads only on the homepage and
+selects examples with native buttons, pressed states and a polite live region.
+No remote runtime, canvas, graphics library or automatic motion is required.
+
+The illustration is a conceptual model, not an emulator or physical memory
+layout. Bounds, permissions, validity, provenance and sealing are distinct.
+Removing store permission illustrates a fault **inside** bounds, separately from
+an out-of-bounds fault. Neither the illustration nor its copy promises complete
+memory safety. All explanations remain available in a native disclosure without
+JavaScript. Transitions are brief, user initiated and respect reduced motion.
+
+## Default collection ordering
+
+`ordered-collection.html` reads `_data/collection_order.json`, generated by the
+existing validator using `scripts/collection_order.rb`. No custom Jekyll plugin
+is involved: safe-mode Pages builds read the committed cache. Regenerate it after
+content changes; never maintain it by hand. Alphabetic comparison is natural,
+case insensitive, with original title and canonical URL ties.
+
+| Collection | Default |
+| --- | --- |
+| People | Displayed name A–Z, including speakers |
+| Organisations | Name A–Z, including members, independent of tier |
+| News | published_date descending; undated last A–Z |
+| Events | Upcoming/current earliest start first; past latest start first |
+| Academic papers | published_year descending, title A–Z; undated last |
+| Hardware | Title A–Z |
+| Software | Title A–Z |
+| Working groups | Name A–Z |
+| Guides | General directory A–Z |
+| Policies | Document title A–Z |
+| Case studies | Title A–Z |
+| Reports and white papers | published_year descending, title A–Z; undated last |
+
+Governing Board pages retain `_data/governing-board.yml` roster order. Curated
+home features, learning pathways and configured navigation retain their explicit
+sequence: pass their selected arrays directly to `cards.html` or `route-list.html`
+rather than applying directory defaults. These are the documented presentation
+overrides; no new front-matter field is needed. Automatic news/events features
+use the shared ordered include. Source timestamps retain their offsets and exact
+expiry; date-only final days remain inclusive through `event-status.html`.
+Client date sorting uses the same collection-specific source field, never an
+update timestamp or a date inferred from a filename.

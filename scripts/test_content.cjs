@@ -131,10 +131,10 @@ const routes = [
         });
         assert.deepEqual(problems, [], `${width}px ${route}`);
         report.layoutChecks++;
-        const footerLinks = await page.locator('.footer-navigation a').evaluateAll(links => links.map(link => ({ title: link.textContent.trim(), href: link.href })));
+        const footerLinks = await page.locator('.footer-navigation a').evaluateAll(links => links.map(link => ({ title: [...link.childNodes].filter(n => n.nodeType === 3 || n.nodeType === 1 && n.getAttribute('aria-hidden') !== 'true').map(n => n.textContent).join('').trim(), href: link.href })));
         assert.deepEqual(footerLinks, footer.groups.flatMap(group => group.links).map(link => ({ title: link.title, href: url(link.url) })), 'Footer must preserve configured links');
         assert.deepEqual(await page.locator('.footer-group-label').allTextContents(), footer.groups.map(group => group.title));
-        assert.deepEqual(await page.locator('.footer-utilities a').evaluateAll(links => links.map(link => ({ title: link.textContent.trim(), href: link.href }))), footer.utilities.map(link => ({ title: link.title, href: url(link.url) })));
+        assert.deepEqual(await page.locator('.footer-utilities a').evaluateAll(links => links.map(link => ({ title: [...link.childNodes].filter(n => n.nodeType === 3 || n.nodeType === 1 && n.getAttribute('aria-hidden') !== 'true').map(n => n.textContent).join('').trim(), href: link.href }))), footer.utilities.map(link => ({ title: link.title, href: url(link.url) })));
         assert.equal(await page.locator('.footer-groups').evaluate(list => getComputedStyle(list).gridTemplateColumns.split(' ').length), width <= 640 ? 1 : width < 1024 ? 2 : 4, 'Footer column layout');
         report.footerChecks++;
         if (route === '/') await page.locator('.site-footer').screenshot({ path: path.join(reportDir, `footer-${width}.png`) });
@@ -168,9 +168,9 @@ const routes = [
           assert.equal(await page.locator('main h1').count(), 1, 'Index has one title');
           assert.equal(await page.locator('main h1').textContent(), expected.home?.title || expected.title);
           if (route === '/') {
-            assert.equal(await page.locator('.home-hero .summary').textContent(), expected.summary);
+            assert.equal(await page.locator('.hero-definition').textContent(), expected.summary);
             assert.equal(await page.locator('.home-purpose').textContent(), expected.title, 'Preserve the original introduction');
-            assert.deepEqual(await page.locator('.home-hero .action-links a').evaluateAll(links => links.map(link => ({ title: link.textContent.trim(), href: link.href }))), [expected.home.primary, expected.home.secondary].map(link => ({ title: link.title, href: url(link.url) })), 'Homepage calls to action');
+            assert.deepEqual(await page.locator('.home-hero .action-links a').evaluateAll(links => links.map(link => ({ title: [...link.childNodes].filter(n => n.nodeType === 3 || n.nodeType === 1 && n.getAttribute('aria-hidden') !== 'true').map(n => n.textContent).join('').trim(), href: link.href }))), [expected.home.primary, expected.home.secondary].map(link => ({ title: link.title, href: url(link.url) })), 'Homepage calls to action');
             assert.equal(await page.locator('.home-journeys > li').count(), expected.home.journeys.length, 'All source-backed audience pathways');
             assert.deepEqual(await page.locator('.home-page .cards .card').evaluateAll(links => links.map(link => link.href)), expected.home.examples.map(slug => url(`/case-studies/${slug}/`)), 'Verified canonical case studies');
             const newsDates = await page.locator('[data-featured="news"] time').evaluateAll(times => times.map(time => time.dateTime));
@@ -184,7 +184,7 @@ const routes = [
             assert.deepEqual(await page.locator('.learning-path a').evaluateAll(links => links.map(a => a.href)), (expected.landing.learning_routes || []).map(url), 'Developer progression');
             assert.equal(await page.locator('main .metadata, main .relationships, main .inspector, main .front-matter-json').count(), 0, 'Landing pages do not expose record or authoring panels');
           }
-          const actual = await page.locator('main .index-navigation a').evaluateAll(links => links.map(link => ({ title: link.textContent.trim(), href: link.href })));
+          const actual = await page.locator('main .index-navigation a').evaluateAll(links => links.map(link => ({ title: [...link.childNodes].filter(n => n.nodeType === 3 || n.nodeType === 1 && n.getAttribute('aria-hidden') !== 'true').map(n => n.textContent).join('').trim(), href: link.href })));
           assert.deepEqual(actual, expected.links.map(link => ({ title: link.title, href: url(link.url) })), 'Index must match the mega-menu labels and order');
           assert.deepEqual(await page.locator('.index-group-label').allTextContents(), expected.groups.map(group => group.title));
           const listProblems = await page.locator('main .index-navigation').evaluate(nav => [...nav.querySelectorAll('a')].flatMap(link => {

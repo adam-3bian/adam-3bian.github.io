@@ -9,6 +9,8 @@ require 'cgi'
 require 'uri'
 require 'digest'
 require_relative 'image_dimensions'
+require_relative 'collection_order'
+require_relative 'directory_facets'
 
 root = File.expand_path('..', __dir__)
 config = Jekyll.configuration('source' => root, 'quiet' => true)
@@ -29,6 +31,12 @@ reference_examples = reference.scan(/<!-- schema: ([\w-]+) -->\s*```yaml\n(.*?)\
 end
 objects = site.pages.select { |p| p.path.start_with?('pages/') } + site.documents
 lookup = objects.to_h { |object| [object.url, object] }
+def navigation_links(nodes)
+  Array(nodes).flat_map do |node|
+    own = node['url'] ? [node.slice('title', 'url')] : []
+    own + navigation_links(node['links'] || node['subcategories'])
+  end
+end
 map_lookup = map.to_h { |entry| [entry['url'], entry] }
 slugs = site.collections.transform_values { |collection| collection.docs.to_h { |doc| [doc.data['slug'], doc] } }
 
@@ -108,7 +116,7 @@ objects.each do |object|
       errors << "Index has no matching mega-menu: #{entry['file']}"
     end
     groups = (menu && menu['subcategories'] || []).map do |group|
-      links = group.fetch('links', []).map { |link| link.slice('title', 'url') }
+      links = navigation_links(group.fetch('links', []))
       links.unshift({'title' => "#{group['title']} overview", 'url' => group['url']}) if group['url']
       {'title' => group['title'], 'links' => links}
     end
@@ -120,9 +128,13 @@ objects.each do |object|
     if object.url == '/'
       home = site.data.dig('landing', 'home') || {}
       errors << 'Missing homepage heading' if home['title'].to_s.strip.empty?
-      routes = [home.dig('primary', 'url'), home.dig('secondary', 'url'), home['problem_source'], home['alliance_source']] + Array(home['topics']) + Array(home['journeys']).map { |journey| journey['url'] }
+      routes = [home.dig('primary', 'url'), home.dig('secondary', 'url'), home['problem_source'], home['alliance_source']] + Array(home['topics']) + Array(home['ecosystem_routes']) + Array(home['journeys']).map { |journey| journey['url'] }
       routes.each { |route| errors << "Unknown homepage route: #{route}" unless lookup.key?(route) }
       Array(home['examples']).each { |slug| errors << "Unknown homepage case study: #{slug}" unless slugs.fetch('case-studies').key?(slug) }
+      Array(home['member_examples']).each do |slug|
+        member = slugs.fetch('organisations')[slug]
+        errors << "Unverified homepage member artwork: #{slug}" unless member && member.data['membership_tier'] && member.data['image_url'] && !member.data['image_url'].include?('placeholder.svg')
+      end
       index_pages[object.url]['home'] = home
     else
       presentation = (site.data.dig('landing', 'sections', object.url) || {}).dup
@@ -418,13 +430,12 @@ File.write(File.join(root, 'reports/index-navigation.json'), JSON.pretty_generat
 public_urls = objects.reject { |object| object.data['alternate'] || object.data['published'] == false || object.data['layout'] == 'redirect' || settings.fetch('aliases', {}).key?(object.url) || settings.fetch('discovery_exclusions', []).include?(object.url) }.map(&:url).uniq.sort
 File.write(File.join(root, 'reports/public-records.json'), JSON.pretty_generate(public_urls) + "\n")
 primary_navigation = header_menu.map do |section|
-  presentation = site.data.dig('landing', 'sections', section['url']) || {}
-  groups = [['Start here', 'introductory_routes'], ['Explore resources', 'featured_routes']].map do |label, key|
-    {'title' => label, 'links' => Array(presentation[key]).filter_map { |route| target = lookup[route]; {'title' => target.data['title'], 'url' => route} if target }}
-  end
-  {'title' => section['title'], 'url' => section['url'], 'groups' => groups}
+  # Configuration is authoritative, including supported nested link groups.
+  {'title' => section['title'], 'url' => section['url'], 'columns' => section.fetch('columns', 3), 'groups' => section.fetch('subcategories', [])}
 end
 File.write(File.join(root, '_data/primary-navigation.json'), JSON.pretty_generate(primary_navigation) + "\n")
+File.write(File.join(root, '_data/collection_order.json'), JSON.pretty_generate(CollectionOrder.generate(site.collections)) + "\n")
+File.write(File.join(root, '_data/directory_facets.json'), JSON.pretty_generate(DirectoryFacets.generate(site.collections, board, objects)) + "\n")
 footer_navigation = {
   'groups' => Array(config.dig('navigation', 'footer')).map do |group|
     {'title' => group['title'], 'links' => Array(group['links']).map { |link| link.slice('title', 'url') }}

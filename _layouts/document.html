@@ -43,7 +43,7 @@ layout: default
   {% if current_kind == 'pages' %}{% include metadata.html %}{% else %}{% include metadata.html facts_only=true %}{% endif %}
   {% assign alias_target = site.data.viewer.aliases[page.url] %}{% if alias_target %}<aside class="notice">This is a retained alias. <a href="{{ alias_target | relative_url }}">Continue to its destination</a>.</aside>{% endif %}
   {% include contents.html %}
-  <section class="article-content" aria-label="Article content">{{ reader_content }}</section>
+  <section class="article-content width-technical" aria-label="Article content">{{ reader_content }}</section>
   {% include relationships.html %}
   {% if page.next_page_url %}<nav class="onward" aria-label="Next page"><a href="{% include href.html url=page.next_page_url %}">Next page</a></nav>{% endif %}
 </article>

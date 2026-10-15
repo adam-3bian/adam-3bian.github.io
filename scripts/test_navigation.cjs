@@ -12,7 +12,16 @@ const report = { widths, panelsChecked: 0, accessibilityChecks: 0 };
 const audit = JSON.parse(fs.readFileSync('reports/preflight.json', 'utf8'));
 const indexes = JSON.parse(fs.readFileSync('reports/index-navigation.json', 'utf8'));
 const primarySource = JSON.parse(fs.readFileSync('_data/primary-navigation.json', 'utf8'));
-const expectedMenuLinks = primarySource.reduce((count, section) => count + 1 + section.groups.reduce((total, group) => total + group.links.length, 0), 0);
+const flatten = nodes => nodes.flatMap(node => [...(node.url ? [node.url] : []), ...flatten(node.groups || node.links || [])]);
+const expectedPrimaryRoutes = flatten(primarySource);
+const expectedMenuLinks = expectedPrimaryRoutes.length;
+const buildSource = primarySource.find(section => section.url === '/build/');
+assert.deepEqual(buildSource.groups.map(group => group.title), ['Build', 'Technology', 'Resources']);
+assert.deepEqual(buildSource.groups[0].links[0].links.map(link => link.title), ['Building Secure Software', 'Choose a Platform', 'Run CHERI in Simulation', 'Install a Toolchain', 'Build Your First Application', 'Port Existing Software', 'Build Compartments']);
+assert.equal(buildSource.groups[0].links[1].status, 'TBD');
+assert.deepEqual(buildSource.groups[1].links[0].links.map(link => link.title), ['Tags & Validity', 'Bounds', 'Permissions', 'Provenance', 'Sealing']);
+assert.equal(buildSource.groups[1].columns, 2, 'Technical concepts have a dedicated wide-screen subcolumn');
+assert.deepEqual(buildSource.groups[1].links[1].links.map(link => link.title), ['Spatial Memory Safety', 'Temporal Memory Safety', 'Compartmentalisation', 'Hybrid Systems', 'Pure-Capability Systems', 'CHERI and Rust — Technical Overview']);
 
 async function assertContained(page, desktop) {
   const problems = await page.evaluate(isDesktop => {
@@ -50,7 +59,7 @@ async function assertAccessible(page) {
     page = await browser.newPage();
     page.on('pageerror', error => { throw error; });
     const coverage = await browser.newPage();
-    const destinations = new Set(primarySource.flatMap(section => [section.url, ...section.groups.flatMap(group => group.links.map(link => link.url))]).map(route => new URL(route.replace(/^\//, ''), base).pathname));
+    const destinations = new Set(expectedPrimaryRoutes.map(route => new URL(route.replace(/^\//, ''), base).pathname));
     for (const route of Object.keys(indexes)) {
       await coverage.goto(new URL(route.replace(/^\//, ''), base).href);
       for (const href of await coverage.locator('main .index-navigation a').evaluateAll(links => links.map(a => new URL(a.href).pathname))) destinations.add(href);
@@ -78,8 +87,8 @@ async function assertAccessible(page) {
       const navigation = page.locator('#primary-navigation');
       const menus = page.locator('.primary-menu');
       assert.equal(await menus.count(), 5);
-      assert.equal(await page.locator('.source-nav a').count(), expectedMenuLinks, 'Primary menu must match source-derived priorities');
-      assert.deepEqual(await page.locator('.source-nav a').evaluateAll(links => links.map(a => new URL(a.href).pathname)), primarySource.flatMap(section => [section.url, ...section.groups.flatMap(group => group.links.map(link => link.url))]).map(route => new URL(route.replace(/^\//, ''), base).pathname));
+      assert.equal(await page.locator('.source-nav a').count(), expectedMenuLinks, 'Primary menu must match the complete configured hierarchy');
+      assert.deepEqual(await page.locator('.source-nav a').evaluateAll(links => links.map(a => new URL(a.href).pathname)), expectedPrimaryRoutes.map(route => new URL(route.replace(/^\//, ''), base).pathname));
       assert.equal(await page.locator('.collection-footer').count(), 0, 'No redundant shortcut band');
       assert.equal(await page.locator('.site-header a[href$="/checks/"], .site-footer a[href$="/checks/"]').count(), 0, 'No editorial utility in visitor navigation');
       assert.equal(await page.locator('.site-header .brand img').getAttribute('alt'), 'CHERI Alliance');

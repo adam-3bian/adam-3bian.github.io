@@ -73,8 +73,9 @@ async function loaded(page, route) {
               const rect = image.getBoundingClientRect();
               const portrait = image.classList.contains('image-portrait') || image.closest('.portrait-gallery');
               const framed = image.classList.contains('lead-image') || image.closest('.card, .record-gallery');
-              const boundedBrand = image.matches('.image-logo, .image-icon') || image.closest('.logo-gallery');
-              const expected = portrait ? 1 : framed ? 3 : boundedBrand ? null : image.naturalWidth / image.naturalHeight;
+              const boundedBrand = image.matches('.image-logo, .image-icon') || image.closest('.logo-gallery, .member-strip');
+              const expected = portrait ? 1 : image.closest('.home-practice .card') ? 4 / 3 : framed ? 3 : boundedBrand ? null : image.naturalWidth / image.naturalHeight;
+              if (image.closest('.member-strip') && (rect.height > 80 || image.closest('a').getBoundingClientRect().height < 44)) errors.push(`Member logo is not bounded or accessible: ${image.src}`);
               if (!framed && image.closest('.article-content') && !image.hasAttribute('width')) errors.push(`No intrinsic layout dimensions: ${image.src}`);
               if (expected && rect.width && Math.abs(rect.width / rect.height - expected) > .02) errors.push(`Incorrect image ratio (${expected}:1): ${image.src}`);
               if (getComputedStyle(image).objectFit !== 'contain') errors.push(`Image may crop labels or portraits: ${image.src}`);

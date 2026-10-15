@@ -15,10 +15,10 @@ layout: default
   <nav class="index-navigation" aria-labelledby="browse-heading"><h2 id="browse-heading">Browse all {{ section_menu.title | escape }} resources</h2>
     <ul class="index-pages columns-{{ section_menu.columns | default: 3 }}" role="list">
       {% for group in section_menu.subcategories %}
-      <li><h3 class="index-group-label">{{ group.title | escape }}</h3>{% if section_data.group_descriptions[group.title] %}<p class="group-description">{{ section_data.group_descriptions[group.title] | escape }}</p>{% endif %}<ul role="list">
-        {% if group.url %}<li><a href="{% include href.html url=group.url %}">{{ group.title | escape }} overview</a></li>{% endif %}
-        {% for item in group.links %}<li><a href="{% include href.html url=item.url %}">{{ item.title | escape }}</a></li>{% endfor %}
-      </ul></li>
+      <li class="menu-group-{{ group.title | slugify }}{% if group.columns == 2 %} menu-group-wide{% endif %}"><h3 class="index-group-label">{{ group.title | escape }}</h3>{% if section_data.group_descriptions[group.title] %}<p class="group-description">{{ section_data.group_descriptions[group.title] | escape }}</p>{% endif %}
+        {% if group.url %}<a href="{% include href.html url=group.url %}">{{ group.title | escape }} overview</a>{% endif %}
+        {% include menu-links.html items=group.links %}
+      </li>
       {% endfor %}
     </ul>
   </nav>

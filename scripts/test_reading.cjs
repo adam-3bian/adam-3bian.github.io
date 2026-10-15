@@ -10,7 +10,7 @@ const routes = ['/guides/install-a-toolchain/', '/guides/choose-a-platform/', '/
 (async () => {
   fs.mkdirSync(output, { recursive: true });
   const browser = await chromium.launch({ headless: true });
-  const report = { widths: [1440, 1024, 768, 640, 375, 320], layouts: 0, accessibility: 0, nativeContents: 0, scrollRegions: 0 };
+  const report = { widths: [1920, 1440, 1024, 768, 640, 375, 320], layouts: 0, accessibility: 0, nativeContents: 0, scrollRegions: 0 };
   try {
     const page = await browser.newPage();
     for (const width of report.widths) {
@@ -30,6 +30,18 @@ const routes = ['/guides/install-a-toolchain/', '/guides/choose-a-platform/', '/
           return problems;
         });
         assert.deepEqual(errors, [], `${route} ${width}`);
+        if (width >= 1024) {
+          const geometry = await page.evaluate(() => {
+            const main = document.querySelector('main').getBoundingClientRect();
+            const article = document.querySelector('.article-content').getBoundingClientRect();
+            const paragraphs = [...document.querySelectorAll('.article-content > p:not(:has(img))')].filter(p => p.getBoundingClientRect().width > 100);
+            return { main: main.width, article: article.width, paragraphs: paragraphs.map(p => ({width: p.getBoundingClientRect().width, max: parseFloat(getComputedStyle(p).maxWidth)})) };
+          });
+          assert(Math.abs(geometry.main - geometry.article) <= 1, 'Technical region uses the full frame');
+          assert(geometry.main >= Math.min(width * .9, 1440) - 8, 'Shared frame expands with available space');
+          assert(geometry.paragraphs.every(p => p.width <= p.max + 1), 'Wide media never expand prose');
+        }
+
         if (width === 375) {
           await page.addScriptTag({ path: process.env.AXE_PATH || require.resolve('axe-core/axe.min.js') });
           const issues = await page.evaluate(async () => (await axe.run('main', { runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa'] } })).violations.map(v => ({ id: v.id, nodes: v.nodes.map(n => n.target) })));

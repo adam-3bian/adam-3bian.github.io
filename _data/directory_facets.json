@@ -1,0 +1,271 @@
+{
+  "posts": [
+
+  ],
+  "people": [
+    {
+      "key": "role",
+      "label": "Documented role",
+      "options": [
+        {
+          "value": "author",
+          "label": "Named authors"
+        },
+        {
+          "value": "board",
+          "label": "Board members"
+        },
+        {
+          "value": "speaker",
+          "label": "Speakers"
+        }
+      ]
+    }
+  ],
+  "news": [
+    {
+      "key": "year",
+      "label": "Source year",
+      "options": [
+        {
+          "value": "2024",
+          "label": "2024"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "unspecified",
+          "label": "Date not specified"
+        }
+      ]
+    }
+  ],
+  "organisations": [
+    {
+      "key": "membership",
+      "label": "Membership",
+      "options": [
+        {
+          "value": "community",
+          "label": "Community members"
+        },
+        {
+          "value": "founder",
+          "label": "Founding members"
+        },
+        {
+          "value": "full",
+          "label": "Full members"
+        },
+        {
+          "value": "unspecified",
+          "label": "Tier not specified"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "key": "year",
+      "label": "Source year",
+      "options": [
+        {
+          "value": "2024",
+          "label": "2024"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2027",
+          "label": "2027"
+        }
+      ]
+    },
+    {
+      "key": "period",
+      "label": "Event period",
+      "options": [
+        {
+          "value": "past",
+          "label": "Past"
+        },
+        {
+          "value": "upcoming",
+          "label": "Upcoming and current"
+        }
+      ]
+    }
+  ],
+  "academic-papers": [
+    {
+      "key": "year",
+      "label": "Source year",
+      "options": [
+        {
+          "value": "2014",
+          "label": "2014"
+        },
+        {
+          "value": "2015",
+          "label": "2015"
+        },
+        {
+          "value": "2019",
+          "label": "2019"
+        },
+        {
+          "value": "2020",
+          "label": "2020"
+        },
+        {
+          "value": "2023",
+          "label": "2023"
+        },
+        {
+          "value": "2024",
+          "label": "2024"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        }
+      ]
+    },
+    {
+      "key": "platform",
+      "label": "Related hardware",
+      "options": [
+        {
+          "value": "cheriot",
+          "label": "CHERIoT"
+        },
+        {
+          "value": "morello",
+          "label": "Morello"
+        }
+      ]
+    }
+  ],
+  "hardware": [
+    {
+      "key": "kind",
+      "label": "Resource type",
+      "options": [
+        {
+          "value": "processor",
+          "label": "processor"
+        },
+        {
+          "value": "unspecified",
+          "label": "Type not specified"
+        }
+      ]
+    }
+  ],
+  "software": [
+    {
+      "key": "platform",
+      "label": "Related hardware",
+      "options": [
+        {
+          "value": "cheriot",
+          "label": "CHERIoT"
+        },
+        {
+          "value": "fpga-platforms",
+          "label": "FPGA Platforms"
+        },
+        {
+          "value": "morello",
+          "label": "Morello"
+        }
+      ]
+    }
+  ],
+  "working-groups": [
+
+  ],
+  "guides": [
+    {
+      "key": "platform",
+      "label": "Related hardware",
+      "options": [
+        {
+          "value": "cheriot",
+          "label": "CHERIoT"
+        },
+        {
+          "value": "cheriot-ibex",
+          "label": "CHERIoT Ibex Certification Record"
+        },
+        {
+          "value": "morello",
+          "label": "Morello"
+        },
+        {
+          "value": "sonata",
+          "label": "Sonata"
+        }
+      ]
+    }
+  ],
+  "policies": [
+    {
+      "key": "year",
+      "label": "Source year",
+      "options": [
+        {
+          "value": "2024",
+          "label": "2024"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "unspecified",
+          "label": "Date not specified"
+        }
+      ]
+    }
+  ],
+  "case-studies": [
+
+  ],
+  "reports": [
+    {
+      "key": "year",
+      "label": "Source year",
+      "options": [
+        {
+          "value": "2019",
+          "label": "2019"
+        },
+        {
+          "value": "2021",
+          "label": "2021"
+        },
+        {
+          "value": "2024",
+          "label": "2024"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        }
+      ]
+    }
+  ]
+}

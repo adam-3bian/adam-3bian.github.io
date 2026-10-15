@@ -7,12 +7,15 @@ const base = process.env.SITE_URL || 'http://127.0.0.1:4000/';
 const url = route => new URL(route.replace(/^\//, ''), base).href;
 const output = path.resolve(process.env.REPORT_ROOT || 'reports', 'directory-tests');
 const source = JSON.parse(fs.readFileSync('reports/preflight.json', 'utf8'));
+const ordering = JSON.parse(fs.readFileSync('_data/collection_order.json', 'utf8'));
 const board = fs.readFileSync('_data/governing-board.yml', 'utf8').split('\n').filter(line => line.startsWith('- ')).map(line => line.slice(2));
-const routes = ['/people/', '/organisations/', '/news/', '/events/', '/academic-papers/', '/hardware/', '/software/', '/guides/', '/reports/', '/working-groups/'];
+const today = new Intl.DateTimeFormat('en-CA', {timeZone: 'Europe/London'}).format(new Date(source.generated_at));
+const eventPeriod = record => { const p = record.properties; const final = p.end_datetime || p.end_date || p.start_datetime || p.start_date; const exact = p.end_datetime || (!p.end_date && p.start_datetime); return exact ? Date.parse(final) >= Date.parse(source.generated_at) ? 'upcoming' : 'past' : final.slice(0,10) >= today ? 'upcoming' : 'past'; };
+const routes = ['/people/', '/organisations/', '/news/', '/events/', '/academic-papers/', '/hardware/', '/software/', '/guides/', '/reports/', '/working-groups/', '/policies/', '/case-studies/'];
 (async () => {
   fs.mkdirSync(output, { recursive: true });
   const browser = await chromium.launch({ headless: true });
-  const report = { widths: [1440, 1024, 768, 640, 375, 320], layouts: 0, accessibility: 0, functionality: 0, noJavaScript: 0 };
+  const report = { widths: [1440, 1024, 768, 640, 375, 320], layouts: 0, accessibility: 0, functionality: 0, noJavaScript: 0, defaultOrdering: 0, curatedOrdering: 0 };
   try {
     const page = await browser.newPage();
     page.on('pageerror', error => { throw error; });
@@ -27,6 +30,13 @@ const routes = ['/people/', '/organisations/', '/news/', '/events/', '/academic-
         const actual = await listing.locator('.card').evaluateAll(cards => cards.map(card => card.dataset.recordUrl).sort());
         assert.deepEqual(actual, records.map(record => record.url).sort(), 'Complete directory before filters');
         assert.equal(await listing.locator('[data-directory-item]:visible').count(), records.length, 'Missing metadata must remain in the default view');
+        const expectedOrder = collection === 'events' ? [
+          ...ordering.collections.events.filter(route => records.some(record => record.url === route && eventPeriod(record) === 'upcoming')),
+          ...ordering.event_archive.filter(route => records.some(record => record.url === route && eventPeriod(record) === 'past')),
+        ] : ordering.collections[collection];
+        assert.deepEqual(await listing.locator('.card').evaluateAll(cards => cards.map(card => card.dataset.recordUrl)), expectedOrder, `${collection} default source order`);
+        report.defaultOrdering++;
+
         assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, `${route} ${width}`);
         const query = listing.getByLabel('Find in this directory');
         await query.fill('cheri-directory-no-result-329432');
@@ -84,7 +94,48 @@ const routes = ['/people/', '/organisations/', '/news/', '/events/', '/academic-
       const collection = await plain.locator('.listing').getAttribute('data-listing');
       assert.equal(await plain.locator('.listing .card:visible').count(), source.records.filter(record => record.collection === collection && !record.alternate).length);
       report.noJavaScript++;
+      const all = source.records.filter(record => record.collection === collection && !record.alternate);
+      const expected = collection === 'events' ? [...ordering.collections.events.filter(route => all.some(record => record.url === route && eventPeriod(record) === 'upcoming')), ...ordering.event_archive.filter(route => all.some(record => record.url === route && eventPeriod(record) === 'past'))] : ordering.collections[collection];
+      assert.deepEqual(await plain.locator('.listing .card').evaluateAll(cards => cards.map(card => card.dataset.recordUrl)), expected, 'Static defaults match enhanced defaults');
+      report.defaultOrdering++;
+
     }
+    for (const [route, expected] of [
+      ['/alliance/leadership/governing-board/', board.map(slug => `/people/${slug}/`)],
+      ['/news-and-events/people-and-opportunities/speakers/', ordering.collections.people.filter(route => source.records.some(r => r.url === route && r.properties.is_speaker))],
+      ['/alliance/leadership/members/', ordering.collections.organisations.filter(route => source.records.some(r => r.url === route && r.properties.membership_tier))],
+    ]) {
+      for (const target of [plain, page]) {
+        await target.goto(url(route));
+        assert.deepEqual(await target.locator('.listing .card').evaluateAll(cards => cards.map(card => card.dataset.recordUrl)), expected, `Purposeful order: ${route}`);
+        report.curatedOrdering++;
+      }
+    }
+    // The real source-backed controls reserve the list's position before JS.
+    const delayed = await browser.newPage({viewport: {width: 375, height: 900}});
+    let release;
+    const gate = new Promise(resolve => { release = resolve; });
+    await delayed.route('**/directories.js', async route => { await gate; await route.continue(); });
+    await delayed.goto(url('/people/'), {waitUntil: 'commit'});
+    await delayed.locator('.directory-controls').waitFor({state: 'visible'});
+    await delayed.locator('.listing .cards').waitFor({state: 'visible'});
+    await delayed.evaluate(() => Promise.all([document.fonts.load('400 16px Poppins'), document.fonts.load('600 16px Poppins')]));
+    assert.equal(await delayed.locator('.directory-controls fieldset').evaluate(fieldset => fieldset.disabled), true);
+    assert.equal(await delayed.getByLabel('Find in this directory').isDisabled(), true);
+    const reserved = await delayed.locator('.listing .cards').boundingBox();
+    release();
+    await delayed.waitForLoadState('load');
+    const enhanced = await delayed.locator('.listing .cards').boundingBox();
+    assert(Math.abs(reserved.y - enhanced.y) < 1, 'Directory enhancement must not shift the list');
+    assert.equal(await delayed.getByLabel('Find in this directory').isDisabled(), false);
+    await delayed.close();
+    const unavailable = await browser.newPage({viewport: {width: 375, height: 900}});
+    await unavailable.route('**/directories.js', route => route.abort());
+    await unavailable.goto(url('/people/'));
+    assert.equal(await unavailable.locator('.directory-controls').isVisible(), false);
+    assert.equal(await unavailable.locator('.listing .card:visible').count(), ordering.collections.people.length, 'Failed enhancement keeps every native record');
+    await unavailable.close();
+    report.loading = 'Stable deferred controls and complete fallback after script failure';
     fs.writeFileSync(path.join(output, 'results.json'), JSON.stringify(report, null, 2) + '\n');
     console.log(JSON.stringify(report));
   } finally { await browser.close(); }

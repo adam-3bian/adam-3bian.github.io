@@ -3,12 +3,14 @@
 <section class="relationships" aria-labelledby="relationships">
   <h2 id="relationships">Related content</h2>
   {% for group in relation_groups %}
-  <h3>{{ group.label | escape }}</h3>
+  <section class="relationship-group" aria-labelledby="related-group-{{ forloop.index }}">
+  <h3 id="related-group-{{ forloop.index }}">{{ group.label | escape }}</h3>
   <ul class="link-grid" role="list">
     {% for target in group.targets %}
     <li><a href="{{ target.url | relative_url }}">{{ target.title | escape }}</a></li>
     {% endfor %}
   </ul>
+  </section>
   {% endfor %}
 </section>
 {% endif %}

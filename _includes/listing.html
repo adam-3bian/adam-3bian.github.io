@@ -1,13 +1,10 @@
-{% assign list_collection = include.collection %}{% assign list_items = site[list_collection] | where_exp: 'record', 'record.alternate != true' %}
+{% assign list_collection = include.collection %}{% include ordered-collection.html collection=list_collection %}{% assign list_items = ordered_items %}
 {% assign preset = site.data.viewer.listing_presets[page.url] %}{% assign list_role = page.listing.role | default: preset.role %}{% assign list_status = page.listing.status | default: preset.status %}
 {% if page.certification %}{% assign list_items = list_items | where: 'certification', page.certification %}{% endif %}
 {% if list_role == 'speaker' %}{% assign list_items = list_items | where: 'is_speaker', true %}{% elsif list_role == 'member' %}{% assign list_items = list_items | where_exp: 'record', 'record.membership_tier != nil' %}
 {% elsif list_role == 'board' %}{% assign board_items = '' | split: '' %}{% for person_slug in site.data.governing-board %}{% assign person = list_items | where: 'slug', person_slug | first %}{% if person %}{% assign board_items = board_items | push: person %}{% endif %}{% endfor %}{% assign list_items = board_items %}{% endif %}
 {% if list_collection == 'events' and list_status %}{% assign eligible = '' | split: '' %}{% for candidate in list_items %}{% capture candidate_status %}{% include event-status.html item=candidate %}{% endcapture %}{% assign candidate_status = candidate_status | strip %}{% if candidate_status == list_status %}{% assign eligible = eligible | push: candidate %}{% endif %}{% endfor %}{% assign list_items = eligible %}{% endif %}
-{% if list_collection == 'news' %}{% assign dated_items = list_items | where_exp: 'record', 'record.published_date != nil' | sort: 'published_date' | reverse %}{% assign undated_items = list_items | where_exp: 'record', 'record.published_date == nil' | sort_natural: 'title' %}{% assign list_items = dated_items | concat: undated_items %}
-{% elsif list_collection == 'events' %}{% capture event_sort_rows %}{% for event_item in list_items %}{% assign event_key = event_item.start_datetime | default: event_item.start_date | default: '9999-12-31' %}{{ event_key }}~{{ event_item.url }}|{% endfor %}{% endcapture %}{% assign event_sort_rows = event_sort_rows | split: '|' | sort %}{% assign sorted_events = '' | split: '' %}{% for row in event_sort_rows %}{% assign event_url = row | split: '~' | last %}{% assign sorted_event = list_items | where: 'url', event_url | first %}{% if sorted_event %}{% assign sorted_events = sorted_events | push: sorted_event %}{% endif %}{% endfor %}{% assign list_items = sorted_events %}
-{% elsif list_role != 'board' %}{% assign list_items = list_items | sort_natural: 'title' %}{% endif %}
-{% if list_status == 'past' %}{% assign list_items = list_items | reverse %}{% endif %}
+{% if list_status == 'past' %}{% assign archive_items = '' | split: '' %}{% for archive_url in site.data.collection_order.event_archive %}{% assign archive_record = list_items | where: 'url', archive_url | first %}{% if archive_record %}{% assign archive_items = archive_items | push: archive_record %}{% endif %}{% endfor %}{% assign list_items = archive_items %}{% endif %}
 {% assign collection_label = site.data.viewer.collections[list_collection].label | default: list_collection %}
 {% assign listing_heading = 'Browse ' | append: collection_label | downcase | capitalize %}
 {% case list_role %}{% when 'board' %}{% assign listing_heading = 'Board members' %}{% when 'member' %}{% assign listing_heading = 'Member directory' %}{% when 'speaker' %}{% assign listing_heading = 'Speaker directory' %}{% endcase %}
@@ -17,7 +14,7 @@
 {% assign list_style = 'image-list' %}
 {% case list_collection %}
   {% when 'people', 'organisations' %}{% assign list_style = 'directory-list' %}
-  {% when 'academic-papers' %}{% assign list_style = 'bibliography-list' %}
+  {% when 'academic-papers', 'reports' %}{% assign list_style = 'bibliography-list' %}
   {% when 'policies' %}{% assign list_style = 'document-list' %}
   {% when 'software', 'guides', 'working-groups' %}{% assign list_style = 'resource-list' %}
 {% endcase %}
@@ -29,7 +26,7 @@
     {% if list_collection == 'events' and list_status == nil %}
       {% assign upcoming_items = '' | split: '' %}{% assign past_items = '' | split: '' %}{% for item in list_items %}{% capture item_status %}{% include event-status.html item=item %}{% endcapture %}{% assign item_status = item_status | strip %}{% if item_status == 'upcoming' %}{% assign upcoming_items = upcoming_items | push: item %}{% else %}{% assign past_items = past_items | push: item %}{% endif %}{% endfor %}
       <section class="event-period" data-event-period="upcoming" aria-labelledby="upcoming-directory-heading"><h3 id="upcoming-directory-heading">Upcoming and current events</h3>{% if upcoming_items.size > 0 %}{% include cards.html items=upcoming_items show_images=show_card_images style=list_style collection=list_collection directory=true heading_level=4 %}{% else %}<p>No upcoming events are listed at the moment.</p><ul class="cards image-list" role="list"></ul>{% endif %}</section>
-      {% assign past_items = past_items | reverse %}<section class="event-period" data-event-period="past" aria-labelledby="past-directory-heading"><h3 id="past-directory-heading">Past events</h3>{% if past_items.size > 0 %}{% include cards.html items=past_items show_images=show_card_images style=list_style collection=list_collection directory=true heading_level=4 %}{% else %}<p>No past events are listed at the moment.</p><ul class="cards image-list" role="list"></ul>{% endif %}</section>
+      {% assign archive_items = '' | split: '' %}{% for archive_url in site.data.collection_order.event_archive %}{% assign archive_record = past_items | where: 'url', archive_url | first %}{% if archive_record %}{% assign archive_items = archive_items | push: archive_record %}{% endif %}{% endfor %}<section class="event-period" data-event-period="past" aria-labelledby="past-directory-heading"><h3 id="past-directory-heading">Past events</h3>{% if archive_items.size > 0 %}{% include cards.html items=archive_items show_images=show_card_images style=list_style collection=list_collection directory=true heading_level=4 %}{% else %}<p>No past events are listed at the moment.</p><ul class="cards image-list" role="list"></ul>{% endif %}</section>
     {% else %}{% include cards.html items=list_items role=list_role show_images=show_card_images style=list_style collection=list_collection directory=true %}{% endif %}
   {% else %}<p class="notice">No {{ collection_label | downcase | escape }} to display yet.</p>{% endif %}
 </section>

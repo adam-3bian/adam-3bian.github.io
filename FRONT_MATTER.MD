@@ -153,7 +153,8 @@ Events and upcoming events sort by start time/date, earliest first; past-event a
 | `related.hardware` | Slug array | Referenced hardware. |
 | `related.software` | Slug array | Referenced software. |
 
-The canonical bibliography is `/academic-papers/`; academic records are stored in `_academic-papers` with assets under `assets/academic-papers/<record-name>/`. Record URLs now use `/academic-papers/<record-name>/`. The former `/papers/` directory, all `/papers/<record-name>/` records and the old Discover overview redirect directly to their canonical destinations. Do not maintain a second list of the same citations in a general page.
+The bibliography defaults to `published_year` descending, then title A–Z, with
+undated records last. The canonical bibliography is `/academic-papers/`; academic records are stored in `_academic-papers` with assets under `assets/academic-papers/<record-name>/`. Record URLs now use `/academic-papers/<record-name>/`. The former `/papers/` directory, all `/papers/<record-name>/` records and the old Discover overview redirect directly to their canonical destinations. Do not maintain a second list of the same citations in a general page.
 
 ## Case studies (`_case-studies`)
 
@@ -756,3 +757,7 @@ related:
 5. Run `bundle exec ruby scripts/check_content.rb`, then `JEKYLL_ENV=production bundle exec jekyll build --destination _site`, `python3 scripts/check_collection_links.py` and `python3 scripts/check_page_content.py`.
 
 The validator refreshes `_data/checks.yml`, `_data/relationships.yml` and the audit reports. Do not hand-edit generated reverse relationships. This reference is excluded from the built website and remains available in the repository.
+
+Directory ordering is a shared presentation rule documented in [DESIGN.MD](DESIGN.MD).
+Do not add inferred dates or priority fields to control it. Board rosters, curated
+learning sequences and featured resource arrays retain their explicit order.

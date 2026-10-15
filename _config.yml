@@ -440,94 +440,103 @@ navigation:
     url: /adopt/
   - title: Build
     type: megamenu
-    columns: 4
+    columns: 3
     subcategories:
-    - title: Software Developers
+    - title: Build
       links:
-      - title: Building Secure Software
-        url: /guides/building-secure-software/
-      - title: Choose a Platform
-        url: /guides/choose-a-platform/
-      - title: Run CHERI in Simulation
-        url: /guides/run-cheri-in-simulation/
-      - title: Install a Toolchain
-        url: /guides/install-a-toolchain/
-      - title: Build Your First Application
-        url: /guides/build-your-first-application/
+      - title: Software Developers
+        links:
+        - title: Building Secure Software
+          url: /guides/building-secure-software/
+        - title: Choose a Platform
+          url: /guides/choose-a-platform/
+        - title: Run CHERI in Simulation
+          url: /guides/run-cheri-in-simulation/
+        - title: Install a Toolchain
+          url: /guides/install-a-toolchain/
+        - title: Build Your First Application
+          url: /guides/build-your-first-application/
+        - title: Port Existing Software
+          url: /guides/port-existing-software/
+        - title: Build Compartments
+          url: /guides/build-compartments/
+      - title: Hardware Developers
+        status: TBD
+        url: /hardware/
+    - title: Technology
+      columns: 2
+      links:
+      - title: How CHERI Capabilities Work
+        url: /build/technology/capabilities/
+        links:
+        - title: Tags & Validity
+          url: /build/technology/tags-and-validity/
+        - title: Bounds
+          url: /build/technology/bounds/
+        - title: Permissions
+          url: /build/technology/permissions/
+        - title: Provenance
+          url: /build/technology/provenance/
+        - title: Sealing
+          url: /build/technology/sealing/
+      - title: Memory protection & system models
+        links:
+        - title: Spatial Memory Safety
+          url: /build/technology/spatial-memory-safety/
+        - title: Temporal Memory Safety
+          url: /build/technology/temporal-memory-safety/
+        - title: Compartmentalisation
+          url: /build/technology/compartmentalisation/
+        - title: Hybrid Systems
+          url: /build/technology/hybrid-systems/
+        - title: Pure-Capability Systems
+          url: /build/technology/pure-capability-systems/
+        - title: CHERI and Rust — Technical Overview
+          url: /build/technology/cheri-and-rust-technical/
+    - title: Resources
+      columns: 2
+      links:
       - title: Tutorials & Training
         url: /guides/tutorials-and-training/
-      - title: Port Existing Software
-        url: /guides/port-existing-software/
-      - title: Build Compartments
-        url: /guides/build-compartments/
+      - title: Development Platforms
+        links:
+        - title: CHERIoT
+          url: /hardware/cheriot/
+        - title: Sonata
+          url: /hardware/sonata/
+        - title: FPGA Platforms
+          url: /hardware/fpga-platforms/
+        - title: Simulators
+          url: /software/simulators/
+        - title: Morello
+          url: /hardware/morello/
+        - title: Return an unused Morello Board
+          url: /morello-return/
+        - title: Platform Comparison
+          url: /build/platforms/platform-comparison/
+      - title: Software Ecosystem
+        url: /build/software-ecosystem/
+        links:
+        - title: LLVM & Clang
+          url: /software/llvm-and-clang/
+        - title: Rust
+          url: /software/rust/
+        - title: CheriBSD
+          url: /software/cheribsd/
+        - title: CHERI Linux
+          url: /software/cheri-linux/
+        - title: Zephyr
+          url: /software/zephyr/
+        - title: Debugging Tools
+          url: /software/debugging-tools/
+        - title: All software
+          url: /software/
+      - title: CHERI Products
+        url: /build/platforms/cheri-products/
       - title: Downloads
         url: /guides/downloads/
       - title: Technical FAQ
         url: /guides/technical-faq/
-    - title: Technology
-      links:
-      - title: CHERI and Rust - Technical Overview
-        url: /build/technology/cheri-and-rust-technical/
-      - title: Capabilities
-        url: /build/technology/capabilities/
-      - title: Tags & Validity
-        url: /build/technology/tags-and-validity/
-      - title: Bounds
-        url: /build/technology/bounds/
-      - title: Permissions
-        url: /build/technology/permissions/
-      - title: Provenance
-        url: /build/technology/provenance/
-      - title: Sealing
-        url: /build/technology/sealing/
-      - title: Spatial Memory Safety
-        url: /build/technology/spatial-memory-safety/
-      - title: Temporal Memory Safety
-        url: /build/technology/temporal-memory-safety/
-      - title: Compartmentalisation
-        url: /build/technology/compartmentalisation/
-      - title: Hybrid Systems
-        url: /build/technology/hybrid-systems/
-      - title: Pure-Capability Systems
-        url: /build/technology/pure-capability-systems/
-    - title: Platforms
-      links:
-      - title: Platform Comparison
-        url: /build/platforms/platform-comparison/
-      - title: Morello
-        url: /hardware/morello/
-      - title: CHERIoT
-        url: /hardware/cheriot/
-      - title: Sonata
-        url: /hardware/sonata/
-      - title: FPGA Platforms
-        url: /hardware/fpga-platforms/
-      - title: Simulators
-        url: /software/simulators/
-      - title: CHERI Products
-        url: /build/platforms/cheri-products/
-      - title: Hardware
-        url: /hardware/
-      - title: Return an unused Morello Board
-        url: /morello-return/
-    - title: Software Ecosystem
-      links:
-      - title: Software Ecosystem
-        url: /build/software-ecosystem/
-      - title: LLVM & Clang
-        url: /software/llvm-and-clang/
-      - title: Rust
-        url: /software/rust/
-      - title: CheriBSD
-        url: /software/cheribsd/
-      - title: CHERI Linux
-        url: /software/cheri-linux/
-      - title: Zephyr
-        url: /software/zephyr/
-      - title: Debugging Tools
-        url: /software/debugging-tools/
-      - title: All software
-        url: /software/
     url: /build/
   - title: CHERI Alliance
     type: megamenu
@@ -578,7 +587,7 @@ navigation:
       - title: Privacy
         url: /policies/privacy/
     url: /alliance/
-  - title: News and Events
+  - title: News & Events
     type: megamenu
     columns: 3
     subcategories:

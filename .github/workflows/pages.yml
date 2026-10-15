@@ -33,6 +33,8 @@ jobs:
         run: bundle exec ruby scripts/check_content.rb
       - name: Verify build-time activity and empty-event fallback
         run: bundle exec ruby scripts/test_activity.rb
+      - name: Verify all twelve collection ordering defaults
+        run: bundle exec ruby scripts/test_collection_order.rb
       - name: Verify original organisation artwork in SVG masks
         run: python3 scripts/prepare_organisation_logos.py --check
       - name: Verify safe Jekyll and non-empty base URL

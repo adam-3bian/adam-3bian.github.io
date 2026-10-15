@@ -2,6 +2,7 @@
 (() => {
   const normalise = value => String(value || '').normalize('NFKC').toLocaleLowerCase('en-GB');
   const collator = new Intl.Collator('en-GB', { sensitivity: 'base', numeric: true });
+  const dateValue = value => /^\d{4}$/.test(String(value)) ? Number(value) : Date.parse(value);
   for (const listing of document.querySelectorAll('.listing')) {
     const form = listing.querySelector('.directory-controls');
     if (!form) continue;
@@ -28,7 +29,9 @@
     }
     function addFacet(key, label, valuesFor, labelFor) {
       const values = new Set(rows.flatMap(row => valuesFor(row.data)));
-      if (values.size < 2) return;
+      const existing = form.elements[key];
+      if (values.size < 2) { if (existing) existing.closest('.control-field').hidden = true; return; }
+      if (existing) { facets.push({ key, select: existing, valuesFor }); return; }
       const control = document.createElement('p'); control.className = 'control-field';
       const name = document.createElement('label'); name.textContent = label; name.htmlFor = `directory-${collection}-${key}`;
       const select = document.createElement('select'); select.name = key; select.id = name.htmlFor;
@@ -49,16 +52,16 @@
     }
     const parents = [...new Set(rows.map(row => row.parent))];
     function compare(a, b) {
-      const title = collator.compare(a.data.title, b.data.title) || a.data.title.localeCompare(b.data.title) || a.position - b.position;
+      const title = collator.compare(a.data.title, b.data.title) || a.data.title.localeCompare(b.data.title) || a.element.querySelector('a').href.localeCompare(b.element.querySelector('a').href);
       if (sort.value === 'title') return title;
       if (sort.value === 'title-desc') return -title;
       if (sort.value === 'newest' || sort.value === 'oldest') {
         if (!a.data.date || !b.data.date) return !a.data.date && !b.data.date ? title : a.data.date ? -1 : 1;
-        const date = String(a.data.date).localeCompare(String(b.data.date));
+        const date = dateValue(a.data.date) - dateValue(b.data.date);
         return (sort.value === 'newest' ? -date : date) || title;
       }
       if (collection === 'events' && !listing.dataset.status) {
-        const date = String(a.data.date).localeCompare(String(b.data.date));
+        const date = dateValue(a.data.date) - dateValue(b.data.date);
         return (a.parent.closest('[data-event-period]').dataset.eventPeriod === 'past' ? -date : date) || title;
       }
       return a.position - b.position;
@@ -104,6 +107,9 @@
     form.addEventListener('submit', event => { event.preventDefault(); clearTimeout(timer); update(); });
     form.addEventListener('reset', event => { event.preventDefault(); clearTimeout(timer); input.value = ''; sort.value = 'original'; facets.forEach(facet => { facet.select.value = ''; }); update(); input.focus(); });
     form.hidden = false;
+    form.querySelector('fieldset').disabled = false;
+    form.removeAttribute('aria-busy');
+    form.setAttribute('data-directory-ready', '');
     update();
   }
 })();

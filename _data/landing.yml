@@ -1,12 +1,13 @@
 # Presentation copy is drawn from the linked, existing public resources.
 home:
-  title: 'CHERI: hardware foundations for safer software'
+  title: Security Starts in Hardware.
+  statement: Hardware-enforced memory protection. Open technology. A global ecosystem building more secure computing.
   primary:
-    title: Understand CHERI
-    url: /discover/understand/how-does-cheri-work/
+    title: Discover CHERI
+    url: /discover/
   secondary:
-    title: Start building
-    url: /guides/choose-a-platform/
+    title: Start Building
+    url: /build/
   problem: Memory-safety vulnerabilities remain one of the biggest challenges in cybersecurity. Attackers routinely exploit software bugs to steal data, take control of systems, bypass security boundaries, and disrupt critical services.
   problem_source: /discover/why-cheri/why-cheri/
   topics:
@@ -14,12 +15,12 @@ home:
   - /discover/why-cheri/approaches-to-memory-safety/
   - /build/technology/compartmentalisation/
   journeys:
-  - title: New to CHERI?
+  - title: Discover
     url: /discover/
-  - title: Developing software or hardware?
-    url: /build/
-  - title: Evaluating CHERI for your organisation?
+  - title: Adopt
     url: /adopt/
+  - title: Build
+    url: /build/
   - title: Exploring CHERI research?
     url: /discover/resources/documentation-and-guides/
   - title: Interested in Alliance membership?
@@ -28,6 +29,18 @@ home:
   - morello
   - cheriot
   - codasip-x730
+  ecosystem_routes:
+  - /hardware/cheriot/
+  - /software/cheribsd/
+  - /software/llvm-and-clang/
+  - /software/rust/
+  member_examples:
+  - codasip
+  - google
+  - lowrisc
+  - sci-semiconductor
+  - siemens
+  - university-of-cambridge
   alliance_intro: The CHERI Alliance brings together industry, research, government, and open-source communities to accelerate the adoption of CHERI technology.
   alliance_source: /organisations/cheri-alliance/
 sections:
@@ -81,10 +94,9 @@ sections:
     - /guides/technical-faq/
     learning_note: Use the installation route supplied by your platform rather than assembling unrelated binaries by hand.
     group_descriptions:
-      Software Developers: Development guides, platform choices, training and porting.
+      Build: Software development, platform choices, tools and porting. Hardware development guidance is planned; the existing hardware directory is available now.
       Technology: Capabilities, memory protection, compartmentalisation and system models.
-      Platforms: Evaluation hardware, embedded platforms, commercial products and simulation.
-      Software Ecosystem: Operating systems, compilers, languages and debugging tools.
+      Resources: Development platforms, operating systems, compilers, training and technical references.
     next:
       title: Browse all development guides
       url: /guides/

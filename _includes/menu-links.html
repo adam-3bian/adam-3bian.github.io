@@ -1,0 +1,7 @@
+{% comment %}The same recursive source hierarchy serves the header and complete section browse.{% endcomment %}
+<ul class="menu-links" role="list">{% for menu_item in include.items %}
+  <li{% if menu_item.links %} class="has-children"{% endif %}>
+    {% if menu_item.url %}<a href="{{ menu_item.url | relative_url }}"{% if page.url == menu_item.url %} aria-current="page"{% endif %}>{{ menu_item.title | escape }}</a>{% else %}<span class="nested-menu-label">{{ menu_item.title | escape }}</span>{% endif %}{% if menu_item.status %}<span class="menu-status">{{ menu_item.status | escape }}</span>{% endif %}
+    {% if menu_item.links %}{% include menu-links.html items=menu_item.links %}{% endif %}
+  </li>{% endfor %}
+</ul>

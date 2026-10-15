@@ -316,10 +316,10 @@
   "/build/": {
     "title": "Build with CHERI",
     "summary": "Find development guides, technical explanations, hardware platforms, and software tools for building with CHERI.",
-    "columns": 4,
+    "columns": 3,
     "groups": [
       {
-        "title": "Software Developers",
+        "title": "Build",
         "links": [
           {
             "title": "Building Secure Software",
@@ -342,10 +342,6 @@
             "url": "/guides/build-your-first-application/"
           },
           {
-            "title": "Tutorials & Training",
-            "url": "/guides/tutorials-and-training/"
-          },
-          {
             "title": "Port Existing Software",
             "url": "/guides/port-existing-software/"
           },
@@ -354,12 +350,8 @@
             "url": "/guides/build-compartments/"
           },
           {
-            "title": "Downloads",
-            "url": "/guides/downloads/"
-          },
-          {
-            "title": "Technical FAQ",
-            "url": "/guides/technical-faq/"
+            "title": "Hardware Developers",
+            "url": "/hardware/"
           }
         ]
       },
@@ -367,11 +359,7 @@
         "title": "Technology",
         "links": [
           {
-            "title": "CHERI and Rust - Technical Overview",
-            "url": "/build/technology/cheri-and-rust-technical/"
-          },
-          {
-            "title": "Capabilities",
+            "title": "How CHERI Capabilities Work",
             "url": "/build/technology/capabilities/"
           },
           {
@@ -413,19 +401,19 @@
           {
             "title": "Pure-Capability Systems",
             "url": "/build/technology/pure-capability-systems/"
+          },
+          {
+            "title": "CHERI and Rust — Technical Overview",
+            "url": "/build/technology/cheri-and-rust-technical/"
           }
         ]
       },
       {
-        "title": "Platforms",
+        "title": "Resources",
         "links": [
           {
-            "title": "Platform Comparison",
-            "url": "/build/platforms/platform-comparison/"
-          },
-          {
-            "title": "Morello",
-            "url": "/hardware/morello/"
+            "title": "Tutorials & Training",
+            "url": "/guides/tutorials-and-training/"
           },
           {
             "title": "CHERIoT",
@@ -444,22 +432,17 @@
             "url": "/software/simulators/"
           },
           {
-            "title": "CHERI Products",
-            "url": "/build/platforms/cheri-products/"
-          },
-          {
-            "title": "Hardware",
-            "url": "/hardware/"
+            "title": "Morello",
+            "url": "/hardware/morello/"
           },
           {
             "title": "Return an unused Morello Board",
             "url": "/morello-return/"
-          }
-        ]
-      },
-      {
-        "title": "Software Ecosystem",
-        "links": [
+          },
+          {
+            "title": "Platform Comparison",
+            "url": "/build/platforms/platform-comparison/"
+          },
           {
             "title": "Software Ecosystem",
             "url": "/build/software-ecosystem/"
@@ -491,6 +474,18 @@
           {
             "title": "All software",
             "url": "/software/"
+          },
+          {
+            "title": "CHERI Products",
+            "url": "/build/platforms/cheri-products/"
+          },
+          {
+            "title": "Downloads",
+            "url": "/guides/downloads/"
+          },
+          {
+            "title": "Technical FAQ",
+            "url": "/guides/technical-faq/"
           }
         ]
       }
@@ -517,10 +512,6 @@
         "url": "/guides/build-your-first-application/"
       },
       {
-        "title": "Tutorials & Training",
-        "url": "/guides/tutorials-and-training/"
-      },
-      {
         "title": "Port Existing Software",
         "url": "/guides/port-existing-software/"
       },
@@ -529,19 +520,11 @@
         "url": "/guides/build-compartments/"
       },
       {
-        "title": "Downloads",
-        "url": "/guides/downloads/"
+        "title": "Hardware Developers",
+        "url": "/hardware/"
       },
       {
-        "title": "Technical FAQ",
-        "url": "/guides/technical-faq/"
-      },
-      {
-        "title": "CHERI and Rust - Technical Overview",
-        "url": "/build/technology/cheri-and-rust-technical/"
-      },
-      {
-        "title": "Capabilities",
+        "title": "How CHERI Capabilities Work",
         "url": "/build/technology/capabilities/"
       },
       {
@@ -585,12 +568,12 @@
         "url": "/build/technology/pure-capability-systems/"
       },
       {
-        "title": "Platform Comparison",
-        "url": "/build/platforms/platform-comparison/"
+        "title": "CHERI and Rust — Technical Overview",
+        "url": "/build/technology/cheri-and-rust-technical/"
       },
       {
-        "title": "Morello",
-        "url": "/hardware/morello/"
+        "title": "Tutorials & Training",
+        "url": "/guides/tutorials-and-training/"
       },
       {
         "title": "CHERIoT",
@@ -609,16 +592,16 @@
         "url": "/software/simulators/"
       },
       {
-        "title": "CHERI Products",
-        "url": "/build/platforms/cheri-products/"
-      },
-      {
-        "title": "Hardware",
-        "url": "/hardware/"
+        "title": "Morello",
+        "url": "/hardware/morello/"
       },
       {
         "title": "Return an unused Morello Board",
         "url": "/morello-return/"
+      },
+      {
+        "title": "Platform Comparison",
+        "url": "/build/platforms/platform-comparison/"
       },
       {
         "title": "Software Ecosystem",
@@ -651,6 +634,18 @@
       {
         "title": "All software",
         "url": "/software/"
+      },
+      {
+        "title": "CHERI Products",
+        "url": "/build/platforms/cheri-products/"
+      },
+      {
+        "title": "Downloads",
+        "url": "/guides/downloads/"
+      },
+      {
+        "title": "Technical FAQ",
+        "url": "/guides/technical-faq/"
       }
     ],
     "landing": {
@@ -674,10 +669,9 @@
       ],
       "learning_note": "Use the installation route supplied by your platform rather than assembling unrelated binaries by hand.",
       "group_descriptions": {
-        "Software Developers": "Development guides, platform choices, training and porting.",
+        "Build": "Software development, platform choices, tools and porting. Hardware development guidance is planned; the existing hardware directory is available now.",
         "Technology": "Capabilities, memory protection, compartmentalisation and system models.",
-        "Platforms": "Evaluation hardware, embedded platforms, commercial products and simulation.",
-        "Software Ecosystem": "Operating systems, compilers, languages and debugging tools."
+        "Resources": "Development platforms, operating systems, compilers, training and technical references."
       },
       "next": {
         "title": "Browse all development guides",
@@ -877,19 +871,20 @@
         "url": "/alliance/"
       },
       {
-        "title": "News and Events",
+        "title": "News & Events",
         "url": "/news-and-events/"
       }
     ],
     "home": {
-      "title": "CHERI: hardware foundations for safer software",
+      "title": "Security Starts in Hardware.",
+      "statement": "Hardware-enforced memory protection. Open technology. A global ecosystem building more secure computing.",
       "primary": {
-        "title": "Understand CHERI",
-        "url": "/discover/understand/how-does-cheri-work/"
+        "title": "Discover CHERI",
+        "url": "/discover/"
       },
       "secondary": {
-        "title": "Start building",
-        "url": "/guides/choose-a-platform/"
+        "title": "Start Building",
+        "url": "/build/"
       },
       "problem": "Memory-safety vulnerabilities remain one of the biggest challenges in cybersecurity. Attackers routinely exploit software bugs to steal data, take control of systems, bypass security boundaries, and disrupt critical services.",
       "problem_source": "/discover/why-cheri/why-cheri/",
@@ -900,16 +895,16 @@
       ],
       "journeys": [
         {
-          "title": "New to CHERI?",
+          "title": "Discover",
           "url": "/discover/"
         },
         {
-          "title": "Developing software or hardware?",
-          "url": "/build/"
+          "title": "Adopt",
+          "url": "/adopt/"
         },
         {
-          "title": "Evaluating CHERI for your organisation?",
-          "url": "/adopt/"
+          "title": "Build",
+          "url": "/build/"
         },
         {
           "title": "Exploring CHERI research?",
@@ -924,6 +919,20 @@
         "morello",
         "cheriot",
         "codasip-x730"
+      ],
+      "ecosystem_routes": [
+        "/hardware/cheriot/",
+        "/software/cheribsd/",
+        "/software/llvm-and-clang/",
+        "/software/rust/"
+      ],
+      "member_examples": [
+        "codasip",
+        "google",
+        "lowrisc",
+        "sci-semiconductor",
+        "siemens",
+        "university-of-cambridge"
       ],
       "alliance_intro": "The CHERI Alliance brings together industry, research, government, and open-source communities to accelerate the adoption of CHERI technology.",
       "alliance_source": "/organisations/cheri-alliance/"

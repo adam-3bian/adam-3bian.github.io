@@ -1,0 +1,9 @@
+{%- comment -%}Use this for complete directories and automatic features. Curated
+arrays passed directly to cards.html deliberately retain their editorial order.{%- endcomment -%}
+{%- assign ordered_items = '' | split: '' -%}
+{%- assign ordered_urls = site.data.collection_order.collections[include.collection] -%}
+{%- if include.archive -%}{%- assign ordered_urls = site.data.collection_order.event_archive -%}{%- endif -%}
+{%- for ordered_url in ordered_urls -%}
+  {%- assign ordered_record = site[include.collection] | where: 'url', ordered_url | first -%}
+  {%- if ordered_record -%}{%- assign ordered_items = ordered_items | push: ordered_record -%}{%- endif -%}
+{%- endfor -%}

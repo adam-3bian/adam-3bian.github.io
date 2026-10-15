@@ -255,10 +255,11 @@ for route, expected_index in index_pages.items():
     index = indexes[0]
     stats['index_pages'] += 1
     is_home = route == '/'
-    intro = next((n for n in doc.nodes if n.tag == 'hgroup' and n.parent.has_class('home-hero')), None) if is_home else next((n for n in index.children if n.tag == 'hgroup'), None)
+    intro = next((n for n in doc.nodes if n.has_class('hero-copy')), None) if is_home else next((n for n in index.children if n.tag == 'hgroup'), None)
     expected_title = expected_index['home']['title'] if is_home else expected_index['title']
     expected_summary = expected_index.get('landing', {}).get('description', expected_index['summary'])
-    if not intro or [n.tag for n in intro.children] != ['h1', 'p'] or [n.text() for n in intro.children] != [expected_title, expected_summary]:
+    intro_values = [n.text() for n in intro.children if n.tag == 'h1' or n.has_class('hero-definition')] if is_home and intro else [n.text() for n in intro.children] if intro else []
+    if not intro or intro_values != [expected_title, expected_summary]:
         errors.append('Index title or introduction differs from its source: ' + route)
     nav = next((n for n in index.children if n.has_class('index-navigation')), None)
     links = [n for n in doc.nodes if n.tag == 'a' and n.ancestor(lambda a: a is nav)] if nav else []
@@ -270,7 +271,7 @@ for route, expected_index in index_pages.items():
     if labels != [group['title'] for group in expected_index['groups']]:
         errors.append('Index groups differ from the mega-menu: ' + route)
     if is_home:
-        actions = [n.attrs.get('href') for n in doc.nodes if n.tag == 'a' and n.ancestor(lambda a: a.has_class('home-hero'))]
+        actions = [n.attrs.get('href') for n in doc.nodes if n.tag == 'a' and n.ancestor(lambda a: a.has_class('action-links')) and n.ancestor(lambda a: a.has_class('home-hero'))]
         if actions != [BASEURL + expected_index['home'][key]['url'] for key in ('primary', 'secondary')]:
             errors.append('Homepage actions differ from their approved routes')
         if len([n for n in doc.nodes if n.tag == 'h1' and n.ancestor(lambda a: a is index)]) != 1:

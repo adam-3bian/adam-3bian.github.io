@@ -2,17 +2,51 @@
   {
     "title": "Discover CHERI",
     "url": "/discover/",
+    "columns": 3,
     "groups": [
       {
-        "title": "Start here",
+        "title": "Why CHERI",
         "links": [
           {
             "title": "Why CHERI?",
             "url": "/discover/why-cheri/why-cheri/"
           },
           {
+            "title": "Vulnerabilities in Everyday Technology",
+            "url": "/discover/why-cheri/vulnerabilities-in-everyday-technology/"
+          },
+          {
+            "title": "Why Existing Defences Are Not Enough",
+            "url": "/discover/why-cheri/why-existing-defences-are-not-enough/"
+          },
+          {
+            "title": "Approaches to Memory Safety",
+            "url": "/discover/why-cheri/approaches-to-memory-safety/"
+          },
+          {
+            "title": "CHERI and Rust",
+            "url": "/discover/why-cheri/cheri-and-rust/"
+          }
+        ]
+      },
+      {
+        "title": "Understand CHERI",
+        "links": [
+          {
+            "title": "The History of CHERI",
+            "url": "/discover/understand/cheri-history/"
+          },
+          {
             "title": "How does CHERI work?",
             "url": "/discover/understand/how-does-cheri-work/"
+          },
+          {
+            "title": "Bringing CHERI to your product",
+            "url": "/discover/understand/adapt-products/"
+          },
+          {
+            "title": "CHERI and Existing Software",
+            "url": "/discover/understand/cheri-and-existing-software/"
           },
           {
             "title": "FAQ",
@@ -21,19 +55,27 @@
         ]
       },
       {
-        "title": "Explore resources",
+        "title": "Resources",
         "links": [
           {
-            "title": "An Introduction to CHERI",
-            "url": "/reports/an-introduction-to-cheri/"
-          },
-          {
-            "title": "Papers",
-            "url": "/academic-papers/"
+            "title": "Videos & Presentations",
+            "url": "/discover/resources/videos-and-presentations/"
           },
           {
             "title": "Documentation & Guides",
             "url": "/discover/resources/documentation-and-guides/"
+          },
+          {
+            "title": "Academic Papers",
+            "url": "/academic-papers/"
+          },
+          {
+            "title": "Reports & White Papers",
+            "url": "/reports/"
+          },
+          {
+            "title": "Glossary",
+            "url": "/discover/resources/glossary/"
           }
         ]
       }
@@ -42,38 +84,56 @@
   {
     "title": "Adopt",
     "url": "/adopt/",
+    "columns": 3,
     "groups": [
       {
-        "title": "Start here",
+        "title": "Business Case",
         "links": [
-          {
-            "title": "The Strategic Case for CHERI",
-            "url": "/adopt/business-case/the-business-case/"
-          },
           {
             "title": "The Cost of Memory Unsafety",
             "url": "/adopt/business-case/cost-of-memory-unsafety/"
           },
           {
-            "title": "The CHERI Enabled Programme",
-            "url": "/adopt/assurance-and-adoption/about-cheri-enabled/"
+            "title": "The Strategic Case for CHERI",
+            "url": "/adopt/business-case/the-business-case/"
+          },
+          {
+            "title": "The Return on Security Investment",
+            "url": "/adopt/business-case/return-on-security-investment/"
           }
         ]
       },
       {
-        "title": "Explore resources",
+        "title": "Assurance & Adoption",
         "links": [
           {
-            "title": "Morello: a complete experimental stack",
-            "url": "/case-studies/morello/"
+            "title": "Case Studies",
+            "url": "/case-studies/"
           },
           {
-            "title": "CHERIoT: protection for small embedded devices",
-            "url": "/case-studies/cheriot/"
+            "title": "The CHERI Enabled Programme",
+            "url": "/adopt/assurance-and-adoption/about-cheri-enabled/"
           },
           {
-            "title": "CHERI in commercial processor products",
-            "url": "/case-studies/codasip-x730/"
+            "title": "CHERI Enabled Products",
+            "url": "/adopt/assurance-and-adoption/cheri-enabled-products/"
+          }
+        ]
+      },
+      {
+        "title": "Policy",
+        "links": [
+          {
+            "title": "Public Policy and CHERI",
+            "url": "/adopt/policy/government-guidance/"
+          },
+          {
+            "title": "Cybersecurity Regulation",
+            "url": "/adopt/policy/cybersecurity-regulation/"
+          },
+          {
+            "title": "Critical Infrastructure & Resilience",
+            "url": "/adopt/policy/critical-infrastructure-and-resilience/"
           }
         ]
       }
@@ -82,38 +142,198 @@
   {
     "title": "Build",
     "url": "/build/",
+    "columns": 3,
     "groups": [
       {
-        "title": "Start here",
+        "title": "Build",
         "links": [
           {
-            "title": "Choosing a CHERI Development Platform",
-            "url": "/guides/choose-a-platform/"
+            "title": "Software Developers",
+            "links": [
+              {
+                "title": "Building Secure Software",
+                "url": "/guides/building-secure-software/"
+              },
+              {
+                "title": "Choose a Platform",
+                "url": "/guides/choose-a-platform/"
+              },
+              {
+                "title": "Run CHERI in Simulation",
+                "url": "/guides/run-cheri-in-simulation/"
+              },
+              {
+                "title": "Install a Toolchain",
+                "url": "/guides/install-a-toolchain/"
+              },
+              {
+                "title": "Build Your First Application",
+                "url": "/guides/build-your-first-application/"
+              },
+              {
+                "title": "Port Existing Software",
+                "url": "/guides/port-existing-software/"
+              },
+              {
+                "title": "Build Compartments",
+                "url": "/guides/build-compartments/"
+              }
+            ]
           },
           {
-            "title": "Building Secure Software with CHERI",
-            "url": "/guides/building-secure-software/"
-          },
-          {
-            "title": "Tutorials & Training",
-            "url": "/guides/tutorials-and-training/"
+            "title": "Hardware Developers",
+            "status": "TBD",
+            "url": "/hardware/"
           }
         ]
       },
       {
-        "title": "Explore resources",
+        "title": "Technology",
+        "columns": 2,
         "links": [
           {
-            "title": "Morello",
-            "url": "/hardware/morello/"
+            "title": "How CHERI Capabilities Work",
+            "url": "/build/technology/capabilities/",
+            "links": [
+              {
+                "title": "Tags & Validity",
+                "url": "/build/technology/tags-and-validity/"
+              },
+              {
+                "title": "Bounds",
+                "url": "/build/technology/bounds/"
+              },
+              {
+                "title": "Permissions",
+                "url": "/build/technology/permissions/"
+              },
+              {
+                "title": "Provenance",
+                "url": "/build/technology/provenance/"
+              },
+              {
+                "title": "Sealing",
+                "url": "/build/technology/sealing/"
+              }
+            ]
           },
           {
-            "title": "CHERIoT",
-            "url": "/hardware/cheriot/"
+            "title": "Memory protection & system models",
+            "links": [
+              {
+                "title": "Spatial Memory Safety",
+                "url": "/build/technology/spatial-memory-safety/"
+              },
+              {
+                "title": "Temporal Memory Safety",
+                "url": "/build/technology/temporal-memory-safety/"
+              },
+              {
+                "title": "Compartmentalisation",
+                "url": "/build/technology/compartmentalisation/"
+              },
+              {
+                "title": "Hybrid Systems",
+                "url": "/build/technology/hybrid-systems/"
+              },
+              {
+                "title": "Pure-Capability Systems",
+                "url": "/build/technology/pure-capability-systems/"
+              },
+              {
+                "title": "CHERI and Rust — Technical Overview",
+                "url": "/build/technology/cheri-and-rust-technical/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Resources",
+        "columns": 2,
+        "links": [
+          {
+            "title": "Tutorials & Training",
+            "url": "/guides/tutorials-and-training/"
           },
           {
-            "title": "CheriBSD",
-            "url": "/software/cheribsd/"
+            "title": "Development Platforms",
+            "links": [
+              {
+                "title": "CHERIoT",
+                "url": "/hardware/cheriot/"
+              },
+              {
+                "title": "Sonata",
+                "url": "/hardware/sonata/"
+              },
+              {
+                "title": "FPGA Platforms",
+                "url": "/hardware/fpga-platforms/"
+              },
+              {
+                "title": "Simulators",
+                "url": "/software/simulators/"
+              },
+              {
+                "title": "Morello",
+                "url": "/hardware/morello/"
+              },
+              {
+                "title": "Return an unused Morello Board",
+                "url": "/morello-return/"
+              },
+              {
+                "title": "Platform Comparison",
+                "url": "/build/platforms/platform-comparison/"
+              }
+            ]
+          },
+          {
+            "title": "Software Ecosystem",
+            "url": "/build/software-ecosystem/",
+            "links": [
+              {
+                "title": "LLVM & Clang",
+                "url": "/software/llvm-and-clang/"
+              },
+              {
+                "title": "Rust",
+                "url": "/software/rust/"
+              },
+              {
+                "title": "CheriBSD",
+                "url": "/software/cheribsd/"
+              },
+              {
+                "title": "CHERI Linux",
+                "url": "/software/cheri-linux/"
+              },
+              {
+                "title": "Zephyr",
+                "url": "/software/zephyr/"
+              },
+              {
+                "title": "Debugging Tools",
+                "url": "/software/debugging-tools/"
+              },
+              {
+                "title": "All software",
+                "url": "/software/"
+              }
+            ]
+          },
+          {
+            "title": "CHERI Products",
+            "url": "/build/platforms/cheri-products/"
+          },
+          {
+            "title": "Downloads",
+            "url": "/guides/downloads/"
+          },
+          {
+            "title": "Technical FAQ",
+            "url": "/guides/technical-faq/"
           }
         ]
       }
@@ -122,26 +342,35 @@
   {
     "title": "CHERI Alliance",
     "url": "/alliance/",
+    "columns": 4,
     "groups": [
       {
-        "title": "Start here",
+        "title": "About & Governance",
         "links": [
           {
-            "title": "CHERI Alliance",
+            "title": "About the CHERI Alliance",
             "url": "/organisations/cheri-alliance/"
           },
           {
-            "title": "Why Join?",
-            "url": "/alliance/membership/why-join/"
+            "title": "Mission & Role",
+            "url": "/alliance/about-and-governance/mission-and-role/"
           },
           {
-            "title": "Working Groups",
-            "url": "/working-groups/"
+            "title": "Collaboration Principles",
+            "url": "/alliance/about-and-governance/collaboration-principles/"
+          },
+          {
+            "title": "Accelerating CHERI together",
+            "url": "/alliance/about-and-governance/accelerating-together/"
+          },
+          {
+            "title": "CHERI Trademark",
+            "url": "/policies/trademark/"
           }
         ]
       },
       {
-        "title": "Explore resources",
+        "title": "Leadership",
         "links": [
           {
             "title": "Members",
@@ -152,48 +381,120 @@
             "url": "/alliance/leadership/governing-board/"
           },
           {
-            "title": "Accelerating CHERI together",
-            "url": "/alliance/about-and-governance/accelerating-together/"
+            "title": "Working Groups",
+            "url": "/working-groups/"
+          },
+          {
+            "title": "Ambassadors",
+            "url": "/alliance/leadership/ambassadors/"
+          }
+        ]
+      },
+      {
+        "title": "Membership",
+        "links": [
+          {
+            "title": "Why Join?",
+            "url": "/alliance/membership/why-join/"
+          },
+          {
+            "title": "Membership Benefits & Options",
+            "url": "/alliance/membership/membership-benefits-and-options/"
+          },
+          {
+            "title": "Contact the Alliance",
+            "url": "/alliance/membership/contact/"
+          }
+        ]
+      },
+      {
+        "title": "Legal & Policies",
+        "links": [
+          {
+            "title": "Code of Conduct",
+            "url": "/policies/code-of-conduct/"
+          },
+          {
+            "title": "Competition Law Statement",
+            "url": "/policies/competition-law-statement/"
+          },
+          {
+            "title": "Intellectual Property Policy",
+            "url": "/policies/intellectual-property-policy/"
+          },
+          {
+            "title": "Trademark Policy",
+            "url": "/policies/trademark-policy/"
+          },
+          {
+            "title": "Export Controls",
+            "url": "/policies/export-controls/"
+          },
+          {
+            "title": "Privacy",
+            "url": "/policies/privacy/"
           }
         ]
       }
     ]
   },
   {
-    "title": "News and Events",
+    "title": "News & Events",
     "url": "/news-and-events/",
+    "columns": 3,
     "groups": [
       {
-        "title": "Start here",
+        "title": "News & Analysis",
         "links": [
           {
-            "title": "News",
+            "title": "Latest News",
             "url": "/news/"
           },
+          {
+            "title": "Subscribe to our Newsletter",
+            "url": "/news-and-events/news-and-analysis/subscribe-newsletter/"
+          },
+          {
+            "title": "Press Resources",
+            "url": "/news-and-events/news-and-analysis/press-resources/"
+          }
+        ]
+      },
+      {
+        "title": "Events & Archive",
+        "links": [
           {
             "title": "Upcoming Events",
             "url": "/news-and-events/events-and-archive/upcoming-events/"
           },
           {
-            "title": "Subscribe to our quarterly newsletter",
-            "url": "/news-and-events/news-and-analysis/subscribe-newsletter/"
+            "title": "Past Events",
+            "url": "/news-and-events/events-and-archive/past-events/"
+          },
+          {
+            "title": "CHERI Blossoms Conference",
+            "url": "/news-and-events/events-and-archive/cheri-blossoms/"
+          },
+          {
+            "title": "CHERITech Conference",
+            "url": "/news-and-events/events-and-archive/cheritech/"
           }
         ]
       },
       {
-        "title": "Explore resources",
+        "title": "People & Opportunities",
         "links": [
-          {
-            "title": "Past Events",
-            "url": "/news-and-events/events-and-archive/past-events/"
-          },
           {
             "title": "Speakers",
             "url": "/news-and-events/people-and-opportunities/speakers/"
           },
           {
-            "title": "Press Resources",
-            "url": "/news-and-events/news-and-analysis/press-resources/"
+            "title": "Alliance Members",
+            "url": "/alliance/leadership/members/"
+          },
+          {
+            "title": "Contact the Alliance",
+            "url": "/alliance/membership/contact/"
           }
         ]
       }
