@@ -23,6 +23,7 @@ const events = source.records.filter(r => r.collection === 'events' && !r.altern
       await page.evaluate(() => document.fonts.ready);
       assert.equal(await page.locator('main h1').textContent(), home.home.title);
       assert.equal(await page.locator('main h1').count(), 1);
+      assert.equal(await page.locator('main').evaluate(main => /\b0[1-5]\s*\/|01—05|&(?:amp;)?#x20;/i.test(main.innerText)), false, 'No decorative sequence labels or visible entity debris');
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, `Reflow at ${width}`);
       assert.deepEqual(await page.locator('[data-featured="news"] h4 a').allTextContents(), news.map(r => r.title));
       assert.deepEqual(await page.locator('[data-featured="events"] h4 a').allTextContents(), events.map(r => r.title));

@@ -29,6 +29,25 @@ navigation:
     category: Updates
     order: 4
     label: Subscribe to our Newsletter
+form:
+  id: subscription-form
+  title: Join the mailing list
+  submit: Subscribe
+  demo: This subscription form is a preview. It does not subscribe you.
+  fields:
+  - name: email
+    size: half
+    label: Email address
+    type: email
+    required: true
+    autocomplete: email
+    placeholder: you@example.org
+  - name: name
+    size: half
+    label: Your name
+    autocomplete: name
+    placeholder: Your name (optional)
+  action: null
 ---
 
 # Subscribe to our quarterly newsletter

@@ -33,6 +33,57 @@ navigation:
   footer:
     category: CHERI Alliance
     order: 4
+form:
+  id: contact-form
+  fields:
+  - name: name
+    size: half
+    label: Your name
+    required: true
+    autocomplete: name
+    placeholder: Full name
+  - name: email
+    size: half
+    label: Email address
+    type: email
+    required: true
+    autocomplete: email
+    placeholder: you@example.org
+    help: Use an address where the Alliance can reply.
+  - name: organisation
+    size: half
+    label: Organisation
+    autocomplete: organization
+    placeholder: Organisation or institution (optional)
+  - name: telephone
+    size: half
+    label: Telephone
+    type: tel
+    autocomplete: tel
+    placeholder: Telephone number (optional)
+  - name: subject
+    label: Enquiry topic
+    type: select
+    required: true
+    placeholder: Choose a topic
+    options:
+    - label: Membership
+      value: membership
+    - label: Technical enquiry
+      value: technical
+    - label: Events
+      value: events
+    - label: General enquiry
+      value: general
+  - name: message
+    label: Your message
+    type: textarea
+    required: true
+    placeholder: Tell us about your interest in CHERI.
+    help: A short description of your subject will help route the enquiry.
+  action: null
+  before_heading: help-us-route-your-message
+  demo: This enquiry form is a preview. Nothing will be sent.
 ---
 
 # Contact the Alliance

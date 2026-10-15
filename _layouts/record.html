@@ -342,7 +342,29 @@ Generated page links already use relative_url; protect their prefix before rewri
     </details>
   {% endif %}
   <section class="article-content width-technical" aria-label="Article content">
-  {{ reader_content }}
+  {% if page.form.fields %}
+    {% capture page_form %}{% include form.html %}{% endcapture %}
+    {% capture form_heading %}<h2 id="{{ page.form.before_heading }}"{% endcapture %}
+    {% if page.form.before_heading and reader_content contains form_heading %}
+      {% assign form_intro = reader_content | split: form_heading | first %}
+      <div class="form-layout">
+        <section class="form-main" aria-label="{{ page.form.title | default: page.title | escape }}">
+          {{ form_intro }}
+          {{ page_form }}
+        </section>
+        <aside class="form-guidance" aria-label="Form guidance">
+          {{ reader_content | remove_first: form_intro }}
+        </aside>
+      </div>
+    {% else %}
+      <div class="form-layout">
+        <section class="form-main" aria-label="Introduction">{{ reader_content }}</section>
+        {{ page_form }}
+      </div>
+    {% endif %}
+  {% else %}
+    {{ reader_content }}
+  {% endif %}
   </section>
   {% assign relation_groups = site.data.relationships[page.url] %}
   {% if relation_groups.size > 0 %}

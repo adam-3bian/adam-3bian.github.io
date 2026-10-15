@@ -6,7 +6,6 @@ layout: section
   <article class="index-page home-page width-full" data-content-route="{{ page.url | escape }}" data-collection="pages">
     <header class="home-hero">
       <div class="hero-copy">
-        <p class="eyebrow">CHERI / Open security technology</p>
         <h1>{{ home.title | replace: 'in Hardware.', '<span>in Hardware.</span>' }}</h1>
         <p class="hero-statement">{{ home.statement | escape }}</p>
         <nav class="action-links" aria-label="Get started">
@@ -23,7 +22,6 @@ layout: section
       </div>
       <figure class="memory-architecture" data-memory-model data-state="bounds" aria-labelledby="memory-title">
         <div class="memory-drawing">
-          <p class="diagram-label"><span>CHERI / Living Memory Architecture</span><span aria-hidden="true">01—05</span></p>
           <svg class="memory-svg" viewBox="35 60 815 515" role="img" aria-labelledby="memory-svg-title memory-svg-desc">
             <title id="memory-svg-title">A landscape of memory, with hardware-enforced authority</title>
             <desc id="memory-svg-desc">
@@ -110,8 +108,6 @@ layout: section
               <text x="556" y="490">HARDWARE-ENFORCED BOUNDS</text>
               <path class="memory-compartment" d="M230 375V465H112" fill="none" stroke="#738b98"/>
               <text class="memory-compartment" x="112" y="493" fill="#125770" stroke="none">COMPARTMENT B</text>
-              <text x="92" y="556">ADDRESS + AUTHORITY</text>
-              <text x="674" y="556">CHERI</text>
             </g>
           </svg>
         </div>
@@ -148,7 +144,6 @@ layout: section
     </header>
     <section class="home-explanation home-scene" aria-labelledby="home-explanation-heading">
       <hgroup class="scene-heading">
-        <p class="eyebrow">01 / A stronger foundation</p>
         <h2 id="home-explanation-heading">Software security needs a stronger foundation.</h2>
       </hgroup>
       <div class="scene-introduction">
@@ -161,7 +156,6 @@ layout: section
           {% assign topic = site.pages | where: 'url', route | first %}
           {% if topic %}
             <li>
-              <span class="technical-label" aria-hidden="true">0{{ forloop.index }} /</span>
               <h3><a href="{{ topic.url | relative_url }}">{{ topic.title | escape }}</a></h3>
               <p>{{ topic.summary | escape }}</p>
             </li>
@@ -171,7 +165,6 @@ layout: section
     </section>
     <section class="home-practice home-scene" aria-labelledby="home-examples-heading">
       <hgroup class="scene-heading">
-        <p class="eyebrow">02 / From architecture to application</p>
         <h2 id="home-examples-heading">Built on research.<br>Building in the real world.</h2>
       </hgroup>
       <div class="scene-introduction">
@@ -210,7 +203,6 @@ layout: section
     </section>
     <section class="home-ecosystem home-scene" aria-labelledby="ecosystem-heading">
       <hgroup class="scene-heading">
-        <p class="eyebrow">03 / An open ecosystem</p>
         <h2 id="ecosystem-heading">Hardware. Software.<br>Shared possibility.</h2>
       </hgroup>
       <div class="scene-introduction">
@@ -241,7 +233,6 @@ layout: section
     </div>
   </section>
   <section class="home-pathways" aria-labelledby="home-journeys-heading">
-    <p class="eyebrow">04 / Find your next step</p>
     <h2 id="home-journeys-heading">Start where you are.<br>Build what comes next.</h2>
     <ul class="home-journeys" role="list">
       {% for journey in home.journeys %}
@@ -257,7 +248,6 @@ layout: section
   </section>
   <section class="home-alliance home-scene" aria-labelledby="home-alliance-heading">
     <hgroup class="scene-heading">
-      <p class="eyebrow">05 / The CHERI Alliance</p>
       <h2 id="home-alliance-heading">A shared challenge.<br>A collective effort.</h2>
     </hgroup>
     <div class="scene-introduction">
@@ -265,7 +255,7 @@ layout: section
       <a class="text-action" href="{{ home.alliance_source | relative_url }}">About the CHERI Alliance <svg class="link-arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13L13 3M3 3H13V13" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
     </div>
     <div class="scene-wide">
-      <h3 class="eyebrow">Across the Alliance membership</h3>
+      <h3>Across the Alliance membership</h3>
       <ul class="member-strip" role="list">
         {% for slug in home.member_examples %}
           {% assign member = site.organisations | where: 'slug', slug | first %}

@@ -105,6 +105,14 @@
     {
       "title": "LinkedIn",
       "url": "https://www.linkedin.com/company/cheri-alliance/"
+    },
+    {
+      "title": "Mastodon",
+      "url": "https://infosec.exchange/@cheri_alliance"
+    },
+    {
+      "title": "Slack",
+      "url": "https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/cheri-slack.html"
     }
   ]
 }

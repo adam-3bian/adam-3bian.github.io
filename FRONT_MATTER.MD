@@ -29,8 +29,7 @@ create a duplicate `_white-papers` bibliography. Academic citations belong in
 `_academic-papers`; adoption stories belong in `_case-studies`.
 
 All collections share the image convention below. Complete examples for every
-collection appear later and are validated against their schema. Layout and
-presentation rules are in [DESIGN.MD](DESIGN.MD).
+collection appear later and are validated against their schema. The shared visual rules live in `assets/viewer.css`.
 
 ## Required keys and optional values
 
@@ -98,7 +97,55 @@ Members and Contact the Alliance intentionally occur in two header sections. The
 
 Run `bundle exec ruby scripts/check_content.rb` after editing navigation. It validates membership and generates `_data/primary-navigation.json`, `_data/footer_navigation.json`, `reports/index-navigation.json` and `reports/footer-navigation.json`; these are outputs, not editable navigation sources. Header and section landing pages consume the same generated hierarchy, and the footer consumes the matching generated footer data. `_data/page-map.yml` retains route/provenance information and is not a second editable menu.
 
-The navigation browser regression also checks compact structural hashes in `scripts/fixtures/navigation-baseline.json` against the preserved menu at commit `f9c1f2518af5283d524ac64961a43a8be8aa7ced`: 96 header link occurrences and 20 footer links, including all labels, nesting, columns and order. An intentionally approved future menu change requires reviewing and updating that baseline as well as its source membership; do not change it merely to silence a migration regression.
+The navigation browser regression also checks compact structural hashes in `scripts/fixtures/navigation-baseline.json` against the preserved menu at commit `f9c1f2518af5283d524ac64961a43a8be8aa7ced`: 96 header link occurrences and 20 footer links, including all labels, nesting, columns and order. The restored Mastodon and Slack destinations are asserted separately alongside LinkedIn; the original footer groups and utility retain their original baseline. An intentionally approved future menu change requires reviewing and updating that baseline as well as its source membership; do not change it merely to silence a migration regression.
+
+## Contact and subscription forms
+
+Ordinary pages may add the starter kit's optional `form` mapping. The shared
+record layout renders it after the Markdown body; `form.before_heading` may
+name an existing level-two heading ID to place it immediately before that
+section. Markdown remains authoritative for introductions and privacy text.
+This works with the site's existing `render_with_liquid: false` setting.
+
+```yaml
+form:
+  id: subscription-form
+  title: Join the mailing list
+  action: null
+  method: post
+  submit: Subscribe
+  demo: This subscription form is a preview. It does not subscribe you.
+  fields:
+    - name: email
+      label: Email address
+      type: email
+      size: half
+      required: true
+      autocomplete: email
+    - name: name
+      label: Your name
+      size: half
+      autocomplete: name
+```
+
+Supported field types are `text` (default), `email`, `tel`, `textarea` and
+`select`. Fields have unique `name` values and visible `label` text. Optional
+`placeholder`, `help` and `autocomplete` attributes retain their native HTML
+meaning. `required` is a boolean; `size: half` shares a row on larger screens.
+Textareas accept `rows` (2–30); selects supply `options` with `label` and optional
+`value`. Required selects initially have an empty value for native validation.
+
+A missing or empty `action` renders a labelled preview fieldset and a disabled
+button, with no form element or submission path, even without JavaScript.
+Set an approved HTTPS endpoint (or a supported local endpoint) and `method:
+post` or `get` to enable a native form. GitHub Pages does not receive or store
+submissions. No endpoint is configured for the current contact or newsletter
+page. Before enabling submission, also review its existing preview and privacy copy against the approved service. Never put service credentials into front matter.
+
+The validator checks this contract and excludes form configuration from record
+facts. Run `bundle exec ruby scripts/test_forms.rb` to check both preview and
+connected rendering. The existing content browser suite checks labels, native
+validation, responsive fields, accessibility and the no-JavaScript preview.
 
 ## Fields shared by collection records
 
@@ -107,7 +154,7 @@ Every collection has these two required keys, in addition to its own keys listed
 | Property | Type | Meaning |
 | --- | --- | --- |
 | `title` | Nonempty string | Human-readable record title. |
-| `image_url` | Root-relative asset path | Primary image, stored at `/assets/<collection>/<record-name>/<filename>`. Use neither an underscore on the collection nor `.md` on the record name. Each collection record currently requires an existing local image, including a labelled `placeholder.svg` when the source provides none. |
+| `image_url` | Root-relative asset path | Primary image. New artwork uses `/assets/images/people/`, `logos/`, `products/`, `news/` or `misc/`. Existing `/assets/<collection>/<record-name>/<filename>` paths remain valid. Each collection record requires an existing local image, including a labelled `placeholder.svg` when the source provides none. |
 
 Collection slugs come from Markdown filenames: `_people/adam-finney.md` becomes `/people/adam-finney/`. Do not put `slug` or `permalink` in collection front matter. Add the record to `_data/page-map.yml` when creating a new file.
 
@@ -787,13 +834,14 @@ related:
 ## Adding or changing content
 
 1. Copy the complete shape for the appropriate schema from `_data/schemas.yml`, fill confirmed values, and retain null/empty keys.
-2. Store assets in the owning record directory, write useful alt text, and format prose, lists and captions semantically.
+2. Store new artwork in the appropriate `assets/images/` category, retain existing asset paths, write useful alt text, and format prose, lists and captions semantically.
 3. Register the URL and parent in `_data/page-map.yml`. Add optional `navigation.header` or `navigation.footer` membership to the source front matter only when a menu link is needed; use existing scaffold groups.
 4. Use existing slugs for typed relationships; link to canonical URLs rather than repeating another record's content.
 5. Run `bundle exec ruby scripts/check_content.rb`, then `JEKYLL_ENV=production bundle exec jekyll build --destination _site`, `python3 scripts/check_collection_links.py` and `python3 scripts/check_page_content.py`.
 
 The validator refreshes `_data/checks.yml`, `_data/relationships.yml` and the audit reports. Do not hand-edit generated reverse relationships. This reference is excluded from the built website and remains available in the repository.
 
-Directory ordering is a shared presentation rule documented in [DESIGN.MD](DESIGN.MD).
+Directory ordering is generated by `scripts/check_content.rb` and verified by
+`scripts/test_collection_order.rb`.
 Do not add inferred dates or priority fields to control it. Board rosters, curated
 learning sequences and featured resource arrays retain their explicit order.

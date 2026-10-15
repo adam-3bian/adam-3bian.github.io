@@ -15,7 +15,6 @@ exclude:
 - README.md
 - NAVIGATION.md
 - FRONT_MATTER.MD
-- DESIGN.MD
 - Gemfile
 - Gemfile.lock
 - scripts
@@ -452,8 +451,18 @@ navigation:
   - title: LinkedIn
     url: https://www.linkedin.com/company/cheri-alliance/
     image:
-      src: /assets/images/social/linkedin.svg
+      src: /assets/images/logos/social/linkedin.svg
       alt: CHERI Alliance on LinkedIn
+  - title: Mastodon
+    url: https://infosec.exchange/@cheri_alliance
+    image:
+      src: /assets/images/logos/social/mastodon.svg
+      alt: CHERI Alliance on Mastodon
+  - title: Slack
+    url: https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/cheri-slack.html
+    image:
+      src: /assets/images/logos/social/slack.svg
+      alt: Join the CHERI community on Slack
 timezone: Europe/London
 destination: _site
 strict_front_matter: true

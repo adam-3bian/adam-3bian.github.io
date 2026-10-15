@@ -18,7 +18,14 @@ const navigationBaseline = JSON.parse(fs.readFileSync('scripts/fixtures/navigati
 const stableNavigation = value => Array.isArray(value) ? value.map(stableNavigation) : value && typeof value === 'object' ? Object.fromEntries(Object.keys(value).sort().map(key => [key, stableNavigation(value[key])])) : value;
 const navigationDigest = value => createHash('sha256').update(JSON.stringify(stableNavigation(value))).digest('hex');
 assert.equal(navigationDigest(primarySource), navigationBaseline.header_sha256, 'Front-matter migration must preserve every header label, route, column, group and position');
-assert.equal(navigationDigest(footerSource), navigationBaseline.footer_sha256, 'Front-matter migration must preserve every footer group, label, route and position');
+// The only authorised destination additions are the two restored starter-kit socials.
+const expectedSocial = [
+  {title: 'LinkedIn', url: 'https://www.linkedin.com/company/cheri-alliance/'},
+  {title: 'Mastodon', url: 'https://infosec.exchange/@cheri_alliance'},
+  {title: 'Slack', url: 'https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/cheri-slack.html'},
+];
+assert.deepEqual(footerSource.utilities, expectedSocial, 'Complete verified social destinations, in starter-kit order');
+assert.equal(navigationDigest({...footerSource, utilities: footerSource.utilities.slice(0, 1)}), navigationBaseline.footer_sha256, 'Preserve every original footer group, label, route, position and utility');
 assert.deepEqual(footerSource, JSON.parse(fs.readFileSync('reports/footer-navigation.json', 'utf8')), 'Rendered footer and verification report share generated navigation');
 report.navigationBaseline = navigationBaseline.commit;
 const flatten = nodes => nodes.flatMap(node => [...(node.url ? [node.url] : []), ...flatten(node.groups || node.links || [])]);
@@ -103,6 +110,19 @@ async function assertAccessible(page) {
       assert.equal(await page.locator('.collection-footer').count(), 0, 'No redundant shortcut band');
       assert.equal(await page.locator('.site-header a[href$="/checks/"], .site-footer a[href$="/checks/"]').count(), 0, 'No editorial utility in visitor navigation');
       assert.equal(await page.locator('.site-header .brand img').getAttribute('alt'), 'CHERI Alliance');
+      const socialLinks = page.locator('.footer-utilities a');
+      assert.deepEqual(await socialLinks.allTextContents(), expectedSocial.map(link => link.title));
+      for (let social = 0; social < expectedSocial.length; social++) {
+        const link = socialLinks.nth(social);
+        assert.equal(await link.getAttribute('href'), expectedSocial[social].url);
+        await link.scrollIntoViewIfNeeded();
+        const icon = link.locator('img');
+        await icon.evaluate(img => img.decode());
+        assert.equal(await icon.evaluate(img => img.naturalWidth > 0 && img.getBoundingClientRect().width === 24 && img.getBoundingClientRect().height === 24), true, 'Social icon loads at its intended size');
+        assert.equal(await link.evaluate(a => a.getBoundingClientRect().height >= 44 && a.getBoundingClientRect().width >= 44), true, 'Social touch target');
+        assert.equal(new URL(await icon.getAttribute('src'), base).pathname.startsWith(new URL(base).pathname), true, 'Social icons respect the deployment base URL');
+      }
+      await page.evaluate(() => scrollTo(0, 0));
       const footerRoutes = await page.locator('.footer-navigation a').evaluateAll(links => links.map(link => new URL(link.href).pathname));
       assert.equal(new Set(footerRoutes).size, footerRoutes.length, 'Footer destinations appear once');
       for (const collection of audit.collections) assert(footerRoutes.includes(new URL(collection.url.replace(/^\//, ''), base).pathname), `Directory remains reachable: ${collection.url}`);

@@ -1,0 +1,37 @@
+{% comment %}Shared, front-matter-authored forms. Without an action there is no form element or submission path, including without JavaScript.{% endcomment %}
+{% assign form = page.form %}
+{% assign form_id = form.id | default: 'enquiry-form' | slugify %}
+{% assign endpoint = form.action | default: '' | strip %}
+<section class="form-panel" aria-label="{{ form.title | default: page.title | escape }}">
+  {% if form.title %}<h2>{{ form.title | escape }}</h2>{% endif %}
+  {% if endpoint == '' %}<p class="form-status" id="{{ form_id }}-status">{{ form.demo | default: 'This form is a preview. Online submission is not connected and nothing will be sent.' | escape }}</p>{% endif %}
+  <p class="form-help">Fields marked “required” must be completed.</p>
+  {% if endpoint != '' %}
+    {% assign action_prefix = endpoint | slice: 0, 1 %}
+    <form class="form-fields" id="{{ form_id }}" action="{% if action_prefix == '/' %}{{ endpoint | relative_url | escape }}{% else %}{{ endpoint | escape }}{% endif %}" method="{{ form.method | default: 'post' | escape }}">
+  {% else %}
+    <fieldset class="form-fields" id="{{ form_id }}" aria-describedby="{{ form_id }}-status">
+      <legend class="visually-hidden">{{ form.title | default: page.title | escape }}</legend>
+  {% endif %}
+  {% for field in form.fields %}
+    {% assign field_id = form_id | append: '-' | append: field.name %}
+    <div class="form-field{% if field.size == 'half' %} form-field-half{% endif %}">
+      <label for="{{ field_id | escape }}">{{ field.label | escape }}{% if field.required %} (required){% endif %}</label>
+      {% capture attributes %}id="{{ field_id | escape }}" name="{{ field.name | escape }}"{% if field.required %} required{% endif %}{% if field.help %} aria-describedby="{{ field_id | escape }}-help"{% endif %}{% if field.autocomplete %} autocomplete="{{ field.autocomplete | escape }}"{% endif %}{% endcapture %}
+      {% case field.type %}
+        {% when 'textarea' %}
+          <textarea {{ attributes }} rows="{{ field.rows | default: 6 }}"{% if field.placeholder %} placeholder="{{ field.placeholder | escape }}"{% endif %}></textarea>
+        {% when 'select' %}
+          <select {{ attributes }}>
+            {% if field.placeholder or field.required %}<option value="">{{ field.placeholder | default: 'Choose an option' | escape }}</option>{% endif %}
+            {% for option in field.options %}<option value="{{ option.value | default: option.label | escape }}">{{ option.label | escape }}</option>{% endfor %}
+          </select>
+        {% else %}
+          <input {{ attributes }} type="{{ field.type | default: 'text' | escape }}"{% if field.placeholder %} placeholder="{{ field.placeholder | escape }}"{% endif %}>
+      {% endcase %}
+      {% if field.help %}<p class="form-help" id="{{ field_id | escape }}-help">{{ field.help | escape }}</p>{% endif %}
+    </div>
+  {% endfor %}
+  <button class="primary-action" type="{% if endpoint != '' %}submit{% else %}button{% endif %}"{% if endpoint == '' %} disabled aria-describedby="{{ form_id }}-status"{% endif %}>{{ form.submit | default: 'Send enquiry' | escape }}</button>
+  {% if endpoint != '' %}</form>{% else %}</fieldset>{% endif %}
+</section>

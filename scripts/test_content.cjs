@@ -385,6 +385,7 @@ const routes = [
     await plain.keyboard.press('Enter');
     assert.equal(await properties.getAttribute('open'), '', 'Native properties disclosure works without JS');
     await context.close();
+    report.authoredFormLayouts = await require('./test_forms.cjs')(browser, base, reportDir);
     fs.writeFileSync(path.join(reportDir, 'results.json'), JSON.stringify(report, null, 2) + '\n');
     console.log(JSON.stringify(report));
   } finally {

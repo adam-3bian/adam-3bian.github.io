@@ -82,3 +82,23 @@
   sha256: 0b45e4e7b8668a8924ee8931b2cb2f1fc6f8b100f6b4fcb5c0f1fc10a45fec7d
   width: 1518
   height: 1926
+/assets/images/logos/cheri-alliance-white.svg:
+  source_page: User-supplied CHERI Alliance starter kit
+  source_url: basic-site/assets/images/brand/logo-white.svg
+  retrieved_date: '2026-10-15'
+  sha256: 300942a3af639c38858efc8301343d6fa5d974962e1d7fc2fd9b9fb14c555f62
+/assets/images/logos/social/linkedin.svg:
+  source_page: User-supplied CHERI Alliance starter kit
+  source_url: basic-site/assets/images/social/linkedin.svg
+  retrieved_date: '2026-10-15'
+  sha256: 6866f0d1f48cabe1f96a7ba1637324baa38180768203e840db3994374d9e82f9
+/assets/images/logos/social/mastodon.svg:
+  source_page: User-supplied CHERI Alliance starter kit
+  source_url: basic-site/assets/images/social/mastodon.svg
+  retrieved_date: '2026-10-15'
+  sha256: b42991bdb393c74aec5f46cac5334d29994b76c7cd26af6cd8504924803a97e3
+/assets/images/logos/social/slack.svg:
+  source_page: User-supplied CHERI Alliance starter kit
+  source_url: basic-site/assets/images/social/slack.svg
+  retrieved_date: '2026-10-15'
+  sha256: 9dc0adf5c3d34bdc0439930002dd3116f17fc427dcbd262107226b8a4c94f93c

@@ -11,6 +11,7 @@ require 'digest'
 require_relative 'image_dimensions'
 require_relative 'collection_order'
 require_relative 'directory_facets'
+require_relative 'forms'
 
 root = File.expand_path('..', __dir__)
 config = Jekyll.configuration('source' => root, 'quiet' => true)
@@ -189,6 +190,7 @@ objects.each do |object|
     next
   end
   fields = YAML.safe_load(front[1], permitted_classes: [Date, Time], aliases: true)
+  AuthoredForms.errors(fields['form'], object.content).each { |error| errors << "Invalid form in #{entry['file']}: #{error}" }
   required_fields = required_schema_fields(schemas.fetch(kind), fields, schemas.fetch('common', {}), schemas.dig('optional', kind) || {})
   errors << "Incomplete or unexpected schema fields: #{entry['file']}" unless same_fields?(schemas[kind], required_fields)
   errors << "Missing title: #{entry['file']}" if object.data['title'].to_s.strip.empty?
@@ -422,11 +424,11 @@ objects.each do |object|
     images[url] = true
   end
   next unless object.is_a?(Jekyll::Document)
-  # Every collection record has a local image (a clearly labelled SVG when no
-  # source image exists), stored under its owning collection and record name.
+  # Retain original record paths; new artwork uses the simpler shared image tree.
   expected_assets = "/assets/#{object.collection.label}/#{object.data['slug']}/"
-  unless object.data['image_url'].to_s.start_with?(expected_assets)
-    errors << "Collection image outside its record directory: #{entry['file']}"
+  image_path = object.data['image_url'].to_s
+  unless image_path.start_with?(expected_assets) || image_path.match?(%r{\A/assets/images/(people|logos|products|news|misc)/[^.][^?#]*\z})
+    errors << "Collection image outside an approved image directory: #{entry['file']}"
   end
   validate_values = lambda do |value, field|
     if value.is_a?(Hash)
@@ -471,7 +473,7 @@ records = objects.sort_by { |object| object.data['title'].to_s.downcase }.map do
   image = object.data['image_url'].to_s
   image_status = image.empty? ? 'none' : image.end_with?('/placeholder.svg') ? 'placeholder' : 'provided'
   schema = schemas.fetch(schema_kind(object, entry))
-  properties = (schema.keys + schemas.fetch('common', {}).keys + (schemas.dig('optional', schema_kind(object, entry)) || {}).keys).uniq.reject { |key| key == 'navigation' }.each_with_object({}) do |key, values|
+  properties = (schema.keys + schemas.fetch('common', {}).keys + (schemas.dig('optional', schema_kind(object, entry)) || {}).keys).uniq.reject { |key| %w[navigation form].include?(key) }.each_with_object({}) do |key, values|
     values[key] = object.data[key] if schema.key?(key) || !object.data[key].nil?
   end
   properties['layout'] = object.data['layout']

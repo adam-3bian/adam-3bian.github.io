@@ -1,5 +1,5 @@
 <footer class="site-footer">
-  <p class="container footer-brand"><a class="brand" href="{{ '/' | relative_url }}" aria-label="CHERI Alliance home"><img src="{{ '/assets/brand/cheri-alliance.svg' | relative_url }}" alt="CHERI Alliance" width="326" height="112" loading="lazy"></a></p>
+  <p class="container footer-brand"><a class="brand" href="{{ '/' | relative_url }}" aria-label="CHERI Alliance home"><img src="{{ '/assets/images/logos/cheri-alliance-white.svg' | relative_url }}" alt="CHERI Alliance" width="326" height="112" loading="lazy"></a></p>
   <nav class="container footer-navigation" aria-label="Footer">
     <ul class="footer-groups" role="list">
       {% for group in site.data.footer_navigation.groups %}
@@ -21,7 +21,7 @@
       <ul role="list">
         {% for link in site.navigation.social %}
         {% assign link_first = link.url | slice: 0, 1 %}{% assign link_pair = link.url | slice: 0, 2 %}
-        <li><a href="{% if link.url contains ':' or link_pair == '//' or link_first == '#' %}{{ link.url | escape }}{% else %}{{ link.url | relative_url | escape }}{% endif %}"{% if link.target == '_blank' %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ link.title | escape }}</a></li>
+        <li><a href="{% if link.url contains ':' or link_pair == '//' or link_first == '#' %}{{ link.url | escape }}{% else %}{{ link.url | relative_url | escape }}{% endif %}"{% if link.target == '_blank' %} target="_blank" rel="noopener noreferrer"{% endif %}>{% if link.image.src %}<img src="{{ link.image.src | relative_url }}" alt="{{ link.image.alt | escape }}" aria-hidden="true" width="24" height="24" loading="lazy">{% endif %}{{ link.title | escape }}</a></li>
         {% endfor %}
       </ul>
     </nav>

@@ -11,6 +11,8 @@ common:
   next_page_url: null
   related: {}
 optional:
+  content:
+    form: null
   index:
     introductory_routes: []
     featured_routes: []

@@ -44,6 +44,8 @@ const routes = ['/', '/build/', '/search/', '/people/', '/organisations/', '/eve
           assert.equal(await page.locator('.skip-link').evaluate(a => a === document.activeElement), true, 'Skip link is first keyboard stop');
           assert.equal(await page.locator('.skip-link').evaluate(a => getComputedStyle(a).transitionDuration), '0s', `${route}: reduced motion must not animate the skip link`);
           assert.equal(await page.locator('.skip-link').evaluate(a => a.getBoundingClientRect().top >= 0 && parseFloat(getComputedStyle(a).outlineWidth) >= 3), true, `${route}: skip link visible with focus`);
+          const skipContrast = await page.evaluate(async () => (await axe.run('.skip-link', {runOnly: {type: 'rule', values: ['color-contrast']}})).violations.map(issue => issue.id));
+          assert.deepEqual(skipContrast, [], `${route}: focused skip link is readable on both page palettes`);
           await page.keyboard.press('Enter');
           assert.equal(await page.locator('main').evaluate(main => main === document.activeElement), true, 'Skip link moves focus to main');
           report.skipLinks++;
