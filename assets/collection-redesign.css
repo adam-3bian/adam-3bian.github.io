@@ -198,3 +198,7 @@ body:not([data-theme="dark"]) .resource-paths > li > a.card{display:flex;width:1
 /* Landing cards: stretch the native anchor over the entire grid cell. */
 body:not([data-theme="dark"]) .resource-paths > li:has(> a.card){display:flex;align-items:stretch;padding:0;min-width:0}
 body:not([data-theme="dark"]) .resource-paths > li > a.card{display:flex;align-self:stretch;flex:1 1 auto;min-width:0;width:auto;height:auto;min-height:0;margin:0;padding:1.4rem;box-sizing:border-box}
+
+/* The border belongs to the clickable anchor, not to the list item. */
+body:not([data-theme="dark"]) .resource-paths > li:has(> a.card){border:0;background:transparent;border-radius:0}
+body:not([data-theme="dark"]) .resource-paths > li > a.card{border:1px solid #d9e6e0;border-radius:12px;background:#fff}
