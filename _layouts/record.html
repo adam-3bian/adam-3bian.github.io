@@ -157,7 +157,7 @@ Generated page links already use relative_url; protect their prefix before rewri
 <article{% if current_kind == 'pages' and page.listing == nil %} class="ordinary-page"{% elsif current_kind != 'pages' %} class="collection-detail"{% endif %} data-content-route="{{ page.url | escape }}" data-collection="{{ current_kind | escape }}">
   {% assign show_lead_image = false %}
   {% if page.image_url %}
-    {% unless page.image_url contains '/placeholder.svg' or current_kind == 'case-studies' %}
+    {% unless page.image_url contains '/placeholder.svg' %}
       {% assign show_lead_image = true %}
     {% endunless %}
   {% endif %}
