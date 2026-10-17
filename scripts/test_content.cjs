@@ -80,7 +80,7 @@ const routes = [
             if (rect.height < 44 || rect.left < 0 || rect.right > innerWidth) errors.push('Footer or related link touch target/containment');
             if (link.closest('.link-grid') || link.matches('.resource-paths > li > .card')) {
               const row = link.parentElement.getBoundingClientRect();
-              if (Math.abs(rect.width - row.width) > 1 || Math.abs(rect.height - row.height) > 1) errors.push('Related-link row is not fully clickable');
+              if (Math.abs(rect.width - row.width) > 1 || Math.abs(rect.height - row.height) > 1) errors.push(`Related-link row is not fully clickable (${rect.width.toFixed(1)}x${rect.height.toFixed(1)} anchor vs ${row.width.toFixed(1)}x${row.height.toFixed(1)} list row) ${link.getAttribute('href')}`);
             }
           }
           if (document.querySelector('.relationships small, .relationships div, .relationships span')) errors.push('Technical labels or wrappers in related content');
