@@ -40,9 +40,9 @@ jobs:
           python3 -m http.server 4000 --bind 127.0.0.1 --directory _site >/tmp/cheri-design-server.log 2>&1 &
           server_pid=$!
           trap 'kill "$server_pid"' EXIT
-          node scripts/test_navigation.cjs
-          node scripts/test_directories.cjs
           node scripts/test_content.cjs
           node scripts/test_reading.cjs
-          node scripts/test_accessibility.cjs
           node scripts/test_images.cjs
+          node scripts/test_navigation.cjs
+          node scripts/test_directories.cjs
+          node scripts/test_accessibility.cjs
