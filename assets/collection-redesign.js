@@ -24,9 +24,9 @@
     groups.forEach(group => {
       const button = group.querySelector('.subcategory-toggle');
       if (!button) return;
-      group.classList.toggle('is-expanded', !mobile.matches);
+      group.classList.add('is-expanded');
       button.disabled = !mobile.matches;
-      button.setAttribute('aria-expanded', String(!mobile.matches));
+      button.setAttribute('aria-expanded', 'true');
     });
   }
   mobile.addEventListener('change', syncMode);
