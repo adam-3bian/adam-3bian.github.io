@@ -224,6 +224,8 @@ async function assertAccessible(page) {
     await page.keyboard.press('Tab');
     await page.keyboard.press('Enter');
     await page.keyboard.press('Tab'); // Overview link.
+    await page.keyboard.press('Tab'); // First collapsible subcategory.
+    assert.equal(await page.locator('.primary-menu[open] .subcategory-toggle').first().evaluate(element => element === document.activeElement), true);
     await page.keyboard.press('Tab'); // First second-level destination.
     assert.equal(await page.locator('.primary-menu[open] .menu-group a').first().evaluate(element => element === document.activeElement), true);
     await page.keyboard.press('Escape');
