@@ -142,7 +142,7 @@ body:not([data-theme="dark"]) .index-pages>li{padding:1.1rem;border:1px solid #d
 .site-header .subcategory-toggle{cursor:pointer;padding:.85rem .75rem;font-size:1rem;min-height:44px;background:#f2f8f5}
 .site-header .subcategory-toggle::after{content:"▸";display:inline-block;width:1.1rem;text-align:center;font:400 1.15rem/1 Arial,sans-serif;color:#537c78}
 .site-header .menu-group.is-expanded .subcategory-toggle::after{content:"▾"}
-.site-header .menu-group:not(.is-expanded)>.menu-links{display:none}
+.collection-navigation-ready .site-header .menu-group:not(.is-expanded)>.menu-links{display:none}
 .site-header .menu-group>.menu-links{padding:.25rem .8rem .75rem;border:0}
 .site-header .menu-groups{display:block}
 .collection-detail{grid-template-columns:minmax(0,1fr) minmax(17rem,38%);column-gap:2rem}
