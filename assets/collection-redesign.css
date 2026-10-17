@@ -187,3 +187,6 @@ body:not([data-theme="dark"]) .index-pages>li{padding:1.1rem;border:1px solid #d
 
 /* Metadata labels must remain readable against the off-white paper. */
 .collection-detail .metadata dt{color:#46686b}
+
+/* Respect the repository's dark-background variant for light brand marks. */
+.listing .card img.image-logo[data-image-background="dark"],.collection-detail .record-header .image-logo[data-image-background="dark"]{background:var(--ink)}
