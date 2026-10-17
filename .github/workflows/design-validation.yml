@@ -1,0 +1,48 @@
+name: Design branch validation
+on:
+  push:
+    branches:
+      - design/cheri-collections-poppins-20261017
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v6
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+      - name: Content validation
+        run: |
+          bundle exec ruby scripts/check_content.rb
+          bundle exec ruby scripts/test_activity.rb
+          bundle exec ruby scripts/test_collection_order.rb
+          python3 scripts/prepare_organisation_logos.py --check
+      - name: Jekyll build
+        run: JEKYLL_ENV=production bundle exec jekyll build --safe --destination _site
+      - name: Static validation
+        run: |
+          python3 scripts/check_collection_links.py
+          python3 scripts/check_page_content.py
+          python3 scripts/check_discovery.py
+      - name: Browser environment
+        run: |
+          npm install --prefix "$RUNNER_TEMP/cheri-design-tests" --no-save playwright@1.56.1 axe-core
+          "$RUNNER_TEMP/cheri-design-tests/node_modules/.bin/playwright" install --with-deps chromium --only-shell
+      - name: Browser tests
+        run: |
+          export NODE_PATH="$RUNNER_TEMP/cheri-design-tests/node_modules"
+          export AXE_PATH="$RUNNER_TEMP/cheri-design-tests/node_modules/axe-core/axe.min.js"
+          python3 -m http.server 4000 --bind 127.0.0.1 --directory _site >/tmp/cheri-design-server.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+          node scripts/test_navigation.cjs
+          node scripts/test_directories.cjs
+          node scripts/test_content.cjs
+          node scripts/test_reading.cjs
+          node scripts/test_accessibility.cjs
+          node scripts/test_images.cjs
