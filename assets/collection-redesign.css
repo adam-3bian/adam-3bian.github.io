@@ -179,3 +179,8 @@ body:not([data-theme="dark"]) .index-pages>li{padding:1.1rem;border:1px solid #d
 .site-footer .footer-groups{grid-template-columns:minmax(0,1fr)}
 }
 @media(prefers-reduced-motion:reduce){.listing .card{transition:none}}
+
+/* Accessible secondary text on the lighter cards and view controls. */
+:root{--muted:#48666b;--card-muted:#476369}
+.listing .directory-count,.listing .card-meta,.listing .card-text p,.listing .card-text .card-description,.listing .card-text .paper-description{color:#425e63}
+.listing .directory-view button{color:#3e5f63}
