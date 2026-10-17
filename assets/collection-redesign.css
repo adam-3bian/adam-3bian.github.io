@@ -194,3 +194,7 @@ body:not([data-theme="dark"]) .index-pages>li{padding:1.1rem;border:1px solid #d
 /* Landing-page resource cards: the whole row is a clickable native link. */
 body:not([data-theme="dark"]) .resource-paths > li{padding:0}
 body:not([data-theme="dark"]) .resource-paths > li > a.card{display:flex;width:100%;height:100%;padding:1.4rem;box-shadow:none;background:transparent}
+
+/* Landing cards: stretch the native anchor over the entire grid cell. */
+body:not([data-theme="dark"]) .resource-paths > li:has(> a.card){display:flex;align-items:stretch;padding:0;min-width:0}
+body:not([data-theme="dark"]) .resource-paths > li > a.card{display:flex;align-self:stretch;flex:1 1 auto;min-width:0;width:auto;height:auto;min-height:0;margin:0;padding:1.4rem;box-sizing:border-box}
