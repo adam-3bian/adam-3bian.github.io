@@ -31,6 +31,7 @@
   }
   mobile.addEventListener('change', syncMode);
   syncMode();
+  document.documentElement.classList.add('collection-navigation-ready');
 
   for (const listing of document.querySelectorAll('.listing[data-listing]')) {
     const heading = listing.querySelector('.section-heading');
