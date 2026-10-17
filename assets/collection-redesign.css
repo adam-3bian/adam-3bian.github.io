@@ -126,7 +126,7 @@ body:not([data-theme="dark"]) .index-pages>li{padding:1.1rem;border:1px solid #d
 .site-footer a:hover{color:#fff;background:transparent;text-decoration:underline}
 .site-footer .footer-bottom{margin-top:2.4rem;padding-top:1.4rem;border-color:#416061}
 .site-footer .footer-copyright{font-size:.75rem}
-.site-footer .footer-utilities a{min-height:40px;padding:.5rem .7rem;border:1px solid #46646a;border-radius:8px}
+.site-footer .footer-utilities a{min-height:44px;padding:.5rem .7rem;border:1px solid #46646a;border-radius:8px}
 @media(min-width:64rem){.site-header .primary-menu-panel{max-height:calc(100dvh - var(--menu-top,5rem) - 1rem)}.site-header .menu-groups.columns-4{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(max-width:63.999rem){
 .site-header>.container{min-height:4.25rem;gap:.65rem}
@@ -176,6 +176,6 @@ body:not([data-theme="dark"]) .index-pages>li{padding:1.1rem;border:1px solid #d
 .listing[data-view="list"] .card-text{padding:.8rem .9rem}
 .listing[data-view="list"] .card-text :is(h3,h4){font-size:.89rem}
 .listing[data-view="list"] .card-text .card-description{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;font-size:.72rem}
-.site-footer .footer-groups{grid-template-columns:repeat(2,minmax(0,1fr))}
+.site-footer .footer-groups{grid-template-columns:minmax(0,1fr)}
 }
 @media(prefers-reduced-motion:reduce){.listing .card{transition:none}}
