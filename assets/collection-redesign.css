@@ -184,3 +184,6 @@ body:not([data-theme="dark"]) .index-pages>li{padding:1.1rem;border:1px solid #d
 :root{--muted:#48666b;--card-muted:#476369}
 .listing .directory-count,.listing .card-meta,.listing .card-text p,.listing .card-text .card-description,.listing .card-text .paper-description{color:#425e63}
 .listing .directory-view button{color:#3e5f63}
+
+/* Metadata labels must remain readable against the off-white paper. */
+.collection-detail .metadata dt{color:#46686b}
