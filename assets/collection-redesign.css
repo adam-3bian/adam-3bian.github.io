@@ -202,3 +202,6 @@ body:not([data-theme="dark"]) .resource-paths > li > a.card{display:flex;align-s
 /* The border belongs to the clickable anchor, not to the list item. */
 body:not([data-theme="dark"]) .resource-paths > li:has(> a.card){border:0;background:transparent;border-radius:0}
 body:not([data-theme="dark"]) .resource-paths > li > a.card{border:1px solid #d9e6e0;border-radius:12px;background:#fff}
+
+/* Consistent 4.5:1 contrast for tertiary menu labels in all page contexts. */
+.menu-status,body:not([data-theme="dark"]) .index-pages .menu-status{color:#405d61}
