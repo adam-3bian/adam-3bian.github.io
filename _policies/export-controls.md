@@ -1,27 +1,43 @@
 ---
 title: Export Controls
-image_url: /assets/policies/export-controls/placeholder.svg
-author: null
-navigation:
-  header:
-    category: CHERI Alliance
-    subcategory: Legal & Policies
-    order: 5
+where-next:
+  url: /policies/privacy/
+related-pages:
+- url: /policies/code-of-conduct/
+  description: The behaviour and participation expectations that apply to Alliance spaces and activities.
+  action: Read this page
+- url: /policies/trademark-policy/
+  title: Trademark & Brand Use
+  description: Guidance on use of CHERI Alliance names, marks, logos, and brand material.
+  action: Read this page
+- url: /organisations/cheri-alliance/
+  title: About the CHERI Alliance
+  description: Learn how the Alliance connects organisations working across the CHERI ecosystem.
+  action: Read this page
 ---
 
+1. Alliance
+2. Legal &amp; Policies
+3. Export Controls
+{: .source-breadcrumbs }
+
 # Export Controls
+{: id="page-hero-title" .page-hero-title }
 
 Public CHERI material supports an open global ecosystem, but organisations must assess export controls before sharing non-public technology or commercial products.
+{: .page-hero-summary }
 
 ## A Note to the CHERI Community
+{: id="a-note-to-the-cheri-community" }
 
-The [CHERI Alliance](/organisations/cheri-alliance/) is a global community of organisations and individuals working to advance secure computing through CHERI technology.
+The CHERI Alliance is a global community of organisations and individuals working to advance secure computing through CHERI technology.
 
 CHERI research, specifications, software and standards activities are conducted across multiple jurisdictions, each with its own export-control framework. As a result, export-control obligations can differ significantly depending on the country, organisation, technology, recipient and intended use.
 
 This page provides general information about export-control considerations relevant to CHERI-related research, standards activities, open-source projects and commercial products. It is intended to raise awareness only and does not constitute legal advice.
 
 ## Core CHERI Technology
+{: id="core-cheri-technology" }
 
 In general, the CHERI Alliance considers the core CHERI architecture, publicly released specifications and publicly available software to be part of an open technology ecosystem that is intended to be widely disseminated and implemented.
 
@@ -37,12 +53,14 @@ Examples include:
 Where these materials have been lawfully published and made broadly available without restriction, they are generally consistent with concepts such as public-domain information, publicly available information or fundamental research recognised in various export-control frameworks. Relevant source materials are listed in the References section.
 
 ## CHERI Alliance and Open Publication
+{: id="cheri-alliance-and-open-publication" }
 
 The CHERI Alliance strongly encourages members to publish CHERI-related specifications, documentation and software under recognised open licences whenever appropriate, including Creative Commons licences for documentation and Apache 2.0 (or similar permissive licences) for software. The Alliance believes that openly licensed and publicly accessible technology accelerates adoption, enables interoperability and reduces uncertainty about what information has already been publicly disclosed.
 
 However, publication-related exemptions generally rely on information already being publicly available. The intention to publish at a later date is typically not sufficient, and members should exercise particular care when handling unpublished materials, private repositories, proprietary implementations or confidential technical information.
 
 ## Open Information and Non-Public Information
+{: id="open-information-and-non-public-information" }
 
 Many export-control frameworks distinguish between information that is publicly available and information that remains restricted.
 
@@ -61,6 +79,7 @@ Information stored in private or restricted repositories may not benefit from th
 The CHERI Alliance therefore encourages members to publish specifications, software and research outputs openly whenever appropriate and consistent with their intellectual-property obligations.
 
 ## Publication Before Distribution
+{: id="publication-before-distribution" }
 
 A key principle across multiple jurisdictions is that publication and international technology transfer are not necessarily the same thing.
 
@@ -69,8 +88,9 @@ The fact that a research paper, specification, report or software project will e
 Similarly, publication should not be used as a mechanism to transfer otherwise restricted technical information to specific recipients while attempting to avoid export-control requirements.
 
 ## Standards Development and International Collaboration
+{: id="standards-development-and-international-collaboration" }
 
-The CHERI ecosystem relies heavily on international collaboration through academia, industry, open-source projects and standards organisations, including bodies such as [RISC-V International](/organisations/risc-v-international/) and ETSI.
+The CHERI ecosystem relies heavily on international collaboration through academia, industry, open-source projects and standards organisations, including bodies such as RISC-V International and ETSI.
 
 Standards organisations provide important governance frameworks that support international participation and open technical discussion. However, participation in a standards body, research project or CHERI Alliance activity does not automatically exempt participants from export-control, sanctions or other legal obligations.
 
@@ -79,6 +99,7 @@ The CHERI Alliance also incorporates compliance measures within its governance p
 Members should nevertheless take particular care before sharing non-public technical information with organisations, individuals or jurisdictions that may be subject to sanctions, export restrictions or other government controls. Where uncertainty exists, organisations should seek advice from their own legal and compliance teams.
 
 ## Commercial Products and Services
+{: id="commercial-products-and-services" }
 
 Many CHERI Alliance members develop their own processors, semiconductor IP, software products, development tools, security solutions and commercial services based on CHERI technology.
 
@@ -95,6 +116,7 @@ The CHERI Alliance does not:
 - Certify compliance with export regulations
 
 ## Organisation-Specific Responsibilities
+{: id="organisation-specific-responsibilities" }
 
 Export-control requirements vary significantly between jurisdictions.
 
@@ -103,32 +125,108 @@ For example:
 - The European Union operates under the Dual-Use Regulation and encourages research organisations to establish compliance processes for dual-use research.
 - The United States recognises concepts such as Fundamental Research and Publicly Available Information under EAR and ITAR regulations.
 - The United Kingdom recognises exemptions relating to public-domain information and basic scientific research.
-- The guidance available to a university, standards body, commercial company or non-profit organisation may differ, and rules are not identical across countries.
+
+The guidance available to a university, standards body, commercial company or non-profit organisation may differ, and rules are not identical across countries.
 
 Accordingly, every organisation is responsible for obtaining its own export-control advice and determining its own compliance obligations. The CHERI Alliance cannot provide definitive export-control guidance on behalf of its members.
 
 ## References
+{: id="references" }
 
 ### International
+{: id="international" }
 
-Regulation (EU) 2021/821 establishing the EU dual-use export control regime.
-
-European Commission Recommendation (EU) 2021/1700 on Internal Compliance Programmes for Research Involving Dual-Use Items.
+- [Regulation (EU) 2021/821 establishing the EU dual-use export control regime](https://eur-lex.europa.eu/eli/reg/2021/821/oj).
+- [European Commission Recommendation (EU) 2021/1700 on Internal Compliance Programmes for Research Involving Dual-Use Items](https://eur-lex.europa.eu/eli/reco/2021/1700/oj).
 
 ### United States
+{: id="united-states" }
 
-22 CFR §120.34 (ITAR) Public Domain.
-
-Guidance on Fundamental Research and export controls.
-
-Guidance on Publicly Available Information under EAR and ITAR.
+- [22 CFR §120.34 (ITAR) Public Domain](https://www.ecfr.gov/current/title-22/chapter-I/subchapter-M/part-120/subpart-C/section-120.34).
+- [Guidance on Fundamental Research and export controls](https://osp.uccs.edu/research-compliance/export-controls/fundamental-research).
+- [Guidance on Publicly Available Information under EAR and ITAR](https://rac.berkeley.edu/export-control/basics-exclusions-and-exemptions).
 
 ### United Kingdom
+{: id="united-kingdom" }
 
-Export Controls Applying to Academic Research (UK Export Control Joint Unit).
-
-Publications and Export Controls ([University of Cambridge](/organisations/university-of-cambridge/) Research Services).
+- [Export Controls Applying to Academic Research](https://www.gov.uk/guidance/export-controls-applying-to-academic-research) (UK Export Control Joint Unit).
+- [Publications and Export Controls](https://www.research-services.admin.cam.ac.uk/policies/export-control-guidance/publications-and-export-control) (University of Cambridge Research Services).
 
 ## Disclaimer
+{: id="disclaimer" }
 
 This page provides general information and is not legal, regulatory or export-control advice. The CHERI Alliance makes no representation about the application of export-control regulations to any particular organisation, technology, activity or product. Members and third parties should obtain independent professional advice and comply with all applicable laws and regulations.
+
+## Where next
+{: .where-next-title }
+
+### [Privacy](/policies/privacy/)
+{: .where-next-card-title }
+
+
+
+
+
+[Information on how the Alliance handles personal information and privacy obligations.](/policies/privacy/)
+{: .where-next-summary }
+
+
+
+[Continue](/policies/privacy/)
+{: .source-card-label }
+
+## Related content
+{: .related-pages-title }
+
+### [Code of Conduct](/policies/code-of-conduct/)
+{: .related-pages-item-title }
+
+
+
+
+
+[The behaviour and participation expectations that apply to Alliance spaces and activities.](/policies/code-of-conduct/)
+{: .related-pages-item-summary }
+
+
+
+[Read this page](/policies/code-of-conduct/)
+{: .source-card-label }
+
+
+
+
+
+### [Trademark &amp; Brand Use](/policies/trademark-policy/)
+{: .related-pages-item-title }
+
+
+
+
+
+[Guidance on use of CHERI Alliance names, marks, logos, and brand material.](/policies/trademark-policy/)
+{: .related-pages-item-summary }
+
+
+
+[Read this page](/policies/trademark-policy/)
+{: .source-card-label }
+
+
+
+
+
+### [About the CHERI Alliance](/organisations/cheri-alliance/)
+{: .related-pages-item-title }
+
+
+
+
+
+[Learn how the Alliance connects organisations working across the CHERI ecosystem.](/organisations/cheri-alliance/)
+{: .related-pages-item-summary }
+
+
+
+[Read this page](/organisations/cheri-alliance/)
+{: .source-card-label }

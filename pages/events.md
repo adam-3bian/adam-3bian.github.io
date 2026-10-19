@@ -2,15 +2,7 @@
 title: Events
 permalink: /events/
 layout: events
-listing:
-  collection: null
-  status: null
-  role: null
-navigation:
-  footer:
-    category: Updates
-    order: 3
-    label: All Events
+parent: /news-and-events/
 ---
 
 # Events

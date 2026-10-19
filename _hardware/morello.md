@@ -1,111 +1,165 @@
 ---
 title: Morello
-image_url: /assets/hardware/morello/placeholder.svg
-website_url: https://developer.arm.com/Architectures/Morello
-repository_urls:
-- https://github.com/CTSRD-CHERI/cheribuild
-type: null
-architecture: null
-status: null
-related:
-  organisations:
-  - university-of-cambridge
-  - sri
-  hardware:
-  - cheriot
-  software:
-  - debugging-tools
-  - cheribsd
-  - llvm-and-clang
-navigation:
-  header:
-    category: Build
-    subcategory: Resources
-    parent: development-platforms
-    order: 5
+where-next:
+  url: /hardware/cheriot/
+related-pages:
+- url: /guides/choose-a-platform/
+  title: Choose a Platform
+  description: Choose a platform, prepare an environment and run a first CHERI workload.
+  action: Read this page
 ---
 
+1. Build
+2. Platforms
+3. Morello
+{: .source-breadcrumbs }
+
 # Morello
+{: id="page-hero-title" .page-hero-title }
 
-Morello is Arm’s application-class CHERI prototype platform, combining custom silicon, a development board, toolchains, and full operating-system stacks.
+Morello is Arm’s application-class CHERI prototype platform, providing real hardware for developing, porting and evaluating CHERI software.
+{: .page-hero-summary }
 
-Evaluating CHERI on an FPGA answers many architectural questions, but not every question about a high-performance application processor. Morello provides real prototype silicon and a board on which complete operating systems and large applications can use CHERI capabilities.
+Developed by Arm in collaboration with the [University of Cambridge](/organisations/university-of-cambridge/) and [SRI International](/organisations/sri/) through the UK Digital Security by Design (DSbD) programme, Morello brings CHERI capabilities to an application-class processor and development board.
 
-## What Morello is
+It provides developers with a complete environment for exploring CHERI on real high-performance hardware, including operating systems, toolchains and substantial applications.
 
-Morello is an Arm-developed prototype platform produced through the UK Digital Security by Design programme in collaboration with the [University of Cambridge](/organisations/university-of-cambridge/) and [SRI International](/organisations/sri/).
+## What is Morello?
+{: id="what-is-morello" }
 
-The name is used for related but distinct elements:
+![Arm Morello board](/assets/pages/adopt--assurance-and-adoption--case-studies/bfeebb3ac676-morello-board.webp){: .image-right }
 
-- the Morello prototype architecture, based on AArch64 with CHERI features
-- the Morello processor and system-on-chip implementation
+The Morello platform includes:
+
+- a prototype architecture based on AArch64 with CHERI capabilities
+- the Morello processor and system-on-chip (SoC)
 - the Morello development board
-- firmware and software development resources for that board
-- Morello demonstrates one application-class CHERI design. It is not the definition of CHERI and should not be used as a generic name for CHERI-RISC-V or [CHERIoT](/hardware/cheriot/).
+- supporting firmware, operating systems and development tools
+
+Morello is one prototype implementation of CHERI, not CHERI itself. Other CHERI platforms, including CHERI-RISC-V and CHERIoT, use different architectures and software environments.
 
 ## Software environment
+{: id="software-environment" }
 
 The Morello ecosystem includes:
 
-- CHERI-aware LLVM and [Clang](/software/llvm-and-clang/)
-- hybrid and pure-capability application binary interfaces (ABIs)
-- [CheriBSD](/software/cheribsd/) with a broad Unix user space
+- CHERI-aware LLVM and Clang
+- hybrid and pure-capability ABIs
+- CheriBSD with a broad Unix user space
 - CHERI-related Linux and Android work
 - QEMU, debugging tools, libraries, language runtimes, and application ports
-- cheribuild is a common open-source route for building Morello LLVM, CheriBSD, disk images, and related tools from compatible source revisions.
 
-## When to choose Morello
+`cheribuild` is a common open-source route for building Morello LLVM, CheriBSD, disk images, and related tools from compatible source revisions.
 
-Morello remains useful when you need to:
+## When should I use Morello?
+{: id="when-to-choose-morello" }
 
-- reproduce or extend an existing Morello project
-- evaluate pure-capability software on Arm prototype silicon
+Morello is particularly useful if you want to:
+
+- develop and test CHERI software on real application-class hardware
+- port substantial existing software to CHERI
+- experiment with pure-capability software
 - measure real hardware behaviour rather than simulator execution
-- investigate Morello-specific ABI or microarchitecture questions
-- use a mature CheriBSD application stack developed around the board
-- compare earlier Morello evidence with a new platform
+- reproduce or extend an existing Morello project
+- investigate Morello-specific ABI or architecture behaviour
+- compare results across different CHERI environments
 
-For a new commercial product, compare current supplier platforms and lifecycle commitments. Morello was designed as an evaluation platform rather than a mass-market production processor.
+Morello was designed for research, development and evaluation rather than as a mass-market production processor. For new commercial products, developers should consider current CHERI platforms and their availability, support and lifecycle.
 
-## Access routes
+## Request a Morello board
 
-Developers may work with:
+The [CHERI Alliance](/organisations/cheri-alliance/) has **Morello boards available** for loan to organisations working on projects that can help advance CHERI development and adoption.
 
-- an existing physical Morello board
-- remote access through a lab or partner facility
-- software builds and selected emulation without a local board
-- Board availability, remote-lab access, firmware, and supported images change over time. Confirm the current route through Arm, CheriBSD documentation, or the organisation operating the lab.
+Boards are limited, so requests should explain clearly what you plan to do and why access to Morello hardware would be valuable.
 
-## Development workflow
+### What to include in your request
 
-1. Identify the required Morello firmware and board revision.
-2. Build or obtain a matching Morello software development kit (SDK) and operating-system image.
-3. Boot a known example before changing firmware or kernel components.
+Tell us about:
 
-Confirm whether each binary is conventional, hybrid, or pure capability.
+- Your project: What do you want to build, port, test or demonstrate?
+- Its value: How could the work contribute to CHERI adoption, research, tools, software, demonstrations or the broader ecosystem?
+- Why you need Morello: Explain why alternatives such as QEMU or other CHERI development boards are not sufficient for the project.
+- Your organisation: Boards are loaned to organisations rather than individuals.
+- Your team: Tell us briefly about your expertise, motivation and interest in contributing to the CHERI ecosystem.
 
-Run functional and capability-fault tests.
+--- 
+[Contact the CHERI Alliance](/alliance/membership/contact/) to request a board
+---
 
-Record hardware, firmware, compiler, operating-system, and source revisions.
+You can also find further information about the platform from [Arm's Morello page](https://www.arm.com/architecture/cpu/morello).
 
-Measure representative workloads on the board if performance matters.
+## Developing on Morello
+{: id="developing-on-morello" }
 
-Do not mix arbitrary firmware, kernel, and user-space releases. Capability ABI and platform support must remain aligned.
+A typical Morello project starts with a compatible software environment and known working example before moving on to your own software.
+
+You should know whether the binaries you are working with are conventional, hybrid or pure capability, and keep the firmware, operating system, toolchain and ABI versions compatible.
+
+For development, debugging and porting guidance, use the technical documentation associated with the software and platform version you are using.
+
 
 ## Strengths
+{: id="strengths" }
 
-- Real application-class CHERI silicon.
-- Mature CheriBSD and LLVM/Clang integration.
-- Support for substantial existing C and C++ software.
-- Extensive public reports and programme evidence.
-- A shared target used across many demonstrator and porting projects.
+Morello provides:
+
+- real application-class CHERI hardware
+- mature CheriBSD and LLVM/Clang integration
+- an environment for porting substantial software
+- a widely used platform for CHERI research and experimentation
+- experience and evidence that can inform development on other CHERI platforms
 
 ## Constraints
+{: id="constraints" }
 
-- Morello is a prototype architecture and board.
-- Physical boards are less accessible than local simulation.
-- Its performance and encoding choices do not predict every future CHERI processor.
-- Software built specifically for the Morello ABI is not automatically portable to CHERI-RISC-V.
-- Long-term product support must be assessed separately from research and evaluation access.
+- Morello is a prototype architecture and board
+- Physical boards are less accessible than local simulation
+- Its performance and encoding choices do not predict every future CHERI processor
+- Software built specifically for the Morello ABI is not automatically portable to CHERI-RISC-V
+- Long-term product support must be assessed separately from research and evaluation access
 
-Use the Arm Morello resources, CheriBSD Getting Started, and cheribuild for current technical instructions. For its place in the wider timeline, read Morello History.
+## A note about performance
+
+The Arm Morello platform is a **research and prototyping system** designed to enable software development, porting, and evaluation of CHERI-based architectures. However, it is not representative of a production-quality CHERI implementation and should therefore not be used as the sole basis for assessing the performance overhead of CHERI.
+
+Performance results obtained on Morello may reflect characteristics of the prototype hardware, development-stage toolchains, and implementation choices specific to the research platform, rather than the intrinsic cost of CHERI itself. Consequently, direct comparisons between Morello and conventional production processors can lead to misleading conclusions regarding CHERI performance overhead.
+
+We recommend using Morello primarily for software development, compatibility testing, and functional evaluation. Once an application has been ported and validated, researchers should seek to corroborate performance results using additional CHERI platforms, implementations, simulators, or published results that better reflect production-oriented designs. Real-world workload measurements across multiple platforms provide a more reliable basis for understanding the true performance impact of CHERI. The CHERI Alliance can provide guidance on available platforms and benchmarking opportunities to support such evaluations.
+
+Use the [Arm Morello resources](https://developer.arm.com/Architectures/Morello), [CheriBSD Getting Started](https://www.cheribsd.org/getting-started/), and [`cheribuild`](https://github.com/CTSRD-CHERI/cheribuild) for current technical instructions. For its place in the wider timeline, read [Morello History](/discover/history/morello-history/).
+
+## Where next
+{: .where-next-title }
+
+### [CHERIoT](/hardware/cheriot/)
+{: .where-next-card-title }
+
+
+
+
+
+[CHERIoT is a complete embedded hardware-software platform built around CHERI concepts.](/hardware/cheriot/)
+{: .where-next-summary }
+
+
+
+[Continue](/hardware/cheriot/)
+{: .source-card-label }
+
+## Related content
+{: .related-pages-title }
+
+### [Choose a Platform](/guides/choose-a-platform/)
+{: .related-pages-item-title }
+
+
+
+
+
+[Choose a platform, prepare an environment and run a first CHERI workload.](/guides/choose-a-platform/)
+{: .related-pages-item-summary }
+
+
+
+[Read this page](/guides/choose-a-platform/)
+{: .source-card-label }

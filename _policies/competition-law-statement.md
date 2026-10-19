@@ -1,188 +1,158 @@
 ---
 title: Competition Law Statement
-image_url: /assets/policies/competition-law-statement/placeholder.svg
-author: null
-version: '1.0'
-document_date: '2024-08'
-document_url: https://cheri-alliance.org/legal-competition/
-navigation:
-  header:
-    category: CHERI Alliance
-    subcategory: Legal & Policies
-    order: 2
+where-next:
+  url: /policies/intellectual-property-policy/
+related-pages:
+- url: /policies/code-of-conduct/
+  description: The behaviour and participation expectations that apply to Alliance spaces and activities.
+  action: Read this page
+- url: /organisations/cheri-alliance/
+  title: About the CHERI Alliance
+  description: Learn how the Alliance connects organisations working across the CHERI ecosystem.
+  action: Read this page
 ---
 
+1. Alliance
+2. Legal &amp; Policies
+3. Competition Law Statement
+{: .source-breadcrumbs }
+
 # Competition Law Statement
+{: id="page-hero-title" .page-hero-title }
 
 Alliance collaboration must never be used to exchange competitively sensitive information or coordinate market behaviour.
+{: .page-hero-summary }
 
-The PDF is the official version. The text is reproduced below for convenience, but if there is any difference between the two versions, the PDF takes precedence.
+Version
+: 1.0
 
-## 1\. Introduction
+Date
+: August 2024
+{: .page-hero-meta }
 
-<ol class="legal-clauses" role="list" markdown="block">
-<li markdown="block">
+![pdf](/assets/shared/source-assets/d63b7eac09b7-pdf-file-icon.webp){: .image-left .image-inline } Download the [CHERI Alliance Competition Law Statement](/assets/pages/alliance--legal-and-policies--competition-law-statement/0053779e62ce-competition.pdf) – The PDF is the official version. The text is reproduced below for convenience, but if there is any difference between the two versions, the PDF takes precedence.
 
-<span class="clause-number">1.1</span> The purpose of CHERI Alliance C.I.C. (the Alliance) is to carry on activities which benefit the community and in particular (without limitation) to promote the use and adoption of CHERI open security technology, methodology and/or standards to improve system security and memory protection in software and hardware products. In carrying this out, Alliance members and non-member attendees must:
+---
 
-<ol class="legal-clauses" role="list" markdown="block">
-<li markdown="block">
+## 1. Introduction
+{: id="1-introduction" }
 
-<span class="clause-number">1.1.1</span> act with the highest regard for their ethical, legal and professional obligations and the Alliance’s purpose, values, and legal interests; and
+1.1 The purpose of CHERI Alliance C.I.C. (the Alliance) is to carry on activities which benefit the community and in particular (without limitation) to promote the use and adoption of CHERI open security technology, methodology and/or standards to improve system security and memory protection in software and hardware products. In carrying this out, Alliance members and non-member attendees must:
 
-</li>
-<li markdown="block">
+1.1.1 act with the highest regard for their ethical, legal and professional obligations and the Alliance’s purpose, values, and legal interests; and
 
-<span class="clause-number">1.1.2</span> follow the Guiding Principles as follows.
+1.1.2 follow the Guiding Principles as follows.
 
-</li>
-</ol>
+## 2. Guiding principles – what information can be shared
+{: id="2-guiding-principles--what-information-can-be-shared" }
 
-</li>
-</ol>
-## 2\. Guiding principles – what information can be shared
+2.1 There are many positive aspects to associations such as the Alliance and information that can be shared can include:
 
-<ol class="legal-clauses" role="list" markdown="block">
-<li markdown="block">
+2.1.1 non-confidential information that is in the public domain;
 
-<span class="clause-number">2.1</span> There are many positive aspects to associations such as the Alliance and information that can be shared can include:
+2.1.2 technical industry issues including standards and health and safety matters;
 
-<ol class="legal-clauses" role="list" markdown="block">
-<li markdown="block">
+2.1.3 non-strategic technical or scientific data that results in consumer benefits;
 
-<span class="clause-number">2.1.1</span> non-confidential information that is in the public domain;
+2.1.4 industry public relations or lobbying initiatives; provided competitively sensitive information is not shared in the process, and advice has been taken if initiatives may exclude market operators; and
 
-</li>
-<li markdown="block">
+2.1.5 industry standards that increase product interoperability, compatibility or safety, provided advice has been taken on the development, transparency, accessibility and potential competitive impact of these standards.
 
-<span class="clause-number">2.1.2</span> technical industry issues including standards and health and safety matters;
+## 3. Guiding principles – what information cannot be shared
+{: id="3-guiding-principles--what-information-cannot-be-shared" }
 
-</li>
-<li markdown="block">
+3.1 There are certain areas of sensitive commercial information that should never be discussed between our members or between members and non-members through the Alliance, either formally or informally, intentionally or inadvertently, directly or indirectly through a third party. These include:
 
-<span class="clause-number">2.1.3</span> non-strategic technical or scientific data that results in consumer benefits;
+3.1.1 current or future pricing, or matters affecting prices;
 
-</li>
-<li markdown="block">
+3.1.2 company-specific sales information;
 
-<span class="clause-number">2.1.4</span> industry public relations or lobbying initiatives; provided competitively sensitive information is not shared in the process, and advice has been taken if initiatives may exclude market operators; and
+3.1.3 company-specific cost information;
 
-</li>
-<li markdown="block">
+3.1.4 salaries and wages, hiring practices or limitations on hiring a competitor’s employees;
 
-<span class="clause-number">2.1.5</span> industry standards that increase product interoperability, compatibility or safety, provided advice has been taken on the development, transparency, accessibility and potential competitive impact of these standards.
+3.1.5 commercial planning or strategy information including geographic growth and business expansion or contraction plans; and
 
-</li>
-</ol>
+3.1.6 key contract terms, such as any matters relating to specific suppliers and customers that are significant to core drivers of market competition, such as key contract.
 
-</li>
-</ol>
-## 3\. Guiding principles – what information cannot be shared
+3.2 Members should never reach any agreement or understanding (including tacitly) with any other member or with any non-member through the Alliance’s work on the following:
 
-<ol class="legal-clauses" role="list" markdown="block">
-<li markdown="block">
+3.2.1 prices that either company will announce or charge their customers;
 
-<span class="clause-number">3.1</span> There are certain areas of sensitive commercial information that should never be discussed between our members or between members and non-members through the Alliance, either formally or informally, intentionally or inadvertently, directly or indirectly through a third party. These include:
+3.2.2 the timing or method of price increases;
 
-<ol class="legal-clauses" role="list" markdown="block">
-<li markdown="block">
+3.2.3 terms of sale or delivery that either company will offer customers;
 
-<span class="clause-number">3.1.1</span> current or future pricing, or matters affecting prices;
+3.2.4 allocating product or geographic markets in which either company will sell or not sell;
 
-</li>
-<li markdown="block">
+3.2.5 allocating customers to which either company will sell or not sell;
 
-<span class="clause-number">3.1.2</span> company-specific sales information;
+3.2.6 bids to any customers, including whether to bid or not to bid;
 
-</li>
-<li markdown="block">
+3.2.7 production, capacity, or sales volumes; and
 
-<span class="clause-number">3.1.3</span> company-specific cost information;
+3.2.8 soliciting each other’s employees or employee salaries and benefits.
 
-</li>
-<li markdown="block">
+3.3 These types of agreements (cartel agreements) are automatically illegal in the UK, the jurisdiction in which the Alliance is established. There can be no justification; the agreement itself is unlawful.
 
-<span class="clause-number">3.1.4</span> salaries and wages, hiring practices or limitations on hiring a competitor’s employees;
+## 4. Queries
+{: id="4-queries" }
 
-</li>
-<li markdown="block">
+4.1 Any questions relating to this statement, or its contents, should be directed to the Board of Directors of the Alliance.
 
-<span class="clause-number">3.1.5</span> commercial planning or strategy information including geographic growth and business expansion or contraction plans; and
+4.2 Any suspected breach of this statement should be reported to the Board of Directors of the Alliance.
 
-</li>
-<li markdown="block">
+## Where next
+{: .where-next-title }
 
-<span class="clause-number">3.1.6</span> key contract terms, such as any matters relating to specific suppliers and customers that are significant to core drivers of market competition, such as key contract.
+### [Intellectual Property Policy](/policies/intellectual-property-policy/)
+{: .where-next-card-title }
 
-</li>
-</ol>
 
-</li>
-<li markdown="block">
 
-<span class="clause-number">3.2</span> Members should never reach any agreement or understanding (including tacitly) with any other member or with any non-member through the Alliance’s work on the following:
 
-<ol class="legal-clauses" role="list" markdown="block">
-<li markdown="block">
 
-<span class="clause-number">3.2.1</span> prices that either company will announce or charge their customers;
+[The policy governing intellectual property in Alliance activities and contributions.](/policies/intellectual-property-policy/)
+{: .where-next-summary }
 
-</li>
-<li markdown="block">
 
-<span class="clause-number">3.2.2</span> the timing or method of price increases;
 
-</li>
-<li markdown="block">
+[Continue](/policies/intellectual-property-policy/)
+{: .source-card-label }
 
-<span class="clause-number">3.2.3</span> terms of sale or delivery that either company will offer customers;
+## Related content
+{: .related-pages-title }
 
-</li>
-<li markdown="block">
+### [Code of Conduct](/policies/code-of-conduct/)
+{: .related-pages-item-title }
 
-<span class="clause-number">3.2.4</span> allocating product or geographic markets in which either company will sell or not sell;
 
-</li>
-<li markdown="block">
 
-<span class="clause-number">3.2.5</span> allocating customers to which either company will sell or not sell;
 
-</li>
-<li markdown="block">
 
-<span class="clause-number">3.2.6</span> bids to any customers, including whether to bid or not to bid;
+[The behaviour and participation expectations that apply to Alliance spaces and activities.](/policies/code-of-conduct/)
+{: .related-pages-item-summary }
 
-</li>
-<li markdown="block">
 
-<span class="clause-number">3.2.7</span> production, capacity, or sales volumes; and
 
-</li>
-<li markdown="block">
+[Read this page](/policies/code-of-conduct/)
+{: .source-card-label }
 
-<span class="clause-number">3.2.8</span> soliciting each other’s employees or employee salaries and benefits.
 
-</li>
-</ol>
 
-</li>
-<li markdown="block">
 
-<span class="clause-number">3.3</span> These types of agreements (cartel agreements) are automatically illegal in the UK, the jurisdiction in which the Alliance is established. There can be no justification; the agreement itself is unlawful.
 
-</li>
-</ol>
-## 4\. Queries
+### [About the CHERI Alliance](/organisations/cheri-alliance/)
+{: .related-pages-item-title }
 
-<ol class="legal-clauses" role="list" markdown="block">
-<li markdown="block">
 
-<span class="clause-number">4.1</span> Any questions relating to this statement, or its contents, should be directed to the Board of Directors of the Alliance.
 
-</li>
-<li markdown="block">
 
-<span class="clause-number">4.2</span> Any suspected breach of this statement should be reported to the Board of Directors of the Alliance.
 
-</li>
-</ol>
+[Learn how the Alliance connects organisations working across the CHERI ecosystem.](/organisations/cheri-alliance/)
+{: .related-pages-item-summary }
+
+
+
+[Read this page](/organisations/cheri-alliance/)
+{: .source-card-label }

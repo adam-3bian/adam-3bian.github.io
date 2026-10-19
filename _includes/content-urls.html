@@ -1,0 +1,62 @@
+{%- comment -%}
+  Retained Markdown is literal (render_with_liquid: false). Apply the deployment
+  prefix to URL attributes in native rendered tags, after source-card conversion.
+  Read quoted attribute values separately so prose, escaped code and alt/title
+  text containing URL-like strings are never rewritten. No client-side routing.
+{%- endcomment -%}
+{%- if site.baseurl == nil or site.baseurl == '' or site.baseurl == '/' -%}
+  {{- include.content -}}
+{%- else -%}
+  {%- assign url_tags = 'a,img,source,video,audio,iframe,object,form,link,script' | split: ',' -%}
+  {%- assign url_attributes = 'href=,src=,poster=,action=,data=' | split: ',' -%}
+  {%- assign deployment_prefix = site.baseurl | append: '/' -%}
+  {%- assign deployment_length = deployment_prefix | size -%}
+  {%- assign html_parts = include.content | split: '<' -%}
+  {%- for html_part in html_parts -%}
+    {%- if forloop.first -%}{{- html_part -}}
+    {%- else -%}
+      {%- assign tag_opening = html_part | split: '>' | first -%}
+      {%- assign tag_name = tag_opening | normalize_whitespace | split: ' ' | first -%}
+      {%- assign adapted_opening = tag_opening -%}
+      {%- if url_tags contains tag_name -%}
+        {%- assign attribute_quote = '' -%}
+        {%- assign attribute_name = '' -%}
+        {%- assign outside_value = '' -%}
+        {%- assign attribute_value = '' -%}
+        {%- assign tag_characters = tag_opening | split: '' -%}
+        {%- capture adapted_opening -%}
+          {%- for character in tag_characters -%}
+            {%- if attribute_quote != '' -%}
+              {%- if character == attribute_quote -%}
+                {%- if url_attributes contains attribute_name -%}
+                  {%- assign first_character = attribute_value | slice: 0, 1 -%}
+                  {%- assign first_two = attribute_value | slice: 0, 2 -%}
+                  {%- assign existing_prefix = attribute_value | slice: 0, deployment_length -%}
+                  {%- assign attribute_path = attribute_value | split: '?' | first | split: '#' | first -%}
+                  {%- if first_character == '/' and first_two != '//' and existing_prefix != deployment_prefix and attribute_path != site.baseurl -%}
+                    {{- site.baseurl -}}
+                  {%- endif -%}
+                {%- endif -%}
+                {{- attribute_value -}}{{- character -}}
+                {%- assign attribute_quote = '' -%}
+                {%- assign outside_value = '' -%}
+              {%- else -%}
+                {%- assign attribute_value = attribute_value | append: character -%}
+              {%- endif -%}
+            {%- else -%}
+              {{- character -}}
+              {%- if character == '"' or character == "'" -%}
+                {%- assign attribute_quote = character -%}
+                {%- assign attribute_name = outside_value | normalize_whitespace | split: ' ' | last -%}
+                {%- assign attribute_value = '' -%}
+              {%- else -%}
+                {%- assign outside_value = outside_value | append: character -%}
+              {%- endif -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endcapture -%}
+      {%- endif -%}
+      <{{- html_part | replace_first: tag_opening, adapted_opening -}}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}

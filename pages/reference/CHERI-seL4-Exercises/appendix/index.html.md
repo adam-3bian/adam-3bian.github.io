@@ -1,83 +1,45 @@
 ---
 title: Appendix
 permalink: /reference/CHERI-seL4-Exercises/appendix/index.html
-summary: null
-image_url: null
-updated_date: null
-parent: /CHERI-seL4-Exercises/
-next_page_url: null
-related:
-  pages: []
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
-# Appendix
+# [Appendix](/reference/CHERI-seL4-Exercises/appendix/index.html#appendix)
+{: id="appendix" }
 
 This book and related source code are released under the following license:
 
+~~~
 SPDX-License-Identifier: BSD-2-Clause-DARPA-SSITH-ECATS-HR0011-18-C-0016
 
 Copyright (c) 2020 Jessica Clarke
-
 Copyright (c) 2020, 2022 Robert N. M. Watson
-
 Copyright (c) 2020 SRI International
-
 Copyright (c) 2022 Microsoft Corporation
-
 Copyright (c) 2025 Capabilities Limited
 
 This software was developed by SRI International and the University of
-
 Cambridge Computer Laboratory (Department of Computer Science and
-
 Technology) under DARPA contract HR0011-18-C-0016 ("ECATS"), as part of the
-
 DARPA SSITH research programme.
 
 Redistribution and use in source and binary forms, with or without
-
 modification, are permitted provided that the following conditions
-
 are met:
+1. Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
 
-1\. Redistributions of source code must retain the above copyright
-
-notice, this list of conditions and the following disclaimer.
-
-2\. Redistributions in binary form must reproduce the above copyright
-
-notice, this list of conditions and the following disclaimer in the
-
-documentation and/or other materials provided with the distribution.
-
-THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS \`\`AS IS'' AND
-
+THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND
 ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-
 IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
-
 ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
-
 FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-
 DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
-
 OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
-
 HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
-
 LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
-
 OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
-
 SUCH DAMAGE.
+~~~

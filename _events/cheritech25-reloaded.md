@@ -1,262 +1,268 @@
 ---
 title: CHERITech'25 Reloaded
-image_url: /assets/events/cheritech25-reloaded/7bce58279add-cheritech25-reloaded.webp
-website_url: https://cheri-alliance.org/events/cheritech25-reloaded/
-registration_url: null
-start_date: '2025-12-04'
-start_datetime: null
-end_date: null
-end_datetime: null
-location: Online
-speakers:
-- andrew-murray
-- carl-shaw
-- david-chisnall
-- jeremy-singer
-- john-thomson
-- jonathan-woodruff
-- marno-van-der-maas
-- mike-eftimakis
-- murali-vijayaraghavan
-- tariq-kurd
-- thomas-nyman
-related:
-  working-groups: []
-  organisations:
-  - university-of-cambridge
-  - university-of-glasgow
-  - capabilities-limited
-  - sci-semiconductor
-  - the-good-penguin
-  - cheri-alliance
-  - ericsson
-  - codasip
-  - lowrisc
-  - google
-  academic-papers: []
+speakers: [andrew-murray, carl-shaw, david-chisnall, jeremy-singer, john-thomson, jonathan-woodruff, marno-van-der-maas,
+  mike-eftimakis, murali-vijayaraghavan, tariq-kurd, thomas-nyman]
+date: '2025-12-04'
+source-speakers: true
 ---
 
+1. News &amp; Events
+2. Events &amp; Archive
+3. CHERITech'25 Reloaded
+{: .source-breadcrumbs }
+
 # CHERITech'25 Reloaded
+{: id="page-hero-title" .page-hero-title }
 
 An online replay and live question-and-answer programme with speakers from the main CHERITech'25 conference.
+{: .page-hero-summary }
+
+![CHERITech'25 Reloaded](/assets/events/cheritech25-reloaded/7bce58279add-cheritech25-reloaded.webp){: .image-left }
+{: .entity-media .entity-media--event }
+
+Status
+: Past
 
 Format
 : Online event
 
+Date
+: 4 December 2025
+
+Location
+: Online
+
 Series
-: CHERITech
-
-Time
-: 09:00 to 17:45 GMT
-{: .record-properties }
-
-Thank you to everyone who participated!
+: [CHERITech](/news-and-events/events-and-archive/cheritech/)
+{: .entity-facts }
 
 ## Conference Overview
+{: id="conference-overview" }
 
-CHERITech’25 Reloaded took place online on 4th December 2025. Participants joined us for live Q&A sessions with speakers from the main CHERITech’25 conference and revisited ideas, insights, and conversations.
+CHERITech’25 Reloaded took place online on 4th December 2025. Participants joined us for live Q&amp;A sessions with speakers from the [main CHERITech’25 conference](/events/cheritech25/) and revisited ideas, insights, and conversations.
 
-Participants could view the recordings at their own pace before CHERITech’25 Reloaded began.
+Participants could [view the recordings](/events/cheritech25-reloaded/#agenda) at their own pace before CHERITech’25 Reloaded began and have an interaction with the speakers.
 
 ## Agenda
+{: id="agenda" }
 
-- Start (GMT): 09:00; Duration: 00:05; Speaker: [Mike Eftimakis](/people/mike-eftimakis/); Section: Introduction
-
-- Start (GMT): 09:07; Duration: 00:15; Speaker: Mike Eftimakis; Section: Q&A 1; CHERITech’25 Talk: Progress of the Alliance; slides and video: [speaker profile](#speakers)
-
-- Start (GMT): 09:24; Duration: 00:15; Speaker: [Carl Shaw](/people/carl-shaw/); Section: Q&A 1; CHERITech’25 Talk: CHERI Performance; slides and video: [speaker profile](#speakers)
-
-- Start (GMT): 09:41; Duration: 00:15; Speaker: [Jonathan Woodruff](/people/jonathan-woodruff/); Section: Q&A; CHERITech’25 Talk: An open-source RV64Y implementation for commercialization; slides and video: [speaker profile](#speakers)
-
-- Start (GMT): 09:58; Duration: 00:05; Section: Break
-
-- Start (GMT): 10:05; Duration: 00:15; Speaker: [John Thomson](/people/john-thomson/); Section: Q&A; CHERITech’25 Talk: Announcing COSMIC; slides and video: [speaker profile](#speakers)
-
-- Start (GMT): 10:22; Duration: 00:15; Speaker: [Marno van der Maas](/people/marno-van-der-maas/); Section: Q&A; CHERITech’25 Talk: [Sonata](/hardware/sonata/)®: A platform for high-integrity operational technology; slides and video: [speaker profile](#speakers)
-
-- Start (GMT): 10:39; Duration: 00:15; Speaker: [David Chisnall](/people/david-chisnall/); Section: Q&A 1; CHERITech’25 Talk: [CHERIoT](/hardware/cheriot/) Audit; slides and video: [speaker profile](#speakers)
-
-- Start (GMT): 10:56; Duration: 00:15; Speaker: [Tariq Kurd](/people/tariq-kurd/); Section: Q&A 1; CHERITech’25 Talk: CHERI-RISC-V standardisation status; slides and video: [speaker profile](#speakers)
-
-- Start (GMT): 11:13; Duration: 03:45; Section: Break
-
-- Start (GMT): 15:00; Duration: 00:05; Speaker: Mike Eftimakis; Section: Introduction
-
-- Start (GMT): 15:07; Duration: 00:15; Speaker: Tariq Kurd; Section: Q&A 2; CHERITech’25 Talk: CHERI-RISC-V standardisation status; slides and video: [speaker profile](#speakers)
-
-- Start (GMT): 15:24; Duration: 00:15; Speaker: David Chisnall; Section: Q&A 2; CHERITech’25 Talk: CHERIoT Audit; slides and video: [speaker profile](#speakers)
-
-- Start (GMT): 15:41; Duration: 00:15; Speaker: [Jeremy Singer](/people/jeremy-singer/); Section: Q&A; CHERITech’25 Talk: State of the Union: Which Virtual Machines can I run on CHERI?; slides and video: [speaker profile](#speakers)
-
-- Start (GMT): 15:58; Duration: 00:15; Speaker: [Andrew Murray](/people/andrew-murray/); Section: Q&A; CHERITech’25 Talk: Introducing a development Hub; slides and video: [speaker profile](#speakers)
-
-- Start (GMT): 16:15; Duration: 00:10; Section: Break
-
-- Start (GMT): 16:27; Duration: 00:15; Speaker: Mike Eftimakis; Section: Q&A 2; CHERITech’25 Talk: Progress of the Alliance; slides and video: [speaker profile](#speakers)
-
-- Start (GMT): 16:44; Duration: 00:15; Speaker: [Thomas Nyman](/people/thomas-nyman/); Section: Q&A; CHERITech’25 Talk: BLACKOUT: Data-Oblivious Computation with Blinded Capabilities; slides and video: [speaker profile](#speakers)
-
-- Start (GMT): 17:01; Duration: 00:15; Speaker: [Murali Vijayaraghavan](/people/murali-vijayaraghavan/); Section: Q&A; CHERITech’25 Talk: Rigorous Hardware-Software Codesign for Secure Compartmentalization on Embedded Devices; slides and video: [speaker profile](#speakers)
-
-- Start (GMT): 17:18; Duration: 00:15; Speaker: Carl Shaw; Section: Q&A 2; CHERITech’25 Talk: CHERI Performance; slides and video: [speaker profile](#speakers)
-
-- Start (GMT): 17:33; Section: End
+| Talk Title | Speaker | Organisation | Video | Slides |
+| --- | --- | --- | :---: | :---: |
+| Progress of the Alliance | [Mike Eftimakis](/people/mike-eftimakis/) | CHERI Alliance | [▶️](https://youtu.be/cz3PqYgOAb8) | [📄](https://cheri-alliance.org/wp-content/uploads/2025/11/1.3-Mike-Eftimakis-Progress-of-the-Alliance-CHERITech25.pdf) |
+| CHERI Performance | [Carl Shaw](/people/carl-shaw/) | Codasip | [▶️](https://youtu.be/7l78wO_6V5k) | [📄](https://cheri-alliance.org/wp-content/uploads/2025/11/2.3-Carl-Shaw-CHERI-Progress-CHERITech25.pdf) |
+| An open-source RV64Y implementation for commercialization | [Jonathan Woodruff](/people/jonathan-woodruff/) | Capabilities Limited, University of Cambridge | [▶️](https://youtu.be/nfpKp2krhh8) | [📄](https://cheri-alliance.org/wp-content/uploads/2025/11/2.1-Jonathan-Woodruff-CHERITech25.pdf) |
+| Announcing COSMIC | [John Thomson](/people/john-thomson/) | lowRISC | [▶️](https://youtu.be/XeE2iWDukwU) | [📄](https://cheri-alliance.org/wp-content/uploads/2025/11/2.2-John-Thomson-COSMIC-CHERITech25.pdf) |
+| Sonata®: A platform for high-integrity operational technology | [Marno van der Maas](/people/marno-van-der-maas/) | lowRISC | [▶️](https://youtu.be/Pn3leQV8oyQ) | [📄](https://cheri-alliance.org/wp-content/uploads/2025/11/2.4-Marno-van-der-Maas-Sonata-_-A-platform-for-high-integrity-operational-technology-CHERITech25.pdf) |
+| CHERIoT Audit | [David Chisnall](/people/david-chisnall/) | SCI Semiconductor | [▶️](https://youtu.be/RQ5ZJ4azZK8) | [📄](https://cheri-alliance.org/wp-content/uploads/2025/11/3.2-David-Chisnall-CHERIoT-Audit-1-CHERITech25.pdf) |
+| CHERI-RISC-V standardisation status | [Tariq Kurd](/people/tariq-kurd/) | Codasip | [▶️](https://youtu.be/jHrMY8Jyuns) | [📄](https://cheri-alliance.org/wp-content/uploads/2025/11/3.4-Tariq-Kurd-CHERI-RISC-V-standardisation-status-CHERITech25.pdf) |
+| CHERI-RISC-V standardisation status | [Tariq Kurd](/people/tariq-kurd/) | Codasip | [▶️](https://youtu.be/jHrMY8Jyuns) | [📄](https://cheri-alliance.org/wp-content/uploads/2025/11/3.4-Tariq-Kurd-CHERI-RISC-V-standardisation-status-CHERITech25.pdf) |
+| CHERIoT Audit | [David Chisnall](/people/david-chisnall/) | SCI Semiconductor | [▶️](https://youtu.be/RQ5ZJ4azZK8) | [📄](https://cheri-alliance.org/wp-content/uploads/2025/11/3.2-David-Chisnall-CHERIoT-Audit-1-CHERITech25.pdf) |
+| State of the Union: Which Virtual Machines can I run on CHERI? | [Jeremy Singer](/people/jeremy-singer/) | University of Glasgow | [▶️](https://youtu.be/UF4mSM8YOao) | [📄](https://cheri-alliance.org/wp-content/uploads/2025/11/4.5-Jeremy-Singer-State-of-the-Union-Which-Virtual-Machines-can-I-run-on-CHERI-CHERITech25.pdf) |
+| Introducing a development Hub | [Andrew Murray](/people/andrew-murray/) | The Good Penguin | [▶️](https://youtu.be/kl8KozsDjuc) | [📄](https://cheri-alliance.org/wp-content/uploads/2025/11/4.1-Andrew-Murray-A-development-hub-CHERITech25.pdf) |
+| Progress of the Alliance | [Mike Eftimakis](/people/mike-eftimakis/) | CHERI Alliance | [▶️](https://youtu.be/cz3PqYgOAb8) | [📄](https://cheri-alliance.org/wp-content/uploads/2025/11/1.3-Mike-Eftimakis-Progress-of-the-Alliance-CHERITech25.pdf) |
+| BLACKOUT: Data-Oblivious Computation with Blinded Capabilities | [Thomas Nyman](/people/thomas-nyman/) | Ericsson | [▶️](https://youtu.be/b3KIfFGV-bY) | [📄](https://cheri-alliance.org/wp-content/uploads/2025/11/2.5-Thomas-Nyman-Merve-Gulmez-BLACKOUT-Data-Oblivious-Computation-with-Blinded-Capabilities-CHERITech25.pdf) |
+| Rigorous Hardware-Software Codesign for Secure Compartmentalization on Embedded Devices | [Murali Vijayaraghavan](/people/murali-vijayaraghavan/) | Google | [▶️](https://youtu.be/Y3eZd6W5VzA) | [📄](https://cheri-alliance.org/wp-content/uploads/2025/11/3.3-Murali-Vijayaraghavan-Rigorous-Hardware-Software-Codesign-for-Secure-Compartmentalization-on-Embedded-Devices-CHERITech25.pdf) |
+| CHERI Performance | [Carl Shaw](/people/carl-shaw/) | Codasip | [▶️](https://youtu.be/7l78wO_6V5k) | [📄](https://cheri-alliance.org/wp-content/uploads/2025/11/2.3-Carl-Shaw-CHERI-Progress-CHERITech25.pdf) |
 
 ## Speakers
+{: id="speakers" }
 
-<ul class="image-gallery portrait-gallery" markdown="block">
-<li markdown="block">
+![](/assets/people/andrew-murray/4471744b8d2d-andrew-murray.webp){: .image-full }
 
-[![Andrew Murray](/assets/people/andrew-murray/4471744b8d2d-andrew-murray.webp){: .image-portrait }](/people/andrew-murray/)
-
-[The Good Penguin](/organisations/the-good-penguin/)
+The Good Penguin
+{: .collection-card__meta }
 
 ### [Andrew Murray](/people/andrew-murray/)
+{: .collection-card__title }
 
 Andrew Murray is founder and director of The Good Penguin, a UK based consultancy with a focus and passion for embedded Linux, low level and open-source software. The ...
+{: .collection-card__summary }
 
-</li>
-<li markdown="block">
+View speaker
+{: .collection-card__link }
 
-[![Carl Shaw](/assets/people/carl-shaw/77510c8e2140-carl-shaw.webp){: .image-portrait }](/people/carl-shaw/)
-
-[Codasip](/organisations/codasip/)
-
-### [Carl Shaw](/people/carl-shaw/)
-
-Carl Shaw is a hands-on technical expert with a diverse background in embedded systems and security engineering. His work focuses on the intersection of hardware and s...
-
-</li>
-<li markdown="block">
-
-[![David Chisnall](/assets/people/david-chisnall/df30b5f06c8a-david-chisnall.webp){: .image-portrait }](/people/david-chisnall/)
-
-[SCI Semiconductor](/organisations/sci-semiconductor/)
-
-### [David Chisnall](/people/david-chisnall/)
-
-David Chisnall has been working on CHERI since 2012, when he joined the [University of Cambridge](/organisations/university-of-cambridge/) to lead the languages and compiler work on the CHERI project. He joined...
-
-</li>
-<li markdown="block">
-
-[![Jeremy Singer](/assets/people/jeremy-singer/c47e35e4cac6-jeremy-singer.webp){: .image-portrait }](/people/jeremy-singer/)
-
-[University of Glasgow](/organisations/university-of-glasgow/)
-
-### [Jeremy Singer](/people/jeremy-singer/)
-
-Jeremy is a Reader in Programming Language Implementation at the University of Glasgow. He is the proud owner (or at least, custodian) of four [Arm Morello](/hardware/morello/) boxes and tw...
-
-</li>
-<li markdown="block">
-
-[![John Thomson](/assets/people/john-thomson/a30b210fc678-john-thomson.webp){: .image-portrait }](/people/john-thomson/)
-
-[lowRISC](/organisations/lowrisc/)
-
-### [John Thomson](/people/john-thomson/)
-
-John works at lowRISC as a senior product manager where he advocates the company’s mission of getting open silicon source everywhere. He worked on delivery of key proj...
-
-</li>
-<li markdown="block">
-
-[![Jonathan Woodruff](/assets/people/jonathan-woodruff/efabe0a1a306-jonathan-woodruff.webp){: .image-portrait }](/people/jonathan-woodruff/)
-
-[Capabilities Limited](/organisations/capabilities-limited/)
-
-### [Jonathan Woodruff](/people/jonathan-woodruff/)
-
-Dr Jonathan Woodruff is a Senior Research Associate with expertise in processor architecture and microarchitecture as well as low-level software optimisation. Speciali...
-
-</li>
-<li markdown="block">
-
-[![Marno van der Maas](/assets/people/marno-van-der-maas/339812a45c3f-marno-van-der-maas.webp){: .image-portrait }](/people/marno-van-der-maas/)
-
-lowRISC
-
-### [Marno van der Maas](/people/marno-van-der-maas/)
-
-Dr Marno van der Maas completed a PhD at the University of Cambridge in 2022 on protecting trusted execution environments from side-channel attacks. During this time, ...
-
-</li>
-<li markdown="block">
-
-[![Mike Eftimakis](/assets/people/mike-eftimakis/95bf8c70c443-mike-eftimakis.webp){: .image-portrait }](/people/mike-eftimakis/)
-
-[CHERI Alliance](/organisations/cheri-alliance/)
-
-### [Mike Eftimakis](/people/mike-eftimakis/)
-
-Mike Eftimakis has an extensive background in the semiconductor and electronics industry with 30 years in senior technical and business roles. He has a rich history of...
-
-</li>
-<li markdown="block">
-
-[![Murali Vijayaraghavan](/assets/people/murali-vijayaraghavan/326629bec34e-murali-vijayaraghavan.webp){: .image-portrait }](/people/murali-vijayaraghavan/)
-
-[Google](/organisations/google/)
-
-### [Murali Vijayaraghavan](/people/murali-vijayaraghavan/)
-
-Murali is a formal methods and security researcher at Google.
-
-</li>
-<li markdown="block">
-
-[![Tariq Kurd](/assets/people/tariq-kurd/1284cdf835ad-tariq-kurd.webp){: .image-portrait }](/people/tariq-kurd/)
+![](/assets/people/carl-shaw/77510c8e2140-carl-shaw.webp){: .image-full }
 
 Codasip
+{: .collection-card__meta }
+
+### [Carl Shaw](/people/carl-shaw/)
+{: .collection-card__title }
+
+Carl Shaw is a hands-on technical expert with a diverse background in embedded systems and security engineering. His work focuses on the intersection of hardware and s...
+{: .collection-card__summary }
+
+View speaker
+{: .collection-card__link }
+
+![](/assets/people/david-chisnall/df30b5f06c8a-david-chisnall.webp){: .image-full }
+
+SCI Semiconductor
+{: .collection-card__meta }
+
+### [David Chisnall](/people/david-chisnall/)
+{: .collection-card__title }
+
+David Chisnall has been working on CHERI since 2012, when he joined the University of Cambridge to lead the languages and compiler work on the CHERI project. He joined...
+{: .collection-card__summary }
+
+View speaker
+{: .collection-card__link }
+
+![](/assets/people/jeremy-singer/c47e35e4cac6-jeremy-singer.webp){: .image-full }
+
+University of Glasgow
+{: .collection-card__meta }
+
+### [Jeremy Singer](/people/jeremy-singer/)
+{: .collection-card__title }
+
+Jeremy is a Reader in Programming Language Implementation at the University of Glasgow. He is the proud owner (or at least, custodian) of four Arm Morello boxes and tw...
+{: .collection-card__summary }
+
+View speaker
+{: .collection-card__link }
+
+![](/assets/people/john-thomson/a30b210fc678-john-thomson.webp){: .image-full }
+
+lowRISC
+{: .collection-card__meta }
+
+### [John Thomson](/people/john-thomson/)
+{: .collection-card__title }
+
+John works at lowRISC as a senior product manager where he advocates the company’s mission of getting open silicon source everywhere. He worked on delivery of key proj...
+{: .collection-card__summary }
+
+View speaker
+{: .collection-card__link }
+
+![](/assets/people/jonathan-woodruff/efabe0a1a306-jonathan-woodruff.webp){: .image-full }
+
+Capabilities Limited
+{: .collection-card__meta }
+
+### [Jonathan Woodruff](/people/jonathan-woodruff/)
+{: .collection-card__title }
+
+Dr Jonathan Woodruff is a Senior Research Associate with expertise in processor architecture and microarchitecture as well as low-level software optimisation. Speciali...
+{: .collection-card__summary }
+
+View speaker
+{: .collection-card__link }
+
+![](/assets/people/marno-van-der-maas/339812a45c3f-marno-van-der-maas.webp){: .image-full }
+
+lowRISC
+{: .collection-card__meta }
+
+### [Marno van der Maas](/people/marno-van-der-maas/)
+{: .collection-card__title }
+
+Dr Marno van der Maas completed a PhD at the University of Cambridge in 2022 on protecting trusted execution environments from side-channel attacks. During this time, ...
+{: .collection-card__summary }
+
+View speaker
+{: .collection-card__link }
+
+![](/assets/people/mike-eftimakis/95bf8c70c443-mike-eftimakis.webp){: .image-full }
+
+CHERI Alliance
+{: .collection-card__meta }
+
+### [Mike Eftimakis](/people/mike-eftimakis/)
+{: .collection-card__title }
+
+Mike Eftimakis has an extensive background in the semiconductor and electronics industry with 30 years in senior technical and business roles. He has a rich history of...
+{: .collection-card__summary }
+
+View speaker
+{: .collection-card__link }
+
+![](/assets/people/murali-vijayaraghavan/326629bec34e-murali-vijayaraghavan.webp){: .image-full }
+
+Google
+{: .collection-card__meta }
+
+### [Murali Vijayaraghavan](/people/murali-vijayaraghavan/)
+{: .collection-card__title }
+
+Murali is a formal methods and security researcher at Google.
+{: .collection-card__summary }
+
+View speaker
+{: .collection-card__link }
+
+![](/assets/people/tariq-kurd/1284cdf835ad-tariq-kurd.webp){: .image-full }
+
+Codasip
+{: .collection-card__meta }
 
 ### [Tariq Kurd](/people/tariq-kurd/)
+{: .collection-card__title }
 
 Tariq Kurd has been involved in CPU architecture, design, and verification for over 25 years, primarily in the embedded field. He has worked on VLIW, multithreading, o...
+{: .collection-card__summary }
 
-</li>
-<li markdown="block">
+View speaker
+{: .collection-card__link }
 
-[![Thomas Nyman](/assets/people/thomas-nyman/0e748fba225e-thomas-nyman.webp){: .image-portrait }](/people/thomas-nyman/)
+![](/assets/people/thomas-nyman/0e748fba225e-thomas-nyman.webp){: .image-full }
 
-[Ericsson](/organisations/ericsson/)
+Ericsson
+{: .collection-card__meta }
 
 ### [Thomas Nyman](/people/thomas-nyman/)
+{: .collection-card__title }
 
-Thomas Nyman holds a position as Expert in Trusted Hardware & Software Technologies at the telecommunications company Ericsson where he works with software and platfor...
+Thomas Nyman holds a position as Expert in Trusted Hardware &amp; Software Technologies at the telecommunications company Ericsson where he works with software and platfor...
+{: .collection-card__summary }
 
-</li>
-</ul>
+View speaker
+{: .collection-card__link }
 
 ## More CHERITech events
+{: id="related-series-events" }
 
-[View all events](/events/).
+[View the complete series](/news-and-events/events-and-archive/cheritech/)
 
-<ul class="image-gallery record-gallery" markdown="block">
-<li markdown="block">
+![](/assets/events/cheritech26/408459d34c43-cheritech26.webp){: .image-full }
 
-[![cheritech26](/assets/events/cheritech26/408459d34c43-cheritech26.webp)](/events/cheritech26/)
+Upcoming
+Conference
+{: .collection-card__labels }
 
-Upcoming Conference
-
-12 to 13 November 2026 SEMICON Europa, Munich, Germany
+12 to 13 November 2026
+SEMICON Europa, Munich, Germany
+{: .collection-card__meta }
 
 ### [CHERITech'26](/events/cheritech26/)
+{: .collection-card__title }
 
 CHERITech’26 will take place in Munich alongside Electronica / SEMICON Europa, one of the world’s largest electronics industry events!Hosted at the heart of the exhibi...
+{: .collection-card__summary }
 
-</li>
-<li markdown="block">
+View event
+{: .collection-card__link }
 
-[![cheritech25](/assets/events/cheritech25/0e6d3180c4d1-cheritech25.webp)](/events/cheritech25/)
+![](/assets/events/cheritech25/0e6d3180c4d1-cheritech25.webp){: .image-full }
 
-Past Conference
+Past
+Conference
+{: .collection-card__labels }
 
-14 November 2025 Sister, Manchester, UK
+14 November 2025
+Sister, Manchester, UK
+{: .collection-card__meta }
 
 ### [CHERITech'25 Conference](/events/cheritech25/)
+{: .collection-card__title }
 
 CHERITech’25 brought together researchers, technologists, cybersecurity experts, and product developers for a dynamic exploration of Digital Security by Design. Now un...
+{: .collection-card__summary }
 
-</li>
-</ul>
+View event archive
+{: .collection-card__link }
+
+[Back to past events](/news-and-events/events-and-archive/past-events/)
+{: .entity-back }

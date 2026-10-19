@@ -1,71 +1,186 @@
 ---
 title: Debugging Tools
-image_url: /assets/software/debugging-tools/placeholder.svg
-website_url: null
-repository_urls:
-- https://github.com/CHERI-Alliance/gdb
-- https://github.com/CTSRD-CHERI/gdb
-- https://github.com/CTSRD-CHERI/cheribuild
-type: null
-status: null
-related:
-  organisations:
-  - cheri-alliance
-  hardware:
-  - cheriot
-  - morello
-  software:
-  - cheribsd
-  - cheri-linux
-navigation:
-  header:
-    category: Build
-    subcategory: Resources
-    parent: software-ecosystem
-    order: 6
+where-next:
+  url: /software/porting-status/
+related-pages:
+- url: /software/cheribsd/
+  description: A full-system CHERI environment with capability-aware faults, tracing, core dumps, and developer tools.
+  action: Read this page
+- url: /groups/cheri-qemu/
+  title: QEMU Working Group
+  description: Alliance collaboration around maintained CHERI architecture and platform emulation.
+  action: Read this page
+- url: /hardware/cheriot/
+  description: An embedded CHERI platform with compartment-aware firmware and diagnostic tooling.
+  action: Read this page
 ---
 
+1. Build
+2. Software Ecosystem
+3. Debugging Tools
+{: .source-breadcrumbs }
+
 # Debugging Tools
+{: id="page-hero-title" .page-hero-title }
 
-Capability-aware debuggers and diagnostics make addresses, bounds, permissions, tags, sealing state, and faults visible alongside familiar program state.
+Understand CHERI faults and inspect capabilities alongside familiar program state.
+{: .page-hero-summary }
 
-CHERI extends ordinary pointer state with protected metadata. Debugging support therefore covers familiar addresses, registers, stack traces, and symbols together with capability bounds, permissions, tags, sealing state, and architecture-specific faults.
+CHERI adds information to pointers, including bounds, permissions and protected validity information. Capability-aware debugging tools make this state visible alongside familiar addresses, registers, variables, symbols and stack traces.
 
-## Capability-aware diagnostics
+When CHERI prevents an invalid memory access, these tools can help developers understand what the program tried to do, which capability it used, and why the operation was rejected.
 
-A capability exception can identify the operation that exceeded the authority available to it. Depending on the platform, diagnostics can expose the capability register, attempted address, access type, bounds, permissions, tag state, and the process or compartment in which the fault occurred.
+## Debugging capability faults
+{: id="debugging-capability-faults" }
 
-The terminology and presentation differ across [CheriBSD](/software/cheribsd/), [CHERIoT](/hardware/cheriot/), Linux, [Morello](/hardware/morello/), and CHERI-RISC-V environments.
+A CHERI capability fault occurs when software attempts an operation that is not permitted by the capability it is using.
+
+Depending on the platform and tools, diagnostics may show information such as:
+
+- the capability involved
+- the attempted memory address and operation
+- capability bounds
+- permissions
+- tag and sealing state
+- the instruction that caused the fault
+- the process, thread or compartment in which it occurred
+
+This can make CHERI faults valuable during development: rather than allowing an invalid access to silently corrupt memory, the hardware can **stop** it at the point where protection is violated.
+
+The exact diagnostics and terminology vary between CHERI platforms.
 
 ## GDB and LLDB
+{: id="gdb-and-lldb" }
 
-CHERI-aware builds of GDB and LLDB extend their normal source, register, memory, breakpoint, and core-file views with capability representations. Target support is tied to the architecture and ABI understood by a particular debugger build.
+Capability-aware versions of GDB and LLDB extend familiar debugging workflows with support for CHERI capabilities.
 
-A conventional host debugger can display capability-sized data as a value without understanding the protected tag or decoding target-specific permissions and registers.
+Alongside source code, breakpoints, registers, memory and stack traces, supported debugger builds can expose capability registers and their associated bounds, permissions and state.
 
-## QEMU
+Debugger support depends on the target architecture, ABI and platform, so use the debugger supplied or recommended for your CHERI development environment.
 
-QEMU provides repeatable architecture and operating-system environments for capability exceptions, remote debugging, instruction traces, and continuous integration. Its role is particularly important where software development and automated testing need to run independently of hardware availability.
+## Debugging with QEMU
+{: id="debugging-with-qemu" }
 
-The CHERI QEMU work covers architecture models, platform support, version maintenance, and test infrastructure.
+QEMU provides a convenient environment for investigating capability faults without requiring physical hardware.
 
-## Operating-system and firmware support
+It is particularly useful for:
 
-CheriBSD carries capability state through signals, core dumps, process tracing, kernel diagnostics, and target-aware debugging tools. [CHERI Linux](/software/cheri-linux/) projects integrate similar concerns with their own kernel branches and user-space environments.
+- developing and debugging CHERI software
+- reproducing capability faults
+- remote debugging
+- automated testing
+- running tests consistently across development and continuous-integration environments
 
-CHERIoT exposes faults within a compartment-oriented embedded model. Its tooling also includes firmware audit information describing compartments, imports, exports, and authority relationships.
+Because QEMU provides an architectural rather than physical implementation model, hardware-specific behaviour may require an FPGA or silicon platform.
 
-## Binary inspection
+## Operating-system and embedded diagnostics
+{: id="operating-system-and-embedded-diagnostics" }
 
-CHERI-aware versions of tools such as llvm-readelf, llvm-objdump, and nm understand target object formats, capability relocations, symbols, and capability-bearing sections. This makes the static structure of a binary visible alongside runtime diagnostics.
+Different CHERI software environments integrate capability debugging in different ways.
 
-## Current tool landscape
+- **CheriBSD** carries capability information through operating-system facilities such as faults, signals, core dumps and process debugging, providing an application-class environment for investigating CHERI software.
+- **CHERI Linux** development similarly needs capability-aware kernel and user-space diagnostic support as the platform evolves.
+- **CHERIoT** provides diagnostics in a compartment-oriented embedded environment, where faults can be investigated in the context of individual software compartments and the authority available to them.
 
-Debugger and diagnostic coverage follows the underlying platform projects. Architecture version, ABI, operating system, simulator, SDK, and binary format all affect what a tool can decode. As a result, capability-aware debugging is provided as part of specific CHERI environments rather than one universal host toolchain.
+## Inspecting binaries
+{: id="inspecting-binaries" }
+
+Debugging sometimes starts before the program runs. CHERI-aware binary tools can help developers inspect how capabilities are represented in compiled software.
+
+Tools such as `llvm-readelf`, `llvm-objdump`, and `nm` can be used, with appropriate CHERI support, to examine areas such as symbols, sections, relocations, generated instructions and capability-related information in executable files.
+
+These tools can be particularly useful when investigating compiler, linker, loader or ABI issues.
+
+## Choosing debugging tools
+{: id="choosing-debugging-tools" }
+
+Capability-aware debugging is currently closely tied to the underlying CHERI architecture, ABI, operating system and software environment. A conventional debugger may be able to display the raw contents of a capability-sized value without understanding all of its CHERI-specific state.
+
+## From fault to fix
+{: id="from-fault-to-fix" }
+
+CHERI changes an important part of the debugging experience: memory errors that might otherwise cause corruption or appear much later can instead become explicit capability faults.
+
+Capability-aware diagnostics help developers trace those faults back to incorrect pointer use, insufficient authority or other software assumptions, making debugging tools an important part of the CHERI development environment.
 
 ## Project links
+{: id="project-links" }
 
 - [CHERI Alliance GDB](https://github.com/CHERI-Alliance/gdb)
 - [CTSRD-CHERI GDB](https://github.com/CTSRD-CHERI/gdb)
-- [cheribuild](https://github.com/CTSRD-CHERI/cheribuild)
+- [`cheribuild`](https://github.com/CTSRD-CHERI/cheribuild)
 - [CHERIoT Programmer’s Guide](https://cheriot.org/book/)
+
+## Where next
+{: .where-next-title }
+
+### [Porting Status](/software/porting-status/)
+{: .where-next-card-title }
+
+
+
+
+
+[Porting status varies across platforms, ABIs, operating systems, packages, and project revisions.](/software/porting-status/)
+{: .where-next-summary }
+
+
+
+[Continue](/software/porting-status/)
+{: .source-card-label }
+
+## Related content
+{: .related-pages-title }
+
+### [CheriBSD](/software/cheribsd/)
+{: .related-pages-item-title }
+
+
+
+
+
+[A full-system CHERI environment with capability-aware faults, tracing, core dumps, and developer tools.](/software/cheribsd/)
+{: .related-pages-item-summary }
+
+
+
+[Read this page](/software/cheribsd/)
+{: .source-card-label }
+
+
+
+
+
+### [QEMU Working Group](/groups/cheri-qemu/)
+{: .related-pages-item-title }
+
+
+
+
+
+[Alliance collaboration around maintained CHERI architecture and platform emulation.](/groups/cheri-qemu/)
+{: .related-pages-item-summary }
+
+
+
+[Read this page](/groups/cheri-qemu/)
+{: .source-card-label }
+
+
+
+
+
+### [CHERIoT](/hardware/cheriot/)
+{: .related-pages-item-title }
+
+
+
+
+
+[An embedded CHERI platform with compartment-aware firmware and diagnostic tooling.](/hardware/cheriot/)
+{: .related-pages-item-summary }
+
+
+
+[Read this page](/hardware/cheriot/)
+{: .source-card-label }

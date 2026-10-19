@@ -1,27 +1,37 @@
 ---
 title: Code of Conduct
-image_url: /assets/policies/code-of-conduct/placeholder.svg
-author: null
-version: '1.01'
-document_date: '2025-04-14'
-document_url: https://cheri-alliance.org/legal-code-of-conduct/
-navigation:
-  header:
-    category: CHERI Alliance
-    subcategory: Legal & Policies
-    order: 1
-  footer:
-    category: Policies
-    order: 1
+where-next:
+  url: /policies/competition-law-statement/
+related-pages:
+- url: /organisations/cheri-alliance/
+  title: About the CHERI Alliance
+  description: Learn how the Alliance connects organisations working across the CHERI ecosystem.
+  action: Read this page
 ---
 
+1. Alliance
+2. Legal &amp; Policies
+3. Code of Conduct
+{: .source-breadcrumbs }
+
 # Code of Conduct
+{: id="page-hero-title" .page-hero-title }
 
 The Code of Conduct sets the standards of respectful, inclusive, and constructive behaviour expected in every Alliance space.
+{: .page-hero-summary }
 
-The PDF is the official version. The text is reproduced below for convenience, but if there is any difference between the two versions, the PDF takes precedence.
+Version
+: 1.01
 
-This text is based on the [lowRISC](/organisations/lowrisc/) Code of Conduct, which is based on the [LLVM](/software/llvm-and-clang/) Code of Conduct, which is based on the Django Project Code of Conduct, and so on…
+Date
+: 14 April 2025
+{: .page-hero-meta }
+
+![pdf](/assets/shared/source-assets/d63b7eac09b7-pdf-file-icon.webp){: .image-left .image-inline } Download the [CHERI Alliance Code of Conduct](/assets/pages/alliance--legal-and-policies--code-of-conduct/245117ed08d4-code-of-conduct.pdf) – The PDF is the official version. The text is reproduced below for convenience, but if there is any difference between the two versions, the PDF takes precedence..
+
+---
+
+This text is based on the [lowRISC Code of Conduct](https://lowrisc.org/code-of-conduct/), which is based on the [LLVM Code of Conduct](https://llvm.org/docs/CodeOfConduct.html), which is based on the [Django Project Code of Conduct](https://www.djangoproject.com/conduct/), and so on…
 
 The CHERI community is a welcoming and respectful community, and we want to ensure that doesn’t change as we grow and evolve. To that end, we have a few ground rules that we ask people to adhere to:
 
@@ -38,45 +48,42 @@ This code of conduct applies to all spaces managed by the CHERI Alliance. This i
 
 In addition, violations of this code outside these spaces may, in rare cases, affect a person’s ability to participate within them, when the conduct amounts to an egregious violation of this code.
 
-If you believe someone is violating the code of conduct, we ask that you report it by contacting us.
+If you believe someone is violating the code of conduct, we ask that you report it by [contacting us](/alliance/membership/contact/).
 
-Be friendly and patient.
-
-Be welcoming. We strive to be a community that welcomes and supports people of all backgrounds and identities. This includes, but is not limited to members of any race, ethnicity, culture, national origin, colour, immigration status, social and economic class, educational level, sex, sexual orientation, gender identity and expression, age, size, family status, political belief, religion or lack thereof, and mental and physical ability.
-
-Be considerate. Your work will be used by other people, and you in turn will depend on the work of others. Any decision you take will affect users and colleagues, and you should take those consequences into account. Remember that we’re a world-wide community, so you might not be communicating in someone else’s primary language. Many of our community members are here as part of their work, and content (words, images, videos) you share should be appropriate for professional workplaces.
-
-Be respectful. Not all of us will agree all the time, but disagreement is no excuse for poor behaviour and poor manners. We might all experience some frustration now and then, but we cannot allow that frustration to turn into a personal attack. It’s important to remember that a community where people feel uncomfortable or threatened is not a productive one. Members of the CHERI Alliance community should be respectful when dealing with other members as well as with people outside the community.
-
-Be careful in the words and images that you choose and be kind to others. Do not insult or put down other participants. Harassment and other exclusionary behaviour aren’t acceptable. In general, if someone asks you to stop, then stop. Persisting in such behaviour after being asked to stop is considered harassment. This includes, but is not limited to:
-
-- Violent threats or language directed against another person.
-- Discriminatory jokes and language.
-- Posting sexually explicit or violent material.
-- Posting (or threatening to post) other people’s personally identifying information (“doxing”).
-- Personal insults, especially those using racist or sexist terms.
-- Unwelcome sexual attention.
-- Advocating for, or encouraging, any of the above behaviour.
-
-When we disagree, try to understand why. Disagreements, both social and technical, happen all the time and the CHERI Alliance is no exception. It is important that we resolve disagreements and differing views constructively. Remember that we’re different. The strength of the CHERI Alliance comes from its varied community, people from a wide range of backgrounds. Different people have different perspectives on issues.
+- **Be friendly and patient.**
+- **Be welcoming.** We strive to be a community that welcomes and supports people of all backgrounds and identities. This includes, but is not limited to members of any race, ethnicity, culture, national origin, colour, immigration status, social and economic class, educational level, sex, sexual orientation, gender identity and expression, age, size, family status, political belief, religion or lack thereof, and mental and physical ability.
+- **Be considerate.** Your work will be used by other people, and you in turn will depend on the work of others. Any decision you take will affect users and colleagues, and you should take those consequences into account. Remember that we’re a world-wide community, so you might not be communicating in someone else’s primary language. Many of our community members are here as part of their work, and content (words, images, videos) you share should be appropriate for professional workplaces.
+- **Be respectful.** Not all of us will agree all the time, but disagreement is no excuse for poor behaviour and poor manners. We might all experience some frustration now and then, but we cannot allow that frustration to turn into a personal attack. It’s important to remember that a community where people feel uncomfortable or threatened is not a productive one. Members of the CHERI Alliance community should be respectful when dealing with other members as well as with people outside the community.
+- **Be careful in the words and images that you choose and be kind to others.** Do not insult or put down other participants. Harassment and other exclusionary behaviour aren’t acceptable. In general, if someone asks you to stop, then stop. Persisting in such behaviour after being asked to stop is considered harassment. This includes, but is not limited to:
+  - Violent threats or language directed against another person.
+  - Discriminatory jokes and language.
+  - Posting sexually explicit or violent material.
+  - Posting (or threatening to post) other people’s personally identifying information (“doxing”).
+  - Personal insults, especially those using racist or sexist terms.
+  - Unwelcome sexual attention.
+  - Advocating for, or encouraging, any of the above behaviour.
+- **When we disagree, try to understand why.** Disagreements, both social and technical, happen all the time and the CHERI Alliance is no exception. It is important that we resolve disagreements and differing views constructively. Remember that we’re different. The strength of the CHERI Alliance comes from its varied community, people from a wide range of backgrounds. Different people have different perspectives on issues.
 
 Being unable to understand why someone holds a viewpoint doesn’t mean that they’re wrong. Don’t forget that it is human to err and blaming each other doesn’t get us anywhere. Instead, focus on helping to resolve issues and learning from mistakes.
 
 ## Questions?
+{: id="questions" }
 
-If you have questions, please feel free to contact the Code of Conduct team by contacting us.
+If you have questions, please feel free to contact the Code of Conduct team by [contacting us](/alliance/membership/contact/).
 
 ## Reporting Guide
+{: id="reporting-guide" }
 
-If you believe someone is violating the code of conduct you can always report it to the Code of Conduct team by contacting us. All reports will be kept confidential. This isn’t a public list and only members of the team will receive the report.
+If you believe someone is violating the code of conduct you can always report it to the Code of Conduct team by [contacting us](/alliance/membership/contact/). All reports will be kept confidential. This isn’t a public list and only members of the team will receive the report.
 
 If you believe anyone is in physical danger, please notify appropriate law enforcement first. If you are unsure what law enforcement agency is appropriate, please include this in your report and we will attempt to notify them.
 
 If the violation occurs at an event such as a conference or workshop and requires immediate attention, you can also reach out to any of the event organisers or staff. Event organisers and staff will be prepared to handle the incident and able to help. If you cannot find one of the organisers, the venue staff can locate one for you. We will also post detailed contact information for specific events as part of each events’ information.
 
-In person reports will still be kept confidential exactly as above, but also feel free to (anonymously if needed) contact us.
+In person reports will still be kept confidential exactly as above, but also feel free to (anonymously if needed) [contact us](/alliance/membership/contact/).
 
 ## Filing a Report
+{: id="filing-a-report" }
 
 Reports can be as formal or informal as needed for the situation at hand. If possible, please include as much information as you can. If you feel comfortable, please consider including:
 
@@ -87,3 +94,39 @@ Reports can be as formal or informal as needed for the situation at hand. If pos
 - Any extra context you believe existed for the incident.
 - If you believe this incident is ongoing.
 - Any other information you believe we should have.
+
+## Where next
+{: .where-next-title }
+
+### [Competition Law Statement](/policies/competition-law-statement/)
+{: .where-next-card-title }
+
+
+
+
+
+[The Alliance statement on competition law and the boundaries for collaborative activity.](/policies/competition-law-statement/)
+{: .where-next-summary }
+
+
+
+[Continue](/policies/competition-law-statement/)
+{: .source-card-label }
+
+## Related content
+{: .related-pages-title }
+
+### [About the CHERI Alliance](/organisations/cheri-alliance/)
+{: .related-pages-item-title }
+
+
+
+
+
+[Learn how the Alliance connects organisations working across the CHERI ecosystem.](/organisations/cheri-alliance/)
+{: .related-pages-item-summary }
+
+
+
+[Read this page](/organisations/cheri-alliance/)
+{: .source-card-label }

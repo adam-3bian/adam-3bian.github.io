@@ -1,34 +1,23 @@
 ---
 title: Corrupt a control-flow pointer using a subobject buffer overflow
 permalink: /reference/CHERI-seL4-Exercises/exercises/control-flow-pointer/index.html
-summary: null
-image_url: null
-updated_date: null
-parent: /CHERI-seL4-Exercises/
-next_page_url: null
-related:
-  pages: []
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
-# Corrupt a control-flow pointer using a subobject buffer overflow
+# [Corrupt a control-flow pointer using a subobject buffer overflow](/reference/CHERI-seL4-Exercises/exercises/control-flow-pointer/index.html#corrupt-a-control-flow-pointer-using-a-subobject-buffer-overflow)
+{: id="corrupt-a-control-flow-pointer-using-a-subobject-buffer-overflow" }
 
-This exercise demonstrates how CHERI pointer integrity protection prevents a function pointer overwritten with data due to a buffer overflow from being used for further memory access.
+This exercise demonstrates how CHERI pointer integrity protection prevents
+a function pointer overwritten with data due to a buffer overflow from being
+used for further memory access.
 
-1. Compile control-flow-pointer.c with a RISC-V target and binary name of control-flow-pointer-riscv, and a CHERI-RISC-V target and binary name of control-flow-pointer-cheri. Do not enable compilation with subobject bounds protection when compiling with the CHERI-RISC-V target.
+1. Compile `control-flow-pointer.c` with a RISC-V target and binary name
+   of `control-flow-pointer-riscv`, and a CHERI-RISC-V target and binary
+   name of `control-flow-pointer-cheri`. Do not enable compilation with
+   subobject bounds protection when compiling with the CHERI-RISC-V target.
 
-control-flow-pointer.c
+**control-flow-pointer.c**
 
-```c
+~~~C
 /*
  * SPDX-License-Identifier: BSD-2-Clause-DARPA-SSITH-ECATS-HR0011-18-C-0016
  * Copyright (c) 2020 SRI International
@@ -72,17 +61,17 @@ init(void)
 void notified(void) {}
 
 #include "asserts.inc"
-```
+~~~
 
 2. Run the RISC-V program under QEMU; why does it crash?
-
 3. Run the CHERI-RISC-V program under QEMU; why does it crash?
 
-## Support code
+## [Support code](/reference/CHERI-seL4-Exercises/exercises/control-flow-pointer/index.html#support-code)
+{: id="support-code" }
 
-asserts.inc
+**asserts.inc**
 
-```c
+~~~C
 /*
  * SPDX-License-Identifier: BSD-2-Clause-DARPA-SSITH-ECATS-HR0011-18-C-0016
  * Copyright (c) 2020 SRI International
@@ -92,4 +81,4 @@ asserts.inc
 _Static_assert(offsetof(struct buf, buffer) + sizeof(b.buffer) ==
     offsetof(struct buf, callback),
     "There must be no padding between buffer and callback members");
-```
+~~~

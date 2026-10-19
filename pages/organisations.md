@@ -1,15 +1,10 @@
 ---
 title: Organisations
 permalink: /organisations/
-layout: list
 listing:
   collection: organisations
-  status: null
-  role: null
-navigation:
-  footer:
-    category: CHERI Alliance
-    order: 6
+layout: list
+parent: /alliance/
 ---
 
 # Organisations

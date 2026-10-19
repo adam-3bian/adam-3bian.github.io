@@ -1,68 +1,177 @@
 ---
 title: Rust
-image_url: /assets/software/rust/placeholder.svg
-website_url: null
-repository_urls: []
-type: null
-status: null
-related:
-  organisations: []
-  hardware:
-  - cheriot
-  - morello
-  software:
-  - llvm-and-clang
-  - cheribsd
-navigation:
-  header:
-    category: Build
-    subcategory: Resources
-    parent: software-ecosystem
-    order: 2
+where-next:
+  url: /software/cheribsd/
+related-pages:
+- url: /software/llvm-and-clang/
+  description: The compiler infrastructure underlying current Rust and CHERI target work.
+  action: Read this page
+- url: /discover/why-cheri/cheri-and-rust/
+  description: The wider relationship between language safety and architectural capabilities.
+  action: Read this page
+- url: /groups/rust-plus-cheri/
+  title: Rust + CHERI Working Group
+  description: Alliance collaboration around Rust toolchains, runtimes, native interfaces, and CHERI platforms.
+  action: Read this page
 ---
 
+1. Build
+2. Software Ecosystem
+3. Rust
+{: .source-breadcrumbs }
+
 # Rust
+{: id="page-hero-title" .page-hero-title }
 
-Rust support brings language-level memory safety to CHERI platforms while hardware capabilities strengthen unsafe code, native interfaces, and compartment boundaries.
+Develop Rust software for CHERI-enabled platforms.
+{: .page-hero-summary }
 
-Rust prevents many memory errors in safe code, while CHERI constrains memory access and authority at run time. The two approaches work at different layers and can reinforce each other without being interchangeable.
+Rust and CHERI provide complementary approaches to memory safety. Rust provides **language-level** protections, while CHERI adds hardware-enforced protection **at run time**, including around unsafe code, native interfaces and compartment boundaries.
 
-## Language safety and hardware protection
+For a broader explanation of how the two technologies complement each other, see the [CHERI and Rust technical overview](/build/technology/cheri-and-rust-technical/).
 
-Safe Rust uses ownership, borrowing, lifetimes, and type checking to reject invalid programs before execution. CHERI capabilities can add bounds and permissions beneath raw pointers, native libraries, operating-system code, and compartment interfaces.
+## Rust on CHERI
+{: id="rust-on-cheri" }
 
-This combination is particularly relevant where a Rust component depends on unsafe code or shares a process with C and C++ software.
+Supporting Rust on a CHERI platform involves more than adding a compiler target. The compiler, pointer representation, application binary interface (ABI), libraries, allocator, operating-system interfaces, native bindings, debugger and build tools all need to work with CHERI capabilities.
 
-## What platform support contains
+In particular, CHERI capability pointers may differ from conventional pointers in size and representation. Code that makes assumptions about pointer sizes, integer conversions or data layouts may therefore need attention.
 
-A Rust target spans the compiler back end, pointer representation, ABI, core and standard libraries, allocator, panic and unwinding model, operating-system interfaces, native bindings, debugger support, and build tooling.
+## What about unsafe Rust?
+{: id="what-about-unsafe-rust" }
 
-Capability pointers may be wider than the virtual address range. That distinction reaches code that equates pointer size with integer width, object layout, addressable memory, or a target’s natural index type.
+Safe Rust prevents many memory-safety errors before software runs, but real systems may also contain unsafe Rust, native libraries, operating-system components or code written in other languages.
+
+On a CHERI platform, hardware capabilities can constrain the memory and permissions available to this code, providing an additional layer of protection where Rust's language-level guarantees do not apply.
+
+CHERI does not make unsafe Rust automatically safe, or replace Rust's rules around aliasing, lifetimes and initialisation. Instead, the two provide complementary protection at different layers.
+
+## Working with native code
+{: id="working-with-native-code" }
+
+Rust applications often need to interact with existing C or C++ libraries, operating-system services and other native components through foreign-function interfaces (FFIs).
+
+On CHERI platforms, these interfaces also need to account for capability pointers, including their bounds and permissions, as well as ABI, memory-allocation, object-layout and ownership requirements.
+
+This makes mixed-language interfaces an important area to test when bringing existing Rust software to CHERI.
 
 ## Current platform routes
+{: id="current-platform-routes" }
 
 ### Morello and CheriBSD
+{: id="morello-and-cheribsd" }
 
-Rust work for [Morello](/hardware/morello/) has covered freestanding and [CheriBSD](/software/cheribsd/) environments, including compiler targets, libraries, and native interfaces. Complete environments can depend on project forks and pinned toolchain revisions.
+Rust work for Morello has included freestanding and CheriBSD environments, compiler targets, libraries and native interfaces.
+
+These environments provide a route for exploring Rust on an application-class CHERI platform. Particular configurations may depend on project-specific toolchains and versions.
 
 ### CHERI-RISC-V
+{: id="cheri-risc-v" }
 
-CHERI-RISC-V work includes pure-capability targets and operating-system integration. Target names, package coverage, and standard-library support differ between projects and releases.
+Rust support is also being developed for CHERI-RISC-V, including pure-capability environments and operating-system integration.
+
+Available compiler targets, libraries, package support and operating-system environments vary between projects and implementations.
 
 ### CHERIoT
+{: id="cheriot" }
 
-Rust support for [CHERIoT](/hardware/cheriot/) is developing within its embedded hardware-software ecosystem. The established CHERIoT platform remains centred on its C and C++ SDK, while Rust work extends the compiler, runtime, and compartment interfaces.
+Rust support is developing within the CHERIoT embedded ecosystem.
 
-## Unsafe Rust and native interfaces
+The established CHERIoT development environment is centred on its C and C++ SDK, while Rust work is extending support across the compiler, runtime and compartment interfaces.
 
-Unsafe Rust can dereference raw pointers, cross foreign-function interfaces, access mutable static state, and rely on invariants outside the compiler’s proof. On a CHERI target, those pointers can still carry architectural bounds and permissions.
+## Check your target environment
+{: id="check-your-target-environment" }
 
-Hardware enforcement does not make every unsafe operation valid under Rust’s aliasing, lifetime, or initialisation rules. It adds a separate layer of protection around the authority available to the code.
+Rust support is not yet uniform across all CHERI platforms. Before starting development, check:
 
-Native interfaces also carry ABI, ownership, callback, layout, and allocation assumptions between Rust and C or C++. CHERI makes the pointer and authority aspects of those interfaces visible at the target level.
+- which CHERI architecture and processor are targeted
+- which Rust compiler and target are supported
+- whether the required core and standard libraries are available
+- which ABI and pointer representation are used
+- which operating system or runtime is supported
+- whether Cargo and required packages work with the target
+- which debugging and testing tools are available
+- how native libraries and interfaces are supported
 
-## Maturity and collaboration
+Pinning the toolchain and platform versions used by a project can also help keep builds and tests reproducible.
 
-Rust support is not one uniform CHERI product line. Compiler revisions, operating systems, libraries, Cargo support, target hardware, and test coverage vary between platform projects.
+## Rust + CHERI collaboration
+{: id="rust-cheri-collaboration" }
 
-The [Rust + CHERI Working Group](/working-groups/rust-plus-cheri/) connects this work across the Alliance. CHERI and Rust provides the broader architectural context.
+Rust support across CHERI is continuing to evolve across compiler, operating-system, embedded and hardware projects. 
+
+The [Rust + CHERI Working Group](/groups/rust-plus-cheri/) connects this work across the CHERI Alliance and aims for convergence and compatibility. [CHERI and Rust](/discover/why-cheri/cheri-and-rust/) provides the broader architectural context.
+
+## Where next
+{: .where-next-title }
+
+### [CheriBSD](/software/cheribsd/)
+{: .where-next-card-title }
+
+
+
+
+
+[CheriBSD provides a complete application-class environment for CHERI software and language work.](/software/cheribsd/)
+{: .where-next-summary }
+
+
+
+[Continue](/software/cheribsd/)
+{: .source-card-label }
+
+## Related content
+{: .related-pages-title }
+
+### [LLVM &amp; Clang](/software/llvm-and-clang/)
+{: .related-pages-item-title }
+
+
+
+
+
+[The compiler infrastructure underlying current Rust and CHERI target work.](/software/llvm-and-clang/)
+{: .related-pages-item-summary }
+
+
+
+[Read this page](/software/llvm-and-clang/)
+{: .source-card-label }
+
+
+
+
+
+### [CHERI and Rust](/discover/why-cheri/cheri-and-rust/)
+{: .related-pages-item-title }
+
+
+
+
+
+[The wider relationship between language safety and architectural capabilities.](/discover/why-cheri/cheri-and-rust/)
+{: .related-pages-item-summary }
+
+
+
+[Read this page](/discover/why-cheri/cheri-and-rust/)
+{: .source-card-label }
+
+
+
+
+
+### [Rust + CHERI Working Group](/groups/rust-plus-cheri/)
+{: .related-pages-item-title }
+
+
+
+
+
+[Alliance collaboration around Rust toolchains, runtimes, native interfaces, and CHERI platforms.](/groups/rust-plus-cheri/)
+{: .related-pages-item-summary }
+
+
+
+[Read this page](/groups/rust-plus-cheri/)
+{: .source-card-label }

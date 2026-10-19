@@ -1,42 +1,37 @@
 ---
 title: Exploiting a buffer overflow to manipulate control flow
 permalink: /reference/CHERI-seL4-Exercises/missions/buffer-overflow-control-flow/index.html
-summary: null
-image_url: null
-updated_date: null
-parent: /CHERI-seL4-Exercises/
-next_page_url: null
-related:
-  pages: []
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
-# Exploiting a buffer overflow to manipulate control flow
+# [Exploiting a buffer overflow to manipulate control flow](/reference/CHERI-seL4-Exercises/missions/buffer-overflow-control-flow/index.html#exploiting-a-buffer-overflow-to-manipulate-control-flow)
+{: id="exploiting-a-buffer-overflow-to-manipulate-control-flow" }
 
-The objective of this mission is to demonstrate arbitrary code execution through a control-flow attack, despite CHERI protections. You will attack three different versions of the program:
+The objective of this mission is to demonstrate arbitrary code execution
+through a control-flow attack, despite CHERI protections. You will attack three
+different versions of the program:
 
-1. A baseline RISC-V compilation, to establish that the vulnerability is exploitable without any CHERI protections.
+1. A baseline RISC-V compilation, to establish that the vulnerability is
+   exploitable without any CHERI protections.
+2. A baseline CHERI-RISC-V compilation, offering strong spatial safety between
+   heap allocations, including accounting for imprecision in the bounds of large
+   capabilities.
+3. A weakened CHERI-RISC-V compilation, reflecting what would occur if a memory
+   allocator failed to pad allocations to account for capability bounds
+   imprecision.
 
-2. A baseline CHERI-RISC-V compilation, offering strong spatial safety between heap allocations, including accounting for imprecision in the bounds of large capabilities.
+The success condition for an exploit, given attacker-provided input overflowing
+a buffer, is to modify control flow in the program such that the `success`
+function is executed.
 
-3. A weakened CHERI-RISC-V compilation, reflecting what would occur if a memory allocator failed to pad allocations to account for capability bounds imprecision.
+1. Compile `buffer-overflow.c` and `btpalloc.c` together with a RISC-V target
+   and exploit the binary to execute the `success` function. You also need
+   to compile `serial_server.c` to an ELF and place it in a separate
+   Microkit protection domain, with the highest priority, then generate an
+   image using the Microkit tool.
 
-The success condition for an exploit, given attacker-provided input overflowing a buffer, is to modify control flow in the program such that the success function is executed.
+**buffer-overflow.c**
 
-1. Compile buffer-overflow.c and btpalloc.c together with a RISC-V target and exploit the binary to execute the success function. You also need to compile serial\_server.c to an ELF and place it in a separate Microkit protection domain, with the highest priority, then generate an image using the Microkit tool.
-
-buffer-overflow.c
-
-```c
+~~~C
 /*
  * SPDX-License-Identifier: BSD-2-Clause-DARPA-SSITH-ECATS-HR0011-18-C-0016
  * Copyright (c) 2020 Jessica Clarke
@@ -138,15 +133,17 @@ void notified(microkit_channel channel) {
         }
     }
 }
-```
+~~~
 
-2. Recompile with a CHERI-RISC-V target, attempt to exploit the binary and, if it cannot be exploited, explain why.
+2. Recompile with a CHERI-RISC-V target, attempt to exploit the binary and, if
+   it cannot be exploited, explain why.
+3. Recompile with a CHERI-RISC-V target but this time adding
+   `-DCHERI_NO_ALIGN_PAD`, attempt to exploit the binary and, if it cannot be
+   exploited, explain why.
 
-3. Recompile with a CHERI-RISC-V target but this time adding -DCHERI\_NO\_ALIGN\_PAD, attempt to exploit the binary and, if it cannot be exploited, explain why.
+**btpalloc.c**
 
-btpalloc.c
-
-```c
+~~~C
 /*
  * SPDX-License-Identifier: BSD-2-Clause-DARPA-SSITH-ECATS-HR0011-18-C-0016
  * Copyright (c) 2020 Jessica Clarke
@@ -205,13 +202,14 @@ btpfree(void *ptr)
 {
 	(void)ptr;
 }
-```
+~~~
 
-## Support code
+## [Support code](/reference/CHERI-seL4-Exercises/missions/buffer-overflow-control-flow/index.html#support-code)
+{: id="support-code" }
 
-btpalloc.h
+**btpalloc.h**
 
-```c
+~~~C
 /*
  * SPDX-License-Identifier: BSD-2-Clause-DARPA-SSITH-ECATS-HR0011-18-C-0016
  * Copyright (c) 2020 Jessica Clarke
@@ -220,11 +218,11 @@ btpalloc.h
 
 void	*btpmalloc(size_t size);
 void	 btpfree(void *ptr);
-```
+~~~
 
-serial\_server.c
+**serial\_server.c**
 
-```c
+~~~C
 #include <stdint.h>
 #include <microkit.h>
 
@@ -411,11 +409,11 @@ void notified(microkit_channel channel) {
             break;
     }
 }
-```
+~~~
 
-buffer-overflow-control-flow.system
+**buffer-overflow-control-flow.system**
 
-```xml
+~~~XML
 <?xml version="1.0" encoding="UTF-8"?>
 <system>
     <!-- Define your system here -->
@@ -444,11 +442,11 @@ buffer-overflow-control-flow.system
         <end pd="serial_server" id="2" />
     </channel>
 </system>
-```
+~~~
 
-main-asserts.inc
+**main-asserts.inc**
 
-```c
+~~~C
 /*
  * SPDX-License-Identifier: BSD-2-Clause-DARPA-SSITH-ECATS-HR0011-18-C-0016
  * Copyright (c) 2020 Jessica Clarke
@@ -494,4 +492,4 @@ main_asserts(void *buf, void *fptr)
 #endif
 #endif
 }
-```
+~~~

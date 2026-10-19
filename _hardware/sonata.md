@@ -1,40 +1,43 @@
 ---
 title: Sonata
-image_url: /assets/hardware/sonata/placeholder.svg
-website_url: https://sonata-system.github.io/sonata-system/
-repository_urls: []
-type: null
-architecture: null
-status: null
-related:
-  organisations:
-  - lowrisc
-  hardware:
-  - cheriot
-  software: []
-navigation:
-  header:
-    category: Build
-    subcategory: Resources
-    parent: development-platforms
-    order: 2
+where-next:
+  url: /hardware/fpga-platforms/
+related-pages:
+- url: /hardware/cheriot/
+  description: CHERIoT is a complete embedded hardware-software platform built around CHERI concepts.
+  action: Read this page
+- url: /guides/choose-a-platform/
+  title: Choose a Platform
+  description: Choose a platform, prepare an environment and run a first CHERI workload.
+  action: Read this page
 ---
 
-# Sonata
+1. Build
+2. Platforms
+3. Sonata
+{: .source-breadcrumbs }
 
-Sonata is an accessible FPGA development platform for running [CHERIoT](/hardware/cheriot/) firmware with real peripherals before moving to production silicon.
+# Sonata
+{: id="page-hero-title" .page-hero-title }
+
+Sonata is an accessible FPGA development platform for running CHERIoT firmware with real peripherals before moving to production silicon.
+{: .page-hero-summary }
 
 Simulation is the quickest way to build a first CHERIoT application, but embedded development soon needs physical input and output. Developers must test timers, UARTs, storage, sensors, displays, and fault behaviour on hardware.
 
 Sonata provides a purpose-built FPGA platform for that stage.
 
 ## What Sonata provides
+{: id="what-sonata-provides" }
+
+![CHERIoT processor on a Sonata board](/assets/pages/adopt--assurance-and-adoption--case-studies/645cc3b9a905-sonata-cheriot.webp){: .image-right }
 
 Developed by [lowRISC](/organisations/lowrisc/), Sonata combines an FPGA implementation of a CHERIoT-capable system with a board and peripherals intended for embedded prototyping. It gives software developers a more direct route than assembling a processor core, system-on-chip design, and generic FPGA board themselves.
 
 The platform is open and works with the CHERIoT real-time operating system (RTOS), software development kit (SDK), examples, and build flow. The CHERIoT project also provides a Sonata simulation route, allowing software to move between simulated and physical versions of a closely related platform.
 
 ## Typical workflow
+{: id="typical-workflow" }
 
 1. Clone the CHERIoT RTOS and its submodules.
 2. Open the project’s development container.
@@ -47,6 +50,7 @@ The platform is open and works with the CHERIoT real-time operating system (RTOS
 The exact board identifiers and deployment scripts follow the current RTOS and Sonata releases. Use the maintained documentation rather than an older copied command.
 
 ## What to prototype
+{: id="what-to-prototype" }
 
 Sonata is well suited to:
 
@@ -62,6 +66,7 @@ Sonata is well suited to:
 Its physical interfaces let developers test the parts that an instruction-set simulator cannot represent realistically.
 
 ## Simulator and board parity
+{: id="simulator-and-board-parity" }
 
 Starting with the Sonata simulator offers several advantages:
 
@@ -73,6 +78,7 @@ Starting with the Sonata simulator offers several advantages:
 Repeat timing-sensitive and hardware-integration tests on the board. Simulation speed is not a processor performance measurement.
 
 ## Strengths
+{: id="strengths" }
 
 - Purpose-built for CHERIoT prototyping.
 - Accessible development workflow through the CHERIoT SDK.
@@ -81,15 +87,16 @@ Repeat timing-sensitive and hardware-integration tests on the board. Simulation 
 - A bridge between software-only learning and commercial device integration.
 
 ## Constraints
+{: id="constraints" }
 
 - FPGA timing, power, and area differ from production silicon.
 - The board’s peripheral set may not match the final product.
 - A prototype bitstream or RTOS branch may change independently of a stable release.
 - Product assurance must use the final core, system-on-chip, firmware, and hardware configuration.
-
-A successful Sonata prototype does not by itself establish supplier lifecycle or production-volume availability.
+- A successful Sonata prototype does not by itself establish supplier lifecycle or production-volume availability.
 
 ## Record the complete configuration
+{: id="record-the-complete-configuration" }
 
 For every result, capture:
 
@@ -101,4 +108,60 @@ For every result, capture:
 - firmware source revision
 - connected peripherals and clock settings
 
-Visit the Sonata project documentation and the CHERIoT getting-started guide for current hardware and software instructions.
+Visit the [Sonata project documentation](https://sonata-system.github.io/sonata-system/) and the [CHERIoT getting-started guide](https://cheriot.org/book/getting_started.html) for current hardware and software instructions.
+
+## Where next
+{: .where-next-title }
+
+### [FPGA Platforms](/hardware/fpga-platforms/)
+{: .where-next-card-title }
+
+
+
+
+
+[FPGA platforms put a CHERI processor and system design onto reconfigurable hardware.](/hardware/fpga-platforms/)
+{: .where-next-summary }
+
+
+
+[Continue](/hardware/fpga-platforms/)
+{: .source-card-label }
+
+## Related content
+{: .related-pages-title }
+
+
+### [CHERIoT](/hardware/cheriot/)
+{: .related-pages-item-title }
+
+
+
+
+
+[CHERIoT is a complete embedded hardware-software platform built around CHERI concepts.](/hardware/cheriot/)
+{: .related-pages-item-summary }
+
+
+
+[Read this page](/hardware/cheriot/)
+{: .source-card-label }
+
+
+
+
+
+### [Choose a Platform](/guides/choose-a-platform/)
+{: .related-pages-item-title }
+
+
+
+
+
+[Choose a platform, prepare an environment and run a first CHERI workload.](/guides/choose-a-platform/)
+{: .related-pages-item-summary }
+
+
+
+[Read this page](/guides/choose-a-platform/)
+{: .source-card-label }

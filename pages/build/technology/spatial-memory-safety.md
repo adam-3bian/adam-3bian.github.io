@@ -1,111 +1,175 @@
 ---
 title: Spatial Memory Safety
 permalink: /build/technology/spatial-memory-safety/
-summary: Spatial memory safety stops code accessing before or beyond the memory object authorised by a capability.
-image_url: null
-updated_date: null
-parent: /build/
-next_page_url: /build/technology/temporal-memory-safety/
-related:
-  pages:
-  - /build/technology/capabilities/
-  - /build/technology/sealing/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
-navigation:
-  header:
-    category: Build
-    subcategory: Technology
-    parent: memory-protection-system-models
-    order: 1
+where-next:
+  url: /build/technology/temporal-memory-safety/
+related-pages:
+- url: /build/technology/how-cheri-capabilities-work/
+  description: How CHERI Capabilities work.
+  action: Read this page
+- url: /build/technology/cheri-capabilities/sealing/
+  description: Some authority should be carried without being directly exercised by its holder.
+  action: Read this page
 ---
 
+1. Build
+2. Technology
+3. Spatial Memory Safety
+{: .source-breadcrumbs }
+
 # Spatial Memory Safety
+{: id="page-hero-title" .page-hero-title }
 
-A program allocates 64 bytes for a network message and accidentally reads byte 80. The allocation still exists, but the access is outside the space assigned to that object. This is a spatial memory-safety violation.
+Spatial memory safety prevents code from accessing memory outside the bounds authorised by a capability.
+{: .page-hero-summary }
 
-Spatial errors include buffer overflows, buffer overreads, negative indexing, and pointer arithmetic that crosses from one object into another.
+For example, a program allocates 64 bytes for a network message but accidentally reads byte 80. The allocation still exists, but the access falls outside the memory assigned to that object. This is a **spatial memory-safety violation**.
+
+Typical spatial errors include buffer overflows, buffer overreads, negative indexing, and pointer arithmetic that crosses from one object into another.
 
 ## Why virtual memory is not enough
+{: id="why-virtual-memory-is-not-enough" }
 
-Conventional page tables control access to memory pages, commonly several kilobytes in size. One page can contain many heap allocations, stack variables, and library objects.
+Conventional virtual memory controls access at page granularity, typically several kilobytes in size and covering many heap allocations, stack variables, or other objects.
 
-If an invalid access stays within a mapped page, the processor sees no page fault. It cannot infer the smaller object boundary intended by the source program.
+An invalid access that remains inside a mapped page therefore may not cause a page fault because the processor does not know the boundaries of the individual objects within it.
 
-CHERI adds capability checks before or alongside virtual-address translation. Page tables still isolate address spaces. Capability bounds protect much smaller ranges within them.
+> Page tables protect pages. CHERI capabilities protect objects within those pages.
+
+CHERI adds fine-grain capability checks to memory access while virtual memory continues to provide address-space isolation.
 
 ## Object-bounded access
+{: id="object-bounded-access" }
 
 In a pure-capability environment, a pointer used for memory access carries bounds and permissions. When code loads or stores through it, the processor checks the complete access against the capability’s authorised range.
 
-For an allocation covering \[base, top), an access is permitted only when every byte lies at or above base and below top.
+For an allocation covering `[base, top)`, every access must fall within those bounds.
 
-```text
+~~~
 Capability bounds:  [ valid object bytes        )
 Valid 4-byte load:      [----]
 Invalid 4-byte load:                         [----]
-^ crosses top
-```
+                                               ^ crosses top
+~~~
 
-The invalid operation raises a capability exception rather than reading neighbouring memory.
+An out-of-bounds operation raises a capability exception instead of accessing neighbouring memory.
 
-## Where bounds come from
+## Where do the bounds come from?
+{: id="where-bounds-come-from" }
 
-Several layers create and refine bounds:
+Bounds can be established and refined at several levels:
 
 - the loader bounds code and global data
 - the operating system bounds mapped regions and process authority
 - the allocator bounds heap allocations
-- the compiler bounds stack objects and, under selected policies, subobjects
-- application code derives narrower capabilities for interfaces
+- the compiler bounds stack objects and, depending on policy, subobjects
+- application code can derive narrower capabilities for particular interfaces
 
-Coverage depends on all of these layers. A pure-capability application binary interface (ABI) gives broad pointer coverage, but the precision of each bound still depends on object layout, compiler policy, representability, and source semantics.
+A pure-capability ABI provides broad pointer coverage, while the exact bounds depend on factors such as object layout, compiler policy, representability and source semantics.
 
 ## Example: protecting a parser
+{: id="example-protecting-a-parser" }
 
-```c
+~~~
 int parse_header(const unsigned char *packet, size_t length) {
     if (length < 4) {
         return -1;
     }
+
     return packet[0] << 8 | packet[1];
 }
-```
+~~~
 
-The length check is still required for correct logic and portable C. On a CHERI system, passing a capability bounded to the actual packet adds hardware enforcement. If a later edit mistakenly reads packet\[length + 1\], the capability check can stop the access even when the neighbouring memory page is mapped.
+The length check is still required for correct logic and portable C.
 
-This illustrates defence in depth. Source checks express protocol rules. Capability bounds enforce memory authority.
+On a CHERI system, passing a capability bounded to the actual packet adds hardware enforcement. If a later edit mistakenly reads `packet[length + 1]`, the capability check can stop the access even when the neighbouring memory page is mapped.
+
+This is **defence in depth**: source-level checks express the application's rules, while capability bounds enforce the memory authority available to the code.
 
 ## Subobjects and compatibility
+{: id="subobjects-and-compatibility" }
 
-A structure may contain several fields inside one allocation. Bounding a pointer to one field can stop access to neighbouring fields, which is useful for security. Some established C patterns, however, derive a pointer to an enclosing structure from a field pointer.
+A structure can contain several fields within one allocation. Bounding a pointer to a particular field can prevent access to neighbouring fields, providing stronger isolation.
 
-CHERI compilers therefore expose documented policies for subobject bounds and language compatibility. Security claims should state whether pointers are bounded to allocations, complete objects, or selected subobjects.
+Some existing C idioms, however, derive a pointer to an enclosing structure from a pointer to one of its fields. CHERI toolchains therefore provide policies governing subobject bounds and compatibility with existing C code.
+
+When describing spatial-safety guarantees, it is important to distinguish between bounds covering allocations, complete objects, or individual subobjects.
 
 ## What spatial safety prevents
+{: id="what-spatial-safety-prevents" }
 
 Correctly configured capability bounds can prevent or contain:
 
 - stack and heap buffer overflows
-- reads past string or array storage
+- reads beyond string or array storage
 - writes into adjacent object metadata
-- crossing a compartment’s shared-buffer boundary
-- many pointer-corruption exploits that depend on arbitrary nearby access
+- access beyond an authorised compartment’s shared-buffer
+- many pointer-corruption attacks that depend on accessing nearby memory
 
 ## What it does not prevent
+{: id="what-it-does-not-prevent" }
 
-- Use-after-free when the stale capability remains usable.
-- In-bounds corruption of a field that code is authorised to write.
-- Access through another capability with wider bounds.
-- Integer overflow before an allocation or bounds calculation, unless separately checked.
-- Logic, authentication, cryptographic, and side-channel flaws.
+Spatial memory safety does not by itself prevent:
 
-Spatial memory safety removes a major class of unsafe access, but it is one property. Continue with Temporal Memory Safety to understand why object lifetime needs additional mechanisms.
+- use-after-free when a stale capability remains valid
+- corruption occurring within valid bounds
+- access using another capability with wider authority
+- integer overflow occurring before allocation or bounds calculation
+- logic, authentication, cryptographic or side-channel flaws
+
+Spatial memory safety eliminates an important class of unsafe memory access, but object lifetime is a separate problem. Continue with [Temporal Memory Safety](/build/technology/temporal-memory-safety/) to understand how CHERI-based systems can address access to objects after their lifetime has ended.
+
+## Where next
+{: .where-next-title }
+
+### [Temporal Memory Safety](/build/technology/temporal-memory-safety/)
+{: .where-next-card-title }
+
+
+
+
+
+[A pointer can remain inside the correct bounds and still be unsafe.](/build/technology/temporal-memory-safety/)
+{: .where-next-summary }
+
+
+
+[Continue](/build/technology/temporal-memory-safety/)
+{: .source-card-label }
+
+## Related content
+{: .related-pages-title }
+
+### [Capabilities](/build/technology/cheri-capabilities/capabilities/)
+{: .related-pages-item-title }
+
+
+
+
+
+[A pointer bug becomes dangerous when changing a number changes authority.](/build/technology/cheri-capabilities/capabilities/)
+{: .related-pages-item-summary }
+
+
+
+[Read this page](/build/technology/cheri-capabilities/capabilities/)
+{: .source-card-label }
+
+
+
+
+
+### [Sealing](/build/technology/cheri-capabilities/sealing/)
+{: .related-pages-item-title }
+
+
+
+
+
+[Some authority should be carried without being directly exercised by its holder.](/build/technology/cheri-capabilities/sealing/)
+{: .related-pages-item-summary }
+
+
+
+[Read this page](/build/technology/cheri-capabilities/sealing/)
+{: .source-card-label }

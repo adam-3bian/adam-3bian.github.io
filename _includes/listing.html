@@ -1,0 +1,162 @@
+{% comment %}
+  One ZIP card renderer for collection documents and YAML page links.
+  resolve=true looks up link destinations; mode=onward renders exactly one CTA.
+  Source media may still be Markdown or already-rendered HTML during Jekyll's pass.
+{% endcomment %}
+{% assign card_items = include.items %}
+{% assign source_cards = include.source_cards | split: '<p class="collection-card__link">' %}
+{% if include.mode == 'onward' %}{% assign card_items = card_items | slice: 0, 1 %}{% elsif include.bare != true %}
+<ul class="cards columns-{{ include.columns | default: 3 }}" aria-label="{{ include.label | escape }}">
+{% endif %}
+{% for item in card_items %}
+  {% unless item.alternate or item.redirect_to or item.redirect or item.collection == 'redirects' %}
+    {% assign card_record = item %}
+    {% if include.resolve %}
+      {% assign destination_url = item.url | split: '#' | first | split: '?' | first %}
+      {% assign card_record = all_pages | where: 'url', destination_url | first %}
+    {% endif %}
+    {% assign card_title = item.title | default: card_record.title | default: item.url %}
+    {% assign kind = include.kind | default: card_record.collection | default: 'pages' %}
+    {% assign card_compact = include.compact %}
+    {% unless include.resolve %}
+      {% if include.compact == nil %}
+        {% if kind == 'people' or kind == 'organisations' %}{% assign card_compact = true %}{% endif %}
+      {% endif %}
+    {% endunless %}
+    {% assign card_date = nil %}
+    {% assign card_end_date = nil %}
+    {% assign card_location = nil %}
+    {% if kind == 'news' or kind == 'events' or kind == 'posts' %}
+      {% unless item.undated %}{% assign card_date = item.date %}{% endunless %}
+    {% endif %}
+    {% if kind == 'events' %}
+      {% assign card_end_date = item['end-date'] %}
+      {% assign event_facts = card_record.content | markdownify %}
+      {% if event_facts contains '<dt>Location</dt>' %}{% assign card_location = event_facts | split: '<dt>Location</dt>' | last | split: '<dd>' | slice: 1, 1 | first | split: '</dd>' | first | strip_html | strip %}{% endif %}
+    {% endif %}
+    {% assign card_image = item.thumbnail | default: card_record.thumbnail %}
+    {% assign image_url = card_image.src %}
+    {% assign image_alt = card_title %}
+    {% if card_image.alt != nil %}{% assign image_alt = card_image.alt %}{% endif %}
+    {% assign image_fit = card_image.fit %}
+    {% if include.mode == 'onward' %}
+      {% assign card_image = item.image %}
+      {% assign image_url = card_image.src %}
+      {% assign image_alt = card_image.alt | default: '' %}
+      {% assign image_fit = card_image.fit %}
+    {% elsif include.images == false %}
+      {% assign image_url = nil %}
+    {% elsif image_url == nil %}
+      {% if card_record.content contains '<img ' %}
+        {% assign source_image = card_record.content | split: '<img ' | slice: 1, 1 | first | split: '>' | first %}
+        {% if source_image contains 'src="/assets/' %}
+          {% assign image_url = source_image | split: 'src="' | last | split: '"' | first %}
+          {% if source_image contains 'alt="' %}{% assign image_alt = source_image | split: 'alt="' | last | split: '"' | first %}{% endif %}
+          {% if source_image contains 'image-contain' %}{% assign image_fit = 'contain' %}{% endif %}
+        {% endif %}
+      {% elsif card_record.content contains '![' %}
+        {% assign source_image = card_record.content | split: '![' | slice: 1, 1 | first %}
+        {% if source_image contains '](/assets/' %}
+          {% assign image_url = source_image | split: '](' | slice: 1, 1 | first | split: ')' | first %}
+          {% assign image_alt = source_image | split: '](' | first %}
+          {% assign image_attributes = source_image | split: ')' | slice: 1, 1 | first | split: '}' | first %}
+          {% if image_attributes contains 'image-contain' %}{% assign image_fit = 'contain' %}{% endif %}
+        {% endif %}
+      {% endif %}
+    {% endif %}
+    {% if image_url %}
+      {% if kind == 'organisations' %}{% assign image_fit = 'contain' %}
+      {% elsif card_image.src == nil and kind != 'people' and kind != 'news' and kind != 'events' and kind != 'posts' %}
+        {% comment %}A source diagram is not a cropped photographic thumbnail.
+          Keep its complete labels visible using the ZIP's native contain frame.{% endcomment %}
+        {% assign image_fit = 'contain' %}
+      {% endif %}
+    {% endif %}
+    {% assign link_url = item.url %}
+    {% if include.source_entry %}
+      {% assign source_body = include.source_entry %}
+      {% assign link_url = source_body | split: 'href="' | slice: 1, 1 | first | split: '"' | first %}
+      {% assign card_record = all_pages | where: 'url', link_url | first %}
+      {% assign kind = card_record.collection | default: 'pages' %}
+      {% assign image_url = nil %}
+      {% if source_body contains '<img ' %}
+        {% assign source_image = source_body | split: '<img ' | slice: 1, 1 | first | split: '>' | first %}
+        {% assign image_url = source_image | split: 'src="' | last | split: '"' | first %}
+        {% assign image_alt = source_image | split: 'alt="' | last | split: '"' | first %}
+        {% assign source_image_block = source_body | split: '</p>' | first | append: '</p>' %}
+        {% assign source_body = source_body | remove_first: source_image_block %}
+      {% endif %}
+      {% assign image_fit = nil %}
+      {% if kind == 'organisations' %}{% assign image_fit = 'contain' %}{% endif %}
+      {% assign source_links = source_body | split: '<a ' %}
+      {% capture source_body %}{% for source_link in source_links %}{% if forloop.first %}{{ source_link }}{% else %}{% assign source_attributes = source_link | split: '>' | first | append: '>' %}<span>{{ source_link | remove_first: source_attributes | replace: '</a>', '</span>' }}{% endif %}{% endfor %}{% endcapture %}
+      {% assign source_body = source_body | replace: 'collection-card__title', 'card-title' | replace: 'collection-card__summary', 'card-description' | replace: 'collection-card__labels', 'meta' | replace: 'collection-card__meta', 'meta' | replace: 'collection-card__link', 'card-action' %}
+    {% endif %}
+    {% assign url_prefix = link_url | slice: 0, 2 %}
+    {% assign url_first = link_url | slice: 0, 1 %}
+    {% unless link_url contains ':' or url_prefix == '//' or url_first == '#' %}{% assign link_url = link_url | relative_url %}{% endunless %}
+    {% assign link_target = item.target | default: '' | strip %}
+    {% assign link_rel = item.rel | default: '' | strip %}
+    {% if link_target == '_blank' %}
+      {% assign rel_tokens = link_rel | split: ' ' %}
+      {% unless rel_tokens contains 'noopener' %}{% assign link_rel = link_rel | append: ' noopener' %}{% endunless %}
+      {% unless rel_tokens contains 'noreferrer' %}{% assign link_rel = link_rel | append: ' noreferrer' %}{% endunless %}
+    {% endif %}
+    {% unless include.mode == 'onward' %}<li>{% endunless %}
+      <a class="card{% if include.mode == 'onward' and image_url %} card-with-image{% endif %}" href="{{ link_url | escape }}"{% if link_target != '' %} target="{{ link_target | escape }}"{% endif %}{% if link_rel != '' %} rel="{{ link_rel | strip | escape }}"{% endif %}{% if link_target == '_blank' %} title="Opens in a new tab"{% endif %}>
+        {% if image_url %}
+          {% assign url_prefix = image_url | slice: 0, 2 %}
+          {% unless image_url contains ':' or url_prefix == '//' %}{% assign image_url = image_url | relative_url %}{% endunless %}
+          {% unless include.mode == 'onward' %}<span class="card-media{% if kind == 'events' or kind == 'news' or kind == 'posts' %} card-media-landscape{% endif %}">{% endunless %}
+            <img src="{{ image_url | escape_once }}" alt="{{ image_alt | escape_once }}" class="{% if include.mode == 'onward' %}onward-image{% else %}card-image{% endif %}{% if image_fit == 'contain' %} image-contain{% endif %}{% if card_image.position == 'left' %} image-crop-left{% elsif card_image.position == 'right' %} image-crop-right{% endif %}"{% if card_image.width %} width="{{ card_image.width | escape }}"{% endif %}{% if card_image.height %} height="{{ card_image.height | escape }}"{% endif %} loading="lazy">
+          {% unless include.mode == 'onward' %}</span>{% endunless %}
+        {% endif %}
+        {% if include.source_entry %}{{ source_body }}{% else %}
+        {% assign source_description = nil %}
+        {% if include.source_cards %}
+          {% capture source_target %}href="{{ item.url }}"{% endcapture %}
+          {% for source_card in source_cards %}
+            {% if source_card contains source_target %}
+              {% assign source_affiliation = source_card | split: '<p class="collection-card__meta">' | last | split: '</p>' | first %}
+              {% assign source_description = source_card | split: '<p class="collection-card__summary">' | last | split: '</p>' | first %}
+              <span>{{ source_affiliation }}</span>
+              {% break %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+        {% if include.context == 'governing-board' %}
+          {% comment %}Published board facts already live in the canonical person's
+            definition list. markdownify accepts both raw and converted records.{% endcomment %}
+          {% assign person_facts = card_record.content | markdownify %}
+          {% assign board_role = nil %}
+          {% if person_facts contains '<dt>Board role</dt>' %}{% assign board_role = person_facts | split: '<dt>Board role</dt>' | last | split: '<dd>' | slice: 1, 1 | first | split: '</dd>' | first | strip_html | strip %}{% endif %}
+          {% if person_facts contains '<dt>Organisation</dt>' %}
+            {% assign board_affiliation = person_facts | split: '<dt>Organisation</dt>' | last | split: '<dd>' | slice: 1, 1 | first | split: '</dd>' | first | strip_html | strip %}
+            <span>{{ board_affiliation | escape_once }}</span>
+          {% endif %}
+        {% endif %}
+        {% if include.heading == 'h3' %}<h3>{{ card_title | escape_once }}</h3>{% else %}<h2>{{ card_title | escape_once }}</h2>{% endif %}
+        {% if include.context == 'governing-board' and board_role %}<p class="card-description">{{ board_role | escape_once }}</p>{% endif %}
+        {% if source_description %}<p class="card-description">{{ source_description }}</p>{% endif %}
+        {% unless include.mode == 'onward' %}
+          {% if item.description %}<p class="card-description">{{ item.description | escape_once }}</p>{% endif %}
+        {% endunless %}
+        {% if include.context == 'members' %}
+          {% assign member_facts = card_record.content | markdownify %}
+          {% if member_facts contains '<dd>Founding member</dd>' %}<span class="meta">Founding member</span>{% endif %}
+        {% endif %}
+        {% unless card_compact %}
+          {% unless include.mode == 'onward' or include.resolve %}
+            {% if card_date %}
+              <span class="meta"><time datetime="{{ card_date | date_to_xmlschema }}">{{ card_date | date: '%-d %B %Y' }}</time>{% if card_end_date %} &ndash; <time datetime="{{ card_end_date | date_to_xmlschema }}">{{ card_end_date | date: '%-d %B %Y' }}</time>{% endif %}{% if card_location %}<br>{{ card_location | escape_once }}{% endif %}</span>
+            {% elsif kind == 'organisations' and item.member %}<span class="meta">Alliance member</span>
+            {% elsif kind == 'people' and item.speaker and include.context != 'governing-board' and include.source_cards == nil %}<span class="meta">Speaker</span>{% endif %}
+          {% endunless %}
+          <span class="card-action">{{ item.action | default: include.action | default: 'Read more' | escape_once }} <span aria-hidden="true">&rarr;</span></span>
+        {% endunless %}
+        {% endif %}
+      </a>
+    {% unless include.mode == 'onward' %}</li>{% endunless %}
+  {% endunless %}
+{% endfor %}
+{% unless include.mode == 'onward' or include.bare %}</ul>{% endunless %}

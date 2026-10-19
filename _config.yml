@@ -1,28 +1,45 @@
 markdown: kramdown
+# Event dates are occurrence dates: published upcoming events need output routes.
+future: true
 kramdown:
-  input: GFM
-  hard_wrap: false
-  gfm_quirks:
-  - paragraph_end
-  - no_auto_typographic
-  auto_ids: true
+  input: Kramdown
+  auto_ids: false
   smart_quotes:
   - apos
   - apos
   - quot
   - quot
+  typographic_symbols:
+    hellip: '...'
+    mdash: '---'
+    ndash: --
+    laquo: '<<'
+    raquo: '>>'
 exclude:
+- sources
+- reports
+- sitemap.json
+- sitemap.md
+- scripts
+- requirements-migration.txt
+- CHERI_SITE_INVENTORY.json
+- CHERI_HIERARCHICAL_SITEMAP.md
+- PROGRESS.md
+- MIGRATION_SPEC.md
+- README_MIGRATION.md
+- tests
 - README.md
-- NAVIGATION.md
-- FRONT_MATTER.MD
+- _data
+- docs
 - Gemfile
 - Gemfile.lock
-- scripts
-- reports
-- dist
-- dist-baseurl
+- _plugins
 - vendor
-- .bundle
+# Retain acquired source bytes for provenance, but do not publish unused search
+# engines from the former mdBook site. No page or active component references them.
+- assets/shared/source-assets/dcabdf6735d3-searcher.js
+- assets/shared/source-assets/9da9f832380b-searcher.js
+- assets/shared/source-assets/0845a75c73d4-elasticlunr.min.js
 collections:
   people:
     output: true
@@ -36,435 +53,431 @@ collections:
   events:
     output: true
     permalink: /events/:name/
-  academic-papers:
+  papers:
     output: true
-    permalink: /academic-papers/:name/
+    permalink: /papers/:name/
   hardware:
     output: true
     permalink: /hardware/:name/
   software:
     output: true
     permalink: /software/:name/
-  working-groups:
+  groups:
     output: true
-    permalink: /working-groups/:name/
+    permalink: /groups/:name/
   guides:
     output: true
     permalink: /guides/:name/
   policies:
     output: true
     permalink: /policies/:name/
-  case-studies:
-    output: true
-    permalink: /case-studies/:name/
-  reports:
-    output: true
-    permalink: /reports/:name/
+excerpt_separator: ''
 defaults:
-- scope:
-    path: pages/search.md
-  values:
-    layout: search
 - scope:
     path: ''
   values:
-    layout: document
+    layout: page
     render_with_liquid: false
+    theme: light
+    hero: true
+    image-overlay: true
+- scope:
+    path: pages/index.md
+  values:
+    theme: dark
 - scope:
     path: ''
     type: people
   values:
-    layout: document
+    layout: person
     parent: /people/
-- scope:
-    path: ''
-    type: news
-  values:
-    layout: document
-    parent: /news/
 - scope:
     path: ''
     type: organisations
   values:
-    layout: document
+    layout: member
     parent: /organisations/
 - scope:
     path: ''
     type: events
   values:
-    layout: document
+    layout: event
     parent: /events/
 - scope:
     path: ''
-    type: academic-papers
+    type: news
   values:
-    layout: document
-    parent: /academic-papers/
+    layout: post
+    parent: /news/
+- scope:
+    path: ''
+    type: papers
+  values:
+    parent: /papers/
 - scope:
     path: ''
     type: hardware
   values:
-    layout: document
     parent: /hardware/
 - scope:
     path: ''
     type: software
   values:
-    layout: document
     parent: /software/
 - scope:
     path: ''
-    type: working-groups
+    type: groups
   values:
-    layout: document
-    parent: /working-groups/
+    parent: /groups/
 - scope:
     path: ''
     type: guides
   values:
-    layout: document
     parent: /guides/
 - scope:
     path: ''
     type: policies
   values:
-    layout: document
     parent: /policies/
 - scope:
-    path: ''
-    type: case-studies
-  values:
-    layout: document
-    parent: /case-studies/
-- scope:
-    path: ''
-    type: reports
-  values:
-    layout: document
-    parent: /reports/
-- scope:
-    path: pages/adopt/assurance-and-adoption/case-studies.md
-  values:
-    alternate: true
-    layout: redirect
-- scope:
-    path: pages/discover/resources/reports-and-white-papers.md
-  values:
-    alternate: true
-    layout: redirect
-- scope:
-    path: pages/adopt.md
-  values:
-    parent: /
-- scope:
-    path: pages/alliance.md
-  values:
-    parent: /
-- scope:
-    path: pages/alliance/leadership/members.md
-  values:
-    parent: /alliance/
-- scope:
-    path: pages/build.md
-  values:
-    parent: /
-- scope:
-    path: pages/discover.md
-  values:
-    parent: /
-- scope:
-    path: pages/events.md
-  values:
-    parent: /
-- scope:
-    path: pages/groups.md
-  values:
-    parent: /
-- scope:
-    path: pages/guides.md
-  values:
-    parent: /
-- scope:
-    path: pages/hardware.md
-  values:
-    parent: /build/
-- scope:
-    path: pages/news-and-events.md
-  values:
-    parent: /
-- scope:
-    path: pages/news-and-events/events-and-archive/past-events.md
-  values:
-    parent: /news-and-events/
-- scope:
-    path: pages/news-and-events/events-and-archive/upcoming-events.md
-  values:
-    parent: /news-and-events/
-- scope:
-    path: pages/news-and-events/news-and-analysis/latest-news.md
-  values:
-    parent: /news-and-events/
-- scope:
-    path: pages/news-and-events/people-and-opportunities/speakers.md
-  values:
-    parent: /news-and-events/
-- scope:
-    path: pages/news.md
-  values:
-    parent: /
-- scope:
-    path: pages/organisations.md
-  values:
-    parent: /
-- scope:
-    path: pages/papers.md
+    path: pages/discover
   values:
     parent: /discover/
 - scope:
-    path: pages/people.md
+    path: pages/adopt
   values:
-    parent: /
+    parent: /adopt/
 - scope:
-    path: pages/policies.md
-  values:
-    parent: /
-- scope:
-    path: pages/software.md
+    path: pages/build
   values:
     parent: /build/
 - scope:
-    path: _news/cheri-or-cheriot-the-answer-is-not-what-you-think-original.md
+    path: pages/alliance
   values:
-    alternate: true
+    parent: /alliance/
 - scope:
-    path: _news/cheriot-1-0-specification-released-original.md
+    path: pages/news-and-events
   values:
-    alternate: true
-- scope:
-    path: _news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology-original.md
-  values:
-    alternate: true
-- scope:
-    path: _news/innovate-uk-project-winner-university-of-birmingham-original.md
-  values:
-    alternate: true
-- scope:
-    path: _news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences-original.md
-  values:
-    alternate: true
-- scope:
-    path: _news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support-original.md
-  values:
-    alternate: true
-- scope:
-    path: _news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd-original.md
-  values:
-    alternate: true
-- scope:
-    path: _news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl-original.md
-  values:
-    alternate: true
-- scope:
-    path: _news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software-original.md
-  values:
-    alternate: true
-- scope:
-    path: _policies/trademark-original.md
-  values:
-    alternate: true
-- scope:
-    path: pages/reference/source-versions/contact.md
-  values:
-    alternate: true
-- scope:
-    path: pages/reference/source-versions/cost-of-memory-unsafety.md
-  values:
-    alternate: true
-- scope:
-    path: pages/reference/source-versions/home.md
-  values:
-    alternate: true
-- scope:
-    path: pages/reference/source-versions/latest-news.md
-  values:
-    alternate: true
-- scope:
-    path: pages/reference/source-versions/members.md
-  values:
-    alternate: true
-- scope:
-    path: pages/reference/source-versions/newsletter.md
-  values:
-    alternate: true
-- scope:
-    path: pages/reference/source-versions/past-events.md
-  values:
-    alternate: true
-- scope:
-    path: pages/reference/source-versions/speakers.md
-  values:
-    alternate: true
-- scope:
-    path: pages/reference/source-versions/upcoming-events.md
-  values:
-    alternate: true
-- scope:
-    path: _people/benjamin-fletcher.md
-  values:
-    alternate: true
-- scope:
-    path: pages/discover/resources/academic-papers.md
-  values:
-    alternate: true
-    layout: redirect
-- scope:
-    path: pages/competition-law-statement.md
-  values:
-    alternate: true
-    layout: redirect
-- scope:
-    path: pages/code-of-conduct.md
-  values:
-    alternate: true
-    layout: redirect
-- scope:
-    path: pages/trademark.md
-  values:
-    alternate: true
-    layout: redirect
-- scope:
-    path: pages/legal-and-policies.md
-  values:
-    alternate: true
-    layout: redirect
-- scope:
-    path: pages/news-and-events/news-and-analysis/latest-news.md
-  values:
-    alternate: true
-    layout: redirect
-- scope:
-    path: _policies/ip-policy.md
-  values:
-    alternate: true
-    layout: redirect
-- scope:
-    path: _policies/trademark-original.md
-  values:
-    alternate: true
-    layout: redirect
-- scope:
-    path: _policies/privacy-policy.md
-  values:
-    alternate: true
-- scope:
-    path: pages/groups.md
-  values:
-    alternate: true
+    parent: /news-and-events/
 title: CHERI Alliance
-description: Building the ecosystem behind memory-safe computing.
+description: 'CHERI Alliance: hardware-enforced memory safety, secure software and
+  the CHERI community.'
 lang: en-GB
 url: https://adam-3bian.github.io
 baseurl: ''
+sass:
+  sass_dir: _sass
+  style: compressed
+logo:
+  light: /assets/images/brand/logo-blue.svg
+  dark: /assets/images/brand/logo-white.svg
+  width: 326
+  height: 112
 navigation:
   header:
   - title: Discover CHERI
     type: megamenu
     columns: 3
-    url: /discover/
     subcategories:
     - title: Why CHERI
-      links: []
+      links:
+      - title: Why CHERI?
+        url: /discover/why-cheri/why-cheri/
+      - title: Vulnerabilities in Everyday Technology
+        url: /discover/why-cheri/vulnerabilities-in-everyday-technology/
+      - title: Why Existing Defences Are Not Enough
+        url: /discover/why-cheri/why-existing-defences-are-not-enough/
+      - title: Approaches to Memory Safety
+        url: /discover/why-cheri/approaches-to-memory-safety/
+      - title: CHERI and Rust
+        url: /discover/why-cheri/cheri-and-rust/
     - title: Understand CHERI
-      links: []
+      links:
+      - title: The History of CHERI
+        url: /discover/understand/cheri-history/
+      - title: How does CHERI work?
+        url: /discover/understand/how-does-cheri-work/
+      - title: Bringing CHERI to your product
+        url: /discover/understand/adapt-products/
+      - title: CHERI and Existing Software
+        url: /discover/understand/cheri-and-existing-software/
+      - title: FAQ
+        url: /discover/understand/faq/
     - title: Resources
-      links: []
+      links:
+      - title: Videos & Presentations
+        url: /discover/resources/videos-and-presentations/
+      - title: Documentation & Guides
+        url: /discover/resources/documentation-and-guides/
+      - title: Academic Papers
+        url: /discover/resources/academic-papers/
+      - title: Glossary
+        url: /discover/resources/glossary/
+      - title: Papers and authors
+        url: /papers/
   - title: Adopt
     type: megamenu
     columns: 3
-    url: /adopt/
     subcategories:
     - title: Business Case
-      links: []
+      links:
+      - title: The Cost of Memory Unsafety
+        url: /adopt/business-case/cost-of-memory-unsafety/
+      - title: The Strategic Case for CHERI
+        url: /adopt/business-case/the-business-case/
+      - title: The Return on Security Investment
+        url: /adopt/business-case/return-on-security-investment/
     - title: Assurance & Adoption
-      links: []
+      links:
+      - title: Case Studies
+        url: /adopt/assurance-and-adoption/case-studies/
+      - title: The CHERI Enabled Programme
+        url: /adopt/assurance-and-adoption/about-cheri-enabled/
+      - title: CHERI Enabled Products
+        url: /adopt/assurance-and-adoption/cheri-enabled-products/
     - title: Policy
-      links: []
+      links:
+      - title: Public Policy and CHERI
+        url: /adopt/policy/government-guidance/
+      - title: Cybersecurity Regulation
+        url: /adopt/policy/cybersecurity-regulation/
+      - title: Critical Infrastructure & Resilience
+        url: /adopt/policy/critical-infrastructure-and-resilience/
   - title: Build
     type: megamenu
-    columns: 3
-    url: /build/
+    columns: 4
     subcategories:
-    - title: Build
+    - title: Software Developers
       links:
-      - key: software-developers
-        order: 1
-        title: Software Developers
-        links: []
+      - title: Building Secure Software
+        url: /guides/building-secure-software/
+      - title: Choose a Platform
+        url: /guides/choose-a-platform/
+      - title: Run CHERI in Simulation
+        url: /guides/run-cheri-in-simulation/
+      - title: Install a Toolchain
+        url: /guides/install-a-toolchain/
+      - title: Build Your First Application
+        url: /guides/build-your-first-application/
+      - title: Tutorials & Training
+        url: /guides/tutorials-and-training/
+      - title: Port Existing Software
+        url: /guides/port-existing-software/
+      - title: Build Compartments
+        url: /guides/build-compartments/
+      - title: Downloads
+        url: /guides/downloads/
+      - title: Technical FAQ
+        url: /guides/technical-faq/
     - title: Technology
-      columns: 2
       links:
-      - key: how-cheri-capabilities-work
-        links: []
-      - key: memory-protection-system-models
-        order: 2
-        title: Memory protection & system models
-        links: []
-    - title: Resources
-      columns: 2
+      - title: How CHERI Capabilities work
+        url: /build/technology/how-cheri-capabilities-work/
+#      - title: Tags & Validity
+#        url: /build/technology/tags-and-validity/
+#      - title: Bounds
+#        url: /build/technology/bounds/
+#      - title: Permissions
+#        url: /build/technology/permissions/
+#      - title: Provenance
+#        url: /build/technology/provenance/
+#      - title: Sealing
+#        url: /build/technology/sealing/
+      - title: Spatial Memory Safety
+        url: /build/technology/spatial-memory-safety/
+      - title: Temporal Memory Safety
+        url: /build/technology/temporal-memory-safety/
+      - title: Compartmentalisation
+        url: /build/technology/compartmentalisation/
+      - title: Hybrid Systems
+        url: /build/technology/hybrid-systems/
+      - title: Pure-Capability Systems
+        url: /build/technology/pure-capability-systems/
+      - title: CHERI and Rust - Technical Overview
+        url: /build/technology/cheri-and-rust-technical/
+    - title: Platforms
       links:
-      - key: development-platforms
-        order: 2
-        title: Development Platforms
-        links: []
-      - key: software-ecosystem
-        links: []
+#      - title: Platform Comparison
+#        url: /build/platforms/platform-comparison/
+      - title: CHERI Products
+        url: /build/platforms/cheri-products/
+      - title: Morello
+        url: /hardware/morello/
+      - title: Return an unused Morello Board
+        url: /morello-return/
+      - title: CHERIoT
+        url: /hardware/cheriot/
+      - title: Sonata
+        url: /hardware/sonata/
+      - title: FPGA Platforms
+        url: /hardware/fpga-platforms/
+      - title: Simulators
+        url: /software/simulators/
+#      - title: Hardware
+#        url: /hardware/
+    - title: Software Ecosystem
+      links:
+      - title: Software Ecosystem
+        url: /build/software-ecosystem/
+      - title: LLVM & Clang
+        url: /software/llvm-and-clang/
+      - title: Rust
+        url: /software/rust/
+      - title: CheriBSD
+        url: /software/cheribsd/
+      - title: CHERI Linux
+        url: /software/cheri-linux/
+      - title: CHERI Zephyr
+        url: /software/cheri-zephyr/
+      - title: Debugging Tools
+        url: /software/debugging-tools/
+      - title: All software
+        url: /software/
   - title: CHERI Alliance
     type: megamenu
     columns: 4
-    url: /alliance/
     subcategories:
     - title: About & Governance
-      links: []
+      links:
+      - title: About the CHERI Alliance
+        url: /organisations/cheri-alliance/
+      - title: Mission & Role
+        url: /alliance/about-and-governance/mission-and-role/
+      - title: Collaboration Principles
+        url: /alliance/about-and-governance/collaboration-principles/
+      - title: Accelerating CHERI together
+        url: /alliance/about-and-governance/accelerating-together/
+      - title: CHERI Trademark
+        url: /policies/trademark/
     - title: Leadership
-      links: []
+      links:
+      - title: Members
+        url: /alliance/leadership/members/
+      - title: Governing Board
+        url: /alliance/leadership/governing-board/
+      - title: Working Groups
+        url: /alliance/leadership/working-groups/
+      - title: Ambassadors
+        url: /alliance/leadership/ambassadors/
     - title: Membership
-      links: []
+      links:
+      - title: Why Join?
+        url: /alliance/membership/why-join/
+      - title: Membership Benefits & Options
+        url: /alliance/membership/membership-benefits-and-options/
+      - title: Contact the Alliance
+        url: /alliance/membership/contact/
     - title: Legal & Policies
-      links: []
+      links:
+      - title: Code of Conduct
+        url: /policies/code-of-conduct/
+      - title: Competition Law Statement
+        url: /policies/competition-law-statement/
+      - title: Intellectual Property Policy
+        url: /policies/intellectual-property-policy/
+      - title: Trademark Policy
+        url: /policies/trademark-policy/
+      - title: Export Controls
+        url: /policies/export-controls/
+      - title: Privacy
+        url: /policies/privacy/
   - title: News & Events
     type: megamenu
     columns: 3
-    url: /news-and-events/
     subcategories:
     - title: News & Analysis
-      links: []
+      links:
+      - title: Latest News
+        url: /news-and-events/news-and-analysis/latest-news/
+      - title: Subscribe to our Newsletter
+        url: /news-and-events/news-and-analysis/subscribe-newsletter/
+      - title: Press Resources
+        url: /news-and-events/news-and-analysis/press-resources/
     - title: Events & Archive
-      links: []
+      links:
+      - title: Upcoming Events
+        url: /news-and-events/events-and-archive/upcoming-events/
+      - title: Past Events
+        url: /news-and-events/events-and-archive/past-events/
+      - title: About CHERI Blossoms Conferences
+        url: /news-and-events/events-and-archive/cheri-blossoms/
+      - title: About CHERITech Conferences
+        url: /news-and-events/events-and-archive/cheritech/
     - title: People & Opportunities
-      links: []
+      links:
+      - title: Speakers
+        url: /news-and-events/people-and-opportunities/speakers/
+      - title: Alliance Members
+        url: /alliance/leadership/members/
+      - title: Contact the Alliance
+        url: /alliance/membership/contact/
   footer:
   - title: Updates
+    links:
+    - title: Latest News
+      url: /news-and-events/news-and-analysis/latest-news/
+    - title: Upcoming Events
+      url: /news-and-events/events-and-archive/upcoming-events/
+    - title: Subscribe to our Newsletter
+      url: /news-and-events/news-and-analysis/subscribe-newsletter/
   - title: CHERI Alliance
-  - title: Learn and Build
-  - title: Policies
+    links:
+    - title: About the CHERI Alliance
+      url: /organisations/cheri-alliance/
+    - title: Members
+      url: /alliance/leadership/members/
+    - title: Working Groups
+      url: /alliance/leadership/working-groups/
+    - title: Contact the Alliance
+      url: /alliance/membership/contact/
+  - title: Legal
+    links:
+    - title: Code of Conduct
+      url: /policies/code-of-conduct/
+    - title: CHERI Trademark
+      url: /policies/trademark/
+    - title: Privacy
+      url: /policies/privacy/
   social:
-  - title: LinkedIn
-    url: https://www.linkedin.com/company/cheri-alliance/
-    image:
-      src: /assets/images/logos/social/linkedin.svg
-      alt: CHERI Alliance on LinkedIn
-  - title: Mastodon
-    url: https://infosec.exchange/@cheri_alliance
-    image:
-      src: /assets/images/logos/social/mastodon.svg
-      alt: CHERI Alliance on Mastodon
   - title: Slack
     url: https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/cheri-slack.html
     image:
-      src: /assets/images/logos/social/slack.svg
+      src: /assets/images/social/slack.svg
       alt: Join the CHERI community on Slack
+    target: _blank
+    rel: noopener noreferrer
+  - title: LinkedIn
+    url: https://www.linkedin.com/company/cheri-alliance/
+    image:
+      src: /assets/images/social/linkedin.svg
+      alt: CHERI Alliance on LinkedIn
+    target: _blank
+    rel: noopener noreferrer
+  - title: Mastodon
+    url: https://infosec.exchange/@cheri_alliance
+    image:
+      src: /assets/images/social/mastodon.svg
+      alt: CHERI Alliance on Mastodon
+    target: _blank
+    rel: noopener noreferrer
+  - title: GitHub
+    url: https://github.com/CHERI-Alliance
+    image:
+      src: /assets/images/social/github.svg
+      alt: CHERI Alliance on GitHub
+    target: _blank
+    rel: noopener noreferrer
+  - title: YouTube
+    url: https://www.youtube.com/@CHERI-Alliance
+    image:
+      src: /assets/images/social/youtube.svg
+      alt: CHERI Alliance on YouTube
+    target: _blank
+    rel: noopener noreferrer
 timezone: Europe/London
-destination: _site
-strict_front_matter: true
-plugins: []
-permalink: pretty
+
+subscribe:
+  enabled: true
+  title: Stay connected with CHERI
+  action: Explore the newsletter
+  url: /news-and-events/news-and-analysis/subscribe-newsletter/

@@ -1,29 +1,61 @@
-<footer class="site-footer">
-  <p class="container footer-brand"><a class="brand" href="{{ '/' | relative_url }}" aria-label="CHERI Alliance home"><img src="{{ '/assets/images/logos/cheri-alliance-white.svg' | relative_url }}" alt="CHERI Alliance" width="326" height="112" loading="lazy"></a></p>
-  <nav class="container footer-navigation" aria-label="Footer">
-    <ul class="footer-groups" role="list">
-      {% for group in site.data.footer_navigation.groups %}
-      <li>
-        <strong class="footer-group-label">{{ group.title | escape }}</strong>
-        <ul role="list">
-          {% for link in group.links %}
-          {% assign link_first = link.url | slice: 0, 1 %}{% assign link_pair = link.url | slice: 0, 2 %}
-          <li><a href="{% if link.url contains ':' or link_pair == '//' or link_first == '#' %}{{ link.url | escape }}{% else %}{{ link.url | relative_url | escape }}{% endif %}"{% if link.target == '_blank' %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ link.title | escape }}</a></li>
-          {% endfor %}
-        </ul>
-      </li>
+<footer>
+  <nav class="footer-navigation" aria-label="Footer">
+    <ul class="columns-3">
+      {% for category in site.navigation.footer %}
+        <li>
+          <span class="menu-group-title">{{ category.title | escape }}</span>
+          <ul>
+            {% for link in category.links %}
+              <li>{% assign link_target = link.target | default: '' | strip %}
+              {% assign link_rel = link.rel | default: '' | strip %}
+              {% if link_target == '_blank' %}
+                {% assign rel_tokens = link_rel | split: ' ' %}
+                {% unless rel_tokens contains 'noopener' %}{% assign link_rel = link_rel | append: ' noopener' %}{% endunless %}
+                {% unless rel_tokens contains 'noreferrer' %}{% assign link_rel = link_rel | append: ' noreferrer' %}{% endunless %}
+              {% endif %}
+              {% assign link_url = link.url %}
+              {% assign url_prefix = link_url | slice: 0, 2 %}
+              {% assign url_first = link_url | slice: 0, 1 %}
+              {% unless link_url contains ':' or url_prefix == '//' or url_first == '#' %}
+                {% assign link_url = link_url | relative_url %}
+              {% endunless %}
+              <a href="{{ link_url | escape }}"{% if link_target != '' %} target="{{ link_target | escape }}"{% endif %}{% if link_rel != '' %} rel="{{ link_rel | strip | escape }}"{% endif %}{% if link_target == '_blank' %} title="Opens in a new tab"{% endif %}>{{ link.title | escape }}</a></li>
+            {% endfor %}
+          </ul>
+        </li>
       {% endfor %}
     </ul>
   </nav>
-  <section class="container footer-bottom" aria-label="Site information">
-    <p class="footer-copyright">© {{ site.time | date: '%Y' }} {{ site.title | escape }}</p>
-    <nav class="footer-utilities" aria-label="Site and social links">
-      <ul role="list">
-        {% for link in site.navigation.social %}
-        {% assign link_first = link.url | slice: 0, 1 %}{% assign link_pair = link.url | slice: 0, 2 %}
-        <li><a href="{% if link.url contains ':' or link_pair == '//' or link_first == '#' %}{{ link.url | escape }}{% else %}{{ link.url | relative_url | escape }}{% endif %}"{% if link.target == '_blank' %} target="_blank" rel="noopener noreferrer"{% endif %}>{% if link.image.src %}<img src="{{ link.image.src | relative_url }}" alt="{{ link.image.alt | escape }}" aria-hidden="true" width="24" height="24" loading="lazy">{% endif %}{{ link.title | escape }}</a></li>
-        {% endfor %}
-      </ul>
-    </nav>
-  </section>
+
+  <div class="footer-bottom columns-4">
+    <p class="footer-copyright">&copy; {{ 'now' | date: '%Y' }} {{ site.title | escape }}. All rights reserved.</p>
+    {% if site.navigation.social.size > 0 %}
+      <nav class="footer-social" aria-label="Social media">
+        <ul>
+          {% for link in site.navigation.social %}
+            <li>{% assign link_target = link.target | default: '' | strip %}
+            {% assign link_rel = link.rel | default: '' | strip %}
+            {% if link_target == '_blank' %}
+              {% assign rel_tokens = link_rel | split: ' ' %}
+              {% unless rel_tokens contains 'noopener' %}{% assign link_rel = link_rel | append: ' noopener' %}{% endunless %}
+              {% unless rel_tokens contains 'noreferrer' %}{% assign link_rel = link_rel | append: ' noreferrer' %}{% endunless %}
+            {% endif %}
+            {% assign link_url = link.url %}
+            {% assign url_prefix = link_url | slice: 0, 2 %}
+            {% assign url_first = link_url | slice: 0, 1 %}
+            {% unless link_url contains ':' or url_prefix == '//' or url_first == '#' %}
+              {% assign link_url = link_url | relative_url %}
+            {% endunless %}
+            <a href="{{ link_url | escape }}"{% if link_target != '' %} target="{{ link_target | escape }}"{% endif %}{% if link_rel != '' %} rel="{{ link_rel | strip | escape }}"{% endif %}{% if link_target == '_blank' %} title="Opens in a new tab"{% endif %}>{% assign image_url = link.image.src %}
+            {% assign url_prefix = image_url | slice: 0, 2 %}
+            {% assign url_first = image_url | slice: 0, 1 %}
+            {% unless image_url contains ':' or url_prefix == '//' or url_first == '#' %}
+              {% assign image_url = image_url | relative_url %}
+            {% endunless %}
+            <img src="{{ image_url | escape }}" alt="{{ link.image.alt | escape }}" class="social-icon{% if link.image.fit == 'contain' %} image-contain{% endif %}{% if link.image.position == 'left' %} image-crop-left{% elsif link.image.position == 'right' %} image-crop-right{% endif %}"{% if link.image.width %} width="{{ link.image.width | escape }}"{% endif %}{% if link.image.height %} height="{{ link.image.height | escape }}"{% endif %} loading="lazy"></a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+    {% endif %}
+  </div>
 </footer>

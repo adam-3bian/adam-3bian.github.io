@@ -1,39 +1,36 @@
 ---
 title: Collaboration Principles
 permalink: /alliance/about-and-governance/collaboration-principles/
-summary: Collaboration, openness, and shared effort are at the heart of CHERI adoption.
-image_url: null
-updated_date: null
-parent: /alliance/
-next_page_url: https://cheri-alliance.github.io/alliance/about-and-governance/technical-leadership/
-related:
-  pages:
-  - /alliance/about-and-governance/mission-and-role/
-  people: []
-  organisations:
-  - cheri-alliance
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
-navigation:
-  header:
-    category: CHERI Alliance
-    subcategory: About & Governance
-    order: 3
+where-next:
+  url: https://cheri-alliance.github.io/alliance/about-and-governance/technical-leadership/
+  title: Technical Leadership
+related-pages:
+- url: /organisations/cheri-alliance/
+  title: About the CHERI Alliance
+  description: Learn how the Alliance connects organisations working across the CHERI ecosystem.
+  action: Read this page
+- url: /alliance/about-and-governance/mission-and-role/
+  description: A statement of what the CHERI Alliance exists to support and the boundaries of its role.
+  action: Read this page
 ---
 
+1. Alliance
+2. About &amp; Governance
+3. Collaboration Principles
+{: .source-breadcrumbs }
+
 # Collaboration Principles
+{: id="page-hero-title" .page-hero-title }
+
+Collaboration, openness, and shared effort are at the heart of CHERI adoption.
+{: .page-hero-summary }
 
 The CHERI Alliance exists because no single organisation can build a secure computing ecosystem alone. Hardware vendors, software developers, researchers, standards bodies, governments, educators, integrators, and users all have an important role to play.
 
-Collaboration is therefore one of the Alliance’s core principles. Wherever practical, we aim to help organisations work together on shared challenges while allowing each participant to maintain ownership of its own products, projects, and priorities.
+**Collaboration** is therefore one of the Alliance’s core principles. Wherever practical, we aim to help organisations work together on shared challenges while allowing each participant to maintain ownership of its own products, projects, and priorities.
 
 ## Open by default
+{: id="open-by-default" }
 
 The Alliance believes that accelerating CHERI adoption requires a strong foundation of shared knowledge, open resources, and collaborative development.
 
@@ -51,30 +48,31 @@ Examples include:
 The Alliance aims to make outputs open whenever practical, but some discussions, planning activities, and collaborative work may take place within member-only groups before being released publicly, or even stay internal. This balance allows organisations to collaborate effectively while ensuring that the wider ecosystem benefits from the results.
 
 ## Choosing the right licence
+{: id="choosing-the-right-licence" }
 
 Different types of collaboration have different requirements. The Alliance therefore applies licences that best support the intended use of each resource.
 
 In general:
 
-- Educational material, tutorials, outreach content, and technical recommendations are normally released under an open Creative Commons licence - preferably CC-BY-SA
-
-    ![CC-BY-SA](/assets/shared/source-assets/bacc656ec8f4-cc-by-sa.webp){: .image-icon }
+- Educational material, tutorials, outreach content, and technical recommendations are normally released under an open Creative Commons licence - preferably [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) ![CC-BY-SA](/assets/shared/source-assets/bacc656ec8f4-cc-by-sa.webp){: .image-left .image-inline }
 - Software examples, compliance assets, and technical contributions are normally released under permissive open-source licences to encourage adoption and contribution
 - Contributions made to existing external projects generally retain the licence of that project
 - Internal member discussions and confidential information remain protected where required
-- The CHERI® trademark remains protected and subject to the Trademark Policy
+- The CHERI® trademark remains protected and subject to the [Trademark Policy](/policies/trademark-policy/)
 
 The goal is simple: maximise reuse and collaboration while respecting legitimate confidentiality, ownership, and operational requirements.
 
 ## Collaboration without losing ownership
+{: id="collaboration-without-losing-ownership" }
 
-Participation in the Alliance does not require organisations to give up ownership of their products, research, or intellectual property. Our IP Policy has been designed to recognise each member’s IP and support collaboration while helping ensure that CHERI Alliance standards can be implemented without unreasonable licensing barriers.
+Participation in the Alliance does not require organisations to give up ownership of their products, research, or intellectual property. Our [IP Policy](/policies/intellectual-property-policy/) has been designed to recognise each member’s IP and support collaboration while helping ensure that CHERI Alliance standards can be implemented without unreasonable licensing barriers.
 
 Where collaboration creates shared resources, the preferred approach is to make those outputs openly available whenever practical.
 
-This allows organisations to collaborate on common challenges without losing control of the technologies that differentiate their own products and services.
+This allows organisations to **collaborate on common challenges** without losing control of the technologies that differentiate their own products and services.
 
 ## Sharing benefits everyone
+{: id="sharing-benefits-everyone" }
 
 Collaborative development creates benefits across the ecosystem:
 
@@ -88,7 +86,63 @@ Collaborative development creates benefits across the ecosystem:
 By working together on shared foundations, Alliance members can spend more time innovating and less time solving the same problems independently. This alignment work also creates opportunities for vendors to create solutions that would be compatible with multiple vendors, hence enabling profitable markets that ultimately benefit CHERI adoption.
 
 ## Collaborating beyond membership
+{: id="collaborating-beyond-membership" }
 
 On some projects, in particular for open-source software, the CHERI Alliance working groups also collaborate more widely with open-source communities. This pragmatic approach helps ensure that projects progress as fast as possible, without waiting for all participants to become members.
 
 The goal is to accelerate progress across the ecosystem, not to create barriers to participation.
+
+## Where next
+{: .where-next-title }
+
+### [Technical Leadership](https://cheri-alliance.github.io/alliance/about-and-governance/technical-leadership/)
+{: .where-next-card-title }
+
+
+
+
+
+[An overview of the technical leadership that guides Alliance priorities and working activity.](https://cheri-alliance.github.io/alliance/about-and-governance/technical-leadership/)
+{: .where-next-summary }
+
+
+
+[Continue](https://cheri-alliance.github.io/alliance/about-and-governance/technical-leadership/)
+{: .source-card-label }
+
+## Related content
+{: .related-pages-title }
+
+### [About the CHERI Alliance](/organisations/cheri-alliance/)
+{: .related-pages-item-title }
+
+
+
+
+
+[Learn how the Alliance connects organisations working across the CHERI ecosystem.](/organisations/cheri-alliance/)
+{: .related-pages-item-summary }
+
+
+
+[Read this page](/organisations/cheri-alliance/)
+{: .source-card-label }
+
+
+
+
+
+### [Mission &amp; Role](/alliance/about-and-governance/mission-and-role/)
+{: .related-pages-item-title }
+
+
+
+
+
+[A statement of what the CHERI Alliance exists to support and the boundaries of its role.](/alliance/about-and-governance/mission-and-role/)
+{: .related-pages-item-summary }
+
+
+
+[Read this page](/alliance/about-and-governance/mission-and-role/)
+{: .source-card-label }

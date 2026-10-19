@@ -1,121 +1,220 @@
 ---
 title: Temporal Memory Safety
 permalink: /build/technology/temporal-memory-safety/
-summary: Temporal memory safety stops references being used after an object’s lifetime ends, including when
-  its storage has been reused.
-image_url: null
-updated_date: null
-parent: /build/
-next_page_url: /build/technology/compartmentalisation/
-related:
-  pages:
-  - /build/technology/capabilities/
-  - /build/technology/spatial-memory-safety/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
-navigation:
-  header:
-    category: Build
-    subcategory: Technology
-    parent: memory-protection-system-models
-    order: 2
+where-next:
+  url: /build/technology/compartmentalisation/
+related-pages:
+- url: /build/technology/how-cheri-capabilities-work/
+  description: How CHERI Capabilities work.
+  action: Read this page
+- url: /build/technology/spatial-memory-safety/
+  description: A program allocates eight bytes and writes sixteen.
+  action: Read this page
 ---
 
+1. Build
+2. Technology
+3. Temporal Memory Safety
+{: .source-breadcrumbs }
+
 # Temporal Memory Safety
+{: id="page-hero-title" .page-hero-title }
 
-An object can be perfectly bounded and still be unsafe to use. If a program frees the object but keeps a copy of its capability, that copy has become stale. Using it later is a use-after-free error.
+Temporal memory safety prevents references from being used after the object they refer to has ceased to exist.
+{: .page-hero-summary }
 
-If the allocator gives the same storage to a new object, the stale reference may access data that did not exist when the capability was created. Preventing this is temporal memory safety.
+An object can be perfectly bounded and still be unsafe to access. If a program frees the object but retains a copy of its capability, that capability has become stale. Using it later is a **use-after-free** error.
+
+The problem becomes particularly dangerous if the allocator reuses the same memory for a new object: the stale reference could now access data that did not exist when the capability was created.
+
+Preventing this is **temporal memory safety**.
 
 ## Why bounds do not solve lifetime
+{: id="why-bounds-do-not-solve-lifetime" }
 
-Consider this sequence:
+Consider:
 
-```c
+~~~
 char *message = malloc(64);
 char *stale = message;
+
 free(message);
 char *secret = malloc(64);
+
 printf("%c\n", stale[0]);
-```
+~~~
 
-The stale capability may still be tagged, bounded to 64 bytes, and permitted to read. If secret reuses the same address range, a bounds check alone cannot know that the logical object changed.
+The stale capability may still be valid, bounded to 64 bytes and permitted to read. If `secret` reuses the same memory, bounds alone cannot tell that the original object no longer exists.
 
-This is a different question from spatial safety:
+This is the key difference between spatial and temporal safety:
 
-- Spatial: Is the address within the authorised range?
-- Temporal: Does the authority still refer to the same live object?
+Spatial: Is the access within the authorised range?
+Temporal: Is the object that authorised the access still alive?
+
+Or more simply:
+
+> Spatial safety is about **where** you can access. Temporal safety is about **when** that access remains valid.
 
 ## Baseline CHERI behaviour
+{: id="baseline-cheri-behaviour" }
 
-CHERI tags prevent software forging capabilities, but copying a valid capability creates another valid copy. Freeing memory does not automatically find and invalidate every copy in registers, stacks, heaps, message queues, or compartments.
+CHERI's capability [tags](/build/technology/cheri-capabilities/tags-and-validity/) prevent software from simply constructing arbitrary valid capabilities. But copying a valid capability creates another valid reference.
 
-General CHERI architectures therefore provide important building blocks but do not, by themselves, guarantee complete temporal safety for every allocator and software stack.
+Freeing an object does not, by itself, invalidate every outstanding capability to that object.
 
-## System-level approaches
+CHERI provides important foundations for temporal safety, but temporal safety also requires the surrounding allocator, runtime or operating system to control what happens when memory is freed and reused.
 
-Different environments can combine CHERI with one or more mechanisms:
+## Approaches to temporal safety
+{: id="approaches-to-temporal-safety" }
+
+CHERI systems can combine capabilities with different lifetime-management techniques.
 
 ### Quarantine
+{: id="quarantine" }
 
-Freed memory is held aside before reuse. This reduces the chance that a stale capability reaches a new object, but a finite quarantine may delay rather than eliminate reuse.
+Freed memory is temporarily kept out of circulation before being reused. This reduces the opportunity for stale references to access a new object, although delaying reuse alone does not necessarily eliminate the problem.
 
-### Revocation scans
+### Revocation
+{: id="revocation" }
 
-The system finds capabilities that refer to a retired region and clears or invalidates them before reusing the memory. Tags make capabilities distinguishable from ordinary data, which can make precise scanning possible. The cost and concurrency model need careful design.
+Before memory is reused, the system identifies and invalidates capabilities referring to the retired memory. Capability tags help the system distinguish capabilities from ordinary data.
+
+The cost and concurrency model need careful design.
 
 ### Epochs or generations
+{: id="epochs-or-generations" }
 
-Memory reuse is associated with a changing generation, colour, or epoch. A stale reference carries an older value and fails when compared with the current allocation state. Implementations vary in where this metadata lives and how wraparound is handled.
+Allocations can be associated with a generation, colour or epoch. A stale reference associated with an older generation can then be rejected when memory is reused.
+
+Implementations vary in where this metadata lives and how wraparound is handled.
 
 ### Allocator and architecture support
+{: id="allocator-and-architecture-support" }
 
-An allocator can align, partition, and recycle memory in ways that work with capability bounds and revocation. Some processors or platforms add operations that accelerate this process.
+Allocators can organise and recycle memory in ways designed to work with capability bounds and revocation. Hardware support can also help make these mechanisms more efficient.
 
 ### Language-managed lifetime
+{: id="language-managed-lifetime" }
 
-Rust ownership, garbage collection, reference counting, or region-based allocation can prevent many stale references at a higher layer. Unsafe code, native interfaces, runtimes, and logic errors still need a complete system model.
+Language mechanisms such as Rust ownership, garbage collection and reference counting can prevent many stale references at a higher level. CHERI can complement these mechanisms, particularly where native code, unsafe code or lower-level interfaces are involved.
 
 ## CHERIoT
+{: id="cheriot" }
 
-CHERIoT integrates temporal safety into its hardware-software design. Its allocator and revocation mechanisms are designed to prevent stale capabilities from gaining access to reallocated objects while meeting embedded-system constraints.
+CHERIoT integrates temporal memory safety into its hardware-software design. Its allocator and revocation mechanisms are designed to prevent stale capabilities from gaining access to reallocated objects while meeting embedded-system constraints.
 
-That does not mean every CHERI platform inherits the same mechanism. Name CHERIoT or the specific temporal-safety implementation when making the claim.
+This is a property of the CHERIoT system design, not automatically of every CHERI platform. Temporal-safety claims should therefore identify the mechanism or platform providing the guarantee.
 
 ## Compartment lifetimes
+{: id="compartment-lifetimes" }
 
-Temporal safety also applies to service handles and shared objects. If a compartment retains a capability after the caller destroys the object, memory safety depends on revoking or invalidating that delegated authority.
+Lifetime matters across compartment boundaries too.
 
-Interface design should specify:
+If one compartment gives another a capability to an object, the interface needs to define what happens when that object is destroyed.
+
+Good interface design should make clear:
 
 - who owns the object
-- whether the callee may retain the capability
-- how destruction is signalled
-- when memory may be reused
-- which mechanism invalidates outstanding references
+- whether the recipient may retain the capability
+- how destruction is communicated
+- when the memory may be reused
+- how outstanding references are invalidated
 
-Sealing can make a handle opaque, but does not by itself revoke every sealed copy.
+[Sealing](/build/technology/cheri-capabilities/sealing/) can make a capability opaque, but does not by itself invalidate every copy when the underlying object is destroyed.
 
 ## Evaluating a temporal-safety claim
+{: id="evaluating-a-temporal-safety-claim" }
 
 Ask:
 
-- Which allocations and object types are covered?
-- What happens to capabilities in registers and memory?
-- Can memory be reused before revocation completes?
-- How are concurrent readers handled?
-- What is the cost in time, memory, and predictability?
-- What happens on exhaustion, crash, or reset?
-- Which tests or proofs support the claim?
+1. Which allocations and object types are covered?
+2. What happens to capabilities in registers and memory?
+3. Can memory be reused before revocation completes?
+4. How are concurrent readers handled?
+5. What is the cost in time, memory, and predictability?
+6. What happens on exhaustion, crash, or reset?
+7. Which tests or proofs support the claim?
+
+## What temporal memory safety prevents
+
+When implemented across the system, temporal memory safety can prevent stale references from accessing memory after the object they referred to has been destroyed or its storage reused.
+
+This addresses vulnerabilities such as:
+
+- use-after-free
+- access through dangling pointers
+- stale references reaching newly allocated objects
+- retained capabilities remaining usable beyond an intended object lifetime
+
+## What it does not prevent
+
+Temporal memory safety does not by itself prevent:
+
+- out-of-bounds accesses to live objects
+- corruption within valid bounds
+- incorrect ownership or application logic
+- authentication or authorisation errors
+- cryptographic or side-channel flaws
 
 ## Key takeaway
+{: id="key-takeaway" }
 
-CHERI makes spatial authority explicit and capabilities identifiable. These properties provide a strong foundation for temporal safety, but object lifetime remains a system responsibility. Always distinguish architectural capability protection from the allocator, runtime, or operating-system mechanism that prevents reuse through stale references.
+CHERI capabilities provide the authority and metadata needed to build strong temporal-safety mechanisms, but object lifetime is a system-level responsibility.
+
+Bounds tell the processor where a capability may access. Temporal-safety mechanisms determine whether that capability should still be usable at all.
+
+
+## Where next
+{: .where-next-title }
+
+### [Compartmentalisation](/build/technology/compartmentalisation/)
+{: .where-next-card-title }
+
+
+
+
+
+[A media application may include millions of lines of code, dozens of libraries, and parsers for hostile input.](/build/technology/compartmentalisation/)
+{: .where-next-summary }
+
+
+
+[Continue](/build/technology/compartmentalisation/)
+{: .source-card-label }
+
+## Related content
+{: .related-pages-title }
+
+### [Capabilities](/build/technology/capabilities/)
+{: .related-pages-item-title }
+
+
+
+
+
+[A pointer bug becomes dangerous when changing a number changes authority.](/build/technology/capabilities/)
+{: .related-pages-item-summary }
+
+
+
+[Read this page](/build/technology/capabilities/)
+{: .source-card-label }
+
+
+
+
+
+### [Spatial Memory Safety](/build/technology/spatial-memory-safety/)
+{: .related-pages-item-title }
+
+
+
+
+
+[A program allocates eight bytes and writes sixteen.](/build/technology/spatial-memory-safety/)
+{: .related-pages-item-summary }
+
+
+
+[Read this page](/build/technology/spatial-memory-safety/)
+{: .source-card-label }

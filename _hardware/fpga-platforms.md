@@ -1,106 +1,158 @@
 ---
 title: FPGA Platforms
-image_url: /assets/hardware/fpga-platforms/placeholder.svg
-website_url: null
-repository_urls: []
-type: null
-architecture: null
-status: null
-related:
-  organisations: []
-  hardware:
-  - cheriot
-  - sonata
-  software:
-  - cheribsd
-navigation:
-  header:
-    category: Build
-    subcategory: Resources
-    parent: development-platforms
-    order: 3
+where-next:
+  url: /software/simulators/
+related-pages:
+- url: /guides/choose-a-platform/
+  title: Choose a Platform
+  description: Choose a platform, prepare an environment and run a first CHERI workload.
+  action: Read this page
 ---
 
+1. Build
+2. Platforms
+3. FPGA Platforms
+{: .source-breadcrumbs }
+
 # FPGA Platforms
+{: id="page-hero-title" .page-hero-title }
 
-FPGA platforms let teams run and modify CHERI processor and system designs before committing to fixed silicon.
+Run CHERI on real, reconfigurable hardware before moving to silicon.
+{: .page-hero-summary }
 
-A software simulator can model an instruction set, but processor developers also need to test caches, buses, memory tagging, interrupts, peripherals, and real timing. Fabricating a chip for every change would be slow and expensive.
+[FPGA](/discover/resources/glossary/#glossary-f) platforms provide a practical step between software simulation and production silicon. They let developers run CHERI processor and system designs on physical hardware, test software and peripherals, and modify the underlying hardware design without fabricating a chip.
 
-A field-programmable gate array, or FPGA, can be configured to implement a processor and system design. This makes it a practical bridge between simulation and silicon.
+Unlike a software simulator, an FPGA can implement the processor together with caches, memory, buses, interrupts and peripherals, allowing developers to test more of the complete system.
 
-## What an FPGA platform includes
+## Do I need an FPGA?
 
-Running CHERI on an FPGA usually requires more than a processor core:
+Usually not when you are getting started. Most developers can begin learning CHERI, porting software and investigating capability violations using simulation or QEMU.
 
-- CHERI-capable processor design in register-transfer-level (RTL) form
-- tagged-memory support through caches and memory controllers
-- buses, interrupt controllers, timers, and peripherals
-- a board-specific system-on-chip design
-- an FPGA bitstream and programming route
-- boot firmware, linker layout, and software development kit (SDK)
-- a matching operating system, real-time operating system (RTOS), or bare-metal runtime
+An FPGA becomes useful when you need to test a processor or complete system design on physical hardware, measure performance, integrate peripherals, create demonstrations, or develop software before production silicon is available.
 
-The capability tag path is critical. A core may implement CHERI instructions correctly while an incomplete memory or direct-memory-access (DMA) design loses tag state.
+## What makes up an FPGA platform?
+{: id="what-makes-up-an-FPGA-platform" }
 
-## Common platform routes
+An FPGA is a chip that can be configured to contain a processor and other digital hardware. To run CHERI, you generally need a complete hardware and software environment, including:
 
-### Purpose-built CHERIoT boards
+- an FPGA board
+- an image, or bitstream, to program the FPGA chip, containing
+  - a CHERI-capable processor design
+  - support for capability tags throughout the memory system
+  - caches, buses, interrupts, timers and peripherals
+  - a system design adapted to the FPGA board
+- boot firmware and a software development kit (SDK)
+- a compatible operating system, real-time operating system (RTOS), or bare-metal environment
 
-[Sonata](/hardware/sonata/) provides an integrated development route for [CHERIoT](/hardware/cheriot/) firmware and physical peripherals. It is a strong choice for software teams that want hardware without becoming FPGA system integrators.
+## Ways to run CHERI on an FPGA
+{: id="ways-to-run-cheri-on-an-fpga" }
 
-### General FPGA development boards
+### Purpose-built CHERIoT platforms
+{: id="purpose-built-cheriot-platforms" }
 
-CHERIoT and other CHERI-RISC-V cores can target supported commercial FPGA boards. These are useful when a team already owns the hardware or needs a different FPGA size and peripheral set.
+[Sonata](/hardware/sonata/) provides an integrated development environment for CHERIoT software and physical peripherals. It is a good choice for developers who want to work with real hardware without building their own FPGA system.
 
-The core, system design, board constraints, and SDK must all match. A bitstream for one board cannot normally be moved to another without rebuilding the hardware design.
+### Commercial FPGA boards
+{: id="commercial-fpga-boards" }
+
+![Codasip Prime FPGA board](/assets/pages/adopt--assurance-and-adoption--case-studies/e8738d5ec725-codasip-prime-kit.webp){: .image-right }
+
+CHERI processor designs can also run on supported commercial FPGA development boards. The [Digilent Genesys 2](https://digilent.com/shop/genesys-2-amd-kintex-7-fpga-development-board/) and [AMD/Xilinx VCU118](https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/vcu118.html) have both been used extensively as FPGA platforms for CHERI-related processor and system development, and provide useful reference points for teams building or evaluating their own systems.
+
+These platforms provide greater flexibility, particularly when you need more FPGA resources, memory or interfaces, but require more hardware-integration work than a purpose-built platform such as Sonata.
+
+The processor, system design, board configuration and SDK must all be compatible. A bitstream built for one board cannot normally be used directly on another.
 
 ### Application-class CHERI-RISC-V
+{: id="application-class-cheri-risc-v" }
 
-Larger FPGA systems can run 64-bit CHERI-RISC-V cores, sometimes with memory-management units and [CheriBSD](/software/cheribsd/) or Linux support. They enable operating-system and processor development where QEMU is too abstract and commercial silicon is not yet the selected target.
+Application-class CHERI-RISC-V processors are larger, more complex designs, typically requiring more capable FPGA boards with greater logic, memory and system resources.
+
+These platforms can support 64-bit CHERI-RISC-V systems suitable for operating-system and processor development. They are particularly useful when simulation such as QEMU is too abstract, but production silicon is not yet available or selected.
 
 ### Supplier evaluation images
+{: id="supplier-evaluation-images" }
 
-Processor-IP vendors may provide FPGA images and SDKs for their own cores. These can offer a supported route to product evaluation, but access, licences, peripherals, and redistribution terms differ.
+Processor-IP suppliers may provide FPGA images and SDKs for evaluating their CHERI-enabled processors. These can provide a supported route to product evaluation, although availability, licensing, supported peripherals and redistribution terms vary by supplier.
 
-## What FPGA evidence can support
+## What can you learn from an FPGA?
+{: id="what-can-you-learn-from-an-fpga" }
 
-An FPGA is useful for:
+FPGA platforms are useful to both hardware and software teams, but for different reasons.
 
-- validating RTL and tagged-memory integration
-- booting an operating system or RTOS
-- testing interrupts, drivers, and peripherals
-- exercising compartment transitions on hardware
-- measuring functional cycle counts and relative changes
-- developing software before silicon arrives
-- running hardware-in-the-loop continuous integration
+For **hardware teams**, they provide a way to:
 
-## What not to infer
+- validate CHERI processor and tagged-memory integration
+- test caches, buses, interrupts and peripherals
+- exercise capability handling throughout the system
+- build and refine estimates of final silicon performance
+- validate complete system designs before committing to silicon
 
-FPGA measurements do not directly establish:
+For **software teams**, they provide real hardware on which to:
 
-- production clock frequency
-- silicon power consumption
-- final chip area
-- production cache and memory latency
-- resistance to physical attacks
-- final safety or security certification
-- An FPGA implementation may use different memories, clocks, interconnects, and processor-design trade-offs from the production device.
+- boot and test an operating system, RTOS or bare-metal software
+- develop and test drivers and peripherals
+- exercise CHERI compartments and capability behaviour
+- develop and validate software before production silicon is available
+- run hardware-in-the-loop testing and continuous integration
 
-## Selecting a board
+An FPGA can also help build and validate estimates of final silicon performance, particularly by providing cycle-level measurements and allowing hardware and software to be exercised together. However, FPGA measurements do not directly represent final silicon: clock frequency, power consumption, chip area and memory performance will depend on the eventual implementation.
 
-Check:
+## Choosing an FPGA platform
+{: id="choosing-an-fpga-platform" }
 
-- Core and architecture: Which CHERI instruction-set architecture (ISA) and version does the bitstream implement?
-- Software: Which compiler, application binary interface (ABI), operating system, and examples are supported?
-- Resources: Does the FPGA have enough logic, memory, and tagged-memory support?
-- Peripherals: Are the required interfaces present and supported by drivers?
-- Debug: Are hardware-debug and serial-console connections, trace, and fault diagnostics available?
-- Licence: Can you modify and redistribute the RTL, bitstream, and software as required?
-- Lifecycle: Is the board a learning target, a maintained development platform, or part of a supplier product route?
+Before selecting a platform, check:
 
-## Reproducibility
+1. **Architecture**: Which CHERI instruction-set architecture and version does it implement?
+2. **Software**: Which compilers, ABIs, operating systems and examples are supported?
+3. **Capacity**: Does the FPGA have enough logic and memory for the required processor and system?
+4. **Peripherals**: Are the interfaces you need available and supported by drivers?
+5. **Debug**: What hardware debug, serial console, trace and fault diagnostics are available?
+6. **Licence**: Can you use, modify and redistribute the RTL, bitstream and software as required?
+7. **Lifecycle**: Is it an experimental platform, a maintained development environment or part of a supplier's product route?
 
-Store the RTL revision, tool version, synthesis settings, board constraints, bitstream checksum, firmware, and SDK together. FPGA vendor tools can produce different results across versions, so the hardware build environment is part of the evidence.
+## Reproducible hardware builds
+{: id="reproducible-hardware-builds" }
 
-Sonata provides a CHERIoT environment for software development, while the CHERI product directory describes current cores, chips, boards, operating systems, and tools.
+For reproducible development, record the RTL revision, FPGA tool version, synthesis settings, board configuration, bitstream, firmware and SDK used. FPGA build results can vary between tool versions, so the build environment is part of the platform configuration.
+
+## Find a platform
+{: id="find-a-platform" }
+
+The [CHERI product directory](/build/platforms/cheri-products/) describes current cores, chips, boards, operating systems, and tools.
+
+## Where next
+{: .where-next-title }
+
+### [Simulators](/software/simulators/)
+{: .where-next-card-title }
+
+
+
+
+
+[Simulation is often the best first CHERI platform.](/software/simulators/)
+{: .where-next-summary }
+
+
+
+[Continue](/software/simulators/)
+{: .source-card-label }
+
+## Related content
+{: .related-pages-title }
+
+### [Choose a Platform](/guides/choose-a-platform/)
+{: .related-pages-item-title }
+
+
+
+
+
+[Choose a platform, prepare an environment and run a first CHERI workload.](/guides/choose-a-platform/)
+{: .related-pages-item-summary }
+
+
+
+[Read this page](/guides/choose-a-platform/)
+{: .source-card-label }

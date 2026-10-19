@@ -1,5 +1,12 @@
 ---
 title: Working groups
 permalink: /groups/
-layout: redirect
+listing:
+  collection: groups
+layout: list
+parent: /alliance/
 ---
+
+# Working groups
+
+Explore the Alliance working groups and their published activities.

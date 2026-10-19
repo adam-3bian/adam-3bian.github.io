@@ -1,44 +1,37 @@
 ---
 title: Exercise an inter-stack-object buffer overflow
 permalink: /reference/CHERI-seL4-Exercises/exercises/buffer-overflow-stack/index.html
-summary: null
-image_url: null
-updated_date: null
-parent: /CHERI-seL4-Exercises/
-next_page_url: null
-related:
-  pages: []
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
-# Exercise an inter-stack-object buffer overflow
+# [Exercise an inter-stack-object buffer overflow](/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-stack/index.html#exercise-an-inter-stack-object-buffer-overflow)
+{: id="exercise-an-inter-stack-object-buffer-overflow" }
 
-This exercise demonstrates an inter-object buffer overflow on baseline and CHERI-enabled architectures, and asks you to characterize and fix the bug detected by CHERI bounds enforcement. It also asks you to use GDB for debugging purposes.
+This exercise demonstrates an inter-object buffer overflow on baseline and
+CHERI-enabled architectures, and asks you to characterize and fix the bug
+detected by CHERI bounds enforcement. It also asks you to use GDB for
+debugging purposes.
 
-By contrast to the globals-based example, this example uses two stack objects to demonstrate the overflow. We will be able to see the CHERI C compiler generate code to apply spatial bounds on the capability used for the buffer pointer we pass around.
+By contrast to [the globals-based example](/CHERI-seL4-Exercises/exercises/buffer-overflow-global/), this
+example uses two *stack* objects to demonstrate the overflow. We will be able
+to see the CHERI C compiler generate code to apply spatial bounds on the
+capability used for the buffer pointer we pass around.
 
-1. Compile buffer-overflow-stack.c for the baseline architecture to the binary buffer-overflow-stack-baseline and for the CHERI-aware architecture to buffer-overflow-stack-cheri.
-
+1. Compile `buffer-overflow-stack.c` for the baseline architecture to
+   the binary `buffer-overflow-stack-baseline` and for the CHERI-aware
+   architecture to `buffer-overflow-stack-cheri`.
 2. Run both programs and observe their outputs.
+3. Using GDB and/or the Monitor's error messages:
+   Why has the CHERI program failed?
+4. Compare and contrast the disassembly of the baseline and CHERI programs.
+   In particular, focus on the `write_buf` function and `init`'s call to it
+   and the information flow leading up to it.
 
-3. Using GDB and/or the Monitor's error messages: Why has the CHERI program failed?
+## [Source](/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-stack/index.html#source)
+{: id="source" }
 
-4. Compare and contrast the disassembly of the baseline and CHERI programs. In particular, focus on the write\_buf function and init's call to it and the information flow leading up to it.
+**buffer-overflow-stack.c**
 
-## Source
-
-buffer-overflow-stack.c
-
-```c
+~~~C
 /*
  * SPDX-License-Identifier: BSD-2-Clause
  * Copyright (c) 2022 Microsoft Corporation
@@ -75,4 +68,4 @@ init(void)
 }
 
 void notified(){}
-```
+~~~

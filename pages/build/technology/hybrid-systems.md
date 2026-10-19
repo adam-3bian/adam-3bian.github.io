@@ -1,66 +1,61 @@
 ---
 title: Hybrid Systems
 permalink: /build/technology/hybrid-systems/
-summary: Hybrid CHERI systems combine conventional pointers with explicit capabilities, supporting staged adoption
-  while leaving some accesses outside capability protection.
-image_url: null
-updated_date: null
-parent: /build/
-next_page_url: /build/technology/pure-capability-systems/
-related:
-  pages:
-  - /build/technology/capabilities/
-  - /build/technology/compartmentalisation/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
-navigation:
-  header:
-    category: Build
-    subcategory: Technology
-    parent: memory-protection-system-models
-    order: 4
+where-next:
+  url: /build/technology/pure-capability-systems/
+related-pages:
+- url: /build/technology/how-cheri-capabilities-work/
+  description: How CHERI Capabilities work.
+  action: Read this page
+- url: /build/technology/compartmentalisation/
+  description: A media application may include millions of lines of code, dozens of libraries, and parsers for hostile input.
+  action: Read this page
 ---
 
+1. Build
+2. Technology
+3. Hybrid Systems
+{: .source-breadcrumbs }
+
 # Hybrid Systems
+{: id="page-hero-title" .page-hero-title }
 
-Replacing every pointer and binary interface at once is rarely practical. CHERI therefore supports hybrid systems, where conventional address-based software coexists with capability-aware code.
+Hybrid CHERI combines conventional pointers with capabilities, enabling incremental adoption of CHERI protections.
+{: .page-hero-summary }
 
-Hybrid operation is a migration and experimentation tool. It is not the same security property as a pure-capability application.
+Converting every pointer, library and interface at once is rarely practical. Hybrid systems allow existing C and C++ code to continue using conventional pointers while selected code uses explicit capabilities.
 
-## What “hybrid” can mean
+This makes hybrid CHERI useful for migration, experimentation and introducing capability-aware interfaces.
 
-The precise model depends on the architecture and application binary interface (ABI), but hybrid software commonly has:
+However, hybrid and pure-capability systems provide different levels of protection. In a hybrid system, capability protection applies where capabilities are actually used.
 
-- conventional language-visible pointers for ordinary C and C++ code
-- explicit capability-qualified pointer types for selected objects or interfaces
-- capability registers and instructions available to capability-aware code
-- operating-system support for saving, mapping, and passing capabilities
-- a conventional ABI preserved for much of the program
+## How hybrid CHERI works
+{: id="how-hybrid-cheri-works" }
 
-Legacy loads and stores may be authorised relative to a broader default capability or architectural context. They do not automatically carry a separate bound for each C object.
+In hybrid software, conventional pointers and capabilities can coexist. This requires hardware that supports hybrid mode.
+
+Existing code can continue using conventional pointers, while capability-aware code can use capabilities with explicit bounds and permissions for selected objects and interfaces.
+
+This allows developers to introduce CHERI **progressively** rather than converting an entire software stack at once.
+
+However, conventional pointer accesses do not automatically gain the object-level bounds associated with capability pointers.
 
 ## Why use hybrid mode
+{: id="why-use-hybrid-mode" }
 
 Hybrid mode can help teams:
 
-- introduce one capability-aware interface at a time
+- introduce capability-aware interface incrementally
 - build protected handles and service entry points
 - experiment with compartment mechanisms
 - run conventional libraries while porting selected components
 - preserve a familiar ABI during architecture development
 - measure and debug capability operations before wider conversion
 
-It played an important role in the development of CheriBSD and the wider CHERI software model.
+It can therefore be a useful step between conventional software and a broader pure-capability deployment.
 
 ## A staged example
+{: id="a-staged-example" }
 
 Imagine a conventional service that receives network data. A first hybrid step might explicitly derive a bounded, read-only capability for one packet and pass it to a capability-aware parser.
 
@@ -68,19 +63,21 @@ The parser gains useful protection for accesses through that capability. Other c
 
 The security claim must therefore identify the protected path:
 
-The parser accesses packet data only through a read-only capability bounded to the packet.
+> The parser accesses packet data only through a read-only capability bounded to the packet.
 
 It should not claim:
 
-The complete service has pure-capability memory safety.
+> The complete service has pure-capability memory safety.
 
 ## ABI compatibility
+{: id="abi-compatibility" }
 
-Keeping a conventional ABI reduces some migration costs. Existing structure layouts, pointer sizes, and call conventions may remain usable for code that does not expose capabilities.
+One reason for using a hybrid model is to preserve compatibility with existing code and interfaces while introducing capabilities selectively.
 
-Interfaces that pass capabilities still need capability-aware calling conventions, types, relocation support, and libraries. Mixing modes is platform-specific. A library built for one ABI cannot be assumed compatible with another because both run on the same processor.
+Capability-aware interfaces still require appropriate types, calling conventions and supporting libraries. Mixing conventional and capability-aware code is platform-specific, so compatibility should not be assumed simply because both forms of code run on the same processor.
 
 ## Security coverage
+{: id="security-coverage" }
 
 Hybrid mode provides strong enforcement where valid, tightly bounded capabilities are used. It may also support sealed objects and compartment entry mechanisms.
 
@@ -93,19 +90,79 @@ Coverage remains selective:
 
 This makes hybrid mode useful for transition but harder to describe with a single percentage or label.
 
-## Planning a move to pure capability
+## Moving towards pure capability
+{: id="moving-towards-pure-capability" }
 
-A hybrid prototype can identify capability-aware interfaces and porting issues. To gain broader protection:
+Hybrid CHERI can be a useful way to discover porting issues and introduce capability-aware interfaces before moving more software to a pure-capability ABI.
 
-- build dependencies for the pure-capability ABI
-- replace pointer-integer assumptions
-- fix object-bound and allocator issues
-- validate foreign-function and assembly boundaries
-- run the complete test suite as pure-capability code
-- confirm that conventional fallback paths are no longer used
+Typical migration work includes:
 
-Some systems may retain hybrid components deliberately where required. Document that residual authority and contain it behind a narrow boundary.
+- porting dependencies
+- removing assumptions that pointers are ordinary integers
+- addressing object-bound and allocator issues
+- reviewing assembly and foreign-function interfaces
+- testing the application under the pure-capability ABI
+
+Not every system needs to migrate everything. Where conventional components remain, developers should understand and document the authority those components retain.
 
 ## Key takeaway
+{: id="key-takeaway" }
 
-Hybrid CHERI makes incremental adoption possible, but capability protection is only present where the software actually uses capabilities. For broad C and C++ pointer protection, compare Pure-Capability Systems.
+Hybrid CHERI provides a practical path to incremental adoption, but its protection is selective. Capabilities can protect specific objects, interfaces and components while existing software continues to run conventionally.
+
+For broader protection of C and C++ pointers throughout an application, the next step is [Pure-Capability Systems](/build/technology/pure-capability-systems/).
+
+## Where next
+{: .where-next-title }
+
+### [Pure-Capability Systems](/build/technology/pure-capability-systems/)
+{: .where-next-card-title }
+
+
+
+
+
+[A program cannot gain broad pointer protection if only a few selected pointers carry capability metadata.](/build/technology/pure-capability-systems/)
+{: .where-next-summary }
+
+
+
+[Continue](/build/technology/pure-capability-systems/)
+{: .source-card-label }
+
+## Related content
+{: .related-pages-title }
+
+### [Capabilities](/build/technology/capabilities/)
+{: .related-pages-item-title }
+
+
+
+
+
+[A pointer bug becomes dangerous when changing a number changes authority.](/build/technology/capabilities/)
+{: .related-pages-item-summary }
+
+
+
+[Read this page](/build/technology/capabilities/)
+{: .source-card-label }
+
+
+
+
+
+### [Compartmentalisation](/build/technology/compartmentalisation/)
+{: .related-pages-item-title }
+
+
+
+
+
+[A media application may include millions of lines of code, dozens of libraries, and parsers for hostile input.](/build/technology/compartmentalisation/)
+{: .related-pages-item-summary }
+
+
+
+[Read this page](/build/technology/compartmentalisation/)
+{: .source-card-label }

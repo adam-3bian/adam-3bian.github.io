@@ -1,5 +1,10 @@
 ---
 title: Papers
 permalink: /papers/
-layout: redirect
+listing:
+  collection: papers
+layout: list
+parent: /discover/
 ---
+
+# Papers

@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scrollbar-gutter: stable;
+}
+body {
+  background: var(--colour-page-edge);
+  color: var(--colour-text);
+  display: flex;
+  flex-direction: column;
+  font-family: $font-family;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-body;
+  margin: 0;
+  min-height: 100vh;
+  isolation: isolate;
+  position: relative;
+}
+// WebP files contain the 1px lines and transparent 1px gaps themselves.
+// The tile wraps on both axes. Native sizing keeps its pixel rows distinct.
+body::before {
+  background-image: var(--watermark-image);
+  background-position: center top;
+  background-repeat: repeat;
+  background-size: auto;
+  content: "";
+  inset: 0;
+  opacity: var(--watermark-opacity);
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+}
+a {
+  color: inherit;
+  text-underline-offset: $space-1;
+}
+// Ordinary text links only; navigation, cards and other controls keep their styling.
+a:where(:not(nav a, .card, .button, .brand, .image-link, .skip-link)):hover {
+  color: var(--colour-link-hover);
+}
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: $focus-width solid var(--colour-focus);
+  outline-offset: $focus-width;
+}
+[id] {
+  scroll-margin-top: $space-6;
+}
+.skip-link {
+  background: var(--colour-control);
+  left: $gutter-mobile;
+  padding: $space-3 $space-4;
+  position: absolute;
+  top: -$space-24;
+  z-index: $skip-link-layer;
+}
+@media print, (forced-colors: active) {
+  body::before { display: none; }
+}
+.skip-link:focus {
+  top: $space-3;
+}
+.columns-2, .columns-3, .columns-4 {
+  display: grid;
+  gap: $grid-gap;
+  grid-template-columns: minmax(0, 1fr);
+}
+.content {
+  display: flow-root;
+  min-width: 0;
+  width: 100%;
+}
+h1, h2, h3, h4 {
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-heading;
+  margin: 0;
+  overflow-wrap: break-word;
+}
+h1 {
+  font-size: $font-size-heading-1;
+  letter-spacing: $letter-spacing-heading-1;
+}
+h2 {
+  font-size: $font-size-heading-2;
+  letter-spacing: $letter-spacing-heading-2;
+}
+h3 {
+  font-size: $font-size-heading-3;
+  letter-spacing: $letter-spacing-heading-3;
+}
+p, ul, ol, blockquote, pre, dl, table {
+  margin-block: 0;
+}
+.content > * + * {
+  margin-top: $content-gap;
+}
+.content > h2, .content > h3, .content > h4 {
+  clear: both;
+  margin-top: $subsection-gap;
+}
+.content > :first-child {
+  margin-top: 0;
+}
+.content > h2 + *, .content > h3 + *, .content > h4 + * {
+  margin-top: $heading-gap;
+}
+.content li + li {
+  margin-top: $space-2;
+}
+.content ul, .content ol {
+  padding-left: $space-6;
+}
+.content .lede {
+  font-size: $font-size-lede;
+  margin-top: $space-4;
+}
+.meta {
+  color: var(--colour-muted);
+  display: block;
+  font-size: $font-size-meta;
+  margin-top: $space-2;
+}
+.content > .meta {
+  margin-top: $space-2;
+}
+.content > .meta + .lede {
+  margin-top: $space-4;
+}
+.content > .lede + :not(.meta) {
+  margin-top: $space-8;
+}
+img {
+  object-fit: var(--image-fit, cover);
+  object-position: var(--image-position, center);
+}
+.image-contain { --image-fit: contain; }
+.image-crop-left { --image-position: left center; }
+.image-crop-right { --image-position: right center; }
+.image-link {
+  display: block;
+  max-width: 100%;
+}
+.image-link > img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+}
+.content img {
+  height: auto;
+  max-width: 100%;
+}
+.content .image-full, .content .image-left, .content .image-right {
+  display: block;
+  margin: $space-2 0 $space-4;
+  width: 100%;
+}
+.content blockquote {
+  border-left: $focus-width solid var(--colour-hero-accent);
+  padding-left: $space-5;
+}
+.content pre {
+  background: var(--colour-card);
+  max-width: 100%;
+  overflow-x: auto;
+  padding: $space-4;
+}
+.content :not(pre) > code { overflow-wrap: anywhere; }
+.content .highlight { max-width: 100%; min-width: 0; }
+@media (min-width: $desktop-breakpoint) {
+  .columns-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .columns-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .columns-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .content .image-left, .content .image-right {
+    max-width: unquote("min(#{$inline-image-proportion}, #{$inline-image-width})");
+    width: auto;
+  }
+  .content img.image-left, .content img.image-right,
+  .content .image-left > img, .content .image-right > img {
+    max-height: $inline-image-height;
+    width: auto;
+  }
+  .content .image-left {
+    float: left;
+    margin: 0 $space-8 $space-5 0;
+  }
+  .content .image-right {
+    float: right;
+    margin: 0 0 $space-5 $space-8;
+  }
+  // Kramdown puts a standalone image in a paragraph. Let the next block
+  // start beside its float, rather than adding another paragraph gap.
+  .content > p:has(> :is(.image-left, .image-right):only-child) + :is(p, ul, ol, blockquote, pre, dl, table) {
+    margin-top: 0;
+  }
+}
+
+// Square body portraits share the listing image and keep its fit setting.
+// These rules also apply after the enlargement script wraps the image in a link.
+.content img.image-square {
+  aspect-ratio: 1;
+  display: block;
+  height: auto;
+  max-height: none;
+  width: 100%;
+}
+.content img.image-square.image-left,
+.content .image-left:has(> img.image-square) {
+  width: unquote("min(100%, #{$inline-image-height})");
+}
+
+.index-list, .form-panel { clear: both; }
+.index-list > h2 { margin-bottom: $heading-gap; }
+.content > .index-list:not(:first-child) { margin-top: $subsection-gap; }
+.section-intro { margin-bottom: $space-6; max-width: $text-width; }

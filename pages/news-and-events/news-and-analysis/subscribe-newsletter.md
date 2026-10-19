@@ -1,61 +1,49 @@
 ---
 title: Subscribe to our quarterly newsletter
 permalink: /news-and-events/news-and-analysis/subscribe-newsletter/
-summary: Get news from the CHERI ecosystem every quarter.
-image_url: null
-updated_date: null
-parent: /news-and-events/
-next_page_url: null
-related:
-  pages:
-  - /news/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
-navigation:
-  header:
-    category: News & Events
-    subcategory: News & Analysis
-    order: 2
-    label: Subscribe to our Newsletter
-  footer:
-    category: Updates
-    order: 4
-    label: Subscribe to our Newsletter
-form:
-  id: subscription-form
-  title: Join the mailing list
-  submit: Subscribe
-  demo: This subscription form is a preview. It does not subscribe you.
-  fields:
-  - name: email
-    size: half
-    label: Email address
-    type: email
-    required: true
-    autocomplete: email
-    placeholder: you@example.org
-  - name: name
-    size: half
-    label: Your name
-    autocomplete: name
-    placeholder: Your name (optional)
-  action: null
+related-pages:
+- url: /news-and-events/news-and-analysis/latest-news/
+  description: The latest CHERI Alliance and ecosystem announcements, presented with clear dates and sources.
+  action: Read this page
 ---
 
-# Subscribe to our quarterly newsletter
+1. News &amp; Events
+2. News &amp; Analysis
+3. Subscribe to our quarterly newsletter
+{: .source-breadcrumbs }
 
-The CHERI ecosystem is moving fast. Get the latest news, milestones, events, and opportunities delivered to your inbox every quarter.
+# Subscribe to our quarterly newsletter
+{: id="page-hero-title" .page-hero-title }
+
+Get news from the CHERI ecosystem every quarter.
+{: .page-hero-summary }
+
+The CHERI ecosystem is moving fast. Get the latest news, milestones, events, and opportunities delivered to your inbox **every quarter**.
+
+---
 
 The signup form below is a preview and does not subscribe you.
 
-Subscribe through the published Alliance mailing list.
+[Subscribe through the published Alliance mailing list](https://cheri-alliance.kit.com/subscribe).
 
-Privacy: We value your privacy. Your email address will only be used for CHERI Alliance communications and will never be shared with third parties. Unsubscribe at any time.
+---
+
+*Privacy: We value your privacy. Your email address will only be used for CHERI Alliance communications and will never be shared with third parties. Unsubscribe at any time.*
+
+## Related content
+{: .related-pages-title }
+
+### [Latest News](/news-and-events/news-and-analysis/latest-news/)
+{: .related-pages-item-title }
+
+
+
+
+
+[The latest CHERI Alliance and ecosystem announcements, presented with clear dates and sources.](/news-and-events/news-and-analysis/latest-news/)
+{: .related-pages-item-summary }
+
+
+
+[Read this page](/news-and-events/news-and-analysis/latest-news/)
+{: .source-card-label }

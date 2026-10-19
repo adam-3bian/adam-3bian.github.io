@@ -1,16 +1,10 @@
 ---
 title: Developer guides
 permalink: /guides/
-layout: list
 listing:
   collection: guides
-  status: null
-  role: null
-navigation:
-  footer:
-    category: Learn and Build
-    order: 1
-    label: Guides
+layout: list
+parent: /build/
 ---
 
 # Developer guides

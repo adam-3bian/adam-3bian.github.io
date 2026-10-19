@@ -1,31 +1,63 @@
 ---
 title: Simon Moore
-image_url: /assets/people/simon-moore/8f372d49f9c9-portrait.png
-website_url: https://cheri-alliance.org/events/speakers/simon-moore/
-is_speaker: true
-social:
-  linkedin_url: https://www.linkedin.com/in/simon-moore-409767/
-  mastodon_url: null
-  github_url: null
-related:
-  organisations:
-  - university-of-cambridge
-  working-groups: []
+organization: university-of-cambridge
+speaker: true
 ---
 
+1. News &amp; Events
+2. Speakers
+3. Simon Moore
+{: .source-breadcrumbs }
+
 # Simon Moore
+{: id="page-hero-title" .page-hero-title }
+
+University of Cambridge
+{: .page-hero-summary }
+
+![Simon Moore](/assets/people/simon-moore/8f372d49f9c9-portrait.png){: .image-left }
+{: .entity-media .entity-media--portrait }
 
 Board role
 : Professor
-{: .record-properties }
+
+Organisation
+: University of Cambridge
+{: .entity-facts }
+
+[LinkedIn](https://www.linkedin.com/in/simon-moore-409767/)
+{: .entity-links }
 
 ## Biography
+{: id="biography" }
 
-Professor Simon Moore is Professor of Computer Engineering at the [University of Cambridge](/organisations/university-of-cambridge/), where he leads research in computer architecture with a focus on secure and rigorously engineered processors and subsystems.
+Professor Simon Moore is Professor of Computer Engineering at the University of Cambridge, where he leads research in computer architecture with a focus on secure and rigorously engineered processors and subsystems.
 
 He is the senior member of the Computer Architecture research group and has extensive experience in both research and teaching within the Department of Computer Science and Technology.
 
 ## CHERI Talks
+{: id="cheri-talks" }
 
-- CHERI is being standardised, so why do we still need to do research? \| [CHERI Blossoms 2026](/events/cheri-blossoms-conference-2026/) — 26/03/2026, Cambridge, UK
-- About CHERI \| [CHERI Blossoms 2025](/events/cheri-blossoms-conference-2025/) — 02/04/2025, Cambridge, UK
+CHERI is being standardised, so why do we still need to do research? \| CHERI Blossoms 2026
+
+26/03/2026
+
+Cambridge, UK
+
+[View Slides](https://cheri-alliance.org/wp-content/uploads/2026/04/D2-1.6-Simon-Moore-CHERI-RvsD-CHERI-Blossoms-2026.pdf)
+
+[View Video](https://youtu.be/iv-Pro9CV5k)
+
+About CHERI \| CHERI Blossoms 2025
+
+02/04/2025
+
+Cambridge, UK
+
+[View Slides](https://cheri-alliance.org/wp-content/uploads/2025/04/1.5-Simon-Moore-About-CHERI.pdf)
+
+[View Video](https://youtu.be/iNrEEslJ8MU)
+
+[Back to all speakers](/news-and-events/people-and-opportunities/speakers/)
+[Back to the Governing Board](/alliance/leadership/governing-board/)
+{: .entity-back .entity-back--multiple }

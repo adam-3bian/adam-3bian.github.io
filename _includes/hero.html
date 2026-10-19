@@ -1,0 +1,10 @@
+{% if page.hero %}
+{% assign rendered_heading = include.heading | default: page.rendered_heading %}
+<section class="hero{% if page.url == '/' or page.hero.size == 'large' %} hero-large{% endif %}" aria-labelledby="{% if rendered_heading %}{{ include.heading_id | default: page.heading_id | default: 'page-title' | escape }}{% else %}hero-title{% endif %}">
+  <div class="hero-intro">
+    {% if heading_alias and heading_alias != '' and heading_alias != heading_id %}<span id="{{ heading_alias }}"></span>{% endif %}
+    {% if rendered_heading %}{{ rendered_heading }}{% else %}<h1 id="hero-title">{{ page.hero.title | default: page.title | escape }}</h1>{% endif %}
+    {{ heading_intro }}
+  </div>
+</section>
+{% endif %}

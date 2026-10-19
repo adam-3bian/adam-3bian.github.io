@@ -1,20 +1,30 @@
 ---
 title: Privacy
-image_url: /assets/policies/privacy/placeholder.svg
-author: null
-navigation:
-  header:
-    category: CHERI Alliance
-    subcategory: Legal & Policies
-    order: 6
-  footer:
-    category: Policies
-    order: 3
+where-next:
+  url: /news-and-events/news-and-analysis/latest-news/
+related-pages:
+- url: /policies/code-of-conduct/
+  description: The behaviour and participation expectations that apply to Alliance spaces and activities.
+  action: Read this page
+- url: /policies/export-controls/
+  description: Information on export-control considerations relevant to Alliance activity and shared material.
+  action: Read this page
+- url: /organisations/cheri-alliance/
+  title: About the CHERI Alliance
+  description: Learn how the Alliance connects organisations working across the CHERI ecosystem.
+  action: Read this page
 ---
 
+1. Alliance
+2. Legal &amp; Policies
+3. Privacy
+{: .source-breadcrumbs }
+
 # Privacy
+{: id="page-hero-title" .page-hero-title }
 
 The Privacy Policy explains what website data the Alliance records, why it is processed, how long it is retained, and the rights available to users.
+{: .page-hero-summary }
 
 This Website collects some Personal data from its Users.
 
@@ -22,11 +32,16 @@ This document can be printed for reference by using the print command in the set
 
 Owner and Data Controller:
 
-[CHERI Alliance](/organisations/cheri-alliance/) C.I.C. Salisbury House, Station Road Cambridge, CB1 2LA United Kingdom (“CHERI Alliance”)
+**CHERI Alliance C.I.C.**  
+Salisbury House, Station Road  
+Cambridge, CB1 2LA  
+United Kingdom  
+(“CHERI Alliance”)
 
-This Privacy Policy document contains types of information that is collected and recorded by the CHERI Alliance and how we use it. If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.
+This Privacy Policy document contains types of information that is collected and recorded by the CHERI Alliance and how we use it. If you have additional questions or require more information about our Privacy Policy, do not hesitate to [contact us](/alliance/membership/contact/).
 
 ## General Data Protection Regulation (GDPR)
+{: id="general-data-protection-regulation-gdpr" }
 
 CHERI Alliance C.I.C. is the controller of your personal data.
 
@@ -39,7 +54,7 @@ CHERI Alliance legal basis for collecting and using the personal information des
 
 CHERI Alliance will retain your personal information only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use your information to the extent necessary to comply with our legal obligations, resolve disputes, and enforce our policies.
 
-If you are a resident of the European Economic Area (EEA), you have certain data protection rights. If you wish to be informed what Personal Information we hold about you and if you want it to be removed from our systems, please contact us.
+If you are a resident of the European Economic Area (EEA), you have certain data protection rights. If you wish to be informed what Personal Information we hold about you and if you want it to be removed from our systems, please [contact us](/alliance/membership/contact/).
 
 In certain circumstances, you have the following data protection rights:
 
@@ -51,23 +66,102 @@ In certain circumstances, you have the following data protection rights:
 - The right to withdraw consent.
 
 ## Log files
+{: id="log-files" }
 
 CHERI Alliance follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services’ analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users’ movement on the website, and gathering demographic information.
 
 ## Third party privacy policies
+{: id="third-party-privacy-policies" }
 
 CHERI Alliance’s Privacy Policy does not apply to other websites. Their own privacy policies explain their practices and any available opt-out choices.
 
 You can use your browser settings to control cookies. Browser support documentation explains the available controls.
 
 ## Children’s information
+{: id="childrens-information" }
 
 Another part of our priority is adding protection for children while using the internet. CHERI Alliance does not knowingly collect any Personal Identifiable Information from children under the age of 13.
 
 ## Online privacy policy only
+{: id="online-privacy-policy-only" }
 
 Our Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collected in CHERI Alliance. This policy is not applicable to any information collected offline or via channels other than this website.
 
 ## Consent
+{: id="consent" }
 
 By using our website, you hereby consent to our Privacy Policy and agree to its terms.
+
+## Where next
+{: .where-next-title }
+
+### [Latest News](/news-and-events/news-and-analysis/latest-news/)
+{: .where-next-card-title }
+
+
+
+
+
+[The latest CHERI Alliance and ecosystem announcements, presented with clear dates and sources.](/news-and-events/news-and-analysis/latest-news/)
+{: .where-next-summary }
+
+
+
+[Continue](/news-and-events/news-and-analysis/latest-news/)
+{: .source-card-label }
+
+## Related content
+{: .related-pages-title }
+
+### [Code of Conduct](/policies/code-of-conduct/)
+{: .related-pages-item-title }
+
+
+
+
+
+[The behaviour and participation expectations that apply to Alliance spaces and activities.](/policies/code-of-conduct/)
+{: .related-pages-item-summary }
+
+
+
+[Read this page](/policies/code-of-conduct/)
+{: .source-card-label }
+
+
+
+
+
+### [Export Controls](/policies/export-controls/)
+{: .related-pages-item-title }
+
+
+
+
+
+[Information on export-control considerations relevant to Alliance activity and shared material.](/policies/export-controls/)
+{: .related-pages-item-summary }
+
+
+
+[Read this page](/policies/export-controls/)
+{: .source-card-label }
+
+
+
+
+
+### [About the CHERI Alliance](/organisations/cheri-alliance/)
+{: .related-pages-item-title }
+
+
+
+
+
+[Learn how the Alliance connects organisations working across the CHERI ecosystem.](/organisations/cheri-alliance/)
+{: .related-pages-item-summary }
+
+
+
+[Read this page](/organisations/cheri-alliance/)
+{: .source-card-label }

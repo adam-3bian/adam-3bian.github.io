@@ -1,102 +1,177 @@
 ---
-title: CHERITech Conference
+title: About CHERITech Conferences
 permalink: /news-and-events/events-and-archive/cheritech/
-summary: The technical conference for the people building the future of CHERI-enabled systems.
-image_url: null
-updated_date: null
-parent: /news-and-events/
-next_page_url: /news-and-events/people-and-opportunities/speakers/
-related:
-  pages:
-  - /news-and-events/events-and-archive/upcoming-events/
-  - /news-and-events/events-and-archive/cheri-blossoms/
-  - /news/
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
-navigation:
-  header:
-    category: News & Events
-    subcategory: Events & Archive
-    order: 4
+where-next:
+  url: /news-and-events/people-and-opportunities/speakers/
+related-pages:
+- url: /news-and-events/events-and-archive/upcoming-events/
+  description: A calendar of upcoming CHERI-related events, talks, workshops, and community sessions.
+  action: Read this page
+- url: /news-and-events/events-and-archive/cheri-blossoms/
+  description: Information about CHERI Blossoms Conference, including its purpose, audience, and current event details.
+  action: Read this page
+- url: /news-and-events/news-and-analysis/latest-news/
+  description: The latest CHERI Alliance and ecosystem announcements, presented with clear dates and sources.
+  action: Read this page
 ---
 
-# CHERITech Conference
+1. News &amp; Events
+2. Events &amp; Archive
+3. About CHERITech Conferences
+{: .source-breadcrumbs }
 
-Turning CHERI from research into deployed products requires solving complex engineering challenges across hardware, software, security, verification, and integration. Organised by the CHERI Alliance, CHERITech brings together the engineers, researchers, architects, and practitioners tackling those challenges and sharing what works.
+# About CHERITech Conferences
+{: id="page-hero-title" .page-hero-title }
 
-Designed for technical audiences, the event focuses on implementation, evaluation, and deployment. Talks, demonstrations, posters, and technical discussions connect processor and SoC development with operating systems, toolchains, runtimes, verification, and real-world product integration.
+The technical conference for the people building the future of CHERI-enabled systems.
+{: .page-hero-summary }
+
+CHERITech brings together the engineers, researchers, architects and practitioners building with CHERI to share progress, exchange practical experience and tackle the challenges involved in taking CHERI from research into real-world systems and products.
+
+Organised by the [CHERI Alliance](/organisations/cheri-alliance/), the conference goes deep into implementation, evaluation and deployment, connecting work across processors and SoCs, operating systems, toolchains, runtimes, verification and product integration.
+
+## From DSbD to the CHERI Alliance
+
+![CHERI stickers](/assets/events/Q5A1909.jpg){: .image-right }
+
+CHERITech originated as part of [UKRI’s Digital Security by Design (DSbD)](https://www.ukri.org/what-we-do/browse-our-areas-of-investment-and-support/digital-security-by-design/) programme, bringing the technical community together to share developments and experience around CHERI. The CHERI Alliance has now taken on the organisation of CHERITech, continuing that tradition while opening the conference to the growing international community developing and deploying CHERI technologies.
+
+CHERITech isn't just about listening to technical talks. Questions, discussions, demonstrations and networking are central to the event, giving participants opportunities to learn directly from one another, explore solutions to shared engineering challenges and make connections that can lead to new collaborations and business opportunities.
+
+Like CHERI Blossoms, **CHERITech is free to attend**, helping keep the event open to engineers and organisations from across industry, academia and the wider technical community, and encouraging the exchange of knowledge that can accelerate CHERI development and adoption.
 
 ## Technical focus
+{: id="technical-focus" }
 
 ### Hardware and platforms
+{: id="hardware-and-platforms" }
 
-Processor, microcontroller, SoC, FPGA, and architecture innovations that make CHERI capabilities available to system builders and product developers.
+Explore developments in processors, microcontrollers, SoCs, FPGAs and architectures that are making CHERI available to system builders and product developers.
 
 ### Software stacks
+{: id="software-stacks" }
 
-Operating systems, toolchains, language runtimes, libraries, frameworks, and applications adapted for capability-based computing.
+See how operating systems, toolchains, language runtimes, libraries, frameworks and applications are being adapted for capability-based computing, and hear practical experience from the people doing the work.
 
 ### Evidence and adoption
+{: id="evidence-and-adoption" }
 
-Performance analysis, formal verification, security evaluation, deployment experience, certification, and the practical path from prototype to production.
+Dig into performance, formal verification, security evaluation, deployment experience and certification, as well as the engineering journey from prototype towards production.
+
+### Demonstrations and technical exchange
+{: id="demonstrations-and-technical-exchange" }
+
+See CHERI technology in action through demonstrations and technical exhibits, ask questions of the people developing it, and use discussions and networking sessions to exchange experience across the hardware and software ecosystem.
+
+CHERITech is designed to help technical teams **learn from work already happening elsewhere**, find potential collaborators and partners, and identify opportunities to turn technical progress into real-world deployment.
 
 ## Upcoming CHERITech Conference
+{: id="directory-upcoming-cheritech-conference" }
 
-Open each event for current dates, venue information, calls for participation, and registration updates.
+![](/assets/events/cheritech26/408459d34c43-cheritech26.webp){: .image-full }
 
-<ul class="image-gallery record-gallery" markdown="block">
-<li markdown="block">
+Upcoming
+Conference
+{: .collection-card__labels }
 
-![CHERITech'26](/assets/events/cheritech26/408459d34c43-cheritech26.webp)
+12 to 13 November 2026
+SEMICON Europa, Munich, Germany
+{: .collection-card__meta }
 
-Upcoming Conference
-
-12 to 13 November 2026 SEMICON Europa, Munich, Germany
-
-### CHERITech'26
+### [CHERITech'26](/events/cheritech26/)
+{: .collection-card__title }
 
 CHERITech’26 will take place in Munich alongside Electronica / SEMICON Europa, one of the world’s largest electronics industry events!Hosted at the heart of the exhibi...
+{: .collection-card__summary }
 
-</li>
-</ul>
+View event
+{: .collection-card__link }
 
 ## CHERITech archive
+{: id="directory-cheritech-archive" }
 
-Past event pages preserve the technical programme and supporting material published by the Alliance.
+Explore previous CHERITech conferences, including technical programmes, speakers, presentations and recordings, and follow the evolution of CHERI implementations across hardware and software.
 
-<ul class="image-gallery record-gallery" markdown="block">
-<li markdown="block">
+![](/assets/events/cheritech25-reloaded/7bce58279add-cheritech25-reloaded.webp){: .image-full }
 
-![CHERITech'25 Reloaded](/assets/events/cheritech25-reloaded/7bce58279add-cheritech25-reloaded.webp)
+Past
+Online event
+{: .collection-card__labels }
 
-Past Online event
+4 December 2025
+Online
+{: .collection-card__meta }
 
-4 December 2025 Online
+### [CHERITech'25 Reloaded](/events/cheritech25-reloaded/)
+{: .collection-card__title }
 
-### CHERITech'25 Reloaded
+View event archive
+{: .collection-card__link }
 
-CHERITech’25 Reloaded took place online on 4th December 2025. Participants joined us for live Q&A sessions with speakers from the main CHERITech’25 conference and revi...
+![](/assets/events/cheritech25/0e6d3180c4d1-cheritech25.webp){: .image-full }
 
-</li>
-<li markdown="block">
+Past
+Conference
+{: .collection-card__labels }
 
-![CHERITech'25 Conference](/assets/events/cheritech25/0e6d3180c4d1-cheritech25.webp)
+14 November 2025
+Sister, Manchester, UK
+{: .collection-card__meta }
 
-Past Conference
+### [CHERITech'25 Conference](/events/cheritech25/)
+{: .collection-card__title }
 
-14 November 2025 Sister, Manchester, UK
+View event archive
+{: .collection-card__link }
 
-### CHERITech'25 Conference
+## Where next
+{: .where-next-title }
 
-CHERITech’25 brought together researchers, technologists, cybersecurity experts, and product developers for a dynamic exploration of Digital Security by Design. Now un...
+### [Speakers](/news-and-events/people-and-opportunities/speakers/)
+{: .where-next-card-title }
 
-</li>
-</ul>
+
+[A directory of speakers available for CHERI-related events, briefings, and discussions.](/news-and-events/people-and-opportunities/speakers/)
+{: .where-next-summary }
+
+
+[Continue](/news-and-events/people-and-opportunities/speakers/)
+{: .source-card-label }
+
+## Related content
+{: .related-pages-title }
+
+### [Upcoming Events](/news-and-events/events-and-archive/upcoming-events/)
+{: .related-pages-item-title }
+
+
+[A calendar of upcoming CHERI-related events, talks, workshops, and community sessions.](/news-and-events/events-and-archive/upcoming-events/)
+{: .related-pages-item-summary }
+
+
+[Read this page](/news-and-events/events-and-archive/upcoming-events/)
+{: .source-card-label }
+
+
+### [CHERI Blossoms Conference](/news-and-events/events-and-archive/cheri-blossoms/)
+{: .related-pages-item-title }
+
+
+[Information about CHERI Blossoms Conference, including its purpose, audience, and current event details.](/news-and-events/events-and-archive/cheri-blossoms/)
+{: .related-pages-item-summary }
+
+
+[Read this page](/news-and-events/events-and-archive/cheri-blossoms/)
+{: .source-card-label }
+
+
+### [Latest News](/news-and-events/news-and-analysis/latest-news/)
+{: .related-pages-item-title }
+
+
+[The latest CHERI Alliance and ecosystem announcements, presented with clear dates and sources.](/news-and-events/news-and-analysis/latest-news/)
+{: .related-pages-item-summary }
+
+
+[Read this page](/news-and-events/news-and-analysis/latest-news/)
+{: .source-card-label }

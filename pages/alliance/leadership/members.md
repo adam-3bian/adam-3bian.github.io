@@ -1,28 +1,21 @@
 ---
 title: Members
 permalink: /alliance/leadership/members/
-layout: list
-listing:
-  collection: organisations
-  status: null
-  role: null
-navigation:
-  header:
-    category: CHERI Alliance
-    subcategory: Leadership
-    order: 1
-    additional:
-    - category: News & Events
-      subcategory: People & Opportunities
-      order: 2
-      label: Alliance Members
-  footer:
-    category: CHERI Alliance
-    order: 2
+layout: members
 ---
 
+1. Alliance
+2. Leadership
+3. Members
+{: .source-breadcrumbs }
+
 # Members
+{: id="page-hero-title" .page-hero-title }
 
 Alliance members contribute perspectives from processor design, software, research, product engineering, government, infrastructure, and open-source communities.
+{: .page-hero-summary }
+
+## All members
+{: id="directory-all-members" }
 
 Founding members are marked on their cards, with the current membership tier shown on every profile.

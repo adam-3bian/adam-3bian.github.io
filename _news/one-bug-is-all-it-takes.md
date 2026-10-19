@@ -1,26 +1,31 @@
 ---
 title: One Bug is All It Takes
-image_url: /assets/news/one-bug-is-all-it-takes/90741c3e8a15-hero.jpg
-published_date: '2026-05-04'
-authors:
-- adam-finney
-related:
-  working-groups: []
-  organisations: []
-  hardware: []
-  software:
-  - freebsd
-  academic-papers: []
+date: '2026-05-04T16:06:57+01:00'
+authors: [adam-finney]
 ---
 
-# One Bug is All It Takes
+1. News &amp; Events
+2. News &amp; Analysis
+3. One Bug is All It Takes
+{: .source-breadcrumbs }
 
-In 2025 alone, global cybercrime costs reached an estimated $1.2 billion every minute, with projections rising to $1.8 billion per minute by 2029. Just seven years earlier, the figure was “only” $100 million per minute—already enormous, but now…
+# One Bug is All It Takes
+{: id="page-hero-title" .page-hero-title }
+
+*4 May 2026*{: .source-date }
+*CHERI Alliance news*{: .collection-tag }
+*Ecosystem*{: .collection-tag }
+{: .collection-detail__metadata }
+
+![A red bug on a computer screen being focused by a magnifying glass](/assets/news/one-bug-is-all-it-takes/90741c3e8a15-hero.jpg){: .image-full }
+{: .collection-detail__lead-image }
+
+Adam Finney – **CHERI Alliance**
 
 This article is part of a series of blogs published after the announcement of Mythos vulnerabilities’ exploitation capabilities. The views from other experts on this topic are:
 
-- AI has compressed the attack timeline – [Mike Eftimakis](/people/mike-eftimakis/)
-- CHERI memory safety mitigates LLM-discovered vulnerability in [FreeBSD](/software/freebsd/) – [Brooks Davis](/people/brooks-davis/)
+- [AI has compressed the attack timeline – Mike Eftimakis](/news/ai-has-compressed-the-attack-timeline/)
+- [CHERI memory safety mitigates LLM-discovered vulnerability in FreeBSD – Brooks Davis](/news/cheri-memory-safety-mitigates-llm-discovered-vulnerability-in-freebsd/)
 
 For many years, automated tools that scan software for defects have played a central role in improving system security. A major early effort in this space was a U.S. Department of Homeland Security funded initiative that used Coverity’s static analysis technology to examine widely used open source software projects. This work analysed over 150 projects, including 53 in detail, and led to the discovery and remediation of approximately 6,000 defects across those codebases. It demonstrated that large numbers of previously unknown flaws existed even in widely deployed software, many of which represented potential security risks.
 
@@ -40,13 +45,12 @@ There is also a fundamental asymmetry between defenders and attackers. Developer
 
 Further reading:
 
-- AI has compressed the attack timeline
-- LinkedIn article from [David Chisnall](/people/david-chisnall/)
+- [AI has compressed the attack timeline](/news/ai-has-compressed-the-attack-timeline/)
+- [LinkedIn article from David Chisnall](https://www.linkedin.com/feed/update/urn:li:activity:7447564843349430272/)
+- [https://arxiv.org/pdf/2101.08832](https://arxiv.org/pdf/2101.08832)
+- [https://download.101com.com/pub/gcn/newspics/Coverity\_OpenSourceReport2008.pdf](https://download.101com.com/pub/gcn/newspics/Coverity_OpenSourceReport2008.pdf)
+- [https://www.theregister.com/2009/09/25/open\_source\_code\_audit](https://www.theregister.com/2009/09/25/open_source_code_audit)
+- [https://www.cs.cmu.edu/~aldrich/courses/654-sp07/tools/cure-coverity-06.pdf](https://www.cs.cmu.edu/~aldrich/courses/654-sp07/tools/cure-coverity-06.pdf)
 
-<https://arxiv.org/pdf/2101.08832>
-
-<https://download.101com.com/pub/gcn/newspics/Coverity_OpenSourceReport2008.pdf>
-
-<https://www.theregister.com/2009/09/25/open_source_code_audit>
-
-<https://www.cs.cmu.edu/\~aldrich/courses/654-sp07/tools/cure-coverity-06.pdf>
+[Back to Latest News](/news-and-events/news-and-analysis/latest-news/)
+{: .collection-detail__back }

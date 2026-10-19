@@ -1,32 +1,19 @@
 ---
 title: Answers
 permalink: /reference/CHERI-seL4-Exercises/exercises/cheri-allocator/answers.html
-summary: null
-image_url: null
-updated_date: null
-parent: /CHERI-seL4-Exercises/
-next_page_url: null
-related:
-  pages: []
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
-# Answers
+# [Answers](/reference/CHERI-seL4-Exercises/exercises/cheri-allocator/answers.html#answers)
+{: id="answers" }
 
-## Introducing heap-allocator bounds
+## [Introducing heap-allocator bounds](/reference/CHERI-seL4-Exercises/exercises/cheri-allocator/answers.html#introducing-heap-allocator-bounds)
+{: id="introducing-heap-allocator-bounds" }
 
-2. QEMU and GDB will show a CHERI tag violation resulting from memset() overwriting the a\_next field in the second allocation entry, which is tripped over by a later call to alloc\_allocate():
+2. QEMU and GDB will show a CHERI tag violation resulting from `memset()` overwriting
+   the `a_next` field in the second allocation entry, which is tripped over by
+   a later call to `alloc_allocate()`:
 
-```text
+~~~
 Allocator initialised
 Allocating memory
 Allocation returned 00000000000000000000000000203340
@@ -98,22 +85,24 @@ Dump of assembler code for function init:
 $1 = (struct alloc_storage *) 0x4141414141414141 [I:0101:C:r...a...:0:.:0x41414141400a0000-0x4141414140a80000]
 (gdb) info reg $ca0
 ca0            0x41414141414141414141414141414141       0x4141414141414141 [I:0101:C:r...a...:0:.:0x41414141400a0000-0x4141414140a80000]
-```
+~~~
 
-3. When compiling for CHERI C, use cheri\_bounds\_set() to set bounds on the returned pointer:
+3. When compiling for CHERI C, use `cheri_bounds_set()` to set bounds on the
+   returned pointer:
 
-```text
+~~~
         /* Return pointer to allocated memory. */
 #ifdef __CHERI_PURE_CAPABILITY__
         return (cheri_bounds_set(alloc->a_bytes, ALLOC_SIZE));
 #else
         return (alloc->a_bytes);
 #endif
-```
+~~~
 
-4. With this change, the memset() call in init() triggers a bounds violation exception on overflow:
+4. With this change, the `memset()` call in `init()` triggers a bounds
+   violation exception on overflow:
 
-```text
+~~~
 # run_qemu ./cheri-allocator
 ...
 Allocator initialised
@@ -159,13 +148,15 @@ ctp : 0x0
 MON|ERROR: CHERI Security Violation: ip=0x0000000000202018  fault_addr=0x00000000002033c0  fsr=0x0000000000000814  (data fault)
 MON|ERROR: description of fault: Bounds violation
 MON|ERROR: CHERI fault type: CHERI data fault due to load, store or AMO
-```
+~~~
 
-## Reaching allocator metadata
+## [Reaching allocator metadata](/reference/CHERI-seL4-Exercises/exercises/cheri-allocator/answers.html#reaching-allocator-metadata)
+{: id="reaching-allocator-metadata" }
 
-6. Following this change, alloc\_free() crashes with a bounds violation, due to reaching outside the bounds of the passed memory allocation:
+6. Following this change, `alloc_free()` crashes with a bounds violation,
+   due to reaching outside the bounds of the passed memory allocation:
 
-```text
+~~~
 # gdb ./cheri-allocator
 (gdb) break *0x000000000020018c # Faulting address (ip=...) extracted from a previous QEMU run
 Breakpoint 1 at 0x20018c: file cheri-allocator.c, line 105.
@@ -186,11 +177,15 @@ Breakpoint 1, alloc_free (ptr=0x203340 <alloc_array+16> [V:1111:C:rw.C.l..:1:.:0
 105             alloc->a_next = alloc_nextfree;
 (gdb) p alloc
 $1 = (struct alloc_storage *) 0x203330 <alloc_array> [V:1111:C:rw.C.l..:1:.:0x203340-0x2033c0]
-```
+~~~
 
-7. We need to create a new capability, derived from alloc\_array but with the address generated from pointer to the memory being freed. One way to do this is using the cheri\_address\_get() and cheri\_address\_set(), reading the address from one capability and setting it on the other:
+7. We need to create a new capability, derived from `alloc_array` but with the
+   address generated from pointer to the memory being freed.
+   One way to do this is using the `cheri_address_get()` and
+   `cheri_address_set()`, reading the address from one capability and setting
+   it on the other:
 
-```text
+~~~
 #ifdef __CHERI_PURE_CAPABILITY__
         /*
          * Generate a new pointer to the allocation that is derived from the
@@ -198,6 +193,7 @@ $1 = (struct alloc_storage *) 0x203330 <alloc_array> [V:1111:C:rw.C.l..:1:.:0x20
          */
         ptr = cheri_address_set(alloc_array, cheri_address_get(ptr));
 #endif
-```
+~~~
 
-Note that this is not a complete solution to providing spatial safety here: software could still accidentally pass an out-of-bounds pointer.
+Note that this is not a complete solution to providing spatial safety here:
+software could still accidentally pass an out-of-bounds pointer.

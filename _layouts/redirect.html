@@ -1,9 +1,19 @@
----
-layout: default
----
-{% assign destination = site.data.viewer.aliases[page.url] %}
-{% assign destination_record = site.data.page-map | where: 'url', destination | first %}
-<article data-content-route="{{ page.url | escape }}" data-collection="{{ page.collection | default: 'pages' | escape }}">
-  <h1>{{ page.title | escape }}</h1>
-  <p>This content is now available at <a href="{{ destination | relative_url }}">{{ destination_record.title | default: destination | escape }}</a>.</p>
-</article>
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' | escape }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex,follow">
+  <meta http-equiv="refresh" content="0;url={{ page.redirect | relative_url | escape }}">
+  <title>Page moved | {{ site.title | escape }}</title>
+  <link rel="canonical" href="{{ page.redirect | absolute_url | escape }}">
+  <script>
+    // Static refresh remains the no-JavaScript fallback. Preserve bookmarked
+    // fragments and query strings when the browser can carry them forward.
+    const destination = new URL({{ page.redirect | relative_url | jsonify }}, window.location.href);
+    if (!destination.search) destination.search = window.location.search;
+    if (!destination.hash) destination.hash = window.location.hash;
+    window.location.replace(destination.href);
+  </script>
+</head>
+<body><p>Page moved. <a href="{{ page.redirect | relative_url | escape }}">Continue to the CHERI Alliance</a>.</p></body>
+</html>

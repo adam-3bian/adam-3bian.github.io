@@ -1,72 +1,161 @@
 ---
 title: LLVM & Clang
-image_url: /assets/software/llvm-and-clang/placeholder.svg
-website_url: https://llvm.org/
-repository_urls:
-- https://github.com/CTSRD-CHERI/cheribuild
-type: null
-status: null
-related:
-  organisations: []
-  hardware:
-  - cheriot
-  - morello
-  software:
-  - cheribsd
-navigation:
-  header:
-    category: Build
-    subcategory: Resources
-    parent: software-ecosystem
-    order: 1
+where-next:
+  url: /software/rust/
+related-pages:
+- url: /software/cheribsd/
+  description: A complete CHERI operating-system environment built around an LLVM and Clang toolchain.
+  action: Read this page
+- url: /guides/choose-a-platform/
+  title: Choose a Platform
+  description: Compare platforms and the software stacks supplied for each development route.
+  action: Read this page
 ---
 
-# LLVM & Clang
+1. Build
+2. Software Ecosystem
+3. LLVM &amp; Clang
+{: .source-breadcrumbs }
 
-LLVM and Clang translate language pointers, calling conventions, bounds, permissions, and capability operations into code for multiple CHERI targets.
+# LLVM &amp; Clang
+{: id="page-hero-title" .page-hero-title }
 
-A processor can enforce capability bounds only when the software stack creates and preserves meaningful capabilities. The compiler is where source-language pointers, object layouts, calls, and optimisations meet the CHERI architecture.
+Compile C and C++ software for CHERI-enabled platforms.
+{: .page-hero-summary }
 
-LLVM and Clang provide the main compiler infrastructure used across [CheriBSD](/software/cheribsd/), [Morello](/hardware/morello/), CHERI-RISC-V, and [CHERIoT](/hardware/cheriot/).
+LLVM and Clang provide the compiler foundation for much of the CHERI software ecosystem. They translate ordinary language-level operations, such as accessing objects through pointers, into code that uses CHERI capabilities and the protection they provide.
 
-## Clang and the source-language model
+Clang is the C and C++ compiler developers interact with, while LLVM provides the underlying compiler infrastructure and code generation.
 
-Clang applies the language and application binary interface rules for a target. In CHERI environments, those rules can cover capability-based pointers, hybrid and pure-capability calling conventions, target-specific address spaces, bounds creation, capability intrinsics, and diagnostics for source assumptions that do not carry across cleanly.
+## What changes when compiling for CHERI?
+{: id="what-changes-when-compiling-for-cheri" }
 
-The exact model depends on the platform. Morello, application-class CHERI-RISC-V, and CHERIoT do not share one universal target configuration or ABI.
+CHERI hardware uses capabilities to control how software accesses memory. The compiler plays an important role in creating and preserving those capabilities as it translates source code into machine code.
 
-## LLVM and code generation
+Depending on the target platform, Clang can support:
 
-LLVM carries pointer and capability information through its intermediate representation and target back ends. CHERI support affects instruction selection, registers, relocations, object formats, linking, and the preservation of capability metadata through optimisation.
+- capability-based pointers
+- hybrid and pure-capability software
+- capability bounds and permissions
+- CHERI-specific operations and intrinsics
+- calling conventions and application binary interfaces (ABIs)
+- diagnostics that identify assumptions in existing code that may not work correctly with capabilities
 
-Capability representations can be wider than their virtual address range and can include protected tag state outside ordinary program memory. These properties are reflected in target-specific compiler, linker, and loader work.
+In many cases, existing C and C++ software can be compiled for CHERI with relatively small changes, while code that makes assumptions about pointers, memory layouts or integer conversions may require more attention.
 
-## Ecosystem routes
+## Hybrid and pure-capability builds
+{: id="hybrid-and-pure-capability-builds" }
+
+CHERI platforms can support different ways of introducing capabilities into existing software.
+
+In a hybrid environment, conventional pointers can coexist with CHERI capabilities. This can be useful when bringing up platforms and progressively adapting existing software.
+
+In a pure-capability environment, pointers are represented as CHERI capabilities throughout applications and supporting software, providing stronger and more systematic enforcement.
+
+The available models and ABIs depend on the target platform. Morello, application-class CHERI-RISC-V and CHERIoT therefore use toolchains configured for their respective architectures and software environments.
+
+## CHERI toolchain routes
+{: id="cheri-toolchain-routes" }
 
 ### CheriBSD and CHERI-RISC-V
+{: id="cheribsd-and-cheri-risc-v" }
 
-The cheribuild environment brings together a compatible LLVM and Clang toolchain, system headers, linker, QEMU, and CheriBSD image. It supports application-class CHERI-RISC-V work across hybrid and pure-capability software configurations.
+The `cheribuild` environment brings together a compatible LLVM and Clang toolchain, system headers, linker, QEMU, and CheriBSD image. It supports application-class CHERI-RISC-V work across hybrid and pure-capability software configurations.
 
 ### Morello
+{: id="morello" }
 
-Morello uses an Arm-targeted CHERI compiler and ABI. Its SDK and CheriBSD environment combine Morello-specific code generation with matching system software and firmware.
+Morello uses an Arm-based CHERI compiler and ABI together with its corresponding system software and platform support.
+
+The Morello software environment has been widely used to develop and port applications to CHERI and explore the transition between conventional and pure-capability software.
 
 ### CHERIoT
+{: id="cheriot" }
 
 The CHERIoT SDK uses a Clang-based toolchain aligned with the CHERIoT instruction set, RTOS, compartment model, linker, and firmware build system.
 
 ### Mainline LLVM
+{: id="mainline-llvm" }
 
-Parts of the wider CHERI implementation are present in upstream LLVM, while complete target support can still depend on project branches and platform release processes. The boundary between upstream infrastructure and platform-specific code continues to develop.
+Parts of CHERI support are already present in upstream LLVM, while complete target support can still depend on platform-specific branches and releases. A key focus for the CHERI Alliance is bringing this work together, driving convergence across CHERI platforms and helping move towards common, upstream LLVM support.
 
-## Compatibility and current boundaries
+## Bounds and compatibility
+{: id="bounds-and-compatibility" }
 
-CHERI compiler support is tied to an architecture, ABI, system headers, runtime, loader, and operating-system environment. A binary built for one combination is not automatically interchangeable with another.
+CHERI compilers can use information about objects and allocations to create capabilities with appropriate bounds and permissions.
 
-Bounds precision is also a policy choice rather than a single property of the compiler. Different environments may bound complete allocations, language objects, arrays, or selected subobjects with different compatibility implications.
+How tightly those bounds are applied can vary between platforms and configurations, balancing stronger protection with compatibility requirements. As a result, compiler version, target architecture, ABI and software environment all matter when building or comparing CHERI software.
+
+Code that assumes that pointers and integers have the same representation, or relies heavily on particular object layouts or pointer manipulation, may need additional attention when moving to a CHERI target.
+
+## Getting started
+{: id="getting-started" }
+
+For most developers, there is no need to build or understand the CHERI compiler infrastructure itself. Start with the toolchain supplied or recommended for your chosen platform.
+
+For application-class CHERI development, `cheribuild` provides an integrated route to LLVM/Clang, QEMU and CheriBSD. For embedded development, use the toolchain and SDK associated with the target platform, such as CHERIoT.
+
+From there, the next step is to [compile existing software](/guides/port-existing-software/), understand any compatibility warnings or errors, and progressively adapt the code to make effective use of CHERI's protection.
+
 
 ## Project links
+{: id="project-links" }
 
-- [cheribuild](https://github.com/CTSRD-CHERI/cheribuild)
+- [`cheribuild`](https://github.com/CTSRD-CHERI/cheribuild)
 - [LLVM project](https://llvm.org/)
 - [CHERIoT Programmer’s Guide](https://cheriot.org/book/)
+
+## Where next
+{: .where-next-title }
+
+### [Rust](/software/rust/)
+{: .where-next-card-title }
+
+
+
+
+
+[Rust support combines language-level safety with capability-aware targets and native interfaces.](/software/rust/)
+{: .where-next-summary }
+
+
+
+[Continue](/software/rust/)
+{: .source-card-label }
+
+## Related content
+{: .related-pages-title }
+
+### [CheriBSD](/software/cheribsd/)
+{: .related-pages-item-title }
+
+
+
+
+
+[A complete CHERI operating-system environment built around an LLVM and Clang toolchain.](/software/cheribsd/)
+{: .related-pages-item-summary }
+
+
+
+[Read this page](/software/cheribsd/)
+{: .source-card-label }
+
+
+
+
+
+### [Choose a Platform](/guides/choose-a-platform/)
+{: .related-pages-item-title }
+
+
+
+
+
+[Compare platforms and the software stacks supplied for each development route.](/guides/choose-a-platform/)
+{: .related-pages-item-summary }
+
+
+
+[Read this page](/guides/choose-a-platform/)
+{: .source-card-label }

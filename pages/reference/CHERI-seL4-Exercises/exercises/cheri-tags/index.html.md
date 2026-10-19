@@ -1,57 +1,45 @@
 ---
 title: Demonstrate CHERI Tag Protection
 permalink: /reference/CHERI-seL4-Exercises/exercises/cheri-tags/index.html
-summary: null
-image_url: null
-updated_date: null
-parent: /CHERI-seL4-Exercises/
-next_page_url: null
-related:
-  pages: []
-  people: []
-  organisations: []
-  working-groups: []
-  news: []
-  events: []
-  academic-papers: []
-  hardware: []
-  software: []
-  guides: []
-  policies: []
 ---
 
-# Demonstrate CHERI Tag Protection
+# [Demonstrate CHERI Tag Protection](/reference/CHERI-seL4-Exercises/exercises/cheri-tags/index.html#demonstrate-cheri-tag-protection)
+{: id="demonstrate-cheri-tag-protection" }
 
-This exercise demonstrates CHERI's capability provenance tags, in particular by showing that capabilities and their constituent bytes are subtly different things!
+This exercise demonstrates CHERI's *capability provenance tags*, in particular
+by showing that capabilities and their constituent bytes are subtly different
+things!
 
-Compile cheri-tags.c for the baseline architecture to the binary cheri-tags-baseline and for the CHERI-aware architecture to cheri-tags-cheri.
+1. Compile `cheri-tags.c` for the baseline architecture to the binary
+   `cheri-tags-baseline` and for the CHERI-aware architecture to
+   `cheri-tags-cheri`.
+2. Run both programs and observe the output.
+3. Inspect the error thrown to the CHERI program, and the registers dump.
+4. Examine the disassembly of the construction of `q`,
 
-Run both programs and observe the output.
+   ~~~
+   uint8_t *q = (uint8_t*)(((uintptr_t)p.ptr) & ~0xFF);
+   ~~~
 
-Inspect the error thrown to the CHERI program, and the registers dump.
+   and the byte-wise mutation of `p.ptr` to construct `r`,
 
-Examine the disassembly of the construction of q,
+   ~~~
+   p.bytes[0] = 0;
+   uint8_t *r = p.ptr;
+   ~~~
 
-`uint8_t *q = (uint8_t*)(((uintptr_t)p.ptr) & ~0xFF);`
+   in both baseline and CHERI-enabled programs.
 
-and the byte-wise mutation of p.ptr to construct r,
+   What stands out?
+5. Given that `q` and `r` appear to have identical byte representation in
+   memory, why does the CHERI version crash when dereferencing `r`?
 
-```text
-p.bytes[0] = 0;
-uint8_t *r = p.ptr;
-```
+## [Source](/reference/CHERI-seL4-Exercises/exercises/cheri-tags/index.html#source)
+{: id="source" }
 
-in both baseline and CHERI-enabled programs.
+**cheri-tags.c**
 
-What stands out?
-
-Given that q and r appear to have identical byte representation in memory, why does the CHERI version crash when dereferencing r?
-
-## Source
-
-cheri-tags.c
-
-```c
+~~~C
 /*
  * SPDX-License-Identifier: BSD-2-Clause
  * Copyright (c) 2022 Microsoft Corporation
@@ -100,4 +88,4 @@ init(void)
 }
 
 void notified(void){}
-```
+~~~

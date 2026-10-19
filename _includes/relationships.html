@@ -1,0 +1,68 @@
+{% assign record_id = page.slug | default: page.basename %}
+{% assign related_people = '' | split: ',' %}
+{% assign related_events = '' | split: ',' %}
+{% assign related_papers = '' | split: ',' %}
+{% assign related_news = '' | split: ',' %}
+{% assign related_orgs = '' | split: ',' %}
+{% assign linked_speakers = '' | split: ',' %}
+{% assign linked_authors = '' | split: ',' %}
+{% for person_id in page.speakers %}
+  {% assign person = site.people | where: 'slug', person_id | first %}
+  {% if person %}{% assign linked_speakers = linked_speakers | push: person %}{% endif %}
+{% endfor %}
+{% for person_id in page.authors %}
+  {% assign person = site.people | where: 'slug', person_id | first %}
+  {% if person %}{% assign linked_authors = linked_authors | push: person %}{% endif %}
+{% endfor %}
+{% for person in site.people %}
+  {% if page.collection == 'organisations' and person.organization contains record_id %}{% assign related_people = related_people | push: person %}{% endif %}
+{% endfor %}
+{% for org in site.organisations %}
+  {% if page.organization contains org.slug %}{% assign related_orgs = related_orgs | push: org %}{% endif %}
+{% endfor %}
+{% if page.collection == 'people' %}
+  {% for event in site.events %}{% if event.speakers contains record_id %}{% assign related_events = related_events | push: event %}{% endif %}{% endfor %}
+  {% for paper in site.papers %}{% if paper.authors contains record_id %}{% assign related_papers = related_papers | push: paper %}{% endif %}{% endfor %}
+  {% for story in site.news %}{% if story.alternate != true and story.authors contains record_id %}{% assign related_news = related_news | push: story %}{% endif %}{% endfor %}
+{% endif %}
+{% if related_orgs.size > 0 %}
+<section class="related-content" data-relationship="organization" aria-labelledby="organizations-title">
+  <h2 id="organizations-title">Organisations</h2>
+  {% include listing.html items=related_orgs label="Organisations" kind="organisations" heading="h3" compact=true columns=3 %}
+</section>{% endif %}
+{% if linked_speakers.size > 0 and page.source-speakers != true %}
+<section class="related-content" data-relationship="speakers" aria-labelledby="speakers-title">
+  <h2 id="speakers-title">Speakers</h2>
+  {% include listing.html items=linked_speakers label="Speakers" kind="people" heading="h3" compact=true columns=3 %}
+</section>{% endif %}
+{% if linked_authors.size > 0 %}
+<section class="related-content" data-relationship="authors" aria-labelledby="authors-title">
+  <h2 id="authors-title">Authors</h2>
+  {% include listing.html items=linked_authors label="Authors" kind="people" heading="h3" compact=true columns=3 %}
+</section>{% endif %}
+{% if related_events.size > 0 %}
+<section class="related-content" data-relationship="events" aria-labelledby="events-title">
+  <h2 id="events-title">Events</h2>
+  {% include chronological-items.html items=related_events kind='events' %}
+  {% include listing.html items=chronological_items label="Events" kind="events" heading="h3" action="View event" columns=3 %}
+</section>{% endif %}
+{% if related_papers.size > 0 %}
+<section class="related-content" data-relationship="papers" aria-labelledby="papers-title">
+  <h2 id="papers-title">Publications</h2>
+  {% include listing.html items=related_papers label="Publications" kind="papers" heading="h3" compact=true columns=2 %}
+</section>{% endif %}
+{% if related_people.size > 0 %}
+<section class="related-content" data-relationship="people" aria-labelledby="people-title">
+  <h2 id="people-title">People</h2>
+  {% include listing.html items=related_people label="People" kind="people" heading="h3" compact=true columns=3 %}
+</section>{% endif %}
+{% if related_news.size > 0 %}
+<section class="related-content" data-relationship="news" aria-labelledby="news-title">
+  <h2 id="news-title">News articles</h2>
+  {% include chronological-items.html items=related_news kind='news' %}
+  {% include listing.html items=chronological_items label="News articles" kind="news" heading="h3" action="Read article" columns=3 %}
+</section>{% endif %}
+{% if site.data['governing-board'] contains record_id and page.collection == 'people' %}
+<section class="related-content" data-relationship="governing-board" aria-labelledby="board-title">
+  <h2 id="board-title">Governing board</h2><p><a href="{{ '/alliance/leadership/governing-board/' | relative_url }}">View the Governing Board</a></p>
+</section>{% endif %}
