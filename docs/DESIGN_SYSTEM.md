@@ -117,6 +117,8 @@ All 84 menu links, labels, groups, destinations and ordering come from the uncha
 
 List/Grid controls retain one record DOM, search, filters, sorting, result counts and persistence. Glossary and slider behaviour remain progressive and respect reduced motion. Navigation initializes immediately after its preloaded header script, with a short pending state that prevents the large fallback menu flashing during parsing. Script failure clears that state immediately, and a four-second timeout provides a second recovery path. With JavaScript disabled, no pending state is set and the native links stay visible. Catalogue enhancement runs beside its directory, selects the requested or saved view before records paint, and reserves toolbar space while enhancement completes; Poppins heading and navigation weights are preloaded from the existing local assets. These placement changes reduce initial layout shifts without hiding unenhanced content.
 
+Directory fields and view controls use scalable minimum heights rather than fixed heights. Their padding and text must fit when browser text is enlarged to 200%; filter widths can grow and wrap onto another row. The search icon is vertically centred independently of the input's line height.
+
 Contact/newsletter forms still submit natively when front matter supplies an action. Without one, the published-service fallback remains honest and usable. Presentation tests must not send real messages or invent endpoints.
 
 ## Verification and references

@@ -39,7 +39,7 @@ def check_disclosures(page, width):
     if hamburger.is_visible():
         hamburger.click()
     roots = page.locator("#primary-navigation > ul > li > .submenu-toggle")
-    for trigger in roots.all():
+    for index, trigger in enumerate(roots.all()):
         assert trigger.get_attribute("aria-expanded") == "false"
         trigger.hover()
         assert trigger.get_attribute("aria-expanded") == "false", "Hover must not open navigation"
@@ -65,9 +65,15 @@ def check_disclosures(page, width):
         trigger.focus()
         # Establish real keyboard traversal after the pointer checks. Calling
         # focus() on the already mouse-focused button is not a keyboard action.
-        page.keyboard.press("Shift+Tab")
-        page.keyboard.press("Tab")
-        assert trigger.evaluate("e=>e===document.activeElement")
+        # Stay within adjacent root buttons. Leaving the header deliberately
+        # closes mobile navigation; browsers also differ in whether Tab visits
+        # the preceding logo link by default.
+        page.keyboard.press("Tab" if index == 0 else "Shift+Tab")
+        page.keyboard.press("Shift+Tab" if index == 0 else "Tab")
+        assert trigger.evaluate("e=>e===document.activeElement"), (
+            width, trigger.inner_text(), "Tab return",
+            page.evaluate("({tag:document.activeElement.tagName,id:document.activeElement.id,text:document.activeElement.textContent.slice(0,80)})"),
+        )
         assert trigger.evaluate("e=>getComputedStyle(e).outlineStyle") != "none", (width, trigger.inner_text(), "Tab focus")
         page.keyboard.press("Enter")
         assert trigger.get_attribute("aria-expanded") == "true"
@@ -155,6 +161,13 @@ with sync_playwright() as playwright:
             page.add_style_tag(content="html { font-size: 200%; }")
             ready(page)
             assert not page.evaluate("document.documentElement.scrollWidth > innerWidth + 1"), (engine, route, "200% text")
+            controls = page.locator(".catalog-toolbar input,.catalog-toolbar select")
+            assert controls.evaluate_all("""nodes=>nodes.every(e=>{
+              const s=getComputedStyle(e);
+              const available=e.clientHeight-parseFloat(s.paddingTop)-parseFloat(s.paddingBottom);
+              const line=parseFloat(s.lineHeight)||parseFloat(s.fontSize)*1.2;
+              return available+1>=line && e.scrollHeight<=e.clientHeight+1;
+            })"""), (engine, route, "200% control text is clipped")
         page.close()
         # Tap is independently exercised; mouse hover tests cannot stand in for touch.
         context = browser.new_context(has_touch=True, viewport={"width": 390, "height": 844})
