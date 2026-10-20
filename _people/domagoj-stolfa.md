@@ -5,7 +5,6 @@ organization:
 - university-of-cambridge
 speaker: true
 summary: Domagoj Stolfa is a researcher currently working at Capabilities Limited and University of Cambridge.
-organization_label: Capabilities Limited, University of Cambridge
 thumbnail:
   src: /assets/people/domagoj-stolfa/98a36e03596d-portrait.png
   alt: Domagoj Stolfa
@@ -18,7 +17,6 @@ links:
 - label: LinkedIn
   url: https://www.linkedin.com/in/domagoj-stolfa-4432a1347/
   kind: profile
-has_talks: true
 ---
 
 ## Biography

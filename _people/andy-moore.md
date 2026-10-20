@@ -4,7 +4,6 @@ organization:
 - risc-v-international
 speaker: true
 summary: Andy Moore drives awareness and adoption of RISC‑V across its global member ecosystem.
-organization_label: RISC-V International
 thumbnail:
   src: /assets/people/andy-moore/6a5983cbf294-portrait.jpg
   alt: Andy Moore
@@ -17,7 +16,6 @@ links:
 - label: LinkedIn
   url: https://www.linkedin.com/in/andrew-moore-7bb19b161
   kind: profile
-has_talks: true
 ---
 
 ## Biography

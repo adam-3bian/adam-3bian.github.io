@@ -5,7 +5,6 @@ organization:
 speaker: true
 summary: Tariq Kurd has been involved in CPU architecture, design, and verification for over 25 years, primarily
   in the embedded field.
-organization_label: Codasip
 thumbnail:
   src: /assets/people/tariq-kurd/74bca1b40e3d-portrait.jpg
   alt: Tariq Kurd
@@ -18,7 +17,6 @@ links:
 - label: LinkedIn
   url: https://www.linkedin.com/in/tariq-kurd-8ab0011/
   kind: profile
-has_talks: true
 ---
 
 ## Biography

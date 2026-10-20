@@ -6,7 +6,6 @@ speaker: true
 summary: Adam Finney is a CHERI technologist with over 20 years of systems experience, and a key driver of CHERI
   adoption.
 board_role: Community representative
-organization_label: CHERI Alliance
 thumbnail:
   src: /assets/people/adam-finney/4600c140bf-portrait.jpg
   alt: Adam Finney
@@ -19,7 +18,6 @@ links:
 - label: Back to the Governing Board
   url: /alliance/leadership/governing-board/
   kind: navigation
-has_talks: true
 ---
 
 ## Biography

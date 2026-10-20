@@ -5,7 +5,6 @@ organization:
 speaker: true
 summary: Manu Ravishankar is a Principal Consultant specialising in innovation strategy, programme design and technology
   commercialisation.
-organization_label: PA Consulting
 thumbnail:
   src: /assets/people/manu-ravishankar/80040a1a9011-portrait.jpg
   alt: Manu Ravishankar
@@ -18,7 +17,6 @@ links:
 - label: LinkedIn
   url: https://www.linkedin.com/in/manu-ravishankar-8a373734/
   kind: profile
-has_talks: true
 ---
 
 ## Biography

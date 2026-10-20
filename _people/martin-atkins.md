@@ -5,7 +5,6 @@ organization:
 speaker: true
 summary: Martin is a software consultant with over 35 years of experience in research, and commercial development
   projects in the UK and abroad.
-organization_label: Mission Critical Applications Limited
 thumbnail:
   src: /assets/people/martin-atkins/da5663b66c77-portrait.png
   alt: Martin Atkins
@@ -18,7 +17,6 @@ links:
 - label: LinkedIn
   url: https://www.linkedin.com/in/martin-atkins-71aa185/
   kind: profile
-has_talks: true
 ---
 
 ## Biography

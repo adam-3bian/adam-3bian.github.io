@@ -1,48 +1,56 @@
 # Shared design rules
 
-The catalogue polish builds on `bcdd236`. Authored Markdown, record metadata, relationships and media remain the source of truth. Presentation belongs in layouts, includes, Sass and progressive enhancements.
+The CHERI catalogue uses a common container, type system and component vocabulary. Content is authored in Markdown; presentation belongs in layouts, includes, Sass and progressive enhancements.
 
-## Canvas and surfaces
+## Canvas, identity and typography
 
-`_sass/settings.scss` owns the light palette and the homepage's dark palette. Reading surfaces, headers, heroes, cards and footers use opaque fills. The original honeycomb tiles retain their native scale and repeat in the surrounding page canvas; the newsletter band also displays the motif behind its solid action card. Decorative artwork uses opacity; text-bearing surfaces do not use glass effects.
+The site container is 1264px including 20px mobile and 32px desktop gutters, giving a 1200px content area on wide screens. Header/footer surfaces span the viewport; their inner content aligns with the main canvas. News and ordinary pages use the full available width. Collection prose retains a comfortable measure.
 
-The page canvas has no outer card border or shadow. Its 1264px container includes shared 20px mobile and 32px desktop gutters, giving a 1200px content area on wide screens. Header/footer backgrounds span the viewport and their inner content uses the same container. News and ordinary pages fill the available content area. Collection-detail prose retains its readable width and optional facts/resources panel. Sparse records do not reserve an empty panel.
+Only `/` uses the dark palette and the original homepage composition. Its Poppins text treatment is retained. Other pages are light, with Poppins headings and a system sans-serif for body copy, controls and supporting facts. There is no theme toggle, stored theme preference or automatic system-theme selection.
 
-Only `/` receives `home-page` and the dark palette. Its hero, slider, three-panel and two-panel groups and onward sections retain their composition. Other routes stay light; there is no theme preference or toggle.
+Use solid reading surfaces, quiet borders and restrained brand accents. The original honeycomb remains visible in page gutters and the newsletter band. Do not apply translucency to reading surfaces or put a raised wrapper around every article. Common corner radii are 8px; utility controls and media frames may use 4–8px. Navigation hover/focus states provide emphasis without giving passive panels an interactive appearance.
 
-## Navigation cards and content panels
+Use the spacing tokens in `settings.scss`. Close spacing joins related facts; record spacing supports scanning; section spacing separates topics. Directory headers and toolbars are compact. Breadcrumb list items have their own compact rhythm instead of inheriting full menu-row heights.
 
-| Component | Markup and behaviour | Appearance |
-| --- | --- | --- |
-| Record/destination card | A single `a.catalog-card.navigation-card` with a real `href`. The whole card is the link. | Opaque surface, modest border/radius, subtle resting shadow, stronger border/shadow and underlined title on hover/focus. |
-| Large action or slide | A single `a.card` with a real `href`. Existing action/slider labels remain intact. | The same border/radius/focus language, with padding appropriate to the larger composition. |
-| Multi-link editorial panel | `section.content-panel.content`, containing independent native links. | Quiet secondary surface and border, no raised shadow, pointer cursor or whole-panel hover state. |
-| Product entry without a destination | `article.catalog-card.content-panel`, without a fabricated link or action. | Quiet panel treatment within the existing list/grid geometry. |
-| Talks | `li.content-panel` containing the event and individual resource links. | Quiet secondary surface; the row is passive and each action is an independent link. |
-| Facts/resources | A semantic definition list and labelled resource links inside compact panels. | Borders and spacing provide structure; the panels do not suggest whole-panel interaction. |
+## Cards, panels and annotations
 
-Do not put a link, button or input inside a navigation-card link. Do not use `onclick`, stretched-link overlays or `role="link"` on a passive panel. Every destination must remain an explicit native link. Do not delete independent links merely to make a whole panel clickable.
+| Component | Contract |
+| --- | --- |
+| Destination/record card | One native `a.catalog-card.navigation-card`, with a real destination and consistent hover/focus treatment. Title, image, useful facts and action cue; no descriptive excerpt. |
+| Compact List | Horizontal rows, quiet separators and dedicated action alignment on wide screens. Long titles wrap and rows grow as required. |
+| Grid | Responsive bordered cards with consistent padding, image frames and action positions. The same records and DOM serve both views. |
+| Editorial panel | A passive container with independent links. No pointer cursor or whole-panel hover effect. Full authored text remains available. |
+| Unlinked product | A passive content panel with its factual description and any authored links. Do not invent a destination. |
+| Context/resource annotation | Unique authored descriptions appear outside clickable cards as semantic resource notes. Embedded product notes stay in the same list item as their card so filtering keeps them together. |
 
-`_includes/card.html` is shared by collection directories, related records and resource listings. `_includes/section-cards.html` arranges complete authored sections into multi-link panels. Use these shared components instead of copying card markup into Markdown.
+Do not nest interactive controls or use stretched-link overlays, `onclick` containers or duplicated hidden card sets. Preserve all existing destinations and actions. Summaries remain canonical detail introductions and searchable data even when cards do not display them.
 
-List and Grid use the same records and DOM. List cards reserve a dedicated action area on wide screens; mobile actions follow the summary. Grid cards keep their actions aligned at the foot of the content. Long titles wrap; missing images do not produce placeholders. Logos and diagrams use `contain`, while suitable photographs retain their existing crop settings.
+`card.html` supplies shared record cards. `listing-notes.html` preserves annotations that differ from the destination's existing introduction/body. `section-cards.html` arranges complete authored multi-link sections; these remain editorial panels. Homepage slides retain their authored promotional content.
 
-## Type, spacing and controls
+## Image geometry
 
-Use the existing Poppins family and spacing scale from `settings.scss`. Titles are compact outside the homepage. Card summaries and metadata have distinct, readable sizes; facts labels remain quieter than their values. Keep prose, tables, citations, code and editorial images intact.
+People use square 1:1 frames with modest corners: 56–64px in list rows, 104px in grids, 176px in desktop detail headers and 80px on mobile. Portraits use `cover` and retain any existing crop-position setting. Mobile portrait headers use a grid so the introduction starts below the image rather than overlapping it.
 
-Shared surfaces use a 12px radius; inputs and buttons use 8px. Navigation cards use the resting/hover shadow tokens. Passive panels and facts use borders rather than the navigation-card shadow. Keep visible focus outlines outside the card boundary, and preserve native link underlines in prose and editorial panels.
+Organisation marks use an opaque landscape frame, centred with `contain` and internal padding. List frames are 120×60px on desktop and 88×44px on mobile. Grid frames have the same 256px maximum width and 112px height across logos. Detail frames are 260×130px on desktop and 192×96px on mobile. Square marks remain centred in these landscape frames. Intrinsic image dimensions do not determine frame widths.
 
-Controls use at least 44px height. Glossary index links and permalink controls also have 44px targets. Inline prose links keep their natural typography. The desktop menu starts at the shared 1000px navigation breakpoint; its `▼`/`▲` indicators remain decorative and follow `aria-expanded`. Reduced-motion preferences disable card transitions and the existing carousel autoplay.
+Hardware diagrams and product artwork use `contain`; editorial images retain their useful proportions. Missing images do not produce placeholders or empty media columns. Keep image source paths, alt text and useful intrinsic dimensions in front matter; frame dimensions belong in CSS.
 
-## Glossary
+## Detail facts and resources
 
-The glossary Markdown is unchanged. `_layouts/glossary.html` presents its existing letter groups, term headings and definition-marker paragraphs as semantic `dl`/`dt`/`dd` rows. Existing letter anchors and term destinations are retained; each term also gets a `glossary-term-…` permalink. Preserve these new anchors when changing the presentation in future.
+There is no visible generic “At a glance” heading. One or two short facts form an inline semantic definition list near the title/summary. Up to three resource actions can appear alongside these introductory facts. No facts means no empty wrapper.
 
-The alphabet index contains the authored letters only. Definitions are open by default. Search matches all words across terms and definitions, ignores accents, reports results and offers clear/reset controls. Following a term or letter anchor clears the filter, reveals the target and moves keyboard focus where appropriate. Without JavaScript, the complete glossary, alphabet index, original links and new term anchors remain available; search controls remain hidden.
+More than two facts, a long fact/array, or more than three resource actions use the common side region on wide screens. It appears naturally above the body on mobile. This choice is derived from structured values, not per-record display switches or rendered HTML. The existing `facts-title` target remains available where facts exist. Certification facts retain their actual labels, dates and programme/product version distinctions.
 
-On wide screens, letters, terms and definitions align into reference columns. At tablet widths, terms sit above definitions; on mobile, letter groups follow the same single-column flow. There is no card or accordion around every definition.
+Resource actions have at least 44px height. Facts and resources use quiet borders and spacing; they do not suggest whole-panel interaction. Related records follow the main body.
 
-## Review and maintenance
+## Glossary and progressive enhancement
 
-Run the existing content, catalogue and layout checks plus `scripts/test_presentation.py`. Build in safe mode at `/` and `/preview/`. The presentation checks verify glossary wording/order/links, search and hash behaviour, no-JavaScript access, card semantics, opaque surfaces, reduced-motion styles and tablet accessibility. See `DESIGN_REVIEW.md` for the results and screenshots from this pass.
+The output-disabled `_glossary` collection contains one Markdown file per term. Front matter has `title`, a stable `anchor`, and an optional existing destination in `link`. The definition, examples and inline links belong in the body. Numbered filenames retain the editorial order; letters, counts and search data are derived. The glossary page owns its introductory Markdown. There is no HTML-splitting glossary parser or second authoring registry.
+
+Terms sit directly above their definitions, with a nearby permalink and a quiet letter rail. Entries remain open. The alphabet is a single scrolling strip on narrow screens; all letters are accessible by touch or keyboard. Search matches terms and definitions, reports the result count and offers clear/reset controls. Hash navigation clears a conflicting filter and reveals the target, including browser back/forward and repeated same-hash links. Without JavaScript, all definitions, links and the alphabet remain available.
+
+Keep Unicode `▼`/`▲` menu indicators decorative and synchronised with expanded states. Preserve visible focus, 44px controls, no-JavaScript content and reduced-motion behaviour. Overflowing tables and code examples gain keyboard focus through the shared content enhancement; their text remains intact.
+
+## Verification
+
+Run `check_content.py`, `check_refinement.py`, `test_event_status.rb`, `test_catalog.py`, `test_layouts.py`, `test_presentation.py` and `test_refinement.py` against safe-mode root and baseurl builds as appropriate. The refinement fixtures are preservation evidence, not an authoring source. Update them deliberately for reviewed editorial changes. See [the refinement review](REFINEMENT_REVIEW.md) for measured outcomes and matching screenshots.

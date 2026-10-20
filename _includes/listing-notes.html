@@ -1,0 +1,18 @@
+{%- comment -%}Preserve authored annotations outside the destination cards. Canonical summaries belong on details.{%- endcomment -%}
+{% capture listing_notes %}
+{% for note in include.items %}{% if note.description %}
+  {% assign note_record = nil %}
+  {% assign note_destination = note.url | split: '#' | first | split: '?' | first %}
+  {% assign note_parts = note_destination | split: '/' %}
+  {% assign note_kind = note_parts[1] %}{% assign note_slug = note_parts | last %}
+  {% if site.data.catalog[note_kind] %}{% assign note_record = site[note_kind] | where: 'slug', note_slug | first %}{% endif %}
+  {% unless note_record %}{% assign note_record = site.pages | where: 'url', note_destination | first %}{% endunless %}
+  {% assign note_text = note.description | markdownify | strip_html | normalize_whitespace %}
+  {% assign canonical_intro = note_record.summary | markdownify | strip_html | normalize_whitespace %}
+  {% assign canonical_body = note_record.content | markdownify | strip_html | normalize_whitespace %}
+  {% unless note_text == canonical_intro or canonical_body contains note_text %}
+    <div><dt>{{ note.title | default: note_record.title | default: note.url | escape }}</dt><dd>{{ note.description | markdownify }}</dd></div>
+  {% endunless %}
+{% endif %}{% endfor %}
+{% endcapture %}{% assign listing_notes = listing_notes | strip %}
+{% if listing_notes != '' %}<dl class="listing-notes" aria-label="Resource notes">{% include content-urls.html content=listing_notes %}</dl>{% endif %}

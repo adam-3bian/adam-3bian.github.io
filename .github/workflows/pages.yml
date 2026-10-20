@@ -2,7 +2,7 @@ name: Validate and deploy Jekyll
 
 on:
   push:
-    branches: [main]
+    branches: [main, design/catalogue-polish]
   pull_request:
     branches: [main]
   workflow_dispatch:
@@ -40,13 +40,16 @@ jobs:
       - name: Validate structured records and event boundaries
         run: |
           python scripts/check_content.py
+          python scripts/check_refinement.py
           bundle exec ruby scripts/test_event_status.rb
       - name: Build and validate root and preview deployments
         run: |
           JEKYLL_ENV=production bundle exec jekyll build --safe --destination dist
           python scripts/check_content.py --site dist --report reports/root-content.json
+          python scripts/check_refinement.py --site dist
           JEKYLL_ENV=production bundle exec jekyll build --safe --baseurl /preview --destination dist-baseurl/preview
           python scripts/check_content.py --site dist-baseurl/preview --baseurl /preview --report reports/preview-content.json
+          python scripts/check_refinement.py --site dist-baseurl/preview --baseurl /preview
       - name: Check interactions, accessibility and responsive layouts
         run: |
           python -m http.server 4200 --bind 127.0.0.1 --directory dist > "$RUNNER_TEMP/site.log" 2>&1 &
@@ -61,6 +64,8 @@ jobs:
           SITE_URL=http://127.0.0.1:4201/preview/ REPORT_ROOT=reports/layout-fixes/preview python scripts/test_layouts.py
           SITE_URL=http://127.0.0.1:4200/ REPORT_ROOT=reports/polish/after python scripts/test_presentation.py
           SITE_URL=http://127.0.0.1:4201/preview/ REPORT_ROOT=reports/polish/preview python scripts/test_presentation.py
+          SITE_URL=http://127.0.0.1:4200/ REPORT_ROOT=reports/refinement/after python scripts/test_refinement.py
+          SITE_URL=http://127.0.0.1:4201/preview/ REPORT_ROOT=reports/refinement/preview python scripts/test_refinement.py
       - name: Save review evidence
         if: always()
         uses: actions/upload-artifact@v4

@@ -5,7 +5,6 @@ organization:
 speaker: true
 summary: Dr Marno van der Maas completed a PhD at the University of Cambridge in 2022 on protecting trusted execution
   environments from side-channel attacks.
-organization_label: lowRISC
 thumbnail:
   src: /assets/people/marno-van-der-maas/de74ac7aa3f7-portrait.png
   alt: Marno van der Maas
@@ -15,7 +14,6 @@ links:
 - label: Back to all speakers
   url: /news-and-events/people-and-opportunities/speakers/
   kind: navigation
-has_talks: true
 ---
 
 ## Biography

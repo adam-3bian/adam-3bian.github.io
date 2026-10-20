@@ -6,7 +6,6 @@ organization:
 speaker: true
 summary: Professor Robert N. M. Watson is a Professor of Systems, Security, and Architecture at the University of
   Cambridge’s Department of Computer Science and Technology.
-organization_label: CHERI Alliance, University of Cambridge
 thumbnail:
   src: /assets/people/robert-watson/9eba3ea44771-portrait.png
   alt: Robert Watson
@@ -19,7 +18,6 @@ links:
 - label: LinkedIn
   url: https://www.linkedin.com/in/robert-watson-3747a6253/
   kind: profile
-has_talks: true
 ---
 
 ## Biography

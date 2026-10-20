@@ -5,7 +5,6 @@ organization:
 speaker: true
 summary: Ben Fletcher has been involved in SoC development for over 25 years. He has worked in design, verification,
   software, and more recently Architecture.
-organization_label: Codasip
 thumbnail:
   src: /assets/people/ben-fletcher/c6126b8fe38c-portrait.jpg
   alt: Ben Fletcher
@@ -18,7 +17,6 @@ links:
 - label: LinkedIn
   url: https://www.linkedin.com/in/ben-fletcher-38b8b12/
   kind: profile
-has_talks: true
 ---
 
 ## Biography

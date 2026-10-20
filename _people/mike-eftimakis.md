@@ -6,7 +6,6 @@ speaker: true
 summary: Mike Eftimakis has an extensive background in the semiconductor and electronics industry with 30 years
   in senior technical and business roles.
 board_role: Founding Director
-organization_label: CHERI Alliance
 thumbnail:
   src: /assets/people/mike-eftimakis/7235ea4127c4-portrait.jpg
   alt: Mike Eftimakis
@@ -22,7 +21,6 @@ links:
 - label: LinkedIn
   url: https://www.linkedin.com/in/mikeeftimakis/
   kind: profile
-has_talks: true
 ---
 
 ## Biography

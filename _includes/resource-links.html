@@ -2,4 +2,4 @@
 {% capture resources %}{% for link in record_links %}{% unless link.kind == 'navigation' %}
 <li><a class="resource-link{% if link.primary %} is-primary{% endif %}" href="{% include url.html url=link.url %}"><span>{{ link.label | escape }}</span>{% if link.kind == 'document' or link.kind == 'slides' %}{% include icon.html name='download' %}{% else %}{% include icon.html %}{% endif %}</a></li>
 {% endunless %}{% endfor %}{% endcapture %}{% assign resources = resources | strip %}
-{% if resources != '' %}<nav class="resource-panel" aria-label="Resources"><h2>Resources</h2><ul role="list">{{ resources }}</ul></nav>{% endif %}
+{% if resources != '' %}<nav class="resource-panel{% if include.compact %} inline-resources{% endif %}" aria-label="Resources">{% unless include.compact %}<h2>Resources</h2>{% endunless %}<ul role="list">{{ resources }}</ul></nav>{% endif %}

@@ -5,7 +5,6 @@ organization:
 speaker: true
 summary: Tora Fridholm is an experienced B2B marketing professional with a focus on transforming complex technology
   into clear, value-driven messaging.
-organization_label: Codasip
 thumbnail:
   src: /assets/people/tora-fridholm/b0a2806e141b-portrait.png
   alt: Tora Fridholm
@@ -18,7 +17,6 @@ links:
 - label: LinkedIn
   url: https://www.linkedin.com/in/torafridholm/
   kind: profile
-has_talks: true
 ---
 
 ## Biography

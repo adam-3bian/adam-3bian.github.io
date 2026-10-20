@@ -6,7 +6,6 @@
 // Retained citations include bare URLs as well as links. Let long text wrap
 // without altering its wording; native pre/table regions retain their scrolling.
 .content { overflow-wrap: anywhere; }
-.breadcrumbs li { min-height: $control-height; }
 .content .cards > .content-panel > * + * { margin-top: $space-4; }
 .card-description { margin-top: $space-4; }
 .content .image-inline { display: inline; float: none; height: auto; margin: 0; max-height: none; max-width: 100%; width: auto; }

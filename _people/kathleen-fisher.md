@@ -4,7 +4,6 @@ organization:
 - aria
 speaker: true
 summary: Kathleen Fisher has been instrumental in bringing CHERI from research into national programmes.
-organization_label: ARIA
 thumbnail:
   src: /assets/people/kathleen-fisher/97d46ec3ab50-portrait.jpg
   alt: Kathleen Fisher
@@ -17,7 +16,6 @@ links:
 - label: LinkedIn
   url: https://www.linkedin.com/in/kathleen-fisher-4000964
   kind: profile
-has_talks: true
 ---
 
 ## Biography

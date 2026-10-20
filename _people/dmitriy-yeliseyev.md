@@ -4,7 +4,6 @@ organization:
 - wind-river
 speaker: true
 summary: Dmitriy is an embedded systems software architect and technical expert with over 25 years of experience.
-organization_label: Wind River
 thumbnail:
   src: /assets/people/dmitriy-yeliseyev/bf2daa2b4ab1-portrait.png
   alt: Dmitriy Yeliseyev
@@ -17,7 +16,6 @@ links:
 - label: LinkedIn
   url: https://www.linkedin.com/in/dmitriy-yeliseyev-6582844/
   kind: profile
-has_talks: true
 ---
 
 ## Biography

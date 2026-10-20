@@ -5,7 +5,6 @@ organization:
 speaker: true
 summary: Thomas Nyman holds a position as Expert in Trusted Hardware &amp; Software Technologies at the telecommunications
   company Ericsson where he works with software and platform security for telecommunications equipment and infrastructure.
-organization_label: Ericsson
 thumbnail:
   src: /assets/people/thomas-nyman/e1347087a71c-portrait.png
   alt: Thomas Nyman
@@ -15,7 +14,6 @@ links:
 - label: Back to all speakers
   url: /news-and-events/people-and-opportunities/speakers/
   kind: navigation
-has_talks: true
 ---
 
 ## Biography

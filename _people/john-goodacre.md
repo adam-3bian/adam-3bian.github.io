@@ -4,7 +4,6 @@ organization:
 - ukri
 speaker: true
 summary: UKRI
-organization_label: UKRI
 thumbnail:
   src: /assets/people/john-goodacre/8cbcb8b7b09c-portrait.png
   alt: John Goodacre
@@ -17,7 +16,6 @@ links:
 - label: LinkedIn
   url: https://www.linkedin.com/in/john-goodacre-722b59/
   kind: profile
-has_talks: true
 ---
 
 ## Biography

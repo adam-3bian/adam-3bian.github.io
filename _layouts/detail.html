@@ -1,10 +1,12 @@
 ---
 layout: default
 ---
+{% include facts.html %}
+{% assign resource_count = 0 %}{% for link in page.links %}{% unless link.kind == 'navigation' %}{% assign resource_count = resource_count | plus: 1 %}{% endunless %}{% endfor %}
+{% assign use_sidebar = false %}{% if fact_count > 2 or long_facts or resource_count > 3 %}{% assign use_sidebar = true %}{% endif %}
 {% include page-header.html detail=true %}
-{% capture side_content %}{% include facts.html %}{% include resource-links.html %}{% endcapture %}{% assign side_content = side_content | strip %}
-<div class="detail-layout{% if side_content != '' %} has-facts{% endif %}">
-  {% if side_content != '' %}<aside class="detail-aside" aria-label="Facts and resources">{{ side_content }}</aside>{% endif %}
+<div class="detail-layout{% if use_sidebar %} has-facts{% endif %}">
+  {% if use_sidebar %}<aside class="detail-aside" aria-label="Facts and resources">{% if fact_count > 0 %}<section id="facts-title" class="facts-panel" aria-label="Details"><dl class="record-facts">{{ fact_rows }}</dl></section>{% endif %}{% include resource-links.html %}</aside>{% endif %}
   <article class="content record-body">
     {% if page.authors.size > 0 %}<section class="publication-authors" aria-labelledby="authors-title"><h2 id="authors-title">Authors</h2><ol role="list">{% for ref in page.authors %}{% assign author = site.people | where: 'slug', ref | first %}<li><a href="{{ author.url | relative_url }}">{{ author.title | escape }}</a></li>{% endfor %}</ol></section>{% endif %}
     {% if page.citation %}<section class="citation-block" aria-labelledby="citation-title"><h2 id="citation-title">Citation</h2><p>{{ page.citation | markdownify | remove: '<p>' | remove: '</p>' }}</p></section>{% endif %}

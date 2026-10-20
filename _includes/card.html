@@ -33,9 +33,10 @@
       {% if include.heading == 'h3' %}<h3>{{ card_title | escape }}</h3>{% else %}<h2>{{ card_title | escape }}</h2>{% endif %}
       {% if card_metadata != '' %}<div class="catalog-meta">{{ card_metadata }}</div>{% endif %}
       {% if card_item.context %}<p class="catalog-context">{{ card_item.context | escape }}</p>{% endif %}
-      {% if card_summary %}<p class="catalog-summary">{{ card_summary | markdownify | strip_html | normalize_whitespace | escape }}</p>{% endif %}
+      {% unless card_item.url %}{% if card_summary %}<div class="panel-description">{{ card_summary | markdownify }}</div>{% endif %}{% endunless %}
       {% if card_item.citation %}<p class="catalog-meta">{{ card_item.citation | escape }}</p>{% endif %}
       {% if card_item.url %}<span class="catalog-action">{{ card_item.action | default: include.action | default: config.action | default: 'Explore' | escape }} {% include icon.html %}</span>{% endif %}
     </div>
   {% if card_item.url %}</a>{% else %}</article>{% endif %}
+  {% if kind == 'products' and card_item.url and card_item.description %}<div class="catalog-annotation">{% assign annotation = card_item.description | markdownify %}{% include content-urls.html content=annotation %}</div>{% endif %}
 </li>

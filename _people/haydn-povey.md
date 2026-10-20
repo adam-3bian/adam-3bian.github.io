@@ -4,7 +4,6 @@ organization:
 - sci-semiconductor
 speaker: true
 summary: SCI Semiconductor
-organization_label: SCI Semiconductor
 thumbnail:
   src: /assets/people/haydn-povey/96fd3cae5bca-portrait.png
   alt: Haydn Povey
@@ -17,7 +16,6 @@ links:
 - label: LinkedIn
   url: https://www.linkedin.com/in/haydn-povey-373b14/
   kind: profile
-has_talks: true
 ---
 
 ## Biography

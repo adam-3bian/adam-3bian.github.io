@@ -4,7 +4,6 @@ organization:
 - sci-semiconductor
 speaker: true
 summary: Edoardo has been working with compilers for the majority of his professional career.
-organization_label: SCI Semiconductor
 thumbnail:
   src: /assets/people/edoardo-marangoni/ce34277369e5-portrait.jpg
   alt: Edoardo Marangoni
@@ -17,7 +16,6 @@ links:
 - label: LinkedIn
   url: https://www.linkedin.com/in/edoardo-marangoni-bba569260/
   kind: profile
-has_talks: true
 ---
 
 ## Biography

@@ -13,12 +13,9 @@ OUT = Path(os.environ.get('REPORT_ROOT', ROOT / 'reports/polish/after'))
 OUT.mkdir(parents=True, exist_ok=True)
 AXE = Path(os.environ.get('AXE_PATH', '/workspace/work/browser-tools/node_modules/axe-core/axe.min.js'))
 GLOSSARY = 'discover/resources/glossary/'
-_, body = document(ROOT / 'pages/discover/resources/glossary.md')
-expected = []
-for heading, definition in re.findall(r'^#### ([^\n]+)\n: (.*?)(?=\n### |\n#### |\Z)', body, re.M | re.S):
-    term = re.sub(r'\[([^\]]+)\]\([^)]*\)', r'\1', heading)
-    expected.append((term, ' '.join(definition.split())))
-letters = re.findall(r'^### ([A-Z])$', body, re.M)
+baseline = json.loads((ROOT / 'scripts/fixtures/refinement-baseline.json').read_text())
+expected = [(term['title'], ' '.join(term['definition'].split())) for term in baseline['glossary']]
+letters = baseline['letters']
 routes = {'home':'', 'glossary':GLOSSARY, 'page':'discover/understand/how-does-cheri-work/', 'news':'news/ai-doesnt-need-a-kill-switch-it-needs-boundaries/', 'list':'people/?view=list', 'grid':'people/?view=grid', 'person':'people/mike-eftimakis/', 'sparse':'people/a-theodore-markettos/', 'paper':'papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/', 'landing':'build/'}
 results = []
 
@@ -40,7 +37,7 @@ with sync_playwright() as p:
     assert actual == [list(x) for x in expected], 'Glossary terms/definitions changed'
     assert page.locator('.glossary-index a').all_text_contents() == letters
     assert page.locator('.glossary-entry dt[id]').evaluate_all('nodes=>new Set(nodes.map(n=>n.id)).size') == len(expected)
-    assert page.locator('.glossary-entry dfn a').count() == len(re.findall(r'^#### \[', body, re.M)), 'Existing term destinations must remain links'
+    assert page.locator('.glossary-entry dfn a').count() == sum(bool(term['link']) for term in baseline['glossary']), 'Existing term destinations must remain links'
     search = page.get_by_role('searchbox', name='Find a term')
     search.fill('révocation')
     assert page.locator('[data-glossary-entry]:visible').count() == 1
@@ -81,7 +78,7 @@ with sync_playwright() as p:
             assert page.locator('h1').count() == 1
             assert page.locator('[data-view-button], .glossary-permalink, .glossary-index a').evaluate_all('nodes=>nodes.every(n=>n.getBoundingClientRect().height >= 44)'), (device,name,'small control target')
             assert not page.evaluate('document.documentElement.scrollWidth > innerWidth + 1'), (device,name)
-            assert 'Poppins' in page.locator('body').evaluate('(e)=>getComputedStyle(e).fontFamily')
+            assert 'Poppins' in page.locator('h1').evaluate('(e)=>getComputedStyle(e).fontFamily')
             assert page.locator('a a, a button, a input').count() == 0, (device,name,'nested interactive content')
             assert page.locator('main .card:not(a), a.content-panel').count() == 0, (device,name,'ambiguous card contract')
             assert page.locator('main .card, main a.catalog-card').evaluate_all("nodes=>nodes.every(n=>!!n.getAttribute('href') && !n.hasAttribute('onclick'))")

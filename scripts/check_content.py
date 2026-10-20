@@ -48,7 +48,8 @@ def validate_source(errors):
     schema = yaml.safe_load((ROOT / '_data/catalog.yml').read_text())
     baseline = json.loads((ROOT / 'scripts/fixtures/collection-baseline.json').read_text())
     records = {}
-    for collection in config['collections']:
+    for collection, options in config['collections'].items():
+        if not options.get('output'): continue  # Embedded Markdown records have no directory/detail routes.
         assert collection in schema, f'Missing schema for {collection}'
         records[collection] = {p.stem: document(p)[0] for p in (ROOT / ('_' + collection)).glob('*.md')}
     for path, old in baseline.items():
@@ -86,7 +87,7 @@ def validate_source(errors):
     policy = records['policies']['intellectual-property-policy']
     if policy['version'] != '1.01' or policy['document_date'] != '2024-08': errors.append('IP policy lost version/date precision')
     counts = {key: len(value) for key, value in records.items()}
-    return {'collections': counts, 'original_records': len(baseline), 'talks': len(talks)}
+    return {'collections': counts, 'original_records': len(baseline), 'talks': len(talks), 'glossary_terms': len(list((ROOT / '_glossary').glob('*.md')))}
 
 def validate_site(site, baseurl, errors):
     baseline = json.loads((ROOT / 'scripts/fixtures/site-baseline.json').read_text())

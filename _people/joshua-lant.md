@@ -17,7 +17,6 @@ links:
 - label: LinkedIn
   url: https://www.linkedin.com/in/joshua-lant-4b465b120/
   kind: profile
-has_talks: true
 ---
 
 ## Biography

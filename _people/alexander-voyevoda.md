@@ -4,7 +4,6 @@ organization:
 - um-labs
 speaker: true
 summary: Alex Voyevoda is a senior systems engineer focused on turning high‑assurance ideas into production systems.
-organization_label: UM Labs
 thumbnail:
   src: /assets/people/alexander-voyevoda/61dfcb5182bc-portrait.png
   alt: Alexander Voyevoda
@@ -17,7 +16,6 @@ links:
 - label: LinkedIn
   url: https://www.linkedin.com/in/alexandervoevoda/
   kind: profile
-has_talks: true
 ---
 
 ## Biography

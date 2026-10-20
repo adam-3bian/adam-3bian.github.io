@@ -75,7 +75,7 @@ with sync_playwright() as p:
         for route in routes:
             response = page.goto(URL + route)
             assert response.status == 200, route
-            assert 'Poppins' in page.locator('body').evaluate('(e) => getComputedStyle(e).fontFamily'), f'Stylesheet did not load: {route}'
+            assert 'Poppins' in page.locator('h1').evaluate('(e) => getComputedStyle(e).fontFamily'), f'Stylesheet did not load: {route}'
             assert page.locator('h1').count() == 1, route
             assert not page.evaluate('document.documentElement.scrollWidth > innerWidth + 1'), f'{device}: horizontal overflow: {route}'
             ready(page)

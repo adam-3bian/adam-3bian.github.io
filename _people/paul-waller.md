@@ -5,7 +5,6 @@ organization:
 speaker: true
 summary: Paul Waller works on advancing practical, deployable cyber security at national scale.
 board_role: Head of Capability Research
-organization_label: NCSC
 thumbnail:
   src: /assets/people/paul-waller/b30ab394d940-portrait.jpg
   alt: Paul Waller
@@ -18,7 +17,6 @@ links:
 - label: Back to the Governing Board
   url: /alliance/leadership/governing-board/
   kind: navigation
-has_talks: true
 ---
 
 ## Biography

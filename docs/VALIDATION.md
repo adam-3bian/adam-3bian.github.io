@@ -1,5 +1,7 @@
 # Catalogue redesign validation
 
+The latest presentation and Markdown migration results are in [the refinement review](REFINEMENT_REVIEW.md). The results below retain the earlier migration and layout-repair history.
+
 Reviewed 20 October 2026 on `design/collections-redesign`, based on main commit `362e3d6`.
 
 ## Results

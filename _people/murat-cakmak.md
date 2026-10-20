@@ -4,7 +4,6 @@ organization:
 - microservice-store
 speaker: true
 summary: Microservice Store
-organization_label: Microservice Store
 thumbnail:
   src: /assets/people/murat-cakmak/ecc356af5bf5-portrait.jpg
   alt: Murat Cakmak
@@ -17,7 +16,6 @@ links:
 - label: LinkedIn
   url: https://www.linkedin.com/in/cakmakmurat
   kind: profile
-has_talks: true
 ---
 
 ## Biography

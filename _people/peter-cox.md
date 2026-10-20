@@ -5,7 +5,6 @@ organization:
 speaker: true
 summary: Peter Cox is the CEO and founder of UM Labs, a UK R&amp;D company specialising in cybersecurity for real-time
   application on IP networks.
-organization_label: UM Labs
 thumbnail:
   src: /assets/people/peter-cox/7263b66ba9dc-portrait.jpg
   alt: Peter Cox
@@ -18,7 +17,6 @@ links:
 - label: LinkedIn
   url: https://www.linkedin.com/in/uml/
   kind: profile
-has_talks: true
 ---
 
 ## Biography

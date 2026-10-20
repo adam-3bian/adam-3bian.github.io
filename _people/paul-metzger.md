@@ -5,7 +5,6 @@ organization:
 speaker: true
 summary: Dr Paul Metzger is a Research Associate in the Department of Computer Science and Technology at the University
   of Cambridge.
-organization_label: University of Cambridge
 thumbnail:
   src: /assets/people/paul-metzger/0069454ce669-portrait.jpg
   alt: Paul Metzger
@@ -18,7 +17,6 @@ links:
 - label: LinkedIn
   url: https://www.linkedin.com/in/metzgerpaul/
   kind: profile
-has_talks: true
 ---
 
 ## Biography

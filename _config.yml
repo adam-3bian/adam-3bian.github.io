@@ -42,6 +42,8 @@ exclude:
 - dist-baseurl
 - _site
 collections:
+  glossary:
+    output: false
   people:
     output: true
     permalink: /people/:name/

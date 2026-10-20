@@ -1,17 +1,23 @@
-{% assign record_schema = site.data.catalog[page.collection] %}
-{% capture rows %}
-{% if page.collection == 'events' %}<div><dt>Status</dt><dd>{% include event-status.html event=page %}</dd></div><div><dt>When</dt><dd>{% if page.start_datetime %}{% include field-value.html value=page.start_datetime type='datetime' %}{% else %}{% include date.html value=page.start_date %}{% endif %}{% if page.end_date and page.end_date != page.start_date %} – {% include date.html value=page.end_date %}{% endif %}</dd></div>{% if page.date_note contains '**' %}<div><dt>Schedule</dt><dd>{{ page.date_note | markdownify }}</dd></div>{% endif %}{% endif %}
-{% for field in record_schema.fields %}
-  {% unless field.name == 'authors' %}
-  {% assign value = page %}{% assign keys = field.name | split: '.' %}
-  {% for key in keys %}{% assign value = value[key] %}{% endfor %}
-  {% if value != nil and value != '' %}{% unless value.size == 0 %}
+{%- assign record_schema = site.data.catalog[page.collection] -%}
+{%- assign fact_count = 0 -%}{%- assign long_facts = false -%}
+{%- capture fact_rows -%}
+{%- if page.collection == 'events' -%}
+  <div><dt>Status</dt><dd>{% include event-status.html event=page %}</dd></div>
+  <div><dt>When</dt><dd>{% if page.start_datetime %}{% include field-value.html value=page.start_datetime type='datetime' %}{% else %}{% include date.html value=page.start_date %}{% endif %}{% if page.end_date and page.end_date != page.start_date %} – {% include date.html value=page.end_date %}{% endif %}</dd></div>
+  {%- assign fact_count = 2 -%}
+  {%- if page.date_note contains '**' -%}<div><dt>Schedule</dt><dd>{{ page.date_note | markdownify }}</dd></div>{%- assign fact_count = fact_count | plus: 1 -%}{%- assign long_facts = true -%}{%- endif -%}
+{%- endif -%}
+{%- for field in record_schema.fields -%}{%- unless field.name == 'authors' -%}
+  {%- assign value = page -%}{%- assign keys = field.name | split: '.' -%}
+  {%- for key in keys -%}{%- assign value = value[key] -%}{%- endfor -%}
+  {%- if value != nil and value != '' -%}{%- unless value.size == 0 -%}
     <div><dt>{{ field.label | escape }}</dt><dd>{% include field-value.html value=value type=field.type %}</dd></div>
-  {% endunless %}{% endif %}
-  {% endunless %}
-{% endfor %}
-{% if page.organization_label and page.organization == nil %}<div><dt>Organisation</dt><dd>{{ page.organization_label | escape }}</dd></div>{% endif %}
-{% if page.organization_type %}<div><dt>Organisation type</dt><dd>{{ page.organization_type | escape }}</dd></div>{% endif %}
-{% for fact in page.additional_facts %}<div><dt>{{ fact.label | escape }}</dt><dd>{{ fact.value | markdownify }}</dd></div>{% endfor %}
-{% endcapture %}{% assign rows = rows | strip %}
-{% if rows != '' %}<section class="facts-panel" aria-labelledby="facts-title"><h2 id="facts-title">At a glance</h2><dl class="record-facts">{{ rows }}</dl></section>{% endif %}
+    {%- assign fact_count = fact_count | plus: 1 -%}
+    {%- if value.size > 140 -%}{%- assign long_facts = true -%}{%- endif -%}
+    {%- if field.type == 'array' or field.type == 'organisations' -%}{%- if value.size > 3 -%}{%- assign long_facts = true -%}{%- endif -%}{%- endif -%}
+  {%- endunless -%}{%- endif -%}
+{%- endunless -%}{%- endfor -%}
+{%- if page.organization_label and page.organization == nil -%}<div><dt>Organisation</dt><dd>{{ page.organization_label | escape }}</dd></div>{%- assign fact_count = fact_count | plus: 1 -%}{%- endif -%}
+{%- if page.organization_type -%}<div><dt>Organisation type</dt><dd>{{ page.organization_type | escape }}</dd></div>{%- assign fact_count = fact_count | plus: 1 -%}{%- endif -%}
+{%- for fact in page.additional_facts -%}<div><dt>{{ fact.label | escape }}</dt><dd>{{ fact.value | markdownify }}</dd></div>{%- assign fact_count = fact_count | plus: 1 -%}{%- if fact.value.size > 140 -%}{%- assign long_facts = true -%}{%- endif -%}{%- endfor -%}
+{%- endcapture -%}

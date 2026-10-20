@@ -8,7 +8,7 @@ Content lives in Markdown records. YAML front matter supplies the title, introdu
 | --- | --- |
 | `title` | Canonical record name. Do not repeat it as an H1 in the body. |
 | `display_title` | Optional retained source heading where it differs from the record name; new records normally need only `title`. |
-| `summary` | A short, factual introduction. Basic Markdown links/emphasis are supported. Cards use a plain-text preview. |
+| `summary` | A factual detail-page introduction, also used by search. Basic Markdown links/emphasis are supported; navigation cards omit excerpts. |
 | `thumbnail` | An object containing `src`, `alt`, and preferably intrinsic `width`/`height`. Use `fit: contain` for logos and diagrams. |
 | `thumbnail_in_body` | Set `true` when that image already appears in its editorial context. Cards can reuse it without adding a second lead image. |
 | `links` | Resource entries with `label`, `url`, `kind`; at most one may have `primary: true`. |
@@ -160,7 +160,7 @@ Collection directories select records through `listing.collection`. The List/Gri
 
 The speakers directory filters `speaker: true`, members filter `member: true`, and the board uses `_data/governing-board.yml` as its authoritative order. Upcoming/past events and the academic bibliography are views of their respective collections. Certified-product listings select records with certification metadata.
 
-The general product catalogue keeps its 23 product/project entries in `product_entries` on its existing Markdown page, including category, organisation, type, release status and description. Entries with no published destination remain plain cards. Certification listings query the Hardware collection instead of treating general product inclusion as certification.
+The general product catalogue keeps its 23 product/project entries in `product_entries` on its existing Markdown page, including category, organisation, type, release status and description. Entries with no published destination remain passive content panels. Unique descriptions and links remain visible as editorial annotations outside navigation cards. Certification listings query the Hardware collection instead of treating general product inclusion as certification.
 
 Small document/presentation lists use `resource_entries` on the owning page, with `title`, `url`, `resource_type`, `description` and optional `citation`. The current opportunity remains an ordinary page with structured `opportunity_type`, `location`, `working_pattern`, `posted_date`, `experience` and `skills`; its directory references that page through `page_entries`.
 
@@ -193,6 +193,7 @@ Only `/` uses the original dark palette, selected by its `home-page` class. Ther
 ```sh
 python -m pip install -r requirements-dev.txt
 python scripts/check_content.py
+python scripts/check_refinement.py
 bundle exec ruby scripts/test_event_status.rb
 bundle exec jekyll build --safe --destination dist
 python scripts/check_content.py --site dist
@@ -200,8 +201,31 @@ bundle exec jekyll build --safe --baseurl /preview --destination dist-baseurl/pr
 python scripts/check_content.py --site dist-baseurl/preview --baseurl /preview
 ```
 
-For browser checks, serve the output directory, install Chromium with `python -m playwright install chromium`, and install `axe-core@4.10.3`. Set `SITE_URL` and `AXE_PATH`, then run `python scripts/test_catalog.py` and `python scripts/test_layouts.py`. Optional `CHROMIUM_EXECUTABLE` selects an existing Chromium binary. Catalogue screenshots go to `reports/browser/`; container, theme and navigation checks and full-page screenshots go to `reports/layout-fixes/after/`. CI checks both `/` and `/preview/` and uploads the review evidence.
+For browser checks, serve the output directory, install Chromium with `python -m playwright install chromium`, and install `axe-core@4.10.3`. Set `SITE_URL` and `AXE_PATH`, then run `python scripts/test_catalog.py`, `python scripts/test_layouts.py`, `python scripts/test_presentation.py` and `python scripts/test_refinement.py`. Optional `CHROMIUM_EXECUTABLE` selects an existing Chromium binary. Catalogue screenshots go to `reports/browser/`; container, theme and navigation checks and full-page screenshots go to `reports/layout-fixes/after/`. CI checks both `/` and `/preview/` and uploads the review evidence.
 
 The fixtures under `scripts/fixtures/` are a migration safety net. Update them deliberately when a reviewed editorial change intentionally changes an existing route, anchor or ordered relationship. The rendered audit records inherited broken references separately from regressions.
 
-The glossary and shared card/panel presentation are documented in [the shared design rules](DESIGN_SYSTEM.md). The current glossary Markdown and its definitions are preserved; its layout supplies search, semantic definition rows and individual term links.
+## Glossary
+
+Each term lives in `_glossary/`, an output-disabled collection rendered on the existing glossary page. Use a numbered filename to retain editorial order, such as `010-abi.md`. Keep its public anchor stable when renaming a title or file.
+
+```markdown
+---
+title: ABI
+anchor: glossary-term-abi
+---
+
+Application Binary Interface. The conventions that let compiled code, libraries, and an operating system agree on data layouts, calling conventions, registers, and binary formats.
+```
+
+Add `link` only when the term has a real existing destination, for example `link: /build/technology/cheri-capabilities/capabilities/` on Bounds. Put the complete definition, examples and inline links below front matter. Do not add `summary`, `definition`, `letter`, `order` or search fields. The glossary page's own Markdown contains its introduction; the layout generates the index, term rows, count and search controls.
+
+## Minimal presentation metadata
+
+Shared navigation cards omit descriptions. Keep existing summaries on records for detail introductions and search; do not add a summary to a name-only person merely to fill a component. Unique resource descriptions remain visible outside clickable cards. Do not add per-record card, spacing, colour, image-ratio or facts-panel switches.
+
+People use square portrait frames. Organisation logos are centred and contained in landscape frames. Store source/alt text and useful intrinsic image dimensions; CSS supplies presentation dimensions. One or two short facts appear inline automatically, while dense records use a side region. “At a glance” is no longer generated.
+
+All page sources, including redirects, use Markdown. Redirects retain their existing `layout: redirect`, explicit `permalink` and `redirect` values. HTML/Liquid belongs in `_layouts` and `_includes`. Talk presence is derived from the shared registry; identical organisation labels are derived from references. Retain contextual labels when their wording differs.
+
+See [the shared design rules](DESIGN_SYSTEM.md) and [the refinement review](REFINEMENT_REVIEW.md).

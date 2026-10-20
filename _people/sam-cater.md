@@ -22,7 +22,6 @@ links:
 - label: LinkedIn
   url: https://www.linkedin.com/in/samalexcater/
   kind: profile
-has_talks: true
 ---
 
 ## Biography

@@ -4,7 +4,6 @@ organization:
 - google
 speaker: true
 summary: Google
-organization_label: Google
 thumbnail:
   src: /assets/people/murali-vijayaraghavan/cf34c2ea389a-portrait.jpg
   alt: Murali Vijayaraghavan
@@ -17,7 +16,6 @@ links:
 - label: LinkedIn
   url: https://www.linkedin.com/in/vmurali15/
   kind: profile
-has_talks: true
 ---
 
 ## Biography

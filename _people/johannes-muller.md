@@ -18,7 +18,6 @@ links:
 - label: LinkedIn
   url: https://www.linkedin.com/in/johannes-m%C3%BCller-b67831247/
   kind: profile
-has_talks: true
 ---
 
 ## Biography

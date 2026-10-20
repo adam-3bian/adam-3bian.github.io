@@ -5,7 +5,6 @@ organization:
 speaker: true
 summary: Andrew Murray is founder and director of The Good Penguin, a UK based consultancy with a focus and passion
   for embedded Linux, low level and open-source software.
-organization_label: The Good Penguin
 thumbnail:
   src: /assets/people/andrew-murray/fa3b8031754b-portrait.png
   alt: Andrew Murray
@@ -18,7 +17,6 @@ links:
 - label: LinkedIn
   url: https://www.linkedin.com/in/andrewmurrayuk/
   kind: profile
-has_talks: true
 ---
 
 ## Biography

@@ -4,7 +4,6 @@ organization:
 - smart-information-flow-technologies-sift
 speaker: true
 summary: Dr. David Musliner is a Senior Research Fellow at Smart Information Flow Technologies (SIFT).
-organization_label: Smart Information Flow Technologies (SIFT)
 thumbnail:
   src: /assets/people/david-musliner/5770f907f606-portrait.jpg
   alt: David Musliner
@@ -17,7 +16,6 @@ links:
 - label: LinkedIn
   url: https://www.linkedin.com/in/david-musliner-01ab81/
   kind: profile
-has_talks: true
 ---
 
 ## Biography

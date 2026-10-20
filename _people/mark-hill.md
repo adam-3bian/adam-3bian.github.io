@@ -4,7 +4,6 @@ organization:
 - codasip
 speaker: true
 summary: Codasip
-organization_label: Codasip
 thumbnail:
   src: /assets/people/mark-hill/c7093451b411-portrait.jpg
   alt: Mark Hill
@@ -17,7 +16,6 @@ links:
 - label: LinkedIn
   url: https://www.linkedin.com/in/markbowenhill/
   kind: profile
-has_talks: true
 ---
 
 ## Biography

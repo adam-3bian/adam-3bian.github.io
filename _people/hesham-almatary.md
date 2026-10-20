@@ -4,7 +4,6 @@ organization:
 - capabilities-limited
 speaker: true
 summary: Hesham’s research interests involve security, operating systems, systems software, and computer architecture.
-organization_label: Capabilities Limited
 thumbnail:
   src: /assets/people/hesham-almatary/78ef1fc5643c-portrait.png
   alt: Hesham Almatary
@@ -17,7 +16,6 @@ links:
 - label: LinkedIn
   url: https://www.linkedin.com/in/heshamelmatary/
   kind: profile
-has_talks: true
 ---
 
 ## Biography

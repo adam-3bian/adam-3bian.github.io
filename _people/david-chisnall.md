@@ -6,7 +6,6 @@ speaker: true
 summary: David Chisnall has been working on CHERI since 2012, when he joined the University of Cambridge to lead
   the languages and compiler work on the CHERI project.
 board_role: Director of Systems Architecture
-organization_label: SCI Semiconductor
 thumbnail:
   src: /assets/people/david-chisnall/0d2abfc63422-portrait.jpg
   alt: David Chisnall
@@ -22,7 +21,6 @@ links:
 - label: LinkedIn
   url: https://www.linkedin.com/in/david-chisnall-60b986267/
   kind: profile
-has_talks: true
 ---
 
 ## Biography

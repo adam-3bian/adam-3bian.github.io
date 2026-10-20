@@ -7,6 +7,7 @@
     {% if include.article %}<div class="article-byline">{% unless page.undated %}{% if page.date %}{% include date.html value=page.date %}{% endif %}{% endunless %}{% if page.authors.size > 0 %}<span class="byline-divider" aria-hidden="true">·</span><span>{% include field-value.html value=page.authors type='people' %}</span>{% endif %}</div>{% endif %}
     {% if page.summary %}<div class="page-summary">{{ page.summary | markdownify }}</div>{% endif %}
     {% if include.article and page.author_credit %}{% assign credit_parts = page.author_credit | replace: '—', '–' | split: ' – ' %}{% assign credit_name = credit_parts | first | remove: '**' | strip %}{% assign author_ref = page.authors | first %}{% assign first_author = site.people | where: 'slug', author_ref | first %}<p class="author-credit">{% if credit_parts.size > 1 and credit_name == first_author.title %}{{ credit_parts | last | markdownify | remove: '<p>' | remove: '</p>' }}{% else %}{{ page.author_credit | markdownify | remove: '<p>' | remove: '</p>' }}{% endif %}</p>{% endif %}
+    {% if include.detail and use_sidebar == false %}{% if fact_count > 0 %}<dl id="facts-title" class="record-facts inline-facts">{{ fact_rows }}</dl>{% endif %}{% if resource_count > 0 %}{% include resource-links.html compact=true %}{% endif %}{% endif %}
   </div>
   {% if include.detail and page.thumbnail.src and page.thumbnail_in_body != true %}<figure class="record-portrait image-kind-{{ page.collection }}">{% include image.html image=page.thumbnail eager=true %}</figure>{% endif %}
 </header>

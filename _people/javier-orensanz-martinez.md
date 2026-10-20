@@ -4,7 +4,6 @@ organization:
 - lowrisc
 speaker: true
 summary: Javier is a business leader with over 25 years of experience in the semiconductors industry.
-organization_label: lowRISC
 thumbnail:
   src: /assets/people/javier-orensanz-martinez/eeab172bbb0d-portrait.jpg
   alt: Javier Orensanz Martinez
@@ -17,7 +16,6 @@ links:
 - label: LinkedIn
   url: http://Javier%20Orensanz%20Martinez
   kind: profile
-has_talks: true
 ---
 
 ## Biography

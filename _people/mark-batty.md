@@ -18,7 +18,6 @@ links:
 - label: Professional profile
   url: https://www.cs.kent.ac.uk/people/staff/mjb211/rust/index.htm
   kind: profile
-has_talks: true
 ---
 
 ## Biography

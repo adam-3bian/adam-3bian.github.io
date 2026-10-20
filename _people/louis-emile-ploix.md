@@ -5,7 +5,6 @@ organization:
 speaker: true
 summary: Louis-Emile is a current undergraduate at the University of Oxford, and a formal verification engineer
   for lowRISC working on the COSMIC project.
-organization_label: lowRISC
 thumbnail:
   src: /assets/people/louis-emile-ploix/e17556199b26-portrait.jpg
   alt: Louis-Emile Ploix
@@ -18,7 +17,6 @@ links:
 - label: LinkedIn
   url: https://www.linkedin.com/in/louis-emile-ploix-3206a6293
   kind: profile
-has_talks: true
 ---
 
 ## Biography

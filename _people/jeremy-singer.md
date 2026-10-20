@@ -4,7 +4,6 @@ organization:
 - university-of-glasgow
 speaker: true
 summary: Jeremy is a Reader in Programming Language Implementation at the University of Glasgow.
-organization_label: University of Glasgow
 thumbnail:
   src: /assets/people/jeremy-singer/5d91f083d9ea-portrait.png
   alt: Jeremy Singer
@@ -14,7 +13,6 @@ links:
 - label: Back to all speakers
   url: /news-and-events/people-and-opportunities/speakers/
   kind: navigation
-has_talks: true
 ---
 
 ## Biography

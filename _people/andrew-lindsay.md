@@ -5,7 +5,6 @@ organization:
 summary: Andrew Lindsay represents Codasip on the CHERI Alliance Governing Board. His board role is Security Product
   Manager and Architect.
 board_role: Security Product Manager and Architect
-organization_label: Codasip
 thumbnail:
   src: /assets/people/andrew-lindsay/6f29bac54e8a-portrait.png
   alt: Andrew Lindsay

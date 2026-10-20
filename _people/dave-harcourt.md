@@ -18,7 +18,6 @@ links:
 - label: LinkedIn
   url: https://www.linkedin.com/in/davidharcourt/
   kind: profile
-has_talks: true
 ---
 
 ## Biography

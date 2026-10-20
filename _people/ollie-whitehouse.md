@@ -17,7 +17,6 @@ links:
 - label: LinkedIn
   url: https://www.linkedin.com/in/olliewhitehouse/
   kind: profile
-has_talks: true
 ---
 
 ## Biography

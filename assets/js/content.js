@@ -31,6 +31,22 @@
     }
   });
 
+  // Long code examples remain scrollable without adding HTML to Markdown.
+  document.querySelectorAll('.content pre').forEach((block) => {
+    const update = () => {
+      if (block.scrollWidth > block.clientWidth + 1) {
+        block.tabIndex = 0;
+        block.setAttribute('role', 'region');
+        if (!block.hasAttribute('aria-label')) block.setAttribute('aria-label', 'Code example — scroll horizontally');
+      } else {
+        block.removeAttribute('tabindex');
+      }
+    };
+    update();
+    if ('ResizeObserver' in window) new ResizeObserver(update).observe(block);
+    else window.addEventListener('resize', update);
+  });
+
   // Explicit Markdown/front-matter attributes also work without JavaScript.
   // Catch any unmarked off-site web links added by an author as well.
   document.querySelectorAll('a[href]').forEach((link) => {
