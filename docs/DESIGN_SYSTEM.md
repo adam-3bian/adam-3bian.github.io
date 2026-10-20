@@ -10,6 +10,22 @@ Only `/` uses the dark palette and the original homepage composition. Its Poppin
 
 Use solid reading surfaces, quiet borders and restrained brand accents. The original honeycomb remains visible in page gutters and the newsletter band. Do not apply translucency to reading surfaces or put a raised wrapper around every article. Common corner radii are 8px; utility controls and media frames may use 4–8px. Navigation hover/focus states provide emphasis without giving passive panels an interactive appearance.
 
+Colour roles are defined once in the theme maps in `settings.scss`. Catalogue names such as `--accent`, `--ink` and `--surface` alias these roles; do not introduce a competing palette or hard-code a second primary-button colour in a component.
+
+| Role | Light pages | Homepage |
+| --- | --- | --- |
+| Main text | Navy `#152b3b` | White |
+| Supporting text | `#526574` | `#d1d6df` |
+| Links and accents | Teal `#075d80` | Cyan `#b9e2f1` |
+| Primary controls / selected view | Teal with white text | Cyan with dark text |
+| Secondary surfaces | `#f1f5f7` | `#102a38` |
+| Quiet borders | `#d0dde5` | `#3f6174` |
+| Limited brand action | Red `#ba1e1e` with white text | The same red/white pairing |
+
+Red is reserved for the existing join action and newsletter action cue. The join action is a compact native link, not a full-width red band. Newsletter cues remain spans inside their existing single-link cards. Red is not a selection state, collection category or status colour. Selected List/Grid controls use a filled surface and stronger label weight; hover changes the surface, and keyboard focus adds a separate outline.
+
+The homepage hero keeps its opening statement largest, supporting statement smaller, and existing concluding CHERI statement in cyan. Text comes directly from the existing fields. The hero and slider share a 1px border family. Hero upper corners remain square against the header; lower corners use the 8px radius only when inset on screens at least 1264px wide. It has no hover or clickable behaviour. Homepage panels use quiet dark surfaces and cyan headings, while actual links retain underlines or explicit action cues.
+
 Use the spacing tokens in `settings.scss`. Close spacing joins related facts; record spacing supports scanning; section spacing separates topics. Directory headers and toolbars are compact. Breadcrumb list items have their own compact rhythm instead of inheriting full menu-row heights.
 
 ## Cards, panels and annotations
@@ -26,6 +42,8 @@ Use the spacing tokens in `settings.scss`. Close spacing joins related facts; re
 Do not nest interactive controls or use stretched-link overlays, `onclick` containers or duplicated hidden card sets. Preserve all existing destinations and actions. Summaries remain canonical detail introductions and searchable data even when cards do not display them.
 
 `card.html` supplies shared record cards. `listing-notes.html` preserves annotations that differ from the destination's existing introduction/body. `section-cards.html` arranges complete authored multi-link sections; these remain editorial panels. Homepage slides retain their authored promotional content.
+
+`talk-card.html` applies the same distinction to CHERI talks from the canonical registry. A talk with exactly one distinct destination is one native navigation-card link. Talks with multiple destinations are passive content panels with separate event/resource links; a talk with no destinations remains a complete passive record. Preserve title, date, event, location, action labels and registry order. On wide screens, actions align to the right of the talk copy; on mobile they wrap beneath it. Titles and metadata use the catalogue scale, and resource actions have 44px minimum targets. `resource-action.html` supplies the same labelled link treatment for talks and detail resources; do not add a separate miniature talk-link style.
 
 ## Image geometry
 
@@ -51,8 +69,10 @@ The output-disabled `_glossary` collection contains one Markdown file per term. 
 
 Terms sit directly above their definitions, with a nearby permalink and a quiet letter rail. Entries remain open. The alphabet is a single scrolling strip on narrow screens; all letters are accessible by touch or keyboard. Search matches terms and definitions, reports the result count and offers clear/reset controls. Hash navigation clears a conflicting filter and reveals the target, including browser back/forward and repeated same-hash links. Without JavaScript, all definitions, links and the alphabet remain available.
 
+Letter markers use a small accent surface and keyline; terms use the shared Poppins heading family. A directly targeted entry receives a pale highlight with an outlined term. This is a reference cue, not a per-entry card or collapsed disclosure.
+
 Keep Unicode `▼`/`▲` menu indicators decorative and synchronised with expanded states. Preserve visible focus, 44px controls, no-JavaScript content and reduced-motion behaviour. Overflowing tables and code examples gain keyboard focus through the shared content enhancement; their text remains intact.
 
 ## Verification
 
-Run `check_content.py`, `check_refinement.py`, `test_event_status.rb`, `test_catalog.py`, `test_layouts.py`, `test_presentation.py` and `test_refinement.py` against safe-mode root and baseurl builds as appropriate. The refinement fixtures are preservation evidence, not an authoring source. Update them deliberately for reviewed editorial changes. See [the refinement review](REFINEMENT_REVIEW.md) for measured outcomes and matching screenshots.
+Run `check_content.py`, `check_refinement.py`, `test_event_status.rb`, `test_catalog.py`, `test_layouts.py`, `test_presentation.py` and `test_refinement.py` against safe-mode root and baseurl builds as appropriate. The refinement fixtures are preservation evidence, not an authoring source. Update them deliberately for reviewed editorial changes. See [the refinement review](REFINEMENT_REVIEW.md) and [colour and component review](screenshots/colour-refinement/README.md) for measured outcomes and matching screenshots.

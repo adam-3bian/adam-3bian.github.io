@@ -97,21 +97,29 @@ $slider-image-ratio: unquote("16 / 9");
 $onward-image-width: 12rem;
 $overlay-gutter: $space-4;
 
+// Brand foundations. Component roles below share these values in both page palettes.
+$brand-navy: #152b3b;
+$brand-teal: #075d80;
+$brand-teal-deep: #064762;
+$brand-cyan: #b9e2f1;
+$brand-red: #ba1e1e;
+$brand-red-deep: #941818;
+
 // Opaque reading and component surfaces; transparency is reserved for decorative artwork.
-$colour-text: #141414;
-$colour-muted: #373636;
+$colour-text: $brand-navy;
+$colour-muted: #526574;
 $colour-page: #ffffff;
 $colour-page-edge: #f0f3f5;
 $colour-watermark: rgba(#125770, 0.32);
-$colour-link-hover: #721515;
+$colour-link-hover: $brand-teal-deep;
 $colour-header: #ffffff;
 $colour-submenu: #cbdbe5;
 $colour-navigation-hover: #e6eef3;
 $colour-submenu-hover: #b8cdd9;
 $colour-hero: #e7f1f7;
-$colour-hero-accent: #ba1e1e;
+$colour-hero-accent: $brand-red;
 $colour-card: #ffffff;
-$colour-card-hover: #f4f9fc;
+$colour-card-hover: #edf6fa;
 $colour-image-background: #fff;
 $colour-cta: #e7f1f7;
 $colour-cta-hover: #d9eaf3;
@@ -124,15 +132,22 @@ $colour-footer-hover: #10465b;
 $colour-footer-text: #ffffff;
 $colour-footer-muted: #d1d6df;
 $colour-control: #fff;
-$colour-control-border: #47606b;
-$colour-button: #135771;
-$colour-button-hover: #0d455c;
+$colour-control-border: #718897;
+$colour-button: $brand-teal;
+$colour-button-hover: $brand-teal-deep;
 $colour-button-text: #fff;
 
 // Themes share every component and layout; only these colour values change.
 $theme-light: (
   text: $colour-text,
   muted: $colour-muted,
+  surface-soft: #f1f5f7,
+  border: #d0dde5,
+  accent: $brand-teal,
+  accent-soft: #e7f3f8,
+  brand-accent: $brand-red,
+  brand-accent-hover: $brand-red-deep,
+  brand-accent-text: #fff,
   page: $colour-page,
   page-edge: $colour-page-edge,
   watermark: $colour-watermark,
@@ -167,17 +182,24 @@ $theme-light: (
   button: $colour-button,
   button-hover: $colour-button-hover,
   button-text: $colour-button-text,
-  focus: $colour-text,
+  focus: $brand-teal,
   overlay: rgba(12, 21, 25, 0.88)
 );
 // The homepage keeps its dark composition with solid reading surfaces.
 $theme-dark: (
   text: #ffffff,
   muted: #d1d6df,
+  surface-soft: #102a38,
+  border: #3f6174,
+  accent: $brand-cyan,
+  accent-soft: #1c4053,
+  brand-accent: $brand-red,
+  brand-accent-hover: $brand-red-deep,
+  brand-accent-text: #fff,
   page: #091a24,
   page-edge: #07131b,
   watermark: rgba(#74bedd, 0.48),
-  link-hover: #ffcaca,
+  link-hover: #e1f4fc,
   header: #102832,
   submenu: #28404c,
   navigation-hover: #28404c,
@@ -188,8 +210,8 @@ $theme-dark: (
   submenu-hover-level-2: #2f4c5b,
   submenu-hover-level-3: #294552,
   submenu-hover-level-4: #233e4b,
-  hero: #16475b,
-  hero-accent: #fdece3,
+  hero: #103a4b,
+  hero-accent: $brand-cyan,
   card: #143447,
   card-hover: #1d4357,
   image-background: #fff,
@@ -205,9 +227,9 @@ $theme-dark: (
   footer-muted: #d1d6df,
   control: #102832,
   control-border: #8facbc,
-  button: #b9e2f1,
+  button: $brand-cyan,
   button-hover: #a7d6e8,
   button-text: #08202b,
-  focus: #ffffff,
+  focus: $brand-cyan,
   overlay: rgba(0, 0, 0, 0.9)
 );

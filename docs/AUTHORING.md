@@ -226,6 +226,8 @@ Shared navigation cards omit descriptions. Keep existing summaries on records fo
 
 People use square portrait frames. Organisation logos are centred and contained in landscape frames. Store source/alt text and useful intrinsic image dimensions; CSS supplies presentation dimensions. One or two short facts appear inline automatically, while dense records use a side region. “At a glance” is no longer generated.
 
+CHERI talk presentation is derived from existing event and resource destinations in `_data/talks.yml`. One distinct destination produces a native navigation card; multiple destinations produce a passive panel with separate event/resource links. Do not add colour, card-type, button-style or click-behaviour fields. Shared templates preserve resource labels and provide the same action treatment as detail-page resources.
+
 All page sources, including redirects, use Markdown. Redirects retain their existing `layout: redirect`, explicit `permalink` and `redirect` values. HTML/Liquid belongs in `_layouts` and `_includes`. Talk presence is derived from the shared registry; identical organisation labels are derived from references. Retain contextual labels when their wording differs.
 
 See [the shared design rules](DESIGN_SYSTEM.md) and [the refinement review](REFINEMENT_REVIEW.md).

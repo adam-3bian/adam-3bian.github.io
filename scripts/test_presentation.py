@@ -16,12 +16,25 @@ GLOSSARY = 'discover/resources/glossary/'
 baseline = json.loads((ROOT / 'scripts/fixtures/refinement-baseline.json').read_text())
 expected = [(term['title'], ' '.join(term['definition'].split())) for term in baseline['glossary']]
 letters = baseline['letters']
-routes = {'home':'', 'glossary':GLOSSARY, 'page':'discover/understand/how-does-cheri-work/', 'news':'news/ai-doesnt-need-a-kill-switch-it-needs-boundaries/', 'list':'people/?view=list', 'grid':'people/?view=grid', 'person':'people/mike-eftimakis/', 'sparse':'people/a-theodore-markettos/', 'paper':'papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/', 'landing':'build/'}
+routes = {'home':'', 'glossary':GLOSSARY, 'page':'discover/understand/how-does-cheri-work/', 'news':'news/ai-doesnt-need-a-kill-switch-it-needs-boundaries/', 'list':'people/?view=list', 'grid':'people/?view=grid', 'person':'people/mike-eftimakis/', 'talk-single':'people/john-goodacre/', 'talk-empty':'people/mike-halsall/', 'sparse':'people/a-theodore-markettos/', 'paper':'papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/', 'landing':'build/'}
 results = []
 
 def ready(page):
     page.evaluate('document.fonts.ready')
     page.evaluate('''async()=>{await Promise.all([...document.images].filter(i=>{const r=i.getBoundingClientRect();return r.top<innerHeight&&r.bottom>0}).map(i=>i.decode().catch(()=>{})))}''')
+
+def text_contrast(node):
+    """Measure the actual text/background pairing, including hover/selected states."""
+    ratio = node.evaluate('''e=>{
+      const rgb=s=>(s.match(/[\\d.]+/g)||[]).map(Number);
+      const luminance=c=>c.slice(0,3).map(v=>{v/=255;return v<=.04045?v/12.92:((v+.055)/1.055)**2.4})
+        .reduce((sum,v,i)=>sum+v*[.2126,.7152,.0722][i],0);
+      const fg=rgb(getComputedStyle(e).color);let parent=e,bg;
+      while(parent){bg=rgb(getComputedStyle(parent).backgroundColor);if(bg.length===3||bg[3]===1)break;parent=parent.parentElement;}
+      const a=luminance(fg),b=luminance(parent?bg:[255,255,255]);return (Math.max(a,b)+.05)/(Math.min(a,b)+.05);
+    }''')
+    assert ratio >= 4.5, (node.inner_text(), 'text contrast', ratio)
+    return round(ratio, 2)
 
 with sync_playwright() as p:
     options = {'headless':True, 'args':['--no-sandbox']}
@@ -82,15 +95,48 @@ with sync_playwright() as p:
             assert page.locator('a a, a button, a input').count() == 0, (device,name,'nested interactive content')
             assert page.locator('main .card:not(a), a.content-panel').count() == 0, (device,name,'ambiguous card contract')
             assert page.locator('main .card, main a.catalog-card').evaluate_all("nodes=>nodes.every(n=>!!n.getAttribute('href') && !n.hasAttribute('onclick'))")
+            if name == 'home':
+                ratios = {selector:text_contrast(page.locator(selector).first) for selector in
+                          ['.hero-opening','.hero-support','.hero-signoff','.action-card','.site-call-to-action .card-action']}
+                page.locator('.action-card').hover()
+                ratios['join-hover'] = text_contrast(page.locator('.action-card'))
+                results.append({'device':device,'home_text_contrast':ratios})
+            if name == 'list':
+                selected = page.locator('.view-switch button[aria-pressed="true"]').first
+                unselected = page.locator('.view-switch button[aria-pressed="false"]').first
+                ratios = {'selected':text_contrast(selected),'unselected':text_contrast(unselected)}
+                unselected.hover();ratios['unselected-hover']=text_contrast(unselected)
+                selected.hover();ratios['selected-hover']=text_contrast(selected)
+                selected.focus()
+                assert selected.evaluate('e=>getComputedStyle(e).outlineStyle') != 'none'
+                results.append({'device':device,'view_control_contrast':ratios})
             surfaces = page.locator('main, .site-header, .site-footer, .hero, .content-panel, .catalog-card, .facts-panel, .detail-aside .resource-panel, .site-call-to-action .card')
             assert surfaces.evaluate_all("nodes=>nodes.every(n=>!/^rgba\\(.+, (?:0|0?\\.\\d+)\\)$/.test(getComputedStyle(n).backgroundColor))"), (device,name,'translucent surface')
-            panels = page.locator('section.content-panel, .talk-list > li.content-panel')
+            panels = page.locator('section.content-panel, .talk-card.content-panel')
             if panels.count():
                 panel = panels.first
                 before = panel.evaluate('(e)=>({bg:getComputedStyle(e).backgroundColor,shadow:getComputedStyle(e).boxShadow,cursor:getComputedStyle(e).cursor})')
                 panel.hover(position={'x':5,'y':5})
                 after = panel.evaluate('(e)=>({bg:getComputedStyle(e).backgroundColor,shadow:getComputedStyle(e).boxShadow,cursor:getComputedStyle(e).cursor})')
                 assert before == after and after['cursor'] != 'pointer', (device,name,'passive panel suggests whole-card interaction')
+            if name == 'person':
+                assert page.locator('.talk-card.content-panel').count() == 6
+                actions = page.locator('.talk-actions .resource-link')
+                assert actions.count() == 11
+                assert actions.evaluate_all('nodes=>nodes.every(n=>n.getBoundingClientRect().height>=44)')
+                actions.first.focus()
+                assert actions.first.evaluate('e=>getComputedStyle(e).outlineStyle') != 'none'
+                normal = text_contrast(actions.first)
+                actions.first.hover()
+                results.append({'device':device,'talk_action_contrast':{'normal':normal,'hover':text_contrast(actions.first)}})
+                page.locator('#cheri-talks').evaluate("e=>e.scrollIntoView({block:'start'})")
+                page.screenshot(path=str(OUT / f'{device}-talks.png'))
+            if name == 'talk-single':
+                assert page.locator('[data-talk-id="8327eaddbe5e"] > a.navigation-card').count() == 1
+            if name == 'talk-empty':
+                empty = page.locator('[data-talk-id="0be58c12b274"]')
+                assert empty.locator('article.content-panel').count() == 1
+                assert empty.locator('a, .talk-actions').count() == 0
             nav = page.locator('main a.catalog-card, main a.card').first
             if nav.count():
                 page.keyboard.press('Tab');nav.focus()

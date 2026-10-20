@@ -1,0 +1,2 @@
+{%- assign action_link = include.link -%}
+<a class="resource-link{% if action_link.primary %} is-primary{% endif %}" href="{% include url.html url=action_link.url %}"><span>{{ action_link.label | escape }}</span>{% if action_link.kind == 'document' or action_link.kind == 'slides' %}{% include icon.html name='download' %}{% else %}{% include icon.html %}{% endif %}</a>

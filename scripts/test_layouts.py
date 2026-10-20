@@ -82,7 +82,11 @@ with sync_playwright() as p:
                 assert page.locator('[data-section-cards] > section').count() == 5
                 assert page.locator('.slider .slide').count() == 2
                 assert '<br>' not in page.locator('h1').inner_text()
-                assert page.locator('.hero').evaluate('(e) => getComputedStyle(e).borderRadius') == '0px'
+                frame = page.locator('.hero').evaluate('''e=>{const s=getComputedStyle(e),slider=getComputedStyle(document.querySelector('.slide-link'));return {
+                  top:s.borderTopLeftRadius,bottom:s.borderBottomLeftRadius,border:s.borderBottomWidth,
+                  colour:s.borderBottomColor,sliderColour:slider.borderColor}}''')
+                assert frame['top'] == '0px' and frame['bottom'] == ('8px' if width >= 1264 else '0px'), (width,frame)
+                assert frame['border'] == '1px' and frame['colour'] == frame['sliderColour'], (width,frame)
             results.append({'width': width, 'route': name, 'layout': data})
             if width in [390, 1600]:
                 device = 'mobile' if width == 390 else 'desktop'

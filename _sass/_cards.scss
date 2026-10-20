@@ -48,6 +48,7 @@ a.catalog-card:is(:hover, :focus-visible) :is(h2, h3) { text-decoration: underli
 }
 .card-media-landscape { aspect-ratio: unquote("16 / 9"); }
 .card-action {
+  color: var(--accent);
   display: block;
   font-weight: $font-weight-medium;
   letter-spacing: $letter-spacing-interface;
@@ -89,6 +90,7 @@ a.catalog-card:is(:hover, :focus-visible) :is(h2, h3) { text-decoration: underli
   line-height: $line-height-card;
 }
 .content-panel a { text-underline-offset: .2em; }
+.home-page [data-section-cards] .content-panel h2 { color: var(--accent); }
 .cards .card-action {
   margin-top: auto;
   padding-top: $space-6;

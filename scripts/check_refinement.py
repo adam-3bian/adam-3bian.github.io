@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 from check_content import ROOT, document
 from lxml import html
+import yaml
 
 
 def check(site=None, baseurl=''):
@@ -22,6 +23,7 @@ def check(site=None, baseurl=''):
         redirects[fm['permalink']] = fm['redirect']
     assert redirects == baseline['redirects'], 'Redirect route/destination map changed'
     assert not list((ROOT / 'pages').rglob('*.html')), 'Page sources should be Markdown'
+    talk_count = None
     if site:
         tree = html.parse(str(site / 'discover/resources/glossary/index.html'))
         entries = tree.xpath('//*[@data-glossary-entry]')
@@ -38,7 +40,32 @@ def check(site=None, baseurl=''):
             redirect = html.parse(str(site / filename))
             assert redirect.xpath('//meta[@http-equiv="refresh"]/@content') == ['0;url=' + baseurl + target], route
             assert redirect.xpath('//body//a/@href') == [baseurl + target], route
-    print(json.dumps({'glossary_terms':len(actual), 'preserved_term_links':sum(bool(t['link']) for t in actual), 'redirects':len(redirects), 'rendered':bool(site)}))
+        talks = yaml.safe_load((ROOT / '_data/talks.yml').read_text())
+        seen = set()
+        for collection in ['people', 'events']:
+            for filename in (site / collection).glob('*/index.html'):
+                slug = filename.parent.name
+                expected_talks = [t for t in talks if (slug in t.get('speakers', []) if collection == 'people' else t.get('event') == slug)]
+                rendered = html.parse(str(filename)).xpath('//*[@data-talk-id]')
+                assert [node.get('data-talk-id') for node in rendered] == [t['id'] for t in expected_talks], filename
+                for talk, node in zip(expected_talks, rendered):
+                    seen.add(talk['id'])
+                    assert node.xpath('.//h3/text()') == [talk['title']], talk['id']
+                    assert node.xpath('.//time/@datetime') == [talk['date']], talk['id']
+                    destinations = [link['url'] for link in talk.get('links', [])]
+                    if talk.get('event'):
+                        destinations.append('/events/' + talk['event'] + '/')
+                    destinations = [baseurl + u if u.startswith('/') else u for u in destinations]
+                    single = len(set(destinations)) == 1
+                    assert sorted(node.xpath('.//a/@href')) == sorted(set(destinations) if single else destinations), talk['id']
+                    assert bool(node.xpath('./a')) == single, talk['id']
+                    assert not node.xpath('.//a//a | .//a//button'), talk['id']
+                    visible = ' '.join(node.text_content().split())
+                    for value in [talk.get('event_title', ''), talk.get('location', '')] + [l['label'] for l in talk.get('links', [])]:
+                        assert ' '.join(value.split()) in visible, (talk['id'], value)
+        assert seen == {t['id'] for t in talks}, 'A canonical talk stopped rendering'
+        talk_count = len(seen)
+    print(json.dumps({'glossary_terms':len(actual), 'preserved_term_links':sum(bool(t['link']) for t in actual), 'redirects':len(redirects), 'rendered_talks':talk_count, 'rendered':bool(site)}))
 
 
 if __name__ == '__main__':

@@ -1,7 +1,7 @@
 <section class="hero hero-large" aria-labelledby="page-title">
   <div class="hero-intro">
     <span id="page-hero-title" class="anchor-alias"></span><span id="hero-title" class="anchor-alias"></span>
-    <h1 id="page-title" class="page-hero-title">{{ page.hero.title | escape }}<br><small>{% for line in page.hero.subtitle %}{{ line | escape }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</small></h1>
+    <h1 id="page-title" class="page-hero-title"><span class="hero-opening">{{ page.hero.title | escape }}</span><small class="hero-support">{% for line in page.hero.subtitle %}<span{% if forloop.last %} class="hero-signoff"{% endif %}>{{ line | escape }}</span>{% endfor %}</small></h1>
     <div class="lede">{{ page.summary | markdownify }}</div>
     {% if page.hero.introduction %}<div class="lede">{{ page.hero.introduction | markdownify }}</div>{% endif %}
   </div>
