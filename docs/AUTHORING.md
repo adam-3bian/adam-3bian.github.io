@@ -203,3 +203,5 @@ python scripts/check_content.py --site dist-baseurl/preview --baseurl /preview
 For browser checks, serve the output directory, install Chromium with `python -m playwright install chromium`, and install `axe-core@4.10.3`. Set `SITE_URL` and `AXE_PATH`, then run `python scripts/test_catalog.py` and `python scripts/test_layouts.py`. Optional `CHROMIUM_EXECUTABLE` selects an existing Chromium binary. Catalogue screenshots go to `reports/browser/`; container, theme and navigation checks and full-page screenshots go to `reports/layout-fixes/after/`. CI checks both `/` and `/preview/` and uploads the review evidence.
 
 The fixtures under `scripts/fixtures/` are a migration safety net. Update them deliberately when a reviewed editorial change intentionally changes an existing route, anchor or ordered relationship. The rendered audit records inherited broken references separately from regressions.
+
+The glossary and shared card/panel presentation are documented in [the shared design rules](DESIGN_SYSTEM.md). The current glossary Markdown and its definitions are preserved; its layout supplies search, semantic definition rows and individual term links.

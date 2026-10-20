@@ -96,31 +96,29 @@ $slider-image-ratio: unquote("16 / 9");
 $onward-image-width: 12rem;
 $overlay-gutter: $space-4;
 
-// Colours. Use rgba(colour, alpha) for translucent section backgrounds.
-// The last value controls opacity: 0 is transparent and 1 is opaque.
-// Keep the body base, menus, controls and text opaque for clear reading.
+// Opaque reading and component surfaces; transparency is reserved for decorative artwork.
 $colour-text: #141414;
 $colour-muted: #373636;
-$colour-page: rgba(#ffffff, 0.46);
+$colour-page: #ffffff;
 $colour-page-edge: #f0f3f5;
 $colour-watermark: rgba(#125770, 0.32);
 $colour-link-hover: #721515;
-$colour-header: rgba(#ffffff, 0.94);
+$colour-header: #ffffff;
 $colour-submenu: #cbdbe5;
 $colour-navigation-hover: #e6eef3;
 $colour-submenu-hover: #b8cdd9;
-$colour-hero: rgba(#8ebed4, 0.66);
+$colour-hero: #e7f1f7;
 $colour-hero-accent: #ba1e1e;
-$colour-card: rgba(#74a7bf, 0.62);
-$colour-card-hover: rgba(#6b9db7, 0.72);
+$colour-card: #ffffff;
+$colour-card-hover: #f4f9fc;
 $colour-image-background: #fff;
-$colour-cta: rgba(#74a7bf, 0.62);
-$colour-cta-hover: rgba(#6b9db7, 0.72);
-$colour-subscribe-band: rgba(#062c3b, 0.74);
-$colour-subscribe-card: rgba(#c4e1ef, 0.76);
-$colour-subscribe-card-hover: rgba(#aed4e7, 0.80);
+$colour-cta: #e7f1f7;
+$colour-cta-hover: #d9eaf3;
+$colour-subscribe-band: #0d3344;
+$colour-subscribe-card: #d8eaf2;
+$colour-subscribe-card-hover: #c4dfec;
 $colour-subscribe-text: #08202b;
-$colour-footer: rgba(#062c3b, 0.82);
+$colour-footer: #0a2a39;
 $colour-footer-hover: #10465b;
 $colour-footer-text: #ffffff;
 $colour-footer-muted: #d1d6df;
@@ -171,15 +169,15 @@ $theme-light: (
   focus: $colour-text,
   overlay: rgba(12, 21, 25, 0.88)
 );
-// A darker content background keeps the watermark subdued behind body text.
+// The homepage keeps its dark composition with solid reading surfaces.
 $theme-dark: (
   text: #ffffff,
   muted: #d1d6df,
-  page: rgba(#07151e, 0.90),
+  page: #091a24,
   page-edge: #07131b,
   watermark: rgba(#74bedd, 0.48),
   link-hover: #ffcaca,
-  header: rgba(#102832, 0.94),
+  header: #102832,
   submenu: #28404c,
   navigation-hover: #28404c,
   submenu-hover: #345362,
@@ -189,18 +187,18 @@ $theme-dark: (
   submenu-hover-level-2: #2f4c5b,
   submenu-hover-level-3: #294552,
   submenu-hover-level-4: #233e4b,
-  hero: rgba(#1e5e7a, 0.60),
+  hero: #16475b,
   hero-accent: #fdece3,
-  card: rgba(#2d6079, 0.60),
-  card-hover: rgba(#2e647e, 0.72),
+  card: #143447,
+  card-hover: #1d4357,
   image-background: #fff,
-  cta: rgba(#2d6079, 0.60),
-  cta-hover: rgba(#2e647e, 0.72),
-  subscribe-band: rgba(#08232f, 0.68),
+  cta: #143447,
+  cta-hover: #1d4357,
+  subscribe-band: #08232f,
   subscribe-card: $colour-subscribe-card,
   subscribe-card-hover: $colour-subscribe-card-hover,
   subscribe-text: $colour-subscribe-text,
-  footer: rgba(#08232f, 0.82),
+  footer: #08232f,
   footer-hover: #103445,
   footer-text: #ffffff,
   footer-muted: #d1d6df,

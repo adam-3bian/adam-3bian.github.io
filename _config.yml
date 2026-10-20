@@ -170,6 +170,10 @@ defaults:
   values:
     layout: detail
     parent: /discover/resources/reports-and-white-papers/
+- scope:
+    path: pages/discover/resources/glossary.md
+  values:
+    layout: glossary
 title: CHERI Alliance
 description: 'CHERI Alliance: hardware-enforced memory safety, secure software and the CHERI community.'
 lang: en-GB

@@ -1,0 +1,54 @@
+---
+layout: default
+---
+{% include page-header.html %}
+<article class="content reading-content glossary-content" data-glossary>
+  {% assign letter_sections = content | split: '<h3' %}
+  {% assign introduction = letter_sections | first %}
+  {% assign introduction_parts = introduction | split: '<p class="glossary-index">' %}
+  {{ introduction_parts | first }}
+  {% assign all_terms = content | split: '<h4' %}
+  <div class="glossary-tools" data-glossary-controls hidden>
+    <label for="glossary-search">Find a term</label>
+    <div class="glossary-search-row">
+      <input id="glossary-search" type="search" placeholder="Search terms and definitions" aria-controls="glossary-entries" autocomplete="off" data-glossary-search>
+      <button class="button button-secondary" type="button" data-glossary-clear>Clear</button>
+    </div>
+    <p class="glossary-count" role="status" aria-live="polite" aria-atomic="true" data-glossary-count>{{ all_terms.size | minus: 1 }} terms</p>
+  </div>
+  {% if introduction_parts.size > 1 %}
+    {% assign index_content = introduction_parts[1] | split: '</p>' | first %}
+    <nav class="glossary-index" aria-label="Glossary alphabet">{{ index_content }}</nav>
+    {{ introduction_parts[1] | remove_first: index_content | remove_first: '</p>' }}
+  {% endif %}
+  <div id="glossary-entries">
+  {% for letter_section in letter_sections offset:1 %}
+    {% assign group_heading = letter_section | split: '</h3>' | first %}
+    {% assign group_body = letter_section | remove_first: group_heading | remove_first: '</h3>' %}
+    <section class="glossary-group" data-glossary-group>
+      <h3 tabindex="-1"{{ group_heading }}</h3>
+      <dl class="glossary-definitions">
+      {% assign entries = group_body | split: '<h4' %}
+      {% for entry in entries offset:1 %}
+        {% assign entry_heading = entry | split: '</h4>' | first %}
+        {% assign heading_prefix = entry_heading | split: '>' | first | append: '>' %}
+        {% assign term = entry_heading | remove_first: heading_prefix %}
+        {% assign term_name = term | strip_html | strip %}
+        {% capture term_id %}glossary-term-{{ term_name | slugify }}{% endcapture %}
+        {% assign original_attributes = entry_heading | split: '>' | first %}
+        {% if original_attributes contains 'id="' %}{% assign term_id = original_attributes | split: 'id="' | last | split: '"' | first %}{% endif %}
+        {% assign definition = entry | remove_first: entry_heading | remove_first: '</h4>' | strip %}
+        {% assign definition = definition | replace_first: '<p>: ', '<p>' %}
+        <div class="glossary-entry" data-glossary-entry>
+          <dt id="{{ term_id | escape }}" tabindex="-1"><dfn>{{ term }}</dfn><a class="glossary-permalink" href="#{{ term_id | escape }}" aria-label="Link to {{ term_name | escape }}"><span aria-hidden="true">#</span></a></dt>
+          <dd>{{ definition }}</dd>
+        </div>
+      {% endfor %}
+      </dl>
+    </section>
+  {% endfor %}
+  </div>
+  <div class="glossary-empty" data-glossary-empty hidden>
+    <p>No matching terms.</p><button class="button button-secondary" type="button" data-glossary-reset>Clear search</button>
+  </div>
+</article>

@@ -13,8 +13,8 @@ Reviewed 20 October 2026 on `design/collections-redesign`, based on main commit 
 | Existing routes | All 732 retained. |
 | Existing main-content anchors | All 2,974 recorded anchors retained. No duplicate rendered IDs. |
 | Rendered links | No new broken references; inherited failures are listed separately below. |
-| Browser review | 40 views per deployment: desktop/mobile directories and representative details, articles, ordinary pages and the original dark homepage. |
-| Accessibility | No axe WCAG A/AA violations in the 80 audited views. |
+| Browser review | 42 views per deployment: desktop/mobile directories, glossary, representative details, articles, ordinary pages and the original dark homepage. Two additional tablet glossary audits cover the presentation pass. |
+| Accessibility | No axe WCAG A/AA violations in the 86 audited views. |
 | Interaction checks | Search, accent-insensitive matching, filters, title/date sorting, keyboard view switching, query-state persistence, reset, board order and sparse records passed. |
 | No JavaScript | All directory records and official document actions remain available. |
 | Event status | Start/end-day boundaries and cancellation/postponement cases passed. |
@@ -67,3 +67,5 @@ The final safe-mode root and `/preview/` builds both pass the original route, an
 Original, before and after screenshots are saved under `reports/layout-fixes/original/`, `before/`, `after/` and `preview/`; each includes desktop/mobile homepage, ordinary page, news article, collection directory and detail examples. The original/before captures use 1600px desktop and 390px mobile widths; the after captures use the same widths. The workflow uploads newly generated screenshots and JSON results with the catalogue review artifact.
 
 [Representative before/after screenshots](screenshots/layout-repairs/README.md) are also retained in the repository for review.
+
+The subsequent [catalogue polish review](DESIGN_REVIEW.md) records the opaque surfaces, card/panel contracts and glossary improvements, with [shared component rules](DESIGN_SYSTEM.md) and matching before/after screenshots.

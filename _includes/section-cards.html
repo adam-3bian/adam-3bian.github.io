@@ -1,6 +1,6 @@
 {%- comment -%}
-  Arrange complete, explicitly selected Markdown H2 sections using the ZIP grid
-  and card primitives. Multiple destinations remain separate native links.
+  Arrange complete, explicitly selected Markdown H2 sections using shared grid
+  and content-panel primitives. Multiple destinations remain separate native links.
   Unselected content passes through in order; no excerpts or copied YAML prose.
   Select by existing heading ID, or exact title when the source has no ID.
 {%- endcomment -%}
@@ -36,7 +36,7 @@
       {%- assign has_trailing_rule = true -%}
       {%- assign section_html = section_html | remove_first: '<hr />' -%}
     {%- endif -%}
-    <section class="card content"{% if section_id %} aria-labelledby="{{ section_id | escape }}"{% endif %}>{{ section_html }}</section>
+    <section class="content-panel content"{% if section_id %} aria-labelledby="{{ section_id | escape }}"{% endif %}>{{ section_html }}</section>
     {%- if has_trailing_rule -%}</div><hr />{%- assign open_group = nil -%}{%- endif -%}
   {%- elsif selected_group.presentation == 'action' -%}
     {%- assign action_paragraphs = card_section | prepend: '<h2' | split: '<p>' -%}

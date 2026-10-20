@@ -24,7 +24,7 @@
 .form-field input, .form-field select, .form-field textarea {
   background: var(--colour-control);
   border: $control-border-width solid var(--colour-control-border);
-  border-radius: 0;
+  border-radius: 8px;
   color: inherit;
   font: inherit;
   min-height: $control-height;
@@ -46,6 +46,7 @@
   align-items: center;
   background: var(--button-background, var(--colour-button));
   border: 0;
+  border-radius: 8px;
   color: var(--button-text, var(--colour-button-text));
   cursor: pointer;
   display: inline-flex;
@@ -63,6 +64,7 @@
   text-decoration: none;
 }
 .button-secondary {
+  border: 1px solid var(--colour-control-border);
   --button-background: var(--colour-card);
   --button-hover: var(--colour-card-hover);
   --button-text: var(--colour-text);

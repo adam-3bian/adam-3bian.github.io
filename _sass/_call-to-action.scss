@@ -19,8 +19,21 @@
   --colour-cta-hover: var(--colour-subscribe-card-hover);
   --colour-focus: var(--colour-subscribe-text);
   background: var(--colour-subscribe-band);
+  isolation: isolate;
   padding-block: $section-gap-mobile;
+  position: relative;
   width: 100%;
+}
+.site-call-to-action::before {
+  background-image: var(--watermark-image);
+  background-position: center top;
+  background-repeat: repeat;
+  content: "";
+  inset: 0;
+  opacity: var(--watermark-opacity);
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
 }
 .site-call-to-action .card { color: var(--colour-subscribe-text); }
 @media (min-width: $desktop-breakpoint) {

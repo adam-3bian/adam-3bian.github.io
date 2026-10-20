@@ -4,14 +4,19 @@
   min-width: 0;
   padding: $card-padding-mobile;
   text-decoration: none;
+  transition: background .18s, border-color .18s, box-shadow .18s;
 }
-.card:is(:hover, :focus-visible) {
+a.card:is(:hover, :focus-visible) {
   background: var(--colour-card-hover);
+  border-color: var(--accent);
+  box-shadow: var(--shadow);
   text-decoration: none;
 }
 .card:focus-visible {
-  outline-offset: -$focus-width;
+  outline-offset: $focus-width;
 }
+a.card:is(:hover, :focus-visible) :is(h2, h3),
+a.catalog-card:is(:hover, :focus-visible) :is(h2, h3) { text-decoration: underline; text-underline-offset: .15em; }
 .card h2, .card h3 {
   font-size: $font-size-card;
   letter-spacing: $letter-spacing-heading-2;
@@ -66,6 +71,24 @@
   flex-direction: column;
   height: 100%;
 }
+.content-panel {
+  background: var(--surface-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: inherit;
+  min-width: 0;
+  padding: $card-padding-mobile;
+}
+.cards .content-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.content-panel h2, .content-panel h3 {
+  font-size: $font-size-card;
+  line-height: $line-height-card;
+}
+.content-panel a { text-underline-offset: .2em; }
 .cards .card-action {
   margin-top: auto;
   padding-top: $space-6;
@@ -80,9 +103,9 @@
   margin-top: 0;
 }
 @media (min-width: $desktop-breakpoint) {
-  .card { padding: $card-padding-desktop; }
+  .card, .content-panel { padding: $card-padding-desktop; }
 }
 
 @media (min-width: $wide-breakpoint) {
-  .card { padding: $card-padding-wide; }
+  .card, .content-panel { padding: $card-padding-wide; }
 }

@@ -9,7 +9,7 @@ URL = os.environ.get('SITE_URL', 'http://127.0.0.1:4200/').rstrip('/') + '/'
 OUT = Path(os.environ.get('REPORT_ROOT', ROOT / 'reports/browser'))
 OUT.mkdir(parents=True, exist_ok=True)
 AXE = Path(os.environ.get('AXE_PATH', '/workspace/work/browser-tools/node_modules/axe-core/axe.min.js'))
-routes = ['', 'people/', 'organisations/', 'news/', 'events/', 'papers/', 'hardware/', 'software/', 'groups/', 'guides/', 'policies/', 'reports/', 'build/platforms/cheri-products/', 'people/mike-eftimakis/', 'people/a-theodore-markettos/', 'policies/code-of-conduct/', 'events/cheritech26/', 'papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/', 'news/ai-doesnt-need-a-kill-switch-it-needs-boundaries/', 'discover/understand/how-does-cheri-work/']
+routes = ['', 'discover/resources/glossary/', 'people/', 'organisations/', 'news/', 'events/', 'papers/', 'hardware/', 'software/', 'groups/', 'guides/', 'policies/', 'reports/', 'build/platforms/cheri-products/', 'people/mike-eftimakis/', 'people/a-theodore-markettos/', 'policies/code-of-conduct/', 'events/cheritech26/', 'papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/', 'news/ai-doesnt-need-a-kill-switch-it-needs-boundaries/', 'discover/understand/how-does-cheri-work/']
 results = []
 
 def ready(page):

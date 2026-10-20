@@ -31,6 +31,7 @@
   <script src="{{ '/assets/js/navigation.js' | relative_url }}" defer></script>
   <script src="{{ '/assets/js/content.js' | relative_url }}" defer></script>
   <script src="{{ '/assets/js/catalog.js' | relative_url }}" defer></script>
+  {% if page.layout == 'glossary' %}<script src="{{ '/assets/js/glossary.js' | relative_url }}" defer></script>{% endif %}
   {% if page.slider.slides %}<script src="{{ '/assets/js/slider.js' | relative_url }}" defer></script>{% endif %}
   {% if page['image-overlay'] %}<script src="{{ '/assets/js/image-overlay.js' | relative_url }}" defer></script>{% endif %}
 </body></html>
