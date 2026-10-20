@@ -1,27 +1,42 @@
 ---
+layout: details/speaker
 title: Robert Watson
-organization:
-- cheri-alliance
-- university-of-cambridge
-speaker: true
-summary: Professor Robert N. M. Watson is a Professor of Systems, Security, and Architecture at the University of
-  Cambridge’s Department of Computer Science and Technology.
-thumbnail:
-  src: /assets/people/robert-watson/9eba3ea44771-portrait.png
+summary: Professor Robert N. M. Watson is a Professor of Systems, Security, and Architecture at the University of Cambridge’s Department of Computer Science and Technology.
+permalink: /people/robert-watson/
+slug: robert-watson
+navigation:
+  header:
+    category: News & Events
+    subcategory: People & Opportunities
+image:
+  src: /assets/images/news-and-events/people-and-opportunities/robert-watson/8fc9ef6c-9eba3ea44771-portrait.png
   alt: Robert Watson
   width: 1024
   height: 768
-links:
-- label: Back to all speakers
-  url: /news-and-events/people-and-opportunities/speakers/
-  kind: navigation
-- label: LinkedIn
-  url: https://www.linkedin.com/in/robert-watson-3747a6253/
-  kind: profile
+person:
+  roles:
+  - speaker
+  organisations:
+  - organisation: cheri-alliance
+    relationship: governance
+    positions:
+    - title: Director
+      status: current
+  - organisation: university-of-cambridge
+    relationship: employment
+    positions:
+    - title: Professor of Systems, Security, and Architecture
+      status: current
+  links:
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/robert-watson-3747a6253/
+related:
+- type: page
+  slug: news-and-events-people-and-opportunities-speakers
+  relation: navigation
 ---
 
 ## Biography
-{: id="biography" }
 
 Professor Robert N. M. Watson is a Professor of Systems, Security, and Architecture at the University of Cambridge’s Department of Computer Science and Technology. His research encompasses computer architecture, compilers, program analysis, operating systems, networking, and security. He leads several cross-layer research projects in these areas.
 

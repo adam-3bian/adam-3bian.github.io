@@ -23,7 +23,12 @@
     }));
     const collator = new Intl.Collator(document.documentElement.lang, { sensitivity: 'base', numeric: true });
     const facets = [...new Set(records.flatMap(record => record.facets))].sort(collator.compare);
-    facets.forEach((value) => filter.add(new Option(value, value)));
+    const facetLabel = (value) => {
+      if (/[A-Z]/.test(value)) return value;
+      const words = value.replace(/[_-]+/g, ' ');
+      return words.replace(/^fpga\b/, 'FPGA').replace(/^[a-z]/, (letter) => letter.toUpperCase());
+    };
+    facets.forEach((value) => filter.add(new Option(facetLabel(value), value)));
     catalog.querySelector('[data-filter-control]').hidden = facets.length < 2;
     if (!records.some(record => Number.isFinite(record.date))) {
       catalog.querySelectorAll('[data-date-option]').forEach(option => option.remove());

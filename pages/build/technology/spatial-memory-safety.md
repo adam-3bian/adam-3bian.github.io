@@ -1,24 +1,32 @@
 ---
+layout: page/standard
 title: Spatial Memory Safety
-permalink: /build/technology/spatial-memory-safety/
-where-next:
-  url: /build/technology/temporal-memory-safety/
-related-pages:
-- url: /build/technology/how-cheri-capabilities-work/
-  description: How CHERI Capabilities work.
-  action: Read this page
-- url: /build/technology/cheri-capabilities/sealing/
-  description: Some authority should be carried without being directly exercised by its holder.
-  action: Read this page
 summary: Spatial memory safety prevents code from accessing memory outside the bounds authorised by a capability.
+permalink: /build/technology/spatial-memory-safety/
+slug: build-technology-spatial-memory-safety
+navigation:
+  header:
+    category: Build
+    subcategory: Technology
+related:
+- type: page
+  slug: build-technology-temporal-memory-safety
+  relation: next_step
+- type: page
+  slug: build-technology-how-cheri-capabilities-work
+  relation: related
+- type: page
+  slug: build-technology-cheri-capabilities-sealing
+  relation: related
 ---
+
+## Overview
 
 For example, a program allocates 64 bytes for a network message but accidentally reads byte 80. The allocation still exists, but the access falls outside the memory assigned to that object. This is a **spatial memory-safety violation**.
 
 Typical spatial errors include buffer overflows, buffer overreads, negative indexing, and pointer arithmetic that crosses from one object into another.
 
 ## Why virtual memory is not enough
-{: id="why-virtual-memory-is-not-enough" }
 
 Conventional virtual memory controls access at page granularity, typically several kilobytes in size and covering many heap allocations, stack variables, or other objects.
 
@@ -29,7 +37,6 @@ An invalid access that remains inside a mapped page therefore may not cause a pa
 CHERI adds fine-grain capability checks to memory access while virtual memory continues to provide address-space isolation.
 
 ## Object-bounded access
-{: id="object-bounded-access" }
 
 In a pure-capability environment, a pointer used for memory access carries bounds and permissions. When code loads or stores through it, the processor checks the complete access against the capability’s authorised range.
 
@@ -45,7 +52,6 @@ Invalid 4-byte load:                         [----]
 An out-of-bounds operation raises a capability exception instead of accessing neighbouring memory.
 
 ## Where do the bounds come from?
-{: id="where-bounds-come-from" }
 
 Bounds can be established and refined at several levels:
 
@@ -58,7 +64,6 @@ Bounds can be established and refined at several levels:
 A pure-capability ABI provides broad pointer coverage, while the exact bounds depend on factors such as object layout, compiler policy, representability and source semantics.
 
 ## Example: protecting a parser
-{: id="example-protecting-a-parser" }
 
 ~~~
 int parse_header(const unsigned char *packet, size_t length) {
@@ -77,7 +82,6 @@ On a CHERI system, passing a capability bounded to the actual packet adds hardwa
 This is **defence in depth**: source-level checks express the application's rules, while capability bounds enforce the memory authority available to the code.
 
 ## Subobjects and compatibility
-{: id="subobjects-and-compatibility" }
 
 A structure can contain several fields within one allocation. Bounding a pointer to a particular field can prevent access to neighbouring fields, providing stronger isolation.
 
@@ -86,7 +90,6 @@ Some existing C idioms, however, derive a pointer to an enclosing structure from
 When describing spatial-safety guarantees, it is important to distinguish between bounds covering allocations, complete objects, or individual subobjects.
 
 ## What spatial safety prevents
-{: id="what-spatial-safety-prevents" }
 
 Correctly configured capability bounds can prevent or contain:
 
@@ -97,7 +100,6 @@ Correctly configured capability bounds can prevent or contain:
 - many pointer-corruption attacks that depend on accessing nearby memory
 
 ## What it does not prevent
-{: id="what-it-does-not-prevent" }
 
 Spatial memory safety does not by itself prevent:
 

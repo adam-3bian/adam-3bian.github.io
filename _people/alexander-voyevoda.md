@@ -1,25 +1,34 @@
 ---
+layout: details/speaker
 title: Alexander Voyevoda
-organization:
-- um-labs
-speaker: true
 summary: Alex Voyevoda is a senior systems engineer focused on turning high‑assurance ideas into production systems.
-thumbnail:
-  src: /assets/people/alexander-voyevoda/61dfcb5182bc-portrait.png
+permalink: /people/alexander-voyevoda/
+slug: alexander-voyevoda
+navigation:
+  header:
+    category: News & Events
+    subcategory: People & Opportunities
+image:
+  src: /assets/images/news-and-events/people-and-opportunities/alexander-voyevoda/9d4b1523-61dfcb5182bc-portrait.png
   alt: Alexander Voyevoda
   width: 1024
   height: 1024
-links:
-- label: Back to all speakers
-  url: /news-and-events/people-and-opportunities/speakers/
-  kind: navigation
-- label: LinkedIn
-  url: https://www.linkedin.com/in/alexandervoevoda/
-  kind: profile
+person:
+  roles:
+  - speaker
+  organisations:
+  - organisation: um-labs
+    relationship: other
+  links:
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/alexandervoevoda/
+related:
+- type: page
+  slug: news-and-events-people-and-opportunities-speakers
+  relation: navigation
 ---
 
 ## Biography
-{: id="biography" }
 
 Alex Voyevoda is a senior systems engineer focused on turning high‑assurance ideas into production systems. With over 30 years of experience in low‑level C systems on Linux, he leads the implementation of Unicus Edge on Morello CHERI at UM Labs — bringing capability‑based memory safety and post‑quantum cryptography into real‑world streaming and IoT deployments.
 

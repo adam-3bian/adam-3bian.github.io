@@ -1,19 +1,26 @@
 ---
+layout: page/standard
 title: CHERI and Rust
-permalink: /discover/why-cheri/cheri-and-rust/
-where-next:
-  url: /build/technology/cheri-and-rust-technical/
-related-pages:
-- url: /groups/rust-plus-cheri/
-  title: Rust+CHERI working group
-  description: The working group brings together the strengths of Rust and CHERI.
-  action: Read this page
-- url: /discover/understand/cheri-and-existing-software/
-  description: Porting software to CHERI is a process of finding assumptions about pointers, integers, objects,
-    bounds, provenance, lifetimes, and interfaces.
-  action: Read this page
 summary: Rust and CHERI are complementary, not competing approaches.
+permalink: /discover/why-cheri/cheri-and-rust/
+slug: discover-why-cheri-cheri-and-rust
+navigation:
+  header:
+    category: Discover CHERI
+    subcategory: Why CHERI
+related:
+- type: page
+  slug: build-technology-cheri-and-rust-technical
+  relation: next_step
+- type: working_group
+  slug: rust-plus-cheri
+  relation: related
+- type: page
+  slug: discover-understand-cheri-and-existing-software
+  relation: related
 ---
+
+## Overview
 
 Rust and CHERI address memory safety at different layers. Together, they provide stronger protection than either approach alone. Why choose one when you can have both?
 
@@ -22,18 +29,16 @@ Rust helps prevent many memory-safety vulnerabilities from being introduced into
 For a detailed technical comparison of Rust and CHERI, see [CHERI and Rust - Technical Overview](/build/technology/cheri-and-rust-technical/).
 
 ## Why Rust alone is not the whole story
-{: id="why-rust-alone-is-not-the-whole-story" }
 
 Rust provides strong protection for safe Rust code. This makes Rust a strong choice for new software. However, real systems rarely consist entirely of safe Rust.
 
-![Impossible to control all code](/assets/shared/source-assets/a9f89a0614af-rust-and-cheri.webp){: .image-full }
+![Impossible to control all code](/assets/images/common/fcefa825-a9f89a0614af-rust-and-cheri.webp){: .image-full }
 
 Most applications rely on more than just their own code. They also depend on unsafe Rust code, existing C and C++ libraries, third-party components, operating systems, drivers, runtimes, memory allocators, and firmware.
 
 The security of the whole system depends on every layer, not just the application itself.
 
 ## What CHERI adds
-{: id="what-cheri-adds" }
 
 CHERI provides hardware-enforced memory protection beneath the programming language.
 
@@ -44,7 +49,6 @@ Rust catches many problems before software is deployed. CHERI continues enforcin
 CHERI can also reduce the impact of vulnerabilities in third-party software by limiting the data and services that external components are allowed to access.
 
 ## Better together
-{: id="better-together" }
 
 Rust and CHERI solve different parts of the problem:
 
@@ -55,14 +59,12 @@ Rust and CHERI solve different parts of the problem:
 Together they provide multiple layers of protection, consistent with the layered approach described by ETSI TS 104 198. This complementarity is increasingly recognised across industry and academia. The CHERI Alliance’s [Rust+CHERI working group](/groups/rust-plus-cheri/) focuses specifically on advancing these technologies together.
 
 ## Simple example
-{: id="simple-example" }
 
 A Rust application might call an image-decoding library. On a conventional system, an error in the library might let it read other memory in the process.
 
 Rust can help ensure the application calls the library safely. CHERI can ensure that even if the decoder contains a vulnerability, it only receives access to the image data it needs, rather than unrestricted access to the entire application.
 
 ## Key takeaways
-{: id="key-takeaways" }
 
 - Rust and CHERI are complementary technologies
 - Rust helps prevent vulnerabilities in new code

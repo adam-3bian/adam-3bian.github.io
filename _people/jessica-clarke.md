@@ -1,27 +1,34 @@
 ---
+layout: details/speaker
 title: Jessica Clarke
-organization:
-- university-of-cambridge
-speaker: true
-summary: Jessica Clarke is a Senior Research Software Engineer at the [University of Cambridge](/organisations/university-of-cambridge/),
-  contributing to the maintenance and development of CHERI LLVM and CheriBSD, and has been involved with the project
-  since 2016 when she wrote the first prototype of a CHERI linker.
-thumbnail:
-  src: /assets/people/jessica-clarke/0a87d930d003-portrait.png
+summary: Jessica Clarke is a Senior Research Software Engineer at the [University of Cambridge](/organisations/university-of-cambridge/), contributing to the maintenance and development of CHERI LLVM and CheriBSD, and has been involved with the project since 2016 when she wrote the first prototype of a CHERI linker.
+permalink: /people/jessica-clarke/
+slug: jessica-clarke
+navigation:
+  header:
+    category: News & Events
+    subcategory: People & Opportunities
+image:
+  src: /assets/images/news-and-events/people-and-opportunities/jessica-clarke/6b5c9d18-0a87d930d003-portrait.png
   alt: Jessica Clarke
   width: 900
   height: 1200
-links:
-- label: Back to all speakers
-  url: /news-and-events/people-and-opportunities/speakers/
-  kind: navigation
-- label: LinkedIn
-  url: https://www.linkedin.com/in/jessica-clarke-428b7247/
-  kind: profile
+person:
+  roles:
+  - speaker
+  organisations:
+  - organisation: university-of-cambridge
+    relationship: other
+  links:
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/jessica-clarke-428b7247/
+related:
+- type: page
+  slug: news-and-events-people-and-opportunities-speakers
+  relation: navigation
 ---
 
 ## Biography
-{: id="biography" }
 
 Jessica Clarke is a Senior Research Software Engineer at the [University of Cambridge](/organisations/university-of-cambridge/), contributing to the maintenance and development of CHERI LLVM and CheriBSD, and has been involved with the project since 2016 when she wrote the first prototype of a CHERI linker.
 

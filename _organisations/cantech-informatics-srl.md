@@ -1,31 +1,35 @@
 ---
+layout: details/member
 title: Cantech Informatics SRL
-member: true
 summary: Details to follow.
-membership_category: Full Member
-membership_status: Member
-links:
-- label: Visit member website
-  url: https://cantech-informatics.com/
-  kind: website
-  primary: true
-- label: Back to all members
-  url: /alliance/leadership/members/
-  kind: navigation
-thumbnail:
-  src: /assets/organisations/cantech-informatics-srl/7ef3653af98e-logo.png
+permalink: /organisations/cantech-informatics-srl/
+slug: cantech-informatics-srl
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Leadership
+image:
+  src: /assets/images/common/46f53df8-7ef3653af98e-logo.png
   alt: Cantech Informatics logo
   width: 700
   height: 300
   fit: contain
+organisation:
+  membership:
+    is_member: true
+    status: active
+    tier: full
+  website: https://cantech-informatics.com/
+related:
+- type: page
+  slug: alliance-leadership-members
+  relation: navigation
 ---
 
 ## Description
-{: id="description" }
 
 Details to follow.
 
 ## CHERI Activities
-{: id="cheri-activities" }
 
 Details to follow.

@@ -1,24 +1,34 @@
 ---
+layout: details/guide
 title: Choosing a CHERI Development Platform
-where-next:
-  url: /guides/run-cheri-in-simulation/
 summary: Practical guidance for choosing a CHERI development and evaluation environment.
-topic: Getting started
+permalink: /guides/choose-a-platform/
+slug: choose-a-platform
+navigation:
+  header:
+    category: Build
+    subcategory: Software Developers
+guide:
+  topic: getting-started
+related:
+- type: guide
+  slug: run-cheri-in-simulation
+  relation: next_step
 ---
+
+## Overview
 
 Don’t start by comparing processors. Start by identifying what you want to build, port, or evaluate.
 
 A team porting a Unix service needs a different environment from one developing compartmentalised firmware for a microcontroller. Define the workload and the security property you want to investigate before choosing a platform.
 
 ## Do I need CHERI hardware?
-{: id="do-i-need-cheri-hardware" }
 
 Not for most early development work. You can learn CHERI, port applications, and debug capability violations using QEMU or simulation on a standard workstation.
 
 Move to physical hardware when you need realistic performance measurements, hardware integration, peripheral access, or deployment-specific testing.
 
 ## Quick comparison
-{: id="quick-comparison" }
 
 | I want to… | Recommendation |
 | --- | --- |
@@ -31,7 +41,6 @@ Move to physical hardware when you need realistic performance measurements, hard
 | Build a **commercial product** | Evaluate supplier SDKs, supported hardware, operating-system options, long-term support arrangements, and product roadmaps. The best learning platform is not always the best production platform. |
 
 ## Start with the security question
-{: id="start-with-the-security-question" }
 
 Different experiments need different capabilities:
 
@@ -44,7 +53,6 @@ Different experiments need different capabilities:
 A simulator is suitable for functional behaviour and early porting. It is rarely suitable for final timing, power, or microarchitectural conclusions.
 
 ## Rich OS development
-{: id="rich-os-development" }
 
 **CheriBSD on CHERI-RISC-V** is a strong general starting point for developers who want a complete Unix-like system without specialist hardware. The `cheribuild` tool can build the compiler, operating system, disk image, and CHERI-enabled QEMU target.
 
@@ -53,7 +61,6 @@ A simulator is suitable for functional behaviour and early porting. It is rarely
 **CHERI Linux** is appropriate when the Linux kernel and user-space ecosystem are central to the evaluation. Check the CHERI Linux roadmap and repository for current branches, supported processors, and user-space scope.
 
 ## Embedded development
-{: id="embedded-development" }
 
 **CHERIoT** is designed for small, connected systems. It combines a CHERI-enabled 32-bit RISC-V architecture with a compartmentalised real-time operating system (RTOS) and a defined software model. The official development container includes the compiler, build tools, auditing tools, and simulators.
 
@@ -62,7 +69,6 @@ Use simulation for the first build. Move to **Sonata** development board or anot
 There are also CHERI-RISC-V embedded platforms that can run CHERI-enabled **Zephyr** and other real-time operating-system. This may be the better fit when an existing RTOS ecosystem is a hard requirement. Confirm the current port’s architecture and feature coverage before comparing it with CHERIoT.
 
 ## Five practical selection checks
-{: id="five-practical-selection-checks" }
 
 1. **Workload:** Can the platform run the operating system, libraries, language, and peripherals you need?
 2. **Protection mode:** Does the target support pure-capability code, compartments, and any required temporal-safety mechanism?
@@ -71,7 +77,6 @@ There are also CHERI-RISC-V embedded platforms that can run CHERI-enabled **Zeph
 5. **Lifecycle:** Is the platform a learning environment, a prototype, an open-source integration target, or a supported commercial product?
 
 ## Where to start
-{: id="where-to-start" }
 
 If you have no fixed platform requirement and want a more mature environment:
 
@@ -83,6 +88,5 @@ Resist the temptation to start with a large application. First, boot the environ
 Continue with [Run CHERI in Simulation](/guides/run-cheri-in-simulation/).
 
 ## Choosing a platform for product development
-{: id="choosing-a-platform-for-product-development" }
 
 If your goal is to evaluate a path to a commercial product, prioritise toolchain maturity, operating-system support, hardware availability, long-term maintenance, and supplier support. The best learning platform is not always the best platform for product development.

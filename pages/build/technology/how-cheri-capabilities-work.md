@@ -1,17 +1,22 @@
 ---
+layout: page/standard
 title: How CHERI Capabilities work
-permalink: /build/technology/how-cheri-capabilities-work/
-where-next:
-  url: /build/technology/tags-and-validity/
 summary: Pointers tell you where. Capabilities define what you can do.
+permalink: /build/technology/how-cheri-capabilities-work/
+slug: build-technology-how-cheri-capabilities-work
+navigation:
+  header:
+    category: Build
+    subcategory: Technology
 ---
+
+## Overview
 
 A conventional pointer is essentially an address. A **CHERI capability** adds hardware-protected information describing the authority that goes with that address: where it can access, what operations it can perform, and whether the reference is valid.
 
 This makes memory protection part of the architecture rather than relying only on software behaving correctly.
 
 ## What does a capability contain?
-{: id="what-a-capability-contains" }
 
 A capability contains:
 
@@ -30,7 +35,6 @@ The exact representation differs between CHERI architectures, but the principle 
 ## Five concepts to understand
 
 ### ✅ Tags: is this a real capability?
-{: id="tags-is-this-a-real-capability" }
 
 Knowing an address is not enough to access it.
 
@@ -43,7 +47,6 @@ Developer takeaway: don't assume you can serialise a capability as bytes or reco
 [Learn more about tags and validity](/build/technology/cheri-capabilities/tags-and-validity/) →
 
 ### ↔️ Bounds: where can it access?
-{: id="bounds-where-can-it-access" }
 
 Capabilities contain enforceable memory bounds.
 
@@ -62,7 +65,6 @@ Developer takeaway: an out-of-bounds pointer is no longer just a software bug th
 [Learn more about bounds](/build/technology/cheri-capabilities/bounds/) →
 
 ### 🔐 Permissions: what can it do?
-{: id="permissions-what-can-it-do" }
 
 Capabilities can independently control operations such as reading, writing and executing, with additional permissions depending on the architecture.
 
@@ -80,7 +82,6 @@ Developer takeaway: pass the authority a component actually needs, rather than g
 [Learn more about permissions](/build/technology/cheri-capabilities/permissions/) →
 
 ### ↪️ Provenance: where did its authority come from?
-{: id="provenance-where-did-its-authority-come-from" }
 
 Two values can contain the same address without carrying the same authority.
 
@@ -91,7 +92,6 @@ Developer takeaway: keep live references as capabilities.
 [Learn more about provenance](/build/technology/cheri-capabilities/provenance/) →
 
 ### 🔒 Sealing: can it be used directly?
-{: id="sealing-can-it-be-used-directly" }
 
 A capability can be sealed, turning it into a protected token that ordinary code cannot dereference directly.
 
@@ -163,3 +163,6 @@ Start with one idea:
 - Sealing controls how it can be used
 
 Together, they give developers a practical way to build software around explicit, least-privilege access to memory and services.
+
+
+See [/build/technology/tags-and-validity/](/build/technology/cheri-capabilities/tags-and-validity/).

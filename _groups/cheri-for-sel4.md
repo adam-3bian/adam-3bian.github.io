@@ -1,24 +1,31 @@
 ---
+layout: details/working-group
 title: 4️⃣ CHERI for seL4 WG
-where-next:
-  url: /groups/cheri-freertos/
-  title: CHERI FreeRTOS
-summary: Coordinates work at the intersection of CHERI capabilities, seL4, Microkit, verified kernels, and capability-oriented
-  system design.
-group_type: Technical
-collaboration_areas:
-- seL4 and Microkit integration
-- Capability-oriented interfaces
-- Isolation and assurance
-links:
-- label: Back to all working groups
-  url: /alliance/leadership/working-groups/
-  kind: navigation
-- label: Enquire about this group
-  url: /alliance/membership/contact/
-  kind: resource
-  primary: true
+summary: Coordinates work at the intersection of CHERI capabilities, seL4, Microkit, verified kernels, and capability-oriented system design.
+permalink: /groups/cheri-for-sel4/
+slug: cheri-for-sel4
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Leadership
+working_group:
+  type: technical
+  focus_areas:
+  - seL4 and Microkit integration
+  - Capability-oriented interfaces
+  - Isolation and assurance
+forms:
+- contact
+related:
+- type: working_group
+  slug: cheri-freertos
+  relation: next_step
+- type: page
+  slug: alliance-leadership-working-groups
+  relation: navigation
 ---
+
+## Overview
 
 The CHERI for seL4 Working Group focuses on the integration and combination of the two technologies. The objectives of the seL4 WG are:
 

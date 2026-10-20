@@ -1,31 +1,35 @@
 ---
+layout: details/member
 title: DiscribeHub+
-member: true
 summary: Details to follow.
-membership_category: Community Member
-membership_status: Member
-links:
-- label: Visit member website
-  url: https://www.discribehub.org/
-  kind: website
-  primary: true
-- label: Back to all members
-  url: /alliance/leadership/members/
-  kind: navigation
-thumbnail:
-  src: /assets/organisations/discribehub/70266a6e4d93-logo.jpg
+permalink: /organisations/discribehub/
+slug: discribehub
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Leadership
+image:
+  src: /assets/images/alliance/leadership/discribehub/9334b44e-70266a6e4d93-logo.jpg
   alt: DiscribeHub+
   width: 2000
   height: 1139
   fit: contain
+organisation:
+  membership:
+    is_member: true
+    status: active
+    tier: community
+  website: https://www.discribehub.org/
+related:
+- type: page
+  slug: alliance-leadership-members
+  relation: navigation
 ---
 
 ## Description
-{: id="description" }
 
 Details to follow.
 
 ## CHERI Activities
-{: id="cheri-activities" }
 
 Details to follow.

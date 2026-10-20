@@ -1,9 +1,7 @@
-{%- assign event_record = include.event -%}
-{%- assign today = include.as_of | default: site.time | date: '%Y-%m-%d' -%}
-{%- assign event_start = event_record.start_date | date: '%Y-%m-%d' -%}
-{%- assign event_end = event_record.end_date | default: event_record.start_date | date: '%Y-%m-%d' -%}
-{%- if event_record.event_state == 'cancelled' -%}Cancelled
-{%- elsif event_record.event_state == 'postponed' -%}Postponed
-{%- elsif event_end < today -%}Past
-{%- elsif event_start > today -%}Upcoming
-{%- else -%}Happening today{%- endif -%}
+{%- assign status_event = include.event -%}
+{%- include local-epoch.html date=status_event.date clock=status_event.event.time_bounds.start zone=status_event.event.timezone shift=0 -%}{%- assign event_start_epoch = local_epoch -%}
+{%- assign event_last_date = status_event.end_date | default: status_event.date -%}
+{%- assign end_shift = 86400 -%}{%- if status_event.event.time_bounds -%}{%- assign end_shift = 0 -%}{%- endif -%}
+{%- include local-epoch.html date=event_last_date clock=status_event.event.time_bounds.end zone=status_event.event.timezone shift=end_shift -%}{%- assign event_end_epoch = local_epoch -%}
+{%- assign now_epoch = site.time | date: '%s' | plus: 0 -%}
+{%- if now_epoch < event_start_epoch -%}Upcoming{%- elsif now_epoch < event_end_epoch -%}Ongoing{%- else -%}Past{%- endif -%}

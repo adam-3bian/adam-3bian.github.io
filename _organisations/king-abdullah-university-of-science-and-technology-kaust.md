@@ -1,31 +1,35 @@
 ---
+layout: details/member
 title: King Abdullah University of Science and Technology (KAUST)
-member: true
 summary: Details to follow.
-membership_category: Full Member
-membership_status: Member
-links:
-- label: Visit member website
-  url: https://www.kaust.edu.sa/en/
-  kind: website
-  primary: true
-- label: Back to all members
-  url: /alliance/leadership/members/
-  kind: navigation
-thumbnail:
-  src: /assets/organisations/king-abdullah-university-of-science-and-technology-kaust/abe2e5b29c7b-logo.png
+permalink: /organisations/king-abdullah-university-of-science-and-technology-kaust/
+slug: king-abdullah-university-of-science-and-technology-kaust
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Leadership
+image:
+  src: /assets/images/alliance/leadership/king-abdullah-university-of-science-and-technology-kaust/b4c6eb7a-abe2e5b29c7b-logo.png
   alt: KAUST logo
   width: 2000
   height: 395
   fit: contain
+organisation:
+  membership:
+    is_member: true
+    status: active
+    tier: full
+  website: https://www.kaust.edu.sa/en/
+related:
+- type: page
+  slug: alliance-leadership-members
+  relation: navigation
 ---
 
 ## Description
-{: id="description" }
 
 Details to follow.
 
 ## CHERI Activities
-{: id="cheri-activities" }
 
 Details to follow

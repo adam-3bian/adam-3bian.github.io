@@ -1,17 +1,9 @@
-{%- assign eligible = include.items | where_exp: 'item', 'item.alternate != true' | where_exp: 'item', 'item.redirect_to == nil' -%}
-{%- if include.kind == 'events' -%}
-  {%- assign ordered = eligible | sort: 'start_date' -%}
-  {%- assign chronological_items = '' | split: ',' -%}
-  {%- assign today = include.as_of | default: site.time | date: '%Y-%m-%d' -%}
-  {%- for event in ordered -%}
-    {%- assign end = event.end_date | default: event.start_date | date: '%Y-%m-%d' -%}
-    {%- if include.status == 'past' and end < today -%}{%- assign chronological_items = chronological_items | push: event -%}
-    {%- elsif include.status == 'upcoming' and end >= today -%}{%- assign chronological_items = chronological_items | push: event -%}
-    {%- elsif include.status == nil -%}{%- assign chronological_items = chronological_items | push: event -%}{%- endif -%}
-  {%- endfor -%}
-  {%- if include.status == 'past' -%}{%- assign chronological_items = chronological_items | reverse -%}{%- endif -%}
-{%- else -%}
-  {%- assign dated = eligible | where_exp: 'item', 'item.undated != true' | sort: 'date' | reverse -%}
-  {%- assign undated = eligible | where: 'undated', true | sort_natural: 'title' -%}
-  {%- assign chronological_items = dated | concat: undated -%}
-{%- endif -%}
+{%- assign chronological_items = '' | split: ',' -%}
+{%- assign chronological_source = include.items | sort: 'date' -%}
+{%- for chronological_entry in chronological_source -%}
+{%- assign include_entry = true -%}
+{%- if include.kind == 'events' -%}{%- capture entry_status -%}{%- include event-status.html event=chronological_entry -%}{%- endcapture -%}
+{%- if include.status == 'upcoming' and entry_status == 'Past' -%}{%- assign include_entry = false -%}{%- endif -%}
+{%- if include.status == 'past' and entry_status != 'Past' -%}{%- assign include_entry = false -%}{%- endif -%}{%- endif -%}
+{%- if include_entry -%}{%- assign chronological_items = chronological_items | push: chronological_entry -%}{%- endif -%}{%- endfor -%}
+{%- if include.kind == 'posts' or include.status == 'past' -%}{%- assign chronological_items = chronological_items | reverse -%}{%- endif -%}

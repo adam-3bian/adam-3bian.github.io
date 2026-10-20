@@ -1,0 +1,61 @@
+post:
+  category:
+  - cheri-alliance-news
+  - ecosystem
+  - events
+  - government-regulation
+event:
+  format:
+  - conference
+  - exhibition
+  - tutorial
+  - webinar
+  - workshop
+organisation: {}
+product:
+  type:
+  - board
+  - chip
+  - development_kit
+  - fpga_board
+  - fpga_system
+  - other
+  - soc
+repository:
+  type:
+  - application
+  - compiler
+  - firmware
+  - library
+  - operating_system
+  - other
+  - simulator
+  - toolchain
+  - tools
+working_group:
+  type:
+  - other
+  - programme
+  - technical
+guide:
+  topic:
+  - compartmentalisation
+  - downloads
+  - getting-started
+  - porting
+  - reference
+  - security-engineering
+  - simulation
+  - toolchains
+  - training
+  level:
+  - advanced
+  - beginner
+  - intermediate
+policy:
+  type:
+  - governance
+  status:
+  - archived
+  - current
+  - draft

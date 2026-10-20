@@ -1,15 +1,26 @@
 ---
+layout: page/standard
 title: CHERI Enabled Products
-permalink: /adopt/assurance-and-adoption/cheri-enabled-products/
-where-next:
-  url: /adopt/assurance-and-adoption/about-cheri-enabled/
 summary: The CHERI Alliance's certification program. How products are reviewed, certified, and published.
-layout: list
-directory: true
-listing:
-  collection: hardware
-  filter: certified
+permalink: /adopt/assurance-and-adoption/cheri-enabled-products/
+slug: adopt-assurance-and-adoption-cheri-enabled-products
+navigation:
+  header:
+    category: Adopt
+    subcategory: Assurance & Adoption
+related:
+- type: page
+  slug: adopt-assurance-and-adoption-about-cheri-enabled
+  relation: next_step
+- type: page
+  slug: adopt-assurance-and-adoption-cheriot-ibex-certification
+  relation: certification
+- type: page
+  slug: adopt-assurance-and-adoption-x730-certification
+  relation: certification
 ---
+
+## Overview
 
 This page presents the **CHERI Enabled** products up to now.
 

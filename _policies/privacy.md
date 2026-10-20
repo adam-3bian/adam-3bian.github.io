@@ -1,21 +1,33 @@
 ---
+layout: details/policy
 title: Privacy
-where-next:
-  url: /news-and-events/news-and-analysis/latest-news/
-related-pages:
-- url: /policies/code-of-conduct/
-  description: The behaviour and participation expectations that apply to Alliance spaces and activities.
-  action: Read this page
-- url: /policies/export-controls/
-  description: Information on export-control considerations relevant to Alliance activity and shared material.
-  action: Read this page
-- url: /organisations/cheri-alliance/
-  title: About the CHERI Alliance
-  description: Learn how the Alliance connects organisations working across the CHERI ecosystem.
-  action: Read this page
-summary: The Privacy Policy explains what website data the Alliance records, why it is processed, how long it is
-  retained, and the rights available to users.
+summary: The Privacy Policy explains what website data the Alliance records, why it is processed, how long it is retained, and the rights available to users.
+permalink: /policies/privacy/
+slug: privacy
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Legal & Policies
+  footer:
+    category: Legal
+policy:
+  type: governance
+related:
+- type: page
+  slug: news-and-events-news-and-analysis-latest-news
+  relation: next_step
+- type: policy
+  slug: code-of-conduct
+  relation: related
+- type: policy
+  slug: export-controls
+  relation: related
+- type: organisation
+  slug: cheri-alliance
+  relation: related
 ---
+
+## Overview
 
 This Website collects some Personal data from its Users.
 
@@ -32,7 +44,6 @@ United Kingdom
 This Privacy Policy document contains types of information that is collected and recorded by the CHERI Alliance and how we use it. If you have additional questions or require more information about our Privacy Policy, do not hesitate to [contact us](/alliance/membership/contact/).
 
 ## General Data Protection Regulation (GDPR)
-{: id="general-data-protection-regulation-gdpr" }
 
 CHERI Alliance C.I.C. is the controller of your personal data.
 
@@ -57,28 +68,23 @@ In certain circumstances, you have the following data protection rights:
 - The right to withdraw consent.
 
 ## Log files
-{: id="log-files" }
 
 CHERI Alliance follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services’ analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users’ movement on the website, and gathering demographic information.
 
 ## Third party privacy policies
-{: id="third-party-privacy-policies" }
 
 CHERI Alliance’s Privacy Policy does not apply to other websites. Their own privacy policies explain their practices and any available opt-out choices.
 
 You can use your browser settings to control cookies. Browser support documentation explains the available controls.
 
 ## Children’s information
-{: id="childrens-information" }
 
 Another part of our priority is adding protection for children while using the internet. CHERI Alliance does not knowingly collect any Personal Identifiable Information from children under the age of 13.
 
 ## Online privacy policy only
-{: id="online-privacy-policy-only" }
 
 Our Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collected in CHERI Alliance. This policy is not applicable to any information collected offline or via channels other than this website.
 
 ## Consent
-{: id="consent" }
 
 By using our website, you hereby consent to our Privacy Policy and agree to its terms.

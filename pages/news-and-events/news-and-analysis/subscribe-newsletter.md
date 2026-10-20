@@ -1,21 +1,25 @@
 ---
+layout: page/form
 title: Subscribe to our quarterly newsletter
-permalink: /news-and-events/news-and-analysis/subscribe-newsletter/
-related-pages:
-- url: /news-and-events/news-and-analysis/latest-news/
-  description: The latest CHERI Alliance and ecosystem announcements, presented with clear dates and sources.
-  action: Read this page
 summary: Get news from the CHERI ecosystem every quarter.
+permalink: /news-and-events/news-and-analysis/subscribe-newsletter/
+slug: news-and-events-news-and-analysis-subscribe-newsletter
+navigation:
+  header:
+    category: News & Events
+    subcategory: News & Analysis
+  footer:
+    category: Updates
+forms:
+- newsletter
+related:
+- type: page
+  slug: news-and-events-news-and-analysis-latest-news
+  relation: related
 ---
+
+## Overview
 
 The CHERI ecosystem is moving fast. Get the latest news, milestones, events, and opportunities delivered to your inbox **every quarter**.
-
----
-
-The signup form below is a preview and does not subscribe you.
-
-[Subscribe through the published Alliance mailing list](https://cheri-alliance.kit.com/subscribe).
-
----
 
 *Privacy: We value your privacy. Your email address will only be used for CHERI Alliance communications and will never be shared with third parties. Unsubscribe at any time.*

@@ -1,25 +1,36 @@
 ---
+layout: details/policy
 title: Code of Conduct
-where-next:
-  url: /policies/competition-law-statement/
-related-pages:
-- url: /organisations/cheri-alliance/
-  title: About the CHERI Alliance
-  description: Learn how the Alliance connects organisations working across the CHERI ecosystem.
-  action: Read this page
-summary: The Code of Conduct sets the standards of respectful, inclusive, and constructive behaviour expected in
-  every Alliance space.
-version: '1.01'
-document_date: '2025-04-14'
-links:
-- label: Download official PDF
+summary: The Code of Conduct sets the standards of respectful, inclusive, and constructive behaviour expected in every Alliance space.
+permalink: /policies/code-of-conduct/
+slug: code-of-conduct
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Legal & Policies
+  footer:
+    category: Legal
+policy:
+  type: governance
+  version: '1.01'
+  dates:
+    effective: '2025-04-14'
+resources:
+- type: pdf
+  label: Download official PDF
   url: /assets/pages/alliance--legal-and-policies--code-of-conduct/245117ed08d4-code-of-conduct.pdf
-  kind: document
-  primary: true
-authoritative_format: PDF
+related:
+- type: policy
+  slug: competition-law-statement
+  relation: next_step
+- type: organisation
+  slug: cheri-alliance
+  relation: related
 ---
 
-![pdf](/assets/shared/source-assets/d63b7eac09b7-pdf-file-icon.webp){: .image-left .image-inline } Download the [CHERI Alliance Code of Conduct](/assets/pages/alliance--legal-and-policies--code-of-conduct/245117ed08d4-code-of-conduct.pdf) – The PDF is the official version. The text is reproduced below for convenience, but if there is any difference between the two versions, the PDF takes precedence..
+## Overview
+
+![pdf](/assets/images/common/58e51132-d63b7eac09b7-pdf-file-icon.webp){: .image-left .image-inline } Download the [CHERI Alliance Code of Conduct](/assets/pages/alliance--legal-and-policies--code-of-conduct/245117ed08d4-code-of-conduct.pdf) – The PDF is the official version. The text is reproduced below for convenience, but if there is any difference between the two versions, the PDF takes precedence..
 
 ---
 
@@ -59,12 +70,10 @@ If you believe someone is violating the code of conduct, we ask that you report 
 Being unable to understand why someone holds a viewpoint doesn’t mean that they’re wrong. Don’t forget that it is human to err and blaming each other doesn’t get us anywhere. Instead, focus on helping to resolve issues and learning from mistakes.
 
 ## Questions?
-{: id="questions" }
 
 If you have questions, please feel free to contact the Code of Conduct team by [contacting us](/alliance/membership/contact/).
 
 ## Reporting Guide
-{: id="reporting-guide" }
 
 If you believe someone is violating the code of conduct you can always report it to the Code of Conduct team by [contacting us](/alliance/membership/contact/). All reports will be kept confidential. This isn’t a public list and only members of the team will receive the report.
 
@@ -75,7 +84,6 @@ If the violation occurs at an event such as a conference or workshop and require
 In person reports will still be kept confidential exactly as above, but also feel free to (anonymously if needed) [contact us](/alliance/membership/contact/).
 
 ## Filing a Report
-{: id="filing-a-report" }
 
 Reports can be as formal or informal as needed for the situation at hand. If possible, please include as much information as you can. If you feel comfortable, please consider including:
 
@@ -86,3 +94,7 @@ Reports can be as formal or informal as needed for the situation at hand. If pos
 - Any extra context you believe existed for the incident.
 - If you believe this incident is ongoing.
 - Any other information you believe we should have.
+
+## Authoritative document
+
+The published authoritative format is PDF.

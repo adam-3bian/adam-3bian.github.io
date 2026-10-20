@@ -1,23 +1,30 @@
 ---
+layout: page/standard
 title: Why CHERI?
-permalink: /discover/why-cheri/why-cheri/
-where-next:
-  url: /discover/why-cheri/vulnerabilities-in-everyday-technology/
-related-pages:
-- url: /discover/why-cheri/why-existing-defences-are-not-enough/
-  description: Passwords, encryption, testing, and updates reduce risk, but memory vulnerabilities can still remain.
-  action: Read this page
-- url: /discover/why-cheri/approaches-to-memory-safety/
-  description: No single technology delivers memory safety. The strongest solutions combine processes, tools, hardware
-    protections, and isolation.
-  action: Read this page
 summary: Hardware-enforced memory protection for existing and future software.
+permalink: /discover/why-cheri/why-cheri/
+slug: discover-why-cheri-why-cheri
+navigation:
+  header:
+    category: Discover CHERI
+    subcategory: Why CHERI
+related:
+- type: page
+  slug: discover-why-cheri-vulnerabilities-in-everyday-technology
+  relation: next_step
+- type: page
+  slug: discover-why-cheri-why-existing-defences-are-not-enough
+  relation: related
+- type: page
+  slug: discover-why-cheri-approaches-to-memory-safety
+  relation: related
 ---
+
+## Overview
 
 **Memory-safety vulnerabilities** are responsible for most of today’s serious software security flaws. Reducing them is one of the biggest opportunities to improve cybersecurity, and CHERI was designed to help address this challenge.
 
 ## Why memory safety matters
-{: id="why-memory-safety-matters" }
 
 Memory-safety vulnerabilities remain one of the biggest challenges in cybersecurity. Attackers routinely exploit software bugs to steal data, take control of systems, bypass security boundaries, and disrupt critical services. See [Vulnerabilities in Everyday Technology](/discover/why-cheri/vulnerabilities-in-everyday-technology/).
 
@@ -28,7 +35,6 @@ CHERI helps processors understand how software is intended to use memory. By car
 As recognised by the ETSI TS 104 198 standard, the strongest solutions combine multiple approaches. CHERI strengthens the hardware foundation, while secure development practices, testing tools, and compartmentalisation contribute additional layers of protection. Learn more in [Approaches to Memory Safety](/discover/why-cheri/approaches-to-memory-safety/).
 
 ## Hardware-enforced memory protection
-{: id="hardware-enforced-memory-protection" }
 
 Memory-safety vulnerabilities often arise because conventional processors use [pointers](/discover/resources/glossary/#glossary-p) that store only a memory address. When software reads, writes, or executes data, the processor typically has little information about the boundaries, permissions, or intended use of that memory.
 
@@ -46,7 +52,6 @@ The metadata is protected by the hardware. Software can reduce the authority of 
 When a program uses a capability, the processor checks the access. An out-of-bounds write or a write through a read-only capability faults instantly instead of silently changing unrelated memory.
 
 ## Protect existing software
-{: id="protect-existing-software" }
 
 Many organisations rely on large C and C++ codebases that cannot realistically be rewritten.
 
@@ -57,7 +62,6 @@ Porting still requires some minor engineering effort. Some ambiguous or especial
 CHERI also supports both **hybrid** environments, where conventional pointers and capabilities coexist, and **pure-capability** environments, where language-visible pointers use capabilities throughout. This gives organisations multiple migration paths.
 
 ## Limit the impact of compromise
-{: id="limit-the-impact-of-compromise" }
 
 Preventing vulnerabilities is important, but limiting their impact is equally valuable.
 
@@ -68,7 +72,6 @@ For example, a component that processes images or videos might be given access o
 This applies the **principle of least privilege**: software should receive only the access it genuinely needs. By making this practical even for very small software components, and enforcing this in hardware, CHERI helps organisations build more resilient and secure products.
 
 ## Make faults easier to find and fix
-{: id="make-faults-easier-to-find-and-fix" }
 
 On conventional hardware, an invalid pointer may corrupt memory and cause failures much later, making problems difficult to diagnose.
 
@@ -79,7 +82,6 @@ This can make defects easier to reproduce, investigate, and correct.
 The same behaviour can also support assurance activities by providing evidence about compartment boundaries, capability usage, compiler behaviour, and fault handling. As with any assurance approach, that evidence must be interpreted within the context of a particular implementation, build, and threat model.
 
 ## Understanding CHERI’s scope
-{: id="understanding-cheris-scope" }
 
 CHERI is a powerful security technology, but it is not a complete security solution on its own.
 
@@ -88,7 +90,6 @@ CHERI does not make a system automatically secure. It does not prevent logic err
 Adopting CHERI requires a one-time investment in new hardware, migration, tooling, testing, and training. Once that transition is complete, organisations gain the ongoing benefits of hardware-enforced memory protection without needing to continually redesign software to address the same classes of memory-safety vulnerabilities.
 
 ## Why organisations choose CHERI
-{: id="why-organisations-choose-cheri" }
 
 Teams commonly investigate CHERI to:
 

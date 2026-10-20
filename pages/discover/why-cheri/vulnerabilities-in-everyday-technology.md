@@ -1,20 +1,28 @@
 ---
+layout: page/standard
 title: Vulnerabilities in Everyday Technology
+summary: A memory mistake in a connected device can expose private information, change how the device behaves, or provide a way into a wider network.
 permalink: /discover/why-cheri/vulnerabilities-in-everyday-technology/
-where-next:
-  url: /discover/why-cheri/why-existing-defences-are-not-enough/
-summary: A memory mistake in a connected device can expose private information, change how the device behaves, or
-  provide a way into a wider network.
+slug: discover-why-cheri-vulnerabilities-in-everyday-technology
+navigation:
+  header:
+    category: Discover CHERI
+    subcategory: Why CHERI
+related:
+- type: page
+  slug: discover-why-cheri-why-existing-defences-are-not-enough
+  relation: next_step
 ---
+
+## Overview
 
 Connected devices are specialised computers. A camera, doorbell, router, medical monitor, or vehicle system may connect to networks, accept remote commands, install software updates, and store sensitive or personal information.
 
 If software contains a serious memory vulnerability, an attacker may be able to access information, change settings, disrupt operation, or use the device to attack other systems on the same network.
 
-![Vulnerabilities keep increasing](/assets/shared/source-assets/b68c7fc17613-cve.webp){: .image-full }
+![Vulnerabilities keep increasing](/assets/images/discover/why-cheri/discover-why-cheri-vulnerabilities-in-everyday-technology/0666ad78-b68c7fc17613-cve.webp){: .image-full }
 
 ## Even small devices can carry significant risk
-{: id="even-small-devices-can-carry-significant-risk" }
 
 Connected products often combine private data, physical control, and a route into a wider system, for example:
 
@@ -29,7 +37,6 @@ Connected products often combine private data, physical control, and a route int
 > The risk depends on the flaw and the device, but even modest products can provide valuable access.
 
 ## How an ordinary mistake becomes a security problem
-{: id="how-an-ordinary-mistake-becomes-a-security-problem" }
 
 Software stores information in memory while it runs. **Memory safety** means software can only access the information it is supposed to access.
 
@@ -44,21 +51,18 @@ A **memory-safety vulnerability** occurs when software accidentally reads or mod
 This is why a small coding mistake can become a significant security problem.
 
 ## Why connected products are vulnerable
-{: id="why-connected-products-are-vulnerable" }
 
 Connected devices constantly process information from outside sources, including network traffic, files, images, sensor data, app commands, and software updates. Every one of these inputs can become an attack path.
 
 Many products also rely on software written in C and C++. These languages are efficient and widely used, especially in constrained devices, but they require developers to manage memory correctly. In large codebases built from drivers, libraries, and application software, some mistakes inevitably escape review and testing.
 
 ## Limiting the impact of vulnerabilities
-{: id="limiting-the-impact-of-vulnerabilities" }
 
 An image-processing component should need access to images, not to Wi-Fi credentials or update keys. Yet many traditional systems allow software components to share memory and broad privileges.
 
 As a result, compromising one component can give an attacker access to much more than that component actually needs. Separating software into smaller, independent parts helps contain the damage, but traditional isolation can be difficult or expensive in resource-constrained devices.
 
 ## A stronger foundation for connected devices
-{: id="a-stronger-foundation-for-connected-devices" }
 
 Testing, code review, and security updates remain essential, but they cannot prevent every future memory mistake.
 
@@ -69,7 +73,6 @@ A conventional pointer is like an address. A CHERI capability is more like an ac
 CHERI does not eliminate all software bugs, but it can prevent many forms of invalid memory access and limit what compromised software can reach.
 
 ## The essential point
-{: id="the-essential-point" }
 
 Connected devices are trusted with private information, physical functions, and network access. Memory vulnerabilities matter because they can turn ordinary input into a route for taking control.
 

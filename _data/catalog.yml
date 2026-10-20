@@ -1,176 +1,127 @@
 people:
   label: People
-  singular: Person
-  facet: Organisation
-  action: View profile
+  facet: Category
   fields:
-  - name: organization
-    label: Organisation
-    type: organisations
-  - name: board_role
-    label: Role
+  - name: person.location
+    label: Location
+    type: text
+  - name: person.governance.board_role
+    label: Governance role
     type: text
 organisations:
   label: Organisations
-  singular: Organisation
-  facet: Membership
-  action: Explore organisation
+  facet: Category
   fields:
-  - name: membership_status
-    label: Status
+  - name: organisation.type
+    label: Type
     type: text
-  - name: membership_category
-    label: Membership
+  - name: organisation.sector
+    label: Sector
     type: text
-news:
-  label: News
-  singular: News & insights
-  facet: Topic
-  action: Read article
+posts:
+  label: Posts
+  facet: Category
   fields: []
 events:
   label: Events
-  singular: Event
-  facet: Format
-  action: View event
+  facet: Category
   fields:
-  - name: location
-    label: Location
-    type: text
-  - name: format
+  - name: event.format
     label: Format
     type: text
-  - name: series
-    label: Series
+  - name: event.location.venue
+    label: Venue
+    type: text
+  - name: event.location.city
+    label: City
+    type: text
+  - name: event.location.country
+    label: Country
     type: text
 papers:
-  label: Papers
-  singular: Publication
-  facet: Year
-  action: View publication
+  label: Publications
+  facet: Category
   fields:
-  - name: authors
-    label: Authors
-    type: people
-  - name: year
+  - name: publication.year
     label: Year
     type: text
-  - name: venue
+  - name: publication.venue
     label: Published in
     type: text
-reports:
-  label: Reports & white papers
-  singular: Report
-  facet: Year
-  action: View report
-  fields:
-  - name: year
-    label: Year
+  - name: publication.type
+    label: Publication type
     type: text
-  - name: resource_type
+products:
+  label: Products
+  facet: Category
+  fields:
+  - name: product.type
     label: Type
     type: text
-hardware:
-  label: Hardware
-  singular: Hardware
-  facet: Record type
-  action: Explore hardware
-  fields:
-  - name: record_type
-    label: Record type
-    type: text
-  - name: organization
-    label: Organisation
-    type: organisations
-  - name: product_name
-    label: Product
-    type: text
-  - name: product_type
-    label: Product type
-    type: text
-  - name: architecture
+  - name: product.architecture
     label: Architecture
     type: text
-  - name: version
-    label: Product version
+  - name: product.maturity
+    label: Maturity
     type: text
-  - name: reference
-    label: Reference
+  - name: product.availability
+    label: Availability
     type: text
-  - name: certification.date
-    label: Certified
-    type: date
-  - name: certification.programme_version
-    label: Programme version
-    type: text
-  - name: certification.derivative
-    label: Derivative of a qualified product
-    type: boolean
-software:
-  label: Software
-  singular: Software
-  facet: Type
-  action: Explore software
+repositories:
+  label: Repositories
+  facet: Category
   fields:
-  - name: software_type
+  - name: repository.type
     label: Type
     type: text
-  - name: architectures
+  - name: repository.architectures
     label: Architectures
     type: array
-  - name: platforms
-    label: Platforms
-    type: array
-  - name: version
-    label: Version
-    type: text
-  - name: release_status
-    label: Release status
+  - name: repository.maturity
+    label: Maturity
     type: text
 groups:
   label: Working groups
-  singular: Working group
-  facet: Group type
-  action: Explore group
+  facet: Category
   fields:
-  - name: group_type
-    label: Group type
+  - name: working_group.type
+    label: Type
     type: text
-  - name: collaboration_areas
-    label: Areas of collaboration
+  - name: working_group.status
+    label: Status
+    type: text
+  - name: working_group.focus_areas
+    label: Focus areas
     type: array
 guides:
-  label: Developer guides
-  singular: Developer guide
-  facet: Topic
-  action: Read guide
+  label: Guides
+  facet: Category
   fields:
-  - name: topic
+  - name: guide.topic
     label: Topic
     type: text
-  - name: platforms
-    label: Platforms
-    type: array
-  - name: prerequisites
-    label: Before you start
-    type: array
+  - name: guide.level
+    label: Level
+    type: text
+  - name: guide.estimated_minutes
+    label: Estimated minutes
+    type: text
 policies:
   label: Policies
-  singular: Policy
-  facet: Document type
-  action: Read policy
+  facet: Category
   fields:
-  - name: version
+  - name: policy.type
+    label: Type
+    type: text
+  - name: policy.version
     label: Version
     type: text
-  - name: document_date
-    label: Document date
-    type: date
-  - name: authoritative_format
-    label: Official format
+  - name: policy.dates.effective
+    label: Effective
     type: text
-products:
-  label: Products & projects
-  facet: Category
-  action: Explore product
-  fields: []
+  - name: policy.dates.reviewed
+    label: Review
+    type: text
+  - name: policy.status
+    label: Status
+    type: text

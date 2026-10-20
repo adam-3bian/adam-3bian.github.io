@@ -1,25 +1,34 @@
 ---
+layout: details/speaker
 title: Alfredo Mazzinghi
-organization:
-- capabilities-limited
-speaker: true
 summary: Alfredo is a Research Assistant at University of Cambridge and Research Engineer at Capabilities Limited.
-thumbnail:
-  src: /assets/people/alfredo-mazzinghi/fb97be2a6653-portrait.png
+permalink: /people/alfredo-mazzinghi/
+slug: alfredo-mazzinghi
+navigation:
+  header:
+    category: News & Events
+    subcategory: People & Opportunities
+image:
+  src: /assets/images/news-and-events/people-and-opportunities/alfredo-mazzinghi/9ada11c0-fb97be2a6653-portrait.png
   alt: Alfredo Mazzinghi
   width: 1024
   height: 768
-links:
-- label: Back to all speakers
-  url: /news-and-events/people-and-opportunities/speakers/
-  kind: navigation
-- label: LinkedIn
-  url: https://www.linkedin.com/in/alfredo-mazzinghi/
-  kind: profile
+person:
+  roles:
+  - speaker
+  organisations:
+  - organisation: capabilities-limited
+    relationship: other
+  links:
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/alfredo-mazzinghi/
+related:
+- type: page
+  slug: news-and-events-people-and-opportunities-speakers
+  relation: navigation
 ---
 
 ## Biography
-{: id="biography" }
 
 Alfredo is a Research Assistant at University of Cambridge and Research Engineer at Capabilities Limited.
 

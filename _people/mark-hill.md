@@ -1,25 +1,34 @@
 ---
+layout: details/speaker
 title: Mark Hill
-organization:
-- codasip
-speaker: true
 summary: Codasip
-thumbnail:
-  src: /assets/people/mark-hill/c7093451b411-portrait.jpg
+permalink: /people/mark-hill/
+slug: mark-hill
+navigation:
+  header:
+    category: News & Events
+    subcategory: People & Opportunities
+image:
+  src: /assets/images/news-and-events/people-and-opportunities/mark-hill/6a6ea3dc-c7093451b411-portrait.jpg
   alt: Mark Hill
   width: 400
   height: 400
-links:
-- label: Back to all speakers
-  url: /news-and-events/people-and-opportunities/speakers/
-  kind: navigation
-- label: LinkedIn
-  url: https://www.linkedin.com/in/markbowenhill/
-  kind: profile
+person:
+  roles:
+  - speaker
+  organisations:
+  - organisation: codasip
+    relationship: other
+  links:
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/markbowenhill/
+related:
+- type: page
+  slug: news-and-events-people-and-opportunities-speakers
+  relation: navigation
 ---
 
 ## Biography
-{: id="biography" }
 
 Dr Mark B. Hill, BEng PhD CEng MIET
 

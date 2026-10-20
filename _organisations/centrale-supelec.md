@@ -1,31 +1,35 @@
 ---
+layout: details/member
 title: Centrale Supélec
-member: true
 summary: Details to follow.
-membership_category: Community Member
-membership_status: Member
-links:
-- label: Visit member website
-  url: https://www.centralesupelec.fr/
-  kind: website
-  primary: true
-- label: Back to all members
-  url: /alliance/leadership/members/
-  kind: navigation
-thumbnail:
-  src: /assets/organisations/centrale-supelec/216a613f848d-logo.jpg
+permalink: /organisations/centrale-supelec/
+slug: centrale-supelec
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Leadership
+image:
+  src: /assets/images/alliance/leadership/centrale-supelec/8658eec5-216a613f848d-logo.jpg
   alt: Centrale Supélec
   width: 2000
   height: 1205
   fit: contain
+organisation:
+  membership:
+    is_member: true
+    status: active
+    tier: community
+  website: https://www.centralesupelec.fr/
+related:
+- type: page
+  slug: alliance-leadership-members
+  relation: navigation
 ---
 
 ## Description
-{: id="description" }
 
 Details to follow.
 
 ## CHERI Activities
-{: id="cheri-activities" }
 
 Details to follow

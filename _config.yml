@@ -2,7 +2,7 @@ markdown: kramdown
 future: true
 kramdown:
   input: Kramdown
-  auto_ids: false
+  auto_ids: true
   smart_quotes:
   - apos
   - apos
@@ -42,29 +42,24 @@ exclude:
 - dist-baseurl
 - _site
 collections:
-  glossary:
-    output: false
-  people:
-    output: true
-    permalink: /people/:name/
-  news:
-    output: true
-    permalink: /news/:name/
-  organisations:
-    output: true
-    permalink: /organisations/:name/
   events:
     output: true
     permalink: /events/:name/
+  people:
+    output: true
+    permalink: /people/:name/
+  organisations:
+    output: true
+    permalink: /organisations/:name/
   papers:
     output: true
     permalink: /papers/:name/
-  hardware:
+  products:
     output: true
-    permalink: /hardware/:name/
-  software:
+    permalink: /products/:name/
+  repositories:
     output: true
-    permalink: /software/:name/
+    permalink: /repositories/:name/
   groups:
     output: true
     permalink: /groups/:name/
@@ -74,108 +69,73 @@ collections:
   policies:
     output: true
     permalink: /policies/:name/
-  reports:
+  redirects:
     output: true
-    permalink: /reports/:name/
+  glossary:
+    output: false
 excerpt_separator: ''
 defaults:
 - scope:
     path: ''
   values:
-    layout: page
-    render_with_liquid: false
-    hero: false
-    image-overlay: true
+    layout: page/standard
+    image_overlay: true
 - scope:
     path: ''
-    type: people
+    type: redirects
   values:
-    layout: detail
-    parent: /people/
+    layout: null
+    sitemap: false
 - scope:
     path: ''
-    type: organisations
+    type: posts
   values:
-    layout: detail
-    parent: /organisations/
+    layout: details/post
 - scope:
     path: ''
     type: events
   values:
-    layout: detail
-    parent: /events/
+    layout: details/event
 - scope:
     path: ''
-    type: news
+    type: people
   values:
-    layout: article
-    parent: /news/
+    layout: details/speaker
+- scope:
+    path: ''
+    type: organisations
+  values:
+    layout: details/member
 - scope:
     path: ''
     type: papers
   values:
-    parent: /papers/
-    layout: detail
+    layout: details/paper
 - scope:
     path: ''
-    type: hardware
+    type: products
   values:
-    parent: /hardware/
-    layout: detail
+    layout: details/product
 - scope:
     path: ''
-    type: software
+    type: repositories
   values:
-    parent: /software/
-    layout: detail
+    layout: details/repository
 - scope:
     path: ''
     type: groups
   values:
-    parent: /groups/
-    layout: detail
+    layout: details/working-group
 - scope:
     path: ''
     type: guides
   values:
-    parent: /guides/
-    layout: detail
+    layout: details/guide
 - scope:
     path: ''
     type: policies
   values:
-    parent: /policies/
-    layout: detail
-- scope:
-    path: pages/discover
-  values:
-    parent: /discover/
-- scope:
-    path: pages/adopt
-  values:
-    parent: /adopt/
-- scope:
-    path: pages/build
-  values:
-    parent: /build/
-- scope:
-    path: pages/alliance
-  values:
-    parent: /alliance/
-- scope:
-    path: pages/news-and-events
-  values:
-    parent: /news-and-events/
-- scope:
-    path: ''
-    type: reports
-  values:
-    layout: detail
-    parent: /discover/resources/reports-and-white-papers/
-- scope:
-    path: pages/discover/resources/glossary.md
-  values:
-    layout: glossary
+    layout: details/policy
 title: CHERI Alliance
 description: 'CHERI Alliance: hardware-enforced memory safety, secure software and the CHERI community.'
 lang: en-GB
@@ -185,8 +145,8 @@ sass:
   sass_dir: _sass
   style: compressed
 logo:
-  light: /assets/images/brand/logo-blue.svg
-  dark: /assets/images/brand/logo-white.svg
+  light: /assets/images/common/64dd0005-logo-blue.svg
+  dark: /assets/images/common/4ee4af07-logo-white.svg
   width: 326
   height: 112
 navigation:
@@ -306,35 +266,35 @@ navigation:
       - title: CHERI Products
         url: /build/platforms/cheri-products/
       - title: Morello
-        url: /hardware/morello/
+        url: /products/morello/
       - title: Return an unused Morello Board
         url: /morello-return/
       - title: CHERIoT
-        url: /hardware/cheriot/
+        url: /build/platforms/cheriot/
       - title: Sonata
-        url: /hardware/sonata/
+        url: /products/sonata/
       - title: FPGA Platforms
-        url: /hardware/fpga-platforms/
+        url: /build/platforms/fpga-platforms/
       - title: Simulators
-        url: /software/simulators/
+        url: /build/software-ecosystem/simulators/
     - title: Software Ecosystem
       links:
       - title: Software Ecosystem
         url: /build/software-ecosystem/
       - title: LLVM & Clang
-        url: /software/llvm-and-clang/
+        url: /build/software-ecosystem/llvm-and-clang/
       - title: Rust
-        url: /software/rust/
+        url: /build/software-ecosystem/rust/
       - title: CheriBSD
-        url: /software/cheribsd/
+        url: /repositories/cheribsd/
       - title: CHERI Linux
-        url: /software/cheri-linux/
+        url: /build/software-ecosystem/cheri-linux/
       - title: CHERI Zephyr
-        url: /software/cheri-zephyr/
+        url: /repositories/cheri-zephyr/
       - title: Debugging Tools
-        url: /software/debugging-tools/
-      - title: All software
-        url: /software/
+        url: /build/software-ecosystem/debugging-tools/
+      - title: All repositories
+        url: /repositories/
   - title: CHERI Alliance
     type: megamenu
     columns: 4
@@ -416,66 +376,39 @@ navigation:
   - title: Contact Us
     type: button
     url: /alliance/membership/contact/
-  footer:
-  - title: Updates
-    links:
-    - title: Latest News
-      url: /news-and-events/news-and-analysis/latest-news/
-    - title: Upcoming Events
-      url: /news-and-events/events-and-archive/upcoming-events/
-    - title: Subscribe to our Newsletter
-      url: /news-and-events/news-and-analysis/subscribe-newsletter/
-  - title: CHERI Alliance
-    links:
-    - title: About the CHERI Alliance
-      url: /organisations/cheri-alliance/
-    - title: Members
-      url: /alliance/leadership/members/
-    - title: Working Groups
-      url: /alliance/leadership/working-groups/
-    - title: Contact the Alliance
-      url: /alliance/membership/contact/
-  - title: Legal
-    links:
-    - title: Code of Conduct
-      url: /policies/code-of-conduct/
-    - title: CHERI Trademark
-      url: /policies/trademark/
-    - title: Privacy
-      url: /policies/privacy/
   social:
   - title: Slack
     url: https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/cheri-slack.html
     image:
-      src: /assets/images/social/slack.svg
+      src: /assets/images/common/9911a875-slack.svg
       alt: Join the CHERI community on Slack
     target: _blank
     rel: noopener noreferrer
   - title: LinkedIn
     url: https://www.linkedin.com/company/cheri-alliance/
     image:
-      src: /assets/images/social/linkedin.svg
+      src: /assets/images/common/e3a20573-linkedin.svg
       alt: CHERI Alliance on LinkedIn
     target: _blank
     rel: noopener noreferrer
   - title: Mastodon
     url: https://infosec.exchange/@cheri_alliance
     image:
-      src: /assets/images/social/mastodon.svg
+      src: /assets/images/common/4a3f4fd5-mastodon.svg
       alt: CHERI Alliance on Mastodon
     target: _blank
     rel: noopener noreferrer
   - title: GitHub
     url: https://github.com/CHERI-Alliance
     image:
-      src: /assets/images/social/github.svg
+      src: /assets/images/common/eb97646e-github.svg
       alt: CHERI Alliance on GitHub
     target: _blank
     rel: noopener noreferrer
   - title: YouTube
     url: https://www.youtube.com/@CHERI-Alliance
     image:
-      src: /assets/images/social/youtube.svg
+      src: /assets/images/common/be9c8aa8-youtube.svg
       alt: CHERI Alliance on YouTube
     target: _blank
     rel: noopener noreferrer
@@ -485,3 +418,6 @@ subscribe:
   title: Stay connected with CHERI
   action: Get the newsletter
   url: /news-and-events/news-and-analysis/subscribe-newsletter/
+permalink: /news/:slug/
+plugins:
+- jekyll-redirect-from

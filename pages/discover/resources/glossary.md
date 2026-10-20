@@ -1,19 +1,21 @@
 ---
+layout: page/standard
 title: Glossary
+summary: Plain-language definitions for CHERI terms, acronyms, architecture concepts, and software models. The alphabet index links directly to each group of entries.
 permalink: /discover/resources/glossary/
-where-next:
-  url: /discover/understand/faq/
-  title: FAQs
-related-pages:
-- url: /discover/resources/specifications/
-  description: A directory of architecture and related specifications relevant to CHERI.
-  action: Read this page
-- url: /discover/resources/digital-security-by-design-archive/
-  description: An archive of material from the Digital Security by Design programme relevant to CHERI.
-  action: Read this page
+slug: discover-resources-glossary
+navigation:
+  header:
+    category: Discover CHERI
+    subcategory: Resources
+related:
+- type: page
+  slug: discover-understand-faq
+  relation: next_step
+- type: page
+  slug: discover-resources-specifications
+  relation: related
+- type: page
+  slug: discover-resources-digital-security-by-design-archive
+  relation: related
 ---
-
-## CHERI glossary
-{: id="directory-cheri-glossary" }
-
-Plain-language definitions for CHERI terms, acronyms, architecture concepts, and software models. The alphabet index links directly to each group of entries.

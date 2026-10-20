@@ -1,7 +1,7 @@
-{% if page.slider.slides and page.slider.slides.size > 0 %}
-<section class="slider" aria-label="{{ page.slider.title | default: 'Featured pages' | escape }}" aria-roledescription="carousel" data-autoplay="{% if page.slider.autoplay %}true{% else %}false{% endif %}" data-interval="{{ page.slider.interval | default: 5000 | escape }}">
+{% if page.landing.slider.slides and page.landing.slider.slides.size > 0 %}
+<section class="slider" aria-label="{{ page.landing.slider.title | default: 'Featured pages' | escape }}" aria-roledescription="carousel" data-autoplay="{% if page.landing.slider.autoplay %}true{% else %}false{% endif %}" data-interval="{{ page.landing.slider.interval | default: 5000 | escape }}">
   <div class="slider-track">
-    {% for slide in page.slider.slides %}
+    {% for slide in page.landing.slider.slides %}
       <article class="slide" id="slide-{{ forloop.index }}" role="group" aria-roledescription="slide" aria-label="{{ forloop.index }} of {{ forloop.length }}"{% unless forloop.first %} hidden inert aria-hidden="true"{% endunless %}>
         {% if slide.url %}{% assign link_target = slide.target | default: '' | strip %}
         {% assign link_rel = slide.rel | default: '' | strip %}
@@ -19,7 +19,7 @@
         <a class="slide-link card" href="{{ link_url | escape }}"{% if link_target != '' %} target="{{ link_target | escape }}"{% endif %}{% if link_rel != '' %} rel="{{ link_rel | strip | escape }}"{% endif %}{% if link_target == '_blank' %} title="Opens in a new tab"{% endif %} aria-labelledby="slide-{{ forloop.index }}-title slide-{{ forloop.index }}-action">{% else %}<div class="slide-link card">{% endif %}
           <div class="slide-media">
             {% assign slide_loading = 'lazy' %}
-            {% if forloop.first and page.hero %}{% assign slide_loading = 'eager' %}{% endif %}
+            {% if forloop.first and page.landing.heading %}{% assign slide_loading = 'eager' %}{% endif %}
             {% assign image_url = slide.image.src %}
             {% assign url_prefix = image_url | slice: 0, 2 %}
             {% assign url_first = image_url | slice: 0, 1 %}
@@ -39,7 +39,7 @@
   </div>
   <div class="slider-controls" hidden>
     <div class="slider-indicators" role="group" aria-label="Choose a slide">
-      {% for slide in page.slider.slides %}<button class="slider-dot" type="button" data-slide="{{ forloop.index0 }}" aria-controls="slide-{{ forloop.index }}" aria-label="Slide {{ forloop.index }}: {{ slide.title | escape }}"{% if forloop.first %} aria-current="true"{% endif %}><span aria-hidden="true">●</span></button>{% endfor %}
+      {% for slide in page.landing.slider.slides %}<button class="slider-dot" type="button" data-slide="{{ forloop.index0 }}" aria-controls="slide-{{ forloop.index }}" aria-label="Slide {{ forloop.index }}: {{ slide.title | escape }}"{% if forloop.first %} aria-current="true"{% endif %}><span aria-hidden="true">●</span></button>{% endfor %}
     </div>
   </div>
 </section>

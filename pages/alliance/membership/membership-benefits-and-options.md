@@ -1,31 +1,37 @@
 ---
+layout: page/standard
 title: Membership Benefits & Options
-permalink: /alliance/membership/membership-benefits-and-options/
-where-next:
-  url: /alliance/membership/contact/
-related-pages:
-- url: /alliance/membership/why-join/
-  description: An overview of the reasons an organisation may choose to join the CHERI Alliance.
-  action: Read this page
-- url: /organisations/cheri-alliance/
-  title: About the CHERI Alliance
-  description: Learn how the Alliance connects organisations working across the CHERI ecosystem.
-  action: Read this page
-- url: /alliance/leadership/members/
-  title: CHERI Alliance members
-  description: See the current members of the Alliance.
-  action: Read this page
 summary: Join the organisations and people shaping CHERI and accelerating its adoption.
+permalink: /alliance/membership/membership-benefits-and-options/
+slug: alliance-membership-membership-benefits-and-options
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Membership
+related:
+- type: page
+  slug: alliance-membership-contact
+  relation: next_step
+- type: page
+  slug: alliance-membership-why-join
+  relation: related
+- type: organisation
+  slug: cheri-alliance
+  relation: related
+- type: page
+  slug: alliance-leadership-members
+  relation: related
 ---
 
-![CHERI Alliance member logo](/assets/shared/source-assets/edeb264ff3b7-cheri-member.webp){: .image-left }
+## Overview
+
+![CHERI Alliance member logo](/assets/images/common/b3b9fe90-edeb264ff3b7-cheri-member.webp){: .image-left }
 
 CHERI Alliance membership connects you with companies, researchers and practitioners working across the CHERI ecosystem. Whether you want to influence its direction, learn from experts, increase your visibility or simply demonstrate your support for CHERI, there is a way to get involved.
 
 Organisations can join as Full Members or eligible Community Members, while individuals can participate as Community Members or Ambassadors.
 
 ## Benefits of membership
-{: id="benefits-of-membership" }
 
 CHERI Alliance members can:
 
@@ -41,7 +47,6 @@ CHERI Alliance members can:
 See [Why Join?](/alliance/membership/why-join/) for more about the value of becoming a CHERI Alliance member.
 
 ## Participate at your own pace
-{: id="participate-at-your-own-pace" }
 
 Membership does not require a minimum level of participation, except for Ambassadors, who commit to supporting Alliance activities.
 
@@ -50,7 +55,6 @@ How much you participate is **entirely up to you**. Join the working groups, eve
 Even simply becoming a member matters. A growing membership demonstrates demand for CHERI and encourages suppliers, developers and adopters to invest in the technology.
 
 ## Membership for organisations
-{: id="membership-for-organisations" }
 
 There are two organisational membership options.
 
@@ -59,7 +63,6 @@ There are two organisational membership options.
 **Community Membership** is a free option for eligible research organisations, public bodies, non-profits and open-source organisations.
 
 ### Full membership
-{: id="full-membership" }
 
 Full Membership is designed for organisations that want the highest level of participation, visibility and influence within the CHERI ecosystem.
 
@@ -74,7 +77,6 @@ Full Members receive:
 - Use of the applicable CHERI Alliance membership mark
 
 ### Community membership
-{: id="community-membership" }
 
 Community Membership is available **free of charge** to eligible research organisations, public bodies, non-profits and open-source organisations that want to participate in and contribute to the CHERI ecosystem.
 
@@ -90,22 +92,18 @@ Community Members can:
 Community Members are an important part of the Alliance, bringing together organisations whose work helps broaden and strengthen the CHERI ecosystem.
 
 ## Membership for individuals
-{: id="membership-for-individuals" }
 
 ### Individual Community Members
-{: id="individual-community-members" }
 
 Individuals can join as Community Members to contribute expertise, participate in the community and engage with Alliance activities.
 
 ### Ambassadors
-{: id="ambassadors" }
 
 Ambassadors are Community Members who make an additional commitment to support the Alliance through education, outreach, events, content creation and community building.
 
 ## Membership fees
-{: id="membership-fees" }
 
-![DCMS Logo](/assets/shared/source-assets/62e58da9da64-dcms-s.webp){: .image-left }
+![DCMS Logo](/assets/images/alliance/membership/alliance-membership-membership-benefits-and-options/5a9ddb6a-62e58da9da64-dcms-s.webp){: .image-left }
 
 The CHERI Alliance is a lean, **non-profit** organisation. Membership fees support its collaboration infrastructure, communications, events and other activities that help accelerate CHERI adoption.
 
@@ -128,7 +126,6 @@ We deliberately keep fees accessible because a broad and diverse membership stre
 [Contact us](/alliance/membership/contact/) for details.
 
 ## Ready to get involved?
-{: id="ready-to-get-involved" }
 
 Join the organisations, researchers and individuals building the CHERI ecosystem and helping move CHERI towards widespread adoption.
 

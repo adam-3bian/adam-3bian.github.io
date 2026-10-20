@@ -1,17 +1,26 @@
 ---
+layout: page/standard
 title: Compartmentalisation
-permalink: /build/technology/compartmentalisation/
-where-next:
-  url: /build/technology/hybrid-systems/
-related-pages:
-- url: /build/technology/how-cheri-capabilities-work/
-  description: CHERI capabilities explained.
-  action: Read this page
-- url: /build/technology/temporal-memory-safety/
-  description: A pointer can remain inside the correct bounds and still be unsafe.
-  action: Read this page
 summary: CHERI compartmentalisation contains bugs and attacks by limiting what each component can access.
+permalink: /build/technology/compartmentalisation/
+slug: build-technology-compartmentalisation
+navigation:
+  header:
+    category: Build
+    subcategory: Technology
+related:
+- type: page
+  slug: build-technology-hybrid-systems
+  relation: next_step
+- type: page
+  slug: build-technology-how-cheri-capabilities-work
+  relation: related
+- type: page
+  slug: build-technology-temporal-memory-safety
+  relation: related
 ---
+
+## Overview
 
 Consider a network parser. It may need to read one packet and return a structured result. It does not need access to account credentials, update controls or every object in the application.
 
@@ -20,7 +29,6 @@ Yet conventional software often places many libraries and components within the 
 **Compartmentalisation** divides software into smaller protection domains. Each compartment receives only the capabilities required for its job.
 
 ## From crash boundary to authority boundary
-{: id="from-crash-boundary-to-authority-boundary" }
 
 Processes already provide strong and useful isolation and are often the right boundary between applications or services.
 
@@ -31,7 +39,6 @@ CHERI capabilities allow protection at a finer granularity. Compartments can exi
 > A compartment is defined by the capabilities it can access, not simply by which addresses exist in its address space.
 
 ## A minimal parser compartment
-{: id="a-minimal-parser-compartment" }
 
 A parser might receive:
 
@@ -52,7 +59,6 @@ If a bug allows an attacker to take control of the parser, the attacker gains on
 This is the **principle of least privilege** applied within software.
 
 ## Crossing compartment boundaries
-{: id="crossing-compartment-boundaries" }
 
 Code sometimes needs to call a service in another compartment. That transition needs to ensure that the destination receives only the authority it is supposed to receive and that control can safely return afterwards.
 
@@ -63,7 +69,6 @@ Different CHERI systems implement compartments differently. CHERIoT integrates c
 The important principle is the same: crossing a compartment boundary should not implicitly transfer all of the caller's authority.
 
 ## Least privilege and delegation
-{: id="least-privilege-and-delegation" }
 
 Capabilities make delegation explicit. A caller can derive a narrower capability and pass it to the callee without transferring all of its own authority.
 
@@ -79,7 +84,6 @@ This makes the flow of authority visible in software interfaces and allows devel
 Care is still required when capabilities can be retained or passed onwards. Compartment interfaces should define who may keep or delegate each capability and for how long.
 
 ## Memory safety and compartmentalisation are different
-{: id="memory-safety-and-compartmentalisation-are-different" }
 
 Memory safety and compartmentalisation solve related but different problems.
 
@@ -97,7 +101,6 @@ Strong systems therefore combine both:
 - compartmentalisation limits how much memory and functionality a component is authorised to access in the first place
 
 ## Designing useful compartments
-{: id="designing-useful-compartments" }
 
 A compartment is only as secure as the authority it receives. When defining a boundary, consider:
 
@@ -108,7 +111,6 @@ A compartment is only as secure as the authority it receives. When defining a bo
 - A trusted switcher or runtime becomes part of the trusted computing base
 
 ## Evidence for a useful boundary
-{: id="evidence-for-a-useful-boundary" }
 
 A compartment claim should include:
 

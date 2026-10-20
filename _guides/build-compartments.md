@@ -1,27 +1,34 @@
 ---
+layout: details/guide
 title: Build Compartments
-where-next:
-  url: /guides/tutorials-and-training/
-related-pages:
-- url: /guides/port-existing-software/
-  description: Porting software to CHERI is a process of finding assumptions about pointers, integers, objects,
-    bounds, provenance, lifetimes, and interfaces.
-  action: Read this page
-- url: /guides/choose-a-platform/
-  title: Choose a Platform
-  description: Choose a platform, prepare an environment and run a first CHERI workload.
-  action: Read this page
-summary: Build compartments by mapping authority first, then give each component only the memory, services, and
-  entry points required for its task.
-topic: Compartmentalisation
+summary: Build compartments by mapping authority first, then give each component only the memory, services, and entry points required for its task.
+permalink: /guides/build-compartments/
+slug: build-compartments
+navigation:
+  header:
+    category: Build
+    subcategory: Software Developers
+guide:
+  topic: compartmentalisation
+related:
+- type: guide
+  slug: tutorials-and-training
+  relation: next_step
+- type: guide
+  slug: port-existing-software
+  relation: related
+- type: guide
+  slug: choose-a-platform
+  relation: related
 ---
+
+## Overview
 
 Memory-safe code can still be over-privileged. A parser may correctly read the input it receives but have no reason to access encryption keys, update controls, or unrelated application state. A compartment boundary limits what the component can reach even if it is buggy or compromised.
 
 The hard part is not adding the boundary instruction. It is deciding which authority must cross it.
 
 ## Choose a useful first boundary
-{: id="choose-a-useful-first-boundary" }
 
 Good first compartments have a narrow purpose and an existing interface. Examples include:
 
@@ -36,7 +43,6 @@ Good first compartments have a narrow purpose and an existing interface. Example
 A source-directory split alone does not create a useful security boundary. A compartment should correspond to assets and threats that can be described and tested.
 
 ## Describe the authority each component needs
-{: id="describe-the-authority-each-component-needs" }
 
 Before writing code, list what the component needs:
 
@@ -49,7 +55,6 @@ Before writing code, list what the component needs:
 This list describes the proposed security policy. Review it before implementation and keep it with the tests.
 
 ## Design a narrow interface
-{: id="design-a-narrow-interface" }
 
 Prefer interfaces that pass bounded data and small, well-defined values:
 
@@ -71,7 +76,6 @@ The interface should define:
 Passing a pointer to a large application context is convenient but usually grants too much authority.
 
 ## Derive, do not widen
-{: id="derive-do-not-widen" }
 
 The caller should derive a narrower capability from authority it already holds:
 
@@ -83,7 +87,6 @@ The caller should derive a narrower capability from authority it already holds:
 CHERI capabilities can normally be reduced but not amplified. The design should not depend on the callee inventing authority later.
 
 ## Select the platform mechanism
-{: id="select-the-platform-mechanism" }
 
 Compartment application programming interfaces (APIs) differ by environment:
 
@@ -94,7 +97,6 @@ Compartment application programming interfaces (APIs) differ by environment:
 Use the platform’s maintained mechanism. A calling convention assembled from raw sealing operations is appropriate only when the architecture work itself is the goal.
 
 ## Test the negative cases
-{: id="test-the-negative-cases" }
 
 A compartment test suite must show what fails:
 
@@ -109,7 +111,6 @@ A compartment test suite must show what fails:
 Check not only that the processor faults, but also what the system does next. Does it terminate one compartment, restart a service, reset the device, or stop the whole application? Availability is part of the design.
 
 ## Measure boundary cost
-{: id="measure-boundary-cost" }
 
 Fine-grained compartments trade reduced authority for transition and communication overhead. Measure:
 
@@ -123,7 +124,6 @@ Fine-grained compartments trade reduced authority for transition and communicati
 If a boundary is too expensive, first reduce call frequency or batch data. Removing the security boundary should not be the automatic optimisation.
 
 ## Review checklist
-{: id="review-checklist" }
 
 - Every granted capability appears in the authority record.
 - No undocumented global or inherited authority bypasses the interface.
@@ -133,4 +133,4 @@ If a boundary is too expensive, first reduce call frequency or batch data. Remov
 - Fault handling preserves the required availability and safety behaviour.
 - Performance results name the platform, software revision, and workload.
 
-For an embedded worked path, use the [CHERIoT Programmer’s Guide](https://cheriot.org/book/). For the underlying mechanism, read [Compartmentalisation](/build/technology/compartmentalisation/) and [Sealing](/build/technology/sealing/).
+For an embedded worked path, use the [CHERIoT Programmer’s Guide](https://cheriot.org/book/). For the underlying mechanism, read [Compartmentalisation](/build/technology/compartmentalisation/) and [Sealing](/build/technology/cheri-capabilities/sealing/).

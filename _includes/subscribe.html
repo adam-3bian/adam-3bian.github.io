@@ -1,5 +1,0 @@
-{% assign subscription = site.subscribe %}
-{% if subscription.enabled and page.subscribe != false %}
-  {% assign subscription_url = subscription.url | default: '/subscribe/' %}
-  {% include promotional-panel.html id='subscribe-title' title=subscription.title action=subscription.action url=subscription_url target=subscription.target rel=subscription.rel %}
-{% endif %}

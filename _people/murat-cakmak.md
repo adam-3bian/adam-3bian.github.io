@@ -1,24 +1,33 @@
 ---
+layout: details/speaker
 title: Murat Cakmak
-organization:
-- microservice-store
-speaker: true
 summary: Microservice Store
-thumbnail:
-  src: /assets/people/murat-cakmak/ecc356af5bf5-portrait.jpg
+permalink: /people/murat-cakmak/
+slug: murat-cakmak
+navigation:
+  header:
+    category: News & Events
+    subcategory: People & Opportunities
+image:
+  src: /assets/images/news-and-events/people-and-opportunities/murat-cakmak/41223809-ecc356af5bf5-portrait.jpg
   alt: Murat Cakmak
   width: 800
   height: 800
-links:
-- label: Back to all speakers
-  url: /news-and-events/people-and-opportunities/speakers/
-  kind: navigation
-- label: LinkedIn
-  url: https://www.linkedin.com/in/cakmakmurat
-  kind: profile
+person:
+  roles:
+  - speaker
+  organisations:
+  - organisation: microservice-store
+    relationship: other
+  links:
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/cakmakmurat
+related:
+- type: page
+  slug: news-and-events-people-and-opportunities-speakers
+  relation: navigation
 ---
 
 ## Biography
-{: id="biography" }
 
 Murat is Co-CEO @ Microservice Store.

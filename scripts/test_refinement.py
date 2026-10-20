@@ -15,8 +15,8 @@ ROUTES = {
     'members-grid':'alliance/leadership/members/?view=grid',
     'speakers':'news-and-events/people-and-opportunities/speakers/',
     'company':'organisations/axiomise-ltd/', 'person':'people/adam-finney/',
-    'glossary':'discover/resources/glossary/', 'hardware':'hardware/cheriot/',
-    'software':'software/cheribsd/', 'hardware-facts':'hardware/x730/',
+    'glossary':'discover/resources/glossary/', 'hardware':'build/platforms/cheriot/',
+    'software':'repositories/cheribsd/', 'hardware-facts':'adopt/assurance-and-adoption/x730-certification/',
     'policy':'policies/intellectual-property-policy/',
     'article':'news/ai-doesnt-need-a-kill-switch-it-needs-boundaries/'
 }
@@ -52,12 +52,12 @@ with sync_playwright() as p:
                 if 'people' in frame['kind']:
                     assert abs(frame['w']-frame['h']) < 1, (width,name,frame)
                 else:
-                    assert frame['w'] > frame['h'] and frame['fit']=='contain', (width,name,frame)
+                    assert (abs(frame['w']-frame['h']) < 1 if 'media-organisations' in frame['kind'] else frame['w'] > frame['h']) and frame['fit']=='contain', (width,name,frame)
             if name == 'members-grid':
                 assert len({(round(f['w']),round(f['h'])) for f in media}) == 1, (width,media)
-            if name in ['person','hardware','software']:
+            if name == 'hardware':
                 assert page.locator('.detail-aside').count() == 0, (width,name,'unnecessary sidebar')
-                assert page.locator('.inline-facts').count() == 1
+                assert page.locator('.inline-facts').count() == 0
                 if name == 'person' and width < 768:
                     boxes=page.locator('.record-portrait, .page-summary').evaluate_all('nodes=>nodes.map(n=>{const r=n.getBoundingClientRect();return {top:r.top,bottom:r.bottom}})')
                     summary, image = boxes
@@ -74,7 +74,7 @@ with sync_playwright() as p:
                 }''')
                 header, layout, body, aside = [detail[k] for k in ['header','layout','body','aside']]
                 assert abs(layout['x']-header['x']) < 1 and abs(layout['w']-header['w']) < 1, (width,name,detail)
-                if name in ['hardware-facts','policy','company']:
+                if name in ['policy','company','person','software']:
                     assert aside is not None, (width,name,'useful metadata aside missing')
                     assert page.locator('.inline-facts').count() == 0
                 assert abs(body['x']-layout['x']) < 1, (width,name,detail)
@@ -93,7 +93,7 @@ with sync_playwright() as p:
                 first_y = page.locator('[data-catalog-list] > li').first.bounding_box()['y']
                 if width == 1440: assert first_y-region_gap < 600, first_y
                 if width == 390: assert first_y-region_gap < 737, first_y
-                assert page.locator('[data-catalog-list] > li').count() == 52
+                assert page.locator('[data-catalog-list] > li').count() == 51
             if name == 'glossary':
                 first_y = page.locator('[data-glossary-entry] dd').first.bounding_box()['y']
                 if width == 390: assert first_y-region_gap < 665, first_y
@@ -121,13 +121,16 @@ with sync_playwright() as p:
     assert page.get_by_role('searchbox',name='Find a term').input_value() == ''
     page.go_forward()
     page.wait_for_function("document.activeElement.id==='glossary-term-bounds'")
-    # Notes remain paired with products when users filter, and their links are native.
-    page.goto(URL + 'build/platforms/cheri-products/')
-    assert page.locator('.catalog-annotation a').count() >= 8
-    page.locator('[data-filter-input]').select_option('Processor designs, chips, and boards')
-    assert page.locator('[data-catalog-list] > li:visible').count() == 8
-    assert page.locator('.catalog-annotation:visible').count() == 8
-    assert page.locator('a a').count() == 0
+    # Preserve all 23 source-backed overview entries while the Products directory
+    # contains only genuine hardware records.
+    import yaml
+    snapshot=json.loads((ROOT/'docs/migrations/v5.3/source-snapshot.json').read_text())
+    source=next(r for r in snapshot['pages'] if r['data'].get('product_entries'))
+    page.goto(URL+'build/platforms/cheri-products/')
+    visible=page.locator('main').inner_text()
+    assert all(entry['title'] in visible for entry in source['data']['product_entries'])
+    page.goto(URL+'products/')
+    assert page.locator('[data-catalog-list] > li').count()==2
     # The 1440 physical-pixel, 200% zoom equivalent has a 720 CSS-pixel viewport.
     zoom = browser.new_context(viewport={'width':720,'height':500},device_scale_factor=2)
     zoom_page = zoom.new_page()

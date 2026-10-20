@@ -1,23 +1,31 @@
 ---
+layout: details/speaker
 title: Marno van der Maas
-organization:
-- lowrisc
-speaker: true
-summary: Dr Marno van der Maas completed a PhD at the University of Cambridge in 2022 on protecting trusted execution
-  environments from side-channel attacks.
-thumbnail:
-  src: /assets/people/marno-van-der-maas/de74ac7aa3f7-portrait.png
+summary: Dr Marno van der Maas completed a PhD at the University of Cambridge in 2022 on protecting trusted execution environments from side-channel attacks.
+permalink: /people/marno-van-der-maas/
+slug: marno-van-der-maas
+navigation:
+  header:
+    category: News & Events
+    subcategory: People & Opportunities
+image:
+  src: /assets/images/news-and-events/people-and-opportunities/marno-van-der-maas/75be2552-de74ac7aa3f7-portrait.png
   alt: Marno van der Maas
   width: 904
   height: 1200
-links:
-- label: Back to all speakers
-  url: /news-and-events/people-and-opportunities/speakers/
-  kind: navigation
+person:
+  roles:
+  - speaker
+  organisations:
+  - organisation: lowrisc
+    relationship: other
+related:
+- type: page
+  slug: news-and-events-people-and-opportunities-speakers
+  relation: navigation
 ---
 
 ## Biography
-{: id="biography" }
 
 Dr Marno van der Maas completed a PhD at the University of Cambridge in 2022 on protecting trusted execution environments from side-channel attacks. During this time, Dr Van der Maas also worked on implementing and testing processors that enforce bounds and permissions on memory pointers using a technology named Capability Enhanced RISC Instructions (CHERI).
 

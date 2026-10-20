@@ -1,11 +1,20 @@
 ---
+layout: page/standard
 title: The Strategic Case for CHERI
-permalink: /adopt/business-case/the-business-case/
-where-next:
-  url: /adopt/business-case/cost-of-memory-unsafety/
-  title: Cost of Memory Unsafety
 summary: CHERI helps reduce risk, protect software investments, build trust and create competitive advantage.
+permalink: /adopt/business-case/the-business-case/
+slug: adopt-business-case-the-business-case
+navigation:
+  header:
+    category: Adopt
+    subcategory: Business Case
+related:
+- type: page
+  slug: adopt-business-case-cost-of-memory-unsafety
+  relation: next_step
 ---
+
+## Overview
 
 CHERI helps prevent many memory-safety vulnerabilities by design, creating the foundations for more secure and resilient systems.
 
@@ -14,7 +23,6 @@ Organisations face growing pressure to improve cybersecurity, strengthen resilie
 CHERI offers a practical approach. By adding hardware-enforced memory protection and compartmentalisation, it helps reduce the impact of memory-safety vulnerabilities while preserving the value of existing software investments.
 
 ## Reduce Risk
-{: id="reduce-risk" }
 
 CHERI can help reduce cyber risk by addressing one of the most persistent classes of software vulnerabilities at the hardware level. It supports secure-by-design objectives, strengthens critical systems, and helps create a more resilient digital ecosystem.
 
@@ -29,7 +37,6 @@ Investing in stronger security is a way to reduce that risk, at any level:
 Reducing risk is not only about preventing incidents. It is also about reducing uncertainty and improving confidence in the systems your organisation depends on.
 
 ## Preserve Investment
-{: id="preserve-investment" }
 
 Many organisations and products rely on software that has been developed, tested, and maintained over many years. Replacing this software is often expensive, disruptive, or impractical.
 
@@ -44,7 +51,6 @@ CHERI can help organisations:
 Rather than choosing between accepting risk and rewriting everything, CHERI provides a third option: strengthen what already exists.
 
 ## Build Trust
-{: id="build-trust" }
 
 Customers, regulators, governments, and insurers increasingly expect products and services to be secure by design. Organisations must not only improve security, but also demonstrate that appropriate protections are in place.
 
@@ -61,7 +67,6 @@ The result can be:
 Trust is difficult to build and easy to lose. Stronger foundations can help organisations protect both their systems and their reputation.
 
 ## Create Competitive Advantage
-{: id="create-competitive-advantage" }
 
 Security is increasingly influencing purchasing decisions, procurement requirements, and regulatory expectations. Organisations that **invest early** in stronger security foundations can be better positioned to meet future customer expectations and secure-by-design requirements.
 
@@ -77,6 +82,5 @@ Depending on their role, organisations or their customers may benefit from:
 As security expectations continue to rise, investing in resilient technologies today can help organisations prepare for tomorrow’s requirements.
 
 ## A Strategic Investment in Resilience
-{: id="a-strategic-investment-in-resilience" }
 
 CHERI is more than a security technology. It helps organisations reduce risk, protect software investments, build trust, and prepare for future security expectations. For organisations seeking stronger security without discarding decades of software development, CHERI offers a practical path towards more resilient products and services.

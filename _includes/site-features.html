@@ -1,24 +1,3 @@
-{% if page.url == '/alliance/membership/contact/' %}{% include contact-form.html %}{% endif %}
-{% if page.url == '/news-and-events/news-and-analysis/subscribe-newsletter/' %}{% include newsletter-form.html %}{% endif %}
-
 {% include relationships.html %}
-{% if page.url == '/' %}
-  {% include chronological-items.html items=site.news kind='news' %}
-  {% assign featured_news = chronological_items | where_exp: 'entry', 'entry.undated != true' | slice: 0, 3 %}
-  {% if featured_news.size > 0 %}
-    <section aria-labelledby="home-news-title">
-      <h2 id="home-news-title">Latest from the CHERI ecosystem</h2>
-      {% include listing.html items=featured_news label="Latest news" kind="news" mode="grid" columns=3 heading="h3" metadata=true %}
-      <p class="section-link"><a href="{{ '/news/' | relative_url }}">View all news &rarr;</a></p>
-    </section>
-  {% endif %}
-  {% include chronological-items.html items=site.events kind='events' status='upcoming' %}
-  {% assign featured_events = chronological_items %}
-  {% if featured_events.size > 0 %}
-    <section aria-labelledby="home-events-title">
-      <h2 id="home-events-title">Upcoming events</h2>
-      {% include listing.html items=featured_events label="Upcoming events" kind="events" mode="grid" filter="upcoming" columns=2 heading="h3" metadata=true %}
-      <p class="section-link"><a href="{{ '/events/' | relative_url }}">Explore all events &rarr;</a></p>
-    </section>
-  {% endif %}
-{% endif %}
+{% include related-content.html %}
+{% if page.url == '/' %}{% assign featured_news = site.posts | sort: 'date' | reverse | slice: 0, 3 %}{% include relationship-section.html items=featured_news kind='posts' id='home-news-title' title='Latest from the CHERI ecosystem' %}{% include chronological-items.html items=site.events kind='events' status='upcoming' %}{% include relationship-section.html items=chronological_items kind='events' id='home-events-title' title='Upcoming events' %}{% endif %}

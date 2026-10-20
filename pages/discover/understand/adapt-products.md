@@ -1,20 +1,27 @@
 ---
+layout: page/standard
 title: Bringing CHERI to your product
-permalink: /discover/understand/adapt-products/
-where-next:
-  url: /build/technology/cheri-and-rust-technical/
-related-pages:
-- url: /discover/understand/cheri-and-existing-software/
-  description: Porting software to CHERI is a process of finding assumptions about pointers, integers, objects,
-    bounds, provenance, lifetimes, and interfaces.
-  action: Read this page
 summary: What needs to change, and what doesn't.
+permalink: /discover/understand/adapt-products/
+slug: discover-understand-adapt-products
+navigation:
+  header:
+    category: Discover CHERI
+    subcategory: Understand CHERI
+related:
+- type: page
+  slug: build-technology-cheri-and-rust-technical
+  relation: next_step
+- type: page
+  slug: discover-understand-cheri-and-existing-software
+  relation: related
 ---
+
+## Overview
 
 Adopting CHERI does not mean rebuilding the entire technology stack. One of CHERI’s strengths is that different organisations can contribute at different points in the value chain, allowing the benefits of hardware-enforced memory protection and compartmentalisation to flow from silicon vendors to end products.
 
 ## What needs to change?
-{: id="what-needs-to-change" }
 
 CHERI is a hardware technology, so it needs to be introduced across the layers of a system:
 
@@ -32,12 +39,10 @@ CHERI is a hardware technology, so it needs to be introduced across the layers o
 Not every layer requires the same level of effort. Much of the complexity is handled by processor vendors, operating system developers, and toolchain providers, allowing many product teams to adopt CHERI incrementally.
 
 ## Where are you in the value chain?
-{: id="where-are-you-in-the-value-chain" }
 
-![Value chain](/assets/shared/source-assets/42beef82414f-value-chain.webp){: .image-full }
+![Value chain](/assets/images/discover/understand/discover-understand-adapt-products/1731e71e-42beef82414f-value-chain.webp){: .image-full }
 
 ### Processor designers
-{: id="processor-designers" }
 
 CHERI starts with the processor. Adding CHERI involves extending the processor with support for capabilities, including:
 
@@ -49,7 +54,6 @@ CHERI starts with the processor. Adding CHERI involves extending the processor w
 This is the layer where most of the CHERI-specific engineering effort takes place. Fortunately, processor designers do not have to start from scratch. CHERI specifications, reference implementations, open-source designs, and standardisation work such as the RISC-V RVY architecture extension provide a clear path to implementation.
 
 ### Chips / SoC designers
-{: id="chips--soc-designers" }
 
 If you integrate processor IP into a SoC, adopting CHERI is primarily about selecting or integrating CHERI-enabled processor cores and following some guidelines. Recommendations and best practices to do this are available from the CHERI Alliance.
 
@@ -58,22 +62,18 @@ Integrating CHERI-enabled processor cores into an SoC is broadly similar to inte
 It is a natural evolution towards more security, and often goes along improved security enhancements such as Post-Quantum crypto support. CHERI is complementary to traditional security technologies, as it fills an important gap by addressing memory safety and enabling fine-grained compartmentalisation.
 
 ### Platform developers
-{: id="platform-developers" }
 
 For platform and module vendors, adoption often consists primarily of selecting CHERI-enabled silicon and integrating with CHERI-enabled software.
 
 ### Device manufacturers and product vendors
-{: id="device-manufacturers-and-product-vendors" }
 
 Many manufacturers will adopt CHERI simply by selecting CHERI-enabled platforms or modules from their suppliers.
 
 ### Users
-{: id="users" }
 
 The underlying capability mechanisms remain largely invisible to end users. They benefit from stronger protection against memory-safety vulnerabilities and greater resilience when vulnerabilities do occur.
 
 ## Adoption does not happen all at once
-{: id="adoption-does-not-happen-all-at-once" }
 
 Different organisations can adopt CHERI independently.
 
@@ -82,7 +82,6 @@ A processor vendor may implement CHERI years before a product team fully exploit
 This flexibility allows CHERI adoption to follow existing product roadmaps and investment cycles.
 
 ## In summary
-{: id="in-summary" }
 
 Bringing CHERI to a product is not a single activity performed by a single organisation. It is a value-chain effort that starts with CHERI-enabled hardware and continues through platforms, operating systems, software, and product integration.
 

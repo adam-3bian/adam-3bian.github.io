@@ -1,22 +1,4 @@
-{% if page.rendered_breadcrumbs %}
-<nav class="breadcrumbs" aria-label="Breadcrumb">{{ page.rendered_breadcrumbs }}</nav>
-{% else %}
-{% if page.parent %}
-  {% assign ancestor_url = page.parent %}
-  {% assign ancestor_items = '' %}
-  {% capture visited %}|{{ page.url }}|{% endcapture %}
-  {% for depth in (1..12) %}
-    {% assign ancestor = all_pages | where: 'url', ancestor_url | first %}
-    {% capture marker %}|{{ ancestor_url }}|{% endcapture %}
-    {% if ancestor == nil or visited contains marker %}{% break %}{% endif %}
-    {% capture visited %}{{ visited }}{{ marker }}{% endcapture %}
-    {% capture ancestor_items %}<li><a href="{{ ancestor.url | relative_url | escape }}">{{ ancestor['nav-title'] | default: ancestor.title | escape }}</a></li>{{ ancestor_items }}{% endcapture %}
-    {% unless ancestor.parent %}{% break %}{% endunless %}
-    {% assign ancestor_url = ancestor.parent %}
-  {% endfor %}
-  <nav class="breadcrumbs" aria-label="Breadcrumb">
-    <ol>{{ ancestor_items }}<li><span aria-current="page">{{ page['nav-title'] | default: page.title | escape }}</span></li></ol>
-  </nav>
-{% endif %}
-
-{% endif %}
+{% unless page.url == '/' %}<nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="{{ '/' | relative_url }}">Home</a></li>
+{% assign category_pages = site.pages | where_exp: 'entry', 'entry.landing != nil' | where: 'landing.navigation', 'category' %}{% for ancestor in category_pages %}{% if ancestor.navigation.header.category == page.navigation.header.category and ancestor.url != page.url %}<li><a href="{{ ancestor.url | relative_url }}">{{ ancestor.title | escape }}</a></li>{% endif %}{% endfor %}
+{% if page.navigation.header.subcategory %}<li><span>{{ page.navigation.header.subcategory | escape }}</span></li>{% endif %}
+<li><span aria-current="page">{{ page.title | escape }}</span></li></ol></nav>{% endunless %}

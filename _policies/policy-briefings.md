@@ -1,30 +1,37 @@
 ---
+layout: details/policy
 title: Policy Briefings
-where-next:
-  url: /organisations/cheri-alliance/
-  title: About the CHERI Alliance
-related-pages:
-- url: /adopt/policy/government-guidance/
-  title: Government Guidance
-  description: Public guidance places CHERI alongside memory-safe languages and other routes to more resilient software.
-  action: Read this page
-- url: /adopt/policy/critical-infrastructure-and-resilience/
-  description: CHERI can contribute prevention and containment within the wider resilience of an essential service.
-  action: Read this page
-- url: /adopt/business-case/the-business-case/
-  title: The Business Case
-  description: CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.
-  action: Read this page
-summary: 'CHERI gives policy discussions an additional route to memory safety: hardware-enforced protection for
-  low-level and existing software, with finer-grained containment.'
+summary: 'CHERI gives policy discussions an additional route to memory safety: hardware-enforced protection for low-level and existing software, with finer-grained containment.'
+permalink: /policies/policy-briefings/
+slug: policy-briefings
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Legal & Policies
+policy:
+  type: governance
+related:
+- type: organisation
+  slug: cheri-alliance
+  relation: next_step
+- type: page
+  slug: adopt-policy-government-guidance
+  relation: related
+- type: page
+  slug: adopt-policy-critical-infrastructure-and-resilience
+  relation: related
+- type: page
+  slug: adopt-business-case-the-business-case
+  relation: related
 ---
+
+## Overview
 
 Memory safety policy often centres on language change, vulnerability reduction, or secure development practice. CHERI broadens that discussion by protecting memory at the processor and supporting compartments with limited authority.
 
 Its relevance is greatest where established native code will remain in use, where process isolation is too coarse or unavailable, and where one compromised component sits close to more valuable functions.
 
 ## Briefing: memory safety has more than one route
-{: id="briefing-memory-safety-has-more-than-one-route" }
 
 Memory-safe languages can prevent broad classes of defects and are an important foundation for new software. CHERI addresses low-level and existing code that may not move to a new language quickly. The two approaches can coexist in one product.
 
@@ -33,14 +40,12 @@ Testing, hardening, process isolation, virtual machines, updates, and vulnerabil
 This makes CHERI relevant to a portfolio of memory-safety measures rather than a universal replacement for them.
 
 ## Briefing: adoption depends on an ecosystem
-{: id="briefing-adoption-depends-on-an-ecosystem" }
 
 A processor feature becomes useful in products through toolchains, operating systems, libraries, runtimes, debugging, training, test platforms, and assurance. CHERI’s path from research through Morello, CheriBSD, CHERIoT, RISC-V work, and commercial processor intellectual property shows that these surrounding layers are developing together.
 
 Shared specifications, open software, compliance tests, and available development platforms reduce the amount of work repeated by each adopter. Commercial products and public certification records make the technology easier to compare with a real product need.
 
 ## Briefing: outcomes matter more than labels
-{: id="briefing-outcomes-matter-more-than-labels" }
 
 “CHERI-enabled” can describe very different levels of protection. A processor core may implement the architecture correctly, while a complete product may additionally run capability-aware software and use compartments throughout its design.
 
@@ -49,14 +54,12 @@ The meaningful outcome is the scope: which code uses capabilities, what memory a
 This is also why the CHERI Enabled programme is product-specific. Its public records connect the mark to a named version and submitted evidence rather than treating the technology name as a general security certificate.
 
 ## Briefing: containment supports resilience
-{: id="briefing-containment-supports-resilience" }
 
 Memory protection can stop an invalid operation. Compartmentalisation can prevent the affected component from reaching unrelated data or functions. Together, these properties can reduce the chance that one software flaw becomes a system-wide event.
 
 For essential services, fault response remains part of the result. A capability fault may lead to restart, failover, degraded operation, or outage depending on the wider architecture. CHERI strengthens an internal boundary; availability and recovery remain system properties.
 
 ## Briefing: why CHERI may be a good fit
-{: id="briefing-why-cheri-may-be-a-good-fit" }
 
 The strongest policy case appears where four conditions meet:
 

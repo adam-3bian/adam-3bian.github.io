@@ -1,30 +1,40 @@
 ---
+layout: details/speaker
 title: Mike Eftimakis
-organization:
-- cheri-alliance
-speaker: true
-summary: Mike Eftimakis has an extensive background in the semiconductor and electronics industry with 30 years
-  in senior technical and business roles.
-board_role: Founding Director
-thumbnail:
-  src: /assets/people/mike-eftimakis/7235ea4127c4-portrait.jpg
+summary: Mike Eftimakis has an extensive background in the semiconductor and electronics industry with 30 years in senior technical and business roles.
+permalink: /people/mike-eftimakis/
+slug: mike-eftimakis
+navigation:
+  header:
+    category: News & Events
+    subcategory: People & Opportunities
+image:
+  src: /assets/images/news-and-events/people-and-opportunities/mike-eftimakis/2d82574b-7235ea4127c4-portrait.jpg
   alt: Mike Eftimakis
   width: 3640
   height: 2862
-links:
-- label: Back to all speakers
-  url: /news-and-events/people-and-opportunities/speakers/
-  kind: navigation
-- label: Back to the Governing Board
-  url: /alliance/leadership/governing-board/
-  kind: navigation
-- label: LinkedIn
-  url: https://www.linkedin.com/in/mikeeftimakis/
-  kind: profile
+person:
+  roles:
+  - speaker
+  organisations:
+  - organisation: cheri-alliance
+    relationship: other
+  governance:
+    board_order: 1
+    board_role: Founding Director
+  links:
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/mikeeftimakis/
+related:
+- type: page
+  slug: news-and-events-people-and-opportunities-speakers
+  relation: navigation
+- type: page
+  slug: alliance-leadership-governing-board
+  relation: navigation
 ---
 
 ## Biography
-{: id="biography" }
 
 Mike Eftimakis has an extensive background in the semiconductor and electronics industry with 30 years in senior technical and business roles. He has a rich history of innovation with companies like VLSI Technology, NewLogic, Arm and Codasip, and he started-up and led his own company. where he played pivotal roles in advancing technology and business strategies. His expertise ranges from chip design engineering and system architecture to product and company management, marketing and strategy, making him a key contributor to the growth and success of microelectronics organisations.
 

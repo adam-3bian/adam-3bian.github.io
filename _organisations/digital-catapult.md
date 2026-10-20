@@ -1,36 +1,38 @@
 ---
+layout: details/member
 title: Digital Catapult
-member: true
-summary: Digital Catapult is a deep tech innovation organisation. We help businesses grow by applying deep tech.
-  We show what is possible, positive and productive with advanced technology. We work with businesses and early
-  adopters to explore, develop, and…
-membership_category: Community Member
-membership_status: Member
-links:
-- label: Visit member website
-  url: https://www.digicatapult.org.uk/
-  kind: website
-  primary: true
-- label: Back to all members
-  url: /alliance/leadership/members/
-  kind: navigation
-thumbnail:
-  src: /assets/organisations/digital-catapult/797be91526b2-logo.jpg
+summary: Digital Catapult is a deep tech innovation organisation. We help businesses grow by applying deep tech. We show what is possible, positive and productive with advanced technology. We work with businesses and early adopters to explore, develop, and…
+permalink: /organisations/digital-catapult/
+slug: digital-catapult
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Leadership
+image:
+  src: /assets/images/alliance/leadership/digital-catapult/0f7c5593-797be91526b2-logo.jpg
   alt: Digital Catapult logo
   width: 1000
   height: 1000
   fit: contain
+organisation:
+  membership:
+    is_member: true
+    status: active
+    tier: community
+  website: https://www.digicatapult.org.uk/
+related:
+- type: page
+  slug: alliance-leadership-members
+  relation: navigation
 ---
 
 ## Description
-{: id="description" }
 
 Digital Catapult is a deep tech innovation organisation.
 
 We help businesses grow by applying deep tech. We show what is possible, positive and productive with advanced technology. We work with businesses and early adopters to explore, develop, and apply advanced technologies, bridging the gap between innovation and real-world impact.
 
 ## CHERI Activities
-{: id="cheri-activities" }
 
 From 2022 until March 2025, Digital Catapult managed and delivered the DSbD Technology Access Programme (TAP), funded by UKRI and in collaboration with the University of Cambridge, ARM and lowRISC.
 
@@ -41,6 +43,5 @@ Across the delivery of 6 cohorts, made up of 51 different companies from across 
 In addition, Digital Catapult built a Remote Lab, allowing companies to access a virtual platform hosted on Morello for CI/CD with CheriBSD. More information on this can be found here: [https://github.com/dc-dsbd](https://github.com/dc-dsbd)
 
 ## Open-source Assets for CHERI
-{: id="open-source-assets-for-cheri" }
 
 [https://github.com/dc-dsbd](https://github.com/dc-dsbd)

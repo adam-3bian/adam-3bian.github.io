@@ -1,25 +1,34 @@
 ---
+layout: details/speaker
 title: Carl Shaw
-organization:
-- codasip
-speaker: true
 summary: Carl Shaw is a hands-on technical expert with a diverse background in embedded systems and security engineering.
-thumbnail:
-  src: /assets/people/carl-shaw/8f07d5273822-portrait.jpg
+permalink: /people/carl-shaw/
+slug: carl-shaw
+navigation:
+  header:
+    category: News & Events
+    subcategory: People & Opportunities
+image:
+  src: /assets/images/news-and-events/people-and-opportunities/carl-shaw/af475053-8f07d5273822-portrait.jpg
   alt: Carl Shaw
   width: 500
   height: 500
-links:
-- label: Back to all speakers
-  url: /news-and-events/people-and-opportunities/speakers/
-  kind: navigation
-- label: LinkedIn
-  url: https://www.linkedin.com/in/shawcarl/
-  kind: profile
+person:
+  roles:
+  - speaker
+  organisations:
+  - organisation: codasip
+    relationship: other
+  links:
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/shawcarl/
+related:
+- type: page
+  slug: news-and-events-people-and-opportunities-speakers
+  relation: navigation
 ---
 
 ## Biography
-{: id="biography" }
 
 Carl Shaw is a hands-on technical expert with a diverse background in embedded systems and security engineering.
 

@@ -1,23 +1,29 @@
 ---
+layout: page/standard
 title: Pure-Capability Systems
+summary: Pure-capability systems use capabilities for pointers throughout compiled software, applying CHERI protection broadly across the system.
 permalink: /build/technology/pure-capability-systems/
-related-pages:
-- url: /build/technology/how-cheri-capabilities-work/
-  description: How CHERI Capabilities work.
-  action: Read this page
-- url: /build/technology/hybrid-systems/
-  description: Replacing every pointer in a large software stack at once is rarely practical.
-  action: Read this page
-summary: Pure-capability systems use capabilities for pointers throughout compiled software, applying CHERI protection
-  broadly across the system.
+slug: build-technology-pure-capability-systems
+navigation:
+  header:
+    category: Build
+    subcategory: Technology
+related:
+- type: page
+  slug: build-technology-how-cheri-capabilities-work
+  relation: related
+- type: page
+  slug: build-technology-hybrid-systems
+  relation: related
 ---
+
+## Overview
 
 Hybrid CHERI can protect selected objects and interfaces, while conventional pointers elsewhere remain outside that protection. A **pure-capability** ABI goes further: language-visible pointers are represented as capabilities throughout the relevant software.
 
 This is the main approach for applying CHERI memory protection broadly to existing C and C++ code without rewriting every component in another language.
 
 ## What changes in the ABI
-{: id="what-changes-in-the-abi" }
 
 An ABI defines how compiled components agree on calls, data layout, registers, binaries, and system interfaces. In a pure-capability ABI:
 
@@ -31,7 +37,6 @@ An ABI defines how compiled components agree on calls, data layout, registers, b
 Every linked component at an interface must follow compatible rules.
 
 ## Where capabilities come from
-{: id="where-capabilities-come-from" }
 
 The operating system and program loader establish initial capabilities for code, globals, stack, and mapped memory. The runtime and allocator derive capabilities for objects. The compiler then uses those capabilities for ordinary source-level pointer operations.
 
@@ -44,7 +49,6 @@ char *buffer = malloc(128);
 can produce a capability bounded to the allocation. Loads and stores through `buffer` are checked by the processor without requiring the source programmer to call a CHERI instruction for each access.
 
 ## Benefits
-{: id="benefits" }
 
 Pure-capability systems provide:
 
@@ -58,7 +62,6 @@ Pure-capability systems provide:
 Large bodies of Unix software have been ported through CheriBSD, showing that this model can support complete operating-system and application stacks.
 
 ## Common porting changes
-{: id="common-porting-changes" }
 
 Well-structured source often compiles with little change. Problems usually appear where code:
 
@@ -73,21 +76,18 @@ Well-structured source often compiles with little change. Problems usually appea
 These are often latent portability or security problems even before CHERI. The pure-capability build makes them visible.
 
 ## Pointer size and performance
-{: id="pointer-size-and-performance" }
 
 Capabilities carry more information than ordinary addresses. Depending on the architecture, this can increase pointer storage, memory traffic, structure size, or register pressure. Capability compression reduces the representation cost, and compiler, allocator, and microarchitecture choices influence the result.
 
 There is no universal performance overhead. Pointer-heavy data structures, system calls, cache behaviour, and compartment transitions affect workloads differently. Measure the intended application on the intended implementation.
 
 ## Pure capability is not the same as compartmentalised
-{: id="pure-capability-is-not-the-same-as-compartmentalised" }
 
 A pure-capability process can still begin with capabilities for most of its address space. Its pointers are protected by bounds and permissions, but every library may remain part of one large trust domain.
 
 Compartmentalisation deliberately divides the capabilities held by different components. It is an additional architecture and software design step.
 
 ## Pure capability is not a complete security guarantee
-{: id="pure-capability-is-not-a-complete-security-guarantee" }
 
 - Bounds may be at allocation rather than every language subobject.
 - Temporal safety requires a defined lifetime mechanism.
@@ -97,7 +97,6 @@ Compartmentalisation deliberately divides the capabilities held by different com
 - Software must still validate input and enforce authentication and policy.
 
 ## How to verify the mode
-{: id="how-to-verify-the-mode" }
 
 The hardware name alone does not establish pure-capability operation. Check:
 

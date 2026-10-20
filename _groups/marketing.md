@@ -1,24 +1,31 @@
 ---
+layout: details/working-group
 title: 📣 Marketing WG
-where-next:
-  url: /groups/promotion-and-ambassador-program/
-  title: Promotion & Ambassador Program
-summary: Coordinates accurate CHERI messaging, shared material, campaigns, events, and communication across the
-  Alliance ecosystem.
-group_type: Programme and ecosystem
-collaboration_areas:
-- Shared messaging and material
-- Campaigns and events
-- Ecosystem communication
-links:
-- label: Back to all working groups
-  url: /alliance/leadership/working-groups/
-  kind: navigation
-- label: Enquire about this group
-  url: /alliance/membership/contact/
-  kind: resource
-  primary: true
+summary: Coordinates accurate CHERI messaging, shared material, campaigns, events, and communication across the Alliance ecosystem.
+permalink: /groups/marketing/
+slug: marketing
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Leadership
+working_group:
+  type: programme
+  focus_areas:
+  - Shared messaging and material
+  - Campaigns and events
+  - Ecosystem communication
+forms:
+- contact
+related:
+- type: working_group
+  slug: promotion-and-ambassador-program
+  relation: next_step
+- type: page
+  slug: alliance-leadership-working-groups
+  relation: navigation
 ---
+
+## Overview
 
 CHERI needs explanations that are accurate, useful to different audiences, and clear about the maturity of the technology. The group coordinates shared messages and material so Alliance activity can be communicated consistently without flattening important technical distinctions.
 

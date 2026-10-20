@@ -1,31 +1,35 @@
 ---
+layout: details/member
 title: CyberWhiz
-member: true
 summary: IoT Cyber Security Solutions and Services for Edge – Mobile – Cloud.
-membership_category: Full Member
-membership_status: Member
-links:
-- label: Visit member website
-  url: https://www.cyberwhiz.co.uk/
-  kind: website
-  primary: true
-- label: Back to all members
-  url: /alliance/leadership/members/
-  kind: navigation
-thumbnail:
-  src: /assets/organisations/cyberwhiz/1e18de21cd71-logo.png
+permalink: /organisations/cyberwhiz/
+slug: cyberwhiz
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Leadership
+image:
+  src: /assets/images/common/b4292ca5-1e18de21cd71-logo.png
   alt: CyberWhiz Logo
   width: 1499
   height: 354
   fit: contain
+organisation:
+  membership:
+    is_member: true
+    status: active
+    tier: full
+  website: https://www.cyberwhiz.co.uk/
+related:
+- type: page
+  slug: alliance-leadership-members
+  relation: navigation
 ---
 
 ## Description
-{: id="description" }
 
 IoT Cyber Security Solutions and Services for Edge – Mobile – Cloud.
 
 ## CHERI Activities
-{: id="cheri-activities" }
 
 We are a new member. We have just attended the last CHERI Alliance event.

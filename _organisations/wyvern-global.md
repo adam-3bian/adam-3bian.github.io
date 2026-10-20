@@ -1,29 +1,32 @@
 ---
+layout: details/member
 title: Wyvern Global
-member: true
-summary: Wyvern Global Semiconductors is leading the way in memory-secure System on Chips (SoCs) with our Wyvern
-  Advanced RISC-V Processor, known as WARP. We are dedicated to providing the first commercially available SoCs
-  in the world that are CHERI-native…
-membership_category: Full Member
-membership_status: Member
-links:
-- label: Visit member website
-  url: https://wyvern.global/
-  kind: website
-  primary: true
-- label: Back to all members
-  url: /alliance/leadership/members/
-  kind: navigation
-thumbnail:
-  src: /assets/organisations/wyvern-global/795076e4b546-logo.png
+summary: Wyvern Global Semiconductors is leading the way in memory-secure System on Chips (SoCs) with our Wyvern Advanced RISC-V Processor, known as WARP. We are dedicated to providing the first commercially available SoCs in the world that are CHERI-native…
+permalink: /organisations/wyvern-global/
+slug: wyvern-global
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Leadership
+image:
+  src: /assets/images/common/2bcd0250-795076e4b546-logo.png
   alt: Wyvern Global logo
   width: 1200
   height: 900
   fit: contain
+organisation:
+  membership:
+    is_member: true
+    status: active
+    tier: full
+  website: https://wyvern.global/
+related:
+- type: page
+  slug: alliance-leadership-members
+  relation: navigation
 ---
 
 ## Description
-{: id="description" }
 
 Wyvern Global Semiconductors is leading the way in memory-secure System on Chips (SoCs) with our Wyvern Advanced RISC-V Processor, known as WARP.
 
@@ -32,7 +35,6 @@ We are dedicated to providing the first commercially available SoCs in the world
 We are currently developing a distribution center off Junction 34 of the M6, which will support our commercial operations and facilitate the distribution of these SoCs.
 
 ## CHERI Activities
-{: id="cheri-activities" }
 
 We are currently developing WARP in-house and have received interest from numerous control system engineers across various industries. We are actively reaching out to these engineers to explore future partnership opportunities.
 

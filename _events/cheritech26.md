@@ -1,60 +1,297 @@
 ---
+layout: details/event
 title: CHERITech'26
-start_date: '2026-11-12'
-end_date: '2026-11-13'
-summary: A two-day CHERI technical programme at **Electronica** / **SEMICON Europa** in Munich, connecting implementation
-  work with the wider electronics industry.
-format: Conference
-location: Electronica / SEMICON Europa, Munich Messe - Hall B0, Munich, Germany
-links:
-- label: Register for CHERITech’26
-  url: '#register'
-  kind: registration
-  primary: true
-- label: Electronica
-  url: https://electronica.de/en/
-  kind: location
-- label: SEMICON Europa
-  url: https://www.semiconeuropa.org/
-  kind: location
-- label: CHERITech
-  url: /news-and-events/events-and-archive/cheritech/
-  kind: resource
-- label: Back to upcoming events
-  url: /news-and-events/events-and-archive/upcoming-events/
-  kind: navigation
-series: CHERITech
-date_note: 12-13 November 2026 (**Conference**) - 10-13 November 2026 (**Exhibition**)
-thumbnail:
-  src: /assets/events/cheritech26/408459d34c43-cheritech26.webp
+summary: A two-day CHERI technical programme at **Electronica** / **SEMICON Europa** in Munich, connecting implementation work with the wider electronics industry.
+permalink: /events/cheritech26/
+slug: cheritech26
+navigation:
+  header:
+    category: News & Events
+    subcategory: Events & Archive
+image:
+  src: /assets/images/common/a6d3b833-408459d34c43-cheritech26.webp
   alt: CHERITech'26
   width: 640
   height: 360
-card_sections:
-- title: Discover previous CHERITech events
-  id: discover-previous-cheritech-events
-  groups:
-  - entries:
-    - url: /events/cheritech25-reloaded/
-      context: '4 December 2025
-
-        Online'
-      labels: 'Past
-
-        Online event'
-    - url: /events/cheritech25/
-      context: '14 November 2025
-
-        Sister, Manchester, UK'
-      labels: 'Past
-
-        Conference'
-    intro: '[About CHERITech Conferences](/news-and-events/events-and-archive/cheritech/)
-
-
-      Explore previous events to watch recordings, download presentations and follow the evolution of CHERI implementations
-      across hardware and software.'
+date: '2026-11-12'
+end_date: '2026-11-13'
+event:
+  format: conference
+  series: cheritech
+  location:
+    venue: Electronica / SEMICON Europa, Munich Messe - Hall B0, Munich, Germany
+  timezone: Europe/Berlin
+  registration:
+    url: https://discover.semi.org/cheritech26-powered-by-cheri-alliance-registration.html
+    label: Register for CHERITech’26
+  organisers:
+  - organisation: cheri-alliance
+    role: organiser
+  schedule:
+  - date: '2026-11-12'
+    sessions:
+    - id: programme-2026-11-12-introduction-1
+      type: introduction
+      title: Introduction
+      track: main
+      start: '13:00'
+      presentations:
+      - id: presentation-introduction-to-day-1-60976a
+        title: Introduction to Day 1
+    - id: programme-2026-11-12-keynotes-2
+      type: keynote
+      title: Keynotes
+      track: main
+      start: '13:05'
+      end: '14:20'
+      presentations:
+      - id: presentation-keynote-d27f61
+        title: Keynote
+        description: 'Published presenter credit: Yona Raekow — BSI'
+      - id: presentation-with-cheri-can-we-afford-to-ignore-hardware-security-af43a4
+        title: With CHERI, can we afford to ignore hardware security?
+        description: 'Published presenter credit: Joerg Bormann — Siemens'
+      - id: presentation-introduction-and-state-of-cheri-3e2b92
+        title: Introduction and State of CHERI
+        description: 'Programme organisation credit: University of Cambridge'
+      - id: presentation-progress-of-the-alliance-a632d7
+        title: Progress of the Alliance
+        description: 'Programme organisation credit: CHERI Alliance'
+    - id: programme-2026-11-12-break-and-exhibition-3
+      type: break
+      title: Break and exhibition
+      track: main
+      start: '14:20'
+    - id: programme-2026-11-12-case-studies-4
+      type: session
+      title: Case studies
+      track: main
+      start: '14:30'
+      end: '15:25'
+      presentations:
+      - id: presentation-opportunities-for-cheri-in-the-energy-industry-782d95
+        title: Opportunities for CHERI in the Energy Industry
+        description: 'Published presenter credit: Joshua Cooper — Hildebrand'
+      - id: presentation-core-to-edge-iot-security-with-cheri-b28a07
+        title: Core to edge IoT security with CHERI
+        description: 'Programme organisation credit: UM Labs'
+      - id: presentation-building-a-network-security-product-on-cheri-early-insights-adad2e
+        title: 'Building a Network Security Product on CHERI: Early Insights'
+        description: 'Published presenter credit: Divya Atkins — Mission Critical Applications'
+      - id: presentation-beyond-the-tech-and-what-it-takes-to-create-a-market-for-cheri-7d0404
+        title: Beyond the tech and what it takes to create a market for CHERI
+        description: 'Programme organisation credit: PA Consulting'
+    - id: programme-2026-11-12-round-table-5
+      type: session
+      title: Round table
+      track: main
+      start: '15:25'
+      presentations:
+      - id: presentation-panel-what-is-missing-for-cheri-to-be-widely-adopted-fd1dc1
+        title: 'Panel: What is missing for CHERI to be widely adopted?'
+        description: 'Published presenter credit: Host: Christopher Bennison. Panellists: Javier Orensanz Martinez, Joshua Cooper and Mike Eftimakis — IoT Security Foundation; lowRISC; Hildebrand Technology Limited; CHERI Alliance'
+    - id: programme-2026-11-12-posters-6
+      type: session
+      title: Posters
+      track: main
+      start: '15:45'
+      presentations:
+      - id: presentation-high-performance-cheri-tag-controller-b7974f
+        title: High performance CHERI tag controller
+        description: 'Programme organisation credit: University of Cambridge'
+      - id: presentation-cheribsd-on-risc-v-vp-a-fast-virtual-prototype-for-latest-rvy-0-9-9-2a8648
+        title: 'CheriBSD on RISC-V VP++: A fast virtual prototype for latest RVY 0.9.9'
+        description: 'Published presenter credit: Andreas Hinterdorfer — Johannes Kepler University Linz, Institute for Complex Systems'
+    - id: programme-2026-11-12-break-and-exhibition-7
+      type: break
+      title: Break and exhibition
+      track: main
+      start: '15:50'
+    - id: programme-2026-11-12-standards-8
+      type: session
+      title: Standards
+      track: main
+      start: '16:00'
+      end: '16:45'
+      presentations:
+      - id: presentation-mapping-the-etsi-memory-safety-technical-standard-to-cheri-83c40b
+        title: Mapping the ETSI Memory-Safety Technical Standard to CHERI
+        description: 'Programme organisation credit: Capabilities Limited'
+      - id: presentation-cheri-specification-and-standardisation-update-for-rv64y-rv32y-and-cheriot-e10aa4
+        title: CHERI Specification and Standardisation Update for RV64Y, RV32Y and CHERIoT
+        description: 'Programme organisation credit: Codasip'
+      - id: presentation-a-standard-for-cheri-capability-transport-over-axi-and-chi-f3e3e3
+        title: A Standard for CHERI Capability Transport over AXI and CHI
+        description: 'Programme organisation credit: CHERI Alliance / Codasip'
+    - id: programme-2026-11-12-hardware-9
+      type: session
+      title: Hardware
+      track: main
+      start: '16:45'
+      end: '17:30'
+      presentations:
+      - id: presentation-cva6-cheri-ratified-specification-implemented-and-vector-support-planned-941206
+        title: 'CVA6-CHERI: Ratified Specification Implemented and Vector Support Planned'
+        description: 'Programme organisation credit: Capabilities Limited'
+      - id: presentation-cheri-in-opentitan-application-of-memory-safety-best-practice-in-an-open-hardware-root-of-09103a
+        title: 'CHERI in OpenTitan: application of memory safety best practice in an open hardware root of trust'
+        description: 'Programme organisation credit: lowRISC'
+      - id: presentation-building-memory-safety-into-a-dma-engine-with-cheri-9bc6be
+        title: Building Memory Safety into a DMA Engine with CHERI
+        description: 'Programme organisation credit: CHERI Alliance / Codasip'
+    - id: programme-2026-11-12-reception-and-exhibition-10
+      type: networking
+      title: Reception and exhibition
+      track: main
+      start: '17:30'
+    - id: programme-2026-11-12-end-of-day-1-11
+      type: closing
+      title: End of Day 1
+      track: main
+      start: '18:30'
+    label: Thursday
+  - date: '2026-11-13'
+    sessions:
+    - id: programme-2026-11-13-introduction-1
+      type: introduction
+      title: Introduction
+      track: main
+      start: '10:00'
+      presentations:
+      - id: presentation-introduction-to-day-2-e84b82
+        title: Introduction to Day 2
+    - id: programme-2026-11-13-compartmentalisation-2
+      type: session
+      title: Compartmentalisation
+      track: main
+      start: '10:05'
+      end: '11:15'
+      presentations:
+      - id: presentation-cheri-zephyr-and-compartmentalisation-of-userspace-threads-79e1a6
+        title: CHERI-Zephyr and Compartmentalisation of Userspace Threads
+        description: 'Programme organisation credit: University of Birmingham'
+      - id: presentation-compartmentalizing-a-canopen-stack-with-cheriot-434b5c
+        title: Compartmentalizing a CANopen stack with CHERIoT
+        description: 'Published presenter credit: Hugo Melder — Technical University of Munich'
+      - id: presentation-efficient-linkage-based-compartmentalization-on-cheri-a665bc
+        title: Efficient Linkage-Based Compartmentalization on CHERI
+        description: 'Published presenter credit: Dapeng Gao — University of Cambridge'
+      - id: presentation-littlecheri-ultra-fine-grain-compartmentalization-using-secure-stack-sharing-on-cheri-capa-03d9c7
+        title: 'LittleCHERI: Ultra-Fine-Grain Compartmentalization using Secure Stack-Sharing on CHERI Capability Machines'
+        description: 'Published presenter credit: Elias Storme — DistriNet, KU Leuven'
+    - id: programme-2026-11-13-break-and-exhibition-3
+      type: break
+      title: Break and exhibition
+      track: main
+      start: '11:15'
+      presentations:
+      - id: presentation-break-3-af01b4
+        title: Break 3
+    - id: programme-2026-11-13-software-and-research-4
+      type: session
+      title: Software and research
+      track: main
+      start: '11:30'
+      end: '13:25'
+      presentations:
+      - id: presentation-signetos-designing-a-secure-and-fast-single-address-space-microkernel-to-support-modern-wo-bb99a1
+        title: 'SignetOS: Designing a Secure and Fast Single-Address-Space Microkernel to Support Modern Workloads'
+        description: 'Published presenter credit: John Kressel — Google'
+      - id: presentation-ftrace-on-cheri-linux-porting-a-fairly-complex-kernel-subsystem-9b2e88
+        title: 'ftrace on CHERI Linux: porting a fairly complex kernel subsystem'
+        description: 'Published presenter credit: Martin Kaiser — Codasip'
+      - id: presentation-title-withheld-paper-under-submission-c03765
+        title: Title withheld (paper under submission)
+        description: 'Published presenter credit: Nils Jordan — Ericsson'
+      - id: presentation-using-existing-cheri-semantics-for-cheri-native-temporal-safety-d76e4c
+        title: Using existing CHERI semantics for CHERI-native temporal safety
+        description: 'Published presenter credit: Yuecheng Wang — University of Cambridge'
+      - id: presentation-valid-in-bounds-and-wrong-analysis-of-fault-injection-attacks-against-cheri-capabilities-4bfd29
+        title: 'Valid, In-Bounds, and Wrong: Analysis of Fault Injection Attacks Against CHERI Capabilities'
+        description: 'Published presenter credit: Jan Philipp Thoma — Codasip'
+      - id: presentation-intra-allocation-bounds-enforcement-in-cheribsd-3a1a17
+        title: Intra-allocation bounds enforcement in CheriBSD
+        description: 'Programme organisation credit: University of Cambridge'
+      - id: presentation-writing-applications-for-cheriot-in-rust-ec182a
+        title: Writing applications for CHERIoT in Rust
+        description: 'Programme organisation credit: SCI Semiconductor'
+    - id: programme-2026-11-13-conclusion-5
+      type: closing
+      title: Conclusion
+      track: main
+      start: '13:25'
+      presentations:
+      - id: presentation-conclusion-to-day-2-41e1de
+        title: Conclusion to Day 2
+    - id: programme-2026-11-13-talks-end-and-exhibition-6
+      type: closing
+      title: Talks end and exhibition
+      track: main
+      start: '13:30'
+    label: Friday
+  speakers:
+  - person: jonathan-woodruff
+    role: speaker
+    session: presentation-introduction-and-state-of-cheri-3e2b92
+  - person: mike-eftimakis
+    role: speaker
+    session: presentation-progress-of-the-alliance-a632d7
+  - person: peter-cox
+    role: speaker
+    session: presentation-core-to-edge-iot-security-with-cheri-b28a07
+  - person: martin-atkins
+    role: speaker
+    session: presentation-building-a-network-security-product-on-cheri-early-insights-adad2e
+  - person: manu-ravishankar
+    role: speaker
+    session: presentation-beyond-the-tech-and-what-it-takes-to-create-a-market-for-cheri-7d0404
+  - person: alexandre-joannou
+    role: speaker
+    session: presentation-high-performance-cheri-tag-controller-b7974f
+  - person: graeme-jenkinson
+    role: speaker
+    session: presentation-mapping-the-etsi-memory-safety-technical-standard-to-cheri-83c40b
+  - person: tariq-kurd
+    role: speaker
+    session: presentation-cheri-specification-and-standardisation-update-for-rv64y-rv32y-and-cheriot-e10aa4
+  - person: ben-fletcher
+    role: speaker
+    session: presentation-a-standard-for-cheri-capability-transport-over-axi-and-chi-f3e3e3
+  - person: jonathan-woodruff
+    role: speaker
+    session: presentation-cva6-cheri-ratified-specification-implemented-and-vector-support-planned-941206
+  - person: javier-orensanz-martinez
+    role: speaker
+    session: presentation-cheri-in-opentitan-application-of-memory-safety-best-practice-in-an-open-hardware-root-of-09103a
+  - person: ben-fletcher
+    role: speaker
+    session: presentation-building-memory-safety-into-a-dma-engine-with-cheri-9bc6be
+  - person: jennifer-jackson
+    role: speaker
+    session: presentation-cheri-zephyr-and-compartmentalisation-of-userspace-threads-79e1a6
+  - person: alfredo-mazzinghi
+    role: speaker
+    session: presentation-intra-allocation-bounds-enforcement-in-cheribsd-3a1a17
+  - person: edoardo-marangoni
+    role: speaker
+    session: presentation-writing-applications-for-cheriot-in-rust-ec182a
+resources:
+- type: website
+  label: Electronica
+  url: https://electronica.de/en/
+- type: website
+  label: SEMICON Europa
+  url: https://www.semiconeuropa.org/
+- type: website
+  label: CHERITech
+  url: /news-and-events/events-and-archive/cheritech/
+related:
+- type: page
+  slug: news-and-events-events-and-archive-upcoming-events
+  relation: navigation
 ---
+
+## Overview
 
 CHERITech’26 brings the CHERI technical community to [Electronica](https://electronica.de/en/) / [SEMICON Europa](https://www.semiconeuropa.org/), connecting the latest developments in hardware, software, standards and real-world implementation with the wider semiconductor and electronics industry. The event is organised by the **CHERI Alliance** in collaboration with **SEMI**, organiser of SEMICON Europa.
 
@@ -63,9 +300,8 @@ Whether CHERI is new to you or already on your technology roadmap, join us to **
 [**Register** for CHERITech’26](/events/cheritech26/#register)
 
 ## CHERI meets the semiconductor industry
-{: id="cheri-meets-the-semiconductor-industry" }
 
-![Munich Messe](/assets/events/cheritech26/53367353357_e4e8ac7171_o.jpg){: .image-right }
+![Munich Messe](/assets/images/news-and-events/events-and-archive/cheritech26/9c74ec1b-53367353357_e4e8ac7171_o.jpg){: .image-right }
 
 The next step in secure computing is happening at the hardware level.
 
@@ -78,9 +314,8 @@ CHERITech is not just about watching presentations. Participants can ask questio
 [Watch CHERITech’25 event overview](https://youtu.be/PeMYZsSoUto?si=N1JnyQct5OmABfEa)
 
 ## Why attend?
-{: id="why-attend" }
 
-![Munich Messe](/assets/events/cheritech26/91e5fea56bd1-munich-messe.jpg){: .image-left }
+![Munich Messe](/assets/images/news-and-events/events-and-archive/cheritech26/934d3985-91e5fea56bd1-munich-messe.jpg){: .image-left }
 
 Whether you're new to CHERI or already building with it, CHERITech’26 is an opportunity to:
 - get up to speed
@@ -91,7 +326,6 @@ Whether you're new to CHERI or already building with it, CHERITech’26 is an op
 Hear directly from organisations working across hardware, software, standards and real-world applications, see **CHERI in action** through demonstrations and exhibits, ask questions, exchange ideas and **make connections** with the people shaping the ecosystem.
 
 ## Hear from organisations across the ecosystem
-{: id="hear-from-organisations-across-the-ecosystem" }
 
 CHERITech’26 brings together speakers from cybersecurity, semiconductors, technology companies and leading universities.
 
@@ -100,10 +334,8 @@ The programme includes contributions from **BSI, Siemens, Google, Ericsson, Coda
 **Get a front-row view of where CHERI is heading**. Across two packed days, discover real-world applications, emerging standards and the latest advances in hardware, software, compartmentalisation and security research. Hear directly from the people building with CHERI, see how the technology is evolving across the stack, and join the conversations shaping what comes next.
 
 ## Register
-{: id="register" }
 
 ### CHERITech’26 is free to attend for SEMICON Europa visitors
-{: id="cheritech26-is-free-to-attend-for-semicon-europa-visitors" }
 
 *A valid SEMICON Europa ticket is required for each day on which you wish to attend CHERITech’26.*
 
@@ -112,77 +344,23 @@ The registration process has **two steps**:
 1. [**Purchase a valid SEMICON Europa ticket**](https://tickets.messe-muenchen.de/MM-SHOP/SEM26/)
 2. [**Register separately for CHERITech’26**](https://discover.semi.org/cheritech26-powered-by-cheri-alliance-registration.html)
 
-## Programme
-{: id="programme" }
-
-### Thursday, 12 November 2026
-{: id="thursday-12-november-2026" }
-
-| Time | Section | Talk title | Presenter(s) | Organisation(s) |
-|---|---|---|---|---|
-| 13:00 | Introduction | Introduction to Day 1 | - | - |
-| 13:05-14:20 | **Keynotes** | Keynote | Yona Raekow | **BSI** |
-|  |  | With CHERI, can we afford to ignore hardware security? | Joerg Bormann | **Siemens** |
-|  |  | Introduction and State of CHERI | Jonathan Woodruff | **University of Cambridge** |
-|  |  | Progress of the Alliance | Mike Eftimakis | **CHERI Alliance** |
-| 14:20 | Break and exhibition | - | - | - |
-| 14:30-15:25 | **Case studies** | Opportunities for CHERI in the Energy Industry | Joshua Cooper | **Hildebrand** |
-|  |  | Core to edge IoT security with CHERI | Peter Cox | **UM Labs** |
-|  |  | Building a Network Security Product on CHERI: Early Insights | Martin Atkins / Divya Atkins | **Mission Critical Applications** |
-|  |  | Beyond the tech and what it takes to create a market for CHERI | Manu Ravishankar | **PA Consulting** |
-| 15:25 | **Round table** | Panel: What is missing for CHERI to be widely adopted? | Host: Christopher Bennison. Panellists: Javier Orensanz Martinez, Joshua Cooper and Mike Eftimakis | IoT Security Foundation; lowRISC; Hildebrand Technology Limited; CHERI Alliance |
-| 15:45 | **Posters** | High performance CHERI tag controller | Alexandre Joannou | **University of Cambridge** |
-|  |  | CheriBSD on RISC-V VP++: A fast virtual prototype for latest RVY 0.9.9 | Andreas Hinterdorfer | **Johannes Kepler University** Linz, Institute for Complex Systems |
-| 15:50 | Break and exhibition | - | - | - |
-| 16:00-16:45 | **Standards** | Mapping the ETSI Memory-Safety Technical Standard to CHERI | Graeme Jenkinson | **Capabilities Limited** |
-|  |  | CHERI Specification and Standardisation Update for RV64Y, RV32Y and CHERIoT | Tariq Kurd | **Codasip** |
-|  |  | A Standard for CHERI Capability Transport over AXI and CHI | Ben Fletcher | **CHERI Alliance / Codasip** |
-| 16:45-17:30 | **Hardware** | CVA6-CHERI: Ratified Specification Implemented and Vector Support Planned | Jonathan Woodruff | **Capabilities Limited** |
-|  |  | CHERI in OpenTitan: application of memory safety best practice in an open hardware root of trust | Javier Orensanz Martinez | **lowRISC** |
-|  |  | Building Memory Safety into a DMA Engine with CHERI | Ben Fletcher | **CHERI Alliance / Codasip** |
-| 17:30 | **Reception and exhibition** | - | - | - |
-| 18:30 | End of Day 1 | - | - | - |
-
-### Friday, 13 November 2026
-{: id="friday-13-november-2026" }
-
-| Time | Section | Talk title | Presenter | Organisation(s) |
-|---|---|---|---|---|
-| 10:00 | Introduction | Introduction to Day 2 | - | - |
-| 10:05-11:15 | **Compartmentalisation** | CHERI-Zephyr and Compartmentalisation of Userspace Threads | Jennifer Jackson | **University of Birmingham** |
-|  |  | Compartmentalizing a CANopen stack with CHERIoT | Hugo Melder | **Technical University of Munich** |
-|  |  | Efficient Linkage-Based Compartmentalization on CHERI | Dapeng Gao | **University of Cambridge** |
-|  |  | LittleCHERI: Ultra-Fine-Grain Compartmentalization using Secure Stack-Sharing on CHERI Capability Machines | Elias Storme | **DistriNet, KU Leuven** |
-| 11:15 | Break and exhibition | Break 3 | - | - |
-| 11:30-13:25 | **Software and research** | SignetOS: Designing a Secure and Fast Single-Address-Space Microkernel to Support Modern Workloads | John Kressel | **Google** |
-|  |  | ftrace on CHERI Linux: porting a fairly complex kernel subsystem | Martin Kaiser | **Codasip** |
-|  |  | Title withheld (paper under submission) | Nils Jordan | **Ericsson** |
-|  |  | Using existing CHERI semantics for CHERI-native temporal safety | Yuecheng Wang | **University of Cambridge** |
-|  |  | Valid, In-Bounds, and Wrong: Analysis of Fault Injection Attacks Against CHERI Capabilities | Jan Philipp Thoma | **Codasip** |
-|  |  | Intra-allocation bounds enforcement in CheriBSD | Alfredo Mazzinghi | **University of Cambridge** |
-|  |  | Writing applications for CHERIoT in Rust | Edoardo Marangoni | **SCI Semiconductor** |
-| 13:25 | Conclusion | Conclusion to Day 2 | - | - |
-| 13:30 | Talks end and exhibition | - | - | - |
-
 
 ## See CHERI in action
-{: id="see-cheri-in-action-exhibition" }
 
 Exhibits and demonstrations run alongside the conference programme, giving visitors the opportunity to explore CHERI technology up close and talk directly with the organisations developing it.
 
 Exhibitor booths will be open throughout SEMICON Europa, from **10 to 13 November 2026**, not only during the CHERITech sessions.
 
 | --- | --- | --- |
-| ![Capabilities Limited logo](/assets/organisations/capabilities-limited/0c30741ff5ce-logo.png){: .image-full } | ![CHERI logo](/assets/shared/source-assets/5a6300ace656-cheri.png){: .image-full } | ![CHERI Research Centre logo](/assets/organisations/university-of-cambridge/ea303349d4e1-logo.png){: .image-full } | 
-| ![Codasip logo](/assets/organisations/codasip/ef815ad95752-logo.png){: .image-full } | ![lowRISC logo](/assets/organisations/lowrisc/d432df8a7ccf-logo.png){: .image-full } | ![PA Consulting logo](/assets/organisations/pa-consulting/8aba894151f8-logo.png){: .image-full } |
-| ![Parvat logo](/assets/organisations/parvat-infotech/983927485935-logo.png){: .image-full } | ![SCI Semiconductor logo](/assets/organisations/sci-semiconductor/89396ef186d7-logo.png){: .image-full } | ![UM-Labs logo](/assets/organisations/um-labs/768e679cb95a-logo.png){: .image-full } |
+| ![Capabilities Limited logo](/assets/images/common/65f15bf1-0c30741ff5ce-logo.png){: .image-full } | ![CHERI logo](/assets/images/common/8d481a0e-5a6300ace656-cheri.png){: .image-full } | ![CHERI Research Centre logo](/assets/images/common/1c7dcba3-ea303349d4e1-logo.png){: .image-full } |
+| ![Codasip logo](/assets/images/common/cf6fbc19-ef815ad95752-logo.png){: .image-full } | ![lowRISC logo](/assets/images/common/80ec6dcd-d432df8a7ccf-logo.png){: .image-full } | ![PA Consulting logo](/assets/images/common/4a4cc270-8aba894151f8-logo.png){: .image-full } |
+| ![Parvat logo](/assets/images/common/1c6897e0-983927485935-logo.png){: .image-full } | ![SCI Semiconductor logo](/assets/images/common/36f8a3a5-89396ef186d7-logo.png){: .image-full } | ![UM-Labs logo](/assets/images/common/3f1fbcff-768e679cb95a-logo.png){: .image-full } |
 
 
 ## Venue - Find us in Hall B0!
-{: id="venue" }
 
-![Hall B0 floorplan](/assets/events/cheritech26/hall-floorplan.webp){: .image-right }
-![Munich Messe](/assets/events/cheritech26/53368566214_a49da891b9_o.jpg){: .image-left }
+![Hall B0 floorplan](/assets/images/news-and-events/events-and-archive/cheritech26/d8f4032e-hall-floorplan.webp){: .image-right }
+![Munich Messe](/assets/images/news-and-events/events-and-archive/cheritech26/7e6827c6-53368566214_a49da891b9_o.jpg){: .image-left }
 
 **NextSEMI Arena, Hall B0**  
 **Messe München**  
@@ -192,3 +370,11 @@ Visit the SEMICON Europa website to get:
 
 - [hall floorplans](https://expo.semi.org/europa2026/Public/EventMap.aspx?ID=32646&shAvailable=1&thumbnail=1)
 - [directions / public transport information and hotel assistance](https://www.semiconeuropa.org/about/travel-and-hotels).
+
+## Event dates and context
+
+12-13 November 2026 (**Conference**) - 10-13 November 2026 (**Exhibition**)
+
+## More from this series
+
+Explore previous events to watch recordings, download presentations and follow the evolution of CHERI implementations across hardware and software.

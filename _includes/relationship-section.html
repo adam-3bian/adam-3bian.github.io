@@ -1,0 +1,1 @@
+{% if include.items.size > 0 %}<section class="related-content" data-relationship="{{ include.kind | escape }}" aria-labelledby="{{ include.id | escape }}"><h2 id="{{ include.id | escape }}">{{ include.title | escape }}</h2>{% include listing.html items=include.items kind=include.kind label=include.title heading='h3' metadata=false %}</section>{% endif %}

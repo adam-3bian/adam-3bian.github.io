@@ -1,25 +1,32 @@
 ---
+layout: details/working-group
 title: 🐧 CHERI Linux WG
-where-next:
-  url: /groups/cheri-qemu/
-  title: CHERI QEMU
-summary: Coordinates priorities, cross-architecture requirements, implementation experience, and contribution routes
-  for CHERI support in Linux.
-group_type: Technical
-collaboration_areas:
-- Linux roadmap and priorities
-- Cross-architecture interfaces
-- Upstream contribution
-links:
-- label: Back to all working groups
-  url: /alliance/leadership/working-groups/
-  kind: navigation
-- label: Enquire about this group
-  url: /alliance/membership/contact/
-  kind: resource
-  primary: true
+summary: Coordinates priorities, cross-architecture requirements, implementation experience, and contribution routes for CHERI support in Linux.
+permalink: /groups/cheri-linux-working-group/
+slug: cheri-linux-working-group
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Leadership
+working_group:
+  type: technical
+  focus_areas:
+  - Linux roadmap and priorities
+  - Cross-architecture interfaces
+  - Upstream contribution
+forms:
+- contact
+related:
+- type: working_group
+  slug: cheri-qemu
+  relation: next_step
+- type: page
+  slug: alliance-leadership-working-groups
+  relation: navigation
 ---
+
+## Overview
 
 The CHERI Linux Working Group defines and prioritises a roadmap for the porting of Linux to CHERI, while stimulating open-source communities to work on these element.
 
-The technical [CHERI Linux page](/software/cheri-linux/) explains the wider software stack and current development.
+The technical [CHERI Linux page](/build/software-ecosystem/cheri-linux/) explains the wider software stack and current development.

@@ -1,0 +1,62 @@
+---
+layout: details/post
+title: CHERI-Zephyr v0.4.0 Release
+summary: In this blog covering the fourth official development release of CHERI-Zephyr, we’ll look at what’s already CHERI-supported in the kernel and highlight some of the key features added over the course of development.
+permalink: /news/cheri-zephyr-v0-4-0-release/
+slug: cheri-zephyr-v0-4-0-release
+navigation:
+  header:
+    category: News & Events
+    subcategory: News & Analysis
+image:
+  src: /assets/images/news-and-events/news-and-analysis/cheri-zephyr-v0-4-0-release/a6dd21c0-fc61421e7d-zephyr_buffer_overflow.jpg
+  alt: Code showing a Zephyr buffer overflow
+  width: 510
+  height: 500
+date: '2026-09-08T12:00:00+00:00'
+post:
+  category: cheri-alliance-news
+  tags:
+  - CHERI Alliance news
+  - Working Groups
+  authors:
+  - person: jennifer-jackson
+---
+
+## Overview
+
+Whether you’re interested in porting an existing Zephyr application, exploring new projects, evaluating [CHERI-enabled](/adopt/assurance-and-adoption/about-cheri-enabled/) software, or simply seeing how CHERI changes the behaviour of real systems, there’s plenty already included to begin experimenting.
+
+## CHERI platforms
+
+CHERI-Zephyr now supports various CHERI-RISC-V platforms (in addition to Zephyr’s current boards). With RISC-V rapidly becoming one of the most exciting architectures in the embedded space, and CHERI bringing hardware-enforced security to the mix, the pairing is a perfect match for Zephyr’s target applications. If you’re lucky enough to have access to CHERI hardware such as [Codasip](/organisations/codasip/)’s [Prime board](https://codasip.com/solutions/riscv-processor-safety-security/cheri/codasip-prime/) you can run it directly, otherwise [CHERI QEMU](/groups/cheri-qemu/) provides an easy way to get started.
+
+It is worth mentioning that CHERI-Zephyr, together with the underlying QEMU and hardware platforms, supports both CHERI and non-CHERI modes of operation. This allows an existing Zephyr application to be built and run in non-CHERI mode using the CHERI toolchain, before being rebuilt and executed in CHERI mode. This makes it easy to compare performance, memory usage, and the impact of CHERI’s memory-safety protections.
+
+## Proof CHERI is doing its job
+
+If you are looking for some proof that CHERI is doing its job, then there are several CHERI-specific samples demonstrating how CHERI can prevent memory corruption and buffer overflows to try out. For more detailed testing of CHERI-specific kernel edits then the CHERI test suites can be run as part of Zephyr’s Twister test matrix. Once all the tools and software have been installed you can build and run a CHERI sample like you would build a normal Zephyr application using west:
+
+~~~
+west build -p always -b qemu_riscv32cheri_zcheripurecap samples/cheri/buffer_overflow
+
+west build -t run
+~~~
+
+## What’s been CHERI-enabled?
+
+For a more detailed view of what’s been [CHERI-enabled](/adopt/assurance-and-adoption/about-cheri-enabled/) so far, you will find that the most fundamental parts have been ported to allow you to run a basic CHERI application. This includes most of the RISC-V assembly including additional CHERI early boot up code to allow global capabilities to be correctly placed in memory. For those who are already familiar with CHERI terminology CHERI-Zephyr supports only the CHERI purecap mode of operation and quickly switches out of any hybrid mode if hardware is designed to support both. Limiting to purecap provides stronger memory safety where all pointers become CHERI capabilities, enforcing memory-safety consistently across the system.
+
+Apart from the RISC-V assembly, the focus to date has been on porting the underlying kernel and selective libraries that are either used directly by the kernel or are heavily memory orientated. This includes things like the system heap API and derivatives of it such as multi-heap, kernel heap, k-malloc, as well as mem-slabs, mem\_blocks and stack allocation. In terms of general C code modifications, porting to CHERI quickly exposes assumptions that conventional architectures have traditionally tolerated. Structures containing capabilities cannot be packed due to capability alignment requirements, integer-to-pointer casts or the use of fixed addresses are prohibited, and uses of unsigned long need to be replaced with `uintptr_t` when representing pointer-sized values. Many of these issues were caught by the CHERI compiler, but others slipped through the net resulting in CHERI exceptions that were required to be diagnosed after.
+
+Testing this modified code has primarily relied on the Twister test matrix to uncover issues, but in some cases the actual tests themselves also fell victim to some of these CHERI coding requirements and needed modification. Along with this, extra CHERI-specific test suites have been added to check things that are not already covered in the standard Zephyr test suites such as checking CHERI alignment and bounds are correct.
+
+So far, three-quarters of kernel-specific Twister tests are passing, demonstrating substantial kernel coverage. Some issues remain to be resolved, while other code paths have not yet been exercised due to the sheer number of CONFIG combinations supported by Zephyr.
+
+## Looking to the future
+
+On the research side, we are now experimenting with compartmentalisation and recovery mechanisms for CHERI hardware exceptions. After all, if a zero-day attack can be contained within a compartment, or a buffer overflow can be prevented, the next logical step is enabling the operating system to recover and continue operating without compromising system availability.
+
+To sum things up, CHERI-Zephyr remains an active development project, and there are still libraries to port, bugs to find, and areas that need further testing. Nevertheless, the project has come a long way over the past year and already provides a substantial platform for experimenting with [CHERI-enabled](/adopt/assurance-and-adoption/about-cheri-enabled/) software making it well worth exploring!
+
+In the meantime, we welcome feedback, contributions, offers to help port Zephyr libraries to CHERI, and assistance with upstreaming activities. The latest release can be found here: [https://github.com/CHERI-Alliance/CHERI-zephyr/releases/tag/CHERI-Zephyr-v0.4.0](https://github.com/CHERI-Alliance/CHERI-zephyr/releases/tag/CHERI-Zephyr-v0.4.0)

@@ -1,5 +1,10 @@
-{% assign record_links = include.links | default: page.links %}
-{% capture resources %}{% for link in record_links %}{% unless link.kind == 'navigation' %}
-<li>{% include resource-action.html link=link %}</li>
-{% endunless %}{% endfor %}{% endcapture %}{% assign resources = resources | strip %}
-{% if resources != '' %}<nav class="resource-panel{% if include.compact %} inline-resources{% endif %}" aria-label="Resources">{% unless include.compact %}<h2>Resources</h2>{% endunless %}<ul role="list">{{ resources }}</ul></nav>{% endif %}
+{% assign resources_record = include.record | default: page %}
+{% capture resource_items %}
+{% if include.scope %}{% for resource in resources_record.resources %}{% if resource.session_id == include.scope or resource.presentation_id == include.scope %}<li>{% include action.html label=resource.label url=resource.url kind=resource.type resource=true primary=forloop.first %}</li>{% endif %}{% endfor %}
+{% else %}
+{% if resources_record.event.registration.url %}<li>{% include action.html label=resources_record.event.registration.label url=resources_record.event.registration.url %}</li>{% endif %}
+{% if resources_record.organisation.website %}<li>{% include action.html label='Visit website' url=resources_record.organisation.website %}</li>{% endif %}
+{% for link in resources_record.person.links %}<li>{% include action.html label=link.label url=link.url %}</li>{% endfor %}
+{% for resource in resources_record.resources %}{% unless resource.session_id or resource.presentation_id %}<li>{% include action.html label=resource.label url=resource.url kind=resource.type resource=true primary=forloop.first %}</li>{% endunless %}{% endfor %}
+{% endif %}{% endcapture %}{% assign resource_items = resource_items | strip %}
+{% if resource_items != '' %}<div class="resource-panel{% if include.scope %} programme-resources{% endif %}"><ul role="list">{{ resource_items }}</ul></div>{% endif %}

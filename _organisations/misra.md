@@ -1,31 +1,35 @@
 ---
+layout: details/member
 title: MISRA
-member: true
 summary: Details to follow.
-membership_category: Community Member
-membership_status: Member
-links:
-- label: Visit member website
-  url: https://misra.org.uk/
-  kind: website
-  primary: true
-- label: Back to all members
-  url: /alliance/leadership/members/
-  kind: navigation
-thumbnail:
-  src: /assets/organisations/misra/26a73a099515-logo.png
+permalink: /organisations/misra/
+slug: misra
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Leadership
+image:
+  src: /assets/images/alliance/leadership/misra/ce9cfc81-26a73a099515-logo.png
   alt: MISRA logo
   width: 1153
   height: 1024
   fit: contain
+organisation:
+  membership:
+    is_member: true
+    status: active
+    tier: community
+  website: https://misra.org.uk/
+related:
+- type: page
+  slug: alliance-leadership-members
+  relation: navigation
 ---
 
 ## Description
-{: id="description" }
 
 Details to follow.
 
 ## CHERI Activities
-{: id="cheri-activities" }
 
 Details to follow.

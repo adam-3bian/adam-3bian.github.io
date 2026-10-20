@@ -1,0 +1,59 @@
+{
+  "specification": "5.3",
+  "checked_at_utc": "2026-10-20T19:31:52.350132+00:00",
+  "branch": "design/catalogue-polish",
+  "build": "GitHub Pages 232 / Jekyll 3.10.0; safe root and /preview builds",
+  "rendered_pages_per_build": 755,
+  "original_routes_preserved": 738,
+  "original_fragment_references_preserved": 17404,
+  "original_binaries_preserved": 416,
+  "original_relationships_preserved": 366,
+  "original_paragraphs_accounted_for": 2914,
+  "documented_paragraph_migrations": 6,
+  "original_code_examples_preserved_with_indentation": 207,
+  "source_records": {
+    "posts": 48,
+    "events": 10,
+    "people": 111,
+    "organisations": 69,
+    "papers": 20,
+    "products": 2,
+    "repositories": 2,
+    "groups": 16,
+    "guides": 10,
+    "policies": 11,
+    "pages": 173,
+    "redirects": 0
+  },
+  "source_data_warnings": 73,
+  "browser_engine": "Chromium",
+  "responsive_checks": 1186,
+  "base_browser_suites": [
+    "corporate",
+    "catalog",
+    "layouts",
+    "presentation",
+    "refinement",
+    "consistency",
+    "semantic"
+  ],
+  "final_checks": [
+    "all 48 article details at mobile and desktop, root and preview",
+    "footer/menu consistency at six widths, root and preview"
+  ],
+  "final_output_comparison": {
+    "root": {
+      "identical": 283,
+      "component_whitespace_only": 421,
+      "updated_articles_or_restored_code": 51,
+      "unexpected": []
+    },
+    "preview": {
+      "identical": 283,
+      "component_whitespace_only": 421,
+      "updated_articles_or_restored_code": 51,
+      "unexpected": []
+    }
+  },
+  "local_link_and_schema_errors": 0
+}

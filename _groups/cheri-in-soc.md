@@ -1,24 +1,31 @@
 ---
+layout: details/working-group
 title: ⬛️ CHERI in SoC WG
-where-next:
-  url: /groups/cheri-linux-working-group/
-  title: CHERI Linux Working Group
-summary: Brings together the architecture, integration, and verification questions involved in adding CHERI to a
-  system-on-chip.
-group_type: Technical
-collaboration_areas:
-- SoC architecture and integration
-- CHERI feature profiles
-- Hardware and software interfaces
-links:
-- label: Back to all working groups
-  url: /alliance/leadership/working-groups/
-  kind: navigation
-- label: Enquire about this group
-  url: /alliance/membership/contact/
-  kind: resource
-  primary: true
+summary: Brings together the architecture, integration, and verification questions involved in adding CHERI to a system-on-chip.
+permalink: /groups/cheri-in-soc/
+slug: cheri-in-soc
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Leadership
+working_group:
+  type: technical
+  focus_areas:
+  - SoC architecture and integration
+  - CHERI feature profiles
+  - Hardware and software interfaces
+forms:
+- contact
+related:
+- type: working_group
+  slug: cheri-linux-working-group
+  relation: next_step
+- type: page
+  slug: alliance-leadership-working-groups
+  relation: navigation
 ---
+
+## Overview
 
 The CHERI in SoC Working Group focuses on defining and standardizing what needs to be included in a system to support CHERI, and to provide useful resources to speed the wider adoption of CHERI within chiplets and SoCs.
 

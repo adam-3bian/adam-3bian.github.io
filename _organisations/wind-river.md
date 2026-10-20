@@ -1,36 +1,38 @@
 ---
+layout: details/member
 title: Wind River
-member: true
-summary: Wind River is a global leader in delivering software for the intelligent edge. For more than four decades,
-  the company has been an innovator and pioneer, powering billions of devices and systems that require the highest
-  levels of security, safety…
-membership_category: Full Member
-membership_status: Member
-links:
-- label: Visit member website
-  url: https://www.windriver.com/
-  kind: website
-  primary: true
-- label: Back to all members
-  url: /alliance/leadership/members/
-  kind: navigation
-thumbnail:
-  src: /assets/organisations/wind-river/4ff9d998b332-logo.png
+summary: Wind River is a global leader in delivering software for the intelligent edge. For more than four decades, the company has been an innovator and pioneer, powering billions of devices and systems that require the highest levels of security, safety…
+permalink: /organisations/wind-river/
+slug: wind-river
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Leadership
+image:
+  src: /assets/images/alliance/leadership/wind-river/f0d9f89b-4ff9d998b332-logo.png
   alt: Wind River
   width: 2000
   height: 330
   fit: contain
+organisation:
+  membership:
+    is_member: true
+    status: active
+    tier: full
+  website: https://www.windriver.com/
+related:
+- type: page
+  slug: alliance-leadership-members
+  relation: navigation
 ---
 
 ## Description
-{: id="description" }
 
 Wind River is a global leader in delivering software for the intelligent edge. For more than four decades, the company has been an innovator and pioneer, powering billions of devices and systems that require the highest levels of security, safety, and reliability. Wind River software and expertise are accelerating digital transformation across industries including automotive, aerospace, defense, industrial, medical, and telecommunications. The company offers a comprehensive portfolio supported by world-class global professional services and support and a broad partner ecosystem. To learn more, visit Wind River at
 
 [www.windriver.com.](http://www.windriver.com)
 
 ## CHERI Activities
-{: id="cheri-activities" }
 
 Wind River has ported VxWorks to the Arm Morello Board and the CHERI-QEMU simulator. The port includes the VxWorks real-time operating system (RTOS) itself, real-time process support (RTPs), the RTNET network stack as well as board support packages for Morello and QEMU. The RTOS port runs in pure capability mode, where all pointers are replaced with hardware-enforced capabilities. Unlike hybrid modes that mix traditional pointers with capabilities, purecap mode enforces that all memory accesses, code execution, and data references are constrained by capability metadata thus providing strong spatial and temporal memory safety for VxWorks and its applications.
 
@@ -41,6 +43,5 @@ Wind River continues to expand CHERI support across its product portfolio and to
 [https://www.windriver.com/news/press/news-20260421](https://www.windriver.com/news/press/news-20260421)
 
 ## CHERI Products
-{: id="cheri-products" }
 
 The CHERI-enabled port of VxWorks is available through Wind River Professional Services.

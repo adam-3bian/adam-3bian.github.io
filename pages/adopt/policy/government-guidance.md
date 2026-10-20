@@ -1,23 +1,29 @@
 ---
+layout: page/standard
 title: Public Policy and CHERI
-permalink: /adopt/policy/government-guidance/
-where-next:
-  url: /adopt/policy/cybersecurity-regulation/
-  title: Cybersecurity Regulation
-related-pages:
-- url: /adopt/business-case/the-business-case/
-  title: The Business Case
-  description: CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.
-  action: Read this page
 summary: Policy makers, regulators, and cybersecurity agencies are pushing for safer software foundations.
+permalink: /adopt/policy/government-guidance/
+slug: adopt-policy-government-guidance
+navigation:
+  header:
+    category: Adopt
+    subcategory: Policy
+related:
+- type: page
+  slug: adopt-policy-cybersecurity-regulation
+  relation: next_step
+- type: page
+  slug: adopt-business-case-the-business-case
+  relation: related
 ---
+
+## Overview
 
 **Memory vulnerabilities** remain a major source of software security risk, prompting governments to encourage safer software and stronger resilience.
 
 This policy direction creates a clear place for CHERI. Memory-safe languages can prevent broad classes of errors in new code. CHERI can bring hardware-enforced memory protection to existing software and support **secure-by-design** and **resilience** objectives.
 
 ## The direction of public guidance
-{: id="the-direction-of-public-guidance" }
 
 [CISA’s Case for Memory Safe Roadmaps](https://www.cisa.gov/resources-tools/resources/case-memory-safe-roadmaps) presents memory safety as a strategic responsibility for software manufacturers. It focuses on measurable plans for reducing reliance on memory-unsafe languages and making progress visible to customers.
 
@@ -28,7 +34,6 @@ The UK National Cyber Security Centre describes memory-safe languages and hardwa
 The UK’s [Digital Security by Design programme](https://www.ukri.org/what-we-do/browse-our-areas-of-investment-and-support/digital-security-by-design/) provided a major public investment in CHERI research, the Morello platform, software, and industrial evaluation.
 
 ## Where CHERI adds to the policy picture
-{: id="where-cheri-adds-to-the-policy-picture" }
 
 Much public guidance focuses on increasing the use of memory-safe languages. CHERI addresses a complementary challenge: improving the security of existing software, operating systems, firmware, and infrastructure that will continue to rely on C and C++ for years to come.
 
@@ -40,7 +45,6 @@ CHERI can contribute in two ways:
 These properties support policy goals around secure-by-design products, vulnerability reduction, resilience, and the protection of legacy investment. They also make CHERI complementary to language migration rather than a competing universal answer, as explained in [CHERI and Rust](/discover/why-cheri/cheri-and-rust/).
 
 ## CHERI’s role in memory safety
-{: id="cheris-role-in-memory-safety" }
 
 **ETSI TS 104 198 Memory Safety** standard defines several levels of memory safety, recognising that different systems may require different protections. The **highest level**, and CHERI, may be particularly relevant for systems requiring the strongest memory-safety assurance, including critical infrastructure, safety-critical environments, and systems handling sensitive data.
 
@@ -49,6 +53,5 @@ The world’s software infrastructure contains vast amounts of existing C and C+
 CHERI’s policy relevance lies in providing a much stronger solution to memory safety. It offers a way to cover software that might otherwise remain dependent on exploit mitigations alone, and it adds containment when preventing every defect is unrealistic.
 
 ## Guidance, standards, and law
-{: id="guidance-standards-and-law" }
 
 As governments and cybersecurity authorities place increasing emphasis on memory safety, CHERI provides a practical way to strengthen existing software while supporting secure-by-design and resilience goals. It complements memory-safe languages, helps protect software investments, and expands the range of options available to product developers.

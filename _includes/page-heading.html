@@ -1,5 +1,0 @@
-{% unless page.hero %}
-{% assign rendered_heading = include.heading | default: page.rendered_heading %}
-{% if rendered_heading %}{{ rendered_heading }}{% else %}<h1 id="page-title">{{ page.title | escape }}</h1>{% endif %}
-{{ heading_intro }}
-{% endunless %}

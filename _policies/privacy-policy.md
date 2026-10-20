@@ -1,10 +1,21 @@
 ---
+layout: details/policy
 title: Privacy policy
-alternate: true
+summary: This Website collects some Personal data from its Users.
+permalink: /policies/privacy-policy/
+slug: privacy-policy
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Legal & Policies
+sitemap: false
 canonical_url: /policies/privacy/
+policy:
+  type: governance
+  status: archived
 ---
 
-This Website collects some Personal data from its Users.
+## Overview
 
 This document can be printed for reference by using the print command in the settings of any browser.
 

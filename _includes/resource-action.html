@@ -1,3 +1,0 @@
-{%- assign resource_role = 'secondary' -%}
-{%- if include.link.primary -%}{%- assign resource_role = 'primary' -%}{%- endif -%}
-{% include action.html label=include.link.label url=include.link.url kind=include.link.kind role=resource_role primary=include.link.primary resource=true target=include.link.target rel=include.link.rel %}

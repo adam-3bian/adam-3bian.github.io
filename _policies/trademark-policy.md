@@ -1,35 +1,44 @@
 ---
+layout: details/policy
 title: Trademark Policy
-where-next:
-  url: /policies/export-controls/
-related-pages:
-- url: /policies/code-of-conduct/
-  description: The behaviour and participation expectations that apply to Alliance spaces and activities.
-  action: Read this page
-- url: /policies/intellectual-property-policy/
-  description: The policy governing intellectual property in Alliance activities and contributions.
-  action: Read this page
-- url: /organisations/cheri-alliance/
-  title: About the CHERI Alliance
-  description: Learn how the Alliance connects organisations working across the CHERI ecosystem.
-  action: Read this page
 summary: Rules for using CHERI trademarks, logos, membership marks, and certification claims.
-version: '2.0'
-document_date: 2025-09
-links:
-- label: Download official PDF
+permalink: /policies/trademark-policy/
+slug: trademark-policy
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Legal & Policies
+policy:
+  type: governance
+  version: '2.0'
+  dates:
+    effective: 2025-09
+resources:
+- type: pdf
+  label: Download official PDF
   url: /assets/shared/source-assets/d904a00cfb15-trademark-policy.pdf
-  kind: document
-  primary: true
-authoritative_format: PDF
+related:
+- type: policy
+  slug: export-controls
+  relation: next_step
+- type: policy
+  slug: code-of-conduct
+  relation: related
+- type: policy
+  slug: intellectual-property-policy
+  relation: related
+- type: organisation
+  slug: cheri-alliance
+  relation: related
 ---
 
-![pdf](/assets/shared/source-assets/d63b7eac09b7-pdf-file-icon.webp){: .image-left .image-inline } Download the [CHERI Alliance Trademark Policy](/assets/shared/source-assets/d904a00cfb15-trademark-policy.pdf) – The PDF is the official version. The text is reproduced below for convenience, but if there is any difference between the two versions, the PDF takes precedence.
+## Overview
+
+![pdf](/assets/images/common/58e51132-d63b7eac09b7-pdf-file-icon.webp){: .image-left .image-inline } Download the [CHERI Alliance Trademark Policy](/assets/shared/source-assets/d904a00cfb15-trademark-policy.pdf) – The PDF is the official version. The text is reproduced below for convenience, but if there is any difference between the two versions, the PDF takes precedence.
 
 ---
 
 ## Preamble
-{: id="preamble" }
 
 The CHERI Alliance is committed to promoting awareness and understanding of CHERI technology, especially in academic, educational, and informational contexts. This Trademark Policy is designed to ensure that the use of our trademarks is consistent with our mission, protects the integrity of our brand, and ensures that CHERI marks are only associated with genuine CHERI technology or CHERI Alliance-backed projects. Use of CHERI marks should not imply endorsement, affiliation, or certification unless authorized.
 
@@ -38,17 +47,14 @@ This Trademark Policy applies universally — not only to CHERI Alliance members
 By adhering to this policy, we aim to foster a community that respects and accurately represents the CHERI brand.
 
 ## Definitions
-{: id="definitions" }
 
 - **Nominative Fair Use:** Use of a trademark to refer to the trademarked product or technology itself, in a way that is not misleading or suggestive of endorsement.
 - **Sublicense:** A written agreement granting permission to use CHERI marks beyond Nominative Fair Use, usually for branding or integration.
 - **Written Permission** refers to explicit, documented approval from the CHERI Alliance, granted via email or formal letter by an authorized representative. It must clearly specify the scope, duration, and conditions of the approved use.
 
 ## Trademark Usage Rules
-{: id="trademark-usage-rules" }
 
 ### CHERI ® name
-{: id="cheri--name" }
 
 Authorized for “Nominative Fair Use,” – meaning use of the trademark solely to truthfully describe or refer to the CHERI technology itself, the CHERI Alliance or its publications or projects, without suggesting any endorsement or affiliation.
 
@@ -57,19 +63,17 @@ For uses outside of Nominative Fair Use, a Sublicense or Written Permission from
 When used in formal documents, the ® or ™ symbol must be included for the first mention, but the symbol is not required in informal communication (e.g. emails, blogs, discussions), or non-commercial academic contexts.
 
 ### Logos
-{: id="logos" }
 
 | --- | --- |
-| ![CHERI mark](/assets/shared/source-assets/514789203a81-cheri-mark.webp){: .image-full } | **CHERI mark** Reserved for CHERI Alliance documentation and projects, or CHERI Certified products and services, especially when space constraints prevent the use of the CHERI Certified logo (e.g., on a chip package). |
-| ![CHERI mark](/assets/shared/source-assets/e4cf8af68585-cheri-logo.webp){: .image-full } | **CHERI logo**  Permitted for use in CHERI Alliance documentation and projects, or under a Sublicense from the CHERI Alliance. Nominative Fair Use is authorized for discussions about CHERI technology without implying endorsement. |
-| ![CHERI mark](/assets/shared/source-assets/edeb264ff3b7-cheri-member.webp){: .image-full } | **CHERI Alliance Member logo**  Reserved for use in any media by current, active CHERI Alliance members. |
-| ![CHERI mark](/assets/shared/source-assets/213ed31db863-cheri-founder.webp){: .image-full } | **CHERI Alliance Founder logo** Reserved for use in any media by founding members of the CHERI Alliance, that are current, active members. |
-| ![CHERI mark](/assets/shared/source-assets/031e517df8f0-cheri-enabled.webp){: .image-full } | **CHERI certification logo** Reserved for products and services that incorporate CHERI technology and have successfully obtained written approval from the CHERI Alliance certification program. |
+| ![CHERI mark](/assets/images/alliance/legal-and-policies/trademark-policy/cda53ba6-514789203a81-cheri-mark.webp){: .image-full } | **CHERI mark** Reserved for CHERI Alliance documentation and projects, or CHERI Certified products and services, especially when space constraints prevent the use of the CHERI Certified logo (e.g., on a chip package). |
+| ![CHERI mark](/assets/images/alliance/legal-and-policies/trademark-policy/f88932e5-e4cf8af68585-cheri-logo.webp){: .image-full } | **CHERI logo**  Permitted for use in CHERI Alliance documentation and projects, or under a Sublicense from the CHERI Alliance. Nominative Fair Use is authorized for discussions about CHERI technology without implying endorsement. |
+| ![CHERI mark](/assets/images/common/b3b9fe90-edeb264ff3b7-cheri-member.webp){: .image-full } | **CHERI Alliance Member logo**  Reserved for use in any media by current, active CHERI Alliance members. |
+| ![CHERI mark](/assets/images/alliance/legal-and-policies/trademark-policy/7bd829c8-213ed31db863-cheri-founder.webp){: .image-full } | **CHERI Alliance Founder logo** Reserved for use in any media by founding members of the CHERI Alliance, that are current, active members. |
+| ![CHERI mark](/assets/images/alliance/legal-and-policies/trademark-policy/c614d011-031e517df8f0-cheri-enabled.webp){: .image-full } | **CHERI certification logo** Reserved for products and services that incorporate CHERI technology and have successfully obtained written approval from the CHERI Alliance certification program. |
 
 The logos referred to above are illustrative examples. All official variations, including color schemes, proportions, text variations, and usage guidelines, are detailed in the CHERI Alliance Branding Guidelines. Always refer to the latest version of the Branding Guidelines for accurate and approved logo variations.
 
 ## Academic Use
-{: id="academic-use" }
 
 The CHERI Alliance recognizes the importance of academic freedom and encourages the use of its trademarks in academic settings, such as in papers, slides, and posters, provided that such use complies with the principles of Nominative Fair Use and includes one of the following attribution notes:
 
@@ -77,7 +81,6 @@ The CHERI Alliance recognizes the importance of academic freedom and encourages 
 - “CHERI” and the CHERI logo are trademarks of the CHERI Alliance. See cheri-alliance.github.io
 
 ## Additional Rules
-{: id="additional-rules" }
 
 1. **Sublicense for Product Names:** Use of “CHERI” in product names (e.g., “CHERIBoard” or “CHERIChip”) requires a Sublicense.
 2. **Written Permission for Open Source Projects:** Written Permission from the CHERI Alliance is necessary to use CHERI in the name of an open-source project. The definition of “open source” is detailed on the CHERI Alliance Website.
@@ -88,16 +91,17 @@ The CHERI Alliance recognizes the importance of academic freedom and encourages 
 7. **Genuine Representation:** Ensure that the use of CHERI trademarks genuinely represents the involvement or inclusion of CHERI technology in the product or project.
 
 ## Enforcement
-{: id="enforcement" }
 
 The CHERI Alliance reserves the right to take action in cases of misuse of its trademarks. This may include requiring corrective steps, revoking Sublicenses, or initiating legal action to protect the integrity of the CHERI marks.
 
 ## Contact and Permissions
-{: id="contact-and-permissions" }
 
 For questions about this policy or to request Written Permission or a Sublicense, please [contact the CHERI Alliance Trademark Team](/alliance/membership/contact/).
 
 ## Updates
-{: id="updates" }
 
 This policy may be updated periodically. We will notify the public of any substantive changes. Continued use of CHERI marks after updates indicates acceptance of the revised terms. The latest version will be published on this page.
+
+## Authoritative document
+
+The published authoritative format is PDF.

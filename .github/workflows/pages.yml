@@ -41,16 +41,20 @@ jobs:
         run: |
           python scripts/check_content.py
           python scripts/check_refinement.py
+          python scripts/test_spec.py
           bundle exec ruby scripts/test_event_status.rb
           bundle exec ruby scripts/test_forms.rb
+          bundle exec ruby scripts/test_relationships.rb
       - name: Build and validate root and preview deployments
         run: |
           JEKYLL_ENV=production bundle exec jekyll build --safe --destination dist
           python scripts/check_content.py --site dist --report reports/root-content.json
           python scripts/check_refinement.py --site dist
+          bundle exec ruby scripts/test_markdown.rb dist
           JEKYLL_ENV=production bundle exec jekyll build --safe --baseurl /preview --destination dist-baseurl/preview
           python scripts/check_content.py --site dist-baseurl/preview --baseurl /preview --report reports/preview-content.json
           python scripts/check_refinement.py --site dist-baseurl/preview --baseurl /preview
+          bundle exec ruby scripts/test_markdown.rb dist-baseurl/preview
       - name: Check interactions, accessibility and responsive layouts
         run: |
           python -m http.server 4200 --bind 127.0.0.1 --directory dist > "$RUNNER_TEMP/site.log" 2>&1 &
@@ -61,6 +65,10 @@ jobs:
           export AXE_PATH="$RUNNER_TEMP/accessibility/node_modules/axe-core/axe.min.js"
           BROWSERS=webkit,chromium,firefox SITE_URL=http://127.0.0.1:4200/ REPORT_ROOT=reports/corporate/root python scripts/test_corporate.py
           BROWSERS=webkit,chromium,firefox SITE_URL=http://127.0.0.1:4201/preview/ REPORT_ROOT=reports/corporate/preview python scripts/test_corporate.py
+          SITE_URL=http://127.0.0.1:4200/ REPORT_ROOT=reports/posts/root python scripts/test_posts.py
+          SITE_URL=http://127.0.0.1:4201/preview/ REPORT_ROOT=reports/posts/preview python scripts/test_posts.py
+          SITE_URL=http://127.0.0.1:4200/ REPORT_ROOT=reports/semantic/root python scripts/test_semantic.py
+          SITE_URL=http://127.0.0.1:4201/preview/ REPORT_ROOT=reports/semantic/preview python scripts/test_semantic.py
           SITE_URL=http://127.0.0.1:4200/ REPORT_ROOT=reports/browser python scripts/test_catalog.py
           SITE_URL=http://127.0.0.1:4201/preview/ REPORT_ROOT=reports/preview-browser python scripts/test_catalog.py
           SITE_URL=http://127.0.0.1:4200/ REPORT_ROOT=reports/layout-fixes/after python scripts/test_layouts.py

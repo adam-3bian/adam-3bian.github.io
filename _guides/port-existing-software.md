@@ -1,23 +1,31 @@
 ---
+layout: details/guide
 title: Port Existing Software
-where-next:
-  url: /guides/build-compartments/
-related-pages:
-- url: /guides/choose-a-platform/
-  title: Choose a Platform
-  description: Choose a platform, prepare an environment and run a first CHERI workload.
-  action: Read this page
-summary: Port existing software by making pointer assumptions explicit, preserving capability metadata, and testing
-  each interface on the intended platform.
-topic: Porting
+summary: Port existing software by making pointer assumptions explicit, preserving capability metadata, and testing each interface on the intended platform.
+permalink: /guides/port-existing-software/
+slug: port-existing-software
+navigation:
+  header:
+    category: Build
+    subcategory: Software Developers
+guide:
+  topic: porting
+related:
+- type: guide
+  slug: build-compartments
+  relation: next_step
+- type: guide
+  slug: choose-a-platform
+  relation: related
 ---
+
+## Overview
 
 Most well-structured C and C++ code does not need a redesign for CHERI. The difficult parts are usually places where a program has hidden the difference between an address, a pointer, an object boundary, and an authority decision.
 
 A good port makes those assumptions visible and fixes their root cause. Suppressing the warning or widening every bound may restore execution while discarding the security benefit.
 
 ## Establish a baseline
-{: id="establish-a-baseline" }
 
 Before changing source code:
 
@@ -30,10 +38,8 @@ Before changing source code:
 Start with a small leaf library or command-line component. A narrow target makes compiler diagnostics and runtime faults easier to understand.
 
 ## Common porting issues
-{: id="common-porting-issues" }
 
 ### Pointer and integer conversions
-{: id="pointer-and-integer-conversions" }
 
 Code sometimes stores a pointer in an integer, modifies its low bits, or serialises it directly:
 
@@ -46,7 +52,6 @@ On CHERI, an address alone does not contain the capability’s bounds, permissio
 Converting an integer back to a pointer does not, by itself, create a valid capability.
 
 ### Pointer size and layout
-{: id="pointer-size-and-layout" }
 
 Pure-capability pointers may be larger than conventional pointers. Review:
 
@@ -60,31 +65,26 @@ Pure-capability pointers may be larger than conventional pointers. Review:
 Store an index, offset, or validated protocol identifier in a persistent or wire format rather than a live in-memory pointer.
 
 ### Bounds and object intent
-{: id="bounds-and-object-intent" }
 
 CHERI may expose code that deliberately walks from one object into another, derives a container pointer from a member, or expects an allocator to return wider storage than requested.
 
 Decide what the object really is. If several fields form one allocation, retain a capability for the enclosing allocation and derive bounded field capabilities from it. Avoid solving every fault by granting access to the whole address space.
 
 ### Custom allocators
-{: id="custom-allocators" }
 
 An allocator must return capabilities with useful bounds and preserve tags when storing metadata. It may also participate in temporal-safety mechanisms. Prefer the platform allocator first, then port a custom allocator using the architecture and operating-system guidance.
 
 ### Copying capability-containing memory
-{: id="copying-capability-containing-memory" }
 
 Capabilities have protected tags outside the ordinary byte representation. Byte copies through supported memory operations can preserve tagged values when alignment and size requirements are met, but writing arbitrary bytes cannot forge a tag.
 
 Review custom `memcpy`, compression, encryption, shared-memory, and device-transfer code. A capability is meaningful only within a suitable address-space and authority context, so it should not be treated as portable serialised data.
 
 ### Inline assembly and low-level interfaces
-{: id="inline-assembly-and-low-level-interfaces" }
 
 Inline assembly must use the correct capability registers, constraints, calling convention, and clobber list. Isolate it behind a small, tested interface. Prefer compiler intrinsics or maintained platform code where available.
 
 ## Use diagnostics as evidence
-{: id="use-diagnostics-as-evidence" }
 
 Classify each warning or fault:
 
@@ -98,7 +98,6 @@ Classify each warning or fault:
 Keep this log with the port. It helps reviewers distinguish compatibility changes from changes that alter the security model.
 
 ## Test the protection, not only the happy path
-{: id="test-the-protection-not-only-the-happy-path" }
 
 Run existing unit and integration tests, then add cases for:
 
@@ -113,7 +112,6 @@ Run existing unit and integration tests, then add cases for:
 Use fuzzing and sanitizers where supported. CHERI faults can make invalid accesses easier to locate, while sanitizers may still find undefined behaviour before it becomes a capability violation.
 
 ## Measure before and after
-{: id="measure-before-and-after" }
 
 Record binary size, peak memory, build time, runtime, fault behaviour, and source changes. Compare like with like: same workload, optimisation level, operating-system configuration, and hardware or simulator.
 

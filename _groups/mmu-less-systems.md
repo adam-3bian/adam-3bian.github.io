@@ -1,24 +1,31 @@
 ---
+layout: details/working-group
 title: 👮 MMU-less Systems WG
-where-next:
-  url: /groups/os-support-and-portability/
-  title: OS Support & Portability
-summary: Examines CHERI protection and compartmentalisation for systems that share an address space and do not depend
-  on a conventional memory-management unit.
-group_type: Technical
-collaboration_areas:
-- Shared-address-space systems
-- Embedded compartment models
-- Resource and real-time constraints
-links:
-- label: Back to all working groups
-  url: /alliance/leadership/working-groups/
-  kind: navigation
-- label: Enquire about this group
-  url: /alliance/membership/contact/
-  kind: resource
-  primary: true
+summary: Examines CHERI protection and compartmentalisation for systems that share an address space and do not depend on a conventional memory-management unit.
+permalink: /groups/mmu-less-systems/
+slug: mmu-less-systems
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Leadership
+working_group:
+  type: technical
+  focus_areas:
+  - Shared-address-space systems
+  - Embedded compartment models
+  - Resource and real-time constraints
+forms:
+- contact
+related:
+- type: working_group
+  slug: os-support-and-portability
+  relation: next_step
+- type: page
+  slug: alliance-leadership-working-groups
+  relation: navigation
 ---
+
+## Overview
 
 The goal of this WG is to discuss designs for a broad range of CHERI systems where the common theme is that they operate on a shared single address space between processes. The three main categories of systems that I have in mind are:
 

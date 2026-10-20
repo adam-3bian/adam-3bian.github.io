@@ -1,18 +1,26 @@
 ---
+layout: page/standard
 title: Hybrid Systems
-permalink: /build/technology/hybrid-systems/
-where-next:
-  url: /build/technology/pure-capability-systems/
-related-pages:
-- url: /build/technology/how-cheri-capabilities-work/
-  description: How CHERI Capabilities work.
-  action: Read this page
-- url: /build/technology/compartmentalisation/
-  description: A media application may include millions of lines of code, dozens of libraries, and parsers for hostile
-    input.
-  action: Read this page
 summary: Hybrid CHERI combines conventional pointers with capabilities, enabling incremental adoption of CHERI protections.
+permalink: /build/technology/hybrid-systems/
+slug: build-technology-hybrid-systems
+navigation:
+  header:
+    category: Build
+    subcategory: Technology
+related:
+- type: page
+  slug: build-technology-pure-capability-systems
+  relation: next_step
+- type: page
+  slug: build-technology-how-cheri-capabilities-work
+  relation: related
+- type: page
+  slug: build-technology-compartmentalisation
+  relation: related
 ---
+
+## Overview
 
 Converting every pointer, library and interface at once is rarely practical. Hybrid systems allow existing C and C++ code to continue using conventional pointers while selected code uses explicit capabilities.
 
@@ -21,7 +29,6 @@ This makes hybrid CHERI useful for migration, experimentation and introducing ca
 However, hybrid and pure-capability systems provide different levels of protection. In a hybrid system, capability protection applies where capabilities are actually used.
 
 ## How hybrid CHERI works
-{: id="how-hybrid-cheri-works" }
 
 In hybrid software, conventional pointers and capabilities can coexist. This requires hardware that supports hybrid mode.
 
@@ -32,7 +39,6 @@ This allows developers to introduce CHERI **progressively** rather than converti
 However, conventional pointer accesses do not automatically gain the object-level bounds associated with capability pointers.
 
 ## Why use hybrid mode
-{: id="why-use-hybrid-mode" }
 
 Hybrid mode can help teams:
 
@@ -46,7 +52,6 @@ Hybrid mode can help teams:
 It can therefore be a useful step between conventional software and a broader pure-capability deployment.
 
 ## A staged example
-{: id="a-staged-example" }
 
 Imagine a conventional service that receives network data. A first hybrid step might explicitly derive a bounded, read-only capability for one packet and pass it to a capability-aware parser.
 
@@ -61,14 +66,12 @@ It should not claim:
 > The complete service has pure-capability memory safety.
 
 ## ABI compatibility
-{: id="abi-compatibility" }
 
 One reason for using a hybrid model is to preserve compatibility with existing code and interfaces while introducing capabilities selectively.
 
 Capability-aware interfaces still require appropriate types, calling conventions and supporting libraries. Mixing conventional and capability-aware code is platform-specific, so compatibility should not be assumed simply because both forms of code run on the same processor.
 
 ## Security coverage
-{: id="security-coverage" }
 
 Hybrid mode provides strong enforcement where valid, tightly bounded capabilities are used. It may also support sealed objects and compartment entry mechanisms.
 
@@ -82,7 +85,6 @@ Coverage remains selective:
 This makes hybrid mode useful for transition but harder to describe with a single percentage or label.
 
 ## Moving towards pure capability
-{: id="moving-towards-pure-capability" }
 
 Hybrid CHERI can be a useful way to discover porting issues and introduce capability-aware interfaces before moving more software to a pure-capability ABI.
 
@@ -97,7 +99,6 @@ Typical migration work includes:
 Not every system needs to migrate everything. Where conventional components remain, developers should understand and document the authority those components retain.
 
 ## Key takeaway
-{: id="key-takeaway" }
 
 Hybrid CHERI provides a practical path to incremental adoption, but its protection is selective. Capabilities can protect specific objects, interfaces and components while existing software continues to run conventionally.
 

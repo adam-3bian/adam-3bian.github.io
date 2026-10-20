@@ -1,25 +1,33 @@
 ---
+layout: details/speaker
 title: Paul Metzger
-organization:
-- university-of-cambridge
-speaker: true
-summary: Dr Paul Metzger is a Research Associate in the Department of Computer Science and Technology at the University
-  of Cambridge.
-thumbnail:
-  src: /assets/people/paul-metzger/0069454ce669-portrait.jpg
+summary: Dr Paul Metzger is a Research Associate in the Department of Computer Science and Technology at the University of Cambridge.
+permalink: /people/paul-metzger/
+slug: paul-metzger
+navigation:
+  header:
+    category: News & Events
+    subcategory: People & Opportunities
+image:
+  src: /assets/images/news-and-events/people-and-opportunities/paul-metzger/962dcfff-0069454ce669-portrait.jpg
   alt: Paul Metzger
   width: 988
   height: 1200
-links:
-- label: Back to all speakers
-  url: /news-and-events/people-and-opportunities/speakers/
-  kind: navigation
-- label: LinkedIn
-  url: https://www.linkedin.com/in/metzgerpaul/
-  kind: profile
+person:
+  roles:
+  - speaker
+  organisations:
+  - organisation: university-of-cambridge
+    relationship: other
+  links:
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/metzgerpaul/
+related:
+- type: page
+  slug: news-and-events-people-and-opportunities-speakers
+  relation: navigation
 ---
 
 ## Biography
-{: id="biography" }
 
 Dr Paul Metzger is a Research Associate in the Department of Computer Science and Technology at the University of Cambridge. He recently started working on CHERI OS API portability and has been involved with CHERI projects since 2021. Prior to that, he received his PhD from the University of Edinburgh.

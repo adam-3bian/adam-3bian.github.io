@@ -1,44 +1,27 @@
 {% assign card_record = include.item %}
-{% assign card_item = include.item %}
-{% if include.resolve %}{% assign destination = card_item.url | split: '#' | first | split: '?' | first %}{% assign destination_parts = destination | split: '/' %}{% assign destination_kind = destination_parts[1] %}{% assign found_record = nil %}{% if site.data.catalog[destination_kind] %}{% assign destination_slug = destination_parts | last %}{% assign found_record = site[destination_kind] | where: 'slug', destination_slug | first %}{% endif %}{% unless found_record %}{% assign found_record = site.pages | where: 'url', destination | first %}{% endunless %}{% if found_record %}{% assign card_record = found_record %}{% endif %}{% endif %}
 {% assign kind = include.kind | default: card_record.collection | default: 'pages' %}
-{% assign config = site.data.catalog[kind] %}
-{% assign card_title = card_item.title | default: card_record.title | default: card_item.url %}
-{% assign card_summary = card_item.description | default: card_record.summary %}
-{% assign card_image = card_item.thumbnail | default: card_record.thumbnail %}
-{% assign media_kinds = 'people,organisations,events,news,hardware,software' | split: ',' %}
-{% assign show_media = false %}{% if include.images != false %}{% if card_image.src or media_kinds contains kind %}{% assign show_media = true %}{% endif %}{% endif %}
-{% assign show_metadata = false %}{% if include.metadata == true %}{% if kind == 'events' or kind == 'news' or kind == 'papers' or kind == 'policies' %}{% assign show_metadata = true %}{% endif %}{% endif %}
-{% assign card_date = '' %}{% case kind %}{% when 'events' %}{% assign card_date = card_record.start_date %}{% when 'news' %}{% unless card_record.undated %}{% assign card_date = card_record.date %}{% endunless %}{% when 'papers', 'reports' %}{% assign card_date = card_record.year %}{% when 'policies' %}{% assign card_date = card_record.document_date %}{% else %}{% assign card_date = card_record.posted_date %}{% endcase %}
-{% capture card_metadata %}
-{% case kind %}
-{% when 'people' %}{% include field-value.html value=card_record.organization type='organisations' plain=true %}{% if card_record.board_role %}<span>{{ card_record.board_role | escape }}</span>{% endif %}
-{% when 'organisations' %}{{ card_record.membership_category | escape }}{% if card_record.member and card_record.membership_category == nil %}Alliance member{% endif %}
-{% when 'news' %}{% if card_record.date and card_record.undated != true %}{% include date.html value=card_record.date %}{% endif %}
-{% when 'events' %}{% include date.html value=card_record.start_date %}{% if card_record.end_date and card_record.end_date != card_record.start_date %} – {% include date.html value=card_record.end_date %}{% endif %}{% if card_record.location %}<span>{{ card_record.location | escape }}</span>{% endif %}
-{% when 'papers', 'reports' %}{{ card_record.year }}{% if card_record.venue %} · {{ card_record.venue | escape }}{% endif %}
-{% when 'policies' %}{% if card_record.version %}Version {{ card_record.version | escape }}{% endif %}{% if card_record.document_date %}<span>{% include date.html value=card_record.document_date %}</span>{% endif %}
-{% when 'hardware' %}{{ card_record.record_type | escape }}{% if card_record.version %} · v{{ card_record.version | escape }}{% endif %}{% if card_record.organization_label %}<span>{{ card_record.organization_label | escape }}</span>{% endif %}
-{% when 'groups' %}{{ card_record.group_type | escape }}
-{% when 'software' %}{{ card_record.software_type | escape }}
-{% when 'guides' %}{{ card_record.topic | escape }}
-{% when 'products' %}{{ card_record.organization_label | escape }}{% if card_record.product_type %} · {{ card_record.product_type | escape }}{% endif %}{% if card_record.release_status %}<span>{{ card_record.release_status | escape }}</span>{% endif %}
-{% else %}{% if card_record.opportunity_type %}{{ card_record.opportunity_type | escape }} · {{ card_record.working_pattern | escape }}{% endif %}
-{% endcase %}
-{% endcapture %}{% assign card_metadata = card_metadata | strip %}
-{% capture facet %}{% case kind %}{% when 'people' %}{% for ref in card_record.organization %}{% assign org = site.organisations | where: 'slug', ref | first %}{{ org.title }}{% unless forloop.last %}|||{% endunless %}{% endfor %}{% when 'organisations' %}{{ card_record.membership_category }}{% when 'events' %}{{ card_record.format }}{% when 'papers', 'reports' %}{{ card_record.year }}{% when 'groups' %}{{ card_record.group_type }}{% when 'news' %}{{ card_record.tags | join: '|||' }}{% when 'hardware' %}{{ card_record.record_type }}{% when 'software' %}{{ card_record.software_type }}{% when 'guides' %}{{ card_record.topic }}{% when 'products' %}{{ card_record.category }}{% endcase %}{% endcapture %}
-{% capture search %}{{ card_title }} {{ card_summary | markdownify | strip_html }} {{ card_metadata | strip_html }} {% for ref in card_record.authors %}{% assign author = site.people | where: 'slug', ref | first %}{{ author.title }} {% endfor %} {{ card_record.tags | join: ' ' }} {{ card_record.collaboration_areas | join: ' ' }}{% endcapture %}
-<li class="catalog-item" data-title="{{ card_title | escape }}" data-search="{{ search | normalize_whitespace | escape }}" data-date="{{ card_date | escape }}" data-facet="{{ facet | strip | escape }}">
-  {% if card_item.url %}<a class="catalog-card navigation-card catalog-card--{{ kind }}{% unless show_media %} without-image{% endunless %}" href="{% include url.html url=card_item.url %}">{% else %}<article class="catalog-card content-panel without-image">{% endif %}
-    {% if show_media %}<span class="catalog-media media-{{ kind }}{% unless card_image.src %} media-placeholder{% endunless %}">{% include card-image.html image=card_image kind=kind %}</span>{% endif %}
-    <div class="catalog-copy">
-      {% if kind == 'events' and show_metadata %}<p class="card-kicker">{% include event-status.html event=card_record %}{% if card_record.format %}<span> · {{ card_record.format | escape }}</span>{% endif %}</p>{% elsif include.metadata == true and card_item.resource_type and card_item.resource_type != 'Introduction' %}<p class="card-kicker">{{ card_item.resource_type | escape }}</p>{% endif %}
-      {% if include.heading == 'h3' %}<h3>{{ card_title | escape }}</h3>{% else %}<h2>{{ card_title | escape }}</h2>{% endif %}
-      {% if card_metadata != '' and show_metadata %}<div class="catalog-meta">{{ card_metadata }}</div>{% endif %}
-      {% unless card_item.url %}{% if card_summary %}<div class="panel-description">{{ card_summary | markdownify }}</div>{% endif %}{% endunless %}
-      {% if card_item.citation %}<p class="catalog-meta">{{ card_item.citation | escape }}</p>{% endif %}
-      {% if card_item.url %}<div class="catalog-footer">{% if kind == 'organisations' and include.metadata == true and card_record.membership_status == 'Founding member' %}<span class="member-badge">{{ card_record.membership_status | escape }}</span>{% endif %}<span class="catalog-action">{% include icon.html %}</span></div>{% endif %}
-    </div>
-  {% if card_item.url %}</a>{% else %}</article>{% endif %}
-  {% if kind == 'products' and card_item.url and card_item.description %}<div class="catalog-annotation">{% assign annotation = card_item.description | markdownify %}{% include content-urls.html content=annotation %}</div>{% endif %}
-</li>
+{% assign card_image = card_record.image %}
+{% assign show_media = false %}{% if card_image.src and include.images != false %}{% assign show_media = true %}{% endif %}
+{% capture card_metadata %}{% case kind %}
+{% when 'people' %}{% for affiliation in card_record.person.organisations %}{% assign organisation = site.organisations | where: 'slug', affiliation.organisation | first %}{{ organisation.title | escape }}{% unless forloop.last %} · {% endunless %}{% endfor %}{% if card_record.person.governance.board_role %}<span>{{ card_record.person.governance.board_role | escape }}</span>{% endif %}
+{% when 'organisations' %}{% if card_record.organisation.membership.is_member and card_record.organisation.membership.status == 'active' %}{% if card_record.organisation.membership.tier %}{{ card_record.organisation.membership.tier | replace: '-', ' ' | capitalize | escape }} member{% else %}Alliance member{% endif %}{% endif %}
+{% when 'posts' %}{% include date.html value=card_record.date %}
+{% when 'events' %}{% assign first_day = card_record.date | date: '%Y-%m-%d' %}{% assign last_day = card_record.end_date | date: '%Y-%m-%d' %}{% include date.html value=card_record.date %}{% if card_record.end_date and last_day != first_day %} – {% include date.html value=card_record.end_date %}{% endif %}<span>{{ card_record.event.location.venue | escape }}</span>
+{% when 'papers' %}{{ card_record.publication.year }} · {{ card_record.publication.venue | escape }}
+{% when 'products' %}{{ card_record.product.type | replace: '_', ' ' | escape }}
+{% when 'repositories' %}{{ card_record.repository.type | replace: '_', ' ' | escape }}
+{% when 'groups' %}{{ card_record.working_group.type | escape }}
+{% when 'guides' %}{{ card_record.guide.topic | replace: '-', ' ' | escape }}
+{% when 'policies' %}{% if card_record.policy.version %}Version {{ card_record.policy.version | escape }}{% endif %}
+{% endcase %}{% endcapture %}
+{% capture facet %}{% case kind %}{% when 'people' %}{% for affiliation in card_record.person.organisations %}{% assign org = site.organisations | where: 'slug', affiliation.organisation | first %}{{ org.title }}{% unless forloop.last %}|||{% endunless %}{% endfor %}{% when 'events' %}{{ card_record.event.format }}{% when 'posts' %}{{ card_record.post.tags | join: '|||' }}{% when 'papers' %}{{ card_record.publication.year }}{% when 'organisations' %}{{ card_record.organisation.membership.tier }}{% when 'groups' %}{{ card_record.working_group.type }}{% when 'guides' %}{{ card_record.guide.topic }}{% when 'products' %}{{ card_record.product.type }}{% when 'repositories' %}{{ card_record.repository.type }}{% when 'policies' %}{{ card_record.policy.type }}{% endcase %}{% endcapture %}
+{% assign card_date = '' %}{% case kind %}{% when 'posts', 'events' %}{% assign card_date = card_record.date | date: '%Y-%m-%dT%H:%M:%S%:z' %}{% when 'papers' %}{% assign card_date = card_record.publication.year %}{% when 'policies' %}{% assign card_date = card_record.policy.dates.effective %}{% endcase %}
+{% capture card_search %}{{ card_record.title }} {{ card_record.summary | markdownify | strip_html }} {{ card_metadata | strip_html }}{% for credit in card_record.post.authors %}{% assign author = site.people | where: 'slug', credit.person | first %} {{ author.title }}{% endfor %}{% for credit in card_record.publication.authors %}{% assign author = site.people | where: 'slug', credit.person | first %} {{ author.title }}{% endfor %}{% endcapture %}
+<li class="catalog-item" data-title="{{ card_record.title | escape }}" data-search="{{ card_search | normalize_whitespace | escape }}" data-date="{{ card_date | escape }}" data-facet="{{ facet | strip | escape }}">
+<a class="catalog-card navigation-card catalog-card--{{ kind }}{% unless show_media %} without-image{% endunless %}" href="{% include url.html url=card_record.url %}">
+{% if show_media %}<span class="catalog-media media-{{ kind }}">{% include image.html image=card_image %}</span>{% endif %}
+<div class="catalog-copy">
+{% if kind == 'events' %}<p class="card-kicker">{% include event-status.html event=card_record %} · {{ card_record.event.format | escape }}</p>{% endif %}
+{% if include.heading == 'h3' %}<h3>{{ card_record.title | escape }}</h3>{% else %}<h2>{{ card_record.title | escape }}</h2>{% endif %}
+{% if include.metadata %}<div class="catalog-meta">{{ card_metadata }}</div>{% endif %}
+<div class="catalog-footer">{% if kind == 'organisations' and card_record.organisation.membership.status == 'active' and card_record.organisation.membership.founding_member %}<span class="member-badge">Founding member</span>{% endif %}<span class="catalog-action">{% include icon.html %}</span></div></div></a></li>

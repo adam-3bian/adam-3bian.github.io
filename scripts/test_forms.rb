@@ -1,38 +1,35 @@
 require 'jekyll'
 require 'nokogiri'
 require 'yaml'
-root = File.expand_path('..', __dir__)
-site = Jekyll::Site.new(Jekyll.configuration('source' => root, 'safe' => true, 'baseurl' => '/preview', 'quiet' => true))
-form = YAML.safe_load(File.read(File.join(root, '_data/forms.yml')))['contact']
-template = Liquid::Template.parse('{% include form-panel.html form=fixture action=endpoint method=verb %}')
-render = lambda do |endpoint, method = nil|
-  html = template.render!({'fixture' => form, 'endpoint' => endpoint, 'verb' => method, 'site' => site.site_payload['site']}, registers: {site: site, page: {}})
-  Nokogiri::HTML.fragment(html)
+root=File.expand_path('..',__dir__)
+site=Jekyll::Site.new(Jekyll.configuration('source'=>root,'safe'=>true,'baseurl'=>'/preview','quiet'=>true))
+forms=YAML.safe_load(File.read(File.join(root,'_data/forms.yml')))
+template=Liquid::Template.parse('{% include form-from-data.html form=fixture %}')
+render=lambda do |form|
+ Nokogiri::HTML.fragment(template.render!({'fixture'=>form,'page'=>{'slug'=>'test-page'},'site'=>site.site_payload['site']},registers:{site:site,page:{}}))
 end
-contact_template = Liquid::Template.parse('{% include contact-form.html %}')
-contact = contact_template.render!({'page' => {'form' => {'action' => '/live-contact/'}}, 'site' => {'data' => {'forms' => {'contact' => form}}}}, registers: {site: site, page: {}})
-abort 'Contact page front matter does not enable native submission' unless Nokogiri::HTML.fragment(contact).at_css('form')['action'] == '/preview/live-contact/'
-unconfigured_contact = contact_template.render!({'page' => {}, 'site' => {'data' => {'forms' => {'contact' => form}}}}, registers: {site: site, page: {}})
-unconfigured_contact = Nokogiri::HTML.fragment(unconfigured_contact)
-fields = unconfigured_contact.css('input, textarea, select')
-abort 'Contact fields must remain visible without an action' unless fields.map { |field| field['name'] } == form['fields'].map { |field| field['name'] }
-abort 'Restored contact fields lack labels' unless fields.all? { |field| unconfigured_contact.at_css("label[for='#{field['id']}']") }
-abort 'Unconfigured contact must not submit to the current page' unless unconfigured_contact.css('form').empty? && unconfigured_contact.at_css('button[disabled][type="button"]')
-abort 'Published contact route must remain available' unless unconfigured_contact.at_css("a[href='#{form['external_url']}']")
-abort 'Preview notice remains on contact' if unconfigured_contact.text.include?('Preview form') || unconfigured_contact.text.include?('Submission is unavailable')
-ids = unconfigured_contact.css('[id]').map { |node| node['id'] }
-abort 'Restored contact duplicates anchor IDs' unless ids.uniq == ids
-blank = render.call(nil)
-abort 'Inactive form should offer the existing published form, without dead controls' unless blank.css('form, input, textarea, select, button').empty? && blank.at_css('a.button')['href'] == form['external_url']
-abort 'Preview notice remains' if blank.text.include?('Preview form') || blank.text.include?('Submission is unavailable')
-[['/contact-endpoint/', '/preview/contact-endpoint/'], ['https://example.test/enquiries', 'https://example.test/enquiries']].each do |endpoint, expected|
-  output = render.call(endpoint)
-  f = output.at_css('form')
-  abort 'Configured endpoint or method lost' unless f && f['action'] == expected && f['method'] == 'post'
-  abort 'Submit must be live' unless f.at_css('button[type="submit"]') && !f.at_css('button')['disabled']
-  abort 'Authored field names changed' unless f.css('input, textarea, select').map { |field| field['name'] } == form['fields'].map { |field| field['name'] }
-  abort 'Fields lack labels' unless f.css('input, textarea, select').all? { |field| f.at_css("label[for='#{field['id']}']") }
+forms.each do |key,form|
+ output=render.call(form)
+ abort 'External mode must never collect local data' unless output.css('form,input,textarea,select,button').empty?
+ abort 'Published provider URL lost' unless output.at_css('a.button')['href']==form['submission']['url']
 end
-abort 'GET configuration ignored' unless render.call('/contact-endpoint/', 'get').at_css('form')['method'] == 'get'
-abort 'Unknown methods must fall back to POST' unless render.call('/contact-endpoint/', 'delete').at_css('form')['method'] == 'post'
-puts 'Contact form: visible unconfigured fields, configured POST/GET endpoints, baseurl, labels and published fallback passed; no submissions sent.'
+fixture={'id'=>'all-inputs','title'=>'Integration fixture','description'=>'Tests only; never submitted','privacy_url'=>'/policies/privacy/','submission'=>{'mode'=>'post','url'=>'/verified-endpoint/','label'=>'Send test'},'fields'=>[
+ {'name'=>'first-name','type'=>'text','label'=>'First name','required'=>true,'width'=>'half','min_length'=>2,'max_length'=>50,'pattern'=>'[A-Za-z ]+','help'=>'Use letters','autocomplete'=>'given-name','default'=>'Ada'},
+ {'name'=>'email','type'=>'email','label'=>'Email','required'=>true},
+ {'name'=>'phone','type'=>'tel','label'=>'Phone'},
+ {'name'=>'message','type'=>'textarea','label'=>'Message','rows'=>4,'default'=>'Hello <world>'},
+ {'name'=>'topic','type'=>'select','label'=>'Topic','required'=>true,'options'=>[{'value'=>'research','label'=>'Research'},{'value'=>'build','label'=>'Build'}],'default'=>'build'},
+ {'name'=>'consent','type'=>'checkbox','label'=>'I agree','required'=>true,'default'=>'yes'},
+ {'name'=>'choice','type'=>'radio','label'=>'Choice','required'=>true,'options'=>[{'value'=>'one','label'=>'One'},{'value'=>'two','label'=>'Two'}],'default'=>'two','help'=>'Choose one'},
+ {'name'=>'source','type'=>'hidden','default'=>'test-source'}]}
+output=render.call(fixture);f=output.at_css('form')
+abort 'POST endpoint/baseurl lost' unless f['action']=='/preview/verified-endpoint/'&&f['method']=='post'
+abort 'Field type missing' unless %w[text email tel checkbox radio hidden].all?{|t|f.at_css("input[type='#{t}']")}&&f.at_css('textarea')&&f.at_css('select')
+abort 'Provider wire names changed' unless f.at_css('input[type="text"]')['name']=='first-name'
+abort 'Validation constraints lost' unless f.at_css('input[type="text"]')['minlength']=='2'&&f.at_css('input[type="text"]')['maxlength']=='50'&&f.at_css('input[type="text"]')['required']
+abort 'Defaults not escaped/preserved' unless f.at_css('textarea').text=='Hello <world>'&&f.at_css('option[selected]')['value']=='build'&&f.at_css('input[type="radio"][checked]')['value']=='two'
+f.css('input:not([type="hidden"]),select,textarea').each{|field|abort 'Field lacks connected label' unless output.at_css("label[for='#{field['id']}']")}
+f.css('[aria-describedby]').each{|field|field['aria-describedby'].split.each{|id|abort 'Unresolved field help' unless output.at_css("[id='#{id}']")}}
+ids=output.css('[id]').map{|n|n['id']};abort 'Duplicate form IDs' unless ids.uniq==ids
+preview=render.call(fixture.merge('submission'=>{'mode'=>'disabled'}));abort 'Disabled preview can submit' unless preview.css('form,button[type="submit"]').empty?&&preview.at_css('fieldset[disabled]')&&preview.text.include?('Preview only')
+puts 'Forms: external-only providers, POST renderer, eight input types, native constraints, wire names, escaping, defaults, labels/help, safe IDs and disabled preview passed; no submissions sent.'

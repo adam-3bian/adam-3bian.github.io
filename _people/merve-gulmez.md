@@ -1,25 +1,33 @@
 ---
+layout: details/speaker
 title: Merve Gülmez
-organization:
-- ericsson
-speaker: true
-summary: Merve Gülmez is a researcher at Ericsson Security Research. She holds a PhD in Computer Science from KU
-  Leuven, and her research focuses on systems security, memory safety, and improving software resilience.
-thumbnail:
-  src: /assets/people/merve-gulmez/99144c205252-portrait.png
+summary: Merve Gülmez is a researcher at Ericsson Security Research. She holds a PhD in Computer Science from KU Leuven, and her research focuses on systems security, memory safety, and improving software resilience.
+permalink: /people/merve-gulmez/
+slug: merve-gulmez
+navigation:
+  header:
+    category: News & Events
+    subcategory: People & Opportunities
+image:
+  src: /assets/images/news-and-events/people-and-opportunities/merve-gulmez/56bbe6c6-99144c205252-portrait.png
   alt: Merve Gülmez
   width: 386
   height: 328
-links:
-- label: Back to all speakers
-  url: /news-and-events/people-and-opportunities/speakers/
-  kind: navigation
-- label: LinkedIn
-  url: https://www.linkedin.com/in/merve-g%C3%BClmez/
-  kind: profile
+person:
+  roles:
+  - speaker
+  organisations:
+  - organisation: ericsson
+    relationship: other
+  links:
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/merve-g%C3%BClmez/
+related:
+- type: page
+  slug: news-and-events-people-and-opportunities-speakers
+  relation: navigation
 ---
 
 ## Biography
-{: id="biography" }
 
 Merve Gülmez is a researcher at Ericsson Security Research. She holds a PhD in Computer Science from KU Leuven, and her research focuses on systems security, memory safety, and improving software resilience.

@@ -1,8 +1,0 @@
----
-layout: page
----
-{{ content }}
-{% assign people = site.people | where_exp: 'item', 'item.alternate != true' | sort_natural: 'title' %}
-{% if page.listing.registry == 'governing-board' %}{% assign people = '' | split: ',' %}{% for ref in site.data.governing-board %}{% assign person = site.people | where: 'slug', ref | first %}{% if person %}{% assign people = people | push: person %}{% endif %}{% endfor %}
-{% elsif page.listing.role == 'speaker' %}{% assign people = people | where: 'speaker', true %}{% endif %}
-{% include directory.html items=people kind='people' registry=page.listing.registry %}

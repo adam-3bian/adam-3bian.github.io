@@ -2,7 +2,16 @@
 layout: page
 ---
 {{ content }}
-{% assign items = site[page.listing.collection] | where_exp: 'item', 'item.redirect_to == nil' | where_exp: 'item', 'item.alternate != true' %}
-{% if page.listing.filter == 'certified' %}{% assign items = items | where_exp: 'item', 'item.certification != nil' %}{% endif %}
-{% if page.listing.collection == 'papers' or page.listing.collection == 'reports' %}{% assign items = items | sort: 'year' | reverse %}{% else %}{% assign items = items | sort_natural: 'title' %}{% endif %}
+{% assign items = site[page.listing.collection] | where_exp: 'item', 'item.sitemap != false' %}
+{% case page.listing.filter %}
+{% when 'speaker_role' %}{% assign items = items | where_exp: 'item', 'item.person.roles contains "speaker"' %}
+{% when 'governing_board' %}{% assign items = items | where_exp: 'item', 'item.person.governance.board_order != nil' | sort: 'person.governance.board_order' %}
+{% when 'current_members' %}{% assign items = items | where_exp: 'item', 'item.organisation.membership.is_member == true' | where_exp: 'item', 'item.organisation.membership.status == "active"' %}
+{% when 'reports' %}{% assign items = items | where: 'publication.type', 'report' %}
+{% when 'academic' %}{% assign items = items | where_exp: 'item', 'item.publication.type != "report"' %}
+{% endcase %}
+{% if page.listing.collection == 'events' %}{% include chronological-items.html items=items kind='events' status=page.listing.filter %}{% assign items = chronological_items %}
+{% elsif page.listing.collection == 'posts' %}{% assign items = items | sort: 'date' | reverse %}
+{% elsif page.listing.collection == 'papers' %}{% assign items = items | sort: 'publication.year' | reverse %}
+{% elsif page.listing.filter != 'governing_board' %}{% assign items = items | sort_natural: 'title' %}{% endif %}
 {% include directory.html items=items kind=page.listing.collection %}

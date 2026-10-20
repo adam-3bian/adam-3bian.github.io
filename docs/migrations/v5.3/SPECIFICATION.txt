@@ -1,0 +1,3251 @@
+CHERI ALLIANCE — CONSOLIDATED CONTENT, TEMPLATE & FORMS SPECIFICATION
+VERSION 5.3 | 20 OCTOBER 2026 | PROPOSED TARGET (NOT IMPLEMENTED)
+SOURCE: https://github.com/adam-3bian/adam-3bian.github.io
+
+PURPOSE
+- One authoritative specification; no companion file required.
+- Lists + full YAML examples + ASCII wireframes. Minimal narrative.
+- Common rules appear once. Entity sections contain only entity differences.
+- Forms + multi-day event schedule explicitly included.
+- Routing-only `_redirects` collection; no list page; minimal redirect output.
+- Simple, portable Kramdown Markdown contract for ALL authored bodies.
+- Preserve inline image Kramdown classes: .image-left, .image-right, .image-full.
+- Consistent 76-character ASCII wireframes for every layout family.
+- All relationships belong in content front matter; no relationship data file.
+- Multiple simultaneous employers/affiliations are a normal case; no forced primary.
+
+CONTENTS
+01  Naming, collection mapping and paths
+02  Shared front matter, property naming, navigation and assets
+03  Relationships and generated inverse views
+04  YAML form definitions and rendering
+05  Shared layout, accessibility and simple Kramdown authoring rules
+06  Post / Posts
+07  Event / Events (includes multi-day schedule)
+08  Speaker / Speakers
+09  Member / Members
+10  Paper / Papers
+11  Products / Product
+12  Repositories / Repository
+13  Working Group / Working Groups
+14  Guide / Guides
+15  Policy / Policies
+16  Redirects / Redirect (routing-only; NO listing page)
+17  Ordinary Markdown pages (standard, landing, form)
+18  Validation and migration checklist
+
+LEGEND
+- [R] required; [O] optional, omit if absent; [D] derived at render/build.
+- M:1 = many records point to one canonical parent. 1:M = computed inverse.
+- M:N = associations listed once in the owning record's front matter.
+- Organisation affiliations may overlap; multiple CURRENT employers are expected.
+- YAML samples show representative data; do not invent links or affiliations.
+- Slugs and URLs in examples are illustrative unless verified separately.
+
+
+
+==============================================================================
+01 — NAMING / FILES / TEMPLATE MAPPING
+==============================================================================
+
+CANONICAL MAPPING
+COLLECTION       LIST LAYOUT            DETAIL LAYOUT
+_posts           lists/posts            details/post
+_events          lists/events           details/event
+_people          lists/speakers         details/speaker
+_organisations   lists/members          details/member
+_papers          lists/papers           details/paper
+_products        lists/products         details/product
+_repositories    lists/repositories    details/repository
+_groups          lists/working-groups   details/working-group
+_guides          lists/guides           details/guide
+_policies        lists/policies         details/policy
+_redirects       NONE                   plugin redirect.html (minimal HTML)
+
+- Ten editorial/content template families (10 list layouts + 10 detail layouts).
+- The People/Speakers and Organisations/Members layouts MUST also work for
+  unfiltered generic directories and non-speaker/non-member detail records.
+  Layout filenames are historical names, not eligibility rules (see 17.6).
+- One routing-only `_redirects` collection (zero lists; zero normal details).
+- Plugin redirect output uses `_layouts/redirect.html` if customised.
+
+Jekyll built-in posts = site.posts. Never create a custom _news or a
+custom collections entry for posts. Existing _news -> migrate to _posts.
+
+TARGET DIRECTORY TREE
+_layouts/
+  default.html
+  lists/
+    posts.html events.html speakers.html members.html papers.html
+    products.html repositories.html working-groups.html guides.html policies.html
+  details/
+    post.html event.html speaker.html member.html paper.html
+    product.html repository.html working-group.html guide.html policy.html
+  redirect.html               # plugin-owned redirect output (no site chrome)
+  page/
+    standard.html landing.html form.html
+_includes/
+  header.html footer.html breadcrumbs.html form-from-data.html
+  form-fields.html newsletter-cta.html related-content.html
+_data/
+  forms.yml footer_categories.yml
+pages/
+  <category>/<subcategory>/<page>.md
+  <category>/index.md               # category landing exception
+  index.md                          # homepage exception
+_posts/YYYY-MM-DD-<slug>.md
+_events/<slug>.md
+_people/<slug>.md
+_organisations/<slug>.md
+_papers/<slug>.md
+_products/<slug>.md
+_repositories/<slug>.md
+_groups/<slug>.md
+_guides/<slug>.md
+_policies/<slug>.md
+_redirects/<legacy-route-slug>.md   # permalink = old public URL
+assets/images/
+  <category>/<subcategory>/<page>/
+    hero.webp diagram.svg screenshot.webp ...
+  common/
+    shared-logo.svg shared-diagram.svg ...
+
+RULES
+- Collection directory PLURAL; list layout PLURAL; detail layout SINGULAR.
+- `details/speaker` is a generic person-capable renderer: show Speaker badges,
+  talk-specific facts and calls to action only if `person.roles` contains speaker.
+  Otherwise use neutral Person/profile copy, never falsely label a speaker.
+- `details/member` is a generic organisation-capable renderer: show Member
+  badges/tier only for active members; non-members have neutral Organisation
+  detail rendering. `lists/speakers` and `lists/members` similarly support
+  `listing.filter: all` with neutral titles/card links. See Sections 08, 09, 17.6.
+- Post filenames YYYY-MM-DD-<slug>.md; post slug excludes date prefix.
+- All other Markdown filenames lowercase kebab-case, .md only.
+- `_redirects` records are exceptions: no list layout, normal detail layout,
+  title/summary/navigation/image/entity group, forms or Markdown body.
+- Redirect `permalink` is the OLD route; `redirect_to` is the NEW target.
+- Redirects are generated as minimal HTML documents, not HTTP 301/302.
+- Front-matter field keys snake_case; UK English (`organisation`, `programme`).
+- Jekyll layout references: `lists/...`, `details/...`, `page/...`.
+- List files live under pages/<category>/<subcategory>/<page>.md.
+- Detail files live under the collection directory, NOT pages/.
+- All page/entity images live under their navigation path and item slug.
+- Common images used by several pages live in assets/images/common/.
+- Image paths DO NOT imply URL changes; use permalink to preserve URLs.
+- New paths have no spaces; case-sensitive, filename/pointer check.
+- _posts is special: set post permalink globally or per record, preserving /news/<slug>/.
+- Product records live in `_products`; Repository records live in `_repositories`.
+- New canonical routes use /products/* and /repositories/*.
+- Every migrated record with an old route MUST have ONE verified `_redirects`
+  mapping unless its original permalink is retained without change:
+  /hardware/<slug>/ -> /products/<slug>/
+  /software/<slug>/ -> /repositories/<slug>/
+- Legacy directory URLs /hardware/ and /software/ also use `_redirects`.
+- Do NOT additionally put redirect_from on the target page for the SAME path;
+  duplicate generated output is forbidden. `_redirects` is authoritative.
+- Enable and test `jekyll-redirect-from` under GitHub Pages/Jekyll.
+- Audit existing `_layouts/redirect.html`: it currently uses the legacy scalar
+  page.redirect, while the plugin custom-layout contract is page.redirect.to.
+  Use the plugin default layout or adapt the custom layout to the plugin API.
+- Update `_config.yml` collections / defaults / navigation as part of migration.
+- Preserve old routes for records RECLASSIFIED as ordinary pages as well.
+- Source types that are not bona fide Products/Repositories require explicit
+  mapping; do not drop certification, technology overview or ecosystem pages.
+
+_CONFIG COLLECTION EXCERPT — replace old hardware/software entries (target)
+collections:
+  products:
+    output: true
+    permalink: /products/:name/
+  repositories:
+    output: true
+    permalink: /repositories/:name/
+  redirects:
+    output: true
+
+- Redirect files each supply explicit `permalink`; do not use auto-generated
+  /redirects/:name/ routes for former public URLs.
+- Include matching `defaults` for new collection types/layouts.
+- Drop old collection config only after all content/redirects are accounted for.
+- Do not declare Products, Repositories or Redirects with output: false.
+- Confirm the redirect plugin loads in local and GitHub Pages builds;
+  the existing Gemfile declares jekyll-redirect-from.
+- Redirect documents must not show in search, nav menus or the sitemap.
+
+EXAMPLE SOURCE / ASSET PAIR
+pages/build/technology/spatial-memory-safety.md
+assets/images/build/technology/spatial-memory-safety/bounds.svg
+
+_events/cheritech26.md
+assets/images/news-and-events/events-and-archive/cheritech26/hero.webp
+
+_posts/2026-07-29-example-news.md
+assets/images/news-and-events/news-and-analysis/example-news/hero.webp
+
+
+
+==============================================================================
+02 — SHARED FRONT MATTER / PROPERTY NAMING / NAVIGATION / MEDIA
+==============================================================================
+
+DETAIL BASE — add exactly ONE corresponding semantic entity group
+---
+layout: details/<entity-template>
+title: "Page title"
+summary: "Summary used by detail and list cards."
+navigation:
+  header:
+    category: "Build"
+    subcategory: "Platforms"
+image:
+  src: "/assets/images/build/platforms/<slug>/hero.webp"
+  alt: "Meaningful description"
+<entity_group>: {}
+resources:
+  - type: documentation
+    label: "Documentation"
+    url: "https://example.org/docs/"
+forms: [contact]
+---
+# Remove optional image/resources/forms entirely when not used.
+# Placeholder keys in this BASE example are schematic; entity YAML below parses.
+
+LIST BASE — use list-specific YAML in Sections 06–15
+---
+layout: lists/<plural-template>
+title: "Directory title"
+summary: "Optional listing introduction"
+permalink: "/existing-public-url/"
+navigation:
+  header:
+    category: "Build"
+    subcategory: "Platforms"
+listing:
+  collection: products
+---
+
+NAVIGATION — page-level, explicit
+navigation:
+  header:
+    category: "CHERI Alliance"
+    subcategory: "Leadership"
+  footer:
+    category: "CHERI Alliance"
+
+- Header category + subcategory = page hierarchy/breadcrumb context.
+- Header metadata does NOT automatically add every detail to mega-menu.
+- Category landing may omit header.subcategory.
+- Footer metadata = ONLY category. OMIT `navigation.footer` if not linked.
+- No footer.enabled, footer.label, footer.order, footer.subcategory.
+- Footer link text = page.title; target = page.url/permalink.
+- Footer columns/order centrally declared; destination links NOT duplicated:
+
+_data/footer_categories.yml
+- title: Updates
+- title: CHERI Alliance
+- title: Legal
+
+- Footer renderer gathers page/collection records with footer.category.
+- Filter draft/unpublished/redirect/duplicate records; sort links by title.
+- Socials (Slack, LinkedIn, Mastodon, GitHub, YouTube) globally managed.
+- Newsletter CTA pre-footer; not confused with forms references.
+- Breadcrumbs use page hierarchy; never invent destination URLs.
+
+HEADER CATEGORY / SUBCATEGORY SET
+Discover CHERI : Why CHERI | Understand CHERI | Resources
+Adopt          : Business Case | Assurance & Adoption | Policy
+Build          : Software Developers | Technology | Platforms | Software Ecosystem
+CHERI Alliance : About & Governance | Leadership | Membership | Legal & Policies
+News & Events  : News & Analysis | Events & Archive | People & Opportunities
+
+CATEGORY / SUBCATEGORY PATH SLUGS
+Discover CHERI / Why CHERI             -> discover/why-cheri
+Discover CHERI / Understand CHERI      -> discover/understand
+Discover CHERI / Resources             -> discover/resources
+Adopt / Business Case                  -> adopt/business-case
+Adopt / Assurance & Adoption           -> adopt/assurance-and-adoption
+Adopt / Policy                         -> adopt/policy
+Build / Software Developers            -> build/software-developers
+Build / Technology                     -> build/technology
+Build / Platforms                      -> build/platforms
+Build / Software Ecosystem             -> build/software-ecosystem
+CHERI Alliance / About & Governance    -> alliance/about-and-governance
+CHERI Alliance / Leadership            -> alliance/leadership
+CHERI Alliance / Membership            -> alliance/membership
+CHERI Alliance / Legal & Policies      -> alliance/legal-and-policies
+News & Events / News & Analysis        -> news-and-events/news-and-analysis
+News & Events / Events & Archive       -> news-and-events/events-and-archive
+News & Events / People & Opportunities -> news-and-events/people-and-opportunities
+
+PROPERTY NAMING — ONE CANONICAL RULE
+- Group genuine concepts under a named object, as with navigation.header.
+- Within each object, use snake_case for an indivisible property name.
+- Repeated records are YAML sequences; document paths with [] notation.
+- Do not turn each English word into another level of nesting.
+- Do not use dotted YAML keys such as `event.sessions.title:`; dot paths are
+  only documentation notation, not literal YAML property names.
+- Singular semantic entity containers: post, event, person, organisation,
+  publication, product, repository, working_group, guide, policy.
+- Plural repeating fields: schedule[], sessions[], presentations[], fields[],
+  resources[], forms[], roles[], focus_areas[], prerequisites[].
+- Event programme hierarchy: event.schedule[].date,
+  event.schedule[].sessions[].title and
+  event.schedule[].sessions[].presentations[].title.
+- Never flatten a day's session as event_session_title or event.sessions.title.
+- Cross-entity associations are nested in the owning record front matter,
+  e.g. event.speakers[], person.organisations[], publication.authors[].
+- A single descriptive key may use snake_case (job title, date, etc.); choose
+  nesting for repeated records, roles, and meaningful composite objects.
+
+UNDERSCORE AUDIT — ACCEPT / NEST / RETAIN COMPATIBILITY
+  KEY / PATH                               DECISION
+  navigation.header.category               keep: semantic hierarchy
+  navigation.footer.category               keep: footer hierarchy
+  event.schedule[].sessions[].title        keep: sessions nested under day
+  event.organisers[].organisation          list: MULTIPLE organising organisations
+  person.organisations[].organisation      list: MULTIPLE organisations per person
+  person.organisations[].positions[].title title for a specific organisation role
+  person.organisations[].positions[].status current/past independently per role
+  working_group                            keep: canonical entity identifier
+  organisation.membership.is_member        keep: distinct membership flag
+  organisation.membership.founding_member  keep: distinct membership flag
+  working_group.focus_areas                keep: one taxonomy list
+  guide.estimated_minutes                  keep: scalar duration with unit
+  guide.primary_product                    keep: M:1 product reference
+  landing.content_group                    keep: one group slug
+  landing.card_style                       keep: one presentation preset
+  form.fields[].min_length                 keep: field validation limit
+  form.privacy_url                         keep: URL field
+  date + end_date                          keep: Jekyll compatibility
+  redirect_to                              keep: redirect plugin compatibility
+  policy.dates.effective/reviewed          keep: date group
+  form.submission.label                    keep: submission display label
+
+  OLD RELATIONSHIP STORAGE                 NEW OWNER / FRONT-MATTER PATH
+  event_speakers / events.speakers         event.speakers[]
+  event_organisations                      event.organisers[] / event.partners[]
+  person_affiliations                      person.organisations[]
+  paper_authors                            publication.authors[]
+  post.author / post_coauthors             post.authors[]
+  product_repositories                     product.repositories[]
+  related_content                          related[] on source record
+
+- Do not create `_data/relationships.yml`, mirrored foreign-key arrays or
+  an extra join/relationship collection. No duplicate authoritative lists.
+- `event.schedule[].sessions[].title` and `event.speakers[].session` live
+  in the SAME event record; `session` references a session/presentation ID.
+- Source record owns each relationship; destination reverse view is computed.
+- Dates/roles on organisational employment are scoped to THAT affiliation.
+- Two or more concurrently current jobs are normal and remain visible.
+- Existing content uses legacy field names: migrate after Jekyll/Liquid
+  readers have been updated and tested; never silently drop values.
+
+DATA CONTRACT
+[R] title: canonical display title and H1; never duplicate heading/title.
+[R] summary: reusable description for all entity details and ordinary pages.
+[O] summary: list-page introduction; omission renders no intro placeholder.
+[R] navigation.header.category + subcategory (except category landing).
+[R] semantic entity group (post/event/person/organisation/... as defined).
+[O] permalink: used for URL stability; listing page normally explicit.
+[O] date: ISO quoted on posts and events (required for those entities).
+[O] end_date: ISO quoted for single-day events; REQUIRED when event spans
+    multiple days, and validated against authoritative event date span.
+[O] image: {src, alt, fit}; fit: contain for logos; optional.
+[O] resources: flat [{type,label,url}] verified links; event resources may
+    also carry one of `session_id` or `presentation_id` (see Section 07).
+[O] forms: flat [form_key] references into _data/forms.yml.
+[O] navigation.footer.category: only for selected footer links.
+[D] reading time, event status, related cards, prev/next guide.
+- Redirect records use ONLY the routing-only contract in Section 16, not
+  shared entity-detail rules above.
+
+RESOURCE TYPES
+website | documentation | repository | download | pdf | slides | video |
+publication | recording | external
+
+- No hero, eyebrow, aside, actions or view-position fields in front matter.
+- No empty image placeholders; optional fields OMITTED, not empty strings.
+- Markdown contains long-form material; body starts with H2 (template H1).
+- Template prints facts from semantic YAML; don't repeat in body verbatim.
+- `resources` is canonical for document/media/download/source-code and
+  general-purpose external link CTAs (PDF, slides, video, repository, etc.).
+- Domain-specific links remain on their semantic entities: `event.registration`,
+  `organisation.website`, `person.links`, and `form.submission` are allowed
+  and MUST NOT be copied into resources solely to create a CTA.
+- One destination has one authoritative field; the template may render the
+  semantic link as a button without creating a duplicate resource record.
+- `resources` type: repository identifies a repository source-code link.
+- Resources may contain optional `session_id` OR `presentation_id` only on
+  Event records. These map to IDs in that event, are mutually exclusive, and
+  are not independent URLs or foreign-key entity relationships.
+- Never infer a news-to-organisation relationship from an author's employer:
+  Organisation news cards come from explicit `related[]` post links (see 09).
+- Original diagrams, illustrations, official PDFs and alt text retained.
+- Inline body images preserve Kramdown `{: .image-left }`,
+  `{: .image-right }` or `{: .image-full }` placement classes as authored;
+  preserve other existing image fit/crop classes with equivalent CSS.
+- Hero/portrait/logo uses `image:` front matter and layout defaults, while
+  inline image placement lives beside each image in simple Kramdown.
+- Moving assets cannot drop alignment/fit or break alt text and caption context.
+
+
+
+==============================================================================
+03 — RELATIONSHIPS / FRONT-MATTER OWNERSHIP / REVERSE VIEWS
+==============================================================================
+
+RULE: ALL CONTENT RELATIONSHIPS LIVE IN THE OWNER RECORD'S FRONT MATTER.
+- Do not create or read `_data/relationships.yml`.
+- Do not maintain relationship arrays on both sides of the association.
+- Inverse links and cards are GENERATED by querying owning front matter.
+- Use collection slugs as foreign keys; validate every referenced slug.
+- Prefer a scalar where one association is genuinely singular.
+- Use arrays where multiple entities/roles can occur, even simultaneously.
+
+CANONICAL RELATIONSHIP OWNERSHIP
+  Post       post.authors[]                   Person(s), ordered byline
+  Person     person.organisations[]           Organisation(s), incl. jobs
+  Event      event.organisers[]               Multiple organising organisations
+  Event      event.partners[]                 Additional partners/sponsors
+  Event      event.speakers[]                 Person + talk/session + role
+  Paper      publication.authors[]            Ordered Person(s) / text credits
+  Product    product.manufacturer             Organisation, if single/known
+  Product    product.repositories[]           Compatible repositories + status
+  Repository repository.maintainers[]         Maintaining organisations
+  Group      working_group.coordinator         Organisation, if single/known
+  Guide      guide.primary_product             Product, if single/known
+  Policy     policy.owner                      Organisation, if single/known
+  Any page   related[]                         Directed typed content links
+
+PERSON AFFILIATIONS: MULTIPLE CURRENT EMPLOYERS ARE NORMAL
+- Use `person.organisations[]`: ONE item for each organisation.
+- Each item has `organisation` (slug), `relationship` (employment |
+  research | consultancy | governance | other), `positions[]`.
+- Every position has `title`, `status` (current | past) and optional
+  `start_date` / `end_date` (quoted YYYY-MM-DD); overlapping dates ALLOWED.
+- No required or implied `primary` flag; no automatic ranking or single
+  employer fallback. Display ALL current affiliations, then historical ones.
+- One organisation can have multiple roles/positions, including overlapping.
+- Organisational name/logo/URL come from `_organisations/<slug>.md`.
+- Do not confuse membership with employment: non-member employers are valid.
+- An Organisation's People list is GENERATED by reverse person.organisations.
+- A person may also be a speaker, author, director or organiser; these
+  are separate roles and do not imply exclusive employment.
+- Governing Board membership/order also belongs in Person front matter:
+  person.governance.board_order: integer, board_role: optional text.
+  Do not use `_data/governing-board.yml` as a live roster after migration.
+
+EXAMPLE: TWO SIMULTANEOUS EMPLOYMENTS (ILLUSTRATIVE PERSON ONLY)
+FILE: _people/example-speaker.md
+---
+layout: details/speaker
+title: "Example Speaker"
+summary: "Example of two current employers at the same time."
+navigation:
+  header:
+    category: "News & Events"
+    subcategory: "People & Opportunities"
+person:
+  roles: [speaker]
+  organisations:
+    - organisation: university-of-cambridge
+      relationship: employment
+      positions:
+        - title: "University researcher"
+          status: current
+          start_date: "2023-01-01"
+    - organisation: example-private-company
+      relationship: employment
+      positions:
+        - title: "Company technical director"
+          status: current
+          start_date: "2024-05-01"
+---
+
+- `example-private-company` is a PLACEHOLDER, not a claimed affiliation.
+- Both affiliations are current on this sample record, despite overlap.
+- Dates are optional; do not invent real employment dates or job titles.
+- For a real Person, every organisation must resolve or be explicitly held
+  for editorial review. Do not fabricate a company/profile just to link it.
+
+EVENT ORGANISERS + SPEAKERS — EVENT OWNS BOTH ARRAYS
+  event.organisers[]:
+    - organisation: slug
+      role: organiser | co_organiser | host
+  event.partners[]:
+    - organisation: slug
+      role: collaborator | sponsor | exhibitor | partner
+  event.speakers[]:
+    - person: slug
+      role: speaker | moderator | panellist | host
+      session: id-of-session-or-presentation
+
+- A single event can have MULTIPLE organiser rows. Do not use organiser: slug.
+- Speaker participation is one item per Person + session/presentation + role.
+- `event.speakers[].session` resolves into this event's schedule; positions
+  come from YAML array order, optionally with an `order` scalar if needed.
+- One Person can speak in several slots on the same event.
+- Avoid copying speaker information into schedule.sessions[].presentations[];
+  the programme contains talk titles/times and `event.speakers[]` links people.
+- Event's `organisers` and `partners` are distinct kinds; don't duplicate the
+  same role on both arrays. One entity may have genuinely different roles.
+- Event speaker cards, Organisation event links, and Person event links are
+  generated by reverse queries, not hand-maintained backreferences.
+- Example Event slugs `semi`, `example-presenter`, `example-moderator`
+  are illustrative references: resolve against real records before launch.
+- A sample is not evidence of any individual's real employment or event role.
+
+PAPER / POST AUTHORS
+- `publication.authors[]`: ordered entries `{person: slug}`; use `{name: ...}`
+  only for real external authors without a Person profile.
+- `post.authors[]`: same ordered entries; may add a documented `role`.
+- Order is the YAML sequence order, not duplicated `position` fields.
+- Person publication/news views are GENERATED by searching author lists.
+- Never invent a Person page to make an author relationship work.
+
+PRODUCT / REPOSITORY COMPATIBILITY
+- The Product owns `product.repositories[]` with `{repository, compatibility}`.
+- Repository's Products panel is an automatic inverse of that same list.
+- Repositories do NOT also store a products[] list.
+- `repository.maintainers[]` permits several maintaining organisations.
+
+GENERIC RELATED LINKS (OPTIONAL)
+---
+related:
+  - type: guide
+    slug: choose-a-platform
+    relation: related
+  - type: event
+    slug: cheritech26
+    relation: featured
+---
+
+- `related[]` belongs to the source PAGE/ENTITY front matter.
+- Do not mirror it on the destination. Reverse links are derived if wanted.
+- For Organisation Related News, the Organisation owns explicit `related[]`
+  entries with `type: post`; do NOT infer news from staff bylines, affiliation,
+  or a post that merely mentions the Organisation. Show no panel if absent.
+- Allowed type names map to canonical collections and ordinary page records;
+  validate type, slug and destination public URL.
+- If category filters create overlapping views, do not duplicate records.
+
+VALIDATION
+[ ] Every relationship slug references an output record.
+[ ] Every `person.organisations[]` item has an organisation and positions.
+[ ] A Person may have two or more `status: current` employment entries.
+[ ] No primary employer is auto-selected or required.
+[ ] Overlapping employment/affiliation date spans are accepted.
+[ ] Current and historical affiliations render with correct labels.
+[ ] Event organisers can contain two or more organisations.
+[ ] Event speaker session/presentation IDs exist and are unique per event.
+[ ] Reverse views on People/Organisations/Events/Papers derive correctly.
+[ ] Product compatibility / author ordering are read from owner record.
+[ ] Duplicated same-role associations and orphan references rejected.
+
+
+=============================================================================
+04 — YAML FORMS / CONFIGURATION / VALIDATION / WIREFRAMES
+==============================================================================
+
+LOCATIONS
+_data/forms.yml                 # canonical reusable form definitions
+page/record front matter       # forms: [contact] (references only)
+_includes/form-from-data.html  # renderer for wrapper/actions/modes
+_includes/form-fields.html     # renderer for field types
+_layouts/page/form.html        # dedicated form page (optional)
+
+PAGE FRONT MATTER REFERENCE
+---
+layout: page/form
+title: "Contact the Alliance"
+summary: "Ask about membership, working groups or CHERI technology."
+permalink: "/alliance/membership/contact/"
+navigation:
+  header:
+    category: "CHERI Alliance"
+    subcategory: "Membership"
+  footer:
+    category: "CHERI Alliance"
+forms:
+  - contact
+---
+
+CANONICAL DATA FILE — _data/forms.yml
+# Actual mode must match deployment capability; external URLs are examples
+# of already-published contact/subscription destinations.
+contact:
+  id: contact
+  title: "Contact the Alliance"
+  description: "Send an enquiry about CHERI."
+  privacy_url: "/policies/privacy/"
+  submission:
+    mode: external
+    url: "https://cheri-alliance.org/contact/#contact_form"
+    label: "Open the Alliance contact form"
+  fields:
+    - name: topic
+      type: select
+      label: "Request"
+      required: true
+      width: full
+      placeholder: "Select a topic"
+      options:
+        - {value: membership, label: "Membership"}
+        - {value: working_group, label: "Working group"}
+        - {value: media, label: "Press enquiry"}
+        - {value: other, label: "Other"}
+    - name: first_name
+      type: text
+      label: "First name"
+      required: true
+      width: half
+      autocomplete: given-name
+    - name: last_name
+      type: text
+      label: "Last name"
+      required: true
+      width: half
+      autocomplete: family-name
+    - name: email
+      type: email
+      label: "Email address"
+      required: true
+      width: full
+      autocomplete: email
+    - name: message
+      type: textarea
+      label: "Your enquiry"
+      required: true
+      rows: 6
+      min_length: 10
+newsletter:
+  id: newsletter
+  title: "Quarterly newsletter"
+  description: "Updates, technical developments and upcoming events."
+  submission:
+    mode: external
+    url: "https://cheri-alliance.kit.com/subscribe"
+    label: "Subscribe via the Alliance mailing list"
+  fields:
+    - name: email
+      type: email
+      label: "Email address"
+      required: true
+      autocomplete: email
+      width: full
+
+# Other form keys (event_enquiry, speaker_proposal, membership_enquiry)
+# require an actual definition and verified destination before use.
+
+SCHEMA
+form.id                 unique key on same page, suitable HTML id
+form.title              visible H2 / accessible heading
+form.description        accessible guidance
+
+form.privacy_url        optional, expected for personal data collection
+form.submission.mode    external | post | disabled
+form.submission.url     external target OR verified POST endpoint
+form.submission.label   external CTA / POST submit button text
+form.submission.method  post only when mode: post (default POST)
+form.submission.*       success/error messages, CSRF/security as integration needs
+form.fields[]           one field definition per name
+field.name              unique; provider-compatible exact key
+field.type              text | email | tel | textarea | select | checkbox |
+                        radio | hidden
+field.label             accessible label (hidden exception)
+field.required          boolean
+field.width             full | half
+field.placeholder       optional, NEVER a substitute for label
+field.help              optional helper text / aria-describedby
+field.autocomplete      optional HTML autocomplete token
+field.options[]         select/radio [{value,label}]
+field.rows              textarea only, positive integer
+field.min_length        text/textarea integer, if supported
+field.max_length        text/textarea integer, if supported
+field.pattern           optional, careful accessibility/errors
+field.default           optional non-sensitive default value
+
+SUBMISSION MODES
+external  Render CTA to published form; DO NOT show a fake working local form.
+          Any declared fields[] in external mode are non-rendered provider
+          metadata for migration/documentation only, never local inputs.
+post      Render <form method="post" action="VERIFIED_ENDPOINT"> with validation,
+          clear success/error messages, safe encoding, CSRF/spam controls,
+          privacy, and real backend. Do not store secrets in public YAML.
+disabled  Render an explicitly labelled preview. No functional submit button.
+
+LIQUID LOOKUP — shared across all template families
+{% for form_key in page.forms %}
+  {% assign form_data = site.data.forms[form_key] %}
+  {% if form_data %}
+    {% include form-from-data.html form=form_data %}
+  {% endif %}
+{% endfor %}
+
+FIELD RENDERER RESPONSIBILITIES
+- Prefix input IDs with page/form key; <label for> matches input ID.
+- Escape all data in HTML; whitelist supported input types.
+- Distinct error messages; required validation on server for POST mode.
+- Checkbox/radio/hidden not supported by current form-fields.html: implement.
+- Current legacy _data/forms.yml uses `submit`, `demo`, `size`, and provider
+  field names such as `first-name`; map these during migration.
+- No submission should be implied for static preview-only forms.
+
+FORM WIREFRAME — EXTERNAL MODE
++--------------------------------------------------------------------------+
+| FORM HEADING   Contact the Alliance                                      |
+| Description / privacy notice                                             |
++--------------------------------------------------------------------------+
+| [ Open the published Alliance contact form  -> ]                         |
+| External provider handles data collection and submission                 |
++--------------------------------------------------------------------------+
+
+FORM WIREFRAME — POST MODE (ONLY WITH VERIFIED ENDPOINT)
++--------------------------------------------------------------------------+
+| FORM HEADING   Contact the Alliance                                      |
+| Description / privacy notice                                             |
++--------------------------------------------------------------------------+
+| REQUEST TOPIC    [ Select a request                         v ]          |
+| FIRST NAME       [                      ]    LAST NAME [             ]   |
+| EMAIL ADDRESS    [                                                ]      |
+| MESSAGE          [                                                ]      |
+|                  [                                                ]      |
+| [ Send enquiry ]                                                         |
++--------------------------------------------------------------------------+
+| Inline field errors / actual server response / privacy information       |
++--------------------------------------------------------------------------+
+
+==============================================================================
+05 — SHARED LAYOUTS / CONTENT / DISPLAY RULES
+==============================================================================
+
+GLOBAL FRAME
++--------------------------------------------------------------------------+
+| SITE HEADER   [Discover]  [Adopt]  [Build]  [Alliance]  [News & Events]  |
+| BREADCRUMBS   Home / Category / Subcategory / Title                      |
++--------------------------------------------------------------------------+
+| PAGE TITLE + SUMMARY / OPTIONAL RIGHT-HAND IMAGE                         |
++--------------------------------------------------------------------------+
+| MAIN MARKDOWN CONTENT                        | SEMANTIC FACTS            |
+| H2/H3, tables, inline images                 | Resource links / CTA      |
+| Code blocks, notes, diagrams                 | Not sticky                |
++--------------------------------------------------------------------------+
+| RELATED CONTENT / NEXT STEP                                              |
++--------------------------------------------------------------------------+
+| NEWSLETTER CTA   Stay connected with CHERI                               |
+| FOOTER  Updates | CHERI Alliance | Legal | Socials | Copyright           |
++--------------------------------------------------------------------------+
+
+EXCEPTIONS
+- Post: headline + metadata -> FULL-WIDTH FEATURE IMAGE -> centered article;
+        NO fixed/right facts panel.
+- Guide: title + horizontal level/time/platform strip -> documentation steps;
+         NO sticky guide navigation; no compulsory right facts panel.
+- Policy: compact no-image header; long legal text left, document facts right.
+- Paper, Group: no image required; avoid decorative stock photography.
+- Event, Speaker, Member, Product, Repository: hero image/logo on RIGHT.
+- Single H1 from title; summary rendered once; body begins with Markdown H2.
+- Right facts panel (where used) 70:30 main/aside, NON-STICKY.
+- Mobile: title -> image -> essential facts/action -> content -> related -> CTA/footer.
+- News/Event card images 16:9; people/member logo square; product photographs uncropped.
+- No empty facts/image slots; content-only fallback when assets missing.
+- Consistent Poppins everywhere; literal code may use monospace.
+- Deep ink #07131B; teal #135771; mint #81E0D4; soft #F3F6F7;
+  fault coral #EE665D. Respect contrast and focus indicators.
+- Existing real CHERI technical diagrams/logos; no generic cyber stock.
+- Keyboard nav, skip link, semantic headings, alt text, reduced motion.
+- Date/time rendered with timezone when relevant; accessible session tables.
+- Registration and form CTAs only if real verified targets exist.
+
+
+
+05.1 — SIMPLE KRAMDOWN MARKDOWN AUTHORING STANDARD
+
+ALL `pages/**/*.md` AND COLLECTION DETAIL MARKDOWN BODIES
+- One YAML front matter block at top (--- ... ---); body begins after it.
+- `title`, `summary`, navigation, image, entity facts, links/resources,
+  schedule and forms live in front matter or reusable _data, NOT repeated.
+- Template generates H1/title, summary, breadcrumbs, hero/facts, schedules,
+  related cards, forms, global header, footer and newsletter CTA.
+- Markdown BODY starts with H2 (`##`); use H3 (`###`) for subsections.
+- Do not write a second H1 (`#`) in body; do not skip heading levels.
+- Separate paragraphs, headings, lists, tables and images with blank lines.
+- Use one Markdown link per URL, meaningful link text; never raw link buttons.
+- Use simple relative-to-root site URLs `/guides/.../` for internal links.
+- Standard image form: `![Meaningful alt text](/assets/images/.../file.webp)`.
+- KEEP image-specific Kramdown classes when used for alignment or fit:
+    .image-left   float/align the inline image to the left
+    .image-right  float/align the inline image to the right
+    .image-full   full-width inline image
+  Other existing image-only crop/fit classes must also be preserved and
+  remapped to working CSS during migration, not silently stripped.
+- The ONE Kramdown attribute-list exception is IMAGE PLACEMENT/FIT; attach
+  immediately to its image on the next line:
+    ![Diagram](/assets/images/build/technology/diagram.svg)
+    {: .image-left }
+  Examples: `{: .image-right }`, `{: .image-full }`,
+  `{: .image-full .image-contain }` (if both existing styles are needed).
+- For PRIMARY hero/portrait/logo image: front-matter `image.src/alt/fit`;
+  template controls hero position. Do not duplicate a hero image in Markdown.
+- Decorative image? Set image handling in template/front matter; do not
+  insert an empty-alt hero/portrait into the Markdown body.
+- Tables: ordinary pipe tables with a separator row; short content only.
+- Code: fenced code blocks using native Kramdown `~~~ language` fences,
+  lowercase syntax languages; inline code uses single backticks.
+- Use `-` for bullet lists; `1.` for numbered steps; normal `**bold**`,
+  `*emphasis*`, `> quote`, `---` horizontal rules when necessary.
+- No raw HTML, inline CSS, `<div>`, `<table>`, `<img>`, `<iframe>`, script,
+  arbitrary attributes or hand-built layout/grid/card markup in page bodies.
+- No general per-paragraph Kramdown attribute lists: `{: .class }`,
+  `{: #id }`, `{: .source-breadcrumbs }`, etc. Only IMAGE-specific
+  alignment / fit / crop classes are permitted; keep any existing such classes.
+- Do not apply alignment classes to unrelated paragraphs or cards.
+- No Jekyll/Liquid logic in content bodies (`{% include ... %}`,
+  `{% assign ... %}`, executable `{{ ... }}`); template logic stays in layouts.
+  One narrow exception: `{% raw %}` / `{% endraw %}` may wrap literal Liquid
+  syntax in code examples so GitHub Pages/Jekyll 3 does not execute it.
+  They are escape delimiters, NOT content components or page logic.
+- Never handwrite breadcrumbs, repeated card directories or call-to-action
+  buttons; templates and front matter generate these.
+- Use resource records for download/PDF/repository URLs, not duplicate
+  button markup in body. Inline contextual links remain allowed.
+- No copied event programme tables: event.schedule is sole timetable source.
+- TARGET RUNTIME: the GitHub Pages gem currently resolves Jekyll 3.10.0;
+  Jekyll 3 does NOT support `render_with_liquid: false`. Do not rely on it.
+- In Markdown content, wrap any fenced/inline code containing literal Liquid
+  tokens (`{{`, `{%`) in `{% raw %}` ... `{% endraw %}`. These are the
+  ONLY permitted Liquid delimiters in authored bodies; verify exact output.
+  If the literal example itself contains `{% endraw %}`, use a separately
+  linked code asset or an independently tested escaping strategy.
+- Test protected snippets with `bundle exec jekyll build` using the actual
+  github-pages Gemfile. Do not rely on a local Jekyll 4-only option.
+- Kramdown config remains `markdown: kramdown`, `kramdown.input: Kramdown`.
+
+CANONICAL MARKDOWN BODY (EXAMPLE — BODY ONLY)
+
+## Overview
+
+CHERI capabilities can help protect memory accesses.
+
+## Key properties
+
+- Hardware-enforced bounds
+- Reduced memory-safety risk
+- Software integration options
+
+## Comparison
+
+| Feature | Purpose |
+|---------|---------|
+| Bounds  | Restrict memory access |
+| Tags    | Protect capability validity |
+
+## Getting started
+
+1. Choose a [product](/products/).
+2. Follow a [guide](/guides/).
+
+~~~ shell
+make build
+~~~
+
+If documenting literal Liquid syntax, wrap its fenced example as follows
+(the escape tags will not appear in rendered output):
+
+{% raw %}
+~~~ liquid
+{{ page.title }}
+~~~
+{% endraw %}
+
+![Capability bounds diagram](/assets/images/build/technology/spatial-memory-safety/bounds.svg)
+{: .image-full }
+
+![Memory illustration](/assets/images/common/memory-safety.webp)
+{: .image-right }
+
+![CHERI board photograph](/assets/images/build/platforms/sonata/board.webp)
+{: .image-left }
+
+## Further reading
+
+See the [technical guides](/discover/resources/documentation-and-guides/).
+
+LEGACY-MARKDOWN MIGRATION
+- Remove existing source-breadcrumbs numbered lists from Markdown.
+- Remove `# Title`, `.page-hero-title`, `.page-hero-summary` source markup;
+  extract title/summary into front matter without dropping meaningful prose.
+- Replace `.entity-facts` definition lists with semantic front matter;
+  long-form explanation stays in Markdown.
+- Replace `.collection-card__*`, manually duplicated directory entries
+  and source-derived HERO presentation with templates/front matter.
+- PRESERVE inline-image alignment attribute lists:
+  `{: .image-left }`, `{: .image-right }`, `{: .image-full }`.
+  Preserve established image crop/contain classes and the rendered alignment;
+  do not remove or replace classes merely to simplify Kramdown.
+- When promoting a body image to canonical `image:` hero metadata, retain
+  the intended hero presentation; delete only the duplicate body rendering.
+- Preserve Kramdown-only syntax needed for content that cannot yet migrate,
+  but track such exceptions; never silently delete an original asset/link.
+
+HEADING / FRAGMENT RULES — IMPORTANT WITH CURRENT JEKYLL CONFIG
+- Existing `_config.yml` has `kramdown.auto_ids: false`. Without markup,
+  plain `## Heading` may have NO automatic fragment/anchor id.
+- TARGET: enable `auto_ids: true` after checking current fragment URLs,
+  OR have the shared renderer generate stable IDs independently.
+- Preserve old documented `#fragment` links in an explicit alias map
+  (`_data/anchor-aliases.yml` if retained), not Kramdown attribute lists.
+- Validate internal/external section-anchor links before and after migration.
+- Redirect HTML does NOT guarantee preservation of every old hash fragment;
+  add explicit test cases where deep links are used.
+
+KRAMDOWN BODY WIREFRAME
++--------------------------------------------------------------------------+
+| YAML FRONT MATTER                                                        |
+| Title / summary / navigation / entity data / resources / forms           |
++--------------------------------------------------------------------------+
+| MARKDOWN BODY: starts with ## (H2)                                       |
+| Plain paragraphs, ordered/unordered lists, simple pipe tables            |
+| Images with permitted Kramdown alignment classes, code fences            |
++--------------------------------------------------------------------------+
+| TEMPLATES HANDLE: H1, facts, schedule, cards, forms, header/footer       |
++--------------------------------------------------------------------------+
+
+==============================================================================
+06 — POSTS -> POST [COLLECTION: _POSTS]
+==============================================================================
+
+FILES / ROUTES
+Source record: _posts/YYYY-MM-DD-<slug>.md
+Listing source page: pages/news-and-events/news-and-analysis/latest-news.md
+Listing layout: lists/posts
+Detail layout: details/post
+Collection: _posts (built-in Jekyll Posts; site.posts)
+List title: Latest News
+List URL: /news-and-events/news-and-analysis/latest-news/
+Detail URL: /news/<slug>/
+
+DETAIL FRONT MATTER — FULL EXAMPLE
+---
+layout: details/post
+title: "A new ETSI standard could rewrite the memory-safety debate"
+summary: "How a proposed standard frames memory-safety assurance."
+date: "2026-07-29"
+navigation:
+  header:
+    category: "News & Events"
+    subcategory: "News & Analysis"
+image:
+  src: "/assets/images/news-and-events/news-and-analysis/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/hero.png"
+  alt: "ETSI memory-safety standard illustration"
+post:
+  category: standards
+  authors:
+    - person: mike-eftimakis
+  tags: [memory-safety, standards]
+resources:
+  - type: publication
+    label: "Related technical standard"
+    url: "https://www.etsi.org/"
+---
+
+
+DETAIL FIELDS
+REQUIRED   layout, title, summary, date, navigation.header, post.category
+OPTIONAL   image, post.authors[], post.tags, resources, permalink
+DERIVED    reading time (from text); reverse author articles; related posts
+RENDER     category/date/author near headline, wide image, no right panel
+IMAGES     assets/images/news-and-events/news-and-analysis/<slug>/
+
+ENTITY RULES
+- post.category = editorial taxonomy slug
+- post.authors[] = ordered author records with person slug or name credit
+- post.tags = simple tags, not content records
+- date = publication date, top-level for Jekyll sort
+- coauthors belong to the SAME post.authors[] array (in byline order)
+
+DETAIL MARKDOWN H2 SECTIONS
+- Introduction (lede from summary; do not copy it twice)
+- Article H2/H3 sections
+- Inline image/diagram/quotes
+- Links and references
+- Optional sources section
+
+DETAIL ASCII WIREFRAME
++--------------------------------------------------------------------------+
+| SITE HEADER   [Discover]  [Adopt]  [Build]  [Alliance]  [News & Events]  |
+| BREADCRUMBS   Home / Category / Subcategory / Title                      |
++--------------------------------------------------------------------------+
+| ARTICLE CATEGORY  /  DATE  /  AUTHOR  /  READING TIME                    |
+| ARTICLE HEADLINE                                                         |
+| Article summary / standfirst                                             |
++--------------------------------------------------------------------------+
+| [                         FEATURE IMAGE                         ]        |
+| Image spans editorial content width                                      |
++--------------------------------------------------------------------------+
+|            ## Introduction / article sections                            |
+|            Text in a narrow, centred reading column                      |
+|            Images / quotes / diagrams / references                       |
++--------------------------------------------------------------------------+
+| RELATED POSTS   [ Post ]   [ Post ]   [ Post ]                           |
++--------------------------------------------------------------------------+
+| NEWSLETTER CTA   Stay connected with CHERI                               |
+| FOOTER  Updates | CHERI Alliance | Legal | Socials | Copyright           |
++--------------------------------------------------------------------------+
+
+LIST FRONT MATTER — FULL EXAMPLE(S)
+---
+layout: lists/posts
+title: "Latest News"
+permalink: "/news-and-events/news-and-analysis/latest-news/"
+navigation:
+  header:
+    category: "News & Events"
+    subcategory: "News & Analysis"
+  footer:
+    category: "Updates"
+listing:
+  collection: posts
+---
+
+
+LIST NOTES
+SOURCE: site.posts; file names in _posts/YYYY-MM-DD-<slug>.md.
+
+LIST CARD FIELDS / SORT / FILTERS
+LIST CONTENT
+  - Featured image (16:9)
+  - Category
+  - Publication date
+  - Title
+  - Summary
+  - Read article link
+SORT
+  - date desc
+FILTERS
+  - category / year (optional)
+
+LIST ASCII WIREFRAME
++--------------------------------------------------------------------------+
+| SITE HEADER   [Discover]  [Adopt]  [Build]  [Alliance]  [News & Events]  |
+| BREADCRUMBS   Home / Category / Subcategory / Title                      |
++--------------------------------------------------------------------------+
+| LATEST NEWS                                                              |
+| Summary / introduction                                                   |
++--------------------------------------------------------------------------+
+| FILTER / SORT   search / category / year                                 |
++--------------------------------------------------------------------------+
+| [ IMAGE / LOGO ]          | Date  /  Category  /  Title                  |
+|                           | Article summary  /  Read article             |
+|                           | [ View detail  -> ]                          |
++--------------------------------------------------------------------------+
+| [ IMAGE / LOGO ]          | Date  /  Category  /  Title                  |
+|                           | Article summary  /  Read article             |
+|                           | [ View detail  -> ]                          |
++--------------------------------------------------------------------------+
+| PAGINATION / LOAD MORE (when required)                                   |
++--------------------------------------------------------------------------+
+| NEWSLETTER CTA   Stay connected with CHERI                               |
+| FOOTER  Updates | CHERI Alliance | Legal | Socials | Copyright           |
++--------------------------------------------------------------------------+
+
+RELATIONSHIP NOTES
+- Post owns post.authors[] in byline order; Person news list derived by reverse lookup.
+
+
+
+==============================================================================
+07 — EVENTS -> EVENT
+==============================================================================
+
+FILES / ROUTES
+Source record: _events/<slug>.md
+Listing source page: pages/news-and-events/events-and-archive/upcoming-events.md
+Listing layout: lists/events
+Detail layout: details/event
+Collection: _events
+List title: Upcoming Events
+List URL: /news-and-events/events-and-archive/upcoming-events/
+Detail URL: /events/<slug>/
+
+DETAIL FRONT MATTER — FULL EXAMPLE
+---
+layout: details/event
+title: "CHERITech'26"
+summary: "Technical programme connecting CHERI implementations with industry."
+date: "2026-11-12"
+end_date: "2026-11-13"
+navigation:
+  header:
+    category: "News & Events"
+    subcategory: "Events & Archive"
+image:
+  src: "/assets/images/news-and-events/events-and-archive/cheritech26/hero.webp"
+  alt: "CHERITech 2026 event graphic"
+event:
+  format: conference
+  series: cheritech
+  organisers:
+    - organisation: cheri-alliance
+      role: organiser
+    - organisation: semi
+      role: co_organiser
+  timezone: Europe/Berlin
+  # Optional `time_bounds` is for VERIFIED whole-event opening/closing times;
+  # omit it when only a partial public session programme is known.
+  location:
+    venue: "Munich Messe"
+    city: "Munich"
+    country: "Germany"
+  registration:
+    url: "https://discover.semi.org/cheritech26-powered-by-cheri-alliance-registration.html"
+    label: "Register"
+  speakers:
+    - person: example-presenter
+      role: speaker
+      session: can-we-ignore-hardware-security
+    - person: example-moderator
+      role: moderator
+      session: keynotes-day-1
+  schedule:
+    - date: "2026-11-12"
+      label: "Thursday — Day 1"
+      sessions:
+        - id: introduction-day-1
+          type: introduction
+          title: "Introduction to Day 1"
+          start: "13:00"
+          end: "13:05"
+          track: main
+        - id: keynotes-day-1
+          type: keynote
+          title: "Keynotes"
+          start: "13:05"
+          end: "14:20"
+          track: main
+          presentations:
+            - id: can-we-ignore-hardware-security
+              title: "With CHERI, can we afford to ignore hardware security?"
+            - id: introduction-state-of-cheri
+              title: "Introduction and State of CHERI"
+        - id: break-day-1
+          type: break
+          title: "Break and exhibition"
+          start: "14:20"
+          end: "14:30"
+          track: main
+        - id: case-studies-day-1
+          type: session
+          title: "Case studies"
+          start: "14:30"
+          end: "15:25"
+          track: main
+    - date: "2026-11-13"
+      label: "Friday — Day 2"
+      sessions:
+        - id: introduction-day-2
+          type: introduction
+          title: "Introduction to Day 2"
+          start: "10:00"
+          end: "10:05"
+          track: main
+        - id: compartmentalisation-day-2
+          type: session
+          title: "Compartmentalisation"
+          start: "10:05"
+          end: "11:15"
+          track: main
+        - id: break-day-2
+          type: break
+          title: "Break and exhibition"
+          start: "11:15"
+          end: "11:30"
+          track: main
+        - id: software-research-day-2
+          type: session
+          title: "Software and research"
+          start: "11:30"
+          end: "13:25"
+          track: main
+        - id: conclusion-day-2
+          type: closing
+          title: "Conclusion to Day 2"
+          start: "13:25"
+          end: "13:30"
+          track: main
+resources:
+  - type: website
+    label: "Event information"
+    url: "https://electronica.de/en/"
+---
+
+DETAIL FIELDS
+[R] layout, title, summary, date, navigation.header, event.format,
+    event.timezone when schedule times are present.
+[O] end_date (REQUIRED for multi-day events), image,
+    event.series/organisers[]/partners[]/speakers[],
+    event.location/registration/schedule[]/time_bounds and resources.
+    event.time_bounds requires both start/end and event.timezone.
+[D] status from date/end_date + optional event.time_bounds + timezone;
+    event speakers, partners, related events.
+DISPLAY image right; dated facts/registration right; timed multi-day schedule left.
+IMAGES  assets/images/news-and-events/events-and-archive/<slug>/
+
+ENTITY RULES
+- date = START date at top level; end_date = final date
+- event.format = conference/tutorial/webinar/workshop
+- event.series = event series slug or controlled label
+- event.organisers[] = MULTIPLE Organisation slugs with organiser roles
+- event.timezone is the IANA zone; schedule sessions hold local start/end
+- event.location = venue/city/country OR online_url
+- event.registration.url/label = link (omit when inapplicable)
+- status = COMPUTED from event boundaries; no hand-written status
+- event.time_bounds.start/end (both optional as a PAIR) are VERIFIED whole-event
+  opening/closing HH:MM in event.timezone; these are not assumed from an
+  excerpt of the programme and may differ from session start/end times.
+- event.speakers[] = person/role/session references in this front matter
+- programme/sessions = canonical event.schedule YAML; Markdown adds context only
+- session title path = event.schedule[].sessions[].title (NOT event.sessions.title)
+- nested talk title path = event.schedule[].sessions[].presentations[].title
+- resources = optional links to recordings/slides/PDF; attach talk/slot links
+  with one verified `presentation_id` OR `session_id` on a resource entry
+
+MULTI-DAY SCHEDULE DATA DICTIONARY
+- event.schedule: ordered list of DAYS, one entry per date.
+- day.date [R]: quoted YYYY-MM-DD; one timezone for event unless specified.
+- day.label [O]: accessible day title; default computed from date.
+- day.sessions [R per schedule day]: ordered entries.
+- session.id [R]: stable kebab-case ID; UNIQUE within event, including talks.
+- session.type [R]: introduction | session | keynote | talk | panel |
+  workshop | break | networking | closing | exhibition | other.
+- session.title [R]: display heading.
+- session.start/end [R for timed entries]: 24-hour local HH:MM;
+  end after start; for overnight slots use explicit datetime extension.
+- session.track [O]: main, software, hardware, etc.; parallel sessions
+  permitted in different tracks, not overlapping within same track/room.
+- session.room [O]: plain venue room/location.
+- session.description [O]: brief session context.
+- session.presentations [O]: ordered talks within a grouped session.
+- presentation.id [R]: unique kebab-case ID within parent event.
+- presentation.title [R]: talk title.
+- presentation.description [O]: short abstract; full abstracts in Markdown.
+- presentation.start/end [O]: local timing, must fit parent slot.
+- Presentation media [O]: use canonical top-level resources for files, and
+  link by `presentation_id` (talk) or `session_id` (whole session) if scoped.
+  IDs must exist in the SAME event; never set both on one resource item.
+  Render scoped resources at their programme item and/or grouped resources
+  section from that ONE canonical record; never copy URLs into presentations.
+- Resource YAML syntax (SCHEMATIC URL; verify before real publication):
+    resources:
+      - type: slides
+        label: "Presentation slides"
+        url: "https://example.org/example-talk-slides.pdf"
+        presentation_id: can-we-ignore-hardware-security
+- event.speakers[].session points to a session.id OR presentation.id.
+- One event -> many days -> many sessions -> optional presentations.
+- Do not copy speakers into sessions, people profiles or talk Markdown.
+- Event date = earliest schedule day; end_date = latest schedule day WHEN
+  the programme contains all event dates; for a partial published programme,
+  schedule days must fall WITHIN the authoritative top-level date/end_date.
+- `event.time_bounds.start` means the local clock time on top-level `date`;
+  `event.time_bounds.end` means the local clock time on final `end_date`.
+  Require BOTH bounds if either is specified; validate start < end as instants
+  after applying event.timezone. Accept overnight/multi-day events.
+- Event temporal status at current time in the IANA timezone:
+    WITH time_bounds: Upcoming before start instant, Ongoing from start
+    instant until strictly before end instant, Past at/after end instant.
+    WITHOUT time_bounds: use LOCAL calendar dates only: Upcoming before
+    start date, Ongoing on any date in [date, end_date], Past after end_date.
+  Date-only fallback is imprecise; do NOT imply a verified opening hour.
+- `listing.filter: upcoming` means Upcoming OR Ongoing; `past` means Past;
+  `all` includes all three, with no duplicates across views.
+- If no session programme yet, omit schedule until confirmed; show event
+  date/location facts. If schedule exists, render EVERY supplied day.
+- Programme sessions do NOT define whole-event start/end: a public schedule
+  may be partial. Never infer exact event bounds from first/last session.
+- Derived event status follows the rules above; never store status manually.
+- Programme in YAML is canonical; Markdown prose may link to sessions but
+  MUST NOT duplicate the schedule as a separately maintained table.
+- Example event YAML above shows an EXCERPT of a published two-day programme;
+  it does not pretend to represent every real-world session.
+- Use accessible day tabs or headings + full table; mobile stack by day;
+  keep all sessions reachable without requiring JavaScript.
+
+DETAIL CONTENT SECTIONS (GENERATED ITEMS ARE NOT MARKDOWN DUPLICATES)
+- About the Event
+- Why Attend? (optional)
+- Programme / Agenda (GENERATED from event.schedule; not hand-authored table)
+- Speakers (rendered from event.speakers[] with linked Person profiles)
+- Venue / Travel / Accessibility
+- Registration guidance (upcoming)
+- Recordings / Slides / Downloads (past)
+- Related events (computed)
+
+DETAIL ASCII WIREFRAME
++--------------------------------------------------------------------------+
+| SITE HEADER   [Discover]  [Adopt]  [Build]  [Alliance]  [News & Events]  |
+| BREADCRUMBS   Home / Category / Subcategory / Title                      |
++--------------------------------------------------------------------------+
+| EVENT / FORMAT / COMPUTED STATUS                                         |
+| Event title                                  | [ EVENT IMAGE ]           |
+| Summary / introduction                       |                           |
++--------------------------------------------------------------------------+
+| ABOUT THE EVENT                              | EVENT FACTS               |
+| Why attend / description                     | Start and end dates       |
+|                                              | Timezone / location       |
+| MULTI-DAY SCHEDULE                           | Format / series           |
+| Day 1: Sessions, talks, breaks               | Organisers (multiple)     |
+|        Linked speakers / tracks              |                           |
+| Day 2: Sessions, talks, breaks               | [ Register ] if offered   |
+|        Linked speakers / tracks              |                           |
+|                                              |                           |
+| VENUE / TRAVEL                               |                           |
+| RECORDINGS / SLIDES (if available)           |                           |
++--------------------------------------------------------------------------+
+| RELATED / GENERATED LINKS                                                |
+| SPEAKERS   [ Profile ]   [ Profile ]                                     |
+| PARTNERS   [ Organisation ]                                              |
+| RELATED EVENTS   [ Event ]  [ Event ]                                    |
++--------------------------------------------------------------------------+
+| NEWSLETTER CTA   Stay connected with CHERI                               |
+| FOOTER  Updates | CHERI Alliance | Legal | Socials | Copyright           |
++--------------------------------------------------------------------------+
+
+LIST FRONT MATTER — FULL EXAMPLE(S)
+---
+layout: lists/events
+title: "Upcoming Events"
+permalink: "/news-and-events/events-and-archive/upcoming-events/"
+navigation:
+  header:
+    category: "News & Events"
+    subcategory: "Events & Archive"
+  footer:
+    category: "Updates"
+listing:
+  collection: events
+  filter: upcoming
+  sort: date_asc
+---
+
+
+---
+layout: lists/events
+title: "Past Events"
+permalink: "/news-and-events/events-and-archive/past-events/"
+navigation:
+  header:
+    category: "News & Events"
+    subcategory: "Events & Archive"
+listing:
+  collection: events
+  filter: past
+  sort: date_desc
+---
+
+
+---
+layout: lists/events
+title: "Events"
+permalink: "/events/"
+navigation:
+  header:
+    category: "News & Events"
+    subcategory: "Events & Archive"
+listing:
+  collection: events
+  filter: all
+  sort: date_asc
+---
+
+LIST NOTES
+PAST EVENTS — SAME `lists/events` TEMPLATE
+
+LIST CARD FIELDS / SORT / FILTERS
+LIST CONTENT
+  - Event image (16:9)
+  - Title
+  - Start date and end date (if applicable)
+  - Time zone where needed
+  - City/venue OR Online
+  - Format and series
+  - Derived status: Upcoming/Past/Ongoing (verified clock bounds if present)
+  - View event / Register when appropriate
+SORT
+  - upcoming (incl. ongoing): date asc; past: date desc
+FILTERS
+  - upcoming (Upcoming + Ongoing) / past (Past) / all / format / series
+
+LIST ASCII WIREFRAME
++--------------------------------------------------------------------------+
+| SITE HEADER   [Discover]  [Adopt]  [Build]  [Alliance]  [News & Events]  |
+| BREADCRUMBS   Home / Category / Subcategory / Title                      |
++--------------------------------------------------------------------------+
+| UPCOMING / PAST EVENTS                                                   |
+| Summary / introduction                                                   |
++--------------------------------------------------------------------------+
+| FILTER / SORT   upcoming / past / format / series                        |
++--------------------------------------------------------------------------+
+| [ IMAGE / LOGO ]          | Event title  /  Dates                        |
+|                           | Venue / Online  /  Format  /  Status         |
+|                           | [ View detail  -> ]                          |
++--------------------------------------------------------------------------+
+| [ IMAGE / LOGO ]          | Event title  /  Dates                        |
+|                           | Venue / Online  /  Format  /  Status         |
+|                           | [ View detail  -> ]                          |
++--------------------------------------------------------------------------+
+| PAGINATION / LOAD MORE (when required)                                   |
++--------------------------------------------------------------------------+
+| NEWSLETTER CTA   Stay connected with CHERI                               |
+| FOOTER  Updates | CHERI Alliance | Legal | Socials | Copyright           |
++--------------------------------------------------------------------------+
+
+RELATIONSHIP NOTES
+- Event owns organisers[], partners[] and speakers[] (all multiple); inverse views generated. Optional related[] lives on event.
+
+
+
+==============================================================================
+08 — SPEAKERS -> SPEAKER
+==============================================================================
+
+FILES / ROUTES
+Source record: _people/<slug>.md
+Listing source page: pages/news-and-events/people-and-opportunities/speakers.md
+Listing layout: lists/speakers
+Detail layout: details/speaker
+Collection: _people
+List title: Speakers
+List URL: /news-and-events/people-and-opportunities/speakers/
+Detail URL: /people/<slug>/
+
+DETAIL FRONT MATTER — FULL EXAMPLE
+---
+layout: details/speaker
+title: "Example Speaker"
+summary: "Demonstrates a speaker employed by two organisations concurrently."
+navigation:
+  header:
+    category: "News & Events"
+    subcategory: "People & Opportunities"
+person:
+  roles: [speaker]
+  organisations:
+    - organisation: university-of-cambridge
+      relationship: employment
+      positions:
+        - title: "University researcher"
+          status: current
+    - organisation: example-private-company
+      relationship: employment
+      positions:
+        - title: "Private company technical director"
+          status: current
+  location: "Cambridge, UK"
+---
+
+
+DETAIL FIELDS
+REQUIRED   layout, title, summary, navigation.header, person group
+OPTIONAL   person.roles[] (absent means no tagged roles), image,
+           person.organisations[] (can be 0, 1 or many),
+           person.governance.board_order/board_role, person.location,
+           person.links, resources
+DERIVED    talks, publications, news; ALL current affiliations
+RENDER     optional portrait right; biography left; multiple current affiliations in facts panel
+IMAGES     assets/images/news-and-events/people-and-opportunities/<slug>/
+
+ENTITY RULES
+- `person.roles` contains speaker = Speakers-list eligibility only; jobs
+  may be simultaneous. All People includes profiles without speaker role.
+  An absent `person.roles` is allowed for a generic Person and matches NO
+  specialised-role filters; do not require dummy empty role lists.
+- Details render neutral Person/profile titles when speaker role is absent;
+  never render a false Speaker badge, presenter CTA or speaker-only facts.
+- person.organisations[] = zero/many organisation + positions records
+- per-organisation titles live in positions[].title; governance.board_role and location optional
+- person.links = website/linkedin/github etc.
+- simultaneous jobs are peers; no primary/secondary employment hierarchy
+- events/papers/news = reverse queries; no related arrays
+
+DETAIL MARKDOWN H2 SECTIONS
+- Biography
+- Research Interests and Expertise
+- Projects and Contributions
+- Talks (reverse query of event.speakers[]; manual videos only as resources)
+- Publications (reverse query of publication.authors[])
+- Related news (reverse query of post.authors[])
+
+DETAIL ASCII WIREFRAME
++--------------------------------------------------------------------------+
+| SITE HEADER   [Discover]  [Adopt]  [Build]  [Alliance]  [News & Events]  |
+| BREADCRUMBS   Home / Category / Subcategory / Title                      |
++--------------------------------------------------------------------------+
+| PERSON / SPEAKER                                                         |
+| Person name                                  | [ PORTRAIT ]              |
+| Summary / introduction                       |                           |
++--------------------------------------------------------------------------+
+| BIOGRAPHY                                    | PERSON FACTS              |
+| Expertise and contributions                  | Job title                 |
+| Projects / activities                        | All current employers     |
+|                                              | Board role / location     |
+| TALKS (from Event front matter)              | Professional links        |
+| PUBLICATIONS (from Paper front matter)       |                           |
++--------------------------------------------------------------------------+
+| RELATED / GENERATED LINKS                                                |
+| TALKS   [ Talk ]  [ Talk ]                                               |
+| PAPERS   [ Paper ]  [ Paper ]                                            |
+| RELATED POSTS   [ Post ]  [ Post ]                                       |
++--------------------------------------------------------------------------+
+| NEWSLETTER CTA   Stay connected with CHERI                               |
+| FOOTER  Updates | CHERI Alliance | Legal | Socials | Copyright           |
++--------------------------------------------------------------------------+
+
+LIST FRONT MATTER — FULL EXAMPLE(S)
+---
+layout: lists/speakers
+title: "Speakers"
+permalink: "/news-and-events/people-and-opportunities/speakers/"
+navigation:
+  header:
+    category: "News & Events"
+    subcategory: "People & Opportunities"
+
+listing:
+  collection: people
+  filter: speaker_role
+---
+
+LIST CARD FIELDS / SORT / FILTERS
+LIST CONTENT
+  - Portrait (square)
+  - Full name
+  - Current job titles (may be multiple)
+  - All current organisations (not ranked)
+  - Speaker indicator (when useful)
+  - View speaker
+SORT
+  - title asc
+FILTERS
+  - person.roles contains speaker; organisation/role optional
+
+LIST ASCII WIREFRAME
++--------------------------------------------------------------------------+
+| SITE HEADER   [Discover]  [Adopt]  [Build]  [Alliance]  [News & Events]  |
+| BREADCRUMBS   Home / Category / Subcategory / Title                      |
++--------------------------------------------------------------------------+
+| SPEAKERS                                                                 |
+| Summary / introduction                                                   |
++--------------------------------------------------------------------------+
+| FILTER / SORT   organisation / expertise / role                          |
++--------------------------------------------------------------------------+
+| [ IMAGE / LOGO ]          | Person name  /  Job title                    |
+|                           | Current organisations / Roles                |
+|                           | [ View detail  -> ]                          |
++--------------------------------------------------------------------------+
+| [ IMAGE / LOGO ]          | Person name  /  Job title                    |
+|                           | Current organisations / Roles                |
+|                           | [ View detail  -> ]                          |
++--------------------------------------------------------------------------+
+| PAGINATION / LOAD MORE (when required)                                   |
++--------------------------------------------------------------------------+
+| NEWSLETTER CTA   Stay connected with CHERI                               |
+| FOOTER  Updates | CHERI Alliance | Legal | Socials | Copyright           |
++--------------------------------------------------------------------------+
+
+RELATIONSHIP NOTES
+- Person owns organisations[]; multiple concurrent jobs permitted. Organisation employment, talks, papers and news computed by inverse queries.
+
+
+
+==============================================================================
+09 — MEMBERS -> MEMBER
+==============================================================================
+
+FILES / ROUTES
+Source record: _organisations/<slug>.md
+Listing source page: pages/alliance/leadership/members.md
+Listing layout: lists/members
+Detail layout: details/member
+Collection: _organisations
+List title: Members
+List URL: /alliance/leadership/members/
+Detail URL: /organisations/<slug>/
+
+DETAIL FRONT MATTER — FULL EXAMPLE
+---
+layout: details/member
+title: "Codasip"
+summary: "Processor technology company developing RISC-V products."
+navigation:
+  header:
+    category: "CHERI Alliance"
+    subcategory: "Leadership"
+image:
+  src: "/assets/images/alliance/leadership/codasip/logo.png"
+  alt: "Codasip logo"
+  fit: contain
+organisation:
+  type: technology_company
+  sector: semiconductors
+  website: "https://www.codasip.com/"
+  membership:
+    is_member: true
+    tier: full
+    status: active
+    founding_member: true
+---
+
+
+DETAIL FIELDS
+REQUIRED   layout, title, summary, navigation.header; organisation group.
+           When membership.is_member: true, membership.status is also required.
+OPTIONAL   image, organisation.type/sector/website, whole membership group
+           for nonmembers, membership.tier/founding_member, resources, related[]
+DERIVED    associated people; linked products/repositories via relationship
+           owners; related news ONLY from explicit organisation.related[] posts
+RENDER     contained logo right; organisation and membership facts in panel
+IMAGES     assets/images/alliance/leadership/<slug>/
+
+ENTITY RULES
+- `organisation.membership.is_member: true` denotes recorded membership;
+  it alone is NOT current-members eligibility. `current_members` requires
+  is_member: true AND membership.status: active (both conditions).
+- `organisation.membership.status` is REQUIRED whenever is_member: true.
+  If status is missing/unknown during migration, fail current-members
+  validation and exclude from that filtered list until editorial review.
+- `membership.tier` and `founding_member` are optional. Past/inactive member
+  profiles may retain membership data without appearing as current members.
+- Nonmembers omit the membership object; their Organisation profiles remain
+  public but never display a Member label, tier or member-specific CTA.
+- organisation.type/sector = controlled values
+- organisation.website = organisation-owned external site
+- image.fit = contain for logos
+- People list = reverse query of person.organisations[] (all employers/roles)
+- For nonmembers: omit `membership` group (retain `organisation` group);
+  specialised member labels/actions must be suppressed.
+- Organisation Related News uses explicit `related[]` records with type: post
+  on this Organisation, never employment or byline inference.
+
+DETAIL MARKDOWN H2 SECTIONS
+- About the Organisation
+- CHERI Activities
+- Products and Projects
+- Open-source Assets / Resources
+- Associated People (generated)
+- Related News (explicit `related[]` post links only) / Products and
+  Repositories (generated from product/repository ownership fields)
+
+DETAIL ASCII WIREFRAME
++--------------------------------------------------------------------------+
+| SITE HEADER   [Discover]  [Adopt]  [Build]  [Alliance]  [News & Events]  |
+| BREADCRUMBS   Home / Category / Subcategory / Title                      |
++--------------------------------------------------------------------------+
+| ORGANISATION / MEMBER                                                    |
+| Organisation name                            | [ CONTAINED LOGO ]        |
+| Summary / introduction                       |                           |
++--------------------------------------------------------------------------+
+| ABOUT THE ORGANISATION                       | ORGANISATION FACTS        |
+| CHERI activities                             | Membership tier / status  |
+| Products and projects                        | Founding member           |
+| Open-source assets / resources               | Sector / website          |
+|                                              | Linked people / roles     |
++--------------------------------------------------------------------------+
+| RELATED / GENERATED LINKS                                                |
+| ASSOCIATED PEOPLE   [ Person ] [ Person ]                                |
+| PRODUCTS / REPOSITORIES   [ Card ] [ Card ]                              |
+| RELATED POSTS   [ Post ] [ Post ]                                        |
++--------------------------------------------------------------------------+
+| NEWSLETTER CTA   Stay connected with CHERI                               |
+| FOOTER  Updates | CHERI Alliance | Legal | Socials | Copyright           |
++--------------------------------------------------------------------------+
+
+LIST FRONT MATTER — FULL EXAMPLE(S)
+---
+layout: lists/members
+title: "Members"
+permalink: "/alliance/leadership/members/"
+navigation:
+  header:
+    category: "CHERI Alliance"
+    subcategory: "Leadership"
+  footer:
+    category: "CHERI Alliance"
+listing:
+  collection: organisations
+  filter: current_members
+---
+
+LIST CARD FIELDS / SORT / FILTERS
+LIST CONTENT
+  - Logo in contain frame
+  - Organisation name
+  - Founding member status (when true)
+  - Membership tier
+  - Short summary
+  - View member
+SORT
+  - title asc
+FILTERS
+  - current_members: organisation.membership.is_member: true AND
+    organisation.membership.status: active; tier/sector optional.
+  - filter: all on /organisations/ includes members and nonmembers.
+
+LIST ASCII WIREFRAME
++--------------------------------------------------------------------------+
+| SITE HEADER   [Discover]  [Adopt]  [Build]  [Alliance]  [News & Events]  |
+| BREADCRUMBS   Home / Category / Subcategory / Title                      |
++--------------------------------------------------------------------------+
+| MEMBERS                                                                  |
+| Summary / introduction                                                   |
++--------------------------------------------------------------------------+
+| FILTER / SORT   membership tier / sector                                 |
++--------------------------------------------------------------------------+
+| [ IMAGE / LOGO ]          | Organisation name  /  Membership tier        |
+|                           | Founding status  /  Summary                  |
+|                           | [ View detail  -> ]                          |
++--------------------------------------------------------------------------+
+| [ IMAGE / LOGO ]          | Organisation name  /  Membership tier        |
+|                           | Founding status  /  Summary                  |
+|                           | [ View detail  -> ]                          |
++--------------------------------------------------------------------------+
+| PAGINATION / LOAD MORE (when required)                                   |
++--------------------------------------------------------------------------+
+| NEWSLETTER CTA   Stay connected with CHERI                               |
+| FOOTER  Updates | CHERI Alliance | Legal | Socials | Copyright           |
++--------------------------------------------------------------------------+
+
+RELATIONSHIP NOTES
+- Multiple People may work for many Organisations simultaneously; reverse
+  staff list from person.organisations[]. Other product/repository links derived.
+- Related news is opt-in via this Organisation's explicit related[] post links;
+  do not infer organisational news from employee authorship.
+
+
+
+==============================================================================
+10 — PAPERS -> PAPER
+==============================================================================
+
+FILES / ROUTES
+Source record: _papers/<slug>.md
+Listing source page: pages/discover/resources/papers.md
+Listing layout: lists/papers
+Detail layout: details/paper
+Collection: _papers
+List title: Papers
+List URL: /papers/
+Detail URL: /papers/<slug>/
+
+DETAIL FRONT MATTER — FULL EXAMPLE
+---
+layout: details/paper
+title: "CHERIoT: Complete Memory Safety for Embedded Devices"
+summary: "Research on CHERIoT hardware and software memory safety."
+navigation:
+  header:
+    category: "Discover CHERI"
+    subcategory: "Resources"
+publication:
+  year: 2023
+  venue: "IEEE/ACM MICRO"
+  type: conference_paper
+  citation: "Complete publication citation as published."
+  authors:
+    - person: example-author-1
+    - person: example-author-2
+resources:
+  - type: pdf
+    label: "Read the publication"
+    url: "https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/202310ieeemicro-cheriot-uarch.pdf"
+---
+
+
+DETAIL FIELDS
+REQUIRED   layout, title, summary, navigation.header, publication.year
+OPTIONAL   publication.venue/type/citation/doi, resources
+DERIVED    author Person details; inverse Person publications; related papers
+RENDER     typography-led, publication facts on right, no image required
+IMAGES     omit unless relevant; if any: assets/images/discover/resources/<slug>/
+
+ENTITY RULES
+- publication.year / venue / type / citation
+- publication.doi = optional
+- resources pdf/publication URLs
+- publication.authors[] = ALL authors (Person slugs or name credits), ordered
+- Do not also store duplicate author IDs in _data or Person records
+- Some existing papers only link off-site; create full detail record
+
+DETAIL CONTENT SECTIONS (GENERATED ITEMS ARE NOT MARKDOWN DUPLICATES)
+- Abstract
+- Research Overview / Contributions
+- Additional Context
+- Citation and publication metadata (GENERATED from publication.citation/year/venue)
+- Publication Resources (GENERATED from resources)
+- Related Papers (generated)
+
+DETAIL ASCII WIREFRAME
++--------------------------------------------------------------------------+
+| SITE HEADER   [Discover]  [Adopt]  [Build]  [Alliance]  [News & Events]  |
+| BREADCRUMBS   Home / Category / Subcategory / Title                      |
++--------------------------------------------------------------------------+
+| PUBLICATION / ACADEMIC PAPER                                             |
+| Paper title                                                              |
+| Summary / introduction                                                   |
++--------------------------------------------------------------------------+
+| ABSTRACT                                     | PUBLICATION FACTS         |
+| Research overview                            | Year / venue              |
+| Contributions                                | Publication type / DOI    |
+| Citation from YAML (generated)               | [ Open PDF ]              |
+| Additional context                           |                           |
++--------------------------------------------------------------------------+
+| RELATED / GENERATED LINKS                                                |
+| AUTHORS   [ Person ] [ Person ] [ Person ]                               |
+| RELATED PAPERS   [ Paper ] [ Paper ]                                     |
++--------------------------------------------------------------------------+
+| NEWSLETTER CTA   Stay connected with CHERI                               |
+| FOOTER  Updates | CHERI Alliance | Legal | Socials | Copyright           |
++--------------------------------------------------------------------------+
+
+LIST FRONT MATTER — FULL EXAMPLE(S)
+---
+layout: lists/papers
+title: "Papers"
+permalink: "/papers/"
+navigation:
+  header:
+    category: "Discover CHERI"
+    subcategory: "Resources"
+
+listing:
+  collection: papers
+---
+
+LIST CARD FIELDS / SORT / FILTERS
+LIST CONTENT
+  - Paper title
+  - Author display from publication.authors[]
+  - Publication year and venue
+  - Summary/abstract excerpt
+  - Open detail / PDF link if valid
+SORT
+  - year desc, then title asc
+FILTERS
+  - year / venue / author optional
+
+LIST ASCII WIREFRAME
++--------------------------------------------------------------------------+
+| SITE HEADER   [Discover]  [Adopt]  [Build]  [Alliance]  [News & Events]  |
+| BREADCRUMBS   Home / Category / Subcategory / Title                      |
++--------------------------------------------------------------------------+
+| PAPERS                                                                   |
+| Summary / introduction                                                   |
++--------------------------------------------------------------------------+
+| FILTER / SORT   year / author / venue                                    |
++--------------------------------------------------------------------------+
+| Paper title  /  Authors                                                  |
+| Publication year  /  Venue  /  PDF                                       |
+| [ View detail  -> ]                                                      |
++--------------------------------------------------------------------------+
+| Paper title  /  Authors                                                  |
+| Publication year  /  Venue  /  PDF                                       |
+| [ View detail  -> ]                                                      |
++--------------------------------------------------------------------------+
+| PAGINATION / LOAD MORE (when required)                                   |
++--------------------------------------------------------------------------+
+| NEWSLETTER CTA   Stay connected with CHERI                               |
+| FOOTER  Updates | CHERI Alliance | Legal | Socials | Copyright           |
++--------------------------------------------------------------------------+
+
+RELATIONSHIP NOTES
+- Paper owns publication.authors[] (ordered); Person publications generated by inverse lookup.
+
+
+
+==============================================================================
+11 — PRODUCTS -> PRODUCT
+==============================================================================
+
+FILES / ROUTES
+Source record: _products/<slug>.md
+Listing source page: pages/build/platforms/products.md
+Listing layout: lists/products
+Detail layout: details/product
+Collection: _products (site.products)
+List title: Products
+List URL: /products/
+Detail URL: /products/<slug>/
+Legacy URLs: /hardware/ and /hardware/<slug>/ must redirect to new routes.
+
+DETAIL FRONT MATTER — FULL EXAMPLE
+---
+layout: details/product
+title: "Sonata"
+summary: "FPGA development platform for CHERIoT firmware."
+permalink: "/products/sonata/"
+navigation:
+  header:
+    category: "Build"
+    subcategory: "Platforms"
+image:
+  src: "/assets/images/build/platforms/sonata/board.webp"
+  alt: "Sonata FPGA development board"
+product:
+  type: fpga_board
+  architecture: cheri_riscv
+  manufacturer: lowrisc
+  maturity: development
+  availability: "Refer to current manufacturer documentation"
+  repositories:
+    - repository: cheriot-rtos
+      compatibility: supported
+resources:
+  - type: documentation
+    label: "Sonata documentation"
+    url: "https://sonata-system.github.io/sonata-system/"
+---
+
+DETAIL FIELDS
+REQUIRED   layout, title, summary, navigation.header, product.type
+OPTIONAL   permalink, image, product.architecture,
+           product.manufacturer, product.maturity, product.availability,
+           resources, forms
+DERIVED    repository details from product.repositories[];
+           guides from inverse guide.primary_product
+RENDER     product photo right; specifications and resources in facts panel
+IMAGES     assets/images/build/platforms/<slug>/
+
+ENTITY RULES
+- product.type = physical board, chip, SoC, FPGA system, development kit,
+  or an explicitly identifiable product/platform; controlled taxonomy.
+- product.architecture and product.maturity = controlled values.
+- product.manufacturer = ONE Organisation slug (M:1), where verified.
+- product.availability = checked factual value; omit if unknown.
+- Products do not necessarily need to be sold commercially.
+- Do NOT force concepts, generic platform directories or certification-only
+  documents into _products; migrate these as suitable ordinary pages/policies.
+- Supported repositories are listed in product.repositories[]; not on Repository.
+- Associated guides via guide.primary_product inverse.
+- URLs /hardware/* remain valid through tested `_redirects` records.
+
+DETAIL MARKDOWN H2 SECTIONS
+- Overview
+- Features and Capabilities
+- Technical Specifications / Table
+- Strengths and Constraints
+- Getting Started
+- Documentation and Downloads
+- Compatible Repositories (generated)
+
+DETAIL ASCII WIREFRAME
++--------------------------------------------------------------------------+
+| SITE HEADER   [Discover]  [Adopt]  [Build]  [Alliance]  [News & Events]  |
+| BREADCRUMBS   Home / Category / Subcategory / Title                      |
++--------------------------------------------------------------------------+
+| PRODUCT / PLATFORM                                                       |
+| Product name                                 | [ PRODUCT IMAGE ]         |
+| Summary / introduction                       |                           |
++--------------------------------------------------------------------------+
+| OVERVIEW                                     | PRODUCT FACTS             |
+| Features and capabilities                    | Manufacturer              |
+| Technical specifications [table]             | Architecture / type       |
+| Constraints and limitations                  | Maturity / availability   |
+| Getting started                              | [ Documentation ]         |
++--------------------------------------------------------------------------+
+| RELATED / GENERATED LINKS                                                |
+| COMPATIBLE REPOSITORIES  [ Repo ] [ Repo ]                               |
+| GUIDES   [ Guide ] [ Guide ]                                             |
++--------------------------------------------------------------------------+
+| NEWSLETTER CTA   Stay connected with CHERI                               |
+| FOOTER  Updates | CHERI Alliance | Legal | Socials | Copyright           |
++--------------------------------------------------------------------------+
+
+LIST FRONT MATTER — FULL EXAMPLE(S)
+---
+layout: lists/products
+title: "Products"
+summary: "CHERI development products and platforms."
+permalink: "/products/"
+navigation:
+  header:
+    category: "Build"
+    subcategory: "Platforms"
+listing:
+  collection: products
+---
+
+LIST CARD FIELDS / SORT / FILTERS
+LIST CONTENT
+  - Product/platform name
+  - Photograph / schematic (optional)
+  - Product type
+  - Architecture
+  - Maturity / availability when verified
+  - Summary
+  - View product
+SORT
+  - title asc
+FILTERS
+  - type / architecture / maturity
+
+LIST ASCII WIREFRAME
++--------------------------------------------------------------------------+
+| SITE HEADER   [Discover]  [Adopt]  [Build]  [Alliance]  [News & Events]  |
+| BREADCRUMBS   Home / Category / Subcategory / Title                      |
++--------------------------------------------------------------------------+
+| PRODUCTS                                                                 |
+| Summary / introduction                                                   |
++--------------------------------------------------------------------------+
+| FILTER / SORT   type / architecture / maturity                           |
++--------------------------------------------------------------------------+
+| [ IMAGE / LOGO ]          | Product name  /  Product type                |
+|                           | Architecture  /  Availability                |
+|                           | [ View detail  -> ]                          |
++--------------------------------------------------------------------------+
+| [ IMAGE / LOGO ]          | Product name  /  Product type                |
+|                           | Architecture  /  Availability                |
+|                           | [ View detail  -> ]                          |
++--------------------------------------------------------------------------+
+| PAGINATION / LOAD MORE (when required)                                   |
++--------------------------------------------------------------------------+
+| NEWSLETTER CTA   Stay connected with CHERI                               |
+| FOOTER  Updates | CHERI Alliance | Legal | Socials | Copyright           |
++--------------------------------------------------------------------------+
+
+RELATIONSHIP NOTES
+- Many Products -> one manufacturer Organisation.
+- Product owns product.repositories[] compatibility links; Repository reverse list derived.
+- Guide reverse cards via guide.primary_product.
+
+
+
+==============================================================================
+12 — REPOSITORIES -> REPOSITORY
+==============================================================================
+
+FILES / ROUTES
+Source record: _repositories/<slug>.md
+Listing source page: pages/build/software-ecosystem/repositories.md
+Listing layout: lists/repositories
+Detail layout: details/repository
+Collection: _repositories (site.repositories)
+List title: Repositories
+List URL: /repositories/
+Detail URL: /repositories/<slug>/
+Legacy URLs: /software/ and /software/<slug>/ must redirect to new routes.
+
+DETAIL FRONT MATTER — FULL EXAMPLE
+---
+layout: details/repository
+title: "CheriBSD"
+summary: "Operating-system codebase for CHERI development."
+permalink: "/repositories/cheribsd/"
+navigation:
+  header:
+    category: "Build"
+    subcategory: "Software Ecosystem"
+repository:
+  type: operating_system
+  architectures: [cheri_riscv, morello]
+  maturity: research
+  maintainers:
+    - organisation: university-of-cambridge
+      role: maintainer
+resources:
+  - type: repository
+    label: "CheriBSD source code"
+    url: "https://github.com/CTSRD-CHERI/cheribsd"
+  - type: website
+    label: "CheriBSD project"
+    url: "https://www.cheribsd.org/"
+---
+
+DETAIL FIELDS
+REQUIRED   layout, title, summary, navigation.header, repository.type;
+           at least one resources[] item with type: repository and valid URL
+OPTIONAL   permalink, image, repository.architectures,
+           repository.maturity, repository.maintainers[], resources, forms
+DERIVED    compatible products via reverse product.repositories[];
+           relevant guides and working groups via directed related[]
+RENDER     optional project logo or screenshot right; setup/code in content
+IMAGES     assets/images/build/software-ecosystem/<slug>/
+
+ENTITY RULES
+- Repository record = identifiable public/source-accessible codebase.
+- repository.type = operating_system | toolchain | compiler | library |
+  firmware | application | simulator | tools | other (controlled taxonomy).
+- repository.architectures and repository.maturity = controlled values.
+- repository.maintainers[] = zero/many organisations with maintenance roles.
+- Code host is represented by a canonical `resources` link of type: repository.
+- A project website or documentation link can be additional `resources` items.
+- Do NOT invent a Git URL; an unverified codebase stays in migration review.
+- Do NOT force general software ecosystem pages, simulator roundups or tool
+  indexes into _repositories; migrate these as ordinary category pages.
+- Compatible products via reverse product.repositories[]; no mirrored arrays.
+- URLs /software/* remain valid through tested `_redirects` records.
+- "Software Ecosystem" remains the EXISTING header subcategory; it is not
+  renamed to "Repository Ecosystem" by this collection change.
+
+DETAIL MARKDOWN H2 SECTIONS
+- Overview
+- Features and Capabilities
+- Supported Environments
+- Installation and Setup
+- Usage with Code Examples
+- Compatibility and Limitations
+- Source Code and Documentation
+- Related Products / Guides (generated)
+
+DETAIL ASCII WIREFRAME
++--------------------------------------------------------------------------+
+| SITE HEADER   [Discover]  [Adopt]  [Build]  [Alliance]  [News & Events]  |
+| BREADCRUMBS   Home / Category / Subcategory / Title                      |
++--------------------------------------------------------------------------+
+| REPOSITORY / CODEBASE                                                    |
+| Repository name                              | [ LOGO / SCREENSHOT ]     |
+| Summary / introduction                       |                           |
++--------------------------------------------------------------------------+
+| OVERVIEW                                     | REPOSITORY FACTS          |
+| Features and capabilities                    | Type / architecture       |
+| Supported environments                       | Maintainer / maturity     |
+| Installation and setup [code]                | [ Source repository ]     |
+| Usage / limitations                          | [ Documentation ]         |
++--------------------------------------------------------------------------+
+| RELATED / GENERATED LINKS                                                |
+| COMPATIBLE PRODUCTS  [ Product ] [ Product ]                             |
+| GUIDES   [ Guide ] [ Guide ]                                             |
++--------------------------------------------------------------------------+
+| NEWSLETTER CTA   Stay connected with CHERI                               |
+| FOOTER  Updates | CHERI Alliance | Legal | Socials | Copyright           |
++--------------------------------------------------------------------------+
+
+LIST FRONT MATTER — FULL EXAMPLE(S)
+---
+layout: lists/repositories
+title: "Repositories"
+summary: "Source-code projects in the CHERI ecosystem."
+permalink: "/repositories/"
+navigation:
+  header:
+    category: "Build"
+    subcategory: "Software Ecosystem"
+listing:
+  collection: repositories
+---
+
+LIST CARD FIELDS / SORT / FILTERS
+LIST CONTENT
+  - Repository/project name
+  - Category/type
+  - Supported architectures
+  - Source repository link
+  - Summary
+  - Maturity if verified
+  - View repository
+SORT
+  - title asc
+FILTERS
+  - type / architecture / maturity
+
+LIST ASCII WIREFRAME
++--------------------------------------------------------------------------+
+| SITE HEADER   [Discover]  [Adopt]  [Build]  [Alliance]  [News & Events]  |
+| BREADCRUMBS   Home / Category / Subcategory / Title                      |
++--------------------------------------------------------------------------+
+| REPOSITORIES                                                             |
+| Summary / introduction                                                   |
++--------------------------------------------------------------------------+
+| FILTER / SORT   type / architecture / maintainer                         |
++--------------------------------------------------------------------------+
+| [ IMAGE / LOGO ]          | Repository name  /  Type                     |
+|                           | Maintainer  /  Source code link              |
+|                           | [ View detail  -> ]                          |
++--------------------------------------------------------------------------+
+| [ IMAGE / LOGO ]          | Repository name  /  Type                     |
+|                           | Maintainer  /  Source code link              |
+|                           | [ View detail  -> ]                          |
++--------------------------------------------------------------------------+
+| PAGINATION / LOAD MORE (when required)                                   |
++--------------------------------------------------------------------------+
+| NEWSLETTER CTA   Stay connected with CHERI                               |
+| FOOTER  Updates | CHERI Alliance | Legal | Socials | Copyright           |
++--------------------------------------------------------------------------+
+
+RELATIONSHIP NOTES
+- Repositories may have multiple maintaining Organisations; maintainer details live here.
+- Product compatibility comes from inverse product.repositories[] view.
+- Guides and working groups link via directed related[] on owning records.
+
+
+
+==============================================================================
+13 — WORKING GROUPS -> WORKING GROUP
+==============================================================================
+
+FILES / ROUTES
+Source record: _groups/<slug>.md
+Listing source page: pages/alliance/leadership/working-groups.md
+Listing layout: lists/working-groups
+Detail layout: details/working-group
+Collection: _groups
+List title: Working Groups
+List URL: /alliance/leadership/working-groups/
+Detail URL: /groups/<slug>/
+
+DETAIL FRONT MATTER — FULL EXAMPLE
+---
+layout: details/working-group
+title: "CHERI Linux Working Group"
+summary: "Collaboration on CHERI support and roadmap for Linux."
+navigation:
+  header:
+    category: "CHERI Alliance"
+    subcategory: "Leadership"
+working_group:
+  type: technical
+  status: active
+  coordinator: cheri-alliance
+  focus_areas:
+    - linux
+    - software_portability
+forms:
+  - contact
+---
+
+
+DETAIL FIELDS
+REQUIRED   layout, title, summary, navigation.header, working_group.type
+OPTIONAL   working_group.status/coordinator/focus_areas, resources, forms
+DERIVED    related initiatives and group links from directed related[]
+RENDER     text-led; group facts and contact on right
+IMAGES     omit unless needed: assets/images/alliance/leadership/<slug>/
+
+ENTITY RULES
+- working_group.type = technical/programme/other controlled enum
+- working_group.status = current status when known
+- working_group.coordinator = one Organisation slug (M:1)
+- working_group.focus_areas = taxonomy strings, not record links
+- forms: [contact] form resolved from _data/forms.yml
+- related projects via source page related[]; no mirrored arrays
+
+DETAIL MARKDOWN H2 SECTIONS
+- Purpose and Objectives
+- Areas of Collaboration
+- Activities / Initiatives
+- Published Resources
+- How to Enquire / Join
+- Related Projects (generated)
+
+DETAIL ASCII WIREFRAME
++--------------------------------------------------------------------------+
+| SITE HEADER   [Discover]  [Adopt]  [Build]  [Alliance]  [News & Events]  |
+| BREADCRUMBS   Home / Category / Subcategory / Title                      |
++--------------------------------------------------------------------------+
+| CHERI ALLIANCE / WORKING GROUP                                           |
+| Working group name                                                       |
+| Summary / introduction                                                   |
++--------------------------------------------------------------------------+
+| PURPOSE / SCOPE                              | WORKING GROUP FACTS       |
+| Collaboration areas                          | Group type / status       |
+| Current activities                           | Coordinator               |
+| Participation / deliverables                 | Contact details           |
+|                                              | [ Enquire / join ]        |
++--------------------------------------------------------------------------+
+| RELATED / GENERATED LINKS                                                |
+| DOCUMENTS / REPOSITORIES   [ Resource ]                                  |
+| RELATED GROUPS   [ Group ] [ Group ]                                     |
++--------------------------------------------------------------------------+
+| NEWSLETTER CTA   Stay connected with CHERI                               |
+| FOOTER  Updates | CHERI Alliance | Legal | Socials | Copyright           |
++--------------------------------------------------------------------------+
+
+LIST FRONT MATTER — FULL EXAMPLE(S)
+---
+layout: lists/working-groups
+title: "Working Groups"
+permalink: "/alliance/leadership/working-groups/"
+navigation:
+  header:
+    category: "CHERI Alliance"
+    subcategory: "Leadership"
+  footer:
+    category: "CHERI Alliance"
+listing:
+  collection: groups
+---
+
+LIST CARD FIELDS / SORT / FILTERS
+LIST CONTENT
+  - Group name
+  - Type: Technical/Programme
+  - Short summary
+  - Main focus areas
+  - View working group
+SORT
+  - type then title asc
+FILTERS
+  - working_group.type / status
+
+LIST ASCII WIREFRAME
++--------------------------------------------------------------------------+
+| SITE HEADER   [Discover]  [Adopt]  [Build]  [Alliance]  [News & Events]  |
+| BREADCRUMBS   Home / Category / Subcategory / Title                      |
++--------------------------------------------------------------------------+
+| WORKING GROUPS                                                           |
+| Summary / introduction                                                   |
++--------------------------------------------------------------------------+
+| FILTER / SORT   topic / group type / status                              |
++--------------------------------------------------------------------------+
+| Working group name  /  Status                                            |
+| Collaboration topic  /  Summary                                          |
+| [ View detail  -> ]                                                      |
++--------------------------------------------------------------------------+
+| Working group name  /  Status                                            |
+| Collaboration topic  /  Summary                                          |
+| [ View detail  -> ]                                                      |
++--------------------------------------------------------------------------+
+| PAGINATION / LOAD MORE (when required)                                   |
++--------------------------------------------------------------------------+
+| NEWSLETTER CTA   Stay connected with CHERI                               |
+| FOOTER  Updates | CHERI Alliance | Legal | Socials | Copyright           |
++--------------------------------------------------------------------------+
+
+RELATIONSHIP NOTES
+- Group has one coordinator when known; other content uses its own related[].
+
+
+
+==============================================================================
+14 — GUIDES -> GUIDE
+==============================================================================
+
+FILES / ROUTES
+Source record: _guides/<slug>.md
+Listing source page: pages/build/software-developers/guides.md
+Listing layout: lists/guides
+Detail layout: details/guide
+Collection: _guides
+List title: Developer Guides
+List URL: /guides/
+Detail URL: /guides/<slug>/
+
+DETAIL FRONT MATTER — FULL EXAMPLE
+---
+layout: details/guide
+title: "Choosing a CHERI Development Platform"
+summary: "Compare simulation, embedded and application-class development options."
+navigation:
+  header:
+    category: "Build"
+    subcategory: "Software Developers"
+guide:
+  topic: platforms
+  level: beginner
+  estimated_minutes: 20
+  series: getting_started
+  sequence: 2
+  primary_product: sonata
+  prerequisites:
+    - "Basic command-line familiarity"
+resources:
+  - type: documentation
+    label: "Technical documentation"
+    url: "https://cheriot.org/book/getting_started.html"
+---
+
+
+DETAIL FIELDS
+REQUIRED   layout, title, summary, navigation.header, guide.topic
+OPTIONAL   guide.level/estimated_minutes/series/sequence/primary_product,
+           guide.prerequisites, image, resources
+DERIVED    previous/next from guide.series+sequence; related product
+RENDER     full-width documentation column; information strip, no aside
+IMAGES     assets/images/build/software-developers/<slug>/
+
+ENTITY RULES
+- guide.topic, level = controlled enums
+- guide.series + sequence = ordering; derive previous/next automatically
+- guide.estimated_minutes = integer, optional
+- guide.primary_product = ONE Product slug (M:1), optional
+- guide.prerequisites = free-text checklist, not a relation; render it from
+  YAML once, not as a duplicate Markdown list.
+- downloads/demos in resources
+- No previous_guide + next_guide stored as mirrored links
+
+DETAIL CONTENT SECTIONS (GENERATED ITEMS ARE NOT MARKDOWN DUPLICATES)
+- Learning Outcomes
+- Prerequisites (GENERATED from guide.prerequisites[]; no copy in Markdown)
+- Step 1, Step 2, ...
+- Copyable Code Blocks
+- Screenshots/Diagrams
+- Verification
+- Troubleshooting
+- Downloads and Resources (GENERATED from resources; prose may discuss them)
+- Previous/Next computed from series and sequence
+
+DETAIL ASCII WIREFRAME
++--------------------------------------------------------------------------+
+| SITE HEADER   [Discover]  [Adopt]  [Build]  [Alliance]  [News & Events]  |
+| BREADCRUMBS   Home / Category / Subcategory / Title                      |
++--------------------------------------------------------------------------+
+| DEVELOPER GUIDE                                                          |
+| Guide title                                                              |
+| Guide summary                                                            |
++--------------------------------------------------------------------------+
+| DIFFICULTY  |  ESTIMATED TIME  |  PLATFORM  (only known facts)           |
++--------------------------------------------------------------------------+
+|       PREREQUISITES / REQUIREMENTS                                       |
+|       ## Step 1: Set up the environment                                  |
+|       Instructions + code fence                                          |
+|       ## Step 2: Build / run                                             |
+|       Commands, screenshot with image class                              |
+|       ## Troubleshooting / next steps                                    |
++--------------------------------------------------------------------------+
+| PREVIOUS GUIDE  <-                  ->  NEXT GUIDE                       |
+| RELATED GUIDES / PRODUCTS / REPOSITORIES                                 |
++--------------------------------------------------------------------------+
+| NEWSLETTER CTA   Stay connected with CHERI                               |
+| FOOTER  Updates | CHERI Alliance | Legal | Socials | Copyright           |
++--------------------------------------------------------------------------+
+
+LIST FRONT MATTER — FULL EXAMPLE(S)
+---
+layout: lists/guides
+title: "Developer Guides"
+permalink: "/guides/"
+navigation:
+  header:
+    category: "Build"
+    subcategory: "Software Developers"
+
+listing:
+  collection: guides
+---
+
+LIST CARD FIELDS / SORT / FILTERS
+LIST CONTENT
+  - Guide title
+  - Topic
+  - Short description
+  - Level
+  - Estimated time (optional)
+  - Primary platform (if known)
+  - Start guide
+SORT
+  - series then sequence asc
+FILTERS
+  - topic / level / platform
+
+LIST ASCII WIREFRAME
++--------------------------------------------------------------------------+
+| SITE HEADER   [Discover]  [Adopt]  [Build]  [Alliance]  [News & Events]  |
+| BREADCRUMBS   Home / Category / Subcategory / Title                      |
++--------------------------------------------------------------------------+
+| GUIDES                                                                   |
+| Summary / introduction                                                   |
++--------------------------------------------------------------------------+
+| FILTER / SORT   topic / level / platform                                 |
++--------------------------------------------------------------------------+
+| Guide title  /  Difficulty                                               |
+| Estimated time  /  Platform                                              |
+| [ View detail  -> ]                                                      |
++--------------------------------------------------------------------------+
+| Guide title  /  Difficulty                                               |
+| Estimated time  /  Platform                                              |
+| [ View detail  -> ]                                                      |
++--------------------------------------------------------------------------+
+| PAGINATION / LOAD MORE (when required)                                   |
++--------------------------------------------------------------------------+
+| NEWSLETTER CTA   Stay connected with CHERI                               |
+| FOOTER  Updates | CHERI Alliance | Legal | Socials | Copyright           |
++--------------------------------------------------------------------------+
+
+RELATIONSHIP NOTES
+- Many Guides -> one primary Product when relevant. Guide prev/next derived from series + sequence.
+
+
+
+==============================================================================
+15 — POLICIES -> POLICY
+==============================================================================
+
+FILES / ROUTES
+Source record: _policies/<slug>.md
+Listing source page: pages/alliance/legal-and-policies/policies.md
+Listing layout: lists/policies
+Detail layout: details/policy
+Collection: _policies
+List title: Policies
+List URL: /policies/
+Detail URL: /policies/<slug>/
+
+DETAIL FRONT MATTER — FULL EXAMPLE
+---
+layout: details/policy
+title: "Code of Conduct"
+summary: "Standards of respectful conduct for CHERI Alliance activities."
+navigation:
+  header:
+    category: "CHERI Alliance"
+    subcategory: "Legal & Policies"
+  footer:
+    category: "Legal"
+policy:
+  type: governance
+  version: "1.01"
+  dates:
+    effective: "2025-04-14"
+  owner: cheri-alliance
+  status: current
+resources:
+  - type: pdf
+    label: "Official Code of Conduct"
+    url: "/assets/pages/alliance--legal-and-policies--code-of-conduct/245117ed08d4-code-of-conduct.pdf"
+---
+
+
+DETAIL FIELDS
+REQUIRED   layout, title, summary, navigation.header, policy.type
+OPTIONAL   policy.version, policy.dates.effective/reviewed,
+           policy.owner/status,
+           navigation.footer.category, resources
+DERIVED    related policies from directed associations
+RENDER     document content left, policy facts right; official PDF action
+IMAGES     omit unless needed: assets/images/alliance/legal-and-policies/<slug>/
+
+ENTITY RULES
+- policy.type, status = controlled enums
+- policy.version = string (1.01 must not convert to float)
+- policy.dates.effective = ISO quoted date; dates.reviewed optional
+- policy.owner = ONE Organisation slug (M:1)
+- Official PDF link via resources, not policy.pdf duplicate
+- navigation.footer.category only for selected policy destinations
+
+DETAIL MARKDOWN H2 SECTIONS
+- Purpose / Scope
+- Definitions
+- Policy Requirements
+- Responsibilities
+- Compliance / Enforcement
+- Revision History
+- Official Document
+- Related Policies (directed related[] front matter)
+
+DETAIL ASCII WIREFRAME
++--------------------------------------------------------------------------+
+| SITE HEADER   [Discover]  [Adopt]  [Build]  [Alliance]  [News & Events]  |
+| BREADCRUMBS   Home / Category / Subcategory / Title                      |
++--------------------------------------------------------------------------+
+| OFFICIAL POLICY / DOCUMENT                                               |
+| Policy title                                                             |
+| Summary / introduction                                                   |
++--------------------------------------------------------------------------+
+| PURPOSE / SCOPE                              | DOCUMENT FACTS            |
+| Policy text / definitions                    | Version / status          |
+| Governance / obligations                     | Effective / review dates  |
+| Revision history                             | Owner                     |
+|                                              | [ Official PDF ]          |
++--------------------------------------------------------------------------+
+| RELATED / GENERATED LINKS                                                |
+| RELATED POLICIES   [ Policy ] [ Policy ]                                 |
++--------------------------------------------------------------------------+
+| NEWSLETTER CTA   Stay connected with CHERI                               |
+| FOOTER  Updates | CHERI Alliance | Legal | Socials | Copyright           |
++--------------------------------------------------------------------------+
+
+LIST FRONT MATTER — FULL EXAMPLE(S)
+---
+layout: lists/policies
+title: "Policies"
+permalink: "/policies/"
+navigation:
+  header:
+    category: "CHERI Alliance"
+    subcategory: "Legal & Policies"
+
+listing:
+  collection: policies
+---
+
+LIST CARD FIELDS / SORT / FILTERS
+LIST CONTENT
+  - Policy title
+  - Policy type
+  - Effective date
+  - Current version
+  - View policy / Official PDF
+SORT
+  - title asc
+FILTERS
+  - policy.type / status optional
+
+LIST ASCII WIREFRAME
++--------------------------------------------------------------------------+
+| SITE HEADER   [Discover]  [Adopt]  [Build]  [Alliance]  [News & Events]  |
+| BREADCRUMBS   Home / Category / Subcategory / Title                      |
++--------------------------------------------------------------------------+
+| POLICIES                                                                 |
+| Summary / introduction                                                   |
++--------------------------------------------------------------------------+
+| FILTER / SORT   policy type / status / date                              |
++--------------------------------------------------------------------------+
+| Policy title  /  Policy type                                             |
+| Version  /  Last reviewed                                                |
+| [ View detail  -> ]                                                      |
++--------------------------------------------------------------------------+
+| Policy title  /  Policy type                                             |
+| Version  /  Last reviewed                                                |
+| [ View detail  -> ]                                                      |
++--------------------------------------------------------------------------+
+| PAGINATION / LOAD MORE (when required)                                   |
++--------------------------------------------------------------------------+
+| NEWSLETTER CTA   Stay connected with CHERI                               |
+| FOOTER  Updates | CHERI Alliance | Legal | Socials | Copyright           |
++--------------------------------------------------------------------------+
+
+RELATIONSHIP NOTES
+- Policy has one owner Organisation when known; optional policy.related[] is directed.
+
+
+
+==============================================================================
+16 — REDIRECTS -> REDIRECT (ROUTING-ONLY; NO LIST PAGE)
+==============================================================================
+
+FILES / ROUTES
+Collection: _redirects  (site.redirects; output: true)
+Source record: _redirects/<legacy-route-slug>.md
+List source page: NONE
+List layout: NONE
+Detail layout: NONE (plugin generates minimal HTML)
+Plugin-customisable redirect layout: _layouts/redirect.html
+URL (source): page.permalink is the OLD, public source route.
+URL (target): page.redirect_to is the verified NEW route.
+
+REDIRECT FRONT MATTER — COMPLETE MINIMAL EXAMPLE
+FILE: _redirects/hardware-sonata.md
+---
+permalink: "/hardware/sonata/"
+redirect_to: "/products/sonata/"
+---
+
+DIRECTORY ROUTE — COMPLETE MINIMAL EXAMPLE
+FILE: _redirects/hardware-index.md
+---
+permalink: "/hardware/"
+redirect_to: "/products/"
+---
+
+REPOSITORY ROUTE — COMPLETE MINIMAL EXAMPLE
+FILE: _redirects/software-cheribsd.md
+---
+permalink: "/software/cheribsd/"
+redirect_to: "/repositories/cheribsd/"
+---
+
+REPOSITORY DIRECTORY ROUTE — COMPLETE MINIMAL EXAMPLE
+FILE: _redirects/software-index.md
+---
+permalink: "/software/"
+redirect_to: "/repositories/"
+---
+
+DATA CONTRACT
+[R] permalink       EXACT legacy source URL. Include trailing slash as published.
+[R] redirect_to      Existing verified relative-to-site-root target route or
+                     approved external HTTPS URL. Check the final endpoint.
+[O] sitemap: false  Metadata only when needed by the actual sitemap plugin.
+[NO] layout, title, summary, navigation, image, resources, forms or body.
+[NO] listing, category, subcategory, primary entity, canonical Markdown H1.
+[D] generated page = HTML redirect with a fallback link, no site chrome.
+
+REDIRECT OUTPUT WIREFRAME (ONLY IF BROWSER DOES NOT AUTO-NAVIGATE)
++--------------------------------------------------------------------------+
+| PAGE MOVED                                                               |
++--------------------------------------------------------------------------+
+| This URL has moved.                                                      |
+| [ Continue to destination  -> ]                                          |
+| No header, breadcrumbs, navigation, cards or forms                       |
++--------------------------------------------------------------------------+
+
+ROUTE MAPPING RULES
+- `_redirects` is the SOLE registry for old routes that are changing.
+- Content destination pages do NOT also declare `redirect_from` for those
+  same paths. Avoid duplicate output conflicts and split ownership.
+- Keep unchanged public URLs as-is; no redirect page is required.
+- No list page or homepage card for redirect records.
+- Do not include redirect records in search, related content, nav, sitemap.
+- No regular site header, footer, breadcrumbs, newsletter CTA or H1.
+- No unverified, external, circular, chained or self-referential targets.
+- Never redirect an old URL that a live page still occupies.
+- Canonical old source may redirect directly to the final destination;
+  skip intermediate stages, e.g. old software -> final repositories.
+- GitHub Pages Jekyll plugin output is HTML with meta refresh, NOT true
+  server-side HTTP 301/302 status. Do not promise status-code redirects.
+- Source fragment identifiers (#section) and query strings are fragile;
+  test important historical deep links and preserve aliases explicitly.
+- Old CSS, image, PDF and file paths: RETAIN/copy static assets as needed;
+  a redirect HTML page is not a reliable binary-asset redirect.
+- Redirect files are normal `.md` collection documents with YAML only;
+  plugin creates the output. Do NOT use special hosting `_redirects` syntax
+  (e.g., a Netlify whitespace-delimited redirects file).
+
+JEKYLL / PLUGIN CONTRACT
+- `jekyll-redirect-from` already appears in the repository Gemfile.
+- Register `collections.redirects.output: true` in `_config.yml`.
+- Confirm the plugin is activated under both local and GitHub Pages builds.
+- If customising the plugin fallback page, `_layouts/redirect.html` is the
+  documented filename; the plugin provides `page.redirect.to` and
+  `page.redirect.from` (NOT the legacy `page.redirect` string).
+- Current repository `_layouts/redirect.html` uses legacy page.redirect;
+  REPLACE or adapt this layout before routing through `redirect_to`.
+- No `_layouts/lists/redirects.html` or `_layouts/details/redirect.html`
+  required with the supported plugin; this is a routing exception.
+- Existing legacy manual redirects must be catalogued/migrated carefully.
+- Verify emitted `_site/hardware/sonata/index.html` contains the expected
+  target and fallback link; test real page destination end to end.
+
+REDIRECTS / KRAMDOWN
+- YAML-only `_redirects/<slug>.md`; no Markdown body and no front-matter H1.
+- Human-authored explanatory content belongs on destination pages, not here.
+- Redirect examples use canonical plain YAML syntax; no Kramdown attributes.
+
+
+
+==============================================================================
+17 — ORDINARY PAGES (STANDARD / LANDING / FORM)
+==============================================================================
+FILESYSTEM (MANDATORY FOR NEW / MIGRATED pages/ CONTENT)
+  pages/<category>/<subcategory>/<page>.md
+  assets/images/<category>/<subcategory>/<page>/
+  assets/images/common/
+
+PAGE TEMPLATE FAMILY
+  _layouts/page/standard.html      layout: page/standard
+  _layouts/page/landing.html       layout: page/landing
+  _layouts/page/form.html          layout: page/form
+
+CATEGORY / SUBCATEGORY PATH KEY EXAMPLES
+  Discover CHERI / Why CHERI     -> discover/why-cheri/
+  Discover CHERI / Understand   -> discover/understand/
+  Discover CHERI / Resources    -> discover/resources/
+  Adopt / Business Case         -> adopt/business-case/
+  Adopt / Assurance & Adoption  -> adopt/assurance-and-adoption/
+  Adopt / Policy                -> adopt/policy/
+  Build / Software Developers   -> build/software-developers/
+  Build / Technology            -> build/technology/
+  Build / Platforms             -> build/platforms/
+  Build / Software Ecosystem    -> build/software-ecosystem/
+  CHERI Alliance / About        -> alliance/about-and-governance/
+  CHERI Alliance / Leadership   -> alliance/leadership/
+  CHERI Alliance / Membership   -> alliance/membership/
+  CHERI Alliance / Legal        -> alliance/legal-and-policies/
+  News & Events / News          -> news-and-events/news-and-analysis/
+  News & Events / Events        -> news-and-events/events-and-archive/
+  News & Events / People        -> news-and-events/people-and-opportunities/
+
+17.1 STANDARD CONTENT PAGE — page/standard
+
+FILE
+  pages/build/technology/spatial-memory-safety.md
+
+TARGET FRONT MATTER (FULL EXAMPLE)
+---
+layout: page/standard
+title: "Spatial Memory Safety"
+summary: "How capability bounds protect memory accesses."
+permalink: "/build/technology/spatial-memory-safety/"
+navigation:
+  header:
+    category: "Build"
+    subcategory: "Technology"
+image:
+  src: "/assets/images/build/technology/spatial-memory-safety/bounds-diagram.svg"
+  alt: "Diagram showing memory bounds enforced by a capability"
+resources:
+  - type: documentation
+    label: "CHERI technical resources"
+    url: "/discover/resources/documentation-and-guides/"
+---
+
+FRONT-MATTER FIELDS
+  REQUIRED  layout, title, summary, permalink, navigation.header
+  OPTIONAL  image, resources, forms, navigation.footer.category
+  BODY      H2/H3 explanatory sections, paragraphs, diagrams, tables, code
+  RELATED   curated via the source page's related[]; no mirrored reverse arrays
+  IMAGES    assets/images/build/technology/spatial-memory-safety/
+
+MARKDOWN BODY (EXAMPLE)
+  ## How memory bounds work
+  Explanation and referenced diagram...
+  ## Capabilities and spatial safety
+  Additional explanatory content...
+
+ASCII WIREFRAME — STANDARD CONTENT PAGE
++--------------------------------------------------------------------------+
+| SITE HEADER   [Discover]  [Adopt]  [Build]  [Alliance]  [News & Events]  |
+| BREADCRUMBS   Home / Category / Subcategory / Title                      |
++--------------------------------------------------------------------------+
+| STANDARD CONTENT PAGE                                                    |
+| Content page title                           | [ OPTIONAL IMAGE ]        |
+| Summary / introduction                       |                           |
++--------------------------------------------------------------------------+
+| INTRODUCTION                                 | RELATED RESOURCES         |
+| Topic sections (H2/H3)                       | Documentation / downloads |
+| Full / left / right inline images            | Supporting links          |
+| Diagrams, tables or code                     |                           |
++--------------------------------------------------------------------------+
+| RELATED / GENERATED LINKS                                                |
+| RELATED PAGES   [ Page ]  [ Page ]                                       |
+| NEXT STEP   [ Learn more ]                                               |
++--------------------------------------------------------------------------+
+| NEWSLETTER CTA   Stay connected with CHERI                               |
+| FOOTER  Updates | CHERI Alliance | Legal | Socials | Copyright           |
++--------------------------------------------------------------------------+
+
+17.2 SUBCATEGORY LANDING — page/landing
+
+FILE
+  pages/build/technology/index.md
+
+TARGET FRONT MATTER (FULL EXAMPLE)
+---
+layout: page/landing
+title: "Technology"
+summary: "How CHERI capabilities enforce access boundaries."
+permalink: "/build/technology/"
+navigation:
+  header:
+    category: "Build"
+    subcategory: "Technology"
+image:
+  src: "/assets/images/build/technology/index/hero.webp"
+  alt: "Technical illustration of CHERI capability boundaries"
+landing:
+  content_group: technology
+  card_style: technical
+---
+
+FRONT-MATTER FIELDS
+  REQUIRED  layout, title, summary, permalink, navigation.header
+  OPTIONAL  image, landing.content_group/card_style, resources, forms
+  BODY      introduction, featured topics, curated editorial text
+  CARDS     existing navigation-page links or taxonomy rules, not hardcoded URLs
+  IMAGES    assets/images/build/technology/index/
+
+ASCII WIREFRAME — LANDING PAGE
++--------------------------------------------------------------------------+
+| SITE HEADER   [Discover]  [Adopt]  [Build]  [Alliance]  [News & Events]  |
+| BREADCRUMBS   Home / Category / Subcategory / Title                      |
++--------------------------------------------------------------------------+
+| CATEGORY / SUBCATEGORY LANDING                                           |
+| Title + summary + optional image                                         |
++--------------------------------------------------------------------------+
+| INTRODUCTION / KEY MESSAGES                                              |
++--------------------------------------------------------------------------+
+| FEATURED TOPICS                                                          |
+| [ Topic card ]      [ Topic card ]      [ Topic card ]                   |
++--------------------------------------------------------------------------+
+| GUIDES / RESOURCES / RELATED PAGES                                       |
+| [ Guide card ]      [ Resource card ]                                    |
++--------------------------------------------------------------------------+
+| NEWSLETTER CTA   Stay connected with CHERI                               |
+| FOOTER  Updates | CHERI Alliance | Legal | Socials | Copyright           |
++--------------------------------------------------------------------------+
+
+CATEGORY LANDING EXCEPTION
+  pages/build/index.md -> /build/
+  pages/discover/index.md -> /discover/
+  pages/adopt/index.md -> /adopt/
+  pages/alliance/index.md -> /alliance/
+  pages/news-and-events/index.md -> /news-and-events/
+  Homepage only: pages/index.md -> /
+
+CATEGORY LANDING (FRONT MATTER DIFFERENCE)
+---
+layout: page/landing
+title: "Build"
+summary: "Developer resources, platforms and CHERI technology."
+permalink: "/build/"
+navigation:
+  header:
+    category: "Build"
+landing:
+  content_group: build
+  card_style: technical
+---
+
+NOTE: category landing pages omit header.subcategory; detail pages and normal
+      three-level pages require category and subcategory.
+
+17.3 CONTACT / ENQUIRY PAGE — page/form
+
+FILE
+  pages/alliance/membership/contact.md
+
+TARGET FRONT MATTER (FULL EXAMPLE)
+---
+layout: page/form
+title: "Contact the Alliance"
+summary: "Enquire about membership, programmes or CHERI technology."
+permalink: "/alliance/membership/contact/"
+navigation:
+  header:
+    category: "CHERI Alliance"
+    subcategory: "Membership"
+  footer:
+    category: "CHERI Alliance"
+forms:
+  - contact
+---
+
+FRONT-MATTER FIELDS
+  REQUIRED  layout, title, summary, permalink, navigation.header, forms
+  OPTIONAL  navigation.footer.category, image, resources
+  FORMS     each item is a YAML key from _data/forms.yml
+  BODY      introduction, privacy guidance, other contact routes
+  IMAGES    assets/images/alliance/membership/contact/ (only if needed)
+  RENDER    `forms: [contact]` resolves to submission.mode: external: render
+            its external-link CTA, description and privacy notice only; do
+            NOT render local topic/name/email/message fields.
+            Section 04 POST wireframe applies only if mode becomes post with
+            a verified endpoint and tested server responses.
+
+ASCII WIREFRAME — FORM PAGE (CONTACT EXAMPLE USES `external` MODE)
++--------------------------------------------------------------------------+
+| SITE HEADER   [Discover]  [Adopt]  [Build]  [Alliance]  [News & Events]  |
+| BREADCRUMBS   Home / Category / Subcategory / Title                      |
++--------------------------------------------------------------------------+
+| FORM PAGE                                                                |
+| Contact the Alliance                                                     |
+| Summary / introduction                                                   |
++--------------------------------------------------------------------------+
+| EXTERNAL FORM LINK                           | CONTACT CONTEXT           |
+| [ Open the published Alliance form -> ]      | Other support channels    |
+| Provider collects and validates information  | Privacy policy            |
+| No on-page inputs or submit button           |                           |
++--------------------------------------------------------------------------+
+| RELATED / GENERATED LINKS                                                |
+| OTHER CONTACT ROUTES / HELP                                              |
++--------------------------------------------------------------------------+
+| NEWSLETTER CTA   Stay connected with CHERI                               |
+| FOOTER  Updates | CHERI Alliance | Legal | Socials | Copyright           |
++--------------------------------------------------------------------------+
+
+17.4 PAGE FILE + IMAGE FOLDER EXAMPLES — ALL FIVE NAVIGATION SECTIONS
+
+DISCOVER CHERI
+  pages/discover/why-cheri/why-cheri.md
+  assets/images/discover/why-cheri/why-cheri/
+
+ADOPT
+  pages/adopt/business-case/the-business-case.md
+  assets/images/adopt/business-case/the-business-case/
+
+BUILD
+  pages/build/technology/spatial-memory-safety.md
+  assets/images/build/technology/spatial-memory-safety/
+
+CHERI ALLIANCE
+  pages/alliance/membership/contact.md
+  assets/images/alliance/membership/contact/
+
+NEWS & EVENTS
+  pages/news-and-events/news-and-analysis/latest-news.md
+  assets/images/news-and-events/news-and-analysis/latest-news/
+
+17.5 EDITORIAL AND TECHNICAL RULES
+
+- File path is not automatically the public URL; preserve `permalink`.
+- If same image is used in multiple pages: assets/images/common/<filename>.
+- If a page image is unique: use its owning page assets folder.
+- News/event/profile DETAIL content files use _posts/_events/_people etc.
+- All image assets for these collection details STILL follow the conceptual
+  category/subcategory/slug structure in assets/images/.
+- One title from front matter; body starts H2; no breadcrumb Markdown.
+- Never duplicate generated citations, prerequisites, schedule, resource
+  panels or semantic facts in Markdown; write supplementary context only.
+- `summary` shown on lists/detail but not repeated as body prose.
+- `navigation.header` is context; does not register every detail as menu link.
+- `navigation.footer.category` appears only on pages actually linked in footer.
+- Missing optional image = text-only layout, not broken image placeholder.
+- Unspecified images/links are omitted, never fabricated.
+- User-provided assets are reused and migrated; don't lose diagrams and alt text.
+
+
+
+==============================================================================
+17.6 EXISTING-SITE COMPATIBILITY / SPECIAL CASES (PRESERVE, NOT REDESIGN AWAY)
+
+COLLECTION DIRECTORIES BEYOND FILTERED LISTS
+- `/people/` = ALL person profiles, not speakers only. Reuse `lists/speakers`
+  as a person-capable list renderer with `listing.filter: all` (no duplicate
+  data): neutral Person cards and "View profile", not "View speaker".
+- `/organisations/` = ALL organisation profiles, not members only. Reuse
+  `lists/members` as an organisation-capable list renderer with
+  `listing.filter: all`: neutral Organisation cards and "View organisation",
+  not "View member". Member tiers appear only for active members.
+- All People and All Organisations listing records (target YAML examples):
+
+FILE: pages/news-and-events/people-and-opportunities/all-people.md
+---
+layout: lists/speakers
+title: "People"
+permalink: "/people/"
+navigation:
+  header:
+    category: "News & Events"
+    subcategory: "People & Opportunities"
+listing:
+  collection: people
+  filter: all
+---
+
+FILE: pages/alliance/membership/all-organisations.md
+---
+layout: lists/members
+title: "Organisations"
+permalink: "/organisations/"
+navigation:
+  header:
+    category: "CHERI Alliance"
+    subcategory: "Membership"
+listing:
+  collection: organisations
+  filter: all
+---
+
+- Both generic views use the same ten template families: no additional
+  list/detail layouts are required; every record uses its entity detail
+  template, with labels/facts conditioned on role/membership metadata.
+- `/alliance/leadership/governing-board/` = CURATED board roster. Preserve the
+  existing nine people and order. MOVE old `_data/governing-board.yml` membership
+  and ordering into the corresponding Person front matter as:
+    person.governance.board_order: <integer>
+    person.governance.board_role: <text>  (optional)
+  Any Person with a numeric `board_order` appears in the board roster;
+  sort ascending and reject duplicate order numbers. No separate roster YAML.
+  Render person cards using the shared component, not copied card Markdown.
+- Non-member organisations and non-speaker people remain output records and
+  retain existing public routes; don't force all profiles into member/speaker lists.
+- A person may be CURRENTLY employed by University of Cambridge AND a private
+  company; show both as separate roles, not one 'primary' and one 'secondary'.
+- A company's People view includes the same person even when they concurrently
+  work for a university; affiliation is not exclusive or a member-only flag.
+- Show role/title associated with EACH organisation; do not collapse into a
+  single generic job_title or resolve the conflict by choosing one employer.
+
+HOMEPAGE / NAVIGATION / COMPONENTS
+- `pages/index.md` homepage retains its unique messaging, featured content,
+  slider/carousel and sectional card groups. Define homepage-specific `page/landing`
+  variant or explicit homepage layout; DO NOT replace it with a generic directory.
+- Global header megamenu retains 5 categories and all configured subcategory
+  destinations. `navigation.header` classifies individual pages; it does not
+  automatically create every header link. Reconcile the central menu registry
+  after moving source files, avoiding missing destinations.
+- Footer destination pages alone register `navigation.footer.category`.
+  Footer headings/order global; no duplicate legacy footer link tree.
+- Global newsletter CTA remains separate from optional page-level forms.
+- Governing Board, category landing pages and special CTA/return pages retain
+  their content, navigation destinations, and approved public URL/redirect.
+
+PUBLISHED OUTPUT PARITY
+- Produce a before/after table for every current URL, fragment ID, image/PDF,
+  person/organisation/event relation and source collection item.
+- Maintain `site.time` event filtering, old `end-date` mapping to `end_date`,
+  old `member/speaker` flags, `organization`, and original `authors/speakers`
+  until semantic FRONT MATTER produces identical visible relationships.
+- Current `_includes/chronological-items.html`, `_includes/listing.html`,
+  `_includes/relationships.html`, footer and breadcrumbs all require updating
+  for the new field and collection names; moving Markdown by itself is NOT enough.
+- Implement and test pages build under the site's `github-pages` Gemfile;
+  test footer, anchors, forms, redirects, routing and event schedules in output.
+
+18 — BUILD VALIDATION / MIGRATION / ACCEPTANCE
+==============================================================================
+
+FILES / FRONT MATTER
+[ ] All 10 entity collections, 10 lists layouts, 10 details layouts present.
+[ ] `_redirects` exists as an ELEVENTH, ROUTING-ONLY collection; no list or
+    conventional detail layout; output: true and working plugin output.
+[ ] `_layouts/redirect.html` adapted to plugin page.redirect.to or replaced.
+[ ] Every redirect file has only `permalink`, `redirect_to` (optional sitemap).
+[ ] Redirects produce HTML with valid fallback link and no site chrome.
+[ ] No duplicated source path from `redirect_from` and `_redirects`.
+[ ] Redirect sources/targets unique, no circular/chained/404 destinations.
+[ ] Redirects kept out of nav, search, related pages and sitemap.
+[ ] Legacy page routes and section deep links checked for preservation.
+[ ] All 10 entity detail YAML examples and 12 Section 06–15 listing YAML
+    examples parse (Events provides three listings); Section 17.6 supplies
+    two additional generic list configurations, for 24 list/detail examples
+    in total. Schematic placeholders are never treated as publishable URLs.
+[ ] Products use _products/lists/products/details/product and product: YAML.
+[ ] Repositories use _repositories/lists/repositories/details/repository
+    and repository: YAML; each true repo has a verified source link.
+[ ] Legacy /hardware/* and /software/* URLs resolve via tested `_redirects`
+    files, including the directory index URLs.
+[ ] No legacy collection records lost: taxonomy-specific migration inventory.
+[ ] All 20 list/detail ASCII wireframes remain present.
+[ ] All diagrams use the same 76-character ASCII grid; no jagged borders or
+    overflowing columns; forms, pages and redirects have tidy diagrams.
+[ ] Homepage, all people, all organisations and curated board rosters retain
+    their existing visible content and functional routes.
+[ ] Governing Board roster is generated from person.governance.board_order;
+    preserve nine members and order; retire _data/governing-board.yml after parity.
+[ ] _posts is the ONLY news collection; site.posts drives lists/posts.
+[ ] _posts dates in YYYY-MM-DD-slug filename, post date and permalink stable.
+[ ] pages/<category>/<subcategory>/<page>.md for new normal/list pages.
+[ ] assets/images/<category>/<subcategory>/<page>/ or images/common.
+[ ] All entity fields are semantic nested YAML; snake_case used for single
+    leaf properties; working_group remains the canonical entity group.
+[ ] Date/end_date and redirect_to remain top-level compatibility fields.
+[ ] All full paths in examples match their YAML nesting (including []).
+[ ] policy.dates.effective/reviewed is migrated without losing existing values.
+[ ] All references live in owning front matter; no _data relationships registry.
+[ ] Form action text is submission.label across modes; provider contracts mapped.
+[ ] Every detail includes title/summary/navigation.header; list-page summary
+    is optional, and omission creates no empty introduction block.
+[ ] Entity semantic CTA fields (registration, website, professional links,
+    form submission) are not copied into resources; session-scoped files are.
+[ ] No H1 duplicated in Markdown body; facts not duplicated in prose.
+[ ] All Markdown bodies are SIMPLE KRAMDOWN: headings H2/H3, lists, links,
+    images, pipe tables and fenced code; templates own layout/visuals.
+[ ] No raw HTML, source-breadcrumbs or hand-authored cards/facts/forms.
+[ ] Image-specific Kramdown class lists remain allowed in Markdown bodies;
+    preserve `.image-left`, `.image-right`, `.image-full` and existing fit/crop.
+[ ] Left/right/full image alignment visually matches the original after
+    asset moves and CSS migration; no image alignment class is silently lost.
+[ ] kramdown.auto_ids / fragment strategy chosen and old anchors verified.
+[ ] Body examples render with actual repository Kramdown configuration.
+[ ] Build uses the actual GitHub Pages/Jekyll 3 dependency set; no reliance
+    on unsupported `render_with_liquid: false`.
+[ ] Literal Liquid code examples are protected with verified `{% raw %}`
+    wrappers (only permitted authored-body Liquid tags); the output displays
+    the intended literal code without executing it.
+[ ] Unknown field/typo/invalid enum produces validation warning or failure.
+[ ] All local images/PDFs and remote CTA URLs verified before publishing.
+[ ] Event clock bounds, if supplied, are a verified start/end pair in the
+    declared IANA timezone; date-only events disclose date-only precision.
+[ ] Guide strip has no non-schema LAST UPDATED value; prerequisites and
+    publication citations render once, from their semantic YAML sources.
+
+NAVIGATION / FOOTER
+[ ] navigation.header.category and subcategory valid for page location.
+[ ] Footer only navigation.footer.category; absent on unlisted pages.
+[ ] Footer headings: Updates | CHERI Alliance | Legal.
+[ ] `_redirects` records never registered in header/footer navigation.
+[ ] Footer page links gathered from front matter; no duplicate global menu.
+[ ] Footer destination uses page title + permalink; no extra config flags.
+[ ] Breadcrumb URLs are real; header/footer relationships are distinct.
+
+RELATIONSHIPS
+[ ] Singular FKs and plural front-matter arrays resolve to real records.
+[ ] Reverse relationship cards generated; no duplicate backreferences.
+[ ] M:N front-matter entries valid (speakers, authors, compatibility).
+[ ] Paper author order, speaker/session role, all simultaneous jobs retained.
+[ ] No orphan/duplicate associations, missing slugs, unverified profiles.
+[ ] `current_members` requires BOTH is_member:true AND status:active;
+    missing membership status is excluded from that filtered list and flagged.
+[ ] All People/Organisations lists use filter:all with neutral labels;
+    non-speakers/nonmembers never appear falsely marked as such.
+[ ] Member and Speaker list eligibility derived from semantic entity fields.
+[ ] Organisation related news shown ONLY for explicit related[] post links;
+    not inferred from employed authors or general mentions.
+[ ] Multiple CURRENT employers per Person render at once, with separate titles.
+[ ] Two-plus organisers per Event render at once; none forcibly primary.
+[ ] Both employers' Organisation People views include the same Person.
+[ ] Past affiliations shown separately; overlap of current periods allowed.
+[ ] No `_data/relationships.yml` or other shared association registry.
+[ ] Governing Board membership/order likewise lives on each Person record.
+
+EVENTS / SCHEDULE
+[ ] lists/events and details/event both implemented and documented.
+[ ] Upcoming and Past events list pages have full YAML examples.
+[ ] Multi-day schedule is nested event.schedule[].sessions[].
+[ ] Day dates are unique/ordered and within date/end_date range.
+[ ] Session IDs and optional presentation IDs unique per event.
+[ ] HH:MM values valid in IANA event.timezone; start < end.
+[ ] Same-track conflicts flagged; parallel tracks render separately.
+[ ] event.speakers[].session references a real session/presentation ID.
+[ ] Speaker cards derive from event.speakers[]; no duplicated schedule credits.
+[ ] Date/start/end summary checked against actual day schedule.
+[ ] Status automatic under the IANA timezone rules; optional time_bounds
+    uses verified whole-event clock times, never an incomplete timetable.
+[ ] `upcoming` includes Upcoming and Ongoing; `past` excludes both;
+    events in filtered views are not duplicated within a listing.
+[ ] Event-specific `resources[].presentation_id` / `session_id` resolve to
+    real programme IDs and are mutually exclusive.
+[ ] No stale hardcoded 'upcoming' event status.
+[ ] Tabs/accordions on multi-day schedule accessible and keyboard friendly.
+
+FORMS
+[ ] _data/forms.yml contains `contact` and `newsletter` keys.
+[ ] Page forms: [form_key] resolves and uses one shared renderer.
+[ ] Field IDs unique across multiple forms on one page; labels connected.
+[ ] Field types and option values validated; required fields enforced.
+[ ] Privacy link shown for collection of personal information.
+[ ] External/disabled never offers a fake submit button. The `contact`
+    external-mode page shows only the external provider CTA, not local inputs.
+[ ] POST-mode page fields and responses appear only with a verified endpoint.
+[ ] POST only with real backend, server validation + error/success states.
+[ ] Existing externally published contact/newsletter URLs preserved.
+[ ] Map legacy `size` -> `width`, `submit` -> `submission.label` deliberately.
+[ ] If provider field-name contract differs, preserve its wire format.
+
+DESIGN / ACCESSIBILITY
+[ ] Poppins used, code monospace allowed; focus/contrast checked.
+[ ] Right image/facts on standard details; post full-width image.
+[ ] Guide non-sticky documentation layout; mobile action hierarchy correct.
+[ ] Real images and diagrams reused; missing images do not leave gaps.
+[ ] Relevant cards/relationships derived at bottom, links real.
+[ ] Existing published URLs or redirects, authors, membership, paper data preserved.
+
+MIGRATION ORDER
+1. Freeze current routes, assets, public aliases and source record IDs.
+2. Add layouts: lists/*, details/*, page/* plus shared components.
+3. Move news _news to built-in _posts (date filename + route parity).
+4. Migrate _hardware -> _products and _software -> _repositories,
+   classifying directory/overview/certification records separately.
+   Create `_redirects/*.md` source-to-target mappings for /hardware/*
+   and /software/*, including directory URLs; do not duplicate redirect_from.
+   Enable `redirects` collection output; update existing custom redirect
+   layout to the plugin API and verify generated redirect HTML.
+5. Introduce canonical semantic YAML fields; adapt existing templates.
+6. Migrate scalar and plural links into the owning front matter.
+7. Migrate authors, event speakers, organisers, simultaneous person
+   employers and product/repository links; generate all inverse views.
+   Migrate curated Governing Board membership/order to Person front matter.
+8. Migrate Event Markdown programme to multi-day schedule YAML carefully;
+   verify dates/titles/times and event.speakers[] session references.
+9. Move footer destinations to page navigation.footer.category.
+10. Centralise reusable forms; confirm external vs real POST behavior.
+11. Migrate page/images folders without breaking published URLs.
+12. Simplify Markdown bodies into Kramdown; remove old NON-IMAGE layout
+    classes, manual breadcrumbs/hero/facts markup; KEEP image-specific
+    `.image-left`, `.image-right`, `.image-full`, established crop/fit classes,
+    complete content, literal-Liquid raw wrappers, fragment aliases, tables
+    and working links.
+13. Automated Jekyll build, generated-redirect tests, visual QA desktop/mobile,
+    navigation, forms, links, accessibility and source-to-output parity.
+14. Retire legacy schema fields only after output parity is confirmed;
+    retain legacy URL redirects indefinitely or per approved policy.
+
+IMPLEMENTATION REFERENCES
+- Existing _data/forms.yml, _includes/form-fields.html, _includes/footer.html.
+- Existing _layouts/events.html and _layouts/event.html to be migrated.
+- Existing _hardware/_software content and legacy routes to be classified.
+- Existing `_layouts/redirect.html` must adopt `page.redirect.to` for plugin
+  output; `_redirects` collection must be activated and redirects validated.
+- Kramdown body conventions use the site's existing Markdown processor;
+  see Section 05.1 and fragment/anchor migration requirements.
+- Plugin docs: https://github.com/jekyll/jekyll-redirect-from
+- Source repository link for sample CheriBSD: github.com/CTSRD-CHERI/cheribsd.
+- Jekyll: https://jekyllrb.com/docs/front-matter/
+- Jekyll: https://jekyllrb.com/docs/structure/
+- GitHub Pages gem dependency pin (Jekyll 3.10.0 when this spec was written):
+  https://github.com/github/pages-gem/blob/master/lib/github-pages/dependencies.rb
+- Liquid raw-wrapper guidance and Jekyll 4-only render_with_liquid flag:
+  https://jekyllrb.com/docs/liquid/tags/
+- Proposed content/data model is a target, not a claim it is deployed.
+
+END OF CONSOLIDATED SPECIFICATION — v5.3

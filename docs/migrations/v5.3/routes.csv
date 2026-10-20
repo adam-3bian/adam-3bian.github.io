@@ -1,0 +1,739 @@
+old_url,new_url,behaviour
+/,/,Retained
+/404.html,/404.html,Retained
+/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences/,/news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences/,HTML redirect
+/reports/,/reports/,Retained
+/speakers/,/news-and-events/people-and-opportunities/speakers/,HTML redirect
+/groups/,/groups/,Retained
+/news-and-events/,/news-and-events/,Retained
+/build/,/build/,Retained
+/competition-law-statement/,/competition-law-statement/,Retained
+/ip-policy/,/policies/ip-policy/,HTML redirect
+/code-of-conduct/,/code-of-conduct/,Retained
+/contact/,/alliance/membership/contact/,HTML redirect
+/alliance/,/alliance/,Retained
+/policies/,/policies/,Retained
+/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd/,/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd/,HTML redirect
+/hardware/,/products/,HTML redirect
+/news/,/news/,Retained
+/people/,/people/,Retained
+/CHERI-seL4-Exercises/,/CHERI-seL4-Exercises/,Retained
+/CHERI-seL4-Exercises/print.html,/reference/CHERI-seL4-Exercises/print.html,HTML redirect
+/events/,/events/,Retained
+/cheri-or-cheriot-the-answer-is-not-what-you-think/,/news/cheri-or-cheriot-the-answer-is-not-what-you-think/,HTML redirect
+/linux-roadmap/,/linux-roadmap/,Retained
+/linux-roadmap/research.html,/reference/linux-roadmap/research.html,HTML redirect
+/linux-roadmap/toc.html,/reference/linux-roadmap/toc.html,HTML redirect
+/linux-roadmap/intro.html,/reference/linux-roadmap/intro.html,HTML redirect
+/linux-roadmap/prior-work.html,/reference/linux-roadmap/prior-work.html,HTML redirect
+/linux-roadmap/print.html,/reference/linux-roadmap/print.html,HTML redirect
+/linux-roadmap/techreports.html,/reference/linux-roadmap/techreports.html,HTML redirect
+/linux-roadmap/cover.html,/reference/linux-roadmap/cover.html,HTML redirect
+/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology/,/news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology/,HTML redirect
+/privacy-policy/,/policies/privacy-policy/,HTML redirect
+/members/,/alliance/leadership/members/,HTML redirect
+/guides/,/guides/,Retained
+/cheri-zephyr-v0-4-0-release/,/news/cheri-zephyr-v0-4-0-release/,HTML redirect
+/beyond-software-patching/,/news/beyond-software-patching/,HTML redirect
+/adopt/,/adopt/,Retained
+/legal-and-policies/,/legal-and-policies/,Retained
+/discover/,/discover/,Retained
+/morello-return/,/morello-return/,Retained
+/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support/,/news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support/,HTML redirect
+/subscribe/,/news-and-events/news-and-analysis/subscribe-newsletter/,HTML redirect
+/organisations/,/organisations/,Retained
+/trademark/,/trademark/,Retained
+/papers/,/papers/,Retained
+/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl/,/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl/,HTML redirect
+/cheri-tag-bit-transport-overlay-standard-version-0-9-released/,/news/cheri-tag-bit-transport-overlay-standard-version-0-9-released/,HTML redirect
+/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software/,/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software/,HTML redirect
+/cheriot-1-0-specification-released/,/news/cheriot-1-0-specification-released/,HTML redirect
+/innovate-uk-project-winner-university-of-birmingham/,/news/innovate-uk-project-winner-university-of-birmingham/,HTML redirect
+/cheri-enabled/,/adopt/assurance-and-adoption/about-cheri-enabled/,HTML redirect
+/software/,/repositories/,HTML redirect
+/reference/CHERI-seL4-Exercises/print.html,/reference/CHERI-seL4-Exercises/print.html,Retained
+/reference/linux-roadmap/research.html,/reference/linux-roadmap/research.html,Retained
+/reference/linux-roadmap/toc.html,/reference/linux-roadmap/toc.html,Retained
+/reference/linux-roadmap/intro.html,/reference/linux-roadmap/intro.html,Retained
+/reference/linux-roadmap/prior-work.html,/reference/linux-roadmap/prior-work.html,Retained
+/reference/linux-roadmap/print.html,/reference/linux-roadmap/print.html,Retained
+/reference/linux-roadmap/techreports.html,/reference/linux-roadmap/techreports.html,Retained
+/reference/linux-roadmap/cover.html,/reference/linux-roadmap/cover.html,Retained
+/reference/CHERI-seL4-Exercises/missions/,/reference/CHERI-seL4-Exercises/missions/,Retained
+/reference/CHERI-seL4-Exercises/cover/,/reference/CHERI-seL4-Exercises/cover/,Retained
+/reference/CHERI-seL4-Exercises/introduction/,/reference/CHERI-seL4-Exercises/introduction/,Retained
+/reference/CHERI-seL4-Exercises/introduction/ccc.html,/reference/CHERI-seL4-Exercises/introduction/ccc.html,Retained
+/reference/CHERI-seL4-Exercises/introduction/cross-compilation-execution.html,/reference/CHERI-seL4-Exercises/introduction/cross-compilation-execution.html,Retained
+/reference/CHERI-seL4-Exercises/introduction/background.html,/reference/CHERI-seL4-Exercises/introduction/background.html,Retained
+/reference/CHERI-seL4-Exercises/appendix/,/reference/CHERI-seL4-Exercises/appendix/,Retained
+/reference/CHERI-seL4-Exercises/exercises/,/reference/CHERI-seL4-Exercises/exercises/,Retained
+/reference/CHERI-seL4-Exercises/missions/uninitialized-stack-frame-control-flow/,/reference/CHERI-seL4-Exercises/missions/uninitialized-stack-frame-control-flow/,Retained
+/reference/CHERI-seL4-Exercises/missions/buffer-overflow-control-flow/,/reference/CHERI-seL4-Exercises/missions/buffer-overflow-control-flow/,Retained
+/reference/CHERI-seL4-Exercises/exercises/subobject-bounds/,/reference/CHERI-seL4-Exercises/exercises/subobject-bounds/,Retained
+/reference/CHERI-seL4-Exercises/exercises/subobject-bounds/answers.html,/reference/CHERI-seL4-Exercises/exercises/subobject-bounds/answers.html,Retained
+/reference/CHERI-seL4-Exercises/exercises/control-flow-pointer/,/reference/CHERI-seL4-Exercises/exercises/control-flow-pointer/,Retained
+/reference/CHERI-seL4-Exercises/exercises/control-flow-pointer/answers.html,/reference/CHERI-seL4-Exercises/exercises/control-flow-pointer/answers.html,Retained
+/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-global/,/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-global/,Retained
+/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-global/answers.html,/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-global/answers.html,Retained
+/reference/CHERI-seL4-Exercises/exercises/cheri-tags/,/reference/CHERI-seL4-Exercises/exercises/cheri-tags/,Retained
+/reference/CHERI-seL4-Exercises/exercises/cheri-tags/answers.html,/reference/CHERI-seL4-Exercises/exercises/cheri-tags/answers.html,Retained
+/reference/CHERI-seL4-Exercises/exercises/type-confusion/,/reference/CHERI-seL4-Exercises/exercises/type-confusion/,Retained
+/reference/CHERI-seL4-Exercises/exercises/type-confusion/answers.html,/reference/CHERI-seL4-Exercises/exercises/type-confusion/answers.html,Retained
+/reference/CHERI-seL4-Exercises/exercises/debug-and-disassemble/,/reference/CHERI-seL4-Exercises/exercises/debug-and-disassemble/,Retained
+/reference/CHERI-seL4-Exercises/exercises/debug-and-disassemble/answers.html,/reference/CHERI-seL4-Exercises/exercises/debug-and-disassemble/answers.html,Retained
+/reference/CHERI-seL4-Exercises/exercises/cheri-allocator/,/reference/CHERI-seL4-Exercises/exercises/cheri-allocator/,Retained
+/reference/CHERI-seL4-Exercises/exercises/cheri-allocator/answers.html,/reference/CHERI-seL4-Exercises/exercises/cheri-allocator/answers.html,Retained
+/reference/CHERI-seL4-Exercises/exercises/compile-and-run/,/reference/CHERI-seL4-Exercises/exercises/compile-and-run/,Retained
+/reference/CHERI-seL4-Exercises/exercises/compile-and-run/answers.html,/reference/CHERI-seL4-Exercises/exercises/compile-and-run/answers.html,Retained
+/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-stack/,/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-stack/,Retained
+/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-stack/answers.html,/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-stack/answers.html,Retained
+/reference/linux-roadmap/goals/,/reference/linux-roadmap/goals/,Retained
+/reference/linux-roadmap/goals/distros.html,/reference/linux-roadmap/goals/distros.html,Retained
+/reference/linux-roadmap/goals/bootloaders-firmware.html,/reference/linux-roadmap/goals/bootloaders-firmware.html,Retained
+/reference/linux-roadmap/goals/user-space.html,/reference/linux-roadmap/goals/user-space.html,Retained
+/reference/linux-roadmap/goals/kernel.html,/reference/linux-roadmap/goals/kernel.html,Retained
+/reference/linux-roadmap/goals/toolchain.html,/reference/linux-roadmap/goals/toolchain.html,Retained
+/reference/linux-roadmap/goals/emulation-crossbuild.html,/reference/linux-roadmap/goals/emulation-crossbuild.html,Retained
+/reference/linux-roadmap/goals/testing.html,/reference/linux-roadmap/goals/testing.html,Retained
+/reference/source-versions/speakers/,/reference/source-versions/speakers/,Retained
+/reference/source-versions/upcoming-events/,/reference/source-versions/upcoming-events/,Retained
+/reference/source-versions/latest-news/,/reference/source-versions/latest-news/,Retained
+/reference/source-versions/newsletter/,/reference/source-versions/newsletter/,Retained
+/reference/source-versions/contact/,/reference/source-versions/contact/,Retained
+/reference/source-versions/members/,/reference/source-versions/members/,Retained
+/reference/source-versions/cost-of-memory-unsafety/,/reference/source-versions/cost-of-memory-unsafety/,Retained
+/reference/source-versions/past-events/,/reference/source-versions/past-events/,Retained
+/reference/source-versions/home/,/reference/source-versions/home/,Retained
+/reports/cheri-technology-for-cyber-security/,/reports/cheri-technology-for-cyber-security/,Retained
+/reports/cheri-adoption-and-diffusion-research/,/reports/cheri-adoption-and-diffusion-research/,Retained
+/reports/digital-security-by-design-programme-outcomes/,/reports/digital-security-by-design-programme-outcomes/,Retained
+/reports/an-introduction-to-cheri/,/reports/an-introduction-to-cheri/,Retained
+/reports/assessing-the-viability-of-an-open-source-cheri-desktop-software-ecosystem/,/reports/assessing-the-viability-of-an-open-source-cheri-desktop-software-ecosystem/,Retained
+/groups/cheri-c-cplusplus/,/groups/cheri-c-cplusplus/,Retained
+/groups/cheri-plus-safety/,/groups/cheri-plus-safety/,Retained
+/groups/promotion-and-ambassador-program/,/groups/promotion-and-ambassador-program/,Retained
+/groups/certification-working-group/,/groups/certification-working-group/,Retained
+/groups/cheri-in-soc/,/groups/cheri-in-soc/,Retained
+/groups/marketing/,/groups/marketing/,Retained
+/groups/cheri-zephyr/,/groups/cheri-zephyr/,Retained
+/groups/cheri-virtual-machines/,/groups/cheri-virtual-machines/,Retained
+/groups/cheri-qemu/,/groups/cheri-qemu/,Retained
+/groups/repository-management/,/groups/repository-management/,Retained
+/groups/cheri-for-sel4/,/groups/cheri-for-sel4/,Retained
+/groups/mmu-less-systems/,/groups/mmu-less-systems/,Retained
+/groups/cheri-linux-working-group/,/groups/cheri-linux-working-group/,Retained
+/groups/os-support-and-portability/,/groups/os-support-and-portability/,Retained
+/groups/rust-plus-cheri/,/groups/rust-plus-cheri/,Retained
+/groups/cheri-freertos/,/groups/cheri-freertos/,Retained
+/news-and-events/news-and-analysis/subscribe-newsletter/,/news-and-events/news-and-analysis/subscribe-newsletter/,Retained
+/news-and-events/news-and-analysis/latest-news/,/news-and-events/news-and-analysis/latest-news/,Retained
+/news-and-events/news-and-analysis/press-resources/,/news-and-events/news-and-analysis/press-resources/,Retained
+/news-and-events/events-and-archive/upcoming-events/,/news-and-events/events-and-archive/upcoming-events/,Retained
+/news-and-events/events-and-archive/cheri-blossoms/,/news-and-events/events-and-archive/cheri-blossoms/,Retained
+/news-and-events/events-and-archive/cheritech/,/news-and-events/events-and-archive/cheritech/,Retained
+/news-and-events/events-and-archive/past-events/,/news-and-events/events-and-archive/past-events/,Retained
+/news-and-events/people-and-opportunities/speakers/,/news-and-events/people-and-opportunities/speakers/,Retained
+/news-and-events/people-and-opportunities/job-opportunities/,/news-and-events/people-and-opportunities/job-opportunities/,Retained
+/build/software-ecosystem/,/build/software-ecosystem/,Retained
+/build/developers/choose-a-platform/,/guides/choose-a-platform/,HTML redirect
+/build/developers/run-cheri-in-simulation/,/guides/run-cheri-in-simulation/,HTML redirect
+/build/developers/technical-faq/,/guides/technical-faq/,HTML redirect
+/build/developers/downloads/,/guides/downloads/,HTML redirect
+/build/developers/build-compartments/,/guides/build-compartments/,HTML redirect
+/build/developers/build-your-first-application/,/guides/build-your-first-application/,HTML redirect
+/build/developers/install-a-toolchain/,/guides/install-a-toolchain/,HTML redirect
+/build/developers/tutorials-and-training/,/guides/tutorials-and-training/,HTML redirect
+/build/developers/port-existing-software/,/guides/port-existing-software/,HTML redirect
+/build/developers/building-secure-software/,/guides/building-secure-software/,HTML redirect
+/build/software-ecosystem/freebsd/,/repositories/cheribsd/,HTML redirect
+/build/software-ecosystem/cheribsd/,/repositories/cheribsd/,HTML redirect
+/build/software-ecosystem/zephyr/,/repositories/cheri-zephyr/,HTML redirect
+/build/software-ecosystem/rust/,/build/software-ecosystem/rust/,Retained
+/build/software-ecosystem/debugging-tools/,/build/software-ecosystem/debugging-tools/,Retained
+/build/software-ecosystem/real-time-operating-systems/,/build/software-ecosystem/real-time-operating-systems/,Retained
+/build/software-ecosystem/llvm-and-clang/,/build/software-ecosystem/llvm-and-clang/,Retained
+/build/software-ecosystem/cheri-linux/,/build/software-ecosystem/cheri-linux/,Retained
+/build/software-ecosystem/porting-status/,/build/software-ecosystem/porting-status/,Retained
+/build/platforms/cheriot/,/build/platforms/cheriot/,Retained
+/build/platforms/sonata/,/products/sonata/,HTML redirect
+/build/platforms/cheri-products/,/build/platforms/cheri-products/,Retained
+/build/platforms/morello/,/products/morello/,HTML redirect
+/build/platforms/fpga-platforms/,/build/platforms/fpga-platforms/,Retained
+/build/platforms/simulators/,/build/software-ecosystem/simulators/,HTML redirect
+/build/technology/hybrid-systems/,/build/technology/hybrid-systems/,Retained
+/build/technology/cheri-and-rust-technical/,/build/technology/cheri-and-rust-technical/,Retained
+/build/technology/compartmentalisation/,/build/technology/compartmentalisation/,Retained
+/build/technology/spatial-memory-safety/,/build/technology/spatial-memory-safety/,Retained
+/build/technology/pure-capability-systems/,/build/technology/pure-capability-systems/,Retained
+/build/technology/how-cheri-capabilities-work/,/build/technology/how-cheri-capabilities-work/,Retained
+/build/technology/temporal-memory-safety/,/build/technology/temporal-memory-safety/,Retained
+/build/technology/cheri-capabilities/sealing/,/build/technology/cheri-capabilities/sealing/,Retained
+/build/technology/cheri-capabilities/bounds/,/build/technology/cheri-capabilities/bounds/,Retained
+/build/technology/cheri-capabilities/permissions/,/build/technology/cheri-capabilities/permissions/,Retained
+/build/technology/cheri-capabilities/capabilities/,/build/technology/cheri-capabilities/capabilities/,Retained
+/build/technology/cheri-capabilities/tags-and-validity/,/build/technology/cheri-capabilities/tags-and-validity/,Retained
+/build/technology/cheri-capabilities/provenance/,/build/technology/cheri-capabilities/provenance/,Retained
+/member/axiomise-ltd/,/organisations/axiomise-ltd/,HTML redirect
+/member/novomorphic/,/organisations/novomorphic/,HTML redirect
+/member/codasip/,/organisations/codasip/,HTML redirect
+/member/critical-technologies/,/organisations/critical-technologies/,HTML redirect
+/member/misra/,/organisations/misra/,HTML redirect
+/member/cynam/,/organisations/cynam/,HTML redirect
+/member/wyvern-global/,/organisations/wyvern-global/,HTML redirect
+/member/freebsd-foundation/,/organisations/freebsd-foundation/,HTML redirect
+/member/cantech-informatics-srl/,/organisations/cantech-informatics-srl/,HTML redirect
+/member/university-of-glasgow/,/organisations/university-of-glasgow/,HTML redirect
+/member/zaya/,/organisations/zaya/,HTML redirect
+/member/university-of-edinburgh/,/organisations/university-of-edinburgh/,HTML redirect
+/member/swansea-university/,/organisations/swansea-university/,HTML redirect
+/member/ensilica/,/organisations/ensilica/,HTML redirect
+/member/durham-university/,/organisations/durham-university/,HTML redirect
+/member/johannes-kepler-university-linz/,/organisations/johannes-kepler-university-linz/,HTML redirect
+/member/university-of-kent/,/organisations/university-of-kent/,HTML redirect
+/member/university-of-birmingham/,/organisations/university-of-birmingham/,HTML redirect
+/member/digital-catapult/,/organisations/digital-catapult/,HTML redirect
+/member/siemens/,/organisations/siemens/,HTML redirect
+/member/sensor-it/,/organisations/sensor-it/,HTML redirect
+/member/google/,/organisations/google/,HTML redirect
+/member/capabilities-limited/,/organisations/capabilities-limited/,HTML redirect
+/member/cyberwhiz/,/organisations/cyberwhiz/,HTML redirect
+/member/university-of-exeter/,/organisations/university-of-exeter/,HTML redirect
+/member/parvat-infotech/,/organisations/parvat-infotech/,HTML redirect
+/member/light-momentum-technology-corp/,/organisations/light-momentum-technology-corp/,HTML redirect
+/member/wind-river/,/organisations/wind-river/,HTML redirect
+/member/bt/,/organisations/bt-group/,HTML redirect
+/member/the-capable-hub/,/organisations/the-capable-hub/,HTML redirect
+/member/dstl/,/organisations/dstl/,HTML redirect
+/member/king-abdullah-university-of-science-and-technology-kaust/,/organisations/king-abdullah-university-of-science-and-technology-kaust/,HTML redirect
+/member/ku-leuven/,/organisations/ku-leuven/,HTML redirect
+/member/sci-semiconductor/,/organisations/sci-semiconductor/,HTML redirect
+/member/bt-group/,/organisations/bt-group/,HTML redirect
+/member/hildebrand/,/organisations/hildebrand/,HTML redirect
+/member/rptu/,/organisations/rptu/,HTML redirect
+/member/pa-consulting/,/organisations/pa-consulting/,HTML redirect
+/member/instituto-superior-de-engenharia-do-porto/,/organisations/instituto-superior-de-engenharia-do-porto/,HTML redirect
+/member/university-of-cambridge/,/organisations/university-of-cambridge/,HTML redirect
+/member/university-of-birmingham-centre-for-cyber-security-and-privacy/,/organisations/university-of-birmingham/,HTML redirect
+/member/chevin-technology/,/organisations/chevin-technology/,HTML redirect
+/member/techworks/,/organisations/techworks/,HTML redirect
+/member/nquiringminds/,/organisations/nquiringminds/,HTML redirect
+/member/sri/,/organisations/sri/,HTML redirect
+/member/national-taiwan-university/,/organisations/national-taiwan-university/,HTML redirect
+/member/tccoe/,/organisations/tccoe/,HTML redirect
+/member/verisilicon/,/organisations/verisilicon/,HTML redirect
+/member/um-labs/,/organisations/um-labs/,HTML redirect
+/member/discribehub/,/organisations/discribehub/,HTML redirect
+/member/ncsc/,/organisations/ncsc/,HTML redirect
+/member/centrale-supelec/,/organisations/centrale-supelec/,HTML redirect
+/member/the-university-of-manchester/,/organisations/the-university-of-manchester/,HTML redirect
+/member/lowrisc/,/organisations/lowrisc/,HTML redirect
+/jobs/cheriot-software-engineer/,/jobs/cheriot-software-engineer/,Retained
+/alliance/build/,/build/,HTML redirect
+/alliance/leadership/governing-board/,/alliance/leadership/governing-board/,Retained
+/alliance/leadership/members/,/alliance/leadership/members/,Retained
+/alliance/leadership/working-groups/,/alliance/leadership/working-groups/,Retained
+/alliance/leadership/ambassadors/,/alliance/leadership/ambassadors/,Retained
+/alliance/leadership/working-groups/cheri-c-cplusplus/,/groups/cheri-c-cplusplus/,HTML redirect
+/alliance/leadership/working-groups/cheri-plus-safety/,/groups/cheri-plus-safety/,HTML redirect
+/alliance/leadership/working-groups/promotion-and-ambassador-program/,/groups/promotion-and-ambassador-program/,HTML redirect
+/alliance/leadership/working-groups/certification-working-group/,/groups/certification-working-group/,HTML redirect
+/alliance/leadership/working-groups/cheri-in-soc/,/groups/cheri-in-soc/,HTML redirect
+/alliance/leadership/working-groups/marketing/,/groups/marketing/,HTML redirect
+/alliance/leadership/working-groups/cheri-zephyr/,/groups/cheri-zephyr/,HTML redirect
+/alliance/leadership/working-groups/cheri-virtual-machines/,/groups/cheri-virtual-machines/,HTML redirect
+/alliance/leadership/working-groups/cheri-qemu/,/groups/cheri-qemu/,HTML redirect
+/alliance/leadership/working-groups/repository-management/,/groups/repository-management/,HTML redirect
+/alliance/leadership/working-groups/cheri-for-sel4/,/groups/cheri-for-sel4/,HTML redirect
+/alliance/leadership/working-groups/mmu-less-systems/,/groups/mmu-less-systems/,HTML redirect
+/alliance/leadership/working-groups/cheri-linux-working-group/,/groups/cheri-linux-working-group/,HTML redirect
+/alliance/leadership/working-groups/os-support-and-portability/,/groups/os-support-and-portability/,HTML redirect
+/alliance/leadership/working-groups/rust-plus-cheri/,/groups/rust-plus-cheri/,HTML redirect
+/alliance/leadership/working-groups/cheri-freertos/,/groups/cheri-freertos/,HTML redirect
+/alliance/membership/membership-benefits-and-options/,/alliance/membership/membership-benefits-and-options/,Retained
+/alliance/membership/contact/,/alliance/membership/contact/,Retained
+/alliance/membership/why-join/,/alliance/membership/why-join/,Retained
+/alliance/legal-and-policies/export-controls/,/policies/export-controls/,HTML redirect
+/alliance/legal-and-policies/competition-law-statement/,/policies/competition-law-statement/,HTML redirect
+/alliance/legal-and-policies/code-of-conduct/,/policies/code-of-conduct/,HTML redirect
+/alliance/legal-and-policies/trademark-policy/,/policies/trademark-policy/,HTML redirect
+/alliance/legal-and-policies/intellectual-property-policy/,/policies/intellectual-property-policy/,HTML redirect
+/alliance/legal-and-policies/privacy/,/policies/privacy/,HTML redirect
+/alliance/legal-and-policies/trademark-and-brand-use/,/policies/trademark-policy/,HTML redirect
+/alliance/about-and-governance/about-the-cheri-alliance/,/organisations/cheri-alliance/,HTML redirect
+/alliance/about-and-governance/mission-and-role/,/alliance/about-and-governance/mission-and-role/,Retained
+/alliance/about-and-governance/governance/,/alliance/about-and-governance/governance/,Retained
+/alliance/about-and-governance/collaboration-principles/,/alliance/about-and-governance/collaboration-principles/,Retained
+/alliance/about-and-governance/working-groups/,/alliance/leadership/working-groups/,HTML redirect
+/alliance/about-and-governance/accelerating-together/,/alliance/about-and-governance/accelerating-together/,Retained
+/alliance/about-and-governance/trademark/,/policies/trademark/,HTML redirect
+/alliance/about-and-governance/working-groups/cheri-c-cplusplus/,/groups/cheri-c-cplusplus/,HTML redirect
+/alliance/about-and-governance/working-groups/cheri-plus-safety/,/groups/cheri-plus-safety/,HTML redirect
+/alliance/about-and-governance/working-groups/promotion-and-ambassador-program/,/groups/promotion-and-ambassador-program/,HTML redirect
+/alliance/about-and-governance/working-groups/certification-working-group/,/groups/certification-working-group/,HTML redirect
+/alliance/about-and-governance/working-groups/cheri-in-soc/,/groups/cheri-in-soc/,HTML redirect
+/alliance/about-and-governance/working-groups/marketing/,/groups/marketing/,HTML redirect
+/alliance/about-and-governance/working-groups/cheri-zephyr/,/groups/cheri-zephyr/,HTML redirect
+/alliance/about-and-governance/working-groups/cheri-virtual-machines/,/groups/cheri-virtual-machines/,HTML redirect
+/alliance/about-and-governance/working-groups/cheri-qemu/,/groups/cheri-qemu/,HTML redirect
+/alliance/about-and-governance/working-groups/repository-management/,/groups/repository-management/,HTML redirect
+/alliance/about-and-governance/working-groups/cheri-for-sel4/,/groups/cheri-for-sel4/,HTML redirect
+/alliance/about-and-governance/working-groups/mmu-less-systems/,/groups/mmu-less-systems/,HTML redirect
+/alliance/about-and-governance/working-groups/cheri-linux-working-group/,/groups/cheri-linux-working-group/,HTML redirect
+/alliance/about-and-governance/working-groups/os-support-and-portability/,/groups/os-support-and-portability/,HTML redirect
+/alliance/about-and-governance/working-groups/rust-plus-cheri/,/groups/rust-plus-cheri/,HTML redirect
+/alliance/about-and-governance/working-groups/cheri-freertos/,/groups/cheri-freertos/,HTML redirect
+/policies/export-controls/,/policies/export-controls/,Retained
+/policies/competition-law-statement/,/policies/competition-law-statement/,Retained
+/policies/ip-policy/,/policies/ip-policy/,Retained
+/policies/code-of-conduct/,/policies/code-of-conduct/,Retained
+/policies/trademark-policy/,/policies/trademark-policy/,Retained
+/policies/intellectual-property-policy/,/policies/intellectual-property-policy/,Retained
+/policies/privacy/,/policies/privacy/,Retained
+/policies/privacy-policy/,/policies/privacy-policy/,Retained
+/policies/trademark-original/,/policies/trademark/,Retained
+/policies/trademark/,/policies/trademark/,Retained
+/policies/policy-briefings/,/policies/policy-briefings/,Retained
+/hardware/cheriot/,/build/platforms/cheriot/,HTML redirect
+/hardware/sonata/,/products/sonata/,HTML redirect
+/hardware/x730/,/adopt/assurance-and-adoption/x730-certification/,HTML redirect
+/hardware/morello/,/products/morello/,HTML redirect
+/hardware/fpga-platforms/,/build/platforms/fpga-platforms/,HTML redirect
+/hardware/cheriot-ibex/,/adopt/assurance-and-adoption/cheriot-ibex-certification/,HTML redirect
+/news/sci-semiconductor-and-the-cheri-alliance-at-risc-v-summit-in-china-july-2025/,/news/sci-semiconductor-and-the-cheri-alliance-at-risc-v-summit-in-china-july-2025/,Retained
+/news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences/,/news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences/,Retained
+/news/the-leading-root-of-trust-now-integrates-cheri-security-technology/,/news/the-leading-root-of-trust-now-integrates-cheri-security-technology/,Retained
+/news/bt-group-joins-the-cheri-alliance-to-advance-cybersecurity-innovation/,/news/bt-group-joins-the-cheri-alliance-to-advance-cybersecurity-innovation/,Retained
+/news/introducing-the-cheri-adoption-global-ecosystem-assessment-q1-2026/,/news/introducing-the-cheri-adoption-global-ecosystem-assessment-q1-2026/,Retained
+/news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/,/news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/,Retained
+/news/ai-doesnt-need-a-kill-switch-it-needs-boundaries/,/news/ai-doesnt-need-a-kill-switch-it-needs-boundaries/,Retained
+/news/cheri-sel4-and-cheri-microkit-released/,/news/cheri-sel4-and-cheri-microkit-released/,Retained
+/news/towards-a-reference-qemu-for-cheri-platform-emulation/,/news/towards-a-reference-qemu-for-cheri-platform-emulation/,Retained
+/news/wind-river-joins-the-cheri-alliance/,/news/wind-river-joins-the-cheri-alliance/,Retained
+/news/working-group-spotlight-marketing/,/news/working-group-spotlight-marketing/,Retained
+/news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level/,/news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level/,Retained
+/news/the-white-house-promotes-cheri-as-a-solution-for-memory-safety/,/news/the-white-house-promotes-cheri-as-a-solution-for-memory-safety/,Retained
+/news/ai-has-compressed-the-attack-timeline/,/news/ai-has-compressed-the-attack-timeline/,Retained
+/news/the-capable-hub-joins-the-cheri-alliance-to-accelerate-cybersecurity-collaboration/,/news/the-capable-hub-joins-the-cheri-alliance-to-accelerate-cybersecurity-collaboration/,Retained
+/news/behind-the-scenes-inside-the-promotion-and-ambassador-program-working-group/,/news/behind-the-scenes-inside-the-promotion-and-ambassador-program-working-group/,Retained
+/news/cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus/,/news/cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus/,Retained
+/news/codasip-enables-secure-linux-by-donating-cheri-risc-v-sdk-to-the-cheri-alliance/,/news/codasip-enables-secure-linux-by-donating-cheri-risc-v-sdk-to-the-cheri-alliance/,Retained
+/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd/,/news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd/,Retained
+/news/streamlining-the-cheri-ecosystem-an-update-from-the-repository-management-working-group/,/news/streamlining-the-cheri-ecosystem-an-update-from-the-repository-management-working-group/,Retained
+/news/cheri-or-cheriot-the-answer-is-not-what-you-think/,/news/cheri-or-cheriot-the-answer-is-not-what-you-think/,Retained
+/news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology/,/news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology/,Retained
+/news/iceni-first-look/,/news/iceni-first-look/,Retained
+/news/cybersecurity-by-design-from-research-to-industry-conference-report/,/news/cybersecurity-by-design-from-research-to-industry-conference-report/,Retained
+/news/cheri-zephyr-v0-4-0-release/,/news/cheri-zephyr-v0-4-0-release/,Retained
+/news/one-bug-is-all-it-takes/,/news/one-bug-is-all-it-takes/,Retained
+/news/cheri-memory-safety-mitigates-llm-discovered-vulnerability-in-freebsd/,/news/cheri-memory-safety-mitigates-llm-discovered-vulnerability-in-freebsd/,Retained
+/news/beyond-software-patching/,/news/beyond-software-patching/,Retained
+/news/the-eu-cyber-resilience-act-what-it-means-for-secure-by-design-systems-and-cheri/,/news/the-eu-cyber-resilience-act-what-it-means-for-secure-by-design-systems-and-cheri/,Retained
+/news/building-a-safer-digital-future/,/news/building-a-safer-digital-future/,Retained
+/news/uk-government-report-highlights-the-cheri-alliance/,/news/uk-government-report-highlights-the-cheri-alliance/,Retained
+/news/cheri-alliance-to-distribute-arm-morello-boards-the-journey-beyond-dsbd-continues/,/news/cheri-alliance-to-distribute-arm-morello-boards-the-journey-beyond-dsbd-continues/,Retained
+/news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support/,/news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support/,Retained
+/news/initial-members-join-cheri-alliance-to-drive-adoption-of-memory-safety-and-scalable-software-compartmentalization/,/news/initial-members-join-cheri-alliance-to-drive-adoption-of-memory-safety-and-scalable-software-compartmentalization/,Retained
+/news/why-codasip-went-all-in-on-cheri/,/news/why-codasip-went-all-in-on-cheri/,Retained
+/news/combatting-the-ai-threat-with-cheri/,/news/combatting-the-ai-threat-with-cheri/,Retained
+/news/siemens-joins-the-cheri-alliance-a-united-front-for-cutting-edge-cybersecurity/,/news/siemens-joins-the-cheri-alliance-a-united-front-for-cutting-edge-cybersecurity/,Retained
+/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl/,/news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl/,Retained
+/news/unlocking-the-future-a-roadmap-for-cheri-technology-advancement/,/news/unlocking-the-future-a-roadmap-for-cheri-technology-advancement/,Retained
+/news/amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon/,/news/amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon/,Retained
+/news/cheri-tag-bit-transport-overlay-standard-version-0-9-released/,/news/cheri-tag-bit-transport-overlay-standard-version-0-9-released/,Retained
+/news/lowrisc-and-sci-semiconductor-release-sunburst-chip-repository-for-secure-microcontroller-development/,/news/lowrisc-and-sci-semiconductor-release-sunburst-chip-repository-for-secure-microcontroller-development/,Retained
+/news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/,/news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/,Retained
+/news/end-users-demand-memory-safety-in-their-systems/,/news/end-users-demand-memory-safety-in-their-systems/,Retained
+/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software/,/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software/,Retained
+/news/secure-and-resilient-systems-in-the-era-of-cra-and-iot/,/news/secure-and-resilient-systems-in-the-era-of-cra-and-iot/,Retained
+/news/cheriot-1-0-specification-released/,/news/cheriot-1-0-specification-released/,Retained
+/news/innovate-uk-project-winner-university-of-birmingham/,/news/innovate-uk-project-winner-university-of-birmingham/,Retained
+/news/press/,/news/press/,Retained
+/people/peter-sewell/,/people/peter-sewell/,Retained
+/people/a-theodore-markettos/,/people/a-theodore-markettos/,Retained
+/people/kunyan-liu/,/people/kunyan-liu/,Retained
+/people/murat-cakmak/,/people/murat-cakmak/,Retained
+/people/david-musliner/,/people/david-musliner/,Retained
+/people/hesham-almatary/,/people/hesham-almatary/,Retained
+/people/jessica-clarke/,/people/jessica-clarke/,Retained
+/people/merve-gulmez/,/people/merve-gulmez/,Retained
+/people/kayvan-memarian/,/people/kayvan-memarian/,Retained
+/people/brett-f-gutstein/,/people/brett-f-gutstein/,Retained
+/people/ollie-whitehouse/,/people/ollie-whitehouse/,Retained
+/people/anthony-fox/,/people/anthony-fox/,Retained
+/people/ka-wing-li/,/people/ka-wing-li/,Retained
+/people/mark-johnston/,/people/mark-johnston/,Retained
+/people/ben-fletcher/,/people/ben-fletcher/,Retained
+/people/kevin-brodsky/,/people/kevin-brodsky/,Retained
+/people/murali-vijayaraghavan/,/people/murali-vijayaraghavan/,Retained
+/people/richard-grisenthwaite/,/people/richard-grisenthwaite/,Retained
+/people/tora-fridholm/,/people/tora-fridholm/,Retained
+/people/robert-norton-wright/,/people/robert-norton-wright/,Retained
+/people/brian-campbell/,/people/brian-campbell/,Retained
+/people/andrew-lindsay/,/people/andrew-lindsay/,Retained
+/people/jim-wallace/,/people/jim-wallace/,Retained
+/people/john-goodacre/,/people/john-goodacre/,Retained
+/people/edward-tomasz-napieraa/,/people/edward-tomasz-napieraa/,Retained
+/people/donato-ferraro/,/people/donato-ferraro/,Retained
+/people/jonathan-woodruff/,/people/jonathan-woodruff/,Retained
+/people/thomas-nyman/,/people/thomas-nyman/,Retained
+/people/martin-atkins/,/people/martin-atkins/,Retained
+/people/alex-rebert/,/people/alex-rebert/,Retained
+/people/vadim-zaliva/,/people/vadim-zaliva/,Retained
+/people/phil-day/,/people/phil-day/,Retained
+/people/jonathan-anderson/,/people/jonathan-anderson/,Retained
+/people/javier-orensanz-martinez/,/people/javier-orensanz-martinez/,Retained
+/people/johannes-muller/,/people/johannes-muller/,Retained
+/people/graeme-barnes/,/people/graeme-barnes/,Retained
+/people/laurence-tratt/,/people/laurence-tratt/,Retained
+/people/mark-batty/,/people/mark-batty/,Retained
+/people/simon-moore/,/people/simon-moore/,Retained
+/people/mark-hill/,/people/mark-hill/,Retained
+/people/ashish-darbari/,/people/ashish-darbari/,Retained
+/people/dave-harcourt/,/people/dave-harcourt/,Retained
+/people/graeme-jenkinson/,/people/graeme-jenkinson/,Retained
+/people/hugo-lefeuvre/,/people/hugo-lefeuvre/,Retained
+/people/mihai-ordean/,/people/mihai-ordean/,Retained
+/people/andrew-murray/,/people/andrew-murray/,Retained
+/people/mike-halsall/,/people/mike-halsall/,Retained
+/people/alexander-voyevoda/,/people/alexander-voyevoda/,Retained
+/people/yucong-tao/,/people/yucong-tao/,Retained
+/people/ian-stark/,/people/ian-stark/,Retained
+/people/nirav-dave/,/people/nirav-dave/,Retained
+/people/dmitriy-yeliseyev/,/people/dmitriy-yeliseyev/,Retained
+/people/ricardo-almeida/,/people/ricardo-almeida/,Retained
+/people/stacey-son/,/people/stacey-son/,Retained
+/people/jianyi-cheng/,/people/jianyi-cheng/,Retained
+/people/louis-emile-ploix/,/people/louis-emile-ploix/,Retained
+/people/john-thomson/,/people/john-thomson/,Retained
+/people/alexandre-joannou/,/people/alexandre-joannou/,Retained
+/people/bradley-finn/,/people/bradley-finn/,Retained
+/people/marno-van-der-maas/,/people/marno-van-der-maas/,Retained
+/people/brooks-davis/,/people/brooks-davis/,Retained
+/people/kathleen-fisher/,/people/kathleen-fisher/,Retained
+/people/domagoj-stolfa/,/people/domagoj-stolfa/,Retained
+/people/thomas-bauereiss/,/people/thomas-bauereiss/,Retained
+/people/paul-waller/,/people/paul-waller/,Retained
+/people/timothy-m-jones/,/people/timothy-m-jones/,Retained
+/people/peter-rugg/,/people/peter-rugg/,Retained
+/people/munraj-vadera/,/people/munraj-vadera/,Retained
+/people/edoardo-marangoni/,/people/edoardo-marangoni/,Retained
+/people/nathaniel-wesley-filardo/,/people/nathaniel-wesley-filardo/,Retained
+/people/mike-eftimakis/,/people/mike-eftimakis/,Retained
+/people/michael-roe/,/people/michael-roe/,Retained
+/people/paul-metzger/,/people/paul-metzger/,Retained
+/people/joshua-lant/,/people/joshua-lant/,Retained
+/people/peter-g-neumann/,/people/peter-g-neumann/,Retained
+/people/luca-muller/,/people/luca-muller/,Retained
+/people/alastair-beresford/,/people/alastair-beresford/,Retained
+/people/allison-randal/,/people/allison-randal/,Retained
+/people/hugo-vincent/,/people/hugo-vincent/,Retained
+/people/john-baldwin/,/people/john-baldwin/,Retained
+/people/kyndylan-nienhuis/,/people/kyndylan-nienhuis/,Retained
+/people/gavin-ferris/,/people/gavin-ferris/,Retained
+/people/david-chisnall/,/people/david-chisnall/,Retained
+/people/hamed-okhravi/,/people/hamed-okhravi/,Retained
+/people/sam-ainsworth/,/people/sam-ainsworth/,Retained
+/people/andy-moore/,/people/andy-moore/,Retained
+/people/margo-seltzer/,/people/margo-seltzer/,Retained
+/people/lucian-paul-trifu/,/people/lucian-paul-trifu/,Retained
+/people/hongyan-xia/,/people/hongyan-xia/,Retained
+/people/maika-fohrenbach/,/people/maika-fohrenbach/,Retained
+/people/haydn-povey/,/people/haydn-povey/,Retained
+/people/steven-j-murdoch/,/people/steven-j-murdoch/,Retained
+/people/adam-finney/,/people/adam-finney/,Retained
+/people/tariq-kurd/,/people/tariq-kurd/,Retained
+/people/carl-shaw/,/people/carl-shaw/,Retained
+/people/sam-cater/,/people/sam-cater/,Retained
+/people/robert-watson/,/people/robert-watson/,Retained
+/people/konrad-witaszczyk/,/people/konrad-witaszczyk/,Retained
+/people/tony-chen/,/people/tony-chen/,Retained
+/people/alfredo-mazzinghi/,/people/alfredo-mazzinghi/,Retained
+/people/alex-richardson/,/people/alex-richardson/,Retained
+/people/jeremy-singer/,/people/jeremy-singer/,Retained
+/people/ben-laurie/,/people/ben-laurie/,Retained
+/people/saar-amar/,/people/saar-amar/,Retained
+/people/matthew-naylor/,/people/matthew-naylor/,Retained
+/people/jennifer-jackson/,/people/jennifer-jackson/,Retained
+/people/robert-m-norton/,/people/robert-m-norton/,Retained
+/people/manu-ravishankar/,/people/manu-ravishankar/,Retained
+/people/peter-cox/,/people/peter-cox/,Retained
+/people/khilan-gudka/,/people/khilan-gudka/,Retained
+/people/samuel-stark/,/people/samuel-stark/,Retained
+/CHERI-seL4-Exercises/missions/,/reference/CHERI-seL4-Exercises/missions/index.html,HTML redirect
+/CHERI-seL4-Exercises/cover/,/reference/CHERI-seL4-Exercises/cover/index.html,HTML redirect
+/CHERI-seL4-Exercises/introduction/,/reference/CHERI-seL4-Exercises/introduction/index.html,HTML redirect
+/CHERI-seL4-Exercises/introduction/ccc.html,/reference/CHERI-seL4-Exercises/introduction/ccc.html,HTML redirect
+/CHERI-seL4-Exercises/introduction/cross-compilation-execution.html,/reference/CHERI-seL4-Exercises/introduction/cross-compilation-execution.html,HTML redirect
+/CHERI-seL4-Exercises/introduction/background.html,/reference/CHERI-seL4-Exercises/introduction/background.html,HTML redirect
+/CHERI-seL4-Exercises/appendix/,/reference/CHERI-seL4-Exercises/appendix/index.html,HTML redirect
+/CHERI-seL4-Exercises/exercises/,/reference/CHERI-seL4-Exercises/exercises/index.html,HTML redirect
+/CHERI-seL4-Exercises/missions/uninitialized-stack-frame-control-flow/,/reference/CHERI-seL4-Exercises/missions/uninitialized-stack-frame-control-flow/index.html,HTML redirect
+/CHERI-seL4-Exercises/missions/buffer-overflow-control-flow/,/reference/CHERI-seL4-Exercises/missions/buffer-overflow-control-flow/index.html,HTML redirect
+/CHERI-seL4-Exercises/exercises/subobject-bounds/,/reference/CHERI-seL4-Exercises/exercises/subobject-bounds/index.html,HTML redirect
+/CHERI-seL4-Exercises/exercises/subobject-bounds/answers.html,/reference/CHERI-seL4-Exercises/exercises/subobject-bounds/answers.html,HTML redirect
+/CHERI-seL4-Exercises/exercises/control-flow-pointer/,/reference/CHERI-seL4-Exercises/exercises/control-flow-pointer/index.html,HTML redirect
+/CHERI-seL4-Exercises/exercises/control-flow-pointer/answers.html,/reference/CHERI-seL4-Exercises/exercises/control-flow-pointer/answers.html,HTML redirect
+/CHERI-seL4-Exercises/exercises/buffer-overflow-global/,/CHERI-seL4-Exercises/exercises/buffer-overflow-global/,Retained
+/CHERI-seL4-Exercises/exercises/buffer-overflow-global/answers.html,/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-global/answers.html,HTML redirect
+/CHERI-seL4-Exercises/exercises/cheri-tags/,/reference/CHERI-seL4-Exercises/exercises/cheri-tags/index.html,HTML redirect
+/CHERI-seL4-Exercises/exercises/cheri-tags/answers.html,/reference/CHERI-seL4-Exercises/exercises/cheri-tags/answers.html,HTML redirect
+/CHERI-seL4-Exercises/exercises/type-confusion/,/reference/CHERI-seL4-Exercises/exercises/type-confusion/index.html,HTML redirect
+/CHERI-seL4-Exercises/exercises/type-confusion/answers.html,/reference/CHERI-seL4-Exercises/exercises/type-confusion/answers.html,HTML redirect
+/CHERI-seL4-Exercises/exercises/debug-and-disassemble/,/reference/CHERI-seL4-Exercises/exercises/debug-and-disassemble/index.html,HTML redirect
+/CHERI-seL4-Exercises/exercises/debug-and-disassemble/answers.html,/reference/CHERI-seL4-Exercises/exercises/debug-and-disassemble/answers.html,HTML redirect
+/CHERI-seL4-Exercises/exercises/cheri-allocator/,/reference/CHERI-seL4-Exercises/exercises/cheri-allocator/index.html,HTML redirect
+/CHERI-seL4-Exercises/exercises/cheri-allocator/answers.html,/reference/CHERI-seL4-Exercises/exercises/cheri-allocator/answers.html,HTML redirect
+/CHERI-seL4-Exercises/exercises/compile-and-run/,/reference/CHERI-seL4-Exercises/exercises/compile-and-run/index.html,HTML redirect
+/CHERI-seL4-Exercises/exercises/compile-and-run/answers.html,/reference/CHERI-seL4-Exercises/exercises/compile-and-run/answers.html,HTML redirect
+/CHERI-seL4-Exercises/exercises/buffer-overflow-stack/,/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-stack/index.html,HTML redirect
+/CHERI-seL4-Exercises/exercises/buffer-overflow-stack/answers.html,/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-stack/answers.html,HTML redirect
+/events/cheri-blossoms-conference-2027/,/events/cheri-blossoms-conference-2027/,Retained
+/events/embedded-world-2026/,/events/embedded-world-2026/,Retained
+/events/cheri-blossoms-conference-2026/,/events/cheri-blossoms-conference-2026/,Retained
+/events/cheri-blossoms-tutorial-2026/,/events/cheri-blossoms-tutorial-2026/,Retained
+/events/cheritech26/,/events/cheritech26/,Retained
+/events/cheritech25-reloaded/,/events/cheritech25-reloaded/,Retained
+/events/cheri-blossoms-conference-2025/,/events/cheri-blossoms-conference-2025/,Retained
+/events/cheri-blossoms-conference-2026-intro-to-cheri-and-cheriot/,/events/cheri-blossoms-tutorial-2026/,HTML redirect
+/events/cheri-tech-conference-2025/,/events/cheritech25/,HTML redirect
+/events/webinar-cheri-cra-compliance/,/events/webinar-cheri-cra-compliance/,Retained
+/events/cheritech25/,/events/cheritech25/,Retained
+/events/cybersecurity-by-design-conference-2024/,/events/cybersecurity-by-design-conference-2024/,Retained
+/linux-roadmap/goals/,/reference/linux-roadmap/goals/index.html,HTML redirect
+/linux-roadmap/goals/distros.html,/reference/linux-roadmap/goals/distros.html,HTML redirect
+/linux-roadmap/goals/bootloaders-firmware.html,/reference/linux-roadmap/goals/bootloaders-firmware.html,HTML redirect
+/linux-roadmap/goals/user-space.html,/reference/linux-roadmap/goals/user-space.html,HTML redirect
+/linux-roadmap/goals/kernel.html,/reference/linux-roadmap/goals/kernel.html,HTML redirect
+/linux-roadmap/goals/toolchain.html,/reference/linux-roadmap/goals/toolchain.html,HTML redirect
+/linux-roadmap/goals/emulation-crossbuild.html,/reference/linux-roadmap/goals/emulation-crossbuild.html,HTML redirect
+/linux-roadmap/goals/testing.html,/reference/linux-roadmap/goals/testing.html,HTML redirect
+/members/axiomise-ltd/,/organisations/axiomise-ltd/,HTML redirect
+/members/novomorphic/,/organisations/novomorphic/,HTML redirect
+/members/codasip/,/organisations/codasip/,HTML redirect
+/members/critical-technologies/,/organisations/critical-technologies/,HTML redirect
+/members/misra/,/organisations/misra/,HTML redirect
+/members/cynam/,/organisations/cynam/,HTML redirect
+/members/wyvern-global/,/organisations/wyvern-global/,HTML redirect
+/members/freebsd-foundation/,/organisations/freebsd-foundation/,HTML redirect
+/members/cantech-informatics-srl/,/organisations/cantech-informatics-srl/,HTML redirect
+/members/university-of-glasgow/,/organisations/university-of-glasgow/,HTML redirect
+/members/zaya/,/organisations/zaya/,HTML redirect
+/members/university-of-edinburgh/,/organisations/university-of-edinburgh/,HTML redirect
+/members/swansea-university/,/organisations/swansea-university/,HTML redirect
+/members/ensilica/,/organisations/ensilica/,HTML redirect
+/members/durham-university/,/organisations/durham-university/,HTML redirect
+/members/johannes-kepler-university-linz/,/organisations/johannes-kepler-university-linz/,HTML redirect
+/members/university-of-kent/,/organisations/university-of-kent/,HTML redirect
+/members/university-of-birmingham/,/organisations/university-of-birmingham/,HTML redirect
+/members/digital-catapult/,/organisations/digital-catapult/,HTML redirect
+/members/siemens/,/organisations/siemens/,HTML redirect
+/members/sensor-it/,/organisations/sensor-it/,HTML redirect
+/members/google/,/organisations/google/,HTML redirect
+/members/capabilities-limited/,/organisations/capabilities-limited/,HTML redirect
+/members/cyberwhiz/,/organisations/cyberwhiz/,HTML redirect
+/members/university-of-exeter/,/organisations/university-of-exeter/,HTML redirect
+/members/parvat-infotech/,/organisations/parvat-infotech/,HTML redirect
+/members/light-momentum-technology-corp/,/organisations/light-momentum-technology-corp/,HTML redirect
+/members/wind-river/,/organisations/wind-river/,HTML redirect
+/members/bt/,/organisations/bt-group/,HTML redirect
+/members/the-capable-hub/,/organisations/the-capable-hub/,HTML redirect
+/members/dstl/,/organisations/dstl/,HTML redirect
+/members/king-abdullah-university-of-science-and-technology-kaust/,/organisations/king-abdullah-university-of-science-and-technology-kaust/,HTML redirect
+/members/ku-leuven/,/organisations/ku-leuven/,HTML redirect
+/members/sci-semiconductor/,/organisations/sci-semiconductor/,HTML redirect
+/members/bt-group/,/organisations/bt-group/,HTML redirect
+/members/rptu/,/organisations/rptu/,HTML redirect
+/members/pa-consulting/,/organisations/pa-consulting/,HTML redirect
+/members/instituto-superior-de-engenharia-do-porto/,/organisations/instituto-superior-de-engenharia-do-porto/,HTML redirect
+/members/university-of-cambridge/,/organisations/university-of-cambridge/,HTML redirect
+/members/university-of-birmingham-centre-for-cyber-security-and-privacy/,/organisations/university-of-birmingham/,HTML redirect
+/members/chevin-technology/,/organisations/chevin-technology/,HTML redirect
+/members/techworks/,/organisations/techworks/,HTML redirect
+/members/nquiringminds/,/organisations/nquiringminds/,HTML redirect
+/members/sri/,/organisations/sri/,HTML redirect
+/members/national-taiwan-university/,/organisations/national-taiwan-university/,HTML redirect
+/members/tccoe/,/organisations/tccoe/,HTML redirect
+/members/verisilicon/,/organisations/verisilicon/,HTML redirect
+/members/um-labs/,/organisations/um-labs/,HTML redirect
+/members/discribehub/,/organisations/discribehub/,HTML redirect
+/members/ncsc/,/organisations/ncsc/,HTML redirect
+/members/centrale-supelec/,/organisations/centrale-supelec/,HTML redirect
+/members/the-university-of-manchester/,/organisations/the-university-of-manchester/,HTML redirect
+/members/lowrisc/,/organisations/lowrisc/,HTML redirect
+/guides/choose-a-platform/,/guides/choose-a-platform/,Retained
+/guides/run-cheri-in-simulation/,/guides/run-cheri-in-simulation/,Retained
+/guides/technical-faq/,/guides/technical-faq/,Retained
+/guides/downloads/,/guides/downloads/,Retained
+/guides/build-compartments/,/guides/build-compartments/,Retained
+/guides/build-your-first-application/,/guides/build-your-first-application/,Retained
+/guides/install-a-toolchain/,/guides/install-a-toolchain/,Retained
+/guides/tutorials-and-training/,/guides/tutorials-and-training/,Retained
+/guides/port-existing-software/,/guides/port-existing-software/,Retained
+/guides/building-secure-software/,/guides/building-secure-software/,Retained
+/adopt/assurance-and-adoption/procurement/,/adopt/assurance-and-adoption/procurement/,Retained
+/adopt/assurance-and-adoption/certification/,/adopt/assurance-and-adoption/certification/,Retained
+/adopt/assurance-and-adoption/about-cheri-enabled/,/adopt/assurance-and-adoption/about-cheri-enabled/,Retained
+/adopt/assurance-and-adoption/cheri-enabled-products/,/adopt/assurance-and-adoption/cheri-enabled-products/,Retained
+/adopt/assurance-and-adoption/assurance-and-certification/,/adopt/assurance-and-adoption/assurance-and-certification/,Retained
+/adopt/assurance-and-adoption/case-studies/,/adopt/assurance-and-adoption/case-studies/,Retained
+/adopt/assurance-and-adoption/cheri-enabled-products/x730/,/adopt/assurance-and-adoption/x730-certification/,HTML redirect
+/adopt/assurance-and-adoption/cheri-enabled-products/cheriot-ibex/,/adopt/assurance-and-adoption/cheriot-ibex-certification/,HTML redirect
+/adopt/policy/government-guidance/,/adopt/policy/government-guidance/,Retained
+/adopt/policy/cybersecurity-regulation/,/adopt/policy/cybersecurity-regulation/,Retained
+/adopt/policy/critical-infrastructure-and-resilience/,/adopt/policy/critical-infrastructure-and-resilience/,Retained
+/adopt/policy/policy-briefings/,/policies/policy-briefings/,HTML redirect
+/adopt/business-case/return-on-security-investment/,/adopt/business-case/return-on-security-investment/,Retained
+/adopt/business-case/the-business-case/,/adopt/business-case/the-business-case/,Retained
+/adopt/business-case/adoption-costs-and-migration/,/adopt/business-case/adoption-costs-and-migration/,Retained
+/adopt/business-case/cost-of-memory-unsafety/,/adopt/business-case/cost-of-memory-unsafety/,Retained
+/adopt/business-case/lifecycle-benefits-and-roi/,/adopt/business-case/return-on-security-investment/,HTML redirect
+/adopt/use-cases/safety-critical-systems/,/adopt/use-cases/safety-critical-systems/,Retained
+/adopt/use-cases/critical-infrastructure/,/adopt/use-cases/critical-infrastructure/,Retained
+/adopt/use-cases/defence-and-aerospace/,/adopt/use-cases/defence-and-aerospace/,Retained
+/adopt/use-cases/cloud-and-data-centre/,/adopt/use-cases/cloud-and-data-centre/,Retained
+/adopt/use-cases/automotive/,/adopt/use-cases/automotive/,Retained
+/adopt/use-cases/iot-and-embedded/,/adopt/use-cases/iot-and-embedded/,Retained
+/who-we-are/working-groups/cheri-c-cplusplus/,/groups/cheri-c-cplusplus/,HTML redirect
+/who-we-are/working-groups/cheri-plus-safety/,/groups/cheri-plus-safety/,HTML redirect
+/who-we-are/working-groups/promotion-and-ambassador-program/,/groups/promotion-and-ambassador-program/,HTML redirect
+/who-we-are/working-groups/certification-working-group/,/groups/certification-working-group/,HTML redirect
+/who-we-are/working-groups/cheri-in-soc/,/groups/cheri-in-soc/,HTML redirect
+/who-we-are/working-groups/marketing/,/groups/marketing/,HTML redirect
+/who-we-are/working-groups/cheri-zephyr/,/groups/cheri-zephyr/,HTML redirect
+/who-we-are/working-groups/cheri-virtual-machines/,/groups/cheri-virtual-machines/,HTML redirect
+/who-we-are/working-groups/cheri-qemu/,/groups/cheri-qemu/,HTML redirect
+/who-we-are/working-groups/repository-management/,/groups/repository-management/,HTML redirect
+/who-we-are/working-groups/cheri-for-sel4/,/groups/cheri-for-sel4/,HTML redirect
+/who-we-are/working-groups/mmu-less-systems/,/groups/mmu-less-systems/,HTML redirect
+/who-we-are/working-groups/cheri-linux-working-group/,/groups/cheri-linux-working-group/,HTML redirect
+/who-we-are/working-groups/os-support-and-portability/,/groups/os-support-and-portability/,HTML redirect
+/who-we-are/working-groups/rust-plus-cheri/,/groups/rust-plus-cheri/,HTML redirect
+/who-we-are/working-groups/cheri-freertos/,/groups/cheri-freertos/,HTML redirect
+/legal-and-policies/trademark-policy/,/policies/trademark-policy/,HTML redirect
+/legal-and-policies/trademark/,/trademark/,HTML redirect
+/discover/why-cheri/faqs/,/discover/understand/faq/,HTML redirect
+/discover/why-cheri/why-cheri/,/discover/why-cheri/why-cheri/,Retained
+/discover/why-cheri/approaches-to-memory-safety/,/discover/why-cheri/approaches-to-memory-safety/,Retained
+/discover/why-cheri/why-existing-defences-are-not-enough/,/discover/why-cheri/why-existing-defences-are-not-enough/,Retained
+/discover/why-cheri/faq/,/discover/understand/faq/,HTML redirect
+/discover/why-cheri/cheri-and-existing-software/,/discover/understand/cheri-and-existing-software/,HTML redirect
+/discover/why-cheri/vulnerabilities-in-everyday-technology/,/discover/why-cheri/vulnerabilities-in-everyday-technology/,Retained
+/discover/why-cheri/cheri-and-rust/,/discover/why-cheri/cheri-and-rust/,Retained
+/discover/why-memory-safety/approaches-to-memory-safety/,/discover/why-cheri/approaches-to-memory-safety/,HTML redirect
+/discover/understand/adapt-products/,/discover/understand/adapt-products/,Retained
+/discover/understand/cheri-history/,/discover/understand/cheri-history/,Retained
+/discover/understand/faq/,/discover/understand/faq/,Retained
+/discover/understand/cheri-and-existing-software/,/discover/understand/cheri-and-existing-software/,Retained
+/discover/understand/how-does-cheri-work/,/discover/understand/how-does-cheri-work/,Retained
+/discover/resources/specifications/,/discover/resources/specifications/,Retained
+/discover/resources/digital-security-by-design-archive/,/discover/resources/digital-security-by-design-archive/,Retained
+/discover/resources/glossary/,/discover/resources/glossary/,Retained
+/discover/resources/documentation-and-guides/,/discover/resources/documentation-and-guides/,Retained
+/discover/resources/videos-and-presentations/,/discover/resources/videos-and-presentations/,Retained
+/discover/resources/reports-and-white-papers/,/discover/resources/reports-and-white-papers/,Retained
+/discover/resources/academic-papers/,/discover/resources/academic-papers/,Retained
+/discover/history/ukri-digital-security-by-design/,/discover/history/ukri-digital-security-by-design/,Retained
+/discover/history/risc-v-and-embedded-development/,/discover/history/risc-v-and-embedded-development/,Retained
+/discover/history/commercialisation/,/discover/history/commercialisation/,Retained
+/discover/history/morello-history/,/discover/history/morello-history/,Retained
+/discover/history/future-direction/,/discover/history/future-direction/,Retained
+/discover/history/darpa-programmes/,/discover/history/darpa-programmes/,Retained
+/discover/history/development-of-cheri/,/discover/history/development-of-cheri/,Retained
+/discover/history/formation-of-the-cheri-alliance/,/discover/history/formation-of-the-cheri-alliance/,Retained
+/discover/history/early-capability-systems/,/discover/history/early-capability-systems/,Retained
+/discover/history/cambridge-and-sri/,/discover/history/cambridge-and-sri/,Retained
+/organisations/axiomise-ltd/,/organisations/axiomise-ltd/,Retained
+/organisations/ukri/,/organisations/ukri/,Retained
+/organisations/novomorphic/,/organisations/novomorphic/,Retained
+/organisations/codasip/,/organisations/codasip/,Retained
+/organisations/critical-technologies/,/organisations/critical-technologies/,Retained
+/organisations/misra/,/organisations/misra/,Retained
+/organisations/microservice-store/,/organisations/microservice-store/,Retained
+/organisations/the-good-penguin/,/organisations/the-good-penguin/,Retained
+/organisations/cynam/,/organisations/cynam/,Retained
+/organisations/wyvern-global/,/organisations/wyvern-global/,Retained
+/organisations/cheri-alliance/,/organisations/cheri-alliance/,Retained
+/organisations/freebsd-foundation/,/organisations/freebsd-foundation/,Retained
+/organisations/cantech-informatics-srl/,/organisations/cantech-informatics-srl/,Retained
+/organisations/university-of-glasgow/,/organisations/university-of-glasgow/,Retained
+/organisations/zaya/,/organisations/zaya/,Retained
+/organisations/university-of-edinburgh/,/organisations/university-of-edinburgh/,Retained
+/organisations/swansea-university/,/organisations/swansea-university/,Retained
+/organisations/ensilica/,/organisations/ensilica/,Retained
+/organisations/durham-university/,/organisations/durham-university/,Retained
+/organisations/johannes-kepler-university-linz/,/organisations/johannes-kepler-university-linz/,Retained
+/organisations/university-of-kent/,/organisations/university-of-kent/,Retained
+/organisations/university-of-birmingham/,/organisations/university-of-birmingham/,Retained
+/organisations/digital-catapult/,/organisations/digital-catapult/,Retained
+/organisations/dsit/,/organisations/dsit/,Retained
+/organisations/siemens/,/organisations/siemens/,Retained
+/organisations/configured-things/,/organisations/configured-things/,Retained
+/organisations/sensor-it/,/organisations/sensor-it/,Retained
+/organisations/google/,/organisations/google/,Retained
+/organisations/capabilities-limited/,/organisations/capabilities-limited/,Retained
+/organisations/cyberwhiz/,/organisations/cyberwhiz/,Retained
+/organisations/university-of-exeter/,/organisations/university-of-exeter/,Retained
+/organisations/parvat-infotech/,/organisations/parvat-infotech/,Retained
+/organisations/light-momentum-technology-corp/,/organisations/light-momentum-technology-corp/,Retained
+/organisations/university-of-modena-and-reggio-emilia/,/organisations/university-of-modena-and-reggio-emilia/,Retained
+/organisations/german-research-center-for-artificial-intelligence-dfki/,/organisations/german-research-center-for-artificial-intelligence-dfki/,Retained
+/organisations/wind-river/,/organisations/wind-river/,Retained
+/organisations/mission-critical-applications-limited/,/organisations/mission-critical-applications-limited/,Retained
+/organisations/ericsson/,/organisations/ericsson/,Retained
+/organisations/the-capable-hub/,/organisations/the-capable-hub/,Retained
+/organisations/dstl/,/organisations/dstl/,Retained
+/organisations/smart-information-flow-technologies-sift/,/organisations/smart-information-flow-technologies-sift/,Retained
+/organisations/king-abdullah-university-of-science-and-technology-kaust/,/organisations/king-abdullah-university-of-science-and-technology-kaust/,Retained
+/organisations/ku-leuven/,/organisations/ku-leuven/,Retained
+/organisations/sci-semiconductor/,/organisations/sci-semiconductor/,Retained
+/organisations/bt-group/,/organisations/bt-group/,Retained
+/organisations/ararat-river-consulting-llc/,/organisations/ararat-river-consulting-llc/,Retained
+/organisations/minerva-systems/,/organisations/minerva-systems/,Retained
+/organisations/european-commission-dg-connect/,/organisations/european-commission-dg-connect/,Retained
+/organisations/hildebrand/,/organisations/hildebrand/,Retained
+/organisations/rptu/,/organisations/rptu/,Retained
+/organisations/pa-consulting/,/organisations/pa-consulting/,Retained
+/organisations/instituto-superior-de-engenharia-do-porto/,/organisations/instituto-superior-de-engenharia-do-porto/,Retained
+/organisations/university-of-cambridge/,/organisations/university-of-cambridge/,Retained
+/organisations/arm/,/organisations/arm/,Retained
+/organisations/chevin-technology/,/organisations/chevin-technology/,Retained
+/organisations/techworks/,/organisations/techworks/,Retained
+/organisations/nquiringminds/,/organisations/nquiringminds/,Retained
+/organisations/sri/,/organisations/sri/,Retained
+/organisations/aria/,/organisations/aria/,Retained
+/organisations/national-taiwan-university/,/organisations/national-taiwan-university/,Retained
+/organisations/tccoe/,/organisations/tccoe/,Retained
+/organisations/verisilicon/,/organisations/verisilicon/,Retained
+/organisations/um-labs/,/organisations/um-labs/,Retained
+/organisations/discribehub/,/organisations/discribehub/,Retained
+/organisations/ncsc/,/organisations/ncsc/,Retained
+/organisations/risc-v-international/,/organisations/risc-v-international/,Retained
+/organisations/centrale-supelec/,/organisations/centrale-supelec/,Retained
+/organisations/the-university-of-manchester/,/organisations/the-university-of-manchester/,Retained
+/organisations/lowrisc/,/organisations/lowrisc/,Retained
+/papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/,/papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/,Retained
+/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/,/papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/,Retained
+/papers/cornucopia-temporal-safety-for-cheri-heaps/,/papers/cornucopia-temporal-safety-for-cheri-heaps/,Retained
+/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/,/papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/,Retained
+/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/,/papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/,Retained
+/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/,/papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/,Retained
+/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/,/papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/,Retained
+/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/,/papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/,Retained
+/papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/,/papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/,Retained
+/papers/cheriot-complete-memory-safety-for-embedded-devices/,/papers/cheriot-complete-memory-safety-for-embedded-devices/,Retained
+/papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/,/papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/,Retained
+/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/,/papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/,Retained
+/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/,/papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/,Retained
+/papers/cheri-concentrate-practical-compressed-capabilities/,/papers/cheri-concentrate-practical-compressed-capabilities/,Retained
+/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/,/papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/,Retained
+/discover-cheri/cheri-products/,/build/platforms/cheri-products/,HTML redirect
+/discover-cheri/cheri-products/morello/,/products/morello/,HTML redirect
+/software/cheribsd/,/repositories/cheribsd/,HTML redirect
+/software/rust/,/build/software-ecosystem/rust/,HTML redirect
+/software/cheri-zephyr/,/repositories/cheri-zephyr/,HTML redirect
+/software/debugging-tools/,/build/software-ecosystem/debugging-tools/,HTML redirect
+/software/real-time-operating-systems/,/build/software-ecosystem/real-time-operating-systems/,HTML redirect
+/software/llvm-and-clang/,/build/software-ecosystem/llvm-and-clang/,HTML redirect
+/software/cheri-linux/,/build/software-ecosystem/cheri-linux/,HTML redirect
+/software/porting-status/,/build/software-ecosystem/porting-status/,HTML redirect
+/software/simulators/,/build/software-ecosystem/simulators/,HTML redirect

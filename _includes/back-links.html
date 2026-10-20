@@ -1,2 +1,0 @@
-{% capture navigation_links %}{% for link in page.links %}{% if link.kind == 'navigation' %}<li><a href="{% include url.html url=link.url %}">{{ link.label | escape }}</a></li>{% endif %}{% endfor %}{% endcapture %}{% assign navigation_links = navigation_links | strip %}
-{% if navigation_links != '' %}<nav class="record-backlinks" aria-label="Directory links"><ul role="list">{{ navigation_links }}</ul></nav>{% endif %}

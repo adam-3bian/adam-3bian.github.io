@@ -1,26 +1,34 @@
 ---
+layout: details/speaker
 title: Peter Cox
-organization:
-- um-labs
-speaker: true
-summary: Peter Cox is the CEO and founder of UM Labs, a UK R&amp;D company specialising in cybersecurity for real-time
-  application on IP networks.
-thumbnail:
-  src: /assets/people/peter-cox/7263b66ba9dc-portrait.jpg
+summary: Peter Cox is the CEO and founder of UM Labs, a UK R&amp;D company specialising in cybersecurity for real-time application on IP networks.
+permalink: /people/peter-cox/
+slug: peter-cox
+navigation:
+  header:
+    category: News & Events
+    subcategory: People & Opportunities
+image:
+  src: /assets/images/news-and-events/people-and-opportunities/peter-cox/b4d6bb18-7263b66ba9dc-portrait.jpg
   alt: Peter Cox
   width: 1151
   height: 1200
-links:
-- label: Back to all speakers
-  url: /news-and-events/people-and-opportunities/speakers/
-  kind: navigation
-- label: LinkedIn
-  url: https://www.linkedin.com/in/uml/
-  kind: profile
+person:
+  roles:
+  - speaker
+  organisations:
+  - organisation: um-labs
+    relationship: other
+  links:
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/uml/
+related:
+- type: page
+  slug: news-and-events-people-and-opportunities-speakers
+  relation: navigation
 ---
 
 ## Biography
-{: id="biography" }
 
 Peter Cox is the CEO and founder of UM Labs, a UK R&amp;D company specialising in cybersecurity for real-time application on IP networks. Peter has over 30 years’ experience in cybersecurity including as a co-founder of one of the pioneering firewall companies. At this company, Peter was responsible for gaining the fist ever Common Criteria EAL4 certification for a firewall.
 

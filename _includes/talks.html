@@ -1,3 +1,0 @@
-{% assign record_talks = '' | split: ',' %}
-{% for talk in site.data.talks %}{% if page.collection == 'people' and talk.speakers contains page.slug %}{% assign record_talks = record_talks | push: talk %}{% elsif page.collection == 'events' and talk.event == page.slug %}{% assign record_talks = record_talks | push: talk %}{% endif %}{% endfor %}
-{% if record_talks.size > 0 %}<section class="related-block" aria-labelledby="cheri-talks"><h2 id="cheri-talks">CHERI talks</h2><ul class="talk-list" role="list">{% for talk in record_talks %}{% include talk-card.html talk=talk %}{% endfor %}</ul></section>{% endif %}

@@ -1,25 +1,34 @@
 ---
+layout: details/speaker
 title: John Goodacre
-organization:
-- ukri
-speaker: true
 summary: UKRI
-thumbnail:
-  src: /assets/people/john-goodacre/8cbcb8b7b09c-portrait.png
+permalink: /people/john-goodacre/
+slug: john-goodacre
+navigation:
+  header:
+    category: News & Events
+    subcategory: People & Opportunities
+image:
+  src: /assets/images/news-and-events/people-and-opportunities/john-goodacre/41380cd8-8cbcb8b7b09c-portrait.png
   alt: John Goodacre
   width: 1024
   height: 768
-links:
-- label: Back to all speakers
-  url: /news-and-events/people-and-opportunities/speakers/
-  kind: navigation
-- label: LinkedIn
-  url: https://www.linkedin.com/in/john-goodacre-722b59/
-  kind: profile
+person:
+  roles:
+  - speaker
+  organisations:
+  - organisation: ukri
+    relationship: other
+  links:
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/john-goodacre-722b59/
+related:
+- type: page
+  slug: news-and-events-people-and-opportunities-speakers
+  relation: navigation
 ---
 
 ## Biography
-{: id="biography" }
 
 Prof. John Goodacre: University of Manchester, Director Digital Security by Design: UKRI
 

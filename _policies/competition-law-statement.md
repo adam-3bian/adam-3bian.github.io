@@ -1,33 +1,41 @@
 ---
+layout: details/policy
 title: Competition Law Statement
-where-next:
-  url: /policies/intellectual-property-policy/
-related-pages:
-- url: /policies/code-of-conduct/
-  description: The behaviour and participation expectations that apply to Alliance spaces and activities.
-  action: Read this page
-- url: /organisations/cheri-alliance/
-  title: About the CHERI Alliance
-  description: Learn how the Alliance connects organisations working across the CHERI ecosystem.
-  action: Read this page
-summary: Alliance collaboration must never be used to exchange competitively sensitive information or coordinate
-  market behaviour.
-version: '1.0'
-document_date: 2024-08
-links:
-- label: Download official PDF
+summary: Alliance collaboration must never be used to exchange competitively sensitive information or coordinate market behaviour.
+permalink: /policies/competition-law-statement/
+slug: competition-law-statement
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Legal & Policies
+policy:
+  type: governance
+  version: '1.0'
+  dates:
+    effective: 2024-08
+resources:
+- type: pdf
+  label: Download official PDF
   url: /assets/pages/alliance--legal-and-policies--competition-law-statement/0053779e62ce-competition.pdf
-  kind: document
-  primary: true
-authoritative_format: PDF
+related:
+- type: policy
+  slug: intellectual-property-policy
+  relation: next_step
+- type: policy
+  slug: code-of-conduct
+  relation: related
+- type: organisation
+  slug: cheri-alliance
+  relation: related
 ---
 
-![pdf](/assets/shared/source-assets/d63b7eac09b7-pdf-file-icon.webp){: .image-left .image-inline } Download the [CHERI Alliance Competition Law Statement](/assets/pages/alliance--legal-and-policies--competition-law-statement/0053779e62ce-competition.pdf) – The PDF is the official version. The text is reproduced below for convenience, but if there is any difference between the two versions, the PDF takes precedence.
+## Overview
+
+![pdf](/assets/images/common/58e51132-d63b7eac09b7-pdf-file-icon.webp){: .image-left .image-inline } Download the [CHERI Alliance Competition Law Statement](/assets/pages/alliance--legal-and-policies--competition-law-statement/0053779e62ce-competition.pdf) – The PDF is the official version. The text is reproduced below for convenience, but if there is any difference between the two versions, the PDF takes precedence.
 
 ---
 
 ## 1. Introduction
-{: id="1-introduction" }
 
 1.1 The purpose of CHERI Alliance C.I.C. (the Alliance) is to carry on activities which benefit the community and in particular (without limitation) to promote the use and adoption of CHERI open security technology, methodology and/or standards to improve system security and memory protection in software and hardware products. In carrying this out, Alliance members and non-member attendees must:
 
@@ -36,7 +44,6 @@ authoritative_format: PDF
 1.1.2 follow the Guiding Principles as follows.
 
 ## 2. Guiding principles – what information can be shared
-{: id="2-guiding-principles--what-information-can-be-shared" }
 
 2.1 There are many positive aspects to associations such as the Alliance and information that can be shared can include:
 
@@ -51,7 +58,6 @@ authoritative_format: PDF
 2.1.5 industry standards that increase product interoperability, compatibility or safety, provided advice has been taken on the development, transparency, accessibility and potential competitive impact of these standards.
 
 ## 3. Guiding principles – what information cannot be shared
-{: id="3-guiding-principles--what-information-cannot-be-shared" }
 
 3.1 There are certain areas of sensitive commercial information that should never be discussed between our members or between members and non-members through the Alliance, either formally or informally, intentionally or inadvertently, directly or indirectly through a third party. These include:
 
@@ -88,8 +94,11 @@ authoritative_format: PDF
 3.3 These types of agreements (cartel agreements) are automatically illegal in the UK, the jurisdiction in which the Alliance is established. There can be no justification; the agreement itself is unlawful.
 
 ## 4. Queries
-{: id="4-queries" }
 
 4.1 Any questions relating to this statement, or its contents, should be directed to the Board of Directors of the Alliance.
 
 4.2 Any suspected breach of this statement should be reported to the Board of Directors of the Alliance.
+
+## Authoritative document
+
+The published authoritative format is PDF.

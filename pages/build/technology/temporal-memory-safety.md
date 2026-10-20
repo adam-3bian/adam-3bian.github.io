@@ -1,18 +1,26 @@
 ---
+layout: page/standard
 title: Temporal Memory Safety
+summary: Temporal memory safety prevents references from being used after the object they refer to has ceased to exist.
 permalink: /build/technology/temporal-memory-safety/
-where-next:
-  url: /build/technology/compartmentalisation/
-related-pages:
-- url: /build/technology/how-cheri-capabilities-work/
-  description: How CHERI Capabilities work.
-  action: Read this page
-- url: /build/technology/spatial-memory-safety/
-  description: A program allocates eight bytes and writes sixteen.
-  action: Read this page
-summary: Temporal memory safety prevents references from being used after the object they refer to has ceased to
-  exist.
+slug: build-technology-temporal-memory-safety
+navigation:
+  header:
+    category: Build
+    subcategory: Technology
+related:
+- type: page
+  slug: build-technology-compartmentalisation
+  relation: next_step
+- type: page
+  slug: build-technology-how-cheri-capabilities-work
+  relation: related
+- type: page
+  slug: build-technology-spatial-memory-safety
+  relation: related
 ---
+
+## Overview
 
 An object can be perfectly bounded and still be unsafe to access. If a program frees the object but retains a copy of its capability, that capability has become stale. Using it later is a **use-after-free** error.
 
@@ -21,7 +29,6 @@ The problem becomes particularly dangerous if the allocator reuses the same memo
 Preventing this is **temporal memory safety**.
 
 ## Why bounds do not solve lifetime
-{: id="why-bounds-do-not-solve-lifetime" }
 
 Consider:
 
@@ -47,7 +54,6 @@ Or more simply:
 > Spatial safety is about **where** you can access. Temporal safety is about **when** that access remains valid.
 
 ## Baseline CHERI behaviour
-{: id="baseline-cheri-behaviour" }
 
 CHERI's capability [tags](/build/technology/cheri-capabilities/tags-and-validity/) prevent software from simply constructing arbitrary valid capabilities. But copying a valid capability creates another valid reference.
 
@@ -56,48 +62,40 @@ Freeing an object does not, by itself, invalidate every outstanding capability t
 CHERI provides important foundations for temporal safety, but temporal safety also requires the surrounding allocator, runtime or operating system to control what happens when memory is freed and reused.
 
 ## Approaches to temporal safety
-{: id="approaches-to-temporal-safety" }
 
 CHERI systems can combine capabilities with different lifetime-management techniques.
 
 ### Quarantine
-{: id="quarantine" }
 
 Freed memory is temporarily kept out of circulation before being reused. This reduces the opportunity for stale references to access a new object, although delaying reuse alone does not necessarily eliminate the problem.
 
 ### Revocation
-{: id="revocation" }
 
 Before memory is reused, the system identifies and invalidates capabilities referring to the retired memory. Capability tags help the system distinguish capabilities from ordinary data.
 
 The cost and concurrency model need careful design.
 
 ### Epochs or generations
-{: id="epochs-or-generations" }
 
 Allocations can be associated with a generation, colour or epoch. A stale reference associated with an older generation can then be rejected when memory is reused.
 
 Implementations vary in where this metadata lives and how wraparound is handled.
 
 ### Allocator and architecture support
-{: id="allocator-and-architecture-support" }
 
 Allocators can organise and recycle memory in ways designed to work with capability bounds and revocation. Hardware support can also help make these mechanisms more efficient.
 
 ### Language-managed lifetime
-{: id="language-managed-lifetime" }
 
 Language mechanisms such as Rust ownership, garbage collection and reference counting can prevent many stale references at a higher level. CHERI can complement these mechanisms, particularly where native code, unsafe code or lower-level interfaces are involved.
 
 ## CHERIoT
-{: id="cheriot" }
 
 CHERIoT integrates temporal memory safety into its hardware-software design. Its allocator and revocation mechanisms are designed to prevent stale capabilities from gaining access to reallocated objects while meeting embedded-system constraints.
 
 This is a property of the CHERIoT system design, not automatically of every CHERI platform. Temporal-safety claims should therefore identify the mechanism or platform providing the guarantee.
 
 ## Compartment lifetimes
-{: id="compartment-lifetimes" }
 
 Lifetime matters across compartment boundaries too.
 
@@ -114,7 +112,6 @@ Good interface design should make clear:
 [Sealing](/build/technology/cheri-capabilities/sealing/) can make a capability opaque, but does not by itself invalidate every copy when the underlying object is destroyed.
 
 ## Evaluating a temporal-safety claim
-{: id="evaluating-a-temporal-safety-claim" }
 
 Ask:
 
@@ -148,7 +145,6 @@ Temporal memory safety does not by itself prevent:
 - cryptographic or side-channel flaws
 
 ## Key takeaway
-{: id="key-takeaway" }
 
 CHERI capabilities provide the authority and metadata needed to build strong temporal-safety mechanisms, but object lifetime is a system-level responsibility.
 

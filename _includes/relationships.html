@@ -1,65 +1,36 @@
-{% assign record_id = page.slug | default: page.basename %}
-{% assign related_people = '' | split: ',' %}
-{% assign related_events = '' | split: ',' %}
-{% assign related_papers = '' | split: ',' %}
-{% assign related_news = '' | split: ',' %}
-{% assign related_orgs = '' | split: ',' %}
-{% assign linked_speakers = '' | split: ',' %}
-{% assign linked_authors = '' | split: ',' %}
-{% for person_id in page.speakers %}
-  {% assign person = site.people | where: 'slug', person_id | first %}
-  {% if person %}{% assign linked_speakers = linked_speakers | push: person %}{% endif %}
-{% endfor %}
+{% assign record_id = page.slug %}{% if page.post %}{% assign related_posts = site.posts | where: 'post.category', page.post.category | where_exp: 'entry', 'entry.slug != page.slug' | where_exp: 'entry', 'entry.sitemap != false' | sort: 'date' | reverse | slice: 0, 3 %}{% include relationship-section.html items=related_posts kind='posts' id='related-posts-title' title='Related articles' %}{% endif %}
+{% if page.person %}
 
-{% if page.collection == 'organisations' %}
-{% for person in site.people %}
-  {% if page.collection == 'organisations' and person.organization contains record_id %}{% assign related_people = related_people | push: person %}{% endif %}
-{% endfor %}
+{% assign person_events = '' | split: ',' %}{% for event in site.events %}{% assign refs = event.event.speakers | map: 'person' %}{% if refs contains record_id %}{% assign person_events = person_events | push: event %}{% endif %}{% endfor %}
+{% include relationship-section.html items=person_events kind='events' id='events-title' title='Events' %}
+{% assign person_papers = '' | split: ',' %}{% for paper in site.papers %}{% assign refs = paper.publication.authors | map: 'person' %}{% if refs contains record_id %}{% assign person_papers = person_papers | push: paper %}{% endif %}{% endfor %}
+{% include relationship-section.html items=person_papers kind='papers' id='papers-title' title='Publications' %}
+{% assign person_posts = '' | split: ',' %}{% for post in site.posts %}{% assign refs = post.post.authors | map: 'person' %}{% if refs contains record_id and post.sitemap != false %}{% assign person_posts = person_posts | push: post %}{% endif %}{% endfor %}
+{% include relationship-section.html items=person_posts kind='posts' id='posts-title' title='News articles' %}
+{% include person-talks.html events=person_events %}
 {% endif %}
-{% if page.organization.size > 0 %}
-{% for org in site.organisations %}
-  {% if page.organization contains org.slug %}{% assign related_orgs = related_orgs | push: org %}{% endif %}
-{% endfor %}
+{% if page.organisation %}
+{% assign organisation_people = '' | split: ',' %}{% for person in site.people %}{% assign refs = person.person.organisations | map: 'organisation' %}{% if refs contains record_id %}{% assign organisation_people = organisation_people | push: person %}{% endif %}{% endfor %}
+{% include relationship-section.html items=organisation_people kind='people' id='people-title' title='People' %}
+{% assign organisation_events = '' | split: ',' %}{% for event in site.events %}{% assign orgs = event.event.organisers | map: 'organisation' %}{% assign partners = event.event.partners | map: 'organisation' %}{% if orgs contains record_id or partners contains record_id %}{% assign organisation_events = organisation_events | push: event %}{% endif %}{% endfor %}
+{% include relationship-section.html items=organisation_events kind='events' id='events-title' title='Events' %}
+{% assign organisation_products = site.products | where: 'product.manufacturer', record_id %}{% include relationship-section.html items=organisation_products kind='products' id='products-title' title='Products' %}
+{% assign maintained_repositories = '' | split: ',' %}{% for repository in site.repositories %}{% assign refs = repository.repository.maintainers | map: 'organisation' %}{% if refs contains record_id %}{% assign maintained_repositories = maintained_repositories | push: repository %}{% endif %}{% endfor %}
+{% include relationship-section.html items=maintained_repositories kind='repositories' id='repositories-title' title='Maintained repositories' %}
+{% assign coordinated_groups = site.groups | where: 'working_group.coordinator', record_id %}{% include relationship-section.html items=coordinated_groups kind='groups' id='groups-title' title='Working groups' %}
+{% assign owned_policies = site.policies | where: 'policy.owner', record_id %}{% include relationship-section.html items=owned_policies kind='policies' id='policies-title' title='Policies' %}
 {% endif %}
-{% if page.collection == 'people' %}
-  {% for event in site.events %}{% if event.speakers contains record_id %}{% assign related_events = related_events | push: event %}{% endif %}{% endfor %}
-  {% for paper in site.papers %}{% if paper.authors contains record_id %}{% assign related_papers = related_papers | push: paper %}{% endif %}{% endfor %}
-  {% for story in site.news %}{% if story.alternate != true and story.authors contains record_id %}{% assign related_news = related_news | push: story %}{% endif %}{% endfor %}
+{% if page.event %}
+{% if page.event.series %}{% assign series_events = site.events | where: 'event.series', page.event.series | where_exp: 'entry', 'entry.slug != page.slug' | sort: 'date' | reverse %}{% include relationship-section.html items=series_events kind='events' id='series-title' title='More events in this series' %}{% endif %}
+{% assign event_people = '' | split: ',' %}{% assign event_refs = page.event.speakers | map: 'person' | uniq %}{% for ref in event_refs %}{% assign speaker = site.people | where: 'slug', ref | first %}{% assign event_people = event_people | push: speaker %}{% endfor %}
+{% include relationship-section.html items=event_people kind='people' id='speakers-title' title='Speakers' %}
+{% assign event_organisations = '' | split: ',' %}{% assign organiser_refs = page.event.organisers | map: 'organisation' %}{% assign partner_refs = page.event.partners | map: 'organisation' %}{% assign all_org_refs = organiser_refs | concat: partner_refs | uniq %}{% for ref in all_org_refs %}{% assign organisation = site.organisations | where: 'slug', ref | first %}{% assign event_organisations = event_organisations | push: organisation %}{% endfor %}
+{% include relationship-section.html items=event_organisations kind='organisations' id='organisers-title' title='Organisers and partners' %}
 {% endif %}
-{% if related_orgs.size > 0 %}
-<section class="related-content" data-relationship="organization" aria-labelledby="organizations-title">
-  <h2 id="organizations-title">Organisations</h2>
-  {% include listing.html items=related_orgs label="Organisations" kind="organisations" heading="h3" compact=true metadata=false columns=3 %}
-</section>{% endif %}
-{% if linked_speakers.size > 0 and page.speaker_sections != true %}
-<section class="related-content" data-relationship="speakers" aria-labelledby="speakers-title">
-  <h2 id="speakers-title">Speakers</h2>
-  {% include listing.html items=linked_speakers label="Speakers" kind="people" heading="h3" compact=true metadata=false columns=3 %}
-</section>{% endif %}
-
-{% if related_events.size > 0 %}
-<section class="related-content" data-relationship="events" aria-labelledby="events-title">
-  <h2 id="events-title">Events</h2>
-  {% include chronological-items.html items=related_events kind='events' %}
-  {% include listing.html items=chronological_items label="Events" kind="events" heading="h3" action="View event" metadata=false columns=3 %}
-</section>{% endif %}
-{% if related_papers.size > 0 %}
-<section class="related-content" data-relationship="papers" aria-labelledby="papers-title">
-  <h2 id="papers-title">Publications</h2>
-  {% include listing.html items=related_papers label="Publications" kind="papers" heading="h3" compact=true metadata=false columns=2 %}
-</section>{% endif %}
-{% if related_people.size > 0 %}
-<section class="related-content" data-relationship="people" aria-labelledby="people-title">
-  <h2 id="people-title">People</h2>
-  {% include listing.html items=related_people label="People" kind="people" heading="h3" compact=true metadata=false columns=3 %}
-</section>{% endif %}
-{% if related_news.size > 0 %}
-<section class="related-content" data-relationship="news" aria-labelledby="news-title">
-  <h2 id="news-title">News articles</h2>
-  {% include chronological-items.html items=related_news kind='news' %}
-  {% include listing.html items=chronological_items label="News articles" kind="news" heading="h3" action="Read article" metadata=false columns=3 %}
-</section>{% endif %}
-{% if site.data['governing-board'] contains record_id and page.collection == 'people' %}
-<section class="related-content" data-relationship="governing-board" aria-labelledby="board-title">
-  <h2 id="board-title">Governing board</h2><p><a href="{{ '/alliance/leadership/governing-board/' | relative_url }}">View the Governing Board</a></p>
-</section>{% endif %}
+{% if page.product %}{% assign manufacturer = site.organisations | where: 'slug', page.product.manufacturer %}{% include relationship-section.html items=manufacturer kind='organisations' id='manufacturer-title' title='Manufacturer' %}
+{% assign product_repositories = '' | split: ',' %}{% for ref in page.product.repositories %}{% assign repository = site.repositories | where: 'slug', ref.repository | first %}{% assign product_repositories = product_repositories | push: repository %}{% endfor %}{% include relationship-section.html items=product_repositories kind='repositories' id='repositories-title' title='Compatible repositories' %}
+{% assign product_guides = site.guides | where: 'guide.primary_product', record_id %}{% include relationship-section.html items=product_guides kind='guides' id='guides-title' title='Guides' %}{% endif %}
+{% if page.repository %}{% assign repository_products = '' | split: ',' %}{% for product in site.products %}{% assign refs = product.product.repositories | map: 'repository' %}{% if refs contains record_id %}{% assign repository_products = repository_products | push: product %}{% endif %}{% endfor %}{% include relationship-section.html items=repository_products kind='products' id='products-title' title='Compatible products' %}
+{% assign repository_maintainers = '' | split: ',' %}{% for ref in page.repository.maintainers %}{% assign organisation = site.organisations | where: 'slug', ref.organisation | first %}{% assign repository_maintainers = repository_maintainers | push: organisation %}{% endfor %}{% include relationship-section.html items=repository_maintainers kind='organisations' id='maintainers-title' title='Maintainers' %}{% endif %}
+{% if page.working_group.coordinator %}{% assign coordinators = site.organisations | where: 'slug', page.working_group.coordinator %}{% include relationship-section.html items=coordinators kind='organisations' id='coordinator-title' title='Coordinator' %}{% endif %}
+{% if page.policy.owner %}{% assign owners = site.organisations | where: 'slug', page.policy.owner %}{% include relationship-section.html items=owners kind='organisations' id='owner-title' title='Policy owner' %}{% endif %}

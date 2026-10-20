@@ -1,24 +1,31 @@
 ---
+layout: details/working-group
 title: ✅ Certification WG
-where-next:
-  url: /adopt/assurance-and-adoption/about-cheri-enabled/
-  title: CHERI Enabled
-summary: Develops shared thinking around certification criteria, assurance needs, evidence, and the operation of
-  Alliance certification programmes.
-group_type: Programme and ecosystem
-collaboration_areas:
-- Certification criteria
-- Evidence and assurance needs
-- Programme development
-links:
-- label: Back to all working groups
-  url: /alliance/leadership/working-groups/
-  kind: navigation
-- label: Enquire about this group
-  url: /alliance/membership/contact/
-  kind: resource
-  primary: true
+summary: Develops shared thinking around certification criteria, assurance needs, evidence, and the operation of Alliance certification programmes.
+permalink: /groups/certification-working-group/
+slug: certification-working-group
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Leadership
+working_group:
+  type: programme
+  focus_areas:
+  - Certification criteria
+  - Evidence and assurance needs
+  - Programme development
+forms:
+- contact
+related:
+- type: page
+  slug: adopt-assurance-and-adoption-about-cheri-enabled
+  relation: next_step
+- type: page
+  slug: alliance-leadership-working-groups
+  relation: navigation
 ---
+
+## Overview
 
 The Certification Program Working Group is responsible for defining the [CHERI Enabled](/adopt/assurance-and-adoption/about-cheri-enabled/) program for CHERI products:
 

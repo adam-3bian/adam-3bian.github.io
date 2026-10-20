@@ -1,24 +1,33 @@
 ---
+layout: details/speaker
 title: Haydn Povey
-organization:
-- sci-semiconductor
-speaker: true
 summary: SCI Semiconductor
-thumbnail:
-  src: /assets/people/haydn-povey/96fd3cae5bca-portrait.png
+permalink: /people/haydn-povey/
+slug: haydn-povey
+navigation:
+  header:
+    category: News & Events
+    subcategory: People & Opportunities
+image:
+  src: /assets/images/news-and-events/people-and-opportunities/haydn-povey/3f197065-96fd3cae5bca-portrait.png
   alt: Haydn Povey
   width: 1024
   height: 768
-links:
-- label: Back to all speakers
-  url: /news-and-events/people-and-opportunities/speakers/
-  kind: navigation
-- label: LinkedIn
-  url: https://www.linkedin.com/in/haydn-povey-373b14/
-  kind: profile
+person:
+  roles:
+  - speaker
+  organisations:
+  - organisation: sci-semiconductor
+    relationship: other
+  links:
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/haydn-povey-373b14/
+related:
+- type: page
+  slug: news-and-events-people-and-opportunities-speakers
+  relation: navigation
 ---
 
 ## Biography
-{: id="biography" }
 
 Details to follow.

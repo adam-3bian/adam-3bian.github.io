@@ -1,31 +1,35 @@
 ---
+layout: details/member
 title: Novomorphic
-member: true
 summary: Details to follow.
-membership_category: Full Member
-membership_status: Member
-links:
-- label: Visit member website
-  url: https://novomorphic.com/
-  kind: website
-  primary: true
-- label: Back to all members
-  url: /alliance/leadership/members/
-  kind: navigation
-thumbnail:
-  src: /assets/organisations/novomorphic/3f35c8ed2eaa-logo.png
+permalink: /organisations/novomorphic/
+slug: novomorphic
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Leadership
+image:
+  src: /assets/images/common/4369c234-3f35c8ed2eaa-logo.png
   alt: Novomorphic logo
   width: 1500
   height: 232
   fit: contain
+organisation:
+  membership:
+    is_member: true
+    status: active
+    tier: full
+  website: https://novomorphic.com/
+related:
+- type: page
+  slug: alliance-leadership-members
+  relation: navigation
 ---
 
 ## Description
-{: id="description" }
 
 Details to follow.
 
 ## CHERI Activities
-{: id="cheri-activities" }
 
 Details to follow.

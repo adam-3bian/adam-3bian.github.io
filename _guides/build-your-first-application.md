@@ -1,21 +1,28 @@
 ---
+layout: details/guide
 title: Build Your First Application
-where-next:
-  url: /guides/port-existing-software/
-related-pages:
-- url: /guides/choose-a-platform/
-  title: Choose a Platform
-  description: A CHERI platform combines more than an instruction set.
-  action: Read this page
-- url: /guides/install-a-toolchain/
-  title: Install a Toolchain
-  description: A guide to the main toolchain components used to build CHERI software and where platform-specific
-    setup differs.
-  action: Read this page
-summary: Build a small program, confirm it runs as capability-aware code, and observe a controlled bounds violation
-  in the target environment.
-topic: Getting started
+summary: Build a small program, confirm it runs as capability-aware code, and observe a controlled bounds violation in the target environment.
+permalink: /guides/build-your-first-application/
+slug: build-your-first-application
+navigation:
+  header:
+    category: Build
+    subcategory: Software Developers
+guide:
+  topic: getting-started
+related:
+- type: guide
+  slug: port-existing-software
+  relation: next_step
+- type: guide
+  slug: choose-a-platform
+  relation: related
+- type: guide
+  slug: install-a-toolchain
+  relation: related
 ---
+
+## Overview
 
 Your first CHERI application should answer three separate questions:
 
@@ -26,7 +33,6 @@ Your first CHERI application should answer three separate questions:
 A hello-world message answers only the first question.
 
 ## A small pointer example
-{: id="a-small-pointer-example" }
 
 Create `first-cheri.c`:
 
@@ -54,7 +60,6 @@ int main(void) {
 This is ordinary C. The useful difference is how a CHERI-aware compiler and application binary interface (ABI) represent `values` and the pointer received by `sum`.
 
 ## Build inside CheriBSD
-{: id="build-inside-cheribsd" }
 
 If you have booted a pure-capability CheriBSD image, create the file inside the guest and run:
 
@@ -72,7 +77,6 @@ Total: 108
 Use the target’s binary inspection tools to confirm the ABI. Exact output and flags vary by architecture, but `file`, `readelf`, and the platform documentation should identify a pure-capability binary.
 
 ## Build as CHERIoT firmware
-{: id="build-as-cheriot-firmware" }
 
 CHERIoT applications are firmware images rather than Unix processes. Add the source to one of the real-time operating system (RTOS) example projects or create a project using the software development kit’s (SDK’s) `compartment()` and `firmware()` build helpers.
 
@@ -87,7 +91,6 @@ xmake run
 Use the [CHERIoT Programmer’s Guide](https://cheriot.org/book/) for the current project layout, entry-point signature, and serial-console or simulator output interface. Begin from a supplied example so that the board description, linker configuration, and RTOS dependencies are known to work.
 
 ## Observe an invalid access safely
-{: id="observe-an-invalid-access-safely" }
 
 After the valid program works, create a separate development-only test. Keep intentional undefined behaviour out of production code.
 
@@ -124,7 +127,6 @@ A suitable pure-capability allocator and runtime should return a capability boun
 This example demonstrates spatial protection, not temporal safety. Reading through `values` after `free(values)` tests a different property and the result depends on the platform’s allocator and revocation mechanism.
 
 ## If the program does not fault
-{: id="if-the-program-does-not-fault" }
 
 A missing fault does not by itself mean that CHERI failed. Check the configuration first:
 
@@ -137,7 +139,6 @@ A missing fault does not by itself mean that CHERI failed. Check the configurati
 Use the platform test suite for authoritative validation. Small C examples are learning aids, not conformance tests.
 
 ## Record a useful result
-{: id="record-a-useful-result" }
 
 Keep the following with your output:
 

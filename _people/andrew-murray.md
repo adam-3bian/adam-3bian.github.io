@@ -1,26 +1,34 @@
 ---
+layout: details/speaker
 title: Andrew Murray
-organization:
-- the-good-penguin
-speaker: true
-summary: Andrew Murray is founder and director of The Good Penguin, a UK based consultancy with a focus and passion
-  for embedded Linux, low level and open-source software.
-thumbnail:
-  src: /assets/people/andrew-murray/fa3b8031754b-portrait.png
+summary: Andrew Murray is founder and director of The Good Penguin, a UK based consultancy with a focus and passion for embedded Linux, low level and open-source software.
+permalink: /people/andrew-murray/
+slug: andrew-murray
+navigation:
+  header:
+    category: News & Events
+    subcategory: People & Opportunities
+image:
+  src: /assets/images/news-and-events/people-and-opportunities/andrew-murray/e3f410cf-fa3b8031754b-portrait.png
   alt: Andrew Murray
   width: 900
   height: 1200
-links:
-- label: Back to all speakers
-  url: /news-and-events/people-and-opportunities/speakers/
-  kind: navigation
-- label: LinkedIn
-  url: https://www.linkedin.com/in/andrewmurrayuk/
-  kind: profile
+person:
+  roles:
+  - speaker
+  organisations:
+  - organisation: the-good-penguin
+    relationship: other
+  links:
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/andrewmurrayuk/
+related:
+- type: page
+  slug: news-and-events-people-and-opportunities-speakers
+  relation: navigation
 ---
 
 ## Biography
-{: id="biography" }
 
 Andrew Murray is founder and director of The Good Penguin, a UK based consultancy with a focus and passion for embedded Linux, low level and open-source software. The Good Penguin has contributed to the ISCF Digital Security by Design programme, developing and maintaining ARM’s official Morello Yocto distribution. Before founding The Good Penguin, Andrew established Embedded Bits, an embedded Linux consultancy, which is now the UK presence for Witekio.
 

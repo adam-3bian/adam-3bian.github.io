@@ -9,7 +9,7 @@ URL = os.environ.get('SITE_URL', 'http://127.0.0.1:4200/').rstrip('/') + '/'
 OUT = Path(os.environ.get('REPORT_ROOT', ROOT / 'reports/browser'))
 OUT.mkdir(parents=True, exist_ok=True)
 AXE = Path(os.environ.get('AXE_PATH', '/workspace/work/browser-tools/node_modules/axe-core/axe.min.js'))
-routes = ['', 'discover/resources/glossary/', 'people/', 'organisations/', 'news/', 'events/', 'papers/', 'hardware/', 'software/', 'groups/', 'guides/', 'policies/', 'reports/', 'build/platforms/cheri-products/', 'people/mike-eftimakis/', 'people/a-theodore-markettos/', 'policies/code-of-conduct/', 'events/cheritech26/', 'papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/', 'news/ai-doesnt-need-a-kill-switch-it-needs-boundaries/', 'discover/understand/how-does-cheri-work/']
+routes = ['', 'discover/resources/glossary/', 'people/', 'organisations/', 'news/', 'events/', 'papers/', 'products/', 'repositories/', 'groups/', 'guides/', 'policies/', 'reports/', 'build/platforms/cheri-products/', 'people/mike-eftimakis/', 'people/a-theodore-markettos/', 'policies/code-of-conduct/', 'events/cheritech26/', 'papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/', 'news/ai-doesnt-need-a-kill-switch-it-needs-boundaries/', 'discover/understand/how-does-cheri-work/']
 results = []
 
 def ready(page):
@@ -62,10 +62,10 @@ with sync_playwright() as p:
     page.goto(URL + 'papers/?sort=date-desc')
     years = page.locator('[data-catalog-list] > li').evaluate_all('nodes => nodes.map(n => Number(n.dataset.date))')
     assert years == sorted(years, reverse=True)
-    page.goto(URL + 'build/platforms/cheri-products/')
-    assert page.locator('[data-catalog-list] > li').count() == 23
-    page.locator('[data-filter-input]').select_option('Processor designs, chips, and boards')
-    assert page.locator('[data-catalog-list] > li:visible').count() == 8
+    page.goto(URL + 'products/')
+    assert page.locator('[data-catalog-list] > li').count() == 2
+    page.locator('[data-filter-input]').select_option('fpga_board')
+    assert page.locator('[data-catalog-list] > li:visible h2').all_text_contents() == ['Sonata']
     page.goto(URL + 'people/a-theodore-markettos/')
     assert page.locator('.detail-aside').count() == 0, 'Sparse records must not reserve an empty sidebar'
     results.append({'interactions': 'passed: search, filtering, keyboard view toggle, persistence, reset, registry order, sparse records'})

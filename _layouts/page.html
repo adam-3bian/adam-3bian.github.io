@@ -2,15 +2,11 @@
 layout: default
 ---
 {% if page.url == '/' %}{% include home-hero.html %}{% else %}{% include page-header.html %}{% endif %}
-{% if page.hero %}{% include slider.html %}{% endif %}
-<article class="content {% if page.directory %}directory-content{% elsif page.hero %}landing-content{% else %}reading-content{% endif %}">
-{% if page.opportunity_type %}<dl class="simple-facts"><div><dt>Opportunity</dt><dd>{{ page.opportunity_type | escape }}</dd></div><div><dt>Location</dt><dd>{{ page.location | escape }} · {{ page.working_pattern | escape }}</dd></div><div><dt>Posted</dt><dd>{% include date.html value=page.posted_date %}</dd></div><div><dt>Experience</dt><dd>{{ page.experience | escape }}</dd></div><div><dt>Relevant skills</dt><dd>{{ page.skills | join: ', ' | escape }}</dd></div>{% for fact in page.additional_facts %}<div><dt>{{ fact.label | escape }}</dt><dd>{{ fact.value | markdownify }}</dd></div>{% endfor %}</dl>{% endif %}
-{% comment %}Retire obsolete preview UI copy at render time; authored Markdown remains unchanged.{% endcomment %}
-{% if page.url == '/alliance/membership/contact/' %}
-  {% assign content = content | remove: ' This preview does not send messages.' %}
-{% elsif page.url == '/news-and-events/news-and-analysis/subscribe-newsletter/' %}
-  {% assign content = content | remove: '<p>The signup form below is a preview and does not subscribe you.</p>' %}
-{% endif %}
-{% if page.sections and page.layout != 'index' %}{% include section-cards.html content=content groups=page.sections %}{% else %}{{ content }}{% endif %}
+{% include slider.html %}
+{% if page.layout == 'page/form' %}{% include page-forms.html %}{% endif %}
+<article class="content {% if page.listing %}directory-content{% elsif page.landing %}landing-content{% else %}reading-content{% endif %}">
+{% if page.landing.sections %}{% include section-cards.html content=content groups=page.landing.sections %}{% else %}{{ content }}{% endif %}
+{% if page.url == '/discover/resources/glossary/' %}{% include glossary.html %}{% endif %}
 </article>
-{% unless page.directory or page.hero %}{% if page.links.size > 0 %}<div class="reading-resources">{% include resource-links.html %}</div>{% endif %}{% endunless %}
+{% if page.landing.navigation == 'category' %}{% include category-links.html %}{% endif %}
+{% unless page.listing %}{% include resource-links.html %}{% endunless %}

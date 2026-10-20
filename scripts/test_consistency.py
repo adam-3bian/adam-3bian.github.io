@@ -128,18 +128,17 @@ with sync_playwright() as p:
             closing=page.locator('.promotional-panel,.footer-surface').evaluate_all("ns=>ns.map(n=>{const r=n.getBoundingClientRect();return {left:r.left,right:r.right,colour:getComputedStyle(n).backgroundColor}})")
             assert closing[0]==closing[1],('closing surfaces must align and share colour',closing)
             if route.startswith('people/?'):
-                assert page.locator('.catalog-media').count()==111
+                assert page.locator('.catalog-media').count()==63
                 first=page.locator('[data-title="A. Theodore Markettos"]')
-                assert first.locator('.placeholder-image').count()==1
-                assert first.locator('img').get_attribute('alt')==''
+                assert first.locator('img,.catalog-media').count()==0
                 for box in page.locator('.catalog-media').evaluate_all('ns=>ns.map(n=>({w:n.getBoundingClientRect().width,h:n.getBoundingClientRect().height}))'):
                     assert abs(box['w']-box['h'])<1,(width,box)
             if route.startswith('alliance/leadership/members/'):
-                assert page.locator('[data-catalog-list] >li').count()==52
+                assert page.locator('[data-catalog-list] >li').count()==51
                 assert page.locator('[data-catalog-list] .member-badge').count()==21
                 assert page.locator('.member-badge').first.evaluate('e=>getComputedStyle(e).backgroundColor')=='rgba(0, 0, 0, 0)'
                 assert page.locator('.member-badge').first.evaluate('e=>getComputedStyle(e).boxShadow')=='none'
-                assert page.locator('[data-catalog-list] .catalog-media').count()==52
+                assert page.locator('[data-catalog-list] .catalog-media').count()==51
                 # Check real geometry with short/long titles and absent badges.
                 members=page.locator('[data-catalog-list] .catalog-card').evaluate_all("""nodes=>nodes.map(n=>{
                   const rect=e=>{if(!e)return null;const r=e.getBoundingClientRect();return {x:r.x,y:r.y,right:r.right,bottom:r.bottom,height:r.height};};
@@ -167,13 +166,8 @@ with sync_playwright() as p:
                 assert len(destinations)==len(set(destinations)),(route,'repeated category options')
             if route=='alliance/membership/contact/':
                 assert page.locator('.form-panel form').count()==0
-                assert page.locator('.form-panel input,.form-panel select,.form-panel textarea').count()==5
-                assert page.locator('.form-panel button').is_disabled()
-                assert page.locator('.form-panel button').get_attribute('type')=='button'
-                assert 'preview' not in page.locator('main').inner_text().lower()
-                assert page.locator('.form-panel #cheri-contact-status a').get_attribute('href')=='https://cheri-alliance.org/contact/#contact_form'
-                headings=page.locator('#where-next,#related-pages').evaluate_all('ns=>ns.map(n=>{const s=getComputedStyle(n);return [s.fontSize,s.fontWeight,s.textTransform,s.color]})')
-                assert headings[0]==headings[1],headings
+                assert page.locator('.form-panel input,.form-panel select,.form-panel textarea,.form-panel button').count()==0
+                assert page.locator('.form-panel a.button').get_attribute('href')=='https://cheri-alliance.org/contact/#contact_form'
             if route=='people/adam-finney/':
                 assert page.locator('.related-content .cards-grid').count()==0
                 assert page.locator('.related-content .catalog-meta').count()==0
@@ -203,20 +197,16 @@ with sync_playwright() as p:
     page.route('**/missing-portrait.jpg',lambda route:route.abort())
     photo=page.locator('[data-title="Adam Finney"] img')
     photo.evaluate("e=>e.src='/missing-portrait.jpg'")
-    page.wait_for_function("(()=>{const i=document.querySelector('[data-title=\"Adam Finney\"] img');return i.classList.contains('placeholder-image')&&i.complete&&i.naturalWidth>0})()")
-    assert photo.get_attribute('alt')==''
+    page.wait_for_function("!document.querySelector('[data-title=\"Adam Finney\"] .catalog-media')")
     page.close()
     nojs=b.new_context(java_script_enabled=False,viewport={'width':390,'height':844})
     page=nojs.new_page();page.goto(URL+'people/')
     assert page.locator('[data-catalog-list]>li:visible').count()==111
-    assert page.locator('.placeholder-image').count()>0
-    page.goto(URL+'alliance/');assert page.locator('.index-navigation a').count()==18
+    assert page.locator('.placeholder-image').count()==0
+    page.goto(URL+'alliance/');assert page.locator('.category-links a').count()==18
     page.goto(URL+'alliance/membership/contact/')
-    assert page.locator('.form-panel input,.form-panel select,.form-panel textarea').count()==5
-    assert page.locator('.form-panel button').is_disabled()
-    page.locator('#cheri-contact-email-4').fill('form-check@example.test')
-    page.locator('#cheri-contact-email-4').press('Enter')
-    assert page.url==URL+'alliance/membership/contact/', 'Unconfigured fields must not navigate or submit'
+    assert page.locator('.form-panel input,.form-panel select,.form-panel textarea,.form-panel button').count()==0
+    assert page.locator('.form-panel a.button').get_attribute('href')=='https://cheri-alliance.org/contact/#contact_form'
     b.close()
 (OUT/'results.json').write_text(json.dumps(results,indent=2)+'\n')
 print(json.dumps({'responsive_views':len(results),'axe_views':len(routes)*2,'menu_options':len(expected),'no_javascript':'passed'}))

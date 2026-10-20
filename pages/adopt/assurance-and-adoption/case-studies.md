@@ -1,15 +1,23 @@
 ---
+layout: page/standard
 title: Case Studies
-permalink: /adopt/assurance-and-adoption/case-studies/
-where-next:
-  url: /adopt/assurance-and-adoption/assurance-and-certification/
-related-pages:
-- url: /adopt/business-case/the-business-case/
-  title: The Business Case
-  description: CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.
-  action: Read this page
 summary: Applying CHERI in real products and platforms
+permalink: /adopt/assurance-and-adoption/case-studies/
+slug: adopt-assurance-and-adoption-case-studies
+navigation:
+  header:
+    category: Adopt
+    subcategory: Assurance & Adoption
+related:
+- type: page
+  slug: adopt-assurance-and-adoption-assurance-and-certification
+  relation: next_step
+- type: page
+  slug: adopt-business-case-the-business-case
+  relation: related
 ---
+
+## Overview
 
 From experimental research systems to commercial processor IP, CHERI has been applied across a growing range of platforms. These case studies illustrate how capability-based protection can be integrated into existing software, embedded devices, and modern processor architectures.
 
@@ -23,7 +31,6 @@ No single project can represent every possible use case. Together, however, thes
 | Codasip X730 | Commercially application-class CHERI processor |
 
 ## Morello: a complete experimental stack
-{: id="morello-a-complete-experimental-stack" }
 
 The [Arm Morello programme](https://www.arm.com/architecture/cpu/morello) demonstrated that CHERI concepts can scale to a modern **high-performance 64-bit processor** and support real operating systems, toolchains, and applications.
 
@@ -31,10 +38,9 @@ Morello gave research and industry teams a realistic platform for porting operat
 
 Morello remains an experimental platform. Its importance lies in the full-stack evidence and experience it created, not in representing a production Arm architecture.
 
-![Arm Morello board](/assets/pages/adopt--assurance-and-adoption--case-studies/bfeebb3ac676-morello-board.webp){: .image-full }
+![Arm Morello board](/assets/images/common/12b2d225-bfeebb3ac676-morello-board.webp){: .image-full }
 
 ## CheriBSD: established software at operating-system scale
-{: id="cheribsd-established-software-at-operating-system-scale" }
 
 [CheriBSD](https://www.cheribsd.org/) demonstrates how a large existing operating system (FreeBSD, from the [FreeBSD foundation](/organisations/freebsd-foundation/)) can be adapted to take advantage of CHERI protection.
 
@@ -43,7 +49,6 @@ This work also showed how to perform a software migration, porting a large C cod
 This makes CheriBSD relevant to products that depend on mature native software and need evidence about the cost and effect of protecting it.
 
 ## CHERIoT: protection for small embedded devices
-{: id="cheriot-protection-for-small-embedded-devices" }
 
 [CHERIoT](https://cheriot.org/) brings CHERI protection to resource-constrained embedded systems and microcontrollers. The CHERIoT platform combines a 32-bit CHERI-RISC-V architecture, processor core, toolchain, and real-time operating system. It is designed around small compartments that do not trust one another and can communicate through controlled interfaces.
 
@@ -51,19 +56,17 @@ CHERIoT shows why CHERI can fit microcontrollers that lack the memory-management
 
 The `cheriot-ibex` core has been certified under the [CHERI Enabled programme](/adopt/assurance-and-adoption/about-cheri-enabled/).
 
-![CHERIoT processor on a Sonata board](/assets/pages/adopt--assurance-and-adoption--case-studies/645cc3b9a905-sonata-cheriot.webp){: .image-full }
+![CHERIoT processor on a Sonata board](/assets/images/common/996577fc-645cc3b9a905-sonata-cheriot.webp){: .image-full }
 
 ## CHERI in commercial processor products
-{: id="cheri-in-commercial-processor-products" }
 
 Codasip has [decided to adopt CHERI](/news/why-codasip-went-all-in-on-cheri/) throughout its whole line of products. X730-MP4-Lux is the first commercial 64-bit application-class processor implementing CHERI-RISC-V. It has been certified under the [CHERI Enabled programme](/adopt/assurance-and-adoption/about-cheri-enabled/) and can run rich operating systems like CheriBSD or Linux.
 
 This demonstrates that CHERI processor technology is available now for commercial system-on-chip designs.
 
-![Codasip X730 on FPGA](/assets/pages/adopt--assurance-and-adoption--case-studies/e8738d5ec725-codasip-prime-kit.webp){: .image-full }
+![Codasip X730 on FPGA](/assets/images/common/a4714f5e-e8738d5ec725-codasip-prime-kit.webp){: .image-full }
 
 ## What these case studies demonstrate
-{: id="what-these-case-studies-demonstrate" }
 
 Together, these examples show that CHERI is not limited to a single class of system. CHERI has been applied to the whole spectrum of computing applications:
 

@@ -1,26 +1,30 @@
 ---
+layout: page/standard
 title: Adoption Costs & Migration
+summary: CHERI adoption can range from protecting one exposed component to moving a complete platform, allowing cost and benefit to follow the scope of change.
 permalink: /adopt/business-case/adoption-costs-and-migration/
-where-next:
-  url: /adopt/business-case/return-on-security-investment/
-  title: Lifecycle Benefits & ROI
-related-pages:
-- url: /adopt/business-case/the-business-case/
-  title: The Business Case
-  description: CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.
-  action: Read this page
-- url: /adopt/business-case/cost-of-memory-unsafety/
-  title: Cost of Memory Unsafety
-  description: Memory-safety failures can create costs far beyond the patch for one defect.
-  action: Read this page
-summary: CHERI adoption can range from protecting one exposed component to moving a complete platform, allowing
-  cost and benefit to follow the scope of change.
+slug: adopt-business-case-adoption-costs-and-migration
+navigation:
+  header:
+    category: Adopt
+    subcategory: Business Case
+related:
+- type: page
+  slug: adopt-business-case-return-on-security-investment
+  relation: next_step
+- type: page
+  slug: adopt-business-case-the-business-case
+  relation: related
+- type: page
+  slug: adopt-business-case-cost-of-memory-unsafety
+  relation: related
 ---
+
+## Overview
 
 Adopting CHERI does not imply rewriting an entire product. The scope can range from one library or service to an operating system and full software stack. This matters because the cost of migration can be matched to the part of a system where memory protection or containment has the greatest value.
 
 ## Different forms of adoption
-{: id="different-forms-of-adoption" }
 
 CHERI supports more than one transition model:
 
@@ -32,7 +36,6 @@ CHERI supports more than one transition model:
 These models offer different levels of coverage. A narrower change can reduce initial disruption, while a pure-capability environment exposes more unsafe assumptions and places more software under hardware enforcement.
 
 ## Where migration work appears
-{: id="where-migration-work-appears" }
 
 Much existing C and C++ code compiles with limited change. Work tends to concentrate in areas that treat pointers as unstructured numbers or depend on a specific pointer layout. Examples include custom allocators, hand-written assembly, device interfaces, serialisation code, and programs that store flags in unused pointer bits.
 
@@ -47,21 +50,18 @@ Costs can arise across several parts of a product:
 The shape of those costs is highly product-specific. A self-contained parser may be a modest port, while a low-level runtime or large codebase with unusual memory handling may require deeper work.
 
 ## Why incremental migration can fit
-{: id="why-incremental-migration-can-fit" }
 
 CHERI protection can be introduced at natural product boundaries: a new processor generation, an updated gateway, a replaceable service, or a component already due for substantial change. A representative component can reveal toolchain maturity, porting effort, and platform overhead before the same approach appears elsewhere in a product family.
 
 This staged characteristic is important for long-lived and safety-related products. Existing releases can remain supported while new variants gain capability protection, and evidence can accumulate without making a whole estate depend on one migration event.
 
 ## Existing software remains part of the value
-{: id="existing-software-remains-part-of-the-value" }
 
 CHERI is unusual among memory-safety approaches because it can protect low-level software while retaining its language, algorithms, and much of its structure. That does not remove all porting work, but it changes the choice from “keep the code or gain stronger protection” to a broader set of options.
 
 Third-party software remains an important factor. An upstream CHERI port can spread maintenance across a community, while a private patch, replacement component, or compartment boundary creates a different cost profile. The relevant question is not only whether the code runs, but how its protected form will be maintained across the product lifetime.
 
 ## Cost in context
-{: id="cost-in-context" }
 
 Migration cost is best understood beside the cost of the risk it addresses. Products with little native code, short lives, or strong existing isolation may see limited benefit. Products that combine exposed C or C++ code, valuable assets, broad component authority, and many years of support can present a much stronger fit.
 

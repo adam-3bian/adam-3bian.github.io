@@ -1,18 +1,24 @@
 ---
+layout: lists/papers
 title: Reports & White Papers
-permalink: /discover/resources/reports-and-white-papers/
-where-next:
-  url: /discover/resources/videos-and-presentations/
-related-pages:
-- url: /discover/resources/specifications/
-  description: A directory of architecture and related specifications relevant to CHERI.
-  action: Read this page
-- url: /discover/resources/academic-papers/
-  description: A curated route into the academic literature on CHERI and capability systems.
-  action: Read this page
-layout: list
-directory: true
-listing:
-  collection: reports
 summary: These reports provide broader introductions, programme evidence, adoption research, and policy context.
+permalink: /discover/resources/reports-and-white-papers/
+slug: discover-resources-reports-and-white-papers
+navigation:
+  header:
+    category: Discover CHERI
+    subcategory: Resources
+listing:
+  collection: papers
+  filter: reports
+related:
+- type: page
+  slug: discover-resources-videos-and-presentations
+  relation: next_step
+- type: page
+  slug: discover-resources-specifications
+  relation: related
+- type: page
+  slug: discover-resources-academic-papers
+  relation: related
 ---

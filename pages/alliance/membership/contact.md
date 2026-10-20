@@ -1,29 +1,30 @@
 ---
+layout: page/form
 title: Contact the Alliance
+summary: Contact the Alliance for membership, working groups, certification, events, media, trademarks, or help finding the right CHERI resource.
 permalink: /alliance/membership/contact/
-where-next:
-  url: /organisations/cheri-alliance/
-  title: About the CHERI Alliance
-related-pages:
-- url: /alliance/membership/membership-benefits-and-options/
-  description: An outline of membership benefits, participation options, and what each route is intended to support.
-  action: Read this page
-- url: /news-and-events/people-and-opportunities/job-opportunities/
-  description: Current job and career opportunities related to CHERI and the wider ecosystem.
-  action: Read this page
-summary: Contact the Alliance for membership, working groups, certification, events, media, trademarks, or help
-  finding the right CHERI resource.
+slug: alliance-membership-contact
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Membership
+  footer:
+    category: CHERI Alliance
+forms:
+- contact
+related:
+- type: organisation
+  slug: cheri-alliance
+  relation: next_step
+- type: page
+  slug: alliance-membership-membership-benefits-and-options
+  relation: related
+- type: page
+  slug: news-and-events-people-and-opportunities-job-opportunities
+  relation: related
 ---
 
-## Contact form
-{: id="contact-webform-title" }
-
-Use the enquiry form below to explore the contact options. This preview does not send messages.
-
-[Open the published Alliance contact form](https://cheri-alliance.org/contact/#contact_form).
-
 ## Help us route your message
-{: id="help-us-route-your-message" }
 
 Use a clear subject and include the relevant detail:
 

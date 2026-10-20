@@ -1,25 +1,33 @@
 ---
+layout: details/speaker
 title: Phil Day
-organization:
-- configured-things
-speaker: true
-summary: Phil is the Director of Engineering at Configured Things, a startup founded by Alumni from Hewlett Packard
-  Labs to build solutions that can operate resiliently across security domains.
-thumbnail:
-  src: /assets/people/phil-day/3fe5b3fa85c3-portrait.png
+summary: Phil is the Director of Engineering at Configured Things, a startup founded by Alumni from Hewlett Packard Labs to build solutions that can operate resiliently across security domains.
+permalink: /people/phil-day/
+slug: phil-day
+navigation:
+  header:
+    category: News & Events
+    subcategory: People & Opportunities
+image:
+  src: /assets/images/news-and-events/people-and-opportunities/phil-day/7c3606dc-3fe5b3fa85c3-portrait.png
   alt: Phil Day
   width: 1024
   height: 768
-links:
-- label: Back to all speakers
-  url: /news-and-events/people-and-opportunities/speakers/
-  kind: navigation
-- label: LinkedIn
-  url: https://www.linkedin.com/in/philday2/
-  kind: profile
+person:
+  roles:
+  - speaker
+  organisations:
+  - organisation: configured-things
+    relationship: other
+  links:
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/philday2/
+related:
+- type: page
+  slug: news-and-events-people-and-opportunities-speakers
+  relation: navigation
 ---
 
 ## Biography
-{: id="biography" }
 
 Phil is the Director of Engineering at Configured Things, a startup founded by Alumni from Hewlett Packard Labs to build solutions that can operate resiliently across security domains. He has been a regular speaker at forums such as the IoT Security Foundation conference and CyberCon, and is a contributor to the CHERIoT ecosystem and a technical reviewer for the CHERIoT programmers’ Guide. He has more years experience than he cares to admit to developing and delivering complex distributed systems.

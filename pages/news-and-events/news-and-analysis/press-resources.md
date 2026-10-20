@@ -1,21 +1,29 @@
 ---
+layout: page/standard
 title: Press Resources
-permalink: /news-and-events/news-and-analysis/press-resources/
-where-next:
-  url: /news-and-events/events-and-archive/upcoming-events/
-related-pages:
-- url: /news-and-events/news-and-analysis/latest-news/
-  description: The latest CHERI Alliance and ecosystem announcements, presented with clear dates and sources.
-  action: Read this page
 summary: Everything you need to cover the CHERI Alliance and CHERI technology.
+permalink: /news-and-events/news-and-analysis/press-resources/
+slug: news-and-events-news-and-analysis-press-resources
+navigation:
+  header:
+    category: News & Events
+    subcategory: News & Analysis
+related:
+- type: page
+  slug: news-and-events-events-and-archive-upcoming-events
+  relation: next_step
+- type: page
+  slug: news-and-events-news-and-analysis-latest-news
+  relation: related
 ---
+
+## Overview
 
 The CHERI Alliance is the global industry-led organisation working to accelerate the adoption of CHERI technology and advance memory-safe, secure-by-design computing.
 
 This page provides journalists, analysts, event organisers, and media partners with access to official information, background materials, and media assets. If you are covering CHERI technology, memory safety, cybersecurity, or the activities of the CHERI Alliance, you will find key resources below.
 
 ## Media enquiries
-{: id="media-enquiries" }
 
 For interview requests, expert commentary, speaking opportunities, or additional information, please [contact the CHERI Alliance team](/alliance/membership/contact/).
 
@@ -28,7 +36,6 @@ We can help with:
 - Commentary on cybersecurity and memory safety trends
 
 ## Resources for the media
-{: id="resources-for-the-media" }
 
 The following resources are available to support accurate reporting and coverage:
 
@@ -40,13 +47,11 @@ The following resources are available to support accurate reporting and coverage
 - Fact sheets and key messaging
 
 ## Press releases and announcements
-{: id="press-releases-and-announcements" }
 
 Please [contact us](/alliance/membership/contact/) to be added to our media announcements mailing list.
 
 For regular announcements, and news, [follow us on LinkedIn](https://www.linkedin.com/company/cheri-alliance/) or [subscribe to our quarterly newsletter](https://cheri-alliance.kit.com/subscribe).
 
 ## About the CHERI Alliance
-{: id="about-the-cheri-alliance" }
 
 The CHERI Alliance is a non-profit organisation that brings together industry, government, academia, and the open-source community to accelerate the development and adoption of the open CHERI cybersecurity technology. By improving memory safety and strengthening software isolation, CHERI helps organisations build more secure, resilient, and trustworthy digital systems.

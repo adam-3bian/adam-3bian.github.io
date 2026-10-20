@@ -1,31 +1,35 @@
 ---
+layout: details/member
 title: University of Edinburgh
-member: true
 summary: Details to follow.
-membership_category: Community Member
-membership_status: Member
-links:
-- label: Visit member website
-  url: https://www.ed.ac.uk/
-  kind: website
-  primary: true
-- label: Back to all members
-  url: /alliance/leadership/members/
-  kind: navigation
-thumbnail:
-  src: /assets/organisations/university-of-edinburgh/7d94ea7519fc-logo.png
+permalink: /organisations/university-of-edinburgh/
+slug: university-of-edinburgh
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Leadership
+image:
+  src: /assets/images/alliance/leadership/university-of-edinburgh/9667623d-7d94ea7519fc-logo.png
   alt: University of Edinburgh
   width: 831
   height: 199
   fit: contain
+organisation:
+  membership:
+    is_member: true
+    status: active
+    tier: community
+  website: https://www.ed.ac.uk/
+related:
+- type: page
+  slug: alliance-leadership-members
+  relation: navigation
 ---
 
 ## Description
-{: id="description" }
 
 Details to follow.
 
 ## CHERI Activities
-{: id="cheri-activities" }
 
 Details to follow

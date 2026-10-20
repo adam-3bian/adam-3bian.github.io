@@ -1,43 +1,50 @@
 ---
+layout: details/policy
 title: Intellectual Property Policy
-where-next:
-  url: /policies/trademark-policy/
-related-pages:
-- url: /policies/code-of-conduct/
-  description: The behaviour and participation expectations that apply to Alliance spaces and activities.
-  action: Read this page
-- url: /policies/competition-law-statement/
-  description: The Alliance statement on competition law and the boundaries for collaborative activity.
-  action: Read this page
-- url: /organisations/cheri-alliance/
-  title: About the CHERI Alliance
-  description: Learn how the Alliance connects organisations working across the CHERI ecosystem.
-  action: Read this page
-summary: The Intellectual Property Policy defines how contributions, essential rights, declarations, licensing commitments,
-  and Alliance work products are handled.
-version: '1.01'
-document_date: 2024-08
-links:
-- label: Download official PDF
+summary: The Intellectual Property Policy defines how contributions, essential rights, declarations, licensing commitments, and Alliance work products are handled.
+permalink: /policies/intellectual-property-policy/
+slug: intellectual-property-policy
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Legal & Policies
+policy:
+  type: governance
+  version: '1.01'
+  dates:
+    effective: 2024-08
+resources:
+- type: pdf
+  label: Download official PDF
   url: /assets/shared/source-assets/1ef747d8f739-ip-policy.pdf
-  kind: document
-  primary: true
-authoritative_format: PDF
+related:
+- type: policy
+  slug: trademark-policy
+  relation: next_step
+- type: policy
+  slug: code-of-conduct
+  relation: related
+- type: policy
+  slug: competition-law-statement
+  relation: related
+- type: organisation
+  slug: cheri-alliance
+  relation: related
 ---
 
-![pdf](/assets/shared/source-assets/d63b7eac09b7-pdf-file-icon.webp){: .image-left .image-inline } Download the [CHERI Alliance IP Policy](/assets/shared/source-assets/1ef747d8f739-ip-policy.pdf) – The PDF is the official version. The text is reproduced below for convenience, but if there is any difference between the two versions, the PDF takes precedence..
+## Overview
+
+![pdf](/assets/images/common/58e51132-d63b7eac09b7-pdf-file-icon.webp){: .image-left .image-inline } Download the [CHERI Alliance IP Policy](/assets/shared/source-assets/1ef747d8f739-ip-policy.pdf) – The PDF is the official version. The text is reproduced below for convenience, but if there is any difference between the two versions, the PDF takes precedence..
 
 ---
 
 ## 1 Introduction
-{: id="1-introduction" }
 
 1.1 This document (“the **IP Policy**“) contains the regulations of the Alliance in relation to Intellectual Property Rights (as defined below).
 
 1.2 Unless expressly specified by the Alliance in writing, the IP Policy is applicable to any activities undertaken by the Alliance or its committees and working groups.
 
 ## 2 Definitions and Interpretation
-{: id="2-definitions-and-interpretation" }
 
 2.1 Definitions
 
@@ -95,7 +102,6 @@ b) receive an Undertaking pursuant to Clause 6 for any Essential IPR in relation
 2.3 References to any gender shall include the other and words in the singular include the plural and vice versa.
 
 ## 3 Contributions
-{: id="3-contributions" }
 
 3.1 The ownership of the copyright in Work Product created by the Alliance or any of its Working Groups shall vest in the Alliance but due acknowledgement shall be given to copyrights owned by third parties that are identifiable in the Alliance copyrighted works.
 
@@ -118,7 +124,6 @@ c) to any implementer of that Standard to evaluate the Contribution and any deri
 3.8 Each Member agrees that any Contributions shall be deemed to be made on a nonconfidential basis and that the Alliance shall be free to disclose these submissions for the purposes of developing and adopting any Standards and in connection with Project activities.
 
 ## 4 Declarations of Essential IPR
-{: id="4-declarations-of-essential-ipr" }
 
 4.1 Each Member shall use its reasonable endeavours, in particular during the development of a Standard where it participates, to inform the Alliance of any Essential IPRs in a timely fashion.
 
@@ -153,12 +158,10 @@ b) conduct any searches of Essential IPR (including, without limitation, Patents
 4.9 Any incorporation of declared Essential IPR shall be subject to approval by the Alliance.
 
 ## 5 Non-Assertion of Essential IPR
-{: id="5-non-assertion-of-essential-ipr" }
 
 5.1 Each Member agrees never to assert its Essential IPR against the Alliance in respect of the Alliance’s publications and promotions of any Work Product or Standards.
 
 ## 6 Licensing of Essential IPR
-{: id="6-licensing-of-essential-ipr" }
 
 6.1 Save in the case of any Essential Patents identified in accordance with Clause 4.4 and subject to Clause 8.1, a Member will have given an undertaking that it is prepared to grant licences:
 
@@ -178,7 +181,6 @@ b) if they both have not been able to agree on an Essential IPR license pursuant
 6.5 It is acknowledged that the Member, owning any Essential IPR, shall be free to exploit such IPR outside the scope of the Alliance at its absolute discretion and any revenues or other benefits, which the Member may receive from such exploitation of such Essential IPR, shall be for the Member’s own account.
 
 ## 7 Non-Availability/Refusal to License
-{: id="7-non-availabilityrefusal-to-license" }
 
 7.1 A Member shall only be able to exercise its Right of Refusal to License with regards to Essential Patents, but no other Essential IPR, which is:
 
@@ -198,7 +200,6 @@ a) is not blocked by that IPR; and
 b) satisfies the Alliance’s Requirements.
 
 ## 8 Disputes regarding Ownership of Essential IPR
-{: id="8-disputes-regarding-ownership-of-essential-ipr" }
 
 8.1 If more than one Member claims ownership of any Essential IPR, the Members claiming ownership shall:
 
@@ -206,7 +207,6 @@ a) act in good faith when negotiating and resolving the question of ownership; a
 b) if they cannot agree on who owns the Essential IPR pursuant to Clause 8.1a), have the right to seek redress from the courts against each other in order to resolve the matter.
 
 ## 9 General
-{: id="9-general" }
 
 9.1 The Alliance will seek to publish all Work Product to the public under permissive opensource licenses.
 
@@ -242,3 +242,7 @@ d) within a reasonable period of time; and
 e) failing that, by seeking redress in a court of competent jurisdiction.
 
 10.5 The IPR Policy shall be interpreted in accordance with the law of England and Wales .
+
+## Authoritative document
+
+The published authoritative format is PDF.

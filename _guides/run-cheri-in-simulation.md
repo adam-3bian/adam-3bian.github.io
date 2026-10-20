@@ -1,35 +1,37 @@
 ---
+layout: details/guide
 title: Run CHERI in Simulation
-where-next:
-  url: /guides/install-a-toolchain/
-  title: Install a Toolchain
-related-pages:
-- url: /guides/choose-a-platform/
-  title: Choose a Platform
-  description: A CHERI platform combines more than an instruction set.
-  action: Read this page
-summary: Use simulation to boot a CHERI environment, build capability-aware code, and observe hardware-enforced
-  faults without owning a development board.
-topic: Simulation
+summary: Use simulation to boot a CHERI environment, build capability-aware code, and observe hardware-enforced faults without owning a development board.
+permalink: /guides/run-cheri-in-simulation/
+slug: run-cheri-in-simulation
+navigation:
+  header:
+    category: Build
+    subcategory: Software Developers
+guide:
+  topic: simulation
+related:
+- type: guide
+  slug: install-a-toolchain
+  relation: next_step
+- type: guide
+  slug: choose-a-platform
+  relation: related
 ---
 
 ## Before you start
-{: id="before-you-start" }
 
 You do not need CHERI hardware for most learning, porting, or experimentation tasks. Both CheriBSD and CHERIoT provide simulator-based environments that allow you to compile software, exercise capability enforcement, and investigate faults on a standard workstation.
 
 ## Route A: CheriBSD on CHERI-RISC-V QEMU
-{: id="route-a-cheribsd-on-cheri-risc-v-qemu" }
 
 CheriBSD is the easiest way to explore a full CHERI operating-system environment. The `cheribuild` tool automates the setup of the compiler, emulator, operating system, and disk image.
 
 ### Host requirements
-{: id="host-requirements" }
 
 Use a supported Unix-like development host with Python 3, Git, CMake, Ninja, and the other packages listed by `cheribuild`. Linux is the most direct route. macOS can build many targets, while a Linux virtual machine or container may be easier for a complete environment.
 
 ### Clone the build tool
-{: id="clone-the-build-tool" }
 
 ~~~
 git clone https://github.com/CTSRD-CHERI/cheribuild.git
@@ -37,7 +39,6 @@ cd cheribuild
 ~~~
 
 ### Build and run the pure-capability system
-{: id="build-and-run-the-pure-capability-system" }
 
 ~~~
 ./cheribuild.py --include-dependencies run-riscv64-purecap
@@ -48,7 +49,6 @@ The first build downloads sources and compiles a substantial stack, so it can ta
 When QEMU reaches the login prompt, sign in as `root`. You are now in a CheriBSD user space where ordinary language pointers use capabilities.
 
 ### Confirm the target
-{: id="confirm-the-target" }
 
 Inside CheriBSD, run:
 
@@ -62,12 +62,10 @@ When reporting results or sharing benchmarks, record the architecture, CheriBSD 
 The exact target names and prerequisites can change. The [`cheribuild` repository](https://github.com/CTSRD-CHERI/cheribuild) is the source of truth.
 
 ## Route B: CHERIoT in a simulator
-{: id="route-b-cheriot-in-a-simulator" }
 
 The CHERIoT development container packages the toolchain, real-time operating-system (RTOS) dependencies, and simulator support.
 
 ### Clone the RTOS and examples
-{: id="clone-the-rtos-and-examples" }
 
 ~~~
 git clone --recursive https://github.com/CHERIoT-Platform/cheriot-rtos.git
@@ -87,7 +85,6 @@ xmake run
 Board identifiers evolve with the platform. If `sail` is not offered by the current checkout, use the simulator target listed in the [CHERIoT getting-started guide](https://cheriot.org/book/getting_started.html).
 
 ## Prove that capability enforcement is active
-{: id="prove-that-capability-enforcement-is-active" }
 
 A successful hello-world message proves that the build and run path works. It does not prove that your code is using the intended protection mode.
 
@@ -106,7 +103,6 @@ int main(void) {
 In a correctly configured pure-capability environment with useful array bounds, the invalid dereference should produce a capability-related fault. The exact diagnostic differs by architecture, compiler optimisation, and operating system. An undefined-behaviour example is not a conformance suite; use the project’s own tests for formal validation.
 
 ## What simulation can and cannot tell you
-{: id="what-simulation-can-and-cannot-tell-you" }
 
 Simulation is well suited to:
 
@@ -129,7 +125,6 @@ An instruction-set simulator alone cannot establish:
 Move to FPGA or silicon when the question depends on implementation timing or hardware integration.
 
 ## Troubleshooting checklist
-{: id="troubleshooting-checklist" }
 
 - Confirm that submodules were cloned
 - Verify that the binary was actually built for the intended CHERI target and ABI, especially `purecap` versus conventional or hybrid targets

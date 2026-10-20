@@ -1,16 +1,23 @@
 ---
+layout: page/standard
 title: CHERI and Rust - Technical Overview
-permalink: /build/technology/cheri-and-rust-technical/
-where-next:
-  url: /guides/building-secure-software/
-  title: How Secure is a Product?
-related-pages:
-- url: /discover/understand/cheri-and-existing-software/
-  description: Porting software to CHERI is a process of finding assumptions about pointers, integers, objects,
-    bounds, provenance, lifetimes, and interfaces.
-  action: Read this page
 summary: Why it is not CHERI vs Rust, but CHERI and Rust.
+permalink: /build/technology/cheri-and-rust-technical/
+slug: build-technology-cheri-and-rust-technical
+navigation:
+  header:
+    category: Build
+    subcategory: Technology
+related:
+- type: guide
+  slug: building-secure-software
+  relation: next_step
+- type: page
+  slug: discover-understand-cheri-and-existing-software
+  relation: related
 ---
+
+## Overview
 
 Rust and CHERI both aim to reduce memory-safety vulnerabilities, but they do so in fundamentally different ways.
 
@@ -21,18 +28,16 @@ CHERI uses a hardware-based approach. It extends the processor architecture with
 Because they operate at different layers, Rust and CHERI are best viewed as **complementary** technologies rather than alternatives. A system can use Rust to prevent vulnerabilities from being introduced and CHERI to constrain memory accesses when software executes.
 
 ## CHERI brings security by design
-{: id="cheri-brings-security-by-design" }
 
 Even developers taking great care in developing code usually only write a very small part of the end application. Most code comes from operating systems, libraries and drivers developed by third parties, sourced from open-source repositories, or increasingly generated using AI-assisted tools.
 
-![Impossible to control all code](/assets/shared/source-assets/a9f89a0614af-rust-and-cheri.webp){: .image-full }
+![Impossible to control all code](/assets/images/common/fcefa825-a9f89a0614af-rust-and-cheri.webp){: .image-full }
 
 As we see a surge in software supply chain attacks, with repositories being compromised through malicious contributions, it becomes increasingly difficult to blindly trust these elements. CHERI helps protect your system by isolating various elements in compartments, and operating systems can even be optimised for CHERI. This is the work we do in the related working groups ([Linux](/groups/cheri-linux-working-group/), [FreeRTOS](/groups/cheri-freertos/), [Zephyr](/groups/cheri-zephyr/), [seL4](/groups/cheri-for-sel4/)… but also that commercial vendors do, e.g. VxWorks by [Wind River](/organisations/wind-river/)).
 
 In particular, CHERIoT builds on CHERI with a rich compartmentalisation model that makes least-privilege isolation practical for embedded and IoT software.
 
 ## Rust and CHERI: side by side
-{: id="rust-and-cheri-side-by-side" }
 
 **Legend:** ● Covered, ○ Partial, blank = Not covered
 
@@ -71,7 +76,6 @@ In particular, CHERIoT builds on CHERI with a rich compartmentalisation model th
 | Embedded and bare-metal support | ● | ● | ● | Both support embedded systems without an operating system. |
 
 ## What safe Rust provides
-{: id="what-safe-rust-provides" }
 
 Rust’s ownership and borrowing rules let the compiler check how references are created and used. In safe Rust, these rules prevent many problems including use-after-free, invalid aliasing, null dereferences, and data races.
 
@@ -80,7 +84,6 @@ The checks happen mainly at compile time, so safe Rust normally avoids the runti
 This makes Rust a strong choice for new systems code when its platform and library ecosystem meet the project’s needs.
 
 ## Where the language boundary ends
-{: id="where-the-language-boundary-ends" }
 
 Rust permits `unsafe` code because some low-level operations cannot be expressed or verified through the safe subset. An `unsafe` block may dereference a raw pointer, access hardware registers, call a C interface, or implement a data structure that presents a safe application programming interface (API).
 
@@ -97,7 +100,6 @@ Safe Rust may also depend on:
 The whole system is only as well protected as these boundaries allow.
 
 ## What CHERI adds
-{: id="what-cheri-adds" }
 
 CHERI checks memory authority in hardware when an access occurs. A raw pointer represented by a capability can still be constrained by bounds, permissions, and validity. This can turn some mistakes in unsafe Rust or native code into precise faults instead of unrestricted memory corruption.
 
@@ -111,16 +113,14 @@ This creates complementary layers:
 - **Testing and assurance** find logic errors and check that the intended policy is implemented.
 
 ## Important limits
-{: id="important-limits" }
 
 CHERI does not automatically validate all Rust safety assumptions. Compiler support, application binary interface (ABI) design, standard-library support, and the handling of pointer metadata all matter. A capability with broad bounds can still authorise broad access, and a component given a powerful service capability can legitimately misuse it.
 
 Likewise, Rust does not automatically provide least privilege between all components. A memory-safe program can still contain a logic flaw or expose more authority than intended.
 
-Rust support varies across CHERI platforms and continues to evolve. Check the [Rust software ecosystem page](/software/rust/) and the documentation for the chosen target before planning a production migration.
+Rust support varies across CHERI platforms and continues to evolve. Check the [Rust software ecosystem page](/build/software-ecosystem/rust/) and the documentation for the chosen target before planning a production migration.
 
 ## Key takeaways
-{: id="key-takeaways" }
 
 - Prefer safe Rust for new code where practical.
 - Keep `unsafe` code small, documented, and tested.

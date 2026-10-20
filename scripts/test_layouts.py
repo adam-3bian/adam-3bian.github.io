@@ -60,10 +60,12 @@ with sync_playwright() as p:
                 inner = data[surface + 'Inner']
                 assert abs(inner['left'] + inner['paddingLeft'] - data['main']['left'] - data['main']['paddingLeft']) < 1, (width, name, surface, data)
                 assert abs(inner['width'] - data['main']['width']) < 1, (width, name, surface, data)
-            if name in ['page', 'news']:
+            if name == 'page':
                 available = data['main']['width'] - data['main']['paddingLeft'] - data['main']['paddingRight']
                 assert abs(data['content']['width'] - available) < 1, (width, name, data)
                 assert abs(data['content']['left'] - data['main']['left'] - data['main']['paddingLeft']) < 1, (width, name, data)
+            if name == 'news':
+                assert data['content']['width'] <= 78 * 18 and data['content']['width'] <= data['main']['width']
             assert data['theme'] == ('dark' if name == 'home' else 'light'), (name, data)
             assert page.locator('[data-theme-toggle], .theme-toggle').count() == 0
             if name == 'home':

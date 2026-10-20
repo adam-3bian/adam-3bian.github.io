@@ -2,29 +2,10 @@
   <div class="site-container"><div class="footer-surface">
   <nav class="footer-navigation" aria-label="Footer">
     <ul class="columns-3">
-      {% for category in site.navigation.footer %}
-        <li>
-          <span class="menu-group-title">{{ category.title | escape }}</span>
-          <ul>
-            {% for link in category.links %}
-              <li>{% assign link_target = link.target | default: '' | strip %}
-              {% assign link_rel = link.rel | default: '' | strip %}
-              {% if link_target == '_blank' %}
-                {% assign rel_tokens = link_rel | split: ' ' %}
-                {% unless rel_tokens contains 'noopener' %}{% assign link_rel = link_rel | append: ' noopener' %}{% endunless %}
-                {% unless rel_tokens contains 'noreferrer' %}{% assign link_rel = link_rel | append: ' noreferrer' %}{% endunless %}
-              {% endif %}
-              {% assign link_url = link.url %}
-              {% assign url_prefix = link_url | slice: 0, 2 %}
-              {% assign url_first = link_url | slice: 0, 1 %}
-              {% unless link_url contains ':' or url_prefix == '//' or url_first == '#' %}
-                {% assign link_url = link_url | relative_url %}
-              {% endunless %}
-              <a href="{{ link_url | escape }}"{% if link_target != '' %} target="{{ link_target | escape }}"{% endif %}{% if link_rel != '' %} rel="{{ link_rel | strip | escape }}"{% endif %}{% if link_target == '_blank' %} title="Opens in a new tab"{% endif %}>{{ link.title | escape }}</a></li>
-            {% endfor %}
-          </ul>
-        </li>
-      {% endfor %}
+      {% assign footer_records = site.pages | concat: site.documents | where_exp: 'entry', 'entry.redirect_to == nil' | sort_natural: 'title' %}
+      {% for category in site.data.footer_categories %}<li><span class="menu-group-title">{{ category.title | escape }}</span><ul>
+      {% for entry in footer_records %}{% if entry.navigation.footer.category == category.title %}<li><a href="{{ entry.url | relative_url }}">{{ entry.title | escape }}</a></li>{% endif %}{% endfor %}
+      </ul></li>{% endfor %}
     </ul>
   </nav>
 

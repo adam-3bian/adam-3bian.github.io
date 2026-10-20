@@ -1,21 +1,31 @@
 ---
+layout: details/speaker
 title: Allison Randal
-organization:
-- capabilities-limited
 summary: Allison Randal represents Capabilities Limited on the CHERI Alliance Governing Board.
-board_role: Open Source/Hardware Strategist
-thumbnail:
-  src: /assets/people/allison-randal/d26bf8240fe1-portrait.jpg
+permalink: /people/allison-randal/
+slug: allison-randal
+navigation:
+  header:
+    category: News & Events
+    subcategory: People & Opportunities
+image:
+  src: /assets/images/news-and-events/people-and-opportunities/allison-randal/a940c717-d26bf8240fe1-portrait.jpg
   alt: Allison Randal
   width: 768
   height: 769
-links:
-- label: Back to the Governing Board
-  url: /alliance/leadership/governing-board/
-  kind: navigation
+person:
+  organisations:
+  - organisation: capabilities-limited
+    relationship: other
+  governance:
+    board_order: 8
+    board_role: Open Source/Hardware Strategist
+related:
+- type: page
+  slug: alliance-leadership-governing-board
+  relation: navigation
 ---
 
 ## Biography
-{: id="biography" }
 
 Allison Randal represents Capabilities Limited on the CHERI Alliance Governing Board. Her board role is Open Source/Hardware Strategist.

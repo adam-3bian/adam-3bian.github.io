@@ -1,25 +1,34 @@
 ---
+layout: details/speaker
 title: Jianyi Cheng
-organization:
-- university-of-edinburgh
-speaker: true
 summary: Jianyi Cheng is an Assistant Professor in the School of Informatics at the University of Edinburgh.
-thumbnail:
-  src: /assets/people/jianyi-cheng/5953bf23c1ca-portrait.jpg
+permalink: /people/jianyi-cheng/
+slug: jianyi-cheng
+navigation:
+  header:
+    category: News & Events
+    subcategory: People & Opportunities
+image:
+  src: /assets/images/news-and-events/people-and-opportunities/jianyi-cheng/24aadaa1-5953bf23c1ca-portrait.jpg
   alt: Jianyi Cheng
   width: 240
   height: 320
-links:
-- label: Back to all speakers
-  url: /news-and-events/people-and-opportunities/speakers/
-  kind: navigation
-- label: LinkedIn
-  url: https://www.linkedin.com/in/jianyi-cheng/
-  kind: profile
+person:
+  roles:
+  - speaker
+  organisations:
+  - organisation: university-of-edinburgh
+    relationship: other
+  links:
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/jianyi-cheng/
+related:
+- type: page
+  slug: news-and-events-people-and-opportunities-speakers
+  relation: navigation
 ---
 
 ## Biography
-{: id="biography" }
 
 Jianyi Cheng is an Assistant Professor in the School of Informatics at the University of Edinburgh. His research aims to automatically produce small, fast, low-energy, and secure computing systems using formal methods. His research interests include computer architecture, systems, compilers, and formal methods.
 

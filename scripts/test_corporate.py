@@ -16,7 +16,7 @@ ROUTES = [
     "alliance/leadership/members/?view=grid", "people/?view=grid",
     "people/a-theodore-markettos/", "people/mike-eftimakis/",
     "organisations/axiomise-ltd/", "papers/cheriot-complete-memory-safety-for-embedded-devices/",
-    "reports/an-introduction-to-cheri/", "hardware/x730/", "software/cheribsd/",
+    "reports/an-introduction-to-cheri/", "adopt/assurance-and-adoption/x730-certification/", "repositories/cheribsd/",
     "events/cheri-blossoms-conference-2025/", "groups/marketing/",
     "guides/install-a-toolchain/", "policies/competition-law-statement/",
     "discover/resources/glossary/", "discover/understand/how-does-cheri-work/",

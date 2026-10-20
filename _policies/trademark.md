@@ -1,16 +1,28 @@
 ---
+layout: details/policy
 title: CHERI Trademark
-related-pages:
-- url: /policies/trademark-policy/
-  description: Rules for using CHERI trademarks, logos, membership marks, and certification claims.
-  action: Read this page
 summary: CHERI® is an open technology, but the CHERI name and logos are protected trademarks.
-links:
-- label: Download PDF
+permalink: /policies/trademark/
+slug: trademark
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Legal & Policies
+  footer:
+    category: Legal
+policy:
+  type: governance
+resources:
+- type: pdf
+  label: Download PDF
   url: /assets/shared/source-assets/d904a00cfb15-trademark-policy.pdf
-  kind: document
-  primary: true
+related:
+- type: policy
+  slug: trademark-policy
+  relation: related
 ---
+
+## Overview
 
 CHERI® is an open technology, but there are conditions to use the CHERI brand. These apply to all.
 
@@ -19,7 +31,6 @@ Protecting the CHERI brand helps ensure that when users see CHERI referenced in 
 If you reference CHERI, use CHERI branding, claim CHERI compatibility, or describe products, services, membership, or certification in relation to CHERI, please review the policies and guidelines on this page.
 
 ## Trademark Policy
-{: id="trademark-policy" }
 
 The [CHERI Alliance Trademark Policy](/policies/trademark-policy/) explains how the CHERI name, logos, membership marks, and certification marks may be used. It helps ensure that references to CHERI are accurate, fair, and not misleading.
 
@@ -29,14 +40,12 @@ The policy **applies to everyone**, including organisations that are not members
 - Questions or permission requests? [Contact us](/alliance/membership/contact/).
 
 ## Branding Guidelines
-{: id="branding-guidelines" }
 
 The branding guidelines explain how to use CHERI Alliance visual assets consistently and correctly, including logos, colours, typography, sizing, and clear-space requirements.
 
 - Download the [CHERI Alliance Branding Guidelines](/assets/shared/source-assets/1ef747d8f739-ip-policy.pdf)
 
 ## Logo Downloads
-{: id="logo-downloads" }
 
 Official CHERI Alliance logos are available for download below.
 

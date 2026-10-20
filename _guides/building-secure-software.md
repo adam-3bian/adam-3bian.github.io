@@ -1,25 +1,34 @@
 ---
+layout: details/guide
 title: Building Secure Software with CHERI
-where-next:
-  url: /build/technology/how-cheri-capabilities-work/
-related-pages:
-- url: /discover/understand/cheri-and-existing-software/
-  description: Porting software to CHERI is a process of finding assumptions about pointers, integers, objects,
-    bounds, provenance, lifetimes, and interfaces.
-  action: Read this page
-- url: /discover/why-cheri/cheri-and-rust/
-  description: Rust and CHERI address memory safety at different layers.
-  action: Read this page
 summary: Questions developers should ask about memory safety, compartmentalisation, and authority.
-topic: Security engineering
+permalink: /guides/building-secure-software/
+slug: building-secure-software
+navigation:
+  header:
+    category: Build
+    subcategory: Software Developers
+guide:
+  topic: security-engineering
+related:
+- type: page
+  slug: build-technology-how-cheri-capabilities-work
+  relation: next_step
+- type: page
+  slug: discover-understand-cheri-and-existing-software
+  relation: related
+- type: page
+  slug: discover-why-cheri-cheri-and-rust
+  relation: related
 ---
+
+## Overview
 
 The security properties of a CHERI system depend on how software is built, compiled, structured, and compartmentalised. Two products may both claim to “use CHERI” while providing very different levels of protection.
 
 To understand what protection a system actually provides, engineers should ask a few practical questions about architecture, authority, threat models, and evidence.
 
 ## 1. What are you trying to protect?
-{: id="1-what-are-you-trying-to-protect" }
 
 Before discussing CHERI features, identify the data, services, and operations that matter:
 
@@ -41,7 +50,6 @@ Then identify:
 CHERI can only enforce security boundaries that exist in the software architecture. If every component has access to everything, there is little isolation for the hardware to enforce.
 
 ## 2. Which attackers and failures matter?
-{: id="2-which-attackers-and-failures-matter" }
 
 Security depends on what you expect the system to defend against. A browser renderer, a cloud service, and an industrial controller will have very different threat models.
 
@@ -56,7 +64,6 @@ A **threat model** describes the conditions the design is expected to withstand,
 - observe timing or power use
 
 ## 3. Which CHERI execution mode is used?
-{: id="3-which-cheri-execution-mode-is-used" }
 
 The most important question is often: what code is actually using CHERI protections?
 
@@ -70,7 +77,6 @@ Ask what the relevant software actually does:
 These modes describe related but distinct protections. A pure-capability application is not necessarily compartmentalised, and a hybrid application may protect only selected interfaces.
 
 ## 4. What protections are actually enabled?
-{: id="4-what-protections-are-actually-enabled" }
 
 Different CHERI deployments provide different security properties. Verify which protections are enabled in your system rather than assuming they come automatically from CHERI hardware.
 
@@ -85,7 +91,6 @@ Check each relevant property separately:
 CHERI provides architectural building blocks, but some properties require compiler, allocator, operating-system, or runtime support. Temporal safety is an important example. Record the mechanism in use rather than assuming it from the processor alone.
 
 ## 5. How much authority does each component receive?
-{: id="5-how-much-authority-does-each-component-receive" }
 
 A component can still become a major security risk if it holds capabilities that grant broad access to memory, files, services, or secrets.
 
@@ -101,7 +106,6 @@ When reviewing a system, draw the authority flow between components. Explicitly 
 Least privilege means giving each component only the authority required for its current task.
 
 ## 6. How do you verify the design?
-{: id="6-how-do-you-verify-the-design" }
 
 Useful evidence for engineering reviews includes:
 
@@ -119,7 +123,6 @@ Useful evidence for engineering reviews includes:
 A demonstration shows that one scenario worked. It is not automatically evidence for every build, platform, or attack path.
 
 ## A more useful security statement
-{: id="a-more-useful-security-statement" }
 
 A broad statement might be:
 
@@ -132,7 +135,6 @@ A more reviewable statement is:
 The second statement can be reviewed, tested, and improved. It also makes the remaining questions visible.
 
 ## Key takeaways
-{: id="key-takeaways" }
 
 - Treat CHERI as a set of security mechanisms rather than a single security property
 - Be explicit about what code is running in pure-capability, hybrid, or compartmentalised modes

@@ -1,6 +1,0 @@
----
-layout: page
----
-{{ content }}
-{% assign items = site.organisations | where: 'member', true | sort_natural: 'title' %}
-{% include directory.html items=items kind='organisations' %}

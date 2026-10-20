@@ -1,23 +1,31 @@
 ---
+layout: details/working-group
 title: ©️ CHERI C/C++ WG
-where-next:
-  url: /groups/cheri-in-soc/
-  title: CHERI in SoC
 summary: Coordinating portable C and C++ support for CHERI platforms.
-group_type: Technical
-collaboration_areas:
-- Language and ABI behaviour
-- Compiler and toolchain experience
-- Portability and standards
-links:
-- label: Back to all working groups
-  url: /alliance/leadership/working-groups/
-  kind: navigation
-- label: Enquire about this group
-  url: /alliance/membership/contact/
-  kind: resource
-  primary: true
+permalink: /groups/cheri-c-cplusplus/
+slug: cheri-c-cplusplus
+navigation:
+  header:
+    category: CHERI Alliance
+    subcategory: Leadership
+working_group:
+  type: technical
+  focus_areas:
+  - Language and ABI behaviour
+  - Compiler and toolchain experience
+  - Portability and standards
+forms:
+- contact
+related:
+- type: working_group
+  slug: cheri-in-soc
+  relation: next_step
+- type: page
+  slug: alliance-leadership-working-groups
+  relation: navigation
 ---
+
+## Overview
 
 The C/C++ Working Group aims to ensure portability for C and C++ code written for CHERI platforms.
 

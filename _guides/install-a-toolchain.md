@@ -1,26 +1,34 @@
 ---
+layout: details/guide
 title: Install a CHERI Toolchain
-where-next:
-  url: /guides/build-your-first-application/
-related-pages:
-- url: /guides/choose-a-platform/
-  title: Choose a Platform
-  description: A CHERI platform combines more than an instruction set.
-  action: Read this page
-- url: /guides/run-cheri-in-simulation/
-  description: Simulation is the recommended first execution environment for most CHERI developers.
-  action: Read this page
-summary: Install the toolchain that matches your CHERI architecture, OS and ABI, then verify it before compiling
-  application code.
-topic: Toolchains
+summary: Install the toolchain that matches your CHERI architecture, OS and ABI, then verify it before compiling application code.
+permalink: /guides/install-a-toolchain/
+slug: install-a-toolchain
+navigation:
+  header:
+    category: Build
+    subcategory: Software Developers
+guide:
+  topic: toolchains
+related:
+- type: guide
+  slug: build-your-first-application
+  relation: next_step
+- type: guide
+  slug: choose-a-platform
+  relation: related
+- type: guide
+  slug: run-cheri-in-simulation
+  relation: related
 ---
+
+## Overview
 
 A CHERI compiler is not a drop-in label for one universal target. The architecture, operating system, application binary interface (ABI), linker, and runtime libraries must agree. A compiler that understands Morello cannot automatically build a CHERIoT image, and a pure-capability library cannot be linked into an incompatible conventional ABI.
 
 Use the installation route supplied by your platform rather than assembling unrelated binaries by hand.
 
 ## What the toolchain contains
-{: id="what-the-toolchain-contains" }
 
 A practical CHERI software development kit (SDK) normally includes:
 
@@ -36,10 +44,8 @@ A practical CHERI software development kit (SDK) normally includes:
 Accidentally using the host system’s headers or libraries (**sysroot** directory) is one of the most common causes of build and link failures.
 
 ## Install the SDK
-{: id="install-the-sdk" }
 
 ### CheriBSD and CHERI-RISC-V
-{: id="cheribsd-and-cheri-risc-v" }
 
 The recommended route is `cheribuild`, which builds compatible components from known source revisions.
 
@@ -62,7 +68,6 @@ For a full bootable environment, build and run the operating system target:
 ~~~
 
 ### CHERIoT
-{: id="cheriot" }
 
 The development container is the easiest way to get a working CHERIoT toolchain because the compiler, build system, simulator, and supporting tools are already configured together.
 
@@ -76,7 +81,6 @@ Open the repository in an editor that supports development containers. Inside th
 For automated builds, pin the container image or repository revision. “Latest” is convenient for learning but makes results harder to reproduce.
 
 ### CHERI Linux and commercial SDKs
-{: id="cheri-linux-and-commercial-sdks" }
 
 CHERI Linux distributions and processor suppliers may publish complete SDKs or container images. Use their release notes to match:
 
@@ -89,7 +93,6 @@ CHERI Linux distributions and processor suppliers may publish complete SDKs or c
 A vendor kernel and an unrelated user-space SDK should be combined only when their compatibility is documented.
 
 ## Verify the compiler before use
-{: id="verify-the-compiler-before-use" }
 
 Print the compiler identity and target:
 
@@ -122,7 +125,6 @@ llvm-readelf -h answer.o
 Confirm that the machine, class, and ABI match the intended target. The final proof is to link and run the program in the matching operating system or firmware environment.
 
 ## Keep builds reproducible
-{: id="keep-builds-reproducible" }
 
 Record these values in build logs or release metadata:
 

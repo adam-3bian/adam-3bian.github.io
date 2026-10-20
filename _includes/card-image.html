@@ -1,4 +1,0 @@
-{% assign placeholder_kind = 'record' %}
-{% if include.kind == 'people' %}{% assign placeholder_kind = 'person' %}{% elsif include.kind == 'organisations' %}{% assign placeholder_kind = 'organisation' %}{% endif %}
-{% capture placeholder_src %}/assets/images/placeholders/{{ placeholder_kind }}.svg{% endcapture %}
-{% if include.image.src %}{% include image.html image=include.image fallback=placeholder_src %}{% else %}<img src="{{ placeholder_src | relative_url }}" alt="" aria-hidden="true" class="placeholder-image" width="96" height="96" loading="lazy">{% endif %}
