@@ -63,12 +63,18 @@ def check_disclosures(page, width):
         trigger.click()
         assert trigger.get_attribute("aria-expanded") == "false", "Second click must close navigation"
         trigger.focus()
+        # Establish real keyboard traversal after the pointer checks. Calling
+        # focus() on the already mouse-focused button is not a keyboard action.
+        page.keyboard.press("Shift+Tab")
+        page.keyboard.press("Tab")
+        assert trigger.evaluate("e=>e===document.activeElement")
+        assert trigger.evaluate("e=>getComputedStyle(e).outlineStyle") != "none", (width, trigger.inner_text(), "Tab focus")
         page.keyboard.press("Enter")
         assert trigger.get_attribute("aria-expanded") == "true"
         page.keyboard.press("Escape")
         assert trigger.get_attribute("aria-expanded") == "false"
         assert trigger.evaluate("e=>e===document.activeElement")
-        assert trigger.evaluate("e=>getComputedStyle(e).outlineStyle") != "none"
+        assert trigger.evaluate("e=>getComputedStyle(e).outlineStyle") != "none", (width, trigger.inner_text(), "Escape focus")
     roots.first.click()
     roots.last.click()
     assert roots.first.get_attribute("aria-expanded") == "false"
@@ -81,6 +87,7 @@ def check_disclosures(page, width):
 
 with sync_playwright() as playwright:
     for engine in ENGINES:
+        print(f"Checking {engine} at {URL}", flush=True)
         options = {"headless": True}
         if engine == "chromium":
             options["args"] = ["--no-sandbox"]
