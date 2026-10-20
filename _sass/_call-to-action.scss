@@ -35,18 +35,14 @@
   position: relative;
   width: 100%;
 }
-.site-call-to-action::before {
-  background-image: var(--watermark-image);
-  background-position: center top;
-  background-repeat: repeat;
-  content: "";
-  inset: 0;
-  opacity: var(--watermark-opacity);
-  pointer-events: none;
-  position: absolute;
-  z-index: -1;
+// One uniform translucent surround; the body artwork remains underneath.
+// The writing always has an opaque navy surface, including hover and focus.
+.site-call-to-action .card {
+  border: 0;
+  box-shadow: var(--elevation-1);
+  color: var(--colour-subscribe-text);
 }
-.site-call-to-action .card { color: var(--colour-subscribe-text); }
+.site-call-to-action .card h2 { color: var(--colour-subscribe-text); font-size: var(--type-section); }
 .site-call-to-action .card-action {
   background: var(--colour-brand-accent);
   border-radius: var(--radius);
@@ -61,8 +57,3 @@
   .call-to-action .card-with-image { align-items: flex-start; flex-direction: column; }
   .call-to-action .card-with-image h3 { flex-basis: auto; }
 }
-
-// Shared brand treatment; reading surfaces stay opaque.
-.site-call-to-action { background-image: var(--gradient-brand); }
-.site-call-to-action .card { --colour-cta: #fff; --colour-cta-hover: #f1f5f7; --colour-subscribe-text: #152b3b; --colour-focus: #075d80; box-shadow: var(--elevation-2); }
-.site-call-to-action .card h2 { font-size: var(--type-section); }

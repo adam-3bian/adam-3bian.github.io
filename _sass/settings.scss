@@ -110,24 +110,24 @@ $brand-red-deep: #941818;
 $colour-text: $brand-navy;
 $colour-muted: #526574;
 $colour-page: #ffffff;
-$colour-page-edge: #f0f3f5;
-$colour-watermark: rgba(#125770, 0.32);
+$colour-page-edge: #edf0f2;
+$colour-watermark: rgba(#125770, 0.24);
 $colour-link-hover: $brand-teal-deep;
 $colour-header: #ffffff;
 $colour-submenu: $brand-blue;
-$colour-navigation-hover: #e6eef3;
+$colour-navigation-hover: #eef1f3;
 $colour-submenu-hover: #0b4158;
-$colour-hero: #e7f1f7;
+$colour-hero: #f3f5f6;
 $colour-hero-accent: $brand-red;
 $colour-card: #ffffff;
-$colour-card-hover: #edf6fa;
+$colour-card-hover: #f4f6f7;
 $colour-image-background: #fff;
-$colour-cta: #e7f1f7;
-$colour-cta-hover: #d9eaf3;
-$colour-subscribe-band: #0d3344;
-$colour-subscribe-card: #d8eaf2;
-$colour-subscribe-card-hover: #c4dfec;
-$colour-subscribe-text: #08202b;
+$colour-cta: #f3f5f6;
+$colour-cta-hover: #e9eef1;
+$colour-subscribe-band: rgba($brand-blue, .92);
+$colour-subscribe-card: $brand-navy;
+$colour-subscribe-card-hover: #1b3a4c;
+$colour-subscribe-text: #ffffff;
 $colour-footer: #0a2a39;
 $colour-footer-hover: #10465b;
 $colour-footer-text: #ffffff;
@@ -142,10 +142,10 @@ $colour-button-text: #fff;
 $theme-light: (
   text: $colour-text,
   muted: $colour-muted,
-  surface-soft: #f1f5f7,
-  border: #d0dde5,
+  surface-soft: #f3f5f6,
+  border: #dfe4e7,
   accent: $brand-blue,
-  accent-soft: #e7f3f8,
+  accent-soft: #e9eef1,
   brand-accent: $brand-red,
   brand-accent-hover: $brand-red-deep,
   brand-accent-text: #fff,
@@ -157,12 +157,12 @@ $theme-light: (
   submenu: $colour-submenu,
   navigation-hover: $colour-navigation-hover,
   submenu-hover: $colour-submenu-hover,
-  submenu-level-2: #bdcfdc,
-  submenu-level-3: #afc2d1,
-  submenu-level-4: #a1b5c6,
-  submenu-hover-level-2: #adc3d2,
-  submenu-hover-level-3: #9eb6c8,
-  submenu-hover-level-4: #90aabd,
+  submenu-level-2: #0f4c64,
+  submenu-level-3: #0c4359,
+  submenu-level-4: #0a394e,
+  submenu-hover-level-2: #08384d,
+  submenu-hover-level-3: #082f43,
+  submenu-hover-level-4: #062b3e,
   hero: $colour-hero,
   hero-accent: $colour-hero-accent,
   card: $colour-card,
@@ -218,7 +218,7 @@ $theme-dark: (
   image-background: #fff,
   cta: #143447,
   cta-hover: #1d4357,
-  subscribe-band: #08232f,
+  subscribe-band: $colour-subscribe-band,
   subscribe-card: $colour-subscribe-card,
   subscribe-card-hover: $colour-subscribe-card-hover,
   subscribe-text: $colour-subscribe-text,

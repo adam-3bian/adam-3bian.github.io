@@ -46,7 +46,7 @@ main { padding-bottom: 3.5rem; }
 .directory-content > h2 { font-size: var(--type-section); }
 .directory-content > h2 + p { margin-top: .5rem; }
 .catalog-toolbar {
-  align-items: flex-end; background: var(--surface-soft); border: 1px solid var(--border); border-radius: var(--radius);
+  align-items: flex-end; background: var(--surface-soft); border: 0; border-radius: var(--radius);
   display: flex; flex-wrap: wrap; gap: $space-3; padding: $space-4;
 }
 .catalog-toolbar label { color: var(--ink); display: block; font-size: var(--type-label); font-weight: 600; margin-bottom: $space-2; }
@@ -79,9 +79,7 @@ main { padding-bottom: 3.5rem; }
 }
 a.catalog-card:hover { background: var(--surface-hover); border-color: var(--accent); box-shadow: var(--shadow); text-decoration: none; }
 .catalog-card:focus-visible { outline-offset: 3px; }
-.catalog[data-view="list"] .catalog-card { border-width: 0 0 1px; border-radius: 0; box-shadow: var(--elevation-0); padding: $space-4 $space-3; }
-.catalog[data-view="list"] a.catalog-card:hover { box-shadow: none; }
-.catalog[data-view="list"] .catalog-cards { gap: 0; }
+.catalog[data-view="list"] .catalog-cards { gap: $space-3; }
 .catalog-card:not(a) { background: var(--surface-soft); box-shadow: none; }
 .panel-description { font-size: 1rem; line-height: 1.65; margin-top: .75rem; }
 .catalog-item:has(> .catalog-annotation) { background: var(--surface); border-radius: var(--radius); display: flex; flex-direction: column; }
@@ -91,7 +89,7 @@ a.catalog-card:hover { background: var(--surface-hover); border-color: var(--acc
 .directory-outro { margin-top: 2rem; max-width: 73ch; }
 .catalog-copy { flex: 1; min-width: 0; padding-right: 1.5rem; position: relative; }
 .catalog-card h2, .catalog-card h3, .talk-card h3 { color: var(--ink); font-size: var(--type-title); font-weight: 600; letter-spacing: -.02em; line-height: var(--leading-heading); margin: 0; }
-.catalog-media { align-items: center; align-self: center; background: #fff; border: 1px solid var(--border); border-radius: var(--radius); display: flex; flex: 0 0 76px; height: 76px; justify-content: center; overflow: hidden; }
+.catalog-media { align-items: center; align-self: center; background: #fff; border: 0; border-radius: var(--radius-small); display: flex; flex: 0 0 76px; height: 76px; justify-content: center; overflow: hidden; }
 .catalog-media img { display: block; height: 100%; min-height: 0; object-fit: contain; width: 100%; }
 .catalog-media.media-people { border-radius: var(--radius); flex: 0 0 64px; width: 64px; height: 64px; }
 .catalog-media.media-organisations { background: #fff; flex: 0 0 120px; width: 120px; height: 60px; padding: .5rem; }
@@ -108,7 +106,6 @@ a.catalog-card:hover { background: var(--surface-hover); border-color: var(--acc
 .catalog-empty { background: var(--surface); border: 1px dashed var(--border); border-radius: var(--radius); padding: 3rem 1.5rem; text-align: center; }
 .catalog-empty h2 { font-size: var(--type-title); }.catalog-empty p { color: var(--muted); margin: .7rem 0 1.2rem; }
 [data-view="grid"] .catalog-cards, .catalog-cards.cards-grid { gap: $space-4; grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.catalog[data-view="grid"] .catalog-cards { background: var(--gradient-soft); border-radius: calc(var(--radius) + 8px); padding: $space-4; }
 [data-view="grid"] .catalog-card, .cards-grid .catalog-card { align-items: flex-start; flex-direction: column; gap: $space-3; padding: $space-5; }
 [data-view="grid"] a.catalog-card, .cards-grid a.catalog-card { box-shadow: var(--shadow-rest); }
 [data-view="grid"] a.catalog-card:hover, .cards-grid a.catalog-card:hover { box-shadow: var(--shadow); }
@@ -119,7 +116,7 @@ a.catalog-card:hover { background: var(--surface-hover); border-color: var(--acc
 .record-header { align-items: flex-start; display: flex; gap: 2rem; justify-content: space-between; }
 .record-header .heading-copy { flex: 1; }
 .record-header h1 { font-size: var(--type-page); }
-.record-portrait { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: none; flex: 0 0 176px; height: 176px; margin: 0; overflow: hidden; }
+.record-portrait { background: var(--surface); border: 0; border-radius: var(--radius); box-shadow: none; flex: 0 0 176px; height: 176px; margin: 0; overflow: hidden; }
 .record-portrait img { display: block; height: 100%; width: 100%; }
 .record-portrait.image-kind-organisations { background: #fff; flex-basis: 260px; height: 130px; padding: 1rem; }
 .record-portrait.image-kind-hardware { background: #fff; flex-basis: 240px; height: 160px; padding: 1rem; }
@@ -131,7 +128,7 @@ a.catalog-card:hover { background: var(--surface-hover); border-color: var(--acc
 // Fill the shared container, or the article column when useful facts occupy an aside.
 .record-body { grid-column: 1; grid-row: 1; min-width: 0; width: 100%; }
 .record-body:empty { display: none; }
-.facts-panel, .resource-panel { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; }
+.facts-panel, .resource-panel { background: var(--surface); border: 0; border-radius: var(--radius); padding: 1rem; }
 .facts-panel { background: var(--surface-soft); }
 .facts-panel h2, .resource-panel h2 { color: var(--ink); font-size: var(--type-title); font-weight: 600; margin: 0 0 $space-4; }
 .record-facts { margin: 0; }.record-facts > div + div { border-top: 1px solid var(--border); margin-top: .85rem; padding-top: .85rem; }
@@ -157,7 +154,6 @@ a.catalog-card:hover { background: var(--surface-hover); border-color: var(--acc
 .related-block > h2, main > section > h2 { font-size: var(--type-section); letter-spacing: -.025em; margin-bottom: $space-4; }
 .related-block .group-title { color: var(--ink); font-size: var(--type-title); margin: $space-6 0 $space-3; }
 .section-intro { color: var(--muted); }.section-link { margin-top: 1rem; }.section-link a { color: var(--accent); font-size: var(--type-label); }
-.site-call-to-action h2 { color: var(--colour-subscribe-text); }
 .card { border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-rest); }
 .is-landing { background: var(--surface); border: 0; border-bottom: 2px solid var(--accent); border-radius: 0; margin-top: 1rem; padding: 1.25rem 0; }
 .is-landing h1 { font-size: var(--type-page); max-width: 30ch; }
@@ -208,7 +204,6 @@ a.catalog-card:hover { background: var(--surface-hover); border-color: var(--acc
   .catalog-card { align-items: flex-start; gap: $space-3; padding: $space-4; }.catalog-media { flex-basis: 54px; height: 54px; }.catalog-media.media-people { flex-basis: 56px; height: 56px; }.catalog-media.media-news, .catalog-media.media-events { flex-basis: 76px; height: 64px; }.catalog-media.media-organisations { flex: 0 0 88px; height: 44px; width: 88px; padding: .35rem; }
   .catalog[data-view="list"] .catalog-copy { padding-right: 1.5rem; }
   [data-view="grid"] .catalog-cards, .catalog-cards.cards-grid { grid-template-columns: minmax(0, 1fr); gap: $space-4; }
-  .catalog[data-view="grid"] .catalog-cards { padding: $space-3; }
   [data-view="grid"] .catalog-card, .cards-grid .catalog-card { padding: $space-4; }
   .article-lead { margin: 1.2rem 0 1.5rem; }.article-lead img { max-height: 250px; }
   .content { font-size: 1rem; }.content > h2 { margin-top: $space-8; }.related-block, main > section:not(.hero) { margin-top: 2rem; }

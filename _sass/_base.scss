@@ -218,6 +218,3 @@ img {
 .index-list > h2 { margin-bottom: $heading-gap; }
 .content > .index-list:not(:first-child) { margin-top: $subsection-gap; }
 .section-intro { margin-bottom: $space-6; max-width: $text-width; }
-
-// Shared brand treatment; reading surfaces stay opaque.
-body { background-image: var(--gradient-gutter); }

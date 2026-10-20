@@ -10,14 +10,12 @@
   --radius: 8px;
   --radius-small: 4px;
   --shadow-rgb: 21, 43, 59;
-  --gradient-brand: linear-gradient(115deg, #092c3e 0%, #{$brand-blue} 48%, #438eaa 100%);
-  --gradient-soft: linear-gradient(90deg, #dcecf3 0%, #f1f6f9 52%, #c8e2ed 100%);
-  --gradient-gutter: linear-gradient(115deg, #c9e1ec, #f1f5f7 45%, #c9e1ec);
+  --gradient-brand: linear-gradient(115deg, #092c3e 0%, #{$brand-blue} 65%, #226e88 100%);
+  --membership-background: #{$brand-blue};
+  --membership-text: #fff;
 }
 .home-page {
   --shadow-rgb: 0, 8, 14;
-  --gradient-soft: linear-gradient(90deg, #{$brand-blue}, #0d2c3a 52%, #21566b);
-  --gradient-gutter: linear-gradient(115deg, #06151e, #0e3c50 55%, #071923);
 }
 // Resolve aliases in both scopes; inherited light values must not leak onto home.
 :root, .home-page {
@@ -30,8 +28,8 @@
   --ink: var(--colour-text);
   --muted: var(--colour-muted);
   --elevation-0: none;
-  --elevation-1: 0 2px 4px rgba(var(--shadow-rgb), .12), 0 5px 12px rgba(var(--shadow-rgb), .08);
-  --elevation-2: 0 3px 8px rgba(var(--shadow-rgb), .14), 0 12px 24px rgba(var(--shadow-rgb), .16);
+  --elevation-1: 0 1px 3px rgba(var(--shadow-rgb), .12), 0 3px 8px rgba(var(--shadow-rgb), .06);
+  --elevation-2: 0 3px 6px rgba(var(--shadow-rgb), .12), 0 8px 20px rgba(var(--shadow-rgb), .12);
   --elevation-3: 0 8px 16px rgba(var(--shadow-rgb), .18), 0 24px 40px rgba(var(--shadow-rgb), .2);
   --shadow-rest: var(--elevation-1);
   --shadow: var(--elevation-2);
