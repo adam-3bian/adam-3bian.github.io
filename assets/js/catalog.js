@@ -4,24 +4,6 @@
     set(key, value) { try { localStorage.setItem(key, value); } catch { /* Storage is optional. */ } }
   };
 
-  const themeButton = document.querySelector('[data-theme-toggle]');
-  const logo = document.querySelector('.brand img');
-  const applyTheme = (theme) => {
-    document.body.dataset.theme = theme;
-    if (themeButton) {
-      themeButton.hidden = false;
-      themeButton.setAttribute('aria-pressed', String(theme === 'dark'));
-      themeButton.setAttribute('aria-label', `Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`);
-    }
-    if (logo && logo.dataset[theme]) logo.src = logo.dataset[theme];
-  };
-  applyTheme(storage.get('cheri-theme') || document.body.dataset.theme || 'light');
-  themeButton?.addEventListener('click', () => {
-    const next = document.body.dataset.theme === 'dark' ? 'light' : 'dark';
-    storage.set('cheri-theme', next);
-    applyTheme(next);
-  });
-
   document.querySelectorAll('[data-catalog]').forEach((catalog) => {
     const list = catalog.querySelector('[data-catalog-list]');
     const items = [...list.children];

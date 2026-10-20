@@ -1,10 +1,10 @@
 ---
 layout: default
 ---
-{% include page-header.html %}
+{% if page.url == '/' %}{% include home-hero.html %}{% else %}{% include page-header.html %}{% endif %}
 {% if page.hero %}{% include slider.html %}{% endif %}
 <article class="content {% if page.directory %}directory-content{% elsif page.hero %}landing-content{% else %}reading-content{% endif %}">
 {% if page.opportunity_type %}<dl class="simple-facts"><div><dt>Opportunity</dt><dd>{{ page.opportunity_type | escape }}</dd></div><div><dt>Location</dt><dd>{{ page.location | escape }} · {{ page.working_pattern | escape }}</dd></div><div><dt>Posted</dt><dd>{% include date.html value=page.posted_date %}</dd></div><div><dt>Experience</dt><dd>{{ page.experience | escape }}</dd></div><div><dt>Relevant skills</dt><dd>{{ page.skills | join: ', ' | escape }}</dd></div>{% for fact in page.additional_facts %}<div><dt>{{ fact.label | escape }}</dt><dd>{{ fact.value | markdownify }}</dd></div>{% endfor %}</dl>{% endif %}
-{{ content }}
+{% if page.sections and page.layout != 'index' %}{% include section-cards.html content=content groups=page.sections %}{% else %}{{ content }}{% endif %}
 </article>
 {% unless page.directory or page.hero %}{% if page.links.size > 0 %}<div class="reading-resources">{% include resource-links.html %}</div>{% endif %}{% endunless %}

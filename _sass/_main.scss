@@ -1,10 +1,13 @@
+.site-container, main {
+  margin-inline: auto;
+  max-width: $max-site;
+  padding-inline: $gutter-mobile;
+  width: 100%;
+}
 main {
   background: var(--colour-page);
   flex: 1;
-  margin-inline: auto;
-  max-width: $max-site;
-  padding: 0 $gutter-mobile $section-gap-mobile;
-  width: 100%;
+  padding-block: 0 $section-gap-mobile;
 }
 main > article, main > section:not(.hero) {
   margin-top: $section-gap-mobile;
@@ -13,9 +16,8 @@ main > section:not(.hero) > h2 {
   margin-bottom: $space-5;
 }
 @media (min-width: $desktop-breakpoint) {
-  main {
-    padding: 0 $gutter-desktop $section-gap-desktop;
-  }
+  .site-container, main { padding-inline: $gutter-desktop; }
+  main { padding-bottom: $section-gap-desktop; }
   main > article, main > section:not(.hero) {
     margin-top: $section-gap-desktop;
   }

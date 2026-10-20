@@ -28,7 +28,7 @@ $submenu-selector: ".submenu";
     --colour-submenu: var(--colour-submenu-level-#{$depth});
     --colour-submenu-hover: var(--colour-submenu-hover-level-#{$depth});
     --navigation-indent: #{$submenu-row-padding * ($depth - 1)};
-    @media (min-width: $desktop-breakpoint) { --navigation-indent: 0px; }
+    @media (min-width: $navigation-breakpoint) { --navigation-indent: 0px; }
   }
 }
 .submenu[hidden] { display: none; }
@@ -59,23 +59,15 @@ html:not(.js) .submenu-row > button { display: none; }
   min-height: $control-height;
   padding: $space-3;
 }
-.submenu-toggle::after {
-  border-bottom: $control-border-width solid currentColor;
-  border-right: $control-border-width solid currentColor;
-  content: "";
+.menu-indicator {
   flex-shrink: 0;
-  height: $space-2;
+  font-family: Arial, sans-serif;
+  font-size: .65em;
+  line-height: 1;
   margin-left: auto;
-  margin-top: -$space-1;
-  transform: rotate(45deg);
-  width: $space-2;
 }
-.submenu-row > .submenu-toggle::after { margin-left: 0; }
+.submenu-row > .submenu-toggle .menu-indicator { margin-left: 0; }
 .submenu-toggle[aria-expanded="true"] { --navigation-background: var(--colour-submenu); }
-.submenu-toggle[aria-expanded="true"]::after {
-  margin-top: $space-1;
-  transform: rotate(225deg);
-}
 .flyout { padding: 0; }
 .megamenu { gap: 0; }
 .menu-group-title {
@@ -104,7 +96,7 @@ html:not(.js) .menu-group-links[hidden] { display: grid; }
 .dropdown .menu-group { margin: 0; }
 .dropdown .menu-group-title { padding-block: $space-2; }
 .dropdown .menu-group > ul { margin-top: 0; }
-@media (min-width: $desktop-breakpoint) {
+@media (min-width: $navigation-breakpoint) {
   .js .menu-group-toggle { display: none; }
   .js .megamenu .menu-group-label { display: block; }
   .menu-group-links { --navigation-indent: 0px; }
@@ -120,8 +112,6 @@ html:not(.js) .menu-group-links[hidden] { display: grid; }
   .js .flyout.opens-left { left: auto; right: 100%; }
   .js .flyout.opens-up { bottom: 0; top: auto; }
   .js .dropdown.align-start { left: 0; right: auto; }
-  .submenu-row > .submenu-toggle::after { margin-top: 0; transform: rotate(-45deg); }
-  .submenu-row > .submenu-toggle[aria-expanded="true"]::after { transform: rotate(135deg); }
   .megamenu {
     --navigation-row-inset: #{$navigation-row-padding};
     gap: $grid-gap;

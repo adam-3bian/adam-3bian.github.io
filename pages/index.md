@@ -2,7 +2,11 @@
 title: Software runs our world. It deserves stronger security foundations.
 permalink: /
 hero:
-  intro-paragraphs: 2
+  title: Software runs our world.
+  subtitle:
+  - It deserves stronger security foundations.
+  - Enabled by CHERI.
+  introduction: CHERI is an **open** security technology that builds stronger protection **into the hardware**, helping software stay secure even when things go wrong.
 sections:
 - presentation: cards
   columns: 3
@@ -59,12 +63,9 @@ slider:
       src: /assets/news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/67e343f4b8d6-hero.png
       alt: ETSI standard
       fit: contain
-display_title: Software runs our world.<br><small>It deserves stronger security foundations.<br>Enabled by CHERI.</small>
 summary: Software vulnerabilities have always been a risk. AI is increasing the speed and scale at which they can
   be found and exploited. CHERI helps **stop vulnerabilities from becoming attacks**.
 ---
-
-CHERI is an **open** security technology that builds stronger protection **into the hardware**, helping software stay secure even when things go wrong.
 
 ## Protect your organisation
 {: id="protect-your-organisation" }

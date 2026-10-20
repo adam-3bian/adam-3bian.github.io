@@ -1,11 +1,9 @@
-footer {
+.site-footer {
   --colour-focus: var(--colour-footer-text);
   --colour-navigation-hover: var(--colour-footer-hover);
   background: var(--colour-footer);
   color: var(--colour-footer-text);
-  margin-inline: auto;
-  max-width: $max-site;
-  padding: $space-10 $gutter-mobile $space-8;
+  padding-block: $space-10 $space-8;
   width: 100%;
 }
 .footer-navigation > ul {
@@ -49,7 +47,6 @@ footer .menu-group-title { font: inherit; letter-spacing: inherit; }
 }
 .footer-social .social-icon { display: block; height: $space-6; object-fit: contain; width: $space-6; }
 @media (min-width: $desktop-breakpoint) {
-  footer { padding-inline: $gutter-desktop; }
   .footer-copyright { grid-column: 1 / span 3; }
   .footer-social { grid-column: 4; grid-row: 1; }
 }

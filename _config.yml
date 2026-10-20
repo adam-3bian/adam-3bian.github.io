@@ -82,13 +82,8 @@ defaults:
   values:
     layout: page
     render_with_liquid: false
-    theme: light
     hero: false
     image-overlay: true
-- scope:
-    path: pages/index.md
-  values:
-    theme: dark
 - scope:
     path: ''
     type: people

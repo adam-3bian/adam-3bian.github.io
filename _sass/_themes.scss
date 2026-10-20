@@ -10,7 +10,7 @@
   --watermark-image: #{unquote('url("../images/background/hexagons-light.webp")')};
 }
 
-[data-theme="dark"] {
+.home-page[data-theme="dark"] {
   color-scheme: dark;
   @each $name, $value in $theme-dark {
     @if $name == watermark {

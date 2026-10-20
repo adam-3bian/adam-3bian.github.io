@@ -9,7 +9,7 @@
   <link rel="icon" href="{{ '/favicon.ico' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 </head>
-<body data-theme="{{ page.theme | default: 'light' }}" class="{% if page.directory %}directory-page{% elsif page.collection == 'news' %}article-page{% elsif page.collection %}detail-page{% elsif page.hero %}landing-page{% else %}reading-page{% endif %}">
+<body data-theme="{% if page.url == '/' %}dark{% else %}light{% endif %}" class="{% if page.url == '/' %}home-page landing-page{% elsif page.directory %}directory-page{% elsif page.collection == 'news' %}article-page{% elsif page.collection %}detail-page{% elsif page.hero %}landing-page{% else %}reading-page{% endif %}">
   {% assign all_pages = site.pages %}
   <a class="skip-link" href="#main-content">Skip to content</a>
   {% include header.html %}

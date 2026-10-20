@@ -19,14 +19,12 @@
   --colour-cta-hover: var(--colour-subscribe-card-hover);
   --colour-focus: var(--colour-subscribe-text);
   background: var(--colour-subscribe-band);
-  margin-inline: auto;
-  max-width: $max-site;
-  padding: $section-gap-mobile $gutter-mobile;
+  padding-block: $section-gap-mobile;
   width: 100%;
 }
 .site-call-to-action .card { color: var(--colour-subscribe-text); }
 @media (min-width: $desktop-breakpoint) {
-  .site-call-to-action { padding: $section-gap-desktop $gutter-desktop; }
+  .site-call-to-action { padding-block: $section-gap-desktop; }
 }
 @media (max-width: $desktop-breakpoint - 1px) {
   .call-to-action .card-with-image { align-items: flex-start; flex-direction: column; }

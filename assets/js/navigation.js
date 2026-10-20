@@ -1,5 +1,5 @@
 (() => {
-  const header = document.querySelector('header');
+  const header = document.querySelector('.site-header');
   const navigation = document.querySelector('#primary-navigation');
   const hamburger = document.querySelector('#hamburger');
   if (!header || !navigation || !hamburger) return;
@@ -20,6 +20,12 @@
     navigation.dataset.open = String(open);
   }
 
+  function setExpanded(button, expanded) {
+    button.setAttribute('aria-expanded', String(expanded));
+    const indicator = button.querySelector('.menu-indicator');
+    if (indicator) indicator.textContent = expanded ? '▲' : '▼';
+  }
+
   function close(button) {
     const menu = targets.get(button);
     if (!menu) return;
@@ -27,7 +33,7 @@
     // Mega-menu groups are plain, expanded columns on desktop and disclosures
     // on mobile. Their hidden desktop triggers are never keyboard destinations.
     const expanded = groupButtons.includes(button) && desktop();
-    button.setAttribute('aria-expanded', String(expanded));
+    setExpanded(button, expanded);
     menu.hidden = !expanded;
     menu.classList.remove(...positionClasses);
   }
@@ -77,7 +83,7 @@
       const peer = directButton(sibling);
       if (peer && peer !== button) close(peer);
     });
-    button.setAttribute('aria-expanded', 'true');
+    setExpanded(button, true);
     menu.hidden = false;
     position(menu, button);
   }

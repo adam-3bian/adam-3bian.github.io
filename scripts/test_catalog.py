@@ -9,7 +9,7 @@ URL = os.environ.get('SITE_URL', 'http://127.0.0.1:4200/').rstrip('/') + '/'
 OUT = Path(os.environ.get('REPORT_ROOT', ROOT / 'reports/browser'))
 OUT.mkdir(parents=True, exist_ok=True)
 AXE = Path(os.environ.get('AXE_PATH', '/workspace/work/browser-tools/node_modules/axe-core/axe.min.js'))
-routes = ['people/', 'organisations/', 'news/', 'events/', 'papers/', 'hardware/', 'software/', 'groups/', 'guides/', 'policies/', 'reports/', 'build/platforms/cheri-products/', 'people/mike-eftimakis/', 'people/a-theodore-markettos/', 'policies/code-of-conduct/', 'events/cheritech26/', 'papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/', 'news/ai-doesnt-need-a-kill-switch-it-needs-boundaries/', 'discover/understand/how-does-cheri-work/']
+routes = ['', 'people/', 'organisations/', 'news/', 'events/', 'papers/', 'hardware/', 'software/', 'groups/', 'guides/', 'policies/', 'reports/', 'build/platforms/cheri-products/', 'people/mike-eftimakis/', 'people/a-theodore-markettos/', 'policies/code-of-conduct/', 'events/cheritech26/', 'papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/', 'news/ai-doesnt-need-a-kill-switch-it-needs-boundaries/', 'discover/understand/how-does-cheri-work/']
 results = []
 
 def ready(page):
@@ -75,6 +75,7 @@ with sync_playwright() as p:
         for route in routes:
             response = page.goto(URL + route)
             assert response.status == 200, route
+            assert 'Poppins' in page.locator('body').evaluate('(e) => getComputedStyle(e).fontFamily'), f'Stylesheet did not load: {route}'
             assert page.locator('h1').count() == 1, route
             assert not page.evaluate('document.documentElement.scrollWidth > innerWidth + 1'), f'{device}: horizontal overflow: {route}'
             ready(page)
@@ -83,19 +84,10 @@ with sync_playwright() as p:
                 violations = page.evaluate("async () => (await axe.run(document, {runOnly: {type:'tag', values:['wcag2a','wcag2aa','wcag21a','wcag21aa','wcag22aa']}})).violations.map(v => ({id:v.id, impact:v.impact, nodes:v.nodes.map(n=>n.target)}))")
                 results.append({'device': device, 'route': route, 'violations': violations})
             else: raise RuntimeError('Set AXE_PATH to the installed axe-core/axe.min.js')
-        shots = [('people-list', 'people/?view=list'), ('people-grid', 'people/?view=grid'), ('person', 'people/mike-eftimakis/'), ('policy', 'policies/code-of-conduct/'), ('news', 'news/ai-doesnt-need-a-kill-switch-it-needs-boundaries/'), ('page', 'discover/understand/how-does-cheri-work/')]
+        shots = [('home', ''), ('people-list', 'people/?view=list'), ('people-grid', 'people/?view=grid'), ('person', 'people/mike-eftimakis/'), ('policy', 'policies/code-of-conduct/'), ('news', 'news/ai-doesnt-need-a-kill-switch-it-needs-boundaries/'), ('page', 'discover/understand/how-does-cheri-work/')]
         for name, route in shots:
             page.goto(URL + route); ready(page)
             page.screenshot(path=str(OUT / f'{device}-{name}.png'))
-    # Same components and resources must remain legible in the darker palette.
-    page.set_viewport_size({'width': 1440, 'height': 1000})
-    for route in ['people/?view=grid', 'people/mike-eftimakis/', 'news/ai-doesnt-need-a-kill-switch-it-needs-boundaries/']:
-        page.goto(URL + route)
-        if page.locator('body').get_attribute('data-theme') != 'dark': page.locator('[data-theme-toggle]').click()
-        ready(page);page.add_script_tag(path=str(AXE))
-        violations = page.evaluate("async () => (await axe.run(document, {runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa','wcag22aa']}})).violations.map(v=>({id:v.id,impact:v.impact,nodes:v.nodes.map(n=>n.target)}))")
-        results.append({'device': 'desktop-dark', 'route': route, 'violations': violations})
-    page.goto(URL + 'people/mike-eftimakis/');ready(page);page.screenshot(path=str(OUT / 'desktop-person-dark.png'))
     nojs = browser.new_context(java_script_enabled=False, viewport={'width':390,'height':844})
     plain = nojs.new_page();plain.goto(URL + 'people/')
     assert plain.locator('[data-catalog-list] > li:visible').count() == 111

@@ -186,6 +186,10 @@ Start body content at `##`. Use ordinary Markdown lists, images, code fences and
 
 ## Local validation
 
+Ordinary pages and news use the shared site content width. Collection details retain a readable prose column and optional facts panel. The header, newsletter band and footer have full-width surfaces with their contents aligned to the same container. The original honeycomb assets remain the background on both page palettes.
+
+Only `/` uses the original dark palette, selected by its `home-page` class. There is no visitor theme setting. The homepage hero uses plain `hero.title`, an ordered `hero.subtitle` array, `summary`, and Markdown in `hero.introduction`; do not put HTML tags in the title. Its `sections` configuration arranges the existing Markdown sections into the original groups.
+
 ```sh
 python -m pip install -r requirements-dev.txt
 python scripts/check_content.py
@@ -196,6 +200,6 @@ bundle exec jekyll build --safe --baseurl /preview --destination dist-baseurl/pr
 python scripts/check_content.py --site dist-baseurl/preview --baseurl /preview
 ```
 
-For browser checks, serve the output directory, install Chromium with `python -m playwright install chromium`, and install `axe-core@4.10.3`. Set `SITE_URL` and `AXE_PATH`, then run `python scripts/test_catalog.py`. Optional `CHROMIUM_EXECUTABLE` selects an existing Chromium binary. Reports and desktop/mobile screenshots go to `reports/browser/`; CI also checks `/preview/` and uploads its review evidence.
+For browser checks, serve the output directory, install Chromium with `python -m playwright install chromium`, and install `axe-core@4.10.3`. Set `SITE_URL` and `AXE_PATH`, then run `python scripts/test_catalog.py` and `python scripts/test_layouts.py`. Optional `CHROMIUM_EXECUTABLE` selects an existing Chromium binary. Catalogue screenshots go to `reports/browser/`; container, theme and navigation checks and full-page screenshots go to `reports/layout-fixes/after/`. CI checks both `/` and `/preview/` and uploads the review evidence.
 
 The fixtures under `scripts/fixtures/` are a migration safety net. Update them deliberately when a reviewed editorial change intentionally changes an existing route, anchor or ordered relationship. The rendered audit records inherited broken references separately from regressions.

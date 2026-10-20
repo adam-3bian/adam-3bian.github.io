@@ -57,6 +57,8 @@ jobs:
           export AXE_PATH="$RUNNER_TEMP/accessibility/node_modules/axe-core/axe.min.js"
           SITE_URL=http://127.0.0.1:4200/ REPORT_ROOT=reports/browser python scripts/test_catalog.py
           SITE_URL=http://127.0.0.1:4201/preview/ REPORT_ROOT=reports/preview-browser python scripts/test_catalog.py
+          SITE_URL=http://127.0.0.1:4200/ REPORT_ROOT=reports/layout-fixes/after python scripts/test_layouts.py
+          SITE_URL=http://127.0.0.1:4201/preview/ REPORT_ROOT=reports/layout-fixes/preview python scripts/test_layouts.py
       - name: Save review evidence
         if: always()
         uses: actions/upload-artifact@v4

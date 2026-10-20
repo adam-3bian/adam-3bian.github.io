@@ -5,16 +5,15 @@
   padding: $space-2;
 }
 .site-header {
-  align-items: center;
   background: var(--colour-header);
+  width: 100%;
+}
+.site-header-inner {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-inline: auto;
-  max-width: $max-site;
-  padding-inline: $gutter-mobile;
   position: relative;
-  width: 100%;
 }
 .brand {
   color: inherit;
@@ -62,14 +61,11 @@
   padding: $space-3 $gutter-mobile;
   width: 100%;
 }
-@media (min-width: $desktop-breakpoint) {
+@media (min-width: $navigation-breakpoint) {
   .js #hamburger {
     display: none;
   }
-  .site-header {
-    padding-inline: $gutter-desktop;
-  }
-  .js .site-header {
+  .js .site-header-inner {
     flex-wrap: nowrap;
     min-height: $header-height;
   }

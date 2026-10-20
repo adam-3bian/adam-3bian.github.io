@@ -1,10 +1,10 @@
 <header class="site-header">
+  <div class="site-container site-header-inner">
   {% assign logo = site.logo.light %}
-  {% if page.theme == 'dark' %}{% assign logo = site.logo.dark %}{% endif %}
+  {% if page.url == '/' %}{% assign logo = site.logo.dark %}{% endif %}
   <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title | escape }} home">
-    <img data-light="{{ site.logo.light | relative_url }}" data-dark="{{ site.logo.dark | relative_url }}" src="{{ logo | relative_url | escape }}" alt="{{ site.title | escape }}" width="{{ site.logo.width | escape }}" height="{{ site.logo.height | escape }}">
+    <img src="{{ logo | relative_url | escape }}" alt="{{ site.title | escape }}" width="{{ site.logo.width | escape }}" height="{{ site.logo.height | escape }}">
   </a>
-  <button class="theme-toggle" type="button" aria-label="Switch colour theme" aria-pressed="false" data-theme-toggle hidden>{% include icon.html name='theme' %}</button>
   <button id="hamburger" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation">
     <span aria-hidden="true">&#x2630;</span>
   </button>
@@ -54,7 +54,7 @@
         {% if menu_mode == 'categories' %}
           <li{% if menu_item.type == 'megamenu' %} class="has-submenu has-megamenu"{% elsif menu_item.type == 'dropdown' %} class="has-submenu"{% endif %}>
           {% if menu_item.type == 'megamenu' or menu_item.type == 'dropdown' %}
-            <button class="submenu-toggle" type="button" aria-expanded="false" aria-controls="{{ menu_id }}">{{ menu_item.title | escape }}</button>
+            <button class="submenu-toggle" type="button" aria-expanded="false" aria-controls="{{ menu_id }}">{{ menu_item.title | escape }}<span class="menu-indicator" aria-hidden="true">▼</span></button>
             {% if menu_item.type == 'megamenu' %}
               <ul id="{{ menu_id }}" class="submenu megamenu columns-{{ menu_item.columns | default: 3 }}" hidden>
               {% assign menu_children = menu_item.subcategories | default: empty_menu %}
@@ -89,7 +89,7 @@
           <li class="menu-group{% if menu_mode == 'mega-groups' %} has-submenu{% endif %}">
             <span class="menu-group-title{% if menu_mode == 'mega-groups' %} menu-group-label{% endif %}">{{ menu_item.title | escape }}</span>
             {% if menu_mode == 'mega-groups' %}
-              <button class="menu-group-title submenu-toggle menu-group-toggle" type="button" aria-expanded="false" aria-controls="{{ menu_id }}">{{ menu_item.title | escape }}</button>
+              <button class="menu-group-title submenu-toggle menu-group-toggle" type="button" aria-expanded="false" aria-controls="{{ menu_id }}">{{ menu_item.title | escape }}<span class="menu-indicator" aria-hidden="true">▼</span></button>
               <ul id="{{ menu_id }}" class="menu-group-links" hidden>
             {% else %}
               <ul>
@@ -113,7 +113,7 @@
                   {% assign link_url = link_url | relative_url %}
                 {% endunless %}
                 <a href="{{ link_url | escape }}"{% if link_target != '' %} target="{{ link_target | escape }}"{% endif %}{% if link_rel != '' %} rel="{{ link_rel | strip | escape }}"{% endif %}{% if link_target == '_blank' %} title="Opens in a new tab"{% endif %}>{{ menu_item.title | escape }}</a>
-                <button class="submenu-toggle" type="button" aria-expanded="false" aria-controls="{{ menu_id }}" aria-label="{{ menu_item.title | escape }} submenu"></button>
+                <button class="submenu-toggle" type="button" aria-expanded="false" aria-controls="{{ menu_id }}" aria-label="{{ menu_item.title | escape }} submenu"><span class="menu-indicator" aria-hidden="true">▼</span></button>
               </div>
               <ul class="submenu dropdown flyout" id="{{ menu_id }}" hidden>
               {% assign menu_children = menu_item.links %}
@@ -147,4 +147,5 @@
       {% endfor %}
     </ul>
   </nav>
+  </div>
 </header>
