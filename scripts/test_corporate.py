@@ -32,6 +32,37 @@ def ready(page):
     page.evaluate("document.fonts.ready")
 
 
+def check_keyboard_entry(page, width):
+    """Follow the native Tab order from page entry, independently of pointer use."""
+    roots = page.locator("#primary-navigation > ul > li > .submenu-toggle")
+    visited = []
+    trace = []
+    for _ in range(24):
+        page.keyboard.press("Tab")
+        active = page.locator(":focus")
+        trace.append(active.evaluate("e=>({tag:e.tagName,id:e.id,text:e.textContent.trim().slice(0,60)})") if active.count() else None)
+        if active.count() and active.get_attribute("id") == "hamburger":
+            page.keyboard.press("Enter")
+            assert active.get_attribute("aria-expanded") == "true"
+        elif active.count() and active.evaluate("e=>e.matches('#primary-navigation > ul > li > .submenu-toggle')"):
+            index = active.evaluate("e=>Array.from(document.querySelectorAll('#primary-navigation > ul > li > .submenu-toggle')).indexOf(e)")
+            assert index == len(visited), (width, "Native Tab order", trace)
+            assert active.evaluate("e=>getComputedStyle(e).outlineStyle") != "none", (width, "Tab focus", trace)
+            page.keyboard.press("Enter")
+            assert active.get_attribute("aria-expanded") == "true"
+            page.keyboard.press("Escape")
+            assert active.get_attribute("aria-expanded") == "false"
+            assert roots.nth(index).evaluate("e=>e===document.activeElement")
+            assert active.evaluate("e=>getComputedStyle(e).outlineStyle") != "none", (width, "Escape focus", trace)
+            visited.append(index)
+            if len(visited) == roots.count():
+                break
+    assert len(visited) == roots.count(), (width, "All root menus reachable with Tab", trace)
+    if page.locator("#hamburger").is_visible():
+        page.keyboard.press("Escape")
+        assert page.locator("#hamburger").get_attribute("aria-expanded") == "false"
+
+
 def check_disclosures(page, width):
     """Approaching a trigger never changes its state; the first click opens it."""
     page.mouse.move(0, 0)
@@ -39,7 +70,7 @@ def check_disclosures(page, width):
     if hamburger.is_visible():
         hamburger.click()
     roots = page.locator("#primary-navigation > ul > li > .submenu-toggle")
-    for index, trigger in enumerate(roots.all()):
+    for trigger in roots.all():
         assert trigger.get_attribute("aria-expanded") == "false"
         trigger.hover()
         assert trigger.get_attribute("aria-expanded") == "false", "Hover must not open navigation"
@@ -62,25 +93,6 @@ def check_disclosures(page, width):
                 assert group.evaluate("e=>e===document.activeElement")
         trigger.click()
         assert trigger.get_attribute("aria-expanded") == "false", "Second click must close navigation"
-        trigger.focus()
-        # Establish real keyboard traversal after the pointer checks. Calling
-        # focus() on the already mouse-focused button is not a keyboard action.
-        # Stay within adjacent root buttons. Leaving the header deliberately
-        # closes mobile navigation; browsers also differ in whether Tab visits
-        # the preceding logo link by default.
-        page.keyboard.press("Tab" if index == 0 else "Shift+Tab")
-        page.keyboard.press("Shift+Tab" if index == 0 else "Tab")
-        assert trigger.evaluate("e=>e===document.activeElement"), (
-            width, trigger.inner_text(), "Tab return",
-            page.evaluate("({tag:document.activeElement.tagName,id:document.activeElement.id,text:document.activeElement.textContent.slice(0,80)})"),
-        )
-        assert trigger.evaluate("e=>getComputedStyle(e).outlineStyle") != "none", (width, trigger.inner_text(), "Tab focus")
-        page.keyboard.press("Enter")
-        assert trigger.get_attribute("aria-expanded") == "true"
-        page.keyboard.press("Escape")
-        assert trigger.get_attribute("aria-expanded") == "false"
-        assert trigger.evaluate("e=>e===document.activeElement")
-        assert trigger.evaluate("e=>getComputedStyle(e).outlineStyle") != "none", (width, trigger.inner_text(), "Escape focus")
     roots.first.click()
     roots.last.click()
     assert roots.first.get_attribute("aria-expanded") == "false"
@@ -129,6 +141,7 @@ with sync_playwright() as playwright:
                     assert card.evaluate("e=>getComputedStyle(e).textDecorationLine") == "none"
                     assert card.evaluate("e=>getComputedStyle(e).borderTopWidth") == "0px"
                 if route in ["", "alliance/"]:
+                    check_keyboard_entry(page, width)
                     check_disclosures(page, width)
                 violations = []
                 if width in [390, 1440] and route in [
