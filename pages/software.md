@@ -5,6 +5,5 @@ listing:
   collection: software
 layout: list
 parent: /build/
+directory: true
 ---
-
-# Software

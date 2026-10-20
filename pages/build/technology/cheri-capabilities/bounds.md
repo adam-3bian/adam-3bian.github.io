@@ -7,19 +7,9 @@ related-pages:
 - url: /build/technology/how-cheri-capabilities-work/
   description: How CHERI Capabilities work
   action: Read this page
+summary: Capability bounds restrict a pointer to an authorised memory range, so mapped memory outside that range
+  remains inaccessible through it.
 ---
-
-1. Build
-2. Technology
-3. CHERI Capabilities
-4. Bounds
-{: .source-breadcrumbs }
-
-# Bounds
-{: id="page-hero-title" .page-hero-title }
-
-Capability bounds restrict a pointer to an authorised memory range, so mapped memory outside that range remains inaccessible through it.
-{: .page-hero-summary }
 
 A function receives a pointer to a 32-byte message. On a conventional processor, the pointer usually contains no enforceable record of that size. If the function reads byte 40, the hardware may allow it because the address still lies in a mapped page.
 
@@ -105,58 +95,3 @@ Correctly applied bounds can stop:
 - Information leakage through side channels.
 
 Bounds are therefore strongest when paired with narrow [Permissions](/build/technology/cheri-capabilities/permissions/), careful [Provenance](/build/technology/cheri-capabilities/provenance/), lifetime protection, and least-privilege compartment design.
-
-## Where next
-{: .where-next-title }
-
-### [Permissions](/build/technology/cheri-capabilities/permissions/)
-{: .where-next-card-title }
-
-
-
-
-
-[A pointer can be inside the correct object and still perform the wrong operation.](/build/technology/cheri-capabilities/permissions/)
-{: .where-next-summary }
-
-
-
-[Continue](/build/technology/cheri-capabilities/permissions/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Capabilities](/build/technology/cheri-capabilities/capabilities/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A pointer bug becomes dangerous when changing a number changes authority.](/build/technology/cheri-capabilities/capabilities/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/build/technology/capabilities/)
-{: .source-card-label }
-
-
-
-
-
-### [Tags &amp; Validity](/build/technology/cheri-capabilities/tags-and-validity/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Suppose an attacker learns that a password sits at address 0x40008000.](/build/technology/cheri-capabilities/tags-and-validity/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/build/technology/cheri-capabilities/tags-and-validity/)
-{: .source-card-label }

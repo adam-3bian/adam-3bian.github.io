@@ -1,31 +1,26 @@
 ---
 title: Defence Science and Technology Laboratory (Dstl)
 member: true
+summary: The Defence Science and Technology Laboratory (Dstl) delivers high-impact science and technology (S&amp;T)
+  solutions to enhance the UK’s defence and security. As an executive agency of the UK Ministry of Defence (MOD),
+  Dstl works closely with academia…
+membership_category: Community Member
+membership_status: Founding member
+links:
+- label: Visit member website
+  url: https://www.gov.uk/government/organisations/defence-science-and-technology-laboratory
+  kind: website
+  primary: true
+- label: Back to all members
+  url: /alliance/leadership/members/
+  kind: navigation
+thumbnail:
+  src: /assets/organisations/dstl/1291f932f092-logo.png
+  alt: DSTL logo
+  width: 285
+  height: 147
+  fit: contain
 ---
-
-1. Alliance
-2. Members
-3. Defence Science and Technology Laboratory (Dstl)
-{: .source-breadcrumbs }
-
-# Defence Science and Technology Laboratory (Dstl)
-{: id="page-hero-title" .page-hero-title }
-
-The Defence Science and Technology Laboratory (Dstl) delivers high-impact science and technology (S&amp;T) solutions to enhance the UK’s defence and security. As an executive agency of the UK Ministry of Defence (MOD), Dstl works closely with academia…
-{: .page-hero-summary }
-
-![DSTL logo](/assets/organisations/dstl/1291f932f092-logo.png){: .image-left }
-{: .entity-media .entity-media--logo }
-
-Status
-: Founding member
-
-Membership
-: Community Member
-
-Website
-: [Visit member website](https://www.gov.uk/government/organisations/defence-science-and-technology-laboratory)
-{: .entity-facts }
 
 ## Description
 {: id="description" }
@@ -36,6 +31,3 @@ The Defence Science and Technology Laboratory (Dstl) delivers high-impact scienc
 {: id="cheri-activities" }
 
 In 2023, the MOD Reducing Cyber Attack Surface research project ran a competition (via Defence and Security Accelerator) to grow MOD’s understanding of the potential benefits or challenges of deploying CHERI processor technologies within Defence and Security systems. This competition was also intended to increase the base of potential defence suppliers with experience of Morello/CHERI, to provide a pool of future innovation the UK can draw on. Twenty nine proposals were received of which sixteen were chosen from a broad cross-section of suppliers and applications. These projects concluded in March 2024. In 2022, as part of the RAF Rapid Capability Office ongoing program, Dstl started the research and development of the Edge Avionics with Digital Security by Design project. This joint R&amp;D project involves an industry consortia of GE Aviation UK, as leader, Windriver and Adacore. The project is creating a TSN network of remote data concentrators to demonstrate a legacy air mission system executing on Morello/CHERI systems. The initial aims is to prototype novel distributed architectures with CHERI/Morello using real avionics applications and to create a secure by design avionics system for further research. As of November 2024, the project is continuing with an expectation of the experimental system being complete in March 2025. The project has already led to the successful demonstration of Adacore tooling to support Ada program development on Morello.
-
-[Back to all members](/alliance/leadership/members/)
-{: .entity-back }

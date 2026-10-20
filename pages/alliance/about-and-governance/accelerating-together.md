@@ -15,18 +15,8 @@ related-pages:
 - url: /organisations/the-capable-hub/
   description: Discover the Capable Hub.
   action: Read this page
+summary: Three organisations, one shared goal. Accelerating CHERI adoption.
 ---
-
-1. Alliance
-2. About &amp; Governance
-3. Accelerating CHERI together
-{: .source-breadcrumbs }
-
-# Accelerating CHERI together
-{: id="page-hero-title" .page-hero-title }
-
-Three organisations, one shared goal. Accelerating CHERI adoption.
-{: .page-hero-summary }
 
 The CHERI ecosystem includes several organisations with complementary missions. The CHERI Research Centre, The Capable Hub, and the CHERI Alliance each play different roles, but work closely together to help turn CHERI research into practical products, open-source software, standards, and real-world deployment.
 
@@ -88,77 +78,3 @@ Together, the three organisations:
 - Help move secure computing technologies from research into real-world deployment.
 
 Interested in helping shape the future of memory-safe computing? [Join the CHERI Alliance](/alliance/membership/contact/)!
-
-## Where next
-{: .where-next-title }
-
-### [Governance](/alliance/about-and-governance/governance/)
-{: .where-next-card-title }
-
-
-
-
-
-[An overview of how the CHERI Alliance is governed and how responsibilities are organised.](/alliance/about-and-governance/governance/)
-{: .where-next-summary }
-
-
-
-[Continue](/alliance/about-and-governance/governance/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [About the CHERI Alliance](/organisations/cheri-alliance/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Learn how the Alliance connects organisations working across the CHERI ecosystem.](/organisations/cheri-alliance/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/organisations/cheri-alliance/)
-{: .source-card-label }
-
-
-
-
-
-### [The CHERI Research Centre](/organisations/university-of-cambridge/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Discover the CHERI Research Centre at University of Cambridge.](/organisations/university-of-cambridge/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/organisations/university-of-cambridge/)
-{: .source-card-label }
-
-
-
-
-
-### [The Capable Hub](/organisations/the-capable-hub/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Discover the Capable Hub.](/organisations/the-capable-hub/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/organisations/the-capable-hub/)
-{: .source-card-label }

@@ -1,142 +1,36 @@
-{%- assign source_body = content -%}
-{%- assign anchor_aliases = site.data['anchor-aliases'][page.url] -%}
-{%- for alias in anchor_aliases -%}
-  {%- capture anchor_target -%}<h2 id="{{ alias[1] }}"{%- endcapture -%}
-  {%- capture anchor_replacement -%}<span id="{{ alias[0] | escape }}"></span>{{ anchor_target }}{%- endcapture -%}
-  {%- assign source_body = source_body | replace_first: anchor_target, anchor_replacement -%}
-{%- endfor -%}
-{%- assign source_breadcrumbs = '' -%}
-{%- if source_body contains 'source-breadcrumbs' -%}
-  {%- assign breadcrumb_segment = source_body | split: '</ol>' | first | append: '</ol>' -%}
-  {%- if breadcrumb_segment contains 'source-breadcrumbs' -%}
-    {%- assign source_breadcrumbs = breadcrumb_segment -%}
-    {%- assign source_body = source_body | remove_first: breadcrumb_segment -%}
-  {%- endif -%}
-{%- endif -%}
-{%- assign source_heading = '' -%}
-{%- assign source_preamble = '' -%}
-{%- assign heading_id = 'page-title' -%}
-{%- assign heading_alias = '' -%}
-{%- if source_body contains '<h1' -%}
-  {%- assign source_preamble = source_body | split: '<h1' | first -%}
-  {%- assign source_body = source_body | remove_first: source_preamble -%}
-  {%- assign heading_segment = source_body | split: '<h1' | slice: 1, 1 | first | split: '</h1>' | first -%}
-  {%- assign source_heading = heading_segment | prepend: '<h1' | append: '</h1>' -%}
-  {%- assign source_body = source_body | remove_first: source_heading -%}
-  {%- unless source_heading contains 'page-hero-title' -%}
-    {%- if page.hero -%}{%- assign heading_alias = 'hero-title' -%}{%- endif -%}
-  {%- endunless -%}
-  {%- assign heading_attributes = source_heading | split: '>' | first -%}
-  {%- if heading_attributes contains 'id="' -%}
-    {%- assign heading_id = heading_attributes | split: 'id="' | last | split: '"' | first -%}
-  {%- else -%}
-    {%- assign source_heading = source_heading | replace_first: '<h1', '<h1 id="page-title"' -%}
-  {%- endif -%}
-  {%- comment -%}Printed archives keep every chapter, anchor and word beneath the page's single H1.{%- endcomment -%}
-  {%- assign source_body = source_body | replace: '<h1', '<h2' | replace: '</h1>', '</h2>' -%}
-{%- endif -%}
-{%- assign heading_intro = '' -%}
-{%- if source_body contains '<p class="page-hero-summary"' -%}
-  {%- assign summary_segment = source_body | split: '<p class="page-hero-summary"' | last | split: '</p>' | first -%}
-  {%- assign heading_intro = summary_segment | prepend: '<p class="page-hero-summary"' | append: '</p>' -%}
-  {%- assign source_body = source_body | remove_first: heading_intro -%}
-  {%- assign heading_intro = heading_intro | replace_first: 'class="page-hero-summary"', 'class="page-hero-summary lede"' -%}
-{%- elsif page.summary -%}
-  {%- capture heading_intro -%}<p class="page-hero-summary lede">{{ page.summary | escape }}</p>{%- endcapture -%}
-{%- else -%}
-  {%- assign opening_body = source_body | strip -%}
-  {%- assign opening_tag = opening_body | slice: 0, 3 -%}
-  {%- if opening_tag == '<p>' -%}
-    {%- assign opening_paragraph = opening_body | split: '</p>' | first | append: '</p>' -%}
-    {%- unless opening_paragraph contains '<img' -%}
-      {%- assign source_body = source_body | remove_first: opening_paragraph -%}
-      {%- assign heading_intro = opening_paragraph | replace_first: '<p>', '<p class="lede">' -%}
-    {%- endunless -%}
-  {%- endif -%}
-{%- endif -%}
-{%- comment -%}Some retained introductions span more than one paragraph. Move
-  only contiguous opening paragraphs; leave images and all other blocks in place.{%- endcomment -%}
-{%- assign extra_intro_paragraphs = page.hero.intro-paragraphs | default: 1 | minus: 1 -%}
-{%- if page.hero and heading_intro != '' and extra_intro_paragraphs > 0 -%}
-  {%- for intro_index in (1..extra_intro_paragraphs) -%}
-    {%- assign opening_body = source_body | strip -%}
-    {%- assign opening_tag = opening_body | slice: 0, 3 -%}
-    {%- assign opening_paragraph = opening_body | split: '</p>' | first | append: '</p>' -%}
-    {%- if opening_tag != '<p>' or opening_paragraph contains '<img' -%}{%- break -%}{%- endif -%}
-    {%- assign source_body = source_body | remove_first: opening_paragraph -%}
-    {%- assign intro_paragraph = opening_paragraph | replace_first: '<p>', '<p class="lede">' -%}
-    {%- assign heading_intro = heading_intro | append: intro_paragraph -%}
-  {%- endfor -%}
-{%- endif -%}
-{%- comment -%}
-  Retained source navigation fragments have explicit YAML counterparts. Replace only
-  those measured sections; the article's Markdown and all other blocks stay intact.
-{%- endcomment -%}
-{%- assign source_where_next = false -%}
-{%- assign source_related_pages = false -%}
-{%- assign source_related_title = nil -%}
-{%- assign source_sections = source_body | split: '<h2' -%}
-{%- capture source_body -%}
-  {%- for source_section in source_sections -%}
-    {%- assign section_heading = source_section | split: '</h2>' | first -%}
-    {%- if forloop.first -%}{{ source_section }}
-    {%- elsif section_heading contains 'where-next-title' and page.where-next.url -%}
-      {%- assign source_where_next = true -%}
-    {%- elsif section_heading contains 'related-pages-title' and page.related-pages.size > 0 -%}
-      {%- assign source_related_pages = true -%}
-      {%- assign source_related_title = section_heading | prepend: '<h2' | append: '</h2>' | strip_html -%}
-    {%- else -%}<h2{{ source_section }}{%- endif -%}
-  {%- endfor -%}
-{%- endcapture -%}
-{%- assign meta_description = page.description | default: heading_intro | default: page.summary | default: site.description | strip_html | normalize_whitespace -%}
 <!doctype html>
-<html lang="{{ site.lang | default: 'en' | escape }}">
+<html lang="{{ site.lang | default: 'en-GB' | escape }}">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
-  <meta name="description" content="{{ meta_description | escape_once }}">
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | escape }} | {{ site.title | escape }}</title>
+  <meta name="description" content="{{ page.description | default: page.summary | default: site.description | markdownify | strip_html | normalize_whitespace | escape }}">
+  <link rel="canonical" href="{{ page.canonical_url | default: page.url | absolute_url }}">
   {% if page.alternate or page.url == '/404.html' %}<meta name="robots" content="noindex,follow">{% endif %}
-  <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 </head>
-<body data-theme="{% if page.theme == 'dark' %}dark{% else %}light{% endif %}">
-  {% assign all_pages = site.html_pages | concat: site.documents %}
+<body data-theme="{{ page.theme | default: 'light' }}" class="{% if page.directory %}directory-page{% elsif page.collection == 'news' %}article-page{% elsif page.collection %}detail-page{% elsif page.hero %}landing-page{% else %}reading-page{% endif %}">
+  {% assign all_pages = site.pages %}
   <a class="skip-link" href="#main-content">Skip to content</a>
   {% include header.html %}
   <main id="main-content" tabindex="-1">
-    {% capture rendered_source %}
-    <div class="theme-content" data-source-body>
-      {% if source_breadcrumbs != '' %}
-      <nav class="breadcrumbs" aria-label="Breadcrumb">{{ source_breadcrumbs }}</nav>
-      {% else %}{% include breadcrumbs.html %}{% endif %}
-      {{ source_preamble }}
-      {% include hero.html heading=source_heading heading_id=heading_id %}
-      {% if page.hero %}{% include slider.html %}{% endif %}
-      <article class="content" aria-label="{{ page.title | escape }}">
-        {% include page-heading.html heading=source_heading %}
-        {% capture themed_body %}{% if source_body contains 'collection-card__' %}
-          {% include source-card-groups.html content=source_body %}
-        {% else %}{{ source_body }}{% endif %}{% endcapture %}
-        {% if page.sections and page.layout != 'index' %}
-          {% include section-cards.html content=themed_body groups=page.sections %}
-        {% else %}{{ themed_body }}{% endif %}
-      </article>
-    </div>
-    {% endcapture %}
-    {% include content-urls.html content=rendered_source %}
-    {% unless page.hero %}{% include slider.html %}{% endunless %}
+    {% include breadcrumbs.html %}
+    {% for anchor in site.data.legacy_anchors[page.url] %}<span id="{{ anchor | escape }}" class="anchor-alias"></span>{% endfor %}
+    {% capture rendered_content %}{{ content }}{% endcapture %}
+    {% include content-urls.html content=rendered_content %}
+    {% include card-sections.html %}
+    {% include resource-entries.html %}
+    {% include talks.html %}
+    {% include back-links.html %}
     {% include site-features.html %}
     {% include where-next.html %}
     {% include related-pages.html %}
   </main>
-  {% include subscribe.html %}
-  {% include footer.html %}
+  {% include subscribe.html %}{% include footer.html %}
   {% if page['image-overlay'] %}{% include image-overlay.html %}{% endif %}
   <script src="{{ '/assets/js/navigation.js' | relative_url }}" defer></script>
   <script src="{{ '/assets/js/content.js' | relative_url }}" defer></script>
+  <script src="{{ '/assets/js/catalog.js' | relative_url }}" defer></script>
   {% if page.slider.slides %}<script src="{{ '/assets/js/slider.js' | relative_url }}" defer></script>{% endif %}
   {% if page['image-overlay'] %}<script src="{{ '/assets/js/image-overlay.js' | relative_url }}" defer></script>{% endif %}
-</body>
-</html>
+</body></html>

@@ -1,32 +1,22 @@
 ---
 title: Beyond Software Patching
 date: '2026-09-11T12:47:46+00:00'
-authors: [jim-wallace]
+authors:
+- jim-wallace
+thumbnail:
+  src: /assets/news/beyond-software-patching/bb1ce7a6a7-cheri-logo.png
+  alt: CHERI logo
+  width: 432
+  height: 145
+tags:
+- CHERI Alliance news
+- Ecosystem
+author_credit: Jim Wallace – **CHERI Alliance / Cre8Vantage**
+summary: Critical National Infrastructure (CNI) products may remain in service for 10, 15 or even 20 years. During
+  that time, software changes, attack techniques evolve and regulation is now becoming more demanding.
 ---
 
-1. News &amp; Events
-2. News &amp; Analysis
-3. Beyond Software Patching
-{: .source-breadcrumbs }
-
-# Beyond Software Patching
-{: id="page-hero-title" .page-hero-title }
-
-*11 September 2026*{: .source-date }
-*CHERI Alliance news*{: .collection-tag }
-*Ecosystem*{: .collection-tag }
-{: .collection-detail__metadata }
-
-Jim Wallace – **CHERI Alliance / Cre8Vantage**
-
-
-![CHERI logo](/assets/news/beyond-software-patching/bb1ce7a6a7-cheri-logo.png){: .image-right }
-{: .collection-detail__lead-image }
-
 ## How CHERI Can Limit the Blast Radius in Long-Life CNI Systems
-
-
-Critical National Infrastructure (CNI) products may remain in service for 10, 15 or even 20 years. During that time, software changes, attack techniques evolve and regulation is now becoming more demanding.
 
 No product team or company can guarantee that every defect will be found before deployment. The more practical question is:
 
@@ -39,9 +29,7 @@ This is one of the central problems CHERI can help address.
 Long-life utility platforms must keep evolving without allowing each new software component to enlarge the blast radius of a failure.
 {: .image-caption }
 
-
 ## The cost often extends far beyond "just the patch"
-
 
 A memory-safety flaw in a communications or control component can quickly become an operational and lifecycle problem. Recent disclosures illustrate the consequences:
 
@@ -65,7 +53,6 @@ That question is becoming more urgent as the regulatory and commercial consequen
 
 ## Why now: CRA raises the cost of vulnerabilities
 
-
 The [EU Cyber Resilience Act (CRA)](/news/the-eu-cyber-resilience-act-what-it-means-for-secure-by-design-systems-and-cheri/) is already in force. Reporting obligations for actively exploited vulnerabilities and severe security incidents apply from 11 September 2026, with the main product requirements applying from 11 December 2027.
 
 The CRA makes manufacturers responsible for cybersecurity throughout a product’s lifecycle, from design and development through to vulnerability handling and secure updates. For connected utility and infrastructure equipment that can remain deployed for many years, this creates an ongoing engineering and support obligation.
@@ -77,7 +64,6 @@ Mandatory vulnerability and incident reporting also increases the potential busi
 The challenge is therefore not only to demonstrate compliance, but to reduce the number and impact of vulnerabilities that have to be managed once products are deployed.
 
 ## What CHERI adds to existing protection
-
 
 CHERI can strengthen the technical foundation for CRA compliance by adding fine-grained, hardware-enforced control over what memory and services software is authorised to access. This complements wider CRA requirements around risk management, reporting, documentation and secure updates, while helping reduce the engineering and vulnerability-management burden associated with meeting those obligations.
 
@@ -101,7 +87,6 @@ For long-life CNI products, this combination of exploit prevention and hardware-
 
 ## A practical example: securing intelligence at the grid edge
 
-
 Smart-metering systems traditionally separate metrology and tariff functions from wide-area communications, with both typically running on low-power microcontrollers.
 
 That model is now being extended. As homes and neighbourhoods become more active participants in balancing supply and demand, they must increasingly coordinate solar PV, batteries, EV charging and heat pumps. This is also bringing more analytics, automation and AI towards the grid edge.
@@ -119,7 +104,6 @@ Over time, third-party energy providers, aggregators or equipment suppliers may 
 Figure 1: Greater intelligence at the grid edge across smart metering and energy management platforms
 {: .image-caption }
 
-
 CHERI can strengthen this architecture by enforcing separation between software components. Communications software could exchange approved messages without being able to read cryptographic keys or invoke energy-control functions, while an analytics or optimisation application could use selected operational data without gaining access to billing information, device identity or the wider metering platform.
 
 ![Figure 2: CHERI can permit approved interfaces while blocking access between compartments by default](/assets/news/beyond-software-patching/d1b9354a30-Picture2.png){: .image-full width="1435" height="479" } 
@@ -127,13 +111,11 @@ CHERI can strengthen this architecture by enforcing separation between software 
 Figure 2: CHERI can permit approved interfaces while blocking access between compartments by default
 {: .image-caption }
 
-
 If one compartment is compromised, attacker-controlled code can remain limited to the access that compartment was explicitly given, provided the boundaries and approved interfaces are correctly designed.
 
 The affected software may still fail, but CHERI can help prevent that failure becoming a foothold from which an attacker can gain access or control across the wider platform.
 
 ## Start with the boundary that matters most
-
 
 A useful CHERI evaluation should begin with a product risk analysis, not a plan to migrate the entire software stack.
 
@@ -154,7 +136,6 @@ As these workloads evolve and incorporate third-party or AI-assisted software, s
 
 ## From benchmarks to product evidence
 
-
 Over the past few years, CHERI has moved from research and experimental platforms towards commercially available processor IP, evaluation systems, silicon and increasingly mature software support.
 
 These include processor IP, Linux-capable FPGA platforms, CHERI-enabled silicon and open-source reference designs from organisations including [Codasip](/organisations/codasip/), [SCI Semiconductor](/organisations/sci-semiconductor/) and [lowRISC](/organisations/lowrisc/), with further commercial silicon programmes under development.
@@ -163,14 +144,12 @@ Product teams can now run representative software on CHERI platforms and generat
 
 ## A practical five-stage evaluation
 
-
 A focused pilot can place one CHERI-enabled workload alongside an existing software stack. CHERI support is already available or under active development across major operating environments including Linux, FreeRTOS and Zephyr, reducing the need for product teams to start from scratch.
 
 ![Figure 3: A focused evaluation produces evidence before a wider platform commitment](/assets/news/beyond-software-patching/cef8c62f96-Picture3.png){: .image-full width="1402" height="469" } 
 
 Figure 3: A focused evaluation produces evidence before a wider platform commitment
 {: .image-caption }
-
 
 **Identify**: Select one product, workload or security boundary with meaningful exposure and consequence.
 
@@ -185,7 +164,6 @@ Figure 3: A focused evaluation produces evidence before a wider platform commitm
 This approach keeps the first step manageable and produces results using the company’s own code.
 
 ## What a successful evaluation should prove
-
 
 A CHERI evaluation should answer a practical product question: does the additional security justify the engineering, performance and integration cost?
 
@@ -208,7 +186,6 @@ For long-life CNI products, making that assessment before the next platform deci
 
 ## Sources and further reading
 
-
 - [European Commission: Cyber Resilience Act summary](https://digital-strategy.ec.europa.eu/en/policies/cra-summary)
 - [University of Cambridge: CHERI Frequently Asked Questions](https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/cheri-faq.html)
 - [Rust Programming Language](https://rust-lang.org/)
@@ -227,6 +204,5 @@ For long-life CNI products, making that assessment before the next platform deci
 - [EnSilica and Codasip: Strategic Partnership to Bring CHERI Cybersecurity to Critical Applications](https://www.ensilica.com/news-and-insight/ensilica-and-codasip-announce-strategic-partnership)
 
 ## About the author
-
 
 Jim Wallace has more than 40 years of experience in the semiconductor and technology industries, including senior roles at Arm, Imagination Technologies, CSR, GEC Plessey and Philips. His career spans engineering, product strategy, segment marketing and business development across semiconductor IP, automotive, industrial and connected systems. He now focuses on CHERI, secure-by-design technologies and long-life critical infrastructure platforms.

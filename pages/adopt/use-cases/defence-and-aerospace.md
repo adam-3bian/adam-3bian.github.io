@@ -5,7 +5,8 @@ where-next:
   url: /adopt/use-cases/safety-critical-systems/
 related-pages:
 - url: /adopt/use-cases/automotive/
-  description: Connected vehicles combine exposed software, long lifecycles, and components with very different levels of trust.
+  description: Connected vehicles combine exposed software, long lifecycles, and components with very different
+    levels of trust.
   action: Read this page
 - url: /adopt/use-cases/cloud-and-data-centre/
   description: Cloud infrastructure benefits from finer protection inside processes, containers, and virtual machines.
@@ -14,18 +15,9 @@ related-pages:
   title: The Business Case
   description: CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.
   action: Read this page
+summary: CHERI can reinforce least authority in mission systems that combine established software, mixed suppliers,
+  long lifecycles, and demanding assurance.
 ---
-
-1. Adopt
-2. Use Cases
-3. Defence &amp; Aerospace
-{: .source-breadcrumbs }
-
-# Defence &amp; Aerospace
-{: id="page-hero-title" .page-hero-title }
-
-CHERI can reinforce least authority in mission systems that combine established software, mixed suppliers, long lifecycles, and demanding assurance.
-{: .page-hero-summary }
 
 Defence and aerospace systems often bring together software from different decades, suppliers, and assurance levels. They may operate with intermittent connectivity, strict timing and power limits, long hardware lifecycles, and active attempts to compromise them.
 
@@ -70,77 +62,3 @@ CHERI does not replace system safety, cryptography, cross-domain controls, secur
 The case is strongest where software is both exposed and close to mission assets, especially when that software cannot be rewritten or separated into a conventional process without unacceptable cost. Timing, power, recovery behaviour, update support, and platform availability remain important constraints.
 
 Within those constraints, CHERI offers a concrete architectural advantage: valuable native software can remain part of the mission system while the processor enforces a much narrower account of what each component is allowed to reach.
-
-## Where next
-{: .where-next-title }
-
-### [Safety-Critical Systems](/adopt/use-cases/safety-critical-systems/)
-{: .where-next-card-title }
-
-
-
-
-
-[Safety-critical systems show how bounded memory and explicit authority can contribute evidence within a wider safety and security case.](/adopt/use-cases/safety-critical-systems/)
-{: .where-next-summary }
-
-
-
-[Continue](/adopt/use-cases/safety-critical-systems/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Automotive](/adopt/use-cases/automotive/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Connected vehicles combine exposed software, long lifecycles, and components with very different levels of trust.](/adopt/use-cases/automotive/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/adopt/use-cases/automotive/)
-{: .source-card-label }
-
-
-
-
-
-### [Cloud &amp; Data Centre](/adopt/use-cases/cloud-and-data-centre/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Cloud infrastructure benefits from finer protection inside processes, containers, and virtual machines.](/adopt/use-cases/cloud-and-data-centre/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/adopt/use-cases/cloud-and-data-centre/)
-{: .source-card-label }
-
-
-
-
-
-### [The Business Case](/adopt/business-case/the-business-case/)
-{: .related-pages-item-title }
-
-
-
-
-
-[CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.](/adopt/business-case/the-business-case/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/adopt/business-case/the-business-case/)
-{: .source-card-label }

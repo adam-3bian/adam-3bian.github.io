@@ -15,18 +15,9 @@ related-pages:
   title: The Business Case
   description: CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.
   action: Read this page
+summary: 'CHERI gives policy discussions an additional route to memory safety: hardware-enforced protection for
+  low-level and existing software, with finer-grained containment.'
 ---
-
-1. Adopt
-2. Policy
-3. Policy Briefings
-{: .source-breadcrumbs }
-
-# Policy Briefings
-{: id="page-hero-title" .page-hero-title }
-
-CHERI gives policy discussions an additional route to memory safety: hardware-enforced protection for low-level and existing software, with finer-grained containment.
-{: .page-hero-summary }
 
 Memory safety policy often centres on language change, vulnerability reduction, or secure development practice. CHERI broadens that discussion by protecting memory at the processor and supporting compartments with limited authority.
 
@@ -77,77 +68,3 @@ The strongest policy case appears where four conditions meet:
 In those circumstances, CHERI offers a practical bridge between today’s software and stronger secure-by-design expectations. It can preserve valuable low-level code while changing what that code is permitted to access and how far a compromise can travel.
 
 The Alliance provides technical explanation and connects policy organisations with the wider CHERI ecosystem. Legal interpretation remains with the relevant authorities and qualified advisers.
-
-## Where next
-{: .where-next-title }
-
-### [About the CHERI Alliance](/organisations/cheri-alliance/)
-{: .where-next-card-title }
-
-
-
-
-
-[The CHERI Alliance connects organisations working across architecture, processors, software, assurance, policy, and adoption.](/organisations/cheri-alliance/)
-{: .where-next-summary }
-
-
-
-[Continue](/organisations/cheri-alliance/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Government Guidance](/adopt/policy/government-guidance/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Public guidance places CHERI alongside memory-safe languages and other routes to more resilient software.](/adopt/policy/government-guidance/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/adopt/policy/government-guidance/)
-{: .source-card-label }
-
-
-
-
-
-### [Critical Infrastructure &amp; Resilience](/adopt/policy/critical-infrastructure-and-resilience/)
-{: .related-pages-item-title }
-
-
-
-
-
-[CHERI can contribute prevention and containment within the wider resilience of an essential service.](/adopt/policy/critical-infrastructure-and-resilience/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/adopt/policy/critical-infrastructure-and-resilience/)
-{: .source-card-label }
-
-
-
-
-
-### [The Business Case](/adopt/business-case/the-business-case/)
-{: .related-pages-item-title }
-
-
-
-
-
-[CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.](/adopt/business-case/the-business-case/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/adopt/business-case/the-business-case/)
-{: .source-card-label }

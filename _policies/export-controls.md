@@ -14,18 +14,9 @@ related-pages:
   title: About the CHERI Alliance
   description: Learn how the Alliance connects organisations working across the CHERI ecosystem.
   action: Read this page
+summary: Public CHERI material supports an open global ecosystem, but organisations must assess export controls
+  before sharing non-public technology or commercial products.
 ---
-
-1. Alliance
-2. Legal &amp; Policies
-3. Export Controls
-{: .source-breadcrumbs }
-
-# Export Controls
-{: id="page-hero-title" .page-hero-title }
-
-Public CHERI material supports an open global ecosystem, but organisations must assess export controls before sharing non-public technology or commercial products.
-{: .page-hero-summary }
 
 ## A Note to the CHERI Community
 {: id="a-note-to-the-cheri-community" }
@@ -156,77 +147,3 @@ Accordingly, every organisation is responsible for obtaining its own export-cont
 {: id="disclaimer" }
 
 This page provides general information and is not legal, regulatory or export-control advice. The CHERI Alliance makes no representation about the application of export-control regulations to any particular organisation, technology, activity or product. Members and third parties should obtain independent professional advice and comply with all applicable laws and regulations.
-
-## Where next
-{: .where-next-title }
-
-### [Privacy](/policies/privacy/)
-{: .where-next-card-title }
-
-
-
-
-
-[Information on how the Alliance handles personal information and privacy obligations.](/policies/privacy/)
-{: .where-next-summary }
-
-
-
-[Continue](/policies/privacy/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Code of Conduct](/policies/code-of-conduct/)
-{: .related-pages-item-title }
-
-
-
-
-
-[The behaviour and participation expectations that apply to Alliance spaces and activities.](/policies/code-of-conduct/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/policies/code-of-conduct/)
-{: .source-card-label }
-
-
-
-
-
-### [Trademark &amp; Brand Use](/policies/trademark-policy/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Guidance on use of CHERI Alliance names, marks, logos, and brand material.](/policies/trademark-policy/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/policies/trademark-policy/)
-{: .source-card-label }
-
-
-
-
-
-### [About the CHERI Alliance](/organisations/cheri-alliance/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Learn how the Alliance connects organisations working across the CHERI ecosystem.](/organisations/cheri-alliance/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/organisations/cheri-alliance/)
-{: .source-card-label }

@@ -1,0 +1,12 @@
+{% assign page_kind = site.data.catalog[page.collection] %}
+<header class="page-heading{% if page.hero %} is-landing{% endif %}{% if include.detail %} record-header{% endif %}">
+  <div class="heading-copy">
+    {% if page_kind %}<p class="eyebrow"><a href="{{ page.parent | relative_url }}">{{ page_kind.label | escape }}</a>{% if page.alternate %}<span> / Archived version</span>{% endif %}</p>{% elsif page.directory %}<p class="eyebrow">Explore the CHERI ecosystem</p>{% endif %}
+    <span id="page-hero-title" class="anchor-alias"></span><span id="hero-title" class="anchor-alias"></span>
+    <h1 id="page-title">{{ page.display_title | default: page.title | escape }}</h1>
+    {% if include.article %}<div class="article-byline">{% unless page.undated %}{% if page.date %}{% include date.html value=page.date %}{% endif %}{% endunless %}{% if page.authors.size > 0 %}<span class="byline-divider" aria-hidden="true">·</span><span>{% include field-value.html value=page.authors type='people' %}</span>{% endif %}</div>{% endif %}
+    {% if page.summary %}<div class="page-summary">{{ page.summary | markdownify }}</div>{% endif %}
+    {% if include.article and page.author_credit %}{% assign credit_parts = page.author_credit | replace: '—', '–' | split: ' – ' %}{% assign credit_name = credit_parts | first | remove: '**' | strip %}{% assign author_ref = page.authors | first %}{% assign first_author = site.people | where: 'slug', author_ref | first %}<p class="author-credit">{% if credit_parts.size > 1 and credit_name == first_author.title %}{{ credit_parts | last | markdownify | remove: '<p>' | remove: '</p>' }}{% else %}{{ page.author_credit | markdownify | remove: '<p>' | remove: '</p>' }}{% endif %}</p>{% endif %}
+  </div>
+  {% if include.detail and page.thumbnail.src and page.thumbnail_in_body != true %}<figure class="record-portrait image-kind-{{ page.collection }}">{% include image.html image=page.thumbnail eager=true %}</figure>{% endif %}
+</header>

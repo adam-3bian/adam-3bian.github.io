@@ -5,7 +5,8 @@ where-next:
   url: /adopt/use-cases/defence-and-aerospace/
 related-pages:
 - url: /adopt/use-cases/automotive/
-  description: Connected vehicles combine exposed software, long lifecycles, and components with very different levels of trust.
+  description: Connected vehicles combine exposed software, long lifecycles, and components with very different
+    levels of trust.
   action: Read this page
 - url: /adopt/use-cases/critical-infrastructure/
   description: Essential services depend on containing faults as well as keeping systems available and recoverable.
@@ -14,18 +15,9 @@ related-pages:
   title: The Business Case
   description: CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.
   action: Read this page
+summary: CHERI can add protection inside hosts and services, limiting native components that sit within the same
+  process, container, or virtual machine.
 ---
-
-1. Adopt
-2. Use Cases
-3. Cloud &amp; Data Centre
-{: .source-breadcrumbs }
-
-# Cloud &amp; Data Centre
-{: id="page-hero-title" .page-hero-title }
-
-CHERI can add protection inside hosts and services, limiting native components that sit within the same process, container, or virtual machine.
-{: .page-hero-summary }
 
 Cloud and data-centre platforms process large volumes of untrusted data while holding customer information, credentials, storage, and control over shared infrastructure. Containers and virtual machines separate workloads, but complex native code still runs inside each boundary.
 
@@ -69,77 +61,3 @@ At fleet scale, narrower compromise may mean fewer reachable secrets, smaller in
 Cloud workloads are sensitive to throughput, tail latency, cache behaviour, memory footprint, and the cost of crossing isolation boundaries. Operating-system, virtualisation, debugging, orchestration, and live-update support also influence whether a CHERI platform fits a particular service.
 
 The strongest case tends to occur where exposed native code has valuable host authority, yet moving it into a separate process or rewriting it is impractical. In that gap, CHERI offers a way to keep the component close enough for its operational role while giving it far less of the host to compromise.
-
-## Where next
-{: .where-next-title }
-
-### [Defence &amp; Aerospace](/adopt/use-cases/defence-and-aerospace/)
-{: .where-next-card-title }
-
-
-
-
-
-[Mission systems add long lifecycles, mixed suppliers, demanding assurance, and operation under active threat.](/adopt/use-cases/defence-and-aerospace/)
-{: .where-next-summary }
-
-
-
-[Continue](/adopt/use-cases/defence-and-aerospace/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Automotive](/adopt/use-cases/automotive/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Connected vehicles combine exposed software, long lifecycles, and components with very different levels of trust.](/adopt/use-cases/automotive/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/adopt/use-cases/automotive/)
-{: .source-card-label }
-
-
-
-
-
-### [Critical Infrastructure](/adopt/use-cases/critical-infrastructure/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Essential services depend on containing faults as well as keeping systems available and recoverable.](/adopt/use-cases/critical-infrastructure/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/adopt/use-cases/critical-infrastructure/)
-{: .source-card-label }
-
-
-
-
-
-### [The Business Case](/adopt/business-case/the-business-case/)
-{: .related-pages-item-title }
-
-
-
-
-
-[CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.](/adopt/business-case/the-business-case/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/adopt/business-case/the-business-case/)
-{: .source-card-label }

@@ -7,3 +7,6 @@ dist-baseurl/
 vendor/
 /reports/
 *.zip
+
+__pycache__/
+*.py[cod]

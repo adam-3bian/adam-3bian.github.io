@@ -3,9 +3,6 @@ title: CHERI Roadmap for Linux
 permalink: /reference/linux-roadmap/print.html
 ---
 
-# [CHERI Roadmap for Linux](/reference/linux-roadmap/print.html#cheri-roadmap-for-linux)
-{: id="cheri-roadmap-for-linux" }
-
 - Allison Randal (Capabilities Limited)
 - Hesham Almatary (Capabilities Limited)
 - Kevin Brodsky (Arm Limited)
@@ -27,8 +24,7 @@ There is a [rendered version on the web](/linux-roadmap/), which is automaticall
 committed to.*
 
 
-
-# [Introduction](/reference/linux-roadmap/print.html#introduction)
+## [Introduction](/reference/linux-roadmap/print.html#introduction)
 {: id="introduction" }
 
 CHERI is a hardware approach to memory safety that proposes an extension to established ISAs, such as Arm, RISC-V, and x86, that replaces simple (integer) pointers with a tagged capability data type, and adds capability-aware instructions to load, store, and manipulate the capability type.
@@ -41,8 +37,7 @@ With a clear set of abstractions now defined, and existing prototypes evaluated 
 We envision that future work would target CHERI support on Arm’s Morello prototype, CHERI-RISC-V-based platforms, and any future CHERI-enabled platforms (e.g., on x86 or possible future Arm implementations of CHERI), with the intention of reproducing the CheriBSD approach of implementing portable abstractions despite underlying architectural differences. We also believe that, generally, programming abstractions (and guarantees) for CHERI should be portable across operating systems, allowing application adaptation burden to be shared, and for CHERI Linux to benefit from existing work in this space. Inevitably there will be some differences around OS-specific APIs and features, but to the extent possible, this should be minimized.
 
 
-
-# [Goals](/reference/linux-roadmap/print.html#goals)
+## [Goals](/reference/linux-roadmap/print.html#goals)
 {: id="goals" }
 
 The goal of this work is to develop a CHERI Linux adaptation that is at feature parity with CheriBSD, and of sufficiently high quality to both enable production use and support upstreaming to the Linux community. On the whole, this roadmap is drawn from the CheriBSD feature list, including mature entries (e.g., spatial memory safety for kernel and user space, and user space heap temporal safety), and also immature prototypes or prospective ones (such as co-process compartmentalization or kernel compartmentalization). The scope of this work will include both MMU-enabled and MMU-less instantiations of Linux. Both of these targets have already seen substantial interest (and work) in the CHERI community, and have use cases at their respective scales that will clearly benefit from CHERI protection. In the case of MMU-less Linux, CHERI can be used to provide the fine-grained security that MPUs cannot provide and which have often proved a barrier to its adoption.
@@ -60,7 +55,6 @@ One goal early in this work will be to develop a strategy for repositories and i
 The current major targets of this roadmap are in the areas of toolchain, emulation and crossbuild platforms, kernel support, and user space.
 
 
-
 ## [Toolchain](/reference/linux-roadmap/print.html#toolchain)
 {: id="toolchain" }
 
@@ -73,7 +67,6 @@ The current major targets of this roadmap are in the areas of toolchain, emulati
 | Purecap LLVM | Engineering | At present, LLVM can cross-compile code using CHERI capabilities for all pointers ("purecap"), but it is not itself running using capabilities and instead relies on platforms' support for legacy ("hybrid/integer mode") binaries.The lack of a purecap LLVM JIT likely blocks porting of an appreciable amount of software and the lack of a libclang prevents its inclusion in development tools. (A purecap GCC is eventually also useful, but it is less used as a library). |
 
 
-
 ## [Emulation and crossbuild platforms](/reference/linux-roadmap/print.html#emulation-and-crossbuild-platforms)
 {: id="emulation-and-crossbuild-platforms" }
 
@@ -83,7 +76,6 @@ The current major targets of this roadmap are in the areas of toolchain, emulati
 | QEMU user mode | Engineering | This feature of QEMU is often used for the purposes of large-scale software cross building, so that host toolchain (e.g., make, compiler, linker) can run natively, while portions of a cross-built piece of software that depend on running on the target can be run in that way. User mode support integrates a rich understanding of not just the target architecture, but also OS system-call ABI, and so specific engineering work will be needed to enable pure-capability CHERI Linux processes under QEMU user mode. This work has been done for CheriBSD for Morello, but not yet CHERI-RISC-V, and will provide a reasonable template. General Linux user mode support is solid in upstream QEMU where FreeBSD support is largely a local addition. |
 | bhyve hypervisor | Engineering | CheriBSD includes the bhyve hypervisor with support for virtualization on Arm’s Morello. It is capable of booting Morello Linux and provides a more performant development environment than QEMU. Debugging support currently lags behind QEMU and improvement would better support work on CHERI Linux. |
 | CheriBSD Linux ABI | Engineering | During development of the current Arm Morello pure-capability usermode ABI, the CheriBSD team created a prototype adaptation of FreeBSD’s existing arm64 Linux process emulation updated for the new CHERI-enabled ABI. Continuing this work offers two important benefits: (1) Providing an independent second implementation of the ABI offering concrete feedback on the design and its implications with differing kernel designs, with practical validation, and (2) Providing early access to CHERI OS features unavailable via the Linux kernel during development – for example, being able to develop glibc support for heap temporal safety, and test Linux-compiled applications with it, before Linux kernel support is complete. |
-
 
 
 ## [Kernel support](/reference/linux-roadmap/print.html#kernel-support)
@@ -103,7 +95,6 @@ The current major targets of this roadmap are in the areas of toolchain, emulati
 | KVM | Engineering | The ability to boot capability-enabled guests using hardware-assisted virtualisation extensions. CheriBSD has working support for pure-capability guests in FreeBSD’s bhyve on Morello. Arm has in-progress work to bring up KVM support on Morello Linux, it is in early stages of development and currently supports only aarch64 guests not CHERI-enabled guests. It has been verified even if not extensively with LTP test suite. |
 
 
-
 ## [Bootloaders and firmware](/reference/linux-roadmap/print.html#bootloaders-and-firmware)
 {: id="bootloaders-and-firmware" }
 
@@ -112,7 +103,6 @@ The current major targets of this roadmap are in the areas of toolchain, emulati
 | U-Boot | Engineering | U-Boot is a very common bootloader for Linux on embedded systems and is often seen as a critical component for Linux-based stacks on these devices. An early stage implementation of U-Boot with CHERI exists for RISC-V. |
 | SBI | Engineering | The Supervisor Binary Interface (SBI) specification is RISC-V specific and is used to abstract hardware implementation from an OS or bare-metal application. It is implemented as part of bbl used by CheriBSD and in OpenSBI which is commonly used with the Linux kernel. Both implementations now support the latest CHERI-RISC-V draft specification but will need to track any further changes. |
 | UEFI | Engineering | The [Unified Extensible Firmware Interface (UEFI)](https://uefi.org/specifications) is a specification that defines a software interface between an operating system and platform firmware and which is predominantly used for booting desktop and server systems. It has been adopted by Arm, RISC-V, Intel and AMD and so is an obvious target for CHERI support in these classes of systems. No work has been done to date to add CHERI support to UEFI loaders. |
-
 
 
 ## [User space support](/reference/linux-roadmap/print.html#user-space-support)
@@ -125,7 +115,6 @@ The current major targets of this roadmap are in the areas of toolchain, emulati
 | Libraries + applications | Engineering | There is a significant overlap between Linux and FreeBSD in 10,000 open source packages that have already been ported to CheriBSD. Some of the fixes to these packages for CHERI are generally useful (good pointer hygiene) and have been contributed back upstream. The fixes that aren’t pushed upstream are maintained as forks, so the patchsets are available to be reused on the Linux packages of the same open source project. More porting work will be necessary for the subset of packages that are unique to Linux. The CheriBSD work has also been mostly focused on the desktop use case, so the server and embedded use cases will require expanding the set of packages ported to both CheriBSD and Linux. |
 
 
-
 ## [Linux distributions](/reference/linux-roadmap/print.html#linux-distributions)
 {: id="linux-distributions" }
 
@@ -134,7 +123,6 @@ The current major targets of this roadmap are in the areas of toolchain, emulati
 | Desktop distribution | Engineering | In the longer-term, integrating the CHERI port into a popular mainstream desktop Linux distribution will encourage the adoption of CHERI and make it easier to migrate existing Linux workloads to CHERI. This will, however, likely require available hardware. However, porting a full Linux distro may depend on fully porting GCC and other languages and tools used within the distro’s build process, so it’s better to begin by targeting a simple Linux image such as an embedded distribution, and expand into a full Linux distribution later, once we have a more complete set of ported packages to work with. When working on a package repository for the selected Linux distribution, additional changes will have to be made to the distribution’s user space configuration to allow a user to install and run pre-compiled hybrid/integer mode and pure-capability third-party programs. For example, CheriBSD maintains separate local base directory hierarchies for separate ABIs to avoid conflicts between files from packages of different ABIs. The distribution package manager may need modification to make it aware of the different ABI use for installation and dependency tracking. |
 | Server distribution | Research | Although similar in many ways to the desktop distribution, there are some technologies that may require special attention. In the kernel, [XDP](https://www.iovisor.org/technology/xdp) requires CHERI support in eBPF. eBPF is also supported now in some SmartNICs and ideally these should also contain CHERI processors to maintain security across the system. Remote Direct Memory Access ([RDMA)](https://wiki.debian.org/RDMA) is an increasingly popular technology that will need careful analysis regarding the impact on CHERI tagging. [DPDK](https://www.dpdk.org/) may also need to be supported. Hardening Linux containers with CHERI would be highly beneficial for servers, although a CHERI-enabled Go language will be required to build [Docker](https://www.docker.com/) or [Podman.](https://github.com/containers/podman) Servers will also require hypervisor and KVM support. This has an early implementation in Morello, but has not yet been considered for RISC-V. |
 | Embedded distribution | Engineering | [Yocto](https://www.yoctoproject.org/) is becoming the most common method of building Linux distributions and is supported by many major silicon vendors including NVidia and Xilinx/AMD. It supports building a huge number of Linux packages and CHERI support can be added through additional build layers that augment existing build instructions. Yocto layers that add CHERI toolchains and a basic user space [exist](https://git.morello-project.org/morello/meta-morello) for both Morello and CHERI-RISC-V. |
-
 
 
 ## [Testing](/reference/linux-roadmap/print.html#testing)
@@ -146,8 +134,7 @@ The current major targets of this roadmap are in the areas of toolchain, emulati
 | cheribsdtest | Engineering | Port over / adapt the CheriBSD test suite, which confirms properties such as suitable bounds setting during process setup, VM interactions with tagged memory, aspects of system-call argument handling, and various other properties we would like to hold true. This might become a cheritest (again) rather than being a cheribsdtest so as to maintain a common test suite over time? |
 
 
-
-# [Prior work on Linux adaptation](/reference/linux-roadmap/print.html#prior-work-on-linux-adaptation)
+## [Prior work on Linux adaptation](/reference/linux-roadmap/print.html#prior-work-on-linux-adaptation)
 {: id="prior-work-on-linux-adaptation" }
 
 Morello Linux contains a hybrid Linux kernel (not purecap) which supports running and building simple user space applications in purecap mode using a new CHERI-aware ABI called PCuABI. Two software stacks are supported; BusyBox and Debian. However, Debian still runs in vanilla AArch64 mode, but new simple programs can be built in purecap mode:
@@ -173,7 +160,6 @@ There is also work by Huawei on a CHERI-enabled Linux, which they have recently 
 - Kui Wang, Dmitry Kasatkin, Vincent Ahlrichs, Lukas Auer, Konrad Hohentanner, Julian Horsch, and Jan-Erik Ekberg, [*Cherifying Linux: A Practical View on using CHERI*](https://doi.org/10.1145/3642974.3652282), In EuroSec '24: Proceedings of the 17th European Workshop on Systems Security, April 2024, Pages 15–21
 
 
-
 ## [Technical reports](/reference/linux-roadmap/print.html#technical-reports)
 {: id="technical-reports" }
 
@@ -181,7 +167,6 @@ There is also work by Huawei on a CHERI-enabled Linux, which they have recently 
 - **CHERI C/C++ programming languages**: Robert N. M. Watson, Alexander Richardson, Brooks Davis, John Baldwin, David Chisnall, Jessica Clarke, Nathaniel Filardo, Simon W. Moore, Edward Napierala, Peter Sewell, and Peter G. Neumann. [*CHERI C/C++ Programming Guide*](https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-947.pdf), Technical Report UCAM-CL-TR-947, Computer Laboratory, June 2020.
 - **Morello prototype disclaimers**: Robert N. M. Watson, Graeme Barnes, Jessica Clarke, Richard Grisenthwaite, Peter Sewell, Simon W. Moore, and Jonathan Woodruff. [*Arm Morello Programme: Architectural security goals and known limitations*](https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-982.pdf), Technical Report UCAM-CL-TR-982, Computer Laboratory, July 2023.
 - **Morello performance**: Robert N. M. Watson, Jessica Clarke, Peter Sewell, Jonathan Woodruff, Simon W. Moore, Graeme Barnes, Richard Grisenthwaite, Kathryn Stacer, Silviu Baranga, Alexander Richardson. [*Early performance results from the prototype Morello microarchitecture*](https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-986.pdf), Technical Report UCAM-CL-TR-986, Computer Laboratory, September 2023.
-
 
 
 ## [Selected CHERI research papers](/reference/linux-roadmap/print.html#selected-cheri-research-papers)

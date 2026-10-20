@@ -1,0 +1,5 @@
+{%- assign date_value = include.value | append: '' -%}
+<time datetime="{{ date_value | escape }}">{%- case date_value.size -%}
+{%- when 4 -%}{{ date_value }}
+{%- when 7 -%}{{ date_value | append: '-01' | date: '%B %Y' }}
+{%- else -%}{{ date_value | date: '%-d %B %Y' }}{%- endcase -%}</time>

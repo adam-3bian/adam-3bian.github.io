@@ -1,31 +1,25 @@
 ---
 title: 'The EU Cyber Resilience Act: What It Means for Secure-by-Design Systems and CHERI'
 date: '2026-02-04T10:00:45+00:00'
-authors: [tariq-kurd]
+authors:
+- tariq-kurd
+thumbnail:
+  src: /assets/shared/source-assets/d4c0d2560e6f-eu-flag.jpg
+  alt: EU Flag
+  width: 1280
+  height: 853
+tags:
+- CHERI Alliance news
+- Government / Regulation
+summary: In 2025 alone, global cybercrime costs reached an estimated **$1.2 billion every minute**, with projections
+  rising to **$1.8 billion per minute by 2029**. Just seven years earlier, the figure was “only” $100 million per
+  minute—already enormous, but now eclipsed by today’s scale.
 ---
-
-1. News &amp; Events
-2. News &amp; Analysis
-3. The EU Cyber Resilience Act: What It Means for Secure-by-Design Systems and CHERI
-{: .source-breadcrumbs }
-
-# The EU Cyber Resilience Act: What It Means for Secure-by-Design Systems and CHERI
-{: id="page-hero-title" .page-hero-title }
-
-*4 February 2026*{: .source-date }
-*CHERI Alliance news*{: .collection-tag }
-*Government / Regulation*{: .collection-tag }
-{: .collection-detail__metadata }
-
-![EU Flag](/assets/shared/source-assets/d4c0d2560e6f-eu-flag.jpg){: .image-full }
-{: .collection-detail__lead-image }
 
 Tariq Kurd – [Codasip](/organisations/codasip/)
 
 ## Cybercrime has become a trillion-dollar tax on the global economy — and it’s accelerating.
 {: id="cybercrime-has-become-a-trillion-dollar-tax-on-the-global-economy--and-its-accelerating" }
-
-In 2025 alone, global cybercrime costs reached an estimated **$1.2 billion every minute**, with projections rising to **$1.8 billion per minute by 2029**. Just seven years earlier, the figure was “only” $100 million per minute—already enormous, but now eclipsed by today’s scale.
 
 Crucially, most successful attacks do not rely on sophisticated zero-day exploits. They exploit **known Common Vulnerabilities and Exposures (CVEs)** – documented weaknesses that frequently remain unpatched across systems. These vulnerabilities are routinely used to deploy spyware, steal sensitive data, harvest credentials, and deliver ransomware. In many cases, ransomware is merely the final step after initial access has already been achieved.
 

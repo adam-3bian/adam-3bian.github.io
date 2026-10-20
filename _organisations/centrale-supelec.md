@@ -1,31 +1,24 @@
 ---
 title: Centrale Supélec
 member: true
+summary: Details to follow.
+membership_category: Community Member
+membership_status: Member
+links:
+- label: Visit member website
+  url: https://www.centralesupelec.fr/
+  kind: website
+  primary: true
+- label: Back to all members
+  url: /alliance/leadership/members/
+  kind: navigation
+thumbnail:
+  src: /assets/organisations/centrale-supelec/216a613f848d-logo.jpg
+  alt: Centrale Supélec
+  width: 2000
+  height: 1205
+  fit: contain
 ---
-
-1. Alliance
-2. Members
-3. Centrale Supélec
-{: .source-breadcrumbs }
-
-# Centrale Supélec
-{: id="page-hero-title" .page-hero-title }
-
-Details to follow.
-{: .page-hero-summary }
-
-![Centrale Supélec](/assets/organisations/centrale-supelec/216a613f848d-logo.jpg){: .image-left }
-{: .entity-media .entity-media--logo }
-
-Status
-: Member
-
-Membership
-: Community Member
-
-Website
-: [Visit member website](https://www.centralesupelec.fr/)
-{: .entity-facts }
 
 ## Description
 {: id="description" }
@@ -36,6 +29,3 @@ Details to follow.
 {: id="cheri-activities" }
 
 Details to follow
-
-[Back to all members](/alliance/leadership/members/)
-{: .entity-back }

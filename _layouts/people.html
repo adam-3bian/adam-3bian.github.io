@@ -1,36 +1,8 @@
 ---
 layout: page
 ---
-{% assign people = site.people | where_exp: 'item', 'item.redirect_to == nil' | where_exp: 'item', 'item.alternate != true' %}
-{% assign people_context = nil %}
-{% assign people_compact = true %}
-{% if page.listing.registry == 'governing-board' %}
-  {% assign people = '' | split: ',' %}
-  {% for person_id in site.data['governing-board'] %}
-    {% assign person = site.people | where: 'slug', person_id | first %}
-    {% if person %}{% assign people = people | push: person %}{% endif %}
-  {% endfor %}
-  {% assign people_context = 'governing-board' %}
-  {% assign people_compact = false %}
-{% else %}
-  {% if page.listing.role == 'speaker' %}{% assign people = people | where: 'speaker', true %}{% endif %}
-  {% assign people = people | sort_natural: 'title' %}
-{% endif %}
-{% assign people_heading = 'h2' %}
-{% if content contains '<h2' %}{% assign people_heading = 'h3' %}{% endif %}
-{% capture people_directory %}
-<section class="index-list" aria-label="{{ page.title | escape }}" data-collection-index data-people-list>
-  {% include listing.html items=people label=page.title kind='people' compact=people_compact context=people_context heading=people_heading columns=page.listing.columns action='View profile' %}
-</section>
-{% endcapture %}
-{% if page.listing.source-fragments and people_context == 'governing-board' and content contains '<p class="collection-card__link">' %}
-  {% comment %}Keep the original board fragments in Markdown as provenance. Only this
-    marked source block is replaced; the introduction and closing prose stay in place.{% endcomment %}
-  {% assign directory_start = content | split: '<p><img ' | first %}
-  {% assign directory_end = content | split: '<p class="collection-card__link">' | last %}
-  {% assign final_source_action = directory_end | split: '</p>' | first | append: '</p>' %}
-  {{ directory_start }}{{ people_directory }}{{ directory_end | remove_first: final_source_action }}
-{% else %}
-  {{ content }}
-  {{ people_directory }}
-{% endif %}
+{{ content }}
+{% assign people = site.people | where_exp: 'item', 'item.alternate != true' | sort_natural: 'title' %}
+{% if page.listing.registry == 'governing-board' %}{% assign people = '' | split: ',' %}{% for ref in site.data.governing-board %}{% assign person = site.people | where: 'slug', ref | first %}{% if person %}{% assign people = people | push: person %}{% endif %}{% endfor %}
+{% elsif page.listing.role == 'speaker' %}{% assign people = people | where: 'speaker', true %}{% endif %}
+{% include directory.html items=people kind='people' registry=page.listing.registry %}

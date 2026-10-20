@@ -3,9 +3,6 @@ title: Demonstrate CHERI Tag Protection
 permalink: /reference/CHERI-seL4-Exercises/exercises/cheri-tags/index.html
 ---
 
-# [Demonstrate CHERI Tag Protection](/reference/CHERI-seL4-Exercises/exercises/cheri-tags/index.html#demonstrate-cheri-tag-protection)
-{: id="demonstrate-cheri-tag-protection" }
-
 This exercise demonstrates CHERI's *capability provenance tags*, in particular
 by showing that capabilities and their constituent bytes are subtly different
 things!

@@ -5,10 +5,12 @@ layout: index
 sections:
 - presentation: cards
   columns: 3
-  headings: ["Platforms and software", "Get started", "Work with the community"]
+  headings:
+  - Platforms and software
+  - Get started
+  - Work with the community
+hero: true
 ---
-
-# Build with CHERI
 
 ## Platforms and software
 

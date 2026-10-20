@@ -1,31 +1,26 @@
 ---
 title: Durham University
 member: true
+summary: The Department of Computer Science, based in the beautiful historic city of Durham, is one of the leading
+  UK departments with an outstanding reputation for excellence in teaching, research and employability of our students.
+  Computer Science increased…
+membership_category: Community Member
+membership_status: Member
+links:
+- label: Visit member website
+  url: https://www.durham.ac.uk/departments/academic/computer-science/
+  kind: website
+  primary: true
+- label: Back to all members
+  url: /alliance/leadership/members/
+  kind: navigation
+thumbnail:
+  src: /assets/organisations/durham-university/e89df94fa360-logo.png
+  alt: Durham University - Department of Computer Science logo
+  width: 1000
+  height: 619
+  fit: contain
 ---
-
-1. Alliance
-2. Members
-3. Durham University
-{: .source-breadcrumbs }
-
-# Durham University
-{: id="page-hero-title" .page-hero-title }
-
-The Department of Computer Science, based in the beautiful historic city of Durham, is one of the leading UK departments with an outstanding reputation for excellence in teaching, research and employability of our students. Computer Science increased…
-{: .page-hero-summary }
-
-![Durham University - Department of Computer Science logo](/assets/organisations/durham-university/e89df94fa360-logo.png){: .image-left }
-{: .entity-media .entity-media--logo }
-
-Status
-: Member
-
-Membership
-: Community Member
-
-Website
-: [Visit member website](https://www.durham.ac.uk/departments/academic/computer-science/)
-{: .entity-facts }
 
 ## Description
 {: id="description" }
@@ -41,6 +36,3 @@ Prof David Oswald’s group led CAP-TEE project (EPSRC grant EP/V000454/1), fund
 {: id="open-source-assets-for-cheri" }
 
 [https://github.com/CHERI-Alliance/CHERI-zephyr](https://github.com/CHERI-Alliance/CHERI-zephyr)
-
-[Back to all members](/alliance/leadership/members/)
-{: .entity-back }

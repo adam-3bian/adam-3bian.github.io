@@ -1,28 +1,22 @@
 ---
 title: SCI Semiconductor and the CHERI Alliance at RISC-V Summit in China, July 2025
 date: '2025-09-08T10:50:02+01:00'
+thumbnail:
+  src: /assets/news/sci-semiconductor-and-the-cheri-alliance-at-risc-v-summit-in-china-july-2025/d01a1b459692-hero.jpg
+  alt: RISC-V Summit welcome board
+  width: 1379
+  height: 1034
+tags:
+- CHERI Alliance news
+summary: In the latter half of July I got the fantastic opportunity to re-visit Shanghai after a good few years
+  of being away and wow, have I missed it. Shanghai is a fantastic city to visit and has grown so much over the
+  last 20 years. It is therefore a fitting location and analogous to the growth of RISC-V celebrating its own 15th
+  year anniversary.
 ---
-
-1. News &amp; Events
-2. News &amp; Analysis
-3. SCI Semiconductor and the CHERI Alliance at RISC-V Summit in China, July 2025
-{: .source-breadcrumbs }
-
-# SCI Semiconductor and the CHERI Alliance at RISC-V Summit in China, July 2025
-{: id="page-hero-title" .page-hero-title }
-
-*8 September 2025*{: .source-date }
-*CHERI Alliance news*{: .collection-tag }
-{: .collection-detail__metadata }
-
-![RISC-V Summit welcome board](/assets/news/sci-semiconductor-and-the-cheri-alliance-at-risc-v-summit-in-china-july-2025/d01a1b459692-hero.jpg){: .image-full }
-{: .collection-detail__lead-image }
 
 Andy Frame –
 
 [SCI Semiconductor](/organisations/sci-semiconductor/)
-
-In the latter half of July I got the fantastic opportunity to re-visit Shanghai after a good few years of being away and wow, have I missed it. Shanghai is a fantastic city to visit and has grown so much over the last 20 years. It is therefore a fitting location and analogous to the growth of RISC-V celebrating its own 15th year anniversary.
 
 The reason for this trip was to exhibit at the 5th China RISC-V Summit and represent [SCI Semiconductor](/organisations/sci-semiconductor/), the [CHERI Alliance](/), and the CHERIoT-Ibex open-source project jointly maintained by Google, Microsoft and SCI Semiconductor. In collaboration with the fantastic teams at both SOPIC and VeriSilicon, SCI Semi had the opportunity to present a comprehensive half-day CHERI Memory Safety workshop, and promote the technology at an impressive booth on the exhibit floor.
 

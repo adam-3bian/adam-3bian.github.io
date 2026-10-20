@@ -5,8 +5,7 @@ listing:
   collection: policies
 layout: list
 parent: /alliance/
+directory: true
 ---
-
-# Policies
 
 Published Alliance policies and programme guidance.

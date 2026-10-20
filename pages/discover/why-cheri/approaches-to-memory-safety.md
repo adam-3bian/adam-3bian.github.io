@@ -5,20 +5,12 @@ where-next:
   url: /discover/understand/cheri-and-existing-software/
 related-pages:
 - url: /discover/why-cheri/why-existing-defences-are-not-enough/
-  description: Security decisions rarely involve choosing one technology and rejecting everything else. Most products use multiple security measures because different controls protect against different types of risk.
+  description: Security decisions rarely involve choosing one technology and rejecting everything else. Most products
+    use multiple security measures because different controls protect against different types of risk.
   action: Read this page
+summary: No single technology delivers memory safety. The strongest solutions combine processes, tools, hardware
+  protections, and isolation.
 ---
-
-1. Discover
-2. Why CHERI
-3. Approaches to Memory Safety
-{: .source-breadcrumbs }
-
-# Approaches to Memory Safety
-{: id="page-hero-title" .page-hero-title }
-
-No single technology delivers memory safety. The strongest solutions combine processes, tools, hardware protections, and isolation.
-{: .page-hero-summary }
 
 Memory safety is not delivered by any single technology. From memory-safe languages and development tools to hardware protections and compartmentalisation, effective solutions combine multiple layers to match the needs of different systems, from tiny embedded devices to large legacy platforms.
 
@@ -95,39 +87,3 @@ The strongest solutions combine multiple layers. Memory-safe languages help prev
 - CHERI enables efficient hardware-enforced protection and compartmentalisation.
 
 See [CHERI and Rust](/discover/why-cheri/cheri-and-rust/) for a closer look at how language and hardware safety can work together.
-
-## Where next
-{: .where-next-title }
-
-### [CHERI and Existing Software](/discover/understand/cheri-and-existing-software/)
-{: .where-next-card-title }
-
-
-
-
-
-[Porting software to CHERI is a process of finding assumptions about pointers, integers, objects, bounds, provenance, lifetimes, and interfaces.](/discover/understand/cheri-and-existing-software/)
-{: .where-next-summary }
-
-
-
-[Continue](/discover/understand/cheri-and-existing-software/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Why Existing Defences Are Not Enough](/discover/why-cheri/why-existing-defences-are-not-enough/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Security decisions rarely involve choosing one technology and rejecting everything else. Most products use multiple security measures because different controls protect against different types of risk.](/discover/why-cheri/why-existing-defences-are-not-enough/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/why-cheri/why-existing-defences-are-not-enough/)
-{: .source-card-label }

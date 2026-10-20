@@ -1,35 +1,21 @@
 ---
 title: CHERI Alliance at Embedded World 2026
-date: '2026-03-10'
-end-date: '2026-03-12'
+start_date: '2026-03-10'
+end_date: '2026-03-12'
+summary: CHERI Alliance demonstrations and member activity at Embedded World 2026 in Nuremberg.
+format: Exhibition
+location: Exhibition Centre Nuremberg, Germany
+date_note: 10 to 12 March 2026
+thumbnail:
+  src: /assets/events/embedded-world-2026/4e96ccb7b522-embedded-world-2026.webp
+  alt: CHERI logo
+  width: 640
+  height: 360
+links:
+- label: Back to past events
+  url: /news-and-events/events-and-archive/past-events/
+  kind: navigation
 ---
-
-1. News &amp; Events
-2. Events &amp; Archive
-3. CHERI Alliance at Embedded World 2026
-{: .source-breadcrumbs }
-
-# CHERI Alliance at Embedded World 2026
-{: id="page-hero-title" .page-hero-title }
-
-CHERI Alliance demonstrations and member activity at Embedded World 2026 in Nuremberg.
-{: .page-hero-summary }
-
-![CHERI logo](/assets/events/embedded-world-2026/4e96ccb7b522-embedded-world-2026.webp){: .image-left }
-{: .entity-media .entity-media--event }
-
-Status
-: Past
-
-Format
-: Exhibition
-
-Date
-: 10 to 12 March 2026
-
-Location
-: Exhibition Centre Nuremberg, Germany
-{: .entity-facts }
 
 **70% of vulnerabilities eliminated**
 
@@ -76,6 +62,3 @@ Embedded World Exhibition – Nuremberg Messe – **Hall 5, booth 5-177**
 | ![SCI Semiconductor logo](/assets/organisations/sci-semiconductor/89396ef186d7-logo.png){: .image-full } | Hall 4A / 4A-13 |
 | ![SIEMENS logo](/assets/organisations/siemens/03a6b87e3dd0-logo.png){: .image-full } | Hall 5 / 5-119 |
 | ![VeriSilicon logo](/assets/organisations/verisilicon/b35ed2559906-logo.png){: .image-full } | Hall 4A / 4A-518 |
-
-[Back to past events](/news-and-events/events-and-archive/past-events/)
-{: .entity-back }

@@ -2,18 +2,9 @@
 title: Choosing a CHERI Development Platform
 where-next:
   url: /guides/run-cheri-in-simulation/
+summary: Practical guidance for choosing a CHERI development and evaluation environment.
+topic: Getting started
 ---
-
-1. Build
-2. Developers
-3. Choosing a CHERI Development Platform
-{: .source-breadcrumbs }
-
-# Choosing a CHERI Development Platform
-{: id="page-hero-title" .page-hero-title }
-
-Practical guidance for choosing a CHERI development and evaluation environment.
-{: .page-hero-summary }
 
 Don’t start by comparing processors. Start by identifying what you want to build, port, or evaluate.
 
@@ -95,21 +86,3 @@ Continue with [Run CHERI in Simulation](/guides/run-cheri-in-simulation/).
 {: id="choosing-a-platform-for-product-development" }
 
 If your goal is to evaluate a path to a commercial product, prioritise toolchain maturity, operating-system support, hardware availability, long-term maintenance, and supplier support. The best learning platform is not always the best platform for product development.
-
-## Where next
-{: .where-next-title }
-
-### [Run CHERI in Simulation](/guides/run-cheri-in-simulation/)
-{: .where-next-card-title }
-
-
-
-
-
-[Simulation is the recommended first execution environment for most CHERI developers.](/guides/run-cheri-in-simulation/)
-{: .where-next-summary }
-
-
-
-[Continue](/guides/run-cheri-in-simulation/)
-{: .source-card-label }

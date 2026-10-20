@@ -1,31 +1,26 @@
 ---
 title: National Taiwan University
 member: true
+summary: Secure Systems Lab (SSLab) conducts research to advance the security, reliability, and performance of modern
+  computer systems. We investigate core system components—often diving deep into hardware and operating systems—to
+  uncover and address critical…
+membership_category: Community Member
+membership_status: Member
+links:
+- label: Visit member website
+  url: https://sslab.csie.ntu.edu.tw/
+  kind: website
+  primary: true
+- label: Back to all members
+  url: /alliance/leadership/members/
+  kind: navigation
+thumbnail:
+  src: /assets/organisations/national-taiwan-university/e691a20d3fdd-logo.jpg
+  alt: NTU logo
+  width: 295
+  height: 294
+  fit: contain
 ---
-
-1. Alliance
-2. Members
-3. National Taiwan University
-{: .source-breadcrumbs }
-
-# National Taiwan University
-{: id="page-hero-title" .page-hero-title }
-
-Secure Systems Lab (SSLab) conducts research to advance the security, reliability, and performance of modern computer systems. We investigate core system components—often diving deep into hardware and operating systems—to uncover and address critical…
-{: .page-hero-summary }
-
-![NTU logo](/assets/organisations/national-taiwan-university/e691a20d3fdd-logo.jpg){: .image-left }
-{: .entity-media .entity-media--logo }
-
-Status
-: Member
-
-Membership
-: Community Member
-
-Website
-: [Visit member website](https://sslab.csie.ntu.edu.tw/)
-{: .entity-facts }
 
 ## Description
 {: id="description" }
@@ -36,6 +31,3 @@ Secure Systems Lab (SSLab) conducts research to advance the security, reliabilit
 {: id="cheri-activities" }
 
 We aim to investigate applying CHERI to construct kernel compartments and build robust fault-containment and recovery mechanisms during compartment construction.
-
-[Back to all members](/alliance/leadership/members/)
-{: .entity-back }

@@ -1,45 +1,145 @@
 ---
 title: CHERI Blossoms Conference 2026
-speakers: [alex-rebert, kathleen-fisher, maika-fohrenbach, ollie-whitehouse, sam-cater, adam-finney, alexander-voyevoda,
-  alfredo-mazzinghi, andrew-murray, andy-moore, ben-fletcher, bradley-finn, carl-shaw, dave-harcourt, david-chisnall,
-  david-musliner, edoardo-marangoni, javier-orensanz-martinez, jennifer-jackson, jessica-clarke, jianyi-cheng, johannes-muller,
-  john-baldwin, john-goodacre, jonathan-woodruff, louis-emile-ploix, luca-muller, marno-van-der-maas, manu-ravishankar,
-  merve-gulmez, mike-eftimakis, murat-cakmak, paul-metzger, peter-cox, robert-watson, samuel-stark, simon-moore,
-  tariq-kurd, thomas-nyman]
-date: '2026-03-25'
-end-date: '2026-03-27'
-source-speakers: true
+speakers:
+- alex-rebert
+- kathleen-fisher
+- maika-fohrenbach
+- ollie-whitehouse
+- sam-cater
+- adam-finney
+- alexander-voyevoda
+- alfredo-mazzinghi
+- andrew-murray
+- andy-moore
+- ben-fletcher
+- bradley-finn
+- carl-shaw
+- dave-harcourt
+- david-chisnall
+- david-musliner
+- edoardo-marangoni
+- javier-orensanz-martinez
+- jennifer-jackson
+- jessica-clarke
+- jianyi-cheng
+- johannes-muller
+- john-baldwin
+- john-goodacre
+- jonathan-woodruff
+- louis-emile-ploix
+- luca-muller
+- marno-van-der-maas
+- manu-ravishankar
+- merve-gulmez
+- mike-eftimakis
+- murat-cakmak
+- paul-metzger
+- peter-cox
+- robert-watson
+- samuel-stark
+- simon-moore
+- tariq-kurd
+- thomas-nyman
+start_date: '2026-03-25'
+end_date: '2026-03-27'
+summary: Three days bringing together the people researching, building, deploying and shaping the future of CHERI
+format: Conference
+location: University of Cambridge, Cambridge, UK
+series: CHERI Blossoms
+links:
+- label: CHERI Blossoms
+  url: /news-and-events/events-and-archive/cheri-blossoms/
+  kind: resource
+- label: Back to past events
+  url: /news-and-events/events-and-archive/past-events/
+  kind: navigation
+date_note: 25 to 27 March 2026
+thumbnail:
+  src: /assets/events/cheri-blossoms-conference-2026/81eb02fb9092-hero.png
+  alt: CHERI Blossoms 2026
+  width: 2000
+  height: 1561
+card_sections:
+- title: Speakers
+  id: speakers
+  groups:
+  - entries:
+    - url: /people/alex-rebert/
+    - url: /people/kathleen-fisher/
+    - url: /people/maika-fohrenbach/
+    - url: /people/ollie-whitehouse/
+    - url: /people/sam-cater/
+    title: Keynote Speakers
+  - entries:
+    - url: /people/adam-finney/
+    - url: /people/alexander-voyevoda/
+    - url: /people/alfredo-mazzinghi/
+    - url: /people/andrew-murray/
+    - url: /people/andy-moore/
+    - url: /people/ben-fletcher/
+    - url: /people/bradley-finn/
+    - url: /people/carl-shaw/
+    - url: /people/dave-harcourt/
+    - url: /people/david-chisnall/
+    - url: /people/david-musliner/
+    - url: /people/edoardo-marangoni/
+    - url: /people/javier-orensanz-martinez/
+    - url: /people/jennifer-jackson/
+    - url: /people/jessica-clarke/
+    - url: /people/jianyi-cheng/
+    - url: /people/johannes-muller/
+    - url: /people/john-baldwin/
+    - url: /people/john-goodacre/
+    - url: /people/jonathan-woodruff/
+    - url: /people/louis-emile-ploix/
+    - url: /people/luca-muller/
+    - url: /people/marno-van-der-maas/
+    - url: /people/manu-ravishankar/
+    - url: /people/merve-gulmez/
+    - url: /people/mike-eftimakis/
+    - url: /people/murat-cakmak/
+    - url: /people/paul-metzger/
+    - url: /people/peter-cox/
+    - url: /people/robert-watson/
+    - url: /people/samuel-stark/
+    - url: /people/simon-moore/
+    - url: /people/tariq-kurd/
+    - url: /people/thomas-nyman/
+    title: Featured Speakers
+- title: More CHERI Blossoms events
+  id: related-series-events
+  groups:
+  - entries:
+    - url: /events/cheri-blossoms-conference-2027/
+      description: 'CHERI Blossoms Conference 2027 Pre-conference Tutorial: 21 April 2027 Main Conference Date:
+        22-23 April 2027 Location: Department of Computer Science and Technology – ...'
+      context: '21 to 23 April 2027
+
+        University of Cambridge, Cambridge, UK'
+      labels: 'Upcoming
+
+        Conference'
+    - url: /events/cheri-blossoms-tutorial-2026/
+      description: The CHERI Research Centre at the Computer Laboratory, Codasip, and lowRISC co-organised a comprehensive
+        tutorial on CHERI alongside the CHERI Blossoms 2026 conference....
+      context: '25 March 2026
+
+        University of Cambridge, Cambridge, UK'
+      labels: 'Past
+
+        Tutorial'
+    - url: /events/cheri-blossoms-conference-2025/
+      description: The CHERI Blossoms Conference 2025 invited researchers, technologists, industry leaders, and
+        business strategists to contribute to the advancement of digital security ...
+      context: '2 April 2025
+
+        St John''s College, Cambridge, UK'
+      labels: 'Past
+
+        Conference'
+    intro: '[View the complete series](/news-and-events/events-and-archive/cheri-blossoms/)'
+speaker_sections: true
 ---
-
-1. News &amp; Events
-2. Events &amp; Archive
-3. CHERI Blossoms Conference 2026
-{: .source-breadcrumbs }
-
-# CHERI Blossoms Conference 2026
-{: id="page-hero-title" .page-hero-title }
-
-Three days bringing together the people researching, building, deploying and shaping the future of CHERI
-{: .page-hero-summary }
-
-![CHERI Blossoms 2026](/assets/events/cheri-blossoms-conference-2026/81eb02fb9092-hero.png){: .image-left }
-{: .entity-media .entity-media--event }
-
-Status
-: Past
-
-Format
-: Conference
-
-Date
-: 25 to 27 March 2026
-
-Location
-: University of Cambridge, Cambridge, UK
-
-Series
-: [CHERI Blossoms](/news-and-events/events-and-archive/cheri-blossoms/)
-{: .entity-facts }
 
 ## 300+ attendees · 32 talks · 12 exhibitors
 
@@ -167,621 +267,3 @@ Cambridge CB3 0FD
 ![CHERI Blossoms 2026 exhibition](/assets/events/cheri-blossoms-conference-2026/5d0055b14ce5-exhibition.jpg){: .image-full }
 
 [View map](https://maps.google.com/maps?q=William%20Gates%20Building&t=m&z=13&output=embed&iwloc=near)
-
-## Speakers
-{: id="speakers" }
-
-### Keynote Speakers
-
-![](/assets/people/alex-rebert/165b3d94aa33-alex-rebert.webp){: .image-full }
-
-Google
-{: .collection-card__meta }
-
-### [Alex Rebert](/people/alex-rebert/)
-{: .collection-card__title }
-
-Alex Rebert is an engineer at Google, where he focuses on memory safety. Previously, he co-founded ForAllSecure and led the creation of Mayhem, the autonomous cyber re...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/kathleen-fisher/0a4fdc2deea1-kathleen-fisher.webp){: .image-full }
-
-ARIA
-{: .collection-card__meta }
-
-### [Kathleen Fisher](/people/kathleen-fisher/)
-{: .collection-card__title }
-
-Kathleen Fisher has been instrumental in bringing CHERI from research into national programmes. A long‑standing leader in secure systems and programming languages, she...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/maika-fohrenbach/0c4cb55de046-maika-fohrenbach.webp){: .image-full }
-
-European Commission (DG CONNECT)
-{: .collection-card__meta }
-
-### [Maika Föhrenbach](/people/maika-fohrenbach/)
-{: .collection-card__title }
-
-Maika Föhrenbach connects CHERI to Europe’s regulatory future. She leads product security and certification policy at the European Commission and coordinates implement...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/ollie-whitehouse/18733daf6b43-ollie-whitehouse.webp){: .image-full }
-
-National Cyber Security Centre
-{: .collection-card__meta }
-
-### [Ollie Whitehouse](/people/ollie-whitehouse/)
-{: .collection-card__title }
-
-Ollie is a fellow of the Royal Academy of Engineering whose career in cyber security spans over 30 years. Today he serves as the Chief Technical Officer for the Nation...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/sam-cater/61e7a8222d5c-sam-cater.webp){: .image-full }
-
-BT
-{: .collection-card__meta }
-
-### [Sam Cater](/people/sam-cater/)
-{: .collection-card__title }
-
-Sam is a Research Technical Manager within BT’s Research and Commercialisation department, focussing on Cybersecurity technologies. Throughout his career, he has held ...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-### Featured Speakers
-
-![](/assets/people/adam-finney/594a07796a78-adam-finney.webp){: .image-full }
-
-CHERI Alliance
-{: .collection-card__meta }
-
-### [Adam Finney](/people/adam-finney/)
-{: .collection-card__title }
-
-Adam Finney is a CHERI technologist with over 20 years of systems experience, and a key driver of CHERI adoption. As Lead of the Adoption Programme and Marketing Worki...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/alexander-voyevoda/d4590afa2a27-alexander-voyevoda.webp){: .image-full }
-
-UM Labs
-{: .collection-card__meta }
-
-### [Alexander Voyevoda](/people/alexander-voyevoda/)
-{: .collection-card__title }
-
-Alex Voyevoda is a senior systems engineer focused on turning high‑assurance ideas into production systems. With over 30 years of experience in low‑level C systems on ...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/alfredo-mazzinghi/8eb5af657eda-alfredo-mazzinghi.webp){: .image-full }
-
-Capabilities Limited
-{: .collection-card__meta }
-
-### [Alfredo Mazzinghi](/people/alfredo-mazzinghi/)
-{: .collection-card__title }
-
-Alfredo is a Research Assistant at University of Cambridge and Research Engineer at Capabilities Limited. Their main research interest is on memory safety in operating...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/andrew-murray/4471744b8d2d-andrew-murray.webp){: .image-full }
-
-The Good Penguin
-{: .collection-card__meta }
-
-### [Andrew Murray](/people/andrew-murray/)
-{: .collection-card__title }
-
-Andrew Murray is founder and director of The Good Penguin, a UK based consultancy with a focus and passion for embedded Linux, low level and open-source software. The ...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/andy-moore/fe1dfa258b62-andy-moore.webp){: .image-full }
-
-RISC-V International
-{: .collection-card__meta }
-
-### [Andy Moore](/people/andy-moore/)
-{: .collection-card__title }
-
-Andy Moore drives awareness and adoption of RISC‑V across its global member ecosystem. As Director of Marketing at RISC‑V International, and with deep prior experience...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/ben-fletcher/e01148dd42e4-ben-fletcher.webp){: .image-full }
-
-Codasip
-{: .collection-card__meta }
-
-### [Ben Fletcher](/people/ben-fletcher/)
-{: .collection-card__title }
-
-Ben Fletcher has been involved in SoC development for over 25 years. He has worked in design, verification, software, and more recently Architecture. He has worked for...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/bradley-finn/6eb4013e94b7-bradley-finn.webp){: .image-full }
-
-DSIT
-{: .collection-card__meta }
-
-### [Bradley Finn](/people/bradley-finn/)
-{: .collection-card__title }
-
-Bradley Finn is Head of Cyber Innovation Policy at the UK’s Department for Science, Innovation and Technology. He is responsible for polices and programmes to support ...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/carl-shaw/77510c8e2140-carl-shaw.webp){: .image-full }
-
-Codasip
-{: .collection-card__meta }
-
-### [Carl Shaw](/people/carl-shaw/)
-{: .collection-card__title }
-
-Carl Shaw is a hands-on technical expert with a diverse background in embedded systems and security engineering. His work focuses on the intersection of hardware and s...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/dave-harcourt/3c144f42f3a1-dave-harcourt.webp){: .image-full }
-
-BT
-{: .collection-card__meta }
-
-### [Dave Harcourt](/people/dave-harcourt/)
-{: .collection-card__title }
-
-Dave Harcourt is the CISO for BT International and a BT Fellow, with decades of experience shaping cyber security at scale. He sets security strategy for BT and influe...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/david-chisnall/df30b5f06c8a-david-chisnall.webp){: .image-full }
-
-SCI Semiconductor
-{: .collection-card__meta }
-
-### [David Chisnall](/people/david-chisnall/)
-{: .collection-card__title }
-
-David Chisnall has been working on CHERI since 2012, when he joined the University of Cambridge to lead the languages and compiler work on the CHERI project. He joined...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/david-musliner/c608481cf4e5-david-musliner.webp){: .image-full }
-
-Smart Information Flow Technologies (SIFT)
-{: .collection-card__meta }
-
-### [David Musliner](/people/david-musliner/)
-{: .collection-card__title }
-
-Dr. David Musliner is a Senior Research Fellow at Smart Information Flow Technologies (SIFT).
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/edoardo-marangoni/a366a93d3f87-edoardo-marangoni.webp){: .image-full }
-
-SCI Semiconductor
-{: .collection-card__meta }
-
-### [Edoardo Marangoni](/people/edoardo-marangoni/)
-{: .collection-card__title }
-
-Edoardo has been working with compilers for the majority of his professional career. After working in the Wasm space, he joined SCI Semiconductor and started working o...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/javier-orensanz-martinez/f71577bde6b0-javier-orensanz-martinez.webp){: .image-full }
-
-lowRISC
-{: .collection-card__meta }
-
-### [Javier Orensanz Martinez](/people/javier-orensanz-martinez/)
-{: .collection-card__title }
-
-Javier is a business leader with over 25 years of experience in the semiconductors industry. He was the general manager of Arm’s tools business unit for 8 years, and i...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/jennifer-jackson/8046421faf06-jennifer-jackson.webp){: .image-full }
-
-University of Birmingham
-{: .collection-card__meta }
-
-### [Jennifer Jackson](/people/jennifer-jackson/)
-{: .collection-card__title }
-
-Jennifer is an Electronic Engineer with experience in FPGA design, Arm v8.2, computer security, capability architectures, CHERI, LLVM tool chain, RISC-V development an...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/jessica-clarke/fd8c66132687-jessica-clarke.webp){: .image-full }
-
-University of Cambridge
-{: .collection-card__meta }
-
-### [Jessica Clarke](/people/jessica-clarke/)
-{: .collection-card__title }
-
-Jessica Clarke is a Senior Research Software Engineer at the University of Cambridge, contributing to the maintenance and development of CHERI LLVM and CheriBSD, and h...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/jianyi-cheng/c69c7513a086-jianyi-cheng.webp){: .image-full }
-
-University of Edinburgh
-{: .collection-card__meta }
-
-### [Jianyi Cheng](/people/jianyi-cheng/)
-{: .collection-card__title }
-
-Jianyi Cheng is an Assistant Professor in the School of Informatics at the University of Edinburgh. His research aims to automatically produce small, fast, low-energy,...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/johannes-muller/2d9a131b99d2-johannes-muller.webp){: .image-full }
-
-RPTU Kaiserslautern-Landau
-{: .collection-card__meta }
-
-### [Johannes Müller](/people/johannes-muller/)
-{: .collection-card__title }
-
-Johannes Müller received his Dipl.-Ing. degree in Electrical and Computer Engineering from the Technische Universität Kaiserslautern in 2018. He is currently a Ph.D. c...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/john-baldwin/175c0c4228f3-john-baldwin.webp){: .image-full }
-
-Ararat River Consulting, LLC
-{: .collection-card__meta }
-
-### [John Baldwin](/people/john-baldwin/)
-{: .collection-card__title }
-
-John Baldwin has been an active FreeBSD developer for over 25 years working on a broad range of subsystems in the kernel and bits of userspace. John has also contribut...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/john-goodacre/e4083dbbb0d9-john-goodacre.webp){: .image-full }
-
-UKRI
-{: .collection-card__meta }
-
-### [John Goodacre](/people/john-goodacre/)
-{: .collection-card__title }
-
-Prof. John Goodacre: University of Manchester, Director Digital Security by Design: UKRIJohn is Professor of Computer Architectures at the Department of Computer Scien...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/jonathan-woodruff/efabe0a1a306-jonathan-woodruff.webp){: .image-full }
-
-Capabilities Limited
-{: .collection-card__meta }
-
-### [Jonathan Woodruff](/people/jonathan-woodruff/)
-{: .collection-card__title }
-
-Dr Jonathan Woodruff is a Senior Research Associate with expertise in processor architecture and microarchitecture as well as low-level software optimisation. Speciali...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/louis-emile-ploix/4dbe468cc870-louis-emile-ploix.webp){: .image-full }
-
-lowRISC
-{: .collection-card__meta }
-
-### [Louis-Emile Ploix](/people/louis-emile-ploix/)
-{: .collection-card__title }
-
-Louis-Emile is a current undergraduate at the University of Oxford, and a formal verification engineer for lowRISC working on the COSMIC project.
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/luca-muller/77c9e62d16fb-luca-muller.webp){: .image-full }
-
-German Research Center for Artificial Intelligence (DFKI)
-{: .collection-card__meta }
-
-### [Luca Müller](/people/luca-muller/)
-{: .collection-card__title }
-
-Luca Müller received the M.Sc. degree in computer science from University of Bremen in 2025. He is currently a Researcher in the Cyber-Physical Systems Group at the Ge...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/marno-van-der-maas/339812a45c3f-marno-van-der-maas.webp){: .image-full }
-
-lowRISC
-{: .collection-card__meta }
-
-### [Marno van der Maas](/people/marno-van-der-maas/)
-{: .collection-card__title }
-
-Dr Marno van der Maas completed a PhD at the University of Cambridge in 2022 on protecting trusted execution environments from side-channel attacks. During this time, ...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/manu-ravishankar/2413e0ff7418-manu-ravishankar.webp){: .image-full }
-
-PA Consulting
-{: .collection-card__meta }
-
-### [Manu Ravishankar](/people/manu-ravishankar/)
-{: .collection-card__title }
-
-Manu Ravishankar is a Principal Consultant specialising in innovation strategy, programme design and technology commercialisation. Formerly Head of Insights and Impact...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/merve-gulmez/fadb272ff434-merve-gulmez.webp){: .image-full }
-
-Ericsson
-{: .collection-card__meta }
-
-### [Merve Gülmez](/people/merve-gulmez/)
-{: .collection-card__title }
-
-Merve Gülmez is a researcher at Ericsson Security Research. She holds a PhD in Computer Science from KU Leuven, and her research focuses on systems security, memory sa...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/mike-eftimakis/95bf8c70c443-mike-eftimakis.webp){: .image-full }
-
-CHERI Alliance
-{: .collection-card__meta }
-
-### [Mike Eftimakis](/people/mike-eftimakis/)
-{: .collection-card__title }
-
-Mike Eftimakis has an extensive background in the semiconductor and electronics industry with 30 years in senior technical and business roles. He has a rich history of...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/murat-cakmak/b0884bf33a49-murat-cakmak.webp){: .image-full }
-
-Microservice Store
-{: .collection-card__meta }
-
-### [Murat Cakmak](/people/murat-cakmak/)
-{: .collection-card__title }
-
-Murat is Co-CEO @ Microservice Store.
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/paul-metzger/b93ea76e11ec-paul-metzger.webp){: .image-full }
-
-University of Cambridge
-{: .collection-card__meta }
-
-### [Paul Metzger](/people/paul-metzger/)
-{: .collection-card__title }
-
-Dr Paul Metzger is a Research Associate in the Department of Computer Science and Technology at the University of Cambridge. He recently started working on CHERI OS AP...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/peter-cox/3d6e1b48619c-peter-cox.webp){: .image-full }
-
-UM Labs
-{: .collection-card__meta }
-
-### [Peter Cox](/people/peter-cox/)
-{: .collection-card__title }
-
-Peter Cox is the CEO and founder of UM Labs, a UK R&amp;D company specialising in cybersecurity for real-time application on IP networks. Peter has over 30 years’ experien...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/robert-watson/97c4cc7057eb-robert-watson.webp){: .image-full }
-
-CHERI Alliance, University of Cambridge
-{: .collection-card__meta }
-
-### [Robert Watson](/people/robert-watson/)
-{: .collection-card__title }
-
-Professor Robert N. M. Watson is a Professor of Systems, Security, and Architecture at the University of Cambridge’s Department of Computer Science and Technology. His...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/samuel-stark/c3806563e058-samuel-stark.webp){: .image-full }
-
-University of Cambridge
-{: .collection-card__meta }
-
-### [Samuel Stark](/people/samuel-stark/)
-{: .collection-card__title }
-
-Samuel W. Stark is a final-year PhD student at the University of Cambridge, studying alternate capabilty systems under Simon W. Moore, with a published article on the ...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/simon-moore/867833a2bb89-simon-moore.webp){: .image-full }
-
-University of Cambridge
-{: .collection-card__meta }
-
-### [Simon Moore](/people/simon-moore/)
-{: .collection-card__title }
-
-Professor Simon Moore is Professor of Computer Engineering at the University of Cambridge, where he leads research in computer architecture with a focus on secure and ...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/tariq-kurd/1284cdf835ad-tariq-kurd.webp){: .image-full }
-
-Codasip
-{: .collection-card__meta }
-
-### [Tariq Kurd](/people/tariq-kurd/)
-{: .collection-card__title }
-
-Tariq Kurd has been involved in CPU architecture, design, and verification for over 25 years, primarily in the embedded field. He has worked on VLIW, multithreading, o...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-![](/assets/people/thomas-nyman/0e748fba225e-thomas-nyman.webp){: .image-full }
-
-Ericsson
-{: .collection-card__meta }
-
-### [Thomas Nyman](/people/thomas-nyman/)
-{: .collection-card__title }
-
-Thomas Nyman holds a position as Expert in Trusted Hardware &amp; Software Technologies at the telecommunications company Ericsson where he works with software and platfor...
-{: .collection-card__summary }
-
-View speaker
-{: .collection-card__link }
-
-## More CHERI Blossoms events
-{: id="related-series-events" }
-
-[View the complete series](/news-and-events/events-and-archive/cheri-blossoms/)
-
-![](/assets/events/cheri-blossoms-conference-2027/17bb25790594-cheri-blossoms-conference-2027.webp){: .image-full }
-
-Upcoming
-Conference
-{: .collection-card__labels }
-
-21 to 23 April 2027
-University of Cambridge, Cambridge, UK
-{: .collection-card__meta }
-
-### [CHERI Blossoms Conference 2027](/events/cheri-blossoms-conference-2027/)
-{: .collection-card__title }
-
-CHERI Blossoms Conference 2027 Pre-conference Tutorial: 21 April 2027 Main Conference Date: 22-23 April 2027 Location: Department of Computer Science and Technology – ...
-{: .collection-card__summary }
-
-View event
-{: .collection-card__link }
-
-![](/assets/events/cheri-blossoms-tutorial-2026/88adf0d2ae82-cheri-blossoms-tutorial-2026.webp){: .image-full }
-
-Past
-Tutorial
-{: .collection-card__labels }
-
-25 March 2026
-University of Cambridge, Cambridge, UK
-{: .collection-card__meta }
-
-### [Hands-on Introduction to CHERI and CHERIoT](/events/cheri-blossoms-tutorial-2026/)
-{: .collection-card__title }
-
-The CHERI Research Centre at the Computer Laboratory, Codasip, and lowRISC co-organised a comprehensive tutorial on CHERI alongside the CHERI Blossoms 2026 conference....
-{: .collection-card__summary }
-
-View event archive
-{: .collection-card__link }
-
-![](/assets/events/cheri-blossoms-conference-2025/ae43d5d29c6c-cheri-blossoms-conference-2025.webp){: .image-full }
-
-Past
-Conference
-{: .collection-card__labels }
-
-2 April 2025
-St John's College, Cambridge, UK
-{: .collection-card__meta }
-
-### [CHERI Blossoms Conference 2025](/events/cheri-blossoms-conference-2025/)
-{: .collection-card__title }
-
-The CHERI Blossoms Conference 2025 invited researchers, technologists, industry leaders, and business strategists to contribute to the advancement of digital security ...
-{: .collection-card__summary }
-
-View event archive
-{: .collection-card__link }
-
-[Back to past events](/news-and-events/events-and-archive/past-events/)
-{: .entity-back }

@@ -1,31 +1,25 @@
 ---
 title: NquiringMinds
 member: true
+summary: Secure AI Agents Our customers can develop, and deploy distributed AI agents, with high security assurances.
+  NquiringMinds combine deep security expertise with AI development capabilities into a unique distributed platform.
+membership_category: Full Member
+membership_status: Founding member
+links:
+- label: Visit member website
+  url: https://nquiringminds.com/
+  kind: website
+  primary: true
+- label: Back to all members
+  url: /alliance/leadership/members/
+  kind: navigation
+thumbnail:
+  src: /assets/organisations/nquiringminds/fbb8fe7c25c6-logo.png
+  alt: NquiringMinds logo
+  width: 2000
+  height: 394
+  fit: contain
 ---
-
-1. Alliance
-2. Members
-3. NquiringMinds
-{: .source-breadcrumbs }
-
-# NquiringMinds
-{: id="page-hero-title" .page-hero-title }
-
-Secure AI Agents Our customers can develop, and deploy distributed AI agents, with high security assurances. NquiringMinds combine deep security expertise with AI development capabilities into a unique distributed platform.
-{: .page-hero-summary }
-
-![NquiringMinds logo](/assets/organisations/nquiringminds/fbb8fe7c25c6-logo.png){: .image-left }
-{: .entity-media .entity-media--logo }
-
-Status
-: Founding member
-
-Membership
-: Full Member
-
-Website
-: [Visit member website](https://nquiringminds.com/)
-{: .entity-facts }
 
 ## Description
 {: id="description" }
@@ -46,6 +40,3 @@ Secure AI Agents Our customers can develop, and deploy distributed AI agents, wi
 {: id="open-source-assets-for-cheri" }
 
 [https://github.com/nqminds/trustnetz](https://github.com/nqminds/trustnetz) [https://github.com/nqminds/SBOM-GAP](https://github.com/nqminds/SBOM-GAP) [https://github.com/nqminds/edgesec](https://github.com/nqminds/edgesec)
-
-[Back to all members](/alliance/leadership/members/)
-{: .entity-back }

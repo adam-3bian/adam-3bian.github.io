@@ -10,18 +10,8 @@ related-pages:
 - url: /build/technology/cheri-capabilities/sealing/
   description: Some authority should be carried without being directly exercised by its holder.
   action: Read this page
+summary: Spatial memory safety prevents code from accessing memory outside the bounds authorised by a capability.
 ---
-
-1. Build
-2. Technology
-3. Spatial Memory Safety
-{: .source-breadcrumbs }
-
-# Spatial Memory Safety
-{: id="page-hero-title" .page-hero-title }
-
-Spatial memory safety prevents code from accessing memory outside the bounds authorised by a capability.
-{: .page-hero-summary }
 
 For example, a program allocates 64 bytes for a network message but accidentally reads byte 80. The allocation still exists, but the access falls outside the memory assigned to that object. This is a **spatial memory-safety violation**.
 
@@ -118,58 +108,3 @@ Spatial memory safety does not by itself prevent:
 - logic, authentication, cryptographic or side-channel flaws
 
 Spatial memory safety eliminates an important class of unsafe memory access, but object lifetime is a separate problem. Continue with [Temporal Memory Safety](/build/technology/temporal-memory-safety/) to understand how CHERI-based systems can address access to objects after their lifetime has ended.
-
-## Where next
-{: .where-next-title }
-
-### [Temporal Memory Safety](/build/technology/temporal-memory-safety/)
-{: .where-next-card-title }
-
-
-
-
-
-[A pointer can remain inside the correct bounds and still be unsafe.](/build/technology/temporal-memory-safety/)
-{: .where-next-summary }
-
-
-
-[Continue](/build/technology/temporal-memory-safety/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Capabilities](/build/technology/cheri-capabilities/capabilities/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A pointer bug becomes dangerous when changing a number changes authority.](/build/technology/cheri-capabilities/capabilities/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/build/technology/cheri-capabilities/capabilities/)
-{: .source-card-label }
-
-
-
-
-
-### [Sealing](/build/technology/cheri-capabilities/sealing/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Some authority should be carried without being directly exercised by its holder.](/build/technology/cheri-capabilities/sealing/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/build/technology/cheri-capabilities/sealing/)
-{: .source-card-label }

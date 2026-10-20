@@ -1,31 +1,26 @@
 ---
 title: lowRISC
 member: true
+summary: Founded in 2014 at the University of Cambridge Department of Computer Science and Technology, lowRISC is
+  a not-for-profit company/CIC that provides a neutral home for collaborative engineering to develop and maintain
+  open-source silicon designs and…
+membership_category: Full Member
+membership_status: Founding member
+links:
+- label: Visit member website
+  url: https://lowrisc.org/
+  kind: website
+  primary: true
+- label: Back to all members
+  url: /alliance/leadership/members/
+  kind: navigation
+thumbnail:
+  src: /assets/organisations/lowrisc/d432df8a7ccf-logo.png
+  alt: lowRISC logo
+  width: 1104
+  height: 279
+  fit: contain
 ---
-
-1. Alliance
-2. Members
-3. lowRISC
-{: .source-breadcrumbs }
-
-# lowRISC
-{: id="page-hero-title" .page-hero-title }
-
-Founded in 2014 at the University of Cambridge Department of Computer Science and Technology, lowRISC is a not-for-profit company/CIC that provides a neutral home for collaborative engineering to develop and maintain open-source silicon designs and…
-{: .page-hero-summary }
-
-![lowRISC logo](/assets/organisations/lowrisc/d432df8a7ccf-logo.png){: .image-left }
-{: .entity-media .entity-media--logo }
-
-Status
-: Founding member
-
-Membership
-: Full Member
-
-Website
-: [Visit member website](https://lowrisc.org/)
-{: .entity-facts }
 
 ## Description
 {: id="description" }
@@ -46,6 +41,3 @@ lowRISC is a founding member of the CHERI Alliance. Microsoft independently sele
 {: id="open-source-assets-for-cheri" }
 
 [https://www.sunburst-project.org/](https://www.sunburst-project.org/)
-
-[Back to all members](/alliance/leadership/members/)
-{: .entity-back }

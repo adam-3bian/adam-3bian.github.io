@@ -12,18 +12,9 @@ related-pages:
 - url: /news-and-events/people-and-opportunities/job-opportunities/
   description: Current job and career opportunities related to CHERI and the wider ecosystem.
   action: Read this page
+summary: Contact the Alliance for membership, working groups, certification, events, media, trademarks, or help
+  finding the right CHERI resource.
 ---
-
-1. Alliance
-2. Membership
-3. Contact the Alliance
-{: .source-breadcrumbs }
-
-# Contact the Alliance
-{: id="page-hero-title" .page-hero-title }
-
-Contact the Alliance for membership, working groups, certification, events, media, trademarks, or help finding the right CHERI resource.
-{: .page-hero-summary }
 
 ## Contact form
 {: id="contact-webform-title" }
@@ -48,58 +39,3 @@ Do not send passwords, private keys, export-controlled material, vulnerability d
 For a potential security vulnerability in a particular product or project, follow that vendor’s or project’s published security-reporting process. The Alliance does not maintain every CHERI implementation.
 
 Policy documents and programme pages may already answer formal questions. Linking the page you consulted will help the team identify whether clarification or an update is needed.
-
-## Where next
-{: .where-next-title }
-
-### [About the CHERI Alliance](/organisations/cheri-alliance/)
-{: .where-next-card-title }
-
-
-
-
-
-[Learn how the Alliance connects organisations working across the CHERI ecosystem.](/organisations/cheri-alliance/)
-{: .where-next-summary }
-
-
-
-[Continue](/organisations/cheri-alliance/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Membership Benefits &amp; Options](/alliance/membership/membership-benefits-and-options/)
-{: .related-pages-item-title }
-
-
-
-
-
-[An outline of membership benefits, participation options, and what each route is intended to support.](/alliance/membership/membership-benefits-and-options/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/alliance/membership/membership-benefits-and-options/)
-{: .source-card-label }
-
-
-
-
-
-### [Job Opportunities](/news-and-events/people-and-opportunities/job-opportunities/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Current job and career opportunities related to CHERI and the wider ecosystem.](/news-and-events/people-and-opportunities/job-opportunities/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/news-and-events/people-and-opportunities/job-opportunities/)
-{: .source-card-label }

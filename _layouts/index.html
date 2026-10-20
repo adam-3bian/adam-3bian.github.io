@@ -4,7 +4,7 @@ layout: page
 {% if page.sections %}
   {% include section-cards.html content=content groups=page.sections %}
 {% else %}{{ content }}{% endif %}
-{% assign child_pages = site.html_pages | concat: site.documents | where_exp: 'item', 'item.redirect_to == nil' | where_exp: 'item', 'item.redirect == nil' | where_exp: 'item', 'item.collection != "redirects"' | where_exp: 'item', 'item.alternate != true' | where: 'parent', page.url | sort_natural: 'title' %}
+{% assign child_pages = site.pages | concat: site.documents | where_exp: 'item', 'item.redirect_to == nil' | where_exp: 'item', 'item.redirect == nil' | where_exp: 'item', 'item.collection != "redirects"' | where_exp: 'item', 'item.alternate != true' | where: 'parent', page.url | sort_natural: 'title' %}
 {% if child_pages.size > 0 %}
 <section class="index-list" aria-labelledby="index-pages">
   <h2 id="index-pages">{{ page.listing.title | default: 'Explore this section' | escape }}</h2>

@@ -5,20 +5,11 @@ where-next:
   url: /discover/why-cheri/approaches-to-memory-safety/
 related-pages:
 - url: /discover/why-cheri/vulnerabilities-in-everyday-technology/
-  description: See how a memory mistake in a connected product can put private information, device control, and wider networks at risk.
+  description: See how a memory mistake in a connected product can put private information, device control, and
+    wider networks at risk.
   action: Read this page
+summary: Passwords, encryption, testing, and updates reduce risk, but memory vulnerabilities can still remain.
 ---
-
-1. Discover
-2. Why CHERI
-3. Why Existing Defences Are Not Enough
-{: .source-breadcrumbs }
-
-# Why Existing Defences Are Not Enough
-{: id="page-hero-title" .page-hero-title }
-
-Passwords, encryption, testing, and updates reduce risk, but memory vulnerabilities can still remain.
-{: .page-hero-summary }
 
 Passwords, encryption, testing, and updates all improve security. They help prevent attacks, protect data, find defects, and fix known vulnerabilities. But they cannot guarantee that software will always handle memory safely.
 
@@ -73,39 +64,3 @@ CHERI does not replace passwords, encryption, testing, updates, or secure softwa
 The goal is simple: one software mistake should not be enough to compromise an entire system.
 
 Further reading: [CISA’s case for memory-safe roadmaps](https://www.cisa.gov/case-memory-safe-roadmaps).
-
-## Where next
-{: .where-next-title }
-
-### [Approaches to Memory Safety](/discover/why-cheri/approaches-to-memory-safety/)
-{: .where-next-card-title }
-
-
-
-
-
-[A comparison of major approaches to reducing memory-safety risk, including languages, tooling, hardware, and isolation.](/discover/why-cheri/approaches-to-memory-safety/)
-{: .where-next-summary }
-
-
-
-[Continue](/discover/why-cheri/approaches-to-memory-safety/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Vulnerabilities in Everyday Technology](/discover/why-cheri/vulnerabilities-in-everyday-technology/)
-{: .related-pages-item-title }
-
-
-
-
-
-[See how a memory mistake in a connected product can put private information, device control, and wider networks at risk.](/discover/why-cheri/vulnerabilities-in-everyday-technology/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/why-cheri/vulnerabilities-in-everyday-technology/)
-{: .source-card-label }

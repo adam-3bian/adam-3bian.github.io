@@ -3,9 +3,6 @@ title: Adversarial CHERI Exercises and Missions on CHERI-seL4 microkernel and CH
 permalink: /reference/CHERI-seL4-Exercises/print.html
 ---
 
-# [Adversarial CHERI Exercises and Missions on CHERI-seL4 microkernel and CHERI-Microkit](/reference/CHERI-seL4-Exercises/print.html#adversarial-cheri-exercises-and-missions-on-cheri-sel4-microkernel-and-cheri-microkit)
-{: id="adversarial-cheri-exercises-and-missions-on-cheri-sel4-microkernel-and-cheri-microkit" }
-
 Robert N. M. Watson (University of Cambridge), Brooks Davis (SRI
 International), Wes Filardo (Microsoft Research), Jessica Clarke (University of
 Cambridge), John Baldwin (Ararat River Consulting), and Hesham Almatary
@@ -29,8 +26,7 @@ Repository](https://github.com/CHERI-Alliance/CHERI-seL4-Exercises) for the sour
 code and an issue tracker.*
 
 
-
-# [Introduction](/reference/CHERI-seL4-Exercises/print.html#introduction)
+## [Introduction](/reference/CHERI-seL4-Exercises/print.html#introduction)
 {: id="introduction" }
 
 This set of exercises and adversarial missions is intended to:
@@ -108,8 +104,7 @@ first, as a starting point for understanding potential CHERI-RISC-V
 exploitability.
 
 
-
-# [Background reading](/reference/CHERI-seL4-Exercises/print.html#background-reading)
+## [Background reading](/reference/CHERI-seL4-Exercises/print.html#background-reading)
 {: id="background-reading" }
 
 To perform these exercises most effectively, we recommend first building a
@@ -129,8 +124,7 @@ and Microkit:
 - [Complete spatial safety for C and C++ using CHERI capabilities](https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-949.pdf) - This PhD dissertation provides an extensive overview of the CHERI-MIPS linking model (also relevant to the current CHERI-RISC-V model), an implementation of opportunistic subobject bounds, and general C/C++ compatibility issues.
 
 
-
-# [Cross compilation and execution](/reference/CHERI-seL4-Exercises/print.html#cross-compilation-and-execution)
+## [Cross compilation and execution](/reference/CHERI-seL4-Exercises/print.html#cross-compilation-and-execution)
 {: id="cross-compilation-and-execution" }
 
 ### [Building a cross build environment with cheribuild](/reference/CHERI-seL4-Exercises/print.html#building-a-cross-build-environment-with-cheribuild)
@@ -233,8 +227,7 @@ after OpenSBI (acting as a bios) for RISC-V. For each exercise here, we will nee
 In the following section, we provide helper scripts to easily build and run the exercises on QEMU to use at your convenience. Those scripts automate the above commands so that you don't need to type them every time you change an exercise.
 
 
-
-# [Helper scripts](/reference/CHERI-seL4-Exercises/print.html#helper-scripts)
+## [Helper scripts](/reference/CHERI-seL4-Exercises/print.html#helper-scripts)
 {: id="helper-scripts" }
 
 Because the command line required to compile exercises is quite unwieldy, we've created a wrapper script to help out, shown below. If you've checked out this repository it's present in `tools/ccc`. The usage is:
@@ -696,8 +689,7 @@ Thus, over these exercises, you'll usually be using mostly using just two script
 ~~~
 
 
-
-# [Skills Development Exercises](/reference/CHERI-seL4-Exercises/print.html#skills-development-exercises-1)
+## [Skills Development Exercises](/reference/CHERI-seL4-Exercises/print.html#skills-development-exercises-1)
 {: id="skills-development-exercises-1" }
 
 For a researcher to contribute effectively to CHERI-RISC-V evaluation,
@@ -730,8 +722,7 @@ Each exercise includes:
 - Where there are exercise questions, sample answers
 
 
-
-# [Compile and run RISC-V and CHERI-RISC-V programs](/reference/CHERI-seL4-Exercises/print.html#compile-and-run-risc-v-and-cheri-risc-v-programs)
+## [Compile and run RISC-V and CHERI-RISC-V programs](/reference/CHERI-seL4-Exercises/print.html#compile-and-run-risc-v-and-cheri-risc-v-programs)
 {: id="compile-and-run-risc-v-and-cheri-risc-v-programs" }
 
 This exercise steps you through getting up and running with code compilation
@@ -800,8 +791,7 @@ void notified(void){}
    the type it points to.
 
 
-
-# [Answers - Compile and run RISC-V and CHERI-RISC-V programs](/reference/CHERI-seL4-Exercises/print.html#answers---compile-and-run-risc-v-and-cheri-risc-v-programs)
+## [Answers - Compile and run RISC-V and CHERI-RISC-V programs](/reference/CHERI-seL4-Exercises/print.html#answers---compile-and-run-risc-v-and-cheri-risc-v-programs)
 {: id="answers---compile-and-run-risc-v-and-cheri-risc-v-programs" }
 
 This exercise explores the difference in size between addresses and
@@ -836,8 +826,7 @@ cap to cap length: 16
 ~~~
 
 
-
-# [Disassemble and debug RISC-V and CHERI-RISC-V programs](/reference/CHERI-seL4-Exercises/print.html#disassemble-and-debug-risc-v-and-cheri-risc-v-programs)
+## [Disassemble and debug RISC-V and CHERI-RISC-V programs](/reference/CHERI-seL4-Exercises/print.html#disassemble-and-debug-risc-v-and-cheri-risc-v-programs)
 {: id="disassemble-and-debug-risc-v-and-cheri-risc-v-programs" }
 
 This exercise steps you through disassembling and debugging
@@ -903,8 +892,7 @@ And for CHERI-RISC-V:
     What implications does this have for attackers?
 
 
-
-# [Answers - Disassemble and debug RISC-V and CHERI-RISC-V programs](/reference/CHERI-seL4-Exercises/print.html#answers---disassemble-and-debug-risc-v-and-cheri-risc-v-programs)
+## [Answers - Disassemble and debug RISC-V and CHERI-RISC-V programs](/reference/CHERI-seL4-Exercises/print.html#answers---disassemble-and-debug-risc-v-and-cheri-risc-v-programs)
 {: id="answers---disassemble-and-debug-risc-v-and-cheri-risc-v-programs" }
 
 2. The target address of the string pointer is constructed as an integer by
@@ -972,8 +960,7 @@ pcc            0x1eed800000180020000000000200098        0x200098 <printf_+12> [V
 10. Left as an exercise to the reader.
 
 
-
-# [Demonstrate CHERI Tag Protection](/reference/CHERI-seL4-Exercises/print.html#demonstrate-cheri-tag-protection)
+## [Demonstrate CHERI Tag Protection](/reference/CHERI-seL4-Exercises/print.html#demonstrate-cheri-tag-protection)
 {: id="demonstrate-cheri-tag-protection" }
 
 This exercise demonstrates CHERI's *capability provenance tags*, in particular
@@ -1061,8 +1048,7 @@ void notified(void){}
 ~~~
 
 
-
-# [Answers](/reference/CHERI-seL4-Exercises/print.html#answers)
+## [Answers](/reference/CHERI-seL4-Exercises/print.html#answers)
 {: id="answers" }
 
 2. Example output for the baseline program:
@@ -1183,8 +1169,7 @@ void notified(void){}
    subsequent `lc` transferred this zero tag to `cs1`.)
 
 
-
-# [Exercise an inter-stack-object buffer overflow](/reference/CHERI-seL4-Exercises/print.html#exercise-an-inter-stack-object-buffer-overflow)
+## [Exercise an inter-stack-object buffer overflow](/reference/CHERI-seL4-Exercises/print.html#exercise-an-inter-stack-object-buffer-overflow)
 {: id="exercise-an-inter-stack-object-buffer-overflow" }
 
 This exercise demonstrates an inter-object buffer overflow on baseline and
@@ -1252,8 +1237,7 @@ void notified(){}
 ~~~
 
 
-
-# [Answers - Exercise an inter-stack-object buffer overflow](/reference/CHERI-seL4-Exercises/print.html#answers---exercise-an-inter-stack-object-buffer-overflow)
+## [Answers - Exercise an inter-stack-object buffer overflow](/reference/CHERI-seL4-Exercises/print.html#answers---exercise-an-inter-stack-object-buffer-overflow)
 {: id="answers---exercise-an-inter-stack-object-buffer-overflow" }
 
 2. Expected output:
@@ -1415,8 +1399,7 @@ void notified(){}
    out of bounds, clobbering a byte of the `upper` register.
 
 
-
-# [Exercise an inter-global-object buffer overflow](/reference/CHERI-seL4-Exercises/print.html#exercise-an-inter-global-object-buffer-overflow)
+## [Exercise an inter-global-object buffer overflow](/reference/CHERI-seL4-Exercises/print.html#exercise-an-inter-global-object-buffer-overflow)
 {: id="exercise-an-inter-global-object-buffer-overflow" }
 
 This exercise demonstrates an inter-object buffer overflow on baseline and
@@ -1535,8 +1518,7 @@ main_asserts(void)
 ~~~
 
 
-
-# [Answers - Exercise an inter-global-object buffer overflow](/reference/CHERI-seL4-Exercises/print.html#answers---exercise-an-inter-global-object-buffer-overflow)
+## [Answers - Exercise an inter-global-object buffer overflow](/reference/CHERI-seL4-Exercises/print.html#answers---exercise-an-inter-global-object-buffer-overflow)
 {: id="answers---exercise-an-inter-global-object-buffer-overflow" }
 
 2. Expected output:
@@ -1679,8 +1661,7 @@ main_asserts(void)
    ~~~
 
 
-
-# [Explore Subobject Bounds](/reference/CHERI-seL4-Exercises/print.html#explore-subobject-bounds)
+## [Explore Subobject Bounds](/reference/CHERI-seL4-Exercises/print.html#explore-subobject-bounds)
 {: id="explore-subobject-bounds" }
 
 In the CHERI-Microkit run-time environment, bounds are typically associated with
@@ -1769,8 +1750,7 @@ _Static_assert(sizeof(b.buffer) == offsetof(struct buf, i),
 ~~~
 
 
-
-# [Answers - Explore Subobject Bounds](/reference/CHERI-seL4-Exercises/print.html#answers---explore-subobject-bounds)
+## [Answers - Explore Subobject Bounds](/reference/CHERI-seL4-Exercises/print.html#answers---explore-subobject-bounds)
 {: id="answers---explore-subobject-bounds" }
 
 ## [Exercise a subobject buffer overflow](/reference/CHERI-seL4-Exercises/print.html#exercise-a-subobject-buffer-overflow)
@@ -1845,8 +1825,7 @@ structure.
    ~~~
 
 
-
-# [Corrupt a control-flow pointer using a subobject buffer overflow](/reference/CHERI-seL4-Exercises/print.html#corrupt-a-control-flow-pointer-using-a-subobject-buffer-overflow)
+## [Corrupt a control-flow pointer using a subobject buffer overflow](/reference/CHERI-seL4-Exercises/print.html#corrupt-a-control-flow-pointer-using-a-subobject-buffer-overflow)
 {: id="corrupt-a-control-flow-pointer-using-a-subobject-buffer-overflow" }
 
 This exercise demonstrates how CHERI pointer integrity protection prevents
@@ -1927,8 +1906,7 @@ _Static_assert(offsetof(struct buf, buffer) + sizeof(b.buffer) ==
 ~~~
 
 
-
-# [Answers - Corrupt a control-flow pointer using a subobject buffer overflow](/reference/CHERI-seL4-Exercises/print.html#answers---corrupt-a-control-flow-pointer-using-a-subobject-buffer-overflow)
+## [Answers - Corrupt a control-flow pointer using a subobject buffer overflow](/reference/CHERI-seL4-Exercises/print.html#answers---corrupt-a-control-flow-pointer-using-a-subobject-buffer-overflow)
 {: id="answers---corrupt-a-control-flow-pointer-using-a-subobject-buffer-overflow" }
 
 2. Example session:
@@ -2046,8 +2024,7 @@ ca2            0x1eed8000993800300000000aaaaaaaa        0xaaaaaaaa [I:1111:C:r.x
 The program attempted to load an instruction via an untagged capability `ca2`.
 
 
-
-# [Exercise integer-pointer type confusion bug](/reference/CHERI-seL4-Exercises/print.html#exercise-integer-pointer-type-confusion-bug)
+## [Exercise integer-pointer type confusion bug](/reference/CHERI-seL4-Exercises/print.html#exercise-integer-pointer-type-confusion-bug)
 {: id="exercise-integer-pointer-type-confusion-bug" }
 
 This exercise demonstrates how CHERI distinguishes between integer and pointer
@@ -2097,8 +2074,7 @@ void notified(void){}
    Run under QEMU and `gdb` and explain why the program crashes in the second `printf`.
 
 
-
-# [Answers: Exercise integer-pointer type confusion bug](/reference/CHERI-seL4-Exercises/print.html#answers-exercise-integer-pointer-type-confusion-bug)
+## [Answers: Exercise integer-pointer type confusion bug](/reference/CHERI-seL4-Exercises/print.html#answers-exercise-integer-pointer-type-confusion-bug)
 {: id="answers-exercise-integer-pointer-type-confusion-bug" }
 
 When the integer value is updated, with CHERI-RISC-V compilation the
@@ -2131,8 +2107,7 @@ When the `long` member was loaded and stored, it caused the tag to be
 cleared on the pointer.
 
 
-
-# [Extending heap allocators for CHERI](/reference/CHERI-seL4-Exercises/print.html#extending-heap-allocators-for-cheri)
+## [Extending heap allocators for CHERI](/reference/CHERI-seL4-Exercises/print.html#extending-heap-allocators-for-cheri)
 {: id="extending-heap-allocators-for-cheri" }
 
 CHERI's architectural protection is driven by software -- the compiler,
@@ -2389,8 +2364,7 @@ void notified(){}
 ~~~
 
 
-
-# [Answers](/reference/CHERI-seL4-Exercises/print.html#answers-1)
+## [Answers](/reference/CHERI-seL4-Exercises/print.html#answers-1)
 {: id="answers-1" }
 
 ## [Introducing heap-allocator bounds](/reference/CHERI-seL4-Exercises/print.html#introducing-heap-allocator-bounds)
@@ -2586,13 +2560,11 @@ Note that this is not a complete solution to providing spatial safety here:
 software could still accidentally pass an out-of-bounds pointer.
 
 
-
-# [Focused Adversarial Missions](/reference/CHERI-seL4-Exercises/print.html#focused-adversarial-missions-1)
+## [Focused Adversarial Missions](/reference/CHERI-seL4-Exercises/print.html#focused-adversarial-missions-1)
 {: id="focused-adversarial-missions-1" }
 
 
-
-# [Exploiting a buffer overflow to manipulate control flow](/reference/CHERI-seL4-Exercises/print.html#exploiting-a-buffer-overflow-to-manipulate-control-flow)
+## [Exploiting a buffer overflow to manipulate control flow](/reference/CHERI-seL4-Exercises/print.html#exploiting-a-buffer-overflow-to-manipulate-control-flow)
 {: id="exploiting-a-buffer-overflow-to-manipulate-control-flow" }
 
 The objective of this mission is to demonstrate arbitrary code execution
@@ -3084,8 +3056,7 @@ main_asserts(void *buf, void *fptr)
 ~~~
 
 
-
-# [Exploiting an uninitialized stack frame to manipulate control flow](/reference/CHERI-seL4-Exercises/print.html#exploiting-an-uninitialized-stack-frame-to-manipulate-control-flow)
+## [Exploiting an uninitialized stack frame to manipulate control flow](/reference/CHERI-seL4-Exercises/print.html#exploiting-an-uninitialized-stack-frame-to-manipulate-control-flow)
 {: id="exploiting-an-uninitialized-stack-frame-to-manipulate-control-flow" }
 
 The objective of this mission is to demonstrate arbitrary code
@@ -3523,8 +3494,7 @@ void notified(microkit_channel channel) {
 ~~~
 
 
-
-# [Appendix](/reference/CHERI-seL4-Exercises/print.html#appendix)
+## [Appendix](/reference/CHERI-seL4-Exercises/print.html#appendix)
 {: id="appendix" }
 
 This book and related source code are released under the following license:

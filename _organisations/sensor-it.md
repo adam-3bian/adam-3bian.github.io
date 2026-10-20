@@ -1,31 +1,24 @@
 ---
 title: Sensor IT
 member: true
+summary: Details to follow.
+membership_category: Full Member
+membership_status: Member
+links:
+- label: Visit member website
+  url: https://www.sensorit.co.uk/
+  kind: website
+  primary: true
+- label: Back to all members
+  url: /alliance/leadership/members/
+  kind: navigation
+thumbnail:
+  src: /assets/organisations/sensor-it/dc3ef17868db-logo.png
+  alt: Sensor IT
+  width: 2000
+  height: 273
+  fit: contain
 ---
-
-1. Alliance
-2. Members
-3. Sensor IT
-{: .source-breadcrumbs }
-
-# Sensor IT
-{: id="page-hero-title" .page-hero-title }
-
-Details to follow.
-{: .page-hero-summary }
-
-![Sensor IT](/assets/organisations/sensor-it/dc3ef17868db-logo.png){: .image-left }
-{: .entity-media .entity-media--logo }
-
-Status
-: Member
-
-Membership
-: Full Member
-
-Website
-: [Visit member website](https://www.sensorit.co.uk/)
-{: .entity-facts }
 
 ## Description
 {: id="description" }
@@ -36,6 +29,3 @@ Details to follow.
 {: id="cheri-activities" }
 
 Details to follow.
-
-[Back to all members](/alliance/leadership/members/)
-{: .entity-back }

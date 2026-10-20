@@ -1,26 +1,18 @@
 ---
 title: Several CHERI Alliance members win the DSbD competition to deliver new CHERI chips and software
 date: '2025-11-17T09:00:05+00:00'
+thumbnail:
+  src: /assets/shared/source-assets/dca93f847af6-cheriot-1-0-specification-released.png
+  alt: Several CHERI Alliance members win the DSbD competition to deliver new CHERI chips and software
+  width: 305
+  height: 300
+tags:
+- CHERI Alliance news
+- Ecosystem
+- Members
+summary: Exciting news for the CHERI community! The winners of the latest Digital Security by Design (DSbD) innovation
+  competitions have been announced, and once again the CHERI Alliance is right at the heart of the action.
 ---
-
-1. News &amp; Events
-2. News &amp; Analysis
-3. Several CHERI Alliance members win the DSbD competition to deliver new CHERI chips and software
-{: .source-breadcrumbs }
-
-# Several CHERI Alliance members win the DSbD competition to deliver new CHERI chips and software
-{: id="page-hero-title" .page-hero-title }
-
-*17 November 2025*{: .source-date }
-*CHERI Alliance news*{: .collection-tag }
-*Ecosystem*{: .collection-tag }
-*Members*{: .collection-tag }
-{: .collection-detail__metadata }
-
-![Several CHERI Alliance members win the DSbD competition to deliver new CHERI chips and software](/assets/shared/source-assets/dca93f847af6-cheriot-1-0-specification-released.png){: .image-full }
-{: .collection-detail__lead-image }
-
-Exciting news for the CHERI community! The winners of the latest Digital Security by Design (DSbD) innovation competitions have been announced, and once again the CHERI Alliance is right at the heart of the action.
 
 Across the two competitions – Advancing CHERI RISC-V Devices and Advancing CHERI Tools and Software – eight projects have been selected for funding. Six of the eight winners are already members of the CHERI Alliance, and with one of the remaining winners using [Codasip](/organisations/codasip/) IP, this shows the Alliance’s central role in shaping the future of secure computing! The winners are:
 

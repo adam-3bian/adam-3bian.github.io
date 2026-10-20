@@ -1,5 +1,4 @@
 markdown: kramdown
-# Event dates are occurrence dates: published upcoming events need output routes.
 future: true
 kramdown:
   input: Kramdown
@@ -35,11 +34,13 @@ exclude:
 - Gemfile.lock
 - _plugins
 - vendor
-# Retain acquired source bytes for provenance, but do not publish unused search
-# engines from the former mdBook site. No page or active component references them.
 - assets/shared/source-assets/dcabdf6735d3-searcher.js
 - assets/shared/source-assets/9da9f832380b-searcher.js
 - assets/shared/source-assets/0845a75c73d4-elasticlunr.min.js
+- requirements-dev.txt
+- dist
+- dist-baseurl
+- _site
 collections:
   people:
     output: true
@@ -71,6 +72,9 @@ collections:
   policies:
     output: true
     permalink: /policies/:name/
+  reports:
+    output: true
+    permalink: /reports/:name/
 excerpt_separator: ''
 defaults:
 - scope:
@@ -79,7 +83,7 @@ defaults:
     layout: page
     render_with_liquid: false
     theme: light
-    hero: true
+    hero: false
     image-overlay: true
 - scope:
     path: pages/index.md
@@ -89,56 +93,62 @@ defaults:
     path: ''
     type: people
   values:
-    layout: person
+    layout: detail
     parent: /people/
 - scope:
     path: ''
     type: organisations
   values:
-    layout: member
+    layout: detail
     parent: /organisations/
 - scope:
     path: ''
     type: events
   values:
-    layout: event
+    layout: detail
     parent: /events/
 - scope:
     path: ''
     type: news
   values:
-    layout: post
+    layout: article
     parent: /news/
 - scope:
     path: ''
     type: papers
   values:
     parent: /papers/
+    layout: detail
 - scope:
     path: ''
     type: hardware
   values:
     parent: /hardware/
+    layout: detail
 - scope:
     path: ''
     type: software
   values:
     parent: /software/
+    layout: detail
 - scope:
     path: ''
     type: groups
   values:
     parent: /groups/
+    layout: detail
 - scope:
     path: ''
     type: guides
   values:
     parent: /guides/
+    layout: detail
 - scope:
     path: ''
     type: policies
   values:
     parent: /policies/
+    layout: detail
 - scope:
     path: pages/discover
   values:
@@ -159,9 +169,14 @@ defaults:
     path: pages/news-and-events
   values:
     parent: /news-and-events/
+- scope:
+    path: ''
+    type: reports
+  values:
+    layout: detail
+    parent: /discover/resources/reports-and-white-papers/
 title: CHERI Alliance
-description: 'CHERI Alliance: hardware-enforced memory safety, secure software and
-  the CHERI community.'
+description: 'CHERI Alliance: hardware-enforced memory safety, secure software and the CHERI community.'
 lang: en-GB
 url: https://adam-3bian.github.io
 baseurl: ''
@@ -273,16 +288,6 @@ navigation:
       links:
       - title: How CHERI Capabilities work
         url: /build/technology/how-cheri-capabilities-work/
-#      - title: Tags & Validity
-#        url: /build/technology/tags-and-validity/
-#      - title: Bounds
-#        url: /build/technology/bounds/
-#      - title: Permissions
-#        url: /build/technology/permissions/
-#      - title: Provenance
-#        url: /build/technology/provenance/
-#      - title: Sealing
-#        url: /build/technology/sealing/
       - title: Spatial Memory Safety
         url: /build/technology/spatial-memory-safety/
       - title: Temporal Memory Safety
@@ -297,8 +302,6 @@ navigation:
         url: /build/technology/cheri-and-rust-technical/
     - title: Platforms
       links:
-#      - title: Platform Comparison
-#        url: /build/platforms/platform-comparison/
       - title: CHERI Products
         url: /build/platforms/cheri-products/
       - title: Morello
@@ -313,8 +316,6 @@ navigation:
         url: /hardware/fpga-platforms/
       - title: Simulators
         url: /software/simulators/
-#      - title: Hardware
-#        url: /hardware/
     - title: Software Ecosystem
       links:
       - title: Software Ecosystem
@@ -475,7 +476,6 @@ navigation:
     target: _blank
     rel: noopener noreferrer
 timezone: Europe/London
-
 subscribe:
   enabled: true
   title: Stay connected with CHERI

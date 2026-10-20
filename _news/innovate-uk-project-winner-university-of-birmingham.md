@@ -1,27 +1,23 @@
 ---
 title: 'Innovate UK Project Winner: University of Birmingham'
 date: '2025-11-20T10:00:32+00:00'
-authors: [mihai-ordean]
+authors:
+- mihai-ordean
+thumbnail:
+  src: /assets/news/innovate-uk-project-winner-university-of-birmingham/fdb47b11533a-hero.png
+  alt: 'Innovate UK Project Winner: University of Birmingham'
+  width: 1024
+  height: 568
+tags:
+- CHERI Alliance news
+- Ecosystem
+- Members
+summary: At the [University of Birmingham, in the Centre for Cyber Security and Privacy](/organisations/university-of-birmingham/),
+  we have over 15 years of combined experience working on the CHERI (Capability Hardware Enhanced RISC Instructions)
+  architectures.
 ---
 
-1. News &amp; Events
-2. News &amp; Analysis
-3. Innovate UK Project Winner: University of Birmingham
-{: .source-breadcrumbs }
-
-# Innovate UK Project Winner: University of Birmingham
-{: id="page-hero-title" .page-hero-title }
-
-*20 November 2025*{: .source-date }
-*CHERI Alliance news*{: .collection-tag }
-*Ecosystem*{: .collection-tag }
-*Members*{: .collection-tag }
-{: .collection-detail__metadata }
-
-![Innovate UK Project Winner: University of Birmingham](/assets/news/innovate-uk-project-winner-university-of-birmingham/fdb47b11533a-hero.png){: .image-full }
-{: .collection-detail__lead-image }
-
-At the [University of Birmingham, in the Centre for Cyber Security and Privacy](/organisations/university-of-birmingham/), we have over 15 years of combined experience working on the CHERI (Capability Hardware Enhanced RISC Instructions) architectures. Over the years, we have made multiple contributions to the development of CHERI, with a particular focus on confidential computing and trusted execution. One of the domains where these advances can have significant impact is real-time operating systems (RTOS), which are widely used in embedded systems and IoT devices.
+Over the years, we have made multiple contributions to the development of CHERI, with a particular focus on confidential computing and trusted execution. One of the domains where these advances can have significant impact is real-time operating systems (RTOS), which are widely used in embedded systems and IoT devices.
 
 The Zephyr RTOS is one such system that is integrated into many real-world products, ranging from e-scooters to wind turbines. A major benefit of Zephyr is its modular and platform-independent nature, making it easy to move applications onto new processor generations. However, being written in the C programming language, this operating system has suffered from many security vulnerabilities due to lack of memory safety.
 

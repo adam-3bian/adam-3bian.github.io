@@ -1,12 +1,16 @@
 ---
 title: Hildebrand
 member: true
+thumbnail:
+  src: /assets/organisations/hildebrand/80cf16d93e-hildebrandlogo-1024x177.png
+  alt: Hildebrand logo
+  width: 1024
+  height: 177
+  fit: contain
+thumbnail_in_body: true
 ---
 
 [All Members](https://cheri-alliance.org/member/)
-
-
-# Hildebrand
 
 
 - Membership: [Full Member](https://cheri-alliance.org/member-type/full-member/)

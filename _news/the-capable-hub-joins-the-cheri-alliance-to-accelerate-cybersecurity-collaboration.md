@@ -1,29 +1,23 @@
 ---
 title: The Capable Hub joins the CHERI Alliance to accelerate cybersecurity collaboration
 date: '2026-02-19T10:00:12+00:00'
+thumbnail:
+  src: /assets/news/the-capable-hub-joins-the-cheri-alliance-to-accelerate-cybersecurity-collaboration/e99d863fe4-hero.png
+  alt: Welcome The Capable Hub
+  width: 2000
+  height: 1500
+tags:
+- CHERI Alliance news
+- Ecosystem
+- Members
+summary: We are excited to announce that [The Capable Hub](/organisations/the-capable-hub/) has become a member
+  of the CHERI Alliance, a significant step forward in our mission to accelerate CHERI adoption.
 ---
-
-1. News &amp; Events
-2. News &amp; Analysis
-3. The Capable Hub joins the CHERI Alliance to accelerate cybersecurity collaboration
-{: .source-breadcrumbs }
-
-# The Capable Hub joins the CHERI Alliance to accelerate cybersecurity collaboration
-{: id="page-hero-title" .page-hero-title }
-
-*19 February 2026*{: .source-date }
-*CHERI Alliance news*{: .collection-tag }
-*Ecosystem*{: .collection-tag }
-*Members*{: .collection-tag }
-{: .collection-detail__metadata }
-
-![Welcome The Capable Hub](/assets/news/the-capable-hub-joins-the-cheri-alliance-to-accelerate-cybersecurity-collaboration/e99d863fe4-hero.png){: .image-full }
-{: .collection-detail__lead-image }
 
 ## Strengthening the CHERI ecosystem through Open-Source innovation
 {: id="strengthening-the-cheri-ecosystem-through-open-source-innovation" }
 
-We are excited to announce that [The Capable Hub](/organisations/the-capable-hub/) has become a member of the CHERI Alliance, a significant step forward in our mission to accelerate CHERI adoption. Improving the availability, quality, and upstream alignment of CHERI-enabled open-source software will make the design of CHERI-secured products easier and faster. This partnership underscores our collective commitment to fostering a collaborative ecosystem that enables companies to develop more secure products and drives innovation in cybersecurity.
+Improving the availability, quality, and upstream alignment of CHERI-enabled open-source software will make the design of CHERI-secured products easier and faster. This partnership underscores our collective commitment to fostering a collaborative ecosystem that enables companies to develop more secure products and drives innovation in cybersecurity.
 
 The Capable Hub joins the CHERI Alliance. It will provide dedicated engineering resources and will collaborate with [other members](/alliance/leadership/members/), and in particular with the CHERI Research Centre from [University of Cambridge](/organisations/university-of-cambridge/), to accelerate the transfer of the open technology from academia to industry. This will benefit all development teams, but also ultimately users of digital devices who will get rid of the most common causes of cyberattacks.
 

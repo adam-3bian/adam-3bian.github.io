@@ -3,9 +3,6 @@ title: Skills Development Exercises
 permalink: /reference/CHERI-seL4-Exercises/exercises/index.html
 ---
 
-# [Skills Development Exercises](/reference/CHERI-seL4-Exercises/exercises/index.html#skills-development-exercises)
-{: id="skills-development-exercises" }
-
 For a researcher to contribute effectively to CHERI-RISC-V evaluation,
 they will need a baseline skill-set that includes significant existing
 experience with:

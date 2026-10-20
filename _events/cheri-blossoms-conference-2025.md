@@ -1,41 +1,86 @@
 ---
 title: CHERI Blossoms Conference 2025
-speakers: [alastair-beresford, alfredo-mazzinghi, ashish-darbari, ben-fletcher, bradley-finn, carl-shaw, david-chisnall,
-  dmitriy-yeliseyev, domagoj-stolfa, gavin-ferris, haydn-povey, hesham-almatary, jeremy-singer, john-goodacre, jonathan-woodruff,
-  joshua-lant, kevin-brodsky, mark-batty, mark-hill, marno-van-der-maas, martin-atkins, mike-eftimakis, mike-halsall,
-  phil-day, robert-watson, simon-moore, tariq-kurd, tora-fridholm]
-date: '2025-04-02'
+speakers:
+- alastair-beresford
+- alfredo-mazzinghi
+- ashish-darbari
+- ben-fletcher
+- bradley-finn
+- carl-shaw
+- david-chisnall
+- dmitriy-yeliseyev
+- domagoj-stolfa
+- gavin-ferris
+- haydn-povey
+- hesham-almatary
+- jeremy-singer
+- john-goodacre
+- jonathan-woodruff
+- joshua-lant
+- kevin-brodsky
+- mark-batty
+- mark-hill
+- marno-van-der-maas
+- martin-atkins
+- mike-eftimakis
+- mike-halsall
+- phil-day
+- robert-watson
+- simon-moore
+- tariq-kurd
+- tora-fridholm
+start_date: '2025-04-02'
+summary: Where the CHERI technology, business and research communities came together in Cambridge.
+format: Conference
+location: St John's College, Cambridge, UK
+series: CHERI Blossoms
+links:
+- label: CHERI Blossoms
+  url: /news-and-events/events-and-archive/cheri-blossoms/
+  kind: resource
+- label: Back to past events
+  url: /news-and-events/events-and-archive/past-events/
+  kind: navigation
+date_note: 2 April 2025
+thumbnail:
+  src: /assets/events/cheri-blossoms-conference-2025/838829e021a2-hero.png
+  alt: CHERI Blossoms Conference 2025
+  width: 1968
+  height: 2000
+card_sections:
+- title: More CHERI Blossoms events
+  id: related-series-events
+  groups:
+  - entries:
+    - url: /events/cheri-blossoms-conference-2027/
+      description: 'CHERI Blossoms Conference 2027 Pre-conference Tutorial: 21 April 2027 Main Conference Date:
+        22-23 April 2027 Location: Department of Computer Science and Technology – ...'
+      context: '21 to 23 April 2027
+
+        University of Cambridge, Cambridge, UK'
+      labels: 'Upcoming
+
+        Conference'
+    - url: /events/cheri-blossoms-tutorial-2026/
+      description: The CHERI Research Centre at the Computer Laboratory, Codasip, and lowRISC co-organised a comprehensive
+        tutorial on CHERI alongside the CHERI Blossoms 2026 conference....
+      context: '25 March 2026
+
+        University of Cambridge, Cambridge, UK'
+      labels: 'Past
+
+        Tutorial'
+    - url: /events/cheri-blossoms-conference-2026/
+      description: The CHERI Blossoms Conference 2026 was the must-attend event for forward-thinking decision-makers
+        and innovators! This exclusive gathering was tailored for industry le...
+      context: '25 to 27 March 2026
+
+        University of Cambridge, Cambridge, UK'
+      labels: 'Past
+
+        Conference'
+    intro: '[View the complete series](/news-and-events/events-and-archive/cheri-blossoms/)'
 ---
-
-1. News &amp; Events
-2. Events &amp; Archive
-3. CHERI Blossoms Conference 2025
-{: .source-breadcrumbs }
-
-# CHERI Blossoms Conference 2025
-{: id="page-hero-title" .page-hero-title }
-
-Where the CHERI technology, business and research communities came together in Cambridge.
-{: .page-hero-summary }
-
-![CHERI Blossoms Conference 2025](/assets/events/cheri-blossoms-conference-2025/838829e021a2-hero.png){: .image-left }
-{: .entity-media .entity-media--event }
-
-Status
-: Past
-
-Format
-: Conference
-
-Date
-: 2 April 2025
-
-Location
-: St John's College, Cambridge, UK
-
-Series
-: [CHERI Blossoms](/news-and-events/events-and-archive/cheri-blossoms/)
-{: .entity-facts }
 
 ## Cultivating a Safer Digital Future - from Tech to Business
 {: id="cultivating-a-safer-digital-future---from-tech-to-business" }
@@ -125,68 +170,3 @@ This combination of research, implementation, adoption and community would becom
 St. John’s College, St. Johns Street, Cambridge, CB2 1TP
 
 [View map](https://maps.google.com/maps?q=St.%20John%27s%20College%2C%20St.%20Johns%20Street%2C%20Cambridge%2C%20CB2%201TP&t=m&z=13&output=embed&iwloc=near)
-
-## More CHERI Blossoms events
-{: id="related-series-events" }
-
-[View the complete series](/news-and-events/events-and-archive/cheri-blossoms/)
-
-![](/assets/events/cheri-blossoms-conference-2027/17bb25790594-cheri-blossoms-conference-2027.webp){: .image-full }
-
-Upcoming
-Conference
-{: .collection-card__labels }
-
-21 to 23 April 2027
-University of Cambridge, Cambridge, UK
-{: .collection-card__meta }
-
-### [CHERI Blossoms Conference 2027](/events/cheri-blossoms-conference-2027/)
-{: .collection-card__title }
-
-CHERI Blossoms Conference 2027 Pre-conference Tutorial: 21 April 2027 Main Conference Date: 22-23 April 2027 Location: Department of Computer Science and Technology – ...
-{: .collection-card__summary }
-
-View event
-{: .collection-card__link }
-
-![](/assets/events/cheri-blossoms-tutorial-2026/88adf0d2ae82-cheri-blossoms-tutorial-2026.webp){: .image-full }
-
-Past
-Tutorial
-{: .collection-card__labels }
-
-25 March 2026
-University of Cambridge, Cambridge, UK
-{: .collection-card__meta }
-
-### [Hands-on Introduction to CHERI and CHERIoT](/events/cheri-blossoms-tutorial-2026/)
-{: .collection-card__title }
-
-The CHERI Research Centre at the Computer Laboratory, Codasip, and lowRISC co-organised a comprehensive tutorial on CHERI alongside the CHERI Blossoms 2026 conference....
-{: .collection-card__summary }
-
-View event archive
-{: .collection-card__link }
-
-![](/assets/events/cheri-blossoms-conference-2026/1e39a7b87075-cheri-blossoms-conference-2026.webp){: .image-full }
-
-Past
-Conference
-{: .collection-card__labels }
-
-25 to 27 March 2026
-University of Cambridge, Cambridge, UK
-{: .collection-card__meta }
-
-### [CHERI Blossoms Conference 2026](/events/cheri-blossoms-conference-2026/)
-{: .collection-card__title }
-
-The CHERI Blossoms Conference 2026 was the must-attend event for forward-thinking decision-makers and innovators! This exclusive gathering was tailored for industry le...
-{: .collection-card__summary }
-
-View event archive
-{: .collection-card__link }
-
-[Back to past events](/news-and-events/events-and-archive/past-events/)
-{: .entity-back }

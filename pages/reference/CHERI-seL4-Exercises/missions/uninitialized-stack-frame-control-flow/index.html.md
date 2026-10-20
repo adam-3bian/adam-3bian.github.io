@@ -3,9 +3,6 @@ title: Exploiting an uninitialized stack frame to manipulate control flow
 permalink: /reference/CHERI-seL4-Exercises/missions/uninitialized-stack-frame-control-flow/index.html
 ---
 
-# [Exploiting an uninitialized stack frame to manipulate control flow](/reference/CHERI-seL4-Exercises/missions/uninitialized-stack-frame-control-flow/index.html#exploiting-an-uninitialized-stack-frame-to-manipulate-control-flow)
-{: id="exploiting-an-uninitialized-stack-frame-to-manipulate-control-flow" }
-
 The objective of this mission is to demonstrate arbitrary code
 execution through the use of uninitialized variables on the stack,
 despite CHERI protections. You will attack three different versions
@@ -22,7 +19,7 @@ The success condition for an exploit, given attacker-provided input
 overriding an on-stack buffer, is to modify control flow in the program
 such that the `success` function is executed.
 
-### [Program overview](/reference/CHERI-seL4-Exercises/missions/uninitialized-stack-frame-control-flow/index.html#program-overview)
+## [Program overview](/reference/CHERI-seL4-Exercises/missions/uninitialized-stack-frame-control-flow/index.html#program-overview)
 {: id="program-overview" }
 
 Cookie monster is always hungry for more cookies. You can sate the
@@ -37,14 +34,14 @@ a pointer without providing any new cookies. Whitespace is ignored in
 the input line. Input is terminated either by a newline or end of
 file (EOF).
 
-### [Building and running](/reference/CHERI-seL4-Exercises/missions/uninitialized-stack-frame-control-flow/index.html#building-and-running)
+## [Building and running](/reference/CHERI-seL4-Exercises/missions/uninitialized-stack-frame-control-flow/index.html#building-and-running)
 {: id="building-and-running" }
 
 The hardened CHERI-RISC-V version with stack clearing is built by
 adding `-ftrivial-auto-var-init=zero -enable-trivial-auto-var-init-zero-knowing-it-will-be-removed-from-clang`
 to the compiler command line.
 
-### [Source code](/reference/CHERI-seL4-Exercises/missions/uninitialized-stack-frame-control-flow/index.html#source-code)
+## [Source code](/reference/CHERI-seL4-Exercises/missions/uninitialized-stack-frame-control-flow/index.html#source-code)
 {: id="source-code" }
 
 ***stack-mission.c***

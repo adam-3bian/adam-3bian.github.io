@@ -1,14 +1,12 @@
 ---
 title: CHERI ALLIANCE CIC IP Policy
+version: '1.01'
+document_date: 2024-08
+alternate: true
+canonical_url: /policies/intellectual-property-policy/
 ---
 
-# CHERI ALLIANCE CIC IP Policy
-
-
-**Version:** 1.01  
-**Date:** August 2024
-
-### 1 Introduction
+## 1 Introduction
 {: id="bkmrk-1-introduction" }
 
 1.1 This document (“the **IP Policy**“) contains the regulations of the Alliance in relation to Intellectual Property Rights (as defined below).
@@ -17,7 +15,7 @@ title: CHERI ALLIANCE CIC IP Policy
 1.2 Unless expressly specified by the Alliance in writing, the IP Policy is applicable to any activities undertaken by the Alliance or its committees and working groups.
 {: id="bkmrk-1.2-unless-expressly" }
 
-### 2 Definitions and Interpretation
+## 2 Definitions and Interpretation
 {: id="bkmrk-2-definitions-and-in" }
 
 2.1 Definitions
@@ -102,7 +100,7 @@ b) receive an Undertaking pursuant to Clause 6 for any Essential IPR in relation
 2.3 References to any gender shall include the other and words in the singular include the plural and vice versa.
 {: id="bkmrk-2.3-references-to-an" }
 
-### 3 Contributions
+## 3 Contributions
 {: id="bkmrk-3-contributions" }
 
 3.1 The ownership of the copyright in Work Product created by the Alliance or any of its Working Groups shall vest in the Alliance but due acknowledgement shall be given to copyrights owned by third parties that are identifiable in the Alliance copyrighted works.
@@ -141,7 +139,7 @@ determine whether its implementation conforms with that Standard.
 3.8 Each Member agrees that any Contributions shall be deemed to be made on a nonconfidential basis and that the Alliance shall be free to disclose these submissions for the purposes of developing and adopting any Standards and in connection with Project activities.
 {: id="bkmrk-3.8-each-member-agre" }
 
-### 4 Declarations of Essential IPR
+## 4 Declarations of Essential IPR
 {: id="bkmrk-4-declarations-of-es" }
 
 4.1 Each Member shall use its reasonable endeavours, in particular during the development of a Standard where it participates, to inform the Alliance of any Essential IPRs in a timely fashion.
@@ -190,13 +188,13 @@ that the Member or any of its Affiliates hold.
 4.9 Any incorporation of declared Essential IPR shall be subject to approval by the Alliance.
 {: id="bkmrk-4.9-any-incorporatio" }
 
-### 5 Non-Assertion of Essential IPR
+## 5 Non-Assertion of Essential IPR
 {: id="bkmrk-5-non-assertion-of-e" }
 
 5.1 Each Member agrees never to assert its Essential IPR against the Alliance in respect of the Alliance’s publications and promotions of any Work Product or Standards.
 {: id="bkmrk-5.1-each-member-agre" }
 
-### 6 Licensing of Essential IPR
+## 6 Licensing of Essential IPR
 {: id="bkmrk-6-licensing-of-essen" }
 
 6.1 Save in the case of any Essential Patents identified in accordance with Clause 4.4 and subject to Clause 8.1, a Member will have given an undertaking that it is prepared to grant licences:
@@ -225,7 +223,7 @@ transfers with the goal of binding all successors-in-interest. The Undertaking s
 6.5 It is acknowledged that the Member, owning any Essential IPR, shall be free to exploit such IPR outside the scope of the Alliance at its absolute discretion and any revenues or other benefits, which the Member may receive from such exploitation of such Essential IPR, shall be for the Member’s own account.
 {: id="bkmrk-6.5-it-is-acknowledg" }
 
-### 7 Non-Availability/Refusal to License
+## 7 Non-Availability/Refusal to License
 {: id="bkmrk-7-non-availability%2Fr" }
 
 7.1 A Member shall only be able to exercise its Right of Refusal to License with regards to Essential Patents, but no other Essential IPR, which is:
@@ -253,7 +251,7 @@ a) is not blocked by that IPR; and
 b) satisfies the Alliance’s Requirements.
 {: id="bkmrk-a%29-is-not-blocked-by" }
 
-### 8 Disputes regarding Ownership of Essential IPR
+## 8 Disputes regarding Ownership of Essential IPR
 {: id="bkmrk-8-disputes-regarding" }
 
 8.1 If more than one Member claims ownership of any Essential IPR, the Members claiming ownership shall:
@@ -263,7 +261,7 @@ a) act in good faith when negotiating and resolving the question of ownership; a
 b) if they cannot agree on who owns the Essential IPR pursuant to Clause 8.1a), have the right to seek redress from the courts against each other in order to resolve the matter.
 {: id="bkmrk-a%29-act-in-good-faith" }
 
-### 9 General
+## 9 General
 {: id="bkmrk-9-general" }
 
 9.1 The Alliance will seek to publish all Work Product to the public under permissive opensource licenses.

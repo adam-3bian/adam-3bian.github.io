@@ -13,18 +13,9 @@ related-pages:
   title: Current members
   description: Discover the members of the CHERI Alliance.
   action: Read this page
+display_title: About the CHERI Alliance
+summary: Building the ecosystem behind memory-safe computing.
 ---
-
-1. Alliance
-2. About &amp; Governance
-3. About the CHERI Alliance
-{: .source-breadcrumbs }
-
-# About the CHERI Alliance
-{: id="page-hero-title" .page-hero-title }
-
-Building the ecosystem behind memory-safe computing.
-{: .page-hero-summary }
 
 The CHERI Alliance brings together industry, research, government, and open-source communities to accelerate the adoption of CHERI technology. As a neutral international non-profit organisation based in Cambridge, it helps connect the people, projects, and organisations building CHERI into real-world products and platforms.
 
@@ -81,77 +72,3 @@ Administrative details:
 | **Legal address:** | Salisbury House, Station Road, Cambridge CB1 2LA, United Kingdom |
 | **Company number:** | [15516512](https://find-and-update.company-information.service.gov.uk/company/15516512) |
 | **Company directors:** | [Mike Eftimakis](/people/mike-eftimakis/), [Robert Watson](/people/robert-watson/), [Mike Halsall](/people/mike-halsall/), [Gavin Ferris](/people/gavin-ferris/) |
-
-## Where next
-{: .where-next-title }
-
-### [Mission &amp; Role](/alliance/about-and-governance/mission-and-role/)
-{: .where-next-card-title }
-
-
-
-
-
-[Learn more about the Alliance's purpose, objectives, and responsibilities.](/alliance/about-and-governance/mission-and-role/)
-{: .where-next-summary }
-
-
-
-[Continue](/alliance/about-and-governance/mission-and-role/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Governance](/alliance/about-and-governance/governance/)
-{: .related-pages-item-title }
-
-
-
-
-
-[How priorities and responsibilities are organised.](/alliance/about-and-governance/governance/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/alliance/about-and-governance/governance/)
-{: .source-card-label }
-
-
-
-
-
-### [Why Join?](/alliance/membership/why-join/)
-{: .related-pages-item-title }
-
-
-
-
-
-[All the good reasons to join the Alliance.](/alliance/membership/why-join/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/alliance/membership/why-join/)
-{: .source-card-label }
-
-
-
-
-
-### [Current members](/alliance/leadership/members/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Discover the members of the CHERI Alliance.](/alliance/leadership/members/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/alliance/leadership/members/)
-{: .source-card-label }

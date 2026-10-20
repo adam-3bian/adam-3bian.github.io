@@ -5,10 +5,11 @@ layout: index
 sections:
 - presentation: cards
   columns: 2
-  headings: ["Make the business case", "Plan adoption"]
+  headings:
+  - Make the business case
+  - Plan adoption
+hero: true
 ---
-
-# Adopt CHERI
 
 ## Make the business case
 

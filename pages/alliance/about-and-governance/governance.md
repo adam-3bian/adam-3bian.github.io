@@ -12,18 +12,9 @@ related-pages:
 - url: /alliance/about-and-governance/mission-and-role/
   description: A statement of what the CHERI Alliance exists to support and the boundaries of its role.
   action: Read this page
+summary: Alliance governance separates organisational oversight from focused member collaboration, with published
+  policies setting clear boundaries for participation.
 ---
-
-1. Alliance
-2. About &amp; Governance
-3. Governance
-{: .source-breadcrumbs }
-
-# Governance
-{: id="page-hero-title" .page-hero-title }
-
-Alliance governance separates organisational oversight from focused member collaboration, with published policies setting clear boundaries for participation.
-{: .page-hero-summary }
 
 Clear governance allows organisations with different commercial, research, and public interests to collaborate with confidence. It defines who sets direction, how technical work is organised, and which rules apply.
 
@@ -61,58 +52,3 @@ Alliance activity is governed by published [legal and policy documents](/policie
 Participants should consult the current policy before contributing or using Alliance material. Questions about authority, conflicts, policy application, or formal records should be directed to the Alliance rather than inferred from a working-group discussion.
 
 This structure lets technical experts move work forward while keeping organisational accountability and collaboration rules visible.
-
-## Where next
-{: .where-next-title }
-
-### [Technical Leadership](https://cheri-alliance.github.io/alliance/about-and-governance/technical-leadership/)
-{: .where-next-card-title }
-
-
-
-
-
-[An overview of the technical leadership that guides Alliance priorities and working activity.](https://cheri-alliance.github.io/alliance/about-and-governance/technical-leadership/)
-{: .where-next-summary }
-
-
-
-[Continue](https://cheri-alliance.github.io/alliance/about-and-governance/technical-leadership/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [About the CHERI Alliance](/organisations/cheri-alliance/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Learn how the Alliance connects organisations working across the CHERI ecosystem.](/organisations/cheri-alliance/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/organisations/cheri-alliance/)
-{: .source-card-label }
-
-
-
-
-
-### [Mission &amp; Role](/alliance/about-and-governance/mission-and-role/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A statement of what the CHERI Alliance exists to support and the boundaries of its role.](/alliance/about-and-governance/mission-and-role/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/alliance/about-and-governance/mission-and-role/)
-{: .source-card-label }

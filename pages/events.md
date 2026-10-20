@@ -3,8 +3,7 @@ title: Events
 permalink: /events/
 layout: events
 parent: /news-and-events/
+directory: true
 ---
-
-# Events
 
 Explore CHERI conferences, tutorials, workshops and webinars.

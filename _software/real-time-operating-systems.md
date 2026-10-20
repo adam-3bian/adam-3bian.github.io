@@ -13,18 +13,10 @@ related-pages:
   title: MMU-less Systems Working Group
   description: Alliance collaboration across shared-address-space and resource-constrained CHERI systems.
   action: Read this page
+summary: CHERI is being explored across several embedded and real-time software models, from capability-first RTOS
+  designs to ports of established ecosystems.
+software_type: Operating systems overview
 ---
-
-1. Build
-2. Software Ecosystem
-3. Real-Time Operating Systems
-{: .source-breadcrumbs }
-
-# Real-Time Operating Systems
-{: id="page-hero-title" .page-hero-title }
-
-CHERI is being explored across several embedded and real-time software models, from capability-first RTOS designs to ports of established ecosystems.
-{: .page-hero-summary }
 
 Embedded systems cover a wide range of timing, memory, power, assurance, device, and compatibility requirements. CHERI appears in this landscape through both new capability-oriented platforms and ports of established real-time operating systems.
 
@@ -62,77 +54,3 @@ Those differences reflect distinct product and research goals. They are not inte
 {: id="alliance-collaboration" }
 
 Related groups include [CHERI FreeRTOS](/groups/cheri-freertos/), [CHERI Zephyr](/groups/cheri-zephyr/), [CHERI for seL4](/groups/cheri-for-sel4/), and [MMU-less Systems](/groups/mmu-less-systems/).
-
-## Where next
-{: .where-next-title }
-
-### [LLVM &amp; Clang](/software/llvm-and-clang/)
-{: .where-next-card-title }
-
-
-
-
-
-[LLVM and Clang provide the compiler foundation used by current CHERI embedded environments.](/software/llvm-and-clang/)
-{: .where-next-summary }
-
-
-
-[Continue](/software/llvm-and-clang/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Zephyr](/software/cheri-zephyr/)
-{: .related-pages-item-title }
-
-
-
-
-
-[CHERI capability support within the Zephyr embedded operating-system ecosystem.](/software/cheri-zephyr/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/software/cheri-zephyr/)
-{: .source-card-label }
-
-
-
-
-
-### [CHERIoT](/hardware/cheriot/)
-{: .related-pages-item-title }
-
-
-
-
-
-[An embedded hardware-software architecture designed around CHERI compartments.](/hardware/cheriot/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/hardware/cheriot/)
-{: .source-card-label }
-
-
-
-
-
-### [MMU-less Systems Working Group](/groups/mmu-less-systems/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Alliance collaboration across shared-address-space and resource-constrained CHERI systems.](/groups/mmu-less-systems/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/groups/mmu-less-systems/)
-{: .source-card-label }

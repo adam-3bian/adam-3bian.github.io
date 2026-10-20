@@ -3,9 +3,6 @@ title: CHERI Roadmap for Linux
 permalink: /linux-roadmap/
 ---
 
-# [CHERI Roadmap for Linux](/linux-roadmap/#cheri-roadmap-for-linux)
-{: id="cheri-roadmap-for-linux" }
-
 - Allison Randal (Capabilities Limited)
 - Hesham Almatary (Capabilities Limited)
 - Kevin Brodsky (Arm Limited)

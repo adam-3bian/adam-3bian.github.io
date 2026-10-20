@@ -3,9 +3,6 @@ title: Appendix
 permalink: /reference/CHERI-seL4-Exercises/appendix/index.html
 ---
 
-# [Appendix](/reference/CHERI-seL4-Exercises/appendix/index.html#appendix)
-{: id="appendix" }
-
 This book and related source code are released under the following license:
 
 ~~~

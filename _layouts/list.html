@@ -3,8 +3,6 @@ layout: page
 ---
 {{ content }}
 {% assign items = site[page.listing.collection] | where_exp: 'item', 'item.redirect_to == nil' | where_exp: 'item', 'item.alternate != true' %}
-{% if page.listing.sort == 'date' %}{% assign items = items | sort: 'date' %}{% else %}{% assign items = items | sort_natural: 'title' %}{% endif %}
-{% if page.listing.order == 'desc' %}{% assign items = items | reverse %}{% endif %}
-<section class="index-list" aria-label="{{ page.title | escape }}" data-collection-index>
-  {% include listing.html items=items kind=page.listing.collection label=page.title compact=page.listing.compact action=page.listing.action columns=page.listing.columns %}
-</section>
+{% if page.listing.filter == 'certified' %}{% assign items = items | where_exp: 'item', 'item.certification != nil' %}{% endif %}
+{% if page.listing.collection == 'papers' or page.listing.collection == 'reports' %}{% assign items = items | sort: 'year' | reverse %}{% else %}{% assign items = items | sort_natural: 'title' %}{% endif %}
+{% include directory.html items=items kind=page.listing.collection %}

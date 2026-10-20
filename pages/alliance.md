@@ -5,10 +5,11 @@ layout: index
 sections:
 - presentation: cards
   columns: 2
-  headings: ["About the Alliance", "Take part"]
+  headings:
+  - About the Alliance
+  - Take part
+hero: true
 ---
-
-# CHERI Alliance
 
 ## About the Alliance
 

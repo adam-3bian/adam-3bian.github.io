@@ -11,18 +11,9 @@ related-pages:
   title: About the CHERI Alliance
   description: Learn how the Alliance connects organisations working across the CHERI ecosystem.
   action: Read this page
+summary: CHERI Alliance Ambassadors help explain CHERI, create resources, support events, and introduce new communities
+  to the ecosystem..
 ---
-
-1. Alliance
-2. Leadership
-3. Ambassadors
-{: .source-breadcrumbs }
-
-# Ambassadors
-{: id="page-hero-title" .page-hero-title }
-
-CHERI Alliance Ambassadors help explain CHERI, create resources, support events, and introduce new communities to the ecosystem..
-{: .page-hero-summary }
 
 CHERI adoption grows when trusted community members can explain the technology in ways that resonate with developers, researchers, industry professionals, educators, and policymakers. The Ambassador Programme supports people who want to help make those connections.
 
@@ -63,58 +54,3 @@ The programme is open to people with a genuine interest in CHERI, cybersecurity,
 Participation begins with an application and review process, followed by onboarding for successful applicants.
 
 Apply or request more information through the [Alliance contact page](/alliance/membership/contact/).
-
-## Where next
-{: .where-next-title }
-
-### [Why Join?](/alliance/membership/why-join/)
-{: .where-next-card-title }
-
-
-
-
-
-[An overview of the reasons an organisation may choose to join the CHERI Alliance.](/alliance/membership/why-join/)
-{: .where-next-summary }
-
-
-
-[Continue](/alliance/membership/why-join/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Governing Board](/alliance/leadership/governing-board/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Information on the Alliance governing board, its remit, and current representation.](/alliance/leadership/governing-board/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/alliance/leadership/governing-board/)
-{: .source-card-label }
-
-
-
-
-
-### [About the CHERI Alliance](/organisations/cheri-alliance/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Learn how the Alliance connects organisations working across the CHERI ecosystem.](/organisations/cheri-alliance/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/organisations/cheri-alliance/)
-{: .source-card-label }

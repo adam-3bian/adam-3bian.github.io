@@ -8,18 +8,8 @@ related-pages:
   title: The Business Case
   description: CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.
   action: Read this page
+summary: Applying CHERI in real products and platforms
 ---
-
-1. Adopt
-2. Assurance &amp; Adoption
-3. Case Studies
-{: .source-breadcrumbs }
-
-# Case Studies
-{: id="page-hero-title" .page-hero-title }
-
-Applying CHERI in real products and platforms
-{: .page-hero-summary }
 
 From experimental research systems to commercial processor IP, CHERI has been applied across a growing range of platforms. These case studies illustrate how capability-based protection can be integrated into existing software, embedded devices, and modern processor architectures.
 
@@ -85,39 +75,3 @@ Together, these examples show that CHERI is not limited to a single class of sys
 While each project has different goals and constraints, all demonstrate how capability protection can be introduced into real hardware and software systems, across the diversity of use cases, while reusing existing software. These examples also demonstrate that CHERI can often be introduced while **reusing** significant amounts of existing **software**, reducing the need for complete rewrites.
 
 The examples also show that CHERI is an ecosystem change rather than one processor feature. These projects have demonstrated mature toolchains, operating systems, libraries, runtimes, and debugging support, showing readiness for product development.
-
-## Where next
-{: .where-next-title }
-
-### [Assurance &amp; Certification](/adopt/assurance-and-adoption/assurance-and-certification/)
-{: .where-next-card-title }
-
-
-
-
-
-[CHERI's bounds, permissions, and compartments can support precise assurance claims without claiming security for an entire product.](/adopt/assurance-and-adoption/assurance-and-certification/)
-{: .where-next-summary }
-
-
-
-[Continue](/adopt/assurance-and-adoption/assurance-and-certification/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [The Business Case](/adopt/business-case/the-business-case/)
-{: .related-pages-item-title }
-
-
-
-
-
-[CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.](/adopt/business-case/the-business-case/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/adopt/business-case/the-business-case/)
-{: .source-card-label }

@@ -3,9 +3,6 @@ title: Exploiting a buffer overflow to manipulate control flow
 permalink: /reference/CHERI-seL4-Exercises/missions/buffer-overflow-control-flow/index.html
 ---
 
-# [Exploiting a buffer overflow to manipulate control flow](/reference/CHERI-seL4-Exercises/missions/buffer-overflow-control-flow/index.html#exploiting-a-buffer-overflow-to-manipulate-control-flow)
-{: id="exploiting-a-buffer-overflow-to-manipulate-control-flow" }
-
 The objective of this mission is to demonstrate arbitrary code execution
 through a control-flow attack, despite CHERI protections. You will attack three
 different versions of the program:

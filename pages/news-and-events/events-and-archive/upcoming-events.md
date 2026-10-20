@@ -4,18 +4,9 @@ permalink: /news-and-events/events-and-archive/upcoming-events/
 layout: events
 listing:
   status: upcoming
+directory: true
+summary: Upcoming CHERI Alliance conferences, workshops, webinars, and community sessions.
 ---
-
-1. News &amp; Events
-2. Events &amp; Archive
-3. Upcoming Events
-{: .source-breadcrumbs }
-
-# Upcoming Events
-{: id="page-hero-title" .page-hero-title }
-
-Upcoming CHERI Alliance conferences, workshops, webinars, and community sessions.
-{: .page-hero-summary }
 
 ## CHERI Alliance's events
 {: id="directory-cheri-alliance-s-events" }

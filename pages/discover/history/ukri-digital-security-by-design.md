@@ -10,18 +10,9 @@ related-pages:
 - url: /discover/history/darpa-programmes/
   description: An overview of DARPA programmes that supported CHERI research and related secure hardware work.
   action: Read this page
+summary: Digital Security by Design connected CHERI hardware, software, demonstrators, skills, and adoption work
+  across a major UK programme.
 ---
-
-1. Discover
-2. History
-3. UKRI Digital Security by Design
-{: .source-breadcrumbs }
-
-# UKRI Digital Security by Design
-{: id="page-hero-title" .page-hero-title }
-
-Digital Security by Design connected CHERI hardware, software, demonstrators, skills, and adoption work across a major UK programme.
-{: .page-hero-summary }
 
 A new architecture faces a coordination problem. Hardware suppliers need software and customers before investing in processors. Software teams need stable platforms before investing in ports. Product teams need evidence, skills, and supply routes before committing to adoption.
 
@@ -72,58 +63,3 @@ DARPA-backed work established and developed the architecture over many years. DS
 Morello itself is a prototype rather than the only future path for CHERI. Its historical importance lies in providing real silicon and a broad software environment on which organisations could test claims, identify migration costs, and build expertise.
 
 The current [UKRI Digital Security by Design page](https://www.ukri.org/what-we-do/browse-our-areas-of-investment-and-support/digital-security-by-design/) provides programme outcomes, project links, and the final impact evaluation.
-
-## Where next
-{: .where-next-title }
-
-### [Morello History](/discover/history/morello-history/)
-{: .where-next-card-title }
-
-
-
-
-
-[The place of Morello in the development and evaluation of CHERI.](/discover/history/morello-history/)
-{: .where-next-summary }
-
-
-
-[Continue](/discover/history/morello-history/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Early Capability Systems](/discover/history/early-capability-systems/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A short account of early capability-based computer systems and the ideas that influenced later work.](/discover/history/early-capability-systems/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/history/early-capability-systems/)
-{: .source-card-label }
-
-
-
-
-
-### [DARPA Programmes](/discover/history/darpa-programmes/)
-{: .related-pages-item-title }
-
-
-
-
-
-[An overview of DARPA programmes that supported CHERI research and related secure hardware work.](/discover/history/darpa-programmes/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/history/darpa-programmes/)
-{: .source-card-label }

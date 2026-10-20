@@ -4,18 +4,13 @@ related-pages:
 - url: /policies/trademark-policy/
   description: Rules for using CHERI trademarks, logos, membership marks, and certification claims.
   action: Read this page
+summary: CHERI® is an open technology, but the CHERI name and logos are protected trademarks.
+links:
+- label: Download PDF
+  url: /assets/shared/source-assets/d904a00cfb15-trademark-policy.pdf
+  kind: document
+  primary: true
 ---
-
-1. Alliance
-2. About &amp; Governance
-3. CHERI Trademark
-{: .source-breadcrumbs }
-
-# CHERI Trademark
-{: id="page-hero-title" .page-hero-title }
-
-CHERI® is an open technology, but the CHERI name and logos are protected trademarks.
-{: .page-hero-summary }
 
 CHERI® is an open technology, but there are conditions to use the CHERI brand. These apply to all.
 
@@ -48,21 +43,3 @@ Official CHERI Alliance logos are available for download below.
 Please use Alliance logos without modification. Requirements for minimum size, clear space, colours, and other branding rules are described in the branding guidelines.
 
 - Download the [logo pack](/assets/pages/alliance--about-and-governance--trademark/5ff7f679f608-cheri-alliance-logo-pack.zip)
-
-## Related content
-{: .related-pages-title }
-
-### [Trademark Policy](/policies/trademark-policy/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Rules for using CHERI trademarks, logos, membership marks, and certification claims.](/policies/trademark-policy/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/policies/trademark-policy/)
-{: .source-card-label }

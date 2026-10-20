@@ -10,19 +10,9 @@ related-pages:
 - url: /build/technology/cheri-capabilities/permissions/
   description: A pointer can be inside the correct object and still perform the wrong operation.
   action: Read this page
+summary: Capability provenance preserves the connection between a usable pointer and the valid authority from which
+  that pointer was derived.
 ---
-
-1. Build
-2. Technology
-3. CHERI Capabilities
-4. Provenance
-{: .source-breadcrumbs }
-
-# Provenance
-{: id="page-hero-title" .page-hero-title }
-
-Capability provenance preserves the connection between a usable pointer and the valid authority from which that pointer was derived.
-{: .page-hero-summary }
 
 Two pointers can contain the same address but not carry the same authority. One may have been derived from a valid capability for an allocation. The other may be an integer that happens to equal that address. CHERI preserves this distinction.
 
@@ -96,58 +86,3 @@ This makes authority flow reviewable in a way that a list of integer addresses i
 - Devices and direct-memory-access (DMA) engines need system designs that preserve or mediate capability authority.
 
 Provenance is why [Tags &amp; Validity](/build/technology/cheri-capabilities/tags-and-validity/) and monotonic derivation matter. Together they prevent “knowing the address” from becoming “owning the authority”.
-
-## Where next
-{: .where-next-title }
-
-### [Sealing](/build/technology/cheri-capabilities/sealing/)
-{: .where-next-card-title }
-
-
-
-
-
-[Some authority should be carried without being directly exercised by its holder.](/build/technology/cheri-capabilities/sealing/)
-{: .where-next-summary }
-
-
-
-[Continue](/build/technology/cheri-capabilities/sealing/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Capabilities](/build/technology/cheri-capabilities/capabilities/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A pointer bug becomes dangerous when changing a number changes authority.](/build/technology/cheri-capabilities/capabilities/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/build/technology/cheri-capabilities/capabilities/)
-{: .source-card-label }
-
-
-
-
-
-### [Permissions](/build/technology/cheri-capabilities/permissions/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A pointer can be inside the correct object and still perform the wrong operation.](/build/technology/cheri-capabilities/permissions/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/build/technology/cheri-capabilities/permissions/)
-{: .source-card-label }

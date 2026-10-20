@@ -1,31 +1,24 @@
 ---
 title: University of Edinburgh
 member: true
+summary: Details to follow.
+membership_category: Community Member
+membership_status: Member
+links:
+- label: Visit member website
+  url: https://www.ed.ac.uk/
+  kind: website
+  primary: true
+- label: Back to all members
+  url: /alliance/leadership/members/
+  kind: navigation
+thumbnail:
+  src: /assets/organisations/university-of-edinburgh/7d94ea7519fc-logo.png
+  alt: University of Edinburgh
+  width: 831
+  height: 199
+  fit: contain
 ---
-
-1. Alliance
-2. Members
-3. University of Edinburgh
-{: .source-breadcrumbs }
-
-# University of Edinburgh
-{: id="page-hero-title" .page-hero-title }
-
-Details to follow.
-{: .page-hero-summary }
-
-![University of Edinburgh](/assets/organisations/university-of-edinburgh/7d94ea7519fc-logo.png){: .image-left }
-{: .entity-media .entity-media--logo }
-
-Status
-: Member
-
-Membership
-: Community Member
-
-Website
-: [Visit member website](https://www.ed.ac.uk/)
-{: .entity-facts }
 
 ## Description
 {: id="description" }
@@ -36,6 +29,3 @@ Details to follow.
 {: id="cheri-activities" }
 
 Details to follow
-
-[Back to all members](/alliance/leadership/members/)
-{: .entity-back }

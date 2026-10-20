@@ -3,9 +3,6 @@ title: Background reading
 permalink: /reference/CHERI-seL4-Exercises/introduction/background.html
 ---
 
-# [Background reading](/reference/CHERI-seL4-Exercises/introduction/background.html#background-reading)
-{: id="background-reading" }
-
 To perform these exercises most effectively, we recommend first building a
 working knowledge of CHERI and seL4. The most critical references will be the
 *Introduction to CHERI* and *CHERI C/C++ Programming Guide*, but there is a

@@ -8,21 +8,12 @@ related-pages:
   description: A pointer bug becomes dangerous when changing a number changes authority.
   action: Read this page
 - url: /build/technology/cheri-capabilities/bounds/
-  description: A buffer overflow is possible because a pointer can leave the object it was meant to access and continue into neighbouring memory.
+  description: A buffer overflow is possible because a pointer can leave the object it was meant to access and continue
+    into neighbouring memory.
   action: Read this page
+summary: Capability permissions let software grant read, write, execute, and other authority separately instead
+  of treating every pointer as equally powerful.
 ---
-
-1. Build
-2. Technology
-3. CHERI Capabilities
-4. Permissions
-{: .source-breadcrumbs }
-
-# Permissions
-{: id="page-hero-title" .page-hero-title }
-
-Capability permissions let software grant read, write, execute, and other authority separately instead of treating every pointer as equally powerful.
-{: .page-hero-summary }
 
 A pointer to a configuration object may need to read settings but should not change them. A code pointer may need to execute instructions but should not authorise data writes. A logging component may be allowed to submit an event without gaining access to the logger’s internal state.
 
@@ -110,58 +101,3 @@ Start narrow and add a permission only when a documented operation requires it.
 - Software policy and operating-system support determine who receives the original authority.
 
 Permissions answer “what operations may this capability authorise?” [Bounds](/build/technology/cheri-capabilities/bounds/) answer “where?”, while [Provenance](/build/technology/cheri-capabilities/provenance/) and tags answer “how did this authority remain valid?”
-
-## Where next
-{: .where-next-title }
-
-### [Provenance](/build/technology/cheri-capabilities/provenance/)
-{: .where-next-card-title }
-
-
-
-
-
-[An explanation of how capability authority is derived and why arbitrary integers are not equivalent to valid capabilities.](/build/technology/cheri-capabilities/provenance/)
-{: .where-next-summary }
-
-
-
-[Continue](/build/technology/cheri-capabilities/provenance/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Capabilities](/build/technology/cheri-capabilities/capabilities/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A pointer bug becomes dangerous when changing a number changes authority.](/build/technology/cheri-capabilities/capabilities/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/build/technology/cheri-capabilities/capabilities/)
-{: .source-card-label }
-
-
-
-
-
-### [Bounds](/build/technology/cheri-capabilities/bounds/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A buffer overflow is possible because a pointer can leave the object it was meant to access and continue into neighbouring memory.](/build/technology/cheri-capabilities/bounds/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/build/technology/cheri-capabilities/bounds/)
-{: .source-card-label }

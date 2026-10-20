@@ -1,28 +1,23 @@
 ---
 title: You just missed the CHERITech’25 Conference – but wait, you can still attend the virtual replay!
 date: '2025-11-17T15:10:57+00:00'
-authors: [adam-finney]
+authors:
+- adam-finney
+thumbnail:
+  src: /assets/news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/2e1bb34a5f1e-hero.png
+  alt: You just missed the CHERITech’25 Conference – but wait, you can still attend the virtual replay!
+  width: 1000
+  height: 1000
+tags:
+- CHERI Alliance news
+- Events
+summary: The [CHERITech’25 Conference](/events/cheritech25/) was held on the 14th of November 2025 at the Sister
+  – Renold Building, Manchester, bringing together leading figures from industry, academia and government to discuss
+  the latest developments in Capability Hardware Enhanced RISC Instructions technology (CHERI) and Digital Security
+  by Design (DSbD).
 ---
 
-1. News &amp; Events
-2. News &amp; Analysis
-3. You just missed the CHERITech’25 Conference – but wait, you can still attend the virtual replay!
-{: .source-breadcrumbs }
-
-# You just missed the CHERITech’25 Conference – but wait, you can still attend the virtual replay!
-{: id="page-hero-title" .page-hero-title }
-
-*17 November 2025*{: .source-date }
-*CHERI Alliance news*{: .collection-tag }
-*Events*{: .collection-tag }
-{: .collection-detail__metadata }
-
-![You just missed the CHERITech’25 Conference – but wait, you can still attend the virtual replay!](/assets/news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/2e1bb34a5f1e-hero.png){: .image-full }
-{: .collection-detail__lead-image }
-
 ![CHERITech’25 Conference](/assets/events/cheritech25/0e6d3180c4d1-cheritech25.webp){: .image-right }
-
-The [CHERITech’25 Conference](/events/cheritech25/) was held on the 14th of November 2025 at the Sister – Renold Building, Manchester, bringing together leading figures from industry, academia and government to discuss the latest developments in Capability Hardware Enhanced RISC Instructions technology (CHERI) and Digital Security by Design (DSbD).
 
 This year’s event marked a significant step forward under the leadership of the CHERI Alliance, with sessions highlighting solid progress across hardware, software and emerging standards. Keynotes from Professor John Goodacre ([University of Manchester](/organisations/the-university-of-manchester/) and UKRI), Paul Caseley OBE (DSTL) and Mike Eftimakis (CHERI Alliance) opened a programme that focused on real developments in capability-based systems.
 

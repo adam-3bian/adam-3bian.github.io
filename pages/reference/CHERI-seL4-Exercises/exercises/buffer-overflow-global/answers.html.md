@@ -3,9 +3,6 @@ title: Answers - Exercise an inter-global-object buffer overflow
 permalink: /reference/CHERI-seL4-Exercises/exercises/buffer-overflow-global/answers.html
 ---
 
-# [Answers - Exercise an inter-global-object buffer overflow](/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-global/answers.html#answers---exercise-an-inter-global-object-buffer-overflow)
-{: id="answers---exercise-an-inter-global-object-buffer-overflow" }
-
 2. Expected output:
 
    ~~~

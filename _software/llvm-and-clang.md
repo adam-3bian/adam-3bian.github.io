@@ -10,18 +10,9 @@ related-pages:
   title: Choose a Platform
   description: Compare platforms and the software stacks supplied for each development route.
   action: Read this page
+summary: Compile C and C++ software for CHERI-enabled platforms.
+software_type: Toolchain
 ---
-
-1. Build
-2. Software Ecosystem
-3. LLVM &amp; Clang
-{: .source-breadcrumbs }
-
-# LLVM &amp; Clang
-{: id="page-hero-title" .page-hero-title }
-
-Compile C and C++ software for CHERI-enabled platforms.
-{: .page-hero-summary }
 
 LLVM and Clang provide the compiler foundation for much of the CHERI software ecosystem. They translate ordinary language-level operations, such as accessing objects through pointers, into code that uses CHERI capabilities and the protection they provide.
 
@@ -104,58 +95,3 @@ From there, the next step is to [compile existing software](/guides/port-existin
 - [`cheribuild`](https://github.com/CTSRD-CHERI/cheribuild)
 - [LLVM project](https://llvm.org/)
 - [CHERIoT Programmer’s Guide](https://cheriot.org/book/)
-
-## Where next
-{: .where-next-title }
-
-### [Rust](/software/rust/)
-{: .where-next-card-title }
-
-
-
-
-
-[Rust support combines language-level safety with capability-aware targets and native interfaces.](/software/rust/)
-{: .where-next-summary }
-
-
-
-[Continue](/software/rust/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [CheriBSD](/software/cheribsd/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A complete CHERI operating-system environment built around an LLVM and Clang toolchain.](/software/cheribsd/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/software/cheribsd/)
-{: .source-card-label }
-
-
-
-
-
-### [Choose a Platform](/guides/choose-a-platform/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Compare platforms and the software stacks supplied for each development route.](/guides/choose-a-platform/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/guides/choose-a-platform/)
-{: .source-card-label }

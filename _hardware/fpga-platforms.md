@@ -7,18 +7,16 @@ related-pages:
   title: Choose a Platform
   description: Choose a platform, prepare an environment and run a first CHERI workload.
   action: Read this page
+summary: Run CHERI on real, reconfigurable hardware before moving to silicon.
+thumbnail:
+  src: /assets/pages/adopt--assurance-and-adoption--case-studies/e8738d5ec725-codasip-prime-kit.webp
+  alt: Codasip Prime FPGA board
+  width: 526
+  height: 439
+  fit: contain
+record_type: Platform overview
+thumbnail_in_body: true
 ---
-
-1. Build
-2. Platforms
-3. FPGA Platforms
-{: .source-breadcrumbs }
-
-# FPGA Platforms
-{: id="page-hero-title" .page-hero-title }
-
-Run CHERI on real, reconfigurable hardware before moving to silicon.
-{: .page-hero-summary }
 
 [FPGA](/discover/resources/glossary/#glossary-f) platforms provide a practical step between software simulation and production silicon. They let developers run CHERI processor and system designs on physical hardware, test software and peripherals, and modify the underlying hardware design without fabricating a chip.
 
@@ -120,39 +118,3 @@ For reproducible development, record the RTL revision, FPGA tool version, synthe
 {: id="find-a-platform" }
 
 The [CHERI product directory](/build/platforms/cheri-products/) describes current cores, chips, boards, operating systems, and tools.
-
-## Where next
-{: .where-next-title }
-
-### [Simulators](/software/simulators/)
-{: .where-next-card-title }
-
-
-
-
-
-[Simulation is often the best first CHERI platform.](/software/simulators/)
-{: .where-next-summary }
-
-
-
-[Continue](/software/simulators/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Choose a Platform](/guides/choose-a-platform/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Choose a platform, prepare an environment and run a first CHERI workload.](/guides/choose-a-platform/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/guides/choose-a-platform/)
-{: .source-card-label }

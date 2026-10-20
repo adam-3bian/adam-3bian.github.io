@@ -8,18 +8,8 @@ related-pages:
   title: About the CHERI Alliance
   description: Learn how the Alliance connects organisations working across the CHERI ecosystem.
   action: Read this page
+summary: Membership gives organisations a voice in the future of CHERI while accelerating their own adoption journey.
 ---
-
-1. Alliance
-2. Membership
-3. Why Join?
-{: .source-breadcrumbs }
-
-# Why Join?
-{: id="page-hero-title" .page-hero-title }
-
-Membership gives organisations a voice in the future of CHERI while accelerating their own adoption journey.
-{: .page-hero-summary }
 
 CHERI adoption depends on collaboration across processor and chip design, software, research, product engineering, assurance, policy, and deployment. Membership provides a practical way to work with others facing the same challenges and opportunities.
 
@@ -80,39 +70,3 @@ Many of the conversations, collaborations, and partnerships shaping CHERI happen
 For many organisations, participation in the Alliance is both an investment in their own security journey and a way to help accelerate the wider adoption of CHERI.
 
 [Join the Alliance](/alliance/membership/contact/) and help turn CHERI from opportunity into widespread adoption.
-
-## Where next
-{: .where-next-title }
-
-### [Membership Benefits &amp; Options](/alliance/membership/membership-benefits-and-options/)
-{: .where-next-card-title }
-
-
-
-
-
-[A comparison of membership options, participation, and benefits.](/alliance/membership/membership-benefits-and-options/)
-{: .where-next-summary }
-
-
-
-[Continue](/alliance/membership/membership-benefits-and-options/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [About the CHERI Alliance](/organisations/cheri-alliance/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Learn how the Alliance connects organisations working across the CHERI ecosystem.](/organisations/cheri-alliance/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/organisations/cheri-alliance/)
-{: .source-card-label }

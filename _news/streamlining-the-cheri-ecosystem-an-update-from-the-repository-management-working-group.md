@@ -1,28 +1,22 @@
 ---
 title: 'Streamlining the CHERI Ecosystem: An Update from the Repository Management Working Group'
 date: '2025-11-27T10:00:05+00:00'
-authors: [marno-van-der-maas]
+authors:
+- marno-van-der-maas
+thumbnail:
+  src: /assets/shared/source-assets/bb889a4dc09e-cheri-alliance-working-groups.png
+  alt: CHERI Alliance Working Groups logo
+  width: 746
+  height: 369
+tags:
+- CHERI Alliance news
+- Working Groups
+author_credit: Dr Marno van der Maas – **CHERI Alliance**
+summary: 'The CHERI Alliance is dedicated to advancing the state-of-the-art in capability-based security. As our
+  collaborative efforts and technical output grow, so does the need for a standardised, clear, and efficient way
+  to manage that output. This is why the [Repository Management Working Group](/groups/repository-management/) was
+  established: to systematically oversee all the technical collateral produced by the alliance.'
 ---
-
-1. News &amp; Events
-2. News &amp; Analysis
-3. Streamlining the CHERI Ecosystem: An Update from the Repository Management Working Group
-{: .source-breadcrumbs }
-
-# Streamlining the CHERI Ecosystem: An Update from the Repository Management Working Group
-{: id="page-hero-title" .page-hero-title }
-
-*27 November 2025*{: .source-date }
-*CHERI Alliance news*{: .collection-tag }
-*Working Groups*{: .collection-tag }
-{: .collection-detail__metadata }
-
-![CHERI Alliance Working Groups logo](/assets/shared/source-assets/bb889a4dc09e-cheri-alliance-working-groups.png){: .image-full }
-{: .collection-detail__lead-image }
-
-Dr Marno van der Maas – **CHERI Alliance**
-
-The CHERI Alliance is dedicated to advancing the state-of-the-art in capability-based security. As our collaborative efforts and technical output grow, so does the need for a standardised, clear, and efficient way to manage that output. This is why the [Repository Management Working Group](/groups/repository-management/) was established: to systematically oversee all the technical collateral produced by the alliance.
 
 ## Establishing the Foundation: Repository Creation and Management
 {: id="establishing-the-foundation-repository-creation-and-management" }

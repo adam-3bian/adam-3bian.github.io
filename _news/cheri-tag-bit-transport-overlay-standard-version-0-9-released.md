@@ -1,26 +1,23 @@
 ---
 title: CHERI Tag Bit Transport Overlay Standard version 0.9 released
 date: '2026-09-21T12:00:00+00:00'
-authors: [ben-fletcher]
+authors:
+- ben-fletcher
+thumbnail:
+  src: /assets/news/cheri-tag-bit-transport-overlay-standard-version-0-9-released/c2fe66ccfd-CHERITagBitTransportOverlayStandardBlogImage-2.png
+  alt: CHERITagBitTransportOverlayStandardBlogImage
+  width: 1536
+  height: 500
+tags:
+- CHERI Alliance news
+- Working Groups
+summary: Over the last few months I’ve had the pleasure of working with members of the CHERI Alliance’s [CHERI-in-SoC
+  Working Group](/groups/cheri-in-soc/) to put together the first version of the [CHERI Tag Bit Transport Overlay
+  Standard](/assets/pages/discover--resources--documentation-and-guides/9bbe9f6de06c-cheri-tag-bit-transport-overlay-standard-v0.9.pdf).
+thumbnail_in_body: true
 ---
 
-1. News &amp; Events
-2. News &amp; Analysis
-3. CHERI Tag Bit Transport Overlay Standard version 0.9 released
-{: .source-breadcrumbs }
-
-# CHERI Tag Bit Transport Overlay Standard version 0.9 released
-{: id="page-hero-title" .page-hero-title }
-
-*21 September 2026*{: .source-date }
-*CHERI Alliance news*{: .collection-tag }
-*Working Groups*{: .collection-tag }
-{: .collection-detail__metadata }
-
-
 ![CHERITagBitTransportOverlayStandardBlogImage](/assets/news/cheri-tag-bit-transport-overlay-standard-version-0-9-released/c2fe66ccfd-CHERITagBitTransportOverlayStandardBlogImage-2.png){: .image-full width="1536" height="500" }
-
-Over the last few months I’ve had the pleasure of working with members of the CHERI Alliance’s [CHERI-in-SoC Working Group](/groups/cheri-in-soc/) to put together the first version of the [CHERI Tag Bit Transport Overlay Standard](/assets/pages/discover--resources--documentation-and-guides/9bbe9f6de06c-cheri-tag-bit-transport-overlay-standard-v0.9.pdf).
 
 One of the challenges of building a CHERI-enabled SoC is that capabilities don’t just consist of the data you can see in memory. They also have an associated tag bit, which needs to make its way safely through the system alongside that data.
 

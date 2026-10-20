@@ -9,23 +9,14 @@ related-pages:
   description: Why CHERI is important.
   action: Read this page
 - url: /discover/resources/glossary/
-  description: This glossary provides plain-language, product-oriented explanations of common CHERI concepts. More detailed technical definitions can be found in the Build section.
+  description: This glossary provides plain-language, product-oriented explanations of common CHERI concepts. More
+    detailed technical definitions can be found in the Build section.
   action: Read this page
 - url: /guides/technical-faq/
   description: Addresses more technical questions.
   action: Read this page
+summary: Clear answers to common questions about CHERI and the CHERI Alliance.
 ---
-
-1. Discover
-2. Understand
-3. FAQ
-{: .source-breadcrumbs }
-
-# FAQ
-{: id="page-hero-title" .page-hero-title }
-
-Clear answers to common questions about CHERI and the CHERI Alliance.
-{: .page-hero-summary }
 
 If you are looking for a more technical FAQ, please go to [Technical FAQ](/guides/technical-faq/)
 
@@ -99,77 +90,3 @@ The CHERI Alliance brings together industry, government, and research organisati
 {: id="what-does-cheri-enabled-mean" }
 
 **CHERI Enabled** is a CHERI Alliance certification programme that recognises products that meet defined implementation criteria. It provides assurance that CHERI principles have been properly applied to a specific product version, but does not guarantee the overall security of the product. See [About CHERI Enabled](/adopt/assurance-and-adoption/about-cheri-enabled/).
-
-## Where next
-{: .where-next-title }
-
-### [Cost of Memory Unsafety](/adopt/business-case/cost-of-memory-unsafety/)
-{: .where-next-card-title }
-
-
-
-
-
-[The economic reasons to adopt CHERI.](/adopt/business-case/cost-of-memory-unsafety/)
-{: .where-next-summary }
-
-
-
-[Continue](/adopt/business-case/cost-of-memory-unsafety/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Vulnerabilities in Everyday Technology](/discover/why-cheri/vulnerabilities-in-everyday-technology/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Why CHERI is important.](/discover/why-cheri/vulnerabilities-in-everyday-technology/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/why-cheri/vulnerabilities-in-everyday-technology/)
-{: .source-card-label }
-
-
-
-
-
-### [Glossary](/discover/resources/glossary/)
-{: .related-pages-item-title }
-
-
-
-
-
-[This glossary provides plain-language, product-oriented explanations of common CHERI concepts. More detailed technical definitions can be found in the Build section.](/discover/resources/glossary/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/resources/glossary/)
-{: .source-card-label }
-
-
-
-
-
-### [Technical FAQ](/guides/technical-faq/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Addresses more technical questions.](/guides/technical-faq/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/guides/technical-faq/)
-{: .source-card-label }

@@ -3,9 +3,6 @@ title: Legal and Policies
 permalink: /legal-and-policies/
 ---
 
-# Legal and Policies
-
-
 | Document | PDF | HTML |
 | --- | --- | --- |
 | Becoming a member | [Download](/assets/resources/becoming-a-member-of-the-cheri-alliance/Becoming-a-member-of-the-CHERI-Alliance.pdf) |  |

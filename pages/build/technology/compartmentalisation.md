@@ -10,18 +10,8 @@ related-pages:
 - url: /build/technology/temporal-memory-safety/
   description: A pointer can remain inside the correct bounds and still be unsafe.
   action: Read this page
+summary: CHERI compartmentalisation contains bugs and attacks by limiting what each component can access.
 ---
-
-1. Build
-2. Technology
-3. Compartmentalisation
-{: .source-breadcrumbs }
-
-# Compartmentalisation
-{: id="page-hero-title" .page-hero-title }
-
-CHERI compartmentalisation contains bugs and attacks by limiting what each component can access.
-{: .page-hero-summary }
 
 Consider a network parser. It may need to read one packet and return a structured result. It does not need access to account credentials, update controls or every object in the application.
 
@@ -139,60 +129,3 @@ CHERI compartmentalisation turns least privilege into something the hardware can
 Instead of trusting every component in a process with the application's full authority, developers can give each component only the capabilities it needs.
 
 If that component fails or is compromised, the capabilities it holds define what it can reach, helping contain the impact.
-
-
-
-## Where next
-{: .where-next-title }
-
-### [Hybrid Systems](/build/technology/hybrid-systems/)
-{: .where-next-card-title }
-
-
-
-
-
-[Replacing every pointer in a large software stack at once is rarely practical.](/build/technology/hybrid-systems/)
-{: .where-next-summary }
-
-
-
-[Continue](/build/technology/hybrid-systems/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Capabilities](/build/technology/capabilities/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A pointer bug becomes dangerous when changing a number changes authority.](/build/technology/capabilities/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/build/technology/capabilities/)
-{: .source-card-label }
-
-
-
-
-
-### [Temporal Memory Safety](/build/technology/temporal-memory-safety/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A pointer can remain inside the correct bounds and still be unsafe.](/build/technology/temporal-memory-safety/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/build/technology/temporal-memory-safety/)
-{: .source-card-label }

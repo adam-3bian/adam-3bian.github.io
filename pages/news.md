@@ -3,8 +3,7 @@ title: News
 permalink: /news/
 layout: news
 parent: /news-and-events/
+directory: true
 ---
-
-# News
 
 CHERI Alliance and ecosystem announcements.

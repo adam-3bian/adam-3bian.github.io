@@ -7,25 +7,17 @@ related-pages:
   title: About the CHERI Alliance
   description: Learn how the Alliance connects organisations working across the CHERI ecosystem.
   action: Read this page
+summary: The Code of Conduct sets the standards of respectful, inclusive, and constructive behaviour expected in
+  every Alliance space.
+version: '1.01'
+document_date: '2025-04-14'
+links:
+- label: Download official PDF
+  url: /assets/pages/alliance--legal-and-policies--code-of-conduct/245117ed08d4-code-of-conduct.pdf
+  kind: document
+  primary: true
+authoritative_format: PDF
 ---
-
-1. Alliance
-2. Legal &amp; Policies
-3. Code of Conduct
-{: .source-breadcrumbs }
-
-# Code of Conduct
-{: id="page-hero-title" .page-hero-title }
-
-The Code of Conduct sets the standards of respectful, inclusive, and constructive behaviour expected in every Alliance space.
-{: .page-hero-summary }
-
-Version
-: 1.01
-
-Date
-: 14 April 2025
-{: .page-hero-meta }
 
 ![pdf](/assets/shared/source-assets/d63b7eac09b7-pdf-file-icon.webp){: .image-left .image-inline } Download the [CHERI Alliance Code of Conduct](/assets/pages/alliance--legal-and-policies--code-of-conduct/245117ed08d4-code-of-conduct.pdf) – The PDF is the official version. The text is reproduced below for convenience, but if there is any difference between the two versions, the PDF takes precedence..
 
@@ -94,39 +86,3 @@ Reports can be as formal or informal as needed for the situation at hand. If pos
 - Any extra context you believe existed for the incident.
 - If you believe this incident is ongoing.
 - Any other information you believe we should have.
-
-## Where next
-{: .where-next-title }
-
-### [Competition Law Statement](/policies/competition-law-statement/)
-{: .where-next-card-title }
-
-
-
-
-
-[The Alliance statement on competition law and the boundaries for collaborative activity.](/policies/competition-law-statement/)
-{: .where-next-summary }
-
-
-
-[Continue](/policies/competition-law-statement/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [About the CHERI Alliance](/organisations/cheri-alliance/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Learn how the Alliance connects organisations working across the CHERI ecosystem.](/organisations/cheri-alliance/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/organisations/cheri-alliance/)
-{: .source-card-label }

@@ -3,9 +3,6 @@ title: Compile and run RISC-V and CHERI-RISC-V programs
 permalink: /reference/CHERI-seL4-Exercises/exercises/compile-and-run/index.html
 ---
 
-# [Compile and run RISC-V and CHERI-RISC-V programs](/reference/CHERI-seL4-Exercises/exercises/compile-and-run/index.html#compile-and-run-risc-v-and-cheri-risc-v-programs)
-{: id="compile-and-run-risc-v-and-cheri-risc-v-programs" }
-
 This exercise steps you through getting up and running with code compilation
 and execution for RISC-V and CHERI-RISC-V programs.
 

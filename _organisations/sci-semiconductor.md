@@ -1,31 +1,26 @@
 ---
 title: SCI Semiconductor
 member: true
+summary: SCI Semiconductor was formed to lead the commercialisation of CHERI technologies and is a founder member
+  of the CHERI Alliance. With a strong focus on secure and high-integrity computing, the organization has built
+  a team of recognised industry…
+membership_category: Full Member
+membership_status: Founding member
+links:
+- label: Visit member website
+  url: http://www.scisemi.com/
+  kind: website
+  primary: true
+- label: Back to all members
+  url: /alliance/leadership/members/
+  kind: navigation
+thumbnail:
+  src: /assets/organisations/sci-semiconductor/89396ef186d7-logo.png
+  alt: SCI Semiconductor logo
+  width: 1201
+  height: 796
+  fit: contain
 ---
-
-1. Alliance
-2. Members
-3. SCI Semiconductor
-{: .source-breadcrumbs }
-
-# SCI Semiconductor
-{: id="page-hero-title" .page-hero-title }
-
-SCI Semiconductor was formed to lead the commercialisation of CHERI technologies and is a founder member of the CHERI Alliance. With a strong focus on secure and high-integrity computing, the organization has built a team of recognised industry…
-{: .page-hero-summary }
-
-![SCI Semiconductor logo](/assets/organisations/sci-semiconductor/89396ef186d7-logo.png){: .image-left }
-{: .entity-media .entity-media--logo }
-
-Status
-: Founding member
-
-Membership
-: Full Member
-
-Website
-: [Visit member website](http://www.scisemi.com/)
-{: .entity-facts }
 
 ## Description
 {: id="description" }
@@ -46,6 +41,3 @@ SCI Semiconductor is delivering commercial CHERIoT RV32E RISC-V based devices fo
 {: id="open-source-assets-for-cheri" }
 
 [https://cheriot.org](https://cheriot.org)
-
-[Back to all members](/alliance/leadership/members/)
-{: .entity-back }

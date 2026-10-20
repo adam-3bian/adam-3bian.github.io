@@ -1,31 +1,26 @@
 ---
 title: University of Kent
 member: true
+summary: The University of Kent is a British research and teaching University in the historic city of Canterbury.
+  The Programming Languages and Systems group of the School of Computing is in the top 5 for research in their field
+  nationally.
+membership_category: Community Member
+membership_status: Member
+links:
+- label: Visit member website
+  url: https://www.cs.kent.ac.uk/people/staff/mjb211/rust/index.htm
+  kind: website
+  primary: true
+- label: Back to all members
+  url: /alliance/leadership/members/
+  kind: navigation
+thumbnail:
+  src: /assets/organisations/university-of-kent/17d3f2e7b137-logo.png
+  alt: University of Kent logo
+  width: 1200
+  height: 800
+  fit: contain
 ---
-
-1. Alliance
-2. Members
-3. University of Kent
-{: .source-breadcrumbs }
-
-# University of Kent
-{: id="page-hero-title" .page-hero-title }
-
-The University of Kent is a British research and teaching University in the historic city of Canterbury. The Programming Languages and Systems group of the School of Computing is in the top 5 for research in their field nationally.
-{: .page-hero-summary }
-
-![University of Kent logo](/assets/organisations/university-of-kent/17d3f2e7b137-logo.png){: .image-left }
-{: .entity-media .entity-media--logo }
-
-Status
-: Member
-
-Membership
-: Community Member
-
-Website
-: [Visit member website](https://www.cs.kent.ac.uk/people/staff/mjb211/rust/index.htm)
-{: .entity-facts }
 
 ## Description
 {: id="description" }
@@ -43,6 +38,3 @@ Kent, with support through the Digital Security by Design project, has developed
 The CHERI Rust port is available on Github:
 
 [https://github.com/kent-weak-memory/rust/](https://github.com/kent-weak-memory/rust/)
-
-[Back to all members](/alliance/leadership/members/)
-{: .entity-back }

@@ -7,18 +7,10 @@ related-pages:
   title: Choose a Platform
   description: Choose a platform, prepare an environment and run a first CHERI workload.
   action: Read this page
+summary: Port existing software by making pointer assumptions explicit, preserving capability metadata, and testing
+  each interface on the intended platform.
+topic: Porting
 ---
-
-1. Build
-2. Developers
-3. Port Existing Software
-{: .source-breadcrumbs }
-
-# Port Existing Software
-{: id="page-hero-title" .page-hero-title }
-
-Port existing software by making pointer assumptions explicit, preserving capability metadata, and testing each interface on the intended platform.
-{: .page-hero-summary }
 
 Most well-structured C and C++ code does not need a redesign for CHERI. The difficult parts are usually places where a program has hidden the difference between an address, a pointer, an object boundary, and an authority decision.
 
@@ -126,39 +118,3 @@ Use fuzzing and sanitizers where supported. CHERI faults can make invalid access
 Record binary size, peak memory, build time, runtime, fault behaviour, and source changes. Compare like with like: same workload, optimisation level, operating-system configuration, and hardware or simulator.
 
 The output of a port should be more than a compiling binary. It should include the resolved assumptions, remaining limitations, and evidence that the selected protection mode is active.
-
-## Where next
-{: .where-next-title }
-
-### [Build Compartments](/guides/build-compartments/)
-{: .where-next-card-title }
-
-
-
-
-
-[A compartment is a security domain with deliberately limited authority.](/guides/build-compartments/)
-{: .where-next-summary }
-
-
-
-[Continue](/guides/build-compartments/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Choose a Platform](/guides/choose-a-platform/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Choose a platform, prepare an environment and run a first CHERI workload.](/guides/choose-a-platform/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/guides/choose-a-platform/)
-{: .source-card-label }

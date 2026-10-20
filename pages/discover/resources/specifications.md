@@ -5,14 +5,6 @@ where-next:
   url: /discover/resources/documentation-and-guides/
 ---
 
-1. Discover
-2. Resources
-3. Specifications
-{: .source-breadcrumbs }
-
-# Specifications
-{: id="page-hero-title" .page-hero-title }
-
 ## Who
 {: id="who" }
 
@@ -34,21 +26,3 @@ Helps readers understand where Specifications fits, what evidence matters, and w
 - What is included under Specifications
 - How entries are described, dated, and sourced
 - Links to relevant primary or supporting material
-
-## Where next
-{: .where-next-title }
-
-### [Documentation &amp; Guides](/discover/resources/documentation-and-guides/)
-{: .where-next-card-title }
-
-
-
-
-
-[A curated set of practical CHERI documentation, guides, and reference material.](/discover/resources/documentation-and-guides/)
-{: .where-next-summary }
-
-
-
-[Continue](/discover/resources/documentation-and-guides/)
-{: .source-card-label }

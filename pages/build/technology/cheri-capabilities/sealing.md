@@ -8,21 +8,12 @@ related-pages:
   description: A pointer bug becomes dangerous when changing a number changes authority.
   action: Read this page
 - url: /build/technology/cheri-capabilities/provenance/
-  description: An explanation of how capability authority is derived and why arbitrary integers are not equivalent to valid capabilities.
+  description: An explanation of how capability authority is derived and why arbitrary integers are not equivalent
+    to valid capabilities.
   action: Read this page
+summary: Sealing turns a capability into a protected, non-dereferenceable token that can support opaque objects
+  and controlled compartment entry points.
 ---
-
-1. Build
-2. Technology
-3. CHERI Capabilities
-4. Sealing
-{: .source-breadcrumbs }
-
-# Sealing
-{: id="page-hero-title" .page-hero-title }
-
-Sealing turns a capability into a protected, non-dereferenceable token that can support opaque objects and controlled compartment entry points.
-{: .page-hero-summary }
 
 Passing a direct capability for an object gives the receiver whatever read, write, or execute authority that capability contains. Sometimes an interface should let a caller refer to an object without accessing its representation.
 
@@ -107,58 +98,3 @@ Apply least privilege:
 - Copying a token delegates its authority unless the surrounding design prevents or tracks delegation.
 
 Sealing turns capabilities into protected interface elements. It becomes most useful within a complete [Compartmentalisation](/build/technology/cheri-capabilities/compartmentalisation/) model with explicit authority and lifecycle rules.
-
-## Where next
-{: .where-next-title }
-
-### [Spatial Memory Safety](/build/technology/cheri-capabilities/spatial-memory-safety/)
-{: .where-next-card-title }
-
-
-
-
-
-[A program allocates eight bytes and writes sixteen.](/build/technology/cheri-capabilities/spatial-memory-safety/)
-{: .where-next-summary }
-
-
-
-[Continue](/build/technology/cheri-capabilities/spatial-memory-safety/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Capabilities](/build/technology/cheri-capabilities/capabilities/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A pointer bug becomes dangerous when changing a number changes authority.](/build/technology/cheri-capabilities/capabilities/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/build/technology/cheri-capabilities/capabilities/)
-{: .source-card-label }
-
-
-
-
-
-### [Provenance](/build/technology/cheri-capabilities/provenance/)
-{: .related-pages-item-title }
-
-
-
-
-
-[An explanation of how capability authority is derived and why arbitrary integers are not equivalent to valid capabilities.](/build/technology/cheri-capabilities/provenance/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/build/technology/cheri-capabilities/provenance/)
-{: .source-card-label }

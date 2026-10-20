@@ -13,25 +13,17 @@ related-pages:
   title: About the CHERI Alliance
   description: Learn how the Alliance connects organisations working across the CHERI ecosystem.
   action: Read this page
+summary: The Intellectual Property Policy defines how contributions, essential rights, declarations, licensing commitments,
+  and Alliance work products are handled.
+version: '1.01'
+document_date: 2024-08
+links:
+- label: Download official PDF
+  url: /assets/shared/source-assets/1ef747d8f739-ip-policy.pdf
+  kind: document
+  primary: true
+authoritative_format: PDF
 ---
-
-1. Alliance
-2. Legal &amp; Policies
-3. Intellectual Property Policy
-{: .source-breadcrumbs }
-
-# Intellectual Property Policy
-{: id="page-hero-title" .page-hero-title }
-
-The Intellectual Property Policy defines how contributions, essential rights, declarations, licensing commitments, and Alliance work products are handled.
-{: .page-hero-summary }
-
-Version
-: 1.01
-
-Date
-: August 2024
-{: .page-hero-meta }
 
 ![pdf](/assets/shared/source-assets/d63b7eac09b7-pdf-file-icon.webp){: .image-left .image-inline } Download the [CHERI Alliance IP Policy](/assets/shared/source-assets/1ef747d8f739-ip-policy.pdf) – The PDF is the official version. The text is reproduced below for convenience, but if there is any difference between the two versions, the PDF takes precedence..
 
@@ -250,77 +242,3 @@ d) within a reasonable period of time; and
 e) failing that, by seeking redress in a court of competent jurisdiction.
 
 10.5 The IPR Policy shall be interpreted in accordance with the law of England and Wales .
-
-## Where next
-{: .where-next-title }
-
-### [Trademark Policy](/policies/trademark-policy/)
-{: .where-next-card-title }
-
-
-
-
-
-[Guidance on use of CHERI Alliance names, marks, logos, and brand material.](/policies/trademark-policy/)
-{: .where-next-summary }
-
-
-
-[Continue](/policies/trademark-policy/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Code of Conduct](/policies/code-of-conduct/)
-{: .related-pages-item-title }
-
-
-
-
-
-[The behaviour and participation expectations that apply to Alliance spaces and activities.](/policies/code-of-conduct/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/policies/code-of-conduct/)
-{: .source-card-label }
-
-
-
-
-
-### [Competition Law Statement](/policies/competition-law-statement/)
-{: .related-pages-item-title }
-
-
-
-
-
-[The Alliance statement on competition law and the boundaries for collaborative activity.](/policies/competition-law-statement/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/policies/competition-law-statement/)
-{: .source-card-label }
-
-
-
-
-
-### [About the CHERI Alliance](/organisations/cheri-alliance/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Learn how the Alliance connects organisations working across the CHERI ecosystem.](/organisations/cheri-alliance/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/organisations/cheri-alliance/)
-{: .source-card-label }

@@ -1,26 +1,19 @@
 ---
 title: Towards a reference QEMU for CHERI platform emulation
 date: '2026-01-28T10:00:59+00:00'
-authors: [alfredo-mazzinghi]
+authors:
+- alfredo-mazzinghi
+thumbnail:
+  src: /assets/shared/source-assets/bb889a4dc09e-cheri-alliance-working-groups.png
+  alt: CHERI Alliance Working Groups logo
+  width: 746
+  height: 369
+tags:
+- CHERI Alliance news
+- Working Groups
+summary: QEMU is one of the most popular open source machine emulators ([https://www.qemu.org](https://www.qemu.org)),
+  with support for many CPU architectures, including x86\_64, Arm and RISC-V.
 ---
-
-1. News &amp; Events
-2. News &amp; Analysis
-3. Towards a reference QEMU for CHERI platform emulation
-{: .source-breadcrumbs }
-
-# Towards a reference QEMU for CHERI platform emulation
-{: id="page-hero-title" .page-hero-title }
-
-*28 January 2026*{: .source-date }
-*CHERI Alliance news*{: .collection-tag }
-*Working Groups*{: .collection-tag }
-{: .collection-detail__metadata }
-
-![CHERI Alliance Working Groups logo](/assets/shared/source-assets/bb889a4dc09e-cheri-alliance-working-groups.png){: .image-full }
-{: .collection-detail__lead-image }
-
-QEMU is one of the most popular open source machine emulators ([https://www.qemu.org](https://www.qemu.org)), with support for many CPU architectures, including x86\_64, Arm and RISC-V.
 
 The QEMU emulator is critical for systems research and development: it makes it possible to quickly prototype, debug and analyse architectural extensions and OS implementations without the need for dedicated hardware implementations in FPGA or silicon.
 

@@ -3,9 +3,6 @@ title: 'Answers: Exercise integer-pointer type confusion bug'
 permalink: /reference/CHERI-seL4-Exercises/exercises/type-confusion/answers.html
 ---
 
-# [Answers: Exercise integer-pointer type confusion bug](/reference/CHERI-seL4-Exercises/exercises/type-confusion/answers.html#answers-exercise-integer-pointer-type-confusion-bug)
-{: id="answers-exercise-integer-pointer-type-confusion-bug" }
-
 When the integer value is updated, with CHERI-RISC-V compilation the
 pointer side will no longer be dereferenceable, as the tag has been cleared.
 

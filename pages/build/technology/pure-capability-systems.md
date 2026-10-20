@@ -8,18 +8,9 @@ related-pages:
 - url: /build/technology/hybrid-systems/
   description: Replacing every pointer in a large software stack at once is rarely practical.
   action: Read this page
+summary: Pure-capability systems use capabilities for pointers throughout compiled software, applying CHERI protection
+  broadly across the system.
 ---
-
-1. Build
-2. Technology
-3. Pure-Capability Systems
-{: .source-breadcrumbs }
-
-# Pure-Capability Systems
-{: id="page-hero-title" .page-hero-title }
-
-Pure-capability systems use capabilities for pointers throughout compiled software, applying CHERI protection broadly across the system.
-{: .page-hero-summary }
 
 Hybrid CHERI can protect selected objects and interfaces, while conventional pointers elsewhere remain outside that protection. A **pure-capability** ABI goes further: language-visible pointers are represented as capabilities throughout the relevant software.
 
@@ -120,35 +111,3 @@ The hardware name alone does not establish pure-capability operation. Check:
 CheriBSD, Morello software, CHERI-RISC-V software development kits (SDKs), and CHERIoT use different target names and ABIs. Use their current documentation.
 
 Pure-capability software offers broad pointer protection. [Compartmentalisation](/build/technology/compartmentalisation/) explains how to reduce the set of objects and services that each component can reach.
-
-## Related content
-{: .related-pages-title }
-
-### [How CHERI Capabilities work](/build/technology/how-cheri-capabilities-work/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Continue](/build/technology/how-cheri-capabilities-work/)
-{: .source-card-label }
-
-
-
-
-
-### [Hybrid Systems](/build/technology/hybrid-systems/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Replacing every pointer in a large software stack at once is rarely practical.](/build/technology/hybrid-systems/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/build/technology/hybrid-systems/)
-{: .source-card-label }

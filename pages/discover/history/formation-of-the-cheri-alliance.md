@@ -10,18 +10,9 @@ related-pages:
 - url: /discover/history/commercialisation/
   description: An overview of the move from research platforms towards commercial CHERI technology and products.
   action: Read this page
+summary: The CHERI Alliance formed to coordinate the organisations needed to move CHERI from shared technology into
+  a global, interoperable product ecosystem.
 ---
-
-1. Discover
-2. History
-3. Formation of the CHERI Alliance
-{: .source-breadcrumbs }
-
-# Formation of the CHERI Alliance
-{: id="page-hero-title" .page-hero-title }
-
-The CHERI Alliance formed to coordinate the organisations needed to move CHERI from shared technology into a global, interoperable product ecosystem.
-{: .page-hero-summary }
 
 Once several processor suppliers, operating-system communities, tool developers, universities, government bodies, and adopters work on the same architecture, coordination becomes part of the technical problem. Without shared terminology, portable software expectations, certification criteria, and visible product routes, each adopter must resolve the same uncertainty alone.
 
@@ -73,58 +64,3 @@ The Alliance is one part of the ecosystem. Universities continue architecture an
 The Alliance connects these groups by coordinating shared priorities, providing a public voice, and giving members a neutral forum for collaboration.
 
 For the current organisation rather than its history, see [About the CHERI Alliance](/organisations/cheri-alliance/) and [Working Groups](/alliance/leadership/working-groups/).
-
-## Where next
-{: .where-next-title }
-
-### [Future Direction](/discover/history/future-direction/)
-{: .where-next-card-title }
-
-
-
-
-
-[A view of the areas likely to shape CHERI research, standardisation, products, and adoption.](/discover/history/future-direction/)
-{: .where-next-summary }
-
-
-
-[Continue](/discover/history/future-direction/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Early Capability Systems](/discover/history/early-capability-systems/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A short account of early capability-based computer systems and the ideas that influenced later work.](/discover/history/early-capability-systems/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/history/early-capability-systems/)
-{: .source-card-label }
-
-
-
-
-
-### [Commercialisation](/discover/history/commercialisation/)
-{: .related-pages-item-title }
-
-
-
-
-
-[An overview of the move from research platforms towards commercial CHERI technology and products.](/discover/history/commercialisation/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/history/commercialisation/)
-{: .source-card-label }

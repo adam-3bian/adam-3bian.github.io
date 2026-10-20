@@ -7,18 +7,8 @@ related-pages:
 - url: /news-and-events/news-and-analysis/latest-news/
   description: The latest CHERI Alliance and ecosystem announcements, presented with clear dates and sources.
   action: Read this page
+summary: Everything you need to cover the CHERI Alliance and CHERI technology.
 ---
-
-1. News &amp; Events
-2. News &amp; Analysis
-3. Press Resources
-{: .source-breadcrumbs }
-
-# Press Resources
-{: id="page-hero-title" .page-hero-title }
-
-Everything you need to cover the CHERI Alliance and CHERI technology.
-{: .page-hero-summary }
 
 The CHERI Alliance is the global industry-led organisation working to accelerate the adoption of CHERI technology and advance memory-safe, secure-by-design computing.
 
@@ -60,39 +50,3 @@ For regular announcements, and news, [follow us on LinkedIn](https://www.linkedi
 {: id="about-the-cheri-alliance" }
 
 The CHERI Alliance is a non-profit organisation that brings together industry, government, academia, and the open-source community to accelerate the development and adoption of the open CHERI cybersecurity technology. By improving memory safety and strengthening software isolation, CHERI helps organisations build more secure, resilient, and trustworthy digital systems.
-
-## Where next
-{: .where-next-title }
-
-### [Upcoming Events](/news-and-events/events-and-archive/upcoming-events/)
-{: .where-next-card-title }
-
-
-
-
-
-[A calendar of upcoming CHERI-related events, talks, workshops, and community sessions.](/news-and-events/events-and-archive/upcoming-events/)
-{: .where-next-summary }
-
-
-
-[Continue](/news-and-events/events-and-archive/upcoming-events/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Latest News](/news-and-events/news-and-analysis/latest-news/)
-{: .related-pages-item-title }
-
-
-
-
-
-[The latest CHERI Alliance and ecosystem announcements, presented with clear dates and sources.](/news-and-events/news-and-analysis/latest-news/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/news-and-events/news-and-analysis/latest-news/)
-{: .source-card-label }

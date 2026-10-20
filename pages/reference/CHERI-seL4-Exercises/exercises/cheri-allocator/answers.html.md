@@ -3,9 +3,6 @@ title: Answers
 permalink: /reference/CHERI-seL4-Exercises/exercises/cheri-allocator/answers.html
 ---
 
-# [Answers](/reference/CHERI-seL4-Exercises/exercises/cheri-allocator/answers.html#answers)
-{: id="answers" }
-
 ## [Introducing heap-allocator bounds](/reference/CHERI-seL4-Exercises/exercises/cheri-allocator/answers.html#introducing-heap-allocator-bounds)
 {: id="introducing-heap-allocator-bounds" }
 

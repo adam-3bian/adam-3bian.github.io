@@ -3,10 +3,8 @@ title: 'CHERI ALLIANCE CIC
 
   Code of Conduct'
 permalink: /code-of-conduct/
+display_title: CHERI ALLIANCE CIC Code of Conduct
 ---
-
-# CHERI ALLIANCE CIC Code of Conduct
-
 
 **Version:** 1.01  
 **Date:** 14/04/2025

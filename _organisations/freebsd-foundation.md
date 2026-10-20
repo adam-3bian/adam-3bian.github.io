@@ -1,31 +1,26 @@
 ---
 title: FreeBSD Foundation
 member: true
+summary: The FreeBSD Foundation is a 501(c)(3) non-profit organization supporting the FreeBSD Project and community.
+  Accepting donations from individuals and businesses, the Foundation uses funds to develop features, employ software
+  engineers, improve build…
+membership_category: Full Member
+membership_status: Founding member
+links:
+- label: Visit member website
+  url: https://freebsdfoundation.org/
+  kind: website
+  primary: true
+- label: Back to all members
+  url: /alliance/leadership/members/
+  kind: navigation
+thumbnail:
+  src: /assets/organisations/freebsd-foundation/dd73c0888388-logo.png
+  alt: FreeBSD Foundation logo
+  width: 1409
+  height: 1025
+  fit: contain
 ---
-
-1. Alliance
-2. Members
-3. FreeBSD Foundation
-{: .source-breadcrumbs }
-
-# FreeBSD Foundation
-{: id="page-hero-title" .page-hero-title }
-
-The FreeBSD Foundation is a 501(c)(3) non-profit organization supporting the FreeBSD Project and community. Accepting donations from individuals and businesses, the Foundation uses funds to develop features, employ software engineers, improve build…
-{: .page-hero-summary }
-
-![FreeBSD Foundation logo](/assets/organisations/freebsd-foundation/dd73c0888388-logo.png){: .image-left }
-{: .entity-media .entity-media--logo }
-
-Status
-: Founding member
-
-Membership
-: Full Member
-
-Website
-: [Visit member website](https://freebsdfoundation.org/)
-{: .entity-facts }
 
 ## Description
 {: id="description" }
@@ -41,6 +36,3 @@ CheriBSD extends FreeBSD to implement memory protection and software compartment
 {: id="open-source-assets-for-cheri" }
 
 [https://www.cheribsd.org/](https://www.cheribsd.org/)
-
-[Back to all members](/alliance/leadership/members/)
-{: .entity-back }

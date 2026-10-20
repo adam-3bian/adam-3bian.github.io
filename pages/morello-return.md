@@ -3,9 +3,6 @@ title: Return an unused Morello Board
 permalink: /morello-return/
 ---
 
-# Return an unused Morello Board
-
-
 Help someone else build something great with CHERI!
 
 ## Responsible, Sustainable, Appreciated

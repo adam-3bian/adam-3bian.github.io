@@ -3,9 +3,6 @@ title: Answers - Exercise an inter-stack-object buffer overflow
 permalink: /reference/CHERI-seL4-Exercises/exercises/buffer-overflow-stack/answers.html
 ---
 
-# [Answers - Exercise an inter-stack-object buffer overflow](/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-stack/answers.html#answers---exercise-an-inter-stack-object-buffer-overflow)
-{: id="answers---exercise-an-inter-stack-object-buffer-overflow" }
-
 2. Expected output:
 
    ~~~

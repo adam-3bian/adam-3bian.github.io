@@ -1,31 +1,26 @@
 ---
 title: Rheinland-Pfälzische Technische Universität Kaiserslautern-Landau (RPTU)
 member: true
+summary: RPTU is a public research university in Kaiserslautern and Landau in der Pfalz, Germany. RPTU is home to
+  17,000 students, 300 professorships, and 160 degree programs. As a place of top international research and an
+  academic talent factory for…
+membership_category: Community Member
+membership_status: Member
+links:
+- label: Visit member website
+  url: https://rptu.de/
+  kind: website
+  primary: true
+- label: Back to all members
+  url: /alliance/leadership/members/
+  kind: navigation
+thumbnail:
+  src: /assets/organisations/rptu/b844461177bf-logo.png
+  alt: RPTU logo
+  width: 2000
+  height: 520
+  fit: contain
 ---
-
-1. Alliance
-2. Members
-3. Rheinland-Pfälzische Technische Universität Kaiserslautern-Landau (RPTU)
-{: .source-breadcrumbs }
-
-# Rheinland-Pfälzische Technische Universität Kaiserslautern-Landau (RPTU)
-{: id="page-hero-title" .page-hero-title }
-
-RPTU is a public research university in Kaiserslautern and Landau in der Pfalz, Germany. RPTU is home to 17,000 students, 300 professorships, and 160 degree programs. As a place of top international research and an academic talent factory for…
-{: .page-hero-summary }
-
-![RPTU logo](/assets/organisations/rptu/b844461177bf-logo.png){: .image-left }
-{: .entity-media .entity-media--logo }
-
-Status
-: Member
-
-Membership
-: Community Member
-
-Website
-: [Visit member website](https://rptu.de/)
-{: .entity-facts }
 
 ## Description
 {: id="description" }
@@ -43,6 +38,3 @@ The Chair of Electronic Design Automation at RPTU in Kaiserslautern has a long b
 VeriCHERI Verification IP:
 
 [https://github.com/RPTU-EIS/VeriCHERI](https://github.com/RPTU-EIS/VeriCHERI)
-
-[Back to all members](/alliance/leadership/members/)
-{: .entity-back }

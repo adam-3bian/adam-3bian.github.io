@@ -8,18 +8,9 @@ related-pages:
   title: The Business Case
   description: CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.
   action: Read this page
+summary: CHERI can protect memory and separate software components in connected vehicles while preserving a path
+  for established C and C++ systems.
 ---
-
-1. Adopt
-2. Use Cases
-3. Automotive
-{: .source-breadcrumbs }
-
-# Automotive
-{: id="page-hero-title" .page-hero-title }
-
-CHERI can protect memory and separate software components in connected vehicles while preserving a path for established C and C++ systems.
-{: .page-hero-summary }
 
 A modern vehicle is a network of computers. Infotainment, driver assistance, diagnostics, connectivity, body controls, and powertrain functions exchange data while software from many suppliers remains in service for years.
 
@@ -72,39 +63,3 @@ Fault response remains important. Blocking an invalid access may stop a componen
 CHERI is especially relevant where valuable native software will remain in use, a component receives untrusted data, and its current access is broader than its role requires. It can also fit new centralised architectures where fine-grained separation supports consolidation without placing every component in the same trust domain.
 
 For automotive systems, the attraction is not a claim that one processor feature replaces existing engineering practice. It is the ability to preserve useful low-level software while giving the hardware a stronger role in preventing memory misuse and limiting how far a compromise can travel.
-
-## Where next
-{: .where-next-title }
-
-### [IoT &amp; Embedded](/adopt/use-cases/iot-and-embedded/)
-{: .where-next-card-title }
-
-
-
-
-
-[Connected devices face many of the same risks under tighter limits on memory, power, isolation, and updates.](/adopt/use-cases/iot-and-embedded/)
-{: .where-next-summary }
-
-
-
-[Continue](/adopt/use-cases/iot-and-embedded/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [The Business Case](/adopt/business-case/the-business-case/)
-{: .related-pages-item-title }
-
-
-
-
-
-[CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.](/adopt/business-case/the-business-case/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/adopt/business-case/the-business-case/)
-{: .source-card-label }

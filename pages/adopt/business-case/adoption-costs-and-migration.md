@@ -13,18 +13,9 @@ related-pages:
   title: Cost of Memory Unsafety
   description: Memory-safety failures can create costs far beyond the patch for one defect.
   action: Read this page
+summary: CHERI adoption can range from protecting one exposed component to moving a complete platform, allowing
+  cost and benefit to follow the scope of change.
 ---
-
-1. Adopt
-2. Business Case
-3. Adoption Costs &amp; Migration
-{: .source-breadcrumbs }
-
-# Adoption Costs &amp; Migration
-{: id="page-hero-title" .page-hero-title }
-
-CHERI adoption can range from protecting one exposed component to moving a complete platform, allowing cost and benefit to follow the scope of change.
-{: .page-hero-summary }
 
 Adopting CHERI does not imply rewriting an entire product. The scope can range from one library or service to an operating system and full software stack. This matters because the cost of migration can be matched to the part of a system where memory protection or containment has the greatest value.
 
@@ -75,58 +66,3 @@ Third-party software remains an important factor. An upstream CHERI port can spr
 Migration cost is best understood beside the cost of the risk it addresses. Products with little native code, short lives, or strong existing isolation may see limited benefit. Products that combine exposed C or C++ code, valuable assets, broad component authority, and many years of support can present a much stronger fit.
 
 The [porting overview](/guides/port-existing-software/) describes the technical patterns that influence effort, and [Choose a Platform](/guides/choose-a-platform/) explains the available execution environments.
-
-## Where next
-{: .where-next-title }
-
-### [Lifecycle Benefits &amp; ROI](/adopt/business-case/return-on-security-investment/)
-{: .where-next-card-title }
-
-
-
-
-
-[CHERI's lifecycle value can include fewer exploitable memory errors, narrower incidents, clearer faults, and reusable assurance evidence.](/adopt/business-case/return-on-security-investment/)
-{: .where-next-summary }
-
-
-
-[Continue](/adopt/business-case/return-on-security-investment/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [The Business Case](/adopt/business-case/the-business-case/)
-{: .related-pages-item-title }
-
-
-
-
-
-[CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.](/adopt/business-case/the-business-case/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/adopt/business-case/the-business-case/)
-{: .source-card-label }
-
-
-
-
-
-### [Cost of Memory Unsafety](/adopt/business-case/cost-of-memory-unsafety/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Memory-safety failures can create costs far beyond the patch for one defect.](/adopt/business-case/cost-of-memory-unsafety/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/adopt/business-case/cost-of-memory-unsafety/)
-{: .source-card-label }

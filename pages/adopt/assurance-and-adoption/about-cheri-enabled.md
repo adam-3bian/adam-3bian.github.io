@@ -3,18 +3,8 @@ title: The CHERI Enabled Programme
 permalink: /adopt/assurance-and-adoption/about-cheri-enabled/
 where-next:
   url: /adopt/assurance-and-adoption/cheri-enabled-products/
+summary: Independent review. Transparent evidence. Greater confidence.
 ---
-
-1. Adopt
-2. Assurance &amp; Adoption
-3. The CHERI Enabled Programme
-{: .source-breadcrumbs }
-
-# The CHERI Enabled Programme
-{: id="page-hero-title" .page-hero-title }
-
-Independent review. Transparent evidence. Greater confidence.
-{: .page-hero-summary }
 
 The **CHERI Enabled** programme helps organisations demonstrate how a product implements CHERI technology. Certified products receive a public certification record describing what was assessed, the supporting evidence, and the scope of the certification.
 
@@ -95,21 +85,3 @@ CHERI Enabled certification helps organisations:
 - Differentiate products in a growing CHERI ecosystem
 
 Ready to certify a product? [Contact the CHERI Alliance](/alliance/membership/contact/) to start the process.
-
-## Where next
-{: .where-next-title }
-
-### [CHERI Enabled Products](/adopt/assurance-and-adoption/cheri-enabled-products/)
-{: .where-next-card-title }
-
-
-
-
-
-[All products that have received the CHERI Enabled mark.](/adopt/assurance-and-adoption/cheri-enabled-products/)
-{: .where-next-summary }
-
-
-
-[Continue](/adopt/assurance-and-adoption/cheri-enabled-products/)
-{: .source-card-label }

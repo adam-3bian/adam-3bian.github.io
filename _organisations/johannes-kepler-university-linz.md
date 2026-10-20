@@ -1,31 +1,26 @@
 ---
 title: Johannes Kepler University Linz (JKU)
 member: true
+summary: Johannes Kepler University (JKU) Linz is a public research university in Linz, Upper Austria. Located on
+  a modern campus just outside the city center, JKU brings together a broad range of study and research across its
+  faculties and interdisciplinary…
+membership_category: Community Member
+membership_status: Member
+links:
+- label: Visit member website
+  url: https://www.jku.at/
+  kind: website
+  primary: true
+- label: Back to all members
+  url: /alliance/leadership/members/
+  kind: navigation
+thumbnail:
+  src: /assets/organisations/johannes-kepler-university-linz/6d91a83f4ac8-logo.png
+  alt: Johannes Kepler University Linz (JKU)
+  width: 2000
+  height: 1414
+  fit: contain
 ---
-
-1. Alliance
-2. Members
-3. Johannes Kepler University Linz (JKU)
-{: .source-breadcrumbs }
-
-# Johannes Kepler University Linz (JKU)
-{: id="page-hero-title" .page-hero-title }
-
-Johannes Kepler University (JKU) Linz is a public research university in Linz, Upper Austria. Located on a modern campus just outside the city center, JKU brings together a broad range of study and research across its faculties and interdisciplinary…
-{: .page-hero-summary }
-
-![Johannes Kepler University Linz (JKU)](/assets/organisations/johannes-kepler-university-linz/6d91a83f4ac8-logo.png){: .image-left }
-{: .entity-media .entity-media--logo }
-
-Status
-: Member
-
-Membership
-: Community Member
-
-Website
-: [Visit member website](https://www.jku.at/)
-{: .entity-facts }
 
 ## Description
 {: id="description" }
@@ -41,6 +36,3 @@ The Institute for Complex Systems (ICS) at JKU Linz focuses on mastering the eve
 {: id="open-source-assets-for-cheri" }
 
 [https://github.com/ics-jku/riscv-vp-plusplus](https://github.com/ics-jku/riscv-vp-plusplus)
-
-[Back to all members](/alliance/leadership/members/)
-{: .entity-back }

@@ -4,7 +4,8 @@ where-next:
   url: /software/porting-status/
 related-pages:
 - url: /software/cheribsd/
-  description: A full-system CHERI environment with capability-aware faults, tracing, core dumps, and developer tools.
+  description: A full-system CHERI environment with capability-aware faults, tracing, core dumps, and developer
+    tools.
   action: Read this page
 - url: /groups/cheri-qemu/
   title: QEMU Working Group
@@ -13,18 +14,9 @@ related-pages:
 - url: /hardware/cheriot/
   description: An embedded CHERI platform with compartment-aware firmware and diagnostic tooling.
   action: Read this page
+summary: Understand CHERI faults and inspect capabilities alongside familiar program state.
+software_type: Developer tools
 ---
-
-1. Build
-2. Software Ecosystem
-3. Debugging Tools
-{: .source-breadcrumbs }
-
-# Debugging Tools
-{: id="page-hero-title" .page-hero-title }
-
-Understand CHERI faults and inspect capabilities alongside familiar program state.
-{: .page-hero-summary }
 
 CHERI adds information to pointers, including bounds, permissions and protected validity information. Capability-aware debugging tools make this state visible alongside familiar addresses, registers, variables, symbols and stack traces.
 
@@ -110,77 +102,3 @@ Capability-aware diagnostics help developers trace those faults back to incorrec
 - [CTSRD-CHERI GDB](https://github.com/CTSRD-CHERI/gdb)
 - [`cheribuild`](https://github.com/CTSRD-CHERI/cheribuild)
 - [CHERIoT Programmer’s Guide](https://cheriot.org/book/)
-
-## Where next
-{: .where-next-title }
-
-### [Porting Status](/software/porting-status/)
-{: .where-next-card-title }
-
-
-
-
-
-[Porting status varies across platforms, ABIs, operating systems, packages, and project revisions.](/software/porting-status/)
-{: .where-next-summary }
-
-
-
-[Continue](/software/porting-status/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [CheriBSD](/software/cheribsd/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A full-system CHERI environment with capability-aware faults, tracing, core dumps, and developer tools.](/software/cheribsd/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/software/cheribsd/)
-{: .source-card-label }
-
-
-
-
-
-### [QEMU Working Group](/groups/cheri-qemu/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Alliance collaboration around maintained CHERI architecture and platform emulation.](/groups/cheri-qemu/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/groups/cheri-qemu/)
-{: .source-card-label }
-
-
-
-
-
-### [CHERIoT](/hardware/cheriot/)
-{: .related-pages-item-title }
-
-
-
-
-
-[An embedded CHERI platform with compartment-aware firmware and diagnostic tooling.](/hardware/cheriot/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/hardware/cheriot/)
-{: .source-card-label }

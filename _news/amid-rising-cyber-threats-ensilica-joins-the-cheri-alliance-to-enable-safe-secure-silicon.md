@@ -1,31 +1,24 @@
 ---
 title: Amid rising cyber threats, EnSilica joins the CHERI Alliance to enable safe & secure silicon
 date: '2026-02-03T16:47:46+00:00'
+thumbnail:
+  src: /assets/news/amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon/ddb56fdbe9e2-hero.png
+  alt: Welcome EnSilica
+  width: 2000
+  height: 1500
+tags:
+- CHERI Alliance news
+- Ecosystem
+- Members
+summary: CHERI (Capability Hardware Enhanced RISC Instructions) is an open technology that fundamentally strengthens
+  systems’ security by preventing memory corruption and unauthorized code execution—two of the most pervasive threats
+  in modern computing.
 ---
-
-1. News &amp; Events
-2. News &amp; Analysis
-3. Amid rising cyber threats, EnSilica joins the CHERI Alliance to enable safe &amp; secure silicon
-{: .source-breadcrumbs }
-
-# Amid rising cyber threats, EnSilica joins the CHERI Alliance to enable safe &amp; secure silicon
-{: id="page-hero-title" .page-hero-title }
-
-*3 February 2026*{: .source-date }
-*CHERI Alliance news*{: .collection-tag }
-*Ecosystem*{: .collection-tag }
-*Members*{: .collection-tag }
-{: .collection-detail__metadata }
-
-![Welcome EnSilica](/assets/news/amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon/ddb56fdbe9e2-hero.png){: .image-full }
-{: .collection-detail__lead-image }
 
 **Oxford  UK –** **3 February 2026** – [EnSilica](https://www.ensilica.com/), a leading provider of mixed-signal ASICs (Application-Specific Integrated Circuits), today announced that it has joined the [CHERI Alliance](/). In a world facing an explosion of cyber threats, this collaboration will accelerate the adoption of a technology that could **eliminate more than 70% of current vulnerabilities**.
 
 ## The Power of CHERI Technology
 {: id="the-power-of-cheri-technology" }
-
-CHERI (Capability Hardware Enhanced RISC Instructions) is an open technology that fundamentally strengthens systems’ security by preventing memory corruption and unauthorized code execution—two of the most pervasive threats in modern computing.
 
 CHERI introduces memory protection and compartmentalization directly into hardware, enabling strong **security by design**, while keeping the same level of **performance** and **power-consumption** – a critical factor for battery-operated systems.
 

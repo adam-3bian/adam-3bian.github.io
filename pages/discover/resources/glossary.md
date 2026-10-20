@@ -13,14 +13,6 @@ related-pages:
   action: Read this page
 ---
 
-1. Discover
-2. Resources
-3. Glossary
-{: .source-breadcrumbs }
-
-# Glossary
-{: id="page-hero-title" .page-hero-title }
-
 ## CHERI glossary
 {: id="directory-cheri-glossary" }
 
@@ -230,58 +222,3 @@ Skip to
 
 #### [Use-after-free](/build/technology/temporal-memory-safety/)
 : A temporal memory-safety error in which software accesses an allocation after it has been released and may have been reused for another purpose.
-
-## Where next
-{: .where-next-title }
-
-### [FAQs](/discover/understand/faq/)
-{: .where-next-card-title }
-
-
-
-
-
-[Short answers to common questions about CHERI, the Alliance, development, and adoption.](/discover/understand/faq/)
-{: .where-next-summary }
-
-
-
-[Continue](/discover/understand/faq/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Specifications](/discover/resources/specifications/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A directory of architecture and related specifications relevant to CHERI.](/discover/resources/specifications/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/resources/specifications/)
-{: .source-card-label }
-
-
-
-
-
-### [Digital Security by Design Archive](/discover/resources/digital-security-by-design-archive/)
-{: .related-pages-item-title }
-
-
-
-
-
-[An archive of material from the Digital Security by Design programme relevant to CHERI.](/discover/resources/digital-security-by-design-archive/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/resources/digital-security-by-design-archive/)
-{: .source-card-label }

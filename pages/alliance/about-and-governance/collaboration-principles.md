@@ -12,18 +12,8 @@ related-pages:
 - url: /alliance/about-and-governance/mission-and-role/
   description: A statement of what the CHERI Alliance exists to support and the boundaries of its role.
   action: Read this page
+summary: Collaboration, openness, and shared effort are at the heart of CHERI adoption.
 ---
-
-1. Alliance
-2. About &amp; Governance
-3. Collaboration Principles
-{: .source-breadcrumbs }
-
-# Collaboration Principles
-{: id="page-hero-title" .page-hero-title }
-
-Collaboration, openness, and shared effort are at the heart of CHERI adoption.
-{: .page-hero-summary }
 
 The CHERI Alliance exists because no single organisation can build a secure computing ecosystem alone. Hardware vendors, software developers, researchers, standards bodies, governments, educators, integrators, and users all have an important role to play.
 
@@ -91,58 +81,3 @@ By working together on shared foundations, Alliance members can spend more time 
 On some projects, in particular for open-source software, the CHERI Alliance working groups also collaborate more widely with open-source communities. This pragmatic approach helps ensure that projects progress as fast as possible, without waiting for all participants to become members.
 
 The goal is to accelerate progress across the ecosystem, not to create barriers to participation.
-
-## Where next
-{: .where-next-title }
-
-### [Technical Leadership](https://cheri-alliance.github.io/alliance/about-and-governance/technical-leadership/)
-{: .where-next-card-title }
-
-
-
-
-
-[An overview of the technical leadership that guides Alliance priorities and working activity.](https://cheri-alliance.github.io/alliance/about-and-governance/technical-leadership/)
-{: .where-next-summary }
-
-
-
-[Continue](https://cheri-alliance.github.io/alliance/about-and-governance/technical-leadership/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [About the CHERI Alliance](/organisations/cheri-alliance/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Learn how the Alliance connects organisations working across the CHERI ecosystem.](/organisations/cheri-alliance/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/organisations/cheri-alliance/)
-{: .source-card-label }
-
-
-
-
-
-### [Mission &amp; Role](/alliance/about-and-governance/mission-and-role/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A statement of what the CHERI Alliance exists to support and the boundaries of its role.](/alliance/about-and-governance/mission-and-role/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/alliance/about-and-governance/mission-and-role/)
-{: .source-card-label }

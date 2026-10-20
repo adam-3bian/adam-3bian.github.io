@@ -13,18 +13,9 @@ related-pages:
   title: Rust + CHERI Working Group
   description: Alliance collaboration around Rust toolchains, runtimes, native interfaces, and CHERI platforms.
   action: Read this page
+summary: Develop Rust software for CHERI-enabled platforms.
+software_type: Programming language
 ---
-
-1. Build
-2. Software Ecosystem
-3. Rust
-{: .source-breadcrumbs }
-
-# Rust
-{: id="page-hero-title" .page-hero-title }
-
-Develop Rust software for CHERI-enabled platforms.
-{: .page-hero-summary }
 
 Rust and CHERI provide complementary approaches to memory safety. Rust provides **language-level** protections, while CHERI adds hardware-enforced protection **at run time**, including around unsafe code, native interfaces and compartment boundaries.
 
@@ -101,77 +92,3 @@ Pinning the toolchain and platform versions used by a project can also help keep
 Rust support across CHERI is continuing to evolve across compiler, operating-system, embedded and hardware projects. 
 
 The [Rust + CHERI Working Group](/groups/rust-plus-cheri/) connects this work across the CHERI Alliance and aims for convergence and compatibility. [CHERI and Rust](/discover/why-cheri/cheri-and-rust/) provides the broader architectural context.
-
-## Where next
-{: .where-next-title }
-
-### [CheriBSD](/software/cheribsd/)
-{: .where-next-card-title }
-
-
-
-
-
-[CheriBSD provides a complete application-class environment for CHERI software and language work.](/software/cheribsd/)
-{: .where-next-summary }
-
-
-
-[Continue](/software/cheribsd/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [LLVM &amp; Clang](/software/llvm-and-clang/)
-{: .related-pages-item-title }
-
-
-
-
-
-[The compiler infrastructure underlying current Rust and CHERI target work.](/software/llvm-and-clang/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/software/llvm-and-clang/)
-{: .source-card-label }
-
-
-
-
-
-### [CHERI and Rust](/discover/why-cheri/cheri-and-rust/)
-{: .related-pages-item-title }
-
-
-
-
-
-[The wider relationship between language safety and architectural capabilities.](/discover/why-cheri/cheri-and-rust/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/why-cheri/cheri-and-rust/)
-{: .source-card-label }
-
-
-
-
-
-### [Rust + CHERI Working Group](/groups/rust-plus-cheri/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Alliance collaboration around Rust toolchains, runtimes, native interfaces, and CHERI platforms.](/groups/rust-plus-cheri/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/groups/rust-plus-cheri/)
-{: .source-card-label }

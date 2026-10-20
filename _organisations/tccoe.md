@@ -1,31 +1,26 @@
 ---
 title: Trusted Computing Center of Excellence (TCCoE)
 member: true
+summary: The Trusted Computing Center of Excellence™ (TCCoE) not-for-profit organization’s purpose is to lower barriers
+  to adoption and facilitate the principled development and deployment of software and systems for which there is
+  strong evidence of…
+membership_category: Community Member
+membership_status: Founding member
+links:
+- label: Visit member website
+  url: https://trustedcomputingcoe.org/
+  kind: website
+  primary: true
+- label: Back to all members
+  url: /alliance/leadership/members/
+  kind: navigation
+thumbnail:
+  src: /assets/organisations/tccoe/b326be17471b-logo.png
+  alt: TCCoE logo
+  width: 281
+  height: 120
+  fit: contain
 ---
-
-1. Alliance
-2. Members
-3. Trusted Computing Center of Excellence (TCCoE)
-{: .source-breadcrumbs }
-
-# Trusted Computing Center of Excellence (TCCoE)
-{: id="page-hero-title" .page-hero-title }
-
-The Trusted Computing Center of Excellence™ (TCCoE) not-for-profit organization’s purpose is to lower barriers to adoption and facilitate the principled development and deployment of software and systems for which there is strong evidence of…
-{: .page-hero-summary }
-
-![TCCoE logo](/assets/organisations/tccoe/b326be17471b-logo.png){: .image-left }
-{: .entity-media .entity-media--logo }
-
-Status
-: Founding member
-
-Membership
-: Community Member
-
-Website
-: [Visit member website](https://trustedcomputingcoe.org/)
-{: .entity-facts }
 
 ## Description
 {: id="description" }
@@ -36,6 +31,3 @@ The Trusted Computing Center of Excellence™ (TCCoE) not-for-profit organizatio
 {: id="cheri-activities" }
 
 TCCoE member companies began promoting CHERI as part of a trustworthy whole-system stack at the 2019 RISC-V Summit and more recently have done significant R&amp;D with ARM Morello. CHERI is part of TCCoE’s plan to coordinate member development of software/hardware platforms with formal methods based evidence of trustworthiness and offer such platforms to system developers.
-
-[Back to all members](/alliance/leadership/members/)
-{: .entity-back }

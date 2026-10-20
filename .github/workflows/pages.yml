@@ -1,7 +1,9 @@
-name: Build and deploy Jekyll to GitHub Pages
+name: Validate and deploy Jekyll
 
 on:
   push:
+    branches: [main]
+  pull_request:
     branches: [main]
   workflow_dispatch:
   schedule:
@@ -9,142 +11,76 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: github-pages
-  # A superseded build must not leave the latest reviewed commit queued.
+  group: pages-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 25
+    permissions:
+      contents: read
+      pages: read
     steps:
-      - name: Check out main
-        uses: actions/checkout@v6
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
+      - uses: actions/checkout@v6
+      - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
           bundler-cache: true
-      - name: Validate content
-        run: bundle exec ruby scripts/check_content.rb
-      - name: Verify build-time activity and empty-event fallback
-        run: bundle exec ruby scripts/test_activity.rb
-      - name: Verify all twelve collection ordering defaults
-        run: bundle exec ruby scripts/test_collection_order.rb
-      - name: Verify original organisation artwork in SVG masks
-        run: python3 scripts/prepare_organisation_logos.py --check
-      - name: Verify safe Jekyll and non-empty base URL
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Install validation tools
         run: |
-          JEKYLL_ENV=production bundle exec jekyll build --safe --baseurl /preview --destination "$RUNNER_TEMP/baseurl-site/preview"
-          python3 scripts/check_collection_links.py "$RUNNER_TEMP/baseurl-site/preview" --baseurl /preview
-          python3 scripts/check_page_content.py "$RUNNER_TEMP/baseurl-site/preview" /preview
-          python3 scripts/check_discovery.py "$RUNNER_TEMP/baseurl-site/preview" /preview
-      - name: Build Jekyll
-        run: JEKYLL_ENV=production bundle exec jekyll build --destination _site
-      - name: Validate every rendered collection reference
-        run: python3 scripts/check_collection_links.py
-      - name: Validate every page, canonical route and metadata panel
-        run: python3 scripts/check_page_content.py
-      - name: Verify static discovery and social metadata
-        run: python3 scripts/check_discovery.py
-      - name: Check navigation, responsive images and accessible viewer
+          python -m pip install -r requirements-dev.txt
+          python -m playwright install --with-deps chromium
+          npm install --prefix "$RUNNER_TEMP/accessibility" --no-audit --no-fund axe-core@4.10.3
+      - name: Validate structured records and event boundaries
         run: |
-          npm install --prefix "$RUNNER_TEMP/image-tests" --no-save playwright@1.56.1 axe-core
-          "$RUNNER_TEMP/image-tests/node_modules/.bin/playwright" install --with-deps chromium --only-shell
-          python3 -m http.server 4000 --bind 127.0.0.1 --directory _site > "$RUNNER_TEMP/image-server.log" 2>&1 &
-          image_server_pid=$!
-          python3 -m http.server 4001 --bind 127.0.0.1 --directory "$RUNNER_TEMP/baseurl-site" > "$RUNNER_TEMP/baseurl-server.log" 2>&1 &
-          baseurl_server_pid=$!
-          trap 'kill "$image_server_pid" "$baseurl_server_pid"' EXIT
-          export NODE_PATH="$RUNNER_TEMP/image-tests/node_modules"
-          export AXE_PATH="$RUNNER_TEMP/image-tests/node_modules/axe-core/axe.min.js"
-          node scripts/test_navigation.cjs
-          node scripts/test_images.cjs
-          node scripts/test_content.cjs
-          node scripts/test_homepage.cjs
-          node scripts/test_search.cjs
-          node scripts/test_directories.cjs
-          node scripts/test_reading.cjs
-          node scripts/test_accessibility.cjs
-          export SITE_DIR="$RUNNER_TEMP/baseurl-site/preview"
-          export SITE_URL="http://127.0.0.1:4001/preview/"
-          export REPORT_ROOT="reports/baseurl-tests"
-          node scripts/test_navigation.cjs
-          node scripts/test_images.cjs
-          node scripts/test_content.cjs
-          node scripts/test_homepage.cjs
-          node scripts/test_search.cjs
-          node scripts/test_directories.cjs
-          node scripts/test_reading.cjs
-          node scripts/test_accessibility.cjs
-      - name: Save base URL test results and screenshots
+          python scripts/check_content.py
+          bundle exec ruby scripts/test_event_status.rb
+      - name: Build and validate root and preview deployments
+        run: |
+          JEKYLL_ENV=production bundle exec jekyll build --safe --destination dist
+          python scripts/check_content.py --site dist --report reports/root-content.json
+          JEKYLL_ENV=production bundle exec jekyll build --safe --baseurl /preview --destination dist-baseurl/preview
+          python scripts/check_content.py --site dist-baseurl/preview --baseurl /preview --report reports/preview-content.json
+      - name: Check interactions, accessibility and responsive layouts
+        run: |
+          python -m http.server 4200 --bind 127.0.0.1 --directory dist > "$RUNNER_TEMP/site.log" 2>&1 &
+          root_server_pid=$!
+          python -m http.server 4201 --bind 127.0.0.1 --directory dist-baseurl > "$RUNNER_TEMP/preview.log" 2>&1 &
+          preview_server_pid=$!
+          trap 'kill "$root_server_pid" "$preview_server_pid"' EXIT
+          export AXE_PATH="$RUNNER_TEMP/accessibility/node_modules/axe-core/axe.min.js"
+          SITE_URL=http://127.0.0.1:4200/ REPORT_ROOT=reports/browser python scripts/test_catalog.py
+          SITE_URL=http://127.0.0.1:4201/preview/ REPORT_ROOT=reports/preview-browser python scripts/test_catalog.py
+      - name: Save review evidence
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: baseurl-tests
-          path: reports/baseurl-tests/
+          name: catalogue-review
+          path: reports/
           if-no-files-found: ignore
-      - name: Save content test results and screenshots
-        if: always()
-        uses: actions/upload-artifact@v4
+      - uses: actions/configure-pages@v5
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+      - uses: actions/upload-pages-artifact@v4
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         with:
-          name: content-tests
-          path: reports/content-tests/
-          if-no-files-found: ignore
-      - name: Save navigation test results and screenshots
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: navigation-tests
-          path: reports/navigation-tests/
-          if-no-files-found: ignore
-      - name: Save image test results and screenshots
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: image-tests
-          path: reports/image-tests/
-          if-no-files-found: ignore
-      - name: Save homepage, discovery and reading review
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: visitor-experience-tests
-          path: |
-            reports/homepage-tests/
-            reports/search-tests/
-            reports/directory-tests/
-            reports/reading-tests/
-            reports/accessibility-tests/
-          if-no-files-found: ignore
-      # Audit outputs remain available even though public navigation omits them.
-      - name: Save maintainer validation reports
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: content-audit
-          path: |
-            reports/*.json
-            _site/checks/index.html
-          if-no-files-found: ignore
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-      - name: Upload site
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: _site
+          path: dist
 
   deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy to GitHub Pages
+      - uses: actions/deploy-pages@v4
         id: deployment
-        uses: actions/deploy-pages@v4

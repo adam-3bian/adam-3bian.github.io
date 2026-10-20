@@ -1,0 +1,2 @@
+{% if page.resource_entries.size > 0 %}<section class="related-block" aria-labelledby="resource-entries"><h2 id="resource-entries">{{ page.resource_heading | default: 'Resources' | escape }}</h2>{% include listing.html items=page.resource_entries heading='h3' label=page.resource_heading action='Open resource' %}</section>{% endif %}
+{% if page.page_entries.size > 0 %}<section class="related-block" aria-label="Opportunities">{% include listing.html items=page.page_entries resolve=true heading='h3' action='View opportunity' %}</section>{% endif %}

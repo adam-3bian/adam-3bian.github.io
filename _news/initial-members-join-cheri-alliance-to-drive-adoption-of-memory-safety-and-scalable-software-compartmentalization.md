@@ -1,28 +1,21 @@
 ---
 title: Initial members join CHERI Alliance to drive adoption of memory safety and scalable software compartmentalization
 date: '2024-06-17T19:21:18+01:00'
+thumbnail:
+  src: /assets/shared/source-assets/b40f17e0c2fc-cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus.png
+  alt: Initial members join CHERI Alliance to drive adoption of memory safety and scalable software compartmentalization
+  width: 513
+  height: 484
+tags:
+- CHERI Alliance news
+summary: The initial founding members of the CHERI Alliance include [Capabilities Limited](/organisations/capabilities-limited/),
+  [Codasip](/organisations/codasip/), the [FreeBSD Foundation](/organisations/freebsd-foundation/), [lowRISC](/organisations/lowrisc/),
+  [SCI Semiconductor](/organisations/sci-semiconductor/), and the [University of Cambridge](/organisations/university-of-cambridge/).
 ---
-
-1. News &amp; Events
-2. News &amp; Analysis
-3. Initial members join CHERI Alliance to drive adoption of memory safety and scalable software compartmentalization
-{: .source-breadcrumbs }
-
-# Initial members join CHERI Alliance to drive adoption of memory safety and scalable software compartmentalization
-{: id="page-hero-title" .page-hero-title }
-
-*17 June 2024*{: .source-date }
-*CHERI Alliance news*{: .collection-tag }
-{: .collection-detail__metadata }
-
-![Initial members join CHERI Alliance to drive adoption of memory safety and scalable software compartmentalization](/assets/shared/source-assets/b40f17e0c2fc-cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus.png){: .image-full }
-{: .collection-detail__lead-image }
 
 > Founding members include [Capabilities Limited](/organisations/capabilities-limited/), [Codasip](/organisations/codasip/), the [FreeBSD Foundation](/organisations/freebsd-foundation/), [lowRISC](/organisations/lowrisc/), [SCI Semiconductor](/organisations/sci-semiconductor/), and the [University of Cambridge](/organisations/university-of-cambridge/).
 
 *Cambridge, the United Kingdom, June 17, 2024* — The CHERI Alliance CIC (Community Interest Company) today announced it has been established to advance the industry-wide adoption of the security technology CHERI (Capability Hardware Enhanced RISC Instructions). The CHERI Alliance will drive the adoption of enhanced security across the industry and ensure compliance with commonly defined standards.
-
-The initial founding members of the CHERI Alliance include [Capabilities Limited](/organisations/capabilities-limited/), [Codasip](/organisations/codasip/), the [FreeBSD Foundation](/organisations/freebsd-foundation/), [lowRISC](/organisations/lowrisc/), [SCI Semiconductor](/organisations/sci-semiconductor/), and the [University of Cambridge](/organisations/university-of-cambridge/).
 
 The Alliance governing board will include representatives from industry as well as academia, whose work will go beyond technology to unite industry leaders, system developers, users, and security experts to drive and promote CHERI as an efficient security standard.
 

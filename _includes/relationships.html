@@ -10,16 +10,17 @@
   {% assign person = site.people | where: 'slug', person_id | first %}
   {% if person %}{% assign linked_speakers = linked_speakers | push: person %}{% endif %}
 {% endfor %}
-{% for person_id in page.authors %}
-  {% assign person = site.people | where: 'slug', person_id | first %}
-  {% if person %}{% assign linked_authors = linked_authors | push: person %}{% endif %}
-{% endfor %}
+
+{% if page.collection == 'organisations' %}
 {% for person in site.people %}
   {% if page.collection == 'organisations' and person.organization contains record_id %}{% assign related_people = related_people | push: person %}{% endif %}
 {% endfor %}
+{% endif %}
+{% if page.organization.size > 0 %}
 {% for org in site.organisations %}
   {% if page.organization contains org.slug %}{% assign related_orgs = related_orgs | push: org %}{% endif %}
 {% endfor %}
+{% endif %}
 {% if page.collection == 'people' %}
   {% for event in site.events %}{% if event.speakers contains record_id %}{% assign related_events = related_events | push: event %}{% endif %}{% endfor %}
   {% for paper in site.papers %}{% if paper.authors contains record_id %}{% assign related_papers = related_papers | push: paper %}{% endif %}{% endfor %}
@@ -30,16 +31,12 @@
   <h2 id="organizations-title">Organisations</h2>
   {% include listing.html items=related_orgs label="Organisations" kind="organisations" heading="h3" compact=true columns=3 %}
 </section>{% endif %}
-{% if linked_speakers.size > 0 and page.source-speakers != true %}
+{% if linked_speakers.size > 0 and page.speaker_sections != true %}
 <section class="related-content" data-relationship="speakers" aria-labelledby="speakers-title">
   <h2 id="speakers-title">Speakers</h2>
   {% include listing.html items=linked_speakers label="Speakers" kind="people" heading="h3" compact=true columns=3 %}
 </section>{% endif %}
-{% if linked_authors.size > 0 %}
-<section class="related-content" data-relationship="authors" aria-labelledby="authors-title">
-  <h2 id="authors-title">Authors</h2>
-  {% include listing.html items=linked_authors label="Authors" kind="people" heading="h3" compact=true columns=3 %}
-</section>{% endif %}
+
 {% if related_events.size > 0 %}
 <section class="related-content" data-relationship="events" aria-labelledby="events-title">
   <h2 id="events-title">Events</h2>

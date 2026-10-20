@@ -1,31 +1,25 @@
 ---
 title: The Capable Hub
 member: true
+summary: The Capable Hub is a non-profit engineering organisation improving the availability, quality and upstream
+  alignment of open-source CHERI software.
+membership_category: Full Member
+membership_status: Member
+links:
+- label: Visit member website
+  url: https://www.thecapablehub.org/
+  kind: website
+  primary: true
+- label: Back to all members
+  url: /alliance/leadership/members/
+  kind: navigation
+thumbnail:
+  src: /assets/organisations/the-capable-hub/5f69ed560bdc-logo.png
+  alt: The Capable Hub logo
+  width: 1000
+  height: 243
+  fit: contain
 ---
-
-1. Alliance
-2. Members
-3. The Capable Hub
-{: .source-breadcrumbs }
-
-# The Capable Hub
-{: id="page-hero-title" .page-hero-title }
-
-The Capable Hub is a non-profit engineering organisation improving the availability, quality and upstream alignment of open-source CHERI software.
-{: .page-hero-summary }
-
-![The Capable Hub logo](/assets/organisations/the-capable-hub/5f69ed560bdc-logo.png){: .image-left }
-{: .entity-media .entity-media--logo }
-
-Status
-: Member
-
-Membership
-: Full Member
-
-Website
-: [Visit member website](https://www.thecapablehub.org/)
-{: .entity-facts }
 
 ## Description
 {: id="description" }
@@ -45,6 +39,3 @@ Our initial work includes mapping the ecosystem to centralise available artifact
 {: id="open-source-assets-for-cheri" }
 
 [https://www.thecapablehub.org/software/](https://www.thecapablehub.org/software/)
-
-[Back to all members](/alliance/leadership/members/)
-{: .entity-back }

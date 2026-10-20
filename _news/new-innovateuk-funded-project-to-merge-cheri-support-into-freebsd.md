@@ -1,31 +1,25 @@
 ---
 title: New InnovateUK-funded project to merge CHERI support into FreeBSD
 date: '2025-11-25T10:00:49+00:00'
-authors: [brooks-davis]
+authors:
+- brooks-davis
+thumbnail:
+  src: /assets/shared/source-assets/5a6300ace656-cheri.png
+  alt: New InnovateUK-funded project to merge CHERI support into FreeBSD
+  width: 916
+  height: 336
+tags:
+- CHERI Alliance news
+- Ecosystem
+- Members
+summary: CheriBSD has been a key part of the hardware-software design used to create CHERI since the project’s inception.
 ---
-
-1. News &amp; Events
-2. News &amp; Analysis
-3. New InnovateUK-funded project to merge CHERI support into FreeBSD
-{: .source-breadcrumbs }
-
-# New InnovateUK-funded project to merge CHERI support into FreeBSD
-{: id="page-hero-title" .page-hero-title }
-
-*25 November 2025*{: .source-date }
-*CHERI Alliance news*{: .collection-tag }
-*Ecosystem*{: .collection-tag }
-*Members*{: .collection-tag }
-{: .collection-detail__metadata }
-
-![New InnovateUK-funded project to merge CHERI support into FreeBSD](/assets/shared/source-assets/5a6300ace656-cheri.png){: .image-full }
-{: .collection-detail__lead-image }
 
 Brooks Davis – [Capabilities Limited](/organisations/capabilities-limited/)
 
 [Capabilities Limited](/organisations/capabilities-limited/), a founding member of the CHERI Alliance, is pleased to announce that we have received funding from Innovate UK for our 22 month project: *CheriBSD feature extraction, maturity, and testing*. [CheriBSD](http://cheribsd.org) is an operating system developed by the [University of Cambridge](/organisations/university-of-cambridge/), [SRI International](/organisations/sri/), and [Capabilities Limited](/organisations/capabilities-limited/) over the last fifteen years as part of the CHERI project.
 
-CheriBSD has been a key part of the hardware-software design used to create CHERI since the project’s inception. It is both a demonstration of what is possible with cleanly and tightly integrated CHERI support in a general-purpose OS, and also a “pattern” for how to integrate CHERI into other systems such as [CHERI Linux](https://cheri-linux.org/). The CheriBSD design considers CHERI as a portable, architecture-neutral feature: It runs equally well on Arm’s Morello and arriving hardware implementing the new draft standard RV64Y from RISC-V International. Today, CheriBSD is a research operating system, but many of its CHERI-enabling features are already suitable for production use. Shipping CHERI support as part of FreeBSD will significantly reduce the risk of adopting CHERI vs attempting to base products on CheriBSD.
+It is both a demonstration of what is possible with cleanly and tightly integrated CHERI support in a general-purpose OS, and also a “pattern” for how to integrate CHERI into other systems such as [CHERI Linux](https://cheri-linux.org/). The CheriBSD design considers CHERI as a portable, architecture-neutral feature: It runs equally well on Arm’s Morello and arriving hardware implementing the new draft standard RV64Y from RISC-V International. Today, CheriBSD is a research operating system, but many of its CHERI-enabling features are already suitable for production use. Shipping CHERI support as part of FreeBSD will significantly reduce the risk of adopting CHERI vs attempting to base products on CheriBSD.
 
 In this project we will extract the most production ready features from CheriBSD and upstream them to FreeBSD where they can more easily be incorporated into products supporting critical national infrastructure. Our goal is to upstream this functionality in time to ship it in the FreeBSD 16.0 release scheduled for December 2027, along with new test suites, engineering documentation, and other work to enable widespread use in the FreeBSD community.
 

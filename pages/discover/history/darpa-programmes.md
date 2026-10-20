@@ -8,20 +8,12 @@ related-pages:
   description: A short account of early capability-based computer systems and the ideas that influenced later work.
   action: Read this page
 - url: /discover/history/development-of-cheri/
-  description: A timeline of the technical work that developed CHERI from research ideas into working architectures and software.
+  description: A timeline of the technical work that developed CHERI from research ideas into working architectures
+    and software.
   action: Read this page
+summary: DARPA programmes funded the long-running cross-layer work that turned CHERI concepts into tested hardware,
+  software, and compartmentalised systems.
 ---
-
-1. Discover
-2. History
-3. DARPA Programmes
-{: .source-breadcrumbs }
-
-# DARPA Programmes
-{: id="page-hero-title" .page-hero-title }
-
-DARPA programmes funded the long-running cross-layer work that turned CHERI concepts into tested hardware, software, and compartmentalised systems.
-{: .page-hero-summary }
 
 Changing a processor architecture and its software stack takes sustained work. Early instruction ideas must survive implementation, real applications, security analysis, and repeated redesign. A sequence of programmes from the US Defense Advanced Research Projects Agency, or DARPA, provided important support for that process.
 
@@ -80,58 +72,3 @@ The sequence allowed the work to move through distinct questions:
 No one programme produced the entire current ecosystem. Together, they helped create the technical evidence and open artifacts that later work on Morello, CHERI-RISC-V, CHERIoT, commercial products, and standards could use.
 
 Authoritative background is available from the [DARPA CRASH programme archive](https://www.darpa.mil/research/programs/clean-slate-design-of-resilient-adaptive-secure-hosts) and the [University of Cambridge CHERI project page](https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/).
-
-## Where next
-{: .where-next-title }
-
-### [UKRI Digital Security by Design](/discover/history/ukri-digital-security-by-design/)
-{: .where-next-card-title }
-
-
-
-
-
-[An overview of the UK Digital Security by Design programme and its role in the wider CHERI ecosystem.](/discover/history/ukri-digital-security-by-design/)
-{: .where-next-summary }
-
-
-
-[Continue](/discover/history/ukri-digital-security-by-design/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Early Capability Systems](/discover/history/early-capability-systems/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A short account of early capability-based computer systems and the ideas that influenced later work.](/discover/history/early-capability-systems/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/history/early-capability-systems/)
-{: .source-card-label }
-
-
-
-
-
-### [Development of CHERI](/discover/history/development-of-cheri/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A timeline of the technical work that developed CHERI from research ideas into working architectures and software.](/discover/history/development-of-cheri/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/history/development-of-cheri/)
-{: .source-card-label }

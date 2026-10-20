@@ -1,29 +1,24 @@
 ---
 title: Joshua Lant
-organization: the-university-of-manchester
+organization:
+- the-university-of-manchester
 speaker: true
+summary: Joshua Lant is a Research Associate in the Department of Computer Science at the University of Manchester.
+organization_label: University of Manchester
+thumbnail:
+  src: /assets/people/joshua-lant/59c2f2fea5e2-portrait.png
+  alt: Joshua Lant
+  width: 1024
+  height: 768
+links:
+- label: Back to all speakers
+  url: /news-and-events/people-and-opportunities/speakers/
+  kind: navigation
+- label: LinkedIn
+  url: https://www.linkedin.com/in/joshua-lant-4b465b120/
+  kind: profile
+has_talks: true
 ---
-
-1. News &amp; Events
-2. Speakers
-3. Joshua Lant
-{: .source-breadcrumbs }
-
-# Joshua Lant
-{: id="page-hero-title" .page-hero-title }
-
-University of Manchester
-{: .page-hero-summary }
-
-![Joshua Lant](/assets/people/joshua-lant/59c2f2fea5e2-portrait.png){: .image-left }
-{: .entity-media .entity-media--portrait }
-
-Organisation
-: University of Manchester
-{: .entity-facts }
-
-[LinkedIn](https://www.linkedin.com/in/joshua-lant-4b465b120/)
-{: .entity-links }
 
 ## Biography
 {: id="biography" }
@@ -31,19 +26,3 @@ Organisation
 Joshua Lant is a Research Associate in the Department of Computer Science at the University of Manchester. He has been in the Advanced Processor Technologies group since 2016, being awarded his Ph.D in 2019 for work on FPGA interconnects in HPC architectures.
 
 His primary research interests are in Linux networking and PCIe, FPGA interconnects and microarchitecture, and binary modification tools.
-
-## CHERI Talks
-{: id="cheri-talks" }
-
-Securing Secure Networking tools for Morello Linux \| CHERI Blossoms 2025
-
-02/04/2025
-
-Cambridge, UK
-
-[View Slides](https://cheri-alliance.org/wp-content/uploads/2025/04/4.1-Joshua-Lant-Secure-Networking-Tools.pdf)
-
-[View Video](https://youtu.be/iUOH20uqjjA)
-
-[Back to all speakers](/news-and-events/people-and-opportunities/speakers/)
-{: .entity-back .entity-back--multiple }

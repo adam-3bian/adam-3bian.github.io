@@ -1,0 +1,14 @@
+---
+layout: default
+---
+{% include page-header.html detail=true %}
+{% capture side_content %}{% include facts.html %}{% include resource-links.html %}{% endcapture %}{% assign side_content = side_content | strip %}
+<div class="detail-layout{% if side_content != '' %} has-facts{% endif %}">
+  {% if side_content != '' %}<aside class="detail-aside" aria-label="Facts and resources">{{ side_content }}</aside>{% endif %}
+  <article class="content record-body">
+    {% if page.authors.size > 0 %}<section class="publication-authors" aria-labelledby="authors-title"><h2 id="authors-title">Authors</h2><ol role="list">{% for ref in page.authors %}{% assign author = site.people | where: 'slug', ref | first %}<li><a href="{{ author.url | relative_url }}">{{ author.title | escape }}</a></li>{% endfor %}</ol></section>{% endif %}
+    {% if page.citation %}<section class="citation-block" aria-labelledby="citation-title"><h2 id="citation-title">Citation</h2><p>{{ page.citation | markdownify | remove: '<p>' | remove: '</p>' }}</p></section>{% endif %}
+    {{ content }}
+    {% if page.alternate and page.canonical_url %}<p class="archive-notice">This is a retained version. <a href="{{ page.canonical_url | relative_url }}">Read the current policy</a>.</p>{% endif %}
+  </article>
+</div>

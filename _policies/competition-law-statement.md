@@ -10,25 +10,17 @@ related-pages:
   title: About the CHERI Alliance
   description: Learn how the Alliance connects organisations working across the CHERI ecosystem.
   action: Read this page
+summary: Alliance collaboration must never be used to exchange competitively sensitive information or coordinate
+  market behaviour.
+version: '1.0'
+document_date: 2024-08
+links:
+- label: Download official PDF
+  url: /assets/pages/alliance--legal-and-policies--competition-law-statement/0053779e62ce-competition.pdf
+  kind: document
+  primary: true
+authoritative_format: PDF
 ---
-
-1. Alliance
-2. Legal &amp; Policies
-3. Competition Law Statement
-{: .source-breadcrumbs }
-
-# Competition Law Statement
-{: id="page-hero-title" .page-hero-title }
-
-Alliance collaboration must never be used to exchange competitively sensitive information or coordinate market behaviour.
-{: .page-hero-summary }
-
-Version
-: 1.0
-
-Date
-: August 2024
-{: .page-hero-meta }
 
 ![pdf](/assets/shared/source-assets/d63b7eac09b7-pdf-file-icon.webp){: .image-left .image-inline } Download the [CHERI Alliance Competition Law Statement](/assets/pages/alliance--legal-and-policies--competition-law-statement/0053779e62ce-competition.pdf) – The PDF is the official version. The text is reproduced below for convenience, but if there is any difference between the two versions, the PDF takes precedence.
 
@@ -101,58 +93,3 @@ Date
 4.1 Any questions relating to this statement, or its contents, should be directed to the Board of Directors of the Alliance.
 
 4.2 Any suspected breach of this statement should be reported to the Board of Directors of the Alliance.
-
-## Where next
-{: .where-next-title }
-
-### [Intellectual Property Policy](/policies/intellectual-property-policy/)
-{: .where-next-card-title }
-
-
-
-
-
-[The policy governing intellectual property in Alliance activities and contributions.](/policies/intellectual-property-policy/)
-{: .where-next-summary }
-
-
-
-[Continue](/policies/intellectual-property-policy/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Code of Conduct](/policies/code-of-conduct/)
-{: .related-pages-item-title }
-
-
-
-
-
-[The behaviour and participation expectations that apply to Alliance spaces and activities.](/policies/code-of-conduct/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/policies/code-of-conduct/)
-{: .source-card-label }
-
-
-
-
-
-### [About the CHERI Alliance](/organisations/cheri-alliance/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Learn how the Alliance connects organisations working across the CHERI ecosystem.](/organisations/cheri-alliance/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/organisations/cheri-alliance/)
-{: .source-card-label }

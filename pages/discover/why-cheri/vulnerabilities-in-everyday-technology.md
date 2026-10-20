@@ -3,18 +3,9 @@ title: Vulnerabilities in Everyday Technology
 permalink: /discover/why-cheri/vulnerabilities-in-everyday-technology/
 where-next:
   url: /discover/why-cheri/why-existing-defences-are-not-enough/
+summary: A memory mistake in a connected device can expose private information, change how the device behaves, or
+  provide a way into a wider network.
 ---
-
-1. Discover
-2. Why CHERI
-3. Vulnerabilities in Everyday Technology
-{: .source-breadcrumbs }
-
-# Vulnerabilities in Everyday Technology
-{: id="page-hero-title" .page-hero-title }
-
-A memory mistake in a connected device can expose private information, change how the device behaves, or provide a way into a wider network.
-{: .page-hero-summary }
 
 Connected devices are specialised computers. A camera, doorbell, router, medical monitor, or vehicle system may connect to networks, accept remote commands, install software updates, and store sensitive or personal information.
 
@@ -85,21 +76,3 @@ Connected devices are trusted with private information, physical functions, and 
 By preventing many forms of invalid memory access and limiting the reach of compromised software, CHERI helps reduce the risk that a single mistake compromises an entire device or system.
 
 Further reading: [Google’s overview of its memory-safety strategy](https://security.googleblog.com/2024/10/safer-with-google-advancing-memory.html) and the [University of Cambridge CHERI overview](https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/).
-
-## Where next
-{: .where-next-title }
-
-### [Why Existing Defences Are Not Enough](/discover/why-cheri/why-existing-defences-are-not-enough/)
-{: .where-next-card-title }
-
-
-
-
-
-[Passwords, encryption, testing, and updates all matter, but they do not stop every memory mistake when it happens.](/discover/why-cheri/why-existing-defences-are-not-enough/)
-{: .where-next-summary }
-
-
-
-[Continue](/discover/why-cheri/why-existing-defences-are-not-enough/)
-{: .source-card-label }

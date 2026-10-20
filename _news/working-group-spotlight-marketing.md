@@ -1,28 +1,22 @@
 ---
 title: Working Group Spotlight – Marketing
 date: '2025-07-21T14:00:09+01:00'
+thumbnail:
+  src: /assets/shared/source-assets/bb889a4dc09e-cheri-alliance-working-groups.png
+  alt: Working Group Spotlight – Marketing
+  width: 746
+  height: 369
+tags:
+- CHERI Alliance news
+- Working Groups
+summary: CHERI is reshaping how we think about secure technology. At the heart of this effort is the CHERI Alliance,
+  a growing community committed to secure by design innovation. By joining us, you gain not just insight and influence
+  but support in making your work more visible, more accessible and more impactful. The Alliance is organised into
+  [Working Groups](/alliance/leadership/working-groups/) which are open to all members who want to participate.
 ---
-
-1. News &amp; Events
-2. News &amp; Analysis
-3. Working Group Spotlight – Marketing
-{: .source-breadcrumbs }
-
-# Working Group Spotlight – Marketing
-{: id="page-hero-title" .page-hero-title }
-
-*21 July 2025*{: .source-date }
-*CHERI Alliance news*{: .collection-tag }
-*Working Groups*{: .collection-tag }
-{: .collection-detail__metadata }
-
-![Working Group Spotlight – Marketing](/assets/shared/source-assets/bb889a4dc09e-cheri-alliance-working-groups.png){: .image-right }
-{: .collection-detail__lead-image }
 
 ## Join the CHERI Alliance - Collaborate, Communicate, Be Seen
 {: id="join-the-cheri-alliance---collaborate-communicate-be-seen" }
-
-CHERI is reshaping how we think about secure technology. At the heart of this effort is the CHERI Alliance, a growing community committed to secure by design innovation. By joining us, you gain not just insight and influence but support in making your work more visible, more accessible and more impactful. The Alliance is organised into [Working Groups](/alliance/leadership/working-groups/) which are open to all members who want to participate.
 
 ### What the Marketing Working Group Does
 {: id="what-the-marketing-working-group-does" }

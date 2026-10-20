@@ -4,18 +4,8 @@ permalink: /adopt/business-case/the-business-case/
 where-next:
   url: /adopt/business-case/cost-of-memory-unsafety/
   title: Cost of Memory Unsafety
+summary: CHERI helps reduce risk, protect software investments, build trust and create competitive advantage.
 ---
-
-1. Adopt
-2. Business Case
-3. The Strategic Case for CHERI
-{: .source-breadcrumbs }
-
-# The Strategic Case for CHERI
-{: id="page-hero-title" .page-hero-title }
-
-CHERI helps reduce risk, protect software investments, build trust and create competitive advantage.
-{: .page-hero-summary }
 
 CHERI helps prevent many memory-safety vulnerabilities by design, creating the foundations for more secure and resilient systems.
 
@@ -90,21 +80,3 @@ As security expectations continue to rise, investing in resilient technologies t
 {: id="a-strategic-investment-in-resilience" }
 
 CHERI is more than a security technology. It helps organisations reduce risk, protect software investments, build trust, and prepare for future security expectations. For organisations seeking stronger security without discarding decades of software development, CHERI offers a practical path towards more resilient products and services.
-
-## Where next
-{: .where-next-title }
-
-### [Cost of Memory Unsafety](/adopt/business-case/cost-of-memory-unsafety/)
-{: .where-next-card-title }
-
-
-
-
-
-[Memory unsafety creates costs in engineering, operations, assurance, support, and lost development time.](/adopt/business-case/cost-of-memory-unsafety/)
-{: .where-next-summary }
-
-
-
-[Continue](/adopt/business-case/cost-of-memory-unsafety/)
-{: .source-card-label }

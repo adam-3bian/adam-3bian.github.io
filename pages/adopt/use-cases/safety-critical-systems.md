@@ -5,7 +5,8 @@ where-next:
   url: /adopt/assurance-and-adoption/case-studies/
 related-pages:
 - url: /adopt/use-cases/automotive/
-  description: Connected vehicles combine exposed software, long lifecycles, and components with very different levels of trust.
+  description: Connected vehicles combine exposed software, long lifecycles, and components with very different
+    levels of trust.
   action: Read this page
 - url: /adopt/use-cases/defence-and-aerospace/
   description: Mission systems combine active threats, long lifecycles, mixed suppliers, and demanding assurance.
@@ -14,18 +15,9 @@ related-pages:
   title: The Business Case
   description: CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.
   action: Read this page
+summary: CHERI can make memory access and component authority more explicit, adding hardware-enforced evidence to
+  a wider safety and security case.
 ---
-
-1. Adopt
-2. Use Cases
-3. Safety-Critical Systems
-{: .source-breadcrumbs }
-
-# Safety-Critical Systems
-{: id="page-hero-title" .page-hero-title }
-
-CHERI can make memory access and component authority more explicit, adding hardware-enforced evidence to a wider safety and security case.
-{: .page-hero-summary }
 
 Safety-critical systems depend on software behaving within defined limits. Connectivity adds another concern: a security compromise in a communications or diagnostic component can influence functions whose failure could cause physical harm.
 
@@ -68,77 +60,3 @@ Worst-case timing, memory use, diagnostic coverage, determinism, recovery, and r
 Certification remains specific to a sector, product, claim, lifecycle, and authority. A CHERI-capable processor does not certify the system that contains it. It can, however, provide architectural and test evidence for claims about memory access, separation, and the authority retained after a component fails or is compromised.
 
 That makes CHERI a potential fit where native software remains necessary and a safety or security argument depends on keeping one component’s failure away from more critical functions. It contributes a stronger boundary; the wider engineering and assurance case explains how that boundary supports safe operation.
-
-## Where next
-{: .where-next-title }
-
-### [Case Studies](/adopt/assurance-and-adoption/case-studies/)
-{: .where-next-card-title }
-
-
-
-
-
-[Case studies show how CHERI has moved from research into operating systems, embedded platforms, software ports, and processor products.](/adopt/assurance-and-adoption/case-studies/)
-{: .where-next-summary }
-
-
-
-[Continue](/adopt/assurance-and-adoption/case-studies/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Automotive](/adopt/use-cases/automotive/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Connected vehicles combine exposed software, long lifecycles, and components with very different levels of trust.](/adopt/use-cases/automotive/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/adopt/use-cases/automotive/)
-{: .source-card-label }
-
-
-
-
-
-### [Defence &amp; Aerospace](/adopt/use-cases/defence-and-aerospace/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Mission systems combine active threats, long lifecycles, mixed suppliers, and demanding assurance.](/adopt/use-cases/defence-and-aerospace/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/adopt/use-cases/defence-and-aerospace/)
-{: .source-card-label }
-
-
-
-
-
-### [The Business Case](/adopt/business-case/the-business-case/)
-{: .related-pages-item-title }
-
-
-
-
-
-[CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.](/adopt/business-case/the-business-case/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/adopt/business-case/the-business-case/)
-{: .source-card-label }

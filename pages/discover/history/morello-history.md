@@ -10,18 +10,9 @@ related-pages:
 - url: /discover/history/ukri-digital-security-by-design/
   description: An overview of the UK Digital Security by Design programme and its role in the wider CHERI ecosystem.
   action: Read this page
+summary: Morello brought CHERI to a high-performance Arm prototype platform and enabled large-scale evaluation by
+  industry, academia, and government.
 ---
-
-1. Discover
-2. History
-3. Morello History
-{: .source-breadcrumbs }
-
-# Morello History
-{: id="page-hero-title" .page-hero-title }
-
-Morello brought CHERI to a high-performance Arm prototype platform and enabled large-scale evaluation by industry, academia, and government.
-{: .page-hero-summary }
 
 FPGA processors are ideal for changing an architecture quickly, but they cannot answer every question about a modern, high-performance system. To evaluate CHERI at application-processor scale, the ecosystem needed prototype silicon, a complete board, and a software stack large enough to run familiar workloads.
 
@@ -73,58 +64,3 @@ Morello was designed as an evaluation platform, not as a mass-market product arc
 Its lasting value is the scale of the experiment. Morello showed that capability memory protection and pure-capability software could be integrated into a sophisticated processor, system-on-chip, board, operating system, and application ecosystem.
 
 The lessons now inform work on standards, compilers, operating systems, CHERI-RISC-V platforms, commercial processors, and application compartmentalisation. Developers who want to use the board today should consult the separate [Morello platform page](/hardware/morello/) for current access routes and software guidance.
-
-## Where next
-{: .where-next-title }
-
-### [RISC-V and Embedded Development](/discover/history/risc-v-and-embedded-development/)
-{: .where-next-card-title }
-
-
-
-
-
-[An overview of CHERI work for RISC-V and embedded systems.](/discover/history/risc-v-and-embedded-development/)
-{: .where-next-summary }
-
-
-
-[Continue](/discover/history/risc-v-and-embedded-development/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Early Capability Systems](/discover/history/early-capability-systems/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A short account of early capability-based computer systems and the ideas that influenced later work.](/discover/history/early-capability-systems/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/history/early-capability-systems/)
-{: .source-card-label }
-
-
-
-
-
-### [UKRI Digital Security by Design](/discover/history/ukri-digital-security-by-design/)
-{: .related-pages-item-title }
-
-
-
-
-
-[An overview of the UK Digital Security by Design programme and its role in the wider CHERI ecosystem.](/discover/history/ukri-digital-security-by-design/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/history/ukri-digital-security-by-design/)
-{: .source-card-label }

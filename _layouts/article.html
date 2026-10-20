@@ -1,0 +1,9 @@
+---
+layout: default
+---
+<div class="article-shell">
+{% include page-header.html article=true %}
+{% if page.thumbnail.src and page.thumbnail_in_body != true %}<figure class="article-lead">{% include image.html image=page.thumbnail eager=true %}</figure>{% endif %}
+<article class="content reading-content">{{ content }}</article>
+{% if page.links.size > 0 %}{% include resource-links.html %}{% endif %}
+</div>

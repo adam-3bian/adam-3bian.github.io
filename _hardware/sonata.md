@@ -10,18 +10,17 @@ related-pages:
   title: Choose a Platform
   description: Choose a platform, prepare an environment and run a first CHERI workload.
   action: Read this page
+summary: Sonata is an accessible FPGA development platform for running CHERIoT firmware with real peripherals before
+  moving to production silicon.
+thumbnail:
+  src: /assets/pages/adopt--assurance-and-adoption--case-studies/645cc3b9a905-sonata-cheriot.webp
+  alt: CHERIoT processor on a Sonata board
+  width: 640
+  height: 384
+  fit: contain
+record_type: Platform overview
+thumbnail_in_body: true
 ---
-
-1. Build
-2. Platforms
-3. Sonata
-{: .source-breadcrumbs }
-
-# Sonata
-{: id="page-hero-title" .page-hero-title }
-
-Sonata is an accessible FPGA development platform for running CHERIoT firmware with real peripherals before moving to production silicon.
-{: .page-hero-summary }
 
 Simulation is the quickest way to build a first CHERIoT application, but embedded development soon needs physical input and output. Developers must test timers, UARTs, storage, sensors, displays, and fault behaviour on hardware.
 
@@ -109,59 +108,3 @@ For every result, capture:
 - connected peripherals and clock settings
 
 Visit the [Sonata project documentation](https://sonata-system.github.io/sonata-system/) and the [CHERIoT getting-started guide](https://cheriot.org/book/getting_started.html) for current hardware and software instructions.
-
-## Where next
-{: .where-next-title }
-
-### [FPGA Platforms](/hardware/fpga-platforms/)
-{: .where-next-card-title }
-
-
-
-
-
-[FPGA platforms put a CHERI processor and system design onto reconfigurable hardware.](/hardware/fpga-platforms/)
-{: .where-next-summary }
-
-
-
-[Continue](/hardware/fpga-platforms/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-
-### [CHERIoT](/hardware/cheriot/)
-{: .related-pages-item-title }
-
-
-
-
-
-[CHERIoT is a complete embedded hardware-software platform built around CHERI concepts.](/hardware/cheriot/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/hardware/cheriot/)
-{: .source-card-label }
-
-
-
-
-
-### [Choose a Platform](/guides/choose-a-platform/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Choose a platform, prepare an environment and run a first CHERI workload.](/guides/choose-a-platform/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/guides/choose-a-platform/)
-{: .source-card-label }

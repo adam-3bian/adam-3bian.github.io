@@ -6,12 +6,18 @@ hero:
 sections:
 - presentation: cards
   columns: 3
-  headings: [protect-your-organisation, build-more-secure-products, build-the-technology]
+  headings:
+  - protect-your-organisation
+  - build-more-secure-products
+  - build-the-technology
 - presentation: cards
   columns: 2
-  headings: [join-the-ecosystem, meet-the-community]
+  headings:
+  - join-the-ecosystem
+  - meet-the-community
 - presentation: action
-  headings: [become-part-of-the-journey]
+  headings:
+  - become-part-of-the-journey
 where-next:
   url: /discover/why-cheri/vulnerabilities-in-everyday-technology/
   title: Discover CHERI
@@ -25,8 +31,7 @@ related-pages:
   action: Read this page
 - url: /organisations/cheri-alliance/
   title: About the CHERI Alliance
-  description: Learn how the Alliance connects organisations working across the CHERI
-    ecosystem.
+  description: Learn how the Alliance connects organisations working across the CHERI ecosystem.
   action: Read this page
 - url: /news-and-events/events-and-archive/upcoming-events/
   title: News & Events
@@ -38,8 +43,8 @@ slider:
   interval: 5000
   slides:
   - title: CHERITech'26
-    text: A two-day CHERI technical programme at SEMICON Europa in Munich, connecting
-      implementation work with the wider electronics industry.
+    text: A two-day CHERI technical programme at SEMICON Europa in Munich, connecting implementation work with the
+      wider electronics industry.
     url: /events/cheritech26/
     action: View event
     image:
@@ -47,21 +52,17 @@ slider:
       alt: CHERITech'26
       fit: contain
   - title: A new ETSI standard could rewrite the memory-safety debate
-    text: Memory-safety vulnerabilities remain one of the largest sources of critical
-      software vulnerabilities.
+    text: Memory-safety vulnerabilities remain one of the largest sources of critical software vulnerabilities.
     url: /news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/
     action: Read article
     image:
       src: /assets/news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/67e343f4b8d6-hero.png
       alt: ETSI standard
       fit: contain
+display_title: Software runs our world.<br><small>It deserves stronger security foundations.<br>Enabled by CHERI.</small>
+summary: Software vulnerabilities have always been a risk. AI is increasing the speed and scale at which they can
+  be found and exploited. CHERI helps **stop vulnerabilities from becoming attacks**.
 ---
-
-# Software runs our world.<br><small>It deserves stronger security foundations.<br>Enabled by CHERI.</small>
-{: id="page-hero-title" .page-hero-title }
-
-Software vulnerabilities have always been a risk. AI is increasing the speed and scale at which they can be found and exploited. CHERI helps **stop vulnerabilities from becoming attacks**.
-{: .page-hero-summary }
 
 CHERI is an **open** security technology that builds stronger protection **into the hardware**, helping software stay secure even when things go wrong.
 
@@ -118,96 +119,3 @@ Memory safety is one of the most important cybersecurity challenges of our time.
 Join the organisations helping make secure computing the norm.
 
 [Join the Alliance](/alliance/membership/why-join/)
-
-## Where next
-{: .where-next-title }
-
-### [Discover CHERI](/discover/why-cheri/vulnerabilities-in-everyday-technology/)
-{: .where-next-card-title }
-
-
-
-
-
-[Understand the software-security problem, how memory-safety failures become exploitable, and what CHERI changes.](/discover/why-cheri/vulnerabilities-in-everyday-technology/)
-{: .where-next-summary }
-
-
-
-[Continue](/discover/why-cheri/vulnerabilities-in-everyday-technology/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [How does CHERI work?](/discover/understand/how-does-cheri-work/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Helping software stay within its boundaries.](/discover/understand/how-does-cheri-work/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/understand/how-does-cheri-work/)
-{: .source-card-label }
-
-
-
-
-
-### [Developer section](/build/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Resources and knowledge to develop with CHERI.](/build/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/build/)
-{: .source-card-label }
-
-
-
-
-
-### [About the CHERI Alliance](/organisations/cheri-alliance/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Learn how the Alliance connects organisations working across the CHERI ecosystem.](/organisations/cheri-alliance/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/organisations/cheri-alliance/)
-{: .source-card-label }
-
-
-
-
-
-### [News &amp; Events](/news-and-events/events-and-archive/upcoming-events/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Meet the CHERI ecosystem, learn about the latest news.](/news-and-events/events-and-archive/upcoming-events/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/news-and-events/events-and-archive/upcoming-events/)
-{: .source-card-label }

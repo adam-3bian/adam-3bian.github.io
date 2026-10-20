@@ -5,7 +5,8 @@ where-next:
   url: /adopt/use-cases/cloud-and-data-centre/
 related-pages:
 - url: /adopt/use-cases/automotive/
-  description: Connected vehicles combine exposed software, long lifecycles, and components with very different levels of trust.
+  description: Connected vehicles combine exposed software, long lifecycles, and components with very different
+    levels of trust.
   action: Read this page
 - url: /adopt/use-cases/iot-and-embedded/
   description: Small connected devices can hold private data, network credentials, and control over physical functions.
@@ -14,18 +15,9 @@ related-pages:
   title: The Business Case
   description: CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.
   action: Read this page
+summary: CHERI can protect exposed and long-lived software inside infrastructure systems, helping one memory flaw
+  remain separate from the functions that keep an essential service running.
 ---
-
-1. Adopt
-2. Use Cases
-3. Critical Infrastructure
-{: .source-breadcrumbs }
-
-# Critical Infrastructure
-{: id="page-hero-title" .page-hero-title }
-
-CHERI can protect exposed and long-lived software inside infrastructure systems, helping one memory flaw remain separate from the functions that keep an essential service running.
-{: .page-hero-summary }
 
 Energy, water, communications, transport, health, and industrial services depend on computers that interact with the physical world. Many of those systems combine specialist hardware, established C or C++ code, remote management, vendor software, and replacement cycles measured in years or decades.
 
@@ -72,77 +64,3 @@ The response to a capability fault also matters. A stopped invalid access protec
 Infrastructure estates rarely change all at once. CHERI can appear within a new gateway, an updated controller, a replacement edge device, or a subsystem already reaching a refresh point. This allows capability protection to coexist with established protocols and equipment.
 
 Its fit is strongest where one exposed or lower-trust component currently has broad access to functions with serious consequences. In that setting, CHERI can reduce the chance that a memory mistake becomes control over the wider device, while preserving the software and operational knowledge on which the service still depends.
-
-## Where next
-{: .where-next-title }
-
-### [Cloud &amp; Data Centre](/adopt/use-cases/cloud-and-data-centre/)
-{: .where-next-card-title }
-
-
-
-
-
-[Cloud and data-centre platforms show the value of finer protection inside processes, hosts, and infrastructure services.](/adopt/use-cases/cloud-and-data-centre/)
-{: .where-next-summary }
-
-
-
-[Continue](/adopt/use-cases/cloud-and-data-centre/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Automotive](/adopt/use-cases/automotive/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Connected vehicles combine exposed software, long lifecycles, and components with very different levels of trust.](/adopt/use-cases/automotive/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/adopt/use-cases/automotive/)
-{: .source-card-label }
-
-
-
-
-
-### [IoT &amp; Embedded](/adopt/use-cases/iot-and-embedded/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Small connected devices can hold private data, network credentials, and control over physical functions.](/adopt/use-cases/iot-and-embedded/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/adopt/use-cases/iot-and-embedded/)
-{: .source-card-label }
-
-
-
-
-
-### [The Business Case](/adopt/business-case/the-business-case/)
-{: .related-pages-item-title }
-
-
-
-
-
-[CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.](/adopt/business-case/the-business-case/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/adopt/business-case/the-business-case/)
-{: .source-card-label }

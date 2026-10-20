@@ -9,20 +9,11 @@ related-pages:
   description: The working group brings together the strengths of Rust and CHERI.
   action: Read this page
 - url: /discover/understand/cheri-and-existing-software/
-  description: Porting software to CHERI is a process of finding assumptions about pointers, integers, objects, bounds, provenance, lifetimes, and interfaces.
+  description: Porting software to CHERI is a process of finding assumptions about pointers, integers, objects,
+    bounds, provenance, lifetimes, and interfaces.
   action: Read this page
+summary: Rust and CHERI are complementary, not competing approaches.
 ---
-
-1. Discover
-2. Why CHERI
-3. CHERI and Rust
-{: .source-breadcrumbs }
-
-# CHERI and Rust
-{: id="page-hero-title" .page-hero-title }
-
-Rust and CHERI are complementary, not competing approaches.
-{: .page-hero-summary }
 
 Rust and CHERI address memory safety at different layers. Together, they provide stronger protection than either approach alone. Why choose one when you can have both?
 
@@ -78,58 +69,3 @@ Rust can help ensure the application calls the library safely. CHERI can ensure 
 - CHERI constrains unsafe code and native components at runtime
 - CHERI enables fine-grained compartmentalisation and least privilege
 - Together they provide stronger protection than either approach alone
-
-## Where next
-{: .where-next-title }
-
-### [CHERI and Rust - Technical Overview](/build/technology/cheri-and-rust-technical/)
-{: .where-next-card-title }
-
-
-
-
-
-[Further technical details to understand why CHERI and Rust are complementary.](/build/technology/cheri-and-rust-technical/)
-{: .where-next-summary }
-
-
-
-[Continue](/build/technology/cheri-and-rust-technical/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Rust+CHERI working group](/groups/rust-plus-cheri/)
-{: .related-pages-item-title }
-
-
-
-
-
-[The working group brings together the strengths of Rust and CHERI.](/groups/rust-plus-cheri/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/groups/rust-plus-cheri/)
-{: .source-card-label }
-
-
-
-
-
-### [CHERI and Existing Software](/discover/understand/cheri-and-existing-software/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Porting software to CHERI is a process of finding assumptions about pointers, integers, objects, bounds, provenance, lifetimes, and interfaces.](/discover/understand/cheri-and-existing-software/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/understand/cheri-and-existing-software/)
-{: .source-card-label }

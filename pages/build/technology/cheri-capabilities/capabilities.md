@@ -3,19 +3,9 @@ title: Capabilities
 permalink: /build/technology/cheri-capabilities/capabilities/
 where-next:
   url: /build/technology/cheri-capabilities/tags-and-validity/
+summary: A CHERI capability is a hardware-protected reference that combines where an object is with the authority
+  to access it.
 ---
-
-1. Build
-2. Technology
-3. CHERI Capabilities
-4. Capabilities
-{: .source-breadcrumbs }
-
-# Capabilities
-{: id="page-hero-title" .page-hero-title }
-
-A CHERI capability is a hardware-protected reference that combines where an object is with the authority to access it.
-{: .page-hero-summary }
 
 A conventional pointer tells the processor where to access memory. It usually does not tell the processor which object the programmer intended, how large that object is, or whether the pointer should be allowed to write.
 
@@ -98,21 +88,3 @@ This supports compartmentalisation. A component can receive capabilities for one
 - Capability metadata is not encryption. It controls access but does not conceal data that code is authorised to read.
 
 Capabilities are the common foundation for [Tags &amp; Validity](/build/technology/cheri-capabilities/tags-and-validity/), [Bounds](/build/technology/cheri-capabilities/bounds/), [Permissions](/build/technology/cheri-capabilities/permissions/), and [Compartmentalisation](/build/technology/cheri-capabilities/compartmentalisation/).
-
-## Where next
-{: .where-next-title }
-
-### [Tags &amp; Validity](/build/technology/cheri-capabilities/tags-and-validity/)
-{: .where-next-card-title }
-
-
-
-
-
-[Suppose an attacker learns that a password sits at address 0x40008000.](/build/technology/cheri-capabilities/tags-and-validity/)
-{: .where-next-summary }
-
-
-
-[Continue](/build/technology/cheri-capabilities/tags-and-validity/)
-{: .source-card-label }

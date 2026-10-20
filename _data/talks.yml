@@ -1,0 +1,1216 @@
+- id: cf359c586070
+  title: Verifying Secure Memory Compartmentalization in CHERI Processors at the RTL
+  date: "2026-03-27"
+  speakers:
+  - johannes-muller
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-3.1-Johannes-Mueller-Verifying-Secure-Memory-Compartmentalization-in-CHERI-Processors-at-the-RTL-CHERI-Blossoms-2026.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/8q_uNOS_h9M
+    kind: video
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: c9c48f6d19b0
+  title: Towards Heterogeneous CHERI Compartmentalization
+  date: "2026-03-27"
+  speakers:
+  - jianyi-cheng
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-3.4-Jianyi-Cheng-Towards-Heterogeneous-CHERI-Compartmentalization-CHERI-Blossoms-2026.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/wRi7jf6RWWE
+    kind: video
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: c049b7fc1165
+  title: 'Securing Real-Time Communication: Porting and running Edge Computing for mission critical services on
+    Morello CHERI'
+  date: "2026-03-27"
+  speakers:
+  - alexander-voyevoda
+  - peter-cox
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-2.3-Peter-Cox-Securing-Real-Time-Communication-Porting-and-running-Edge-Computing-for-mission-critical-services-on-Morello-CHERI-CHERI-Blossoms-2026.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/1s8YwStewjE
+    kind: video
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: 689dbc1baa7d
+  title: Rust on CHERIoT
+  date: "2026-03-27"
+  speakers:
+  - edoardo-marangoni
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-2.4-Edoardo-Marangoni-Rust-On-CHERIoT-CHERI-Blossoms-2026.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/w96UJaagWlg
+    kind: video
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: 7083c1a534aa
+  title: 'PICASSO: Scaling CHERI Use-After-Free Protection to Millions of Allocations | CHERI Blossoms 2026'
+  date: "2026-03-27"
+  speakers:
+  - merve-gulmez
+  - thomas-nyman
+  location: Cambridge, UK
+  links:
+  - label: View Video
+    url: https://youtu.be/kkjG78h1KQk
+    kind: video
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2026/06/D2-3.3-Thomas-Nyman-Merve-Gulmez-Scaling-CHERI-Use-After-Free-Protection-to-Millions-of-Allocations-CHERI-Blossoms-2026.pdf
+    kind: slides
+- id: f52b785017c2
+  title: Microservice Store
+  date: "2026-03-27"
+  speakers:
+  - murat-cakmak
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-1.7.5-Murat-Cakmak-Microservice-Store-for-CHERI-CHERI-Blossoms-2026.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/zsJvGBs28H4
+    kind: video
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: 403f3444494c
+  title: MMU-based revocation for temporal safety on CHERI application cores
+  date: "2026-03-27"
+  speakers:
+  - alfredo-mazzinghi
+  - tariq-kurd
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-1.4-Tariq-Kurd-MMU-based-revocation-CHERI-Blossoms-2026.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/TLPYTtTkDP8
+    kind: video
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: ade123cb50a8
+  title: Inside the CHERI in SoC Working Group
+  date: "2026-03-27"
+  speakers:
+  - ben-fletcher
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-1.3-Ben-Fletcher-Inside-the-CHERI-in-SoC-Working-Group-CHERI-Blossoms-2026.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/9RTiFIZqyVM
+    kind: video
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: a527470d558c
+  title: 'CHERI-enabled RISC-V VP: Capabilities and Applications'
+  date: "2026-03-27"
+  speakers:
+  - luca-muller
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-3.2-Luca-Mueller-CHERI-enabled-RISC-V-VP-Capabilities-and-Applications-CHERI-Blossoms-2026.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/7XzzG8-FU1g
+    kind: video
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: b9f0c7b43ac3
+  title: CHERI-Zephyr
+  date: "2026-03-27"
+  speakers:
+  - jennifer-jackson
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-1.7.4-Jennifer-Jackson-CHERI-Zephyr-CHERI-Blossoms-2026.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/Kzqdy5Ta4Us
+    kind: video
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: 22ea30cfdf5b
+  title: "CHERI-PIT:  \nPort Integrity Tool"
+  date: "2026-03-27"
+  speakers:
+  - david-musliner
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-1.7.3-David-Musliner-SIFT-CHERI-PIT-CHERI-Blossoms-2026.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/9xeW8SM6Ir0
+    kind: video
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: 94f06c5a7b40
+  title: CHERI performance improvement update
+  date: "2026-03-27"
+  speakers:
+  - carl-shaw
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-2.2-Carl-Shaw-CHERI-performance-improvement-update-CHERI-Blossoms-2026.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/44wVBZ4NxZA
+    kind: video
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: f4e4e38cfbdf
+  title: CHERI Linking through the Ages
+  date: "2026-03-27"
+  speakers:
+  - jessica-clarke
+  - john-baldwin
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-2.5-John-Baldwin-Jessica-Clarke-CHERI-Linking-through-the-Ages-CHERI-Blossoms-2026.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/ORl43tjaVGM
+    kind: video
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: f9d366846383
+  title: BT’s Engagement with CHERI Technology
+  date: "2026-03-27"
+  speakers:
+  - sam-cater
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-1.2-Sam-Cater-BTs-Engagement-with-CHERI-Technology-CHERI-Blossoms-2026.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/xOHOPsrtjiQ
+    kind: video
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: 595c5bc52c44
+  title: All-Caps — Extending Capabilities Across the Whole SoC
+  date: "2026-03-27"
+  speakers:
+  - samuel-stark
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-3.5-Samuel-Stark-All-Caps-CHERI-Blossoms-2026.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/qV_4stih5tc
+    kind: video
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: f3280e15ffb6
+  title: UKRI Talk
+  date: "2026-03-26"
+  speakers:
+  - john-goodacre
+  location: Cambridge, UK
+  links:
+  - label: View Talk
+    url: https://youtu.be/W9vnKbXIR8g
+    kind: resource
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: c8414524bfe3
+  title: 'The Capable Hub: Our Recent Work and Next Steps'
+  date: "2026-03-26"
+  speakers:
+  - andrew-murray
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2026/04/D1-2.6-Andrew-Murray-The-Capable-Hub-Our-Recent-Work-and-Next-Steps-CHERI-Blossoms-2026.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/3f_bzB9HJxw
+    kind: video
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: 065f45ea352c
+  title: The CHERI Research Centre
+  date: "2026-03-26"
+  speakers:
+  - robert-watson
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2026/04/D1-2.5-Robert-Watson-CHERI-Research-Centre-CHERI-Blossoms-2026.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/jHIshRpvaYU
+    kind: video
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: 8634014da7dc
+  title: 'RISC-V: Driving the Future of Open Compute'
+  date: "2026-03-26"
+  speakers:
+  - andy-moore
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2026/04/D1-3.5-Andy-Moore-RISC-V-International-CHERI-Blossoms-2026.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/5uR8-ujSrLI
+    kind: video
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: 8a44465cfcf6
+  title: Progress of the Alliance
+  date: "2026-03-26"
+  speakers:
+  - mike-eftimakis
+  location: Cambridge, UK
+  links:
+  - label: View slides
+    url: https://cheri-alliance.org/wp-content/uploads/2026/04/D1-2.3-Mike-Eftimakis-Progress-of-the-Alliance-CHERI-Blossoms-2026.pdf
+    kind: slides
+  - label: Watch video
+    url: https://youtu.be/5IuLXI_uE2M
+    kind: video
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: 279e2851f13b
+  title: "Portable CHERI  \nOS APIs"
+  date: "2026-03-26"
+  speakers:
+  - paul-metzger
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-1.7.2-Paul-Metzger-Lightning-Talk-Portable-CHERI-OS-APIs-CHERI-Blossoms-2026.pdf
+    kind: slides
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: 0cc81740022f
+  title: Performance Progress of CVA6-CHERI
+  date: "2026-03-26"
+  speakers:
+  - jonathan-woodruff
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-2.1-Jonathan-Woodruff-CVA6-CHERI-Performance-CHERI-Blossoms-2026.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/cMhIKvF0-kw
+    kind: video
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: 75e917bb91cb
+  title: 'Keynote – Memory Safety at Scale: An Industry Perspective'
+  date: "2026-03-26"
+  speakers:
+  - alex-rebert
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2026/04/D1-1.4-Alex-Rebert-Memory-Safety-at-Scale-An-Industry-Perspective-CHERI-Blossoms-2026.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/zRZnks7P-uE
+    kind: video
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: cd2599aaaa86
+  title: 'Keynote – Getting ready for the CRA: from compliance to confidence'
+  date: "2026-03-26"
+  speakers:
+  - maika-fohrenbach
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2026/04/D1-1.5-Maika-Fohrenbach-Keynote-%E2%80%93-Getting-ready-for-the-CRA-from-compliance-to-confidence-CHERI-Blossoms-2026.pdf
+    kind: slides
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: 3dba495598b8
+  title: 'Keynote – CHERI: quantifying the value of a strategic imperative'
+  date: "2026-03-26"
+  speakers:
+  - ollie-whitehouse
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2026/04/D1-1.2-Ollie-Whitehouse-Keynote-%E2%80%93-CHERI-quantifying-the-value-of-a-strategic-imperative-CHERI-Blossoms-2026.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/9cXL0Bu9XzE
+    kind: video
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: b8ba01ad9e84
+  title: Featured Message
+  date: "2026-03-26"
+  speakers:
+  - kathleen-fisher
+  location: Cambridge, UK
+  links:
+  - label: View Video
+    url: https://youtu.be/fhQkbrQK2j4
+    kind: video
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: 7a8e44de22b3
+  title: ETSI Standardisation status
+  date: "2026-03-26"
+  speakers:
+  - paul-waller
+  location: Cambridge, UK
+  links:
+  - label: View Video
+    url: https://youtu.be/KP7WU5ScEi8
+    kind: video
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: 3a54d3722077
+  title: DSIT @ CHERI Blossoms 2026
+  date: "2026-03-26"
+  speakers:
+  - bradley-finn
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2026/04/D1-2.1-Bradley-Finn-DSIT-at-CHERI-Blossoms-2026.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/NRISUDg4r-w
+    kind: video
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: 4a9abd112b65
+  title: 'Certification Program: Awards'
+  date: "2026-03-26"
+  speakers:
+  - mike-eftimakis
+  location: Cambridge, UK
+  links:
+  - label: Watch video
+    url: https://youtu.be/EUgz6Os2Kv8
+    kind: video
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: 6997948fd89a
+  title: 'COSMIC verification: comprehensive, end-to-end formal proofs of CVA6-CHERI'
+  date: "2026-03-26"
+  speakers:
+  - louis-emile-ploix
+  - marno-van-der-maas
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-1.5-Louis-Emile-Ploix-COSMIC-Formal-Verification-CHERI-Blossoms-2026.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/ZUqcw9pbGL0
+    kind: video
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: b4ca3f04e876
+  title: CHERIoT-Kudu
+  date: "2026-03-26"
+  speakers:
+  - david-chisnall
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-1.7.1-David-Chisnall-CHERIoT-Kudu-A-high-performance-CHERIoT-microcontroller-CHERI-Blossoms-2026.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/BTAQkdx_fsM
+    kind: video
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: 0addf6bad5f4
+  title: CHERI is being standardised, so why do we still need to do research?
+  date: "2026-03-26"
+  speakers:
+  - simon-moore
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-1.6-Simon-Moore-CHERI-RvsD-CHERI-Blossoms-2026.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/iv-Pro9CV5k
+    kind: video
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: fc9a9f2b8b9b
+  title: CHERI RISC-V Standardisation Status
+  date: "2026-03-26"
+  speakers:
+  - tariq-kurd
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2026/04/D1-3.6-Tariq-Kurd-CHERI-Standardisation-Status-CHERI-Blossoms-2026.pdf
+    kind: slides
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: 94d0fccbc424
+  title: 'CHERI Mocha: an open-source memory-safe application system | CHERI Blossoms 2026'
+  date: "2026-03-26"
+  speakers:
+  - javier-orensanz-martinez
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2026/04/D1-3.2-Javier-Orensanz-Martinez-Mocha-at-CHERI-Blossoms-2026.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/FLv1uxMOzEg
+    kind: video
+- id: 4e93a5fb6e4f
+  title: 'CHERI Crash Course: High-level Introduction'
+  date: "2026-03-26"
+  speakers:
+  - robert-watson
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2026/04/D1-0.2-Robert-Watson-CHERI-crash-course-high-level-introduction-CHERI-Blossoms-2026.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/5YEkHpFgWTs
+    kind: video
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: 5f48e3ea07c3
+  title: CHERI Adoption study
+  date: "2026-03-26"
+  speakers:
+  - adam-finney
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: /assets/events/cheri-blossoms-2026/869fa94283-D1-2.7-Adam-Finney-CHERI-Adoption-Study-CHERI-Blossoms-2026.pdf
+    kind: slides
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: ef8f03d264e5
+  title: BT business keynote
+  date: "2026-03-26"
+  speakers:
+  - dave-harcourt
+  location: Cambridge, UK
+  links:
+  - label: View Video
+    url: https://youtu.be/R3ZbEAoGFp4
+    kind: video
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: 8714634ab361
+  title: Accelerating commercial adoption of CHERI
+  date: "2026-03-26"
+  speakers:
+  - manu-ravishankar
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2026/05/D1-2.8-Manu-Ravishankar-CHERI-Secure-by-Design-Managed-Deployment_Programme-CHERI-Blossoms-2026.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/b35HIP3PPiU
+    kind: video
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: d8305d01de9e
+  title: 'A new analysis of CVE vulnerabilities : trends, changes and CHERI'
+  date: "2026-03-26"
+  speakers:
+  - carl-shaw
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2026/04/D1-3.1-Carl-Shaw-A-new-analysis-of-CVE-vulnerabilities-CHERI-Blossoms-2026.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/-r5XKUuNCRw
+    kind: video
+  event_title: CHERI Blossoms 2026
+  event: cheri-blossoms-conference-2026
+- id: 8327eaddbe5e
+  title: Welcome & Innovate UK Competition Results | CHERITech’25
+  date: "2025-11-14"
+  speakers:
+  - john-goodacre
+  location: Manchester, UK
+  links:
+  - label: View Talk
+    url: https://youtu.be/ROqPIbbLY4w
+    kind: resource
+- id: e2131452e8dc
+  title: 'State of the Union: Which Virtual Machines can I run on CHERI?'
+  date: "2025-11-14"
+  speakers:
+  - jeremy-singer
+  location: Manchester, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/11/4.5-Jeremy-Singer-State-of-the-Union-Which-Virtual-Machines-can-I-run-on-CHERI-CHERITech25.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/UF4mSM8YOao
+    kind: video
+  event_title: CHERITech’25
+  event: cheritech25
+- id: db22e2430aba
+  title: 'Sonata®: A platform for high-integrity operational technology'
+  date: "2025-11-14"
+  speakers:
+  - marno-van-der-maas
+  location: Manchester, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/11/2.4-Marno-van-der-Maas-Sonata-_-A-platform-for-high-integrity-operational-technology-CHERITech25.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/Pn3leQV8oyQ
+    kind: video
+  event_title: CHERITech’25
+  event: cheritech25
+- id: 07125a08245a
+  title: Rigorous Hardware-Software Codesign for Secure Compartmentalization on Embedded Devices
+  date: "2025-11-14"
+  speakers:
+  - murali-vijayaraghavan
+  location: Manchester, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/11/3.3-Murali-Vijayaraghavan-Rigorous-Hardware-Software-Codesign-for-Secure-Compartmentalization-on-Embedded-Devices-CHERITech25.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/Y3eZd6W5VzA
+    kind: video
+  event_title: CHERITech’25
+  event: cheritech25
+- id: e690a32e2862
+  title: Redesigning Thread Local Storage For CHERI
+  date: "2025-11-14"
+  speakers:
+  - jessica-clarke
+  location: Manchester, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/11/3.5-Jessica-Clarke-Redesigning-Thread-Local-Storage-For-CHERI-CHERITech25.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/7RvclCy4Zvg
+    kind: video
+  event_title: CHERITech’25
+  event: cheritech25
+- id: a97aa4106f62
+  title: Progress of the Alliance
+  date: "2025-11-14"
+  speakers:
+  - mike-eftimakis
+  location: Manchester, UK
+  links:
+  - label: View slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/11/1.3-Mike-Eftimakis-Progress-of-the-Alliance-CHERITech25.pdf
+    kind: slides
+  - label: Watch video
+    url: https://youtu.be/cz3PqYgOAb8
+    kind: video
+  event_title: CHERITech’25
+  event: cheritech25
+- id: 5124b0816b33
+  title: Progress of CHERI
+  date: "2025-11-14"
+  speakers:
+  - robert-watson
+  location: Manchester, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/11/3.1-Robert-Watson-Progress-of-CHERI-1-CHERITech25.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/FJhS2i7KVtI
+    kind: video
+  event_title: CHERITech’25
+  event: cheritech25
+- id: 2aa7838ddfb1
+  title: Poster Highlights
+  date: "2025-11-14"
+  speakers:
+  - mike-eftimakis
+  location: Manchester, UK
+  links:
+  - label: View slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/11/1.4-Mike-Eftimakis-Poster-highlights-CHERITech25.pdf
+    kind: slides
+  - label: Watch video
+    url: https://youtu.be/l5jB3n8Fm2A
+    kind: video
+  event_title: CHERITech’25
+  event: cheritech25
+- id: ca027fbab690
+  title: Introducing a development Hub
+  date: "2025-11-14"
+  speakers:
+  - andrew-murray
+  location: Manchester, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/11/4.1-Andrew-Murray-A-development-hub-CHERITech25.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/kl8KozsDjuc
+    kind: video
+  event_title: CHERITech’25
+  event: cheritech25
+- id: 0f75d9d7fad7
+  title: 'Industrializing CHERI for Safety-Critical Real-Time and Virtualized Systems: Capability Support in Hypervisor
+    and VxWorks RTOS'
+  date: "2025-11-14"
+  speakers:
+  - dmitriy-yeliseyev
+  location: Manchester, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/11/4.4-Dmitriy-Yeliseyev-Industrializing-CHERI-for-Safety-Critical-Real-Time-and-Virtualized-Systems-Capability-Support-in-Hypervisor-and-VxWorks-RTOS-CHERITech25.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/PHzw2LGjOaQ
+    kind: video
+  event_title: CHERITech’25
+  event: cheritech25
+- id: b77c4b794bd2
+  title: Failure-Oblivious CHERI
+  date: "2025-11-14"
+  speakers:
+  - ka-wing-li
+  location: Manchester, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/11/4.3-Ka-Wing-Li-Failure-Oblivious-CHERI-1-CHERITech25.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/z1q0CXVXoPI
+    kind: video
+  event_title: CHERITech’25
+  event: cheritech25
+- id: 8d7e18213427
+  title: 'Capability-Based Isolation for UAV Software Stacks: Porting PX4/NuttX to CHERI'
+  date: "2025-11-14"
+  speakers:
+  - donato-ferraro
+  location: Manchester, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/11/4.2-Donato-Ferraro-Capability-Based-Isolation-for-UAV-Software-Stacks-Porting-PX4NuttX-to-CHERI-CHERITech25.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/tRtVG4n6o-Y
+    kind: video
+  event_title: CHERITech’25
+  event: cheritech25
+- id: e9c83c5ad5db
+  title: CHERIoT Audit
+  date: "2025-11-14"
+  speakers:
+  - david-chisnall
+  location: Manchester, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/11/3.2-David-Chisnall-CHERIoT-Audit-1-CHERITech25.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/RQ5ZJ4azZK8
+    kind: video
+  event_title: CHERITech’25
+  event: cheritech25
+- id: 1eea3c3cab39
+  title: CHERI-RISC-V standardisation status
+  date: "2025-11-14"
+  speakers:
+  - tariq-kurd
+  location: Manchester, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/11/3.4-Tariq-Kurd-CHERI-RISC-V-standardisation-status-CHERITech25.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/jHrMY8Jyuns
+    kind: video
+  event_title: CHERITech’25
+  event: cheritech25
+- id: 4b578851b133
+  title: CHERI Performance
+  date: "2025-11-14"
+  speakers:
+  - carl-shaw
+  location: Manchester, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/11/2.3-Carl-Shaw-CHERI-Progress-CHERITech25.pdf
+    kind: slides
+  - label: View Talk
+    url: https://youtu.be/7l78wO_6V5k
+    kind: resource
+  event_title: CHERITech’25
+  event: cheritech25
+- id: 38af53a934c5
+  title: 'BLACKOUT: Data-Oblivious Computation with Blinded Capabilities'
+  date: "2025-11-14"
+  speakers:
+  - thomas-nyman
+  location: Manchester, UK
+  links:
+  - label: View Video
+    url: https://youtu.be/b3KIfFGV-bY
+    kind: video
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/11/2.5-Thomas-Nyman-Merve-Gulmez-BLACKOUT-Data-Oblivious-Computation-with-Blinded-Capabilities-CHERITech25.pdf
+    kind: slides
+  event_title: CHERITech’25
+  event: cheritech25
+- id: 4a66f8780d97
+  title: Announcing COSMIC
+  date: "2025-11-14"
+  speakers:
+  - john-thomson
+  location: Manchester, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/11/2.2-John-Thomson-COSMIC-CHERITech25.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/XeE2iWDukwU
+    kind: video
+  event_title: CHERITech’25
+  event: cheritech25
+- id: 2dd4e33b8f42
+  title: An open-source RV64Y implementation for commercialization | CHERITech’25
+  date: "2025-11-14"
+  speakers:
+  - jonathan-woodruff
+  location: Manchester, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/11/2.1-Jonathan-Woodruff-CHERITech25.pdf
+    kind: slides
+  - label: View Talk
+    url: https://youtu.be/nfpKp2krhh8
+    kind: resource
+- id: 18db2e5b4c29
+  title: seL4 Working Group presentation
+  date: "2025-04-02"
+  speakers:
+  - hesham-almatary
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/04/20250402-cheri-blossoms-sel4.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/cuj3L52ut04
+    kind: video
+  event_title: CHERI Blossoms 2025
+  event: cheri-blossoms-conference-2025
+- id: 8a1c585b5c2a
+  title: SoC Working Group presentation
+  date: "2025-04-02"
+  speakers:
+  - ben-fletcher
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/04/5.2-Ben-Fletcher-CHERI_in_SOC-WG.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/zCf0Z0LLfxg
+    kind: video
+  event_title: CHERI Blossoms 2025
+  event: cheri-blossoms-conference-2025
+- id: 415d876b7108
+  title: Securing Secure Networking tools for Morello Linux
+  date: "2025-04-02"
+  speakers:
+  - joshua-lant
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/04/4.1-Joshua-Lant-Secure-Networking-Tools.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/iUOH20uqjjA
+    kind: video
+  event_title: CHERI Blossoms 2025
+  event: cheri-blossoms-conference-2025
+- id: eefbd5abb872
+  title: 'Rust for Morello: Always-On Memory Safety, Even in Unsafe Code'
+  date: "2025-04-02"
+  speakers:
+  - mark-batty
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/04/4.2-Mark-Batty-Rust-for-Morello.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/nI8AUN4cuAw
+    kind: video
+  event_title: CHERI Blossoms 2025
+  event: cheri-blossoms-conference-2025
+- id: c5a35cd87774
+  title: Repository Working Group presentation
+  date: "2025-04-02"
+  speakers:
+  - marno-van-der-maas
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/04/Marno-van-der-Maas-CHERI-Blossoms-2025-Poster.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/CEiCFFoOS84
+    kind: video
+  event_title: CHERI Blossoms 2025
+  event: cheri-blossoms-conference-2025
+- id: 9eb3ab951d91
+  title: QEMU Working Group presentation
+  date: "2025-04-02"
+  speakers:
+  - alfredo-mazzinghi
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/04/5.1-Alfredo-Mazzinghi-QEMU-WG.pdf
+    kind: slides
+  - label: View Slides
+    url: https://youtu.be/oGuXn2PT4gk
+    kind: slides
+  event_title: CHERI Blossoms 2025
+  event: cheri-blossoms-conference-2025
+- id: bbfc8052f8cd
+  title: Promotion & Ambassador Working Group
+  date: "2025-04-02"
+  speakers:
+  - mike-eftimakis
+  location: Cambridge, UK
+  links:
+  - label: View slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/04/5.4-Mike-Eftimakis-Promotion-Ambassador-WG.pdf
+    kind: slides
+  - label: Watch video
+    url: https://youtu.be/4-vSlsPL4eg
+    kind: video
+  event_title: CHERI Blossoms 2025
+  event: cheri-blossoms-conference-2025
+- id: a409ba018943
+  title: 'Project Sunburst: An Open-Source CHERIoT SoC Top-Level and its Path to Market with Iceni'
+  date: "2025-04-02"
+  speakers:
+  - gavin-ferris
+  - haydn-povey
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/04/2.1-Gavin-Ferris-Haydn-Povey-Project-Sunburst.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/HSHdB_4Ra2E
+    kind: video
+  event_title: CHERI Blossoms 2025
+  event: cheri-blossoms-conference-2025
+- id: ee4f029811ee
+  title: Progress of the Alliance
+  date: "2025-04-02"
+  speakers:
+  - mike-eftimakis
+  location: Cambridge, UK
+  links:
+  - label: View slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/04/1.6-Mike-Eftimakis-CHERI-Blossoms.pdf
+    kind: slides
+  - label: Watch video
+    url: https://youtu.be/KJF8888L3fc
+    kind: video
+  event_title: CHERI Blossoms 2025
+  event: cheri-blossoms-conference-2025
+- id: bd18e762e01d
+  title: 'Porting V8 to CHERI: An Overview'
+  date: "2025-04-02"
+  speakers:
+  - domagoj-stolfa
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/04/3.5-Domagoj-Stolfa-Porting-V8-to-CHERI.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/3XBSny5Yc58
+    kind: video
+  event_title: CHERI Blossoms 2025
+  event: cheri-blossoms-conference-2025
+- id: 0935a283e531
+  title: Porting Linux to CHERI
+  date: "2025-04-02"
+  speakers:
+  - carl-shaw
+  - kevin-brodsky
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/04/3.3-Carl-Shaw-Porting-Linux-to-CHERI.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/aLc92JHfokY
+    kind: video
+  event_title: CHERI Blossoms 2025
+  event: cheri-blossoms-conference-2025
+- id: 5afced256725
+  title: Marketing Working Group presentation
+  date: "2025-04-02"
+  speakers:
+  - tora-fridholm
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/04/5.6-Tora-Fridholm-Marketing-WG.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/8rCMMtHrDo8
+    kind: video
+  event_title: CHERI Blossoms 2025
+  event: cheri-blossoms-conference-2025
+- id: 96da1e6d72af
+  title: Latest news about CHERI
+  date: "2025-04-02"
+  speakers:
+  - robert-watson
+  location: Cambridge, UK
+  links:
+  - label: View Video
+    url: https://youtu.be/jwq2fs_DzME
+    kind: video
+  event_title: CHERI Blossoms 2025
+  event: cheri-blossoms-conference-2025
+- id: b4648486add1
+  title: Industrial-Strength Formal Verification of RISC-V Processors 
+  date: "2025-04-02"
+  speakers:
+  - ashish-darbari
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/04/2.6-Ashish-Dabari-Formal-Verification-of-RISC-V-Processors.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/O6UyhX0aue4
+    kind: video
+  event_title: CHERI Blossoms 2025
+  event: cheri-blossoms-conference-2025
+- id: 2b12bc8d11ca
+  title: Implementing safe and resilient configuration management with CHERIoT
+  date: "2025-04-02"
+  speakers:
+  - phil-day
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/04/4.4-Phil-Day-Implementing-safe-and-resilient-configuration-management-with-CHERIoT.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/-TLnXfS4YIE
+    kind: video
+  event_title: CHERI Blossoms 2025
+  event: cheri-blossoms-conference-2025
+- id: 548f88d4c3a1
+  title: Implementation of CHERI Capabilities in a Safety-Critical Real-Time Operating System for Intelligent Edge
+    Systems
+  date: "2025-04-02"
+  speakers:
+  - dmitriy-yeliseyev
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/04/3.2-Dmitriy-Yeliseyev-CheriVxWorks.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/VKxQdQNl-WQ
+    kind: video
+  event_title: CHERI Blossoms 2025
+  event: cheri-blossoms-conference-2025
+- id: 124658c9e605
+  title: Hybrid CHERI in seL4 user space
+  date: "2025-04-02"
+  speakers:
+  - martin-atkins
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/04/3.4-Martin-Atkins-Hybrid-CHERI-in-seL4-user-space.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/wsrmc7wtuLY
+    kind: video
+  event_title: CHERI Blossoms 2025
+  event: cheri-blossoms-conference-2025
+- id: fdafbfe3885d
+  title: Findings from DSbD program
+  date: "2025-04-02"
+  speakers:
+  - john-goodacre
+  location: Cambridge, UK
+  links:
+  - label: View Video
+    url: https://youtu.be/rPVnNIt3W_A
+    kind: video
+  event_title: CHERI Blossoms 2025
+  event: cheri-blossoms-conference-2025
+- id: e2b1014154cd
+  title: Efficient system-level support for CHERI Capabilities
+  date: "2025-04-02"
+  speakers:
+  - mark-hill
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/04/2.5-Mark-Hill-Efficient-system-level-support-for-CHERI-Capabilities.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/5F1_3eeEsU4
+    kind: video
+  event_title: CHERI Blossoms 2025
+  event: cheri-blossoms-conference-2025
+- id: acdf345cf9e8
+  title: CHERIoT 2025
+  date: "2025-04-02"
+  speakers:
+  - david-chisnall
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/04/2.4-David-Chisnall-CHERIoT.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/ScN-yLFSQe4
+    kind: video
+  event_title: CHERI Blossoms 2025
+  event: cheri-blossoms-conference-2025
+- id: 09317658dceb
+  title: CHERI support for CVA6
+  date: "2025-04-02"
+  speakers:
+  - jonathan-woodruff
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/04/2.3-Jonathan-Woodruff-cva6-cheri-blossoms.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/poeXaSh0czg
+    kind: video
+  event_title: CHERI Blossoms 2025
+  event: cheri-blossoms-conference-2025
+- id: c1099ce999bd
+  title: CHERI RISC-V Standardisation
+  date: "2025-04-02"
+  speakers:
+  - tariq-kurd
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/04/2.2-Tariq-Kurd-CHERI-standardisation.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/8BEpAutYR_g
+    kind: video
+  event_title: CHERI Blossoms 2025
+  event: cheri-blossoms-conference-2025
+- id: 11c63986461f
+  title: 'CHERI MicroPython: Challenges and Opportunities'
+  date: "2025-04-02"
+  speakers:
+  - jeremy-singer
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/04/4.5-Jeremy-Singer-CHERI-MicroPython.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/GJwvjsb8lg4
+    kind: video
+  event_title: CHERI Blossoms 2025
+  event: cheri-blossoms-conference-2025
+- id: 4ebc19d99f86
+  title: CHERI Blossoms 2025
+  date: "2025-04-02"
+  speakers:
+  - alastair-beresford
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/04/1.1-Alastair-Beresford-Keynote.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/g4IEkrMQcDY
+    kind: video
+- id: 0be58c12b274
+  title: CHERI Blossoms 2025
+  date: "2025-04-02"
+  speakers:
+  - mike-halsall
+  location: Cambridge, UK
+  links: []
+- id: 2d8866c514d1
+  title: 'Building Resilience: Enhancing productivity through Secure by Design systems'
+  date: "2025-04-02"
+  speakers:
+  - bradley-finn
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/04/1.3-Bradley-Finn-Building-Resilience-Single-Slide.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/v1UgOV-B35g
+    kind: video
+  event_title: CHERI Blossoms 2025
+  event: cheri-blossoms-conference-2025
+- id: 2106167f179c
+  title: About CHERI
+  date: "2025-04-02"
+  speakers:
+  - simon-moore
+  location: Cambridge, UK
+  links:
+  - label: View Slides
+    url: https://cheri-alliance.org/wp-content/uploads/2025/04/1.5-Simon-Moore-About-CHERI.pdf
+    kind: slides
+  - label: View Video
+    url: https://youtu.be/iNrEEslJ8MU
+    kind: video
+  event_title: CHERI Blossoms 2025
+  event: cheri-blossoms-conference-2025

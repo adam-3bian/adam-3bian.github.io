@@ -4,24 +4,17 @@ where-next:
   url: /guides/tutorials-and-training/
 related-pages:
 - url: /guides/port-existing-software/
-  description: Porting software to CHERI is a process of finding assumptions about pointers, integers, objects, bounds, provenance, lifetimes, and interfaces.
+  description: Porting software to CHERI is a process of finding assumptions about pointers, integers, objects,
+    bounds, provenance, lifetimes, and interfaces.
   action: Read this page
 - url: /guides/choose-a-platform/
   title: Choose a Platform
   description: Choose a platform, prepare an environment and run a first CHERI workload.
   action: Read this page
+summary: Build compartments by mapping authority first, then give each component only the memory, services, and
+  entry points required for its task.
+topic: Compartmentalisation
 ---
-
-1. Build
-2. Developers
-3. Build Compartments
-{: .source-breadcrumbs }
-
-# Build Compartments
-{: id="page-hero-title" .page-hero-title }
-
-Build compartments by mapping authority first, then give each component only the memory, services, and entry points required for its task.
-{: .page-hero-summary }
 
 Memory-safe code can still be over-privileged. A parser may correctly read the input it receives but have no reason to access encryption keys, update controls, or unrelated application state. A compartment boundary limits what the component can reach even if it is buggy or compromised.
 
@@ -141,58 +134,3 @@ If a boundary is too expensive, first reduce call frequency or batch data. Remov
 - Performance results name the platform, software revision, and workload.
 
 For an embedded worked path, use the [CHERIoT Programmer’s Guide](https://cheriot.org/book/). For the underlying mechanism, read [Compartmentalisation](/build/technology/compartmentalisation/) and [Sealing](/build/technology/sealing/).
-
-## Where next
-{: .where-next-title }
-
-### [Tutorials &amp; Training](/guides/tutorials-and-training/)
-{: .where-next-card-title }
-
-
-
-
-
-[Continue with maintained tutorials for the selected platform, compartment model, and development tools.](/guides/tutorials-and-training/)
-{: .where-next-summary }
-
-
-
-[Continue](/guides/tutorials-and-training/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Port Existing Software](/guides/port-existing-software/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Porting software to CHERI is a process of finding assumptions about pointers, integers, objects, bounds, provenance, lifetimes, and interfaces.](/guides/port-existing-software/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/guides/port-existing-software/)
-{: .source-card-label }
-
-
-
-
-
-### [Choose a Platform](/guides/choose-a-platform/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Choose a platform, prepare an environment and run a first CHERI workload.](/guides/choose-a-platform/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/guides/choose-a-platform/)
-{: .source-card-label }

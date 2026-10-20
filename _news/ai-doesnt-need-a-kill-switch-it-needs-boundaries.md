@@ -1,33 +1,31 @@
 ---
 title: AI Doesn’t Need a Kill Switch. It Needs Boundaries
 date: '2026-10-13T11:00:10+01:00'
-authors: [jim-wallace]
+authors:
+- jim-wallace
+thumbnail:
+  src: /assets/news/AIdoesntneedkillswitchblogimagesjpg.jpg
+  alt: AI Doesn't Need a Kill Switch. It Needs Boundaries.
+  width: 1430
+  height: 715
+tags:
+- Ecosystem
+- Government / Regulation
+author_credit: Jim Wallace – **CHERI Alliance / Cre8Vantage**
+summary: 'In the earlier articles in this series, we looked at why memory-safety vulnerabilities persist in critical
+  infrastructure, and how [CHERI](/discover-cheri/) can contain a compromised software component rather than allowing
+  one failure to spread across the platform. AI takes that challenge a step further: how do we limit the authority
+  of a component that is becoming part of the control loop?'
+thumbnail_in_body: true
 ---
-
-1. News &amp; Events
-2. News &amp; Analysis
-3. AI Doesn’t Need a Kill Switch. It Needs Boundaries
-{: .source-breadcrumbs }
-
-# AI Doesn’t Need a Kill Switch. It Needs Boundaries
-{: id="page-hero-title" .page-hero-title }
-
-*13 October 2026*{: .source-date }
-*Ecosystem*{: .collection-tag }
-*Government / Regulation*{: .collection-tag }
-{: .collection-detail__metadata }
 
 ## How CHERI can limit compromised AI before it compromises the system
 {: id="how-cheri-can-limit-compromised-ai-before-it-compromises-the-system" }
-
-Jim Wallace – **CHERI Alliance / Cre8Vantage**
 
 ![AI Doesn't Need a Kill Switch. It Needs Boundaries.](/assets/news/AIdoesntneedkillswitchblogimagesjpg.jpg){: .image-full }
 
 AI is moving into devices that increasingly influence and control the physical world. That raises a security question that model-level safeguards alone cannot answer: if an AI component or the software around it is compromised, what is it actually allowed to access and control?
 {: .image-caption }
-
-In the earlier articles in this series, we looked at why memory-safety vulnerabilities persist in critical infrastructure, and how [CHERI](/discover-cheri/) can contain a compromised software component rather than allowing one failure to spread across the platform. AI takes that challenge a step further: how do we limit the authority of a component that is becoming part of the control loop?
 
 ## AI is becoming part of the control loop
 {: id="ai-is-becoming-part-of-the-control-loop" }

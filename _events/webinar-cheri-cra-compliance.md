@@ -1,35 +1,24 @@
 ---
 title: Webinar - CHERI & CRA Compliance
-speakers: [tariq-kurd]
-date: '2026-09-09T14:00:00+01:00'
+speakers:
+- tariq-kurd
+start_date: '2026-09-09'
+start_datetime: '2026-09-09T14:00:00+01:00'
+summary: A live webinar on how CHERI can help organisations respond to the security requirements of the EU Cyber
+  Resilience Act.
+format: Webinar
+location: Online via Zoom
+date_note: 9 September 2026, 14:00 BST
+thumbnail:
+  src: /assets/shared/source-assets/d4c0d2560e6f-eu-flag.jpg
+  alt: European Union flag
+  width: 1280
+  height: 853
+links:
+- label: Back to past events
+  url: /news-and-events/events-and-archive/past-events/
+  kind: navigation
 ---
-
-1. News &amp; Events
-2. Events &amp; Archive
-3. Webinar - CHERI &amp; CRA Compliance
-{: .source-breadcrumbs }
-
-# Webinar - CHERI &amp; CRA Compliance
-{: id="page-hero-title" .page-hero-title }
-
-A live webinar on how CHERI can help organisations respond to the security requirements of the EU Cyber Resilience Act.
-{: .page-hero-summary }
-
-![European Union flag](/assets/shared/source-assets/d4c0d2560e6f-eu-flag.jpg){: .image-left }
-{: .entity-media .entity-media--event }
-
-Status
-: Past
-
-Format
-: Webinar
-
-Date
-: 9 September 2026, 14:00 BST
-
-Location
-: Online via Zoom
-{: .entity-facts }
 
 Why the industry needs CHERI to be able to meet the EU Cyber Resilience Act
 
@@ -53,6 +42,3 @@ Hosted by [Tariq Kurd](/people/tariq-kurd/) – [Codasip](/organisations/codasip
 TBD - insert video - https://www.youtube.com/watch?v=OZS6JHoAUkc
 
 TBD - add slides - [Download slides]()
-
-[Back to past events](/news-and-events/events-and-archive/past-events/)
-{: .entity-back }

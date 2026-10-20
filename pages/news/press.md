@@ -3,9 +3,6 @@ title: Press Resources
 permalink: /news/press/
 ---
 
-# Press Resources
-
-
 Welcome to the CHERI Alliance Press Resources page. Here you’ll find our official logos, brand guidelines and press contacts.
 
 

@@ -3,9 +3,6 @@ title: Corrupt a control-flow pointer using a subobject buffer overflow
 permalink: /reference/CHERI-seL4-Exercises/exercises/control-flow-pointer/index.html
 ---
 
-# [Corrupt a control-flow pointer using a subobject buffer overflow](/reference/CHERI-seL4-Exercises/exercises/control-flow-pointer/index.html#corrupt-a-control-flow-pointer-using-a-subobject-buffer-overflow)
-{: id="corrupt-a-control-flow-pointer-using-a-subobject-buffer-overflow" }
-
 This exercise demonstrates how CHERI pointer integrity protection prevents
 a function pointer overwritten with data due to a buffer overflow from being
 used for further memory access.

@@ -1,31 +1,26 @@
 ---
 title: Wind River
 member: true
+summary: Wind River is a global leader in delivering software for the intelligent edge. For more than four decades,
+  the company has been an innovator and pioneer, powering billions of devices and systems that require the highest
+  levels of security, safety…
+membership_category: Full Member
+membership_status: Member
+links:
+- label: Visit member website
+  url: https://www.windriver.com/
+  kind: website
+  primary: true
+- label: Back to all members
+  url: /alliance/leadership/members/
+  kind: navigation
+thumbnail:
+  src: /assets/organisations/wind-river/4ff9d998b332-logo.png
+  alt: Wind River
+  width: 2000
+  height: 330
+  fit: contain
 ---
-
-1. Alliance
-2. Members
-3. Wind River
-{: .source-breadcrumbs }
-
-# Wind River
-{: id="page-hero-title" .page-hero-title }
-
-Wind River is a global leader in delivering software for the intelligent edge. For more than four decades, the company has been an innovator and pioneer, powering billions of devices and systems that require the highest levels of security, safety…
-{: .page-hero-summary }
-
-![Wind River](/assets/organisations/wind-river/4ff9d998b332-logo.png){: .image-left }
-{: .entity-media .entity-media--logo }
-
-Status
-: Member
-
-Membership
-: Full Member
-
-Website
-: [Visit member website](https://www.windriver.com/)
-{: .entity-facts }
 
 ## Description
 {: id="description" }
@@ -49,6 +44,3 @@ Wind River continues to expand CHERI support across its product portfolio and to
 {: id="cheri-products" }
 
 The CHERI-enabled port of VxWorks is available through Wind River Professional Services.
-
-[Back to all members](/alliance/leadership/members/)
-{: .entity-back }

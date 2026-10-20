@@ -5,24 +5,16 @@ where-next:
   url: /adopt/assurance-and-adoption/procurement/
 related-pages:
 - url: /adopt/assurance-and-adoption/case-studies/
-  description: CHERI has been explored across application processors, operating systems, embedded platforms, and commercial products.
+  description: CHERI has been explored across application processors, operating systems, embedded platforms, and
+    commercial products.
   action: Read this page
 - url: /adopt/business-case/the-business-case/
   title: The Business Case
   description: CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.
   action: Read this page
+summary: CHERI can strengthen assurance by turning intended memory and component boundaries into processor-enforced
+  properties that can be described and tested.
 ---
-
-1. Adopt
-2. Assurance &amp; Adoption
-3. Assurance &amp; Certification
-{: .source-breadcrumbs }
-
-# Assurance &amp; Certification
-{: id="page-hero-title" .page-hero-title }
-
-CHERI can strengthen assurance by turning intended memory and component boundaries into processor-enforced properties that can be described and tested.
-{: .page-hero-summary }
 
 Assurance explains why a defined security or safety claim can be trusted. Certification records a judgement under a particular scheme. CHERI can contribute to both because it provides concrete properties about memory access and software authority, but neither follows from the presence of a CHERI-capable processor alone.
 
@@ -71,58 +63,3 @@ The Alliance’s [CHERI Enabled programme](/adopt/assurance-and-adoption/about-c
 A claim remains meaningful when it is tied to the exact processor, architecture profile, toolchain, execution mode, software version, compartment design, and configuration. Changes to any of these may alter the evidence or the authority available to a component.
 
 This specificity is one of CHERI’s strengths. It replaces a broad promise of “hardware security” with properties that can be bounded, inspected, tested, and maintained as part of the wider product assurance case.
-
-## Where next
-{: .where-next-title }
-
-### [Procurement](/adopt/assurance-and-adoption/procurement/)
-{: .where-next-card-title }
-
-
-
-
-
-[Procurement can distinguish a defined CHERI implementation from a broad technology label by using its scope and evidence.](/adopt/assurance-and-adoption/procurement/)
-{: .where-next-summary }
-
-
-
-[Continue](/adopt/assurance-and-adoption/procurement/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Case Studies](/adopt/assurance-and-adoption/case-studies/)
-{: .related-pages-item-title }
-
-
-
-
-
-[CHERI has been explored across application processors, operating systems, embedded platforms, and commercial products.](/adopt/assurance-and-adoption/case-studies/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/adopt/assurance-and-adoption/case-studies/)
-{: .source-card-label }
-
-
-
-
-
-### [The Business Case](/adopt/business-case/the-business-case/)
-{: .related-pages-item-title }
-
-
-
-
-
-[CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.](/adopt/business-case/the-business-case/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/adopt/business-case/the-business-case/)
-{: .source-card-label }

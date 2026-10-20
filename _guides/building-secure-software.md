@@ -4,23 +4,15 @@ where-next:
   url: /build/technology/how-cheri-capabilities-work/
 related-pages:
 - url: /discover/understand/cheri-and-existing-software/
-  description: Porting software to CHERI is a process of finding assumptions about pointers, integers, objects, bounds, provenance, lifetimes, and interfaces.
+  description: Porting software to CHERI is a process of finding assumptions about pointers, integers, objects,
+    bounds, provenance, lifetimes, and interfaces.
   action: Read this page
 - url: /discover/why-cheri/cheri-and-rust/
   description: Rust and CHERI address memory safety at different layers.
   action: Read this page
+summary: Questions developers should ask about memory safety, compartmentalisation, and authority.
+topic: Security engineering
 ---
-
-1. Discover
-2. Why CHERI
-3. Building Secure Software with CHERI
-{: .source-breadcrumbs }
-
-# Building Secure Software with CHERI
-{: id="page-hero-title" .page-hero-title }
-
-Questions developers should ask about memory safety, compartmentalisation, and authority.
-{: .page-hero-summary }
 
 The security properties of a CHERI system depend on how software is built, compiled, structured, and compartmentalised. Two products may both claim to “use CHERI” while providing very different levels of protection.
 
@@ -148,58 +140,3 @@ The second statement can be reviewed, tested, and improved. It also makes the re
 - Verify memory-safety, isolation, and least-privilege assumptions with testing
 - Support security claims with evidence from the actual product, build, and deployment configuration
 - CHERI complements secure design, code review, testing, and operational controls; it does not replace them
-
-## Where next
-{: .where-next-title }
-
-### [Capabilities](/build/technology/capabilities/)
-{: .where-next-card-title }
-
-
-
-
-
-[A pointer bug becomes dangerous when changing a number changes authority.](/build/technology/capabilities/)
-{: .where-next-summary }
-
-
-
-[Continue](/build/technology/capabilities/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [CHERI and Existing Software](/discover/understand/cheri-and-existing-software/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Porting software to CHERI is a process of finding assumptions about pointers, integers, objects, bounds, provenance, lifetimes, and interfaces.](/discover/understand/cheri-and-existing-software/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/understand/cheri-and-existing-software/)
-{: .source-card-label }
-
-
-
-
-
-### [CHERI and Rust](/discover/why-cheri/cheri-and-rust/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Rust and CHERI address memory safety at different layers.](/discover/why-cheri/cheri-and-rust/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/why-cheri/cheri-and-rust/)
-{: .source-card-label }

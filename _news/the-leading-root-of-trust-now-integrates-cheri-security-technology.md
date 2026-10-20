@@ -1,28 +1,20 @@
 ---
 title: The leading Root-of-Trust now integrates CHERI security technology
 date: '2026-07-15T12:35:43+01:00'
-authors: [adam-finney]
+authors:
+- adam-finney
+thumbnail:
+  src: /assets/news/the-leading-root-of-trust-now-integrates-cheri-security-technology/903fec6d1c34-hero.jpg
+  alt: OpenTitan chip
+  width: 1536
+  height: 1024
+tags:
+- Ecosystem
+- Members
+author_credit: Adam Finney – **CHERI Alliance**
+summary: If you are building secure hardware, the way you protect software running inside that hardware matters
+  just as much as the cryptography around it.
 ---
-
-1. News &amp; Events
-2. News &amp; Analysis
-3. The leading Root-of-Trust now integrates CHERI security technology
-{: .source-breadcrumbs }
-
-# The leading Root-of-Trust now integrates CHERI security technology
-{: id="page-hero-title" .page-hero-title }
-
-*15 July 2026*{: .source-date }
-*Ecosystem*{: .collection-tag }
-*Members*{: .collection-tag }
-{: .collection-detail__metadata }
-
-![OpenTitan chip](/assets/news/the-leading-root-of-trust-now-integrates-cheri-security-technology/903fec6d1c34-hero.jpg){: .image-full }
-{: .collection-detail__lead-image }
-
-Adam Finney – **CHERI Alliance**
-
-If you are building secure hardware, the way you protect software running inside that hardware matters just as much as the cryptography around it.
 
 That is why [lowRISC](/organisations/lowrisc/)’s announcement that OpenTitan Earl Grey 2 will support CHERI is important.
 

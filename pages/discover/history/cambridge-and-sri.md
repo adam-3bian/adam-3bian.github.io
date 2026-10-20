@@ -7,18 +7,9 @@ related-pages:
 - url: /discover/history/early-capability-systems/
   description: A short account of early capability-based computer systems and the ideas that influenced later work.
   action: Read this page
+summary: The University of Cambridge and SRI International combined systems, hardware, and assurance expertise to
+  establish the modern CHERI architecture.
 ---
-
-1. Discover
-2. History
-3. Cambridge and SRI
-{: .source-breadcrumbs }
-
-# Cambridge and SRI
-{: id="page-hero-title" .page-hero-title }
-
-The University of Cambridge and SRI International combined systems, hardware, and assurance expertise to establish the modern CHERI architecture.
-{: .page-hero-summary }
 
 Fixing memory safety in one layer is difficult because the problem crosses several layers at once. The processor executes accesses, the compiler translates language rules, the operating system manages memory and authority, and applications bring decades of existing assumptions. CHERI needed a collaboration that could work across that whole stack.
 
@@ -64,39 +55,3 @@ The Cambridge and SRI partnership remained central as CHERI expanded beyond its 
 Today, CHERI development involves commercial companies, open-source communities, government programmes, standards bodies, universities, and the CHERI Alliance. The founding collaboration matters because it established the cross-layer method and the technical base on which that wider ecosystem builds.
 
 The [University of Cambridge CHERI site](https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/) maintains architecture reports, publications, software links, and project history.
-
-## Where next
-{: .where-next-title }
-
-### [Development of CHERI](/discover/history/development-of-cheri/)
-{: .where-next-card-title }
-
-
-
-
-
-[A timeline of the technical work that developed CHERI from research ideas into working architectures and software.](/discover/history/development-of-cheri/)
-{: .where-next-summary }
-
-
-
-[Continue](/discover/history/development-of-cheri/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Early Capability Systems](/discover/history/early-capability-systems/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A short account of early capability-based computer systems and the ideas that influenced later work.](/discover/history/early-capability-systems/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/history/early-capability-systems/)
-{: .source-card-label }

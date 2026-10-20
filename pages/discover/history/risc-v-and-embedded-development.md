@@ -10,18 +10,9 @@ related-pages:
 - url: /discover/history/morello-history/
   description: The place of Morello in the development and evaluation of CHERI.
   action: Read this page
+summary: CHERI-RISC-V opened the architecture to configurable processors, embedded platforms, formal models, FPGA
+  boards, and commercial product development.
 ---
-
-1. Discover
-2. History
-3. RISC-V and Embedded Development
-{: .source-breadcrumbs }
-
-# RISC-V and Embedded Development
-{: id="page-hero-title" .page-hero-title }
-
-CHERI-RISC-V opened the architecture to configurable processors, embedded platforms, formal models, FPGA boards, and commercial product development.
-{: .page-hero-summary }
 
 Many connected devices do not look like a Morello-class computer. They may have a small processor, limited memory, no memory management unit, strict real-time deadlines, and firmware expected to remain deployed for years. Moving CHERI into this space required designs suited to a different scale.
 
@@ -76,58 +67,3 @@ Embedded software often combines a large attack surface with limited update and 
 The RISC-V and embedded work also broadened commercial routes. Open models, configurable processor designs, FPGA platforms, operating systems, and toolchains let suppliers choose a path that fits their device class.
 
 For current platform choices, compare [CHERIoT](/hardware/cheriot/), [Sonata](/hardware/sonata/), [FPGA Platforms](/hardware/fpga-platforms/), and [Simulators](/software/simulators/).
-
-## Where next
-{: .where-next-title }
-
-### [Commercialisation](/discover/history/commercialisation/)
-{: .where-next-card-title }
-
-
-
-
-
-[An overview of the move from research platforms towards commercial CHERI technology and products.](/discover/history/commercialisation/)
-{: .where-next-summary }
-
-
-
-[Continue](/discover/history/commercialisation/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Early Capability Systems](/discover/history/early-capability-systems/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A short account of early capability-based computer systems and the ideas that influenced later work.](/discover/history/early-capability-systems/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/history/early-capability-systems/)
-{: .source-card-label }
-
-
-
-
-
-### [Morello History](/discover/history/morello-history/)
-{: .related-pages-item-title }
-
-
-
-
-
-[The place of Morello in the development and evaluation of CHERI.](/discover/history/morello-history/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/history/morello-history/)
-{: .source-card-label }

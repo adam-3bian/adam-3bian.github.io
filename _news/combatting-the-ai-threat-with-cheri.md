@@ -1,28 +1,23 @@
 ---
 title: Combatting the AI threat with CHERI
 date: '2026-06-17T11:00:33+01:00'
-authors: [peter-cox]
+authors:
+- peter-cox
+thumbnail:
+  src: /assets/news/combatting-the-ai-threat-with-cheri/13658ea5e276-hero.png
+  alt: Augmented reality showing a ship.
+  width: 616
+  height: 350
+tags:
+- CHERI Alliance news
+- Members
+summary: The UM Labs Unicus® platform protects applications ranging from voice and video calls, surveillance video,
+  extended reality and IoT.
 ---
-
-1. News &amp; Events
-2. News &amp; Analysis
-3. Combatting the AI threat with CHERI
-{: .source-breadcrumbs }
-
-# Combatting the AI threat with CHERI
-{: id="page-hero-title" .page-hero-title }
-
-*17 June 2026*{: .source-date }
-*CHERI Alliance news*{: .collection-tag }
-*Members*{: .collection-tag }
-{: .collection-detail__metadata }
-
-![Augmented reality showing a ship.](/assets/news/combatting-the-ai-threat-with-cheri/13658ea5e276-hero.png){: .image-full }
-{: .collection-detail__lead-image }
 
 [UM Labs](/organisations/um-labs/) is a cybersecurity developer specialising in protecting real-time communications on IP networks. Real-time services deliver time critical data for sensitive and mission-critical communication. Our products are widely deployed in government, defence and commercial networks. [UM Labs](/organisations/um-labs/) has joined the CHERI Alliance and adopted CHERI in our development, test and support procedures to strengthen our defences against the continuously evolving threat. Cybersecurity has always been an arms race. Developers work to improve security technology prompting attackers to search for new vulnerabilities. The pace of this arms race has accelerated as attackers employ AI in the search. Developers need a new defence; CHERI is a powerful new tool in the cybersecurity tool-kit.
 
-The UM Labs Unicus® platform protects applications ranging from voice and video calls, surveillance video, extended reality and IoT. These applications share some common attributes. Transmitted data contains highly sensitive and commercially valuable information which must be transmitted in real-time. Data privacy and integrity must be protected and devices generating and processing data must be protected from attack. To meet these requirements, Unicus implements a Core/Edge architecture. A core system, typically deployed in a public or private cloud manages multiple edge devices. Edge devices are deployed as low-end Arm or Intel processors securing an end-user system or IoT device or running as an embedded system in the protected device.
+These applications share some common attributes. Transmitted data contains highly sensitive and commercially valuable information which must be transmitted in real-time. Data privacy and integrity must be protected and devices generating and processing data must be protected from attack. To meet these requirements, Unicus implements a Core/Edge architecture. A core system, typically deployed in a public or private cloud manages multiple edge devices. Edge devices are deployed as low-end Arm or Intel processors securing an end-user system or IoT device or running as an embedded system in the protected device.
 
 ![](/assets/news/combatting-the-ai-threat-with-cheri/e8cc99611ba5-um-labs-blog-img-1.png){: .image-full }
 

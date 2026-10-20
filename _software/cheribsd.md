@@ -10,18 +10,9 @@ related-pages:
   title: Choose a Platform
   description: Compare QEMU, Morello, FPGA, and other CHERI development routes.
   action: Read this page
+summary: Develop and run complete applications on an operating system adapted for CHERI.
+software_type: Operating system
 ---
-
-1. Build
-2. Software Ecosystem
-3. CheriBSD
-{: .source-breadcrumbs }
-
-# CheriBSD
-{: id="page-hero-title" .page-hero-title }
-
-Develop and run complete applications on an operating system adapted for CHERI.
-{: .page-hero-summary }
 
 CheriBSD extends FreeBSD with support for CHERI, providing a complete application-class environment for developing, porting and testing CHERI software on CHERI-RISC-V and Arm Morello.
 
@@ -145,58 +136,3 @@ For developers getting started, the natural route is cheribuild + QEMU + CheriBS
 - [CheriBSD source](https://github.com/CTSRD-CHERI/cheribsd)
 - [CheriBSD Getting Started](https://www.cheribsd.org/getting-started/)
 - [CheriBSD ports](https://github.com/CTSRD-CHERI/cheribsd-ports)
-
-## Where next
-{: .where-next-title }
-
-### [FreeBSD](/software/freebsd/)
-{: .where-next-card-title }
-
-
-
-
-
-[FreeBSD is the upstream operating-system project from which CheriBSD is derived.](/software/freebsd/)
-{: .where-next-summary }
-
-
-
-[Continue](/software/freebsd/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [LLVM &amp; Clang](/software/llvm-and-clang/)
-{: .related-pages-item-title }
-
-
-
-
-
-[The compiler infrastructure used by the CheriBSD software stack.](/software/llvm-and-clang/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/software/llvm-and-clang/)
-{: .source-card-label }
-
-
-
-
-
-### [Choose a Platform](/guides/choose-a-platform/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Compare QEMU, Morello, FPGA, and other CHERI development routes.](/guides/choose-a-platform/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/guides/choose-a-platform/)
-{: .source-card-label }

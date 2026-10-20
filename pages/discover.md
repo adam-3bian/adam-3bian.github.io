@@ -5,10 +5,11 @@ layout: index
 sections:
 - presentation: cards
   columns: 2
-  headings: ["Understand CHERI", "Explore the resources"]
+  headings:
+  - Understand CHERI
+  - Explore the resources
+hero: true
 ---
-
-# Discover CHERI
 
 ## Understand CHERI
 

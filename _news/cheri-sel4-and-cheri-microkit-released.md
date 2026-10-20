@@ -1,26 +1,20 @@
 ---
 title: CHERI-seL4 and CHERI-Microkit Released
 date: '2025-07-29T11:00:45+01:00'
-authors: [hesham-almatary]
+authors:
+- hesham-almatary
+thumbnail:
+  src: /assets/news/cheri-sel4-and-cheri-microkit-released/8d44a7e5916e-hero.png
+  alt: The software release roadmap for CHERI-seL4
+  width: 544
+  height: 816
+tags:
+- Ecosystem
+- Working Groups
+summary: We are happy to release a prototype of CHERI-seL4, an experimental version of the seL4 microkernel with
+  CHERI support. This comes with CHERI-Microkit, a lightweight userspace framework, and a set of exercises and tutorials
+  designed to help developers explore CHERI’s potential in a real microkernel environment.
 ---
-
-1. News &amp; Events
-2. News &amp; Analysis
-3. CHERI-seL4 and CHERI-Microkit Released
-{: .source-breadcrumbs }
-
-# CHERI-seL4 and CHERI-Microkit Released
-{: id="page-hero-title" .page-hero-title }
-
-*29 July 2025*{: .source-date }
-*Ecosystem*{: .collection-tag }
-*Working Groups*{: .collection-tag }
-{: .collection-detail__metadata }
-
-![The software release roadmap for CHERI-seL4](/assets/news/cheri-sel4-and-cheri-microkit-released/8d44a7e5916e-hero.png){: .image-right }
-{: .collection-detail__lead-image }
-
-We are happy to release a prototype of CHERI-seL4, an experimental version of the seL4 microkernel with CHERI support. This comes with CHERI-Microkit, a lightweight userspace framework, and a set of exercises and tutorials designed to help developers explore CHERI’s potential in a real microkernel environment.
 
 The release is aimed at developers who want to build and experiment with memory-safe C/C++ software on seL4. It supports the draft CHERI-RISC-V architecture and runs on QEMU, Codasip’s x730 processor, CHERI-Toooba and CHERI-CVA6 on FPGA.
 

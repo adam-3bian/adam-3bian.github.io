@@ -7,19 +7,9 @@ related-pages:
 - url: /build/technology/cheri-capabilities/capabilities/
   description: A pointer bug becomes dangerous when changing a number changes authority.
   action: Read this page
+summary: Protected tags let hardware distinguish authentic capabilities from ordinary data, even when both contain
+  the same address bits.
 ---
-
-1. Build
-2. Technology
-3. CHERI Capabilities
-4. Tags &amp; Validity
-{: .source-breadcrumbs }
-
-# Tags &amp; Validity
-{: id="page-hero-title" .page-hero-title }
-
-Protected tags let hardware distinguish authentic capabilities from ordinary data, even when both contain the same address bits.
-{: .page-hero-summary }
 
 Suppose an attacker learns that a secret sits at address `0x40008000`. On a conventional system, placing that number in a pointer may be enough to attempt an access. Bounds and page permissions may still stop it, but the address itself is generally treated as a potential pointer.
 
@@ -85,39 +75,3 @@ Tags are architectural protection state, not public-key signatures or message au
 Bounds and permissions would be weak if software could copy their encoded bits into a new value and mark it valid. Tags close that route. They let the processor enforce an architectural rule: authority must descend from authority already present in the system.
 
 That rule underpins [Provenance](/build/technology/cheri-capabilities/provenance/) and allows capabilities to be used as reliable references between [Compartments](/build/technology/cheri-capabilities/compartmentalisation/).
-
-## Where next
-{: .where-next-title }
-
-### [Bounds](/build/technology/cheri-capabilities/bounds/)
-{: .where-next-card-title }
-
-
-
-
-
-[A buffer overflow is possible because a pointer can leave the object it was meant to access and continue into neighbouring memory.](/build/technology/cheri-capabilities/bounds/)
-{: .where-next-summary }
-
-
-
-[Continue](/build/technology/cheri-capabilities/bounds/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Capabilities](/build/technology/cheri-capabilities/capabilities/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A pointer bug becomes dangerous when changing a number changes authority.](/build/technology/cheri-capabilities/capabilities/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/build/technology/cheri-capabilities/capabilities/)
-{: .source-card-label }

@@ -3,15 +3,13 @@ title: 'CHERI ALLIANCE CIC
 
   Statement of competition compliance'
 permalink: /competition-law-statement/
+display_title: CHERI ALLIANCE CIC Statement of competition compliance
 ---
-
-# CHERI ALLIANCE CIC Statement of competition compliance
-
 
 **Version:** 1.0  
 **Date:** August 2024
 
-#### **1. Introduction**
+## **1. Introduction**
 {: id="bkmrk-1.-introduction" }
 
 1.1 The purpose of CHERI Alliance C.I.C. (the Alliance) is to carry on activities which benefit the community and in particular (without limitation) to promote the use and adoption of CHERI open security technology, methodology and/or standards to improve system security and memory protection in software and hardware products. In carrying this out, Alliance members and non-member attendees must:
@@ -21,7 +19,7 @@ permalink: /competition-law-statement/
 1.1.2 follow the Guiding Principles as follows.
 {: id="bkmrk-1.1.1-act-with-the-h" }
 
-#### **2. Guiding principles – what information can be shared**
+## **2. Guiding principles – what information can be shared**
 {: id="bkmrk-2.-guiding-principle" }
 
 2.1 There are many positive aspects to associations such as the Alliance and information that can be shared can include:
@@ -34,7 +32,7 @@ permalink: /competition-law-statement/
 2.1.5 industry standards that increase product interoperability, compatibility or safety, provided advice has been taken on the development, transparency, accessibility and potential competitive impact of these standards.
 {: id="bkmrk-2.1.1-non-confidenti" }
 
-#### **3. Guiding principles – what information cannot be shared**
+## **3. Guiding principles – what information cannot be shared**
 {: id="bkmrk-3.-guiding-principle" }
 
 3.1 There are certain areas of sensitive commercial information that should never be discussed between our members or between members and non-members through the Alliance, either formally or informally, intentionally or inadvertently, directly or indirectly through a third party. These include:
@@ -66,7 +64,7 @@ that are significant to core drivers of market competition, such as key contract
 3.3 These types of agreements (cartel agreements) are automatically illegal in the UK, the jurisdiction in which the Alliance is established. There can be no justification; the agreement itself is unlawful.
 {: id="bkmrk-3.3-these-types-of-a" }
 
-#### **4. Queries**
+## **4. Queries**
 {: id="bkmrk-4.-queries" }
 
 4.1 Any questions relating to this statement, or its contents, should be directed to the Board of Directors of the Alliance.

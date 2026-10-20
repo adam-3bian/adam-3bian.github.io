@@ -8,20 +8,11 @@ related-pages:
   description: Learn how CHERI protects memory in hardware.
   action: Read this page
 - url: /discover/why-cheri/approaches-to-memory-safety/
-  description: No single technology delivers memory safety. The strongest solutions combine processes, tools, hardware protections, and isolation.
+  description: No single technology delivers memory safety. The strongest solutions combine processes, tools, hardware
+    protections, and isolation.
   action: Read this page
+summary: Improve the security of existing C and C++ software without starting again.
 ---
-
-1. Discover
-2. Understand
-3. CHERI and Existing Software
-{: .source-breadcrumbs }
-
-# CHERI and Existing Software
-{: id="page-hero-title" .page-hero-title }
-
-Improve the security of existing C and C++ software without starting again.
-{: .page-hero-summary }
 
 Rewriting a large software stack is rarely practical. Operating systems, libraries, drivers, middleware, and application code often represent years or decades of engineering investment.
 
@@ -79,58 +70,3 @@ Many of these patterns are already fragile and discouraged by modern coding prac
 CHERI does not require a new application protocol, user interface, business process, or software architecture.
 
 Teams continue to use familiar languages, compilers, debuggers, test frameworks, package managers, and development workflows. The difference is that the hardware now has enough information to enforce how pointers are intended to be used.
-
-## Where next
-{: .where-next-title }
-
-### [CHERI and Rust](/discover/why-cheri/cheri-and-rust/)
-{: .where-next-card-title }
-
-
-
-
-
-[Rust and CHERI address memory safety at different layers.](/discover/why-cheri/cheri-and-rust/)
-{: .where-next-summary }
-
-
-
-[Continue](/discover/why-cheri/cheri-and-rust/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Why CHERI?](/discover/why-cheri/why-cheri/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Learn how CHERI protects memory in hardware.](/discover/why-cheri/why-cheri/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/why-cheri/why-cheri/)
-{: .source-card-label }
-
-
-
-
-
-### [Approaches to Memory Safety](/discover/why-cheri/approaches-to-memory-safety/)
-{: .related-pages-item-title }
-
-
-
-
-
-[No single technology delivers memory safety. The strongest solutions combine processes, tools, hardware protections, and isolation.](/discover/why-cheri/approaches-to-memory-safety/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/why-cheri/approaches-to-memory-safety/)
-{: .source-card-label }

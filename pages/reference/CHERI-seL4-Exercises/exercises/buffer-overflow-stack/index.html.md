@@ -3,9 +3,6 @@ title: Exercise an inter-stack-object buffer overflow
 permalink: /reference/CHERI-seL4-Exercises/exercises/buffer-overflow-stack/index.html
 ---
 
-# [Exercise an inter-stack-object buffer overflow](/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-stack/index.html#exercise-an-inter-stack-object-buffer-overflow)
-{: id="exercise-an-inter-stack-object-buffer-overflow" }
-
 This exercise demonstrates an inter-object buffer overflow on baseline and
 CHERI-enabled architectures, and asks you to characterize and fix the bug
 detected by CHERI bounds enforcement. It also asks you to use GDB for

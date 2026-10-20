@@ -3,18 +3,22 @@ title: ✅ Certification WG
 where-next:
   url: /adopt/assurance-and-adoption/about-cheri-enabled/
   title: CHERI Enabled
+summary: Develops shared thinking around certification criteria, assurance needs, evidence, and the operation of
+  Alliance certification programmes.
+group_type: Programme and ecosystem
+collaboration_areas:
+- Certification criteria
+- Evidence and assurance needs
+- Programme development
+links:
+- label: Back to all working groups
+  url: /alliance/leadership/working-groups/
+  kind: navigation
+- label: Enquire about this group
+  url: /alliance/membership/contact/
+  kind: resource
+  primary: true
 ---
-
-1. Alliance
-2. About &amp; Governance
-3. ✅ Certification WG
-{: .source-breadcrumbs }
-
-# ✅ Certification WG
-{: id="page-hero-title" .page-hero-title }
-
-Develops shared thinking around certification criteria, assurance needs, evidence, and the operation of Alliance certification programmes.
-{: .page-hero-summary }
 
 The Certification Program Working Group is responsible for defining the [CHERI Enabled](/adopt/assurance-and-adoption/about-cheri-enabled/) program for CHERI products:
 
@@ -27,39 +31,3 @@ The Certification Program Working Group is responsible for defining the [CHERI E
 The group aims to continuously improve the certification program. This involves regularly reviewing and updating the guidelines, processes, and systems to enhance efficiency, effectiveness, and relevance
 
 Overall, the working group plays a crucial role in ensuring the compliance and compatibility of certified CHERI products to make sure that users can trust the CHERI logo to guarantee a correct implementation of the technology.
-
-## Resources
-{: id="resources" }
-
-Group type
-: Programme and ecosystem
-
-Areas of collaboration
-: - Certification criteria
-  - Evidence and assurance needs
-  - Programme development
-{: .entity-facts }
-
-[Enquire about this group](/alliance/membership/contact/)
-{: .entity-primary-link }
-
-[Back to all working groups](/alliance/leadership/working-groups/)
-{: .entity-back }
-
-## Where next
-{: .where-next-title }
-
-### [CHERI Enabled](/adopt/assurance-and-adoption/about-cheri-enabled/)
-{: .where-next-card-title }
-
-
-
-
-
-[Discover the CHERI Enabled program.](/adopt/assurance-and-adoption/about-cheri-enabled/)
-{: .where-next-summary }
-
-
-
-[Continue](/adopt/assurance-and-adoption/about-cheri-enabled/)
-{: .source-card-label }

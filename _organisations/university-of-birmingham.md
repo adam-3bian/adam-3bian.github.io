@@ -1,31 +1,26 @@
 ---
 title: University of Birmingham
 member: true
+summary: The University of Birmingham is a world top 100 university and part of the prestigious Russell Group. Its
+  School of Computer Science is ranked 3rd in the UK for Research (REF’21) and 7th for Education (CUG’23), employing
+  ~70 staff and teaching over…
+membership_category: Community Member
+membership_status: Founding member
+links:
+- label: Visit member website
+  url: https://www.birmingham.ac.uk/research/centres-institutes/cyber-security-and-privacy
+  kind: website
+  primary: true
+- label: Back to all members
+  url: /alliance/leadership/members/
+  kind: navigation
+thumbnail:
+  src: /assets/organisations/university-of-birmingham/527814188d27-logo.png
+  alt: University of Birmingham, Centre for Cyber Security and Privacy
+  width: 2000
+  height: 785
+  fit: contain
 ---
-
-1. Alliance
-2. Members
-3. University of Birmingham
-{: .source-breadcrumbs }
-
-# University of Birmingham
-{: id="page-hero-title" .page-hero-title }
-
-The University of Birmingham is a world top 100 university and part of the prestigious Russell Group. Its School of Computer Science is ranked 3rd in the UK for Research (REF’21) and 7th for Education (CUG’23), employing ~70 staff and teaching over…
-{: .page-hero-summary }
-
-![University of Birmingham, Centre for Cyber Security and Privacy](/assets/organisations/university-of-birmingham/527814188d27-logo.png){: .image-left }
-{: .entity-media .entity-media--logo }
-
-Status
-: Founding member
-
-Membership
-: Community Member
-
-Website
-: [Visit member website](https://www.birmingham.ac.uk/research/centres-institutes/cyber-security-and-privacy)
-{: .entity-facts }
 
 ## Description
 {: id="description" }
@@ -45,6 +40,3 @@ Through the
 See the Github organisation for all open-source assets:
 
 [https://github.com/cap-tee](https://github.com/cap-tee) See also: [https://cap-tee.org/publications/](https://cap-tee.org/publications/)
-
-[Back to all members](/alliance/leadership/members/)
-{: .entity-back }

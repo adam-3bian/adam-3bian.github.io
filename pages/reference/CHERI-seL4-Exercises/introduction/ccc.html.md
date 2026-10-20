@@ -3,9 +3,6 @@ title: Helper scripts
 permalink: /reference/CHERI-seL4-Exercises/introduction/ccc.html
 ---
 
-# [Helper scripts](/reference/CHERI-seL4-Exercises/introduction/ccc.html#helper-scripts)
-{: id="helper-scripts" }
-
 Because the command line required to compile exercises is quite unwieldy, we've created a wrapper script to help out, shown below. If you've checked out this repository it's present in `tools/ccc`. The usage is:
 
 ~~~

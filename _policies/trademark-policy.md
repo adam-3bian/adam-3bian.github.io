@@ -13,25 +13,16 @@ related-pages:
   title: About the CHERI Alliance
   description: Learn how the Alliance connects organisations working across the CHERI ecosystem.
   action: Read this page
+summary: Rules for using CHERI trademarks, logos, membership marks, and certification claims.
+version: '2.0'
+document_date: 2025-09
+links:
+- label: Download official PDF
+  url: /assets/shared/source-assets/d904a00cfb15-trademark-policy.pdf
+  kind: document
+  primary: true
+authoritative_format: PDF
 ---
-
-1. Alliance
-2. Legal &amp; Policies
-3. Trademark Policy
-{: .source-breadcrumbs }
-
-# Trademark Policy
-{: id="page-hero-title" .page-hero-title }
-
-Rules for using CHERI trademarks, logos, membership marks, and certification claims.
-{: .page-hero-summary }
-
-Version
-: 2.0
-
-Date
-: September 2025
-{: .page-hero-meta }
 
 ![pdf](/assets/shared/source-assets/d63b7eac09b7-pdf-file-icon.webp){: .image-left .image-inline } Download the [CHERI Alliance Trademark Policy](/assets/shared/source-assets/d904a00cfb15-trademark-policy.pdf) – The PDF is the official version. The text is reproduced below for convenience, but if there is any difference between the two versions, the PDF takes precedence.
 
@@ -110,77 +101,3 @@ For questions about this policy or to request Written Permission or a Sublicense
 {: id="updates" }
 
 This policy may be updated periodically. We will notify the public of any substantive changes. Continued use of CHERI marks after updates indicates acceptance of the revised terms. The latest version will be published on this page.
-
-## Where next
-{: .where-next-title }
-
-### [Export Controls](/policies/export-controls/)
-{: .where-next-card-title }
-
-
-
-
-
-[Information on export-control considerations relevant to Alliance activity and shared material.](/policies/export-controls/)
-{: .where-next-summary }
-
-
-
-[Continue](/policies/export-controls/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Code of Conduct](/policies/code-of-conduct/)
-{: .related-pages-item-title }
-
-
-
-
-
-[The behaviour and participation expectations that apply to Alliance spaces and activities.](/policies/code-of-conduct/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/policies/code-of-conduct/)
-{: .source-card-label }
-
-
-
-
-
-### [Intellectual Property Policy](/policies/intellectual-property-policy/)
-{: .related-pages-item-title }
-
-
-
-
-
-[The policy governing intellectual property in Alliance activities and contributions.](/policies/intellectual-property-policy/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/policies/intellectual-property-policy/)
-{: .source-card-label }
-
-
-
-
-
-### [About the CHERI Alliance](/organisations/cheri-alliance/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Learn how the Alliance connects organisations working across the CHERI ecosystem.](/organisations/cheri-alliance/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/organisations/cheri-alliance/)
-{: .source-card-label }

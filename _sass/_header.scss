@@ -4,7 +4,7 @@
   line-height: 1;
   padding: $space-2;
 }
-header {
+.site-header {
   align-items: center;
   background: var(--colour-header);
   display: flex;
@@ -36,25 +36,25 @@ header {
   object-fit: contain;
   width: auto;
 }
-header nav {
+.site-header nav {
   --navigation-mode: stacked;
   --menu-viewport-gap: #{$menu-viewport-gap};
   flex-basis: 100%;
   font-size: $font-size-navigation;
 }
-.js header nav {
+.js .site-header nav {
   display: none;
 }
-.js header nav[data-open="true"] {
+.js .site-header nav[data-open="true"] {
   display: block;
 }
-header nav > ul {
+.site-header nav > ul {
   display: grid;
 }
-header nav > ul > li {
+.site-header nav > ul > li {
   margin-inline: -$gutter-mobile;
 }
-header nav > ul > li > a, header nav > ul > li > button {
+.site-header nav > ul > li > a, .site-header nav > ul > li > button {
   align-items: center;
   display: flex;
   gap: $space-2;
@@ -66,31 +66,31 @@ header nav > ul > li > a, header nav > ul > li > button {
   .js #hamburger {
     display: none;
   }
-  header {
+  .site-header {
     padding-inline: $gutter-desktop;
   }
-  .js header {
+  .js .site-header {
     flex-wrap: nowrap;
     min-height: $header-height;
   }
-  .js header nav {
+  .js .site-header nav {
     --navigation-mode: flyout;
     display: block;
     flex-basis: auto;
   }
-  .js header nav > ul {
+  .js .site-header nav > ul {
     align-items: center;
     display: flex;
     gap: $space-1;
   }
-  header nav > ul > li {
+  .site-header nav > ul > li {
     margin-inline: 0;
     position: relative;
   }
-  header nav > ul > li.has-megamenu {
+  .site-header nav > ul > li.has-megamenu {
     position: static;
   }
-  header nav > ul > li > a, header nav > ul > li > button {
+  .site-header nav > ul > li > a, .site-header nav > ul > li > button {
     min-height: $header-height;
     padding-inline: $space-3;
     width: auto;

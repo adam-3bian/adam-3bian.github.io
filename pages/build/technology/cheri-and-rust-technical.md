@@ -6,20 +6,11 @@ where-next:
   title: How Secure is a Product?
 related-pages:
 - url: /discover/understand/cheri-and-existing-software/
-  description: Porting software to CHERI is a process of finding assumptions about pointers, integers, objects, bounds, provenance, lifetimes, and interfaces.
+  description: Porting software to CHERI is a process of finding assumptions about pointers, integers, objects,
+    bounds, provenance, lifetimes, and interfaces.
   action: Read this page
+summary: Why it is not CHERI vs Rust, but CHERI and Rust.
 ---
-
-1. Discover
-2. Why CHERI
-3. CHERI and Rust - Technical Overview
-{: .source-breadcrumbs }
-
-# CHERI and Rust - Technical Overview
-{: id="page-hero-title" .page-hero-title }
-
-Why it is not CHERI vs Rust, but CHERI and Rust.
-{: .page-hero-summary }
 
 Rust and CHERI both aim to reduce memory-safety vulnerabilities, but they do so in fundamentally different ways.
 
@@ -136,39 +127,3 @@ Rust support varies across CHERI platforms and continues to evolve. Check the [R
 - Use CHERI to strengthen native boundaries and constrain low-level pointer use.
 - Use compartments when components should not share the same authority.
 - Assess the complete hardware and software stack rather than relying on a language label alone.
-
-## Where next
-{: .where-next-title }
-
-### [How Secure is a Product?](/guides/building-secure-software/)
-{: .where-next-card-title }
-
-
-
-
-
-[Assess a CHERI system by its software mode, protected assets, authority boundaries, and supporting evidence.](/guides/building-secure-software/)
-{: .where-next-summary }
-
-
-
-[Continue](/guides/building-secure-software/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [CHERI and Existing Software](/discover/understand/cheri-and-existing-software/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Porting software to CHERI is a process of finding assumptions about pointers, integers, objects, bounds, provenance, lifetimes, and interfaces.](/discover/understand/cheri-and-existing-software/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/understand/cheri-and-existing-software/)
-{: .source-card-label }

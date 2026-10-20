@@ -9,18 +9,8 @@ related-pages:
   title: The Business Case
   description: CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.
   action: Read this page
+summary: Policy makers, regulators, and cybersecurity agencies are pushing for safer software foundations.
 ---
-
-1. Adopt
-2. Policy
-3. Public Policy and CHERI
-{: .source-breadcrumbs }
-
-# Public Policy and CHERI
-{: id="page-hero-title" .page-hero-title }
-
-Policy makers, regulators, and cybersecurity agencies are pushing for safer software foundations.
-{: .page-hero-summary }
 
 **Memory vulnerabilities** remain a major source of software security risk, prompting governments to encourage safer software and stronger resilience.
 
@@ -62,39 +52,3 @@ CHERI’s policy relevance lies in providing a much stronger solution to memory 
 {: id="guidance-standards-and-law" }
 
 As governments and cybersecurity authorities place increasing emphasis on memory safety, CHERI provides a practical way to strengthen existing software while supporting secure-by-design and resilience goals. It complements memory-safe languages, helps protect software investments, and expands the range of options available to product developers.
-
-## Where next
-{: .where-next-title }
-
-### [Cybersecurity Regulation](/adopt/policy/cybersecurity-regulation/)
-{: .where-next-card-title }
-
-
-
-
-
-[Cybersecurity regulation focuses on lifecycle risk and secure-by-design outcomes rather than prescribing a particular processor technology.](/adopt/policy/cybersecurity-regulation/)
-{: .where-next-summary }
-
-
-
-[Continue](/adopt/policy/cybersecurity-regulation/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [The Business Case](/adopt/business-case/the-business-case/)
-{: .related-pages-item-title }
-
-
-
-
-
-[CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.](/adopt/business-case/the-business-case/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/adopt/business-case/the-business-case/)
-{: .source-card-label }

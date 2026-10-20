@@ -7,24 +7,16 @@ related-pages:
   description: A directory of architecture and related specifications relevant to CHERI.
   action: Read this page
 - url: /discover/resources/glossary/
-  description: This glossary provides plain-language, product-oriented explanations of common CHERI concepts. More detailed technical definitions can be found in the Build section.
+  description: This glossary provides plain-language, product-oriented explanations of common CHERI concepts. More
+    detailed technical definitions can be found in the Build section.
   action: Read this page
 - url: /guides/choose-a-platform/
   title: Choose a Platform
   description: Choose a platform, prepare an environment and run a first CHERI workload.
   action: Read this page
+summary: Clear answers to common technical questions about CHERI.
+topic: Reference
 ---
-
-1. Build
-2. Developers
-3. Technical FAQ
-{: .source-breadcrumbs }
-
-# Technical FAQ
-{: id="page-hero-title" .page-hero-title }
-
-Clear answers to common technical questions about CHERI.
-{: .page-hero-summary }
 
 If you are looking for a high-leval FAQ, please go to [FAQ](/discover/understand/faq/). You can also take a look at the University of Cambridge’s [CHERI FAQ](https://ctsrd-cheri.github.io/cheri-faq/)
 
@@ -94,77 +86,3 @@ CHERI Linux is Linux adapted to CHERI systems. The CHERI Alliance Linux Working 
 {: id="what-is-cheri-risc-v" }
 
 CHERI-RISC-V applies CHERI capability concepts to the RISC-V instruction-set architecture. It is used across application-class, embedded, FPGA, simulation, operating-system, and commercial processor work. This is being standardised through RISC-V International.
-
-## Where next
-{: .where-next-title }
-
-### [Capabilities](/build/technology/how-cheri-capabilities-work/)
-{: .where-next-card-title }
-
-
-
-
-
-[Learn about capabilities, the main concept behind CHERI.](/build/technology/how-cheri-capabilities-work/)
-{: .where-next-summary }
-
-
-
-[Continue](/build/technology/how-cheri-capabilities-work/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Specifications](/discover/resources/specifications/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A directory of architecture and related specifications relevant to CHERI.](/discover/resources/specifications/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/resources/specifications/)
-{: .source-card-label }
-
-
-
-
-
-### [Glossary](/discover/resources/glossary/)
-{: .related-pages-item-title }
-
-
-
-
-
-[This glossary provides plain-language, product-oriented explanations of common CHERI concepts. More detailed technical definitions can be found in the Build section.](/discover/resources/glossary/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/resources/glossary/)
-{: .source-card-label }
-
-
-
-
-
-### [Choose a Platform](/guides/choose-a-platform/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Choose a platform, prepare an environment and run a first CHERI workload.](/guides/choose-a-platform/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/guides/choose-a-platform/)
-{: .source-card-label }

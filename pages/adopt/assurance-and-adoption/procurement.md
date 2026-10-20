@@ -6,7 +6,8 @@ where-next:
   title: About CHERI Enabled
 related-pages:
 - url: /adopt/assurance-and-adoption/case-studies/
-  description: CHERI has been explored across application processors, operating systems, embedded platforms, and commercial products.
+  description: CHERI has been explored across application processors, operating systems, embedded platforms, and
+    commercial products.
   action: Read this page
 - url: /adopt/assurance-and-adoption/assurance-and-certification/
   description: CHERI can turn intended memory and component boundaries into properties that are enforced and testable.
@@ -15,18 +16,9 @@ related-pages:
   title: The Business Case
   description: CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.
   action: Read this page
+summary: CHERI can give buyers a more precise account of memory protection and containment when the product, software
+  coverage, and evidence have a defined scope.
 ---
-
-1. Adopt
-2. Assurance &amp; Adoption
-3. Procurement
-{: .source-breadcrumbs }
-
-# Procurement
-{: id="page-hero-title" .page-hero-title }
-
-CHERI can give buyers a more precise account of memory protection and containment when the product, software coverage, and evidence have a defined scope.
-{: .page-hero-summary }
 
 Procurement connects a product’s security claims to the needs of the organisation that will depend on it. CHERI can make those claims more concrete because its protection concerns defined memory ranges, permissions, and component authority rather than an undefined promise of greater security.
 
@@ -78,77 +70,3 @@ Purchase price is only one part of the cost. Platform availability, software mig
 CHERI’s procurement value lies in making a security property more visible: which software can access which resources, and how the processor enforces that boundary. When a product exposes that scope, buyers can distinguish meaningful capability protection from use of the name alone.
 
 The exact legal and contractual requirements remain specific to the jurisdiction, sector, and procurement. This page describes the technical meaning of CHERI claims rather than model legal wording.
-
-## Where next
-{: .where-next-title }
-
-### [About CHERI Enabled](/adopt/assurance-and-adoption/about-cheri-enabled/)
-{: .where-next-card-title }
-
-
-
-
-
-[The CHERI Enabled programme provides a common public record for named products and their implementation claims.](/adopt/assurance-and-adoption/about-cheri-enabled/)
-{: .where-next-summary }
-
-
-
-[Continue](/adopt/assurance-and-adoption/about-cheri-enabled/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Case Studies](/adopt/assurance-and-adoption/case-studies/)
-{: .related-pages-item-title }
-
-
-
-
-
-[CHERI has been explored across application processors, operating systems, embedded platforms, and commercial products.](/adopt/assurance-and-adoption/case-studies/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/adopt/assurance-and-adoption/case-studies/)
-{: .source-card-label }
-
-
-
-
-
-### [Assurance &amp; Certification](/adopt/assurance-and-adoption/assurance-and-certification/)
-{: .related-pages-item-title }
-
-
-
-
-
-[CHERI can turn intended memory and component boundaries into properties that are enforced and testable.](/adopt/assurance-and-adoption/assurance-and-certification/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/adopt/assurance-and-adoption/assurance-and-certification/)
-{: .source-card-label }
-
-
-
-
-
-### [The Business Case](/adopt/business-case/the-business-case/)
-{: .related-pages-item-title }
-
-
-
-
-
-[CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.](/adopt/business-case/the-business-case/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/adopt/business-case/the-business-case/)
-{: .source-card-label }

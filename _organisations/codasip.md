@@ -1,31 +1,26 @@
 ---
 title: Codasip
 member: true
+summary: Codasip is a processor technology company enabling system-on-chip developers to differentiate their products
+  for competitive advantage. Customers leverage the transformational potential of the open RISC-V ISA in a unique
+  way through Codasip’s Custom…
+membership_category: Full Member
+membership_status: Founding member
+links:
+- label: Visit member website
+  url: http://www.codasip.com/
+  kind: website
+  primary: true
+- label: Back to all members
+  url: /alliance/leadership/members/
+  kind: navigation
+thumbnail:
+  src: /assets/organisations/codasip/ef815ad95752-logo.png
+  alt: Codasip logo
+  width: 2000
+  height: 745
+  fit: contain
 ---
-
-1. Alliance
-2. Members
-3. Codasip
-{: .source-breadcrumbs }
-
-# Codasip
-{: id="page-hero-title" .page-hero-title }
-
-Codasip is a processor technology company enabling system-on-chip developers to differentiate their products for competitive advantage. Customers leverage the transformational potential of the open RISC-V ISA in a unique way through Codasip’s Custom…
-{: .page-hero-summary }
-
-![Codasip logo](/assets/organisations/codasip/ef815ad95752-logo.png){: .image-left }
-{: .entity-media .entity-media--logo }
-
-Status
-: Founding member
-
-Membership
-: Full Member
-
-Website
-: [Visit member website](http://www.codasip.com/)
-{: .entity-facts }
 
 ## Description
 {: id="description" }
@@ -48,6 +43,3 @@ Codasip has added built-in, fine-grained memory protection to its RISC-V process
 [RISC-V Specification for CHERI Extensions – Draft (contributor)](https://github.com/riscv/riscv-cheri "https://github.com/riscv/riscv-cheri")
 
 [CHERI RISC-V SDK](https://github.com/CHERI-Alliance "https://github.com/CHERI-Alliance")
-
-[Back to all members](/alliance/leadership/members/)
-{: .entity-back }

@@ -1,38 +1,59 @@
 ---
 title: CHERI Blossoms Conference 2027
-date: '2027-04-21'
-end-date: '2027-04-23'
+start_date: '2027-04-21'
+end_date: '2027-04-23'
+summary: The CHERI community comes together in Cambridge for three days of learning, discussion, hands-on experience
+  and networking.
+format: Conference
+location: University of Cambridge, Cambridge, UK
+series: CHERI Blossoms
+links:
+- label: CHERI Blossoms
+  url: /news-and-events/events-and-archive/cheri-blossoms/
+  kind: resource
+- label: Back to upcoming events
+  url: /news-and-events/events-and-archive/upcoming-events/
+  kind: navigation
+date_note: 21 April 2027 (**Pre-conference Tutorial:**) - 22-23 April 2027 (**Main Conference**)
+thumbnail:
+  src: /assets/events/cheri-blossoms-conference-2027/18a3bce9f22d-hero.png
+  alt: CHERI Blossoms Conference 2027
+  width: 1280
+  height: 720
+card_sections:
+- title: More CHERI Blossoms events
+  id: related-series-events
+  groups:
+  - entries:
+    - url: /events/cheri-blossoms-tutorial-2026/
+      description: The CHERI Research Centre at the Computer Laboratory, Codasip, and lowRISC co-organised a comprehensive
+        tutorial on CHERI alongside the CHERI Blossoms 2026 conference....
+      context: '25 March 2026
+
+        University of Cambridge, Cambridge, UK'
+      labels: 'Past
+
+        Tutorial'
+    - url: /events/cheri-blossoms-conference-2026/
+      description: The CHERI Blossoms Conference 2026 was the must-attend event for forward-thinking decision-makers
+        and innovators! This exclusive gathering was tailored for industry le...
+      context: '25 to 27 March 2026
+
+        University of Cambridge, Cambridge, UK'
+      labels: 'Past
+
+        Conference'
+    - url: /events/cheri-blossoms-conference-2025/
+      description: The CHERI Blossoms Conference 2025 invited researchers, technologists, industry leaders, and
+        business strategists to contribute to the advancement of digital security ...
+      context: '2 April 2025
+
+        St John''s College, Cambridge, UK'
+      labels: 'Past
+
+        Conference'
+    intro: '[About the CHERI Blossoms Conferences](/news-and-events/events-and-archive/cheri-blossoms/)'
 ---
-
-1. News &amp; Events
-2. Events &amp; Archive
-3. CHERI Blossoms Conference 2027
-{: .source-breadcrumbs }
-
-# CHERI Blossoms Conference 2027
-{: id="page-hero-title" .page-hero-title }
-
-The CHERI community comes together in Cambridge for three days of learning, discussion, hands-on experience and networking.
-{: .page-hero-summary }
-
-![CHERI Blossoms Conference 2027](/assets/events/cheri-blossoms-conference-2027/18a3bce9f22d-hero.png){: .image-left }
-{: .entity-media .entity-media--event }
-
-Status
-: Upcoming
-
-Format
-: Conference
-
-Date
-: 21 April 2027 (**Pre-conference Tutorial:**) - 22-23 April 2027 (**Main Conference**)
-
-Location
-: University of Cambridge, Cambridge, UK
-
-Series
-: [CHERI Blossoms](/news-and-events/events-and-archive/cheri-blossoms/)
-{: .entity-facts }
 
 ## Conference Overview
 {: id="conference-overview" }
@@ -103,79 +124,9 @@ Cambridge CB3 0FD
 [View map](https://maps.google.com/maps?q=William%20Gates%20Building&t=m&z=13&output=embed&iwloc=near)
 
 
-
-
 Address
 William Gates Building
 
 15 JJ Thomson Ave
 
 Cambridge CB3 0FD
-
-
-
-
-## More CHERI Blossoms events
-{: id="related-series-events" }
-
-[About the CHERI Blossoms Conferences](/news-and-events/events-and-archive/cheri-blossoms/)
-
-![](/assets/events/cheri-blossoms-tutorial-2026/88adf0d2ae82-cheri-blossoms-tutorial-2026.webp){: .image-full }
-
-Past
-Tutorial
-{: .collection-card__labels }
-
-25 March 2026
-University of Cambridge, Cambridge, UK
-{: .collection-card__meta }
-
-### [Hands-on Introduction to CHERI and CHERIoT](/events/cheri-blossoms-tutorial-2026/)
-{: .collection-card__title }
-
-The CHERI Research Centre at the Computer Laboratory, Codasip, and lowRISC co-organised a comprehensive tutorial on CHERI alongside the CHERI Blossoms 2026 conference....
-{: .collection-card__summary }
-
-View event archive
-{: .collection-card__link }
-
-![](/assets/events/cheri-blossoms-conference-2026/1e39a7b87075-cheri-blossoms-conference-2026.webp){: .image-full }
-
-Past
-Conference
-{: .collection-card__labels }
-
-25 to 27 March 2026
-University of Cambridge, Cambridge, UK
-{: .collection-card__meta }
-
-### [CHERI Blossoms Conference 2026](/events/cheri-blossoms-conference-2026/)
-{: .collection-card__title }
-
-The CHERI Blossoms Conference 2026 was the must-attend event for forward-thinking decision-makers and innovators! This exclusive gathering was tailored for industry le...
-{: .collection-card__summary }
-
-View event archive
-{: .collection-card__link }
-
-![](/assets/events/cheri-blossoms-conference-2025/ae43d5d29c6c-cheri-blossoms-conference-2025.webp){: .image-full }
-
-Past
-Conference
-{: .collection-card__labels }
-
-2 April 2025
-St John's College, Cambridge, UK
-{: .collection-card__meta }
-
-### [CHERI Blossoms Conference 2025](/events/cheri-blossoms-conference-2025/)
-{: .collection-card__title }
-
-The CHERI Blossoms Conference 2025 invited researchers, technologists, industry leaders, and business strategists to contribute to the advancement of digital security ...
-{: .collection-card__summary }
-
-View event archive
-{: .collection-card__link }
-
-[Back to upcoming events](/news-and-events/events-and-archive/upcoming-events/)
-{: .entity-back }

@@ -3,9 +3,6 @@ title: Answers - Corrupt a control-flow pointer using a subobject buffer overflo
 permalink: /reference/CHERI-seL4-Exercises/exercises/control-flow-pointer/answers.html
 ---
 
-# [Answers - Corrupt a control-flow pointer using a subobject buffer overflow](/reference/CHERI-seL4-Exercises/exercises/control-flow-pointer/answers.html#answers---corrupt-a-control-flow-pointer-using-a-subobject-buffer-overflow)
-{: id="answers---corrupt-a-control-flow-pointer-using-a-subobject-buffer-overflow" }
-
 2. Example session:
 
 ~~~

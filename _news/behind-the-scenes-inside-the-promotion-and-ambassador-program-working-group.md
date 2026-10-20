@@ -1,28 +1,22 @@
 ---
 title: 'Behind the Scenes: inside the promotion and ambassador program Working Group'
 date: '2025-09-30T10:51:40+01:00'
-authors: [mike-eftimakis]
+authors:
+- mike-eftimakis
+thumbnail:
+  src: /assets/shared/source-assets/bb889a4dc09e-cheri-alliance-working-groups.png
+  alt: CHERI Alliance Working Groups logo
+  width: 746
+  height: 369
+tags:
+- CHERI Alliance news
+- Working Groups
+author_credit: Mike Eftimakis – **CHERI Alliance**
+summary: If you’ve been watching the CHERI Alliance gather momentum, you’ve probably noticed a growing wave of community
+  activity—talks, demos, explainers, and friendly faces spreading the word about capability-based security.
 ---
 
-1. News &amp; Events
-2. News &amp; Analysis
-3. Behind the Scenes: inside the promotion and ambassador program Working Group
-{: .source-breadcrumbs }
-
-# Behind the Scenes: inside the promotion and ambassador program Working Group
-{: id="page-hero-title" .page-hero-title }
-
-*30 September 2025*{: .source-date }
-*CHERI Alliance news*{: .collection-tag }
-*Working Groups*{: .collection-tag }
-{: .collection-detail__metadata }
-
-![CHERI Alliance Working Groups logo](/assets/shared/source-assets/bb889a4dc09e-cheri-alliance-working-groups.png){: .image-full }
-{: .collection-detail__lead-image }
-
-Mike Eftimakis – **CHERI Alliance**
-
-If you’ve been watching the CHERI Alliance gather momentum, you’ve probably noticed a growing wave of community activity—talks, demos, explainers, and friendly faces spreading the word about capability-based security. A lot of that energy is coordinated by the [Promotion &amp; Ambassador Program Working Group](/groups/promotion-and-ambassador-program/) (WG). Here’s a clear look at what the WG does, how it empowers ambassadors, and how you can plug in.
+A lot of that energy is coordinated by the [Promotion &amp; Ambassador Program Working Group](/groups/promotion-and-ambassador-program/) (WG). Here’s a clear look at what the WG does, how it empowers ambassadors, and how you can plug in.
 
 ## What we do
 {: id="what-we-do" }

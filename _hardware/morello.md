@@ -7,18 +7,17 @@ related-pages:
   title: Choose a Platform
   description: Choose a platform, prepare an environment and run a first CHERI workload.
   action: Read this page
+summary: Morello is Arm’s application-class CHERI prototype platform, providing real hardware for developing, porting
+  and evaluating CHERI software.
+thumbnail:
+  src: /assets/pages/adopt--assurance-and-adoption--case-studies/bfeebb3ac676-morello-board.webp
+  alt: Arm Morello board
+  width: 640
+  height: 480
+  fit: contain
+record_type: Platform overview
+thumbnail_in_body: true
 ---
-
-1. Build
-2. Platforms
-3. Morello
-{: .source-breadcrumbs }
-
-# Morello
-{: id="page-hero-title" .page-hero-title }
-
-Morello is Arm’s application-class CHERI prototype platform, providing real hardware for developing, porting and evaluating CHERI software.
-{: .page-hero-summary }
 
 Developed by Arm in collaboration with the [University of Cambridge](/organisations/university-of-cambridge/) and [SRI International](/organisations/sri/) through the UK Digital Security by Design (DSbD) programme, Morello brings CHERI capabilities to an application-class processor and development board.
 
@@ -127,39 +126,3 @@ Performance results obtained on Morello may reflect characteristics of the proto
 We recommend using Morello primarily for software development, compatibility testing, and functional evaluation. Once an application has been ported and validated, researchers should seek to corroborate performance results using additional CHERI platforms, implementations, simulators, or published results that better reflect production-oriented designs. Real-world workload measurements across multiple platforms provide a more reliable basis for understanding the true performance impact of CHERI. The CHERI Alliance can provide guidance on available platforms and benchmarking opportunities to support such evaluations.
 
 Use the [Arm Morello resources](https://developer.arm.com/Architectures/Morello), [CheriBSD Getting Started](https://www.cheribsd.org/getting-started/), and [`cheribuild`](https://github.com/CTSRD-CHERI/cheribuild) for current technical instructions. For its place in the wider timeline, read [Morello History](/discover/history/morello-history/).
-
-## Where next
-{: .where-next-title }
-
-### [CHERIoT](/hardware/cheriot/)
-{: .where-next-card-title }
-
-
-
-
-
-[CHERIoT is a complete embedded hardware-software platform built around CHERI concepts.](/hardware/cheriot/)
-{: .where-next-summary }
-
-
-
-[Continue](/hardware/cheriot/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Choose a Platform](/guides/choose-a-platform/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Choose a platform, prepare an environment and run a first CHERI workload.](/guides/choose-a-platform/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/guides/choose-a-platform/)
-{: .source-card-label }

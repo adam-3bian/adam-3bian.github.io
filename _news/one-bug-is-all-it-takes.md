@@ -1,28 +1,20 @@
 ---
 title: One Bug is All It Takes
 date: '2026-05-04T16:06:57+01:00'
-authors: [adam-finney]
+authors:
+- adam-finney
+thumbnail:
+  src: /assets/news/one-bug-is-all-it-takes/90741c3e8a15-hero.jpg
+  alt: A red bug on a computer screen being focused by a magnifying glass
+  width: 2000
+  height: 1400
+tags:
+- CHERI Alliance news
+- Ecosystem
+author_credit: Adam Finney – **CHERI Alliance**
+summary: 'This article is part of a series of blogs published after the announcement of Mythos vulnerabilities’
+  exploitation capabilities. The views from other experts on this topic are:'
 ---
-
-1. News &amp; Events
-2. News &amp; Analysis
-3. One Bug is All It Takes
-{: .source-breadcrumbs }
-
-# One Bug is All It Takes
-{: id="page-hero-title" .page-hero-title }
-
-*4 May 2026*{: .source-date }
-*CHERI Alliance news*{: .collection-tag }
-*Ecosystem*{: .collection-tag }
-{: .collection-detail__metadata }
-
-![A red bug on a computer screen being focused by a magnifying glass](/assets/news/one-bug-is-all-it-takes/90741c3e8a15-hero.jpg){: .image-full }
-{: .collection-detail__lead-image }
-
-Adam Finney – **CHERI Alliance**
-
-This article is part of a series of blogs published after the announcement of Mythos vulnerabilities’ exploitation capabilities. The views from other experts on this topic are:
 
 - [AI has compressed the attack timeline – Mike Eftimakis](/news/ai-has-compressed-the-attack-timeline/)
 - [CHERI memory safety mitigates LLM-discovered vulnerability in FreeBSD – Brooks Davis](/news/cheri-memory-safety-mitigates-llm-discovered-vulnerability-in-freebsd/)

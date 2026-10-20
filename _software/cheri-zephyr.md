@@ -14,18 +14,9 @@ related-pages:
   title: Choose a Platform
   description: Compare current embedded hardware, FPGA, and simulation routes.
   action: Read this page
+summary: Bring CHERI hardware-enforced protection to Zephyr-based embedded systems.
+software_type: Operating system
 ---
-
-1. Build
-2. Software Ecosystem
-3. CHERI Zephyr
-{: .source-breadcrumbs }
-
-# CHERI Zephyr
-{: id="page-hero-title" .page-hero-title }
-
-Bring CHERI hardware-enforced protection to Zephyr-based embedded systems.
-{: .page-hero-summary }
 
 CHERI Zephyr brings capability-based memory protection to the Zephyr ecosystem, providing a route for developers who want to explore CHERI while retaining familiar Zephyr APIs, drivers, build tools and development practices.
 
@@ -113,77 +104,3 @@ For projects that instead want an embedded hardware and software platform design
 - [CHERI Zephyr source](https://github.com/CHERI-Alliance/CHERI-zephyr)
 - [CHERI Zephyr Working Group](/groups/cheri-zephyr/)
 - [Zephyr Project documentation](https://docs.zephyrproject.org/)
-
-## Where next
-{: .where-next-title }
-
-### [Real-Time Operating Systems](/software/real-time-operating-systems/)
-{: .where-next-card-title }
-
-
-
-
-
-[CHERI work spans several real-time operating systems and embedded software models.](/software/real-time-operating-systems/)
-{: .where-next-summary }
-
-
-
-[Continue](/software/real-time-operating-systems/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [CHERI Zephyr Working Group](/groups/cheri-zephyr/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Alliance collaboration around the Zephyr port, platforms, interfaces, and tooling.](/groups/cheri-zephyr/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/groups/cheri-zephyr/)
-{: .source-card-label }
-
-
-
-
-
-### [CHERIoT](/hardware/cheriot/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A security-focused embedded architecture and RTOS designed together around CHERI compartments.](/hardware/cheriot/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/hardware/cheriot/)
-{: .source-card-label }
-
-
-
-
-
-### [Choose a Platform](/guides/choose-a-platform/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Compare current embedded hardware, FPGA, and simulation routes.](/guides/choose-a-platform/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/guides/choose-a-platform/)
-{: .source-card-label }

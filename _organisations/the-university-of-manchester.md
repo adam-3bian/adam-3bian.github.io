@@ -1,31 +1,26 @@
 ---
 title: The University of Manchester
 member: true
+summary: The University of Manchester, a charitable body incorporated by Royal Charter, is a centre of teaching
+  excellence, world-class research, outstanding student experience. Founded in 1824 for the advancement of education,
+  we’ve since been home to 26…
+membership_category: Community Member
+membership_status: Member
+links:
+- label: Visit member website
+  url: https://www.manchester.ac.uk/
+  kind: website
+  primary: true
+- label: Back to all members
+  url: /alliance/leadership/members/
+  kind: navigation
+thumbnail:
+  src: /assets/organisations/the-university-of-manchester/03379609c33b-logo.png
+  alt: University of Manchester logo
+  width: 909
+  height: 388
+  fit: contain
 ---
-
-1. Alliance
-2. Members
-3. The University of Manchester
-{: .source-breadcrumbs }
-
-# The University of Manchester
-{: id="page-hero-title" .page-hero-title }
-
-The University of Manchester, a charitable body incorporated by Royal Charter, is a centre of teaching excellence, world-class research, outstanding student experience. Founded in 1824 for the advancement of education, we’ve since been home to 26…
-{: .page-hero-summary }
-
-![University of Manchester logo](/assets/organisations/the-university-of-manchester/03379609c33b-logo.png){: .image-left }
-{: .entity-media .entity-media--logo }
-
-Status
-: Member
-
-Membership
-: Community Member
-
-Website
-: [Visit member website](https://www.manchester.ac.uk/)
-{: .entity-facts }
 
 ## Description
 {: id="description" }
@@ -49,6 +44,3 @@ The “”MoatE”” project used the Morello capabilities hardware to create a
 {: id="open-source-assets-for-cheri" }
 
 We have a range of assets from Soteria and MOJO related to OpenJDK and MoatE OS assets that we are currently packaging. We are likely to put them in the beehive public repositories in git.
-
-[Back to all members](/alliance/leadership/members/)
-{: .entity-back }

@@ -3,12 +3,4 @@ layout: page
 ---
 {{ content }}
 {% include chronological-items.html items=site.events kind='events' status=page.listing.status %}
-{% assign directory_heading = 'h2' %}
-{% if content contains '<h2' %}{% assign directory_heading = 'h3' %}{% endif %}
-<section class="index-list" aria-label="{{ page.title | escape }}" data-collection-index{% if page.listing.status %} data-event-status="{{ page.listing.status | escape }}"{% endif %}>
-  {% if chronological_items.size > 0 %}
-    {% include listing.html items=chronological_items kind='events' label=page.title heading=directory_heading action='View event' columns=page.listing.columns %}
-  {% else %}
-    <p>No {% if page.listing.status == 'upcoming' %}upcoming {% elsif page.listing.status == 'past' %}past {% endif %}events are currently listed.</p>
-  {% endif %}
-</section>
+{% include directory.html items=chronological_items kind='events' %}

@@ -1,34 +1,23 @@
 ---
 title: '''Cybersecurity by design - from research to industry'' conference'
-date: '2024-11-12'
+start_date: '2024-11-12'
+summary: Connecting CHERI and secure-by-design research with practical industry implementation.
+format: Conference
+location: Hub8 MX, Cheltenham, UK - Hosted by NCSC, CyNam, and the CHERI Alliance
+links:
+- label: Hub8 MX
+  url: https://hub8and.co/hub8-mx-cheltenham-startup-coworking-space/
+  kind: location
+- label: Back to past events
+  url: /news-and-events/events-and-archive/past-events/
+  kind: navigation
+date_note: 12 November 2024
+thumbnail:
+  src: /assets/events/cybersecurity-by-design-conference-2024/ab41005be5b4-cybersecurity-by-design-conference-2024.webp
+  alt: '''Cybersecurity by design - from research to industry'' conference'
+  width: 640
+  height: 360
 ---
-
-1. News &amp; Events
-2. Events &amp; Archive
-3. 'Cybersecurity by design - from research to industry' conference
-{: .source-breadcrumbs }
-
-# 'Cybersecurity by design - from research to industry' conference
-{: id="page-hero-title" .page-hero-title }
-
-Connecting CHERI and secure-by-design research with practical industry implementation.
-{: .page-hero-summary }
-
-!['Cybersecurity by design - from research to industry' conference](/assets/events/cybersecurity-by-design-conference-2024/ab41005be5b4-cybersecurity-by-design-conference-2024.webp){: .image-left }
-{: .entity-media .entity-media--event }
-
-Status
-: Past
-
-Format
-: Conference
-
-Date
-: 12 November 2024
-
-Location
-: [Hub8 MX](https://hub8and.co/hub8-mx-cheltenham-startup-coworking-space/), Cheltenham, UK - Hosted by NCSC, CyNam, and the CHERI Alliance
-{: .entity-facts }
 
 ## Bringing research and industry together
 {: id="bringing-research-and-industry-together" }
@@ -87,6 +76,3 @@ Cheltenham
 GL50 3JY (Please note that this differs from the postcode on Google Maps)
 
 [View map](https://maps.google.com/maps?q=hub8%20mx&t=m&z=13&output=embed&iwloc=near)
-
-[Back to past events](/news-and-events/events-and-archive/past-events/)
-{: .entity-back }

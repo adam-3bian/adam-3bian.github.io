@@ -3,9 +3,6 @@ title: Answers - Compile and run RISC-V and CHERI-RISC-V programs
 permalink: /reference/CHERI-seL4-Exercises/exercises/compile-and-run/answers.html
 ---
 
-# [Answers - Compile and run RISC-V and CHERI-RISC-V programs](/reference/CHERI-seL4-Exercises/exercises/compile-and-run/answers.html#answers---compile-and-run-risc-v-and-cheri-risc-v-programs)
-{: id="answers---compile-and-run-risc-v-and-cheri-risc-v-programs" }
-
 This exercise explores the difference in size between addresses and
 pointers, drawing attention to the pointer-focused nature of CHERI memory
 protection.

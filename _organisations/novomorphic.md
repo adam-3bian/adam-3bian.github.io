@@ -1,31 +1,24 @@
 ---
 title: Novomorphic
 member: true
+summary: Details to follow.
+membership_category: Full Member
+membership_status: Member
+links:
+- label: Visit member website
+  url: https://novomorphic.com/
+  kind: website
+  primary: true
+- label: Back to all members
+  url: /alliance/leadership/members/
+  kind: navigation
+thumbnail:
+  src: /assets/organisations/novomorphic/3f35c8ed2eaa-logo.png
+  alt: Novomorphic logo
+  width: 1500
+  height: 232
+  fit: contain
 ---
-
-1. Alliance
-2. Members
-3. Novomorphic
-{: .source-breadcrumbs }
-
-# Novomorphic
-{: id="page-hero-title" .page-hero-title }
-
-Details to follow.
-{: .page-hero-summary }
-
-![Novomorphic logo](/assets/organisations/novomorphic/3f35c8ed2eaa-logo.png){: .image-left }
-{: .entity-media .entity-media--logo }
-
-Status
-: Member
-
-Membership
-: Full Member
-
-Website
-: [Visit member website](https://novomorphic.com/)
-{: .entity-facts }
 
 ## Description
 {: id="description" }
@@ -36,6 +29,3 @@ Details to follow.
 {: id="cheri-activities" }
 
 Details to follow.
-
-[Back to all members](/alliance/leadership/members/)
-{: .entity-back }

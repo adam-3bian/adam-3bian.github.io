@@ -5,8 +5,7 @@ listing:
   collection: guides
 layout: list
 parent: /build/
+directory: true
 ---
-
-# Developer guides
 
 Guides for evaluating CHERI, choosing a platform and building software.

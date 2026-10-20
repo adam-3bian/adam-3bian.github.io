@@ -8,20 +8,11 @@ related-pages:
   description: Passwords, encryption, testing, and updates reduce risk, but memory vulnerabilities can still remain.
   action: Read this page
 - url: /discover/why-cheri/approaches-to-memory-safety/
-  description: No single technology delivers memory safety. The strongest solutions combine processes, tools, hardware protections, and isolation.
+  description: No single technology delivers memory safety. The strongest solutions combine processes, tools, hardware
+    protections, and isolation.
   action: Read this page
+summary: Hardware-enforced memory protection for existing and future software.
 ---
-
-1. Discover
-2. Why CHERI
-3. Why CHERI?
-{: .source-breadcrumbs }
-
-# Why CHERI?
-{: id="page-hero-title" .page-hero-title }
-
-Hardware-enforced memory protection for existing and future software.
-{: .page-hero-summary }
 
 **Memory-safety vulnerabilities** are responsible for most of today’s serious software security flaws. Reducing them is one of the biggest opportunities to improve cybersecurity, and CHERI was designed to help address this challenge.
 
@@ -108,58 +99,3 @@ Teams commonly investigate CHERI to:
 - Preserve investment in long-lived software assets
 - Improve fault visibility, testing, and assurance
 - Build more resilient systems from the processor upwards
-
-## Where next
-{: .where-next-title }
-
-### [Vulnerabilities in Everyday Technology](/discover/why-cheri/vulnerabilities-in-everyday-technology/)
-{: .where-next-card-title }
-
-
-
-
-
-[A memory mistake in a connected device can expose private information, change how the device behaves, or provide a way into a wider network.](/discover/why-cheri/vulnerabilities-in-everyday-technology/)
-{: .where-next-summary }
-
-
-
-[Continue](/discover/why-cheri/vulnerabilities-in-everyday-technology/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Why Existing Defences Are Not Enough](/discover/why-cheri/why-existing-defences-are-not-enough/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Passwords, encryption, testing, and updates reduce risk, but memory vulnerabilities can still remain.](/discover/why-cheri/why-existing-defences-are-not-enough/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/why-cheri/why-existing-defences-are-not-enough/)
-{: .source-card-label }
-
-
-
-
-
-### [Approaches to Memory Safety](/discover/why-cheri/approaches-to-memory-safety/)
-{: .related-pages-item-title }
-
-
-
-
-
-[No single technology delivers memory safety. The strongest solutions combine processes, tools, hardware protections, and isolation.](/discover/why-cheri/approaches-to-memory-safety/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/why-cheri/approaches-to-memory-safety/)
-{: .source-card-label }

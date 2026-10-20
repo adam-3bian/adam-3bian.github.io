@@ -10,18 +10,10 @@ related-pages:
   title: Choose a Platform
   description: Choose a platform, prepare an environment and run a first CHERI workload.
   action: Read this page
+summary: CHERIoT combines a compact CHERI-RISC-V architecture, processor cores, a real-time operating system, compartments,
+  tooling, simulation, and embedded hardware targets.
+record_type: Platform overview
 ---
-
-1. Build
-2. Platforms
-3. CHERIoT
-{: .source-breadcrumbs }
-
-# CHERIoT
-{: id="page-hero-title" .page-hero-title }
-
-CHERIoT combines a compact CHERI-RISC-V architecture, processor cores, a real-time operating system, compartments, tooling, simulation, and embedded hardware targets.
-{: .page-hero-summary }
 
 Small connected devices often run many components in one address space: network stacks, parsers, drivers, third-party libraries, update code, and application logic. A fault in one can reach everything. Conventional process isolation may be unavailable or too heavy for the device.
 
@@ -106,58 +98,3 @@ The ecosystem also includes commercial silicon and licensable processor designs.
 CHERIoT has a stable 1.0 architecture and RTOS line, released open-source implementations, development platforms, commercial silicon activity, and CHERI Enabled certification for the CHERIoT Ibex product. Individual repositories continue to evolve, so pin releases for reproducible product work.
 
 The [CHERIoT Programmer’s Guide](https://cheriot.org/book/) is the best starting point for architecture, compartments, memory management, drivers, auditing, and practical examples.
-
-## Where next
-{: .where-next-title }
-
-### [Sonata](/hardware/sonata/)
-{: .where-next-card-title }
-
-
-
-
-
-[Sonata is a low-cost CHERIoT development and evaluation platform built around an FPGA implementation of CHERIoT-Ibex.](/hardware/sonata/)
-{: .where-next-summary }
-
-
-
-[Continue](/hardware/sonata/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Morello](/hardware/morello/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Morello is an Arm-based CHERI technology demonstrator created for architecture and software research.](/hardware/morello/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/hardware/morello/)
-{: .source-card-label }
-
-
-
-
-
-### [Choose a Platform](/guides/choose-a-platform/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Choose a platform, prepare an environment and run a first CHERI workload.](/guides/choose-a-platform/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/guides/choose-a-platform/)
-{: .source-card-label }

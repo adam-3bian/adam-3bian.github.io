@@ -8,18 +8,8 @@ related-pages:
   title: About the CHERI Alliance
   description: Learn how the Alliance connects organisations working across the CHERI ecosystem.
   action: Read this page
+summary: We accelerates CHERI adoption through collaboration, interoperability, and ecosystem growth.
 ---
-
-1. Alliance
-2. About &amp; Governance
-3. Mission &amp; Role
-{: .source-breadcrumbs }
-
-# Mission &amp; Role
-{: id="page-hero-title" .page-hero-title }
-
-We accelerates CHERI adoption through collaboration, interoperability, and ecosystem growth.
-{: .page-hero-summary }
 
 The Alliance brings together the people and organisations developing, deploying, evaluating, and promoting CHERI technology. Our goal is to make adoption easier, build a stronger ecosystem, and help more products benefit from CHERI’s approach to memory protection and compartmentalisation.
 
@@ -60,39 +50,3 @@ Alliance activities should be technically grounded, transparent about limitation
 {: id="what-remains-with-adopters" }
 
 The Alliance can provide coordination, resources, guidance, education, and assurance frameworks. Organisations remain responsible for their own product design, engineering decisions, security claims, compliance obligations, and deployments.
-
-## Where next
-{: .where-next-title }
-
-### [Governance](/alliance/about-and-governance/governance/)
-{: .where-next-card-title }
-
-
-
-
-
-[An overview of how the CHERI Alliance is governed and how responsibilities are organised.](/alliance/about-and-governance/governance/)
-{: .where-next-summary }
-
-
-
-[Continue](/alliance/about-and-governance/governance/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [About the CHERI Alliance](/organisations/cheri-alliance/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Learn how the Alliance connects organisations working across the CHERI ecosystem.](/organisations/cheri-alliance/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/organisations/cheri-alliance/)
-{: .source-card-label }

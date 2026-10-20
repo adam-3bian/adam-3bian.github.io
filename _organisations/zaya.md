@@ -1,31 +1,26 @@
 ---
 title: ZAYA
 member: true
+summary: We offer security solutions and containerisation for microcontrollers and embedded systems, addressing
+  specific security needs for small and compact devices in markets such as IoT, Secure Elements, and Automotive.
+  Positioned at the cutting edge of…
+membership_category: Full Member
+membership_status: Member
+links:
+- label: Visit member website
+  url: https://www.zayatech.com/
+  kind: website
+  primary: true
+- label: Back to all members
+  url: /alliance/leadership/members/
+  kind: navigation
+thumbnail:
+  src: /assets/organisations/zaya/3c3279257b4f-logo.png
+  alt: ZAYA logo
+  width: 1200
+  height: 566
+  fit: contain
 ---
-
-1. Alliance
-2. Members
-3. ZAYA
-{: .source-breadcrumbs }
-
-# ZAYA
-{: id="page-hero-title" .page-hero-title }
-
-We offer security solutions and containerisation for microcontrollers and embedded systems, addressing specific security needs for small and compact devices in markets such as IoT, Secure Elements, and Automotive. Positioned at the cutting edge of…
-{: .page-hero-summary }
-
-![ZAYA logo](/assets/organisations/zaya/3c3279257b4f-logo.png){: .image-left }
-{: .entity-media .entity-media--logo }
-
-Status
-: Member
-
-Membership
-: Full Member
-
-Website
-: [Visit member website](https://www.zayatech.com/)
-{: .entity-facts }
 
 ## Description
 {: id="description" }
@@ -39,6 +34,3 @@ We are currently in the research stage.
 
 ## CHERI Products
 {: id="cheri-products" }
-
-[Back to all members](/alliance/leadership/members/)
-{: .entity-back }

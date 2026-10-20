@@ -5,20 +5,11 @@ where-next:
   url: /build/technology/cheri-and-rust-technical/
 related-pages:
 - url: /discover/understand/cheri-and-existing-software/
-  description: Porting software to CHERI is a process of finding assumptions about pointers, integers, objects, bounds, provenance, lifetimes, and interfaces.
+  description: Porting software to CHERI is a process of finding assumptions about pointers, integers, objects,
+    bounds, provenance, lifetimes, and interfaces.
   action: Read this page
+summary: What needs to change, and what doesn't.
 ---
-
-1. Discover
-2. Understand
-3. Bringing CHERI to your product
-{: .source-breadcrumbs }
-
-# Bringing CHERI to your product
-{: id="page-hero-title" .page-hero-title }
-
-What needs to change, and what doesn't.
-{: .page-hero-summary }
 
 Adopting CHERI does not mean rebuilding the entire technology stack. One of CHERI’s strengths is that different organisations can contribute at different points in the value chain, allowing the benefits of hardware-enforced memory protection and compartmentalisation to flow from silicon vendors to end products.
 
@@ -96,39 +87,3 @@ This flexibility allows CHERI adoption to follow existing product roadmaps and i
 Bringing CHERI to a product is not a single activity performed by a single organisation. It is a value-chain effort that starts with CHERI-enabled hardware and continues through platforms, operating systems, software, and product integration.
 
 The good news is that every participant except processor designers can adopt CHERI incrementally. As support spreads through the ecosystem, organisations gain access to hardware-enforced memory protection and fine-grained compartmentalisation while continuing to build on existing technologies and software investments.
-
-## Where next
-{: .where-next-title }
-
-### [CHERI and Rust - Technical Overview](/build/technology/cheri-and-rust-technical/)
-{: .where-next-card-title }
-
-
-
-
-
-[Further technical details to understand why CHERI and Rust are complementary.](/build/technology/cheri-and-rust-technical/)
-{: .where-next-summary }
-
-
-
-[Continue](/build/technology/cheri-and-rust-technical/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [CHERI and Existing Software](/discover/understand/cheri-and-existing-software/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Porting software to CHERI is a process of finding assumptions about pointers, integers, objects, bounds, provenance, lifetimes, and interfaces.](/discover/understand/cheri-and-existing-software/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/understand/cheri-and-existing-software/)
-{: .source-card-label }

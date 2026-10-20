@@ -1,0 +1,6 @@
+{% for section in page.card_sections %}
+<section class="related-block" aria-labelledby="{{ section.id | escape }}"><h2 id="{{ section.id | escape }}">{{ section.title | escape }}</h2>
+{% for group in section.groups %}{% if group.title %}<h3 class="group-title">{{ group.title | escape }}</h3>{% endif %}{% if group.intro %}<div class="content section-intro">{% assign group_intro = group.intro | markdownify %}{% include content-urls.html content=group_intro %}</div>{% endif %}
+{% include listing.html items=group.entries resolve=true heading='h3' label=section.title %}
+{% if group.outro %}<div class="content">{% assign group_outro = group.outro | markdownify %}{% include content-urls.html content=group_outro %}</div>{% endif %}{% endfor %}
+</section>{% endfor %}

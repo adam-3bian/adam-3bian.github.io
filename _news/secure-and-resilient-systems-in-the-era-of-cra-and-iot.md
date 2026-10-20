@@ -1,25 +1,19 @@
 ---
 title: Secure and Resilient Systems in the Era of CRA and IoT
 date: '2026-01-06T12:19:11+00:00'
+thumbnail:
+  src: /assets/news/secure-and-resilient-systems-in-the-era-of-cra-and-iot/c43d0f35792b-hero.png
+  alt: Secure Horizons 2026. Navigating IoT compliance in a global regulatory landscape. Taking place at the IWM
+    Duxford, Cambridge, England on Wednesday 21st January 2026, this is an official IoTSF partner event.
+  width: 1024
+  height: 512
+tags:
+- Events
+- Members
+summary: On 21 January 2026, technology leaders, engineers, security practitioners and compliance specialists will
+  gather at IWM Duxford for [Secure Horizons 2026](https://www.eventbrite.ie/e/secure-horizons-2026-tickets-1976167642616),
+  a one day, in person event hosted by EPS Global.
 ---
-
-1. News &amp; Events
-2. News &amp; Analysis
-3. Secure and Resilient Systems in the Era of CRA and IoT
-{: .source-breadcrumbs }
-
-# Secure and Resilient Systems in the Era of CRA and IoT
-{: id="page-hero-title" .page-hero-title }
-
-*6 January 2026*{: .source-date }
-*Events*{: .collection-tag }
-*Members*{: .collection-tag }
-{: .collection-detail__metadata }
-
-![Secure Horizons 2026. Navigating IoT compliance in a global regulatory landscape. Taking place at the IWM Duxford, Cambridge, England on Wednesday 21st January 2026, this is an official IoTSF partner event.](/assets/news/secure-and-resilient-systems-in-the-era-of-cra-and-iot/c43d0f35792b-hero.png){: .image-full }
-{: .collection-detail__lead-image }
-
-On 21 January 2026, technology leaders, engineers, security practitioners and compliance specialists will gather at IWM Duxford for [Secure Horizons 2026](https://www.eventbrite.ie/e/secure-horizons-2026-tickets-1976167642616), a one day, in person event hosted by EPS Global.
 
 Set against the powerful backdrop of a former Second World War airfield, Secure Horizons 2026 explores a challenge that feels increasingly urgent across every sector: how do we build digital systems that are not only compliant, but genuinely secure and resilient, in a rapidly evolving global regulatory landscape?
 

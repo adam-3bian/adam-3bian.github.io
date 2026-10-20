@@ -5,8 +5,7 @@ listing:
   collection: groups
 layout: list
 parent: /alliance/
+directory: true
 ---
-
-# Working groups
 
 Explore the Alliance working groups and their published activities.

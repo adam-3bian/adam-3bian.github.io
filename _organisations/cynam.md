@@ -1,31 +1,26 @@
 ---
 title: CyNam
 member: true
+summary: CyNam is Cheltenham’s hub for cyber security and technology – connecting diverse minds to enable secure
+  innovation and growth. We are the DSIT and UKC3 recognised cyber cluster for Cheltenham and Gloucestershire. CyNam
+  is a network that connects…
+membership_category: Community Member
+membership_status: Founding member
+links:
+- label: Visit member website
+  url: https://cynam.org/
+  kind: website
+  primary: true
+- label: Back to all members
+  url: /alliance/leadership/members/
+  kind: navigation
+thumbnail:
+  src: /assets/organisations/cynam/6cc6da1b4ad7-logo.png
+  alt: CyNam logo
+  width: 1200
+  height: 295
+  fit: contain
 ---
-
-1. Alliance
-2. Members
-3. CyNam
-{: .source-breadcrumbs }
-
-# CyNam
-{: id="page-hero-title" .page-hero-title }
-
-CyNam is Cheltenham’s hub for cyber security and technology – connecting diverse minds to enable secure innovation and growth. We are the DSIT and UKC3 recognised cyber cluster for Cheltenham and Gloucestershire. CyNam is a network that connects…
-{: .page-hero-summary }
-
-![CyNam logo](/assets/organisations/cynam/6cc6da1b4ad7-logo.png){: .image-left }
-{: .entity-media .entity-media--logo }
-
-Status
-: Founding member
-
-Membership
-: Community Member
-
-Website
-: [Visit member website](https://cynam.org/)
-{: .entity-facts }
 
 ## Description
 {: id="description" }
@@ -36,6 +31,3 @@ CyNam is Cheltenham’s hub for cyber security and technology – connecting div
 {: id="cheri-activities" }
 
 Supporting with connectivity into Cheltenham’s cyber security ecosystem.
-
-[Back to all members](/alliance/leadership/members/)
-{: .entity-back }

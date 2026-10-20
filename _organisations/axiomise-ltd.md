@@ -1,31 +1,26 @@
 ---
 title: Axiomise Ltd
 member: true
+summary: At Axiomise, our vision is to make formal normal, and for the last seven years, we have been doing just
+  that! We have pioneered the adoption of formal verification in the semiconductor industry since 2017. Led by our
+  visionary CEO, Dr. Ashish…
+membership_category: Full Member
+membership_status: Member
+links:
+- label: Visit member website
+  url: https://www.axiomise.com/
+  kind: website
+  primary: true
+- label: Back to all members
+  url: /alliance/leadership/members/
+  kind: navigation
+thumbnail:
+  src: /assets/organisations/axiomise-ltd/fda655ce8b21-logo.png
+  alt: Axiomise logo
+  width: 600
+  height: 200
+  fit: contain
 ---
-
-1. Alliance
-2. Members
-3. Axiomise Ltd
-{: .source-breadcrumbs }
-
-# Axiomise Ltd
-{: id="page-hero-title" .page-hero-title }
-
-At Axiomise, our vision is to make formal normal, and for the last seven years, we have been doing just that! We have pioneered the adoption of formal verification in the semiconductor industry since 2017. Led by our visionary CEO, Dr. Ashish…
-{: .page-hero-summary }
-
-![Axiomise logo](/assets/organisations/axiomise-ltd/fda655ce8b21-logo.png){: .image-left }
-{: .entity-media .entity-media--logo }
-
-Status
-: Member
-
-Membership
-: Full Member
-
-Website
-: [Visit member website](https://www.axiomise.com/)
-{: .entity-facts }
 
 ## Description
 {: id="description" }
@@ -41,6 +36,3 @@ The Axiomise formalISA automated app is helping with CHERIOT-IBEX formal verific
 {: id="cheri-products" }
 
 > [formalISA app](https://www.axiomise.com/riscv-formal-app/)
-
-[Back to all members](/alliance/leadership/members/)
-{: .entity-back }

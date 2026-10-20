@@ -3,10 +3,7 @@ title: Cross compilation and execution
 permalink: /reference/CHERI-seL4-Exercises/introduction/cross-compilation-execution.html
 ---
 
-# [Cross compilation and execution](/reference/CHERI-seL4-Exercises/introduction/cross-compilation-execution.html#cross-compilation-and-execution)
-{: id="cross-compilation-and-execution" }
-
-### [Building a cross build environment with cheribuild](/reference/CHERI-seL4-Exercises/introduction/cross-compilation-execution.html#building-a-cross-build-environment-with-cheribuild)
+## [Building a cross build environment with cheribuild](/reference/CHERI-seL4-Exercises/introduction/cross-compilation-execution.html#building-a-cross-build-environment-with-cheribuild)
 {: id="building-a-cross-build-environment-with-cheribuild" }
 
 First, clone the cheribuild repo:

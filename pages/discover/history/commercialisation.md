@@ -10,18 +10,9 @@ related-pages:
 - url: /discover/history/risc-v-and-embedded-development/
   description: An overview of CHERI work for RISC-V and embedded systems.
   action: Read this page
+summary: CHERI commercialisation turns architecture and open-source evidence into licensable processors, silicon,
+  tools, platforms, services, and certified products.
 ---
-
-1. Discover
-2. History
-3. Commercialisation
-{: .source-breadcrumbs }
-
-# Commercialisation
-{: id="page-hero-title" .page-hero-title }
-
-CHERI commercialisation turns architecture and open-source evidence into licensable processors, silicon, tools, platforms, services, and certified products.
-{: .page-hero-summary }
 
 A secure architecture cannot improve deployed systems until organisations can buy, license, integrate, support, and assure it. That transition needs more than working processor prototypes. It needs stable specifications, product roadmaps, toolchains, operating systems, developer skills, supply chains, and evidence that customers can evaluate.
 
@@ -92,58 +83,3 @@ These questions are normal signs of an emerging technology market becoming an en
 Commercialisation changes the centre of gravity. Universities and public programmes remain important sources of architecture, evidence, and open-source work, but products depend on suppliers, integrators, software communities, customers, and standards organisations.
 
 The formation of the CHERI Alliance gave that wider group a neutral place to coordinate adoption, certification, technical alignment, and ecosystem development.
-
-## Where next
-{: .where-next-title }
-
-### [Formation of the CHERI Alliance](/discover/history/formation-of-the-cheri-alliance/)
-{: .where-next-card-title }
-
-
-
-
-
-[Background on why the CHERI Alliance was formed and the role it plays in the ecosystem.](/discover/history/formation-of-the-cheri-alliance/)
-{: .where-next-summary }
-
-
-
-[Continue](/discover/history/formation-of-the-cheri-alliance/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Early Capability Systems](/discover/history/early-capability-systems/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A short account of early capability-based computer systems and the ideas that influenced later work.](/discover/history/early-capability-systems/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/history/early-capability-systems/)
-{: .source-card-label }
-
-
-
-
-
-### [RISC-V and Embedded Development](/discover/history/risc-v-and-embedded-development/)
-{: .related-pages-item-title }
-
-
-
-
-
-[An overview of CHERI work for RISC-V and embedded systems.](/discover/history/risc-v-and-embedded-development/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/history/risc-v-and-embedded-development/)
-{: .source-card-label }

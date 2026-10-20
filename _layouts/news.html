@@ -3,8 +3,4 @@ layout: page
 ---
 {{ content }}
 {% include chronological-items.html items=site.news kind='news' %}
-{% assign directory_heading = 'h2' %}
-{% if content contains '<h2' %}{% assign directory_heading = 'h3' %}{% endif %}
-<section class="index-list" aria-label="{{ page.title | escape }}" data-collection-index>
-  {% include listing.html items=chronological_items kind='news' label=page.title heading=directory_heading action='Read article' columns=page.listing.columns %}
-</section>
+{% include directory.html items=chronological_items kind='news' %}

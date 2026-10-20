@@ -3,9 +3,6 @@ title: Answers - Explore Subobject Bounds
 permalink: /reference/CHERI-seL4-Exercises/exercises/subobject-bounds/answers.html
 ---
 
-# [Answers - Explore Subobject Bounds](/reference/CHERI-seL4-Exercises/exercises/subobject-bounds/answers.html#answers---explore-subobject-bounds)
-{: id="answers---explore-subobject-bounds" }
-
 ## [Exercise a subobject buffer overflow](/reference/CHERI-seL4-Exercises/exercises/subobject-bounds/answers.html#exercise-a-subobject-buffer-overflow)
 {: id="exercise-a-subobject-buffer-overflow" }
 

@@ -4,24 +4,16 @@ where-next:
   url: /guides/downloads/
 related-pages:
 - url: /guides/port-existing-software/
-  description: Porting software to CHERI is a process of finding assumptions about pointers, integers, objects, bounds, provenance, lifetimes, and interfaces.
+  description: Porting software to CHERI is a process of finding assumptions about pointers, integers, objects,
+    bounds, provenance, lifetimes, and interfaces.
   action: Read this page
 - url: /guides/choose-a-platform/
   title: Choose a Platform
   description: Choose a platform, prepare an environment and run a first CHERI workload.
   action: Read this page
+summary: Learn CHERI step by step, from your first build to porting and compartmentalisation.
+topic: Training
 ---
-
-1. Build
-2. Developers
-3. Tutorials &amp; Training
-{: .source-breadcrumbs }
-
-# Tutorials &amp; Training
-{: id="page-hero-title" .page-hero-title }
-
-Learn CHERI step by step, from your first build to porting and compartmentalisation.
-{: .page-hero-summary }
 
 CHERI spans hardware, compilers, operating systems and software architecture. You do not need to learn everything at once. Start with one platform, get a working environment, and introduce new concepts as you need them.
 
@@ -126,59 +118,3 @@ A tutorial demonstrates how CHERI mechanisms work. Product assurance requires de
 CHERI platforms and toolchains continue to evolve, so use documentation that matches the platform and software version you are working with.
 
 When using older tutorials or conference material, check that the architecture (Morello, CHERI-RISC-V, or CHERIoT), toolchain and commands still match your environment.
-
-
-## Where next
-{: .where-next-title }
-
-### [Downloads](/guides/downloads/)
-{: .where-next-card-title }
-
-
-
-
-
-[Find maintained source code, development kits, simulators, operating systems, documentation, and examples for the selected platform.](/guides/downloads/)
-{: .where-next-summary }
-
-
-
-[Continue](/guides/downloads/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Port Existing Software](/guides/port-existing-software/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Porting software to CHERI is a process of finding assumptions about pointers, integers, objects, bounds, provenance, lifetimes, and interfaces.](/guides/port-existing-software/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/guides/port-existing-software/)
-{: .source-card-label }
-
-
-
-
-
-### [Choose a Platform](/guides/choose-a-platform/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Choose a platform, prepare an environment and run a first CHERI workload.](/guides/choose-a-platform/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/guides/choose-a-platform/)
-{: .source-card-label }

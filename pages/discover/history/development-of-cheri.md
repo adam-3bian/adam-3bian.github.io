@@ -10,18 +10,9 @@ related-pages:
 - url: /discover/history/cambridge-and-sri/
   description: Background on the Cambridge and SRI research collaboration that helped establish CHERI.
   action: Read this page
+summary: CHERI developed through repeated hardware and software prototypes, moving from a clean-slate security question
+  to multiple working ecosystems.
 ---
-
-1. Discover
-2. History
-3. Development of CHERI
-{: .source-breadcrumbs }
-
-# Development of CHERI
-{: id="page-hero-title" .page-hero-title }
-
-CHERI developed through repeated hardware and software prototypes, moving from a clean-slate security question to multiple working ecosystems.
-{: .page-hero-summary }
 
 An architecture cannot improve real software security if it exists only on paper. It needs processor implementations, compilers that understand the pointer model, operating systems that preserve authority, applications that expose compatibility problems, and evidence that the whole stack behaves as intended.
 
@@ -87,58 +78,3 @@ CHERI’s development is best understood as a sequence of working systems, not a
 - commercial implementations and product assessment
 
 Current work focuses on standards, support in mainline software projects, product deployment, assurance, and the next generation of CHERI-enabled systems.
-
-## Where next
-{: .where-next-title }
-
-### [DARPA Programmes](/discover/history/darpa-programmes/)
-{: .where-next-card-title }
-
-
-
-
-
-[An overview of DARPA programmes that supported CHERI research and related secure hardware work.](/discover/history/darpa-programmes/)
-{: .where-next-summary }
-
-
-
-[Continue](/discover/history/darpa-programmes/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Early Capability Systems](/discover/history/early-capability-systems/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A short account of early capability-based computer systems and the ideas that influenced later work.](/discover/history/early-capability-systems/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/history/early-capability-systems/)
-{: .source-card-label }
-
-
-
-
-
-### [Cambridge and SRI](/discover/history/cambridge-and-sri/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Background on the Cambridge and SRI research collaboration that helped establish CHERI.](/discover/history/cambridge-and-sri/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/history/cambridge-and-sri/)
-{: .source-card-label }

@@ -14,18 +14,9 @@ related-pages:
   title: Choose a Platform
   description: Compare platforms that provide Linux, CheriBSD, embedded runtimes, or simulation environments.
   action: Read this page
+summary: Bring CHERI hardware-enforced protection to Linux-based systems and applications.
+software_type: Operating system
 ---
-
-1. Build
-2. Software Ecosystem
-3. CHERI Linux
-{: .source-breadcrumbs }
-
-# CHERI Linux
-{: id="page-hero-title" .page-hero-title }
-
-Bring CHERI hardware-enforced protection to Linux-based systems and applications.
-{: .page-hero-summary }
 
 **Linux** is at the heart of many products, platforms and services. CHERI Linux is the effort to extend CHERI support through the Linux software stack, allowing existing Linux environments to take advantage of capability-based memory protection.
 
@@ -77,7 +68,7 @@ A CHERI Linux development environment can bring together:
 The exact environment depends on the processor architecture and implementation. Processor suppliers may also provide an integrated SDK containing compatible versions of these components.
 
 ## CHERI-RISC-V and other platforms
-{: id="development-environments" }
+{: id="development-environments-2" }
 
 CHERI Linux development includes work targeting CHERI-RISC-V, alongside experience gained from earlier Linux development for Morello.
 
@@ -120,77 +111,3 @@ CHERI Linux is therefore particularly important for bringing CHERI into the larg
 - [CHERI Linux project documentation](https://cheri-linux.org/)
 - [CHERI Alliance repositories](https://github.com/CHERI-Alliance)
 - [CHERI Linux Working Group](/groups/cheri-linux-working-group/)
-
-## Where next
-{: .where-next-title }
-
-### [CHERI Zephyr](/software/cheri-zephyr/)
-{: .where-next-card-title }
-
-
-
-
-
-[Zephyr brings CHERI work into a widely used embedded operating-system ecosystem.](/software/cheri-zephyr/)
-{: .where-next-summary }
-
-
-
-[Continue](/software/cheri-zephyr/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [CheriBSD](/software/cheribsd/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A mature full-system environment for application-class CHERI research and software ports.](/software/cheribsd/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/software/cheribsd/)
-{: .source-card-label }
-
-
-
-
-
-### [CHERI Linux Working Group](/groups/cheri-linux-working-group/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Alliance collaboration around the roadmap, interfaces, and contribution routes for Linux support.](/groups/cheri-linux-working-group/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/groups/cheri-linux-working-group/)
-{: .source-card-label }
-
-
-
-
-
-### [Choose a Platform](/guides/choose-a-platform/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Compare platforms that provide Linux, CheriBSD, embedded runtimes, or simulation environments.](/guides/choose-a-platform/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/guides/choose-a-platform/)
-{: .source-card-label }

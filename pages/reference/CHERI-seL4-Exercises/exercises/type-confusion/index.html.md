@@ -3,9 +3,6 @@ title: Exercise integer-pointer type confusion bug
 permalink: /reference/CHERI-seL4-Exercises/exercises/type-confusion/index.html
 ---
 
-# [Exercise integer-pointer type confusion bug](/reference/CHERI-seL4-Exercises/exercises/type-confusion/index.html#exercise-integer-pointer-type-confusion-bug)
-{: id="exercise-integer-pointer-type-confusion-bug" }
-
 This exercise demonstrates how CHERI distinguishes between integer and pointer
 types, preventing certain types of type confusion.
 In this example, a union allows an integer value to be used as a pointer,

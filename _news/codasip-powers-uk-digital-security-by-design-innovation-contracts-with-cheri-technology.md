@@ -1,33 +1,27 @@
 ---
 title: Codasip Powers UK Digital Security by Design Innovation Contracts with CHERI Technology
 date: '2025-12-10T10:00:29+00:00'
-authors: [andrew-lindsay]
+authors:
+- andrew-lindsay
+thumbnail:
+  src: /assets/shared/source-assets/5a6300ace656-cheri.png
+  alt: Codasip Powers UK Digital Security by Design Innovation Contracts with CHERI Technology
+  width: 916
+  height: 336
+tags:
+- CHERI Alliance news
+- Ecosystem
+- Members
+summary: The UK government’s ambitious Digital Security by Design initiative continues to gain momentum, with [Codasip](/organisations/codasip/)
+  playing a pivotal role in two key innovation contracts [announced as part of the program’s £21 million investment
+  to advance hardware-based cybersecurity technology](/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software/).
 ---
-
-1. News &amp; Events
-2. News &amp; Analysis
-3. Codasip Powers UK Digital Security by Design Innovation Contracts with CHERI Technology
-{: .source-breadcrumbs }
-
-# Codasip Powers UK Digital Security by Design Innovation Contracts with CHERI Technology
-{: id="page-hero-title" .page-hero-title }
-
-*10 December 2025*{: .source-date }
-*CHERI Alliance news*{: .collection-tag }
-*Ecosystem*{: .collection-tag }
-*Members*{: .collection-tag }
-{: .collection-detail__metadata }
-
-![Codasip Powers UK Digital Security by Design Innovation Contracts with CHERI Technology](/assets/shared/source-assets/5a6300ace656-cheri.png){: .image-full }
-{: .collection-detail__lead-image }
 
 Andrew Lindsay –
 
 [Codasip](/organisations/codasip/)
 
 **Codasip’s CHERI-RISC-V processors and exploration kit enable breakthrough secure chip development and accelerate software innovation**
-
-The UK government’s ambitious Digital Security by Design initiative continues to gain momentum, with [Codasip](/organisations/codasip/) playing a pivotal role in two key innovation contracts [announced as part of the program’s £21 million investment to advance hardware-based cybersecurity technology](/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software/).
 
 ## EnSilica Partnership Delivers Quantum-Resilient Security Chip
 {: id="ensilica-partnership-delivers-quantum-resilient-security-chip" }

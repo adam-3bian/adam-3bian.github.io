@@ -1,31 +1,24 @@
 ---
 title: King Abdullah University of Science and Technology (KAUST)
 member: true
+summary: Details to follow.
+membership_category: Full Member
+membership_status: Member
+links:
+- label: Visit member website
+  url: https://www.kaust.edu.sa/en/
+  kind: website
+  primary: true
+- label: Back to all members
+  url: /alliance/leadership/members/
+  kind: navigation
+thumbnail:
+  src: /assets/organisations/king-abdullah-university-of-science-and-technology-kaust/abe2e5b29c7b-logo.png
+  alt: KAUST logo
+  width: 2000
+  height: 395
+  fit: contain
 ---
-
-1. Alliance
-2. Members
-3. King Abdullah University of Science and Technology (KAUST)
-{: .source-breadcrumbs }
-
-# King Abdullah University of Science and Technology (KAUST)
-{: id="page-hero-title" .page-hero-title }
-
-Details to follow.
-{: .page-hero-summary }
-
-![KAUST logo](/assets/organisations/king-abdullah-university-of-science-and-technology-kaust/abe2e5b29c7b-logo.png){: .image-left }
-{: .entity-media .entity-media--logo }
-
-Status
-: Member
-
-Membership
-: Full Member
-
-Website
-: [Visit member website](https://www.kaust.edu.sa/en/)
-{: .entity-facts }
 
 ## Description
 {: id="description" }
@@ -36,6 +29,3 @@ Details to follow.
 {: id="cheri-activities" }
 
 Details to follow
-
-[Back to all members](/alliance/leadership/members/)
-{: .entity-back }

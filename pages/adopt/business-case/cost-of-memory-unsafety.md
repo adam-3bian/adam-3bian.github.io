@@ -11,18 +11,8 @@ related-pages:
 - url: /events/webinar-cheri-cra-compliance/
   title: Webinar - CHERI & CRA Compliance
   action: Watch the webinar
+summary: Reduce Risk. Protect Investment. Build Trust.
 ---
-
-1. Adopt
-2. Business Case
-3. The Cost of Memory Unsafety
-{: .source-breadcrumbs }
-
-# The Cost of Memory Unsafety
-{: id="page-hero-title" .page-hero-title }
-
-Reduce Risk. Protect Investment. Build Trust.
-{: .page-hero-summary }
 
 From emergency patches and delayed releases to service disruption and loss of trust, memory-unsafe software can affect organisations long after a product ships.
 
@@ -90,39 +80,3 @@ By helping organisations detect faults earlier, contain compromises, and protect
 - simplify long-term support
 - maintain customer trust
 - focus resources on innovation rather than emergency response
-
-## Where next
-{: .where-next-title }
-
-### [Adoption Costs &amp; Migration](/adopt/business-case/adoption-costs-and-migration/)
-{: .where-next-card-title }
-
-
-
-
-
-[CHERI can protect selected software without requiring every component to be replaced at once.](/adopt/business-case/adoption-costs-and-migration/)
-{: .where-next-summary }
-
-
-
-[Continue](/adopt/business-case/adoption-costs-and-migration/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [The Business Case](/adopt/business-case/the-business-case/)
-{: .related-pages-item-title }
-
-
-
-
-
-[CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.](/adopt/business-case/the-business-case/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/adopt/business-case/the-business-case/)
-{: .source-card-label }

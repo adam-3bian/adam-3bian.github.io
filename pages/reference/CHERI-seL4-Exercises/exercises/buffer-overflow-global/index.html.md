@@ -3,9 +3,6 @@ title: Exercise an inter-global-object buffer overflow
 permalink: /reference/CHERI-seL4-Exercises/exercises/buffer-overflow-global/index.html
 ---
 
-# [Exercise an inter-global-object buffer overflow](/reference/CHERI-seL4-Exercises/exercises/buffer-overflow-global/index.html#exercise-an-inter-global-object-buffer-overflow)
-{: id="exercise-an-inter-global-object-buffer-overflow" }
-
 This exercise demonstrates an inter-object buffer overflow on baseline and
 CHERI-enabled architectures, and asks you to characterize and fix the bug
 detected by CHERI bounds enforcement. It also asks you to use GDB for

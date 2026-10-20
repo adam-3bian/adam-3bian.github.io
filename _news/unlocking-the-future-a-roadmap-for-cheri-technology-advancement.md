@@ -1,27 +1,21 @@
 ---
 title: 'Unlocking the Future: A Roadmap for CHERI Technology Advancement'
 date: '2025-05-27T10:16:10+01:00'
-authors: [mike-eftimakis]
+authors:
+- mike-eftimakis
+thumbnail:
+  src: /assets/news/unlocking-the-future-a-roadmap-for-cheri-technology-advancement/9e54b16eecb6-hero.png
+  alt: World map with binary code
+  width: 1024
+  height: 576
+tags:
+- CHERI Alliance news
+author_credit: Mike Eftimakis – ***CHERI Alliance***
+summary: In the rapidly evolving landscape of cybersecurity, the quest for robust and secure hardware foundations
+  has never been more critical.
 ---
 
-1. News &amp; Events
-2. News &amp; Analysis
-3. Unlocking the Future: A Roadmap for CHERI Technology Advancement
-{: .source-breadcrumbs }
-
-# Unlocking the Future: A Roadmap for CHERI Technology Advancement
-{: id="page-hero-title" .page-hero-title }
-
-*27 May 2025*{: .source-date }
-*CHERI Alliance news*{: .collection-tag }
-{: .collection-detail__metadata }
-
-![World map with binary code](/assets/news/unlocking-the-future-a-roadmap-for-cheri-technology-advancement/9e54b16eecb6-hero.png){: .image-full }
-{: .collection-detail__lead-image }
-
-Mike Eftimakis – ***CHERI Alliance***
-
-In the rapidly evolving landscape of cybersecurity, the quest for robust and secure hardware foundations has never been more critical. A groundbreaking paper from the Defence Science and Technology Laboratory (DSTL) – [Biting the CHERI bullet: Blockers, Enablers and Security Implications of CHERI in Defence](https://arxiv.org/pdf/2504.17904) –  sheds light on the transformative potential of CHERI (Capability Hardware Enhanced RISC Instructions) technology, offering a beacon of hope for enhancing cyber resilience. The paper described:
+A groundbreaking paper from the Defence Science and Technology Laboratory (DSTL) – [Biting the CHERI bullet: Blockers, Enablers and Security Implications of CHERI in Defence](https://arxiv.org/pdf/2504.17904) –  sheds light on the transformative potential of CHERI (Capability Hardware Enhanced RISC Instructions) technology, offering a beacon of hope for enhancing cyber resilience. The paper described:
 
 - Issues with tools and maturity of development platforms
 - Knowledge premium to adopt CHERI

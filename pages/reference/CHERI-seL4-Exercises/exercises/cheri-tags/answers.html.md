@@ -3,9 +3,6 @@ title: Answers
 permalink: /reference/CHERI-seL4-Exercises/exercises/cheri-tags/answers.html
 ---
 
-# [Answers](/reference/CHERI-seL4-Exercises/exercises/cheri-tags/answers.html#answers)
-{: id="answers" }
-
 2. Example output for the baseline program:
 
    ~~~

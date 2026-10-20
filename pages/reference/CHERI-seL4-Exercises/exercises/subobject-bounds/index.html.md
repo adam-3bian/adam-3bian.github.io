@@ -3,9 +3,6 @@ title: Explore Subobject Bounds
 permalink: /reference/CHERI-seL4-Exercises/exercises/subobject-bounds/index.html
 ---
 
-# [Explore Subobject Bounds](/reference/CHERI-seL4-Exercises/exercises/subobject-bounds/index.html#explore-subobject-bounds)
-{: id="explore-subobject-bounds" }
-
 In the CHERI-Microkit run-time environment, bounds are typically associated with
 memory region and mapped `setvar_vaddr` allocations rather than C types.
 For example, if a memory region allocation is made for 1024 bytes, and the

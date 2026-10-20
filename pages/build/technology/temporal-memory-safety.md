@@ -10,18 +10,9 @@ related-pages:
 - url: /build/technology/spatial-memory-safety/
   description: A program allocates eight bytes and writes sixteen.
   action: Read this page
+summary: Temporal memory safety prevents references from being used after the object they refer to has ceased to
+  exist.
 ---
-
-1. Build
-2. Technology
-3. Temporal Memory Safety
-{: .source-breadcrumbs }
-
-# Temporal Memory Safety
-{: id="page-hero-title" .page-hero-title }
-
-Temporal memory safety prevents references from being used after the object they refer to has ceased to exist.
-{: .page-hero-summary }
 
 An object can be perfectly bounded and still be unsafe to access. If a program frees the object but retains a copy of its capability, that capability has become stale. Using it later is a **use-after-free** error.
 
@@ -162,59 +153,3 @@ Temporal memory safety does not by itself prevent:
 CHERI capabilities provide the authority and metadata needed to build strong temporal-safety mechanisms, but object lifetime is a system-level responsibility.
 
 Bounds tell the processor where a capability may access. Temporal-safety mechanisms determine whether that capability should still be usable at all.
-
-
-## Where next
-{: .where-next-title }
-
-### [Compartmentalisation](/build/technology/compartmentalisation/)
-{: .where-next-card-title }
-
-
-
-
-
-[A media application may include millions of lines of code, dozens of libraries, and parsers for hostile input.](/build/technology/compartmentalisation/)
-{: .where-next-summary }
-
-
-
-[Continue](/build/technology/compartmentalisation/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Capabilities](/build/technology/capabilities/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A pointer bug becomes dangerous when changing a number changes authority.](/build/technology/capabilities/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/build/technology/capabilities/)
-{: .source-card-label }
-
-
-
-
-
-### [Spatial Memory Safety](/build/technology/spatial-memory-safety/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A program allocates eight bytes and writes sixteen.](/build/technology/spatial-memory-safety/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/build/technology/spatial-memory-safety/)
-{: .source-card-label }

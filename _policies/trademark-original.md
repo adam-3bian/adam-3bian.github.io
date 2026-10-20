@@ -1,10 +1,12 @@
 ---
 title: Using the CHERI Alliance Trademark
 alternate: true
+links:
+- label: Download PDF
+  url: /assets/shared/source-assets/d904a00cfb15-trademark-policy.pdf
+  kind: document
+  primary: true
 ---
-
-# Using the CHERI Alliance Trademark
-
 
 CHERI® is an open technology, but there are conditions to use the CHERI brand, please check the policy, and conform to the guidelines on this page.
 

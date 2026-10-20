@@ -3,18 +3,9 @@ title: Early Capability Systems
 permalink: /discover/history/early-capability-systems/
 where-next:
   url: /discover/history/cambridge-and-sri/
+summary: Long before CHERI, capability systems explored how computers could grant precise authority instead of trusting
+  every address equally.
 ---
-
-1. Discover
-2. History
-3. Early Capability Systems
-{: .source-breadcrumbs }
-
-# Early Capability Systems
-{: id="page-hero-title" .page-hero-title }
-
-Long before CHERI, capability systems explored how computers could grant precise authority instead of trusting every address equally.
-{: .page-hero-summary }
 
 How should a computer decide whether a program may read a file, change a device, or call a service? Conventional systems often answer with a combination of user identity, page tables, and checks made by privileged software. Capability systems developed a different idea: give a program an unforgeable reference that both identifies a resource and carries the authority to use it.
 
@@ -69,21 +60,3 @@ CHERI is not a direct copy of any one early machine. It draws on the capability 
 {: id="why-this-history-matters" }
 
 Capability security has a long record of implementation and analysis. CHERI’s contribution is to translate those protection ideas into an architecture designed for current hardware-software ecosystems. Understanding the earlier systems makes the design objective clearer: preserve the authority carried by a reference without giving up the software and performance models on which modern computing depends.
-
-## Where next
-{: .where-next-title }
-
-### [Cambridge and SRI](/discover/history/cambridge-and-sri/)
-{: .where-next-card-title }
-
-
-
-
-
-[Background on the Cambridge and SRI research collaboration that helped establish CHERI.](/discover/history/cambridge-and-sri/)
-{: .where-next-summary }
-
-
-
-[Continue](/discover/history/cambridge-and-sri/)
-{: .source-card-label }

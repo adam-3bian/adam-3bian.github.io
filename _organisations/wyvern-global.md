@@ -1,31 +1,26 @@
 ---
 title: Wyvern Global
 member: true
+summary: Wyvern Global Semiconductors is leading the way in memory-secure System on Chips (SoCs) with our Wyvern
+  Advanced RISC-V Processor, known as WARP. We are dedicated to providing the first commercially available SoCs
+  in the world that are CHERI-native…
+membership_category: Full Member
+membership_status: Member
+links:
+- label: Visit member website
+  url: https://wyvern.global/
+  kind: website
+  primary: true
+- label: Back to all members
+  url: /alliance/leadership/members/
+  kind: navigation
+thumbnail:
+  src: /assets/organisations/wyvern-global/795076e4b546-logo.png
+  alt: Wyvern Global logo
+  width: 1200
+  height: 900
+  fit: contain
 ---
-
-1. Alliance
-2. Members
-3. Wyvern Global
-{: .source-breadcrumbs }
-
-# Wyvern Global
-{: id="page-hero-title" .page-hero-title }
-
-Wyvern Global Semiconductors is leading the way in memory-secure System on Chips (SoCs) with our Wyvern Advanced RISC-V Processor, known as WARP. We are dedicated to providing the first commercially available SoCs in the world that are CHERI-native…
-{: .page-hero-summary }
-
-![Wyvern Global logo](/assets/organisations/wyvern-global/795076e4b546-logo.png){: .image-left }
-{: .entity-media .entity-media--logo }
-
-Status
-: Member
-
-Membership
-: Full Member
-
-Website
-: [Visit member website](https://wyvern.global/)
-{: .entity-facts }
 
 ## Description
 {: id="description" }
@@ -46,6 +41,3 @@ Additionally, we are in the process of our Series A funding round, aiming to rai
 Our WARP architecture and toolchain will be available for modification and use, serving as a launchpad for designing custom OEM devices that integrate CHERI into their core systems. This includes everything from ECUs to mobile devices, as well as AI clusters and edge computing solutions. We will offer MPW access to procure these OEM versions of our WARP SoCs for a practicable cost, and walk our clients through the MPW process.
 
 Our WARP 2532 System-on-Chips (SoCs) will provide a quick, general-purpose BSD-based solution for partner developer boards and small-scale industrial applications, creating an attractive entry point into the WARP ecosystem.
-
-[Back to all members](/alliance/leadership/members/)
-{: .entity-back }

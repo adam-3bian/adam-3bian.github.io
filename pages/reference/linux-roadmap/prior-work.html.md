@@ -3,9 +3,6 @@ title: Prior work on Linux adaptation
 permalink: /reference/linux-roadmap/prior-work.html
 ---
 
-# [Prior work on Linux adaptation](/reference/linux-roadmap/prior-work.html#prior-work-on-linux-adaptation)
-{: id="prior-work-on-linux-adaptation" }
-
 Morello Linux contains a hybrid Linux kernel (not purecap) which supports running and building simple user space applications in purecap mode using a new CHERI-aware ABI called PCuABI. Two software stacks are supported; BusyBox and Debian. However, Debian still runs in vanilla AArch64 mode, but new simple programs can be built in purecap mode:
 
 - ARM, *Morello Linux*, [https://www.morello-project.org/](https://www.morello-project.org/)

@@ -3,9 +3,6 @@ title: Using the CHERI Alliance Trademark
 permalink: /trademark/
 ---
 
-# Using the CHERI Alliance Trademark
-
-
 CHERI® is an open technology, but there are conditions to use the CHERI brand, please check the policy, and conform to the guidelines on this page.
 
 

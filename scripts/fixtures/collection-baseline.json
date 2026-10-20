@@ -1,0 +1,1687 @@
+{
+  "_people/a-theodore-markettos.md": {
+    "collection": "people",
+    "title": "A. Theodore Markettos"
+  },
+  "_people/adam-finney.md": {
+    "collection": "people",
+    "title": "Adam Finney",
+    "organization": "cheri-alliance"
+  },
+  "_people/alastair-beresford.md": {
+    "collection": "people",
+    "title": "Alastair Beresford",
+    "organization": "university-of-cambridge"
+  },
+  "_people/alex-rebert.md": {
+    "collection": "people",
+    "title": "Alex Rebert",
+    "organization": "google"
+  },
+  "_people/alex-richardson.md": {
+    "collection": "people",
+    "title": "Alex Richardson",
+    "organization": "google"
+  },
+  "_people/alexander-voyevoda.md": {
+    "collection": "people",
+    "title": "Alexander Voyevoda",
+    "organization": "um-labs"
+  },
+  "_people/alexandre-joannou.md": {
+    "collection": "people",
+    "title": "Alexandre Joannou"
+  },
+  "_people/alfredo-mazzinghi.md": {
+    "collection": "people",
+    "title": "Alfredo Mazzinghi",
+    "organization": "capabilities-limited"
+  },
+  "_people/allison-randal.md": {
+    "collection": "people",
+    "title": "Allison Randal",
+    "organization": "capabilities-limited"
+  },
+  "_people/andrew-lindsay.md": {
+    "collection": "people",
+    "title": "Andrew Lindsay",
+    "organization": "codasip"
+  },
+  "_people/andrew-murray.md": {
+    "collection": "people",
+    "title": "Andrew Murray",
+    "organization": "the-good-penguin"
+  },
+  "_people/andy-moore.md": {
+    "collection": "people",
+    "title": "Andy Moore",
+    "organization": "risc-v-international"
+  },
+  "_people/anthony-fox.md": {
+    "collection": "people",
+    "title": "Anthony Fox"
+  },
+  "_people/ashish-darbari.md": {
+    "collection": "people",
+    "title": "Ashish Darbari",
+    "organization": "axiomise-ltd"
+  },
+  "_people/ben-fletcher.md": {
+    "collection": "people",
+    "title": "Ben Fletcher",
+    "organization": "codasip"
+  },
+  "_people/ben-laurie.md": {
+    "collection": "people",
+    "title": "Ben Laurie"
+  },
+  "_people/bradley-finn.md": {
+    "collection": "people",
+    "title": "Bradley Finn",
+    "organization": "dsit"
+  },
+  "_people/brett-f-gutstein.md": {
+    "collection": "people",
+    "title": "Brett F. Gutstein"
+  },
+  "_people/brian-campbell.md": {
+    "collection": "people",
+    "title": "Brian Campbell"
+  },
+  "_people/brooks-davis.md": {
+    "collection": "people",
+    "title": "Brooks Davis"
+  },
+  "_people/carl-shaw.md": {
+    "collection": "people",
+    "title": "Carl Shaw",
+    "organization": "codasip"
+  },
+  "_people/dave-harcourt.md": {
+    "collection": "people",
+    "title": "Dave Harcourt",
+    "organization": "bt-group"
+  },
+  "_people/david-chisnall.md": {
+    "collection": "people",
+    "title": "David Chisnall",
+    "organization": "sci-semiconductor"
+  },
+  "_people/david-musliner.md": {
+    "collection": "people",
+    "title": "David Musliner",
+    "organization": "smart-information-flow-technologies-sift"
+  },
+  "_people/dmitriy-yeliseyev.md": {
+    "collection": "people",
+    "title": "Dmitriy Yeliseyev",
+    "organization": "wind-river"
+  },
+  "_people/domagoj-stolfa.md": {
+    "collection": "people",
+    "title": "Domagoj Stolfa",
+    "organization": [
+      "capabilities-limited",
+      "university-of-cambridge"
+    ]
+  },
+  "_people/donato-ferraro.md": {
+    "collection": "people",
+    "title": "Donato Ferraro",
+    "organization": [
+      "minerva-systems",
+      "university-of-modena-and-reggio-emilia"
+    ]
+  },
+  "_people/edoardo-marangoni.md": {
+    "collection": "people",
+    "title": "Edoardo Marangoni",
+    "organization": "sci-semiconductor"
+  },
+  "_people/edward-tomasz-napieraa.md": {
+    "collection": "people",
+    "title": "Edward Tomasz Napierała"
+  },
+  "_people/gavin-ferris.md": {
+    "collection": "people",
+    "title": "Gavin Ferris",
+    "organization": [
+      "cheri-alliance",
+      "lowrisc"
+    ]
+  },
+  "_people/graeme-barnes.md": {
+    "collection": "people",
+    "title": "Graeme Barnes"
+  },
+  "_people/graeme-jenkinson.md": {
+    "collection": "people",
+    "title": "Graeme Jenkinson"
+  },
+  "_people/hamed-okhravi.md": {
+    "collection": "people",
+    "title": "Hamed Okhravi"
+  },
+  "_people/haydn-povey.md": {
+    "collection": "people",
+    "title": "Haydn Povey",
+    "organization": "sci-semiconductor"
+  },
+  "_people/hesham-almatary.md": {
+    "collection": "people",
+    "title": "Hesham Almatary",
+    "organization": "capabilities-limited"
+  },
+  "_people/hongyan-xia.md": {
+    "collection": "people",
+    "title": "Hongyan Xia"
+  },
+  "_people/hugo-lefeuvre.md": {
+    "collection": "people",
+    "title": "Hugo Lefeuvre"
+  },
+  "_people/hugo-vincent.md": {
+    "collection": "people",
+    "title": "Hugo Vincent"
+  },
+  "_people/ian-stark.md": {
+    "collection": "people",
+    "title": "Ian Stark"
+  },
+  "_people/javier-orensanz-martinez.md": {
+    "collection": "people",
+    "title": "Javier Orensanz Martinez",
+    "organization": "lowrisc"
+  },
+  "_people/jennifer-jackson.md": {
+    "collection": "people",
+    "title": "Jennifer Jackson",
+    "organization": "university-of-birmingham"
+  },
+  "_people/jeremy-singer.md": {
+    "collection": "people",
+    "title": "Jeremy Singer",
+    "organization": "university-of-glasgow"
+  },
+  "_people/jessica-clarke.md": {
+    "collection": "people",
+    "title": "Jessica Clarke",
+    "organization": "university-of-cambridge"
+  },
+  "_people/jianyi-cheng.md": {
+    "collection": "people",
+    "title": "Jianyi Cheng",
+    "organization": "university-of-edinburgh"
+  },
+  "_people/jim-wallace.md": {
+    "collection": "people",
+    "title": "Jim Wallace"
+  },
+  "_people/johannes-muller.md": {
+    "collection": "people",
+    "title": "Johannes Müller",
+    "organization": "rptu"
+  },
+  "_people/john-baldwin.md": {
+    "collection": "people",
+    "title": "John Baldwin",
+    "organization": "ararat-river-consulting-llc"
+  },
+  "_people/john-goodacre.md": {
+    "collection": "people",
+    "title": "John Goodacre",
+    "organization": "ukri"
+  },
+  "_people/john-thomson.md": {
+    "collection": "people",
+    "title": "John Thomson",
+    "organization": "lowrisc"
+  },
+  "_people/jonathan-anderson.md": {
+    "collection": "people",
+    "title": "Jonathan Anderson"
+  },
+  "_people/jonathan-woodruff.md": {
+    "collection": "people",
+    "title": "Jonathan Woodruff",
+    "organization": "capabilities-limited"
+  },
+  "_people/joshua-lant.md": {
+    "collection": "people",
+    "title": "Joshua Lant",
+    "organization": "the-university-of-manchester"
+  },
+  "_people/ka-wing-li.md": {
+    "collection": "people",
+    "title": "Ka Wing Li",
+    "organization": "university-of-cambridge"
+  },
+  "_people/kathleen-fisher.md": {
+    "collection": "people",
+    "title": "Kathleen Fisher",
+    "organization": "aria"
+  },
+  "_people/kayvan-memarian.md": {
+    "collection": "people",
+    "title": "Kayvan Memarian"
+  },
+  "_people/kevin-brodsky.md": {
+    "collection": "people",
+    "title": "Kevin Brodsky",
+    "organization": "arm"
+  },
+  "_people/khilan-gudka.md": {
+    "collection": "people",
+    "title": "Khilan Gudka"
+  },
+  "_people/konrad-witaszczyk.md": {
+    "collection": "people",
+    "title": "Konrad Witaszczyk"
+  },
+  "_people/kunyan-liu.md": {
+    "collection": "people",
+    "title": "Kunyan Liu"
+  },
+  "_people/kyndylan-nienhuis.md": {
+    "collection": "people",
+    "title": "Kyndylan Nienhuis"
+  },
+  "_people/laurence-tratt.md": {
+    "collection": "people",
+    "title": "Laurence Tratt"
+  },
+  "_people/louis-emile-ploix.md": {
+    "collection": "people",
+    "title": "Louis-Emile Ploix",
+    "organization": "lowrisc"
+  },
+  "_people/luca-muller.md": {
+    "collection": "people",
+    "title": "Luca Müller",
+    "organization": "german-research-center-for-artificial-intelligence-dfki"
+  },
+  "_people/lucian-paul-trifu.md": {
+    "collection": "people",
+    "title": "Lucian Paul-Trifu"
+  },
+  "_people/maika-fohrenbach.md": {
+    "collection": "people",
+    "title": "Maika Föhrenbach",
+    "organization": "european-commission-dg-connect"
+  },
+  "_people/manu-ravishankar.md": {
+    "collection": "people",
+    "title": "Manu Ravishankar",
+    "organization": "pa-consulting"
+  },
+  "_people/margo-seltzer.md": {
+    "collection": "people",
+    "title": "Margo Seltzer"
+  },
+  "_people/mark-batty.md": {
+    "collection": "people",
+    "title": "Mark Batty",
+    "organization": "university-of-kent"
+  },
+  "_people/mark-hill.md": {
+    "collection": "people",
+    "title": "Mark Hill",
+    "organization": "codasip"
+  },
+  "_people/mark-johnston.md": {
+    "collection": "people",
+    "title": "Mark Johnston"
+  },
+  "_people/marno-van-der-maas.md": {
+    "collection": "people",
+    "title": "Marno van der Maas",
+    "organization": "lowrisc"
+  },
+  "_people/martin-atkins.md": {
+    "collection": "people",
+    "title": "Martin Atkins",
+    "organization": "mission-critical-applications-limited"
+  },
+  "_people/matthew-naylor.md": {
+    "collection": "people",
+    "title": "Matthew Naylor"
+  },
+  "_people/merve-gulmez.md": {
+    "collection": "people",
+    "title": "Merve Gülmez",
+    "organization": "ericsson"
+  },
+  "_people/michael-roe.md": {
+    "collection": "people",
+    "title": "Michael Roe"
+  },
+  "_people/mihai-ordean.md": {
+    "collection": "people",
+    "title": "Mihai Ordean"
+  },
+  "_people/mike-eftimakis.md": {
+    "collection": "people",
+    "title": "Mike Eftimakis",
+    "organization": "cheri-alliance"
+  },
+  "_people/mike-halsall.md": {
+    "collection": "people",
+    "title": "Mike Halsall",
+    "organization": "cheri-alliance"
+  },
+  "_people/munraj-vadera.md": {
+    "collection": "people",
+    "title": "Munraj Vadera"
+  },
+  "_people/murali-vijayaraghavan.md": {
+    "collection": "people",
+    "title": "Murali Vijayaraghavan",
+    "organization": "google"
+  },
+  "_people/murat-cakmak.md": {
+    "collection": "people",
+    "title": "Murat Cakmak",
+    "organization": "microservice-store"
+  },
+  "_people/nathaniel-wesley-filardo.md": {
+    "collection": "people",
+    "title": "Nathaniel Wesley Filardo"
+  },
+  "_people/nirav-dave.md": {
+    "collection": "people",
+    "title": "Nirav Dave"
+  },
+  "_people/ollie-whitehouse.md": {
+    "collection": "people",
+    "title": "Ollie Whitehouse",
+    "organization": "ncsc"
+  },
+  "_people/paul-metzger.md": {
+    "collection": "people",
+    "title": "Paul Metzger",
+    "organization": "university-of-cambridge"
+  },
+  "_people/paul-waller.md": {
+    "collection": "people",
+    "title": "Paul Waller",
+    "organization": "ncsc"
+  },
+  "_people/peter-cox.md": {
+    "collection": "people",
+    "title": "Peter Cox",
+    "organization": "um-labs"
+  },
+  "_people/peter-g-neumann.md": {
+    "collection": "people",
+    "title": "Peter G. Neumann"
+  },
+  "_people/peter-rugg.md": {
+    "collection": "people",
+    "title": "Peter Rugg"
+  },
+  "_people/peter-sewell.md": {
+    "collection": "people",
+    "title": "Peter Sewell"
+  },
+  "_people/phil-day.md": {
+    "collection": "people",
+    "title": "Phil Day",
+    "organization": "configured-things"
+  },
+  "_people/ricardo-almeida.md": {
+    "collection": "people",
+    "title": "Ricardo Almeida"
+  },
+  "_people/richard-grisenthwaite.md": {
+    "collection": "people",
+    "title": "Richard Grisenthwaite"
+  },
+  "_people/robert-m-norton.md": {
+    "collection": "people",
+    "title": "Robert M. Norton"
+  },
+  "_people/robert-norton-wright.md": {
+    "collection": "people",
+    "title": "Robert Norton-Wright"
+  },
+  "_people/robert-watson.md": {
+    "collection": "people",
+    "title": "Robert Watson",
+    "organization": [
+      "cheri-alliance",
+      "university-of-cambridge"
+    ]
+  },
+  "_people/saar-amar.md": {
+    "collection": "people",
+    "title": "Saar Amar"
+  },
+  "_people/sam-ainsworth.md": {
+    "collection": "people",
+    "title": "Sam Ainsworth"
+  },
+  "_people/sam-cater.md": {
+    "collection": "people",
+    "title": "Sam Cater",
+    "organization": "bt-group"
+  },
+  "_people/samuel-stark.md": {
+    "collection": "people",
+    "title": "Samuel Stark",
+    "organization": "university-of-cambridge"
+  },
+  "_people/simon-moore.md": {
+    "collection": "people",
+    "title": "Simon Moore",
+    "organization": "university-of-cambridge"
+  },
+  "_people/stacey-son.md": {
+    "collection": "people",
+    "title": "Stacey Son"
+  },
+  "_people/steven-j-murdoch.md": {
+    "collection": "people",
+    "title": "Steven J. Murdoch"
+  },
+  "_people/tariq-kurd.md": {
+    "collection": "people",
+    "title": "Tariq Kurd",
+    "organization": "codasip"
+  },
+  "_people/thomas-bauereiss.md": {
+    "collection": "people",
+    "title": "Thomas Bauereiss"
+  },
+  "_people/thomas-nyman.md": {
+    "collection": "people",
+    "title": "Thomas Nyman",
+    "organization": "ericsson"
+  },
+  "_people/timothy-m-jones.md": {
+    "collection": "people",
+    "title": "Timothy M. Jones"
+  },
+  "_people/tony-chen.md": {
+    "collection": "people",
+    "title": "Tony Chen"
+  },
+  "_people/tora-fridholm.md": {
+    "collection": "people",
+    "title": "Tora Fridholm",
+    "organization": "codasip"
+  },
+  "_people/vadim-zaliva.md": {
+    "collection": "people",
+    "title": "Vadim Zaliva"
+  },
+  "_people/yucong-tao.md": {
+    "collection": "people",
+    "title": "Yucong Tao"
+  },
+  "_news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate.md": {
+    "collection": "news",
+    "title": "A new ETSI standard could rewrite the memory-safety debate",
+    "authors": [
+      "mike-eftimakis"
+    ]
+  },
+  "_news/ai-doesnt-need-a-kill-switch-it-needs-boundaries.md": {
+    "collection": "news",
+    "title": "AI Doesn’t Need a Kill Switch. It Needs Boundaries",
+    "authors": [
+      "jim-wallace"
+    ]
+  },
+  "_news/ai-has-compressed-the-attack-timeline.md": {
+    "collection": "news",
+    "title": "AI has compressed the attack timeline",
+    "authors": [
+      "mike-eftimakis"
+    ]
+  },
+  "_news/amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon.md": {
+    "collection": "news",
+    "title": "Amid rising cyber threats, EnSilica joins the CHERI Alliance to enable safe & secure silicon"
+  },
+  "_news/behind-the-scenes-inside-the-promotion-and-ambassador-program-working-group.md": {
+    "collection": "news",
+    "title": "Behind the Scenes: inside the promotion and ambassador program Working Group",
+    "authors": [
+      "mike-eftimakis"
+    ]
+  },
+  "_news/beyond-software-patching.md": {
+    "collection": "news",
+    "title": "Beyond Software Patching",
+    "authors": [
+      "jim-wallace"
+    ]
+  },
+  "_news/bt-group-joins-the-cheri-alliance-to-advance-cybersecurity-innovation.md": {
+    "collection": "news",
+    "title": "BT Group Joins the CHERI Alliance to Advance Cybersecurity Innovation"
+  },
+  "_news/building-a-safer-digital-future.md": {
+    "collection": "news",
+    "title": "Building a Safer Digital Future"
+  },
+  "_news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level.md": {
+    "collection": "news",
+    "title": "CHERI Alliance Officially Launches, Adds Major Partners including Google, to Tackle Cybersecurity Threats at the Hardware Level"
+  },
+  "_news/cheri-alliance-to-distribute-arm-morello-boards-the-journey-beyond-dsbd-continues.md": {
+    "collection": "news",
+    "title": "CHERI Alliance to Distribute Arm Morello Boards – The Journey Beyond DSbD Continues!",
+    "authors": [
+      "mike-eftimakis"
+    ]
+  },
+  "_news/cheri-memory-safety-mitigates-llm-discovered-vulnerability-in-freebsd.md": {
+    "collection": "news",
+    "title": "CHERI memory safety mitigates LLM-discovered vulnerability in FreeBSD",
+    "authors": [
+      "brooks-davis"
+    ]
+  },
+  "_news/cheri-or-cheriot-the-answer-is-not-what-you-think.md": {
+    "collection": "news",
+    "title": "CHERI or CHERIoT? The Answer Is Not What You Think",
+    "authors": [
+      "adam-finney"
+    ]
+  },
+  "_news/cheri-sel4-and-cheri-microkit-released.md": {
+    "collection": "news",
+    "title": "CHERI-seL4 and CHERI-Microkit Released",
+    "authors": [
+      "hesham-almatary"
+    ]
+  },
+  "_news/cheri-tag-bit-transport-overlay-standard-version-0-9-released.md": {
+    "collection": "news",
+    "title": "CHERI Tag Bit Transport Overlay Standard version 0.9 released",
+    "authors": [
+      "ben-fletcher"
+    ]
+  },
+  "_news/cheri-zephyr-v0-4-0-release.md": {
+    "collection": "news",
+    "title": "CHERI-Zephyr v0.4.0 Release",
+    "authors": [
+      "jennifer-jackson"
+    ]
+  },
+  "_news/cheriot-1-0-specification-released.md": {
+    "collection": "news",
+    "title": "CHERIoT 1.0 Specification Released",
+    "authors": [
+      "adam-finney"
+    ]
+  },
+  "_news/cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus.md": {
+    "collection": "news",
+    "title": "CHERIoT-Ibex Core is Open Sourced to Enable Memory Safe MCUs"
+  },
+  "_news/codasip-enables-secure-linux-by-donating-cheri-risc-v-sdk-to-the-cheri-alliance.md": {
+    "collection": "news",
+    "title": "Codasip enables secure Linux by donating CHERI RISC-V SDK to the CHERI Alliance"
+  },
+  "_news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology.md": {
+    "collection": "news",
+    "title": "Codasip Powers UK Digital Security by Design Innovation Contracts with CHERI Technology",
+    "authors": [
+      "andrew-lindsay"
+    ]
+  },
+  "_news/combatting-the-ai-threat-with-cheri.md": {
+    "collection": "news",
+    "title": "Combatting the AI threat with CHERI",
+    "authors": [
+      "peter-cox"
+    ]
+  },
+  "_news/cybersecurity-by-design-from-research-to-industry-conference-report.md": {
+    "collection": "news",
+    "title": "‘Cybersecurity by Design – from Research to Industry’ — Conference Report"
+  },
+  "_news/end-users-demand-memory-safety-in-their-systems.md": {
+    "collection": "news",
+    "title": "End-users demand memory safety in their systems"
+  },
+  "_news/iceni-first-look.md": {
+    "collection": "news",
+    "title": "ICENI: First Look"
+  },
+  "_news/initial-members-join-cheri-alliance-to-drive-adoption-of-memory-safety-and-scalable-software-compartmentalization.md": {
+    "collection": "news",
+    "title": "Initial members join CHERI Alliance to drive adoption of memory safety and scalable software compartmentalization"
+  },
+  "_news/innovate-uk-project-winner-university-of-birmingham.md": {
+    "collection": "news",
+    "title": "Innovate UK Project Winner: University of Birmingham",
+    "authors": [
+      "mihai-ordean"
+    ]
+  },
+  "_news/introducing-the-cheri-adoption-global-ecosystem-assessment-q1-2026.md": {
+    "collection": "news",
+    "title": "Introducing the CHERI Adoption Global Ecosystem Assessment Q1 2026",
+    "authors": [
+      "adam-finney"
+    ]
+  },
+  "_news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences.md": {
+    "collection": "news",
+    "title": "IoTSF + TechWorks – Resilient IoT and Trustworthy AI Conferences",
+    "authors": [
+      "adam-finney"
+    ]
+  },
+  "_news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support.md": {
+    "collection": "news",
+    "title": "lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure Enclave with InnovateUK Support"
+  },
+  "_news/lowrisc-and-sci-semiconductor-release-sunburst-chip-repository-for-secure-microcontroller-development.md": {
+    "collection": "news",
+    "title": "lowRISC and SCI Semiconductor Release Sunburst Chip Repository for Secure Microcontroller Development"
+  },
+  "_news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd.md": {
+    "collection": "news",
+    "title": "New InnovateUK-funded project to merge CHERI support into FreeBSD",
+    "authors": [
+      "brooks-davis"
+    ]
+  },
+  "_news/one-bug-is-all-it-takes.md": {
+    "collection": "news",
+    "title": "One Bug is All It Takes",
+    "authors": [
+      "adam-finney"
+    ]
+  },
+  "_news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl.md": {
+    "collection": "news",
+    "title": "Recent advances in CHERI enhancing stability, maturity, and accessibility as urged by the UK’s DSTL",
+    "authors": [
+      "andrew-lindsay",
+      "carl-shaw"
+    ]
+  },
+  "_news/sci-semiconductor-and-the-cheri-alliance-at-risc-v-summit-in-china-july-2025.md": {
+    "collection": "news",
+    "title": "SCI Semiconductor and the CHERI Alliance at RISC-V Summit in China, July 2025"
+  },
+  "_news/secure-and-resilient-systems-in-the-era-of-cra-and-iot.md": {
+    "collection": "news",
+    "title": "Secure and Resilient Systems in the Era of CRA and IoT"
+  },
+  "_news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software.md": {
+    "collection": "news",
+    "title": "Several CHERI Alliance members win the DSbD competition to deliver new CHERI chips and software"
+  },
+  "_news/siemens-joins-the-cheri-alliance-a-united-front-for-cutting-edge-cybersecurity.md": {
+    "collection": "news",
+    "title": "Siemens Joins the CHERI Alliance: a United Front for Cutting-Edge Cybersecurity"
+  },
+  "_news/streamlining-the-cheri-ecosystem-an-update-from-the-repository-management-working-group.md": {
+    "collection": "news",
+    "title": "Streamlining the CHERI Ecosystem: An Update from the Repository Management Working Group",
+    "authors": [
+      "marno-van-der-maas"
+    ]
+  },
+  "_news/the-capable-hub-joins-the-cheri-alliance-to-accelerate-cybersecurity-collaboration.md": {
+    "collection": "news",
+    "title": "The Capable Hub joins the CHERI Alliance to accelerate cybersecurity collaboration"
+  },
+  "_news/the-eu-cyber-resilience-act-what-it-means-for-secure-by-design-systems-and-cheri.md": {
+    "collection": "news",
+    "title": "The EU Cyber Resilience Act: What It Means for Secure-by-Design Systems and CHERI",
+    "authors": [
+      "tariq-kurd"
+    ]
+  },
+  "_news/the-leading-root-of-trust-now-integrates-cheri-security-technology.md": {
+    "collection": "news",
+    "title": "The leading Root-of-Trust now integrates CHERI security technology",
+    "authors": [
+      "adam-finney"
+    ]
+  },
+  "_news/the-white-house-promotes-cheri-as-a-solution-for-memory-safety.md": {
+    "collection": "news",
+    "title": "The White House promotes CHERI as a solution for memory safety"
+  },
+  "_news/towards-a-reference-qemu-for-cheri-platform-emulation.md": {
+    "collection": "news",
+    "title": "Towards a reference QEMU for CHERI platform emulation",
+    "authors": [
+      "alfredo-mazzinghi"
+    ]
+  },
+  "_news/uk-government-report-highlights-the-cheri-alliance.md": {
+    "collection": "news",
+    "title": "UK Government report highlights the CHERI Alliance"
+  },
+  "_news/unlocking-the-future-a-roadmap-for-cheri-technology-advancement.md": {
+    "collection": "news",
+    "title": "Unlocking the Future: A Roadmap for CHERI Technology Advancement",
+    "authors": [
+      "mike-eftimakis"
+    ]
+  },
+  "_news/why-codasip-went-all-in-on-cheri.md": {
+    "collection": "news",
+    "title": "Why Codasip went all‑in on CHERI"
+  },
+  "_news/wind-river-joins-the-cheri-alliance.md": {
+    "collection": "news",
+    "title": "Wind River Joins the CHERI Alliance"
+  },
+  "_news/working-group-spotlight-marketing.md": {
+    "collection": "news",
+    "title": "Working Group Spotlight – Marketing"
+  },
+  "_news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay.md": {
+    "collection": "news",
+    "title": "You just missed the CHERITech’25 Conference – but wait, you can still attend the virtual replay!",
+    "authors": [
+      "adam-finney"
+    ]
+  },
+  "_organisations/ararat-river-consulting-llc.md": {
+    "collection": "organisations",
+    "title": "Ararat River Consulting, LLC"
+  },
+  "_organisations/aria.md": {
+    "collection": "organisations",
+    "title": "ARIA"
+  },
+  "_organisations/arm.md": {
+    "collection": "organisations",
+    "title": "Arm"
+  },
+  "_organisations/axiomise-ltd.md": {
+    "collection": "organisations",
+    "title": "Axiomise Ltd"
+  },
+  "_organisations/bt-group.md": {
+    "collection": "organisations",
+    "title": "BT Group"
+  },
+  "_organisations/cantech-informatics-srl.md": {
+    "collection": "organisations",
+    "title": "Cantech Informatics SRL"
+  },
+  "_organisations/capabilities-limited.md": {
+    "collection": "organisations",
+    "title": "Capabilities Limited"
+  },
+  "_organisations/centrale-supelec.md": {
+    "collection": "organisations",
+    "title": "Centrale Supélec"
+  },
+  "_organisations/cheri-alliance.md": {
+    "collection": "organisations",
+    "title": "CHERI Alliance"
+  },
+  "_organisations/chevin-technology.md": {
+    "collection": "organisations",
+    "title": "Chevin Technology"
+  },
+  "_organisations/codasip.md": {
+    "collection": "organisations",
+    "title": "Codasip"
+  },
+  "_organisations/configured-things.md": {
+    "collection": "organisations",
+    "title": "Configured Things"
+  },
+  "_organisations/critical-technologies.md": {
+    "collection": "organisations",
+    "title": "Critical Technologies Inc."
+  },
+  "_organisations/cyberwhiz.md": {
+    "collection": "organisations",
+    "title": "CyberWhiz"
+  },
+  "_organisations/cynam.md": {
+    "collection": "organisations",
+    "title": "CyNam"
+  },
+  "_organisations/digital-catapult.md": {
+    "collection": "organisations",
+    "title": "Digital Catapult"
+  },
+  "_organisations/discribehub.md": {
+    "collection": "organisations",
+    "title": "DiscribeHub+"
+  },
+  "_organisations/dsit.md": {
+    "collection": "organisations",
+    "title": "DSIT"
+  },
+  "_organisations/dstl.md": {
+    "collection": "organisations",
+    "title": "Defence Science and Technology Laboratory (Dstl)"
+  },
+  "_organisations/durham-university.md": {
+    "collection": "organisations",
+    "title": "Durham University"
+  },
+  "_organisations/ensilica.md": {
+    "collection": "organisations",
+    "title": "EnSilica"
+  },
+  "_organisations/ericsson.md": {
+    "collection": "organisations",
+    "title": "Ericsson"
+  },
+  "_organisations/european-commission-dg-connect.md": {
+    "collection": "organisations",
+    "title": "European Commission (DG CONNECT)"
+  },
+  "_organisations/freebsd-foundation.md": {
+    "collection": "organisations",
+    "title": "FreeBSD Foundation"
+  },
+  "_organisations/german-research-center-for-artificial-intelligence-dfki.md": {
+    "collection": "organisations",
+    "title": "German Research Center for Artificial Intelligence (DFKI)"
+  },
+  "_organisations/google.md": {
+    "collection": "organisations",
+    "title": "Google"
+  },
+  "_organisations/hildebrand.md": {
+    "collection": "organisations",
+    "title": "Hildebrand"
+  },
+  "_organisations/instituto-superior-de-engenharia-do-porto.md": {
+    "collection": "organisations",
+    "title": "Instituto Superior de Engenharia do Porto"
+  },
+  "_organisations/johannes-kepler-university-linz.md": {
+    "collection": "organisations",
+    "title": "Johannes Kepler University Linz (JKU)"
+  },
+  "_organisations/king-abdullah-university-of-science-and-technology-kaust.md": {
+    "collection": "organisations",
+    "title": "King Abdullah University of Science and Technology (KAUST)"
+  },
+  "_organisations/ku-leuven.md": {
+    "collection": "organisations",
+    "title": "KU Leuven"
+  },
+  "_organisations/light-momentum-technology-corp.md": {
+    "collection": "organisations",
+    "title": "Light Momentum Technology Corp."
+  },
+  "_organisations/lowrisc.md": {
+    "collection": "organisations",
+    "title": "lowRISC"
+  },
+  "_organisations/microservice-store.md": {
+    "collection": "organisations",
+    "title": "Microservice Store"
+  },
+  "_organisations/minerva-systems.md": {
+    "collection": "organisations",
+    "title": "Minerva Systems"
+  },
+  "_organisations/misra.md": {
+    "collection": "organisations",
+    "title": "MISRA"
+  },
+  "_organisations/mission-critical-applications-limited.md": {
+    "collection": "organisations",
+    "title": "Mission Critical Applications Limited"
+  },
+  "_organisations/national-taiwan-university.md": {
+    "collection": "organisations",
+    "title": "National Taiwan University"
+  },
+  "_organisations/ncsc.md": {
+    "collection": "organisations",
+    "title": "NCSC"
+  },
+  "_organisations/novomorphic.md": {
+    "collection": "organisations",
+    "title": "Novomorphic"
+  },
+  "_organisations/nquiringminds.md": {
+    "collection": "organisations",
+    "title": "NquiringMinds"
+  },
+  "_organisations/pa-consulting.md": {
+    "collection": "organisations",
+    "title": "PA Consulting"
+  },
+  "_organisations/parvat-infotech.md": {
+    "collection": "organisations",
+    "title": "Parvat Infotech"
+  },
+  "_organisations/risc-v-international.md": {
+    "collection": "organisations",
+    "title": "RISC-V International"
+  },
+  "_organisations/rptu.md": {
+    "collection": "organisations",
+    "title": "Rheinland-Pfälzische Technische Universität Kaiserslautern-Landau (RPTU)"
+  },
+  "_organisations/sci-semiconductor.md": {
+    "collection": "organisations",
+    "title": "SCI Semiconductor"
+  },
+  "_organisations/sensor-it.md": {
+    "collection": "organisations",
+    "title": "Sensor IT"
+  },
+  "_organisations/siemens.md": {
+    "collection": "organisations",
+    "title": "Siemens"
+  },
+  "_organisations/smart-information-flow-technologies-sift.md": {
+    "collection": "organisations",
+    "title": "Smart Information Flow Technologies (SIFT)"
+  },
+  "_organisations/sri.md": {
+    "collection": "organisations",
+    "title": "SRI"
+  },
+  "_organisations/swansea-university.md": {
+    "collection": "organisations",
+    "title": "Swansea University"
+  },
+  "_organisations/tccoe.md": {
+    "collection": "organisations",
+    "title": "Trusted Computing Center of Excellence (TCCoE)"
+  },
+  "_organisations/techworks.md": {
+    "collection": "organisations",
+    "title": "TechWorks"
+  },
+  "_organisations/the-capable-hub.md": {
+    "collection": "organisations",
+    "title": "The Capable Hub"
+  },
+  "_organisations/the-good-penguin.md": {
+    "collection": "organisations",
+    "title": "The Good Penguin"
+  },
+  "_organisations/the-university-of-manchester.md": {
+    "collection": "organisations",
+    "title": "The University of Manchester"
+  },
+  "_organisations/ukri.md": {
+    "collection": "organisations",
+    "title": "UKRI"
+  },
+  "_organisations/um-labs.md": {
+    "collection": "organisations",
+    "title": "UM Labs"
+  },
+  "_organisations/university-of-birmingham.md": {
+    "collection": "organisations",
+    "title": "University of Birmingham"
+  },
+  "_organisations/university-of-cambridge.md": {
+    "collection": "organisations",
+    "title": "University of Cambridge"
+  },
+  "_organisations/university-of-edinburgh.md": {
+    "collection": "organisations",
+    "title": "University of Edinburgh"
+  },
+  "_organisations/university-of-exeter.md": {
+    "collection": "organisations",
+    "title": "University of Exeter"
+  },
+  "_organisations/university-of-glasgow.md": {
+    "collection": "organisations",
+    "title": "University of Glasgow"
+  },
+  "_organisations/university-of-kent.md": {
+    "collection": "organisations",
+    "title": "University of Kent"
+  },
+  "_organisations/university-of-modena-and-reggio-emilia.md": {
+    "collection": "organisations",
+    "title": "University of Modena and Reggio Emilia"
+  },
+  "_organisations/verisilicon.md": {
+    "collection": "organisations",
+    "title": "VeriSilicon"
+  },
+  "_organisations/wind-river.md": {
+    "collection": "organisations",
+    "title": "Wind River"
+  },
+  "_organisations/wyvern-global.md": {
+    "collection": "organisations",
+    "title": "Wyvern Global"
+  },
+  "_organisations/zaya.md": {
+    "collection": "organisations",
+    "title": "ZAYA"
+  },
+  "_events/cheri-blossoms-conference-2025.md": {
+    "collection": "events",
+    "title": "CHERI Blossoms Conference 2025",
+    "speakers": [
+      "alastair-beresford",
+      "alfredo-mazzinghi",
+      "ashish-darbari",
+      "ben-fletcher",
+      "bradley-finn",
+      "carl-shaw",
+      "david-chisnall",
+      "dmitriy-yeliseyev",
+      "domagoj-stolfa",
+      "gavin-ferris",
+      "haydn-povey",
+      "hesham-almatary",
+      "jeremy-singer",
+      "john-goodacre",
+      "jonathan-woodruff",
+      "joshua-lant",
+      "kevin-brodsky",
+      "mark-batty",
+      "mark-hill",
+      "marno-van-der-maas",
+      "martin-atkins",
+      "mike-eftimakis",
+      "mike-halsall",
+      "phil-day",
+      "robert-watson",
+      "simon-moore",
+      "tariq-kurd",
+      "tora-fridholm"
+    ]
+  },
+  "_events/cheri-blossoms-conference-2026.md": {
+    "collection": "events",
+    "title": "CHERI Blossoms Conference 2026",
+    "speakers": [
+      "alex-rebert",
+      "kathleen-fisher",
+      "maika-fohrenbach",
+      "ollie-whitehouse",
+      "sam-cater",
+      "adam-finney",
+      "alexander-voyevoda",
+      "alfredo-mazzinghi",
+      "andrew-murray",
+      "andy-moore",
+      "ben-fletcher",
+      "bradley-finn",
+      "carl-shaw",
+      "dave-harcourt",
+      "david-chisnall",
+      "david-musliner",
+      "edoardo-marangoni",
+      "javier-orensanz-martinez",
+      "jennifer-jackson",
+      "jessica-clarke",
+      "jianyi-cheng",
+      "johannes-muller",
+      "john-baldwin",
+      "john-goodacre",
+      "jonathan-woodruff",
+      "louis-emile-ploix",
+      "luca-muller",
+      "marno-van-der-maas",
+      "manu-ravishankar",
+      "merve-gulmez",
+      "mike-eftimakis",
+      "murat-cakmak",
+      "paul-metzger",
+      "peter-cox",
+      "robert-watson",
+      "samuel-stark",
+      "simon-moore",
+      "tariq-kurd",
+      "thomas-nyman"
+    ]
+  },
+  "_events/cheri-blossoms-conference-2027.md": {
+    "collection": "events",
+    "title": "CHERI Blossoms Conference 2027"
+  },
+  "_events/cheri-blossoms-tutorial-2026.md": {
+    "collection": "events",
+    "title": "Hands-on Introduction to CHERI and CHERIoT"
+  },
+  "_events/cheritech25-reloaded.md": {
+    "collection": "events",
+    "title": "CHERITech'25 Reloaded",
+    "speakers": [
+      "andrew-murray",
+      "carl-shaw",
+      "david-chisnall",
+      "jeremy-singer",
+      "john-thomson",
+      "jonathan-woodruff",
+      "marno-van-der-maas",
+      "mike-eftimakis",
+      "murali-vijayaraghavan",
+      "tariq-kurd",
+      "thomas-nyman"
+    ]
+  },
+  "_events/cheritech25.md": {
+    "collection": "events",
+    "title": "CHERITech'25 Conference",
+    "speakers": [
+      "andrew-murray",
+      "carl-shaw",
+      "david-chisnall",
+      "dmitriy-yeliseyev",
+      "donato-ferraro",
+      "jeremy-singer",
+      "jessica-clarke",
+      "john-goodacre",
+      "john-thomson",
+      "jonathan-woodruff",
+      "ka-wing-li",
+      "marno-van-der-maas",
+      "merve-gulmez",
+      "mike-eftimakis",
+      "murali-vijayaraghavan",
+      "robert-watson",
+      "tariq-kurd",
+      "thomas-nyman"
+    ]
+  },
+  "_events/cheritech26.md": {
+    "collection": "events",
+    "title": "CHERITech'26"
+  },
+  "_events/cybersecurity-by-design-conference-2024.md": {
+    "collection": "events",
+    "title": "'Cybersecurity by design - from research to industry' conference"
+  },
+  "_events/embedded-world-2026.md": {
+    "collection": "events",
+    "title": "CHERI Alliance at Embedded World 2026"
+  },
+  "_events/webinar-cheri-cra-compliance.md": {
+    "collection": "events",
+    "title": "Webinar - CHERI & CRA Compliance",
+    "speakers": [
+      "tariq-kurd"
+    ]
+  },
+  "_papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators.md": {
+    "collection": "papers",
+    "title": "Adaptive CHERI Compartmentalization for Heterogeneous Accelerators",
+    "authors": [
+      "jianyi-cheng",
+      "a-theodore-markettos",
+      "alexandre-joannou",
+      "paul-metzger",
+      "matthew-naylor",
+      "peter-rugg",
+      "timothy-m-jones"
+    ]
+  },
+  "_papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat.md": {
+    "collection": "papers",
+    "title": "CHERI: A Hybrid Capability-System Architecture for Scalable Software Compartmentalization",
+    "authors": [
+      "robert-watson",
+      "jonathan-woodruff",
+      "peter-g-neumann",
+      "simon-moore",
+      "jonathan-anderson",
+      "david-chisnall",
+      "nirav-dave",
+      "brooks-davis",
+      "khilan-gudka",
+      "ben-laurie",
+      "steven-j-murdoch",
+      "robert-m-norton",
+      "michael-roe",
+      "stacey-son",
+      "munraj-vadera"
+    ]
+  },
+  "_papers/cheri-concentrate-practical-compressed-capabilities.md": {
+    "collection": "papers",
+    "title": "CHERI Concentrate: Practical Compressed Capabilities",
+    "authors": [
+      "jonathan-woodruff",
+      "alexandre-joannou",
+      "hongyan-xia",
+      "anthony-fox",
+      "robert-m-norton",
+      "thomas-bauereiss",
+      "david-chisnall",
+      "brooks-davis",
+      "khilan-gudka",
+      "nathaniel-wesley-filardo",
+      "a-theodore-markettos",
+      "michael-roe",
+      "peter-g-neumann",
+      "robert-watson",
+      "simon-moore"
+    ]
+  },
+  "_papers/cheri-hardware-enabled-c-c-memory-protection-at-scale.md": {
+    "collection": "papers",
+    "title": "CHERI: Hardware-Enabled C/C++ Memory Protection at Scale",
+    "authors": [
+      "robert-watson",
+      "david-chisnall",
+      "jessica-clarke",
+      "brooks-davis",
+      "nathaniel-wesley-filardo",
+      "ben-laurie",
+      "simon-moore",
+      "peter-g-neumann",
+      "alex-richardson",
+      "peter-sewell",
+      "konrad-witaszczyk",
+      "jonathan-woodruff"
+    ]
+  },
+  "_papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p.md": {
+    "collection": "papers",
+    "title": "CheriABI: Enforcing Valid Pointer Provenance and Minimizing Pointer Privilege in the POSIX C Run-time Environment",
+    "authors": [
+      "brooks-davis",
+      "robert-watson",
+      "alex-richardson",
+      "peter-g-neumann",
+      "simon-moore",
+      "john-baldwin",
+      "david-chisnall",
+      "jessica-clarke",
+      "nathaniel-wesley-filardo",
+      "khilan-gudka",
+      "alexandre-joannou"
+    ]
+  },
+  "_papers/cheriot-complete-memory-safety-for-embedded-devices.md": {
+    "collection": "papers",
+    "title": "CHERIoT: Complete Memory Safety for Embedded Devices",
+    "authors": [
+      "saar-amar",
+      "david-chisnall",
+      "tony-chen",
+      "nathaniel-wesley-filardo",
+      "ben-laurie",
+      "kunyan-liu",
+      "robert-m-norton",
+      "simon-moore",
+      "yucong-tao",
+      "robert-watson",
+      "hongyan-xia"
+    ]
+  },
+  "_papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev.md": {
+    "collection": "papers",
+    "title": "CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost Embedded Devices",
+    "authors": [
+      "saar-amar",
+      "tony-chen",
+      "david-chisnall",
+      "nathaniel-wesley-filardo",
+      "ben-laurie",
+      "hugo-lefeuvre",
+      "kunyan-liu",
+      "simon-moore",
+      "robert-norton-wright",
+      "margo-seltzer",
+      "yucong-tao",
+      "robert-watson",
+      "hongyan-xia"
+    ]
+  },
+  "_papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety.md": {
+    "collection": "papers",
+    "title": "Cornucopia Reloaded: Load Barriers for CHERI Heap Temporal Safety",
+    "authors": [
+      "nathaniel-wesley-filardo",
+      "brett-f-gutstein",
+      "jonathan-woodruff",
+      "jessica-clarke",
+      "peter-rugg",
+      "brooks-davis",
+      "mark-johnston",
+      "robert-norton-wright",
+      "david-chisnall",
+      "simon-moore",
+      "peter-g-neumann",
+      "robert-watson"
+    ]
+  },
+  "_papers/cornucopia-temporal-safety-for-cheri-heaps.md": {
+    "collection": "papers",
+    "title": "Cornucopia: Temporal Safety for CHERI Heaps",
+    "authors": [
+      "nathaniel-wesley-filardo",
+      "brett-f-gutstein",
+      "jonathan-woodruff",
+      "sam-ainsworth",
+      "lucian-paul-trifu",
+      "brooks-davis",
+      "hongyan-xia",
+      "edward-tomasz-napieraa",
+      "alex-richardson",
+      "john-baldwin",
+      "david-chisnall"
+    ]
+  },
+  "_papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c.md": {
+    "collection": "papers",
+    "title": "Deprivileging Low-Level GPU Drivers Efficiently with User-Space Processes and CHERI Compartments",
+    "authors": [
+      "paul-metzger",
+      "a-theodore-markettos",
+      "edward-tomasz-napieraa",
+      "matthew-naylor",
+      "robert-watson",
+      "timothy-m-jones"
+    ]
+  },
+  "_papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou.md": {
+    "collection": "papers",
+    "title": "Formal Mechanised Semantics of CHERI C: Capabilities, Provenance, and Undefined Behaviour",
+    "authors": [
+      "vadim-zaliva",
+      "kayvan-memarian",
+      "ricardo-almeida",
+      "jessica-clarke",
+      "brooks-davis",
+      "alex-richardson",
+      "david-chisnall",
+      "brian-campbell",
+      "ian-stark",
+      "robert-watson",
+      "peter-sewell"
+    ]
+  },
+  "_papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety.md": {
+    "collection": "papers",
+    "title": "It Is Time to Standardize Principles and Practices for Software Memory Safety",
+    "authors": [
+      "robert-watson",
+      "john-baldwin",
+      "tony-chen",
+      "david-chisnall",
+      "jessica-clarke",
+      "brooks-davis",
+      "nathaniel-wesley-filardo",
+      "brett-f-gutstein",
+      "graeme-jenkinson",
+      "ben-laurie",
+      "alfredo-mazzinghi",
+      "simon-moore",
+      "peter-g-neumann",
+      "hamed-okhravi",
+      "alex-rebert",
+      "alex-richardson",
+      "peter-sewell",
+      "laurence-tratt",
+      "murali-vijayaraghavan",
+      "hugo-vincent",
+      "konrad-witaszczyk"
+    ]
+  },
+  "_papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de.md": {
+    "collection": "papers",
+    "title": "Rigorous Engineering for Hardware Security: Formal Modelling and Proof in the CHERI Design and Implementation Process",
+    "authors": [
+      "kyndylan-nienhuis",
+      "alexandre-joannou",
+      "thomas-bauereiss",
+      "anthony-fox",
+      "michael-roe",
+      "brian-campbell",
+      "matthew-naylor",
+      "robert-m-norton",
+      "simon-moore",
+      "peter-g-neumann",
+      "ian-stark",
+      "robert-watson",
+      "peter-sewell"
+    ]
+  },
+  "_papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa.md": {
+    "collection": "papers",
+    "title": "The Arm Morello Evaluation Platform—Validating CHERI-Based Security in a High-Performance System",
+    "authors": [
+      "richard-grisenthwaite",
+      "graeme-barnes",
+      "robert-watson",
+      "simon-moore",
+      "peter-sewell",
+      "jonathan-woodruff"
+    ]
+  },
+  "_papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk.md": {
+    "collection": "papers",
+    "title": "The CHERI Capability Model: Revisiting RISC in an Age of Risk",
+    "authors": [
+      "jonathan-woodruff",
+      "robert-watson",
+      "david-chisnall",
+      "simon-moore",
+      "jonathan-anderson",
+      "brooks-davis",
+      "ben-laurie",
+      "peter-g-neumann",
+      "robert-m-norton",
+      "michael-roe"
+    ]
+  },
+  "_hardware/cheriot-ibex.md": {
+    "collection": "hardware",
+    "title": "CHERIoT Ibex Certification Record"
+  },
+  "_hardware/cheriot.md": {
+    "collection": "hardware",
+    "title": "CHERIoT"
+  },
+  "_hardware/fpga-platforms.md": {
+    "collection": "hardware",
+    "title": "FPGA Platforms"
+  },
+  "_hardware/morello.md": {
+    "collection": "hardware",
+    "title": "Morello"
+  },
+  "_hardware/sonata.md": {
+    "collection": "hardware",
+    "title": "Sonata"
+  },
+  "_hardware/x730.md": {
+    "collection": "hardware",
+    "title": "X730 Certification Record"
+  },
+  "_software/cheri-linux.md": {
+    "collection": "software",
+    "title": "CHERI Linux"
+  },
+  "_software/cheri-zephyr.md": {
+    "collection": "software",
+    "title": "CHERI Zephyr"
+  },
+  "_software/cheribsd.md": {
+    "collection": "software",
+    "title": "CheriBSD"
+  },
+  "_software/debugging-tools.md": {
+    "collection": "software",
+    "title": "Debugging Tools"
+  },
+  "_software/llvm-and-clang.md": {
+    "collection": "software",
+    "title": "LLVM & Clang"
+  },
+  "_software/porting-status.md": {
+    "collection": "software",
+    "title": "Porting Status"
+  },
+  "_software/real-time-operating-systems.md": {
+    "collection": "software",
+    "title": "Real-Time Operating Systems"
+  },
+  "_software/rust.md": {
+    "collection": "software",
+    "title": "Rust"
+  },
+  "_software/simulators.md": {
+    "collection": "software",
+    "title": "Simulators"
+  },
+  "_groups/certification-working-group.md": {
+    "collection": "groups",
+    "title": "✅ Certification WG"
+  },
+  "_groups/cheri-c-cplusplus.md": {
+    "collection": "groups",
+    "title": "©️ CHERI C/C++ WG"
+  },
+  "_groups/cheri-for-sel4.md": {
+    "collection": "groups",
+    "title": "4️⃣ CHERI for seL4 WG"
+  },
+  "_groups/cheri-freertos.md": {
+    "collection": "groups",
+    "title": "🆓 CHERI FreeRTOS WG"
+  },
+  "_groups/cheri-in-soc.md": {
+    "collection": "groups",
+    "title": "⬛️ CHERI in SoC WG"
+  },
+  "_groups/cheri-linux-working-group.md": {
+    "collection": "groups",
+    "title": "🐧 CHERI Linux WG"
+  },
+  "_groups/cheri-plus-safety.md": {
+    "collection": "groups",
+    "title": "📋 CHERI + Safety WG"
+  },
+  "_groups/cheri-qemu.md": {
+    "collection": "groups",
+    "title": "🐦 CHERI QEMU WG"
+  },
+  "_groups/cheri-virtual-machines.md": {
+    "collection": "groups",
+    "title": "🤖 CHERI Virtual Machines WG"
+  },
+  "_groups/cheri-zephyr.md": {
+    "collection": "groups",
+    "title": "🪁 CHERI Zephyr WG"
+  },
+  "_groups/marketing.md": {
+    "collection": "groups",
+    "title": "📣 Marketing WG"
+  },
+  "_groups/mmu-less-systems.md": {
+    "collection": "groups",
+    "title": "👮 MMU-less Systems WG"
+  },
+  "_groups/os-support-and-portability.md": {
+    "collection": "groups",
+    "title": "🛠️ OS Support & Portability WG"
+  },
+  "_groups/promotion-and-ambassador-program.md": {
+    "collection": "groups",
+    "title": "🪪 Promotion & Ambassador Program WG"
+  },
+  "_groups/repository-management.md": {
+    "collection": "groups",
+    "title": "💾 Repository Management WG"
+  },
+  "_groups/rust-plus-cheri.md": {
+    "collection": "groups",
+    "title": "⚙️ Rust + CHERI WG"
+  },
+  "_guides/build-compartments.md": {
+    "collection": "guides",
+    "title": "Build Compartments"
+  },
+  "_guides/build-your-first-application.md": {
+    "collection": "guides",
+    "title": "Build Your First Application"
+  },
+  "_guides/building-secure-software.md": {
+    "collection": "guides",
+    "title": "Building Secure Software with CHERI"
+  },
+  "_guides/choose-a-platform.md": {
+    "collection": "guides",
+    "title": "Choosing a CHERI Development Platform"
+  },
+  "_guides/downloads.md": {
+    "collection": "guides",
+    "title": "Downloads"
+  },
+  "_guides/install-a-toolchain.md": {
+    "collection": "guides",
+    "title": "Install a CHERI Toolchain"
+  },
+  "_guides/port-existing-software.md": {
+    "collection": "guides",
+    "title": "Port Existing Software"
+  },
+  "_guides/run-cheri-in-simulation.md": {
+    "collection": "guides",
+    "title": "Run CHERI in Simulation"
+  },
+  "_guides/technical-faq.md": {
+    "collection": "guides",
+    "title": "Technical FAQ"
+  },
+  "_guides/tutorials-and-training.md": {
+    "collection": "guides",
+    "title": "Tutorials & Training"
+  },
+  "_policies/code-of-conduct.md": {
+    "collection": "policies",
+    "title": "Code of Conduct"
+  },
+  "_policies/competition-law-statement.md": {
+    "collection": "policies",
+    "title": "Competition Law Statement"
+  },
+  "_policies/export-controls.md": {
+    "collection": "policies",
+    "title": "Export Controls"
+  },
+  "_policies/intellectual-property-policy.md": {
+    "collection": "policies",
+    "title": "Intellectual Property Policy"
+  },
+  "_policies/ip-policy.md": {
+    "collection": "policies",
+    "title": "CHERI ALLIANCE CIC IP Policy"
+  },
+  "_policies/policy-briefings.md": {
+    "collection": "policies",
+    "title": "Policy Briefings"
+  },
+  "_policies/privacy-policy.md": {
+    "collection": "policies",
+    "title": "Privacy policy"
+  },
+  "_policies/privacy.md": {
+    "collection": "policies",
+    "title": "Privacy"
+  },
+  "_policies/trademark-original.md": {
+    "collection": "policies",
+    "title": "Using the CHERI Alliance Trademark"
+  },
+  "_policies/trademark-policy.md": {
+    "collection": "policies",
+    "title": "Trademark Policy"
+  },
+  "_policies/trademark.md": {
+    "collection": "policies",
+    "title": "CHERI Trademark"
+  }
+}

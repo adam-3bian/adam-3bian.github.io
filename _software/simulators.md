@@ -10,18 +10,9 @@ related-pages:
   title: Choose a Platform
   description: Choose a platform, prepare an environment and run a first CHERI workload.
   action: Read this page
+summary: Develop and test CHERI software and systems without physical hardware.
+software_type: Simulation
 ---
-
-1. Build
-2. Platforms
-3. Simulators
-{: .source-breadcrumbs }
-
-# Simulators
-{: id="page-hero-title" .page-hero-title }
-
-Develop and test CHERI software and systems without physical hardware.
-{: .page-hero-summary }
 
 Simulation is often the easiest way to get started with CHERI. It lets you develop, port and test software before you have access to CHERI hardware.
 
@@ -112,58 +103,3 @@ Whichever route you choose, check that the simulator, CHERI ISA version, compile
 Simulation lets you start developing with CHERI without waiting for physical hardware.
 
 Use [Run CHERI in Simulation](/guides/run-cheri-in-simulation/) for a first practical setup, and move to [FPGA Platforms](/hardware/fpga-platforms/) when the question depends on hardware implementation.
-
-## Where next
-{: .where-next-title }
-
-### [CheriBSD](/software/cheribsd/)
-{: .where-next-card-title }
-
-
-
-
-
-[Use CheriBSD for a complete CHERI-enabled Unix environment, including pure-capability applications, ports, tests, and debugging.](/software/cheribsd/)
-{: .where-next-summary }
-
-
-
-[Continue](/software/cheribsd/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [FPGA Platforms](/hardware/fpga-platforms/)
-{: .related-pages-item-title }
-
-
-
-
-
-[FPGA platforms put a CHERI processor and system design onto reconfigurable hardware.](/hardware/fpga-platforms/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/hardware/fpga-platforms/)
-{: .source-card-label }
-
-
-
-
-
-### [Choose a Platform](/guides/choose-a-platform/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Choose a platform, prepare an environment and run a first CHERI workload.](/guides/choose-a-platform/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/guides/choose-a-platform/)
-{: .source-card-label }

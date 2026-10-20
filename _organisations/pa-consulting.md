@@ -1,31 +1,27 @@
 ---
 title: PA Consulting
 member: true
+summary: PA Consulting is a global innovation and transformation consultancy that combines strategy, design, engineering,
+  technology, and business expertise to help organisations solve complex challenges, develop new products and services,
+  and deliver lasting change. Working across sectors including government, defence, healthcare, energy, and transport,
+  the company focuses on turning ideas into practical, real-world impact.
+membership_category: Full Member
+membership_status: Member
+links:
+- label: Visit member website
+  url: https://www.paconsulting.com/
+  kind: website
+  primary: true
+- label: Back to all members
+  url: /alliance/leadership/members/
+  kind: navigation
+thumbnail:
+  src: /assets/organisations/pa-consulting/8aba894151f8-logo.png
+  alt: PA Consulting logo
+  width: 1024
+  height: 908
+  fit: contain
 ---
-
-1. Alliance
-2. Members
-3. PA Consulting
-{: .source-breadcrumbs }
-
-# PA Consulting
-{: id="page-hero-title" .page-hero-title }
-
-PA Consulting is a global innovation and transformation consultancy that combines strategy, design, engineering, technology, and business expertise to help organisations solve complex challenges, develop new products and services, and deliver lasting change. Working across sectors including government, defence, healthcare, energy, and transport, the company focuses on turning ideas into practical, real-world impact.
-{: .page-hero-summary }
-
-![PA Consulting logo](/assets/organisations/pa-consulting/8aba894151f8-logo.png){: .image-left }
-{: .entity-media .entity-media--logo }
-
-Status
-: Member
-
-Membership
-: Full Member
-
-Website
-: [Visit member website](https://www.paconsulting.com/)
-{: .entity-facts }
 
 ## Description
 {: id="description" }
@@ -36,6 +32,3 @@ We believe in the power of ingenuity to build a positive human future. As strate
 {: id="cheri-activities" }
 
 PA Consulting leads the UK Government-funded CHERI Secure by Design Managed Deployment Programme, working with technology suppliers, asset owners and end users to accelerate the adoption of CHERI-enabled products, capture deployment lessons, and support wider market uptake across critical sectors.
-
-[Back to all members](/alliance/leadership/members/)
-{: .entity-back }

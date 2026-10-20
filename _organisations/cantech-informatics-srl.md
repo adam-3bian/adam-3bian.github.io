@@ -1,31 +1,24 @@
 ---
 title: Cantech Informatics SRL
 member: true
+summary: Details to follow.
+membership_category: Full Member
+membership_status: Member
+links:
+- label: Visit member website
+  url: https://cantech-informatics.com/
+  kind: website
+  primary: true
+- label: Back to all members
+  url: /alliance/leadership/members/
+  kind: navigation
+thumbnail:
+  src: /assets/organisations/cantech-informatics-srl/7ef3653af98e-logo.png
+  alt: Cantech Informatics logo
+  width: 700
+  height: 300
+  fit: contain
 ---
-
-1. Alliance
-2. Members
-3. Cantech Informatics SRL
-{: .source-breadcrumbs }
-
-# Cantech Informatics SRL
-{: id="page-hero-title" .page-hero-title }
-
-Details to follow.
-{: .page-hero-summary }
-
-![Cantech Informatics logo](/assets/organisations/cantech-informatics-srl/7ef3653af98e-logo.png){: .image-left }
-{: .entity-media .entity-media--logo }
-
-Status
-: Member
-
-Membership
-: Full Member
-
-Website
-: [Visit member website](https://cantech-informatics.com/)
-{: .entity-facts }
 
 ## Description
 {: id="description" }
@@ -36,6 +29,3 @@ Details to follow.
 {: id="cheri-activities" }
 
 Details to follow.
-
-[Back to all members](/alliance/leadership/members/)
-{: .entity-back }

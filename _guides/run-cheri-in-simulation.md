@@ -8,18 +8,10 @@ related-pages:
   title: Choose a Platform
   description: A CHERI platform combines more than an instruction set.
   action: Read this page
+summary: Use simulation to boot a CHERI environment, build capability-aware code, and observe hardware-enforced
+  faults without owning a development board.
+topic: Simulation
 ---
-
-1. Build
-2. Developers
-3. Run CHERI in Simulation
-{: .source-breadcrumbs }
-
-# Run CHERI in Simulation
-{: id="page-hero-title" .page-hero-title }
-
-Use simulation to boot a CHERI environment, build capability-aware code, and observe hardware-enforced faults without owning a development board.
-{: .page-hero-summary }
 
 ## Before you start
 {: id="before-you-start" }
@@ -147,39 +139,3 @@ Move to FPGA or silicon when the question depends on implementation timing or ha
 - Include the repository revisions and command line in bug reports
 
 Once you can boot the environment, build a simple program, and observe a capability fault, you’re ready to start porting software or [building your first CHERI-native application](/guides/build-your-first-application/).
-
-## Where next
-{: .where-next-title }
-
-### [Install a Toolchain](/guides/install-a-toolchain/)
-{: .where-next-card-title }
-
-
-
-
-
-[A guide to the main toolchain components used to build CHERI software and where platform-specific setup differs.](/guides/install-a-toolchain/)
-{: .where-next-summary }
-
-
-
-[Continue](/guides/install-a-toolchain/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Choose a Platform](/guides/choose-a-platform/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A CHERI platform combines more than an instruction set.](/guides/choose-a-platform/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/guides/choose-a-platform/)
-{: .source-card-label }

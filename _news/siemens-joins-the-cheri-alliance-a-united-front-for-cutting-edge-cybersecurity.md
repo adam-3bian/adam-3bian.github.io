@@ -1,24 +1,19 @@
 ---
 title: 'Siemens Joins the CHERI Alliance: a United Front for Cutting-Edge Cybersecurity'
 date: '2025-09-08T12:00:12+01:00'
+thumbnail:
+  src: /assets/news/siemens-joins-the-cheri-alliance-a-united-front-for-cutting-edge-cybersecurity/caba10383daf-hero.png
+  alt: Welcome Siemens with the CHERI Alliance Member logo in the bottom right.
+  width: 2000
+  height: 1500
+tags:
+- CHERI Alliance news
+summary: Cambridge, UK – 5 September 2025 – The [CHERI Alliance](/) announces that the Electronic Design Automation
+  segment of [Siemens Digital Industries Software](https://www.siemens.com/) has joined the non-profit organisation
+  as a member to promote and enable a new level of cybersecurity in the EDA industry.
 ---
 
-1. News &amp; Events
-2. News &amp; Analysis
-3. Siemens Joins the CHERI Alliance: a United Front for Cutting-Edge Cybersecurity
-{: .source-breadcrumbs }
-
-# Siemens Joins the CHERI Alliance: a United Front for Cutting-Edge Cybersecurity
-{: id="page-hero-title" .page-hero-title }
-
-*8 September 2025*{: .source-date }
-*CHERI Alliance news*{: .collection-tag }
-{: .collection-detail__metadata }
-
-![Welcome Siemens with the CHERI Alliance Member logo in the bottom right.](/assets/news/siemens-joins-the-cheri-alliance-a-united-front-for-cutting-edge-cybersecurity/caba10383daf-hero.png){: .image-full }
-{: .collection-detail__lead-image }
-
-Cambridge, UK – 5 September 2025 – The [CHERI Alliance](/) announces that the Electronic Design Automation segment of [Siemens Digital Industries Software](https://www.siemens.com/) has joined the non-profit organisation as a member to promote and enable a new level of cybersecurity in the EDA industry. This collaboration marks a significant milestone in CHERI’s mission to advance technological innovations and bolster security measures in the digital landscape.
+This collaboration marks a significant milestone in CHERI’s mission to advance technological innovations and bolster security measures in the digital landscape.
 
 The CHERI Alliance is a global consortium that unites a diverse range of members, including companies of all sizes, academic institutions, individuals, government entities and industrial associations. Together, they are dedicated to promoting and enabling the adoption of Capability Hardware Enhanced RISC Instructions (CHERI) technology. This open innovative technology offers a groundbreaking, hardware-enforced solution to prevent memory safety vulnerabilities, which are at the heart of most cyberattacks.
 

@@ -1,0 +1,9 @@
+{%- assign event_record = include.event -%}
+{%- assign today = include.as_of | default: site.time | date: '%Y-%m-%d' -%}
+{%- assign event_start = event_record.start_date | date: '%Y-%m-%d' -%}
+{%- assign event_end = event_record.end_date | default: event_record.start_date | date: '%Y-%m-%d' -%}
+{%- if event_record.event_state == 'cancelled' -%}Cancelled
+{%- elsif event_record.event_state == 'postponed' -%}Postponed
+{%- elsif event_end < today -%}Past
+{%- elsif event_start > today -%}Upcoming
+{%- else -%}Happening today{%- endif -%}

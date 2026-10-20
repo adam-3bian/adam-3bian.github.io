@@ -10,18 +10,10 @@ related-pages:
 - url: /guides/run-cheri-in-simulation/
   description: Simulation is the recommended first execution environment for most CHERI developers.
   action: Read this page
+summary: Install the toolchain that matches your CHERI architecture, OS and ABI, then verify it before compiling
+  application code.
+topic: Toolchains
 ---
-
-1. Build
-2. Developers
-3. Install a CHERI Toolchain
-{: .source-breadcrumbs }
-
-# Install a CHERI Toolchain
-{: id="page-hero-title" .page-hero-title }
-
-Install the toolchain that matches your CHERI architecture, OS and ABI, then verify it before compiling application code.
-{: .page-hero-summary }
 
 A CHERI compiler is not a drop-in label for one universal target. The architecture, operating system, application binary interface (ABI), linker, and runtime libraries must agree. A compiler that understands Morello cannot automatically build a CHERIoT image, and a pure-capability library cannot be linked into an incompatible conventional ABI.
 
@@ -145,58 +137,3 @@ Record these values in build logs or release metadata:
 CHERI is a cross-layer architecture. Reproducible results require the layers to be named together.
 
 Once you can compile, inspect, and run a test program for your chosen target, continue with [Build Your First Application](/guides/build-your-first-application/).
-
-## Where next
-{: .where-next-title }
-
-### [Build Your First Application](/guides/build-your-first-application/)
-{: .where-next-card-title }
-
-
-
-
-
-[Build a small program, verify its target and capability mode, then observe one controlled capability fault.](/guides/build-your-first-application/)
-{: .where-next-summary }
-
-
-
-[Continue](/guides/build-your-first-application/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Choose a Platform](/guides/choose-a-platform/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A CHERI platform combines more than an instruction set.](/guides/choose-a-platform/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/guides/choose-a-platform/)
-{: .source-card-label }
-
-
-
-
-
-### [Run CHERI in Simulation](/guides/run-cheri-in-simulation/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Simulation is the recommended first execution environment for most CHERI developers.](/guides/run-cheri-in-simulation/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/guides/run-cheri-in-simulation/)
-{: .source-card-label }

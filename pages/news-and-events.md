@@ -5,10 +5,10 @@ layout: index
 sections:
 - presentation: cards
   columns: 1
-  headings: ["Follow the ecosystem"]
+  headings:
+  - Follow the ecosystem
+hero: true
 ---
-
-# News and events
 
 ## Follow the ecosystem
 

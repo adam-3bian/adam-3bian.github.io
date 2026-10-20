@@ -1,24 +1,16 @@
 ---
 title: End-users demand memory safety in their systems
 date: '2024-09-25T11:10:01+01:00'
+thumbnail:
+  src: /assets/news/end-users-demand-memory-safety-in-their-systems/bd37f9598c14-hero.png
+  alt: End-users demand memory safety in their systems
+  width: 452
+  height: 496
+tags:
+- CHERI Alliance news
+summary: The [Digital Security by Design](https://www.dsbd.tech) all-hands conference was held last week in Leeds,
+  and it was the opportunity to measure the progress of CHERI and see how much is already available.
 ---
-
-1. News &amp; Events
-2. News &amp; Analysis
-3. End-users demand memory safety in their systems
-{: .source-breadcrumbs }
-
-# End-users demand memory safety in their systems
-{: id="page-hero-title" .page-hero-title }
-
-*25 September 2024*{: .source-date }
-*CHERI Alliance news*{: .collection-tag }
-{: .collection-detail__metadata }
-
-![End-users demand memory safety in their systems](/assets/news/end-users-demand-memory-safety-in-their-systems/bd37f9598c14-hero.png){: .image-full }
-{: .collection-detail__lead-image }
-
-The [Digital Security by Design](https://www.dsbd.tech) all-hands conference was held last week in Leeds, and it was the opportunity to measure the progress of CHERI and see how much is already available.
 
 The new CHERI Alliance initiative had its own booth, and a number of its members ([Codasip](/organisations/codasip/), [lowRISC](/organisations/lowrisc/), [SCI Semiconductor](/organisations/sci-semiconductor/) and [University of Cambridge](/organisations/university-of-cambridge/)) were exhibiting at the show and gathered a lot of visitors eager to learn about the latest CHERI developments and products.
 

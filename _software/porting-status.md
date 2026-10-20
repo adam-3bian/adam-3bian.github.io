@@ -10,18 +10,10 @@ related-pages:
 - url: /build/software-ecosystem/
   description: Return to the full overview of compilers, languages, operating systems, and tools.
   action: Read this page
+summary: CHERI software support is reported by platform, architecture, ABI, operating system, package set, and project
+  revision rather than by one ecosystem-wide percentage.
+software_type: Reference
 ---
-
-1. Build
-2. Software Ecosystem
-3. Porting Status
-{: .source-breadcrumbs }
-
-# Porting Status
-{: id="page-hero-title" .page-hero-title }
-
-CHERI software support is reported by platform, architecture, ABI, operating system, package set, and project revision rather than by one ecosystem-wide percentage.
-{: .page-hero-summary }
 
 CHERI porting is not one centrally versioned programme. It spans processor architectures, compilers, operating systems, real-time environments, runtimes, applications, packages, emulators, and hardware platforms maintained by different projects.
 
@@ -47,58 +39,3 @@ Status claims also change with architecture revisions, toolchain branches, kerne
 The most current information lives with the project that owns a branch, release, SDK, board configuration, package set, or test environment. Alliance Working Groups connect several of these projects and publish roadmaps, repositories, articles, and event updates where shared coordination is useful.
 
 This page describes the structure of that landscape. Individual platform and software pages link to the corresponding public project records.
-
-## Where next
-{: .where-next-title }
-
-### [The Business Case](/adopt/business-case/the-business-case/)
-{: .where-next-card-title }
-
-
-
-
-
-[The business case places software maturity alongside security, engineering, lifecycle, and strategic considerations.](/adopt/business-case/the-business-case/)
-{: .where-next-summary }
-
-
-
-[Continue](/adopt/business-case/the-business-case/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Debugging Tools](/software/debugging-tools/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Capability-aware tools make faults, metadata, and binary structure visible within supported environments.](/software/debugging-tools/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/software/debugging-tools/)
-{: .source-card-label }
-
-
-
-
-
-### [Software Ecosystem](/build/software-ecosystem/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Return to the full overview of compilers, languages, operating systems, and tools.](/build/software-ecosystem/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/build/software-ecosystem/)
-{: .source-card-label }

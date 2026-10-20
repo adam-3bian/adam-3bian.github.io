@@ -1,31 +1,26 @@
 ---
 title: Digital Catapult
 member: true
+summary: Digital Catapult is a deep tech innovation organisation. We help businesses grow by applying deep tech.
+  We show what is possible, positive and productive with advanced technology. We work with businesses and early
+  adopters to explore, develop, and…
+membership_category: Community Member
+membership_status: Member
+links:
+- label: Visit member website
+  url: https://www.digicatapult.org.uk/
+  kind: website
+  primary: true
+- label: Back to all members
+  url: /alliance/leadership/members/
+  kind: navigation
+thumbnail:
+  src: /assets/organisations/digital-catapult/797be91526b2-logo.jpg
+  alt: Digital Catapult logo
+  width: 1000
+  height: 1000
+  fit: contain
 ---
-
-1. Alliance
-2. Members
-3. Digital Catapult
-{: .source-breadcrumbs }
-
-# Digital Catapult
-{: id="page-hero-title" .page-hero-title }
-
-Digital Catapult is a deep tech innovation organisation. We help businesses grow by applying deep tech. We show what is possible, positive and productive with advanced technology. We work with businesses and early adopters to explore, develop, and…
-{: .page-hero-summary }
-
-![Digital Catapult logo](/assets/organisations/digital-catapult/797be91526b2-logo.jpg){: .image-left }
-{: .entity-media .entity-media--logo }
-
-Status
-: Member
-
-Membership
-: Community Member
-
-Website
-: [Visit member website](https://www.digicatapult.org.uk/)
-{: .entity-facts }
 
 ## Description
 {: id="description" }
@@ -49,6 +44,3 @@ In addition, Digital Catapult built a Remote Lab, allowing companies to access a
 {: id="open-source-assets-for-cheri" }
 
 [https://github.com/dc-dsbd](https://github.com/dc-dsbd)
-
-[Back to all members](/alliance/leadership/members/)
-{: .entity-back }

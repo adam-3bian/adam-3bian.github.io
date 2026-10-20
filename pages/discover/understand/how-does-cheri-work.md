@@ -8,20 +8,11 @@ related-pages:
   description: What needs to change, and what doesn't.
   action: Read this page
 - url: /discover/understand/cheri-and-existing-software/
-  description: Porting software to CHERI is a process of finding assumptions about pointers, integers, objects, bounds, provenance, lifetimes, and interfaces.
+  description: Porting software to CHERI is a process of finding assumptions about pointers, integers, objects,
+    bounds, provenance, lifetimes, and interfaces.
   action: Read this page
+summary: Helping software stay within its boundaries.
 ---
-
-1. Discover
-2. Understand
-3. How does CHERI work?
-{: .source-breadcrumbs }
-
-# How does CHERI work?
-{: id="page-hero-title" .page-hero-title }
-
-Helping software stay within its boundaries.
-{: .page-hero-summary }
 
 At the heart of CHERI is a simple idea: the processor should understand the boundaries **intended** by the developer and prevent software from exceeding them.
 
@@ -84,58 +75,3 @@ Applications, operating systems, libraries, and firmware can be adapted incremen
 {: id="in-summary" }
 
 CHERI introduces capabilities, an enhanced form of pointer that carries information about what memory can be accessed and how it can be used. By enforcing these rules in hardware and enabling fine-grained compartmentalisation, CHERI provides a foundation for building more secure and resilient systems.
-
-## Where next
-{: .where-next-title }
-
-### [CHERI and Rust - Technical Overview](/build/technology/cheri-and-rust-technical/)
-{: .where-next-card-title }
-
-
-
-
-
-[Further technical details to understand why CHERI and Rust are complementary.](/build/technology/cheri-and-rust-technical/)
-{: .where-next-summary }
-
-
-
-[Continue](/build/technology/cheri-and-rust-technical/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Bringing CHERI to your product](/discover/understand/adapt-products/)
-{: .related-pages-item-title }
-
-
-
-
-
-[What needs to change, and what doesn't.](/discover/understand/adapt-products/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/understand/adapt-products/)
-{: .source-card-label }
-
-
-
-
-
-### [CHERI and Existing Software](/discover/understand/cheri-and-existing-software/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Porting software to CHERI is a process of finding assumptions about pointers, integers, objects, bounds, provenance, lifetimes, and interfaces.](/discover/understand/cheri-and-existing-software/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/understand/cheri-and-existing-software/)
-{: .source-card-label }

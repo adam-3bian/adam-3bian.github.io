@@ -10,34 +10,34 @@ related-pages:
 - url: /hardware/cheriot/
   description: The wider embedded platform, software model, and development environment around the core.
   action: Read this page
+summary: The CHERIoT Ibex 1.0 record describes the certified processor core, its CHERI architecture, verification
+  evidence, temporal-safety mechanism, and integration assumptions.
+thumbnail:
+  src: /assets/shared/source-assets/c53c4c1378ba-cheri-enabled-2026.webp
+  alt: CHERI Enabled logo - 2026
+  width: 400
+  height: 120
+  fit: contain
+record_type: Certification record
+organization_label: Microsoft
+organization_type: commercial company
+product_name: cheriot-ibex
+product_type: processor intellectual property — CPU
+reference: cheriot-ibex
+version: '1.0'
+links:
+- label: Microsoft CHERIoT Ibex repository
+  url: https://github.com/microsoft/cheriot-ibex/
+  kind: repository
+  primary: true
+certification:
+  date: '2026-03-26'
+  programme_version: '1.0'
+  derivative: false
 ---
-
-1. Adopt
-2. Assurance &amp; Adoption
-3. CHERIoT Ibex Certification Record
-{: .source-breadcrumbs }
-
-# CHERIoT Ibex Certification Record
-{: id="page-hero-title" .page-hero-title }
-
-The CHERIoT Ibex 1.0 record describes the certified processor core, its CHERI architecture, verification evidence, temporal-safety mechanism, and integration assumptions.
-{: .page-hero-summary }
-
-![CHERI Enabled logo - 2026](/assets/shared/source-assets/c53c4c1378ba-cheri-enabled-2026.webp){: .image-full }
 
 ## Product information
 {: id="product-information" }
-
-- **Certification date:** 26 March 2026
-- **Certification programme version:** 1.0
-- **Organisation:** Microsoft
-- **Organisation type:** commercial company
-- **Product:** `cheriot-ibex`
-- **Product type:** processor intellectual property — CPU
-- **Reference:** `cheriot-ibex`
-- **Version:** 1.0
-- **Derivative of a qualified product:** no
-- **Product source:** [Microsoft CHERIoT Ibex repository](https://github.com/microsoft/cheriot-ibex/)
 
 `cheriot-ibex` is a 32-bit RISC-V microcontroller core implementing the CHERIoT 1.0 instruction-set architecture.
 
@@ -175,58 +175,3 @@ https://github.com/CHERIoT-Platform/cheri-rust
 This is in early stages and passes smoke tests, but it not yet fully supported.
 
 There are also various ports of interpreters, such as MicroPython and Microvium (JavaScript).
-
-## Where next
-{: .where-next-title }
-
-### [CHERI Enabled Products](/adopt/assurance-and-adoption/cheri-enabled-products/)
-{: .where-next-card-title }
-
-
-
-
-
-[The CHERI Enabled directory connects every listed product to its certification scope.](/adopt/assurance-and-adoption/cheri-enabled-products/)
-{: .where-next-summary }
-
-
-
-[Continue](/adopt/assurance-and-adoption/cheri-enabled-products/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [About CHERI Enabled](/adopt/assurance-and-adoption/about-cheri-enabled/)
-{: .related-pages-item-title }
-
-
-
-
-
-[What the programme mark represents, and what remains outside its scope.](/adopt/assurance-and-adoption/about-cheri-enabled/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/adopt/assurance-and-adoption/about-cheri-enabled/)
-{: .source-card-label }
-
-
-
-
-
-### [CHERIoT](/hardware/cheriot/)
-{: .related-pages-item-title }
-
-
-
-
-
-[The wider embedded platform, software model, and development environment around the core.](/hardware/cheriot/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/hardware/cheriot/)
-{: .source-card-label }

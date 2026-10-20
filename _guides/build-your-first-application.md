@@ -9,20 +9,13 @@ related-pages:
   action: Read this page
 - url: /guides/install-a-toolchain/
   title: Install a Toolchain
-  description: A guide to the main toolchain components used to build CHERI software and where platform-specific setup differs.
+  description: A guide to the main toolchain components used to build CHERI software and where platform-specific
+    setup differs.
   action: Read this page
+summary: Build a small program, confirm it runs as capability-aware code, and observe a controlled bounds violation
+  in the target environment.
+topic: Getting started
 ---
-
-1. Build
-2. Developers
-3. Build Your First Application
-{: .source-breadcrumbs }
-
-# Build Your First Application
-{: id="page-hero-title" .page-hero-title }
-
-Build a small program, confirm it runs as capability-aware code, and observe a controlled bounds violation in the target environment.
-{: .page-hero-summary }
 
 Your first CHERI application should answer three separate questions:
 
@@ -156,58 +149,3 @@ Keep the following with your output:
 - complete fault diagnostic from the invalid test
 
 You now have a reproducible baseline. The next useful step is to build an existing library or move the example behind a compartment boundary.
-
-## Where next
-{: .where-next-title }
-
-### [Port Existing Software](/guides/port-existing-software/)
-{: .where-next-card-title }
-
-
-
-
-
-[Porting software to CHERI is a process of finding assumptions about pointers, integers, objects, bounds, provenance, lifetimes, and interfaces.](/guides/port-existing-software/)
-{: .where-next-summary }
-
-
-
-[Continue](/guides/port-existing-software/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Choose a Platform](/guides/choose-a-platform/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A CHERI platform combines more than an instruction set.](/guides/choose-a-platform/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/guides/choose-a-platform/)
-{: .source-card-label }
-
-
-
-
-
-### [Install a Toolchain](/guides/install-a-toolchain/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A guide to the main toolchain components used to build CHERI software and where platform-specific setup differs.](/guides/install-a-toolchain/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/guides/install-a-toolchain/)
-{: .source-card-label }

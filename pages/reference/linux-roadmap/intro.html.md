@@ -3,9 +3,6 @@ title: Introduction
 permalink: /reference/linux-roadmap/intro.html
 ---
 
-# [Introduction](/reference/linux-roadmap/intro.html#introduction)
-{: id="introduction" }
-
 CHERI is a hardware approach to memory safety that proposes an extension to established ISAs, such as Arm, RISC-V, and x86, that replaces simple (integer) pointers with a tagged capability data type, and adds capability-aware instructions to load, store, and manipulate the capability type.
 For existing software to benefit from the memory-safety and compartmentalization features of CHERI, it must be recompiled for this extended ISA, which may require porting to use pointer types appropriately.
 

@@ -1,29 +1,23 @@
 ---
 title: Why Codasip went all‑in on CHERI
 date: '2026-04-29T10:00:14+01:00'
+thumbnail:
+  src: /assets/news/why-codasip-went-all-in-on-cheri/4bc1f676007d-hero.jpg
+  alt: Ron Black in an office with the Codasip and CHERI Alliance member logos
+  width: 1000
+  height: 450
+tags:
+- Ecosystem
+- Members
+summary: 'We thought it would be valuable to sit down with Ron Black, CEO of [Codasip](/organisations/codasip/),
+  to talk about the most recent news, discuss why the company has committed so strongly to CHERI, what market signals
+  are driving that focus, and how Codasip sees the CHERI ecosystem—and the CHERI Alliance—evolving in the years
+  ahead. Here is what he told us:'
 ---
-
-1. News &amp; Events
-2. News &amp; Analysis
-3. Why Codasip went all‑in on CHERI
-{: .source-breadcrumbs }
-
-# Why Codasip went all‑in on CHERI
-{: id="page-hero-title" .page-hero-title }
-
-*29 April 2026*{: .source-date }
-*Ecosystem*{: .collection-tag }
-*Members*{: .collection-tag }
-{: .collection-detail__metadata }
-
-![Ron Black in an office with the Codasip and CHERI Alliance member logos](/assets/news/why-codasip-went-all-in-on-cheri/4bc1f676007d-hero.jpg){: .image-full }
-{: .collection-detail__lead-image }
 
 Interview with Ron Black, CEO of [Codasip](/organisations/codasip/)
 
 [Codasip](/organisations/codasip/) is a founding member of the CHERI Alliance and one of the most active industrial players in the CHERI ecosystem. From the outset, [Codasip](/organisations/codasip/) has played an active role in CHERI Alliance activities—taking part in technical discussions, leading some working groups, contributing open-source software, supporting standardisation efforts, and helping bridge the gap between the CHERI research community and commercial deployment. Alongside this work, the company has invested in making CHERI tangible for the ecosystem, through commercially available CHERI‑RISC‑V IP and development platforms that allow partners to experiment, prototype, and build products.
-
-We thought it would be valuable to sit down with Ron Black, CEO of [Codasip](/organisations/codasip/), to talk about the most recent news, discuss why the company has committed so strongly to CHERI, what market signals are driving that focus, and how Codasip sees the CHERI ecosystem—and the CHERI Alliance—evolving in the years ahead. Here is what he told us:
 
 ## Codasip is pivoting to fully focus on CHERI-based architectures. What was the market signal that convinced you this was the right time to make that shift?
 {: id="codasip-is-pivoting-to-fully-focus-on-cheri-based-architectures-what-was-the-market-signal-that-convinced-you-this-was-the-right-time-to-make-that-shift" }

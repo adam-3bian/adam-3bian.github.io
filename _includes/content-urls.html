@@ -18,7 +18,12 @@
       {%- assign tag_opening = html_part | split: '>' | first -%}
       {%- assign tag_name = tag_opening | normalize_whitespace | split: ' ' | first -%}
       {%- assign adapted_opening = tag_opening -%}
-      {%- if url_tags contains tag_name -%}
+      {%- assign existing_double_prefix = '="' | append: deployment_prefix -%}
+      {%- assign existing_single_prefix = "='" | append: deployment_prefix -%}
+      {%- assign prefix_probe = tag_opening | replace: existing_double_prefix, '="BASE/' | replace: existing_single_prefix, "='BASE/" -%}
+      {%- assign needs_prefix = false -%}
+      {%- if prefix_probe contains '="/' or prefix_probe contains "='/" -%}{%- assign needs_prefix = true -%}{%- endif -%}
+      {%- if url_tags contains tag_name and needs_prefix -%}
         {%- assign attribute_quote = '' -%}
         {%- assign attribute_name = '' -%}
         {%- assign outside_value = '' -%}

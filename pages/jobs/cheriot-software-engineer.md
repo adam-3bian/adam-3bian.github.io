@@ -1,18 +1,32 @@
 ---
 title: CHERIoT Software Engineer
 permalink: /jobs/cheriot-software-engineer/
+summary: An upcoming, fully remote UK role working across CHERIoT device drivers and secure, compartmentalised software
+  stacks.
+location: United Kingdom
+status: Expression of interest
+additional_facts:
+- label: Closing date
+  value: Not specified
+links:
+- label: Back to all job opportunities
+  url: /news-and-events/people-and-opportunities/job-opportunities/
+  kind: navigation
+- label: View original opportunity
+  url: https://infosec.exchange/@david_chisnall/117032341251735492
+  kind: resource
+  primary: true
+opportunity_type: Expression of interest
+working_pattern: Fully remote
+posted_date: "2026-08-03"
+experience: Junior applicants welcome
+skills:
+- C
+- C++
+- Rust
+- Device drivers
+- Secure systems design
 ---
-
-1. News &amp; Events
-2. People &amp; Opportunities
-3. CHERIoT Software Engineer
-{: .source-breadcrumbs }
-
-# CHERIoT Software Engineer
-{: id="page-hero-title" .page-hero-title }
-
-An upcoming, fully remote UK role working across CHERIoT device drivers and secure, compartmentalised software stacks.
-{: .page-hero-summary }
 
 This is an early opportunity notice rather than a formal job advert. It describes an upcoming role working on software for CHERIoT, the embedded adaptation of CHERI.
 
@@ -44,31 +58,3 @@ No employer name, salary, benefits, employment terms, or closing date were inclu
 {: id="express-an-interest" }
 
 Read the [original opportunity post](https://infosec.exchange/@david_chisnall/117032341251735492) for its latest status and use the contact route provided there. Do not assume the opportunity has closed solely because some time has passed since publication.
-
-Status
-: Expression of interest
-
-Location
-: United Kingdom
-
-Working pattern
-: Fully remote
-
-Experience
-: Junior applicants welcome
-
-Posted
-: *3 August 2026*{: .source-date }
-
-Closing date
-: Not specified
-
-Relevant experience
-: C, C++, Rust, Device drivers, Secure systems design
-{: .entity-facts }
-
-[View original opportunity](https://infosec.exchange/@david_chisnall/117032341251735492)
-{: .entity-primary-link }
-
-[Back to all job opportunities](/news-and-events/people-and-opportunities/job-opportunities/)
-{: .entity-back }

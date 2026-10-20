@@ -12,18 +12,9 @@ related-pages:
   title: The Business Case
   description: CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.
   action: Read this page
+summary: CHERI Enabled certification turns a broad technology claim into a product-specific record of implementation,
+  evidence, limitations, and review.
 ---
-
-1. Adopt
-2. Assurance &amp; Adoption
-3. Certification
-{: .source-breadcrumbs }
-
-# Certification
-{: id="page-hero-title" .page-hero-title }
-
-CHERI Enabled certification turns a broad technology claim into a product-specific record of implementation, evidence, limitations, and review.
-{: .page-hero-summary }
 
 The term “CHERI product” can cover anything from a processor core to a complete software platform. CHERI capabilities are processor-protected references that carry memory bounds and permissions. Certification makes a claim about their implementation more useful by attaching it to a defined product, version, programme, and evidence record.
 
@@ -86,58 +77,3 @@ The lower recertification fee also applies to the review of a derivative of a ce
 {: id="programme-and-application-information" }
 
 The [CHERI Enabled product directory](/adopt/assurance-and-adoption/cheri-enabled-products/) shows how the questionnaire answers and certification boundary are published. An organisation considering an application can use the [Alliance contact route](/alliance/membership/contact/) for the current questionnaire, programme document, and submission arrangements.
-
-## Where next
-{: .where-next-title }
-
-### [CHERI Enabled Products](/adopt/assurance-and-adoption/cheri-enabled-products/)
-{: .where-next-card-title }
-
-
-
-
-
-[The product directory connects each CHERI Enabled mark to the named product and its published certification record.](/adopt/assurance-and-adoption/cheri-enabled-products/)
-{: .where-next-summary }
-
-
-
-[Continue](/adopt/assurance-and-adoption/cheri-enabled-products/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [About CHERI Enabled](/adopt/assurance-and-adoption/about-cheri-enabled/)
-{: .related-pages-item-title }
-
-
-
-
-
-[CHERI Enabled provides a common signal for named products reviewed against the Alliance programme.](/adopt/assurance-and-adoption/about-cheri-enabled/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/adopt/assurance-and-adoption/about-cheri-enabled/)
-{: .source-card-label }
-
-
-
-
-
-### [The Business Case](/adopt/business-case/the-business-case/)
-{: .related-pages-item-title }
-
-
-
-
-
-[CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.](/adopt/business-case/the-business-case/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/adopt/business-case/the-business-case/)
-{: .source-card-label }

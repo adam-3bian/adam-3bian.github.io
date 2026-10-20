@@ -1,31 +1,26 @@
 ---
 title: Critical Technologies Inc.
 member: true
+summary: The Critical Technologies Inc. (CTI) mission is trustworthy networked autonomy. CTI’s near term goal is
+  to return meaningful control of devices, networks and data to their proper owners and enable a safe exit from
+  the Red Queen’s race (of perpetually…
+membership_category: Full Member
+membership_status: Founding member
+links:
+- label: Visit member website
+  url: https://www.critical.com/
+  kind: website
+  primary: true
+- label: Back to all members
+  url: /alliance/leadership/members/
+  kind: navigation
+thumbnail:
+  src: /assets/organisations/critical-technologies/a7937cf454b7-logo.png
+  alt: CTI logo
+  width: 903
+  height: 396
+  fit: contain
 ---
-
-1. Alliance
-2. Members
-3. Critical Technologies Inc.
-{: .source-breadcrumbs }
-
-# Critical Technologies Inc.
-{: id="page-hero-title" .page-hero-title }
-
-The Critical Technologies Inc. (CTI) mission is trustworthy networked autonomy. CTI’s near term goal is to return meaningful control of devices, networks and data to their proper owners and enable a safe exit from the Red Queen’s race (of perpetually…
-{: .page-hero-summary }
-
-![CTI logo](/assets/organisations/critical-technologies/a7937cf454b7-logo.png){: .image-left }
-{: .entity-media .entity-media--logo }
-
-Status
-: Founding member
-
-Membership
-: Full Member
-
-Website
-: [Visit member website](https://www.critical.com/)
-{: .entity-facts }
 
 ## Description
 {: id="description" }
@@ -36,6 +31,3 @@ The Critical Technologies Inc. (CTI) mission is trustworthy networked autonomy. 
 {: id="cheri-activities" }
 
 CTI began promoting CHERI as part of a trustworthy whole-system stack at the 2019 RISC-V Summit and is working to integrate CHERI in open platforms for trustworthy networked autonomy.
-
-[Back to all members](/alliance/leadership/members/)
-{: .entity-back }

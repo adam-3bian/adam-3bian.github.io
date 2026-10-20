@@ -4,18 +4,8 @@ permalink: /discover/understand/cheri-history/
 where-next:
   url: /organisations/cheri-alliance/
   title: Building the ecosystem behind memory-safe computing
+summary: From capability systems research to a growing ecosystem for memory-safe computing.
 ---
-
-1. Discover
-2. Understand
-3. The History of CHERI
-{: .source-breadcrumbs }
-
-# The History of CHERI
-{: id="page-hero-title" .page-hero-title }
-
-From capability systems research to a growing ecosystem for memory-safe computing.
-{: .page-hero-summary }
 
 CHERI did not appear overnight. It builds on decades of capability-system research and more than fifteen years of collaboration across universities, industry, government programmes, open-source communities, and technology suppliers. Today, CHERI is evolving from a research architecture into a growing ecosystem of products, software, standards, and organisations.
 
@@ -95,21 +85,3 @@ CHERI has evolved from a research question into multiple working ecosystems span
 Current efforts focus on areas such as standardisation, support in mainstream software projects, certification, compartmentalisation, temporal safety, product deployment, and ecosystem growth. CHERI is increasingly positioned as one part of a broader memory-safety strategy alongside safer programming languages, improved engineering practices, and formal methods.
 
 The story of CHERI is therefore not a single invention, but a continuing effort to make capability-based protection practical for modern computing.
-
-## Where next
-{: .where-next-title }
-
-### [Building the ecosystem behind memory-safe computing](/organisations/cheri-alliance/)
-{: .where-next-card-title }
-
-
-
-
-
-[The CHERI Alliance.](/organisations/cheri-alliance/)
-{: .where-next-summary }
-
-
-
-[Continue](/organisations/cheri-alliance/)
-{: .source-card-label }

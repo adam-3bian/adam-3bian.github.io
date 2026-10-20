@@ -1,31 +1,24 @@
 ---
 title: A new ETSI standard could rewrite the memory-safety debate
 date: '2026-07-29T17:07:00+01:00'
-authors: [mike-eftimakis]
+authors:
+- mike-eftimakis
+thumbnail:
+  src: /assets/news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/67e343f4b8d6-hero.png
+  alt: ETSI standard
+  width: 1536
+  height: 1024
+tags:
+- CHERI Alliance news
+- Ecosystem
+- Government / Regulation
+author_credit: Mike Eftimakis – **CHERI Alliance**
+summary: Memory-safety vulnerabilities remain one of the largest sources of critical software vulnerabilities. Despite
+  years of investment in safer languages, hardware protections, and secure development practices, the industry has
+  lacked a common way to define and compare memory-safety technologies.
 ---
 
-1. News &amp; Events
-2. News &amp; Analysis
-3. A new ETSI standard could rewrite the memory-safety debate
-{: .source-breadcrumbs }
-
-# A new ETSI standard could rewrite the memory-safety debate
-{: id="page-hero-title" .page-hero-title }
-
-*29 July 2026*{: .source-date }
-*CHERI Alliance news*{: .collection-tag }
-*Ecosystem*{: .collection-tag }
-*Government / Regulation*{: .collection-tag }
-{: .collection-detail__metadata }
-
-![ETSI standard](/assets/news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/67e343f4b8d6-hero.png){: .image-full }
-{: .collection-detail__lead-image }
-
-Mike Eftimakis – **CHERI Alliance**
-
 ## ETSI TS 104 198 establishes a common language for memory safety
-
-Memory-safety vulnerabilities remain one of the largest sources of critical software vulnerabilities. Despite years of investment in safer languages, hardware protections, and secure development practices, the industry has lacked a common way to define and compare memory-safety technologies.
 
 That may be about to change.
 

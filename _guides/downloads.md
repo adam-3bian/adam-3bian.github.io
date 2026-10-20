@@ -2,7 +2,8 @@
 title: Downloads
 related-pages:
 - url: /guides/port-existing-software/
-  description: Porting software to CHERI is a process of finding assumptions about pointers, integers, objects, bounds, provenance, lifetimes, and interfaces.
+  description: Porting software to CHERI is a process of finding assumptions about pointers, integers, objects,
+    bounds, provenance, lifetimes, and interfaces.
   action: Read this page
 - url: /guides/tutorials-and-training/
   description: Tutorials are most useful after the first build works.
@@ -11,18 +12,10 @@ related-pages:
   title: Choose a Platform
   description: Choose a platform, prepare an environment and run a first CHERI workload.
   action: Read this page
+summary: Find maintained CHERI source code, development kits, operating systems, simulators, documentation, examples,
+  and product-specific resources.
+topic: Downloads
 ---
-
-1. Build
-2. Developers
-3. Downloads
-{: .source-breadcrumbs }
-
-# Downloads
-{: id="page-hero-title" .page-hero-title }
-
-Find maintained CHERI source code, development kits, operating systems, simulators, documentation, examples, and product-specific resources.
-{: .page-hero-summary }
 
 CHERI components are developed across several organisations and repositories. Download a coherent platform stack rather than mixing a compiler, operating system, and simulator from unrelated releases.
 
@@ -135,60 +128,3 @@ Record:
 - checksum for distributed binary artifacts
 
 For production or assurance work, prefer signed releases and supplier-supported packages where available. Source snapshots are useful for evaluation but do not automatically carry a maintenance or vulnerability-response commitment.
-
-
-## Related content
-{: .related-pages-title }
-
-### [Port Existing Software](/guides/port-existing-software/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Porting software to CHERI is a process of finding assumptions about pointers, integers, objects, bounds, provenance, lifetimes, and interfaces.](/guides/port-existing-software/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/guides/port-existing-software/)
-{: .source-card-label }
-
-
-
-
-
-### [Tutorials &amp; Training](/guides/tutorials-and-training/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Tutorials are most useful after the first build works.](/guides/tutorials-and-training/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/guides/tutorials-and-training/)
-{: .source-card-label }
-
-
-
-
-
-### [Choose a Platform](/guides/choose-a-platform/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Choose a platform, prepare an environment and run a first CHERI workload.](/guides/choose-a-platform/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/guides/choose-a-platform/)
-{: .source-card-label }

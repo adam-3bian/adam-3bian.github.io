@@ -13,18 +13,9 @@ related-pages:
   title: About the CHERI Alliance
   description: Learn how the Alliance connects organisations working across the CHERI ecosystem.
   action: Read this page
+summary: The Privacy Policy explains what website data the Alliance records, why it is processed, how long it is
+  retained, and the rights available to users.
 ---
-
-1. Alliance
-2. Legal &amp; Policies
-3. Privacy
-{: .source-breadcrumbs }
-
-# Privacy
-{: id="page-hero-title" .page-hero-title }
-
-The Privacy Policy explains what website data the Alliance records, why it is processed, how long it is retained, and the rights available to users.
-{: .page-hero-summary }
 
 This Website collects some Personal data from its Users.
 
@@ -91,77 +82,3 @@ Our Privacy Policy applies only to our online activities and is valid for visito
 {: id="consent" }
 
 By using our website, you hereby consent to our Privacy Policy and agree to its terms.
-
-## Where next
-{: .where-next-title }
-
-### [Latest News](/news-and-events/news-and-analysis/latest-news/)
-{: .where-next-card-title }
-
-
-
-
-
-[The latest CHERI Alliance and ecosystem announcements, presented with clear dates and sources.](/news-and-events/news-and-analysis/latest-news/)
-{: .where-next-summary }
-
-
-
-[Continue](/news-and-events/news-and-analysis/latest-news/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Code of Conduct](/policies/code-of-conduct/)
-{: .related-pages-item-title }
-
-
-
-
-
-[The behaviour and participation expectations that apply to Alliance spaces and activities.](/policies/code-of-conduct/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/policies/code-of-conduct/)
-{: .source-card-label }
-
-
-
-
-
-### [Export Controls](/policies/export-controls/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Information on export-control considerations relevant to Alliance activity and shared material.](/policies/export-controls/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/policies/export-controls/)
-{: .source-card-label }
-
-
-
-
-
-### [About the CHERI Alliance](/organisations/cheri-alliance/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Learn how the Alliance connects organisations working across the CHERI ecosystem.](/organisations/cheri-alliance/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/organisations/cheri-alliance/)
-{: .source-card-label }

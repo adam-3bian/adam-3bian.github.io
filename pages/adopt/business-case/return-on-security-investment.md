@@ -9,18 +9,8 @@ related-pages:
 - url: /adopt/business-case/adoption-costs-and-migration/
   description: CHERI adoption can range from one protected component to a complete capability-aware platform.
   action: Read this page
+summary: Turn stronger security into lasting business value.
 ---
-
-1. Adopt
-2. Business Case
-3. The Return on Security Investment
-{: .source-breadcrumbs }
-
-# The Return on Security Investment
-{: id="page-hero-title" .page-hero-title }
-
-Turn stronger security into lasting business value.
-{: .page-hero-summary }
 
 Security investments create value throughout a product’s lifecycle. The benefits rarely appear as a single saving. Instead, they accumulate through avoided vulnerabilities, reduced engineering time for emergency response, and products that remain secure and supportable for longer.
 
@@ -112,40 +102,3 @@ The case may be weaker where software is already memory-safe, strong isolation m
 CHERI is not a replacement for good development processes, testing, updates, monitoring, or other cybersecurity controls. Its value comes from addressing one of the most persistent sources of software vulnerability while preserving existing software investments.
 
 For organisations building products that must remain secure, reliable, and supportable for years to come, CHERI can create long-term value by reducing risk, lowering operational burden, strengthening assurance, and extending the life of critical software assets.
-
-## Related content
-{: .related-pages-title }
-
-### [The Business Case](/adopt/business-case/the-business-case/)
-{: .related-pages-item-title }
-
-
-
-
-
-[CHERI can create value where memory-unsafe software, valuable assets, and long support lives meet.](/adopt/business-case/the-business-case/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/adopt/business-case/the-business-case/)
-{: .source-card-label }
-
-
-
-
-
-### [Adoption Costs &amp; Migration](/adopt/business-case/adoption-costs-and-migration/)
-{: .related-pages-item-title }
-
-
-
-
-
-[CHERI adoption can range from one protected component to a complete capability-aware platform.](/adopt/business-case/adoption-costs-and-migration/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/adopt/business-case/adoption-costs-and-migration/)
-{: .source-card-label }

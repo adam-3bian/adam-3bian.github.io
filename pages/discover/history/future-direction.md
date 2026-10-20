@@ -10,18 +10,9 @@ related-pages:
 - url: /discover/history/formation-of-the-cheri-alliance/
   description: Background on why the CHERI Alliance was formed and the role it plays in the ecosystem.
   action: Read this page
+summary: CHERI’s next phase depends on stable standards, broader products, support in widely used software projects,
+  practical assurance, and evidence from real deployments.
 ---
-
-1. Discover
-2. History
-3. Future Direction
-{: .source-breadcrumbs }
-
-# Future Direction
-{: id="page-hero-title" .page-hero-title }
-
-CHERI’s next phase depends on stable standards, broader products, support in widely used software projects, practical assurance, and evidence from real deployments.
-{: .page-hero-summary }
 
 Working prototypes have answered the first question: capability memory protection can be integrated with modern processors, operating systems, compilers, and large C and C++ codebases. Commercial products have answered another: CHERI technology can move into licensable processor designs and silicon.
 
@@ -98,58 +89,3 @@ CHERI is likely to develop alongside safer programming languages, improved C and
 The direction is not “hardware instead of software”. It is a hardware-software foundation in which pointers carry enforceable authority, components receive less privilege, and higher layers can build on stronger guarantees.
 
 The [CHERI Alliance](/organisations/cheri-alliance/) and the [University of Cambridge CHERI project](https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/) track current work and product announcements. Individual open-source projects and suppliers provide details for their own releases.
-
-## Where next
-{: .where-next-title }
-
-### [Specifications](/discover/resources/specifications/)
-{: .where-next-card-title }
-
-
-
-
-
-[A directory of architecture and related specifications relevant to CHERI.](/discover/resources/specifications/)
-{: .where-next-summary }
-
-
-
-[Continue](/discover/resources/specifications/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Early Capability Systems](/discover/history/early-capability-systems/)
-{: .related-pages-item-title }
-
-
-
-
-
-[A short account of early capability-based computer systems and the ideas that influenced later work.](/discover/history/early-capability-systems/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/history/early-capability-systems/)
-{: .source-card-label }
-
-
-
-
-
-### [Formation of the CHERI Alliance](/discover/history/formation-of-the-cheri-alliance/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Background on why the CHERI Alliance was formed and the role it plays in the ecosystem.](/discover/history/formation-of-the-cheri-alliance/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/discover/history/formation-of-the-cheri-alliance/)
-{: .source-card-label }

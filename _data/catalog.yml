@@ -1,0 +1,176 @@
+people:
+  label: People
+  singular: Person
+  facet: Organisation
+  action: View profile
+  fields:
+  - name: organization
+    label: Organisation
+    type: organisations
+  - name: board_role
+    label: Role
+    type: text
+organisations:
+  label: Organisations
+  singular: Organisation
+  facet: Membership
+  action: Explore organisation
+  fields:
+  - name: membership_status
+    label: Status
+    type: text
+  - name: membership_category
+    label: Membership
+    type: text
+news:
+  label: News
+  singular: News & insights
+  facet: Topic
+  action: Read article
+  fields: []
+events:
+  label: Events
+  singular: Event
+  facet: Format
+  action: View event
+  fields:
+  - name: location
+    label: Location
+    type: text
+  - name: format
+    label: Format
+    type: text
+  - name: series
+    label: Series
+    type: text
+papers:
+  label: Papers
+  singular: Publication
+  facet: Year
+  action: View publication
+  fields:
+  - name: authors
+    label: Authors
+    type: people
+  - name: year
+    label: Year
+    type: text
+  - name: venue
+    label: Published in
+    type: text
+reports:
+  label: Reports & white papers
+  singular: Report
+  facet: Year
+  action: View report
+  fields:
+  - name: year
+    label: Year
+    type: text
+  - name: resource_type
+    label: Type
+    type: text
+hardware:
+  label: Hardware
+  singular: Hardware
+  facet: Record type
+  action: Explore hardware
+  fields:
+  - name: record_type
+    label: Record type
+    type: text
+  - name: organization
+    label: Organisation
+    type: organisations
+  - name: product_name
+    label: Product
+    type: text
+  - name: product_type
+    label: Product type
+    type: text
+  - name: architecture
+    label: Architecture
+    type: text
+  - name: version
+    label: Product version
+    type: text
+  - name: reference
+    label: Reference
+    type: text
+  - name: certification.date
+    label: Certified
+    type: date
+  - name: certification.programme_version
+    label: Programme version
+    type: text
+  - name: certification.derivative
+    label: Derivative of a qualified product
+    type: boolean
+software:
+  label: Software
+  singular: Software
+  facet: Type
+  action: Explore software
+  fields:
+  - name: software_type
+    label: Type
+    type: text
+  - name: architectures
+    label: Architectures
+    type: array
+  - name: platforms
+    label: Platforms
+    type: array
+  - name: version
+    label: Version
+    type: text
+  - name: release_status
+    label: Release status
+    type: text
+groups:
+  label: Working groups
+  singular: Working group
+  facet: Group type
+  action: Explore group
+  fields:
+  - name: group_type
+    label: Group type
+    type: text
+  - name: collaboration_areas
+    label: Areas of collaboration
+    type: array
+guides:
+  label: Developer guides
+  singular: Developer guide
+  facet: Topic
+  action: Read guide
+  fields:
+  - name: topic
+    label: Topic
+    type: text
+  - name: platforms
+    label: Platforms
+    type: array
+  - name: prerequisites
+    label: Before you start
+    type: array
+policies:
+  label: Policies
+  singular: Policy
+  facet: Document type
+  action: Read policy
+  fields:
+  - name: version
+    label: Version
+    type: text
+  - name: document_date
+    label: Document date
+    type: date
+  - name: authoritative_format
+    label: Official format
+    type: text
+products:
+  label: Products & projects
+  facet: Category
+  action: Explore product
+  fields: []

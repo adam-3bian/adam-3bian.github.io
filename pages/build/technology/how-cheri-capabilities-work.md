@@ -1,33 +1,10 @@
 ---
 title: How CHERI Capabilities work
 permalink: /build/technology/how-cheri-capabilities-work/
-# sections:
-# - presentation: action
-#   headings: [what-a-capability-contains]
-# - presentation: action
-#   headings: [tags-is-this-a-real-capability]
-# - presentation: action
-#   headings: [bounds-where-can-it-access]
-# - presentation: action
-#   headings: [permissions-what-can-it-do]
-# - presentation: action
-#   headings: [provenance-where-did-its-authority-come-from]
-# - presentation: action
-#   headings: [sealing-can-it-be-used-directly]
 where-next:
   url: /build/technology/tags-and-validity/
+summary: Pointers tell you where. Capabilities define what you can do.
 ---
-
-1. Build
-2. Technology
-3. CHERI Capabilities
-{: .source-breadcrumbs }
-
-# How CHERI Capabilities work
-{: id="page-hero-title" .page-hero-title }
-
-Pointers tell you where. Capabilities define what you can do.
-{: .page-hero-summary }
 
 A conventional pointer is essentially an address. A **CHERI capability** adds hardware-protected information describing the authority that goes with that address: where it can access, what operations it can perform, and whether the reference is valid.
 
@@ -186,4 +163,3 @@ Start with one idea:
 - Sealing controls how it can be used
 
 Together, they give developers a practical way to build software around explicit, least-privilege access to memory and services.
-

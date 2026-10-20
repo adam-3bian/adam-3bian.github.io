@@ -3,9 +3,6 @@ title: Adversarial CHERI Exercises and Missions on CHERI-seL4 microkernel and CH
 permalink: /reference/CHERI-seL4-Exercises/cover/index.html
 ---
 
-# [Adversarial CHERI Exercises and Missions on CHERI-seL4 microkernel and CHERI-Microkit](/reference/CHERI-seL4-Exercises/cover/index.html#adversarial-cheri-exercises-and-missions-on-cheri-sel4-microkernel-and-cheri-microkit)
-{: id="adversarial-cheri-exercises-and-missions-on-cheri-sel4-microkernel-and-cheri-microkit" }
-
 Robert N. M. Watson (University of Cambridge), Brooks Davis (SRI
 International), Wes Filardo (Microsoft Research), Jessica Clarke (University of
 Cambridge), John Baldwin (Ararat River Consulting), and Hesham Almatary

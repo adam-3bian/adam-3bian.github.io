@@ -3,9 +3,6 @@ title: Extending heap allocators for CHERI
 permalink: /reference/CHERI-seL4-Exercises/exercises/cheri-allocator/index.html
 ---
 
-# [Extending heap allocators for CHERI](/reference/CHERI-seL4-Exercises/exercises/cheri-allocator/index.html#extending-heap-allocators-for-cheri)
-{: id="extending-heap-allocators-for-cheri" }
-
 CHERI's architectural protection is driven by software -- the compiler,
 linker, OS kernel, run-time linker, run-time libraries, and so on all manage
 capabilities as part of their program execution. Heap allocators, which are

@@ -1,24 +1,17 @@
-{%- comment -%}
-  Native collection ordering shared by directories, home and reverse relationships.
-  Explicit undated records never inherit Jekyll's fallback build date as a fact.
-  Optional as_of is for isolated date-boundary checks; production uses site.time.
-{%- endcomment -%}
-{%- assign chronological_source = include.items | where_exp: 'item', 'item.alternate != true' | where_exp: 'item', 'item.redirect_to == nil' -%}
-{%- assign chronological_dated = chronological_source | where_exp: 'item', 'item.undated != true' | sort: 'date' -%}
-{%- assign chronological_undated = chronological_source | where: 'undated', true | sort_natural: 'title' -%}
-{%- if include.kind == 'news' -%}
-  {%- assign chronological_items = chronological_dated | reverse | concat: chronological_undated -%}
-{%- elsif include.status == 'past' or include.status == 'upcoming' -%}
+{%- assign eligible = include.items | where_exp: 'item', 'item.alternate != true' | where_exp: 'item', 'item.redirect_to == nil' -%}
+{%- if include.kind == 'events' -%}
+  {%- assign ordered = eligible | sort: 'start_date' -%}
   {%- assign chronological_items = '' | split: ',' -%}
-  {%- assign event_today = include.as_of | default: site.time | date: '%Y-%m-%d' -%}
-  {%- for event in chronological_dated -%}
-    {%- assign event_end = event['end-date'] | default: event.date | date: '%Y-%m-%d' -%}
-    {%- if include.status == 'past' and event_end < event_today -%}
-      {%- assign chronological_items = chronological_items | push: event -%}
-    {%- elsif include.status == 'upcoming' and event_end >= event_today -%}
-      {%- assign chronological_items = chronological_items | push: event -%}
-    {%- endif -%}
+  {%- assign today = include.as_of | default: site.time | date: '%Y-%m-%d' -%}
+  {%- for event in ordered -%}
+    {%- assign end = event.end_date | default: event.start_date | date: '%Y-%m-%d' -%}
+    {%- if include.status == 'past' and end < today -%}{%- assign chronological_items = chronological_items | push: event -%}
+    {%- elsif include.status == 'upcoming' and end >= today -%}{%- assign chronological_items = chronological_items | push: event -%}
+    {%- elsif include.status == nil -%}{%- assign chronological_items = chronological_items | push: event -%}{%- endif -%}
   {%- endfor -%}
+  {%- if include.status == 'past' -%}{%- assign chronological_items = chronological_items | reverse -%}{%- endif -%}
 {%- else -%}
-  {%- assign chronological_items = chronological_dated | concat: chronological_undated -%}
+  {%- assign dated = eligible | where_exp: 'item', 'item.undated != true' | sort: 'date' | reverse -%}
+  {%- assign undated = eligible | where: 'undated', true | sort_natural: 'title' -%}
+  {%- assign chronological_items = dated | concat: undated -%}
 {%- endif -%}

@@ -15,18 +15,8 @@ related-pages:
   title: CHERI Alliance members
   description: See the current members of the Alliance.
   action: Read this page
+summary: Join the organisations and people shaping CHERI and accelerating its adoption.
 ---
-
-1. Alliance
-2. Membership
-3. Membership Benefits &amp; Options
-{: .source-breadcrumbs }
-
-# Membership Benefits &amp; Options
-{: id="page-hero-title" .page-hero-title }
-
-Join the organisations and people shaping CHERI and accelerating its adoption.
-{: .page-hero-summary }
 
 ![CHERI Alliance member logo](/assets/shared/source-assets/edeb264ff3b7-cheri-member.webp){: .image-left }
 
@@ -145,77 +135,3 @@ Join the organisations, researchers and individuals building the CHERI ecosystem
 Whether you want to participate actively, increase your organisation's visibility or simply demonstrate your support for CHERI, there is a membership option for you.
 
 [Contact us](/alliance/membership/contact/) to discuss the best way to get involved.
-
-## Where next
-{: .where-next-title }
-
-### [Contact the Alliance](/alliance/membership/contact/)
-{: .where-next-card-title }
-
-
-
-
-
-[Contact the Alliance for membership, participation, or general enquiries.](/alliance/membership/contact/)
-{: .where-next-summary }
-
-
-
-[Continue](/alliance/membership/contact/)
-{: .source-card-label }
-
-## Related content
-{: .related-pages-title }
-
-### [Why Join?](/alliance/membership/why-join/)
-{: .related-pages-item-title }
-
-
-
-
-
-[An overview of the reasons an organisation may choose to join the CHERI Alliance.](/alliance/membership/why-join/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/alliance/membership/why-join/)
-{: .source-card-label }
-
-
-
-
-
-### [About the CHERI Alliance](/organisations/cheri-alliance/)
-{: .related-pages-item-title }
-
-
-
-
-
-[Learn how the Alliance connects organisations working across the CHERI ecosystem.](/organisations/cheri-alliance/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/organisations/cheri-alliance/)
-{: .source-card-label }
-
-
-
-
-
-### [CHERI Alliance members](/alliance/leadership/members/)
-{: .related-pages-item-title }
-
-
-
-
-
-[See the current members of the Alliance.](/alliance/leadership/members/)
-{: .related-pages-item-summary }
-
-
-
-[Read this page](/alliance/leadership/members/)
-{: .source-card-label }

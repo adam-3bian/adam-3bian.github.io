@@ -3,9 +3,6 @@ title: Introduction
 permalink: /reference/CHERI-seL4-Exercises/introduction/index.html
 ---
 
-# [Introduction](/reference/CHERI-seL4-Exercises/introduction/index.html#introduction)
-{: id="introduction" }
-
 This set of exercises and adversarial missions is intended to:
 
 - Build a baseline skillset with RISC-V and CHERI-RISC-V, as well as awareness

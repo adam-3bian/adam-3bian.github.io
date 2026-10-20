@@ -1,31 +1,26 @@
 ---
 title: SRI
 member: true
+summary: SRI creates and delivers world-changing solutions for a safer, healthier, and more sustainable future.
+  A global leader in R&amp;D with deep roots in Silicon Valley, SRI is an independent nonprofit research institute
+  with a rich history of supporting…
+membership_category: Community Member
+membership_status: Founding member
+links:
+- label: Visit member website
+  url: https://sri.com/
+  kind: website
+  primary: true
+- label: Back to all members
+  url: /alliance/leadership/members/
+  kind: navigation
+thumbnail:
+  src: /assets/organisations/sri/9a4b300a18a6-logo.png
+  alt: SRI logo
+  width: 300
+  height: 112
+  fit: contain
 ---
-
-1. Alliance
-2. Members
-3. SRI
-{: .source-breadcrumbs }
-
-# SRI
-{: id="page-hero-title" .page-hero-title }
-
-SRI creates and delivers world-changing solutions for a safer, healthier, and more sustainable future. A global leader in R&amp;D with deep roots in Silicon Valley, SRI is an independent nonprofit research institute with a rich history of supporting…
-{: .page-hero-summary }
-
-![SRI logo](/assets/organisations/sri/9a4b300a18a6-logo.png){: .image-left }
-{: .entity-media .entity-media--logo }
-
-Status
-: Founding member
-
-Membership
-: Community Member
-
-Website
-: [Visit member website](https://sri.com/)
-{: .entity-facts }
 
 ## Description
 {: id="description" }
@@ -41,6 +36,3 @@ Since 2010, SRI has partnered with the University of Cambridge to develop CHERI.
 {: id="open-source-assets-for-cheri" }
 
 [https://www.cheribsd.org](https://www.cheribsd.org)
-
-[Back to all members](/alliance/leadership/members/)
-{: .entity-back }

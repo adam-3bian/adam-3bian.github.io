@@ -1,31 +1,24 @@
 ---
 title: University of Glasgow
 member: true
+summary: A Russell Group university with a strong sense of civic mission.
+membership_category: Community Member
+membership_status: Founding member
+links:
+- label: Visit member website
+  url: https://www.gla.ac.uk/
+  kind: website
+  primary: true
+- label: Back to all members
+  url: /alliance/leadership/members/
+  kind: navigation
+thumbnail:
+  src: /assets/organisations/university-of-glasgow/abfc70878444-logo.png
+  alt: University of Glasgow logo
+  width: 647
+  height: 201
+  fit: contain
 ---
-
-1. Alliance
-2. Members
-3. University of Glasgow
-{: .source-breadcrumbs }
-
-# University of Glasgow
-{: id="page-hero-title" .page-hero-title }
-
-A Russell Group university with a strong sense of civic mission.
-{: .page-hero-summary }
-
-![University of Glasgow logo](/assets/organisations/university-of-glasgow/abfc70878444-logo.png){: .image-left }
-{: .entity-media .entity-media--logo }
-
-Status
-: Founding member
-
-Membership
-: Community Member
-
-Website
-: [Visit member website](https://www.gla.ac.uk/)
-{: .entity-facts }
 
 ## Description
 {: id="description" }
@@ -41,6 +34,3 @@ Engagement with the Digital Security by Design UKRI research projects. Contribut
 {: id="open-source-assets-for-cheri" }
 
 MicroPython; Boehm Garbage Collector;
-
-[Back to all members](/alliance/leadership/members/)
-{: .entity-back }

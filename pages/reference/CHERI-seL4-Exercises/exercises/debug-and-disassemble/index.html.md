@@ -3,9 +3,6 @@ title: Disassemble and debug RISC-V and CHERI-RISC-V programs
 permalink: /reference/CHERI-seL4-Exercises/exercises/debug-and-disassemble/index.html
 ---
 
-# [Disassemble and debug RISC-V and CHERI-RISC-V programs](/reference/CHERI-seL4-Exercises/exercises/debug-and-disassemble/index.html#disassemble-and-debug-risc-v-and-cheri-risc-v-programs)
-{: id="disassemble-and-debug-risc-v-and-cheri-risc-v-programs" }
-
 This exercise steps you through disassembling and debugging
 RISC-V and CHERI-RISC-V programs. It draws attention to differences in
 program structure and code generation, particularly relating to control
