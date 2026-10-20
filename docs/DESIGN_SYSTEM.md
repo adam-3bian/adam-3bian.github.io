@@ -119,7 +119,7 @@ List/Grid controls retain one record DOM, search, filters, sorting, result count
 
 Directory fields and view controls use scalable minimum heights rather than fixed heights. Their padding and text must fit when browser text is enlarged to 200%; filter widths can grow and wrap onto another row. The search icon is vertically centred independently of the input's line height.
 
-Contact/newsletter forms still submit natively when front matter supplies an action. Without one, the published-service fallback remains honest and usable. Presentation tests must not send real messages or invent endpoints.
+Contact/newsletter forms submit natively when front matter supplies `form.action`, with `form.method` defaulting to `post`. The contact include always shows its existing labelled fields. Without an action, those fields use a non-submitting group, the Send button is disabled, and the published contact link explains how to send an enquiry. Configuring an action replaces that group with a live native form automatically. The newsletter keeps its published-service link when no action is configured. Presentation tests must not send real messages or invent endpoints.
 
 ## Verification and references
 

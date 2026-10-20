@@ -7,8 +7,7 @@ layout: default
 {% if page.opportunity_type %}<dl class="simple-facts"><div><dt>Opportunity</dt><dd>{{ page.opportunity_type | escape }}</dd></div><div><dt>Location</dt><dd>{{ page.location | escape }} · {{ page.working_pattern | escape }}</dd></div><div><dt>Posted</dt><dd>{% include date.html value=page.posted_date %}</dd></div><div><dt>Experience</dt><dd>{{ page.experience | escape }}</dd></div><div><dt>Relevant skills</dt><dd>{{ page.skills | join: ', ' | escape }}</dd></div>{% for fact in page.additional_facts %}<div><dt>{{ fact.label | escape }}</dt><dd>{{ fact.value | markdownify }}</dd></div>{% endfor %}</dl>{% endif %}
 {% comment %}Retire obsolete preview UI copy at render time; authored Markdown remains unchanged.{% endcomment %}
 {% if page.url == '/alliance/membership/contact/' %}
-  {% if page.form.action %}{% assign content = content | remove: ' This preview does not send messages.' %}
-  {% else %}{% assign content = content | remove: '<p>Use the enquiry form below to explore the contact options. This preview does not send messages.</p>' %}{% endif %}
+  {% assign content = content | remove: ' This preview does not send messages.' %}
 {% elsif page.url == '/news-and-events/news-and-analysis/subscribe-newsletter/' %}
   {% assign content = content | remove: '<p>The signup form below is a preview and does not subscribe you.</p>' %}
 {% endif %}

@@ -155,9 +155,12 @@ with sync_playwright() as p:
                 destinations=page.locator('.index-navigation a,.index-more a').evaluate_all('ns=>ns.map(n=>n.getAttribute("href"))')
                 assert len(destinations)==len(set(destinations)),(route,'repeated category options')
             if route=='alliance/membership/contact/':
-                assert page.locator('.form-panel form,.form-panel :disabled').count()==0
+                assert page.locator('.form-panel form').count()==0
+                assert page.locator('.form-panel input,.form-panel select,.form-panel textarea').count()==5
+                assert page.locator('.form-panel button').is_disabled()
+                assert page.locator('.form-panel button').get_attribute('type')=='button'
                 assert 'preview' not in page.locator('main').inner_text().lower()
-                assert page.locator('.form-panel a.button').get_attribute('href')=='https://cheri-alliance.org/contact/#contact_form'
+                assert page.locator('.form-panel #cheri-contact-status a').get_attribute('href')=='https://cheri-alliance.org/contact/#contact_form'
                 headings=page.locator('#where-next,#related-pages').evaluate_all('ns=>ns.map(n=>{const s=getComputedStyle(n);return [s.fontSize,s.fontWeight,s.textTransform,s.color]})')
                 assert headings[0]==headings[1],headings
             if route=='people/adam-finney/':
@@ -197,6 +200,12 @@ with sync_playwright() as p:
     assert page.locator('[data-catalog-list]>li:visible').count()==111
     assert page.locator('.placeholder-image').count()>0
     page.goto(URL+'alliance/');assert page.locator('.index-navigation a').count()==18
+    page.goto(URL+'alliance/membership/contact/')
+    assert page.locator('.form-panel input,.form-panel select,.form-panel textarea').count()==5
+    assert page.locator('.form-panel button').is_disabled()
+    page.locator('#cheri-contact-email-4').fill('form-check@example.test')
+    page.locator('#cheri-contact-email-4').press('Enter')
+    assert page.url==URL+'alliance/membership/contact/', 'Unconfigured fields must not navigate or submit'
     b.close()
 (OUT/'results.json').write_text(json.dumps(results,indent=2)+'\n')
 print(json.dumps({'responsive_views':len(results),'axe_views':len(routes)*2,'menu_options':len(expected),'no_javascript':'passed'}))
