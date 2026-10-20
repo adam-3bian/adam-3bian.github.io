@@ -8,7 +8,7 @@ $font-weight-regular: 400;
 $font-weight-medium: 500;
 $font-weight-semibold: 600;
 $line-height-body: 1.5;
-$line-height-heading: 1.15;
+$line-height-heading: 1.3;
 $font-size-heading-1: clamp(2.25rem, 5vw, 3.25rem);
 $font-size-heading-2: clamp(1.5rem, 3vw, 2rem);
 $font-size-heading-3: 1.25rem;
@@ -29,7 +29,7 @@ $letter-spacing-heading-2: -0.025em;
 $letter-spacing-heading-3: -0.02em;
 $letter-spacing-hero: -0.055em;
 $letter-spacing-interface: -0.01em;
-$letter-spacing-menu-group: 0.01em;
+$letter-spacing-menu-group: 0;
 $letter-spacing-footer: 0.01em;
 
 // Layout
@@ -99,6 +99,7 @@ $overlay-gutter: $space-4;
 
 // Brand foundations. Component roles below share these values in both page palettes.
 $brand-navy: #152b3b;
+$brand-blue: #125770;
 $brand-teal: #075d80;
 $brand-teal-deep: #064762;
 $brand-cyan: #b9e2f1;
@@ -113,7 +114,7 @@ $colour-page-edge: #f0f3f5;
 $colour-watermark: rgba(#125770, 0.32);
 $colour-link-hover: $brand-teal-deep;
 $colour-header: #ffffff;
-$colour-submenu: #125770;
+$colour-submenu: $brand-blue;
 $colour-navigation-hover: #e6eef3;
 $colour-submenu-hover: #0b4158;
 $colour-hero: #e7f1f7;
@@ -133,7 +134,7 @@ $colour-footer-text: #ffffff;
 $colour-footer-muted: #d1d6df;
 $colour-control: #fff;
 $colour-control-border: #718897;
-$colour-button: $brand-teal;
+$colour-button: $brand-blue;
 $colour-button-hover: $brand-teal-deep;
 $colour-button-text: #fff;
 
@@ -143,7 +144,7 @@ $theme-light: (
   muted: $colour-muted,
   surface-soft: #f1f5f7,
   border: #d0dde5,
-  accent: $brand-teal,
+  accent: $brand-blue,
   accent-soft: #e7f3f8,
   brand-accent: $brand-red,
   brand-accent-hover: $brand-red-deep,

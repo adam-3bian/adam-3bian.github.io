@@ -1,5 +1,5 @@
 .slider { --slider-min-interval: #{$slider-min-interval}; min-width: 0; }
-.slider-track { display: grid; }
+.slider-track { background: var(--gradient-brand); border-radius: calc(var(--radius) + 8px); box-shadow: var(--elevation-2); display: grid; padding: $space-2; }
 .slide { display: grid; min-width: 0; }
 .slide-link {
   display: grid;
@@ -30,6 +30,7 @@ a.slide-link { cursor: pointer; }
 }
 .slide-media .image-contain { background: var(--colour-image-background); }
 .slide-copy { align-self: center; min-width: 0; }
+.slider .slide-copy h2 { font-size: var(--type-section); }
 .slide-copy > * + * { margin-top: $space-4; }
 .slide-copy .card-action { margin-top: $space-5; }
 .slider-controls {
@@ -64,4 +65,5 @@ a.slide-link { cursor: pointer; }
 }
 
 // Shared brand treatment; reading surfaces stay opaque.
-.slider .slide-link { box-shadow: 0 5px 20px rgba(0, 0, 0, .16); }
+.slider .slide-link { box-shadow: none; }
+.slider:has(a.slide-link:hover) .slider-track { box-shadow: var(--elevation-3); }

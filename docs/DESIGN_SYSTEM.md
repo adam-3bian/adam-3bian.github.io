@@ -6,18 +6,18 @@ The CHERI catalogue uses a common container, type system and component vocabular
 
 The site container is 1264px including 20px mobile and 32px desktop gutters, giving a 1200px content area on wide screens. Header/footer surfaces span the viewport; their inner content aligns with the main canvas. News, ordinary pages and collection details use the available width. A collection article fills the content container when it has no aside, or fills its allocated left column when facts and resources occupy the right.
 
-Only `/` uses the dark palette and the original homepage composition. Its Poppins text treatment is retained. Other pages are light, with Poppins headings and a system sans-serif for body copy, controls and supporting facts. There is no theme toggle, stored theme preference or automatic system-theme selection.
+Only `/` uses the dark palette and the original homepage composition. Its Poppins text treatment is retained. Other pages are light, with Poppins headings, navigation, buttons and card titles, and a system sans-serif for body copy, form inputs and supporting facts. There is no theme toggle, stored theme preference or automatic system-theme selection.
 
 Use solid reading surfaces, quiet borders and restrained brand accents. Decorative gradients and transparent section backgrounds may surround them; never put text directly over honeycomb artwork or a gradient. The newsletter uses a plain white foreground panel over a blue decorative band. The original honeycomb remains visible in page gutters and the newsletter band. Do not apply translucency to reading surfaces or put a raised wrapper around every article. Common corner radii are 8px; utility controls and media frames may use 4–8px. Navigation hover/focus states provide emphasis without giving passive panels an interactive appearance. Whole-card titles are not underlined on hover; border, surface, shadow and keyboard outline communicate the interaction. Ordinary inline links retain underlines.
 
-Colour roles are defined once in the theme maps in `settings.scss`. Catalogue names such as `--accent`, `--ink` and `--surface` alias these roles; do not introduce a competing palette or hard-code a second primary-button colour in a component.
+Colour roles are defined once in the theme maps in `settings.scss`. `tokens.scss` defines the shared type, radius, gradient and elevation roles and aliases the theme colours as `--accent`, `--ink` and `--surface`. Do not introduce a competing palette or hard-code a second primary-button colour in a component.
 
 | Role | Light pages | Homepage |
 | --- | --- | --- |
 | Main text | Navy `#152b3b` | White |
 | Supporting text | `#526574` | `#d1d6df` |
-| Links and accents | Teal `#075d80` | Cyan `#b9e2f1` |
-| Primary controls / selected view | Teal with white text | Cyan with dark text |
+| Links and accents | Logo blue `#125770` | Cyan `#b9e2f1` |
+| Primary controls / selected view | Logo blue with white text | Cyan with dark text |
 | Secondary surfaces | `#f1f5f7` | `#102a38` |
 | Quiet borders | `#d0dde5` | `#3f6174` |
 | Limited brand action | Red `#ba1e1e` with white text | The same red/white pairing |
@@ -27,6 +27,33 @@ Red is reserved for the existing join action and newsletter action cue. The join
 The homepage hero keeps its opening statement largest, supporting statement smaller, and existing concluding CHERI statement in cyan. Text comes directly from the existing fields. The hero and slider share a 1px border family. The hero has square corners and only a bottom keyline; no side or top border. It has no hover or clickable behaviour. Homepage panels use quiet dark surfaces and cyan headings, while actual links retain underlines or explicit action cues.
 
 Use the spacing tokens in `settings.scss`. Close spacing joins related facts; record spacing supports scanning; section spacing separates topics. Directory headers and toolbars are compact. Breadcrumb list items have their own compact rhythm instead of inheriting full menu-row heights.
+
+## Material principles within the CHERI identity
+
+The implementation adapts [Material's limited elevation system](https://material-web.dev/components/elevation/) and [purpose-based typography roles](https://m3.material.io/styles/typography/applying-type), alongside [Bootstrap's responsive typography](https://getbootstrap.com/docs/5.3/content/typography/) and [shared spacing scale](https://getbootstrap.com/docs/5.3/utilities/spacing/). These are design references, not runtime dependencies. Existing fonts, native HTML controls and the Jekyll asset pipeline remain in use.
+
+| Shared type role | Value | Use |
+| --- | --- | --- |
+| `--type-page` | Responsive 2–3rem | Page and record titles |
+| `--type-section` | Responsive 1.375–1.75rem | Article sections, related sections, slider feature title and newsletter heading |
+| `--type-title` | 1.125rem | Record titles, menu groups, category groups, glossary terms and resource headings |
+| `--type-body` | 1.0625rem, 1rem for mobile prose | Reading text |
+| `--type-label` | .875rem | Metadata, controls, breadcrumbs and supporting labels |
+
+Use sentence case without uppercase transforms or tracked-out labels. Preserve the source capitalisation of names and acronyms. Mobile layouts use the same roles rather than unrelated heading sizes. Headings use weight 600 and a comfortable 1.3 line height, with a tighter page-title line height and the existing distinct hero scale. Body text uses 1.65 line height. Menu options remain at the established navigation size.
+
+| Elevation role | Use |
+| --- | --- |
+| `--elevation-0` | Reading canvas, compact list rows and passive panels |
+| `--elevation-1` | Standalone navigation cards and primary buttons at rest |
+| `--elevation-2` | Slider frame, newsletter foreground, card/button hover and desktop flyouts |
+| `--elevation-3` | Expanded mega-menu and slider hover |
+
+Shadows combine a short contact shadow with a softer ambient shadow, using navy on light pages and a deeper shadow on the homepage. Hover changes surface, border and elevation without translating the component or underlining the whole link. Compact rows retain their flat elevation on hover. Focus adds a separate 3px outline; selected controls retain their filled surface and heavier label. Disabled buttons use a solid quiet surface, muted text, no shadow and the disabled cursor. Reduced motion disables component transitions.
+
+The navy-to-blue `--gradient-brand` is visible in the slider's 8px frame and the newsletter surround. The horizontal `--gradient-soft` sits between opaque Grid-view cards, so its colour remains visible even in very long directories. `--gradient-gutter` supports the honeycomb outside the reading canvas. Gradients never sit directly under writing. Product annotations also have an opaque backing when they share a grid item with a card. List view remains a plain, compact surface, and switching layouts preserves the same records and controls.
+
+Mega-menu group headings use the same Poppins title role as category groups, with cyan on the solid logo-blue menu. Expanded mobile group headings retain that colour. Every option, destination, group and order remains governed by the existing navigation data. Footer groups use the same title treatment. Red remains limited to the established important actions.
 
 ## Cards, panels and annotations
 
@@ -42,6 +69,8 @@ Use the spacing tokens in `settings.scss`. Close spacing joins related facts; re
 Do not nest interactive controls or use stretched-link overlays, `onclick` containers or duplicated hidden card sets. Preserve all existing destinations and actions. Summaries remain canonical detail introductions and searchable data even when cards do not display them.
 
 `card.html` supplies shared record cards. Listings do not append the old `listing-notes.html` output. `section-cards.html` arranges complete authored multi-link homepage sections; these remain editorial panels. Category indices use the existing mega-menu groups and options as compact cards, followed by any additional authored or child destinations once each. The menu itself retains every option, group, destination and order. Homepage slides retain their authored promotional content.
+
+Do not repeat the generic “Introduction” resource label above a destination whose title already explains it. That value remains in front matter. Useful distinctions such as Standard, Specification, event status and dates remain visible in the shared sentence-case label style. Directory headers omit the generated “Explore the CHERI ecosystem” eyebrow and the duplicate collection name beside the result count. Keep the count and every search, sort and filter control.
 
 `talk-card.html` applies the same distinction to CHERI talks from the canonical registry. A talk with exactly one distinct destination is one native navigation-card link. Talks with multiple destinations are passive content panels with separate event/resource links; a talk with no destinations remains a complete passive record. Preserve title, date, event, location, action labels and registry order. On wide screens, actions align to the right of the talk copy; on mobile they wrap beneath it. Titles and metadata use the catalogue scale, and resource actions have 44px minimum targets. `resource-action.html` supplies the same labelled link treatment for talks and detail resources; do not add a separate miniature talk-link style.
 
@@ -69,13 +98,13 @@ The output-disabled `_glossary` collection contains one Markdown file per term. 
 
 Terms sit directly above their definitions, with a nearby permalink and a quiet letter rail. Entries remain open. The alphabet is a single scrolling strip on narrow screens; all letters are accessible by touch or keyboard. Search matches terms and definitions, reports the result count and offers clear/reset controls. Hash navigation clears a conflicting filter and reveals the target, including browser back/forward and repeated same-hash links. Without JavaScript, all definitions, links and the alphabet remain available.
 
-Letter markers use a small accent surface and keyline; terms use the shared Poppins heading family. A directly targeted entry receives a pale highlight with an outlined term. This is a reference cue, not a per-entry card or collapsed disclosure.
+Letter markers use a solid logo-blue surface and white lettering; terms use the shared Poppins title role. The alphabet strip has a quiet solid surface. A directly targeted entry receives a pale highlight with an outlined term. This is a reference cue, not a per-entry card or collapsed disclosure.
 
 The light-page mega-menu uses the logo’s `#125770` blue with white text and clear focus states; the homepage retains its dark treatment. Keep Unicode `▼`/`▲` menu indicators decorative and synchronised with expanded states. Preserve visible focus, 44px controls, no-JavaScript content and reduced-motion behaviour. Overflowing tables and code examples gain keyboard focus through the shared content enhancement; their text remains intact.
 
 ## Verification
 
-Run `check_content.py`, `check_refinement.py`, `test_event_status.rb`, `test_catalog.py`, `test_layouts.py`, `test_presentation.py` and `test_refinement.py` against safe-mode root and baseurl builds as appropriate. The refinement fixtures are preservation evidence, not an authoring source. Update them deliberately for reviewed editorial changes. See [the refinement review](REFINEMENT_REVIEW.md) and [colour and component review](screenshots/colour-refinement/README.md) for measured outcomes and matching screenshots.
+Run `check_content.py`, `check_refinement.py`, `test_event_status.rb`, `test_forms.rb`, `test_catalog.py`, `test_layouts.py`, `test_presentation.py`, `test_refinement.py` and `test_consistency.py` against safe-mode root and baseurl builds as appropriate. The consistency suite checks visible resting depth, gradient surrounds, plain surfaces behind text, menu heading roles and the absence of redundant labels as well as the existing interaction contract. The refinement fixtures are preservation evidence, not an authoring source. Update them deliberately for reviewed editorial changes. See [the Material refinement review](screenshots/material-refinement/README.md) for the latest matching screenshots and measured outcomes.
 
 ## Supporting navigation and forms
 

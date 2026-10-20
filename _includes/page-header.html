@@ -1,7 +1,7 @@
 {% assign page_kind = site.data.catalog[page.collection] %}
 <header class="page-heading{% if page.hero %} is-landing{% endif %}{% if include.detail %} record-header{% endif %}">
   <div class="heading-copy">
-    {% if page_kind %}<p class="eyebrow"><a href="{{ page.parent | relative_url }}">{{ page_kind.label | escape }}</a>{% if page.alternate %}<span> / Archived version</span>{% endif %}</p>{% elsif page.directory %}<p class="eyebrow">Explore the CHERI ecosystem</p>{% endif %}
+    {% if page_kind %}<p class="eyebrow"><a href="{{ page.parent | relative_url }}">{{ page_kind.label | escape }}</a>{% if page.alternate %}<span> / Archived version</span>{% endif %}</p>{% endif %}
     <span id="page-hero-title" class="anchor-alias"></span><span id="hero-title" class="anchor-alias"></span>
     <h1 id="page-title">{{ page.display_title | default: page.title | escape }}</h1>
     {% if include.article %}<div class="article-byline">{% unless page.undated %}{% if page.date %}{% include date.html value=page.date %}{% endif %}{% endunless %}{% if page.authors.size > 0 %}<span class="byline-divider" aria-hidden="true">·</span><span>{% include field-value.html value=page.authors type='people' %}</span>{% endif %}</div>{% endif %}

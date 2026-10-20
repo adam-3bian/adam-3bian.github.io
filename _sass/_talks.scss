@@ -3,7 +3,7 @@
 .talk-list > li { min-width: 0; }
 .talk-card { display: block; padding: 1.25rem; }
 .talk-copy { min-width: 0; }
-.talk-date { color: var(--muted); font-size: .8125rem; font-variant-numeric: tabular-nums; margin-bottom: .35rem; }
+.talk-date { color: var(--muted); font-size: var(--type-label); font-variant-numeric: tabular-nums; margin-bottom: .35rem; }
 .talk-card .catalog-meta a { color: var(--accent); }
 .talk-actions { display: flex; flex-wrap: wrap; gap: .5rem; list-style: none; margin: .85rem 0 0; padding: 0; }
 .talk-actions .resource-link { background: var(--surface); gap: .65rem; min-height: 44px; padding: .6rem .75rem; }

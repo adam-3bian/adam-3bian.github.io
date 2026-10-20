@@ -16,7 +16,7 @@ def links(items):
         result+=links(item.get('subcategories',[]))+links(item.get('links',[]))
     return result
 expected=links(config['navigation']['header'])
-routes=['','alliance/','build/','news-and-events/','people/?view=grid','alliance/leadership/members/?view=list','alliance/leadership/members/?view=grid','people/adam-finney/','news-and-events/events-and-archive/cheri-blossoms/','alliance/membership/contact/']
+routes=['','alliance/','build/','news-and-events/','people/?view=grid','alliance/leadership/members/?view=list','alliance/leadership/members/?view=grid','people/adam-finney/','news-and-events/events-and-archive/cheri-blossoms/','alliance/membership/contact/','discover/resources/videos-and-presentations/']
 results=[]
 with sync_playwright() as p:
     b=p.chromium.launch(executable_path=os.environ.get('CHROMIUM_EXECUTABLE'),args=['--no-sandbox'])
@@ -31,7 +31,37 @@ with sync_playwright() as p:
             wanted=[[(prefix+u if u.startswith('/') else u),t] for u,t in expected]
             assert actual==wanted,(route,'mega-menu options changed')
             assert page.locator('a a,a button').count()==0
-            assert page.locator('.listing-notes,.catalog-context,.catalog-summary').count()==0
+            assert page.locator('.listing-notes,.catalog-context,.catalog-summary,.catalog-hint').count()==0
+            assert 'Introduction' not in page.locator('.card-kicker').all_text_contents()
+            for label in page.locator('.eyebrow,.card-kicker').all():
+                assert label.evaluate("e=>getComputedStyle(e).textTransform")=='none'
+                assert label.evaluate("e=>parseFloat(getComputedStyle(e).fontSize)")>=14
+            # Writing must meet an opaque, plain surface before any gradient surround.
+            def assert_plain_text_surfaces():
+                failures=page.evaluate(r"""()=>{
+                  const bad=[],walk=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
+                  while(walk.nextNode()){
+                    const text=walk.currentNode,e=text.parentElement;
+                    if(!text.textContent.trim()||!e||e.closest('script,style,noscript,svg,[hidden],[inert]'))continue;
+                    const range=document.createRange();range.selectNodeContents(text);
+                    if(!range.getBoundingClientRect().width||getComputedStyle(e).visibility!=='visible')continue;
+                    for(let n=e;n;n=n.parentElement){
+                      const s=getComputedStyle(n);
+                      if(s.backgroundImage!=='none'){bad.push({text:text.textContent.trim().slice(0,60),surface:n.className});break;}
+                      const rgb=s.backgroundColor.match(/[\d.]+/g)||[];
+                      if(rgb.length===3||(rgb.length===4&&Number(rgb[3])===1))break;
+                    }
+                  }
+                  return bad;
+                }""")
+                assert not failures,(width,route,'text over decoration',failures)
+            assert_plain_text_surfaces()
+            if '?view=grid' in route:
+                assert 'linear-gradient' in page.locator('[data-catalog-list]').evaluate('e=>getComputedStyle(e).backgroundImage')
+                assert page.locator('a.catalog-card').first.evaluate('e=>getComputedStyle(e).boxShadow')!='none'
+            if route=='discover/resources/videos-and-presentations/':
+                assert page.locator('.card-kicker').count()==0
+                assert page.locator('.record-list a.catalog-card').first.evaluate('e=>getComputedStyle(e).boxShadow')=='none'
             nav=page.locator('main a.catalog-card').first
             if nav.count():
                 nav.hover();page.wait_for_timeout(50)
@@ -45,6 +75,10 @@ with sync_playwright() as p:
             if route=='':
                 hero=page.locator('.hero')
                 assert hero.evaluate("e=>{const s=getComputedStyle(e);return [s.borderTopWidth,s.borderRightWidth,s.borderBottomWidth,s.borderLeftWidth]}")==['0px','0px','1px','0px']
+                track=page.locator('.slider-track')
+                assert 'linear-gradient' in track.evaluate('e=>getComputedStyle(e).backgroundImage')
+                assert track.evaluate('e=>getComputedStyle(e).boxShadow')!='none'
+            assert 'linear-gradient' in page.locator('.site-call-to-action').evaluate('e=>getComputedStyle(e).backgroundImage')
             if route.startswith('people/?'):
                 assert page.locator('.catalog-media').count()==111
                 first=page.locator('[data-title="A. Theodore Markettos"]')
@@ -77,6 +111,11 @@ with sync_playwright() as p:
                 assert trigger.locator('.menu-indicator').inner_text()=='▲'
                 if width<1000:page.locator('#nav-4 .menu-group-toggle').first.click()
                 assert page.locator('#nav-4').evaluate('e=>getComputedStyle(e).backgroundColor')=='rgb(18, 87, 112)'
+                group=page.locator('#nav-4 .menu-group-title:visible').first
+                assert group.evaluate('e=>getComputedStyle(e).fontSize')=='18px'
+                assert group.evaluate('e=>getComputedStyle(e).color')=='rgb(185, 226, 241)'
+                assert page.locator('#nav-4').evaluate('e=>getComputedStyle(e).boxShadow')!='none'
+                assert_plain_text_surfaces()
             violations=[]
             if width in [390,1440]:
                 page.add_script_tag(path=str(AXE))
@@ -99,4 +138,4 @@ with sync_playwright() as p:
     page.goto(URL+'alliance/');assert page.locator('.index-navigation a').count()==18
     b.close()
 (OUT/'results.json').write_text(json.dumps(results,indent=2)+'\n')
-print(json.dumps({'responsive_views':len(results),'axe_views':20,'menu_options':len(expected),'no_javascript':'passed'}))
+print(json.dumps({'responsive_views':len(results),'axe_views':len(routes)*2,'menu_options':len(expected),'no_javascript':'passed'}))
