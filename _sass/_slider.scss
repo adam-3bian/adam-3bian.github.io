@@ -62,3 +62,6 @@ a.slide-link { cursor: pointer; }
 @media (min-width: $desktop-breakpoint) {
   .slide-link { grid-template-columns: minmax(0, $slider-image-share) minmax(0, $slider-copy-share); }
 }
+
+// Shared brand treatment; reading surfaces stay opaque.
+.slider .slide-link { box-shadow: 0 5px 20px rgba(0, 0, 0, .16); }

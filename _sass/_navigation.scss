@@ -135,3 +135,8 @@ html:not(.js) .menu-group-links[hidden] { display: grid; }
   .js .submenu.menu-docked.docked-left { left: $menu-viewport-gap; right: auto; }
   .js .megamenu.menu-docked { left: $menu-viewport-gap; }
 }
+
+// Shared brand treatment; reading surfaces stay opaque.
+body[data-theme="light"] .site-header .submenu { color: #fff; --colour-focus: #b9e2f1; --colour-link-hover: #fff; --colour-submenu-level-2: #0f4c64; --colour-submenu-level-3: #0c4359; --colour-submenu-level-4: #0a394e; --colour-submenu-hover-level-2: #08384d; --colour-submenu-hover-level-3: #082f43; --colour-submenu-hover-level-4: #062b3e; }
+body[data-theme="light"] .site-header .submenu-toggle[aria-expanded="true"] { color: #fff; --colour-navigation-hover: #0b4158; }
+.site-header .submenu { box-shadow: 0 8px 18px rgba(9, 26, 36, .2); }

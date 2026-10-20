@@ -218,3 +218,7 @@ img {
 .index-list > h2 { margin-bottom: $heading-gap; }
 .content > .index-list:not(:first-child) { margin-top: $subsection-gap; }
 .section-intro { margin-bottom: $space-6; max-width: $text-width; }
+
+// Shared brand treatment; reading surfaces stay opaque.
+body { background-image: linear-gradient(115deg, #e1edf3, #f1f5f7 45%, #dcebf2); }
+body.home-page { background-image: linear-gradient(115deg, #06151e, #0d2c3a 55%, #06151e); }

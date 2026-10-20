@@ -29,35 +29,35 @@
 {% if related_orgs.size > 0 %}
 <section class="related-content" data-relationship="organization" aria-labelledby="organizations-title">
   <h2 id="organizations-title">Organisations</h2>
-  {% include listing.html items=related_orgs label="Organisations" kind="organisations" heading="h3" compact=true columns=3 %}
+  {% include listing.html items=related_orgs label="Organisations" kind="organisations" heading="h3" compact=true metadata=false columns=3 %}
 </section>{% endif %}
 {% if linked_speakers.size > 0 and page.speaker_sections != true %}
 <section class="related-content" data-relationship="speakers" aria-labelledby="speakers-title">
   <h2 id="speakers-title">Speakers</h2>
-  {% include listing.html items=linked_speakers label="Speakers" kind="people" heading="h3" compact=true columns=3 %}
+  {% include listing.html items=linked_speakers label="Speakers" kind="people" heading="h3" compact=true metadata=false columns=3 %}
 </section>{% endif %}
 
 {% if related_events.size > 0 %}
 <section class="related-content" data-relationship="events" aria-labelledby="events-title">
   <h2 id="events-title">Events</h2>
   {% include chronological-items.html items=related_events kind='events' %}
-  {% include listing.html items=chronological_items label="Events" kind="events" heading="h3" action="View event" columns=3 %}
+  {% include listing.html items=chronological_items label="Events" kind="events" heading="h3" action="View event" metadata=false columns=3 %}
 </section>{% endif %}
 {% if related_papers.size > 0 %}
 <section class="related-content" data-relationship="papers" aria-labelledby="papers-title">
   <h2 id="papers-title">Publications</h2>
-  {% include listing.html items=related_papers label="Publications" kind="papers" heading="h3" compact=true columns=2 %}
+  {% include listing.html items=related_papers label="Publications" kind="papers" heading="h3" compact=true metadata=false columns=2 %}
 </section>{% endif %}
 {% if related_people.size > 0 %}
 <section class="related-content" data-relationship="people" aria-labelledby="people-title">
   <h2 id="people-title">People</h2>
-  {% include listing.html items=related_people label="People" kind="people" heading="h3" compact=true columns=3 %}
+  {% include listing.html items=related_people label="People" kind="people" heading="h3" compact=true metadata=false columns=3 %}
 </section>{% endif %}
 {% if related_news.size > 0 %}
 <section class="related-content" data-relationship="news" aria-labelledby="news-title">
   <h2 id="news-title">News articles</h2>
   {% include chronological-items.html items=related_news kind='news' %}
-  {% include listing.html items=chronological_items label="News articles" kind="news" heading="h3" action="Read article" columns=3 %}
+  {% include listing.html items=chronological_items label="News articles" kind="news" heading="h3" action="Read article" metadata=false columns=3 %}
 </section>{% endif %}
 {% if site.data['governing-board'] contains record_id and page.collection == 'people' %}
 <section class="related-content" data-relationship="governing-board" aria-labelledby="board-title">

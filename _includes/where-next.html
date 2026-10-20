@@ -1,8 +1,8 @@
 {% assign onward = page['where-next'] %}
 {% if onward.url %}
 {% assign onward_items = '' | split: ',' | push: onward %}
-<section class="call-to-action" aria-labelledby="where-next"{% if source_where_next %} data-source-component="where-next"{% endif %}>
+<section class="related-content" aria-labelledby="where-next"{% if source_where_next %} data-source-component="where-next"{% endif %}>
   <h2 id="where-next">Where next</h2>
-  {% include listing.html items=onward_items resolve=true mode='onward' heading='h3' action='Continue' %}
+  {% include listing.html items=onward_items resolve=true mode='onward' images=false metadata=false heading='h3' action='Continue' %}
 </section>
 {% endif %}

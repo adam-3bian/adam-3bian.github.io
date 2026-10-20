@@ -23,7 +23,3 @@
   .hero { margin-inline: -$gutter-desktop; padding: $hero-padding-desktop $gutter-desktop; }
   .hero-large h1 { font-size: $font-size-hero-desktop; }
 }
-// The hero meets the header and viewport squarely; inset lower corners share the slider frame.
-@media (min-width: $max-site) {
-  .hero { border-inline: 1px solid var(--border); border-radius: 0 0 var(--radius) var(--radius); padding-inline: calc(#{$gutter-desktop} - 1px); }
-}

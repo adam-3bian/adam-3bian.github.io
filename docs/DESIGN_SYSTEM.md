@@ -8,7 +8,7 @@ The site container is 1264px including 20px mobile and 32px desktop gutters, giv
 
 Only `/` uses the dark palette and the original homepage composition. Its Poppins text treatment is retained. Other pages are light, with Poppins headings and a system sans-serif for body copy, controls and supporting facts. There is no theme toggle, stored theme preference or automatic system-theme selection.
 
-Use solid reading surfaces, quiet borders and restrained brand accents. The original honeycomb remains visible in page gutters and the newsletter band. Do not apply translucency to reading surfaces or put a raised wrapper around every article. Common corner radii are 8px; utility controls and media frames may use 4–8px. Navigation hover/focus states provide emphasis without giving passive panels an interactive appearance.
+Use solid reading surfaces, quiet borders and restrained brand accents. Decorative gradients and transparent section backgrounds may surround them; never put text directly over honeycomb artwork or a gradient. The newsletter uses a plain white foreground panel over a blue decorative band. The original honeycomb remains visible in page gutters and the newsletter band. Do not apply translucency to reading surfaces or put a raised wrapper around every article. Common corner radii are 8px; utility controls and media frames may use 4–8px. Navigation hover/focus states provide emphasis without giving passive panels an interactive appearance. Whole-card titles are not underlined on hover; border, surface, shadow and keyboard outline communicate the interaction. Ordinary inline links retain underlines.
 
 Colour roles are defined once in the theme maps in `settings.scss`. Catalogue names such as `--accent`, `--ink` and `--surface` alias these roles; do not introduce a competing palette or hard-code a second primary-button colour in a component.
 
@@ -24,7 +24,7 @@ Colour roles are defined once in the theme maps in `settings.scss`. Catalogue na
 
 Red is reserved for the existing join action and newsletter action cue. The join action is a compact native link, not a full-width red band. Newsletter cues remain spans inside their existing single-link cards. Red is not a selection state, collection category or status colour. Selected List/Grid controls use a filled surface and stronger label weight; hover changes the surface, and keyboard focus adds a separate outline.
 
-The homepage hero keeps its opening statement largest, supporting statement smaller, and existing concluding CHERI statement in cyan. Text comes directly from the existing fields. The hero and slider share a 1px border family. Hero upper corners remain square against the header; lower corners use the 8px radius only when inset on screens at least 1264px wide. It has no hover or clickable behaviour. Homepage panels use quiet dark surfaces and cyan headings, while actual links retain underlines or explicit action cues.
+The homepage hero keeps its opening statement largest, supporting statement smaller, and existing concluding CHERI statement in cyan. Text comes directly from the existing fields. The hero and slider share a 1px border family. The hero has square corners and only a bottom keyline; no side or top border. It has no hover or clickable behaviour. Homepage panels use quiet dark surfaces and cyan headings, while actual links retain underlines or explicit action cues.
 
 Use the spacing tokens in `settings.scss`. Close spacing joins related facts; record spacing supports scanning; section spacing separates topics. Directory headers and toolbars are compact. Breadcrumb list items have their own compact rhythm instead of inheriting full menu-row heights.
 
@@ -32,26 +32,26 @@ Use the spacing tokens in `settings.scss`. Close spacing joins related facts; re
 
 | Component | Contract |
 | --- | --- |
-| Destination/record card | One native `a.catalog-card.navigation-card`, with a real destination and consistent hover/focus treatment. Title, image, useful facts and action cue; no descriptive excerpt. |
+| Destination/record card | One native `a.catalog-card.navigation-card`, with a real destination and consistent hover/focus treatment. Title, optional image and a decorative arrow; no descriptive excerpt. Dates remain where they support chronological browsing, and founding members receive a badge from existing metadata. |
 | Compact List | Horizontal rows, quiet separators and dedicated action alignment on wide screens. Long titles wrap and rows grow as required. |
 | Grid | Responsive bordered cards with consistent padding, image frames and action positions. The same records and DOM serve both views. |
 | Editorial panel | A passive container with independent links. No pointer cursor or whole-panel hover effect. Full authored text remains available. |
 | Unlinked product | A passive content panel with its factual description and any authored links. Do not invent a destination. |
-| Context/resource annotation | Unique authored descriptions appear outside clickable cards as semantic resource notes. Embedded product notes stay in the same list item as their card so filtering keeps them together. |
+| Context/resource annotation | Navigation descriptions stay in their Markdown source and are not repeated below cards. Embedded product notes with independent resource links stay in the same list item as their product so filtering keeps them together. |
 
 Do not nest interactive controls or use stretched-link overlays, `onclick` containers or duplicated hidden card sets. Preserve all existing destinations and actions. Summaries remain canonical detail introductions and searchable data even when cards do not display them.
 
-`card.html` supplies shared record cards. `listing-notes.html` preserves annotations that differ from the destination's existing introduction/body. `section-cards.html` arranges complete authored multi-link sections; these remain editorial panels. Homepage slides retain their authored promotional content.
+`card.html` supplies shared record cards. Listings do not append the old `listing-notes.html` output. `section-cards.html` arranges complete authored multi-link homepage sections; these remain editorial panels. Category indices use the existing mega-menu groups and options as compact cards, followed by any additional authored or child destinations once each. The menu itself retains every option, group, destination and order. Homepage slides retain their authored promotional content.
 
 `talk-card.html` applies the same distinction to CHERI talks from the canonical registry. A talk with exactly one distinct destination is one native navigation-card link. Talks with multiple destinations are passive content panels with separate event/resource links; a talk with no destinations remains a complete passive record. Preserve title, date, event, location, action labels and registry order. On wide screens, actions align to the right of the talk copy; on mobile they wrap beneath it. Titles and metadata use the catalogue scale, and resource actions have 44px minimum targets. `resource-action.html` supplies the same labelled link treatment for talks and detail resources; do not add a separate miniature talk-link style.
 
 ## Image geometry
 
-People use square 1:1 frames with modest corners: 56–64px in list rows, 104px in grids, 176px in desktop detail headers and 80px on mobile. Portraits use `cover` and retain any existing crop-position setting. Mobile portrait headers use a grid so the introduction starts below the image rather than overlapping it.
+People use square 1:1 frames with modest corners: 56–64px in list rows, 88px in desktop grids and 72px in mobile grids, 176px in desktop detail headers and 80px on mobile. Catalogue portraits use `contain` inside square frames so landscape photographs and faces are not cut off; detail images retain their authored image settings. Mobile portrait headers use a grid so the introduction starts below the image rather than overlapping it.
 
 Organisation marks use an opaque landscape frame, centred with `contain` and internal padding. List frames are 120×60px on desktop and 88×44px on mobile. Grid frames have the same 256px maximum width and 112px height across logos. Detail frames are 260×130px on desktop and 192×96px on mobile. Square marks remain centred in these landscape frames. Intrinsic image dimensions do not determine frame widths.
 
-Hardware diagrams and product artwork use `contain`; editorial images retain their useful proportions. Missing images do not produce placeholders or empty media columns. Keep image source paths, alt text and useful intrinsic dimensions in front matter; frame dimensions belong in CSS.
+Hardware diagrams and product artwork use `contain`; editorial images retain their useful proportions. Image-bearing record lists and grids use neutral person, organisation or document placeholders when thumbnails are absent. Failed catalogue image loads use the same fallback. The placeholder is decorative next to the record title and never impersonates a photograph or logo. Text-only navigation options have no image frame; sparse detail headers do not reserve an image column. Keep image source paths, alt text and useful intrinsic dimensions in front matter; frame dimensions belong in CSS.
 
 ## Detail facts and resources
 
@@ -71,8 +71,16 @@ Terms sit directly above their definitions, with a nearby permalink and a quiet 
 
 Letter markers use a small accent surface and keyline; terms use the shared Poppins heading family. A directly targeted entry receives a pale highlight with an outlined term. This is a reference cue, not a per-entry card or collapsed disclosure.
 
-Keep Unicode `▼`/`▲` menu indicators decorative and synchronised with expanded states. Preserve visible focus, 44px controls, no-JavaScript content and reduced-motion behaviour. Overflowing tables and code examples gain keyboard focus through the shared content enhancement; their text remains intact.
+The light-page mega-menu uses the logo’s `#125770` blue with white text and clear focus states; the homepage retains its dark treatment. Keep Unicode `▼`/`▲` menu indicators decorative and synchronised with expanded states. Preserve visible focus, 44px controls, no-JavaScript content and reduced-motion behaviour. Overflowing tables and code examples gain keyboard focus through the shared content enhancement; their text remains intact.
 
 ## Verification
 
 Run `check_content.py`, `check_refinement.py`, `test_event_status.rb`, `test_catalog.py`, `test_layouts.py`, `test_presentation.py` and `test_refinement.py` against safe-mode root and baseurl builds as appropriate. The refinement fixtures are preservation evidence, not an authoring source. Update them deliberately for reviewed editorial changes. See [the refinement review](REFINEMENT_REVIEW.md) and [colour and component review](screenshots/colour-refinement/README.md) for measured outcomes and matching screenshots.
+
+## Supporting navigation and forms
+
+Related records, “Where next” and “Related pages” share compact full-width rows and the same section-heading typography. List/Grid controls still apply to collection directories. People grids use horizontal portrait-and-name cards to avoid large empty panels. News and event artwork is contained rather than cropped.
+
+Contact and newsletter forms use one `form-panel.html` component. With `form.action` in page front matter, the contact form submits natively to that endpoint; `form.method` is optional and defaults to `post`. Without an endpoint, show the existing published-service link instead of disabled fields or a preview warning. Preserve historical form fragment IDs. Do not invent submission endpoints or claim delivery without a working service.
+
+See [the consistency review](screenshots/catalogue-consistency/README.md) for screenshots, preservation checks and the membership comparison.

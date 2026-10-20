@@ -61,3 +61,8 @@
   .call-to-action .card-with-image { align-items: flex-start; flex-direction: column; }
   .call-to-action .card-with-image h3 { flex-basis: auto; }
 }
+
+// Shared brand treatment; reading surfaces stay opaque.
+.site-call-to-action { background-image: linear-gradient(110deg, rgba(7, 40, 55, .86), rgba(18, 87, 112, .92)); }
+.site-call-to-action .card { --colour-cta: #fff; --colour-cta-hover: #f1f5f7; --colour-subscribe-text: #152b3b; --colour-focus: #075d80; box-shadow: 0 8px 24px rgba(0, 0, 0, .16); }
+.site-call-to-action .card h2 { font-size: clamp(1.25rem, 2.3vw, 1.75rem); }

@@ -1,5 +1,5 @@
 {% if page['related-pages'] and page['related-pages'].size > 0 %}
-<section aria-labelledby="related-pages"{% if source_related_pages %} data-source-component="related-pages"{% endif %}>
+<section class="related-content" aria-labelledby="related-pages"{% if source_related_pages %} data-source-component="related-pages"{% endif %}>
   <h2 id="related-pages">{{ source_related_title | default: 'Related pages' | escape }}</h2>
   {% include listing.html items=page.related-pages resolve=true images=false label='Related pages' heading='h3' action='Explore' columns=3 %}
 </section>

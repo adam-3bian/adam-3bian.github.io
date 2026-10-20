@@ -42,6 +42,7 @@ jobs:
           python scripts/check_content.py
           python scripts/check_refinement.py
           bundle exec ruby scripts/test_event_status.rb
+          bundle exec ruby scripts/test_forms.rb
       - name: Build and validate root and preview deployments
         run: |
           JEKYLL_ENV=production bundle exec jekyll build --safe --destination dist
@@ -66,6 +67,8 @@ jobs:
           SITE_URL=http://127.0.0.1:4201/preview/ REPORT_ROOT=reports/polish/preview python scripts/test_presentation.py
           SITE_URL=http://127.0.0.1:4200/ REPORT_ROOT=reports/refinement/after python scripts/test_refinement.py
           SITE_URL=http://127.0.0.1:4201/preview/ REPORT_ROOT=reports/refinement/preview python scripts/test_refinement.py
+          SITE_URL=http://127.0.0.1:4200/ REPORT_ROOT=reports/consistency/root python scripts/test_consistency.py
+          SITE_URL=http://127.0.0.1:4201/preview/ REPORT_ROOT=reports/consistency/preview python scripts/test_consistency.py
       - name: Save review evidence
         if: always()
         uses: actions/upload-artifact@v4

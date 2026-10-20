@@ -1,4 +1,4 @@
-<ul class="catalog-cards cards-grid" role="list" aria-label="{{ include.label | default: page.title | escape }}">
-{% for entry in include.items %}{% unless entry.alternate or entry.redirect_to or entry.redirect or entry.collection == 'redirects' %}{% include card.html item=entry kind=include.kind resolve=include.resolve heading=include.heading images=include.images action=include.action %}{% endunless %}{% endfor %}
+<ul class="catalog-cards {% if include.mode == 'grid' %}cards-grid{% else %}record-list{% endif %}" role="list" aria-label="{{ include.label | default: page.title | escape }}">
+{% for entry in include.items %}{% unless entry.alternate or entry.redirect_to or entry.redirect or entry.collection == 'redirects' %}{% include card.html item=entry kind=include.kind resolve=include.resolve heading=include.heading images=include.images metadata=include.metadata action=include.action %}{% endunless %}{% endfor %}
 </ul>
-{% include listing-notes.html items=include.items resolve=include.resolve %}
+{% comment %}Descriptions remain in their Markdown records; navigation lists expose titles and essential facts only.{% endcomment %}

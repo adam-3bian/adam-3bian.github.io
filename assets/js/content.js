@@ -1,4 +1,19 @@
 (() => {
+  // Failed catalogue media uses the same neutral fallback as an absent thumbnail.
+  document.querySelectorAll('.catalog-media img[data-fallback]').forEach((image) => {
+    const fallback = () => {
+      const src = image.dataset.fallback;
+      if (!src) return;
+      delete image.dataset.fallback;
+      image.alt = '';
+      image.setAttribute('aria-hidden', 'true');
+      image.classList.add('placeholder-image');
+      image.parentElement.classList.add('media-placeholder');
+      image.src = src;
+    };
+    image.addEventListener('error', fallback, {once: true});
+    if (image.complete && !image.naturalWidth) fallback();
+  });
   // Markdown authors need only the image and its alignment class.
   document.querySelectorAll('.content img').forEach((image) => {
     if (!image.hasAttribute('loading')) image.setAttribute('loading', 'lazy');

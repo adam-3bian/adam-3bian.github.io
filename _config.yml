@@ -480,5 +480,5 @@ timezone: Europe/London
 subscribe:
   enabled: true
   title: Stay connected with CHERI
-  action: Explore the newsletter
+  action: Get the newsletter
   url: /news-and-events/news-and-analysis/subscribe-newsletter/
