@@ -186,7 +186,7 @@ Start body content at `##`. Use ordinary Markdown lists, images, code fences and
 
 ## Local validation
 
-Ordinary pages and news use the shared site content width. Collection details retain a readable prose column and optional facts panel. The header, newsletter band and footer have full-width surfaces with their contents aligned to the same container. The original honeycomb assets remain the background on both page palettes.
+Ordinary pages and news use the shared site content width. Collection details fill that same width when facts are inline, or fill the available article column beside a useful facts/resources aside. This is derived from existing metadata; do not add layout flags. The header, newsletter band and footer have full-width surfaces with their contents aligned to the same container. The original honeycomb assets remain the background on both page palettes.
 
 Only `/` uses the original dark palette, selected by its `home-page` class. There is no visitor theme setting. The homepage hero uses plain `hero.title`, an ordered `hero.subtitle` array, `summary`, and Markdown in `hero.introduction`; do not put HTML tags in the title. Its `sections` configuration arranges the existing Markdown sections into the original groups.
 

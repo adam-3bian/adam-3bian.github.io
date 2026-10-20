@@ -4,7 +4,7 @@ The CHERI catalogue uses a common container, type system and component vocabular
 
 ## Canvas, identity and typography
 
-The site container is 1264px including 20px mobile and 32px desktop gutters, giving a 1200px content area on wide screens. Header/footer surfaces span the viewport; their inner content aligns with the main canvas. News and ordinary pages use the full available width. Collection prose retains a comfortable measure.
+The site container is 1264px including 20px mobile and 32px desktop gutters, giving a 1200px content area on wide screens. Header/footer surfaces span the viewport; their inner content aligns with the main canvas. News, ordinary pages and collection details use the available width. A collection article fills the content container when it has no aside, or fills its allocated left column when facts and resources occupy the right.
 
 Only `/` uses the dark palette and the original homepage composition. Its Poppins text treatment is retained. Other pages are light, with Poppins headings and a system sans-serif for body copy, controls and supporting facts. There is no theme toggle, stored theme preference or automatic system-theme selection.
 
@@ -40,6 +40,8 @@ Hardware diagrams and product artwork use `contain`; editorial images retain the
 There is no visible generic “At a glance” heading. One or two short facts form an inline semantic definition list near the title/summary. Up to three resource actions can appear alongside these introductory facts. No facts means no empty wrapper.
 
 More than two facts, a long fact/array, or more than three resource actions use the common side region on wide screens. It appears naturally above the body on mobile. This choice is derived from structured values, not per-record display switches or rendered HTML. The existing `facts-title` target remains available where facts exist. Certification facts retain their actual labels, dates and programme/product version distinctions.
+
+Do not impose a reading-length `max-width` on `.record-body` or reserve an empty metadata column. CHERIBSD, for example, has one short structured fact and uses the full container with that fact inline. X730 has substantial technical and certification facts in the existing right-hand aside. At mobile widths, both the aside and article fill the container. Keep tables, code and diagrams responsive within the article; any specialist reading-width constraint belongs on the relevant content block.
 
 Resource actions have at least 44px height. Facts and resources use quiet borders and spacing; they do not suggest whole-panel interaction. Related records follow the main body.
 

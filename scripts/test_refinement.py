@@ -16,6 +16,8 @@ ROUTES = {
     'speakers':'news-and-events/people-and-opportunities/speakers/',
     'company':'organisations/axiomise-ltd/', 'person':'people/adam-finney/',
     'glossary':'discover/resources/glossary/', 'hardware':'hardware/cheriot/',
+    'software':'software/cheribsd/', 'hardware-facts':'hardware/x730/',
+    'policy':'policies/intellectual-property-policy/',
     'article':'news/ai-doesnt-need-a-kill-switch-it-needs-boundaries/'
 }
 results = []
@@ -53,13 +55,37 @@ with sync_playwright() as p:
                     assert frame['w'] > frame['h'] and frame['fit']=='contain', (width,name,frame)
             if name == 'members-grid':
                 assert len({(round(f['w']),round(f['h'])) for f in media}) == 1, (width,media)
-            if name in ['person','company','hardware']:
+            if name in ['person','company','hardware','software']:
                 assert page.locator('.detail-aside').count() == 0, (width,name,'unnecessary sidebar')
                 assert page.locator('.inline-facts').count() == 1
                 if name == 'person' and width < 768:
                     boxes=page.locator('.record-portrait, .page-summary').evaluate_all('nodes=>nodes.map(n=>{const r=n.getBoundingClientRect();return {top:r.top,bottom:r.bottom}})')
                     summary, image = boxes
                     assert summary['top'] >= image['bottom']-1, (width,'portrait overlaps summary',boxes)
+            detail = None
+            if page.locator('.detail-layout').count():
+                # A detail fills the shared container; metadata occupies real space,
+                # rather than leaving a narrow article in an otherwise empty layout.
+                detail = page.evaluate('''()=>{
+                  const box=s=>{const n=document.querySelector(s);if(!n)return null;
+                    const r=n.getBoundingClientRect();return {x:r.x,y:r.y,w:r.width,right:r.right,bottom:r.bottom}};
+                  return {header:box('.record-header'),layout:box('.detail-layout'),
+                    body:box('.record-body'),aside:box('.detail-aside')};
+                }''')
+                header, layout, body, aside = [detail[k] for k in ['header','layout','body','aside']]
+                assert abs(layout['x']-header['x']) < 1 and abs(layout['w']-header['w']) < 1, (width,name,detail)
+                if name in ['hardware-facts','policy']:
+                    assert aside is not None, (width,name,'useful metadata aside missing')
+                    assert page.locator('.inline-facts').count() == 0
+                assert abs(body['x']-layout['x']) < 1, (width,name,detail)
+                if aside and width >= 768:
+                    gap = page.locator('.detail-layout').evaluate('n=>parseFloat(getComputedStyle(n).columnGap)')
+                    assert abs(body['right']+gap-aside['x']) < 1, (width,name,detail)
+                    assert abs(aside['right']-layout['right']) < 1, (width,name,detail)
+                else:
+                    assert abs(body['w']-layout['w']) < 1, (width,name,detail)
+                    if aside:
+                        assert abs(aside['w']-layout['w']) < 1 and aside['bottom'] <= body['y'], (width,name,detail)
             first_y = None
             if name == 'members':
                 first_y = page.locator('[data-catalog-list] > li').first.bounding_box()['y']
@@ -79,7 +105,7 @@ with sync_playwright() as p:
                 assert not violations, (width,name,violations)
                 device = {390:'mobile',768:'tablet',1440:'desktop'}[width]
                 page.screenshot(path=str(OUT / f'{device}-{name}.png'))
-            results.append({'width':width,'route':name,'media':media,'first_content_y':first_y,'violations':violations})
+            results.append({'width':width,'route':name,'media':media,'detail':detail,'first_content_y':first_y,'violations':violations})
             context.close()
 
     context = browser.new_context(viewport={'width':390,'height':844})

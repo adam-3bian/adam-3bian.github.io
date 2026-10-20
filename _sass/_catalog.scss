@@ -65,7 +65,6 @@ main { padding-bottom: 3.5rem; }
 .content > :first-child { margin-top: 0; }
 .content a:not(.catalog-card, .resource-link, .card) { color: var(--accent); }
 .reading-content { min-width: 0; width: 100%; }
-.record-body { max-width: 73ch; min-width: 0; }
 .reading-page .page-heading { border-bottom: 0; margin: 0 0 1.25rem; padding-bottom: 0; }
 .reading-page main > article, .directory-page main > article { margin-top: 1.25rem; }
 .reading-page .page-heading h1, .reading-page .page-summary, .article-page .page-summary { max-width: none; }
@@ -155,7 +154,8 @@ a.catalog-card:hover { background: var(--surface-hover); border-color: var(--acc
 .detail-layout { margin-top: 1.5rem; }
 .detail-layout.has-facts { align-items: start; column-gap: clamp(2rem, 5vw, 4rem); display: grid; grid-template-columns: minmax(0, 1fr) 285px; }
 .detail-aside { grid-column: 2; grid-row: 1; min-width: 0; }
-.record-body { grid-column: 1; grid-row: 1; width: 100%; }
+// Fill the shared container, or the article column when useful facts occupy an aside.
+.record-body { grid-column: 1; grid-row: 1; min-width: 0; width: 100%; }
 .record-body:empty { display: none; }
 .facts-panel, .resource-panel { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; }
 .facts-panel h2, .resource-panel h2 { color: var(--ink); font-size: .77rem; font-weight: 600; letter-spacing: .015em; margin: 0 0 1rem; }
