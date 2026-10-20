@@ -1,5 +1,5 @@
 ---
-layout: details/guide
+layout: detail
 title: Building Secure Software with CHERI
 summary: Questions developers should ask about memory safety, compartmentalisation, and authority.
 permalink: /guides/building-secure-software/

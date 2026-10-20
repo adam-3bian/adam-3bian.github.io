@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Saar Amar
 summary: Saar Amar — CHERI Alliance information and resources.
 permalink: /people/saar-amar/

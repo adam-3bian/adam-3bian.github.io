@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: Wyvern Global
 summary: Wyvern Global Semiconductors is leading the way in memory-secure System on Chips (SoCs) with our Wyvern Advanced RISC-V Processor, known as WARP. We are dedicated to providing the first commercially available SoCs in the world that are CHERI-native…
 permalink: /organisations/wyvern-global/

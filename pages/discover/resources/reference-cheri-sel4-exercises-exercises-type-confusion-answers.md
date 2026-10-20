@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: 'Answers: Exercise integer-pointer type confusion bug'
 summary: 'When the integer value is updated, with CHERI-RISC-V compilation the
 

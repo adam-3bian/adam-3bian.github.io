@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: Durham University
 summary: The Department of Computer Science, based in the beautiful historic city of Durham, is one of the leading UK departments with an outstanding reputation for excellence in teaching, research and employability of our students. Computer Science increased…
 permalink: /organisations/durham-university/

@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: Introducing the CHERI Adoption Global Ecosystem Assessment Q1 2026
 summary: The CHERI Alliance is pleased to publish the **CHERI Adoption Global Ecosystem Assessment Q1 2026**, a new report examining the current state of CHERI adoption across industry, research, government, and open communities.
 permalink: /news/introducing-the-cheri-adoption-global-ecosystem-assessment-q1-2026/

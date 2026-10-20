@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Alex Richardson
 summary: Alex Richardson represents Google on the CHERI Alliance Governing Board. His board role is Senior Software Engineer.
 permalink: /people/alex-richardson/

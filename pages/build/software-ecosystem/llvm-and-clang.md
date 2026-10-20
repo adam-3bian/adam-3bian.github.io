@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: LLVM & Clang
 summary: Compile C and C++ software for CHERI-enabled platforms.
 permalink: /build/software-ecosystem/llvm-and-clang/

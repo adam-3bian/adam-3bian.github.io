@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: The Capable Hub
 summary: The Capable Hub is a non-profit engineering organisation improving the availability, quality and upstream alignment of open-source CHERI software.
 permalink: /organisations/the-capable-hub/

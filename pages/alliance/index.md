@@ -1,5 +1,5 @@
 ---
-layout: page/landing
+layout: page
 title: CHERI Alliance
 summary: CHERI Alliance — CHERI Alliance information and resources.
 permalink: /alliance/

@@ -1,5 +1,5 @@
 ---
-layout: details/guide
+layout: detail
 title: Choosing a CHERI Development Platform
 summary: Practical guidance for choosing a CHERI development and evaluation environment.
 permalink: /guides/choose-a-platform/

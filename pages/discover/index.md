@@ -1,5 +1,5 @@
 ---
-layout: page/landing
+layout: page
 title: Discover CHERI
 summary: Discover CHERI — CHERI Alliance information and resources.
 permalink: /discover/

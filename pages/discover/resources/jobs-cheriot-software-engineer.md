@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: CHERIoT Software Engineer
 summary: An upcoming, fully remote UK role working across CHERIoT device drivers and secure, compartmentalised software stacks.
 permalink: /jobs/cheriot-software-engineer/

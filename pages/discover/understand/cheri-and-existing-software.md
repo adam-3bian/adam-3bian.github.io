@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: CHERI and Existing Software
 summary: Improve the security of existing C and C++ software without starting again.
 permalink: /discover/understand/cheri-and-existing-software/

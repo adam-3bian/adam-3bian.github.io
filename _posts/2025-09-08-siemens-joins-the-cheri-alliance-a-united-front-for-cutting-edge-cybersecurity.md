@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: 'Siemens Joins the CHERI Alliance: a United Front for Cutting-Edge Cybersecurity'
 summary: Cambridge, UK – 5 September 2025 – The [CHERI Alliance](/) announces that the Electronic Design Automation segment of [Siemens Digital Industries Software](https://www.siemens.com/) has joined the non-profit organisation as a member to promote and enable a new level of cybersecurity in the EDA industry.
 permalink: /news/siemens-joins-the-cheri-alliance-a-united-front-for-cutting-edge-cybersecurity/

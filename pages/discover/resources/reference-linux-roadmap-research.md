@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Selected CHERI research papers - CHERI Roadmap for Linux
 summary: Selected CHERI research papers - CHERI Roadmap for Linux — CHERI Alliance information and resources.
 permalink: /reference/linux-roadmap/research.html

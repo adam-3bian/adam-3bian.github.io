@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Adversarial CHERI Exercises and Missions on CHERI-seL4 microkernel and CHERI-Microkit
 summary: 'Robert N. M. Watson (University of Cambridge), Brooks Davis (SRI
 

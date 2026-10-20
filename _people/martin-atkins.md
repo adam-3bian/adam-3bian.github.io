@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Martin Atkins
 summary: Martin is a software consultant with over 35 years of experience in research, and commercial development projects in the UK and abroad.
 permalink: /people/martin-atkins/

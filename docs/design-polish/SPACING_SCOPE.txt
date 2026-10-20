@@ -1,0 +1,573 @@
+# CHERI Alliance — Spacing, Component Consistency and Template Consolidation
+
+## Objective
+
+Refine and simplify the existing CHERI Alliance website in the GitHub repository:
+
+`adam-3bian/adam-3bian.github.io`
+
+**Work exclusively on the `design/catalogue-polish` branch.**
+
+Do not compare against `main`, revert to `main`, or use `main` as a design baseline. Assess the branch as a standalone implementation.
+
+The goal is to deliver a substantially cleaner, more consistent and more maintainable Jekyll website by:
+
+1. Fixing padding, margin, alignment and responsive layout problems.
+2. Establishing a consistent visual and interaction contract across components.
+3. **Aggressively consolidating unnecessary Liquid includes and thin layout wrappers**, especially those used only once.
+4. Eliminating mismatched implementations of the same visual component.
+5. Standardising action links, card-buttons and resource controls, particularly in metadata sidebars and asides.
+6. Preserving all existing content, URLs, functionality, accessibility and the identity of CHERI Alliance.
+
+This is a **refactoring and design-consistency task**, not a content rewrite or a wholesale redesign.
+
+The website should retain its existing typography, branding, colours, imagery, technical credibility and shadcn-inspired visual direction.
+
+---
+
+## 1. Audit the actual rendered website
+
+Before making changes, inspect the relevant templates, Sass and rendered pages.
+
+Audit at least:
+
+- Homepage
+- Main category landing pages
+- Members directory
+- Speakers directory
+- News archive and individual news articles
+- Events directory and event detail pages
+- Products, repositories and papers
+- Developer guides
+- Working groups
+- Glossary
+- Contact and newsletter pages
+
+Test at viewport widths of **320, 375, 390, 430, 768, 1024 and 1440 pixels**, plus a wide desktop viewport where useful.
+
+Evaluate actual element bounding boxes, computed margins/paddings, alignment, wrapping, overflow and vertical rhythm. Do not rely exclusively on screenshots or subjective impressions.
+
+Look for:
+
+- Doubled-up margins and padding.
+- Excessive whitespace before the first meaningful content.
+- Inconsistent left and right alignment.
+- Cards with different internal spacing despite serving the same role.
+- Misaligned card titles, metadata, badges and actions.
+- Wrapping that unexpectedly increases a component's height.
+- Default browser list margins leaking into custom components.
+- Parent and child selectors applying contradictory spacing.
+- Layout changes at breakpoints that disturb internal alignment.
+- Components which appear equivalent but use different padding or styles.
+- Unnecessary gaps between the header, breadcrumbs, page heading, content, newsletter and footer.
+
+Fix problems at their shared source wherever possible rather than applying page-specific overrides.
+
+---
+
+## 2. Address the known spacing and layout issues
+
+### A. Mobile organisation/member cards
+
+Inspect:
+
+`_sass/_catalog.scss`
+
+In particular, the rules below 480px that change organisation cards to CSS Grid and apply `display: contents` to `.catalog-copy`.
+
+The current approach risks placing the organisation title, membership information or action footer in unintended grid cells, particularly beneath the narrow logo column.
+
+Simplify this structure.
+
+Prefer a predictable, responsive layout with:
+
+- A consistently sized organisation logo.
+- Title and metadata in the main text column.
+- Founding-member indication and action aligned deliberately.
+- No overlap, clipping or excessively narrow text columns.
+- Consistent inner padding on every card.
+
+Avoid using `display: contents` merely to force unrelated content into grid positions.
+
+At narrow widths, make the hierarchy explicit, even if that means the membership badge wraps onto a separate row.
+
+### B. Category navigation selector mismatch
+
+Inspect:
+
+- `_includes/category-links.html`
+- `_sass/_catalogue-navigation.scss`
+
+The template emits classes such as `.category-sections` and `.category-links`, while the stylesheet also defines a separate `.index-navigation`, `.option-list` and `.option-card` system.
+
+Determine which components are actually used and remove or reconcile obsolete implementations.
+
+Category lists must have:
+
+- Explicit list resets.
+- Consistent column and row gaps.
+- Correct card/link padding.
+- Predictable mobile stacking.
+- No unwanted browser-default indentation or vertical margins.
+
+Do not keep two parallel naming systems for the same component.
+
+### C. News article alignment
+
+Inspect:
+
+- `_sass/_semantic.scss`
+- `_layouts/article.html`
+- `_includes/page-header.html`
+
+The article reading content is constrained to approximately `78ch`, but the page heading, summary and lead image may use a wider alignment.
+
+Choose one coherent editorial geometry.
+
+The article title, lead image and body should follow deliberate alignment rules. If an image is intentionally wider than the reading text, define that as an explicit editorial variant rather than an accidental difference.
+
+Keep technical articles easy to read.
+
+### D. Tablet detail-page sidebar
+
+Inspect:
+
+- `_sass/_detail.scss`
+- `_sass/_semantic.scss`
+- `_layouts/detail.html`
+
+The two-column detail layout currently remains active at widths where the main article becomes too narrow.
+
+At 768px, the available space is approximately 392px for the body, a 32px gutter and a 280px sidebar.
+
+Move to the stacked layout sooner, likely below 1024px, unless actual measurements justify a different breakpoint.
+
+On desktop, preserve a useful facts/resources aside.
+
+On tablet and mobile:
+
+- Keep the body comfortably readable.
+- Place facts/resources in a logical order.
+- Avoid excessively wide fact-label columns.
+- Keep resources and CTA buttons accessible.
+- Avoid needless blank space when the record has little metadata.
+
+### E. Header, main content and newsletter spacing
+
+Inspect:
+
+`_sass/_main.scss`
+
+The `main` container has a 12px block margin in addition to internal bottom padding.
+
+Determine whether the visible strip before the newsletter band is intentional.
+
+Preserve a consistent upper separation beneath the header, but avoid an arbitrary extra lower gap if it disrupts the transition into the newsletter section.
+
+Ensure this works consistently for the dark homepage and light internal pages.
+
+### F. Homepage vertical rhythm
+
+Inspect:
+
+- `_sass/_main.scss`
+- `_sass/_hero.scss`
+- `_sass/_cards.scss`
+- `_sass/_slider.scss`
+
+The homepage combines significant section margins and padding, potentially introducing 72–88px before actual section content begins.
+
+Review the entire composition rather than reducing individual margins independently.
+
+Make the spacing feel deliberate between:
+
+- Hero and first content section.
+- Homepage content-card groups.
+- Featured news/events slider.
+- Latest news and upcoming events.
+- Newsletter call-to-action.
+- Footer.
+
+Avoid both compressed layouts and very large empty spaces.
+
+---
+
+## 3. Serious consolidation of Liquid includes
+
+This is a major part of the task, not a minor cleanup.
+
+**Audit every file under `_includes/` and `_layouts/`.**
+
+Produce an accurate dependency and usage inventory showing:
+
+- Each include/layout filename.
+- Its number of call sites.
+- Which templates use it.
+- Whether it is a meaningful reusable component.
+- Whether it is simply a one-line wrapper.
+- Whether it is genuinely needed as a separate abstraction.
+- Whether its logic duplicates another component.
+- Whether it is safe to inline, merge or delete.
+
+Account for direct includes, nested includes, dynamic references and layout inheritance. Do not mistake a dynamically referenced file for unused code.
+
+### Consolidation rules
+
+**A. Strongly favour inlining single-use includes**
+
+Where an include is only called once and does not provide substantial independent logic or a useful reusable boundary, inline its contents into the parent template and delete the unnecessary include.
+
+This applies especially to includes that:
+
+- Merely delegate to another include.
+- Contain one or two lines of Liquid.
+- Wrap a small amount of markup without meaningful abstraction.
+- Exist solely to make the parent template shorter.
+- Create another level of indirection without supporting reuse.
+
+Do not retain one-use components out of habit.
+
+**B. Eliminate thin layout wrappers**
+
+Examine the multiple files under:
+
+- `_layouts/lists/`
+- `_layouts/details/`
+- `_layouts/page/`
+
+Many appear to be only a few lines long, setting a parent layout and passing through content.
+
+Replace unnecessary wrappers with shared layouts and declarative configuration where appropriate.
+
+However, retain distinct semantics for different content families—such as events, members, guides and papers—without reintroducing a huge chain of nested wrappers.
+
+**C. Consolidate duplicated component logic**
+
+Look for multiple ways of rendering:
+
+- Cards and catalogue records.
+- Link actions.
+- Buttons.
+- Resource lists.
+- Metadata/facts.
+- Related content.
+- Page headings.
+- Breadcrumbs.
+- Navigation groups.
+- Dates.
+- Images.
+- Form fields.
+
+Prefer one canonical implementation of each repeated primitive.
+
+**D. Keep genuinely reusable primitives**
+
+Do not blindly inline everything.
+
+Retain components such as a common card renderer, shared action/button renderer, image renderer or complex navigation component when multiple callers benefit from them.
+
+The distinction is between **real reuse** and **abstraction for its own sake**.
+
+**E. Avoid creating a monolithic template**
+
+Consolidation must reduce complexity, not hide it.
+
+Do not move hundreds of unrelated lines into `_layouts/default.html`.
+
+Keep templates organised around a small number of meaningful page layouts and shared components.
+
+A good outcome has fewer layers of indirection, clearly documented inputs and fewer places where a single visual rule must be maintained.
+
+### Specific consolidation candidates
+
+Investigate, rather than automatically preserve:
+
+- `_includes/listing.html`
+- `_includes/relationship-section.html`
+- `_includes/related-content.html`
+- `_includes/site-features.html`
+- `_includes/guide-navigation.html`
+- `_includes/page-forms.html`
+- `_includes/category-links.html`
+- `_includes/authors.html`
+- `_includes/person-talk.html`
+- `_includes/person-talks.html`
+- `_includes/programme-speakers.html`
+- `_includes/newsletter-cta.html`
+- `_includes/anchor-aliases.html`
+- The thin layouts under `_layouts/lists/`, `_layouts/details/` and `_layouts/page/`
+
+Review the actual call graph before deciding what to retain.
+
+Remove dead code, stale selectors and obsolete include references after consolidation.
+
+---
+
+## 4. Enforce consistent components and action semantics
+
+This is another high-priority requirement.
+
+The website must not render the same functional action in several visually inconsistent ways.
+
+### A. Standardise links, buttons and card-buttons
+
+Define one component contract covering:
+
+1. **Inline text link** — a link within normal prose.
+2. **Navigation card** — an entire card which is one clickable link.
+3. **Primary action** — a visually prominent button-style link for navigation, registration, downloads or external destinations.
+4. **Secondary action** — a quieter button-style link for supplementary actions.
+5. **Resource action** — a consistent link/button treatment for PDFs, recordings, slides, repositories and external resources.
+6. **Actual button** — a native `<button>` for actions that do not navigate, such as filtering, expanding or clearing.
+
+Use native anchors for navigation and downloading. Use native buttons for interactive state changes.
+
+A visually button-like action can and usually should remain an `<a>` element when its purpose is navigation.
+
+**Do not solve a visual inconsistency by introducing incorrect HTML semantics.**
+
+### B. Fix inconsistent actions in asides
+
+Inspect the metadata and resource asides on:
+
+- Event pages.
+- Member/organisation profiles.
+- Speaker profiles.
+- Product pages.
+- Repository pages.
+- Guides.
+- Papers.
+- Working-group pages.
+
+Currently, the same type of action can appear as:
+
+- A plain text link.
+- A link in a simple list.
+- A styled button.
+- A visually card-like action.
+- A resource action with an icon.
+
+Define a clear rule for these contexts.
+
+For example:
+
+- Registration → primary button-style action.
+- Visit organisation website → secondary button-style action.
+- Download paper/PDF → resource button-style action.
+- View slides → resource button-style action.
+- Watch recording → resource button-style action.
+- Visit GitHub repository → secondary/resource action.
+- Contact a working group → consistent CTA.
+- Related record navigation → navigation card or ordinary related-item link according to the section's shared design.
+
+**Do not leave a plain underlined link in an aside where the established design calls for a card-button.**
+
+Conversely, do not turn every textual reference into a large button.
+
+### C. One canonical action renderer
+
+Inspect:
+
+- `_includes/action.html`
+- `_includes/resource-links.html`
+- `_sass/_actions.scss`
+- `_sass/_forms.scss`
+- `_sass/_catalog.scss`
+- `_sass/_detail.scss`
+
+Ensure every button-like action shares the intended:
+
+- Height.
+- Padding.
+- Border radius.
+- Typography.
+- Icon size.
+- Text/icon gap.
+- Focus ring.
+- Hover treatment.
+- Disabled-state treatment where applicable.
+
+Variations should be deliberate component variants, not unrelated styles.
+
+Remove duplicate `.button` declarations or overrides where possible.
+
+### D. Eliminate nested and misleading interactions
+
+Never introduce:
+
+- Links inside links.
+- Buttons inside links.
+- Clickable containers around other clickable controls.
+- Cards that look clickable but are passive.
+- Passive panels that exhibit hover behaviour suggesting navigation.
+- Links whose labels don't clearly communicate their destination.
+
+Maintain accessible keyboard navigation and visible focus indicators.
+
+---
+
+## 5. Consolidate the spacing system
+
+Use the existing Sass spacing tokens as the foundation.
+
+Avoid adding new one-off pixel values unless genuinely necessary.
+
+Establish consistent rules for:
+
+- Page gutters.
+- Section spacing.
+- Heading-to-body spacing.
+- Card internal padding.
+- Card-to-card gaps.
+- Label-to-input spacing.
+- Metadata spacing.
+- Sidebar section spacing.
+- Resource action spacing.
+- Grid gaps.
+- Breadcrumb spacing.
+- Footer and promotional-panel spacing.
+
+Review selectors that apply generic flow spacing, including `.content > * + *`, alongside component-specific margins.
+
+Prevent a component from receiving unintended spacing simply because it sits inside an editorial `.content` container.
+
+A component should own its **internal spacing**. Its parent layout should own its **external spacing**.
+
+Avoid cumulative spacing from multiple ancestors.
+
+---
+
+## 6. Maintain CHERI Alliance identity and preserve content
+
+Do not replace content with invented examples.
+
+Use the existing records, front matter, images, links, events, members and publications as the source of truth.
+
+Preserve:
+
+- The CHERI Alliance logo and brand.
+- Poppins typography.
+- Established navy, teal, cyan and neutral colours.
+- Technical images and diagrams.
+- Existing editorial text.
+- Collection taxonomy and metadata.
+- Relationships between records.
+- Accessible headings.
+- Canonical URLs and redirects.
+- Search/filter/sort behaviour.
+- Event date/status logic.
+- Responsive images.
+- Forms and external form submission behaviour.
+
+Do not edit content purely to compensate for layout defects.
+
+Maintain Jekyll and GitHub Pages compatibility, with progressive enhancement wherever possible.
+
+---
+
+## 7. Verification and regression testing
+
+After refactoring, perform actual builds and browser tests.
+
+Check at least:
+
+- No horizontal page overflow.
+- No overlapping titles, metadata, logos, badges or actions.
+- Correct mobile card wrapping.
+- Correct desktop and mobile grid columns.
+- Correct alignment of breadcrumbs, headings and content.
+- Consistent card padding.
+- Consistent sidebar action styles.
+- Readable technical content at tablet widths.
+- Correct navigation keyboard behaviour.
+- Correct focus-visible styling.
+- No nested interactive elements.
+- No links lost during consolidation.
+- No broken Liquid references or missing layouts.
+- No missing resource buttons.
+- No empty visual containers caused by optional metadata.
+- No regressions with JavaScript disabled.
+- No content loss from the refactor.
+
+Use and update the repository's existing validation scripts where appropriate:
+
+- `scripts/test_layouts.py`
+- `scripts/test_presentation.py`
+- `scripts/test_consistency.py`
+- `scripts/test_refinement.py`
+- `scripts/test_catalog.py`
+- Other relevant content and template validation scripts.
+
+Add regression tests that cover the specific issues identified in this task.
+
+Do not weaken existing test assertions merely to make the refactor pass.
+
+Generate before/after screenshots from the **same branch**, taken before and after the changes, at representative desktop, tablet and mobile widths. Do not compare with `main`.
+
+Inspect the actual rendered results rather than assuming compilation proves visual correctness.
+
+---
+
+## 8. Deliverables
+
+Implement the changes directly on `design/catalogue-polish`.
+
+At completion provide:
+
+### A. Spacing and layout fixes
+
+A concise account of each confirmed problem, the cause and the correction, including affected file paths.
+
+### B. Include/layout consolidation report
+
+Give exact before/after counts for:
+
+- Total `_includes/` files.
+- Total `_layouts/` files.
+- Single-use includes.
+- Removed includes.
+- Removed layout wrappers.
+- Merged duplicated components.
+- Any remaining one-use includes, with reasons for retaining them.
+
+The reduction should be substantial where the code structure supports it. Do not manufacture a particular percentage reduction at the expense of correctness.
+
+### C. Component consistency report
+
+Identify mismatched components found and how they were standardised.
+
+Pay particular attention to resource links, registration actions, website links and CTAs within asides.
+
+### D. Responsive review
+
+Summarise the results at mobile, tablet and desktop sizes and identify any remaining issues.
+
+### E. Test evidence
+
+Report the actual commands run, their pass/fail status, and the location of screenshots or generated reports.
+
+If tests fail or cannot be run, disclose this clearly. Do not claim a successful visual audit without browser evidence.
+
+---
+
+## Final acceptance criteria
+
+The work is complete when:
+
+- The site has a consistent, intentional spacing system.
+- Mobile member cards and directory components have no unintended grid placement or alignment problems.
+- Category navigation uses the correct component styles.
+- Article headings and reading columns align deliberately.
+- Tablet detail pages remain comfortable to read.
+- Header, page content, newsletter and footer have predictable spacing.
+- Equivalent actions use equivalent visual components, including in asides.
+- Unnecessary single-use includes and thin layout wrappers have been materially reduced.
+- Shared components remain genuinely reusable and easy to maintain.
+- No content, URLs, metadata relationships or functionality have been lost.
+- The Jekyll build and relevant browser regression tests pass.
+
+**Prioritise maintainability, semantic correctness and consistent visual geometry over preserving the existing number of template files.**
+
+Do not stop at an audit or recommendations. Implement the refactor and verify it.
+
+Do not make changes to `main` or deploy the branch unless explicitly authorised.

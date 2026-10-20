@@ -1,5 +1,5 @@
 ---
-layout: details/event
+layout: detail
 title: CHERI Blossoms Conference 2027
 summary: The CHERI community comes together in Cambridge for three days of learning, discussion, hands-on experience and networking.
 permalink: /events/cheri-blossoms-conference-2027/

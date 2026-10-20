@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: 'Unlocking the Future: A Roadmap for CHERI Technology Advancement'
 summary: In the rapidly evolving landscape of cybersecurity, the quest for robust and secure hardware foundations has never been more critical.
 permalink: /news/unlocking-the-future-a-roadmap-for-cheri-technology-advancement/

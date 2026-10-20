@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: Recent advances in CHERI enhancing stability, maturity, and accessibility as urged by the UK’s DSTL
 summary: 'The DSTL paper “[Biting the CHERI bullet: Blockers, Enablers and Security Implications of CHERI in Defence](https://arxiv.org/pdf/2504.17904)” collates and analyzes feedback on CHERI development by 15 independent teams across industry and academia on the Morello research platform.'
 permalink: /news/recent-advances-in-cheri-enhancing-stability-maturity-and-accessibility-as-urged-by-the-uks-dstl/

@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: Sensor IT
 summary: Details to follow.
 permalink: /organisations/sensor-it/

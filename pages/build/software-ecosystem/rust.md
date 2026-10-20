@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Rust
 summary: Develop Rust software for CHERI-enabled platforms.
 permalink: /build/software-ecosystem/rust/

@@ -1,5 +1,5 @@
 ---
-layout: details/working-group
+layout: detail
 title: ©️ CHERI C/C++ WG
 summary: Coordinating portable C and C++ support for CHERI platforms.
 permalink: /groups/cheri-c-cplusplus/

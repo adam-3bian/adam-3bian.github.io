@@ -1,5 +1,5 @@
 ---
-layout: details/working-group
+layout: detail
 title: 💾 Repository Management WG
 summary: Develops consistent practices for the structure, maintenance, contribution, quality, and stewardship of shared Alliance repositories and technical collateral.
 permalink: /groups/repository-management/

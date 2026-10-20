@@ -26,6 +26,10 @@ class Contracts(unittest.TestCase):
    f=copy.deepcopy(good);mutate(f);errors=[];validate_forms(f,errors);self.assertTrue(errors)
  def test_duplicate_yaml_keys_fail(self):
   with self.assertRaises(ValueError):yaml.load('title: One\ntitle: Two\n',Loader=UniqueLoader)
+ def test_unconfigured_forms_cannot_gain_an_accidental_target(self):
+  forms={'contact':{'id':'contact','title':'Contact','submission':{'mode':'unconfigured','label':'Send enquiry'},'fields':[]}}
+  errors=[];validate_forms(forms,errors);self.assertFalse(errors)
+  forms['contact']['submission']['url']='https://example.test/accidental';errors=[];validate_forms(forms,errors);self.assertTrue(errors)
  def test_specification_examples_parse(self):
   spec=(ROOT/'docs/migrations/v5.3/SPECIFICATION.txt').read_text();examples=[]
   for match in re.finditer(r'^---\n(.*?)^---\s*$',spec,re.S|re.M):

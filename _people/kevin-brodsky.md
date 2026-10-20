@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Kevin Brodsky
 summary: Kevin Brodsky is a software engineer at Arm, specializing in the Morello project and the Morello Linux kernel.
 permalink: /people/kevin-brodsky/

@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Alexander Voyevoda
 summary: Alex Voyevoda is a senior systems engineer focused on turning high‑assurance ideas into production systems.
 permalink: /people/alexander-voyevoda/

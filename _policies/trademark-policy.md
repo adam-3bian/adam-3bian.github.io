@@ -1,5 +1,5 @@
 ---
-layout: details/policy
+layout: detail
 title: Trademark Policy
 summary: Rules for using CHERI trademarks, logos, membership marks, and certification claims.
 permalink: /policies/trademark-policy/

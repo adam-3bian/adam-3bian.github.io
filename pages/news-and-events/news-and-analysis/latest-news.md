@@ -1,5 +1,5 @@
 ---
-layout: lists/posts
+layout: list
 title: Latest News
 summary: News, announcements, and analysis from the CHERI Alliance and its members.
 permalink: /news-and-events/news-and-analysis/latest-news/

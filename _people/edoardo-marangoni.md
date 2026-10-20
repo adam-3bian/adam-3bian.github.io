@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Edoardo Marangoni
 summary: Edoardo has been working with compilers for the majority of his professional career.
 permalink: /people/edoardo-marangoni/

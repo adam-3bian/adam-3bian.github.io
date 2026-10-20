@@ -78,7 +78,7 @@ with sync_playwright() as p:
                     assert aside is not None, (width,name,'useful metadata aside missing')
                     assert page.locator('.inline-facts').count() == 0
                 assert abs(body['x']-layout['x']) < 1, (width,name,detail)
-                if aside and width >= 768:
+                if aside and width >= 1024:
                     gap = page.locator('.detail-layout').evaluate('n=>parseFloat(getComputedStyle(n).columnGap)')
                     assert abs(body['right']+gap-aside['x']) < 1, (width,name,detail)
                     assert abs(aside['right']-layout['right']) < 1, (width,name,detail)

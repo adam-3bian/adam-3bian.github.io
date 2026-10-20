@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Johannes Müller
 summary: Johannes Müller received his Dipl.-Ing. degree in Electrical and Computer Engineering from the Technische Universität Kaiserslautern in 2018.
 permalink: /people/johannes-muller/

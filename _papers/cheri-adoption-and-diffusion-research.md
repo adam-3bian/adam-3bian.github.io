@@ -1,5 +1,5 @@
 ---
-layout: details/paper
+layout: detail
 title: CHERI Adoption and Diffusion Research
 summary: Examines the potential market for CHERI and factors that may shape adoption and diffusion.
 permalink: /reports/cheri-adoption-and-diffusion-research/

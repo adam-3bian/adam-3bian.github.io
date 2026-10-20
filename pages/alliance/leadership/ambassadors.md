@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Ambassadors
 summary: CHERI Alliance Ambassadors help explain CHERI, create resources, support events, and introduce new communities to the ecosystem..
 permalink: /alliance/leadership/ambassadors/

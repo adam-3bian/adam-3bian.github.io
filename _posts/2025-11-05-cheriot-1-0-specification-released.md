@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: CHERIoT 1.0 Specification Released
 summary: CHERIoT 1.0 provides a stable, hardware-enforced platform for building memory safe, compartmentalised systems in the microcontroller class. The specification defines the instruction set architecture, language extensions, and the complete compilation and relocation model, enabling developers to build software that is safeguarded against buffer overflows and use after free errors, even in hand written assembly.
 permalink: /news/cheriot-1-0-specification-released/

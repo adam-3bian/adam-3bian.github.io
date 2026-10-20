@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: Beyond Software Patching
 summary: Critical National Infrastructure (CNI) products may remain in service for 10, 15 or even 20 years. During that time, software changes, attack techniques evolve and regulation is now becoming more demanding.
 permalink: /news/beyond-software-patching/

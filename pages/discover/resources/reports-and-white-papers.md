@@ -1,5 +1,5 @@
 ---
-layout: lists/papers
+layout: list
 title: Reports & White Papers
 summary: These reports provide broader introductions, programme evidence, adoption research, and policy context.
 permalink: /discover/resources/reports-and-white-papers/

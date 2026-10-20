@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: DARPA Programmes
 summary: DARPA programmes funded the long-running cross-layer work that turned CHERI concepts into tested hardware, software, and compartmentalised systems.
 permalink: /discover/history/darpa-programmes/

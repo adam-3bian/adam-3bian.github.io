@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Videos & Presentations
 summary: Material to learn about CHERI and related developments.
 permalink: /discover/resources/videos-and-presentations/

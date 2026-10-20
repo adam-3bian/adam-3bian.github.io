@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: A new ETSI standard could rewrite the memory-safety debate
 summary: Memory-safety vulnerabilities remain one of the largest sources of critical software vulnerabilities. Despite years of investment in safer languages, hardware protections, and secure development practices, the industry has lacked a common way to define and compare memory-safety technologies.
 permalink: /news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/

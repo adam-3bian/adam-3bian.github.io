@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: Critical Technologies Inc.
 summary: The Critical Technologies Inc. (CTI) mission is trustworthy networked autonomy. CTI’s near term goal is to return meaningful control of devices, networks and data to their proper owners and enable a safe exit from the Red Queen’s race (of perpetually…
 permalink: /organisations/critical-technologies/

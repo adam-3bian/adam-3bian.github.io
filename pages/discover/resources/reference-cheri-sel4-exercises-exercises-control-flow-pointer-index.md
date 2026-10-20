@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Corrupt a control-flow pointer using a subobject buffer overflow
 summary: 'This exercise demonstrates how CHERI pointer integrity protection prevents
 

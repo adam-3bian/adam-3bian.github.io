@@ -1,5 +1,5 @@
 ---
-layout: details/paper
+layout: detail
 title: Deprivileging Low-Level GPU Drivers Efficiently with User-Space Processes and CHERI Compartments
 summary: Evaluates process and CHERI-compartment designs for moving a performance-sensitive GPU driver out of the kernel.
 permalink: /papers/deprivileging-low-level-gpu-drivers-efficiently-with-user-space-processes-and-cheri-c/

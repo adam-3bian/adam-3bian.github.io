@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Munraj Vadera
 summary: Munraj Vadera — CHERI Alliance information and resources.
 permalink: /people/munraj-vadera/

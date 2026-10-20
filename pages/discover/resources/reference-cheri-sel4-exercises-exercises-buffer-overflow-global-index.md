@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Exercise an inter-global-object buffer overflow
 summary: 'This exercise demonstrates an inter-object buffer overflow on baseline and
 

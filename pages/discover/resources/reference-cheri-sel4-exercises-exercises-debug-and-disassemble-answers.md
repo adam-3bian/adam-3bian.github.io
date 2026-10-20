@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Answers - Disassemble and debug RISC-V and CHERI-RISC-V programs
 summary: Answers - Disassemble and debug RISC-V and CHERI-RISC-V programs — CHERI development reference.
 permalink: /reference/CHERI-seL4-Exercises/exercises/debug-and-disassemble/answers.html

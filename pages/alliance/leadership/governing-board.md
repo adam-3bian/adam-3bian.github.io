@@ -1,5 +1,5 @@
 ---
-layout: lists/speakers
+layout: list
 title: Governing Board
 summary: The Governing Board provides organisational stewardship with representation from commercial, research, and public-interest security organisations.
 permalink: /alliance/leadership/governing-board/

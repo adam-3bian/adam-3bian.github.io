@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Safety-Critical Systems
 summary: CHERI can make memory access and component authority more explicit, adding hardware-enforced evidence to a wider safety and security case.
 permalink: /adopt/use-cases/safety-critical-systems/

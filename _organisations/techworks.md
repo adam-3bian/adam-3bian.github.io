@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: TechWorks
 summary: TechWorks is a new type of industry association at the core of the UK deep tech community with an ambition to harness our fantastic engineering and innovation to develop the UK’s position as a global technology super-power. TechWorks operates beyond…
 permalink: /organisations/techworks/

@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: End-users demand memory safety in their systems
 summary: The [Digital Security by Design](https://www.dsbd.tech) all-hands conference was held last week in Leeds, and it was the opportunity to measure the progress of CHERI and see how much is already available.
 permalink: /news/end-users-demand-memory-safety-in-their-systems/

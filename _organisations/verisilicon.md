@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: VeriSilicon
 summary: VeriSilicon Holdings Co., Ltd. (VeriSilicon, 688521.SH) is committed to providing customers with platform-based, all-around, one-stop custom silicon services and semiconductor IP licensing services leveraging its in-house semiconductor IP. Under its…
 permalink: /organisations/verisilicon/

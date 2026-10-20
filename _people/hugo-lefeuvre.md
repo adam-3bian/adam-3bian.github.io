@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Hugo Lefeuvre
 summary: Hugo Lefeuvre — CHERI Alliance information and resources.
 permalink: /people/hugo-lefeuvre/

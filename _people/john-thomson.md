@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: John Thomson
 summary: John works at [lowRISC](/organisations/lowrisc/) as a senior product manager where he advocates the company’s mission of getting open silicon source everywhere.
 permalink: /people/john-thomson/

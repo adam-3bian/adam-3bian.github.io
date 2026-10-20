@@ -1,5 +1,5 @@
 ---
-layout: lists/guides
+layout: list
 title: Developer guides
 summary: Guides for evaluating CHERI, choosing a platform and building software.
 permalink: /guides/

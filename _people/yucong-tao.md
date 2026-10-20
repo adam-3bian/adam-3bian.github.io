@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Yucong Tao
 summary: Yucong Tao — CHERI Alliance information and resources.
 permalink: /people/yucong-tao/

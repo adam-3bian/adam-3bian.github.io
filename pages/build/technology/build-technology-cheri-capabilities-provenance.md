@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Provenance
 summary: Capability provenance preserves the connection between a usable pointer and the valid authority from which that pointer was derived.
 permalink: /build/technology/cheri-capabilities/provenance/

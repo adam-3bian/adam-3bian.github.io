@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Job Opportunities
 summary: Current roles and early opportunity notices for people who want to work on CHERI, CHERIoT, capability systems, and the supporting software ecosystem.
 permalink: /news-and-events/people-and-opportunities/job-opportunities/

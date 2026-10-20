@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: 'Behind the Scenes: inside the promotion and ambassador program Working Group'
 summary: If you’ve been watching the CHERI Alliance gather momentum, you’ve probably noticed a growing wave of community activity—talks, demos, explainers, and friendly faces spreading the word about capability-based security.
 permalink: /news/behind-the-scenes-inside-the-promotion-and-ambassador-program-working-group/

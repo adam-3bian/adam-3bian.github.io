@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Governance
 summary: Alliance governance separates organisational oversight from focused member collaboration, with published policies setting clear boundaries for participation.
 permalink: /alliance/about-and-governance/governance/

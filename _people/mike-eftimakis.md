@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Mike Eftimakis
 summary: Mike Eftimakis has an extensive background in the semiconductor and electronics industry with 30 years in senior technical and business roles.
 permalink: /people/mike-eftimakis/

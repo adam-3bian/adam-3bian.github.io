@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Linux distributions - CHERI Roadmap for Linux
 summary: Linux distributions - CHERI Roadmap for Linux — CHERI Alliance information and resources.
 permalink: /reference/linux-roadmap/goals/distros.html

@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: RISC-V International
 summary: RISC-V International — CHERI Alliance information and resources.
 permalink: /organisations/risc-v-international/

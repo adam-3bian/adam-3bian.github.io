@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: DiscribeHub+
 summary: Details to follow.
 permalink: /organisations/discribehub/

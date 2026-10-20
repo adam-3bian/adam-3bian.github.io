@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: The Return on Security Investment
 summary: Turn stronger security into lasting business value.
 permalink: /adopt/business-case/return-on-security-investment/

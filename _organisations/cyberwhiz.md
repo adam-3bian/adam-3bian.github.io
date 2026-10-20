@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: CyberWhiz
 summary: IoT Cyber Security Solutions and Services for Edge – Mobile – Cloud.
 permalink: /organisations/cyberwhiz/

@@ -1,5 +1,5 @@
 ---
-layout: lists/events
+layout: list
 title: Past Events
 summary: Previous CHERI Alliance events, with programmes, speakers, recordings, slides, and venue information where available.
 permalink: /news-and-events/events-and-archive/past-events/

@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: The University of Manchester
 summary: The University of Manchester, a charitable body incorporated by Royal Charter, is a centre of teaching excellence, world-class research, outstanding student experience. Founded in 1824 for the advancement of education, we’ve since been home to 26…
 permalink: /organisations/the-university-of-manchester/

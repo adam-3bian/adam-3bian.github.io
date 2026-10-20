@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Carl Shaw
 summary: Carl Shaw is a hands-on technical expert with a diverse background in embedded systems and security engineering.
 permalink: /people/carl-shaw/

@@ -1,5 +1,5 @@
 ---
-layout: details/paper
+layout: detail
 title: 'CheriABI: Enforcing Valid Pointer Provenance and Minimizing Pointer Privilege in the POSIX C Run-time Environment'
 summary: Presents the pure-capability CheriABI process environment and its treatment of pointer provenance and privilege.
 permalink: /papers/cheriabi-enforcing-valid-pointer-provenance-and-minimizing-pointer-privilege-in-the-p/

@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Jianyi Cheng
 summary: Jianyi Cheng is an Assistant Professor in the School of Informatics at the University of Edinburgh.
 permalink: /people/jianyi-cheng/

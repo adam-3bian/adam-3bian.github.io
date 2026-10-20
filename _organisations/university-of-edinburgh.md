@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: University of Edinburgh
 summary: Details to follow.
 permalink: /organisations/university-of-edinburgh/

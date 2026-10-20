@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Brooks Davis
 summary: Brooks Davis — CHERI Alliance information and resources.
 permalink: /people/brooks-davis/

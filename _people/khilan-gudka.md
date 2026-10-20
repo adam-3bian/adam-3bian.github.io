@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Khilan Gudka
 summary: Khilan Gudka — CHERI Alliance information and resources.
 permalink: /people/khilan-gudka/

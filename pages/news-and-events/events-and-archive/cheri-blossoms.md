@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: About CHERI Blossoms Conferences
 summary: From research to real-world deployment, CHERI Blossoms brings the CHERI ecosystem together in Cambridge.
 permalink: /news-and-events/events-and-archive/cheri-blossoms/

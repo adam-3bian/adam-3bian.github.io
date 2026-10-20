@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: About CHERITech Conferences
 summary: The technical conference for the people building the future of CHERI-enabled systems.
 permalink: /news-and-events/events-and-archive/cheritech/

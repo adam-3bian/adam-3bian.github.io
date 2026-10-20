@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Emulation and crossbuild platforms - CHERI Roadmap for Linux
 summary: Emulation and crossbuild platforms - CHERI Roadmap for Linux — CHERI Alliance information and resources.
 permalink: /reference/linux-roadmap/goals/emulation-crossbuild.html

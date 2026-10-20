@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Ashish Darbari
 summary: As founder &amp; CEO of Axiomise, Dr. Ashish Darbari has led the company to successfully deploy the unique combination of training, consulting, services, and verification IP to various customers.
 permalink: /people/ashish-darbari/

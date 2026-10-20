@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: EnSilica
 summary: EnSilica is a fabless, application-specific chipmaker combining deep system-level expertise with world-class RF, mmWave, mixed-signal and complex digital IC design. We serve communications, industrial, automotive and healthcare markets where safety…
 permalink: /organisations/ensilica/

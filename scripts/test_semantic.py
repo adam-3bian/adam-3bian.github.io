@@ -43,8 +43,12 @@ with sync_playwright() as p:
  page.goto(URL+'adopt/assurance-and-adoption/cheri-enabled-products/')
  assert page.locator('a[href$="/adopt/assurance-and-adoption/x730-certification/"]').count()>=1
  assert page.locator('[data-catalog-list]').count()==0,'Certification overview must not imply all products are certified'
- for route,provider in [('alliance/membership/contact/','https://cheri-alliance.org/contact/#contact_form'),('news-and-events/news-and-analysis/subscribe-newsletter/','https://cheri-alliance.kit.com/subscribe')]:
-  page.goto(URL+route);assert page.locator('.form-panel').count()==1;assert page.locator('main input,main select,main textarea,main button[type="submit"]').count()==0;assert page.locator('.form-panel .button').get_attribute('href')==provider
+ for route,count in [('alliance/membership/contact/',5),('news-and-events/news-and-analysis/subscribe-newsletter/',1)]:
+  page.goto(URL+route);assert page.locator('.form-panel').count()==1
+  form=page.locator('form[data-local-form]');assert form.count()==1
+  assert form.locator('input,select,textarea').count()==count
+  assert form.get_attribute('action') is None and form.locator('button[type=submit][disabled][hidden]').count()==1
+  assert page.locator('.form-panel a.button').count()==0
  for old,new,fragment in [('hardware/sonata/','products/sonata/','typical-workflow'),('software/cheribsd/','repositories/cheribsd/','page-title'),('cheriot-1-0-specification-released/','news/cheriot-1-0-specification-released/','page-title')]:
   page.goto(URL+old+'?migration_check=kept#'+fragment);page.wait_for_url(URL+new+'?migration_check=kept#'+fragment)
   assert parse_qs(urlsplit(page.url).query)=={'migration_check':['kept']};assert page.locator('[id="'+fragment+'"]').count()==1
@@ -53,8 +57,12 @@ with sync_playwright() as p:
  assert plain.locator('.programme-day:visible').count()==2
  assert plain.locator('.programme-session:visible').count()==17
  assert plain.locator('.programme-presentation:visible').count()>10
- plain.goto(URL+'alliance/membership/contact/');assert plain.locator('.form-panel a.button').is_visible();assert plain.locator('main input,main textarea,main select').count()==0
+ for route,count in [('alliance/membership/contact/',5),('news-and-events/news-and-analysis/subscribe-newsletter/',1)]:
+  plain.goto(URL+route);assert plain.locator('.form-panel form').is_visible()
+  assert plain.locator('.form-panel input,.form-panel textarea,.form-panel select').count()==count
+  original=plain.url;plain.locator('.form-panel input[type=email]').fill('test@example.invalid')
+  plain.locator('.form-panel input[type=email]').press('Enter');plain.wait_for_timeout(100);assert plain.url==original
  assert not errors,errors
  browser.close()
-(OUT/'results.json').write_text(json.dumps({'responsive_views':results,'axe_views':40,'inverse_affiliations':'passed','filters':'passed','certification':'passed','provider_forms':'passed','redirect_query_and_fragment':'passed','native_programme':'passed','javascript_errors':errors},indent=2)+'\n')
-print('Semantic acceptance: 60 responsive views, 40 axe audits, concurrent affiliations/inverse views, all filters, certification classification, external forms, redirects and no-JavaScript programme passed.')
+(OUT/'results.json').write_text(json.dumps({'responsive_views':results,'axe_views':40,'inverse_affiliations':'passed','filters':'passed','certification':'passed','local_forms':'passed','redirect_query_and_fragment':'passed','native_programme':'passed','javascript_errors':errors},indent=2)+'\n')
+print('Semantic acceptance: 60 responsive views, 40 axe audits, concurrent affiliations/inverse views, all filters, certification classification, local forms, redirects and no-JavaScript programme passed.')

@@ -1,5 +1,5 @@
 ---
-layout: lists/papers
+layout: list
 title: Academic Papers
 summary: This selected bibliography covers CHERI architecture, software, formal methods, memory safety, compartmentalisation, and implementation experience. Entries link to the paper or its publisher record and are ordered newest first.
 permalink: /discover/resources/academic-papers/

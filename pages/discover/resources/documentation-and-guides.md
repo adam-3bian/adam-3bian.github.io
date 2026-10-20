@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Documentation & Guides
 summary: Interesting publications from the CHERI Alliance and others.
 permalink: /discover/resources/documentation-and-guides/

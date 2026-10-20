@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Kayvan Memarian
 summary: Kayvan Memarian — CHERI Alliance information and resources.
 permalink: /people/kayvan-memarian/

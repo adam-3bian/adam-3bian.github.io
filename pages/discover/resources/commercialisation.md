@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Commercialisation
 summary: CHERI commercialisation turns architecture and open-source evidence into licensable processors, silicon, tools, platforms, services, and certified products.
 permalink: /discover/history/commercialisation/

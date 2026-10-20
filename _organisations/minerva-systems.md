@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: Minerva Systems
 summary: Minerva Systems — CHERI Alliance information and resources.
 permalink: /organisations/minerva-systems/

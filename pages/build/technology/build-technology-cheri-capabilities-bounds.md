@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Bounds
 summary: Capability bounds restrict a pointer to an authorised memory range, so mapped memory outside that range remains inaccessible through it.
 permalink: /build/technology/cheri-capabilities/bounds/

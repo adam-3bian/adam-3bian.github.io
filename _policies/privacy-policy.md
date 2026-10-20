@@ -1,5 +1,5 @@
 ---
-layout: details/policy
+layout: detail
 title: Privacy policy
 summary: This Website collects some Personal data from its Users.
 permalink: /policies/privacy-policy/

@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: University of Birmingham
 summary: The University of Birmingham is a world top 100 university and part of the prestigious Russell Group. Its School of Computer Science is ranked 3rd in the UK for Research (REF’21) and 7th for Education (CUG’23), employing ~70 staff and teaching over…
 permalink: /organisations/university-of-birmingham/

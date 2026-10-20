@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: CHERI Tag Bit Transport Overlay Standard version 0.9 released
 summary: Over the last few months I’ve had the pleasure of working with members of the CHERI Alliance’s [CHERI-in-SoC Working Group](/groups/cheri-in-soc/) to put together the first version of the [CHERI Tag Bit Transport Overlay Standard](/assets/pages/discover--resources--documentation-and-guides/9bbe9f6de06c-cheri-tag-bit-transport-overlay-standard-v0.9.pdf).
 permalink: /news/cheri-tag-bit-transport-overlay-standard-version-0-9-released/

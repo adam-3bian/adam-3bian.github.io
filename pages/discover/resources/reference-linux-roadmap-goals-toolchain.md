@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Toolchain - CHERI Roadmap for Linux
 summary: Toolchain - CHERI Roadmap for Linux — CHERI Alliance information and resources.
 permalink: /reference/linux-roadmap/goals/toolchain.html

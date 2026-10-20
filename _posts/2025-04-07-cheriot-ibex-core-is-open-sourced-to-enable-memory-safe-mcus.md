@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: CHERIoT-Ibex Core is Open Sourced to Enable Memory Safe MCUs
 summary: 'Source: [https://www.eetimes.com/cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus/](https://www.eetimes.com/cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus/)'
 permalink: /news/cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus/

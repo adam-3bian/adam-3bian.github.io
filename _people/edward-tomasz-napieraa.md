@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Edward Tomasz Napierała
 summary: Edward Tomasz Napierała — CHERI Alliance information and resources.
 permalink: /people/edward-tomasz-napieraa/

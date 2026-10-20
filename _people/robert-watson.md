@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Robert Watson
 summary: Professor Robert N. M. Watson is a Professor of Systems, Security, and Architecture at the University of Cambridge’s Department of Computer Science and Technology.
 permalink: /people/robert-watson/

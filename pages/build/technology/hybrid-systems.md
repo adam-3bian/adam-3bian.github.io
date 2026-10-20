@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Hybrid Systems
 summary: Hybrid CHERI combines conventional pointers with capabilities, enabling incremental adoption of CHERI protections.
 permalink: /build/technology/hybrid-systems/

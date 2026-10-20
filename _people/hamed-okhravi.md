@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Hamed Okhravi
 summary: Hamed Okhravi — CHERI Alliance information and resources.
 permalink: /people/hamed-okhravi/

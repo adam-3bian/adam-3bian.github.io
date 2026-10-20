@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Real-Time Operating Systems
 summary: CHERI is being explored across several embedded and real-time software models, from capability-first RTOS designs to ports of established ecosystems.
 permalink: /build/software-ecosystem/real-time-operating-systems/

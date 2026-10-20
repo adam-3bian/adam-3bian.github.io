@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: National Taiwan University
 summary: Secure Systems Lab (SSLab) conducts research to advance the security, reliability, and performance of modern computer systems. We investigate core system components—often diving deep into hardware and operating systems—to uncover and address critical…
 permalink: /organisations/national-taiwan-university/

@@ -1,5 +1,5 @@
 ---
-layout: details/policy
+layout: detail
 title: Policy Briefings
 summary: 'CHERI gives policy discussions an additional route to memory safety: hardware-enforced protection for low-level and existing software, with finer-grained containment.'
 permalink: /policies/policy-briefings/

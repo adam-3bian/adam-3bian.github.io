@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Pure-Capability Systems
 summary: Pure-capability systems use capabilities for pointers throughout compiled software, applying CHERI protection broadly across the system.
 permalink: /build/technology/pure-capability-systems/

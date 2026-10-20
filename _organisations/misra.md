@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: MISRA
 summary: Details to follow.
 permalink: /organisations/misra/

@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Bootloaders and firmware - CHERI Roadmap for Linux
 summary: Bootloaders and firmware - CHERI Roadmap for Linux — CHERI Alliance information and resources.
 permalink: /reference/linux-roadmap/goals/bootloaders-firmware.html

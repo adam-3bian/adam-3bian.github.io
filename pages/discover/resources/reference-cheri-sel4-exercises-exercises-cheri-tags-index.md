@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Demonstrate CHERI Tag Protection
 summary: 'This exercise demonstrates CHERI''s *capability provenance tags*, in particular
 

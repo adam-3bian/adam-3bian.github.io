@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Skills Development Exercises
 summary: 'For a researcher to contribute effectively to CHERI-RISC-V evaluation,
 

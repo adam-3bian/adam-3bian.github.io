@@ -1,5 +1,5 @@
 ---
-layout: lists/events
+layout: list
 title: Events
 summary: Explore CHERI conferences, tutorials, workshops and webinars.
 permalink: /events/

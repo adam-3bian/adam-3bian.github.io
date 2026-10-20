@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: Parvat Infotech
 summary: Parvat Infotech is an Indian software development consultancy, established in 2003. It provides a small sharp team of experts with a deep understanding of bespoke software development. We take great care to provide the best engineering solutions to…
 permalink: /organisations/parvat-infotech/

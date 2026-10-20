@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: The leading Root-of-Trust now integrates CHERI security technology
 summary: If you are building secure hardware, the way you protect software running inside that hardware matters just as much as the cryptography around it.
 permalink: /news/the-leading-root-of-trust-now-integrates-cheri-security-technology/

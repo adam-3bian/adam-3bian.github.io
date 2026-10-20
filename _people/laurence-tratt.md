@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Laurence Tratt
 summary: Laurence Tratt — CHERI Alliance information and resources.
 permalink: /people/laurence-tratt/

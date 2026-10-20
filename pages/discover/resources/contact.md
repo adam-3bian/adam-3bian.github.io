@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Contact the Alliance
 summary: Contact the Alliance for membership, working groups, certification, events, media, trademarks, or help finding the right CHERI resource.
 permalink: /reference/source-versions/contact/

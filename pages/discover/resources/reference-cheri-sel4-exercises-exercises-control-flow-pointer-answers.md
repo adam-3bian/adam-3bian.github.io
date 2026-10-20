@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Answers - Corrupt a control-flow pointer using a subobject buffer overflow
 summary: Answers - Corrupt a control-flow pointer using a subobject buffer overflow — CHERI development reference.
 permalink: /reference/CHERI-seL4-Exercises/exercises/control-flow-pointer/answers.html

@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Adam Finney
 summary: Adam Finney is a CHERI technologist with over 20 years of systems experience, and a key driver of CHERI adoption.
 permalink: /people/adam-finney/

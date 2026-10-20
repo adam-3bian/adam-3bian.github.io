@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Gavin Ferris
 summary: Dr. Ferris is a technologist and serial entrepreneur. Following his early career at DreamWorks SKG, he co-founded a number of startups including the DSP / digital radio company RadioScape and fintech business Crescent Technology.
 permalink: /people/gavin-ferris/

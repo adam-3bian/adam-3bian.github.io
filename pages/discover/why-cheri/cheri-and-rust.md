@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: CHERI and Rust
 summary: Rust and CHERI are complementary, not competing approaches.
 permalink: /discover/why-cheri/cheri-and-rust/

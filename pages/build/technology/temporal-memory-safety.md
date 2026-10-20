@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Temporal Memory Safety
 summary: Temporal memory safety prevents references from being used after the object they refer to has ceased to exist.
 permalink: /build/technology/temporal-memory-safety/

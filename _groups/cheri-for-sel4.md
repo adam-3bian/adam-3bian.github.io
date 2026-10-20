@@ -1,5 +1,5 @@
 ---
-layout: details/working-group
+layout: detail
 title: 4️⃣ CHERI for seL4 WG
 summary: Coordinates work at the intersection of CHERI capabilities, seL4, Microkit, verified kernels, and capability-oriented system design.
 permalink: /groups/cheri-for-sel4/

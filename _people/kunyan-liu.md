@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Kunyan Liu
 summary: Kunyan Liu — CHERI Alliance information and resources.
 permalink: /people/kunyan-liu/

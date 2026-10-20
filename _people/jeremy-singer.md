@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Jeremy Singer
 summary: Jeremy is a Reader in Programming Language Implementation at the University of Glasgow.
 permalink: /people/jeremy-singer/

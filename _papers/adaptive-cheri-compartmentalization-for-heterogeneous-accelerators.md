@@ -1,5 +1,5 @@
 ---
-layout: details/paper
+layout: detail
 title: Adaptive CHERI Compartmentalization for Heterogeneous Accelerators
 summary: Explores capability protection across CPUs and heterogeneous accelerators that share memory.
 permalink: /papers/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/

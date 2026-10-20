@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Critical Infrastructure & Resilience
 summary: CHERI can support infrastructure resilience by preventing or limiting attacks.
 permalink: /adopt/policy/critical-infrastructure-and-resilience/

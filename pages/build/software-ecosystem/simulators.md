@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Simulators
 summary: Develop and test CHERI software and systems without physical hardware.
 permalink: /build/software-ecosystem/simulators/

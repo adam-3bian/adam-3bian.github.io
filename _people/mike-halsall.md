@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Mike Halsall
 summary: CHERI Alliance
 permalink: /people/mike-halsall/

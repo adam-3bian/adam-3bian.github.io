@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: Chevin Technology
 summary: Chevin Technology designs and develops cutting-edge Ethernet protocol accelerators and Silicon Security Solutions for FPGA and ASIC platforms. Operating from our headquarters in Cambridge Science Park, UK, we deliver expert engineering and consulting…
 permalink: /organisations/chevin-technology/

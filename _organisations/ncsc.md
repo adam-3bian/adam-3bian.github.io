@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: NCSC
 summary: UK National Cyber Security Centre
 permalink: /organisations/ncsc/

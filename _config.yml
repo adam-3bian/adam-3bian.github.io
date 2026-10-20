@@ -78,7 +78,7 @@ defaults:
 - scope:
     path: ''
   values:
-    layout: page/standard
+    layout: page
     image_overlay: true
 - scope:
     path: ''
@@ -90,52 +90,52 @@ defaults:
     path: ''
     type: posts
   values:
-    layout: details/post
+    layout: article
 - scope:
     path: ''
     type: events
   values:
-    layout: details/event
+    layout: detail
 - scope:
     path: ''
     type: people
   values:
-    layout: details/speaker
+    layout: detail
 - scope:
     path: ''
     type: organisations
   values:
-    layout: details/member
+    layout: detail
 - scope:
     path: ''
     type: papers
   values:
-    layout: details/paper
+    layout: detail
 - scope:
     path: ''
     type: products
   values:
-    layout: details/product
+    layout: detail
 - scope:
     path: ''
     type: repositories
   values:
-    layout: details/repository
+    layout: detail
 - scope:
     path: ''
     type: groups
   values:
-    layout: details/working-group
+    layout: detail
 - scope:
     path: ''
     type: guides
   values:
-    layout: details/guide
+    layout: detail
 - scope:
     path: ''
     type: policies
   values:
-    layout: details/policy
+    layout: detail
 title: CHERI Alliance
 description: 'CHERI Alliance: hardware-enforced memory safety, secure software and the CHERI community.'
 lang: en-GB

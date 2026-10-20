@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: PA Consulting
 summary: PA Consulting is a global innovation and transformation consultancy that combines strategy, design, engineering, technology, and business expertise to help organisations solve complex challenges, develop new products and services, and deliver lasting change. Working across sectors including government, defence, healthcare, energy, and transport, the company focuses on turning ideas into practical, real-world impact.
 permalink: /organisations/pa-consulting/

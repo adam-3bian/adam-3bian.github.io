@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: Codasip Powers UK Digital Security by Design Innovation Contracts with CHERI Technology
 summary: The UK government’s ambitious Digital Security by Design initiative continues to gain momentum, with [Codasip](/organisations/codasip/) playing a pivotal role in two key innovation contracts [announced as part of the program’s £21 million investment to advance hardware-based cybersecurity technology](/news/several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software/).
 permalink: /news/codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology/

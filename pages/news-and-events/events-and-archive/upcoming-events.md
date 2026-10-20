@@ -1,5 +1,5 @@
 ---
-layout: lists/events
+layout: list
 title: Upcoming Events
 summary: Upcoming CHERI Alliance conferences, workshops, webinars, and community sessions.
 permalink: /news-and-events/events-and-archive/upcoming-events/

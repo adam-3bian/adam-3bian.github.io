@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Compile and run RISC-V and CHERI-RISC-V programs
 summary: 'This exercise steps you through getting up and running with code compilation
 

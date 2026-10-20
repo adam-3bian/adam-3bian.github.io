@@ -1,5 +1,5 @@
 ---
-layout: details/event
+layout: detail
 title: CHERITech'25 Reloaded
 summary: An online replay and live question-and-answer programme with speakers from the main CHERITech'25 conference.
 permalink: /events/cheritech25-reloaded/

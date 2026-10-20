@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: DSIT
 summary: DSIT — CHERI Alliance information and resources.
 permalink: /organisations/dsit/

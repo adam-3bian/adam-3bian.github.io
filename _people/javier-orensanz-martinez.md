@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Javier Orensanz Martinez
 summary: Javier is a business leader with over 25 years of experience in the semiconductors industry.
 permalink: /people/javier-orensanz-martinez/

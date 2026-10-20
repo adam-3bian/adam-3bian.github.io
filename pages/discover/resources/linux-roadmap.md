@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: CHERI Roadmap for Linux
 summary: CHERI Roadmap for Linux — CHERI Alliance information and resources.
 permalink: /linux-roadmap/

@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: The Capable Hub joins the CHERI Alliance to accelerate cybersecurity collaboration
 summary: We are excited to announce that [The Capable Hub](/organisations/the-capable-hub/) has become a member of the CHERI Alliance, a significant step forward in our mission to accelerate CHERI adoption.
 permalink: /news/the-capable-hub-joins-the-cheri-alliance-to-accelerate-cybersecurity-collaboration/

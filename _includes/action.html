@@ -1,12 +1,14 @@
 {%- comment -%}Native navigation/download action. Operations remain native buttons with the same CSS roles.{%- endcomment -%}
 {%- assign action_target = include.target | default: '' | strip -%}
 {%- assign action_rel = include.rel | default: '' | strip -%}
+{%- assign action_role = include.role | default: 'secondary' -%}
+{%- if include.resource -%}{%- assign action_role = 'resource' -%}{%- elsif include.primary -%}{%- assign action_role = 'primary' -%}{%- endif -%}
 {%- if action_target == '_blank' -%}
   {%- assign action_rel_tokens = action_rel | split: ' ' -%}
   {%- unless action_rel_tokens contains 'noopener' -%}{%- assign action_rel = action_rel | append: ' noopener' -%}{%- endunless -%}
   {%- unless action_rel_tokens contains 'noreferrer' -%}{%- assign action_rel = action_rel | append: ' noreferrer' -%}{%- endunless -%}
 {%- endif -%}
-<a class="button button-{{ include.role | default: 'secondary' }}{% if include.resource %} resource-link{% endif %}{% if include.primary %} is-primary{% endif %}" href="{% include url.html url=include.url %}"{% if action_target != '' %} target="{{ action_target | escape }}"{% endif %}{% if action_rel != '' %} rel="{{ action_rel | strip | escape }}"{% endif %}{% if action_target == '_blank' %} title="Opens in a new tab"{% endif %}>
+<a class="button button-{{ action_role }}{% if include.resource %} resource-link{% endif %}{% if include.primary %} is-primary{% endif %}" href="{% include url.html url=include.url %}"{% if action_target != '' %} target="{{ action_target | escape }}"{% endif %}{% if action_rel != '' %} rel="{{ action_rel | strip | escape }}"{% endif %}{% if action_target == '_blank' %} title="Opens in a new tab"{% endif %}>
   <span>{{ include.label | escape }}</span>
   {% if include.kind == 'pdf' or include.kind == 'document' or include.kind == 'slides' or include.kind == 'download' %}{% include icon.html name='download' %}{% else %}{% include icon.html %}{% endif %}
 </a>

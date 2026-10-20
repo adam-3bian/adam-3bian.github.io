@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: The Cost of Memory Unsafety
 summary: Reduce Risk. Protect Investment. Build Trust.
 permalink: /adopt/business-case/cost-of-memory-unsafety/

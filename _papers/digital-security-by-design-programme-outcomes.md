@@ -1,5 +1,5 @@
 ---
-layout: details/paper
+layout: detail
 title: Digital Security by Design Programme Outcomes
 summary: Records the outcomes and evidence developed through the Digital Security by Design programme.
 permalink: /reports/digital-security-by-design-programme-outcomes/

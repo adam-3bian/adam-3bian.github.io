@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Why Existing Defences Are Not Enough
 summary: Passwords, encryption, testing, and updates reduce risk, but memory vulnerabilities can still remain.
 permalink: /discover/why-cheri/why-existing-defences-are-not-enough/

@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Allison Randal
 summary: Allison Randal represents Capabilities Limited on the CHERI Alliance Governing Board.
 permalink: /people/allison-randal/

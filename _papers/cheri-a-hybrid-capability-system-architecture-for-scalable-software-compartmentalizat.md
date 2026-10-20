@@ -1,5 +1,5 @@
 ---
-layout: details/paper
+layout: detail
 title: 'CHERI: A Hybrid Capability-System Architecture for Scalable Software Compartmentalization'
 summary: Establishes CHERI's hybrid architecture for fine-grained, scalable software compartmentalisation.
 permalink: /papers/cheri-a-hybrid-capability-system-architecture-for-scalable-software-compartmentalizat/

@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Graeme Jenkinson
 summary: Graeme Jenkinson — CHERI Alliance information and resources.
 permalink: /people/graeme-jenkinson/

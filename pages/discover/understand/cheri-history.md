@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: The History of CHERI
 summary: From capability systems research to a growing ecosystem for memory-safe computing.
 permalink: /discover/understand/cheri-history/

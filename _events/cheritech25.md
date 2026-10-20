@@ -1,5 +1,5 @@
 ---
-layout: details/event
+layout: detail
 title: CHERITech'25 Conference
 summary: A technical conference bringing together researchers, engineers, cybersecurity specialists and product developers working across the CHERI stack.
 permalink: /events/cheritech25/

@@ -1,5 +1,5 @@
 ---
-layout: lists/papers
+layout: list
 title: Papers
 summary: Papers — CHERI Alliance information and resources.
 permalink: /papers/

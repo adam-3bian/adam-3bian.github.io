@@ -1,5 +1,5 @@
 ---
-layout: details/working-group
+layout: detail
 title: 🛠️ OS Support & Portability WG
 summary: Connects operating-system ports, shared interfaces, terminology, and documentation across CHERI architectures and software projects.
 permalink: /groups/os-support-and-portability/

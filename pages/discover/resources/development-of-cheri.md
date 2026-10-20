@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Development of CHERI
 summary: CHERI developed through repeated hardware and software prototypes, moving from a clean-slate security question to multiple working ecosystems.
 permalink: /discover/history/development-of-cheri/

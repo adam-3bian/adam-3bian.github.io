@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Upcoming Events
 summary: Upcoming CHERI Alliance conferences, workshops, webinars, and community sessions.
 permalink: /reference/source-versions/upcoming-events/

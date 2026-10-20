@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: FAQ
 summary: Clear answers to common questions about CHERI and the CHERI Alliance.
 permalink: /discover/understand/faq/

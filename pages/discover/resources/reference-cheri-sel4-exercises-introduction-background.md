@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Background reading
 summary: 'To perform these exercises most effectively, we recommend first building a
 

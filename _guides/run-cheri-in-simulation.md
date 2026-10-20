@@ -1,5 +1,5 @@
 ---
-layout: details/guide
+layout: detail
 title: Run CHERI in Simulation
 summary: Use simulation to boot a CHERI environment, build capability-aware code, and observe hardware-enforced faults without owning a development board.
 permalink: /guides/run-cheri-in-simulation/

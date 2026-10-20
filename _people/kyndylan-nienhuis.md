@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Kyndylan Nienhuis
 summary: Kyndylan Nienhuis — CHERI Alliance information and resources.
 permalink: /people/kyndylan-nienhuis/

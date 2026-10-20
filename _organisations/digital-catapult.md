@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: Digital Catapult
 summary: Digital Catapult is a deep tech innovation organisation. We help businesses grow by applying deep tech. We show what is possible, positive and productive with advanced technology. We work with businesses and early adopters to explore, develop, and…
 permalink: /organisations/digital-catapult/

@@ -1,5 +1,5 @@
 ---
-layout: details/guide
+layout: detail
 title: Build Compartments
 summary: Build compartments by mapping authority first, then give each component only the memory, services, and entry points required for its task.
 permalink: /guides/build-compartments/

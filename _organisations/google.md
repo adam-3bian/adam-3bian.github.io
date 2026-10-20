@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: Google
 summary: Google’s mission is to organize the world’s information and make it universally accessible and useful.
 permalink: /organisations/google/

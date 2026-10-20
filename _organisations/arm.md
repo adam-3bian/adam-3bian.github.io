@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: Arm
 summary: Arm — CHERI Alliance information and resources.
 permalink: /organisations/arm/

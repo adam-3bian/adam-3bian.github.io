@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: 'Innovate UK Project Winner: University of Birmingham'
 summary: At the [University of Birmingham, in the Centre for Cyber Security and Privacy](/organisations/university-of-birmingham/), we have over 15 years of combined experience working on the CHERI (Capability Hardware Enhanced RISC Instructions) architectures.
 permalink: /news/innovate-uk-project-winner-university-of-birmingham/

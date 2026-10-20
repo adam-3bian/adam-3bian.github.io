@@ -1,5 +1,5 @@
 ---
-layout: lists/repositories
+layout: list
 title: Repositories
 summary: Software — CHERI Alliance information and resources.
 permalink: /repositories/

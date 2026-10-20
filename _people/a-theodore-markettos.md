@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: A. Theodore Markettos
 summary: A. Theodore Markettos — CHERI Alliance information and resources.
 permalink: /people/a-theodore-markettos/

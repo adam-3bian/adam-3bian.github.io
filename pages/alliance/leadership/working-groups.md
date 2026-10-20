@@ -1,5 +1,5 @@
 ---
-layout: lists/working-groups
+layout: list
 title: Working Groups
 summary: Where members collaborate to accelerate CHERI adoption and help make it successful.
 permalink: /alliance/leadership/working-groups/

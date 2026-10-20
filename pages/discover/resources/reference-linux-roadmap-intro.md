@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Introduction
 summary: 'CHERI is a hardware approach to memory safety that proposes an extension to established ISAs, such as Arm, RISC-V, and x86, that replaces simple (integer) pointers with a tagged capability data type, and adds capability-aware instructions to load, store, and manipulate the capability type.
 

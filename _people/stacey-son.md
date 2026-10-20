@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Stacey Son
 summary: Stacey Son — CHERI Alliance information and resources.
 permalink: /people/stacey-son/

@@ -1,5 +1,5 @@
 ---
-layout: details/event
+layout: detail
 title: CHERI Blossoms Conference 2025
 summary: Where the CHERI technology, business and research communities came together in Cambridge.
 permalink: /events/cheri-blossoms-conference-2025/

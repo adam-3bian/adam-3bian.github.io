@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: Johannes Kepler University Linz (JKU)
 summary: Johannes Kepler University (JKU) Linz is a public research university in Linz, Upper Austria. Located on a modern campus just outside the city center, JKU brings together a broad range of study and research across its faculties and interdisciplinary…
 permalink: /organisations/johannes-kepler-university-linz/

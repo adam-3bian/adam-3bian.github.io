@@ -1,5 +1,5 @@
 ---
-layout: details/paper
+layout: detail
 title: 'CHERI Concentrate: Practical Compressed Capabilities'
 summary: Explains the compressed capability representation used to carry bounds and permissions efficiently.
 permalink: /papers/cheri-concentrate-practical-compressed-capabilities/

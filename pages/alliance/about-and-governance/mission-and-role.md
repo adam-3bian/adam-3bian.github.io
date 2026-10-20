@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Mission & Role
 summary: We accelerates CHERI adoption through collaboration, interoperability, and ecosystem growth.
 permalink: /alliance/about-and-governance/mission-and-role/

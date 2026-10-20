@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: BT Group Joins the CHERI Alliance to Advance Cybersecurity Innovation
 summary: The CHERI Alliance is an international consortium uniting industry leaders, researchers, and governments to drive the adoption of Capability Hardware Enhanced RISC Instructions (CHERI) technology. CHERI technology offers a transformative approach to preventing memory safety vulnerabilities, which are the root cause of certain cyberattacks, by incorporating hardware-enforced protections.
 permalink: /news/bt-group-joins-the-cheri-alliance-to-advance-cybersecurity-innovation/

@@ -1,5 +1,18 @@
 {% assign subscription = site.subscribe %}
 {% if subscription.enabled and page.subscribe != false %}
   {% assign subscription_url = subscription.url | default: '/subscribe/' %}
-  {% include promotional-panel.html id='subscribe-title' title=subscription.title action=subscription.action url=subscription_url target=subscription.target rel=subscription.rel %}
+  {%- comment -%}One passive surface and one explicit action; never a link around a button cue.{%- endcomment -%}
+<aside class="site-call-to-action" aria-labelledby="subscribe-title">
+  <div class="site-container">
+    <div class="promotional-panel surface-inverse">
+      <div class="promotional-copy">
+        <h2 id="subscribe-title">{{ subscription.title | default: 'Stay connected with CHERI' | escape }}</h2>
+        {% if subscription.text %}<p>{{ subscription.text | escape }}</p>{% endif %}
+      </div>
+      {% assign promotion_label = subscription.action | default: 'Get the newsletter' %}
+      {% include action.html label=promotion_label url=subscription_url target=subscription.target rel=subscription.rel role='primary' %}
+    </div>
+  </div>
+</aside>
+
 {% endif %}

@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Certification
 summary: CHERI Enabled certification turns a broad technology claim into a product-specific record of implementation, evidence, limitations, and review.
 permalink: /adopt/assurance-and-adoption/certification/

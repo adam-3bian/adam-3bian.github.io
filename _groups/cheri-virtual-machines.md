@@ -1,5 +1,5 @@
 ---
-layout: details/working-group
+layout: detail
 title: 🤖 CHERI Virtual Machines WG
 summary: Examines how language runtimes, managed environments, and virtual machines can use and preserve CHERI capabilities.
 permalink: /groups/cheri-virtual-machines/

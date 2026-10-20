@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Matthew Naylor
 summary: Matthew Naylor — CHERI Alliance information and resources.
 permalink: /people/matthew-naylor/

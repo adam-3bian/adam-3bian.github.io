@@ -1,5 +1,5 @@
 ---
-layout: details/working-group
+layout: detail
 title: 🐧 CHERI Linux WG
 summary: Coordinates priorities, cross-architecture requirements, implementation experience, and contribution routes for CHERI support in Linux.
 permalink: /groups/cheri-linux-working-group/

@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Alastair Beresford
 summary: Dr Alastair Beresford is a Professor of Computer Security at the University of Cambridge and a Fellow of Jesus College.
 permalink: /people/alastair-beresford/

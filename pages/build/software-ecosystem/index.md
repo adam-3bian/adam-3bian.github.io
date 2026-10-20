@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Software Ecosystem
 summary: The software surrounding CHERI connects capability-aware compilers with operating systems, runtimes, debuggers, emulators, and existing application code.
 permalink: /build/software-ecosystem/

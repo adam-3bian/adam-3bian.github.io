@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: CHERI Alliance to Distribute Arm Morello Boards – The Journey Beyond DSbD Continues!
 summary: The CHERI Alliance is now distributing [Arm Morello](/products/morello/) boards – the CHERI development journey continues beyond DSbD.
 permalink: /news/cheri-alliance-to-distribute-arm-morello-boards-the-journey-beyond-dsbd-continues/

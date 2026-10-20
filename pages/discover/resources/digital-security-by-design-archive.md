@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Digital Security by Design Archive
 summary: Digital Security by Design Archive — CHERI Alliance information and resources.
 permalink: /discover/resources/digital-security-by-design-archive/

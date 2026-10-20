@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: Amid rising cyber threats, EnSilica joins the CHERI Alliance to enable safe & secure silicon
 summary: CHERI (Capability Hardware Enhanced RISC Instructions) is an open technology that fundamentally strengthens systems’ security by preventing memory corruption and unauthorized code execution—two of the most pervasive threats in modern computing.
 permalink: /news/amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon/

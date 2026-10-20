@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Alfredo Mazzinghi
 summary: Alfredo is a Research Assistant at University of Cambridge and Research Engineer at Capabilities Limited.
 permalink: /people/alfredo-mazzinghi/

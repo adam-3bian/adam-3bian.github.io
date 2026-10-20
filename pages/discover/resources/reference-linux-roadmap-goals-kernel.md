@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Kernel support - CHERI Roadmap for Linux
 summary: Kernel support - CHERI Roadmap for Linux — CHERI Alliance information and resources.
 permalink: /reference/linux-roadmap/goals/kernel.html

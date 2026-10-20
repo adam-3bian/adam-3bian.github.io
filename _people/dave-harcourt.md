@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Dave Harcourt
 summary: Dave Harcourt is the CISO for BT International and a BT Fellow, with decades of experience shaping cyber security at scale.
 permalink: /people/dave-harcourt/

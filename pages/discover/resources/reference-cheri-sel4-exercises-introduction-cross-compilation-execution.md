@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Cross compilation and execution
 summary: Cross compilation and execution — CHERI Alliance information and resources.
 permalink: /reference/CHERI-seL4-Exercises/introduction/cross-compilation-execution.html

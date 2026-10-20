@@ -1,5 +1,5 @@
 ---
-layout: page/landing
+layout: page
 title: Adopt CHERI
 summary: Adopt CHERI — CHERI Alliance information and resources.
 permalink: /adopt/

@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: lowRISC and SCI Semiconductor Release Sunburst Chip Repository for Secure Microcontroller Development
 summary: 'Source: [https://lowrisc.org/news/lowrisc-and-sci-semiconductor-release-sunburst-chip-repository-for-secure-microcontroller-development/](https://lowrisc.org/news/lowrisc-and-sci-semiconductor-release-sunburst-chip-repository-for-secure-microcontroller-development/)'
 permalink: /news/lowrisc-and-sci-semiconductor-release-sunburst-chip-repository-for-secure-microcontroller-development/

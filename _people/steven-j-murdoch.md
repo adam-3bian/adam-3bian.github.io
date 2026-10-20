@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Steven J. Murdoch
 summary: Steven J. Murdoch — CHERI Alliance information and resources.
 permalink: /people/steven-j-murdoch/

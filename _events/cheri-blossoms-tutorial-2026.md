@@ -1,5 +1,5 @@
 ---
-layout: details/event
+layout: detail
 title: Hands-on Introduction to CHERI and CHERIoT
 summary: A practical introduction to CHERI and CHERIoT for students, researchers, and developers, with presentations, examples, and guided exercises.
 permalink: /events/cheri-blossoms-tutorial-2026/

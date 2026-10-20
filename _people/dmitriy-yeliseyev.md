@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Dmitriy Yeliseyev
 summary: Dmitriy is an embedded systems software architect and technical expert with over 25 years of experience.
 permalink: /people/dmitriy-yeliseyev/

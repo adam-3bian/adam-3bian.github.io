@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: CHERI-Zephyr v0.4.0 Release
 summary: In this blog covering the fourth official development release of CHERI-Zephyr, we’ll look at what’s already CHERI-supported in the kernel and highlight some of the key features added over the course of development.
 permalink: /news/cheri-zephyr-v0-4-0-release/

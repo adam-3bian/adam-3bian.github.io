@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: You just missed the CHERITech’25 Conference – but wait, you can still attend the virtual replay!
 summary: The [CHERITech’25 Conference](/events/cheritech25/) was held on the 14th of November 2025 at the Sister – Renold Building, Manchester, bringing together leading figures from industry, academia and government to discuss the latest developments in Capability Hardware Enhanced RISC Instructions technology (CHERI) and Digital Security by Design (DSbD).
 permalink: /news/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/

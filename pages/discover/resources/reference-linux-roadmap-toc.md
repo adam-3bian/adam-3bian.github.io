@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: toc.html
 summary: toc.html — CHERI Alliance information and resources.
 permalink: /reference/linux-roadmap/toc.html

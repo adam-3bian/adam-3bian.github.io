@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Ricardo Almeida
 summary: Ricardo Almeida — CHERI Alliance information and resources.
 permalink: /people/ricardo-almeida/

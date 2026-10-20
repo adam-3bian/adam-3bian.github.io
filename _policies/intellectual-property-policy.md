@@ -1,5 +1,5 @@
 ---
-layout: details/policy
+layout: detail
 title: Intellectual Property Policy
 summary: The Intellectual Property Policy defines how contributions, essential rights, declarations, licensing commitments, and Alliance work products are handled.
 permalink: /policies/intellectual-property-policy/

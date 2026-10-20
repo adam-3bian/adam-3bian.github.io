@@ -42,6 +42,7 @@ jobs:
           python scripts/check_content.py
           python scripts/check_refinement.py
           python scripts/test_spec.py
+          python scripts/template_inventory.py --output reports/templates.json
           bundle exec ruby scripts/test_event_status.rb
           bundle exec ruby scripts/test_forms.rb
           bundle exec ruby scripts/test_relationships.rb
@@ -51,10 +52,12 @@ jobs:
           python scripts/check_content.py --site dist --report reports/root-content.json
           python scripts/check_refinement.py --site dist
           bundle exec ruby scripts/test_markdown.rb dist
+          python scripts/check_component_parity.py docs/design-polish/rendered-baseline.json dist --report reports/component-parity-root.json
           JEKYLL_ENV=production bundle exec jekyll build --safe --baseurl /preview --destination dist-baseurl/preview
           python scripts/check_content.py --site dist-baseurl/preview --baseurl /preview --report reports/preview-content.json
           python scripts/check_refinement.py --site dist-baseurl/preview --baseurl /preview
           bundle exec ruby scripts/test_markdown.rb dist-baseurl/preview
+          python scripts/check_component_parity.py docs/design-polish/rendered-baseline.json dist-baseurl/preview --baseurl /preview --report reports/component-parity-preview.json
       - name: Check interactions, accessibility and responsive layouts
         run: |
           python -m http.server 4200 --bind 127.0.0.1 --directory dist > "$RUNNER_TEMP/site.log" 2>&1 &
@@ -63,6 +66,10 @@ jobs:
           preview_server_pid=$!
           trap 'kill "$root_server_pid" "$preview_server_pid"' EXIT
           export AXE_PATH="$RUNNER_TEMP/accessibility/node_modules/axe-core/axe.min.js"
+          SITE_URL=http://127.0.0.1:4200/ REPORT_ROOT=reports/components/root python scripts/test_components.py
+          SITE_URL=http://127.0.0.1:4201/preview/ REPORT_ROOT=reports/components/preview python scripts/test_components.py
+          SITE_URL=http://127.0.0.1:4200/ REPORT_ROOT=reports/forms/root python scripts/test_forms.py
+          SITE_URL=http://127.0.0.1:4201/preview/ REPORT_ROOT=reports/forms/preview python scripts/test_forms.py
           BROWSERS=webkit,chromium,firefox SITE_URL=http://127.0.0.1:4200/ REPORT_ROOT=reports/corporate/root python scripts/test_corporate.py
           BROWSERS=webkit,chromium,firefox SITE_URL=http://127.0.0.1:4201/preview/ REPORT_ROOT=reports/corporate/preview python scripts/test_corporate.py
           SITE_URL=http://127.0.0.1:4200/ REPORT_ROOT=reports/posts/root python scripts/test_posts.py

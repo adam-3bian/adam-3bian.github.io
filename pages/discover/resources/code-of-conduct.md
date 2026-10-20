@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: CHERI ALLIANCE CIC Code of Conduct
 summary: "**Version:** 1.01  \n**Date:** 14/04/2025"
 permalink: /code-of-conduct/

@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: Wind River
 summary: Wind River is a global leader in delivering software for the intelligent edge. For more than four decades, the company has been an innovator and pioneer, powering billions of devices and systems that require the highest levels of security, safety…
 permalink: /organisations/wind-river/

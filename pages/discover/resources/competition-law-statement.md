@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: CHERI ALLIANCE CIC Statement of competition compliance
 summary: "**Version:** 1.0  \n**Date:** August 2024"
 permalink: /competition-law-statement/

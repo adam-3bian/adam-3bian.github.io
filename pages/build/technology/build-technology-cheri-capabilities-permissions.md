@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Permissions
 summary: Capability permissions let software grant read, write, execute, and other authority separately instead of treating every pointer as equally powerful.
 permalink: /build/technology/cheri-capabilities/permissions/

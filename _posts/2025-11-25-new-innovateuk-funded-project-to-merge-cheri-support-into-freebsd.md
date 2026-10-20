@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: New InnovateUK-funded project to merge CHERI support into FreeBSD
 summary: CheriBSD has been a key part of the hardware-software design used to create CHERI since the project’s inception.
 permalink: /news/new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd/

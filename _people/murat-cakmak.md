@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Murat Cakmak
 summary: Microservice Store
 permalink: /people/murat-cakmak/

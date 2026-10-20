@@ -1,5 +1,5 @@
 ---
-layout: details/paper
+layout: detail
 title: 'CHERI: Hardware-Enabled C/C++ Memory Protection at Scale'
 summary: Reviews CHERI's hardware-supported protection model and experience applying it to large C and C++ software stacks.
 permalink: /papers/cheri-hardware-enabled-c-c-memory-protection-at-scale/

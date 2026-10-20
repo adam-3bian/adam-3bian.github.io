@@ -1,5 +1,5 @@
 ---
-layout: details/paper
+layout: detail
 title: 'CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost Embedded Devices'
 summary: Describes the CHERIoT RTOS and its fine-grained compartment model for resource-constrained embedded systems.
 permalink: /papers/cheriot-rtos-an-os-for-fine-grained-memory-safe-compartments-on-low-cost-embedded-dev/

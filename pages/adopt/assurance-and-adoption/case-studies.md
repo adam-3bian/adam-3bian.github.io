@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Case Studies
 summary: Applying CHERI in real products and platforms
 permalink: /adopt/assurance-and-adoption/case-studies/

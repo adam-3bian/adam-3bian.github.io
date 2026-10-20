@@ -1,5 +1,5 @@
 ---
-layout: details/paper
+layout: detail
 title: 'Formal Mechanised Semantics of CHERI C: Capabilities, Provenance, and Undefined Behaviour'
 summary: Gives a mechanised semantics for CHERI C covering capabilities, pointer provenance, and undefined behaviour.
 permalink: /papers/formal-mechanised-semantics-of-cheri-c-capabilities-provenance-and-undefined-behaviou/

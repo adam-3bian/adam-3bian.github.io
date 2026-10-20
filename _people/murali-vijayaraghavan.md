@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Murali Vijayaraghavan
 summary: Google
 permalink: /people/murali-vijayaraghavan/

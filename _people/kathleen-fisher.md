@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Kathleen Fisher
 summary: Kathleen Fisher has been instrumental in bringing CHERI from research into national programmes.
 permalink: /people/kathleen-fisher/

@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Exercise integer-pointer type confusion bug
 summary: 'This exercise demonstrates how CHERI distinguishes between integer and pointer
 

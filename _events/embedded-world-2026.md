@@ -1,5 +1,5 @@
 ---
-layout: details/event
+layout: detail
 title: CHERI Alliance at Embedded World 2026
 summary: CHERI Alliance demonstrations and member activity at Embedded World 2026 in Nuremberg.
 permalink: /events/embedded-world-2026/

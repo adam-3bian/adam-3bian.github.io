@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Sam Ainsworth
 summary: Sam Ainsworth — CHERI Alliance information and resources.
 permalink: /people/sam-ainsworth/

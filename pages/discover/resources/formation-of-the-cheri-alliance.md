@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Formation of the CHERI Alliance
 summary: The CHERI Alliance formed to coordinate the organisations needed to move CHERI from shared technology into a global, interoperable product ecosystem.
 permalink: /discover/history/formation-of-the-cheri-alliance/

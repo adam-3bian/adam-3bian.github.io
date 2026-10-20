@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Automotive
 summary: CHERI can protect memory and separate software components in connected vehicles while preserving a path for established C and C++ systems.
 permalink: /adopt/use-cases/automotive/

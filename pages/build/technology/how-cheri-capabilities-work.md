@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: How CHERI Capabilities work
 summary: Pointers tell you where. Capabilities define what you can do.
 permalink: /build/technology/how-cheri-capabilities-work/

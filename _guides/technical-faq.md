@@ -1,5 +1,5 @@
 ---
-layout: details/guide
+layout: detail
 title: Technical FAQ
 summary: Clear answers to common technical questions about CHERI.
 permalink: /guides/technical-faq/

@@ -1,5 +1,5 @@
 ---
-layout: details/paper
+layout: detail
 title: 'Cornucopia Reloaded: Load Barriers for CHERI Heap Temporal Safety'
 summary: Develops a load-barrier approach to temporal heap safety for CHERI systems.
 permalink: /papers/cornucopia-reloaded-load-barriers-for-cheri-heap-temporal-safety/

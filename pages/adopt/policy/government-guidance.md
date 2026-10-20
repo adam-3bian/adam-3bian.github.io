@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Public Policy and CHERI
 summary: Policy makers, regulators, and cybersecurity agencies are pushing for safer software foundations.
 permalink: /adopt/policy/government-guidance/

@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Glossary
 summary: Plain-language definitions for CHERI terms, acronyms, architecture concepts, and software models. The alphabet index links directly to each group of entries.
 permalink: /discover/resources/glossary/

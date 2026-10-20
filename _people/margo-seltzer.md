@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Margo Seltzer
 summary: Margo Seltzer — CHERI Alliance information and resources.
 permalink: /people/margo-seltzer/

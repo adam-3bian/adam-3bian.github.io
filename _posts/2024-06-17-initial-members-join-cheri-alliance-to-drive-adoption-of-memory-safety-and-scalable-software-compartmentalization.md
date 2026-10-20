@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: Initial members join CHERI Alliance to drive adoption of memory safety and scalable software compartmentalization
 summary: The initial founding members of the CHERI Alliance include [Capabilities Limited](/organisations/capabilities-limited/), [Codasip](/organisations/codasip/), the [FreeBSD Foundation](/organisations/freebsd-foundation/), [lowRISC](/organisations/lowrisc/), [SCI Semiconductor](/organisations/sci-semiconductor/), and the [University of Cambridge](/organisations/university-of-cambridge/).
 permalink: /news/initial-members-join-cheri-alliance-to-drive-adoption-of-memory-safety-and-scalable-software-compartmentalization/

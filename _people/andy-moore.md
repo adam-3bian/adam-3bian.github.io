@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Andy Moore
 summary: Andy Moore drives awareness and adoption of RISC‑V across its global member ecosystem.
 permalink: /people/andy-moore/

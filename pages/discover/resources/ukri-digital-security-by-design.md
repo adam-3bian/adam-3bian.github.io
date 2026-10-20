@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: UKRI Digital Security by Design
 summary: Digital Security by Design connected CHERI hardware, software, demonstrators, skills, and adoption work across a major UK programme.
 permalink: /discover/history/ukri-digital-security-by-design/

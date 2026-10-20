@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Jim Wallace
 summary: Jim Wallace — CHERI Alliance information and resources.
 permalink: /people/jim-wallace/

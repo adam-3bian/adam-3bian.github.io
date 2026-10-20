@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Technical Reports - CHERI Roadmap for Linux
 summary: Technical Reports - CHERI Roadmap for Linux — CHERI Alliance information and resources.
 permalink: /reference/linux-roadmap/techreports.html

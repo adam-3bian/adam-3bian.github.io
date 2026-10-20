@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Ian Stark
 summary: Ian Stark — CHERI Alliance information and resources.
 permalink: /people/ian-stark/

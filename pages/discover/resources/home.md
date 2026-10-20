@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Software runs our world. It deserves stronger security foundations.
 summary: Enabled by CHERI.
 permalink: /reference/source-versions/home/

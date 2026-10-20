@@ -1,5 +1,5 @@
 ---
-layout: details/working-group
+layout: detail
 title: 🆓 CHERI FreeRTOS WG
 summary: Coordinates common approaches to memory protection, compartmentalisation, interfaces, and platform support for FreeRTOS on CHERI systems.
 permalink: /groups/cheri-freertos/

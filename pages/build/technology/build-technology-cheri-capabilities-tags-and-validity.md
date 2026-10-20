@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Tags & Validity
 summary: Protected tags let hardware distinguish authentic capabilities from ordinary data, even when both contain the same address bits.
 permalink: /build/technology/cheri-capabilities/tags-and-validity/

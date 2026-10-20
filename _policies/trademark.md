@@ -1,5 +1,5 @@
 ---
-layout: details/policy
+layout: detail
 title: CHERI Trademark
 summary: CHERI® is an open technology, but the CHERI name and logos are protected trademarks.
 permalink: /policies/trademark/

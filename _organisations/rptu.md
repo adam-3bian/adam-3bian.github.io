@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: Rheinland-Pfälzische Technische Universität Kaiserslautern-Landau (RPTU)
 summary: RPTU is a public research university in Kaiserslautern and Landau in der Pfalz, Germany. RPTU is home to 17,000 students, 300 professorships, and 160 degree programs. As a place of top international research and an academic talent factory for…
 permalink: /organisations/rptu/

@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Disassemble and debug RISC-V and CHERI-RISC-V programs
 summary: 'This exercise steps you through disassembling and debugging
 

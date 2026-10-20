@@ -1,5 +1,5 @@
 ---
-layout: details/guide
+layout: detail
 title: Port Existing Software
 summary: Port existing software by making pointer assumptions explicit, preserving capability metadata, and testing each interface on the intended platform.
 permalink: /guides/port-existing-software/

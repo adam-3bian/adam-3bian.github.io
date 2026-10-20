@@ -1,5 +1,5 @@
 ---
-layout: details/event
+layout: detail
 title: CHERITech'26
 summary: A two-day CHERI technical programme at **Electronica** / **SEMICON Europa** in Munich, connecting implementation work with the wider electronics industry.
 permalink: /events/cheritech26/

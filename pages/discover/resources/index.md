@@ -1,5 +1,5 @@
 ---
-layout: page/landing
+layout: page
 title: Software runs our world. It deserves stronger security foundations.
 summary: Software vulnerabilities have always been a risk. AI is increasing the speed and scale at which they can be found and exploited. CHERI helps **stop vulnerabilities from becoming attacks**.
 permalink: /

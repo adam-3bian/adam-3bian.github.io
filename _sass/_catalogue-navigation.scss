@@ -1,20 +1,9 @@
-// Menu-derived category choices use the same borderless navigation surface.
-.index-navigation { display: grid; gap: $space-8; grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.index-columns-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-.index-group > h2, .index-more > h2 { color: var(--accent); font-size: var(--type-title); margin: 0 0 $space-4; }
-.index-group, .index-more { min-width: 0; }
-.index-more { border: 0; margin-top: $space-10; }
-.index-more .option-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.option-card { align-items: center; font-family: $font-family; font-size: 1rem; font-weight: 500; gap: $space-3; justify-content: space-between; min-height: 60px; padding: $space-3 $space-4; }
-.option-card > span { flex: 1; }
-.option-card .icon { color: var(--accent); flex: 0 0 18px; }
-.landing-content .option-list { margin: 0; padding: 0; }
-.landing-content .option-list li { margin: 0; }
-.landing-content .option-card { color: var(--ink); }
-@media (max-width: 1023px) {
-  .index-navigation, .index-more .option-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
-@media (max-width: 767px) {
-  .index-navigation, .index-more .option-list { grid-template-columns: minmax(0, 1fr); }
-  .index-navigation { gap: $space-8; }
-}
+// Menu-derived category links have one naming and spacing system.
+.category-sections { display: grid; gap: $space-8; grid-template-columns: repeat(var(--category-columns, 3), minmax(0, 1fr)); margin-top: $section-gap-mobile; }
+.category-sections > section { clear: none; margin: 0; min-width: 0; }
+.category-sections h2 { color: var(--ink); font-size: var(--type-title); margin-bottom: $space-4; }
+.category-links { display: grid; gap: $space-3; list-style: none; margin: 0; padding: 0; }
+.category-links > li { margin: 0; min-width: 0; }
+.category-links a { align-items: center; display: flex; font-weight: $font-weight-medium; min-height: $control-height; padding: $space-3 $space-4; }
+@media (max-width: 1023px) { .category-sections { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 767px) { .category-sections { grid-template-columns: minmax(0, 1fr); } }

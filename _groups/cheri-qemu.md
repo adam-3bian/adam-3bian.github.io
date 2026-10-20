@@ -1,5 +1,5 @@
 ---
-layout: details/working-group
+layout: detail
 title: 🐦 CHERI QEMU WG
 summary: Coordinates CHERI support in QEMU so developers have maintained, testable emulation aligned with current architectures and platforms.
 permalink: /groups/cheri-qemu/

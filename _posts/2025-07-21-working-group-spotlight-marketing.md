@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: Working Group Spotlight – Marketing
 summary: CHERI is reshaping how we think about secure technology. At the heart of this effort is the CHERI Alliance, a growing community committed to secure by design innovation. By joining us, you gain not just insight and influence but support in making your work more visible, more accessible and more impactful. The Alliance is organised into [Working Groups](/alliance/leadership/working-groups/) which are open to all members who want to participate.
 permalink: /news/working-group-spotlight-marketing/

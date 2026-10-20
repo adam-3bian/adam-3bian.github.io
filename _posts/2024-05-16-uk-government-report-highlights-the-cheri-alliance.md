@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: UK Government report highlights the CHERI Alliance
 summary: The Department for Science, Innovation and Technology (DSIT) of the British Government has published [a report](https://www.gov.uk/government/publications/cheri-adoption-and-diffusion-research/cheri-adoption-and-diffusion-research) about CHERI adoption and diffusion, to “understand the potential market” for CHERI and “how the Department can encourage and support the adoption and diffusion of the technology in semiconductors”.
 permalink: /news/uk-government-report-highlights-the-cheri-alliance/

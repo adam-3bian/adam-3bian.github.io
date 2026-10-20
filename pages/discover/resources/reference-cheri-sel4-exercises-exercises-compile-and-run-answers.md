@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Answers - Compile and run RISC-V and CHERI-RISC-V programs
 summary: 'This exercise explores the difference in size between addresses and
 

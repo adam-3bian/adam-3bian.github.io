@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: IoTSF + TechWorks – Resilient IoT and Trustworthy AI Conferences
 summary: The IoT Security Foundation (IoTSF) and [TechWorks](/organisations/techworks/) AI held their annual Resilient IoT and Trustworthy AI Conference on Thursday 30 October 2025 at the IET, Savoy Place, London. Delegates from industry, academia and government gathered to explore the evolving challenges of securing intelligent and connected systems.
 permalink: /news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences/

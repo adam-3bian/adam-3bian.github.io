@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: Codasip enables secure Linux by donating CHERI RISC-V SDK to the CHERI Alliance
 summary: “As more organizations and governments discover the potential of the CHERI technology to protect us, we need to speed up the pace of making the technology available in real systems,” says Ron Black, chief executive officer, [Codasip](/organisations/codasip/).
 permalink: /news/codasip-enables-secure-linux-by-donating-cheri-risc-v-sdk-to-the-cheri-alliance/

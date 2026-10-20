@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: FPGA Platforms
 summary: Run CHERI on real, reconfigurable hardware before moving to silicon.
 permalink: /build/platforms/fpga-platforms/

@@ -1,5 +1,5 @@
 ---
-layout: details/working-group
+layout: detail
 title: ✅ Certification WG
 summary: Develops shared thinking around certification criteria, assurance needs, evidence, and the operation of Alliance certification programmes.
 permalink: /groups/certification-working-group/

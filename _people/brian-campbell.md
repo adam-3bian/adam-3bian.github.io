@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Brian Campbell
 summary: Brian Campbell — CHERI Alliance information and resources.
 permalink: /people/brian-campbell/

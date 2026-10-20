@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Extending heap allocators for CHERI
 summary: 'CHERI''s architectural protection is driven by software -- the compiler,
 

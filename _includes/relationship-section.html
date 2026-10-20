@@ -1,1 +1,5 @@
-{% if include.items.size > 0 %}<section class="related-content" data-relationship="{{ include.kind | escape }}" aria-labelledby="{{ include.id | escape }}"><h2 id="{{ include.id | escape }}">{{ include.title | escape }}</h2>{% include listing.html items=include.items kind=include.kind label=include.title heading='h3' metadata=false %}</section>{% endif %}
+{% comment %}Shared related-record section: items, kind, id and title. All cards
+use h3 and omit repeated directory metadata; card.html owns the record markup.{% endcomment %}
+{% if include.items.size > 0 %}<section class="related-content" data-relationship="{{ include.kind | escape }}" aria-labelledby="{{ include.id | escape }}"><h2 id="{{ include.id | escape }}">{{ include.title | escape }}</h2><ul class="catalog-cards record-list" role="list" aria-label="{{ include.title | escape }}">
+{% for entry in include.items %}{% unless entry.redirect_to or entry.collection == 'redirects' %}{% include card.html item=entry kind=include.kind resolve=include.resolve heading='h3' images=include.images metadata=false action=include.action %}{% endunless %}{% endfor %}
+</ul></section>{% endif %}

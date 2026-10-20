@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: ‘Cybersecurity by Design – from Research to Industry’ — Conference Report
 summary: At the first **CHERI Alliance** conference, organised in partnership with [CyNam](/organisations/cynam/) and [NCSC](/organisations/ncsc/), we had a packed out event, with a full hall at Hub8 MX in Cheltenham for the opening keynote from Paul Waller (from the [National Cyber Security Centre](/organisations/ncsc/), NCSC, a part of GCHQ).
 permalink: /news/cybersecurity-by-design-from-research-to-industry-conference-report/

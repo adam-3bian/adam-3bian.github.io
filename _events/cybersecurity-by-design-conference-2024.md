@@ -1,5 +1,5 @@
 ---
-layout: details/event
+layout: detail
 title: '''Cybersecurity by design - from research to industry'' conference'
 summary: Connecting CHERI and secure-by-design research with practical industry implementation.
 permalink: /events/cybersecurity-by-design-conference-2024/

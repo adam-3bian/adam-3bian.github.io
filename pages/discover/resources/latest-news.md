@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Latest News
 summary: News, announcements, and analysis from the CHERI Alliance and its members.
 permalink: /reference/source-versions/latest-news/

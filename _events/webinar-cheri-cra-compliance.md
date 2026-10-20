@@ -1,5 +1,5 @@
 ---
-layout: details/event
+layout: detail
 title: Webinar - CHERI & CRA Compliance
 summary: A live webinar on how CHERI can help organisations respond to the security requirements of the EU Cyber Resilience Act.
 permalink: /events/webinar-cheri-cra-compliance/

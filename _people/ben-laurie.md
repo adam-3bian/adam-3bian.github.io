@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Ben Laurie
 summary: Ben Laurie — CHERI Alliance information and resources.
 permalink: /people/ben-laurie/

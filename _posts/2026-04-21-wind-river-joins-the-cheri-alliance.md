@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: Wind River Joins the CHERI Alliance
 summary: We are pleased to welcome [Wind River](/organisations/wind-river/) to the CHERI Alliance, marking another important step forward in building a more secure computing ecosystem.
 permalink: /news/wind-river-joins-the-cheri-alliance/

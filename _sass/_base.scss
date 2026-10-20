@@ -218,10 +218,7 @@ img {
   width: unquote("min(100%, #{$inline-image-height})");
 }
 
-.index-list, .form-panel { clear: both; }
-.index-list > h2 { margin-bottom: $heading-gap; }
-.content > .index-list:not(:first-child) { margin-top: $subsection-gap; }
-.section-intro { margin-bottom: $space-6; max-width: $text-width; }
+.form-panel { clear: both; }
 
 // Retain the semantic document break without adding a decorative rule.
 hr { border: 0; height: 0; margin-block: $space-8; }

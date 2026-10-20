@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: UKRI
 summary: UKRI — CHERI Alliance information and resources.
 permalink: /organisations/ukri/

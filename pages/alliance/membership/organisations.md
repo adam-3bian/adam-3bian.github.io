@@ -1,5 +1,5 @@
 ---
-layout: lists/members
+layout: list
 title: Organisations
 summary: Explore Alliance members and organisations explicitly named in published profiles.
 permalink: /organisations/

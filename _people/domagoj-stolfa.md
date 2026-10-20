@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Domagoj Stolfa
 summary: Domagoj Stolfa is a researcher currently working at Capabilities Limited and University of Cambridge.
 permalink: /people/domagoj-stolfa/

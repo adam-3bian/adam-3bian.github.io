@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Subscribe to our quarterly newsletter
 summary: Get news from the CHERI ecosystem every quarter.
 permalink: /reference/source-versions/newsletter/

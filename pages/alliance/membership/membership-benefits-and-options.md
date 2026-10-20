@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Membership Benefits & Options
 summary: Join the organisations and people shaping CHERI and accelerating its adoption.
 permalink: /alliance/membership/membership-benefits-and-options/

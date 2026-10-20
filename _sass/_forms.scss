@@ -1,6 +1,7 @@
 .form-panel {
   width: 100%;
 }
+.reading-page main > .form-panel { margin-block: 0 $section-gap-mobile; }
 .form-panel > * + * {
   margin-top: $content-gap;
 }

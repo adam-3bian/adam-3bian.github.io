@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: BT Group
 summary: BT Group is the UK’s leading provider of fixed and mobile telecommunications and related secure digital products, solutions and services. We also provide managed telecommunications, security and network &amp; IT infrastructure services to customers…
 permalink: /organisations/bt-group/

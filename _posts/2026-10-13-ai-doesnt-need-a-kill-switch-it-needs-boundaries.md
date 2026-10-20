@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: AI Doesn’t Need a Kill Switch. It Needs Boundaries
 summary: 'In the earlier articles in this series, we looked at why memory-safety vulnerabilities persist in critical infrastructure, and how [CHERI](/discover/understand/how-does-cheri-work/) can contain a compromised software component rather than allowing one failure to spread across the platform. AI takes that challenge a step further: how do we limit the authority of a component that is becoming part of the control loop?'
 permalink: /news/ai-doesnt-need-a-kill-switch-it-needs-boundaries/

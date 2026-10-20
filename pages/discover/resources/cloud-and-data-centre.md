@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Cloud & Data Centre
 summary: CHERI can add protection inside hosts and services, limiting native components that sit within the same process, container, or virtual machine.
 permalink: /adopt/use-cases/cloud-and-data-centre/

@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: King Abdullah University of Science and Technology (KAUST)
 summary: Details to follow.
 permalink: /organisations/king-abdullah-university-of-science-and-technology-kaust/

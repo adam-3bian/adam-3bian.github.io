@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Future Direction
 summary: CHERI’s next phase depends on stable standards, broader products, support in widely used software projects, practical assurance, and evidence from real deployments.
 permalink: /discover/history/future-direction/

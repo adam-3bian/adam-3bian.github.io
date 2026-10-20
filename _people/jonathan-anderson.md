@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Jonathan Anderson
 summary: Jonathan Anderson — CHERI Alliance information and resources.
 permalink: /people/jonathan-anderson/

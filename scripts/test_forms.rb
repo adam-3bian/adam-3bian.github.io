@@ -10,8 +10,14 @@ render=lambda do |form|
 end
 forms.each do |key,form|
  output=render.call(form)
+ abort 'Local form has a network target' unless output.at_css('form[data-local-form]') && !output.at_css('form')['action'] && output.css('a.button').empty?
+ abort 'Default submission must stay disabled' unless output.at_css('button[type="submit"][disabled][hidden]') && output.at_css('button[type="button"]')
+ abort 'Local fields lost' unless output.css('input:not([type="hidden"]),textarea,select').length==form['fields'].length
+ abort 'No preview warning was requested' if output.text.include?('Preview only')
+ external=form.merge('submission'=>{'mode'=>'external','url'=>'https://example.test/published-form','label'=>'Open published form'})
+ output=render.call(external)
  abort 'External mode must never collect local data' unless output.css('form,input,textarea,select,button').empty?
- abort 'Published provider URL lost' unless output.at_css('a.button')['href']==form['submission']['url']
+ abort 'Published provider URL lost' unless output.at_css('a.button')['href']==external['submission']['url']
 end
 fixture={'id'=>'all-inputs','title'=>'Integration fixture','description'=>'Tests only; never submitted','privacy_url'=>'/policies/privacy/','submission'=>{'mode'=>'post','url'=>'/verified-endpoint/','label'=>'Send test'},'fields'=>[
  {'name'=>'first-name','type'=>'text','label'=>'First name','required'=>true,'width'=>'half','min_length'=>2,'max_length'=>50,'pattern'=>'[A-Za-z ]+','help'=>'Use letters','autocomplete'=>'given-name','default'=>'Ada'},
@@ -32,4 +38,4 @@ f.css('input:not([type="hidden"]),select,textarea').each{|field|abort 'Field lac
 f.css('[aria-describedby]').each{|field|field['aria-describedby'].split.each{|id|abort 'Unresolved field help' unless output.at_css("[id='#{id}']")}}
 ids=output.css('[id]').map{|n|n['id']};abort 'Duplicate form IDs' unless ids.uniq==ids
 preview=render.call(fixture.merge('submission'=>{'mode'=>'disabled'}));abort 'Disabled preview can submit' unless preview.css('form,button[type="submit"]').empty?&&preview.at_css('fieldset[disabled]')&&preview.text.include?('Preview only')
-puts 'Forms: external-only providers, POST renderer, eight input types, native constraints, wire names, escaping, defaults, labels/help, safe IDs and disabled preview passed; no submissions sent.'
+puts 'Forms: local presentation without submission, external providers, POST renderer, eight input types, native constraints, wire names, escaping, defaults, labels/help, safe IDs and disabled preview passed; no submissions sent.'

@@ -1,5 +1,5 @@
 ---
-layout: page/landing
+layout: page
 title: Build with CHERI
 summary: Build with CHERI — CHERI Alliance information and resources.
 permalink: /build/

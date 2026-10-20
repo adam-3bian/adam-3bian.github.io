@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Answers
 summary: Answers — CHERI development reference.
 permalink: /reference/CHERI-seL4-Exercises/exercises/cheri-tags/answers.html

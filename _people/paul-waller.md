@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Paul Waller
 summary: Paul Waller works on advancing practical, deployable cyber security at national scale.
 permalink: /people/paul-waller/

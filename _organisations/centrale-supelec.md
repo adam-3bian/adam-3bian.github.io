@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: Centrale Supélec
 summary: Details to follow.
 permalink: /organisations/centrale-supelec/

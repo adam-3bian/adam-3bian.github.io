@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Lucian Paul-Trifu
 summary: Lucian Paul-Trifu — CHERI Alliance information and resources.
 permalink: /people/lucian-paul-trifu/

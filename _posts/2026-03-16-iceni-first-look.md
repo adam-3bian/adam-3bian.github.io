@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: 'ICENI: First Look'
 summary: For more than a decade, CHERI research has demonstrated that hardware-enforced memory safety can eliminate entire classes of security vulnerabilities. Much of this work has taken place in simulators and FPGA platforms, enabling researchers and developers to experiment with capability-based architectures before production hardware became available.
 permalink: /news/iceni-first-look/

@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: SCI Semiconductor
 summary: SCI Semiconductor was formed to lead the commercialisation of CHERI technologies and is a founder member of the CHERI Alliance. With a strong focus on secure and high-integrity computing, the organization has built a team of recognised industry…
 permalink: /organisations/sci-semiconductor/

@@ -1,5 +1,5 @@
 ---
-layout: details/product
+layout: detail
 title: Sonata
 summary: Sonata is an accessible FPGA development platform for running CHERIoT firmware with real peripherals before moving to production silicon.
 permalink: /products/sonata/

@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Debugging Tools
 summary: Understand CHERI faults and inspect capabilities alongside familiar program state.
 permalink: /build/software-ecosystem/debugging-tools/

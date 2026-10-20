@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: Mission Critical Applications Limited
 summary: Mission Critical Applications Limited — CHERI Alliance information and resources.
 permalink: /organisations/mission-critical-applications-limited/

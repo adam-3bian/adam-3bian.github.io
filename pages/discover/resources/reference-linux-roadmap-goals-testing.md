@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Testing - CHERI Roadmap for Linux
 summary: Testing - CHERI Roadmap for Linux — CHERI Alliance information and resources.
 permalink: /reference/linux-roadmap/goals/testing.html

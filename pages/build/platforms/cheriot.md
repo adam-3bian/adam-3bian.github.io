@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: CHERIoT
 summary: CHERIoT combines a compact CHERI-RISC-V architecture, processor cores, a real-time operating system, compartments, tooling, simulation, and embedded hardware targets.
 permalink: /build/platforms/cheriot/

@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Morello History
 summary: Morello brought CHERI to a high-performance Arm prototype platform and enabled large-scale evaluation by industry, academia, and government.
 permalink: /discover/history/morello-history/

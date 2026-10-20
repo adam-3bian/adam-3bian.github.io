@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Ollie Whitehouse
 summary: Ollie is a fellow of the Royal Academy of Engineering whose career in cyber security spans over 30 years.
 permalink: /people/ollie-whitehouse/

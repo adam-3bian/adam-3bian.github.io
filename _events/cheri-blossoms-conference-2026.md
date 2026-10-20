@@ -1,5 +1,5 @@
 ---
-layout: details/event
+layout: detail
 title: CHERI Blossoms Conference 2026
 summary: Three days bringing together the people researching, building, deploying and shaping the future of CHERI
 permalink: /events/cheri-blossoms-conference-2026/

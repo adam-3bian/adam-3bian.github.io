@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Collaboration Principles
 summary: Collaboration, openness, and shared effort are at the heart of CHERI adoption.
 permalink: /alliance/about-and-governance/collaboration-principles/

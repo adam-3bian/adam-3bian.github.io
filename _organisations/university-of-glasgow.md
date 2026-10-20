@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: University of Glasgow
 summary: A Russell Group university with a strong sense of civic mission.
 permalink: /organisations/university-of-glasgow/

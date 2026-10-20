@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: CHERI Linux
 summary: Bring CHERI hardware-enforced protection to Linux-based systems and applications.
 permalink: /build/software-ecosystem/cheri-linux/

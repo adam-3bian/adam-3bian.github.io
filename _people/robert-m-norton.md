@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Robert M. Norton
 summary: Robert M. Norton — CHERI Alliance information and resources.
 permalink: /people/robert-m-norton/

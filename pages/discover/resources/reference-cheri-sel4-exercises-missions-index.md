@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Focused Adversarial Missions
 summary: Focused Adversarial Missions — CHERI Alliance information and resources.
 permalink: /reference/CHERI-seL4-Exercises/missions/index.html

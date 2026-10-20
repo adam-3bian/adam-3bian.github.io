@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: SCI Semiconductor and the CHERI Alliance at RISC-V Summit in China, July 2025
 summary: In the latter half of July I got the fantastic opportunity to re-visit Shanghai after a good few years of being away and wow, have I missed it. Shanghai is a fantastic city to visit and has grown so much over the last 20 years. It is therefore a fitting location and analogous to the growth of RISC-V celebrating its own 15th year anniversary.
 permalink: /news/sci-semiconductor-and-the-cheri-alliance-at-risc-v-summit-in-china-july-2025/

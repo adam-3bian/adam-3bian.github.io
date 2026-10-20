@@ -33,6 +33,7 @@
   text-decoration: none;
 }
 .button .icon { height: 18px; width: 18px; }
+.button > span { min-width: 0; overflow-wrap: anywhere; }
 .button-secondary[aria-current] {
   box-shadow: inset 0 0 0 2px var(--button-text);
 }
@@ -44,7 +45,6 @@
   opacity: 0.6;
 }
 .resource-link { justify-content: flex-start; text-align: left; width: fit-content; }
-.resource-link > span { min-width: 0; overflow-wrap: anywhere; }
 .surface-inverse {
   --button-background: #fff;
   --button-hover: #e7eef1;

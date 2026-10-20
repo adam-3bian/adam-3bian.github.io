@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: Ericsson
 summary: Ericsson — CHERI Alliance information and resources.
 permalink: /organisations/ericsson/

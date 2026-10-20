@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Legal and Policies
 summary: Legal and Policies — CHERI Alliance information and resources.
 permalink: /legal-and-policies/

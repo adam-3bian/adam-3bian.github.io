@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: UM Labs
 summary: UM Labs is a cyber security company specialising in securing real-time communication protocols on IP networks. Applications include voice and video calls, streaming video and Extended Reality. Our products are deployed with multiple national…
 permalink: /organisations/um-labs/

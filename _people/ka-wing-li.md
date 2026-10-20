@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Ka Wing Li
 summary: Ka Wing Li is a PhD student from the [University of Cambridge](/organisations/university-of-cambridge/).
 permalink: /people/ka-wing-li/

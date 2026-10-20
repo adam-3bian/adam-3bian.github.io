@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Jennifer Jackson
 summary: Jennifer is an Electronic Engineer with experience in FPGA design, Arm v8.2, computer security, capability architectures, CHERI, LLVM tool chain, RISC-V development and embedded and Zephyr OS development for CHERI.
 permalink: /people/jennifer-jackson/

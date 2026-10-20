@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Critical Infrastructure
 summary: CHERI can protect exposed and long-lived software inside infrastructure systems, helping one memory flaw remain separate from the functions that keep an essential service running.
 permalink: /adopt/use-cases/critical-infrastructure/

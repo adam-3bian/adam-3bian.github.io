@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Michael Roe
 summary: Michael Roe — CHERI Alliance information and resources.
 permalink: /people/michael-roe/

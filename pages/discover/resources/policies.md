@@ -1,5 +1,5 @@
 ---
-layout: lists/policies
+layout: list
 title: Policies
 summary: Published Alliance policies and programme guidance.
 permalink: /policies/

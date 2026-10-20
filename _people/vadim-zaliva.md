@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Vadim Zaliva
 summary: Vadim Zaliva — CHERI Alliance information and resources.
 permalink: /people/vadim-zaliva/

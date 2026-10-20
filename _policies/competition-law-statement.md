@@ -1,5 +1,5 @@
 ---
-layout: details/policy
+layout: detail
 title: Competition Law Statement
 summary: Alliance collaboration must never be used to exchange competitively sensitive information or coordinate market behaviour.
 permalink: /policies/competition-law-statement/

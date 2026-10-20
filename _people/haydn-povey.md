@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Haydn Povey
 summary: SCI Semiconductor
 permalink: /people/haydn-povey/

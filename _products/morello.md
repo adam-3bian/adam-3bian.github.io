@@ -1,5 +1,5 @@
 ---
-layout: details/product
+layout: detail
 title: Morello
 summary: Morello is Arm’s application-class CHERI prototype platform, providing real hardware for developing, porting and evaluating CHERI software.
 permalink: /products/morello/

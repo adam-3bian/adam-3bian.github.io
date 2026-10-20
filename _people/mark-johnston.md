@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Mark Johnston
 summary: Mark Johnston — CHERI Alliance information and resources.
 permalink: /people/mark-johnston/

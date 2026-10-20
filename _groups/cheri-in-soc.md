@@ -1,5 +1,5 @@
 ---
-layout: details/working-group
+layout: detail
 title: ⬛️ CHERI in SoC WG
 summary: Brings together the architecture, integration, and verification questions involved in adding CHERI to a system-on-chip.
 permalink: /groups/cheri-in-soc/

@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: Codasip
 summary: Codasip is a processor technology company enabling system-on-chip developers to differentiate their products for competitive advantage. Customers leverage the transformational potential of the open RISC-V ISA in a unique way through Codasip’s Custom…
 permalink: /organisations/codasip/

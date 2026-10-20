@@ -157,17 +157,18 @@ with sync_playwright() as p:
                 if '?view=grid' in route:
                     # Every card in a row, with or without membership, shares a footer baseline.
                     for member in members:
-                        assert abs(member['card']['bottom']-member['footer']['bottom']-(16 if width<768 else 20))<1,(width,member)
+                        assert abs(member['card']['bottom']-member['footer']['bottom']-24)<1,(width,member)
                 elif width>=768:
                     positions=[m['badge']['x'] for m in members if m['badge']]
                     assert max(positions)-min(positions)<1,(width,'unaligned membership badges')
             if route in ['alliance/','build/','news-and-events/']:
-                destinations=page.locator('.index-navigation a,.index-more a').evaluate_all('ns=>ns.map(n=>n.getAttribute("href"))')
-                assert len(destinations)==len(set(destinations)),(route,'repeated category options')
+                destinations=page.locator('.category-sections a').evaluate_all('ns=>ns.map(n=>n.getAttribute("href"))')
+                assert destinations and len(destinations)==len(set(destinations)),(route,'missing or repeated category options')
             if route=='alliance/membership/contact/':
-                assert page.locator('.form-panel form').count()==0
-                assert page.locator('.form-panel input,.form-panel select,.form-panel textarea,.form-panel button').count()==0
-                assert page.locator('.form-panel a.button').get_attribute('href')=='https://cheri-alliance.org/contact/#contact_form'
+                assert page.locator('.form-panel form[data-local-form]').count()==1
+                assert page.locator('.form-panel input,.form-panel select,.form-panel textarea').count()==5
+                assert page.locator('.form-panel a.button').count()==0
+                assert page.locator('.form-panel button[type=submit][disabled][hidden]').count()==1
             if route=='people/adam-finney/':
                 assert page.locator('.related-content .cards-grid').count()==0
                 assert page.locator('.related-content .catalog-meta').count()==0
@@ -205,8 +206,9 @@ with sync_playwright() as p:
     assert page.locator('.placeholder-image').count()==0
     page.goto(URL+'alliance/');assert page.locator('.category-links a').count()==18
     page.goto(URL+'alliance/membership/contact/')
-    assert page.locator('.form-panel input,.form-panel select,.form-panel textarea,.form-panel button').count()==0
-    assert page.locator('.form-panel a.button').get_attribute('href')=='https://cheri-alliance.org/contact/#contact_form'
+    assert page.locator('.form-panel input,.form-panel select,.form-panel textarea').count()==5
+    assert page.locator('.form-panel a.button').count()==0
+    assert page.locator('.form-panel button[type=submit][disabled][hidden]').count()==1
     b.close()
 (OUT/'results.json').write_text(json.dumps(results,indent=2)+'\n')
 print(json.dumps({'responsive_views':len(results),'axe_views':len(routes)*2,'menu_options':len(expected),'no_javascript':'passed'}))

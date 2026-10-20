@@ -1,5 +1,5 @@
 ---
-layout: details/policy
+layout: detail
 title: Export Controls
 summary: Public CHERI material supports an open global ecosystem, but organisations must assess export controls before sharing non-public technology or commercial products.
 permalink: /policies/export-controls/

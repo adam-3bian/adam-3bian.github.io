@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: Configured Things
 summary: Configured Things — CHERI Alliance information and resources.
 permalink: /organisations/configured-things/

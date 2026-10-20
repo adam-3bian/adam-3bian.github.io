@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Exploiting a buffer overflow to manipulate control flow
 summary: 'The objective of this mission is to demonstrate arbitrary code execution
 

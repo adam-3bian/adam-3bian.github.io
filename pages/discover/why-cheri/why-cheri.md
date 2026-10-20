@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Why CHERI?
 summary: Hardware-enforced memory protection for existing and future software.
 permalink: /discover/why-cheri/why-cheri/

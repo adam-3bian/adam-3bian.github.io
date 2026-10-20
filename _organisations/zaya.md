@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: ZAYA
 summary: We offer security solutions and containerisation for microcontrollers and embedded systems, addressing specific security needs for small and compact devices in markets such as IoT, Secure Elements, and Automotive. Positioned at the cutting edge of…
 permalink: /organisations/zaya/

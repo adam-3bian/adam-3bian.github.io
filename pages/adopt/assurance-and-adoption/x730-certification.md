@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: X730 Certification Record
 summary: The X730-MP4-Lux 1.0 record describes the certified application-processor core, its CHERI-RISC-V modes, verification evidence, and system-integration assumptions.
 permalink: /adopt/assurance-and-adoption/x730-certification/

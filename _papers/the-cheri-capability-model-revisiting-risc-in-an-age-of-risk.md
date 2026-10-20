@@ -1,5 +1,5 @@
 ---
-layout: details/paper
+layout: detail
 title: 'The CHERI Capability Model: Revisiting RISC in an Age of Risk'
 summary: Introduces the practical RISC capability model that underpins the early CHERI architecture.
 permalink: /papers/the-cheri-capability-model-revisiting-risc-in-an-age-of-risk/

@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Porting Status
 summary: CHERI software support is reported by platform, architecture, ABI, operating system, package set, and project revision rather than by one ecosystem-wide percentage.
 permalink: /build/software-ecosystem/porting-status/

@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Manu Ravishankar
 summary: Manu Ravishankar is a Principal Consultant specialising in innovation strategy, programme design and technology commercialisation.
 permalink: /people/manu-ravishankar/

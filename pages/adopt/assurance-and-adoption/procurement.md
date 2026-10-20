@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Procurement
 summary: CHERI can give buyers a more precise account of memory protection and containment when the product, software coverage, and evidence have a defined scope.
 permalink: /adopt/assurance-and-adoption/procurement/

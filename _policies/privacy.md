@@ -1,5 +1,5 @@
 ---
-layout: details/policy
+layout: detail
 title: Privacy
 summary: The Privacy Policy explains what website data the Alliance records, why it is processed, how long it is retained, and the rights available to users.
 permalink: /policies/privacy/

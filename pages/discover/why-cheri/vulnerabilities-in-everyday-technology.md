@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Vulnerabilities in Everyday Technology
 summary: A memory mistake in a connected device can expose private information, change how the device behaves, or provide a way into a wider network.
 permalink: /discover/why-cheri/vulnerabilities-in-everyday-technology/

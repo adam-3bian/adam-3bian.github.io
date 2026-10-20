@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Sam Cater
 summary: Sam is a Research Technical Manager within BT’s Research and Commercialisation department, focussing on Cybersecurity technologies.
 permalink: /people/sam-cater/

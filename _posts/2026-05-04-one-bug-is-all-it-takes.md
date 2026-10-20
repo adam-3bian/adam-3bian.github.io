@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: One Bug is All It Takes
 summary: 'This article is part of a series of blogs published after the announcement of Mythos vulnerabilities’ exploitation capabilities. The views from other experts on this topic are:'
 permalink: /news/one-bug-is-all-it-takes/

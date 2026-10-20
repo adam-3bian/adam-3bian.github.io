@@ -1,5 +1,5 @@
 ---
-layout: lists/posts
+layout: list
 title: News
 summary: CHERI Alliance and ecosystem announcements.
 permalink: /news/

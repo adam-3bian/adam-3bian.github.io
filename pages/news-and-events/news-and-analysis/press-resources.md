@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Press Resources
 summary: Everything you need to cover the CHERI Alliance and CHERI technology.
 permalink: /news-and-events/news-and-analysis/press-resources/

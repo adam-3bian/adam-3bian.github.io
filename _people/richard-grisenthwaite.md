@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Richard Grisenthwaite
 summary: Richard Grisenthwaite — CHERI Alliance information and resources.
 permalink: /people/richard-grisenthwaite/

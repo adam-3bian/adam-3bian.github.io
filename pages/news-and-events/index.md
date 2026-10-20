@@ -1,5 +1,5 @@
 ---
-layout: page/landing
+layout: page
 title: News and events
 summary: News and events — CHERI Alliance information and resources.
 permalink: /news-and-events/

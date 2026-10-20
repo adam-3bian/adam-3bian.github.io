@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Tariq Kurd
 summary: Tariq Kurd has been involved in CPU architecture, design, and verification for over 25 years, primarily in the embedded field.
 permalink: /people/tariq-kurd/

@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: Smart Information Flow Technologies (SIFT)
 summary: Smart Information Flow Technologies (SIFT) — CHERI Alliance information and resources.
 permalink: /organisations/smart-information-flow-technologies-sift/

@@ -96,7 +96,8 @@ def validate_forms(forms,errors):
   label='forms.'+key;unknown(f,{'id','title','description','privacy_url','submission','fields'},label,errors)
   if not re.fullmatch(r'[A-Za-z][A-Za-z0-9_-]*',f.get('id','')):errors.append(label+': invalid ID')
   sub=f.get('submission',{});unknown(sub,{'mode','url','label','method','verified','success_message','error_message','security'},label+'.submission',errors)
-  if sub.get('mode') not in ['external','post','disabled']:errors.append(label+': invalid mode')
+  if sub.get('mode') not in ['external','post','disabled','unconfigured']:errors.append(label+': invalid mode')
+  if sub.get('mode')=='unconfigured' and (sub.get('url') or not sub.get('label')):errors.append(label+': unconfigured form requires a label and no submission target')
   if sub.get('mode') in ['external','post'] and (not sub.get('label') or not valid_url(sub.get('url'))):errors.append(label+': missing real submission target/label')
   if sub.get('mode')=='post' and (not sub.get('verified') or sub.get('method','post')!='post' or not sub.get('success_message') or not sub.get('error_message') or not sub.get('security') or not f.get('privacy_url')):errors.append(label+': POST requires verified backend, responses, security and privacy')
   names=set()
@@ -151,11 +152,12 @@ def validate_source(errors,warnings):
     unknown(f,{'category'},label+'.footer',errors)
     if f.get('category') not in footer:errors.append(label+': invalid footer category')
    if kind=='pages':
+    if d.get('layout')!=('list' if d.get('listing') else 'page'):errors.append(label+': incorrect ordinary-page/list layout')
     parts=p.relative_to(ROOT/'pages').parts
     if len(parts) not in [3,4] and label not in ['pages/index.md','pages/discover/index.md','pages/adopt/index.md','pages/build/index.md','pages/alliance/index.md','pages/news-and-events/index.md']:errors.append(label+': invalid ordinary-page source location')
    else:
     group=FAMILIES[kind][2]
-    if set(SCHEMA)&set(d)!={group} or d.get('layout')!='details/'+FAMILIES[kind][1]:errors.append(label+': incorrect semantic group/layout')
+    if set(SCHEMA)&set(d)!={group} or d.get('layout')!=('article' if kind=='posts' else 'detail'):errors.append(label+': incorrect semantic group/layout')
     else:unknown(d[group],SCHEMA[group],label+'.'+group,errors)
     for field,values in taxonomy.get(group,{}).items():
      if field in d.get(group,{}):
@@ -264,10 +266,13 @@ def validate_source(errors,warnings):
  for url,info in baseline['assets'].items():
   p=ROOT/url.lstrip('/')
   if p.suffix.lower() in ['.png','.jpg','.jpeg','.webp','.gif','.svg','.pdf','.ttf','.woff','.woff2'] and (not p.is_file() or hashlib.sha256(p.read_bytes()).hexdigest()!=info['sha256']):errors.append('Changed/lost original binary '+url)
- for name in ['header','footer','breadcrumbs','form-from-data','form-fields','newsletter-cta','related-content']:
+ for name in ['header','footer','breadcrumbs','form-from-data','form-fields','newsletter-cta','relationships','relationship-section','card','action']:
   if not (ROOT/('_includes/'+name+'.html')).is_file():errors.append('Missing shared component '+name)
- for list_name,detail_name,group in FAMILIES.values():
-  if not (ROOT/('_layouts/lists/'+list_name+'.html')).exists() or not (ROOT/('_layouts/details/'+detail_name+'.html')).exists():errors.append('Missing layout family '+group)
+ for name in ['default','page','list','detail','article','redirect']:
+  if not (ROOT/('_layouts/'+name+'.html')).exists():errors.append('Missing shared layout '+name)
+ from template_inventory import inventory
+ template_graph=inventory()
+ if template_graph['missing_references'] or template_graph['dynamic_references']:errors.append('Unresolved template dependencies')
  return records,routes,redirects,relationship_rows
 
 def rendered(site,baseurl,routes,redirects,errors):

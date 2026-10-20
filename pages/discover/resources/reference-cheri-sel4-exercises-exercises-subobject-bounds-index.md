@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Explore Subobject Bounds
 summary: 'In the CHERI-Microkit run-time environment, bounds are typically associated with
 

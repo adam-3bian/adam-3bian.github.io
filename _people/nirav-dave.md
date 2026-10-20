@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Nirav Dave
 summary: Nirav Dave — CHERI Alliance information and resources.
 permalink: /people/nirav-dave/

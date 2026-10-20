@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: How does CHERI work?
 summary: Helping software stay within its boundaries.
 permalink: /discover/understand/how-does-cheri-work/

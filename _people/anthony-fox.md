@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Anthony Fox
 summary: Anthony Fox — CHERI Alliance information and resources.
 permalink: /people/anthony-fox/

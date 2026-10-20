@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: Ararat River Consulting, LLC
 summary: Ararat River Consulting, LLC — CHERI Alliance information and resources.
 permalink: /organisations/ararat-river-consulting-llc/

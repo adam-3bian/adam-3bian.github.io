@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Accelerating CHERI together
 summary: Three organisations, one shared goal. Accelerating CHERI adoption.
 permalink: /alliance/about-and-governance/accelerating-together/

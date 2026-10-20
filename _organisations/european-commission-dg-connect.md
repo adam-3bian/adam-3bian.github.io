@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: European Commission (DG CONNECT)
 summary: European Commission (DG CONNECT) — CHERI Alliance information and resources.
 permalink: /organisations/european-commission-dg-connect/

@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: Swansea University
 summary: Swansea University is a research university and one of the leading institutions in Wales (United Kingdom). The Faculty of Science &amp; Engineering (FSE) at Swansea is nationally and globally recognised as a centre of excellence providing an innovative…
 permalink: /organisations/swansea-university/

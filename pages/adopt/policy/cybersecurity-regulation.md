@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: CHERI and Cybersecurity Regulation
 summary: Regulators increasingly expect security-by-design, resilience and effective risk management – CHERI can support those.
 permalink: /adopt/policy/cybersecurity-regulation/

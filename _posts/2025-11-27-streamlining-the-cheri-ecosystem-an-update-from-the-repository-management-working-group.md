@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: 'Streamlining the CHERI Ecosystem: An Update from the Repository Management Working Group'
 summary: 'The CHERI Alliance is dedicated to advancing the state-of-the-art in capability-based security. As our collaborative efforts and technical output grow, so does the need for a standardised, clear, and efficient way to manage that output. This is why the [Repository Management Working Group](/groups/repository-management/) was established: to systematically oversee all the technical collateral produced by the alliance.'
 permalink: /news/streamlining-the-cheri-ecosystem-an-update-from-the-repository-management-working-group/

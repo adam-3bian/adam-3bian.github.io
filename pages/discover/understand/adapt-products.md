@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Bringing CHERI to your product
 summary: What needs to change, and what doesn't.
 permalink: /discover/understand/adapt-products/

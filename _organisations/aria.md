@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: ARIA
 summary: ARIA — CHERI Alliance information and resources.
 permalink: /organisations/aria/

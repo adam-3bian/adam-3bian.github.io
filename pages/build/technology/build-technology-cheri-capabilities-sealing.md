@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Sealing
 summary: Sealing turns a capability into a protected, non-dereferenceable token that can support opaque objects and controlled compartment entry points.
 permalink: /build/technology/cheri-capabilities/sealing/

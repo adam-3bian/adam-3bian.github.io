@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Samuel Stark
 summary: Samuel W. Stark is a final-year PhD student at the University of Cambridge, studying alternate capability systems under Simon W.
 permalink: /people/samuel-stark/

@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: CHERIoT Ibex Certification Record
 summary: The CHERIoT Ibex 1.0 record describes the certified processor core, its CHERI architecture, verification evidence, temporal-safety mechanism, and integration assumptions.
 permalink: /adopt/assurance-and-adoption/cheriot-ibex-certification/

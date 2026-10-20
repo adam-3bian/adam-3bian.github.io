@@ -1,5 +1,5 @@
 ---
-layout: details/guide
+layout: detail
 title: Downloads
 summary: Find maintained CHERI source code, development kits, operating systems, simulators, documentation, examples, and product-specific resources.
 permalink: /guides/downloads/

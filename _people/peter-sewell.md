@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Peter Sewell
 summary: Peter Sewell — CHERI Alliance information and resources.
 permalink: /people/peter-sewell/

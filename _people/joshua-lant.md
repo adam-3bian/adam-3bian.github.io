@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Joshua Lant
 summary: Joshua Lant is a Research Associate in the Department of Computer Science at the University of Manchester.
 permalink: /people/joshua-lant/

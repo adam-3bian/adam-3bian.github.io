@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: David Chisnall
 summary: David Chisnall has been working on CHERI since 2012, when he joined the University of Cambridge to lead the languages and compiler work on the CHERI project.
 permalink: /people/david-chisnall/

@@ -1,5 +1,5 @@
 ---
-layout: lists/speakers
+layout: list
 title: People
 summary: Explore speakers and named paper contributors across the CHERI ecosystem.
 permalink: /people/

@@ -1,5 +1,5 @@
 ---
-layout: details/policy
+layout: detail
 title: Using the CHERI Alliance Trademark
 summary: CHERI® is an open technology, but there are conditions to use the CHERI brand, please check the policy, and conform to the guidelines on this page.
 permalink: /policies/trademark-original/

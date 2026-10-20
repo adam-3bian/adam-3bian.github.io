@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: lowRISC
 summary: Founded in 2014 at the University of Cambridge Department of Computer Science and Technology, lowRISC is a not-for-profit company/CIC that provides a neutral home for collaborative engineering to develop and maintain open-source silicon designs and…
 permalink: /organisations/lowrisc/

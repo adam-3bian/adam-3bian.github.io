@@ -1,5 +1,5 @@
 ---
-layout: lists/products
+layout: list
 title: Products
 summary: Hardware — CHERI Alliance information and resources.
 permalink: /products/

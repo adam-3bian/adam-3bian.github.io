@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: Instituto Superior de Engenharia do Porto
 summary: The School of Engineering of the Polytechnic Institute of Porto (ISEP), Portugal, is a public higher education and research institution, and one of the largest schools of engineering in Portugal (6000 students), with a strong diversity of subject…
 permalink: /organisations/instituto-superior-de-engenharia-do-porto/

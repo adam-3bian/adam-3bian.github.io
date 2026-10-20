@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: The Strategic Case for CHERI
 summary: CHERI helps reduce risk, protect software investments, build trust and create competitive advantage.
 permalink: /adopt/business-case/the-business-case/

@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: CHERI Products
 summary: CHERI products span processor designs, chips, development boards, operating systems, toolchains, and software used to explore or build capability-based systems.
 permalink: /build/platforms/cheri-products/

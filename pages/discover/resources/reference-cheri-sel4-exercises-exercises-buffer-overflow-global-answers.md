@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Answers - Exercise an inter-global-object buffer overflow
 summary: Answers - Exercise an inter-global-object buffer overflow — CHERI development reference.
 permalink: /reference/CHERI-seL4-Exercises/exercises/buffer-overflow-global/answers.html

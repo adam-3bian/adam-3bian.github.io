@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: Trusted Computing Center of Excellence (TCCoE)
 summary: The Trusted Computing Center of Excellence™ (TCCoE) not-for-profit organization’s purpose is to lower barriers to adoption and facilitate the principled development and deployment of software and systems for which there is strong evidence of…
 permalink: /organisations/tccoe/

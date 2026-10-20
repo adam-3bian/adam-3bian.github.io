@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: CHERI and Rust - Technical Overview
 summary: Why it is not CHERI vs Rust, but CHERI and Rust.
 permalink: /build/technology/cheri-and-rust-technical/

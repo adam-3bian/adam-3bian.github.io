@@ -1,5 +1,5 @@
 ---
-layout: lists/working-groups
+layout: list
 title: Working groups
 summary: Explore the Alliance working groups and their published activities.
 permalink: /groups/

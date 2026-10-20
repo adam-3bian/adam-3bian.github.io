@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: University of Kent
 summary: The University of Kent is a British research and teaching University in the historic city of Canterbury. The Programming Languages and Systems group of the School of Computing is in the top 5 for research in their field nationally.
 permalink: /organisations/university-of-kent/

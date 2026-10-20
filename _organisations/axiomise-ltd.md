@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: Axiomise Ltd
 summary: At Axiomise, our vision is to make formal normal, and for the last seven years, we have been doing just that! We have pioneered the adoption of formal verification in the semiconductor industry since 2017. Led by our visionary CEO, Dr. Ashish…
 permalink: /organisations/axiomise-ltd/

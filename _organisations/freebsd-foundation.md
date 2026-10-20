@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: FreeBSD Foundation
 summary: The FreeBSD Foundation is a 501(c)(3) non-profit organization supporting the FreeBSD Project and community. Accepting donations from individuals and businesses, the Foundation uses funds to develop features, employ software engineers, improve build…
 permalink: /organisations/freebsd-foundation/

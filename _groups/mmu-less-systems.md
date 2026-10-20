@@ -1,5 +1,5 @@
 ---
-layout: details/working-group
+layout: detail
 title: 👮 MMU-less Systems WG
 summary: Examines CHERI protection and compartmentalisation for systems that share an address space and do not depend on a conventional memory-management unit.
 permalink: /groups/mmu-less-systems/

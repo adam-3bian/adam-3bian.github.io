@@ -1,5 +1,5 @@
 ---
-layout: details/paper
+layout: detail
 title: 'Cornucopia: Temporal Safety for CHERI Heaps'
 summary: Investigates capability revocation and temporal safety for heap allocations in CHERI systems.
 permalink: /papers/cornucopia-temporal-safety-for-cheri-heaps/

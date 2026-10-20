@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: Combatting the AI threat with CHERI
 summary: The UM Labs Unicus® platform protects applications ranging from voice and video calls, surveillance video, extended reality and IoT.
 permalink: /news/combatting-the-ai-threat-with-cheri/

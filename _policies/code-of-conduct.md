@@ -1,5 +1,5 @@
 ---
-layout: details/policy
+layout: detail
 title: Code of Conduct
 summary: The Code of Conduct sets the standards of respectful, inclusive, and constructive behaviour expected in every Alliance space.
 permalink: /policies/code-of-conduct/

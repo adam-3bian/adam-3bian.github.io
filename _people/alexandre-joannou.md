@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Alexandre Joannou
 summary: Alexandre Joannou — CHERI Alliance information and resources.
 permalink: /people/alexandre-joannou/

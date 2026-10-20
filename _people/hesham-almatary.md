@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Hesham Almatary
 summary: Hesham’s research interests involve security, operating systems, systems software, and computer architecture.
 permalink: /people/hesham-almatary/

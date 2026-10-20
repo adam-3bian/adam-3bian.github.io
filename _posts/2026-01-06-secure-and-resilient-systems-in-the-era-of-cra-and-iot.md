@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: Secure and Resilient Systems in the Era of CRA and IoT
 summary: On 21 January 2026, technology leaders, engineers, security practitioners and compliance specialists will gather at IWM Duxford for [Secure Horizons 2026](https://www.eventbrite.ie/e/secure-horizons-2026-tickets-1976167642616), a one day, in person event hosted by EPS Global.
 permalink: /news/secure-and-resilient-systems-in-the-era-of-cra-and-iot/

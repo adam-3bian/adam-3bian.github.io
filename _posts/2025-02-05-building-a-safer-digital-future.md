@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: Building a Safer Digital Future
 summary: The conversation around software memory safety is reaching a critical turning point. In a [recent publication in the Communications of the ACM](https://cacm.acm.org/opinion/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/), industry experts have called for a decisive move toward standardizing principles and practices to mitigate memory safety vulnerabilities.
 permalink: /news/building-a-safer-digital-future/

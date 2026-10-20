@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Approaches to Memory Safety
 summary: No single technology delivers memory safety. The strongest solutions combine processes, tools, hardware protections, and isolation.
 permalink: /discover/why-cheri/approaches-to-memory-safety/

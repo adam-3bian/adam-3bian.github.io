@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Hongyan Xia
 summary: Hongyan Xia — CHERI Alliance information and resources.
 permalink: /people/hongyan-xia/

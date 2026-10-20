@@ -1,5 +1,5 @@
 ---
-layout: details/paper
+layout: detail
 title: CHERI Technology for Cyber Security
 summary: Summarises CHERI's potential contribution to reducing cyber risk and improving the resilience of digital systems.
 permalink: /reports/cheri-technology-for-cyber-security/

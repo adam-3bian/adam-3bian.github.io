@@ -1,5 +1,5 @@
 ---
-layout: details/guide
+layout: detail
 title: Build Your First Application
 summary: Build a small program, confirm it runs as capability-aware code, and observe a controlled bounds violation in the target environment.
 permalink: /guides/build-your-first-application/

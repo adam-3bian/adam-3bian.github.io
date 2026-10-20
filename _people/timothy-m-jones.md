@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Timothy M. Jones
 summary: Timothy M. Jones — CHERI Alliance information and resources.
 permalink: /people/timothy-m-jones/

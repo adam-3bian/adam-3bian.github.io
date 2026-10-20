@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Mark Hill
 summary: Codasip
 permalink: /people/mark-hill/

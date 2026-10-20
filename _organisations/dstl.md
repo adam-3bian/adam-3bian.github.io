@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: Defence Science and Technology Laboratory (Dstl)
 summary: The Defence Science and Technology Laboratory (Dstl) delivers high-impact science and technology (S&amp;T) solutions to enhance the UK’s defence and security. As an executive agency of the UK Ministry of Defence (MOD), Dstl works closely with academia…
 permalink: /organisations/dstl/

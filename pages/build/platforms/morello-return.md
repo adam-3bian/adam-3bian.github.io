@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Return an unused Morello Board
 summary: Help someone else build something great with CHERI!
 permalink: /morello-return/

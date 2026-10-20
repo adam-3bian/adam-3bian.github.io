@@ -1,5 +1,5 @@
 ---
-layout: lists/members
+layout: list
 title: Members
 summary: Alliance members contribute perspectives from processor design, software, research, product engineering, government, infrastructure, and open-source communities.
 permalink: /alliance/leadership/members/

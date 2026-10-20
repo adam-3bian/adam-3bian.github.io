@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Luca Müller
 summary: Luca Müller received the M.Sc. degree in computer science from University of Bremen in 2025.
 permalink: /people/luca-muller/

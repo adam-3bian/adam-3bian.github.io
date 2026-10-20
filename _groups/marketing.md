@@ -1,5 +1,5 @@
 ---
-layout: details/working-group
+layout: detail
 title: 📣 Marketing WG
 summary: Coordinates accurate CHERI messaging, shared material, campaigns, events, and communication across the Alliance ecosystem.
 permalink: /groups/marketing/

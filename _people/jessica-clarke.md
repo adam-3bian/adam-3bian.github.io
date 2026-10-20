@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Jessica Clarke
 summary: Jessica Clarke is a Senior Research Software Engineer at the [University of Cambridge](/organisations/university-of-cambridge/), contributing to the maintenance and development of CHERI LLVM and CheriBSD, and has been involved with the project since 2016 when she wrote the first prototype of a CHERI linker.
 permalink: /people/jessica-clarke/

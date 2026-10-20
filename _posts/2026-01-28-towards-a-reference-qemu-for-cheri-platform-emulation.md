@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: Towards a reference QEMU for CHERI platform emulation
 summary: QEMU is one of the most popular open source machine emulators ([https://www.qemu.org](https://www.qemu.org)), with support for many CPU architectures, including x86\_64, Arm and RISC-V.
 permalink: /news/towards-a-reference-qemu-for-cheri-platform-emulation/

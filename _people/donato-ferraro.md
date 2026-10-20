@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Donato Ferraro
 summary: Donato Ferraro is a Ph.D. student in Computer and Data Science for Technological and Social Innovation at the University of Modena and Reggio Emilia.
 permalink: /people/donato-ferraro/

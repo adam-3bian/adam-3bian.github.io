@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Speakers
 summary: People who have contributed to CHERI Alliance conferences, workshops, webinars, and community events.
 permalink: /reference/source-versions/speakers/

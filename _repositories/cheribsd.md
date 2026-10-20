@@ -1,5 +1,5 @@
 ---
-layout: details/repository
+layout: detail
 title: CheriBSD
 summary: Develop and run complete applications on an operating system adapted for CHERI.
 permalink: /repositories/cheribsd/

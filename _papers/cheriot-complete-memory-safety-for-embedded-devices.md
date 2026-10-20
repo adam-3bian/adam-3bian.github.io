@@ -1,5 +1,5 @@
 ---
-layout: details/paper
+layout: detail
 title: 'CHERIoT: Complete Memory Safety for Embedded Devices'
 summary: Presents the CHERIoT hardware-software design for spatial and temporal memory safety on embedded devices.
 permalink: /papers/cheriot-complete-memory-safety-for-embedded-devices/

@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Compartmentalisation
 summary: CHERI compartmentalisation contains bugs and attacks by limiting what each component can access.
 permalink: /build/technology/compartmentalisation/

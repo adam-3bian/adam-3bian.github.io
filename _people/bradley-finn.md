@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Bradley Finn
 summary: Bradley Finn is Head of Cyber Innovation Policy at the UK’s Department for Science, Innovation and Technology.
 permalink: /people/bradley-finn/

@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Specifications
 summary: Specifications — CHERI Alliance information and resources.
 permalink: /discover/resources/specifications/

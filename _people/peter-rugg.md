@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Peter Rugg
 summary: Peter Rugg — CHERI Alliance information and resources.
 permalink: /people/peter-rugg/

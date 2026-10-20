@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: CHERI or CHERIoT? The Answer Is Not What You Think
 summary: Interest in capability based security has grown rapidly as organisations look for practical ways to move beyond legacy memory protection.
 permalink: /news/cheri-or-cheriot-the-answer-is-not-what-you-think/

@@ -1,11 +1,11 @@
 contact:
   id: cheri-contact
   title: Your enquiry
-  description: Send your enquiry using the published Alliance form.
+  description: Tell us how we can help with your enquiry.
   submission:
-    mode: external
-    url: https://cheri-alliance.org/contact/#contact_form
-    label: Use the published Alliance contact form
+    # Intentionally has no endpoint until a submission provider is configured.
+    mode: unconfigured
+    label: Send enquiry
   fields:
   - name: topic
     label: Request
@@ -54,11 +54,10 @@ contact:
 newsletter:
   id: cheri-newsletter
   title: Get the quarterly newsletter
-  description: Subscribe using the published Alliance mailing list.
+  description: Enter your email address below.
   submission:
-    mode: external
-    url: https://cheri-alliance.kit.com/subscribe
-    label: Subscribe through the published Alliance mailing list
+    mode: unconfigured
+    label: Subscribe
   fields:
   - name: email
     label: Email address

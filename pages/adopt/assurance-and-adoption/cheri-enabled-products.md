@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: CHERI Enabled Products
 summary: The CHERI Alliance's certification program. How products are reviewed, certified, and published.
 permalink: /adopt/assurance-and-adoption/cheri-enabled-products/

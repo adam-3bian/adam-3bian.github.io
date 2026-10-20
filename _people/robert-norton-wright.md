@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Robert Norton-Wright
 summary: Robert Norton-Wright — CHERI Alliance information and resources.
 permalink: /people/robert-norton-wright/

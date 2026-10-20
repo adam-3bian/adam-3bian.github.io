@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: University of Modena and Reggio Emilia
 summary: University of Modena and Reggio Emilia — CHERI Alliance information and resources.
 permalink: /organisations/university-of-modena-and-reggio-emilia/

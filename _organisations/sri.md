@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: SRI
 summary: SRI creates and delivers world-changing solutions for a safer, healthier, and more sustainable future. A global leader in R&amp;D with deep roots in Silicon Valley, SRI is an independent nonprofit research institute with a rich history of supporting…
 permalink: /organisations/sri/

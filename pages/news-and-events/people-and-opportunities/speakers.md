@@ -1,5 +1,5 @@
 ---
-layout: lists/speakers
+layout: list
 title: Speakers
 summary: People who have contributed to CHERI Alliance conferences, workshops, webinars, and community events.
 permalink: /news-and-events/people-and-opportunities/speakers/

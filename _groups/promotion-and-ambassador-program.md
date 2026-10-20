@@ -1,5 +1,5 @@
 ---
-layout: details/working-group
+layout: detail
 title: 🪪 Promotion & Ambassador Program WG
 summary: Helping the CHERI ecosystem communicate clearly, consistently, and effectively.
 permalink: /groups/promotion-and-ambassador-program/

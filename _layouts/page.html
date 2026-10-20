@@ -1,12 +1,19 @@
 ---
 layout: default
 ---
-{% if page.url == '/' %}{% include home-hero.html %}{% else %}{% include page-header.html %}{% endif %}
+{% if page.url == '/' %}<section class="hero hero-large" aria-labelledby="page-title">
+  <div class="hero-intro">
+    <span id="page-hero-title" class="anchor-alias"></span><span id="hero-title" class="anchor-alias"></span>
+    <h1 id="page-title" class="page-hero-title"><span class="hero-opening">{{ page.landing.heading.title | escape }}</span><small class="hero-support">{% for line in page.landing.heading.subtitle %}<span{% if forloop.last %} class="hero-signoff"{% endif %}>{{ line | escape }}</span>{% endfor %}</small></h1>
+    <div class="lede">{{ page.summary | markdownify }}</div>
+    {% if page.landing.heading.introduction %}<div class="lede">{{ page.landing.heading.introduction | markdownify }}</div>{% endif %}
+  </div>
+</section>{% else %}{% include page-header.html %}{% endif %}
 {% include slider.html %}
-{% if page.layout == 'page/form' %}{% include page-forms.html %}{% endif %}
+{% for form_key in page.forms %}{% assign form_data = site.data.forms[form_key] %}{% if form_data %}{% include form-from-data.html form=form_data %}{% endif %}{% endfor %}
 <article class="content {% if page.listing %}directory-content{% elsif page.landing %}landing-content{% else %}reading-content{% endif %}">
 {% if page.landing.sections %}{% include section-cards.html content=content groups=page.landing.sections %}{% else %}{{ content }}{% endif %}
 {% if page.url == '/discover/resources/glossary/' %}{% include glossary.html %}{% endif %}
 </article>
-{% if page.landing.navigation == 'category' %}{% include category-links.html %}{% endif %}
+{% if page.landing.navigation == 'category' %}{% for category in site.navigation.header %}{% if category.title == page.navigation.header.category %}<div class="category-sections" style="--category-columns: {{ category.columns | default: 3 }}">{% for subcategory in category.subcategories %}<section class="related-content"><h2>{{ subcategory.title | escape }}</h2><ul class="category-links" role="list">{% for link in subcategory.links %}<li><a class="card navigation-choice" href="{{ link.url | relative_url }}">{{ link.title | escape }}</a></li>{% endfor %}</ul></section>{% endfor %}</div>{% endif %}{% endfor %}{% endif %}
 {% unless page.listing %}{% include resource-links.html %}{% endunless %}

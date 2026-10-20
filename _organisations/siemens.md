@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: Siemens
 summary: Details to follow.
 permalink: /organisations/siemens/

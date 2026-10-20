@@ -1,5 +1,5 @@
 ---
-layout: details/repository
+layout: detail
 title: CHERI Zephyr
 summary: Bring CHERI hardware-enforced protection to Zephyr-based embedded systems.
 permalink: /repositories/cheri-zephyr/

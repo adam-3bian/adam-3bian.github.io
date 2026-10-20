@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: Why Codasip went all‑in on CHERI
 summary: 'We thought it would be valuable to sit down with Ron Black, CEO of [Codasip](/organisations/codasip/), to talk about the most recent news, discuss why the company has committed so strongly to CHERI, what market signals are driving that focus, and how Codasip sees the CHERI ecosystem—and the CHERI Alliance—evolving in the years ahead. Here is what he told us:'
 permalink: /news/why-codasip-went-all-in-on-cheri/

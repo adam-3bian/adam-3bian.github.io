@@ -1,5 +1,5 @@
 ---
-layout: details/working-group
+layout: detail
 title: 🪁 CHERI Zephyr WG
 summary: Coordinates CHERI support for Zephyr across architecture ports, kernel and user interfaces, drivers, tooling, and supported platforms.
 permalink: /groups/cheri-zephyr/

@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: About the CHERI Alliance
 summary: Building the ecosystem behind memory-safe computing.
 permalink: /organisations/cheri-alliance/

@@ -1,5 +1,5 @@
 ---
-layout: details/guide
+layout: detail
 title: Install a CHERI Toolchain
 summary: Install the toolchain that matches your CHERI architecture, OS and ABI, then verify it before compiling application code.
 permalink: /guides/install-a-toolchain/

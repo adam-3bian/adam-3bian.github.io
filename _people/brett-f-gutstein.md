@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Brett F. Gutstein
 summary: Brett F. Gutstein — CHERI Alliance information and resources.
 permalink: /people/brett-f-gutstein/

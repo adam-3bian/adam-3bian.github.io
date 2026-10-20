@@ -1,5 +1,5 @@
 ---
-layout: details/paper
+layout: detail
 title: The Arm Morello Evaluation Platform—Validating CHERI-Based Security in a High-Performance System
 summary: Introduces the Morello evaluation platform and its role in testing CHERI ideas in a high-performance Arm system.
 permalink: /papers/the-arm-morello-evaluation-platformvalidating-cheri-based-security-in-a-high-performa/

@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Mihai Ordean
 summary: Mihai Ordean — CHERI Alliance information and resources.
 permalink: /people/mihai-ordean/

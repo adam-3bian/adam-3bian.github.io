@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: KU Leuven
 summary: Founded in 1425, the multidisciplinary and research-driven university KU Leuven has been a centre of learning for almost six centuries. Today, it is Belgium’s highest-ranked university and is one of the oldest and most renowned universities in…
 permalink: /organisations/ku-leuven/

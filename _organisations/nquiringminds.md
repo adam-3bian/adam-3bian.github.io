@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: NquiringMinds
 summary: Secure AI Agents Our customers can develop, and deploy distributed AI agents, with high security assurances. NquiringMinds combine deep security expertise with AI development capabilities into a unique distributed platform.
 permalink: /organisations/nquiringminds/

@@ -1,5 +1,5 @@
 ---
-layout: details/paper
+layout: detail
 title: An Introduction to CHERI
 summary: A high-level introduction to the CHERI architecture, microarchitecture, formal models, and software work.
 permalink: /reports/an-introduction-to-cheri/

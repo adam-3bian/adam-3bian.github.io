@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: Hildebrand
 summary: '[All Members](https://cheri-alliance.org/member/)'
 permalink: /organisations/hildebrand/

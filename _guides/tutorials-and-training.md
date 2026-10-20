@@ -1,5 +1,5 @@
 ---
-layout: details/guide
+layout: detail
 title: Tutorials & Training
 summary: Learn CHERI step by step, from your first build to porting and compartmentalisation.
 permalink: /guides/tutorials-and-training/

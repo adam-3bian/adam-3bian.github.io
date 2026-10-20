@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: Cantech Informatics SRL
 summary: Details to follow.
 permalink: /organisations/cantech-informatics-srl/

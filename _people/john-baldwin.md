@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: John Baldwin
 summary: John Baldwin has been an active FreeBSD developer for over 25 years working on a broad range of subsystems in the kernel and bits of userspace.
 permalink: /people/john-baldwin/

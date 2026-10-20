@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: User space support - CHERI Roadmap for Linux
 summary: User space support - CHERI Roadmap for Linux — CHERI Alliance information and resources.
 permalink: /reference/linux-roadmap/goals/user-space.html

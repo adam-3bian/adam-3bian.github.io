@@ -1,5 +1,5 @@
 ---
-layout: details/working-group
+layout: detail
 title: ⚙️ Rust + CHERI WG
 summary: Combining memory-safe software and hardware-enforced protection.
 permalink: /groups/rust-plus-cheri/

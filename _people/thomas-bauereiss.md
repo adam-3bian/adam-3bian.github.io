@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Thomas Bauereiss
 summary: Thomas Bauereiss — CHERI Alliance information and resources.
 permalink: /people/thomas-bauereiss/

@@ -1,5 +1,5 @@
 ---
-layout: details/working-group
+layout: detail
 title: 📋 CHERI + Safety WG
 summary: Explores how CHERI mechanisms, implementation evidence, and system integration relate to functional safety and assurance needs.
 permalink: /groups/cheri-plus-safety/

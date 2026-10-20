@@ -1,5 +1,5 @@
 ---
-layout: details/policy
+layout: detail
 title: CHERI ALLIANCE CIC IP Policy
 summary: CHERI ALLIANCE CIC IP Policy — CHERI Alliance information and resources.
 permalink: /policies/ip-policy/

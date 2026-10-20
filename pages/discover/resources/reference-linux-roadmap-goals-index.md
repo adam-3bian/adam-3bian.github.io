@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Goals
 summary: The goal of this work is to develop a CHERI Linux adaptation that is at feature parity with CheriBSD, and of sufficiently high quality to both enable production use and support upstreaming to the Linux community. On the whole, this roadmap is drawn from the CheriBSD feature list, including mature entries (e.g., spatial memory safety for kernel and user space, and user space heap temporal safety), and also immature prototypes or prospective ones (such as co-process compartmentalization or kernel compartmentalization). The scope of this work will include both MMU-enabled and MMU-less instantiations of Linux. Both of these targets have already seen substantial interest (and work) in the CHERI community, and have use cases at their respective scales that will clearly benefit from CHERI protection. In the case of MMU-less Linux, CHERI can be used to provide the fine-grained security that MPUs cannot provide and which have often proved a barrier to its adoption.
 permalink: /reference/linux-roadmap/goals/index.html

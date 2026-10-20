@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: Capabilities Limited
 summary: Capabilities Limited offers the deep industry knowledge of software and hardware security necessary to help solve the most complex issues in security and privacy. The founders and staff have extensive experience in industry and academia and have been…
 permalink: /organisations/capabilities-limited/

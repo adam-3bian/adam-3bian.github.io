@@ -19,13 +19,12 @@
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 </head>
 <body data-theme="{% if page.url == '/' %}dark{% else %}light{% endif %}" class="{% if page.url == '/' %}home-page landing-page{% elsif page.listing %}directory-page{% elsif page.collection == 'posts' %}article-page{% elsif page.collection %}detail-page{% elsif page.landing %}landing-page{% else %}reading-page{% endif %}">
-  {% assign all_pages = site.pages %}
   <a class="skip-link" href="#main-content">Skip to content</a>
   {% include header.html %}
   <script src="{{ '/assets/js/navigation.js' | relative_url }}" onerror="clearTimeout(window.cheriNavigationWait);document.documentElement.classList.remove('navigation-pending')"></script>
   <main id="main-content" tabindex="-1">
     {% include breadcrumbs.html %}
-    {% capture rendered_content %}{{ content }}{% unless page.layout == 'page/form' %}{% include page-forms.html %}{% endunless %}{% include site-features.html %}{% endcapture %}
+    {% capture rendered_content %}{{ content }}{% unless page.layout == 'page' or page.layout == 'list' %}{% for form_key in page.forms %}{% assign form_data = site.data.forms[form_key] %}{% if form_data %}{% include form-from-data.html form=form_data %}{% endif %}{% endfor %}{% endunless %}{% include relationships.html %}{% endcapture %}
     {% capture anchored_content %}{% include anchor-aliases.html content=rendered_content %}{% endcapture %}
     {% include content-urls.html content=anchored_content %}
   </main>

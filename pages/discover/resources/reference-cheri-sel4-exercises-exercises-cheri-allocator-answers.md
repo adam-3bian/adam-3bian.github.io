@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Answers
 summary: Answers — CHERI Alliance information and resources.
 permalink: /reference/CHERI-seL4-Exercises/exercises/cheri-allocator/answers.html

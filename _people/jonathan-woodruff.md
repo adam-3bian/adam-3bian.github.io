@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Jonathan Woodruff
 summary: Dr Jonathan Woodruff is a Senior Research Associate with expertise in processor architecture and microarchitecture as well as low-level software optimisation.
 permalink: /people/jonathan-woodruff/

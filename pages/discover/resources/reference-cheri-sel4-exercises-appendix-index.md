@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Appendix
 summary: 'This book and related source code are released under the following license:'
 permalink: /reference/CHERI-seL4-Exercises/appendix/index.html

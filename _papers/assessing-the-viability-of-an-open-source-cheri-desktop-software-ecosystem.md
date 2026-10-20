@@ -1,5 +1,5 @@
 ---
-layout: details/paper
+layout: detail
 title: Assessing the Viability of an Open-Source CHERI Desktop Software Ecosystem
 summary: Assesses the work required to adapt a substantial open-source desktop software stack to CHERI.
 permalink: /reports/assessing-the-viability-of-an-open-source-cheri-desktop-software-ecosystem/

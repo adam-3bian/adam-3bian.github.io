@@ -33,10 +33,11 @@ CSV.foreach(File.join(root,'docs/migrations/v5.3/records.csv'),headers:true) do 
     abort 'Webinar recording lost' unless output.at_css('main a[href="https://www.youtube.com/watch?v=OZS6JHoAUkc"]')
     reason='Published recording moved to resources; obsolete TBD removed'
    elsif ['/alliance/membership/contact/','/news-and-events/news-and-analysis/subscribe-newsletter/'].include?(row['new_url'])
-    provider=row['new_url'].include?('contact') ? 'https://cheri-alliance.org/contact/#contact_form' : 'https://cheri-alliance.kit.com/subscribe'
     if expected.downcase.include?('preview') || expected.include?('published Alliance')
-     abort 'External form must replace obsolete preview copy' unless output.at_css("main .form-panel a[href='#{provider}']")&&output.css('main .form-panel input,main .form-panel textarea,main .form-panel select').empty?&&!text.downcase.include?('preview')
-     reason='Obsolete preview/duplicate provider copy replaced by canonical external form CTA'
+     form=output.at_css('main .form-panel form[data-local-form]')
+     field_count=row['new_url'].include?('contact') ? 5 : 1
+     abort 'Requested local form must replace obsolete provider/preview copy' unless form && !form['action'] && form.css('input,textarea,select').length==field_count && form.at_css('button[type="submit"][disabled][hidden]') && output.css('main .form-panel a.button').empty? && !text.downcase.include?('preview only')
+     reason='Obsolete provider/preview copy replaced by user-requested on-page fields without an endpoint'
     end
    end
    abort "Lost source paragraph: #{row['old_source']} #{expected[0,150]}" unless reason

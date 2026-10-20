@@ -1,5 +1,5 @@
 ---
-layout: lists/papers
+layout: list
 title: Reports & White Papers
 summary: Programme evidence, adoption research and policy context for CHERI.
 permalink: /reports/

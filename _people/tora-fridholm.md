@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Tora Fridholm
 summary: Tora Fridholm is an experienced B2B marketing professional with a focus on transforming complex technology into clear, value-driven messaging.
 permalink: /people/tora-fridholm/

@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Answers - Explore Subobject Bounds
 summary: Answers - Explore Subobject Bounds — CHERI Alliance information and resources.
 permalink: /reference/CHERI-seL4-Exercises/exercises/subobject-bounds/answers.html

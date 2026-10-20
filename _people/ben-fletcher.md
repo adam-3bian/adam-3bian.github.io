@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: Ben Fletcher
 summary: Ben Fletcher has been involved in SoC development for over 25 years. He has worked in design, verification, software, and more recently Architecture.
 permalink: /people/ben-fletcher/

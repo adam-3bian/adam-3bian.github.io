@@ -1,5 +1,5 @@
 ---
-layout: details/member
+layout: detail
 title: Novomorphic
 summary: Details to follow.
 permalink: /organisations/novomorphic/

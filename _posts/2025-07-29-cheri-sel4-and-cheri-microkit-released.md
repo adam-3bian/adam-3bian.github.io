@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: CHERI-seL4 and CHERI-Microkit Released
 summary: We are happy to release a prototype of CHERI-seL4, an experimental version of the seL4 microkernel with CHERI support. This comes with CHERI-Microkit, a lightweight userspace framework, and a set of exercises and tutorials designed to help developers explore CHERI’s potential in a real microkernel environment.
 permalink: /news/cheri-sel4-and-cheri-microkit-released/

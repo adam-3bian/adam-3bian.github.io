@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: The CHERI Enabled Programme
 summary: Independent review. Transparent evidence. Greater confidence.
 permalink: /adopt/assurance-and-adoption/about-cheri-enabled/

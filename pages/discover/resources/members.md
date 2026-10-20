@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Members
 summary: Alliance members contribute perspectives from processor design, software, research, product engineering, government, infrastructure, and open-source communities.
 permalink: /reference/source-versions/members/

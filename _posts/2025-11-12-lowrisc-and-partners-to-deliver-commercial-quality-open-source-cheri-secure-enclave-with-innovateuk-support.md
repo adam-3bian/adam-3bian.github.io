@@ -1,5 +1,5 @@
 ---
-layout: details/post
+layout: article
 title: lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure Enclave with InnovateUK Support
 summary: The 3 year initiative will deliver the first commercial-quality, open-source, CHERI-enabled 64-bit Secure Enclave for application-class system-on-chips (SoCs). By combining CHERI hardware memory safety and compartmentalisation with formal verification, COSMIC aims to create a secure foundation for future high-assurance silicon designs.
 permalink: /news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support/

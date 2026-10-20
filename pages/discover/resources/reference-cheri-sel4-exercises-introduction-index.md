@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Introduction
 summary: 'This set of exercises and adversarial missions is intended to:'
 permalink: /reference/CHERI-seL4-Exercises/introduction/index.html

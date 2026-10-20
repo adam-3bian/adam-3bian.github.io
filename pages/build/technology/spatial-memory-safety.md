@@ -1,5 +1,5 @@
 ---
-layout: page/standard
+layout: page
 title: Spatial Memory Safety
 summary: Spatial memory safety prevents code from accessing memory outside the bounds authorised by a capability.
 permalink: /build/technology/spatial-memory-safety/

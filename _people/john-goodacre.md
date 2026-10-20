@@ -1,5 +1,5 @@
 ---
-layout: details/speaker
+layout: detail
 title: John Goodacre
 summary: UKRI
 permalink: /people/john-goodacre/

@@ -1,5 +1,5 @@
 ---
-layout: details/paper
+layout: detail
 title: 'Rigorous Engineering for Hardware Security: Formal Modelling and Proof in the CHERI Design and Implementation Process'
 summary: Describes the formal models and proof work used alongside CHERI architecture and hardware development.
 permalink: /papers/rigorous-engineering-for-hardware-security-formal-modelling-and-proof-in-the-cheri-de/
