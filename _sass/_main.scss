@@ -7,6 +7,7 @@
 main {
   background: var(--colour-page);
   flex: 1;
+  margin-block: $space-3;
   padding-block: 0 $section-gap-mobile;
 }
 .home-page { font-family: $font-family; font-size: 1rem; }

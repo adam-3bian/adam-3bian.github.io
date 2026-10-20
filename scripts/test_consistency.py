@@ -81,7 +81,7 @@ with sync_playwright() as p:
                 assert style['background']=='rgb(255, 255, 255)' and style['colour']=='rgb(18, 87, 112)',(width,route,button.inner_text(),style)
                 assert style['radius']=='10px' and style['height']>=48 and style['padding']=='12px 16px' and style['gap']=='12px',(width,route,button.inner_text(),style)
             gaps=page.evaluate("()=>{const h=document.querySelector('.site-header').getBoundingClientRect(),m=document.querySelector('main').getBoundingClientRect(),n=document.querySelector('.site-call-to-action').getBoundingClientRect(),f=document.querySelector('.site-footer').getBoundingClientRect();return [m.top-h.bottom,f.top-n.bottom]}")
-            assert gaps==[12,12],(width,route,'page region gaps',gaps)
+            assert gaps==[12,0],(width,route,'Header gap and seamless newsletter/footer',gaps)
             if route=='':
                 assert page.locator('[data-section-cards] > .content-panel').evaluate_all("ns=>ns.length>0&&ns.every(n=>parseFloat(getComputedStyle(n).paddingLeft)>=24)"),'Homepage panels retain interior padding'
             assert cta.evaluate("e=>getComputedStyle(e).backgroundColor")=='rgb(21, 43, 59)'
