@@ -64,7 +64,7 @@ $grid-gap: $space-6;
 $card-gap: $grid-gap;
 $card-padding-mobile: $space-6;
 $card-padding-desktop: $space-6;
-$card-padding-wide: $space-8;
+$card-padding-wide: $space-6;
 
 // Interface sizes
 $header-height: 4.5rem;
@@ -97,26 +97,24 @@ $brand-blue: #125770;
 $brand-teal: #075d80;
 $brand-teal-deep: #064762;
 $brand-cyan: #b9e2f1;
-$brand-red: #ba1e1e;
-$brand-red-deep: #941818;
 
 // Opaque reading and component surfaces; transparency is reserved for decorative artwork.
 $colour-text: $brand-navy;
-$colour-muted: #526574;
+$colour-muted: #50616d;
 $colour-page: #ffffff;
-$colour-page-edge: #edf0f2;
-$colour-watermark: rgba(#125770, 0.34);
+$colour-page-edge: #edf1f2;
+$colour-watermark: rgba(#125770, 0.3);
 $colour-link-hover: $brand-teal-deep;
 $colour-header: #ffffff;
-$colour-submenu: $brand-blue;
+$colour-submenu: #fff;
 $colour-navigation-hover: #eef1f3;
-$colour-submenu-hover: #0b4158;
+$colour-submenu-hover: #edf2f4;
 $colour-hero: #f3f5f6;
 $colour-card: #ffffff;
-$colour-card-hover: #f4f6f7;
+$colour-card-hover: #f7f9fa;
 $colour-image-background: #fff;
-$colour-subscribe-band: rgba($brand-blue, .74);
-$colour-footer: #0a2a39;
+$colour-subscribe-band: rgba(#103c50, .86);
+$colour-footer: $brand-navy;
 $colour-footer-hover: #10465b;
 $colour-footer-text: #ffffff;
 $colour-footer-muted: #d1d6df;
@@ -134,8 +132,8 @@ $theme-light: (
   border: #dfe4e7,
   accent: $brand-blue,
   accent-soft: #e9eef1,
-  brand-accent: $brand-red,
-  brand-accent-hover: $brand-red-deep,
+  brand-accent: $brand-blue,
+  brand-accent-hover: $brand-teal-deep,
   brand-accent-text: #fff,
   page: $colour-page,
   page-edge: $colour-page-edge,
@@ -145,12 +143,12 @@ $theme-light: (
   submenu: $colour-submenu,
   navigation-hover: $colour-navigation-hover,
   submenu-hover: $colour-submenu-hover,
-  submenu-level-2: #0f4c64,
-  submenu-level-3: #0c4359,
-  submenu-level-4: #0a394e,
-  submenu-hover-level-2: #08384d,
-  submenu-hover-level-3: #082f43,
-  submenu-hover-level-4: #062b3e,
+  submenu-level-2: #fff,
+  submenu-level-3: #fff,
+  submenu-level-4: #fff,
+  submenu-hover-level-2: #edf2f4,
+  submenu-hover-level-3: #edf2f4,
+  submenu-hover-level-4: #edf2f4,
   hero: $colour-hero,
   card: $colour-card,
   card-hover: $colour-card-hover,
@@ -176,29 +174,29 @@ $theme-dark: (
   border: #3f6174,
   accent: $brand-cyan,
   accent-soft: #1c4053,
-  brand-accent: $brand-red,
-  brand-accent-hover: $brand-red-deep,
-  brand-accent-text: #fff,
-  page: #091a24,
+  brand-accent: #fff,
+  brand-accent-hover: #edf2f4,
+  brand-accent-text: $brand-blue,
+  page: $brand-navy,
   page-edge: #07131b,
-  watermark: rgba(#74bedd, 0.48),
+  watermark: rgba(#74bedd, 0.42),
   link-hover: #e1f4fc,
   header: $brand-navy,
-  submenu: #28404c,
+  submenu: #fff,
   navigation-hover: #28404c,
-  submenu-hover: #345362,
-  submenu-level-2: #233a46,
-  submenu-level-3: #1e3440,
-  submenu-level-4: #192e3a,
-  submenu-hover-level-2: #2f4c5b,
-  submenu-hover-level-3: #294552,
-  submenu-hover-level-4: #233e4b,
+  submenu-hover: #edf2f4,
+  submenu-level-2: #fff,
+  submenu-level-3: #fff,
+  submenu-level-4: #fff,
+  submenu-hover-level-2: #edf2f4,
+  submenu-hover-level-3: #edf2f4,
+  submenu-hover-level-4: #edf2f4,
   hero: $brand-navy,
-  card: #143447,
-  card-hover: #1d4357,
+  card: #1b3c4d,
+  card-hover: #22495c,
   image-background: #fff,
   subscribe-band: $colour-subscribe-band,
-  footer: #08232f,
+  footer: $brand-navy,
   footer-hover: #103445,
   footer-text: #ffffff,
   footer-muted: #d1d6df,

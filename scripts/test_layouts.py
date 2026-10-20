@@ -86,7 +86,8 @@ with sync_playwright() as p:
                   top:s.borderTopLeftRadius,bottom:s.borderBottomLeftRadius,border:s.borderBottomWidth,
                   left:s.borderLeftWidth,right:s.borderRightWidth,colour:s.borderBottomColor,sliderColour:slider.borderColor}}''')
                 assert frame['top'] == '0px' and frame['bottom'] == '0px' and frame['left'] == '0px' and frame['right'] == '0px', (width,frame)
-                assert frame['border'] == '1px' and frame['colour'] == frame['sliderColour'], (width,frame)
+                assert frame['border'] == '1px', (width,frame)
+                assert page.locator('.slide-link').evaluate_all("ns=>ns.every(e=>getComputedStyle(e).borderTopWidth==='0px')"), 'Feature cards are borderless'
             results.append({'width': width, 'route': name, 'layout': data})
             if width in [390, 1600]:
                 device = 'mobile' if width == 390 else 'desktop'

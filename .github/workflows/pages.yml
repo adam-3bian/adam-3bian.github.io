@@ -19,7 +19,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 45
     permissions:
       contents: read
       pages: read
@@ -35,7 +35,7 @@ jobs:
       - name: Install validation tools
         run: |
           python -m pip install -r requirements-dev.txt
-          python -m playwright install --with-deps chromium
+          python -m playwright install --with-deps chromium firefox webkit
           npm install --prefix "$RUNNER_TEMP/accessibility" --no-audit --no-fund axe-core@4.10.3
       - name: Validate structured records and event boundaries
         run: |
@@ -69,6 +69,8 @@ jobs:
           SITE_URL=http://127.0.0.1:4201/preview/ REPORT_ROOT=reports/refinement/preview python scripts/test_refinement.py
           SITE_URL=http://127.0.0.1:4200/ REPORT_ROOT=reports/consistency/root python scripts/test_consistency.py
           SITE_URL=http://127.0.0.1:4201/preview/ REPORT_ROOT=reports/consistency/preview python scripts/test_consistency.py
+          BROWSERS=chromium,firefox,webkit SITE_URL=http://127.0.0.1:4200/ REPORT_ROOT=reports/corporate/root python scripts/test_corporate.py
+          BROWSERS=chromium,firefox,webkit SITE_URL=http://127.0.0.1:4201/preview/ REPORT_ROOT=reports/corporate/preview python scripts/test_corporate.py
       - name: Save review evidence
         if: always()
         uses: actions/upload-artifact@v4

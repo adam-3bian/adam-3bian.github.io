@@ -1,21 +1,21 @@
 // Shared roles, adapted to CHERI from Material elevation and responsive type scales.
 :root {
-  --type-display: clamp(2.5rem, 1.5rem + 4vw, 4.5rem);
+  --type-display: clamp(2.5rem, 1.25rem + 4.5vw, 5rem);
   --type-page: clamp(2rem, 1.5rem + 2vw, 3rem);
-  --type-section: clamp(1.375rem, 1.15rem + .6vw, 1.75rem);
+  --type-section: clamp(1.5rem, 1.2rem + .7vw, 1.875rem);
   --type-title: 1.125rem;
   --type-body: 1.0625rem;
   --type-label: .875rem;
   --leading-heading: 1.3;
   --leading-body: 1.65;
-  --radius: 8px;
+  --radius: 10px;
   --radius-small: 4px;
   --control-height: 3rem;
   --surface-inverse: #{$brand-navy};
   --ink-inverse: #fff;
-  --surround-footer: #{rgba($colour-footer, .82)};
+  --surround-footer: #{$colour-subscribe-band};
   --shadow-rgb: 21, 43, 59;
-  --gradient-brand: linear-gradient(115deg, rgba(9, 44, 62, .88) 0%, rgba(18, 87, 112, .78) 55%, rgba(42, 128, 155, .66) 100%);
+  --gradient-brand: linear-gradient(115deg, rgba(13, 40, 58, .9) 0%, rgba(18, 87, 112, .8) 48%, rgba(29, 132, 151, .64) 100%);
   --membership-text: #{$brand-blue};
 }
 .home-page {
@@ -33,9 +33,9 @@
   --ink: var(--colour-text);
   --muted: var(--colour-muted);
   --elevation-0: none;
-  --elevation-1: 0 2px 3px rgba(var(--shadow-rgb), .12), 0 5px 12px rgba(var(--shadow-rgb), .09);
-  --elevation-2: 0 3px 6px rgba(var(--shadow-rgb), .15), 0 10px 24px rgba(var(--shadow-rgb), .14);
-  --elevation-3: 0 8px 16px rgba(var(--shadow-rgb), .18), 0 24px 40px rgba(var(--shadow-rgb), .2);
+  --elevation-1: 0 1px 3px rgba(var(--shadow-rgb), .11), 0 4px 12px rgba(var(--shadow-rgb), .07);
+  --elevation-2: 0 2px 5px rgba(var(--shadow-rgb), .12), 0 10px 24px rgba(var(--shadow-rgb), .1);
+  --elevation-3: 0 3px 8px rgba(var(--shadow-rgb), .1), 0 18px 36px rgba(var(--shadow-rgb), .14);
   --shadow-rest: var(--elevation-1);
   --shadow: var(--elevation-2);
 }

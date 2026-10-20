@@ -1,24 +1,24 @@
 .card, .catalog-card {
   background: var(--surface);
-  border: 1px solid var(--border);
+  border: 0;
   border-radius: var(--radius);
   box-shadow: var(--elevation-1);
   color: inherit;
   min-width: 0;
   padding: $card-padding-mobile;
   text-decoration: none;
-  transition: background .18s, border-color .18s, box-shadow .18s;
+  transition: background .18s, box-shadow .18s;
 }
 a.card:hover, a.catalog-card:hover {
   background: var(--colour-card-hover);
-  border-color: var(--accent);
   box-shadow: var(--shadow);
   text-decoration: none;
 }
 .card:focus-visible, .catalog-card:focus-visible {
   outline-offset: $focus-width;
 }
-// Whole-card links use a border, surface and focus ring, rather than underlining titles.
+.navigation-choice { font-family: $font-family; font-size: var(--type-title); font-weight: 600; line-height: var(--leading-heading); }
+// A native card link has one surface, one shadow and a separate keyboard focus ring.
 .card h2, .card h3 {
   font-size: var(--type-title);
   letter-spacing: $letter-spacing-heading-2;

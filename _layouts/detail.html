@@ -2,8 +2,7 @@
 layout: default
 ---
 {% include facts.html %}
-{% assign resource_count = 0 %}{% for link in page.links %}{% unless link.kind == 'navigation' %}{% assign resource_count = resource_count | plus: 1 %}{% endunless %}{% endfor %}
-{% assign use_sidebar = false %}{% if fact_count > 2 or long_facts or resource_count > 3 %}{% assign use_sidebar = true %}{% endif %}
+{% include detail-arrangement.html %}
 {% include page-header.html detail=true %}
 <div class="detail-layout{% if use_sidebar %} has-facts{% endif %}">
   {% if use_sidebar %}<aside class="detail-aside" aria-label="Facts and resources">{% if fact_count > 0 %}<section id="facts-title" class="facts-panel" aria-label="Details"><dl class="record-facts">{{ fact_rows }}</dl></section>{% endif %}{% include resource-links.html %}</aside>{% endif %}

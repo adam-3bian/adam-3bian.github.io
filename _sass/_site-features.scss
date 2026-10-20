@@ -1,4 +1,4 @@
-// Adapters for source Markdown and functional features. The ZIP owns the theme.
+// Preserve source Markdown and functional features inside the shared components.
 .theme-content { display: contents; }
 .theme-content > .content, .theme-content > .slider { margin-top: $section-gap-mobile; }
 .theme-content > .content > :first-child { margin-top: 0; }

@@ -37,9 +37,7 @@
       {% if card_metadata != '' and show_metadata %}<div class="catalog-meta">{{ card_metadata }}</div>{% endif %}
       {% unless card_item.url %}{% if card_summary %}<div class="panel-description">{{ card_summary | markdownify }}</div>{% endif %}{% endunless %}
       {% if card_item.citation %}<p class="catalog-meta">{{ card_item.citation | escape }}</p>{% endif %}
-      {% if kind == 'organisations' %}<div class="catalog-footer">{% if include.metadata == true and card_record.membership_status == 'Founding member' %}<span class="member-badge">{{ card_record.membership_status | escape }}</span>{% endif %}{% endif %}
-      {% if card_item.url %}<span class="catalog-action">{% include icon.html %}</span>{% endif %}
-      {% if kind == 'organisations' %}</div>{% endif %}
+      {% if card_item.url %}<div class="catalog-footer">{% if kind == 'organisations' and include.metadata == true and card_record.membership_status == 'Founding member' %}<span class="member-badge">{{ card_record.membership_status | escape }}</span>{% endif %}<span class="catalog-action">{% include icon.html %}</span></div>{% endif %}
     </div>
   {% if card_item.url %}</a>{% else %}</article>{% endif %}
   {% if kind == 'products' and card_item.url and card_item.description %}<div class="catalog-annotation">{% assign annotation = card_item.description | markdownify %}{% include content-urls.html content=annotation %}</div>{% endif %}

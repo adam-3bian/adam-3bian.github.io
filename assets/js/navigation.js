@@ -52,6 +52,7 @@
     const gap = (parseFloat(rawGap) || 0) * (rawGap.endsWith('rem') ? fontSize : 1);
     const parentMenu = button.closest('.submenu');
     const mega = menu.classList.contains('megamenu');
+    menu.style.setProperty('--menu-top', Math.max(gap, Math.min(header.getBoundingClientRect().bottom, height - 100)) + 'px');
     let rect;
 
     if (menu.classList.contains('flyout')) {
@@ -152,26 +153,9 @@
     }
   });
 
-  header.addEventListener('pointerover', (event) => {
-    if (event.pointerType !== 'mouse' || !desktop()) return;
-    const item = event.target.closest('.has-submenu');
-    if (!item || item.contains(event.relatedTarget)) return;
-    const button = directButton(item);
-    if (button && activeButton(button)) open(button);
-  });
-
-  header.addEventListener('pointerout', (event) => {
-    if (event.pointerType !== 'mouse' || !desktop()) return;
-    let item = event.target.closest('.has-submenu');
-    while (item && header.contains(item)) {
-      if (!item.contains(event.relatedTarget) && !item.contains(document.activeElement)) {
-        const button = directButton(item);
-        if (button && activeButton(button)) close(button);
-      }
-      item = item.parentElement.closest('.has-submenu');
-    }
-  });
-
+  // Pointer hover is visual feedback only. Native click/tap and keyboard
+  // activation share one disclosure state, so a first click never closes
+  // a menu that was opened accidentally while approaching its trigger.
   window.addEventListener('resize', () => {
     closeAll();
     groupButtons.forEach(close);
@@ -180,4 +164,6 @@
 
   document.documentElement.classList.add('js');
   groupButtons.forEach(close);
+  clearTimeout(window.cheriNavigationWait);
+  document.documentElement.classList.remove('navigation-pending');
 })();

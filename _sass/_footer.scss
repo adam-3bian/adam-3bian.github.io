@@ -3,7 +3,7 @@
   --colour-navigation-hover: var(--colour-footer-hover);
   background: var(--surround-footer);
   color: var(--colour-footer-text);
-  padding-block: $space-10 $space-8;
+  padding-bottom: $space-8;
   width: 100%;
 }
 .footer-navigation > ul {
@@ -14,7 +14,7 @@
   font-weight: $font-weight-semibold;
   letter-spacing: $letter-spacing-footer;
 }
-.footer-surface { background: var(--colour-footer); margin-inline: -$gutter-mobile; padding: $space-6 $gutter-mobile; }
+.footer-surface { background: var(--colour-footer); border-radius: 0 0 var(--radius) var(--radius); margin-inline: -$gutter-mobile; padding: $space-8 $gutter-mobile; }
 .footer-navigation { --navigation-row-inset: 0px; }
 footer .menu-group-title { color: var(--colour-footer-text); font-family: $font-family; font-size: var(--type-title); font-weight: 600; letter-spacing: 0; }
 .footer-navigation > ul > li > ul {

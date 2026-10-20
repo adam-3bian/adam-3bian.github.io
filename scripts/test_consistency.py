@@ -66,6 +66,7 @@ with sync_playwright() as p:
             if nav.count():
                 nav.hover();page.wait_for_timeout(50)
                 assert nav.evaluate("e=>getComputedStyle(e).textDecorationLine")=='none'
+                assert nav.evaluate("e=>['Top','Right','Bottom','Left'].every(s=>getComputedStyle(e)['border'+s+'Width']==='0px')")
                 for heading in nav.locator('h2,h3').all():assert heading.evaluate('e=>getComputedStyle(e).textDecorationLine')=='none'
                 nav.focus();assert nav.evaluate('e=>getComputedStyle(e).outlineStyle')!='none'
             cta=page.locator('.site-call-to-action .promotional-panel')
@@ -111,7 +112,10 @@ with sync_playwright() as p:
                 assert track.evaluate('e=>getComputedStyle(e).boxShadow')!='none'
             band=page.locator('.site-call-to-action')
             assert band.evaluate('e=>getComputedStyle(e).backgroundImage')=='none'
-            assert band.evaluate('e=>getComputedStyle(e).backgroundColor')=='rgba(18, 87, 112, 0.74)'
+            assert band.evaluate('e=>getComputedStyle(e).backgroundColor')=='rgba(16, 60, 80, 0.86)'
+            assert band.evaluate('e=>getComputedStyle(e).backgroundColor')==page.locator('.site-footer').evaluate('e=>getComputedStyle(e).backgroundColor')
+            closing=page.locator('.promotional-panel,.footer-surface').evaluate_all("ns=>ns.map(n=>{const r=n.getBoundingClientRect();return {left:r.left,right:r.right,colour:getComputedStyle(n).backgroundColor}})")
+            assert closing[0]==closing[1],('closing surfaces must align and share colour',closing)
             if route.startswith('people/?'):
                 assert page.locator('.catalog-media').count()==111
                 first=page.locator('[data-title="A. Theodore Markettos"]')
@@ -143,7 +147,7 @@ with sync_playwright() as p:
                 if '?view=grid' in route:
                     # Every card in a row, with or without membership, shares a footer baseline.
                     for member in members:
-                        assert abs(member['card']['bottom']-member['footer']['bottom']-(17 if width<768 else 21))<1,(width,member)
+                        assert abs(member['card']['bottom']-member['footer']['bottom']-(16 if width<768 else 20))<1,(width,member)
                 elif width>=768:
                     positions=[m['badge']['x'] for m in members if m['badge']]
                     assert max(positions)-min(positions)<1,(width,'unaligned membership badges')
@@ -167,11 +171,11 @@ with sync_playwright() as p:
                 assert trigger.get_attribute('aria-expanded')=='true'
                 assert trigger.locator('.menu-indicator').inner_text()=='▲'
                 if width<1000:page.locator('#nav-4 .menu-group-toggle').first.click()
-                assert page.locator('#nav-4').evaluate('e=>getComputedStyle(e).backgroundColor')=='rgb(18, 87, 112)'
+                assert page.locator('#nav-4').evaluate('e=>getComputedStyle(e).backgroundColor')=='rgb(255, 255, 255)'
                 group=page.locator('#nav-4 .menu-group-title:visible').first
                 assert group.evaluate('e=>getComputedStyle(e).fontSize')=='18px'
-                assert group.evaluate('e=>getComputedStyle(e).color')=='rgb(255, 255, 255)'
-                assert page.locator('#nav-4').evaluate('e=>getComputedStyle(e).boxShadow')!='none'
+                assert group.evaluate('e=>getComputedStyle(e).color')=='rgb(18, 87, 112)'
+                if width>=1000:assert page.locator('#nav-4').evaluate('e=>getComputedStyle(e).boxShadow')!='none'
                 assert_plain_text_surfaces()
             violations=[]
             if width in [390,1440]:

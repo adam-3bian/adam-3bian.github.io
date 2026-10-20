@@ -1,0 +1,47 @@
+{
+  "deployment_path": "/",
+  "samples": [
+    {
+      "route": "",
+      "width": 390,
+      "layout_shift_total": 0,
+      "transferred_bytes": 835864,
+      "requests": 14
+    },
+    {
+      "route": "alliance/leadership/members/?view=grid",
+      "width": 390,
+      "layout_shift_total": 0,
+      "transferred_bytes": 958528,
+      "requests": 19
+    },
+    {
+      "route": "news/ai-doesnt-need-a-kill-switch-it-needs-boundaries/",
+      "width": 390,
+      "layout_shift_total": 0,
+      "transferred_bytes": 935225,
+      "requests": 12
+    },
+    {
+      "route": "",
+      "width": 1440,
+      "layout_shift_total": 0,
+      "transferred_bytes": 1182380,
+      "requests": 17
+    },
+    {
+      "route": "alliance/leadership/members/?view=grid",
+      "width": 1440,
+      "layout_shift_total": 0,
+      "transferred_bytes": 1849580,
+      "requests": 33
+    },
+    {
+      "route": "news/ai-doesnt-need-a-kill-switch-it-needs-boundaries/",
+      "width": 1440,
+      "layout_shift_total": 0,
+      "transferred_bytes": 935225,
+      "requests": 12
+    }
+  ]
+}

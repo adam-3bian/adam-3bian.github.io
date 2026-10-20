@@ -1,5 +1,12 @@
 {% assign directory_schema = site.data.catalog[include.kind] %}
 <section class="catalog" data-catalog data-view="list" data-collection="{{ include.kind }}" data-default-sort="{{ include.sort | default: 'default' }}" aria-label="{{ page.title | escape }}">
+  <script>
+    {
+      let initialView = new URLSearchParams(location.search).get('view');
+      if (!initialView) { try { initialView = localStorage.getItem('cheri-catalog-view'); } catch {} }
+      document.currentScript.parentElement.dataset.view = initialView === 'grid' ? 'grid' : 'list';
+    }
+  </script>
   <div class="catalog-toolbar" data-catalog-controls hidden>
     <div class="catalog-search"><label for="catalog-search">Search {{ directory_schema.label | default: page.title | downcase | escape }}</label><div class="search-input"><span>{% include icon.html name='search' %}</span><input id="catalog-search" type="search" placeholder="Search by name, topic or keyword…" autocomplete="off" data-search-input></div></div>
     <div class="catalog-filter" data-filter-control hidden><label for="catalog-filter">{{ directory_schema.facet | default: 'Category' }}</label><select id="catalog-filter" data-filter-input><option value="">All</option></select></div>
@@ -12,4 +19,5 @@
   </ul>
   <div class="catalog-empty" data-empty-state hidden><h2>No matching results</h2><p>Try another search or clear the filters.</p><button type="button" class="button" data-reset>Clear search and filters</button></div>
 </section>
+<script src="{{ '/assets/js/catalog.js' | relative_url }}"></script>
 {% if page.directory_outro %}<div class="content directory-outro">{{ page.directory_outro | markdownify }}</div>{% endif %}

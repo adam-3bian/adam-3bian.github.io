@@ -1,0 +1,198 @@
+{
+  "baseline_commit": "d9667db997be575b362e3fd221cb075ff19de2bd",
+  "preservation": {
+    "protected_files": 881,
+    "changed_protected_files": [],
+    "rendered_pages": 472,
+    "issues": []
+  },
+  "root_content": {
+    "collections": {
+      "people": 111,
+      "news": 48,
+      "organisations": 69,
+      "events": 10,
+      "papers": 15,
+      "hardware": 6,
+      "software": 9,
+      "groups": 16,
+      "guides": 10,
+      "policies": 11,
+      "reports": 5
+    },
+    "original_records": 305,
+    "talks": 84,
+    "glossary_terms": 46,
+    "rendered_pages": 738,
+    "preserved_routes": 732,
+    "baseline_broken_references": 15,
+    "inherited_broken_links": [
+      {
+        "page": "build/software-ecosystem/index.html",
+        "url": "/software/freebsd/"
+      },
+      {
+        "page": "build/technology/cheri-capabilities/capabilities/index.html",
+        "url": "/build/technology/cheri-capabilities/compartmentalisation/"
+      },
+      {
+        "page": "build/technology/cheri-capabilities/sealing/index.html",
+        "url": "/build/technology/cheri-capabilities/compartmentalisation/"
+      },
+      {
+        "page": "build/technology/cheri-capabilities/sealing/index.html",
+        "url": "/build/technology/cheri-capabilities/spatial-memory-safety/"
+      },
+      {
+        "page": "build/technology/cheri-capabilities/tags-and-validity/index.html",
+        "url": "/build/technology/cheri-capabilities/compartmentalisation/"
+      },
+      {
+        "page": "build/technology/how-cheri-capabilities-work/index.html",
+        "url": "/build/technology/tags-and-validity/"
+      },
+      {
+        "page": "events/cybersecurity-by-design-conference-2024/index.html",
+        "url": "/people/greg-chadwick/"
+      },
+      {
+        "page": "events/cybersecurity-by-design-conference-2024/index.html",
+        "url": "/people/reid-derby/"
+      },
+      {
+        "page": "guides/build-compartments/index.html",
+        "url": "/build/technology/sealing/"
+      },
+      {
+        "page": "news/ai-doesnt-need-a-kill-switch-it-needs-boundaries/index.html",
+        "url": "/discover-cheri/"
+      },
+      {
+        "page": "news/press/index.html",
+        "url": "/assets/pages/alliance--about-and-governance--trademark/5ff7f679f608-cheri-alliance-logo-pack.zip"
+      },
+      {
+        "page": "policies/trademark-original/index.html",
+        "url": "/assets/pages/alliance--about-and-governance--trademark/5ff7f679f608-cheri-alliance-logo-pack.zip"
+      },
+      {
+        "page": "policies/trademark/index.html",
+        "url": "/assets/pages/alliance--about-and-governance--trademark/5ff7f679f608-cheri-alliance-logo-pack.zip"
+      },
+      {
+        "page": "software/cheribsd/index.html",
+        "url": "/software/freebsd/"
+      },
+      {
+        "page": "trademark/index.html",
+        "url": "/assets/pages/alliance--about-and-governance--trademark/5ff7f679f608-cheri-alliance-logo-pack.zip"
+      }
+    ],
+    "new_broken_references": 0,
+    "errors": []
+  },
+  "preview_content": {
+    "collections": {
+      "people": 111,
+      "news": 48,
+      "organisations": 69,
+      "events": 10,
+      "papers": 15,
+      "hardware": 6,
+      "software": 9,
+      "groups": 16,
+      "guides": 10,
+      "policies": 11,
+      "reports": 5
+    },
+    "original_records": 305,
+    "talks": 84,
+    "glossary_terms": 46,
+    "rendered_pages": 738,
+    "preserved_routes": 732,
+    "baseline_broken_references": 15,
+    "inherited_broken_links": [
+      {
+        "page": "build/software-ecosystem/index.html",
+        "url": "/software/freebsd/"
+      },
+      {
+        "page": "build/technology/cheri-capabilities/capabilities/index.html",
+        "url": "/build/technology/cheri-capabilities/compartmentalisation/"
+      },
+      {
+        "page": "build/technology/cheri-capabilities/sealing/index.html",
+        "url": "/build/technology/cheri-capabilities/compartmentalisation/"
+      },
+      {
+        "page": "build/technology/cheri-capabilities/sealing/index.html",
+        "url": "/build/technology/cheri-capabilities/spatial-memory-safety/"
+      },
+      {
+        "page": "build/technology/cheri-capabilities/tags-and-validity/index.html",
+        "url": "/build/technology/cheri-capabilities/compartmentalisation/"
+      },
+      {
+        "page": "build/technology/how-cheri-capabilities-work/index.html",
+        "url": "/build/technology/tags-and-validity/"
+      },
+      {
+        "page": "events/cybersecurity-by-design-conference-2024/index.html",
+        "url": "/people/greg-chadwick/"
+      },
+      {
+        "page": "events/cybersecurity-by-design-conference-2024/index.html",
+        "url": "/people/reid-derby/"
+      },
+      {
+        "page": "guides/build-compartments/index.html",
+        "url": "/build/technology/sealing/"
+      },
+      {
+        "page": "news/ai-doesnt-need-a-kill-switch-it-needs-boundaries/index.html",
+        "url": "/discover-cheri/"
+      },
+      {
+        "page": "news/press/index.html",
+        "url": "/assets/pages/alliance--about-and-governance--trademark/5ff7f679f608-cheri-alliance-logo-pack.zip"
+      },
+      {
+        "page": "policies/trademark-original/index.html",
+        "url": "/assets/pages/alliance--about-and-governance--trademark/5ff7f679f608-cheri-alliance-logo-pack.zip"
+      },
+      {
+        "page": "policies/trademark/index.html",
+        "url": "/assets/pages/alliance--about-and-governance--trademark/5ff7f679f608-cheri-alliance-logo-pack.zip"
+      },
+      {
+        "page": "software/cheribsd/index.html",
+        "url": "/software/freebsd/"
+      },
+      {
+        "page": "trademark/index.html",
+        "url": "/assets/pages/alliance--about-and-governance--trademark/5ff7f679f608-cheri-alliance-logo-pack.zip"
+      }
+    ],
+    "new_broken_references": 0,
+    "errors": []
+  },
+  "menu_options": 84,
+  "members": 52,
+  "founding_members": 21,
+  "local_browser": "Chromium",
+  "responsive_widths": [
+    320,
+    390,
+    768,
+    1024,
+    1440,
+    1920
+  ],
+  "local_corporate_checks_per_path": 126,
+  "ci_browser_engines": [
+    "Chromium",
+    "Firefox",
+    "WebKit"
+  ],
+  "matched_screenshot_pairs": 42
+}

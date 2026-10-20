@@ -2,7 +2,7 @@
 .button {
   align-items: center;
   background: var(--button-background, var(--colour-button));
-  border: 1px solid transparent;
+  border: 0;
   border-radius: var(--radius);
   box-shadow: var(--elevation-1);
   color: var(--button-text, var(--colour-button-text));
@@ -30,20 +30,19 @@
   text-decoration: none;
 }
 .button .icon { height: 18px; width: 18px; }
-// The existing join action uses a brand accent with the same geometry and states.
+// Retain the existing join-action hook; it now uses the blue/white primary palette.
 .button-brand {
   --button-background: var(--colour-brand-accent);
   --button-hover: var(--colour-brand-accent-hover);
   --button-text: var(--colour-brand-accent-text);
 }
 .button-secondary {
-  --button-background: var(--surface);
+  --button-background: var(--surface-soft);
   --button-hover: var(--surface-hover);
   --button-text: var(--accent);
-  border-color: var(--border);
   box-shadow: none;
 }
-.button-secondary:not(:disabled):is(:hover, :focus-visible) { border-color: var(--accent); box-shadow: none; }
+.button-secondary:not(:disabled):is(:hover, :focus-visible) { box-shadow: none; }
 .button-secondary[aria-current] {
   --button-background: var(--colour-button);
   --button-hover: var(--colour-button-hover);

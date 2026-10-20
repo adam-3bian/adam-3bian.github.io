@@ -19,6 +19,29 @@
     if (!image.hasAttribute('loading')) image.setAttribute('loading', 'lazy');
   });
 
+  // Kramdown can interpret pipe-separated navigation links as a table. These
+  // single-row, link-only structures are choices, not comparison data. Retain
+  // every destination, label and trailing punctuation using the common cards.
+  document.querySelectorAll('.content table:not(:has(th))').forEach((table) => {
+    const rows = [...table.querySelectorAll('tr')];
+    const cells = [...table.querySelectorAll('td')];
+    if (rows.length !== 1 || cells.length < 2 || cells.length > 4 || table.querySelector('caption, thead, tfoot, [id]:not(a)')) return;
+    if (!cells.every(cell => cell.children.length === 1 && cell.firstElementChild.tagName === 'A' &&
+      [...cell.childNodes].every(node => node.nodeType !== Node.TEXT_NODE || /^[\s.,;:!?]*$/.test(node.textContent)))) return;
+    const choices = document.createElement('div');
+    choices.className = `cards columns-${cells.length}`;
+    if (table.id) choices.id = table.id;
+    cells.forEach(cell => {
+      const link = cell.firstElementChild;
+      link.classList.add('card', 'navigation-choice');
+      [...cell.childNodes].filter(node => node.nodeType === Node.TEXT_NODE).forEach(node => {
+        if (node.textContent.trim()) link.append(node);
+      });
+      choices.append(link);
+    });
+    table.replaceWith(choices);
+  });
+
   // Ordinary Kramdown tables need no author-supplied HTML wrapper.
   document.querySelectorAll('.content table').forEach((table) => {
     let region = table.parentElement;

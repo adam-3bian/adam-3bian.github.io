@@ -6,6 +6,7 @@
 }
 .site-header {
   background: var(--colour-header);
+  border: 0;
   width: 100%;
 }
 .site-header-inner {
@@ -33,15 +34,16 @@
   height: $logo-height;
   max-width: $logo-width;
   object-fit: contain;
-  width: auto;
+  width: 9.2rem;
 }
 .site-header nav {
   --navigation-mode: stacked;
   --menu-viewport-gap: #{$menu-viewport-gap};
   flex-basis: 100%;
   font-size: $font-size-navigation;
+  min-width: 0;
 }
-.js .site-header nav {
+.navigation-pending .site-header nav, .js .site-header nav {
   display: none;
 }
 .js .site-header nav[data-open="true"] {
@@ -77,6 +79,7 @@
   .js .site-header nav > ul {
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
     gap: $space-1;
   }
   .site-header nav > ul > li {
@@ -87,7 +90,8 @@
     position: static;
   }
   .site-header nav > ul > li > a, .site-header nav > ul > li > button {
-    min-height: $header-height;
+    border-radius: var(--radius-small);
+    min-height: $control-height;
     padding-inline: $space-3;
     width: auto;
   }

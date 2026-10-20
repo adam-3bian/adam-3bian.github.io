@@ -8,7 +8,8 @@ body {
   flex-direction: column;
   font-family: $font-family-body;
   font-weight: $font-weight-regular;
-  line-height: $line-height-body;
+  font-size: var(--type-body);
+  line-height: var(--leading-body);
   margin: 0;
   min-height: 100vh;
   isolation: isolate;
@@ -154,8 +155,11 @@ img {
   width: 100%;
 }
 .content blockquote {
-  border-left: $focus-width solid var(--colour-accent);
-  padding-left: $space-5;
+  background: var(--surface-soft);
+  border: 0;
+  border-radius: var(--radius);
+  margin-inline: 0;
+  padding: $space-5 $space-6;
 }
 .content pre {
   background: var(--colour-card);
@@ -219,5 +223,8 @@ img {
 .content > .index-list:not(:first-child) { margin-top: $subsection-gap; }
 .section-intro { margin-bottom: $space-6; max-width: $text-width; }
 
-// Authored rules retain their document breaks with the shared quiet divider.
-hr { border: 0; border-top: 1px solid var(--border); margin-block: $space-6; }
+// Retain the semantic document break without adding a decorative rule.
+hr { border: 0; height: 0; margin-block: $space-8; }
+[hidden] { display: none !important; }
+.icon { display: inline-block; flex-shrink: 0; vertical-align: -.2em; }
+.anchor-alias { display: block; height: 0; width: 0; overflow: hidden; }

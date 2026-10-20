@@ -19,8 +19,14 @@
 
 @import "site-features";
 
+@import "detail";
 @import "catalog";
 @import "talks";
 @import "glossary";
 
 @import "catalogue-navigation";
+
+// Apply the user's motion preference after every component declaration.
+@media (prefers-reduced-motion: reduce) {
+  .catalog-card, .card, .button, .slider-track { transition: none; }
+}

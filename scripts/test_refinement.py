@@ -55,7 +55,7 @@ with sync_playwright() as p:
                     assert frame['w'] > frame['h'] and frame['fit']=='contain', (width,name,frame)
             if name == 'members-grid':
                 assert len({(round(f['w']),round(f['h'])) for f in media}) == 1, (width,media)
-            if name in ['person','company','hardware','software']:
+            if name in ['person','hardware','software']:
                 assert page.locator('.detail-aside').count() == 0, (width,name,'unnecessary sidebar')
                 assert page.locator('.inline-facts').count() == 1
                 if name == 'person' and width < 768:
@@ -74,7 +74,7 @@ with sync_playwright() as p:
                 }''')
                 header, layout, body, aside = [detail[k] for k in ['header','layout','body','aside']]
                 assert abs(layout['x']-header['x']) < 1 and abs(layout['w']-header['w']) < 1, (width,name,detail)
-                if name in ['hardware-facts','policy']:
+                if name in ['hardware-facts','policy','company']:
                     assert aside is not None, (width,name,'useful metadata aside missing')
                     assert page.locator('.inline-facts').count() == 0
                 assert abs(body['x']-layout['x']) < 1, (width,name,detail)

@@ -1,0 +1,36 @@
+{%- comment -%}
+  Supporting information has a purpose, not a field-count threshold. Each
+  collection uses its existing factual schema; sparse identity/classification
+  fields stay beside the title. No presentation flags belong in source records.
+{%- endcomment -%}
+{%- assign use_sidebar = false -%}
+{%- assign resource_count = 0 -%}
+{%- assign professional_resources = 0 -%}
+{%- for link in page.links -%}
+  {%- unless link.kind == 'navigation' -%}
+    {%- assign resource_count = resource_count | plus: 1 -%}
+    {%- if link.kind == 'documentation' or link.kind == 'repository' or link.kind == 'download' or link.kind == 'publication' -%}
+      {%- assign professional_resources = professional_resources | plus: 1 -%}
+    {%- endif -%}
+  {%- endunless -%}
+{%- endfor -%}
+{%- case page.collection -%}
+  {%- when 'events' -%}
+    {%- if page.start_date or page.start_datetime or page.location -%}{%- assign use_sidebar = true -%}{%- endif -%}
+  {%- when 'policies' -%}
+    {%- if page.version or page.document_date or page.authoritative_format -%}{%- assign use_sidebar = true -%}{%- endif -%}
+  {%- when 'papers', 'reports' -%}
+    {%- if resource_count > 0 and fact_count > 0 -%}{%- assign use_sidebar = true -%}{%- endif -%}
+  {%- when 'hardware' -%}
+    {%- if page.certification or page.architecture or page.version or page.product_type or professional_resources > 0 -%}{%- assign use_sidebar = true -%}{%- endif -%}
+  {%- when 'software' -%}
+    {%- if page.architectures.size > 0 or page.platforms.size > 0 or page.version or professional_resources > 0 -%}{%- assign use_sidebar = true -%}{%- endif -%}
+  {%- when 'organisations' -%}
+    {%- if page.member and page.membership_status and resource_count > 0 -%}{%- assign use_sidebar = true -%}{%- endif -%}
+  {%- when 'groups' -%}
+    {%- if page.collaboration_areas.size > 0 and resource_count > 0 -%}{%- assign use_sidebar = true -%}{%- endif -%}
+  {%- when 'guides' -%}
+    {%- if page.prerequisites.size > 0 or professional_resources > 0 -%}{%- assign use_sidebar = true -%}{%- endif -%}
+  {%- when 'people' -%}
+    {%- if professional_resources > 0 and resource_count > 1 -%}{%- assign use_sidebar = true -%}{%- endif -%}
+{%- endcase -%}
