@@ -1,59 +1,20 @@
-.call-to-action .card {
-  align-items: center;
-  background: var(--colour-cta);
-  display: flex;
-  flex-wrap: wrap;
-  gap: $space-5 $space-8;
-}
-.call-to-action .card:is(:hover, :focus-visible) { background: var(--colour-cta-hover); }
-.call-to-action .card :is(h2, h3) { flex: 1 1 $onward-image-width; font-size: $font-size-cta; }
-.call-to-action .card-action { margin: 0; }
-.call-to-action .action-card {
-  --colour-cta: var(--colour-brand-accent);
-  --colour-cta-hover: var(--colour-brand-accent-hover);
-  border-color: var(--colour-brand-accent);
-  color: var(--colour-brand-accent-text);
-  display: inline-flex;
-  font-weight: $font-weight-semibold;
-  min-height: 48px;
-  padding: .8rem 1.25rem;
-}
-.call-to-action .action-card:is(:hover, :focus-visible) { border-color: var(--colour-brand-accent-hover); color: var(--colour-brand-accent-text); }
-.onward-image {
-  display: block;
-  height: auto;
-  max-width: 100%;
-  width: $onward-image-width;
-}
 .site-call-to-action {
-  --colour-cta: var(--colour-subscribe-card);
-  --colour-cta-hover: var(--colour-subscribe-card-hover);
-  --colour-focus: var(--colour-subscribe-text);
   background: var(--colour-subscribe-band);
-  isolation: isolate;
-  padding-block: $section-gap-mobile;
-  position: relative;
+  padding-block: $space-8;
   width: 100%;
 }
-// One uniform translucent surround; the body artwork remains underneath.
-// The writing always has an opaque navy surface, including hover and focus.
-.site-call-to-action .card {
-  border: 0;
-  box-shadow: var(--elevation-1);
-  color: var(--colour-subscribe-text);
-}
-.site-call-to-action .card h2 { color: var(--colour-subscribe-text); font-size: var(--type-section); }
-.site-call-to-action .card-action {
-  background: var(--colour-brand-accent);
+.promotional-panel {
+  align-items: center;
   border-radius: var(--radius);
-  color: var(--colour-brand-accent-text);
-  padding: .75rem 1rem;
+  display: flex;
+  gap: $space-6 $space-8;
+  justify-content: space-between;
+  padding: $space-6 $space-8;
 }
-.site-call-to-action .card:is(:hover, :focus-visible) .card-action { background: var(--colour-brand-accent-hover); }
-@media (min-width: $desktop-breakpoint) {
-  .site-call-to-action { padding-block: $section-gap-desktop; }
-}
+.promotional-copy { min-width: 0; }
+.promotional-panel h2 { color: inherit; font-size: var(--type-section); line-height: var(--leading-heading); }
+.promotional-panel p { margin-top: $space-2; }
+.promotional-panel .button { flex-shrink: 0; }
 @media (max-width: $desktop-breakpoint - 1px) {
-  .call-to-action .card-with-image { align-items: flex-start; flex-direction: column; }
-  .call-to-action .card-with-image h3 { flex-basis: auto; }
+  .promotional-panel { align-items: flex-start; flex-direction: column; padding: $space-6; }
 }

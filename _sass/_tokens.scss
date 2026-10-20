@@ -1,5 +1,6 @@
 // Shared roles, adapted to CHERI from Material elevation and responsive type scales.
 :root {
+  --type-display: clamp(2.5rem, 1.5rem + 4vw, 4.5rem);
   --type-page: clamp(2rem, 1.5rem + 2vw, 3rem);
   --type-section: clamp(1.375rem, 1.15rem + .6vw, 1.75rem);
   --type-title: 1.125rem;
@@ -9,13 +10,17 @@
   --leading-body: 1.65;
   --radius: 8px;
   --radius-small: 4px;
+  --control-height: 3rem;
+  --surface-inverse: #{$brand-navy};
+  --ink-inverse: #fff;
+  --surround-footer: #{rgba($colour-footer, .82)};
   --shadow-rgb: 21, 43, 59;
-  --gradient-brand: linear-gradient(115deg, #092c3e 0%, #{$brand-blue} 65%, #226e88 100%);
-  --membership-background: #{$brand-blue};
-  --membership-text: #fff;
+  --gradient-brand: linear-gradient(115deg, rgba(9, 44, 62, .88) 0%, rgba(18, 87, 112, .78) 55%, rgba(42, 128, 155, .66) 100%);
+  --membership-text: #{$brand-blue};
 }
 .home-page {
   --shadow-rgb: 0, 8, 14;
+  --membership-text: #{$brand-cyan};
 }
 // Resolve aliases in both scopes; inherited light values must not leak onto home.
 :root, .home-page {
@@ -28,8 +33,8 @@
   --ink: var(--colour-text);
   --muted: var(--colour-muted);
   --elevation-0: none;
-  --elevation-1: 0 1px 3px rgba(var(--shadow-rgb), .12), 0 3px 8px rgba(var(--shadow-rgb), .06);
-  --elevation-2: 0 3px 6px rgba(var(--shadow-rgb), .12), 0 8px 20px rgba(var(--shadow-rgb), .12);
+  --elevation-1: 0 2px 3px rgba(var(--shadow-rgb), .12), 0 5px 12px rgba(var(--shadow-rgb), .09);
+  --elevation-2: 0 3px 6px rgba(var(--shadow-rgb), .15), 0 10px 24px rgba(var(--shadow-rgb), .14);
   --elevation-3: 0 8px 16px rgba(var(--shadow-rgb), .18), 0 24px 40px rgba(var(--shadow-rgb), .2);
   --shadow-rest: var(--elevation-1);
   --shadow: var(--elevation-2);

@@ -2,24 +2,24 @@
   background: var(--colour-hero);
   border-bottom: 1px solid var(--border);
   margin-inline: -$gutter-mobile;
-  padding: $hero-padding-mobile $gutter-mobile;
+  padding: $space-10 $gutter-mobile;
 }
 .hero-intro { min-width: 0; }
 .hero-large h1 {
-  font-size: $font-size-hero-mobile;
+  font-size: var(--type-display);
   letter-spacing: $letter-spacing-hero;
-  line-height: $line-height-hero;
+  line-height: 1.12;
 }
 .hero-opening, .hero-support, .hero-support > span { display: block; }
-.hero-support { color: var(--colour-muted); font-size: .72em; font-weight: 500; letter-spacing: -.035em; line-height: 1.2; margin-top: .3em; }
+.hero-support { color: var(--colour-text); font-size: .68em; font-weight: 500; letter-spacing: -.035em; line-height: 1.2; margin-top: $space-5; }
 .hero-support > span + span { margin-top: .2em; }
-.hero-signoff { color: var(--colour-hero-accent); font-weight: 600; }
+.hero-signoff { font-weight: 600; }
 .hero-intro > .lede {
   font-size: $font-size-hero-text;
   margin-top: $space-4;
   max-width: $text-width;
 }
 @media (min-width: $desktop-breakpoint) {
-  .hero { margin-inline: -$gutter-desktop; padding: $hero-padding-desktop $gutter-desktop; }
-  .hero-large h1 { font-size: $font-size-hero-desktop; }
+  .hero { margin-inline: -$gutter-desktop; padding: $space-12 $gutter-desktop; }
+  .hero-large h1 { font-size: var(--type-display); }
 }

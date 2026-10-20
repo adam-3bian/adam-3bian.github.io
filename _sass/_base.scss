@@ -218,3 +218,6 @@ img {
 .index-list > h2 { margin-bottom: $heading-gap; }
 .content > .index-list:not(:first-child) { margin-top: $subsection-gap; }
 .section-intro { margin-bottom: $space-6; max-width: $text-width; }
+
+// Authored rules retain their document breaks with the shared quiet divider.
+hr { border: 0; border-top: 1px solid var(--border); margin-block: $space-6; }

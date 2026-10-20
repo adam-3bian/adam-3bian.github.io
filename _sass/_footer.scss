@@ -1,7 +1,7 @@
 .site-footer {
   --colour-focus: var(--colour-footer-text);
   --colour-navigation-hover: var(--colour-footer-hover);
-  background: var(--colour-footer);
+  background: var(--surround-footer);
   color: var(--colour-footer-text);
   padding-block: $space-10 $space-8;
   width: 100%;
@@ -14,7 +14,9 @@
   font-weight: $font-weight-semibold;
   letter-spacing: $letter-spacing-footer;
 }
-footer .menu-group-title { color: $brand-cyan; font-family: $font-family; font-size: var(--type-title); font-weight: 600; letter-spacing: 0; }
+.footer-surface { background: var(--colour-footer); margin-inline: -$gutter-mobile; padding: $space-6 $gutter-mobile; }
+.footer-navigation { --navigation-row-inset: 0px; }
+footer .menu-group-title { color: var(--colour-footer-text); font-family: $font-family; font-size: var(--type-title); font-weight: 600; letter-spacing: 0; }
 .footer-navigation > ul > li > ul {
   display: grid;
   gap: 0;
@@ -27,7 +29,7 @@ footer .menu-group-title { color: $brand-cyan; font-family: $font-family; font-s
   letter-spacing: 0;
   min-height: $control-height;
   margin: 0;
-  padding: $space-2 $navigation-row-padding;
+  padding: $space-2 0;
   width: 100%;
 }
 .footer-bottom { align-items: center; margin-top: $space-8; }
@@ -47,6 +49,7 @@ footer .menu-group-title { color: $brand-cyan; font-family: $font-family; font-s
 }
 .footer-social .social-icon { display: block; height: $space-6; object-fit: contain; width: $space-6; }
 @media (min-width: $desktop-breakpoint) {
+  .footer-surface { margin-inline: -$gutter-desktop; padding-inline: $gutter-desktop; }
   .footer-copyright { grid-column: 1 / span 3; }
   .footer-social { grid-column: 4; grid-row: 1; }
 }

@@ -8,7 +8,7 @@
   </div>
   <div class="catalog-status"><p aria-live="polite" aria-atomic="true" data-result-count>{{ include.items.size }} {% if include.items.size == 1 %}result{% else %}results{% endif %}</p></div>
   <ul class="catalog-cards" role="list" data-catalog-list>
-    {% for entry in include.items %}{% include card.html item=entry kind=include.kind heading='h2' %}{% endfor %}
+    {% for entry in include.items %}{% include card.html item=entry kind=include.kind heading='h2' metadata=true %}{% endfor %}
   </ul>
   <div class="catalog-empty" data-empty-state hidden><h2>No matching results</h2><p>Try another search or clear the filters.</p><button type="button" class="button" data-reset>Clear search and filters</button></div>
 </section>

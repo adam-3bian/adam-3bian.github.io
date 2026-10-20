@@ -16,10 +16,7 @@ $font-size-card: 1.25rem;
 $font-size-lede: 1.125rem;
 $font-size-meta: 0.875rem;
 $font-size-navigation: 0.9375rem;
-$font-size-hero-mobile: clamp(2.5rem, 10vw, 4.5rem);
-$font-size-hero-desktop: clamp(3rem, 6vw, 5.5rem);
 $font-size-hero-text: clamp(1.125rem, 2vw, 1.25rem);
-$font-size-cta: clamp(1.5rem, 3vw, 2rem);
 $font-size-menu-button: 1.6rem;
 $line-height-hero: 1.05;
 $line-height-card: 1.25;
@@ -68,8 +65,6 @@ $card-gap: $grid-gap;
 $card-padding-mobile: $space-6;
 $card-padding-desktop: $space-6;
 $card-padding-wide: $space-8;
-$hero-padding-mobile: $space-12;
-$hero-padding-desktop: $space-16;
 
 // Interface sizes
 $header-height: 4.5rem;
@@ -94,7 +89,6 @@ $slider-min-interval: 3000;
 $slider-image-share: 1fr;
 $slider-copy-share: 1fr;
 $slider-image-ratio: unquote("16 / 9");
-$onward-image-width: 12rem;
 $overlay-gutter: $space-4;
 
 // Brand foundations. Component roles below share these values in both page palettes.
@@ -111,23 +105,17 @@ $colour-text: $brand-navy;
 $colour-muted: #526574;
 $colour-page: #ffffff;
 $colour-page-edge: #edf0f2;
-$colour-watermark: rgba(#125770, 0.24);
+$colour-watermark: rgba(#125770, 0.34);
 $colour-link-hover: $brand-teal-deep;
 $colour-header: #ffffff;
 $colour-submenu: $brand-blue;
 $colour-navigation-hover: #eef1f3;
 $colour-submenu-hover: #0b4158;
 $colour-hero: #f3f5f6;
-$colour-hero-accent: $brand-red;
 $colour-card: #ffffff;
 $colour-card-hover: #f4f6f7;
 $colour-image-background: #fff;
-$colour-cta: #f3f5f6;
-$colour-cta-hover: #e9eef1;
-$colour-subscribe-band: rgba($brand-blue, .92);
-$colour-subscribe-card: $brand-navy;
-$colour-subscribe-card-hover: #1b3a4c;
-$colour-subscribe-text: #ffffff;
+$colour-subscribe-band: rgba($brand-blue, .74);
 $colour-footer: #0a2a39;
 $colour-footer-hover: #10465b;
 $colour-footer-text: #ffffff;
@@ -164,16 +152,10 @@ $theme-light: (
   submenu-hover-level-3: #082f43,
   submenu-hover-level-4: #062b3e,
   hero: $colour-hero,
-  hero-accent: $colour-hero-accent,
   card: $colour-card,
   card-hover: $colour-card-hover,
   image-background: $colour-image-background,
-  cta: $colour-cta,
-  cta-hover: $colour-cta-hover,
   subscribe-band: $colour-subscribe-band,
-  subscribe-card: $colour-subscribe-card,
-  subscribe-card-hover: $colour-subscribe-card-hover,
-  subscribe-text: $colour-subscribe-text,
   footer: $colour-footer,
   footer-hover: $colour-footer-hover,
   footer-text: $colour-footer-text,
@@ -201,7 +183,7 @@ $theme-dark: (
   page-edge: #07131b,
   watermark: rgba(#74bedd, 0.48),
   link-hover: #e1f4fc,
-  header: #102832,
+  header: $brand-navy,
   submenu: #28404c,
   navigation-hover: #28404c,
   submenu-hover: #345362,
@@ -211,17 +193,11 @@ $theme-dark: (
   submenu-hover-level-2: #2f4c5b,
   submenu-hover-level-3: #294552,
   submenu-hover-level-4: #233e4b,
-  hero: #103a4b,
-  hero-accent: $brand-cyan,
+  hero: $brand-navy,
   card: #143447,
   card-hover: #1d4357,
   image-background: #fff,
-  cta: #143447,
-  cta-hover: #1d4357,
   subscribe-band: $colour-subscribe-band,
-  subscribe-card: $colour-subscribe-card,
-  subscribe-card-hover: $colour-subscribe-card-hover,
-  subscribe-text: $colour-subscribe-text,
   footer: #08232f,
   footer-hover: #103445,
   footer-text: #ffffff,

@@ -46,7 +46,7 @@
       {%- assign closing_link = action_body | slice: -4, 4 -%}
       {%- if forloop.first -%}{{ action_paragraph }}
       {%- elsif opening_link == '<a ' and closing_link == '</a>' -%}
-        <p class="call-to-action">{{ action_paragraph | replace_first: '<a ', '<a class="card action-card" ' }}
+        <p class="call-to-action">{{ action_paragraph | replace_first: '<a ', '<a class="button button-brand action-card" ' }}
       {%- else -%}<p>{{ action_paragraph }}{%- endif -%}
     {%- endfor -%}
   {%- elsif forloop.first -%}{{ card_section }}

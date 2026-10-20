@@ -16,11 +16,11 @@ def links(items):
         result+=links(item.get('subcategories',[]))+links(item.get('links',[]))
     return result
 expected=links(config['navigation']['header'])
-routes=['','alliance/','build/','news-and-events/','people/?view=grid','alliance/leadership/members/?view=list','alliance/leadership/members/?view=grid','people/adam-finney/','news-and-events/events-and-archive/cheri-blossoms/','alliance/membership/contact/','discover/resources/videos-and-presentations/']
+routes=['','alliance/','build/','news-and-events/','people/?view=grid','alliance/leadership/members/?view=list','alliance/leadership/members/?view=grid','people/adam-finney/','news-and-events/events-and-archive/cheri-blossoms/','alliance/membership/contact/','discover/resources/videos-and-presentations/','policies/competition-law-statement/']
 results=[]
 with sync_playwright() as p:
     b=p.chromium.launch(executable_path=os.environ.get('CHROMIUM_EXECUTABLE'),args=['--no-sandbox'])
-    for width in [320,390,768,1000,1440]:
+    for width in [320,390,768,1024,1440,1920]:
         for route in routes:
             page=b.new_page(viewport={'width':width,'height':1000},reduced_motion='reduce')
             assert page.goto(URL+route).status==200
@@ -33,7 +33,7 @@ with sync_playwright() as p:
             assert page.locator('a a,a button').count()==0
             assert page.locator('.listing-notes,.catalog-context,.catalog-summary,.catalog-hint').count()==0
             assert 'Introduction' not in page.locator('.card-kicker').all_text_contents()
-            for label in page.locator('.eyebrow,.card-kicker').all():
+            for label in page.locator('.record-status,.card-kicker').all():
                 assert label.evaluate("e=>getComputedStyle(e).textTransform")=='none'
                 assert label.evaluate("e=>parseFloat(getComputedStyle(e).fontSize)")>=14
             # Writing must meet an opaque, plain surface before any gradient surround.
@@ -68,29 +68,50 @@ with sync_playwright() as p:
                 assert nav.evaluate("e=>getComputedStyle(e).textDecorationLine")=='none'
                 for heading in nav.locator('h2,h3').all():assert heading.evaluate('e=>getComputedStyle(e).textDecorationLine')=='none'
                 nav.focus();assert nav.evaluate('e=>getComputedStyle(e).outlineStyle')!='none'
-            cta=page.locator('.site-call-to-action .card')
-            assert cta.locator('.card-action').inner_text()=='Get the newsletter →'
+            cta=page.locator('.site-call-to-action .promotional-panel')
+            action=cta.locator('a.button-primary')
+            assert action.count()==1 and cta.locator('a').count()==1
+            assert cta.evaluate("e=>e.tagName")=='DIV'
+            assert action.locator('span').inner_text()=='Get the newsletter'
+            assert action.get_attribute('href')==prefix+'/news-and-events/news-and-analysis/subscribe-newsletter/'
             assert cta.evaluate("e=>getComputedStyle(e).backgroundColor")=='rgb(21, 43, 59)'
             assert cta.evaluate("e=>getComputedStyle(e).backgroundImage")=='none'
             assert cta.locator('h2').evaluate('e=>getComputedStyle(e).color')=='rgb(255, 255, 255)'
             assert cta.evaluate('e=>getComputedStyle(e).borderTopWidth')=='0px'
-            # Both resting and interactive colours must stay opaque and readable.
+            assert cta.evaluate('e=>getComputedStyle(e).cursor')!='pointer'
+            # The passive panel does not change when hovered; only the actual action does.
             cta.hover()
-            assert cta.evaluate("e=>getComputedStyle(e).backgroundColor")=='rgb(27, 58, 76)'
-            assert cta.locator('h2').evaluate('e=>getComputedStyle(e).color')=='rgb(255, 255, 255)'
-            cta.focus()
-            assert cta.evaluate('e=>getComputedStyle(e).outlineStyle')!='none'
-            page.mouse.move(0,0)
-            cta.evaluate('e=>e.blur()')
+            assert cta.evaluate("e=>getComputedStyle(e).backgroundColor")=='rgb(21, 43, 59)'
+            assert cta.evaluate("e=>getComputedStyle(e).boxShadow")=='none'
+            action.hover();action.focus()
+            assert action.evaluate('e=>getComputedStyle(e).outlineStyle')!='none'
+            assert action.evaluate('e=>e.getBoundingClientRect().height')>=48
+            assert_plain_text_surfaces()
+            page.mouse.move(0,0);action.evaluate('e=>e.blur()')
+            for heading in page.locator('.site-footer .menu-group-title').all():
+                assert heading.evaluate('e=>getComputedStyle(e).color')=='rgb(255, 255, 255)'
+            if route=='policies/competition-law-statement/':
+                assert page.locator('.page-heading .eyebrow').count()==0
+                assert page.locator('.page-heading').inner_text().splitlines()[0]=='Competition Law Statement'
+                assert page.locator('.related-content .catalog-meta,.related-content .card-kicker').count()==0
+                assert 'PDF takes precedence' in page.locator('.record-body').inner_text()
+                pdf=page.locator('.detail-aside a.is-primary')
+                assert 'Download official PDF' in pdf.inner_text()
+                assert 'competition.pdf' in pdf.get_attribute('href')
+                assert pdf.locator('.icon').count()==1
+                assert pdf.evaluate('e=>e.getBoundingClientRect().height')>=48
+                assert page.locator('.detail-aside .resource-panel').evaluate('e=>getComputedStyle(e).backgroundColor')=='rgba(0, 0, 0, 0)'
             if route=='':
                 hero=page.locator('.hero')
                 assert hero.evaluate("e=>{const s=getComputedStyle(e);return [s.borderTopWidth,s.borderRightWidth,s.borderBottomWidth,s.borderLeftWidth]}")==['0px','0px','1px','0px']
                 track=page.locator('.slider-track')
-                assert 'linear-gradient' in track.evaluate('e=>getComputedStyle(e).backgroundImage')
+                surround=page.locator('.slider')
+                assert 'linear-gradient' in surround.evaluate('e=>getComputedStyle(e).backgroundImage')
+                assert surround.evaluate('e=>parseFloat(getComputedStyle(e).paddingTop)')>=24
                 assert track.evaluate('e=>getComputedStyle(e).boxShadow')!='none'
             band=page.locator('.site-call-to-action')
             assert band.evaluate('e=>getComputedStyle(e).backgroundImage')=='none'
-            assert band.evaluate('e=>getComputedStyle(e).backgroundColor')=='rgba(18, 87, 112, 0.92)'
+            assert band.evaluate('e=>getComputedStyle(e).backgroundColor')=='rgba(18, 87, 112, 0.74)'
             if route.startswith('people/?'):
                 assert page.locator('.catalog-media').count()==111
                 first=page.locator('[data-title="A. Theodore Markettos"]')
@@ -101,6 +122,8 @@ with sync_playwright() as p:
             if route.startswith('alliance/leadership/members/'):
                 assert page.locator('[data-catalog-list] >li').count()==52
                 assert page.locator('[data-catalog-list] .member-badge').count()==21
+                assert page.locator('.member-badge').first.evaluate('e=>getComputedStyle(e).backgroundColor')=='rgba(0, 0, 0, 0)'
+                assert page.locator('.member-badge').first.evaluate('e=>getComputedStyle(e).boxShadow')=='none'
                 assert page.locator('[data-catalog-list] .catalog-media').count()==52
                 # Check real geometry with short/long titles and absent badges.
                 members=page.locator('[data-catalog-list] .catalog-card').evaluate_all("""nodes=>nodes.map(n=>{
@@ -147,7 +170,7 @@ with sync_playwright() as p:
                 assert page.locator('#nav-4').evaluate('e=>getComputedStyle(e).backgroundColor')=='rgb(18, 87, 112)'
                 group=page.locator('#nav-4 .menu-group-title:visible').first
                 assert group.evaluate('e=>getComputedStyle(e).fontSize')=='18px'
-                assert group.evaluate('e=>getComputedStyle(e).color')=='rgb(185, 226, 241)'
+                assert group.evaluate('e=>getComputedStyle(e).color')=='rgb(255, 255, 255)'
                 assert page.locator('#nav-4').evaluate('e=>getComputedStyle(e).boxShadow')!='none'
                 assert_plain_text_surfaces()
             violations=[]

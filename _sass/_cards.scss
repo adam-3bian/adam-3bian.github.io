@@ -1,18 +1,21 @@
-.card {
-  background: var(--colour-card);
+.card, .catalog-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--elevation-1);
   color: inherit;
   min-width: 0;
   padding: $card-padding-mobile;
   text-decoration: none;
   transition: background .18s, border-color .18s, box-shadow .18s;
 }
-a.card:is(:hover, :focus-visible) {
+a.card:hover, a.catalog-card:hover {
   background: var(--colour-card-hover);
   border-color: var(--accent);
   box-shadow: var(--shadow);
   text-decoration: none;
 }
-.card:focus-visible {
+.card:focus-visible, .catalog-card:focus-visible {
   outline-offset: $focus-width;
 }
 // Whole-card links use a border, surface and focus ring, rather than underlining titles.
@@ -73,8 +76,9 @@ a.card:is(:hover, :focus-visible) {
 }
 .content-panel {
   background: var(--surface-soft);
-  border: 1px solid var(--border);
+  border: 0;
   border-radius: var(--radius);
+  box-shadow: none;
   color: inherit;
   min-width: 0;
   padding: $card-padding-mobile;
@@ -89,7 +93,7 @@ a.card:is(:hover, :focus-visible) {
   line-height: $line-height-card;
 }
 .content-panel a { text-underline-offset: .2em; }
-.home-page [data-section-cards] .content-panel h2 { color: var(--accent); }
+.home-page [data-section-cards] .content-panel h2 { color: var(--ink); }
 .cards .card-action {
   margin-top: auto;
   padding-top: $space-6;

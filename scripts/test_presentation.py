@@ -96,8 +96,13 @@ with sync_playwright() as p:
             assert page.locator('main .card:not(a), a.content-panel').count() == 0, (device,name,'ambiguous card contract')
             assert page.locator('main .card, main a.catalog-card').evaluate_all("nodes=>nodes.every(n=>!!n.getAttribute('href') && !n.hasAttribute('onclick'))")
             if name == 'home':
+                geometry = page.locator('.action-card,.promotional-panel .button').evaluate_all("nodes=>nodes.map(n=>{const s=getComputedStyle(n);return [s.fontFamily,s.fontSize,s.fontWeight,s.lineHeight,s.borderRadius,s.minHeight,s.padding,s.columnGap]})")
+                assert len(geometry)==2 and geometry[0]==geometry[1], 'Primary action roles must share proportions'
                 ratios = {selector:text_contrast(page.locator(selector).first) for selector in
-                          ['.hero-opening','.hero-support','.hero-signoff','.action-card','.site-call-to-action .card-action']}
+                          ['.hero-opening','.hero-support','.hero-signoff','.action-card','.site-call-to-action .button']}
+                subscription=page.locator('.site-call-to-action .button')
+                subscription.hover();ratios['subscribe-hover']=text_contrast(subscription)
+                subscription.focus();ratios['subscribe-focus']=text_contrast(subscription)
                 page.locator('.action-card').hover()
                 ratios['join-hover'] = text_contrast(page.locator('.action-card'))
                 results.append({'device':device,'home_text_contrast':ratios})
@@ -110,7 +115,8 @@ with sync_playwright() as p:
                 selected.focus()
                 assert selected.evaluate('e=>getComputedStyle(e).outlineStyle') != 'none'
                 results.append({'device':device,'view_control_contrast':ratios})
-            surfaces = page.locator('main, .site-header, .site-footer, .hero, .content-panel, .catalog-card, .facts-panel, .detail-aside .resource-panel, .site-call-to-action .card')
+            # Test the actual plain text surfaces; the outer footer and home gaps are deliberately translucent.
+            surfaces = page.locator('body:not(.home-page) main, .home-page main > article, .site-header, .footer-surface, .hero, .content-panel, .catalog-card, .detail-aside, .promotional-panel')
             assert surfaces.evaluate_all("nodes=>nodes.every(n=>!/^rgba\\(.+, (?:0|0?\\.\\d+)\\)$/.test(getComputedStyle(n).backgroundColor))"), (device,name,'translucent surface')
             panels = page.locator('section.content-panel, .talk-card.content-panel')
             if panels.count():

@@ -6,8 +6,6 @@
 .talk-date { color: var(--muted); font-size: var(--type-label); font-variant-numeric: tabular-nums; margin-bottom: .35rem; }
 .talk-card .catalog-meta a { color: var(--accent); }
 .talk-actions { display: flex; flex-wrap: wrap; gap: .5rem; list-style: none; margin: .85rem 0 0; padding: 0; }
-.talk-actions .resource-link { background: var(--surface); gap: .65rem; min-height: 44px; padding: .6rem .75rem; }
-.talk-actions .resource-link:hover { background: var(--accent-soft); }
 .talk-card .catalog-action { margin-top: .85rem; position: static; transform: none; }
 @media (min-width: $desktop-breakpoint) {
   .talk-card:has(> .talk-actions), a.talk-card { align-items: center; display: grid; gap: 1.25rem; grid-template-columns: minmax(0, 1fr) auto; }

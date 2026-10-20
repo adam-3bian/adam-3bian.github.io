@@ -9,6 +9,9 @@ main {
   flex: 1;
   padding-block: 0 $section-gap-mobile;
 }
+// Home uses discrete opaque reading regions; the existing continuous artwork shows in the gaps.
+.home-page main { background: transparent; }
+.home-page main > article, .home-page main > section:not(.hero):not(.slider) { background: var(--colour-page); margin-inline: -$gutter-mobile; padding-inline: $gutter-mobile; width: auto; }
 main > article, main > section:not(.hero) {
   margin-top: $section-gap-mobile;
 }
@@ -18,6 +21,7 @@ main > section:not(.hero) > h2 {
 @media (min-width: $desktop-breakpoint) {
   .site-container, main { padding-inline: $gutter-desktop; }
   main { padding-bottom: $section-gap-desktop; }
+  .home-page main > article, .home-page main > section:not(.hero):not(.slider) { margin-inline: -$gutter-desktop; padding-inline: $gutter-desktop; }
   main > article, main > section:not(.hero) {
     margin-top: $section-gap-desktop;
   }

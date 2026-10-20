@@ -8,7 +8,7 @@
 {% assign card_image = card_item.thumbnail | default: card_record.thumbnail %}
 {% assign media_kinds = 'people,organisations,events,news,hardware,software' | split: ',' %}
 {% assign show_media = false %}{% if include.images != false %}{% if card_image.src or media_kinds contains kind %}{% assign show_media = true %}{% endif %}{% endif %}
-{% assign show_metadata = false %}{% if include.metadata != false %}{% if kind == 'events' or kind == 'news' or kind == 'papers' or kind == 'policies' %}{% assign show_metadata = true %}{% endif %}{% endif %}
+{% assign show_metadata = false %}{% if include.metadata == true %}{% if kind == 'events' or kind == 'news' or kind == 'papers' or kind == 'policies' %}{% assign show_metadata = true %}{% endif %}{% endif %}
 {% assign card_date = '' %}{% case kind %}{% when 'events' %}{% assign card_date = card_record.start_date %}{% when 'news' %}{% unless card_record.undated %}{% assign card_date = card_record.date %}{% endunless %}{% when 'papers', 'reports' %}{% assign card_date = card_record.year %}{% when 'policies' %}{% assign card_date = card_record.document_date %}{% else %}{% assign card_date = card_record.posted_date %}{% endcase %}
 {% capture card_metadata %}
 {% case kind %}
@@ -32,12 +32,12 @@
   {% if card_item.url %}<a class="catalog-card navigation-card catalog-card--{{ kind }}{% unless show_media %} without-image{% endunless %}" href="{% include url.html url=card_item.url %}">{% else %}<article class="catalog-card content-panel without-image">{% endif %}
     {% if show_media %}<span class="catalog-media media-{{ kind }}{% unless card_image.src %} media-placeholder{% endunless %}">{% include card-image.html image=card_image kind=kind %}</span>{% endif %}
     <div class="catalog-copy">
-      {% if kind == 'events' and show_metadata %}<p class="card-kicker">{% include event-status.html event=card_record %}{% if card_record.format %}<span> · {{ card_record.format | escape }}</span>{% endif %}</p>{% elsif card_item.resource_type and card_item.resource_type != 'Introduction' %}<p class="card-kicker">{{ card_item.resource_type | escape }}</p>{% endif %}
+      {% if kind == 'events' and show_metadata %}<p class="card-kicker">{% include event-status.html event=card_record %}{% if card_record.format %}<span> · {{ card_record.format | escape }}</span>{% endif %}</p>{% elsif include.metadata == true and card_item.resource_type and card_item.resource_type != 'Introduction' %}<p class="card-kicker">{{ card_item.resource_type | escape }}</p>{% endif %}
       {% if include.heading == 'h3' %}<h3>{{ card_title | escape }}</h3>{% else %}<h2>{{ card_title | escape }}</h2>{% endif %}
       {% if card_metadata != '' and show_metadata %}<div class="catalog-meta">{{ card_metadata }}</div>{% endif %}
       {% unless card_item.url %}{% if card_summary %}<div class="panel-description">{{ card_summary | markdownify }}</div>{% endif %}{% endunless %}
       {% if card_item.citation %}<p class="catalog-meta">{{ card_item.citation | escape }}</p>{% endif %}
-      {% if kind == 'organisations' %}<div class="catalog-footer">{% if card_record.membership_status == 'Founding member' %}<span class="member-badge">{{ card_record.membership_status | escape }}</span>{% endif %}{% endif %}
+      {% if kind == 'organisations' %}<div class="catalog-footer">{% if include.metadata == true and card_record.membership_status == 'Founding member' %}<span class="member-badge">{{ card_record.membership_status | escape }}</span>{% endif %}{% endif %}
       {% if card_item.url %}<span class="catalog-action">{% include icon.html %}</span>{% endif %}
       {% if kind == 'organisations' %}</div>{% endif %}
     </div>
