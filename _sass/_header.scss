@@ -7,7 +7,9 @@
 .site-header {
   background: var(--colour-header);
   border: 0;
+  position: relative;
   width: 100%;
+  z-index: $menu-layer;
 }
 .site-header-inner {
   align-items: center;
@@ -63,6 +65,14 @@
   padding: $space-3 $gutter-mobile;
   width: 100%;
 }
+.site-header nav > ul > .navigation-contact { margin-block: $space-3; }
+.site-header nav > ul > .navigation-contact > .button {
+  border-radius: var(--radius);
+  gap: $space-3;
+  min-height: var(--control-height);
+  padding: $space-3 $space-4;
+  width: fit-content;
+}
 @media (min-width: $navigation-breakpoint) {
   .js #hamburger {
     display: none;
@@ -95,4 +105,5 @@
     padding-inline: $space-3;
     width: auto;
   }
+  .site-header nav > ul > .navigation-contact { margin: 0 0 0 $space-3; }
 }

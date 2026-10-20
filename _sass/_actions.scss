@@ -1,5 +1,8 @@
 // One action contract for native buttons and navigation/download anchors.
 .button {
+  --button-background: #fff;
+  --button-hover: #e7eef1;
+  --button-text: #{$brand-blue};
   align-items: center;
   background: var(--button-background, var(--colour-button));
   border: 0;
@@ -30,29 +33,15 @@
   text-decoration: none;
 }
 .button .icon { height: 18px; width: 18px; }
-// Retain the existing join-action hook; it now uses the blue/white primary palette.
-.button-brand {
-  --button-background: var(--colour-brand-accent);
-  --button-hover: var(--colour-brand-accent-hover);
-  --button-text: var(--colour-brand-accent-text);
-}
-.button-secondary {
-  --button-background: var(--surface-soft);
-  --button-hover: var(--surface-hover);
-  --button-text: var(--accent);
-  box-shadow: none;
-}
-.button-secondary:not(:disabled):is(:hover, :focus-visible) { box-shadow: none; }
 .button-secondary[aria-current] {
-  --button-background: var(--colour-button);
-  --button-hover: var(--colour-button-hover);
-  --button-text: var(--colour-button-text);
+  box-shadow: inset 0 0 0 2px var(--button-text);
 }
 .button:disabled {
-  background: var(--surface-soft);
+  background: var(--button-background);
   box-shadow: none;
-  color: var(--muted);
+  color: var(--button-text);
   cursor: not-allowed;
+  opacity: 0.6;
 }
 .resource-link { justify-content: flex-start; text-align: left; width: fit-content; }
 .resource-link > span { min-width: 0; overflow-wrap: anywhere; }

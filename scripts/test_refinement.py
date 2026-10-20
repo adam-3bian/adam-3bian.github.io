@@ -87,14 +87,16 @@ with sync_playwright() as p:
                     if aside:
                         assert abs(aside['w']-layout['w']) < 1 and aside['bottom'] <= body['y'], (width,name,detail)
             first_y = None
+            # Audit intro density independently of the requested header/main gap.
+            region_gap = page.evaluate("()=>document.querySelector('main').getBoundingClientRect().top-document.querySelector('.site-header').getBoundingClientRect().bottom")
             if name == 'members':
                 first_y = page.locator('[data-catalog-list] > li').first.bounding_box()['y']
-                if width == 1440: assert first_y < 600, first_y
-                if width == 390: assert first_y < 737, first_y
+                if width == 1440: assert first_y-region_gap < 600, first_y
+                if width == 390: assert first_y-region_gap < 737, first_y
                 assert page.locator('[data-catalog-list] > li').count() == 52
             if name == 'glossary':
                 first_y = page.locator('[data-glossary-entry] dd').first.bounding_box()['y']
-                if width == 390: assert first_y < 665, first_y
+                if width == 390: assert first_y-region_gap < 665, first_y
                 assert page.locator('[data-glossary-entry]').count() == 46
             if name in ['company','person']:
                 assert page.locator('.page-summary').is_visible(), 'Original introduction must remain on details'

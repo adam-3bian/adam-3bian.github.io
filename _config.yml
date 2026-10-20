@@ -413,6 +413,9 @@ navigation:
         url: /alliance/leadership/members/
       - title: Contact the Alliance
         url: /alliance/membership/contact/
+  - title: Contact Us
+    type: button
+    url: /alliance/membership/contact/
   footer:
   - title: Updates
     links:

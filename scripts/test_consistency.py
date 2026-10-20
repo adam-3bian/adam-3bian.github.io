@@ -75,6 +75,15 @@ with sync_playwright() as p:
             assert cta.evaluate("e=>e.tagName")=='DIV'
             assert action.locator('span').inner_text()=='Get the newsletter'
             assert action.get_attribute('href')==prefix+'/news-and-events/news-and-analysis/subscribe-newsletter/'
+            # Every action shares the newsletter's white, rounded button treatment.
+            for button in page.locator('.button:visible:not(:disabled)').all():
+                style=button.evaluate("e=>{const s=getComputedStyle(e);return {background:s.backgroundColor,colour:s.color,radius:s.borderRadius,height:e.getBoundingClientRect().height,padding:s.padding,gap:s.columnGap}}")
+                assert style['background']=='rgb(255, 255, 255)' and style['colour']=='rgb(18, 87, 112)',(width,route,button.inner_text(),style)
+                assert style['radius']=='10px' and style['height']>=48 and style['padding']=='12px 16px' and style['gap']=='12px',(width,route,button.inner_text(),style)
+            gaps=page.evaluate("()=>{const h=document.querySelector('.site-header').getBoundingClientRect(),m=document.querySelector('main').getBoundingClientRect(),n=document.querySelector('.site-call-to-action').getBoundingClientRect(),f=document.querySelector('.site-footer').getBoundingClientRect();return [m.top-h.bottom,f.top-n.bottom]}")
+            assert gaps==[12,12],(width,route,'page region gaps',gaps)
+            if route=='':
+                assert page.locator('[data-section-cards] > .content-panel').evaluate_all("ns=>ns.length>0&&ns.every(n=>parseFloat(getComputedStyle(n).paddingLeft)>=24)"),'Homepage panels retain interior padding'
             assert cta.evaluate("e=>getComputedStyle(e).backgroundColor")=='rgb(21, 43, 59)'
             assert cta.evaluate("e=>getComputedStyle(e).backgroundImage")=='none'
             assert cta.locator('h2').evaluate('e=>getComputedStyle(e).color')=='rgb(255, 255, 255)'
@@ -91,6 +100,8 @@ with sync_playwright() as p:
             page.mouse.move(0,0);action.evaluate('e=>e.blur()')
             for heading in page.locator('.site-footer .menu-group-title').all():
                 assert heading.evaluate('e=>getComputedStyle(e).color')=='rgb(255, 255, 255)'
+                geometry=heading.evaluate("e=>{const a=e.parentElement.querySelector('a'),r=a.getBoundingClientRect();return {title:e.getBoundingClientRect().left,text:r.left+parseFloat(getComputedStyle(a).paddingLeft),linkWidth:r.width,columnWidth:a.closest('li').getBoundingClientRect().width}}")
+                assert abs(geometry['title']-geometry['text'])<1 and geometry['linkWidth']<geometry['columnWidth'],(width,route,'Footer alignment and hover width',geometry)
             if route=='policies/competition-law-statement/':
                 assert page.locator('.page-heading .eyebrow').count()==0
                 assert page.locator('.page-heading').inner_text().splitlines()[0]=='Competition Law Statement'
@@ -173,12 +184,12 @@ with sync_playwright() as p:
                 trigger.focus();page.keyboard.press('Enter')
                 assert trigger.get_attribute('aria-expanded')=='true'
                 assert trigger.locator('.menu-indicator').inner_text()=='▲'
-                if width<1000:page.locator('#nav-4 .menu-group-toggle').first.click()
+                if page.locator('#hamburger').is_visible():page.locator('#nav-4 .menu-group-toggle').first.click()
                 assert page.locator('#nav-4').evaluate('e=>getComputedStyle(e).backgroundColor')=='rgb(255, 255, 255)'
                 group=page.locator('#nav-4 .menu-group-title:visible').first
                 assert group.evaluate('e=>getComputedStyle(e).fontSize')=='18px'
                 assert group.evaluate('e=>getComputedStyle(e).color')=='rgb(18, 87, 112)'
-                if width>=1000:assert page.locator('#nav-4').evaluate('e=>getComputedStyle(e).boxShadow')!='none'
+                if not page.locator('#hamburger').is_visible():assert page.locator('#nav-4').evaluate('e=>getComputedStyle(e).boxShadow')!='none'
                 assert_plain_text_surfaces()
             violations=[]
             if width in [390,1440]:

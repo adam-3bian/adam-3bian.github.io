@@ -52,7 +52,7 @@
         {% if menu_mode == 'dropdown-root' and menu_position >= menu_group_start %}{% assign menu_is_group = true %}{% endif %}
 
         {% if menu_mode == 'categories' %}
-          <li{% if menu_item.type == 'megamenu' %} class="has-submenu has-megamenu"{% elsif menu_item.type == 'dropdown' %} class="has-submenu"{% endif %}>
+          <li{% if menu_item.type == 'megamenu' %} class="has-submenu has-megamenu"{% elsif menu_item.type == 'dropdown' %} class="has-submenu"{% elsif menu_item.type == 'button' %} class="navigation-contact"{% endif %}>
           {% if menu_item.type == 'megamenu' or menu_item.type == 'dropdown' %}
             <button class="submenu-toggle" type="button" aria-expanded="false" aria-controls="{{ menu_id }}">{{ menu_item.title | escape }}<span class="menu-indicator" aria-hidden="true">▼</span></button>
             {% if menu_item.type == 'megamenu' %}
@@ -67,6 +67,8 @@
               {% assign child_mode = 'dropdown-root' %}
               {% assign child_group_start = direct_links.size %}
             {% endif %}
+          {% elsif menu_item.type == 'button' %}
+            {% include action.html label=menu_item.title url=menu_item.url target=menu_item.target rel=menu_item.rel role='primary' %}
           {% else %}
             {% assign link_target = menu_item.target | default: '' | strip %}
             {% assign link_rel = menu_item.rel | default: '' | strip %}

@@ -58,6 +58,8 @@ def check_keyboard_entry(page, width):
             if len(visited) == roots.count():
                 break
     assert len(visited) == roots.count(), (width, "All root menus reachable with Tab", trace)
+    page.keyboard.press("Tab")
+    assert page.locator(".navigation-contact .button").evaluate("e=>e===document.activeElement"), (width, "Contact Us follows the root menus")
     if page.locator("#hamburger").is_visible():
         page.keyboard.press("Escape")
         assert page.locator("#hamburger").get_attribute("aria-expanded") == "false"
@@ -82,7 +84,7 @@ def check_disclosures(page, width):
         assert trigger.locator(".menu-indicator").inner_text() == "▲"
         assert trigger.locator(".menu-indicator").get_attribute("aria-hidden") == "true"
         assert not page.evaluate("document.documentElement.scrollWidth > innerWidth + 1")
-        if width < 1000:
+        if hamburger.is_visible():
             group = menu.locator(".menu-group-toggle").first
             if group.count():
                 group.click()
@@ -157,13 +159,13 @@ with sync_playwright() as playwright:
                 results.append({"engine": engine, "width": width, "route": route, "violations": violations})
             context.close()
         # Exercise a docked, scrollable desktop panel in a short viewport.
-        page = browser.new_page(viewport={"width": 1024, "height": 300})
+        page = browser.new_page(viewport={"width": 1440, "height": 300})
         page.goto(URL)
         trigger = page.locator("#primary-navigation > ul > li > .submenu-toggle").nth(3)
         trigger.click()
         menu = page.locator("#" + trigger.get_attribute("aria-controls"))
         geometry = menu.evaluate("e=>{const r=e.getBoundingClientRect();return {top:r.top,bottom:r.bottom,left:r.left,right:r.right}}")
-        assert geometry["top"] >= 0 and geometry["bottom"] <= 300 and geometry["left"] >= 0 and geometry["right"] <= 1024, (engine, geometry)
+        assert geometry["top"] >= 0 and geometry["bottom"] <= 300 and geometry["left"] >= 0 and geometry["right"] <= 1440, (engine, geometry)
         menu.locator("a").last.focus()
         assert menu.locator("a").last.evaluate("e=>{const r=e.getBoundingClientRect();return r.top>=0&&r.bottom<=innerHeight}")
         page.close()
@@ -198,7 +200,7 @@ with sync_playwright() as playwright:
         page = context.new_page()
         page.goto(URL + "people/")
         assert page.locator("[data-catalog-list] > li:visible").count() == 111
-        assert page.locator("#primary-navigation a:visible").count() == 84
+        assert page.locator("#primary-navigation a:visible").count() == page.locator("#primary-navigation a").count() == 85
         page.goto(URL + "discover/resources/glossary/")
         assert page.locator("[data-glossary-entry]:visible").count() == 46
         context.close()
@@ -207,7 +209,7 @@ with sync_playwright() as playwright:
         page.route("**/assets/js/navigation.js", lambda route: route.abort())
         page.goto(URL)
         page.wait_for_function("!document.documentElement.classList.contains('navigation-pending')")
-        assert page.locator("#primary-navigation a:visible").count() == 84
+        assert page.locator("#primary-navigation a:visible").count() == page.locator("#primary-navigation a").count() == 85
         page.close()
         browser.close()
 
