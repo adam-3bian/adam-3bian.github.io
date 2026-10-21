@@ -9,13 +9,13 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 working_group:
+  leads:
+  - name: Oliver Gray
   type: technical
   focus_areas:
   - FreeRTOS platform support
   - Compartments and interfaces
   - Embedded testing and portability
-forms:
-- contact
 related:
 - type: working_group
   slug: cheri-zephyr

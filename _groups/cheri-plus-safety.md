@@ -9,13 +9,14 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 working_group:
+  leads:
+  - name: Maricel Ventura
+  - name: Thierno Sene
   type: technical
   focus_areas:
   - Safety requirements and claims
   - Implementation evidence
   - Integration and assurance
-forms:
-- contact
 related:
 - type: working_group
   slug: cheri-for-sel4

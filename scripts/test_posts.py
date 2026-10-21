@@ -16,7 +16,7 @@ with sync_playwright() as p:
   page.set_viewport_size({'width':width,'height':1000})
   for index,(data,body) in enumerate(posts):
    assert page.goto(URL+data['permalink'].lstrip('/')).status==200
-   page.evaluate('document.fonts.ready');assert page.locator('h1').count()==1;assert page.locator('.detail-aside,.record-portrait').count()==0
+   page.evaluate('document.fonts.ready');assert page.locator('h1').count()==1;assert page.locator('.detail-aside,.record-portrait').count()==0;assert page.locator('.page-heading .page-summary').count()==0
    assert page.locator('.article-category').inner_text().strip()
    reading=page.locator('.reading-time').inner_text();assert re.fullmatch(r'[1-9]\d* min read',reading);readings[data['slug']]=int(reading.split()[0])
    assert '*' not in page.locator('.article-byline').inner_text()

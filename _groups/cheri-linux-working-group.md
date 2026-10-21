@@ -9,13 +9,13 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 working_group:
+  leads:
+  - person: allison-randal
   type: technical
   focus_areas:
   - Linux roadmap and priorities
   - Cross-architecture interfaces
   - Upstream contribution
-forms:
-- contact
 related:
 - type: working_group
   slug: cheri-qemu

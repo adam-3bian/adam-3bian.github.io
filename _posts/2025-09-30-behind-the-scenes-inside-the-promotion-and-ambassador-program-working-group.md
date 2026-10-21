@@ -28,6 +28,8 @@ post:
 
 ## Overview
 
+If you’ve been watching the CHERI Alliance gather momentum, you’ve probably noticed a growing wave of community activity—talks, demos, explainers, and friendly faces spreading the word about capability-based security.
+
 A lot of that energy is coordinated by the [Promotion &amp; Ambassador Program Working Group](/groups/promotion-and-ambassador-program/) (WG). Here’s a clear look at what the WG does, how it empowers ambassadors, and how you can plug in.
 
 ## What we do

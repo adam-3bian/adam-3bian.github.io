@@ -24,6 +24,8 @@ post:
 
 ## Join the CHERI Alliance - Collaborate, Communicate, Be Seen
 
+CHERI is reshaping how we think about secure technology. At the heart of this effort is the CHERI Alliance, a growing community committed to secure by design innovation. By joining us, you gain not just insight and influence but support in making your work more visible, more accessible and more impactful. The Alliance is organised into [Working Groups](/alliance/leadership/working-groups/) which are open to all members who want to participate.
+
 ### What the Marketing Working Group Does
 
 We help tell the story of CHERI: what it is, why it matters and how it’s already being used. We make the complex ideas behind CHERI easier to understand both inside and outside the tech world. That includes creating public-facing materials, supporting announcements, sharing real-world examples and helping people talk more confidently about secure by design.

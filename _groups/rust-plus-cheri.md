@@ -9,13 +9,14 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 working_group:
+  leads:
+  - person: edoardo-marangoni
+  - name: Sarah Harris
   type: technical
   focus_areas:
   - Rust targets and toolchains
   - Native interfaces and unsafe code
   - Platform and runtime support
-forms:
-- contact
 related:
 - type: working_group
   slug: cheri-plus-safety

@@ -1,0 +1,58 @@
+{%- comment -%}
+  Keep Markdown ordinary: apply off-site link behaviour after native Kramdown.
+  Read quoted attributes so URL-like title text and escaped code stay literal.
+  The site's own absolute links, fragments, email and telephone links stay local.
+{%- endcomment -%}
+{%- assign local_host = site.url | split: '://' | last | split: '/' | first | downcase -%}
+{%- assign link_parts = include.content | split: '<a ' -%}
+{%- for link_part in link_parts -%}
+  {%- if forloop.first -%}{{- link_part -}}
+  {%- else -%}
+    {%- assign link_opening = link_part | split: '>' | first -%}
+    {%- assign adapted_link = link_opening -%}
+    {%- if link_opening contains '://' or link_opening contains '//' -%}
+    {%- assign link_href = '' -%}{%- assign link_rel = '' -%}
+    {%- assign link_rel_marker = '' -%}{%- assign link_target_marker = '' -%}
+    {%- assign link_has_title = false -%}
+    {%- assign link_quote = '' -%}{%- assign link_outside = '' -%}
+    {%- assign link_value = '' -%}{%- assign link_attribute = '' -%}
+    {%- assign link_characters = link_opening | split: '' -%}
+    {%- for character in link_characters -%}
+      {%- if link_quote != '' -%}
+        {%- if character == link_quote -%}
+          {%- capture link_marker -%}{{ link_attribute }}{{ link_quote }}{{ link_value }}{{ link_quote }}{%- endcapture -%}
+          {%- case link_attribute -%}
+            {%- when 'href=' -%}{%- assign link_href = link_value -%}
+            {%- when 'rel=' -%}{%- assign link_rel = link_value -%}{%- assign link_rel_marker = link_marker -%}
+            {%- when 'target=' -%}{%- assign link_target_marker = link_marker -%}
+            {%- when 'title=' -%}{%- assign link_has_title = true -%}
+          {%- endcase -%}
+          {%- assign link_quote = '' -%}{%- assign link_outside = '' -%}
+        {%- else -%}{%- assign link_value = link_value | append: character -%}{%- endif -%}
+      {%- else -%}
+        {%- if character == '"' or character == "'" -%}
+          {%- assign link_quote = character -%}
+          {%- assign link_attribute = link_outside | normalize_whitespace | split: ' ' | last -%}
+          {%- assign link_value = '' -%}
+        {%- else -%}{%- assign link_outside = link_outside | append: character -%}{%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- assign link_scheme = link_href | slice: 0, 8 | downcase -%}
+    {%- assign link_http = link_href | slice: 0, 7 | downcase -%}
+    {%- assign link_pair = link_href | slice: 0, 2 -%}
+    {%- assign web_link = false -%}
+    {%- if link_scheme == 'https://' or link_http == 'http://' or link_pair == '//' -%}{%- assign web_link = true -%}{%- endif -%}
+    {%- assign link_host = link_href | downcase | remove_first: 'https://' | remove_first: 'http://' | remove_first: '//' | split: '/' | first | split: '?' | first | split: '#' | first -%}
+    {%- assign adapted_link = link_opening -%}
+    {%- if web_link and link_host != local_host -%}
+      {%- assign link_rel_tokens = link_rel | split: ' ' -%}
+      {%- unless link_rel_tokens contains 'noopener' -%}{%- assign link_rel = link_rel | append: ' noopener' -%}{%- endunless -%}
+      {%- unless link_rel_tokens contains 'noreferrer' -%}{%- assign link_rel = link_rel | append: ' noreferrer' -%}{%- endunless -%}
+      {%- if link_rel_marker != '' -%}{%- assign adapted_link = adapted_link | remove_first: link_rel_marker -%}{%- endif -%}
+      {%- if link_target_marker != '' -%}{%- assign adapted_link = adapted_link | remove_first: link_target_marker -%}{%- endif -%}
+      {%- capture adapted_link -%}{{ adapted_link | strip }} rel="{{ link_rel | strip }}" target="_blank"{% unless link_has_title %} title="Opens in a new tab"{% endunless %}{%- endcapture -%}
+    {%- endif -%}
+    {%- endif -%}
+    <a {{- link_part | replace_first: link_opening, adapted_link | prepend: ' ' -}}
+  {%- endif -%}
+{%- endfor -%}

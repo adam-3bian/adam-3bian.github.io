@@ -25,6 +25,8 @@ post:
 
 ## Overview
 
+Exciting news for the CHERI community! The winners of the latest Digital Security by Design (DSbD) innovation competitions have been announced, and once again the CHERI Alliance is right at the heart of the action.
+
 Across the two competitions – Advancing CHERI RISC-V Devices and Advancing CHERI Tools and Software – eight projects have been selected for funding. Six of the eight winners are already members of the CHERI Alliance, and with one of the remaining winners using [Codasip](/organisations/codasip/) IP, this shows the Alliance’s central role in shaping the future of secure computing! The winners are:
 
 - [lowRISC CIC](/organisations/lowrisc/)

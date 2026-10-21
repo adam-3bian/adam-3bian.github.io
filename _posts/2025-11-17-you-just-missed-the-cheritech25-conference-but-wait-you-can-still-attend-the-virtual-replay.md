@@ -26,6 +26,8 @@ post:
 
 ## Overview
 
+The [CHERITech’25 Conference](/events/cheritech25/) was held on the 14th of November 2025 at the Sister – Renold Building, Manchester, bringing together leading figures from industry, academia and government to discuss the latest developments in Capability Hardware Enhanced RISC Instructions technology (CHERI) and Digital Security by Design (DSbD).
+
 ![CHERITech’25 Conference](/assets/images/events/cheritech25.webp){: .image-right }
 
 This year’s event marked a significant step forward under the leadership of the CHERI Alliance, with sessions highlighting solid progress across hardware, software and emerging standards. Keynotes from Professor John Goodacre ([University of Manchester](/organisations/the-university-of-manchester/) and UKRI), Paul Caseley OBE (DSTL) and Mike Eftimakis (CHERI Alliance) opened a programme that focused on real developments in capability-based systems.

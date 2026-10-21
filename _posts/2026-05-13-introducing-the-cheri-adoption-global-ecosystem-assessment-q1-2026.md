@@ -29,6 +29,8 @@ post:
 
 ## Overview
 
+The CHERI Alliance is pleased to publish the **CHERI Adoption Global Ecosystem Assessment Q1 2026**, a new report examining the current state of CHERI adoption across industry, research, government, and open communities.
+
 CHERI is gaining increasing attention as organisations look for practical ways to address memory safety, strengthen cyber resilience, and build security into the foundations of computing. As interest grows, so does the need for a clearer picture of where the ecosystem stands today and what may be needed to support wider adoption.
 
 This assessment brings together evidence from public sources, stakeholder engagement, ecosystem activity, and technical developments to provide a structured view of the global CHERI landscape.

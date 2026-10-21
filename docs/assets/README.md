@@ -145,3 +145,10 @@ without authored IDs. People cards use the main affiliation described in
 in organisation inverse views. The reference includes these card labels, the
 corrected CHERI Alliance organisation name, generated programme links and
 compatibility anchors.
+
+The current reference also includes the unlisted publisher guide, six Ibex
+certification autolinks, working-group lead facts and inverse profile links.
+News summaries are omitted from heroes; 47 original introductions are retained
+in the articles' Markdown bodies. Contact source relocation keeps its URL and
+rendered content unchanged. External-link attributes and white hero-image
+backings change presentation without changing existing destinations or artwork.

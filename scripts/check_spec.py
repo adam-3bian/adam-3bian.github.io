@@ -15,8 +15,8 @@ SCHEMA={
 'post':{'category','authors','tags'},'event':{'format','series','organisers','partners','timezone','time_bounds','location','registration','speakers','schedule'},
 'person':{'roles','organisations','governance','location','links'},'organisation':{'type','sector','website','membership'},'publication':{'year','venue','type','citation','doi','authors'},
 'product':{'type','architecture','manufacturer','maturity','availability','repositories'},'repository':{'type','architectures','maturity','maintainers'},
-'working_group':{'type','status','coordinator','focus_areas'},'guide':{'topic','level','estimated_minutes','series','sequence','primary_product','prerequisites'},'policy':{'type','version','dates','owner','status'}}
-TOP={'layout','title','summary','permalink','slug','navigation','image','resources','forms','related','date','end_date','sitemap','canonical_url','listing','landing'}|set(SCHEMA)
+'working_group':{'type','status','coordinator','focus_areas','leads'},'guide':{'topic','level','estimated_minutes','series','sequence','primary_product','prerequisites'},'policy':{'type','version','dates','owner','status'}}
+TOP={'layout','title','summary','permalink','slug','navigation','image','resources','forms','related','date','end_date','sitemap','canonical_url','listing','landing','unlisted'}|set(SCHEMA)
 class UniqueLoader(yaml.SafeLoader): pass
 def mapping(loader,node,deep=False):
  result={}
@@ -168,7 +168,10 @@ def validate_source(errors,warnings):
    for part in ['navigation','image','listing','landing']:
     if part in d:unknown(d[part],{'navigation':{'header','footer'},'image':{'src','alt','fit','width','height','position'},'listing':{'collection','filter','sort'},'landing':{'content_group','card_style','navigation','heading','sections','slider'}}[part],label+'.'+part,errors)
    h=d.get('navigation',{}).get('header',{});unknown(h,{'category','subcategory'},label+'.header',errors)
-   if h.get('category') not in nav or (h.get('subcategory') not in nav.get(h.get('category'),set()) and d.get('landing',{}).get('navigation')!='category'):errors.append(label+': invalid navigation hierarchy')
+   if d.get('unlisted') is True and kind=='pages':
+    if d.get('navigation'):errors.append(label+': unlisted pages must omit menu metadata')
+   elif h.get('category') not in nav or (h.get('subcategory') not in nav.get(h.get('category'),set()) and d.get('landing',{}).get('navigation')!='category'):errors.append(label+': invalid navigation hierarchy')
+   if 'unlisted' in d and not isinstance(d['unlisted'],bool):errors.append(label+': unlisted must be boolean')
    f=d.get('navigation',{}).get('footer')
    if f is not None:
     unknown(f,{'category'},label+'.footer',errors)
@@ -176,7 +179,7 @@ def validate_source(errors,warnings):
    if kind=='pages':
     if d.get('layout')!=('list' if d.get('listing') else 'page'):errors.append(label+': incorrect ordinary-page/list layout')
     parts=p.relative_to(ROOT/'pages').parts
-    if len(parts) not in [3,4] and label not in ['pages/index.md','pages/discover/index.md','pages/adopt/index.md','pages/build/index.md','pages/alliance/index.md','pages/news-and-events/index.md']:errors.append(label+': invalid ordinary-page source location')
+    if len(parts) not in [1,3,4] and label not in ['pages/discover/index.md','pages/adopt/index.md','pages/build/index.md','pages/alliance/index.md','pages/news-and-events/index.md']:errors.append(label+': invalid ordinary-page source location')
    else:
     group=FAMILIES[kind][2]
     if set(SCHEMA)&set(d)!={group} or d.get('layout')!=('article' if kind=='posts' else 'detail'):errors.append(label+': incorrect semantic group/layout')
@@ -194,6 +197,7 @@ def validate_source(errors,warnings):
     if not d['image'].get('src') or not d['image'].get('alt'):errors.append(label+': image lacks meaningful source/alt')
     if d['image'].get('fit','cover') not in ['cover','contain']:errors.append(label+': invalid image fit')
    if len(d.get('forms',[]))!=len(set(d.get('forms',[]))) or any(key not in forms for key in d.get('forms',[])):errors.append(label+': unresolved/duplicate form keys')
+   if kind=='groups' and 'contact' in d.get('forms',[]):errors.append(label+': working groups show their leads, not the contact form')
    for res in d.get('resources',[]):
     unknown(res,{'type','label','url','session_id','presentation_id'},label+'.resource',errors)
     if res.get('type') not in ['website','documentation','repository','download','pdf','slides','video','publication','recording','external'] or not res.get('label') or not valid_url(res.get('url')):errors.append(label+': invalid resource '+str(res))
@@ -229,6 +233,13 @@ def validate_source(errors,warnings):
      if not pos.get('title') or pos.get('status') not in ['current','past']:errors.append(label+': invalid position')
      if any(not iso(pos[key]) for key in ['start_date','end_date'] if key in pos):errors.append(label+': invalid position date')
    for a in d.get('event',{}).get('speakers',[]):ref('people',a.get('person'),label)
+   lead_keys=[]
+   for a in d.get('working_group',{}).get('leads',[]):
+    unknown(a,{'person','name'},label+'.lead',errors)
+    if bool(a.get('person'))==bool(a.get('name')):errors.append(label+': lead requires exactly one person or name')
+    if a.get('person'):ref('people',a['person'],label)
+    lead_keys.append((a.get('person'),a.get('name')))
+   if len(lead_keys)!=len(set(lead_keys)):errors.append(label+': duplicate working-group lead')
    for field in ['organisers','partners']:
     for a in d.get('event',{}).get(field,[]):
      unknown(a,{'organisation','role'},label+'.'+field,errors);ref('organisations',a.get('organisation'),label)

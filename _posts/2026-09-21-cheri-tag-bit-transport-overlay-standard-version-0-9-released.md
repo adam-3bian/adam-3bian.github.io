@@ -26,6 +26,8 @@ post:
 
 ## Overview
 
+Over the last few months I’ve had the pleasure of working with members of the CHERI Alliance’s [CHERI-in-SoC Working Group](/groups/cheri-in-soc/) to put together the first version of the [CHERI Tag Bit Transport Overlay Standard](/assets/pdf/posts/2026-09-21-cheri-tag-bit-transport-overlay-standard-version-0-9-released/cheri-tag-bit-transport-overlay-standard-v0-9.pdf).
+
 One of the challenges of building a CHERI-enabled SoC is that capabilities don’t just consist of the data you can see in memory. They also have an associated tag bit, which needs to make its way safely through the system alongside that data.
 
 If we want CHERI systems to be built successfully from components supplied by different companies, we need to agree on how that works. This standard is intended to do exactly that: define a common way of transporting CHERI tag bits through an SoC, including mappings for widely used protocols such as AXI and CHI.

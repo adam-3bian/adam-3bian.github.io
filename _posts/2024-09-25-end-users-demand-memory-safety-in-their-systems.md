@@ -23,6 +23,8 @@ post:
 
 ## Overview
 
+The [Digital Security by Design](https://www.dsbd.tech) all-hands conference was held last week in Leeds, and it was the opportunity to measure the progress of CHERI and see how much is already available.
+
 The new CHERI Alliance initiative had its own booth, and a number of its members ([Codasip](/organisations/codasip/), [lowRISC](/organisations/lowrisc/), [SCI Semiconductor](/organisations/sci-semiconductor/) and [University of Cambridge](/organisations/university-of-cambridge/)) were exhibiting at the show and gathered a lot of visitors eager to learn about the latest CHERI developments and products.
 
 One of the most interesting sections of the conference were the cases studies, where the perspective of end-users was presented, explaining why cyber threats absolutely need to be mitigated for an increasing number of use cases, and highlighting the critical need for memory safety to be built into these systems.

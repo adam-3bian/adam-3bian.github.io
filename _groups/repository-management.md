@@ -9,13 +9,13 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 working_group:
+  leads:
+  - person: marno-van-der-maas
   type: programme
   focus_areas:
   - Repository structure and ownership
   - Contribution and maintenance
   - Quality and long-term stewardship
-forms:
-- contact
 resources:
 - type: website
   label: CHERI Alliance on GitHub

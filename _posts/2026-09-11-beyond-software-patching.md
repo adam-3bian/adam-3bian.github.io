@@ -28,6 +28,8 @@ post:
 
 ## How CHERI Can Limit the Blast Radius in Long-Life CNI Systems
 
+Critical National Infrastructure (CNI) products may remain in service for 10, 15 or even 20 years. During that time, software changes, attack techniques evolve and regulation is now becoming more demanding.
+
 No product team or company can guarantee that every defect will be found before deployment. The more practical question is:
 
 **If your product is compromised in the field, can its underlying platform limit the compromise and prevent a much wider and more costly impact across the infrastructure?**

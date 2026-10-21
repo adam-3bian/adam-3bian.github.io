@@ -26,6 +26,8 @@ post:
 
 ## Overview
 
+In this blog covering the fourth official development release of CHERI-Zephyr, we’ll look at what’s already CHERI-supported in the kernel and highlight some of the key features added over the course of development.
+
 Whether you’re interested in porting an existing Zephyr application, exploring new projects, evaluating [CHERI-enabled](/adopt/assurance-and-adoption/about-cheri-enabled/) software, or simply seeing how CHERI changes the behaviour of real systems, there’s plenty already included to begin experimenting.
 
 ## CHERI platforms

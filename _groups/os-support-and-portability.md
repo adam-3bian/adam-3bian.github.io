@@ -9,13 +9,13 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 working_group:
+  leads:
+  - person: brooks-davis
   type: technical
   focus_areas:
   - Cross-OS interfaces
   - Portability and terminology
   - Documentation and integration
-forms:
-- contact
 related:
 - type: page
   slug: alliance-leadership-working-groups

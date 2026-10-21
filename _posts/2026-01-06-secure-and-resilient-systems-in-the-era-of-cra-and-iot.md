@@ -24,6 +24,8 @@ post:
 
 ## Overview
 
+On 21 January 2026, technology leaders, engineers, security practitioners and compliance specialists will gather at IWM Duxford for [Secure Horizons 2026](https://www.eventbrite.ie/e/secure-horizons-2026-tickets-1976167642616), a one day, in person event hosted by EPS Global.
+
 Set against the powerful backdrop of a former Second World War airfield, Secure Horizons 2026 explores a challenge that feels increasingly urgent across every sector: how do we build digital systems that are not only compliant, but genuinely secure and resilient, in a rapidly evolving global regulatory landscape?
 
 ## Navigating IoT Compliance Beyond the Checkbox

@@ -9,13 +9,13 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 working_group:
+  leads:
+  - person: david-chisnall
   type: technical
   focus_areas:
   - Language and ABI behaviour
   - Compiler and toolchain experience
   - Portability and standards
-forms:
-- contact
 related:
 - type: working_group
   slug: cheri-in-soc

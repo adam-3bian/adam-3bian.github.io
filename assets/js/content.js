@@ -91,8 +91,8 @@
     // An explicit target always wins, including _self and named browsing contexts.
     if (link.hasAttribute('target') && link.target !== '_blank') return;
     if (url.origin === window.location.origin && link.target !== '_blank') return;
-    link.target = '_blank';
     link.relList.add('noopener', 'noreferrer');
+    link.target = '_blank';
     if (!link.title) link.title = 'Opens in a new tab';
   });
 })();

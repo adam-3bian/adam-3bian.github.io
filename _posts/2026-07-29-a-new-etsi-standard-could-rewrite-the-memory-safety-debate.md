@@ -29,6 +29,8 @@ post:
 
 ## ETSI TS 104 198 establishes a common language for memory safety
 
+Memory-safety vulnerabilities remain one of the largest sources of critical software vulnerabilities. Despite years of investment in safer languages, hardware protections, and secure development practices, the industry has lacked a common way to define and compare memory-safety technologies.
+
 That may be about to change.
 
 [**ETSI**](https://www.etsi.org/) (the European Telecommunications Standards Institute) develops globally recognised standards across telecommunications, cybersecurity, and digital technologies. ETSI’s Technical Committee on Cybersecurity (TC CYBER) has released a public draft of [**ETSI TS 104 198** – **Memory-safety requirements**](https://docbox.etsi.org/CYBER/CYBER/Open/ETSI_TS_104_198_DRAFT.zip), a new specification that introduces a common vocabulary, a set of memory-safety properties, and a structured assurance model for evaluating memory safety across languages, hardware, and software systems.

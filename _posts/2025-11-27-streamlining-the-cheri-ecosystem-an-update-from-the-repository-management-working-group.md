@@ -28,6 +28,8 @@ post:
 
 ## Establishing the Foundation: Repository Creation and Management
 
+The CHERI Alliance is dedicated to advancing the state-of-the-art in capability-based security. As our collaborative efforts and technical output grow, so does the need for a standardised, clear, and efficient way to manage that output. This is why the [Repository Management Working Group](/groups/repository-management/) was established: to systematically oversee all the technical collateral produced by the alliance.
+
 Our primary and most immediate focus has been on repository management. A vast and diverse collection of code, documentation, and tooling is only useful if it is well-organised and easy to navigate. To ensure consistency, maintainability, and responsible stewardship across all CHERI Alliance projects, the working group has developed a comprehensive set of guidelines.
 
 We have outlined how to responsibly manage these repositories, including rules for naming conventions, licensing, and contribution models. This standardisation is critical for lowering the barrier to entry for new contributors and ensuring the longevity of our foundational work.

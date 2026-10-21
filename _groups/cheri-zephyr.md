@@ -9,13 +9,13 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 working_group:
+  leads:
+  - person: jennifer-jackson
   type: technical
   focus_areas:
   - Zephyr architecture support
   - Memory protection and compartments
   - Drivers, tooling, and platforms
-forms:
-- contact
 related:
 - type: working_group
   slug: mmu-less-systems

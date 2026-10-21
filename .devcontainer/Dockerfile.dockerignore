@@ -1,0 +1,6 @@
+**
+!Gemfile
+!Gemfile.lock
+!.devcontainer/
+!.devcontainer/Dockerfile
+!.devcontainer/Dockerfile.dockerignore

@@ -27,6 +27,8 @@ post:
 
 ## Overview
 
+CheriBSD has been a key part of the hardware-software design used to create CHERI since the project’s inception.
+
 Brooks Davis – [Capabilities Limited](/organisations/capabilities-limited/)
 
 [Capabilities Limited](/organisations/capabilities-limited/), a founding member of the CHERI Alliance, is pleased to announce that we have received funding from Innovate UK for our 22 month project: *CheriBSD feature extraction, maturity, and testing*. [CheriBSD](http://cheribsd.org) is an operating system developed by the [University of Cambridge](/organisations/university-of-cambridge/), [SRI International](/organisations/sri/), and [Capabilities Limited](/organisations/capabilities-limited/) over the last fifteen years as part of the CHERI project.

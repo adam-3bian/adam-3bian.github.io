@@ -23,6 +23,8 @@ post:
 
 ## Overview
 
+The CHERI Alliance is an international consortium uniting industry leaders, researchers, and governments to drive the adoption of Capability Hardware Enhanced RISC Instructions (CHERI) technology. CHERI technology offers a transformative approach to preventing memory safety vulnerabilities, which are the root cause of certain cyberattacks, by incorporating hardware-enforced protections.
+
 **Cambridge, UK –** **18 June 2025** – The [CHERI Alliance](/), a global coalition dedicated to enhancing cybersecurity through groundbreaking hardware memory safety technology, is proud to announce that [BT Group](https://www.bt.com/about/bt) has joined its ranks. As one of the world’s leading telecommunications companies, BT brings decades of expertise in network security and innovation to the Alliance, further strengthening the mission to create a safer digital future.
 
 BT’s decision to join the CHERI Alliance underscores its commitment to staying at the forefront of cybersecurity innovation. The company will contribute its expertise in secure communications and network resilience, collaborating with other members to accelerate the deployment of CHERI technology across industries.

@@ -23,6 +23,8 @@ post:
 
 ## Overview
 
+The conversation around software memory safety is reaching a critical turning point. In a [recent publication in the Communications of the ACM](https://cacm.acm.org/opinion/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/), industry experts have called for a decisive move toward standardizing principles and practices to mitigate memory safety vulnerabilities.
+
 **The Call for Memory Safety Standards and CHERI’s Role**
 
 These vulnerabilities, responsible for a significant portion of software security breaches, demand attention not just from developers and hardware designers but also from policymakers. Among the promising solutions at the forefront of this effort is CHERI (Capability Hardware Enhanced RISC Instructions), a transformative technology that brings memory safety directly into hardware design.

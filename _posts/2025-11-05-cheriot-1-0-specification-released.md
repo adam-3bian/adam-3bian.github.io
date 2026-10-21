@@ -26,6 +26,8 @@ post:
 
 ## Overview
 
+CHERIoT 1.0 provides a stable, hardware-enforced platform for building memory safe, compartmentalised systems in the microcontroller class. The specification defines the instruction set architecture, language extensions, and the complete compilation and relocation model, enabling developers to build software that is safeguarded against buffer overflows and use after free errors, even in hand written assembly.
+
 *5 November 2025, Cambridge – New Release*
 
 Two independent implementations already demonstrate how the design scales across the microcontroller range. CHERIoT Ibex implements the specification in a three stage single issue pipeline, while CHERIoT Kudu stretches the same ISA to a six stage dual issue design. Together, they mirror the span of Arm’s M profile and let partners design for a variety of cost and performance envelopes while maintaining the same software base.

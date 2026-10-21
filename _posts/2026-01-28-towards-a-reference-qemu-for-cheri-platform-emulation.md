@@ -26,6 +26,8 @@ post:
 
 ## Overview
 
+QEMU is one of the most popular open source machine emulators ([https://www.qemu.org](https://www.qemu.org)), with support for many CPU architectures, including x86\_64, Arm and RISC-V.
+
 The QEMU emulator is critical for systems research and development: it makes it possible to quickly prototype, debug and analyse architectural extensions and OS implementations without the need for dedicated hardware implementations in FPGA or silicon.
 
 QEMU monitoring features, such as instruction-level tracing and GDB integration are particularly important to make system software development easier.

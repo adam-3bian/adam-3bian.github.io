@@ -23,4 +23,6 @@ post:
 
 ## Overview
 
+Source: [https://www.eetimes.com/cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus/](https://www.eetimes.com/cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus/)
+
 [Back to Latest News](/news-and-events/news-and-analysis/latest-news/)

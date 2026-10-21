@@ -23,6 +23,8 @@ post:
 
 ## Overview
 
+The initial founding members of the CHERI Alliance include [Capabilities Limited](/organisations/capabilities-limited/), [Codasip](/organisations/codasip/), the [FreeBSD Foundation](/organisations/freebsd-foundation/), [lowRISC](/organisations/lowrisc/), [SCI Semiconductor](/organisations/sci-semiconductor/), and the [University of Cambridge](/organisations/university-of-cambridge/).
+
 > Founding members include [Capabilities Limited](/organisations/capabilities-limited/), [Codasip](/organisations/codasip/), the [FreeBSD Foundation](/organisations/freebsd-foundation/), [lowRISC](/organisations/lowrisc/), [SCI Semiconductor](/organisations/sci-semiconductor/), and the [University of Cambridge](/organisations/university-of-cambridge/).
 
 *Cambridge, the United Kingdom, June 17, 2024* — The CHERI Alliance CIC (Community Interest Company) today announced it has been established to advance the industry-wide adoption of the security technology CHERI (Capability Hardware Enhanced RISC Instructions). The CHERI Alliance will drive the adoption of enhanced security across the industry and ensure compliance with commonly defined standards.

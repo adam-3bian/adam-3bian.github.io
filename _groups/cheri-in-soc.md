@@ -9,13 +9,13 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 working_group:
+  leads:
+  - person: ben-fletcher
   type: technical
   focus_areas:
   - SoC architecture and integration
   - CHERI feature profiles
   - Hardware and software interfaces
-forms:
-- contact
 related:
 - type: working_group
   slug: cheri-linux-working-group

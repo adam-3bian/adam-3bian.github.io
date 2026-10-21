@@ -26,6 +26,8 @@ post:
 
 ## Overview
 
+In 2025 alone, global cybercrime costs reached an estimated **$1.2 billion every minute**, with projections rising to **$1.8 billion per minute by 2029**. Just seven years earlier, the figure was “only” $100 million per minute—already enormous, but now eclipsed by today’s scale.
+
 Tariq Kurd – [Codasip](/organisations/codasip/)
 
 ## Cybercrime has become a trillion-dollar tax on the global economy — and it’s accelerating.

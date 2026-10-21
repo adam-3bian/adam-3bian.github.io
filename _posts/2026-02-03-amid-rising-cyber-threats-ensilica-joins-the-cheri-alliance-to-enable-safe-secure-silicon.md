@@ -25,6 +25,8 @@ post:
 
 ## Overview
 
+CHERI (Capability Hardware Enhanced RISC Instructions) is an open technology that fundamentally strengthens systems’ security by preventing memory corruption and unauthorized code execution—two of the most pervasive threats in modern computing.
+
 **Oxford  UK –** **3 February 2026** – [EnSilica](https://www.ensilica.com/), a leading provider of mixed-signal ASICs (Application-Specific Integrated Circuits), today announced that it has joined the [CHERI Alliance](/). In a world facing an explosion of cyber threats, this collaboration will accelerate the adoption of a technology that could **eliminate more than 70% of current vulnerabilities**.
 
 ## The Power of CHERI Technology

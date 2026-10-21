@@ -9,13 +9,13 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 working_group:
+  leads:
+  - person: adam-finney
   type: programme
   focus_areas:
   - Shared messaging and material
   - Campaigns and events
   - Ecosystem communication
-forms:
-- contact
 related:
 - type: working_group
   slug: promotion-and-ambassador-program

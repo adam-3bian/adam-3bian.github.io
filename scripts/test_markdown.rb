@@ -9,6 +9,7 @@ site=Jekyll::Site.new(Jekyll.configuration('source'=>root,'safe'=>true,'quiet'=>
 converter=Jekyll::Converters::Markdown.new(site.config)
 snapshot=JSON.parse(File.read(File.join(root,'docs/migrations/v5.3/source-snapshot.json'))).values.flatten.to_h{|r|[r['path'],r]}
 normalize=lambda{|text|text.unicode_normalize(:nfkc).tr('’‘“”',"''\"\"").gsub(/\s+/,' ').strip}
+legacy_homepage=lambda{|a|a['href'].to_s.match?(%r{\Ahttps?://(?:www\.)?cheri-alliance\.org/?\z}) && a.text.match?(%r{\A(?:https?://)?(?:www\.)?cheri-alliance\.org/?\z})}
 count=0;paragraphs=0;transformed=0;audit=[]
 CSV.foreach(File.join(root,'docs/migrations/v5.3/records.csv'),headers:true) do |row|
  original=Nokogiri::HTML.fragment(converter.convert(snapshot[row['old_source']]['body']))
@@ -39,6 +40,14 @@ CSV.foreach(File.join(root,'docs/migrations/v5.3/records.csv'),headers:true) do 
      abort 'Requested local form must replace obsolete provider/preview copy' unless form && !form['action'] && form.css('input,textarea,select').length==field_count && form.at_css('button[type="submit"][disabled][hidden]') && output.css('main .form-panel a.button').empty? && !text.downcase.include?('preview only')
      reason='Obsolete provider/preview copy replaced by user-requested on-page fields without an endpoint'
     end
+   elsif row['new_url']=='/news/initial-members-join-cheri-alliance-to-drive-adoption-of-memory-safety-and-scalable-software-compartmentalization/' && expected=='Interested companies can contact the Alliance at https://cheri-alliance.org/'
+    abort 'Local membership contact wording lost' unless text.include?('Interested companies can contact the Alliance.') && output.at_css('main a[href="/alliance/membership/contact/"]')
+    reason='Approved membership application link now points to the local contact page'
+   elsif paragraph.css('a').any?(&legacy_homepage)
+    revised=paragraph.dup(1)
+    revised.css('a').select(&legacy_homepage).each{|a|a.content='the CHERI Alliance'}
+    abort "Localised Alliance homepage link changed unrelated wording: #{row['new_url']}" unless text.include?(normalize.call(revised.text)) && output.at_css('main a[href="/"]')
+    reason='Approved local homepage link uses the CHERI Alliance label instead of the old hostname'
    end
    abort "Lost source paragraph: #{row['old_source']} #{expected[0,150]}" unless reason
    transformed+=1
@@ -51,7 +60,39 @@ literal="{{ page.title }}\n{% assign fixture = 1 %}"
 liquid=Liquid::Template.parse("{% raw %}\n~~~ liquid\n#{literal}\n~~~\n{% endraw %}").render!('page'=>{'title'=>'MUST NOT EXECUTE'})
 rendered=Nokogiri::HTML.fragment(converter.convert(liquid))
 abort 'Literal Liquid example executed or lost' unless rendered.at_css('pre').text.strip==literal
+# Exercise native Kramdown + the safe-build link adapter without JavaScript.
+links_markdown=<<~'MARKDOWN'
+  [External](https://example.org/path?q=1&x=2 "An existing title")
+  <https://example.org/autolink>
+  [Existing attributes](https://example.org/existing){: rel="nofollow" target="_self" }
+  [Protocol relative](//example.org/protocol)
+  [Internal](/people/gavin-ferris/)
+  [Canonical](HTTPS://ADAM-3BIAN.GITHUB.IO/people/gavin-ferris/)
+  [Mail](mailto:person@example.org)
+  [Fragment](#local)
+  `https://example.org/literal`
+
+  ~~~html
+  <a href="https://example.org/code">Literal example</a>
+  ~~~
+MARKDOWN
+links_html=converter.convert(links_markdown)
+link_template=Liquid::Template.parse('{% include external-links.html content=fixture %}')
+adapted_html=link_template.render!({'fixture'=>links_html,'site'=>{'url'=>'https://adam-3bian.github.io'}},registers:{site:site,page:{}})
+before_links=Nokogiri::HTML.fragment(links_html);after_links=Nokogiri::HTML.fragment(adapted_html)
+abort 'Link adapter changed content, code or destinations' unless before_links.text==after_links.text && before_links.css('a').map{|a|a['href']}==after_links.css('a').map{|a|a['href']}
+after_links.css('a').each do |link|
+ external=link['href'].start_with?('https://example.org/','//example.org/')
+ if external
+  abort 'External link attributes missing' unless link['target']=='_blank' && %w[noopener noreferrer].all?{|token|link['rel'].split.include?(token)}
+  abort 'rel must precede target' unless link.attribute_nodes.map(&:name).index('rel') < link.attribute_nodes.map(&:name).index('target')
+ else
+  abort 'Internal/email/fragment link acquired external attributes' if link['target'] || link['rel']
+ end
+end
+abort 'Existing rel tokens lost' unless after_links.at_css('a[href="https://example.org/existing"]')['rel'].split.include?('nofollow')
+abort 'Existing title replaced' unless after_links.at_css('a[href^="https://example.org/path"]')['title']=='An existing title'
 if audit_file
  CSV.open(audit_file,'w'){|csv|csv<<%w[old_source new_source new_url kind original_text outcome detail];audit.each{|row|csv<<row}}
 end
-puts "Markdown: #{count} literal code examples, #{paragraphs} source paragraphs (#{transformed} documented semantic/UI migrations), and a protected Liquid fixture passed."
+puts "Markdown: #{count} literal code examples, #{paragraphs} source paragraphs (#{transformed} documented semantic/UI migrations), protected Liquid and native external-link fixtures passed."

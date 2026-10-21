@@ -40,11 +40,11 @@ related:
 
 The core implements the CHERIoT 1.0 ISA. This is a stable CHERI ISA targeted for embedded devices maintained by a coalition of vendors. The v1 ISA reference is rendered in human-readable form here:
 
-https://github.com/CHERIoT-Platform/cheriot-sail/releases/download/v1.0/cheriot-architecture-v1.0.pdf
+<https://github.com/CHERIoT-Platform/cheriot-sail/releases/download/v1.0/cheriot-architecture-v1.0.pdf>
 
 This is also available as a public Sail specification here:
 
-https://github.com/CHERIoT-Platform/cheriot-sail/tree/v1.0
+<https://github.com/CHERIoT-Platform/cheriot-sail/tree/v1.0>
 
 The executable model generated from the Sail version of the specification is used as the gold model, both for comparing explicit test cases and for tandem verification with TestRIG.
 
@@ -58,13 +58,13 @@ The core has been formally verified in two ways:
 
 Tom Melham’s group in Oxford has verified trace equivalence to the Sail specification. This work is published as a preprint:
 
-https://arxiv.org/abs/2502.04738
+<https://arxiv.org/abs/2502.04738>
 
 The team at RPTU has used VeriCHERI to verify that the configuration with caches disabled has no direct or indirect dataflow can violate the CHERI rules. In the configuration with caches, this indirect dataflow (timing side channels) can violate CHERI rules with respect to confidentiality, but not integrity.
 
 This work is published here:
 
-> Anna Lena Duque Antón, Johannes Müller, Philipp Schmitz, Tobias Jauch, Alex Wezel, Lucas Deutschmann, Mohammad Rahmani Fadiheh, Dominik Stoffel, and Wolfgang Kunz. 2025. VeriCHERI: Exhaustive Formal Security Verification of CHERI at the RTL. Proceedings of the 43rd IEEE/ACM International Conference on Computer-Aided Design. Association for Computing Machinery, New York, NY, USA, Article 182, 1–9. https://doi.org/10.1145/3676536.3676841
+> Anna Lena Duque Antón, Johannes Müller, Philipp Schmitz, Tobias Jauch, Alex Wezel, Lucas Deutschmann, Mohammad Rahmani Fadiheh, Dominik Stoffel, and Wolfgang Kunz. 2025. VeriCHERI: Exhaustive Formal Security Verification of CHERI at the RTL. Proceedings of the 43rd IEEE/ACM International Conference on Computer-Aided Design. Association for Computing Machinery, New York, NY, USA, Article 182, 1–9. <https://doi.org/10.1145/3676536.3676841>
 
 The combination of the two proofs (that CHERIoT Ibex implements the CHERIoT ISA, and that CHERIoT Ibex does not violate the security guarantees of a CHERI system) transitively prove that the CHERIoT ISA is a CHERI ISA.
 
@@ -146,7 +146,7 @@ See above with respect to formal and traditional DV. Most notably, the VeriCHERI
 
 We have an LLVM (clang + lld) fork that tracks upstream:
 
-https://github.com/CHERIoT-Platform/llvm-project
+<https://github.com/CHERIoT-Platform/llvm-project>
 
 This is currently LLVM 21 and LLVM head (which will become 22), with merges from the upstream branches every few days. This is well tested and supported and en route to upstreaming (slowly).
 
@@ -154,7 +154,7 @@ This was used to build the CHERI compliance test suite.
 
 We also have a Rust compiler port:
 
-https://github.com/CHERIoT-Platform/cheri-rust
+<https://github.com/CHERIoT-Platform/cheri-rust>
 
 This is in early stages and passes smoke tests, but it not yet fully supported.
 

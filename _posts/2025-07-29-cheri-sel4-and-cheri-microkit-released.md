@@ -26,6 +26,8 @@ post:
 
 ## Overview
 
+We are happy to release a prototype of CHERI-seL4, an experimental version of the seL4 microkernel with CHERI support. This comes with CHERI-Microkit, a lightweight userspace framework, and a set of exercises and tutorials designed to help developers explore CHERI’s potential in a real microkernel environment.
+
 The release is aimed at developers who want to build and experiment with memory-safe C/C++ software on seL4. It supports the draft CHERI-RISC-V architecture and runs on QEMU, Codasip’s x730 processor, CHERI-Toooba and CHERI-CVA6 on FPGA.
 
 > **Disclaimer:** CHERI-seL4 and CHERI-Microkit are independent research prototypes developed by the CHERI Alliance. They are not affiliated with or endorsed by the seL4 Foundation. seL4 is a trademark of the seL4 Foundation.

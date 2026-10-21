@@ -9,13 +9,13 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 working_group:
+  leads:
+  - person: jeremy-singer
   type: technical
   focus_areas:
   - Language runtimes
   - Managed memory and native interfaces
   - Capability-aware VM design
-forms:
-- contact
 related:
 - type: working_group
   slug: rust-plus-cheri

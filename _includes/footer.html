@@ -4,7 +4,7 @@
     <ul class="columns-3">
       {% assign footer_records = site.pages | concat: site.documents | where_exp: 'entry', 'entry.redirect_to == nil' | sort_natural: 'title' %}
       {% for category in site.data.footer_categories %}<li><span class="menu-group-title">{{ category.title | escape }}</span><ul>
-      {% for entry in footer_records %}{% if entry.navigation.footer.category == category.title %}<li><a href="{{ entry.url | relative_url }}">{{ entry.title | escape }}</a></li>{% endif %}{% endfor %}
+      {% for entry in footer_records %}{% if entry.navigation.footer.category == category.title and entry.unlisted != true %}<li><a href="{{ entry.url | relative_url }}">{{ entry.title | escape }}</a></li>{% endif %}{% endfor %}
       </ul></li>{% endfor %}
     </ul>
   </nav>
@@ -28,7 +28,7 @@
             {% unless link_url contains ':' or url_prefix == '//' or url_first == '#' %}
               {% assign link_url = link_url | relative_url %}
             {% endunless %}
-            <a href="{{ link_url | escape }}"{% if link_target != '' %} target="{{ link_target | escape }}"{% endif %}{% if link_rel != '' %} rel="{{ link_rel | strip | escape }}"{% endif %}{% if link_target == '_blank' %} title="Opens in a new tab"{% endif %}>{% assign image_url = link.image.src %}
+            <a href="{{ link_url | escape }}"{% if link_rel != '' %} rel="{{ link_rel | strip | escape }}"{% endif %}{% if link_target != '' %} target="{{ link_target | escape }}"{% endif %}{% if link_target == '_blank' %} title="Opens in a new tab"{% endif %}>{% assign image_url = link.image.src %}
             {% assign url_prefix = image_url | slice: 0, 2 %}
             {% assign url_first = image_url | slice: 0, 1 %}
             {% unless image_url contains ':' or url_prefix == '//' or url_first == '#' %}

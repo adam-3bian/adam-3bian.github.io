@@ -9,6 +9,7 @@ import collections
 import concurrent.futures
 import json
 import http.client
+import re
 import threading
 import urllib.error
 import urllib.request
@@ -42,6 +43,7 @@ def associations(records, kind, record):
                  and item['post']['category'] == record['post']['category']]
         add('related-posts-title', sorted(items, key=lambda item: item['date'], reverse=True)[:3])
     if kind == 'people':
+        add('groups-title', [item for item in entries('groups') if slug in references(item, 'working_group', 'leads', 'person')])
         add('events-title', [item for item in entries('events') if slug in references(item, 'event', 'speakers', 'person')])
         add('papers-title', [item for item in entries('papers') if slug in references(item, 'publication', 'authors', 'person')])
         add('posts-title', [item for item in entries('posts') if item.get('sitemap') is not False and slug in references(item, 'post', 'authors', 'person')])
@@ -87,6 +89,7 @@ def fact_links(record, records):
             expected.append(records[collection][ref][1]['permalink'])
     for group, field in [('person', 'organisations'), ('event', 'organisers'), ('event', 'partners'), ('repository', 'maintainers')]:
         expected.extend(records['organisations'][ref['organisation']][1]['permalink'] for ref in record.get(group, {}).get(field, []))
+    expected.extend(records['people'][ref['person']][1]['permalink'] for ref in record.get('working_group', {}).get('leads', []) if ref.get('person'))
     return expected
 
 
@@ -108,6 +111,18 @@ def audit(site, baseurl, records, redirects):
         return url.removesuffix('index.html') if url.endswith('index.html') else url
 
     for route, tree in pages.items():
+        for node in tree.xpath('//main//text()[not(ancestor::a or ancestor::code or ancestor::pre or ancestor::script or ancestor::style)]'):
+            if re.search(r'(?i)\b(?:https?://|www\.)\S+', str(node)):
+                errors.append(f'{route}: plain URL must use a Markdown link or angle-bracket autolink: {str(node).strip()}')
+        for link in tree.xpath('//main//a[@href]'):
+            destination = urlsplit(link.get('href'))
+            if destination.scheme.lower() in ('http', 'https', '') and destination.netloc and destination.netloc.lower() != 'adam-3bian.github.io':
+                counts['external_links_checked'] += 1
+                if link.get('target') != '_blank' or not {'noopener', 'noreferrer'} <= set(link.get('rel', '').split()):
+                    errors.append(f'{route}: external link lacks rel/target attributes: {link.get("href")}')
+                attributes = list(link.attrib)
+                if 'rel' in attributes and 'target' in attributes and attributes.index('rel') > attributes.index('target'):
+                    errors.append(f'{route}: rel must precede target: {link.get("href")}')
         for raw in tree.xpath('//body//a/@href | //img/@src | //source/@src | //script/@src | //link[@rel="stylesheet" or @rel="icon"]/@href | //form/@action | //use/@href'):
             parts = urlsplit(raw)
             if parts.scheme in ('http', 'https') and parts.netloc != 'adam-3bian.github.io':

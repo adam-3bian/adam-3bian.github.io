@@ -20,6 +20,8 @@ post:
 
 ## Overview
 
+The DSTL paper “[Biting the CHERI bullet: Blockers, Enablers and Security Implications of CHERI in Defence](https://arxiv.org/pdf/2504.17904)” collates and analyzes feedback on CHERI development by 15 independent teams across industry and academia on the Morello research platform.
+
 This work provides a useful set of feedback based on their Morello experience that highlights what is important to end users regarding CHERI software development. Many of the issues highlighted in the DSTL paper have already been addressed through an updated standard, new CHERI-native processors (instead of retro-fitting CHERI into existing cores), the creation of the CHERI Alliance, and new versions of software and the operating systems. This blog post delves into the likely reasons behind their experiences based on current knowledge, the status of CHERI today, and how the CHERI community is working together to ensure we provide everything necessary for companies to start using CHERI.
 
 The paper had three common threads: stability, maturity, and accessibility.

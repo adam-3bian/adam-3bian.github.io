@@ -9,13 +9,13 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 working_group:
+  leads:
+  - person: mike-eftimakis
   type: programme
   focus_areas:
   - Certification criteria
   - Evidence and assurance needs
   - Programme development
-forms:
-- contact
 related:
 - type: page
   slug: adopt-assurance-and-adoption-about-cheri-enabled

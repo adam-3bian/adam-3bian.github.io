@@ -69,4 +69,9 @@ abort 'ID-free programme did not generate both talk cards' unless output.css('[d
 programme=render.call('event-programme.html',nested_event,{'people'=>[editor_person]})
 abort 'Generated profile talk links do not target programme entries' unless output.css('[data-talk-id] .talk-copy a').all?{|a|programme.at_css("[id='#{a['href'].split('#').last}']")}
 abort 'Nested slides did not follow the correct talk' unless output.css('[data-talk-id]').first.css('a[href="/opening.pdf"]').size==1 && output.css('[data-talk-id]').last.css('a[href="/opening.pdf"]').empty?
-puts 'Relationships: nested ID-free programmes, primary/additional affiliations, inverse views, organisers, guide neighbours and exact references passed.'
+lead_group={'slug'=>'group','title'=>'Group','url'=>'/groups/group/','working_group'=>{'type'=>'technical','leads'=>[{'person'=>'dual'},{'name'=>'Named co-lead'}]}}
+facts=Nokogiri::HTML.fragment(facts_template.render!({'page'=>lead_group,'site'=>{'data'=>{'catalog'=>{}},'people'=>[editor_person]}},registers:{site:site,page:{}}))
+abort 'Working-group leads are not rendered as linked and named credits' unless facts.at_css('dt').text=='Working group leads' && facts.at_css('a[href="/people/dual/"]') && facts.text.include?('Named co-lead')
+output=render.call('relationships.html',editor_person,{'people'=>[editor_person],'groups'=>[lead_group]})
+abort 'Lead profile did not derive its working group' unless output.css('[aria-labelledby="groups-title"] a').map{|a|a['href']}==['/groups/group/']
+puts 'Relationships: working-group leads and inverse views, nested ID-free programmes, primary/additional affiliations, organisers, guide neighbours and exact references passed.'

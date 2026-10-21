@@ -9,13 +9,13 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 working_group:
+  leads:
+  - person: hesham-almatary
   type: technical
   focus_areas:
   - seL4 and Microkit integration
   - Capability-oriented interfaces
   - Isolation and assurance
-forms:
-- contact
 related:
 - type: working_group
   slug: cheri-freertos

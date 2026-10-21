@@ -23,6 +23,8 @@ post:
 
 ## Overview
 
+At the first **CHERI Alliance** conference, organised in partnership with [CyNam](/organisations/cynam/) and [NCSC](/organisations/ncsc/), we had a packed out event, with a full hall at Hub8 MX in Cheltenham for the opening keynote from Paul Waller (from the [National Cyber Security Centre](/organisations/ncsc/), NCSC, a part of GCHQ).
+
 His talk covered ways to incentivise the adoption of security in computing, covering government-led initiatives both inside and outside of the UK with some thoughts on various market factors and the role of policy in influencing them.
 
 Following this, John Goodacre took us through the Digital Security by Design (DSbD) programme — its origins, achievements and current status. He started with the statement ‘Unless security is designed into a system from its inception, there is little chance it can be made secure by retrofit’ — a conclusion first reached by a report written by a branch of the US Air Force in 1972! He went on to highlight the startling cost of cybercrime, predicted at $9.22 trillion in 2024 and rising to $13.82 trillion in 2028, making the economic incentives for adoption of CHERI as a “secure by design” practice clear (given CHERI has the field-proven ability to prevent around ⅔ of exploits).

@@ -9,13 +9,13 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 working_group:
+  leads:
+  - person: murali-vijayaraghavan
   type: technical
   focus_areas:
   - Shared-address-space systems
   - Embedded compartment models
   - Resource and real-time constraints
-forms:
-- contact
 related:
 - type: working_group
   slug: os-support-and-portability

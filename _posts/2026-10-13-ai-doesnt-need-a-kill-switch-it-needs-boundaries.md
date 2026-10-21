@@ -28,6 +28,8 @@ post:
 
 ## How CHERI can limit compromised AI before it compromises the system
 
+In the earlier articles in this series, we looked at why memory-safety vulnerabilities persist in critical infrastructure, and how [CHERI](/discover/understand/how-does-cheri-work/) can contain a compromised software component rather than allowing one failure to spread across the platform. AI takes that challenge a step further: how do we limit the authority of a component that is becoming part of the control loop?
+
 AI is moving into devices that increasingly influence and control the physical world. That raises a security question that model-level safeguards alone cannot answer: if an AI component or the software around it is compromised, what is it actually allowed to access and control?
 
 ## AI is becoming part of the control loop

@@ -15,7 +15,7 @@
 .directory-content > h2 + p { margin-top: $space-2; }
 .record-header { align-items: flex-start; display: flex; gap: $space-8; justify-content: space-between; }
 .record-header .heading-copy { flex: 1; }
-.record-portrait { background: var(--surface); border: 0; border-radius: var(--radius); flex: 0 0 160px; height: 160px; margin: 0; overflow: hidden; }
+.record-portrait { background: #fff; border: 0; border-radius: var(--radius); flex: 0 0 160px; height: 160px; margin: 0; overflow: hidden; }
 .record-portrait img { display: block; height: 100%; width: 100%; }
 .record-portrait.image-kind-people { aspect-ratio: 1; }
 .record-portrait.image-kind-people img { object-fit: cover; }

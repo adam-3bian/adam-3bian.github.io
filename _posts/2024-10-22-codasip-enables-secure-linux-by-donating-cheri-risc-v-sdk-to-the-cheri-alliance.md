@@ -23,6 +23,8 @@ post:
 
 ## Overview
 
+“As more organizations and governments discover the potential of the CHERI technology to protect us, we need to speed up the pace of making the technology available in real systems,” says Ron Black, chief executive officer, [Codasip](/organisations/codasip/).
+
 **Open access to complete SDK with Linux kernel will simplify building and testing of CHERI-enabled RISC-V applications**
 
 [Codasip](/organisations/codasip/) has donated its newly developed Software Development Kit (SDK) for CHERI to the community-interest organization CHERI Alliance, which makes the SDK freely available for download on [GitHub](https://github.com/CHERI-Alliance).

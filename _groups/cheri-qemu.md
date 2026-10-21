@@ -9,13 +9,13 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 working_group:
+  leads:
+  - person: alfredo-mazzinghi
   type: technical
   focus_areas:
   - Architecture and platform models
   - Maintenance and version alignment
   - Testing and continuous integration
-forms:
-- contact
 related:
 - type: working_group
   slug: cheri-virtual-machines

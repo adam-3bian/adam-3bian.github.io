@@ -28,6 +28,8 @@ post:
 
 ## Overview
 
+This article is part of a series of blogs published after the announcement of Mythos vulnerabilities’ exploitation capabilities. The views from other experts on this topic are:
+
 - [CHERI memory safety mitigates LLM-discovered vulnerability in FreeBSD – Brooks Davis](/news/cheri-memory-safety-mitigates-llm-discovered-vulnerability-in-freebsd/)
 - [One Bug is All It Takes – Adam Finney](/news/one-bug-is-all-it-takes/)
 

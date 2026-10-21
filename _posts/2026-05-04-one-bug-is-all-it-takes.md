@@ -28,6 +28,8 @@ post:
 
 ## Overview
 
+This article is part of a series of blogs published after the announcement of Mythos vulnerabilities’ exploitation capabilities. The views from other experts on this topic are:
+
 - [AI has compressed the attack timeline – Mike Eftimakis](/news/ai-has-compressed-the-attack-timeline/)
 - [CHERI memory safety mitigates LLM-discovered vulnerability in FreeBSD – Brooks Davis](/news/cheri-memory-safety-mitigates-llm-discovered-vulnerability-in-freebsd/)
 

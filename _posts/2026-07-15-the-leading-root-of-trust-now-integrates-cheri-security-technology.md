@@ -28,6 +28,8 @@ post:
 
 ## Overview
 
+If you are building secure hardware, the way you protect software running inside that hardware matters just as much as the cryptography around it.
+
 That is why [lowRISC](/organisations/lowrisc/)’s announcement that OpenTitan Earl Grey 2 will support CHERI is important.
 
 OpenTitan is an open source hardware Root of Trust platform designed to protect some of the most sensitive parts of a system. The Earl Grey 2 version will add CHERI support through a CHERIoT configuration of the Ibex processor, alongside post-quantum cryptography and other security improvements.

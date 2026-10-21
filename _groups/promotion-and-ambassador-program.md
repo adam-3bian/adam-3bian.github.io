@@ -9,13 +9,13 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 working_group:
+  leads:
+  - person: mike-eftimakis
   type: programme
   focus_areas:
   - Ambassador participation
   - Talks, demonstrations, and events
   - Community connections
-forms:
-- contact
 related:
 - type: working_group
   slug: repository-management

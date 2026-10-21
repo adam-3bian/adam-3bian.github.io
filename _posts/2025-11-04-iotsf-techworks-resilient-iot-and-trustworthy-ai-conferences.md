@@ -27,6 +27,8 @@ post:
 
 ## Overview
 
+The IoT Security Foundation (IoTSF) and [TechWorks](/organisations/techworks/) AI held their annual Resilient IoT and Trustworthy AI Conference on Thursday 30 October 2025 at the IET, Savoy Place, London. Delegates from industry, academia and government gathered to explore the evolving challenges of securing intelligent and connected systems.
+
 *30 October 2025, London – Event Recap*
 
 Arm began the day with a keynote focusing on the role of modern hardware in addressing new security demands, referencing ongoing work around CHERI and the Morello prototype. Afterwards, Professor Simon Moore from the [University of Cambridge](/organisations/university-of-cambridge/) provided insights into capability-based architectures as a foundation for building safer systems. Later in the programme, David Chisnall of [SCI Semiconductor](/organisations/sci-semiconductor/) discussed how these ideas are being applied in practical IoT deployments.

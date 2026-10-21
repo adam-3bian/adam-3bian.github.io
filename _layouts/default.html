@@ -9,7 +9,7 @@
   <title>{{ page.title | escape }} | {{ site.title | escape }}</title>
   <meta name="description" content="{{ page.description | default: page.summary | default: site.description | markdownify | strip_html | normalize_whitespace | escape }}">
   <link rel="canonical" href="{{ page.canonical_url | default: page.url | absolute_url }}">
-  {% if page.sitemap == false or page.url == '/404.html' %}<meta name="robots" content="noindex,follow">{% endif %}
+  {% if page.sitemap == false or page.unlisted or page.url == '/404.html' %}<meta name="robots" content="noindex,follow">{% endif %}
   <link rel="icon" href="{{ '/assets/images/shared/branding/favicon.ico' | relative_url }}">
   <link rel="preload" href="{{ '/assets/js/navigation.js' | relative_url }}" as="script">
   {% if page.listing %}<link rel="preload" href="{{ '/assets/js/catalog.js' | relative_url }}" as="script">{% endif %}
@@ -26,7 +26,8 @@
   <main id="main-content" class="site-frame" tabindex="-1">
     {% capture rendered_content %}{{ content }}{% endcapture %}
     {% capture anchored_content %}{% include anchor-aliases.html content=rendered_content %}{% endcapture %}
-    {% include content-urls.html content=anchored_content %}
+    {% capture local_content %}{% include content-urls.html content=anchored_content %}{% endcapture %}
+    {% include external-links.html content=local_content %}
   </main>
   {% include newsletter-cta.html %}{% include footer.html %}
   {% if page.image_overlay %}{% include image-overlay.html %}{% endif %}
