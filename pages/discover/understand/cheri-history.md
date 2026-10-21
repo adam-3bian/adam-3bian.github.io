@@ -20,6 +20,8 @@ CHERI did not appear overnight. It builds on decades of capability-system resear
 
 ## Capability systems (1960s–1980s)
 
+![CAP computer](/assets/images/shared/cap-computer.webp){: .image-left }
+
 Long before CHERI, capability-based computer systems explored how software could receive precise authority instead of unrestricted access to memory. Systems such as Cambridge CAP, Hydra, System 250, and IBM System/38 established principles that remain central today: unforgeable references, least privilege, delegation, and fine-grained protection.
 
 These ideas proved valuable, but they struggled to integrate with the mainstream processors, operating systems, and software ecosystems that emerged around conventional virtual memory.
@@ -40,6 +42,8 @@ This period established that capabilities could work with real operating systems
 
 ## DARPA and long-term development
 
+![DARPA logo](/assets/images/organisation/darpa.webp){: .image-left }
+
 Several DARPA programmes helped mature the technology over time.
 
 CRASH supported the original architecture work. Later programmes including Mission-oriented Resilient Clouds (MRC), SSITH, FETT, and Compartmentalization and Privilege Management expanded CHERI’s hardware support, compartmentalisation mechanisms, formal verification, adversarial testing, and portability.
@@ -56,6 +60,8 @@ Morello helped demonstrate compatibility with large software systems, evaluate p
 
 ## RISC-V, CHERIoT, and embedded systems
 
+![RISC-V logo](/assets/images/organisation/risc-v.webp){: .image-left }
+
 At the same time, CHERI expanded beyond its original architecture.
 
 Work under DARPA’s SSITH programme brought CHERI to RISC-V, demonstrating that capability protection could be adapted to multiple processor designs. This opened the door to both application-class systems and highly constrained embedded devices.
@@ -71,6 +77,8 @@ The ecosystem now includes licensable processor designs, commercial chips, devel
 This transition also created the need for certification, technical alignment, ecosystem coordination, and adoption support.
 
 ## The CHERI Alliance (2024)
+
+![CHERI Alliance logo](/assets/images/shared/cheri-logo.webp){: .image-left }
 
 As the ecosystem continued to grow, a new challenge emerged: coordination.
 

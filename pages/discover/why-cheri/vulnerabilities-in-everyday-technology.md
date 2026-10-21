@@ -16,11 +16,13 @@ related:
 
 ## Overview
 
+![Vulnerabilities keep increasing](/assets/images/shared/cve.webp){: .image-left }
+
 Connected devices are specialised computers. A camera, doorbell, router, medical monitor, or vehicle system may connect to networks, accept remote commands, install software updates, and store sensitive or personal information.
 
 If software contains a serious memory vulnerability, an attacker may be able to access information, change settings, disrupt operation, or use the device to attack other systems on the same network.
 
-![Vulnerabilities keep increasing](/assets/images/shared/cve.webp){: .image-full }
+... and as you can see on the graph, **security vulnerabilities keep increasing**.
 
 ## Even small devices can carry significant risk
 

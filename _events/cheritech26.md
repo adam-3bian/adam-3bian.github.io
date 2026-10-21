@@ -24,13 +24,26 @@ event:
     venue: Electronica / SEMICON Europa, Munich Messe - Hall B0, Munich, Germany
   timezone: Europe/Berlin
   registration:
-    url: https://discover.semi.org/cheritech26-powered-by-cheri-alliance-registration.html
+    url: /events/cheritech26/#register
     label: Register for CHERITech’26
   organisers:
   - organisation: cheri-alliance
     role: organiser
   schedule:
+  - date: '2026-11-10'
+    label: Exhibition only
+    sessions:
+    - type: exhibition
+      title: CHERI area
+      description: 10 booths from our members will be demonstrating CHERI in Hall B0.
+  - date: '2026-11-11'
+    label: Exhibition only
+    sessions:
+    - type: exhibition
+      title: CHERI area
+      description: 10 booths from our members will be demonstrating CHERI in Hall B0.
   - date: '2026-11-12'
+    label: Conference and Exhibition
     sessions:
     - type: introduction
       title: Introduction
@@ -151,6 +164,7 @@ event:
       start: '18:30'
     label: Thursday
   - date: '2026-11-13'
+    label: Conference and Exhibition
     sessions:
     - type: introduction
       title: Introduction
@@ -239,6 +253,10 @@ related:
 - type: page
   slug: news-and-events-events-and-archive-upcoming-events
   relation: navigation
+- type: page
+  label: CHERITech
+  slug: news-and-events-events-and-archive-cheritech
+  relation: navigation
 ---
 
 ## Overview
@@ -247,7 +265,7 @@ CHERITech’26 brings the CHERI technical community to [Electronica](https://ele
 
 Whether CHERI is new to you or already on your technology roadmap, join us to **learn** from early implementations, see the **technology in action**, ask questions and **connect** with the organisations shaping what comes next.
 
-[**Register** for CHERITech’26](/events/cheritech26/#register)
+[Register for CHERITech’26](/events/cheritech26/#register){: .button } [View CHERITech’26 programme](/events/cheritech26/#register){: .button }
 
 ## CHERI meets the semiconductor industry
 
@@ -291,8 +309,8 @@ The programme includes contributions from **BSI, Siemens, Google, Ericsson, Coda
 
 The registration process has **two steps**:
 
-1. [**Purchase a valid SEMICON Europa ticket**](https://tickets.messe-muenchen.de/MM-SHOP/SEM26/)
-2. [**Register separately for CHERITech’26**](https://discover.semi.org/cheritech26-powered-by-cheri-alliance-registration.html)
+1. [**Purchase a valid SEMICON Europa ticket**](https://tickets.messe-muenchen.de/MM-SHOP/SEM26/){: .button }
+2. [**Register separately for CHERITech’26**](https://discover.semi.org/cheritech26-powered-by-cheri-alliance-registration.html){: .button }
 
 
 ## See CHERI in action
@@ -325,6 +343,3 @@ Visit the SEMICON Europa website to get:
 
 12-13 November 2026 (**Conference**) - 10-13 November 2026 (**Exhibition**)
 
-## More from this series
-
-Explore previous events to watch recordings, download presentations and follow the evolution of CHERI implementations across hardware and software.

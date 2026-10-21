@@ -16,10 +16,11 @@ related:
 
 ## Overview
 
+[![CHERI Enabled logo](/assets/images/shared/cheri-enabled.webp){: .image-left }](/adopt/assurance-and-adoption/cheri-enabled-products/)
+
 The **CHERI Enabled** programme helps organisations demonstrate how a product implements CHERI technology. Certified products receive a public certification record describing what was assessed, the supporting evidence, and the scope of the certification.
 
-| --- | --- |
-| [![CHERI Enabled logo](/assets/images/shared/cheri-enabled.webp){: .image-full }](/adopt/assurance-and-adoption/cheri-enabled-products/) | See all the [CHERI Enabled products](/adopt/assurance-and-adoption/cheri-enabled-products/) |
+See all the [CHERI Enabled products](/adopt/assurance-and-adoption/cheri-enabled-products/)
 
 ## Why CHERI Enabled matters
 
@@ -69,14 +70,16 @@ Security outcomes always depend on how technology is integrated, configured, and
 
 The programme will expand over time as the CHERI ecosystem grows, introducing additional product categories, requirements, and assessment criteria. Certifications are therefore reviewed every two years to help ensure that records remain aligned with current programme requirements.
 
-Read the [current programme specifications](/assets/pdf/shared/certification-program-v1.pdf).
+[Read the current programme specifications](/assets/pdf/shared/certification-program-v1.pdf){: .button }
 
 ## Fees
 
-- First certification: £3,000 (£1,000 for CHERI Alliance members)
-- Recertification: £1,500 (£500 for CHERI Alliance members)
+| Type of certification | Cost | Cost for CHERI Alliance members |
+| --- | ---: | ---: |
+| First certification | £3,000 | £1,000 |
+| Recertification | £1,500 | £500 |
 
-The recertification fee also applies to derivative products.
+*The recertification fee also applies to derivative products.*
 
 ## Apply for certification
 
