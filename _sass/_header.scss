@@ -1,12 +1,17 @@
 #hamburger {
+  color: inherit;
   display: none;
   font-size: $font-size-menu-button;
   line-height: 1;
   padding: $space-2;
 }
 .site-header {
+  --colour-header: #{map-get($theme-dark, header)};
+  --colour-navigation-hover: #{map-get($theme-dark, navigation-hover)};
+  --colour-focus: #{map-get($theme-dark, focus)};
   background: var(--colour-header);
   border: 0;
+  color: map-get($theme-dark, text);
   position: relative;
   width: 100%;
   z-index: $menu-layer;

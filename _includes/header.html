@@ -1,7 +1,6 @@
 <header class="site-header">
   <div class="site-container site-header-inner">
-  {% assign logo = site.logo.light %}
-  {% if page.url == '/' %}{% assign logo = site.logo.dark %}{% endif %}
+  {% assign logo = site.logo.dark %}
   <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title | escape }} home">
     <img src="{{ logo | relative_url | escape }}" alt="{{ site.title | escape }}" width="{{ site.logo.width | escape }}" height="{{ site.logo.height | escape }}">
   </a>
