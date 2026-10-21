@@ -28,7 +28,7 @@ with sync_playwright() as p:
     tabs=page.get_by_role('tab');assert tabs.count()==2
     assert page.locator('.programme-day:visible').count()==1
     assert tabs.first.get_attribute('aria-selected')=='true'
-    assert page.locator('.programme-clock').all_text_contents()==['13:05','13:20','13:40','14:00']
+    assert page.locator('.programme-clock:visible').all_text_contents()[:5]==['13:00','13:05','13:20','13:40','14:00']
     tabs.last.click();assert page.locator('.programme-session:visible').count()==6
     tabs.last.press('ArrowRight');assert tabs.first.get_attribute('aria-selected')=='true'
     tabs.first.press('End');assert tabs.last.get_attribute('aria-selected')=='true'

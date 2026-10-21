@@ -24,9 +24,6 @@
 {% endif %}
 {% if page.event %}
 {% if page.event.series %}{% assign series_events = site.events | where: 'event.series', page.event.series | where_exp: 'entry', 'entry.slug != page.slug' | sort: 'date' | reverse %}{% include relationship-section.html items=series_events kind='events' id='series-title' title='More events in this series' %}{% endif %}
-{% assign event_people = '' | split: ',' %}{% include event-credits.html record=page %}{% assign event_refs = event_credits | map: 'person' | uniq %}{% for ref in event_refs %}{% assign speaker = site.people | where: 'slug', ref | first %}{% assign event_people = event_people | push: speaker %}{% endfor %}
-{% include relationship-section.html items=event_people kind='people' id='speakers-title' title='Speakers' %}
-{% assign guest_credits = page.event.speakers | where_exp: 'credit', 'credit.name' %}{% if guest_credits.size > 0 %}<section class="related-content" aria-labelledby="guest-speakers-title"><h2 id="guest-speakers-title">Guest speakers</h2><ul>{% for credit in guest_credits %}<li>{{ credit.name | escape }}{% if credit.affiliation %} · {{ credit.affiliation | escape }}{% endif %}{% if credit.role and credit.role != 'speaker' %} ({{ credit.role | replace: '_', ' ' | escape }}){% endif %}</li>{% endfor %}</ul></section>{% endif %}
 {% assign event_organisations = '' | split: ',' %}{% assign organiser_refs = page.event.organisers | map: 'organisation' %}{% assign partner_refs = page.event.partners | map: 'organisation' %}{% assign all_org_refs = organiser_refs | concat: partner_refs | uniq %}{% for ref in all_org_refs %}{% assign organisation = site.organisations | where: 'slug', ref | first %}{% assign event_organisations = event_organisations | push: organisation %}{% endfor %}
 {% include relationship-section.html items=event_organisations kind='organisations' id='organisers-title' title='Organisers and partners' %}
 {% endif %}

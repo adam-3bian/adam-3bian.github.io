@@ -1,0 +1,54 @@
+{
+  "branch": "design/catalogue-polish",
+  "comparison_commit": "135f53f4dac3d7643941db90fdfbbca7988c9c77",
+  "authored_markdown_changed": false,
+  "front_matter_schema_changed": false,
+  "day_counts_tested": [
+    1,
+    2,
+    3,
+    4,
+    7
+  ],
+  "deployments": {
+    "root": {
+      "responsive_views": 30,
+      "accessibility_audits": 4,
+      "no_javascript_day_counts": [
+        4,
+        7
+      ],
+      "enlarged_text": "passed",
+      "rendered_routes": 756,
+      "unexpected_rendered_changes": 0,
+      "local_targets": 57486,
+      "local_link_errors": 0,
+      "person_talk_links": 138
+    },
+    "preview": {
+      "responsive_views": 30,
+      "accessibility_audits": 4,
+      "no_javascript_day_counts": [
+        4,
+        7
+      ],
+      "enlarged_text": "passed",
+      "rendered_routes": 756,
+      "unexpected_rendered_changes": 0,
+      "local_targets": 57486,
+      "local_link_errors": 0,
+      "person_talk_links": 138
+    }
+  },
+  "semantic_acceptance": {
+    "responsive_views": 60,
+    "accessibility_audits": 40
+  },
+  "preserved_first_party_assets": 416,
+  "preserved_historical_fragments": 17404,
+  "explicit_display_changes": {
+    "speaker_card_sections_removed": 7,
+    "first_presentation_times_inherited_from_session": 11,
+    "unscoped_speaker_facts": 2
+  }
+}

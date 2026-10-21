@@ -39,8 +39,9 @@ event:
   level. Never add `session`, `session_id` or `presentation_id` references.
 - Each day needs a quoted ISO date. Sessions and presentations follow YAML
   order. Use quoted `start` / `end` values (`HH:MM`) only when known.
-  CHERITech'26's four keynote starts follow the supplied design reference;
-  other talk times are not estimated.
+  An explicit presentation start always wins. If the first presentation has no
+  start, the timeline uses its session's known start; later missing times stay
+  blank. Times are never estimated from the number or duration of talks.
 - A standalone entry defaults to `talk`; a session containing presentations
   defaults to `session`. Set `type: keynote`, `break`, `networking`, `tutorial`
   or another supported type when appropriate. Breaks and networking use the
@@ -57,4 +58,51 @@ entries there. Renaming a title updates its generated profile links automaticall
 Multi-day programmes have keyboard-accessible day tabs (arrow keys, Home and
 End). Direct links reveal the appropriate day. Without JavaScript, all days are
 visible and day links jump through the full programme. Printing includes every
-day. Controls wrap and titles expand on small screens.
+day. Controls wrap and titles expand on small screens. Two, three, four and
+longer programmes use the same schema and controls, with no day-count limit.
+
+The programme spans the full content canvas below the overview and facts.
+Each day owns one continuous timeline rail. Session headings use blue bands;
+breaks and networking use green bands. Speaker names, profile links, affiliations,
+descriptions and downloads stay beside their session or presentation. Event
+pages do not repeat these speakers in a separate card list. Event-wide credits
+not attached to a programme entry remain compact facts in the aside; person
+profiles still derive their Events and CHERI talks from the same source data.
+
+For example, exhibition-only days use the existing fields:
+
+```yaml
+- date: '2026-11-10'
+  label: Exhibition only
+  sessions:
+  - title: CHERI area
+    description: Exhibits and demonstrations in Hall B0.
+```
+
+Add further days as siblings in `event.schedule`, in date order, and keep the
+top-level `date` / `end_date` wide enough to include them. A descriptive `label`
+appears beneath the date on its tab; a label identical to the weekday is omitted
+to avoid repeating it. An empty `sessions: []` day remains selectable and shows
+“No sessions listed for this day.” Existing IDs, fields and Markdown do not need
+to be migrated.
+
+`scripts/test_programme.rb` and `scripts/test_programme.py` verify one-, two-,
+three-, four- and seven-day fixtures, grouped and flat entries, empty days,
+explicit/inherited/missing times, keyboard navigation, deep links, print,
+200% text and no-JavaScript use. CI runs these at both deployment paths.
+
+## Design review
+
+The CHERITech screenshots use the unchanged event record. The four-day examples
+are synthetic test fixtures demonstrating labels and responsive tab wrapping.
+
+| View | CHERITech | Four-day fixture |
+| --- | --- | --- |
+| Desktop | [Timeline](screenshots/event-timeline/desktop-cheritech26.png) | [Four days](screenshots/event-timeline/desktop-four-days.png) |
+| Mobile | [Timeline](screenshots/event-timeline/mobile-cheritech26.png) | [Four days](screenshots/event-timeline/mobile-four-days.png) |
+
+[Verification results](screenshots/event-timeline/verification.json) cover
+both root and `/preview` deployments. The rendered-content comparison permits
+only the requested speaker-list removal, retained aside credits and first-talk
+start times taken from their sessions; other content, links and anchors remain
+protected.

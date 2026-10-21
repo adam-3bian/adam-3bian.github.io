@@ -13,10 +13,11 @@ layout: default
 {% if page.publication.authors.size > 0 %}<section class="publication-authors" aria-labelledby="authors-title"><h2 id="authors-title">Authors</h2>{% include authors.html authors=page.publication.authors %}</section>{% endif %}
 {% if page.publication.citation %}<section class="citation-block" aria-labelledby="citation-title"><h2 id="citation-title">Citation</h2>{{ page.publication.citation | markdownify }}</section>{% endif %}
 {{ content }}
-{% include event-programme.html %}
+{% unless page.event.schedule.size > 0 %}{% include event-programme.html %}{% endunless %}
 {% if page.guide %}{% include resource-links.html %}{% endif %}
 {% if page.sitemap == false and page.canonical_url %}<p class="archive-notice">This is a retained version. <a href="{{ page.canonical_url | relative_url }}">Read the current policy</a>.</p>{% endif %}
 </article></div>
+{% if page.event.schedule.size > 0 %}<div class="content programme-content">{% include event-programme.html %}</div>{% endif %}
 
 {% for form_key in page.forms %}{% assign form_data = site.data.forms[form_key] %}{% if form_data %}{% include form-from-data.html form=form_data %}{% endif %}{% endfor %}
 {% include relationships.html %}

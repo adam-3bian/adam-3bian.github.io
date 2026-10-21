@@ -57,7 +57,6 @@ def associations(records, kind, record):
     if kind == 'events':
         series = record['event'].get('series')
         add('series-title', [item for item in entries('events') if series and item['event'].get('series') == series and item['slug'] != slug])
-        add('speakers-title', resolve('people', references(record, 'event', 'speakers', 'person')))
         add('organisers-title', resolve('organisations', references(record, 'event', 'organisers', 'organisation') + references(record, 'event', 'partners', 'organisation')))
     if kind == 'products':
         manufacturer = record['product'].get('manufacturer')
@@ -90,6 +89,10 @@ def fact_links(record, records):
     for group, field in [('person', 'organisations'), ('event', 'organisers'), ('event', 'partners'), ('repository', 'maintainers')]:
         expected.extend(records['organisations'][ref['organisation']][1]['permalink'] for ref in record.get(group, {}).get(field, []))
     expected.extend(records['people'][ref['person']][1]['permalink'] for ref in record.get('working_group', {}).get('leads', []) if ref.get('person'))
+    credits = record.get('event', {}).get('speakers', [])
+    programme_people = {ref['person'] for ref in credits if ref.get('session') and ref.get('person')}
+    expected.extend(records['people'][ref['person']][1]['permalink'] for ref in credits
+                    if ref.get('person') and not ref.get('session') and ref['person'] not in programme_people)
     return expected
 
 

@@ -1213,9 +1213,9 @@
   },
   "events/cheri-blossoms-conference-2025/index.html": {
     "ids": "23def61a39aef62b2fb9827ad61cdbad5f2839f4ef8d392e026f1fa78c785e3d",
-    "images": "bc39ef68e30df0c91353fff171977376af86c8c75d54a1ef2a393e56cb579fa9",
-    "links": "2e22691da89cf00d2130389ff0bf64078d0b770e09d81f9fc97780d6d843d78a",
-    "text": "3ee977281b1dfe5e8211fe48627a76582bf794dc819fd381edbbf851340a522a"
+    "images": "9bb78cc60a2a6028c6fcdd6bfdab0b926affbf00fa64926e8e371cb57aede9f6",
+    "links": "ffd06850ffcb6e897bff6c65b8cbc7217c95677a644d3dc8996f0c01c16a01b6",
+    "text": "15b2b7d2e7387150288940073aaf4e533737ace01f7f20a74556742feed76459"
   },
   "events/cheri-blossoms-conference-2026-intro-to-cheri-and-cheriot/index.html": {
     "ids": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
@@ -1225,9 +1225,9 @@
   },
   "events/cheri-blossoms-conference-2026/index.html": {
     "ids": "6e55f6f3d8072c77e9c9679e0e1dc57afd39806d3723438a338f47997bdfcd9a",
-    "images": "abb063db44f16239b926866117be9f29e40d065f126e28f9914f19c827756e63",
-    "links": "a65deab63b7b8129238f69eae3956890955a6f71bb305594014b5ffd0417f8c8",
-    "text": "9179a5b2f1ebcc93ab1cc5a4ecd55ca283f239ade473fa61624d8684e6ca87f3"
+    "images": "b83a8daaabfbd5edaddbe3d31e985181ba140665656005732edcbabc6c36f0bc",
+    "links": "83040453fbaa55cce0f6326c5a4d291f100240b0899212c0280dc3de76f84f00",
+    "text": "c374122cea30dfc73dfc4f5948055c27c5e7a20024090170ce146054e2c7546b"
   },
   "events/cheri-blossoms-conference-2027/index.html": {
     "ids": "027a37de064a15685bbfd94b46a0269d65903baa1570d2552a6fa7e97658f555",
@@ -1249,27 +1249,27 @@
   },
   "events/cheritech25-reloaded/index.html": {
     "ids": "78428ecdd999be4de1acf3ce69285125f0df81813e842c967eef711b731514cc",
-    "images": "ff88bfa05358776fd00343f2bffe5b33abc2f6422a0299434681aa591d00a75b",
-    "links": "e591e209c2b6c4991affff3e7b71cafd48805723ec5686f7bd9ed777d3742eed",
-    "text": "75884926cb93271766f14e70e0dee33943a437337387ca1dda3ae4207b9f56fa"
+    "images": "19652213f9f1a5118234d0c74bf89f69553307772504b5388bd4e43a5fd976c3",
+    "links": "8318cc001407c6152497250df9ba5c40effdde78f0c1742e918e10792d86da60",
+    "text": "31719c4e39b60f90d2564f03da4d5be41115a7d6b33e8f275f41a450363f43cf"
   },
   "events/cheritech25/index.html": {
     "ids": "19fc5e4e218bdf54d855e199c91d802e768ca28799e3adf5e2927ee749adeea3",
-    "images": "c9b29ad872afc6e2f983f19421f759de858ad58aae0cb934791d6225b8732d5e",
-    "links": "fea084e41f6c1e5c70ae0d54ab81967151756fc06829611c7af0ad4845a79d14",
-    "text": "34ceb3e1f02f5482a63a12312a26976b9ace8d8c228b4d2bf13d83dd3e5fccd1"
+    "images": "d00cd6c546127e1fe9c61151001339593c61350243b02b625dd11d9da81e2bda",
+    "links": "eb6e0b97699548634c2350418128526d1ee94b3e5742f686ac039f5ebcab792e",
+    "text": "55ffd2812c6b219a52b7e2df774c22bd7d30ebcdca05e6086aff3cabf677c0b3"
   },
   "events/cheritech26/index.html": {
     "ids": "2819cbfa8c332e9857c4b57a825840176a1f0d3d4aa79d6ba86fa000c85e311a",
-    "images": "7aac029f7d0c211908c380cbf91bbc941a1cfaab3ab99fe67be9ef4f0f932010",
-    "links": "5fee643479e919f5a1426e061b820451b5c3be5459b2784ba7e31f12367f7423",
-    "text": "b6d216fe264b53e740a37885a12666c4b596ca5dc8859908c40ff51f9e977c06"
+    "images": "5d21ecdc1198f70e0e2e0e00927b25761e6734b2f26df11422a4cc22a6bf655e",
+    "links": "d65214f160281da7cb683af44952b6b0b39557e96a33d86278cdae34645befda",
+    "text": "3a7fc328f8329b13fafe388a8160c34e144f371471f97c1b9d2dd88e3be20f83"
   },
   "events/cybersecurity-by-design-conference-2024/index.html": {
     "ids": "4b45b60522e59f27708c89ed6c5f16b30a1f7cfe72c17bf7ae527d4e68944b5d",
-    "images": "86e8daafe0cee16090aed78ed50d4b0d306899bfac7a9f0eb6b361d4b153b3c8",
-    "links": "fba547604506634f5b58ebc4f19406ab305af6d55570ddf8d42f6ae76cb4d78a",
-    "text": "fc7b254b283ff77755c219aa9fa6010305334073139faf2c4738624be4766387"
+    "images": "3cdd7dadca2520dfcd1714dfb73a5078d71e679fefd6f05cf1c008a88dff3fcf",
+    "links": "e67d13f3cb1c15c6c4cf33ef6f3b7df7b56bd55a21408c74d4536e0c1993daca",
+    "text": "dc3605f27b6b203ed8150a8d154f53bb23199bfc734c458f745d05b308f3ec95"
   },
   "events/embedded-world-2026/index.html": {
     "ids": "226f995bd562b65f7564899a1beeff0ccf1766be158456af54882e34c3aa5e34",
@@ -1285,9 +1285,9 @@
   },
   "events/webinar-cheri-cra-compliance/index.html": {
     "ids": "9147d1264d18ca1db45dd67cbb293b89c9f5cb34fda7f254e9dd6875e2606704",
-    "images": "f893e02f7ede2d5a60fff2897c5ba0260707a349d6d725e3c5e65d9f57b15c2b",
+    "images": "5bb0cd33ae07a96bc0dfa55415e1100def5393b995a4847a08d4c615508569a8",
     "links": "557ae3f3ef6a13e584c358ec00c84fdf2e3f451d55945172a0aa66b3b24bc30d",
-    "text": "26b6b27c37a1e32608d69752e44a44a3bc98c88542396c355b6bb905eccee334"
+    "text": "59fd98191cbcb94db6d89c098c0d51e2c3a1162a114b38df179ea061093d044f"
   },
   "groups/certification-working-group/index.html": {
     "ids": "38b9ca3ffb5505d8657787fff0417d66012c342c6b5aaaa358ff3f5fc43ba5df",

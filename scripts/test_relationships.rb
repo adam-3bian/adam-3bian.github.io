@@ -24,7 +24,7 @@ end
 speakers=[{'person'=>'dual','role'=>'speaker','session'=>'opening'}]
 event={'slug'=>'event','title'=>'Event','url'=>'/events/event/','event'=>{'organisers'=>orgs.map{|o|{'organisation'=>o['slug'],'role'=>'organiser'}},'speakers'=>speakers}}
 output=render.call('relationships.html',event,{'people'=>[person],'organisations'=>orgs})
-abort 'Multiple organisers/speakers did not resolve' unless orgs.all?{|o|output.at_css("a[href='#{o['url']}']")}&&output.at_css('a[href="/people/dual/"]')
+abort 'Organisers were lost or a separate speakers list returned' unless orgs.all?{|o|output.at_css("a[href='#{o['url']}']")} && output.css('[aria-labelledby="speakers-title"], [aria-labelledby="guest-speakers-title"]').empty?
 guides=(1..3).map{|n|{'slug'=>"guide-#{n}",'title'=>"Guide #{n}",'url'=>"/guides/guide-#{n}/",'guide'=>{'series'=>'onboarding','sequence'=>n}}}
 guides.each_with_index do |guide,index|
  output=render.call('_layouts/detail.html',guide,{'guides'=>guides})
@@ -67,6 +67,7 @@ nested_event=event.merge('event'=>{'schedule'=>[{'date'=>'2026-11-12','sessions'
 output=render.call('relationships.html',editor_person,{'people'=>[editor_person],'events'=>[nested_event],'organisations'=>orgs})
 abort 'ID-free programme did not generate both talk cards' unless output.css('[data-talk-id]').size==2
 programme=render.call('event-programme.html',nested_event,{'people'=>[editor_person]})
+abort 'Timeline speaker links were lost' unless programme.css('.programme-speakers a[href="/people/dual/"]').size==2
 abort 'Generated profile talk links do not target programme entries' unless output.css('[data-talk-id] .talk-copy a').all?{|a|programme.at_css("[id='#{a['href'].split('#').last}']")}
 abort 'Nested slides did not follow the correct talk' unless output.css('[data-talk-id]').first.css('a[href="/opening.pdf"]').size==1 && output.css('[data-talk-id]').last.css('a[href="/opening.pdf"]').empty?
 lead_group={'slug'=>'group','title'=>'Group','url'=>'/groups/group/','working_group'=>{'type'=>'technical','leads'=>[{'person'=>'dual'},{'name'=>'Named co-lead'}]}}

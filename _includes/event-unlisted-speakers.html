@@ -1,0 +1,15 @@
+{%- assign programme_people = '' | split: ',' -%}{%- assign programme_names = '' | split: ',' -%}
+{%- for day in include.record.event.schedule -%}{%- for session in day.sessions -%}
+{%- assign scoped_people = session.speakers | map: 'person' -%}{%- assign scoped_names = session.speakers | map: 'name' -%}
+{%- assign programme_people = programme_people | concat: scoped_people -%}{%- assign programme_names = programme_names | concat: scoped_names -%}
+{%- for presentation in session.presentations -%}
+{%- assign scoped_people = presentation.speakers | map: 'person' -%}{%- assign scoped_names = presentation.speakers | map: 'name' -%}
+{%- assign programme_people = programme_people | concat: scoped_people -%}{%- assign programme_names = programme_names | concat: scoped_names -%}
+{%- endfor -%}{%- endfor -%}{%- endfor -%}
+{%- assign extra_event_speakers = '' | split: ',' -%}
+{%- for credit in include.record.event.speakers -%}
+{%- assign in_programme = false -%}
+{%- if credit.person and programme_people contains credit.person -%}{%- assign in_programme = true -%}
+{%- elsif credit.name and programme_names contains credit.name -%}{%- assign in_programme = true -%}{%- endif -%}
+{%- unless in_programme -%}{%- assign extra_event_speakers = extra_event_speakers | push: credit -%}{%- endunless -%}
+{%- endfor -%}
