@@ -13,10 +13,63 @@
   font-size: $font-size-hero-text;
   margin-top: $space-6;
 }
+
+// Ordinary pages, articles and collection records use page-header.html.
+// A minimum frame gives short titles room; wrapping copy can always grow it.
+.page-heading {
+  align-items: center;
+  background: var(--colour-hero);
+  color: var(--ink);
+  display: flex;
+  gap: $space-8;
+  justify-content: space-between;
+  margin: 0;
+  min-height: 14rem;
+  width: 100%;
+}
+.page-heading h1 {
+  color: var(--ink);
+  font-size: var(--type-page);
+  font-weight: $font-weight-semibold;
+  letter-spacing: $letter-spacing-heading-1;
+  line-height: 1.16;
+}
+.heading-copy { flex: 1; min-width: 0; width: 100%; }
+.record-status { background: var(--surface-soft); border-radius: var(--radius-small); color: var(--accent); display: inline-block; font-family: $font-family; font-size: var(--type-label); font-weight: 500; line-height: 1.5; margin: 0 0 $space-2; padding: $space-1 $space-2; }
+.page-summary { color: var(--muted); font-size: 1.125rem; line-height: var(--leading-body); margin-top: $space-4; }
+.page-summary p { margin: 0; }
+.record-portrait {
+  aspect-ratio: 1;
+  background: #fff;
+  border: 0;
+  border-radius: var(--radius);
+  flex: 0 0 160px;
+  margin: 0;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 160px;
+}
+.record-portrait img { display: block; height: 100%; inset: 0; position: absolute; width: 100%; }
+.record-portrait.image-kind-people img { object-fit: cover; }
+.record-portrait.image-kind-organisations { aspect-ratio: 3 / 1; flex-basis: 270px; width: 270px; }
+.record-portrait.image-kind-organisations img { object-fit: contain; }
+.record-portrait.image-kind-events { aspect-ratio: 16 / 9; flex-basis: 240px; width: 240px; }
+.record-portrait.image-kind-events img { object-fit: cover; }
+
 @media (min-width: $desktop-breakpoint) {
   .hero { padding-block: $space-12; }
   .hero-large h1 { font-size: var(--type-display); }
 }
 @media (max-width: $desktop-breakpoint - 1px) {
   .hero-support { font-size: .62em; }
+  .page-heading { align-items: flex-start; flex-direction: column; gap: $space-4; justify-content: center; min-height: 8rem; }
+  .heading-copy { flex: none; }
+  .page-summary { font-size: 1rem; }
+  .record-portrait { flex: none; width: 80px; }
+  .record-portrait.image-kind-organisations { flex: none; width: 240px; }
+  .record-portrait.image-kind-events { flex: none; width: 192px; }
+  // Keep the name and face together, vertically centred, on small screens.
+  .page-heading:has(.image-kind-people) { align-items: center; flex-direction: row; }
+  .page-heading:has(.image-kind-people) .heading-copy { flex: 1; }
 }

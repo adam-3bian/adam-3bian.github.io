@@ -15,7 +15,7 @@
   text-decoration: none;
 }
 .programme-day-label { font-size: .8125rem; }
-.content .programme-days a:is(:hover, [aria-selected='true']) { background: $brand-blue; color: #fff; }
+.content .programme-days a:is(:hover, :focus-visible, [aria-selected='true']) { background: $brand-blue; color: #fff; }
 .programme-day { margin-block: $space-6; min-width: 0; }
 .programme-day[role='tabpanel']:focus-visible { outline: $focus-width solid var(--colour-focus); outline-offset: $space-1; }
 .programme-date { font-size: var(--type-title); margin-bottom: $space-5; }

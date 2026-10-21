@@ -70,5 +70,5 @@ a.slide-link { cursor: pointer; }
 }
 
 // Shared brand treatment; reading surfaces stay opaque.
-.slider .slide-link { box-shadow: none; }
-.slider:has(a.slide-link:hover) .slider-track { box-shadow: var(--elevation-3); }
+.slider .slide-link, .slider .slide-link:is(:hover, :focus-visible) { box-shadow: none; }
+.slider:has(a.slide-link:is(:hover, :focus-visible)) .slider-track { box-shadow: var(--elevation-3); }

@@ -45,7 +45,7 @@ with sync_playwright() as p:
                 slider:one('.slider'),surface:one('.page-surface'),hero:one('.hero,.page-heading'),subscription:one('.promotional-panel'),footer:one('.footer-surface'),breadcrumbBand:one('.breadcrumb-band'),headingCopy:one('.page-heading .heading-copy'),heading:one('.page-heading'),breadcrumbs:one('.breadcrumbs'),body:one('.record-body'),aside:one('.detail-aside'),
                 article:one('.reading-content'),lead:one('.article-lead'),
                 summary:one('.page-summary'),directoryIntro:one('.directory-content > p'),heroIntro:one('.hero-intro > .lede'),
-                types:[...document.querySelectorAll('.record-facts dt')].filter(e=>['Type','Publication type'].includes(e.textContent.trim())).map(e=>e.nextElementSibling.textContent.trim()),
+                types:[...document.querySelectorAll('.record-facts dt')].filter(e=>['Type','Publication Type'].includes(e.textContent.trim())).map(e=>e.nextElementSibling.textContent.trim()),
                 narrowDefinitions:[...document.querySelectorAll('.glossary-entry dd')].some(e=>Math.abs(e.getBoundingClientRect().width-e.parentElement.getBoundingClientRect().width)>1),
                 category:one('.category-links'),cards:[...document.querySelectorAll('.catalog-card')].slice(0,8).map(e=>({
                   ...box(e),copy:box(e.querySelector('.catalog-copy')),title:box(e.querySelector('h2,h3')),

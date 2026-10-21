@@ -1,11 +1,18 @@
-<header class="page-heading{% if page.landing %} is-landing{% endif %}{% if include.detail or page.image.src %} record-header{% endif %}">
+{% if page.url == '/' %}<section class="hero hero-large" aria-labelledby="page-title">
+  <div class="hero-intro">
+    <span id="page-hero-title" class="anchor-alias"></span><span id="hero-title" class="anchor-alias"></span>
+    <h1 id="page-title" class="page-hero-title"><span class="hero-opening">{{ page.landing.heading.title | escape }}</span><small class="hero-support">{% for line in page.landing.heading.subtitle %}<span{% if forloop.last %} class="hero-signoff"{% endif %}>{{ line | escape }}</span>{% endfor %}</small></h1>
+    <div class="lede">{{ page.summary | markdownify }}</div>
+    {% if page.landing.heading.introduction %}<div class="lede">{{ page.landing.heading.introduction | markdownify }}</div>{% endif %}
+  </div>
+</section>{% else %}<header class="page-heading{% if page.landing %} is-landing{% endif %}{% if include.detail or page.image.src %} record-header{% endif %}">
 <div class="heading-copy">
 {% if page.sitemap == false %}<p class="record-status">Archived version</p>{% endif %}
 <span id="page-hero-title" class="anchor-alias"></span><span id="hero-title" class="anchor-alias"></span>
 <h1 id="page-title">{{ page.title | escape }}</h1>
 {% if include.article %}{% assign article_words = content | strip_html | number_of_words %}{% assign reading_minutes = article_words | plus: 199 | divided_by: 200 %}{% if reading_minutes < 1 %}{% assign reading_minutes = 1 %}{% endif %}{% assign category_label = page.post.category | replace: '_', ' ' | replace: '-', ' ' | capitalize %}{% for tag in page.post.tags %}{% assign tag_slug = tag | slugify %}{% if tag_slug == page.post.category %}{% assign category_label = tag %}{% break %}{% endif %}{% endfor %}<div class="article-byline"><span class="article-category">{{ category_label | escape }}</span><span aria-hidden="true">·</span>{% include date.html value=page.date %}{% if page.post.authors.size > 0 %}<span aria-hidden="true">·</span>{% include authors.html authors=page.post.authors hide_roles=true %}{% endif %}<span aria-hidden="true">·</span><span class="reading-time">{{ reading_minutes }} min read</span></div>{% endif %}
-{% if page.summary and include.article != true and page.organisation.membership.is_member != true %}<div class="page-summary">{{ page.summary | markdownify }}</div>{% endif %}
+{% if page.summary and include.article != true and page.collection != 'people' and page.organisation.membership.is_member != true %}<div class="page-summary">{{ page.summary | markdownify }}</div>{% endif %}
 {% if include.detail and use_sidebar == false and fact_count > 0 %}<dl class="record-facts inline-facts">{{ fact_rows }}</dl>{% endif %}
 </div>
 {% if page.image.src and include.article != true and page.policy == nil %}<figure class="record-portrait image-kind-{{ page.collection }}">{% include image.html image=page.image eager=true %}</figure>{% endif %}
-</header>
+</header>{% endif %}

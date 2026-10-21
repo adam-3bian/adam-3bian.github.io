@@ -1,10 +1,10 @@
 # CHERI corporate presentation system
 
-The design combines a confident dark homepage, a white elevated mega-menu and calm inner pages. The visible identity comes from Poppins, navy and logo blue, the continuous honeycomb, a deliberate blue–teal feature surround and clean resting elevation. Decorative outlines, repeated field rules, small uppercase eyebrows and red interface accents are excluded. Native HTML and the existing Jekyll pipeline remain; no framework runtime or new authoring fields are required.
+The design combines a confident dark homepage, matching navigation and heroes, a white elevated mega-menu and calm inner-page content. The visible identity comes from Poppins, navy and logo blue, the continuous honeycomb and clean resting elevation. Repeated field rules, small uppercase eyebrows and red interface accents are excluded. Native HTML and the existing Jekyll pipeline remain; no framework runtime or new authoring fields are required.
 
 ## Ownership and cascade
 
-`settings.scss` owns the palettes, established font assignments, spacing scale and container dimensions. `tokens.scss` defines shared type, radius, surface and elevation roles. `cards.scss` owns navigation surfaces and interaction states; `actions.scss` owns action proportions and states. `detail.scss` owns collection and editorial geometry, while `catalog.scss` owns directory controls and record arrangements. `catalogue-navigation.scss` only arranges menu-derived category choices. It must not redefine card surfaces or catalogue media.
+`settings.scss` owns the palettes, established font assignments, spacing scale and container dimensions. `tokens.scss` defines shared type, radius, surface and elevation roles. `page-header.html` renders every hero, including the distinct homepage opening; `hero.scss` owns hero alignment, title sizing and image frames. `cards.scss` owns navigation surfaces and interaction states; `actions.scss` owns action proportions and states. `detail.scss` owns collection and editorial geometry, while `catalog.scss` owns directory controls and record arrangements. `catalogue-navigation.scss` only arranges menu-derived category choices. It must not redefine card surfaces or catalogue media.
 
 The import order is foundations, base rules, navigation and site components, then detail, catalogue and reference arrangements. The reduced-motion preference is applied after component declarations. Replace an obsolete rule at its source instead of appending another competing override. A variation requires a structural reason, such as square portraits versus rectangular logos or a multi-action panel versus a single destination.
 
@@ -18,11 +18,11 @@ The import order is foundations, base rules, navigation and site components, the
 | Neutral | `#f3f5f6`; passive supporting information and control fills |
 | Supporting text | `#50616d` on white; readable hierarchy without faint text |
 | Cyan | `#b9e2f1`; controlled emphasis and accessible links on dark surfaces |
-| Teal | Decorative feature gradient only; no collection-specific palettes |
+| Teal | Link-hover and focus roles; no collection-specific palettes |
 
 There is no red interface role. Existing image, logo and document-artwork colours remain unchanged, including the red PDF artwork in authored policy content. Errors use explicit language and contrast rather than a red-only signal.
 
-Only the homepage selects the dark palette through its explicit page class. There is no theme toggle, stored theme preference or system-theme switch. Poppins remains on headings, navigation, cards and actions, and throughout the homepage. Inner-page reading copy and form fields retain their existing system font. Code retains its technical font.
+The homepage uses a dark canvas. Navigation and inner-page heroes use exactly the same dark palette over the light inner-page canvas. There is no theme toggle, stored theme preference or system-theme switch. Poppins is shared by headings, body text, navigation, cards and actions. Code retains its technical font.
 
 | Token | Role |
 | --- | --- |
@@ -41,11 +41,13 @@ The shared container is 1264px including 20px mobile or 32px desktop gutters, gi
 
 The honeycomb is applied once to the body pseudo-element at its native scale. Its opacity is .30 on light pages and .42 on the homepage. Do not restart the artwork per section. Outer fills may be translucent; text, controls and images must never inherit parent opacity. Every text region meets an opaque plain surface before the artwork or a gradient.
 
-The feature-slider surround uses one 115-degree transition from translucent navy through logo blue to blue-teal. Its 24–32px padding makes that decorative treatment visible. The slide and its controls remain on opaque surfaces. Do not spread gradients over paragraphs, logos or routine cards.
+The feature slider has one elevated track with opaque slides and a separate compact control group. It has no additional gradient surround or nested elevated slide surface. Hover and keyboard focus raise the track together.
 
-Newsletter and footer form one continuous opaque navy closing region with the same width and padding. The promotion has the top corners and the footer the bottom corners. Both outer surrounds use the same uniform `rgba(16, 60, 80, .86)` tint, allowing the honeycomb to continue through the gutters. There is no newsletter gradient, separate floating footer column, or contrasting box between these regions. On mobile, the heading and subscription action stack naturally.
+Newsletter and footer use separate opaque navy panels with the same width and padding, a 16px gap and 10px corners. Their outer surrounds are transparent so the page honeycomb continues through the gutters. There is no newsletter gradient or separate floating footer column. On mobile, the heading and subscription action stack naturally.
 
-The hero uses an 80px maximum opening, a subordinate half-size desktop supporting statement and one cyan CHERI conclusion. Mobile scales the supporting statement for readability. All wording and meaningful grouping are preserved. The hero is flat and passive, aligned with the slider, with one subtle bottom divider and no surrounding frame. This single divider is an explicit exception to the borderless presentation rule.
+The homepage hero uses an 80px maximum opening, a subordinate half-size desktop supporting statement and one cyan CHERI conclusion. Mobile scales the supporting statement for readability. Ordinary heroes share the responsive page-title scale, 32px desktop/16px mobile padding, a 10px radius and the same subtle frame as other bounded regions. Their minimum height is 14rem desktop and 8rem mobile; there is no fixed height or clipping. The entire heading group is vertically centred beside any image. Mobile portraits remain beside the name; logos and event images stack below the heading group. Longer titles, introductions and inline facts grow the frame naturally.
+
+People, member-organisation and news heroes omit summaries. Those source fields remain available to search, metadata and cards; body content is unchanged. Other page introductions remain visible. Do not add per-record layout flags or move biographies into the hero. Generated fact labels and directory control labels use consistent capitalisation, such as “Governance Role” and “Sort By”; authored Markdown names, roles and values retain their original case.
 
 ## Elevation, boundaries and interaction
 
@@ -56,9 +58,9 @@ The hero uses an 80px maximum opening, a subordinate half-size desktop supportin
 | 2 | Featured slider and modest hover emphasis |
 | 3 | Expanded desktop menu |
 
-Each elevated level combines a short contact shadow and a restrained ambient shadow from the same navy family. Cards have visible resting depth without an outline. Hover changes surface or elevation without movement, scaling or underlining a whole-card title. Keyboard focus uses a separate visible 3px outline. Selection uses fill and weight plus semantic pressed/expanded state. Disabled actions are flat and readable.
+Each elevated level combines a short contact shadow and a restrained ambient shadow from the same navy family. Cards have visible resting depth without an outline. Hover and keyboard focus share surface/elevation feedback, without movement, scaling or underlining a whole-card title. Keyboard focus adds a separate visible 3px outline. This state pairing also applies to text links, directory view controls, glossary controls, programme tabs and featured slides. Passive panels do not respond as links. Selection uses fill and weight plus semantic pressed/expanded state. Disabled actions are flat and readable.
 
-Decorative borders are absent from cards, portraits, logo frames, page headers, asides, citations, promotional panels and glossary entries. The remaining borders serve a function: input definition, comparison-table structure, the requested hero divider and keyboard/target focus. Authored horizontal rules remain semantic breaks with spacing, without conspicuous visible lines. Do not restore card outlines on hover.
+Cards, portraits, logo frames, asides, citations and glossary entries have no decorative outline. The global hero, content, promotion and footer panels share a subtle 1px frame. Other borders serve input definition, comparison-table structure and keyboard/target focus. Authored horizontal rules remain semantic breaks with spacing, without conspicuous visible lines. Do not restore card outlines on hover.
 
 ## Navigation cards and media
 
@@ -68,15 +70,17 @@ Metadata is explicit through the include parameter `metadata=true`. Event dates/
 
 All linked records use a common footer for the arrow and any permitted informational label. Grid footers align at the bottom; compact rows place the arrow consistently to the right. Founder labels derive only from existing membership metadata and have no emblem, fill, outline, shadow or independent interaction. Wide membership lists use a stable footer position; narrow lists give the label a separate row to avoid collisions. The protected member/founder counts are 52 and 21.
 
-Portraits are square: 56px in ordinary rows, 88px in desktop grids and 72px in mobile grids. Portrait grids use compact horizontal identity cards rather than landscape poster slots. Logos are contained in white rectangular areas: 112×56px in wide rows, up to 240×104px in grids, and 260×130px on desktop details. The frame has no decorative outline. Detail portraits are 160px desktop and 80px mobile. Editorial/conference media use landscape frames and preserve text-bearing artwork through containment. Existing source fit/crop information is respected.
+Portraits are square: 56px in ordinary rows, 88px in desktop grids and 72px in mobile grids. Portrait grids use compact horizontal identity cards rather than landscape poster slots. Logos use 3:1 contained frames, including 270×90px desktop heroes and up to 240×80px mobile heroes. The frame has no decorative outline and a white backing keeps transparent artwork readable. Detail portraits are 160px desktop and 80px mobile, with face-focused cover images. News/event thumbnails use 16:9 cover images in cards, heroes and article leads. Additional authored content images retain their own proportions.
 
 Image-bearing directories retain neutral placeholders for absent or failed media. Placeholders are decorative beside the title, not invented identities. Text-only navigation and sparse detail headers do not reserve absent media space. Source assets, alternative text and relationships stay intact.
 
 ## Actions and promotional components
 
-`action.html` supplies native navigation/download anchors with shared URL and baseurl handling. `resource-action.html` delegates to it. Operations remain buttons. Actions share Poppins at .9375rem/1.4, weight 500, 48px minimum height, 10px radius, 12px icon spacing and an 18px icon. Primary actions are filled and shallowly elevated; secondary actions use a quiet opaque neutral fill without an outline. On inverse surfaces, primary actions are white with logo-blue text.
+`action.html` supplies native navigation/download anchors with shared URL and baseurl handling. `resource-action.html` delegates to it. Operations remain buttons. Actions share Poppins at .9375rem/1.4, weight 500, 48px minimum height, 10px radius, 12px icon spacing and an 18px icon. Actions use a white fill with logo-blue text and shallow elevation in both palettes.
 
 Resource actions fit their labels instead of becoming unrelated full-width bars. Long labels wrap. The source primary resource remains prominent. Prose links remain recognisable as links.
+
+Contact Us and Get the newsletter use white buttons with logo-blue text in both palettes; hover and keyboard focus invert those colours. Footer links retain their filled hover treatment without a mouse-hover underline, and keep a keyboard-focus indicator.
 
 `promotional-panel.html` is passive with a standard section heading and one real primary subscription link. `subscribe.html` and the legacy newsletter include share it. The wording remains “Stay connected with CHERI” and “Get the newsletter”, with any existing supporting sentence preserved. There is no whole-banner link or simulated second button.
 
@@ -88,7 +92,7 @@ Aside selection uses existing information roles, not a generic field-count thres
 
 | Family | Existing information and arrangement |
 | --- | --- |
-| People | Name, introduction, square portrait and short identity facts near the title. An aside is justified by substantive publication/documentation/download resources alongside other links. Name-only records remain sparse. Talks and publications use the shared relationship components. |
+| People | Name and square portrait in the hero, with biography and useful identity facts below. An aside is justified by substantive publication/documentation/download resources alongside other links. Name-only records remain sparse. Talks and publications use the shared relationship components. |
 | Organisations | Rectangular contained logo; membership facts and resources form a supporting group when both exist. Activities, products and people stay in the body/relationships. |
 | Events | Date/location records use an aside for timing, venue, format and resources. Status remains date-derived; cancellation/postponement remain separate. Programmes, speakers and timetables stay intact. |
 | Papers | Ordered authors and original citation stay in the main column. Publication facts and actual resources use the aside. Long author lists wrap without truncation. |
@@ -103,7 +107,7 @@ Aside selection uses existing information roles, not a generic field-count thres
 
 ## Editorial, category and reference families
 
-News and ordinary pages have a compact title area, optional existing introduction and concise news byline. They use the full available reading canvas without compulsory asides or raised article wrappers. Navigation and resources around the article share the card system. Comparison tables, timetables, code and editorial images retain responsive handling.
+News heroes contain the title and concise byline; ordinary pages retain their existing introduction. They use the full available reading canvas without compulsory asides or raised article wrappers. Navigation and resources around the article share the card system. Comparison tables, timetables, code and editorial images retain responsive handling.
 
 Category and subcategory indices use the existing menu groups as compact card choices. Additional authored destinations remain available once each. Remove generated duplication, never meaningful explanations or independent links. Kramdown sometimes turns pipe-separated navigation into a one-row table, including the 404 page. The content enhancement converts only two-to-four-cell, headerless, link-only rows without non-link IDs into shared navigation choices, retaining labels, destinations and punctuation. Real data tables retain their markup and responsive scrolling; without JavaScript the original native links remain available.
 

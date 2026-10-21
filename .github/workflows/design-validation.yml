@@ -101,6 +101,8 @@ jobs:
           export AXE_PATH="$RUNNER_TEMP/accessibility/node_modules/axe-core/axe.min.js"
           SITE_URL=http://127.0.0.1:4200/ REPORT_ROOT=reports/components/root python scripts/test_components.py
           SITE_URL=http://127.0.0.1:4201/preview/ REPORT_ROOT=reports/components/preview python scripts/test_components.py
+          SITE_URL=http://127.0.0.1:4200/ REPORT_ROOT=reports/heroes/root python scripts/test_heroes.py
+          SITE_URL=http://127.0.0.1:4201/preview/ REPORT_ROOT=reports/heroes/preview python scripts/test_heroes.py
           SITE_URL=http://127.0.0.1:4200/ REPORT_ROOT=reports/forms/root python scripts/test_forms.py
           SITE_URL=http://127.0.0.1:4201/preview/ REPORT_ROOT=reports/forms/preview python scripts/test_forms.py
           BROWSERS=webkit,chromium,firefox SITE_URL=http://127.0.0.1:4200/ REPORT_ROOT=reports/corporate/root python scripts/test_corporate.py

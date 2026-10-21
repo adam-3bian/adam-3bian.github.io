@@ -1,0 +1,52 @@
+{
+  "branch": "design/catalogue-polish",
+  "comparison_commit": "41405819ee1f9513c164719ee47014bc97883898",
+  "authored_markdown_changed": false,
+  "all_inner_page_heroes": [
+    {
+      "width": 390,
+      "heroes": 472,
+      "titles_and_images_within_frame": true,
+      "vertical_alignment": true
+    },
+    {
+      "width": 1440,
+      "heroes": 472,
+      "titles_and_images_within_frame": true,
+      "vertical_alignment": true
+    }
+  ],
+  "component_responsive_views": 176,
+  "semantic_checks": {
+    "responsive_views": 60,
+    "accessibility_audits": 40
+  },
+  "refinement_checks": {
+    "responsive_views": 60,
+    "accessibility_audits": 36
+  },
+  "deployments": {
+    "root": {
+      "safe_mode_build": "passed",
+      "responsive_hero_views": 90,
+      "enlarged_text_views": 6,
+      "accessibility_audits": 30,
+      "pointer_keyboard_state_comparisons": 9,
+      "rendered_routes": 756,
+      "unexpected_content_changes": 0,
+      "local_link_targets": 57719,
+      "link_errors": 0
+    },
+    "preview": {
+      "safe_mode_build": "passed",
+      "responsive_hero_views": 90,
+      "enlarged_text_views": 6,
+      "accessibility_audits": 30,
+      "pointer_keyboard_state_comparisons": 9,
+      "rendered_routes": 756,
+      "unexpected_content_changes": 0,
+      "local_link_targets": 57719,
+      "link_errors": 0
+    }
+  }
+}

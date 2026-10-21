@@ -33,8 +33,12 @@ a {
   color: inherit;
   text-underline-offset: $space-1;
 }
+// Keep text-link states shared, without overriding cards or other controls.
+:where(.content, .page-summary, .record-facts, .article-byline, .catalog-annotation) a:where(:not(.catalog-card, .resource-link, .card, .button)) {
+  color: var(--accent);
+}
 // Ordinary text links only; navigation, cards and other controls keep their styling.
-a:where(:not(nav a, .card, .button, .brand, .image-link, .skip-link)):hover {
+a:where(:not(nav a, .card, .catalog-card, .button, .brand, .image-link, .skip-link)):is(:hover, :focus-visible) {
   color: var(--colour-link-hover);
 }
 a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {

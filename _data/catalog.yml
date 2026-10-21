@@ -6,7 +6,7 @@ people:
     label: Location
     type: text
   - name: person.governance.board_role
-    label: Governance role
+    label: Governance Role
     type: text
 organisations:
   label: Organisations
@@ -46,10 +46,10 @@ papers:
     label: Year
     type: text
   - name: publication.venue
-    label: Published in
+    label: Published In
     type: text
   - name: publication.type
-    label: Publication type
+    label: Publication Type
     type: text
 products:
   label: Products
@@ -81,7 +81,7 @@ repositories:
     label: Maturity
     type: text
 groups:
-  label: Working groups
+  label: Working Groups
   facet: Category
   fields:
   - name: working_group.type
@@ -91,7 +91,7 @@ groups:
     label: Status
     type: text
   - name: working_group.focus_areas
-    label: Focus areas
+    label: Focus Areas
     type: array
 guides:
   label: Guides
@@ -104,7 +104,7 @@ guides:
     label: Level
     type: text
   - name: guide.estimated_minutes
-    label: Estimated minutes
+    label: Estimated Minutes
     type: text
 policies:
   label: Policies

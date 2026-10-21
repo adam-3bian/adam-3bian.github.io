@@ -1,14 +1,7 @@
 ---
 layout: default
 ---
-{% if page.url == '/' %}<section class="hero hero-large" aria-labelledby="page-title">
-  <div class="hero-intro">
-    <span id="page-hero-title" class="anchor-alias"></span><span id="hero-title" class="anchor-alias"></span>
-    <h1 id="page-title" class="page-hero-title"><span class="hero-opening">{{ page.landing.heading.title | escape }}</span><small class="hero-support">{% for line in page.landing.heading.subtitle %}<span{% if forloop.last %} class="hero-signoff"{% endif %}>{{ line | escape }}</span>{% endfor %}</small></h1>
-    <div class="lede">{{ page.summary | markdownify }}</div>
-    {% if page.landing.heading.introduction %}<div class="lede">{{ page.landing.heading.introduction | markdownify }}</div>{% endif %}
-  </div>
-</section>{% else %}{% include page-header.html %}{% endif %}
+{% include page-header.html %}
 <div class="page-surface">
 {% include slider.html %}
 {% for form_key in page.forms %}{% assign form_data = site.data.forms[form_key] %}{% if form_data %}{% include form-from-data.html form=form_data %}{% endif %}{% endfor %}

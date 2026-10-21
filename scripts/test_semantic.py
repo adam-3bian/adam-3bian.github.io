@@ -45,7 +45,7 @@ with sync_playwright() as p:
    for img in page.locator('.media-organisations').all():
     box=img.bounding_box();assert abs(box['width']/box['height']-3)<.02,(width,route,box)
     assert img.locator('img').evaluate('e=>getComputedStyle(e).objectFit')=='contain'
-   for selector,ratio,fit in [('.image-kind-people',1,'cover'),('.image-kind-organisations',3,'contain'),('.image-kind-events',16/9,'contain'),('.article-lead',16/9,'contain')]:
+   for selector,ratio,fit in [('.image-kind-people',1,'cover'),('.image-kind-organisations',3,'contain'),('.image-kind-events',16/9,'cover'),('.article-lead',16/9,'cover')]:
     for frame in page.locator(selector).all():
      box=frame.locator('img').bounding_box();assert abs(box['width']/box['height']-ratio)<.02,(width,route,selector,box)
      assert frame.locator('img').evaluate('e=>getComputedStyle(e).objectFit')==fit

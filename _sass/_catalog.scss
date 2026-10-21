@@ -18,9 +18,9 @@
 .catalog-sort { flex: 0 0 10rem; }
 .view-switch { align-items: center; background: var(--surface-soft); border: 0; border-radius: var(--radius); display: flex; min-height: 3rem; padding: 2px; }
 .view-switch button { background: transparent; border: 0; border-radius: var(--radius-small); color: var(--muted); cursor: pointer; font: inherit; font-family: $font-family; font-size: var(--type-label); min-height: 2.75rem; padding: 0 .8rem; white-space: nowrap; }
-.view-switch button:hover { background: var(--accent-soft); color: var(--ink); }
+.view-switch button:is(:hover, :focus-visible) { background: var(--accent-soft); color: var(--ink); }
 .view-switch button[aria-pressed="true"] { background: var(--colour-button); box-shadow: var(--elevation-1); color: var(--colour-button-text); font-weight: 600; }
-.view-switch button[aria-pressed="true"]:hover { background: var(--colour-button-hover); }
+.view-switch button[aria-pressed="true"]:is(:hover, :focus-visible) { background: var(--colour-button-hover); }
 .view-switch button:focus-visible { outline-offset: 2px; position: relative; z-index: 1; }
 .view-switch button span { margin-right: .3rem; }
 .catalog-status { align-items: center; color: var(--muted); display: flex; font-size: var(--type-label); justify-content: space-between; margin: $space-2 0 $space-3; }
@@ -33,7 +33,6 @@
 .catalog-item:has(> .catalog-annotation) { background: var(--surface); border-radius: var(--radius); display: flex; flex-direction: column; }
 .catalog-item:has(> .catalog-annotation) .catalog-card { flex: 1; height: auto; }
 .catalog-annotation { color: var(--muted); font-size: .9375rem; line-height: var(--leading-body); padding: $space-3 $space-2; }
-.catalog-annotation a { color: var(--accent); }
 .directory-outro { margin-top: $space-8; }
 .catalog-copy { flex: 1; min-width: 0; position: relative; width: 100%; }
 .catalog-card h2, .catalog-card h3, .talk-card h3 { color: var(--ink); font-size: var(--type-title); font-weight: 600; letter-spacing: -.02em; line-height: var(--leading-heading); margin: 0; }

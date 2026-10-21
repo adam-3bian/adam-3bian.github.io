@@ -9,7 +9,7 @@
   text-decoration: none;
   transition: background .18s, box-shadow .18s;
 }
-a.card:hover, a.catalog-card:hover {
+a.card:is(:hover, :focus-visible), a.catalog-card:is(:hover, :focus-visible) {
   background: var(--colour-card-hover);
   box-shadow: var(--shadow);
   text-decoration: none;

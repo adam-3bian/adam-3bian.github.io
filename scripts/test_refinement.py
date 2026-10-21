@@ -58,10 +58,6 @@ with sync_playwright() as p:
             if name == 'hardware':
                 assert page.locator('.detail-aside').count() == 0, (width,name,'unnecessary sidebar')
                 assert page.locator('.inline-facts').count() == 0
-                if name == 'person' and width < 768:
-                    boxes=page.locator('.record-portrait, .page-summary').evaluate_all('nodes=>nodes.map(n=>{const r=n.getBoundingClientRect();return {top:r.top,bottom:r.bottom}})')
-                    summary, image = boxes
-                    assert summary['top'] >= image['bottom']-1, (width,'portrait overlaps summary',boxes)
             detail = None
             if page.locator('.detail-layout').count():
                 # A detail fills the shared container; metadata occupies real space,
@@ -101,7 +97,8 @@ with sync_playwright() as p:
                 if width == 390: assert first_y-region_gap < 665, first_y
                 assert page.locator('[data-glossary-entry]').count() == 46
             if name in ['company','person']:
-                assert page.locator('.page-summary').is_visible(), 'Original introduction must remain on details'
+                assert page.locator('.page-heading .page-summary').count() == 0, 'Member and people heroes omit duplicated summaries'
+                assert page.locator('.record-body').inner_text().strip(), 'The biography/description remains in the body'
             violations = None
             if width in [390,768,1440]:
                 page.add_script_tag(path=str(AXE))
