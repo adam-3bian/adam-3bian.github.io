@@ -10,10 +10,8 @@
 .form-field fieldset, fieldset.form-field { border: 0; padding: 0; }
 .form-field input[type='checkbox'], .form-field input[type='radio'] { width: 1.25rem; min-height: 1.25rem; height: 1.25rem; margin-right: .5rem; padding: 0; }
 .form-field .choice { align-items: center; display: flex; }
-.record-portrait.image-kind-products { flex-basis: 240px; height: 160px; }
-.record-portrait.image-kind-products img, .media-products img { object-fit: contain; }
+.media-products img { object-fit: contain; }
 .media-posts { aspect-ratio: 16 / 9; }
-@media (max-width: 767px) { .record-portrait.image-kind-products { height: 120px; width: 192px; } }
 
 .record-facts dd > span { display: block; }
 .talk-actions .resource-panel ul { flex-direction: row; flex-wrap: wrap; }

@@ -1,8 +1,9 @@
 // One action contract for native buttons and navigation/download anchors.
 .button {
   --button-background: #fff;
-  --button-hover: #e7eef1;
   --button-text: #{$brand-blue};
+  --button-hover: var(--button-text);
+  --button-hover-text: var(--button-background);
   align-items: center;
   background: var(--button-background, var(--colour-button));
   border: 0;
@@ -48,14 +49,9 @@
 .surface-inverse {
   --border: #{$colour-border-inverse};
   --button-background: #fff;
-  --button-hover: #e7eef1;
   --button-text: #{$brand-blue};
   --colour-focus: #fff;
+  --colour-link-hover: #e1f4fc;
   background: var(--surface-inverse);
   color: var(--ink-inverse);
-}
-
-.navigation-contact > .button, .site-call-to-action .button {
-  --button-hover: var(--button-text);
-  --button-hover-text: var(--button-background);
 }

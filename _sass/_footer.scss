@@ -2,6 +2,7 @@
   --border: #{$colour-border-inverse};
   --colour-focus: var(--colour-footer-text);
   --colour-navigation-hover: var(--colour-footer-hover);
+  --colour-link-hover: #e1f4fc;
   background: transparent;
   color: var(--colour-footer-text);
   padding-block: $frame-gap $space-8;

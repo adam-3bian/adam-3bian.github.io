@@ -20,6 +20,7 @@ ROUTES = {
     'directory': 'alliance/leadership/members/',
     'guide': 'guides/build-your-first-application/',
     'product': 'products/sonata/',
+    'product-morello': 'products/morello/',
     'repository': 'repositories/cheribsd/',
     'paper': 'papers/it-is-time-to-standardize-principles-and-practices-for-software-memory-safety/',
     'group': 'groups/cheri-for-sel4/',
@@ -76,6 +77,10 @@ with sync_playwright() as p:
             if name == 'directory':
                 assert page.locator('label[for="catalog-search"]').inner_text() == 'Search Organisations'
                 assert page.locator('label[for="catalog-sort"]').inner_text() == 'Sort By'
+            if name.startswith('product'):
+                media = hero.locator('.record-portrait').evaluate('''e=>{const i=e.querySelector('img'),f=e.getBoundingClientRect(),r=i.getBoundingClientRect();return {frame:[f.width,f.height],image:[r.width,r.height],ratio:i.naturalWidth/i.naturalHeight};}''')
+                assert media['frame'] == media['image'], (width, name, 'added padding around product image', media)
+                assert abs(media['image'][0] / media['image'][1] - media['ratio']) < .01, (width, name, 'product image proportions', media)
             if width in [390, 1440]:
                 if name in ['person', 'member', 'event', 'news', 'directory', 'guide']:
                     page.evaluate('''async()=>{await Promise.all([...document.querySelectorAll('.page-heading img')].map(i=>i.decode()))}''')
@@ -105,6 +110,12 @@ with sync_playwright() as p:
         ('discover/resources/glossary/', '.glossary-index a'),
         ('discover/resources/glossary/', '.glossary-permalink'),
         ('events/cheri-blossoms-conference-2026/', '.programme-days a'),
+        ('alliance/membership/contact/', '.form-panel .button'),
+        ('policies/code-of-conduct/', '.detail-aside .button'),
+        ('', '.navigation-contact .button'),
+        ('', '.site-call-to-action .button'),
+        ('alliance/membership/contact/', '.form-panel .meta a'),
+        ('news/ai-doesnt-need-a-kill-switch-it-needs-boundaries/', '.article-byline a'),
     ]:
         page.goto(URL + route)
         node = page.locator(selector).first
@@ -122,6 +133,12 @@ with sync_playwright() as p:
         focus = node.evaluate(STATE)
         assert focus == hover, (route, selector, 'pointer/keyboard states differ', hover, focus)
         assert node.evaluate('e=>getComputedStyle(e).outlineStyle') != 'none'
+        if '.button' in selector:
+            assert hover['color'] == normal['background'] and hover['background'] == normal['color'], (route, selector, 'button colours must invert', normal, hover)
+        if selector in ['.record-facts a', '.record-body a, .reading-content p a', '.form-panel .meta a']:
+            assert hover['color'] == 'rgb(180, 35, 24)', (route, selector, 'plain light-surface links turn red', hover)
+        if selector == '.article-byline a':
+            assert hover['color'] == 'rgb(225, 244, 252)', 'Dark-surface links retain a light hover colour'
         if track:
             assert normal['shadow'] == hover['shadow'] == focus['shadow'] == 'none', 'The slider has one elevated surface'
             assert track_hover == track.evaluate(STATE) and track_hover != track_normal, 'Slider elevation follows pointer and keyboard focus'
@@ -129,5 +146,5 @@ with sync_playwright() as p:
     assert not errors, errors
     browser.close()
 
-(OUT / 'verification.json').write_text(json.dumps({'views': results, 'states': states, 'accessibility_audits': 30}, indent=2) + '\n')
-print('Heroes: 90 responsive views, six enlarged-text views, 30 accessibility audits and nine pointer/keyboard comparisons passed.')
+(OUT / 'verification.json').write_text(json.dumps({'views': results, 'states': states, 'accessibility_audits': len(ROUTES) * 2}, indent=2) + '\n')
+print(f'Heroes: {len(ROUTES) * 6} responsive views, six enlarged-text views, {len(ROUTES) * 2} accessibility audits and {len(states)} pointer/keyboard comparisons passed.')

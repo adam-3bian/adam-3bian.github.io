@@ -15,7 +15,7 @@
 }
 
 // Ordinary pages, articles and collection records use page-header.html.
-// A minimum frame gives short titles room; wrapping copy can always grow it.
+// Let copy and media set the height, with the shared frame padding around them.
 .page-heading {
   align-items: center;
   background: var(--colour-hero);
@@ -24,7 +24,6 @@
   gap: $space-8;
   justify-content: space-between;
   margin: 0;
-  min-height: 14rem;
   width: 100%;
 }
 .page-heading h1 {
@@ -56,6 +55,8 @@
 .record-portrait.image-kind-organisations img { object-fit: contain; }
 .record-portrait.image-kind-events { aspect-ratio: 16 / 9; flex-basis: 240px; width: 240px; }
 .record-portrait.image-kind-events img { object-fit: cover; }
+.record-portrait.image-kind-products { aspect-ratio: auto; flex-basis: 240px; width: 240px; }
+.record-portrait.image-kind-products img { height: auto; position: static; }
 
 @media (min-width: $desktop-breakpoint) {
   .hero { padding-block: $space-12; }
@@ -63,12 +64,13 @@
 }
 @media (max-width: $desktop-breakpoint - 1px) {
   .hero-support { font-size: .62em; }
-  .page-heading { align-items: flex-start; flex-direction: column; gap: $space-4; justify-content: center; min-height: 8rem; }
+  .page-heading { align-items: flex-start; flex-direction: column; gap: $space-4; justify-content: center; }
   .heading-copy { flex: none; }
   .page-summary { font-size: 1rem; }
   .record-portrait { flex: none; width: 80px; }
   .record-portrait.image-kind-organisations { flex: none; width: 240px; }
   .record-portrait.image-kind-events { flex: none; width: 192px; }
+  .record-portrait.image-kind-products { flex: none; width: 192px; }
   // Keep the name and face together, vertically centred, on small screens.
   .page-heading:has(.image-kind-people) { align-items: center; flex-direction: row; }
   .page-heading:has(.image-kind-people) .heading-copy { flex: 1; }

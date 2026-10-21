@@ -1,6 +1,6 @@
 # CHERI corporate presentation system
 
-The design combines a confident dark homepage, matching navigation and heroes, a white elevated mega-menu and calm inner-page content. The visible identity comes from Poppins, navy and logo blue, the continuous honeycomb and clean resting elevation. Repeated field rules, small uppercase eyebrows and red interface accents are excluded. Native HTML and the existing Jekyll pipeline remain; no framework runtime or new authoring fields are required.
+The design combines a confident dark homepage, matching navigation and heroes, a white elevated mega-menu and calm inner-page content. The visible identity comes from Poppins, navy and logo blue, the continuous honeycomb and clean resting elevation. Repeated field rules and small uppercase eyebrows are excluded. Native HTML and the existing Jekyll pipeline remain; no framework runtime or new authoring fields are required.
 
 ## Ownership and cascade
 
@@ -18,9 +18,10 @@ The import order is foundations, base rules, navigation and site components, the
 | Neutral | `#f3f5f6`; passive supporting information and control fills |
 | Supporting text | `#50616d` on white; readable hierarchy without faint text |
 | Cyan | `#b9e2f1`; controlled emphasis and accessible links on dark surfaces |
-| Teal | Link-hover and focus roles; no collection-specific palettes |
+| Red | `#b42318`; plain-text link hover and keyboard focus on light surfaces |
+| Teal | Focus outlines; no collection-specific palettes |
 
-There is no red interface role. Existing image, logo and document-artwork colours remain unchanged, including the red PDF artwork in authored policy content. Errors use explicit language and contrast rather than a red-only signal.
+Red is reserved for plain-text link interaction on light surfaces. Dark surfaces retain a light hover colour for contrast. Existing image, logo and document-artwork colours remain unchanged, including the red PDF artwork in authored policy content. Errors use explicit language and contrast rather than a red-only signal.
 
 The homepage uses a dark canvas. Navigation and inner-page heroes use exactly the same dark palette over the light inner-page canvas. There is no theme toggle, stored theme preference or system-theme switch. Poppins is shared by headings, body text, navigation, cards and actions. Code retains its technical font.
 
@@ -45,7 +46,7 @@ The feature slider has one elevated track with opaque slides and a separate comp
 
 Newsletter and footer use separate opaque navy panels with the same width and padding, a 16px gap and 10px corners. Their outer surrounds are transparent so the page honeycomb continues through the gutters. There is no newsletter gradient or separate floating footer column. On mobile, the heading and subscription action stack naturally.
 
-The homepage hero uses an 80px maximum opening, a subordinate half-size desktop supporting statement and one cyan CHERI conclusion. Mobile scales the supporting statement for readability. Ordinary heroes share the responsive page-title scale, 32px desktop/16px mobile padding, a 10px radius and the same subtle frame as other bounded regions. Their minimum height is 14rem desktop and 8rem mobile; there is no fixed height or clipping. The entire heading group is vertically centred beside any image. Mobile portraits remain beside the name; logos and event images stack below the heading group. Longer titles, introductions and inline facts grow the frame naturally.
+The homepage hero uses an 80px maximum opening, a subordinate half-size desktop supporting statement and one cyan CHERI conclusion. Mobile scales the supporting statement for readability. Ordinary heroes share the responsive page-title scale, 32px desktop/16px mobile padding, a 10px radius and the same subtle frame as other bounded regions. Their height follows the copy and media, with no minimum height, fixed height or clipping. The entire heading group is vertically centred beside any image. Mobile portraits remain beside the name; logos and event images stack below the heading group. Longer titles, introductions and inline facts grow the frame naturally.
 
 People, member-organisation and news heroes omit summaries. Those source fields remain available to search, metadata and cards; body content is unchanged. Other page introductions remain visible. Do not add per-record layout flags or move biographies into the hero. Generated fact labels and directory control labels use consistent capitalisation, such as “Governance Role” and “Sort By”; authored Markdown names, roles and values retain their original case.
 
@@ -70,7 +71,7 @@ Metadata is explicit through the include parameter `metadata=true`. Event dates/
 
 All linked records use a common footer for the arrow and any permitted informational label. Grid footers align at the bottom; compact rows place the arrow consistently to the right. Founder labels derive only from existing membership metadata and have no emblem, fill, outline, shadow or independent interaction. Wide membership lists use a stable footer position; narrow lists give the label a separate row to avoid collisions. The protected member/founder counts are 52 and 21.
 
-Portraits are square: 56px in ordinary rows, 88px in desktop grids and 72px in mobile grids. Portrait grids use compact horizontal identity cards rather than landscape poster slots. Logos use 3:1 contained frames, including 270×90px desktop heroes and up to 240×80px mobile heroes. The frame has no decorative outline and a white backing keeps transparent artwork readable. Detail portraits are 160px desktop and 80px mobile, with face-focused cover images. News/event thumbnails use 16:9 cover images in cards, heroes and article leads. Additional authored content images retain their own proportions.
+Portraits are square: 56px in ordinary rows, 88px in desktop grids and 72px in mobile grids. Portrait grids use compact horizontal identity cards rather than landscape poster slots. Logos use 3:1 contained frames, including 270×90px desktop heroes and up to 240×80px mobile heroes. The frame has no decorative outline and a white backing keeps transparent artwork readable. Detail portraits are 160px desktop and 80px mobile, with face-focused cover images. News/event thumbnails use 16:9 cover images in cards, heroes and article leads. Product hero images use their natural proportions at 240px desktop/192px mobile width, avoiding white padding or cropped board details. Additional authored content images retain their own proportions.
 
 Image-bearing directories retain neutral placeholders for absent or failed media. Placeholders are decorative beside the title, not invented identities. Text-only navigation and sparse detail headers do not reserve absent media space. Source assets, alternative text and relationships stay intact.
 
@@ -80,7 +81,7 @@ Image-bearing directories retain neutral placeholders for absent or failed media
 
 Resource actions fit their labels instead of becoming unrelated full-width bars. Long labels wrap. The source primary resource remains prominent. Prose links remain recognisable as links.
 
-Contact Us and Get the newsletter use white buttons with logo-blue text in both palettes; hover and keyboard focus invert those colours. Footer links retain their filled hover treatment without a mouse-hover underline, and keep a keyboard-focus indicator.
+All standard buttons use white with logo-blue text in both palettes; hover and keyboard focus invert those colours. Disabled buttons retain their disabled state. Plain links on light surfaces turn red on hover/focus, while dark-surface links retain a light colour. Footer links retain their filled hover treatment without a mouse-hover underline, and keep a keyboard-focus indicator.
 
 `promotional-panel.html` is passive with a standard section heading and one real primary subscription link. `subscribe.html` and the legacy newsletter include share it. The wording remains “Stay connected with CHERI” and “Get the newsletter”, with any existing supporting sentence preserved. There is no whole-banner link or simulated second button.
 
@@ -127,6 +128,6 @@ Contact/newsletter forms submit natively when front matter supplies `form.action
 
 ## Verification and references
 
-Run safe-mode root and `/preview` builds, content/refinement validation, event and form Ruby tests, and the existing catalogue/layout/presentation/refinement/consistency browser suites. `test_corporate.py` adds six-width coverage across page families, computed border/no-red contracts, click/keyboard menu regression checks, short-viewport navigation, no-JavaScript use and accessibility checks. CI runs that suite in Chromium, Firefox and WebKit at both deployment paths. Do not replace preservation or behavioural assertions merely to pass a new visual treatment.
+Run safe-mode root and `/preview` builds, content/refinement validation, event and form Ruby tests, and the existing catalogue/layout/presentation/refinement/consistency browser suites. `test_corporate.py` adds six-width coverage across page families, computed border/colour contracts, click/keyboard menu regression checks, short-viewport navigation, no-JavaScript use and accessibility checks. CI runs that suite in Chromium, Firefox and WebKit at both deployment paths. Do not replace preservation or behavioural assertions merely to pass a new visual treatment.
 
 The design draws on [Material elevation](https://material-web.dev/components/elevation/) and [Bootstrap typography](https://getbootstrap.com/docs/5.3/content/typography/) without adopting their runtime dependencies. See the [corporate design review and screenshot gallery](screenshots/corporate-system/README.md) for causes, matching comparisons, exact checks and limitations. Earlier galleries document historical states rather than current component contracts.
