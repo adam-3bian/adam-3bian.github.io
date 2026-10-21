@@ -23,155 +23,116 @@ event:
   schedule:
   - date: '2024-11-12'
     sessions:
-    - id: talk-e536163359ad
-      type: talk
-      title: Incentivising future security
-      description: 'Programme organisation credit: NCSC'
-    - id: talk-eeaa35114069
-      type: talk
-      title: Digital Security by Design Challenge - Securing the future of computing
-      description: 'Programme organisation credit: DSbD'
-    - id: talk-233ad5f2639c
-      type: talk
-      title: CHERI Capability Hardware Enhanced RISC Instructions
-      description: 'Programme organisation credit: University of Cambridge'
-    - id: talk-9a331b7aa774
-      type: talk
-      title: An Innovation Ecosystem to encourage Cybersecurity by Design?
-      description: 'Programme organisation credit: CyNam'
-    - id: talk-4ee37022227a
-      type: talk
-      title: Collaborative engineering
-      description: 'Programme organisation credit: lowRISC'
-    - id: talk-e9de0a537d68
-      type: talk
-      title: Launching the CHERI Alliance
-      description: 'Programme organisation credit: CHERI Alliance'
-    - id: talk-074622d7df96
-      type: talk
-      title: CHERI Standardisation
-      description: 'Programme organisation credit: University of Cambridge'
-    - id: talk-ccc763e398ce
-      type: talk
-      title: Porting Software to CHERI
-      description: 'Programme organisation credit: Capabilities Limited'
-    - id: talk-678f917ed6ba
-      type: talk
-      title: CHERI Prototyping and Open Source
-      description: 'Programme organisation credit: lowRISC'
-    - id: talk-9f2d2256cad2
-      type: talk
-      title: CHERI Software Ecosystem
-      description: 'Programme organisation credit: Codasip'
-  speakers:
-  - person: paul-waller
-    role: speaker
-    session: talk-e536163359ad
-  - person: john-goodacre
-    role: speaker
-    session: talk-eeaa35114069
-  - person: robert-watson
-    role: speaker
-    session: talk-233ad5f2639c
-  - person: gavin-ferris
-    role: speaker
-    session: talk-4ee37022227a
-  - person: mike-eftimakis
-    role: speaker
-    session: talk-e9de0a537d68
-  - person: simon-moore
-    role: speaker
-    session: talk-074622d7df96
-  - person: graeme-jenkinson
-    role: speaker
-    session: talk-ccc763e398ce
-  - person: carl-shaw
-    role: speaker
-    session: talk-9f2d2256cad2
+    - title: Incentivising future security
+      affiliation: NCSC
+      speakers:
+      - person: paul-waller
+      resources:
+      - type: video
+        label: View video
+        url: https://youtu.be/67qLZCjWZJc?list=PLTe5zG6binjk675uhnNIF03oBddgvhSbr
+      - type: slides
+        label: View slides
+        url: /assets/pdf/events/cybersecurity-by-design-conference-2024/01-paul-waller-ncsc.pdf
+    - title: Digital Security by Design Challenge - Securing the future of computing
+      affiliation: DSbD
+      speakers:
+      - person: john-goodacre
+      resources:
+      - type: video
+        label: View video
+        url: https://youtu.be/FnRiaSj62t0?list=PLTe5zG6binjk675uhnNIF03oBddgvhSbr
+      - type: slides
+        label: View slides
+        url: /assets/pdf/events/cybersecurity-by-design-conference-2024/02-john-goodacre-dsbd.pdf
+    - title: CHERI Capability Hardware Enhanced RISC Instructions
+      affiliation: University of Cambridge
+      speakers:
+      - person: robert-watson
+      resources:
+      - type: video
+        label: View video
+        url: https://youtu.be/1qCULgOE060?list=PLTe5zG6binjk675uhnNIF03oBddgvhSbr
+      - type: slides
+        label: View slides
+        url: /assets/pdf/events/cybersecurity-by-design-conference-2024/03-robert-watson-university-of-cambridge.pdf
+    - title: An Innovation Ecosystem to encourage Cybersecurity by Design?
+      affiliation: CyNam
+      resources:
+      - type: video
+        label: View video
+        url: https://youtu.be/etvVLCKxZEA?list=PLTe5zG6binjk675uhnNIF03oBddgvhSbr
+      - type: slides
+        label: View slides
+        url: /assets/pdf/events/cybersecurity-by-design-conference-2024/04-reid-derby-cynam.pdf
+    - title: Collaborative engineering
+      affiliation: lowRISC
+      speakers:
+      - person: gavin-ferris
+      resources:
+      - type: video
+        label: View video
+        url: https://youtu.be/BlPrDWTCs90?list=PLTe5zG6binjk675uhnNIF03oBddgvhSbr
+      - type: slides
+        label: View slides
+        url: /assets/pdf/events/cybersecurity-by-design-conference-2024/05-gavin-ferris-lowrisc.pdf
+    - title: Launching the CHERI Alliance
+      affiliation: CHERI Alliance
+      speakers:
+      - person: mike-eftimakis
+      resources:
+      - type: video
+        label: View video
+        url: https://youtu.be/wfgnh7Qwjzk?list=PLTe5zG6binjk675uhnNIF03oBddgvhSbr
+      - type: slides
+        label: View slides
+        url: /assets/pdf/events/cybersecurity-by-design-conference-2024/06-mike-eftimakis-cheri-alliance.pdf
+    - title: CHERI Standardisation
+      affiliation: University of Cambridge
+      speakers:
+      - person: simon-moore
+      resources:
+      - type: video
+        label: View video
+        url: https://youtu.be/CKKirY3KZG8?list=PLTe5zG6binjk675uhnNIF03oBddgvhSbr
+      - type: slides
+        label: View slides
+        url: /assets/pdf/events/cybersecurity-by-design-conference-2024/07-simon-moore-university-of-cambridge.pdf
+    - title: Porting Software to CHERI
+      affiliation: Capabilities Limited
+      speakers:
+      - person: graeme-jenkinson
+      resources:
+      - type: video
+        label: View video
+        url: https://youtu.be/VzPVwkSaIpE?list=PLTe5zG6binjk675uhnNIF03oBddgvhSbr
+      - type: slides
+        label: View slides
+        url: /assets/pdf/events/cybersecurity-by-design-conference-2024/08-graeme-jenkinson-capabilities-ltd.pdf
+    - title: CHERI Prototyping and Open Source
+      affiliation: lowRISC
+      resources:
+      - type: video
+        label: View video
+        url: https://youtu.be/QgjZ8g82cVE?list=PLTe5zG6binjk675uhnNIF03oBddgvhSbr
+      - type: slides
+        label: View slides
+        url: /assets/pdf/events/cybersecurity-by-design-conference-2024/09-greg-chadwick-lowrisc.pdf
+    - title: CHERI Software Ecosystem
+      affiliation: Codasip
+      speakers:
+      - person: carl-shaw
+      resources:
+      - type: video
+        label: View video
+        url: https://youtu.be/k4GnGkwp3sE?list=PLTe5zG6binjk675uhnNIF03oBddgvhSbr
+      - type: slides
+        label: View slides
+        url: /assets/pdf/events/cybersecurity-by-design-conference-2024/10-carl-shaw-codasip.pdf
 resources:
 - type: website
   label: Hub8 MX
   url: https://hub8and.co/hub8-mx-cheltenham-startup-coworking-space/
-- type: video
-  label: View video
-  url: https://youtu.be/67qLZCjWZJc?list=PLTe5zG6binjk675uhnNIF03oBddgvhSbr
-  session_id: talk-e536163359ad
-- type: slides
-  label: View slides
-  url: /assets/pdf/events/cybersecurity-by-design-conference-2024/01-paul-waller-ncsc.pdf
-  session_id: talk-e536163359ad
-- type: video
-  label: View video
-  url: https://youtu.be/FnRiaSj62t0?list=PLTe5zG6binjk675uhnNIF03oBddgvhSbr
-  session_id: talk-eeaa35114069
-- type: slides
-  label: View slides
-  url: /assets/pdf/events/cybersecurity-by-design-conference-2024/02-john-goodacre-dsbd.pdf
-  session_id: talk-eeaa35114069
-- type: video
-  label: View video
-  url: https://youtu.be/1qCULgOE060?list=PLTe5zG6binjk675uhnNIF03oBddgvhSbr
-  session_id: talk-233ad5f2639c
-- type: slides
-  label: View slides
-  url: /assets/pdf/events/cybersecurity-by-design-conference-2024/03-robert-watson-university-of-cambridge.pdf
-  session_id: talk-233ad5f2639c
-- type: video
-  label: View video
-  url: https://youtu.be/etvVLCKxZEA?list=PLTe5zG6binjk675uhnNIF03oBddgvhSbr
-  session_id: talk-9a331b7aa774
-- type: slides
-  label: View slides
-  url: /assets/pdf/events/cybersecurity-by-design-conference-2024/04-reid-derby-cynam.pdf
-  session_id: talk-9a331b7aa774
-- type: video
-  label: View video
-  url: https://youtu.be/BlPrDWTCs90?list=PLTe5zG6binjk675uhnNIF03oBddgvhSbr
-  session_id: talk-4ee37022227a
-- type: slides
-  label: View slides
-  url: /assets/pdf/events/cybersecurity-by-design-conference-2024/05-gavin-ferris-lowrisc.pdf
-  session_id: talk-4ee37022227a
-- type: video
-  label: View video
-  url: https://youtu.be/wfgnh7Qwjzk?list=PLTe5zG6binjk675uhnNIF03oBddgvhSbr
-  session_id: talk-e9de0a537d68
-- type: slides
-  label: View slides
-  url: /assets/pdf/events/cybersecurity-by-design-conference-2024/06-mike-eftimakis-cheri-alliance.pdf
-  session_id: talk-e9de0a537d68
-- type: video
-  label: View video
-  url: https://youtu.be/CKKirY3KZG8?list=PLTe5zG6binjk675uhnNIF03oBddgvhSbr
-  session_id: talk-074622d7df96
-- type: slides
-  label: View slides
-  url: /assets/pdf/events/cybersecurity-by-design-conference-2024/07-simon-moore-university-of-cambridge.pdf
-  session_id: talk-074622d7df96
-- type: video
-  label: View video
-  url: https://youtu.be/VzPVwkSaIpE?list=PLTe5zG6binjk675uhnNIF03oBddgvhSbr
-  session_id: talk-ccc763e398ce
-- type: slides
-  label: View slides
-  url: /assets/pdf/events/cybersecurity-by-design-conference-2024/08-graeme-jenkinson-capabilities-ltd.pdf
-  session_id: talk-ccc763e398ce
-- type: video
-  label: View video
-  url: https://youtu.be/QgjZ8g82cVE?list=PLTe5zG6binjk675uhnNIF03oBddgvhSbr
-  session_id: talk-678f917ed6ba
-- type: slides
-  label: View slides
-  url: /assets/pdf/events/cybersecurity-by-design-conference-2024/09-greg-chadwick-lowrisc.pdf
-  session_id: talk-678f917ed6ba
-- type: video
-  label: View video
-  url: https://youtu.be/k4GnGkwp3sE?list=PLTe5zG6binjk675uhnNIF03oBddgvhSbr
-  session_id: talk-9f2d2256cad2
-- type: slides
-  label: View slides
-  url: /assets/pdf/events/cybersecurity-by-design-conference-2024/10-carl-shaw-codasip.pdf
-  session_id: talk-9f2d2256cad2
 related:
 - type: page
   slug: news-and-events-events-and-archive-past-events

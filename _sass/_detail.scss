@@ -1,6 +1,6 @@
 // Page families share a header and content rhythm; useful supporting information
 // determines whether a collection detail needs an aside.
-.page-heading { margin: 0; width: 100%; }
+.page-heading { background: var(--colour-hero); color: var(--ink); margin: 0; width: 100%; }
 .page-heading h1 { color: var(--ink); font-size: var(--type-page); font-weight: 600; letter-spacing: -.04em; line-height: 1.16; }
 .heading-copy { min-width: 0; }
 .record-status { background: var(--surface-soft); border-radius: var(--radius-small); color: var(--accent); display: inline-block; font-family: $font-family; font-size: var(--type-label); font-weight: 500; line-height: 1.5; margin: 0 0 $space-2; padding: $space-1 $space-2; }
@@ -19,7 +19,7 @@
 .record-portrait img { display: block; height: 100%; width: 100%; }
 .record-portrait.image-kind-people { aspect-ratio: 1; }
 .record-portrait.image-kind-people img { object-fit: cover; }
-.record-portrait.image-kind-organisations { aspect-ratio: 3 / 1; background: transparent; flex-basis: 270px; height: 90px; width: 270px; }
+.record-portrait.image-kind-organisations { aspect-ratio: 3 / 1; background: #fff; flex-basis: 270px; height: 90px; width: 270px; }
 .record-portrait.image-kind-organisations img, .record-portrait.image-kind-events img { object-fit: contain; }
 .record-portrait.image-kind-events { aspect-ratio: 16 / 9; background: #fff; flex-basis: 240px; height: 135px; width: 240px; }
 .detail-layout { margin-top: 0; }

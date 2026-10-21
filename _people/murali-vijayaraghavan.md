@@ -17,12 +17,11 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: google
-    relationship: other
   links:
   - label: LinkedIn
     url: https://www.linkedin.com/in/vmurali15/
+  affiliation:
+    organisation: google
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers

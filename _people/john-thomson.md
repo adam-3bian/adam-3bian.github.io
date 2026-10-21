@@ -1,7 +1,8 @@
 ---
 layout: detail
 title: John Thomson
-summary: John works at [lowRISC](/organisations/lowrisc/) as a senior product manager where he advocates the company’s mission of getting open silicon source everywhere.
+summary: John works at [lowRISC](/organisations/lowrisc/) as a senior product manager where he advocates the company’s mission of getting open
+  silicon source everywhere.
 permalink: /people/john-thomson/
 slug: john-thomson
 navigation:
@@ -17,12 +18,11 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: lowrisc
-    relationship: other
   links:
   - label: LinkedIn
     url: https://www.linkedin.com/in/john-thomson-a3853414/
+  affiliation:
+    organisation: lowrisc
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers

@@ -10,12 +10,14 @@
   {% for day in page.event.schedule %}
   <section class="programme-day" id="programme-day-{{ day.date }}" aria-labelledby="programme-date-{{ day.date }}" data-programme-day>
     <h3 class="programme-date" id="programme-date-{{ day.date }}">{% include date.html value=day.date %}{% if day.label %} · {{ day.label | escape }}{% endif %}</h3>
-    {% assign talks_only = true %}{% for session in day.sessions %}{% if session.type != 'talk' or session.presentations.size > 0 %}{% assign talks_only = false %}{% endif %}{% endfor %}
+    {% assign talks_only = true %}{% for session in day.sessions %}{% if session.presentations.size > 0 %}{% assign talks_only = false %}{% elsif session.type and session.type != 'talk' %}{% assign talks_only = false %}{% endif %}{% endfor %}
     <div class="programme-sessions{% if talks_only %} programme-timeline{% endif %}">
     {% for session in day.sessions %}
+      {% capture session_prefix %}programme-{{ day.date }}{% endcapture %}{% capture session_anchor %}{% include programme-anchor.html item=session siblings=day.sessions prefix=session_prefix index=forloop.index %}{% endcapture %}
+      {% assign session_kind = session.type | default: 'talk' %}{% if session.presentations.size > 0 and session.type == nil %}{% assign session_kind = 'session' %}{% endif %}
       {% assign next_session = day.sessions[forloop.index] %}
       {% assign session_end = session.end %}{% if session.type == 'break' or session.type == 'networking' %}{% assign session_end = session.end | default: next_session.start %}{% endif %}
-      <article class="programme-session{% if talks_only %} programme-entry{% endif %}" id="{{ session.id | escape }}" data-session-type="{{ session.type | escape }}">
+      <article id="{{ session_anchor | escape }}" class="programme-session{% if talks_only %} programme-entry{% endif %}" data-session-type="{{ session_kind | escape }}">
         {% if talks_only and session.start %}<time class="programme-clock" datetime="{{ day.date }}T{{ session.start }}">{{ session.start }}</time>{% endif %}
         <div class="programme-session-header">
           {% if session.type == 'break' %}{% include icon.html name='coffee' %}{% endif %}
@@ -24,18 +26,19 @@
         </div>
         <div class="programme-session-details">
           {% if session.room or session.track and session.track != 'main' %}<p class="programme-location">{% if session.track != nil and session.track != 'main' %}{{ session.track | escape }}{% if session.room %} · {% endif %}{% endif %}{{ session.room | escape }}</p>{% endif %}
-          {% include programme-speakers.html record=page session=session.id description=session.description %}
-          {% include resource-links.html record=page scope=session.id %}
+          {% include programme-speakers.html item=session %}
+          {% include resource-links.html record=page items=session.resources programme=true %}
         </div>
         {% if session.presentations.size > 0 %}
         <div class="programme-timeline">
         {% for presentation in session.presentations %}
-          <section class="programme-presentation programme-entry" id="{{ presentation.id | escape }}">
+          {% capture presentation_prefix %}presentation-{{ session_anchor }}{% endcapture %}{% capture presentation_anchor %}{% include programme-anchor.html item=presentation siblings=session.presentations prefix=presentation_prefix index=forloop.index %}{% endcapture %}
+          <section id="{{ presentation_anchor | escape }}" class="programme-presentation programme-entry">
             {% if presentation.start %}<time class="programme-clock" datetime="{{ day.date }}T{{ presentation.start }}">{{ presentation.start }}</time>{% endif %}
             <h5>{{ presentation.title | escape }}</h5>
             {% if presentation.end %}<p class="programme-until">Until <time datetime="{{ day.date }}T{{ presentation.end }}">{{ presentation.end }}</time></p>{% endif %}
-            {% include programme-speakers.html record=page session=presentation.id description=presentation.description %}
-            {% include resource-links.html record=page scope=presentation.id %}
+            {% include programme-speakers.html item=presentation %}
+            {% include resource-links.html record=page items=presentation.resources programme=true %}
           </section>
         {% endfor %}
         </div>

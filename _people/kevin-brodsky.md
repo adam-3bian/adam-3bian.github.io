@@ -17,9 +17,8 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: arm
-    relationship: other
+  affiliation:
+    organisation: arm
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers

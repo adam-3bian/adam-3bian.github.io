@@ -26,15 +26,13 @@ event:
   - date: '2027-04-21'
     label: Pre-conference Tutorials
     sessions:
-    - id: pre-conference-tutorials
-      type: tutorial
+    - type: tutorial
       title: Pre-conference Tutorials
       description: Get closer to the technology through technical and business-focused tutorials. Further details will be announced.
   - date: '2027-04-22'
     label: Main Conference – Day 1
     sessions:
-    - id: main-conference-day-1
-      type: session
+    - type: session
       title: Main Conference – Day 1
       description: 'Hear keynotes and broader perspectives on CHERI, industry adoption and the rapidly developing ecosystem.
 
@@ -43,8 +41,7 @@ event:
   - date: '2027-04-23'
     label: Main Conference – Day 2
     sessions:
-    - id: main-conference-day-2
-      type: session
+    - type: session
       title: Main Conference – Day 2
       description: Go deeper into the latest developments across CHERI hardware, software and research.
 resources:

@@ -53,4 +53,20 @@ abort 'Missing article category inferred unrelated news' unless output.css('[ari
 page={'slug'=>'page','related'=>[{'type'=>'organisation','slug'=>'one'},{'type'=>'unknown','slug'=>'two'},{'type'=>'organisation'},{'type'=>'organisation','slug'=>''},{'type'=>'organisation','slug'=>'missing'},{'type'=>'organisation','slug'=>'one'}]}
 output=render.call('relationships.html',page,{'organisations'=>orgs})
 abort 'Invalid related reference leaked a previous pool or duplicate' unless output.css('[aria-labelledby="related-title"] a').map{|a|a['href']}==['/organisations/one/']
-puts 'Relationships: concurrent affiliations, inverse views, organisers, guide neighbours, exact manufacturers and missing/invalid reference isolation passed.'
+editor_person=person.merge('person'=>person['person'].reject{|key,_|key=='organisations'}.merge('affiliation'=>person['person']['organisations'].first,'other_affiliations'=>person['person']['organisations'].drop(1)))
+output=render.call('card.html item=page kind="people" metadata=true',editor_person,{'organisations'=>orgs})
+abort 'Main job/company card lines are incorrect' unless output.at_css('.person-job-title')&.text=='Engineer' && output.at_css('.person-company')&.text=='Organisation One'
+abort 'Additional affiliation lost from filtering' unless output.at_css('[data-facet]')['data-facet'].include?('Organisation Two')
+orgs.each do |org|
+ output=render.call('relationships.html',org,{'people'=>[editor_person],'organisations'=>orgs})
+ abort 'Primary/additional affiliation absent from organisation inverse view' unless output.at_css('a[href="/people/dual/"]')
+end
+nested_event=event.merge('event'=>{'schedule'=>[{'date'=>'2026-11-12','sessions'=>[
+ {'title'=>'Opening','speakers'=>[{'person'=>'dual'}],'resources'=>[{'type'=>'slides','label'=>'Slides','url'=>'/opening.pdf'}]},
+ {'title'=>'Panel','speakers'=>[{'person'=>'dual','role'=>'moderator'}]}]}]})
+output=render.call('relationships.html',editor_person,{'people'=>[editor_person],'events'=>[nested_event],'organisations'=>orgs})
+abort 'ID-free programme did not generate both talk cards' unless output.css('[data-talk-id]').size==2
+programme=render.call('event-programme.html',nested_event,{'people'=>[editor_person]})
+abort 'Generated profile talk links do not target programme entries' unless output.css('[data-talk-id] .talk-copy a').all?{|a|programme.at_css("[id='#{a['href'].split('#').last}']")}
+abort 'Nested slides did not follow the correct talk' unless output.css('[data-talk-id]').first.css('a[href="/opening.pdf"]').size==1 && output.css('[data-talk-id]').last.css('a[href="/opening.pdf"]').empty?
+puts 'Relationships: nested ID-free programmes, primary/additional affiliations, inverse views, organisers, guide neighbours and exact references passed.'

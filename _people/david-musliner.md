@@ -17,12 +17,11 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: smart-information-flow-technologies-sift
-    relationship: other
   links:
   - label: LinkedIn
     url: https://www.linkedin.com/in/david-musliner-01ab81/
+  affiliation:
+    organisation: smart-information-flow-technologies-sift
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers

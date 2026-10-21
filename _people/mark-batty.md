@@ -1,7 +1,8 @@
 ---
 layout: detail
 title: Mark Batty
-summary: Mark Batty has played a key role in the effort to building foundational specifications for mainstream systems, focusing on concurrency in the pervasive C and C++ languages.
+summary: Mark Batty has played a key role in the effort to building foundational specifications for mainstream systems, focusing on concurrency
+  in the pervasive C and C++ languages.
 permalink: /people/mark-batty/
 slug: mark-batty
 navigation:
@@ -17,9 +18,8 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: university-of-kent
-    relationship: other
+  affiliation:
+    organisation: university-of-kent
 resources:
 - type: website
   label: Professional profile

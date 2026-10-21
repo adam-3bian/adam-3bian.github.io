@@ -17,12 +17,11 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: sci-semiconductor
-    relationship: other
   links:
   - label: LinkedIn
     url: https://www.linkedin.com/in/edoardo-marangoni-bba569260/
+  affiliation:
+    organisation: sci-semiconductor
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers

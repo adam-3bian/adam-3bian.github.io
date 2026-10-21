@@ -1,7 +1,8 @@
 ---
 layout: detail
 title: Simon Moore
-summary: Professor Simon Moore is Professor of Computer Engineering at the University of Cambridge, where he leads research in computer architecture with a focus on secure and rigorously engineered processors and subsystems.
+summary: Professor Simon Moore is Professor of Computer Engineering at the University of Cambridge, where he leads research in computer architecture
+  with a focus on secure and rigorously engineered processors and subsystems.
 permalink: /people/simon-moore/
 slug: simon-moore
 navigation:
@@ -17,15 +18,14 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: university-of-cambridge
-    relationship: other
   governance:
     board_order: 6
     board_role: Professor
   links:
   - label: LinkedIn
     url: https://www.linkedin.com/in/simon-moore-409767/
+  affiliation:
+    organisation: university-of-cambridge
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers

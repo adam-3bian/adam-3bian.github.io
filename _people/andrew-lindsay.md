@@ -15,12 +15,11 @@ image:
   height: 512
   fit: cover
 person:
-  organisations:
-  - organisation: codasip
-    relationship: other
   governance:
     board_order: 2
     board_role: Security Product Manager and Architect
+  affiliation:
+    organisation: codasip
 related:
 - type: page
   slug: alliance-leadership-governing-board

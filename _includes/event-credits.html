@@ -1,0 +1,6 @@
+{%- assign event_credits = '' | split: ',' -%}
+{%- for event_credit in include.record.event.speakers -%}{%- if event_credit.person -%}{%- assign event_credits = event_credits | push: event_credit -%}{%- endif -%}{%- endfor -%}
+{%- for credit_day in include.record.event.schedule -%}{%- for credit_session in credit_day.sessions -%}
+{%- for event_credit in credit_session.speakers -%}{%- if event_credit.person -%}{%- assign event_credits = event_credits | push: event_credit -%}{%- endif -%}{%- endfor -%}
+{%- for credit_presentation in credit_session.presentations -%}{%- for event_credit in credit_presentation.speakers -%}{%- if event_credit.person -%}{%- assign event_credits = event_credits | push: event_credit -%}{%- endif -%}{%- endfor -%}{%- endfor -%}
+{%- endfor -%}{%- endfor -%}

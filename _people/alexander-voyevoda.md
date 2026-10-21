@@ -17,12 +17,11 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: um-labs
-    relationship: other
   links:
   - label: LinkedIn
     url: https://www.linkedin.com/in/alexandervoevoda/
+  affiliation:
+    organisation: um-labs
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers

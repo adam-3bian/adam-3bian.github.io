@@ -1225,6 +1225,39 @@
   related-series-events: page-title
   speakers-title: page-title
   venue: venue
+  talk-4ebc19d99f86: programme-2025-04-02-cheri-blossoms-2025-1
+  talk-e7226304e78e: programme-2025-04-02-keynote
+  talk-fdafbfe3885d: programme-2025-04-02-findings-from-dsbd-program
+  talk-2d8866c514d1: programme-2025-04-02-building-resilience-enhancing-productivity-through-secure-by-design-systems
+  talk-2106167f179c: programme-2025-04-02-about-cheri
+  talk-ee4f029811ee: programme-2025-04-02-progress-of-the-alliance
+  talk-bc8fb46fa71d: programme-2025-04-02-progress-of-the-alliance-cheri-alliance-promotion-ambassador-working-group
+  talk-a409ba018943: programme-2025-04-02-project-sunburst-an-open-source-cheriot-soc-top-level-and-its-path-to-market-with-iceni
+  talk-c1099ce999bd: programme-2025-04-02-cheri-risc-v-standardisation
+  talk-09317658dceb: programme-2025-04-02-cheri-support-for-cva6
+  talk-acdf345cf9e8: programme-2025-04-02-cheriot-2025
+  talk-e2b1014154cd: programme-2025-04-02-efficient-system-level-support-for-cheri-capabilities
+  talk-b4648486add1: programme-2025-04-02-industrial-strength-formal-verification-of-risc-v-processors
+  talk-548f88d4c3a1: programme-2025-04-02-implementation-of-cheri-capabilities-in-a-safety-critical-real-time-operating-system-for-intelligent-edge-systems
+  talk-0935a283e531: programme-2025-04-02-porting-linux-to-cheri
+  talk-124658c9e605: programme-2025-04-02-hybrid-cheri-in-sel4-user-space
+  talk-bd18e762e01d: programme-2025-04-02-porting-v8-to-cheri-an-overview
+  talk-96da1e6d72af: programme-2025-04-02-latest-news-about-cheri
+  talk-415d876b7108: programme-2025-04-02-securing-secure-networking-tools-for-morello-linux
+  talk-eefbd5abb872: programme-2025-04-02-rust-for-morello-always-on-memory-safety-even-in-unsafe-code
+  talk-2b12bc8d11ca: programme-2025-04-02-implementing-safe-and-resilient-configuration-management-with-cheriot
+  talk-11c63986461f: programme-2025-04-02-cheri-micropython-challenges-and-opportunities
+  talk-9eb3ab951d91: programme-2025-04-02-qemu-working-group-presentation
+  talk-57cca0999c5b: programme-2025-04-02-cheri-alliance-qemu-working-group
+  talk-8a1c585b5c2a: programme-2025-04-02-soc-working-group-presentation
+  talk-c5a35cd87774: programme-2025-04-02-repository-working-group-presentation
+  talk-1b8956a81f83: programme-2025-04-02-cheri-alliance-repository-working-group
+  talk-bbfc8052f8cd: programme-2025-04-02-promotion-ambassador-working-group
+  talk-7178abe0024f: programme-2025-04-02-cheri-alliance-promotion-ambassador-working-group
+  talk-5afced256725: programme-2025-04-02-marketing-working-group-presentation
+  talk-4909d5d20ebb: programme-2025-04-02-cheri-alliance-marketing-working-group
+  talk-18db2e5b4c29: programme-2025-04-02-sel4-working-group-presentation
+  talk-0be58c12b274: programme-2025-04-02-cheri-blossoms-2025-33
 /events/cheri-blossoms-conference-2026/:
   address: address
   cheri-talks: talks-title
@@ -1240,6 +1273,47 @@
   speakers: speakers-title
   speakers-title: page-title
   venue: venue
+  talk-4e93a5fb6e4f: programme-2026-03-26-cheri-crash-course-high-level-introduction
+  talk-3dba495598b8: programme-2026-03-26-keynote-cheri-quantifying-the-value-of-a-strategic-imperative
+  talk-b8ba01ad9e84: programme-2026-03-26-featured-message
+  talk-75e917bb91cb: programme-2026-03-26-keynote-memory-safety-at-scale-an-industry-perspective
+  talk-cd2599aaaa86: programme-2026-03-26-keynote-getting-ready-for-the-cra-from-compliance-to-confidence
+  talk-3a54d3722077: programme-2026-03-26-dsit-cheri-blossoms-2026
+  talk-b194584cbb44: programme-2026-03-26-dsit-message
+  talk-f3280e15ffb6: programme-2026-03-26-ukri-talk
+  talk-7be6d080e9cb: programme-2026-03-26-ukri-message
+  talk-8a44465cfcf6: programme-2026-03-26-progress-of-the-alliance
+  talk-065f45ea352c: programme-2026-03-26-the-cheri-research-centre
+  talk-c8414524bfe3: programme-2026-03-26-the-capable-hub-our-recent-work-and-next-steps
+  talk-5f48e3ea07c3: programme-2026-03-26-cheri-adoption-study
+  talk-8714634ab361: programme-2026-03-26-accelerating-commercial-adoption-of-cheri
+  talk-d8305d01de9e: programme-2026-03-26-a-new-analysis-of-cve-vulnerabilities-trends-changes-and-cheri
+  talk-94d0fccbc424: programme-2026-03-26-cheri-mocha-an-open-source-memory-safe-application-system-cheri-blossoms-2026
+  talk-ef8f03d264e5: programme-2026-03-26-bt-business-keynote
+  talk-7a8e44de22b3: programme-2026-03-26-etsi-standardisation-status
+  talk-8634014da7dc: programme-2026-03-26-risc-v-driving-the-future-of-open-compute
+  talk-fc9a9f2b8b9b: programme-2026-03-26-cheri-risc-v-standardisation-status
+  talk-6997948fd89a: programme-2026-03-26-cosmic-verification-comprehensive-end-to-end-formal-proofs-of-cva6-cheri
+  talk-0addf6bad5f4: programme-2026-03-26-cheri-is-being-standardised-so-why-do-we-still-need-to-do-research
+  talk-b4ca3f04e876: programme-2026-03-26-cheriot-kudu
+  talk-279e2851f13b: programme-2026-03-26-portable-cheri-os-apis
+  talk-0cc81740022f: programme-2026-03-26-performance-progress-of-cva6-cheri
+  talk-4a9abd112b65: programme-2026-03-26-certification-program-awards
+  talk-f9d366846383: programme-2026-03-27-bt-s-engagement-with-cheri-technology
+  talk-ade123cb50a8: programme-2026-03-27-inside-the-cheri-in-soc-working-group
+  talk-403f3444494c: programme-2026-03-27-mmu-based-revocation-for-temporal-safety-on-cheri-application-cores
+  talk-22ea30cfdf5b: programme-2026-03-27-cheri-pit-port-integrity-tool
+  talk-b9f0c7b43ac3: programme-2026-03-27-cheri-zephyr
+  talk-f52b785017c2: programme-2026-03-27-microservice-store
+  talk-94f06c5a7b40: programme-2026-03-27-cheri-performance-improvement-update
+  talk-c049b7fc1165: programme-2026-03-27-securing-real-time-communication-porting-and-running-edge-computing-for-mission-critical-services-on-morello-cheri
+  talk-689dbc1baa7d: programme-2026-03-27-rust-on-cheriot
+  talk-f4e4e38cfbdf: programme-2026-03-27-cheri-linking-through-the-ages
+  talk-cf359c586070: programme-2026-03-27-verifying-secure-memory-compartmentalization-in-cheri-processors-at-the-rtl
+  talk-a527470d558c: programme-2026-03-27-cheri-enabled-risc-v-vp-capabilities-and-applications
+  talk-7083c1a534aa: programme-2026-03-27-picasso-scaling-cheri-use-after-free-protection-to-millions-of-allocations-cheri-blossoms-2026
+  talk-c9c48f6d19b0: programme-2026-03-27-towards-heterogeneous-cheri-compartmentalization
+  talk-595c5bc52c44: programme-2026-03-27-all-caps-extending-capabilities-across-the-whole-soc
 /events/cheri-blossoms-conference-2026/index.html:
   recordings-slides: page-title
   speakers-title: page-title
@@ -1255,6 +1329,9 @@
   related-series-events: page-title
   three-days-you-won-t-want-to-miss: three-days-you-wont-want-to-miss
   venue: venue
+  pre-conference-tutorials: programme-2027-04-21-pre-conference-tutorials
+  main-conference-day-1: programme-2027-04-22-main-conference-day-1
+  main-conference-day-2: programme-2027-04-23-main-conference-day-2
 /events/cheri-blossoms-tutorial-2026/:
   continue-learning: continue-learning
   event-overview: event-overview
@@ -1275,6 +1352,17 @@
   related-series-events: page-title
   speakers: speakers-title
   speakers-title: page-title
+  talk-52491b25a8c0: programme-2025-12-04-progress-of-the-alliance
+  talk-e30adf0fb475: programme-2025-12-04-cheri-performance
+  talk-df176a0176e5: programme-2025-12-04-an-open-source-rv64y-implementation-for-commercialization
+  talk-0ecb121da2c3: programme-2025-12-04-announcing-cosmic
+  talk-dc7e5a273c87: programme-2025-12-04-sonata-a-platform-for-high-integrity-operational-technology
+  talk-50bf72082e2a: programme-2025-12-04-cheriot-audit
+  talk-9a7ba33d7755: programme-2025-12-04-cheri-risc-v-standardisation-status
+  talk-c74cd1585cc1: programme-2025-12-04-state-of-the-union-which-virtual-machines-can-i-run-on-cheri
+  talk-ea45fd3bae13: programme-2025-12-04-introducing-a-development-hub
+  talk-fc5c414edf6e: programme-2025-12-04-blackout-data-oblivious-computation-with-blinded-capabilities
+  talk-8a389e77ec3e: programme-2025-12-04-rigorous-hardware-software-codesign-for-secure-compartmentalization-on-embedded-devices
 /events/cheritech25-reloaded/index.html:
   speakers-title: page-title
 /events/cheritech25/:
@@ -1292,6 +1380,26 @@
   speakers: speakers-title
   speakers-title: page-title
   venue: venue
+  talk-8327eaddbe5e: programme-2025-11-14-welcome-innovate-uk-competition-results-cheritech-25
+  talk-5cf738be82e6: programme-2025-11-14-welcome-ukri-presentation
+  talk-a97aa4106f62: programme-2025-11-14-progress-of-the-alliance
+  talk-2aa7838ddfb1: programme-2025-11-14-poster-highlights
+  talk-393ed5635906: programme-2025-11-14-posters-pitch
+  talk-2dd4e33b8f42: programme-2025-11-14-an-open-source-rv64y-implementation-for-commercialization-cheritech-25
+  talk-4a66f8780d97: programme-2025-11-14-announcing-cosmic
+  talk-4b578851b133: programme-2025-11-14-cheri-performance
+  talk-db22e2430aba: programme-2025-11-14-sonata-a-platform-for-high-integrity-operational-technology
+  talk-38af53a934c5: programme-2025-11-14-blackout-data-oblivious-computation-with-blinded-capabilities
+  talk-5124b0816b33: programme-2025-11-14-progress-of-cheri
+  talk-e9c83c5ad5db: programme-2025-11-14-cheriot-audit
+  talk-07125a08245a: programme-2025-11-14-rigorous-hardware-software-codesign-for-secure-compartmentalization-on-embedded-devices
+  talk-1eea3c3cab39: programme-2025-11-14-cheri-risc-v-standardisation-status
+  talk-e690a32e2862: programme-2025-11-14-redesigning-thread-local-storage-for-cheri
+  talk-ca027fbab690: programme-2025-11-14-introducing-a-development-hub
+  talk-8d7e18213427: programme-2025-11-14-capability-based-isolation-for-uav-software-stacks-porting-px4-nuttx-to-cheri
+  talk-b77c4b794bd2: programme-2025-11-14-failure-oblivious-cheri
+  talk-0f75d9d7fad7: programme-2025-11-14-industrializing-cheri-for-safety-critical-real-time-and-virtualized-systems-capability-support-in-hypervisor-and-vxworks-rtos
+  talk-e2131452e8dc: programme-2025-11-14-state-of-the-union-which-virtual-machines-can-i-run-on-cheri
 /events/cheritech25/index.html:
   speakers-title: page-title
 /events/cheritech26/:
@@ -1310,6 +1418,55 @@
   thursday-12-november-2026: thursday-12-november-2026
   venue: venue-find-us-in-hall-b0
   why-attend: why-attend
+  programme-2026-11-12-introduction-1: programme-2026-11-12-introduction
+  presentation-introduction-to-day-1-60976a: presentation-programme-2026-11-12-introduction-introduction-to-day-1
+  programme-2026-11-12-keynotes-2: programme-2026-11-12-keynotes
+  presentation-keynote-d27f61: presentation-programme-2026-11-12-keynotes-keynote
+  presentation-with-cheri-can-we-afford-to-ignore-hardware-security-af43a4: presentation-programme-2026-11-12-keynotes-with-cheri-can-we-afford-to-ignore-hardware-security
+  presentation-introduction-and-state-of-cheri-3e2b92: presentation-programme-2026-11-12-keynotes-introduction-and-state-of-cheri
+  presentation-progress-of-the-alliance-a632d7: presentation-programme-2026-11-12-keynotes-progress-of-the-alliance
+  programme-2026-11-12-break-and-exhibition-3: programme-2026-11-12-break-and-exhibition-3
+  programme-2026-11-12-case-studies-4: programme-2026-11-12-case-studies
+  presentation-opportunities-for-cheri-in-the-energy-industry-782d95: presentation-programme-2026-11-12-case-studies-opportunities-for-cheri-in-the-energy-industry
+  presentation-core-to-edge-iot-security-with-cheri-b28a07: presentation-programme-2026-11-12-case-studies-core-to-edge-iot-security-with-cheri
+  presentation-building-a-network-security-product-on-cheri-early-insights-adad2e: presentation-programme-2026-11-12-case-studies-building-a-network-security-product-on-cheri-early-insights
+  presentation-beyond-the-tech-and-what-it-takes-to-create-a-market-for-cheri-7d0404: presentation-programme-2026-11-12-case-studies-beyond-the-tech-and-what-it-takes-to-create-a-market-for-cheri
+  programme-2026-11-12-round-table-5: programme-2026-11-12-round-table
+  presentation-panel-what-is-missing-for-cheri-to-be-widely-adopted-fd1dc1: presentation-programme-2026-11-12-round-table-panel-what-is-missing-for-cheri-to-be-widely-adopted
+  programme-2026-11-12-posters-6: programme-2026-11-12-posters
+  presentation-high-performance-cheri-tag-controller-b7974f: presentation-programme-2026-11-12-posters-high-performance-cheri-tag-controller
+  presentation-cheribsd-on-risc-v-vp-a-fast-virtual-prototype-for-latest-rvy-0-9-9-2a8648: presentation-programme-2026-11-12-posters-cheribsd-on-risc-v-vp-a-fast-virtual-prototype-for-latest-rvy-0-9-9
+  programme-2026-11-12-break-and-exhibition-7: programme-2026-11-12-break-and-exhibition-7
+  programme-2026-11-12-standards-8: programme-2026-11-12-standards
+  presentation-mapping-the-etsi-memory-safety-technical-standard-to-cheri-83c40b: presentation-programme-2026-11-12-standards-mapping-the-etsi-memory-safety-technical-standard-to-cheri
+  presentation-cheri-specification-and-standardisation-update-for-rv64y-rv32y-and-cheriot-e10aa4: presentation-programme-2026-11-12-standards-cheri-specification-and-standardisation-update-for-rv64y-rv32y-and-cheriot
+  presentation-a-standard-for-cheri-capability-transport-over-axi-and-chi-f3e3e3: presentation-programme-2026-11-12-standards-a-standard-for-cheri-capability-transport-over-axi-and-chi
+  programme-2026-11-12-hardware-9: programme-2026-11-12-hardware
+  presentation-cva6-cheri-ratified-specification-implemented-and-vector-support-planned-941206: presentation-programme-2026-11-12-hardware-cva6-cheri-ratified-specification-implemented-and-vector-support-planned
+  presentation-cheri-in-opentitan-application-of-memory-safety-best-practice-in-an-open-hardware-root-of-09103a: presentation-programme-2026-11-12-hardware-cheri-in-opentitan-application-of-memory-safety-best-practice-in-an-open-hardware-root-of-trust
+  presentation-building-memory-safety-into-a-dma-engine-with-cheri-9bc6be: presentation-programme-2026-11-12-hardware-building-memory-safety-into-a-dma-engine-with-cheri
+  programme-2026-11-12-reception-and-exhibition-10: programme-2026-11-12-reception-and-exhibition
+  programme-2026-11-12-end-of-day-1-11: programme-2026-11-12-end-of-day-1
+  programme-2026-11-13-introduction-1: programme-2026-11-13-introduction
+  presentation-introduction-to-day-2-e84b82: presentation-programme-2026-11-13-introduction-introduction-to-day-2
+  programme-2026-11-13-compartmentalisation-2: programme-2026-11-13-compartmentalisation
+  presentation-cheri-zephyr-and-compartmentalisation-of-userspace-threads-79e1a6: presentation-programme-2026-11-13-compartmentalisation-cheri-zephyr-and-compartmentalisation-of-userspace-threads
+  presentation-compartmentalizing-a-canopen-stack-with-cheriot-434b5c: presentation-programme-2026-11-13-compartmentalisation-compartmentalizing-a-canopen-stack-with-cheriot
+  presentation-efficient-linkage-based-compartmentalization-on-cheri-a665bc: presentation-programme-2026-11-13-compartmentalisation-efficient-linkage-based-compartmentalization-on-cheri
+  presentation-littlecheri-ultra-fine-grain-compartmentalization-using-secure-stack-sharing-on-cheri-capa-03d9c7: presentation-programme-2026-11-13-compartmentalisation-littlecheri-ultra-fine-grain-compartmentalization-using-secure-stack-sharing-on-cheri-capability-machines
+  programme-2026-11-13-break-and-exhibition-3: programme-2026-11-13-break-and-exhibition
+  presentation-break-3-af01b4: presentation-programme-2026-11-13-break-and-exhibition-break-3
+  programme-2026-11-13-software-and-research-4: programme-2026-11-13-software-and-research
+  presentation-signetos-designing-a-secure-and-fast-single-address-space-microkernel-to-support-modern-wo-bb99a1: presentation-programme-2026-11-13-software-and-research-signetos-designing-a-secure-and-fast-single-address-space-microkernel-to-support-modern-workloads
+  presentation-ftrace-on-cheri-linux-porting-a-fairly-complex-kernel-subsystem-9b2e88: presentation-programme-2026-11-13-software-and-research-ftrace-on-cheri-linux-porting-a-fairly-complex-kernel-subsystem
+  presentation-title-withheld-paper-under-submission-c03765: presentation-programme-2026-11-13-software-and-research-title-withheld-paper-under-submission
+  presentation-using-existing-cheri-semantics-for-cheri-native-temporal-safety-d76e4c: presentation-programme-2026-11-13-software-and-research-using-existing-cheri-semantics-for-cheri-native-temporal-safety
+  presentation-valid-in-bounds-and-wrong-analysis-of-fault-injection-attacks-against-cheri-capabilities-4bfd29: presentation-programme-2026-11-13-software-and-research-valid-in-bounds-and-wrong-analysis-of-fault-injection-attacks-against-cheri-capabilities
+  presentation-intra-allocation-bounds-enforcement-in-cheribsd-3a1a17: presentation-programme-2026-11-13-software-and-research-intra-allocation-bounds-enforcement-in-cheribsd
+  presentation-writing-applications-for-cheriot-in-rust-ec182a: presentation-programme-2026-11-13-software-and-research-writing-applications-for-cheriot-in-rust
+  programme-2026-11-13-conclusion-5: programme-2026-11-13-conclusion
+  presentation-conclusion-to-day-2-41e1de: presentation-programme-2026-11-13-conclusion-conclusion-to-day-2
+  programme-2026-11-13-talks-end-and-exhibition-6: programme-2026-11-13-talks-end-and-exhibition
 /events/cybersecurity-by-design-conference-2024/:
   address: address
   bringing-research-and-industry-together: bringing-research-and-industry-together
@@ -1320,6 +1477,16 @@
   page-title: page-title
   talks: page-title
   talks--slides: talks-slides
+  talk-e536163359ad: programme-2024-11-12-incentivising-future-security
+  talk-eeaa35114069: programme-2024-11-12-digital-security-by-design-challenge-securing-the-future-of-computing
+  talk-233ad5f2639c: programme-2024-11-12-cheri-capability-hardware-enhanced-risc-instructions
+  talk-9a331b7aa774: programme-2024-11-12-an-innovation-ecosystem-to-encourage-cybersecurity-by-design
+  talk-4ee37022227a: programme-2024-11-12-collaborative-engineering
+  talk-e9de0a537d68: programme-2024-11-12-launching-the-cheri-alliance
+  talk-074622d7df96: programme-2024-11-12-cheri-standardisation
+  talk-ccc763e398ce: programme-2024-11-12-porting-software-to-cheri
+  talk-678f917ed6ba: programme-2024-11-12-cheri-prototyping-and-open-source
+  talk-9f2d2256cad2: programme-2024-11-12-cheri-software-ecosystem
 /events/cybersecurity-by-design-conference-2024/index.html:
   talks: page-title
 /events/embedded-world-2026/:

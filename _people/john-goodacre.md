@@ -17,12 +17,11 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: ukri
-    relationship: other
   links:
   - label: LinkedIn
     url: https://www.linkedin.com/in/john-goodacre-722b59/
+  affiliation:
+    organisation: ukri
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers

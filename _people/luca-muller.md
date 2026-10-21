@@ -17,12 +17,11 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: german-research-center-for-artificial-intelligence-dfki
-    relationship: other
   links:
   - label: LinkedIn
     url: https://www.linkedin.com/in/luca-m%C3%BCller-84690a324/
+  affiliation:
+    organisation: german-research-center-for-artificial-intelligence-dfki
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers

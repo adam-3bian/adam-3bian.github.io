@@ -17,12 +17,11 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: aria
-    relationship: other
   links:
   - label: LinkedIn
     url: https://www.linkedin.com/in/kathleen-fisher-4000964
+  affiliation:
+    organisation: aria
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers

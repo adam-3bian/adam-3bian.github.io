@@ -17,12 +17,11 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: capabilities-limited
-    relationship: other
   links:
   - label: LinkedIn
     url: https://www.linkedin.com/in/alfredo-mazzinghi/
+  affiliation:
+    organisation: capabilities-limited
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers

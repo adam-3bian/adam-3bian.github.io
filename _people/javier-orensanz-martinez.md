@@ -17,9 +17,8 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: lowrisc
-    relationship: other
+  affiliation:
+    organisation: lowrisc
 resources:
 - type: website
   label: LinkedIn

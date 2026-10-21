@@ -1,0 +1,4 @@
+{%- assign anchor_slug = include.item.title | slugify: 'ascii' | default: 'entry' -%}
+{%- assign anchor_matches = 0 -%}
+{%- for anchor_sibling in include.siblings -%}{%- assign anchor_sibling_slug = anchor_sibling.title | slugify: 'ascii' | default: 'entry' -%}{%- if anchor_sibling_slug == anchor_slug -%}{%- assign anchor_matches = anchor_matches | plus: 1 -%}{%- endif -%}{%- endfor -%}
+{{- include.prefix -}}-{{- anchor_slug -}}{%- if anchor_matches > 1 -%}-{{- include.index -}}{%- endif -%}

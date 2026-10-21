@@ -17,12 +17,11 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: mission-critical-applications-limited
-    relationship: other
   links:
   - label: LinkedIn
     url: https://www.linkedin.com/in/martin-atkins-71aa185/
+  affiliation:
+    organisation: mission-critical-applications-limited
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers

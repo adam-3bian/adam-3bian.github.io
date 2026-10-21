@@ -6,6 +6,8 @@ import argparse,collections,csv,datetime,hashlib,json,posixpath,re,sys,zoneinfo
 from functools import lru_cache
 import yaml
 from lxml import html
+from event_content import normalise_event
+from person_content import normalise_person
 ROOT=Path(__file__).resolve().parents[1];DOC=ROOT/'docs/migrations/v5.3'
 FAMILIES={'posts':('posts','post','post'),'events':('events','event','event'),'people':('speakers','speaker','person'),'organisations':('members','member','organisation'),'papers':('papers','paper','publication'),'products':('products','product','product'),'repositories':('repositories','repository','repository'),'groups':('working-groups','working-group','working_group'),'guides':('guides','guide','guide'),'policies':('policies','policy','policy')}
 GROUPS={v[2]:k for k,v in FAMILIES.items()};TYPES={**GROUPS,'paper':'papers','page':'pages'}
@@ -28,7 +30,10 @@ def load(text):return yaml.load(text,Loader=UniqueLoader)
 def document(path):
  parts=path.read_text().split('---',2)
  if len(parts)!=3 or parts[0].strip():raise ValueError(str(path)+': missing front matter')
- return load(parts[1]),parts[2].strip()
+ data=load(parts[1])
+ if 'event' in data:data=normalise_event(data)
+ if 'person' in data:data=normalise_person(data)
+ return data,parts[2].strip()
 @lru_cache(maxsize=1)
 def asset_migration():
  path=ROOT/'docs/assets/migration.json'
@@ -77,10 +82,10 @@ def validate_schedule(data,label,errors,warnings):
   unknown(day,{'date','label','sessions'},label+'.day',errors)
   if not iso(day['date']) or not data['date']<=day['date']<=data.get('end_date',data['date']):errors.append(label+': programme date outside event')
   for s in day['sessions']:
-   unknown(s,{'id','type','title','start','end','track','room','description','presentations'},label+'.session',errors)
+   unknown(s,{'id','type','title','start','end','track','room','description','affiliation','presentations'},label+'.session',errors)
    if s.get('type') not in ['introduction','session','keynote','talk','panel','break','networking','closing','workshop','tutorial']:errors.append(label+': invalid session type')
    for item in [s]+s.get('presentations',[]):
-    if item is not s:unknown(item,{'id','title','description','start','end'},label+'.presentation',errors)
+    if item is not s:unknown(item,{'id','title','description','affiliation','start','end'},label+'.presentation',errors)
     identifier=item.get('id','')
     if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*',identifier) or identifier in ids:errors.append(label+': duplicate/invalid programme ID '+identifier)
     ids.add(identifier)
@@ -265,14 +270,17 @@ def validate_source(errors,warnings):
   if not ok:errors.append('Lost relationship '+str(old))
  board=sorted([(d['person']['governance']['board_order'],s) for s,(p,d,b) in records['people'].items() if d.get('person',{}).get('governance',{}).get('board_order')])
  if [s for n,s in board]!=baseline['board']:errors.append('Governing board roster/order changed')
+ aliases=load((ROOT/'_data/anchor_aliases.yml').read_text())
  for old in baseline['talks']:
-  matches=[d for p,d,b in records['events'].values() if any(s['id']=='talk-'+old['id'] for day in d['event'].get('schedule',[]) for s in day['sessions'])]
+  legacy_id='talk-'+old['id']
+  matches=[d for p,d,b in records['events'].values() if any(s['id']==aliases.get(d['permalink'],{}).get(legacy_id,legacy_id) for day in d['event'].get('schedule',[]) for s in day['sessions'])]
   if len(matches)!=1:errors.append('Lost/duplicated legacy talk '+old['id']);continue
   event=matches[0]
+  current_id=aliases.get(event['permalink'],{}).get(legacy_id,legacy_id)
   for person in old.get('speakers',[]):
-   if not any(s['person']==person and s.get('session')=='talk-'+old['id'] for s in event['event'].get('speakers',[])):errors.append('Talk speaker lost '+old['id'])
+   if not any(s['person']==person and s.get('session')==current_id for s in event['event'].get('speakers',[])):errors.append('Talk speaker lost '+old['id'])
   for link in old['links']:
-   if not any(res['url']==migrated_asset(link['url']) and res.get('session_id')=='talk-'+old['id'] for res in event.get('resources',[])):errors.append('Talk media lost '+old['id'])
+   if not any(res['url']==migrated_asset(link['url']) and res.get('session_id')==current_id for res in event.get('resources',[])):errors.append('Talk media lost '+old['id'])
  snapshot=json.loads((DOC/'source-snapshot.json').read_text())
  original={r['path']:r['data'] for entries in snapshot.values() for r in entries}
  for r in migration:

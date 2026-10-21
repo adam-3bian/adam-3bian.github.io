@@ -17,12 +17,11 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: university-of-cambridge
-    relationship: other
   links:
   - label: LinkedIn
     url: https://www.linkedin.com/in/metzgerpaul/
+  affiliation:
+    organisation: university-of-cambridge
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers

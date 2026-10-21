@@ -79,7 +79,13 @@ with sync_playwright() as p:
  programme=URL+'events/cheritech26/'
  target='presentation-cheri-zephyr-and-compartmentalisation-of-userspace-threads-79e1a6'
  page.goto(programme+'#'+target)
- assert page.locator('#'+target).is_visible()
+ assert page.locator('#'+target).count()==1
+ assert page.locator('#'+target).evaluate("e=>e.closest('[data-programme-day]').id")=='programme-day-2026-11-13'
+ generated=page.locator('#'+target).evaluate('e=>e.nextElementSibling.id')
+ assert page.locator('#'+generated).is_visible()
+ assert page.get_by_role('tab').last.get_attribute('aria-selected')=='true'
+ page.goto(programme+'#'+generated)
+ assert page.locator('#'+generated).is_visible()
  assert page.get_by_role('tab').last.get_attribute('aria-selected')=='true'
  page.evaluate("location.hash='programme-day-2026-11-12'")
  page.wait_for_function("document.querySelector('[data-programme-tab]').getAttribute('aria-selected')==='true'")

@@ -1,0 +1,4 @@
+{%- assign person_affiliations = '' | split: ',' -%}
+{%- if include.record.person.affiliation -%}{%- assign person_affiliations = person_affiliations | push: include.record.person.affiliation -%}{%- endif -%}
+{%- for person_affiliation in include.record.person.other_affiliations -%}{%- assign person_affiliations = person_affiliations | push: person_affiliation -%}{%- endfor -%}
+{%- for person_affiliation in include.record.person.organisations -%}{%- assign person_affiliations = person_affiliations | push: person_affiliation -%}{%- endfor -%}

@@ -1,7 +1,8 @@
 ---
 layout: detail
 title: John Baldwin
-summary: John Baldwin has been an active FreeBSD developer for over 25 years working on a broad range of subsystems in the kernel and bits of userspace.
+summary: John Baldwin has been an active FreeBSD developer for over 25 years working on a broad range of subsystems in the kernel and bits of
+  userspace.
 permalink: /people/john-baldwin/
 slug: john-baldwin
 navigation:
@@ -17,12 +18,11 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: ararat-river-consulting-llc
-    relationship: other
   links:
   - label: LinkedIn
     url: https://www.linkedin.com/in/john-baldwin-86241a10a
+  affiliation:
+    organisation: ararat-river-consulting-llc
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers

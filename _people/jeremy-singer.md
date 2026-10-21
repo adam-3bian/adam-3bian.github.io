@@ -17,9 +17,8 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: university-of-glasgow
-    relationship: other
+  affiliation:
+    organisation: university-of-glasgow
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers

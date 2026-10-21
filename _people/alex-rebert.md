@@ -1,7 +1,8 @@
 ---
 layout: detail
 title: Alex Rebert
-summary: Alex Rebert is an engineer at Google, where he focuses on memory safety. Previously, he co-founded ForAllSecure and led the creation of Mayhem, the autonomous cyber reasoning system that won the 2016 DARPA Cyber Grand Challenge.
+summary: Alex Rebert is an engineer at Google, where he focuses on memory safety. Previously, he co-founded ForAllSecure and led the creation
+  of Mayhem, the autonomous cyber reasoning system that won the 2016 DARPA Cyber Grand Challenge.
 permalink: /people/alex-rebert/
 slug: alex-rebert
 navigation:
@@ -17,12 +18,11 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: google
-    relationship: other
   links:
   - label: LinkedIn
     url: https://www.linkedin.com/in/alexandre-rebert/
+  affiliation:
+    organisation: google
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers

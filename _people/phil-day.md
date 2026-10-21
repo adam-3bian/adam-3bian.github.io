@@ -1,7 +1,8 @@
 ---
 layout: detail
 title: Phil Day
-summary: Phil is the Director of Engineering at Configured Things, a startup founded by Alumni from Hewlett Packard Labs to build solutions that can operate resiliently across security domains.
+summary: Phil is the Director of Engineering at Configured Things, a startup founded by Alumni from Hewlett Packard Labs to build solutions that
+  can operate resiliently across security domains.
 permalink: /people/phil-day/
 slug: phil-day
 navigation:
@@ -17,12 +18,11 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: configured-things
-    relationship: other
   links:
   - label: LinkedIn
     url: https://www.linkedin.com/in/philday2/
+  affiliation:
+    organisation: configured-things
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers

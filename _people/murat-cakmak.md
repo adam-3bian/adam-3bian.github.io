@@ -17,12 +17,11 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: microservice-store
-    relationship: other
   links:
   - label: LinkedIn
     url: https://www.linkedin.com/in/cakmakmurat
+  affiliation:
+    organisation: microservice-store
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers

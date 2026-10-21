@@ -17,12 +17,11 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: dsit
-    relationship: other
   links:
   - label: LinkedIn
     url: https://www.linkedin.com/in/bradley-finn-845266b6/
+  affiliation:
+    organisation: dsit
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers

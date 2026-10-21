@@ -17,20 +17,21 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: capabilities-limited
+  links:
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/domagoj-stolfa-4432a1347/
+  affiliation:
+    organisation: capabilities-limited
     relationship: research
     positions:
     - title: Researcher
       status: current
+  other_affiliations:
   - organisation: university-of-cambridge
     relationship: research
     positions:
     - title: Researcher
       status: current
-  links:
-  - label: LinkedIn
-    url: https://www.linkedin.com/in/domagoj-stolfa-4432a1347/
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers

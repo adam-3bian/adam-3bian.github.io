@@ -17,12 +17,11 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: ncsc
-    relationship: other
   governance:
     board_order: 9
     board_role: Head of Capability Research
+  affiliation:
+    organisation: ncsc
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers

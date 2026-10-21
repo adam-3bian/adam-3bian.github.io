@@ -17,12 +17,11 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: ncsc
-    relationship: other
   links:
   - label: LinkedIn
     url: https://www.linkedin.com/in/olliewhitehouse/
+  affiliation:
+    organisation: ncsc
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers

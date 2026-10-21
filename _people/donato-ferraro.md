@@ -1,7 +1,8 @@
 ---
 layout: detail
 title: Donato Ferraro
-summary: Donato Ferraro is a Ph.D. student in Computer and Data Science for Technological and Social Innovation at the University of Modena and Reggio Emilia.
+summary: Donato Ferraro is a Ph.D. student in Computer and Data Science for Technological and Social Innovation at the University of Modena and
+  Reggio Emilia.
 permalink: /people/donato-ferraro/
 slug: donato-ferraro
 navigation:
@@ -17,17 +18,17 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: minerva-systems
-    relationship: other
+  links:
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/donato-ferraro-2718b317a/
+  affiliation:
+    organisation: minerva-systems
+  other_affiliations:
   - organisation: university-of-modena-and-reggio-emilia
     relationship: research
     positions:
     - title: Ph.D. student
       status: current
-  links:
-  - label: LinkedIn
-    url: https://www.linkedin.com/in/donato-ferraro-2718b317a/
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers

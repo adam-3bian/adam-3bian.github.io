@@ -17,12 +17,11 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: wind-river
-    relationship: other
   links:
   - label: LinkedIn
     url: https://www.linkedin.com/in/dmitriy-yeliseyev-6582844/
+  affiliation:
+    organisation: wind-river
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers

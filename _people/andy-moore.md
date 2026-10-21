@@ -17,12 +17,11 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: risc-v-international
-    relationship: other
   links:
   - label: LinkedIn
     url: https://www.linkedin.com/in/andrew-moore-7bb19b161
+  affiliation:
+    organisation: risc-v-international
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers

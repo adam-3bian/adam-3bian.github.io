@@ -1,7 +1,8 @@
 ---
 layout: detail
 title: Mike Eftimakis
-summary: Mike Eftimakis has an extensive background in the semiconductor and electronics industry with 30 years in senior technical and business roles.
+summary: Mike Eftimakis has an extensive background in the semiconductor and electronics industry with 30 years in senior technical and business
+  roles.
 permalink: /people/mike-eftimakis/
 slug: mike-eftimakis
 navigation:
@@ -17,15 +18,14 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: cheri-alliance
-    relationship: other
   governance:
     board_order: 1
     board_role: Founding Director
   links:
   - label: LinkedIn
     url: https://www.linkedin.com/in/mikeeftimakis/
+  affiliation:
+    organisation: cheri-alliance
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers

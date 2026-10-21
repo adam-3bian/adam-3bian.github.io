@@ -25,7 +25,6 @@ event:
     end: '14:30'
   speakers:
   - person: tariq-kurd
-    role: speaker
 related:
 - type: page
   slug: news-and-events-events-and-archive-past-events

@@ -24,480 +24,344 @@ event:
   schedule:
   - date: '2025-04-02'
     sessions:
-    - id: talk-4ebc19d99f86
-      type: talk
-      title: CHERI Blossoms 2025
-    - id: talk-e7226304e78e
-      type: talk
-      title: Keynote
-      description: 'Programme organisation credit: University of Cambridge'
-    - id: talk-fdafbfe3885d
-      type: talk
-      title: Findings from DSbD program
-      description: 'Programme organisation credit: UKRI'
-    - id: talk-2d8866c514d1
-      type: talk
-      title: 'Building Resilience: Enhancing productivity through Secure by Design systems'
-      description: 'Programme organisation credit: DSIT'
-    - id: talk-2106167f179c
-      type: talk
-      title: About CHERI
-      description: 'Programme organisation credit: University of Cambridge'
-    - id: talk-ee4f029811ee
-      type: talk
-      title: Progress of the Alliance
-    - id: talk-bc8fb46fa71d
-      type: talk
-      title: Progress of the Alliance, CHERI Alliance - Promotion & Ambassador Working Group
-      description: 'Programme organisation credit: CHERI Alliance'
-    - id: talk-a409ba018943
-      type: talk
-      title: 'Project Sunburst: An Open-Source CHERIoT SoC Top-Level and its Path to Market with Iceni'
-      description: 'Programme organisation credit: lowRISCCapabilities Limited'
-    - id: talk-c1099ce999bd
-      type: talk
-      title: CHERI RISC-V Standardisation
-      description: 'Programme organisation credit: Codasip'
-    - id: talk-09317658dceb
-      type: talk
-      title: CHERI support for CVA6
-      description: 'Programme organisation credit: Capabilities Limited'
-    - id: talk-acdf345cf9e8
-      type: talk
-      title: CHERIoT 2025
-      description: 'Programme organisation credit: SCI Semiconductor'
-    - id: talk-e2b1014154cd
-      type: talk
-      title: Efficient system-level support for CHERI Capabilities
-      description: 'Programme organisation credit: Codasip'
-    - id: talk-b4648486add1
-      type: talk
-      title: Industrial-Strength Formal Verification of RISC-V Processors 
-      description: 'Programme organisation credit: Axiomise'
-    - id: talk-548f88d4c3a1
-      type: talk
-      title: Implementation of CHERI Capabilities in a Safety-Critical Real-Time Operating System for Intelligent Edge Systems
-      description: 'Programme organisation credit: Wind River'
-    - id: talk-0935a283e531
-      type: talk
-      title: Porting Linux to CHERI
-      description: 'Programme organisation credit: ArmCodasip'
-    - id: talk-124658c9e605
-      type: talk
-      title: Hybrid CHERI in seL4 user space
-      description: 'Programme organisation credit: Mission Critical Applications Limited'
-    - id: talk-bd18e762e01d
-      type: talk
-      title: 'Porting V8 to CHERI: An Overview'
-      description: 'Programme organisation credit: Capabilities Limited, University of Cambridge'
-    - id: talk-96da1e6d72af
-      type: talk
-      title: Latest news about CHERI
-      description: 'Programme organisation credit: CHERI Alliance'
-    - id: talk-415d876b7108
-      type: talk
-      title: Securing Secure Networking tools for Morello Linux
-      description: 'Programme organisation credit: University of Manchester'
-    - id: talk-eefbd5abb872
-      type: talk
-      title: 'Rust for Morello: Always-On Memory Safety, Even in Unsafe Code'
-      description: 'Programme organisation credit: Kent University'
-    - id: talk-2b12bc8d11ca
-      type: talk
-      title: Implementing safe and resilient configuration management with CHERIoT
-      description: 'Programme organisation credit: Configured Things'
-    - id: talk-11c63986461f
-      type: talk
-      title: 'CHERI MicroPython: Challenges and Opportunities'
-      description: 'Programme organisation credit: University of Glasgow'
-    - id: talk-9eb3ab951d91
-      type: talk
-      title: QEMU Working Group presentation
-    - id: talk-57cca0999c5b
-      type: talk
-      title: CHERI Alliance - QEMU Working Group
-      description: 'Programme organisation credit: Capabilities Limited'
-    - id: talk-8a1c585b5c2a
-      type: talk
-      title: SoC Working Group presentation
-    - id: talk-c5a35cd87774
-      type: talk
-      title: Repository Working Group presentation
-    - id: talk-1b8956a81f83
-      type: talk
-      title: CHERI Alliance - Repository Working Group
-      description: 'Programme organisation credit: lowRISC'
-    - id: talk-bbfc8052f8cd
-      type: talk
-      title: Promotion & Ambassador Working Group
-    - id: talk-7178abe0024f
-      type: talk
-      title: CHERI Alliance - Promotion & Ambassador Working Group
-      description: 'Programme organisation credit: CHERI Alliance'
-    - id: talk-5afced256725
-      type: talk
-      title: Marketing Working Group presentation
-    - id: talk-4909d5d20ebb
-      type: talk
-      title: CHERI Alliance - Marketing Working Group
-      description: 'Programme organisation credit: Codasip'
-    - id: talk-18db2e5b4c29
-      type: talk
-      title: seL4 Working Group presentation
-    - id: talk-0be58c12b274
-      type: talk
-      title: CHERI Blossoms 2025
-  speakers:
-  - person: hesham-almatary
-    role: speaker
-    session: talk-18db2e5b4c29
-  - person: ben-fletcher
-    role: speaker
-    session: talk-8a1c585b5c2a
-  - person: joshua-lant
-    role: speaker
-    session: talk-415d876b7108
-  - person: mark-batty
-    role: speaker
-    session: talk-eefbd5abb872
-  - person: marno-van-der-maas
-    role: speaker
-    session: talk-c5a35cd87774
-  - person: alfredo-mazzinghi
-    role: speaker
-    session: talk-9eb3ab951d91
-  - person: mike-eftimakis
-    role: speaker
-    session: talk-bbfc8052f8cd
-  - person: gavin-ferris
-    role: speaker
-    session: talk-a409ba018943
-  - person: haydn-povey
-    role: speaker
-    session: talk-a409ba018943
-  - person: mike-eftimakis
-    role: speaker
-    session: talk-ee4f029811ee
-  - person: domagoj-stolfa
-    role: speaker
-    session: talk-bd18e762e01d
-  - person: carl-shaw
-    role: speaker
-    session: talk-0935a283e531
-  - person: kevin-brodsky
-    role: speaker
-    session: talk-0935a283e531
-  - person: tora-fridholm
-    role: speaker
-    session: talk-5afced256725
-  - person: robert-watson
-    role: speaker
-    session: talk-96da1e6d72af
-  - person: ashish-darbari
-    role: speaker
-    session: talk-b4648486add1
-  - person: phil-day
-    role: speaker
-    session: talk-2b12bc8d11ca
-  - person: dmitriy-yeliseyev
-    role: speaker
-    session: talk-548f88d4c3a1
-  - person: martin-atkins
-    role: speaker
-    session: talk-124658c9e605
-  - person: john-goodacre
-    role: speaker
-    session: talk-fdafbfe3885d
-  - person: mark-hill
-    role: speaker
-    session: talk-e2b1014154cd
-  - person: david-chisnall
-    role: speaker
-    session: talk-acdf345cf9e8
-  - person: jonathan-woodruff
-    role: speaker
-    session: talk-09317658dceb
-  - person: tariq-kurd
-    role: speaker
-    session: talk-c1099ce999bd
-  - person: jeremy-singer
-    role: speaker
-    session: talk-11c63986461f
-  - person: alastair-beresford
-    role: speaker
-    session: talk-4ebc19d99f86
-  - person: mike-halsall
-    role: speaker
-    session: talk-0be58c12b274
-  - person: bradley-finn
-    role: speaker
-    session: talk-2d8866c514d1
-  - person: simon-moore
-    role: speaker
-    session: talk-2106167f179c
-  - person: alastair-beresford
-    role: speaker
-    session: talk-e7226304e78e
-  - person: mike-eftimakis
-    role: speaker
-    session: talk-bc8fb46fa71d
-  - person: tariq-kurd
-    role: speaker
-    session: talk-e2b1014154cd
-  - person: alfredo-mazzinghi
-    role: speaker
-    session: talk-57cca0999c5b
-  - person: ben-fletcher
-    role: speaker
-    session: talk-57cca0999c5b
-  - person: marno-van-der-maas
-    role: speaker
-    session: talk-1b8956a81f83
-  - person: mike-eftimakis
-    role: speaker
-    session: talk-7178abe0024f
-  - person: tora-fridholm
-    role: speaker
-    session: talk-4909d5d20ebb
-  - person: hesham-almatary
-    role: speaker
-    session: talk-57cca0999c5b
+    - title: CHERI Blossoms 2025
+      speakers:
+      - person: alastair-beresford
+      resources:
+      - type: slides
+        label: View Slides
+        url: /assets/pdf/events/cheri-blossoms-conference-2025/1-1-alastair-beresford-keynote.pdf
+      - type: video
+        label: View Video
+        url: https://youtu.be/g4IEkrMQcDY
+    - title: Keynote
+      affiliation: University of Cambridge
+      speakers:
+      - person: alastair-beresford
+      resources:
+      - type: video
+        label: View video
+        url: https://www.youtube.com/watch?v=g4IEkrMQcDY&list=PLTe5zG6binjmores6enpkUeQZ-sFtzaCi
+    - title: Findings from DSbD program
+      affiliation: UKRI
+      speakers:
+      - person: john-goodacre
+      resources:
+      - type: video
+        label: View Video
+        url: https://youtu.be/rPVnNIt3W_A
+    - title: 'Building Resilience: Enhancing productivity through Secure by Design systems'
+      affiliation: DSIT
+      speakers:
+      - person: bradley-finn
+      resources:
+      - type: slides
+        label: View Slides
+        url: /assets/pdf/events/cheri-blossoms-conference-2025/1-3-bradley-finn-building-resilience-single-slide.pdf
+      - type: video
+        label: View Video
+        url: https://youtu.be/v1UgOV-B35g
+    - title: About CHERI
+      affiliation: University of Cambridge
+      speakers:
+      - person: simon-moore
+      resources:
+      - type: slides
+        label: View Slides
+        url: /assets/pdf/events/cheri-blossoms-conference-2025/1-5-simon-moore-about-cheri.pdf
+      - type: video
+        label: View Video
+        url: https://youtu.be/iNrEEslJ8MU
+    - title: Progress of the Alliance
+      speakers:
+      - person: mike-eftimakis
+      resources:
+      - type: slides
+        label: View slides
+        url: /assets/pdf/events/cheri-blossoms-conference-2025/1-6-mike-eftimakis-cheri-blossoms.pdf
+      - type: video
+        label: Watch video
+        url: https://youtu.be/KJF8888L3fc
+    - title: Progress of the Alliance, CHERI Alliance - Promotion & Ambassador Working Group
+      affiliation: CHERI Alliance
+      speakers:
+      - person: mike-eftimakis
+      resources:
+      - type: video
+        label: View video
+        url: https://www.youtube.com/watch?v=KJF8888L3fc&list=PLTe5zG6binjmores6enpkUeQZ-sFtzaCi
+    - title: 'Project Sunburst: An Open-Source CHERIoT SoC Top-Level and its Path to Market with Iceni'
+      affiliation: lowRISCCapabilities Limited
+      speakers:
+      - person: gavin-ferris
+      - person: haydn-povey
+      resources:
+      - type: slides
+        label: View Slides
+        url: /assets/pdf/events/cheri-blossoms-conference-2025/2-1-gavin-ferris-haydn-povey-project-sunburst.pdf
+      - type: video
+        label: View Video
+        url: https://youtu.be/HSHdB_4Ra2E
+    - title: CHERI RISC-V Standardisation
+      affiliation: Codasip
+      speakers:
+      - person: tariq-kurd
+      resources:
+      - type: slides
+        label: View Slides
+        url: /assets/pdf/events/cheri-blossoms-conference-2025/2-2-tariq-kurd-cheri-standardisation.pdf
+      - type: video
+        label: View Video
+        url: https://youtu.be/8BEpAutYR_g
+    - title: CHERI support for CVA6
+      affiliation: Capabilities Limited
+      speakers:
+      - person: jonathan-woodruff
+      resources:
+      - type: slides
+        label: View Slides
+        url: /assets/pdf/events/cheri-blossoms-conference-2025/2-3-jonathan-woodruff-cva6-cheri-blossoms.pdf
+      - type: video
+        label: View Video
+        url: https://youtu.be/poeXaSh0czg
+    - title: CHERIoT 2025
+      affiliation: SCI Semiconductor
+      speakers:
+      - person: david-chisnall
+      resources:
+      - type: slides
+        label: View Slides
+        url: /assets/pdf/events/cheri-blossoms-conference-2025/2-4-david-chisnall-cheriot.pdf
+      - type: video
+        label: View Video
+        url: https://youtu.be/ScN-yLFSQe4
+    - title: Efficient system-level support for CHERI Capabilities
+      affiliation: Codasip
+      speakers:
+      - person: mark-hill
+      - person: tariq-kurd
+      resources:
+      - type: slides
+        label: View Slides
+        url: /assets/pdf/events/cheri-blossoms-conference-2025/2-5-mark-hill-efficient-system-level-support-for-cheri-capabilities.pdf
+      - type: video
+        label: View Video
+        url: https://youtu.be/5F1_3eeEsU4
+    - title: Industrial-Strength Formal Verification of RISC-V Processors 
+      affiliation: Axiomise
+      speakers:
+      - person: ashish-darbari
+      resources:
+      - type: slides
+        label: View Slides
+        url: /assets/pdf/events/cheri-blossoms-conference-2025/2-6-ashish-dabari-formal-verification-of-risc-v-processors.pdf
+      - type: video
+        label: View Video
+        url: https://youtu.be/O6UyhX0aue4
+    - title: Implementation of CHERI Capabilities in a Safety-Critical Real-Time Operating System for Intelligent Edge Systems
+      affiliation: Wind River
+      speakers:
+      - person: dmitriy-yeliseyev
+      resources:
+      - type: slides
+        label: View Slides
+        url: /assets/pdf/events/cheri-blossoms-conference-2025/3-2-dmitriy-yeliseyev-cherivxworks.pdf
+      - type: video
+        label: View Video
+        url: https://youtu.be/VKxQdQNl-WQ
+    - title: Porting Linux to CHERI
+      affiliation: ArmCodasip
+      speakers:
+      - person: carl-shaw
+      - person: kevin-brodsky
+      resources:
+      - type: slides
+        label: View Slides
+        url: /assets/pdf/events/cheri-blossoms-conference-2025/3-3-carl-shaw-porting-linux-to-cheri.pdf
+      - type: video
+        label: View Video
+        url: https://youtu.be/aLc92JHfokY
+    - title: Hybrid CHERI in seL4 user space
+      affiliation: Mission Critical Applications Limited
+      speakers:
+      - person: martin-atkins
+      resources:
+      - type: slides
+        label: View Slides
+        url: /assets/pdf/events/cheri-blossoms-conference-2025/3-4-martin-atkins-hybrid-cheri-in-sel4-user-space.pdf
+      - type: video
+        label: View Video
+        url: https://youtu.be/wsrmc7wtuLY
+    - title: 'Porting V8 to CHERI: An Overview'
+      affiliation: Capabilities Limited, University of Cambridge
+      speakers:
+      - person: domagoj-stolfa
+      resources:
+      - type: slides
+        label: View Slides
+        url: /assets/pdf/events/cheri-blossoms-conference-2025/3-5-domagoj-stolfa-porting-v8-to-cheri.pdf
+      - type: video
+        label: View Video
+        url: https://youtu.be/3XBSny5Yc58
+    - title: Latest news about CHERI
+      affiliation: CHERI Alliance
+      speakers:
+      - person: robert-watson
+      resources:
+      - type: video
+        label: View Video
+        url: https://youtu.be/jwq2fs_DzME
+    - title: Securing Secure Networking tools for Morello Linux
+      affiliation: University of Manchester
+      speakers:
+      - person: joshua-lant
+      resources:
+      - type: slides
+        label: View Slides
+        url: /assets/pdf/events/cheri-blossoms-conference-2025/4-1-joshua-lant-secure-networking-tools.pdf
+      - type: video
+        label: View Video
+        url: https://youtu.be/iUOH20uqjjA
+    - title: 'Rust for Morello: Always-On Memory Safety, Even in Unsafe Code'
+      affiliation: Kent University
+      speakers:
+      - person: mark-batty
+      resources:
+      - type: slides
+        label: View Slides
+        url: /assets/pdf/events/cheri-blossoms-conference-2025/4-2-mark-batty-rust-for-morello.pdf
+      - type: video
+        label: View Video
+        url: https://youtu.be/nI8AUN4cuAw
+    - title: Implementing safe and resilient configuration management with CHERIoT
+      affiliation: Configured Things
+      speakers:
+      - person: phil-day
+      resources:
+      - type: slides
+        label: View Slides
+        url: /assets/pdf/events/cheri-blossoms-conference-2025/4-4-phil-day-implementing-safe-and-resilient-configuration-management-with-cheriot.pdf
+      - type: video
+        label: View Video
+        url: https://youtu.be/-TLnXfS4YIE
+    - title: 'CHERI MicroPython: Challenges and Opportunities'
+      affiliation: University of Glasgow
+      speakers:
+      - person: jeremy-singer
+      resources:
+      - type: slides
+        label: View Slides
+        url: /assets/pdf/events/cheri-blossoms-conference-2025/4-5-jeremy-singer-cheri-micropython.pdf
+      - type: video
+        label: View Video
+        url: https://youtu.be/GJwvjsb8lg4
+    - title: QEMU Working Group presentation
+      speakers:
+      - person: alfredo-mazzinghi
+      resources:
+      - type: slides
+        label: View Slides
+        url: /assets/pdf/events/cheri-blossoms-conference-2025/5-1-alfredo-mazzinghi-qemu-wg.pdf
+      - type: slides
+        label: View Slides
+        url: https://youtu.be/oGuXn2PT4gk
+    - title: CHERI Alliance - QEMU Working Group
+      affiliation: Capabilities Limited
+      speakers:
+      - person: alfredo-mazzinghi
+      - person: ben-fletcher
+      - person: hesham-almatary
+      resources:
+      - type: video
+        label: View video
+        url: https://www.youtube.com/watch?v=oGuXn2PT4gk&list=PLTe5zG6binjmores6enpkUeQZ-sFtzaCi
+      - type: video
+        label: View video
+        url: https://www.youtube.com/watch?v=zCf0Z0LLfxg&list=PLTe5zG6binjmores6enpkUeQZ-sFtzaCi
+      - type: video
+        label: View video
+        url: https://www.youtube.com/watch?v=cuj3L52ut04&list=PLTe5zG6binjmores6enpkUeQZ-sFtzaCi
+    - title: SoC Working Group presentation
+      speakers:
+      - person: ben-fletcher
+      resources:
+      - type: slides
+        label: View Slides
+        url: /assets/pdf/events/cheri-blossoms-conference-2025/5-2-ben-fletcher-cheri-in-soc-wg.pdf
+      - type: video
+        label: View Video
+        url: https://youtu.be/zCf0Z0LLfxg
+    - title: Repository Working Group presentation
+      speakers:
+      - person: marno-van-der-maas
+      resources:
+      - type: slides
+        label: View Slides
+        url: /assets/pdf/events/cheri-blossoms-conference-2025/marno-van-der-maas-cheri-blossoms-2025-poster.pdf
+      - type: video
+        label: View Video
+        url: https://youtu.be/CEiCFFoOS84
+    - title: CHERI Alliance - Repository Working Group
+      affiliation: lowRISC
+      speakers:
+      - person: marno-van-der-maas
+      resources:
+      - type: video
+        label: View video
+        url: https://www.youtube.com/watch?v=CEiCFFoOS84&list=PLTe5zG6binjmores6enpkUeQZ-sFtzaCi
+    - title: Promotion & Ambassador Working Group
+      speakers:
+      - person: mike-eftimakis
+      resources:
+      - type: slides
+        label: View slides
+        url: /assets/pdf/events/cheri-blossoms-conference-2025/5-4-mike-eftimakis-promotion-ambassador-wg.pdf
+      - type: video
+        label: Watch video
+        url: https://youtu.be/4-vSlsPL4eg
+    - title: CHERI Alliance - Promotion & Ambassador Working Group
+      affiliation: CHERI Alliance
+      speakers:
+      - person: mike-eftimakis
+      resources:
+      - type: video
+        label: View video
+        url: https://www.youtube.com/watch?v=4-vSlsPL4eg&list=PLTe5zG6binjmores6enpkUeQZ-sFtzaCi
+    - title: Marketing Working Group presentation
+      speakers:
+      - person: tora-fridholm
+      resources:
+      - type: slides
+        label: View Slides
+        url: /assets/pdf/events/cheri-blossoms-conference-2025/5-6-tora-fridholm-marketing-wg.pdf
+      - type: video
+        label: View Video
+        url: https://youtu.be/8rCMMtHrDo8
+    - title: CHERI Alliance - Marketing Working Group
+      affiliation: Codasip
+      speakers:
+      - person: tora-fridholm
+      resources:
+      - type: video
+        label: View video
+        url: https://www.youtube.com/watch?v=8rCMMtHrDo8&list=PLTe5zG6binjmores6enpkUeQZ-sFtzaCi
+    - title: seL4 Working Group presentation
+      speakers:
+      - person: hesham-almatary
+      resources:
+      - type: slides
+        label: View Slides
+        url: /assets/pdf/events/cheri-blossoms-conference-2025/cheri-blossoms-sel4.pdf
+      - type: video
+        label: View Video
+        url: https://youtu.be/cuj3L52ut04
+    - title: CHERI Blossoms 2025
+      speakers:
+      - person: mike-halsall
 resources:
 - type: website
   label: CHERI Blossoms
   url: /news-and-events/events-and-archive/cheri-blossoms/
-- type: slides
-  label: View Slides
-  url: /assets/pdf/events/cheri-blossoms-conference-2025/cheri-blossoms-sel4.pdf
-  session_id: talk-18db2e5b4c29
-- type: video
-  label: View Video
-  url: https://youtu.be/cuj3L52ut04
-  session_id: talk-18db2e5b4c29
-- type: slides
-  label: View Slides
-  url: /assets/pdf/events/cheri-blossoms-conference-2025/5-2-ben-fletcher-cheri-in-soc-wg.pdf
-  session_id: talk-8a1c585b5c2a
-- type: video
-  label: View Video
-  url: https://youtu.be/zCf0Z0LLfxg
-  session_id: talk-8a1c585b5c2a
-- type: slides
-  label: View Slides
-  url: /assets/pdf/events/cheri-blossoms-conference-2025/4-1-joshua-lant-secure-networking-tools.pdf
-  session_id: talk-415d876b7108
-- type: video
-  label: View Video
-  url: https://youtu.be/iUOH20uqjjA
-  session_id: talk-415d876b7108
-- type: slides
-  label: View Slides
-  url: /assets/pdf/events/cheri-blossoms-conference-2025/4-2-mark-batty-rust-for-morello.pdf
-  session_id: talk-eefbd5abb872
-- type: video
-  label: View Video
-  url: https://youtu.be/nI8AUN4cuAw
-  session_id: talk-eefbd5abb872
-- type: slides
-  label: View Slides
-  url: /assets/pdf/events/cheri-blossoms-conference-2025/marno-van-der-maas-cheri-blossoms-2025-poster.pdf
-  session_id: talk-c5a35cd87774
-- type: video
-  label: View Video
-  url: https://youtu.be/CEiCFFoOS84
-  session_id: talk-c5a35cd87774
-- type: slides
-  label: View Slides
-  url: /assets/pdf/events/cheri-blossoms-conference-2025/5-1-alfredo-mazzinghi-qemu-wg.pdf
-  session_id: talk-9eb3ab951d91
-- type: slides
-  label: View Slides
-  url: https://youtu.be/oGuXn2PT4gk
-  session_id: talk-9eb3ab951d91
-- type: slides
-  label: View slides
-  url: /assets/pdf/events/cheri-blossoms-conference-2025/5-4-mike-eftimakis-promotion-ambassador-wg.pdf
-  session_id: talk-bbfc8052f8cd
-- type: video
-  label: Watch video
-  url: https://youtu.be/4-vSlsPL4eg
-  session_id: talk-bbfc8052f8cd
-- type: slides
-  label: View Slides
-  url: /assets/pdf/events/cheri-blossoms-conference-2025/2-1-gavin-ferris-haydn-povey-project-sunburst.pdf
-  session_id: talk-a409ba018943
-- type: video
-  label: View Video
-  url: https://youtu.be/HSHdB_4Ra2E
-  session_id: talk-a409ba018943
-- type: slides
-  label: View slides
-  url: /assets/pdf/events/cheri-blossoms-conference-2025/1-6-mike-eftimakis-cheri-blossoms.pdf
-  session_id: talk-ee4f029811ee
-- type: video
-  label: Watch video
-  url: https://youtu.be/KJF8888L3fc
-  session_id: talk-ee4f029811ee
-- type: slides
-  label: View Slides
-  url: /assets/pdf/events/cheri-blossoms-conference-2025/3-5-domagoj-stolfa-porting-v8-to-cheri.pdf
-  session_id: talk-bd18e762e01d
-- type: video
-  label: View Video
-  url: https://youtu.be/3XBSny5Yc58
-  session_id: talk-bd18e762e01d
-- type: slides
-  label: View Slides
-  url: /assets/pdf/events/cheri-blossoms-conference-2025/3-3-carl-shaw-porting-linux-to-cheri.pdf
-  session_id: talk-0935a283e531
-- type: video
-  label: View Video
-  url: https://youtu.be/aLc92JHfokY
-  session_id: talk-0935a283e531
-- type: slides
-  label: View Slides
-  url: /assets/pdf/events/cheri-blossoms-conference-2025/5-6-tora-fridholm-marketing-wg.pdf
-  session_id: talk-5afced256725
-- type: video
-  label: View Video
-  url: https://youtu.be/8rCMMtHrDo8
-  session_id: talk-5afced256725
-- type: video
-  label: View Video
-  url: https://youtu.be/jwq2fs_DzME
-  session_id: talk-96da1e6d72af
-- type: slides
-  label: View Slides
-  url: /assets/pdf/events/cheri-blossoms-conference-2025/2-6-ashish-dabari-formal-verification-of-risc-v-processors.pdf
-  session_id: talk-b4648486add1
-- type: video
-  label: View Video
-  url: https://youtu.be/O6UyhX0aue4
-  session_id: talk-b4648486add1
-- type: slides
-  label: View Slides
-  url: /assets/pdf/events/cheri-blossoms-conference-2025/4-4-phil-day-implementing-safe-and-resilient-configuration-management-with-cheriot.pdf
-  session_id: talk-2b12bc8d11ca
-- type: video
-  label: View Video
-  url: https://youtu.be/-TLnXfS4YIE
-  session_id: talk-2b12bc8d11ca
-- type: slides
-  label: View Slides
-  url: /assets/pdf/events/cheri-blossoms-conference-2025/3-2-dmitriy-yeliseyev-cherivxworks.pdf
-  session_id: talk-548f88d4c3a1
-- type: video
-  label: View Video
-  url: https://youtu.be/VKxQdQNl-WQ
-  session_id: talk-548f88d4c3a1
-- type: slides
-  label: View Slides
-  url: /assets/pdf/events/cheri-blossoms-conference-2025/3-4-martin-atkins-hybrid-cheri-in-sel4-user-space.pdf
-  session_id: talk-124658c9e605
-- type: video
-  label: View Video
-  url: https://youtu.be/wsrmc7wtuLY
-  session_id: talk-124658c9e605
-- type: video
-  label: View Video
-  url: https://youtu.be/rPVnNIt3W_A
-  session_id: talk-fdafbfe3885d
-- type: slides
-  label: View Slides
-  url: /assets/pdf/events/cheri-blossoms-conference-2025/2-5-mark-hill-efficient-system-level-support-for-cheri-capabilities.pdf
-  session_id: talk-e2b1014154cd
-- type: video
-  label: View Video
-  url: https://youtu.be/5F1_3eeEsU4
-  session_id: talk-e2b1014154cd
-- type: slides
-  label: View Slides
-  url: /assets/pdf/events/cheri-blossoms-conference-2025/2-4-david-chisnall-cheriot.pdf
-  session_id: talk-acdf345cf9e8
-- type: video
-  label: View Video
-  url: https://youtu.be/ScN-yLFSQe4
-  session_id: talk-acdf345cf9e8
-- type: slides
-  label: View Slides
-  url: /assets/pdf/events/cheri-blossoms-conference-2025/2-3-jonathan-woodruff-cva6-cheri-blossoms.pdf
-  session_id: talk-09317658dceb
-- type: video
-  label: View Video
-  url: https://youtu.be/poeXaSh0czg
-  session_id: talk-09317658dceb
-- type: slides
-  label: View Slides
-  url: /assets/pdf/events/cheri-blossoms-conference-2025/2-2-tariq-kurd-cheri-standardisation.pdf
-  session_id: talk-c1099ce999bd
-- type: video
-  label: View Video
-  url: https://youtu.be/8BEpAutYR_g
-  session_id: talk-c1099ce999bd
-- type: slides
-  label: View Slides
-  url: /assets/pdf/events/cheri-blossoms-conference-2025/4-5-jeremy-singer-cheri-micropython.pdf
-  session_id: talk-11c63986461f
-- type: video
-  label: View Video
-  url: https://youtu.be/GJwvjsb8lg4
-  session_id: talk-11c63986461f
-- type: slides
-  label: View Slides
-  url: /assets/pdf/events/cheri-blossoms-conference-2025/1-1-alastair-beresford-keynote.pdf
-  session_id: talk-4ebc19d99f86
-- type: video
-  label: View Video
-  url: https://youtu.be/g4IEkrMQcDY
-  session_id: talk-4ebc19d99f86
-- type: slides
-  label: View Slides
-  url: /assets/pdf/events/cheri-blossoms-conference-2025/1-3-bradley-finn-building-resilience-single-slide.pdf
-  session_id: talk-2d8866c514d1
-- type: video
-  label: View Video
-  url: https://youtu.be/v1UgOV-B35g
-  session_id: talk-2d8866c514d1
-- type: slides
-  label: View Slides
-  url: /assets/pdf/events/cheri-blossoms-conference-2025/1-5-simon-moore-about-cheri.pdf
-  session_id: talk-2106167f179c
-- type: video
-  label: View Video
-  url: https://youtu.be/iNrEEslJ8MU
-  session_id: talk-2106167f179c
-- type: video
-  label: View video
-  url: https://www.youtube.com/watch?v=g4IEkrMQcDY&list=PLTe5zG6binjmores6enpkUeQZ-sFtzaCi
-  session_id: talk-e7226304e78e
-- type: video
-  label: View video
-  url: https://www.youtube.com/watch?v=KJF8888L3fc&list=PLTe5zG6binjmores6enpkUeQZ-sFtzaCi
-  session_id: talk-bc8fb46fa71d
-- type: video
-  label: View video
-  url: https://www.youtube.com/watch?v=oGuXn2PT4gk&list=PLTe5zG6binjmores6enpkUeQZ-sFtzaCi
-  session_id: talk-57cca0999c5b
-- type: video
-  label: View video
-  url: https://www.youtube.com/watch?v=zCf0Z0LLfxg&list=PLTe5zG6binjmores6enpkUeQZ-sFtzaCi
-  session_id: talk-57cca0999c5b
-- type: video
-  label: View video
-  url: https://www.youtube.com/watch?v=CEiCFFoOS84&list=PLTe5zG6binjmores6enpkUeQZ-sFtzaCi
-  session_id: talk-1b8956a81f83
-- type: video
-  label: View video
-  url: https://www.youtube.com/watch?v=4-vSlsPL4eg&list=PLTe5zG6binjmores6enpkUeQZ-sFtzaCi
-  session_id: talk-7178abe0024f
-- type: video
-  label: View video
-  url: https://www.youtube.com/watch?v=8rCMMtHrDo8&list=PLTe5zG6binjmores6enpkUeQZ-sFtzaCi
-  session_id: talk-4909d5d20ebb
-- type: video
-  label: View video
-  url: https://www.youtube.com/watch?v=cuj3L52ut04&list=PLTe5zG6binjmores6enpkUeQZ-sFtzaCi
-  session_id: talk-57cca0999c5b
 related:
 - type: page
   slug: news-and-events-events-and-archive-past-events

@@ -17,12 +17,11 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: pa-consulting
-    relationship: other
   links:
   - label: LinkedIn
     url: https://www.linkedin.com/in/manu-ravishankar-8a373734/
+  affiliation:
+    organisation: pa-consulting
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers

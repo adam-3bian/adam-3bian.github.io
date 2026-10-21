@@ -147,6 +147,7 @@ img {
   width: 100%;
 }
 .content img {
+  border-radius: var(--radius);
   height: auto;
   max-width: 100%;
 }

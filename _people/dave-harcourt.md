@@ -17,12 +17,11 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: bt-group
-    relationship: other
   links:
   - label: LinkedIn
     url: https://www.linkedin.com/in/davidharcourt/
+  affiliation:
+    organisation: bt-group
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers

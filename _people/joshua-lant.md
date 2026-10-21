@@ -17,12 +17,11 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: the-university-of-manchester
-    relationship: other
   links:
   - label: LinkedIn
     url: https://www.linkedin.com/in/joshua-lant-4b465b120/
+  affiliation:
+    organisation: the-university-of-manchester
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers

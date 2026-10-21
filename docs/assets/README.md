@@ -139,4 +139,9 @@ The reference also includes the approved capitalisation of displayed Type
 labels, local replacements for legacy webpage links, removal of news byline
 affiliations, and the responsive event programmes described in
 [event-programme.md](../event-programme.md). Source credits and relationships
-remain in the content records.
+remain in the content records. Event programmes now nest speakers and media
+without authored IDs. People cards use the main affiliation described in
+[people.md](../people.md); other affiliations remain available on profiles and
+in organisation inverse views. The reference includes these card labels, the
+corrected CHERI Alliance organisation name, generated programme links and
+compatibility anchors.

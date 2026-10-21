@@ -15,12 +15,11 @@ image:
   height: 512
   fit: cover
 person:
-  organisations:
-  - organisation: google
-    relationship: other
   governance:
     board_order: 7
     board_role: Senior Software Engineer
+  affiliation:
+    organisation: google
 related:
 - type: page
   slug: alliance-leadership-governing-board

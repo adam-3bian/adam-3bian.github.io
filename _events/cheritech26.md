@@ -1,7 +1,8 @@
 ---
 layout: detail
 title: CHERITech'26
-summary: A two-day CHERI technical programme at **Electronica** / **SEMICON Europa** in Munich, connecting implementation work with the wider electronics industry.
+summary: A two-day CHERI technical programme at **Electronica** / **SEMICON Europa** in Munich, connecting implementation work with the wider
+  electronics industry.
 permalink: /events/cheritech26/
 slug: cheritech26
 navigation:
@@ -31,255 +32,199 @@ event:
   schedule:
   - date: '2026-11-12'
     sessions:
-    - id: programme-2026-11-12-introduction-1
-      type: introduction
+    - type: introduction
       title: Introduction
-      track: main
       start: '13:00'
       presentations:
-      - id: presentation-introduction-to-day-1-60976a
-        title: Introduction to Day 1
-    - id: programme-2026-11-12-keynotes-2
-      type: keynote
+      - title: Introduction to Day 1
+    - type: keynote
       title: Keynotes
-      track: main
       start: '13:05'
       end: '14:20'
       presentations:
-      - id: presentation-keynote-d27f61
-        title: Keynote
+      - title: Keynote
         start: '13:05'
-        description: 'Published presenter credit: Yona Raekow — BSI'
-      - id: presentation-with-cheri-can-we-afford-to-ignore-hardware-security-af43a4
-        title: With CHERI, can we afford to ignore hardware security?
+        speakers:
+        - name: Yona Raekow
+          affiliation: BSI
+      - title: With CHERI, can we afford to ignore hardware security?
         start: '13:20'
-        description: 'Published presenter credit: Joerg Bormann — Siemens'
-      - id: presentation-introduction-and-state-of-cheri-3e2b92
-        title: Introduction and State of CHERI
+        speakers:
+        - name: Joerg Bormann
+          affiliation: Siemens
+      - title: Introduction and State of CHERI
         start: '13:40'
-        description: 'Programme organisation credit: University of Cambridge'
-      - id: presentation-progress-of-the-alliance-a632d7
-        title: Progress of the Alliance
+        affiliation: University of Cambridge
+        speakers:
+        - person: jonathan-woodruff
+      - title: Progress of the Alliance
         start: '14:00'
-        description: 'Programme organisation credit: CHERI Alliance'
-    - id: programme-2026-11-12-break-and-exhibition-3
-      type: break
+        affiliation: CHERI Alliance
+        speakers:
+        - person: mike-eftimakis
+    - type: break
       title: Break and exhibition
-      track: main
       start: '14:20'
-    - id: programme-2026-11-12-case-studies-4
-      type: session
+    - type: session
       title: Case studies
-      track: main
       start: '14:30'
       end: '15:25'
       presentations:
-      - id: presentation-opportunities-for-cheri-in-the-energy-industry-782d95
-        title: Opportunities for CHERI in the Energy Industry
-        description: 'Published presenter credit: Joshua Cooper — Hildebrand'
-      - id: presentation-core-to-edge-iot-security-with-cheri-b28a07
-        title: Core to edge IoT security with CHERI
-        description: 'Programme organisation credit: UM Labs'
-      - id: presentation-building-a-network-security-product-on-cheri-early-insights-adad2e
-        title: 'Building a Network Security Product on CHERI: Early Insights'
-        description: 'Published presenter credit: Divya Atkins — Mission Critical Applications'
-      - id: presentation-beyond-the-tech-and-what-it-takes-to-create-a-market-for-cheri-7d0404
-        title: Beyond the tech and what it takes to create a market for CHERI
-        description: 'Programme organisation credit: PA Consulting'
-    - id: programme-2026-11-12-round-table-5
-      type: session
+      - title: Opportunities for CHERI in the Energy Industry
+        speakers:
+        - name: Joshua Cooper
+          affiliation: Hildebrand
+      - title: Core to edge IoT security with CHERI
+        affiliation: UM Labs
+        speakers:
+        - person: peter-cox
+      - title: 'Building a Network Security Product on CHERI: Early Insights'
+        speakers:
+        - person: martin-atkins
+        - name: Divya Atkins
+          affiliation: Mission Critical Applications
+      - title: Beyond the tech and what it takes to create a market for CHERI
+        affiliation: PA Consulting
+        speakers:
+        - person: manu-ravishankar
+    - type: session
       title: Round table
-      track: main
       start: '15:25'
       presentations:
-      - id: presentation-panel-what-is-missing-for-cheri-to-be-widely-adopted-fd1dc1
-        title: 'Panel: What is missing for CHERI to be widely adopted?'
-        description: 'Published presenter credit: Host: Christopher Bennison. Panellists: Javier Orensanz Martinez, Joshua Cooper and Mike Eftimakis — IoT Security Foundation; lowRISC; Hildebrand Technology Limited; CHERI Alliance'
-    - id: programme-2026-11-12-posters-6
-      type: session
+      - title: 'Panel: What is missing for CHERI to be widely adopted?'
+        description: 'Host: Christopher Bennison. Panellists: Javier Orensanz Martinez, Joshua Cooper and Mike Eftimakis — IoT Security Foundation;
+          lowRISC; Hildebrand Technology Limited; CHERI Alliance'
+    - type: session
       title: Posters
-      track: main
       start: '15:45'
       presentations:
-      - id: presentation-high-performance-cheri-tag-controller-b7974f
-        title: High performance CHERI tag controller
-        description: 'Programme organisation credit: University of Cambridge'
-      - id: presentation-cheribsd-on-risc-v-vp-a-fast-virtual-prototype-for-latest-rvy-0-9-9-2a8648
-        title: 'CheriBSD on RISC-V VP++: A fast virtual prototype for latest RVY 0.9.9'
-        description: 'Published presenter credit: Andreas Hinterdorfer — Johannes Kepler University Linz, Institute for Complex Systems'
-    - id: programme-2026-11-12-break-and-exhibition-7
-      type: break
+      - title: High performance CHERI tag controller
+        affiliation: University of Cambridge
+        speakers:
+        - person: alexandre-joannou
+      - title: 'CheriBSD on RISC-V VP++: A fast virtual prototype for latest RVY 0.9.9'
+        speakers:
+        - name: Andreas Hinterdorfer
+          affiliation: Johannes Kepler University Linz, Institute for Complex Systems
+    - type: break
       title: Break and exhibition
-      track: main
       start: '15:50'
-    - id: programme-2026-11-12-standards-8
-      type: session
+    - type: session
       title: Standards
-      track: main
       start: '16:00'
       end: '16:45'
       presentations:
-      - id: presentation-mapping-the-etsi-memory-safety-technical-standard-to-cheri-83c40b
-        title: Mapping the ETSI Memory-Safety Technical Standard to CHERI
-        description: 'Programme organisation credit: Capabilities Limited'
-      - id: presentation-cheri-specification-and-standardisation-update-for-rv64y-rv32y-and-cheriot-e10aa4
-        title: CHERI Specification and Standardisation Update for RV64Y, RV32Y and CHERIoT
-        description: 'Programme organisation credit: Codasip'
-      - id: presentation-a-standard-for-cheri-capability-transport-over-axi-and-chi-f3e3e3
-        title: A Standard for CHERI Capability Transport over AXI and CHI
-        description: 'Programme organisation credit: CHERI Alliance / Codasip'
-    - id: programme-2026-11-12-hardware-9
-      type: session
+      - title: Mapping the ETSI Memory-Safety Technical Standard to CHERI
+        affiliation: Capabilities Limited
+        speakers:
+        - person: graeme-jenkinson
+      - title: CHERI Specification and Standardisation Update for RV64Y, RV32Y and CHERIoT
+        affiliation: Codasip
+        speakers:
+        - person: tariq-kurd
+      - title: A Standard for CHERI Capability Transport over AXI and CHI
+        affiliation: CHERI Alliance / Codasip
+        speakers:
+        - person: ben-fletcher
+    - type: session
       title: Hardware
-      track: main
       start: '16:45'
       end: '17:30'
       presentations:
-      - id: presentation-cva6-cheri-ratified-specification-implemented-and-vector-support-planned-941206
-        title: 'CVA6-CHERI: Ratified Specification Implemented and Vector Support Planned'
-        description: 'Programme organisation credit: Capabilities Limited'
-      - id: presentation-cheri-in-opentitan-application-of-memory-safety-best-practice-in-an-open-hardware-root-of-09103a
-        title: 'CHERI in OpenTitan: application of memory safety best practice in an open hardware root of trust'
-        description: 'Programme organisation credit: lowRISC'
-      - id: presentation-building-memory-safety-into-a-dma-engine-with-cheri-9bc6be
-        title: Building Memory Safety into a DMA Engine with CHERI
-        description: 'Programme organisation credit: CHERI Alliance / Codasip'
-    - id: programme-2026-11-12-reception-and-exhibition-10
-      type: networking
+      - title: 'CVA6-CHERI: Ratified Specification Implemented and Vector Support Planned'
+        affiliation: Capabilities Limited
+        speakers:
+        - person: jonathan-woodruff
+      - title: 'CHERI in OpenTitan: application of memory safety best practice in an open hardware root of trust'
+        affiliation: lowRISC
+        speakers:
+        - person: javier-orensanz-martinez
+      - title: Building Memory Safety into a DMA Engine with CHERI
+        affiliation: CHERI Alliance / Codasip
+        speakers:
+        - person: ben-fletcher
+    - type: networking
       title: Reception and exhibition
-      track: main
       start: '17:30'
-    - id: programme-2026-11-12-end-of-day-1-11
-      type: closing
+    - type: closing
       title: End of Day 1
-      track: main
       start: '18:30'
     label: Thursday
   - date: '2026-11-13'
     sessions:
-    - id: programme-2026-11-13-introduction-1
-      type: introduction
+    - type: introduction
       title: Introduction
-      track: main
       start: '10:00'
       presentations:
-      - id: presentation-introduction-to-day-2-e84b82
-        title: Introduction to Day 2
-    - id: programme-2026-11-13-compartmentalisation-2
-      type: session
+      - title: Introduction to Day 2
+    - type: session
       title: Compartmentalisation
-      track: main
       start: '10:05'
       end: '11:15'
       presentations:
-      - id: presentation-cheri-zephyr-and-compartmentalisation-of-userspace-threads-79e1a6
-        title: CHERI-Zephyr and Compartmentalisation of Userspace Threads
-        description: 'Programme organisation credit: University of Birmingham'
-      - id: presentation-compartmentalizing-a-canopen-stack-with-cheriot-434b5c
-        title: Compartmentalizing a CANopen stack with CHERIoT
-        description: 'Published presenter credit: Hugo Melder — Technical University of Munich'
-      - id: presentation-efficient-linkage-based-compartmentalization-on-cheri-a665bc
-        title: Efficient Linkage-Based Compartmentalization on CHERI
-        description: 'Published presenter credit: Dapeng Gao — University of Cambridge'
-      - id: presentation-littlecheri-ultra-fine-grain-compartmentalization-using-secure-stack-sharing-on-cheri-capa-03d9c7
-        title: 'LittleCHERI: Ultra-Fine-Grain Compartmentalization using Secure Stack-Sharing on CHERI Capability Machines'
-        description: 'Published presenter credit: Elias Storme — DistriNet, KU Leuven'
-    - id: programme-2026-11-13-break-and-exhibition-3
-      type: break
+      - title: CHERI-Zephyr and Compartmentalisation of Userspace Threads
+        affiliation: University of Birmingham
+        speakers:
+        - person: jennifer-jackson
+      - title: Compartmentalizing a CANopen stack with CHERIoT
+        speakers:
+        - name: Hugo Melder
+          affiliation: Technical University of Munich
+      - title: Efficient Linkage-Based Compartmentalization on CHERI
+        speakers:
+        - name: Dapeng Gao
+          affiliation: University of Cambridge
+      - title: 'LittleCHERI: Ultra-Fine-Grain Compartmentalization using Secure Stack-Sharing on CHERI Capability Machines'
+        speakers:
+        - name: Elias Storme
+          affiliation: DistriNet, KU Leuven
+    - type: break
       title: Break and exhibition
-      track: main
       start: '11:15'
       presentations:
-      - id: presentation-break-3-af01b4
-        title: Break 3
-    - id: programme-2026-11-13-software-and-research-4
-      type: session
+      - title: Break 3
+    - type: session
       title: Software and research
-      track: main
       start: '11:30'
       end: '13:25'
       presentations:
-      - id: presentation-signetos-designing-a-secure-and-fast-single-address-space-microkernel-to-support-modern-wo-bb99a1
-        title: 'SignetOS: Designing a Secure and Fast Single-Address-Space Microkernel to Support Modern Workloads'
-        description: 'Published presenter credit: John Kressel — Google'
-      - id: presentation-ftrace-on-cheri-linux-porting-a-fairly-complex-kernel-subsystem-9b2e88
-        title: 'ftrace on CHERI Linux: porting a fairly complex kernel subsystem'
-        description: 'Published presenter credit: Martin Kaiser — Codasip'
-      - id: presentation-title-withheld-paper-under-submission-c03765
-        title: Title withheld (paper under submission)
-        description: 'Published presenter credit: Nils Jordan — Ericsson'
-      - id: presentation-using-existing-cheri-semantics-for-cheri-native-temporal-safety-d76e4c
-        title: Using existing CHERI semantics for CHERI-native temporal safety
-        description: 'Published presenter credit: Yuecheng Wang — University of Cambridge'
-      - id: presentation-valid-in-bounds-and-wrong-analysis-of-fault-injection-attacks-against-cheri-capabilities-4bfd29
-        title: 'Valid, In-Bounds, and Wrong: Analysis of Fault Injection Attacks Against CHERI Capabilities'
-        description: 'Published presenter credit: Jan Philipp Thoma — Codasip'
-      - id: presentation-intra-allocation-bounds-enforcement-in-cheribsd-3a1a17
-        title: Intra-allocation bounds enforcement in CheriBSD
-        description: 'Programme organisation credit: University of Cambridge'
-      - id: presentation-writing-applications-for-cheriot-in-rust-ec182a
-        title: Writing applications for CHERIoT in Rust
-        description: 'Programme organisation credit: SCI Semiconductor'
-    - id: programme-2026-11-13-conclusion-5
-      type: closing
+      - title: 'SignetOS: Designing a Secure and Fast Single-Address-Space Microkernel to Support Modern Workloads'
+        speakers:
+        - name: John Kressel
+          affiliation: Google
+      - title: 'ftrace on CHERI Linux: porting a fairly complex kernel subsystem'
+        speakers:
+        - name: Martin Kaiser
+          affiliation: Codasip
+      - title: Title withheld (paper under submission)
+        speakers:
+        - name: Nils Jordan
+          affiliation: Ericsson
+      - title: Using existing CHERI semantics for CHERI-native temporal safety
+        speakers:
+        - name: Yuecheng Wang
+          affiliation: University of Cambridge
+      - title: 'Valid, In-Bounds, and Wrong: Analysis of Fault Injection Attacks Against CHERI Capabilities'
+        speakers:
+        - name: Jan Philipp Thoma
+          affiliation: Codasip
+      - title: Intra-allocation bounds enforcement in CheriBSD
+        affiliation: University of Cambridge
+        speakers:
+        - person: alfredo-mazzinghi
+      - title: Writing applications for CHERIoT in Rust
+        affiliation: SCI Semiconductor
+        speakers:
+        - person: edoardo-marangoni
+    - type: closing
       title: Conclusion
-      track: main
       start: '13:25'
       presentations:
-      - id: presentation-conclusion-to-day-2-41e1de
-        title: Conclusion to Day 2
-    - id: programme-2026-11-13-talks-end-and-exhibition-6
-      type: closing
+      - title: Conclusion to Day 2
+    - type: closing
       title: Talks end and exhibition
-      track: main
       start: '13:30'
     label: Friday
-  speakers:
-  - person: jonathan-woodruff
-    role: speaker
-    session: presentation-introduction-and-state-of-cheri-3e2b92
-  - person: mike-eftimakis
-    role: speaker
-    session: presentation-progress-of-the-alliance-a632d7
-  - person: peter-cox
-    role: speaker
-    session: presentation-core-to-edge-iot-security-with-cheri-b28a07
-  - person: martin-atkins
-    role: speaker
-    session: presentation-building-a-network-security-product-on-cheri-early-insights-adad2e
-  - person: manu-ravishankar
-    role: speaker
-    session: presentation-beyond-the-tech-and-what-it-takes-to-create-a-market-for-cheri-7d0404
-  - person: alexandre-joannou
-    role: speaker
-    session: presentation-high-performance-cheri-tag-controller-b7974f
-  - person: graeme-jenkinson
-    role: speaker
-    session: presentation-mapping-the-etsi-memory-safety-technical-standard-to-cheri-83c40b
-  - person: tariq-kurd
-    role: speaker
-    session: presentation-cheri-specification-and-standardisation-update-for-rv64y-rv32y-and-cheriot-e10aa4
-  - person: ben-fletcher
-    role: speaker
-    session: presentation-a-standard-for-cheri-capability-transport-over-axi-and-chi-f3e3e3
-  - person: jonathan-woodruff
-    role: speaker
-    session: presentation-cva6-cheri-ratified-specification-implemented-and-vector-support-planned-941206
-  - person: javier-orensanz-martinez
-    role: speaker
-    session: presentation-cheri-in-opentitan-application-of-memory-safety-best-practice-in-an-open-hardware-root-of-09103a
-  - person: ben-fletcher
-    role: speaker
-    session: presentation-building-memory-safety-into-a-dma-engine-with-cheri-9bc6be
-  - person: jennifer-jackson
-    role: speaker
-    session: presentation-cheri-zephyr-and-compartmentalisation-of-userspace-threads-79e1a6
-  - person: alfredo-mazzinghi
-    role: speaker
-    session: presentation-intra-allocation-bounds-enforcement-in-cheribsd-3a1a17
-  - person: edoardo-marangoni
-    role: speaker
-    session: presentation-writing-applications-for-cheriot-in-rust-ec182a
 resources:
 - type: website
   label: Electronica

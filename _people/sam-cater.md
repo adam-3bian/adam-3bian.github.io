@@ -17,15 +17,14 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: bt-group
-    relationship: other
   governance:
     board_order: 4
     board_role: Cloud Infrastructure Research Manager
   links:
   - label: LinkedIn
     url: https://www.linkedin.com/in/samalexcater/
+  affiliation:
+    organisation: bt-group
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers

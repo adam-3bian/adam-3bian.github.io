@@ -1,7 +1,8 @@
 ---
 layout: detail
 title: Johannes Müller
-summary: Johannes Müller received his Dipl.-Ing. degree in Electrical and Computer Engineering from the Technische Universität Kaiserslautern in 2018.
+summary: Johannes Müller received his Dipl.-Ing. degree in Electrical and Computer Engineering from the Technische Universität Kaiserslautern
+  in 2018.
 permalink: /people/johannes-muller/
 slug: johannes-muller
 navigation:
@@ -17,12 +18,11 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: rptu
-    relationship: other
   links:
   - label: LinkedIn
     url: https://www.linkedin.com/in/johannes-m%C3%BCller-b67831247/
+  affiliation:
+    organisation: rptu
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers

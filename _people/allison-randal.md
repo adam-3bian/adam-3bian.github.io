@@ -15,12 +15,11 @@ image:
   height: 512
   fit: cover
 person:
-  organisations:
-  - organisation: capabilities-limited
-    relationship: other
   governance:
     board_order: 8
     board_role: Open Source/Hardware Strategist
+  affiliation:
+    organisation: capabilities-limited
 related:
 - type: page
   slug: alliance-leadership-governing-board

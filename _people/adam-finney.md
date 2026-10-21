@@ -17,12 +17,11 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: cheri-alliance
-    relationship: other
   governance:
     board_order: 5
     board_role: Community representative
+  affiliation:
+    organisation: cheri-alliance
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers

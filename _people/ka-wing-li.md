@@ -17,9 +17,8 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: university-of-cambridge
-    relationship: other
+  affiliation:
+    organisation: university-of-cambridge
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers

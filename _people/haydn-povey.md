@@ -17,12 +17,11 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: sci-semiconductor
-    relationship: other
   links:
   - label: LinkedIn
     url: https://www.linkedin.com/in/haydn-povey-373b14/
+  affiliation:
+    organisation: sci-semiconductor
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers

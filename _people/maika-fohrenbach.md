@@ -1,7 +1,8 @@
 ---
 layout: detail
 title: Maika Föhrenbach
-summary: Maika Föhrenbach connects CHERI to Europe’s regulatory future. She leads product security and certification policy at the European Commission and coordinates implementation of the Cyber Resilience Act.
+summary: Maika Föhrenbach connects CHERI to Europe’s regulatory future. She leads product security and certification policy at the European Commission
+  and coordinates implementation of the Cyber Resilience Act.
 permalink: /people/maika-fohrenbach/
 slug: maika-fohrenbach
 navigation:
@@ -17,12 +18,11 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: european-commission-dg-connect
-    relationship: other
   links:
   - label: LinkedIn
     url: https://www.linkedin.com/in/maikafohrenbach/
+  affiliation:
+    organisation: european-commission-dg-connect
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers

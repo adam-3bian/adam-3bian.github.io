@@ -17,12 +17,11 @@ image:
 person:
   roles:
   - speaker
-  organisations:
-  - organisation: cheri-alliance
-    relationship: other
   links:
   - label: LinkedIn
     url: https://www.linkedin.com/in/mike-halsall/
+  affiliation:
+    organisation: cheri-alliance
 related:
 - type: page
   slug: news-and-events-people-and-opportunities-speakers
