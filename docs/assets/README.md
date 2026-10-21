@@ -135,3 +135,5 @@ byte-identical copies and superseded primary variants were consolidated.
 `content-baseline.json` comes from the original branch's rendered site, with
 only asset URLs resolved through the migration map. The parity check compares
 all page wording, links, image sources and fragment IDs against that baseline.
+The reference also includes the approved capitalisation of displayed Type
+labels; the underlying content values remain unchanged.

@@ -44,6 +44,9 @@ with sync_playwright() as p:
                 main:one('main'),header:one('.site-header'),newsletter:one('.site-call-to-action'),
                 slider:one('.slider'),surface:one('.page-surface'),hero:one('.hero,.page-heading'),subscription:one('.promotional-panel'),footer:one('.footer-surface'),breadcrumbBand:one('.breadcrumb-band'),headingCopy:one('.page-heading .heading-copy'),heading:one('.page-heading'),breadcrumbs:one('.breadcrumbs'),body:one('.record-body'),aside:one('.detail-aside'),
                 article:one('.reading-content'),lead:one('.article-lead'),
+                summary:one('.page-summary'),directoryIntro:one('.directory-content > p'),heroIntro:one('.hero-intro > .lede'),
+                types:[...document.querySelectorAll('.record-facts dt')].filter(e=>['Type','Publication type'].includes(e.textContent.trim())).map(e=>e.nextElementSibling.textContent.trim()),
+                narrowDefinitions:[...document.querySelectorAll('.glossary-entry dd')].some(e=>Math.abs(e.getBoundingClientRect().width-e.parentElement.getBoundingClientRect().width)>1),
                 category:one('.category-links'),cards:[...document.querySelectorAll('.catalog-card')].slice(0,8).map(e=>({
                   ...box(e),copy:box(e.querySelector('.catalog-copy')),title:box(e.querySelector('h2,h3')),
                   logo:e.querySelector('.media-organisations')?box(e.querySelector('.media-organisations')):null,
@@ -79,6 +82,16 @@ with sync_playwright() as p:
                     for element in ['headingCopy', 'lead']:
                         assert abs(data[element]['x'] - data['article']['x']) < 1, (width, name, element, 'left alignment')
                         assert abs(data[element]['width'] - data['article']['width']) < 1
+                    assert abs(data['article']['x']-data['surface']['contentX']) < 1, (width,name,'article uses frame left edge')
+                    assert abs(data['article']['width']-data['surface']['contentWidth']) < 1, (width,name,'article fills frame')
+                if data['summary'] and data['headingCopy']['display'] != 'contents':
+                    assert abs(data['summary']['width']-data['headingCopy']['width']) < 1, (width,name,'summary fills heading column')
+                if data['directoryIntro']:
+                    assert abs(data['directoryIntro']['width']-data['surface']['contentWidth']) < 1, (width,name,'directory introduction fills frame')
+                if data['heroIntro']:
+                    assert abs(data['heroIntro']['width']-data['hero']['contentWidth']) < 1, (width,name,'hero introduction fills frame')
+                assert not data['narrowDefinitions'], (width,name,'glossary definitions fill their column')
+                assert all(value and value[0].isupper() for value in data['types']), (width,name,'Type values start with a capital',data['types'])
                 if name == 'members':
                     for card in data['cards']:
                         if not card['logo']:

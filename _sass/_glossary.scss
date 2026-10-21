@@ -20,7 +20,7 @@
 .glossary-entry dt { align-items: center; color: var(--ink); display: flex; font-family: $font-family; font-size: var(--type-title); font-weight: 600; gap: .35rem; line-height: 1.45; width: fit-content; max-width: 100%; }
 .glossary-entry dfn { font-style: normal; min-width: 0; }
 .glossary-entry dt a:not(.glossary-permalink) { align-items: center; display: inline-flex; min-height: 44px; text-decoration-color: var(--colour-control-border); }
-.glossary-entry dd { font-size: var(--type-body); line-height: var(--leading-body); margin: $space-1 0 0; max-width: 88ch; min-width: 0; }
+.glossary-entry dd { font-size: var(--type-body); line-height: var(--leading-body); margin: $space-1 0 0; min-width: 0; }
 .glossary-entry dd > * + * { margin-top: .75rem; }
 .glossary-permalink { align-items: center; border-radius: 4px; color: var(--muted); display: inline-flex; flex-shrink: 0; font-size: .875rem; font-weight: 400; justify-content: center; min-height: 44px; width: 44px; text-decoration: none; }
 .glossary-permalink:hover { background: var(--accent-soft); color: var(--accent); }

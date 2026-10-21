@@ -12,7 +12,6 @@
 .hero-intro > .lede {
   font-size: $font-size-hero-text;
   margin-top: $space-6;
-  max-width: $text-width;
 }
 @media (min-width: $desktop-breakpoint) {
   .hero { padding-block: $space-12; }

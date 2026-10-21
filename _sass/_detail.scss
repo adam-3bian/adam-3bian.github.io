@@ -4,13 +4,11 @@
 .page-heading h1 { color: var(--ink); font-size: var(--type-page); font-weight: 600; letter-spacing: -.04em; line-height: 1.16; }
 .heading-copy { min-width: 0; }
 .record-status { background: var(--surface-soft); border-radius: var(--radius-small); color: var(--accent); display: inline-block; font-family: $font-family; font-size: var(--type-label); font-weight: 500; line-height: 1.5; margin: 0 0 $space-2; padding: $space-1 $space-2; }
-.page-summary { color: var(--muted); font-size: 1.125rem; line-height: var(--leading-body); margin-top: $space-4; max-width: 76ch; }
+.page-summary { color: var(--muted); font-size: 1.125rem; line-height: var(--leading-body); margin-top: $space-4; }
 .page-summary p { margin: 0; }
 .page-summary a { color: var(--accent); }
 .content a:not(.catalog-card, .resource-link, .card, .button) { color: var(--accent); }
 .reading-content, .article-shell { min-width: 0; width: 100%; }
-.reading-page .page-summary, .article-page .page-summary { max-width: none; }
-.directory-content > p, .directory-content > ul:not(.catalog-cards) { max-width: 78ch; }
 .directory-content > p:only-child { color: var(--muted); }
 .directory-content > p + .catalog { margin-top: $space-6; }
 .directory-content > h2 { font-size: var(--type-section); }

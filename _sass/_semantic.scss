@@ -1,7 +1,7 @@
 // Semantic content families retain the catalogue's shared visual language.
-.article-shell > .reading-content, .article-shell > .article-lead, .article-shell > .resource-panel { margin-inline: auto; max-width: $text-width; }
-.article-page .page-heading .heading-copy { margin-inline: auto; max-width: $text-width; width: 100%; }
-.article-shell > .reading-content, .article-shell > .article-lead { width: 100%; }
+// Article text, media and resources share the available page-frame width.
+.article-shell > .reading-content, .article-shell > .article-lead, .article-shell > .resource-panel,
+.article-page .page-heading .heading-copy { margin-inline: 0; width: 100%; }
 .author-role { display: block; }
 .event-programme { margin-top: $space-8; }
 .programme-day { margin-block: $space-8; }
