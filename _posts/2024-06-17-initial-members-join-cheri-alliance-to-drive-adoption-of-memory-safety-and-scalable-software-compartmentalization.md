@@ -11,9 +11,9 @@ navigation:
 image:
   src: /assets/images/posts/2024-06-17-initial-members-join-cheri-alliance-to-drive-adoption-of-memory-safety-and-scalable-software-compartmentalization.webp
   alt: Initial members join CHERI Alliance to drive adoption of memory safety and scalable software compartmentalization
-  width: 864
-  height: 486
-  fit: contain
+  width: 512
+  height: 288
+  fit: cover
 date: '2024-06-17T19:21:18+01:00'
 post:
   category: cheri-alliance-news

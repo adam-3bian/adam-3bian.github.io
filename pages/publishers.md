@@ -450,8 +450,8 @@ when using a path in front matter.
 | --- | --- | --- | --- |
 | People | `assets/images/people/name.webp` | 1:1, cover | Face-focused square; normally up to 512 × 512, with natural head-and-shoulders framing. |
 | Organisations | `assets/images/organisation/name.webp` | 3:1, contain | Transparent 1200 × 400 canvas; retain the complete logo, colours and details. |
-| Events | `assets/images/events/name.webp` | 16:9, contain | Complete source with white padding; normally up to 1280 × 720. |
-| Posts | `assets/images/posts/YYYY-MM-DD-name.webp` | 16:9, contain | Include the Markdown filename's date; preserve the complete image with white padding. |
+| Events | `assets/images/events/name.webp` | 16:9, cover | Crop to fill the frame without stretching or added padding; up to 1280 × 720. |
+| Posts | `assets/images/posts/YYYY-MM-DD-name.webp` | 16:9, cover | Include the Markdown filename's date; crop to fill the frame, keeping the important subject visible. |
 | Pages, papers, products, repositories, groups, guides and policies | Owned collection folder or descriptive shared asset | No imposed file ratio | Preserve natural proportions; contain logos, badges and diagrams. |
 | Additional body images | Owning record's image folder | Natural aspect ratio | Left, right or full width; primary-thumbnail ratios do not apply. |
 

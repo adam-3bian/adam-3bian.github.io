@@ -13,7 +13,7 @@ image:
   alt: BT Group Joins the CHERI Alliance to Advance Cybersecurity Innovation
   width: 1280
   height: 720
-  fit: contain
+  fit: cover
 date: '2025-06-18T08:54:13+01:00'
 post:
   category: cheri-alliance-news

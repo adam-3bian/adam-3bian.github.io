@@ -13,7 +13,7 @@ image:
   alt: RISC-V Summit welcome board
   width: 1280
   height: 720
-  fit: contain
+  fit: cover
 date: '2025-09-08T10:50:02+01:00'
 post:
   category: cheri-alliance-news

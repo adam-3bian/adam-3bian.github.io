@@ -13,7 +13,7 @@ image:
   alt: CHERI Blossoms 2026
   width: 1280
   height: 720
-  fit: contain
+  fit: cover
 date: '2026-03-25'
 end_date: '2026-03-27'
 event:

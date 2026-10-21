@@ -11,9 +11,9 @@ navigation:
 image:
   src: /assets/images/posts/2025-12-10-codasip-powers-uk-digital-security-by-design-innovation-contracts-with-cheri-technology.webp
   alt: Codasip Powers UK Digital Security by Design Innovation Contracts with CHERI Technology
-  width: 928
-  height: 522
-  fit: contain
+  width: 592
+  height: 333
+  fit: cover
 date: '2025-12-10T10:00:29+00:00'
 post:
   category: cheri-alliance-news

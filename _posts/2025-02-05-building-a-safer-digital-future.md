@@ -11,9 +11,9 @@ navigation:
 image:
   src: /assets/images/posts/2025-02-05-building-a-safer-digital-future.webp
   alt: A CPU with padlocks and protective shielding
-  width: 1280
-  height: 720
-  fit: contain
+  width: 1264
+  height: 711
+  fit: cover
 date: '2025-02-05T12:46:45+00:00'
 post:
   category: cheri-alliance-news

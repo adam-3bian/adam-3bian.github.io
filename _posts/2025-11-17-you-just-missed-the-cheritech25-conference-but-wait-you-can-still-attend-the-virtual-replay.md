@@ -11,9 +11,9 @@ navigation:
 image:
   src: /assets/images/posts/2025-11-17-you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay.webp
   alt: You just missed the CHERITech’25 Conference – but wait, you can still attend the virtual replay!
-  width: 1280
-  height: 720
-  fit: contain
+  width: 992
+  height: 558
+  fit: cover
 date: '2025-11-17T15:10:57+00:00'
 post:
   category: cheri-alliance-news

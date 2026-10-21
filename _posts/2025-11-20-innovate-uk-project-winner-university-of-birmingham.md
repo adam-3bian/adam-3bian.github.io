@@ -11,9 +11,9 @@ navigation:
 image:
   src: /assets/images/posts/2025-11-20-innovate-uk-project-winner-university-of-birmingham.webp
   alt: 'Innovate UK Project Winner: University of Birmingham'
-  width: 1024
-  height: 576
-  fit: contain
+  width: 1008
+  height: 567
+  fit: cover
 date: '2025-11-20T10:00:32+00:00'
 post:
   category: cheri-alliance-news

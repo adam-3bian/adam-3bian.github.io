@@ -13,7 +13,7 @@ image:
   alt: CHERITech'25 Reloaded
   width: 640
   height: 360
-  fit: contain
+  fit: cover
 date: '2025-12-04'
 event:
   format: webinar

@@ -29,7 +29,7 @@
 .button:not(:disabled):is(:hover, :focus-visible) {
   background: var(--button-hover, var(--colour-button-hover));
   box-shadow: var(--elevation-2);
-  color: var(--button-text, var(--colour-button-text));
+  color: var(--button-hover-text, var(--button-text, var(--colour-button-text)));
   text-decoration: none;
 }
 .button .icon { height: 18px; width: 18px; }
@@ -53,4 +53,9 @@
   --colour-focus: #fff;
   background: var(--surface-inverse);
   color: var(--ink-inverse);
+}
+
+.navigation-contact > .button, .site-call-to-action .button {
+  --button-hover: var(--button-text);
+  --button-hover-text: var(--button-background);
 }

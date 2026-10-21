@@ -14,7 +14,7 @@ image:
   alt: CHERITech'25 Conference
   width: 640
   height: 360
-  fit: contain
+  fit: cover
 date: '2025-11-14'
 event:
   format: conference

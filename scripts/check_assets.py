@@ -48,8 +48,8 @@ def check(site=None):
             errors.append(f'{file}: missing from the built site')
     for family, kind, ratio, fit in [('people', 'people', (1, 1), 'cover'),
                                      ('organisations', 'organisation', (3, 1), 'contain'),
-                                     ('events', 'events', (16, 9), 'contain'),
-                                     ('posts', 'posts', (16, 9), 'contain')]:
+                                     ('events', 'events', (16, 9), 'cover'),
+                                     ('posts', 'posts', (16, 9), 'cover')]:
         for path in (ROOT / ('_' + family)).glob('*.md'):
             data, _ = document(path)
             media = data.get('image')

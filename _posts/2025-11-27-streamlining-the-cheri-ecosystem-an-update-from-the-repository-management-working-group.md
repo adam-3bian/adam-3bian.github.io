@@ -11,9 +11,9 @@ navigation:
 image:
   src: /assets/images/posts/2025-11-27-streamlining-the-cheri-ecosystem-an-update-from-the-repository-management-working-group.webp
   alt: CHERI Alliance Working Groups logo
-  width: 752
-  height: 423
-  fit: contain
+  width: 656
+  height: 369
+  fit: cover
 date: '2025-11-27T10:00:05+00:00'
 post:
   category: cheri-alliance-news

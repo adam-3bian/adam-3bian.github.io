@@ -44,7 +44,7 @@ landing:
       image:
         src: /assets/images/events/cheritech26.webp
         alt: CHERITech'26
-        fit: contain
+        fit: cover
     - title: A new ETSI standard could rewrite the memory-safety debate
       text: Memory-safety vulnerabilities remain one of the largest sources of critical software vulnerabilities.
       url: /news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/
@@ -52,7 +52,7 @@ landing:
       image:
         src: /assets/images/posts/2026-07-29-a-new-etsi-standard-could-rewrite-the-memory-safety-debate.webp
         alt: ETSI standard
-        fit: contain
+        fit: cover
 related:
 - type: page
   slug: discover-why-cheri-vulnerabilities-in-everyday-technology

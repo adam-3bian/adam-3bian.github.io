@@ -13,7 +13,7 @@ image:
   alt: World map with binary code
   width: 1024
   height: 576
-  fit: contain
+  fit: cover
 date: '2025-05-27T10:16:10+01:00'
 post:
   category: cheri-alliance-news

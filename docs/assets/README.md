@@ -11,8 +11,8 @@ optional authoring and validation tool.
 | --- | --- | --- | --- |
 | Organisation | `/assets/images/organisation/<markdown-filename>.webp` | 3:1 | contain |
 | Person | `/assets/images/people/<markdown-filename>.webp` | 1:1 | cover |
-| Event | `/assets/images/events/<markdown-filename>.webp` | 16:9 | contain |
-| Post | `/assets/images/posts/<markdown-filename>.webp` | 16:9 | contain |
+| Event | `/assets/images/events/<markdown-filename>.webp` | 16:9 | cover |
+| Post | `/assets/images/posts/<markdown-filename>.webp` | 16:9 | cover |
 
 Omit `.md` from the Markdown filename. Include the date in post image names:
 `_posts/2025-05-27-unlocking-the-future-a-roadmap-for-cheri-technology-advancement.md`
@@ -43,10 +43,11 @@ and its proportions. Remove only exterior background fills; preserve enclosed
 white lettering and intentional coloured panels, such as the KU Leuven wordmark.
 Lossless WebP preserves logo colours. Do not stretch or crop visible artwork.
 
-Post and event thumbnails contain the complete source within a 16:9 canvas,
-with white padding where necessary. Canvas dimensions adapt to the source,
-up to 1280 × 720. CSS also uses contain and white padding. Additional body images
-retain their natural proportions.
+Post and event thumbnails fill a 16:9 canvas using cover, cropping excess rather
+than adding padding or stretching the artwork. Review the crop to keep the
+important subject visible. Canvas dimensions adapt to the source without
+enlarging it, up to 1280 × 720. CSS uses cover in cards, event heroes and article
+lead images. Additional body images retain their natural proportions.
 
 Records without supplied photography or logos remain without an image. Do not
 invent headshots or logos to fill these gaps.
@@ -152,3 +153,8 @@ News summaries are omitted from heroes; 47 original introductions are retained
 in the articles' Markdown bodies. Contact source relocation keeps its URL and
 rendered content unchanged. External-link attributes and white hero-image
 backings change presentation without changing existing destinations or artwork.
+
+Member-profile hero summaries are omitted while source summaries and full
+descriptions remain. News and event primary images now use cover, replacing the
+initial contain preparation; their original sources were used to avoid retaining
+the old baked-in padding. The migration manifest retains its original provenance.

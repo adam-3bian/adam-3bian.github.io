@@ -22,8 +22,8 @@
   --watermark-image: #{unquote('url("../images/shared/background/hexagons-dark.webp")')};
 }
 
-// Page heroes use the homepage palette while their content keeps the light theme.
-.page-heading {
+// Heroes and navigation share the homepage palette on every page.
+.page-heading, .site-header {
   color-scheme: dark;
   @each $name, $value in $theme-dark {
     @if $name != watermark { --colour-#{$name}: #{$value}; }

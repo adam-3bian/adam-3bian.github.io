@@ -11,9 +11,9 @@ navigation:
 image:
   src: /assets/images/posts/2025-11-17-several-cheri-alliance-members-win-the-dsbd-competition-to-deliver-new-cheri-chips-and-software.webp
   alt: Several CHERI Alliance members win the DSbD competition to deliver new CHERI chips and software
-  width: 544
-  height: 306
-  fit: contain
+  width: 304
+  height: 171
+  fit: cover
 date: '2025-11-17T09:00:05+00:00'
 post:
   category: cheri-alliance-news

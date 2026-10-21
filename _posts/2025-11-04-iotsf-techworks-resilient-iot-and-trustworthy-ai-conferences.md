@@ -11,9 +11,9 @@ navigation:
 image:
   src: /assets/images/posts/2025-11-04-iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences.webp
   alt: IoTSF + TechWorks – Resilient IoT and Trustworthy AI Conferences
-  width: 544
-  height: 306
-  fit: contain
+  width: 304
+  height: 171
+  fit: cover
 date: '2025-11-04T14:31:10+00:00'
 post:
   category: cheri-alliance-news

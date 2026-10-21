@@ -13,7 +13,7 @@ image:
   alt: CHERI logo
   width: 640
   height: 360
-  fit: contain
+  fit: cover
 date: '2026-03-10'
 end_date: '2026-03-12'
 event:

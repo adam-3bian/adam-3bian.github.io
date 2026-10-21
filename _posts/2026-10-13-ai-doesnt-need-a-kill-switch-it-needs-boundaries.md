@@ -11,9 +11,9 @@ navigation:
 image:
   src: /assets/images/posts/2026-10-13-ai-doesnt-need-a-kill-switch-it-needs-boundaries.webp
   alt: AI Doesn't Need a Kill Switch. It Needs Boundaries.
-  width: 1280
-  height: 720
-  fit: contain
+  width: 1264
+  height: 711
+  fit: cover
 date: '2026-10-13T11:00:10+01:00'
 post:
   category: ecosystem

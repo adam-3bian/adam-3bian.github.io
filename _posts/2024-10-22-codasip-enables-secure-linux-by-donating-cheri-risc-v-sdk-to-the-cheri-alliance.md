@@ -11,9 +11,9 @@ navigation:
 image:
   src: /assets/images/posts/2024-10-22-codasip-enables-secure-linux-by-donating-cheri-risc-v-sdk-to-the-cheri-alliance.webp
   alt: Codasip enables secure Linux by donating CHERI RISC-V SDK to the CHERI Alliance
-  width: 864
-  height: 486
-  fit: contain
+  width: 512
+  height: 288
+  fit: cover
 date: '2024-10-22T08:03:22+01:00'
 post:
   category: cheri-alliance-news

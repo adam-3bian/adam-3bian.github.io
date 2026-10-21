@@ -11,9 +11,9 @@ navigation:
 image:
   src: /assets/images/posts/2025-07-29-cheri-sel4-and-cheri-microkit-released.webp
   alt: The software release roadmap for CHERI-seL4
-  width: 1280
-  height: 720
-  fit: contain
+  width: 544
+  height: 306
+  fit: cover
 date: '2025-07-29T11:00:45+01:00'
 post:
   category: ecosystem

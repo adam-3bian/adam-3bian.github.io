@@ -11,9 +11,9 @@ navigation:
 image:
   src: /assets/images/posts/2026-09-11-beyond-software-patching.webp
   alt: CHERI logo
-  width: 432
-  height: 243
-  fit: contain
+  width: 256
+  height: 144
+  fit: cover
 date: '2026-09-11T12:47:46+00:00'
 post:
   category: cheri-alliance-news

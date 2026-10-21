@@ -11,9 +11,9 @@ navigation:
 image:
   src: /assets/images/posts/2025-11-25-new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd.webp
   alt: New InnovateUK-funded project to merge CHERI support into FreeBSD
-  width: 928
-  height: 522
-  fit: contain
+  width: 592
+  height: 333
+  fit: cover
 date: '2025-11-25T10:00:49+00:00'
 post:
   category: cheri-alliance-news

@@ -33,19 +33,26 @@ class ImagePreparation(unittest.TestCase):
                 self.assertEqual(image.getpixel((0, 0))[3], 0)
                 self.assertEqual(image.getpixel((600, 200)), (128, 0, 0, 255))
 
-    def test_contain_preserves_all_four_image_edges(self):
+    def test_cover_fills_the_frame_without_padding_or_stretching(self):
         with tempfile.TemporaryDirectory() as directory:
             source, output = Path(directory) / 'poster.png', Path(directory) / 'poster.webp'
             image = Image.new('RGB', (160, 180), 'navy')
             draw = ImageDraw.Draw(image)
-            draw.rectangle((0, 0, 159, 179), outline='red', width=8)
+            draw.rectangle((0, 0, 159, 19), fill='red')
+            draw.rectangle((0, 160, 159, 179), fill='red')
+            draw.rectangle((0, 20, 7, 159), fill='lime')
+            draw.rectangle((152, 20, 159, 159), fill='lime')
             image.save(source)
             prepare(source, output, 'events')
             with Image.open(output) as result:
-                self.assertEqual(result.size, (320, 180))
-                for point in [(83, 90), (236, 90), (160, 3), (160, 176)]:
-                    self.assertGreater(result.getpixel(point)[0], 220)
-                self.assertEqual(result.getpixel((0, 0))[:3], (255, 255, 255))
+                self.assertEqual(result.size, (160, 90))
+                # Vertical excess is cropped; left/right bars retain their width.
+                for point in [(3, 0), (156, 0), (3, 89), (156, 89)]:
+                    self.assertGreater(result.getpixel(point)[1], 220)
+                for point in [(80, 0), (80, 45), (80, 89)]:
+                    red, green, blue = result.getpixel(point)[:3]
+                    self.assertLess(max(red, green), 15)
+                    self.assertGreater(blue, 100)
 
     def test_people_require_an_explicit_in_bounds_face_crop(self):
         with tempfile.TemporaryDirectory() as directory:

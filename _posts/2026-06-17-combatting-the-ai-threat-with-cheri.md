@@ -11,9 +11,9 @@ navigation:
 image:
   src: /assets/images/posts/2026-06-17-combatting-the-ai-threat-with-cheri.webp
   alt: Augmented reality showing a ship.
-  width: 624
-  height: 351
-  fit: contain
+  width: 608
+  height: 342
+  fit: cover
 date: '2026-06-17T11:00:33+01:00'
 post:
   category: cheri-alliance-news

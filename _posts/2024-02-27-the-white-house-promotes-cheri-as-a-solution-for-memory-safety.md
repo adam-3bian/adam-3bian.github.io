@@ -11,9 +11,9 @@ navigation:
 image:
   src: /assets/images/posts/2024-02-27-the-white-house-promotes-cheri-as-a-solution-for-memory-safety.webp
   alt: The White House promotes CHERI as a solution for memory safety
-  width: 800
-  height: 450
-  fit: contain
+  width: 736
+  height: 414
+  fit: cover
 date: '2024-02-27T17:45:38+00:00'
 post:
   category: government-regulation

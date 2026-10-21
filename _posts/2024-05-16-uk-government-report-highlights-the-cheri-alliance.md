@@ -11,9 +11,9 @@ navigation:
 image:
   src: /assets/images/posts/2024-05-16-uk-government-report-highlights-the-cheri-alliance.webp
   alt: UK Government report highlights the CHERI Alliance
-  width: 480
-  height: 270
-  fit: contain
+  width: 448
+  height: 252
+  fit: cover
 date: '2024-05-16T10:13:08+01:00'
 post:
   category: government-regulation

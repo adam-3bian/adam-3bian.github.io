@@ -11,9 +11,9 @@ navigation:
 image:
   src: /assets/images/posts/2026-04-29-why-codasip-went-all-in-on-cheri.webp
   alt: Ron Black in an office with the Codasip and CHERI Alliance member logos
-  width: 1008
-  height: 567
-  fit: contain
+  width: 800
+  height: 450
+  fit: cover
 date: '2026-04-29T10:00:14+01:00'
 post:
   category: ecosystem

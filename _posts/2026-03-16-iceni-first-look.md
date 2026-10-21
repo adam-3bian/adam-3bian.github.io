@@ -13,7 +13,7 @@ image:
   alt: ICENI
   width: 1280
   height: 720
-  fit: contain
+  fit: cover
 date: '2026-03-16T13:03:29+00:00'
 post:
   category: cheri-alliance-news

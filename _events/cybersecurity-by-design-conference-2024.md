@@ -13,7 +13,7 @@ image:
   alt: '''Cybersecurity by design - from research to industry'' conference'
   width: 640
   height: 360
-  fit: contain
+  fit: cover
 date: '2024-11-12'
 event:
   format: conference

@@ -11,9 +11,9 @@ navigation:
 image:
   src: /assets/images/posts/2025-09-30-behind-the-scenes-inside-the-promotion-and-ambassador-program-working-group.webp
   alt: CHERI Alliance Working Groups logo
-  width: 752
-  height: 423
-  fit: contain
+  width: 656
+  height: 369
+  fit: cover
 date: '2025-09-30T10:51:40+01:00'
 post:
   category: cheri-alliance-news

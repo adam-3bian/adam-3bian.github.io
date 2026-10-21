@@ -13,7 +13,7 @@ image:
   alt: A red bug on a computer screen being focused by a magnifying glass
   width: 1280
   height: 720
-  fit: contain
+  fit: cover
 date: '2026-05-04T16:06:57+01:00'
 post:
   category: cheri-alliance-news

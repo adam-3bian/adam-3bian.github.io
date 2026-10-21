@@ -11,9 +11,9 @@ navigation:
 image:
   src: /assets/images/posts/2024-09-25-end-users-demand-memory-safety-in-their-systems.webp
   alt: End-users demand memory safety in their systems
-  width: 896
-  height: 504
-  fit: contain
+  width: 448
+  height: 252
+  fit: cover
 date: '2024-09-25T11:10:01+01:00'
 post:
   category: cheri-alliance-news

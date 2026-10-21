@@ -11,9 +11,9 @@ navigation:
 image:
   src: /assets/images/posts/2026-09-08-cheri-zephyr-v0-4-0-release.webp
   alt: Code showing a Zephyr buffer overflow
-  width: 896
-  height: 504
-  fit: contain
+  width: 496
+  height: 279
+  fit: cover
 date: '2026-09-08T12:00:00+00:00'
 post:
   category: cheri-alliance-news

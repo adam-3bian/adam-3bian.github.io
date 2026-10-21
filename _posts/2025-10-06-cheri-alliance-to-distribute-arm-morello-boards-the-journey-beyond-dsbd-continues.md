@@ -13,7 +13,7 @@ image:
   alt: arm Morello board
   width: 1024
   height: 576
-  fit: contain
+  fit: cover
 date: '2025-10-06T11:35:27+01:00'
 post:
   category: cheri-alliance-news

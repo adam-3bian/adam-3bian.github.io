@@ -13,7 +13,7 @@ image:
   alt: Data analytics dashboard
   width: 1280
   height: 720
-  fit: contain
+  fit: cover
 date: '2026-05-13T10:00:21+01:00'
 post:
   category: cheri-alliance-news

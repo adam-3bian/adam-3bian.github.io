@@ -13,7 +13,7 @@ image:
   alt: Welcome Siemens with the CHERI Alliance Member logo in the bottom right.
   width: 1280
   height: 720
-  fit: contain
+  fit: cover
 date: '2025-09-08T12:00:12+01:00'
 post:
   category: cheri-alliance-news

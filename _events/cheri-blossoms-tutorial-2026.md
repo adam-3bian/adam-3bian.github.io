@@ -13,7 +13,7 @@ image:
   alt: Hands-on Introduction to CHERI and CHERIoT Banner
   width: 1280
   height: 720
-  fit: contain
+  fit: cover
 date: '2026-03-25'
 event:
   format: tutorial

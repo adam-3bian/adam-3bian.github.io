@@ -11,9 +11,9 @@ navigation:
 image:
   src: /assets/images/posts/2025-11-12-lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support.webp
   alt: lowRISC and Partners to Deliver Commercial-Quality, Open-Source CHERI Secure Enclave with InnovateUK Support
-  width: 544
-  height: 306
-  fit: contain
+  width: 304
+  height: 171
+  fit: cover
 date: '2025-11-12T11:17:27+00:00'
 post:
   category: cheri-alliance-news

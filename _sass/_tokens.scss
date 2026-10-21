@@ -23,7 +23,7 @@
   --membership-text: #{$brand-cyan};
 }
 // Resolve aliases in both scopes; inherited light values must not leak onto home.
-:root, .home-page, .page-heading {
+:root, .home-page, .page-heading, .site-header {
   --surface: var(--colour-card);
   --surface-soft: var(--colour-surface-soft);
   --surface-hover: var(--colour-card-hover);

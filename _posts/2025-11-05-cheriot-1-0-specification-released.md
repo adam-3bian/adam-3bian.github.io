@@ -11,9 +11,9 @@ navigation:
 image:
   src: /assets/images/posts/2025-11-05-cheriot-1-0-specification-released.webp
   alt: CHERIoT 1.0 Specification Released
-  width: 544
-  height: 306
-  fit: contain
+  width: 304
+  height: 171
+  fit: cover
 date: '2025-11-05T10:00:12+00:00'
 post:
   category: cheri-alliance-news

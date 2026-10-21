@@ -4,7 +4,6 @@
 Requires Pillow (requirements-dev.txt). Examples are in docs/assets/README.md.
 """
 import argparse
-import math
 from pathlib import Path
 
 from PIL import Image, ImageChops, ImageDraw, ImageOps
@@ -64,12 +63,10 @@ def prepare(source, destination, kind, crop=None, remove_white=False):
         canvas.alpha_composite(image, ((1200 - image.width) // 2, (400 - image.height) // 2))
         image = canvas
     elif kind in ('posts', 'events'):
-        width = min(1280, max(16, math.ceil(max(image.width, image.height * 16 / 9) / 16) * 16))
-        height = width * 9 // 16
-        image.thumbnail((width, height), Image.Resampling.LANCZOS)
-        canvas = Image.new('RGBA', (width, height), (255, 255, 255, 255))
-        canvas.alpha_composite(image, ((width - image.width) // 2, (height - image.height) // 2))
-        image = canvas
+        # Fill the 16:9 thumbnail without baking letterbox padding into the file.
+        # Choose a canvas that does not enlarge the source, up to 1280 x 720.
+        unit = max(1, min(80, image.width // 16, image.height // 9))
+        image = ImageOps.fit(image, (unit * 16, unit * 9), Image.Resampling.LANCZOS)
     destination = Path(destination)
     destination.parent.mkdir(parents=True, exist_ok=True)
     image.save(destination, 'WEBP', lossless=kind == 'organisation', quality=92, method=6, **metadata)

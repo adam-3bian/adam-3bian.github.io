@@ -11,9 +11,9 @@ navigation:
 image:
   src: /assets/images/posts/2025-07-21-working-group-spotlight-marketing.webp
   alt: Working Group Spotlight – Marketing
-  width: 752
-  height: 423
-  fit: contain
+  width: 656
+  height: 369
+  fit: cover
 date: '2025-07-21T14:00:09+01:00'
 post:
   category: cheri-alliance-news

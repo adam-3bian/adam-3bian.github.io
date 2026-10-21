@@ -14,7 +14,7 @@ image:
   alt: CHERITech'26
   width: 640
   height: 360
-  fit: contain
+  fit: cover
 date: '2026-11-12'
 end_date: '2026-11-13'
 event:

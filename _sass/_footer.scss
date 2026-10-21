@@ -36,7 +36,7 @@ footer .menu-group-title { color: var(--colour-footer-text); font-family: $font-
   max-width: 100%;
   width: fit-content;
 }
-.footer-navigation a:is(:hover, :focus-visible) { text-decoration: underline; }
+.footer-navigation a:focus-visible { text-decoration: underline; }
 .footer-bottom { align-items: center; margin-top: $space-8; }
 .footer-copyright {
   color: var(--colour-footer-muted);

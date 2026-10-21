@@ -6,12 +6,10 @@
   padding: $space-2;
 }
 .site-header {
-  --colour-header: #{map-get($theme-dark, header)};
-  --colour-navigation-hover: #{map-get($theme-dark, navigation-hover)};
-  --colour-focus: #{map-get($theme-dark, focus)};
+  --shadow-rgb: 0, 8, 14;
   background: var(--colour-header);
   border: 0;
-  color: map-get($theme-dark, text);
+  color: var(--colour-text);
   position: relative;
   width: 100%;
   z-index: $menu-layer;

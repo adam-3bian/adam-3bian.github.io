@@ -13,7 +13,7 @@ image:
   alt: ETSI standard
   width: 1280
   height: 720
-  fit: contain
+  fit: cover
 date: '2026-07-29T17:07:00+01:00'
 post:
   category: cheri-alliance-news

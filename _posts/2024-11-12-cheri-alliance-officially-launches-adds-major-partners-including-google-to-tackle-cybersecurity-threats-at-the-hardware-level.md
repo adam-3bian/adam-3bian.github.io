@@ -11,9 +11,9 @@ navigation:
 image:
   src: /assets/images/posts/2024-11-12-cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level.webp
   alt: CHERI Alliance Officially Launches, Adds Major Partners including Google, to Tackle Cybersecurity Threats at the Hardware Level
-  width: 864
-  height: 486
-  fit: contain
+  width: 512
+  height: 288
+  fit: cover
 date: '2024-11-12T08:28:18+00:00'
 post:
   category: cheri-alliance-news

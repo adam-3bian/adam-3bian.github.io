@@ -13,7 +13,7 @@ image:
   alt: CHERI Blossoms Conference 2025
   width: 1280
   height: 720
-  fit: contain
+  fit: cover
 date: '2025-04-02'
 event:
   format: conference

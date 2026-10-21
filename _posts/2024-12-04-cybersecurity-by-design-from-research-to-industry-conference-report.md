@@ -11,9 +11,9 @@ navigation:
 image:
   src: /assets/images/posts/2024-12-04-cybersecurity-by-design-from-research-to-industry-conference-report.webp
   alt: ‘Cybersecurity by Design – from Research to Industry’ — Conference Report
-  width: 1280
-  height: 720
-  fit: contain
+  width: 880
+  height: 495
+  fit: cover
 date: '2024-12-04T16:46:42+00:00'
 post:
   category: cheri-alliance-news

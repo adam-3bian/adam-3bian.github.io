@@ -13,7 +13,7 @@ image:
   alt: European Union flag
   width: 1280
   height: 720
-  fit: contain
+  fit: cover
 date: '2026-09-09'
 event:
   format: webinar

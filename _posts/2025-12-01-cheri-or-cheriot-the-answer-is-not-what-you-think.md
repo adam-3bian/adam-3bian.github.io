@@ -11,9 +11,9 @@ navigation:
 image:
   src: /assets/images/posts/2025-12-01-cheri-or-cheriot-the-answer-is-not-what-you-think.webp
   alt: CHERI or CHERIoT? The Answer Is Not What You Think
-  width: 544
-  height: 306
-  fit: contain
+  width: 304
+  height: 171
+  fit: cover
 date: '2025-12-01T10:00:57+00:00'
 post:
   category: cheri-alliance-news

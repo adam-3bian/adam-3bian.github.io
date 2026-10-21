@@ -13,7 +13,7 @@ image:
   alt: Red connectors leading to a key hole
   width: 1280
   height: 720
-  fit: contain
+  fit: cover
 date: '2026-04-14T09:25:48+01:00'
 post:
   category: cheri-alliance-news

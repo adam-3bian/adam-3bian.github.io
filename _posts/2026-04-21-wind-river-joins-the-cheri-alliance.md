@@ -11,9 +11,9 @@ navigation:
 image:
   src: /assets/images/posts/2026-04-21-wind-river-joins-the-cheri-alliance.webp
   alt: Welcome Wind River - CHERI Alliance member
-  width: 1280
-  height: 720
-  fit: contain
+  width: 1184
+  height: 666
+  fit: cover
 date: '2026-04-21T13:14:00+01:00'
 post:
   category: cheri-alliance-news

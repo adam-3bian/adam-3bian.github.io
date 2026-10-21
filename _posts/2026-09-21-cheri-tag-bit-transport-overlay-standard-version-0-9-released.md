@@ -11,9 +11,9 @@ navigation:
 image:
   src: /assets/images/posts/2026-09-21-cheri-tag-bit-transport-overlay-standard-version-0-9-released.webp
   alt: CHERITagBitTransportOverlayStandardBlogImage
-  width: 1280
-  height: 720
-  fit: contain
+  width: 880
+  height: 495
+  fit: cover
 date: '2026-09-21T12:00:00+00:00'
 post:
   category: cheri-alliance-news
