@@ -7,36 +7,6 @@ slug: publishers
 unlisted: true
 ---
 
-## Start with the Markdown
-
-Edit the owning Markdown file first. Write prose, headings, lists, links, images,
-tables and code in its body; use YAML front matter for structured facts and
-relationships. Shared Jekyll layouts generate cards, navigation, bylines, asides
-and event programmes. There is no CMS export or content-generation step.
-
-This guide's source is `pages/publishers.md`, served at `/publishers/`. It has no
-menu entry. `unlisted: true` excludes it from the sitemap and adds a search-engine
-noindex instruction. The URL remains publicly accessible; this is not a private page.
-
-For this design work, use `design/catalogue-polish` exclusively. Inspect your
-branch and working tree before editing:
-
-~~~sh
-git status --short --branch
-git branch --show-current
-~~~
-
-1. Find the existing record, or copy a nearby record in the same collection.
-2. Choose a lowercase kebab-case filename and a stable public `permalink`.
-3. Edit the body and only the front-matter fields needed for that content.
-4. Add local media, then update its explicit paths and meaningful alt text.
-5. Build and check links, desktop/mobile presentation and affected inverse views.
-
-Source paths and public URLs are separate. For example, `pages/contact.md` is
-served at `/alliance/membership/contact/`. Moving its source does not change the
-URL, slug, existing links or form. Keep those values unless deliberately changing
-the public route, with a redirect from the previous route.
-
 ## Writing body content and links
 
 The Markdown engine is **Kramdown**. Start the body with `##`, since the layout
