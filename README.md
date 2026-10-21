@@ -1,6 +1,6 @@
 # CHERI Alliance website
 
-Jekyll content and catalogue templates for GitHub Pages. The current review branch is `design/catalogue-polish`; deployment remains restricted to `main`.
+Jekyll content and catalogue templates for GitHub Pages. The current working and published branch is `design/catalogue-polish`.
 
 The [v5.3 specification](docs/migrations/v5.3/SPECIFICATION.txt) defines the content contract. [Migration notes](docs/migrations/v5.3/README.md) explain classifications, preservation checks and source-data gaps.
 
@@ -16,7 +16,9 @@ Header menus are curated in `_config.yml`. A page joins the footer only through 
 
 ## Build and deploy
 
-The production build uses `actions/jekyll-build-pages@v1`, GitHub Pages’ official Jekyll action. Markdown, Liquid, Sass and checked-in YAML render directly under safe Jekyll; there is no content preprocessing or separate frontend build. The build job publishes its static output as an artifact. A separate validation job checks that output and a native Jekyll `/preview` build; Python, Playwright and axe are validation tools only. Deployment uses `actions/deploy-pages@v4` and remains restricted to `main` after validation passes.
+GitHub Pages natively builds and publishes its configured source, `design/catalogue-polish` at `/`. Markdown, Liquid, Sass and checked-in YAML render directly under safe Jekyll; there is no content preprocessing or separate frontend build. The validation workflow independently uses `actions/jekyll-build-pages@v1`, GitHub Pages’ official Jekyll action, and shares its output with a separate validation job. That job checks the official output and a native Jekyll `/preview` build; Python, Playwright and axe are validation tools only. This workflow has no publishing job or Pages write permission.
+
+The repository's `github-pages` environment allows deployments only from `design/catalogue-polish`. Keep that policy aligned with the configured Pages source. The older workflow still on `main` previously republished an outdated site during its nightly schedule; the environment restriction prevents that workflow, including reruns, from replacing the selected branch's site. Updating the Pages source in future also requires updating the environment policy.
 
 The [global bounds review](docs/global-bounds/README.md) documents the shared hero, content, subscription and footer frame.
 

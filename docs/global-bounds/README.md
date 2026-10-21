@@ -22,7 +22,7 @@ Legacy anchor spans no longer add a flex gap before a hero or a false paragraph 
 
 ## Jekyll and GitHub Pages only
 
-The build job uses `actions/jekyll-build-pages@v1` to render the checked-in Markdown, Liquid, YAML and Sass directly. It has no Python, Node, content preprocessing or alternative frontend build step. GitHub's output is shared with a separate validation job. That job uses Ruby and Python checks, browser automation and axe; it also exercises a native Jekyll build under `/preview`. Publishing uses `actions/deploy-pages@v4`, restricted to `main` after both jobs pass. This review changes only `design/catalogue-polish`.
+GitHub Pages natively builds and publishes its configured source, `design/catalogue-polish` at `/`. The independent validation build uses `actions/jekyll-build-pages@v1` to render the checked-in Markdown, Liquid, YAML and Sass directly. It has no Python, Node, content preprocessing or alternative frontend build step. GitHub's output is shared with a separate validation job. That job uses Ruby and Python checks, browser automation and axe; it also exercises a native Jekyll build under `/preview`. The validation workflow has no publishing job or Pages write permission. The `github-pages` environment allows only `design/catalogue-polish`, preventing the older scheduled workflow on `main` from overwriting the published site. This revision changes only `design/catalogue-polish`.
 
 ## Review views
 

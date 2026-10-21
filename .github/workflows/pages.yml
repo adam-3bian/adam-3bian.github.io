@@ -1,4 +1,7 @@
-name: Validate and deploy Jekyll
+name: Validate Jekyll
+
+# GitHub Pages publishes its configured source branch with its native Jekyll
+# build. This workflow validates only, so it cannot overwrite that deployment.
 
 on:
   push:
@@ -25,8 +28,6 @@ jobs:
       pages: read
     steps:
       - uses: actions/checkout@v6
-      - uses: actions/configure-pages@v5
-        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
       - name: Build the native Jekyll site
         uses: actions/jekyll-build-pages@v1
         with:
@@ -37,10 +38,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: jekyll-site
-          path: dist
-      - uses: actions/upload-pages-artifact@v4
-        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
-        with:
           path: dist
 
   validate:
@@ -125,17 +122,3 @@ jobs:
           name: catalogue-review
           path: reports/
           if-no-files-found: ignore
-
-  deploy:
-    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
-    needs: [build, validate]
-    runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - uses: actions/deploy-pages@v4
-        id: deployment
