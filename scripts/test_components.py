@@ -60,7 +60,7 @@ with sync_playwright() as p:
                 for region in ['hero', 'surface', 'subscription', 'footer']:
                     assert abs(data[region]['x'] - data['main']['contentX']) < 1, (width, name, region, 'shared left bound')
                     assert abs(data[region]['width'] - data['main']['contentWidth']) < 1, (width, name, region, 'shared width')
-                assert data['surface']['radius'] == '32px'
+                assert page.locator('.hero,.page-heading,.page-surface,.promotional-panel,.footer-surface').evaluate_all("ns=>ns.every(e=>['TopLeft','TopRight','BottomRight','BottomLeft'].every(corner=>getComputedStyle(e)['border'+corner+'Radius']==='10px'))"), (width, name, 'shared container corners')
                 if data['slider']:
                     assert data['slider']['x'] >= data['surface']['contentX'] - 1
                     assert data['slider']['right'] <= data['surface']['contentX'] + data['surface']['contentWidth'] + 1

@@ -64,7 +64,6 @@ $grid-gap: $space-6;
 
 // Global composition: independently bounded hero, content, subscription and footer.
 $frame-gap: $space-4;
-$frame-radius: $space-8;
 $frame-padding-mobile: $space-4;
 $frame-padding-desktop: $space-8;
 $card-gap: $grid-gap;
@@ -112,6 +111,7 @@ $colour-page-edge: #edf1f2;
 $colour-watermark: rgba(#125770, 0.3);
 $colour-link-hover: $brand-teal-deep;
 $colour-header: #ffffff;
+$colour-breadcrumb: #e1eff5;
 $colour-submenu: #fff;
 $colour-navigation-hover: #eef1f3;
 $colour-submenu-hover: #edf2f4;
@@ -146,6 +146,7 @@ $theme-light: (
   watermark: $colour-watermark,
   link-hover: $colour-link-hover,
   header: $colour-header,
+  breadcrumb: $colour-breadcrumb,
   submenu: $colour-submenu,
   navigation-hover: $colour-navigation-hover,
   submenu-hover: $colour-submenu-hover,
@@ -188,6 +189,7 @@ $theme-dark: (
   watermark: rgba(#74bedd, 0.42),
   link-hover: #e1f4fc,
   header: $brand-navy,
+  breadcrumb: #102a38,
   submenu: #fff,
   navigation-hover: #28404c,
   submenu-hover: #edf2f4,

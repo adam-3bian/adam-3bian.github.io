@@ -80,6 +80,7 @@ def check_disclosures(page, width):
         assert trigger.get_attribute("aria-expanded") == "true", "First click must open navigation"
         menu = page.locator("#" + trigger.get_attribute("aria-controls"))
         assert menu.is_visible()
+        assert menu.evaluate("e=>[e,...e.querySelectorAll('a,.submenu-row,.menu-group-toggle')].every(n=>['TopLeft','TopRight','BottomRight','BottomLeft'].every(corner=>getComputedStyle(n)['border'+corner+'Radius']==='10px'))"), (width, "All menu and row corners share the container radius")
         assert menu.evaluate("e=>getComputedStyle(e).backgroundColor") == "rgb(255, 255, 255)"
         assert trigger.locator(".menu-indicator").inner_text() == "▲"
         assert trigger.locator(".menu-indicator").get_attribute("aria-hidden") == "true"

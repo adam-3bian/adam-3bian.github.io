@@ -4,7 +4,9 @@ This change follows the supplied global layout sketch on `design/catalogue-polis
 
 ## Shared geometry
 
-The existing 1264px site container remains the outer frame: 20px gutters below 768px and 32px gutters from 768px. This gives a maximum panel width of 1200px. Panels have 16px inner padding on mobile and 32px from tablet upwards. The content panel uses a 32px radius; the hero and subscription use 10px; the footer uses 16px. The watermark remains visible in the surrounding canvas and gaps.
+The existing 1264px site container remains the outer frame: 20px gutters below 768px and 32px gutters from 768px. This gives a maximum panel width of 1200px. Panels have 16px inner padding on mobile and 32px from tablet upwards. All containers use the shared 10px radius on all four corners, including the content panel, footer and mega menus. The watermark remains visible in the surrounding canvas and gaps. The breadcrumb strip uses a pale blue surface with dark blue links.
+
+The screenshots and verification below record the initial bounds revision at `3cb7bb5`, before the follow-up colour and corner standardisation.
 
 All live page families use this composition through the existing `page`, `list`, `detail` and `article` layouts. Article text and its lead image retain the 52rem reading width inside the full-width panels. Details keep their useful aside on desktop and stack it above the body on narrower screens. Catalogue identity cards stack below 480px to leave a usable text column inside the mobile panel.
 

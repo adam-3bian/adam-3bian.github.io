@@ -1,9 +1,9 @@
 // The breadcrumb band spans the viewport; its contents share the site frame.
-.breadcrumb-band { background: var(--colour-header); border-bottom: 1px solid var(--border); width: 100%; }
+.breadcrumb-band { background: var(--colour-breadcrumb); border-bottom: 1px solid var(--border); width: 100%; }
 .breadcrumbs { color: var(--muted); font-size: var(--type-label); margin-block: 0; padding-block: $space-2; }
 .breadcrumbs ol { align-items: center; column-gap: $space-1; display: flex; flex-wrap: wrap; list-style: none; margin: 0; padding: 0; }
 .breadcrumbs li { align-items: center; display: flex; min-height: 28px; min-width: 0; }
 .breadcrumbs li + li::before { color: var(--muted); content: '/'; padding-inline: $space-1; }
 .breadcrumbs a, .breadcrumbs span { margin: 0; overflow-wrap: anywhere; padding: 0; }
-.breadcrumbs a { text-decoration: none; }
+.breadcrumbs a { color: var(--accent); text-decoration: none; }
 .breadcrumbs [aria-current] { color: var(--muted); display: inline-block; max-width: 38ch; overflow: hidden; text-overflow: ellipsis; vertical-align: bottom; white-space: nowrap; }

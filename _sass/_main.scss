@@ -23,7 +23,7 @@ main.site-frame {
   width: 100%;
 }
 main.site-frame > .anchor-alias { position: absolute; }
-.page-surface { border-radius: $frame-radius; flex: 1; }
+.page-surface { flex: 1; }
 .page-surface > :not(:first-child) { margin-top: $section-gap-mobile; }
 .page-surface > :first-child { margin-top: 0; }
 .page-surface > section > h2 { margin-bottom: $space-5; }

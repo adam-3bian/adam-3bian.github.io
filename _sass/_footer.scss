@@ -14,7 +14,7 @@
   font-weight: $font-weight-semibold;
   letter-spacing: $letter-spacing-footer;
 }
-.footer-surface { background: var(--colour-footer); border: 1px solid var(--border); border-radius: $space-4; margin-inline: 0; padding: $frame-padding-mobile; }
+.footer-surface { background: var(--colour-footer); border: 1px solid var(--border); border-radius: var(--radius); margin-inline: 0; padding: $frame-padding-mobile; }
 .footer-navigation { --navigation-row-inset: 0px; }
 footer .menu-group-title { color: var(--colour-footer-text); font-family: $font-family; font-size: var(--type-title); font-weight: 600; letter-spacing: 0; padding-inline: 0; }
 .footer-navigation > ul > li > ul {
