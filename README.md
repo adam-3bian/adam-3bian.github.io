@@ -18,7 +18,7 @@ Header menus are curated in `_config.yml`. A page joins the footer only through 
 
 GitHub Pages natively builds and publishes its configured source, `design/catalogue-polish` at `/`. Markdown, Liquid, Sass and checked-in YAML render directly under safe Jekyll; there is no content preprocessing or separate frontend build. The validation workflow independently uses `actions/jekyll-build-pages@v1`, GitHub Pages’ official Jekyll action, and shares its output with a separate validation job. That job checks the official output and a native Jekyll `/preview` build; Python, Playwright and axe are validation tools only. This workflow has no publishing job or Pages write permission.
 
-The repository's `github-pages` environment allows deployments only from `design/catalogue-polish`. Keep that policy aligned with the configured Pages source. The older workflow still on `main` previously republished an outdated site during its nightly schedule; the environment restriction prevents that workflow, including reruns, from replacing the selected branch's site. Updating the Pages source in future also requires updating the environment policy.
+The previous `.github/workflows/pages.yml` workflow also exists on the frozen `main` branch and used to republish that older site during its nightly schedule. It is disabled at repository level. Validation now lives separately in `.github/workflows/design-validation.yml`, while GitHub's native `pages-build-deployment` workflow owns publishing from the configured source. Keep the old publishing workflow disabled while `main` contains the outdated version.
 
 The [global bounds review](docs/global-bounds/README.md) documents the shared hero, content, subscription and footer frame.
 
