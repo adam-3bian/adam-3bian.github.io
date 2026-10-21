@@ -12,10 +12,12 @@ layout: default
 <div class="page-surface">
 {% include slider.html %}
 {% for form_key in page.forms %}{% assign form_data = site.data.forms[form_key] %}{% if form_data %}{% include form-from-data.html form=form_data %}{% endif %}{% endfor %}
+{% unless page.landing.navigation == 'category' %}
 <article class="content {% if page.listing %}directory-content{% elsif page.landing %}landing-content{% else %}reading-content{% endif %}">
 {% if page.landing.sections %}{% include section-cards.html content=content groups=page.landing.sections %}{% else %}{{ content }}{% endif %}
 {% if page.url == '/discover/resources/glossary/' %}{% include glossary.html %}{% endif %}
 </article>
+{% endunless %}
 {% if page.landing.navigation == 'category' %}{% for category in site.navigation.header %}{% if category.title == page.navigation.header.category %}<div class="category-sections" style="--category-columns: {{ category.columns | default: 3 }}">{% for subcategory in category.subcategories %}<section class="related-content"><h2>{{ subcategory.title | escape }}</h2><ul class="category-links" role="list">{% for link in subcategory.links %}<li><a class="card navigation-choice" href="{{ link.url | relative_url }}">{{ link.title | escape }}</a></li>{% endfor %}</ul></section>{% endfor %}</div>{% endif %}{% endfor %}{% endif %}
 {% unless page.listing %}{% include resource-links.html %}{% endunless %}
 

@@ -151,7 +151,7 @@ html:not(.js) .menu-group-links[hidden] { display: grid !important; }
 }
 .site-header nav > ul > li > .submenu {
   --shadow-rgb: 21, 43, 59;
-  border: 1px solid #7895a5;
+  border: 1px solid $colour-border;
   border-radius: var(--radius);
   box-shadow: 0 $space-4 $space-10 rgba(21, 43, 59, 0.28);
 }

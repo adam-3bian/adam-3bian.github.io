@@ -34,7 +34,7 @@ A memory-safety vulnerability can trigger **costly** investigations, regulatory 
 
 Even when no attack occurs, the investigation and remediation effort consumes time, resources, and budget. Even worse, with incoming regulations (including the [Cyber Resilience Act](https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act) in Europe), there is an obligation and pressure to fix problem in a given time, potentially disrupting development roadmaps.
 
-A [recent study](https://cheri-alliance.github.io/adopt/business-case/cost-of-memory-unsafety/Add Link to CRA Webinar) showed that 21 new Linux vulnerabilities are discovered **per day**… This is worth investigating new solutions!
+A recent study showed that 21 new Linux vulnerabilities are discovered **per day**… This is worth investigating new solutions!
 
 ## Why This Matters Now
 

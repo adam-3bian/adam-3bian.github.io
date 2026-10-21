@@ -106,6 +106,8 @@ $brand-cyan: #b9e2f1;
 // Opaque reading and component surfaces; transparency is reserved for decorative artwork.
 $colour-text: $brand-navy;
 $colour-muted: #50616d;
+$colour-border: rgba($brand-navy, .12);
+$colour-border-inverse: rgba($brand-cyan, .16);
 $colour-page: #ffffff;
 $colour-page-edge: #edf1f2;
 $colour-watermark: rgba(#125770, 0.3);
@@ -135,7 +137,7 @@ $theme-light: (
   text: $colour-text,
   muted: $colour-muted,
   surface-soft: #f3f5f6,
-  border: #dfe4e7,
+  border: $colour-border,
   accent: $brand-blue,
   accent-soft: #e9eef1,
   brand-accent: $brand-blue,
@@ -178,7 +180,7 @@ $theme-dark: (
   text: #ffffff,
   muted: #d1d6df,
   surface-soft: #102a38,
-  border: #3f6174,
+  border: $colour-border-inverse,
   accent: $brand-cyan,
   accent-soft: #1c4053,
   brand-accent: #fff,

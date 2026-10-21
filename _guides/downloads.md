@@ -74,7 +74,7 @@ The CHERIoT Sail project contains the architecture specification and executable 
 ### Processor implementations and hardware
 
 - CHERIoT Ibex: [microsoft/cheriot-ibex](https://github.com/microsoft/cheriot-ibex)
-- Sonata platform: [lowRISC Sonata](https://sonata-system.github.io/sonata-system/)
+- Sonata platform: [lowRISC Sonata](https://lowrisc.github.io/sonata-system/)
 - Current platform links: [CHERIoT project site](https://cheriot.org/)
 
 ## CHERI Linux and collaborative repositories

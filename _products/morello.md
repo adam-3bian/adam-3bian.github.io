@@ -16,6 +16,7 @@ image:
   fit: contain
 product:
   type: development_kit
+  manufacturer: arm
 related:
 - type: page
   slug: build-platforms-cheriot

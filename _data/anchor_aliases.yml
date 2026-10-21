@@ -40,6 +40,8 @@
 /CHERI-seL4-Exercises/index.html:
   adversarial-cheri-exercises-and-missions-on-cheri-sel4-microkernel-and-cheri-microkit: page-title
 /adopt/:
+  make-the-business-case: page-title
+  plan-adoption: page-title
   hero-title: page-title
   index-group-1: page-title
   index-group-2: page-title
@@ -295,6 +297,8 @@
   where-next: related-title
   why-cheri-can-fit-safety-related-designs: why-cheri-can-fit-safety-related-designs
 /alliance/:
+  about-the-alliance: page-title
+  take-part: page-title
   hero-title: page-title
   index-group-1: page-title
   index-group-2: page-title
@@ -437,6 +441,9 @@
   share-the-work: share-the-work
   where-next: related-title
 /build/:
+  platforms-and-software: page-title
+  get-started: page-title
+  work-with-the-community: page-title
   hero-title: page-title
   index-group-1: page-title
   index-group-2: page-title
@@ -805,6 +812,8 @@
   page-hero-title: page-title
   page-title: page-title
 /discover/:
+  understand-cheri: page-title
+  explore-the-resources: page-title
   hero-title: page-title
   index-group-1: page-title
   index-group-2: page-title
@@ -1637,6 +1646,7 @@
   page-hero-title: page-title
   page-title: page-title
 /news-and-events/:
+  follow-the-ecosystem: page-title
   hero-title: page-title
   index-group-1: page-title
   index-group-2: page-title

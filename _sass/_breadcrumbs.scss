@@ -1,5 +1,5 @@
 // The breadcrumb band spans the viewport; its contents share the site frame.
-.breadcrumb-band { background: var(--colour-breadcrumb); border-bottom: 1px solid var(--border); width: 100%; }
+.breadcrumb-band { background: var(--colour-breadcrumb); border-block: 1px solid var(--border); width: 100%; }
 .breadcrumbs { color: var(--muted); font-size: var(--type-label); margin-block: 0; padding-block: $space-2; }
 .breadcrumbs ol { align-items: center; column-gap: $space-1; display: flex; flex-wrap: wrap; list-style: none; margin: 0; padding: 0; }
 .breadcrumbs li { align-items: center; display: flex; min-height: 28px; min-width: 0; }

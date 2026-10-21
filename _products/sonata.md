@@ -16,6 +16,7 @@ image:
   fit: contain
 product:
   type: fpga_board
+  manufacturer: lowrisc
 related:
 - type: page
   slug: build-platforms-fpga-platforms
@@ -106,4 +107,4 @@ For every result, capture:
 - firmware source revision
 - connected peripherals and clock settings
 
-Visit the [Sonata project documentation](https://sonata-system.github.io/sonata-system/) and the [CHERIoT getting-started guide](https://cheriot.org/book/getting_started.html) for current hardware and software instructions.
+Visit the [Sonata project documentation](https://lowrisc.github.io/sonata-system/) and the [CHERIoT getting-started guide](https://cheriot.org/book/getting_started.html) for current hardware and software instructions.

@@ -1,4 +1,5 @@
 .site-footer {
+  --border: #{$colour-border-inverse};
   --colour-focus: var(--colour-footer-text);
   --colour-navigation-hover: var(--colour-footer-hover);
   background: transparent;

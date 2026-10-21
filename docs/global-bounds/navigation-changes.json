@@ -1,0 +1,117 @@
+{
+  "source_commit": "f60a97aeb4a0d1809bcf3a8780ad0a6769ac75ca",
+  "source_baseline": "docs/design-polish/rendered-baseline.json",
+  "reference_matches_original_baseline": true,
+  "category_pages": {
+    "/news-and-events/": {
+      "removed_summary_panels": [
+        "Follow the ecosystem"
+      ],
+      "preserved_heading_ids": [
+        "follow-the-ecosystem"
+      ],
+      "preserved_grid_links": 10
+    },
+    "/build/": {
+      "removed_summary_panels": [
+        "Platforms and software",
+        "Get started",
+        "Work with the community"
+      ],
+      "preserved_heading_ids": [
+        "platforms-and-software",
+        "get-started",
+        "work-with-the-community"
+      ],
+      "preserved_grid_links": 32
+    },
+    "/alliance/": {
+      "removed_summary_panels": [
+        "About the Alliance",
+        "Take part"
+      ],
+      "preserved_heading_ids": [
+        "about-the-alliance",
+        "take-part"
+      ],
+      "preserved_grid_links": 18
+    },
+    "/adopt/": {
+      "removed_summary_panels": [
+        "Make the business case",
+        "Plan adoption"
+      ],
+      "preserved_heading_ids": [
+        "make-the-business-case",
+        "plan-adoption"
+      ],
+      "preserved_grid_links": 9
+    },
+    "/discover/": {
+      "removed_summary_panels": [
+        "Understand CHERI",
+        "Explore the resources"
+      ],
+      "preserved_heading_ids": [
+        "understand-cheri",
+        "explore-the-resources"
+      ],
+      "preserved_grid_links": 15
+    }
+  },
+  "subcategory_labels_removed": 457,
+  "subcategory_links_added": 9,
+  "public_subcategory_pages": [
+    "/build/software-ecosystem/"
+  ],
+  "routes": 755,
+  "changed_fields": {
+    "text": 462,
+    "links": 22,
+    "ids": 2,
+    "images": 4
+  },
+  "expected_model": "Derived independently from the unchanged reference DOM: remove duplicate category summaries and non-destination breadcrumb labels, link the public Software Ecosystem index, retain original heading IDs, prune manufacturer cards to Arm/Morello and lowRISC/Sonata, and add matching manufacturer facts and inverse product cards. Correct six confirmed broken URLs using verified publisher destinations or a local event, removing only the placeholder hyperlink where no source exists. All other rendered content remains protected.",
+  "manufacturer_corrections": {
+    "/products/morello/": {
+      "before_count": 69,
+      "after_count": 1,
+      "organisation": "/organisations/arm/",
+      "fact_and_inverse_product_link_added": true
+    },
+    "/products/sonata/": {
+      "before_count": 69,
+      "after_count": 1,
+      "organisation": "/organisations/lowrisc/",
+      "fact_and_inverse_product_link_added": true
+    }
+  },
+  "image_changes": [
+    "/products/morello/",
+    "/products/sonata/",
+    "/organisations/arm/",
+    "/organisations/lowrisc/"
+  ],
+  "fragment_changes": {
+    "/organisations/arm/": {
+      "added": [
+        "products-title"
+      ],
+      "removed": []
+    },
+    "/organisations/lowrisc/": {
+      "added": [
+        "products-title"
+      ],
+      "removed": []
+    }
+  },
+  "verified_link_corrections": {
+    "https://sonata-system.github.io/sonata-system/": "https://lowrisc.github.io/sonata-system/",
+    "https://cheri-alliance.github.io/events/cheri-blossoms-conference-apr-2025/": "/events/cheri-blossoms-conference-2025/",
+    "https://cheri-alliance.github.io/adopt/business-case/cost-of-memory-unsafety/Add Link to CRA Webinar": null,
+    "https://osp.uccs.edu/research-compliance/export-controls/fundamental-research": "https://osp.uccs.edu/export-controls/fundamental-research-exclusion-and-other-exemptions-from-export-controls",
+    "https://rac.berkeley.edu/export-control/basics-exclusions-and-exemptions": "https://rac.berkeley.edu/ec/exemption.html",
+    "https://www.research-services.admin.cam.ac.uk/policies/export-control-guidance/publications-and-export-control": "https://www.research-services.admin.cam.ac.uk/manage-risk/export-control/publications-export-controls"
+  }
+}

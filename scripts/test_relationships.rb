@@ -31,4 +31,26 @@ guides.each_with_index do |guide,index|
  expected=guides.each_with_index.select{|_,n|(n-index).abs==1}.map{|g,_|g['url']}
  abort 'Guide sequence did not derive neighbours' unless output.css('.guide-navigation a').map{|a|a['href']}==expected
 end
-puts 'Relationships: simultaneous current employers/titles, historical positions, both organisation inverse views, no inferred organisation news, multiple organisers and guide neighbours passed.'
+product={'slug'=>'board','title'=>'Board','url'=>'/products/board/','product'=>{'type'=>'fpga_board','manufacturer'=>'one'}}
+output=render.call('relationships.html',product,{'organisations'=>orgs})
+abort 'Manufacturer includes unrelated organisations' unless output.css('[aria-labelledby="manufacturer-title"] a').map{|a|a['href']}==['/organisations/one/']
+orgs.each do |org|
+ output=render.call('relationships.html',org,{'products'=>[product]})
+ expected=org['slug']=='one' ? ['/products/board/'] : []
+ abort 'Products must appear only on their manufacturer inverse view' unless output.css('[aria-labelledby="products-title"] a').map{|a|a['href']}==expected
+end
+[nil,'','missing'].each do |manufacturer|
+ fixture=product.merge('product'=>product['product'].merge('manufacturer'=>manufacturer))
+ output=render.call('relationships.html',fixture,{'organisations'=>orgs})
+ abort 'Missing/empty/unresolved manufacturer expanded to all organisations' unless output.css('[aria-labelledby="manufacturer-title"]').empty?
+ template=Liquid::Template.parse('{% include facts.html %}<dl>{{ fact_rows }}</dl>')
+ facts=Nokogiri::HTML.fragment(template.render!({'page'=>fixture,'site'=>{'data'=>{'catalog'=>{}},'organisations'=>orgs}},registers:{site:site,page:{}}))
+ abort 'Unknown manufacturer rendered a blank fact link' unless facts.css('a').empty?
+end
+post={'slug'=>'post','post'=>{},'url'=>'/news/post/'}
+output=render.call('relationships.html',post,{'posts'=>[{'slug'=>'unrelated','url'=>'/news/unrelated/','post'=>{'category'=>'news'}}]})
+abort 'Missing article category inferred unrelated news' unless output.css('[aria-labelledby="related-posts-title"]').empty?
+page={'slug'=>'page','related'=>[{'type'=>'organisation','slug'=>'one'},{'type'=>'unknown','slug'=>'two'},{'type'=>'organisation'},{'type'=>'organisation','slug'=>''},{'type'=>'organisation','slug'=>'missing'},{'type'=>'organisation','slug'=>'one'}]}
+output=render.call('relationships.html',page,{'organisations'=>orgs})
+abort 'Invalid related reference leaked a previous pool or duplicate' unless output.css('[aria-labelledby="related-title"] a').map{|a|a['href']}==['/organisations/one/']
+puts 'Relationships: concurrent affiliations, inverse views, organisers, guide neighbours, exact manufacturers and missing/invalid reference isolation passed.'

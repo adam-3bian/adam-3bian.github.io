@@ -93,6 +93,8 @@ a.card:hover, a.catalog-card:hover {
   line-height: $line-height-card;
 }
 .content-panel a { text-underline-offset: .2em; }
+// Homepage panels share the featured slides' surface and elevation.
+.home-page [data-section-cards] > .content-panel { background: var(--surface); box-shadow: var(--elevation-2); }
 .home-page [data-section-cards] .content-panel h2 { color: var(--ink); }
 .cards .card-action {
   margin-top: auto;

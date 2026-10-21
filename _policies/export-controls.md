@@ -130,13 +130,13 @@ Accordingly, every organisation is responsible for obtaining its own export-cont
 ### United States
 
 - [22 CFR §120.34 (ITAR) Public Domain](https://www.ecfr.gov/current/title-22/chapter-I/subchapter-M/part-120/subpart-C/section-120.34).
-- [Guidance on Fundamental Research and export controls](https://osp.uccs.edu/research-compliance/export-controls/fundamental-research).
-- [Guidance on Publicly Available Information under EAR and ITAR](https://rac.berkeley.edu/export-control/basics-exclusions-and-exemptions).
+- [Guidance on Fundamental Research and export controls](https://osp.uccs.edu/export-controls/fundamental-research-exclusion-and-other-exemptions-from-export-controls).
+- [Guidance on Publicly Available Information under EAR and ITAR](https://rac.berkeley.edu/ec/exemption.html).
 
 ### United Kingdom
 
 - [Export Controls Applying to Academic Research](https://www.gov.uk/guidance/export-controls-applying-to-academic-research) (UK Export Control Joint Unit).
-- [Publications and Export Controls](https://www.research-services.admin.cam.ac.uk/policies/export-control-guidance/publications-and-export-control) (University of Cambridge Research Services).
+- [Publications and Export Controls](https://www.research-services.admin.cam.ac.uk/manage-risk/export-control/publications-export-controls) (University of Cambridge Research Services).
 
 ## Disclaimer
 

@@ -26,6 +26,8 @@ with sync_playwright() as p:
             assert page.goto(URL+route).status==200
             page.evaluate('document.fonts.ready')
             assert not page.evaluate('document.documentElement.scrollWidth>innerWidth+1'),(width,route)
+            if page.locator('.breadcrumb-band').count():
+                assert page.locator('.breadcrumb-band').evaluate("e=>{const s=getComputedStyle(e),panel=getComputedStyle(document.querySelector('.page-surface'));return s.borderTopWidth==='1px'&&s.borderBottomWidth==='1px'&&s.borderTopStyle==='solid'&&s.borderBottomStyle==='solid'&&s.borderTopColor===s.borderBottomColor&&s.borderTopColor===panel.borderTopColor}"), (width,route,'Shared subtle breadcrumb separators')
             actual=page.locator('#primary-navigation a').evaluate_all("ns=>ns.map(n=>[n.getAttribute('href'),n.textContent.trim()])")
             prefix='/' + URL.split('/',3)[3].strip('/') if URL.split('/',3)[3].strip('/') else ''
             wanted=[[(prefix+u if u.startswith('/') else u),t] for u,t in expected]
@@ -118,9 +120,9 @@ with sync_playwright() as p:
                 assert hero.evaluate("e=>{const s=getComputedStyle(e);return [s.borderTopWidth,s.borderRightWidth,s.borderBottomWidth,s.borderLeftWidth]}")==['1px','1px','1px','1px']
                 track=page.locator('.slider-track')
                 surround=page.locator('.slider')
-                assert 'linear-gradient' in surround.evaluate('e=>getComputedStyle(e).backgroundImage')
-                assert surround.evaluate('e=>parseFloat(getComputedStyle(e).paddingTop)')>=24
+                assert surround.evaluate("e=>{const s=getComputedStyle(e);return s.backgroundImage==='none'&&s.backgroundColor==='rgba(0, 0, 0, 0)'&&s.padding==='0px'&&s.boxShadow==='none'}"), 'The slider has no additional visual surround'
                 assert track.evaluate('e=>getComputedStyle(e).boxShadow')!='none'
+                assert page.locator('[data-section-cards] > .content-panel').evaluate_all("ns=>{const colour=getComputedStyle(document.querySelector('.slide-link')).backgroundColor,shadow=getComputedStyle(document.querySelector('.slider-track')).boxShadow;return ns.length>0&&ns.every(n=>getComputedStyle(n).backgroundColor===colour&&getComputedStyle(n).boxShadow===shadow)}"), 'Homepage panels share the slide colour and shadow'
             band=page.locator('.site-call-to-action')
             assert band.evaluate('e=>getComputedStyle(e).backgroundImage')=='none'
             assert band.evaluate('e=>getComputedStyle(e).backgroundColor')=='rgba(0, 0, 0, 0)'

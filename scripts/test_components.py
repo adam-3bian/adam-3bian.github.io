@@ -68,6 +68,7 @@ with sync_playwright() as p:
                 if data['breadcrumbBand']:
                     assert data['breadcrumbBand']['x'] == 0 and data['breadcrumbBand']['width'] == width
                     assert page.locator('main .breadcrumbs').count() == 0
+                    assert page.locator('.breadcrumbs li:not(:last-child) > span').count() == 0, (width, name, 'Breadcrumb ancestors have real destinations')
                 band_bottom = data['breadcrumbBand']['bottom'] if data['breadcrumbBand'] else data['header']['bottom']
                 assert abs(data['hero']['y'] - band_bottom - 16) < 1, (width, name, 'hero gap', data['hero']['y'], band_bottom)
                 assert abs(data['surface']['y'] - data['hero']['bottom'] - 16) < 1, (width, name, 'content gap')
@@ -92,6 +93,7 @@ with sync_playwright() as p:
                             assert card['footer']['y'] >= card['title']['bottom'] - 1
                         assert card['padding'] == '24px', (width, name, card)
                 if data['category']:
+                    assert page.locator('main [data-section-cards]').count() == 0, (width, name, 'Duplicate index summaries removed')
                     assert page.locator('.category-links').evaluate_all("ns=>ns.every(e=>{const s=getComputedStyle(e);return s.padding==='0px'&&s.margin==='0px'&&s.listStyleType==='none'})")
                     assert page.locator('.category-links:not([role=list])').count() == 0
                     columns = page.locator('.category-sections').evaluate("e=>{const s=getComputedStyle(e);return {actual:s.gridTemplateColumns.split(' ').length,configured:Number(s.getPropertyValue('--category-columns'))}}")
