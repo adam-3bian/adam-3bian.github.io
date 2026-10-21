@@ -14,6 +14,12 @@ Bodies use ordinary Kramdown with H2/H3 headings, fenced code, links, images, li
 
 Header menus are curated in `_config.yml`. A page joins the footer only through `navigation.footer.category`; `_data/footer_categories.yml` supplies headings. Routing records in `_redirects` contain only `permalink` and `redirect_to`.
 
+## Build and deploy
+
+The production build uses `actions/jekyll-build-pages@v1`, GitHub Pages’ official Jekyll action. Markdown, Liquid, Sass and checked-in YAML render directly under safe Jekyll; there is no content preprocessing or separate frontend build. The build job publishes its static output as an artifact. A separate validation job checks that output and a native Jekyll `/preview` build; Python, Playwright and axe are validation tools only. Deployment uses `actions/deploy-pages@v4` and remains restricted to `main` after validation passes.
+
+The [global bounds review](docs/global-bounds/README.md) documents the shared hero, content, subscription and footer frame.
+
 ## Validate locally
 
 ```sh

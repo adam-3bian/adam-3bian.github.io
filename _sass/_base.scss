@@ -97,7 +97,8 @@ p, ul, ol, blockquote, pre, dl, table {
   clear: both;
   margin-top: $subsection-gap;
 }
-.content > :first-child {
+// Legacy anchor aliases must not create a false gap above the first heading.
+.content > :first-child, .content > .anchor-alias:first-child + :not(.anchor-alias) {
   margin-top: 0;
 }
 .content > h2 + *, .content > h3 + *, .content > h4 + * {

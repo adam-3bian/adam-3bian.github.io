@@ -95,3 +95,11 @@
   .catalog-card:has(.media-organisations) .catalog-media { align-self: flex-start; }
 }
 @media print { .catalog-toolbar { display: none !important; } .catalog-card { box-shadow: none; } }
+// Inside the narrower framed mobile content, identity cards stack deliberately.
+@media (max-width: 479px) {
+  .catalog[data-view] .catalog-card, .record-list .catalog-card, .cards-grid .catalog-card { align-items: stretch; flex-direction: column; }
+  .catalog[data-view] .catalog-card .catalog-copy, .record-list .catalog-copy, .cards-grid .catalog-copy { display: flex; flex-direction: column; gap: $space-2; }
+  .catalog[data-view] .catalog-footer, .record-list .catalog-footer, .cards-grid .catalog-footer { justify-content: space-between; margin-top: auto; padding-top: $space-2; }
+  .catalog-media { align-self: flex-start; }
+  .catalog[data-view] .catalog-media:is(.media-posts, .media-events), .record-list .catalog-media:is(.media-posts, .media-events) { aspect-ratio: 16 / 9; flex: none; height: auto; width: 100%; }
+}

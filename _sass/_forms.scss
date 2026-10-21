@@ -1,7 +1,9 @@
 .form-panel {
+  min-width: 0;
+  max-width: 100%;
   width: 100%;
 }
-.reading-page main > .form-panel { margin-block: 0 $section-gap-mobile; }
+.page-surface > .form-panel + .content { margin-top: $section-gap-mobile; }
 .form-panel > * + * {
   margin-top: $content-gap;
 }
@@ -31,8 +33,11 @@
   min-height: $control-height;
   min-width: 0;
   padding: $space-3 $space-4;
+  max-width: 100%;
   width: 100%;
 }
+// Allow long native select labels to wrap; WebKit otherwise leaks their intrinsic width.
+.form-field select { white-space: normal; }
 .form-field input::placeholder, .form-field textarea::placeholder {
   color: var(--colour-muted);
   opacity: 1;

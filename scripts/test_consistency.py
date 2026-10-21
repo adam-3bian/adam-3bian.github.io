@@ -80,14 +80,14 @@ with sync_playwright() as p:
                 style=button.evaluate("e=>{const s=getComputedStyle(e);return {background:s.backgroundColor,colour:s.color,radius:s.borderRadius,height:e.getBoundingClientRect().height,padding:s.padding,gap:s.columnGap}}")
                 assert style['background']=='rgb(255, 255, 255)' and style['colour']=='rgb(18, 87, 112)',(width,route,button.inner_text(),style)
                 assert style['radius']=='10px' and style['height']>=48 and style['padding']=='12px 16px' and style['gap']=='12px',(width,route,button.inner_text(),style)
-            gaps=page.evaluate("()=>{const h=document.querySelector('.site-header').getBoundingClientRect(),m=document.querySelector('main').getBoundingClientRect(),n=document.querySelector('.site-call-to-action').getBoundingClientRect(),f=document.querySelector('.site-footer').getBoundingClientRect();return [m.top-h.bottom,f.top-n.bottom]}")
-            assert gaps==[12,0],(width,route,'Header gap and seamless newsletter/footer',gaps)
+            gaps=page.evaluate("()=>{const h=document.querySelector('.site-header').getBoundingClientRect(),m=document.querySelector('main').getBoundingClientRect(),n=document.querySelector('.site-call-to-action').getBoundingClientRect(),f=document.querySelector('.site-footer').getBoundingClientRect();const b=document.querySelector('.breadcrumb-band'), hero=document.querySelector('.hero,.page-heading').getBoundingClientRect(),p=document.querySelector('.promotional-panel').getBoundingClientRect(),fs=document.querySelector('.footer-surface').getBoundingClientRect();return [hero.top-(b?b.getBoundingClientRect().bottom:h.bottom),fs.top-p.bottom]}")
+            assert gaps==[16,16],(width,route,'Global frame gaps',gaps)
             if route=='':
                 assert page.locator('[data-section-cards] > .content-panel').evaluate_all("ns=>ns.length>0&&ns.every(n=>parseFloat(getComputedStyle(n).paddingLeft)>=24)"),'Homepage panels retain interior padding'
             assert cta.evaluate("e=>getComputedStyle(e).backgroundColor")=='rgb(21, 43, 59)'
             assert cta.evaluate("e=>getComputedStyle(e).backgroundImage")=='none'
             assert cta.locator('h2').evaluate('e=>getComputedStyle(e).color')=='rgb(255, 255, 255)'
-            assert cta.evaluate('e=>getComputedStyle(e).borderTopWidth')=='0px'
+            assert cta.evaluate('e=>getComputedStyle(e).borderTopWidth')=='1px'
             assert cta.evaluate('e=>getComputedStyle(e).cursor')!='pointer'
             # The passive panel does not change when hovered; only the actual action does.
             cta.hover()
@@ -115,7 +115,7 @@ with sync_playwright() as p:
                 assert page.locator('.detail-aside .resource-panel').evaluate('e=>getComputedStyle(e).backgroundColor')=='rgba(0, 0, 0, 0)'
             if route=='':
                 hero=page.locator('.hero')
-                assert hero.evaluate("e=>{const s=getComputedStyle(e);return [s.borderTopWidth,s.borderRightWidth,s.borderBottomWidth,s.borderLeftWidth]}")==['0px','0px','1px','0px']
+                assert hero.evaluate("e=>{const s=getComputedStyle(e);return [s.borderTopWidth,s.borderRightWidth,s.borderBottomWidth,s.borderLeftWidth]}")==['1px','1px','1px','1px']
                 track=page.locator('.slider-track')
                 surround=page.locator('.slider')
                 assert 'linear-gradient' in surround.evaluate('e=>getComputedStyle(e).backgroundImage')
@@ -123,7 +123,7 @@ with sync_playwright() as p:
                 assert track.evaluate('e=>getComputedStyle(e).boxShadow')!='none'
             band=page.locator('.site-call-to-action')
             assert band.evaluate('e=>getComputedStyle(e).backgroundImage')=='none'
-            assert band.evaluate('e=>getComputedStyle(e).backgroundColor')=='rgba(16, 60, 80, 0.86)'
+            assert band.evaluate('e=>getComputedStyle(e).backgroundColor')=='rgba(0, 0, 0, 0)'
             assert band.evaluate('e=>getComputedStyle(e).backgroundColor')==page.locator('.site-footer').evaluate('e=>getComputedStyle(e).backgroundColor')
             closing=page.locator('.promotional-panel,.footer-surface').evaluate_all("ns=>ns.map(n=>{const r=n.getBoundingClientRect();return {left:r.left,right:r.right,colour:getComputedStyle(n).backgroundColor}})")
             assert closing[0]==closing[1],('closing surfaces must align and share colour',closing)

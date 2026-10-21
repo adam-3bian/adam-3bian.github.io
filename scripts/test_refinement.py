@@ -68,12 +68,14 @@ with sync_playwright() as p:
                 # rather than leaving a narrow article in an otherwise empty layout.
                 detail = page.evaluate('''()=>{
                   const box=s=>{const n=document.querySelector(s);if(!n)return null;
-                    const r=n.getBoundingClientRect();return {x:r.x,y:r.y,w:r.width,right:r.right,bottom:r.bottom}};
-                  return {header:box('.record-header'),layout:box('.detail-layout'),
+                    const r=n.getBoundingClientRect();return {x:r.x,y:r.y,w:r.width,right:r.right,bottom:r.bottom,inset:parseFloat(getComputedStyle(n).paddingLeft)+parseFloat(getComputedStyle(n).borderLeftWidth)}};
+                  return {surface:box('.page-surface'),header:box('.record-header'),layout:box('.detail-layout'),
                     body:box('.record-body'),aside:box('.detail-aside')};
                 }''')
                 header, layout, body, aside = [detail[k] for k in ['header','layout','body','aside']]
-                assert abs(layout['x']-header['x']) < 1 and abs(layout['w']-header['w']) < 1, (width,name,detail)
+                surface=detail['surface']
+                assert abs(surface['x']-header['x']) < 1 and abs(surface['w']-header['w']) < 1
+                assert abs(layout['x']-surface['x']-surface['inset']) < 1 and abs(layout['w']-surface['w']+2*surface['inset']) < 1, (width,name,detail)
                 if name in ['policy','company','person','software']:
                     assert aside is not None, (width,name,'useful metadata aside missing')
                     assert page.locator('.inline-facts').count() == 0

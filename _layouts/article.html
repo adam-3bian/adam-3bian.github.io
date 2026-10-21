@@ -1,9 +1,11 @@
 ---
 layout: default
 ---
-<div class="article-shell">
 {% include page-header.html article=true %}
+<div class="page-surface article-shell">
 {% if page.image.src %}<figure class="article-lead">{% include image.html image=page.image eager=true %}</figure>{% endif %}
 <article class="content reading-content">{{ content }}</article>
 {% include resource-links.html %}
+{% for form_key in page.forms %}{% assign form_data = site.data.forms[form_key] %}{% if form_data %}{% include form-from-data.html form=form_data %}{% endif %}{% endfor %}
+{% include relationships.html %}
 </div>

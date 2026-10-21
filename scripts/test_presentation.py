@@ -115,8 +115,8 @@ with sync_playwright() as p:
                 selected.focus()
                 assert selected.evaluate('e=>getComputedStyle(e).outlineStyle') != 'none'
                 results.append({'device':device,'view_control_contrast':ratios})
-            # Test the actual plain text surfaces; the outer footer and home gaps are deliberately translucent.
-            surfaces = page.locator('body:not(.home-page) main, .home-page main > article, .site-header, .footer-surface, .hero, .content-panel, .catalog-card, .detail-aside, .promotional-panel')
+            # Test the actual plain text surfaces; the outer canvas and panel gaps remain transparent.
+            surfaces = page.locator('.page-surface, .page-heading, .site-header, .footer-surface, .hero, .content-panel, .catalog-card, .detail-aside, .promotional-panel')
             assert surfaces.evaluate_all("nodes=>nodes.every(n=>!/^rgba\\(.+, (?:0|0?\\.\\d+)\\)$/.test(getComputedStyle(n).backgroundColor))"), (device,name,'translucent surface')
             panels = page.locator('section.content-panel, .talk-card.content-panel')
             if panels.count():

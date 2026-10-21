@@ -1,16 +1,17 @@
 .site-call-to-action {
-  background: var(--colour-subscribe-band);
-  padding-top: $space-8;
+  background: transparent;
+  padding-top: $frame-gap;
   width: 100%;
 }
 .promotional-panel {
   align-items: center;
-  border-radius: var(--radius) var(--radius) 0 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
   display: flex;
   gap: $space-6 $space-8;
   justify-content: space-between;
-  margin-inline: -$gutter-mobile;
-  padding: $space-8 $gutter-mobile;
+  margin-inline: 0;
+  padding: $frame-padding-mobile;
 }
 .promotional-copy { min-width: 0; }
 .promotional-panel h2 { color: inherit; font-size: var(--type-section); line-height: var(--leading-heading); }
@@ -20,5 +21,5 @@
   .promotional-panel { align-items: flex-start; flex-direction: column; }
 }
 @media (min-width: $desktop-breakpoint) {
-  .promotional-panel { margin-inline: -$gutter-desktop; padding: $space-10 $gutter-desktop; }
+  .promotional-panel { padding: $frame-padding-desktop; }
 }

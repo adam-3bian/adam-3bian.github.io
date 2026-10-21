@@ -1,0 +1,431 @@
+{
+  "base_commit": "3a96ce2d4a40d4e8d546f0bd0ceb9d176e8523a5",
+  "branch": "design/catalogue-polish",
+  "build": {
+    "renderer": "GitHub Pages 232 / Jekyll 3.10; safe mode",
+    "root": "passed",
+    "preview_baseurl": "/preview",
+    "preview": "passed",
+    "production_action": "actions/jekyll-build-pages@v1",
+    "validation": "separate job; tests consume official build output; no content preprocessing"
+  },
+  "frame": {
+    "max_container_px": 1264,
+    "max_panel_px": 1200,
+    "outer_gutters_px": {
+      "mobile": 20,
+      "from_768": 32
+    },
+    "panel_padding_px": {
+      "mobile": 16,
+      "from_768": 32
+    },
+    "region_gaps_px": 16,
+    "content_radius_px": 32,
+    "framed_routes": 472
+  },
+  "preservation": {
+    "root": {
+      "schema": "5.3",
+      "records": {
+        "posts": 48,
+        "events": 10,
+        "people": 111,
+        "organisations": 69,
+        "papers": 20,
+        "products": 2,
+        "repositories": 2,
+        "groups": 16,
+        "guides": 10,
+        "policies": 11,
+        "pages": 173,
+        "redirects": 0
+      },
+      "routes": 755,
+      "redirects": 283,
+      "rendered_pages": 755,
+      "preserved_relationships": 366,
+      "preserved_fragments": 17404,
+      "preserved_assets": 416,
+      "warnings": [
+        "_events/cheritech26.md: source supplies partial timing for programme-2026-11-12-break-and-exhibition-3",
+        "_events/cheritech26.md: source supplies partial timing for programme-2026-11-12-break-and-exhibition-7",
+        "_events/cheritech26.md: source supplies partial timing for programme-2026-11-12-end-of-day-1-11",
+        "_events/cheritech26.md: source supplies partial timing for programme-2026-11-12-introduction-1",
+        "_events/cheritech26.md: source supplies partial timing for programme-2026-11-12-posters-6",
+        "_events/cheritech26.md: source supplies partial timing for programme-2026-11-12-reception-and-exhibition-10",
+        "_events/cheritech26.md: source supplies partial timing for programme-2026-11-12-round-table-5",
+        "_events/cheritech26.md: source supplies partial timing for programme-2026-11-13-break-and-exhibition-3",
+        "_events/cheritech26.md: source supplies partial timing for programme-2026-11-13-conclusion-5",
+        "_events/cheritech26.md: source supplies partial timing for programme-2026-11-13-introduction-1",
+        "_events/cheritech26.md: source supplies partial timing for programme-2026-11-13-talks-end-and-exhibition-6",
+        "_organisations/hildebrand.md: membership status unknown; excluded from current_members",
+        "_people/adam-finney.md: source affiliation has no verified position/title/date: cheri-alliance",
+        "_people/alastair-beresford.md: source affiliation has no verified position/title/date: university-of-cambridge",
+        "_people/alex-rebert.md: source affiliation has no verified position/title/date: google",
+        "_people/alex-richardson.md: source affiliation has no verified position/title/date: google",
+        "_people/alexander-voyevoda.md: source affiliation has no verified position/title/date: um-labs",
+        "_people/alfredo-mazzinghi.md: source affiliation has no verified position/title/date: capabilities-limited",
+        "_people/allison-randal.md: source affiliation has no verified position/title/date: capabilities-limited",
+        "_people/andrew-lindsay.md: source affiliation has no verified position/title/date: codasip",
+        "_people/andrew-murray.md: source affiliation has no verified position/title/date: the-good-penguin",
+        "_people/andy-moore.md: source affiliation has no verified position/title/date: risc-v-international",
+        "_people/ashish-darbari.md: source affiliation has no verified position/title/date: axiomise-ltd",
+        "_people/ben-fletcher.md: source affiliation has no verified position/title/date: codasip",
+        "_people/bradley-finn.md: source affiliation has no verified position/title/date: dsit",
+        "_people/carl-shaw.md: source affiliation has no verified position/title/date: codasip",
+        "_people/dave-harcourt.md: source affiliation has no verified position/title/date: bt-group",
+        "_people/david-chisnall.md: source affiliation has no verified position/title/date: sci-semiconductor",
+        "_people/david-musliner.md: source affiliation has no verified position/title/date: smart-information-flow-technologies-sift",
+        "_people/dmitriy-yeliseyev.md: source affiliation has no verified position/title/date: wind-river",
+        "_people/donato-ferraro.md: source affiliation has no verified position/title/date: minerva-systems",
+        "_people/edoardo-marangoni.md: source affiliation has no verified position/title/date: sci-semiconductor",
+        "_people/gavin-ferris.md: source affiliation has no verified position/title/date: cheri-alliance",
+        "_people/haydn-povey.md: source affiliation has no verified position/title/date: sci-semiconductor",
+        "_people/hesham-almatary.md: source affiliation has no verified position/title/date: capabilities-limited",
+        "_people/javier-orensanz-martinez.md: source affiliation has no verified position/title/date: lowrisc",
+        "_people/jennifer-jackson.md: source affiliation has no verified position/title/date: university-of-birmingham",
+        "_people/jeremy-singer.md: source affiliation has no verified position/title/date: university-of-glasgow",
+        "_people/jessica-clarke.md: source affiliation has no verified position/title/date: university-of-cambridge",
+        "_people/jianyi-cheng.md: source affiliation has no verified position/title/date: university-of-edinburgh",
+        "_people/johannes-muller.md: source affiliation has no verified position/title/date: rptu",
+        "_people/john-baldwin.md: source affiliation has no verified position/title/date: ararat-river-consulting-llc",
+        "_people/john-goodacre.md: source affiliation has no verified position/title/date: ukri",
+        "_people/john-thomson.md: source affiliation has no verified position/title/date: lowrisc",
+        "_people/jonathan-woodruff.md: source affiliation has no verified position/title/date: capabilities-limited",
+        "_people/joshua-lant.md: source affiliation has no verified position/title/date: the-university-of-manchester",
+        "_people/ka-wing-li.md: source affiliation has no verified position/title/date: university-of-cambridge",
+        "_people/kathleen-fisher.md: source affiliation has no verified position/title/date: aria",
+        "_people/kevin-brodsky.md: source affiliation has no verified position/title/date: arm",
+        "_people/louis-emile-ploix.md: source affiliation has no verified position/title/date: lowrisc",
+        "_people/luca-muller.md: source affiliation has no verified position/title/date: german-research-center-for-artificial-intelligence-dfki",
+        "_people/maika-fohrenbach.md: source affiliation has no verified position/title/date: european-commission-dg-connect",
+        "_people/manu-ravishankar.md: source affiliation has no verified position/title/date: pa-consulting",
+        "_people/mark-batty.md: source affiliation has no verified position/title/date: university-of-kent",
+        "_people/mark-hill.md: source affiliation has no verified position/title/date: codasip",
+        "_people/marno-van-der-maas.md: source affiliation has no verified position/title/date: lowrisc",
+        "_people/martin-atkins.md: source affiliation has no verified position/title/date: mission-critical-applications-limited",
+        "_people/merve-gulmez.md: source affiliation has no verified position/title/date: ericsson",
+        "_people/mike-eftimakis.md: source affiliation has no verified position/title/date: cheri-alliance",
+        "_people/mike-halsall.md: source affiliation has no verified position/title/date: cheri-alliance",
+        "_people/murali-vijayaraghavan.md: source affiliation has no verified position/title/date: google",
+        "_people/murat-cakmak.md: source affiliation has no verified position/title/date: microservice-store",
+        "_people/ollie-whitehouse.md: source affiliation has no verified position/title/date: ncsc",
+        "_people/paul-metzger.md: source affiliation has no verified position/title/date: university-of-cambridge",
+        "_people/paul-waller.md: source affiliation has no verified position/title/date: ncsc",
+        "_people/peter-cox.md: source affiliation has no verified position/title/date: um-labs",
+        "_people/phil-day.md: source affiliation has no verified position/title/date: configured-things",
+        "_people/sam-cater.md: source affiliation has no verified position/title/date: bt-group",
+        "_people/samuel-stark.md: source affiliation has no verified position/title/date: university-of-cambridge",
+        "_people/simon-moore.md: source affiliation has no verified position/title/date: university-of-cambridge",
+        "_people/tariq-kurd.md: source affiliation has no verified position/title/date: codasip",
+        "_people/thomas-nyman.md: source affiliation has no verified position/title/date: ericsson",
+        "_people/tora-fridholm.md: source affiliation has no verified position/title/date: codasip"
+      ],
+      "errors": []
+    },
+    "preview": {
+      "schema": "5.3",
+      "records": {
+        "posts": 48,
+        "events": 10,
+        "people": 111,
+        "organisations": 69,
+        "papers": 20,
+        "products": 2,
+        "repositories": 2,
+        "groups": 16,
+        "guides": 10,
+        "policies": 11,
+        "pages": 173,
+        "redirects": 0
+      },
+      "routes": 755,
+      "redirects": 283,
+      "rendered_pages": 755,
+      "preserved_relationships": 366,
+      "preserved_fragments": 17404,
+      "preserved_assets": 416,
+      "warnings": [
+        "_events/cheritech26.md: source supplies partial timing for programme-2026-11-12-break-and-exhibition-3",
+        "_events/cheritech26.md: source supplies partial timing for programme-2026-11-12-break-and-exhibition-7",
+        "_events/cheritech26.md: source supplies partial timing for programme-2026-11-12-end-of-day-1-11",
+        "_events/cheritech26.md: source supplies partial timing for programme-2026-11-12-introduction-1",
+        "_events/cheritech26.md: source supplies partial timing for programme-2026-11-12-posters-6",
+        "_events/cheritech26.md: source supplies partial timing for programme-2026-11-12-reception-and-exhibition-10",
+        "_events/cheritech26.md: source supplies partial timing for programme-2026-11-12-round-table-5",
+        "_events/cheritech26.md: source supplies partial timing for programme-2026-11-13-break-and-exhibition-3",
+        "_events/cheritech26.md: source supplies partial timing for programme-2026-11-13-conclusion-5",
+        "_events/cheritech26.md: source supplies partial timing for programme-2026-11-13-introduction-1",
+        "_events/cheritech26.md: source supplies partial timing for programme-2026-11-13-talks-end-and-exhibition-6",
+        "_organisations/hildebrand.md: membership status unknown; excluded from current_members",
+        "_people/adam-finney.md: source affiliation has no verified position/title/date: cheri-alliance",
+        "_people/alastair-beresford.md: source affiliation has no verified position/title/date: university-of-cambridge",
+        "_people/alex-rebert.md: source affiliation has no verified position/title/date: google",
+        "_people/alex-richardson.md: source affiliation has no verified position/title/date: google",
+        "_people/alexander-voyevoda.md: source affiliation has no verified position/title/date: um-labs",
+        "_people/alfredo-mazzinghi.md: source affiliation has no verified position/title/date: capabilities-limited",
+        "_people/allison-randal.md: source affiliation has no verified position/title/date: capabilities-limited",
+        "_people/andrew-lindsay.md: source affiliation has no verified position/title/date: codasip",
+        "_people/andrew-murray.md: source affiliation has no verified position/title/date: the-good-penguin",
+        "_people/andy-moore.md: source affiliation has no verified position/title/date: risc-v-international",
+        "_people/ashish-darbari.md: source affiliation has no verified position/title/date: axiomise-ltd",
+        "_people/ben-fletcher.md: source affiliation has no verified position/title/date: codasip",
+        "_people/bradley-finn.md: source affiliation has no verified position/title/date: dsit",
+        "_people/carl-shaw.md: source affiliation has no verified position/title/date: codasip",
+        "_people/dave-harcourt.md: source affiliation has no verified position/title/date: bt-group",
+        "_people/david-chisnall.md: source affiliation has no verified position/title/date: sci-semiconductor",
+        "_people/david-musliner.md: source affiliation has no verified position/title/date: smart-information-flow-technologies-sift",
+        "_people/dmitriy-yeliseyev.md: source affiliation has no verified position/title/date: wind-river",
+        "_people/donato-ferraro.md: source affiliation has no verified position/title/date: minerva-systems",
+        "_people/edoardo-marangoni.md: source affiliation has no verified position/title/date: sci-semiconductor",
+        "_people/gavin-ferris.md: source affiliation has no verified position/title/date: cheri-alliance",
+        "_people/haydn-povey.md: source affiliation has no verified position/title/date: sci-semiconductor",
+        "_people/hesham-almatary.md: source affiliation has no verified position/title/date: capabilities-limited",
+        "_people/javier-orensanz-martinez.md: source affiliation has no verified position/title/date: lowrisc",
+        "_people/jennifer-jackson.md: source affiliation has no verified position/title/date: university-of-birmingham",
+        "_people/jeremy-singer.md: source affiliation has no verified position/title/date: university-of-glasgow",
+        "_people/jessica-clarke.md: source affiliation has no verified position/title/date: university-of-cambridge",
+        "_people/jianyi-cheng.md: source affiliation has no verified position/title/date: university-of-edinburgh",
+        "_people/johannes-muller.md: source affiliation has no verified position/title/date: rptu",
+        "_people/john-baldwin.md: source affiliation has no verified position/title/date: ararat-river-consulting-llc",
+        "_people/john-goodacre.md: source affiliation has no verified position/title/date: ukri",
+        "_people/john-thomson.md: source affiliation has no verified position/title/date: lowrisc",
+        "_people/jonathan-woodruff.md: source affiliation has no verified position/title/date: capabilities-limited",
+        "_people/joshua-lant.md: source affiliation has no verified position/title/date: the-university-of-manchester",
+        "_people/ka-wing-li.md: source affiliation has no verified position/title/date: university-of-cambridge",
+        "_people/kathleen-fisher.md: source affiliation has no verified position/title/date: aria",
+        "_people/kevin-brodsky.md: source affiliation has no verified position/title/date: arm",
+        "_people/louis-emile-ploix.md: source affiliation has no verified position/title/date: lowrisc",
+        "_people/luca-muller.md: source affiliation has no verified position/title/date: german-research-center-for-artificial-intelligence-dfki",
+        "_people/maika-fohrenbach.md: source affiliation has no verified position/title/date: european-commission-dg-connect",
+        "_people/manu-ravishankar.md: source affiliation has no verified position/title/date: pa-consulting",
+        "_people/mark-batty.md: source affiliation has no verified position/title/date: university-of-kent",
+        "_people/mark-hill.md: source affiliation has no verified position/title/date: codasip",
+        "_people/marno-van-der-maas.md: source affiliation has no verified position/title/date: lowrisc",
+        "_people/martin-atkins.md: source affiliation has no verified position/title/date: mission-critical-applications-limited",
+        "_people/merve-gulmez.md: source affiliation has no verified position/title/date: ericsson",
+        "_people/mike-eftimakis.md: source affiliation has no verified position/title/date: cheri-alliance",
+        "_people/mike-halsall.md: source affiliation has no verified position/title/date: cheri-alliance",
+        "_people/murali-vijayaraghavan.md: source affiliation has no verified position/title/date: google",
+        "_people/murat-cakmak.md: source affiliation has no verified position/title/date: microservice-store",
+        "_people/ollie-whitehouse.md: source affiliation has no verified position/title/date: ncsc",
+        "_people/paul-metzger.md: source affiliation has no verified position/title/date: university-of-cambridge",
+        "_people/paul-waller.md: source affiliation has no verified position/title/date: ncsc",
+        "_people/peter-cox.md: source affiliation has no verified position/title/date: um-labs",
+        "_people/phil-day.md: source affiliation has no verified position/title/date: configured-things",
+        "_people/sam-cater.md: source affiliation has no verified position/title/date: bt-group",
+        "_people/samuel-stark.md: source affiliation has no verified position/title/date: university-of-cambridge",
+        "_people/simon-moore.md: source affiliation has no verified position/title/date: university-of-cambridge",
+        "_people/tariq-kurd.md: source affiliation has no verified position/title/date: codasip",
+        "_people/thomas-nyman.md: source affiliation has no verified position/title/date: ericsson",
+        "_people/tora-fridholm.md: source affiliation has no verified position/title/date: codasip"
+      ],
+      "errors": []
+    }
+  },
+  "rendered_parity": {
+    "root": {
+      "routes": 755,
+      "errors": []
+    },
+    "preview": {
+      "routes": 755,
+      "errors": []
+    }
+  },
+  "native_checks": {
+    "specification_tests": 8,
+    "forms": "passed; no submissions sent",
+    "event_status_and_dates": "passed",
+    "relationships": "passed",
+    "markdown": {
+      "literal_code_examples": 207,
+      "source_paragraphs": 2914,
+      "protected_liquid_fixture": "passed",
+      "deployments": [
+        "root",
+        "preview"
+      ]
+    },
+    "glossary_terms": 46,
+    "workflow_structure": "passed",
+    "editorial_data_assets_changes": []
+  },
+  "template_graph": {
+    "counts": {
+      "_includes": 31,
+      "_layouts": 6
+    },
+    "missing_references": [],
+    "dynamic_references": [],
+    "resolved_dynamic_references": [
+      {
+        "owner": "jekyll-redirect-from",
+        "target": "_layouts/redirect.html",
+        "generated_records": 283
+      }
+    ]
+  },
+  "browser_runtime": {
+    "local_playwright": "1.62.0",
+    "ci_playwright": "1.56.0 (requirements-dev.txt)"
+  },
+  "cross_browser": {
+    "root": {
+      "engines": [
+        "webkit",
+        "chromium",
+        "firefox"
+      ],
+      "route_viewport_checks": 378,
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1440,
+        1920
+      ],
+      "javascript_errors": []
+    },
+    "preview": {
+      "engines": [
+        "chromium"
+      ],
+      "route_viewport_checks": 126,
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1440,
+        1920
+      ],
+      "javascript_errors": []
+    }
+  },
+  "component_geometry": {
+    "root": {
+      "responsive_views": 176,
+      "widths": [
+        320,
+        375,
+        390,
+        430,
+        768,
+        1024,
+        1440,
+        1920
+      ]
+    },
+    "preview": {
+      "responsive_views": 176,
+      "widths": [
+        320,
+        375,
+        390,
+        430,
+        768,
+        1024,
+        1440,
+        1920
+      ]
+    }
+  },
+  "root_suites": [
+    {
+      "suite": "components",
+      "deployment": "root",
+      "exit_code": 0,
+      "seconds": 108.4
+    },
+    {
+      "suite": "forms",
+      "deployment": "root",
+      "exit_code": 0,
+      "seconds": 7.5
+    },
+    {
+      "suite": "posts",
+      "deployment": "root",
+      "exit_code": 0,
+      "seconds": 48.1
+    },
+    {
+      "suite": "semantic",
+      "deployment": "root",
+      "exit_code": 0,
+      "seconds": 65.8
+    },
+    {
+      "suite": "catalog",
+      "deployment": "root",
+      "exit_code": 0,
+      "seconds": 49.9
+    },
+    {
+      "suite": "layouts",
+      "deployment": "root",
+      "exit_code": 0,
+      "seconds": 47.7
+    },
+    {
+      "suite": "presentation",
+      "deployment": "root",
+      "exit_code": 0,
+      "seconds": 50.5
+    },
+    {
+      "suite": "consistency",
+      "deployment": "root",
+      "exit_code": 0,
+      "seconds": 219.3
+    },
+    {
+      "suite": "refinement",
+      "exit_code": 0,
+      "responsive_views": 60,
+      "axe_views": 36
+    },
+    {
+      "suite": "corporate",
+      "exit_code": 0
+    }
+  ],
+  "preview_suites": [
+    {
+      "suite": "components",
+      "deployment": "preview",
+      "exit_code": 0,
+      "seconds": 77.6
+    },
+    {
+      "suite": "forms",
+      "deployment": "preview",
+      "exit_code": 0,
+      "seconds": 4.9
+    },
+    {
+      "suite": "corporate",
+      "deployment": "preview",
+      "exit_code": 0,
+      "seconds": 110.2
+    },
+    {
+      "suite": "semantic",
+      "deployment": "preview",
+      "exit_code": 0,
+      "seconds": 53.0
+    },
+    {
+      "suite": "catalog",
+      "deployment": "preview",
+      "exit_code": 0,
+      "seconds": 33.2
+    }
+  ],
+  "coverage": "Root: all ten browser suites, including Chromium/Firefox/WebKit corporate checks. Preview: component geometry, forms, semantic content, catalogue and Chromium corporate checks. CI keeps all ten suites and all three engines for both deployments.",
+  "screenshots": "Same viewport, reduced motion, fonts ready and all images decoded before capture. Before output is commit 3a96ce2.",
+  "known_source_warnings": 73
+}

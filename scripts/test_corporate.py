@@ -128,8 +128,9 @@ with sync_playwright() as playwright:
                 if route == "404.html":
                     assert page.locator("a.navigation-choice").count() == 3
                     assert page.locator("main table").count() == 0
-                decorative = page.locator(".catalog-card,.record-portrait,.page-heading,.detail-aside,.citation-block,.promotional-panel,.glossary-entry,.glossary-index")
+                decorative = page.locator(".catalog-card,.record-portrait,.detail-aside,.citation-block,.glossary-entry,.glossary-index")
                 assert decorative.evaluate_all("ns=>ns.every(e=>['Top','Right','Bottom','Left'].every(side=>parseFloat(getComputedStyle(e)['border'+side+'Width'])===0))"), (engine, width, route, "decorative border")
+                assert page.locator('.hero,.page-heading,.page-surface,.promotional-panel,.footer-surface').evaluate_all("ns=>ns.every(e=>['Top','Right','Bottom','Left'].every(side=>parseFloat(getComputedStyle(e)['border'+side+'Width'])===1))"), (engine, width, route, "framed regions")
                 ui = page.locator(".button,.catalog-card,.catalog-action,.member-badge,.submenu-toggle,.menu-group-title,.page-heading,.record-facts")
                 assert ui.evaluate_all("""ns=>ns.every(e=>['color','backgroundColor'].every(p=>{
                   const c=(getComputedStyle(e)[p].match(/[\\d.]+/g)||[]).map(Number);

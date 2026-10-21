@@ -4,6 +4,7 @@ layout: default
 {% include facts.html %}
 {% assign use_sidebar = false %}{% if fact_count > 0 or page.resources.size > 0 or page.person.links.size > 0 or page.organisation.website or page.event.registration %}{% assign use_sidebar = true %}{% endif %}{% if page.guide %}{% assign use_sidebar = false %}{% endif %}
 {% include page-header.html detail=true %}
+<div class="page-surface">
 {% if page.guide %}{% if page.guide.prerequisites.size > 0 %}<section class="guide-prerequisites" aria-labelledby="prerequisites-title"><h2 id="prerequisites-title">Prerequisites</h2><ul>{% for prerequisite in page.guide.prerequisites %}<li>{{ prerequisite | markdownify }}</li>{% endfor %}</ul></section>{% endif %}
 {% if page.guide.series and page.guide.sequence %}{% assign series_guides = site.guides | where: 'guide.series', page.guide.series | sort: 'guide.sequence' %}{% assign previous_guide = nil %}{% assign next_guide = nil %}{% assign seen_guide = false %}{% for guide in series_guides %}{% if seen_guide %}{% assign next_guide = guide %}{% break %}{% elsif guide.slug == page.slug %}{% assign seen_guide = true %}{% else %}{% assign previous_guide = guide %}{% endif %}{% endfor %}<nav class="guide-navigation" aria-label="Guide sequence">{% if previous_guide %}<a href="{{ previous_guide.url | relative_url }}">Previous: {{ previous_guide.title | escape }}</a>{% endif %}{% if next_guide %}<a href="{{ next_guide.url | relative_url }}">Next: {{ next_guide.title | escape }}</a>{% endif %}</nav>{% endif %}{% endif %}
 <div class="detail-layout{% if use_sidebar %} has-facts{% endif %}">
@@ -16,3 +17,7 @@ layout: default
 {% if page.guide %}{% include resource-links.html %}{% endif %}
 {% if page.sitemap == false and page.canonical_url %}<p class="archive-notice">This is a retained version. <a href="{{ page.canonical_url | relative_url }}">Read the current policy</a>.</p>{% endif %}
 </article></div>
+
+{% for form_key in page.forms %}{% assign form_data = site.data.forms[form_key] %}{% if form_data %}{% include form-from-data.html form=form_data %}{% endif %}{% endfor %}
+{% include relationships.html %}
+</div>

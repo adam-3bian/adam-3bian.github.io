@@ -61,6 +61,12 @@ $content-gap: $space-5;
 $heading-gap: $space-4;
 $subsection-gap: $space-10;
 $grid-gap: $space-6;
+
+// Global composition: independently bounded hero, content, subscription and footer.
+$frame-gap: $space-4;
+$frame-radius: $space-8;
+$frame-padding-mobile: $space-4;
+$frame-padding-desktop: $space-8;
 $card-gap: $grid-gap;
 $card-padding-mobile: $space-6;
 $card-padding-desktop: $space-6;

@@ -52,7 +52,7 @@ with sync_playwright() as p:
               return {viewport:document.documentElement.clientWidth, overflow:document.documentElement.scrollWidth > innerWidth + 1,
                 theme:document.body.dataset.theme, header:box('.site-header'), headerInner:box('.site-header-inner'),
                 footer:box('.site-footer'), footerInner:box('.site-footer > .site-container'), main:box('main'),
-                content:box('main .content'), watermark:{display:watermark.display, opacity:watermark.opacity, image:watermark.backgroundImage}};
+                surface:box('.page-surface'), content:box('main .content'), watermark:{display:watermark.display, opacity:watermark.opacity, image:watermark.backgroundImage}};
             }''')
             assert not data['overflow'], (width, name, data)
             for surface in ['header', 'footer']:
@@ -61,9 +61,9 @@ with sync_playwright() as p:
                 assert abs(inner['left'] + inner['paddingLeft'] - data['main']['left'] - data['main']['paddingLeft']) < 1, (width, name, surface, data)
                 assert abs(inner['width'] - data['main']['width']) < 1, (width, name, surface, data)
             if name == 'page':
-                available = data['main']['width'] - data['main']['paddingLeft'] - data['main']['paddingRight']
+                available = data['surface']['width'] - data['surface']['paddingLeft'] - data['surface']['paddingRight'] - 2
                 assert abs(data['content']['width'] - available) < 1, (width, name, data)
-                assert abs(data['content']['left'] - data['main']['left'] - data['main']['paddingLeft']) < 1, (width, name, data)
+                assert abs(data['content']['left'] - data['surface']['left'] - data['surface']['paddingLeft'] - 1) < 1, (width, name, data)
             if name == 'news':
                 assert data['content']['width'] <= 78 * 18 and data['content']['width'] <= data['main']['width']
             assert data['theme'] == ('dark' if name == 'home' else 'light'), (name, data)
@@ -87,7 +87,7 @@ with sync_playwright() as p:
                 frame = page.locator('.hero').evaluate('''e=>{const s=getComputedStyle(e),slider=getComputedStyle(document.querySelector('.slide-link'));return {
                   top:s.borderTopLeftRadius,bottom:s.borderBottomLeftRadius,border:s.borderBottomWidth,
                   left:s.borderLeftWidth,right:s.borderRightWidth,colour:s.borderBottomColor,sliderColour:slider.borderColor}}''')
-                assert frame['top'] == '0px' and frame['bottom'] == '0px' and frame['left'] == '0px' and frame['right'] == '0px', (width,frame)
+                assert frame['top'] == '10px' and frame['bottom'] == '10px' and frame['left'] == '1px' and frame['right'] == '1px', (width,frame)
                 assert frame['border'] == '1px', (width,frame)
                 assert page.locator('.slide-link').evaluate_all("ns=>ns.every(e=>getComputedStyle(e).borderTopWidth==='0px')"), 'Feature cards are borderless'
             results.append({'width': width, 'route': name, 'layout': data})

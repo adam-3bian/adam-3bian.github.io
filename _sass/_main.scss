@@ -1,32 +1,35 @@
+// One frame shared by every bounded region in the global page composition.
 .site-container, main {
   margin-inline: auto;
   max-width: $max-site;
   padding-inline: $gutter-mobile;
   width: 100%;
 }
-main {
-  background: var(--colour-page);
+main.site-frame {
+  background: transparent;
+  display: flex;
   flex: 1;
-  margin-block: $space-3 0;
-  padding-block: 0 $section-gap-mobile;
+  flex-direction: column;
+  gap: $frame-gap;
+  margin-block: 0;
+  padding-block: $frame-gap 0;
 }
+.hero, .page-heading, .page-surface {
+  background: var(--colour-page);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  min-width: 0;
+  padding: $frame-padding-mobile;
+  width: 100%;
+}
+main.site-frame > .anchor-alias { position: absolute; }
+.page-surface { border-radius: $frame-radius; flex: 1; }
+.page-surface > :not(:first-child) { margin-top: $section-gap-mobile; }
+.page-surface > :first-child { margin-top: 0; }
+.page-surface > section > h2 { margin-bottom: $space-5; }
 .home-page { font-family: $font-family; font-size: 1rem; }
-// Home uses discrete opaque reading regions; the existing continuous artwork shows in the gaps.
-.home-page main { background: transparent; }
-.home-page main > article, .home-page main > section:not(.hero):not(.slider) { background: var(--colour-page); margin-inline: -$gutter-mobile; padding: $space-6 $gutter-mobile; width: auto; }
-main > article, main > section:not(.hero) {
-  margin-top: $section-gap-mobile;
-}
-// Home panels own their padding; avoid a second full section gap outside them.
-.home-page main > article, .home-page main > section:not(.hero) { margin-top: $space-6; }
-main > section:not(.hero) > h2 {
-  margin-bottom: $space-5;
-}
 @media (min-width: $desktop-breakpoint) {
   .site-container, main { padding-inline: $gutter-desktop; }
-  main { padding-bottom: $section-gap-desktop; }
-  .home-page main > article, .home-page main > section:not(.hero):not(.slider) { margin-inline: -$gutter-desktop; padding-inline: $gutter-desktop; }
-  main > article, main > section:not(.hero) {
-    margin-top: $section-gap-desktop;
-  }
+  .hero, .page-heading, .page-surface { padding: $frame-padding-desktop; }
+  .page-surface > :not(:first-child) { margin-top: $section-gap-desktop; }
 }

@@ -1,9 +1,4 @@
-.hero {
-  background: var(--colour-hero);
-  border-bottom: 1px solid var(--border);
-  margin-inline: -$gutter-mobile;
-  padding: $space-12 $gutter-mobile;
-}
+.hero { background: var(--colour-hero); margin: 0; padding-block: $space-8; }
 .hero-intro { min-width: 0; }
 .hero-large h1 {
   font-size: var(--type-display);
@@ -20,7 +15,7 @@
   max-width: $text-width;
 }
 @media (min-width: $desktop-breakpoint) {
-  .hero { margin-inline: -$gutter-desktop; padding: $space-16 $gutter-desktop $space-12; }
+  .hero { padding-block: $space-12; }
   .hero-large h1 { font-size: var(--type-display); }
 }
 @media (max-width: $desktop-breakpoint - 1px) {

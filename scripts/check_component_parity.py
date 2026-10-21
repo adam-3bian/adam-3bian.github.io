@@ -22,9 +22,14 @@ def snapshot(folder, baseurl=''):
         scope = main if main is not None else tree
         def local(url):
             return url[len(baseurl):] if baseurl and url.startswith(baseurl + '/') else url
+        # Breadcrumbs now live in a full-width band before main. Preserve the
+        # original content contract across that structural move.
+        crumbs = tree.xpath('//nav[contains(concat(" ",normalize-space(@class)," ")," breadcrumbs ") and not(ancestor::main)]')
+        prefix = crumbs[0].text_content() + ' ' if crumbs else ''
+        links = (crumbs[0].xpath('.//a/@href') if crumbs else []) + scope.xpath('.//a/@href')
         fields = {
-            'text': ' '.join(scope.text_content().split()),
-            'links': dict(collections.Counter(local(u) for u in scope.xpath('.//a/@href'))),
+            'text': ' '.join((prefix + scope.text_content()).split()),
+            'links': dict(collections.Counter(local(u) for u in links)),
             'images': sorted(local(u) for u in scope.xpath('.//img/@src')),
             'ids': sorted(scope.xpath('.//@id')),
         }

@@ -38,11 +38,11 @@ with sync_playwright() as p:
             data = page.evaluate('''() => {
               const box = e => {const r=e.getBoundingClientRect(),s=getComputedStyle(e);return {
                 x:r.x,y:r.y,width:r.width,height:r.height,right:r.right,bottom:r.bottom,
-                padding:s.padding,margin:s.margin,display:s.display,gap:s.gap};};
+                padding:s.padding,margin:s.margin,display:s.display,gap:s.gap,radius:s.borderTopLeftRadius,contentX:r.x+parseFloat(s.paddingLeft)+parseFloat(s.borderLeftWidth),contentWidth:r.width-parseFloat(s.paddingLeft)-parseFloat(s.paddingRight)-parseFloat(s.borderLeftWidth)-parseFloat(s.borderRightWidth)};};
               const one=s=>{const e=document.querySelector(s);return e?box(e):null;};
               return {overflow:document.documentElement.scrollWidth>innerWidth+1,
                 main:one('main'),header:one('.site-header'),newsletter:one('.site-call-to-action'),
-                heading:one('.page-heading'),breadcrumbs:one('.breadcrumbs'),body:one('.record-body'),aside:one('.detail-aside'),
+                slider:one('.slider'),surface:one('.page-surface'),hero:one('.hero,.page-heading'),subscription:one('.promotional-panel'),footer:one('.footer-surface'),breadcrumbBand:one('.breadcrumb-band'),headingCopy:one('.page-heading .heading-copy'),heading:one('.page-heading'),breadcrumbs:one('.breadcrumbs'),body:one('.record-body'),aside:one('.detail-aside'),
                 article:one('.reading-content'),lead:one('.article-lead'),
                 category:one('.category-links'),cards:[...document.querySelectorAll('.catalog-card')].slice(0,8).map(e=>({
                   ...box(e),copy:box(e.querySelector('.catalog-copy')),title:box(e.querySelector('h2,h3')),
@@ -55,12 +55,27 @@ with sync_playwright() as p:
                 assert not data['overflow'], (width, name, 'page overflow')
                 assert page.locator('a a,a button,button a').count() == 0, (width, name, 'nested controls')
                 assert page.locator('h1').count() == 1
-                assert abs(data['newsletter']['y'] - data['main']['bottom']) < 1, (width, name, 'extra lower strip')
+                assert abs(data['subscription']['y'] - data['main']['bottom'] - 16) < 1, (width, name, 'subscription panel gap')
+                assert abs(data['footer']['y'] - data['subscription']['bottom'] - 16) < 1, (width, name, 'footer panel gap')
+                for region in ['hero', 'surface', 'subscription', 'footer']:
+                    assert abs(data[region]['x'] - data['main']['contentX']) < 1, (width, name, region, 'shared left bound')
+                    assert abs(data[region]['width'] - data['main']['contentWidth']) < 1, (width, name, region, 'shared width')
+                assert data['surface']['radius'] == '32px'
+                if data['slider']:
+                    assert data['slider']['x'] >= data['surface']['contentX'] - 1
+                    assert data['slider']['right'] <= data['surface']['contentX'] + data['surface']['contentWidth'] + 1
+                    assert data['slider']['y'] > data['surface']['y'] and data['slider']['bottom'] < data['surface']['bottom']
+                if data['breadcrumbBand']:
+                    assert data['breadcrumbBand']['x'] == 0 and data['breadcrumbBand']['width'] == width
+                    assert page.locator('main .breadcrumbs').count() == 0
+                band_bottom = data['breadcrumbBand']['bottom'] if data['breadcrumbBand'] else data['header']['bottom']
+                assert abs(data['hero']['y'] - band_bottom - 16) < 1, (width, name, 'hero gap', data['hero']['y'], band_bottom)
+                assert abs(data['surface']['y'] - data['hero']['bottom'] - 16) < 1, (width, name, 'content gap')
                 if data['body'] and data['aside'] and width < 1024:
-                    assert data['body']['width'] >= data['main']['width'] - (40 if width < 768 else 64) - 1
+                    assert abs(data['body']['width'] - data['surface']['contentWidth']) < 1
                     assert data['aside']['bottom'] <= data['body']['y'] + 1
                 if name == 'article':
-                    for element in ['heading', 'lead', 'breadcrumbs']:
+                    for element in ['headingCopy', 'lead']:
                         assert abs(data[element]['x'] - data['article']['x']) < 1, (width, name, element, 'left alignment')
                         assert abs(data[element]['width'] - data['article']['width']) < 1
                 if name == 'members':
@@ -68,7 +83,10 @@ with sync_playwright() as p:
                         if not card['logo']:
                             continue
                         assert card['copy']['display'] != 'contents'
-                        assert card['title']['x'] >= card['logo']['right'] + 11
+                        if width < 480:
+                            assert card['title']['y'] >= card['logo']['bottom'] + 11
+                        else:
+                            assert card['title']['x'] >= card['logo']['right'] + 11
                         assert card['title']['right'] <= card['right'] - 15
                         if width < 768 and card['footer']:
                             assert card['footer']['y'] >= card['title']['bottom'] - 1

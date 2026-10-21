@@ -18,6 +18,33 @@ concurrency:
 
 jobs:
   build:
+    name: Build with GitHub Pages Jekyll
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/configure-pages@v5
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+      - name: Build the native Jekyll site
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./dist
+          future: true
+      - name: Share Jekyll output with validation
+        uses: actions/upload-artifact@v4
+        with:
+          name: jekyll-site
+          path: dist
+      - uses: actions/upload-pages-artifact@v4
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        with:
+          path: dist
+
+  validate:
+    needs: build
     runs-on: ubuntu-latest
     timeout-minutes: 45
     permissions:
@@ -37,6 +64,10 @@ jobs:
           python -m pip install -r requirements-dev.txt
           python -m playwright install --with-deps chromium firefox webkit
           npm install --prefix "$RUNNER_TEMP/accessibility" --no-audit --no-fund axe-core@4.10.3
+      - uses: actions/download-artifact@v4
+        with:
+          name: jekyll-site
+          path: dist
       - name: Validate structured records and event boundaries
         run: |
           python scripts/check_content.py
@@ -46,9 +77,8 @@ jobs:
           bundle exec ruby scripts/test_event_status.rb
           bundle exec ruby scripts/test_forms.rb
           bundle exec ruby scripts/test_relationships.rb
-      - name: Build and validate root and preview deployments
+      - name: Validate official build and Jekyll preview deployment
         run: |
-          JEKYLL_ENV=production bundle exec jekyll build --safe --destination dist
           python scripts/check_content.py --site dist --report reports/root-content.json
           python scripts/check_refinement.py --site dist
           bundle exec ruby scripts/test_markdown.rb dist
@@ -93,16 +123,10 @@ jobs:
           name: catalogue-review
           path: reports/
           if-no-files-found: ignore
-      - uses: actions/configure-pages@v5
-        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
-      - uses: actions/upload-pages-artifact@v4
-        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
-        with:
-          path: dist
 
   deploy:
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
-    needs: build
+    needs: [build, validate]
     runs-on: ubuntu-latest
     permissions:
       pages: write

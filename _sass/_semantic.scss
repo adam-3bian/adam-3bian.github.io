@@ -1,7 +1,7 @@
 // Semantic content families retain the catalogue's shared visual language.
-.article-shell { margin-inline: auto; max-width: $text-width; }
-.article-page .breadcrumbs { margin-inline: auto; max-width: $text-width; }
-.article-shell > .page-heading, .article-shell > .reading-content, .article-shell > .article-lead { width: 100%; }
+.article-shell > .reading-content, .article-shell > .article-lead, .article-shell > .resource-panel { margin-inline: auto; max-width: $text-width; }
+.article-page .page-heading .heading-copy { margin-inline: auto; max-width: $text-width; width: 100%; }
+.article-shell > .reading-content, .article-shell > .article-lead { width: 100%; }
 .author-role { display: block; }
 .event-programme { margin-top: $space-8; }
 .programme-day { margin-block: $space-8; }
@@ -27,7 +27,7 @@
 .talk-actions .resource-panel ul { flex-direction: row; flex-wrap: wrap; }
 // Keep the first directory records within reach when Poppins wraps introductions.
 @media (max-width: 767px) {
-  .directory-page .page-summary { font-size: 1rem; }
+  .directory-page .page-summary { font-size: 1rem; line-height: 1.5; }
   .catalog-toolbar { gap: $space-2; position: relative; }
   .catalog-toolbar label { line-height: 1.4; margin-bottom: $space-1; }
   .catalog-toolbar .view-switch { position: absolute; right: 0; top: calc(100% + 8px); }

@@ -1,4 +1,4 @@
-{% unless page.url == '/' %}<nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="{{ '/' | relative_url }}">Home</a></li>
+{% unless page.url == '/' %}<div class="breadcrumb-band"><nav class="breadcrumbs site-container" aria-label="Breadcrumb"><ol><li><a href="{{ '/' | relative_url }}">Home</a></li>
 {% assign category_pages = site.pages | where_exp: 'entry', 'entry.landing != nil' | where: 'landing.navigation', 'category' %}{% for ancestor in category_pages %}{% if ancestor.navigation.header.category == page.navigation.header.category and ancestor.url != page.url %}<li><a href="{{ ancestor.url | relative_url }}">{{ ancestor.title | escape }}</a></li>{% endif %}{% endfor %}
 {% if page.navigation.header.subcategory %}<li><span>{{ page.navigation.header.subcategory | escape }}</span></li>{% endif %}
-<li><span aria-current="page">{{ page.title | escape }}</span></li></ol></nav>{% endunless %}
+<li><span aria-current="page">{{ page.title | escape }}</span></li></ol></nav></div>{% endunless %}
