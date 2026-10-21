@@ -193,11 +193,12 @@ def audit(site, baseurl, records, redirects):
                     for item in [session] + session.get('presentations', []):
                         scope = item['id']
                         speakers = [records['people'][ref['person']][1]['permalink'] for ref in record['event'].get('speakers', []) if ref.get('session') == scope]
-                        actual = [local(url) for url in tree.xpath(f'//main//*[@id="{scope}"]/*[@class="programme-speakers"]/a/@href')]
+                        containers = f'(//main//*[@id="{scope}"] | //main//*[@id="{scope}"]/div[@class="programme-session-details"])'
+                        actual = [local(url) for url in tree.xpath(containers+'/*[@class="programme-speakers"]/a/@href')]
                         if collections.Counter(actual) != collections.Counter(speakers):
                             errors.append(f'{route}: programme speaker links do not match {scope}')
                         counts['programme_credits'] += len(actual)
-                        actual = [local(url) for url in tree.xpath(f'//main//*[@id="{scope}"]/div[contains(concat(" ",normalize-space(@class)," ")," programme-resources ")]//a/@href')]
+                        actual = [local(url) for url in tree.xpath(containers+'/div[contains(concat(" ",normalize-space(@class)," ")," programme-resources ")]//a/@href')]
                         if collections.Counter(actual) != collections.Counter(scoped_resources(record, scope)):
                             errors.append(f'{route}: programme resources do not match {scope}')
                         counts['programme_resources'] += len(actual)

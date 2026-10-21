@@ -72,9 +72,6 @@
 }
 .site-header nav > ul > .navigation-contact { margin-block: $space-3; }
 .site-header nav > ul > .navigation-contact > .button {
-  --button-background: var(--colour-brand-accent);
-  --button-hover: var(--colour-brand-accent-hover);
-  --button-text: var(--colour-brand-accent-text);
   border-radius: var(--radius);
   gap: $space-3;
   min-height: var(--control-height);

@@ -77,12 +77,10 @@ with sync_playwright() as p:
             assert cta.evaluate("e=>e.tagName")=='DIV'
             assert action.locator('span').inner_text()=='Get the newsletter'
             assert action.get_attribute('href')==prefix+'/news-and-events/news-and-analysis/subscribe-newsletter/'
-            # Light pages use a filled Contact Us action; geometry stays shared.
+            # Every action shares the newsletter's white, rounded button treatment.
             for button in page.locator('.button:visible:not(:disabled)').all():
                 style=button.evaluate("e=>{const s=getComputedStyle(e);return {background:s.backgroundColor,colour:s.color,radius:s.borderRadius,height:e.getBoundingClientRect().height,padding:s.padding,gap:s.columnGap}}")
-                contact=page.locator('body').get_attribute('data-theme')=='light' and button.evaluate("e=>e.matches('.navigation-contact > .button')")
-                background,colour=('rgb(18, 87, 112)','rgb(255, 255, 255)') if contact else ('rgb(255, 255, 255)','rgb(18, 87, 112)')
-                assert (style['background'],style['colour'])==(background,colour),(width,route,button.inner_text(),style)
+                assert style['background']=='rgb(255, 255, 255)' and style['colour']=='rgb(18, 87, 112)',(width,route,button.inner_text(),style)
                 assert style['radius']=='10px' and style['height']>=48 and style['padding']=='12px 16px' and style['gap']=='12px',(width,route,button.inner_text(),style)
             gaps=page.evaluate("()=>{const h=document.querySelector('.site-header').getBoundingClientRect(),m=document.querySelector('main').getBoundingClientRect(),n=document.querySelector('.site-call-to-action').getBoundingClientRect(),f=document.querySelector('.site-footer').getBoundingClientRect();const b=document.querySelector('.breadcrumb-band'), hero=document.querySelector('.hero,.page-heading').getBoundingClientRect(),p=document.querySelector('.promotional-panel').getBoundingClientRect(),fs=document.querySelector('.footer-surface').getBoundingClientRect();return [hero.top-(b?b.getBoundingClientRect().bottom:h.bottom),fs.top-p.bottom]}")
             assert gaps==[16,16],(width,route,'Global frame gaps',gaps)

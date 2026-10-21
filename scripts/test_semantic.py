@@ -23,6 +23,20 @@ with sync_playwright() as p:
    assert not page.evaluate('document.documentElement.scrollWidth>innerWidth+1'),(width,route)
    assert 'Poppins' in page.locator('body').evaluate('e=>getComputedStyle(e).fontFamily')
    assert page.locator('a a,a button').count()==0
+   if route.startswith('news/') and route!='news/':assert page.locator('.article-byline .author-role').count()==0
+   if route=='events/cheritech26/':
+    tabs=page.get_by_role('tab');assert tabs.count()==2
+    assert page.locator('.programme-day:visible').count()==1
+    assert tabs.first.get_attribute('aria-selected')=='true'
+    assert page.locator('.programme-clock').all_text_contents()==['13:05','13:20','13:40','14:00']
+    tabs.last.click();assert page.locator('.programme-session:visible').count()==6
+    tabs.last.press('ArrowRight');assert tabs.first.get_attribute('aria-selected')=='true'
+    tabs.first.press('End');assert tabs.last.get_attribute('aria-selected')=='true'
+    tabs.last.press('Home');assert tabs.first.get_attribute('aria-selected')=='true'
+    scroll=page.evaluate('scrollY');tabs.first.press('Space');assert page.evaluate('scrollY')==scroll
+    page.emulate_media(media='print');assert page.locator('.programme-day:visible').count()==2
+    assert page.locator('.programme-date').first.evaluate('e=>getComputedStyle(e).position')=='static'
+    page.emulate_media(media='screen');assert page.locator('.programme-day:visible').count()==1
    for img in page.locator('.media-posts,.media-events').all():
     box=img.bounding_box();assert abs(box['width']/box['height']-16/9)<.02,(width,route,box)
    for img in page.locator('.media-people').all():
@@ -61,7 +75,28 @@ with sync_playwright() as p:
  for old,new,fragment in [('hardware/sonata/','products/sonata/','typical-workflow'),('software/cheribsd/','repositories/cheribsd/','page-title'),('cheriot-1-0-specification-released/','news/cheriot-1-0-specification-released/','page-title')]:
   page.goto(URL+old+'?migration_check=kept#'+fragment);page.wait_for_url(URL+new+'?migration_check=kept#'+fragment)
   assert parse_qs(urlsplit(page.url).query)=={'migration_check':['kept']};assert page.locator('[id="'+fragment+'"]').count()==1
- # Whole programme remains native content without disclosure controls or scripting.
+ # Direct links reveal their day, including existing speaker-profile talk links.
+ programme=URL+'events/cheritech26/'
+ target='presentation-cheri-zephyr-and-compartmentalisation-of-userspace-threads-79e1a6'
+ page.goto(programme+'#'+target)
+ assert page.locator('#'+target).is_visible()
+ assert page.get_by_role('tab').last.get_attribute('aria-selected')=='true'
+ page.evaluate("location.hash='programme-day-2026-11-12'")
+ page.wait_for_function("document.querySelector('[data-programme-tab]').getAttribute('aria-selected')==='true'")
+ page.goto(programme+'#%not-escaped');assert page.locator('.programme-day:visible').count()==1
+ # Single-day events need no tabs; all multi-day content survives a failed script.
+ page.goto(URL+'events/cheri-blossoms-conference-2025/')
+ assert page.get_by_role('tab').count()==0 and page.locator('.programme-session:visible').count()==33
+ page.goto(URL+'events/cheri-blossoms-conference-2027/')
+ assert page.get_by_role('tab').count()==3
+ page.get_by_role('tab').last.click();assert page.locator('.programme-day:visible').count()==1
+ failed=browser.new_context(viewport={'width':390,'height':844})
+ failed.route('**/assets/js/programme.js',lambda route:route.abort())
+ fallback=failed.new_page();fallback.goto(programme)
+ assert fallback.locator('.programme-session:visible').count()==17
+ assert fallback.get_by_role('tab').count()==0
+ failed.close()
+ # Whole programme remains native content without scripting.
  nojs=browser.new_context(java_script_enabled=False,viewport={'width':390,'height':844});plain=nojs.new_page();plain.goto(URL+'events/cheritech26/')
  assert plain.locator('.programme-day:visible').count()==2
  assert plain.locator('.programme-session:visible').count()==17

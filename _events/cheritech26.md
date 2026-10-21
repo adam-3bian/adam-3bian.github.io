@@ -48,15 +48,19 @@ event:
       presentations:
       - id: presentation-keynote-d27f61
         title: Keynote
+        start: '13:05'
         description: 'Published presenter credit: Yona Raekow — BSI'
       - id: presentation-with-cheri-can-we-afford-to-ignore-hardware-security-af43a4
         title: With CHERI, can we afford to ignore hardware security?
+        start: '13:20'
         description: 'Published presenter credit: Joerg Bormann — Siemens'
       - id: presentation-introduction-and-state-of-cheri-3e2b92
         title: Introduction and State of CHERI
+        start: '13:40'
         description: 'Programme organisation credit: University of Cambridge'
       - id: presentation-progress-of-the-alliance-a632d7
         title: Progress of the Alliance
+        start: '14:00'
         description: 'Programme organisation credit: CHERI Alliance'
     - id: programme-2026-11-12-break-and-exhibition-3
       type: break

@@ -51,7 +51,7 @@ Professor Simon Moore, [University of Cambridge](/organisations/university-of-ca
 
 The CHERI Alliance will formally launch in September 2024 but is already accepting new member applications.
 
-Interested companies can contact the Alliance at [https://cheri-alliance.org/](https://cheri-alliance.org/)
+Interested companies can [contact the Alliance](/alliance/membership/contact/).
 
 ## Media contact
 

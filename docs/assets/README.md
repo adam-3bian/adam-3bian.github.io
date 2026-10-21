@@ -136,4 +136,7 @@ byte-identical copies and superseded primary variants were consolidated.
 only asset URLs resolved through the migration map. The parity check compares
 all page wording, links, image sources and fragment IDs against that baseline.
 The reference also includes the approved capitalisation of displayed Type
-labels; the underlying content values remain unchanged.
+labels, local replacements for legacy webpage links, removal of news byline
+affiliations, and the responsive event programmes described in
+[event-programme.md](../event-programme.md). Source credits and relationships
+remain in the content records.

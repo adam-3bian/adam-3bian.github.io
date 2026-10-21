@@ -37,6 +37,6 @@ Rather than treating CHERI as a purely academic technology or a future possibili
 
 The report is intended to help decision makers, technologists, policymakers, researchers, and industry participants understand the direction of travel and the practical considerations that will shape the next phase of CHERI adoption.
 
-[**The CHERI Adoption Global Ecosystem Assessment Q1 2026 is now available from the CHERI Alliance.**](https://cheri-alliance.org/adoption/)
+[**The CHERI Adoption Global Ecosystem Assessment Q1 2026 is now available from the CHERI Alliance.**](/adopt/)
 
 [Back to Latest News](/news-and-events/news-and-analysis/latest-news/)

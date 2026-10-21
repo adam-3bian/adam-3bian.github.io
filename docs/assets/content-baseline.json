@@ -278,8 +278,8 @@
   "adopt/index.html": {
     "ids": "cd6073a21fda74dee7ef1e245483ba01434ef0ca7602c7f37f48539888d06b57",
     "images": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-    "links": "1b1626f19707f7b68a33b798b9c59043a2020a0550b64b5ce2c70539cea7c351",
-    "text": "229a4b482c0578ee08127d56e09c01690526839bedaa48a0c4193590d0dcda90"
+    "links": "afd7deae3b9a7724fd2ca7c050d284f7ad14e9a7f5f929045d96793d93db7355",
+    "text": "b52be50321613dd1dc0275752acc8e0081d588c5a5cb8f82e054de8df4d10302"
   },
   "adopt/policy/critical-infrastructure-and-resilience/index.html": {
     "ids": "030e9f07d3a959c7616965e268b4769947b1ba67156760d42c2e1d5befcdd201",
@@ -1212,10 +1212,10 @@
     "text": "0cf30feaa57be45a3a4ca84aca35806f496353c4068ff7e1a439ae5cc1e75941"
   },
   "events/cheri-blossoms-conference-2025/index.html": {
-    "ids": "09f6057211bdfb7a94bcfb7277f611e5211752eee86d1ba51429a4632423b3dc",
+    "ids": "adbc2840bff3eadb850fffb267ce38995a473e78a21fe707117d3f6c2cc8610a",
     "images": "bc39ef68e30df0c91353fff171977376af86c8c75d54a1ef2a393e56cb579fa9",
     "links": "2e22691da89cf00d2130389ff0bf64078d0b770e09d81f9fc97780d6d843d78a",
-    "text": "2f750391fafa4348a2457ce83f32227950cc5d1c63f7c4a3fcffef5bf72982d3"
+    "text": "0bbeec3056adda44f6a9f6d70474737c11183122828053d7af9502cf89e6d293"
   },
   "events/cheri-blossoms-conference-2026-intro-to-cheri-and-cheriot/index.html": {
     "ids": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
@@ -1224,16 +1224,16 @@
     "text": "0cf30feaa57be45a3a4ca84aca35806f496353c4068ff7e1a439ae5cc1e75941"
   },
   "events/cheri-blossoms-conference-2026/index.html": {
-    "ids": "a3ed28b41d6101bfe9afb5f464794a5cae72dcc9b5b2151f06c5f9c7f91ebd65",
+    "ids": "7fd0959b85048dcc91897301dc7a5da87691a26caa81c19a9062f30e922ca347",
     "images": "abb063db44f16239b926866117be9f29e40d065f126e28f9914f19c827756e63",
-    "links": "4d1146f491c0e5074970ecabf80024063b6b7cfc8ef93c55341ea7df4a695d6e",
-    "text": "24c8bad02aae9ed1ef9944294ebe331483262e04a26c29046954af3e6d7c436c"
+    "links": "a65deab63b7b8129238f69eae3956890955a6f71bb305594014b5ffd0417f8c8",
+    "text": "1fa02d750f091a46b16b64a439bc0565c24cdd12fbffd72f453393497278e143"
   },
   "events/cheri-blossoms-conference-2027/index.html": {
-    "ids": "320d3a67200bb54794a3a1214220153f9dc8a98a7d33321f0f27ea617b2a82b0",
+    "ids": "3e53067045654aede4f26ddacfa46c2035c3ea3b496d9585a76444db4b45a700",
     "images": "daf3b70e589c6e55b07e972587fd9a1524b688b1f78c9fdd2f2b09a4a8944b28",
-    "links": "c78034db425eb3145e47b0afefedeb9e5781accbf8afc2c7308554870c6d6f36",
-    "text": "188a836baed18723ff6432b79997ca2a7c3862aba2ccc5501ad1d80c15b74fae"
+    "links": "cd8906b026d1a9cd0dae66008935b8f3448f6213673fefeb5bec413ec5eee8f4",
+    "text": "351d869a2902141f571be304db61a3ac984cf89bb2cc8b4a6a1aa3c6d3d29427"
   },
   "events/cheri-blossoms-tutorial-2026/index.html": {
     "ids": "e738418e069ee2d8e120826f56f59290a8df2f64edc19e4cd5d4931fd2c26136",
@@ -1248,28 +1248,28 @@
     "text": "0cf30feaa57be45a3a4ca84aca35806f496353c4068ff7e1a439ae5cc1e75941"
   },
   "events/cheritech25-reloaded/index.html": {
-    "ids": "b7e21d2ace7e2a0709a70eaa6ffa0a952b1caa7af929b0c7f092517d38748ed6",
+    "ids": "61482c4575187f548158e456aaf873dd389aee6d8376c279f92e8d3a8eaabd33",
     "images": "ff88bfa05358776fd00343f2bffe5b33abc2f6422a0299434681aa591d00a75b",
     "links": "e591e209c2b6c4991affff3e7b71cafd48805723ec5686f7bd9ed777d3742eed",
-    "text": "a0b5f086909f214a0314ec85d3b10e9efc0c7b1a8a5b3f38c430f622689b31a6"
+    "text": "75884926cb93271766f14e70e0dee33943a437337387ca1dda3ae4207b9f56fa"
   },
   "events/cheritech25/index.html": {
-    "ids": "d07afd413736796a7523eafa9b05a09c11b230505fd78a945187dd22c09186a4",
+    "ids": "a6f570fa3368a4932b6550c2a3f9588cf8da5bc4334285b0f6b5f175f44f9c57",
     "images": "c9b29ad872afc6e2f983f19421f759de858ad58aae0cb934791d6225b8732d5e",
     "links": "fea084e41f6c1e5c70ae0d54ab81967151756fc06829611c7af0ad4845a79d14",
-    "text": "7f9feaedd3c3a637699d1454909e0e7822ed4581d281bbf3a28766ce8541f178"
+    "text": "c2415319c77213aeb7a08340ca393061fc6ff837fc1bd8134c9c0b5c37f92039"
   },
   "events/cheritech26/index.html": {
-    "ids": "5deb488319bd082f51e6576f1af7cc02caae474442c9edd7f60b1d4aa4a3ebfe",
+    "ids": "d970340ea0eccbb7b1fb9273f0fe2480f4ad20cb4a710e9d9098186083c1bbc7",
     "images": "7aac029f7d0c211908c380cbf91bbc941a1cfaab3ab99fe67be9ef4f0f932010",
-    "links": "ecd67927f958fd7b9c2937fa1ea572180fe24d4d44f04d2a9a087abe092207d4",
-    "text": "48137d03525cfd616126b8a3dc6d6673de2ac171983d135d1cd475b0d7f91958"
+    "links": "5fee643479e919f5a1426e061b820451b5c3be5459b2784ba7e31f12367f7423",
+    "text": "f3c4ec91f3cec81ea3093b3d4542dba4889325778b3a722ac812d506b850360f"
   },
   "events/cybersecurity-by-design-conference-2024/index.html": {
-    "ids": "18e48d50c23800c8e7e0ebe50c94a9a290ce217cf5c60a72729d7d47902225fe",
+    "ids": "80698913add3a4fc13c874bea6544206b7895ef6819924d3cf6c42238638a680",
     "images": "86e8daafe0cee16090aed78ed50d4b0d306899bfac7a9f0eb6b361d4b153b3c8",
     "links": "fba547604506634f5b58ebc4f19406ab305af6d55570ddf8d42f6ae76cb4d78a",
-    "text": "96b8602709eb0b54113f88ab89c3f6f0e503ae53c3e3b94c29c7bec2b2145e96"
+    "text": "fc7b254b283ff77755c219aa9fa6010305334073139faf2c4738624be4766387"
   },
   "events/embedded-world-2026/index.html": {
     "ids": "226f995bd562b65f7564899a1beeff0ccf1766be158456af54882e34c3aa5e34",
@@ -2373,19 +2373,19 @@
     "ids": "826a6d01ebf4d59ce6edb67761a9c60dafa6bae0f7883fbecf318a95c1a4b05d",
     "images": "cba1649cab84e2ba74986d9cfc2f8593eb0b7af8044b8f18dd50470d398fcd01",
     "links": "d9a41b01dca0ee0e15766e0638edabb35cdd65eda9f4a35c4c1ebe3e8e9f9ae9",
-    "text": "88056e88fe68781fb1307eba8e029f9171b14a009324345b4b48f668a7b388bc"
+    "text": "404995356826e228b7e98475b7faf3434de628ec517613d9f87857e46a0df77c"
   },
   "news/ai-doesnt-need-a-kill-switch-it-needs-boundaries/index.html": {
     "ids": "df486a5c3d9fd9833956ed81a333cb011b56c09d3631827cc8962892c61d7bad",
     "images": "ac0c94878a511c8c052ecff428293508b489d820cc9334386686459a948bc553",
     "links": "4dd6ce4d274106a0d82b95a16d52dc21496ac55149a081e82aba798367ef276f",
-    "text": "cc5650ba6ef166bff9876583a7d5532edbbf89fc453f9f3ebd5905342f1265f6"
+    "text": "c7cf6dbdad45f9371fb4547c8b3d524192f8f4c61ebd58c5c09c777c73505d30"
   },
   "news/ai-has-compressed-the-attack-timeline/index.html": {
     "ids": "01d475217f29426234d7d358a8a429499346b1c84160da073371dd0f7f5dd6e3",
     "images": "496b59b7412b8350de46dfc28a519ec51d87ca0237b0999fbb4e344f2e196213",
     "links": "e358c48748b19cf1e8287efc4eb06e4ef5bb41c60687c23e1b69fd9ff4c9a8b2",
-    "text": "199bd14d5124cde6b125a21f659fbcbb55ae4997c565a57d7cef1a3c0420500b"
+    "text": "160b21426c9128ad650778ee5aaaec22d42dacb70bc9359b308a34cb74c2d7b7"
   },
   "news/amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon/index.html": {
     "ids": "2c2f6dcbe9042d7db4e267e69f15d0e98efdc180bea480052ee7054b3928320e",
@@ -2397,19 +2397,19 @@
     "ids": "8bfd20b0b7ff73699d7db6e01a62d52bad99b3462a8d515c84ebc2c6aa058d2a",
     "images": "ad5eeb2da41cb374c6c3e38370fea3a907b270402e7be496a19651ba2e370f7a",
     "links": "af1e5a1439c6673ea8caaa48701813334305f7e87605172ba5c732496d28a84e",
-    "text": "9918c222fbe377f5520f584e202335d003bb248a2d869004d7a12bacfcb962d2"
+    "text": "12dd957db33c2e01cd56eaebe8ca0a4dc28f311475e6e3d53ebe0fb18366083d"
   },
   "news/beyond-software-patching/index.html": {
     "ids": "0cba90452bbc2379bdbb0f1e5bb0c6630c440160c3960bc27f8cc91479ce5c1a",
     "images": "cab3b6f90beb5508c79e70be9eb4302b269c772fd81fbf2e99d62bf60b4108e3",
     "links": "eeef15571564cec4443a367b7add533508d6dbe77c94972774f6188b978d9850",
-    "text": "79113897d938791cf1c69e1ad218d5a708b709fe89d76e83ab4366c064426958"
+    "text": "68291d4f94ad682e0d9dd8cb2be9824a7319c4d3516e026331b3054f9092fad6"
   },
   "news/bt-group-joins-the-cheri-alliance-to-advance-cybersecurity-innovation/index.html": {
     "ids": "f3d26868ca10c3e03e3506e408e617f05b27d480773a11fb6f8a991dcdd54739",
     "images": "14235fdaf7443a23b4934d784e1b06a655a666f5683c510bbcdf0fba57e9c4d2",
-    "links": "4a86698b2252fc856361c8a9541a10bbea7691c022e91ea1964fdd9a628811eb",
-    "text": "7e7c995f27e4dbf91da29e4d6333b0e28e9f519a8beb7ba35aee16718610c93a"
+    "links": "c38ece5bb3ece083c4a69333927abb5025ecc9470702423fd6d1ed0c84cb11d1",
+    "text": "6fdacb833c11bfd599a906748ec6f4ecb2398fea4948332310dda17e57149da1"
   },
   "news/building-a-safer-digital-future/index.html": {
     "ids": "a1d817d445ce547856c91c1a78179c63258a223a582e8f9cd2b8939abdc777c2",
@@ -2420,14 +2420,14 @@
   "news/cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level/index.html": {
     "ids": "7a6001fa0a64e04aef128af41d53870cd7a8e55badbc9dba2cbb4a5a5c30087c",
     "images": "183ec8487872c9400d6aec0af07dbc22a794d967aecd08b3cb57f70ff7f2e66d",
-    "links": "01f59356f16e18bd6a9c88cee095cf2dc45531373b092a6ed25ad45da0720427",
-    "text": "5206cf67867ccdc3640d2c4f71d969f8585a1fd7c8151474aa66e9529c7b576b"
+    "links": "7694433a3fa32cea5571368e53062b57f45c37cb5596a7149e45e7a566aa60a4",
+    "text": "65fccf093b69249d71b5e8206d30db630e35b4defc2bf07dce67f655d78b5d2d"
   },
   "news/cheri-alliance-to-distribute-arm-morello-boards-the-journey-beyond-dsbd-continues/index.html": {
     "ids": "095d19119134236b9e4174b98455e8128a86891402c1785cef9ea500761af992",
     "images": "50107ebe9b33f851240010be2da29418d8af94a96638896d12af75f869a43a8c",
     "links": "ce6f6a889cc79c70dc96116fdf62c9d9a17fc047b29635411c6ca38552368196",
-    "text": "2b6bf8e5562b5ddc9e7e4a2e044fd5e41b596248db053b4a411d106db6a8b2f4"
+    "text": "4735b56fcfbe018198613520234cd6b611250741ed27104b036459ae4c04a050"
   },
   "news/cheri-memory-safety-mitigates-llm-discovered-vulnerability-in-freebsd/index.html": {
     "ids": "095d19119134236b9e4174b98455e8128a86891402c1785cef9ea500761af992",
@@ -2439,13 +2439,13 @@
     "ids": "095d19119134236b9e4174b98455e8128a86891402c1785cef9ea500761af992",
     "images": "f0efa091a4ecf1a5e4d64ac06ddd9ade05b3bd1e2509ff6621ce7c6bf45c5dc9",
     "links": "5943a95ddc16850a1db745241be8012ed6859e553e0e51e6605f949e7d402dcc",
-    "text": "910f31d02c945440fe239912d1ede59d0d1a47487b1693b8e09f9dbda8fbab93"
+    "text": "feaa64c8c5721cfc3f3b86d3970b1fefaee3eafb7c5885b9986c03dbc081cb9f"
   },
   "news/cheri-sel4-and-cheri-microkit-released/index.html": {
     "ids": "4ad4d1159f9ce3f7261080f86fd1955df564bbe3c1727a902d5feac0241e93b4",
     "images": "fac57dfbf40527f140513f1cf258e8cabc48b782ef688ad3375333aace695538",
     "links": "93708ca3c7952b2194e156dedd6338e08ad0573b0b0862ad2aa321f54d26a562",
-    "text": "e5dc732e13c63e3d83d9203d8d658fb3d6f16938faab37275acdac4e03621d65"
+    "text": "14656eca61947c906c2f0e5ed65a345c8f1fe39f242288a629a8024b70d7c022"
   },
   "news/cheri-tag-bit-transport-overlay-standard-version-0-9-released/index.html": {
     "ids": "095d19119134236b9e4174b98455e8128a86891402c1785cef9ea500761af992",
@@ -2462,8 +2462,8 @@
   "news/cheriot-1-0-specification-released/index.html": {
     "ids": "095d19119134236b9e4174b98455e8128a86891402c1785cef9ea500761af992",
     "images": "f0efa091a4ecf1a5e4d64ac06ddd9ade05b3bd1e2509ff6621ce7c6bf45c5dc9",
-    "links": "120443368fecddb1bbabe96678627e26d24c96a95da115e5fc08229b4b106099",
-    "text": "8772e0dd0968b45885f2f331ff866706cc1a7ec85a64d23711b739831a60e59b"
+    "links": "10b5dbc853e03cb153bf78dba18ac6616cb969f5106d8699bee1ed75dd5386a5",
+    "text": "011d014fd1a3d5c2b4c29b85f2901354bac99bc19a9a55d9ea9ea96f69a1d883"
   },
   "news/cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus/index.html": {
     "ids": "372bce4b6607c81f9ed7a5079b1bf2278f92f43b98a8e0d12c678b7f0edf6fb4",
@@ -2516,8 +2516,8 @@
   "news/initial-members-join-cheri-alliance-to-drive-adoption-of-memory-safety-and-scalable-software-compartmentalization/index.html": {
     "ids": "f67796a7094353206519d30802a9a39120b1e6cb140834418acb713443bf0421",
     "images": "183ec8487872c9400d6aec0af07dbc22a794d967aecd08b3cb57f70ff7f2e66d",
-    "links": "8110ba219990b411efff6c1acbbb9823405de06f599a9206984665285bd0c758",
-    "text": "d2010c6da7b845da6c0e0ca8d48021683cd38daefeaea01029a050aff26423b0"
+    "links": "b631a56b0d7107187d92ce97e28ed02f13434976482f3733db3de30599ce0101",
+    "text": "16d0b09a16b55288a7c8c693dc989bca9371979dd4750dabfd499cc45bbe6faa"
   },
   "news/innovate-uk-project-winner-university-of-birmingham/index.html": {
     "ids": "095d19119134236b9e4174b98455e8128a86891402c1785cef9ea500761af992",
@@ -2528,14 +2528,14 @@
   "news/introducing-the-cheri-adoption-global-ecosystem-assessment-q1-2026/index.html": {
     "ids": "095d19119134236b9e4174b98455e8128a86891402c1785cef9ea500761af992",
     "images": "56c64d710f038e93d85ba7ebfc645bba8f937193661b1c55c9c940ef1884a88b",
-    "links": "ff9617789dfc337699b2ac8c79d3abffbb3f4b7c909a47f46011b527f9ce1b8b",
-    "text": "b5dd91dc2aa830fbd95ea4e511f0e1b6abe61a8317a3ac3ad0d96e8e07479cf4"
+    "links": "4b8a38ebb024a968f1c745513c4cc43de95d0cd33e4a7e03c6e898a53a514972",
+    "text": "5522444bc5d748904d84c4e1c647f3c306c6f743f7b75033979200f560f4ebe8"
   },
   "news/iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences/index.html": {
     "ids": "095d19119134236b9e4174b98455e8128a86891402c1785cef9ea500761af992",
     "images": "f0efa091a4ecf1a5e4d64ac06ddd9ade05b3bd1e2509ff6621ce7c6bf45c5dc9",
-    "links": "be5b4442b137a06e47a1f8f93fba0c96b23aa865de335f2d8a69527f0033aaa5",
-    "text": "821100f0b046c68613013501c3724196788c649528ec53d87d33dfc771c93304"
+    "links": "72a40d5d71271412c5d2221545461d705a21f65e48c176f7a14999dc777375ba",
+    "text": "8d1ac5d8d98bc75b66e81b9795d3c27bed344c449826b3df664ab8452499b8a4"
   },
   "news/lowrisc-and-partners-to-deliver-commercial-quality-open-source-cheri-secure-enclave-with-innovateuk-support/index.html": {
     "ids": "372bce4b6607c81f9ed7a5079b1bf2278f92f43b98a8e0d12c678b7f0edf6fb4",
@@ -2559,7 +2559,7 @@
     "ids": "095d19119134236b9e4174b98455e8128a86891402c1785cef9ea500761af992",
     "images": "2d5b0550ce746f9e61b85dedc58e21ae263adfae6c34f5447604717f842b0af2",
     "links": "6682ff1186c11edbbcb1bd1775eef466a0f87c9aff7d62d59ae6ad4a3afc7627",
-    "text": "6261e07b6bbb9068b76b9d51476d74d3ea6fd78346116a79484abc6f416e3069"
+    "text": "50f2331cf9d82d5fa1b6aa3ffaef52ba0dd2ff5169e2a8a9c0a80cca97c445b0"
   },
   "news/press/index.html": {
     "ids": "fc2c48211980778189e1f221f0babb3f4740c6f269efa46f0b71eaf035ebd6e1",
@@ -2601,7 +2601,7 @@
     "ids": "8544fcebbb7d9c2073be33e97837da0fd5ecb80d53a3913d509fdedf603a2234",
     "images": "ad5eeb2da41cb374c6c3e38370fea3a907b270402e7be496a19651ba2e370f7a",
     "links": "5ba30faa32fd93b716cf29872316e8fc6efb542cdb8ed6e3ea57cd64b99c7b03",
-    "text": "b62f676edcb2e1cba07833abc154924ccabee833a64e1b39b2080f09a79c7fa3"
+    "text": "b9f98a165c06170fe38f23c14ced3bc8e924f588d3b2dfb0fe39299e2bceda51"
   },
   "news/the-capable-hub-joins-the-cheri-alliance-to-accelerate-cybersecurity-collaboration/index.html": {
     "ids": "63e016e67b7aa3e489edffa23735e13c8cfdef0d74c0ff2ff7c912d1efb3c9f6",
@@ -2619,7 +2619,7 @@
     "ids": "095d19119134236b9e4174b98455e8128a86891402c1785cef9ea500761af992",
     "images": "ac0c94878a511c8c052ecff428293508b489d820cc9334386686459a948bc553",
     "links": "b58a9efb73a4cdbc8777412ac1d79714726d4c134828c1a16ca873d21d06e43b",
-    "text": "4d356f75354fc1044accc576bd4bbf8115e27aa769ad0d1d9ccd0f1779964d36"
+    "text": "a384a31e900da441fdf2bdad0b552e49d2fcfe76ee8d13ecf5e93e7053e6235e"
   },
   "news/the-white-house-promotes-cheri-as-a-solution-for-memory-safety/index.html": {
     "ids": "372bce4b6607c81f9ed7a5079b1bf2278f92f43b98a8e0d12c678b7f0edf6fb4",
@@ -2643,7 +2643,7 @@
     "ids": "a841e662ca81609983065f991f2d6cde031546a25f72d6d435dd79593f7009d8",
     "images": "bba2218059a068b041cf3bd7bd24e2c538eedaad537a27014e525be1cecb4c7d",
     "links": "3e0615838a70809d573fd2ba2f975517a870605f4721fff8affe416fc9a6e79b",
-    "text": "572fac74a7837eccedbea0ecae288ad2e0f58ff86c2b30d22c36da85a5d49829"
+    "text": "fa4a65b4c86c0c418c1fe3a1cabc99bbbe66bc95b9e1987dd51b00ebd73b4171"
   },
   "news/why-codasip-went-all-in-on-cheri/index.html": {
     "ids": "a0be524ecb13612a8ef0c7c494f29d07fc00e2146146b74a29be79061f052aa0",
@@ -2828,7 +2828,7 @@
   "organisations/hildebrand/index.html": {
     "ids": "303a82a00e15a558f31c4794bf497d0dd77ba8a13e69a0bc4ded916dd3309ff6",
     "images": "473b748c75dd3da28c8a81b96c4f767a450c1d499975498b24887dcdb6833516",
-    "links": "43c36361d60e323dc4a5ce8585b5fbecee5f76ec2a76bcb45694ee2a44b25f29",
+    "links": "9d3f7ae26320449ebe116ed8d159d72b2edbc7de3e99c442d59c44c03d621369",
     "text": "cd9980b578c188838b453d3a26d1daedb93047df8847821ca8ae2f99c087477b"
   },
   "organisations/index.html": {

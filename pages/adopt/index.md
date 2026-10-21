@@ -17,6 +17,10 @@ landing:
     - Make the business case
     - Plan adoption
   navigation: category
+resources:
+- type: publication
+  label: Request the CHERI Adoption Global Ecosystem Assessment Q1 2026
+  url: https://forms.office.com/e/4fv7DLWRrJ
 ---
 
 ## Make the business case

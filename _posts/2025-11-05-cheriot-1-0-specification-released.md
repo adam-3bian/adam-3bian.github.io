@@ -36,6 +36,6 @@ The CHERIoT 1.0 line will be supported for years through the open source CHERIoT
 
 You can read David’s full announcement here: [https://cheriot.org/sail/specification/release/2025/11/03/cheriot-1.0.html](https://cheriot.org/sail/specification/release/2025/11/03/cheriot-1.0.html)
 
-For more information on CHERI and capability-based security, visit [cheri-alliance.org](http://cheri-alliance.org), or find us on [LinkedIn](https://www.linkedin.com/company/cheri-alliance/) or [Mastodon](https://infosec.exchange/@cheri_alliance).
+For more information on CHERI and capability-based security, visit [the CHERI Alliance](/), or find us on [LinkedIn](https://www.linkedin.com/company/cheri-alliance/) or [Mastodon](https://infosec.exchange/@cheri_alliance).
 
 [Back to Latest News](/news-and-events/news-and-analysis/latest-news/)

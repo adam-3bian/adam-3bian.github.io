@@ -1,7 +1,7 @@
 ---
 layout: detail
 title: Hildebrand
-summary: '[All Members](https://cheri-alliance.org/member/)'
+summary: '[All Members](/alliance/leadership/members/)'
 permalink: /organisations/hildebrand/
 slug: hildebrand
 navigation:
@@ -22,7 +22,7 @@ organisation:
 
 ## Overview
 
-- Membership: [Full Member](https://cheri-alliance.org/member-type/full-member/)
+- Membership: [Full Member](/alliance/membership/membership-benefits-and-options/#full-membership)
 
 ## Description
 

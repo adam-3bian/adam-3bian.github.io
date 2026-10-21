@@ -41,6 +41,6 @@ Sessions throughout the event addressed hardware trust anchors, supply-chain sec
 
 The event was co-hosted by IoTSF and [TechWorks](/organisations/techworks/) at the IET in London, with support from speakers, exhibitors and contributors across the IoT and cybersecurity community.
 
-For more information on CHERI and capability-based security, visit [cheri-alliance.org](http://cheri-alliance.org), or find us on [LinkedIn](https://www.linkedin.com/company/cheri-alliance/) or [Mastodon](https://infosec.exchange/@cheri_alliance).
+For more information on CHERI and capability-based security, visit [the CHERI Alliance](/), or find us on [LinkedIn](https://www.linkedin.com/company/cheri-alliance/) or [Mastodon](https://infosec.exchange/@cheri_alliance).
 
 [Back to Latest News](/news-and-events/news-and-analysis/latest-news/)

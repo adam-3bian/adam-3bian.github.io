@@ -45,7 +45,7 @@ The CHERI Alliance is a non-profit, community interest company that fosters coll
 
 For more information, please visit:
 
-- CHERI Alliance: [www.cheri-alliance.org](http://www.cheri-alliance.org/)
+- [CHERI Alliance](/)
 
 ## About BT Group
 

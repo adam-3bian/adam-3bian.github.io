@@ -121,6 +121,6 @@ We welcome contributions, questions and feedback. If you run into issues, have f
 - CHERI-seL4 Exercises and Tutorials: [https://cheri-alliance.github.io/CHERI-seL4-Exercises](https://cheri-alliance.github.io/CHERI-seL4-Exercises/)
 - CHERI-seL4 RFC: [https://github.com/seL4/rfcs/pull/21](https://github.com/seL4/rfcs/pull/21)
 - seL4 upstream PRs: [https://github.com/seL4/seL4/pull/1469](https://github.com/seL4/seL4/pull/1469)
-- CHERI-seL4 Working Group: [https://cheri-alliance.org/who-we-are/working-groups/cheri-sel4/](/groups/cheri-for-sel4/)
+- [CHERI-seL4 Working Group](/groups/cheri-for-sel4/)
 
 [Back to Latest News](/news-and-events/news-and-analysis/latest-news/)
