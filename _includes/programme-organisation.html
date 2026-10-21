@@ -1,0 +1,15 @@
+{%- assign organisation_label = include.label | strip -%}
+{%- assign organisation_key = organisation_label | slugify -%}
+{%- assign organisation_slug = site.data.organisation_names[organisation_key] | default: organisation_key -%}
+{%- assign programme_org = site.organisations | where: 'slug', organisation_slug | first -%}
+{%- unless programme_org -%}
+  {%- assign programme_org = site.organisations | where: 'title', organisation_label | first -%}
+{%- endunless -%}
+{%- if programme_org -%}<a href="{{ programme_org.url | relative_url }}">{{ organisation_label | escape }}</a>
+{%- elsif organisation_label contains ' / ' -%}
+  {%- assign organisation_parts = organisation_label | split: ' / ' -%}
+  {%- for organisation_part in organisation_parts -%}{% unless forloop.first %} / {% endunless %}{% include programme-organisation.html label=organisation_part %}{%- endfor -%}
+{%- elsif organisation_label contains ', ' -%}
+  {%- assign organisation_parts = organisation_label | split: ', ' -%}
+  {%- for organisation_part in organisation_parts -%}{% unless forloop.first %}, {% endunless %}{% include programme-organisation.html label=organisation_part %}{%- endfor -%}
+{%- else -%}{{ organisation_label | escape }}{%- endif -%}

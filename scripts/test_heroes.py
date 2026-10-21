@@ -35,7 +35,7 @@ GEOMETRY = '''e=>{
     background:s.backgroundColor,padding:s.padding,radius:s.borderRadius,type:getComputedStyle(title).fontSize,
     clipped:getComputedStyle(title).overflow==='hidden'||getComputedStyle(title).textOverflow==='ellipsis'};
 }'''
-STATE = '''e=>{const s=getComputedStyle(e);return {background:s.backgroundColor,color:s.color,shadow:s.boxShadow,decoration:s.textDecorationLine};}'''
+STATE = '''e=>{const s=getComputedStyle(e);return {background:s.backgroundColor,color:s.color,shadow:s.boxShadow,decoration:s.textDecorationLine,border:s.borderTop};}'''
 results = []
 
 with sync_playwright() as p:
@@ -121,6 +121,8 @@ with sync_playwright() as p:
         node = page.locator(selector).first
         page.mouse.move(0, 0)
         normal = node.evaluate(STATE)
+        if node.evaluate('e=>e.matches(".button")'):
+            assert normal['border'] == '1px solid rgb(18, 87, 112)', (route, selector, 'Buttons need a clear contrasting edge', normal)
         track = page.locator('.slider-track') if selector == 'a.slide-link' else None
         track_normal = track.evaluate(STATE) if track else None
         node.hover()

@@ -103,7 +103,7 @@ with sync_playwright() as p:
             for heading in page.locator('.site-footer .menu-group-title').all():
                 assert heading.evaluate('e=>getComputedStyle(e).color')=='rgb(255, 255, 255)'
                 geometry=heading.evaluate("e=>{const a=e.parentElement.querySelector('a'),r=a.getBoundingClientRect();return {title:e.getBoundingClientRect().left,text:r.left+parseFloat(getComputedStyle(a).paddingLeft),linkWidth:r.width,columnWidth:a.closest('li').getBoundingClientRect().width}}")
-                assert abs(geometry['title']-geometry['text'])<1 and geometry['linkWidth']<geometry['columnWidth'],(width,route,'Footer alignment and hover width',geometry)
+                assert abs(geometry['title']-geometry['text'])<1 and abs(geometry['linkWidth']-geometry['columnWidth'])<1,(width,route,'Footer alignment and full menu-row highlight',geometry)
             if route=='policies/competition-law-statement/':
                 assert page.locator('.page-heading .eyebrow').count()==0
                 assert page.locator('.page-heading').inner_text().splitlines()[0]=='Competition Law Statement'

@@ -1,0 +1,377 @@
+{
+  "root": {
+    "views": [
+      {
+        "width": 320,
+        "route": "",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 320,
+        "route": "news-and-events/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 320,
+        "route": "alliance/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 320,
+        "route": "adopt/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 320,
+        "route": "build/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 320,
+        "route": "discover/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 390,
+        "route": "",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 390,
+        "route": "news-and-events/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 390,
+        "route": "alliance/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 390,
+        "route": "adopt/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 390,
+        "route": "build/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 390,
+        "route": "discover/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 768,
+        "route": "",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 768,
+        "route": "news-and-events/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 768,
+        "route": "alliance/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 768,
+        "route": "adopt/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 768,
+        "route": "build/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 768,
+        "route": "discover/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1024,
+        "route": "",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1024,
+        "route": "news-and-events/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1024,
+        "route": "alliance/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1024,
+        "route": "adopt/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1024,
+        "route": "build/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1024,
+        "route": "discover/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1440,
+        "route": "",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1440,
+        "route": "news-and-events/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1440,
+        "route": "alliance/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1440,
+        "route": "adopt/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1440,
+        "route": "build/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1440,
+        "route": "discover/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1920,
+        "route": "",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1920,
+        "route": "news-and-events/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1920,
+        "route": "alliance/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1920,
+        "route": "adopt/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1920,
+        "route": "build/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1920,
+        "route": "discover/",
+        "menu_rows": "passed"
+      }
+    ],
+    "accessibility_audits": 2,
+    "enlarged_text": "passed",
+    "javascript_errors": []
+  },
+  "preview": {
+    "views": [
+      {
+        "width": 320,
+        "route": "",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 320,
+        "route": "news-and-events/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 320,
+        "route": "alliance/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 320,
+        "route": "adopt/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 320,
+        "route": "build/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 320,
+        "route": "discover/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 390,
+        "route": "",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 390,
+        "route": "news-and-events/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 390,
+        "route": "alliance/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 390,
+        "route": "adopt/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 390,
+        "route": "build/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 390,
+        "route": "discover/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 768,
+        "route": "",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 768,
+        "route": "news-and-events/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 768,
+        "route": "alliance/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 768,
+        "route": "adopt/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 768,
+        "route": "build/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 768,
+        "route": "discover/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1024,
+        "route": "",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1024,
+        "route": "news-and-events/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1024,
+        "route": "alliance/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1024,
+        "route": "adopt/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1024,
+        "route": "build/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1024,
+        "route": "discover/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1440,
+        "route": "",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1440,
+        "route": "news-and-events/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1440,
+        "route": "alliance/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1440,
+        "route": "adopt/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1440,
+        "route": "build/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1440,
+        "route": "discover/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1920,
+        "route": "",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1920,
+        "route": "news-and-events/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1920,
+        "route": "alliance/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1920,
+        "route": "adopt/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1920,
+        "route": "build/",
+        "menu_rows": "passed"
+      },
+      {
+        "width": 1920,
+        "route": "discover/",
+        "menu_rows": "passed"
+      }
+    ],
+    "accessibility_audits": 2,
+    "enlarged_text": "passed",
+    "javascript_errors": []
+  },
+  "browser": "Chromium"
+}

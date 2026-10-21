@@ -27,6 +27,10 @@ event:
 - Use `person: <people-filename-without-extension>` to link a speaker's profile.
   For guests without a profile, use `name: Full Name`. Either can have a plain
   `affiliation`. A shared affiliation may instead sit alongside the talk title.
+  Existing organisation names link to their detail pages automatically, including
+  names separated by ` / ` or `, `. Original wording remains unchanged. Known
+  alternate spellings live in `_data/organisation_names.yml`; names without an
+  organisation record remain plain text.
 - List multiple speakers under the same talk. Repeat a person under each talk
   they give. The event roster, profile Events list and profile talk cards are
   derived from these entries; do not maintain another speaker list elsewhere.
@@ -37,6 +41,18 @@ event:
   and `url`, exactly like event-wide resources. Nesting determines which talk
   owns the slides, video or other media. Event-wide resources remain at the top
   level. Never add `session`, `session_id` or `presentation_id` references.
+  Slides/PDFs and videos appear as buttons beside presentations on desktop,
+  and below the presentation on smaller screens. Only supplied resources appear:
+
+  ```yaml
+  resources:
+  - type: slides
+    label: View slides
+    url: /assets/pdf/events/example-event/talk.pdf
+  - type: video
+    label: View video
+    url: https://www.youtube.com/watch?v=example
+  ```
 - Each day needs a quoted ISO date. Sessions and presentations follow YAML
   order. Use quoted `start` / `end` values (`HH:MM`) only when known.
   An explicit presentation start always wins. If the first presentation has no
@@ -62,8 +78,10 @@ day. Controls wrap and titles expand on small screens. Two, three, four and
 longer programmes use the same schema and controls, with no day-count limit.
 
 The programme spans the full content canvas below the overview and facts.
-Each day owns one continuous timeline rail. Session headings use blue bands;
-breaks and networking use green bands. Speaker names, profile links, affiliations,
+Each day owns one continuous timeline rail, ending at its first and last dots
+and remaining visible through green break and networking bands. The decorative
+rail follows actual marker positions after resizing, text wrapping and changing
+days. Session headings use blue bands. Speaker names, profile links, affiliations,
 descriptions and downloads stay beside their session or presentation. Event
 pages do not repeat these speakers in a separate card list. Event-wide credits
 not attached to a programme entry remain compact facts in the aside; person
@@ -101,8 +119,18 @@ are synthetic test fixtures demonstrating labels and responsive tab wrapping.
 | Desktop | [Timeline](screenshots/event-timeline/desktop-cheritech26.png) | [Four days](screenshots/event-timeline/desktop-four-days.png) |
 | Mobile | [Timeline](screenshots/event-timeline/mobile-cheritech26.png) | [Four days](screenshots/event-timeline/mobile-four-days.png) |
 
+Existing slides and video controls: [desktop](screenshots/event-timeline/desktop-cheritech25-resources.png)
+and [mobile](screenshots/event-timeline/mobile-cheritech25-resources.png), using
+the unchanged CHERITech'25 record. CHERITech'26 has no talk resource URLs yet.
+BSI has no organisation record, so its affiliation remains plain text.
+
 [Verification results](screenshots/event-timeline/verification.json) cover
-both root and `/preview` deployments. The rendered-content comparison permits
-only the requested speaker-list removal, retained aside credits and first-talk
-start times taken from their sessions; other content, links and anchors remain
-protected.
+both root and `/preview` deployments. The latest rendered-content comparison
+permits only collection-list breadcrumbs and links from existing programme
+affiliations to organisation details. Editorial text, existing media links,
+images, routes and anchors remain protected.
+
+Collection breadcrumb destinations live in `_data/breadcrumbs.yml`. Active
+members return to Members; other organisations return to Organisations, and
+publications return to their academic or report list. Collection records need
+no extra front matter for navigation.

@@ -77,11 +77,23 @@ Image-bearing directories retain neutral placeholders for absent or failed media
 
 ## Actions and promotional components
 
-`action.html` supplies native navigation/download anchors with shared URL and baseurl handling. `resource-action.html` delegates to it. Operations remain buttons. Actions share Poppins at .9375rem/1.4, weight 500, 48px minimum height, 10px radius, 12px icon spacing and an 18px icon. Actions use a white fill with logo-blue text and shallow elevation in both palettes.
+`action.html` supplies native navigation/download anchors with shared URL and baseurl handling. `resource-action.html` delegates to it. Operations remain buttons. Actions share Poppins at .9375rem/1.4, weight 500, 48px minimum height, 10px radius, 12px icon spacing and an 18px icon. Actions use a white fill, logo-blue text and a visible 1px logo-blue border with shallow elevation in both palettes.
 
 Resource actions fit their labels instead of becoming unrelated full-width bars. Long labels wrap. The source primary resource remains prominent. Prose links remain recognisable as links.
 
 All standard buttons use white with logo-blue text in both palettes; hover and keyboard focus invert those colours. Disabled buttons retain their disabled state. Plain links on light surfaces turn red on hover/focus, while dark-surface links retain a light colour. Footer links retain their filled hover treatment without a mouse-hover underline, and keep a keyboard-focus indicator.
+
+Category-index and footer navigation share the mega-menu's full-width rows,
+regular-weight 15px type, 44px minimum height and 10px corners. Index links have
+no card surface or shadow and use the mega-menu's pale hover/focus fill. Footer
+rows keep their dark palette, using the existing dark teal highlight. All three
+use a visible keyboard focus ring. Section headings and link destinations stay
+unchanged.
+
+Reviewed navigation states: [desktop index](screenshots/navigation-menus/desktop-index-hover.png),
+[mobile index](screenshots/navigation-menus/mobile-index-hover.png),
+[desktop footer](screenshots/navigation-menus/desktop-footer-hover.png) and
+[mobile footer](screenshots/navigation-menus/mobile-footer-hover.png).
 
 `promotional-panel.html` is passive with a standard section heading and one real primary subscription link. `subscribe.html` and the legacy newsletter include share it. The wording remains “Stay connected with CHERI” and “Get the newsletter”, with any existing supporting sentence preserved. There is no whole-banner link or simulated second button.
 

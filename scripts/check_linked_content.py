@@ -17,7 +17,7 @@ from pathlib import Path
 from urllib.parse import quote, unquote, urljoin, urlsplit, urlunsplit
 
 from lxml import html
-from check_spec import TYPES, validate_source
+from check_spec import TYPES, ROOT, load, validate_source
 
 
 def associations(records, kind, record):
@@ -106,6 +106,20 @@ def audit(site, baseurl, records, redirects):
     errors = []
     counts = collections.Counter(pages=len(pages))
     external = collections.defaultdict(set)
+    list_routes = load((ROOT / '_data/breadcrumbs.yml').read_text())
+    organisation_names = load((ROOT / '_data/organisation_names.yml').read_text())
+    listing_pages = {data['permalink']: data for _, data, _ in records['pages'].values() if data.get('listing')}
+
+    def organisation_link(label):
+        key = re.sub(r'[^\w]+', '-', label.strip().lower()).strip('-')
+        slug = organisation_names.get(key, key)
+        for _, org, _ in records['organisations'].values():
+            if org['slug'] == slug or org['title'] == label.strip():
+                return [org['permalink']]
+        for separator in [' / ', ', ']:
+            if separator in label:
+                return [url for part in label.split(separator) for url in organisation_link(part)]
+        return []
 
     def local(url):
         return (url[len(baseurl):] or '/') if baseurl and (url == baseurl or url.startswith(baseurl + '/')) else url
@@ -114,6 +128,9 @@ def audit(site, baseurl, records, redirects):
         return url.removesuffix('index.html') if url.endswith('index.html') else url
 
     for route, tree in pages.items():
+        breadcrumb_links = [local(url) for url in tree.xpath('//nav[@aria-label="Breadcrumb"]//a/@href')]
+        if '/404.html' in breadcrumb_links or route in breadcrumb_links or len(breadcrumb_links) != len(set(breadcrumb_links)):
+            errors.append(f'{route}: breadcrumb has an invalid, duplicate or self ancestor: {breadcrumb_links}')
         for node in tree.xpath('//main//text()[not(ancestor::a or ancestor::code or ancestor::pre or ancestor::script or ancestor::style)]'):
             if re.search(r'(?i)\b(?:https?://|www\.)\S+', str(node)):
                 errors.append(f'{route}: plain URL must use a Markdown link or angle-bracket autolink: {str(node).strip()}')
@@ -158,13 +175,26 @@ def audit(site, baseurl, records, redirects):
                 if unquote(parts.fragment) not in ids.get(page_route(redirects[path]), set()):
                     errors.append(f'{route}: missing redirected fragment: {raw}')
     for kind, entries in records.items():
-        for _, record, _ in entries.values():
+        for source, record, _ in entries.values():
             route = record['permalink']
             tree = pages.get(page_route(route))
             if tree is None:
                 errors.append(f'{route}: record page missing')
                 continue
             counts['records'] += 1
+            if kind in list_routes:
+                trail = [local(url) for url in tree.xpath('//nav[@aria-label="Breadcrumb"]//a/@href')]
+                membership = record.get('organisation', {}).get('membership', {})
+                expected_list = list_routes[kind]
+                if kind == 'organisations' and membership.get('is_member') and membership.get('status') == 'active':
+                    expected_list = '/alliance/leadership/members/'
+                if kind == 'papers' and record['publication']['type'] != 'academic_paper':
+                    expected_list = '/discover/resources/reports-and-white-papers/'
+                if not trail or trail[-1] != expected_list or len(trail) != len(set(trail)) or route in trail:
+                    errors.append(f'{route}: breadcrumb must return to {expected_list} without duplicate/self links: {trail}')
+                if listing_pages.get(expected_list, {}).get('listing', {}).get('collection') != kind:
+                    errors.append(f'{route}: breadcrumb does not lead to a list of {kind}')
+                counts['collection_breadcrumbs'] += 1
             expected = associations(records, kind, record)
             actual_sections = tree.xpath('//main//section[@data-relationship]')
             actual_ids = [section.get('aria-labelledby') for section in actual_sections]
@@ -206,16 +236,29 @@ def audit(site, baseurl, records, redirects):
                 errors.append(f'{route}: resource links do not match record resources')
             counts['resource_links'] += len(actual)
 
-            for day in record.get('event', {}).get('schedule', []):
-                for session in day['sessions']:
-                    for item in [session] + session.get('presentations', []):
+            raw_event = load(source.read_text().split('---', 2)[1]).get('event', {})
+            for day_index, day in enumerate(record.get('event', {}).get('schedule', [])):
+                for session_index, session in enumerate(day['sessions']):
+                    raw_session = raw_event['schedule'][day_index]['sessions'][session_index]
+                    raw_items = [raw_session] + raw_session.get('presentations', [])
+                    for item_index, item in enumerate([session] + session.get('presentations', [])):
                         scope = item['id']
                         speakers = [records['people'][ref['person']][1]['permalink'] for ref in record['event'].get('speakers', []) if ref.get('session') == scope]
-                        containers = f'(//main//*[@id="{scope}"] | //main//*[@id="{scope}"]/div[@class="programme-session-details"])'
-                        actual = [local(url) for url in tree.xpath(containers+'/*[@class="programme-speakers"]/a/@href')]
+                        containers = f'(//main//*[@id="{scope}"] | //main//*[@id="{scope}"]/div[@class="programme-session-details" or @class="programme-talk-copy"])'
+                        credit_links = [local(url) for url in tree.xpath(containers+'/*[@class="programme-speakers"]/a/@href')]
+                        actual = [url for url in credit_links if not url.startswith('/organisations/')]
                         if collections.Counter(actual) != collections.Counter(speakers):
                             errors.append(f'{route}: programme speaker links do not match {scope}')
                         counts['programme_credits'] += len(actual)
+                        raw_item = raw_items[item_index]
+                        labels = [ref['affiliation'] for ref in raw_item.get('speakers', []) if ref.get('affiliation')]
+                        if raw_item.get('affiliation'):
+                            labels.append(raw_item['affiliation'])
+                        expected_orgs = [url for label in labels for url in organisation_link(label)]
+                        actual_orgs = [url for url in credit_links if url.startswith('/organisations/')]
+                        if collections.Counter(actual_orgs) != collections.Counter(expected_orgs):
+                            errors.append(f'{route}: programme organisation links do not match {scope}: {actual_orgs}')
+                        counts['programme_organisations'] += len(actual_orgs)
                         actual = [local(url) for url in tree.xpath(containers+'/div[contains(concat(" ",normalize-space(@class)," ")," programme-resources ")]//a/@href')]
                         if collections.Counter(actual) != collections.Counter(scoped_resources(record, scope)):
                             errors.append(f'{route}: programme resources do not match {scope}')

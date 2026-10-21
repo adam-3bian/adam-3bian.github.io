@@ -25,25 +25,25 @@
 .programme-date { font-size: var(--type-title); margin-bottom: $space-5; }
 .programme-empty { background: var(--surface-soft); border-radius: var(--radius-small); padding: $space-4; }
 
-// One rail belongs to the day, so it continues between session groups.
-// Opaque session bands cover it; each entry puts its marker on that rail.
+// The enhanced rail runs exactly between the first and last marker centres.
 .programme-sessions {
   --programme-rail: 4.5rem;
   --programme-copy: 6rem;
   isolation: isolate;
   position: relative;
 }
-.programme-sessions:has(> .programme-session)::before {
+.programme-sessions::before {
   background: #aacfe0;
-  bottom: $space-4;
-  content: '';
+  bottom: var(--programme-line-end, 0px);
+  content: none;
   left: var(--programme-rail);
   pointer-events: none;
   position: absolute;
-  top: $space-4;
+  top: var(--programme-line-start, 0px);
   width: 2px;
   z-index: -1;
 }
+.programme-sessions[data-rail-ready]::before { content: ''; }
 .programme-session { margin: 0; min-width: 0; position: relative; scroll-margin-top: $space-6; }
 .programme-session + .programme-session { margin-top: $space-6; }
 .programme-session-header {
@@ -106,6 +106,32 @@
 .programme-entry:has(> .programme-session-header > .programme-time > time + time) { min-height: 5rem; }
 .programme-resources { margin-top: $space-3; }
 .programme-resources ul { flex-direction: row; flex-wrap: wrap; }
+.content .programme-resources li + li { margin-top: 0; }
+.programme-presentation:has(> .programme-resources) {
+  align-items: start;
+  column-gap: $space-6;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 20rem);
+}
+.programme-talk-copy { min-width: 0; }
+.programme-presentation > .programme-resources { margin-top: 0; }
+.programme-presentation > .programme-resources ul { gap: $space-2; justify-content: flex-end; }
+@media (min-width: 1024px) {
+  // Older programmes author talks directly as sessions, using the same data.
+  .programme-session.programme-entry:not([data-session-type='break'], [data-session-type='networking']):has(> .programme-session-details > .programme-resources) {
+    align-items: start;
+    column-gap: $space-6;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 20rem);
+    > .programme-session-header { grid-column: 1; }
+    > .programme-session-details {
+      display: contents;
+      > * { grid-column: 1; }
+      > .programme-resources { grid-column: 2; grid-row: 1 / span 3; margin-top: 0; }
+    }
+    .programme-resources ul { justify-content: flex-end; }
+  }
+}
 
 // Breaks span the full width, while their title shares the talks' text column.
 .programme-session:is([data-session-type='break'], [data-session-type='networking']) {
@@ -128,9 +154,26 @@
       position: absolute;
       top: calc(1rem + .4rem);
       width: 10px;
+      z-index: 1;
+    }
+    &::after {
+      background: #8bc8b7;
+      bottom: var(--programme-band-end, 0px);
+      content: none;
+      left: var(--programme-rail);
+      pointer-events: none;
+      position: absolute;
+      top: var(--programme-band-start, 0px);
+      width: 2px;
     }
   }
   &::before { content: none; }
+}
+.programme-sessions[data-rail-ready] .programme-session:is([data-session-type='break'], [data-session-type='networking']) > .programme-session-header::after { content: ''; }
+@media (max-width: 1023px) {
+  .programme-presentation:has(> .programme-resources) { display: block; }
+  .programme-presentation > .programme-resources { margin-top: $space-3; }
+  .programme-presentation > .programme-resources ul { justify-content: flex-start; }
 }
 @media (max-width: 479px) {
   .programme-days { grid-template-columns: repeat(2, minmax(0, 1fr)); }

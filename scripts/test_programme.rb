@@ -12,8 +12,10 @@ fixtures={}
     sessions=[
       {'type'=>'introduction','title'=>'Introduction','start'=>'13:00','presentations'=>[{'title'=>'Introduction to Day 1'}]},
       {'type'=>'keynote','title'=>'Keynotes','start'=>'13:05','end'=>'14:20','presentations'=>[
-        {'title'=>'Keynote','start'=>'13:05','speakers'=>[{'name'=>'Yona Raekow','affiliation'=>'BSI'}]},
-        {'title'=>'With CHERI, can we afford to ignore hardware security?','start'=>'13:20','speakers'=>[{'person'=>'mike-eftimakis'}]},
+        {'title'=>'Keynote','start'=>'13:05','speakers'=>[{'name'=>'Yona Raekow','affiliation'=>'BSI'}], 'resources'=>[
+          {'type'=>'slides','label'=>'View slides','url'=>'/policies/code-of-conduct/'},
+          {'type'=>'video','label'=>'View video','url'=>'https://youtu.be/example'}]},
+        {'title'=>'With CHERI, can we afford to ignore hardware security?','start'=>'13:20','speakers'=>[{'person'=>'mike-eftimakis','affiliation'=>'CHERI Alliance'}]},
         {'title'=>'Untimed discussion','speakers'=>[{'name'=>'Guest speaker'}]},
         {'title'=>'Keynote','start'=>'14:00','resources'=>[{'type'=>'slides','label'=>'Session slides','url'=>'/policies/code-of-conduct/'}]}
       ]},
@@ -23,9 +25,15 @@ fixtures={}
       ]},
       {'type'=>'networking','title'=>'Exhibition demonstrations','start'=>'15:30','room'=>'Hall B0','description'=>'Meet the exhibitors and discuss their demonstrations.'}
     ]
+    if count==2 && index==1
+      sessions.unshift({'type'=>'networking','title'=>'Doors open','start'=>'12:00'})
+      sessions.push({'title'=>'End of day','start'=>'18:30'})
+    end
     sessions=[] if count>=4 && index==1
+    sessions=[{'type'=>'networking','title'=>'Exhibition all day','start'=>'09:00'}] if count==4 && index==2
     if count==7 && index==6
-      sessions=[{'title'=>'Exhibition','start'=>'09:00','speakers'=>[{'person'=>'mike-eftimakis'}]},{'title'=>'Untimed demonstrations'}]
+      sessions=[{'title'=>'Exhibition','start'=>'09:00','speakers'=>[{'person'=>'mike-eftimakis'}],
+        'resources'=>[{'type'=>'slides','label'=>'View slides','url'=>'/policies/code-of-conduct/'}]}, {'title'=>'Untimed demonstrations'}]
     end
     {'date'=>date,'label'=>index<2 ? 'Exhibition only' : 'Conference and exhibition','sessions'=>sessions}
   end
@@ -33,7 +41,8 @@ fixtures={}
   original=Marshal.dump(page)
   ['', '/preview'].each do |prefix|
     site=Jekyll::Site.new(Jekyll.configuration('source'=>root,'safe'=>true,'quiet'=>true,'baseurl'=>prefix))
-    payload={'baseurl'=>prefix,'data'=>{},'people'=>[{'slug'=>'mike-eftimakis','title'=>'Mike Eftimakis','url'=>'/people/mike-eftimakis/'}]}
+    payload={'baseurl'=>prefix,'data'=>{},'people'=>[{'slug'=>'mike-eftimakis','title'=>'Mike Eftimakis','url'=>'/people/mike-eftimakis/'}],
+      'organisations'=>[{'slug'=>'cheri-alliance','title'=>'CHERI Alliance','url'=>'/organisations/cheri-alliance/'}]}
     output=Liquid::Template.parse('{% include event-programme.html %}').render!({'page'=>page,'site'=>payload},registers:{site:site,page:{}})
     tree=Nokogiri::HTML.fragment(output)
     abort 'Rendering changed authored front matter' unless Marshal.dump(page)==original
@@ -55,6 +64,12 @@ fixtures={}
     abort 'Break end did not derive from the next session' unless pause.text=='14:20–14:30'
     abort 'Speaker links were lost' unless tree.at_css(".programme-speakers a[href='#{prefix}/people/mike-eftimakis/']")
     abort 'Talk downloads were lost' unless tree.at_css(".programme-resources a[href='#{prefix}/policies/code-of-conduct/']")
+    abort 'Talk videos were lost' unless tree.at_css('.programme-resources a[href="https://youtu.be/example"]')
+    abort 'Known speaker organisations must link to their detail page' unless tree.at_css(".programme-speakers a[href='#{prefix}/organisations/cheri-alliance/']")
+    abort 'An organisation without a record must remain plain text' if tree.css('.programme-speakers a').any?{|node|node.text=='BSI'}
+    organisation_template=Liquid::Template.parse('{% include programme-organisation.html label="CHERI Alliance / Missing, CHERI Alliance" %}')
+    organisations=Nokogiri::HTML.fragment(organisation_template.render!({'site'=>payload},registers:{site:site,page:{}}))
+    abort 'Multiple affiliations changed their text or lost known links' unless organisations.text=='CHERI Alliance / Missing, CHERI Alliance' && organisations.css('a').size==2
     credits=Marshal.load(original)
     credits['event']['speakers']=[{'person'=>'mike-eftimakis'},{'name'=>'Yona Raekow'},{'name'=>'Other guest','affiliation'=>'Example'}]
     credit_template=Liquid::Template.parse('{% include event-unlisted-speakers.html record=page %}{{ extra_event_speakers | jsonify }}')

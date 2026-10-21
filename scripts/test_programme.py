@@ -49,14 +49,40 @@ with sync_playwright() as p:
                   const entries=[...e.querySelectorAll('.programme-entry')].filter(n=>getComputedStyle(n,'::before').content!=='none');
                   const dots=entries.map(n=>{const r=n.getBoundingClientRect(),s=getComputedStyle(n,'::before');return r.x+parseFloat(s.left)+parseFloat(s.width)/2+parseFloat(s.borderLeftWidth);});
                   const bounds=[...e.querySelectorAll('.programme-clock')].map(n=>({right:n.getBoundingClientRect().right,rail}));
-                  const details=[...e.querySelectorAll('.programme-session-details')].filter(n=>n.textContent.trim()).map(n=>n.getBoundingClientRect().x);
-                  return {rail,dots,bounds,details,entries:entries.length,rows:e.querySelectorAll('.programme-session').length,line:getComputedStyle(e,'::before').content};
+                  const details=[...e.querySelectorAll('.programme-session-details')].filter(n=>n.textContent.trim()).map(n=>(getComputedStyle(n).display==='contents'?n.firstElementChild:n).getBoundingClientRect().x);
+                  const markerY=[...e.querySelectorAll('.programme-entry')].map(n=>{
+                    const m=n.matches('[data-session-type="break"], [data-session-type="networking"]')?n.querySelector('.programme-session-header'):n;
+                    const s=getComputedStyle(m,'::before');return m.getBoundingClientRect().top+parseFloat(s.top)+parseFloat(s.height)/2+parseFloat(s.borderTopWidth);
+                  });
+                  const r=e.getBoundingClientRect(),s=getComputedStyle(e,'::before');
+                  const ends={first:markerY[0],last:markerY.at(-1),top:r.top+parseFloat(s.top),bottom:r.bottom-parseFloat(s.bottom)};
+                  const bands=[...e.querySelectorAll('[data-session-type="break"] > .programme-session-header, [data-session-type="networking"] > .programme-session-header')].map(n=>{
+                    const b=n.getBoundingClientRect(),p=getComputedStyle(n,'::after');return {content:p.content,top:b.top+parseFloat(p.top),bottom:b.bottom-parseFloat(p.bottom),expectedTop:Math.max(b.top,ends.first),expectedBottom:Math.min(b.bottom,ends.last)};
+                  });
+                  return {rail,dots,bounds,details,ends,bands,markers:markerY.length,entries:entries.length,rows:e.querySelectorAll('.programme-session').length,line:s.content};
                 }''')
                 assert all(abs(dot-geometry['rail']) < 1 for dot in geometry['dots']), (width,count,index,geometry)
                 assert all(item['right'] < item['rail']-2 for item in geometry['bounds']), (width,count,index,'times overlap rail',geometry)
                 assert all(left > geometry['rail']+10 for left in geometry['details']), (width,count,index,'session details must follow the text column',geometry)
                 if count >= 4 and index == 1:
                     assert geometry['rows'] == 0 and geometry['line'] == 'none', 'Empty days must not show a phantom timeline'
+                if geometry['markers'] > 1:
+                    ends=geometry['ends']
+                    assert abs(ends['first']-ends['top'])<1 and abs(ends['last']-ends['bottom'])<1, (width,count,index,'Rail must stop at the first and last markers',geometry)
+                    assert all(b['content']!='none' and abs(b['top']-b['expectedTop'])<1 and abs(b['bottom']-b['expectedBottom'])<1 for b in geometry['bands']), (width,count,index,'Rail must continue through green bands',geometry)
+                else:
+                    assert geometry['line']=='none', 'Empty or single-entry days must not show a stray rail'
+            resources=page.locator('[data-programme-day]:visible .programme-entry:has(.programme-resources)').first
+            if resources.count():
+                copy=resources.locator('.programme-talk-copy, .programme-session-header').first.bounding_box()
+                actions=resources.locator('.programme-resources').bounding_box()
+                if width>=1024:
+                    assert actions['x']>=copy['x']+copy['width'] and abs(actions['y']-copy['y'])<1, (width,'Resources should sit beside the talk')
+                else:
+                    assert actions['y']>=copy['y']+copy['height'], (width,'Resources must stack below the talk on mobile')
+                boxes=resources.locator('.programme-resources li').evaluate_all('nodes=>nodes.map(n=>{const r=n.getBoundingClientRect();return {x:r.x,y:r.y,width:r.width};})')
+                if len(boxes)>1 and boxes[1]['x']>boxes[0]['x']:
+                    assert abs(boxes[1]['y']-boxes[0]['y'])<1, 'Adjacent resource buttons must align'
             if count > 1:
                 tabs.last.press('ArrowRight')
                 assert tabs.first.get_attribute('aria-selected') == 'true'
@@ -106,6 +132,16 @@ with sync_playwright() as p:
         page.locator('.event-programme').screenshot(path=str(OUT/f'{width}-cheritech26.png'))
         page.goto(URL + '__programme-fixtures/4/')
         page.locator('.event-programme').screenshot(path=str(OUT/f'{width}-four-days.png'))
+        page.goto(URL + 'events/cheritech25/')
+        talk=page.locator('.programme-entry:has(.programme-resources):visible').first
+        heading=talk.locator('.programme-session-header').bounding_box()
+        actions=talk.locator('.programme-resources').bounding_box()
+        if width>=1024:
+            assert actions['x']>=heading['x']+heading['width'] and abs(actions['y']-heading['y'])<1, 'Existing standalone talk actions must align beside their heading'
+        else:
+            assert actions['y']>=heading['y']+heading['height'], 'Existing standalone talk actions must stack on mobile'
+        assert page.locator('.programme-resources a[href$=".pdf"]').count()>0 and page.locator('.programme-resources a[href*="youtu"]').count()>0, 'Existing talk PDFs and videos must remain available'
+        talk.screenshot(path=str(OUT/f'{width}-cheritech25-resources.png'))
     assert not errors, errors
     browser.close()
 

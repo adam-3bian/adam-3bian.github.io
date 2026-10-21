@@ -38,7 +38,15 @@ $submenu-selector: ".submenu";
 // Expanded links remain available when scripts are disabled or fail to load.
 html:not(.js) .submenu[hidden] { display: block !important; position: static; }
 html:not(.js) .submenu-row > button { display: none; }
-.submenu a {
+.menu-link {
+  --navigation-row-inset: #{$navigation-row-padding};
+  --navigation-indent: 0px;
+  font-family: $font-family;
+  font-size: $font-size-navigation;
+  line-height: var(--leading-body);
+  text-decoration: none;
+}
+.submenu a, .menu-link {
   align-items: center;
   display: flex;
   font-weight: $font-weight-regular;
@@ -52,7 +60,7 @@ html:not(.js) .submenu-row > button { display: none; }
 }
 .submenu-row { align-items: stretch; display: flex; }
 // Rounded row backgrounds preserve the menu corners during hover and focus.
-.submenu a, .submenu-row, .menu-group-toggle { border-radius: var(--radius); }
+.submenu a, .menu-link, .submenu-row, .menu-group-toggle { border-radius: var(--radius); }
 .submenu-row:has(> :is(a, button):is(:hover, :focus-visible)) { background: var(--colour-navigation-hover); }
 .submenu-row > :is(a, button) { background: transparent; }
 .submenu-row > a { flex: 1; min-width: 0; }

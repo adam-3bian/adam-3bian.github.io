@@ -1,0 +1,8 @@
+{%- assign breadcrumb_list_url = site.data.breadcrumbs[page.collection] -%}
+{%- if page.collection == 'organisations' and page.organisation.membership.is_member and page.organisation.membership.status == 'active' -%}
+  {%- assign breadcrumb_list_url = '/alliance/leadership/members/' -%}
+{%- elsif page.collection == 'papers' and page.publication.type != 'academic_paper' -%}
+  {%- assign breadcrumb_list_url = '/discover/resources/reports-and-white-papers/' -%}
+{%- endif -%}
+{%- assign breadcrumb_list = nil -%}
+{%- if breadcrumb_list_url -%}{%- assign breadcrumb_list = site.pages | where: 'url', breadcrumb_list_url | first -%}{%- endif -%}

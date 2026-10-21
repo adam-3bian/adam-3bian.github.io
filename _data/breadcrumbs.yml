@@ -1,0 +1,11 @@
+# Canonical collection lists; record front matter needs no breadcrumb fields.
+posts: /news-and-events/news-and-analysis/latest-news/
+events: /events/
+people: /people/
+organisations: /organisations/
+groups: /alliance/leadership/working-groups/
+papers: /discover/resources/academic-papers/
+products: /products/
+repositories: /repositories/
+guides: /guides/
+policies: /policies/

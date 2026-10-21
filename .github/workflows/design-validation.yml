@@ -77,6 +77,7 @@ jobs:
           bundle exec ruby scripts/test_forms.rb
           bundle exec ruby scripts/test_relationships.rb
           bundle exec ruby scripts/test_programme.rb --fixtures "$RUNNER_TEMP/programme-fixtures.json"
+          bundle exec ruby scripts/test_breadcrumbs.rb
       - name: Validate official build and Jekyll preview deployment
         run: |
           python scripts/check_content.py --site dist --report reports/root-content.json
@@ -103,6 +104,8 @@ jobs:
           export PROGRAMME_FIXTURES="$RUNNER_TEMP/programme-fixtures.json"
           SITE_URL=http://127.0.0.1:4200/ REPORT_ROOT=reports/programme/root python scripts/test_programme.py
           SITE_URL=http://127.0.0.1:4201/preview/ REPORT_ROOT=reports/programme/preview python scripts/test_programme.py
+          SITE_URL=http://127.0.0.1:4200/ REPORT_ROOT=reports/menu-rows/root python scripts/test_menu_rows.py
+          SITE_URL=http://127.0.0.1:4201/preview/ REPORT_ROOT=reports/menu-rows/preview python scripts/test_menu_rows.py
           SITE_URL=http://127.0.0.1:4200/ REPORT_ROOT=reports/components/root python scripts/test_components.py
           SITE_URL=http://127.0.0.1:4201/preview/ REPORT_ROOT=reports/components/preview python scripts/test_components.py
           SITE_URL=http://127.0.0.1:4200/ REPORT_ROOT=reports/heroes/root python scripts/test_heroes.py

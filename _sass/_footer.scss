@@ -22,22 +22,12 @@ footer .menu-group-title { color: var(--colour-footer-text); font-family: $font-
 .footer-navigation > ul > li > ul {
   display: grid;
   gap: 0;
-  margin-top: $space-3;
+  margin-top: $space-2;
   margin-left: -$navigation-row-padding;
 }
 .footer-navigation a {
-  align-items: center;
-  display: flex;
-  font-weight: $font-weight-regular;
-  letter-spacing: 0;
-  min-height: $control-height;
-  margin: 0;
-  padding: $space-2 $navigation-row-padding;
-  border-radius: var(--radius-small);
   max-width: 100%;
-  width: fit-content;
 }
-.footer-navigation a:focus-visible { text-decoration: underline; }
 .footer-bottom { align-items: center; margin-top: $space-8; }
 .footer-copyright {
   color: var(--colour-footer-muted);

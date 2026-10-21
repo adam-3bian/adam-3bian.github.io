@@ -38,9 +38,9 @@
           {% assign presentation_start = presentation.start %}{% if forloop.first %}{% assign presentation_start = presentation.start | default: session.start %}{% endif %}
           <section id="{{ presentation_anchor | escape }}" class="programme-presentation programme-entry">
             {% if presentation_start %}<time class="programme-clock" datetime="{{ day.date }}T{{ presentation_start }}">{{ presentation_start }}</time>{% endif %}
-            <h5>{{ presentation.title | escape }}</h5>
+            <div class="programme-talk-copy"><h5>{{ presentation.title | escape }}</h5>
             {% if presentation.end %}<p class="programme-until">Until <time datetime="{{ day.date }}T{{ presentation.end }}">{{ presentation.end }}</time></p>{% endif %}
-            {% include programme-speakers.html item=presentation %}
+            {% include programme-speakers.html item=presentation %}</div>
             {% include resource-links.html record=page items=presentation.resources programme=true %}
           </section>
         {% endfor %}
