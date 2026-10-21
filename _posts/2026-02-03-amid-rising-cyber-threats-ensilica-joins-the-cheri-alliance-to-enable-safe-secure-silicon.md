@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/news-and-events/news-and-analysis/amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon/9e284069-ddb56fdbe9e2-hero.png
+  src: /assets/images/posts/2026-02-03-amid-rising-cyber-threats-ensilica-joins-the-cheri-alliance-to-enable-safe-secure-silicon.webp
   alt: Welcome EnSilica
-  width: 2000
-  height: 1500
+  width: 1280
+  height: 720
+  fit: contain
 date: '2026-02-03T16:47:46+00:00'
 post:
   category: cheri-alliance-news

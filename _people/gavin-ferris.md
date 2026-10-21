@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/gavin-ferris/28d48b21-85e5898f43a9-portrait.png
+  src: /assets/images/people/gavin-ferris.webp
   alt: Gavin Ferris
-  width: 1024
-  height: 768
+  width: 370
+  height: 370
+  fit: cover
 person:
   roles:
   - speaker

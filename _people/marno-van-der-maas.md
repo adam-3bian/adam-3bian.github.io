@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/marno-van-der-maas/75be2552-de74ac7aa3f7-portrait.png
+  src: /assets/images/people/marno-van-der-maas.webp
   alt: Marno van der Maas
-  width: 904
-  height: 1200
+  width: 512
+  height: 512
+  fit: cover
 person:
   roles:
   - speaker

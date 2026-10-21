@@ -39,7 +39,7 @@ We can help with:
 
 The following resources are available to support accurate reporting and coverage:
 
-- [CHERI Alliance introduction](/assets/shared/source-assets/c275143b35fc-cheri-alliance-presentation.pdf)
+- [CHERI Alliance introduction](/assets/pdf/events/embedded-world-2026/cheri-alliance-presentation.pdf)
 - [Logos and brand assets](/policies/trademark/)
 - [Leadership](/alliance/leadership/governing-board/) biographies and photographs
 - Event information and media materials

@@ -1,7 +1,7 @@
 ---
 layout: article
 title: CHERI Tag Bit Transport Overlay Standard version 0.9 released
-summary: Over the last few months I’ve had the pleasure of working with members of the CHERI Alliance’s [CHERI-in-SoC Working Group](/groups/cheri-in-soc/) to put together the first version of the [CHERI Tag Bit Transport Overlay Standard](/assets/pages/discover--resources--documentation-and-guides/9bbe9f6de06c-cheri-tag-bit-transport-overlay-standard-v0.9.pdf).
+summary: Over the last few months I’ve had the pleasure of working with members of the CHERI Alliance’s [CHERI-in-SoC Working Group](/groups/cheri-in-soc/) to put together the first version of the [CHERI Tag Bit Transport Overlay Standard](/assets/pdf/posts/2026-09-21-cheri-tag-bit-transport-overlay-standard-version-0-9-released/cheri-tag-bit-transport-overlay-standard-v0-9.pdf).
 permalink: /news/cheri-tag-bit-transport-overlay-standard-version-0-9-released/
 slug: cheri-tag-bit-transport-overlay-standard-version-0-9-released
 navigation:
@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/news-and-events/news-and-analysis/cheri-tag-bit-transport-overlay-standard-version-0-9-released/a9573d64-c2fe66ccfd-CHERITagBitTransportOverlayStandardBlogImage-2.png
+  src: /assets/images/posts/2026-09-21-cheri-tag-bit-transport-overlay-standard-version-0-9-released.webp
   alt: CHERITagBitTransportOverlayStandardBlogImage
-  width: 1536
-  height: 500
+  width: 1280
+  height: 720
+  fit: contain
 date: '2026-09-21T12:00:00+00:00'
 post:
   category: cheri-alliance-news
@@ -29,7 +30,7 @@ One of the challenges of building a CHERI-enabled SoC is that capabilities don�
 
 If we want CHERI systems to be built successfully from components supplied by different companies, we need to agree on how that works. This standard is intended to do exactly that: define a common way of transporting CHERI tag bits through an SoC, including mappings for widely used protocols such as AXI and CHI.
 
-We’ve now published [version 0.9](/assets/pages/discover--resources--documentation-and-guides/9bbe9f6de06c-cheri-tag-bit-transport-overlay-standard-v0.9.pdf) of the standard. The reason it is version 0.9 is important: this isn’t intended to be the final word. We’d really like people building CHERI systems, interconnects and IP to read it, try to break it, and tell us what we’ve missed.
+We’ve now published [version 0.9](/assets/pdf/posts/2026-09-21-cheri-tag-bit-transport-overlay-standard-version-0-9-released/cheri-tag-bit-transport-overlay-standard-v0-9.pdf) of the standard. The reason it is version 0.9 is important: this isn’t intended to be the final word. We’d really like people building CHERI systems, interconnects and IP to read it, try to break it, and tell us what we’ve missed.
 
 It’s been a great experience putting this together with the members of the working group. There have been lots of interesting discussions along the way, and the standard is considerably better as a result.
 

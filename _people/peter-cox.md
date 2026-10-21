@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/peter-cox/b4d6bb18-7263b66ba9dc-portrait.jpg
+  src: /assets/images/people/peter-cox.webp
   alt: Peter Cox
-  width: 1151
-  height: 1200
+  width: 512
+  height: 512
+  fit: cover
 person:
   roles:
   - speaker

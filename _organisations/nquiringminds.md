@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/alliance/leadership/nquiringminds/c653af4d-fbb8fe7c25c6-logo.png
+  src: /assets/images/organisation/nquiringminds.webp
   alt: NquiringMinds logo
-  width: 2000
-  height: 394
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/hesham-almatary/29eeb416-78ef1fc5643c-portrait.png
+  src: /assets/images/people/hesham-almatary.webp
   alt: Hesham Almatary
-  width: 1024
-  height: 768
+  width: 420
+  height: 420
+  fit: cover
 person:
   roles:
   - speaker

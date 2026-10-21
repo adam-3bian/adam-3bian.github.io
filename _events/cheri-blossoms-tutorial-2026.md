@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: Events & Archive
 image:
-  src: /assets/images/news-and-events/events-and-archive/cheri-blossoms-tutorial-2026/9e23008c-07d08258896f-hero.png
+  src: /assets/images/events/cheri-blossoms-tutorial-2026.webp
   alt: Hands-on Introduction to CHERI and CHERIoT Banner
   width: 1280
   height: 720
+  fit: contain
 date: '2026-03-25'
 event:
   format: tutorial
@@ -62,8 +63,8 @@ For background on the concepts explored during the tutorial, participants were r
 
 The Hands-on Introduction to CHERI and CHERIoT was held in Cambridge UK, at the Department of Computer Science and Technology in the [William Gates Building](https://www.cst.cam.ac.uk/directions), on the University of Cambridge’s West Cambridge site, located off Madingley Road.
 
-![](/assets/images/news-and-events/events-and-archive/cheri-blossoms-tutorial-2026/c4e5dd50-0f7d142b47af-1920px-university-of-cambridge-computer-laboratory.jpg){: .image-full }
+![](/assets/images/events/cheri-blossoms-tutorial-2026/1920px-university-of-cambridge-computer-laboratory.webp){: .image-full }
 
-![Welcome booth](/assets/images/news-and-events/events-and-archive/cheri-blossoms-tutorial-2026/50eec3f7-0e31e40cf715-welcome.jpg){: .image-full }
+![Welcome booth](/assets/images/events/cheri-blossoms-tutorial-2026/welcome.webp){: .image-full }
 
-![Tutorial Room](/assets/images/news-and-events/events-and-archive/cheri-blossoms-tutorial-2026/0d1e1f7d-2a691dd331b2-tutorial-session.jpg){: .image-full }
+![Tutorial Room](/assets/images/events/cheri-blossoms-tutorial-2026/tutorial-session.webp){: .image-full }

@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/news-and-events/news-and-analysis/one-bug-is-all-it-takes/559aa2ca-90741c3e8a15-hero.jpg
+  src: /assets/images/posts/2026-05-04-one-bug-is-all-it-takes.webp
   alt: A red bug on a computer screen being focused by a magnifying glass
-  width: 2000
-  height: 1400
+  width: 1280
+  height: 720
+  fit: contain
 date: '2026-05-04T16:06:57+01:00'
 post:
   category: cheri-alliance-news

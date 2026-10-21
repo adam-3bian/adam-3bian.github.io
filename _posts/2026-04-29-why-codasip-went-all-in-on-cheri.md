@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/news-and-events/news-and-analysis/why-codasip-went-all-in-on-cheri/232b8cc8-4bc1f676007d-hero.jpg
+  src: /assets/images/posts/2026-04-29-why-codasip-went-all-in-on-cheri.webp
   alt: Ron Black in an office with the Codasip and CHERI Alliance member logos
-  width: 1000
-  height: 450
+  width: 1008
+  height: 567
+  fit: contain
 date: '2026-04-29T10:00:14+01:00'
 post:
   category: ecosystem
@@ -47,7 +48,7 @@ Interview with Ron Black, CEO of [Codasip](/organisations/codasip/)
 
 “When speaking with non-technical people we frequently use the model of infectious disease, likening CHERI to a “cyber vaccine” for memory safety “cyber viruses.” With the exponential increase in CVEs, cyberattacks have gone from endemic to an epidemic, and are only going to get worse with AI.
 
-[![Graph showing the number of vulnerabilities over time](/assets/images/news-and-events/news-and-analysis/why-codasip-went-all-in-on-cheri/3052fc87-f2da1932f975-graph-showing-number-of-vulnerabilities-over-time.png){: .image-full }](/assets/images/news-and-events/news-and-analysis/why-codasip-went-all-in-on-cheri/3052fc87-f2da1932f975-graph-showing-number-of-vulnerabilities-over-time.png)
+[![Graph showing the number of vulnerabilities over time](/assets/images/posts/2026-04-29-why-codasip-went-all-in-on-cheri/graph-showing-number-of-vulnerabilities-over-time.webp){: .image-full }](/assets/images/posts/2026-04-29-why-codasip-went-all-in-on-cheri/graph-showing-number-of-vulnerabilities-over-time.webp)
 
 As the primary goal of government is to protect its people, and government provides free vaccines during an epidemic to protect its citizens, it only makes sense that government takes a leadership role in ensuring cyber protection. Certainly the defence industry, which is funded by the government, sees that. It is not clear if governments are taking enough action, however, in CNI. In our opinion, more is needed now, before there is a major issue. I would really hate to be a government that did nothing to protect its citizens, when the “cyber vaccine” was already proven and ready for mass production. And the EU has now taken the step with its Cyber Resilience Act, or CRA, to ensure accountability by end system producers.
 

@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/common/d78aa296-e9bd1058262d-logo.png
+  src: /assets/images/organisation/ensilica.webp
   alt: EnSilica
-  width: 2000
-  height: 680
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

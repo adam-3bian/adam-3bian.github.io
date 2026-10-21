@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/news-and-events/news-and-analysis/cheri-sel4-and-cheri-microkit-released/6ebf3f8a-8d44a7e5916e-hero.png
+  src: /assets/images/posts/2025-07-29-cheri-sel4-and-cheri-microkit-released.webp
   alt: The software release roadmap for CHERI-seL4
-  width: 544
-  height: 816
+  width: 1280
+  height: 720
+  fit: contain
 date: '2025-07-29T11:00:45+01:00'
 post:
   category: ecosystem
@@ -31,7 +32,7 @@ The release is aimed at developers who want to build and experiment with memory-
 
 ## Why Try CHERI-seL4
 
-![CHERI-seL4: Why?](/assets/images/news-and-events/news-and-analysis/cheri-sel4-and-cheri-microkit-released/5ae13843-8b01b36a4468-cheri-sel4-why.png){: .image-full }
+![CHERI-seL4: Why?](/assets/images/posts/2025-07-29-cheri-sel4-and-cheri-microkit-released/cheri-sel4-why.webp){: .image-full }
 
 seL4 is a formally verified microkernel known for enforcing strong isolation between protection domains in separate address spaces. However, seL4 does not currently provide protection between components in the same address space.
 
@@ -58,7 +59,7 @@ This initial release provides:
 
 ## About Microkit
 
-![Microkit structure](/assets/images/news-and-events/news-and-analysis/cheri-sel4-and-cheri-microkit-released/8f7ff388-16467bfc72a2-cheri-sel4-5.png){: .image-full }
+![Microkit structure](/assets/images/posts/2025-07-29-cheri-sel4-and-cheri-microkit-released/cheri-sel4-5.webp){: .image-full }
 
 Microkit simplifies seL4 development by abstracting away low-level kernel primitives. It allows you to define a static security policy and deploy isolated components without needing to write complex seL4 setup code.
 

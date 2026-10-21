@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: Events & Archive
 image:
-  src: /assets/images/news-and-events/events-and-archive/cheri-blossoms-conference-2027/36836fe5-18a3bce9f22d-hero.png
+  src: /assets/images/events/cheri-blossoms-conference-2027.webp
   alt: CHERI Blossoms Conference 2027
   width: 1280
   height: 720
+  fit: contain
 date: '2027-04-21'
 end_date: '2027-04-23'
 event:
@@ -58,7 +59,7 @@ related:
 
 ## Conference Overview
 
-![CHERI Blossoms 2026 Robert Watson giving a talk](/assets/images/common/d16a3888-aca481f6e08b-cheri-blossoms-2026-robert-watson-giving-a-talk.jpg){: .image-right }
+![CHERI Blossoms 2026 Robert Watson giving a talk](/assets/images/events/cheri-blossoms-conference-2026/cheri-blossoms-2026-robert-watson-giving-a-talk.webp){: .image-right }
 
 CHERI Blossoms 2027 is your opportunity to meet the people researching, building, standardising and **adopting CHERI**, all in the birthplace of the technology.
 
@@ -93,9 +94,9 @@ William Gates Building
 
 Cambridge CB3 0FD
 
-![William Gates building - Outside view](/assets/images/common/5df1e529-32a1b43504b4-william-gates-building-outside-view.jpg){: .image-full }
+![William Gates building - Outside view](/assets/images/events/cheri-blossoms-conference-2026/william-gates-building-outside-view.webp){: .image-full }
 
-![CHERI Blossoms 2026 exhibition](/assets/images/common/c6102b6c-5d0055b14ce5-exhibition.jpg){: .image-full }
+![CHERI Blossoms 2026 exhibition](/assets/images/events/cheri-blossoms-conference-2026/exhibition.webp){: .image-full }
 
 [View map](https://maps.google.com/maps?q=William%20Gates%20Building&t=m&z=13&output=embed&iwloc=near)
 

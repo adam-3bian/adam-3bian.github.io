@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/news-and-events/news-and-analysis/innovate-uk-project-winner-university-of-birmingham/38b0c082-fdb47b11533a-hero.png
+  src: /assets/images/posts/2025-11-20-innovate-uk-project-winner-university-of-birmingham.webp
   alt: 'Innovate UK Project Winner: University of Birmingham'
   width: 1024
-  height: 568
+  height: 576
+  fit: contain
 date: '2025-11-20T10:00:32+00:00'
 post:
   category: cheri-alliance-news

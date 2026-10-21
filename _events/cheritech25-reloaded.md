@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: Events & Archive
 image:
-  src: /assets/images/news-and-events/events-and-archive/cheritech25-reloaded/44012623-7bce58279add-cheritech25-reloaded.webp
+  src: /assets/images/events/cheritech25-reloaded.webp
   alt: CHERITech'25 Reloaded
   width: 640
   height: 360
+  fit: contain
 date: '2025-12-04'
 event:
   format: webinar
@@ -111,7 +112,7 @@ resources:
   session_id: talk-52491b25a8c0
 - type: slides
   label: View slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/11/1.3-Mike-Eftimakis-Progress-of-the-Alliance-CHERITech25.pdf
+  url: /assets/pdf/events/cheritech25/1-3-mike-eftimakis-progress-of-the-alliance-cheritech25.pdf
   session_id: talk-52491b25a8c0
 - type: video
   label: View video
@@ -119,7 +120,7 @@ resources:
   session_id: talk-e30adf0fb475
 - type: slides
   label: View slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/11/2.3-Carl-Shaw-CHERI-Progress-CHERITech25.pdf
+  url: /assets/pdf/events/cheritech25/2-3-carl-shaw-cheri-progress-cheritech25.pdf
   session_id: talk-e30adf0fb475
 - type: video
   label: View video
@@ -127,7 +128,7 @@ resources:
   session_id: talk-df176a0176e5
 - type: slides
   label: View slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/11/2.1-Jonathan-Woodruff-CHERITech25.pdf
+  url: /assets/pdf/events/cheritech25/2-1-jonathan-woodruff-cheritech25.pdf
   session_id: talk-df176a0176e5
 - type: video
   label: View video
@@ -135,7 +136,7 @@ resources:
   session_id: talk-0ecb121da2c3
 - type: slides
   label: View slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/11/2.2-John-Thomson-COSMIC-CHERITech25.pdf
+  url: /assets/pdf/events/cheritech25/2-2-john-thomson-cosmic-cheritech25.pdf
   session_id: talk-0ecb121da2c3
 - type: video
   label: View video
@@ -143,7 +144,7 @@ resources:
   session_id: talk-dc7e5a273c87
 - type: slides
   label: View slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/11/2.4-Marno-van-der-Maas-Sonata-_-A-platform-for-high-integrity-operational-technology-CHERITech25.pdf
+  url: /assets/pdf/events/cheritech25/2-4-marno-van-der-maas-sonata-a-platform-for-high-integrity-operational-technology-cheritech25.pdf
   session_id: talk-dc7e5a273c87
 - type: video
   label: View video
@@ -151,7 +152,7 @@ resources:
   session_id: talk-50bf72082e2a
 - type: slides
   label: View slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/11/3.2-David-Chisnall-CHERIoT-Audit-1-CHERITech25.pdf
+  url: /assets/pdf/events/cheritech25/3-2-david-chisnall-cheriot-audit-1-cheritech25.pdf
   session_id: talk-50bf72082e2a
 - type: video
   label: View video
@@ -159,7 +160,7 @@ resources:
   session_id: talk-9a7ba33d7755
 - type: slides
   label: View slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/11/3.4-Tariq-Kurd-CHERI-RISC-V-standardisation-status-CHERITech25.pdf
+  url: /assets/pdf/events/cheritech25/3-4-tariq-kurd-cheri-risc-v-standardisation-status-cheritech25.pdf
   session_id: talk-9a7ba33d7755
 - type: video
   label: View video
@@ -167,7 +168,7 @@ resources:
   session_id: talk-c74cd1585cc1
 - type: slides
   label: View slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/11/4.5-Jeremy-Singer-State-of-the-Union-Which-Virtual-Machines-can-I-run-on-CHERI-CHERITech25.pdf
+  url: /assets/pdf/events/cheritech25/4-5-jeremy-singer-state-of-the-union-which-virtual-machines-can-i-run-on-cheri-cheritech25.pdf
   session_id: talk-c74cd1585cc1
 - type: video
   label: View video
@@ -175,7 +176,7 @@ resources:
   session_id: talk-ea45fd3bae13
 - type: slides
   label: View slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/11/4.1-Andrew-Murray-A-development-hub-CHERITech25.pdf
+  url: /assets/pdf/events/cheritech25/4-1-andrew-murray-a-development-hub-cheritech25.pdf
   session_id: talk-ea45fd3bae13
 - type: video
   label: View video
@@ -183,7 +184,7 @@ resources:
   session_id: talk-fc5c414edf6e
 - type: slides
   label: View slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/11/2.5-Thomas-Nyman-Merve-Gulmez-BLACKOUT-Data-Oblivious-Computation-with-Blinded-Capabilities-CHERITech25.pdf
+  url: /assets/pdf/events/cheritech25/2-5-thomas-nyman-merve-gulmez-blackout-data-oblivious-computation-with-blinded-capabilities-cheritech25.pdf
   session_id: talk-fc5c414edf6e
 - type: video
   label: View video
@@ -191,7 +192,7 @@ resources:
   session_id: talk-8a389e77ec3e
 - type: slides
   label: View slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/11/3.3-Murali-Vijayaraghavan-Rigorous-Hardware-Software-Codesign-for-Secure-Compartmentalization-on-Embedded-Devices-CHERITech25.pdf
+  url: /assets/pdf/events/cheritech25/3-3-murali-vijayaraghavan-rigorous-hardware-software-codesign-for-secure-compartmentalization-on-embedded-devices-cheritech25.pdf
   session_id: talk-8a389e77ec3e
 related:
 - type: page

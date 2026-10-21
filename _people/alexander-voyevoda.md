@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/alexander-voyevoda/9d4b1523-61dfcb5182bc-portrait.png
+  src: /assets/images/people/alexander-voyevoda.webp
   alt: Alexander Voyevoda
-  width: 1024
-  height: 1024
+  width: 512
+  height: 512
+  fit: cover
 person:
   roles:
   - speaker

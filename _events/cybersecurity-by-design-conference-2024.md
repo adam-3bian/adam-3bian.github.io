@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: Events & Archive
 image:
-  src: /assets/images/news-and-events/events-and-archive/cybersecurity-by-design-conference-2024/fa9aae18-ab41005be5b4-cybersecurity-by-design-conference-2024.webp
+  src: /assets/images/events/cybersecurity-by-design-conference-2024.webp
   alt: '''Cybersecurity by design - from research to industry'' conference'
   width: 640
   height: 360
+  fit: contain
 date: '2024-11-12'
 event:
   format: conference
@@ -97,7 +98,7 @@ resources:
   session_id: talk-e536163359ad
 - type: slides
   label: View slides
-  url: https://cheri-alliance.org/wp-content/uploads/2024/11/01-Paul-Waller-NCSC.pdf
+  url: /assets/pdf/events/cybersecurity-by-design-conference-2024/01-paul-waller-ncsc.pdf
   session_id: talk-e536163359ad
 - type: video
   label: View video
@@ -105,7 +106,7 @@ resources:
   session_id: talk-eeaa35114069
 - type: slides
   label: View slides
-  url: https://cheri-alliance.org/wp-content/uploads/2024/11/02-John-Goodacre-DSbD.pdf
+  url: /assets/pdf/events/cybersecurity-by-design-conference-2024/02-john-goodacre-dsbd.pdf
   session_id: talk-eeaa35114069
 - type: video
   label: View video
@@ -113,7 +114,7 @@ resources:
   session_id: talk-233ad5f2639c
 - type: slides
   label: View slides
-  url: https://cheri-alliance.org/wp-content/uploads/2024/11/03-Robert-Watson-University-of-Cambridge.pdf
+  url: /assets/pdf/events/cybersecurity-by-design-conference-2024/03-robert-watson-university-of-cambridge.pdf
   session_id: talk-233ad5f2639c
 - type: video
   label: View video
@@ -121,7 +122,7 @@ resources:
   session_id: talk-9a331b7aa774
 - type: slides
   label: View slides
-  url: https://cheri-alliance.org/wp-content/uploads/2024/11/04-Reid-Derby-CyNam.pdf
+  url: /assets/pdf/events/cybersecurity-by-design-conference-2024/04-reid-derby-cynam.pdf
   session_id: talk-9a331b7aa774
 - type: video
   label: View video
@@ -129,7 +130,7 @@ resources:
   session_id: talk-4ee37022227a
 - type: slides
   label: View slides
-  url: https://cheri-alliance.org/wp-content/uploads/2024/11/05-Gavin-Ferris-lowRISC.pdf
+  url: /assets/pdf/events/cybersecurity-by-design-conference-2024/05-gavin-ferris-lowrisc.pdf
   session_id: talk-4ee37022227a
 - type: video
   label: View video
@@ -137,7 +138,7 @@ resources:
   session_id: talk-e9de0a537d68
 - type: slides
   label: View slides
-  url: https://cheri-alliance.org/wp-content/uploads/2024/11/06-Mike-Eftimakis-CHERI-Alliance.pdf
+  url: /assets/pdf/events/cybersecurity-by-design-conference-2024/06-mike-eftimakis-cheri-alliance.pdf
   session_id: talk-e9de0a537d68
 - type: video
   label: View video
@@ -145,7 +146,7 @@ resources:
   session_id: talk-074622d7df96
 - type: slides
   label: View slides
-  url: https://cheri-alliance.org/wp-content/uploads/2024/11/07-Simon-Moore-University-of-Cambridge.pdf
+  url: /assets/pdf/events/cybersecurity-by-design-conference-2024/07-simon-moore-university-of-cambridge.pdf
   session_id: talk-074622d7df96
 - type: video
   label: View video
@@ -153,7 +154,7 @@ resources:
   session_id: talk-ccc763e398ce
 - type: slides
   label: View slides
-  url: https://cheri-alliance.org/wp-content/uploads/2024/11/08-Graeme-Jenkinson-Capabilities-Ltd.pdf
+  url: /assets/pdf/events/cybersecurity-by-design-conference-2024/08-graeme-jenkinson-capabilities-ltd.pdf
   session_id: talk-ccc763e398ce
 - type: video
   label: View video
@@ -161,7 +162,7 @@ resources:
   session_id: talk-678f917ed6ba
 - type: slides
   label: View slides
-  url: https://cheri-alliance.org/wp-content/uploads/2024/11/09-Greg-Chadwick-lowRISC.pdf
+  url: /assets/pdf/events/cybersecurity-by-design-conference-2024/09-greg-chadwick-lowrisc.pdf
   session_id: talk-678f917ed6ba
 - type: video
   label: View video
@@ -169,7 +170,7 @@ resources:
   session_id: talk-9f2d2256cad2
 - type: slides
   label: View slides
-  url: https://cheri-alliance.org/wp-content/uploads/2024/11/10-Carl-Shaw-Codasip.pdf
+  url: /assets/pdf/events/cybersecurity-by-design-conference-2024/10-carl-shaw-codasip.pdf
   session_id: talk-9f2d2256cad2
 related:
 - type: page
@@ -179,7 +180,7 @@ related:
 
 ## Bringing research and industry together
 
-![Audience](/assets/images/news-and-events/events-and-archive/cybersecurity-by-design-conference-2024/c3f44ef5-audience.jpg){: .image-right }
+![Audience](/assets/images/events/cybersecurity-by-design-conference-2024/audience.webp){: .image-right }
 
 Cybersecurity by Design brought technology professionals, cybersecurity specialists and the CHERI community together in Cheltenham to explore how secure-by-design research can translate into practical technology and industry adoption.
 
@@ -187,7 +188,7 @@ Co-hosted by **NCSC**, **CyNam** and the **CHERI Alliance**, the conference comb
 
 ## From CHERI fundamentals to practical implementation
 
-![CHERI Alliance 12th November conference flyer](/assets/images/common/24f93a84-8a1142aa0d27-hero.png){: .image-left }
+![CHERI Alliance 12th November conference flyer](/assets/images/posts/2024-12-04-cybersecurity-by-design-from-research-to-industry-conference-report.webp){: .image-left }
 
 The programme approached cybersecurity by design from both strategic and technical perspectives, combining policy and industry discussion with a closer look at CHERI technology.
 
@@ -207,7 +208,7 @@ Attendee feedback specifically praised the **networking opportunities**, **demon
 
 ### Address:
 
-![Hub8 MX building with the conference banner outside](/assets/images/news-and-events/events-and-archive/cybersecurity-by-design-conference-2024/6693fdfe-c3d2b6621166-hub8-mx-building-with-the-conference-banner-outside.jpg){: .image-left }
+![Hub8 MX building with the conference banner outside](/assets/images/events/cybersecurity-by-design-conference-2024/hub8-mx-building-with-the-conference-banner-outside.webp){: .image-left }
 
 [Hub8 MX](https://hub8and.co/hub8-mx-cheltenham-startup-coworking-space/)
 

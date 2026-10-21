@@ -16,7 +16,7 @@ policy:
 resources:
 - type: pdf
   label: Download official PDF
-  url: /assets/shared/source-assets/d904a00cfb15-trademark-policy.pdf
+  url: /assets/pdf/shared/trademark-policy.pdf
 related:
 - type: policy
   slug: export-controls
@@ -34,7 +34,7 @@ related:
 
 ## Overview
 
-![pdf](/assets/images/common/58e51132-d63b7eac09b7-pdf-file-icon.webp){: .image-left .image-inline } Download the [CHERI Alliance Trademark Policy](/assets/shared/source-assets/d904a00cfb15-trademark-policy.pdf) – The PDF is the official version. The text is reproduced below for convenience, but if there is any difference between the two versions, the PDF takes precedence.
+![pdf](/assets/images/shared/pdf-file-icon.webp){: .image-left .image-inline } Download the [CHERI Alliance Trademark Policy](/assets/pdf/shared/trademark-policy.pdf) – The PDF is the official version. The text is reproduced below for convenience, but if there is any difference between the two versions, the PDF takes precedence.
 
 ---
 
@@ -65,11 +65,11 @@ When used in formal documents, the ® or ™ symbol must be included for the fir
 ### Logos
 
 | --- | --- |
-| ![CHERI mark](/assets/images/alliance/legal-and-policies/trademark-policy/cda53ba6-514789203a81-cheri-mark.webp){: .image-full } | **CHERI mark** Reserved for CHERI Alliance documentation and projects, or CHERI Certified products and services, especially when space constraints prevent the use of the CHERI Certified logo (e.g., on a chip package). |
-| ![CHERI mark](/assets/images/alliance/legal-and-policies/trademark-policy/f88932e5-e4cf8af68585-cheri-logo.webp){: .image-full } | **CHERI logo**  Permitted for use in CHERI Alliance documentation and projects, or under a Sublicense from the CHERI Alliance. Nominative Fair Use is authorized for discussions about CHERI technology without implying endorsement. |
-| ![CHERI mark](/assets/images/common/b3b9fe90-edeb264ff3b7-cheri-member.webp){: .image-full } | **CHERI Alliance Member logo**  Reserved for use in any media by current, active CHERI Alliance members. |
-| ![CHERI mark](/assets/images/alliance/legal-and-policies/trademark-policy/7bd829c8-213ed31db863-cheri-founder.webp){: .image-full } | **CHERI Alliance Founder logo** Reserved for use in any media by founding members of the CHERI Alliance, that are current, active members. |
-| ![CHERI mark](/assets/images/alliance/legal-and-policies/trademark-policy/c614d011-031e517df8f0-cheri-enabled.webp){: .image-full } | **CHERI certification logo** Reserved for products and services that incorporate CHERI technology and have successfully obtained written approval from the CHERI Alliance certification program. |
+| ![CHERI mark](/assets/images/shared/cheri-mark.webp){: .image-full } | **CHERI mark** Reserved for CHERI Alliance documentation and projects, or CHERI Certified products and services, especially when space constraints prevent the use of the CHERI Certified logo (e.g., on a chip package). |
+| ![CHERI mark](/assets/images/shared/cheri-logo.webp){: .image-full } | **CHERI logo**  Permitted for use in CHERI Alliance documentation and projects, or under a Sublicense from the CHERI Alliance. Nominative Fair Use is authorized for discussions about CHERI technology without implying endorsement. |
+| ![CHERI mark](/assets/images/shared/cheri-member.webp){: .image-full } | **CHERI Alliance Member logo**  Reserved for use in any media by current, active CHERI Alliance members. |
+| ![CHERI mark](/assets/images/shared/cheri-founder.webp){: .image-full } | **CHERI Alliance Founder logo** Reserved for use in any media by founding members of the CHERI Alliance, that are current, active members. |
+| ![CHERI mark](/assets/images/shared/cheri-enabled-2.webp){: .image-full } | **CHERI certification logo** Reserved for products and services that incorporate CHERI technology and have successfully obtained written approval from the CHERI Alliance certification program. |
 
 The logos referred to above are illustrative examples. All official variations, including color schemes, proportions, text variations, and usage guidelines, are detailed in the CHERI Alliance Branding Guidelines. Always refer to the latest version of the Branding Guidelines for accurate and approved logo variations.
 

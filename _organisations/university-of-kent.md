@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/alliance/leadership/university-of-kent/f3306545-17d3f2e7b137-logo.png
+  src: /assets/images/organisation/university-of-kent.webp
   alt: University of Kent logo
   width: 1200
-  height: 800
+  height: 400
   fit: contain
 organisation:
   membership:

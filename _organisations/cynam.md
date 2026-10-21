@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/alliance/leadership/cynam/73abf5d3-6cc6da1b4ad7-logo.png
+  src: /assets/images/organisation/cynam.webp
   alt: CyNam logo
   width: 1200
-  height: 295
+  height: 400
   fit: contain
 organisation:
   membership:

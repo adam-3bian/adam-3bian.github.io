@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/alliance/leadership/durham-university/b4e2d143-e89df94fa360-logo.png
+  src: /assets/images/organisation/durham-university.webp
   alt: Durham University - Department of Computer Science logo
-  width: 1000
-  height: 619
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

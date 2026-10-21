@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/javier-orensanz-martinez/4d18b28f-eeab172bbb0d-portrait.jpg
+  src: /assets/images/people/javier-orensanz-martinez.webp
   alt: Javier Orensanz Martinez
   width: 280
   height: 280
+  fit: cover
 person:
   roles:
   - speaker

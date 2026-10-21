@@ -9,7 +9,7 @@ navigation:
     category: Build
     subcategory: Platforms
 image:
-  src: /assets/images/common/12b2d225-bfeebb3ac676-morello-board.webp
+  src: /assets/images/shared/morello-board.webp
   alt: Arm Morello board
   width: 640
   height: 480

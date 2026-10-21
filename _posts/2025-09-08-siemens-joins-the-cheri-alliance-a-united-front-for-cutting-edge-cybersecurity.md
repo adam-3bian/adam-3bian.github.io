@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/news-and-events/news-and-analysis/siemens-joins-the-cheri-alliance-a-united-front-for-cutting-edge-cybersecurity/0ed80c4f-caba10383daf-hero.png
+  src: /assets/images/posts/2025-09-08-siemens-joins-the-cheri-alliance-a-united-front-for-cutting-edge-cybersecurity.webp
   alt: Welcome Siemens with the CHERI Alliance Member logo in the bottom right.
-  width: 2000
-  height: 1500
+  width: 1280
+  height: 720
+  fit: contain
 date: '2025-09-08T12:00:12+01:00'
 post:
   category: cheri-alliance-news

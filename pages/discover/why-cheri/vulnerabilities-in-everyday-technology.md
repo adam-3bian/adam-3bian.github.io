@@ -20,7 +20,7 @@ Connected devices are specialised computers. A camera, doorbell, router, medical
 
 If software contains a serious memory vulnerability, an attacker may be able to access information, change settings, disrupt operation, or use the device to attack other systems on the same network.
 
-![Vulnerabilities keep increasing](/assets/images/discover/why-cheri/discover-why-cheri-vulnerabilities-in-everyday-technology/0666ad78-b68c7fc17613-cve.webp){: .image-full }
+![Vulnerabilities keep increasing](/assets/images/shared/cve.webp){: .image-full }
 
 ## Even small devices can carry significant risk
 

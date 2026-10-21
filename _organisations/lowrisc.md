@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/common/80ec6dcd-d432df8a7ccf-logo.png
+  src: /assets/images/organisation/lowrisc.webp
   alt: lowRISC logo
-  width: 1104
-  height: 279
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

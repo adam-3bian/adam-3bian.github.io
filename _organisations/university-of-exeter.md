@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/alliance/leadership/university-of-exeter/ed660c13-ecd832b543d0-logo.png
+  src: /assets/images/organisation/university-of-exeter.webp
   alt: University of Exeter
-  width: 2000
-  height: 1317
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

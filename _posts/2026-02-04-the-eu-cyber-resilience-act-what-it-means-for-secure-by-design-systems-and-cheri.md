@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/common/578c9944-d4c0d2560e6f-eu-flag.jpg
+  src: /assets/images/posts/2026-02-04-the-eu-cyber-resilience-act-what-it-means-for-secure-by-design-systems-and-cheri.webp
   alt: EU Flag
   width: 1280
-  height: 853
+  height: 720
+  fit: contain
 date: '2026-02-04T10:00:45+00:00'
 post:
   category: cheri-alliance-news

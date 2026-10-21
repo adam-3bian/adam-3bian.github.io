@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/alliance/leadership/swansea-university/a980772a-02d91abeda67-logo.png
+  src: /assets/images/organisation/swansea-university.webp
   alt: University of Swansea logo
-  width: 1649
-  height: 1036
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

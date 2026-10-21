@@ -50,9 +50,9 @@ with sync_playwright() as p:
               }})''')
             for frame in media:
                 if 'people' in frame['kind']:
-                    assert abs(frame['w']-frame['h']) < 1, (width,name,frame)
+                    assert abs(frame['w']-frame['h']) < 1 and frame['fit']=='cover', (width,name,frame)
                 else:
-                    assert (abs(frame['w']-frame['h']) < 1 if 'media-organisations' in frame['kind'] else frame['w'] > frame['h']) and frame['fit']=='contain', (width,name,frame)
+                    assert abs(frame['w']/frame['h']-3) < .02 and frame['fit']=='contain', (width,name,frame)
             if name == 'members-grid':
                 assert len({(round(f['w']),round(f['h'])) for f in media}) == 1, (width,media)
             if name == 'hardware':

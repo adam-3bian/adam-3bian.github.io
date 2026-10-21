@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/manu-ravishankar/13e37e0b-80040a1a9011-portrait.jpg
+  src: /assets/images/people/manu-ravishankar.webp
   alt: Manu Ravishankar
-  width: 1200
-  height: 800
+  width: 423
+  height: 423
+  fit: cover
 person:
   roles:
   - speaker

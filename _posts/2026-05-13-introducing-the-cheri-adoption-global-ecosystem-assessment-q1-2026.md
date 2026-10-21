@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/news-and-events/news-and-analysis/introducing-the-cheri-adoption-global-ecosystem-assessment-q1-2026/e68daa1e-7c6a52fd196f-hero.jpg
+  src: /assets/images/posts/2026-05-13-introducing-the-cheri-adoption-global-ecosystem-assessment-q1-2026.webp
   alt: Data analytics dashboard
-  width: 2000
-  height: 1324
+  width: 1280
+  height: 720
+  fit: contain
 date: '2026-05-13T10:00:21+01:00'
 post:
   category: cheri-alliance-news

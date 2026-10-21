@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/news-and-events/news-and-analysis/bt-group-joins-the-cheri-alliance-to-advance-cybersecurity-innovation/b738c23a-df8b50676c3b-working-group-spotlight-marketing.png
+  src: /assets/images/posts/2025-06-18-bt-group-joins-the-cheri-alliance-to-advance-cybersecurity-innovation.webp
   alt: BT Group Joins the CHERI Alliance to Advance Cybersecurity Innovation
-  width: 2000
-  height: 1500
+  width: 1280
+  height: 720
+  fit: contain
 date: '2025-06-18T08:54:13+01:00'
 post:
   category: cheri-alliance-news

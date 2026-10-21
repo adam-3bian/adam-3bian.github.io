@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/common/1c7dcba3-ea303349d4e1-logo.png
+  src: /assets/images/organisation/university-of-cambridge.webp
   alt: University of Cambridge logo
-  width: 1042
-  height: 211
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

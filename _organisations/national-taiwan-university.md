@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/alliance/leadership/national-taiwan-university/e5aa5bb8-e691a20d3fdd-logo.jpg
+  src: /assets/images/organisation/national-taiwan-university.webp
   alt: NTU logo
-  width: 295
-  height: 294
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

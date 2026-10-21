@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/john-thomson/6b911109-fbbd23c69151-portrait.png
+  src: /assets/images/people/john-thomson.webp
   alt: John Thomson
-  width: 900
-  height: 1200
+  width: 512
+  height: 512
+  fit: cover
 person:
   roles:
   - speaker

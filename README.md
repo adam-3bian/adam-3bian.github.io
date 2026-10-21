@@ -12,6 +12,8 @@ Records have a title, summary, explicit permalink and `navigation.header` contex
 
 Bodies use ordinary Kramdown with H2/H3 headings, fenced code, links, images, lists and tables. Keep image alignment classes beside inline images. Put the primary image in `image`, once. Literal Liquid examples need `raw` wrappers. The glossary remains a non-output support collection.
 
+Follow the [asset authoring guide](docs/assets/README.md) for image paths, face crops, transparent logos and local downloads. Asset URLs mirror the checked-in `assets/` directory; no preprocessing is needed to publish them.
+
 Header menus are curated in `_config.yml`. A page joins the footer only through `navigation.footer.category`; `_data/footer_categories.yml` supplies headings. Routing records in `_redirects` contain only `permalink` and `redirect_to`.
 
 ## Build and deploy
@@ -29,6 +31,8 @@ bundle install
 python -m pip install -r requirements-dev.txt
 python scripts/check_content.py
 python scripts/check_refinement.py
+python scripts/check_assets.py
+python scripts/test_assets.py
 python scripts/test_spec.py
 bundle exec ruby scripts/test_event_status.rb
 bundle exec ruby scripts/test_forms.rb

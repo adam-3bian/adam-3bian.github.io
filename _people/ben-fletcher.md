@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/ben-fletcher/16418c4b-c6126b8fe38c-portrait.jpg
+  src: /assets/images/people/ben-fletcher.webp
   alt: Ben Fletcher
-  width: 900
-  height: 1200
+  width: 512
+  height: 512
+  fit: cover
 person:
   roles:
   - speaker

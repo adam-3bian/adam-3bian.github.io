@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/alliance/leadership/freebsd-foundation/a4964bc3-dd73c0888388-logo.png
+  src: /assets/images/organisation/freebsd-foundation.webp
   alt: FreeBSD Foundation logo
-  width: 1409
-  height: 1025
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

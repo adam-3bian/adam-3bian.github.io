@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/news-and-events/news-and-analysis/end-users-demand-memory-safety-in-their-systems/c47a5216-bd37f9598c14-hero.png
+  src: /assets/images/posts/2024-09-25-end-users-demand-memory-safety-in-their-systems.webp
   alt: End-users demand memory safety in their systems
-  width: 452
-  height: 496
+  width: 896
+  height: 504
+  fit: contain
 date: '2024-09-25T11:10:01+01:00'
 post:
   category: cheri-alliance-news

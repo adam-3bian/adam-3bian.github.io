@@ -34,7 +34,7 @@ related:
 
 ## Overview
 
-![CHERI caps](/assets/images/news-and-events/events-and-archive/news-and-events-events-and-archive-cheri-blossoms/bdf74cd3-Q5A1907.jpg){: .image-right }
+![CHERI caps](/assets/images/shared/cheri-caps.webp){: .image-right }
 
 CHERI Blossoms is the CHERI community’s **annual gathering**, connecting researchers, engineers, product teams, policymakers, educators and adopters to share progress, exchange ideas and help shape the future of secure computing.
 
@@ -64,7 +64,7 @@ CHERI Blossoms isn't just about listening to presentations. Questions, discussio
 
 ### Make connections
 
-![CHERI Blossoms gathering](/assets/images/news-and-events/events-and-archive/news-and-events-events-and-archive-cheri-blossoms/6ae55700-cheri-blossoms-crowd.jpg){: .image-left }
+![CHERI Blossoms gathering](/assets/images/shared/cheri-blossoms-crowd.webp){: .image-left }
 
 Dedicated networking sessions bring together the people building, deploying, researching, standardising and adopting CHERI. They provide time to build relationships, identify opportunities for collaboration, and create business connections that can help move CHERI towards wider adoption.
 

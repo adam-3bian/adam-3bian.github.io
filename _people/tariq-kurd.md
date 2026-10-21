@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/tariq-kurd/32e11617-74bca1b40e3d-portrait.jpg
+  src: /assets/images/people/tariq-kurd.webp
   alt: Tariq Kurd
-  width: 738
-  height: 931
+  width: 512
+  height: 512
+  fit: cover
 person:
   roles:
   - speaker

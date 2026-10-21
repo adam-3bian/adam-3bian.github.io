@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/alliance/leadership/google/ba876955-34a14037dc92-logo.png
+  src: /assets/images/organisation/google.webp
   alt: Google logo
-  width: 2000
-  height: 833
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

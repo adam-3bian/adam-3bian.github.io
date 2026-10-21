@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/common/0a641e61-67e343f4b8d6-hero.png
+  src: /assets/images/posts/2026-07-29-a-new-etsi-standard-could-rewrite-the-memory-safety-debate.webp
   alt: ETSI standard
-  width: 1536
-  height: 1024
+  width: 1280
+  height: 720
+  fit: contain
 date: '2026-07-29T17:07:00+01:00'
 post:
   category: cheri-alliance-news

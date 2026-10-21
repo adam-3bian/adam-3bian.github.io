@@ -7,7 +7,7 @@
       --colour-#{$name}: #{$value};
     }
   }
-  --watermark-image: #{unquote('url("../images/background/hexagons-light.webp")')};
+  --watermark-image: #{unquote('url("../images/shared/background/hexagons-light.webp")')};
 }
 
 .home-page[data-theme="dark"] {
@@ -19,5 +19,5 @@
       --colour-#{$name}: #{$value};
     }
   }
-  --watermark-image: #{unquote('url("../images/background/hexagons-dark.webp")')};
+  --watermark-image: #{unquote('url("../images/shared/background/hexagons-dark.webp")')};
 }

@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/alliance/leadership/dstl/6ae7fa75-1291f932f092-logo.png
+  src: /assets/images/organisation/dstl.webp
   alt: DSTL logo
-  width: 285
-  height: 147
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

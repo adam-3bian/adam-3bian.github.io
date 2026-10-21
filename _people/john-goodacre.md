@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/john-goodacre/41380cd8-8cbcb8b7b09c-portrait.png
+  src: /assets/images/people/john-goodacre.webp
   alt: John Goodacre
-  width: 1024
-  height: 768
+  width: 462
+  height: 462
+  fit: cover
 person:
   roles:
   - speaker

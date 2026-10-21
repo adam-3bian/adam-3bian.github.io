@@ -40,7 +40,7 @@ Organised by the [CHERI Alliance](/organisations/cheri-alliance/), the conferenc
 
 ## From DSbD to the CHERI Alliance
 
-![CHERI stickers](/assets/images/news-and-events/events-and-archive/news-and-events-events-and-archive-cheritech/a42bb04c-Q5A1909.jpg){: .image-right }
+![CHERI stickers](/assets/images/shared/cheri-stickers.webp){: .image-right }
 
 CHERITech originated as part of [UKRI’s Digital Security by Design (DSbD)](https://www.ukri.org/what-we-do/browse-our-areas-of-investment-and-support/digital-security-by-design/) programme, bringing the technical community together to share developments and experience around CHERI. The CHERI Alliance has now taken on the organisation of CHERITech, continuing that tradition while opening the conference to the growing international community developing and deploying CHERI technologies.
 

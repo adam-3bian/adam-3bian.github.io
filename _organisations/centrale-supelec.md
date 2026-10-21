@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/alliance/leadership/centrale-supelec/8658eec5-216a613f848d-logo.jpg
+  src: /assets/images/organisation/centrale-supelec.webp
   alt: Centrale Supélec
-  width: 2000
-  height: 1205
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

@@ -38,7 +38,7 @@ Morello gave research and industry teams a realistic platform for porting operat
 
 Morello remains an experimental platform. Its importance lies in the full-stack evidence and experience it created, not in representing a production Arm architecture.
 
-![Arm Morello board](/assets/images/common/12b2d225-bfeebb3ac676-morello-board.webp){: .image-full }
+![Arm Morello board](/assets/images/shared/morello-board.webp){: .image-full }
 
 ## CheriBSD: established software at operating-system scale
 
@@ -56,7 +56,7 @@ CHERIoT shows why CHERI can fit microcontrollers that lack the memory-management
 
 The `cheriot-ibex` core has been certified under the [CHERI Enabled programme](/adopt/assurance-and-adoption/about-cheri-enabled/).
 
-![CHERIoT processor on a Sonata board](/assets/images/common/996577fc-645cc3b9a905-sonata-cheriot.webp){: .image-full }
+![CHERIoT processor on a Sonata board](/assets/images/shared/sonata-cheriot.webp){: .image-full }
 
 ## CHERI in commercial processor products
 
@@ -64,7 +64,7 @@ Codasip has [decided to adopt CHERI](/news/why-codasip-went-all-in-on-cheri/) th
 
 This demonstrates that CHERI processor technology is available now for commercial system-on-chip designs.
 
-![Codasip X730 on FPGA](/assets/images/common/a4714f5e-e8738d5ec725-codasip-prime-kit.webp){: .image-full }
+![Codasip X730 on FPGA](/assets/images/shared/codasip-prime-kit.webp){: .image-full }
 
 ## What these case studies demonstrate
 

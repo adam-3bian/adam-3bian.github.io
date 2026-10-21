@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/phil-day/7c3606dc-3fe5b3fa85c3-portrait.png
+  src: /assets/images/people/phil-day.webp
   alt: Phil Day
-  width: 1024
-  height: 768
+  width: 253
+  height: 253
+  fit: cover
 person:
   roles:
   - speaker

@@ -34,9 +34,6 @@ exclude:
 - Gemfile.lock
 - _plugins
 - vendor
-- assets/shared/source-assets/dcabdf6735d3-searcher.js
-- assets/shared/source-assets/9da9f832380b-searcher.js
-- assets/shared/source-assets/0845a75c73d4-elasticlunr.min.js
 - requirements-dev.txt
 - dist
 - dist-baseurl
@@ -145,8 +142,8 @@ sass:
   sass_dir: _sass
   style: compressed
 logo:
-  light: /assets/images/common/64dd0005-logo-blue.svg
-  dark: /assets/images/common/4ee4af07-logo-white.svg
+  light: /assets/images/shared/branding/logo-blue.svg
+  dark: /assets/images/shared/branding/logo-white.svg
   width: 326
   height: 112
 navigation:
@@ -380,35 +377,35 @@ navigation:
   - title: Slack
     url: https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/cheri-slack.html
     image:
-      src: /assets/images/common/9911a875-slack.svg
+      src: /assets/images/shared/social/slack.svg
       alt: Join the CHERI community on Slack
     target: _blank
     rel: noopener noreferrer
   - title: LinkedIn
     url: https://www.linkedin.com/company/cheri-alliance/
     image:
-      src: /assets/images/common/e3a20573-linkedin.svg
+      src: /assets/images/shared/social/linkedin.svg
       alt: CHERI Alliance on LinkedIn
     target: _blank
     rel: noopener noreferrer
   - title: Mastodon
     url: https://infosec.exchange/@cheri_alliance
     image:
-      src: /assets/images/common/4a3f4fd5-mastodon.svg
+      src: /assets/images/shared/social/mastodon.svg
       alt: CHERI Alliance on Mastodon
     target: _blank
     rel: noopener noreferrer
   - title: GitHub
     url: https://github.com/CHERI-Alliance
     image:
-      src: /assets/images/common/eb97646e-github.svg
+      src: /assets/images/shared/social/github.svg
       alt: CHERI Alliance on GitHub
     target: _blank
     rel: noopener noreferrer
   - title: YouTube
     url: https://www.youtube.com/@CHERI-Alliance
     image:
-      src: /assets/images/common/be9c8aa8-youtube.svg
+      src: /assets/images/shared/social/youtube.svg
       alt: CHERI Alliance on YouTube
     target: _blank
     rel: noopener noreferrer

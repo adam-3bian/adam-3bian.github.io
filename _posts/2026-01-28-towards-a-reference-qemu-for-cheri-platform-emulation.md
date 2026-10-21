@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/common/bca3bb76-bb889a4dc09e-cheri-alliance-working-groups.png
+  src: /assets/images/posts/2026-01-28-towards-a-reference-qemu-for-cheri-platform-emulation.webp
   alt: CHERI Alliance Working Groups logo
-  width: 746
-  height: 369
+  width: 752
+  height: 423
+  fit: contain
 date: '2026-01-28T10:00:59+00:00'
 post:
   category: cheri-alliance-news

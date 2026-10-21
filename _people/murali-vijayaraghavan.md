@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/murali-vijayaraghavan/5a950d9d-cf34c2ea389a-portrait.jpg
+  src: /assets/images/people/murali-vijayaraghavan.webp
   alt: Murali Vijayaraghavan
-  width: 1200
-  height: 1068
+  width: 512
+  height: 512
+  fit: cover
 person:
   roles:
   - speaker

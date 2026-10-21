@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/common/8d481a0e-5a6300ace656-cheri.png
+  src: /assets/images/posts/2025-11-25-new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd.webp
   alt: New InnovateUK-funded project to merge CHERI support into FreeBSD
-  width: 916
-  height: 336
+  width: 928
+  height: 522
+  fit: contain
 date: '2025-11-25T10:00:49+00:00'
 post:
   category: cheri-alliance-news

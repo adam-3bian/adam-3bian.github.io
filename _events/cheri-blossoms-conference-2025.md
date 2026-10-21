@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: Events & Archive
 image:
-  src: /assets/images/news-and-events/events-and-archive/cheri-blossoms-conference-2025/ff468c2c-838829e021a2-hero.png
+  src: /assets/images/events/cheri-blossoms-conference-2025.webp
   alt: CHERI Blossoms Conference 2025
-  width: 1968
-  height: 2000
+  width: 1280
+  height: 720
+  fit: contain
 date: '2025-04-02'
 event:
   format: conference
@@ -267,7 +268,7 @@ resources:
   url: /news-and-events/events-and-archive/cheri-blossoms/
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/04/20250402-cheri-blossoms-sel4.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2025/cheri-blossoms-sel4.pdf
   session_id: talk-18db2e5b4c29
 - type: video
   label: View Video
@@ -275,7 +276,7 @@ resources:
   session_id: talk-18db2e5b4c29
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/04/5.2-Ben-Fletcher-CHERI_in_SOC-WG.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2025/5-2-ben-fletcher-cheri-in-soc-wg.pdf
   session_id: talk-8a1c585b5c2a
 - type: video
   label: View Video
@@ -283,7 +284,7 @@ resources:
   session_id: talk-8a1c585b5c2a
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/04/4.1-Joshua-Lant-Secure-Networking-Tools.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2025/4-1-joshua-lant-secure-networking-tools.pdf
   session_id: talk-415d876b7108
 - type: video
   label: View Video
@@ -291,7 +292,7 @@ resources:
   session_id: talk-415d876b7108
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/04/4.2-Mark-Batty-Rust-for-Morello.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2025/4-2-mark-batty-rust-for-morello.pdf
   session_id: talk-eefbd5abb872
 - type: video
   label: View Video
@@ -299,7 +300,7 @@ resources:
   session_id: talk-eefbd5abb872
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/04/Marno-van-der-Maas-CHERI-Blossoms-2025-Poster.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2025/marno-van-der-maas-cheri-blossoms-2025-poster.pdf
   session_id: talk-c5a35cd87774
 - type: video
   label: View Video
@@ -307,7 +308,7 @@ resources:
   session_id: talk-c5a35cd87774
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/04/5.1-Alfredo-Mazzinghi-QEMU-WG.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2025/5-1-alfredo-mazzinghi-qemu-wg.pdf
   session_id: talk-9eb3ab951d91
 - type: slides
   label: View Slides
@@ -315,7 +316,7 @@ resources:
   session_id: talk-9eb3ab951d91
 - type: slides
   label: View slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/04/5.4-Mike-Eftimakis-Promotion-Ambassador-WG.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2025/5-4-mike-eftimakis-promotion-ambassador-wg.pdf
   session_id: talk-bbfc8052f8cd
 - type: video
   label: Watch video
@@ -323,7 +324,7 @@ resources:
   session_id: talk-bbfc8052f8cd
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/04/2.1-Gavin-Ferris-Haydn-Povey-Project-Sunburst.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2025/2-1-gavin-ferris-haydn-povey-project-sunburst.pdf
   session_id: talk-a409ba018943
 - type: video
   label: View Video
@@ -331,7 +332,7 @@ resources:
   session_id: talk-a409ba018943
 - type: slides
   label: View slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/04/1.6-Mike-Eftimakis-CHERI-Blossoms.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2025/1-6-mike-eftimakis-cheri-blossoms.pdf
   session_id: talk-ee4f029811ee
 - type: video
   label: Watch video
@@ -339,7 +340,7 @@ resources:
   session_id: talk-ee4f029811ee
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/04/3.5-Domagoj-Stolfa-Porting-V8-to-CHERI.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2025/3-5-domagoj-stolfa-porting-v8-to-cheri.pdf
   session_id: talk-bd18e762e01d
 - type: video
   label: View Video
@@ -347,7 +348,7 @@ resources:
   session_id: talk-bd18e762e01d
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/04/3.3-Carl-Shaw-Porting-Linux-to-CHERI.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2025/3-3-carl-shaw-porting-linux-to-cheri.pdf
   session_id: talk-0935a283e531
 - type: video
   label: View Video
@@ -355,7 +356,7 @@ resources:
   session_id: talk-0935a283e531
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/04/5.6-Tora-Fridholm-Marketing-WG.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2025/5-6-tora-fridholm-marketing-wg.pdf
   session_id: talk-5afced256725
 - type: video
   label: View Video
@@ -367,7 +368,7 @@ resources:
   session_id: talk-96da1e6d72af
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/04/2.6-Ashish-Dabari-Formal-Verification-of-RISC-V-Processors.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2025/2-6-ashish-dabari-formal-verification-of-risc-v-processors.pdf
   session_id: talk-b4648486add1
 - type: video
   label: View Video
@@ -375,7 +376,7 @@ resources:
   session_id: talk-b4648486add1
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/04/4.4-Phil-Day-Implementing-safe-and-resilient-configuration-management-with-CHERIoT.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2025/4-4-phil-day-implementing-safe-and-resilient-configuration-management-with-cheriot.pdf
   session_id: talk-2b12bc8d11ca
 - type: video
   label: View Video
@@ -383,7 +384,7 @@ resources:
   session_id: talk-2b12bc8d11ca
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/04/3.2-Dmitriy-Yeliseyev-CheriVxWorks.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2025/3-2-dmitriy-yeliseyev-cherivxworks.pdf
   session_id: talk-548f88d4c3a1
 - type: video
   label: View Video
@@ -391,7 +392,7 @@ resources:
   session_id: talk-548f88d4c3a1
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/04/3.4-Martin-Atkins-Hybrid-CHERI-in-seL4-user-space.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2025/3-4-martin-atkins-hybrid-cheri-in-sel4-user-space.pdf
   session_id: talk-124658c9e605
 - type: video
   label: View Video
@@ -403,7 +404,7 @@ resources:
   session_id: talk-fdafbfe3885d
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/04/2.5-Mark-Hill-Efficient-system-level-support-for-CHERI-Capabilities.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2025/2-5-mark-hill-efficient-system-level-support-for-cheri-capabilities.pdf
   session_id: talk-e2b1014154cd
 - type: video
   label: View Video
@@ -411,7 +412,7 @@ resources:
   session_id: talk-e2b1014154cd
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/04/2.4-David-Chisnall-CHERIoT.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2025/2-4-david-chisnall-cheriot.pdf
   session_id: talk-acdf345cf9e8
 - type: video
   label: View Video
@@ -419,7 +420,7 @@ resources:
   session_id: talk-acdf345cf9e8
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/04/2.3-Jonathan-Woodruff-cva6-cheri-blossoms.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2025/2-3-jonathan-woodruff-cva6-cheri-blossoms.pdf
   session_id: talk-09317658dceb
 - type: video
   label: View Video
@@ -427,7 +428,7 @@ resources:
   session_id: talk-09317658dceb
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/04/2.2-Tariq-Kurd-CHERI-standardisation.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2025/2-2-tariq-kurd-cheri-standardisation.pdf
   session_id: talk-c1099ce999bd
 - type: video
   label: View Video
@@ -435,7 +436,7 @@ resources:
   session_id: talk-c1099ce999bd
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/04/4.5-Jeremy-Singer-CHERI-MicroPython.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2025/4-5-jeremy-singer-cheri-micropython.pdf
   session_id: talk-11c63986461f
 - type: video
   label: View Video
@@ -443,7 +444,7 @@ resources:
   session_id: talk-11c63986461f
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/04/1.1-Alastair-Beresford-Keynote.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2025/1-1-alastair-beresford-keynote.pdf
   session_id: talk-4ebc19d99f86
 - type: video
   label: View Video
@@ -451,7 +452,7 @@ resources:
   session_id: talk-4ebc19d99f86
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/04/1.3-Bradley-Finn-Building-Resilience-Single-Slide.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2025/1-3-bradley-finn-building-resilience-single-slide.pdf
   session_id: talk-2d8866c514d1
 - type: video
   label: View Video
@@ -459,7 +460,7 @@ resources:
   session_id: talk-2d8866c514d1
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/04/1.5-Simon-Moore-About-CHERI.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2025/1-5-simon-moore-about-cheri.pdf
   session_id: talk-2106167f179c
 - type: video
   label: View Video
@@ -505,7 +506,7 @@ related:
 
 ## Cultivating a Safer Digital Future - from Tech to Business
 
-![Lecture theatre](</assets/images/news-and-events/events-and-archive/cheri-blossoms-conference-2025/fa5e5b67-lecture-theatre.jpg>){: .image-right }
+![Lecture theatre](</assets/images/events/cheri-blossoms-conference-2025/lecture-theatre.webp>){: .image-right }
 
 CHERI Blossoms 2025 brought together researchers, technologists, industry leaders and decision-makers to explore CHERI from technology to real-world adoption.
 
@@ -524,15 +525,15 @@ The conference also gave CHERI Alliance working groups an opportunity to share t
 This combination of research, implementation, adoption and community would become an important part of the CHERI Blossoms format.
 
 | --- | --- |
-| ![Lecture theatre](/assets/images/news-and-events/events-and-archive/cheri-blossoms-conference-2025/e0b1c529-lecture-theatre2.jpg){: .image-full } | ![Exhibition](/assets/images/news-and-events/events-and-archive/cheri-blossoms-conference-2025/27a183cb-exhibition.jpg){: .image-full } |
-| ![Lunch](/assets/images/news-and-events/events-and-archive/cheri-blossoms-conference-2025/811e949d-lunch.jpg){: .image-full } | ![Lecture theatre](/assets/images/news-and-events/events-and-archive/cheri-blossoms-conference-2025/e3f47ecb-lecture-theatre3.jpg){: .image-full } |
-| ![St John's College](/assets/images/news-and-events/events-and-archive/cheri-blossoms-conference-2025/0ffbe527-st-johns-entrance.jpg){: .image-full } | ![CHERI Alliance directors](/assets/images/news-and-events/events-and-archive/cheri-blossoms-conference-2025/d472736e-directors.jpg){: .image-full } |
+| ![Lecture theatre](/assets/images/events/cheri-blossoms-conference-2025/lecture-theatre2.webp){: .image-full } | ![Exhibition](/assets/images/events/cheri-blossoms-conference-2025/exhibition.webp){: .image-full } |
+| ![Lunch](/assets/images/events/cheri-blossoms-conference-2025/lunch.webp){: .image-full } | ![Lecture theatre](/assets/images/events/cheri-blossoms-conference-2025/lecture-theatre3.webp){: .image-full } |
+| ![St John's College](/assets/images/events/cheri-blossoms-conference-2025/st-johns-entrance.webp){: .image-full } | ![CHERI Alliance directors](/assets/images/events/cheri-blossoms-conference-2025/directors.webp){: .image-full } |
 
 
 ## Demonstrations
 
 | --- | --- | --- |
-| ![Demo Codasip](/assets/images/news-and-events/events-and-archive/cheri-blossoms-conference-2025/99e915a1-demo-codasip.jpg){: .image-full } | ![Demo lowRISC](/assets/images/news-and-events/events-and-archive/cheri-blossoms-conference-2025/06987389-demo-lowrisc.jpg){: .image-full } | ![Demo SCI Semi](/assets/images/news-and-events/events-and-archive/cheri-blossoms-conference-2025/d577eaca-demo-sci.jpg){: .image-full } |
+| ![Demo Codasip](/assets/images/events/cheri-blossoms-conference-2025/demo-codasip.webp){: .image-full } | ![Demo lowRISC](/assets/images/events/cheri-blossoms-conference-2025/demo-lowrisc.webp){: .image-full } | ![Demo SCI Semi](/assets/images/events/cheri-blossoms-conference-2025/demo-sci.webp){: .image-full } |
 
 
 | Demo | Organisation | Video |
@@ -546,11 +547,11 @@ This combination of research, implementation, adoption and community would becom
 
 [Fisher Building, St John’s College, Cambridge, UK](https://map.cam.ac.uk/?maplon=0.11549&maplat=52.20844&mapzoom=17&maplayers=Building+Labels%2CExternal+Sites%2CColleges%2CUniversity+Sites%2CBuildings%2CTransport&mapfeature=mfid1059%2CBuildings)
 
-![St John's College, Cambridge, with the Bridge of Sighs](/assets/images/news-and-events/events-and-archive/cheri-blossoms-conference-2025/54caed33-c901fe4e463d-st-johns-college-bridge-of-sighs.jpg){: .image-full }
+![St John's College, Cambridge, with the Bridge of Sighs](/assets/images/events/cheri-blossoms-conference-2025/st-johns-college-bridge-of-sighs.webp){: .image-full }
 
 ### Address:
 
-![St John's College, Cambridge](/assets/images/news-and-events/events-and-archive/cheri-blossoms-conference-2025/d6520969-ed92a3406ed6-st-johns-college-front.jpg){: .image-left }
+![St John's College, Cambridge](/assets/images/events/cheri-blossoms-conference-2025/st-johns-college-front.webp){: .image-left }
 
 St. John’s College, St. Johns Street, Cambridge, CB2 1TP
 

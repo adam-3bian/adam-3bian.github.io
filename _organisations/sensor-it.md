@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/common/3d5000f0-dc3ef17868db-logo.png
+  src: /assets/images/organisation/sensor-it.webp
   alt: Sensor IT
-  width: 2000
-  height: 273
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

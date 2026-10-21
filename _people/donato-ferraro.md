@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/donato-ferraro/de185f32-22de9fbf4152-portrait.jpg
+  src: /assets/images/people/donato-ferraro.webp
   alt: Donato Ferraro
-  width: 972
-  height: 808
+  width: 512
+  height: 512
+  fit: cover
 person:
   roles:
   - speaker

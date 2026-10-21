@@ -19,7 +19,7 @@ related:
 The **CHERI Enabled** programme helps organisations demonstrate how a product implements CHERI technology. Certified products receive a public certification record describing what was assessed, the supporting evidence, and the scope of the certification.
 
 | --- | --- |
-| [![CHERI Enabled logo](/assets/images/adopt/assurance-and-adoption/adopt-assurance-and-adoption-about-cheri-enabled/aeb71ddf-be89fa8f9b81-cheri-enabled.webp){: .image-full }](/adopt/assurance-and-adoption/cheri-enabled-products/) | See all the [CHERI Enabled products](/adopt/assurance-and-adoption/cheri-enabled-products/) |
+| [![CHERI Enabled logo](/assets/images/shared/cheri-enabled.webp){: .image-full }](/adopt/assurance-and-adoption/cheri-enabled-products/) | See all the [CHERI Enabled products](/adopt/assurance-and-adoption/cheri-enabled-products/) |
 
 ## Why CHERI Enabled matters
 
@@ -35,7 +35,7 @@ For buyers, this reduces uncertainty. For product developers, it provides an ind
 
 ## How certification works
 
-![Certification Process](/assets/images/adopt/assurance-and-adoption/adopt-assurance-and-adoption-about-cheri-enabled/ece8841a-8651dcf7d9cf-certification-process.webp){: .image-full }
+![Certification Process](/assets/images/shared/certification-process.webp){: .image-full }
 
 Products are assessed through a structured review process:
 
@@ -69,7 +69,7 @@ Security outcomes always depend on how technology is integrated, configured, and
 
 The programme will expand over time as the CHERI ecosystem grows, introducing additional product categories, requirements, and assessment criteria. Certifications are therefore reviewed every two years to help ensure that records remain aligned with current programme requirements.
 
-Read the [current programme specifications](/assets/shared/source-assets/611b980d082a-certification-program-v1.pdf).
+Read the [current programme specifications](/assets/pdf/shared/certification-program-v1.pdf).
 
 ## Fees
 

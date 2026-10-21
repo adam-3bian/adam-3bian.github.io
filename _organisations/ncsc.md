@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/alliance/leadership/ncsc/2d1dae95-9d718e909b7a-logo.png
+  src: /assets/images/organisation/ncsc.webp
   alt: NCSC logo
-  width: 650
-  height: 217
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

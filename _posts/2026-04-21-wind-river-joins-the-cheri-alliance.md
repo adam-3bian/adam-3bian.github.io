@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/news-and-events/news-and-analysis/wind-river-joins-the-cheri-alliance/33704d77-21bf3b105ad6-hero.png
+  src: /assets/images/posts/2026-04-21-wind-river-joins-the-cheri-alliance.webp
   alt: Welcome Wind River - CHERI Alliance member
-  width: 2000
-  height: 666
+  width: 1280
+  height: 720
+  fit: contain
 date: '2026-04-21T13:14:00+01:00'
 post:
   category: cheri-alliance-news

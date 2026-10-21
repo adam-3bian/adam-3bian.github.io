@@ -3,6 +3,7 @@
 from pathlib import Path
 from urllib.parse import urlsplit,unquote
 import argparse,collections,csv,datetime,hashlib,json,posixpath,re,sys,zoneinfo
+from functools import lru_cache
 import yaml
 from lxml import html
 ROOT=Path(__file__).resolve().parents[1];DOC=ROOT/'docs/migrations/v5.3'
@@ -28,6 +29,22 @@ def document(path):
  parts=path.read_text().split('---',2)
  if len(parts)!=3 or parts[0].strip():raise ValueError(str(path)+': missing front matter')
  return load(parts[1]),parts[2].strip()
+@lru_cache(maxsize=1)
+def asset_migration():
+ path=ROOT/'docs/assets/migration.json'
+ return {a['source']:a for a in json.loads(path.read_text())['assets']} if path.exists() else {}
+def migrated_asset(url):
+ base=re.split(r'[?#]',url,1)[0]
+ return (asset_migration().get(base,{}).get('target') or base)+url[len(base):]
+def preserved_asset(directory,url,info):
+ entry=asset_migration().get(url)
+ if entry and entry.get('source_sha256')!=info['sha256']:return False
+ path=directory/(entry['target'] if entry else url).lstrip('/')
+ if not path.is_file():return False
+ # Image preparation deliberately changes bytes. The migration retains source
+ # checksums for provenance; check_assets validates the editable final images.
+ if entry and path.suffix.lower() in ['.png','.jpg','.jpeg','.webp','.gif','.svg','.ico']:return True
+ return hashlib.sha256(path.read_bytes()).hexdigest()==info['sha256']
 def unknown(value,allowed,label,errors):
  if not isinstance(value,dict):errors.append(label+': expected object');return
  if set(value)-set(allowed):errors.append(label+': unknown fields '+str(sorted(set(value)-set(allowed))))
@@ -255,7 +272,7 @@ def validate_source(errors,warnings):
   for person in old.get('speakers',[]):
    if not any(s['person']==person and s.get('session')=='talk-'+old['id'] for s in event['event'].get('speakers',[])):errors.append('Talk speaker lost '+old['id'])
   for link in old['links']:
-   if not any(res['url']==link['url'] and res.get('session_id')=='talk-'+old['id'] for res in event.get('resources',[])):errors.append('Talk media lost '+old['id'])
+   if not any(res['url']==migrated_asset(link['url']) and res.get('session_id')=='talk-'+old['id'] for res in event.get('resources',[])):errors.append('Talk media lost '+old['id'])
  snapshot=json.loads((DOC/'source-snapshot.json').read_text())
  original={r['path']:r['data'] for entries in snapshot.values() for r in entries}
  for r in migration:
@@ -265,7 +282,7 @@ def validate_source(errors,warnings):
   if r['old_source'].startswith('_organisations/') and bool(old.get('member'))!=bool(fm['organisation'].get('membership',{}).get('is_member')):errors.append('Membership flag changed '+r['old_source'])
  for url,info in baseline['assets'].items():
   p=ROOT/url.lstrip('/')
-  if p.suffix.lower() in ['.png','.jpg','.jpeg','.webp','.gif','.svg','.pdf','.ttf','.woff','.woff2'] and (not p.is_file() or hashlib.sha256(p.read_bytes()).hexdigest()!=info['sha256']):errors.append('Changed/lost original binary '+url)
+  if p.suffix.lower() in ['.png','.jpg','.jpeg','.webp','.gif','.svg','.pdf','.ttf','.woff','.woff2'] and not preserved_asset(ROOT,url,info):errors.append('Changed/lost original binary '+url)
  for name in ['header','footer','breadcrumbs','form-from-data','form-fields','newsletter-cta','relationships','relationship-section','card','action']:
   if not (ROOT/('_includes/'+name+'.html')).is_file():errors.append('Missing shared component '+name)
  for name in ['default','page','list','detail','article','redirect']:
@@ -317,7 +334,7 @@ def rendered(site,baseurl,routes,redirects,errors):
    if not ok:errors.append('Lost historical fragment '+url+'#'+identifier)
  for url,info in before['assets'].items():
   if Path(url).suffix.lower() not in ['.png','.jpg','.jpeg','.webp','.gif','.svg','.pdf','.ttf','.woff','.woff2']:continue
-  p=site/url.lstrip('/');ok=p.is_file() and hashlib.sha256(p.read_bytes()).hexdigest()==info['sha256'];binary.append({'old_path':url,'sha256':info['sha256'],'preserved':ok})
+  ok=preserved_asset(site,url,info);binary.append({'old_path':url,'new_path':migrated_asset(url),'sha256':info['sha256'],'preserved':ok})
   if not ok:errors.append('Lost rendered binary '+url)
  return fragments,binary,len(pages)
 

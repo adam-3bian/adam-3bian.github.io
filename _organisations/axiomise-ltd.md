@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/alliance/leadership/axiomise-ltd/52e18b99-fda655ce8b21-logo.png
+  src: /assets/images/organisation/axiomise-ltd.webp
   alt: Axiomise logo
-  width: 600
-  height: 200
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

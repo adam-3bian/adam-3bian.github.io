@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/common/843d2033-03a6b87e3dd0-logo.png
+  src: /assets/images/organisation/siemens.webp
   alt: SIEMENS logo
-  width: 1598
-  height: 255
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

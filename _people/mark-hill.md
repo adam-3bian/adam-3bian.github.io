@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/mark-hill/6a6ea3dc-c7093451b411-portrait.jpg
+  src: /assets/images/people/mark-hill.webp
   alt: Mark Hill
   width: 400
   height: 400
+  fit: cover
 person:
   roles:
   - speaker

@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/david-chisnall/97230d51-0d2abfc63422-portrait.jpg
+  src: /assets/images/people/david-chisnall.webp
   alt: David Chisnall
-  width: 750
+  width: 500
   height: 500
+  fit: cover
 person:
   roles:
   - speaker

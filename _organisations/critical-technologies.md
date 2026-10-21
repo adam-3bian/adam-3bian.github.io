@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/alliance/leadership/critical-technologies/9ba66b34-a7937cf454b7-logo.png
+  src: /assets/images/organisation/critical-technologies.webp
   alt: CTI logo
-  width: 903
-  height: 396
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

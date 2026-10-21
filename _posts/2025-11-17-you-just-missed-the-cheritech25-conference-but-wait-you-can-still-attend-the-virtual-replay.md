@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/news-and-events/news-and-analysis/you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay/d01fb2e6-2e1bb34a5f1e-hero.png
+  src: /assets/images/posts/2025-11-17-you-just-missed-the-cheritech25-conference-but-wait-you-can-still-attend-the-virtual-replay.webp
   alt: You just missed the CHERITech’25 Conference – but wait, you can still attend the virtual replay!
-  width: 1000
-  height: 1000
+  width: 1280
+  height: 720
+  fit: contain
 date: '2025-11-17T15:10:57+00:00'
 post:
   category: cheri-alliance-news
@@ -25,7 +26,7 @@ post:
 
 ## Overview
 
-![CHERITech’25 Conference](/assets/images/common/e8519360-0e6d3180c4d1-cheritech25.webp){: .image-right }
+![CHERITech’25 Conference](/assets/images/events/cheritech25.webp){: .image-right }
 
 This year’s event marked a significant step forward under the leadership of the CHERI Alliance, with sessions highlighting solid progress across hardware, software and emerging standards. Keynotes from Professor John Goodacre ([University of Manchester](/organisations/the-university-of-manchester/) and UKRI), Paul Caseley OBE (DSTL) and Mike Eftimakis (CHERI Alliance) opened a programme that focused on real developments in capability-based systems.
 

@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/common/a2d61005-b35ed2559906-logo.png
+  src: /assets/images/organisation/verisilicon.webp
   alt: VeriSilicon logo
-  width: 1033
-  height: 375
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

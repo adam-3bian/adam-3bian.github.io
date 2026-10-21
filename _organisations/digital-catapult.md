@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/alliance/leadership/digital-catapult/0f7c5593-797be91526b2-logo.jpg
+  src: /assets/images/organisation/digital-catapult.webp
   alt: Digital Catapult logo
-  width: 1000
-  height: 1000
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

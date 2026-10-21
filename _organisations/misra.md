@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/alliance/leadership/misra/ce9cfc81-26a73a099515-logo.png
+  src: /assets/images/organisation/misra.webp
   alt: MISRA logo
-  width: 1153
-  height: 1024
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

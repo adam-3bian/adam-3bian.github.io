@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/common/f373e9aa-b40f17e0c2fc-cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus.png
+  src: /assets/images/posts/2024-11-12-cheri-alliance-officially-launches-adds-major-partners-including-google-to-tackle-cybersecurity-threats-at-the-hardware-level.webp
   alt: CHERI Alliance Officially Launches, Adds Major Partners including Google, to Tackle Cybersecurity Threats at the Hardware Level
-  width: 513
-  height: 484
+  width: 864
+  height: 486
+  fit: contain
 date: '2024-11-12T08:28:18+00:00'
 post:
   category: cheri-alliance-news

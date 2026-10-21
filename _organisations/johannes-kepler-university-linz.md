@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/alliance/leadership/johannes-kepler-university-linz/ee52d4b7-6d91a83f4ac8-logo.png
+  src: /assets/images/organisation/johannes-kepler-university-linz.webp
   alt: Johannes Kepler University Linz (JKU)
-  width: 2000
-  height: 1414
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

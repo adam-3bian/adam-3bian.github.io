@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/news-and-events/news-and-analysis/the-leading-root-of-trust-now-integrates-cheri-security-technology/6d7e0533-903fec6d1c34-hero.jpg
+  src: /assets/images/posts/2026-07-15-the-leading-root-of-trust-now-integrates-cheri-security-technology.webp
   alt: OpenTitan chip
-  width: 1536
-  height: 1024
+  width: 1280
+  height: 720
+  fit: contain
 date: '2026-07-15T12:35:43+01:00'
 post:
   category: ecosystem

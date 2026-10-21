@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/news-and-events/news-and-analysis/unlocking-the-future-a-roadmap-for-cheri-technology-advancement/37d70875-9e54b16eecb6-hero.png
+  src: /assets/images/posts/2025-05-27-unlocking-the-future-a-roadmap-for-cheri-technology-advancement.webp
   alt: World map with binary code
   width: 1024
   height: 576
+  fit: contain
 date: '2025-05-27T10:16:10+01:00'
 post:
   category: cheri-alliance-news

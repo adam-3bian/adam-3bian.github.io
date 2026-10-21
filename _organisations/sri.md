@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/alliance/leadership/sri/cf4ac63e-9a4b300a18a6-logo.png
+  src: /assets/images/organisation/sri.webp
   alt: SRI logo
-  width: 300
-  height: 112
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

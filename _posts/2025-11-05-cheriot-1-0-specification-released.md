@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/common/eab25c18-dca93f847af6-cheriot-1-0-specification-released.png
+  src: /assets/images/posts/2025-11-05-cheriot-1-0-specification-released.webp
   alt: CHERIoT 1.0 Specification Released
-  width: 305
-  height: 300
+  width: 544
+  height: 306
+  fit: contain
 date: '2025-11-05T10:00:12+00:00'
 post:
   category: cheri-alliance-news

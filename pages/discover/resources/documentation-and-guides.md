@@ -19,16 +19,16 @@ related:
 The CHERI Alliance working groups regularly publishes guideline documents and even standards. Please find here a list of available publications.
 
 
-See [CHERI Branding Guidelines](/assets/pages/discover--resources--documentation-and-guides/3d933a481b79-cheri-branding-guidelines.pdf).
+See [CHERI Branding Guidelines](/assets/pdf/shared/cheri-branding-guidelines.pdf).
 
 
-See [CHERI Tag Bit Transport Overlay Standard](/assets/pages/discover--resources--documentation-and-guides/9bbe9f6de06c-cheri-tag-bit-transport-overlay-standard-v0.9.pdf).
+See [CHERI Tag Bit Transport Overlay Standard](/assets/pdf/posts/2026-09-21-cheri-tag-bit-transport-overlay-standard-version-0-9-released/cheri-tag-bit-transport-overlay-standard-v0-9.pdf).
 
 
-See [Certification program](/assets/shared/source-assets/611b980d082a-certification-program-v1.pdf).
+See [Certification program](/assets/pdf/shared/certification-program-v1.pdf).
 
 
-See [Guide - CHERI at the SoC Level](/assets/pages/discover--resources--documentation-and-guides/1c519b0ea7cf-guide-cheri-at-soc-level.pdf).
+See [Guide - CHERI at the SoC Level](/assets/pdf/shared/guide-cheri-at-soc-level.pdf).
 
 
-See [What Is Memory Safety](/assets/pages/discover--resources--documentation-and-guides/a70331655b08-what-is-memory-safety-v0.9.pdf).
+See [What Is Memory Safety](/assets/pdf/shared/what-is-memory-safety-v0-9.pdf).

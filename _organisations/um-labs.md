@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/common/3f1fbcff-768e679cb95a-logo.png
+  src: /assets/images/organisation/um-labs.webp
   alt: UM Labs
-  width: 2000
-  height: 1365
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

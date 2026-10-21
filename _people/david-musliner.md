@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/david-musliner/956ae4bd-5770f907f606-portrait.jpg
+  src: /assets/images/people/david-musliner.webp
   alt: David Musliner
   width: 180
   height: 180
+  fit: cover
 person:
   roles:
   - speaker

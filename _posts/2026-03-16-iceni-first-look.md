@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/news-and-events/news-and-analysis/iceni-first-look/65250ab5-36d8eddd801e-hero.png
+  src: /assets/images/posts/2026-03-16-iceni-first-look.webp
   alt: ICENI
-  width: 1632
-  height: 1147
+  width: 1280
+  height: 720
+  fit: contain
 date: '2026-03-16T13:03:29+00:00'
 post:
   category: cheri-alliance-news

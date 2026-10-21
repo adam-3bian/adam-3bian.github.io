@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/alliance/leadership/techworks/f5defae6-2bce694630e0-logo.png
+  src: /assets/images/organisation/techworks.webp
   alt: TechWorks logo
-  width: 2000
-  height: 388
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

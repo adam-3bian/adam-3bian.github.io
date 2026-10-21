@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/haydn-povey/3f197065-96fd3cae5bca-portrait.png
+  src: /assets/images/people/haydn-povey.webp
   alt: Haydn Povey
-  width: 1024
-  height: 768
+  width: 485
+  height: 485
+  fit: cover
 person:
   roles:
   - speaker

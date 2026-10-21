@@ -27,13 +27,13 @@ related:
 
 The CHERI ecosystem includes several organisations with complementary missions. The CHERI Research Centre, The Capable Hub, and the CHERI Alliance each play different roles, but work closely together to help turn CHERI research into practical products, open-source software, standards, and real-world deployment.
 
-![CHERI Alliance, CHERI Research Centre and The Capable Hub working together](/assets/images/alliance/about-and-governance/alliance-about-and-governance-accelerating-together/6bd9bb8b-9540283f8f64-ca-crc-tch.png){: .image-full }
+![CHERI Alliance, CHERI Research Centre and The Capable Hub working together](/assets/images/shared/ca-crc-tch.webp){: .image-full }
 
 ## Strengthening the CHERI Ecosystem Together
 
 |  |  |
 | --- | --- |
-| ![CHERI Logo](/assets/images/alliance/about-and-governance/alliance-about-and-governance-accelerating-together/4b20dca2-9899bc30b0-logo-blue.webp){: .image-full } | **The CHERI Alliance**  Coordinating the global CHERI ecosystem |
+| ![CHERI Logo](/assets/images/shared/branding/logo-blue.webp){: .image-full } | **The CHERI Alliance**  Coordinating the global CHERI ecosystem |
 
 The CHERI Alliance helps coordinate the global CHERI ecosystem by bringing together industry, academia, government, and open-source communities.
 
@@ -45,7 +45,7 @@ Our role includes:
 
 |  |  |
 | --- | --- |
-| ![The Capable Hub logo](/assets/images/alliance/about-and-governance/alliance-about-and-governance-accelerating-together/5ba060f0-70ab53193721-the-capable-hub.png){: .image-full } | **The Capable Hub** Engineering open-source CHERI software |
+| ![The Capable Hub logo](/assets/images/organisation/the-capable-hub.webp){: .image-full } | **The Capable Hub** Engineering open-source CHERI software |
 
 [The Capable Hub](/organisations/the-capable-hub/) provides engineering expertise, infrastructure, and open-source software that help organisations build and deploy CHERI-enabled products.
 
@@ -57,7 +57,7 @@ Key contributions include:
 
 |  |  |
 | --- | --- |
-| ![CHERI Research Centre logo](/assets/images/common/f17cf5ae-171acadadd69-cheri-research-centre.png){: .image-full } | **The CHERI Research Centre** Advancing CHERI through world leading research |
+| ![CHERI Research Centre logo](/assets/images/shared/cheri-research-centre.webp){: .image-full } | **The CHERI Research Centre** Advancing CHERI through world leading research |
 
 The [CHERI Research Centre](https://cheri.cst.cam.ac.uk) at the [University of Cambridge](/organisations/university-of-cambridge/) has led CHERI research for more than fifteen years.
 

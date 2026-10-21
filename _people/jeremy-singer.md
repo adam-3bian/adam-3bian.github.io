@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/jeremy-singer/ef949248-5d91f083d9ea-portrait.png
+  src: /assets/images/people/jeremy-singer.webp
   alt: Jeremy Singer
-  width: 1024
-  height: 768
+  width: 420
+  height: 420
+  fit: cover
 person:
   roles:
   - speaker

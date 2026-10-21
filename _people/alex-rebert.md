@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/alex-rebert/e7d16c85-e9ac8af358c1-portrait.png
+  src: /assets/images/people/alex-rebert.webp
   alt: Alex Rebert
-  width: 600
-  height: 600
+  width: 512
+  height: 512
+  fit: cover
 person:
   roles:
   - speaker

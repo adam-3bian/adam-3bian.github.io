@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/alfredo-mazzinghi/9ada11c0-fb97be2a6653-portrait.png
+  src: /assets/images/people/alfredo-mazzinghi.webp
   alt: Alfredo Mazzinghi
-  width: 1024
-  height: 768
+  width: 294
+  height: 294
+  fit: cover
 person:
   roles:
   - speaker

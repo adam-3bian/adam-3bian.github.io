@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/ka-wing-li/71f8fa6e-f1b3ce0c92c4-portrait.png
+  src: /assets/images/people/ka-wing-li.webp
   alt: Ka Wing Li
-  width: 900
-  height: 1200
+  width: 512
+  height: 512
+  fit: cover
 person:
   roles:
   - speaker

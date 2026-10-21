@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/jonathan-woodruff/d1400165-7b6014d71dff-portrait.png
+  src: /assets/images/people/jonathan-woodruff.webp
   alt: Jonathan Woodruff
-  width: 821
-  height: 836
+  width: 512
+  height: 512
+  fit: cover
 person:
   roles:
   - speaker

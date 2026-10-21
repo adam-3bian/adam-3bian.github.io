@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/common/24f93a84-8a1142aa0d27-hero.png
+  src: /assets/images/posts/2024-12-04-cybersecurity-by-design-from-research-to-industry-conference-report.webp
   alt: ‘Cybersecurity by Design – from Research to Industry’ — Conference Report
-  width: 889
-  height: 1038
+  width: 1280
+  height: 720
+  fit: contain
 date: '2024-12-04T16:46:42+00:00'
 post:
   category: cheri-alliance-news
@@ -28,7 +29,7 @@ Following this, John Goodacre took us through the Digital Security by Design (DS
 
 The first round of keynotes was rounded off with an excellent deep dive into CHERI at a (semi!) technical level, delivered by Prof. Robert Watson from [Cambridge University](/organisations/university-of-cambridge/), one of the primary researchers behind CHERI technology.
 
-![Robert Watson speaking at the 'Cybersecurity by Design' conference on 12th November 2024](/assets/images/news-and-events/news-and-analysis/cybersecurity-by-design-from-research-to-industry-conference-report/a6dd1088-3436bc5cd5b7-robert-watson-speaking.png){: .image-full }
+![Robert Watson speaking at the 'Cybersecurity by Design' conference on 12th November 2024](/assets/images/posts/2024-12-04-cybersecurity-by-design-from-research-to-industry-conference-report/robert-watson-speaking.webp){: .image-full }
 
 The session breaks gave attendees a chance to explore the exhibition stands and network with a great mix of familiar faces and new people. Whilst we’re waiting on CHERI silicon beyond Morello there’s lots of good work happening with FPGA-based systems. [Codasip](/organisations/codasip/) had their FPGA evaluation platform on show and my company, [lowRISC](/organisations/lowrisc/), brought along some Sonata boards (a CHERIoT evaluation platform that has been generating significant interest and uptake within the CHERI community). [SCI Semi](/organisations/sci-semiconductor/) were also present, demonstrating their latest CHERIoT RTOS work on Sonata.
 
@@ -36,7 +37,7 @@ The second round of keynotes opened with Reid Derby from [CyNam](/organisations/
 
 My own keynote was next; I talked about the role of collaborative engineering and how we at [lowRISC](/organisations/lowrisc/), a non-profit engineering company, leverage this approach to build open silicon, highlighting as a case study our co-creation of the world’s first commercial-grade open source chip, OpenTitan Earl Grey. This has been developed with a number of industrial and academic partners including [Google](/organisations/google/), and is now the plan of record security chip for Chromebooks. I also covered our work with the UKRI funded Sunburst project — to which we have recently welcomed [SCI Semiconductor](/organisations/sci-semiconductor/) as partners — to develop Sonata, an evaluation platform for the CHERI derived CHERIoT-Ibex CPU core that has received significant interest and is the primary platform for the latest DSbD cohort. SCI will be using this as a base to accelerate the development of their recently announced Iceni line of CHERIoT microcontrollers.
 
-![Gavin Ferris speaking at the 'Cybersecurity by Design' conference on 12th November 2024](/assets/images/news-and-events/news-and-analysis/cybersecurity-by-design-from-research-to-industry-conference-report/9d18e461-9b753de7e859-gavin-ferris-speaking.png){: .image-full }
+![Gavin Ferris speaking at the 'Cybersecurity by Design' conference on 12th November 2024](/assets/images/posts/2024-12-04-cybersecurity-by-design-from-research-to-industry-conference-report/gavin-ferris-speaking.webp){: .image-full }
 
 With the keynotes complete, Mike Eftimakis, a fellow Founding Director, took the stage to officially launch the [CHERI Alliance](/)! He discussed why this is such an exciting time for CHERI, with over a decade of research and development now bearing fruit. For example, in addition to Arm’s existing Morello platform, [Codasip](/organisations/codasip/) have announced availability of commercial CHERI-enabled IP and SCI aims to release the first members of their Iceni family of CHERIoT-based silicon next year.  The Alliance will play a critical role as we enter the first phase of true commercial adoption for CHERI, bringing everyone together to drive standardisation and create a coherent ecosystem around this seminal hardware security technology.
 

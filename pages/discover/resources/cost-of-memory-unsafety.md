@@ -28,7 +28,7 @@ CHERI helps reduce that risk by making many memory-safety errors impossible to e
 
 When a memory-safety vulnerability is found, fixing the bug is often the smallest part of the cost.
 
-![Vulnerability handling process](/assets/images/common/8893c5e7-55d113947b39-vulnerability-handling.webp){: .image-full }
+![Vulnerability handling process](/assets/images/shared/vulnerability-handling.webp){: .image-full }
 
 A memory-safety vulnerability can trigger **costly** investigations, regulatory reporting, emergency patching, customer support activity, compliance work, and roadmap **delays**, consuming resources long after the original bug has been fixed.
 

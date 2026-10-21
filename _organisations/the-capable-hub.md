@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/common/db8c7e90-5f69ed560bdc-logo.png
+  src: /assets/images/organisation/the-capable-hub.webp
   alt: The Capable Hub logo
-  width: 1000
-  height: 243
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

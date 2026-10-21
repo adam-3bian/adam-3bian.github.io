@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/common/2bcd0250-795076e4b546-logo.png
+  src: /assets/images/organisation/wyvern-global.webp
   alt: Wyvern Global logo
   width: 1200
-  height: 900
+  height: 400
   fit: contain
 organisation:
   membership:

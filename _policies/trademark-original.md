@@ -15,7 +15,7 @@ policy:
 resources:
 - type: pdf
   label: Download PDF
-  url: /assets/shared/source-assets/d904a00cfb15-trademark-policy.pdf
+  url: /assets/pdf/shared/trademark-policy.pdf
 ---
 
 ## Trademark Policy
@@ -24,14 +24,14 @@ The CHERI Alliance Trademark Policy ensures the CHERI name and logos are used ac
 
 For questions or permissions, please [contact us](/alliance/membership/contact/).
 
-[Download PDF](/assets/shared/source-assets/d904a00cfb15-trademark-policy.pdf)
+[Download PDF](/assets/pdf/shared/trademark-policy.pdf)
 
 ## Branding Guidelines
 
-[Download PDF](/assets/pages/discover--resources--documentation-and-guides/3d933a481b79-cheri-branding-guidelines.pdf)
+[Download PDF](/assets/pdf/shared/cheri-branding-guidelines.pdf)
 
 ## Logos Download
 
-Please use our logos without alteration. Minimum clear space and sizing rules can be found in the [branding guidelines](/assets/pages/discover--resources--documentation-and-guides/3d933a481b79-cheri-branding-guidelines.pdf).
+Please use our logos without alteration. Minimum clear space and sizing rules can be found in the [branding guidelines](/assets/pdf/shared/cheri-branding-guidelines.pdf).
 
-[Download Zip](/assets/pages/alliance--about-and-governance--trademark/5ff7f679f608-cheri-alliance-logo-pack.zip)
+[Download Zip](/assets/zip/shared/cheri-alliance-logo-pack.zip)

@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/jianyi-cheng/24aadaa1-5953bf23c1ca-portrait.jpg
+  src: /assets/images/people/jianyi-cheng.webp
   alt: Jianyi Cheng
-  width: 240
-  height: 320
+  width: 140
+  height: 140
+  fit: cover
 person:
   roles:
   - speaker

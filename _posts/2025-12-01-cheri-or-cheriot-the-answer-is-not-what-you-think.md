@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/common/eab25c18-dca93f847af6-cheriot-1-0-specification-released.png
+  src: /assets/images/posts/2025-12-01-cheri-or-cheriot-the-answer-is-not-what-you-think.webp
   alt: CHERI or CHERIoT? The Answer Is Not What You Think
-  width: 305
-  height: 300
+  width: 544
+  height: 306
+  fit: contain
 date: '2025-12-01T10:00:57+00:00'
 post:
   category: cheri-alliance-news

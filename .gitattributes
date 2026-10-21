@@ -1,5 +1,5 @@
-# Keep downloaded SVG artwork byte-for-byte, including its source whitespace.
-assets/organisations/**/logo-source.svg -text whitespace=-blank-at-eol
-
 # Preserve original SVG bytes, including their existing final blank lines.
-*.svg whitespace=-blank-at-eof
+*.svg -text whitespace=-blank-at-eof
+
+# PDFs are downloads, including files with long text-only headers.
+*.pdf binary

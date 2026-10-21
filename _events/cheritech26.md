@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: Events & Archive
 image:
-  src: /assets/images/common/a6d3b833-408459d34c43-cheritech26.webp
+  src: /assets/images/events/cheritech26.webp
   alt: CHERITech'26
   width: 640
   height: 360
+  fit: contain
 date: '2026-11-12'
 end_date: '2026-11-13'
 event:
@@ -301,7 +302,7 @@ Whether CHERI is new to you or already on your technology roadmap, join us to **
 
 ## CHERI meets the semiconductor industry
 
-![Munich Messe](/assets/images/news-and-events/events-and-archive/cheritech26/9c74ec1b-53367353357_e4e8ac7171_o.jpg){: .image-right }
+![Munich Messe](/assets/images/events/cheritech26/53367353357-e4e8ac7171-o.webp){: .image-right }
 
 The next step in secure computing is happening at the hardware level.
 
@@ -315,7 +316,7 @@ CHERITech is not just about watching presentations. Participants can ask questio
 
 ## Why attend?
 
-![Munich Messe](/assets/images/news-and-events/events-and-archive/cheritech26/934d3985-91e5fea56bd1-munich-messe.jpg){: .image-left }
+![Munich Messe](/assets/images/events/cheritech26/munich-messe.webp){: .image-left }
 
 Whether you're new to CHERI or already building with it, CHERITech’26 is an opportunity to:
 - get up to speed
@@ -352,15 +353,15 @@ Exhibits and demonstrations run alongside the conference programme, giving visit
 Exhibitor booths will be open throughout SEMICON Europa, from **10 to 13 November 2026**, not only during the CHERITech sessions.
 
 | --- | --- | --- |
-| ![Capabilities Limited logo](/assets/images/common/65f15bf1-0c30741ff5ce-logo.png){: .image-full } | ![CHERI logo](/assets/images/common/8d481a0e-5a6300ace656-cheri.png){: .image-full } | ![CHERI Research Centre logo](/assets/images/common/1c7dcba3-ea303349d4e1-logo.png){: .image-full } |
-| ![Codasip logo](/assets/images/common/cf6fbc19-ef815ad95752-logo.png){: .image-full } | ![lowRISC logo](/assets/images/common/80ec6dcd-d432df8a7ccf-logo.png){: .image-full } | ![PA Consulting logo](/assets/images/common/4a4cc270-8aba894151f8-logo.png){: .image-full } |
-| ![Parvat logo](/assets/images/common/1c6897e0-983927485935-logo.png){: .image-full } | ![SCI Semiconductor logo](/assets/images/common/36f8a3a5-89396ef186d7-logo.png){: .image-full } | ![UM-Labs logo](/assets/images/common/3f1fbcff-768e679cb95a-logo.png){: .image-full } |
+| ![Capabilities Limited logo](/assets/images/organisation/capabilities-limited.webp){: .image-full } | ![CHERI logo](/assets/images/posts/2025-11-25-new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd.webp){: .image-full } | ![CHERI Research Centre logo](/assets/images/organisation/university-of-cambridge.webp){: .image-full } |
+| ![Codasip logo](/assets/images/organisation/codasip.webp){: .image-full } | ![lowRISC logo](/assets/images/organisation/lowrisc.webp){: .image-full } | ![PA Consulting logo](/assets/images/organisation/pa-consulting.webp){: .image-full } |
+| ![Parvat logo](/assets/images/organisation/parvat-infotech.webp){: .image-full } | ![SCI Semiconductor logo](/assets/images/organisation/sci-semiconductor.webp){: .image-full } | ![UM-Labs logo](/assets/images/organisation/um-labs.webp){: .image-full } |
 
 
 ## Venue - Find us in Hall B0!
 
-![Hall B0 floorplan](/assets/images/news-and-events/events-and-archive/cheritech26/d8f4032e-hall-floorplan.webp){: .image-right }
-![Munich Messe](/assets/images/news-and-events/events-and-archive/cheritech26/7e6827c6-53368566214_a49da891b9_o.jpg){: .image-left }
+![Hall B0 floorplan](/assets/images/events/cheritech26/hall-floorplan-2.webp){: .image-right }
+![Munich Messe](/assets/images/events/cheritech26/53368566214-a49da891b9-o.webp){: .image-left }
 
 **NextSEMI Arena, Hall B0**  
 **Messe München**  

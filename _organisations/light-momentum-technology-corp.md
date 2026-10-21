@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/alliance/leadership/light-momentum-technology-corp/87dfcbe5-baa4c8d4b03f-logo.png
+  src: /assets/images/organisation/light-momentum-technology-corp.webp
   alt: LMT logo
-  width: 478
-  height: 99
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

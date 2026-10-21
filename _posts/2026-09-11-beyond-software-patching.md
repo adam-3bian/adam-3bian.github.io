@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/news-and-events/news-and-analysis/beyond-software-patching/86e2e11a-bb1ce7a6a7-cheri-logo.png
+  src: /assets/images/posts/2026-09-11-beyond-software-patching.webp
   alt: CHERI logo
   width: 432
-  height: 145
+  height: 243
+  fit: contain
 date: '2026-09-11T12:47:46+00:00'
 post:
   category: cheri-alliance-news
@@ -33,7 +34,7 @@ No product team or company can guarantee that every defect will be found before 
 
 This is one of the central problems CHERI can help address.
 
-![Long-life utility platforms must keep evolving without allowing each new software component to enlarge the blast radius of a failure.](/assets/images/news-and-events/news-and-analysis/beyond-software-patching/483d9cbe-80ee4d1338-beyond_software_patching_blog_1.png){: .image-full width="955" height="537" }
+![Long-life utility platforms must keep evolving without allowing each new software component to enlarge the blast radius of a failure.](/assets/images/posts/2026-09-11-beyond-software-patching/beyond-software-patching-blog-1.webp){: .image-full width="955" height="537" }
 
 Long-life utility platforms must keep evolving without allowing each new software component to enlarge the blast radius of a failure.
 
@@ -107,13 +108,13 @@ The Energy Management System could decide when electricity should be consumed, s
 
 Over time, third-party energy providers, aggregators or equipment suppliers may also introduce applications that participate in optimisation or flexibility services, increasing the importance of giving each component only the authority it requires.
 
-![Figure 1: Greater intelligence at the grid edge across smart metering and energy management platforms](/assets/images/news-and-events/news-and-analysis/beyond-software-patching/55f32508-dea3b9883d-Picture1.png){: .image-full width="1426" height="797" }
+![Figure 1: Greater intelligence at the grid edge across smart metering and energy management platforms](/assets/images/posts/2026-09-11-beyond-software-patching/grid-edge-intelligence.webp){: .image-full width="1426" height="797" }
 
 Figure 1: Greater intelligence at the grid edge across smart metering and energy management platforms
 
 CHERI can strengthen this architecture by enforcing separation between software components. Communications software could exchange approved messages without being able to read cryptographic keys or invoke energy-control functions, while an analytics or optimisation application could use selected operational data without gaining access to billing information, device identity or the wider metering platform.
 
-![Figure 2: CHERI can permit approved interfaces while blocking access between compartments by default](/assets/images/news-and-events/news-and-analysis/beyond-software-patching/614c7788-d1b9354a30-Picture2.png){: .image-full width="1435" height="479" }
+![Figure 2: CHERI can permit approved interfaces while blocking access between compartments by default](/assets/images/posts/2026-09-11-beyond-software-patching/secure-edge-platform-architecture.webp){: .image-full width="1435" height="479" }
 
 Figure 2: CHERI can permit approved interfaces while blocking access between compartments by default
 
@@ -152,7 +153,7 @@ Product teams can now run representative software on CHERI platforms and generat
 
 A focused pilot can place one CHERI-enabled workload alongside an existing software stack. CHERI support is already available or under active development across major operating environments including Linux, FreeRTOS and Zephyr, reducing the need for product teams to start from scratch.
 
-![Figure 3: A focused evaluation produces evidence before a wider platform commitment](/assets/images/news-and-events/news-and-analysis/beyond-software-patching/e05f8d0f-cef8c62f96-Picture3.png){: .image-full width="1402" height="469" }
+![Figure 3: A focused evaluation produces evidence before a wider platform commitment](/assets/images/posts/2026-09-11-beyond-software-patching/adoption-workflow.webp){: .image-full width="1402" height="469" }
 
 Figure 3: A focused evaluation produces evidence before a wider platform commitment
 

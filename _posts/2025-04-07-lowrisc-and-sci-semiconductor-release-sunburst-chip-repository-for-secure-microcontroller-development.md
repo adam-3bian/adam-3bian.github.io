@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/news-and-events/news-and-analysis/lowrisc-and-sci-semiconductor-release-sunburst-chip-repository-for-secure-microcontroller-development/0c6314b2-a0a9378d1f98-hero.png
+  src: /assets/images/posts/2025-04-07-lowrisc-and-sci-semiconductor-release-sunburst-chip-repository-for-secure-microcontroller-development.webp
   alt: Gavin Ferris and Haydn Povey on stage at the CHERI Blossoms 2025 conference
-  width: 1024
-  height: 768
+  width: 1280
+  height: 720
+  fit: contain
 date: '2025-04-07T09:04:38+01:00'
 post:
   category: ecosystem

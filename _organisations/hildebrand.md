@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/alliance/leadership/hildebrand/5fb3c67d-80cf16d93e-hildebrandlogo-1024x177.png
+  src: /assets/images/organisation/hildebrand.webp
   alt: Hildebrand logo
-  width: 1024
-  height: 177
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

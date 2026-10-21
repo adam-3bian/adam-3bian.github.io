@@ -10,10 +10,15 @@ import hashlib
 import json
 from pathlib import Path
 from lxml import html
+from check_spec import asset_migration, migrated_asset
 
 
 def snapshot(folder, baseurl=''):
     pages = {}
+    # A shared source may now have a separate thumbnail named after each post.
+    # Compare those explicitly recorded derivatives as the same source artwork.
+    equivalents = {image['target']: row['target'] for row in asset_migration().values()
+                   for image in row.get('derivatives', [])}
     for path in folder.rglob('*.html'):
         tree = html.fromstring(path.read_text())
         for node in tree.xpath('//script|//style|//svg|//*[contains(concat(" ",normalize-space(@class)," ")," form-panel ")]'):
@@ -21,7 +26,9 @@ def snapshot(folder, baseurl=''):
         main = tree.find('.//main')
         scope = main if main is not None else tree
         def local(url):
-            return url[len(baseurl):] if baseurl and url.startswith(baseurl + '/') else url
+            url = url[len(baseurl):] if baseurl and url.startswith(baseurl + '/') else url
+            url = migrated_asset(url)
+            return equivalents.get(url, url)
         # Breadcrumbs now live in a full-width band before main. Preserve the
         # original content contract across that structural move.
         crumbs = tree.xpath('//nav[contains(concat(" ",normalize-space(@class)," ")," breadcrumbs ") and not(ancestor::main)]')

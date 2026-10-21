@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/thomas-nyman/603a85ec-e1347087a71c-portrait.png
+  src: /assets/images/people/thomas-nyman.webp
   alt: Thomas Nyman
-  width: 1021
-  height: 1024
+  width: 512
+  height: 512
+  fit: cover
 person:
   roles:
   - speaker

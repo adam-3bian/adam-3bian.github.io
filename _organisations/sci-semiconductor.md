@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/common/36f8a3a5-89396ef186d7-logo.png
+  src: /assets/images/organisation/sci-semiconductor.webp
   alt: SCI Semiconductor logo
-  width: 1201
-  height: 796
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

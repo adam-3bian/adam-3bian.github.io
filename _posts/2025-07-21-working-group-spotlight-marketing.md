@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/common/bca3bb76-bb889a4dc09e-cheri-alliance-working-groups.png
+  src: /assets/images/posts/2025-07-21-working-group-spotlight-marketing.webp
   alt: Working Group Spotlight – Marketing
-  width: 746
-  height: 369
+  width: 752
+  height: 423
+  fit: contain
 date: '2025-07-21T14:00:09+01:00'
 post:
   category: cheri-alliance-news

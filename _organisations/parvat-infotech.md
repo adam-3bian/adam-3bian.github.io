@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/common/1c6897e0-983927485935-logo.png
+  src: /assets/images/organisation/parvat-infotech.webp
   alt: Parvat logo
-  width: 2000
-  height: 1107
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

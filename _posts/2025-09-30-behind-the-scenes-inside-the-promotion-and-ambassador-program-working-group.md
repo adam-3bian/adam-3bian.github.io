@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/common/bca3bb76-bb889a4dc09e-cheri-alliance-working-groups.png
+  src: /assets/images/posts/2025-09-30-behind-the-scenes-inside-the-promotion-and-ambassador-program-working-group.webp
   alt: CHERI Alliance Working Groups logo
-  width: 746
-  height: 369
+  width: 752
+  height: 423
+  fit: contain
 date: '2025-09-30T10:51:40+01:00'
 post:
   category: cheri-alliance-news

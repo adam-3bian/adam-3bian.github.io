@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/alex-richardson/d0ddd85f-637a9e5f0218-portrait.jpg
+  src: /assets/images/people/alex-richardson.webp
   alt: Alex Richardson
-  width: 1351
-  height: 1449
+  width: 512
+  height: 512
+  fit: cover
 person:
   organisations:
   - organisation: google

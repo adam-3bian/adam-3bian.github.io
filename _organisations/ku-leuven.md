@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/alliance/leadership/ku-leuven/07171872-ed23aaf4cc00-logo.png
+  src: /assets/images/organisation/ku-leuven.webp
   alt: KU Leuven logo
-  width: 1323
-  height: 472
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

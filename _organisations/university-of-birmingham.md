@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/alliance/leadership/university-of-birmingham/1bd2677d-527814188d27-logo.png
+  src: /assets/images/organisation/university-of-birmingham.webp
   alt: University of Birmingham, Centre for Cyber Security and Privacy
-  width: 2000
-  height: 785
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

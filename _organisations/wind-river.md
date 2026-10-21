@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/alliance/leadership/wind-river/f0d9f89b-4ff9d998b332-logo.png
+  src: /assets/images/organisation/wind-river.webp
   alt: Wind River
-  width: 2000
-  height: 330
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

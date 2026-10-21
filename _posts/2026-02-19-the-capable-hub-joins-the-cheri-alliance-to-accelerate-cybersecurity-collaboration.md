@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/news-and-events/news-and-analysis/the-capable-hub-joins-the-cheri-alliance-to-accelerate-cybersecurity-collaboration/a07e867a-e99d863fe4-hero.png
+  src: /assets/images/posts/2026-02-19-the-capable-hub-joins-the-cheri-alliance-to-accelerate-cybersecurity-collaboration.webp
   alt: Welcome The Capable Hub
-  width: 2000
-  height: 1500
+  width: 1280
+  height: 720
+  fit: contain
 date: '2026-02-19T10:00:12+00:00'
 post:
   category: cheri-alliance-news

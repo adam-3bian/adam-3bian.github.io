@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/joshua-lant/5fa8d6d5-59c2f2fea5e2-portrait.png
+  src: /assets/images/people/joshua-lant.webp
   alt: Joshua Lant
-  width: 1024
-  height: 768
+  width: 382
+  height: 382
+  fit: cover
 person:
   roles:
   - speaker

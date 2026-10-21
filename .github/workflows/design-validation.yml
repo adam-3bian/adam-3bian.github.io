@@ -69,6 +69,8 @@ jobs:
         run: |
           python scripts/check_content.py
           python scripts/check_refinement.py
+          python scripts/check_assets.py
+          python scripts/test_assets.py
           python scripts/test_spec.py
           python scripts/template_inventory.py --output reports/templates.json
           bundle exec ruby scripts/test_event_status.rb
@@ -77,16 +79,18 @@ jobs:
       - name: Validate official build and Jekyll preview deployment
         run: |
           python scripts/check_content.py --site dist --report reports/root-content.json
+          python scripts/check_assets.py --site dist --report reports/root-assets.json
           python scripts/check_linked_content.py --site dist --report reports/linked-content-root.json
           python scripts/check_refinement.py --site dist
           bundle exec ruby scripts/test_markdown.rb dist
-          python scripts/check_component_parity.py docs/global-bounds/navigation-baseline.json dist --report reports/component-parity-root.json
+          python scripts/check_component_parity.py docs/assets/content-baseline.json dist --report reports/component-parity-root.json
           JEKYLL_ENV=production bundle exec jekyll build --safe --baseurl /preview --destination dist-baseurl/preview
           python scripts/check_content.py --site dist-baseurl/preview --baseurl /preview --report reports/preview-content.json
+          python scripts/check_assets.py --site dist-baseurl/preview --report reports/preview-assets.json
           python scripts/check_linked_content.py --site dist-baseurl/preview --baseurl /preview --report reports/linked-content-preview.json
           python scripts/check_refinement.py --site dist-baseurl/preview --baseurl /preview
           bundle exec ruby scripts/test_markdown.rb dist-baseurl/preview
-          python scripts/check_component_parity.py docs/global-bounds/navigation-baseline.json dist-baseurl/preview --baseurl /preview --report reports/component-parity-preview.json
+          python scripts/check_component_parity.py docs/assets/content-baseline.json dist-baseurl/preview --baseurl /preview --report reports/component-parity-preview.json
       - name: Check interactions, accessibility and responsive layouts
         run: |
           python -m http.server 4200 --bind 127.0.0.1 --directory dist > "$RUNNER_TEMP/site.log" 2>&1 &

@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/louis-emile-ploix/cfb6c0c9-e17556199b26-portrait.jpg
+  src: /assets/images/people/louis-emile-ploix.webp
   alt: Louis-Emile Ploix
-  width: 878
-  height: 1200
+  width: 512
+  height: 512
+  fit: cover
 person:
   roles:
   - speaker

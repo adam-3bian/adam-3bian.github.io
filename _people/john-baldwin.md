@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/john-baldwin/968f8152-d76fffec9787-portrait.png
+  src: /assets/images/people/john-baldwin.webp
   alt: John Baldwin
-  width: 614
-  height: 552
+  width: 363
+  height: 363
+  fit: cover
 person:
   roles:
   - speaker

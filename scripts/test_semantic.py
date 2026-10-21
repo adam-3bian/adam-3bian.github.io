@@ -25,8 +25,17 @@ with sync_playwright() as p:
    assert page.locator('a a,a button').count()==0
    for img in page.locator('.media-posts,.media-events').all():
     box=img.bounding_box();assert abs(box['width']/box['height']-16/9)<.02,(width,route,box)
-   for img in page.locator('.media-people,.media-organisations').all():
+   for img in page.locator('.media-people').all():
     box=img.bounding_box();assert abs(box['width']-box['height'])<1,(width,route,box)
+    assert img.locator('img').evaluate('e=>getComputedStyle(e).objectFit')=='cover'
+   for img in page.locator('.media-organisations').all():
+    box=img.bounding_box();assert abs(box['width']/box['height']-3)<.02,(width,route,box)
+    assert img.locator('img').evaluate('e=>getComputedStyle(e).objectFit')=='contain'
+   for selector,ratio,fit in [('.image-kind-people',1,'cover'),('.image-kind-organisations',3,'contain'),('.image-kind-events',16/9,'contain'),('.article-lead',16/9,'contain')]:
+    for frame in page.locator(selector).all():
+     box=frame.locator('img').bounding_box();assert abs(box['width']/box['height']-ratio)<.02,(width,route,selector,box)
+     assert frame.locator('img').evaluate('e=>getComputedStyle(e).objectFit')==fit
+     assert frame.locator('img').evaluate('async e=>{await e.decode();return e.naturalWidth>0}')
    if width in [390,1440]:
     page.add_script_tag(path=str(AXE));violations=page.evaluate("async()=>(await axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21a','wcag21aa','wcag22aa']}})).violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)}))")
     assert not violations,(width,route,violations)

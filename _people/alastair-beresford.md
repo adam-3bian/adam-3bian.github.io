@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/alastair-beresford/08ca2fc0-db950629bcbc-portrait.png
+  src: /assets/images/people/alastair-beresford.webp
   alt: Alastair Beresford
-  width: 1024
-  height: 768
+  width: 446
+  height: 446
+  fit: cover
 person:
   roles:
   - speaker

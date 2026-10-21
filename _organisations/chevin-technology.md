@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/alliance/leadership/chevin-technology/fc432e3d-6322b1596ac2-logo.png
+  src: /assets/images/organisation/chevin-technology.webp
   alt: Chevin Technology logo
-  width: 1228
-  height: 357
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/jennifer-jackson/e9e54237-476b61d75e71-portrait.jpg
+  src: /assets/images/people/jennifer-jackson.webp
   alt: Jennifer Jackson
-  width: 1200
-  height: 1016
+  width: 512
+  height: 512
+  fit: cover
 person:
   roles:
   - speaker

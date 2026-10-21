@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/mike-eftimakis/2d82574b-7235ea4127c4-portrait.jpg
+  src: /assets/images/people/mike-eftimakis.webp
   alt: Mike Eftimakis
-  width: 3640
-  height: 2862
+  width: 512
+  height: 512
+  fit: cover
 person:
   roles:
   - speaker

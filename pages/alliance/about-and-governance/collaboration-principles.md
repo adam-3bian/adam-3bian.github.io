@@ -50,7 +50,7 @@ Different types of collaboration have different requirements. The Alliance there
 
 In general:
 
-- Educational material, tutorials, outreach content, and technical recommendations are normally released under an open Creative Commons licence - preferably [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) ![CC-BY-SA](/assets/images/alliance/about-and-governance/alliance-about-and-governance-collaboration-principles/53c3682d-bacc656ec8f4-cc-by-sa.webp){: .image-left .image-inline }
+- Educational material, tutorials, outreach content, and technical recommendations are normally released under an open Creative Commons licence - preferably [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) ![CC-BY-SA](/assets/images/shared/cc-by-sa.webp){: .image-left .image-inline }
 - Software examples, compliance assets, and technical contributions are normally released under permissive open-source licences to encourage adoption and contribution
 - Contributions made to existing external projects generally retain the licence of that project
 - Internal member discussions and confidential information remain protected where required

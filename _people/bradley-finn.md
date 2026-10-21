@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/bradley-finn/21a0a4ce-328c417ae7f6-portrait.jpg
+  src: /assets/images/people/bradley-finn.webp
   alt: Bradley Finn
-  width: 371
+  width: 343
   height: 343
+  fit: cover
 person:
   roles:
   - speaker

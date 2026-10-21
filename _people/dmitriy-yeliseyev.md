@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/dmitriy-yeliseyev/fb47bb15-bf2daa2b4ab1-portrait.png
+  src: /assets/images/people/dmitriy-yeliseyev.webp
   alt: Dmitriy Yeliseyev
-  width: 1024
-  height: 768
+  width: 425
+  height: 425
+  fit: cover
 person:
   roles:
   - speaker

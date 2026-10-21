@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/news-and-events/news-and-analysis/the-white-house-promotes-cheri-as-a-solution-for-memory-safety/47119281-55e2916c5bcf-hero.jpg
+  src: /assets/images/posts/2024-02-27-the-white-house-promotes-cheri-as-a-solution-for-memory-safety.webp
   alt: The White House promotes CHERI as a solution for memory safety
   width: 800
-  height: 420
+  height: 450
+  fit: contain
 date: '2024-02-27T17:45:38+00:00'
 post:
   category: government-regulation

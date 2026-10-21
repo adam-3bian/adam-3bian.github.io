@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/andrew-lindsay/170d9db6-6f29bac54e8a-portrait.png
+  src: /assets/images/people/andrew-lindsay.webp
   alt: Andrew Lindsay
-  width: 709
-  height: 666
+  width: 512
+  height: 512
+  fit: cover
 person:
   organisations:
   - organisation: codasip

@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/common/eab25c18-dca93f847af6-cheriot-1-0-specification-released.png
+  src: /assets/images/posts/2025-11-04-iotsf-techworks-resilient-iot-and-trustworthy-ai-conferences.webp
   alt: IoTSF + TechWorks – Resilient IoT and Trustworthy AI Conferences
-  width: 305
-  height: 300
+  width: 544
+  height: 306
+  fit: contain
 date: '2025-11-04T14:31:10+00:00'
 post:
   category: cheri-alliance-news

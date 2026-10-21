@@ -25,7 +25,7 @@ related:
 
 ## Overview
 
-![CHERI Alliance member logo](/assets/images/common/b3b9fe90-edeb264ff3b7-cheri-member.webp){: .image-left }
+![CHERI Alliance member logo](/assets/images/shared/cheri-member.webp){: .image-left }
 
 CHERI Alliance membership connects you with companies, researchers and practitioners working across the CHERI ecosystem. Whether you want to influence its direction, learn from experts, increase your visibility or simply demonstrate your support for CHERI, there is a way to get involved.
 
@@ -103,7 +103,7 @@ Ambassadors are Community Members who make an additional commitment to support t
 
 ## Membership fees
 
-![DCMS Logo](/assets/images/alliance/membership/alliance-membership-membership-benefits-and-options/5a9ddb6a-62e58da9da64-dcms-s.webp){: .image-left }
+![DCMS Logo](/assets/images/shared/dcms-s.webp){: .image-left }
 
 The CHERI Alliance is a lean, **non-profit** organisation. Membership fees support its collaboration infrastructure, communications, events and other activities that help accelerate CHERI adoption.
 

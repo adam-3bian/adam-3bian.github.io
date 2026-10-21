@@ -9,7 +9,7 @@ navigation:
     category: Build
     subcategory: Platforms
 image:
-  src: /assets/images/common/a4714f5e-e8738d5ec725-codasip-prime-kit.webp
+  src: /assets/images/shared/codasip-prime-kit.webp
   alt: Codasip Prime FPGA board
   width: 526
   height: 439

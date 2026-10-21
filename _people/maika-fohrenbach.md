@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/maika-fohrenbach/b9c517ba-e33f816c987d-portrait.jpg
+  src: /assets/images/people/maika-fohrenbach.webp
   alt: Maika Föhrenbach
-  width: 801
-  height: 1200
+  width: 512
+  height: 512
+  fit: cover
 person:
   roles:
   - speaker

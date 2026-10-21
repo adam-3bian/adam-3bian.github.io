@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/jessica-clarke/6b5c9d18-0a87d930d003-portrait.png
+  src: /assets/images/people/jessica-clarke.webp
   alt: Jessica Clarke
-  width: 900
-  height: 1200
+  width: 512
+  height: 512
+  fit: cover
 person:
   roles:
   - speaker

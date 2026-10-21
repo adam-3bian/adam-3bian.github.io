@@ -16,7 +16,7 @@ policy:
 resources:
 - type: pdf
   label: Download official PDF
-  url: /assets/pages/alliance--legal-and-policies--competition-law-statement/0053779e62ce-competition.pdf
+  url: /assets/pdf/shared/competition.pdf
 related:
 - type: policy
   slug: intellectual-property-policy
@@ -31,7 +31,7 @@ related:
 
 ## Overview
 
-![pdf](/assets/images/common/58e51132-d63b7eac09b7-pdf-file-icon.webp){: .image-left .image-inline } Download the [CHERI Alliance Competition Law Statement](/assets/pages/alliance--legal-and-policies--competition-law-statement/0053779e62ce-competition.pdf) – The PDF is the official version. The text is reproduced below for convenience, but if there is any difference between the two versions, the PDF takes precedence.
+![pdf](/assets/images/shared/pdf-file-icon.webp){: .image-left .image-inline } Download the [CHERI Alliance Competition Law Statement](/assets/pdf/shared/competition.pdf) – The PDF is the official version. The text is reproduced below for convenience, but if there is any difference between the two versions, the PDF takes precedence.
 
 ---
 

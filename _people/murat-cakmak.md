@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/murat-cakmak/41223809-ecc356af5bf5-portrait.jpg
+  src: /assets/images/people/murat-cakmak.webp
   alt: Murat Cakmak
-  width: 800
-  height: 800
+  width: 512
+  height: 512
+  fit: cover
 person:
   roles:
   - speaker

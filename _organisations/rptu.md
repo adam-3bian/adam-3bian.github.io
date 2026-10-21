@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/alliance/leadership/rptu/a9c2e28f-b844461177bf-logo.png
+  src: /assets/images/organisation/rptu.webp
   alt: RPTU logo
-  width: 2000
-  height: 520
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

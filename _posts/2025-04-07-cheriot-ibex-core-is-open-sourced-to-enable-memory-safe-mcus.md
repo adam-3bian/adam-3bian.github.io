@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/common/f373e9aa-b40f17e0c2fc-cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus.png
+  src: /assets/images/posts/2025-04-07-cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus.webp
   alt: CHERIoT-Ibex Core is Open Sourced to Enable Memory Safe MCUs
-  width: 513
-  height: 484
+  width: 864
+  height: 486
+  fit: contain
 date: '2025-04-07T09:07:29+01:00'
 post:
   category: ecosystem

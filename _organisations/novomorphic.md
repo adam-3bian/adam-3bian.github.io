@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/common/4369c234-3f35c8ed2eaa-logo.png
+  src: /assets/images/organisation/novomorphic.webp
   alt: Novomorphic logo
-  width: 1500
-  height: 232
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

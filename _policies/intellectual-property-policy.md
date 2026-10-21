@@ -16,7 +16,7 @@ policy:
 resources:
 - type: pdf
   label: Download official PDF
-  url: /assets/shared/source-assets/1ef747d8f739-ip-policy.pdf
+  url: /assets/pdf/shared/ip-policy.pdf
 related:
 - type: policy
   slug: trademark-policy
@@ -34,7 +34,7 @@ related:
 
 ## Overview
 
-![pdf](/assets/images/common/58e51132-d63b7eac09b7-pdf-file-icon.webp){: .image-left .image-inline } Download the [CHERI Alliance IP Policy](/assets/shared/source-assets/1ef747d8f739-ip-policy.pdf) – The PDF is the official version. The text is reproduced below for convenience, but if there is any difference between the two versions, the PDF takes precedence..
+![pdf](/assets/images/shared/pdf-file-icon.webp){: .image-left .image-inline } Download the [CHERI Alliance IP Policy](/assets/pdf/shared/ip-policy.pdf) – The PDF is the official version. The text is reproduced below for convenience, but if there is any difference between the two versions, the PDF takes precedence..
 
 ---
 

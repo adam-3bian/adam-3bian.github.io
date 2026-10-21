@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/common/cf6fbc19-ef815ad95752-logo.png
+  src: /assets/images/organisation/codasip.webp
   alt: Codasip logo
-  width: 2000
-  height: 745
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

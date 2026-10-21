@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/news-and-events/news-and-analysis/uk-government-report-highlights-the-cheri-alliance/29ae9a9e-d35a036dc982-hero.jpg
+  src: /assets/images/posts/2024-05-16-uk-government-report-highlights-the-cheri-alliance.webp
   alt: UK Government report highlights the CHERI Alliance
   width: 480
-  height: 252
+  height: 270
+  fit: contain
 date: '2024-05-16T10:13:08+01:00'
 post:
   category: government-regulation

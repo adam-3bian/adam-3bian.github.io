@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/alliance/leadership/bt-group/947b340b-b58bf897c6f1-logo.png
+  src: /assets/images/organisation/bt-group.webp
   alt: BT Group
-  width: 2000
-  height: 2000
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

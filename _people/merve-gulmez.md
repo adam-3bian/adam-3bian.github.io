@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/merve-gulmez/56bbe6c6-99144c205252-portrait.png
+  src: /assets/images/people/merve-gulmez.webp
   alt: Merve Gülmez
-  width: 386
-  height: 328
+  width: 301
+  height: 301
+  fit: cover
 person:
   roles:
   - speaker

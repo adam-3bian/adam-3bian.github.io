@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/mike-halsall/86cc02d3-aa8c2cd8052c-portrait.png
+  src: /assets/images/people/mike-halsall.webp
   alt: Mike Halsall wearing a CHERI cap
-  width: 481
-  height: 619
+  width: 330
+  height: 330
+  fit: cover
 person:
   roles:
   - speaker

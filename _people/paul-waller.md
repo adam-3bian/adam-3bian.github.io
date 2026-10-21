@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/paul-waller/0be25ee2-b30ab394d940-portrait.jpg
+  src: /assets/images/people/paul-waller.webp
   alt: Paul Waller
-  width: 901
-  height: 1200
+  width: 512
+  height: 512
+  fit: cover
 person:
   roles:
   - speaker

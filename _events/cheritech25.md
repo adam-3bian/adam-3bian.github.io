@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: Events & Archive
 image:
-  src: /assets/images/common/e8519360-0e6d3180c4d1-cheritech25.webp
+  src: /assets/images/events/cheritech25.webp
   alt: CHERITech'25 Conference
   width: 640
   height: 360
+  fit: contain
 date: '2025-11-14'
 event:
   format: conference
@@ -177,7 +178,7 @@ resources:
   session_id: talk-8327eaddbe5e
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/11/4.5-Jeremy-Singer-State-of-the-Union-Which-Virtual-Machines-can-I-run-on-CHERI-CHERITech25.pdf
+  url: /assets/pdf/events/cheritech25/4-5-jeremy-singer-state-of-the-union-which-virtual-machines-can-i-run-on-cheri-cheritech25.pdf
   session_id: talk-e2131452e8dc
 - type: video
   label: View Video
@@ -185,7 +186,7 @@ resources:
   session_id: talk-e2131452e8dc
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/11/2.4-Marno-van-der-Maas-Sonata-_-A-platform-for-high-integrity-operational-technology-CHERITech25.pdf
+  url: /assets/pdf/events/cheritech25/2-4-marno-van-der-maas-sonata-a-platform-for-high-integrity-operational-technology-cheritech25.pdf
   session_id: talk-db22e2430aba
 - type: video
   label: View Video
@@ -193,7 +194,7 @@ resources:
   session_id: talk-db22e2430aba
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/11/3.3-Murali-Vijayaraghavan-Rigorous-Hardware-Software-Codesign-for-Secure-Compartmentalization-on-Embedded-Devices-CHERITech25.pdf
+  url: /assets/pdf/events/cheritech25/3-3-murali-vijayaraghavan-rigorous-hardware-software-codesign-for-secure-compartmentalization-on-embedded-devices-cheritech25.pdf
   session_id: talk-07125a08245a
 - type: video
   label: View Video
@@ -201,7 +202,7 @@ resources:
   session_id: talk-07125a08245a
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/11/3.5-Jessica-Clarke-Redesigning-Thread-Local-Storage-For-CHERI-CHERITech25.pdf
+  url: /assets/pdf/events/cheritech25/3-5-jessica-clarke-redesigning-thread-local-storage-for-cheri-cheritech25.pdf
   session_id: talk-e690a32e2862
 - type: video
   label: View Video
@@ -209,7 +210,7 @@ resources:
   session_id: talk-e690a32e2862
 - type: slides
   label: View slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/11/1.3-Mike-Eftimakis-Progress-of-the-Alliance-CHERITech25.pdf
+  url: /assets/pdf/events/cheritech25/1-3-mike-eftimakis-progress-of-the-alliance-cheritech25.pdf
   session_id: talk-a97aa4106f62
 - type: video
   label: Watch video
@@ -217,7 +218,7 @@ resources:
   session_id: talk-a97aa4106f62
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/11/3.1-Robert-Watson-Progress-of-CHERI-1-CHERITech25.pdf
+  url: /assets/pdf/events/cheritech25/3-1-robert-watson-progress-of-cheri-1-cheritech25.pdf
   session_id: talk-5124b0816b33
 - type: video
   label: View Video
@@ -225,7 +226,7 @@ resources:
   session_id: talk-5124b0816b33
 - type: slides
   label: View slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/11/1.4-Mike-Eftimakis-Poster-highlights-CHERITech25.pdf
+  url: /assets/pdf/events/cheritech25/1-4-mike-eftimakis-poster-highlights-cheritech25.pdf
   session_id: talk-2aa7838ddfb1
 - type: video
   label: Watch video
@@ -233,7 +234,7 @@ resources:
   session_id: talk-2aa7838ddfb1
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/11/4.1-Andrew-Murray-A-development-hub-CHERITech25.pdf
+  url: /assets/pdf/events/cheritech25/4-1-andrew-murray-a-development-hub-cheritech25.pdf
   session_id: talk-ca027fbab690
 - type: video
   label: View Video
@@ -241,7 +242,7 @@ resources:
   session_id: talk-ca027fbab690
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/11/4.4-Dmitriy-Yeliseyev-Industrializing-CHERI-for-Safety-Critical-Real-Time-and-Virtualized-Systems-Capability-Support-in-Hypervisor-and-VxWorks-RTOS-CHERITech25.pdf
+  url: /assets/pdf/events/cheritech25/4-4-dmitriy-yeliseyev-industrializing-cheri-for-safety-critical-real-time-and-virtualized-systems-capability-support-in-hypervisor-and-vxworks-rtos-cheritech25.pdf
   session_id: talk-0f75d9d7fad7
 - type: video
   label: View Video
@@ -249,7 +250,7 @@ resources:
   session_id: talk-0f75d9d7fad7
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/11/4.3-Ka-Wing-Li-Failure-Oblivious-CHERI-1-CHERITech25.pdf
+  url: /assets/pdf/events/cheritech25/4-3-ka-wing-li-failure-oblivious-cheri-1-cheritech25.pdf
   session_id: talk-b77c4b794bd2
 - type: video
   label: View Video
@@ -257,7 +258,7 @@ resources:
   session_id: talk-b77c4b794bd2
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/11/4.2-Donato-Ferraro-Capability-Based-Isolation-for-UAV-Software-Stacks-Porting-PX4NuttX-to-CHERI-CHERITech25.pdf
+  url: /assets/pdf/events/cheritech25/4-2-donato-ferraro-capability-based-isolation-for-uav-software-stacks-porting-px4nuttx-to-cheri-cheritech25.pdf
   session_id: talk-8d7e18213427
 - type: video
   label: View Video
@@ -265,7 +266,7 @@ resources:
   session_id: talk-8d7e18213427
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/11/3.2-David-Chisnall-CHERIoT-Audit-1-CHERITech25.pdf
+  url: /assets/pdf/events/cheritech25/3-2-david-chisnall-cheriot-audit-1-cheritech25.pdf
   session_id: talk-e9c83c5ad5db
 - type: video
   label: View Video
@@ -273,7 +274,7 @@ resources:
   session_id: talk-e9c83c5ad5db
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/11/3.4-Tariq-Kurd-CHERI-RISC-V-standardisation-status-CHERITech25.pdf
+  url: /assets/pdf/events/cheritech25/3-4-tariq-kurd-cheri-risc-v-standardisation-status-cheritech25.pdf
   session_id: talk-1eea3c3cab39
 - type: video
   label: View Video
@@ -281,7 +282,7 @@ resources:
   session_id: talk-1eea3c3cab39
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/11/2.3-Carl-Shaw-CHERI-Progress-CHERITech25.pdf
+  url: /assets/pdf/events/cheritech25/2-3-carl-shaw-cheri-progress-cheritech25.pdf
   session_id: talk-4b578851b133
 - type: website
   label: View Talk
@@ -293,11 +294,11 @@ resources:
   session_id: talk-38af53a934c5
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/11/2.5-Thomas-Nyman-Merve-Gulmez-BLACKOUT-Data-Oblivious-Computation-with-Blinded-Capabilities-CHERITech25.pdf
+  url: /assets/pdf/events/cheritech25/2-5-thomas-nyman-merve-gulmez-blackout-data-oblivious-computation-with-blinded-capabilities-cheritech25.pdf
   session_id: talk-38af53a934c5
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/11/2.2-John-Thomson-COSMIC-CHERITech25.pdf
+  url: /assets/pdf/events/cheritech25/2-2-john-thomson-cosmic-cheritech25.pdf
   session_id: talk-4a66f8780d97
 - type: video
   label: View Video
@@ -305,7 +306,7 @@ resources:
   session_id: talk-4a66f8780d97
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2025/11/2.1-Jonathan-Woodruff-CHERITech25.pdf
+  url: /assets/pdf/events/cheritech25/2-1-jonathan-woodruff-cheritech25.pdf
   session_id: talk-2dd4e33b8f42
 - type: website
   label: View Talk
@@ -327,7 +328,7 @@ related:
 
 ## CHERI technology, from research to implementation
 
-![CHERITech'25 audience](/assets/images/news-and-events/events-and-archive/cheritech25/7a6ca728-audience.jpg){: .image-right }
+![CHERITech'25 audience](/assets/images/events/cheritech25/audience.webp){: .image-right }
 
 CHERITech'25 brought the CHERI technical community together in Manchester to share the latest developments across CHERI hardware, software, tools and real-world implementations.
 
@@ -337,7 +338,7 @@ Organised by the CHERI Alliance, the conference combined technical talks with de
 
 ## Across the CHERI stack
 
-![Exhibition](/assets/images/news-and-events/events-and-archive/cheritech25/9e4345da-IMG_2726.jpg){: .image-right }
+![Exhibition](/assets/images/events/cheritech25/gallery-photo-01.webp){: .image-right }
 
 The programme explored CHERI from processor architecture through to software and applications.
 
@@ -356,8 +357,8 @@ Alongside the conference programme, the [exhibition](/events/cheritech25/#demons
 ## Exhibitors
 
 | --- | --- | --- |
-| ![Cantech Informatics logo](/assets/images/common/46f53df8-7ef3653af98e-logo.png){: .image-full } | ![Capabilities Limited logo](/assets/images/common/65f15bf1-0c30741ff5ce-logo.png){: .image-full } | ![CHERI logo](/assets/images/common/8d481a0e-5a6300ace656-cheri.png){: .image-full } |
-| ![Codasip logo](/assets/images/common/cf6fbc19-ef815ad95752-logo.png){: .image-full } | ![lowRISC logo](/assets/images/common/80ec6dcd-d432df8a7ccf-logo.png){: .image-full } | ![SCI Semiconductor logo](/assets/images/common/36f8a3a5-89396ef186d7-logo.png){: .image-full } |
+| ![Cantech Informatics logo](/assets/images/organisation/cantech-informatics-srl.webp){: .image-full } | ![Capabilities Limited logo](/assets/images/organisation/capabilities-limited.webp){: .image-full } | ![CHERI logo](/assets/images/posts/2025-11-25-new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd.webp){: .image-full } |
+| ![Codasip logo](/assets/images/organisation/codasip.webp){: .image-full } | ![lowRISC logo](/assets/images/organisation/lowrisc.webp){: .image-full } | ![SCI Semiconductor logo](/assets/images/organisation/sci-semiconductor.webp){: .image-full } |
 
 ## Venue
 
@@ -365,8 +366,8 @@ CHERITech’25 was held in Manchester, UK at the [Sister – Renold Innovation H
 
 ### Address
 
-![Building](/assets/images/news-and-events/events-and-archive/cheritech25/0d5de086-ef637dc529a7-renold-exterior-1.webp){: .image-right }
-![Lecture theatre](/assets/images/news-and-events/events-and-archive/cheritech25/44a59f4d-52890a4990fd-renold-lecture-theatre.webp){: .image-left }
+![Building](/assets/images/events/cheritech25/renold-exterior-1.webp){: .image-right }
+![Lecture theatre](/assets/images/events/cheritech25/renold-lecture-theatre.webp){: .image-left }
 
 Sister – Renold Building
 

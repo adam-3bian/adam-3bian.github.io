@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/alliance/leadership/the-university-of-manchester/e3722c10-03379609c33b-logo.png
+  src: /assets/images/organisation/the-university-of-manchester.webp
   alt: University of Manchester logo
-  width: 909
-  height: 388
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/ashish-darbari/f48e88d3-6289f615e481-portrait.png
+  src: /assets/images/people/ashish-darbari.webp
   alt: Ashish Dabari
-  width: 1024
-  height: 768
+  width: 377
+  height: 377
+  fit: cover
 person:
   roles:
   - speaker

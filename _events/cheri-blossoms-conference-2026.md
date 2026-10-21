@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: Events & Archive
 image:
-  src: /assets/images/news-and-events/events-and-archive/cheri-blossoms-conference-2026/4e1c959a-81eb02fb9092-hero.png
+  src: /assets/images/events/cheri-blossoms-conference-2026.webp
   alt: CHERI Blossoms 2026
-  width: 2000
-  height: 1561
+  width: 1280
+  height: 720
+  fit: contain
 date: '2026-03-25'
 end_date: '2026-03-27'
 event:
@@ -332,7 +333,7 @@ resources:
   url: /news-and-events/events-and-archive/cheri-blossoms/
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-3.1-Johannes-Mueller-Verifying-Secure-Memory-Compartmentalization-in-CHERI-Processors-at-the-RTL-CHERI-Blossoms-2026.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2026/d2-3-1-johannes-mueller-verifying-secure-memory-compartmentalization-in-cheri-processors-at-the-rtl-cheri-blossoms-2026.pdf
   session_id: talk-cf359c586070
 - type: video
   label: View Video
@@ -340,7 +341,7 @@ resources:
   session_id: talk-cf359c586070
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-3.4-Jianyi-Cheng-Towards-Heterogeneous-CHERI-Compartmentalization-CHERI-Blossoms-2026.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2026/d2-3-4-jianyi-cheng-towards-heterogeneous-cheri-compartmentalization-cheri-blossoms-2026.pdf
   session_id: talk-c9c48f6d19b0
 - type: video
   label: View Video
@@ -348,7 +349,7 @@ resources:
   session_id: talk-c9c48f6d19b0
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-2.3-Peter-Cox-Securing-Real-Time-Communication-Porting-and-running-Edge-Computing-for-mission-critical-services-on-Morello-CHERI-CHERI-Blossoms-2026.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2026/d2-2-3-peter-cox-securing-real-time-communication-porting-and-running-edge-computing-for-mission-critical-services-on-morello-cheri-cheri-blossoms-2026.pdf
   session_id: talk-c049b7fc1165
 - type: video
   label: View Video
@@ -356,7 +357,7 @@ resources:
   session_id: talk-c049b7fc1165
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-2.4-Edoardo-Marangoni-Rust-On-CHERIoT-CHERI-Blossoms-2026.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2026/d2-2-4-edoardo-marangoni-rust-on-cheriot-cheri-blossoms-2026.pdf
   session_id: talk-689dbc1baa7d
 - type: video
   label: View Video
@@ -368,11 +369,11 @@ resources:
   session_id: talk-7083c1a534aa
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2026/06/D2-3.3-Thomas-Nyman-Merve-Gulmez-Scaling-CHERI-Use-After-Free-Protection-to-Millions-of-Allocations-CHERI-Blossoms-2026.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2026/d2-3-3-thomas-nyman-merve-gulmez-scaling-cheri-use-after-free-protection-to-millions-of-allocations-cheri-blossoms-2026.pdf
   session_id: talk-7083c1a534aa
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-1.7.5-Murat-Cakmak-Microservice-Store-for-CHERI-CHERI-Blossoms-2026.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2026/d2-1-7-5-murat-cakmak-microservice-store-for-cheri-cheri-blossoms-2026.pdf
   session_id: talk-f52b785017c2
 - type: video
   label: View Video
@@ -380,7 +381,7 @@ resources:
   session_id: talk-f52b785017c2
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-1.4-Tariq-Kurd-MMU-based-revocation-CHERI-Blossoms-2026.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2026/d2-1-4-tariq-kurd-mmu-based-revocation-cheri-blossoms-2026.pdf
   session_id: talk-403f3444494c
 - type: video
   label: View Video
@@ -388,7 +389,7 @@ resources:
   session_id: talk-403f3444494c
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-1.3-Ben-Fletcher-Inside-the-CHERI-in-SoC-Working-Group-CHERI-Blossoms-2026.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2026/d2-1-3-ben-fletcher-inside-the-cheri-in-soc-working-group-cheri-blossoms-2026.pdf
   session_id: talk-ade123cb50a8
 - type: video
   label: View Video
@@ -396,7 +397,7 @@ resources:
   session_id: talk-ade123cb50a8
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-3.2-Luca-Mueller-CHERI-enabled-RISC-V-VP-Capabilities-and-Applications-CHERI-Blossoms-2026.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2026/d2-3-2-luca-mueller-cheri-enabled-risc-v-vp-capabilities-and-applications-cheri-blossoms-2026.pdf
   session_id: talk-a527470d558c
 - type: video
   label: View Video
@@ -404,7 +405,7 @@ resources:
   session_id: talk-a527470d558c
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-1.7.4-Jennifer-Jackson-CHERI-Zephyr-CHERI-Blossoms-2026.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2026/d2-1-7-4-jennifer-jackson-cheri-zephyr-cheri-blossoms-2026.pdf
   session_id: talk-b9f0c7b43ac3
 - type: video
   label: View Video
@@ -412,7 +413,7 @@ resources:
   session_id: talk-b9f0c7b43ac3
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-1.7.3-David-Musliner-SIFT-CHERI-PIT-CHERI-Blossoms-2026.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2026/d2-1-7-3-david-musliner-sift-cheri-pit-cheri-blossoms-2026.pdf
   session_id: talk-22ea30cfdf5b
 - type: video
   label: View Video
@@ -420,7 +421,7 @@ resources:
   session_id: talk-22ea30cfdf5b
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-2.2-Carl-Shaw-CHERI-performance-improvement-update-CHERI-Blossoms-2026.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2026/d2-2-2-carl-shaw-cheri-performance-improvement-update-cheri-blossoms-2026.pdf
   session_id: talk-94f06c5a7b40
 - type: video
   label: View Video
@@ -428,7 +429,7 @@ resources:
   session_id: talk-94f06c5a7b40
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-2.5-John-Baldwin-Jessica-Clarke-CHERI-Linking-through-the-Ages-CHERI-Blossoms-2026.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2026/d2-2-5-john-baldwin-jessica-clarke-cheri-linking-through-the-ages-cheri-blossoms-2026.pdf
   session_id: talk-f4e4e38cfbdf
 - type: video
   label: View Video
@@ -436,7 +437,7 @@ resources:
   session_id: talk-f4e4e38cfbdf
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-1.2-Sam-Cater-BTs-Engagement-with-CHERI-Technology-CHERI-Blossoms-2026.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2026/d2-1-2-sam-cater-bts-engagement-with-cheri-technology-cheri-blossoms-2026.pdf
   session_id: talk-f9d366846383
 - type: video
   label: View Video
@@ -444,7 +445,7 @@ resources:
   session_id: talk-f9d366846383
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-3.5-Samuel-Stark-All-Caps-CHERI-Blossoms-2026.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2026/d2-3-5-samuel-stark-all-caps-cheri-blossoms-2026.pdf
   session_id: talk-595c5bc52c44
 - type: video
   label: View Video
@@ -456,7 +457,7 @@ resources:
   session_id: talk-f3280e15ffb6
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2026/04/D1-2.6-Andrew-Murray-The-Capable-Hub-Our-Recent-Work-and-Next-Steps-CHERI-Blossoms-2026.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2026/d1-2-6-andrew-murray-the-capable-hub-our-recent-work-and-next-steps-cheri-blossoms-2026.pdf
   session_id: talk-c8414524bfe3
 - type: video
   label: View Video
@@ -464,7 +465,7 @@ resources:
   session_id: talk-c8414524bfe3
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2026/04/D1-2.5-Robert-Watson-CHERI-Research-Centre-CHERI-Blossoms-2026.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2026/d1-2-5-robert-watson-cheri-research-centre-cheri-blossoms-2026.pdf
   session_id: talk-065f45ea352c
 - type: video
   label: View Video
@@ -472,7 +473,7 @@ resources:
   session_id: talk-065f45ea352c
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2026/04/D1-3.5-Andy-Moore-RISC-V-International-CHERI-Blossoms-2026.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2026/d1-3-5-andy-moore-risc-v-international-cheri-blossoms-2026.pdf
   session_id: talk-8634014da7dc
 - type: video
   label: View Video
@@ -480,7 +481,7 @@ resources:
   session_id: talk-8634014da7dc
 - type: slides
   label: View slides
-  url: https://cheri-alliance.org/wp-content/uploads/2026/04/D1-2.3-Mike-Eftimakis-Progress-of-the-Alliance-CHERI-Blossoms-2026.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2026/d1-2-3-mike-eftimakis-progress-of-the-alliance-cheri-blossoms-2026.pdf
   session_id: talk-8a44465cfcf6
 - type: video
   label: Watch video
@@ -488,11 +489,11 @@ resources:
   session_id: talk-8a44465cfcf6
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-1.7.2-Paul-Metzger-Lightning-Talk-Portable-CHERI-OS-APIs-CHERI-Blossoms-2026.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2026/d2-1-7-2-paul-metzger-lightning-talk-portable-cheri-os-apis-cheri-blossoms-2026.pdf
   session_id: talk-279e2851f13b
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-2.1-Jonathan-Woodruff-CVA6-CHERI-Performance-CHERI-Blossoms-2026.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2026/d2-2-1-jonathan-woodruff-cva6-cheri-performance-cheri-blossoms-2026.pdf
   session_id: talk-0cc81740022f
 - type: video
   label: View Video
@@ -500,7 +501,7 @@ resources:
   session_id: talk-0cc81740022f
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2026/04/D1-1.4-Alex-Rebert-Memory-Safety-at-Scale-An-Industry-Perspective-CHERI-Blossoms-2026.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2026/d1-1-4-alex-rebert-memory-safety-at-scale-an-industry-perspective-cheri-blossoms-2026.pdf
   session_id: talk-75e917bb91cb
 - type: video
   label: View Video
@@ -508,11 +509,11 @@ resources:
   session_id: talk-75e917bb91cb
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2026/04/D1-1.5-Maika-Fohrenbach-Keynote-%E2%80%93-Getting-ready-for-the-CRA-from-compliance-to-confidence-CHERI-Blossoms-2026.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2026/d1-1-5-maika-fohrenbach-keynote-getting-ready-for-the-cra-from-compliance-to-confidence-cheri-blossoms-2026.pdf
   session_id: talk-cd2599aaaa86
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2026/04/D1-1.2-Ollie-Whitehouse-Keynote-%E2%80%93-CHERI-quantifying-the-value-of-a-strategic-imperative-CHERI-Blossoms-2026.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2026/d1-1-2-ollie-whitehouse-keynote-cheri-quantifying-the-value-of-a-strategic-imperative-cheri-blossoms-2026.pdf
   session_id: talk-3dba495598b8
 - type: video
   label: View Video
@@ -528,7 +529,7 @@ resources:
   session_id: talk-7a8e44de22b3
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2026/04/D1-2.1-Bradley-Finn-DSIT-at-CHERI-Blossoms-2026.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2026/d1-2-1-bradley-finn-dsit-at-cheri-blossoms-2026.pdf
   session_id: talk-3a54d3722077
 - type: video
   label: View Video
@@ -540,7 +541,7 @@ resources:
   session_id: talk-4a9abd112b65
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-1.5-Louis-Emile-Ploix-COSMIC-Formal-Verification-CHERI-Blossoms-2026.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2026/d2-1-5-louis-emile-ploix-cosmic-formal-verification-cheri-blossoms-2026.pdf
   session_id: talk-6997948fd89a
 - type: video
   label: View Video
@@ -548,7 +549,7 @@ resources:
   session_id: talk-6997948fd89a
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-1.7.1-David-Chisnall-CHERIoT-Kudu-A-high-performance-CHERIoT-microcontroller-CHERI-Blossoms-2026.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2026/d2-1-7-1-david-chisnall-cheriot-kudu-a-high-performance-cheriot-microcontroller-cheri-blossoms-2026.pdf
   session_id: talk-b4ca3f04e876
 - type: video
   label: View Video
@@ -556,7 +557,7 @@ resources:
   session_id: talk-b4ca3f04e876
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2026/04/D2-1.6-Simon-Moore-CHERI-RvsD-CHERI-Blossoms-2026.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2026/d2-1-6-simon-moore-cheri-rvsd-cheri-blossoms-2026.pdf
   session_id: talk-0addf6bad5f4
 - type: video
   label: View Video
@@ -564,11 +565,11 @@ resources:
   session_id: talk-0addf6bad5f4
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2026/04/D1-3.6-Tariq-Kurd-CHERI-Standardisation-Status-CHERI-Blossoms-2026.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2026/d1-3-6-tariq-kurd-cheri-standardisation-status-cheri-blossoms-2026.pdf
   session_id: talk-fc9a9f2b8b9b
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2026/04/D1-3.2-Javier-Orensanz-Martinez-Mocha-at-CHERI-Blossoms-2026.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2026/d1-3-2-javier-orensanz-martinez-mocha-at-cheri-blossoms-2026.pdf
   session_id: talk-94d0fccbc424
 - type: video
   label: View Video
@@ -576,7 +577,7 @@ resources:
   session_id: talk-94d0fccbc424
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2026/04/D1-0.2-Robert-Watson-CHERI-crash-course-high-level-introduction-CHERI-Blossoms-2026.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2026/d1-0-2-robert-watson-cheri-crash-course-high-level-introduction-cheri-blossoms-2026.pdf
   session_id: talk-4e93a5fb6e4f
 - type: video
   label: View Video
@@ -584,7 +585,7 @@ resources:
   session_id: talk-4e93a5fb6e4f
 - type: slides
   label: View Slides
-  url: /assets/events/cheri-blossoms-2026/869fa94283-D1-2.7-Adam-Finney-CHERI-Adoption-Study-CHERI-Blossoms-2026.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2026/d1-2-7-adam-finney-cheri-adoption-study-cheri-blossoms-2026.pdf
   session_id: talk-5f48e3ea07c3
 - type: video
   label: View Video
@@ -592,7 +593,7 @@ resources:
   session_id: talk-ef8f03d264e5
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2026/05/D1-2.8-Manu-Ravishankar-CHERI-Secure-by-Design-Managed-Deployment_Programme-CHERI-Blossoms-2026.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2026/d1-2-8-manu-ravishankar-cheri-secure-by-design-managed-deployment-programme-cheri-blossoms-2026.pdf
   session_id: talk-8714634ab361
 - type: video
   label: View Video
@@ -600,7 +601,7 @@ resources:
   session_id: talk-8714634ab361
 - type: slides
   label: View Slides
-  url: https://cheri-alliance.org/wp-content/uploads/2026/04/D1-3.1-Carl-Shaw-A-new-analysis-of-CVE-vulnerabilities-CHERI-Blossoms-2026.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2026/d1-3-1-carl-shaw-a-new-analysis-of-cve-vulnerabilities-cheri-blossoms-2026.pdf
   session_id: talk-d8305d01de9e
 - type: video
   label: View Video
@@ -612,7 +613,7 @@ resources:
   session_id: talk-b194584cbb44
 - type: slides
   label: View slides
-  url: https://cheri-alliance.org/wp-content/uploads/2026/04/D1-2.1-Bradley-Finn-DSIT-at-CHERI-Blossoms-2026.pdf
+  url: /assets/pdf/events/cheri-blossoms-conference-2026/d1-2-1-bradley-finn-dsit-at-cheri-blossoms-2026.pdf
   session_id: talk-b194584cbb44
 - type: video
   label: View video
@@ -645,9 +646,9 @@ Alongside the talks, attendees could meet across the exhibition and networking s
 [Watch the CHERI Blossoms 2026 Event Showcase](https://youtu.be/U4C9W7B-8uE?list=PLTe5zG6binjnK0Ax2vvLBnb0ioojcaiVi)
 
 | --- | --- | --- |
-| ![CHERI Blossoms 2026 Robert Watson giving a talk](/assets/images/common/d16a3888-aca481f6e08b-cheri-blossoms-2026-robert-watson-giving-a-talk.jpg){: .image-full } | ![Conference room](/assets/images/news-and-events/events-and-archive/cheri-blossoms-conference-2026/4bbafdb3-Q5A2133.jpg){: .image-full } | ![Conference crowd](/assets/images/news-and-events/events-and-archive/cheri-blossoms-conference-2026/69dfa997-Q5A1938.jpg){: .image-full } |
-| ![Registration](/assets/images/news-and-events/events-and-archive/cheri-blossoms-conference-2026/cc3bb131-Q5A1899.jpg){: .image-full } | ![Discussions](/assets/images/news-and-events/events-and-archive/cheri-blossoms-conference-2026/31058cea-Q5A1913.jpg){: .image-full } | ![Crowd](/assets/images/news-and-events/events-and-archive/cheri-blossoms-conference-2026/753ca584-Q5A2169.jpg){: .image-full } |
-| ![Crowd](/assets/images/news-and-events/events-and-archive/cheri-blossoms-conference-2026/f50e97df-Q5A2026.jpg){: .image-full } | ![Crowd](/assets/images/news-and-events/events-and-archive/cheri-blossoms-conference-2026/9844590c-Q5A2034.jpg){: .image-full } | ![CHERI 15th birthday](/assets/images/news-and-events/events-and-archive/cheri-blossoms-conference-2026/5d739422-Q5A2039.jpg){: .image-full } |
+| ![CHERI Blossoms 2026 Robert Watson giving a talk](/assets/images/events/cheri-blossoms-conference-2026/cheri-blossoms-2026-robert-watson-giving-a-talk.webp){: .image-full } | ![Conference room](/assets/images/events/cheri-blossoms-conference-2026/q5a2133.webp){: .image-full } | ![Conference crowd](/assets/images/events/cheri-blossoms-conference-2026/q5a1938.webp){: .image-full } |
+| ![Registration](/assets/images/events/cheri-blossoms-conference-2026/q5a1899.webp){: .image-full } | ![Discussions](/assets/images/events/cheri-blossoms-conference-2026/q5a1913.webp){: .image-full } | ![Crowd](/assets/images/events/cheri-blossoms-conference-2026/q5a2169.webp){: .image-full } |
+| ![Crowd](/assets/images/events/cheri-blossoms-conference-2026/q5a2026.webp){: .image-full } | ![Crowd](/assets/images/events/cheri-blossoms-conference-2026/q5a2034.webp){: .image-full } | ![CHERI 15th birthday](/assets/images/events/cheri-blossoms-conference-2026/q5a2039.webp){: .image-full } |
 
 ## From strategy to silicon
 
@@ -669,7 +670,7 @@ Talks demonstrated the breadth of work now taking place across CHERI, from proce
 
 ### Hands-on with CHERI and CHERIoT
 
-![CHERI tutorial showing a demonstration in a classroom](/assets/images/news-and-events/events-and-archive/cheri-blossoms-conference-2026/e0b6a965-aff155aa7b69-cheri-tutorial-showing-a-demonstration-in-a-classroom.jpg){: .image-left }
+![CHERI tutorial showing a demonstration in a classroom](/assets/images/events/cheri-blossoms-conference-2026/cheri-tutorial-showing-a-demonstration-in-a-classroom.webp){: .image-left }
 
 The conference was preceded by a full-day practical [tutorial](/events/cheri-blossoms-tutorial-2026/) organised by the [CHERI Research Centre](https://cheri.cst.cam.ac.uk/), [Codasip](/organisations/codasip/), and [lowRISC](/organisations/lowrisc/).
 
@@ -683,10 +684,10 @@ Designed for students, researchers and developers, the tutorial introduced CHERI
 ## Exhibitors
 
 | --- | --- | --- |
-| ![Cantech Informatics logo](/assets/images/common/46f53df8-7ef3653af98e-logo.png){: .image-full } | ![Capabilities Limited logo](/assets/images/common/65f15bf1-0c30741ff5ce-logo.png){: .image-full } | ![CHERI logo](/assets/images/common/8d481a0e-5a6300ace656-cheri.png){: .image-full } |
-| ![CHERI Research Centre logo](/assets/images/common/f17cf5ae-171acadadd69-cheri-research-centre.png){: .image-full } | ![Codasip logo](/assets/images/common/cf6fbc19-ef815ad95752-logo.png){: .image-full } | ![lowRISC logo](/assets/images/common/80ec6dcd-d432df8a7ccf-logo.png){: .image-full } |
-| ![Novomorphic logo](/assets/images/common/4369c234-3f35c8ed2eaa-logo.png){: .image-full } | ![Parvat logo](/assets/images/common/1c6897e0-983927485935-logo.png){: .image-full } | ![SCI Semiconductor logo](/assets/images/common/36f8a3a5-89396ef186d7-logo.png){: .image-full } |
-| ![Sensor IT logo](/assets/images/common/3d5000f0-dc3ef17868db-logo.png){: .image-full } | ![UM Labs logo](/assets/images/common/3f1fbcff-768e679cb95a-logo.png){: .image-full } | ![Wyvern Global logo](/assets/images/common/2bcd0250-795076e4b546-logo.png){: .image-full } |
+| ![Cantech Informatics logo](/assets/images/organisation/cantech-informatics-srl.webp){: .image-full } | ![Capabilities Limited logo](/assets/images/organisation/capabilities-limited.webp){: .image-full } | ![CHERI logo](/assets/images/posts/2025-11-25-new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd.webp){: .image-full } |
+| ![CHERI Research Centre logo](/assets/images/shared/cheri-research-centre.webp){: .image-full } | ![Codasip logo](/assets/images/organisation/codasip.webp){: .image-full } | ![lowRISC logo](/assets/images/organisation/lowrisc.webp){: .image-full } |
+| ![Novomorphic logo](/assets/images/organisation/novomorphic.webp){: .image-full } | ![Parvat logo](/assets/images/organisation/parvat-infotech.webp){: .image-full } | ![SCI Semiconductor logo](/assets/images/organisation/sci-semiconductor.webp){: .image-full } |
+| ![Sensor IT logo](/assets/images/organisation/sensor-it.webp){: .image-full } | ![UM Labs logo](/assets/images/organisation/um-labs.webp){: .image-full } | ![Wyvern Global logo](/assets/images/organisation/wyvern-global.webp){: .image-full } |
 
 ## Venue
 
@@ -700,8 +701,8 @@ William Gates Building
 
 Cambridge CB3 0FD
 
-![William Gates building - Outside view](/assets/images/common/5df1e529-32a1b43504b4-william-gates-building-outside-view.jpg){: .image-full }
+![William Gates building - Outside view](/assets/images/events/cheri-blossoms-conference-2026/william-gates-building-outside-view.webp){: .image-full }
 
-![CHERI Blossoms 2026 exhibition](/assets/images/common/c6102b6c-5d0055b14ce5-exhibition.jpg){: .image-full }
+![CHERI Blossoms 2026 exhibition](/assets/images/events/cheri-blossoms-conference-2026/exhibition.webp){: .image-full }
 
 [View map](https://maps.google.com/maps?q=William%20Gates%20Building&t=m&z=13&output=embed&iwloc=near)

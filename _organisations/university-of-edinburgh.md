@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/alliance/leadership/university-of-edinburgh/9667623d-7d94ea7519fc-logo.png
+  src: /assets/images/organisation/university-of-edinburgh.webp
   alt: University of Edinburgh
-  width: 831
-  height: 199
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

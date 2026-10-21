@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: Events & Archive
 image:
-  src: /assets/images/common/578c9944-d4c0d2560e6f-eu-flag.jpg
+  src: /assets/images/events/webinar-cheri-cra-compliance.webp
   alt: European Union flag
   width: 1280
-  height: 853
+  height: 720
+  fit: contain
 date: '2026-09-09'
 event:
   format: webinar

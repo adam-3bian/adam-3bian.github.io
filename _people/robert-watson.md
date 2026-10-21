@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/robert-watson/8fc9ef6c-9eba3ea44771-portrait.png
+  src: /assets/images/people/robert-watson.webp
   alt: Robert Watson
-  width: 1024
-  height: 768
+  width: 340
+  height: 340
+  fit: cover
 person:
   roles:
   - speaker

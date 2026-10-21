@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/alliance/leadership/discribehub/9334b44e-70266a6e4d93-logo.jpg
+  src: /assets/images/organisation/discribehub.webp
   alt: DiscribeHub+
-  width: 2000
-  height: 1139
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

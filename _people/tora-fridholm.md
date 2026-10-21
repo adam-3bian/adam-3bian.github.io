@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/tora-fridholm/f16c3a9c-b0a2806e141b-portrait.png
+  src: /assets/images/people/tora-fridholm.webp
   alt: Tora Fridholm
-  width: 1024
-  height: 768
+  width: 374
+  height: 374
+  fit: cover
 person:
   roles:
   - speaker

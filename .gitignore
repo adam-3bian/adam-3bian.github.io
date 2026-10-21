@@ -12,4 +12,5 @@ __pycache__/
 *.py[cod]
 
 .sass-cache/
-!assets/pages/alliance--about-and-governance--trademark/5ff7f679f608-cheri-alliance-logo-pack.zip
+.DS_Store
+!assets/zip/shared/cheri-alliance-logo-pack.zip

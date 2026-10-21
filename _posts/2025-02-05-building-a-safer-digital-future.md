@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/news-and-events/news-and-analysis/building-a-safer-digital-future/8d351c1b-87eb1aa83796-hero.png
+  src: /assets/images/posts/2025-02-05-building-a-safer-digital-future.webp
   alt: A CPU with padlocks and protective shielding
-  width: 1277
-  height: 750
+  width: 1280
+  height: 720
+  fit: contain
 date: '2025-02-05T12:46:45+00:00'
 post:
   category: cheri-alliance-news

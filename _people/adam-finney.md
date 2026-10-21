@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/adam-finney/89a342e6-4600c140bf-portrait.jpg
+  src: /assets/images/people/adam-finney.webp
   alt: Adam Finney
-  width: 896
-  height: 896
+  width: 512
+  height: 512
+  fit: cover
 person:
   roles:
   - speaker

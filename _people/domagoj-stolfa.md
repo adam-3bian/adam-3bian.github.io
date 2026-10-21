@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/domagoj-stolfa/76665be4-98a36e03596d-portrait.png
+  src: /assets/images/people/domagoj-stolfa.webp
   alt: Domagoj Stolfa
-  width: 1024
-  height: 768
+  width: 440
+  height: 440
+  fit: cover
 person:
   roles:
   - speaker

@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/sam-cater/a5673ad8-9f23030312fd-portrait.jpg
+  src: /assets/images/people/sam-cater.webp
   alt: Sam Cater
-  width: 1137
-  height: 1200
+  width: 512
+  height: 512
+  fit: cover
 person:
   roles:
   - speaker

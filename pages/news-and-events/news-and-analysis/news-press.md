@@ -18,19 +18,19 @@ Please use the form on our [contact page](/alliance/membership/contact/) to get 
 
 ### Logo Pack
 
-[Download Zip](/assets/pages/alliance--about-and-governance--trademark/5ff7f679f608-cheri-alliance-logo-pack.zip)
+[Download Zip](/assets/zip/shared/cheri-alliance-logo-pack.zip)
 
-Please use our logos without alteration. Minimum clear space and sizing rules can be found in the [branding guidelines](/assets/pages/discover--resources--documentation-and-guides/3d933a481b79-cheri-branding-guidelines.pdf).
+Please use our logos without alteration. Minimum clear space and sizing rules can be found in the [branding guidelines](/assets/pdf/shared/cheri-branding-guidelines.pdf).
 
 ### CHERI Alliance Introduction
 
-[Download PDF](/assets/shared/source-assets/c275143b35fc-cheri-alliance-presentation.pdf)
+[Download PDF](/assets/pdf/events/embedded-world-2026/cheri-alliance-presentation.pdf)
 
 ## Policies &amp; Guidelines
 
 ### Branding Guidelines
 
-[Download PDF](/assets/pages/discover--resources--documentation-and-guides/3d933a481b79-cheri-branding-guidelines.pdf)
+[Download PDF](/assets/pdf/shared/cheri-branding-guidelines.pdf)
 
 ### Press Usage Policy
 

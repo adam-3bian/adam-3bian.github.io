@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/samuel-stark/84b9d77f-40598e887a8a-portrait.jpg
+  src: /assets/images/people/samuel-stark.webp
   alt: Samuel Stark
-  width: 1200
-  height: 1200
+  width: 512
+  height: 512
+  fit: cover
 person:
   roles:
   - speaker

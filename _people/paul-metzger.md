@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/paul-metzger/962dcfff-0069454ce669-portrait.jpg
+  src: /assets/images/people/paul-metzger.webp
   alt: Paul Metzger
-  width: 988
-  height: 1200
+  width: 512
+  height: 512
+  fit: cover
 person:
   roles:
   - speaker

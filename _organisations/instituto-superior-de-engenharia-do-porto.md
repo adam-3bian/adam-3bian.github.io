@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/alliance/leadership/instituto-superior-de-engenharia-do-porto/8a5da771-b4a785fb379b-logo.png
+  src: /assets/images/organisation/instituto-superior-de-engenharia-do-porto.webp
   alt: ISEP Logo
-  width: 2000
-  height: 589
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

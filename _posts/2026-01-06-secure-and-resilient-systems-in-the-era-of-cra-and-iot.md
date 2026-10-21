@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/news-and-events/news-and-analysis/secure-and-resilient-systems-in-the-era-of-cra-and-iot/18c7ad15-c43d0f35792b-hero.png
+  src: /assets/images/posts/2026-01-06-secure-and-resilient-systems-in-the-era-of-cra-and-iot.webp
   alt: Secure Horizons 2026. Navigating IoT compliance in a global regulatory landscape. Taking place at the IWM Duxford, Cambridge, England on Wednesday 21st January 2026, this is an official IoTSF partner event.
   width: 1024
-  height: 512
+  height: 576
+  fit: contain
 date: '2026-01-06T12:19:11+00:00'
 post:
   category: events

@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/news-and-events/news-and-analysis/cheri-zephyr-v0-4-0-release/a6dd21c0-fc61421e7d-zephyr_buffer_overflow.jpg
+  src: /assets/images/posts/2026-09-08-cheri-zephyr-v0-4-0-release.webp
   alt: Code showing a Zephyr buffer overflow
-  width: 510
-  height: 500
+  width: 896
+  height: 504
+  fit: contain
 date: '2026-09-08T12:00:00+00:00'
 post:
   category: cheri-alliance-news

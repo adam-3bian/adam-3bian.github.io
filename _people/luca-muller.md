@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/luca-muller/e6fb801c-e6e4894beb87-portrait.jpg
+  src: /assets/images/people/luca-muller.webp
   alt: Luca Müller
-  width: 800
-  height: 1200
+  width: 512
+  height: 512
+  fit: cover
 person:
   roles:
   - speaker

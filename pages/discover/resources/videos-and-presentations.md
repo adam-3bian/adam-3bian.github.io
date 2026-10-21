@@ -23,7 +23,7 @@ The CHERI Alliance publishes videos from the CHERI conferences that we have orga
 Slides are usually available on each [conference page](/news-and-events/events-and-archive/past-events/). You can also find the presentations done by a particular speaker on their [individual page](/news-and-events/people-and-opportunities/speakers/).
 
 
-See [About CHERI](/assets/shared/source-assets/bb02da00a010-cheri-basics.pdf).
+See [About CHERI](/assets/pdf/events/embedded-world-2026/cheri-basics.pdf).
 
 
-See [About the CHERI Alliance](/assets/shared/source-assets/c275143b35fc-cheri-alliance-presentation.pdf).
+See [About the CHERI Alliance](/assets/pdf/events/embedded-world-2026/cheri-alliance-presentation.pdf).

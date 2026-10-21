@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/news-and-events/news-and-analysis/ai-doesnt-need-a-kill-switch-it-needs-boundaries/51ae8f2f-AIdoesntneedkillswitchblogimagesjpg.jpg
+  src: /assets/images/posts/2026-10-13-ai-doesnt-need-a-kill-switch-it-needs-boundaries.webp
   alt: AI Doesn't Need a Kill Switch. It Needs Boundaries.
-  width: 1430
-  height: 715
+  width: 1280
+  height: 720
+  fit: contain
 date: '2026-10-13T11:00:10+01:00'
 post:
   category: ecosystem

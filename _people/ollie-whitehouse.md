@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/ollie-whitehouse/a7280ced-6fdb00632ea5-portrait.jpg
+  src: /assets/images/people/ollie-whitehouse.webp
   alt: Ollie Whitehouse
-  width: 640
-  height: 480
+  width: 390
+  height: 390
+  fit: cover
 person:
   roles:
   - speaker

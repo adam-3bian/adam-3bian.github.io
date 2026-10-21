@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/alliance/leadership/zaya/c7794f99-3c3279257b4f-logo.png
+  src: /assets/images/organisation/zaya.webp
   alt: ZAYA logo
   width: 1200
-  height: 566
+  height: 400
   fit: contain
 organisation:
   membership:

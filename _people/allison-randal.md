@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/allison-randal/a940c717-d26bf8240fe1-portrait.jpg
+  src: /assets/images/people/allison-randal.webp
   alt: Allison Randal
-  width: 768
-  height: 769
+  width: 512
+  height: 512
+  fit: cover
 person:
   organisations:
   - organisation: capabilities-limited

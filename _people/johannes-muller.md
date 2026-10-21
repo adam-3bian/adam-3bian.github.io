@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/johannes-muller/209d4dbb-41d6bed18ae7-portrait.png
+  src: /assets/images/people/johannes-muller.webp
   alt: Johannes Muller
-  width: 827
-  height: 1169
+  width: 512
+  height: 512
+  fit: cover
 person:
   roles:
   - speaker

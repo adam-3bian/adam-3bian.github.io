@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/alliance/leadership/university-of-glasgow/a23c43d4-abfc70878444-logo.png
+  src: /assets/images/organisation/university-of-glasgow.webp
   alt: University of Glasgow logo
-  width: 647
-  height: 201
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/kevin-brodsky/6b00f95d-a2904824ec93-portrait.png
+  src: /assets/images/people/kevin-brodsky.webp
   alt: Kevin Brodsky
-  width: 628
-  height: 466
+  width: 425
+  height: 425
+  fit: cover
 person:
   roles:
   - speaker

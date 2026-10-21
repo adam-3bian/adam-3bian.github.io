@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/common/b4292ca5-1e18de21cd71-logo.png
+  src: /assets/images/organisation/cyberwhiz.webp
   alt: CyberWhiz Logo
-  width: 1499
-  height: 354
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

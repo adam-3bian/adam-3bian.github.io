@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/simon-moore/00316b55-8f372d49f9c9-portrait.png
+  src: /assets/images/people/simon-moore.webp
   alt: Simon Moore
-  width: 1024
-  height: 768
+  width: 338
+  height: 338
+  fit: cover
 person:
   roles:
   - speaker

@@ -9,7 +9,7 @@ navigation:
     category: Build
     subcategory: Platforms
 image:
-  src: /assets/images/common/996577fc-645cc3b9a905-sonata-cheriot.webp
+  src: /assets/images/shared/sonata-cheriot.webp
   alt: CHERIoT processor on a Sonata board
   width: 640
   height: 384

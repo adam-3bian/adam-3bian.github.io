@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/common/f373e9aa-b40f17e0c2fc-cheriot-ibex-core-is-open-sourced-to-enable-memory-safe-mcus.png
+  src: /assets/images/posts/2024-06-17-initial-members-join-cheri-alliance-to-drive-adoption-of-memory-safety-and-scalable-software-compartmentalization.webp
   alt: Initial members join CHERI Alliance to drive adoption of memory safety and scalable software compartmentalization
-  width: 513
-  height: 484
+  width: 864
+  height: 486
+  fit: contain
 date: '2024-06-17T19:21:18+01:00'
 post:
   category: cheri-alliance-news

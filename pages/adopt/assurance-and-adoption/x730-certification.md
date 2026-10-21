@@ -9,7 +9,7 @@ navigation:
     category: Adopt
     subcategory: Assurance & Adoption
 image:
-  src: /assets/images/common/798e378c-c53c4c1378ba-cheri-enabled-2026.webp
+  src: /assets/images/shared/cheri-enabled-2026.webp
   alt: CHERI Enabled logo - 2026
   width: 400
   height: 120
@@ -37,7 +37,7 @@ related:
 
 The X730 is a commercially licensable 64-bit application-processor core implementing CHERI-RISC-V. The baseline design is described as an in-order, dual-issue, nine-stage processor with a memory-management unit, extended to handle capabilities and CHERI instructions.
 
-![X730 block diagram](/assets/images/adopt/assurance-and-adoption/adopt-assurance-and-adoption-x730-certification/5cff7240-114ea730a8ce-x730-block-diagram.webp){: .image-full }
+![X730 block diagram](/assets/images/shared/x730-block-diagram.webp){: .image-full }
 
 ## Certification answers
 

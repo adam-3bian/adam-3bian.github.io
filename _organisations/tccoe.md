@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/alliance/leadership/tccoe/620278ac-b326be17471b-logo.png
+  src: /assets/images/organisation/tccoe.webp
   alt: TCCoE logo
-  width: 281
-  height: 120
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

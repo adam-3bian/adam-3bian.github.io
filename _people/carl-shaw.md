@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/carl-shaw/af475053-8f07d5273822-portrait.jpg
+  src: /assets/images/people/carl-shaw.webp
   alt: Carl Shaw
   width: 500
   height: 500
+  fit: cover
 person:
   roles:
   - speaker

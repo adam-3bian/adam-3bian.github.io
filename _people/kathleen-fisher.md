@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/kathleen-fisher/d9fe705e-97d46ec3ab50-portrait.jpg
+  src: /assets/images/people/kathleen-fisher.webp
   alt: Kathleen Fisher
-  width: 1200
-  height: 800
+  width: 361
+  height: 361
+  fit: cover
 person:
   roles:
   - speaker

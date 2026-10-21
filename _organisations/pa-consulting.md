@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/common/4a4cc270-8aba894151f8-logo.png
+  src: /assets/images/organisation/pa-consulting.webp
   alt: PA Consulting logo
-  width: 1024
-  height: 908
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

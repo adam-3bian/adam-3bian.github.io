@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/dave-harcourt/2e7cca3c-9bdef3ab7087-portrait.jpg
+  src: /assets/images/people/dave-harcourt.webp
   alt: Dave Harcourt
-  width: 1200
-  height: 1165
+  width: 512
+  height: 512
+  fit: cover
 person:
   roles:
   - speaker

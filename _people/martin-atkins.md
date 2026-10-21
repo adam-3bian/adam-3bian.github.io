@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/martin-atkins/17f993ba-da5663b66c77-portrait.png
+  src: /assets/images/people/martin-atkins.webp
   alt: Martin Atkins
-  width: 1024
-  height: 768
+  width: 420
+  height: 420
+  fit: cover
 person:
   roles:
   - speaker

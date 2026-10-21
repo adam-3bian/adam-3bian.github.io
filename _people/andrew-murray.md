@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/andrew-murray/e3f410cf-fa3b8031754b-portrait.png
+  src: /assets/images/people/andrew-murray.webp
   alt: Andrew Murray
-  width: 900
-  height: 1200
+  width: 512
+  height: 512
+  fit: cover
 person:
   roles:
   - speaker

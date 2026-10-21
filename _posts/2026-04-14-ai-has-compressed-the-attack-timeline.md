@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/news-and-events/news-and-analysis/ai-has-compressed-the-attack-timeline/169cf964-a029b4887ff4-hero.jpg
+  src: /assets/images/posts/2026-04-14-ai-has-compressed-the-attack-timeline.webp
   alt: Red connectors leading to a key hole
-  width: 1920
-  height: 1920
+  width: 1280
+  height: 720
+  fit: contain
 date: '2026-04-14T09:25:48+01:00'
 post:
   category: cheri-alliance-news

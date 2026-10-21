@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/news-and-events/news-and-analysis/cheri-alliance-to-distribute-arm-morello-boards-the-journey-beyond-dsbd-continues/a2f3da69-249865cad3c6-hero.png
+  src: /assets/images/posts/2025-10-06-cheri-alliance-to-distribute-arm-morello-boards-the-journey-beyond-dsbd-continues.webp
   alt: arm Morello board
   width: 1024
   height: 576
+  fit: contain
 date: '2025-10-06T11:35:27+01:00'
 post:
   category: cheri-alliance-news

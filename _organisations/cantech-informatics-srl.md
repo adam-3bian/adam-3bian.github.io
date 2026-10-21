@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/common/46f53df8-7ef3653af98e-logo.png
+  src: /assets/images/organisation/cantech-informatics-srl.webp
   alt: Cantech Informatics logo
-  width: 700
-  height: 300
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:

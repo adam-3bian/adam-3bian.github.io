@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/andy-moore/0c8439bc-6a5983cbf294-portrait.jpg
+  src: /assets/images/people/andy-moore.webp
   alt: Andy Moore
-  width: 1200
-  height: 1059
+  width: 512
+  height: 512
+  fit: cover
 person:
   roles:
   - speaker

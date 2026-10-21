@@ -42,7 +42,7 @@ landing:
       url: /events/cheritech26/
       action: View event
       image:
-        src: /assets/images/common/a6d3b833-408459d34c43-cheritech26.webp
+        src: /assets/images/events/cheritech26.webp
         alt: CHERITech'26
         fit: contain
     - title: A new ETSI standard could rewrite the memory-safety debate
@@ -50,7 +50,7 @@ landing:
       url: /news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/
       action: Read article
       image:
-        src: /assets/images/common/0a641e61-67e343f4b8d6-hero.png
+        src: /assets/images/posts/2026-07-29-a-new-etsi-standard-could-rewrite-the-memory-safety-debate.webp
         alt: ETSI standard
         fit: contain
 related:

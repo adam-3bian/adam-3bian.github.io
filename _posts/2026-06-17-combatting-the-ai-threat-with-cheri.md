@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: News & Analysis
 image:
-  src: /assets/images/news-and-events/news-and-analysis/combatting-the-ai-threat-with-cheri/4091530a-13658ea5e276-hero.png
+  src: /assets/images/posts/2026-06-17-combatting-the-ai-threat-with-cheri.webp
   alt: Augmented reality showing a ship.
-  width: 616
-  height: 350
+  width: 624
+  height: 351
+  fit: contain
 date: '2026-06-17T11:00:33+01:00'
 post:
   category: cheri-alliance-news
@@ -29,13 +30,13 @@ post:
 
 These applications share some common attributes. Transmitted data contains highly sensitive and commercially valuable information which must be transmitted in real-time. Data privacy and integrity must be protected and devices generating and processing data must be protected from attack. To meet these requirements, Unicus implements a Core/Edge architecture. A core system, typically deployed in a public or private cloud manages multiple edge devices. Edge devices are deployed as low-end Arm or Intel processors securing an end-user system or IoT device or running as an embedded system in the protected device.
 
-![](/assets/images/news-and-events/news-and-analysis/combatting-the-ai-threat-with-cheri/c1fafea7-e8cc99611ba5-um-labs-blog-img-1.png){: .image-full }
+![](/assets/images/posts/2026-06-17-combatting-the-ai-threat-with-cheri/um-labs-blog-img-1.webp){: .image-full }
 
 The Core/Edge combination provides end-to-end security including the use of Post Quantum Cryptography where needed. Core and Edge systems share the same internal design implementing security controls at the network, application and content levels. Application-level security means providing a full implementation of the relevant protocols, for example SIP for voice and video calls, RTSP for streaming video and extended reality and MQTT for IoT applications. Content level security has similar requirements, but different protocols must be implemented, for example RTP and SRTP. This layered security architecture is implemented with proprietary code supported by a number of open-source packages.
 
 Since joining the CHERI alliance, we have implemented both Core and Edge systems on Morello CHERI using Morello QEMU via cheribuild and on hardware using a Morello prototype running CheriBSD. This involved compiling and running our own code and some open-source packages where ports were not available. The build stage identified potential problems with both [UM Labs](/organisations/um-labs/) code and open-source packages.
 
-![UM-Labs software architecture detail](/assets/images/news-and-events/news-and-analysis/combatting-the-ai-threat-with-cheri/8a5021b5-fe185b1f0355-um-labs-blog-aside-1.png){: .image-full width="400" height="364" }
+![UM-Labs software architecture detail](/assets/images/posts/2026-06-17-combatting-the-ai-threat-with-cheri/um-labs-blog-aside-1.webp){: .image-full width="400" height="364" }
 
 Our own code required a total of 52 mostly minor changes (35 for Edge, 17 for Core). Changes were also needed for some open-source packages: these included alignment warnings and changes to adapt the code, originally developed on Linux, to CheriBSD. The port covered all security layers in our software from network connectivity to application and content protocols. The changes made as a result of porting and testing on CHERI benefit our software on all platforms, not only CHERI, as the changes made to address the potential fault were merged with our core code. The total effort spent so far on building Unicus Core and Edge on CHERI is estimated as 460 hours (approx. 3 months). The code base ported had taken several years to develop.
 

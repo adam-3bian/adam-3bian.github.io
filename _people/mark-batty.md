@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/mark-batty/d1e244ab-4c0d31cb8eb5-portrait.png
+  src: /assets/images/people/mark-batty.webp
   alt: Mark Batty
-  width: 1024
-  height: 768
+  width: 396
+  height: 396
+  fit: cover
 person:
   roles:
   - speaker

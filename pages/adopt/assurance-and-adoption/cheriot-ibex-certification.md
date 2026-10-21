@@ -9,7 +9,7 @@ navigation:
     category: Adopt
     subcategory: Assurance & Adoption
 image:
-  src: /assets/images/common/798e378c-c53c4c1378ba-cheri-enabled-2026.webp
+  src: /assets/images/shared/cheri-enabled-2026.webp
   alt: CHERI Enabled logo - 2026
   width: 400
   height: 120

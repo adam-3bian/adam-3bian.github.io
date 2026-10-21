@@ -9,10 +9,11 @@ navigation:
     category: News & Events
     subcategory: People & Opportunities
 image:
-  src: /assets/images/news-and-events/people-and-opportunities/edoardo-marangoni/a9e8f980-ce34277369e5-portrait.jpg
+  src: /assets/images/people/edoardo-marangoni.webp
   alt: Edoardo Marangoni
   width: 400
   height: 400
+  fit: cover
 person:
   roles:
   - speaker

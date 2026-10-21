@@ -9,10 +9,10 @@ navigation:
     category: CHERI Alliance
     subcategory: Leadership
 image:
-  src: /assets/images/common/65f15bf1-0c30741ff5ce-logo.png
+  src: /assets/images/organisation/capabilities-limited.webp
   alt: Capabilities Limited logo
-  width: 1000
-  height: 1374
+  width: 1200
+  height: 400
   fit: contain
 organisation:
   membership:
