@@ -52,6 +52,9 @@ related:
 - type: page
   slug: news-and-events-events-and-archive-upcoming-events
   relation: navigation
+- type: page
+  slug: news-and-events-events-and-archive-cheri-blossoms
+  relation: navigation
 ---
 
 ## Conference Overview
@@ -85,17 +88,18 @@ CHERI Blossoms 2027 will take place in Cambridge UK, at the Department of Comput
 
 ### Address
 
-William Gates Building
+> William Gates Building
 
-15 JJ Thomson Ave
+> 15 JJ Thomson Ave
 
-Cambridge CB3 0FD
+> Cambridge CB3 0FD
+
+[View map](https://maps.google.com/maps?q=William%20Gates%20Building&t=m&z=13&output=embed&iwloc=near)
 
 ![William Gates building - Outside view](/assets/images/events/cheri-blossoms-conference-2026/william-gates-building-outside-view.webp){: .image-full }
 
 ![CHERI Blossoms 2026 exhibition](/assets/images/events/cheri-blossoms-conference-2026/exhibition.webp){: .image-full }
 
-[View map](https://maps.google.com/maps?q=William%20Gates%20Building&t=m&z=13&output=embed&iwloc=near)
 
 
 Address

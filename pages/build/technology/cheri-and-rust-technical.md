@@ -42,7 +42,7 @@ In particular, CHERIoT builds on CHERI with a rich compartmentalisation model th
 **Legend:** ● Covered, ○ Partial, blank = Not covered
 
 | Property | Rust | CHERI | Rust + CHERI | Notes |
-| --- | --- | --- | --- | --- |
+| --- | :---: | :---: | :---: | --- |
 | **Spatial memory safety** |  |  |  |  |
 | Buffer overflow prevention | ○ | ● | ● | Only in safe Rust, via bounds checks on slices; CHERI uses hardware capability bounds on every pointer. |
 | Out-of-bounds read | ○ | ● | ● | This is caught in safe Rust; CHERI also catches it in inline assembly and FFI code. |

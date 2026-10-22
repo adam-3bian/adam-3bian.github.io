@@ -55,6 +55,8 @@ Protection is built into the hardware rather than relying solely on software che
 
 ## Compartmentalisation
 
+![Compartmentalisation prevents contagion](/assets/images/shared/compartmentalisation.webp){: .image-right }
+
 Capabilities can also be used to create secure compartments: isolated parts of a system that have access only to the resources they need. A compartment might be:
 
 - An application
@@ -65,8 +67,6 @@ Capabilities can also be used to create secure compartments: isolated parts of a
 Each compartment receives its own capabilities and cannot freely access the memory of other compartments. CHERI makes it practical to create and manage **large numbers** of **small** compartments with **very low overhead**. This enables much finer-grained isolation than traditional security approaches, without the important performance penalty.
 
 This approach, known as compartmentalisation, helps contain bugs and security vulnerabilities, preventing problems in one part of a system from affecting everything else. The smaller the compartment, the smaller the impact of a bug or attack.
-
-![Compartmentalisation prevents contagion](/assets/images/shared/compartmentalisation.webp){: .image-full }
 
 ## Working with existing software
 
