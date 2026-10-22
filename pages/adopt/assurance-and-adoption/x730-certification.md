@@ -35,9 +35,9 @@ related:
 
 ## Product information
 
-The X730 is a commercially licensable 64-bit application-processor core implementing CHERI-RISC-V. The baseline design is described as an in-order, dual-issue, nine-stage processor with a memory-management unit, extended to handle capabilities and CHERI instructions.
+![X730 block diagram](/assets/images/shared/x730-block-diagram.webp){: .image-right }
 
-![X730 block diagram](/assets/images/shared/x730-block-diagram.webp){: .image-full }
+The X730 is a commercially licensable 64-bit application-processor core implementing CHERI-RISC-V. The baseline design is described as an in-order, dual-issue, nine-stage processor with a memory-management unit, extended to handle capabilities and CHERI instructions.
 
 ## Certification answers
 

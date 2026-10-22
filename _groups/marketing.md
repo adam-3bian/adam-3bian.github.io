@@ -20,6 +20,12 @@ related:
 - type: working_group
   slug: promotion-and-ambassador-program
   relation: next_step
+- type: policy
+  slug: trademark
+  relation: next_step
+- type: page
+  slug: news-and-events-news-and-analysis-latest-news
+  relation: next_step
 - type: page
   slug: alliance-leadership-working-groups
   relation: navigation
@@ -30,3 +36,7 @@ related:
 CHERI needs explanations that are accurate, useful to different audiences, and clear about the maturity of the technology. The group coordinates shared messages and material so Alliance activity can be communicated consistently without flattening important technical distinctions.
 
 Activity can include editorial planning, member stories, event promotion, campaign material, and review of public explanations. The group works alongside the [Promotion &amp; Ambassador Program](/groups/promotion-and-ambassador-program/) while retaining a distinct focus on Alliance-wide communication.
+
+## Working group's publications
+
+- [CHERI Branding Guidelines](/assets/pdf/shared/cheri-branding-guidelines.pdf)

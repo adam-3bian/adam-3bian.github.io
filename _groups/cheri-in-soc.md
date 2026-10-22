@@ -18,7 +18,7 @@ working_group:
   - Hardware and software interfaces
 related:
 - type: working_group
-  slug: cheri-linux-working-group
+  slug: certification-working-group
   relation: next_step
 - type: page
   slug: alliance-leadership-working-groups
@@ -35,3 +35,9 @@ The resources we deliver will help accelerate:
 - Understanding the different levels of CHERI support, and what guarantees they can offer.
 - Making the right trade-offs and choices for the devices and systems being developed.
 - Extending or innovating technologies to better enable CHERI at the system level.
+
+## Working group's publications
+
+- [CHERI Tag Bit Transport Overlay Standard](/assets/pdf/posts/2026-09-21-cheri-tag-bit-transport-overlay-standard-version-0-9-released/cheri-tag-bit-transport-overlay-standard-v0-9.pdf)
+- [Guide - CHERI at the SoC Level](/assets/pdf/shared/guide-cheri-at-soc-level.pdf)
+- [What Is Memory Safety](/assets/pdf/shared/what-is-memory-safety-v0-9.pdf)

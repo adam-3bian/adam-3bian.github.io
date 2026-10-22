@@ -38,3 +38,7 @@ The Certification Program Working Group is responsible for defining the [CHERI E
 The group aims to continuously improve the certification program. This involves regularly reviewing and updating the guidelines, processes, and systems to enhance efficiency, effectiveness, and relevance
 
 Overall, the working group plays a crucial role in ensuring the compliance and compatibility of certified CHERI products to make sure that users can trust the CHERI logo to guarantee a correct implementation of the technology.
+
+## Working group's publications
+
+- [CHERI Enabled program - Program description and guidelines](/assets/pdf/shared/certification-program-v1.pdf)

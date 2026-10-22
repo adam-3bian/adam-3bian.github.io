@@ -85,9 +85,7 @@ Tell us about:
 - Your organisation: Boards are loaned to organisations rather than individuals.
 - Your team: Tell us briefly about your expertise, motivation and interest in contributing to the CHERI ecosystem.
 
----
-[Contact the CHERI Alliance](/alliance/membership/contact/) to request a board
----
+[Contact the CHERI Alliance to request a board](/alliance/membership/contact/){: .button }
 
 You can also find further information about the platform from [Arm's Morello page](https://www.arm.com/architecture/cpu/morello).
 
