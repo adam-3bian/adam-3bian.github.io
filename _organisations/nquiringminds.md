@@ -37,7 +37,7 @@ Secure AI Agents Our customers can develop, and deploy distributed AI agents, wi
 
 ## CHERI Products
 
-[https://nquiringminds.com/snbd/](https://nquiringminds.com/snbd/)
+[https://nquiringminds.com/case-studies/snbd/](https://nquiringminds.com/case-studies/snbd/)
 
 ## Open-source Assets for CHERI
 

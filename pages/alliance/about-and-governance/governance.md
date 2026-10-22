@@ -10,8 +10,8 @@ navigation:
     subcategory: About & Governance
 resources:
 - type: website
-  label: Technical Leadership
-  url: https://cheri-alliance.github.io/alliance/about-and-governance/technical-leadership/
+  label: Working Groups
+  url: /alliance/leadership/working-groups/
 related:
 - type: organisation
   slug: cheri-alliance

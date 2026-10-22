@@ -12,7 +12,7 @@ sitemap: false
 resources:
 - type: website
   label: Developer section
-  url: https://cheri-alliance.github.io/alliance/build/
+  url: /build/
 related:
 - type: page
   slug: discover-why-cheri-vulnerabilities-in-everyday-technology

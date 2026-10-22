@@ -1268,7 +1268,7 @@
   page-hero-title: page-title
   page-title: page-title
   recordings--slides: programme-title
-  recordings-slides: page-title
+  recordings-slides: programme-title
   related-series-events: page-title
   speakers: speakers-title
   speakers-title: page-title
@@ -1315,7 +1315,7 @@
   talk-c9c48f6d19b0: programme-2026-03-27-towards-heterogeneous-cheri-compartmentalization
   talk-595c5bc52c44: programme-2026-03-27-all-caps-extending-capabilities-across-the-whole-soc
 /events/cheri-blossoms-conference-2026/index.html:
-  recordings-slides: page-title
+  recordings-slides: programme-title
   speakers-title: page-title
 /events/cheri-blossoms-conference-2027/:
   address: address
@@ -1475,8 +1475,8 @@
   hero-title: page-title
   page-hero-title: page-title
   page-title: page-title
-  talks: page-title
-  talks--slides: talks-slides
+  talks: programme-title
+  talks--slides: programme-title
   talk-e536163359ad: programme-2024-11-12-incentivising-future-security
   talk-eeaa35114069: programme-2024-11-12-digital-security-by-design-challenge-securing-the-future-of-computing
   talk-233ad5f2639c: programme-2024-11-12-cheri-capability-hardware-enhanced-risc-instructions
@@ -1488,7 +1488,7 @@
   talk-678f917ed6ba: programme-2024-11-12-cheri-prototyping-and-open-source
   talk-9f2d2256cad2: programme-2024-11-12-cheri-software-ecosystem
 /events/cybersecurity-by-design-conference-2024/index.html:
-  talks: page-title
+  talks: programme-title
 /events/embedded-world-2026/:
   booth-location: booth-location
   cheri-alliance-presence-at-embedded-world: cheri-alliance-presence-at-embedded-world

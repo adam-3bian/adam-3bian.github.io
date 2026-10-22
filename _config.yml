@@ -14,30 +14,18 @@ kramdown:
     ndash: --
     laquo: '<<'
     raquo: '>>'
+# Local tooling and generated output must never be published.
 exclude:
-- sources
-- reports
-- sitemap.json
-- sitemap.md
-- scripts
-- requirements-migration.txt
-- CHERI_SITE_INVENTORY.json
-- CHERI_HIERARCHICAL_SITEMAP.md
-- PROGRESS.md
-- MIGRATION_SPEC.md
-- README_MIGRATION.md
-- tests
-- README.md
-- _data
-- docs
+- .devcontainer
 - Gemfile
 - Gemfile.lock
-- _plugins
+- README.md
 - vendor
-- requirements-dev.txt
+- _site
 - dist
 - dist-baseurl
-- _site
+- reports
+- linkchecker-out.csv
 collections:
   events:
     output: true

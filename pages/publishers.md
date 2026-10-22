@@ -153,7 +153,7 @@ from authors, speakers, affiliations or manufacturers.
 
 Keep the shared fields above, choose the correct layout, and add the owning
 semantic object. The following snippets are **additions to the common scaffold**,
-not complete files. `_data/taxonomy.yml` defines enumerated values;
+not complete files. Reuse the values documented below and in nearby records;
 `_data/catalog.yml` defines displayed facts. Do not invent metadata to fill a
 card, or add per-record colour, spacing or image-ratio flags.
 
@@ -416,7 +416,7 @@ Quote versions and preserve source date precision. Optional `dates.reviewed`
 records a real review. Statuses are `current`, `draft` and `archived`. Retain
 legal wording, attribution, the official PDF resource and notices about which
 document is authoritative. The supported policy type is currently `governance`;
-change taxonomy and validation deliberately before adding another.
+update the shared templates and this guide before adding another.
 
 ### Glossary entries and redirects
 
@@ -484,9 +484,8 @@ backgrounds and social images have named shared subfolders; fonts live under
 Keep SVG for vectors and animation formats when conversion would lose necessary
 functionality. Preserve licences, attribution and captions.
 
-Prepare artwork in an editor or use `scripts/prepare_image.py`. Portrait
-`--crop` arguments are source-pixel left, top and square size. Inspect automatic
-white-background removal. Replace a file at its established path where possible,
+Prepare artwork in an image editor. Crop portraits around the face, and inspect
+any background removal carefully so logo details remain intact. Replace a file at its established path where possible,
 updating dimensions if changed. New media needs no migration-manifest entry.
 
 ## Running Jekyll in the Alpine dev container
@@ -527,8 +526,8 @@ The container installs Ruby dependencies during its image build and checks them
 again when created. After changing `Gemfile` or `Gemfile.lock`, choose **Dev
 Containers: Rebuild Container** so the cached image matches the checkout. Do not
 copy host gems or `vendor/bundle` into Alpine; its native libraries use musl.
-Python/browser validation tools are separate optional dependencies from
-`requirements-dev.txt`; they are not needed just to run Jekyll.
+No Python tools, Node package installation or asset-generation scripts are required
+to build the site.
 
 Without VS Code, build and run the same image from the repository root:
 
@@ -548,27 +547,17 @@ checkout uses another UID and the CLI container cannot write its output.
 
 ~~~sh
 bundle install
-python -m pip install -r requirements-dev.txt
-python scripts/check_content.py
-python scripts/check_assets.py
-bundle exec jekyll build --safe --destination dist
-python scripts/check_content.py --site dist
-python scripts/check_assets.py --site dist
-python scripts/check_linked_content.py --site dist
-python -m http.server 4000 --directory dist
+bundle exec jekyll build --safe
+bundle exec jekyll serve --safe --host 0.0.0.0 --port 4000
 ~~~
 
-Review desktop and mobile. Check crops, transparent logos, text wrapping,
-captions, downloads, event tabs, speaker profiles and inverse organisation views
-affected by the edit. Check external links without JavaScript too. Confirm new
-external destinations; local checks cannot guarantee another service's uptime.
+Open `http://localhost:4000` and review the affected pages on desktop and mobile.
+Check internal links, downloads, image crops, transparent logos, text wrapping,
+event tabs, speaker profiles and organisation views. Test that external links
+open correctly and that local links stay on the site. Stop the server with Ctrl+C.
 
-For deployment-path changes, also build with `--baseurl /preview` and verify
-links under that prefix. GitHub Pages uses native safe-mode Jekyll: no custom
-content-rendering plugin is required.
-
-Snapshots and preservation baselines under `docs/` and `scripts/fixtures/` are
-migration evidence, not authoring sources. If an intentional editorial edit
-changes a protected contract, review/update the relevant fixture deliberately;
-do not regenerate it to hide an unexplained failure. Inspect `git diff` and run
-existing CI checks relevant to the changed feature before committing.
+For a project-site preview, also build with `--baseurl /preview` and verify links
+under that prefix. GitHub Pages builds the Markdown, Liquid, Sass and YAML
+natively from the configured source branch; no custom build workflow or content
+preprocessing is needed. Keep generated output, installed dependencies and local
+link-checker reports out of Git.

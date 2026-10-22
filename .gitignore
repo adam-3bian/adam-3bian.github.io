@@ -1,16 +1,29 @@
-_site/
-dist/
-dist-baseurl/
-.jekyll-cache/
+# Generated Jekyll output and caches.
+/_site/
+/dist/
+/dist-baseurl/
+/.jekyll-cache/
 .jekyll-metadata
-.bundle/
-vendor/
-/reports/
-*.zip
+.sass-cache/
 
+# Installed dependencies belong outside version control.
+/.bundle/
+/vendor/
+node_modules/
+
+# Local audit output.
+/reports/
+linkchecker-out.*
+
+# Operating-system and editor files.
+.DS_Store
+.DSStore
+.DStore
+._*
+*~
+*.swp
+*.swo
+
+# Local Python caches, if ad hoc tools are used.
 __pycache__/
 *.py[cod]
-
-.sass-cache/
-.DS_Store
-!assets/zip/shared/cheri-alliance-logo-pack.zip

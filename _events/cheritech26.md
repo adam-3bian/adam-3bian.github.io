@@ -265,7 +265,7 @@ CHERITech’26 brings the CHERI technical community to [Electronica](https://ele
 
 Whether CHERI is new to you or already on your technology roadmap, join us to **learn** from early implementations, see the **technology in action**, ask questions and **connect** with the organisations shaping what comes next.
 
-[Register for CHERITech’26](/events/cheritech26/#register){: .button } [View CHERITech’26 programme](/events/cheritech26/#register){: .button }
+[Register for CHERITech’26](/events/cheritech26/#register){: .button } [View CHERITech’26 programme](/events/cheritech26/#programme-title){: .button }
 
 ## CHERI meets the semiconductor industry
 

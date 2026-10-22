@@ -12,7 +12,7 @@ navigation:
 
 ## Overview
 
-This text is based on the [lowRISC Code of Conduct](https://lowrisc.org/code-of-conduct/), which is based on the [LLVM Code of Conduct](https://llvm.org/docs/CodeOfConduct.html), which is based on the [Django Project Code of Conduct,](https://www.djangoproject.com/conduct/) and so on…
+This text is based on the [lowRISC Code of Conduct](https://lowrisc.github.io/code-of-conduct/), which is based on the [LLVM Code of Conduct](https://llvm.org/docs/CodeOfConduct.html), which is based on the [Django Project Code of Conduct,](https://www.djangoproject.com/conduct/) and so on…
 
 The CHERI community is a welcoming and respectful community, and we want to ensure that doesn’t change as we grow and evolve. To that end, we have a few ground rules that we ask people to adhere to:
 
