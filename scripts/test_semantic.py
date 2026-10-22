@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Browser acceptance for all ten semantic families and migration-specific behaviour."""
-import json,os
+import json,os,yaml
 from pathlib import Path
 from urllib.parse import urlsplit,parse_qs
 from playwright.sync_api import sync_playwright
@@ -10,6 +10,8 @@ OUT=Path(os.environ.get('REPORT_ROOT',ROOT/'reports/semantic'));OUT.mkdir(parent
 AXE=Path(os.environ['AXE_PATH'])
 ROUTES=['news/','events/','people/','organisations/','papers/','products/','repositories/','groups/','guides/','policies/',
 'news/a-new-etsi-standard-could-rewrite-the-memory-safety-debate/','events/cheritech26/','people/domagoj-stolfa/','organisations/cheri-alliance/','papers/cheriot-complete-memory-safety-for-embedded-devices/','products/sonata/','repositories/cheribsd/','groups/marketing/','guides/install-a-toolchain/','policies/code-of-conduct/']
+programme_days=yaml.safe_load((ROOT/'_events/cheritech26.md').read_text().split('---',2)[1])['event']['schedule']
+conference_index=next(i for i,day in enumerate(programme_days) if any(s.get('presentations') for s in day['sessions']))
 results=[]
 with sync_playwright() as p:
  browser=p.chromium.launch(executable_path=os.environ.get('CHROMIUM_EXECUTABLE'),args=['--no-sandbox'])
@@ -25,16 +27,17 @@ with sync_playwright() as p:
    assert page.locator('a a,a button').count()==0
    if route.startswith('news/') and route!='news/':assert page.locator('.article-byline .author-role').count()==0
    if route=='events/cheritech26/':
-    tabs=page.get_by_role('tab');assert tabs.count()==2
+    tabs=page.get_by_role('tab');assert tabs.count()==len(programme_days)
     assert page.locator('.programme-day:visible').count()==1
     assert tabs.first.get_attribute('aria-selected')=='true'
+    tabs.nth(conference_index).click()
     assert page.locator('.programme-clock:visible').all_text_contents()[:5]==['13:00','13:05','13:20','13:40','14:00']
     tabs.last.click();assert page.locator('.programme-session:visible').count()==6
     tabs.last.press('ArrowRight');assert tabs.first.get_attribute('aria-selected')=='true'
     tabs.first.press('End');assert tabs.last.get_attribute('aria-selected')=='true'
     tabs.last.press('Home');assert tabs.first.get_attribute('aria-selected')=='true'
     scroll=page.evaluate('scrollY');tabs.first.press('Space');assert page.evaluate('scrollY')==scroll
-    page.emulate_media(media='print');assert page.locator('.programme-day:visible').count()==2
+    page.emulate_media(media='print');assert page.locator('.programme-day:visible').count()==len(programme_days)
     assert page.locator('.programme-date').first.evaluate('e=>getComputedStyle(e).position')=='static'
     page.emulate_media(media='screen');assert page.locator('.programme-day:visible').count()==1
    for img in page.locator('.media-posts,.media-events').all():
@@ -88,7 +91,7 @@ with sync_playwright() as p:
  assert page.locator('#'+generated).is_visible()
  assert page.get_by_role('tab').last.get_attribute('aria-selected')=='true'
  page.evaluate("location.hash='programme-day-2026-11-12'")
- page.wait_for_function("document.querySelector('[data-programme-tab]').getAttribute('aria-selected')==='true'")
+ page.wait_for_function("document.getElementById('programme-tab-2026-11-12').getAttribute('aria-selected')==='true'")
  page.goto(programme+'#%not-escaped');assert page.locator('.programme-day:visible').count()==1
  # Single-day events need no tabs; all multi-day content survives a failed script.
  page.goto(URL+'events/cheri-blossoms-conference-2025/')
@@ -99,13 +102,13 @@ with sync_playwright() as p:
  failed=browser.new_context(viewport={'width':390,'height':844})
  failed.route('**/assets/js/programme.js',lambda route:route.abort())
  fallback=failed.new_page();fallback.goto(programme)
- assert fallback.locator('.programme-session:visible').count()==17
+ assert fallback.locator('.programme-session:visible').count()==sum(len(day['sessions']) for day in programme_days)
  assert fallback.get_by_role('tab').count()==0
  failed.close()
  # Whole programme remains native content without scripting.
  nojs=browser.new_context(java_script_enabled=False,viewport={'width':390,'height':844});plain=nojs.new_page();plain.goto(URL+'events/cheritech26/')
- assert plain.locator('.programme-day:visible').count()==2
- assert plain.locator('.programme-session:visible').count()==17
+ assert plain.locator('.programme-day:visible').count()==len(programme_days)
+ assert plain.locator('.programme-session:visible').count()==sum(len(day['sessions']) for day in programme_days)
  assert plain.locator('.programme-presentation:visible').count()>10
  for route,count in [('alliance/membership/contact/',5),('news-and-events/news-and-analysis/subscribe-newsletter/',1)]:
   plain.goto(URL+route);assert plain.locator('.form-panel form').is_visible()

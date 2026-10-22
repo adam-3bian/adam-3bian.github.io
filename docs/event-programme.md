@@ -59,7 +59,7 @@ event:
   start, the timeline uses its session's known start; later missing times stay
   blank. Times are never estimated from the number or duration of talks.
 - A standalone entry defaults to `talk`; a session containing presentations
-  defaults to `session`. Set `type: keynote`, `break`, `networking`, `tutorial`
+  defaults to `session`. Set `type: keynote`, `break`, `networking`, `exhibition`, `tutorial`
   or another supported type when appropriate. Breaks and networking use the
   green band and, without an explicit end, run until the next session starts.
 - Tracks default to `main`. Set `track` and `room` only when needed. Keep the

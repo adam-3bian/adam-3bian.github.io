@@ -27,7 +27,11 @@ CSV.foreach(File.join(root,'docs/migrations/v5.3/records.csv'),headers:true) do 
   expected=normalize.call(paragraph.text);next if expected.length<=35
   paragraphs+=1;reason=nil
   unless text.include?(expected)
-   if row['new_url']=='/events/webinar-cheri-cra-compliance/' && expected.start_with?('Date & Time:')
+   if row['new_url']=='/adopt/assurance-and-adoption/about-cheri-enabled/' && expected=='Read the current programme specifications.'
+    button=output.at_css('main a.button[href="/assets/pdf/shared/certification-program-v1.pdf"]')
+    abort 'Programme specification button changed its label or destination' unless button && normalize.call(button.text)==expected.delete_suffix('.')
+    reason='Existing programme specification link uses a native Markdown button without sentence punctuation'
+   elsif row['new_url']=='/events/webinar-cheri-cra-compliance/' && expected.start_with?('Date & Time:')
     abort 'Webinar clock facts lost' unless text.include?('14:00–14:30')&&text.include?('Europe/London')&&output.at_css('time[datetime="2026-09-09"]')
     reason='Published date/clock facts moved to event.date/time_bounds/timezone'
    elsif row['new_url']=='/events/webinar-cheri-cra-compliance/' && expected.include?('TBD - insert video')
@@ -70,6 +74,7 @@ links_markdown=<<~'MARKDOWN'
   [Canonical](HTTPS://ADAM-3BIAN.GITHUB.IO/people/gavin-ferris/)
   [Mail](mailto:person@example.org)
   [Fragment](#local)
+  [View slides](/slides.pdf){: .button }
   `https://example.org/literal`
 
   ~~~html
@@ -80,6 +85,7 @@ links_html=converter.convert(links_markdown)
 link_template=Liquid::Template.parse('{% include external-links.html content=fixture %}')
 adapted_html=link_template.render!({'fixture'=>links_html,'site'=>{'url'=>'https://adam-3bian.github.io'}},registers:{site:site,page:{}})
 before_links=Nokogiri::HTML.fragment(links_html);after_links=Nokogiri::HTML.fragment(adapted_html)
+abort 'Native Markdown button class was lost' unless after_links.at_css('a.button[href="/slides.pdf"]')
 abort 'Link adapter changed content, code or destinations' unless before_links.text==after_links.text && before_links.css('a').map{|a|a['href']}==after_links.css('a').map{|a|a['href']}
 after_links.css('a').each do |link|
  external=link['href'].start_with?('https://example.org/','//example.org/')

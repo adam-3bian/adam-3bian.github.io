@@ -15,7 +15,7 @@ image:
   width: 640
   height: 360
   fit: cover
-date: '2026-11-12'
+date: '2026-11-10'
 end_date: '2026-11-13'
 event:
   format: conference
@@ -162,7 +162,6 @@ event:
     - type: closing
       title: End of Day 1
       start: '18:30'
-    label: Thursday
   - date: '2026-11-13'
     label: Conference and Exhibition
     sessions:
@@ -238,7 +237,6 @@ event:
     - type: closing
       title: Talks end and exhibition
       start: '13:30'
-    label: Friday
 resources:
 - type: website
   label: Electronica
@@ -254,7 +252,6 @@ related:
   slug: news-and-events-events-and-archive-upcoming-events
   relation: navigation
 - type: page
-  label: CHERITech
   slug: news-and-events-events-and-archive-cheritech
   relation: navigation
 ---

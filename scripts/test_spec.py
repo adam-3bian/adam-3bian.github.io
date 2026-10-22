@@ -17,6 +17,12 @@ class Contracts(unittest.TestCase):
    e=self.event();mutate(e);self.assertTrue(self.schedule(e)[0])
  def test_source_precision_is_not_fabricated(self):
   e=self.event();e['event']['schedule'][0]['sessions'][0].pop('end');errors,warnings=self.schedule(e);self.assertFalse(errors);self.assertTrue(warnings)
+ def test_exhibition_days_keep_unknown_times_blank(self):
+  e=self.event();e['date']='2026-11-10'
+  e['event']['schedule'].insert(0,{'date':'2026-11-10','label':'Exhibition only','sessions':[{'id':'exhibition','type':'exhibition','title':'CHERI area','track':'main'}]})
+  self.assertFalse(self.schedule(e)[0])
+  e['event']['schedule'][0]['sessions'][0]['type']='exhibtion'
+  self.assertTrue(any('invalid session type' in error for error in self.schedule(e)[0]))
  def test_nested_programme_needs_no_ids_or_cross_references(self):
   raw={'event':{'schedule':[{'date':'2026-11-12','sessions':[{'title':'Keynotes','presentations':[
    {'title':'First talk','speakers':[{'person':'alice'}],'resources':[{'type':'slides','label':'Slides','url':'/slides.pdf'}]},

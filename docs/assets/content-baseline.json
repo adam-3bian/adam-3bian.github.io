@@ -189,7 +189,7 @@
     "ids": "3f823c66a6f158097f0e71319cd3a661eeda9822f35297a7f10f83f1a846ed02",
     "images": "9e260b7fd68fc8a64e03e8ec3bc4f8fa2d56ee7d45b1a57b49b4bb52a3d9e866",
     "links": "cb71dc1e743f90e7791e8b8cfc5689306c66eee96e95f3761aa7069b049f803e",
-    "text": "fac99e3d4225e435899a67eda97c3bbe80826ca8156a7f66ae23c91b391a50d9"
+    "text": "c2d42a244d2b65035a6f28b260aa5eeb4ee21f2efccea284052455e76a142d4e"
   },
   "adopt/assurance-and-adoption/assurance-and-certification/index.html": {
     "ids": "c3824068cff2aaf6049f0696bd482590022347581b3fa7db94ebd7b0408d98fd",
@@ -1141,7 +1141,7 @@
   },
   "discover/understand/cheri-history/index.html": {
     "ids": "9cb52e3c8090db42a4d90e9ce4cb577280bff875a0a4777606f23a386ac0c64c",
-    "images": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "images": "e4f2e653e05accfb0f1ca5613f8d751f1706a44f62c36d687f00628ed0c89c63",
     "links": "9e7657fa25093ec0ae7a096ff7bbb7dad095533175566029101a825414646c51",
     "text": "d4fbfd2c07c4e0ad954e8638e5e6e72ba148a770005bdf4c9a9bb02a5b74776e"
   },
@@ -1191,7 +1191,7 @@
     "ids": "bd656c58ef49734bdcab17f51d00f61f1c81c2f84a1a0f4816ba257946d57a66",
     "images": "0cdd67384ee932bcab2fd84afe1487fb300da00ab7a7fe632f60e6d40bffe7d4",
     "links": "1af1618a8b3ed110427e170d736c00e167b53e1069a930beb9f0211048e63367",
-    "text": "0c2630c42d8f2d6df53c10ff1ca93da2444fe7e360ac73a201f7702b3b7e8cfc"
+    "text": "b20dbe15d907db60d673d9d61d65eb2c239426e5f69ee4592f00b4d92b24429d"
   },
   "discover/why-cheri/why-cheri/index.html": {
     "ids": "453bae989a4227a9ca5d46722d244ac5652ca0eda8723742796ccd421f5fe84b",
@@ -1232,8 +1232,8 @@
   "events/cheri-blossoms-conference-2027/index.html": {
     "ids": "027a37de064a15685bbfd94b46a0269d65903baa1570d2552a6fa7e97658f555",
     "images": "daf3b70e589c6e55b07e972587fd9a1524b688b1f78c9fdd2f2b09a4a8944b28",
-    "links": "742b434d2b1af88d295f7f734bb0483e87e4a7f61b6119d7a3fa4eabed66d884",
-    "text": "0e3107eca72c741306b2e75cce41438de979e2cab504f1d5a921c2a0a0b27012"
+    "links": "303b77f42d67ceedd3e3102588c8f19a309e72541ddbbc8048f26058650e01a7",
+    "text": "1e93cc10c9afaea81370966c2fe17c9322e65e625c6627223daffe9a03521541"
   },
   "events/cheri-blossoms-tutorial-2026/index.html": {
     "ids": "e738418e069ee2d8e120826f56f59290a8df2f64edc19e4cd5d4931fd2c26136",
@@ -1260,10 +1260,10 @@
     "text": "68cb185fdfb0078e7d01fae00c55d8a5f89ffd94a90e3ed1b82cb220e0370e95"
   },
   "events/cheritech26/index.html": {
-    "ids": "2819cbfa8c332e9857c4b57a825840176a1f0d3d4aa79d6ba86fa000c85e311a",
+    "ids": "a66a446a3cac1913ea9ccb64aabd35ac44a06c156d465fb43d4455f862af2882",
     "images": "5d21ecdc1198f70e0e2e0e00927b25761e6734b2f26df11422a4cc22a6bf655e",
-    "links": "ac75bc53d61be0735c82522548c62234eda38cf0260cd7ed4a5c350d2f0b82bc",
-    "text": "136070aaec357abeb24849a14f07e4a909e6e358f75c63d72d6a177dae29a14f"
+    "links": "4b0cd0af1c78bb6290c78b8410173af0fb4da9c612ad3963177bf5655704e512",
+    "text": "e23a01804164161d0d651f54c6ba68c952c38487ae2dac877af01e204f163b77"
   },
   "events/cybersecurity-by-design-conference-2024/index.html": {
     "ids": "4b45b60522e59f27708c89ed6c5f16b30a1f7cfe72c17bf7ae527d4e68944b5d",
@@ -1281,7 +1281,7 @@
     "ids": "8abcd81fb87501742cd2e2e8708ce79abb3dbc10d2c27748179bd9a114484c7e",
     "images": "68cb3a4c4fe4f548d33072f3791005dfd5a50e5673222feef5df1a044c2964b0",
     "links": "0fd7d7ba7835d012bbb86ee8a7f015bfb6b3748857daf9d82b34346ade4ee6e3",
-    "text": "c939cced99dd4aaed57f5ede15500cb64f6d2b32e132a03a27918ac20bc1f7bd"
+    "text": "fb3af634f6a50ff9d88d2b033a463da140750ec10900824706a0f2005c23aaf8"
   },
   "events/webinar-cheri-cra-compliance/index.html": {
     "ids": "9147d1264d18ca1db45dd67cbb293b89c9f5cb34fda7f254e9dd6875e2606704",
@@ -2331,7 +2331,7 @@
     "ids": "549abcf13127947e437f035a244f6fe58ac3045f0f550a3c21c5e51001bf8b09",
     "images": "350f946bdf9625075eba97e0c95089cac59cbf5c97e1a2863c7b95f5cb6722b1",
     "links": "4354d7143d200b66aa4e54cbc58fc1feb2b98dc47b56d52fc4da438815db2b11",
-    "text": "121747c01b2706f60dee302239b29eda37bb8c7858d59a7d3d90b5bf0b892379"
+    "text": "7b09f61905cfde53d2085ac4246d0993e974a3c0ac77201a009b0beb0ecd45c1"
   },
   "news-and-events/index.html": {
     "ids": "97f54bba6cf52ee8a03cd2bed572ed4e432a5d5fcf85b6226aa75a7c82d6a141",

@@ -81,6 +81,9 @@ Image-bearing directories retain neutral placeholders for absent or failed media
 
 Resource actions fit their labels instead of becoming unrelated full-width bars. Long labels wrap. The source primary resource remains prominent. Prose links remain recognisable as links.
 
+Hand-authored Markdown links may use the native Kramdown attribute list
+`[Action label](/destination/){: .button }` for the shared button treatment.
+
 All standard buttons use white with logo-blue text in both palettes; hover and keyboard focus invert those colours. Disabled buttons retain their disabled state. Plain links on light surfaces turn red on hover/focus, while dark-surface links retain a light colour. Footer links retain their filled hover treatment without a mouse-hover underline, and keep a keyboard-focus indicator.
 
 Category-index and footer navigation share the mega-menu's full-width rows,

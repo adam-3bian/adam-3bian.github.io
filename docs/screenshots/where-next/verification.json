@@ -17,13 +17,13 @@
   },
   "links": {
     "pages": 756,
-    "local_targets": 57594,
-    "fragment_targets": 797,
-    "external_links_checked": 789,
+    "local_targets": 57604,
+    "fragment_targets": 801,
+    "external_links_checked": 788,
     "records": 473,
     "collection_breadcrumbs": 299,
     "relationship_sections": 1388,
-    "relationship_links": 1223,
+    "relationship_links": 1225,
     "fact_links": 86,
     "author_links": 201,
     "resource_links": 157,
@@ -44,7 +44,78 @@
     },
     "unexpected_changes": []
   },
-  "front_matter": "unchanged",
+  "front_matter": "Where Next? requires no new fields; incoming CHERITech dates and duplicate labels corrected during merge.",
   "homepage_generic_related": "removed",
-  "other_collection_thumbnails": "preserved"
+  "other_collection_thumbnails": "preserved",
+  "merged_content": {
+    "incoming_commit": "7cf7dda",
+    "changed_source_files": [
+      "_events/cheri-blossoms-conference-2027.md",
+      "_events/cheritech26.md",
+      "assets/images/organisation/darpa.webp",
+      "assets/images/organisation/risc-v.webp",
+      "assets/images/shared/cap-computer.webp",
+      "pages/adopt/assurance-and-adoption/about-cheri-enabled.md",
+      "pages/build/technology/cheri-and-rust-technical.md",
+      "pages/discover/understand/cheri-history.md",
+      "pages/discover/understand/how-does-cheri-work.md",
+      "pages/discover/why-cheri/vulnerabilities-in-everyday-technology.md"
+    ],
+    "changed_routes": [
+      {
+        "route": "adopt/assurance-and-adoption/about-cheri-enabled/index.html",
+        "fields": [
+          "text"
+        ]
+      },
+      {
+        "route": "discover/understand/cheri-history/index.html",
+        "fields": [
+          "images"
+        ]
+      },
+      {
+        "route": "discover/why-cheri/vulnerabilities-in-everyday-technology/index.html",
+        "fields": [
+          "text"
+        ]
+      },
+      {
+        "route": "events/cheri-blossoms-conference-2027/index.html",
+        "fields": [
+          "links",
+          "text"
+        ]
+      },
+      {
+        "route": "events/cheritech26/index.html",
+        "fields": [
+          "ids",
+          "links",
+          "text"
+        ]
+      },
+      {
+        "route": "events/index.html",
+        "fields": [
+          "text"
+        ]
+      },
+      {
+        "route": "news-and-events/events-and-archive/upcoming-events/index.html",
+        "fields": [
+          "text"
+        ]
+      }
+    ],
+    "unexpected_changes": [],
+    "routes": 756
+  },
+  "merged_semantic_checks": {
+    "responsive_views": 60,
+    "accessibility_audits": 40,
+    "programme_views": 30,
+    "programme_accessibility_audits": 4,
+    "edited_page_views": 14
+  }
 }

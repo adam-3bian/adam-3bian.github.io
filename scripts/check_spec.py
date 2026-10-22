@@ -83,7 +83,7 @@ def validate_schedule(data,label,errors,warnings):
   if not iso(day['date']) or not data['date']<=day['date']<=data.get('end_date',data['date']):errors.append(label+': programme date outside event')
   for s in day['sessions']:
    unknown(s,{'id','type','title','start','end','track','room','description','affiliation','presentations'},label+'.session',errors)
-   if s.get('type') not in ['introduction','session','keynote','talk','panel','break','networking','closing','workshop','tutorial']:errors.append(label+': invalid session type')
+   if s.get('type') not in ['introduction','session','keynote','talk','panel','break','networking','exhibition','closing','workshop','tutorial']:errors.append(label+': invalid session type')
    for item in [s]+s.get('presentations',[]):
     if item is not s:unknown(item,{'id','title','description','affiliation','start','end'},label+'.presentation',errors)
     identifier=item.get('id','')
@@ -210,7 +210,8 @@ def validate_source(errors,warnings):
     if in_code:continue
     if re.match(r'^#\s|^#{4,}\s',line):errors.append(label+': authored heading must be H2/H3')
     if re.search(r'<(?:div|img|table|script|iframe|h[1-6])\b',line,re.I):errors.append(label+': raw layout HTML')
-    if '{:' in line and not ('.image-' in line and ('![' in line or line.strip().startswith('{:'))):errors.append(label+': arbitrary body attributes')
+    remaining_attributes=re.sub(r'(\[[^\]]+\]\([^)]+\))\s*\{:\s*\.button\s*\}',r'\1',line)
+    if '{:' in remaining_attributes and not ('.image-' in line and ('![' in line or line.strip().startswith('{:'))):errors.append(label+': arbitrary body attributes')
     if re.search(r'{%\s*(?!raw\b|endraw\b)\w+',line) and '{% raw %}' not in line:errors.append(label+': executable Liquid in body')
    if kind=='events':validate_schedule(d,label,errors,warnings)
  # Every foreign key belongs to its authoritative owner.
