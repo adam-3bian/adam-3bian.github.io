@@ -25,6 +25,7 @@ ROUTES = {
     'glossary': 'discover/resources/glossary/',
     'contact': 'alliance/membership/contact/',
     'newsletter': 'news-and-events/news-and-analysis/subscribe-newsletter/',
+    'where-next': 'adopt/business-case/cost-of-memory-unsafety/',
 }
 results = []
 with sync_playwright() as p:
@@ -56,6 +57,17 @@ with sync_playwright() as p:
             results.append({'width': width, 'route': name, 'geometry': data})
             if not AUDIT:
                 assert not data['overflow'], (width, name, 'page overflow')
+                if name!='home':
+                    assert page.locator('a.card,a.catalog-card').evaluate_all("ns=>ns.every(e=>{const s=getComputedStyle(e);return s.borderTopWidth==='1px'&&s.borderTopStyle==='solid';})"), (width,name,'Visible light card borders')
+                next_section=page.locator('section[aria-labelledby="related-title"]')
+                if name=='home':
+                    assert next_section.count()==0, 'The homepage must not show generic related links'
+                    assert page.locator('#home-news-title,#home-events-title').count()==2, 'Homepage news and events remain available'
+                if next_section.count():
+                    assert next_section.locator('h2').inner_text()=='Where Next?'
+                    assert next_section.locator('img,.catalog-media').count()==0, 'Only generic related items omit thumbnails'
+                    assert next_section.count()==1
+                    assert next_section.locator('a.catalog-card').evaluate_all("ns=>ns.every(e=>{const t=e.querySelector('h3').getBoundingClientRect(),a=e.querySelector('.catalog-footer').getBoundingClientRect();return a.left>t.right&&Math.abs((a.top+a.bottom-t.top-t.bottom)/2)<1;})"), (width,name,'Related arrows stay beside their titles')
                 assert page.locator('a a,a button,button a').count() == 0, (width, name, 'nested controls')
                 assert page.locator('h1').count() == 1
                 assert abs(data['subscription']['y'] - data['main']['bottom'] - 16) < 1, (width, name, 'subscription panel gap')
@@ -117,6 +129,16 @@ with sync_playwright() as p:
                     action.focus()
                     assert action.evaluate("e=>getComputedStyle(e).outlineStyle!=='none'")
                     action.evaluate('e=>e.blur()')
+                if name=='where-next' and width in [390,1440]:
+                    card=next_section.locator('a.catalog-card').first
+                    page.mouse.move(0,0)
+                    assert card.evaluate("e=>getComputedStyle(e).borderTopColor")=='rgb(113, 136, 151)'
+                    assert card.evaluate("e=>getComputedStyle(e).backgroundColor")=='rgb(255, 255, 255)'
+                    card.hover()
+                    assert card.evaluate("e=>getComputedStyle(e).borderTopColor")=='rgb(18, 87, 112)'
+                    card.focus()
+                    assert card.evaluate("e=>getComputedStyle(e).outlineStyle")!='none'
+                    next_section.screenshot(path=str(OUT/f'{width}-where-next.png'))
                 if name in ['contact', 'newsletter']:
                     form = page.locator('.form-panel form')
                     assert form.count() == 1 and form.locator('input:not([type=hidden])').count() > 0

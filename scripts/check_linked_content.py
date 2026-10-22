@@ -37,11 +37,12 @@ def associations(records, kind, record):
     def references(data, group, field, key):
         return [ref[key] for ref in data.get(group, {}).get(field, []) if ref.get(key)]
 
+    next_items = []
     if kind == 'posts':
         items = [item for item in entries('posts') if item['slug'] != slug
                  and item.get('sitemap') is not False
                  and item['post']['category'] == record['post']['category']]
-        add('related-posts-title', sorted(items, key=lambda item: item['date'], reverse=True)[:3])
+        next_items = sorted(items, key=lambda item: item['date'], reverse=True)[:3]
     if kind == 'people':
         add('groups-title', [item for item in entries('groups') if slug in references(item, 'working_group', 'leads', 'person')])
         add('events-title', [item for item in entries('events') if slug in references(item, 'event', 'speakers', 'person')])
@@ -70,13 +71,13 @@ def associations(records, kind, record):
         if kind == family:
             ref = record[group].get(key)
             add(section, resolve('organisations', [ref] if ref else []))
-    related = {}
+    related = {item['permalink']: item for item in next_items}
     for ref in record.get('related', []):
         collection = TYPES[ref['type']]
         if record.get('listing', {}).get('collection') != collection:
             target = records[collection][ref['slug']][1]
             related[target['permalink']] = target
-    add('related-title', related.values())
+    add('related-title', related.values() if record['permalink'] != '/' else [])
     return expected
 
 
@@ -196,6 +197,10 @@ def audit(site, baseurl, records, redirects):
                     errors.append(f'{route}: breadcrumb does not lead to a list of {kind}')
                 counts['collection_breadcrumbs'] += 1
             expected = associations(records, kind, record)
+            if expected['related-title']:
+                next_sections = tree.xpath('//main//section[@aria-labelledby="related-title"]')
+                if len(next_sections) != 1 or next_sections[0].xpath('string(h2)') != 'Where Next?' or next_sections[0].xpath('.//img'):
+                    errors.append(f'{route}: Where Next? must be one text-only related section')
             actual_sections = tree.xpath('//main//section[@data-relationship]')
             actual_ids = [section.get('aria-labelledby') for section in actual_sections]
             if len(actual_ids) != len(set(actual_ids)):

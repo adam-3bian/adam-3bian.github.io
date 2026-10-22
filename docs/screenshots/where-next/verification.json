@@ -1,0 +1,50 @@
+{
+  "builds": [
+    "root",
+    "/preview"
+  ],
+  "responsive_views": {
+    "components_root": 184,
+    "components_preview": 184,
+    "articles": 96,
+    "consistency": 72,
+    "corporate_chromium": 126
+  },
+  "browser": "Chromium",
+  "accessibility_audits": {
+    "articles": 8,
+    "consistency": 24
+  },
+  "links": {
+    "pages": 756,
+    "local_targets": 57594,
+    "fragment_targets": 797,
+    "external_links_checked": 789,
+    "records": 473,
+    "collection_breadcrumbs": 299,
+    "relationship_sections": 1388,
+    "relationship_links": 1223,
+    "fact_links": 86,
+    "author_links": 201,
+    "resource_links": 157,
+    "programme_credits": 138,
+    "programme_organisations": 132,
+    "programme_resources": 209,
+    "person_talks": 138,
+    "external_urls": 479
+  },
+  "content": {
+    "routes": 756,
+    "allowed_changes": {
+      "removed_homepage_sections": 1,
+      "removed_homepage_related_links": 5,
+      "removed_thumbnails": 318,
+      "where_next_sections": 306,
+      "retained_article_anchors": 47
+    },
+    "unexpected_changes": []
+  },
+  "front_matter": "unchanged",
+  "homepage_generic_related": "removed",
+  "other_collection_thumbnails": "preserved"
+}

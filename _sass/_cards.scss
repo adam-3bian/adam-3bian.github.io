@@ -17,6 +17,13 @@ a.card:is(:hover, :focus-visible), a.catalog-card:is(:hover, :focus-visible) {
 .card:focus-visible, .catalog-card:focus-visible {
   outline-offset: $focus-width;
 }
+// White navigation cards use the same visible edge as light form controls.
+body[data-theme='light'] :is(a.card, a.catalog-card) {
+  border: 1px solid var(--colour-control-border);
+}
+body[data-theme='light'] :is(a.card, a.catalog-card):is(:hover, :focus-visible) {
+  border-color: var(--accent);
+}
 .navigation-choice { font-family: $font-family; font-size: var(--type-title); font-weight: 600; line-height: var(--leading-heading); }
 // A native card link has one surface, one shadow and a separate keyboard focus ring.
 .card h2, .card h3 {

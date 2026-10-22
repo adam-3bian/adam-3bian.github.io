@@ -108,3 +108,6 @@
   .catalog[data-view] .catalog-media.media-organisations, .record-list .catalog-media.media-organisations, .cards-grid .catalog-media.media-organisations { flex: none; height: 40px; width: 120px; }
   .catalog[data-view] .catalog-media:is(.media-posts, .media-events), .record-list .catalog-media:is(.media-posts, .media-events) { aspect-ratio: 16 / 9; flex: none; height: auto; width: 100%; }
 }
+// Text-only onward links keep their arrow beside the title at every width.
+section[aria-labelledby='related-title'] .catalog-copy { display: grid; grid-template-columns: minmax(0, 1fr) auto; }
+section[aria-labelledby='related-title'] .catalog-footer { grid-row: 1; margin-top: 0; padding-top: 0; }

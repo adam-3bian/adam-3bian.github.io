@@ -68,7 +68,7 @@ with sync_playwright() as p:
             if nav.count():
                 nav.hover();page.wait_for_timeout(50)
                 assert nav.evaluate("e=>getComputedStyle(e).textDecorationLine")=='none'
-                assert nav.evaluate("e=>['Top','Right','Bottom','Left'].every(s=>getComputedStyle(e)['border'+s+'Width']==='0px')")
+                assert nav.evaluate("e=>['Top','Right','Bottom','Left'].every(s=>getComputedStyle(e)['border'+s+'Width']===(document.body.dataset.theme==='light'?'1px':'0px'))")
                 for heading in nav.locator('h2,h3').all():assert heading.evaluate('e=>getComputedStyle(e).textDecorationLine')=='none'
                 nav.focus();assert nav.evaluate('e=>getComputedStyle(e).outlineStyle')!='none'
             cta=page.locator('.site-call-to-action .promotional-panel')
@@ -146,7 +146,7 @@ with sync_playwright() as p:
                   const rect=e=>{if(!e)return null;const r=e.getBoundingClientRect();return {x:r.x,y:r.y,right:r.right,bottom:r.bottom,height:r.height};};
                   return {card:rect(n),title:rect(n.querySelector('h2')),footer:rect(n.querySelector('.catalog-footer')),
                     badge:rect(n.querySelector('.member-badge')),action:rect(n.querySelector('.catalog-action')),
-                    mediaBorder:getComputedStyle(n.querySelector('.catalog-media')).borderTopWidth};
+                    mediaBorder:getComputedStyle(n.querySelector('.catalog-media')).borderTopWidth,borderBottom:parseFloat(getComputedStyle(n).borderBottomWidth)};
                 })""")
                 for member in members:
                     card,title,footer,badge,action=[member[k] for k in ['card','title','footer','badge','action']]
@@ -159,7 +159,7 @@ with sync_playwright() as p:
                 if '?view=grid' in route:
                     # Every card in a row, with or without membership, shares a footer baseline.
                     for member in members:
-                        assert abs(member['card']['bottom']-member['footer']['bottom']-24)<1,(width,member)
+                        assert abs(member['card']['bottom']-member['footer']['bottom']-24-member['borderBottom'])<1,(width,member)
                 elif width>=768:
                     positions=[m['badge']['x'] for m in members if m['badge']]
                     assert max(positions)-min(positions)<1,(width,'unaligned membership badges')

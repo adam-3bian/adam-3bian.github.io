@@ -53,6 +53,20 @@ abort 'Missing article category inferred unrelated news' unless output.css('[ari
 page={'slug'=>'page','related'=>[{'type'=>'organisation','slug'=>'one'},{'type'=>'unknown','slug'=>'two'},{'type'=>'organisation'},{'type'=>'organisation','slug'=>''},{'type'=>'organisation','slug'=>'missing'},{'type'=>'organisation','slug'=>'one'}]}
 output=render.call('relationships.html',page,{'organisations'=>orgs})
 abort 'Invalid related reference leaked a previous pool or duplicate' unless output.css('[aria-labelledby="related-title"] a').map{|a|a['href']}==['/organisations/one/']
+abort 'Related items need the Where Next? heading' unless output.at_css('#related-title')&.text=='Where Next?'
+news=(1..4).map{|n|{'slug'=>"news-#{n}",'url'=>"/news/news-#{n}/",'title'=>"News #{n}",'date'=>"2026-10-0#{n}",'post'=>{'category'=>'ecosystem'},'image'=>{'src'=>"/news-#{n}.webp",'alt'=>"News #{n}"}}}
+fixture=news.first.merge('related'=>[{'type'=>'post','slug'=>'news-4'},{'type'=>'organisation','slug'=>'one'}])
+output=render.call('relationships.html',fixture,{'posts'=>news,'organisations'=>orgs})
+abort 'Related articles and manual links were not consolidated and deduplicated' unless output.css('[aria-labelledby="related-title"] a').map{|a|a['href']}==['/news/news-4/','/news/news-3/','/news/news-2/','/organisations/one/']
+abort 'Where Next? repeated its heading or retained thumbnails' unless output.css('h2').map(&:text)==['Where Next?'] && output.css('img').empty?
+abort 'An existing article-related anchor was lost' unless output.at_css('#related-posts-title')
+home=fixture.merge('url'=>'/')
+output=render.call('relationships.html',home,{'posts'=>news,'organisations'=>orgs})
+abort 'The homepage must omit generic related links but retain its news section' if output.at_css('[aria-labelledby="related-title"]') || !output.at_css('[aria-labelledby="home-news-title"]')
+org_with_image=orgs.first.merge('image'=>{'src'=>'/organisation.webp','alt'=>'Organisation One'})
+fixture=product.merge('related'=>[{'type'=>'organisation','slug'=>'one'}])
+output=render.call('relationships.html',fixture,{'organisations'=>[org_with_image]})
+abort 'Thumbnail removal affected named relationships' unless output.css('[aria-labelledby="manufacturer-title"] img').size==1 && output.css('[aria-labelledby="related-title"] img').empty?
 editor_person=person.merge('person'=>person['person'].reject{|key,_|key=='organisations'}.merge('affiliation'=>person['person']['organisations'].first,'other_affiliations'=>person['person']['organisations'].drop(1)))
 output=render.call('card.html item=page kind="people" metadata=true',editor_person,{'organisations'=>orgs})
 abort 'Main job/company card lines are incorrect' unless output.at_css('.person-job-title')&.text=='Engineer' && output.at_css('.person-company')&.text=='Organisation One'

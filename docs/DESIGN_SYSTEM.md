@@ -118,6 +118,25 @@ Aside selection uses existing information roles, not a generic field-count thres
 
 `facts.html` and the catalogue schema remain the complete fact source; choosing an arrangement does not suppress facts. Missing values are omitted without empty panels. Related content always follows the same minimal navigation rules, so a related policy does not display an unnecessary version/date line.
 
+Generic related links and category-related articles share one “Where Next?”
+section. These cards show their titles and arrows without thumbnails. Automatic
+article neighbours keep their order, followed by explicit `related` entries;
+duplicate destinations appear once. Other pages retain their `related-title`
+and article-related fragment links. Named sections such as People, Events, Publications
+and Organisers retain their headings and thumbnails, as do directory listings.
+The homepage omits generic related links and keeps its dedicated news and events.
+
+Light-mode navigation cards keep their white fill and use the existing form
+control's slate border (`--colour-control-border`). Hover and keyboard focus
+change that border to the link accent, with the existing fill, elevation and
+focus ring. This applies to clickable cards in related sections and lists;
+passive panels and dark-mode cards retain their existing treatment.
+
+Review examples: [desktop Where Next?](screenshots/where-next/desktop.png),
+[mobile Where Next?](screenshots/where-next/mobile.png),
+[desktop list card](screenshots/where-next/desktop-list-card.png) and
+[mobile list card](screenshots/where-next/mobile-list-card.png).
+
 ## Editorial, category and reference families
 
 News heroes contain the title and concise byline; ordinary pages retain their existing introduction. They use the full available reading canvas without compulsory asides or raised article wrappers. Navigation and resources around the article share the card system. Comparison tables, timetables, code and editorial images retain responsive handling.

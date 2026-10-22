@@ -23,7 +23,10 @@ with sync_playwright() as p:
    assert page.locator('.article-byline .author a').evaluate_all('ns=>ns.map(n=>n.getAttribute("href"))')==[prefix+'/people/'+credit['person']+'/' for credit in data['post'].get('authors',[]) if credit.get('person')]
    assert page.locator('.article-lead').count()==int(bool(data.get('image',{}).get('src')))
    neighbours=[d for d,t in posts if d['post']['category']==data['post']['category'] and d['slug']!=data['slug']]
-   links=page.locator('[aria-labelledby="related-posts-title"] a.catalog-card');assert links.count()==min(3,len(neighbours));assert data['permalink'] not in links.evaluate_all('ns=>ns.map(n=>n.getAttribute("href"))')
+   links=page.locator('[aria-labelledby="related-title"] a.catalog-card');assert links.count()==min(3,len(neighbours));assert data['permalink'] not in links.evaluate_all('ns=>ns.map(n=>n.getAttribute("href"))')
+   if neighbours:
+    assert page.locator('#related-title').inner_text()=='Where Next?' and page.locator('[aria-labelledby="related-title"] img').count()==0
+    assert page.locator('#related-posts-title').count()==1, 'Existing article-related fragments remain available'
    assert not page.evaluate('document.documentElement.scrollWidth>innerWidth+1'),(width,data['slug'])
    if width==1440:
     box=page.locator('.article-shell > .reading-content').bounding_box();shell=page.locator('.article-shell').bounding_box();assert abs((box['x']-shell['x'])-((shell['x']+shell['width'])-(box['x']+box['width'])))<1

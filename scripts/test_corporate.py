@@ -129,8 +129,10 @@ with sync_playwright() as playwright:
                 if route == "404.html":
                     assert page.locator("a.navigation-choice").count() == 3
                     assert page.locator("main table").count() == 0
-                decorative = page.locator(".catalog-card,.record-portrait,.detail-aside,.citation-block,.glossary-entry,.glossary-index")
+                decorative = page.locator(".catalog-card:not(a),.record-portrait,.detail-aside,.citation-block,.glossary-entry,.glossary-index")
                 assert decorative.evaluate_all("ns=>ns.every(e=>['Top','Right','Bottom','Left'].every(side=>parseFloat(getComputedStyle(e)['border'+side+'Width'])===0))"), (engine, width, route, "decorative border")
+                if route:
+                    assert page.locator('a.catalog-card, a.card').evaluate_all("ns=>ns.every(e=>['Top','Right','Bottom','Left'].every(side=>getComputedStyle(e)['border'+side+'Width']==='1px'))"), (engine,width,route,'Visible light card borders')
                 assert page.locator('.hero,.page-heading,.page-surface,.promotional-panel,.footer-surface').evaluate_all("ns=>ns.every(e=>['Top','Right','Bottom','Left'].every(side=>parseFloat(getComputedStyle(e)['border'+side+'Width'])===1))"), (engine, width, route, "framed regions")
                 ui = page.locator(".button,.catalog-card,.catalog-action,.member-badge,.submenu-toggle,.menu-group-title,.page-heading,.record-facts")
                 assert ui.evaluate_all("""ns=>ns.every(e=>['color','backgroundColor'].every(p=>{
@@ -143,7 +145,7 @@ with sync_playwright() as playwright:
                     assert card.evaluate("e=>getComputedStyle(e).boxShadow") != "none"
                     card.hover()
                     assert card.evaluate("e=>getComputedStyle(e).textDecorationLine") == "none"
-                    assert card.evaluate("e=>getComputedStyle(e).borderTopWidth") == "0px"
+                    assert card.evaluate("e=>getComputedStyle(e).borderTopWidth") == ('1px' if route else '0px')
                 if route in ["", "alliance/"]:
                     check_keyboard_entry(page, width)
                     check_disclosures(page, width)
