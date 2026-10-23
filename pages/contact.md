@@ -2,12 +2,9 @@
 layout: page
 title: Contact the Alliance
 summary: Contact the Alliance for membership, working groups, certification, events, media, trademarks, or help finding the right CHERI resource.
-permalink: /alliance/membership/contact/
-slug: alliance-membership-contact
+permalink: /contact/
+slug: contact
 navigation:
-  header:
-    category: CHERI Alliance
-    subcategory: Membership
   footer:
     category: CHERI Alliance
 forms:
