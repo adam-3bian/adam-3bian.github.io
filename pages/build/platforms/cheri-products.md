@@ -26,11 +26,11 @@ Availability and project status can change. The status shown here reflects the p
 
 ## Processor designs, chips, and boards
 
-- **[CHERIoT Ibex embedded processor](/adopt/assurance-and-adoption/cheriot-ibex-certification/)**. [CHERIoT Ibex](https://github.com/microsoft/cheriot-ibex) is a 32-bit RISC-V microcontroller core implementing the CHERIoT instruction-set architecture for compartmentalised embedded systems.
+- [![CHERI Enabled logo](/assets/images/shared/cheri-enabled.webp){: .image-left }](/adopt/assurance-and-adoption/cheriot-ibex-certification/) **CHERIoT Ibex embedded processor**. [CHERIoT Ibex](https://github.com/microsoft/cheriot-ibex) is a 32-bit RISC-V microcontroller core implementing the CHERIoT instruction-set architecture for compartmentalised embedded systems.
   Organization label: Microsoft.
   Product type: processor intellectual property.
   Release status: released; CHERI Enabled.
-- **[Codasip X730](/adopt/assurance-and-adoption/x730-certification/)**. The [X730](https://codasip.com/solutions/riscv-processor-safety-security/cheri/x730-risc-v-application-processor/) is a 64-bit application-processor core implementing CHERI-RISC-V, with pure-capability and hybrid execution support.
+- [![CHERI Enabled logo](/assets/images/shared/cheri-enabled.webp){: .image-left }](/adopt/assurance-and-adoption/x730-certification/) **Codasip X730**. The [X730](https://codasip.com/solutions/riscv-processor-safety-security/cheri/x730-risc-v-application-processor/) is a 64-bit application-processor core implementing CHERI-RISC-V, with pure-capability and hybrid execution support.
   Organization label: Codasip.
   Product type: processor intellectual property.
   Release status: released; CHERI Enabled.

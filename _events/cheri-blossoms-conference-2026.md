@@ -519,7 +519,7 @@ Designed for students, researchers and developers, the tutorial introduced CHERI
 ## Exhibitors
 
 | --- | --- | --- |
-| ![Cantech Informatics logo](/assets/images/organisation/cantech-informatics-srl.webp){: .image-full } | ![Capabilities Limited logo](/assets/images/organisation/capabilities-limited.webp){: .image-full } | ![CHERI logo](/assets/images/posts/2025-11-25-new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd.webp){: .image-full } |
+| ![Cantech Informatics logo](/assets/images/organisation/cantech-informatics-srl.webp){: .image-full } | ![Capabilities Limited logo](/assets/images/organisation/capabilities-limited.webp){: .image-full } | ![CHERI Alliance logo](/assets/images/organisation/cheri-alliance.webp){: .image-full } |
 | ![CHERI Research Centre logo](/assets/images/shared/cheri-research-centre.webp){: .image-full } | ![Codasip logo](/assets/images/organisation/codasip.webp){: .image-full } | ![lowRISC logo](/assets/images/organisation/lowrisc.webp){: .image-full } |
 | ![Novomorphic logo](/assets/images/organisation/novomorphic.webp){: .image-full } | ![Parvat logo](/assets/images/organisation/parvat-infotech.webp){: .image-full } | ![SCI Semiconductor logo](/assets/images/organisation/sci-semiconductor.webp){: .image-full } |
 | ![Sensor IT logo](/assets/images/organisation/sensor-it.webp){: .image-full } | ![UM Labs logo](/assets/images/organisation/um-labs.webp){: .image-full } | ![Wyvern Global logo](/assets/images/organisation/wyvern-global.webp){: .image-full } |

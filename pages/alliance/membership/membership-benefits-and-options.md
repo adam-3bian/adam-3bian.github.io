@@ -50,7 +50,7 @@ See [Why Join?](/alliance/membership/why-join/) for more about the value of beco
 
 Membership does not require a minimum level of participation, except for Ambassadors, who commit to supporting Alliance activities.
 
-How much you participate is **entirely up to you**. Join the working groups, events and activities that match your interests and priorities. If enough members want to collaborate on a new topic, the Alliance usually create new working groups or activities around it.
+How much you participate is **entirely up to you**. Join the working groups, events and activities that match your interests and priorities. If enough members want to collaborate on a new topic, the Alliance usually creates new working groups or activities around it.
 
 Even simply becoming a member matters. A growing membership demonstrates demand for CHERI and encourages suppliers, developers and adopters to invest in the technology.
 
@@ -116,10 +116,10 @@ We deliberately keep fees accessible because a broad and diverse membership stre
 | Company size (nb employees) | Annual membership fee (see below for discounts) |
 | --- | ---: |
 | 0 – 5 | £ 800 |
-| 5 – 25 | £ 2,500 |
-| 25 – 50 | £ 4,000 |
-| 50 –250 | £ 8,000 |
-| 250 + | £ 16,000 |
+| 6 – 25 | £ 2,500 |
+| 26 – 50 | £ 4,000 |
+| 51 –250 | £ 8,000 |
+| 251 + | £ 16,000 |
 
 **Additional discounts** are available for **multi-year** memberships and successful member **referrals**, and discounts can be combined.
 

@@ -28,7 +28,7 @@ No single project can represent every possible use case. Together, however, thes
 | Morello | CHERI at application and server scale |
 | CheriBSD | Protection of large existing software stacks |
 | CHERIoT | CHERI for constrained embedded systems |
-| Codasip X730 | Commercially application-class CHERI processor |
+| Codasip X730 | Commercial application-class CHERI processor |
 
 ## Morello: a complete experimental stack
 
@@ -72,9 +72,9 @@ Together, these examples show that CHERI is not limited to a single class of sys
 
 - From the most **constrained embedded** devices to traditional **application-class** and large **high-performance** systems
 - From tiny real-time operating systems to rich multi-user operating systems
-- In open-source platforms and commercial processor products
-- While reusing substantial existing C and C++ software
+- In **open-source** platforms and **commercial** processor products
+- While **reusing** substantial existing C and C++ software
 
-While each project has different goals and constraints, all demonstrate how capability protection can be introduced into real hardware and software systems, across the diversity of use cases, while reusing existing software. These examples also demonstrate that CHERI can often be introduced while **reusing** significant amounts of existing **software**, reducing the need for complete rewrites.
+Together, these projects demonstrate that CHERI can protect systems across the computing spectrum, from small embedded devices to high-performance platforms, while building on substantial existing software rather than starting again from scratch.
 
-The examples also show that CHERI is an ecosystem change rather than one processor feature. These projects have demonstrated mature toolchains, operating systems, libraries, runtimes, and debugging support, showing readiness for product development.
+They also show that CHERI goes beyond the processor itself: toolchains, operating systems, libraries, runtimes, and debugging support form a growing ecosystem for product development.

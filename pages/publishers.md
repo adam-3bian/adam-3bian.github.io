@@ -46,6 +46,13 @@ do not need to repeat those attributes. Existing relationship tokens such as
 `nofollow` are retained. Internal links stay in the same tab; email and telephone
 links retain their normal behaviour. This works without JavaScript.
 
+To show a link as a button, add the `.button` attribute straight after it. No
+other body attributes are supported on links.
+
+~~~markdown
+[Register for CHERITech’26](/events/cheritech26/#register){: .button }
+~~~
+
 Use root-relative internal paths starting with `/`, rather than the deployed
 hostname. The template applies the deployment's `baseurl` to rendered links and
 media. Do not hard-code `/preview` into content.
@@ -191,9 +198,37 @@ Reuse an existing directory's supported filters and sorting. Members use
 `filter: past`. Do not copy generated cards into Markdown.
 
 Forms use keys, such as `forms: [contact]` on `pages/contact.md`. Fields and
-submission behaviour live in `_data/forms.yml`. An `unconfigured` form checks
-fields locally but sends no message; configure a real POST provider there before
-submission works. There is no page-level `form.action` setting.
+submission behaviour live in `_data/forms.yml`. There is no page-level
+`form.action` setting.
+
+The contact form posts to the same-origin endpoint `/f/contact`, which nginx
+proxies to the form service; the service redirects to
+`/alliance/membership/thanks/` (`/contact/thank-you/` redirects there too). A
+`post` submission must set `verified`, `success_message`, `error_message`,
+`security` and the form's `privacy_url`:
+
+~~~yaml
+submission:
+  mode: post
+  url: /f/contact
+  label: Send enquiry
+  verified: true
+  success_message: Thank you for contacting the CHERI Alliance.
+  error_message: Your enquiry could not be sent. Please try again later.
+  security:
+    honeypot: _gotcha
+    timestamp: _ts
+    captcha: /captcha/challenge
+~~~
+
+`honeypot` names a hidden text field that people never see but bots often fill
+in, and `timestamp` names a hidden field that JavaScript sets to the page-load
+time in milliseconds; the endpoint must check both. `captcha` adds an ALTCHA
+proof-of-work widget before the button, fetching its challenge from the given
+URL. Its script is bundled at `/assets/js/altcha.min.js` (MIT licence
+alongside). Local paths respect `baseurl`. Set `mode: unconfigured` with no
+`url` to check fields locally without sending anything, or `external` to link
+to a hosted form.
 
 ### Posts
 

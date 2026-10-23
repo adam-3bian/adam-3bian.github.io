@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Ambassadors
-summary: CHERI Alliance Ambassadors help explain CHERI, create resources, support events, and introduce new communities to the ecosystem..
+summary: CHERI Alliance Ambassadors help explain CHERI, create resources, support events, and introduce new communities to the ecosystem.
 permalink: /alliance/leadership/ambassadors/
 slug: alliance-leadership-ambassadors
 navigation:
@@ -28,11 +28,11 @@ CHERI adoption grows when trusted community members can explain the technology i
 
 Ambassadors choose activities that match their interests, skills, and availability. These may include:
 
-- writing tutorials, articles, demonstrations, or technical papers
-- giving talks and creating video or presentation material
-- sharing accurate news and practical experience
-- helping with conferences, workshops, and online events
-- introducing organisations and communities to the Alliance
+- Writing tutorials, articles, demonstrations, or technical papers
+- Giving talks and creating video or presentation material
+- Sharing accurate news and practical experience
+- Helping with conferences, workshops, and online events
+- Introducing organisations and communities to the Alliance
 - Mentoring newcomers and supporting community projects
 - Providing feedback on educational materials and outreach activities
 

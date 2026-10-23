@@ -42,15 +42,15 @@ The following resources are available to support accurate reporting and coverage
 - [CHERI Alliance introduction](/assets/pdf/events/embedded-world-2026/cheri-alliance-presentation.pdf)
 - [Logos and brand assets](/policies/trademark/)
 - [Leadership](/alliance/leadership/governing-board/) biographies and photographs
-- Event information and media materials
+- [Event information](/news-and-events/events-and-archive/upcoming-events/) and media materials
 - [Technical background](/discover/resources/videos-and-presentations/) on CHERI technology
-- Fact sheets and key messaging
+- Fact sheets and key messaging - [Contact us](/alliance/membership/contact/)
 
 ## Press releases and announcements
 
 Please [contact us](/alliance/membership/contact/) to be added to our media announcements mailing list.
 
-For regular announcements, and news, [follow us on LinkedIn](https://www.linkedin.com/company/cheri-alliance/) or [subscribe to our quarterly newsletter](https://cheri-alliance.kit.com/subscribe).
+For regular announcements and news, [follow us on LinkedIn](https://www.linkedin.com/company/cheri-alliance/) or [subscribe to our quarterly newsletter](https://cheri-alliance.kit.com/subscribe).
 
 ## About the CHERI Alliance
 

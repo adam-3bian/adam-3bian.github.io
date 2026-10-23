@@ -35,7 +35,9 @@ Memory-safety vulnerabilities are a leading cause of software security issues. C
 
 CHERI stands for **Capability Hardware Enhanced RISC Instructions**. The name refers to architectural extensions that let processors use hardware-protected *capabilities* for memory access and software compartmentalisation.
 
-CHERI technology can be applied to any type of processor (CPU, GPU, DSP, NPU…), using any instruction set (x86, Arm, RISC-V, …). Put simply, CHERI uses **hardware to protect software**.
+CHERI technology can, in principle, be applied to many types of processors (CPUs, GPUs, DSPs, NPUs…) and different instruction sets (x86, Arm, RISC-V…). Today, CHERI implementations are available for only some of these, but this is evolving rapidly.
+
+Put simply, CHERI uses **hardware to protect software**.
 
 ## Is it free to use?
 
@@ -47,7 +49,7 @@ The CRA encourages manufacturers to reduce memory-safety risks and adopt secure-
 
 ## Do we have to rewrite existing software?
 
-No. Most software can be ported with relatively small changes rather than rewritten. User applications often need little or no modification, while operating systems, drivers, and other low-level software may require more porting effort. Even then, the changes are typically limited to a small fraction of the codebase, often well below 1% of the codebase. See [CHERI and Existing Software](/discover/understand/cheri-and-existing-software/).
+No. Most software can be ported with relatively small changes rather than rewritten. User applications often need little or no modification, while operating systems, drivers, and other low-level software may require more porting effort. Even then, the changes are typically limited to a small fraction of the codebase, often well below 1% of the codebase, as has been observed from porting hundred of millions of lines of C / C++ code. See [CHERI and Existing Software](/discover/understand/cheri-and-existing-software/).
 
 ## Is there a performance cost?
 

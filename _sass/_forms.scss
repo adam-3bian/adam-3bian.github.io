@@ -18,7 +18,11 @@
   gap: $space-2;
   min-width: 0;
 }
-.form-field-full, .form > .button {
+// Spam trap: hidden from people, often filled in by bots.
+.form-honeypot {
+  display: none;
+}
+.form-field-full, .form > altcha-widget, .form > .button {
   grid-column: 1 / -1;
 }
 .form-field label {

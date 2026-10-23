@@ -3930,10 +3930,6 @@
   page-title: page-title
   related-pages: related-title
   where-next: related-title
-/policies/privacy-policy/:
-  hero-title: page-title
-  page-hero-title: page-title
-  page-title: page-title
 /policies/privacy/:
   childrens-information: childrens-information
   consent: consent

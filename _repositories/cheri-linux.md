@@ -1,13 +1,19 @@
 ---
-layout: page
+layout: detail
 title: CHERI Linux
 summary: Bring CHERI hardware-enforced protection to Linux-based systems and applications.
-permalink: /build/software-ecosystem/cheri-linux/
-slug: build-software-ecosystem-cheri-linux
+permalink: /repositories/cheri-linux/
+slug: cheri-linux
 navigation:
   header:
     category: Build
     subcategory: Software Ecosystem
+repository:
+  type: operating_system
+resources:
+- type: repository
+  label: CHERI Linux website
+  url: https://cheri-linux.org
 related:
 - type: repository
   slug: cheri-zephyr

@@ -124,7 +124,7 @@ defaults:
 title: CHERI Alliance
 description: 'CHERI Alliance: hardware-enforced memory safety, secure software and the CHERI community.'
 lang: en-GB
-url: https://adam-3bian.github.io
+url: https://www.dev.cheri-alliance.org
 baseurl: ''
 sass:
   sass_dir: _sass
@@ -174,8 +174,8 @@ navigation:
         url: /discover/resources/academic-papers/
       - title: Glossary
         url: /discover/resources/glossary/
-      - title: Papers and authors
-        url: /papers/
+      # - title: Papers and authors
+      #   url: /papers/
   - title: Adopt
     type: megamenu
     columns: 3
@@ -298,6 +298,8 @@ navigation:
         url: /policies/trademark/
     - title: Leadership
       links:
+      - title: The vision behind the Alliance
+        url: /alliance/leadership/the-vision/
       - title: Members
         url: /alliance/leadership/members/
       - title: Governing Board

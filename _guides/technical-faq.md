@@ -27,7 +27,7 @@ related:
 
 ## Overview
 
-If you are looking for a high-leval FAQ, please go to [FAQ](/discover/understand/faq/). You can also take a look at the University of Cambridge’s [CHERI FAQ](https://ctsrd-cheri.github.io/cheri-faq/)
+If you are looking for a high-level FAQ, please go to [FAQ](/discover/understand/faq/). You can also take a look at the University of Cambridge’s [CHERI FAQ](https://ctsrd-cheri.github.io/cheri-faq/)
 
 ## How does CHERI align with ETSI TS 104 198?
 

@@ -48,6 +48,9 @@ resources:
 
 One of the advantages of [CHERI Alliance membership](/alliance/membership/membership-benefits-and-options/) is the opportunity to gain visibility at leading industry events. At Embedded World 2026, for the second year, the Alliance welcomed several members to demonstrate their products, technologies, and research on the CHERI Alliance booth, helping showcase the breadth of the ecosystem while creating opportunities for collaboration, business development, and community growth.
 
+![The CHERI Alliance booth at Embedded World - 1](/assets/images/events/embedded-world-2026/ew-2026-1.webp){: .image-full }
+
+
 ## Booth Location
 
 Embedded World Exhibition – Nuremberg Messe – **Hall 5, booth 5-177**
@@ -61,8 +64,6 @@ Embedded World Exhibition – Nuremberg Messe – **Hall 5, booth 5-177**
 | [![CHERI Research Centre logo](/assets/images/shared/cheri-research-centre.webp){: .image-full }](/organisations/university-of-cambridge/) |  |  |
 | [![lowRISC logo](/assets/images/organisation/lowrisc.webp){: .image-full }](/organisations/lowrisc/) | **Sonata platform - CHERIoT features** | A wide variety of demos showcasing the features of the Sonata platform. These demos illustrate how memory safety protection mechanisms can mitigate issues as inspired by real world, observed bugs. The demos highlight how engineers can experiment on resolving real world issues. |
 
-![The CHERI Alliance booth at Embedded World - 1](/assets/images/events/embedded-world-2026/ew-2026-1.webp){: .image-full }
-
 ![The CHERI Alliance booth at Embedded World - 2](/assets/images/events/embedded-world-2026/ew-2026-2.webp){: .image-full }
 
 ![The CHERI Alliance booth at Embedded World - 3](/assets/images/events/embedded-world-2026/ew-2026-3.webp){: .image-full }
@@ -70,8 +71,8 @@ Embedded World Exhibition – Nuremberg Messe – **Hall 5, booth 5-177**
 ## Other Alliance Members at the Conference
 
 | --- | --- |
-| ![CyberWhiz Logo](/assets/images/organisation/cyberwhiz.webp){: .image-full } | Hall 5 / 5-374 |
-| ![EnSilica logo](/assets/images/organisation/ensilica.webp){: .image-full } | Hall 4 / 4-559 |
-| ![SCI Semiconductor logo](/assets/images/organisation/sci-semiconductor.webp){: .image-full } | Hall 4A / 4A-13 |
-| ![SIEMENS logo](/assets/images/organisation/siemens.webp){: .image-full } | Hall 5 / 5-119 |
-| ![VeriSilicon logo](/assets/images/organisation/verisilicon.webp){: .image-full } | Hall 4A / 4A-518 |
+| ![CyberWhiz Logo](/assets/images/organisation/cyberwhiz.webp){: .image-left } | Hall 5 / 5-374 |
+| ![EnSilica logo](/assets/images/organisation/ensilica.webp){: .image-left } | Hall 4 / 4-559 |
+| ![SCI Semiconductor logo](/assets/images/organisation/sci-semiconductor.webp){: .image-left } | Hall 4A / 4A-13 |
+| ![SIEMENS logo](/assets/images/organisation/siemens.webp){: .image-left } | Hall 5 / 5-119 |
+| ![VeriSilicon logo](/assets/images/organisation/verisilicon.webp){: .image-left } | Hall 4A / 4A-518 |

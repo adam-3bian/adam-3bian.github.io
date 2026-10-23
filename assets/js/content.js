@@ -10,6 +10,16 @@
     image.addEventListener('error', omit, {once: true});
     if (image.complete && !image.naturalWidth) omit();
   });
+  // Record when the form was loaded, so the endpoint can reject instant submissions.
+  document.querySelectorAll('input[data-form-timestamp]').forEach((input) => {
+    input.value = Date.now();
+  });
+  // A textarea has no pattern attribute, so treat whitespace-only text as empty.
+  document.querySelectorAll('form textarea[required]').forEach((textarea) => {
+    const check = () => textarea.setCustomValidity(textarea.value.trim() ? '' : 'Please fill in this field.');
+    textarea.addEventListener('input', check);
+    check();
+  });
   // Markdown authors need only the image and its alignment class.
   document.querySelectorAll('.content img').forEach((image) => {
     if (!image.hasAttribute('loading')) image.setAttribute('loading', 'lazy');

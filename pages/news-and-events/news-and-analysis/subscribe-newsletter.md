@@ -22,4 +22,4 @@ related:
 
 The CHERI ecosystem is moving fast. Get the latest news, milestones, events, and opportunities delivered to your inbox **every quarter**.
 
-*Privacy: We value your privacy. Your email address will only be used for CHERI Alliance communications and will never be shared with third parties. Unsubscribe at any time.*
+***Privacy:*** *Your email address will only be used for CHERI Alliance communications. We don’t sell your personal data or share it for third-party marketing. Unsubscribe at any time. See our [Privacy Policy](/policies/privacy/).*

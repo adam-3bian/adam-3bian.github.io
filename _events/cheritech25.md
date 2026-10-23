@@ -280,7 +280,7 @@ Alongside the conference programme, the [exhibition](/events/cheritech25/#demons
 ## Exhibitors
 
 | --- | --- | --- |
-| ![Cantech Informatics logo](/assets/images/organisation/cantech-informatics-srl.webp){: .image-full } | ![Capabilities Limited logo](/assets/images/organisation/capabilities-limited.webp){: .image-full } | ![CHERI logo](/assets/images/posts/2025-11-25-new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd.webp){: .image-full } |
+| ![Cantech Informatics logo](/assets/images/organisation/cantech-informatics-srl.webp){: .image-full } | ![Capabilities Limited logo](/assets/images/organisation/capabilities-limited.webp){: .image-full } | ![CHERI logo](/assets/images/organisation/cheri-alliance.webp){: .image-full } |
 | ![Codasip logo](/assets/images/organisation/codasip.webp){: .image-full } | ![lowRISC logo](/assets/images/organisation/lowrisc.webp){: .image-full } | ![SCI Semiconductor logo](/assets/images/organisation/sci-semiconductor.webp){: .image-full } |
 
 ## Venue

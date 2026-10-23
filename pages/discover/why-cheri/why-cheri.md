@@ -87,7 +87,7 @@ CHERI is a powerful security technology, but it is not a complete security solut
 
 CHERI does not make a system automatically secure. It does not prevent logic errors, weak authentication, insecure configuration, social engineering, or every side-channel attack. In some environments, additional mechanisms may also be required to address certain forms of temporal memory safety, such as preventing the reuse of capabilities after memory has been freed.
 
-Adopting CHERI requires a one-time investment in new hardware, migration, tooling, testing, and training. Once that transition is complete, organisations gain the ongoing benefits of hardware-enforced memory protection without needing to continually redesign software to address the same classes of memory-safety vulnerabilities.
+Adopting CHERI requires an initial investment in new hardware, migration, tooling, testing, and training. Once that transition is complete, organisations gain the ongoing benefits of hardware-enforced memory protection, reducing the need to repeatedly redesign software to address the same classes of memory-safety vulnerabilities.
 
 ## Why organisations choose CHERI
 

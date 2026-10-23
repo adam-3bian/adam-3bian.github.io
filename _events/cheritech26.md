@@ -286,6 +286,7 @@ CHERITech is not just about watching presentations. Participants can ask questio
 ![Munich Messe](/assets/images/events/cheritech26/munich-messe.webp){: .image-left }
 
 Whether you're new to CHERI or already building with it, CHERITech’26 is an opportunity to:
+
 - get up to speed
 - learn from real implementations
 - see where the technology is heading
@@ -320,7 +321,7 @@ Exhibits and demonstrations run alongside the conference programme, giving visit
 Exhibitor booths will be open throughout SEMICON Europa, from **10 to 13 November 2026**, not only during the CHERITech sessions.
 
 | --- | --- | --- |
-| ![Capabilities Limited logo](/assets/images/organisation/capabilities-limited.webp){: .image-full } | ![CHERI logo](/assets/images/posts/2025-11-25-new-innovateuk-funded-project-to-merge-cheri-support-into-freebsd.webp){: .image-full } | ![CHERI Research Centre logo](/assets/images/organisation/university-of-cambridge.webp){: .image-full } |
+| ![Capabilities Limited logo](/assets/images/organisation/capabilities-limited.webp){: .image-full } | ![CHERI Alliance logo](/assets/images/organisation/cheri-alliance.webp){: .image-full } | ![CHERI Research Centre logo](/assets/images/organisation/university-of-cambridge.webp){: .image-full } |
 | ![Codasip logo](/assets/images/organisation/codasip.webp){: .image-full } | ![lowRISC logo](/assets/images/organisation/lowrisc.webp){: .image-full } | ![PA Consulting logo](/assets/images/organisation/pa-consulting.webp){: .image-full } |
 | ![Parvat logo](/assets/images/organisation/parvat-infotech.webp){: .image-full } | ![SCI Semiconductor logo](/assets/images/organisation/sci-semiconductor.webp){: .image-full } | ![UM-Labs logo](/assets/images/organisation/um-labs.webp){: .image-full } |
 
