@@ -273,7 +273,7 @@ navigation:
       - title: CheriBSD
         url: /repositories/cheribsd/
       - title: CHERI Linux
-        url: /build/software-ecosystem/cheri-linux/
+        url: /repositories/cheri-linux/
       - title: CHERI Zephyr
         url: /repositories/cheri-zephyr/
       - title: Debugging Tools
@@ -315,7 +315,7 @@ navigation:
       - title: Membership Benefits & Options
         url: /alliance/membership/membership-benefits-and-options/
       - title: Contact the Alliance
-        url: /alliance/membership/contact/
+        url: /contact/
     - title: Legal & Policies
       links:
       - title: Code of Conduct
@@ -339,7 +339,9 @@ navigation:
       - title: Latest News
         url: /news-and-events/news-and-analysis/latest-news/
       - title: Subscribe to our Newsletter
-        url: /news-and-events/news-and-analysis/subscribe-newsletter/
+        url: https://listmonk.cheri-alliance.org/subscription/form
+        rel: noopener noreferrer
+        target: _blank
       - title: Press Resources
         url: /news-and-events/news-and-analysis/press-resources/
     - title: Events & Archive
@@ -359,10 +361,10 @@ navigation:
       - title: Alliance Members
         url: /alliance/leadership/members/
       - title: Contact the Alliance
-        url: /alliance/membership/contact/
+        url: /contact/
   - title: Contact Us
     type: button
-    url: /alliance/membership/contact/
+    url: /contact/
   social:
   - title: Slack
     url: https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/cheri-slack.html
@@ -404,7 +406,9 @@ subscribe:
   enabled: true
   title: Stay connected with CHERI
   action: Get the newsletter
-  url: /news-and-events/news-and-analysis/subscribe-newsletter/
+  url: https://listmonk.cheri-alliance.org/subscription/form
+  rel: noopener noreferrer
+  target: _blank
 permalink: /news/:slug/
 plugins:
 - jekyll-redirect-from

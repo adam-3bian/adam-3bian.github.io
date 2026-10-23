@@ -11,7 +11,7 @@ layout: default
 {% if page.url == '/discover/resources/glossary/' %}{% include glossary.html %}{% endif %}
 </article>
 {% endunless %}
-{% if page.landing.navigation == 'category' %}{% for category in site.navigation.header %}{% if category.title == page.navigation.header.category %}<nav class="category-sections" aria-label="{{ page.title | escape }} sections" style="--category-columns: {{ category.columns | default: 3 }}">{% for subcategory in category.subcategories %}<section class="related-content"><h2>{{ subcategory.title | escape }}</h2><ul class="category-links" role="list">{% for link in subcategory.links %}<li><a class="menu-link" href="{{ link.url | relative_url }}">{{ link.title | escape }}</a></li>{% endfor %}</ul></section>{% endfor %}</nav>{% endif %}{% endfor %}{% endif %}
+{% if page.landing.navigation == 'category' %}{% for category in site.navigation.header %}{% if category.title == page.navigation.header.category %}<nav class="category-sections" aria-label="{{ page.title | escape }} sections" style="--category-columns: {{ category.columns | default: 3 }}">{% for subcategory in category.subcategories %}<section class="related-content"><h2>{{ subcategory.title | escape }}</h2><ul class="category-links" role="list">{% for link in subcategory.links %}<li><a class="menu-link" href="{% include url.html url=link.url %}"{% if link.rel %} rel="{{ link.rel | escape }}"{% endif %}{% if link.target %} target="{{ link.target | escape }}"{% endif %}>{{ link.title | escape }}</a></li>{% endfor %}</ul></section>{% endfor %}</nav>{% endif %}{% endfor %}{% endif %}
 {% unless page.listing %}{% include resource-links.html %}{% endunless %}
 
 {% include relationships.html %}

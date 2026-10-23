@@ -5,6 +5,7 @@
       {% assign footer_records = site.pages | concat: site.documents | where_exp: 'entry', 'entry.redirect_to == nil' | sort_natural: 'title' %}
       {% for category in site.data.footer_categories %}<li><span class="menu-group-title">{{ category.title | escape }}</span><ul>
       {% for entry in footer_records %}{% if entry.navigation.footer.category == category.title and entry.unlisted != true %}<li><a class="menu-link" href="{{ entry.url | relative_url }}">{{ entry.title | escape }}</a></li>{% endif %}{% endfor %}
+      {% for link in category.links %}<li><a class="menu-link" href="{% include url.html url=link.url %}"{% if link.rel %} rel="{{ link.rel | escape }}"{% endif %}{% if link.target %} target="{{ link.target | escape }}"{% endif %}>{{ link.title | escape }}</a></li>{% endfor %}
       </ul></li>{% endfor %}
     </ul>
   </nav>

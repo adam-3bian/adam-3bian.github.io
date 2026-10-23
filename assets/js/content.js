@@ -14,6 +14,16 @@
   document.querySelectorAll('input[data-form-timestamp]').forEach((input) => {
     input.value = Date.now();
   });
+  // Wait for a valid captcha proof, including while the widget loads or solves.
+  // Reset failed challenges before ALTCHA's form listener starts another attempt.
+  document.addEventListener('submit', (event) => {
+    const captcha = event.target.querySelector('altcha-widget');
+    if (!captcha) return;
+    const state = captcha.getState?.();
+    if (state === 'verified') return;
+    event.preventDefault();
+    if (state === 'error' || state === 'expired') captcha.reset();
+  }, true);
   // A textarea has no pattern attribute, so treat whitespace-only text as empty.
   document.querySelectorAll('form textarea[required]').forEach((textarea) => {
     const check = () => textarea.setCustomValidity(textarea.value.trim() ? '' : 'Please fill in this field.');

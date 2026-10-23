@@ -33,7 +33,7 @@ Use meaningful link text or angle-bracket autolinks:
 
 <https://github.com/CHERI-Alliance/CHERI-zephyr>
 
-[Contact the Alliance](/alliance/membership/contact/)
+[Contact the Alliance](/contact/)
 ~~~
 
 Kramdown does not automatically link every plain URL. Use one of these forms,
@@ -225,10 +225,27 @@ submission:
 in, and `timestamp` names a hidden field that JavaScript sets to the page-load
 time in milliseconds; the endpoint must check both. `captcha` adds an ALTCHA
 proof-of-work widget before the button, fetching its challenge from the given
-URL. Its script is bundled at `/assets/js/altcha.min.js` (MIT licence
+URL. The widget uses `auto="onsubmit"` to solve the challenge when the visitor
+selects **Send enquiry**, then submits the proof with the form. Its script is
+bundled at `/assets/js/altcha.min.js` (MIT licence
 alongside). Local paths respect `baseurl`. Set `mode: unconfigured` with no
 `url` to check fields locally without sending anything, or `external` to link
 to a hosted form.
+
+The shared browser script prevents submission until the captcha is verified and
+resets failed challenges on retry. The form service must still validate every
+proof, required field and spam trap; browser validation is only a convenience.
+
+`pages/contact.md` owns `/contact/`; the old `/alliance/membership/contact/`
+URL redirects there. Do not give a page and a redirect the same `permalink`.
+Static Jekyll previews need a separate form service for `/f/contact` and
+`/captcha/challenge`; Jekyll itself cannot process enquiries.
+
+Newsletter subscriptions use the hosted Listmonk form, without a local email
+form. Its links live in `_config.yml` (`subscribe` and the header menu) and
+`_data/footer_categories.yml` (`Updates.links`). The old newsletter URL is
+preserved in `_redirects/subscribe-newsletter.md`. Use `rel: noopener noreferrer`
+before `target: _blank` for external navigation links.
 
 ### Posts
 

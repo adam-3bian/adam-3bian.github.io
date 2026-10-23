@@ -24,4 +24,4 @@ landing:
 - [Upcoming events](/news-and-events/events-and-archive/upcoming-events/)
 - [Past events](/news-and-events/events-and-archive/past-events/)
 - [Speakers](/news-and-events/people-and-opportunities/speakers/)
-- [Newsletter](/news-and-events/news-and-analysis/subscribe-newsletter/)
+- [Newsletter](https://listmonk.cheri-alliance.org/subscription/form)

@@ -394,7 +394,7 @@
   related-pages: related-title
   where-next: related-title
 /alliance/leadership/working-groups/index.html: {}
-/alliance/membership/contact/:
+/contact/:
   cheri-contact-email-4: page-title
   cheri-contact-fields: page-title
   cheri-contact-first-name-2: page-title
@@ -403,7 +403,7 @@
   cheri-contact-status: page-title
   cheri-contact-title: page-title
   cheri-contact-topic-1: page-title
-  contact-webform-title: contact-form
+  contact-webform-title: contact-cheri-contact-title
   help-us-route-your-message: help-us-route-your-message
   hero-title: page-title
   page-hero-title: page-title

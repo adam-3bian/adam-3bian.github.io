@@ -82,7 +82,7 @@
             {% unless link_url contains ':' or url_prefix == '//' or url_first == '#' %}
               {% assign link_url = link_url | relative_url %}
             {% endunless %}
-            <a href="{{ link_url | escape }}"{% if link_target != '' %} target="{{ link_target | escape }}"{% endif %}{% if link_rel != '' %} rel="{{ link_rel | strip | escape }}"{% endif %}{% if link_target == '_blank' %} title="Opens in a new tab"{% endif %}>{{ menu_item.title | escape }}</a>
+            <a href="{{ link_url | escape }}"{% if link_rel != '' %} rel="{{ link_rel | strip | escape }}"{% endif %}{% if link_target != '' %} target="{{ link_target | escape }}"{% endif %}{% if link_target == '_blank' %} title="Opens in a new tab"{% endif %}>{{ menu_item.title | escape }}</a>
           {% endif %}
         {% elsif menu_is_group %}
           {% assign group_number = menu_position | minus: menu_group_start | plus: 1 %}
@@ -113,7 +113,7 @@
                 {% unless link_url contains ':' or url_prefix == '//' or url_first == '#' %}
                   {% assign link_url = link_url | relative_url %}
                 {% endunless %}
-                <a href="{{ link_url | escape }}"{% if link_target != '' %} target="{{ link_target | escape }}"{% endif %}{% if link_rel != '' %} rel="{{ link_rel | strip | escape }}"{% endif %}{% if link_target == '_blank' %} title="Opens in a new tab"{% endif %}>{{ menu_item.title | escape }}</a>
+                <a href="{{ link_url | escape }}"{% if link_rel != '' %} rel="{{ link_rel | strip | escape }}"{% endif %}{% if link_target != '' %} target="{{ link_target | escape }}"{% endif %}{% if link_target == '_blank' %} title="Opens in a new tab"{% endif %}>{{ menu_item.title | escape }}</a>
                 <button class="submenu-toggle" type="button" aria-expanded="false" aria-controls="{{ menu_id }}" aria-label="{{ menu_item.title | escape }} submenu"><span class="menu-indicator" aria-hidden="true">▼</span></button>
               </div>
               <ul class="submenu dropdown flyout" id="{{ menu_id }}" hidden>
@@ -132,7 +132,7 @@
               {% unless link_url contains ':' or url_prefix == '//' or url_first == '#' %}
                 {% assign link_url = link_url | relative_url %}
               {% endunless %}
-              <a href="{{ link_url | escape }}"{% if link_target != '' %} target="{{ link_target | escape }}"{% endif %}{% if link_rel != '' %} rel="{{ link_rel | strip | escape }}"{% endif %}{% if link_target == '_blank' %} title="Opens in a new tab"{% endif %}>{{ menu_item.title | escape }}</a>
+              <a href="{{ link_url | escape }}"{% if link_rel != '' %} rel="{{ link_rel | strip | escape }}"{% endif %}{% if link_target != '' %} target="{{ link_target | escape }}"{% endif %}{% if link_target == '_blank' %} title="Opens in a new tab"{% endif %}>{{ menu_item.title | escape }}</a>
             {% endif %}
         {% endif %}
 
