@@ -21,18 +21,18 @@
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header">
-    <div class="container brand-bar">
+    <div class="utility-bar">
+      <address class="container utility-inner">
+        <span>{{ site.data.organisation.address | first | escape }}, {{ site.data.organisation.address[2] | escape }}</span>
+        <a href="tel:{{ site.data.organisation.telephone }}">{{ site.data.organisation.phone }}</a>
+      </address>
+    </div>
+    <div class="container header-main">
       <a class="site-logo" href="{{ '/' | relative_url }}" aria-label="{{ site.title | escape }} home">
         <img src="{{ '/assets/images/brand-mark.jpg' | relative_url }}" alt="" width="1400" height="360">
         <span class="brand-name">Small Heath Park<strong>Housing Co-operative Ltd</strong></span>
       </a>
-      <address class="header-contact">
-        <a href="tel:{{ site.data.organisation.telephone }}">{{ site.data.organisation.phone }}</a>
-        <span>{{ site.data.organisation.address | first | escape }}, {{ site.data.organisation.address[2] | escape }}</span>
-      </address>
-    </div>
-    <nav class="site-nav" aria-label="Primary navigation" data-navigation>
-      <div class="container nav-inner">
+      <nav class="site-nav" aria-label="Primary navigation" data-navigation>
         <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-navigation" hidden>Menu</button>
         <ul id="primary-navigation" class="nav-list">
           {% for item in site.data.navigation.header %}
@@ -52,8 +52,8 @@
           </li>
           {% endfor %}
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
   <main id="main-content" tabindex="-1">{{ content }}</main>
   <footer class="site-footer">

@@ -5,6 +5,11 @@ layout: default
 {% assign page_parts = content | split: '<!-- form-declaration -->' %}
 {% assign declaration = page_parts[1] %}
 <header class="page-hero{% if page.hero.facts %} home-hero{% endif %}">
+  {% if page.hero.facts %}
+  <figure class="home-banner">
+    <img src="{{ '/assets/images/community-banner.webp' | relative_url }}" alt="" width="2171" height="724" fetchpriority="high">
+  </figure>
+  {% endif %}
   <div class="container{% if page.hero.facts %} hero-grid{% endif %}">
     <div class="hero-copy">
       <p class="eyebrow">{{ page.hero.eyebrow | default: site.short_title | escape }}</p>
@@ -15,13 +20,10 @@ layout: default
       {% endif %}
     </div>
     {% if page.hero.facts %}
-    <div class="hero-visual">
-      <img class="hero-art" src="{{ '/assets/images/brand-mark.jpg' | relative_url }}" alt="" width="1400" height="360">
-      <aside class="hero-facts" aria-labelledby="facts-heading">
-        <h2 id="facts-heading">{{ page.hero.facts.heading | escape }}</h2>
-        <dl>{% for fact in page.hero.facts.items %}<div><dt>{{ fact.value | escape }}</dt><dd>{{ fact.text | escape }}</dd></div>{% endfor %}</dl>
-      </aside>
-    </div>
+    <aside class="hero-facts" aria-labelledby="facts-heading">
+      <h2 id="facts-heading">{{ page.hero.facts.heading | escape }}</h2>
+      <dl>{% for fact in page.hero.facts.items %}<div><dt>{{ fact.value | escape }}</dt><dd>{{ fact.text | escape }}</dd></div>{% endfor %}</dl>
+    </aside>
     {% endif %}
   </div>
 </header>
@@ -47,6 +49,7 @@ layout: default
 </section>
 {% endif %}
 
+{% if page.community %}<section class="community-section">{% endif %}
 <div class="container section {% if form.stepped %}application-layout{% elsif form %}contact-layout{% elsif page.community %}community-grid{% else %}page-grid{% endif %}">
   <article class="prose page-copy">
     {% if page.community %}<p class="eyebrow">{{ page.community.eyebrow | escape }}</p>{% endif %}
@@ -92,3 +95,4 @@ layout: default
   </aside>
   {% endif %}
 </div>
+{% if page.community %}</section>{% endif %}

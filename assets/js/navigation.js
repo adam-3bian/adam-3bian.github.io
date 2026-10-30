@@ -4,7 +4,7 @@
   if (!navigation) return;
   const menuButton = navigation.querySelector('.menu-button');
   const menu = navigation.querySelector('.nav-list');
-  const mobile = window.matchMedia('(max-width: 48rem)');
+  const mobile = window.matchMedia('(max-width: 72rem)');
   navigation.classList.add('nav-enhanced');
 
   function closeMenu() {

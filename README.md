@@ -95,7 +95,8 @@ _layouts/                default.html and page.html
 _includes/               form.html, field.html and repeater.html
 assets/css/main.css      One CSS file with shared widths, colours and spacing
 assets/js/               Navigation, form interactions and local ALTCHA widget
-assets/images/           Original branding
+assets/images/           Original branding and an illustrative home banner
+assets/fonts/            Locally hosted Titillium Web fonts and licence
 assets/documents/        Original PDFs
 forms/                   PHP handler, schema template and locked dependencies
 .env.example             Non-secret settings template
