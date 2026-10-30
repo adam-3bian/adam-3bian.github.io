@@ -42,6 +42,8 @@ Copy the repository's `.env.example` to `/srv/small-heath/.env`. Restrict read a
 
 By default the handler finds `.env` one directory above the site root. Set `FORM_ENV_FILE` in PHP-FPM/NGINX or the process environment if your private file lives elsewhere. The runtime directory is created beside that file, named `form-runtime`. Create it with write access for PHP if the parent directory is not writable. Keep it private and persistent across deployments; share it between PHP workers on the same host.
 
+To put runtime records in a different private directory, set `FORM_RUNTIME_DIR` to an absolute path outside the web root. The [Docker setup](docker-setup.md) sets this to `/var/lib/small-heath/form-runtime` automatically.
+
 Fill in `.env`:
 
 ```dotenv

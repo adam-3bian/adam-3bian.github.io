@@ -11,5 +11,7 @@ work/
 !.env.example
 forms/vendor/
 form-runtime/
+www/
+var/
 __pycache__/
 *.pyc

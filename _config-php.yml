@@ -10,6 +10,11 @@ exclude:
   - vendor
   - node_modules
   - work
+  - compose.yml
+  - docker
+  - etc
+  - www
+  - var
   - form-runtime
 forms:
   endpoint: /forms/index.php

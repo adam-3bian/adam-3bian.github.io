@@ -27,5 +27,10 @@ exclude:
   - vendor
   - node_modules
   - work
+  - compose.yml
+  - docker
+  - etc
+  - www
+  - var
   - forms
   - form-runtime

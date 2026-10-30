@@ -8,8 +8,21 @@ A small Jekyll website with optional PHP email forms and open-source ALTCHA spam
 | --- | --- | --- |
 | GitHub Pages | Normal Jekyll build | A separate HTTPS PHP handler; Pages cannot run PHP |
 | NGINX/PHP hosting | Jekyll with `_config-php.yml` | Included in `_site/forms/`, on the same host |
+| Docker Compose | Alpine containers build and serve the site | PHP and NGINX included; SMTP configured privately |
 
-Both options use the same source. There is no custom Jekyll plugin, separate Ruby export script, npm build or CSS framework.
+All three options use the same source. There is no custom Jekyll plugin, separate Ruby export script, npm build or CSS framework.
+
+## Run with Docker
+
+With Docker Engine and Docker Compose installed, run:
+
+```sh
+docker compose up --build -d
+```
+
+Open `http://localhost:8080`. The Alpine build container installs Bundler, Jekyll and Composer dependencies, then builds the site automatically. NGINX and PHP serve it using Linux-style mounts under `etc/`, `www/html/` and `var/lib/`. The forms remain unavailable until private SMTP settings are configured.
+
+See the [Docker setup guide](docs/docker-setup.md) for `.env`, email, domains, directory mounts, updates and maintenance.
 
 ## Preview the website
 
@@ -90,6 +103,11 @@ Without JavaScript, all application sections remain readable, with the paper for
 *.md                     Pages: front matter and Markdown
 _config.yml              Shared Jekyll settings; default static Pages build
 _config-php.yml          Optional portable PHP build profile
+compose.yml              Alpine website, PHP and NGINX services
+docker/                  Container build and startup scripts
+etc/                     NGINX configuration and private form settings
+www/html/                Generated Docker web root; ignored by Git
+var/lib/                 Docker form runtime records; ignored by Git
 _data/                   forms.yml, navigation.yml, organisation.yml
 _layouts/                default.html and page.html
 _includes/               form.html, field.html and repeater.html

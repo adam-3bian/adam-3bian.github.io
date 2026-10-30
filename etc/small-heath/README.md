@@ -1,0 +1,1 @@
+Copy the repository's `.env.example` here as `.env` when you are ready to configure email. This directory is mounted read-only into the form containers and is outside the public web root. The `.env` file is ignored by Git and Docker's build context. See `docs/docker-setup.md` for the full instructions.

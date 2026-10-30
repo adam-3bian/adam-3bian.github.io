@@ -23,7 +23,7 @@
   <header class="site-header">
     <div class="utility-bar">
       <address class="container utility-inner">
-        <span>{{ site.data.organisation.address | first | escape }}, {{ site.data.organisation.address[2] | escape }}</span>
+        <span>{{ site.data.organisation.address | join: ', ' | escape }}</span>
         <a href="tel:{{ site.data.organisation.telephone }}">{{ site.data.organisation.phone }}</a>
       </address>
     </div>

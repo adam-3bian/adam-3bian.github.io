@@ -36,7 +36,7 @@ return [
         'from_name' => setting('SMTP_FROM_NAME', 'Small Heath Park Housing Co-operative'),
     ],
     'secret' => setting('ALTCHA_SECRET'),
-    'runtime_dir' => $privateDirectory . '/form-runtime',
+    'runtime_dir' => setting('FORM_RUNTIME_DIR', $privateDirectory . '/form-runtime'),
     'rate_limit' => max(1, (int)setting('FORM_RATE_LIMIT', '5')),
     'challenge_limit' => max(1, (int)setting('FORM_CHALLENGE_LIMIT', '60')),
     'max_body_bytes' => 131072,

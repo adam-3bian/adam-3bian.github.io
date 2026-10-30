@@ -41,7 +41,9 @@ class Page(HTMLParser):
         if tag == 'meta' and attrs.get('name') == 'description': self.description = bool(attrs.get('content'))
         if tag == 'link':
             if attrs.get('rel') == 'stylesheet': self.links.append(attrs['href'])
-            if attrs.get('rel') == 'canonical': self.canonical = attrs.get('href', '').startswith('https://')
+            if attrs.get('rel') == 'canonical':
+                canonical = urlsplit(attrs.get('href', ''))
+                self.canonical = bool(canonical.netloc) and (canonical.scheme == 'https' or (canonical.scheme == 'http' and canonical.hostname in ['localhost', '127.0.0.1', '::1']))
         if tag == 'label' and attrs.get('for'): self.labels.add(attrs['for'])
         if tag in ['input', 'textarea', 'select'] and attrs.get('type') != 'hidden': self.inputs.append(attrs)
 
@@ -49,7 +51,7 @@ class Page(HTMLParser):
         if tag == 'template': self.template_depth -= 1
 
 
-def check(root, baseurl='', php=False):
+def check(root, baseurl='', php=False, forms_disabled=False):
     pages = {path.resolve(): Page(path) for path in root.rglob('*.html') if 'forms' not in path.relative_to(root).parts}
     failures = []
     expected = ['/', '/about/', '/cooperative/', '/repairs/', '/rent/', '/allocations/', '/apply/', '/fire-gas-safety/', '/key-issues/', '/documents/', '/contact/', '/form-information/', '/404.html']
@@ -100,8 +102,11 @@ def check(root, baseurl='', php=False):
             schema = json.loads(schema_path.read_text())
             if set(schema) != {'contact', 'application'}: failures.append('Missing generated form definitions')
             for route, name in [('contact', 'contact'), ('apply', 'application')]:
-                expected_action = f'action="{baseurl}/forms/index.php?form={name}"'
-                if expected_action not in (root / route / 'index.html').read_text():
+                page_html = (root / route / 'index.html').read_text()
+                if forms_disabled:
+                    if 'data-available="false"' not in page_html or 'Online sending is not available yet.' not in page_html:
+                        failures.append('Missing unavailable form notice: ' + route)
+                elif f'action="{baseurl}/forms/index.php?form={name}"' not in page_html:
                     failures.append('Incorrect portable form endpoint: ' + route)
     elif (root / 'forms').exists():
         failures.append('Form service included in the GitHub Pages build')
@@ -115,5 +120,6 @@ if __name__ == '__main__':
     parser.add_argument('root', nargs='?', default='_site')
     parser.add_argument('baseurl', nargs='?', default='')
     parser.add_argument('--php', action='store_true', help='Check the portable PHP profile')
+    parser.add_argument('--forms-disabled', action='store_true', help='Expect the unavailable form notice')
     args = parser.parse_args()
-    check(Path(args.root), args.baseurl, args.php)
+    check(Path(args.root), args.baseurl, args.php, args.forms_disabled)
