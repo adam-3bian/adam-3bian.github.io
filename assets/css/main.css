@@ -118,11 +118,9 @@ details[open] > summary { margin-bottom: var(--space-4); }
 .utility-inner { display: flex; justify-content: space-between; align-items: center; gap: var(--space-4); min-height: 2.125rem; color: var(--muted); font-size: .875rem; }
 .utility-inner a { font-weight: 600; text-decoration: none; }
 .header-main { position: relative; display: flex; align-items: center; justify-content: space-between; gap: var(--space-6); min-height: 8.25rem; }
-.site-logo { display: flex; align-items: center; gap: var(--space-3); flex: 0 0 auto; color: var(--navy); text-decoration: none; }
+.site-logo { display: block; flex: 0 0 auto; color: var(--navy); font-size: 1.125rem; font-weight: 700; line-height: 1.08; text-decoration: none; }
 .site-logo:hover { color: var(--navy); }
-.site-logo img { width: 9.25rem; flex: 0 0 auto; }
-.brand-name { font-size: 1.125rem; font-weight: 700; line-height: 1.08; }
-.brand-name strong { display: block; max-width: 10rem; margin-top: var(--space-1); color: var(--magenta); font-size: .8125rem; line-height: 1.2; font-weight: 600; }
+.site-logo strong { display: block; margin-top: var(--space-1); color: var(--magenta); font-size: .8125rem; line-height: 1.2; font-weight: 600; }
 .site-nav { color: var(--navy); }
 .nav-list, .nav-dropdown ul { list-style: none; padding: 0; }
 .nav-list { display: flex; align-items: stretch; justify-content: flex-end; gap: var(--space-1); }
@@ -294,9 +292,8 @@ altcha-widget { display: block; max-width: 100%; --altcha-color-primary: var(--b
 }
 @media (max-width: 48rem) {
   .header-main { min-height: 5.5rem; }
-  .site-logo img { width: clamp(6.25rem, 23vw, 9.25rem); }
-  .brand-name { font-size: 1rem; }
-  .brand-name strong { font-size: .75rem; }
+  .site-logo { font-size: 1rem; }
+  .site-logo strong { font-size: .75rem; }
   .hero-grid, .community-grid, .page-grid, .application-layout > .page-copy { grid-template-columns: minmax(0, 1fr); }
   .hero-facts { padding: var(--space-5) 0 0; border-top: 1px solid var(--border); border-left: 0; }
   .card-grid { grid-template-columns: minmax(0, 1fr); }
@@ -308,10 +305,6 @@ altcha-widget { display: block; max-width: 100%; --altcha-color-primary: var(--b
 @media (max-width: 40rem) {
   .utility-inner { justify-content: flex-end; }
   .utility-inner span { display: none; }
-  .site-logo { gap: var(--space-2); }
-  .site-logo img { width: clamp(5rem, 23vw, 6.25rem); }
-  .brand-name { font-size: .875rem; }
-  .brand-name strong { max-width: 7rem; font-size: .6875rem; }
   .header-main { gap: var(--space-2); }
   .menu-button { padding-inline: var(--space-2); }
   .hero-facts dl { gap: var(--space-2); }

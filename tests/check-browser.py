@@ -50,7 +50,7 @@ def run():
                 page.goto(SITE_URL + route)
                 assert page.locator('h1').count() == 1
                 assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'), (width, route, 'horizontal overflow')
-                assert page.locator('.site-logo img').is_visible(), (width, route, 'hidden logo')
+                assert page.locator('.site-logo').is_visible(), (width, route, 'hidden site name')
                 results.append({'width': width, 'route': route, 'overflow': False})
                 if route in ['/', '/contact/', '/apply/', '/key-issues/']:
                     page.add_script_tag(path=AXE_PATH)
