@@ -1,0 +1,65 @@
+{% assign field = include.field %}
+{% assign input_name = include.input_name | default: field.name %}
+{% assign field_id = include.form_id | append: '-' | append: input_name | replace: '[', '-' | remove: ']' | replace: '_', '-' %}
+{% if field.id and include.input_name == nil %}{% assign field_id = field.id %}{% endif %}
+{% capture attributes %}
+{% if field.required %}required{% endif %}
+{% if field.required_when %}data-required-when="true"{% endif %}
+{% if field.row_required %}data-row-required="true"{% endif %}
+{% if field.maxlength %}maxlength="{{ field.maxlength }}"{% endif %}
+{% if field.minlength %}minlength="{{ field.minlength }}"{% endif %}
+{% if field.min %}min="{{ field.min }}"{% endif %}
+{% if field.max %}max="{{ field.max }}"{% endif %}
+{% if field.step %}step="{{ field.step }}"{% endif %}
+{% if field.autocomplete %}autocomplete="{{ field.autocomplete }}"{% endif %}
+{% if field.help %}aria-describedby="{{ field_id }}-help"{% endif %}
+{% if field.date_past %}data-not-future="true"{% endif %}
+
+{% if field.disabled %}disabled data-initial-disabled="true"{% endif %}
+{% if field.readonly %}readonly{% endif %}
+{% if field.placeholder and field.type != 'select' %}placeholder="{{ field.placeholder | escape }}"{% endif %}
+{% if field.pattern %}pattern="{{ field.pattern | escape }}"{% endif %}
+{% if field.inputmode %}inputmode="{{ field.inputmode | escape }}"{% endif %}
+{% endcapture %}
+{% if field.type == 'hidden' %}
+<input type="hidden" name="{{ input_name | escape }}" value="{{ field.value | escape }}">
+{% else %}
+<{% if field.type == 'radio' or field.type == 'checkboxes' %}fieldset{% else %}div{% endif %} class="form-field{% if field.full_width or field.type == 'radio' or field.type == 'checkboxes' %} form-field-full{% endif %}"
+  {% if field.when %}data-condition-name="{{ field.when.name | escape }}" data-condition-value="{{ field.when.value | escape }}"{% endif %}>
+  {% if field.type == 'radio' or field.type == 'checkboxes' %}
+    <legend>{{ field.label | escape }}{% if field.required %} <span class="required">(required)</span>{% endif %}</legend>
+    <p class="field-help" id="{{ field_id }}-help">{{ field.help | escape }}{% if field.type == 'checkboxes' %} Select all that apply.{% endif %}</p>
+    <div class="choice-list">
+      {% for option in field.options %}
+      {% assign option_value = option.value | default: option %}
+      {% assign option_label = option.label | default: option %}
+      <div class="choice">
+        <input id="{{ field_id }}-{{ forloop.index }}" name="{{ input_name }}{% if field.type == 'checkboxes' %}[]{% endif %}" type="{% if field.type == 'checkboxes' %}checkbox{% else %}radio{% endif %}" value="{{ option_value | escape }}" aria-describedby="{{ field_id }}-help" {% if field.required %}required{% endif %} {% if field.value == option_value %}checked{% elsif field.type == 'checkboxes' and field.value contains option_value %}checked{% endif %} {% if field.disabled %}disabled data-initial-disabled="true"{% endif %}>
+        <label for="{{ field_id }}-{{ forloop.index }}">{{ option_label | escape }}</label>
+      </div>
+      {% endfor %}
+    </div>
+  {% elsif field.type == 'checkbox' %}
+  <div class="choice">
+    <input id="{{ field_id }}" name="{{ input_name }}" type="checkbox" value="{{ field.value | default: 'yes' | escape }}" {% if field.checked %}checked{% endif %} {{ attributes }}>
+    <label for="{{ field_id }}">{{ field.label | escape }}{% if field.required %} <span class="required">(required)</span>{% endif %}{% if field.required_when %} <span class="required">(required if applicable)</span>{% endif %}</label>
+  </div>
+  {% else %}
+  <label for="{{ field_id }}">{{ field.label | escape }}{% if field.required %} <span class="required">(required)</span>{% endif %}{% if field.required_when %} <span class="required">(required if applicable)</span>{% endif %}</label>
+  {% if field.type == 'textarea' %}
+  <textarea id="{{ field_id }}" name="{{ input_name }}" rows="{{ field.rows | default: 4 }}" {{ attributes }}>{{ field.value | escape }}</textarea>
+  {% elsif field.type == 'select' %}
+  <select id="{{ field_id }}" name="{{ input_name }}{% if field.multiple %}[]{% endif %}"{% if field.multiple %} multiple{% endif %} {{ attributes }}>
+    {% unless field.multiple %}<option value="">{{ field.placeholder | default: 'Please select' | escape }}</option>{% endunless %}
+    {% for option in field.options %}
+      {% assign option_value = option.value | default: option %}
+      <option value="{{ option_value | escape }}"{% if field.value == option_value %} selected{% elsif field.multiple and field.value contains option_value %} selected{% endif %}>{{ option.label | default: option | escape }}</option>
+    {% endfor %}
+  </select>
+  {% else %}
+  <input id="{{ field_id }}" name="{{ input_name }}" type="{{ field.type | default: 'text' }}" value="{{ field.value | escape }}" {{ attributes }}>
+  {% endif %}
+  {% endif %}
+  {% if field.help and field.type != 'radio' and field.type != 'checkboxes' %}<p class="field-help" id="{{ field_id }}-help">{{ field.help | escape }}</p>{% endif %}
+</{% if field.type == 'radio' or field.type == 'checkboxes' %}fieldset{% else %}div{% endif %}>
+{% endif %}

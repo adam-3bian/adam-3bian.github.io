@@ -1,13 +1,11 @@
-name: Validate and deploy Jekyll
+name: Build and deploy Jekyll
 
 on:
   push:
-    branches: [main, design/catalogue-polish]
+    branches: [main]
   pull_request:
     branches: [main]
   workflow_dispatch:
-  schedule:
-    - cron: '15 0 * * *'
 
 permissions:
   contents: read
@@ -19,79 +17,32 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
-    permissions:
-      contents: read
-      pages: read
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v4
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2'
+          ruby-version: '3.3'
           bundler-cache: true
-      - uses: actions/setup-python@v6
+      - name: Build with GitHub Pages restrictions
+        run: JEKYLL_ENV=production bundle exec jekyll build --safe --strict_front_matter
+      - name: Check generated pages and links
+        run: python3 tests/check-site.py _site
+      - name: Check JavaScript syntax
+        run: |
+          node --check assets/js/navigation.js
+          node --check assets/js/forms.js
+      - uses: shivammathur/setup-php@v2
         with:
-          python-version: '3.12'
-      - name: Install validation tools
+          php-version: '8.2'
+          extensions: openssl, mbstring
+          tools: composer:v2
+      - name: Check separate form backend
         run: |
-          python -m pip install -r requirements-dev.txt
-          python -m playwright install --with-deps chromium firefox webkit
-          npm install --prefix "$RUNNER_TEMP/accessibility" --no-audit --no-fund axe-core@4.10.3
-      - name: Validate structured records and event boundaries
-        run: |
-          python scripts/check_content.py
-          python scripts/check_refinement.py
-          python scripts/test_spec.py
-          bundle exec ruby scripts/test_event_status.rb
-          bundle exec ruby scripts/test_forms.rb
-          bundle exec ruby scripts/test_relationships.rb
-      - name: Build and validate root and preview deployments
-        run: |
-          JEKYLL_ENV=production bundle exec jekyll build --safe --destination dist
-          python scripts/check_content.py --site dist --report reports/root-content.json
-          python scripts/check_refinement.py --site dist
-          bundle exec ruby scripts/test_markdown.rb dist
-          JEKYLL_ENV=production bundle exec jekyll build --safe --baseurl /preview --destination dist-baseurl/preview
-          python scripts/check_content.py --site dist-baseurl/preview --baseurl /preview --report reports/preview-content.json
-          python scripts/check_refinement.py --site dist-baseurl/preview --baseurl /preview
-          bundle exec ruby scripts/test_markdown.rb dist-baseurl/preview
-      - name: Check interactions, accessibility and responsive layouts
-        run: |
-          python -m http.server 4200 --bind 127.0.0.1 --directory dist > "$RUNNER_TEMP/site.log" 2>&1 &
-          root_server_pid=$!
-          python -m http.server 4201 --bind 127.0.0.1 --directory dist-baseurl > "$RUNNER_TEMP/preview.log" 2>&1 &
-          preview_server_pid=$!
-          trap 'kill "$root_server_pid" "$preview_server_pid"' EXIT
-          export AXE_PATH="$RUNNER_TEMP/accessibility/node_modules/axe-core/axe.min.js"
-          BROWSERS=webkit,chromium,firefox SITE_URL=http://127.0.0.1:4200/ REPORT_ROOT=reports/corporate/root python scripts/test_corporate.py
-          BROWSERS=webkit,chromium,firefox SITE_URL=http://127.0.0.1:4201/preview/ REPORT_ROOT=reports/corporate/preview python scripts/test_corporate.py
-          SITE_URL=http://127.0.0.1:4200/ REPORT_ROOT=reports/posts/root python scripts/test_posts.py
-          SITE_URL=http://127.0.0.1:4201/preview/ REPORT_ROOT=reports/posts/preview python scripts/test_posts.py
-          SITE_URL=http://127.0.0.1:4200/ REPORT_ROOT=reports/semantic/root python scripts/test_semantic.py
-          SITE_URL=http://127.0.0.1:4201/preview/ REPORT_ROOT=reports/semantic/preview python scripts/test_semantic.py
-          SITE_URL=http://127.0.0.1:4200/ REPORT_ROOT=reports/browser python scripts/test_catalog.py
-          SITE_URL=http://127.0.0.1:4201/preview/ REPORT_ROOT=reports/preview-browser python scripts/test_catalog.py
-          SITE_URL=http://127.0.0.1:4200/ REPORT_ROOT=reports/layout-fixes/after python scripts/test_layouts.py
-          SITE_URL=http://127.0.0.1:4201/preview/ REPORT_ROOT=reports/layout-fixes/preview python scripts/test_layouts.py
-          SITE_URL=http://127.0.0.1:4200/ REPORT_ROOT=reports/polish/after python scripts/test_presentation.py
-          SITE_URL=http://127.0.0.1:4201/preview/ REPORT_ROOT=reports/polish/preview python scripts/test_presentation.py
-          SITE_URL=http://127.0.0.1:4200/ REPORT_ROOT=reports/refinement/after python scripts/test_refinement.py
-          SITE_URL=http://127.0.0.1:4201/preview/ REPORT_ROOT=reports/refinement/preview python scripts/test_refinement.py
-          SITE_URL=http://127.0.0.1:4200/ REPORT_ROOT=reports/consistency/root python scripts/test_consistency.py
-          SITE_URL=http://127.0.0.1:4201/preview/ REPORT_ROOT=reports/consistency/preview python scripts/test_consistency.py
-      - name: Save review evidence
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: catalogue-review
-          path: reports/
-          if-no-files-found: ignore
-      - uses: actions/configure-pages@v5
-        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
-      - uses: actions/upload-pages-artifact@v4
-        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
-        with:
-          path: dist
+          composer install --working-dir=backend --no-dev --prefer-dist --no-interaction
+          bundle exec ruby backend/build-schema.rb
+          python3 tests/check-backend.py
+      - uses: actions/upload-pages-artifact@v3
+        if: github.ref == 'refs/heads/main'
 
   deploy:
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'

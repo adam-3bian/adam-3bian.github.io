@@ -1,8 +1,0 @@
-{% if page.event.schedule.size > 0 %}<section class="event-programme" aria-labelledby="programme-title"><h2 id="programme-title">Programme</h2>
-{% for day in page.event.schedule %}<section class="programme-day" aria-labelledby="programme-day-{{ day.date }}"><h3 id="programme-day-{{ day.date }}">{% include date.html value=day.date %}{% if day.label %} · {{ day.label | escape }}{% endif %}</h3>
-{% for session in day.sessions %}<article class="programme-session" id="{{ session.id | escape }}"><h4>{{ session.title | escape }}</h4>
-{% if session.start %}<p class="programme-time">{{ session.start }}{% if session.end %}–{{ session.end }}{% endif %}{% if page.event.timezone %} ({{ page.event.timezone | escape }}){% endif %}{% if session.track %} · {{ session.track | escape }}{% endif %}{% if session.room %} · {{ session.room | escape }}{% endif %}</p>{% endif %}
-{% if session.description %}{{ session.description | markdownify }}{% endif %}
-{% include programme-speakers.html record=page session=session.id %}{% include resource-links.html record=page scope=session.id %}
-{% for presentation in session.presentations %}<section class="programme-presentation" id="{{ presentation.id | escape }}"><h5>{{ presentation.title | escape }}</h5>{% if presentation.start %}<p>{{ presentation.start }}{% if presentation.end %}–{{ presentation.end }}{% endif %}</p>{% endif %}{% if presentation.description %}{{ presentation.description | markdownify }}{% endif %}{% include programme-speakers.html record=page session=presentation.id %}{% include resource-links.html record=page scope=presentation.id %}</section>{% endfor %}
-</article>{% endfor %}</section>{% endfor %}</section>{% endif %}

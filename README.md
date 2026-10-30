@@ -1,38 +1,91 @@
-# CHERI Alliance website
+# Small Heath Park Housing Co-operative
 
-Jekyll content and catalogue templates for GitHub Pages. The current review branch is `design/catalogue-polish`; deployment remains restricted to `main`.
+A small Jekyll site for GitHub Pages, with a separate PHP service for email and ALTCHA spam protection. The site retains the pages, documents, branding and housing questions from the supplied ZIP.
 
-The [v5.3 specification](docs/migrations/v5.3/SPECIFICATION.txt) defines the content contract. [Migration notes](docs/migrations/v5.3/README.md) explain classifications, preservation checks and source-data gaps.
+## Site structure
 
-## Authoring
+```text
+*.md                      Pages: nested YAML configuration, then Markdown content
+_config.yml               Jekyll settings and the public form endpoint
+_data/                    Navigation and organisation details
+_layouts/                 default.html (document), page.html (page structure)
+_includes/                form.html, field.html, repeater.html
+assets/css/main.css       One CSS file, shared tokens and responsive rules
+assets/js/                Navigation, forms and the pinned ALTCHA distribution
+assets/images/            Original branding
+assets/documents/         Original PDFs
+backend/                  Separate PHP service; excluded from GitHub Pages
+  public/index.php        The only public PHP entry point
+  private/                Validation, SMTP configuration loader and cleanup
+  .env.example            Non-secret configuration template
+  build-schema.rb         Exports form definitions for the backend
+  nginx-example.conf      Separate-host NGINX example
+  composer.json           ALTCHA, PHPMailer and dotenv dependencies
+  composer.lock           Locked backend dependencies
+tests/                    Static, browser and backend checks
+```
 
-Use `_posts` for news, with dated filenames. The nine other editorial collections are events, people, organisations, papers, products, repositories, groups, guides and policies. Author-facing layouts live in `_layouts/lists`, `_layouts/details` and `_layouts/page`.
+Two layouts and three meaningful includes handle the whole site. There are no Jekyll plugins, Sass partials, CSS frameworks, npm build steps or custom content collections. Kramdown renders editorial content. Front matter holds heroes, cards, calls to action and form definitions. Standard Jekyll filenames keep their required underscores; authored asset filenames and CSS selectors use lowercase kebab-case, and JavaScript names use camelCase.
 
-Records have a title, summary, explicit permalink and `navigation.header` context. Facts belong in their semantic group (`person`, `event`, `publication`, etc.). Related records use typed `related` references. Resource links use `resources`; forms reference `_data/forms.yml`. Inverse relationships are generated from the owning record, including all simultaneous affiliations.
+## Run and publish
 
-Bodies use ordinary Kramdown with H2/H3 headings, fenced code, links, images, lists and tables. Keep image alignment classes beside inline images. Put the primary image in `image`, once. Literal Liquid examples need `raw` wrappers. The glossary remains a non-output support collection.
-
-Header menus are curated in `_config.yml`. A page joins the footer only through `navigation.footer.category`; `_data/footer_categories.yml` supplies headings. Routing records in `_redirects` contain only `permalink` and `redirect_to`.
-
-## Validate locally
+Use Ruby 3.3 and Bundler:
 
 ```sh
 bundle install
-python -m pip install -r requirements-dev.txt
-python scripts/check_content.py
-python scripts/check_refinement.py
-python scripts/test_spec.py
-bundle exec ruby scripts/test_event_status.rb
-bundle exec ruby scripts/test_forms.rb
-bundle exec ruby scripts/test_relationships.rb
-JEKYLL_ENV=production bundle exec jekyll build --safe --destination dist
-python scripts/check_content.py --site dist --report reports/content.json
-python scripts/check_refinement.py --site dist
-bundle exec ruby scripts/test_markdown.rb dist
+bundle exec jekyll serve --safe
 ```
 
-Repeat the build with `--baseurl /preview --destination dist-baseurl/preview` and validate with `--baseurl /preview`. The workflow also exercises responsive layouts, keyboard/touch navigation, no-JavaScript use, catalogue controls and axe accessibility checks in both deployments.
+For GitHub Pages, select **GitHub Actions** in the repository's Pages settings. The included workflow builds with Jekyll 3.10 in safe mode, validates the output and the separate backend, and deploys `main`. A pull request runs checks without deployment. Native branch-based Pages builds also work because there are no unsupported plugins.
 
-Event status uses `site.time` and generic IANA offset periods so it works under safe Jekyll 3. Regenerate `_data/time_zones.yml` with `python scripts/generate_time_zones.py` after changing timezone support; the current range is 2020–2050. Extend the generator range and validation together for later events.
+`url` is `https://adam-3bian.github.io` and `baseurl` is empty. For project Pages, set `baseurl` to the repository path. All internal links, assets and metadata use Jekyll URL filters.
 
-External forms show only a provider button. POST mode requires a verified backend, server-side validation, security controls, privacy and actual server responses. No contact or newsletter data is submitted by tests.
+## Configure forms
+
+The static site only needs this public setting in `_config.yml`:
+
+```yaml
+forms:
+  endpoint: 'https://forms.your-domain.example/forms/'
+  privacy_url: /form-information/
+```
+
+The one handler serves both forms: `?form=contact` and `?form=application`; adding `&challenge=1` requests an ALTCHA challenge. Set `forms.endpoint` to the handler's full HTTPS URL without a query string. An empty value shows an honest unavailable notice and allows users to check their answers without sending them.
+
+Recipients and SMTP settings belong in **`backend/.env`**, never Jekyll front matter, JavaScript, GitHub Actions variables embedded into the site, or committed source. `.env` is ignored by Git and `backend/` is excluded from every Jekyll build. The example NGINX root contains only `backend/public/`.
+
+See [backend setup](docs/backend-setup.md) for `.env`, SMTP, ALTCHA, NGINX and deployment instructions. There is no hosted form-service account or CAPTCHA account to create. You do need a PHP host and an SMTP service you can send through.
+
+## Edit content
+
+Write page bodies in Markdown with H2/H3 headings under the layout's H1. Put structured information beside the page in nested YAML: `hero`, `services`, `cta`, `downloads` or `form`. Avoid using YAML for long paragraphs or articles. The application declaration is ordinary Markdown in `apply.md`.
+
+Both forms define `form.sections[].fields[]` directly in their page front matter. Keep existing field `name` values stable. Supported fields are native text, email, telephone, date, number, select, textarea, checkbox and radio controls; `checkboxes` groups choices and `repeat` lists household members or previous addresses. Conditional fields use `when` and `required_when`. After changing form data, regenerate the backend schema and redeploy it:
+
+```sh
+bundle exec ruby backend/build-schema.rb
+```
+
+The original application PDF remains available. Without JavaScript, users can read every application section and use the paper form or office telephone. Online submission requires JavaScript for ALTCHA. Answers stay on the current page and are not saved to browser storage.
+
+## Verification
+
+```sh
+bundle exec jekyll build --safe --strict_front_matter
+python3 tests/check-site.py _site
+node --check assets/js/forms.js
+node --check assets/js/navigation.js
+composer install --working-dir=backend --no-dev
+bundle exec ruby backend/build-schema.rb
+python3 tests/check-backend.py
+```
+
+The backend test uses an isolated `.env`, a real PHP server and a local SMTP sink; it never sends external email. For responsive and accessibility checks, install Python Playwright and axe-core in a temporary tools directory, serve `_site`, then run:
+
+```sh
+SITE_URL=http://127.0.0.1:4200 \
+AXE_PATH=/path/to/axe-core/axe.min.js \
+REPORT_DIR=work/browser python3 tests/check-browser.py
+```
+
+`CHROMIUM_PATH` can select an existing Chromium executable. The browser suite expects the default empty endpoint and blocks outgoing POST requests. See [audit and verification](docs/refactor-notes.md) for the refactor decisions, preservation checks and deployment limits.

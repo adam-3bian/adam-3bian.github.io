@@ -1,8 +1,7 @@
 ---
 layout: null
-permalink: /robots.txt
 ---
 User-agent: *
 Allow: /
-Disallow: /reference/source-versions/
+
 Sitemap: {{ '/sitemap.xml' | absolute_url }}

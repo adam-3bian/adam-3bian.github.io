@@ -1,4 +1,0 @@
-{%- capture local_iso -%}{{ include.date | date: '%Y-%m-%d' }}T{{ include.clock | default: '00:00' }}:00+0000{%- endcapture -%}
-{%- assign naive_epoch = local_iso | date: '%s' | plus: 0 | plus: include.shift -%}
-{%- assign local_epoch = nil -%}{%- assign zone = include.zone | default: site.timezone -%}
-{%- for period in site.data.time_zones[zone] -%}{%- assign candidate = naive_epoch | minus: period.offset -%}{%- if candidate >= period.start and candidate < period.end -%}{%- assign local_epoch = candidate -%}{%- break -%}{%- endif -%}{%- endfor -%}

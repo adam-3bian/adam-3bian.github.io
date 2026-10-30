@@ -1,4 +1,0 @@
-{%- assign target = include.url | default: '' -%}
-{%- assign first = target | slice: 0, 1 -%}{%- assign pair = target | slice: 0, 2 -%}
-{%- if target contains ':' or pair == '//' or first == '#' -%}{{- target | escape -}}
-{%- else -%}{{- target | relative_url | escape -}}{%- endif -%}

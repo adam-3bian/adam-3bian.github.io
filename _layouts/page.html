@@ -1,12 +1,76 @@
 ---
 layout: default
 ---
-{% if page.url == '/' %}{% include home-hero.html %}{% else %}{% include page-header.html %}{% endif %}
-{% include slider.html %}
-{% if page.layout == 'page/form' %}{% include page-forms.html %}{% endif %}
-<article class="content {% if page.listing %}directory-content{% elsif page.landing %}landing-content{% else %}reading-content{% endif %}">
-{% if page.landing.sections %}{% include section-cards.html content=content groups=page.landing.sections %}{% else %}{{ content }}{% endif %}
-{% if page.url == '/discover/resources/glossary/' %}{% include glossary.html %}{% endif %}
-</article>
-{% if page.landing.navigation == 'category' %}{% include category-links.html %}{% endif %}
-{% unless page.listing %}{% include resource-links.html %}{% endunless %}
+<header class="page-hero{% if page.hero.facts %} home-hero{% endif %}">
+  <div class="container{% if page.presentation.width == 'reading' %} container-reading{% endif %}{% if page.hero.facts %} hero-grid{% endif %}">
+    <div class="hero-copy">
+      <p class="eyebrow">{{ page.hero.eyebrow | default: site.short_title | escape }}</p>
+      <h1>{{ page.hero.title | default: page.title | escape }}</h1>
+      <p class="lead">{{ page.hero.introduction | default: page.description | escape }}</p>
+      {% if page.hero.actions %}
+      <p class="button-row">{% for action in page.hero.actions %}<a class="button{% if forloop.first %} button-primary{% else %} button-light{% endif %}" href="{{ action.url | relative_url }}">{{ action.label | escape }}</a>{% endfor %}</p>
+      {% endif %}
+    </div>
+    {% if page.hero.facts %}
+    <aside class="hero-facts" aria-labelledby="facts-heading">
+      <h2 id="facts-heading">{{ page.hero.facts.heading | escape }}</h2>
+      <dl>{% for fact in page.hero.facts.items %}<div><dt>{{ fact.value | escape }}</dt><dd>{{ fact.text | escape }}</dd></div>{% endfor %}</dl>
+    </aside>
+    {% endif %}
+  </div>
+</header>
+
+{% if page.services %}
+<section class="section section-white" aria-labelledby="services-heading">
+  <div class="container">
+    <header class="section-heading">
+      <p class="eyebrow">{{ page.services.eyebrow | escape }}</p>
+      <h2 id="services-heading">{{ page.services.heading | escape }}</h2>
+      <p>{{ page.services.introduction | escape }}</p>
+    </header>
+    <div class="card-grid">
+      {% for card in page.services.items %}
+      <article class="card">
+        <h3>{{ card.title | escape }}</h3>
+        <p>{{ card.text | escape }}</p>
+        <a href="{{ card.url | relative_url }}">{{ card.action | escape }}</a>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<div class="container section{% if page.presentation.width == 'reading' %} container-reading{% endif %}{% if page.community %} community-grid{% endif %}">
+  <article class="prose">
+    {% if page.community %}<p class="eyebrow">{{ page.community.eyebrow | escape }}</p>{% endif %}
+    {{ content }}
+    {% if page.community %}<p><a class="button button-primary" href="{{ page.community.url | relative_url }}">{{ page.community.action | escape }}</a></p>{% endif %}
+  </article>
+  {% if page.community %}
+  <aside class="contact-panel" aria-labelledby="office-heading">
+    <h2 id="office-heading">Your local office</h2>
+    <address>{{ site.data.organisation.address | join: '<br>' }}<br><a href="tel:{{ site.data.organisation.telephone }}">{{ site.data.organisation.phone }}</a></address>
+    <a href="{{ '/contact/' | relative_url }}">Get in touch →</a>
+  </aside>
+  {% endif %}
+  {% if page.downloads %}
+  <ul class="download-list">
+    {% for download in page.downloads %}
+    <li class="download-card">
+      <div><h2>{{ download.title | escape }}</h2><p>{{ download.text | escape }}</p></div>
+      <a class="button button-secondary" href="{{ download.url | relative_url }}" download="{{ download.filename }}" aria-label="{{ download.action | escape }}: {{ download.title | escape }}">{{ download.action | escape }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  {% if page.form %}{% include form.html form=page.form %}{% endif %}
+  {% if page.cta %}
+  <aside class="call-to-action" aria-labelledby="cta-heading">
+    {% if page.cta.eyebrow %}<p class="eyebrow">{{ page.cta.eyebrow | escape }}</p>{% endif %}
+    <h2 id="cta-heading">{{ page.cta.title | escape }}</h2>
+    <p>{{ page.cta.text | escape }}</p>
+    <p class="button-row"><a class="button button-primary" href="{{ page.cta.url | relative_url }}">{{ page.cta.action | escape }}</a>{% if page.cta.secondary_url %}<a href="{{ page.cta.secondary_url | relative_url }}">{{ page.cta.secondary_action | escape }}</a>{% endif %}</p>
+  </aside>
+  {% endif %}
+</div>

@@ -1,9 +1,0 @@
-{%- assign chronological_items = '' | split: ',' -%}
-{%- assign chronological_source = include.items | sort: 'date' -%}
-{%- for chronological_entry in chronological_source -%}
-{%- assign include_entry = true -%}
-{%- if include.kind == 'events' -%}{%- capture entry_status -%}{%- include event-status.html event=chronological_entry -%}{%- endcapture -%}
-{%- if include.status == 'upcoming' and entry_status == 'Past' -%}{%- assign include_entry = false -%}{%- endif -%}
-{%- if include.status == 'past' and entry_status != 'Past' -%}{%- assign include_entry = false -%}{%- endif -%}{%- endif -%}
-{%- if include_entry -%}{%- assign chronological_items = chronological_items | push: chronological_entry -%}{%- endif -%}{%- endfor -%}
-{%- if include.kind == 'posts' or include.status == 'past' -%}{%- assign chronological_items = chronological_items | reverse -%}{%- endif -%}

@@ -1,8 +1,0 @@
-{% assign redirect_href = page.redirect.to %}{% assign origin_length = site.url | size %}{% assign redirect_origin = page.redirect.to | slice: 0, origin_length %}{% if redirect_origin == site.url %}{% assign redirect_href = page.redirect.to | remove_first: site.url %}{% endif %}
-<!doctype html>
-<html lang="{{ site.lang | default: 'en' | escape }}"><head><meta charset="utf-8"><meta name="robots" content="noindex,follow"><meta http-equiv="refresh" content="0;url={{ redirect_href | escape }}"><title>Page moved</title><link rel="canonical" href="{{ page.redirect.to | escape }}"><script>
-const destination = new URL({{ redirect_href | jsonify }}, window.location.href);
-if (!destination.search) destination.search = window.location.search;
-if (!destination.hash) destination.hash = window.location.hash;
-window.location.replace(destination.href);
-</script></head><body><p>Page moved. <a href="{{ redirect_href | escape }}">Continue to the CHERI Alliance</a>.</p></body></html>

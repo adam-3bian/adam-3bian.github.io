@@ -1,38 +1,77 @@
 <!doctype html>
-<html lang="{{ site.lang | default: 'en-GB' | escape }}">
+<html lang="{{ site.lang | escape }}">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>
-    document.documentElement.classList.add('navigation-pending');
-    window.cheriNavigationWait = setTimeout(() => document.documentElement.classList.remove('navigation-pending'), 4000);
-  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title | escape }} | {{ site.title | escape }}</title>
-  <meta name="description" content="{{ page.description | default: page.summary | default: site.description | markdownify | strip_html | normalize_whitespace | escape }}">
-  <link rel="canonical" href="{{ page.canonical_url | default: page.url | absolute_url }}">
-  {% if page.sitemap == false or page.url == '/404.html' %}<meta name="robots" content="noindex,follow">{% endif %}
-  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}">
-  <link rel="preload" href="{{ '/assets/js/navigation.js' | relative_url }}" as="script">
-  {% if page.listing %}<link rel="preload" href="{{ '/assets/js/catalog.js' | relative_url }}" as="script">{% endif %}
-  <link rel="preload" href="{{ '/assets/shared/fonts/dae40ca7b35f-pxiByp8kv8JHgFVrLEj6V1s.ttf' | relative_url }}" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="{{ '/assets/shared/fonts/fcff04f4bec2-pxiByp8kv8JHgFVrLGT9V1s.ttf' | relative_url }}" as="font" type="font/ttf" crossorigin>
-  {% if page.url == '/' %}<link rel="preload" href="{{ '/assets/shared/fonts/cdedb1729aca-pxiEyp8kv8JHgFVrFJA.ttf' | relative_url }}" as="font" type="font/ttf" crossorigin><link rel="preload" href="{{ '/assets/shared/fonts/1984efdda0fb-pxiByp8kv8JHgFVrLCz7V1s.ttf' | relative_url }}" as="font" type="font/ttf" crossorigin>{% endif %}
+  <meta name="description" content="{{ page.description | default: site.description | escape }}">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ page.title | escape }}">
+  <meta property="og:description" content="{{ page.description | default: site.description | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:site_name" content="{{ site.title | escape }}">
+  <meta property="og:image" content="{{ '/assets/images/brand-mark.jpg' | absolute_url }}">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  {% if page.noindex %}<meta name="robots" content="noindex, follow">{% endif %}
 </head>
-<body data-theme="{% if page.url == '/' %}dark{% else %}light{% endif %}" class="{% if page.url == '/' %}home-page landing-page{% elsif page.listing %}directory-page{% elsif page.collection == 'posts' %}article-page{% elsif page.collection %}detail-page{% elsif page.landing %}landing-page{% else %}reading-page{% endif %}">
-  {% assign all_pages = site.pages %}
+<body>
   <a class="skip-link" href="#main-content">Skip to content</a>
-  {% include header.html %}
-  <script src="{{ '/assets/js/navigation.js' | relative_url }}" onerror="clearTimeout(window.cheriNavigationWait);document.documentElement.classList.remove('navigation-pending')"></script>
-  <main id="main-content" tabindex="-1">
-    {% include breadcrumbs.html %}
-    {% capture rendered_content %}{{ content }}{% unless page.layout == 'page/form' %}{% include page-forms.html %}{% endunless %}{% include site-features.html %}{% endcapture %}
-    {% capture anchored_content %}{% include anchor-aliases.html content=rendered_content %}{% endcapture %}
-    {% include content-urls.html content=anchored_content %}
-  </main>
-  {% include newsletter-cta.html %}{% include footer.html %}
-  {% if page.image_overlay %}{% include image-overlay.html %}{% endif %}
-  <script src="{{ '/assets/js/content.js' | relative_url }}" defer></script>
-  {% if page.url == '/discover/resources/glossary/' %}<script src="{{ '/assets/js/glossary.js' | relative_url }}" defer></script>{% endif %}
-  {% if page.landing.slider.slides %}<script src="{{ '/assets/js/slider.js' | relative_url }}" defer></script>{% endif %}
-  {% if page.image_overlay %}<script src="{{ '/assets/js/image-overlay.js' | relative_url }}" defer></script>{% endif %}
-</body></html>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-logo" href="{{ '/' | relative_url }}" aria-label="{{ site.title | escape }} home">
+        <img src="{{ '/assets/images/brand-mark.jpg' | relative_url }}" alt="" width="140" height="36">
+        <span>Small Heath Park<strong>Housing Co-operative Ltd</strong></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation" data-navigation>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-navigation" hidden>Menu</button>
+        <ul id="primary-navigation" class="nav-list">
+          {% for item in site.data.navigation.header %}
+          <li>
+            {% if item.links %}
+            <details class="nav-dropdown" name="primary-menu">
+              <summary>{{ item.title | escape }}</summary>
+              <ul>
+                {% for link in item.links %}
+                <li><a href="{{ link.url | relative_url }}"{% if page.url == link.url %} aria-current="page"{% endif %}>{{ link.title | escape }}</a></li>
+                {% endfor %}
+              </ul>
+            </details>
+            {% else %}
+            <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title | escape }}</a>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content" tabindex="-1">{{ content }}</main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section aria-labelledby="footer-contact">
+        <h2 id="footer-contact">Contact</h2>
+        <address>{{ site.data.organisation.address | join: ', ' | escape }}<br><a href="tel:{{ site.data.organisation.telephone }}">{{ site.data.organisation.phone }}</a></address>
+      </section>
+      <nav aria-labelledby="footer-links">
+        <h2 id="footer-links">Practical links</h2>
+        <ul>{% for item in site.data.navigation.footer %}<li><a href="{{ item.url | relative_url }}">{{ item.title | escape }}</a></li>{% endfor %}</ul>
+      </nav>
+      <section aria-labelledby="footer-about">
+        <h2 id="footer-about">Our co-operative</h2>
+        <p>{{ site.data.organisation.about | escape }}</p>
+        <a href="{{ '/form-information/' | relative_url }}">Information about our online forms</a>
+      </section>
+    </div>
+    <p class="container copyright">© {{ site.time | date: '%Y' }} {{ site.title | escape }}</p>
+  </footer>
+  <script src="{{ '/assets/js/navigation.js' | relative_url }}" defer></script>
+  {% if page.form %}
+  {% if site.forms.endpoint != '' %}<script src="{{ '/assets/js/altcha.js' | relative_url }}" type="module"></script>{% endif %}
+  <script src="{{ '/assets/js/forms.js' | relative_url }}" defer></script>
+  {% endif %}
+</body>
+</html>

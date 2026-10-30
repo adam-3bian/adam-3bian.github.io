@@ -1,4 +1,0 @@
-<ul class="catalog-cards {% if include.mode == 'grid' %}cards-grid{% else %}record-list{% endif %}" role="list" aria-label="{{ include.label | default: page.title | escape }}">
-{% for entry in include.items %}{% unless entry.redirect_to or entry.collection == 'redirects' %}{% include card.html item=entry kind=include.kind resolve=include.resolve heading=include.heading images=include.images metadata=include.metadata action=include.action %}{% endunless %}{% endfor %}
-</ul>
-{% comment %}Descriptions remain in their Markdown records; navigation lists expose titles and essential facts only.{% endcomment %}

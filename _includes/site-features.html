@@ -1,3 +1,0 @@
-{% include relationships.html %}
-{% include related-content.html %}
-{% if page.url == '/' %}{% assign featured_news = site.posts | sort: 'date' | reverse | slice: 0, 3 %}{% include relationship-section.html items=featured_news kind='posts' id='home-news-title' title='Latest from the CHERI ecosystem' %}{% include chronological-items.html items=site.events kind='events' status='upcoming' %}{% include relationship-section.html items=chronological_items kind='events' id='home-events-title' title='Upcoming events' %}{% endif %}
