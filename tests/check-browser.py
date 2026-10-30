@@ -50,6 +50,7 @@ def run():
                 page.goto(SITE_URL + route)
                 assert page.locator('h1').count() == 1
                 assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'), (width, route, 'horizontal overflow')
+                assert page.locator('.site-logo img').is_visible(), (width, route, 'hidden logo')
                 results.append({'width': width, 'route': route, 'overflow': False})
                 if route in ['/', '/contact/', '/apply/', '/key-issues/']:
                     page.add_script_tag(path=AXE_PATH)
@@ -91,6 +92,8 @@ def run():
         page.locator('[name=joint_application][value=No]').check()
         assert page.locator('[name=joint_surname]').is_disabled()
         for index in range(6):
+            if index == 5:
+                assert page.locator('#declaration-terms').is_visible()
             if index == 1:
                 repeater = page.locator('[data-repeater=moving_people]')
                 assert repeater.locator('[data-row]').count() == 1
@@ -112,6 +115,10 @@ def run():
         assert 'Updated example' in page.locator('[data-review-content]').inner_text()
         page.locator('[data-submit]').click()
         assert 'Nothing has been sent' in page.locator('.form-status').inner_text()
+        page.goto(SITE_URL + '/apply/#declaration-terms')
+        page.reload()
+        assert page.locator('#declaration-terms').is_visible()
+        assert page.locator('[data-progress-text]').inner_text() == 'Step 6 of 7'
         # No-JavaScript users keep all content, native navigation and the paper route.
         context = browser.new_context(java_script_enabled=False, viewport={'width': 320, 'height': 900})
         no_js = context.new_page()

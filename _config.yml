@@ -13,11 +13,9 @@ defaults:
       path: ''
     values:
       layout: page
-      presentation:
-        width: reading
 forms:
-  # Public HTTPS URL of backend/public/index.php on your separate PHP host.
-  # Recipient addresses and SMTP credentials belong in the backend's ignored .env.
+  # Leave empty on Pages until a separate HTTPS handler is available.
+  # The PHP build profile sets this to /forms/index.php on the same host.
   endpoint: ''
   privacy_url: /form-information/
 exclude:
@@ -29,4 +27,5 @@ exclude:
   - vendor
   - node_modules
   - work
-  - backend
+  - forms
+  - form-runtime

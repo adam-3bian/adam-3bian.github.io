@@ -3,8 +3,9 @@ from collections import Counter
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit, unquote
+import argparse
+import json
 import re
-import sys
 
 class Page(HTMLParser):
     def __init__(self, path):
@@ -48,8 +49,8 @@ class Page(HTMLParser):
         if tag == 'template': self.template_depth -= 1
 
 
-def check(root, baseurl=''):
-    pages = {path.resolve(): Page(path) for path in root.rglob('*.html')}
+def check(root, baseurl='', php=False):
+    pages = {path.resolve(): Page(path) for path in root.rglob('*.html') if 'forms' not in path.relative_to(root).parts}
     failures = []
     expected = ['/', '/about/', '/cooperative/', '/repairs/', '/rent/', '/allocations/', '/apply/', '/fire-gas-safety/', '/key-issues/', '/documents/', '/contact/', '/form-information/', '/404.html']
     for route in expected:
@@ -85,11 +86,34 @@ def check(root, baseurl=''):
             elif url.fragment and target.resolve() in pages and unquote(url.fragment) not in pages[target.resolve()].ids:
                 failures.append(name + ': broken anchor ' + link)
     for path in root.rglob('*'):
+        relative = path.relative_to(root)
+        if path.name.startswith('.env') or 'form-runtime' in relative.parts:
+            failures.append('Private configuration/runtime in public build: ' + str(path))
+        if php and relative.parts[0] == 'forms': continue
         if path.suffix in ['.php', '.rb', '.scss'] or path.name in ['composer.json', 'config.php']:
             failures.append('Private/source file in public build: ' + str(path))
+    if php:
+        for name in ['index.php', 'app.php', 'config.php', 'vendor/autoload.php', 'schema.json']:
+            if not (root / 'forms' / name).is_file(): failures.append('Missing portable handler file: ' + name)
+        schema_path = root / 'forms/schema.json'
+        if schema_path.is_file():
+            schema = json.loads(schema_path.read_text())
+            if set(schema) != {'contact', 'application'}: failures.append('Missing generated form definitions')
+            for route, name in [('contact', 'contact'), ('apply', 'application')]:
+                expected_action = f'action="{baseurl}/forms/index.php?form={name}"'
+                if expected_action not in (root / route / 'index.html').read_text():
+                    failures.append('Incorrect portable form endpoint: ' + route)
+    elif (root / 'forms').exists():
+        failures.append('Form service included in the GitHub Pages build')
     if failures:
         raise SystemExit('\n'.join(failures))
-    print(f'PASS: {len(pages)} pages; original routes, local links, labels, headings, ARIA and metadata; no backend source in public output.')
+    mode = 'portable PHP handler included' if php else 'static Pages output without PHP'
+    print(f'PASS: {len(pages)} pages; routes, links, labels, headings, ARIA, metadata and secret exclusion; {mode}.')
 
 if __name__ == '__main__':
-    check(Path(sys.argv[1] if len(sys.argv) > 1 else '_site'), sys.argv[2] if len(sys.argv) > 2 else '')
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('root', nargs='?', default='_site')
+    parser.add_argument('baseurl', nargs='?', default='')
+    parser.add_argument('--php', action='store_true', help='Check the portable PHP profile')
+    args = parser.parse_args()
+    check(Path(args.root), args.baseurl, args.php)

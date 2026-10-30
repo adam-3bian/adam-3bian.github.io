@@ -1,72 +1,110 @@
 # Small Heath Park Housing Co-operative
 
-A small Jekyll site for GitHub Pages, with a separate PHP service for email and ALTCHA spam protection. The site retains the pages, documents, branding and housing questions from the supplied ZIP.
+A small Jekyll website with optional PHP email forms and open-source ALTCHA spam protection. The pages, policies, housing questions, documents and original branding are preserved from the supplied site.
 
-## Site structure
+## Choose how to host it
 
-```text
-*.md                      Pages: nested YAML configuration, then Markdown content
-_config.yml               Jekyll settings and the public form endpoint
-_data/                    Navigation and organisation details
-_layouts/                 default.html (document), page.html (page structure)
-_includes/                form.html, field.html, repeater.html
-assets/css/main.css       One CSS file, shared tokens and responsive rules
-assets/js/                Navigation, forms and the pinned ALTCHA distribution
-assets/images/            Original branding
-assets/documents/         Original PDFs
-backend/                  Separate PHP service; excluded from GitHub Pages
-  public/index.php        The only public PHP entry point
-  private/                Validation, SMTP configuration loader and cleanup
-  .env.example            Non-secret configuration template
-  build-schema.rb         Exports form definitions for the backend
-  nginx-example.conf      Separate-host NGINX example
-  composer.json           ALTCHA, PHPMailer and dotenv dependencies
-  composer.lock           Locked backend dependencies
-tests/                    Static, browser and backend checks
-```
+| Hosting | Build | Forms |
+| --- | --- | --- |
+| GitHub Pages | Normal Jekyll build | A separate HTTPS PHP handler; Pages cannot run PHP |
+| NGINX/PHP hosting | Jekyll with `_config-php.yml` | Included in `_site/forms/`, on the same host |
 
-Two layouts and three meaningful includes handle the whole site. There are no Jekyll plugins, Sass partials, CSS frameworks, npm build steps or custom content collections. Kramdown renders editorial content. Front matter holds heroes, cards, calls to action and form definitions. Standard Jekyll filenames keep their required underscores; authored asset filenames and CSS selectors use lowercase kebab-case, and JavaScript names use camelCase.
+Both options use the same source. There is no custom Jekyll plugin, separate Ruby export script, npm build or CSS framework.
 
-## Run and publish
+## Preview the website
 
-Use Ruby 3.3 and Bundler:
+Install Ruby 3.3 and Bundler, then run from the repository root:
 
 ```sh
 bundle install
 bundle exec jekyll serve --safe
 ```
 
-For GitHub Pages, select **GitHub Actions** in the repository's Pages settings. The included workflow builds with Jekyll 3.10 in safe mode, validates the output and the separate backend, and deploys `main`. A pull request runs checks without deployment. Native branch-based Pages builds also work because there are no unsupported plugins.
+Open `http://127.0.0.1:4000`. This previews the static site; Jekyll's development server cannot execute PHP.
 
-`url` is `https://adam-3bian.github.io` and `baseurl` is empty. For project Pages, set `baseurl` to the repository path. All internal links, assets and metadata use Jekyll URL filters.
+## GitHub Pages
 
-## Configure forms
+The default build is entirely static:
 
-The static site only needs this public setting in `_config.yml`:
+```sh
+bundle exec jekyll build --safe --strict_front_matter
+```
+
+Native branch-based Pages builds work. Alternatively, select **GitHub Actions** in the repository's Pages settings to use the included workflow, which checks both hosting modes and deploys only the static build from `main`.
+
+The site is configured for `https://adam-3bian.github.io`. Change `url` for another domain and `baseurl` for a project subdirectory. To enable email, deploy the PHP handler as described in [the setup guide](docs/backend-setup.md#github-pages-with-a-separate-handler), then set its public URL in `_config.yml`:
 
 ```yaml
 forms:
-  endpoint: 'https://forms.your-domain.example/forms/'
+  endpoint: 'https://forms.example.org/forms/index.php'
   privacy_url: /form-information/
 ```
 
-The one handler serves both forms: `?form=contact` and `?form=application`; adding `&challenge=1` requests an ALTCHA challenge. Set `forms.endpoint` to the handler's full HTTPS URL without a query string. An empty value shows an honest unavailable notice and allows users to check their answers without sending them.
+The endpoint has no query string; the site adds the form name. An empty endpoint keeps sending unavailable while residents can read the form, check their answers, download the paper application and contact the office.
 
-Recipients and SMTP settings belong in **`backend/.env`**, never Jekyll front matter, JavaScript, GitHub Actions variables embedded into the site, or committed source. `.env` is ignored by Git and `backend/` is excluded from every Jekyll build. The example NGINX root contains only `backend/public/`.
+## Deploy `_site` to a PHP host
 
-See [backend setup](docs/backend-setup.md) for `.env`, SMTP, ALTCHA, NGINX and deployment instructions. There is no hosted form-service account or CAPTCHA account to create. You do need a PHP host and an SMTP service you can send through.
-
-## Edit content
-
-Write page bodies in Markdown with H2/H3 headings under the layout's H1. Put structured information beside the page in nested YAML: `hero`, `services`, `cta`, `downloads` or `form`. Avoid using YAML for long paragraphs or articles. The application declaration is ordinary Markdown in `apply.md`.
-
-Both forms define `form.sections[].fields[]` directly in their page front matter. Keep existing field `name` values stable. Supported fields are native text, email, telephone, date, number, select, textarea, checkbox and radio controls; `checkboxes` groups choices and `repeat` lists household members or previous addresses. Conditional fields use `when` and `required_when`. After changing form data, regenerate the backend schema and redeploy it:
+Use PHP 8.2+ with OpenSSL and mbstring, Composer 2, Ruby and Bundler on the build machine. The server needs only PHP and a web server, not Ruby or Jekyll.
 
 ```sh
-bundle exec ruby backend/build-schema.rb
+bundle install
+composer install --working-dir=forms --no-dev --prefer-dist --optimize-autoloader
+bundle exec jekyll build --safe --strict_front_matter --config _config.yml,_config-php.yml
 ```
 
-The original application PDF remains available. Without JavaScript, users can read every application section and use the paper form or office telephone. Online submission requires JavaScript for ALTCHA. Answers stay on the current page and are not saved to browser storage.
+Upload the **contents** of `_site/` to the server's public directory. This includes the handler, installed PHP dependencies and form schema. Set `url` and `baseurl` for that host before building; the PHP profile sets the endpoint to `/forms/index.php`, with `baseurl` applied automatically.
+
+Copy `.env.example` to `.env` **beside the public directory**, fill in SMTP, recipients, allowed origins and an ALTCHA secret, then enable the service. Never put `.env` inside `_site` or the server's public directory.
+
+```text
+/srv/small-heath/
+├── .env                  Private SMTP and ALTCHA settings
+├── form-runtime/         Private technical records; created by PHP
+└── public/               Contents of _site/
+    ├── index.html
+    ├── apply/index.html
+    ├── assets/
+    └── forms/
+        ├── index.php
+        ├── schema.json   Generated by Jekyll from _data/forms.yml
+        └── ...           PHP implementation and Composer dependencies
+```
+
+Use [the NGINX example](docs/nginx-example.conf) to serve static pages and execute only the form entry point. The [complete setup guide](docs/backend-setup.md) covers permissions, `.env`, local PHP preview, separate hosting, SMTP and troubleshooting. SMTP credentials are needed before real messages can be delivered.
+
+## Edit content and forms
+
+Write editorial content in the page's Markdown body. Use nested YAML front matter for `hero`, `services`, `cta` and `downloads`. The application declaration remains Markdown in `apply.md`; the `<!-- form-declaration -->` marker places it beside the declaration checkboxes.
+
+**`_data/forms.yml` is the single source for both forms.** `contact.md` selects `form: contact`; `apply.md` selects `form: application`. Liquid renders native controls from this data. In the PHP build, `forms/schema.json` uses Jekyll's built-in `jsonify` filter to supply the same data to PHP. Do not edit the generated JSON. Rebuild and deploy after changing the YAML; there is no extra export command.
+
+Keep field `name` values stable. Supported types are text, email, tel, date, number, select, textarea, checkbox and radio; `checkboxes` groups choices and `repeat` handles household/address rows. `when` and `required_when` express conditional rules. Use the existing definitions as examples rather than adding another configuration layer.
+
+Recipients, SMTP credentials and ALTCHA secrets belong only in the ignored `.env`. They are never read by Jekyll. Both `.env` and technical runtime files stay outside the public directory. The only public mail setting is `forms.endpoint`.
+
+Without JavaScript, all application sections remain readable, with the paper form and telephone route available. Online sending needs JavaScript for ALTCHA. Answers are not saved to browser storage.
+
+## Source structure
+
+```text
+*.md                     Pages: front matter and Markdown
+_config.yml              Shared Jekyll settings; default static Pages build
+_config-php.yml          Optional portable PHP build profile
+_data/                   forms.yml, navigation.yml, organisation.yml
+_layouts/                default.html and page.html
+_includes/               form.html, field.html and repeater.html
+assets/css/main.css      One CSS file with shared widths, colours and spacing
+assets/js/               Navigation, form interactions and local ALTCHA widget
+assets/images/           Original branding
+assets/documents/        Original PDFs
+forms/                   PHP handler, schema template and locked dependencies
+.env.example             Non-secret settings template
+.env                     Local secrets; ignored and never included in a build
+docs/                    Setup, NGINX example and refactor notes
+tests/                   Generated-site, browser and PHP integration checks
+```
+
+Two layouts and three form includes serve the whole site. Kramdown renders Markdown; normal Liquid loops render structured data. Authored CSS selectors and asset filenames use lowercase kebab-case; JavaScript names use camelCase. Standard Jekyll filenames retain their required underscores.
 
 ## Verification
 
@@ -75,12 +113,13 @@ bundle exec jekyll build --safe --strict_front_matter
 python3 tests/check-site.py _site
 node --check assets/js/forms.js
 node --check assets/js/navigation.js
-composer install --working-dir=backend --no-dev
-bundle exec ruby backend/build-schema.rb
-python3 tests/check-backend.py
+composer install --working-dir=forms --no-dev --prefer-dist
+bundle exec jekyll build --safe --strict_front_matter --config _config.yml,_config-php.yml --destination work/php-site
+python3 tests/check-site.py work/php-site --php
+PHP_SITE=work/php-site python3 tests/check-backend.py
 ```
 
-The backend test uses an isolated `.env`, a real PHP server and a local SMTP sink; it never sends external email. For responsive and accessibility checks, install Python Playwright and axe-core in a temporary tools directory, serve `_site`, then run:
+Backend tests use the built PHP files, an isolated `.env`, actual ALTCHA verification and a local SMTP sink. They never send external email. For browser checks, serve the default static build, install Python Playwright and axe-core in a temporary tools directory, and run:
 
 ```sh
 SITE_URL=http://127.0.0.1:4200 \
@@ -88,4 +127,4 @@ AXE_PATH=/path/to/axe-core/axe.min.js \
 REPORT_DIR=work/browser python3 tests/check-browser.py
 ```
 
-`CHROMIUM_PATH` can select an existing Chromium executable. The browser suite expects the default empty endpoint and blocks outgoing POST requests. See [audit and verification](docs/refactor-notes.md) for the refactor decisions, preservation checks and deployment limits.
+`CHROMIUM_PATH` can select an installed Chromium executable. The browser suite expects the default empty endpoint and blocks outgoing submissions. See [audit and verification](docs/refactor-notes.md) for preservation checks and deployment limits.

@@ -224,7 +224,7 @@ function handleRequest(): never {
             throw new RuntimeException('Mailbox configuration invalid');
         }
     }
-    require_once dirname(__DIR__) . '/vendor/autoload.php';
+    require_once __DIR__ . '/vendor/autoload.php';
     $runtime = $config['runtime_dir'];
     if (!is_dir($runtime) && !mkdir($runtime, 0700, true)) throw new RuntimeException('Runtime unavailable');
     $documentRoot = realpath($_SERVER['DOCUMENT_ROOT'] ?? '');
@@ -281,7 +281,7 @@ function handleRequest(): never {
     if (!$verified) {
         respond(422, ['ok' => false, 'message' => 'Please complete a new spam-protection check. Your answers have been kept.']);
     }
-    $schemas = json_decode(file_get_contents(__DIR__ . '/form-schema.json'), true, flags: JSON_THROW_ON_ERROR);
+    $schemas = json_decode(file_get_contents(__DIR__ . '/schema.json'), true, flags: JSON_THROW_ON_ERROR);
     $schema = $schemas[$id];
     [$answers, $errors] = validateAnswers($schema, $_POST);
     if ($errors) respond(422, ['ok' => false, 'message' => 'Please correct the marked answers.', 'errors' => $errors]);

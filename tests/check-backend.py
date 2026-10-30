@@ -1,6 +1,7 @@
 """Exercise the real PHP/ALTCHA/SMTP handler against an isolated local mail sink.
 
-Run after composer install and backend/build-schema.rb. No external mail is sent.
+Run against a PHP-profile Jekyll build. No external mail is sent.
+PHP_SITE selects that build's directory (default: _site).
 PHP_COMMAND may select a local PHP executable (default: php).
 """
 import base64
@@ -21,6 +22,7 @@ import urllib.parse
 import urllib.request
 
 ROOT = Path(__file__).resolve().parents[1]
+PHP_SITE = Path(os.environ.get('PHP_SITE', ROOT / '_site')).resolve()
 
 class MailSink(socketserver.StreamRequestHandler):
     def handle(self):
@@ -51,9 +53,7 @@ class FormService:
     def __init__(self, port=0, origin='http://127.0.0.1:4201', cost=5, counter=10):
         self.temp = tempfile.TemporaryDirectory(prefix='small-heath-test-')
         self.root = Path(self.temp.name)
-        for folder in ['private', 'public']:
-            shutil.copytree(ROOT / 'backend' / folder, self.root / folder, ignore=shutil.ignore_patterns('runtime'))
-        (self.root / 'vendor').symlink_to(ROOT / 'backend/vendor', target_is_directory=True)
+        shutil.copytree(PHP_SITE, self.root / 'public')
         self.smtp = socketserver.ThreadingTCPServer(('127.0.0.1', 0), MailSink)
         self.smtp.daemon_threads = True
         self.smtp.messages = []
@@ -75,7 +75,7 @@ class FormService:
             with socket.socket() as probe:
                 probe.bind(('127.0.0.1', 0))
                 port = probe.getsockname()[1]
-        self.url = f'http://127.0.0.1:{port}/index.php'
+        self.url = f'http://127.0.0.1:{port}/forms/index.php'
         self.log = (self.root / 'php.log').open('w+')
         self.process = subprocess.Popen(shlex.split(os.environ.get('PHP_COMMAND', 'php')) + ['-S', f'127.0.0.1:{port}', '-t', str(self.root / 'public')], stdout=self.log, stderr=self.log)
         for attempt in range(100):
@@ -155,7 +155,7 @@ def run():
         expect('SMTP failure', 503, service.request('POST', {**message, 'message': 'A different message to test delivery failure.', 'altcha': service.solution()}))
         service.smtp.reject = False
         expect('SMTP retry', 200, service.request('POST', {**message, 'message': 'A different message to test delivery failure.', 'altcha': service.solution()}))
-        schema = json.loads((service.root / 'private/form-schema.json').read_text())['application']
+        schema = json.loads((service.root / 'public/forms/schema.json').read_text())['application']
         application = {'_complete': 'yes', 'altcha': service.solution('application'), 'joint_application': 'No'}
         for section in schema['sections']:
             for field in section['fields']:
@@ -180,7 +180,7 @@ def run():
         assert 'joint_surname' in result[1]['errors'] and 'joint_declaration' in result[1]['errors']
         expect('body size limit', 413, service.request('POST', {**message, 'message': 'a' * 140000}))
         expect('wrong content type', 415, service.request('POST', message, content_type='application/json'))
-        for record in (service.root / 'private/runtime').glob('*.json'):
+        for record in (service.root / 'form-runtime').glob('*.json'):
             text = record.read_text()
             assert 'Example Resident' not in text and 'resident@example.invalid' not in text
         service.env['FORM_RATE_LIMIT'] = '1'

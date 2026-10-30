@@ -1,0 +1,15 @@
+# Use with: bundle exec jekyll build --config _config.yml,_config-php.yml
+# Jekyll copies the handler and installed dependencies into _site/forms/.
+# Replace the default exclusion list so the forms directory is published.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - docs
+  - tests
+  - vendor
+  - node_modules
+  - work
+  - form-runtime
+forms:
+  endpoint: /forms/index.php

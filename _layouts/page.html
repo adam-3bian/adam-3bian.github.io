@@ -1,21 +1,27 @@
 ---
 layout: default
 ---
+{% assign form = site.data.forms[page.form] %}
+{% assign page_parts = content | split: '<!-- form-declaration -->' %}
+{% assign declaration = page_parts[1] %}
 <header class="page-hero{% if page.hero.facts %} home-hero{% endif %}">
-  <div class="container{% if page.presentation.width == 'reading' %} container-reading{% endif %}{% if page.hero.facts %} hero-grid{% endif %}">
+  <div class="container{% if page.hero.facts %} hero-grid{% endif %}">
     <div class="hero-copy">
       <p class="eyebrow">{{ page.hero.eyebrow | default: site.short_title | escape }}</p>
       <h1>{{ page.hero.title | default: page.title | escape }}</h1>
       <p class="lead">{{ page.hero.introduction | default: page.description | escape }}</p>
       {% if page.hero.actions %}
-      <p class="button-row">{% for action in page.hero.actions %}<a class="button{% if forloop.first %} button-primary{% else %} button-light{% endif %}" href="{{ action.url | relative_url }}">{{ action.label | escape }}</a>{% endfor %}</p>
+      <p class="button-row">{% for action in page.hero.actions %}<a class="button{% if forloop.first %} button-primary{% else %} button-secondary{% endif %}" href="{{ action.url | relative_url }}">{{ action.label | escape }}</a>{% endfor %}</p>
       {% endif %}
     </div>
     {% if page.hero.facts %}
-    <aside class="hero-facts" aria-labelledby="facts-heading">
-      <h2 id="facts-heading">{{ page.hero.facts.heading | escape }}</h2>
-      <dl>{% for fact in page.hero.facts.items %}<div><dt>{{ fact.value | escape }}</dt><dd>{{ fact.text | escape }}</dd></div>{% endfor %}</dl>
-    </aside>
+    <div class="hero-visual">
+      <img class="hero-art" src="{{ '/assets/images/brand-mark.jpg' | relative_url }}" alt="" width="1400" height="360">
+      <aside class="hero-facts" aria-labelledby="facts-heading">
+        <h2 id="facts-heading">{{ page.hero.facts.heading | escape }}</h2>
+        <dl>{% for fact in page.hero.facts.items %}<div><dt>{{ fact.value | escape }}</dt><dd>{{ fact.text | escape }}</dd></div>{% endfor %}</dl>
+      </aside>
+    </div>
     {% endif %}
   </div>
 </header>
@@ -41,10 +47,10 @@ layout: default
 </section>
 {% endif %}
 
-<div class="container section{% if page.presentation.width == 'reading' %} container-reading{% endif %}{% if page.community %} community-grid{% endif %}">
-  <article class="prose">
+<div class="container section {% if form.stepped %}application-layout{% elsif form %}contact-layout{% elsif page.community %}community-grid{% else %}page-grid{% endif %}">
+  <article class="prose page-copy">
     {% if page.community %}<p class="eyebrow">{{ page.community.eyebrow | escape }}</p>{% endif %}
-    {{ content }}
+    {{ page_parts[0] }}
     {% if page.community %}<p><a class="button button-primary" href="{{ page.community.url | relative_url }}">{{ page.community.action | escape }}</a></p>{% endif %}
   </article>
   {% if page.community %}
@@ -52,6 +58,19 @@ layout: default
     <h2 id="office-heading">Your local office</h2>
     <address>{{ site.data.organisation.address | join: '<br>' }}<br><a href="tel:{{ site.data.organisation.telephone }}">{{ site.data.organisation.phone }}</a></address>
     <a href="{{ '/contact/' | relative_url }}">Get in touch →</a>
+  </aside>
+  {% elsif form %}
+    {% include form.html form=form declaration=declaration %}
+  {% else %}
+  <aside class="page-sidebar">
+    <nav aria-label="Practical links in the sidebar">
+      <h2 id="page-links-heading">Practical links</h2>
+      <ul>{% for item in site.data.navigation.footer %}<li><a href="{{ item.url | relative_url }}"{% if item.url == page.url %} aria-current="page"{% endif %}>{{ item.title | escape }}</a></li>{% endfor %}</ul>
+    </nav>
+    <section>
+      <h2 id="page-contact-heading">Contact</h2>
+      <address>{{ site.data.organisation.address | join: '<br>' }}<br><a href="tel:{{ site.data.organisation.telephone }}">{{ site.data.organisation.phone }}</a></address>
+    </section>
   </aside>
   {% endif %}
   {% if page.downloads %}
@@ -64,7 +83,6 @@ layout: default
     {% endfor %}
   </ul>
   {% endif %}
-  {% if page.form %}{% include form.html form=page.form %}{% endif %}
   {% if page.cta %}
   <aside class="call-to-action" aria-labelledby="cta-heading">
     {% if page.cta.eyebrow %}<p class="eyebrow">{{ page.cta.eyebrow | escape }}</p>{% endif %}

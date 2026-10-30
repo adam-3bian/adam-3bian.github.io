@@ -1,9 +1,19 @@
 <?php
 declare(strict_types=1);
 
-// Composer and .env are above public/, never served by NGINX or GitHub Pages.
-require_once dirname(__DIR__) . '/vendor/autoload.php';
-Dotenv\Dotenv::createImmutable(dirname(__DIR__))->safeLoad();
+require_once __DIR__ . '/vendor/autoload.php';
+
+// With _site/ as the web root, .env and runtime files live beside it.
+// FORM_ENV_FILE can select a different private location on the PHP host.
+$siteRoot = dirname(__DIR__);
+$envFile = ($_SERVER['FORM_ENV_FILE'] ?? getenv('FORM_ENV_FILE')) ?: dirname($siteRoot) . '/.env';
+$privateDirectory = dirname($envFile);
+$resolvedPrivate = realpath($privateDirectory);
+$resolvedSite = realpath($siteRoot);
+if (!$resolvedPrivate || !$resolvedSite || str_starts_with($resolvedPrivate . '/', $resolvedSite . '/')) {
+    throw new RuntimeException('The environment file must be outside the website directory');
+}
+Dotenv\Dotenv::createImmutable($privateDirectory, basename($envFile))->safeLoad();
 
 function setting(string $name, string $default = ''): string {
     return (string)($_ENV[$name] ?? $_SERVER[$name] ?? $default);
@@ -26,7 +36,7 @@ return [
         'from_name' => setting('SMTP_FROM_NAME', 'Small Heath Park Housing Co-operative'),
     ],
     'secret' => setting('ALTCHA_SECRET'),
-    'runtime_dir' => __DIR__ . '/runtime',
+    'runtime_dir' => $privateDirectory . '/form-runtime',
     'rate_limit' => max(1, (int)setting('FORM_RATE_LIMIT', '5')),
     'challenge_limit' => max(1, (int)setting('FORM_CHALLENGE_LIMIT', '60')),
     'max_body_bytes' => 131072,

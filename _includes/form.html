@@ -1,52 +1,57 @@
 {% assign form = include.form %}
+{% assign endpoint = site.forms.endpoint %}
+{% unless endpoint contains '://' %}{% assign endpoint = endpoint | relative_url %}{% endunless %}
 {% assign available = false %}
 {% if site.forms.endpoint and site.forms.endpoint != '' %}{% assign available = true %}{% endif %}
-<form id="{{ form.id }}" class="site-form"{% if available %} action="{{ site.forms.endpoint | escape }}?form={{ form.id }}"{% endif %} method="post" data-available="{{ available }}" data-stepped="{{ form.stepped | default: false }}">
+<form id="{{ form.id }}" class="site-form{% if form.stepped %} application-form{% endif %}"{% if available %} action="{{ endpoint | escape }}?form={{ form.id }}"{% endif %} method="post" data-available="{{ available }}" data-stepped="{{ form.stepped | default: false }}">
   <header class="form-intro">
     <p>Fields marked <strong>(required)</strong> must be completed. Complete other questions where they apply.</p>
     <p><a href="{{ site.forms.privacy_url | relative_url }}">How this form uses your information</a></p>
     {% unless available %}<p class="notice"><strong>Online sending is not available yet.</strong> You can check your answers here. Please telephone the office{% if form.stepped %} or <a href="{{ '/assets/documents/housing-application-form-2025.pdf' | relative_url }}">download the paper application</a>{% endif %} to contact the co-operative.</p>{% endunless %}
   </header>
   <div class="honeypot" aria-hidden="true"><label for="{{ form.id }}-website">Leave this field empty</label><input id="{{ form.id }}-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
-  <div class="error-summary" role="alert" tabindex="-1" hidden></div>
   {% if form.stepped %}
   <nav class="form-progress" aria-label="Application sections" hidden>
     <p data-progress-text></p>
     <progress max="{{ form.sections.size | plus: 1 }}" value="1" aria-label="Application progress"></progress>
-    <ol>{% for section in form.sections %}<li><button type="button" data-go-step="{{ forloop.index0 }}">{{ section.title | escape }}</button></li>{% endfor %}<li><button type="button" data-go-step="{{ form.sections.size }}">Review answers</button></li></ol>
+    <ol>{% for section in form.sections %}<li><button type="button" data-go-step="{{ forloop.index0 }}"><span class="step-number" aria-hidden="true">{{ forloop.index }}</span>{{ section.title | escape }}</button></li>{% endfor %}<li><button type="button" data-go-step="{{ form.sections.size }}"><span class="step-number" aria-hidden="true">{{ form.sections.size | plus: 1 }}</span>Review answers</button></li></ol>
   </nav>
   {% endif %}
-  {% for section in form.sections %}
-  <section class="form-section" data-form-section aria-labelledby="{{ form.id }}-section-{{ section.id }}">
-    <h2 id="{{ form.id }}-section-{{ section.id }}" tabindex="-1">{{ section.title | escape }}</h2>
-    {% if section.description %}<p class="section-description">{{ section.description | escape }}{% if section.id == 'declaration' %} <a href="#declaration-terms">Read your declaration</a>.{% endif %}</p>{% endif %}
-    <div class="form-grid">
-      {% for entry in section.fields %}
-      {% if entry.type == 'repeat' %}{% include repeater.html field=entry form_id=form.id %}{% else %}{% include field.html field=entry form_id=form.id %}{% endif %}
-      {% endfor %}
+  <div class="form-body">
+    <div class="error-summary" role="alert" tabindex="-1" hidden></div>
+    {% for section in form.sections %}
+    <section class="form-section" data-form-section aria-labelledby="{{ form.id }}-section-{{ section.id }}">
+      <h2 id="{{ form.id }}-section-{{ section.id }}" tabindex="-1">{{ section.title | escape }}</h2>
+      {% if section.id == 'declaration' and include.declaration %}<div class="prose declaration-terms">{{ include.declaration }}</div>{% endif %}
+      {% if section.description %}<p class="section-description">{{ section.description | escape }}{% if section.id == 'declaration' %} <a href="#declaration-terms">Read your declaration</a>.{% endif %}</p>{% endif %}
+      <div class="form-grid">
+        {% for entry in section.fields %}
+        {% if entry.type == 'repeat' %}{% include repeater.html field=entry form_id=form.id %}{% else %}{% include field.html field=entry form_id=form.id %}{% endif %}
+        {% endfor %}
+      </div>
+    </section>
+    {% endfor %}
+    {% if form.stepped %}
+    <section class="form-section review-section" data-review hidden>
+      <h2 tabindex="-1">Review your application</h2>
+      <p>Check your answers before sending. Use a section name to make changes.</p>
+      <div data-review-content></div>
+    </section>
+    {% endif %}
+    {% if available %}
+    <section class="captcha-panel" data-captcha-panel aria-labelledby="{{ form.id }}-captcha-heading"{% if form.stepped %} hidden{% endif %}>
+      <h2 id="{{ form.id }}-captcha-heading">Spam protection</h2>
+      <p>Complete the check before sending. It does not use image puzzles or tracking cookies.</p>
+      <altcha-widget challenge="{{ endpoint | escape }}?form={{ form.id }}&amp;challenge=1" name="altcha" type="native" auto="off" workers="2" configuration='{"humanInteractionSignature":false}'></altcha-widget>
+      <p class="field-help">If the check is unavailable, your answers stay on this page. Try again or telephone the office.</p>
+    </section>
+    {% endif %}
+    <div class="form-actions">
+      {% if form.stepped %}<button class="button button-secondary" type="button" data-back hidden>Back</button><button class="button button-primary" type="button" data-next hidden>Continue</button>{% endif %}
+      <button class="button button-primary" type="submit" data-submit disabled>{{ form.submit.label | escape }}</button>
     </div>
-  </section>
-  {% endfor %}
-  {% if form.stepped %}
-  <section class="form-section review-section" data-review hidden>
-    <h2 tabindex="-1">Review your application</h2>
-    <p>Check your answers before sending. Use a section name above to make changes.</p>
-    <div data-review-content></div>
-  </section>
-  {% endif %}
-  {% if available %}
-  <section class="captcha-panel" data-captcha-panel aria-labelledby="{{ form.id }}-captcha-heading"{% if form.stepped %} hidden{% endif %}>
-    <h2 id="{{ form.id }}-captcha-heading">Spam protection</h2>
-    <p>Complete the check before sending. It does not use image puzzles or tracking cookies.</p>
-    <altcha-widget challenge="{{ site.forms.endpoint | escape }}?form={{ form.id }}&amp;challenge=1" name="altcha" type="native" auto="off" workers="2" configuration='{"humanInteractionSignature":false}'></altcha-widget>
-    <p class="field-help">If the check is unavailable, your answers stay on this page. Try again or telephone the office.</p>
-  </section>
-  {% endif %}
-  <div class="form-actions">
-    {% if form.stepped %}<button class="button button-secondary" type="button" data-back hidden>Back</button><button class="button button-primary" type="button" data-next hidden>Continue</button>{% endif %}
-    <button class="button button-primary" type="submit" data-submit disabled>{{ form.submit.label | escape }}</button>
+    <p class="form-status" role="status" tabindex="-1" hidden></p>
   </div>
-  <p class="form-status" role="status" tabindex="-1" hidden></p>
   <input type="hidden" name="_complete" value="yes">
   <noscript><p>Online sending needs JavaScript for the spam-protection check. Please telephone the office{% if form.stepped %} or download the paper application. All sections are shown here for reference; complete joint-applicant questions only if you are applying jointly{% endif %}.</p></noscript>
 </form>

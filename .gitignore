@@ -9,8 +9,7 @@ work/
 .env
 .env.*
 !.env.example
-backend/private/form-schema.json
-backend/private/runtime/
-backend/vendor/
+forms/vendor/
+form-runtime/
 __pycache__/
 *.pyc

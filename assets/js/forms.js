@@ -19,6 +19,7 @@
     let sent = false;
 
     form.noValidate = true;
+    form.classList.add('form-enhanced');
     submitButton.disabled = false;
     if (!available) submitButton.textContent = stepped ? 'Check application' : 'Check message';
 
@@ -296,6 +297,11 @@
     });
 
     updateConditions();
-    if (stepped) showStep(0, false);
+    if (stepped) {
+      const linkedSection = sections.findIndex(section =>
+        [...section.querySelectorAll('[id]')].some(element => '#' + element.id === window.location.hash)
+      );
+      showStep(linkedSection < 0 ? 0 : linkedSection, false);
+    }
   });
 })();

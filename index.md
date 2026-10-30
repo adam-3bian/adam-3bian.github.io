@@ -33,8 +33,6 @@ cta:
   action: View documents and downloads
   url: /documents/
 permalink: /
-presentation:
-  width: standard
 services:
   eyebrow: Practical information
   heading: Find what you need

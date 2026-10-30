@@ -36,11 +36,12 @@ jobs:
           php-version: '8.2'
           extensions: openssl, mbstring
           tools: composer:v2
-      - name: Check separate form backend
+      - name: Build and test the portable PHP version
         run: |
-          composer install --working-dir=backend --no-dev --prefer-dist --no-interaction
-          bundle exec ruby backend/build-schema.rb
-          python3 tests/check-backend.py
+          composer install --working-dir=forms --no-dev --prefer-dist --no-interaction --optimize-autoloader
+          bundle exec jekyll build --safe --strict_front_matter --config _config.yml,_config-php.yml --destination work/php-site
+          python3 tests/check-site.py work/php-site --php
+          PHP_SITE=work/php-site python3 tests/check-backend.py
       - uses: actions/upload-pages-artifact@v3
         if: github.ref == 'refs/heads/main'
 
