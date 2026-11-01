@@ -8,27 +8,23 @@ import {JourneyStore} from './core/save';
 import {routeResourceUrl} from './core/resource-url';
 import {endpointContext} from './world/build';
 
-const railIcon='<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 3h10l2 11-3 4H8l-3-4L7 3Z" stroke="currentColor" stroke-width="1.5"/><path d="M7 10h10M9 6h6M8 18l-3 4m11-4 3 4M7 21h10" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="14" r="1" fill="currentColor"/><circle cx="15.5" cy="14" r="1" fill="currentColor"/></svg>';
 const externalArrow='<svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12 12 4M5 4h7v7" stroke="currentColor" stroke-width="1.3"/></svg>';
 const pauseIcon='<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 7v10M15 7v10" stroke="currentColor" stroke-width="2"/></svg>';
 const arrow='<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.5"/></svg>';
 const app=document.querySelector<HTMLDivElement>('#app')!;
 app.innerHTML=`<main class="simulator">
-  <div id="viewport" role="img" aria-label="Front view along the Snow Hill railway"></div>
+  <div id="viewport" role="img" aria-label="Front view of the Kidderminster to Dorridge railway"></div>
   <div class="vignette" aria-hidden="true"></div>
-  <header class="topbar"><a class="brand" href="#" aria-label="Snow Hill Lines home">${railIcon}<span>SNOW HILL<span class="brand-sub">L I N E S</span></span></a><div class="journey-title" id="journey-title">KIDDERMINSTER <span>—</span> DORRIDGE</div><div class="top-actions"><span class="clock" id="clock">08:12:00</span><button id="pause" class="icon-button" aria-label="Pause journey">${pauseIcon}</button></div></header>
+  <header class="topbar"><span class="brand">RAILWAY DEMO</span><div class="journey-title" id="journey-title">KIDDERMINSTER <span>—</span> DORRIDGE</div><div class="top-actions"><span class="clock" id="clock">08:12:00</span><button id="pause" class="icon-button" aria-label="Pause journey">${pauseIcon}</button></div></header>
   <section id="menu" class="menu" aria-label="Journey setup"><div class="menu-panel">
-    <div class="eyebrow"><i></i> THE WEST MIDLANDS, REIMAGINED</div>
-    <h1>Drive the<br>Snow Hill lines.</h1>
-    <p class="intro">From Worcestershire's open countryside to the heart of Birmingham. Take the front seat on the Snow Hill lines.</p>
-    <div class="route-summary"><span class="route-dot"></span><div><strong>Kidderminster</strong><small>WORCESTERSHIRE</small></div><span class="route-rule"></span><div><strong>Dorridge</strong><small>WEST MIDLANDS</small></div><span class="route-dot end"></span></div>
-    <div class="journey-facts"><span><strong>47.3</strong> km of railway</span><span><strong>22</strong> stations</span><span><strong>172</strong> your train</span></div>
-    <div class="form-row"><label>JOURNEY<select id="direction"><option value="1">Kidderminster → Dorridge</option><option value="-1">Dorridge → Kidderminster</option></select></label></div>
-    <div class="form-row"><label>DEPART FROM<select id="start-station" aria-label="Departure station"><option>Preparing stations…</option></select></label></div>
-    <button id="begin" class="primary" disabled><span id="begin-label">Preparing your journey…</span>${arrow}</button>
+    <h1>Railway demo</h1>
+    <p class="intro">Choose a direction and departure station.</p>
+    <div class="form-row"><label>Direction<select id="direction"><option value="1">Kidderminster → Dorridge</option><option value="-1">Dorridge → Kidderminster</option></select></label></div>
+    <div class="form-row"><label>Depart from<select id="start-station" aria-label="Departure station"><option>Loading stations…</option></select></label></div>
+    <button id="begin" class="primary" disabled><span id="begin-label">Loading…</span>${arrow}</button>
     <button id="resume-save" class="secondary" hidden>Continue saved journey ${arrow}</button>
-    <div class="menu-bottom"><span class="gpu-badge" id="gpu-state"><i></i> PREPARING THE LINE</span><button id="settings-open" class="text-button">Settings ${externalArrow}</button></div>
-  </div><div class="scene-caption"><span>THE SNOW HILL LINES</span><p>Familiar places.<br>A new perspective.</p><small>Procedural scenery · Solid colours · WebGL 2</small></div></section>
+    <div class="menu-bottom"><span class="gpu-badge" id="gpu-state"><i></i> LOADING</span><button id="settings-open" class="text-button">Settings</button></div>
+  </div></section>
   <section id="hud" class="hud" hidden aria-label="Driving instruments">
     <div class="notice" id="notice" role="status">Hold A to release the brake.</div>
     <div class="dashboard"><div class="instrument speed"><span class="instrument-label">SPEED</span><div><strong id="speed">0</strong><span>mph</span></div><small>LIMIT <b id="limit">65</b></small></div>
@@ -39,16 +35,27 @@ app.innerHTML=`<main class="simulator">
     <button id="tpws-reset" class="tpws-reset" hidden>TPWS brake demand · stop, then reset</button>
     <div class="touch-controls"><button data-drive="d" aria-label="Apply brakes">D · Brake</button><button data-drive="a" aria-label="Release brake and add power">A · Power</button><button data-drive="horn" aria-label="Horn">Horn</button></div>
   </section>
-  <section id="pause-panel" class="dialog" hidden><div class="dialog-card"><span class="eyebrow">A MOMENT BETWEEN STATIONS</span><h2>Journey paused.</h2><p id="pause-detail">Your train and traffic are safely paused.</p><button id="continue" class="primary">Continue journey ${arrow}</button><button id="save-paused" class="secondary">Save journey</button><button id="new-journey" class="text-button">Choose a new journey</button></div></section>
-  <section id="settings" class="dialog" hidden><div class="dialog-card"><button class="dialog-close" data-close="settings" aria-label="Close settings">×</button><span class="eyebrow">MAKE YOURSELF AT HOME</span><h2>Your preferences.</h2><label>SCENERY QUALITY<select id="quality"><option value="low">Light</option><option value="balanced" selected>Balanced</option><option value="high">Detailed</option></select></label><label>SOUND LEVEL<input id="volume" type="range" min="0" max="1" step=".01" value=".35" /></label><p class="setting-note">A / D control power and braking. Q acknowledges AWS. Hold Space for the horn. W / S select direction at standstill. T is unassigned.</p></div></section>
+  <section id="pause-panel" class="dialog" hidden><div class="dialog-card"><h2>Paused</h2><p id="pause-detail">Your train and traffic are paused.</p><button id="continue" class="primary">Continue ${arrow}</button><button id="save-paused" class="secondary">Save journey</button><button id="settings-paused" class="secondary">Settings</button><button id="new-journey" class="text-button">Choose a new journey</button></div></section>
+  <section id="settings" class="dialog" hidden><div class="dialog-card"><button class="dialog-close" data-close="settings" aria-label="Close settings">×</button><h2>Settings</h2><label>Render resolution<select id="render-scale"><option value="0.5" selected>50% — faster</option><option value="0.75">75%</option><option value="1">100% — sharper</option></select></label><p class="resolution-note">Scales the 3D view; the controls stay sharp. 50% uses one quarter of the pixels.</p><label>Scenery quality<select id="quality"><option value="low">Light — fewer distant tiles, no shadows</option><option value="balanced" selected>Balanced</option><option value="high">Detailed — more distant scenery</option></select></label><label>Sound level<input id="volume" type="range" min="0" max="1" step=".01" value=".35" /></label><p class="setting-note">A / D: power and brake · Q: AWS · Space: horn · W / S: direction · T: unassigned</p></div></section>
   <section id="stops" class="stops-panel" hidden><button class="dialog-close" data-close="stops" aria-label="Close route">×</button><span class="eyebrow">YOUR JOURNEY</span><h2>The line ahead.</h2><div id="stop-list"></div><small>Representative all-stations service</small></section>
-  <section id="error" class="dialog" hidden><div class="dialog-card"><span class="eyebrow">JOURNEY UNAVAILABLE</span><h2 id="error-title">The line needs a moment.</h2><p id="error-text"></p><button id="reload" class="primary">Try again ${arrow}</button></div></section>
+  <section id="error" class="dialog" hidden><div class="dialog-card"><h2 id="error-title">Unable to start</h2><p id="error-text"></p><button id="reload" class="primary">Reload ${arrow}</button></div></section>
   <footer class="credit">© OpenStreetMap contributors · Environment Agency ground data</footer>
 </main>`;
 
 const $=<T extends HTMLElement=HTMLElement>(id:string)=>document.getElementById(id) as T;
 const input:InputState={a:false,d:false,horn:false};const audio=new RailwayAudio();let sim:RailwaySimulation,view:RailwayRenderer,route:RouteGeometry;let started=false,loaded=false,accumulator=0,last=performance.now(),lastHUD=0,lastSave=0;let noticeUntil=0;
 const journeySaves=new JourneyStore();let saveErrorReported=false;
+const preferencesKey='railway-demo-preferences-v1';
+function loadPreferences(){
+  try{const value=JSON.parse(localStorage.getItem(preferencesKey)||'null');
+    if(['0.5','0.75','1'].includes(value?.renderScale))$<HTMLSelectElement>('render-scale').value=value.renderScale;
+    if(['low','balanced','high'].includes(value?.quality))$<HTMLSelectElement>('quality').value=value.quality;
+    if(typeof value?.volume==='number'&&Number.isFinite(value.volume))$<HTMLInputElement>('volume').value=String(clamp(value.volume,0,1));
+  }catch{/* Preferences are optional when storage is disabled or corrupt. */}
+  audio.setVolume(Number($<HTMLInputElement>('volume').value));
+}
+function savePreferences(){try{localStorage.setItem(preferencesKey,JSON.stringify({renderScale:$<HTMLSelectElement>('render-scale').value,quality:$<HTMLSelectElement>('quality').value,volume:Number($<HTMLInputElement>('volume').value)}));}catch{/* The settings still apply for this session. */}}
+loadPreferences();
 function visible(id:string,show:boolean){$(id).hidden=!show;}
 function notify(text:string,important=false){$('notice').textContent=text;$('notice').classList.toggle('important',important);noticeUntil=performance.now()+(important?10000:6500);}
 function clearInputs(){input.a=false;input.d=false;input.horn=false;}
@@ -70,11 +77,12 @@ function updateHUD(now:number){if(!sim)return;$('clock').textContent=sim.clockTe
 
 $('begin').addEventListener('click',begin);$('pause').addEventListener('click',pause);$('continue').addEventListener('click',resume);$('aws').addEventListener('click',()=>sim?.acknowledge());$('tpws-reset').addEventListener('click',()=>sim?.resetTPWS());$('save').addEventListener('click',()=>save());$('save-paused').addEventListener('click',()=>save());$('reload').addEventListener('click',()=>location.reload());
 $('new-journey').addEventListener('click',()=>{sim.paused=true;started=false;visible('pause-panel',false);visible('hud',false);visible('menu',true);});
-$('settings-open').addEventListener('click',()=>visible('settings',true));$('stops-open').addEventListener('click',()=>{updateStops();visible('stops',true);});
+$('settings-open').addEventListener('click',()=>visible('settings',true));$('settings-paused').addEventListener('click',()=>visible('settings',true));$('stops-open').addEventListener('click',()=>{updateStops();visible('stops',true);});
 document.querySelectorAll<HTMLElement>('[data-close]').forEach(el=>el.addEventListener('click',()=>visible(el.dataset.close!,false)));
 $<HTMLSelectElement>('direction').addEventListener('change',()=>stationOptions(Number($<HTMLSelectElement>('direction').value) as Direction));
-$<HTMLSelectElement>('quality').addEventListener('change',()=>view?.setQuality($<HTMLSelectElement>('quality').value as 'low'|'balanced'|'high'));
-$<HTMLInputElement>('volume').addEventListener('input',()=>audio.setVolume(Number($<HTMLInputElement>('volume').value)));
+$<HTMLSelectElement>('quality').addEventListener('change',()=>{view?.setQuality($<HTMLSelectElement>('quality').value as 'low'|'balanced'|'high');savePreferences();});
+$<HTMLSelectElement>('render-scale').addEventListener('change',()=>{view?.setRenderScale(Number($<HTMLSelectElement>('render-scale').value));savePreferences();});
+$<HTMLInputElement>('volume').addEventListener('input',()=>{audio.setVolume(Number($<HTMLInputElement>('volume').value));savePreferences();});
 $('resume-save').addEventListener('click',async()=>{try{const saved=await journeySaves.get();if(!saved)throw new Error('No saved journey was found.');sim.restore(saved);if(saved.roadTraffic)view.roadTraffic.restore(saved.roadTraffic);view.synchronizeClock();await view.preparePosition();started=true;visible('menu',false);visible('hud',true);updateJourneyTitle();updateStops();resume();notify('Saved journey restored.');}catch(e){showError(e as Error);}});
 document.querySelectorAll<HTMLElement>('[data-drive]').forEach(button=>{const key=button.dataset.drive as keyof InputState;button.addEventListener('pointerdown',e=>{input[key]=true;button.setPointerCapture(e.pointerId);});button.addEventListener('pointerup',()=>input[key]=false);button.addEventListener('pointercancel',()=>input[key]=false);});
 window.addEventListener('keydown',event=>{if(!started||sim.paused||['SELECT','INPUT','TEXTAREA'].includes((event.target as HTMLElement)?.tagName))return;const key=event.code;if(['KeyA','KeyD','KeyQ','KeyW','KeyS','Space'].includes(key))event.preventDefault();if(key==='KeyA')input.a=true;if(key==='KeyD')input.d=true;if(key==='Space')input.horn=true;if(!event.repeat){if(key==='KeyQ')sim.acknowledge();if(key==='KeyW')sim.setDirection(1);if(key==='KeyS')sim.setDirection(-1);if(key==='Escape')pause();}});
@@ -83,7 +91,7 @@ window.addEventListener('blur',pause);document.addEventListener('visibilitychang
 
 async function init(){try{
   const response=await fetch(routeResourceUrl('data/route.json',document.baseURI));if(!response.ok)throw new Error('Route data is missing. Check that the website’s data folder was copied in full.');const data=await response.json() as RouteData;data.worldHash=__RAILWAY_WORLD_HASH__;route=new RouteGeometry(data);route.setEndpointContext(endpointContext(route));sim=new RailwaySimulation(route);sim.sound=name=>audio.event(name);sim.onEvent=e=>{if(e.type==='aws'||e.type==='tpws'||e.type==='station'||e.type==='direction'||e.type==='complete')notify(e.message,e.type==='tpws'||e.type==='aws');};stationOptions(1);
-  view=new RailwayRenderer($('viewport'),data,route,sim);view.onError=showError;view.onProgress=()=>{if(!loaded&&view.tileCount>=3){loaded=true;$<HTMLButtonElement>('begin').disabled=false;$('begin-label').textContent='Begin journey';$('gpu-state').innerHTML='<i></i> WEBGL 2 READY';journeySaves.get().then(saved=>visible('resume-save',Boolean(saved))).catch(()=>visible('resume-save',false));}};
+  view=new RailwayRenderer($('viewport'),data,route,sim);view.setRenderScale(Number($<HTMLSelectElement>('render-scale').value));view.setQuality($<HTMLSelectElement>('quality').value as 'low'|'balanced'|'high');view.onError=showError;view.onProgress=()=>{if(!loaded&&view.tileCount>=3){loaded=true;$<HTMLButtonElement>('begin').disabled=false;$('begin-label').textContent='Begin journey';$('gpu-state').innerHTML='<i></i> WEBGL 2 READY';journeySaves.get().then(saved=>visible('resume-save',Boolean(saved))).catch(()=>visible('resume-save',false));}};
   await view.init();
   if(import.meta.env.DEV||import.meta.env.MODE==='qa')(window as any).__railway={sim,route,view,input,save,storage:journeySaves,begin,render:()=>view.draw(1/60),advance:(seconds:number,autoAck=false)=>{const paused=sim.paused;sim.paused=false;for(let i=0;i<seconds*60;i++){if(autoAck&&sim.aws.pending)sim.acknowledge();sim.update(1/60,input);}sim.paused=paused;updateHUD(performance.now());},startAt:(id:string,direction:Direction=1)=>{const index=route.stations.findIndex(s=>s.id===id);sim.start(direction,index);started=true;visible('menu',false);visible('hud',true);updateJourneyTitle();},stats:()=>view.stats()};
   function frame(now:number){try{const dt=Math.min(1,(now-last)/1000);last=now;accumulator+=dt;if(!sim.paused){while(accumulator>=1/60){sim.update(1/60,input);accumulator-=1/60;}}else accumulator=0;audio.update(sim,input.horn);view.draw(dt);if(now-lastHUD>100){updateHUD(now);lastHUD=now;}if(started&&!sim.paused&&now-lastSave>10000){save(false);lastSave=now;}requestAnimationFrame(frame);}catch(e){showError(e as Error);}}

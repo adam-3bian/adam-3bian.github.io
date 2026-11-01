@@ -1,8 +1,8 @@
 {
-  "originCommit": "8ce5aadc29faadd77b505c0f13a4ea6192899276",
-  "reason": "Static hosting and WebGL 2 change presentation and resource paths only; preserve existing saves while the exact source, data and version policy still match.",
+  "originCommit": "474c6fb22efa968506aca0ca3b2856d3cf0d2506",
+  "reason": "Only menus, display preferences and render resolution changed; preserve prior saves while the exact source, data and version policy still match.",
   "legacyWorldHash": "d3f8f2263f5c79a1aa53f946d970701b169757a1fab229d273b488458e0d2091",
-  "sourceFingerprint": "307c2cb88f4b2f660038b32423f842ae0ced54b144c7a3988cd81d90ef2504f8",
+  "sourceFingerprint": "3ed9624cd7a68d4c9ac1b09dcbfba49a06a1f5d83d05b1f69811c3e075be7d76",
   "configHash": "851f2f7bf5ffa37725d97d93ae465056fc2e7b9d8b5688ad1bb715dfdb2340a9",
   "policyHash": "8776aecdffdc9f6b1fb3d6c55a9a479eb0374aa822f24ff9317a5c1a33370c68"
 }

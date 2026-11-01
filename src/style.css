@@ -11,3 +11,17 @@
 
 .text-button svg{width:12px;height:12px;vertical-align:-2px;margin-left:6px}.icon-button svg{width:17px;height:17px;vertical-align:-3px}
 @media(max-width:700px){.next-stop>strong{font-size:16px;white-space:normal;line-height:1.15;min-height:19px}.next-stop>div{gap:6px}}
+
+/* A compact setup panel leaves the railway as the focus of the demo. */
+.menu-panel{width:370px;max-width:min(100%,45vw);padding:26px;background:#193c36f5;backdrop-filter:none}
+.menu h1{font-family:inherit;font-size:26px;font-weight:600;line-height:1.2;letter-spacing:0;margin:0 0 8px}
+.menu .intro{font-size:12px;line-height:1.5;margin:0 0 22px}
+.menu label,.dialog label{font-size:11px;letter-spacing:0;color:#dbe5d5}
+.menu .form-row{margin-bottom:15px}
+.menu-bottom{margin-top:20px}.menu-bottom .text-button{font-size:12px}
+.dialog-card{max-height:calc(100dvh - 24px);overflow-y:auto}
+.dialog h2{font-family:inherit;font-size:24px;font-weight:600;margin:0 0 15px}
+.dialog label{margin:16px 0 8px}.dialog input[type=range]{margin-top:12px}
+.dialog .resolution-note{font-size:11px;line-height:1.5;margin:8px 0;color:#b9c9ac}
+.dialog .setting-note{font-size:11px;line-height:1.5;margin-bottom:0;padding-top:14px}
+@media(max-width:700px){.menu-panel{width:min(370px,100%);max-width:100%;padding:22px}.menu h1{font-size:24px}.menu .intro{font-size:12px}}

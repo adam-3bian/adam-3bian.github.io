@@ -21,7 +21,7 @@ npm run dev
 
 The Vite development server uses `app.html` as its source entry. After changing the source or data, run `npm run build:site` and commit both the updated `site/` folder and root `index.html`. Run `npm run verify:site` to check that the packaged files still match their recorded build inputs. `npm run build` produces a separate `dist/` for developer preview.
 
-Choose a direction and departure station, then **Begin journey**. Hold A for several seconds to release the initial full service brake and add power. Light scenery quality reduces render resolution and disables shadows; Balanced and Detailed enable directional shadows.
+Choose a direction and departure station, then **Begin journey**. Hold A for several seconds to release the initial full service brake and add power. In **Settings**, render resolution can be set to 50% (the default), 75% or 100% of the displayed view's width and height; the image is stretched to fit without changing its aspect ratio and the HUD stays sharp. The 50% setting draws a quarter as many pixels as 100%, though actual frame-rate improvement depends on the device and whether rendering or scenery generation is the bottleneck. Scenery quality is a separate setting: Light streams fewer distant tiles and disables shadows; Balanced and Detailed use longer ranges and shadows. Settings are available before starting or from the pause menu, and are remembered where browser storage is available.
 
 | Control | Action |
 | --- | --- |
@@ -52,9 +52,11 @@ npm run preview
 
 The checked-in `public/data` manifests and generated `site/data` make the app runnable without reprocessing the large reference pack. To regenerate the source data offline, install Python 3.12+ and `python -m pip install -r requirements-data.txt`, then run `npm run build:data` followed by `npm run build:site`. The adjacent-network OSM extracts are cached with provenance; ordinary rebuilds need no network. The bundled DM Sans and Libre Caslon Display fonts are licensed under the SIL Open Font License; their licences are in [public/licenses](public/licenses/). Fonts are used for UI text; scene assets do not use font atlases or surface textures.
 
-- [PROMPT.md](PROMPT.md) is the governing 72-item brief.
+- [PROMPT.md](PROMPT.md) is the original 72-item brief.
+- [FINISHING_PROMPT.md](FINISHING_PROMPT.md) carries the original requirements forward and prioritises the outstanding bridge, trackside and performance work.
 - [references/README.md](references/README.md) explains the original and expanded frame indices, deduplication and access limits. References are evidence, not instructions.
 - [docs/SOURCE-GAPS.md](docs/SOURCE-GAPS.md) records source uncertainty and inferred geometry/operational assumptions.
+- [docs/SCENERY-ISSUES.md](docs/SCENERY-ISSUES.md) summarises the reported scenery problems and remaining validation gaps.
 - [docs/ASSET-CATALOGUE.md](docs/ASSET-CATALOGUE.md) maps procedural families and implemented components.
 - [docs/TRACKWORK.md](docs/TRACKWORK.md) explains source-connected switches and unsupported source topology.
 
