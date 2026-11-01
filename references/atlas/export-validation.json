@@ -1,0 +1,45 @@
+{
+  "svgFiles": 8,
+  "allLocalHtmlLinksResolve": true,
+  "canonicalHashMatches": true,
+  "activeStations": 10,
+  "focusFootprints": 23949,
+  "focusRoadWays": 7031,
+  "heightmaps": {
+    "focus": {
+      "size": [
+        10894,
+        13325
+      ],
+      "gridMetres": [
+        1.0,
+        1.0
+      ],
+      "samples": 1587,
+      "maxEncodingErrorMetres": 0.0049999999999954525
+    },
+    "full-route": {
+      "size": [
+        3520,
+        1710
+      ],
+      "gridMetres": [
+        9.99999999999999,
+        10.0
+      ],
+      "samples": 1541,
+      "maxEncodingErrorMetres": 0.004995727539039763
+    }
+  },
+  "meaning": "Source/model export checks; not independent physical or GPU verification.",
+  "validatedAtUTC": "2026-11-01T00:38:10.207487+00:00",
+  "sourceSha256": "f6cd75d840b3435c27daef1ff5b133e1eb39476904a56051dc9aabb473c1a691",
+  "heightmapsReusedWithSourceHashChecks": true,
+  "gradeBreakSurveyed": false,
+  "heightmapSourceHashes": {
+    "focus": "321e94f74fad42643d9075785a4a4f9bd3e2441e64754347158330604b515571",
+    "full-route": "e84378fad589914830ab14eb51f859cdce65ad0618df88017446e56691d76bfc"
+  },
+  "canonicalSha256": "f6cd75d840b3435c27daef1ff5b133e1eb39476904a56051dc9aabb473c1a691",
+  "note": "Vector geometry/terrain source unchanged by latest tree ground-height refresh; canonical hash updated."
+}

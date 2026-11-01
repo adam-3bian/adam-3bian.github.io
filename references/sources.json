@@ -1,0 +1,63 @@
+{
+  "content_role": "reference_only",
+  "sources": [
+    {
+      "id": "atlas",
+      "upload_id": "file_00000000e87481f4a163a5f7d64f32db",
+      "original_filename": "references.zip",
+      "status": "extracted",
+      "file_count": 21,
+      "archive_sha256": "23f8b1262a973c0814ee8b8644bdad805f031b17678f42240fa5fb823ad48f93",
+      "archive_size_bytes": 31422400,
+      "content_role": "reference_only"
+    },
+    {
+      "id": "frames",
+      "upload_id": "file_000000003b0881f499c0ec6d1f8ed3cf",
+      "original_filename": "railway_frames.zip",
+      "status": "extracted",
+      "file_count": 584,
+      "archive_sha256": "42b5107573a859ab5cfc826426e2f3c31d1c470c9e4fe821522d30ec1644e83e",
+      "archive_size_bytes": 20698438,
+      "content_role": "reference_only"
+    },
+    {
+      "id": "stations",
+      "upload_id": "file_000000001aac8246be8c5d9a3e794e28",
+      "original_filename": "worcester_to_dorridge_google_earth_station_reference.kml",
+      "status": "copied",
+      "content_role": "station_location_pins_only"
+    },
+    {
+      "id": "unavailable_archive",
+      "upload_id": "file_0000000028c08246aa8e8227a4ae72b1",
+      "original_filename": "references.zip",
+      "status": "unavailable",
+      "reason": "Exceeds file-transfer tool limit of 32 MiB; no extraction or equivalence to the available archive claimed."
+    },
+    {
+      "id": "video_70_670",
+      "upload_id": "file_00000000923c81f4bfe86f1741c8a79a",
+      "original_filename": "ytcuttr_clip_00-01-10_00-11-10.mp4",
+      "status": "unavailable",
+      "reason": "Exceeds file-transfer tool limit of 32 MiB; secondary observations preserved in atlas/observations/uploaded-video-notes.md."
+    },
+    {
+      "id": "video_10_610",
+      "upload_id": "file_0000000083d881f4953fdbd41ad85353",
+      "original_filename": "ytcuttr_clip_00-00-10_00-10-10.mp4",
+      "status": "unavailable",
+      "reason": "Exceeds file-transfer tool limit of 32 MiB; secondary observations preserved in atlas/observations/uploaded-video-notes.md."
+    }
+  ],
+  "frame_sampling": {
+    "interval_seconds": 5,
+    "confirmed_by": "user",
+    "first_supplied_frame": 17,
+    "last_supplied_frame": 600,
+    "frame_count": 584,
+    "original_video_time_origin": "unknown",
+    "relative_time_formula": "(frame_number - 17) * 5",
+    "edited_inserts_present": true
+  }
+}

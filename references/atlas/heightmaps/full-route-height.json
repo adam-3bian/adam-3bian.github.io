@@ -1,0 +1,44 @@
+{
+  "sourceSha256": "e84378fad589914830ab14eb51f859cdce65ad0618df88017446e56691d76bfc",
+  "source": "data/terrain-dtm-10m.tif",
+  "sourceDataset": "Environment Agency 2022 LiDAR bare-earth DTM",
+  "licence": "Open Government Licence v3.0",
+  "attribution": "\u00a9 Environment Agency copyright and/or database right 2022. All rights reserved.",
+  "crs": "EPSG:27700",
+  "verticalDatum": "ODN metres",
+  "bounds_bng": [
+    382799.99999999994,
+    273800.0,
+    417999.9999999999,
+    290900.0
+  ],
+  "width": 3520,
+  "height": 1710,
+  "pixelSizeMetres": [
+    9.99999999999999,
+    10.0
+  ],
+  "affine": [
+    9.99999999999999,
+    0.0,
+    382799.99999999994,
+    0.0,
+    -10.0,
+    290900.0
+  ],
+  "heightEncoding": {
+    "format": "16-bit grayscale PNG",
+    "nodataValue": 0,
+    "offsetMetres": 26.0,
+    "scaleMetres": 0.01,
+    "decode": "height_odn_m = offsetMetres + (pixelValue - 1) * scaleMetres; value 0 is nodata",
+    "maximumEncodingErrorMetres": 0.005
+  },
+  "sourceMinimumMetres": 26.615949630737305,
+  "sourceMaximumMetres": 315.4252624511719,
+  "validSourcePixels": 6019200,
+  "height_file": "full-route-height-16bit.png",
+  "hillshade_file": "full-route-hillshade.png",
+  "hillshadePreviewStride": 2,
+  "meaning": "Ground terrain, not railhead or roof elevation. Encoding precision is not physical accuracy."
+}

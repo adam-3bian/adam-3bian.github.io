@@ -1,0 +1,42 @@
+{
+  "branch": "railway",
+  "source_file_count": 606,
+  "source_bytes": 89190812,
+  "source_sha256_verification": "pass",
+  "archive_crc_verification": "pass",
+  "frame_count": 584,
+  "frame_interval_seconds": 5,
+  "relative_frame_span_seconds": 2915,
+  "frame_index_verification": "pass",
+  "json_kml_svg_parsing": "pass",
+  "prompt_numbering": "1 through 72; one continuous list",
+  "prompt_word_count": 4648,
+  "atlas_links": {
+    "resolved_local_count": 21,
+    "unresolved_original_project_links": [
+      "../dist/index.html",
+      "../data/active-dtm-1m.tif",
+      "../data/terrain-dtm-10m.tif",
+      "../data/current-validation.json",
+      "../data/source-validation-v09.json",
+      "../data/scenery-manifest.json",
+      "../data/route-reference-research.json",
+      "../data/track-network.json",
+      "../data/civil-structures-audit.json",
+      "../data/clearance-audit-v012.json",
+      "../data/route-repair-v012.json",
+      "../data/tunnel-profile-audit.json",
+      "../data/building-appearance.json",
+      "../ACCURACY.md",
+      "../DATA-SOURCES.md",
+      "../data/curve-audit.json"
+    ],
+    "interpretation": "The unresolved targets were not present in the supplied ZIP. Original atlas preserved unchanged. All available map/heightmap targets resolve."
+  },
+  "not_claimed": [
+    "game implementation",
+    "real-world survey verification",
+    "browser/WebGPU acceptance",
+    "inspection/extraction of the oversized references.zip or original MP4 uploads"
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "source": "data/processed-world.json.gz",
+  "sourceSha256": "3a29a7157fd898422aa1cce96fe64011f06f211459be237fbed61fbe5c33d712",
+  "worldCrs": "EPSG:27700",
+  "originBng": [
+    400000.0,
+    280000.0
+  ],
+  "focus": "Dorridge\u2013Snow Hill",
+  "cachedEventualRoute": "Dorridge\u2013Kidderminster",
+  "focusBoundsLocal": [
+    6298.6963,
+    -5562.2311,
+    17363.0387,
+    7928.5655
+  ],
+  "fullBoundsLocal": [
+    -16884.040399999998,
+    -5762.2311,
+    17563.0387,
+    10467.117
+  ],
+  "focusRoadWays": 7031,
+  "focusBuildingFootprints": 23949,
+  "fullRoadWays": 19458,
+  "fullBuildingFootprints": 48164,
+  "focusTerrain": {
+    "sourceSha256": "321e94f74fad42643d9075785a4a4f9bd3e2441e64754347158330604b515571",
+    "source": "data/active-dtm-1m.tif",
+    "sourceDataset": "Environment Agency 2022 LiDAR bare-earth DTM",
+    "licence": "Open Government Licence v3.0",
+    "attribution": "\u00a9 Environment Agency copyright and/or database right 2022. All rights reserved.",
+    "crs": "EPSG:27700",
+    "verticalDatum": "ODN metres",
+    "bounds_bng": [
+      406369.0,
+      274538.0,
+      417263.0,
+      287863.0
+    ],
+    "width": 10894,
+    "height": 13325,
+    "pixelSizeMetres": [
+      1.0,
+      1.0
+    ],
+    "affine": [
+      1.0,
+      0.0,
+      406369.0,
+      0.0,
+      -1.0,
+      287863.0
+    ],
+    "heightEncoding": {
+      "format": "16-bit grayscale PNG",
+      "nodataValue": 0,
+      "offsetMetres": 52.0,
+      "scaleMetres": 0.01,
+      "decode": "height_odn_m = offsetMetres + (pixelValue - 1) * scaleMetres; value 0 is nodata",
+      "maximumEncodingErrorMetres": 0.005
+    },
+    "sourceMinimumMetres": 52.71200180053711,
+    "sourceMaximumMetres": 141.11399841308594,
+    "validSourcePixels": 12276004,
+    "height_file": "focus-height-16bit.png",
+    "hillshade_file": "focus-hillshade.png",
+    "hillshadePreviewStride": 6,
+    "meaning": "Ground terrain, not railhead or roof elevation. Encoding precision is not physical accuracy."
+  },
+  "fullTerrain": {
+    "sourceSha256": "e84378fad589914830ab14eb51f859cdce65ad0618df88017446e56691d76bfc",
+    "source": "data/terrain-dtm-10m.tif",
+    "sourceDataset": "Environment Agency 2022 LiDAR bare-earth DTM",
+    "licence": "Open Government Licence v3.0",
+    "attribution": "\u00a9 Environment Agency copyright and/or database right 2022. All rights reserved.",
+    "crs": "EPSG:27700",
+    "verticalDatum": "ODN metres",
+    "bounds_bng": [
+      382799.99999999994,
+      273800.0,
+      417999.9999999999,
+      290900.0
+    ],
+    "width": 3520,
+    "height": 1710,
+    "pixelSizeMetres": [
+      9.99999999999999,
+      10.0
+    ],
+    "affine": [
+      9.99999999999999,
+      0.0,
+      382799.99999999994,
+      0.0,
+      -10.0,
+      290900.0
+    ],
+    "heightEncoding": {
+      "format": "16-bit grayscale PNG",
+      "nodataValue": 0,
+      "offsetMetres": 26.0,
+      "scaleMetres": 0.01,
+      "decode": "height_odn_m = offsetMetres + (pixelValue - 1) * scaleMetres; value 0 is nodata",
+      "maximumEncodingErrorMetres": 0.005
+    },
+    "sourceMinimumMetres": 26.615949630737305,
+    "sourceMaximumMetres": 315.4252624511719,
+    "validSourcePixels": 6019200,
+    "height_file": "full-route-height-16bit.png",
+    "hillshade_file": "full-route-hillshade.png",
+    "hillshadePreviewStride": 2,
+    "meaning": "Ground terrain, not railhead or roof elevation. Encoding precision is not physical accuracy."
+  },
+  "activeStationCount": 10,
+  "detailSheets": [
+    "dorridge-topology.svg",
+    "moor-street-snow-hill-topology.svg",
+    "snow-hill-tunnel-profile.svg",
+    "dorridge-snow-hill-civils.svg"
+  ],
+  "sourceDates": [
+    "2026-10-31T14:55:50Z",
+    "2026-10-31T14:56:51Z",
+    "2026-10-31T14:58:58Z",
+    "2026-10-31T15:00:01Z",
+    "2026-10-31T15:02:06Z",
+    "2026-10-31T15:05:06Z",
+    "2026-10-31T15:09:06Z",
+    "2026-10-31T15:10:06Z",
+    "2026-10-31T15:28:36Z"
+  ],
+  "interpretation": "Derived source/model references, not independent survey verification. Raw rail source polyline is orange; rendered centreline is green."
+}

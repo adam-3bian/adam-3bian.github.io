@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Worcester Shrub Hill to Dorridge — Google Earth station reference</name>
+    <description>Station-location reference for railway route building. This file has accurately georeferenced station pins from published OS National Grid references, NOT an accurate track centreline. Open in Google Earth and turn on satellite imagery. Check acquisition dates; rail infrastructure can change. Sources: railwaydata.co.uk/stations/overview/ and abcrailwayguide.uk for Olton. Maps and imagery are owned by their respective providers. Reuse governed by their licences.</description>
+    <Style id="railStation">
+      <IconStyle>
+        <color>ff167cff</color>
+        <scale>1.0</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/paddle/red-circle.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="branchStation">
+      <IconStyle>
+        <color>ffcc7700</color>
+        <scale>0.9</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/paddle/blu-circle.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>01 · Main railway Worcester → Dorridge (station pins only)</name>
+      <open>1</open>
+      <Placemark>
+        <name>01. Worcester Shrub Hill (WOS)</name>
+        <styleUrl>#railStation</styleUrl>
+        <description>Worcester Shrub Hill railway station (WOS). Published OS grid: E 385805, N 255190. WGS84: 52.194761, -2.209086. For satellite imagery use Google Earth with Satellite layer, or Google Maps: https://www.google.com/maps/@52.194761,-2.209086,450m/data=!3m1!1e3 . Location pins only; NOT a track survey or route alignment.</description>
+        <ExtendedData>
+          <Data name="CRS">
+            <value>WOS</value>
+          </Data>
+          <Data name="OS_easting">
+            <value>385805</value>
+          </Data>
+          <Data name="OS_northing">
+            <value>255190</value>
+          </Data>
+          <Data name="Latitude">
+            <value>52.1947610</value>
+          </Data>
+          <Data name="Longitude">
+            <value>-2.2090860</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>-2.20908603,52.19476099,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>02. Droitwich Spa (DTW)</name>
+        <styleUrl>#railStation</styleUrl>
+        <description>Droitwich Spa railway station (DTW). Published OS grid: E 389287, N 263363. WGS84: 52.268318, -2.158407. For satellite imagery use Google Earth with Satellite layer, or Google Maps: https://www.google.com/maps/@52.268318,-2.158407,450m/data=!3m1!1e3 . Location pins only; NOT a track survey or route alignment.</description>
+        <ExtendedData>
+          <Data name="CRS">
+            <value>DTW</value>
+          </Data>
+          <Data name="OS_easting">
+            <value>389287</value>
+          </Data>
+          <Data name="OS_northing">
+            <value>263363</value>
+          </Data>
+          <Data name="Latitude">
+            <value>52.2683181</value>
+          </Data>
+          <Data name="Longitude">
+            <value>-2.1584075</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>-2.15840748,52.26831812,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>03. Hartlebury (HBY)</name>
+        <styleUrl>#railStation</styleUrl>
+        <description>Hartlebury railway station (HBY). Published OS grid: E 385031, N 270725. WGS84: 52.334403, -2.221104. For satellite imagery use Google Earth with Satellite layer, or Google Maps: https://www.google.com/maps/@52.334403,-2.221104,450m/data=!3m1!1e3 . Location pins only; NOT a track survey or route alignment.</description>
+        <ExtendedData>
+          <Data name="CRS">
+            <value>HBY</value>
+          </Data>
+          <Data name="OS_easting">
+            <value>385031</value>
+          </Data>
+          <Data name="OS_northing">
+            <value>270725</value>
+          </Data>
+          <Data name="Latitude">
+            <value>52.3344034</value>
+          </Data>
+          <Data name="Longitude">
+            <value>-2.2211037</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>-2.22110374,52.33440344,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>04. Kidderminster (KID)</name>
+        <styleUrl>#railStation</styleUrl>
+        <description>Kidderminster railway station (KID). Published OS grid: E 383870, N 276299. WGS84: 52.384481, -2.238412. For satellite imagery use Google Earth with Satellite layer, or Google Maps: https://www.google.com/maps/@52.384481,-2.238412,450m/data=!3m1!1e3 . Location pins only; NOT a track survey or route alignment.</description>
+        <ExtendedData>
+          <Data name="CRS">
+            <value>KID</value>
+          </Data>
+          <Data name="OS_easting">
+            <value>383870</value>
+          </Data>
+          <Data name="OS_northing">
+            <value>276299</value>
+          </Data>
+          <Data name="Latitude">
+            <value>52.3844809</value>
+          </Data>
+          <Data name="Longitude">
+            <value>-2.2384119</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>-2.23841192,52.38448091,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>05. Blakedown (BKD)</name>
+        <styleUrl>#railStation</styleUrl>
+        <description>Blakedown railway station (BKD). Published OS grid: E 388068, N 278732. WGS84: 52.406462, -2.176821. For satellite imagery use Google Earth with Satellite layer, or Google Maps: https://www.google.com/maps/@52.406462,-2.176821,450m/data=!3m1!1e3 . Location pins only; NOT a track survey or route alignment.</description>
+        <ExtendedData>
+          <Data name="CRS">
+            <value>BKD</value>
+          </Data>
+          <Data name="OS_easting">
+            <value>388068</value>
+          </Data>
+          <Data name="OS_northing">
+            <value>278732</value>
+          </Data>
+          <Data name="Latitude">
+            <value>52.4064621</value>
+          </Data>
+          <Data name="Longitude">
+            <value>-2.1768215</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>-2.17682149,52.40646213,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>06. Hagley (HAG)</name>
+        <styleUrl>#railStation</styleUrl>
+        <description>Hagley railway station (HAG). Published OS grid: E 390137, N 280509. WGS84: 52.422479, -2.146461. For satellite imagery use Google Earth with Satellite layer, or Google Maps: https://www.google.com/maps/@52.422479,-2.146461,450m/data=!3m1!1e3 . Location pins only; NOT a track survey or route alignment.</description>
+        <ExtendedData>
+          <Data name="CRS">
+            <value>HAG</value>
+          </Data>
+          <Data name="OS_easting">
+            <value>390137</value>
+          </Data>
+          <Data name="OS_northing">
+            <value>280509</value>
+          </Data>
+          <Data name="Latitude">
+            <value>52.4224790</value>
+          </Data>
+          <Data name="Longitude">
+            <value>-2.1464611</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>-2.14646113,52.42247905,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>07. Stourbridge Junction (SBJ)</name>
+        <styleUrl>#railStation</styleUrl>
+        <description>Stourbridge Junction railway station (SBJ). Published OS grid: E 390986, N 283295. WGS84: 52.447540, -2.134053. For satellite imagery use Google Earth with Satellite layer, or Google Maps: https://www.google.com/maps/@52.447540,-2.134053,450m/data=!3m1!1e3 . Location pins only; NOT a track survey or route alignment.</description>
+        <ExtendedData>
+          <Data name="CRS">
+            <value>SBJ</value>
+          </Data>
+          <Data name="OS_easting">
+            <value>390986</value>
+          </Data>
+          <Data name="OS_northing">
+            <value>283295</value>
+          </Data>
+          <Data name="Latitude">
+            <value>52.4475400</value>
+          </Data>
+          <Data name="Longitude">
+            <value>-2.1340528</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>-2.13405281,52.44754002,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>08. Lye (LYE)</name>
+        <styleUrl>#railStation</styleUrl>
+        <description>Lye railway station (LYE). Published OS grid: E 392220, N 284674. WGS84: 52.459956, -2.115929. For satellite imagery use Google Earth with Satellite layer, or Google Maps: https://www.google.com/maps/@52.459956,-2.115929,450m/data=!3m1!1e3 . Location pins only; NOT a track survey or route alignment.</description>
+        <ExtendedData>
+          <Data name="CRS">
+            <value>LYE</value>
+          </Data>
+          <Data name="OS_easting">
+            <value>392220</value>
+          </Data>
+          <Data name="OS_northing">
+            <value>284674</value>
+          </Data>
+          <Data name="Latitude">
+            <value>52.4599564</value>
+          </Data>
+          <Data name="Longitude">
+            <value>-2.1159293</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>-2.11592929,52.45995643,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>09. Cradley Heath (CRA)</name>
+        <styleUrl>#railStation</styleUrl>
+        <description>Cradley Heath railway station (CRA). Published OS grid: E 393928, N 285728. WGS84: 52.469454, -2.090812. For satellite imagery use Google Earth with Satellite layer, or Google Maps: https://www.google.com/maps/@52.469454,-2.090812,450m/data=!3m1!1e3 . Location pins only; NOT a track survey or route alignment.</description>
+        <ExtendedData>
+          <Data name="CRS">
+            <value>CRA</value>
+          </Data>
+          <Data name="OS_easting">
+            <value>393928</value>
+          </Data>
+          <Data name="OS_northing">
+            <value>285728</value>
+          </Data>
+          <Data name="Latitude">
+            <value>52.4694539</value>
+          </Data>
+          <Data name="Longitude">
+            <value>-2.0908115</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>-2.09081154,52.46945388,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>10. Old Hill (OHL)</name>
+        <styleUrl>#railStation</styleUrl>
+        <description>Old Hill railway station (OHL). Published OS grid: E 396278, N 285878. WGS84: 52.470824, -2.056220. For satellite imagery use Google Earth with Satellite layer, or Google Maps: https://www.google.com/maps/@52.470824,-2.056220,450m/data=!3m1!1e3 . Location pins only; NOT a track survey or route alignment.</description>
+        <ExtendedData>
+          <Data name="CRS">
+            <value>OHL</value>
+          </Data>
+          <Data name="OS_easting">
+            <value>396278</value>
+          </Data>
+          <Data name="OS_northing">
+            <value>285878</value>
+          </Data>
+          <Data name="Latitude">
+            <value>52.4708239</value>
+          </Data>
+          <Data name="Longitude">
+            <value>-2.0562199</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>-2.05621993,52.47082395,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>11. Rowley Regis (ROW)</name>
+        <styleUrl>#railStation</styleUrl>
+        <description>Rowley Regis railway station (ROW). Published OS grid: E 398002, N 286609. WGS84: 52.477405, -2.030845. For satellite imagery use Google Earth with Satellite layer, or Google Maps: https://www.google.com/maps/@52.477405,-2.030845,450m/data=!3m1!1e3 . Location pins only; NOT a track survey or route alignment.</description>
+        <ExtendedData>
+          <Data name="CRS">
+            <value>ROW</value>
+          </Data>
+          <Data name="OS_easting">
+            <value>398002</value>
+          </Data>
+          <Data name="OS_northing">
+            <value>286609</value>
+          </Data>
+          <Data name="Latitude">
+            <value>52.4774050</value>
+          </Data>
+          <Data name="Longitude">
+            <value>-2.0308455</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>-2.03084550,52.47740501,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>12. Langley Green (LGG)</name>
+        <styleUrl>#railStation</styleUrl>
+        <description>Langley Green railway station (LGG). Published OS grid: E 399732, N 288404. WGS84: 52.493546, -2.005376. For satellite imagery use Google Earth with Satellite layer, or Google Maps: https://www.google.com/maps/@52.493546,-2.005376,450m/data=!3m1!1e3 . Location pins only; NOT a track survey or route alignment.</description>
+        <ExtendedData>
+          <Data name="CRS">
+            <value>LGG</value>
+          </Data>
+          <Data name="OS_easting">
+            <value>399732</value>
+          </Data>
+          <Data name="OS_northing">
+            <value>288404</value>
+          </Data>
+          <Data name="Latitude">
+            <value>52.4935459</value>
+          </Data>
+          <Data name="Longitude">
+            <value>-2.0053764</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>-2.00537637,52.49354592,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>13. Smethwick Galton Bridge (SGB)</name>
+        <styleUrl>#railStation</styleUrl>
+        <description>Smethwick Galton Bridge railway station (SGB). Published OS grid: E 401412, N 289372. WGS84: 52.502247, -1.980629. For satellite imagery use Google Earth with Satellite layer, or Google Maps: https://www.google.com/maps/@52.502247,-1.980629,450m/data=!3m1!1e3 . Location pins only; NOT a track survey or route alignment.</description>
+        <ExtendedData>
+          <Data name="CRS">
+            <value>SGB</value>
+          </Data>
+          <Data name="OS_easting">
+            <value>401412</value>
+          </Data>
+          <Data name="OS_northing">
+            <value>289372</value>
+          </Data>
+          <Data name="Latitude">
+            <value>52.5022468</value>
+          </Data>
+          <Data name="Longitude">
+            <value>-1.9806285</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>-1.98062851,52.50224677,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>14. The Hawthorns (THW)</name>
+        <styleUrl>#railStation</styleUrl>
+        <description>The Hawthorns railway station (THW). Published OS grid: E 402510, N 289737. WGS84: 52.505524, -1.964451. For satellite imagery use Google Earth with Satellite layer, or Google Maps: https://www.google.com/maps/@52.505524,-1.964451,450m/data=!3m1!1e3 . Location pins only; NOT a track survey or route alignment.</description>
+        <ExtendedData>
+          <Data name="CRS">
+            <value>THW</value>
+          </Data>
+          <Data name="OS_easting">
+            <value>402510</value>
+          </Data>
+          <Data name="OS_northing">
+            <value>289737</value>
+          </Data>
+          <Data name="Latitude">
+            <value>52.5055244</value>
+          </Data>
+          <Data name="Longitude">
+            <value>-1.9644507</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>-1.96445067,52.50552437,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>15. Jewellery Quarter (JEQ)</name>
+        <styleUrl>#railStation</styleUrl>
+        <description>Jewellery Quarter railway station (JEQ). Published OS grid: E 405932, N 287987. WGS84: 52.489766, -1.914066. For satellite imagery use Google Earth with Satellite layer, or Google Maps: https://www.google.com/maps/@52.489766,-1.914066,450m/data=!3m1!1e3 . Location pins only; NOT a track survey or route alignment.</description>
+        <ExtendedData>
+          <Data name="CRS">
+            <value>JEQ</value>
+          </Data>
+          <Data name="OS_easting">
+            <value>405932</value>
+          </Data>
+          <Data name="OS_northing">
+            <value>287987</value>
+          </Data>
+          <Data name="Latitude">
+            <value>52.4897662</value>
+          </Data>
+          <Data name="Longitude">
+            <value>-1.9140662</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>-1.91406625,52.48976624,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>16. Birmingham Snow Hill (BSW)</name>
+        <styleUrl>#railStation</styleUrl>
+        <description>Birmingham Snow Hill railway station (BSW). Published OS grid: E 406880, N 287364. WGS84: 52.484155, -1.900117. For satellite imagery use Google Earth with Satellite layer, or Google Maps: https://www.google.com/maps/@52.484155,-1.900117,450m/data=!3m1!1e3 . Location pins only; NOT a track survey or route alignment.</description>
+        <ExtendedData>
+          <Data name="CRS">
+            <value>BSW</value>
+          </Data>
+          <Data name="OS_easting">
+            <value>406880</value>
+          </Data>
+          <Data name="OS_northing">
+            <value>287364</value>
+          </Data>
+          <Data name="Latitude">
+            <value>52.4841546</value>
+          </Data>
+          <Data name="Longitude">
+            <value>-1.9001174</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>-1.90011738,52.48415458,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>17. Birmingham Moor Street (BMO)</name>
+        <styleUrl>#railStation</styleUrl>
+        <description>Birmingham Moor Street railway station (BMO). Published OS grid: E 407449, N 286764. WGS84: 52.478753, -1.891752. For satellite imagery use Google Earth with Satellite layer, or Google Maps: https://www.google.com/maps/@52.478753,-1.891752,450m/data=!3m1!1e3 . Location pins only; NOT a track survey or route alignment.</description>
+        <ExtendedData>
+          <Data name="CRS">
+            <value>BMO</value>
+          </Data>
+          <Data name="OS_easting">
+            <value>407449</value>
+          </Data>
+          <Data name="OS_northing">
+            <value>286764</value>
+          </Data>
+          <Data name="Latitude">
+            <value>52.4787533</value>
+          </Data>
+          <Data name="Longitude">
+            <value>-1.8917518</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>-1.89175180,52.47875326,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>18. Bordesley (BBS)</name>
+        <styleUrl>#railStation</styleUrl>
+        <description>Bordesley railway station (BBS). Published OS grid: E 408420, N 286028. WGS84: 52.472123, -1.877473. For satellite imagery use Google Earth with Satellite layer, or Google Maps: https://www.google.com/maps/@52.472123,-1.877473,450m/data=!3m1!1e3 . Location pins only; NOT a track survey or route alignment.</description>
+        <ExtendedData>
+          <Data name="CRS">
+            <value>BBS</value>
+          </Data>
+          <Data name="OS_easting">
+            <value>408420</value>
+          </Data>
+          <Data name="OS_northing">
+            <value>286028</value>
+          </Data>
+          <Data name="Latitude">
+            <value>52.4721228</value>
+          </Data>
+          <Data name="Longitude">
+            <value>-1.8774735</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>-1.87747348,52.47212275,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>19. Small Heath (SMA)</name>
+        <styleUrl>#railStation</styleUrl>
+        <description>Small Heath railway station (SMA). Published OS grid: E 409673, N 285073. WGS84: 52.463517, -1.859055. For satellite imagery use Google Earth with Satellite layer, or Google Maps: https://www.google.com/maps/@52.463517,-1.859055,450m/data=!3m1!1e3 . Location pins only; NOT a track survey or route alignment.</description>
+        <ExtendedData>
+          <Data name="CRS">
+            <value>SMA</value>
+          </Data>
+          <Data name="OS_easting">
+            <value>409673</value>
+          </Data>
+          <Data name="OS_northing">
+            <value>285073</value>
+          </Data>
+          <Data name="Latitude">
+            <value>52.4635169</value>
+          </Data>
+          <Data name="Longitude">
+            <value>-1.8590549</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>-1.85905491,52.46351685,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>20. Tyseley (TYS)</name>
+        <styleUrl>#railStation</styleUrl>
+        <description>Tyseley railway station (TYS). Published OS grid: E 411021, N 284040. WGS84: 52.454205, -1.839248. For satellite imagery use Google Earth with Satellite layer, or Google Maps: https://www.google.com/maps/@52.454205,-1.839248,450m/data=!3m1!1e3 . Location pins only; NOT a track survey or route alignment.</description>
+        <ExtendedData>
+          <Data name="CRS">
+            <value>TYS</value>
+          </Data>
+          <Data name="OS_easting">
+            <value>411021</value>
+          </Data>
+          <Data name="OS_northing">
+            <value>284040</value>
+          </Data>
+          <Data name="Latitude">
+            <value>52.4542050</value>
+          </Data>
+          <Data name="Longitude">
+            <value>-1.8392481</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>-1.83924808,52.45420497,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>21. Acocks Green (ACG)</name>
+        <styleUrl>#railStation</styleUrl>
+        <description>Acocks Green railway station (ACG). Published OS grid: E 412406, N 283514. WGS84: 52.449447, -1.818887. For satellite imagery use Google Earth with Satellite layer, or Google Maps: https://www.google.com/maps/@52.449447,-1.818887,450m/data=!3m1!1e3 . Location pins only; NOT a track survey or route alignment.</description>
+        <ExtendedData>
+          <Data name="CRS">
+            <value>ACG</value>
+          </Data>
+          <Data name="OS_easting">
+            <value>412406</value>
+          </Data>
+          <Data name="OS_northing">
+            <value>283514</value>
+          </Data>
+          <Data name="Latitude">
+            <value>52.4494468</value>
+          </Data>
+          <Data name="Longitude">
+            <value>-1.8188866</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>-1.81888659,52.44944684,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>22. Olton (OLT)</name>
+        <styleUrl>#railStation</styleUrl>
+        <description>Olton railway station (OLT). Published OS grid: E 413398, N 282301. WGS84: 52.438519, -1.804339. For satellite imagery use Google Earth with Satellite layer, or Google Maps: https://www.google.com/maps/@52.438519,-1.804339,450m/data=!3m1!1e3 . Location pins only; NOT a track survey or route alignment.</description>
+        <ExtendedData>
+          <Data name="CRS">
+            <value>OLT</value>
+          </Data>
+          <Data name="OS_easting">
+            <value>413398</value>
+          </Data>
+          <Data name="OS_northing">
+            <value>282301</value>
+          </Data>
+          <Data name="Latitude">
+            <value>52.4385188</value>
+          </Data>
+          <Data name="Longitude">
+            <value>-1.8043387</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>-1.80433872,52.43851880,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>23. Solihull (SOL)</name>
+        <styleUrl>#railStation</styleUrl>
+        <description>Solihull railway station (SOL). Published OS grid: E 414490, N 279620. WGS84: 52.414389, -1.788391. For satellite imagery use Google Earth with Satellite layer, or Google Maps: https://www.google.com/maps/@52.414389,-1.788391,450m/data=!3m1!1e3 . Location pins only; NOT a track survey or route alignment.</description>
+        <ExtendedData>
+          <Data name="CRS">
+            <value>SOL</value>
+          </Data>
+          <Data name="OS_easting">
+            <value>414490</value>
+          </Data>
+          <Data name="OS_northing">
+            <value>279620</value>
+          </Data>
+          <Data name="Latitude">
+            <value>52.4143890</value>
+          </Data>
+          <Data name="Longitude">
+            <value>-1.7883905</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>-1.78839052,52.41438904,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>24. Widney Manor (WMR)</name>
+        <styleUrl>#railStation</styleUrl>
+        <description>Widney Manor railway station (WMR). Published OS grid: E 415461, N 277577. WGS84: 52.395996, -1.774208. For satellite imagery use Google Earth with Satellite layer, or Google Maps: https://www.google.com/maps/@52.395996,-1.774208,450m/data=!3m1!1e3 . Location pins only; NOT a track survey or route alignment.</description>
+        <ExtendedData>
+          <Data name="CRS">
+            <value>WMR</value>
+          </Data>
+          <Data name="OS_easting">
+            <value>415461</value>
+          </Data>
+          <Data name="OS_northing">
+            <value>277577</value>
+          </Data>
+          <Data name="Latitude">
+            <value>52.3959961</value>
+          </Data>
+          <Data name="Longitude">
+            <value>-1.7742084</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>-1.77420843,52.39599609,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>25. Dorridge (DDG)</name>
+        <styleUrl>#railStation</styleUrl>
+        <description>Dorridge railway station (DDG). Published OS grid: E 416913, N 274920. WGS84: 52.372067, -1.753003. For satellite imagery use Google Earth with Satellite layer, or Google Maps: https://www.google.com/maps/@52.372067,-1.753003,450m/data=!3m1!1e3 . Location pins only; NOT a track survey or route alignment.</description>
+        <ExtendedData>
+          <Data name="CRS">
+            <value>DDG</value>
+          </Data>
+          <Data name="OS_easting">
+            <value>416913</value>
+          </Data>
+          <Data name="OS_northing">
+            <value>274920</value>
+          </Data>
+          <Data name="Latitude">
+            <value>52.3720670</value>
+          </Data>
+          <Data name="Longitude">
+            <value>-1.7530030</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>-1.75300304,52.37206697,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>02 · Reference branches (optional scenery)</name>
+      <open>1</open>
+      <Placemark>
+        <name>01. Worcester Foregate Street (WOF)</name>
+        <styleUrl>#branchStation</styleUrl>
+        <description>Worcester Foregate Street railway station (WOF). Published OS grid: E 384992, N 255249. WGS84: 52.195270, -2.220982. For satellite imagery use Google Earth with Satellite layer, or Google Maps: https://www.google.com/maps/@52.195270,-2.220982,450m/data=!3m1!1e3 . Location pins only; NOT a track survey or route alignment.</description>
+        <ExtendedData>
+          <Data name="CRS">
+            <value>WOF</value>
+          </Data>
+          <Data name="OS_easting">
+            <value>384992</value>
+          </Data>
+          <Data name="OS_northing">
+            <value>255249</value>
+          </Data>
+          <Data name="Latitude">
+            <value>52.1952697</value>
+          </Data>
+          <Data name="Longitude">
+            <value>-2.2209825</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>-2.22098250,52.19526972,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>02. Stourbridge Town (SBT)</name>
+        <styleUrl>#branchStation</styleUrl>
+        <description>Stourbridge Town railway station (SBT). Published OS grid: E 390456, N 284195. WGS84: 52.455622, -2.141877. For satellite imagery use Google Earth with Satellite layer, or Google Maps: https://www.google.com/maps/@52.455622,-2.141877,450m/data=!3m1!1e3 . Location pins only; NOT a track survey or route alignment.</description>
+        <ExtendedData>
+          <Data name="CRS">
+            <value>SBT</value>
+          </Data>
+          <Data name="OS_easting">
+            <value>390456</value>
+          </Data>
+          <Data name="OS_northing">
+            <value>284195</value>
+          </Data>
+          <Data name="Latitude">
+            <value>52.4556219</value>
+          </Data>
+          <Data name="Longitude">
+            <value>-2.1418769</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>-2.14187686,52.45562189,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <LookAt>
+      <longitude>-1.994</longitude>
+      <latitude>52.47</latitude>
+      <altitude>0</altitude>
+      <range>65000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+      <altitudeMode>relativeToGround</altitudeMode>
+    </LookAt>
+  </Document>
+</kml>

@@ -1,0 +1,44 @@
+{
+  "sourceSha256": "321e94f74fad42643d9075785a4a4f9bd3e2441e64754347158330604b515571",
+  "source": "data/active-dtm-1m.tif",
+  "sourceDataset": "Environment Agency 2022 LiDAR bare-earth DTM",
+  "licence": "Open Government Licence v3.0",
+  "attribution": "\u00a9 Environment Agency copyright and/or database right 2022. All rights reserved.",
+  "crs": "EPSG:27700",
+  "verticalDatum": "ODN metres",
+  "bounds_bng": [
+    406369.0,
+    274538.0,
+    417263.0,
+    287863.0
+  ],
+  "width": 10894,
+  "height": 13325,
+  "pixelSizeMetres": [
+    1.0,
+    1.0
+  ],
+  "affine": [
+    1.0,
+    0.0,
+    406369.0,
+    0.0,
+    -1.0,
+    287863.0
+  ],
+  "heightEncoding": {
+    "format": "16-bit grayscale PNG",
+    "nodataValue": 0,
+    "offsetMetres": 52.0,
+    "scaleMetres": 0.01,
+    "decode": "height_odn_m = offsetMetres + (pixelValue - 1) * scaleMetres; value 0 is nodata",
+    "maximumEncodingErrorMetres": 0.005
+  },
+  "sourceMinimumMetres": 52.71200180053711,
+  "sourceMaximumMetres": 141.11399841308594,
+  "validSourcePixels": 12276004,
+  "height_file": "focus-height-16bit.png",
+  "hillshade_file": "focus-hillshade.png",
+  "hillshadePreviewStride": 6,
+  "meaning": "Ground terrain, not railhead or roof elevation. Encoding precision is not physical accuracy."
+}
