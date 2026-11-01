@@ -1,0 +1,103 @@
+{
+  "adapter": "headless Chromium SwiftShader software WebGL2; not hardware performance evidence",
+  "checks": {
+    "ready": {
+      "stats": {
+        "backend": "WebGL2",
+        "adapter": "WebKit WebGL",
+        "tiles": 5,
+        "triangles": 1336084,
+        "placements": 520,
+        "gpuErrors": [],
+        "drawCalls": 552,
+        "memory": {
+          "geometries": 12,
+          "textures": 3
+        }
+      },
+      "roads": 5971,
+      "cars": 1038
+    },
+    "workerBeforeCrash": {
+      "tiles": 5,
+      "replaced": true
+    },
+    "workerRecovered": {
+      "tiles": 7,
+      "trafficUnchanged": true
+    },
+    "noRenderTrafficAdvance": {
+      "changed": 1038,
+      "roads": 5971,
+      "cars": 1038
+    },
+    "saved": {
+      "worldHash": "8b970ae0ba7c8c6e18baa28c5761803b2fffbabfe63f21c3979d239a954da7da",
+      "cars": 1038,
+      "version": 2,
+      "staticRoadsIncluded": false,
+      "clock": 29521.99999999997,
+      "first": {
+        "id": "car-way/10056507/0-1",
+        "road": "way/10056507/0",
+        "s": 48.742366477042786,
+        "direction": 1,
+        "speed": 2.1999999999999997,
+        "kind": "car",
+        "position": [
+          13417.52822151257,
+          117.58843937886598,
+          -2576.383104836721
+        ],
+        "yaw": -0.5187392891290339,
+        "pitch": -0.009965518073272946,
+        "bank": 0.010937500000000001,
+        "length": 4.5
+      }
+    },
+    "resumed": {
+      "cars": 1038,
+      "clock": 29522.98333333329,
+      "first": {
+        "id": "car-way/10056507/0-1",
+        "road": "way/10056507/0",
+        "s": 51.35486647704279,
+        "direction": 1,
+        "speed": 3.2450000000000028,
+        "kind": "car",
+        "position": [
+          13418.811172316064,
+          117.56106955820582,
+          -2578.661338924904
+        ],
+        "yaw": -0.5202867603242369,
+        "pitch": -0.010032196724878855,
+        "bank": 0.010937500000000001,
+        "length": 4.5
+      }
+    },
+    "oldSaveRejection": "This save belongs to another route version. Start a new journey."
+  },
+  "errors": [],
+  "sourceHashes": {
+    "scripts/traffic-browser-qa.py": "3d4b64c909b2dee0e53b9d3ddc9bcd83a2122426861c59b760170bf0106ccb4d",
+    "src/core/simulation.ts": "eb502976663f5128bae7dc37104be8aa54317704958788be6557c0de182c0180",
+    "src/world/traffic.ts": "5683669aa142d602ed2f717e690a85218d50b94af688ceffecb91b33250477a4",
+    "src/world/surfaces.ts": "40c5d6892078d720da0c35148fb0596c2144778a1b3452300c10f21fa5b7aeea",
+    "src/render/renderer.ts": "25fb9968941b2ccaa0d5f3ebc0d25fd8cb84854d7af430c1971a96adfcac48ff",
+    "src/world/world.worker.ts": "0a22909d922e6b26b27dcfff7a1d382e42a0eb2edc894225be750020ab6124e8",
+    "src/main.ts": "93014effa6e9671a196b568f249f177c0a651b9d86c8d1bfc2c1f545c53dd848"
+  },
+  "qaAssetHashes": {
+    "work/qa-dist/assets/app-BeLpMKq7.css": "d45ecabc8ed680f63a364cefa4d37f1e76d1758e75839e0619aa61e49bbdbec4",
+    "work/qa-dist/assets/libre-caslon-display-latin-n_DgBRfq.woff2": "84267e937417f10dff37df818c5ef7f1e9f2e6a703e03c2dd286d3320af53269",
+    "work/qa-dist/assets/libre-caslon-display-latin-ext-CUYASYSA.woff2": "7a17a86fb7c3cd003bf073f0455f49c746424b37f3e1a931663eae80288a1e89",
+    "work/qa-dist/assets/app-DNGbA02m.js": "0585ccd5b944f752761370f567591cfc7f26a93ea1843f039f853e89b8dd8911",
+    "work/qa-dist/assets/world.worker-nfkkaEag.js": "b69d5401f9110aa02adbbcd561304269ca6b431d5ca30f721e3cd027a344800a",
+    "work/qa-dist/assets/dm-sans-latin-ext-BOFOeGcA.woff2": "a5d38fe99f930275684999b462c7123faa063d9e44e73b4b241723d884aa0f49",
+    "work/qa-dist/assets/dm-sans-latin-Xz1IZZA0.woff2": "9fea608a947e67020c33cad9a6fe3d60c54119dfb8cff87768a8117a15ed7543"
+  },
+  "productionManifestSHA256": "64a46b2914c4115499ea4d9ab1b2c5828470eed6f7823bbccb9e78fe2285c41b",
+  "browser": "151.0.7922.173",
+  "passed": true
+}

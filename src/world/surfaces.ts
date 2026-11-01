@@ -48,6 +48,23 @@ export function engineerRoad(feature:Feature,route:RouteGeometry):RoadSurface|nu
   road.path=new Polyline(points);return road;
 }
 
+
+/** The same engineered road profile is used by world meshes and road traffic.
+ * Source-way civil relations override the generic crossing inference. */
+export function engineerSurfaceRoad(feature:Feature,route:RouteGeometry,terrain:Terrain):RoadSurface|null {
+  const road=engineerRoad(feature,route);if(!road||road.sourceStructure)return road;
+  const way=/way\/(\d+)/.exec(road.id)?.[1];
+  const civil=route.data.structures.find(s=>way&&((s.sourceWayIds as string[]|undefined)||[]).includes(way)&&['roadBridge','footbridge'].includes(s.type));
+  if(!civil)return road;
+  const hit=road.path.nearest(civil.position[0],civil.position[2]);if(hit.distance>20)return road;
+  const near=route.project(civil.position[0],civil.position[2],100),rail=route.sample(near.s).position[1];
+  const target=Math.max(civil.position[1],near.distance<25?rail+6.3:terrain.raw(civil.position[0],civil.position[2])+2.0),radius=Math.max(65,civil.length??20);
+  road.mode='over';road.crossingS=hit.s;road.routeS=near.s;road.inferred=true;
+  const before=road.path;
+  road.points=road.points.map((q,i)=>{const d=Math.abs(before.lengths[i]-hit.s),blend=1-clamp((d-(civil.length??20)/2)/radius,0,1);return[q[0],q[1]+Math.max(0,target-q[1])*blend,q[2]] as V3;});road.path=new Polyline(road.points);
+  return road;
+}
+
 export class SurfaceField {
   readonly roadBuckets=new Map<string,{road:RoadSurface;i:number}[]>();
   constructor(readonly route:RouteGeometry,readonly terrain:Terrain,readonly roads:RoadSurface[]) {

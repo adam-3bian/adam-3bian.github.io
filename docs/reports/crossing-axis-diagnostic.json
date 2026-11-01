@@ -1,0 +1,74 @@
+{
+  "generatedAt": "2026-11-01T15:59:46.808Z",
+  "sourceHashes": {
+    "scripts/audit-crossing-orientation.ts": "b313e7a5319cab36698cbda6055f0bac9f4f94132f5f4283ee8767f573ce6fff",
+    "src/render/assets.ts": "9b9174898cee1216f729ac14d7350413ccb6f2a9f446df470508e77cd61d05d8"
+  },
+  "fixture": "Perpendicular two-track crossing, track local Z, hypothetical road local X, fully closed barriers. This is a factory geometry test, not a measurement or surveyed binding of a real crossing.",
+  "barriers": [
+    {
+      "index": 0,
+      "closedAxis": [
+        1,
+        0,
+        0
+      ],
+      "absoluteDotWithRoadDirection": 1,
+      "passesAcrossRoad": false
+    },
+    {
+      "index": 1,
+      "closedAxis": [
+        -1,
+        0,
+        -1.4680635036365704e-16
+      ],
+      "absoluteDotWithRoadDirection": 1,
+      "passesAcrossRoad": false
+    }
+  ],
+  "heads": [
+    {
+      "index": 0,
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "absoluteDotWithRoadDirection": 0,
+      "facesRoadApproach": false
+    },
+    {
+      "index": 1,
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "absoluteDotWithRoadDirection": 0,
+      "facesRoadApproach": false
+    },
+    {
+      "index": 2,
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "absoluteDotWithRoadDirection": 0,
+      "facesRoadApproach": false
+    },
+    {
+      "index": 3,
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "absoluteDotWithRoadDirection": 0,
+      "facesRoadApproach": false
+    }
+  ],
+  "failed": true,
+  "status": "OPEN: shared factory barrier/head axes do not fit this perpendicular road fixture"
+}

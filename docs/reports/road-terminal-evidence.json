@@ -1,0 +1,32 @@
+{
+  "retrievedUTC": "2026-11-01T15:55:01.045111+00:00",
+  "url": "https://api.openstreetmap.org/api/0.6/node/100036572/ways.json",
+  "responsePath": "docs/sources/road-node-100036572.json",
+  "sha256": "e62dbde9ac657514a0ca1dbd7534f7f7c52f57027f433dac94fd6c4d361f8112",
+  "nodeId": 100036572,
+  "ways": [
+    {
+      "id": 4700964,
+      "version": 25,
+      "timestamp": "2023-05-30T18:41:24Z",
+      "name": "Lyndon Road",
+      "highway": "tertiary"
+    },
+    {
+      "id": 11265124,
+      "version": 15,
+      "timestamp": "2023-09-24T14:49:54Z",
+      "name": "Chapel Fields Road",
+      "highway": "residential"
+    },
+    {
+      "id": 38305433,
+      "version": 8,
+      "timestamp": "2023-09-24T14:48:26Z",
+      "name": "Lyndon Road",
+      "highway": "tertiary"
+    }
+  ],
+  "finding": "The source node has connecting mapped roads including Lyndon Road way/38305433, which is absent from the generated road manifest. This is one investigated terminal from the traffic diagnostic; it does not establish topology or level compatibility for other endpoints.",
+  "confidence": "current OSM node membership, not an independent 2026 survey; supplied SVG export date/version may differ"
+}

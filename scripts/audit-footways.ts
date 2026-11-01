@@ -1,20 +1,21 @@
 import {readFileSync,writeFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import {RouteGeometry} from '../src/core/geometry';
-import {engineerRoad} from '../src/world/surfaces';
+import {engineerSurfaceRoad,Terrain} from '../src/world/surfaces';
 import type {Feature,RouteData} from '../src/core/types';
 
 // Screens source-derived centreline crossings for review; this is not a
 // triangle intersection test or a complete inventory of footway structures.
-const sourcePaths=['public/data/route.json','public/data/road-surfaces.json','src/core/geometry.ts','src/world/surfaces.ts','scripts/audit-footways.ts'];
+const sourcePaths=['public/data/route.json','public/data/road-surfaces.json','public/data/terrain.bin','src/core/geometry.ts','src/world/surfaces.ts','scripts/audit-footways.ts'];
 const hashes=Object.fromEntries(sourcePaths.map(p=>[p,createHash('sha256').update(readFileSync(p)).digest('hex')]));
 const route=new RouteGeometry(JSON.parse(readFileSync(sourcePaths[0],'utf8')) as RouteData);
 const roads=JSON.parse(readFileSync(sourcePaths[1],'utf8')).roads as Feature[];
+const bytes=readFileSync('public/data/terrain.bin'),terrain=new Terrain(route.data.terrain,new Uint16Array(bytes.buffer.slice(bytes.byteOffset,bytes.byteOffset+bytes.byteLength)));
 const candidates:{id:string;segment:number;lane:number;s:number;pathHeight:number;railHeight:number;difference:number;classification:string}[]=[];
 let segments=0;
 for(const feature of roads){
   if(!['footway','path','steps','pedestrian','cycleway'].includes(String(feature.kind)))continue;
-  const road=engineerRoad(feature,route);if(!road||road.mode!=='ground')continue;
+  const road=engineerSurfaceRoad(feature,route,terrain);if(!road||road.mode!=='ground')continue;
   for(let i=1;i<road.points.length;i++){
     const a=road.points[i-1],b=road.points[i],pa=route.project(a[0],a[2],40),pb=route.project(b[0],b[2],40);
     segments++;if(pa.distance>40||pb.distance>40||Math.abs(pa.s-pb.s)>30||Math.abs(pa.side-pb.side)<.1)continue;

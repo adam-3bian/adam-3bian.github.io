@@ -1,6 +1,6 @@
 {
-  "generatedUTC": "2026-11-01T14:49:26.524130+00:00",
-  "manifestSHA256": "1e2b27c0d015981e9ad90e32165f134d754150a4b58adaf572d4378e416c1192",
+  "generatedUTC": "2026-11-01T15:49:59.294543+00:00",
+  "manifestSHA256": "64a46b2914c4115499ea4d9ab1b2c5828470eed6f7823bbccb9e78fe2285c41b",
   "scriptSHA256": "6ed75836a38fda67ebe68d2ba15e6581efcbb742ed45077ed49dc79e8e9f6bfe",
   "scope": "HTTP retrieval and hashes only; not a browser or external-request isolation test",
   "results": {

@@ -1,5 +1,7 @@
 import {RouteGeometry,clamp,mps,mph,hash} from './geometry';
-import type {Aspect,Direction,Station} from './types';
+import type {Aspect,Direction,Station,Feature} from './types';
+import {RoadTraffic,isMotorRoad} from '../world/traffic';
+import {Terrain,engineerSurfaceRoad,type RoadSurface} from '../world/surfaces';
 import {deriveTrackwork,type SwitchAssetDefinition} from '../render/trackwork';
 
 export interface InputState {a:boolean;d:boolean;horn:boolean}
@@ -11,7 +13,7 @@ export interface Signal {id:string;s:number;direction:Direction;lane:number;aspe
 export interface Point {id:string;s:number;lane?:number;state:'normal'|'reverse'|'moving';target:'normal'|'reverse';blend:number;lockedBy:string|null}
 export interface Crossing {id:string;s:number;state:'open'|'warning'|'closing'|'closed'|'opening';blend:number;timer:number;held:boolean}
 export interface Event {time:number;type:string;message:string}
-export interface Snapshot {version:2;worldHash:string;routeFingerprint:string;routeLength:number;clock:number;player:Train;ai:Train[];points:Point[];crossings:Crossing[];aws:AWS;tpws:TPWS;calls:string[];stats:Stats;timeScale:number;roadTraffic?:unknown}
+export interface Snapshot {version:2;worldHash:string;routeFingerprint:string;routeLength:number;clock:number;player:Train;ai:Train[];points:Point[];crossings:Crossing[];aws:AWS;tpws:TPWS;calls:string[];stats:Stats;timeScale:number;roadTraffic?:unknown;roadAccumulator?:number}
 interface AWS {pending:boolean;deadline:number;indicator:boolean;brake:boolean;lastSignal:string;acknowledged:number}
 interface TPWS {active:boolean;reason:string;stoppedAt:number;ossEntries?:Record<string,{time:number;direction:Direction;lane:number}>;tssEntries?:Record<string,{time:number;direction:Direction;lane:number}>}
 interface Stats {spads:number;aiSpads:number;collisions:number;stops:number;awsMissed:number;tpwsInterventions:number;distance:number}
@@ -23,7 +25,9 @@ export class RailwaySimulation {
   tpws:TPWS={active:false,reason:'',stoppedAt:-1,ossEntries:{},tssEntries:{}};
   stats:Stats={spads:0,aiSpads:0,collisions:0,stops:0,awsMissed:0,tpwsInterventions:0,distance:0};
   sound?: (name:string)=>void;onEvent?: (event:Event)=>void;
-  roadCrossingClear?: (s:number)=>boolean;
+  readonly roadTraffic=new RoadTraffic();
+  private roadAccumulator=0;
+  roadCrossingClear?: (s:number)=>boolean = s=>this.roadTraffic.crossingClear(s);
   private signalGroups = new Map<Direction,Signal[]>();
   private signalIndex = new Map<string,number>();
   readonly trackwork:{switches:SwitchAssetDefinition[];gaps:string[]};
@@ -48,9 +52,22 @@ export class RailwaySimulation {
     for(const c of (route.data.crossings as {id:string;s:number}[])||[])this.crossings.push({id:c.id,s:route.sourceS(c.s),state:'open',blend:0,timer:0,held:false});
     this.start(1,0);
   }
+  /** Prepare the operating graph independently of rendering and tile arrival. */
+  configureRoadNetwork(features:Feature[],terrain:Terrain) {
+    const candidates=features.filter(f=>isMotorRoad({id:f.id,kind:String(f.kind||'residential'),width:Number(f.width)||5.6,points:f.points||[]}));
+    const roads=candidates.map(f=>engineerSurfaceRoad(f,this.route,terrain)).filter((r):r is RoadSurface=>!!r);
+    this.roadTraffic.configure(roads);this.roadAccumulator=0;
+  }
+  private advanceRoadTraffic(dt:number){
+    this.roadAccumulator+=dt;
+    while(this.roadAccumulator+1e-9>=.05){
+      this.roadAccumulator=Math.max(0,this.roadAccumulator-.05);
+      this.roadTraffic.update(.05,this.clock-this.roadAccumulator,this.crossings);
+    }
+  }
   log(type:string,message:string) {const event={time:this.clock,type,message};this.events.push(event);if(this.events.length>200)this.events.shift();this.onEvent?.(event);}
   start(direction:Direction,index=direction===1?0:this.route.stations.length-1) {
-    this.clock=8*3600+12*60;
+    this.clock=8*3600+12*60;this.roadAccumulator=0;this.roadTraffic.reset();
     const station=this.route.stations[index];this.player={id:'player',s:clamp(station.s+direction*34,4,this.route.length-4),speed:0,direction,lane:direction===1?4.2:0,length:70.3,cars:3,kind:'172',nextStop:index+direction,dwell:0,doors:false,controller:-1,arrived:false};
     this.calls=[];this.aws={pending:false,deadline:0,indicator:false,brake:false,lastSignal:'',acknowledged:0};this.tpws={active:false,reason:'',stoppedAt:-1,ossEntries:{},tssEntries:{}};this.ai=[];this.elapsed=0;this.events=[];
     this.stats={spads:0,aiSpads:0,collisions:0,stops:0,awsMissed:0,tpwsInterventions:0,distance:0};
@@ -123,6 +140,7 @@ export class RailwaySimulation {
       if(!held&&c.state==='closed'){c.timer+=dt;if(c.timer>5)c.state='opening';}else if(held&&c.state==='closed')c.timer=0;
       if(c.state==='opening'){c.blend=clamp(c.blend-dt/3,0,1);if(c.blend===0)c.state='open';}
     }
+    this.advanceRoadTraffic(dt);
     const old=p.s;
     if(p.doors){p.dwell-=dt;if(p.dwell<=0){p.doors=false;this.sound?.('doors');this.log('station','Doors closed. Ready to depart.');}}
     if(this.aws.pending&&this.clock>this.aws.deadline){this.aws.pending=false;this.aws.brake=true;this.stats.awsMissed++;this.sound?.('tpws');this.log('aws','AWS missed. Brake demand. Stop and acknowledge.');}
@@ -174,8 +192,8 @@ export class RailwaySimulation {
     if(t.s>this.route.length+200||t.s< -200){t.portalWaitUntil=this.clock+45;t.speed=0;}
   }
   checkCollisions() {const all=this.allTrains();for(let i=0;i<all.length;i++)for(let j=i+1;j<all.length;j++){const a=all[i],b=all[j];if(Math.abs(a.lane-b.lane)>1)continue;const [a0,a1]=this.interval(a),[b0,b1]=this.interval(b);if(Math.min(a1,b1)-Math.max(a0,b0)>2){a.speed=0;b.speed=0;this.stats.collisions++;this.paused=true;this.log('collision',`Movement stopped: conflicting occupation ${a.id}/${b.id}.`);return;}}}
-  snapshot():Snapshot {return JSON.parse(JSON.stringify({version:2,worldHash:String(this.route.data.worldHash||this.route.fingerprint),routeFingerprint:this.route.fingerprint,routeLength:this.route.length,clock:this.clock,player:this.player,ai:this.ai,points:this.points,crossings:this.crossings,aws:this.aws,tpws:this.tpws,calls:this.calls,stats:this.stats,timeScale:this.timeScale}));}
-  restore(s:Snapshot) {if(s.version!==2||s.worldHash!==String(this.route.data.worldHash||this.route.fingerprint)||s.routeFingerprint!==this.route.fingerprint||Math.abs(s.routeLength-this.route.length)>1)throw new Error('This save belongs to another route version. Start a new journey.');this.clock=s.clock;this.player=s.player;this.ai=s.ai;this.points=s.points;this.crossings=s.crossings;this.aws=s.aws;this.tpws=s.tpws;this.calls=s.calls;this.stats=s.stats;this.timeScale=s.timeScale;this.paused=true;this.log('save','Journey restored, paused.');}
+  snapshot():Snapshot {return JSON.parse(JSON.stringify({version:2,worldHash:String(this.route.data.worldHash||this.route.fingerprint),routeFingerprint:this.route.fingerprint,routeLength:this.route.length,clock:this.clock,player:this.player,ai:this.ai,points:this.points,crossings:this.crossings,aws:this.aws,tpws:this.tpws,calls:this.calls,stats:this.stats,timeScale:this.timeScale,roadTraffic:this.roadTraffic.snapshotState(),roadAccumulator:this.roadAccumulator}));}
+  restore(s:Snapshot) {if(s.version!==2||s.worldHash!==String(this.route.data.worldHash||this.route.fingerprint)||s.routeFingerprint!==this.route.fingerprint||Math.abs(s.routeLength-this.route.length)>1)throw new Error('This save belongs to another route version. Start a new journey.');if(s.roadTraffic)this.roadTraffic.restoreState(s.roadTraffic);else if(this.roadTraffic.roads.size)throw new Error('This save has no compatible road traffic state. Start a new journey.');this.clock=s.clock;this.player=s.player;this.ai=s.ai;this.points=s.points;this.crossings=s.crossings;this.aws=s.aws;this.tpws=s.tpws;this.calls=s.calls;this.stats=s.stats;this.timeScale=s.timeScale;this.roadAccumulator=Number.isFinite(s.roadAccumulator)?Math.max(0,Math.min(.05,s.roadAccumulator!)):0;this.paused=true;this.log('save','Journey restored, paused.');}
   clockText() {return new Date(this.clock*1000).toISOString().slice(11,19);}
   get speedMph(){return mph(this.player.speed);}
 }

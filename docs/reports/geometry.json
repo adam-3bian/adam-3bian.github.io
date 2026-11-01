@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T14:47:40.136Z",
+  "generatedAt": "2026-11-01T16:01:59.992Z",
   "method": "CPU buildTile cooked geometry audit; emitted terrain triangles and actual derived platform/road top meshes, not initialized support-failure counters",
   "coverage": {
     "tilesAttempted": 121,
@@ -563,13 +563,13 @@
     "neighborSoilLocationsMeasured": 42522
   },
   "sourceSnapshot": {
-    "gitCommit": "6f05ad4417c274a254e0c64b60f3d24ea1213aa6",
+    "gitCommit": "9c5dd1a446618e72abc17ba793dc359735a1d8d4",
     "hashes": {
       "scripts/audit-geometry.ts": "6d028121d212cb99669efac3c8ea292fce68e1c4dae18cb9d38fd56417a6bfff",
       "scripts/build_route.py": "77c20dc43176015a6795e7cf7c224325cb53114d9ad9dec5cdea34fb6140f619",
-      "src/world/build.ts": "5ef830e080b91aadb8b64ca6f32984ec505dcddc5c8e55d2634124f57f26b98d",
+      "src/world/build.ts": "e8894497549b011ab49ffb87cb3381d7dea6cf0fdf728cdbfc61d5e65a366ddd",
       "src/world/platforms.ts": "6e29ec64f43365ab0b316330e043bed1ecd9a2584832b37e1f0ea69405f1febe",
-      "src/world/surfaces.ts": "77b02099f9c54d201e4d02f4c93a8b5406fe68272ae91b335398f69282340f82",
+      "src/world/surfaces.ts": "40c5d6892078d720da0c35148fb0596c2144778a1b3452300c10f21fa5b7aeea",
       "src/core/geometry.ts": "bdfb3e91bf21e6f43ddacb6c63b20be29f160bcd3b66bc788d98f304f29e9df7",
       "src/core/pose.ts": "8fbd9b47f081f2d9e6c6876d55ec0afe3344e571a2f56b8c5215c8e0189bac7b",
       "src/render/assets.ts": "9b9174898cee1216f729ac14d7350413ccb6f2a9f446df470508e77cd61d05d8",
@@ -767,8 +767,8 @@
   ],
   "mandatoryGeometryFailures": [],
   "measurements": {
-    "vertices": 115287613,
-    "triangles": 40675385,
+    "vertices": 115276153,
+    "triangles": 40671565,
     "terrainTriangles": 22222556,
     "degenerateTriangles": 10800,
     "nonFiniteValues": 0,
@@ -37368,7 +37368,7 @@
   },
   "placedAssetInventory": {
     "path": "docs/reports/placed-assets.json",
-    "sha256": "85c41b98e3ad3327a1a9435f66eff5106e5a76ee933e024b0d5f36059b48d5bb",
+    "sha256": "9baffdea346042feb0318da9c25bc5ad7da464e0b3acdecc958c5e94ac8075ba",
     "instances": 63549,
     "duplicateSourceInstanceIds": 0,
     "scope": "Every buildTile.placements record, supplemented by actual baked procedural tree roots. Terrain, road/track ribbon components and dynamic renderer assets are outside this inventory; component metadata remains in their generators."
@@ -37387,7 +37387,7 @@
       "placements": 1137,
       "bodyAssociations": 1003,
       "renderedPlinths": 1003,
-      "buildSeconds": 23.410294525999998,
+      "buildSeconds": 48.53518191,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37416,7 +37416,7 @@
       "placements": 684,
       "bodyAssociations": 583,
       "renderedPlinths": 583,
-      "buildSeconds": 12.917771167,
+      "buildSeconds": 13.116936984,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37445,7 +37445,7 @@
       "placements": 680,
       "bodyAssociations": 556,
       "renderedPlinths": 556,
-      "buildSeconds": 14.930417942,
+      "buildSeconds": 11.032346514999997,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37474,7 +37474,7 @@
       "placements": 211,
       "bodyAssociations": 144,
       "renderedPlinths": 144,
-      "buildSeconds": 9.507327121999996,
+      "buildSeconds": 3.354154920000001,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37503,7 +37503,7 @@
       "placements": 72,
       "bodyAssociations": 13,
       "renderedPlinths": 13,
-      "buildSeconds": 6.620482869999993,
+      "buildSeconds": 2.9863705429999974,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37532,7 +37532,7 @@
       "placements": 137,
       "bodyAssociations": 6,
       "renderedPlinths": 6,
-      "buildSeconds": 8.032324097999997,
+      "buildSeconds": 3.6871859519999997,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37561,7 +37561,7 @@
       "placements": 147,
       "bodyAssociations": 49,
       "renderedPlinths": 49,
-      "buildSeconds": 12.303097163999992,
+      "buildSeconds": 5.560815312000006,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37590,7 +37590,7 @@
       "placements": 280,
       "bodyAssociations": 142,
       "renderedPlinths": 142,
-      "buildSeconds": 14.384456346000006,
+      "buildSeconds": 10.990663612000004,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37619,7 +37619,7 @@
       "placements": 613,
       "bodyAssociations": 542,
       "renderedPlinths": 542,
-      "buildSeconds": 22.444543819,
+      "buildSeconds": 26.492240082000002,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37648,7 +37648,7 @@
       "placements": 1006,
       "bodyAssociations": 853,
       "renderedPlinths": 853,
-      "buildSeconds": 28.016316538000012,
+      "buildSeconds": 29.241995920000015,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37677,7 +37677,7 @@
       "placements": 750,
       "bodyAssociations": 607,
       "renderedPlinths": 607,
-      "buildSeconds": 18.37796053699998,
+      "buildSeconds": 24.671859005000005,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37706,7 +37706,7 @@
       "placements": 545,
       "bodyAssociations": 535,
       "renderedPlinths": 535,
-      "buildSeconds": 12.73772353799999,
+      "buildSeconds": 17.187654438999978,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37735,7 +37735,7 @@
       "placements": 682,
       "bodyAssociations": 542,
       "renderedPlinths": 542,
-      "buildSeconds": 22.752386270000017,
+      "buildSeconds": 15.850918869999994,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37764,7 +37764,7 @@
       "placements": 1133,
       "bodyAssociations": 984,
       "renderedPlinths": 984,
-      "buildSeconds": 32.396532359000005,
+      "buildSeconds": 10.339503631999978,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37793,7 +37793,7 @@
       "placements": 715,
       "bodyAssociations": 569,
       "renderedPlinths": 569,
-      "buildSeconds": 45.64516382399999,
+      "buildSeconds": 9.354133482000005,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37822,7 +37822,7 @@
       "placements": 816,
       "bodyAssociations": 761,
       "renderedPlinths": 761,
-      "buildSeconds": 15.389820902000007,
+      "buildSeconds": 6.739361421000009,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37851,7 +37851,7 @@
       "placements": 505,
       "bodyAssociations": 247,
       "renderedPlinths": 247,
-      "buildSeconds": 39.73648301999999,
+      "buildSeconds": 14.160924234000005,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37880,7 +37880,7 @@
       "placements": 806,
       "bodyAssociations": 805,
       "renderedPlinths": 805,
-      "buildSeconds": 7.590239991999988,
+      "buildSeconds": 3.169717798000027,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37901,15 +37901,15 @@
     {
       "id": "10_-5",
       "stationRegion": true,
-      "vertices": 2460090,
-      "triangles": 925614,
+      "vertices": 2459778,
+      "triangles": 925510,
       "terrainTriangles": 364548,
       "supportHaloTriangles": 66464,
       "uncoveredBuildingSupports": 0,
       "placements": 786,
       "bodyAssociations": 597,
       "renderedPlinths": 597,
-      "buildSeconds": 22.74293462699995,
+      "buildSeconds": 29.54476874800003,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37930,15 +37930,15 @@
     {
       "id": "11_-4",
       "stationRegion": true,
-      "vertices": 1995723,
-      "triangles": 730733,
+      "vertices": 1995465,
+      "triangles": 730647,
       "terrainTriangles": 284520,
       "supportHaloTriangles": 71287,
       "uncoveredBuildingSupports": 0,
       "placements": 1745,
       "bodyAssociations": 1609,
       "renderedPlinths": 1609,
-      "buildSeconds": 13.868454765999982,
+      "buildSeconds": 13.742187312999974,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37959,15 +37959,15 @@
     {
       "id": "11_-5",
       "stationRegion": true,
-      "vertices": 797018,
-      "triangles": 274224,
+      "vertices": 796778,
+      "triangles": 274144,
       "terrainTriangles": 188980,
       "supportHaloTriangles": 61755,
       "uncoveredBuildingSupports": 0,
       "placements": 365,
       "bodyAssociations": 312,
       "renderedPlinths": 312,
-      "buildSeconds": 4.8501809439999635,
+      "buildSeconds": 11.838925033000006,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37988,15 +37988,15 @@
     {
       "id": "12_-4",
       "stationRegion": true,
-      "vertices": 2655525,
-      "triangles": 984193,
+      "vertices": 2655267,
+      "triangles": 984107,
       "terrainTriangles": 384830,
       "supportHaloTriangles": 82488,
       "uncoveredBuildingSupports": 0,
       "placements": 2181,
       "bodyAssociations": 1982,
       "renderedPlinths": 1982,
-      "buildSeconds": 24.19569049400004,
+      "buildSeconds": 43.29483918900002,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38017,15 +38017,15 @@
     {
       "id": "13_-3",
       "stationRegion": true,
-      "vertices": 2034131,
-      "triangles": 733569,
+      "vertices": 2033891,
+      "triangles": 733489,
       "terrainTriangles": 330292,
       "supportHaloTriangles": 79390,
       "uncoveredBuildingSupports": 0,
       "placements": 1507,
       "bodyAssociations": 1272,
       "renderedPlinths": 1272,
-      "buildSeconds": 20.367054483000015,
+      "buildSeconds": 34.34613332700002,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38046,15 +38046,15 @@
     {
       "id": "14_0",
       "stationRegion": true,
-      "vertices": 2096749,
-      "triangles": 743695,
+      "vertices": 2096467,
+      "triangles": 743601,
       "terrainTriangles": 361574,
       "supportHaloTriangles": 52064,
       "uncoveredBuildingSupports": 0,
       "placements": 712,
       "bodyAssociations": 477,
       "renderedPlinths": 477,
-      "buildSeconds": 23.14482626599999,
+      "buildSeconds": 22.61355828300002,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38075,15 +38075,15 @@
     {
       "id": "15_2",
       "stationRegion": true,
-      "vertices": 1675226,
-      "triangles": 600696,
+      "vertices": 1674944,
+      "triangles": 600602,
       "terrainTriangles": 289862,
       "supportHaloTriangles": 45873,
       "uncoveredBuildingSupports": 0,
       "placements": 777,
       "bodyAssociations": 582,
       "renderedPlinths": 582,
-      "buildSeconds": 16.15104621999996,
+      "buildSeconds": 46.634782431000026,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38104,15 +38104,15 @@
     {
       "id": "16_4",
       "stationRegion": true,
-      "vertices": 2376533,
-      "triangles": 873443,
+      "vertices": 2376269,
+      "triangles": 873355,
       "terrainTriangles": 340702,
       "supportHaloTriangles": 48163,
       "uncoveredBuildingSupports": 0,
       "placements": 1590,
       "bodyAssociations": 1430,
       "renderedPlinths": 1430,
-      "buildSeconds": 12.503129709000001,
+      "buildSeconds": 29.076289614000007,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38141,7 +38141,7 @@
       "placements": 418,
       "bodyAssociations": 329,
       "renderedPlinths": 329,
-      "buildSeconds": 4.170220700000005,
+      "buildSeconds": 7.954651000000013,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38170,7 +38170,7 @@
       "placements": 166,
       "bodyAssociations": 166,
       "renderedPlinths": 166,
-      "buildSeconds": 1.973167489000014,
+      "buildSeconds": 2.974159694000031,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38199,7 +38199,7 @@
       "placements": 178,
       "bodyAssociations": 177,
       "renderedPlinths": 177,
-      "buildSeconds": 2.304522720000008,
+      "buildSeconds": 2.7314014949999983,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38228,7 +38228,7 @@
       "placements": 511,
       "bodyAssociations": 362,
       "renderedPlinths": 362,
-      "buildSeconds": 10.462585389000015,
+      "buildSeconds": 34.622518497000044,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38257,7 +38257,7 @@
       "placements": 363,
       "bodyAssociations": 343,
       "renderedPlinths": 343,
-      "buildSeconds": 6.7890073540000015,
+      "buildSeconds": 35.74311642400001,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38286,7 +38286,7 @@
       "placements": 583,
       "bodyAssociations": 432,
       "renderedPlinths": 432,
-      "buildSeconds": 11.449863487999945,
+      "buildSeconds": 29.049799056999966,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38307,15 +38307,15 @@
     {
       "id": "6_-8",
       "stationRegion": true,
-      "vertices": 2604157,
-      "triangles": 925993,
+      "vertices": 2603335,
+      "triangles": 925719,
       "terrainTriangles": 444296,
       "supportHaloTriangles": 96252,
       "uncoveredBuildingSupports": 0,
       "placements": 1070,
       "bodyAssociations": 765,
       "renderedPlinths": 765,
-      "buildSeconds": 17.698444496000068,
+      "buildSeconds": 53.16638338899997,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38344,7 +38344,7 @@
       "placements": 275,
       "bodyAssociations": 275,
       "renderedPlinths": 275,
-      "buildSeconds": 5.429167116000084,
+      "buildSeconds": 6.288412695000065,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38365,15 +38365,15 @@
     {
       "id": "7_-7",
       "stationRegion": true,
-      "vertices": 2218074,
-      "triangles": 789870,
+      "vertices": 2217348,
+      "triangles": 789628,
       "terrainTriangles": 397018,
       "supportHaloTriangles": 82397,
       "uncoveredBuildingSupports": 0,
       "placements": 738,
       "bodyAssociations": 397,
       "renderedPlinths": 397,
-      "buildSeconds": 14.792681515000062,
+      "buildSeconds": 14.3555568410001,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38394,15 +38394,15 @@
     {
       "id": "7_-8",
       "stationRegion": true,
-      "vertices": 1329912,
-      "triangles": 450624,
+      "vertices": 1327332,
+      "triangles": 449764,
       "terrainTriangles": 302848,
       "supportHaloTriangles": 65816,
       "uncoveredBuildingSupports": 0,
       "placements": 219,
       "bodyAssociations": 165,
       "renderedPlinths": 165,
-      "buildSeconds": 9.848490819999949,
+      "buildSeconds": 23.67538441399997,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38423,15 +38423,15 @@
     {
       "id": "8_-6",
       "stationRegion": true,
-      "vertices": 1832692,
-      "triangles": 650092,
+      "vertices": 1831396,
+      "triangles": 649660,
       "terrainTriangles": 362022,
       "supportHaloTriangles": 60369,
       "uncoveredBuildingSupports": 0,
       "placements": 778,
       "bodyAssociations": 650,
       "renderedPlinths": 650,
-      "buildSeconds": 9.93479170199996,
+      "buildSeconds": 44.318751404999986,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38452,15 +38452,15 @@
     {
       "id": "8_-7",
       "stationRegion": true,
-      "vertices": 1715868,
-      "triangles": 599916,
+      "vertices": 1714920,
+      "triangles": 599600,
       "terrainTriangles": 350888,
       "supportHaloTriangles": 62424,
       "uncoveredBuildingSupports": 0,
       "placements": 493,
       "bodyAssociations": 357,
       "renderedPlinths": 357,
-      "buildSeconds": 11.21467348899995,
+      "buildSeconds": 42.67787678200006,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38481,15 +38481,15 @@
     {
       "id": "9_-5",
       "stationRegion": true,
-      "vertices": 1087995,
-      "triangles": 375773,
+      "vertices": 1087905,
+      "triangles": 375743,
       "terrainTriangles": 226246,
       "supportHaloTriangles": 68308,
       "uncoveredBuildingSupports": 0,
       "placements": 1086,
       "bodyAssociations": 1048,
       "renderedPlinths": 1048,
-      "buildSeconds": 7.16531899900001,
+      "buildSeconds": 22.966680931000038,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38510,15 +38510,15 @@
     {
       "id": "9_-6",
       "stationRegion": true,
-      "vertices": 2118617,
-      "triangles": 773657,
+      "vertices": 2118029,
+      "triangles": 773461,
       "terrainTriangles": 360478,
       "supportHaloTriangles": 68219,
       "uncoveredBuildingSupports": 0,
       "placements": 681,
       "bodyAssociations": 488,
       "renderedPlinths": 488,
-      "buildSeconds": 10.424212913999916,
+      "buildSeconds": 28.100029276999994,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38547,7 +38547,7 @@
       "placements": 120,
       "bodyAssociations": 120,
       "renderedPlinths": 120,
-      "buildSeconds": 5.498921055999934,
+      "buildSeconds": 6.580598757999949,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38576,7 +38576,7 @@
       "placements": 28,
       "bodyAssociations": 28,
       "renderedPlinths": 28,
-      "buildSeconds": 0.7708238999999594,
+      "buildSeconds": 1.4823112770000006,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38605,7 +38605,7 @@
       "placements": 1141,
       "bodyAssociations": 1053,
       "renderedPlinths": 1053,
-      "buildSeconds": 12.453930664999993,
+      "buildSeconds": 15.085554205999943,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38634,7 +38634,7 @@
       "placements": 481,
       "bodyAssociations": 348,
       "renderedPlinths": 348,
-      "buildSeconds": 5.280032174999942,
+      "buildSeconds": 5.775601024000091,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38663,7 +38663,7 @@
       "placements": 945,
       "bodyAssociations": 799,
       "renderedPlinths": 799,
-      "buildSeconds": 7.3781295229999815,
+      "buildSeconds": 8.397451992999995,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38692,7 +38692,7 @@
       "placements": 319,
       "bodyAssociations": 318,
       "renderedPlinths": 318,
-      "buildSeconds": 3.0523137989999958,
+      "buildSeconds": 4.3631205840000185,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38721,7 +38721,7 @@
       "placements": 131,
       "bodyAssociations": 131,
       "renderedPlinths": 131,
-      "buildSeconds": 1.3212742050000235,
+      "buildSeconds": 2.4981295789999423,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38750,7 +38750,7 @@
       "placements": 4,
       "bodyAssociations": 4,
       "renderedPlinths": 4,
-      "buildSeconds": 0.8757534180000657,
+      "buildSeconds": 1.0094732510000468,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38779,7 +38779,7 @@
       "placements": 0,
       "bodyAssociations": 0,
       "renderedPlinths": 0,
-      "buildSeconds": 0.5452981990000698,
+      "buildSeconds": 0.8064185999999754,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38808,7 +38808,7 @@
       "placements": 357,
       "bodyAssociations": 265,
       "renderedPlinths": 265,
-      "buildSeconds": 4.80814867200004,
+      "buildSeconds": 6.977535065000062,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38837,7 +38837,7 @@
       "placements": 0,
       "bodyAssociations": 0,
       "renderedPlinths": 0,
-      "buildSeconds": 0.3383904989999719,
+      "buildSeconds": 0.5073047789999983,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38866,7 +38866,7 @@
       "placements": 134,
       "bodyAssociations": 9,
       "renderedPlinths": 9,
-      "buildSeconds": 3.150545090000029,
+      "buildSeconds": 2.7905917690000495,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38895,7 +38895,7 @@
       "placements": 0,
       "bodyAssociations": 0,
       "renderedPlinths": 0,
-      "buildSeconds": 0.6584865369999315,
+      "buildSeconds": 0.38156835800001865,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38924,7 +38924,7 @@
       "placements": 9,
       "bodyAssociations": 9,
       "renderedPlinths": 9,
-      "buildSeconds": 0.9562626069999532,
+      "buildSeconds": 0.9873511799999979,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38953,7 +38953,7 @@
       "placements": 45,
       "bodyAssociations": 0,
       "renderedPlinths": 0,
-      "buildSeconds": 1.9753704240000807,
+      "buildSeconds": 2.221140203000046,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38982,7 +38982,7 @@
       "placements": 0,
       "bodyAssociations": 0,
       "renderedPlinths": 0,
-      "buildSeconds": 1.1015282409999054,
+      "buildSeconds": 1.0802320659999969,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39011,7 +39011,7 @@
       "placements": 144,
       "bodyAssociations": 0,
       "renderedPlinths": 0,
-      "buildSeconds": 3.843460759000038,
+      "buildSeconds": 2.911500115000061,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39040,7 +39040,7 @@
       "placements": 0,
       "bodyAssociations": 0,
       "renderedPlinths": 0,
-      "buildSeconds": 0.44371582099993245,
+      "buildSeconds": 0.5803309920000611,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39069,7 +39069,7 @@
       "placements": 132,
       "bodyAssociations": 0,
       "renderedPlinths": 0,
-      "buildSeconds": 2.8718476769999834,
+      "buildSeconds": 3.3439228170000717,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39098,7 +39098,7 @@
       "placements": 8,
       "bodyAssociations": 7,
       "renderedPlinths": 7,
-      "buildSeconds": 1.571072218999965,
+      "buildSeconds": 1.120745171000017,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39127,7 +39127,7 @@
       "placements": 86,
       "bodyAssociations": 32,
       "renderedPlinths": 32,
-      "buildSeconds": 3.9170525110000742,
+      "buildSeconds": 4.262116889000056,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39156,7 +39156,7 @@
       "placements": 0,
       "bodyAssociations": 0,
       "renderedPlinths": 0,
-      "buildSeconds": 1.0796142919999547,
+      "buildSeconds": 0.9440117529999698,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39185,7 +39185,7 @@
       "placements": 65,
       "bodyAssociations": 65,
       "renderedPlinths": 65,
-      "buildSeconds": 1.3228566029999638,
+      "buildSeconds": 1.2087783380000618,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39214,7 +39214,7 @@
       "placements": 28,
       "bodyAssociations": 22,
       "renderedPlinths": 22,
-      "buildSeconds": 3.01068303700001,
+      "buildSeconds": 2.7267146080000093,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39243,7 +39243,7 @@
       "placements": 25,
       "bodyAssociations": 25,
       "renderedPlinths": 25,
-      "buildSeconds": 0.9054818150000646,
+      "buildSeconds": 0.753857815999887,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39272,7 +39272,7 @@
       "placements": 879,
       "bodyAssociations": 765,
       "renderedPlinths": 765,
-      "buildSeconds": 13.793516298000002,
+      "buildSeconds": 16.845527581000002,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39301,7 +39301,7 @@
       "placements": 38,
       "bodyAssociations": 38,
       "renderedPlinths": 38,
-      "buildSeconds": 1.6593706249999813,
+      "buildSeconds": 4.090084310999955,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39330,7 +39330,7 @@
       "placements": 472,
       "bodyAssociations": 471,
       "renderedPlinths": 471,
-      "buildSeconds": 4.37280463499995,
+      "buildSeconds": 5.270754789000028,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39359,7 +39359,7 @@
       "placements": 103,
       "bodyAssociations": 103,
       "renderedPlinths": 103,
-      "buildSeconds": 1.5138101059999316,
+      "buildSeconds": 1.3819445750000887,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39388,7 +39388,7 @@
       "placements": 833,
       "bodyAssociations": 700,
       "renderedPlinths": 700,
-      "buildSeconds": 7.95894257100008,
+      "buildSeconds": 7.929343267000047,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39417,7 +39417,7 @@
       "placements": 489,
       "bodyAssociations": 489,
       "renderedPlinths": 489,
-      "buildSeconds": 4.924966679000063,
+      "buildSeconds": 4.497680345000001,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39446,7 +39446,7 @@
       "placements": 327,
       "bodyAssociations": 325,
       "renderedPlinths": 325,
-      "buildSeconds": 4.485585853999947,
+      "buildSeconds": 3.669119488999946,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39475,7 +39475,7 @@
       "placements": 249,
       "bodyAssociations": 215,
       "renderedPlinths": 215,
-      "buildSeconds": 4.591236098999972,
+      "buildSeconds": 4.237079820000101,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39504,7 +39504,7 @@
       "placements": 105,
       "bodyAssociations": 105,
       "renderedPlinths": 105,
-      "buildSeconds": 1.9093704999999608,
+      "buildSeconds": 2.106544537000009,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39533,7 +39533,7 @@
       "placements": 0,
       "bodyAssociations": 0,
       "renderedPlinths": 0,
-      "buildSeconds": 0.5424164950000122,
+      "buildSeconds": 0.4298749550000066,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39562,7 +39562,7 @@
       "placements": 238,
       "bodyAssociations": 238,
       "renderedPlinths": 238,
-      "buildSeconds": 3.7187314029999543,
+      "buildSeconds": 2.9044698429999407,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39591,7 +39591,7 @@
       "placements": 19,
       "bodyAssociations": 19,
       "renderedPlinths": 19,
-      "buildSeconds": 1.0314403370000655,
+      "buildSeconds": 0.7884816080000019,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39620,7 +39620,7 @@
       "placements": 406,
       "bodyAssociations": 406,
       "renderedPlinths": 406,
-      "buildSeconds": 3.9171908879999537,
+      "buildSeconds": 3.618090101000038,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39649,7 +39649,7 @@
       "placements": 905,
       "bodyAssociations": 741,
       "renderedPlinths": 741,
-      "buildSeconds": 9.544040586999968,
+      "buildSeconds": 8.314313781999983,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39678,7 +39678,7 @@
       "placements": 61,
       "bodyAssociations": 61,
       "renderedPlinths": 61,
-      "buildSeconds": 1.4451998570000286,
+      "buildSeconds": 1.0135467840000056,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39707,7 +39707,7 @@
       "placements": 578,
       "bodyAssociations": 444,
       "renderedPlinths": 444,
-      "buildSeconds": 12.80391549299995,
+      "buildSeconds": 12.820136025000014,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39736,7 +39736,7 @@
       "placements": 36,
       "bodyAssociations": 36,
       "renderedPlinths": 36,
-      "buildSeconds": 0.916861140999943,
+      "buildSeconds": 1.1798352019999874,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39765,7 +39765,7 @@
       "placements": 406,
       "bodyAssociations": 383,
       "renderedPlinths": 383,
-      "buildSeconds": 6.25820006599999,
+      "buildSeconds": 5.734233849000069,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39794,7 +39794,7 @@
       "placements": 24,
       "bodyAssociations": 24,
       "renderedPlinths": 24,
-      "buildSeconds": 2.980200034000096,
+      "buildSeconds": 2.3725161559999686,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39823,7 +39823,7 @@
       "placements": 83,
       "bodyAssociations": 72,
       "renderedPlinths": 72,
-      "buildSeconds": 3.3518264640000415,
+      "buildSeconds": 2.366775755999959,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39852,7 +39852,7 @@
       "placements": 289,
       "bodyAssociations": 289,
       "renderedPlinths": 289,
-      "buildSeconds": 2.074269675999996,
+      "buildSeconds": 2.2947329199999804,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39881,7 +39881,7 @@
       "placements": 22,
       "bodyAssociations": 22,
       "renderedPlinths": 22,
-      "buildSeconds": 0.7623620220000157,
+      "buildSeconds": 0.843555151999928,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39910,7 +39910,7 @@
       "placements": 848,
       "bodyAssociations": 839,
       "renderedPlinths": 839,
-      "buildSeconds": 4.789459319000016,
+      "buildSeconds": 4.4891037200000135,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39939,7 +39939,7 @@
       "placements": 370,
       "bodyAssociations": 370,
       "renderedPlinths": 370,
-      "buildSeconds": 2.50001837299997,
+      "buildSeconds": 2.353827042000019,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39960,15 +39960,15 @@
     {
       "id": "13_-1",
       "stationRegion": false,
-      "vertices": 1549042,
-      "triangles": 566778,
+      "vertices": 1548778,
+      "triangles": 566690,
       "terrainTriangles": 238714,
       "supportHaloTriangles": 33071,
       "uncoveredBuildingSupports": 0,
       "placements": 1003,
       "bodyAssociations": 886,
       "renderedPlinths": 886,
-      "buildSeconds": 5.51581108600006,
+      "buildSeconds": 5.856603079000022,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39989,15 +39989,15 @@
     {
       "id": "13_-2",
       "stationRegion": false,
-      "vertices": 1738837,
-      "triangles": 621225,
+      "vertices": 1738435,
+      "triangles": 621091,
       "terrainTriangles": 290446,
       "supportHaloTriangles": 63980,
       "uncoveredBuildingSupports": 0,
       "placements": 1208,
       "bodyAssociations": 1069,
       "renderedPlinths": 1069,
-      "buildSeconds": 7.340015530999983,
+      "buildSeconds": 7.301057686999906,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40018,15 +40018,15 @@
     {
       "id": "13_-4",
       "stationRegion": false,
-      "vertices": 629166,
-      "triangles": 212910,
+      "vertices": 629028,
+      "triangles": 212864,
       "terrainTriangles": 148802,
       "supportHaloTriangles": 47836,
       "uncoveredBuildingSupports": 0,
       "placements": 760,
       "bodyAssociations": 758,
       "renderedPlinths": 758,
-      "buildSeconds": 3.2888854740000095,
+      "buildSeconds": 3.2454345549999273,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40055,7 +40055,7 @@
       "placements": 159,
       "bodyAssociations": 159,
       "renderedPlinths": 159,
-      "buildSeconds": 1.3899075960000045,
+      "buildSeconds": 1.1339320379998534,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40084,7 +40084,7 @@
       "placements": 516,
       "bodyAssociations": 491,
       "renderedPlinths": 491,
-      "buildSeconds": 2.66416070899996,
+      "buildSeconds": 2.710119398999959,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40113,7 +40113,7 @@
       "placements": 230,
       "bodyAssociations": 230,
       "renderedPlinths": 230,
-      "buildSeconds": 1.7482580090000992,
+      "buildSeconds": 1.7622746449999978,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40142,7 +40142,7 @@
       "placements": 31,
       "bodyAssociations": 31,
       "renderedPlinths": 31,
-      "buildSeconds": 0.7888962409999222,
+      "buildSeconds": 0.8408486819998361,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40171,7 +40171,7 @@
       "placements": 509,
       "bodyAssociations": 504,
       "renderedPlinths": 504,
-      "buildSeconds": 4.3411815219999985,
+      "buildSeconds": 4.251216847999952,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40200,7 +40200,7 @@
       "placements": 172,
       "bodyAssociations": 172,
       "renderedPlinths": 172,
-      "buildSeconds": 1.759278940999997,
+      "buildSeconds": 1.847019677999895,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40229,7 +40229,7 @@
       "placements": 0,
       "bodyAssociations": 0,
       "renderedPlinths": 0,
-      "buildSeconds": 0.38667746100004297,
+      "buildSeconds": 0.3831889880001545,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40258,7 +40258,7 @@
       "placements": 238,
       "bodyAssociations": 237,
       "renderedPlinths": 237,
-      "buildSeconds": 4.340802841000026,
+      "buildSeconds": 4.419232444999972,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40287,7 +40287,7 @@
       "placements": 680,
       "bodyAssociations": 545,
       "renderedPlinths": 545,
-      "buildSeconds": 6.528652693999931,
+      "buildSeconds": 6.035811723000137,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40316,7 +40316,7 @@
       "placements": 131,
       "bodyAssociations": 23,
       "renderedPlinths": 23,
-      "buildSeconds": 3.1081119770000223,
+      "buildSeconds": 2.8791395279997958,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40345,7 +40345,7 @@
       "placements": 4,
       "bodyAssociations": 4,
       "renderedPlinths": 4,
-      "buildSeconds": 1.0358898099999643,
+      "buildSeconds": 0.9288727269999217,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40374,7 +40374,7 @@
       "placements": 0,
       "bodyAssociations": 0,
       "renderedPlinths": 0,
-      "buildSeconds": 0.4919035979999462,
+      "buildSeconds": 0.5143782749997917,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40403,7 +40403,7 @@
       "placements": 2,
       "bodyAssociations": 1,
       "renderedPlinths": 1,
-      "buildSeconds": 0.85954912900005,
+      "buildSeconds": 0.8017255159998312,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40432,7 +40432,7 @@
       "placements": 388,
       "bodyAssociations": 346,
       "renderedPlinths": 346,
-      "buildSeconds": 3.2127387390000512,
+      "buildSeconds": 3.68159630500013,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40461,7 +40461,7 @@
       "placements": 44,
       "bodyAssociations": 43,
       "renderedPlinths": 43,
-      "buildSeconds": 3.2773319070000433,
+      "buildSeconds": 3.2567071920000017,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40490,7 +40490,7 @@
       "placements": 2,
       "bodyAssociations": 2,
       "renderedPlinths": 2,
-      "buildSeconds": 0.8043707339999965,
+      "buildSeconds": 1.023727208000142,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40519,7 +40519,7 @@
       "placements": 541,
       "bodyAssociations": 393,
       "renderedPlinths": 393,
-      "buildSeconds": 9.255392206000048,
+      "buildSeconds": 10.810082854999928,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40548,7 +40548,7 @@
       "placements": 6,
       "bodyAssociations": 6,
       "renderedPlinths": 6,
-      "buildSeconds": 1.0883559990000213,
+      "buildSeconds": 1.1189446539999917,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40577,7 +40577,7 @@
       "placements": 43,
       "bodyAssociations": 43,
       "renderedPlinths": 43,
-      "buildSeconds": 2.4681682719999225,
+      "buildSeconds": 3.2127851300002077,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40606,7 +40606,7 @@
       "placements": 1096,
       "bodyAssociations": 1064,
       "renderedPlinths": 1064,
-      "buildSeconds": 5.200957253,
+      "buildSeconds": 4.85281575700012,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40635,7 +40635,7 @@
       "placements": 0,
       "bodyAssociations": 0,
       "renderedPlinths": 0,
-      "buildSeconds": 0.6515238090000348,
+      "buildSeconds": 0.5940477979998104,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40664,7 +40664,7 @@
       "placements": 658,
       "bodyAssociations": 535,
       "renderedPlinths": 535,
-      "buildSeconds": 8.334457000000054,
+      "buildSeconds": 15.083128982000053,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40693,7 +40693,7 @@
       "placements": 96,
       "bodyAssociations": 95,
       "renderedPlinths": 95,
-      "buildSeconds": 1.7929224530000938,
+      "buildSeconds": 5.178565356000094,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40714,15 +40714,15 @@
     {
       "id": "6_-7",
       "stationRegion": false,
-      "vertices": 686152,
-      "triangles": 230836,
+      "vertices": 684682,
+      "triangles": 230346,
       "terrainTriangles": 164400,
       "supportHaloTriangles": 62485,
       "uncoveredBuildingSupports": 0,
       "placements": 183,
       "bodyAssociations": 141,
       "renderedPlinths": 141,
-      "buildSeconds": 5.221978206999949,
+      "buildSeconds": 18.13145051799994,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40751,7 +40751,7 @@
       "placements": 43,
       "bodyAssociations": 42,
       "renderedPlinths": 42,
-      "buildSeconds": 1.6709854640000268,
+      "buildSeconds": 5.540011713000014,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40780,7 +40780,7 @@
       "placements": 1,
       "bodyAssociations": 1,
       "renderedPlinths": 1,
-      "buildSeconds": 0.6710444799999241,
+      "buildSeconds": 2.65526856700005,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40809,7 +40809,7 @@
       "placements": 62,
       "bodyAssociations": 62,
       "renderedPlinths": 62,
-      "buildSeconds": 0.9075008430000162,
+      "buildSeconds": 2.7445718079998622,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40838,7 +40838,7 @@
       "placements": 3,
       "bodyAssociations": 0,
       "renderedPlinths": 0,
-      "buildSeconds": 0.6981802690000041,
+      "buildSeconds": 1.6942877730000765,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40867,7 +40867,7 @@
       "placements": 21,
       "bodyAssociations": 21,
       "renderedPlinths": 21,
-      "buildSeconds": 1.0369071929999627,
+      "buildSeconds": 2.5950661859998947,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40886,7 +40886,7 @@
       }
     }
   ],
-  "wallSeconds": 887.545022748,
+  "wallSeconds": 1167.9733689040002,
   "unverified": [
     "Independent real-world control-point/height survey",
     "Continuous swept-volume intersections against every asset; samples are finite",

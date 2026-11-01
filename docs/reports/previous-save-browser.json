@@ -1,0 +1,19 @@
+{
+  "method": "Real previous committed production build creates save; current production build served at same static origin; headless SwiftShader",
+  "previousCommit": "9c5dd1a446618e72abc17ba793dc359735a1d8d4",
+  "previousManifestSHA256": "1e2b27c0d015981e9ad90e32165f134d754150a4b58adaf572d4378e416c1192",
+  "currentManifestSHA256": "64a46b2914c4115499ea4d9ab1b2c5828470eed6f7823bbccb9e78fe2285c41b",
+  "scriptSHA256": "d389f80737a52c6a9fcbb334e9609aea5fb893ba08e139165521286b8a12e9c6",
+  "checks": {
+    "realPreviousSave": {
+      "worldHash": "989d7fb12e8be65cd86777c07ee04ca536985df5169ed062819647b6b19d8631",
+      "roads": 299,
+      "cars": 70
+    },
+    "rejectedWithMessage": "This save belongs to another route version. Start a new journey.",
+    "previousSavePreserved": true
+  },
+  "errors": [],
+  "browser": "151.0.7922.173",
+  "passed": true
+}

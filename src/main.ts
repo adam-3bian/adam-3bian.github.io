@@ -1,5 +1,6 @@
 import './style.css';
-import type {RouteData,Direction} from './core/types';
+import type {RouteData,Direction,Feature} from './core/types';
+import {Terrain} from './world/surfaces';
 import {RouteGeometry,clamp} from './core/geometry';
 import {RailwaySimulation,type InputState,type Snapshot} from './core/simulation';
 import {RailwayRenderer} from './render/renderer';
@@ -61,7 +62,7 @@ function notify(text:string,important=false){$('notice').textContent=text;$('not
 function clearInputs(){input.a=false;input.d=false;input.horn=false;}
 function pause(){if(!started||!sim)return;sim.paused=true;clearInputs();visible('pause-panel',true);audio.update(sim,false);save(false);}
 function resume(){if(!loaded||!sim)return;sim.paused=false;visible('pause-panel',false);audio.init();last=performance.now();accumulator=0;}
-async function save(notice=true){if(!sim||!started)return false;try{const snapshot=sim.snapshot();snapshot.roadTraffic=view.roadTraffic.snapshot();await journeySaves.put(snapshot);saveErrorReported=false;if(notice)notify(`Journey saved at ${sim.clockText()}.`);return true;}catch{if(notice||!saveErrorReported)notify('This browser could not store the journey.');saveErrorReported=true;return false;}}
+async function save(notice=true){if(!sim||!started)return false;try{const snapshot=sim.snapshot();await journeySaves.put(snapshot);saveErrorReported=false;if(notice)notify(`Journey saved at ${sim.clockText()}.`);return true;}catch{if(notice||!saveErrorReported)notify('This browser could not store the journey.');saveErrorReported=true;return false;}}
 function showError(error:Error){if(!$('error').hidden)return;console.error(error);if(sim)sim.paused=true;$('error-text').textContent=error.message;visible('error',true);clearInputs();if(started)save(false).then(saved=>{$('error-text').textContent=error.message+(saved?' Your paused journey was saved. Reload, then choose Continue saved journey.':' Saving failed. Reloading may lose unsaved progress.');});}
 function stationOptions(direction:Direction){const select=$<HTMLSelectElement>('start-station');const stations=direction===1?route.stations:[...route.stations].reverse();select.innerHTML=stations.map(s=>{const terminal=s.id===(direction===1?'DDG':'KID');return `<option value="${s.id}" ${terminal?'disabled':''}>${s.name}${terminal?' · end of route':''}</option>`;}).join('');}
 function updateJourneyTitle(){ $('journey-title').innerHTML=sim.player.direction===1?'KIDDERMINSTER <span>—</span> DORRIDGE':'DORRIDGE <span>—</span> KIDDERMINSTER';}
@@ -83,7 +84,7 @@ $<HTMLSelectElement>('direction').addEventListener('change',()=>stationOptions(N
 $<HTMLSelectElement>('quality').addEventListener('change',()=>{view?.setQuality($<HTMLSelectElement>('quality').value as 'low'|'balanced'|'high');savePreferences();});
 $<HTMLSelectElement>('render-scale').addEventListener('change',()=>{view?.setRenderScale(Number($<HTMLSelectElement>('render-scale').value));savePreferences();});
 $<HTMLInputElement>('volume').addEventListener('input',()=>{audio.setVolume(Number($<HTMLInputElement>('volume').value));savePreferences();});
-$('resume-save').addEventListener('click',async()=>{try{const saved=await journeySaves.get();if(!saved)throw new Error('No saved journey was found.');sim.restore(saved);if(saved.roadTraffic)view.roadTraffic.restore(saved.roadTraffic);view.synchronizeClock();await view.preparePosition();started=true;visible('menu',false);visible('hud',true);updateJourneyTitle();updateStops();resume();notify('Saved journey restored.');}catch(e){showError(e as Error);}});
+$('resume-save').addEventListener('click',async()=>{try{const saved=await journeySaves.get();if(!saved)throw new Error('No saved journey was found.');sim.restore(saved);view.resetTraffic();await view.preparePosition();started=true;visible('menu',false);visible('hud',true);updateJourneyTitle();updateStops();resume();notify('Saved journey restored.');}catch(e){showError(e as Error);}});
 document.querySelectorAll<HTMLElement>('[data-drive]').forEach(button=>{const key=button.dataset.drive as keyof InputState;button.addEventListener('pointerdown',e=>{input[key]=true;button.setPointerCapture(e.pointerId);});button.addEventListener('pointerup',()=>input[key]=false);button.addEventListener('pointercancel',()=>input[key]=false);});
 window.addEventListener('keydown',event=>{if(!started||sim.paused||['SELECT','INPUT','TEXTAREA'].includes((event.target as HTMLElement)?.tagName))return;const key=event.code;if(['KeyA','KeyD','KeyQ','KeyW','KeyS','Space'].includes(key))event.preventDefault();if(key==='KeyA')input.a=true;if(key==='KeyD')input.d=true;if(key==='Space')input.horn=true;if(!event.repeat){if(key==='KeyQ')sim.acknowledge();if(key==='KeyW')sim.setDirection(1);if(key==='KeyS')sim.setDirection(-1);if(key==='Escape')pause();}});
 window.addEventListener('keyup',e=>{if(e.code==='KeyA')input.a=false;if(e.code==='KeyD')input.d=false;if(e.code==='Space')input.horn=false;});
@@ -91,8 +92,14 @@ window.addEventListener('blur',pause);document.addEventListener('visibilitychang
 
 async function init(){try{
   const response=await fetch(routeResourceUrl('data/route.json',document.baseURI));if(!response.ok)throw new Error('Route data is missing. Check that the website’s data folder was copied in full.');const data=await response.json() as RouteData;data.worldHash=__RAILWAY_WORLD_HASH__;route=new RouteGeometry(data);route.setEndpointContext(endpointContext(route));sim=new RailwaySimulation(route);sim.sound=name=>audio.event(name);sim.onEvent=e=>{if(e.type==='aws'||e.type==='tpws'||e.type==='station'||e.type==='direction'||e.type==='complete')notify(e.message,e.type==='tpws'||e.type==='aws');};stationOptions(1);
+  const [roadsResponse,landResponse,terrainResponse]=await Promise.all([fetch(routeResourceUrl('data/road-surfaces.json',document.baseURI)),fetch(routeResourceUrl('data/land-surfaces.json',document.baseURI)),fetch(routeResourceUrl(data.terrain.url,document.baseURI))]);
+  if(!roadsResponse.ok)throw new Error('The shared road support manifest could not be loaded.');
+  if(!landResponse.ok)throw new Error('The shared water support manifest could not be loaded.');
+  if(!terrainResponse.ok)throw new Error('Terrain data could not be loaded.');
+  data.surfaceRoads=(await roadsResponse.json()).roads;data.surfaceWater=(await landResponse.json()).water;const terrain=await terrainResponse.arrayBuffer();
+  sim.configureRoadNetwork(data.surfaceRoads as Feature[],new Terrain(data.terrain,new Uint16Array(terrain)));
   view=new RailwayRenderer($('viewport'),data,route,sim);view.setRenderScale(Number($<HTMLSelectElement>('render-scale').value));view.setQuality($<HTMLSelectElement>('quality').value as 'low'|'balanced'|'high');view.onError=showError;view.onProgress=()=>{if(!loaded&&view.tileCount>=3){loaded=true;$<HTMLButtonElement>('begin').disabled=false;$('begin-label').textContent='Begin journey';$('gpu-state').innerHTML='<i></i> WEBGL 2 READY';journeySaves.get().then(saved=>visible('resume-save',Boolean(saved))).catch(()=>visible('resume-save',false));}};
-  await view.init();
+  await view.init(terrain);
   if(import.meta.env.DEV||import.meta.env.MODE==='qa')(window as any).__railway={sim,route,view,input,save,storage:journeySaves,begin,render:()=>view.draw(1/60),advance:(seconds:number,autoAck=false)=>{const paused=sim.paused;sim.paused=false;for(let i=0;i<seconds*60;i++){if(autoAck&&sim.aws.pending)sim.acknowledge();sim.update(1/60,input);}sim.paused=paused;updateHUD(performance.now());},startAt:(id:string,direction:Direction=1)=>{const index=route.stations.findIndex(s=>s.id===id);sim.start(direction,index);started=true;visible('menu',false);visible('hud',true);updateJourneyTitle();},stats:()=>view.stats()};
   function frame(now:number){try{const dt=Math.min(1,(now-last)/1000);last=now;accumulator+=dt;if(!sim.paused){while(accumulator>=1/60){sim.update(1/60,input);accumulator-=1/60;}}else accumulator=0;audio.update(sim,input.horn);view.draw(dt);if(now-lastHUD>100){updateHUD(now);lastHUD=now;}if(started&&!sim.paused&&now-lastSave>10000){save(false);lastSave=now;}requestAnimationFrame(frame);}catch(e){showError(e as Error);}}
   requestAnimationFrame(frame);

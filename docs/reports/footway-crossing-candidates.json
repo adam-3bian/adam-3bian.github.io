@@ -1,11 +1,12 @@
 {
-  "generatedUTC": "2026-11-01T14:43:55.057Z",
+  "generatedUTC": "2026-11-01T15:59:23.830Z",
   "sourceHashes": {
     "public/data/route.json": "782c1291006b818b7cc236fbaa16cb3d5b33ef21c2afc2dadb3ec4d98f5e5001",
     "public/data/road-surfaces.json": "1d9798585aac82cfbd3f1a1710fd059c4b38ec6ce331c60b7f88d43e573ff1be",
+    "public/data/terrain.bin": "5e6fb9a03b7fe2ca36f7ca40455c574c9fdb80f1c8addf13ea2816f269a9261f",
     "src/core/geometry.ts": "bdfb3e91bf21e6f43ddacb6c63b20be29f160bcd3b66bc788d98f304f29e9df7",
-    "src/world/surfaces.ts": "77b02099f9c54d201e4d02f4c93a8b5406fe68272ae91b335398f69282340f82",
-    "scripts/audit-footways.ts": "e96ed00af19442288c2cc8e3239ef5f48f24894a4846af39ef01e4aae136b43e"
+    "src/world/surfaces.ts": "40c5d6892078d720da0c35148fb0596c2144778a1b3452300c10f21fa5b7aeea",
+    "scripts/audit-footways.ts": "1cc608a331ba8c600c04f36fd5db178d9ee23a38894705c7527b7b750d4f58c0"
   },
   "scope": "Ground-mode footway centreline candidates near two modelled running lanes. Not full geometry, pedestrian connectivity, bridge, crossing or clearance acceptance.",
   "segmentsExamined": 31013,

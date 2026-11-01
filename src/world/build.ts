@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import type {Feature,V3,WorldTile} from '../core/types';
 import {RouteGeometry,Polyline,clamp,hash,random,gaugeRight,sectionUp,type Pose} from '../core/geometry';
-import {Terrain,SurfaceField,engineerRoad,type RoadSurface} from './surfaces';
+import {Terrain,SurfaceField,engineerSurfaceRoad,type RoadSurface} from './surfaces';
 import {Batch,type MeshPacket} from '../render/batch';
 import {AssetFactory,geometricText} from '../render/assets';
 import {mappedPlatforms,insidePlatform,platformContains,platformEdgeDistance,derivedPlatformEdgeDistance,platformAnchor,refinePlatformTriangle,platformSurfaceY,type MappedPlatform,type P2} from './platforms';
@@ -134,7 +134,15 @@ class SourceBedOwnership {
 function roadPoint(road:RoadSurface,s:number,offset:number,lift=0):V3 {
   const pose=road.path.sample(s);return[pose.position[0]+pose.right[0]*offset,pose.position[1]+lift,pose.position[2]+pose.right[2]*offset];
 }
-function roadSpanCuts(road:RoadSurface){return[...new Set([...road.path.lengths,...Array.from({length:Math.ceil(road.path.length/6)},(_,i)=>Math.min(i*6,road.path.length)),road.path.length])].sort((a,b)=>a-b);}
+function roadBridgeOpening(road:RoadSurface):[number,number]|undefined {
+  if(road.mode!=='over'||road.crossingS===undefined||['footway','path','steps','cycleway','pedestrian'].includes(road.kind))return;
+  const half=Math.max(4,road.spanHalfLength??15);
+  return [road.crossingS-half,road.crossingS+half];
+}
+function roadSpanCuts(road:RoadSurface){
+  const opening=roadBridgeOpening(road),edges=opening?opening.filter(s=>s>0&&s<road.path.length):[];
+  return[...new Set([...road.path.lengths,...Array.from({length:Math.ceil(road.path.length/6)},(_,i)=>Math.min(i*6,road.path.length)),...edges,road.path.length])].sort((a,b)=>a-b);
+}
 function roadSubgradeY(road:RoadSurface,s:number){
   // A smoothed cross-section can project onto a neighbouring source segment at
   // a hairpin. Cover the full cross-section and one2.5m terrain-cell diagonal;
@@ -236,23 +244,9 @@ export function buildTile(tile:WorldTile,route:RouteGeometry,terrain:Terrain):Ti
     const b=f.bounds as number[]|undefined;return b?b[0]<supportBounds[2]+100&&b[2]>supportBounds[0]-100&&b[1]<supportBounds[3]+100&&b[3]>supportBounds[1]-100:true;
   });
   const rawRoads=new Map([...supportFeatures,...tile.roads].map(f=>[f.id,f]));
-  const supportRoads=[...rawRoads.values()].sort((a,b)=>a.id.localeCompare(b.id)).map(f=>engineerRoad(f,route)).filter((r):r is RoadSurface=>!!r);
+  const supportRoads=[...rawRoads.values()].sort((a,b)=>a.id.localeCompare(b.id)).map(f=>engineerSurfaceRoad(f,route,terrain)).filter((r):r is RoadSurface=>!!r);
   const ownedRoadIds=new Set(tile.roads.map(r=>r.id)),roads=supportRoads.filter(r=>ownedRoadIds.has(r.id));
   const sourceStructures=route.data.structures.filter(s=>s.position&&inside(s.position[0],s.position[2],bounds));
-  // Civil source levels override the generic intersection inference, including
-  // pedestrian bridges that otherwise resemble an at-grade mapped footpath.
-  for(const road of supportRoads){
-    if(road.sourceStructure)continue;
-    const way=/way\/(\d+)/.exec(road.id)?.[1];
-    const civil=route.data.structures.find(s=>way&&((s.sourceWayIds as string[]|undefined)||[]).includes(way)&&['roadBridge','footbridge'].includes(s.type));
-    if(!civil)continue;
-    const hit=road.path.nearest(civil.position[0],civil.position[2]);if(hit.distance>20)continue;
-    const near=route.project(civil.position[0],civil.position[2],100),rail=route.sample(near.s).position[1];
-    const target=Math.max(civil.position[1],near.distance<25?rail+6.3:terrain.raw(civil.position[0],civil.position[2])+2.0),radius=Math.max(65,civil.length??20);
-    road.mode='over';road.crossingS=hit.s;road.routeS=near.s;road.inferred=true;
-    const before=road.path;
-    road.points=road.points.map((q,i)=>{const d=Math.abs(before.lengths[i]-hit.s),blend=1-clamp((d-(civil.length??20)/2)/radius,0,1);return[q[0],q[1]+Math.max(0,target-q[1])*blend,q[2]] as V3;});road.path=new Polyline(road.points);
-  }
   const field=new SurfaceField(route,terrain,supportRoads),placements:Placement[]=[],attachmentDecks:{id:string;field:CookedSoil}[]=[];
   const rememberDeck=(group:THREE.Group,id:string)=>{const deck=new CookedSoil();let count=0;group.updateMatrixWorld(true);group.traverse(node=>{if(!(node as THREE.Mesh).isMesh)return;const mesh=node as THREE.Mesh,mat=(Array.isArray(mesh.material)?mesh.material[0]:mesh.material)as THREE.MeshStandardMaterial,color=mat.color?.getHex();if(color!==0x686b67&&color!==0x8b887c)return;const pos=mesh.geometry.getAttribute('position'),index=mesh.geometry.index;if(!pos)return;for(let i=0;i<(index?.count??pos.count);i+=3){const v=[0,1,2].map(k=>new THREE.Vector3().fromBufferAttribute(pos,index?index.getX(i+k):i+k).applyMatrix4(mesh.matrixWorld)),normal=v[1].clone().sub(v[0]).cross(v[2].clone().sub(v[0])).normalize();if(normal.y>.8){deck.add(v[0].toArray()as V3,v[1].toArray()as V3,v[2].toArray()as V3);count++;}}});if(count)attachmentDecks.push({id,field:deck});};
   for(const def of switchDefs){if(!def.formationSections?.length)continue;const pose=route.lanePose((def.startS+def.endS)/2,def.lane);if(inside(pose.position[0],pose.position[2],bounds))placements.push({id:`${def.id}/formation-support`,family:'source-switch-formation-support',position:pose.position,role:'source switch owns near-coplanar ordinary upper ballast',topOwnershipTolerance:.001,maximumSleeperBallastEmbed:.075,sleeperThickness:.15,minimumSleeperTopExposure:.075,supportGeometry:'full formationSections underside envelope',confidence:'engineered formation and limited packed-ballast embed; not surveyed site levels'});}
@@ -432,21 +426,23 @@ export function buildTile(tile:WorldTile,route:RouteGeometry,terrain:Terrain):Ti
 
   for(const road of roads){
     const foot=['footway','path','steps','cycleway','pedestrian'].includes(road.kind),color=foot?palette.pavement:palette.asphalt;
-    const cuts=roadSpanCuts(road);
+    const cuts=roadSpanCuts(road),opening=roadBridgeOpening(road);
     for(let i=0;i<cuts.length-1;i++){
       const s=cuts[i],e=cuts[i+1],mid=road.path.sample((s+e)/2).position;if(e-s<1e-6||!inside(mid[0],mid[2],bounds))continue;
-      const crown=road.mode==='crossing'?-.005:.035;
+      const crown=road.mode==='crossing'?-.005:.035,openSpan=!!opening&&(s+e)/2>opening[0]&&(s+e)/2<opening[1];
       const a=roadPoint(road,s,-road.width/2),b=roadPoint(road,s,0,crown),c=roadPoint(road,e,0,crown),d=roadPoint(road,e,-road.width/2);
       const aa=roadPoint(road,s,road.width/2),dd=roadPoint(road,e,road.width/2);
       topQuad(batch,a,d,c,b,color);topQuad(batch,b,c,dd,aa,color);
       for(const side of [-1,1]){
         const u=roadPoint(road,s,side*road.width/2),v=roadPoint(road,e,side*road.width/2);
         const underU=p(u[0],Math.min(u[1]-.25,ground(u[0],u[2])),u[2]),underV=p(v[0],Math.min(v[1]-.25,ground(v[0],v[2])),v[2]);
-        quad(batch,u,v,underV,underU,palette.earth);
+        // The structural deck owns the open span; an earth wall here would
+        // seal the railway opening. Approaches retain their soil-facing walls.
+        if(!openSpan)quad(batch,u,v,underV,underU,palette.earth);
         if(!foot&&road.width<12){
           const outerU=roadPoint(road,s,side*(road.width/2+1.15),.10),outerV=roadPoint(road,e,side*(road.width/2+1.15),.10);
           topQuad(batch,p(u[0],u[1]+.10,u[2]),p(v[0],v[1]+.10,v[2]),outerV,outerU,palette.pavement);
-          quad(batch,outerU,outerV,p(outerV[0],ground(outerV[0],outerV[2]),outerV[2]),p(outerU[0],ground(outerU[0],outerU[2]),outerU[2]),palette.earth);
+          if(!openSpan)quad(batch,outerU,outerV,p(outerV[0],ground(outerV[0],outerV[2]),outerV[2]),p(outerU[0],ground(outerU[0],outerU[2]),outerU[2]),palette.earth);
         }
       }
       if(!foot&&road.width>=4.5&&Math.floor(s/6)%2===0&&road.mode!=='crossing'){

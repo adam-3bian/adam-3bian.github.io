@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "build_manifest_sha256": "64a46b2914c4115499ea4d9ab1b2c5828470eed6f7823bbccb9e78fe2285c41b",
+  "critical_pairs": [
+    {
+      "expanded_frame": 663,
+      "reference_sha256": "48d493a1ac434e6ddf7fe0e055aacddfffbfea119cb880afd8ccf4541526e057",
+      "capture": "docs/captures/acceptance-hagley/current-approach-near.png",
+      "capture_sha256": "fa86478c45d755b0c33b608ab36c783a09003343bf62b785cbee7168eeb9eb43",
+      "station": "Hagley",
+      "chainage_m": 8138.382085840208,
+      "lane": 4.2,
+      "direction": 1,
+      "viewport": [
+        1280,
+        720
+      ],
+      "render_scale": 0.5,
+      "quality": "low",
+      "capture_method": "QA teleport to approximate approach, wait for nearby tiles, capture the game front camera; software WebGL2",
+      "captured_utc": "2026-11-01T15:57:11.917183+00:00",
+      "uncertainty": "Location is Hagley and forward direction; exact reference position, lens, date and camera pose are unknown. This is a supplementary approximate match, not a survey or uninterrupted streaming check.",
+      "review": "Agent visual inspection: both views show two running tracks, side platforms and a covered footbridge. The reference shows dense trees and an arch behind the footbridge; the game has sparse simplified surroundings, lacks that matched arch, and displays a pale strip across the tracks. Perspective mismatch limits dimensional comparison. HAG-PATH-001 remains open.",
+      "review_type": "image-capable agent; not an independent local recognisability reviewer",
+      "issue_ids": [
+        "HAG-PATH-001",
+        "STATION-IDENTITY-001"
+      ],
+      "track_position": [
+        -9862.983283750656,
+        95.27519699190776,
+        -513.3195302616853
+      ],
+      "camera_position": null,
+      "field_of_view_degrees": 62,
+      "loaded_tile_ids": null,
+      "classification": "forward-facing station reference",
+      "world_hash": "8b970ae0ba7c8c6e18baa28c5761803b2fffbabfe63f21c3979d239a954da7da",
+      "capture_script_sha256": "76919a652a18f5c2f87a192063e941a2c60aaf91ee1c29233bef7c3435b3dff0"
+    }
+  ]
+}

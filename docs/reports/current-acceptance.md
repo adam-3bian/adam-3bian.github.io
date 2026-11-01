@@ -1,6 +1,6 @@
-# Current acceptance run
+# Earlier acceptance snapshot
 
-Acceptance is **incomplete**. This run checks source state at the start of this review, commit `6f05ad4`; the application source was not changed by this review. The full reference alignment, streaming and visual acceptance systems described in the brief are not implemented.
+This is the historical review of commit `6f05ad4`. The linked simulation, static HTTP, footway and geometry reports have since been regenerated, so their current contents and hashes describe the later build, not this older snapshot. See [the latest handover](../../HANDOVER.md) for current results and open gates. Acceptance remains **incomplete**.
 
 - `npm test`: 72 tests passed. `python -m unittest discover -s tests -p 'route_qa_test.py'`: one test passed. TypeScript checking passed.
 - `npm run validate`: both automated CPU journeys completed in the expected station order with no recorded collisions or SPADs; the accelerated two-hour CPU dispatcher soak also completed. See [simulation.json](simulation.json). This is not a two-hour browser/GPU or mixed road/rail traffic soak.

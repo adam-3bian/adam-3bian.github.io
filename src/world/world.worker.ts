@@ -16,7 +16,7 @@ scope.onmessage=(event:MessageEvent)=>{
     if(message.type==='build'){
       if(!route||!terrain)throw new Error('World worker has not been initialised.');
       const tile=message.tile as WorldTile,result=buildTile(tile,route,terrain);
-      scope.postMessage({type:'tile',id:tile.id,...result},[result.mesh.position.buffer,result.mesh.normal.buffer,result.mesh.color.buffer,result.mesh.index.buffer] as ArrayBuffer[]);
+      scope.postMessage({type:'tile',id:tile.id,token:message.token,...result},[result.mesh.position.buffer,result.mesh.normal.buffer,result.mesh.color.buffer,result.mesh.index.buffer] as ArrayBuffer[]);
     }
-  }catch(error){scope.postMessage({type:'error',id:message.tile?.id,message:error instanceof Error?error.message:String(error)});}
+  }catch(error){scope.postMessage({type:'error',id:message.tile?.id,token:message.token,message:error instanceof Error?error.message:String(error)});}
 };

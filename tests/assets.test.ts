@@ -126,6 +126,22 @@ test('road top surfaces face upward and mapped footbridges leave the driver enve
   assert.equal(ray.intersectObject(new THREE.Mesh(g,new THREE.MeshBasicMaterial())).length,0,'bridge deck/supports obstruct the driver clearance');
 });
 
+test('an elevated road keeps its bridge opening clear and retains its deck and approach support',()=>{
+  const {data,terrain}=fixture(),road={id:'over-road',kind:'residential',width:6,points:[[-60,57,-200],[.25,57,-200],[60,57,-200]] as [number,number,number][]};
+  const result=buildTile({id:'over-bridge',bounds:[-100,-300,100,-100],roads:[road],buildings:[]},new RouteGeometry(data),terrain);
+  assert.equal(result.roads[0].mode,'over');assert.ok(result.placements.some(p=>p.id==='over-road/deck'));
+  const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(result.mesh.position,3));g.setIndex(new THREE.BufferAttribute(result.mesh.index,1));
+  const mesh=new THREE.Mesh(g,new THREE.MeshBasicMaterial({side:THREE.DoubleSide}));
+  for(const x of [.25,-3.95]){
+    const view=new THREE.Raycaster(new THREE.Vector3(x,52.7,-180),new THREE.Vector3(0,0,-1),0,40);
+    assert.equal(view.intersectObject(mesh).length,0,'road or pavement earth walls obstruct the running line under the bridge');
+  }
+  const deck=new THREE.Raycaster(new THREE.Vector3(.25,60,-200),new THREE.Vector3(0,-1,0),0,5).intersectObject(mesh);
+  assert.ok(deck.length>0&&deck[0].point.y>56.9,'the opening still needs its supported road deck');
+  const approach=new THREE.Raycaster(new THREE.Vector3(35,56,-190),new THREE.Vector3(0,0,-1),0,20).intersectObject(mesh);
+  assert.ok(approach.length>0,'road approach must retain its side support');
+});
+
 test('mapped island outlines replace generic sides and furniture sits inside the final supported surface',()=>{
   const {data,terrain}=fixture();data.opposingOffsets=data.points.map(()=>-13);
   data.stations=[{id:'SOL',name:'Solihull',s:300,position:[.25,50,-200],length:200,platformCount:2}];
