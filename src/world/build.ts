@@ -1,11 +1,12 @@
 import * as THREE from 'three';
 import type {Feature,V3,WorldTile} from '../core/types';
-import {RouteGeometry,Polyline,clamp,hash,random,gaugeRight,sectionUp,type Pose} from '../core/geometry';
+import {RouteGeometry,Polyline,CurvePath,clamp,hash,random,gaugeRight,sectionUp,type Pose} from '../core/geometry';
 import {Terrain,SurfaceField,engineerSurfaceRoad,type RoadSurface} from './surfaces';
 import {roadSiteDefinitions} from './road-sites';
 import {solveAccessSites,accessSourceIds,accessDefinitions,ACCESS_RULES} from './access-sites';
 import {Batch,type MeshPacket} from '../render/batch';
 import {AssetFactory,geometricText} from '../render/assets';
+import {makeLandmark,makeRailCivil,type Landmark} from '../render/landmarks';
 import {mappedPlatforms,insidePlatform,platformContains,platformEdgeDistance,derivedPlatformEdgeDistance,platformAnchor,refinePlatformTriangle,platformSurfaceY,type MappedPlatform,type P2} from './platforms';
 
 const palette={grass:new THREE.Color(0x7e8f66),earth:new THREE.Color(0x8c8065),ballast:new THREE.Color(0x8b887c),
@@ -137,7 +138,7 @@ function roadPoint(road:RoadSurface,s:number,offset:number,lift=0):V3 {
   const pose=road.path.sample(s);return[pose.position[0]+pose.right[0]*offset,pose.position[1]+lift,pose.position[2]+pose.right[2]*offset];
 }
 function roadBridgeOpening(road:RoadSurface):[number,number]|undefined {
-  if(road.mode!=='over'||road.crossingS===undefined||['footway','path','steps','cycleway','pedestrian'].includes(road.kind))return;
+  if(road.mode!=='over'||road.crossingS===undefined)return;
   const half=Math.max(4,road.spanHalfLength??15);
   return [road.crossingS-half,road.crossingS+half];
 }
@@ -216,6 +217,7 @@ export function buildTile(tile:WorldTile,route:RouteGeometry,terrain:Terrain):Ti
   }
   for(let s=Math.max(0,Math.floor((minS-1800)/8)*8);s<Math.min(route.length,minS+1800);s+=8){const q=route.sample(s);if(!inside(q.position[0],q.position[2],bounds))continue;const footprint:number[][]=[];for(let ss=Math.max(0,s-4);ss<=Math.min(route.length,s+4);ss+=1){const p=route.sample(ss,troughOffset(ss)).position;for(const dx of[-.5,.5])for(const dz of[-.5,.5])footprint.push([p[0]+dx,p[2]+dz]);}if(!footprint.length||footprint.every(q=>inside(q[0],q[1],bounds)))continue;crossingFootprints.push(footprint);for(const q of footprint){supportBounds[0]=Math.min(supportBounds[0],q[0]-80);supportBounds[1]=Math.min(supportBounds[1],q[1]-80);supportBounds[2]=Math.max(supportBounds[2],q[0]+80);supportBounds[3]=Math.max(supportBounds[3],q[1]+80);}}
   const pedestrianPaths:NonNullable<TileBuild['pedestrianPaths']>=[];
+  const runningLanes=[0,4.2];
   const centre=(s:number)=>route.laneOffset(s,4.2)/2;
   const formationWidth=(s:number)=>Math.abs(route.laneOffset(s,4.2))+5.6;
   const switchDefs=((route.data.trackwork as {id:string;lane:number;startS:number;endS:number;supportPaths:V3[][];formationSections?:{topLeft:V3;topRight:V3;bottomLeft:V3;bottomRight:V3}[]}[])||[]).filter(s=>Number.isFinite(s.startS)&&Number.isFinite(s.endS));
@@ -229,7 +231,7 @@ export function buildTile(tile:WorldTile,route:RouteGeometry,terrain:Terrain):Ti
   }
   const contexts=endpointContext(route);
   route.setEndpointContext(contexts);
-  const auxiliaries:StaticPath[]=[...(((route.data.adjacentServices as any[])||[]).filter(s=>s.points?.length>1)).map(s=>({...s,path:new Polyline(s.points as V3[])})),...contexts,...switchSupports];
+  const auxiliaries:StaticPath[]=[...(((route.data.adjacentServices as any[])||[]).filter(s=>s.points?.length>1)).map(s=>({...s,path:new CurvePath(s.points as V3[])})),...contexts,...switchSupports].filter(service=>{const ps=service.points as V3[];return ps.some(p=>p[0]>=bounds[0]-250&&p[0]<=bounds[2]+250&&p[2]>=bounds[1]-250&&p[2]<=bounds[3]+250)||ps.some((p,i)=>i>0&&Math.min(p[0],ps[i-1][0])<=bounds[2]+250&&Math.max(p[0],ps[i-1][0])>=bounds[0]-250&&Math.min(p[2],ps[i-1][2])<=bounds[3]+250&&Math.max(p[2],ps[i-1][2])>=bounds[1]-250);});
   const auxBuckets=new Map<string,{service:typeof auxiliaries[number];index:number}[]>();
   for(const service of auxiliaries)for(let i=1;i<service.path.points.length;i++){
     const a=service.path.points[i-1],b=service.path.points[i];
@@ -272,6 +274,8 @@ export function buildTile(tile:WorldTile,route:RouteGeometry,terrain:Terrain):Ti
     let y=field.ground(x,z);
     for(const {service,index} of auxNear(x,z)){
       const a=service.path.points[index],b=service.path.points[index+1],hit=segmentDistance(x,z,a,b);if(hit.distance>8)continue;
+      if(service.metadata?.bridge)continue;
+      if(service.metadata?.tunnel){y=Math.max(y,a[1]+hit.t*(b[1]-a[1])+6.5);continue;}
       const target=a[1]+hit.t*(b[1]-a[1])-.54,weight=1-clamp((hit.distance-3.4)/4.6,0,1);
       y+= (target-y)*weight;
     }
@@ -287,7 +291,7 @@ export function buildTile(tile:WorldTile,route:RouteGeometry,terrain:Terrain):Ti
     for(const w of water)if(pointInPolygon(x,z,w.footprint))y=Math.min(y,w.level-.65);
     const near=route.project(x,z,60);
     const validMain=Number.isFinite(near.distance)&&near.distance<Math.abs(route.laneOffset(near.s,4.2))+35;
-    const tunnel=validMain?route.tunnelAt(near.s):undefined;
+    const tunnel=validMain?route.tunnelAt(near.s):undefined,bridge=validMain?route.bridgeAt(near.s):undefined;
     const corridorDistance=Math.abs(near.side-centre(near.s)),halfFormation=formationWidth(near.s)/2;
     if(tunnel&&corridorDistance<halfFormation+10){
       const start=route.sourceS(tunnel.start),end=route.sourceS(tunnel.end),roofHalfWidth=Math.max((Number(tunnel.width)||9)/2+.8,halfFormation+.2);
@@ -295,8 +299,9 @@ export function buildTile(tile:WorldTile,route:RouteGeometry,terrain:Terrain):Ti
       const sideBlend=1-clamp((corridorDistance-roofHalfWidth)/11,0,1),cover=route.sample(near.s).position[1]+7.2;
       y+=Math.max(0,cover-y)*portalBlend*sideBlend;
     }
-    if(validMain&&corridorDistance<halfFormation+4.6&&!tunnel)y=Math.min(y,route.sample(near.s).position[1]-.56);
-    if(validMain&&corridorDistance<halfFormation+10&&route.stations.some(st=>Math.abs(st.s-near.s)<st.length/2+14)&&!tunnel)y=Math.min(y,route.sample(near.s).position[1]-.56);
+    if(validMain&&corridorDistance<halfFormation+4.6&&!tunnel&&!bridge)y=Math.min(y,route.sample(near.s).position[1]-.56);
+    if(validMain&&corridorDistance<halfFormation+10&&route.stations.some(st=>Math.abs(st.s-near.s)<st.length/2+14)&&!tunnel&&!bridge)y=Math.min(y,route.sample(near.s).position[1]-.56);
+    if(bridge&&corridorDistance<halfFormation+4){const rise=Math.min(1,Math.min(near.s-route.sourceS(bridge.start),route.sourceS(bridge.end)-near.s)/12);y=Math.min(y,route.sample(near.s).position[1]-.56-6.5*Math.max(0,rise));}
     const switchSupport=switchUndersides.height(x,z);if(switchSupport!==undefined&&!tunnel&&!water.some(w=>pointInPolygon(x,z,w.footprint))&&!lowerOpenings.some(o=>o.path.nearest(x,z).distance<o.width/2+3.6))y=switchSupport;
     for(const {road,i} of roadLookup(x,z,5)) {
       const a=road.points[i],b=road.points[i+1],hit=segmentDistance(x,z,a,b);
@@ -306,6 +311,9 @@ export function buildTile(tile:WorldTile,route:RouteGeometry,terrain:Terrain):Ti
       // still need cutting back where an approach or abutment rises above it.
       y=Math.min(y,roadSubgradeY(road,s));
     }
+    // Surface streets cannot cut the roof into the running envelope of an
+    // explicit bore. The portal clipping below still leaves its mouth open.
+    if(tunnel&&corridorDistance<=Math.max((Number(tunnel.width)||9)/2+.8,halfFormation+.2))y=Math.max(y,route.sample(near.s).position[1]+7.2);
     surfaceCache.set(key,y);return y;
   };
   const walkSurface=(x:number,z:number)=>Math.max(ground(x,z),...localPlatforms.filter(q=>platformContains(q,x,z)).map(q=>platformSurfaceY(q,x,z)));
@@ -435,7 +443,7 @@ export function buildTile(tile:WorldTile,route:RouteGeometry,terrain:Terrain):Ti
   for(let i=0;i<route.points.length-1;i++){
     const a=route.points[i],b=route.points[i+1];if(!inside((a[0]+b[0])/2,(a[2]+b[2])/2,bounds))continue;
     const sa=route.lengths[i],sb=route.lengths[i+1];ribbon(sa,sb,centre,formationWidth,-.54,.16,palette.ballast.clone().multiplyScalar(.88),undefined,true);
-    for(const lane of [0,4.2]){
+    for(const lane of runningLanes){
       let spans:[number,number][]=[[sa,sb]];
       for(const sw of switchDefs.filter(sw=>sw.lane===lane&&sw.endS>sa&&sw.startS<sb))spans=spans.flatMap(([a,b])=>sw.endS<=a||sw.startS>=b?[[a,b]]:([[a,Math.min(b,sw.startS)],[Math.max(a,sw.endS),b]] as [number,number][]).filter(([a,b])=>b-a>1e-6));
       if(spans.length!==1||spans[0][0]!==sa||spans[0][1]!==sb)checks.switchRailSegmentsSuppressed++;
@@ -448,13 +456,13 @@ export function buildTile(tile:WorldTile,route:RouteGeometry,terrain:Terrain):Ti
   }
   for(let s=Math.max(0,Math.floor((minS-1800)/.68)*.68);s<Math.min(route.length,minS+1800);s+=.68){
     const pose=route.sample(s);if(!inside(pose.position[0],pose.position[2],bounds))continue;
-    for(const lane of [0,4.2]){if(switchDefs.some(sw=>sw.lane===lane&&s>=sw.startS-.12&&s<=sw.endS+.12)){checks.switchSleepersSuppressed++;continue;}const q=route.lanePose(s,lane),sleeper=trackBox(batch,q,-.215,2.65,.15,.24,0x675f50,`sleeper/${lane}/${s.toFixed(3)}`),up=sectionUp(q);sleeper.userData.maximumPermittedBallastEmbed=.075;
+    for(const lane of runningLanes){if(switchDefs.some(sw=>sw.lane===lane&&s>=sw.startS-.12&&s<=sw.endS+.12)){checks.switchSleepersSuppressed++;continue;}const q=route.lanePose(s,lane),sleeper=trackBox(batch,q,-.215,2.65,.15,.24,0x675f50,`sleeper/${lane}/${s.toFixed(3)}`),up=sectionUp(q);sleeper.userData.maximumPermittedBallastEmbed=.075;
       let embed=0;for(const x of[-.5,.5])for(const z of[-.5,.5]){const corner=new THREE.Vector3(x,-.5,z).applyMatrix4(sleeper.matrixWorld).toArray() as V3,measure=sourceBedOwnership.embedding(corner,up);if(measure.overlap){checks.sourceBedSleeperCornersCovered++;embed=Math.max(embed,measure.embed);checks.sourceBedMaximumSleeperEmbed=Math.max(checks.sourceBedMaximumSleeperEmbed,measure.embed);if(measure.embed>.075)checks.sourceBedSleeperEmbedFailures++;}}sleeper.userData.maximumMeasuredSourceBallastEmbed=embed;
     }
   }
 
   for(const road of roads){
-    const foot=['footway','path','steps','cycleway','pedestrian'].includes(road.kind),color=foot?palette.pavement:palette.asphalt;
+    const foot=['footway','path','steps','cycleway','pedestrian','corridor'].includes(road.kind),color=foot?palette.pavement:palette.asphalt;
     const cuts=roadSpanCuts(road),opening=roadBridgeOpening(road);
     for(let i=0;i<cuts.length-1;i++){
       const s=cuts[i],e=cuts[i+1],mid=road.path.sample((s+e)/2).position;if(e-s<1e-6||!inside(mid[0],mid[2],bounds))continue;
@@ -478,7 +486,16 @@ export function buildTile(tile:WorldTile,route:RouteGeometry,terrain:Terrain):Ti
         const aa=roadPoint(road,s,-.06,.055),bb=roadPoint(road,s,.06,.055),cc=roadPoint(road,Math.min(s+2.8,e),.06,.055),dd=roadPoint(road,Math.min(s+2.8,e),-.06,.055);topQuad(batch,aa,dd,cc,bb,palette.white);
       }
     }
-    if(road.mode==='over'&&road.crossingS!==undefined&&!foot){
+    if(road.mode==='over'&&road.crossingS!==undefined){
+      if(foot){
+        // Use the actual walkway extent. A generic 30 m road bridge can put
+        // an end abutment across a railway when a short access spur joins it.
+        const opening=roadBridgeOpening(road)!,start=Math.max(0,opening[0]),end=Math.min(road.path.length,opening[1]);
+        for(let s=start;s<end;s+=4){const e=Math.min(end,s+4),q=road.path.sample((s+e)/2);box(batch,q.position[0],q.position[1]-.16,q.position[2],road.width+.3,.3,e-s+.02,0x7e8883,q.yaw);
+          for(const side of[-1,1]){const v=road.path.sample((s+e)/2,side*(road.width/2+.1));box(batch,v.position[0],v.position[1]+.6,v.position[2],.07,1.2,e-s,0x5c7069,q.yaw);}}
+        for(const s of[start,end]){const q=road.path.sample(s),bottom=ground(q.position[0],q.position[2]);if(runningClear(q.position[0],q.position[2],road.width/2+.5)&&q.position[1]-.3>bottom)box(batch,q.position[0],(bottom+q.position[1]-.3)/2,q.position[2],road.width+.3,q.position[1]-.3-bottom,.45,0x718078,q.yaw);}
+        placements.push({id:`${road.id}/deck`,family:'source-footbridge',position:road.path.sample(road.crossingS).position,confidence:'source walkway extent; inferred deck profile'});checks.engineeredCrossings++;continue;
+      }
       const pose=road.path.sample(road.crossingS),buried=route.tunnelAt(road.routeS??0),civil=route.data.structures.find(s=>s.id===road.sourceStructure);
       const upperSupports=((civil?.underRoutes as {points:V3[]}[]|undefined)||[]).flatMap(s=>s.points.map(q=>q[1]));
       const below=buried?Math.min(pose.position[1]-.9,ground(pose.position[0],pose.position[2]),...(upperSupports.length?upperSupports:[Infinity])):route.sample(road.routeS??0).position[1]-.6;
@@ -558,7 +575,7 @@ export function buildTile(tile:WorldTile,route:RouteGeometry,terrain:Terrain):Ti
       const inward=boundary.inward,outward=nx*-inward[0]+nz*-inward[1]>0?1:-1;
       for(let i=0;i<segments;i++){
         const at=(t:number):P2=>[a[0]+(b[0]-a[0])*t,a[1]+(b[1]-a[1])*t],u=at(i/segments),v=at((i+1)/segments);
-        const ut=p(u[0],platform.top(...u),u[1]),vt=p(v[0],platform.top(...v),v[1]),ub=p(u[0],ground(...u)-.08,u[1]),vb=p(v[0],ground(...v)-.08,v[1]);
+        const ut=p(u[0],platform.top(...u),u[1]),vt=p(v[0],platform.top(...v),v[1]),ub=p(u[0],platform.station==='SGB'&&platform.railSource==='mainline rail-relative'?platform.top(...u)-.45:ground(...u)-.08,u[1]),vb=p(v[0],platform.station==='SGB'&&platform.railSource==='mainline rail-relative'?platform.top(...v)-.45:ground(...v)-.08,v[1]);
         if(outward>0)quad(batch,ut,vt,vb,ub,palette.pavement);else quad(batch,vt,ut,ub,vb,palette.pavement);
         if(boundary.railEdge){
           for(const [offset,width,lift,color] of [[.17,.34,.016,palette.pavement],[.46,.10,.027,new THREE.Color(0xe8ce55)],[.70,.24,.021,new THREE.Color(0xbab399)]] as [number,number,number,THREE.Color][]){
@@ -574,7 +591,7 @@ export function buildTile(tile:WorldTile,route:RouteGeometry,terrain:Terrain):Ti
   }
 
   const composeMappedStation=(station:RouteGeometry['stations'][number],platforms:MappedPlatform[])=>{
-    const occupied:P2[]=[],historic=['BMO','DDG','HAG','KID'].includes(station.id),stationPose=route.sample(station.s);
+    const occupied:P2[]=[],historic=['BMO','DDG','HAG','KDT','BEW','NWH','ARL','HIG','HLD','EAR','BRG'].includes(station.id),stationPose=route.sample(station.s);
     for(const platform of platforms){
       const span=platform.footprint.map(q=>(q[0]-platform.centre[0])*platform.axis[0]+(q[1]-platform.centre[1])*platform.axis[1]),lo=Math.min(...span),hi=Math.max(...span),yaw=Math.atan2(-platform.axis[1],platform.axis[0]),forwardYaw=Math.atan2(-platform.axis[0],-platform.axis[1]);
       let waitingRoom:P2|undefined;
@@ -636,9 +653,10 @@ export function buildTile(tile:WorldTile,route:RouteGeometry,terrain:Terrain):Ti
     placements.push({id:station.id,family:'station',position:stationPose.position,supportY:stationPose.position[1],layout:'mapped platform footprints',platformIds:platforms.map(p=>p.id)});
   };
 
-  for(const station of route.stations){
-    const pose=route.sample(station.s,centre(station.s));if(!inside(pose.position[0],pose.position[2],bounds))continue;
-    const mapped=allPlatforms.filter(p=>p.station===station.id&&p.triangles.length);if(mapped.length){composeMappedStation(station,mapped);continue;}
+  for(const station of [...route.stations,...((route.data.extraStations as RouteGeometry['stations'])||[])]){
+    const extra=Boolean((route.data.extraStations as RouteGeometry['stations']|undefined)?.some(s=>s.id===station.id));
+    const pose=extra?{...route.sample(0),position:station.position}:route.sample(station.s,centre(station.s));if(!inside(pose.position[0],pose.position[2],bounds))continue;
+    const mapped=allPlatforms.filter(p=>p.station===station.id&&p.triangles.length);if(mapped.length){composeMappedStation(station,mapped);continue;}if(extra)continue;
     const mappedAccess=accessSites.some(a=>a.station===station.id)||route.data.structures.some(s=>s.type==='footbridge'&&Math.hypot(s.position[0]-pose.position[0],s.position[2]-pose.position[2])<station.length*.65&&route.project(s.position[0],s.position[2]).distance<25);
     const spacing=Math.abs(route.laneOffset(station.s,4.2)),group=factory.station({...station,seed:hash(station.id),footbridge:!mappedAccess,trackSpacing:spacing,...(accessSites.some(a=>a.station===station.id)?{canopyLength:50,canopyCentre:10}:{})});
     for(const child of [...group.children]){
@@ -702,13 +720,14 @@ export function buildTile(tile:WorldTile,route:RouteGeometry,terrain:Terrain):Ti
   for(const service of auxiliaries){
     if(service.metadata?.renderStatic===false)continue;
     const path=service.path as Polyline;
+    if(!(route.data.civils as any[]||[]).some(c=>c.id===service.id)&&(service.metadata?.bridge||service.metadata?.tunnel)&&inside(path.sample(path.length/2).position[0],path.sample(path.length/2).position[2],bounds)){const civil=makeRailCivil(service as any,ground);batch.add(civil);placements.push({id:service.id+'/civil',family:service.metadata.tunnel?'tunnel':'rail-bridge',position:path.sample(path.length/2).position,source:service.source});}
     const frame=(ss:number)=>{const q=path.sample(ss),t=clamp(ss/25,0,1),right=service.metadata?.endpointRight as V3|undefined;
       if(right){const x=right[0]*(1-t)+q.right[0]*t,z=right[2]*(1-t)+q.right[2]*t,len=Math.hypot(x,z)||1;q.right=[x/len,0,z/len];q.bank=Number(service.metadata!.endpointBank)*(1-t)+q.bank*t;}return q;
     };
     const baseSurface=new CookedSoil(),baseCuts=[-1,...path.lengths,path.length+1];
     for(let i=1;i<baseCuts.length;i++){const a=path.sample(baseCuts[i-1],-3).position,b=path.sample(baseCuts[i-1],3).position,c=path.sample(baseCuts[i],3).position,d=path.sample(baseCuts[i],-3).position;for(const q of[a,b,c,d])q[1]-=.54;baseSurface.add(a,b,c);baseSurface.add(a,c,d);}
     const bedSection=(s:number)=>{const q=frame(s),neighbours:V3[]=[],nearest=new Map<string,{distance:number;point:V3}>(),near=route.project(q.position[0],q.position[2],30);
-      if(Number.isFinite(near.distance))for(const lane of[0,4.2])neighbours.push(route.lanePose(near.s,lane).position);
+      if(Number.isFinite(near.distance))for(const lane of runningLanes)neighbours.push(route.lanePose(near.s,lane).position);
       for(const entry of auxNear(q.position[0],q.position[2],5)){if(entry.service.id===service.id||entry.service.metadata?.renderStatic===false)continue;const a=entry.service.path.points[entry.index],b=entry.service.path.points[entry.index+1],hit=segmentDistance(q.position[0],q.position[2],a,b),old=nearest.get(entry.service.id);if(!old||hit.distance<old.distance)nearest.set(entry.service.id,{distance:hit.distance,point:a.map((v,j)=>v+(b[j]-v)*hit.t) as V3});}
       for(const other of nearest.values())neighbours.push(other.point);return ballastSection(q,(x,z)=>baseSurface.height(x,z)??q.position[1]-.54,neighbours);
     };
@@ -718,18 +737,19 @@ export function buildTile(tile:WorldTile,route:RouteGeometry,terrain:Terrain):Ti
       if(depth){const aa=get(s,offset-width/2,top-depth),bb=get(s,offset+width/2,top-depth),cc=get(e,offset+width/2,top-depth),dd=get(e,offset-width/2,top-depth);quad(batch,a,d,dd,aa,color);quad(batch,bb,cc,c,b,color);}
       if(closed)quad(batch,get(s,offset-width/2,top-depth),get(e,offset-width/2,top-depth),get(e,offset+width/2,top-depth),get(s,offset+width/2,top-depth),color);
     };
-    for(let s=0;s<path.length;s+=8){
-      const e=Math.min(path.length,s+8),pose=path.sample((s+e)/2);if(!inside(pose.position[0],pose.position[2],bounds))continue;
+    for(let s=0;s<path.length;s+=4){
+      const e=Math.min(path.length,s+4),pose=path.sample((s+e)/2);if(!inside(pose.position[0],pose.position[2],bounds))continue;
       for(let ss=s;ss<e;ss+=2)ballastSpan(batch,bedSection(ss),bedSection(Math.min(e,ss+2)),palette.ballast);for(const rail of [-.755,.755])for(const [width,top,depth]of[[.075,0,.045],[.025,-.045,.07],[.14,-.115,.025]])strip(s,e,rail,width,top,depth,palette.rail,true);
       for(let index=Math.ceil((s-1e-8)/.68);index*.68<e-1e-8;index++){const sleeper=index*.68,q=frame(sleeper);if(service.metadata?.contextOnly&&sleeper<.13)continue;trackBox(batch,q,-.215,2.65,.15,.24,0x675f50,`${service.id}/sleeper/${index}`);}
-      if(service.overhead){
+      if(service.overhead&&!service.metadata?.tunnel){
         const a=path.sample(s).position,b=path.sample(e).position;
         for(const rise of [5.5,5.9]){const u=new THREE.Vector3(a[0],a[1]+rise,a[2]),v=new THREE.Vector3(b[0],b[1]+rise,b[2]),wire=new THREE.Mesh(sharedBox,material(0x4c5554));wire.position.copy(u).add(v).multiplyScalar(.5);wire.scale.set(.027,u.distanceTo(v),.027);wire.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),v.clone().sub(u).normalize());batch.add(wire);}
         box(batch,pose.position[0],pose.position[1]+5.7,pose.position[2],.018,.4,.018,0x4c5554);
         if(Math.round(s)%40===0){
-          const q=path.sample(s,3.1),base=ground(q.position[0],q.position[2]),top=q.position[1]+5.9;
+          const offset=[3.1,-3.1,5.8,-5.8].find(o=>{const p=path.sample(s,o).position;return runningClear(p[0],p[2],.3);});if(offset===undefined)continue;
+          const q=path.sample(s,offset),base=ground(q.position[0],q.position[2]),top=q.position[1]+5.9;
           box(batch,q.position[0],(base+top)/2,q.position[2],.13,top-base,.13,0x717d78);
-          const arm=path.sample(s,1.5);box(batch,arm.position[0],arm.position[1]+5.65,arm.position[2],3.4,.10,.10,0x6b7670,arm.yaw);
+          const arm=path.sample(s,offset/2);box(batch,arm.position[0],arm.position[1]+5.65,arm.position[2],Math.abs(offset)+.3,.10,.10,0x6b7670,arm.yaw);
         }
       }
     }
@@ -805,6 +825,7 @@ export function buildTile(tile:WorldTile,route:RouteGeometry,terrain:Terrain):Ti
   for(const w of water.filter(w=>w.owned)){const shape=new THREE.Shape();shape.moveTo(w.footprint[0][0],-w.footprint[0][1]);for(const q of w.footprint.slice(1))shape.lineTo(q[0],-q[1]);shape.closePath();const geo=new THREE.ShapeGeometry(shape);geo.rotateX(-Math.PI/2);const m=new THREE.Mesh(geo,material(0x6d8e95));m.position.y=w.level;batch.add(m);geo.dispose();}
   const footprints:number[][][]=[];
   for(const building of tile.buildings){
+    if([...(route.data.landmarks as Landmark[]||[]),...(route.data.civils as any[]||[])].some(a=>typeof a.source==='string'&&a.source.endsWith('/'+building.id.replace(/^way\//,''))))continue;
     const fp=building.footprint;if(!fp||fp.length<3)continue;
     const cx=fp.reduce((s,q)=>s+q[0],0)/fp.length,cz=fp.reduce((s,q)=>s+q[1],0)/fp.length,near=route.project(cx,cz,600);
     if(near.distance>570)continue;
@@ -876,6 +897,8 @@ export function buildTile(tile:WorldTile,route:RouteGeometry,terrain:Terrain):Ti
       for(const side of [-1,1])for(const [width,top,depth]of[[.075,0,.045],[.025,-.045,.07],[.14,-.115,.025]]){const rail=new THREE.Mesh(sharedBox,material(0x9ca29c));rail.position.set(x+right[0]*side*.755+up[0]*(top-depth/2),head+right[1]*side*.755+up[1]*(top-depth/2),z+right[2]*side*.755+up[2]*(top-depth/2));rail.scale.set(width,depth,path.length);rail.quaternion.setFromRotationMatrix(basis);batch.add(rail);}
     }
   }
+  for(const civil of (route.data.civils as any[]||[])){const path=new CurvePath(civil.points),p=path.sample(path.length/2).position;if(inside(p[0],p[2],bounds)){batch.add(makeRailCivil(civil,ground));placements.push({id:civil.id+'/civil',family:'rail-bridge',position:p});}}
+  for(const asset of (route.data.landmarks as Landmark[]||[])){if(!inside(asset.position[0],asset.position[2],bounds))continue;batch.add(makeLandmark(asset));placements.push({id:asset.id,family:asset.family,position:asset.position,source:asset.source,confidence:asset.confidence});}
   checks.sourceBedTopTrianglesClipped=sourceBedOwnership.cuts;checks.sourceBedTopAreaRemoved=sourceBedOwnership.removedArea;
   const mesh=batch.packet();checks.triangleCount=mesh.index.length/3;
   return{mesh,roads:roads.map(({id,kind,width,points,mode,crossingS,routeS})=>({id,kind,width,points,mode,crossingS,routeS})),placements,pedestrianPaths,checks};

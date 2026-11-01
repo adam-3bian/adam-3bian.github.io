@@ -1,0 +1,1374 @@
+{
+  "schema": 1,
+  "era": 2026,
+  "accessed": "2026-11-01",
+  "policy": "Consult this manifest before changing geometry. Preserve mapped bends and source node identity. Never promote inference to survey confidence. Unknown photo dates stay null. 1908/1921 Tyseley drawings explain history only.",
+  "grid": {
+    "cellMetres": 16,
+    "planTickMetres": 0.01,
+    "heightTickMetres": 0.03125
+  },
+  "sources": {
+    "osm": {
+      "url": "https://www.openstreetmap.org/copyright",
+      "date": "2026-11-01",
+      "role": "plan geometry and source-node connectivity; heights are inferred"
+    },
+    "svr-plan": {
+      "url": "https://minorrailways.co.uk/trackplans/severnvalley.pdf",
+      "date": "2014-04-26",
+      "role": "historical track-plan reference; implementation topology uses archived source nodes and the Rail Engineer connection account",
+      "accessStatus": "PDF indexed, direct download returned a server error during this reconstruction; not treated as an independently verified current plan"
+    },
+    "svr-gradient": {
+      "url": "https://www.svrwiki.com/Gradient_profile_and_mileages",
+      "date": "2001",
+      "role": "GWR-derived longitudinal gradient; initial descent 1:112"
+    },
+    "svr-connection": {
+      "url": "https://www.railengineer.co.uk/connecting-the-severn-valley/",
+      "date": "2013-09-04",
+      "role": "signalled mainline exchange and workshop connection"
+    },
+    "galton": {
+      "url": "https://historicengland.org.uk/listing/heritage-gateway/results/record/ab886a86-ad01-497d-984a-c731328e1cfa/MSD5797",
+      "date": null,
+      "role": "upper railway crosses both lower railway and canal"
+    },
+    "jq": {
+      "url": "https://www.thetrams.co.uk/midlandmetro/stops/Jewellery_Quarter",
+      "date": null,
+      "role": "photographs of parallel Metro and Hockley tunnel"
+    },
+    "hawthorns": {
+      "url": "https://www.westmidlandsmetro.com/maps/stops/the-hawthorns/",
+      "date": null,
+      "role": "rail/tram interchange"
+    },
+    "moor": {
+      "url": "https://www.birmingham.gov.uk/directory_record/137234/moor_street_railway_station",
+      "date": null,
+      "role": "Moor Street and Snow Hill tunnel context"
+    },
+    "selfridges": {
+      "url": "https://www.ala.uk.com/selected-projects/selfridges/",
+      "date": null,
+      "role": "architectural form and views from approaching railway"
+    },
+    "rotunda": {
+      "url": "https://historicengland.org.uk/listing/the-list/list-entry/1381413",
+      "date": "2000-08-18",
+      "role": "listed cylindrical tower and horizontal bands"
+    },
+    "galton-bridge": {
+      "url": "https://historicengland.org.uk/listing/the-list/list-entry/1214833",
+      "date": null,
+      "role": "historic canal bridge, distinct from station rail bridge"
+    },
+    "works": {
+      "url": "https://friendsofvt.org.uk/wp-content/uploads/2023/02/Tyseley-Carriage-Sidings-updated-10-Feb-2023.pdf",
+      "date": "2023-02-10",
+      "role": "works and carriage sidings; historic diagrams are not the modern layout"
+    },
+    "depot": {
+      "url": "https://beta.wmre.org.uk/70-m-upgrade-to-west-midlands-railway-depot-to-improve-journeys/",
+      "date": "2025-10-27",
+      "role": "modern depot redevelopment"
+    },
+    "falling-sands": {
+      "url": "https://www.svrwiki.com/Falling_Sands_Viaduct",
+      "date": null,
+      "role": "seven brick arches, 132 yards long, River Stour/canal crossing"
+    },
+    "photos": {
+      "url": "../by-location/index.html",
+      "date": null,
+      "role": "supplied appearance photographs; capture dates unknown, not current topology evidence"
+    },
+    "galton-access": {
+      "url": "https://www.openstreetmap.org/way/1386987078",
+      "date": "2026-11-01",
+      "role": "indoor corridor levels and bridge/stair connectivity; metric deck levels inferred"
+    },
+    "duddeston": {
+      "url": "https://www.openstreetmap.org/way/363476190",
+      "date": "2026-11-01",
+      "role": "surviving unused viaduct footprint and 8 m tagged height; arch spacing inferred"
+    }
+  },
+  "locations": [
+    {
+      "id": "KID",
+      "name": "Kidderminster",
+      "approximateOSGB": [
+        383867,
+        276285
+      ],
+      "sourceIds": [
+        "osm",
+        "svr-plan",
+        "svr-connection"
+      ],
+      "referenceDate": "2026-11-01",
+      "photoDate": null,
+      "composition": "two mainline platforms; separate KDT island in former goods yard; connected exchange, loop, turnback and workshop sidings",
+      "requiredGridFootprint": {
+        "cellMetres": 16,
+        "centre": [
+          -1009,
+          232
+        ],
+        "radiusCells": 70
+      },
+      "elevation": {
+        "railMetresODN": 58.97,
+        "status": "existing engineered profile; not railhead survey"
+      },
+      "trackCount": 2,
+      "platformCount": 2,
+      "interfaces": [
+        "roads",
+        "terrain"
+      ],
+      "customAssets": [
+        "kidderminster-town",
+        "gwr-signal-box",
+        "carriage-works"
+      ],
+      "confidence": {
+        "plan": "mapped",
+        "topology": "source-node graph; diagrams cross-check key sites",
+        "height": "inferred",
+        "appearance": "requires comparison"
+      },
+      "cameraViews": [
+        {
+          "station": "KID",
+          "direction": 1,
+          "offsetMetres": -60
+        },
+        {
+          "station": "KID",
+          "direction": -1,
+          "offsetMetres": 60
+        }
+      ]
+    },
+    {
+      "id": "BKD",
+      "name": "Blakedown",
+      "approximateOSGB": [
+        388100,
+        278767
+      ],
+      "sourceIds": [
+        "osm",
+        "photos"
+      ],
+      "referenceDate": "2026-11-01",
+      "photoDate": null,
+      "composition": "preserve source alignment, platforms, local roads and terrain",
+      "requiredGridFootprint": {
+        "cellMetres": 16,
+        "centre": [
+          -744,
+          77
+        ],
+        "radiusCells": 24
+      },
+      "elevation": {
+        "railMetresODN": 73.22,
+        "status": "existing engineered profile; not railhead survey"
+      },
+      "trackCount": 2,
+      "platformCount": 2,
+      "interfaces": [
+        "roads",
+        "terrain"
+      ],
+      "customAssets": [
+        "regional-station-kit"
+      ],
+      "confidence": {
+        "plan": "mapped",
+        "topology": "source-node graph; diagrams cross-check key sites",
+        "height": "inferred",
+        "appearance": "requires comparison"
+      },
+      "cameraViews": [
+        {
+          "station": "BKD",
+          "direction": 1,
+          "offsetMetres": -60
+        },
+        {
+          "station": "BKD",
+          "direction": -1,
+          "offsetMetres": 60
+        }
+      ]
+    },
+    {
+      "id": "HAG",
+      "name": "Hagley",
+      "approximateOSGB": [
+        390135,
+        280502
+      ],
+      "sourceIds": [
+        "osm",
+        "photos"
+      ],
+      "referenceDate": "2026-11-01",
+      "photoDate": null,
+      "composition": "preserve source alignment, platforms, local roads and terrain",
+      "requiredGridFootprint": {
+        "cellMetres": 16,
+        "centre": [
+          -617,
+          -32
+        ],
+        "radiusCells": 24
+      },
+      "elevation": {
+        "railMetresODN": 95.19,
+        "status": "existing engineered profile; not railhead survey"
+      },
+      "trackCount": 2,
+      "platformCount": 2,
+      "interfaces": [
+        "roads",
+        "terrain"
+      ],
+      "customAssets": [
+        "regional-station-kit"
+      ],
+      "confidence": {
+        "plan": "mapped",
+        "topology": "source-node graph; diagrams cross-check key sites",
+        "height": "inferred",
+        "appearance": "requires comparison"
+      },
+      "cameraViews": [
+        {
+          "station": "HAG",
+          "direction": 1,
+          "offsetMetres": -60
+        },
+        {
+          "station": "HAG",
+          "direction": -1,
+          "offsetMetres": 60
+        }
+      ]
+    },
+    {
+      "id": "SBJ",
+      "name": "Stourbridge Junction",
+      "approximateOSGB": [
+        390988,
+        283298
+      ],
+      "sourceIds": [
+        "osm",
+        "osm"
+      ],
+      "referenceDate": "2026-11-01",
+      "photoDate": null,
+      "composition": "separate divergent branch bay and connected route to Stourbridge Town",
+      "requiredGridFootprint": {
+        "cellMetres": 16,
+        "centre": [
+          -564,
+          -207
+        ],
+        "radiusCells": 24
+      },
+      "elevation": {
+        "railMetresODN": 97.61,
+        "status": "existing engineered profile; not railhead survey"
+      },
+      "trackCount": 2,
+      "platformCount": 3,
+      "interfaces": [
+        "roads",
+        "terrain"
+      ],
+      "customAssets": [
+        "branch-platform"
+      ],
+      "confidence": {
+        "plan": "mapped",
+        "topology": "source-node graph; diagrams cross-check key sites",
+        "height": "inferred",
+        "appearance": "requires comparison"
+      },
+      "cameraViews": [
+        {
+          "station": "SBJ",
+          "direction": 1,
+          "offsetMetres": -60
+        },
+        {
+          "station": "SBJ",
+          "direction": -1,
+          "offsetMetres": 60
+        }
+      ]
+    },
+    {
+      "id": "LYE",
+      "name": "Lye",
+      "approximateOSGB": [
+        392208,
+        284669
+      ],
+      "sourceIds": [
+        "osm",
+        "photos"
+      ],
+      "referenceDate": "2026-11-01",
+      "photoDate": null,
+      "composition": "preserve source alignment, platforms, local roads and terrain",
+      "requiredGridFootprint": {
+        "cellMetres": 16,
+        "centre": [
+          -487,
+          -292
+        ],
+        "radiusCells": 24
+      },
+      "elevation": {
+        "railMetresODN": 86.56,
+        "status": "existing engineered profile; not railhead survey"
+      },
+      "trackCount": 2,
+      "platformCount": 2,
+      "interfaces": [
+        "roads",
+        "terrain"
+      ],
+      "customAssets": [
+        "regional-station-kit"
+      ],
+      "confidence": {
+        "plan": "mapped",
+        "topology": "source-node graph; diagrams cross-check key sites",
+        "height": "inferred",
+        "appearance": "requires comparison"
+      },
+      "cameraViews": [
+        {
+          "station": "LYE",
+          "direction": 1,
+          "offsetMetres": -60
+        },
+        {
+          "station": "LYE",
+          "direction": -1,
+          "offsetMetres": 60
+        }
+      ]
+    },
+    {
+      "id": "CRA",
+      "name": "Cradley Heath",
+      "approximateOSGB": [
+        393938,
+        285724
+      ],
+      "sourceIds": [
+        "osm",
+        "photos"
+      ],
+      "referenceDate": "2026-11-01",
+      "photoDate": null,
+      "composition": "preserve source alignment, platforms, local roads and terrain",
+      "requiredGridFootprint": {
+        "cellMetres": 16,
+        "centre": [
+          -379,
+          -358
+        ],
+        "radiusCells": 24
+      },
+      "elevation": {
+        "railMetresODN": 94.44,
+        "status": "existing engineered profile; not railhead survey"
+      },
+      "trackCount": 2,
+      "platformCount": 2,
+      "interfaces": [
+        "roads",
+        "terrain"
+      ],
+      "customAssets": [
+        "regional-station-kit"
+      ],
+      "confidence": {
+        "plan": "mapped",
+        "topology": "source-node graph; diagrams cross-check key sites",
+        "height": "inferred",
+        "appearance": "requires comparison"
+      },
+      "cameraViews": [
+        {
+          "station": "CRA",
+          "direction": 1,
+          "offsetMetres": -60
+        },
+        {
+          "station": "CRA",
+          "direction": -1,
+          "offsetMetres": 60
+        }
+      ]
+    },
+    {
+      "id": "OHL",
+      "name": "Old Hill",
+      "approximateOSGB": [
+        396281,
+        285871
+      ],
+      "sourceIds": [
+        "osm",
+        "photos"
+      ],
+      "referenceDate": "2026-11-01",
+      "photoDate": null,
+      "composition": "preserve source alignment, platforms, local roads and terrain",
+      "requiredGridFootprint": {
+        "cellMetres": 16,
+        "centre": [
+          -233,
+          -367
+        ],
+        "radiusCells": 24
+      },
+      "elevation": {
+        "railMetresODN": 137.98,
+        "status": "existing engineered profile; not railhead survey"
+      },
+      "trackCount": 2,
+      "platformCount": 2,
+      "interfaces": [
+        "roads",
+        "terrain"
+      ],
+      "customAssets": [
+        "regional-station-kit"
+      ],
+      "confidence": {
+        "plan": "mapped",
+        "topology": "source-node graph; diagrams cross-check key sites",
+        "height": "inferred",
+        "appearance": "requires comparison"
+      },
+      "cameraViews": [
+        {
+          "station": "OHL",
+          "direction": 1,
+          "offsetMetres": -60
+        },
+        {
+          "station": "OHL",
+          "direction": -1,
+          "offsetMetres": 60
+        }
+      ]
+    },
+    {
+      "id": "ROW",
+      "name": "Rowley Regis",
+      "approximateOSGB": [
+        398005,
+        286608
+      ],
+      "sourceIds": [
+        "osm",
+        "photos"
+      ],
+      "referenceDate": "2026-11-01",
+      "photoDate": null,
+      "composition": "preserve source alignment, platforms, local roads and terrain",
+      "requiredGridFootprint": {
+        "cellMetres": 16,
+        "centre": [
+          -125,
+          -414
+        ],
+        "radiusCells": 24
+      },
+      "elevation": {
+        "railMetresODN": 167.09,
+        "status": "existing engineered profile; not railhead survey"
+      },
+      "trackCount": 2,
+      "platformCount": 2,
+      "interfaces": [
+        "roads",
+        "terrain"
+      ],
+      "customAssets": [
+        "regional-station-kit"
+      ],
+      "confidence": {
+        "plan": "mapped",
+        "topology": "source-node graph; diagrams cross-check key sites",
+        "height": "inferred",
+        "appearance": "requires comparison"
+      },
+      "cameraViews": [
+        {
+          "station": "ROW",
+          "direction": 1,
+          "offsetMetres": -60
+        },
+        {
+          "station": "ROW",
+          "direction": -1,
+          "offsetMetres": 60
+        }
+      ]
+    },
+    {
+      "id": "LGG",
+      "name": "Langley Green",
+      "approximateOSGB": [
+        399730,
+        288395
+      ],
+      "sourceIds": [
+        "osm",
+        "photos"
+      ],
+      "referenceDate": "2026-11-01",
+      "photoDate": null,
+      "composition": "preserve source alignment, platforms, local roads and terrain",
+      "requiredGridFootprint": {
+        "cellMetres": 16,
+        "centre": [
+          -17,
+          -525
+        ],
+        "radiusCells": 24
+      },
+      "elevation": {
+        "railMetresODN": 159.28,
+        "status": "existing engineered profile; not railhead survey"
+      },
+      "trackCount": 2,
+      "platformCount": 2,
+      "interfaces": [
+        "roads",
+        "terrain"
+      ],
+      "customAssets": [
+        "regional-station-kit"
+      ],
+      "confidence": {
+        "plan": "mapped",
+        "topology": "source-node graph; diagrams cross-check key sites",
+        "height": "inferred",
+        "appearance": "requires comparison"
+      },
+      "cameraViews": [
+        {
+          "station": "LGG",
+          "direction": 1,
+          "offsetMetres": -60
+        },
+        {
+          "station": "LGG",
+          "direction": -1,
+          "offsetMetres": 60
+        }
+      ]
+    },
+    {
+      "id": "SGB",
+      "name": "Smethwick Galton Bridge",
+      "approximateOSGB": [
+        401424,
+        289353
+      ],
+      "sourceIds": [
+        "osm",
+        "galton",
+        "galton-bridge",
+        "galton-access"
+      ],
+      "referenceDate": "2026-11-01",
+      "photoDate": null,
+      "composition": "two upper and two lower platforms; no rail graph connection at crossing; canal beside lower line",
+      "requiredGridFootprint": {
+        "cellMetres": 16,
+        "centre": [
+          89,
+          -585
+        ],
+        "radiusCells": 24
+      },
+      "elevation": {
+        "railMetresODN": 152.98,
+        "status": "existing engineered profile; not railhead survey",
+        "access": "OSM layers 1/2 retained as separate decks; rail-clearance-constrained absolute levels"
+      },
+      "trackCount": {
+        "upperRail": 2,
+        "lowerRail": 2
+      },
+      "platformCount": 4,
+      "interfaces": [
+        "roads",
+        "terrain",
+        "canal",
+        "lower railway"
+      ],
+      "customAssets": [
+        "galton-interchange"
+      ],
+      "confidence": {
+        "plan": "mapped",
+        "topology": "source-node graph; diagrams cross-check key sites",
+        "height": "inferred",
+        "appearance": "requires comparison"
+      },
+      "cameraViews": [
+        {
+          "station": "SGB",
+          "direction": 1,
+          "offsetMetres": -60
+        },
+        {
+          "station": "SGB",
+          "direction": -1,
+          "offsetMetres": 60
+        }
+      ]
+    },
+    {
+      "id": "THW",
+      "name": "The Hawthorns",
+      "approximateOSGB": [
+        402470,
+        289750
+      ],
+      "sourceIds": [
+        "osm",
+        "hawthorns"
+      ],
+      "referenceDate": "2026-11-01",
+      "photoDate": null,
+      "composition": "two rail and two tram platforms; separate railway and Metro ownership",
+      "requiredGridFootprint": {
+        "cellMetres": 16,
+        "centre": [
+          154,
+          -610
+        ],
+        "radiusCells": 24
+      },
+      "elevation": {
+        "railMetresODN": 151.82,
+        "status": "existing engineered profile; not railhead survey"
+      },
+      "trackCount": 2,
+      "platformCount": {
+        "rail": 2,
+        "metro": 2
+      },
+      "interfaces": [
+        "roads",
+        "terrain",
+        "tram"
+      ],
+      "customAssets": [
+        "metro-platform-kit"
+      ],
+      "confidence": {
+        "plan": "mapped",
+        "topology": "source-node graph; diagrams cross-check key sites",
+        "height": "inferred",
+        "appearance": "requires comparison"
+      },
+      "cameraViews": [
+        {
+          "station": "THW",
+          "direction": 1,
+          "offsetMetres": -60
+        },
+        {
+          "station": "THW",
+          "direction": -1,
+          "offsetMetres": 60
+        }
+      ]
+    },
+    {
+      "id": "JEQ",
+      "name": "Jewellery Quarter",
+      "approximateOSGB": [
+        405960,
+        287972
+      ],
+      "sourceIds": [
+        "osm",
+        "jq"
+      ],
+      "referenceDate": "2026-11-01",
+      "photoDate": null,
+      "composition": "two rail and two tram platforms; parallel independent graphs and separate Hockley bores",
+      "requiredGridFootprint": {
+        "cellMetres": 16,
+        "centre": [
+          372,
+          -499
+        ],
+        "radiusCells": 24
+      },
+      "elevation": {
+        "railMetresODN": 120.94,
+        "status": "existing engineered profile; not railhead survey",
+        "portals": "2026 OSM Hockley No. 1 and No. 2 way endpoints"
+      },
+      "trackCount": 2,
+      "platformCount": {
+        "rail": 2,
+        "metro": 2
+      },
+      "interfaces": [
+        "roads",
+        "terrain",
+        "tram"
+      ],
+      "customAssets": [
+        "hockley-portals"
+      ],
+      "confidence": {
+        "plan": "mapped",
+        "topology": "source-node graph; diagrams cross-check key sites",
+        "height": "inferred",
+        "appearance": "requires comparison"
+      },
+      "cameraViews": [
+        {
+          "station": "JEQ",
+          "direction": 1,
+          "offsetMetres": -60
+        },
+        {
+          "station": "JEQ",
+          "direction": -1,
+          "offsetMetres": 60
+        }
+      ]
+    },
+    {
+      "id": "BSW",
+      "name": "Birmingham Snow Hill",
+      "approximateOSGB": [
+        406900,
+        287313
+      ],
+      "sourceIds": [
+        "osm",
+        "moor"
+      ],
+      "referenceDate": "2026-11-01",
+      "photoDate": null,
+      "composition": "covered three-platform modern station, urban tunnel falls towards Moor Street",
+      "requiredGridFootprint": {
+        "cellMetres": 16,
+        "centre": [
+          431,
+          -458
+        ],
+        "radiusCells": 24
+      },
+      "elevation": {
+        "railMetresODN": 128.47,
+        "status": "inferred datum, smoothly connected to approximately 1:45 mapped tunnel bore"
+      },
+      "trackCount": 2,
+      "platformCount": 3,
+      "interfaces": [
+        "roads",
+        "terrain"
+      ],
+      "customAssets": [
+        "snow-hill-deck"
+      ],
+      "confidence": {
+        "plan": "mapped",
+        "topology": "source-node graph; diagrams cross-check key sites",
+        "height": "inferred",
+        "appearance": "requires comparison"
+      },
+      "cameraViews": [
+        {
+          "station": "BSW",
+          "direction": 1,
+          "offsetMetres": -60
+        },
+        {
+          "station": "BSW",
+          "direction": -1,
+          "offsetMetres": 60
+        }
+      ]
+    },
+    {
+      "id": "BMO",
+      "name": "Birmingham Moor Street",
+      "approximateOSGB": [
+        407434,
+        286782
+      ],
+      "sourceIds": [
+        "osm",
+        "moor",
+        "selfridges",
+        "rotunda",
+        "duddeston"
+      ],
+      "referenceDate": "2026-11-01",
+      "photoDate": null,
+      "composition": "through platforms beside terminal bays, frontage/canopies, tunnel north, Selfridges southwest and Rotunda west",
+      "requiredGridFootprint": {
+        "cellMetres": 16,
+        "centre": [
+          464,
+          -424
+        ],
+        "radiusCells": 24
+      },
+      "elevation": {
+        "railMetresODN": 117.93,
+        "status": "existing engineered profile; not railhead survey"
+      },
+      "trackCount": 2,
+      "platformCount": 4,
+      "interfaces": [
+        "roads",
+        "terrain"
+      ],
+      "customAssets": [
+        "moor-street-frontage",
+        "selfridges",
+        "rotunda",
+        "duddeston-viaduct"
+      ],
+      "confidence": {
+        "plan": "mapped",
+        "topology": "source-node graph; diagrams cross-check key sites",
+        "height": "inferred",
+        "appearance": "requires comparison"
+      },
+      "cameraViews": [
+        {
+          "station": "BMO",
+          "direction": 1,
+          "offsetMetres": -60
+        },
+        {
+          "station": "BMO",
+          "direction": -1,
+          "offsetMetres": 60
+        }
+      ]
+    },
+    {
+      "id": "BBS",
+      "name": "Bordesley",
+      "approximateOSGB": [
+        408402,
+        286036
+      ],
+      "sourceIds": [
+        "osm",
+        "photos"
+      ],
+      "referenceDate": "2026-11-01",
+      "photoDate": null,
+      "composition": "preserve source alignment, platforms, local roads and terrain",
+      "requiredGridFootprint": {
+        "cellMetres": 16,
+        "centre": [
+          525,
+          -378
+        ],
+        "radiusCells": 24
+      },
+      "elevation": {
+        "railMetresODN": 118.7,
+        "status": "existing engineered profile; not railhead survey"
+      },
+      "trackCount": 2,
+      "platformCount": 2,
+      "interfaces": [
+        "roads",
+        "terrain"
+      ],
+      "customAssets": [
+        "regional-station-kit"
+      ],
+      "confidence": {
+        "plan": "mapped",
+        "topology": "source-node graph; diagrams cross-check key sites",
+        "height": "inferred",
+        "appearance": "requires comparison"
+      },
+      "cameraViews": [
+        {
+          "station": "BBS",
+          "direction": 1,
+          "offsetMetres": -60
+        },
+        {
+          "station": "BBS",
+          "direction": -1,
+          "offsetMetres": 60
+        }
+      ]
+    },
+    {
+      "id": "SMA",
+      "name": "Small Heath",
+      "approximateOSGB": [
+        409645,
+        285080
+      ],
+      "sourceIds": [
+        "osm",
+        "photos"
+      ],
+      "referenceDate": "2026-11-01",
+      "photoDate": null,
+      "composition": "preserve source alignment, platforms, local roads and terrain",
+      "requiredGridFootprint": {
+        "cellMetres": 16,
+        "centre": [
+          602,
+          -318
+        ],
+        "radiusCells": 24
+      },
+      "elevation": {
+        "railMetresODN": 118.09,
+        "status": "existing engineered profile; not railhead survey"
+      },
+      "trackCount": 2,
+      "platformCount": 2,
+      "interfaces": [
+        "roads",
+        "terrain"
+      ],
+      "customAssets": [
+        "regional-station-kit"
+      ],
+      "confidence": {
+        "plan": "mapped",
+        "topology": "source-node graph; diagrams cross-check key sites",
+        "height": "inferred",
+        "appearance": "requires comparison"
+      },
+      "cameraViews": [
+        {
+          "station": "SMA",
+          "direction": 1,
+          "offsetMetres": -60
+        },
+        {
+          "station": "SMA",
+          "direction": -1,
+          "offsetMetres": 60
+        }
+      ]
+    },
+    {
+      "id": "TYS",
+      "name": "Tyseley",
+      "approximateOSGB": [
+        411065,
+        283994
+      ],
+      "sourceIds": [
+        "osm",
+        "works",
+        "depot"
+      ],
+      "referenceDate": "2026-11-01",
+      "photoDate": null,
+      "composition": "active modern depot and separate preserved works/turntable; fan of mapped sidings, no reinstatement of demolished twin roundhouses",
+      "requiredGridFootprint": {
+        "cellMetres": 16,
+        "centre": [
+          691,
+          -250
+        ],
+        "radiusCells": 70
+      },
+      "elevation": {
+        "railMetresODN": 121.17,
+        "status": "existing engineered profile; not railhead survey"
+      },
+      "trackCount": 2,
+      "platformCount": 4,
+      "interfaces": [
+        "roads",
+        "terrain"
+      ],
+      "customAssets": [
+        "tyseley-depot",
+        "tyseley-works"
+      ],
+      "confidence": {
+        "plan": "mapped",
+        "topology": "source-node graph; diagrams cross-check key sites",
+        "height": "inferred",
+        "appearance": "requires comparison"
+      },
+      "cameraViews": [
+        {
+          "station": "TYS",
+          "direction": 1,
+          "offsetMetres": -60
+        },
+        {
+          "station": "TYS",
+          "direction": -1,
+          "offsetMetres": 60
+        }
+      ]
+    },
+    {
+      "id": "ACG",
+      "name": "Acocks Green",
+      "approximateOSGB": [
+        412378,
+        283520
+      ],
+      "sourceIds": [
+        "osm",
+        "photos"
+      ],
+      "referenceDate": "2026-11-01",
+      "photoDate": null,
+      "composition": "preserve source alignment, platforms, local roads and terrain",
+      "requiredGridFootprint": {
+        "cellMetres": 16,
+        "centre": [
+          773,
+          -221
+        ],
+        "radiusCells": 24
+      },
+      "elevation": {
+        "railMetresODN": 123.66,
+        "status": "existing engineered profile; not railhead survey"
+      },
+      "trackCount": 2,
+      "platformCount": 2,
+      "interfaces": [
+        "roads",
+        "terrain"
+      ],
+      "customAssets": [
+        "regional-station-kit"
+      ],
+      "confidence": {
+        "plan": "mapped",
+        "topology": "source-node graph; diagrams cross-check key sites",
+        "height": "inferred",
+        "appearance": "requires comparison"
+      },
+      "cameraViews": [
+        {
+          "station": "ACG",
+          "direction": 1,
+          "offsetMetres": -60
+        },
+        {
+          "station": "ACG",
+          "direction": -1,
+          "offsetMetres": 60
+        }
+      ]
+    },
+    {
+      "id": "OLT",
+      "name": "Olton",
+      "approximateOSGB": [
+        413387,
+        282289
+      ],
+      "sourceIds": [
+        "osm",
+        "photos"
+      ],
+      "referenceDate": "2026-11-01",
+      "photoDate": null,
+      "composition": "preserve source alignment, platforms, local roads and terrain",
+      "requiredGridFootprint": {
+        "cellMetres": 16,
+        "centre": [
+          836,
+          -144
+        ],
+        "radiusCells": 24
+      },
+      "elevation": {
+        "railMetresODN": 124.6,
+        "status": "existing engineered profile; not railhead survey"
+      },
+      "trackCount": 2,
+      "platformCount": 2,
+      "interfaces": [
+        "roads",
+        "terrain"
+      ],
+      "customAssets": [
+        "regional-station-kit"
+      ],
+      "confidence": {
+        "plan": "mapped",
+        "topology": "source-node graph; diagrams cross-check key sites",
+        "height": "inferred",
+        "appearance": "requires comparison"
+      },
+      "cameraViews": [
+        {
+          "station": "OLT",
+          "direction": 1,
+          "offsetMetres": -60
+        },
+        {
+          "station": "OLT",
+          "direction": -1,
+          "offsetMetres": 60
+        }
+      ]
+    },
+    {
+      "id": "SOL",
+      "name": "Solihull",
+      "approximateOSGB": [
+        414452,
+        279641
+      ],
+      "sourceIds": [
+        "osm",
+        "photos"
+      ],
+      "referenceDate": "2026-11-01",
+      "photoDate": null,
+      "composition": "preserve source alignment, platforms, local roads and terrain",
+      "requiredGridFootprint": {
+        "cellMetres": 16,
+        "centre": [
+          903,
+          22
+        ],
+        "radiusCells": 24
+      },
+      "elevation": {
+        "railMetresODN": 130.02,
+        "status": "existing engineered profile; not railhead survey"
+      },
+      "trackCount": 2,
+      "platformCount": 2,
+      "interfaces": [
+        "roads",
+        "terrain"
+      ],
+      "customAssets": [
+        "regional-station-kit"
+      ],
+      "confidence": {
+        "plan": "mapped",
+        "topology": "source-node graph; diagrams cross-check key sites",
+        "height": "inferred",
+        "appearance": "requires comparison"
+      },
+      "cameraViews": [
+        {
+          "station": "SOL",
+          "direction": 1,
+          "offsetMetres": -60
+        },
+        {
+          "station": "SOL",
+          "direction": -1,
+          "offsetMetres": 60
+        }
+      ]
+    },
+    {
+      "id": "WMR",
+      "name": "Widney Manor",
+      "approximateOSGB": [
+        415455,
+        277580
+      ],
+      "sourceIds": [
+        "osm",
+        "photos"
+      ],
+      "referenceDate": "2026-11-01",
+      "photoDate": null,
+      "composition": "preserve source alignment, platforms, local roads and terrain",
+      "requiredGridFootprint": {
+        "cellMetres": 16,
+        "centre": [
+          965,
+          151
+        ],
+        "radiusCells": 24
+      },
+      "elevation": {
+        "railMetresODN": 126.23,
+        "status": "existing engineered profile; not railhead survey"
+      },
+      "trackCount": 2,
+      "platformCount": 2,
+      "interfaces": [
+        "roads",
+        "terrain"
+      ],
+      "customAssets": [
+        "regional-station-kit"
+      ],
+      "confidence": {
+        "plan": "mapped",
+        "topology": "source-node graph; diagrams cross-check key sites",
+        "height": "inferred",
+        "appearance": "requires comparison"
+      },
+      "cameraViews": [
+        {
+          "station": "WMR",
+          "direction": 1,
+          "offsetMetres": -60
+        },
+        {
+          "station": "WMR",
+          "direction": -1,
+          "offsetMetres": 60
+        }
+      ]
+    },
+    {
+      "id": "DDG",
+      "name": "Dorridge",
+      "approximateOSGB": [
+        416913,
+        274888
+      ],
+      "sourceIds": [
+        "osm",
+        "photos"
+      ],
+      "referenceDate": "2026-11-01",
+      "photoDate": null,
+      "composition": "preserve source alignment, platforms, local roads and terrain",
+      "requiredGridFootprint": {
+        "cellMetres": 16,
+        "centre": [
+          1057,
+          319
+        ],
+        "radiusCells": 24
+      },
+      "elevation": {
+        "railMetresODN": 123.82,
+        "status": "existing engineered profile; not railhead survey"
+      },
+      "trackCount": 2,
+      "platformCount": 3,
+      "interfaces": [
+        "roads",
+        "terrain"
+      ],
+      "customAssets": [
+        "regional-station-kit"
+      ],
+      "confidence": {
+        "plan": "mapped",
+        "topology": "source-node graph; diagrams cross-check key sites",
+        "height": "inferred",
+        "appearance": "requires comparison"
+      },
+      "cameraViews": [
+        {
+          "station": "DDG",
+          "direction": 1,
+          "offsetMetres": -60
+        },
+        {
+          "station": "DDG",
+          "direction": -1,
+          "offsetMetres": 60
+        }
+      ]
+    },
+    {
+      "id": "KDT",
+      "name": "Kidderminster Town",
+      "sourceIds": [
+        "osm",
+        "svr-plan",
+        "svr-gradient",
+        "falling-sands"
+      ],
+      "referenceDate": "2026-11-01",
+      "photoDate": null,
+      "composition": "Separate heritage station, yard, carriage/diesel works, exchange connection and nearby departing tracks, scenery only",
+      "requiredGridFootprint": {
+        "cellMetres": 16,
+        "radiusCells": 40
+      },
+      "elevation": {
+        "status": "gradient-constrained model; absolute levels provisional"
+      },
+      "trackCount": 1,
+      "platformCount": 2,
+      "interfaces": [
+        "main-line exchange",
+        "station approach",
+        "River Stour",
+        "Staffordshire and Worcestershire Canal",
+        "yard",
+        "embankment"
+      ],
+      "customAssets": [
+        "gwr-station-kit"
+      ],
+      "confidence": {
+        "plan": "mapped",
+        "topology": "source-node graph",
+        "height": "inferred profile",
+        "appearance": "requires comparison"
+      },
+      "cameraViews": [
+        {
+          "station": "KID",
+          "direction": -1,
+          "offsetMetres": -60
+        }
+      ],
+      "approximateOSGB": [
+        383748,
+        276272
+      ]
+    }
+  ],
+  "acceptance": {
+    "topology": "required",
+    "heightAndClearance": "required",
+    "saveReload": "required",
+    "fixedCameraComparison": "required; automated screenshot capture alone does not accept appearance"
+  },
+  "scope": "Birmingham\u2013Kidderminster main railway. SVR limited to Kidderminster Town, yard, works, exchange and nearby departing tracks as scenery; no full SVR reconstruction or journey."
+}

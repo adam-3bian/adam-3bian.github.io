@@ -1,0 +1,475 @@
+{
+  "scope": "Headless Chromium/SwiftShader front views; source review still required for exact appearance and inferred levels",
+  "checks": {
+    "noSVRJourney": true,
+    "completeWorldOfflineReload": {
+      "before": {
+        "s": 354.0000212836039,
+        "revision": "4f2d4c6158dc26bb9acb7429e1c6b15b0622e7855ba845a6ba0fa8d9fc5c856a",
+        "tileCount": 133,
+        "terrainBytes": 3180600,
+        "expected": 133
+      },
+      "after": {
+        "s": 354.0000212836039,
+        "revision": "4f2d4c6158dc26bb9acb7429e1c6b15b0622e7855ba845a6ba0fa8d9fc5c856a",
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 4,
+          "triangles": 1515179,
+          "placements": 457,
+          "gpuErrors": [],
+          "drawCalls": 771,
+          "memory": {
+            "geometries": 11,
+            "textures": 3
+          }
+        }
+      }
+    },
+    "webglErrors": 0
+  },
+  "captures": [
+    {
+      "station": "KID",
+      "direction": 1,
+      "path": "docs/captures/grid-world/kid-1.png",
+      "sha256": "d6243d15fea85ea81256db52746f56dd7e6eb34b6119b8ba03a74fcfac269670",
+      "state": {
+        "camera": [
+          -16154.96761448798,
+          61.13738741555296,
+          3771.2420767049803
+        ],
+        "s": 260.0000212836039,
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 8,
+          "triangles": 1982962,
+          "placements": 610,
+          "gpuErrors": [],
+          "drawCalls": 798,
+          "memory": {
+            "geometries": 13,
+            "textures": 3
+          }
+        },
+        "worldHash": "4ec4031273abee935da450d2528c12f297ab142da7ee80b8bd8f14e111a0b5cc",
+        "revision": "4f2d4c6158dc26bb9acb7429e1c6b15b0622e7855ba845a6ba0fa8d9fc5c856a"
+      }
+    },
+    {
+      "station": "KID",
+      "mode": "comparison context",
+      "path": "docs/captures/grid-world/kid-context.png",
+      "sha256": "68c02b7b8685588e28b636023861cf1e974d1af9af40d722af1bdf2189416baf",
+      "state": {
+        "camera": [
+          -16031.721970016444,
+          153.46875,
+          3886.3487631306334
+        ],
+        "target": [
+          -16152.038515798928,
+          58.96875,
+          3709.030488224037
+        ],
+        "worldHash": "4ec4031273abee935da450d2528c12f297ab142da7ee80b8bd8f14e111a0b5cc",
+        "revision": "4f2d4c6158dc26bb9acb7429e1c6b15b0622e7855ba845a6ba0fa8d9fc5c856a"
+      }
+    },
+    {
+      "station": "KID",
+      "direction": -1,
+      "path": "docs/captures/grid-world/kid--1.png",
+      "sha256": "b9e37563ed24d5c18c214c5340d729b50f2342ff74a5d278b635de0356474f2e",
+      "state": {
+        "camera": [
+          -16113.996364698583,
+          61.699890232503044,
+          3658.4071968025646
+        ],
+        "s": 380.0000212836039,
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 8,
+          "triangles": 1982962,
+          "placements": 610,
+          "gpuErrors": [],
+          "drawCalls": 405,
+          "memory": {
+            "geometries": 19,
+            "textures": 3
+          }
+        },
+        "worldHash": "4ec4031273abee935da450d2528c12f297ab142da7ee80b8bd8f14e111a0b5cc",
+        "revision": "4f2d4c6158dc26bb9acb7429e1c6b15b0622e7855ba845a6ba0fa8d9fc5c856a"
+      }
+    },
+    {
+      "station": "SGB",
+      "direction": 1,
+      "path": "docs/captures/grid-world/sgb-1.png",
+      "sha256": "e57302cd2abcabfc35ca0d51afc0e549d670aa888147c428a0831a8a8193b8d7",
+      "state": {
+        "camera": [
+          1372.0698077101656,
+          156.7527443270374,
+          -9323.64023533415
+        ],
+        "s": 24229.720680787777,
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 15,
+          "triangles": 5170147,
+          "placements": 2749,
+          "gpuErrors": [],
+          "drawCalls": 680,
+          "memory": {
+            "geometries": 30,
+            "textures": 3
+          }
+        },
+        "worldHash": "4ec4031273abee935da450d2528c12f297ab142da7ee80b8bd8f14e111a0b5cc",
+        "revision": "4f2d4c6158dc26bb9acb7429e1c6b15b0622e7855ba845a6ba0fa8d9fc5c856a"
+      }
+    },
+    {
+      "station": "SGB",
+      "mode": "comparison context",
+      "path": "docs/captures/grid-world/sgb-context.png",
+      "sha256": "2179f1da4ad9af2f46a917e8bb65012d2b4ac8e1750c75e9e90e066076d12a34",
+      "state": {
+        "camera": [
+          1362.4269897153938,
+          248.2943811097264,
+          -9149.084436477555
+        ],
+        "target": [
+          1412.962765376257,
+          152.96875,
+          -9370.08210416942
+        ],
+        "worldHash": "4ec4031273abee935da450d2528c12f297ab142da7ee80b8bd8f14e111a0b5cc",
+        "revision": "4f2d4c6158dc26bb9acb7429e1c6b15b0622e7855ba845a6ba0fa8d9fc5c856a"
+      }
+    },
+    {
+      "station": "SGB",
+      "direction": -1,
+      "path": "docs/captures/grid-world/sgb--1.png",
+      "sha256": "b343a739047ca3cc394b4eef151c51c8d955c60b8e5a72d7b74e7905326c68dc",
+      "state": {
+        "camera": [
+          1473.8543042637284,
+          153.73055619032934,
+          -9387.019816343272
+        ],
+        "s": 24349.720680787777,
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 16,
+          "triangles": 5338320,
+          "placements": 2793,
+          "gpuErrors": [],
+          "drawCalls": 703,
+          "memory": {
+            "geometries": 35,
+            "textures": 3
+          }
+        },
+        "worldHash": "4ec4031273abee935da450d2528c12f297ab142da7ee80b8bd8f14e111a0b5cc",
+        "revision": "4f2d4c6158dc26bb9acb7429e1c6b15b0622e7855ba845a6ba0fa8d9fc5c856a"
+      }
+    },
+    {
+      "station": "THW",
+      "direction": 1,
+      "path": "docs/captures/grid-world/thw-1.png",
+      "sha256": "8c30aafaba32783234282f8f3f5ff1977759c3684d975fe8cdbb6fb1eef96051",
+      "state": {
+        "camera": [
+          2417.4071300466326,
+          154.9324952695617,
+          -9778.966530298621
+        ],
+        "s": 25421.813833034266,
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 18,
+          "triangles": 6133639,
+          "placements": 3343,
+          "gpuErrors": [],
+          "drawCalls": 649,
+          "memory": {
+            "geometries": 40,
+            "textures": 3
+          }
+        },
+        "worldHash": "4ec4031273abee935da450d2528c12f297ab142da7ee80b8bd8f14e111a0b5cc",
+        "revision": "4f2d4c6158dc26bb9acb7429e1c6b15b0622e7855ba845a6ba0fa8d9fc5c856a"
+      }
+    },
+    {
+      "station": "THW",
+      "mode": "comparison context",
+      "path": "docs/captures/grid-world/thw-context.png",
+      "sha256": "e97357f4500aacf23aae55afdaafe84e8a9da42100b711feea70908fd32570c2",
+      "state": {
+        "camera": [
+          2307.972093060729,
+          248.32927276511668,
+          -9656.680250177418
+        ],
+        "target": [
+          2478.8392189800315,
+          151.8125,
+          -9767.585964554693
+        ],
+        "worldHash": "4ec4031273abee935da450d2528c12f297ab142da7ee80b8bd8f14e111a0b5cc",
+        "revision": "4f2d4c6158dc26bb9acb7429e1c6b15b0622e7855ba845a6ba0fa8d9fc5c856a"
+      }
+    },
+    {
+      "station": "JEQ",
+      "direction": 1,
+      "path": "docs/captures/grid-world/jeq-1.png",
+      "sha256": "852f498c3ad12cac0a9df187672b3c029b4d6d34f2803d8bef35d83c75ee2e72",
+      "state": {
+        "camera": [
+          5904.512918479223,
+          125.19998785667151,
+          -7994.61040369117
+        ],
+        "s": 29374.067512246307,
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 22,
+          "triangles": 8622727,
+          "placements": 5695,
+          "gpuErrors": [],
+          "drawCalls": 761,
+          "memory": {
+            "geometries": 79,
+            "textures": 3
+          }
+        },
+        "worldHash": "4ec4031273abee935da450d2528c12f297ab142da7ee80b8bd8f14e111a0b5cc",
+        "revision": "4f2d4c6158dc26bb9acb7429e1c6b15b0622e7855ba845a6ba0fa8d9fc5c856a"
+      }
+    },
+    {
+      "station": "JEQ",
+      "mode": "comparison context",
+      "path": "docs/captures/grid-world/jeq-context.png",
+      "sha256": "347e7e270ea208e3ea80d15fc0954db4bb026d3e14bc1e6264a28d33ebdffd5d",
+      "state": {
+        "camera": [
+          5783.07632855877,
+          219.84276137334274,
+          -7877.38634922718
+        ],
+        "target": [
+          5965.850841862944,
+          120.9375,
+          -7991.350277784847
+        ],
+        "worldHash": "4ec4031273abee935da450d2528c12f297ab142da7ee80b8bd8f14e111a0b5cc",
+        "revision": "4f2d4c6158dc26bb9acb7429e1c6b15b0622e7855ba845a6ba0fa8d9fc5c856a"
+      }
+    },
+    {
+      "station": "BSW",
+      "direction": 1,
+      "path": "docs/captures/grid-world/bsw-1.png",
+      "sha256": "35b7c013b087c4d2d0b9c0609cfe2aa9ffc290581f2c669d87ebfe5892c8200a",
+      "state": {
+        "camera": [
+          6872.53821777286,
+          132.04332706972625,
+          -7369.212388956213
+        ],
+        "s": 30550.25942777953,
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 22,
+          "triangles": 8694365,
+          "placements": 6865,
+          "gpuErrors": [],
+          "drawCalls": 825,
+          "memory": {
+            "geometries": 98,
+            "textures": 3
+          }
+        },
+        "worldHash": "4ec4031273abee935da450d2528c12f297ab142da7ee80b8bd8f14e111a0b5cc",
+        "revision": "4f2d4c6158dc26bb9acb7429e1c6b15b0622e7855ba845a6ba0fa8d9fc5c856a"
+      }
+    },
+    {
+      "station": "BMO",
+      "direction": 1,
+      "path": "docs/captures/grid-world/bmo-1.png",
+      "sha256": "51a0d30c38b1ba9d665d4602be3cf248c7d5d62b28c65d3b7d98d9aae2e9190a",
+      "state": {
+        "camera": [
+          7384.466697081977,
+          121.07203126351139,
+          -6816.038016294215
+        ],
+        "s": 31310.405821182118,
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 25,
+          "triangles": 9412505,
+          "placements": 7409,
+          "gpuErrors": [],
+          "drawCalls": 666,
+          "memory": {
+            "geometries": 108,
+            "textures": 3
+          }
+        },
+        "worldHash": "4ec4031273abee935da450d2528c12f297ab142da7ee80b8bd8f14e111a0b5cc",
+        "revision": "4f2d4c6158dc26bb9acb7429e1c6b15b0622e7855ba845a6ba0fa8d9fc5c856a"
+      }
+    },
+    {
+      "station": "BMO",
+      "mode": "comparison context",
+      "path": "docs/captures/grid-world/bmo-context.png",
+      "sha256": "29a5e8c988b15c79fb8ef0a4f3cdd1587a78755ec8f5b4d8b3a52df56b72669c",
+      "state": {
+        "camera": [
+          7236.586571498755,
+          215.19631967258906,
+          -6730.5558446176165
+        ],
+        "target": [
+          7443.9519642751475,
+          117.9375,
+          -6798.806609722699
+        ],
+        "worldHash": "4ec4031273abee935da450d2528c12f297ab142da7ee80b8bd8f14e111a0b5cc",
+        "revision": "4f2d4c6158dc26bb9acb7429e1c6b15b0622e7855ba845a6ba0fa8d9fc5c856a"
+      }
+    },
+    {
+      "station": "BMO",
+      "direction": -1,
+      "path": "docs/captures/grid-world/bmo--1.png",
+      "sha256": "c819c7e55e216bc0006d65d89d9c27d9e48889b92738f690f3ba397315bca1d0",
+      "state": {
+        "camera": [
+          7485.019159143385,
+          120.24817304633733,
+          -6750.666896659673
+        ],
+        "s": 31430.405821182118,
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 25,
+          "triangles": 9412505,
+          "placements": 7409,
+          "gpuErrors": [],
+          "drawCalls": 832,
+          "memory": {
+            "geometries": 109,
+            "textures": 3
+          }
+        },
+        "worldHash": "4ec4031273abee935da450d2528c12f297ab142da7ee80b8bd8f14e111a0b5cc",
+        "revision": "4f2d4c6158dc26bb9acb7429e1c6b15b0622e7855ba845a6ba0fa8d9fc5c856a"
+      }
+    },
+    {
+      "station": "TYS",
+      "direction": 1,
+      "path": "docs/captures/grid-world/tys-1.png",
+      "sha256": "fcb60cd656323abe4cd86a7331363fdfa249901eb4ac6acde0052d2429922eb4",
+      "state": {
+        "camera": [
+          11019.494481306838,
+          123.57499991848304,
+          -4035.429113965003
+        ],
+        "s": 35910.96354879336,
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 25,
+          "triangles": 11594099,
+          "placements": 11106,
+          "gpuErrors": [],
+          "drawCalls": 799,
+          "memory": {
+            "geometries": 133,
+            "textures": 3
+          }
+        },
+        "worldHash": "4ec4031273abee935da450d2528c12f297ab142da7ee80b8bd8f14e111a0b5cc",
+        "revision": "4f2d4c6158dc26bb9acb7429e1c6b15b0622e7855ba845a6ba0fa8d9fc5c856a"
+      }
+    },
+    {
+      "station": "TYS",
+      "mode": "comparison context",
+      "path": "docs/captures/grid-world/tys-context.png",
+      "sha256": "3903d13c4cdc0e9f49d63131b2579a29620c3cff5bc1f65c3c3074a45902ba80",
+      "state": {
+        "camera": [
+          10866.338005382038,
+          216.25,
+          -3935.373895553449
+        ],
+        "target": [
+          11073.337510063493,
+          121.15625,
+          -4011.6525211670296
+        ],
+        "worldHash": "4ec4031273abee935da450d2528c12f297ab142da7ee80b8bd8f14e111a0b5cc",
+        "revision": "4f2d4c6158dc26bb9acb7429e1c6b15b0622e7855ba845a6ba0fa8d9fc5c856a"
+      }
+    },
+    {
+      "station": "SBJ",
+      "direction": 1,
+      "path": "docs/captures/grid-world/sbj-1.png",
+      "sha256": "b7266811067f0e090b3cfb3439423af4feb1f95b94263e71903aa7ca161d7289",
+      "state": {
+        "camera": [
+          -9017.454818582586,
+          100.46562018122388,
+          -3238.065631711883
+        ],
+        "s": 11036.515470560882,
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 23,
+          "triangles": 11010266,
+          "placements": 15183,
+          "gpuErrors": [],
+          "drawCalls": 590,
+          "memory": {
+            "geometries": 133,
+            "textures": 3
+          }
+        },
+        "worldHash": "4ec4031273abee935da450d2528c12f297ab142da7ee80b8bd8f14e111a0b5cc",
+        "revision": "4f2d4c6158dc26bb9acb7429e1c6b15b0622e7855ba845a6ba0fa8d9fc5c856a"
+      }
+    }
+  ],
+  "errors": []
+}

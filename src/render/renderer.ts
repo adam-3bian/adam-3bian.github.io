@@ -1,13 +1,14 @@
 import * as THREE from 'three';
 import {AssetFactory,setSignalAspect,setCrossingState} from './assets';
 import {packetGeometry} from './batch';
-import {RouteGeometry,Polyline,clamp} from '../core/geometry';
+import {RouteGeometry,Polyline,CurvePath,clamp} from '../core/geometry';
 import {trackBasis,roadBasis} from '../core/pose';
 import {routeResourceUrl} from '../core/resource-url';
 import type {RouteData,V3} from '../core/types';
 import type {RailwaySimulation} from '../core/simulation';
 import {makeSwitch,setSwitchBlend} from './trackwork';
 import {ViewportSizing} from './viewport';
+import type {WorldTile} from '../core/types';
 
 export class RailwayRenderer {
   readonly scene=new THREE.Scene();readonly camera=new THREE.PerspectiveCamera(62,1,.2,2400);
@@ -25,6 +26,7 @@ export class RailwayRenderer {
   private signalModels=new Map<string,THREE.Group>();private pointModels=new Map<string,THREE.Group>();private crossingModels=new Map<string,THREE.Group>();private trainModels=new Map<string,THREE.Group>();private carModels=new Map<string,THREE.Group>();
   private fog=new THREE.Fog(0xcdd6cc,450,1700);private sun=new THREE.DirectionalLight(0xffedcf,3);private ambient=new THREE.HemisphereLight(0xd6e5ec,0x79865b,2.7);
   gpuInfo='WebGL 2';tileCount=0;triangles=0;placements=0;failures:string[]=[];frameTimes:number[]=[];onProgress?:()=>void;onError?:(error:Error)=>void;
+  tileSource?:(id:string)=>Promise<WorldTile>;
   private readonly contextLost=(event:Event)=>{event.preventDefault();if(this.disposed)return;const error=new Error('Graphics context lost. Reload to reconnect graphics.');this.failures.push(error.message);this.sim.paused=true;this.onError?.(error);};
   quality:'low'|'balanced'|'high'='balanced';private lastS=-Infinity;private previousCamera=new THREE.Vector3();private firstFrame=true;private warmFrames=0;
   constructor(readonly container:HTMLElement,readonly data:RouteData,readonly route:RouteGeometry,readonly sim:RailwaySimulation){
@@ -40,7 +42,10 @@ export class RailwayRenderer {
   }
   async init(terrain:ArrayBuffer){
     if(this.renderer.getContext().isContextLost())throw new Error('The WebGL 2 context was lost. Reload to reconnect graphics.');
-    const adjacentResponse=await fetch(routeResourceUrl('data/adjacent-services.json',document.baseURI));if(adjacentResponse.ok){const document=await adjacentResponse.json();this.data.adjacentServices=document.services;for(const service of document.services){const kind=service.kind==='shuttle'?'139':service.kind==='tram'?'metro':service.kind==='heritage'?'heritage':'emu';const model=this.factory.train({id:service.id,kind,cars:service.cars});this.scene.add(model);this.adjacent.push({data:service,path:new Polyline(service.points),model});}}
+    let services=this.data.adjacentServices as any[]|undefined;
+    if(!services){const response=await fetch(routeResourceUrl('data/adjacent-services.json',document.baseURI));if(response.ok)services=(await response.json()).services;}
+    this.data.adjacentServices=services||[];
+    for(const service of services||[]){if(service.metadata?.sceneryOnly)continue;const kind=service.kind==='shuttle'?'139':service.kind==='tram'?'metro':service.kind==='heritage'?'heritage':'emu';const model=this.factory.train({id:service.id,kind,cars:service.cars});this.scene.add(model);this.adjacent.push({data:service,path:new CurvePath(service.points),model});}
     this.terrainSource=terrain;this.initialiseWorker();this.makeInfrastructure();
   }
   private createWorker(){
@@ -95,7 +100,7 @@ export class RailwayRenderer {
     const tiles=this.data.tiles.map(tile=>{const b=tile.bounds;const d=Math.hypot(Math.max(b[0]-pos[0],0,pos[0]-b[2]),Math.max(b[1]-pos[2],0,pos[2]-b[3]));return {tile,d};}).filter(x=>x.d<radius).sort((a,b)=>a.d-b.d);
     const ids=new Set(tiles.map(x=>x.tile.id));for(const {tile} of tiles){const loaded=this.loaded.get(tile.id);if(loaded){loaded.used=now;continue;}if(this.requested.size)break;const retry=this.tileRetries.get(tile.id);if(retry&&(retry.attempts>=4||now<retry.next))continue;
       const token=++this.nextRequestToken,abort=new AbortController();this.requested.add(tile.id);this.requestTokens.set(tile.id,token);this.requestAborts.set(tile.id,abort);
-      const fetchTimer=window.setTimeout(()=>abort.abort(),30000);try{const r=await fetch(routeResourceUrl(tile.url,document.baseURI),{signal:abort.signal});if(!r.ok)throw new Error(`Could not load route tile ${tile.id} (HTTP ${r.status})`);const data=await r.json();if(this.requestTokens.get(tile.id)!==token)return;
+      const fetchTimer=window.setTimeout(()=>abort.abort(),30000);try{let data:WorldTile;if(this.tileSource)data=await this.tileSource(tile.id);else{const r=await fetch(routeResourceUrl(tile.url,document.baseURI),{signal:abort.signal});if(!r.ok)throw new Error(`Could not load route tile ${tile.id} (HTTP ${r.status})`);data=await r.json();}if(this.requestTokens.get(tile.id)!==token)return;
         this.requestAborts.delete(tile.id);const timer=window.setTimeout(()=>{if(this.requestTokens.get(tile.id)===token)this.restartWorker(`Tile ${tile.id} generation timed out`);},90000);this.requestTimers.set(tile.id,timer);this.worker.postMessage({type:'build',tile:data,token});
       }catch(e){if(this.requestTokens.get(tile.id)===token)this.tileFailed(tile.id,e instanceof Error?e.message:String(e));}finally{window.clearTimeout(fetchTimer);}break;}
     this.evictInactiveTiles(ids);

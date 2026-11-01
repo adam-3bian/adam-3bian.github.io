@@ -1,5 +1,30 @@
 # Railway handover
 
+## Grid world reconstruction — 1 November 2026
+
+The game now loads its authoritative integer grid world from `public/data/grid/`.
+The playable route remains Kidderminster–Birmingham–Dorridge. The SVR is limited
+to neighbouring Kidderminster scenery: Town station, yard/works, the exchange and
+nearby departing tracks. There is no full SVR journey or distant extension.
+
+See [GRID-WORLD.md](docs/GRID-WORLD.md) and the
+[location-reference manifest](references/location-reference-manifest.json).
+Changes include smooth rail curves and fine height ticks, a complete saved world,
+explicit rail/Metro ownership, Galton's two levels and access decks, mapped Hockley
+portals, the Snow Hill tunnel profile, the Tyseley fan and works, and landmark assets.
+The existing camera, WebGL view, palette and driving controls remain.
+
+The final validation records are `docs/reports/grid-clearance.json` and
+`docs/reports/grid-world-browser.json`. The 95 JavaScript tests pass. The browser
+check saves all 133 tiles and terrain, then blocks world-data requests during
+reload. Fixed front views and separate diagnostic context images are in
+`docs/captures/grid-world/`. The static `site/` build is regenerated on this branch.
+
+Heights and several asset dimensions remain explicitly inferred. This update does
+not certify the older independent photographic, interlocking or hardware-performance
+acceptance gates recorded below. Those older reports retain their original source
+hashes and are not presented as validation of the new grid world.
+
 ## Current reconstruction and reference review — incomplete (1 November 2026)
 
 Work remains exclusively on `railway`; no deployment or change to `main` was performed. This section supersedes every earlier status below. The game is **not finished**, and a source-map or finite geometry pass does not close photographic, structural or operational acceptance.

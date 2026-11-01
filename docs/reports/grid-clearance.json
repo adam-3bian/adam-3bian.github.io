@@ -1,0 +1,92 @@
+{
+  "revision": "4f2d4c6158dc26bb9acb7429e1c6b15b0622e7855ba845a6ba0fa8d9fc5c856a",
+  "scope": "Actual cooked static geometry; 4 m longitudinal sweeps at heights 1.2, 2.45 and 3.9 m, offsets -0.9/0/0.9 m; source topology and clearance assumptions are not survey",
+  "reports": [
+    {
+      "tile": "-10_-4",
+      "probes": 1620,
+      "triangles": 508505,
+      "failures": 0,
+      "seconds": 13.702196423
+    },
+    {
+      "tile": "-17_3",
+      "probes": 1620,
+      "triangles": 567755,
+      "failures": 0,
+      "seconds": 9.146511464000001
+    },
+    {
+      "tile": "10_-5",
+      "probes": 468,
+      "triangles": 1442472,
+      "failures": 0,
+      "seconds": 19.154636009999997
+    },
+    {
+      "tile": "11_-4",
+      "probes": 819,
+      "triangles": 743475,
+      "failures": 0,
+      "seconds": 12.427475613000002
+    },
+    {
+      "tile": "11_-5",
+      "probes": 369,
+      "triangles": 279887,
+      "failures": 0,
+      "seconds": 6.399114525000004
+    },
+    {
+      "tile": "1_-10",
+      "probes": 1890,
+      "triangles": 874793,
+      "failures": 0,
+      "seconds": 15.896895540000004
+    },
+    {
+      "tile": "2_-10",
+      "probes": 1620,
+      "triangles": 688925,
+      "failures": 0,
+      "seconds": 12.552487778999987
+    },
+    {
+      "tile": "5_-8",
+      "probes": 564,
+      "triangles": 350991,
+      "failures": 0,
+      "seconds": 11.535478206
+    },
+    {
+      "tile": "5_-9",
+      "probes": 462,
+      "triangles": 837651,
+      "failures": 0,
+      "seconds": 23.544925671999998
+    },
+    {
+      "tile": "6_-8",
+      "probes": 2079,
+      "triangles": 1008561,
+      "failures": 0,
+      "seconds": 23.38248853700001
+    },
+    {
+      "tile": "7_-7",
+      "probes": 1620,
+      "triangles": 845533,
+      "failures": 0,
+      "seconds": 14.936920208999975
+    },
+    {
+      "tile": "7_-8",
+      "probes": 189,
+      "triangles": 452744,
+      "failures": 0,
+      "seconds": 12.916816875999997
+    }
+  ],
+  "failures": [],
+  "totalFailures": 0
+}

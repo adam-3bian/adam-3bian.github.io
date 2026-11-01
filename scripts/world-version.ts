@@ -13,6 +13,7 @@ function sourceFiles(root:string):string[]{
   visit(join(root,'src'));return found.sort();
 }
 function dataFiles(root:string):string[]{return ['public/data/route.json','public/data/terrain.bin','public/data/adjacent-services.json','public/data/road-surfaces.json','public/data/land-surfaces.json',...readdirSync(join(root,'public/data/tiles')).sort().map(name=>`public/data/tiles/${name}`)];}
+function gridFiles(root:string):string[]{const files:string[]=[];function visit(dir:string){if(!existsSync(dir))return;for(const e of readdirSync(dir,{withFileTypes:true})){const p=join(dir,e.name);if(e.isDirectory())visit(p);else files.push(relative(root,p).split(sep).join('/'));}}visit(join(root,'public/data/grid'));return files.sort();}
 function hashFiles(root:string,paths:string[],overrides?:Overrides){const hash=createHash('sha256');for(const path of paths)hash.update(path).update('\0').update(read(root,path,overrides));return hash.digest('hex');}
 export function sourceFingerprint(root=process.cwd(),overrides?:Overrides){return hashFiles(root,[...sourceFiles(root),...dataFiles(root)],overrides);}
 
@@ -24,6 +25,6 @@ export function worldIdentity(root=process.cwd(),overrides?:Overrides):string {
     const baseline=JSON.parse(readFileSync(baselineFile,'utf8')) as Baseline;
     if(/^[0-9a-f]{64}$/.test(baseline.legacyWorldHash)&&baseline.sourceFingerprint===sourceFingerprint(root,overrides)&&baseline.configHash===fileHash(root,'vite.config.ts',overrides)&&baseline.policyHash===fileHash(root,'scripts/world-version.ts',overrides))return baseline.legacyWorldHash;
   }
-  const physical=['vite.config.ts','scripts/world-version.ts','src/core/geometry.ts','src/core/simulation.ts','src/core/pose.ts','src/core/resource-url.ts','src/world/build.ts','src/world/access-sites.ts','src/world/road-sites.ts','src/world/site-definitions.json','src/world/platforms.ts','src/world/surfaces.ts','src/world/traffic.ts','src/render/assets.ts','src/render/trackwork.ts','src/render/batch.ts','src/render/renderer.ts',...dataFiles(root)];
+  const physical=['vite.config.ts','scripts/world-version.ts','src/core/geometry.ts','src/core/simulation.ts','src/core/pose.ts','src/core/resource-url.ts','src/world/build.ts','src/world/access-sites.ts','src/world/road-sites.ts','src/world/site-definitions.json','src/world/platforms.ts','src/world/surfaces.ts','src/world/traffic.ts','src/render/assets.ts','src/render/trackwork.ts','src/render/batch.ts','src/render/renderer.ts','src/world/grid.ts','src/world/grid-world.ts','src/render/landmarks.ts',...dataFiles(root),...gridFiles(root)];
   return hashFiles(root,physical,overrides);
 }

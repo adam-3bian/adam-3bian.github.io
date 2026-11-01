@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import type {Feature,V3} from '../core/types';
-import {RouteGeometry,Polyline,clamp} from '../core/geometry';
+import {RouteGeometry,Polyline,CurvePath,clamp} from '../core/geometry';
 
 export type P2=[number,number];
 export interface PlatformBoundary {a:P2;b:P2;railEdge:boolean;inward:P2;}
@@ -64,12 +64,12 @@ function intersections(a:P2,b:P2,c:P2,d:P2):number[]{
 /** Source plan outlines are immutable. Their rendered heights are rail-relative. */
 export function mappedPlatforms(route:RouteGeometry):MappedPlatform[]{
   const cached=cache.get(route);if(cached)return cached;
-  const services=(((route.data.adjacentServices as any[])||[]).filter(s=>s.points?.length>1)).map(s=>({id:s.id as string,path:new Polyline(s.points as V3[]),kind:s.kind as string}));
+  const services=(((route.data.adjacentServices as any[])||[]).filter(s=>s.points?.length>1)).map(s=>({id:s.id as string,path:new CurvePath(s.points as V3[]),kind:s.kind as string}));
   const raw=((route.data.platforms as Feature[])||[]).filter(p=>p.footprint&&p.footprint.length>=3);
   const platforms:MappedPlatform[]=[];
   for(const feature of raw){
     const fp=feature.footprint!.map(p=>[p[0],p[1]] as P2),centre:P2=[fp.reduce((s,p)=>s+p[0],0)/fp.length,fp.reduce((s,p)=>s+p[1],0)/fp.length],axis=axisOf(fp,centre),bb=bounds(fp);
-    const near=route.project(...centre,300),station=route.stations.find(s=>s.id===feature.station),member=station&&Math.hypot(station.position[0]-centre[0],station.position[2]-centre[1])<Math.max(250,station.length*1.4)?station.id:undefined;
+    const near=route.project(...centre,300),station=[...route.stations,...((route.data.extraStations as RouteGeometry['stations'])||[])].find(s=>s.id===feature.station),member=station&&Math.hypot(station.position[0]-centre[0],station.position[2]-centre[1])<Math.max(250,station.length*1.4)?station.id:undefined;
     let source='mainline rail-relative',binding:Polyline|undefined,score=Infinity;
     if(Number.isFinite(near.distance)){
       const q=route.sample(near.s),align=Math.abs(axis[0]*q.tangent[0]+axis[1]*q.tangent[2]);
@@ -88,10 +88,11 @@ export function mappedPlatforms(route:RouteGeometry):MappedPlatform[]{
       }
     }
     const top=(x:number,z:number)=>{
-      if(binding){const n=binding.nearest(x,z);return binding.sample(n.s).position[1]+.915;}
-      const n=route.project(x,z,350);if(Number.isFinite(n.distance))return route.sample(n.s).position[1]+.915;
+      if(binding){const n=binding.nearest(x,z);return binding.sample(n.s).position[1]+Number(feature.platformHeight??.915);}
+      const n=route.project(x,z,350);if(Number.isFinite(n.distance))return route.sample(n.s).position[1]+Number(feature.platformHeight??.915);
       return Number(feature.y)||Number(feature.height)||100;
     };
+    if(feature.binding){binding=feature.binding==='mainline'?undefined:services.find(s=>s.id===feature.binding)?.path;source=feature.binding==='mainline'?'mainline rail-relative':`adjacent:${feature.binding}`;if(feature.binding!=='mainline'&&!binding)throw new Error(`${feature.id}: missing explicit platform track ${feature.binding}`);}
     platforms.push({id:feature.id,station:member,rawStation:String(feature.station??''),footprint:fp,triangles:triangulate(fp),boundaries:[],centre,axis,bounds:bb,railSource:source,clearanceAdjustmentArea:0,top});
   }
   // Explicit engineered coping corrections only: the raw OSM polygons remain

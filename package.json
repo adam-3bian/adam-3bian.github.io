@@ -14,7 +14,8 @@
     "build:site": "tsc --noEmit && vite build --outDir site && node scripts/site-manifest.mjs --write",
     "verify:site": "node scripts/site-manifest.mjs --check",
     "audit:geometry": "node --expose-gc --import tsx scripts/audit-geometry.ts",
-    "build:qa": "tsc --noEmit && vite build --mode qa --outDir work/qa-dist"
+    "build:qa": "tsc --noEmit && vite build --mode qa --outDir work/qa-dist",
+    "build:world": "tsx scripts/build-grid-world.ts"
   },
   "dependencies": {
     "three": "0.187.0"

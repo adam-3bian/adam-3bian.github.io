@@ -1,5 +1,7 @@
 # Shared construction rules: implemented scope and remaining work
 
+The November 2026 grid-world revision is described in [GRID-WORLD.md](GRID-WORLD.md). Its integer construction addresses, smooth rail curves, complete-world persistence and explicit site bindings supersede the earlier storage description below. The [location manifest](../references/location-reference-manifest.json) governs geometry changes. SVR scope is Kidderminster scenery only.
+
 The current reconstruction applies OpenLoco/Locomotion's separation of logical objects, connected transport paths, construction validation and rendering to the continuously mapped UK route. A spatial tile is an index and render owner, not a square-grid construction constraint. Source X/Z geometry is preserved; deck/stair profiles and foundation levels remain explicit model engineering where the supplied heights are bare-earth estimates.
 
 `src/world/site-definitions.json` separates evidenced site instances from reusable generators. `access-sites.ts` resolves a whole declared deck/stair assembly before mesh emission; `road-sites.ts` resolves the connected span and both road approaches before terrain grading. The same engineered motor-road profile is consumed by simulation and terrain/road mesh generation. These definitions and solvers participate in the world/save identity and geometry-audit source hashes.

@@ -52,7 +52,26 @@ export class Polyline {
     return {s,distance,side};
   }
 }
-export class RouteGeometry extends Polyline {
+/** Cubic Hermite pieces pass through grid anchors with shared entry/exit
+ * tangents. Monotone vertical derivatives prevent humps on shallow gradients. */
+export class CurvePath extends Polyline {
+  private derivatives:V3[];
+  constructor(points:V3[]){super(points);this.derivatives=points.map((p,i)=>{
+    const a=Math.max(0,i-1),b=Math.min(points.length-1,i+1),span=this.lengths[b]-this.lengths[a]||1;
+    const d=p.map((_,k)=>(points[b][k]-points[a][k])/span) as V3;
+    if(i>0&&i<points.length-1){const l=(p[1]-points[i-1][1])/(this.lengths[i]-this.lengths[i-1]||1),r=(points[i+1][1]-p[1])/(this.lengths[i+1]-this.lengths[i]||1);d[1]=l*r<=0?0:2*l*r/(l+r);}
+    return d;
+  });}
+  override sample(s:number,offset=0):Pose {
+    const v=clamp(s,0,this.length),i=this.segment(v),a=this.points[i],b=this.points[i+1],span=this.lengths[i+1]-this.lengths[i]||1,t=(v-this.lengths[i])/span,t2=t*t,t3=t2*t;
+    const u=this.derivatives[i],w=this.derivatives[i+1];
+    const point=a.map((n,k)=>(2*t3-3*t2+1)*n+(t3-2*t2+t)*span*u[k]+(-2*t3+3*t2)*b[k]+(t3-t2)*span*w[k]) as V3;
+    const d=a.map((n,k)=>((6*t2-6*t)*n+(3*t2-4*t+1)*span*u[k]+(-6*t2+6*t)*b[k]+(3*t2-2*t)*span*w[k])/span) as V3;
+    const h=Math.hypot(d[0],d[2])||1,tangent=d.map(n=>n/h) as V3,right:V3=[-tangent[2],0,tangent[0]],base=super.sample(v);
+    return {...base,position:point.map((n,k)=>n+right[k]*offset+tangent[k]*(s-v)) as V3,tangent,right,grade:d[1]/h,pitch:Math.atan2(d[1],h),yaw:Math.atan2(-d[0],-d[2]),s};
+  }
+}
+export class RouteGeometry extends CurvePath {
   readonly stations: Station[];
   readonly fingerprint:string;
   readonly opposingPath?:Polyline;
@@ -61,7 +80,7 @@ export class RouteGeometry extends Polyline {
   constructor(readonly data:RouteData) {
     super(data.points);
     this.fingerprint=hash(JSON.stringify({simulation:'2026-v3',points:data.points,opposing:data.opposingOffsets||null,stations:data.stations.map(s=>[s.id,s.s]),network:data.network,crossings:data.crossings,structures:data.structures})).toString(16);
-    const opposite=(data.opposingTrack as {points?:V3[]}|undefined)?.points;if(opposite?.length===data.points.length)this.opposingPath=new Polyline(opposite);
+    const opposite=(data.opposingTrack as {points?:V3[]}|undefined)?.points;if(opposite?.length===data.points.length)this.opposingPath=new CurvePath(opposite);
     this.stations=data.stations.map(s=>({...s,s:Number.isFinite(s.s)?this.sourceS(s.s):this.nearest(s.position[0],s.position[2]).s,length:s.length||150,platformCount:s.platformCount||2})).sort((a,b)=>a.s-b.s);
     for(let i=0;i<this.points.length-1;i++) {const p=this.points[i],key=`${Math.floor(p[0]/100)},${Math.floor(p[2]/100)}`;const entries=this.buckets.get(key)||[];entries.push(i);this.buckets.set(key,entries);}
   }
@@ -93,4 +112,5 @@ export class RouteGeometry extends Polyline {
     return s<stour?65:s<snow?55:70;
   }
   tunnelAt(s:number) {return ((this.data.tunnels as (import('./types').Structure & {start:number;end:number})[])||[]).find(x=>s>this.sourceS(x.start)&&s<this.sourceS(x.end));}
+  bridgeAt(s:number) {return ((this.data.bridges as {id:string;start:number;end:number}[])||[]).find(x=>s>this.sourceS(x.start)&&s<this.sourceS(x.end));}
 }
