@@ -1,0 +1,438 @@
+{
+  "scope": "Chromium SwiftShader; fixed views and loading/persistence regression, not a hardware benchmark",
+  "checks": {
+    "loadingVisible": true,
+    "progressAdvanced": 4,
+    "resolution25": {
+      "label": "25%",
+      "scale": "0.25",
+      "canvas": [
+        240,
+        150
+      ],
+      "viewport": [
+        960,
+        600
+      ]
+    },
+    "developerGrid": {
+      "shown": true,
+      "hidden": true,
+      "cell": {
+        "x": -1010,
+        "z": 234,
+        "zLevel": 1911
+      },
+      "pieces": 4,
+      "terrain": 59.73435209188262
+    },
+    "previousWorldPreserved": true,
+    "offlineReload": {
+      "before": {
+        "s": 354.0000212836039,
+        "revision": "a972112cc7694560042b4ee0f85b3fd92ecf55613803f17b5207fc876e086ec4",
+        "tileCount": 133,
+        "terrainBytes": 4972988,
+        "expected": 133
+      },
+      "after": {
+        "s": 354.0000212836039,
+        "revision": "a972112cc7694560042b4ee0f85b3fd92ecf55613803f17b5207fc876e086ec4",
+        "webglError": 0
+      }
+    },
+    "resolutionRestored": "25"
+  },
+  "captures": [
+    {
+      "fixture": "kid-bridge-approach",
+      "path": "docs/captures/landscape/kid-bridge-approach.png",
+      "sha256": "e2c863e2f62f942fc7adddaec5c49f5bf147bdcb471dcb78eaf607ea87204b93",
+      "state": {
+        "position": [
+          -16150.257576489188,
+          61.22211839857904,
+          3757.0041952294987
+        ],
+        "s": 275.0000212836039,
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 4,
+          "triangles": 1860179,
+          "placements": 711,
+          "gpuErrors": [],
+          "drawCalls": 828,
+          "memory": {
+            "geometries": 10,
+            "textures": 3
+          }
+        },
+        "revision": "a972112cc7694560042b4ee0f85b3fd92ecf55613803f17b5207fc876e086ec4",
+        "worldHash": "75d16f9946ad6043c5ec6828e460c6db9f589513f7da46f6ad9d4396806fcc30"
+      }
+    },
+    {
+      "fixture": "kid-context",
+      "path": "docs/captures/landscape/kid-context.png",
+      "sha256": "da8d423427713f697881815af55f9b55c6f34a76439d6355a598157dd179d519"
+    },
+    {
+      "fixture": "kid-bridge-reverse",
+      "path": "docs/captures/landscape/kid-bridge-reverse.png",
+      "sha256": "d873e3a7763cd2e3c0a1a977cf1223444a1aa091160ec3718b4774dff6e93536",
+      "state": {
+        "position": [
+          -16098.9070665165,
+          61.856238320930466,
+          3615.9904818823275
+        ],
+        "s": 425.0000212836039,
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 5,
+          "triangles": 2076930,
+          "placements": 823,
+          "gpuErrors": [],
+          "drawCalls": 499,
+          "memory": {
+            "geometries": 16,
+            "textures": 3
+          }
+        },
+        "revision": "a972112cc7694560042b4ee0f85b3fd92ecf55613803f17b5207fc876e086ec4",
+        "worldHash": "75d16f9946ad6043c5ec6828e460c6db9f589513f7da46f6ad9d4396806fcc30"
+      }
+    },
+    {
+      "fixture": "galton",
+      "path": "docs/captures/landscape/galton.png",
+      "sha256": "5c3b5caa6f96e7c5356067b8cfabf022e791ae4afa432135f0da436b473a08d1",
+      "state": {
+        "position": [
+          1372.0698077101656,
+          156.7527443270374,
+          -9323.64023533415
+        ],
+        "s": 24229.720680787777,
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 7,
+          "triangles": 3387383,
+          "placements": 1577,
+          "gpuErrors": [],
+          "drawCalls": 933,
+          "memory": {
+            "geometries": 23,
+            "textures": 3
+          }
+        },
+        "revision": "a972112cc7694560042b4ee0f85b3fd92ecf55613803f17b5207fc876e086ec4",
+        "worldHash": "75d16f9946ad6043c5ec6828e460c6db9f589513f7da46f6ad9d4396806fcc30"
+      }
+    },
+    {
+      "fixture": "galton-context",
+      "path": "docs/captures/landscape/galton-context.png",
+      "sha256": "fc2e3d8671bf02e17701b5d6a77b897b274bda74ab368bfa8da5552b335e7f8b"
+    },
+    {
+      "fixture": "blakedown-crossing",
+      "path": "docs/captures/landscape/blakedown-crossing.png",
+      "sha256": "2e6b7327c1db45411d0e135d4672f09d37c28eda4dfabc6ea39657b21346974a",
+      "state": {
+        "position": [
+          -11986.052142790302,
+          74.77686555107454,
+          1330.633810721436
+        ],
+        "s": 5294.09853571614,
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 10,
+          "triangles": 4239270,
+          "placements": 1927,
+          "gpuErrors": [],
+          "drawCalls": 385,
+          "memory": {
+            "geometries": 34,
+            "textures": 3
+          }
+        },
+        "revision": "a972112cc7694560042b4ee0f85b3fd92ecf55613803f17b5207fc876e086ec4",
+        "worldHash": "75d16f9946ad6043c5ec6828e460c6db9f589513f7da46f6ad9d4396806fcc30"
+      }
+    },
+    {
+      "fixture": "hagley",
+      "path": "docs/captures/landscape/hagley.png",
+      "sha256": "7c53a79bd6dc2766a2b9ea0070098ff7aa383de4a256d21049f3862fc01e80d5",
+      "state": {
+        "position": [
+          -9893.633803462115,
+          97.13847566375523,
+          -467.7757583359605
+        ],
+        "s": 8083.364393158657,
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 9,
+          "triangles": 3577567,
+          "placements": 3025,
+          "gpuErrors": [],
+          "drawCalls": 574,
+          "memory": {
+            "geometries": 36,
+            "textures": 3
+          }
+        },
+        "revision": "a972112cc7694560042b4ee0f85b3fd92ecf55613803f17b5207fc876e086ec4",
+        "worldHash": "75d16f9946ad6043c5ec6828e460c6db9f589513f7da46f6ad9d4396806fcc30"
+      }
+    },
+    {
+      "fixture": "stourbridge-junction",
+      "path": "docs/captures/landscape/stourbridge-junction.png",
+      "sha256": "6a19129725f2b018797aa2ec1679878a4a1fd250855bc3ef72cfd9300876584c",
+      "state": {
+        "position": [
+          -9016.80574810557,
+          100.39642527140022,
+          -3253.0448214707462
+        ],
+        "s": 11051.515470560882,
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 12,
+          "triangles": 4650985,
+          "placements": 4791,
+          "gpuErrors": [],
+          "drawCalls": 667,
+          "memory": {
+            "geometries": 40,
+            "textures": 3
+          }
+        },
+        "revision": "a972112cc7694560042b4ee0f85b3fd92ecf55613803f17b5207fc876e086ec4",
+        "worldHash": "75d16f9946ad6043c5ec6828e460c6db9f589513f7da46f6ad9d4396806fcc30"
+      }
+    },
+    {
+      "fixture": "hawthorns",
+      "path": "docs/captures/landscape/hawthorns.png",
+      "sha256": "d471c516c61f5c9d271550118bd659aef0a10dfec4d30b25553de3cab34bd1a0",
+      "state": {
+        "position": [
+          2431.06148589725,
+          154.74759435982443,
+          -9772.581304601534
+        ],
+        "s": 25436.813833034266,
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 11,
+          "triangles": 5073875,
+          "placements": 6410,
+          "gpuErrors": [],
+          "drawCalls": 562,
+          "memory": {
+            "geometries": 42,
+            "textures": 3
+          }
+        },
+        "revision": "a972112cc7694560042b4ee0f85b3fd92ecf55613803f17b5207fc876e086ec4",
+        "worldHash": "75d16f9946ad6043c5ec6828e460c6db9f589513f7da46f6ad9d4396806fcc30"
+      }
+    },
+    {
+      "fixture": "hawthorns-context",
+      "path": "docs/captures/landscape/hawthorns-context.png",
+      "sha256": "0511ba8e95df0452b20d0872e9a8b2822c345fe1b5ac0d8487cf41fc0f4bfcc6"
+    },
+    {
+      "fixture": "jewellery-quarter",
+      "path": "docs/captures/landscape/jewellery-quarter.png",
+      "sha256": "74692c218c2ec51e7fed1fed143687d1b2f5c90e74e0c11c4a7dc1b0b265b560",
+      "state": {
+        "position": [
+          5918.553288981283,
+          124.72812803673364,
+          -7989.462001281942
+        ],
+        "s": 29389.067512246307,
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 12,
+          "triangles": 6457935,
+          "placements": 9125,
+          "gpuErrors": [],
+          "drawCalls": 833,
+          "memory": {
+            "geometries": 82,
+            "textures": 3
+          }
+        },
+        "revision": "a972112cc7694560042b4ee0f85b3fd92ecf55613803f17b5207fc876e086ec4",
+        "worldHash": "75d16f9946ad6043c5ec6828e460c6db9f589513f7da46f6ad9d4396806fcc30"
+      }
+    },
+    {
+      "fixture": "jewellery-quarter-context",
+      "path": "docs/captures/landscape/jewellery-quarter-context.png",
+      "sha256": "7bc8cfdde5efb6e8005b5d87c0eb5b691d833aad0b279dcf448f4641fd34c382"
+    },
+    {
+      "fixture": "snow-hill",
+      "path": "docs/captures/landscape/snow-hill.png",
+      "sha256": "ff0cef73953456ca53d488574bc000c52b34071154c788e88ee1a7c3daebeb36",
+      "state": {
+        "position": [
+          6882.555028455756,
+          132.39621610687854,
+          -7358.140760503688
+        ],
+        "s": 30565.25942777953,
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 9,
+          "triangles": 5262928,
+          "placements": 9482,
+          "gpuErrors": [],
+          "drawCalls": 718,
+          "memory": {
+            "geometries": 101,
+            "textures": 3
+          }
+        },
+        "revision": "a972112cc7694560042b4ee0f85b3fd92ecf55613803f17b5207fc876e086ec4",
+        "worldHash": "75d16f9946ad6043c5ec6828e460c6db9f589513f7da46f6ad9d4396806fcc30"
+      }
+    },
+    {
+      "fixture": "moor-street",
+      "path": "docs/captures/landscape/moor-street.png",
+      "sha256": "bd74041c63f0fe0efd69709a99cf3cf9b4a18f0e0362b7a6674f2bab7a5e385b",
+      "state": {
+        "position": [
+          7397.063879973981,
+          120.79942419598008,
+          -6808.039318923022
+        ],
+        "s": 31325.405821182118,
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 11,
+          "triangles": 6516825,
+          "placements": 10567,
+          "gpuErrors": [],
+          "drawCalls": 704,
+          "memory": {
+            "geometries": 105,
+            "textures": 3
+          }
+        },
+        "revision": "a972112cc7694560042b4ee0f85b3fd92ecf55613803f17b5207fc876e086ec4",
+        "worldHash": "75d16f9946ad6043c5ec6828e460c6db9f589513f7da46f6ad9d4396806fcc30"
+      }
+    },
+    {
+      "fixture": "tyseley",
+      "path": "docs/captures/landscape/tyseley.png",
+      "sha256": "8b5e5d40001bdef70c425ed13eb921ce6c380b66be767120c6a21a2834cfb277",
+      "state": {
+        "position": [
+          11032.353509032846,
+          123.57499999534868,
+          -4028.305634706806
+        ],
+        "s": 35925.96354879336,
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 12,
+          "triangles": 7834539,
+          "placements": 15002,
+          "gpuErrors": [],
+          "drawCalls": 690,
+          "memory": {
+            "geometries": 131,
+            "textures": 3
+          }
+        },
+        "revision": "a972112cc7694560042b4ee0f85b3fd92ecf55613803f17b5207fc876e086ec4",
+        "worldHash": "75d16f9946ad6043c5ec6828e460c6db9f589513f7da46f6ad9d4396806fcc30"
+      }
+    },
+    {
+      "fixture": "tyseley-context",
+      "path": "docs/captures/landscape/tyseley-context.png",
+      "sha256": "9b53516c57ab3f0ac103747543b377e6b78e5f3ef144f4ac4a29fa5da6eb1c7f"
+    },
+    {
+      "fixture": "langley-crossing",
+      "path": "docs/captures/landscape/langley-crossing.png",
+      "sha256": "cbe782114ca5abb5d148ad3fa8f337e411aea7193de60e0a3b4a1b68c4aadb1d",
+      "state": {
+        "position": [
+          -384.79289627743697,
+          161.75053005640387,
+          -8135.202705317823
+        ],
+        "s": 21876.720094701002,
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 10,
+          "triangles": 7007267,
+          "placements": 17409,
+          "gpuErrors": [],
+          "drawCalls": 844,
+          "memory": {
+            "geometries": 140,
+            "textures": 3
+          }
+        },
+        "revision": "a972112cc7694560042b4ee0f85b3fd92ecf55613803f17b5207fc876e086ec4",
+        "worldHash": "75d16f9946ad6043c5ec6828e460c6db9f589513f7da46f6ad9d4396806fcc30"
+      }
+    },
+    {
+      "fixture": "bentley-heath-crossing",
+      "path": "docs/captures/landscape/bentley-heath-crossing.png",
+      "sha256": "c2f23fd266d25c4bf255825f29fcc72ef692e038a0104e39e580fc1c9394ada1",
+      "state": {
+        "position": [
+          16389.514237551382,
+          128.6999998166066,
+          4280.360931361064
+        ],
+        "s": 46347.54772083087,
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 12,
+          "triangles": 8274156,
+          "placements": 19502,
+          "gpuErrors": [],
+          "drawCalls": 664,
+          "memory": {
+            "geometries": 160,
+            "textures": 3
+          }
+        },
+        "revision": "a972112cc7694560042b4ee0f85b3fd92ecf55613803f17b5207fc876e086ec4",
+        "worldHash": "75d16f9946ad6043c5ec6828e460c6db9f589513f7da46f6ad9d4396806fcc30"
+      }
+    }
+  ],
+  "errors": []
+}

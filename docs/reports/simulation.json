@@ -1,21 +1,23 @@
 {
-  "generatedAt": "2026-11-01T17:55:35.130Z",
+  "generatedAt": "2026-11-01T22:16:16.164Z",
   "sourceHashes": {
-    "scripts/validate-world.ts": "80c83a84871f354cacd76b9f794fcc3993257cd9018f3881aa6a27e3c0b7c8ff",
-    "src/core/geometry.ts": "bdfb3e91bf21e6f43ddacb6c63b20be29f160bcd3b66bc788d98f304f29e9df7",
-    "src/core/simulation.ts": "eb502976663f5128bae7dc37104be8aa54317704958788be6557c0de182c0180",
-    "src/render/trackwork.ts": "735ade41bd4eaa6af37159b0c54875474ac43fbb4bd2d7e409771c80b7d8a201",
-    "src/world/build.ts": "ada2d120b41ebc7213bbc1896cd4782ee3a2e47fc7589e0dbc5b8e3197ea16ec",
-    "public/data/route.json": "782c1291006b818b7cc236fbaa16cb3d5b33ef21c2afc2dadb3ec4d98f5e5001"
+    "scripts/validate-world.js": "bfd693a65786fdf6e9ad3d850547df884cb8b254fee001eaf61e27b59cb5478a",
+    "src/core/geometry.js": "218e52c3e1a72679803583f58df63d2d447c913c17844aec262d42db9392d955",
+    "src/core/simulation.js": "95dc20114c27f74750486fc0fee917febb1bdb7c11d14ddd022b48713da9a39c",
+    "src/render/trackwork.js": "8ddabbff2358f80644405d94ecb5638d9fb5c3966ed94968a21b8b6c582a6374",
+    "src/world/build.js": "684ca5909c01804c3cbde6ad5d125d0aa4e54c38f10f03e1a0b02e664c83d91b",
+    "src/world/grid.js": "23421b435de23ecb6b20ee3738a32634d5ce0778467ff5520c22f8e7c2f757b2",
+    "public/data/grid/world.json": "999f70b6f23e461b9ded00b591976ca42bccc008e59cca46c2b38aa8fdcf771a"
   },
-  "routeLength": 47330.93894344575,
+  "worldRevision": "a972112cc7694560042b4ee0f85b3fd92ecf55613803f17b5207fc876e086ec4",
+  "routeLength": 47331.0824766397,
   "results": [
     {
       "name": "Kidderminster to Dorridge",
       "complete": true,
       "validStopOrder": true,
-      "clock": "09:09:58",
-      "seconds": 3478.8,
+      "clock": "09:12:10",
+      "seconds": 3610.5,
       "stationsCalled": [
         "BKD",
         "HAG",
@@ -47,37 +49,37 @@
         "stops": 21,
         "awsMissed": 0,
         "tpwsInterventions": 0,
-        "distance": 46982.22441288082
+        "distance": 46982.36010804867
       },
-      "wallSeconds": 15.607092885,
+      "wallSeconds": 7.0681634319999995,
       "lastEvents": [
         {
-          "time": 32772.899999952664,
-          "type": "station",
-          "message": "Widney Manor. Doors released; 18 second dwell."
-        },
-        {
-          "time": 32790.9999999524,
-          "type": "station",
-          "message": "Doors closed. Ready to depart."
-        },
-        {
-          "time": 32870.499999951244,
+          "time": 32913.99999995061,
           "type": "aws",
-          "message": "AWS: SH-SEC-1-42-1, red. Acknowledge with Q."
+          "message": "AWS: SH-WMR-U2, yellow. Acknowledge with Q."
         },
         {
-          "time": 32870.499999951244,
+          "time": 32913.99999995061,
           "type": "aws",
           "message": "AWS warning acknowledged."
         },
         {
-          "time": 32998.79999994938,
+          "time": 32930.899999950365,
+          "type": "station",
+          "message": "Widney Manor. Doors released; 18 second dwell."
+        },
+        {
+          "time": 32948.9999999501,
+          "type": "station",
+          "message": "Doors closed. Ready to depart."
+        },
+        {
+          "time": 33130.49999994746,
           "type": "station",
           "message": "Dorridge. Doors released; 18 second dwell."
         },
         {
-          "time": 32998.79999994938,
+          "time": 33130.49999994746,
           "type": "complete",
           "message": "Journey complete."
         }
@@ -88,8 +90,8 @@
       "name": "Dorridge to Kidderminster",
       "complete": true,
       "validStopOrder": true,
-      "clock": "09:08:29",
-      "seconds": 3389.9,
+      "clock": "09:09:06",
+      "seconds": 3426.3,
       "stationsCalled": [
         "WMR",
         "SOL",
@@ -121,37 +123,37 @@
         "stops": 21,
         "awsMissed": 0,
         "tpwsInterventions": 0,
-        "distance": 47017.30571846812
+        "distance": 47017.43931704198
       },
-      "wallSeconds": 14.321280152,
+      "wallSeconds": 3.6969534640000012,
       "lastEvents": [
         {
-          "time": 32547.19999995595,
+          "time": 32583.39999995542,
           "type": "aws",
           "message": "AWS: SH-SEC--1-4-1, yellow. Acknowledge with Q."
         },
         {
-          "time": 32547.19999995595,
+          "time": 32583.39999995542,
           "type": "aws",
           "message": "AWS warning acknowledged."
         },
         {
-          "time": 32651.899999954425,
+          "time": 32688.299999953895,
           "type": "station",
           "message": "Blakedown. Doors released; 18 second dwell."
         },
         {
-          "time": 32669.99999995416,
+          "time": 32706.39999995363,
           "type": "station",
           "message": "Doors closed. Ready to depart."
         },
         {
-          "time": 32909.89999995067,
+          "time": 32946.29999995014,
           "type": "station",
           "message": "Kidderminster. Doors released; 18 second dwell."
         },
         {
-          "time": 32909.89999995067,
+          "time": 32946.29999995014,
           "type": "complete",
           "message": "Journey complete."
         }
@@ -170,7 +172,7 @@
         "tpwsInterventions": 0,
         "distance": 0
       },
-      "wallSeconds": 22.191278146000002,
+      "wallSeconds": 8.843700031000001,
       "eventCount": 1,
       "method": "Accelerated CPU rail simulation without a configured motor-road graph; not mixed-traffic or a two-hour browser/GPU soak."
     }

@@ -65,10 +65,10 @@ def main():
     run(['python', '-m', 'unittest', 'discover', '-s', 'tests', '-p', '*_test.py'])
     run(['python', 'scripts/audit-source-maps.py'])
     run(['python', 'scripts/audit-source-sites.py'])
-    run(['python', 'scripts/build-station-review.py'])
+    run(['node', 'scripts/build-station-review.js'])
     run(['python', 'scripts/build-site-register.py'])
     # An incomplete comparison is an expected open gate, never a success.
-    run(['python', 'scripts/route-qa.py', '--interval', '5', '--out', 'docs/reports/reference-comparison'], allowed=(0, 1))
+    run(['node', 'scripts/route-qa.js', '--interval', '5', '--out', 'docs/reports/reference-comparison'], allowed=(0, 1))
     manifest = sha('site/build-manifest.json')
     geometry = read('docs/reports/geometry.json')
     browser = read('docs/reports/reconstruction-browser.json')

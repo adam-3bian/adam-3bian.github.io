@@ -15,7 +15,7 @@ ROOT=Path.cwd(); WORK=ROOT/'work'; WORK.mkdir(exist_ok=True)
 SITE=ROOT/'site'; OLD=os.environ.get('RAILWAY_PREVIOUS_SITE')
 sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
 report={'method':'Production website on a plain Python static server; browser WebGL 2 with WebGPU unavailable. No Node or npm server. Dimensions measure the actual WebGL drawing buffer, not frame-rate performance.',
- 'sourceHashes':{str(p):sha(p) for p in [Path('src/main.ts'),Path('src/style.css'),Path('src/render/renderer.ts'),Path('app.html'),Path('index.html'),Path('scripts/world-version-baseline.json'),Path(__file__)]},
+ 'sourceHashes':{str(p):sha(p) for p in [Path('src/main.js'),Path('src/style.css'),Path('src/render/renderer.js'),Path('app.html'),Path('index.html'),Path('scripts/world-version-baseline.json'),Path(__file__)]},
  'siteHashes':{str(p):sha(p) for p in SITE.rglob('*') if p.is_file()},'checks':{},'dimensions':{},'errors':[],'externalRequests':[]}
 
 class Quiet(SimpleHTTPRequestHandler):

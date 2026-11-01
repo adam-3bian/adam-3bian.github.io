@@ -1,5 +1,48 @@
 # Railway handover
 
+## Grid repair status — 1 November 2026
+
+This section supersedes the earlier numerical results below. Work is on
+`railway`. The JavaScript site loads the deterministic grid world with the
+existing renderer and driving controls; the older source controls remain intact.
+The current world has 133 tiles, 2,889 source/running rail and tram pieces,
+34,311 road pieces and 3,099 road junction records. OSM-sourced roads include
+the Comberton Hill overbridge, and the four operating level crossings use dated
+OSM crossing nodes while retaining their previous positions for review.
+The two existing Hawthorns Metro paths are retained, with their tram platforms
+bound to the adjacent paths rather than a distant Metro segment.
+
+The reusable catalogue describes 44 rail and 10 road reference pieces; the
+independent port/switch graph can traverse constructed pieces. The existing
+player service still follows its primary continuous route, and most sidings and
+new junctions are scenery rather than player-operable interlocking. The new
+road-height solver records 27 remaining constrained ground-grade exceptions.
+Endpoint, duplicate and tangent diagnostic candidates require human review;
+their presence does not by itself establish a fault. Absolute elevations and
+many asset dimensions are inferred.
+
+On world revision `a972112cc7694560042b4ee0f85b3fd92ecf55613803f17b5207fc876e086ec4`,
+the JavaScript suite passed 131 tests, and both automated 21-stop journeys
+completed in order without recorded collisions or signals passed at danger.
+The static-geometry sweep recorded no hits in 23,913 finite probes across 20
+tiles, including the two Metro interchanges. The Chromium QA run captured 18
+views and restored all 133 tiles offline while retaining a previous world.
+The production build passed root and nested Chromium launch checks, and all
+276 packaged files matched their hashes over HTTP at both paths.
+These are regression checks, not continuous-clearance, photo or hardware
+acceptance. See `docs/reports/grid-clearance.json`, `simulation.json` and
+`landscape-browser.json` for scope and details.
+
+See [MAP-DATA-AUDIT.md](docs/MAP-DATA-AUDIT.md),
+[GRID-WORLD.md](docs/GRID-WORLD.md), the
+[location manifest](references/location-reference-manifest.json), and
+`docs/reports/grid-diagnostics.json`. The current web application, compiler and
+test suite are JavaScript, but the older offline atlas and research tools have
+not all been converted from Python; see [DATA-AND-TOOLING.md](docs/DATA-AND-TOOLING.md).
+Incompatible old saves remain backed up in browser storage and need the matching
+older game to resume. Source-photo acceptance and hardware performance remain
+unverified; the SVR remains Kidderminster-area scenery only.
+
 ## Grid world reconstruction — 1 November 2026
 
 The game now loads its authoritative integer grid world from `public/data/grid/`.

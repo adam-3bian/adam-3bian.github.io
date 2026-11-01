@@ -3,7 +3,7 @@ from pathlib import Path
 from playwright.async_api import async_playwright
 
 async def main():
- result={'adapter':'headless Chromium SwiftShader software WebGL2; not hardware performance evidence','checks':{},'errors':[], 'sourceHashes':{str(f):hashlib.sha256(f.read_bytes()).hexdigest() for f in [Path('scripts/traffic-browser-qa.py'),Path('src/core/simulation.ts'),Path('src/world/traffic.ts'),Path('src/world/surfaces.ts'),Path('src/render/renderer.ts'),Path('src/world/world.worker.ts'),Path('src/main.ts')]}, 'qaAssetHashes':{str(f):hashlib.sha256(f.read_bytes()).hexdigest() for f in Path('work/qa-dist/assets').glob('*') if f.is_file()}, 'productionManifestSHA256':hashlib.sha256(Path('site/build-manifest.json').read_bytes()).hexdigest()}
+ result={'adapter':'headless Chromium SwiftShader software WebGL2; not hardware performance evidence','checks':{},'errors':[], 'sourceHashes':{str(f):hashlib.sha256(f.read_bytes()).hexdigest() for f in [Path('scripts/traffic-browser-qa.py'),Path('src/core/simulation.js'),Path('src/world/traffic.js'),Path('src/world/surfaces.js'),Path('src/render/renderer.js'),Path('src/world/world.worker.js'),Path('src/main.js')]}, 'qaAssetHashes':{str(f):hashlib.sha256(f.read_bytes()).hexdigest() for f in Path('work/qa-dist/assets').glob('*') if f.is_file()}, 'productionManifestSHA256':hashlib.sha256(Path('site/build-manifest.json').read_bytes()).hexdigest()}
  async with async_playwright() as p:
   browser=await p.chromium.launch(executable_path='/usr/bin/chromium',headless=True,args=['--no-sandbox','--disable-dev-shm-usage','--disable-gpu-watchdog','--use-angle=swiftshader','--enable-unsafe-swiftshader'])
   result['browser']=browser.version

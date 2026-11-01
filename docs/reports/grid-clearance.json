@@ -1,90 +1,146 @@
 {
-  "revision": "4f2d4c6158dc26bb9acb7429e1c6b15b0622e7855ba845a6ba0fa8d9fc5c856a",
+  "revision": "a972112cc7694560042b4ee0f85b3fd92ecf55613803f17b5207fc876e086ec4",
   "scope": "Actual cooked static geometry; 4 m longitudinal sweeps at heights 1.2, 2.45 and 3.9 m, offsets -0.9/0/0.9 m; source topology and clearance assumptions are not survey",
   "reports": [
     {
+      "tile": "-10_-1",
+      "probes": 1620,
+      "triangles": 543365,
+      "failures": 0,
+      "seconds": 6.382452969
+    },
+    {
       "tile": "-10_-4",
       "probes": 1620,
-      "triangles": 508505,
+      "triangles": 518608,
       "failures": 0,
-      "seconds": 13.702196423
+      "seconds": 5.4502875070000005
+    },
+    {
+      "tile": "-12_1",
+      "probes": 1782,
+      "triangles": 269503,
+      "failures": 0,
+      "seconds": 2.5412006359999997
+    },
+    {
+      "tile": "-13_1",
+      "probes": 126,
+      "triangles": 403764,
+      "failures": 0,
+      "seconds": 3.5116082430000004
     },
     {
       "tile": "-17_3",
       "probes": 1620,
-      "triangles": 567755,
+      "triangles": 713659,
       "failures": 0,
-      "seconds": 9.146511464000001
+      "seconds": 10.355964267
+    },
+    {
+      "tile": "-1_-9",
+      "probes": 1890,
+      "triangles": 976483,
+      "failures": 0,
+      "seconds": 17.31991571
+    },
+    {
+      "tile": "-6_-6",
+      "probes": 603,
+      "triangles": 712604,
+      "failures": 0,
+      "seconds": 8.283362295
+    },
+    {
+      "tile": "-7_-6",
+      "probes": 1323,
+      "triangles": 797503,
+      "failures": 0,
+      "seconds": 10.300478582000004
     },
     {
       "tile": "10_-5",
       "probes": 468,
-      "triangles": 1442472,
+      "triangles": 1455734,
       "failures": 0,
-      "seconds": 19.154636009999997
+      "seconds": 13.788032696999995
     },
     {
       "tile": "11_-4",
       "probes": 819,
-      "triangles": 743475,
+      "triangles": 766499,
       "failures": 0,
-      "seconds": 12.427475613000002
+      "seconds": 8.834467218999999
     },
     {
       "tile": "11_-5",
       "probes": 369,
-      "triangles": 279887,
+      "triangles": 307029,
       "failures": 0,
-      "seconds": 6.399114525000004
+      "seconds": 5.173313521999996
+    },
+    {
+      "tile": "16_4",
+      "probes": 489,
+      "triangles": 889933,
+      "failures": 0,
+      "seconds": 10.080861886
+    },
+    {
+      "tile": "16_5",
+      "probes": 591,
+      "triangles": 311111,
+      "failures": 0,
+      "seconds": 4.1167223959999975
     },
     {
       "tile": "1_-10",
       "probes": 1890,
-      "triangles": 874793,
+      "triangles": 951553,
       "failures": 0,
-      "seconds": 15.896895540000004
+      "seconds": 15.452107742000008
     },
     {
       "tile": "2_-10",
-      "probes": 1620,
-      "triangles": 688925,
+      "probes": 2700,
+      "triangles": 790785,
       "failures": 0,
-      "seconds": 12.552487778999987
+      "seconds": 11.006831103999998
     },
     {
       "tile": "5_-8",
-      "probes": 564,
-      "triangles": 350991,
+      "probes": 924,
+      "triangles": 403341,
       "failures": 0,
-      "seconds": 11.535478206
+      "seconds": 7.023070494000014
     },
     {
       "tile": "5_-9",
-      "probes": 462,
-      "triangles": 837651,
+      "probes": 822,
+      "triangles": 848516,
       "failures": 0,
-      "seconds": 23.544925671999998
+      "seconds": 11.638807793999993
     },
     {
       "tile": "6_-8",
-      "probes": 2079,
-      "triangles": 1008561,
+      "probes": 2448,
+      "triangles": 1025129,
       "failures": 0,
-      "seconds": 23.38248853700001
+      "seconds": 16.540450183999987
     },
     {
       "tile": "7_-7",
       "probes": 1620,
-      "triangles": 845533,
+      "triangles": 892008,
       "failures": 0,
-      "seconds": 14.936920208999975
+      "seconds": 13.759064837999992
     },
     {
       "tile": "7_-8",
       "probes": 189,
-      "triangles": 452744,
+      "triangles": 545211,
       "failures": 0,
-      "seconds": 12.916816875999997
+      "seconds": 11.143914618000009
     }
   ],
   "failures": [],

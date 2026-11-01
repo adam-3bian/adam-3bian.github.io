@@ -17,6 +17,18 @@
   ],
   "roadBridges": [
     {
+      "id": "kidderminster-comberton-hill",
+      "span": "way/40433000/0",
+      "approaches": ["way/506995957/0", "way/40432999/0"],
+      "reference": "https://www.openstreetmap.org/way/40433000",
+      "confidence": "OSM bridge and connected approaches; deck clearance and elevation inferred",
+      "form": "girder",
+      "deckAboveRail": 6.3,
+      "transitionLength": 100,
+      "archSpring": 0,
+      "archRise": 0
+    },
+    {
       "id": "hagley-brake-lane",
       "span": "way/184620647/0",
       "approaches": [

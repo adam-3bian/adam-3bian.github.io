@@ -1,0 +1,42 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { RoadTraffic } from '../src/world/traffic.js';
+function setup() { const traffic = new RoadTraffic(); traffic.addRoads([{ id: 'crossing-road', kind: 'residential', width: 6, points: [[0, 100, 0], [0, 100, -400]], mode: 'crossing', crossingS: 200, routeS: 1000 }]); traffic.cars.clear(); const car = { id: 'car', road: 'crossing-road', s: 80, direction: 1, speed: 9, kind: 'car', position: [-1.38, 100, -80], yaw: 0, length: 4.5 }; traffic.cars.set(car.id, car); return { traffic, car }; }
+const gate = { id: 'gate', s: 1000, state: 'closed', blend: 1, timer: 0, held: true };
+test('UK road traffic queues before a closed crossing and releases after proof of opening', () => { const { traffic, car } = setup(); for (let i = 0; i < 900; i++)
+    traffic.update(1 / 30, i / 30, [gate], [0, 100, -200]); assert.ok(car.s < 185 && car.s > 170); assert.ok(car.speed < .05); assert.ok(car.position[0] < 0); for (let i = 0; i < 900; i++)
+    traffic.update(1 / 30, 30 + i / 30, [{ ...gate, state: 'open', blend: 0 }], [0, 100, -200]); assert.ok(car.s > 250); });
+test('crossing road traffic waits for an exit space even when barriers are open', () => { const { traffic, car } = setup(); const leader = { ...car, id: 'queue', s: 220, speed: 0, position: [-1.38, 100, -220] }; traffic.cars.set(leader.id, leader); for (let i = 0; i < 300; i++) {
+    traffic.update(1 / 30, i / 30, [{ ...gate, state: 'open', blend: 0 }], [0, 100, -200]);
+    leader.s = 220;
+    leader.speed = 0;
+} assert.ok(car.s < 190); });
+test('road save/restore preserves lane positions, reservations and transition geometry', () => { const { traffic } = setup(); traffic.update(.1, 1, [gate], [0, 100, -200]); const snapshot = traffic.snapshot(); const restored = new RoadTraffic(); restored.restore(JSON.parse(JSON.stringify(snapshot))); assert.deepEqual(restored.snapshot(), snapshot); });
+test('regional road population is independent of tile arrival order and remains present along the route', () => { const roads = Array.from({ length: 240 }, (_, i) => ({ id: `source-road-${i}`, kind: 'residential', width: 6, points: [[Math.floor(i / 60) * 5000, 100, i % 60 * 10], [Math.floor(i / 60) * 5000, 100, i % 60 * 10 - 200]] })); const a = new RoadTraffic(), b = new RoadTraffic(); a.setSpawnPlan(roads); b.setSpawnPlan(roads); for (const road of roads)
+    a.addRoads([road]); for (const road of [...roads].reverse())
+    b.addRoads([road]); assert.deepEqual([...a.cars.keys()].sort(), [...b.cars.keys()].sort()); for (let cell = 0; cell < 4; cell++)
+    assert.ok([...a.cars.values()].some(car => car.position[0] > cell * 5000 - 20 && car.position[0] < cell * 5000 + 20)); });
+test('road obligations continue advancing when their models are far outside the camera', () => { const { traffic, car } = setup(); traffic.update(.1, 1, [], [100000, 100, 100000]); assert.ok(car.s > 80); });
+test('a committed vehicle clears during warning while the railway waits before lowering barriers', async () => { const { RailwaySimulation } = await import('../src/core/simulation.js'); const { RouteGeometry } = await import('../src/core/geometry.js'); const { readFileSync } = await import('node:fs'); const route = new RouteGeometry(JSON.parse(readFileSync('public/data/route.json', 'utf8'))), sim = new RailwaySimulation(route), { traffic, car } = setup(); sim.ai = []; sim.crossings = [{ ...gate, state: 'open', blend: 0, timer: 0, held: false }]; sim.player.s = 950; sim.player.controller = -1; sim.paused = false; sim.roadCrossingClear = s => traffic.crossingClear(s); car.s = 180; car.position = [-1.38, 100, -180]; car.speed = 9; let warned = false; for (let i = 0; i < 400; i++) {
+    sim.update(.05, { a: false, d: false, horn: false });
+    traffic.update(.05, sim.clock, sim.crossings, [0, 100, -200]);
+    const c = sim.crossings[0];
+    if (c.state === 'warning')
+        warned = true;
+    if (c.state === 'closing' || c.state === 'closed')
+        assert.equal(traffic.crossingClear(c.s), true);
+} assert.equal(warned, true); assert.equal(sim.crossings[0].state, 'closed'); assert.ok(car.s > 230); });
+test('road vehicle chassis follows the actual longitudinal grade in both directions', () => { const traffic = new RoadTraffic(); traffic.addRoads([{ id: 'graded', kind: 'residential', width: 6, points: [[0, 100, 0], [0, 110, -200]] }]); traffic.cars.clear(); for (const dir of [1, -1])
+    traffic.cars.set(`grade-${dir}`, { id: `grade-${dir}`, road: 'graded', s: 100, direction: dir, speed: 0, kind: 'car', length: 4.5, position: [dir * -1.38, 105, -100], yaw: 0 }); traffic.update(.1, 1, [], [0, 105, -100]); assert.ok(traffic.cars.get('grade-1').pitch > 0); assert.ok(traffic.cars.get('grade--1').pitch < 0); assert.ok(Math.abs(traffic.cars.get('grade-1').pitch + traffic.cars.get('grade--1').pitch) < 1e-10); });
+test('source junctions connect by node identity while separate stacked routes stay separate',()=>{
+ const traffic=new RoadTraffic();traffic.configure([
+  {id:'a',kind:'residential',width:5,points:[[0,10,0],[20,10,0]],connectionNodes:['osm/a','osm/shared']},
+  {id:'b',kind:'residential',width:5,points:[[20,10,0],[40,10,0]],connectionNodes:['osm/shared','osm/b']},
+  {id:'bridge',kind:'residential',width:5,points:[[20,10,0],[20,10,20]],connectionNodes:['osm/other','osm/c']},
+ ]);
+ assert.deepEqual(traffic.nodes.get('osm/shared').map(x=>x.id).sort(),['a','b']);
+ assert.deepEqual(traffic.nodes.get('osm/other').map(x=>x.id),['bridge']);
+});
+test('one-way road traffic spawns only in its mapped direction',()=>{
+ const traffic=new RoadTraffic();const roads=Array.from({length:30},(_,i)=>({id:`oneway-${i}`,kind:'residential',width:6,oneway:1,points:[[i*20,10,0],[i*20,10,-200]]}));traffic.configure(roads);assert.ok(traffic.cars.size);assert.ok([...traffic.cars.values()].every(c=>c.direction===1));
+});

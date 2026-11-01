@@ -21,6 +21,9 @@ structures, terrain and track geometry are reconstructed from this document and
 its SHA-256-addressed tile set. The original floating-point exports remain import
 inputs and historical audit evidence; the browser no longer loads them to compose
 the world. World generation retains stable entity IDs and deterministic seeds.
+Road and rail records contain compact quarter-cell occupancy masks and height
+bands, so a road, tramway or railway can share horizontal cells at different
+levels without becoming connected. Stable asset IDs select the existing kit.
 
 `CurvePath` renders cubic Hermite curves through the canonical anchors. Adjacent
 pieces share tangents; the height derivative is monotone to avoid overshoot on
@@ -30,8 +33,13 @@ edges also have reusable piece records, connection ports and stacked occupancy.
 Connectivity uses source IDs and transport mode, never proximity or a plan crossing.
 
 The existing WebGL 2 renderer, camera, palette, front view and driving controls are
-retained. The new regional/landmark generators feed its existing mesh batches.
+retained. The regional/landmark generators feed its existing mesh batches.
 Landmark silhouettes are simplified procedural models, not scanned replicas.
+The base terrain is a common 16 m corner grid with slope-limited heights. Roads,
+track, buildings, bridges and tunnel components occupy separate overlay layers.
+Roads compile into reusable straight, curve, gradient, junction, bridge, tunnel
+and crossing pieces; rail and tram pieces have source-node ports and explicit
+turnout, bridge and tunnel records. The grid records preserve smooth centre-lines.
 
 ## Site corrections
 
@@ -40,6 +48,10 @@ Landmark silhouettes are simplified procedural models, not scanned replicas.
   carriage/repair/diesel facilities, its own station building and signal box.
   Source crossovers and the exchange remain physical scenery; protective signals
   do not grant player authority to drive across the NR/SVR boundary.
+  The mapped Comberton Hill A448 bridge and its approaches cross the end of the
+  station, with an inferred deck height and sufficient train clearance.
+  Kidderminster and Tyseley buffer stops use the existing buffer asset only
+  where a dated OSM stop node matches a degree-one mapped track endpoint.
 - Galton has distinct high and low rail/platform bindings, a spanning upper deck
   and a lower canal/rail corridor. Indoor access layers use elevated walkways;
   the historic canal bridge uses its own deck profile. Upper platform side faces end at deck level,
@@ -65,30 +77,60 @@ and journey in one transaction. Later saves reuse that immutable world. A failed
 fetch or transaction leaves the previous save intact. A reload with all world
 data requests blocked is an acceptance test. Engine/world identity changes reject
 incompatible older journeys rather than mixing new scenery with an old simulation.
+When a newer world is saved, the previous active journey is kept under
+`backup/<worldHash>` in the `journeys` IndexedDB store, and its old world is kept
+in the `worlds` store. There is no in-game migration of incompatible operating
+state; recovering such a backup requires the corresponding older game version.
 
-Build from the archived source extracts with:
+Build from the checked-in controls and archived source extracts with Node.js:
 
 ```sh
-python scripts/import-geography.py
 npm run build:world
-npm run typecheck
+npm run check
 npm test
 npm run build:qa
-npx tsx scripts/audit-grid-clearance.ts
+node scripts/landscape-browser-qa.js
+node scripts/audit-grid-clearance.js
+npm run diagnose:world
 ```
 
-The importer requires `requirements-data.txt`. `scripts/grid-browser-qa.py`
-expects the QA build served on port 4175 and captures fixed front views at the
-priority stations and diagnostic context views, then checks complete-world saving and reload with data requests
-blocked. The clearance audit sweeps both running lanes and Galton’s lower
-tracks through actual cooked triangles around eight priority locations. It also
+The JavaScript browser runner starts its own local static server and captures
+fixed front and context views, then checks complete-world saving and reload with
+data requests blocked. The clearance audit sweeps both running lanes and Galton’s
+lower tracks through actual cooked triangles around priority locations. It also
 checks finite vertices. `npm run build:site` refreshes the portable checked-in static build;
 `npm run verify:site` verifies its provenance. Neither command deploys anything.
+`diagnose:world` reports mismatched anchors and unknown templates as errors, and
+lists candidate dead ends, duplicate paths, tangent and tight-radius changes,
+steep grades, unmatched level crossings and terrain/rail height differences
+for review. Dead ends and large level
+differences can be intentional, including at crossings and tunnels.
+
+In a QA/development build, `const d = await __railway.debug()` creates a
+developer inspector. Call `d.show(x, z, radiusCells)` and `d.hide()` to toggle
+the terrain grid; `d.inspect(x, z)` returns tile/sub-tile coordinates, nearby
+piece IDs, connection ports, rail height and terrain height. It adds no controls
+or overlay to the normal production view.
+
+The 2026 station-area road and building extracts include source URLs, retrieval
+dates, way and node identities. The original corridor controls fill the spaces
+between those extracts; the road network is not a complete street survey. OSM
+building tags select houses, terraces, flats and other forms where available;
+untagged homes default to two storeys. Formation and bridge elevations are
+modelled, not taken as surveyed levels.
 
 Limits: map/node topology is stronger evidence than inferred heights, widths and
 asset shapes. The short western terrain margin is a gradient-constrained model;
-the original EA terrain remains the main corridor source, with a smooth join to
-that margin. Fixed screenshots and
+EA terrain is resampled and smoothed for a consistent game landscape, with a
+smooth join to that margin. Fixed screenshots and
 finite geometry checks do not establish a surveyed reconstruction, a complete
 real-world interlocking, or hardware performance. Record visual discrepancies
 instead of marking a location accepted solely because these checks pass.
+
+Exact repeated two-way ground-road segments from the same source way and the
+same endpoint nodes are collapsed during compilation; their original IDs remain
+in `sourceAliases`. One-way or otherwise ambiguous overlaps remain for review.
+The compiler distributes steep ground-road approaches across connected nodes
+while fixing mapped bridge, tunnel and level-crossing controls. Node changes and
+remaining conflicts are recorded in `construction.gradeAdjustments` and
+`construction.gradeExceptions`; those values are inferred, not survey heights.

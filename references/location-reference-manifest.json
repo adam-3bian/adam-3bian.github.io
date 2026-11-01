@@ -94,6 +94,39 @@
       "url": "https://www.openstreetmap.org/way/363476190",
       "date": "2026-11-01",
       "role": "surviving unused viaduct footprint and 8 m tagged height; arch spacing inferred"
+    },
+    "osm-landscape": {
+      "url": "https://www.openstreetmap.org/copyright",
+      "date": "2026-11-01",
+      "role": "Dated road, bridge, junction and building way/node geometry in station-area extracts; elevations inferred",
+      "extracts": "references/geography/*landscape*.osm.json",
+      "coverage": "all 22 station areas; road links between extracts use earlier archived corridor export"
+    },
+    "comberton-hill": {
+      "url": "https://www.openstreetmap.org/way/40433000",
+      "date": "2026-11-01",
+      "role": "Comberton Hill A448 bridge over Kidderminster station throat and its mapped road approaches; bridge elevation and structure inferred"
+    },
+    "osm-buffer-stops": {
+      "url": "https://www.openstreetmap.org/copyright",
+      "date": "2026-11-01",
+      "role": "Explicit OSM buffer-stop nodes cross-matched with degree-one source track endpoints at Kidderminster and Tyseley",
+      "extracts": "references/geography/buffer-stops-*.osm.json"
+    },
+    "osm-level-crossings": {
+      "url": "https://www.openstreetmap.org/copyright",
+      "date": "2026-11-01",
+      "role": "Pairs of OSM level-crossing nodes on the Blakedown, Cradley Heath, Langley Green and Bentley Heath roads; projected to the existing railway alignment, with heights inferred",
+      "extracts": "references/geography/crossing-nodes-*.osm.json",
+      "interpretation": "Each existing crossing retains its former position and chainage for migration review."
+    },
+    "osm-thw-metro": {
+      "url": "https://www.openstreetmap.org/way/27854459",
+      "additionalUrls": [
+        "https://www.openstreetmap.org/way/171957163"
+      ],
+      "date": "2026-11-01",
+      "role": "Retained sampled Metro paths through The Hawthorns from the existing route controls; tram platform edges are bound to their nearest path and expanded outward, with inferred profile heights"
     }
   },
   "locations": [
@@ -107,11 +140,14 @@
       "sourceIds": [
         "osm",
         "svr-plan",
-        "svr-connection"
+        "svr-connection",
+        "osm-landscape",
+        "comberton-hill",
+        "osm-buffer-stops"
       ],
       "referenceDate": "2026-11-01",
       "photoDate": null,
-      "composition": "two mainline platforms; separate KDT island in former goods yard; connected exchange, loop, turnback and workshop sidings",
+      "composition": "two mainline platforms; separate KDT island in former goods yard; connected exchange, loop, turnback and workshop sidings; Comberton Hill A448 connects across the station throat on a bridge",
       "requiredGridFootprint": {
         "cellMetres": 16,
         "centre": [
@@ -128,7 +164,8 @@
       "platformCount": 2,
       "interfaces": [
         "roads",
-        "terrain"
+        "terrain",
+        "Comberton Hill A448 road bridge over station throat"
       ],
       "customAssets": [
         "kidderminster-town",
@@ -163,7 +200,8 @@
       ],
       "sourceIds": [
         "osm",
-        "photos"
+        "photos",
+        "osm-level-crossings"
       ],
       "referenceDate": "2026-11-01",
       "photoDate": null,
@@ -379,7 +417,8 @@
       ],
       "sourceIds": [
         "osm",
-        "photos"
+        "photos",
+        "osm-level-crossings"
       ],
       "referenceDate": "2026-11-01",
       "photoDate": null,
@@ -541,7 +580,8 @@
       ],
       "sourceIds": [
         "osm",
-        "photos"
+        "photos",
+        "osm-level-crossings"
       ],
       "referenceDate": "2026-11-01",
       "photoDate": null,
@@ -657,7 +697,8 @@
       ],
       "sourceIds": [
         "osm",
-        "hawthorns"
+        "hawthorns",
+        "osm-thw-metro"
       ],
       "referenceDate": "2026-11-01",
       "photoDate": null,
@@ -997,7 +1038,8 @@
       "sourceIds": [
         "osm",
         "works",
-        "depot"
+        "depot",
+        "osm-buffer-stops"
       ],
       "referenceDate": "2026-11-01",
       "photoDate": null,
@@ -1268,7 +1310,8 @@
       ],
       "sourceIds": [
         "osm",
-        "photos"
+        "photos",
+        "osm-level-crossings"
       ],
       "referenceDate": "2026-11-01",
       "photoDate": null,
@@ -1370,5 +1413,5 @@
     "saveReload": "required",
     "fixedCameraComparison": "required; automated screenshot capture alone does not accept appearance"
   },
-  "scope": "Birmingham\u2013Kidderminster main railway. SVR limited to Kidderminster Town, yard, works, exchange and nearby departing tracks as scenery; no full SVR reconstruction or journey."
+  "scope": "Birmingham–Kidderminster main railway. SVR limited to Kidderminster Town, yard, works, exchange and nearby departing tracks as scenery; no full SVR reconstruction or journey."
 }

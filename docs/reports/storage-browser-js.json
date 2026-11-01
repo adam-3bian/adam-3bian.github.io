@@ -1,0 +1,21 @@
+{
+  "method": "Real JourneyStore JavaScript module; Chromium IndexedDB; no graphics device",
+  "sourceHash": "b073fca787aeddc0645ebc3ec6d1cc64824504322d0f0b778c47ed568abd0d4f",
+  "checks": {
+    "write": {
+      "indexedDBRoundTrip": true,
+      "payloadBytes": 6291456,
+      "localStorageRejectedSamePayload": true
+    },
+    "reload": {
+      "payloadRetained": true,
+      "positionRetained": true,
+      "controllerRetained": true,
+      "brakeRetained": true,
+      "crossingRetained": true
+    },
+    "legacyMigration": true
+  },
+  "errors": [],
+  "browser": "151.0.7922.173"
+}

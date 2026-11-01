@@ -1,0 +1,965 @@
+{
+  "scope": "Grid/source consistency diagnostics; warnings need site review and are not proof of defects.",
+  "totals": {
+    "railPieces": 2555,
+    "tramPieces": 334,
+    "roadPieces": 34311,
+    "unconnected": 20126,
+    "unmappedEndpoints": 13726,
+    "unconnectedMapped": 6400,
+    "tangent": 1644,
+    "radius": 0,
+    "gradient": 308,
+    "duplicate": 94,
+    "terrain": 2,
+    "crossing": 0
+  },
+  "errors": [],
+  "warnings": {
+    "unconnected": [
+      {
+        "node": "rail/318130543",
+        "piece": "osm/4016362/21",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/1870362744",
+        "piece": "osm/63712256/0",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/787969944",
+        "piece": "osm/63712261/0",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/9101508543",
+        "piece": "osm/63712261/10",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/787969981",
+        "piece": "osm/63712276/0",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/787970010",
+        "piece": "osm/63712279/0",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/1251434609",
+        "piece": "osm/109274802/4",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/489492099",
+        "piece": "osm/109274809/0",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/787970103",
+        "piece": "osm/158923264/39",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/1870374762",
+        "piece": "osm/176528019/26",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/1870374843",
+        "piece": "osm/176528020/1",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/1870374785",
+        "piece": "osm/176528021/0",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/9426970108",
+        "piece": "osm/192156280/0",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/2027164792",
+        "piece": "osm/192156284/0",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/2294894710",
+        "piece": "osm/220362368/0",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/2294894713",
+        "piece": "osm/220362369/0",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/2294894712",
+        "piece": "osm/220362370/0",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/8498308760",
+        "piece": "osm/914857371/0",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/8498308764",
+        "piece": "osm/914857371/3",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/1710411043",
+        "piece": "osm/984388636/2",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/7419716913",
+        "piece": "osm/984388637/2",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/1251434606",
+        "piece": "osm/984388638/0",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/9101508537",
+        "piece": "osm/984388639/0",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/1251434643",
+        "piece": "osm/984388639/0",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/787970059",
+        "piece": "osm/984388640/7",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/2027164846",
+        "piece": "osm/1472835655/0",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/2027098761",
+        "piece": "osm/1472835655/26",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/701411587",
+        "piece": "osm/1472835656/0",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/21281108",
+        "piece": "osm/1472835656/20",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "tram/305810628",
+        "piece": "osm/27854458/0",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/350404864",
+        "piece": "osm/31425111/0",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/350404875",
+        "piece": "osm/31425112/0",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/480760107",
+        "piece": "osm/40005663/0",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/480791499",
+        "piece": "osm/40005667/13",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/480760129",
+        "piece": "osm/40005669/0",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/480760134",
+        "piece": "osm/40005670/0",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/480791489",
+        "piece": "osm/40006529/5",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/480767644",
+        "piece": "osm/40006536/0",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/480767645",
+        "piece": "osm/40006536/0",
+        "note": "may be a legitimate end or a clipped boundary"
+      },
+      {
+        "node": "rail/480767646",
+        "piece": "osm/40006537/0",
+        "note": "may be a legitimate end or a clipped boundary"
+      }
+    ],
+    "tangent": [
+      {
+        "node": "road/osm/9253646660",
+        "pieces": [
+          "way/1002679182/0",
+          "way/1002679183/0/piece/0"
+        ],
+        "degrees": 16.9
+      },
+      {
+        "node": "road/osm/9255628400",
+        "pieces": [
+          "way/1002924033/0",
+          "way/58125464/0/piece/0"
+        ],
+        "degrees": 23.5
+      },
+      {
+        "node": "road/osm/2758366657",
+        "pieces": [
+          "way/10056510/0/piece/0",
+          "way/1361563746/0/piece/1"
+        ],
+        "degrees": 47.1
+      },
+      {
+        "node": "road/osm/82665810",
+        "pieces": [
+          "way/10059527/0/piece/2",
+          "way/10059528/0/piece/1"
+        ],
+        "degrees": 30.6
+      },
+      {
+        "node": "road/osm/14145527045",
+        "pieces": [
+          "way/10059528/0/piece/1",
+          "way/1554887422/0/piece/1"
+        ],
+        "degrees": 18.1
+      },
+      {
+        "node": "road/osm/82665815",
+        "pieces": [
+          "way/10063222/0/piece/1",
+          "way/1554887422/0/piece/2"
+        ],
+        "degrees": 27.6
+      },
+      {
+        "node": "road/osm/16075838",
+        "pieces": [
+          "way/10063625/0",
+          "way/1393068084/0/piece/0"
+        ],
+        "degrees": 85.1
+      },
+      {
+        "node": "road/osm/9287117937",
+        "pieces": [
+          "way/1006610041/0",
+          "way/1036843572/0/piece/1"
+        ],
+        "degrees": 102.1
+      },
+      {
+        "node": "road/osm/99054342",
+        "pieces": [
+          "way/1010761558/0/piece/0",
+          "way/955298647/0/piece/0/tile/0"
+        ],
+        "degrees": 26.2
+      },
+      {
+        "node": "road/osm/369727566",
+        "pieces": [
+          "way/101518872/0/piece/1",
+          "way/150360765/0/piece/3"
+        ],
+        "degrees": 31.3
+      },
+      {
+        "node": "road/osm/3745605077",
+        "pieces": [
+          "way/1023593308/0/piece/1",
+          "way/538977195/0/piece/0"
+        ],
+        "degrees": 42.6
+      },
+      {
+        "node": "road/osm/5503883183",
+        "pieces": [
+          "way/1024122366/0/piece/1",
+          "way/1265291057/0/piece/2"
+        ],
+        "degrees": 21.4
+      },
+      {
+        "node": "road/osm/9504587120",
+        "pieces": [
+          "way/1031138430/0/piece/1",
+          "way/1031138433/0/piece/1"
+        ],
+        "degrees": 16.3
+      },
+      {
+        "node": "road/osm/32351056",
+        "pieces": [
+          "way/1031138452/0",
+          "way/202262773/0"
+        ],
+        "degrees": 128.5
+      },
+      {
+        "node": "road/osm/1192661148",
+        "pieces": [
+          "way/103284204/0",
+          "way/993040449/0"
+        ],
+        "degrees": 89.1
+      },
+      {
+        "node": "road/osm/1192661146",
+        "pieces": [
+          "way/103284206/0",
+          "way/993040449/0"
+        ],
+        "degrees": 80.5
+      },
+      {
+        "node": "road/osm/9522287930",
+        "pieces": [
+          "way/1033573036/0/piece/0",
+          "way/105807547/0/piece/1"
+        ],
+        "degrees": 99.3
+      },
+      {
+        "node": "road/osm/9528337312",
+        "pieces": [
+          "way/1034306682/0/piece/1",
+          "way/1034306683/0/piece/0"
+        ],
+        "degrees": 37.2
+      },
+      {
+        "node": "road/osm/330243954",
+        "pieces": [
+          "way/1043697678/0/piece/1",
+          "way/29998256/0"
+        ],
+        "degrees": 67.3
+      },
+      {
+        "node": "road/osm/4038486134",
+        "pieces": [
+          "way/1043697679/0/piece/1",
+          "way/401418614/0/piece/0"
+        ],
+        "degrees": 27.7
+      },
+      {
+        "node": "road/osm/4038486133",
+        "pieces": [
+          "way/1043697680/0/piece/1",
+          "way/401418616/0/piece/0"
+        ],
+        "degrees": 17.3
+      },
+      {
+        "node": "road/osm/4038486131",
+        "pieces": [
+          "way/1043697681/0/piece/0",
+          "way/401418613/0/piece/0"
+        ],
+        "degrees": 43.3
+      },
+      {
+        "node": "road/osm/4038486130",
+        "pieces": [
+          "way/1043697682/0/piece/0",
+          "way/401418615/0/piece/0"
+        ],
+        "degrees": 42.8
+      },
+      {
+        "node": "road/osm/4038486135",
+        "pieces": [
+          "way/1043697683/0/piece/0",
+          "way/401418615/0/piece/0"
+        ],
+        "degrees": 49.4
+      },
+      {
+        "node": "road/osm/4007757509",
+        "pieces": [
+          "way/1043697683/0/piece/0",
+          "way/1043697684/0/piece/0"
+        ],
+        "degrees": 163.9
+      },
+      {
+        "node": "road/osm/4038486136",
+        "pieces": [
+          "way/1043697684/0/piece/0",
+          "way/401418613/0/piece/0"
+        ],
+        "degrees": 65.9
+      },
+      {
+        "node": "road/osm/4038486137",
+        "pieces": [
+          "way/1043697685/0/piece/1",
+          "way/401418616/0/piece/0"
+        ],
+        "degrees": 24.1
+      },
+      {
+        "node": "road/osm/4007757510",
+        "pieces": [
+          "way/1043697685/0/piece/1",
+          "way/1043697686/0/piece/0"
+        ],
+        "degrees": 155.8
+      },
+      {
+        "node": "road/osm/4038486138",
+        "pieces": [
+          "way/1043697686/0/piece/0",
+          "way/401418614/0/piece/0"
+        ],
+        "degrees": 49.3
+      },
+      {
+        "node": "road/osm/12536974768",
+        "pieces": [
+          "way/1043697687/0/piece/1",
+          "way/25077941/0/piece/0"
+        ],
+        "degrees": 18.9
+      },
+      {
+        "node": "road/osm/1204510288",
+        "pieces": [
+          "way/104397868/0/piece/0",
+          "way/850459282/0"
+        ],
+        "degrees": 81.9
+      },
+      {
+        "node": "road/osm/9631108679",
+        "pieces": [
+          "way/1047389964/0/piece/1",
+          "way/1047389968/0/piece/1"
+        ],
+        "degrees": 70.1
+      },
+      {
+        "node": "road/osm/9631086070",
+        "pieces": [
+          "way/1047391490/0/piece/0",
+          "way/1047391491/0/piece/0"
+        ],
+        "degrees": 17.3
+      },
+      {
+        "node": "road/osm/1218278375",
+        "pieces": [
+          "way/1047391496/0/piece/1",
+          "way/105807554/0/piece/0/tile/0"
+        ],
+        "degrees": 34.2
+      },
+      {
+        "node": "road/osm/90001212",
+        "pieces": [
+          "way/10476422/0/piece/1",
+          "way/895317492/0/piece/1"
+        ],
+        "degrees": 20.8
+      },
+      {
+        "node": "road/osm/1283070263",
+        "pieces": [
+          "way/10476423/0/piece/1",
+          "way/113020872/0/piece/0"
+        ],
+        "degrees": 75.6
+      },
+      {
+        "node": "road/osm/82640339",
+        "pieces": [
+          "way/10476448/0",
+          "way/245622096/0"
+        ],
+        "degrees": 15.1
+      },
+      {
+        "node": "road/osm/90001238",
+        "pieces": [
+          "way/10479196/0/piece/0",
+          "way/1354657715/0/piece/0"
+        ],
+        "degrees": 17.8
+      },
+      {
+        "node": "road/osm/9682213984",
+        "pieces": [
+          "way/10479598/0/piece/2",
+          "way/1053567487/0/piece/0"
+        ],
+        "degrees": 17
+      },
+      {
+        "node": "road/osm/2400538675",
+        "pieces": [
+          "way/1051628020/0/piece/0",
+          "way/231715204/0/piece/2"
+        ],
+        "degrees": 71
+      }
+    ],
+    "radius": [],
+    "gradient": [
+      {
+        "id": "osm/1472835656/16",
+        "mode": "rail",
+        "grade": 0.17
+      },
+      {
+        "id": "osm/1472835656/17",
+        "mode": "rail",
+        "grade": 0.226
+      },
+      {
+        "id": "osm/171828567/1",
+        "mode": "tram",
+        "grade": 0.07
+      },
+      {
+        "id": "way/101518872/0/piece/1",
+        "mode": "road",
+        "grade": 0.311
+      },
+      {
+        "id": "way/101518872/0/piece/1",
+        "mode": "road",
+        "grade": 0.283
+      },
+      {
+        "id": "way/103284204/0",
+        "mode": "road",
+        "grade": 0.484
+      },
+      {
+        "id": "way/103284204/0",
+        "mode": "road",
+        "grade": 0.499
+      },
+      {
+        "id": "way/103284206/0",
+        "mode": "road",
+        "grade": 0.473
+      },
+      {
+        "id": "way/103284206/0",
+        "mode": "road",
+        "grade": 0.499
+      },
+      {
+        "id": "way/1043697678/0/piece/1",
+        "mode": "road",
+        "grade": 2.373
+      },
+      {
+        "id": "way/1043697679/0/piece/1",
+        "mode": "road",
+        "grade": 0.256
+      },
+      {
+        "id": "way/1043697680/0/piece/1",
+        "mode": "road",
+        "grade": 0.261
+      },
+      {
+        "id": "way/10479196/0/piece/0",
+        "mode": "road",
+        "grade": 0.294
+      },
+      {
+        "id": "way/1084581989/0/piece/0",
+        "mode": "road",
+        "grade": 3.576
+      },
+      {
+        "id": "way/1085088213/0/piece/0",
+        "mode": "road",
+        "grade": 0.267
+      },
+      {
+        "id": "way/1085088213/0/piece/0",
+        "mode": "road",
+        "grade": 0.318
+      },
+      {
+        "id": "way/1085088213/0/piece/0",
+        "mode": "road",
+        "grade": 0.282
+      },
+      {
+        "id": "way/1094722142/0",
+        "mode": "road",
+        "grade": 1.881
+      },
+      {
+        "id": "way/113020875/0/piece/1",
+        "mode": "road",
+        "grade": 0.258
+      },
+      {
+        "id": "way/113020875/0/piece/1",
+        "mode": "road",
+        "grade": 0.32
+      },
+      {
+        "id": "way/113598962/0/piece/1",
+        "mode": "road",
+        "grade": 1.314
+      },
+      {
+        "id": "way/1188518312/0/piece/1",
+        "mode": "road",
+        "grade": 5.327
+      },
+      {
+        "id": "way/1200810419/0",
+        "mode": "road",
+        "grade": 0.262
+      },
+      {
+        "id": "way/1200810419/0",
+        "mode": "road",
+        "grade": 0.254
+      },
+      {
+        "id": "way/1201505774/0/piece/1",
+        "mode": "road",
+        "grade": 0.261
+      },
+      {
+        "id": "way/1201505774/0/piece/1",
+        "mode": "road",
+        "grade": 0.337
+      },
+      {
+        "id": "way/1201505777/0/piece/0",
+        "mode": "road",
+        "grade": 0.294
+      },
+      {
+        "id": "way/1201505777/0/piece/0",
+        "mode": "road",
+        "grade": 0.254
+      },
+      {
+        "id": "way/1208249083/0",
+        "mode": "road",
+        "grade": 0.282
+      },
+      {
+        "id": "way/12334483/0/piece/0",
+        "mode": "road",
+        "grade": 0.685
+      },
+      {
+        "id": "way/125510139/0",
+        "mode": "road",
+        "grade": 0.98
+      },
+      {
+        "id": "way/1260580057/0/piece/1",
+        "mode": "road",
+        "grade": 0.794
+      },
+      {
+        "id": "way/1317993137/0/piece/0",
+        "mode": "road",
+        "grade": 0.285
+      },
+      {
+        "id": "way/1317993138/0/piece/1",
+        "mode": "road",
+        "grade": 0.27
+      },
+      {
+        "id": "way/1325501462/0",
+        "mode": "road",
+        "grade": 0.264
+      },
+      {
+        "id": "way/1325501462/0",
+        "mode": "road",
+        "grade": 0.261
+      },
+      {
+        "id": "way/1327635370/0",
+        "mode": "road",
+        "grade": 0.284
+      },
+      {
+        "id": "way/1327635373/0",
+        "mode": "road",
+        "grade": 0.295
+      },
+      {
+        "id": "way/1328157026/0/piece/0",
+        "mode": "road",
+        "grade": 0.336
+      },
+      {
+        "id": "way/1328157026/0/piece/0",
+        "mode": "road",
+        "grade": 0.279
+      }
+    ],
+    "duplicate": [
+      {
+        "id": "way/1411943115/0",
+        "other": "way/1411943108/0",
+        "mode": "road"
+      },
+      {
+        "id": "way/374459655/0/piece/1",
+        "other": "way/374459652/0/piece/3",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/999248686/4-5",
+        "other": "way/899600621/0/piece/8",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/193882091/8-9",
+        "other": "osm-road/72875382/20-21",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/193882091/9-10",
+        "other": "osm-road/72875382/19-20",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/193882091/10-11",
+        "other": "osm-road/72875382/18-19",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/193882091/32-33",
+        "other": "way/1388389257/0/piece/3",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/193883075/5-6",
+        "other": "way/1354657722/0/piece/0",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/193883075/6-7",
+        "other": "way/1354657722/0/piece/1",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/193883075/11-12",
+        "other": "way/1388389259/0/piece/0",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/193883075/16-17",
+        "other": "osm-road/193882091/27-28",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/193883075/17-18",
+        "other": "osm-road/193882091/26-27",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/193883075/18-19",
+        "other": "osm-road/193882091/25-26",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/193883075/19-20",
+        "other": "osm-road/193882091/24-25",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/193883075/20-21",
+        "other": "osm-road/193882091/23-24",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/196123340/34-35",
+        "other": "way/1393068081/0/piece/3",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/371611312/18-19",
+        "other": "osm-road/371605128/13-14",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/396061308/0-1",
+        "other": "osm-road/72875382/28-29",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/396061308/1-2",
+        "other": "osm-road/72875382/27-28",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/400071570/19-20",
+        "other": "osm-road/395815575/5-6",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/400071570/20-21",
+        "other": "osm-road/395815575/4-5",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/400071572/5-6",
+        "other": "osm-road/400071569/7-8",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/400071572/6-7",
+        "other": "osm-road/400071569/6-7",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/400071575/3-4",
+        "other": "osm-road/400071569/16-17",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/400071575/4-5",
+        "other": "osm-road/400071569/15-16",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/400071575/26-27",
+        "other": "osm-road/395815575/9-10",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/400071575/27-28",
+        "other": "osm-road/395815575/8-9",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/418409179/15-16",
+        "other": "osm-road/400071571/48-49",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/418409179/16-17",
+        "other": "osm-road/400071571/49-50",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/418409180/49-50",
+        "other": "way/1561340910/0/piece/4",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/418409180/50-51",
+        "other": "way/1068326664/0/piece/1",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/533935051/14-15",
+        "other": "osm-road/418409179/29-30",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/533935051/15-16",
+        "other": "osm-road/418409179/30-31",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/533935051/24-25",
+        "other": "osm-road/418409180/0-1",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/533935051/25-26",
+        "other": "osm-road/418409180/1-2",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/533935051/26-27",
+        "other": "osm-road/418409180/2-3",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/553612818/0-1",
+        "other": "osm-road/72875382/23-24",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/553612818/1-2",
+        "other": "osm-road/72875382/24-25",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/553612818/8-9",
+        "other": "osm-road/396061308/4-5",
+        "mode": "road"
+      },
+      {
+        "id": "osm-road/553612818/9-10",
+        "other": "osm-road/396061308/5-6",
+        "mode": "road"
+      }
+    ],
+    "terrain": [
+      {
+        "id": "running/up/2288",
+        "railHeight": 144.78125,
+        "terrainHeight": 175.47,
+        "note": "check earthwork or a missing structure"
+      },
+      {
+        "id": "running/down/2288",
+        "railHeight": 144.78125,
+        "terrainHeight": 175.52,
+        "note": "check earthwork or a missing structure"
+      }
+    ],
+    "crossing": []
+  },
+  "revision": "a972112cc7694560042b4ee0f85b3fd92ecf55613803f17b5207fc876e086ec4"
+}

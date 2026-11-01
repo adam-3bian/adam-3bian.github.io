@@ -14,7 +14,7 @@ from playwright.async_api import async_playwright
 ROOT=Path.cwd();SITE=ROOT/'site';WORK=ROOT/'work';WORK.mkdir(exist_ok=True)
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 report={'method':'Production files copied to plain Python static HTTP servers; headed Chromium WebGL 2 with WebGPU unavailable. An optional legacy fixture uses the previous WebGPU build. No Vite, Node or npm server. Network access outside the two local origins is blocked.',
- 'sourceHashes':{str(p):sha(p) for p in [Path('app.html'),Path('index.html'),Path('vite.config.ts'),Path('package.json'),Path('src/main.ts'),Path('src/render/renderer.ts'),Path('src/core/resource-url.ts'),Path('src/style.css'),Path('scripts/world-version.ts'),Path('scripts/world-version-baseline.json'),Path('scripts/site-manifest.mjs'),Path(__file__)]},
+ 'sourceHashes':{str(p):sha(p) for p in [Path('app.html'),Path('index.html'),Path('vite.config.js'),Path('package.json'),Path('src/main.js'),Path('src/render/renderer.js'),Path('src/core/resource-url.js'),Path('src/style.css'),Path('scripts/world-version.js'),Path('scripts/world-version-baseline.json'),Path('scripts/site-manifest.mjs'),Path(__file__)]},
  'siteHashes':{str(p.relative_to(ROOT)):sha(p) for p in SITE.rglob('*') if p.is_file()},'checks':{},'scenarios':{},'errors':[],'externalRequests':[]}
 
 class QuietHandler(SimpleHTTPRequestHandler):

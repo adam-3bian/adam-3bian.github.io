@@ -8,7 +8,7 @@ function hashes(paths){return Object.fromEntries(paths.map(path=>[path,digest(pa
 function snapshot(){
   const html=readFileSync('site/index.html','utf8');
   if(!html.includes('<head>')||readFileSync('index.html','utf8')!==html.replace('<head>','<head>\n    <base href="./site/">'))throw new Error('The repository-root entry does not match the site entry.');
-  const inputs=['app.html','vite.config.ts','package.json','package-lock.json','scripts/world-version.ts','scripts/world-version-baseline.json','scripts/site-manifest.mjs',...files('src'),...files('public')].sort();
+  const inputs=['app.html','vite.config.js','package.json','package-lock.json','scripts/world-version.js','scripts/world-version-baseline.json','scripts/site-manifest.mjs',...files('src'),...files('public')].sort();
   return {schema:1,method:'SHA-256 of static build inputs and output files; the manifest excludes itself.',inputs:hashes(inputs),rootIndex:digest('index.html'),siteFiles:hashes(files('site').filter(path=>path!=='site/build-manifest.json'))};
 }
 const actual=snapshot(),manifest='site/build-manifest.json';

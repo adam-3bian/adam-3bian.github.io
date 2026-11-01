@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-01T10:45:10.995Z",
+  "generatedAt": "2026-11-01T22:22:56.572Z",
   "method": "Direct factory LOD0 probes. Rail limits apply to one external car. These probes do not certify every source building or parameter variant, LOD transitions, GPU performance or draw-call targets.",
   "sourceHashes": {
-    "scripts/asset-budgets.ts": "d9ee4536f69a1fd04e46a05858375a1139877b41a908b02c2e7215ff05d19b64",
-    "src/render/assets.ts": "b5fb662c1d096a6b7e746a9e2aa6519fd9768076b8c369c31434ced5fea2678e"
+    "scripts/asset-budgets.js": "139f9dd67a07a6aba830f4a5b76e2124a5d6beef77ec2b1c5a129f96e82d3548",
+    "src/render/assets.js": "951bf93c795224fd1fcd36f0045d85c33dbfcde7075c52085103b954a45196f6"
   },
   "probes": [
     {
