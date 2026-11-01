@@ -1,0 +1,745 @@
+{
+  "generatedUTC": "2026-11-01T14:43:55.057Z",
+  "sourceHashes": {
+    "public/data/route.json": "782c1291006b818b7cc236fbaa16cb3d5b33ef21c2afc2dadb3ec4d98f5e5001",
+    "public/data/road-surfaces.json": "1d9798585aac82cfbd3f1a1710fd059c4b38ec6ce331c60b7f88d43e573ff1be",
+    "src/core/geometry.ts": "bdfb3e91bf21e6f43ddacb6c63b20be29f160bcd3b66bc788d98f304f29e9df7",
+    "src/world/surfaces.ts": "77b02099f9c54d201e4d02f4c93a8b5406fe68272ae91b335398f69282340f82",
+    "scripts/audit-footways.ts": "e96ed00af19442288c2cc8e3239ef5f48f24894a4846af39ef01e4aae136b43e"
+  },
+  "scope": "Ground-mode footway centreline candidates near two modelled running lanes. Not full geometry, pedestrian connectivity, bridge, crossing or clearance acceptance.",
+  "segmentsExamined": 31013,
+  "candidateCount": 73,
+  "candidates": [
+    {
+      "id": "way/1043697681/0",
+      "segment": 0,
+      "lane": 4.2,
+      "s": 30681.74899892863,
+      "pathHeight": 128.34475312560943,
+      "railHeight": 128.25225518620405,
+      "difference": 0.09249793940537643,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/1043697682/0",
+      "segment": 0,
+      "lane": 4.2,
+      "s": 30682.738653216267,
+      "pathHeight": 128.3429708380862,
+      "railHeight": 128.24663439359537,
+      "difference": 0.09633644449081658,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/116615380/0",
+      "segment": 0,
+      "lane": 4.2,
+      "s": 9082.28143018707,
+      "pathHeight": 107.2878489708049,
+      "railHeight": 106.26461263627353,
+      "difference": 1.0232363345313757,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/1325265159/0",
+      "segment": 1,
+      "lane": 0,
+      "s": 22398.18632697774,
+      "pathHeight": 160.89668142264222,
+      "railHeight": 159.4786428114739,
+      "difference": 1.4180386111683276,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/1325265159/0",
+      "segment": 1,
+      "lane": 4.2,
+      "s": 22396.636173066843,
+      "pathHeight": 160.8365731348018,
+      "railHeight": 159.48251535339665,
+      "difference": 1.354057781405146,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/1325265160/0",
+      "segment": 0,
+      "lane": 0,
+      "s": 22386.712172684693,
+      "pathHeight": 160.2950367005565,
+      "railHeight": 159.49,
+      "difference": 0.8050367005564851,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/1325265160/0",
+      "segment": 0,
+      "lane": 4.2,
+      "s": 22384.741848476664,
+      "pathHeight": 160.519979842371,
+      "railHeight": 159.48887012134364,
+      "difference": 1.0311097210273488,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/1328157028/0",
+      "segment": 0,
+      "lane": 0,
+      "s": 24412.207688497234,
+      "pathHeight": 155.79419077114574,
+      "railHeight": 152.81424955575355,
+      "difference": 2.979941215392188,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/1328157028/0",
+      "segment": 0,
+      "lane": 4.2,
+      "s": 24410.83117723356,
+      "pathHeight": 156.36445647775628,
+      "railHeight": 152.77296672980384,
+      "difference": 3.591489747952437,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/1328157041/0",
+      "segment": 0,
+      "lane": 0,
+      "s": 24508.95767675989,
+      "pathHeight": 156.5362493167359,
+      "railHeight": 155.10594774335303,
+      "difference": 1.4303015733828772,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/1328157041/0",
+      "segment": 0,
+      "lane": 4.2,
+      "s": 24512.710696318027,
+      "pathHeight": 156.36861341997363,
+      "railHeight": 155.1716255343097,
+      "difference": 1.1969878856639298,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/1328255126/0",
+      "segment": 0,
+      "lane": 4.2,
+      "s": 24525.937619643322,
+      "pathHeight": 155.38493796589944,
+      "railHeight": 155.32128388567992,
+      "difference": 0.06365408021952135,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/1328255126/0",
+      "segment": 1,
+      "lane": 0,
+      "s": 24521.94348397134,
+      "pathHeight": 155.18537130572088,
+      "railHeight": 155.29131374606737,
+      "difference": -0.10594244034649591,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/1328255129/0",
+      "segment": 0,
+      "lane": 0,
+      "s": 24543.661937255805,
+      "pathHeight": 156.71756487704056,
+      "railHeight": 155.38,
+      "difference": 1.3375648770405633,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/1328255129/0",
+      "segment": 0,
+      "lane": 4.2,
+      "s": 24547.43507711139,
+      "pathHeight": 156.16403419311084,
+      "railHeight": 155.37581879731206,
+      "difference": 0.7882153957987725,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/1353249809/0",
+      "segment": 0,
+      "lane": 4.2,
+      "s": 23564.9187948598,
+      "pathHeight": 155.96748918725032,
+      "railHeight": 156.2195667000953,
+      "difference": -0.25207751284497704,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/1353249809/0",
+      "segment": 1,
+      "lane": 0,
+      "s": 23565.17399679525,
+      "pathHeight": 155.86683676666388,
+      "railHeight": 156.2179712017963,
+      "difference": -0.3511344351324226,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/1353249823/0",
+      "segment": 0,
+      "lane": 4.2,
+      "s": 23574.33008838802,
+      "pathHeight": 156.24144318166637,
+      "railHeight": 156.16661134547348,
+      "difference": 0.07483183619288525,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/1353249823/0",
+      "segment": 1,
+      "lane": 0,
+      "s": 23574.572170999778,
+      "pathHeight": 156.50862738420707,
+      "railHeight": 156.1654020523817,
+      "difference": 0.34322533182537995,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/135883943/0",
+      "segment": 1,
+      "lane": 0,
+      "s": 24240.302066211265,
+      "pathHeight": 156.61681818495782,
+      "railHeight": 154.26682123270373,
+      "difference": 2.349996952254088,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/135883943/0",
+      "segment": 2,
+      "lane": 4.2,
+      "s": 24238.2905925204,
+      "pathHeight": 156.5689644812781,
+      "railHeight": 154.27688939088088,
+      "difference": 2.292075090397219,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/1378095785/0",
+      "segment": 0,
+      "lane": 0,
+      "s": 24570.430632287902,
+      "pathHeight": 156.21659251666412,
+      "railHeight": 155.26667183467453,
+      "difference": 0.949920681989596,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/1378095785/0",
+      "segment": 0,
+      "lane": 4.2,
+      "s": 24574.324513851763,
+      "pathHeight": 155.93785548377187,
+      "railHeight": 155.2472133843502,
+      "difference": 0.690642099421666,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/1378095788/0",
+      "segment": 0,
+      "lane": 0,
+      "s": 24704.641161300857,
+      "pathHeight": 157.84593678614834,
+      "railHeight": 155.3857698828053,
+      "difference": 2.460166903343037,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/1378095788/0",
+      "segment": 0,
+      "lane": 4.2,
+      "s": 24704.550519044988,
+      "pathHeight": 157.69127952626295,
+      "railHeight": 155.3854299299897,
+      "difference": 2.305849596273248,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/1378095790/0",
+      "segment": 0,
+      "lane": 0,
+      "s": 24713.555858972828,
+      "pathHeight": 157.64861252250245,
+      "railHeight": 155.40946312656757,
+      "difference": 2.2391493959348736,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/1378095790/0",
+      "segment": 0,
+      "lane": 4.2,
+      "s": 24713.44978257782,
+      "pathHeight": 157.56232204145957,
+      "railHeight": 155.40919798880938,
+      "difference": 2.1531240526501847,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/1387587067/0",
+      "segment": 0,
+      "lane": 0,
+      "s": 24403.33820812314,
+      "pathHeight": 155.93633495493464,
+      "railHeight": 152.54818075438914,
+      "difference": 3.3881542005455003,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/1387587067/0",
+      "segment": 0,
+      "lane": 4.2,
+      "s": 24402.25073812288,
+      "pathHeight": 156.4064578242989,
+      "railHeight": 152.51555548188952,
+      "difference": 3.8909023424093903,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/139467798/0",
+      "segment": 0,
+      "lane": 0,
+      "s": 22182.047691039326,
+      "pathHeight": 159.59338229236673,
+      "railHeight": 159.34101802270544,
+      "difference": 0.25236426966128533,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/139467798/0",
+      "segment": 0,
+      "lane": 4.2,
+      "s": 22182.079381661963,
+      "pathHeight": 159.5354782056329,
+      "railHeight": 159.34109727081054,
+      "difference": 0.1943809348223624,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/1416406654/0",
+      "segment": 2,
+      "lane": 4.2,
+      "s": 21921.670570686852,
+      "pathHeight": 159.0550016116037,
+      "railHeight": 159.16996048682185,
+      "difference": -0.11495887521815007,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/1416406654/0",
+      "segment": 3,
+      "lane": 0,
+      "s": 21922.380871879748,
+      "pathHeight": 159.14484783274983,
+      "railHeight": 159.1690731827345,
+      "difference": -0.024225349984675404,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/150240079/0",
+      "segment": 0,
+      "lane": 0,
+      "s": 8567.032864804318,
+      "pathHeight": 100.92591280420524,
+      "railHeight": 99.34651714834638,
+      "difference": 1.5793956558588604,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/150240079/0",
+      "segment": 0,
+      "lane": 4.2,
+      "s": 8567.262187354896,
+      "pathHeight": 100.912108945758,
+      "railHeight": 99.35053097978174,
+      "difference": 1.5615779659762694,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/1565653710/0",
+      "segment": 0,
+      "lane": 0,
+      "s": 19595.455645589755,
+      "pathHeight": 168.21423600455668,
+      "railHeight": 166.75945698053104,
+      "difference": 1.4547790240256404,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/1565653710/0",
+      "segment": 0,
+      "lane": 4.2,
+      "s": 19593.420363494148,
+      "pathHeight": 168.2958839111602,
+      "railHeight": 166.7490989290943,
+      "difference": 1.5467849820659012,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/1565653711/0",
+      "segment": 0,
+      "lane": 0,
+      "s": 19590.92091805265,
+      "pathHeight": 166.80904789146575,
+      "railHeight": 166.73348794113568,
+      "difference": 0.07555995033007434,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/1565653740/0",
+      "segment": 0,
+      "lane": 0,
+      "s": 19582.87168907208,
+      "pathHeight": 167.89436410124827,
+      "railHeight": 166.67983969480753,
+      "difference": 1.214524406440745,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/1565653740/0",
+      "segment": 0,
+      "lane": 4.2,
+      "s": 19580.639098438234,
+      "pathHeight": 167.88709854606228,
+      "railHeight": 166.66309213767877,
+      "difference": 1.2240064083835023,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/1567419576/0",
+      "segment": 0,
+      "lane": 4.2,
+      "s": 10489.00868905102,
+      "pathHeight": 101.38551883048386,
+      "railHeight": 100.9735332548736,
+      "difference": 0.4119855756102595,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/1567419576/0",
+      "segment": 1,
+      "lane": 0,
+      "s": 10487.631609134181,
+      "pathHeight": 101.73825188032116,
+      "railHeight": 100.98966508913605,
+      "difference": 0.7485867911851045,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/1567419577/0",
+      "segment": 1,
+      "lane": 0,
+      "s": 10476.533465027753,
+      "pathHeight": 100.93903374517694,
+      "railHeight": 101.11448469763673,
+      "difference": -0.1754509524597836,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/159744053/0",
+      "segment": 20,
+      "lane": 0,
+      "s": 21912.559731992842,
+      "pathHeight": 159.0088837442726,
+      "railHeight": 159.19269588728645,
+      "difference": -0.18381214301385285,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/159744053/0",
+      "segment": 20,
+      "lane": 4.2,
+      "s": 21911.853797784446,
+      "pathHeight": 158.93647407681678,
+      "railHeight": 159.1944610965749,
+      "difference": -0.2579870197581329,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/163137526/0",
+      "segment": 0,
+      "lane": 0,
+      "s": 13233.196899329389,
+      "pathHeight": 86.53637684993942,
+      "railHeight": 86.33522318761416,
+      "difference": 0.2011536623252539,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/163137526/0",
+      "segment": 0,
+      "lane": 4.2,
+      "s": 13233.091537685035,
+      "pathHeight": 86.72736293474213,
+      "railHeight": 86.33601318889653,
+      "difference": 0.3913497458456021,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/184666575/0",
+      "segment": 3,
+      "lane": 0,
+      "s": 3902.2730189048516,
+      "pathHeight": 73.3398108014101,
+      "railHeight": 71.01772616968685,
+      "difference": 2.322084631723243,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/184666575/0",
+      "segment": 3,
+      "lane": 4.2,
+      "s": 3898.3531783464027,
+      "pathHeight": 73.29264848616107,
+      "railHeight": 70.96876173773504,
+      "difference": 2.323886748426034,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/204791346/0",
+      "segment": 3,
+      "lane": 0,
+      "s": 19922.108456434198,
+      "pathHeight": 167.52156933839453,
+      "railHeight": 167.80135413052926,
+      "difference": -0.27978479213473406,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/204791346/0",
+      "segment": 3,
+      "lane": 4.2,
+      "s": 19922.080783974274,
+      "pathHeight": 167.63715454057635,
+      "railHeight": 167.80128494381185,
+      "difference": -0.16413040323550376,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/206183446/0",
+      "segment": 0,
+      "lane": 0,
+      "s": 17728.272564146017,
+      "pathHeight": 137.9564998960803,
+      "railHeight": 138.1324674942668,
+      "difference": -0.17596759818650298,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/206183446/0",
+      "segment": 0,
+      "lane": 4.2,
+      "s": 17728.379524632615,
+      "pathHeight": 138.01098013899863,
+      "railHeight": 138.13473792799218,
+      "difference": -0.12375778899354373,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/240115500/0",
+      "segment": 0,
+      "lane": 0,
+      "s": 8153.023450976055,
+      "pathHeight": 95.43883499990923,
+      "railHeight": 95.38333970927172,
+      "difference": 0.05549529063750924,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/240115500/0",
+      "segment": 0,
+      "lane": 4.2,
+      "s": 8153.0321156760365,
+      "pathHeight": 95.33058889808724,
+      "railHeight": 95.38338301447229,
+      "difference": -0.052794116385044276,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/29998254/0",
+      "segment": 1,
+      "lane": 4.2,
+      "s": 30740.329138766825,
+      "pathHeight": 129.8374281737887,
+      "railHeight": 127.95931215692342,
+      "difference": 1.8781160168652917,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/323034234/0",
+      "segment": 0,
+      "lane": 4.2,
+      "s": 4945.282119688156,
+      "pathHeight": 69.40735120915032,
+      "railHeight": 67.96222385569236,
+      "difference": 1.4451273534579627,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/323034236/0",
+      "segment": 0,
+      "lane": 0,
+      "s": 4945.530182453207,
+      "pathHeight": 69.83619762393243,
+      "railHeight": 67.96966143422877,
+      "difference": 1.866536189703666,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/42711668/0",
+      "segment": 0,
+      "lane": 0,
+      "s": 15336.106606040219,
+      "pathHeight": 94.41428698586968,
+      "railHeight": 94.31148016976283,
+      "difference": 0.10280681610684894,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/42711668/0",
+      "segment": 0,
+      "lane": 4.2,
+      "s": 15336.58494535773,
+      "pathHeight": 94.40701071962181,
+      "railHeight": 94.31925326261826,
+      "difference": 0.08775745700354776,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/427560375/0",
+      "segment": 0,
+      "lane": 0,
+      "s": 298.81331684379046,
+      "pathHeight": 59.53091817705939,
+      "railHeight": 58.88407734083622,
+      "difference": 0.6468408362231699,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/427560375/0",
+      "segment": 0,
+      "lane": 4.2,
+      "s": 298.7260835994772,
+      "pathHeight": 59.32110293555886,
+      "railHeight": 58.883641214136844,
+      "difference": 0.437461721422018,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/471147747/0",
+      "segment": 3,
+      "lane": 0,
+      "s": 30055.843955199787,
+      "pathHeight": 127.01851954959987,
+      "railHeight": 123.51115144496467,
+      "difference": 3.507368104635205,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/471147747/0",
+      "segment": 4,
+      "lane": 4.2,
+      "s": 30045.520696311363,
+      "pathHeight": 127.10055247617916,
+      "railHeight": 123.20156532436332,
+      "difference": 3.898987151815845,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/55910616/0",
+      "segment": 0,
+      "lane": 4.2,
+      "s": 982.6347847529988,
+      "pathHeight": 61.685345176010934,
+      "railHeight": 61.52657539176985,
+      "difference": 0.15876978424108046,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/55910616/0",
+      "segment": 1,
+      "lane": 0,
+      "s": 978.6485166018474,
+      "pathHeight": 61.887498686013835,
+      "railHeight": 61.516602933135125,
+      "difference": 0.3708957528787096,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/580418233/0",
+      "segment": 1,
+      "lane": 0,
+      "s": 31317.8012466337,
+      "pathHeight": 122.44003904533966,
+      "railHeight": 118.55957406611662,
+      "difference": 3.880464979223035,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/580418233/0",
+      "segment": 1,
+      "lane": 4.2,
+      "s": 31317.38827212503,
+      "pathHeight": 122.26016935029286,
+      "railHeight": 118.56782664120817,
+      "difference": 3.6923427090846843,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/605629740/0",
+      "segment": 1,
+      "lane": 0,
+      "s": 7329.5049382323705,
+      "pathHeight": 88.69056094908935,
+      "railHeight": 88.5318353240096,
+      "difference": 0.15872562507973953,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/605629740/0",
+      "segment": 1,
+      "lane": 4.2,
+      "s": 7329.322928454266,
+      "pathHeight": 88.7052709092142,
+      "railHeight": 88.53001661246782,
+      "difference": 0.17525429674638815,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/664508342/0",
+      "segment": 27,
+      "lane": 0,
+      "s": 6039.4866002553335,
+      "pathHeight": 78.43295600528087,
+      "railHeight": 77.95216628588184,
+      "difference": 0.48078971939902715,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/664508342/0",
+      "segment": 27,
+      "lane": 4.2,
+      "s": 6040.077286166888,
+      "pathHeight": 78.4204068027235,
+      "railHeight": 77.95806948430464,
+      "difference": 0.46233731841886083,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    },
+    {
+      "id": "way/91040562/0",
+      "segment": 0,
+      "lane": 0,
+      "s": 12705.320271038325,
+      "pathHeight": 87.3587358711313,
+      "railHeight": 87.65227371241419,
+      "difference": -0.29353784128288396,
+      "classification": "unreviewed candidate; validate emitted geometry and source crossing type"
+    }
+  ]
+}

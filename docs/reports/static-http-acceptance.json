@@ -1,0 +1,16 @@
+{
+  "generatedUTC": "2026-11-01T14:49:26.524130+00:00",
+  "manifestSHA256": "1e2b27c0d015981e9ad90e32165f134d754150a4b58adaf572d4378e416c1192",
+  "scriptSHA256": "6ed75836a38fda67ebe68d2ba15e6581efcbb742ed45077ed49dc79e8e9f6bfe",
+  "scope": "HTTP retrieval and hashes only; not a browser or external-request isolation test",
+  "results": {
+    "root": {
+      "checked": 140,
+      "failures": []
+    },
+    "nested/railway": {
+      "checked": 140,
+      "failures": []
+    }
+  }
+}

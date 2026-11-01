@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T11:17:34.725Z",
+  "generatedAt": "2026-11-01T14:47:40.136Z",
   "method": "CPU buildTile cooked geometry audit; emitted terrain triangles and actual derived platform/road top meshes, not initialized support-failure counters",
   "coverage": {
     "tilesAttempted": 121,
@@ -563,18 +563,18 @@
     "neighborSoilLocationsMeasured": 42522
   },
   "sourceSnapshot": {
-    "gitCommit": "11c007e0967ed6cef397ba604f397588db8c7123",
+    "gitCommit": "6f05ad4417c274a254e0c64b60f3d24ea1213aa6",
     "hashes": {
-      "scripts/audit-geometry.ts": "de29d5591f7e1093ca8fa34b1a3bfd2874e9b00924b56423d55e32f46eac0170",
+      "scripts/audit-geometry.ts": "6d028121d212cb99669efac3c8ea292fce68e1c4dae18cb9d38fd56417a6bfff",
       "scripts/build_route.py": "77c20dc43176015a6795e7cf7c224325cb53114d9ad9dec5cdea34fb6140f619",
-      "src/world/build.ts": "08958a69b35524a57d12fbfea62edff4b27735fae0dedd29cea95bc2f0a34935",
-      "src/world/platforms.ts": "852d0a740900c3c64f58fbaa8fe40d90b7f6eb5267a2b39a8b5652cfffcbf91f",
+      "src/world/build.ts": "5ef830e080b91aadb8b64ca6f32984ec505dcddc5c8e55d2634124f57f26b98d",
+      "src/world/platforms.ts": "6e29ec64f43365ab0b316330e043bed1ecd9a2584832b37e1f0ea69405f1febe",
       "src/world/surfaces.ts": "77b02099f9c54d201e4d02f4c93a8b5406fe68272ae91b335398f69282340f82",
       "src/core/geometry.ts": "bdfb3e91bf21e6f43ddacb6c63b20be29f160bcd3b66bc788d98f304f29e9df7",
       "src/core/pose.ts": "8fbd9b47f081f2d9e6c6876d55ec0afe3344e571a2f56b8c5215c8e0189bac7b",
-      "src/render/assets.ts": "b5fb662c1d096a6b7e746a9e2aa6519fd9768076b8c369c31434ced5fea2678e",
-      "src/render/batch.ts": "4bcb3d90d0e8a8264ffe08b1f17fd6890f2c4495cb3166acd04e3bb981491bcc",
-      "src/render/trackwork.ts": "5cc31c59511e6376a8fb8496978a502dde47ed9046e475a548f4a78bc90169a2",
+      "src/render/assets.ts": "9b9174898cee1216f729ac14d7350413ccb6f2a9f446df470508e77cd61d05d8",
+      "src/render/batch.ts": "9f4b0c0205a99627bda01b13f9a0d036e5608a8086d632d0244134f26d7e30c2",
+      "src/render/trackwork.ts": "735ade41bd4eaa6af37159b0c54875474ac43fbb4bd2d7e409771c80b7d8a201",
       "public/data/route.json": "782c1291006b818b7cc236fbaa16cb3d5b33ef21c2afc2dadb3ec4d98f5e5001",
       "public/data/adjacent-services.json": "151e3398fa1516ce5ee4267f7a914e4260a0a507a9960a8cb09dcd10ce67c7af",
       "public/data/road-surfaces.json": "1d9798585aac82cfbd3f1a1710fd059c4b38ec6ce331c60b7f88d43e573ff1be",
@@ -37368,7 +37368,7 @@
   },
   "placedAssetInventory": {
     "path": "docs/reports/placed-assets.json",
-    "sha256": "20a0f7d1f3b38d52ea90d9987054351d998444ecb1718f1ad83bfc292eaf2389",
+    "sha256": "85c41b98e3ad3327a1a9435f66eff5106e5a76ee933e024b0d5f36059b48d5bb",
     "instances": 63549,
     "duplicateSourceInstanceIds": 0,
     "scope": "Every buildTile.placements record, supplemented by actual baked procedural tree roots. Terrain, road/track ribbon components and dynamic renderer assets are outside this inventory; component metadata remains in their generators."
@@ -37387,7 +37387,7 @@
       "placements": 1137,
       "bodyAssociations": 1003,
       "renderedPlinths": 1003,
-      "buildSeconds": 24.515363726000004,
+      "buildSeconds": 23.410294525999998,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37416,7 +37416,7 @@
       "placements": 684,
       "bodyAssociations": 583,
       "renderedPlinths": 583,
-      "buildSeconds": 10.897866145000004,
+      "buildSeconds": 12.917771167,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37445,7 +37445,7 @@
       "placements": 680,
       "bodyAssociations": 556,
       "renderedPlinths": 556,
-      "buildSeconds": 12.117141348999997,
+      "buildSeconds": 14.930417942,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37474,7 +37474,7 @@
       "placements": 211,
       "bodyAssociations": 144,
       "renderedPlinths": 144,
-      "buildSeconds": 6.700944490000001,
+      "buildSeconds": 9.507327121999996,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37503,7 +37503,7 @@
       "placements": 72,
       "bodyAssociations": 13,
       "renderedPlinths": 13,
-      "buildSeconds": 5.976294457999996,
+      "buildSeconds": 6.620482869999993,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37532,7 +37532,7 @@
       "placements": 137,
       "bodyAssociations": 6,
       "renderedPlinths": 6,
-      "buildSeconds": 7.663696320999996,
+      "buildSeconds": 8.032324097999997,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37561,7 +37561,7 @@
       "placements": 147,
       "bodyAssociations": 49,
       "renderedPlinths": 49,
-      "buildSeconds": 11.686355056999993,
+      "buildSeconds": 12.303097163999992,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37590,7 +37590,7 @@
       "placements": 280,
       "bodyAssociations": 142,
       "renderedPlinths": 142,
-      "buildSeconds": 12.604039839999997,
+      "buildSeconds": 14.384456346000006,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37619,7 +37619,7 @@
       "placements": 613,
       "bodyAssociations": 542,
       "renderedPlinths": 542,
-      "buildSeconds": 16.656980190000002,
+      "buildSeconds": 22.444543819,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37648,7 +37648,7 @@
       "placements": 1006,
       "bodyAssociations": 853,
       "renderedPlinths": 853,
-      "buildSeconds": 24.124073781999993,
+      "buildSeconds": 28.016316538000012,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37677,7 +37677,7 @@
       "placements": 750,
       "bodyAssociations": 607,
       "renderedPlinths": 607,
-      "buildSeconds": 15.20143884399999,
+      "buildSeconds": 18.37796053699998,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37706,7 +37706,7 @@
       "placements": 545,
       "bodyAssociations": 535,
       "renderedPlinths": 535,
-      "buildSeconds": 11.547315998000006,
+      "buildSeconds": 12.73772353799999,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37735,7 +37735,7 @@
       "placements": 682,
       "bodyAssociations": 542,
       "renderedPlinths": 542,
-      "buildSeconds": 20.39248462999999,
+      "buildSeconds": 22.752386270000017,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37764,7 +37764,7 @@
       "placements": 1133,
       "bodyAssociations": 984,
       "renderedPlinths": 984,
-      "buildSeconds": 18.759604848999995,
+      "buildSeconds": 32.396532359000005,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37793,7 +37793,7 @@
       "placements": 715,
       "bodyAssociations": 569,
       "renderedPlinths": 569,
-      "buildSeconds": 15.274998709999986,
+      "buildSeconds": 45.64516382399999,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37822,7 +37822,7 @@
       "placements": 816,
       "bodyAssociations": 761,
       "renderedPlinths": 761,
-      "buildSeconds": 11.405274858999997,
+      "buildSeconds": 15.389820902000007,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37851,7 +37851,7 @@
       "placements": 505,
       "bodyAssociations": 247,
       "renderedPlinths": 247,
-      "buildSeconds": 24.81859899500001,
+      "buildSeconds": 39.73648301999999,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37880,7 +37880,7 @@
       "placements": 806,
       "bodyAssociations": 805,
       "renderedPlinths": 805,
-      "buildSeconds": 6.6232902509999985,
+      "buildSeconds": 7.590239991999988,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37909,7 +37909,7 @@
       "placements": 786,
       "bodyAssociations": 597,
       "renderedPlinths": 597,
-      "buildSeconds": 25.292473503999993,
+      "buildSeconds": 22.74293462699995,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37938,7 +37938,7 @@
       "placements": 1745,
       "bodyAssociations": 1609,
       "renderedPlinths": 1609,
-      "buildSeconds": 22.988432996999997,
+      "buildSeconds": 13.868454765999982,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37967,7 +37967,7 @@
       "placements": 365,
       "bodyAssociations": 312,
       "renderedPlinths": 312,
-      "buildSeconds": 12.027805789999954,
+      "buildSeconds": 4.8501809439999635,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -37996,7 +37996,7 @@
       "placements": 2181,
       "bodyAssociations": 1982,
       "renderedPlinths": 1982,
-      "buildSeconds": 27.087352729000035,
+      "buildSeconds": 24.19569049400004,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38025,7 +38025,7 @@
       "placements": 1507,
       "bodyAssociations": 1272,
       "renderedPlinths": 1272,
-      "buildSeconds": 23.80701315299998,
+      "buildSeconds": 20.367054483000015,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38054,7 +38054,7 @@
       "placements": 712,
       "bodyAssociations": 477,
       "renderedPlinths": 477,
-      "buildSeconds": 18.40316768199997,
+      "buildSeconds": 23.14482626599999,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38083,7 +38083,7 @@
       "placements": 777,
       "bodyAssociations": 582,
       "renderedPlinths": 582,
-      "buildSeconds": 15.881706540999993,
+      "buildSeconds": 16.15104621999996,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38112,7 +38112,7 @@
       "placements": 1590,
       "bodyAssociations": 1430,
       "renderedPlinths": 1430,
-      "buildSeconds": 23.923348579999992,
+      "buildSeconds": 12.503129709000001,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38141,7 +38141,7 @@
       "placements": 418,
       "bodyAssociations": 329,
       "renderedPlinths": 329,
-      "buildSeconds": 9.192270553999988,
+      "buildSeconds": 4.170220700000005,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38170,7 +38170,7 @@
       "placements": 166,
       "bodyAssociations": 166,
       "renderedPlinths": 166,
-      "buildSeconds": 5.101476809999964,
+      "buildSeconds": 1.973167489000014,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38199,7 +38199,7 @@
       "placements": 178,
       "bodyAssociations": 177,
       "renderedPlinths": 177,
-      "buildSeconds": 5.644370083999995,
+      "buildSeconds": 2.304522720000008,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38228,7 +38228,7 @@
       "placements": 511,
       "bodyAssociations": 362,
       "renderedPlinths": 362,
-      "buildSeconds": 22.50035760799999,
+      "buildSeconds": 10.462585389000015,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38257,7 +38257,7 @@
       "placements": 363,
       "bodyAssociations": 343,
       "renderedPlinths": 343,
-      "buildSeconds": 13.014524998999958,
+      "buildSeconds": 6.7890073540000015,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38286,7 +38286,7 @@
       "placements": 583,
       "bodyAssociations": 432,
       "renderedPlinths": 432,
-      "buildSeconds": 27.92197004600003,
+      "buildSeconds": 11.449863487999945,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38315,7 +38315,7 @@
       "placements": 1070,
       "bodyAssociations": 765,
       "renderedPlinths": 765,
-      "buildSeconds": 43.630920483,
+      "buildSeconds": 17.698444496000068,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38344,7 +38344,7 @@
       "placements": 275,
       "bodyAssociations": 275,
       "renderedPlinths": 275,
-      "buildSeconds": 12.435082484000013,
+      "buildSeconds": 5.429167116000084,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38373,7 +38373,7 @@
       "placements": 738,
       "bodyAssociations": 397,
       "renderedPlinths": 397,
-      "buildSeconds": 32.62467565599992,
+      "buildSeconds": 14.792681515000062,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38402,7 +38402,7 @@
       "placements": 219,
       "bodyAssociations": 165,
       "renderedPlinths": 165,
-      "buildSeconds": 18.89019388899999,
+      "buildSeconds": 9.848490819999949,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38431,7 +38431,7 @@
       "placements": 778,
       "bodyAssociations": 650,
       "renderedPlinths": 650,
-      "buildSeconds": 19.418667525000057,
+      "buildSeconds": 9.93479170199996,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38460,7 +38460,7 @@
       "placements": 493,
       "bodyAssociations": 357,
       "renderedPlinths": 357,
-      "buildSeconds": 15.73987094199995,
+      "buildSeconds": 11.21467348899995,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38489,7 +38489,7 @@
       "placements": 1086,
       "bodyAssociations": 1048,
       "renderedPlinths": 1048,
-      "buildSeconds": 11.306792644999922,
+      "buildSeconds": 7.16531899900001,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38518,7 +38518,7 @@
       "placements": 681,
       "bodyAssociations": 488,
       "renderedPlinths": 488,
-      "buildSeconds": 19.117292334,
+      "buildSeconds": 10.424212913999916,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38547,7 +38547,7 @@
       "placements": 120,
       "bodyAssociations": 120,
       "renderedPlinths": 120,
-      "buildSeconds": 11.256757375000046,
+      "buildSeconds": 5.498921055999934,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38576,7 +38576,7 @@
       "placements": 28,
       "bodyAssociations": 28,
       "renderedPlinths": 28,
-      "buildSeconds": 1.9202272349999985,
+      "buildSeconds": 0.7708238999999594,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38605,7 +38605,7 @@
       "placements": 1141,
       "bodyAssociations": 1053,
       "renderedPlinths": 1053,
-      "buildSeconds": 27.21686200299999,
+      "buildSeconds": 12.453930664999993,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38634,7 +38634,7 @@
       "placements": 481,
       "bodyAssociations": 348,
       "renderedPlinths": 348,
-      "buildSeconds": 9.407778503999928,
+      "buildSeconds": 5.280032174999942,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38663,7 +38663,7 @@
       "placements": 945,
       "bodyAssociations": 799,
       "renderedPlinths": 799,
-      "buildSeconds": 15.792141000000061,
+      "buildSeconds": 7.3781295229999815,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38692,7 +38692,7 @@
       "placements": 319,
       "bodyAssociations": 318,
       "renderedPlinths": 318,
-      "buildSeconds": 6.02169964399992,
+      "buildSeconds": 3.0523137989999958,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38721,7 +38721,7 @@
       "placements": 131,
       "bodyAssociations": 131,
       "renderedPlinths": 131,
-      "buildSeconds": 3.4858659190000036,
+      "buildSeconds": 1.3212742050000235,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38750,7 +38750,7 @@
       "placements": 4,
       "bodyAssociations": 4,
       "renderedPlinths": 4,
-      "buildSeconds": 1.761046192000038,
+      "buildSeconds": 0.8757534180000657,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38779,7 +38779,7 @@
       "placements": 0,
       "bodyAssociations": 0,
       "renderedPlinths": 0,
-      "buildSeconds": 1.396661625000066,
+      "buildSeconds": 0.5452981990000698,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38808,7 +38808,7 @@
       "placements": 357,
       "bodyAssociations": 265,
       "renderedPlinths": 265,
-      "buildSeconds": 8.787659647000023,
+      "buildSeconds": 4.80814867200004,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38837,7 +38837,7 @@
       "placements": 0,
       "bodyAssociations": 0,
       "renderedPlinths": 0,
-      "buildSeconds": 1.157503469999996,
+      "buildSeconds": 0.3383904989999719,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38866,7 +38866,7 @@
       "placements": 134,
       "bodyAssociations": 9,
       "renderedPlinths": 9,
-      "buildSeconds": 5.36378691600007,
+      "buildSeconds": 3.150545090000029,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38895,7 +38895,7 @@
       "placements": 0,
       "bodyAssociations": 0,
       "renderedPlinths": 0,
-      "buildSeconds": 1.074016891999985,
+      "buildSeconds": 0.6584865369999315,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38924,7 +38924,7 @@
       "placements": 9,
       "bodyAssociations": 9,
       "renderedPlinths": 9,
-      "buildSeconds": 1.8197844089999562,
+      "buildSeconds": 0.9562626069999532,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38953,7 +38953,7 @@
       "placements": 45,
       "bodyAssociations": 0,
       "renderedPlinths": 0,
-      "buildSeconds": 4.649835406000028,
+      "buildSeconds": 1.9753704240000807,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -38982,7 +38982,7 @@
       "placements": 0,
       "bodyAssociations": 0,
       "renderedPlinths": 0,
-      "buildSeconds": 1.6402118410000113,
+      "buildSeconds": 1.1015282409999054,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39011,7 +39011,7 @@
       "placements": 144,
       "bodyAssociations": 0,
       "renderedPlinths": 0,
-      "buildSeconds": 5.214629832000006,
+      "buildSeconds": 3.843460759000038,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39040,7 +39040,7 @@
       "placements": 0,
       "bodyAssociations": 0,
       "renderedPlinths": 0,
-      "buildSeconds": 0.9258476009999868,
+      "buildSeconds": 0.44371582099993245,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39069,7 +39069,7 @@
       "placements": 132,
       "bodyAssociations": 0,
       "renderedPlinths": 0,
-      "buildSeconds": 5.6798488260000015,
+      "buildSeconds": 2.8718476769999834,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39098,7 +39098,7 @@
       "placements": 8,
       "bodyAssociations": 7,
       "renderedPlinths": 7,
-      "buildSeconds": 4.362337150000036,
+      "buildSeconds": 1.571072218999965,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39127,7 +39127,7 @@
       "placements": 86,
       "bodyAssociations": 32,
       "renderedPlinths": 32,
-      "buildSeconds": 9.988906749999966,
+      "buildSeconds": 3.9170525110000742,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39156,7 +39156,7 @@
       "placements": 0,
       "bodyAssociations": 0,
       "renderedPlinths": 0,
-      "buildSeconds": 2.799029557000031,
+      "buildSeconds": 1.0796142919999547,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39185,7 +39185,7 @@
       "placements": 65,
       "bodyAssociations": 65,
       "renderedPlinths": 65,
-      "buildSeconds": 2.069360648999922,
+      "buildSeconds": 1.3228566029999638,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39214,7 +39214,7 @@
       "placements": 28,
       "bodyAssociations": 22,
       "renderedPlinths": 22,
-      "buildSeconds": 5.327956091,
+      "buildSeconds": 3.01068303700001,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39243,7 +39243,7 @@
       "placements": 25,
       "bodyAssociations": 25,
       "renderedPlinths": 25,
-      "buildSeconds": 1.581927285999991,
+      "buildSeconds": 0.9054818150000646,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39272,7 +39272,7 @@
       "placements": 879,
       "bodyAssociations": 765,
       "renderedPlinths": 765,
-      "buildSeconds": 24.191598847000044,
+      "buildSeconds": 13.793516298000002,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39301,7 +39301,7 @@
       "placements": 38,
       "bodyAssociations": 38,
       "renderedPlinths": 38,
-      "buildSeconds": 4.411840525000007,
+      "buildSeconds": 1.6593706249999813,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39330,7 +39330,7 @@
       "placements": 472,
       "bodyAssociations": 471,
       "renderedPlinths": 471,
-      "buildSeconds": 10.667984009000007,
+      "buildSeconds": 4.37280463499995,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39359,7 +39359,7 @@
       "placements": 103,
       "bodyAssociations": 103,
       "renderedPlinths": 103,
-      "buildSeconds": 2.3082622360000387,
+      "buildSeconds": 1.5138101059999316,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39388,7 +39388,7 @@
       "placements": 833,
       "bodyAssociations": 700,
       "renderedPlinths": 700,
-      "buildSeconds": 14.13846941599995,
+      "buildSeconds": 7.95894257100008,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39417,7 +39417,7 @@
       "placements": 489,
       "bodyAssociations": 489,
       "renderedPlinths": 489,
-      "buildSeconds": 10.065593189000035,
+      "buildSeconds": 4.924966679000063,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39446,7 +39446,7 @@
       "placements": 327,
       "bodyAssociations": 325,
       "renderedPlinths": 325,
-      "buildSeconds": 8.960014926000033,
+      "buildSeconds": 4.485585853999947,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39475,7 +39475,7 @@
       "placements": 249,
       "bodyAssociations": 215,
       "renderedPlinths": 215,
-      "buildSeconds": 7.550145969999954,
+      "buildSeconds": 4.591236098999972,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39504,7 +39504,7 @@
       "placements": 105,
       "bodyAssociations": 105,
       "renderedPlinths": 105,
-      "buildSeconds": 4.7034471839999314,
+      "buildSeconds": 1.9093704999999608,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39533,7 +39533,7 @@
       "placements": 0,
       "bodyAssociations": 0,
       "renderedPlinths": 0,
-      "buildSeconds": 0.968054601999931,
+      "buildSeconds": 0.5424164950000122,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39562,7 +39562,7 @@
       "placements": 238,
       "bodyAssociations": 238,
       "renderedPlinths": 238,
-      "buildSeconds": 8.962277073000092,
+      "buildSeconds": 3.7187314029999543,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39591,7 +39591,7 @@
       "placements": 19,
       "bodyAssociations": 19,
       "renderedPlinths": 19,
-      "buildSeconds": 1.9165463519999757,
+      "buildSeconds": 1.0314403370000655,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39620,7 +39620,7 @@
       "placements": 406,
       "bodyAssociations": 406,
       "renderedPlinths": 406,
-      "buildSeconds": 6.477051514999941,
+      "buildSeconds": 3.9171908879999537,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39649,7 +39649,7 @@
       "placements": 905,
       "bodyAssociations": 741,
       "renderedPlinths": 741,
-      "buildSeconds": 17.981085151000066,
+      "buildSeconds": 9.544040586999968,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39678,7 +39678,7 @@
       "placements": 61,
       "bodyAssociations": 61,
       "renderedPlinths": 61,
-      "buildSeconds": 2.5444721380000703,
+      "buildSeconds": 1.4451998570000286,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39707,7 +39707,7 @@
       "placements": 578,
       "bodyAssociations": 444,
       "renderedPlinths": 444,
-      "buildSeconds": 26.744911583999986,
+      "buildSeconds": 12.80391549299995,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39736,7 +39736,7 @@
       "placements": 36,
       "bodyAssociations": 36,
       "renderedPlinths": 36,
-      "buildSeconds": 2.0924940729999215,
+      "buildSeconds": 0.916861140999943,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39765,7 +39765,7 @@
       "placements": 406,
       "bodyAssociations": 383,
       "renderedPlinths": 383,
-      "buildSeconds": 10.88889763100003,
+      "buildSeconds": 6.25820006599999,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39794,7 +39794,7 @@
       "placements": 24,
       "bodyAssociations": 24,
       "renderedPlinths": 24,
-      "buildSeconds": 4.910687924999976,
+      "buildSeconds": 2.980200034000096,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39823,7 +39823,7 @@
       "placements": 83,
       "bodyAssociations": 72,
       "renderedPlinths": 72,
-      "buildSeconds": 4.5864245649999935,
+      "buildSeconds": 3.3518264640000415,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39852,7 +39852,7 @@
       "placements": 289,
       "bodyAssociations": 289,
       "renderedPlinths": 289,
-      "buildSeconds": 4.494165990000009,
+      "buildSeconds": 2.074269675999996,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39881,7 +39881,7 @@
       "placements": 22,
       "bodyAssociations": 22,
       "renderedPlinths": 22,
-      "buildSeconds": 1.692640475000022,
+      "buildSeconds": 0.7623620220000157,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39910,7 +39910,7 @@
       "placements": 848,
       "bodyAssociations": 839,
       "renderedPlinths": 839,
-      "buildSeconds": 9.90223498800001,
+      "buildSeconds": 4.789459319000016,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39939,7 +39939,7 @@
       "placements": 370,
       "bodyAssociations": 370,
       "renderedPlinths": 370,
-      "buildSeconds": 5.567862131999922,
+      "buildSeconds": 2.50001837299997,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39968,7 +39968,7 @@
       "placements": 1003,
       "bodyAssociations": 886,
       "renderedPlinths": 886,
-      "buildSeconds": 12.927975116999937,
+      "buildSeconds": 5.51581108600006,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -39997,7 +39997,7 @@
       "placements": 1208,
       "bodyAssociations": 1069,
       "renderedPlinths": 1069,
-      "buildSeconds": 16.06714049300016,
+      "buildSeconds": 7.340015530999983,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40026,7 +40026,7 @@
       "placements": 760,
       "bodyAssociations": 758,
       "renderedPlinths": 758,
-      "buildSeconds": 6.302009212000063,
+      "buildSeconds": 3.2888854740000095,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40055,7 +40055,7 @@
       "placements": 159,
       "bodyAssociations": 159,
       "renderedPlinths": 159,
-      "buildSeconds": 2.503664926000172,
+      "buildSeconds": 1.3899075960000045,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40084,7 +40084,7 @@
       "placements": 516,
       "bodyAssociations": 491,
       "renderedPlinths": 491,
-      "buildSeconds": 6.623133390999865,
+      "buildSeconds": 2.66416070899996,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40113,7 +40113,7 @@
       "placements": 230,
       "bodyAssociations": 230,
       "renderedPlinths": 230,
-      "buildSeconds": 4.302633545999881,
+      "buildSeconds": 1.7482580090000992,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40142,7 +40142,7 @@
       "placements": 31,
       "bodyAssociations": 31,
       "renderedPlinths": 31,
-      "buildSeconds": 1.3695959689999,
+      "buildSeconds": 0.7888962409999222,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40171,7 +40171,7 @@
       "placements": 509,
       "bodyAssociations": 504,
       "renderedPlinths": 504,
-      "buildSeconds": 7.693273877999978,
+      "buildSeconds": 4.3411815219999985,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40200,7 +40200,7 @@
       "placements": 172,
       "bodyAssociations": 172,
       "renderedPlinths": 172,
-      "buildSeconds": 3.8868682450000196,
+      "buildSeconds": 1.759278940999997,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40229,7 +40229,7 @@
       "placements": 0,
       "bodyAssociations": 0,
       "renderedPlinths": 0,
-      "buildSeconds": 0.7767921890001744,
+      "buildSeconds": 0.38667746100004297,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40258,7 +40258,7 @@
       "placements": 238,
       "bodyAssociations": 237,
       "renderedPlinths": 237,
-      "buildSeconds": 8.675996292999946,
+      "buildSeconds": 4.340802841000026,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40287,7 +40287,7 @@
       "placements": 680,
       "bodyAssociations": 545,
       "renderedPlinths": 545,
-      "buildSeconds": 12.909311874999897,
+      "buildSeconds": 6.528652693999931,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40316,7 +40316,7 @@
       "placements": 131,
       "bodyAssociations": 23,
       "renderedPlinths": 23,
-      "buildSeconds": 6.11739404699998,
+      "buildSeconds": 3.1081119770000223,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40345,7 +40345,7 @@
       "placements": 4,
       "bodyAssociations": 4,
       "renderedPlinths": 4,
-      "buildSeconds": 2.190438125999877,
+      "buildSeconds": 1.0358898099999643,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40374,7 +40374,7 @@
       "placements": 0,
       "bodyAssociations": 0,
       "renderedPlinths": 0,
-      "buildSeconds": 0.7017252819999121,
+      "buildSeconds": 0.4919035979999462,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40403,7 +40403,7 @@
       "placements": 2,
       "bodyAssociations": 1,
       "renderedPlinths": 1,
-      "buildSeconds": 1.5853089829999953,
+      "buildSeconds": 0.85954912900005,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40432,7 +40432,7 @@
       "placements": 388,
       "bodyAssociations": 346,
       "renderedPlinths": 346,
-      "buildSeconds": 6.937351889000041,
+      "buildSeconds": 3.2127387390000512,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40461,7 +40461,7 @@
       "placements": 44,
       "bodyAssociations": 43,
       "renderedPlinths": 43,
-      "buildSeconds": 8.15961115500005,
+      "buildSeconds": 3.2773319070000433,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40490,7 +40490,7 @@
       "placements": 2,
       "bodyAssociations": 2,
       "renderedPlinths": 2,
-      "buildSeconds": 1.9295308780001943,
+      "buildSeconds": 0.8043707339999965,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40519,7 +40519,7 @@
       "placements": 541,
       "bodyAssociations": 393,
       "renderedPlinths": 393,
-      "buildSeconds": 19.53689653000003,
+      "buildSeconds": 9.255392206000048,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40548,7 +40548,7 @@
       "placements": 6,
       "bodyAssociations": 6,
       "renderedPlinths": 6,
-      "buildSeconds": 1.6567271640000398,
+      "buildSeconds": 1.0883559990000213,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40577,7 +40577,7 @@
       "placements": 43,
       "bodyAssociations": 43,
       "renderedPlinths": 43,
-      "buildSeconds": 8.028898633999983,
+      "buildSeconds": 2.4681682719999225,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40606,7 +40606,7 @@
       "placements": 1096,
       "bodyAssociations": 1064,
       "renderedPlinths": 1064,
-      "buildSeconds": 13.211770610999782,
+      "buildSeconds": 5.200957253,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40635,7 +40635,7 @@
       "placements": 0,
       "bodyAssociations": 0,
       "renderedPlinths": 0,
-      "buildSeconds": 2.097501455000136,
+      "buildSeconds": 0.6515238090000348,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40664,7 +40664,7 @@
       "placements": 658,
       "bodyAssociations": 535,
       "renderedPlinths": 535,
-      "buildSeconds": 20.379948613000103,
+      "buildSeconds": 8.334457000000054,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40693,7 +40693,7 @@
       "placements": 96,
       "bodyAssociations": 95,
       "renderedPlinths": 95,
-      "buildSeconds": 3.5579713779999875,
+      "buildSeconds": 1.7929224530000938,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40722,7 +40722,7 @@
       "placements": 183,
       "bodyAssociations": 141,
       "renderedPlinths": 141,
-      "buildSeconds": 12.140237939999905,
+      "buildSeconds": 5.221978206999949,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40751,7 +40751,7 @@
       "placements": 43,
       "bodyAssociations": 42,
       "renderedPlinths": 42,
-      "buildSeconds": 4.691024167000084,
+      "buildSeconds": 1.6709854640000268,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40780,7 +40780,7 @@
       "placements": 1,
       "bodyAssociations": 1,
       "renderedPlinths": 1,
-      "buildSeconds": 2.3907173270001074,
+      "buildSeconds": 0.6710444799999241,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40809,7 +40809,7 @@
       "placements": 62,
       "bodyAssociations": 62,
       "renderedPlinths": 62,
-      "buildSeconds": 1.8379249209999107,
+      "buildSeconds": 0.9075008430000162,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40838,7 +40838,7 @@
       "placements": 3,
       "bodyAssociations": 0,
       "renderedPlinths": 0,
-      "buildSeconds": 2.1968801540001297,
+      "buildSeconds": 0.6981802690000041,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40867,7 +40867,7 @@
       "placements": 21,
       "bodyAssociations": 21,
       "renderedPlinths": 21,
-      "buildSeconds": 2.7119561930000784,
+      "buildSeconds": 1.0369071929999627,
       "nonFinite": 0,
       "invalid": 0,
       "contact": {
@@ -40886,7 +40886,7 @@
       }
     }
   ],
-  "wallSeconds": 1253.995263633,
+  "wallSeconds": 887.545022748,
   "unverified": [
     "Independent real-world control-point/height survey",
     "Continuous swept-volume intersections against every asset; samples are finite",
