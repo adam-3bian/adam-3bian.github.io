@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import * as THREE from 'three/webgpu';
+import * as THREE from 'three';
 import {RouteGeometry,Polyline,clamp,sectionUp} from '../src/core/geometry';
 import {deriveTrackwork,makeSwitch,setSwitchBlend,switchRailPosition} from '../src/render/trackwork';
 import type {V3} from '../src/core/types';

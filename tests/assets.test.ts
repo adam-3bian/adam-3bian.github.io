@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import * as THREE from 'three/webgpu';
+import * as THREE from 'three';
 import {AssetFactory,setSignalAspect,setCrossingState,setTurnoutState} from '../src/render/assets';
 import {RouteGeometry,Polyline} from '../src/core/geometry';
 import type {RouteData,WorldTile} from '../src/core/types';

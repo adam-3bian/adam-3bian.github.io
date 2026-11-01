@@ -1,4 +1,4 @@
-import * as THREE from 'three/webgpu';
+import * as THREE from 'three';
 import type {Feature,V3} from '../core/types';
 import {RouteGeometry,Polyline,clamp} from '../core/geometry';
 

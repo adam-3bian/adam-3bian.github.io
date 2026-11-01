@@ -13,7 +13,7 @@ from playwright.async_api import async_playwright
 
 ROOT=Path.cwd();SITE=ROOT/'site';WORK=ROOT/'work';WORK.mkdir(exist_ok=True)
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
-report={'method':'Production files copied to plain Python static HTTP servers; headed Chromium WebGPU. No Vite, Node or npm server. Network access outside the two local origins is blocked.',
+report={'method':'Production files copied to plain Python static HTTP servers; headed Chromium WebGL 2 with WebGPU unavailable. An optional legacy fixture uses the previous WebGPU build. No Vite, Node or npm server. Network access outside the two local origins is blocked.',
  'sourceHashes':{str(p):sha(p) for p in [Path('app.html'),Path('index.html'),Path('vite.config.ts'),Path('package.json'),Path('src/main.ts'),Path('src/render/renderer.ts'),Path('src/core/resource-url.ts'),Path('src/style.css'),Path('scripts/world-version.ts'),Path('scripts/world-version-baseline.json'),Path('scripts/site-manifest.mjs'),Path(__file__)]},
  'siteHashes':{str(p.relative_to(ROOT)):sha(p) for p in SITE.rglob('*') if p.is_file()},'checks':{},'scenarios':{},'errors':[],'externalRequests':[]}
 
@@ -61,8 +61,9 @@ async def main():
   server,origin=start_server(root);standalone_server,standalone_origin=start_server(SITE)
   try:
    async with async_playwright() as p:
-    args=['--no-sandbox','--enable-unsafe-webgpu','--disable-dev-shm-usage']
-    if os.environ.get('RAILWAY_SOFTWARE_GPU')=='1':args+=['--disable-gpu-watchdog','--use-angle=swiftshader','--enable-features=Vulkan','--use-vulkan=swiftshader','--disable-vulkan-surface']
+    args=['--no-sandbox','--disable-dev-shm-usage']
+    if os.environ.get('RAILWAY_SOFTWARE_GPU')=='1':args+=['--disable-gpu-watchdog','--use-angle=swiftshader','--enable-unsafe-swiftshader']
+    if legacy_path:args+=['--enable-unsafe-webgpu','--enable-features=Vulkan','--use-vulkan=swiftshader','--disable-vulkan-surface']
     browser=await p.chromium.launch(executable_path=os.environ.get('RAILWAY_CHROMIUM','/usr/bin/chromium'),headless=False,args=args)
     report['browser']=browser.version;report['launchArgs']=args
     context=await browser.new_context(viewport={'width':1440,'height':900},device_scale_factor=1)
@@ -94,11 +95,16 @@ async def main():
      report['checks']['legacySaveWritten']=old['worldHash']==baseline['legacyWorldHash'] and old['brake'] and old['marker']=='pre-static-save-fixture'
      report['legacySave']=old;state['closing']=True;await page.close()
 
+    # The production site must work in browsers that expose no WebGPU API.
+    await context.add_init_script('Object.defineProperty(Navigator.prototype,"gpu",{get:()=>undefined,configurable:true})')
+
     async def exercise(name,url,prefix,restore=False,drive=False):
      active['name']=name;page=await context.new_page();state=observe(page,name)
      print('STATIC SITE',name,url,flush=True);await page.goto(url,wait_until='domcontentloaded');await ready(page);await select_light(page)
-     state['baseURI']=await page.evaluate('document.baseURI');state['webgpuReady']='WEBGPU READY' in await page.locator('#gpu-state').inner_text()
-     state['noQAAPI']=await page.evaluate('typeof window.__railway === "undefined"');state['hasNavigatorGPU']=await page.evaluate('!!navigator.gpu')
+     state['baseURI']=await page.evaluate('document.baseURI');state['webglReady']='WEBGL 2 READY' in await page.locator('#gpu-state').inner_text()
+     state['noQAAPI']=await page.evaluate('typeof window.__railway === "undefined"');state['noWebGPU']=await page.evaluate('!navigator.gpu')
+     state['webglContext']=await page.evaluate('''()=>{const gl=document.querySelector('#viewport canvas')?.getContext('webgl2');return{available:!!gl,version:gl?.getParameter(gl.VERSION),error:gl?.getError()};}''')
+     state['hasWebGL2']=state['webglContext']['available'] and 'WebGL 2' in (state['webglContext']['version'] or '') and state['webglContext']['error']==0
      if restore:
       await page.locator('#resume-save').wait_for(state='visible',timeout=30000);await page.click('#resume-save')
      else:await page.click('#begin')
@@ -126,7 +132,7 @@ async def main():
      state['localFontsLoaded']=any(path.endswith('.woff2') for path in paths)
      state['moduleWorkerLoaded']=any(url.startswith(prefix) and 'world.worker-' in url for url in state['workers'])
      state['resourcesWithinSite']=all(request_url.startswith(prefix) or request_url==url for request_url in state['requests'] if request_url.startswith(origin) or request_url.startswith(standalone_origin))
-     state['passed']=all(state[k] for k in ['webgpuReady','noQAAPI','hasNavigatorGPU','hudVisible','canvasPresent','localDataLoaded','localFontsLoaded','moduleWorkerLoaded','resourcesWithinSite']) and not state['httpErrors'] and not state['pageErrors'] and not state['consoleErrors']
+     state['passed']=all(state[k] for k in ['webglReady','noQAAPI','noWebGPU','hasWebGL2','hudVisible','canvasPresent','localDataLoaded','localFontsLoaded','moduleWorkerLoaded','resourcesWithinSite']) and not state['httpErrors'] and not state['pageErrors'] and not state['consoleErrors']
      if restore:state['passed']=state['passed'] and all(state['legacyRestore'].values())
      if drive:state['passed']=state['passed'] and state['keyboardPowerChangesController']
      state['closing']=True;await page.close()
@@ -137,13 +143,13 @@ async def main():
     await exercise('standalone-root',standalone_origin+'/',standalone_origin+'/',drive=True)
     await context.close()
 
-    unsupported=await browser.new_context(viewport={'width':1000,'height':700});await unsupported.add_init_script('Object.defineProperty(Navigator.prototype,"gpu",{get:()=>undefined,configurable:true})')
+    unsupported=await browser.new_context(viewport={'width':1000,'height':700});await unsupported.add_init_script('''(()=>{Object.defineProperty(Navigator.prototype,'gpu',{get:()=>undefined,configurable:true});const original=HTMLCanvasElement.prototype.getContext;HTMLCanvasElement.prototype.getContext=function(type,...args){return type==='webgl2'?null:original.call(this,type,...args)};})()''')
     page=await unsupported.new_page();await page.goto(standalone_origin+'/',wait_until='domcontentloaded');await page.wait_for_function('document.getElementById("error") && !document.getElementById("error").hidden',timeout=30000)
-    report['checks']['unsupportedDeviceMessage']='WebGPU' in await page.locator('#error-text').inner_text();await unsupported.close();await browser.close()
+    report['checks']['unsupportedDeviceMessage']='WebGL 2' in await page.locator('#error-text').inner_text();await unsupported.close();await browser.close()
   except Exception:report['errors'].append(traceback.format_exc());print(report['errors'][-1],flush=True)
   finally:server.shutdown();standalone_server.shutdown();server.server_close();standalone_server.server_close()
  report['generatedAt']=time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime())
  report['passed']=not report['errors'] and not report['externalRequests'] and all(report['checks'].get(k) is True for k in ['packagedDataMatchesSource','rootEntryMatchesSite','packagedManifestMatches','allReferencedDataPresent','priorWorldIdentityPreserved','unsupportedDeviceMessage']) and all(report['scenarios'].get(k,{}).get('passed') is True for k in ['nested','repository-root','standalone-root']) and (not legacy_path or report['checks'].get('legacySaveWritten') is True)
- Path('docs/reports/static-site.json').write_text(json.dumps(report,indent=2)+'\n');print('STATIC SITE RESULT',report['passed'],flush=True)
+ Path('docs/reports/webgl-static-site.json').write_text(json.dumps(report,indent=2)+'\n');print('STATIC SITE RESULT',report['passed'],flush=True)
  if not report['passed']:raise SystemExit(1)
 asyncio.run(main())

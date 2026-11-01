@@ -1,4 +1,4 @@
-import * as THREE from 'three/webgpu';
+import * as THREE from 'three';
 import type {Feature,V3,WorldTile} from '../core/types';
 import {RouteGeometry,Polyline,clamp,hash,random,gaugeRight,sectionUp,type Pose} from '../core/geometry';
 import {Terrain,SurfaceField,engineerRoad,type RoadSurface} from './surfaces';

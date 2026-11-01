@@ -28,7 +28,7 @@ app.innerHTML=`<main class="simulator">
     <button id="begin" class="primary" disabled><span id="begin-label">Preparing your journey…</span>${arrow}</button>
     <button id="resume-save" class="secondary" hidden>Continue saved journey ${arrow}</button>
     <div class="menu-bottom"><span class="gpu-badge" id="gpu-state"><i></i> PREPARING THE LINE</span><button id="settings-open" class="text-button">Settings ${externalArrow}</button></div>
-  </div><div class="scene-caption"><span>THE SNOW HILL LINES</span><p>Familiar places.<br>A new perspective.</p><small>Procedural scenery · Solid colours · WebGPU</small></div></section>
+  </div><div class="scene-caption"><span>THE SNOW HILL LINES</span><p>Familiar places.<br>A new perspective.</p><small>Procedural scenery · Solid colours · WebGL 2</small></div></section>
   <section id="hud" class="hud" hidden aria-label="Driving instruments">
     <div class="notice" id="notice" role="status">Hold A to release the brake.</div>
     <div class="dashboard"><div class="instrument speed"><span class="instrument-label">SPEED</span><div><strong id="speed">0</strong><span>mph</span></div><small>LIMIT <b id="limit">65</b></small></div>
@@ -83,10 +83,10 @@ window.addEventListener('blur',pause);document.addEventListener('visibilitychang
 
 async function init(){try{
   const response=await fetch(routeResourceUrl('data/route.json',document.baseURI));if(!response.ok)throw new Error('Route data is missing. Check that the website’s data folder was copied in full.');const data=await response.json() as RouteData;data.worldHash=__RAILWAY_WORLD_HASH__;route=new RouteGeometry(data);route.setEndpointContext(endpointContext(route));sim=new RailwaySimulation(route);sim.sound=name=>audio.event(name);sim.onEvent=e=>{if(e.type==='aws'||e.type==='tpws'||e.type==='station'||e.type==='direction'||e.type==='complete')notify(e.message,e.type==='tpws'||e.type==='aws');};stationOptions(1);
-  view=new RailwayRenderer($('viewport'),data,route,sim);view.onError=showError;view.onProgress=()=>{if(!loaded&&view.tileCount>=3){loaded=true;$<HTMLButtonElement>('begin').disabled=false;$('begin-label').textContent='Begin journey';$('gpu-state').innerHTML='<i></i> WEBGPU READY';journeySaves.get().then(saved=>visible('resume-save',Boolean(saved))).catch(()=>visible('resume-save',false));}};
+  view=new RailwayRenderer($('viewport'),data,route,sim);view.onError=showError;view.onProgress=()=>{if(!loaded&&view.tileCount>=3){loaded=true;$<HTMLButtonElement>('begin').disabled=false;$('begin-label').textContent='Begin journey';$('gpu-state').innerHTML='<i></i> WEBGL 2 READY';journeySaves.get().then(saved=>visible('resume-save',Boolean(saved))).catch(()=>visible('resume-save',false));}};
   await view.init();
   if(import.meta.env.DEV||import.meta.env.MODE==='qa')(window as any).__railway={sim,route,view,input,save,storage:journeySaves,begin,render:()=>view.draw(1/60),advance:(seconds:number,autoAck=false)=>{const paused=sim.paused;sim.paused=false;for(let i=0;i<seconds*60;i++){if(autoAck&&sim.aws.pending)sim.acknowledge();sim.update(1/60,input);}sim.paused=paused;updateHUD(performance.now());},startAt:(id:string,direction:Direction=1)=>{const index=route.stations.findIndex(s=>s.id===id);sim.start(direction,index);started=true;visible('menu',false);visible('hud',true);updateJourneyTitle();},stats:()=>view.stats()};
-  async function frame(now:number){try{const dt=Math.min(1,(now-last)/1000);last=now;accumulator+=dt;if(!sim.paused){while(accumulator>=1/60){sim.update(1/60,input);accumulator-=1/60;}}else accumulator=0;audio.update(sim,input.horn);view.draw(dt);if(now-lastHUD>100){updateHUD(now);lastHUD=now;}if(started&&!sim.paused&&now-lastSave>10000){save(false);lastSave=now;}await view.finishFrame();requestAnimationFrame(frame);}catch(e){showError(e as Error);}}
+  function frame(now:number){try{const dt=Math.min(1,(now-last)/1000);last=now;accumulator+=dt;if(!sim.paused){while(accumulator>=1/60){sim.update(1/60,input);accumulator-=1/60;}}else accumulator=0;audio.update(sim,input.horn);view.draw(dt);if(now-lastHUD>100){updateHUD(now);lastHUD=now;}if(started&&!sim.paused&&now-lastSave>10000){save(false);lastSave=now;}requestAnimationFrame(frame);}catch(e){showError(e as Error);}}
   requestAnimationFrame(frame);
 }catch(e){showError(e as Error);}}
 init();

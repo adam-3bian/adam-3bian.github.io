@@ -1,4 +1,4 @@
-import * as THREE from 'three/webgpu';
+import * as THREE from 'three';
 import {AssetFactory,setSignalAspect,setCrossingState} from './assets';
 import {packetGeometry} from './batch';
 import {RouteGeometry,Polyline,clamp} from '../core/geometry';
@@ -13,16 +13,21 @@ export class RailwayRenderer {
   readonly scene=new THREE.Scene();readonly camera=new THREE.PerspectiveCamera(62,1,.2,2400);
   readonly factory=new AssetFactory();readonly roadTraffic=new RoadTraffic();
   private readonly loopFootGeometry=new THREE.BoxGeometry(.18,.25,.18);private readonly loopFootMaterial=new THREE.MeshStandardMaterial({color:0x525b54,roughness:.95});
-  readonly renderer:THREE.WebGPURenderer;
+  readonly renderer:THREE.WebGLRenderer;
   private worker:Worker;private ready=false;private loaded=new Map<string,{mesh:THREE.Mesh;used:number}>();private requested=new Set<string>();
-  private adapter:any;private disposed=false;private adjacent:{data:any;path:Polyline;model:THREE.Group}[]=[];
+  private disposed=false;private adjacent:{data:any;path:Polyline;model:THREE.Group}[]=[];
   private walkers=new Map<string,{path:Polyline;model:THREE.Group;speed:number;phase:number}>();
   private signalModels=new Map<string,THREE.Group>();private pointModels=new Map<string,THREE.Group>();private crossingModels=new Map<string,THREE.Group>();private trainModels=new Map<string,THREE.Group>();private carModels=new Map<string,THREE.Group>();
   private fog=new THREE.Fog(0xcdd6cc,450,1700);private sun=new THREE.DirectionalLight(0xffedcf,3);private ambient=new THREE.HemisphereLight(0xd6e5ec,0x79865b,2.7);
-  gpuInfo='WebGPU';tileCount=0;triangles=0;placements=0;failures:string[]=[];frameTimes:number[]=[];onProgress?:()=>void;onError?:(error:Error)=>void;
+  gpuInfo='WebGL 2';tileCount=0;triangles=0;placements=0;failures:string[]=[];frameTimes:number[]=[];onProgress?:()=>void;onError?:(error:Error)=>void;
+  private readonly contextLost=(event:Event)=>{event.preventDefault();if(this.disposed)return;const error=new Error('Graphics context lost. Reload to reconnect graphics.');this.failures.push(error.message);this.sim.paused=true;this.onError?.(error);};
   quality:'low'|'balanced'|'high'='balanced';private lastS=-Infinity;private lastTraffic=0;private previousCamera=new THREE.Vector3();private firstFrame=true;private warmFrames=0;
   constructor(readonly container:HTMLElement,readonly data:RouteData,readonly route:RouteGeometry,readonly sim:RailwaySimulation){
-    this.renderer=new THREE.WebGPURenderer({antialias:true,alpha:false});this.renderer.setPixelRatio(Math.min(devicePixelRatio,1.5));this.renderer.setClearColor(0xcdd6cc);this.renderer.toneMapping=THREE.ACESFilmicToneMapping;this.renderer.toneMappingExposure=1.0;
+    const canvas=document.createElement('canvas');let context:WebGL2RenderingContext|null=null;
+    try{context=canvas.getContext('webgl2',{antialias:true,alpha:false,powerPreference:'high-performance'});}catch{/* Report a consistent unsupported-device message below. */}
+    if(!context)throw new Error('WebGL 2 is unavailable. Enable hardware acceleration or use a current browser with WebGL 2 support.');
+    this.renderer=new THREE.WebGLRenderer({canvas,context,antialias:true,alpha:false,powerPreference:'high-performance'});canvas.addEventListener('webglcontextlost',this.contextLost);
+    this.gpuInfo=String(context.getParameter(context.RENDERER)||'WebGL 2');this.renderer.setPixelRatio(Math.min(devicePixelRatio,1.5));this.renderer.setClearColor(0xcdd6cc);this.renderer.toneMapping=THREE.ACESFilmicToneMapping;this.renderer.toneMappingExposure=1.0;
     this.renderer.shadowMap.enabled=true;this.scene.background=new THREE.Color(0xcdd6cc);this.scene.fog=this.fog;this.scene.add(this.ambient,this.sun);this.sun.position.set(-140,250,-80);this.sun.castShadow=true;this.sun.shadow.mapSize.set(1024,1024);Object.assign(this.sun.shadow.camera,{left:-95,right:95,top:95,bottom:-95,near:1,far:650});this.sun.shadow.bias=-.0005;this.sun.shadow.normalBias=.12;this.sun.shadow.camera.updateProjectionMatrix();this.scene.add(this.sun.target);
     this.container.appendChild(this.renderer.domElement);this.renderer.domElement.setAttribute('aria-label','View from the front of the train');
     this.worker=new Worker(new URL('../world/world.worker.ts',import.meta.url),{type:'module'});
@@ -30,14 +35,7 @@ export class RailwayRenderer {
     window.addEventListener('resize',()=>this.resize());this.resize();
   }
   async init(){
-    const gpu=(navigator as any).gpu;if(!gpu)throw new Error('This browser does not provide WebGPU. Use a current Chrome or Edge with WebGPU enabled.');
-    const adapter=await gpu.requestAdapter({powerPreference:'high-performance'});if(!adapter)throw new Error('A WebGPU graphics adapter is unavailable. Check browser hardware acceleration.');this.adapter=adapter;
-    this.gpuInfo=adapter.info?.description||adapter.info?.device||'WebGPU graphics adapter';
-    const ownedDevice=await adapter.requestDevice();
-    (this.renderer as any).backend.parameters.device=ownedDevice;
-    await this.renderer.init();if(!(this.renderer as any).backend.isWebGPUBackend)throw new Error('A native WebGPU backend could not be started.');
-    const device=(this.renderer as any).backend.device;device?.addEventListener('uncapturederror',(e:any)=>{this.failures.push(e.error.message);this.onError?.(new Error(e.error.message));});
-    device?.lost.then((info:any)=>{if(this.disposed)return;this.sim.paused=true;this.onError?.(new Error(`Graphics device lost: ${info.message||info.reason}. Reload to reconnect graphics.`));});
+    if(this.renderer.getContext().isContextLost())throw new Error('The WebGL 2 context was lost. Reload to reconnect graphics.');
     const adjacentResponse=await fetch(routeResourceUrl('data/adjacent-services.json',document.baseURI));if(adjacentResponse.ok){const document=await adjacentResponse.json();this.data.adjacentServices=document.services;for(const service of document.services){const kind=service.kind==='shuttle'?'139':service.kind==='tram'?'metro':service.kind==='heritage'?'heritage':'emu';const model=this.factory.train({id:service.id,kind,cars:service.cars});this.scene.add(model);this.adjacent.push({data:service,path:new Polyline(service.points),model});}}
     const roadsResponse=await fetch(routeResourceUrl('data/road-surfaces.json',document.baseURI));if(!roadsResponse.ok)throw new Error('The shared road support manifest could not be loaded.');this.data.surfaceRoads=(await roadsResponse.json()).roads;this.roadTraffic.setSpawnPlan(this.data.surfaceRoads as any);this.sim.roadCrossingClear=s=>this.roadTraffic.crossingClear(s);
     const landResponse=await fetch(routeResourceUrl('data/land-surfaces.json',document.baseURI));if(!landResponse.ok)throw new Error('The shared water support manifest could not be loaded.');this.data.surfaceWater=(await landResponse.json()).water;
@@ -86,9 +84,10 @@ export class RailwayRenderer {
     for(const car of this.roadTraffic.cars.values()){let g=this.carModels.get(car.id);const d=Math.hypot(car.position[0]-pos.x,car.position[2]-pos.z);if(d>950){if(g)g.visible=false;continue;}if(!g){g=this.factory.roadVehicle({kind:car.kind,id:car.id,seed:hashId(car.id),color:[0xe9e4d5,0x536b75,0x9b624e,0x555d54][hashId(car.id)%4]});this.carModels.set(car.id,g);this.scene.add(g);}g.visible=true;g.position.fromArray(car.position);orient(g,roadBasis(car.yaw,car.pitch||0,car.bank||0));}
     this.renderer.render(this.scene,this.camera);const elapsed=performance.now()-t;if(this.warmFrames++>60){this.frameTimes.push(elapsed);if(this.frameTimes.length>600)this.frameTimes.shift();}
   }
-  async finishFrame(){await (this.renderer as any).backend.device?.queue.onSubmittedWorkDone();}
-  stats(){return {backend:(this.renderer as any).backend?.isWebGPUBackend?'WebGPU':'unavailable',adapter:this.gpuInfo,tiles:this.tileCount,triangles:this.triangles,placements:this.placements,gpuErrors:this.failures,drawCalls:this.renderer.info.render.calls,memory:this.renderer.info.memory};}
-  dispose(){this.disposed=true;this.worker.terminate();this.renderer.dispose();}
+  /** Explicit GPU synchronization for capture/diagnostics, not used by the normal render loop. */
+  async finishFrame(){this.renderer.getContext().finish();}
+  stats(){return {backend:this.renderer.getContext().isContextLost()?'unavailable':'WebGL2',adapter:this.gpuInfo,tiles:this.tileCount,triangles:this.triangles,placements:this.placements,gpuErrors:this.failures,drawCalls:this.renderer.info.render.calls,memory:this.renderer.info.memory};}
+  dispose(){this.disposed=true;this.renderer.domElement.removeEventListener('webglcontextlost',this.contextLost);this.worker.terminate();this.renderer.dispose();}
 }
 function mixNumber(a:number,b:number,t:number){return a+(b-a)*t;}
 function hashId(s:string){let h=0;for(const c of s)h=Math.imul(h,31)+c.charCodeAt(0);return h>>>0;}

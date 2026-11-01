@@ -1,7 +1,7 @@
 import {readFileSync,writeFileSync,mkdirSync,existsSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
-import * as THREE from 'three/webgpu';
+import * as THREE from 'three';
 import {RouteGeometry,Polyline,clamp,gaugeRight,sectionUp} from '../src/core/geometry';
 import type {RouteData,WorldTile,V3} from '../src/core/types';
 import {Terrain} from '../src/world/surfaces';

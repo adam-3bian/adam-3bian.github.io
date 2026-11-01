@@ -1,4 +1,4 @@
-import * as THREE from 'three/webgpu';
+import * as THREE from 'three';
 import {Polyline,RouteGeometry,clamp,mix,gaugeRight,sectionUp} from '../core/geometry';
 import type {Pose} from '../core/geometry';
 import type {Direction,V3} from '../core/types';

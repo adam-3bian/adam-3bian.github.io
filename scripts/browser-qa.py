@@ -4,28 +4,30 @@ from playwright.async_api import async_playwright
 # Run after npm run build:qa and serving work/qa-dist on localhost:4174.
 # Linux software-GPU reproducibility: DISPLAY=:99 RAILWAY_SOFTWARE_GPU=1 python scripts/browser-qa.py
 ROOT=Path('.')
-REPORT=ROOT/'docs/reports/browser.json'
-CAP=ROOT/'docs/captures'
+REPORT=ROOT/'docs/reports/webgl-browser.json'
+CAP=ROOT/'docs/captures/webgl'
 CAP.mkdir(parents=True,exist_ok=True)
 async def main():
- report={'browser':'Recorded below by Playwright','adapter':'SwiftShader software WebGPU; not RTX 3060 performance evidence' if os.environ.get('RAILWAY_SOFTWARE_GPU')=='1' else 'Native WebGPU adapter; this script does not establish RTX 3060 performance acceptance','viewport':[1440,900],'captures':[],'checks':{},'buildHashes':{str(f):hashlib.sha256(f.read_bytes()).hexdigest() for f in Path('work/qa-dist/assets').glob('*')},'servedDataHashes':{str(f):hashlib.sha256(f.read_bytes()).hexdigest() for f in Path('work/qa-dist/data').rglob('*') if f.is_file()},'sourceHashes':{str(f):hashlib.sha256(f.read_bytes()).hexdigest() for f in Path('src').rglob('*') if f.is_file()},'errors':[],'consoleErrors':[],'expectedConsoleErrors':[],'startedUTC':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime())}
+ report={'browser':'Recorded below by Playwright','adapter':'SwiftShader software WebGL 2; not RTX 3060 performance evidence' if os.environ.get('RAILWAY_SOFTWARE_GPU')=='1' else 'WebGL 2; this script does not establish RTX 3060 performance acceptance','viewport':[1440,900],'captures':[],'checks':{},'buildHashes':{str(f):hashlib.sha256(f.read_bytes()).hexdigest() for f in Path('work/qa-dist/assets').glob('*')},'servedDataHashes':{str(f):hashlib.sha256(f.read_bytes()).hexdigest() for f in Path('work/qa-dist/data').rglob('*') if f.is_file()},'sourceHashes':{str(f):hashlib.sha256(f.read_bytes()).hexdigest() for f in Path('src').rglob('*') if f.is_file()},'errors':[],'consoleErrors':[],'expectedConsoleErrors':[],'startedUTC':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime())}
  def persist():REPORT.write_text(json.dumps(report,indent=2)+'\n')
  async with async_playwright() as p:
-  launch_args=['--enable-unsafe-webgpu','--disable-dev-shm-usage']
-  if os.environ.get('RAILWAY_SOFTWARE_GPU')=='1':launch_args+=['--no-sandbox','--disable-gpu-watchdog','--use-angle=swiftshader','--enable-features=Vulkan','--use-vulkan=swiftshader','--disable-vulkan-surface']
+  launch_args=['--disable-dev-shm-usage']
+  if os.environ.get('RAILWAY_SOFTWARE_GPU')=='1':launch_args+=['--no-sandbox','--disable-gpu-watchdog','--use-angle=swiftshader','--enable-unsafe-swiftshader']
   browser=await p.chromium.launch(executable_path=os.environ.get('RAILWAY_CHROMIUM','/usr/bin/chromium'),headless=False,args=launch_args)
   report['browser']=browser.version;report['launchArgs']=launch_args
   page=await browser.new_page(viewport={'width':1440,'height':900},device_scale_factor=1)
+  await page.add_init_script('Object.defineProperty(Navigator.prototype,"gpu",{get:()=>undefined,configurable:true})')
   page.on('pageerror',lambda e:(report['errors'].append(str(e)),print('PAGEERROR',str(e),flush=True)))
-  page.on('console',lambda m:(report['expectedConsoleErrors'] if report.get('deviceLossInjection') and 'Graphics device lost:' in m.text else report['consoleErrors']).append(m.text[:1000]) if m.type=='error' else None)
+  page.on('console',lambda m:(report['expectedConsoleErrors'] if report.get('contextLossInjection') and 'Graphics context lost' in m.text else report['consoleErrors']).append(m.text[:1000]) if m.type=='error' else None)
   try:
    await page.goto(os.environ.get('RAILWAY_BASE_URL','http://localhost:4174/'),wait_until='domcontentloaded')
    await page.wait_for_function('window.__railway && !document.getElementById("begin").disabled || !document.getElementById("error").hidden',timeout=120000)
    if await page.locator('#error').is_visible():raise RuntimeError(await page.locator('#error-text').inner_text())
-   report['checks']['nativeWebGPU']=await page.evaluate('__railway.stats()');print('READY',report['checks']['nativeWebGPU'],flush=True)
+   report['checks']['nativeWebGL']=await page.evaluate('__railway.stats()');print('READY',report['checks']['nativeWebGL'],flush=True)
    await page.screenshot(path=str(CAP/'journey-menu.png'),timeout=30000)
    await page.click('#begin');await page.wait_for_function('!document.getElementById("hud").hidden',timeout=120000)
    await page.evaluate('__railway.sim.paused=true')
+   report['checks']['framePixels']=await page.evaluate('''()=>{const r=__railway;r.render();const gl=r.view.renderer.getContext(),w=gl.drawingBufferWidth,h=gl.drawingBufferHeight,pixels=[];gl.finish();for(const [x,y] of [[.2,.2],[.5,.2],[.8,.2],[.2,.5],[.5,.5],[.8,.5],[.2,.8],[.5,.8],[.8,.8]]){const p=new Uint8Array(4);gl.readPixels(Math.floor((w-1)*x),Math.floor((h-1)*y),1,1,gl.RGBA,gl.UNSIGNED_BYTE,p);pixels.push([...p]);}return{width:w,height:h,pixels,uniqueColors:new Set(pixels.map(p=>p.slice(0,3).join(','))).size,glError:gl.getError(),drawCalls:r.stats().drawCalls,noWebGPU:!navigator.gpu};}''')
    # DOM keyboard events go through production handlers; advance only the fixed clock for repeatability on a slow software GPU.
    await page.evaluate('__railway.sim.paused=false');await page.keyboard.down('a');await page.evaluate('__railway.advance(7,true)');await page.keyboard.up('a');await page.evaluate('__railway.sim.paused=true')
    report['checks']['A']=await page.evaluate('({controller:__railway.sim.player.controller,speed:__railway.sim.player.speed,input:__railway.input.a})')
@@ -52,7 +54,7 @@ async def main():
      await page.evaluate('__railway.render();__railway.view.finishFrame()')
      file=f'{sid.lower()}-{"towards-dorridge" if direction==1 else "towards-kidderminster"}.png'
      await page.screenshot(path=str(CAP/file),timeout=30000)
-     report['captures'].append({'station':sid,'direction':direction,'file':'docs/captures/'+file,'quality':'Light (software GPU)','position':await page.evaluate('__railway.route.lanePose(__railway.sim.player.s,__railway.sim.player.lane).position'),'stats':await page.evaluate('__railway.stats()')})
+     report['captures'].append({'station':sid,'direction':direction,'file':str(CAP/file),'quality':'Light (software GPU)','position':await page.evaluate('__railway.route.lanePose(__railway.sim.player.s,__railway.sim.player.lane).position'),'stats':await page.evaluate('__railway.stats()')})
      persist()
    # Actual UI save/reload/continue at a tunnel fixture, retaining a safety brake.
    await page.evaluate('''()=>{const r=__railway, t=r.route.data.tunnels[0];r.startAt('OHL',-1);r.sim.player.nextStop=r.route.stations.findIndex(s=>s.id==='OHL');r.sim.player.s=r.route.sourceS((t.start+t.end)/2);r.sim.player.speed=0;r.sim.player.controller=-1;r.sim.tpws={active:true,reason:'QA saved brake fixture',stoppedAt:r.sim.clock-6,ossEntries:{},tssEntries:{}};r.sim.paused=true;return r.save(false);}''')
@@ -69,16 +71,16 @@ async def main():
    report['checks']['pointCaptures']={'id':await page.evaluate('window.qaSwitchId'),'distanceBeforeToeMetres':30,'viewport':[1920,1080],'pixelRatio':1,'manualReadabilityReview':'pending','fixture':'Same production front camera, stationary; direct proved states are QA fixtures, not granted movement authorities.'}
    await page.set_viewport_size({'width':390,'height':844});await page.evaluate('document.getElementById("menu").hidden=false;document.getElementById("hud").hidden=true')
    await page.screenshot(path=str(CAP/'mobile-journey-menu.png'),timeout=30000);report['checks']['mobileOverflow']=await page.evaluate('document.documentElement.scrollWidth>innerWidth')
-   # Recovery: simulate a genuine GPUDevice.destroy(), which resolves device.lost.
-   report['deviceLossInjection']=True
-   await page.evaluate('async()=>{__railway.sim.paused=false;await __railway.save(false);__railway.view.renderer.backend.device.destroy()}')
+   # Recovery: trigger the browser's real WebGL context-loss event.
+   report['contextLossInjection']=True
+   await page.evaluate('''async()=>{__railway.sim.paused=false;await __railway.save(false);const ext=__railway.view.renderer.getContext().getExtension('WEBGL_lose_context');if(!ext)throw Error('WEBGL_lose_context is unavailable');ext.loseContext();}''')
    await page.wait_for_function('!document.getElementById("error").hidden',timeout=15000)
-   report['checks']['deviceLoss']={'paused':await page.evaluate('__railway.sim.paused'),'message':await page.locator('#error-text').inner_text(),'savePresent':await page.evaluate('__railway.storage.get().then(s=>!!s)')}
+   report['checks']['contextLoss']={'paused':await page.evaluate('__railway.sim.paused'),'message':await page.locator('#error-text').inner_text(),'savePresent':await page.evaluate('__railway.storage.get().then(s=>!!s)')}
   except Exception as e:
    print('FAILED',str(e),flush=True);report['errors'].append(str(e))
    try:await page.screenshot(path='test-results/browser-qa-failure.png',timeout=15000)
    except:pass
-  c=report['checks'];report['assertions']={'nativeBackend':c.get('nativeWebGPU',{}).get('backend')=='WebGPU','controllerA':c.get('A',{}).get('controller',0)>.99,'controllerD':c.get('D',{}).get('controller',0)<-.99,'AWS':c.get('Q') is True,'hornPressRelease':c.get('SpaceHeld') is True and c.get('SpaceReleased') is True,'TUnassigned':c.get('TUnassigned') is True,'focusLoss':c.get('focusLossPause') is True,'reversePhysicalConsist':c.get('SReverse',{}).get('direction')==-1 and c.get('SReverse',{}).get('samePhysicalInterval') is True,'forward':c.get('WForward') is True,'saveStored':c.get('saveStored') is True,'largeSave':c.get('largeSave') is True,'saveReload':all(c.get('UIReloadContinue',{}).get(k) is True for k in ['samePosition','TPWSretained','trafficRestored']),'mobileNoOverflow':c.get('mobileOverflow') is False,'deviceLossRecovery':c.get('deviceLoss',{}).get('paused') is True and c.get('deviceLoss',{}).get('savePresent') is True,'requestedStationCaptures':bool(report.get('stationCoverage')) and len(report['captures'])==len(report['stationCoverage'])*2}
+  c=report['checks'];report['assertions']={'nativeBackend':c.get('nativeWebGL',{}).get('backend')=='WebGL2','renderedFrame':c.get('framePixels',{}).get('uniqueColors',0)>=2 and c.get('framePixels',{}).get('glError')==0 and c.get('framePixels',{}).get('drawCalls',0)>0 and c.get('framePixels',{}).get('noWebGPU') is True,'controllerA':c.get('A',{}).get('controller',0)>.99,'controllerD':c.get('D',{}).get('controller',0)<-.99,'AWS':c.get('Q') is True,'hornPressRelease':c.get('SpaceHeld') is True and c.get('SpaceReleased') is True,'TUnassigned':c.get('TUnassigned') is True,'focusLoss':c.get('focusLossPause') is True,'reversePhysicalConsist':c.get('SReverse',{}).get('direction')==-1 and c.get('SReverse',{}).get('samePhysicalInterval') is True,'forward':c.get('WForward') is True,'saveStored':c.get('saveStored') is True,'largeSave':c.get('largeSave') is True,'saveReload':all(c.get('UIReloadContinue',{}).get(k) is True for k in ['samePosition','TPWSretained','trafficRestored']),'mobileNoOverflow':c.get('mobileOverflow') is False,'contextLossRecovery':c.get('contextLoss',{}).get('paused') is True and c.get('contextLoss',{}).get('savePresent') is True,'requestedStationCaptures':bool(report.get('stationCoverage')) and len(report['captures'])==len(report['stationCoverage'])*2}
   report['finishedUTC']=time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime());persist();await browser.close()
   if report['errors'] or report['consoleErrors'] or not all(report['assertions'].values()):raise SystemExit(1)
 asyncio.run(main())

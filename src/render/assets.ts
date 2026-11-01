@@ -1,4 +1,4 @@
-import * as THREE from 'three/webgpu';
+import * as THREE from 'three';
 
 /** All dimensions are metres. Forward is local -Z; ground/railhead is local Y=0. */
 export type Aspect = 'red' | 'yellow' | 'doubleYellow' | 'green' | 'dark';

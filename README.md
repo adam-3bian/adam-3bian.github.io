@@ -1,6 +1,6 @@
 # Snow Hill Lines
 
-A playable native WebGPU railway on the **railway** branch: Kidderminster–Dorridge, 22 stations, approximately 47.3 km, a Class 172 and the front-of-train view in both directions. Scenery is generated from solid-colour geometry using the uploaded geographic/frame references. This is a simulator-authored operating scenario with inferred profiles and infrastructure; the remaining acceptance gates are recorded in [docs/ACCEPTANCE.md](docs/ACCEPTANCE.md).
+A playable WebGL 2 railway on the **railway** branch: Kidderminster–Dorridge, 22 stations, approximately 47.3 km, a Class 172 and the front-of-train view in both directions. Scenery is generated from solid-colour geometry using the uploaded geographic/frame references. This is a simulator-authored operating scenario with inferred profiles and infrastructure; the remaining acceptance gates are recorded in [docs/ACCEPTANCE.md](docs/ACCEPTANCE.md).
 
 The checked-in [site/](site/) folder is a complete static website. Serve its contents from any static host; it needs no npm, Node.js, server-side database or application. The repository root can also be served directly: its generated `index.html` loads the same files from `site/`.
 
@@ -10,7 +10,7 @@ For example, if Python 3 is installed, serve the portable folder locally with:
 python3 -m http.server 8000 --bind 127.0.0.1 --directory site
 ```
 
-Open `http://127.0.0.1:8000/` in a current WebGPU-capable browser, such as Chrome or Edge, with hardware acceleration enabled. Static hosting over HTTPS also works, including from a subdirectory. Use a web server rather than opening the HTML directly: browsers restrict module workers and data requests from local files. The website's scripts, route data and UI fonts are included locally.
+Open `http://127.0.0.1:8000/` in a current browser with WebGL 2 support and hardware acceleration enabled. Static hosting over HTTPS also works, including from a subdirectory. Use a web server rather than opening the HTML directly: browsers restrict module workers and data requests from local files. The website's scripts, route data and UI fonts are included locally.
 
 For development or to regenerate the checked-in static files, install Node.js 22.12+ and run:
 
@@ -62,8 +62,8 @@ The coordinate frame is BNG/ODN: `X=easting−400000`, `Y=ODN height`, `Z=280000
 
 Map data © OpenStreetMap contributors, ODbL. Contains Environment Agency information © Environment Agency and/or database right, Open Government Licence v3.0. Uploaded source materials retain their original attribution and rights. See the reference pack for provenance.
 
-Browser capture/recovery reproduction: install `requirements-qa.txt`, run `npm run build:qa`, and serve `work/qa-dist` on localhost:4174. Run `python scripts/browser-qa.py` with `RAILWAY_CHROMIUM` set to a headed Chromium executable. On Linux, provide a display/Xvfb; setting `RAILWAY_SOFTWARE_GPU=1` reproduces the recorded SwiftShader path. The QA build exposes fixed-camera test fixtures; the ordinary production build omits that API. The runner writes captures and a source-hashed report, and deliberately destroys the final GPU device to test save/reload recovery.
+Browser capture/recovery reproduction: install `requirements-qa.txt`, run `npm run build:qa`, and serve `work/qa-dist` on localhost:4174. Run `python scripts/browser-qa.py` with `RAILWAY_CHROMIUM` set to a headed Chromium executable. On Linux, provide a display/Xvfb; setting `RAILWAY_SOFTWARE_GPU=1` reproduces the recorded SwiftShader path. The QA build exposes fixed-camera test fixtures; the ordinary production build omits that API. The runner writes captures and a source-hashed report, and deliberately loses the WebGL context to test save/reload recovery.
 
 For static-hosting checks, run `python scripts/static-smoke.py` with the same browser/display setup. It copies the built website to plain static servers and exercises the site at the server root, under a nested path, and via the repository-root entry. Set `RAILWAY_LEGACY_QA` to a QA build of the previous release to additionally check continuing a real existing save on the same origin. This test dependency is not needed to play or host the website.
 
-`python scripts/endpoint-qa.py` checks the final renderer at both route boundaries, including a four-car train whose front has exited while its rear remains inside, and verifies automatic saving of a new safety-brake state after device loss. The 44-station-view archive predates that isolated culling correction; [docs/ACCEPTANCE.md](docs/ACCEPTANCE.md) distinguishes the evidence snapshots and remaining gates.
+`python scripts/endpoint-qa.py` checks the renderer at both route boundaries, including a four-car train whose front has exited while its rear remains inside, and verifies automatic saving of a new safety-brake state after context loss. The previous WebGPU capture archive is retained; [docs/ACCEPTANCE.md](docs/ACCEPTANCE.md) distinguishes the evidence snapshots and remaining gates.

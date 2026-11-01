@@ -2,6 +2,8 @@
 
 The implementation uses solid-colour mesh geometry. A generator's existence does not establish accurate placement or completeness at every real location. The cooked geometry measurements and their explicit failures are in [reports/geometry.json](reports/geometry.json); the reproducible command is `node --expose-gc --import tsx scripts/audit-geometry.ts`. The corresponding [placed asset inventory](reports/placed-assets.json) preserves tile, stable emitted ID, position and the metadata actually returned by `buildTile`, supplemented by actual procedural tree roots. Its source hashes identify the measured snapshot. Dynamic renderer instances and terrain/road/rail ribbon components are outside that inventory.
 
+The 121-tile geometry report predates the WebGL conversion. The [equivalence check](reports/webgl-geometry-equivalence.json) records unchanged audit inputs apart from import-only shared Three.js exports, the identical scenery worker, and four matching cooked tile probes. It does not constitute a new full audit or a visual acceptance of the WebGL renderer.
+
 | Family | Implemented components and world rules | Coverage limit |
 | --- | --- | --- |
 | Running railway | Two physical paths, 1.435 m inner-face gauge with 75 mm heads/25 mm webs/140 mm feet, individual sleepers, canted lane beds over a lower shared formation and ballast shoulders; common unit grade/cant frames. Source switch spans replace the base running rails. | Source-fit counterpart includes recorded engineering corrections; precise current operating direction remains authored. Baked gauge measurements and tolerances are separate from source survey accuracy. |

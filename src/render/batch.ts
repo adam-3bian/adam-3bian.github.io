@@ -1,4 +1,4 @@
-import * as THREE from 'three/webgpu';
+import * as THREE from 'three';
 export interface MeshPacket {position:Float32Array;normal:Float32Array;color:Float32Array;index:Uint32Array}
 /** Bake static procedural components into one vertex-colour draw per spatial tile. */
 export class Batch {
