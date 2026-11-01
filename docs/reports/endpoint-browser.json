@@ -1,0 +1,90 @@
+{
+  "method": "Native WebGPU, production leading-camera poses; paused Class 168 four-car endpoint fixtures. No free camera or movement authority is granted. This checks visibility, not portal geography or a two-hour soak.",
+  "sourceHashes": {
+    "src/style.css": "fc1a9dddc2781c0e2e86c32831cf604762695ecb9814c388e7b92ef4038855e8",
+    "src/env.d.ts": "79d49e15e28c835d64c1fede8fd76d464755c3c88cf688c92a41a2c42f252007",
+    "src/main.ts": "f0fe6ad08e4a96d80e449783fc2d2639aecd52823009741ca46ee41fe117af66",
+    "src/core/simulation.ts": "0fee0d0b799b6d8b859892f762b2284b70faa721f08d10492d80c896ed18ed2b",
+    "src/core/pose.ts": "8fbd9b47f081f2d9e6c6876d55ec0afe3344e571a2f56b8c5215c8e0189bac7b",
+    "src/core/geometry.ts": "bdfb3e91bf21e6f43ddacb6c63b20be29f160bcd3b66bc788d98f304f29e9df7",
+    "src/core/save.ts": "706739760533ddff2899771a3319a9961fe2889983ec5d39800431b6819bf09a",
+    "src/core/audio.ts": "b5e0c39aa2a4154b9041b766646789932f9f2528f4a465210da2cc2e4416015e",
+    "src/core/types.ts": "59f39125dfeac314cedc9a9b95717b90b924f2de2982257bc8cd7980ed5c7505",
+    "src/world/platforms.ts": "852d0a740900c3c64f58fbaa8fe40d90b7f6eb5267a2b39a8b5652cfffcbf91f",
+    "src/world/build.ts": "08958a69b35524a57d12fbfea62edff4b27735fae0dedd29cea95bc2f0a34935",
+    "src/world/surfaces.ts": "77b02099f9c54d201e4d02f4c93a8b5406fe68272ae91b335398f69282340f82",
+    "src/world/world.worker.ts": "b37aa975916b165c38683d2455420e9c395c4e9294b43c171565a218cab04ff4",
+    "src/world/traffic.ts": "485ecfa15d73fb2cba9a494ee1686619255fcb6e30e9923d5b9ac76e49746846",
+    "src/render/assets.ts": "b5fb662c1d096a6b7e746a9e2aa6519fd9768076b8c369c31434ced5fea2678e",
+    "src/render/batch.ts": "4bcb3d90d0e8a8264ffe08b1f17fd6890f2c4495cb3166acd04e3bb981491bcc",
+    "src/render/trackwork.ts": "5cc31c59511e6376a8fb8496978a502dde47ed9046e475a548f4a78bc90169a2",
+    "src/render/renderer.ts": "fa4141d6ff5fa8cc8db5892608076aa24461bcdc6f4518355b0236acafc9293d"
+  },
+  "harnessSHA256": "732eb2599bccb114d98aa6745315b498f601e4abf10631acc2e8e1a5f7c71303",
+  "buildHashes": {
+    "work/qa-dist/assets/world.worker-BJp70N7g.js": "7ab0acbd2a3f2b8a88d0cbfda698350c08e329b3b2be8c1f187a556f706414e5",
+    "work/qa-dist/assets/index-CnpGMpGw.js": "4bafe9a8fdb5eab7d0298c06a7a34840a81ca99cd918d17256392193bcf1f730",
+    "work/qa-dist/assets/index-ClqjGB6b.css": "2b3356071e015aa358127af3b5557f8ba3445dbd38ed4df3415a94f704353a06"
+  },
+  "checks": [
+    {
+      "id": "endpoint-rear-KID",
+      "frontS": -5,
+      "interval": [
+        -5,
+        88.95
+      ],
+      "routeLength": 47330.93894344575,
+      "frontBeyondDataset": true,
+      "rearStillInside": true,
+      "visible": true,
+      "cars": 4,
+      "backend": "WebGPU",
+      "capture": "docs/captures/kid-endpoint-rear-front.png",
+      "fullyClearHidden": true,
+      "waitingPortalHidden": true
+    },
+    {
+      "id": "endpoint-rear-DDG",
+      "frontS": 47335.93894344575,
+      "interval": [
+        47241.26647591128,
+        47335.938943445755
+      ],
+      "routeLength": 47330.93894344575,
+      "frontBeyondDataset": true,
+      "rearStillInside": true,
+      "visible": true,
+      "cars": 4,
+      "backend": "WebGPU",
+      "capture": "docs/captures/ddg-endpoint-rear-front.png",
+      "fullyClearHidden": true,
+      "waitingPortalHidden": true
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "expectedConsoleErrors": [
+    "Error: Graphics device lost: Device was destroyed.. Reload to reconnect graphics.\n    at http://localhost:4174/assets/index-CnpGMpGw.js:581:106297"
+  ],
+  "browser": "151.0.7922.173",
+  "launchArgs": [
+    "--no-sandbox",
+    "--enable-unsafe-webgpu",
+    "--disable-dev-shm-usage",
+    "--disable-gpu-watchdog",
+    "--use-angle=swiftshader",
+    "--enable-features=Vulkan",
+    "--use-vulkan=swiftshader",
+    "--disable-vulkan-surface"
+  ],
+  "deviceLossInjection": true,
+  "deviceLoss": {
+    "paused": true,
+    "message": "Graphics device lost: Device was destroyed.. Reload to reconnect graphics. Your paused journey was saved. Reload, then choose Continue saved journey.",
+    "savedClock": 40001.233333333534,
+    "newStateSaved": true
+  },
+  "generatedAt": "2026-11-01T11:28:44Z",
+  "passed": true
+}

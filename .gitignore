@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.vite/
+work/
+test-results/
+__pycache__/
+*.pyc

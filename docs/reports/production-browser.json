@@ -1,0 +1,20 @@
+{
+  "method": "Ordinary production build, headed Chromium with SwiftShader; no QA fixture API",
+  "buildHashes": {
+    "dist/assets/world.worker-BJp70N7g.js": "7ab0acbd2a3f2b8a88d0cbfda698350c08e329b3b2be8c1f187a556f706414e5",
+    "dist/assets/index-ClqjGB6b.css": "2b3356071e015aa358127af3b5557f8ba3445dbd38ed4df3415a94f704353a06",
+    "dist/assets/index-CEOe1nWN.js": "4a3c8aabefbcd6eb479c16521e65c973e48db5419f0b3976c506f89d27da4d41"
+  },
+  "checks": {
+    "ready": true,
+    "noQAAPI": true,
+    "frontHUDVisible": true,
+    "canvasRendered": true,
+    "pauseVisible": true,
+    "unsupportedMessage": "This browser does not provide WebGPU. Use a current Chrome or Edge with WebGPU enabled.",
+    "unsupportedClear": true
+  },
+  "errors": [],
+  "browser": "151.0.7922.173",
+  "generatedAt": "2026-11-01T11:27:25Z"
+}

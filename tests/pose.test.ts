@@ -1,0 +1,11 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {Polyline,gaugeRight} from '../src/core/geometry';
+import {trackBasis,roadBasis} from '../src/core/pose';
+import type {V3} from '../src/core/types';
+const dot=(a:V3,b:V3)=>a.reduce((n,x,i)=>n+x*b[i],0);
+test('vehicle wheels follow the same canted gauge plane for every heading and direction',()=>{for(let yaw=0;yaw<Math.PI*2;yaw+=Math.PI/8){const path=new Polyline([[0,0,0],[-Math.sin(yaw)*100,3,-Math.cos(yaw)*100]]),pose=path.sample(40);pose.bank=.075;const gauge=gaugeRight(pose);for(const dir of [1,-1] as const){const axes=trackBasis(pose,dir);for(let i=0;i<3;i++)assert.ok(Math.abs(axes.right[i]-gauge[i]*dir)<1e-12);assert.ok(Math.abs(dot(axes.up,axes.forward))<1e-12);assert.ok(Math.abs(dot(axes.up,gauge))<1e-12);assert.ok(Math.abs(Math.hypot(...axes.right)-1)<1e-12);}}});
+test('cant raises the correct wheel while the camera up vector leans the other way',()=>{const pose=new Polyline([[0,0,0],[0,0,-100]]).sample(50);pose.bank=.075;const a=trackBasis(pose,1),b=trackBasis(pose,-1);assert.ok(a.right[1]>0);assert.ok(a.up[0]<0);for(let i=0;i<3;i++)assert.ok(Math.abs(a.up[i]-b.up[i])<1e-12);});
+test('road vehicles face uphill correctly even when the road runs east or west',()=>{for(const yaw of [Math.PI/2,-Math.PI/2]){const axes=roadBasis(yaw,Math.atan(.27),.01);assert.ok(axes.forward[1]>.25);assert.ok(Math.abs(dot(axes.forward,axes.up))<1e-12);assert.ok(Math.abs(dot(axes.right,axes.up))<1e-12);assert.ok(axes.up[1]>.9);}});
+test('derived cant raises the outside rail and leans a train into a right-hand curve',()=>{const radius=250,points:V3[]=Array.from({length:81},(_,i)=>{const t=i*.004;return[radius*(1-Math.cos(t)),0,-radius*Math.sin(t)];}),pose=new Polyline(points).sample(40),axes=trackBasis(pose);assert.ok(pose.bank<0);assert.ok(dot(axes.up,pose.right)>0);});
+test('attachment cant and heading do not jump at source segment boundaries',()=>{const points:V3[]=Array.from({length:20},(_,i)=>[Math.sin(i*.12)*20,i*.1,-i*8]),path=new Polyline(points);for(let i=1;i<points.length-1;i++){const s=path.lengths[i],a=path.sample(s-.0001),b=path.sample(s+.0001);assert.ok(Math.abs(a.bank-b.bank)<.00001);assert.ok(Math.hypot(...a.right.map((x,j)=>x-b.right[j]))<.00001);}});

@@ -1,0 +1,294 @@
+{
+  "version": 1,
+  "scope": "Supplement to authored-source-rejections.json for the two additional baseline omissions found by the final 121-tile audit. Original report/register hashes are preserved; no runtime or source-data geometry was edited.",
+  "geometryReportSha256": "556df45c9df652726d637ff302dbd437f3c891b39ec2e74e3b62d44f87fc4962",
+  "inventorySha256": "20a0f7d1f3b38d52ea90d9987054351d998444ecb1718f1ad83bfc292eaf2389",
+  "sourceEvidence": "docs/sources/additional-building-rejections.geojson",
+  "entries": [
+    {
+      "id": "way/121553129",
+      "name": "unnamed industrial building",
+      "ownerTile": "5_-9",
+      "modelPosition": [
+        5096.806666666667,
+        129.80298847275773,
+        -8670.318888888889
+      ],
+      "rawFootprint": [
+        [
+          5038.5,
+          -8685.09
+        ],
+        [
+          5078.84,
+          -8731.27
+        ],
+        [
+          5110.79,
+          -8703.67
+        ],
+        [
+          5090.63,
+          -8679.53
+        ],
+        [
+          5108.8,
+          -8662.96
+        ],
+        [
+          5118.59,
+          -8654.03
+        ],
+        [
+          5111.65,
+          -8643.66
+        ],
+        [
+          5110.58,
+          -8642.06
+        ],
+        [
+          5102.88,
+          -8630.6
+        ]
+      ],
+      "actualRuntimeRejection": {
+        "id": "way/121553129",
+        "sourceId": "way/121553129",
+        "family": "rejected-building",
+        "position": [
+          5096.806666666667,
+          129.80298847275773,
+          -8670.318888888889
+        ],
+        "reason": "retaining foundation exceeds bounded height/dimension/burial limits",
+        "foundationRelief": 5.011039224493274,
+        "foundationLow": 124.79194924826446,
+        "bodyHeight": 5.5,
+        "footprint": [
+          [
+            5038.5,
+            -8685.09
+          ],
+          [
+            5078.84,
+            -8731.27
+          ],
+          [
+            5110.79,
+            -8703.67
+          ],
+          [
+            5090.63,
+            -8679.53
+          ],
+          [
+            5108.8,
+            -8662.96
+          ],
+          [
+            5118.59,
+            -8654.03
+          ],
+          [
+            5111.65,
+            -8643.66
+          ],
+          [
+            5110.58,
+            -8642.06
+          ],
+          [
+            5102.88,
+            -8630.6
+          ]
+        ],
+        "maximumExposedWallHeightBound": 5.011039224493274,
+        "sampledMaximumExposedWallHeight": 5.010655124283915,
+        "buriedWallFraction": 0.4525822516709096,
+        "maximumSupportHeight": 4.95,
+        "planDimensions": [
+          80.09000000000015,
+          100.67000000000007
+        ],
+        "blockedRoads": [],
+        "tile": "5_-9",
+        "manifestId": "5_-9/rejected-building/way/121553129"
+      },
+      "sourceVersion": 2,
+      "sourceTimestamp": "2014-01-17T13:16:15Z",
+      "sourceTags": {
+        "building": "industrial",
+        "source": "bing"
+      },
+      "sourceEvidence": "docs/sources/additional-building-rejections.geojson",
+      "sourceEvidenceSha256": "aae8ebb98dcc30a32d6c36fde281e51ae06d8f0a51c6e2952ee007fe16e0cfb6",
+      "acceptance": "unaccepted source/site instance; not rendered and not a contact pass",
+      "failureRules": [
+        "5.011039 m support relief exceeds 90% of the 5.5 m model body height (4.95 m cap)",
+        "Only 45.2582% of sampled foundation wall area is buried; required minimum 50%"
+      ],
+      "sourceLimit": "Uploaded 5.5 m body height is a style estimate; live source has building=industrial but no measured height or floor-level tags.",
+      "remedy": "Obtain/reference-check the actual height and stepped floor/site-pad arrangement; author a supported stepped foundation or verified terrain treatment within the declared bounds. Do not relax limits solely to restore the count."
+    },
+    {
+      "id": "way/32617395",
+      "name": "Masshouse",
+      "ownerTile": "7_-8",
+      "modelPosition": [
+        7560.5945454545445,
+        119.01429983520507,
+        -7052.005454545456
+      ],
+      "rawFootprint": [
+        [
+          7535.42,
+          -7070.55
+        ],
+        [
+          7550.98,
+          -7065.55
+        ],
+        [
+          7587.47,
+          -7054.16
+        ],
+        [
+          7598.49,
+          -7049.3
+        ],
+        [
+          7586.06,
+          -7033.99
+        ],
+        [
+          7584.12,
+          -7034.92
+        ],
+        [
+          7580.45,
+          -7037.98
+        ],
+        [
+          7542.23,
+          -7049.69
+        ],
+        [
+          7536,
+          -7052.29
+        ],
+        [
+          7530.79,
+          -7055.89
+        ],
+        [
+          7534.53,
+          -7067.74
+        ]
+      ],
+      "actualRuntimeRejection": {
+        "id": "way/32617395",
+        "sourceId": "way/32617395",
+        "family": "rejected-building",
+        "position": [
+          7560.5945454545445,
+          119.01429983520507,
+          -7052.005454545456
+        ],
+        "reason": "mapped access intersects foundation volume; source levels and passage openings require authoring",
+        "foundationRelief": 5.162255392700288,
+        "foundationLow": 113.85204444250478,
+        "bodyHeight": 50,
+        "footprint": [
+          [
+            7535.42,
+            -7070.55
+          ],
+          [
+            7550.98,
+            -7065.55
+          ],
+          [
+            7587.47,
+            -7054.16
+          ],
+          [
+            7598.49,
+            -7049.3
+          ],
+          [
+            7586.06,
+            -7033.99
+          ],
+          [
+            7584.12,
+            -7034.92
+          ],
+          [
+            7580.45,
+            -7037.98
+          ],
+          [
+            7542.23,
+            -7049.69
+          ],
+          [
+            7536,
+            -7052.29
+          ],
+          [
+            7530.79,
+            -7055.89
+          ],
+          [
+            7534.53,
+            -7067.74
+          ]
+        ],
+        "maximumExposedWallHeightBound": 5.162255392700288,
+        "sampledMaximumExposedWallHeight": 5.160198733520531,
+        "buriedWallFraction": 0.46873541606559443,
+        "maximumSupportHeight": 7.5,
+        "planDimensions": [
+          67.69999999999982,
+          36.5600000000004
+        ],
+        "blockedRoads": [
+          {
+            "id": "way/4823750/0",
+            "kind": "secondary",
+            "minY": 114.49110253460888,
+            "maxY": 114.655
+          }
+        ],
+        "tile": "7_-8",
+        "manifestId": "7_-8/rejected-building/way/32617395"
+      },
+      "sourceVersion": 14,
+      "sourceTimestamp": "2024-02-04T07:17:38Z",
+      "sourceTags": {
+        "addr:city": "Birmingham",
+        "addr:housename": "Masshouse",
+        "addr:housenumber": "2",
+        "addr:place": "Masshouse Plaza",
+        "addr:postcode": "B5 5JE",
+        "building": "apartments",
+        "building:levels": "15",
+        "height": "50",
+        "name": "Masshouse",
+        "source": "visual survey;estimate",
+        "wikidata": "Q6784630",
+        "wikipedia": "en:Masshouse"
+      },
+      "sourceEvidence": "docs/sources/additional-building-rejections.geojson",
+      "sourceEvidenceSha256": "aae8ebb98dcc30a32d6c36fde281e51ae06d8f0a51c6e2952ee007fe16e0cfb6",
+      "acceptance": "unaccepted source/site instance; not rendered and not a contact pass",
+      "failureRules": [
+        "Mapped Masshouse Lane road footprint intersects the proposed foundation volume",
+        "Foundation burial fraction 46.8735% is below the required 50%"
+      ],
+      "sourceLimit": "The apartment tower is tagged 50 m / 15 levels, but Masshouse Lane has no tunnel/building-passage tag or surveyed clearance in the cached source; no supplied inner ring establishes an opening.",
+      "remedy": "Reconcile road width/alignment, tower overhang/supports, ground levels and any actual passage using plans or current reference evidence; author the verified void and structure. Do not invent an opening or place a solid basement across the road."
+    }
+  ]
+}

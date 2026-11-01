@@ -1,0 +1,244 @@
+{
+  "generatedAt": "2026-11-01T10:45:10.995Z",
+  "method": "Direct factory LOD0 probes. Rail limits apply to one external car. These probes do not certify every source building or parameter variant, LOD transitions, GPU performance or draw-call targets.",
+  "sourceHashes": {
+    "scripts/asset-budgets.ts": "d9ee4536f69a1fd04e46a05858375a1139877b41a908b02c2e7215ff05d19b64",
+    "src/render/assets.ts": "b5fb662c1d096a6b7e746a9e2aa6519fd9768076b8c369c31434ced5fea2678e"
+  },
+  "probes": [
+    {
+      "family": "ordinary-house",
+      "config": {
+        "id": "budget-house",
+        "width": 8,
+        "depth": 7,
+        "height": 6
+      },
+      "targetTrianglesPerUnit": 1500,
+      "meshes": 45,
+      "triangles": 576,
+      "withinTarget": true
+    },
+    {
+      "family": "tree",
+      "config": {
+        "id": "budget-tree"
+      },
+      "targetTrianglesPerUnit": 500,
+      "meshes": 4,
+      "triangles": 92,
+      "withinTarget": true
+    },
+    {
+      "family": "road/car",
+      "config": {
+        "id": "budget-car",
+        "kind": "car"
+      },
+      "targetTrianglesPerUnit": 2500,
+      "meshes": 21,
+      "triangles": 412,
+      "withinTarget": true
+    },
+    {
+      "family": "road/taxi",
+      "config": {
+        "id": "budget-taxi",
+        "kind": "taxi"
+      },
+      "targetTrianglesPerUnit": 2500,
+      "meshes": 23,
+      "triangles": 538,
+      "withinTarget": true
+    },
+    {
+      "family": "road/van",
+      "config": {
+        "id": "budget-van",
+        "kind": "van"
+      },
+      "targetTrianglesPerUnit": 2500,
+      "meshes": 21,
+      "triangles": 412,
+      "withinTarget": true
+    },
+    {
+      "family": "road/bus",
+      "config": {
+        "id": "budget-bus",
+        "kind": "bus"
+      },
+      "targetTrianglesPerUnit": 2500,
+      "meshes": 29,
+      "triangles": 508,
+      "withinTarget": true
+    },
+    {
+      "family": "road/lorry",
+      "config": {
+        "id": "budget-lorry",
+        "kind": "lorry"
+      },
+      "targetTrianglesPerUnit": 2500,
+      "meshes": 33,
+      "triangles": 636,
+      "withinTarget": true
+    },
+    {
+      "family": "rail/172",
+      "config": {
+        "id": "budget-172",
+        "kind": "172",
+        "cars": 3
+      },
+      "targetTrianglesPerUnit": 12000,
+      "meshes": 142,
+      "triangles": 2184,
+      "perCar": [
+        {
+          "meshes": 48,
+          "triangles": 736
+        },
+        {
+          "meshes": 46,
+          "triangles": 712
+        },
+        {
+          "meshes": 48,
+          "triangles": 736
+        }
+      ],
+      "withinTarget": true
+    },
+    {
+      "family": "rail/168",
+      "config": {
+        "id": "budget-168",
+        "kind": "168",
+        "cars": 4
+      },
+      "targetTrianglesPerUnit": 12000,
+      "meshes": 188,
+      "triangles": 2896,
+      "perCar": [
+        {
+          "meshes": 48,
+          "triangles": 736
+        },
+        {
+          "meshes": 46,
+          "triangles": 712
+        },
+        {
+          "meshes": 46,
+          "triangles": 712
+        },
+        {
+          "meshes": 48,
+          "triangles": 736
+        }
+      ],
+      "withinTarget": true
+    },
+    {
+      "family": "rail/139",
+      "config": {
+        "id": "budget-139",
+        "kind": "139",
+        "cars": 1
+      },
+      "targetTrianglesPerUnit": 12000,
+      "meshes": 42,
+      "triangles": 664,
+      "perCar": [
+        {
+          "meshes": 42,
+          "triangles": 664
+        }
+      ],
+      "withinTarget": true
+    },
+    {
+      "family": "rail/metro",
+      "config": {
+        "id": "budget-metro",
+        "kind": "metro",
+        "cars": 3
+      },
+      "targetTrianglesPerUnit": 12000,
+      "meshes": 152,
+      "triangles": 2304,
+      "perCar": [
+        {
+          "meshes": 48,
+          "triangles": 736
+        },
+        {
+          "meshes": 56,
+          "triangles": 832
+        },
+        {
+          "meshes": 48,
+          "triangles": 736
+        }
+      ],
+      "withinTarget": true
+    },
+    {
+      "family": "rail/emu",
+      "config": {
+        "id": "budget-emu",
+        "kind": "emu",
+        "cars": 4
+      },
+      "targetTrianglesPerUnit": 12000,
+      "meshes": 198,
+      "triangles": 3016,
+      "perCar": [
+        {
+          "meshes": 48,
+          "triangles": 736
+        },
+        {
+          "meshes": 56,
+          "triangles": 832
+        },
+        {
+          "meshes": 46,
+          "triangles": 712
+        },
+        {
+          "meshes": 48,
+          "triangles": 736
+        }
+      ],
+      "withinTarget": true
+    },
+    {
+      "family": "rail/heritage",
+      "config": {
+        "id": "budget-heritage",
+        "kind": "heritage",
+        "cars": 3
+      },
+      "targetTrianglesPerUnit": 12000,
+      "meshes": 142,
+      "triangles": 2184,
+      "perCar": [
+        {
+          "meshes": 48,
+          "triangles": 736
+        },
+        {
+          "meshes": 46,
+          "triangles": 712
+        },
+        {
+          "meshes": 48,
+          "triangles": 736
+        }
+      ],
+      "withinTarget": true
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "generatedAt": "2026-11-01T10:47:19.979201+00:00",
+  "method": "SHA-256 of every uploaded source file listed by references/inventory.json; reference metadata is versioned separately.",
+  "inventorySHA256": "9a0fa6cc312c59b2f24ff354621cb2e19885988e9e41a4bb37b3b9688889e83d",
+  "filesChecked": 2995,
+  "sha256Mismatches": [],
+  "zeroChanges": true
+}

@@ -1,0 +1,810 @@
+{
+  "version": 1,
+  "scope": "Explicit unresolved source building/access conflicts; these remain asset-completeness and visible-fidelity gaps, not measured geometry passes.",
+  "retainingFoundationRules": {
+    "normalReliefMetres": 5,
+    "maximumRetainingReliefMetres": 7.5,
+    "maximumFractionOfBodyHeight": 0.9,
+    "maximumFractionOfShortestPlanSpan": 0.5,
+    "minimumBuriedWallAreaFraction": 0.5,
+    "maximumMappedRoadIntersections": 0
+  },
+  "entries": [
+    {
+      "id": "way/30847340",
+      "sourceId": "way/30847340",
+      "name": "Touchwood Shopping Mall",
+      "ownerTile": "15_0",
+      "rawFootprint": [
+        [
+          15081.81,
+          449.6
+        ],
+        [
+          15099.54,
+          455.98
+        ],
+        [
+          15107.5,
+          461.4
+        ],
+        [
+          15096.63,
+          476.5
+        ],
+        [
+          15101.56,
+          480.04
+        ],
+        [
+          15091.37,
+          489.56
+        ],
+        [
+          15099.07,
+          496.67
+        ],
+        [
+          15095.92,
+          499.81
+        ],
+        [
+          15102.01,
+          505.86
+        ],
+        [
+          15108.19,
+          512
+        ],
+        [
+          15117.71,
+          502.47
+        ],
+        [
+          15120.27,
+          504.98
+        ],
+        [
+          15136.58,
+          522.06
+        ],
+        [
+          15127.4,
+          533.95
+        ],
+        [
+          15134.29,
+          541.68
+        ],
+        [
+          15144.92,
+          530.54
+        ],
+        [
+          15174.82,
+          563.6
+        ],
+        [
+          15186.41,
+          550.88
+        ],
+        [
+          15206.03,
+          570.36
+        ],
+        [
+          15214.36,
+          562.41
+        ],
+        [
+          15231.98,
+          578
+        ],
+        [
+          15229.78,
+          580.05
+        ],
+        [
+          15209.75,
+          591.94
+        ],
+        [
+          15201.33,
+          601.24
+        ],
+        [
+          15210.15,
+          607.34
+        ],
+        [
+          15202.17,
+          616.61
+        ],
+        [
+          15196.97,
+          623.54
+        ],
+        [
+          15192.4,
+          629.43
+        ],
+        [
+          15199.85,
+          635.54
+        ],
+        [
+          15197.5,
+          640.49
+        ],
+        [
+          15195.34,
+          646.88
+        ],
+        [
+          15192.18,
+          656.45
+        ],
+        [
+          15190.47,
+          667.94
+        ],
+        [
+          15191.32,
+          679.15
+        ],
+        [
+          15152.79,
+          734.65
+        ],
+        [
+          15148.12,
+          741.17
+        ],
+        [
+          15133.63,
+          731.12
+        ],
+        [
+          15136.64,
+          727.13
+        ],
+        [
+          15127.02,
+          720.18
+        ],
+        [
+          15123.7,
+          724.7
+        ],
+        [
+          15123,
+          724.26
+        ],
+        [
+          15115.36,
+          713.76
+        ],
+        [
+          15109.52,
+          708.58
+        ],
+        [
+          15103.58,
+          705.19
+        ],
+        [
+          15088.16,
+          700.18
+        ],
+        [
+          15091.26,
+          695.12
+        ],
+        [
+          15086.62,
+          692.29
+        ],
+        [
+          15081.2,
+          688.41
+        ],
+        [
+          15100.3,
+          667.1
+        ],
+        [
+          15107.55,
+          659.42
+        ],
+        [
+          15112.28,
+          662.55
+        ],
+        [
+          15116.22,
+          657.53
+        ],
+        [
+          15117.63,
+          654.64
+        ],
+        [
+          15111.96,
+          650.63
+        ],
+        [
+          15117.06,
+          642.7
+        ],
+        [
+          15092.71,
+          616.73
+        ],
+        [
+          15078.17,
+          604.03
+        ],
+        [
+          15027.21,
+          561.59
+        ],
+        [
+          15022.67,
+          558.02
+        ],
+        [
+          15000.47,
+          540.5
+        ],
+        [
+          14985.43,
+          533.61
+        ],
+        [
+          14984.09,
+          532.99
+        ],
+        [
+          14977.17,
+          532.03
+        ],
+        [
+          14973.39,
+          518.58
+        ],
+        [
+          14982.07,
+          506.42
+        ],
+        [
+          14986.66,
+          494.8
+        ],
+        [
+          15000.95,
+          452.33
+        ],
+        [
+          14990.05,
+          448.51
+        ],
+        [
+          15000.32,
+          418.34
+        ],
+        [
+          15014.94,
+          423.19
+        ],
+        [
+          15026.22,
+          427.4
+        ],
+        [
+          15018.59,
+          448.86
+        ],
+        [
+          15064.74,
+          466.36
+        ],
+        [
+          15074.47,
+          469.87
+        ]
+      ],
+      "candidateFloorY": 132.13000061035157,
+      "cookedFoundationLow": 126.8838935370989,
+      "foundationRelief": 5.246107073252674,
+      "bodyHeight": 7.8,
+      "buriedWallFraction": 0.6667874264929607,
+      "exactMappedRoadConflicts": [
+        {
+          "id": "way/1343047227/0",
+          "kind": "footway",
+          "minY": 129.86,
+          "maxY": 130.48499999999999
+        },
+        {
+          "id": "way/1343047228/0",
+          "kind": "footway",
+          "minY": 129.80270870477437,
+          "maxY": 130.345
+        },
+        {
+          "id": "way/156458752/0",
+          "kind": "footway",
+          "minY": 131.02,
+          "maxY": 131.275
+        },
+        {
+          "id": "way/156458754/0",
+          "kind": "footway",
+          "minY": 129.34,
+          "maxY": 131.685
+        },
+        {
+          "id": "way/156458759/0",
+          "kind": "footway",
+          "minY": 130.31015863518198,
+          "maxY": 130.615
+        },
+        {
+          "id": "way/24215845/0",
+          "kind": "service",
+          "minY": 127.4539827320495,
+          "maxY": 127.615
+        },
+        {
+          "id": "way/256428338/0",
+          "kind": "service",
+          "minY": 130.26050062228697,
+          "maxY": 130.98499999999999
+        },
+        {
+          "id": "way/256430748/0",
+          "kind": "footway",
+          "minY": 131.65,
+          "maxY": 131.755
+        },
+        {
+          "id": "way/30847342/0",
+          "kind": "footway",
+          "minY": 129.34,
+          "maxY": 129.625
+        },
+        {
+          "id": "way/310351035/0",
+          "kind": "footway",
+          "minY": 130.66,
+          "maxY": 131.42499999999998
+        },
+        {
+          "id": "way/310351037/0",
+          "kind": "footway",
+          "minY": 131.39,
+          "maxY": 131.845
+        },
+        {
+          "id": "way/615522042/0",
+          "kind": "footway",
+          "minY": 130.5,
+          "maxY": 130.585
+        },
+        {
+          "id": "way/615522043/0",
+          "kind": "footway",
+          "minY": 130.38,
+          "maxY": 130.6819275654045
+        },
+        {
+          "id": "way/764889675/0",
+          "kind": "service",
+          "minY": 130.92,
+          "maxY": 131.025
+        },
+        {
+          "id": "way/892679453/0",
+          "kind": "service",
+          "minY": 130.93,
+          "maxY": 131.615
+        }
+      ],
+      "status": "source retained; building geometry intentionally withheld",
+      "reason": "A solid foundation would block mapped access. Ground-derived profiles do not establish the evidenced stacked levels.",
+      "requiredRemediation": "Roof service deck and interior arcades require separate profiles and voids.",
+      "evidence": "public/data/building-access-evidence.json",
+      "confidence": "Plan footprints and cited OSM access tags are source evidence; vertical profiles, internal openings and structural design are not verified.",
+      "maximumRetainingSupportHeight": 7.02,
+      "planDimensions": [
+        258.59000000000015,
+        322.83
+      ],
+      "rawFootprintSha256": "92541a410eef050732aa520658118c2a08d5c9e91e4f45849232ea40976d09f1"
+    },
+    {
+      "id": "way/118786956",
+      "sourceId": "way/118786956",
+      "name": "36 Paradise Street",
+      "ownerTile": "6_-7",
+      "rawFootprint": [
+        [
+          6626.18,
+          -6762.31
+        ],
+        [
+          6614.15,
+          -6783.98
+        ],
+        [
+          6620.34,
+          -6786.81
+        ],
+        [
+          6621.49,
+          -6787.33
+        ],
+        [
+          6629.85,
+          -6772.42
+        ],
+        [
+          6632.58,
+          -6767.55
+        ],
+        [
+          6630.56,
+          -6766.53
+        ],
+        [
+          6630.02,
+          -6766.27
+        ],
+        [
+          6630.75,
+          -6764.72
+        ],
+        [
+          6628.3,
+          -6763.43
+        ]
+      ],
+      "candidateFloorY": 135.30666079916801,
+      "cookedFoundationLow": 129.87678738590165,
+      "foundationRelief": 5.429873413266364,
+      "bodyHeight": 44,
+      "buriedWallFraction": 0.4030483280499929,
+      "exactMappedRoadConflicts": [
+        {
+          "id": "way/1559417260/0",
+          "kind": "service",
+          "minY": 130.11695443359653,
+          "maxY": 130.875
+        },
+        {
+          "id": "way/1559417265/0",
+          "kind": "service",
+          "minY": 130.84,
+          "maxY": 131.075
+        }
+      ],
+      "status": "source retained; building geometry intentionally withheld",
+      "reason": "A solid foundation would block mapped access. Ground-derived profiles do not establish the evidenced stacked levels.",
+      "requiredRemediation": "Covered service access requires a measured or explicitly authored passage level and void.",
+      "evidence": "public/data/building-access-evidence.json",
+      "confidence": "Plan footprints and cited OSM access tags are source evidence; vertical profiles, internal openings and structural design are not verified.",
+      "maximumRetainingSupportHeight": 7.5,
+      "planDimensions": [
+        18.43000000000029,
+        25.019999999999527
+      ],
+      "rawFootprintSha256": "8460f62f7e449401704916f97c92838bf0596719777f950b7438af3f43cfa1ea"
+    },
+    {
+      "id": "way/29051394",
+      "sourceId": "way/29051394",
+      "name": "Meridian House / Ringway Centre",
+      "ownerTile": "7_-7",
+      "rawFootprint": [
+        [
+          7035.35,
+          -6426.96
+        ],
+        [
+          7054.21,
+          -6437.71
+        ],
+        [
+          7072.07,
+          -6448.95
+        ],
+        [
+          7087.34,
+          -6460.8
+        ],
+        [
+          7100.65,
+          -6474.85
+        ],
+        [
+          7113.77,
+          -6490.85
+        ],
+        [
+          7118.59,
+          -6487.77
+        ],
+        [
+          7120.45,
+          -6489.92
+        ],
+        [
+          7124.96,
+          -6487.23
+        ],
+        [
+          7128.32,
+          -6485.23
+        ],
+        [
+          7125.63,
+          -6481.77
+        ],
+        [
+          7114.67,
+          -6467.59
+        ],
+        [
+          7112.88,
+          -6465.29
+        ],
+        [
+          7111.77,
+          -6463.85
+        ],
+        [
+          7102.99,
+          -6454.95
+        ],
+        [
+          7094.87,
+          -6448.24
+        ],
+        [
+          7073.74,
+          -6432.44
+        ],
+        [
+          7060.4,
+          -6424.97
+        ],
+        [
+          7049.67,
+          -6418.18
+        ],
+        [
+          7039.42,
+          -6411.64
+        ],
+        [
+          7015.71,
+          -6397.1
+        ],
+        [
+          7001.28,
+          -6389.01
+        ],
+        [
+          6992.33,
+          -6400.49
+        ],
+        [
+          7006.64,
+          -6408.95
+        ]
+      ],
+      "candidateFloorY": 118.86153493398088,
+      "cookedFoundationLow": 113.7182466367987,
+      "foundationRelief": 5.143288297182181,
+      "bodyHeight": 20.3,
+      "buriedWallFraction": 0.5284570183232673,
+      "exactMappedRoadConflicts": [
+        {
+          "id": "way/219798949/0",
+          "kind": "tertiary",
+          "minY": 114.96,
+          "maxY": 115.30463560136513
+        },
+        {
+          "id": "way/261538660/0",
+          "kind": "service",
+          "minY": 114.96,
+          "maxY": 115.005
+        },
+        {
+          "id": "way/630217182/0",
+          "kind": "unclassified",
+          "minY": 115.85,
+          "maxY": 116.265
+        },
+        {
+          "id": "way/630217332/0",
+          "kind": "cycleway",
+          "minY": 115.81,
+          "maxY": 116.215
+        },
+        {
+          "id": "way/687661954/0",
+          "kind": "tertiary",
+          "minY": 114.84703384712678,
+          "maxY": 114.99499999999999
+        }
+      ],
+      "status": "source retained; building geometry intentionally withheld",
+      "reason": "A solid foundation would block mapped access. Ground-derived profiles do not establish the evidenced stacked levels.",
+      "requiredRemediation": "Layer1 building over Hurst Street tunnel and a building-passage cycleway requires actual podium and passage geometry.",
+      "evidence": "public/data/building-access-evidence.json",
+      "confidence": "Plan footprints and cited OSM access tags are source evidence; vertical profiles, internal openings and structural design are not verified.",
+      "maximumRetainingSupportHeight": 7.5,
+      "planDimensions": [
+        135.98999999999978,
+        101.84000000000015
+      ],
+      "rawFootprintSha256": "98a24b5defc7852006e6a94db2fa82e4a8acea76aa2d9ffff81cefd2e2607a19"
+    },
+    {
+      "id": "way/1533584359",
+      "sourceId": "way/1533584359",
+      "name": "Acra / St Philips Point",
+      "ownerTile": "7_-7",
+      "rawFootprint": [
+        [
+          6987.5,
+          -6906.2
+        ],
+        [
+          6989.95,
+          -6905.33
+        ],
+        [
+          6989.1,
+          -6902.64
+        ],
+        [
+          6988.04,
+          -6899.39
+        ],
+        [
+          7015.2,
+          -6878.48
+        ],
+        [
+          7028.62,
+          -6894.33
+        ],
+        [
+          7037.73,
+          -6905.09
+        ],
+        [
+          7040.45,
+          -6908.3
+        ],
+        [
+          7022.41,
+          -6926.78
+        ],
+        [
+          7007.55,
+          -6941.72
+        ],
+        [
+          7006.05,
+          -6941.64
+        ],
+        [
+          7005.51,
+          -6943.5
+        ],
+        [
+          7004.08,
+          -6944.88
+        ],
+        [
+          7002.8,
+          -6945.57
+        ],
+        [
+          7001.25,
+          -6946.04
+        ],
+        [
+          6999.79,
+          -6945.91
+        ],
+        [
+          6998.52,
+          -6945.6
+        ],
+        [
+          6997.14,
+          -6944.62
+        ],
+        [
+          6995.78,
+          -6943.01
+        ],
+        [
+          6995.13,
+          -6941.28
+        ],
+        [
+          6995.13,
+          -6939.27
+        ],
+        [
+          6994.29,
+          -6938.92
+        ],
+        [
+          6988.8,
+          -6917.65
+        ],
+        [
+          6990.81,
+          -6917.03
+        ]
+      ],
+      "candidateFloorY": 137.34061767578126,
+      "cookedFoundationLow": 132.23766516113272,
+      "foundationRelief": 5.1029525146485355,
+      "bodyHeight": 35.8,
+      "buriedWallFraction": 0.45087138587537434,
+      "exactMappedRoadConflicts": [
+        {
+          "id": "way/1533584360/0",
+          "kind": "service",
+          "minY": 134.01,
+          "maxY": 134.67499999999998
+        },
+        {
+          "id": "way/1533584361/0",
+          "kind": "service",
+          "minY": 133.74,
+          "maxY": 134.045
+        },
+        {
+          "id": "way/25094466/0",
+          "kind": "service",
+          "minY": 136.30930088711813,
+          "maxY": 137.31788051332424
+        }
+      ],
+      "status": "source retained; building geometry intentionally withheld",
+      "reason": "A solid foundation would block mapped access. Ground-derived profiles do not establish the evidenced stacked levels.",
+      "requiredRemediation": "Covered layer\u22121 aisle, underground floors and nearby service access require separate levels and passage geometry.",
+      "evidence": "public/data/building-access-evidence.json",
+      "confidence": "Plan footprints and cited OSM access tags are source evidence; vertical profiles, internal openings and structural design are not verified.",
+      "maximumRetainingSupportHeight": 7.5,
+      "planDimensions": [
+        52.94999999999982,
+        67.5600000000004
+      ],
+      "rawFootprintSha256": "a4509417581f509d034f0da8f926697d3b3046698fe4a1c0e6bdf2d17a3208f9"
+    }
+  ],
+  "measurementMethods": {
+    "foundationRange": "Exact footprint intersections with actual float32 owner/neighbor terrain triangles.",
+    "burialFraction": "Visible wall height integrated at at-most1m perimeter intervals relative to the full foundation wall area.",
+    "roadConflicts": "Footprint intersections with the same source-breakpoint/6m road plan triangles that are emitted; endpoint height ranges are conservative bounds, not surveyed passage levels."
+  },
+  "sourceHashes": {
+    "src/world/build.ts": "08958a69b35524a57d12fbfea62edff4b27735fae0dedd29cea95bc2f0a34935",
+    "public/data/building-access-evidence.json": "b39e0d6912b5a904eb7e83967b2fd809fe11734b20fdc0f74a9f27b5c260b361",
+    "public/data/route.json": "782c1291006b818b7cc236fbaa16cb3d5b33ef21c2afc2dadb3ec4d98f5e5001",
+    "public/data/road-surfaces.json": "1d9798585aac82cfbd3f1a1710fd059c4b38ec6ce331c60b7f88d43e573ff1be",
+    "public/data/land-surfaces.json": "13d246609f39191423d439d9da038c04ec3ef324a889902544e6e3debbceee80",
+    "src/render/assets.ts": "b5fb662c1d096a6b7e746a9e2aa6519fd9768076b8c369c31434ced5fea2678e",
+    "src/core/geometry.ts": "bdfb3e91bf21e6f43ddacb6c63b20be29f160bcd3b66bc788d98f304f29e9df7"
+  }
+}

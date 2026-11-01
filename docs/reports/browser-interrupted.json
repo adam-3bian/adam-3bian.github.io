@@ -1,0 +1,399 @@
+{
+  "browser": "151.0.7922.173",
+  "adapter": "SwiftShader software WebGPU; not RTX 3060 performance evidence",
+  "viewport": [
+    1440,
+    900
+  ],
+  "captures": [
+    {
+      "station": "KID",
+      "direction": 1,
+      "file": "docs/captures/kid-towards-dorridge.png",
+      "quality": "Light (software GPU)",
+      "position": [
+        -16125.55064400499,
+        59.11998977769858,
+        3681.9319422372705
+      ],
+      "stats": {
+        "backend": "WebGPU",
+        "adapter": "WebGPU graphics adapter",
+        "tiles": 7,
+        "triangles": 1583077,
+        "placements": 381,
+        "gpuErrors": [],
+        "drawCalls": 68,
+        "memory": {
+          "attributes": 20,
+          "attributesSize": 94734900,
+          "geometries": 14,
+          "indexAttributes": 8,
+          "indexAttributesSize": 16790832,
+          "indirectStorageAttributes": 0,
+          "indirectStorageAttributesSize": 0,
+          "programs": 12,
+          "programsSize": 53754,
+          "readbackBuffers": 0,
+          "readbackBuffersSize": 0,
+          "renderTargets": 2,
+          "storageAttributes": 0,
+          "storageAttributesSize": 0,
+          "textures": 5,
+          "texturesSize": 16002552,
+          "uniformBuffers": 1051,
+          "uniformBuffersSize": 117824,
+          "total": 127699862
+        }
+      }
+    },
+    {
+      "station": "BKD",
+      "direction": 1,
+      "file": "docs/captures/bkd-towards-dorridge.png",
+      "quality": "Light (software GPU)",
+      "position": [
+        -11881.850449914895,
+        73.37999645736305,
+        1203.9255473374099
+      ],
+      "stats": {
+        "backend": "WebGPU",
+        "adapter": "WebGPU graphics adapter",
+        "tiles": 13,
+        "triangles": 2574337,
+        "placements": 436,
+        "gpuErrors": [],
+        "drawCalls": 104,
+        "memory": {
+          "attributes": 32,
+          "attributesSize": 149773140,
+          "geometries": 22,
+          "indexAttributes": 12,
+          "indexAttributesSize": 26619804,
+          "indirectStorageAttributes": 0,
+          "indirectStorageAttributesSize": 0,
+          "programs": 12,
+          "programsSize": 53754,
+          "readbackBuffers": 0,
+          "readbackBuffersSize": 0,
+          "renderTargets": 2,
+          "storageAttributes": 0,
+          "storageAttributesSize": 0,
+          "textures": 5,
+          "texturesSize": 16002552,
+          "uniformBuffers": 1253,
+          "uniformBuffersSize": 141168,
+          "total": 192590418
+        }
+      }
+    },
+    {
+      "station": "HAG",
+      "direction": 1,
+      "file": "docs/captures/hag-towards-dorridge.png",
+      "quality": "Light (software GPU)",
+      "position": [
+        -9850.097651605767,
+        95.42997510229326,
+        -533.4608047364137
+      ],
+      "stats": {
+        "backend": "WebGPU",
+        "adapter": "WebGPU graphics adapter",
+        "tiles": 19,
+        "triangles": 4068197,
+        "placements": 1926,
+        "gpuErrors": [],
+        "drawCalls": 138,
+        "memory": {
+          "attributes": 44,
+          "attributesSize": 223817436,
+          "geometries": 30,
+          "indexAttributes": 16,
+          "indexAttributesSize": 39956484,
+          "indirectStorageAttributes": 0,
+          "indirectStorageAttributesSize": 0,
+          "programs": 12,
+          "programsSize": 53754,
+          "readbackBuffers": 0,
+          "readbackBuffersSize": 0,
+          "renderTargets": 2,
+          "storageAttributes": 0,
+          "storageAttributesSize": 0,
+          "textures": 5,
+          "texturesSize": 16002552,
+          "uniformBuffers": 1807,
+          "uniformBuffersSize": 203936,
+          "total": 280034162
+        }
+      }
+    },
+    {
+      "station": "SBJ",
+      "direction": 1,
+      "file": "docs/captures/sbj-towards-dorridge.png",
+      "quality": "Light (software GPU)",
+      "position": [
+        -9013.662726273815,
+        97.40003352204667,
+        -3331.960803971177
+      ],
+      "stats": {
+        "backend": "WebGPU",
+        "adapter": "WebGPU graphics adapter",
+        "tiles": 24,
+        "triangles": 5904352,
+        "placements": 4825,
+        "gpuErrors": [],
+        "drawCalls": 166,
+        "memory": {
+          "attributes": 53,
+          "attributesSize": 296115948,
+          "geometries": 36,
+          "indexAttributes": 19,
+          "indexAttributesSize": 52754592,
+          "indirectStorageAttributes": 0,
+          "indirectStorageAttributesSize": 0,
+          "programs": 12,
+          "programsSize": 53754,
+          "readbackBuffers": 0,
+          "readbackBuffersSize": 0,
+          "renderTargets": 2,
+          "storageAttributes": 0,
+          "storageAttributesSize": 0,
+          "textures": 5,
+          "texturesSize": 16002552,
+          "uniformBuffers": 2152,
+          "uniformBuffersSize": 243104,
+          "total": 365169950
+        }
+      }
+    },
+    {
+      "station": "LYE",
+      "direction": 1,
+      "file": "docs/captures/lye-towards-dorridge.png",
+      "quality": "Light (software GPU)",
+      "position": [
+        -7758.38427623492,
+        86.26501340554657,
+        -4675.742292214029
+      ],
+      "stats": {
+        "backend": "WebGPU",
+        "adapter": "WebGPU graphics adapter",
+        "tiles": 30,
+        "triangles": 7635264,
+        "placements": 6667,
+        "gpuErrors": [],
+        "drawCalls": 246,
+        "memory": {
+          "attributes": 62,
+          "attributesSize": 367912452,
+          "geometries": 42,
+          "indexAttributes": 22,
+          "indexAttributesSize": 65246640,
+          "indirectStorageAttributes": 0,
+          "indirectStorageAttributesSize": 0,
+          "programs": 12,
+          "programsSize": 53754,
+          "readbackBuffers": 0,
+          "readbackBuffersSize": 0,
+          "renderTargets": 2,
+          "storageAttributes": 0,
+          "storageAttributesSize": 0,
+          "textures": 5,
+          "texturesSize": 16002552,
+          "uniformBuffers": 2638,
+          "uniformBuffersSize": 298064,
+          "total": 449513462
+        }
+      }
+    },
+    {
+      "station": "CRA",
+      "direction": 1,
+      "file": "docs/captures/cra-towards-dorridge.png",
+      "quality": "Light (software GPU)",
+      "position": [
+        -6028.227202543345,
+        94.77498352211961,
+        -5731.7972940264945
+      ],
+      "stats": {
+        "backend": "WebGPU",
+        "adapter": "WebGPU graphics adapter",
+        "tiles": 26,
+        "triangles": 7460082,
+        "placements": 8640,
+        "gpuErrors": [],
+        "drawCalls": 270,
+        "memory": {
+          "attributes": 60,
+          "attributesSize": 359949348,
+          "geometries": 43,
+          "indexAttributes": 18,
+          "indexAttributesSize": 63960756,
+          "indirectStorageAttributes": 0,
+          "indirectStorageAttributesSize": 0,
+          "programs": 12,
+          "programsSize": 53754,
+          "readbackBuffers": 0,
+          "readbackBuffersSize": 0,
+          "renderTargets": 2,
+          "storageAttributes": 0,
+          "storageAttributesSize": 0,
+          "textures": 5,
+          "texturesSize": 16002552,
+          "uniformBuffers": 3096,
+          "uniformBuffersSize": 350368,
+          "total": 440316778
+        }
+      }
+    },
+    {
+      "station": "OHL",
+      "direction": 1,
+      "file": "docs/captures/ohl-towards-dorridge.png",
+      "quality": "Light (software GPU)",
+      "position": [
+        -3684.9742958489333,
+        138.56737056412877,
+        -5869.096153155943
+      ],
+      "stats": {
+        "backend": "WebGPU",
+        "adapter": "WebGPU graphics adapter",
+        "tiles": 28,
+        "triangles": 9443937,
+        "placements": 12312,
+        "gpuErrors": [],
+        "drawCalls": 302,
+        "memory": {
+          "attributes": 64,
+          "attributesSize": 389677500,
+          "geometries": 47,
+          "indexAttributes": 18,
+          "indexAttributesSize": 69125520,
+          "indirectStorageAttributes": 0,
+          "indirectStorageAttributesSize": 0,
+          "programs": 12,
+          "programsSize": 53754,
+          "readbackBuffers": 0,
+          "readbackBuffersSize": 0,
+          "renderTargets": 2,
+          "storageAttributes": 0,
+          "storageAttributesSize": 0,
+          "textures": 5,
+          "texturesSize": 16002552,
+          "uniformBuffers": 3664,
+          "uniformBuffersSize": 414656,
+          "total": 475273982
+        }
+      }
+    }
+  ],
+  "checks": {
+    "nativeWebGPU": {
+      "backend": "WebGPU",
+      "adapter": "WebGPU graphics adapter",
+      "tiles": 5,
+      "triangles": 1193075,
+      "placements": 339,
+      "gpuErrors": [],
+      "drawCalls": 45,
+      "memory": {
+        "attributes": 16,
+        "attributesSize": 67496292,
+        "geometries": 12,
+        "indexAttributes": 6,
+        "indexAttributesSize": 12110808,
+        "indirectStorageAttributes": 0,
+        "indirectStorageAttributesSize": 0,
+        "programs": 12,
+        "programsSize": 60142,
+        "readbackBuffers": 0,
+        "readbackBuffersSize": 0,
+        "renderTargets": 2,
+        "storageAttributes": 0,
+        "storageAttributesSize": 0,
+        "textures": 5,
+        "texturesSize": 23941632,
+        "uniformBuffers": 705,
+        "uniformBuffersSize": 79072,
+        "total": 103687946
+      }
+    },
+    "A": {
+      "controller": 1,
+      "speed": 3.2011473372878845,
+      "input": false
+    },
+    "D": {
+      "controller": -1,
+      "speed": 0,
+      "input": false
+    },
+    "Q": true,
+    "SpaceHeld": true,
+    "SpaceReleased": true,
+    "TUnassigned": true,
+    "focusLossPause": true,
+    "saveStored": true,
+    "SReverse": {
+      "direction": -1,
+      "samePhysicalInterval": true
+    },
+    "WForward": true
+  },
+  "buildHashes": {
+    "work/qa-dist/assets/index-CxUeGAnX.js": "788882882bfb897af157a4900698fca98f3c07f669c2c8467402da5cde455628",
+    "work/qa-dist/assets/world.worker-CaxbY6vj.js": "6a290136b151b5bcba91efe035be4b4ba0cfa7a67211662699e46550032e4ab0",
+    "work/qa-dist/assets/index-ClqjGB6b.css": "2b3356071e015aa358127af3b5557f8ba3445dbd38ed4df3415a94f704353a06"
+  },
+  "sourceHashes": {
+    "src/style.css": "fc1a9dddc2781c0e2e86c32831cf604762695ecb9814c388e7b92ef4038855e8",
+    "src/main.ts": "e4a99616aa3d121c99d01e3fdf79d3ba6fc175e38be470e7aa6333d2c8de3607",
+    "src/core/simulation.ts": "6a36ff713f34c8f455ebb6ab0dcae7f029e0d2b2084bdbdee91b7d2379922fbc",
+    "src/core/geometry.ts": "d1805334ca4c48b78b1d48224a91c8eb6551e4abbe6b90adb0624f5ebf5e7621",
+    "src/core/audio.ts": "b5e0c39aa2a4154b9041b766646789932f9f2528f4a465210da2cc2e4416015e",
+    "src/core/types.ts": "59f39125dfeac314cedc9a9b95717b90b924f2de2982257bc8cd7980ed5c7505",
+    "src/world/platforms.ts": "852d0a740900c3c64f58fbaa8fe40d90b7f6eb5267a2b39a8b5652cfffcbf91f",
+    "src/world/build.ts": "c3bf97bbe7308648257e051c325b4c22d450e9b739b0345d95429629e4e92073",
+    "src/world/surfaces.ts": "3db4ef0db6748f81fe85a3feb5ff2e0246ed2890a12912153bbe7b1ca8995422",
+    "src/world/world.worker.ts": "b37aa975916b165c38683d2455420e9c395c4e9294b43c171565a218cab04ff4",
+    "src/world/traffic.ts": "485ecfa15d73fb2cba9a494ee1686619255fcb6e30e9923d5b9ac76e49746846",
+    "src/render/assets.ts": "614b279067a3700e5438e5465eed57dbe352f5b33f97a30fe6f61d2e529c109a",
+    "src/render/batch.ts": "4bcb3d90d0e8a8264ffe08b1f17fd6890f2c4495cb3166acd04e3bb981491bcc",
+    "src/render/trackwork.ts": "a37cf0d08c136cd85b1b291ffe08d6d708c4a2d433014712096c61e289cdff97",
+    "src/render/renderer.ts": "db0d4c07da0500e853432ded8237c96d3b14380ed32ed857a07c92e4f1fdc2e2"
+  },
+  "errors": [
+    "Page.evaluate: OperationError: A valid external Instance reference no longer exists.\n    at $2.finishFrame (http://localhost:4174/assets/index-CxUeGAnX.js:581:113803)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:35)\n    at eval (<anonymous>)\n    at UtilityScript.evaluate (<anonymous>:311:30)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+  ],
+  "consoleErrors": [
+    "THREE.THREE.WebGPURenderer: WebGPU Device Lost:\n\nMessage: A valid external Instance reference no longer exists.\nReason: unknown",
+    "Error: Graphics device lost: A valid external Instance reference no longer exists.. Your journey was paused; reload to restore the automatic save.\n    at http://localhost:4174/assets/index-CxUeGAnX.js:581:104043",
+    "OperationError: A valid external Instance reference no longer exists."
+  ],
+  "expectedConsoleErrors": [],
+  "startedUTC": "2026-11-01T08:28:12Z",
+  "assertions": {
+    "nativeBackend": true,
+    "controllerA": true,
+    "controllerD": true,
+    "AWS": true,
+    "hornPressRelease": true,
+    "TUnassigned": true,
+    "focusLoss": true,
+    "reversePhysicalConsist": true,
+    "forward": true,
+    "saveReload": false,
+    "mobileNoOverflow": false,
+    "deviceLossRecovery": false,
+    "allStationCaptures": false
+  },
+  "finishedUTC": "2026-11-01T08:33:18Z",
+  "historicalCaptureNote": "Failure logs, timings and source/build hashes are retained. Capture paths record the attempted run; those shared image paths are overwritten by the final browser run and are not preserved historical screenshots."
+}

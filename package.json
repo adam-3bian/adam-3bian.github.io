@@ -1,0 +1,30 @@
+{
+  "name": "snow-hill-lines",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build:data": "python scripts/build_route.py",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc --noEmit && vite build",
+    "test": "tsx --test tests/*.test.ts",
+    "validate": "tsx scripts/validate-world.ts",
+    "preview": "vite preview --host 0.0.0.0",
+    "audit:geometry": "node --expose-gc --import tsx scripts/audit-geometry.ts",
+    "build:qa": "tsc --noEmit && vite build --mode qa --outDir work/qa-dist"
+  },
+  "dependencies": {
+    "three": "0.187.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/three": "^0.185.0",
+    "typescript": "^5.9.3",
+    "tsx": "^4.20.0",
+    "vite": "^7.0.0"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}
