@@ -15,6 +15,7 @@ export class RailwayRenderer {
   private readonly loopFootGeometry=new THREE.BoxGeometry(.18,.25,.18);private readonly loopFootMaterial=new THREE.MeshStandardMaterial({color:0x525b54,roughness:.95});
   readonly renderer:THREE.WebGLRenderer;
   private worker:Worker;private ready=false;private loaded=new Map<string,{mesh:THREE.Mesh;used:number}>();private requested=new Set<string>();
+  private tileRetries=new Map<string,{attempts:number;next:number}>();
   private disposed=false;private adjacent:{data:any;path:Polyline;model:THREE.Group}[]=[];
   private walkers=new Map<string,{path:Polyline;model:THREE.Group;speed:number;phase:number}>();
   private signalModels=new Map<string,THREE.Group>();private pointModels=new Map<string,THREE.Group>();private crossingModels=new Map<string,THREE.Group>();private trainModels=new Map<string,THREE.Group>();private carModels=new Map<string,THREE.Group>();
@@ -44,10 +45,19 @@ export class RailwayRenderer {
   }
   private onWorker(message:any){
     if(message.type==='ready'){this.ready=true;this.updateTiles(true);return;}
-    if(message.type==='error'){const error=message.error||message.message||'World generation failed.';this.failures.push(error);this.onError?.(new Error(error));return;}
-    if(message.type!=='tile')return;const packet=message.mesh||message.result?.mesh;if(!packet)return;
+    if(message.type==='error'){const error=message.error||message.message||'World generation failed.';if(message.id)this.tileFailed(message.id,error);else {this.failures.push(error);this.onError?.(new Error(error));}return;}
+    if(message.type!=='tile')return;const packet=message.mesh||message.result?.mesh;if(!packet){if(message.id)this.tileFailed(message.id,'Worker returned no geometry');return;}
+    this.tileRetries.delete(message.id);
     const geometry=packetGeometry(packet);const material=new THREE.MeshStandardMaterial({vertexColors:true,roughness:.94,metalness:0,side:THREE.DoubleSide,flatShading:true});const mesh=new THREE.Mesh(geometry,material);mesh.receiveShadow=true;mesh.castShadow=true;mesh.name=`tile:${message.id}`;this.scene.add(mesh);this.loaded.set(message.id,{mesh,used:performance.now()});this.tileCount=this.loaded.size;this.triangles+=packet.index.length/3;
     this.placements+=(message.placements||[]).length;this.roadTraffic.addRoads(message.roads||[]);for(const walker of message.pedestrianPaths||[]){if(this.walkers.has(walker.id))continue;const model=this.factory.furniture('person',{id:walker.id,color:walker.role==='staff'?0xd0a34c:0x61738a});this.scene.add(model);this.walkers.set(walker.id,{path:new Polyline(walker.points),model,speed:walker.speed||.7,phase:hashId(walker.id)%20});}this.evictInactiveTiles();this.onProgress?.();
+  }
+  private tileFailed(id:string,reason:string){
+    this.requested.delete(id);
+    const attempts=(this.tileRetries.get(id)?.attempts??0)+1;
+    const next=performance.now()+Math.min(4000,250*2**(attempts-1));
+    this.tileRetries.set(id,{attempts,next});
+    if(attempts>=4){const error=`Scenery tile ${id} failed after ${attempts} attempts: ${reason}`;this.failures.push(error);this.onError?.(new Error(error));return;}
+    window.setTimeout(()=>{if(!this.disposed)this.updateTiles(true);},Math.max(1,Math.ceil(next-performance.now())+1));
   }
   private resize(){const w=this.container.clientWidth||innerWidth,h=this.container.clientHeight||innerHeight;this.camera.aspect=w/h;this.camera.updateProjectionMatrix();this.renderer.setSize(w,h);}
   setQuality(quality:'low'|'balanced'|'high'){this.quality=quality;this.renderer.shadowMap.enabled=quality!=='low';this.updateTiles(true);}
@@ -65,7 +75,7 @@ export class RailwayRenderer {
   }
   private async updateTiles(force=false){if(!this.ready)return;const s=this.sim.player.s;if(!force&&Math.abs(s-this.lastS)<100)return;this.lastS=s;const pos=this.route.sample(s).position;const radius=this.quality==='high'?1750:this.quality==='low'?900:1300;const now=performance.now();
     const tiles=this.data.tiles.map(tile=>{const b=tile.bounds;const d=Math.hypot(Math.max(b[0]-pos[0],0,pos[0]-b[2]),Math.max(b[1]-pos[2],0,pos[2]-b[3]));return {tile,d};}).filter(x=>x.d<radius).sort((a,b)=>a.d-b.d);
-    const ids=new Set(tiles.map(x=>x.tile.id));for(const {tile} of tiles){const loaded=this.loaded.get(tile.id);if(loaded){loaded.used=now;continue;}if(this.requested.has(tile.id))continue;this.requested.add(tile.id);try{const r=await fetch(routeResourceUrl(tile.url,document.baseURI));if(!r.ok)throw new Error(`Could not load route tile ${tile.id}`);const data=await r.json();this.worker.postMessage({type:'build',tile:data});}catch(e){this.requested.delete(tile.id);this.onError?.(e as Error);}}
+    const ids=new Set(tiles.map(x=>x.tile.id));for(const {tile} of tiles){const loaded=this.loaded.get(tile.id);if(loaded){loaded.used=now;continue;}if(this.requested.has(tile.id))continue;const retry=this.tileRetries.get(tile.id);if(retry&&(retry.attempts>=4||now<retry.next))continue;this.requested.add(tile.id);try{const r=await fetch(routeResourceUrl(tile.url,document.baseURI));if(!r.ok)throw new Error(`Could not load route tile ${tile.id}`);const data=await r.json();this.worker.postMessage({type:'build',tile:data});}catch(e){this.tileFailed(tile.id,e instanceof Error?e.message:String(e));}}
     this.evictInactiveTiles(ids);
   }
   private evictInactiveTiles(active?:Set<string>){if(this.loaded.size>25){if(!active){const p=this.route.lanePose(this.sim.player.s,this.sim.player.lane).position,r=this.quality==='high'?1750:this.quality==='low'?900:1300;active=new Set(this.data.tiles.filter(t=>Math.hypot(Math.max(t.bounds[0]-p[0],0,p[0]-t.bounds[2]),Math.max(t.bounds[1]-p[2],0,p[2]-t.bounds[3]))<r).map(t=>t.id));}for(const [id,tile] of [...this.loaded].sort((a,b)=>a[1].used-b[1].used)){if(this.loaded.size<=22)break;if(active.has(id))continue;this.triangles-=tile.mesh.geometry.index!.count/3;this.scene.remove(tile.mesh);tile.mesh.geometry.dispose();(tile.mesh.material as THREE.Material).dispose();this.loaded.delete(id);this.requested.delete(id);}}this.tileCount=this.loaded.size;}

@@ -2,6 +2,8 @@
 
 **Acceptance remains incomplete.** The user reports **scenery sometimes failing to load**, incorrectly oriented level-crossing equipment at **Blakedown**, possibly at other crossings, and glitches with **road bridges and scenery beside the track**. Blakedown is a named reproduction target; the affected components and other sites still need front-view inspection. This revision records the reports, source findings and required remedies. It does not fix the game or claim a new visual/geometry test run.
 
+A subsequent partial fix retries failed tile fetches, worker errors and missing geometry up to four attempts, including while stationary. The focused regression is [scenery-retry.test.ts](../tests/scenery-retry.test.ts). This does not establish continuous loading coverage, recover a crashed/stalled worker, or complete the streaming gate.
+
 The governing construction rule is: **reconcile the transport profiles, structures and required clearances first; then make terrain yield to them through cutting, filling, grading, retaining geometry and changes to the terrain mesh.** Roads, railway formations and structural openings must remain clear and supported. Terrain mesh topology is distinct from road/rail network connectivity. A ground edit cannot turn an overpass into a junction or move a correct railway to hide an intersection.
 
 OpenTTD, OpenLoco and especially Transport Fever 2 are design references for consistent construction, connected networks, layers, support and automatic terrain adaptation. This does not require copying their algorithms, adopting a square-grid railway or adding a world-building interface.
