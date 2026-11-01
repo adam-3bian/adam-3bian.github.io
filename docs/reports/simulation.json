@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-01T10:47:46.124Z",
+  "generatedAt": "2026-11-01T14:28:45.003Z",
   "sourceHashes": {
     "scripts/validate-world.ts": "ca3e0210bdd9576105c9279eb29eb0079bbcd9c73eda18bc2cf1c68165ff5364",
     "src/core/geometry.ts": "bdfb3e91bf21e6f43ddacb6c63b20be29f160bcd3b66bc788d98f304f29e9df7",
-    "src/core/simulation.ts": "0fee0d0b799b6d8b859892f762b2284b70faa721f08d10492d80c896ed18ed2b",
-    "src/render/trackwork.ts": "5cc31c59511e6376a8fb8496978a502dde47ed9046e475a548f4a78bc90169a2",
-    "src/world/build.ts": "08958a69b35524a57d12fbfea62edff4b27735fae0dedd29cea95bc2f0a34935",
+    "src/core/simulation.ts": "ce820875e9dbe1648d3405ff4316b5c3223341ba668269c03e0d60fe035bd793",
+    "src/render/trackwork.ts": "735ade41bd4eaa6af37159b0c54875474ac43fbb4bd2d7e409771c80b7d8a201",
+    "src/world/build.ts": "5ef830e080b91aadb8b64ca6f32984ec505dcddc5c8e55d2634124f57f26b98d",
     "public/data/route.json": "782c1291006b818b7cc236fbaa16cb3d5b33ef21c2afc2dadb3ec4d98f5e5001"
   },
   "routeLength": 47330.93894344575,
@@ -49,7 +49,7 @@
         "tpwsInterventions": 0,
         "distance": 46982.22441288082
       },
-      "wallSeconds": 7.599663746999999,
+      "wallSeconds": 9.520346217999998,
       "lastEvents": [
         {
           "time": 32772.899999952664,
@@ -123,7 +123,7 @@
         "tpwsInterventions": 0,
         "distance": 47017.30571846812
       },
-      "wallSeconds": 4.38263607,
+      "wallSeconds": 5.117298723000002,
       "lastEvents": [
         {
           "time": 32547.19999995595,
@@ -170,7 +170,7 @@
         "tpwsInterventions": 0,
         "distance": 0
       },
-      "wallSeconds": 10.445896270999997,
+      "wallSeconds": 10.985487071000001,
       "eventCount": 1,
       "method": "CPU simulation soak; not a two-hour browser/GPU soak."
     }

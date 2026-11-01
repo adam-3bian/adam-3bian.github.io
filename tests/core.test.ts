@@ -58,6 +58,20 @@ test('reversing preserves the physical track and requires an authorised standsti
   sim.player.s=10000;assert.equal(sim.setDirection(-1),false);
 });
 
+test('reversal checks occupation from the new leading end across the full authority',()=>{
+  for(const direction of [1,-1] as const){
+    const sim=isolated();sim.start(direction,direction===1?0:route.stations.length-1);
+    const p=sim.player,terminal=direction===1?route.stations.at(-1)!:route.stations[0];
+    p.s=terminal.s-direction*100;p.speed=0;p.controller=-1;
+    const newFront=route.travel(p.s,-p.direction*p.length,p.lane),reverse=direction===1?-1:1;
+    const blocker={...p,id:'reverse-blocker',s:route.travel(newFront,reverse*275,p.lane),direction};
+    sim.ai=[blocker];const before=p.s;
+    assert.equal(sim.setDirection(reverse),false);assert.equal(p.s,before);assert.equal(p.direction,direction);
+    blocker.s=route.travel(newFront,reverse*400,p.lane);
+    assert.equal(sim.setDirection(reverse),true);assert.equal(p.direction,reverse);
+  }
+});
+
 test('every point in a protected block is checked and adjacent-lane settings stay independent',()=>{
   const sim=isolated(),signal=sim.signals.find(s=>s.direction===1&&s.s>8000)!,next=sim.signals.find(s=>s.direction===1&&s.s>signal.s)!;sim.points=[];sim.crossings=[];
   sim.points.push({id:'proved-first',s:signal.s+10,lane:signal.lane,state:'normal',target:'normal',blend:0,lockedBy:null},{id:'unproved-second',s:Math.min(signal.s+30,next.s-5),lane:signal.lane,state:'moving',target:'reverse',blend:.4,lockedBy:null});assert.equal(sim.aspect(signal),'red');sim.points[1].lane=0;assert.notEqual(sim.aspect(signal),'red');

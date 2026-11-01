@@ -95,8 +95,10 @@ export class RailwaySimulation {
     // Only the modelled terminal turnback zones permit a reverse authority. The physical lane never changes here.
     const terminal=this.route.stations.find(s=>(s.id==='KID'||s.id==='DDG')&&Math.abs(s.s-p.s)<180);
     if(!terminal){this.log('direction','No reverse movement authority at this location.');return false;}
-    if(this.occupied(p.s,p.s+direction*300,p.lane,p.id)){this.log('direction','Reverse route occupied.');return false;}
-    p.s=this.route.travel(p.s,-p.direction*p.length,p.lane);p.direction=direction;
+    const newFront=this.route.travel(p.s,-p.direction*p.length,p.lane);
+    const authorityEnd=this.route.travel(newFront,direction*300,p.lane);
+    if(this.occupied(newFront,authorityEnd,p.lane,p.id)){this.log('direction','Reverse route occupied.');return false;}
+    p.s=newFront;p.direction=direction;
     const normalLane=direction===1?4.2:0;p.reverseAuthority=p.lane===normalLane?undefined:{min:terminal.s-150,max:terminal.s+150};
     p.nextStop=this.route.stations.findIndex(s=>s.s>p.s);if(direction===-1)p.nextStop=(p.nextStop<0?this.route.stations.length:p.nextStop)-1;
     p.arrived=false;this.log('direction',p.reverseAuthority?'Station reversal authorised, maximum 10 mph. Physical consist unchanged.':direction===1?'Forward selected.':'Reverse selected.');return true;
