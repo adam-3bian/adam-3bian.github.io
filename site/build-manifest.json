@@ -155,7 +155,7 @@
     "src/main.ts": "2099f0404b65c9bb7a177c9254f6bfbb8c28dcf441df5cf2c8dc8758ae5be5dd",
     "src/render/assets.ts": "9b9174898cee1216f729ac14d7350413ccb6f2a9f446df470508e77cd61d05d8",
     "src/render/batch.ts": "9f4b0c0205a99627bda01b13f9a0d036e5608a8086d632d0244134f26d7e30c2",
-    "src/render/renderer.ts": "ed09b78d0adee5c2229c4e069b4163891899c4e68b403679433f4dc84a5db6a9",
+    "src/render/renderer.ts": "88fee469263db1dc3f57e9dec06656796526b7c261f3c71096795323419fe406",
     "src/render/trackwork.ts": "735ade41bd4eaa6af37159b0c54875474ac43fbb4bd2d7e409771c80b7d8a201",
     "src/style.css": "075fb957e4b74c31d0079145a42cdf2afe1e0b9ea825319395fc71d95f8ebac9",
     "src/world/build.ts": "5ef830e080b91aadb8b64ca6f32984ec505dcddc5c8e55d2634124f57f26b98d",
@@ -165,10 +165,10 @@
     "src/world/world.worker.ts": "b37aa975916b165c38683d2455420e9c395c4e9294b43c171565a218cab04ff4",
     "vite.config.ts": "851f2f7bf5ffa37725d97d93ae465056fc2e7b9d8b5688ad1bb715dfdb2340a9"
   },
-  "rootIndex": "a073fd1a243e447f2ded3a2c65ea74a2650d792212c8e154f32bbb4924a91453",
+  "rootIndex": "6b3a4125899ce3caa291d2b04ef7de622ac2f9a03310a0604af39ce83769ab72",
   "siteFiles": {
     "site/assets/app-BeLpMKq7.css": "d45ecabc8ed680f63a364cefa4d37f1e76d1758e75839e0619aa61e49bbdbec4",
-    "site/assets/app-YPY61yBw.js": "a5ddd715f6c3e343ebe984a5160b01543c1a6a66479f063e99bb863d7e8bda98",
+    "site/assets/app-DTueV_hM.js": "5e5d855e34f66fd6b95c516c7914ca75fcd947ecd8ae954f809c6a15f4eed6ee",
     "site/assets/dm-sans-latin-Xz1IZZA0.woff2": "9fea608a947e67020c33cad9a6fe3d60c54119dfb8cff87768a8117a15ed7543",
     "site/assets/dm-sans-latin-ext-BOFOeGcA.woff2": "a5d38fe99f930275684999b462c7123faa063d9e44e73b4b241723d884aa0f49",
     "site/assets/libre-caslon-display-latin-ext-CUYASYSA.woff2": "7a17a86fb7c3cd003bf073f0455f49c746424b37f3e1a931663eae80288a1e89",
@@ -304,7 +304,7 @@
     "site/data/tiles/9_-5.json": "3bdcc569fafd1df2f9cadb69b4a0b316c29e710a063e93de9839115a9093b7e7",
     "site/data/tiles/9_-6.json": "87c8ca367d26f7cf9c54634d893556b6d06384884069aa9a87fa7d495dc876b9",
     "site/data/tiles/9_-7.json": "6bc4d77dd900efe6de36147735139be7d74f9957941c386e942481f39aafebc9",
-    "site/index.html": "fc5021a8471be257fc12fd044b596fe29fc60cf0b6b804a10d08c2213c1a3b2d",
+    "site/index.html": "38cc4eb56e684c3d03d1c3f00a6f7081145ab1fa8f624c1126755e72af763949",
     "site/licenses/dm-sans-OFL.txt": "7ec15e79c59bc14b86436a17e5eb7926b46cbcaeb08e1a7e6c110b415e6eb2a2",
     "site/licenses/libre-caslon-display-OFL.txt": "78c9f56e0d8a7ad7b9d26842a8eae728337a8671d8ddc6e889fa10645935dc7b"
   }

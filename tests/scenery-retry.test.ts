@@ -38,3 +38,10 @@ test('worker packets without geometry enter the same retry path',()=>{
   (RailwayRenderer.prototype as any).onWorker.call(renderer,{type:'tile',id:'tile-2'});
   assert.deepEqual(calls,[['tile-2','Worker returned no geometry']]);
 });
+
+test('malformed geometry enters retry rather than attaching a broken tile',()=>{
+  const calls:Array<[string,string]>=[];
+  const renderer:any={tileFailed:(id:string,reason:string)=>calls.push([id,reason])};
+  (RailwayRenderer.prototype as any).onWorker.call(renderer,{type:'tile',id:'tile-3',mesh:{position:new Float32Array([0,0,0])}});
+  assert.deepEqual(calls,[['tile-3','Worker returned malformed geometry']]);
+});

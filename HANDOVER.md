@@ -1,0 +1,11 @@
+# Railway handover
+
+Status: **stages 1 and 2 remain incomplete**. Work is on the `railway` branch; no deployment was performed.
+
+The existing retry fix in commit `3e3a166` handles some failed fetches and worker error packets. Malformed worker geometry packets are now rejected into the same retry path. The loader still does not handle stalled jobs, stale results, worker restart, full readiness, preloading or continuous-drive coverage. The crossing factory still receives a railway pose without the actual road heading; Blakedown and the remaining crossings have not been corrected. Bridge and terrain consistency remain unaccepted. See `docs/SCENERY-ISSUES.md` and `FINISHING_PROMPT.md`.
+
+`scripts/route-qa.py` now validates the supplied frame-index correspondence and sampled image hashes, and emits an HTML reference contact sheet and a JSON candidate inventory. Run `python scripts/route-qa.py --interval 5` (or `--interval 10` for 300 candidates). It returns status 1 intentionally: all candidates remain unmapped and unreviewed, and it performs no game capture, visual comparison, streaming test or integrated route acceptance. Outputs default to `work/route-qa/` and do not modify references. Run its focused checks with `python -m unittest discover -s tests -p 'route_qa_test.py'`.
+
+Next: implement a source-backed, confidence-labelled frame-to-route alignment manifest; capture actual front views at mapped locations; implement structured visual review and coverage accounting. Then address streaming request IDs, bounded concurrency, timeouts, worker recovery, direction-aware preloading and readiness/eviction, with browser regressions. Implement shared construction rules and fix crossing component axes from actual road/rail geometry, bridge supports and terrain topology across the route. Do not mark the stages or game complete until the gates in the brief are satisfied. Independent local recognition and the specified RTX 3060 benchmark still require actual reviewers and hardware.
+
+Verification in this session: the original 70 JavaScript tests passed before the malformed-packet change; all three focused scenery-retry tests passed after it. The Python candidate-inventory test passed for both intervals. TypeScript/static-site build and manifest verification passed after the renderer change. Browser and route-wide checks were not run.
