@@ -32,8 +32,16 @@
       "id": "unavailable_archive",
       "upload_id": "file_0000000028c08246aa8e8227a4ae72b1",
       "original_filename": "references.zip",
-      "status": "unavailable",
-      "reason": "Exceeds file-transfer tool limit of 32 MiB; no extraction or equivalence to the available archive claimed."
+      "status": "original_archive_not_downloaded_follow_up_parts_imported",
+      "reason": "Original ZIP still exceeds the transfer limit. The six follow-up uploads have been imported as 3000 frames; byte-for-byte equivalence/completeness against the inaccessible original ZIP cannot be established.",
+      "follow_up_source_ids": [
+        "expanded_part_001",
+        "expanded_part_002",
+        "expanded_part_003",
+        "expanded_part_004",
+        "expanded_part_005",
+        "expanded_part_006"
+      ]
     },
     {
       "id": "video_70_670",
@@ -48,6 +56,78 @@
       "original_filename": "ytcuttr_clip_00-00-10_00-10-10.mp4",
       "status": "unavailable",
       "reason": "Exceeds file-transfer tool limit of 32 MiB; secondary observations preserved in atlas/observations/uploaded-video-notes.md."
+    },
+    {
+      "id": "expanded_part_001",
+      "upload_id": "file_00000000f05c81f49ce8db16beec1251",
+      "original_filename": "part_001.zip",
+      "status": "extracted_and_content_deduplicated",
+      "file_count": 555,
+      "archive_sha256": "72f0d941a0dcf30dbc645b1168db6fcc32272ea16f4a4b7dba3cd4fe467a3de9",
+      "archive_size_bytes": 19966352,
+      "uncompressed_bytes": 19931303,
+      "content_role": "reference_only",
+      "frame_set": "frames-expanded"
+    },
+    {
+      "id": "expanded_part_002",
+      "upload_id": "file_000000000d1881f498afc846d0355587",
+      "original_filename": "part_002.zip",
+      "status": "extracted_and_content_deduplicated",
+      "file_count": 552,
+      "archive_sha256": "f87f7f166fffa5ffd00245916463c19772c228e26d607337dc594cad50f4370e",
+      "archive_size_bytes": 19991965,
+      "uncompressed_bytes": 19955751,
+      "content_role": "reference_only",
+      "frame_set": "frames-expanded"
+    },
+    {
+      "id": "expanded_part_003",
+      "upload_id": "file_00000000617081f4a3c61d1662a1a331",
+      "original_filename": "part_003.zip",
+      "status": "extracted_and_content_deduplicated",
+      "file_count": 553,
+      "archive_sha256": "94d5349496bf23707a88e78058e5fe5ce1d9e9db1152c83beae81255f473fb18",
+      "archive_size_bytes": 19984411,
+      "uncompressed_bytes": 19942702,
+      "content_role": "reference_only",
+      "frame_set": "frames-expanded"
+    },
+    {
+      "id": "expanded_part_004",
+      "upload_id": "file_00000000843881f4bd21d08d3429187e",
+      "original_filename": "part_004.zip",
+      "status": "extracted_and_content_deduplicated",
+      "file_count": 560,
+      "archive_sha256": "99c6a6b7b764a9e3bbae5a0dc341aafe916b9024b58d3d6110c0a5cf3175b5fa",
+      "archive_size_bytes": 19989491,
+      "uncompressed_bytes": 19952324,
+      "content_role": "reference_only",
+      "frame_set": "frames-expanded"
+    },
+    {
+      "id": "expanded_part_005",
+      "upload_id": "file_0000000020308210adcfcfac46f971b6",
+      "original_filename": "part_005.zip",
+      "status": "extracted_and_content_deduplicated",
+      "file_count": 557,
+      "archive_sha256": "37ecc3ccd140308606e103910277d879d32088c0e3ec77ccc0a3041d52381f1b",
+      "archive_size_bytes": 19990360,
+      "uncompressed_bytes": 19962647,
+      "content_role": "reference_only",
+      "frame_set": "frames-expanded"
+    },
+    {
+      "id": "expanded_part_006",
+      "upload_id": "file_0000000086ac81f49f897b3f3e177628",
+      "original_filename": "part_006.zip",
+      "status": "extracted_and_content_deduplicated",
+      "file_count": 223,
+      "archive_sha256": "f6deab05a8bc17715fe8f851c0ff8d1bca59db1754031d184250fa16d29eb8dc",
+      "archive_size_bytes": 7589111,
+      "uncompressed_bytes": 7574160,
+      "content_role": "reference_only",
+      "frame_set": "frames-expanded"
     }
   ],
   "frame_sampling": {
@@ -58,6 +138,51 @@
     "frame_count": 584,
     "original_video_time_origin": "unknown",
     "relative_time_formula": "(frame_number - 17) * 5",
-    "edited_inserts_present": true
-  }
+    "edited_inserts_present": true,
+    "applies_to": "frames"
+  },
+  "frame_sets": {
+    "frames": {
+      "index": "frame-index.csv",
+      "directory": "frames",
+      "interval_seconds": 5,
+      "confirmed_by": "user",
+      "frame_count": 584,
+      "first_supplied_frame": 17,
+      "last_supplied_frame": 600,
+      "relative_time_formula": "(frame_number - 17) * 5",
+      "original_video_time_origin": "unknown"
+    },
+    "frames-expanded": {
+      "index": "frame-index-expanded.csv",
+      "directory_of_new_unique_images": "frames-expanded",
+      "interval_seconds": 1,
+      "confirmed_by": "user",
+      "frame_count": 3000,
+      "first_supplied_frame": 1,
+      "last_supplied_frame": 3000,
+      "relative_time_formula": "frame_number - 1",
+      "original_video_time_origin": "unknown",
+      "path_resolution": "Use canonical_path from the index. Byte-identical frames may point into frames/ or to another expanded frame.",
+      "new_unique_image_files": 2389,
+      "members_reusing_existing_images": 605,
+      "members_reusing_another_new_image": 6,
+      "source_ids": [
+        "expanded_part_001",
+        "expanded_part_002",
+        "expanded_part_003",
+        "expanded_part_004",
+        "expanded_part_005",
+        "expanded_part_006"
+      ]
+    }
+  },
+  "sequence_alignment": {
+    "index": "frame-alignment.csv",
+    "verified_sha256_matches": 584,
+    "formula": "expanded_frame_number = 5 * original_frame_number - 2",
+    "expanded_relative_seconds_at_first_original_frame": 82,
+    "qualification": "Content/relative sequence alignment; not an independently known original-video timestamp."
+  },
+  "coverage_note": "Edited inserts and material beyond Dorridge are present; expanded frame 2993 / original frame 0599 is captioned Hatton North Junction. Do not extend the playable route from the filename or final frames."
 }

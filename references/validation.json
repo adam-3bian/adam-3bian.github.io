@@ -1,16 +1,13 @@
 {
   "branch": "railway",
-  "source_file_count": 606,
-  "source_bytes": 89190812,
+  "source_file_count": 2995,
+  "source_bytes": 174253837,
   "source_sha256_verification": "pass",
   "archive_crc_verification": "pass",
-  "frame_count": 584,
-  "frame_interval_seconds": 5,
-  "relative_frame_span_seconds": 2915,
   "frame_index_verification": "pass",
   "json_kml_svg_parsing": "pass",
   "prompt_numbering": "1 through 72; one continuous list",
-  "prompt_word_count": 4648,
+  "prompt_word_count": 4744,
   "atlas_links": {
     "resolved_local_count": 21,
     "unresolved_original_project_links": [
@@ -37,6 +34,35 @@
     "game implementation",
     "real-world survey verification",
     "browser/WebGPU acceptance",
-    "inspection/extraction of the oversized references.zip or original MP4 uploads"
-  ]
+    "inspection of original MP4 uploads",
+    "byte-for-byte reconstruction of inaccessible original ZIP",
+    "individual visual interpretation of all 3000 frames"
+  ],
+  "frame_sets": {
+    "frames": {
+      "frame_count": 584,
+      "interval_seconds": 5,
+      "relative_frame_span_seconds": 2915
+    },
+    "frames-expanded": {
+      "frame_count": 3000,
+      "interval_seconds": 1,
+      "relative_frame_span_seconds": 2999
+    }
+  },
+  "split_frame_import": {
+    "archive_parts": 6,
+    "archive_crc_verification": "pass",
+    "image_verification": "3000 JPEGs, 640x360, no EXIF",
+    "source_members": 3000,
+    "added_unique_images": 2389,
+    "reused_existing_images": 605,
+    "reused_new_images": 6,
+    "same_filename_different_content": 584,
+    "overwritten_original_files": 0,
+    "prior_sequence_alignment_sha256_matches": 584
+  },
+  "expanded_index_verification": "all 3000 uploaded members resolve to matching canonical SHA-256",
+  "prior_sources_unchanged": "606 original source files and original frame index preserved",
+  "frame_alignment_verification": "all 584 original images match expanded 5*n-2 by SHA-256"
 }

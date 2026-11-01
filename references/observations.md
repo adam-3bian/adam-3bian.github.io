@@ -1,6 +1,6 @@
 **Selected frame observations**
 
-Frames were inspected through sampled overview and selected detail sheets. This is not a claim to have individually interpreted every image or surveyed any dimensions. The filename prefix is kidderminster2dorridge and the extension is .jpg. Use frame-index.csv for the user-confirmed five-second spacing and relative times.
+The table below refers to the original five-second sequence in frames/, inspected through sampled overview and detail sheets. This is not a claim to have individually interpreted every image or surveyed dimensions. The filename prefix is kidderminster2dorridge and the extension is .jpg. Use frame-index.csv for original relative times and frame-alignment.csv for checksum-proved matches in the expanded one-second sequence. Identical filenames across the two sets do not identify the same image.
 
 | Frames | Visible evidence | Interpretation |
 | --- | --- | --- |
@@ -22,6 +22,9 @@ Frames were inspected through sampled overview and selected detail sheets. This 
 | 0449–0457 | Moor Street name, canopy, train, wall and approach structures | Useful architectural detail and station/structure interfaces. |
 | 0461, 0480, 0496 | Elevated urban railway, broad multi-track approach and depot/siding context | Resolve topology and civil support before decorative placement. |
 | 0513, 0540–0545 | Olton caption; Solihull nameboard/platform/building stills | Useful location anchors; edited views require geolocation. |
-| 0566–0570, 0600 | Crossing/station photographs and final view near converging/diverging rails | Correlate to Bentley Heath/Dorridge mapping; a continuous final arrival was not established by sampled views. |
+| 0566–0570 | Crossing/station photographs | Correlate these stills to Bentley Heath/Dorridge mapping before assigning exact feature IDs. |
+| 0599–0600 | A Hatton North Junction caption followed by a junction view | This is beyond Dorridge. Do not classify the final views as the Dorridge approach. Expanded frame 2993 is byte-identical to original 0599. |
 
 Do not reproduce captions, reflections, window dirt or glare as route geometry. The frames establish visible forms and relative sequence; they do not independently establish exact heights, gradients, clearances, point radii, signal interlocking or present-day speed limits.
+
+The six expanded ZIPs contain 3,000 verified 640 × 360 JPEGs with no EXIF data. Sampling at one frame per second is user-confirmed. Selected expanded frames were visually checked, including the introduction, the matching station/cutting scenes, and the Hatton caption near the end. All 584 original frames have exact SHA-256 matches at expanded number = 5 × original number − 2. This proves sequence/content alignment, not a new independent survey or an absolute original-video timestamp.
