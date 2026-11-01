@@ -1,0 +1,3652 @@
+{
+  "version": 1,
+  "scriptSHA256": "1986e98072b6202716f61f72f7e033dbc55bb44c50b7dd031c76fff24c5ff136",
+  "notesSHA256": "0092edca0d56d5e3885303229688448f23875c0490cd3ea6948dd461521bcf9b",
+  "captureReportSHA256": "33518963de0c61a2790056dac4fc08c0fb8ffa604ce749cfdd70c9f58cb24bbc",
+  "scope": "Current station QA front views paired with source anchors where supported; all poses approximate and no independent recognisability review. Captures are low-resolution software WebGL fixtures, not 1080p acceptance or uninterrupted streaming. Source-map comparisons are separate.",
+  "manifestSHA256": "4fb15b1e684614e0cd2535621715e208805ee7d095ac5d8aa39fd0e7559f823f",
+  "source_hashes": {
+    "src/style.css": "339a2be28459243d073d0256241163f5253982ed6de2f01ea7079447c7637a11",
+    "src/env.d.ts": "79d49e15e28c835d64c1fede8fd76d464755c3c88cf688c92a41a2c42f252007",
+    "src/main.ts": "45c22e64002b4e6f10808ac68f8b0f8c568e5181decda1fd6777b5fd037c16ad",
+    "src/fonts/libre-caslon-display-latin.woff2": "84267e937417f10dff37df818c5ef7f1e9f2e6a703e03c2dd286d3320af53269",
+    "src/fonts/dm-sans-latin.woff2": "9fea608a947e67020c33cad9a6fe3d60c54119dfb8cff87768a8117a15ed7543",
+    "src/fonts/libre-caslon-display-latin-ext.woff2": "7a17a86fb7c3cd003bf073f0455f49c746424b37f3e1a931663eae80288a1e89",
+    "src/fonts/dm-sans-latin-ext.woff2": "a5d38fe99f930275684999b462c7123faa063d9e44e73b4b241723d884aa0f49",
+    "src/core/simulation.ts": "eb502976663f5128bae7dc37104be8aa54317704958788be6557c0de182c0180",
+    "src/core/pose.ts": "8fbd9b47f081f2d9e6c6876d55ec0afe3344e571a2f56b8c5215c8e0189bac7b",
+    "src/core/geometry.ts": "bdfb3e91bf21e6f43ddacb6c63b20be29f160bcd3b66bc788d98f304f29e9df7",
+    "src/core/save.ts": "706739760533ddff2899771a3319a9961fe2889983ec5d39800431b6819bf09a",
+    "src/core/audio.ts": "b5e0c39aa2a4154b9041b766646789932f9f2528f4a465210da2cc2e4416015e",
+    "src/core/resource-url.ts": "8f8f78d65aaf5833fbd857a0d04c4bef5bfe4f811705d713c4c17c08bacce79a",
+    "src/core/types.ts": "59f39125dfeac314cedc9a9b95717b90b924f2de2982257bc8cd7980ed5c7505",
+    "src/world/platforms.ts": "6e29ec64f43365ab0b316330e043bed1ecd9a2584832b37e1f0ea69405f1febe",
+    "src/world/build.ts": "ada2d120b41ebc7213bbc1896cd4782ee3a2e47fc7589e0dbc5b8e3197ea16ec",
+    "src/world/surfaces.ts": "d6c0e191a681f298bca813ebda495231dba3b84236a7bd3591884e2c12614d6a",
+    "src/world/world.worker.ts": "0a22909d922e6b26b27dcfff7a1d382e42a0eb2edc894225be750020ab6124e8",
+    "src/world/site-definitions.json": "c45bb0855c9c31ef2c7964a4b8f3a9e87e3ce5dbb2589250a0d0a840dbc3715e",
+    "src/world/road-sites.ts": "eb58d3e4670cb2eee5db8de4e8097ce6e395655e14f44e2134be91233de93519",
+    "src/world/traffic.ts": "5683669aa142d602ed2f717e690a85218d50b94af688ceffecb91b33250477a4",
+    "src/world/access-sites.ts": "bf282d5bc20e159948d44edb5eadb041e298b1c036ccac53d17dfb3e879c76d5",
+    "src/render/viewport.ts": "4766bacdf7bac430d372ae414daba11b725d392acf5ff8fbcc9ca5544f9c51b4",
+    "src/render/assets.ts": "fb5298afa4e19bc62a28af56b90e8c5e1ff64f8ebe6e474386123efaa9fb623e",
+    "src/render/batch.ts": "9f4b0c0205a99627bda01b13f9a0d036e5608a8086d632d0244134f26d7e30c2",
+    "src/render/trackwork.ts": "735ade41bd4eaa6af37159b0c54875474ac43fbb4bd2d7e409771c80b7d8a201",
+    "src/render/renderer.ts": "cd9fcefce09caeeeecf21136821292c714dce06e62e844806cb6854e36537f4e"
+  },
+  "station_count": 22,
+  "captured_views": 44,
+  "stations_with_supported_photo": 16,
+  "stations_with_model_view_review": 22,
+  "stations_with_photographic_review": 16,
+  "accepted": 0,
+  "stations": [
+    {
+      "id": "KID",
+      "name": "Kidderminster",
+      "reference": "references/frames/kidderminster2dorridge0027.jpg",
+      "named_reference": "references/by-location/kidderminster/kidderminster-original-0027.jpg",
+      "reference_sha256": "b5ca824aff1c8d18a12e8cba42c0ec177237c0746ef5b33de36764514c7f51a8",
+      "map": "atlas/maps/dorridge-kidderminster-overview.svg",
+      "map_focus": {
+        "centre": [
+          -16134.91,
+          3716.12
+        ],
+        "viewbox": [
+          -16434.91,
+          3416.12,
+          600,
+          600
+        ]
+      },
+      "views": [
+        {
+          "station": "KID",
+          "direction": 1,
+          "file": "docs/captures/reconstruction/kid-forward.png",
+          "sha256": "c5c43417a1e1f8a52f61e8b4ac2269db081cfcbfbe3910ddeeb49828f15105b9",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 259.9879949901055,
+            "lane": 4.2,
+            "direction": 1,
+            "trackPosition": [
+              -16154.964016454616,
+              58.68492030844014,
+              3771.2321131170984
+            ],
+            "cameraPosition": [
+              -16154.969498079765,
+              61.13487541945269,
+              3771.245893748768
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "-17_3",
+              "-16_3",
+              "-17_4",
+              "-16_4",
+              "-17_2",
+              "-16_2"
+            ],
+            "pendingTileIds": [],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 6,
+              "triangles": 1673618,
+              "placements": 606,
+              "gpuErrors": [],
+              "drawCalls": 895,
+              "memory": {
+                "geometries": 12,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        },
+        {
+          "station": "KID",
+          "direction": -1,
+          "file": "docs/captures/reconstruction/kid-reverse.png",
+          "sha256": "e47441eac1e049f24fe08dc1a8cf2d48a8631e2827161369fbc2d9ff0eb49147",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 379.99968094544687,
+            "lane": 0,
+            "direction": -1,
+            "trackPosition": [
+              -16113.99021940647,
+              59.24999662451585,
+              3658.3856388103745
+            ],
+            "cameraPosition": [
+              -16113.990168715476,
+              61.69997029853313,
+              3658.3969963652476
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "-17_3",
+              "-16_3",
+              "-17_4",
+              "-16_4",
+              "-17_2",
+              "-16_2"
+            ],
+            "pendingTileIds": [],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 6,
+              "triangles": 1673618,
+              "placements": 606,
+              "gpuErrors": [],
+              "drawCalls": 410,
+              "memory": {
+                "geometries": 16,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        }
+      ],
+      "alignment": "approximate station anchor only; source pose, camera and date unknown",
+      "review_status": "reviewed with unresolved differences",
+      "review": "Reviewed current forward/reverse captures and original 0027. The anchor shows a leafy, walled departure corridor; the fixtures show exposed flat surroundings, generic buildings and sparse vegetation. The source pose is farther through the station and cannot establish exact platform/building dimensions. Station frontage, heritage context and departure cutting still require matched views.",
+      "acceptance": "not accepted"
+    },
+    {
+      "id": "BKD",
+      "name": "Blakedown",
+      "reference": "references/frames/kidderminster2dorridge0090.jpg",
+      "named_reference": "references/by-location/blakedown/blakedown-original-0090.jpg",
+      "reference_sha256": "89bcafc20fa65a584bb8e59fc3d0e32098e4fdbc2b3110f55baea9cf2b04e274",
+      "map": "atlas/maps/dorridge-kidderminster-overview.svg",
+      "map_focus": {
+        "centre": [
+          -11903.13,
+          1233.02
+        ],
+        "viewbox": [
+          -12203.13,
+          933.02,
+          600,
+          600
+        ]
+      },
+      "views": [
+        {
+          "station": "BKD",
+          "direction": 1,
+          "file": "docs/captures/reconstruction/bkd-forward.png",
+          "sha256": "a509f18a66c2b35b326f57088c224312d7b535c076fe2d38933fb22411487dca",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 5364.215217485465,
+            "lane": 4.2,
+            "direction": 1,
+            "trackPosition": [
+              -11940.97018305403,
+              72.99479897356542,
+              1276.9700478937482
+            ],
+            "cameraPosition": [
+              -11940.983217017925,
+              75.44474704883278,
+              1276.979242690049
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "-17_3",
+              "-16_3",
+              "-17_4",
+              "-16_4",
+              "-17_2",
+              "-16_2",
+              "-12_1",
+              "-13_1",
+              "-12_0",
+              "-13_0"
+            ],
+            "pendingTileIds": [
+              "-12_2"
+            ],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 10,
+              "triangles": 2719269,
+              "placements": 958,
+              "gpuErrors": [],
+              "drawCalls": 270,
+              "memory": {
+                "geometries": 24,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        },
+        {
+          "station": "BKD",
+          "direction": -1,
+          "file": "docs/captures/reconstruction/bkd-reverse.png",
+          "sha256": "6e841b2c5fc4095bff8c32efa8448aae479d950adbce53984c309cdd04ba967d",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 5484.251452214344,
+            "lane": 0,
+            "direction": -1,
+            "trackPosition": [
+              -11863.034665244339,
+              73.54500340891711,
+              1185.6595691128766
+            ],
+            "cameraPosition": [
+              -11863.046041486228,
+              75.99495949243897,
+              1185.6688303187764
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "-17_3",
+              "-16_3",
+              "-17_4",
+              "-16_4",
+              "-17_2",
+              "-16_2",
+              "-12_1",
+              "-13_1",
+              "-12_0",
+              "-13_0",
+              "-12_2",
+              "-13_2"
+            ],
+            "pendingTileIds": [
+              "-11_0"
+            ],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 12,
+              "triangles": 2925434,
+              "placements": 1003,
+              "gpuErrors": [],
+              "drawCalls": 479,
+              "memory": {
+                "geometries": 30,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        }
+      ],
+      "alignment": "approximate station anchor only; source pose, camera and date unknown",
+      "review_status": "reviewed with unresolved differences",
+      "review": "Reviewed both captures against original 0090. Source has compact open platforms, pale perimeter fencing and dense mature trees; model surroundings are much more open and use repeated shelter/furniture forms. Crossing component orientation remains a known separate failure; these station fixtures do not prove crossing geometry or road identity.",
+      "acceptance": "not accepted"
+    },
+    {
+      "id": "HAG",
+      "name": "Hagley",
+      "reference": "references/frames/kidderminster2dorridge0133.jpg",
+      "named_reference": "references/by-location/hagley/hagley-covered-footbridge-original-0133.jpg",
+      "reference_sha256": "48d493a1ac434e6ddf7fe0e055aacddfffbfea119cb880afd8ccf4541526e057",
+      "map": "atlas/maps/dorridge-kidderminster-overview.svg",
+      "map_focus": {
+        "centre": [
+          -9868.44,
+          -501.6
+        ],
+        "viewbox": [
+          -10168.44,
+          -801.6,
+          600,
+          600
+        ]
+      },
+      "views": [
+        {
+          "station": "HAG",
+          "direction": 1,
+          "file": "docs/captures/reconstruction/hag-forward.png",
+          "sha256": "c141260f6a29e1218979e253305d0b5244216326d0efac6de1419b9d8f17bb8d",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 8068.174547296389,
+            "lane": 4.2,
+            "direction": 1,
+            "trackPosition": [
+              -9902.363615692115,
+              94.52776690318719,
+              -455.46051863621113
+            ],
+            "cameraPosition": [
+              -9902.385792762661,
+              96.97758955214208,
+              -455.44109786872974
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "-17_3",
+              "-16_3",
+              "-17_4",
+              "-16_4",
+              "-17_2",
+              "-16_2",
+              "-12_1",
+              "-13_1",
+              "-12_0",
+              "-13_0",
+              "-12_2",
+              "-13_2",
+              "-11_0",
+              "-10_-1",
+              "-11_-1",
+              "-10_0"
+            ],
+            "pendingTileIds": [
+              "-10_-2"
+            ],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 16,
+              "triangles": 4194247,
+              "placements": 2387,
+              "gpuErrors": [],
+              "drawCalls": 658,
+              "memory": {
+                "geometries": 36,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        },
+        {
+          "station": "HAG",
+          "direction": -1,
+          "file": "docs/captures/reconstruction/hag-reverse.png",
+          "sha256": "c413e0d45cbdd42c88ba4751b034e13bc8290f47a616b29430d81b5cd258f17c",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 8188.3539021624,
+            "lane": 0,
+            "direction": -1,
+            "trackPosition": [
+              -9832.40270950156,
+              95.54997407175539,
+              -553.025579234294
+            ],
+            "cameraPosition": [
+              -9832.41373375758,
+              97.99993740986726,
+              -553.0179563944708
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "-17_3",
+              "-16_3",
+              "-17_4",
+              "-16_4",
+              "-17_2",
+              "-16_2",
+              "-12_1",
+              "-13_1",
+              "-12_0",
+              "-13_0",
+              "-12_2",
+              "-13_2",
+              "-11_0",
+              "-10_-1",
+              "-11_-1",
+              "-10_0",
+              "-10_-2",
+              "-11_-2"
+            ],
+            "pendingTileIds": [],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 18,
+              "triangles": 4716116,
+              "placements": 2872,
+              "gpuErrors": [],
+              "drawCalls": 953,
+              "memory": {
+                "geometries": 41,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        }
+      ],
+      "alignment": "approximate station anchor only; source pose, camera and date unknown",
+      "review_status": "reviewed with unresolved differences",
+      "review": "Reviewed both captures against original 0133. The new covered lattice footbridge, stair flights and separate Brake Lane arch replace the ground-level strip; reverse view shows an open arch and supported access assembly. Source has distinctive purple lattice, pitched station canopies, brick buildings and much denser tree cover. Roof/canopy profiles, proportions, buildings and surroundings still differ; profile/clearance dimensions are inferred and source/game poses differ.",
+      "acceptance": "not accepted"
+    },
+    {
+      "id": "SBJ",
+      "name": "Stourbridge Junction",
+      "reference": "references/frames/kidderminster2dorridge0178.jpg",
+      "named_reference": "references/by-location/stourbridge-junction/stourbridge-junction-original-0178.jpg",
+      "reference_sha256": "91ea40426d8775d90fcf7d94295ff44d81f9edab8436d691bab3b2f7ccb049a1",
+      "map": "atlas/maps/dorridge-kidderminster-overview.svg",
+      "map_focus": {
+        "centre": [
+          -9012.92,
+          -3301.83
+        ],
+        "viewbox": [
+          -9312.92,
+          -3601.83,
+          600,
+          600
+        ]
+      },
+      "views": [
+        {
+          "station": "SBJ",
+          "direction": 1,
+          "file": "docs/captures/reconstruction/sbj-forward.png",
+          "sha256": "c18aff0696c4292d20cd26b0210f71b118a72678e06509e6dc4d3b2aa9f0fd54",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 11036.476515019473,
+            "lane": 4.2,
+            "direction": 1,
+            "trackPosition": [
+              -9017.456342935518,
+              98.01510888666363,
+              -3238.031036147476
+            ],
+            "cameraPosition": [
+              -9017.459088798898,
+              100.46508548946856,
+              -3238.041385347574
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "-17_3",
+              "-16_3",
+              "-17_4",
+              "-16_4",
+              "-17_2",
+              "-16_2",
+              "-12_1",
+              "-13_1",
+              "-12_0",
+              "-13_0",
+              "-12_2",
+              "-13_2",
+              "-11_0",
+              "-10_-1",
+              "-11_-1",
+              "-10_0",
+              "-10_-2",
+              "-11_-2",
+              "-10_-4",
+              "-9_-4",
+              "-10_-3",
+              "-9_-3",
+              "-10_-5"
+            ],
+            "pendingTileIds": [
+              "-9_-5"
+            ],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 23,
+              "triangles": 6776411,
+              "placements": 6038,
+              "gpuErrors": [],
+              "drawCalls": 625,
+              "memory": {
+                "geometries": 47,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        },
+        {
+          "station": "SBJ",
+          "direction": -1,
+          "file": "docs/captures/reconstruction/sbj-reverse.png",
+          "sha256": "9f24f6b6e2857ec6c9f55c247bc748264f714fcafcff08f54dc2eb06b7ee4c63",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 11156.501528049484,
+            "lane": 0,
+            "direction": -1,
+            "trackPosition": [
+              -9009.250275022894,
+              97.27003437786168,
+              -3357.79813302213
+            ],
+            "cameraPosition": [
+              -9009.250521002064,
+              99.71999549143234,
+              -3357.811934525157
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "-17_3",
+              "-16_3",
+              "-17_4",
+              "-16_4",
+              "-17_2",
+              "-16_2",
+              "-12_1",
+              "-13_1",
+              "-12_0",
+              "-13_0",
+              "-12_2",
+              "-13_2",
+              "-11_0",
+              "-10_-1",
+              "-11_-1",
+              "-10_0",
+              "-10_-2",
+              "-11_-2",
+              "-10_-4",
+              "-9_-4",
+              "-10_-3",
+              "-9_-3",
+              "-10_-5",
+              "-9_-5"
+            ],
+            "pendingTileIds": [],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 24,
+              "triangles": 7479233,
+              "placements": 6943,
+              "gpuErrors": [],
+              "drawCalls": 587,
+              "memory": {
+                "geometries": 53,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        }
+      ],
+      "alignment": "approximate station anchor only; source pose, camera and date unknown",
+      "review_status": "reviewed with unresolved differences",
+      "review": "Reviewed both captures against original 0178. Source has broad continuous pitched canopies, substantial station buildings and the branch/bay context; model has narrower flat canopies and repeated furniture in an open generic urban setting. Platform map outlines alone do not certify branch trackwork, canopy span or station identity.",
+      "acceptance": "not accepted"
+    },
+    {
+      "id": "LYE",
+      "name": "Lye",
+      "reference": "references/frames/kidderminster2dorridge0229.jpg",
+      "named_reference": "references/by-location/lye/lye-original-0229.jpg",
+      "reference_sha256": "23a0d14f7f983bd4a4cdf9cb9c5c09a4ffebffa1af316ec73f3b3085ad94a5d8",
+      "map": "atlas/maps/dorridge-kidderminster-overview.svg",
+      "map_focus": {
+        "centre": [
+          -7788.6,
+          -4670.78
+        ],
+        "viewbox": [
+          -8088.6,
+          -4970.78,
+          600,
+          600
+        ]
+      },
+      "views": [
+        {
+          "station": "LYE",
+          "direction": 1,
+          "file": "docs/captures/reconstruction/lye-forward.png",
+          "sha256": "069477c047db68c37664a02f4cfd29a9ba425e90ce80295b1bdc7e93904161a1",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 13148.576735370465,
+            "lane": 4.2,
+            "direction": 1,
+            "trackPosition": [
+              -7851.756650282013,
+              87.4047359956509,
+              -4664.937669377307
+            ],
+            "cameraPosition": [
+              -7851.726813967116,
+              89.85455069419523,
+              -4664.9418809221
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "-17_2",
+              "-16_2",
+              "-12_1",
+              "-13_1",
+              "-12_0",
+              "-13_0",
+              "-12_2",
+              "-13_2",
+              "-11_0",
+              "-10_-1",
+              "-11_-1",
+              "-10_0",
+              "-10_-2",
+              "-11_-2",
+              "-10_-4",
+              "-9_-4",
+              "-10_-3",
+              "-9_-3",
+              "-10_-5",
+              "-9_-5",
+              "-8_-5",
+              "-8_-6",
+              "-9_-6"
+            ],
+            "pendingTileIds": [
+              "-8_-4"
+            ],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 23,
+              "triangles": 7166894,
+              "placements": 7958,
+              "gpuErrors": [],
+              "drawCalls": 602,
+              "memory": {
+                "geometries": 54,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        },
+        {
+          "station": "LYE",
+          "direction": -1,
+          "file": "docs/captures/reconstruction/lye-reverse.png",
+          "sha256": "ae00fefb556a30897f242d933607eccc0776c4bef582d3de80aa8677afeec694",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 13268.560704494494,
+            "lane": 0,
+            "direction": -1,
+            "trackPosition": [
+              -7732.172931539378,
+              86.12499219448821,
+              -4675.390239369029
+            ],
+            "cameraPosition": [
+              -7732.166988770661,
+              88.57498423353205,
+              -4675.392160858506
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "-12_0",
+              "-13_0",
+              "-12_2",
+              "-13_2",
+              "-11_0",
+              "-10_-1",
+              "-11_-1",
+              "-10_0",
+              "-10_-2",
+              "-11_-2",
+              "-10_-4",
+              "-9_-4",
+              "-10_-3",
+              "-9_-3",
+              "-10_-5",
+              "-9_-5",
+              "-8_-5",
+              "-8_-6",
+              "-9_-6",
+              "-8_-4",
+              "-7_-5",
+              "-7_-6"
+            ],
+            "pendingTileIds": [],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 22,
+              "triangles": 7196221,
+              "placements": 9340,
+              "gpuErrors": [],
+              "drawCalls": 637,
+              "memory": {
+                "geometries": 54,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        }
+      ],
+      "alignment": "approximate station anchor only; source pose, camera and date unknown",
+      "review_status": "reviewed with unresolved differences",
+      "review": "Reviewed both captures against original 0229. Source has small shelters, fencing, foliage and a distinct overbridge at the platform end. Model includes tall generic nearby blocks, repeated long shelter forms and a generic access bridge; station-specific surroundings, overbridge placement and access form remain unresolved.",
+      "acceptance": "not accepted"
+    },
+    {
+      "id": "CRA",
+      "name": "Cradley Heath",
+      "reference": "references/frames/kidderminster2dorridge0247.jpg",
+      "named_reference": "references/by-location/cradley-heath/cradley-heath-original-0247.jpg",
+      "reference_sha256": "d67b415465016c1de42057456f1796d7f9beaaecb760aedd0084001acd850a09",
+      "map": "atlas/maps/dorridge-kidderminster-overview.svg",
+      "map_focus": {
+        "centre": [
+          -6065.13,
+          -5725.09
+        ],
+        "viewbox": [
+          -6365.13,
+          -6025.09,
+          600,
+          600
+        ]
+      },
+      "views": [
+        {
+          "station": "CRA",
+          "direction": 1,
+          "file": "docs/captures/reconstruction/cra-forward.png",
+          "sha256": "319b0173d84702fe5d4c12f50be5af57b0c7708cd8809729e8e8f43ac00ad4c8",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 15284.990395712752,
+            "lane": 4.2,
+            "direction": 1,
+            "trackPosition": [
+              -6120.818064836943,
+              93.42542830585693,
+              -5715.0577335583885
+            ],
+            "cameraPosition": [
+              -6120.851884368594,
+              95.87505624406971,
+              -5715.031672023392
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "-12_0",
+              "-13_0",
+              "-12_2",
+              "-13_2",
+              "-11_0",
+              "-10_-1",
+              "-11_-1",
+              "-10_0",
+              "-10_-2",
+              "-11_-2",
+              "-10_-4",
+              "-9_-4",
+              "-10_-3",
+              "-9_-3",
+              "-10_-5",
+              "-9_-5",
+              "-8_-5",
+              "-8_-6",
+              "-9_-6",
+              "-8_-4",
+              "-7_-5",
+              "-7_-6",
+              "-6_-6",
+              "-7_-7",
+              "-6_-7"
+            ],
+            "pendingTileIds": [],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 25,
+              "triangles": 8237410,
+              "placements": 10454,
+              "gpuErrors": [],
+              "drawCalls": 574,
+              "memory": {
+                "geometries": 62,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        },
+        {
+          "station": "CRA",
+          "direction": -1,
+          "file": "docs/captures/reconstruction/cra-reverse.png",
+          "sha256": "cff90a6672c045f3f63e91c7240a20ac2362132a451d3130d0f27f0bb2d56431",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 15404.631454191325,
+            "lane": 0,
+            "direction": -1,
+            "trackPosition": [
+              -6001.978902579752,
+              94.95997069401939,
+              -5730.359814395456
+            ],
+            "cameraPosition": [
+              -6001.998108354875,
+              97.4098297829437,
+              -5730.341881670708
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "-12_0",
+              "-13_0",
+              "-12_2",
+              "-13_2",
+              "-11_0",
+              "-10_-1",
+              "-11_-1",
+              "-10_0",
+              "-10_-2",
+              "-11_-2",
+              "-10_-4",
+              "-9_-4",
+              "-10_-3",
+              "-9_-3",
+              "-10_-5",
+              "-9_-5",
+              "-8_-5",
+              "-8_-6",
+              "-9_-6",
+              "-8_-4",
+              "-7_-5",
+              "-7_-6",
+              "-6_-6",
+              "-7_-7",
+              "-6_-7"
+            ],
+            "pendingTileIds": [],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 25,
+              "triangles": 8237410,
+              "placements": 10454,
+              "gpuErrors": [],
+              "drawCalls": 681,
+              "memory": {
+                "geometries": 67,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        }
+      ],
+      "alignment": "approximate station anchor only; source pose, camera and date unknown",
+      "review_status": "reviewed with unresolved differences",
+      "review": "Reviewed both captures against original 0247. Source shows a constrained curved station/crossing approach with fencing and overhead access; model shows much broader open platforms and generic surrounding blocks. Crossing-road binding, barriers, buildings and the access structure require site-level reconstruction.",
+      "acceptance": "not accepted"
+    },
+    {
+      "id": "OHL",
+      "name": "Old Hill",
+      "reference": "references/frames/kidderminster2dorridge0272.jpg",
+      "named_reference": "references/by-location/old-hill/old-hill-original-0272.jpg",
+      "reference_sha256": "822bd4b9a49bbb4d4580f1dccc91fb030d54a7dfa0667223cc89bd8b0530614a",
+      "map": "atlas/maps/dorridge-kidderminster-overview.svg",
+      "map_focus": {
+        "centre": [
+          -3719.77,
+          -5872.96
+        ],
+        "viewbox": [
+          -4019.77,
+          -6172.96,
+          600,
+          600
+        ]
+      },
+      "views": [
+        {
+          "station": "OHL",
+          "direction": 1,
+          "file": "docs/captures/reconstruction/ohl-forward.png",
+          "sha256": "8da0927f168848919ac36f0a8f1f7e560cab73c8926520e88f9280b04df09a22",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 17660.835733019747,
+            "lane": 4.2,
+            "direction": 1,
+            "trackPosition": [
+              -3776.670012071731,
+              136.22303188423027,
+              -5888.306906278786
+            ],
+            "cameraPosition": [
+              -3776.7413991868457,
+              138.6719279596303,
+              -5888.324566734217
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "-10_-2",
+              "-11_-2",
+              "-10_-4",
+              "-9_-4",
+              "-10_-3",
+              "-9_-3",
+              "-10_-5",
+              "-9_-5",
+              "-8_-5",
+              "-8_-6",
+              "-9_-6",
+              "-8_-4",
+              "-7_-5",
+              "-7_-6",
+              "-6_-6",
+              "-7_-7",
+              "-6_-7",
+              "-4_-6",
+              "-4_-7",
+              "-5_-6",
+              "-5_-7",
+              "-3_-6"
+            ],
+            "pendingTileIds": [
+              "-3_-7"
+            ],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 22,
+              "triangles": 8446185,
+              "placements": 13543,
+              "gpuErrors": [],
+              "drawCalls": 693,
+              "memory": {
+                "geometries": 66,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        },
+        {
+          "station": "OHL",
+          "direction": -1,
+          "file": "docs/captures/reconstruction/ohl-reverse.png",
+          "sha256": "673e6a3b7bdf21b92414c7bc69a78f75b2c99d521af1f3ea531a91d467fe912c",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 17781.089796732616,
+            "lane": 0,
+            "direction": -1,
+            "trackPosition": [
+              -3659.5508951795205,
+              138.91986312588543,
+              -5862.941012868448
+            ],
+            "cameraPosition": [
+              -3659.5825430790474,
+              141.3696247604585,
+              -5862.95391031895
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "-10_-2",
+              "-11_-2",
+              "-10_-4",
+              "-9_-4",
+              "-10_-3",
+              "-9_-3",
+              "-10_-5",
+              "-9_-5",
+              "-8_-5",
+              "-8_-6",
+              "-9_-6",
+              "-8_-4",
+              "-7_-5",
+              "-7_-6",
+              "-6_-6",
+              "-7_-7",
+              "-6_-7",
+              "-4_-6",
+              "-4_-7",
+              "-5_-6",
+              "-5_-7",
+              "-3_-6",
+              "-3_-7"
+            ],
+            "pendingTileIds": [],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 23,
+              "triangles": 9244160,
+              "placements": 14549,
+              "gpuErrors": [],
+              "drawCalls": 650,
+              "memory": {
+                "geometries": 70,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        }
+      ],
+      "alignment": "approximate station anchor only; source pose, camera and date unknown",
+      "review_status": "reviewed with unresolved differences",
+      "review": "Reviewed both captures against original 0272. Source shows leafy curved approaches, tight platform edges and a nearby overbridge. Model uses open surroundings, generic bridge/canopies and sparse vegetation. Cutting profile, bridge composition and station shelter placement are unaccepted; the nearby tunnel requires its own portal/departure views.",
+      "acceptance": "not accepted"
+    },
+    {
+      "id": "ROW",
+      "name": "Rowley Regis",
+      "reference": "references/frames/kidderminster2dorridge0287.jpg",
+      "named_reference": "references/by-location/rowley-regis/rowley-regis-original-0287.jpg",
+      "reference_sha256": "aa14780983ff85b84e15f4e01a3504bf075d302ead91878a94a07af657a68b41",
+      "map": "atlas/maps/dorridge-kidderminster-overview.svg",
+      "map_focus": {
+        "centre": [
+          -1996.81,
+          -6608.96
+        ],
+        "viewbox": [
+          -2296.81,
+          -6908.96,
+          600,
+          600
+        ]
+      },
+      "views": [
+        {
+          "station": "ROW",
+          "direction": 1,
+          "file": "docs/captures/reconstruction/row-forward.png",
+          "sha256": "4fea35d857f9353b476d33fdc010db82260ba7a736c81391d78ed0fa841bc44a",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 19589.571032825508,
+            "lane": 4.2,
+            "direction": 1,
+            "trackPosition": [
+              -2039.403655081021,
+              166.7250568541127,
+              -6567.616526852139
+            ],
+            "cameraPosition": [
+              -2039.4131160914403,
+              169.17501184922287,
+              -6567.605080839008
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "-10_-2",
+              "-11_-2",
+              "-10_-4",
+              "-9_-4",
+              "-10_-3",
+              "-9_-3",
+              "-10_-5",
+              "-9_-5",
+              "-8_-5",
+              "-8_-6",
+              "-9_-6",
+              "-8_-4",
+              "-7_-5",
+              "-7_-6",
+              "-6_-6",
+              "-7_-7",
+              "-6_-7",
+              "-4_-6",
+              "-4_-7",
+              "-5_-6",
+              "-5_-7",
+              "-3_-6",
+              "-3_-7",
+              "-2_-7",
+              "-3_-8"
+            ],
+            "pendingTileIds": [
+              "-2_-8"
+            ],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 25,
+              "triangles": 9835661,
+              "placements": 15265,
+              "gpuErrors": [],
+              "drawCalls": 600,
+              "memory": {
+                "geometries": 79,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        },
+        {
+          "station": "ROW",
+          "direction": -1,
+          "file": "docs/captures/reconstruction/row-reverse.png",
+          "sha256": "379ee83b6273041f9ae1a4ea51fbcfd1478a4f8b75e30176d6ba7e4821fd7620",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 19709.559635518683,
+            "lane": 0,
+            "direction": -1,
+            "trackPosition": [
+              -1952.9946788531392,
+              167.35499161495855,
+              -6650.960195371239
+            ],
+            "cameraPosition": [
+              -1952.9981792951053,
+              169.8049880426932,
+              -6650.95790386659
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "-9_-4",
+              "-9_-3",
+              "-10_-5",
+              "-9_-5",
+              "-8_-5",
+              "-8_-6",
+              "-9_-6",
+              "-8_-4",
+              "-7_-5",
+              "-7_-6",
+              "-6_-6",
+              "-7_-7",
+              "-6_-7",
+              "-4_-6",
+              "-4_-7",
+              "-5_-6",
+              "-5_-7",
+              "-3_-6",
+              "-3_-7",
+              "-2_-7",
+              "-3_-8",
+              "-2_-8",
+              "-2_-6"
+            ],
+            "pendingTileIds": [],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 23,
+              "triangles": 8981495,
+              "placements": 16169,
+              "gpuErrors": [],
+              "drawCalls": 744,
+              "memory": {
+                "geometries": 76,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        }
+      ],
+      "alignment": "approximate station anchor only; source pose, camera and date unknown",
+      "review_status": "reviewed with unresolved differences",
+      "review": "Reviewed both captures against original 0287. Source shows an open railway beneath a road bridge in a dense treed cutting. Current forward fixture shows a pale slab apparently crossing both running lines at low level, while reverse shows a generic footbridge. Treat as a new obstruction candidate requiring actual-triangle ownership/volume diagnosis; the source anchor is an approach, not a surveyed pose.",
+      "acceptance": "not accepted"
+    },
+    {
+      "id": "LGG",
+      "name": "Langley Green",
+      "reference": null,
+      "named_reference": null,
+      "reference_sha256": null,
+      "map": "atlas/maps/dorridge-kidderminster-overview.svg",
+      "map_focus": {
+        "centre": [
+          -272.14,
+          -8395.61
+        ],
+        "viewbox": [
+          -572.14,
+          -8695.61,
+          600,
+          600
+        ]
+      },
+      "views": [
+        {
+          "station": "LGG",
+          "direction": 1,
+          "file": "docs/captures/reconstruction/lgg-forward.png",
+          "sha256": "7a5b740196eedb5e52432658586650f1edb23e9a2e323ee2a118a2069b24cfc6",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 22101.953319153006,
+            "lane": 4.2,
+            "direction": 1,
+            "trackPosition": [
+              -297.516095280368,
+              159.01617832468585,
+              -8341.639188396566
+            ],
+            "cameraPosition": [
+              -297.50836574188963,
+              161.46613485308902,
+              -8341.626808446259
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "-9_-4",
+              "-9_-3",
+              "-10_-5",
+              "-9_-5",
+              "-8_-5",
+              "-8_-6",
+              "-9_-6",
+              "-8_-4",
+              "-7_-5",
+              "-7_-6",
+              "-6_-6",
+              "-7_-7",
+              "-6_-7",
+              "-4_-6",
+              "-4_-7",
+              "-5_-6",
+              "-5_-7",
+              "-3_-6",
+              "-3_-7",
+              "-2_-7",
+              "-3_-8",
+              "-2_-8",
+              "-2_-6",
+              "-1_-9"
+            ],
+            "pendingTileIds": [
+              "0_-9"
+            ],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 24,
+              "triangles": 9900321,
+              "placements": 17306,
+              "gpuErrors": [],
+              "drawCalls": 643,
+              "memory": {
+                "geometries": 79,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        },
+        {
+          "station": "LGG",
+          "direction": -1,
+          "file": "docs/captures/reconstruction/lgg-reverse.png",
+          "sha256": "aa97f362fb06f76486594c8ecd02be7d419cbb75e7cf2f5a336daa9bb3dc3f17",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 22221.639713934965,
+            "lane": 0,
+            "direction": -1,
+            "trackPosition": [
+              -241.8971958142894,
+              159.35500553101838,
+              -8447.846161473257
+            ],
+            "cameraPosition": [
+              -241.89085920203033,
+              161.8049972363209,
+              -8447.845460549688
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "-8_-5",
+              "-8_-6",
+              "-9_-6",
+              "-8_-4",
+              "-7_-5",
+              "-7_-6",
+              "-6_-6",
+              "-7_-7",
+              "-6_-7",
+              "-4_-6",
+              "-4_-7",
+              "-5_-6",
+              "-5_-7",
+              "-3_-6",
+              "-3_-7",
+              "-2_-7",
+              "-3_-8",
+              "-2_-8",
+              "-2_-6",
+              "-1_-9",
+              "0_-9",
+              "-1_-8"
+            ],
+            "pendingTileIds": [
+              "0_-8"
+            ],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 22,
+              "triangles": 9437500,
+              "placements": 18853,
+              "gpuErrors": [],
+              "drawCalls": 639,
+              "memory": {
+                "geometries": 80,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        }
+      ],
+      "alignment": "no securely assigned station photograph",
+      "review_status": "source gap",
+      "review": "Reviewed current forward/reverse model views only. Generic shelters, access bridge and open surroundings are visible. Original 0322 is only a location candidate; no securely assigned station photograph is available, so photographic accuracy is unreviewed and unaccepted.",
+      "acceptance": "not accepted"
+    },
+    {
+      "id": "SGB",
+      "name": "Smethwick Galton Bridge",
+      "reference": "references/frames/kidderminster2dorridge0345.jpg",
+      "named_reference": "references/by-location/smethwick-galton-bridge/smethwick-galton-bridge-original-0345.jpg",
+      "reference_sha256": "b755d343fe423f1e89959b346d055dc65a453346655f569cec812f96442efa28",
+      "map": "atlas/maps/dorridge-kidderminster-overview.svg",
+      "map_focus": {
+        "centre": [
+          1424.59,
+          -9356.15
+        ],
+        "viewbox": [
+          1124.59,
+          -9656.15,
+          600,
+          600
+        ]
+      },
+      "views": [
+        {
+          "station": "SGB",
+          "direction": 1,
+          "file": "docs/captures/reconstruction/sgb-forward.png",
+          "sha256": "4ff601ecaa0ddd23e478dc6dc67524988713c5f270fffcddebe3eee1cbb6abfb",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 24229.532715556183,
+            "lane": 4.2,
+            "direction": 1,
+            "trackPosition": [
+              1371.9469554440038,
+              154.28447997992956,
+              -9323.563757250346
+            ],
+            "cameraPosition": [
+              1371.942349110822,
+              156.73443168693316,
+              -9323.57843427473
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "-8_-5",
+              "-8_-6",
+              "-9_-6",
+              "-8_-4",
+              "-7_-5",
+              "-7_-6",
+              "-6_-6",
+              "-7_-7",
+              "-6_-7",
+              "-4_-6",
+              "-4_-7",
+              "-5_-6",
+              "-5_-7",
+              "-3_-6",
+              "-3_-7",
+              "-2_-7",
+              "-3_-8",
+              "-2_-8",
+              "-2_-6",
+              "-1_-9",
+              "0_-9",
+              "-1_-8",
+              "0_-8",
+              "1_-10",
+              "1_-9"
+            ],
+            "pendingTileIds": [
+              "0_-10"
+            ],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 25,
+              "triangles": 10520797,
+              "placements": 19479,
+              "gpuErrors": [],
+              "drawCalls": 1010,
+              "memory": {
+                "geometries": 87,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        },
+        {
+          "station": "SGB",
+          "direction": -1,
+          "file": "docs/captures/reconstruction/sgb-reverse.png",
+          "sha256": "680e878abc9111dbd5871a4c9a6a1eb310de0e9fe184f5602a20654ca083c566",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 24349.68880577628,
+            "lane": 0,
+            "direction": -1,
+            "trackPosition": [
+              1473.8257518024766,
+              151.2852612877492,
+              -9387.002022708457
+            ],
+            "cameraPosition": [
+              1473.8260478742231,
+              153.73526126080986,
+              -9387.001812127575
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "-7_-5",
+              "-7_-6",
+              "-6_-6",
+              "-7_-7",
+              "-6_-7",
+              "-4_-6",
+              "-4_-7",
+              "-5_-6",
+              "-5_-7",
+              "-3_-6",
+              "-3_-7",
+              "-2_-7",
+              "-3_-8",
+              "-2_-8",
+              "-2_-6",
+              "-1_-9",
+              "0_-9",
+              "-1_-8",
+              "0_-8",
+              "1_-10",
+              "1_-9",
+              "0_-10"
+            ],
+            "pendingTileIds": [
+              "2_-10"
+            ],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 22,
+              "triangles": 10367818,
+              "placements": 20057,
+              "gpuErrors": [],
+              "drawCalls": 801,
+              "memory": {
+                "geometries": 89,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        }
+      ],
+      "alignment": "approximate station anchor only; source pose, camera and date unknown",
+      "review_status": "reviewed with unresolved differences",
+      "review": "Reviewed both captures against original 0345. Source clearly shows a layered interchange with structures above an open lower railway. The forward model fixture is apparently blocked by an earth-coloured wall, with rails visually ending at it; reverse is much more open and lacks the distinctive interchange composition. Requires source-owned obstruction diagnosis and a complete two-level station/civil solution; source/game poses are approximate.",
+      "acceptance": "not accepted"
+    },
+    {
+      "id": "THW",
+      "name": "The Hawthorns",
+      "reference": "references/frames/kidderminster2dorridge0361.jpg",
+      "named_reference": "references/by-location/the-hawthorns/the-hawthorns-original-0361.jpg",
+      "reference_sha256": "f29a1f0f0c6d29cc48b7af7f335791efca8675dbc329764ff5106b0e18b50c0a",
+      "map": "atlas/maps/dorridge-kidderminster-overview.svg",
+      "map_focus": {
+        "centre": [
+          2469.46,
+          -9751.68
+        ],
+        "viewbox": [
+          2169.46,
+          -10051.68,
+          600,
+          600
+        ]
+      },
+      "views": [
+        {
+          "station": "THW",
+          "direction": 1,
+          "file": "docs/captures/reconstruction/thw-forward.png",
+          "sha256": "157f7514c48aa81671a404ca51cc86495a643dbc683bda71da2ec5987211e482",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 25421.903808531348,
+            "lane": 4.2,
+            "direction": 1,
+            "trackPosition": [
+              2417.4939635687065,
+              152.48328274074552,
+              -9778.927857764455
+            ],
+            "cameraPosition": [
+              2417.518650039664,
+              154.93303984604694,
+              -9778.903759980803
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "-7_-5",
+              "-7_-6",
+              "-6_-6",
+              "-7_-7",
+              "-6_-7",
+              "-4_-6",
+              "-4_-7",
+              "-5_-6",
+              "-5_-7",
+              "-3_-6",
+              "-3_-7",
+              "-2_-7",
+              "-3_-8",
+              "-2_-8",
+              "-2_-6",
+              "-1_-9",
+              "0_-9",
+              "-1_-8",
+              "0_-8",
+              "1_-10",
+              "1_-9",
+              "0_-10",
+              "2_-10",
+              "2_-11",
+              "1_-11"
+            ],
+            "pendingTileIds": [
+              "3_-10"
+            ],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 25,
+              "triangles": 11449072,
+              "placements": 20636,
+              "gpuErrors": [],
+              "drawCalls": 646,
+              "memory": {
+                "geometries": 93,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        },
+        {
+          "station": "THW",
+          "direction": -1,
+          "file": "docs/captures/reconstruction/thw-reverse.png",
+          "sha256": "adb1b2e723e43562fc6938df3e7c319cbe334fb97ae6e21638bf2b2e31188d86",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 25541.781559623527,
+            "lane": 0,
+            "direction": -1,
+            "trackPosition": [
+              2523.6839834007164,
+              151.14507562764462,
+              -9722.9829914935
+            ],
+            "cameraPosition": [
+              2523.709096535108,
+              153.5949148269942,
+              -9722.97045244205
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "-6_-7",
+              "-4_-6",
+              "-4_-7",
+              "-5_-6",
+              "-5_-7",
+              "-3_-6",
+              "-3_-7",
+              "-2_-7",
+              "-3_-8",
+              "-2_-8",
+              "-2_-6",
+              "-1_-9",
+              "0_-9",
+              "-1_-8",
+              "0_-8",
+              "1_-10",
+              "1_-9",
+              "0_-10",
+              "2_-10",
+              "2_-11",
+              "1_-11",
+              "3_-10",
+              "3_-11",
+              "2_-9",
+              "3_-9"
+            ],
+            "pendingTileIds": [],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 25,
+              "triangles": 10569236,
+              "placements": 21228,
+              "gpuErrors": [],
+              "drawCalls": 1012,
+              "memory": {
+                "geometries": 90,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        }
+      ],
+      "alignment": "approximate station anchor only; source pose, camera and date unknown",
+      "review_status": "reviewed with unresolved differences",
+      "review": "Reviewed both captures against original 0361. Source has substantial overhead concrete structures, long platform coverings and adjacent Metro infrastructure. Model has an open cutting, simple footbridge/shelters and sparse surroundings. Concourse, Metro relationship, overhead spans, canopy extents and retaining forms remain unaccepted.",
+      "acceptance": "not accepted"
+    },
+    {
+      "id": "JEQ",
+      "name": "Jewellery Quarter",
+      "reference": "references/frames/kidderminster2dorridge0397.jpg",
+      "named_reference": "references/by-location/jewellery-quarter/jewellery-quarter-original-0397.jpg",
+      "reference_sha256": "d65443c03d9b46fb24ba92dad335ff4a08a8bf2c74b5f145e3f183a6bdadf152",
+      "map": "atlas/maps/dorridge-kidderminster-overview.svg",
+      "map_focus": {
+        "centre": [
+          5958.24,
+          -7974.33
+        ],
+        "viewbox": [
+          5658.24,
+          -8274.33,
+          600,
+          600
+        ]
+      },
+      "views": [
+        {
+          "station": "JEQ",
+          "direction": 1,
+          "file": "docs/captures/reconstruction/jeq-forward.png",
+          "sha256": "c30e4b8ec927a25f47e66669672bfea9416f923f21143b84119b7a7921df2e75",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 29373.823305733327,
+            "lane": 4.2,
+            "direction": 1,
+            "trackPosition": [
+              5904.245228563838,
+              122.74545450397305,
+              -7994.708408608687
+            ],
+            "cameraPosition": [
+              5904.316869230127,
+              125.19433608572871,
+              -7994.689791050533
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "-5_-7",
+              "-3_-6",
+              "-3_-7",
+              "-2_-7",
+              "-3_-8",
+              "-2_-8",
+              "-2_-6",
+              "-1_-9",
+              "0_-9",
+              "-1_-8",
+              "0_-8",
+              "1_-10",
+              "1_-9",
+              "0_-10",
+              "2_-10",
+              "2_-11",
+              "1_-11",
+              "3_-10",
+              "3_-11",
+              "2_-9",
+              "3_-9",
+              "5_-8",
+              "5_-9",
+              "6_-8",
+              "6_-9"
+            ],
+            "pendingTileIds": [],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 25,
+              "triangles": 11143426,
+              "placements": 23520,
+              "gpuErrors": [],
+              "drawCalls": 805,
+              "memory": {
+                "geometries": 125,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        },
+        {
+          "station": "JEQ",
+          "direction": -1,
+          "file": "docs/captures/reconstruction/jeq-reverse.png",
+          "sha256": "a5c29816d1c92c645f2abe4fd14ca90dd36dc742301c2d11a6fbf716b07a1753",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 29494.030422356245,
+            "lane": 0,
+            "direction": -1,
+            "trackPosition": [
+              6017.789694972431,
+              119.1409421252094,
+              -7956.003282850799
+            ],
+            "cameraPosition": [
+              6017.848398121264,
+              121.59017411107766,
+              -7955.9854890396
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "-5_-7",
+              "-3_-6",
+              "-3_-7",
+              "-2_-7",
+              "-3_-8",
+              "-2_-8",
+              "-2_-6",
+              "-1_-9",
+              "0_-9",
+              "-1_-8",
+              "0_-8",
+              "1_-10",
+              "1_-9",
+              "0_-10",
+              "2_-10",
+              "2_-11",
+              "1_-11",
+              "3_-10",
+              "3_-11",
+              "2_-9",
+              "3_-9",
+              "5_-8",
+              "5_-9",
+              "6_-8",
+              "6_-9"
+            ],
+            "pendingTileIds": [],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 25,
+              "triangles": 11143426,
+              "placements": 23520,
+              "gpuErrors": [],
+              "drawCalls": 671,
+              "memory": {
+                "geometries": 132,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        }
+      ],
+      "alignment": "approximate station anchor only; source pose, camera and date unknown",
+      "review_status": "reviewed with unresolved differences",
+      "review": "Reviewed both captures against original 0397. Source shows tightly enclosed platforms, retaining walls, urban frontage and overhead access. Model has generic faceted banks and buildings, an exaggerated tall wall in reverse, and simplified shelter/access forms. Station enclosure, support layers and adjoining Hockley portal relationships need separate reconstruction and clearance checks.",
+      "acceptance": "not accepted"
+    },
+    {
+      "id": "BSW",
+      "name": "Birmingham Snow Hill",
+      "reference": "references/frames/kidderminster2dorridge0423.jpg",
+      "named_reference": "references/by-location/birmingham-snow-hill/birmingham-snow-hill-original-0423.jpg",
+      "reference_sha256": "6e558ef2f5f376fdf4a326644eef5f4f24718dc50121dcb51ce60b4fe6492213",
+      "map": "atlas/maps/dorridge-kidderminster-overview.svg",
+      "map_focus": {
+        "centre": [
+          6910.87,
+          -7322.8
+        ],
+        "viewbox": [
+          6610.87,
+          -7622.8,
+          600,
+          600
+        ]
+      },
+      "views": [
+        {
+          "station": "BSW",
+          "direction": 1,
+          "file": "docs/captures/reconstruction/bsw-forward.png",
+          "sha256": "af96077fdf395e3552070564b53834bee615ff052e7147888b63abc2f368c9cc",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 30549.83433901447,
+            "lane": 4.2,
+            "direction": 1,
+            "trackPosition": [
+              6872.326778680399,
+              128.41454791576282,
+              -7369.446729699934
+            ],
+            "cameraPosition": [
+              6872.319459454673,
+              130.86453695654276,
+              -7369.446370543962
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "-3_-8",
+              "-2_-8",
+              "-2_-6",
+              "-1_-9",
+              "0_-9",
+              "-1_-8",
+              "0_-8",
+              "1_-10",
+              "1_-9",
+              "0_-10",
+              "2_-10",
+              "2_-11",
+              "1_-11",
+              "3_-10",
+              "3_-11",
+              "2_-9",
+              "3_-9",
+              "5_-8",
+              "5_-9",
+              "6_-8",
+              "6_-9",
+              "7_-8"
+            ],
+            "pendingTileIds": [
+              "6_-7"
+            ],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 22,
+              "triangles": 9712957,
+              "placements": 23739,
+              "gpuErrors": [],
+              "drawCalls": 908,
+              "memory": {
+                "geometries": 148,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        },
+        {
+          "station": "BSW",
+          "direction": -1,
+          "file": "docs/captures/reconstruction/bsw-reverse.png",
+          "sha256": "776ffb54cf8eaadbfb36a1caaac74d037f13ceb4c8c74a249f550a6cf341b062",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 30670.19377584398,
+            "lane": 0,
+            "direction": -1,
+            "trackPosition": [
+              6939.768957109893,
+              128.30500592551198,
+              -7268.5161870775655
+            ],
+            "cameraPosition": [
+              6939.797263534563,
+              130.75482271257584,
+              -7268.5260082863715
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "-3_-8",
+              "-2_-8",
+              "-2_-6",
+              "-1_-9",
+              "0_-9",
+              "-1_-8",
+              "0_-8",
+              "1_-10",
+              "1_-9",
+              "0_-10",
+              "2_-10",
+              "2_-11",
+              "1_-11",
+              "3_-10",
+              "3_-11",
+              "2_-9",
+              "3_-9",
+              "5_-8",
+              "5_-9",
+              "6_-8",
+              "6_-9",
+              "7_-8",
+              "6_-7"
+            ],
+            "pendingTileIds": [
+              "7_-7"
+            ],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 23,
+              "triangles": 9945793,
+              "placements": 23922,
+              "gpuErrors": [],
+              "drawCalls": 708,
+              "memory": {
+                "geometries": 148,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        }
+      ],
+      "alignment": "approximate station anchor only; source pose, camera and date unknown",
+      "review_status": "reviewed with unresolved differences",
+      "review": "Reviewed both captures against original 0423. Source has a detailed enclosed station roof with columns, lighting and platform structures. Current game views show a large dark overhead plane, generic surrounding walls and sparse furniture; reverse has an apparent unsupported/floating small trackside box. Source/game poses and lighting differ; roof/column/support identity and trackside object ownership require diagnosis.",
+      "acceptance": "not accepted"
+    },
+    {
+      "id": "BMO",
+      "name": "Birmingham Moor Street",
+      "reference": "references/frames/kidderminster2dorridge0443.jpg",
+      "named_reference": "references/by-location/birmingham-moor-street/birmingham-moor-street-original-0443.jpg",
+      "reference_sha256": "7fcd36dd9b927aeac82b7ec092f8cb3e04b5eb6cc59a14c4c0da0171465e9cb4",
+      "map": "atlas/maps/dorridge-kidderminster-overview.svg",
+      "map_focus": {
+        "centre": [
+          7435.07,
+          -6782.66
+        ],
+        "viewbox": [
+          7135.07,
+          -7082.66,
+          600,
+          600
+        ]
+      },
+      "views": [
+        {
+          "station": "BMO",
+          "direction": 1,
+          "file": "docs/captures/reconstruction/bmo-forward.png",
+          "sha256": "d97223ce4a56bfd67c3d1e248f96793315177a00c80545dabfa6c43582eec5e4",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 31310.208928391734,
+            "lane": 4.2,
+            "direction": 1,
+            "trackPosition": [
+              7384.358768539103,
+              118.71641619975591,
+              -6816.110571605634
+            ],
+            "cameraPosition": [
+              7384.402586257798,
+              121.1658919399992,
+              -6816.085103871382
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "-3_-8",
+              "-2_-8",
+              "-2_-6",
+              "-1_-9",
+              "0_-9",
+              "-1_-8",
+              "0_-8",
+              "1_-10",
+              "1_-9",
+              "0_-10",
+              "2_-10",
+              "2_-11",
+              "1_-11",
+              "3_-10",
+              "3_-11",
+              "2_-9",
+              "3_-9",
+              "5_-8",
+              "5_-9",
+              "6_-8",
+              "6_-9",
+              "7_-8",
+              "6_-7",
+              "7_-7"
+            ],
+            "pendingTileIds": [
+              "8_-7"
+            ],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 24,
+              "triangles": 10740842,
+              "placements": 24660,
+              "gpuErrors": [],
+              "drawCalls": 690,
+              "memory": {
+                "geometries": 156,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        },
+        {
+          "station": "BMO",
+          "direction": -1,
+          "file": "docs/captures/reconstruction/bmo-reverse.png",
+          "sha256": "327cc564f9ea6c59113609cd7529e7bb0aeb5b48e7327516140a9ea59178fe43",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 31430.281422877208,
+            "lane": 0,
+            "direction": -1,
+            "trackPosition": [
+              7485.011963965418,
+              117.7850133354374,
+              -6750.671849180654
+            ],
+            "cameraPosition": [
+              7485.021024827596,
+              120.23498739389666,
+              -6750.665139959147
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "0_-9",
+              "-1_-8",
+              "0_-8",
+              "1_-10",
+              "1_-9",
+              "0_-10",
+              "2_-10",
+              "2_-11",
+              "1_-11",
+              "3_-10",
+              "3_-11",
+              "2_-9",
+              "3_-9",
+              "5_-8",
+              "5_-9",
+              "6_-8",
+              "6_-9",
+              "7_-8",
+              "6_-7",
+              "7_-7",
+              "8_-7",
+              "8_-8",
+              "7_-6"
+            ],
+            "pendingTileIds": [],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 23,
+              "triangles": 9631491,
+              "placements": 25199,
+              "gpuErrors": [],
+              "drawCalls": 835,
+              "memory": {
+                "geometries": 154,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        }
+      ],
+      "alignment": "approximate station anchor only; source pose, camera and date unknown",
+      "review_status": "reviewed with unresolved differences",
+      "review": "Reviewed both captures against original 0443. Source has the distinctive enclosed heritage concourse/footbridge and pitched canopies. Forward model emerges from a generic dark bore; reverse shows a large earth-coloured slab across the view near the station end. Exact alignment differs. Heritage station assembly, the slab/opening and tunnel/station transitions remain unaccepted.",
+      "acceptance": "not accepted"
+    },
+    {
+      "id": "BBS",
+      "name": "Bordesley",
+      "reference": null,
+      "named_reference": null,
+      "reference_sha256": null,
+      "map": "atlas/maps/dorridge-kidderminster-overview.svg",
+      "map_focus": {
+        "centre": [
+          8406.92,
+          -6036.38
+        ],
+        "viewbox": [
+          8106.92,
+          -6336.38,
+          600,
+          600
+        ]
+      },
+      "views": [
+        {
+          "station": "BBS",
+          "direction": 1,
+          "file": "docs/captures/reconstruction/bbs-forward.png",
+          "sha256": "df053b42fb90df52fbf7af49845b0eb9796c80a48df3f767a95628373ce4f5af",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 32542.761115719833,
+            "lane": 4.2,
+            "direction": 1,
+            "trackPosition": [
+              8370.65826301497,
+              118.40128468249864,
+              -6087.492722352222
+            ],
+            "cameraPosition": [
+              8370.625069961363,
+              120.85028161469727,
+              -6087.554465750848
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "0_-9",
+              "-1_-8",
+              "0_-8",
+              "1_-10",
+              "1_-9",
+              "0_-10",
+              "2_-10",
+              "2_-11",
+              "1_-11",
+              "3_-10",
+              "3_-11",
+              "2_-9",
+              "3_-9",
+              "5_-8",
+              "5_-9",
+              "6_-8",
+              "6_-9",
+              "7_-8",
+              "6_-7",
+              "7_-7",
+              "8_-7",
+              "8_-8",
+              "7_-6",
+              "8_-6",
+              "9_-7"
+            ],
+            "pendingTileIds": [
+              "9_-6"
+            ],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 25,
+              "triangles": 10344588,
+              "placements": 25998,
+              "gpuErrors": [],
+              "drawCalls": 833,
+              "memory": {
+                "geometries": 161,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        },
+        {
+          "station": "BBS",
+          "direction": -1,
+          "file": "docs/captures/reconstruction/bbs-reverse.png",
+          "sha256": "1523982edd112c93ab0e23056f481a7118b80ce634f32ed53e1e367017496aef",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 32662.73027294601,
+            "lane": 0,
+            "direction": -1,
+            "trackPosition": [
+              8440.070816142294,
+              117.22042063470407,
+              -5989.635603499832
+            ],
+            "cameraPosition": [
+              8440.12361410313,
+              119.6693114150123,
+              -5989.584161090742
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "1_-10",
+              "1_-9",
+              "2_-10",
+              "2_-11",
+              "1_-11",
+              "3_-10",
+              "3_-11",
+              "2_-9",
+              "3_-9",
+              "5_-8",
+              "5_-9",
+              "6_-8",
+              "6_-9",
+              "7_-8",
+              "6_-7",
+              "7_-7",
+              "8_-7",
+              "8_-8",
+              "7_-6",
+              "8_-6",
+              "9_-7",
+              "9_-6"
+            ],
+            "pendingTileIds": [],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 22,
+              "triangles": 9094304,
+              "placements": 26679,
+              "gpuErrors": [],
+              "drawCalls": 788,
+              "memory": {
+                "geometries": 158,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        }
+      ],
+      "alignment": "no securely assigned station photograph",
+      "review_status": "source gap",
+      "review": "Reviewed current forward/reverse model views only. Raised platforms and generic shelter/building shapes are visible; no securely assigned station photograph is available. Access, viaduct and station identity cannot be accepted from these captures or source map pins alone.",
+      "acceptance": "not accepted"
+    },
+    {
+      "id": "SMA",
+      "name": "Small Heath",
+      "reference": "references/frames/kidderminster2dorridge0487.jpg",
+      "named_reference": "references/by-location/small-heath/small-heath-original-0487.jpg",
+      "reference_sha256": "03e50780a1ac72b9adec9ad8ff6857a425aa360076655f3cd22cb6b490c7a7e3",
+      "map": "atlas/maps/dorridge-kidderminster-overview.svg",
+      "map_focus": {
+        "centre": [
+          9654.65,
+          -5089.61
+        ],
+        "viewbox": [
+          9354.65,
+          -5389.61,
+          600,
+          600
+        ]
+      },
+      "views": [
+        {
+          "station": "SMA",
+          "direction": 1,
+          "file": "docs/captures/reconstruction/sma-forward.png",
+          "sha256": "3522fd708d7765a1da6a916f26014cc0e2b8ff402252b2c9e3cbc2cf0216a95a",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 34118.82238011887,
+            "lane": 4.2,
+            "direction": 1,
+            "trackPosition": [
+              9602.565398691328,
+              118.02498556194185,
+              -5123.3764393739375
+            ],
+            "cameraPosition": [
+              9602.562602827855,
+              120.4749836094506,
+              -5123.377762382155
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "1_-10",
+              "1_-9",
+              "2_-10",
+              "2_-11",
+              "1_-11",
+              "3_-10",
+              "3_-11",
+              "2_-9",
+              "3_-9",
+              "5_-8",
+              "5_-9",
+              "6_-8",
+              "6_-9",
+              "7_-8",
+              "6_-7",
+              "7_-7",
+              "8_-7",
+              "8_-8",
+              "7_-6",
+              "8_-6",
+              "9_-7",
+              "9_-6",
+              "9_-5",
+              "10_-6"
+            ],
+            "pendingTileIds": [
+              "10_-5"
+            ],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 24,
+              "triangles": 9604418,
+              "placements": 28054,
+              "gpuErrors": [],
+              "drawCalls": 769,
+              "memory": {
+                "geometries": 184,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        },
+        {
+          "station": "SMA",
+          "direction": -1,
+          "file": "docs/captures/reconstruction/sma-reverse.png",
+          "sha256": "3ca9c409b1de18ba8364104c0ffa195398b3107dbd5b448290013b87dd20921e",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 34238.830794635505,
+            "lane": 0,
+            "direction": -1,
+            "trackPosition": [
+              9694.480508828341,
+              118.22497973907522,
+              -5045.642998616867
+            ],
+            "cameraPosition": [
+              9694.477355819303,
+              120.67495323632765,
+              -5045.653949475038
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "1_-11",
+              "3_-10",
+              "3_-11",
+              "2_-9",
+              "3_-9",
+              "5_-8",
+              "5_-9",
+              "6_-8",
+              "6_-9",
+              "7_-8",
+              "6_-7",
+              "7_-7",
+              "8_-7",
+              "8_-8",
+              "7_-6",
+              "8_-6",
+              "9_-7",
+              "9_-6",
+              "9_-5",
+              "10_-6",
+              "10_-5",
+              "8_-5"
+            ],
+            "pendingTileIds": [],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 22,
+              "triangles": 8616560,
+              "placements": 28902,
+              "gpuErrors": [],
+              "drawCalls": 877,
+              "memory": {
+                "geometries": 181,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        }
+      ],
+      "alignment": "approximate station anchor only; source pose, camera and date unknown",
+      "review_status": "reviewed with unresolved differences",
+      "review": "Reviewed both captures against original 0487. Source shows an open railway under a dark road bridge, with brick/vegetation surroundings. Forward model has an earth-coloured wall apparently sealing the view below a green deck; reverse is open with generic platforms. Diagnose emitted wall/deck/support ownership and lower-route clearance; photographic alignment is approximate.",
+      "acceptance": "not accepted"
+    },
+    {
+      "id": "TYS",
+      "name": "Tyseley",
+      "reference": null,
+      "named_reference": null,
+      "reference_sha256": null,
+      "map": "atlas/maps/dorridge-kidderminster-overview.svg",
+      "map_focus": {
+        "centre": [
+          11067.43,
+          -4007.21
+        ],
+        "viewbox": [
+          10767.43,
+          -4307.21,
+          600,
+          600
+        ]
+      },
+      "views": [
+        {
+          "station": "TYS",
+          "direction": 1,
+          "file": "docs/captures/reconstruction/tys-forward.png",
+          "sha256": "b571ccc0c346bae7ac7e9383a343a8f8b976d0593687ad5849c1a91c99f802a8",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 35909.7475014269,
+            "lane": 4.2,
+            "direction": 1,
+            "trackPosition": [
+              11018.562910150431,
+              121.13636602018887,
+              -4035.942721651584
+            ],
+            "cameraPosition": [
+              11018.565710746327,
+              123.58636434285674,
+              -4035.9421087998535
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "1_-11",
+              "3_-10",
+              "3_-11",
+              "2_-9",
+              "3_-9",
+              "5_-8",
+              "5_-9",
+              "6_-8",
+              "6_-9",
+              "7_-8",
+              "6_-7",
+              "7_-7",
+              "8_-7",
+              "8_-8",
+              "7_-6",
+              "8_-6",
+              "9_-7",
+              "9_-6",
+              "9_-5",
+              "10_-6",
+              "10_-5",
+              "8_-5",
+              "11_-5",
+              "11_-4",
+              "10_-4"
+            ],
+            "pendingTileIds": [],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 25,
+              "triangles": 9822172,
+              "placements": 31818,
+              "gpuErrors": [],
+              "drawCalls": 799,
+              "memory": {
+                "geometries": 209,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        },
+        {
+          "station": "TYS",
+          "direction": -1,
+          "file": "docs/captures/reconstruction/tys-reverse.png",
+          "sha256": "4e7a791e5588dfd3325ff560b944487de2e4e1b8efc7f94b17dbda16ee3d4139",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 36030.83290565469,
+            "lane": 0,
+            "direction": -1,
+            "trackPosition": [
+              11120.115439955089,
+              121.38997587277825,
+              -3970.551580333025
+            ],
+            "cameraPosition": [
+              11120.109049328144,
+              123.8399033779334,
+              -3970.5693110795273
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "1_-11",
+              "3_-10",
+              "3_-11",
+              "2_-9",
+              "3_-9",
+              "5_-8",
+              "5_-9",
+              "6_-8",
+              "6_-9",
+              "7_-8",
+              "6_-7",
+              "7_-7",
+              "8_-7",
+              "8_-8",
+              "7_-6",
+              "8_-6",
+              "9_-7",
+              "9_-6",
+              "9_-5",
+              "10_-6",
+              "10_-5",
+              "8_-5",
+              "11_-5",
+              "11_-4",
+              "10_-4"
+            ],
+            "pendingTileIds": [
+              "12_-4"
+            ],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 25,
+              "triangles": 9822172,
+              "placements": 31818,
+              "gpuErrors": [],
+              "drawCalls": 500,
+              "memory": {
+                "geometries": 209,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        }
+      ],
+      "alignment": "no securely assigned station photograph",
+      "review_status": "source gap",
+      "review": "Reviewed current forward/reverse model views only. Model shows multiple mapped platforms, simple canopy and nearby bridge shapes. No securely assigned photograph exists; original 0499 remains only a candidate. Junction/depot context, access and station architecture remain unreviewed against photographs.",
+      "acceptance": "not accepted"
+    },
+    {
+      "id": "ACG",
+      "name": "Acocks Green",
+      "reference": null,
+      "named_reference": null,
+      "reference_sha256": null,
+      "map": "atlas/maps/dorridge-kidderminster-overview.svg",
+      "map_focus": {
+        "centre": [
+          12382.94,
+          -3523.45
+        ],
+        "viewbox": [
+          12082.94,
+          -3823.45,
+          600,
+          600
+        ]
+      },
+      "views": [
+        {
+          "station": "ACG",
+          "direction": 1,
+          "file": "docs/captures/reconstruction/acg-forward.png",
+          "sha256": "452ecec3ae3eb0880209dae40a60f97da6537ffa40c6d33cd90b2304fc846710",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 37319.47784859519,
+            "lane": 4.2,
+            "direction": 1,
+            "trackPosition": [
+              12334.791387425714,
+              123.73422375191647,
+              -3562.4313045491704
+            ],
+            "cameraPosition": [
+              12334.79277226592,
+              126.18422075916197,
+              -3562.4277342962855
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "3_-9",
+              "5_-8",
+              "5_-9",
+              "6_-8",
+              "6_-9",
+              "7_-8",
+              "6_-7",
+              "7_-7",
+              "8_-7",
+              "8_-8",
+              "7_-6",
+              "8_-6",
+              "9_-7",
+              "9_-6",
+              "9_-5",
+              "10_-6",
+              "10_-5",
+              "8_-5",
+              "11_-5",
+              "11_-4",
+              "10_-4",
+              "12_-4",
+              "12_-5"
+            ],
+            "pendingTileIds": [
+              "12_-3"
+            ],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 23,
+              "triangles": 9967867,
+              "placements": 34369,
+              "gpuErrors": [],
+              "drawCalls": 866,
+              "memory": {
+                "geometries": 212,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        },
+        {
+          "station": "ACG",
+          "direction": -1,
+          "file": "docs/captures/reconstruction/acg-reverse.png",
+          "sha256": "b8cc2e45b50781e5538fd0d39cecb817221de35ec823b8abab24b9427e557c08",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 37438.85730924279,
+            "lane": 0,
+            "direction": -1,
+            "trackPosition": [
+              12426.157483678513,
+              123.64500394861449,
+              -3484.168049384443
+            ],
+            "cameraPosition": [
+              12426.152076225131,
+              126.09499723361752,
+              -3484.1661355171564
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "3_-9",
+              "5_-8",
+              "5_-9",
+              "6_-8",
+              "6_-9",
+              "7_-8",
+              "6_-7",
+              "7_-7",
+              "8_-7",
+              "8_-8",
+              "7_-6",
+              "8_-6",
+              "9_-7",
+              "9_-6",
+              "9_-5",
+              "10_-6",
+              "10_-5",
+              "8_-5",
+              "11_-5",
+              "11_-4",
+              "10_-4",
+              "12_-4",
+              "12_-5",
+              "12_-3"
+            ],
+            "pendingTileIds": [
+              "13_-4"
+            ],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 24,
+              "triangles": 10258584,
+              "placements": 35217,
+              "gpuErrors": [],
+              "drawCalls": 782,
+              "memory": {
+                "geometries": 215,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        }
+      ],
+      "alignment": "no securely assigned station photograph",
+      "review_status": "source gap",
+      "review": "Reviewed current forward/reverse model views only. Model has a large rectangular bridge frame and simple platforms/shelters. No securely assigned station photograph exists. Bridge/retaining supports, access, buildings and platform details remain unaccepted.",
+      "acceptance": "not accepted"
+    },
+    {
+      "id": "OLT",
+      "name": "Olton",
+      "reference": "references/frames/kidderminster2dorridge0513.jpg",
+      "named_reference": "references/by-location/olton/olton-original-0513.jpg",
+      "reference_sha256": "53ec8f0306daeba4656d5ec5087d1cd3950f27ffa4e9e31bf28adfe5b50961e8",
+      "map": "atlas/maps/dorridge-kidderminster-overview.svg",
+      "map_focus": {
+        "centre": [
+          13394.47,
+          -2288.0
+        ],
+        "viewbox": [
+          13094.47,
+          -2588.0,
+          600,
+          600
+        ]
+      },
+      "views": [
+        {
+          "station": "OLT",
+          "direction": 1,
+          "file": "docs/captures/reconstruction/olt-forward.png",
+          "sha256": "9e1b79761ab838f662995fb31f30a89a71cbe12f8ef56ca8e598986356fb48e2",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 38934.842224871034,
+            "lane": 4.2,
+            "direction": 1,
+            "trackPosition": [
+              13375.569205379526,
+              124.19483936576675,
+              -2348.8133240906677
+            ],
+            "cameraPosition": [
+              13375.558709415825,
+              126.64479490385585,
+              -2348.823701765385
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "6_-8",
+              "7_-8",
+              "6_-7",
+              "7_-7",
+              "8_-7",
+              "8_-8",
+              "7_-6",
+              "8_-6",
+              "9_-7",
+              "9_-6",
+              "9_-5",
+              "10_-6",
+              "10_-5",
+              "8_-5",
+              "11_-5",
+              "11_-4",
+              "10_-4",
+              "12_-4",
+              "12_-5",
+              "12_-3",
+              "13_-4",
+              "13_-3"
+            ],
+            "pendingTileIds": [
+              "13_-2"
+            ],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 22,
+              "triangles": 9642038,
+              "placements": 37484,
+              "gpuErrors": [],
+              "drawCalls": 692,
+              "memory": {
+                "geometries": 215,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        },
+        {
+          "station": "OLT",
+          "direction": -1,
+          "file": "docs/captures/reconstruction/olt-reverse.png",
+          "sha256": "9b3e350cd1f551d03588ae04029050255c8a8ed43a02a40cfc14dfbd3b34bb9b",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 39054.86437912444,
+            "lane": 0,
+            "direction": -1,
+            "trackPosition": [
+              13410.138405487649,
+              124.93499482301185,
+              -2233.2038206172565
+            ],
+            "cameraPosition": [
+              13410.138069632818,
+              127.38499392182739,
+              -2233.2058949857264
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "7_-7",
+              "8_-7",
+              "7_-6",
+              "8_-6",
+              "9_-7",
+              "9_-6",
+              "9_-5",
+              "10_-6",
+              "10_-5",
+              "8_-5",
+              "11_-5",
+              "11_-4",
+              "10_-4",
+              "12_-4",
+              "12_-5",
+              "12_-3",
+              "13_-4",
+              "13_-3",
+              "13_-2",
+              "12_-2",
+              "14_-3",
+              "14_-2"
+            ],
+            "pendingTileIds": [],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 22,
+              "triangles": 8777262,
+              "placements": 38975,
+              "gpuErrors": [],
+              "drawCalls": 761,
+              "memory": {
+                "geometries": 213,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        }
+      ],
+      "alignment": "approximate station anchor only; source pose, camera and date unknown",
+      "review_status": "reviewed with unresolved differences",
+      "review": "Reviewed both captures against original 0513. Source approach is heavily vegetated and partly backlit, with tight platform-edge surroundings. Model is open, flat and dominated by repeated buildings and furniture. The source does not establish exact canopy dimensions; vegetation, embankment/retaining profile, bridge/access and architecture need additional matched station frames.",
+      "acceptance": "not accepted"
+    },
+    {
+      "id": "SOL",
+      "name": "Solihull",
+      "reference": "references/frames/kidderminster2dorridge0541.jpg",
+      "named_reference": "references/by-location/solihull/solihull-original-0541.jpg",
+      "reference_sha256": "ec83aafc68bd5bcc470c4a354062d144a5a5c90fec27fd802feb457754f706d8",
+      "map": "atlas/maps/dorridge-kidderminster-overview.svg",
+      "map_focus": {
+        "centre": [
+          14457.04,
+          355.1
+        ],
+        "viewbox": [
+          14157.04,
+          55.10000000000002,
+          600,
+          600
+        ]
+      },
+      "views": [
+        {
+          "station": "SOL",
+          "direction": 1,
+          "file": "docs/captures/reconstruction/sol-forward.png",
+          "sha256": "ccbe356865e9d2a8d6aa1ae5ccc6a7387123a2f6786276b4e045c16e8daf9ea7",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 41854.75485634426,
+            "lane": 4.2,
+            "direction": 1,
+            "trackPosition": [
+              14417.391780191458,
+              129.96481276849732,
+              308.96183544202904
+            ],
+            "cameraPosition": [
+              14417.39060646046,
+              132.41480924125338,
+              308.9578472295942
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "7_-7",
+              "8_-7",
+              "7_-6",
+              "8_-6",
+              "9_-7",
+              "9_-6",
+              "9_-5",
+              "10_-6",
+              "10_-5",
+              "8_-5",
+              "11_-5",
+              "11_-4",
+              "10_-4",
+              "12_-4",
+              "12_-5",
+              "12_-3",
+              "13_-4",
+              "13_-3",
+              "13_-2",
+              "12_-2",
+              "14_-3",
+              "14_-2",
+              "14_0"
+            ],
+            "pendingTileIds": [
+              "14_-1"
+            ],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 23,
+              "triangles": 9522755,
+              "placements": 39687,
+              "gpuErrors": [],
+              "drawCalls": 673,
+              "memory": {
+                "geometries": 218,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        },
+        {
+          "station": "SOL",
+          "direction": -1,
+          "file": "docs/captures/reconstruction/sol-reverse.png",
+          "sha256": "cb2b97ed0f25df84c1b0596db019777f8dc1a841a41b17d860cd99b214512f04",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 41974.907010134266,
+            "lane": 0,
+            "direction": -1,
+            "trackPosition": [
+              14495.978532247407,
+              130.03,
+              400.4482674792872
+            ],
+            "cameraPosition": [
+              14495.982025930703,
+              132.47999750888147,
+              400.4482419513951
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "8_-6",
+              "9_-6",
+              "9_-5",
+              "10_-6",
+              "10_-5",
+              "8_-5",
+              "11_-5",
+              "11_-4",
+              "10_-4",
+              "12_-4",
+              "12_-5",
+              "12_-3",
+              "13_-4",
+              "13_-3",
+              "13_-2",
+              "12_-2",
+              "14_-3",
+              "14_-2",
+              "14_0",
+              "14_-1",
+              "13_0",
+              "15_0"
+            ],
+            "pendingTileIds": [
+              "14_1"
+            ],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 22,
+              "triangles": 8556662,
+              "placements": 40600,
+              "gpuErrors": [],
+              "drawCalls": 561,
+              "memory": {
+                "geometries": 222,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        }
+      ],
+      "alignment": "approximate station anchor only; source pose, camera and date unknown",
+      "review_status": "reviewed with unresolved differences",
+      "review": "Reviewed both captures against original 0541. This is a platform-side photograph, not a forward-cab pose; it establishes pitched canopy, station building and planting details. Model has open broad platforms, generic flat forms and repeated nearby blocks. Station-specific canopy/roof, buildings, access and planting remain unaccepted; direct pixel alignment would be invalid.",
+      "acceptance": "not accepted"
+    },
+    {
+      "id": "WMR",
+      "name": "Widney Manor",
+      "reference": null,
+      "named_reference": null,
+      "reference_sha256": null,
+      "map": "atlas/maps/dorridge-kidderminster-overview.svg",
+      "map_focus": {
+        "centre": [
+          15458.13,
+          2421.07
+        ],
+        "viewbox": [
+          15158.13,
+          2121.07,
+          600,
+          600
+        ]
+      },
+      "views": [
+        {
+          "station": "WMR",
+          "direction": 1,
+          "file": "docs/captures/reconstruction/wmr-forward.png",
+          "sha256": "6e58687cb3418e5362ce5f4c8141d616a6c6cc8f0843de427d144fd3dbb30b50",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 44190.83271101111,
+            "lane": 4.2,
+            "direction": 1,
+            "trackPosition": [
+              15443.386264621764,
+              126.33509707449863,
+              2361.0746701890575
+            ],
+            "cameraPosition": [
+              15443.387373951602,
+              128.78509171425628,
+              2361.0796736424786
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "8_-6",
+              "9_-6",
+              "9_-5",
+              "10_-6",
+              "10_-5",
+              "8_-5",
+              "11_-5",
+              "11_-4",
+              "10_-4",
+              "12_-4",
+              "12_-5",
+              "12_-3",
+              "13_-4",
+              "13_-3",
+              "13_-2",
+              "12_-2",
+              "14_-3",
+              "14_-2",
+              "14_0",
+              "14_-1",
+              "13_0",
+              "15_0",
+              "14_1",
+              "15_2"
+            ],
+            "pendingTileIds": [
+              "15_1"
+            ],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 24,
+              "triangles": 9435298,
+              "placements": 41886,
+              "gpuErrors": [],
+              "drawCalls": 385,
+              "memory": {
+                "geometries": 227,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        },
+        {
+          "station": "WMR",
+          "direction": -1,
+          "file": "docs/captures/reconstruction/wmr-reverse.png",
+          "sha256": "82be3aeecf6afdf890f8036bf2aa27764099cd3b193e7da749a40969fb49289f",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 44310.903958482886,
+            "lane": 0,
+            "direction": -1,
+            "trackPosition": [
+              15471.52320464464,
+              126.12001639593936,
+              2477.7736875633445
+            ],
+            "cameraPosition": [
+              15471.52427961958,
+              128.57000866437562,
+              2477.779748011465
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "10_-5",
+              "8_-5",
+              "11_-5",
+              "11_-4",
+              "10_-4",
+              "12_-4",
+              "12_-5",
+              "12_-3",
+              "13_-4",
+              "13_-3",
+              "13_-2",
+              "12_-2",
+              "14_-3",
+              "14_-2",
+              "14_0",
+              "14_-1",
+              "13_0",
+              "15_0",
+              "14_1",
+              "15_2",
+              "15_1",
+              "14_2"
+            ],
+            "pendingTileIds": [
+              "15_3"
+            ],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 22,
+              "triangles": 8187526,
+              "placements": 42738,
+              "gpuErrors": [],
+              "drawCalls": 581,
+              "memory": {
+                "geometries": 229,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        }
+      ],
+      "alignment": "no securely assigned station photograph",
+      "review_status": "source gap",
+      "review": "Reviewed current forward/reverse model views only. Forward shows broad open platforms and generic surroundings; reverse is almost completely filled by an earth-coloured vertical face near the camera. This is an unresolved obstruction candidate even without a securely assigned station photograph. Determine source-owned geometry and train/road openings before accepting the site.",
+      "acceptance": "not accepted"
+    },
+    {
+      "id": "DDG",
+      "name": "Dorridge",
+      "reference": null,
+      "named_reference": null,
+      "reference_sha256": null,
+      "map": "atlas/maps/dorridge-kidderminster-overview.svg",
+      "map_focus": {
+        "centre": [
+          16922.56,
+          5105.35
+        ],
+        "viewbox": [
+          16622.56,
+          4805.35,
+          600,
+          600
+        ]
+      },
+      "views": [
+        {
+          "station": "DDG",
+          "direction": 1,
+          "file": "docs/captures/reconstruction/ddg-forward.png",
+          "sha256": "9bfad78fc6e76db2ca0abb6ee4cd329d2aac9f84ea56235d3a8ceb2d46f01336",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 47270.29910711822,
+            "lane": 4.2,
+            "direction": 1,
+            "trackPosition": [
+              16887.096753968955,
+              123.6094194615661,
+              5056.537751540949
+            ],
+            "cameraPosition": [
+              16887.08846294076,
+              126.05933413510091,
+              5056.519060600624
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "11_-4",
+              "12_-4",
+              "12_-5",
+              "12_-3",
+              "13_-4",
+              "13_-3",
+              "13_-2",
+              "12_-2",
+              "14_-3",
+              "14_-2",
+              "14_0",
+              "14_-1",
+              "13_0",
+              "15_0",
+              "14_1",
+              "15_2",
+              "15_1",
+              "14_2",
+              "15_3",
+              "16_5",
+              "16_4",
+              "17_5",
+              "17_4",
+              "15_4"
+            ],
+            "pendingTileIds": [],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 24,
+              "triangles": 8483781,
+              "placements": 45225,
+              "gpuErrors": [],
+              "drawCalls": 140,
+              "memory": {
+                "geometries": 229,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        },
+        {
+          "station": "DDG",
+          "direction": -1,
+          "file": "docs/captures/reconstruction/ddg-reverse.png",
+          "sha256": "7f8f9f469ae60138b31d0dc054a3206e8dba81411a9d77c8d83a9efebec6bf07",
+          "viewport": [
+            640,
+            360
+          ],
+          "renderScale": 0.5,
+          "quality": "low",
+          "state": {
+            "s": 47390.93894344575,
+            "lane": 0,
+            "direction": -1,
+            "trackPosition": [
+              16951.14586422341,
+              123.82,
+              5158.532319663582
+            ],
+            "cameraPosition": [
+              16951.14736785274,
+              126.26999916055138,
+              5158.530958635911
+            ],
+            "fieldOfView": 62,
+            "worldHash": "335640056a9acf3d38564b2a887c4c737134540d0e9d26ca02dd8f6801082b89",
+            "loadedTileIds": [
+              "11_-4",
+              "12_-4",
+              "12_-5",
+              "12_-3",
+              "13_-4",
+              "13_-3",
+              "13_-2",
+              "12_-2",
+              "14_-3",
+              "14_-2",
+              "14_0",
+              "14_-1",
+              "13_0",
+              "15_0",
+              "14_1",
+              "15_2",
+              "15_1",
+              "14_2",
+              "15_3",
+              "16_5",
+              "16_4",
+              "17_5",
+              "17_4",
+              "15_4"
+            ],
+            "pendingTileIds": [],
+            "stats": {
+              "backend": "WebGL2",
+              "adapter": "WebKit WebGL",
+              "tiles": 24,
+              "triangles": 8483781,
+              "placements": 45225,
+              "gpuErrors": [],
+              "drawCalls": 821,
+              "memory": {
+                "geometries": 245,
+                "textures": 3
+              }
+            }
+          },
+          "photoComparison": "unreviewed"
+        }
+      ],
+      "alignment": "no securely assigned station photograph",
+      "review_status": "source gap",
+      "review": "Reviewed current forward/reverse model views only. Forward is apparently blocked by a large earth-coloured wall beneath/near a deck, while reverse exposes broad platforms and generic canopy/building forms. No securely assigned station photograph exists. The obstruction, terminal architecture, access and nearby crossing context remain unaccepted.",
+      "acceptance": "not accepted"
+    }
+  ]
+}

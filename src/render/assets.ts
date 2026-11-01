@@ -200,9 +200,9 @@ export class AssetFactory {
     const platformWidth=snow?5:4.1, trackSpacing=config.trackSpacing??4.2, inner=trackSpacing/2+1.7;
     const centre=inner+platformWidth/2;
     platform(g,-centre,platformWidth,length,heritage); platform(g,centre,platformWidth,length,heritage);
-    const canopyLength=Math.min(length*.56,heritage?80:65);
+    const canopyLength=Number(config.canopyLength)||Math.min(length*.56,heritage?80:65),canopyCentre=Number(config.canopyCentre??-10);
     for(const side of [-1,1]) {
-      canopy(g,side*(centre+.15),-10,platformWidth+.5,snow?length:canopyLength,heritage);
+      canopy(g,side*(centre+.15),canopyCentre,platformWidth+.5,snow?length:canopyLength,heritage);
       const b=this.building({width:3.5,depth:heritage?16:10,height:heritage?3.2:2.8,style:heritage?'historic':'station',seed:13});
       b.position.set(side*(inner+platformWidth+1.6),PLATFORM_HEIGHT,-15);g.add(b);
       for(let zz=-length/2+15;zz<length/2;zz+=24) {
@@ -341,6 +341,17 @@ export class AssetFactory {
     box(g,C.dark,hand*1.8,-.02,-3.0,.7,.3,.45);box(g,C.steel,hand*.5,-.06,-3.0,2.4,.055,.06);
     g.userData.blades=blades;g.userData.gauge=gauge;g.userData.railHeadWidth=railHeadWidth;g.userData.stockRailCentres=[-railCentre,railCentre];g.userData.hand=hand;g.userData.routeEnds={normal:[0,0,-length],reverse:[hand*3.8,0,-length]};
     setTurnoutState(g,config.state==='reverse'?1:0);return finish(g,'turnout',config);
+  }
+
+  masonryArch(config:Config):THREE.Group {
+    const g=new THREE.Group(),opening=Number(config.opening)||9.2,half=opening/2,height=Number(config.height)||6.8,depth=Number(config.depth)||7.5,shear=Number(config.shear)||0,edge=half+2,spring=Number(config.spring)||2.9,rise=Number(config.rise)||3.2;
+    const shape=new THREE.Shape();shape.moveTo(-edge,-1);shape.lineTo(edge,-1);shape.lineTo(edge,height);shape.lineTo(-edge,height);shape.closePath();
+    const hole=new THREE.Path();hole.moveTo(-half,-.8);hole.lineTo(half,-.8);hole.lineTo(half,spring);hole.absellipse(0,spring,half,rise,0,Math.PI,false,0);hole.lineTo(-half,-.8);hole.closePath();shape.holes.push(hole);
+    const geometry=new THREE.ExtrudeGeometry(shape,{depth,steps:1,bevelEnabled:false,curveSegments:14});geometry.translate(0,0,-depth/2);const p=geometry.getAttribute('position');for(let i=0;i<p.count;i++)p.setZ(i,p.getZ(i)+p.getX(i)*shear);geometry.computeVertexNormals();mesh(geometry,C.brick,g,0,0,0);
+    const dx=edge*2,dz=dx*shear,length=Math.hypot(dx,dz),yaw=Math.atan2(-dx,-dz);
+    for(const side of[-1,1]){const parapet=box(g,C.brick,0,height+.50,side*(depth/2-.1),.38,1.0,length);parapet.rotation.y=yaw;const cap=box(g,C.stone,0,height+1.05,side*(depth/2-.1),.49,.14,length+.3);cap.rotation.y=yaw;}
+    g.userData.opening={width:opening,spring,rise,depth,shear};g.userData.deckHeight=height;
+    return finish(g,'masonry-arch',config,[[-half-1,-1,-depth/2],[-half-1,-1,depth/2],[half+1,-1,-depth/2],[half+1,-1,depth/2]].map(([x,y,z])=>[x,y,z+x*shear]));
   }
 
   bridge(config: Config = {}): THREE.Group {

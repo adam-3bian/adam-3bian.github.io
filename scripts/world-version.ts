@@ -24,6 +24,6 @@ export function worldIdentity(root=process.cwd(),overrides?:Overrides):string {
     const baseline=JSON.parse(readFileSync(baselineFile,'utf8')) as Baseline;
     if(/^[0-9a-f]{64}$/.test(baseline.legacyWorldHash)&&baseline.sourceFingerprint===sourceFingerprint(root,overrides)&&baseline.configHash===fileHash(root,'vite.config.ts',overrides)&&baseline.policyHash===fileHash(root,'scripts/world-version.ts',overrides))return baseline.legacyWorldHash;
   }
-  const physical=['vite.config.ts','scripts/world-version.ts','src/core/geometry.ts','src/core/simulation.ts','src/core/pose.ts','src/core/resource-url.ts','src/world/build.ts','src/world/platforms.ts','src/world/surfaces.ts','src/world/traffic.ts','src/render/assets.ts','src/render/trackwork.ts','src/render/batch.ts','src/render/renderer.ts',...dataFiles(root)];
+  const physical=['vite.config.ts','scripts/world-version.ts','src/core/geometry.ts','src/core/simulation.ts','src/core/pose.ts','src/core/resource-url.ts','src/world/build.ts','src/world/access-sites.ts','src/world/road-sites.ts','src/world/site-definitions.json','src/world/platforms.ts','src/world/surfaces.ts','src/world/traffic.ts','src/render/assets.ts','src/render/trackwork.ts','src/render/batch.ts','src/render/renderer.ts',...dataFiles(root)];
   return hashFiles(root,physical,overrides);
 }

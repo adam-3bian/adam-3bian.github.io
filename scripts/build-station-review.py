@@ -1,0 +1,21 @@
+"""Pair current station views with supported source anchors; never auto-approve."""
+import json,hashlib,html
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]
+ANCHORS={'KID':27,'BKD':90,'HAG':133,'SBJ':178,'LYE':229,'CRA':247,'OHL':272,'ROW':287,'LGG':None,'SGB':345,'THW':361,'JEQ':397,'BSW':423,'BMO':443,'BBS':None,'SMA':487,'TYS':None,'ACG':None,'OLT':513,'SOL':541,'WMR':None,'DDG':None}
+def main():
+ run=json.loads((ROOT/'docs/reports/reconstruction-browser.json').read_text());locations=json.loads((ROOT/'references/location-index.json').read_text());notes_file=ROOT/'docs/station-review-notes.json';notes_doc=json.loads(notes_file.read_text()) if notes_file.exists() else {};notes={}
+ # A review is evidence for the exact rendered build/images, never a reusable approval.
+ if notes_doc.get('manifestSHA256')==run['manifestSHA256'] and all(notes_doc.get('captureSHA256',{}).get(c['file'])==c['sha256'] for c in run['captures']):notes=notes_doc.get('reviews',{})
+ sha=lambda p:hashlib.sha256((ROOT/p).read_bytes()).hexdigest();rows=[];cards=[]
+ if sha('site/build-manifest.json')!=run['manifestSHA256']:raise ValueError('Capture build is stale; rerun current-build capture before reviewing')
+ if any(sha(c['file'])!=c['sha256'] for c in run['captures']):raise ValueError('Capture bytes changed; recapture/review instead of inheriting notes')
+ for s in locations['stations']:
+  views=[c for c in run['captures'] if c['station']==s['id']];number=ANCHORS[s['id']];ref=f'references/frames/kidderminster2dorridge{number:04d}.jpg' if number else None;named=next((r['named_path'] for r in locations['records'] if r['original_frame']==number),None) if number else None
+  note=notes.get(s['id']);row={'id':s['id'],'name':s['name'],'reference':ref,'named_reference':'references/'+named if named else None,'reference_sha256':sha(ref) if ref else None,'map':s['map'],'map_focus':s['map_focus'],'views':views,'alignment':'approximate station anchor only; source pose, camera and date unknown' if ref else 'no securely assigned station photograph','review_status':'source gap' if not ref else 'unreviewed' if not note else 'reviewed with unresolved differences','review':note,'acceptance':'not accepted'};rows.append(row)
+  images=(f'<a href="../{ref}"><img src="../{ref}"></a>' if ref else '<p>No securely assigned station photograph</p>')+''.join(f'<a href="../{c["file"]}"><img src="../{c["file"]}"></a>' for c in views)
+  cards.append('<article><h2>'+html.escape(s['name'])+'</h2><div>'+images+'</div><p>'+html.escape(row['alignment'])+'</p><p>'+html.escape(note or row['review_status'])+'</p></article>')
+ report={'version':1,'scriptSHA256':sha('scripts/build-station-review.py'),'notesSHA256':sha('docs/station-review-notes.json') if notes_file.exists() else None,'captureReportSHA256':sha('docs/reports/reconstruction-browser.json'),'scope':'Current station QA front views paired with source anchors where supported; all poses approximate and no independent recognisability review. Captures are low-resolution software WebGL fixtures, not 1080p acceptance or uninterrupted streaming. Source-map comparisons are separate.','manifestSHA256':run['manifestSHA256'],'source_hashes':run['sourceHashes'],'station_count':len(rows),'captured_views':sum(len(s['views']) for s in rows),'stations_with_supported_photo':sum(bool(s['reference']) for s in rows),'stations_with_model_view_review':sum(bool(s['review']) for s in rows),'stations_with_photographic_review':sum(bool(s['review'] and s['reference']) for s in rows),'accepted':0,'stations':rows}
+ (ROOT/'docs/station-review.json').write_text(json.dumps(report,indent=2)+'\n');(ROOT/'docs/station-review.html').write_text('<!doctype html><html lang="en"><meta charset="utf-8"><title>Station reference review</title><style>body{font:16px sans-serif;margin:2rem}article{border-bottom:1px solid #aaa;padding-bottom:2rem}article>div{display:flex;gap:1rem;flex-wrap:wrap}img{width:320px;max-width:100%}</style><h1>Station reference review — incomplete</h1><p>Reference, forward game view and reverse game view. Named references and current captures remain separate from acceptance.</p>'+''.join(cards)+'</html>')
+ print({k:v for k,v in report.items() if k not in ['stations','source_hashes','scope','manifestSHA256']})
+if __name__=='__main__':main()

@@ -1,5 +1,6 @@
 import type {Feature,RouteData,TerrainMeta,V3} from '../core/types';
 import {RouteGeometry,Polyline,clamp,mix,smooth} from '../core/geometry';
+import {referenceRoadProfile} from './road-sites';
 
 export interface RoadSurface {id:string;kind:string;width:number;points:V3[];path:Polyline;crossingS?:number;routeS?:number;mode:'ground'|'over'|'under'|'crossing';inferred:boolean;spanHalfLength?:number;sourceStructure?:string;}
 export class Terrain {
@@ -14,6 +15,7 @@ export class Terrain {
 
 export function engineerRoad(feature:Feature,route:RouteGeometry):RoadSurface|null {
   if(!feature.points||feature.points.length<2)return null;
+  const authored=referenceRoadProfile(feature,route);if(authored)return authored;
   const points=feature.points.map(p=>[...p] as V3);const initial=new Polyline(points);const road:RoadSurface={id:feature.id,kind:String(feature.kind||'residential'),width:Number(feature.width)||5.6,points,path:initial,mode:'ground',inferred:false};
   const foot=['footway','path','steps','cycleway','pedestrian'].includes(road.kind);if(foot)road.width=Math.min(2.2,road.width);
   const relations=(feature.gradeRelations||[]) as {structure:string;relation:'on'|'under';y:number}[];

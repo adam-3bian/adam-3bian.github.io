@@ -7,6 +7,7 @@ import {routeResourceUrl} from '../core/resource-url';
 import type {RouteData,V3} from '../core/types';
 import type {RailwaySimulation} from '../core/simulation';
 import {makeSwitch,setSwitchBlend} from './trackwork';
+import {ViewportSizing} from './viewport';
 
 export class RailwayRenderer {
   readonly scene=new THREE.Scene();readonly camera=new THREE.PerspectiveCamera(62,1,.2,2400);
@@ -14,6 +15,7 @@ export class RailwayRenderer {
   get roadTraffic(){return this.sim.roadTraffic;}
   private readonly loopFootGeometry=new THREE.BoxGeometry(.18,.25,.18);private readonly loopFootMaterial=new THREE.MeshStandardMaterial({color:0x525b54,roughness:.95});
   readonly renderer:THREE.WebGLRenderer;
+  private readonly viewport:ViewportSizing;
   private worker:Worker;private ready=false;private loaded=new Map<string,{mesh:THREE.Mesh;used:number}>();private requested=new Set<string>();
   private tileRetries=new Map<string,{attempts:number;next:number}>();
   private requestTokens=new Map<string,number>();private requestTimers=new Map<string,number>();private requestAborts=new Map<string,AbortController>();private nextRequestToken=0;
@@ -34,7 +36,7 @@ export class RailwayRenderer {
     this.renderer.shadowMap.enabled=true;this.scene.background=new THREE.Color(0xcdd6cc);this.scene.fog=this.fog;this.scene.add(this.ambient,this.sun);this.sun.position.set(-140,250,-80);this.sun.castShadow=true;this.sun.shadow.mapSize.set(1024,1024);Object.assign(this.sun.shadow.camera,{left:-95,right:95,top:95,bottom:-95,near:1,far:650});this.sun.shadow.bias=-.0005;this.sun.shadow.normalBias=.12;this.sun.shadow.camera.updateProjectionMatrix();this.scene.add(this.sun.target);
     this.container.appendChild(this.renderer.domElement);this.renderer.domElement.setAttribute('aria-label','View from the front of the train');
     this.worker=this.createWorker();
-    window.addEventListener('resize',()=>this.resize());this.resize();
+    this.viewport=new ViewportSizing(this.container,this.renderer,this.camera,Number(context.getParameter(context.MAX_RENDERBUFFER_SIZE))||8192);
   }
   async init(terrain:ArrayBuffer){
     if(this.renderer.getContext().isContextLost())throw new Error('The WebGL 2 context was lost. Reload to reconnect graphics.');
@@ -77,9 +79,8 @@ export class RailwayRenderer {
     if(attempts>=4){const error=`Scenery tile ${id} failed after ${attempts} attempts: ${reason}`;this.failures.push(error);this.onError?.(new Error(error));return;}
     window.setTimeout(()=>{if(!this.disposed)this.updateTiles(true);},Math.max(1,Math.ceil(next-performance.now())+1));this.updateTiles(true);
   }
-  private resize(){const w=this.container.clientWidth||innerWidth,h=this.container.clientHeight||innerHeight;this.camera.aspect=w/h;this.camera.updateProjectionMatrix();this.renderer.setSize(w,h);}
   setQuality(quality:'low'|'balanced'|'high'){this.quality=quality;this.renderer.shadowMap.enabled=quality!=='low';this.updateTiles(true);}
-  setRenderScale(scale:number){this.renderer.setPixelRatio(Number.isFinite(scale)?Math.max(.5,Math.min(1,scale)):.5);this.resize();}
+  setRenderScale(scale:number){this.viewport.setScale(scale);}
   resetTraffic(){for(const model of this.carModels.values())this.scene.remove(model);this.carModels.clear();}
   async preparePosition(){this.updateTiles(true);const p=this.route.lanePose(this.sim.player.s,this.sim.player.lane).position;const needed=this.data.tiles.filter(t=>Math.hypot(Math.max(t.bounds[0]-p[0],0,p[0]-t.bounds[2]),Math.max(t.bounds[1]-p[2],0,p[2]-t.bounds[3]))<250).map(t=>t.id);await new Promise<void>((resolve,reject)=>{const start=performance.now();const check=()=>{if(needed.every(id=>this.loaded.has(id)))resolve();else if(performance.now()-start>90000)reject(new Error('The departure scenery could not be prepared. Reload and try again.'));else setTimeout(check,150);};check();});}
   private place(group:THREE.Group,s:number,offset=0,reverse=false){const pose=this.route.sample(s,offset);group.position.fromArray(pose.position);group.rotation.set(pose.pitch,pose.yaw+(reverse?Math.PI:0),-pose.bank);this.scene.add(group);}
@@ -118,7 +119,7 @@ export class RailwayRenderer {
   /** Explicit GPU synchronization for capture/diagnostics, not used by the normal render loop. */
   async finishFrame(){this.renderer.getContext().finish();}
   stats(){return {backend:this.renderer.getContext().isContextLost()?'unavailable':'WebGL2',adapter:this.gpuInfo,tiles:this.tileCount,triangles:this.triangles,placements:this.placements,gpuErrors:this.failures,drawCalls:this.renderer.info.render.calls,memory:this.renderer.info.memory};}
-  dispose(){this.disposed=true;for(const id of [...this.requested])this.clearRequest(id);this.renderer.domElement.removeEventListener('webglcontextlost',this.contextLost);this.worker.terminate();this.renderer.dispose();}
+  dispose(){this.disposed=true;this.viewport.dispose();for(const id of [...this.requested])this.clearRequest(id);this.renderer.domElement.removeEventListener('webglcontextlost',this.contextLost);this.worker.terminate();this.renderer.dispose();}
 }
 function mixNumber(a:number,b:number,t:number){return a+(b-a)*t;}
 function hashId(s:string){let h=0;for(const c of s)h=Math.imul(h,31)+c.charCodeAt(0);return h>>>0;}

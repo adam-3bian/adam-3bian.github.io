@@ -294,7 +294,8 @@ def main():
         name=title(el);ident=re.search(r"way/\d+",name);roadclass=re.search(r" · ([a-z_]+);",name)
         for pi,p in enumerate(join_subpaths(paths(el.get("d","")))):
             if not near(p,850):continue
-            p=simplify(p,10)
+            # Preserve source bends and junction vertices; coarse simplification
+            # can shortcut a mapped road by almost10m.
             center=p[len(p)//2]
             road={"id":(ident.group(0) if ident else "road")+f"/{pi}","points":lifted(p,"road"),"width":float(el.get("stroke-width",5.5)),"kind":roadclass.group(1) if roadclass else "unclassified","name":name.split(" · ")[0] if not name.startswith("way/") else "","confidence":"mapped source geometry; ground-based inferred profile"}
             tiles[tile_for(center)]["roads"].append(road)
@@ -790,7 +791,7 @@ def build_road_surfaces():
             key=(feature['id'],json.dumps(points,separators=(',',':')))
             bounds=[min(p[0] for p in points),min(p[2] for p in points),max(p[0] for p in points),max(p[2] for p in points)]
             roads[key]={**feature,'bounds':bounds}
-    result={'version':1,'generatedBy':'python scripts/build_route.py --roads','source':'Supplied overview SVG road paths already exported to centroid-owned source tiles; no new road geometry, height or grade classification introduced','confidence':'mapped horizontal geometry; source-ground-based inferred height profiles; see SOURCE-GAPS.md','coordinateSystem':{'x':'E-400000','y':'metres ODN','z':'280000-N'},'runtimeUse':'Filter bounds against tile plus support margin, engineer deterministically in ID order for terrain/support only; retain tile ownership for mesh/traffic generation','sources':sources,'roads':[roads[k] for k in sorted(roads)]}
+    result={'version':1,'generatedBy':'python scripts/build_route.py --roads','source':'Supplied overview SVG road paths already exported to centroid-owned source tiles; no new road geometry, height or grade classification introduced','confidence':'mapped horizontal geometry; source-ground-based inferred height profiles; see SOURCE-GAPS.md','coordinateSystem':{'x':'E-400000','y':'metres ODN','z':'280000-N'},'runtimeUse':'Filter bounds against tile plus support margin, engineer deterministically in ID order for terrain/support and the simulation-owned motor-road graph; retain tile ownership for mesh generation','sources':sources,'roads':[roads[k] for k in sorted(roads)]}
     json_write(OUT/'road-surfaces.json',result)
     print(json.dumps({'roadSurfaces':len(result['roads']),'bytes':(OUT/'road-surfaces.json').stat().st_size}))
 

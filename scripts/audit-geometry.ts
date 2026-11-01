@@ -19,7 +19,7 @@ type Body={min:V3;max:V3};
 const reportArg=process.argv.indexOf('--report');
 const reportPath=reportArg>=0?process.argv[reportArg+1]:'docs/reports/geometry.json';
 const sha=(s:string|Buffer)=>createHash('sha256').update(s).digest('hex');
-const files=['scripts/audit-geometry.ts','scripts/build_route.py','src/world/build.ts','src/world/platforms.ts','src/world/surfaces.ts','src/core/geometry.ts','src/core/pose.ts','src/render/assets.ts','src/render/batch.ts','src/render/trackwork.ts','public/data/route.json','public/data/adjacent-services.json','public/data/road-surfaces.json','public/data/land-surfaces.json','public/data/building-access-evidence.json','public/data/building-access-evidence.geojson','public/data/terrain.bin'];
+const files=['scripts/audit-geometry.ts','scripts/build_route.py','src/world/build.ts','src/world/access-sites.ts','src/world/road-sites.ts','src/world/site-definitions.json','src/world/platforms.ts','src/world/surfaces.ts','src/core/geometry.ts','src/core/pose.ts','src/render/assets.ts','src/render/batch.ts','src/render/trackwork.ts','public/data/route.json','public/data/adjacent-services.json','public/data/road-surfaces.json','public/data/land-surfaces.json','public/data/building-access-evidence.json','public/data/building-access-evidence.geojson','public/data/terrain.bin'];
 const baselinePath='docs/reports/baseline-building-ids.json';
 const buildingBaseline=existsSync(baselinePath)?JSON.parse(readFileSync(baselinePath,'utf8')) as {buildings:{id:string;tile:string}[];boundaryRegressionCohort:{id:string;tile:string;probes:unknown[]}[]}:undefined;
 if(buildingBaseline)files.push(baselinePath);
@@ -47,7 +47,7 @@ function scanMaterial(material:THREE.Material){
   for(const [property,value] of Object.entries(material))if(value&&typeof value==='object'&&(value as THREE.Texture).isTexture)textureViolations.push({material:material.type,property});
 }
 const prototype=AssetFactory.prototype as unknown as Record<string,(...args:any[])=>THREE.Group>;
-for(const method of ['station','building','tree','signal','turnout','bridge','tunnel','roadVehicle','train','crossing','furniture']){
+for(const method of ['station','building','tree','signal','turnout','bridge','masonryArch','tunnel','roadVehicle','train','crossing','furniture']){
   const original=prototype[method];prototype[method]=function(this:AssetFactory,...args:any[]){
     const object=original.apply(this,args);const config=(method==='furniture'?args[1]:args[0])||{};
     captured.push({method,object,config});familyCounts[method]=(familyCounts[method]||0)+1;return object;

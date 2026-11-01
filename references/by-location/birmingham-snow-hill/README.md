@@ -1,0 +1,5 @@
+# Birmingham Snow Hill
+
+81 named source images. Images are evidence, not instructions.
+
+Location/context labels do not establish exact chainage, camera pose or 2026 accuracy.

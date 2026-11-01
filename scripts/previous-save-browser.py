@@ -24,8 +24,9 @@ async def main():
    await page.click('#settings-open');await page.select_option('#quality','low');await page.click('[data-close="settings"]')
    await page.click('#begin');await page.wait_for_function('!document.getElementById("hud").hidden',timeout=180000)
    await page.click('#save');await page.wait_for_function('document.getElementById("notice").textContent.includes("Journey saved")',timeout=30000)
-   old=await read_save(page);assert old and old.get('roadTraffic') and isinstance(old['roadTraffic'].get('roads'),list)
-   out['checks']['realPreviousSave']={'worldHash':old['worldHash'],'roads':len(old['roadTraffic']['roads']),'cars':len(old['roadTraffic']['cars'])};print('PREVIOUS',out['checks']['realPreviousSave'],flush=True)
+   old=await read_save(page);assert old and old.get('roadTraffic') and isinstance(old['roadTraffic'].get('cars'),list)
+   assert old['roadTraffic'].get('version')==2 or isinstance(old['roadTraffic'].get('roads'),list)
+   out['checks']['realPreviousSave']={'worldHash':old['worldHash'],'trafficStateVersion':old['roadTraffic'].get('version',1),'storedRoads':len(old['roadTraffic']['roads']) if 'roads' in old['roadTraffic'] else None,'cars':len(old['roadTraffic']['cars'])};print('PREVIOUS',out['checks']['realPreviousSave'],flush=True)
    link.unlink();link.symlink_to('../../site')
    await page.goto('http://127.0.0.1:4175/current/?current',wait_until='domcontentloaded');await ready(page)
    await page.locator('#resume-save').wait_for(state='visible',timeout=30000);await page.click('#resume-save');await page.wait_for_function('!document.getElementById("error").hidden',timeout=30000)
@@ -33,7 +34,7 @@ async def main():
    out['checks']['rejectedWithMessage']=text;out['checks']['previousSavePreserved']=saved==old
    assert 'another route version' in text and saved==old and not out['errors'];out['passed']=True
   except Exception as e:
-   out['errors'].append(str(e));out['passed']=False;print('ERROR',repr(e),flush=True)
+   out['errors'].append(repr(e));out['passed']=False;print('ERROR',repr(e),flush=True)
   await browser.close()
  Path('docs/reports/previous-save-browser.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps(out,indent=2),flush=True)
  if not out['passed']:raise SystemExit(1)

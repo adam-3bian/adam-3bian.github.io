@@ -1,14 +1,15 @@
 {
   "method": "Real previous committed production build creates save; current production build served at same static origin; headless SwiftShader",
-  "previousCommit": "9c5dd1a446618e72abc17ba793dc359735a1d8d4",
-  "previousManifestSHA256": "1e2b27c0d015981e9ad90e32165f134d754150a4b58adaf572d4378e416c1192",
-  "currentManifestSHA256": "64a46b2914c4115499ea4d9ab1b2c5828470eed6f7823bbccb9e78fe2285c41b",
-  "scriptSHA256": "d389f80737a52c6a9fcbb334e9609aea5fb893ba08e139165521286b8a12e9c6",
+  "previousCommit": "4c6446b2d809dc5a4ed151c221f780cc4be832a0",
+  "previousManifestSHA256": "64a46b2914c4115499ea4d9ab1b2c5828470eed6f7823bbccb9e78fe2285c41b",
+  "currentManifestSHA256": "4fb15b1e684614e0cd2535621715e208805ee7d095ac5d8aa39fd0e7559f823f",
+  "scriptSHA256": "b79fbdd4aa1a6e415b24481b62c17db42d3c7d2c8b6229a810799dc7be345a29",
   "checks": {
     "realPreviousSave": {
-      "worldHash": "989d7fb12e8be65cd86777c07ee04ca536985df5169ed062819647b6b19d8631",
-      "roads": 299,
-      "cars": 70
+      "worldHash": "8b970ae0ba7c8c6e18baa28c5761803b2fffbabfe63f21c3979d239a954da7da",
+      "trafficStateVersion": 2,
+      "storedRoads": null,
+      "cars": 1038
     },
     "rejectedWithMessage": "This save belongs to another route version. Start a new journey.",
     "previousSavePreserved": true

@@ -1,0 +1,69 @@
+{
+  "generatedAt": "2026-11-01T16:02:08.036Z",
+  "sourceHashes": {
+    "scripts/audit-hagley-access.ts": "6fc94646b1abeeb5e148408be618ffe49d60c96d0a92f483f69ac1d1aed420d2",
+    "src/core/geometry.ts": "bdfb3e91bf21e6f43ddacb6c63b20be29f160bcd3b66bc788d98f304f29e9df7",
+    "src/core/pose.ts": "8fbd9b47f081f2d9e6c6876d55ec0afe3344e571a2f56b8c5215c8e0189bac7b",
+    "src/world/build.ts": "e8894497549b011ab49ffb87cb3381d7dea6cf0fdf728cdbfc61d5e65a366ddd",
+    "src/world/platforms.ts": "6e29ec64f43365ab0b316330e043bed1ecd9a2584832b37e1f0ea69405f1febe",
+    "src/world/surfaces.ts": "40c5d6892078d720da0c35148fb0596c2144778a1b3452300c10f21fa5b7aeea",
+    "src/render/assets.ts": "9b9174898cee1216f729ac14d7350413ccb6f2a9f446df470508e77cd61d05d8",
+    "src/render/batch.ts": "9f4b0c0205a99627bda01b13f9a0d036e5608a8086d632d0244134f26d7e30c2",
+    "src/render/trackwork.ts": "735ade41bd4eaa6af37159b0c54875474ac43fbb4bd2d7e409771c80b7d8a201",
+    "public/data/route.json": "782c1291006b818b7cc236fbaa16cb3d5b33ef21c2afc2dadb3ec4d98f5e5001",
+    "public/data/adjacent-services.json": "151e3398fa1516ce5ee4267f7a914e4260a0a507a9960a8cb09dcd10ce67c7af",
+    "public/data/road-surfaces.json": "1d9798585aac82cfbd3f1a1710fd059c4b38ec6ce331c60b7f88d43e573ff1be",
+    "public/data/land-surfaces.json": "13d246609f39191423d439d9da038c04ec3ef324a889902544e6e3debbceee80",
+    "public/data/terrain.bin": "5e6fb9a03b7fe2ca36f7ca40455c574c9fdb80f1c8addf13ea2816f269a9261f",
+    "public/data/tiles/-10_-1.json": "d06d4573847a8833bdb24779a0dbf0d89e8560b01e9bf1f27321d4fb00790062",
+    "references/frames/kidderminster2dorridge0133.jpg": "48d493a1ac434e6ddf7fe0e055aacddfffbfea119cb880afd8ccf4541526e057"
+  },
+  "id": "HAG-PATH-001",
+  "sourceWay": "way/240115500/0",
+  "sourceMode": "ground",
+  "connections": [
+    {
+      "stepId": "way/240115499/0",
+      "endpointDistance": 0
+    },
+    {
+      "stepId": "way/240115501/0",
+      "endpointDistance": 0
+    }
+  ],
+  "hits": [
+    {
+      "lane": 0,
+      "chainage": 8153.023450976055,
+      "railPosition": [
+        -9851.17098125329,
+        95.38333970927172,
+        -523.0935759396048
+      ],
+      "pathDistance": 1.1368683772161603e-13,
+      "pathWidth": 1.6,
+      "sourceProfileY": 95.40383499990922,
+      "actualPavementY": 95.4388347969838,
+      "triangleIndex": 4868,
+      "differenceFromRail": 0.055495087712074564
+    },
+    {
+      "lane": 4.2,
+      "chainage": 8153.0321156760365,
+      "railPosition": [
+        -9855.087171697847,
+        95.38338301447229,
+        -525.6100379385812
+      ],
+      "pathDistance": 0.009645959595607306,
+      "pathWidth": 1.6,
+      "sourceProfileY": 95.29565877517041,
+      "actualPavementY": 95.33023901508771,
+      "triangleIndex": 4864,
+      "differenceFromRail": -0.053143999384573704
+    }
+  ],
+  "conflict": true,
+  "scope": "Ray hits on actual emitted pavement-coloured triangles within the source path footprint and profile at two identified running-lane positions. Baked triangles lack individual source IDs; ownership is supported by position/profile/colour, not encoded face provenance. Frame 0133 is visual evidence, not a surveyed or precisely aligned view. This does not validate a bridge or stairs.",
+  "status": "OPEN: source path is emitted at rail level; reconcile supported layered access"
+}

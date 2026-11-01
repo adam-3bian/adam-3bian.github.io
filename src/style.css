@@ -25,3 +25,8 @@
 .dialog .resolution-note{font-size:11px;line-height:1.5;margin:8px 0;color:#b9c9ac}
 .dialog .setting-note{font-size:11px;line-height:1.5;margin-bottom:0;padding-top:14px}
 @media(max-width:700px){.menu-panel{width:min(370px,100%);max-width:100%;padding:22px}.menu h1{font-size:24px}.menu .intro{font-size:12px}}
+
+/* The proof of concept has no route title bar. */
+.simulator{min-height:0;height:100dvh}
+.drive-actions{position:absolute;top:12px;right:12px;z-index:5;display:flex;align-items:center;gap:12px}
+.menu{inset:0}.stops-panel{top:0}.tpws-reset{top:64px}

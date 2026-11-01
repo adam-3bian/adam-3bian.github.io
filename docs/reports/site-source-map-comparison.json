@@ -1,0 +1,1564 @@
+{
+  "scope": "All original station source pins and exported bridge/footbridge footprints compared with uploaded SVG controls. Same-source plan fidelity only; emitted 3D geometry, western absent structures, operation and photographs are not certified.",
+  "sourceHashes": {
+    "scripts/audit-source-sites.py": "2ca634a0339dc63c26cd184855c3cb129735428b0d351121245e72f1389a86ed",
+    "scripts/build_route.py": "ad18712c3013e7cde6ff579478084eaba173fa474b39915f59d88402e2eded8a",
+    "public/data/route.json": "782c1291006b818b7cc236fbaa16cb3d5b33ef21c2afc2dadb3ec4d98f5e5001",
+    "references/atlas/maps/dorridge-kidderminster-overview.svg": "35cdf4dbda4a7f57deb870732bb0bd9aff19023d42be0e922122836b6b46d439",
+    "references/atlas/maps/dorridge-snow-hill-civils.svg": "986b4e351a0e3e183566d5d983468316c61cbd6490815972101c124568252228"
+  },
+  "source_civil_footprints": 224,
+  "omitted_source_civils": [],
+  "stations": [
+    {
+      "id": "KID",
+      "name": "Kidderminster",
+      "source_pin_error_m": 0.0,
+      "generated_rail_control_offset_m": 2.0499999999989442,
+      "status": "source pin retained; layout and photography require separate review",
+      "note": "A station pin is not a running-rail centreline; do not move correct track to it."
+    },
+    {
+      "id": "BKD",
+      "name": "Blakedown",
+      "source_pin_error_m": 0.0,
+      "generated_rail_control_offset_m": 2.8144271175489055,
+      "status": "source pin retained; layout and photography require separate review",
+      "note": "A station pin is not a running-rail centreline; do not move correct track to it."
+    },
+    {
+      "id": "HAG",
+      "name": "Hagley",
+      "source_pin_error_m": 0.0,
+      "generated_rail_control_offset_m": 3.897242614979207,
+      "status": "source pin retained; layout and photography require separate review",
+      "note": "A station pin is not a running-rail centreline; do not move correct track to it."
+    },
+    {
+      "id": "SBJ",
+      "name": "Stourbridge Junction",
+      "source_pin_error_m": 0.0,
+      "generated_rail_control_offset_m": 4.15697005040954,
+      "status": "source pin retained; layout and photography require separate review",
+      "note": "A station pin is not a running-rail centreline; do not move correct track to it."
+    },
+    {
+      "id": "LYE",
+      "name": "Lye",
+      "source_pin_error_m": 0.0,
+      "generated_rail_control_offset_m": 3.883979917558035,
+      "status": "source pin retained; layout and photography require separate review",
+      "note": "A station pin is not a running-rail centreline; do not move correct track to it."
+    },
+    {
+      "id": "CRA",
+      "name": "Cradley Heath",
+      "source_pin_error_m": 0.0,
+      "generated_rail_control_offset_m": 3.6065080063684607,
+      "status": "source pin retained; layout and photography require separate review",
+      "note": "A station pin is not a running-rail centreline; do not move correct track to it."
+    },
+    {
+      "id": "OHL",
+      "name": "Old Hill",
+      "source_pin_error_m": 0.0,
+      "generated_rail_control_offset_m": 2.131783291050433,
+      "status": "source pin retained; layout and photography require separate review",
+      "note": "A station pin is not a running-rail centreline; do not move correct track to it."
+    },
+    {
+      "id": "ROW",
+      "name": "Rowley Regis",
+      "source_pin_error_m": 0.0,
+      "generated_rail_control_offset_m": 2.1287789927558687,
+      "status": "source pin retained; layout and photography require separate review",
+      "note": "A station pin is not a running-rail centreline; do not move correct track to it."
+    },
+    {
+      "id": "LGG",
+      "name": "Langley Green",
+      "source_pin_error_m": 0.0,
+      "generated_rail_control_offset_m": 1.9258504614845822,
+      "status": "source pin retained; layout and photography require separate review",
+      "note": "A station pin is not a running-rail centreline; do not move correct track to it."
+    },
+    {
+      "id": "SGB",
+      "name": "Smethwick Galton Bridge",
+      "source_pin_error_m": 0.0,
+      "generated_rail_control_offset_m": 2.7244265451653433,
+      "status": "source pin retained; layout and photography require separate review",
+      "note": "A station pin is not a running-rail centreline; do not move correct track to it."
+    },
+    {
+      "id": "THW",
+      "name": "The Hawthorns",
+      "source_pin_error_m": 0.0,
+      "generated_rail_control_offset_m": 2.068864422817663,
+      "status": "source pin retained; layout and photography require separate review",
+      "note": "A station pin is not a running-rail centreline; do not move correct track to it."
+    },
+    {
+      "id": "JEQ",
+      "name": "Jewellery Quarter",
+      "source_pin_error_m": 0.0,
+      "generated_rail_control_offset_m": 2.78756165851107,
+      "status": "source pin retained; layout and photography require separate review",
+      "note": "A station pin is not a running-rail centreline; do not move correct track to it."
+    },
+    {
+      "id": "BSW",
+      "name": "Birmingham Snow Hill",
+      "source_pin_error_m": 0.0,
+      "generated_rail_control_offset_m": 14.493170805589475,
+      "status": "source pin retained; layout and photography require separate review",
+      "note": "A station pin is not a running-rail centreline; do not move correct track to it."
+    },
+    {
+      "id": "BMO",
+      "name": "Birmingham Moor Street",
+      "source_pin_error_m": 0.0,
+      "generated_rail_control_offset_m": 1.739252713091976,
+      "status": "source pin retained; layout and photography require separate review",
+      "note": "A station pin is not a running-rail centreline; do not move correct track to it."
+    },
+    {
+      "id": "BBS",
+      "name": "Bordesley",
+      "source_pin_error_m": 0.0,
+      "generated_rail_control_offset_m": 5.249161837856619,
+      "status": "source pin retained; layout and photography require separate review",
+      "note": "A station pin is not a running-rail centreline; do not move correct track to it."
+    },
+    {
+      "id": "SMA",
+      "name": "Small Heath",
+      "source_pin_error_m": 0.0,
+      "generated_rail_control_offset_m": 13.592247790559513,
+      "status": "source pin retained; layout and photography require separate review",
+      "note": "A station pin is not a running-rail centreline; do not move correct track to it."
+    },
+    {
+      "id": "TYS",
+      "name": "Tyseley",
+      "source_pin_error_m": 0.0,
+      "generated_rail_control_offset_m": 13.881167097906378,
+      "status": "source pin retained; layout and photography require separate review",
+      "note": "A station pin is not a running-rail centreline; do not move correct track to it."
+    },
+    {
+      "id": "ACG",
+      "name": "Acocks Green",
+      "source_pin_error_m": 0.0,
+      "generated_rail_control_offset_m": 5.722001398113408,
+      "status": "source pin retained; layout and photography require separate review",
+      "note": "A station pin is not a running-rail centreline; do not move correct track to it."
+    },
+    {
+      "id": "OLT",
+      "name": "Olton",
+      "source_pin_error_m": 0.0,
+      "generated_rail_control_offset_m": 7.471773551171363,
+      "status": "source pin retained; layout and photography require separate review",
+      "note": "A station pin is not a running-rail centreline; do not move correct track to it."
+    },
+    {
+      "id": "SOL",
+      "name": "Solihull",
+      "source_pin_error_m": 0.0,
+      "generated_rail_control_offset_m": 6.501645945451305,
+      "status": "source pin retained; layout and photography require separate review",
+      "note": "A station pin is not a running-rail centreline; do not move correct track to it."
+    },
+    {
+      "id": "WMR",
+      "name": "Widney Manor",
+      "source_pin_error_m": 0.0,
+      "generated_rail_control_offset_m": 3.1152046481720443,
+      "status": "source pin retained; layout and photography require separate review",
+      "note": "A station pin is not a running-rail centreline; do not move correct track to it."
+    },
+    {
+      "id": "DDG",
+      "name": "Dorridge",
+      "source_pin_error_m": 0.0,
+      "generated_rail_control_offset_m": 11.74584181742617,
+      "status": "source pin retained; layout and photography require separate review",
+      "note": "A station pin is not a running-rail centreline; do not move correct track to it."
+    }
+  ],
+  "civil_structures": [
+    {
+      "id": "footbridge/56743659/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/56743666/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/125510140/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/107834349/70",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/12614437/84",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/106551778/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/24417636/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/981543335/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/24153402/2108",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/24153210/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/24153208/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/24153209/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/24153205/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/29179410/2553",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/5004041/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1370739839/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1370739841/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1370363940/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1368445722/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1370025830/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/24417486/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/24417602/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/24417490/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/107055951/2957",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/25376703/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/24682716/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/24682708/3156",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/24209030/4116",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/332622220/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/4841548/4458",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/13468977/4820",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/28853016/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/28853014/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/24215848/4979",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/24215846/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/28853045/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/989209713/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1002679182/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/37064175/5271",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/132202642/5276",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/989209715/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/4719628/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/4706070/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1201505776/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/4706069/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1333501899/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/1116108197/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1201505778/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/4706064/7919",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/326907026/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/22701498/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/103810446/8203",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/4706067/8210",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/326907029/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/326907030/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/4754991/8462",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/106332790/8470",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1361563747/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/10056508/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/10364524/9092",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/326907024/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/4854316/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/4861010/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/4861035/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/8571448/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/8571447/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/519222622/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/519222621/9759",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/519222619/9760",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1236609464/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/305415865/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/31965833/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/30619230/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/35064905/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/94957909/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/34998577/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/8068165/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/37916077/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/245622096/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/37917102/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/821851327/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/10476428/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1361563752/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1361563754/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/428278797/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/43377538/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/28622075/12387",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/12334480/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/103477944/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/245613760/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/43320778/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/10476440/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/993040449/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/28622057/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1085116652/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/430134386/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/28622068/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/33779073/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/103284203/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1085116654/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1085116653/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/10476426/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/23097209/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/103680635/14271",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/28299867/14276",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/73413911/14358",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/73415592/14359",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/17505729/14360",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/73422327/14361",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/28299799/14367",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/103680627/14384",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/28299878/14389",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/32539807/14401",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/1085088204/14476",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/1085088211/14480",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/10476419/14521",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/903562277/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/1085088199/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/103362881/14533",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/868818766/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/77347659/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/77347653/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/77347656/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/1085088197/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/132239023/14752",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/44790612/14756",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/245608431/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/10057830/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/23425215/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/23425213/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/73033153/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/609296440/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/609297330/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/609296439/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/4929040/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/609296442/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/609296441/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/75088159/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/1137038355/15266",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/598724211/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/245607467/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/1353754739/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1353754738/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1353754736/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/1051566351/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/1353754740/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1353754741/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/23363480/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1353754748/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/10142247/15041",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/73159187/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/73987417/15526",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/73987423/15528",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/108121622/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/23363686/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/23166584/15665",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/449418119/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/28292466/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1031138451/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/1031138452/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/17505790/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/823341135/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/202262773/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1031138449/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/43925441/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/1371867929/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/1371867930/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/72875375/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/17504953/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1371867922/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/219212834/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/219923448/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/371608828/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/172524006/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/894557459/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/28291169/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/516370784/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/371608830/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/83997826/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/1554887430/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/83997820/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/374555143/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1554887438/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/343562245/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/896631957/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/1554887431/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/28511980/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/1561127888/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/1554887434/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/120555236/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/202263145/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/1554887435/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1561340912/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/372841463/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/32541975/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/1554887432/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1561127893/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/1554887433/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1561127891/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/1084581985/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1561127890/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/4077686/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1560596670/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1547065045/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/23172498/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/23172500/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/29998256/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/29998250/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/1537421690/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/28287115/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1557724480/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1540125478/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/154202099/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/466457066/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/74025489/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/29997757/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1354726129/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1500997606/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/868899008/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/238237548/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1500997609/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "footbridge/1500997604/0",
+      "type": "footbridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "rail-bridge/77182230/16798",
+      "type": "railBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    },
+    {
+      "id": "road_bridge/31545003/0",
+      "type": "roadBridge",
+      "source_footprint_error_m": 0.0,
+      "status": "source plan retained; emitted geometry, levels, supports and photo match unaccepted"
+    }
+  ],
+  "tunnels": [
+    {
+      "id": "old-hill-tunnel",
+      "status": "unverified portal/level controls; photographs and maps must be reconciled",
+      "reference_folder": "references/by-location/old-hill-tunnel",
+      "note": "A source interval/inferred bore is not a georeferenced portal/height survey."
+    },
+    {
+      "id": "hockley-no2",
+      "status": "unverified portal/level controls; photographs and maps must be reconciled",
+      "reference_folder": "references/by-location/hockley-tunnels",
+      "note": "A source interval/inferred bore is not a georeferenced portal/height survey."
+    },
+    {
+      "id": "hockley-no1",
+      "status": "unverified portal/level controls; photographs and maps must be reconciled",
+      "reference_folder": "references/by-location/hockley-tunnels",
+      "note": "A source interval/inferred bore is not a georeferenced portal/height survey."
+    },
+    {
+      "id": "snow-hill-tunnel",
+      "status": "unverified portal/level controls; photographs and maps must be reconciled",
+      "reference_folder": "references/by-location/snow-hill-tunnel",
+      "note": "A source interval/inferred bore is not a georeferenced portal/height survey."
+    }
+  ],
+  "source_plan_failures": 0,
+  "site_acceptance": "incomplete"
+}

@@ -1,4 +1,16 @@
-# Hagley targeted visual review
+# Hagley targeted visual review — reconstructed, not accepted
+
+Current source/build/capture hashes and review are in [reference-comparisons.json](../reference-comparisons.json). [Current near front view](../captures/reconstruction/hagley-approach-near.png) pairs approximately with [original 0133](../../references/by-location/hagley/hagley-covered-footbridge-original-0133.jpg): s=8138.382 m, lane 4.2, forward, 1280×720 viewport, 50% scale and low quality, software WebGL. Source camera/lens/date remain unknown. [Reverse station view](../captures/reconstruction/hag-reverse.png) looks through the separate Brake Lane masonry arch toward the footbridge.
+
+The new covered lattice deck and both supported stair flights retain all three original path/step IDs; the separate skew masonry arch retains its source road and connected approaches. The ground-level strip and duplicate generic footbridge are replaced by this complete assembly. The close-up was visually inspected: both stair flights, roof/parapets and the open arch behind are visible; the across-track strip is absent. The source's ornate roof, pitched canopy profile, brick station architecture and denser vegetation still differ markedly.
+
+[Targeted actual-mesh regression](hagley-access-diagnostic.json) was rerun after restoring road plan vertices: no obstruction at the sampled two-lane/body-width rays through either opening, both stair/platform contact errors below 0.95 mm, maximum riser below 190 mm and minimum going 250 mm. These are finite measurements, not continuous full-consist/support certification. Source deck heights, stair extensions, arch dimensions and foundation levels remain inferred. **HAG-PATH-001's ground-strip regression is fixed; complete site/reference acceptance remains open.**
+
+All 22 stations now have current front/reverse fixtures in [station-review.html](../station-review.html), with 16 supported approximate photo anchors, six source gaps and zero accepted stations. This is an agent review, not independent local recognition or uninterrupted streaming evidence.
+
+The following is historical evidence from before reconstruction. Its statements about the strip, missing arch and intentionally failing Hagley diagnostic describe that earlier snapshot only.
+
+---
 
 **Not accepted.** This is one location, not a route-wide image review. Original reference [frame 0133](../../references/frames/kidderminster2dorridge0133.jpg) was inspected with current WebGL QA captures at Hagley. The original frame is from the Kidderminster–Dorridge direction; its exact camera position, lens and capture date are not known. The current [near approach](../captures/acceptance-hagley/approach-near.png) is an approximate visual pairing, not a surveyed image alignment. It uses normal front view at route s=8138.382 m, lane 4.2, train lane position X/Y/Z −9862.983/95.275/−513.319 m, a 1280×720 viewport, low scenery quality and a 50% render scale. The [far approach](../captures/acceptance-hagley/approach-far.png) is at s=8088.245 m. Captures were made using software WebGL; they are not hardware performance evidence.
 

@@ -1,0 +1,1725 @@
+{
+  "scope": "Headless Chromium SwiftShader; front-camera QA fixtures, not hardware performance, exact photographic alignment or a continuous-drive/soak test; partial capture set made before road-plan restoration",
+  "sourceHashes": {
+    "src/style.css": "339a2be28459243d073d0256241163f5253982ed6de2f01ea7079447c7637a11",
+    "src/env.d.ts": "79d49e15e28c835d64c1fede8fd76d464755c3c88cf688c92a41a2c42f252007",
+    "src/main.ts": "45c22e64002b4e6f10808ac68f8b0f8c568e5181decda1fd6777b5fd037c16ad",
+    "src/fonts/libre-caslon-display-latin.woff2": "84267e937417f10dff37df818c5ef7f1e9f2e6a703e03c2dd286d3320af53269",
+    "src/fonts/dm-sans-latin.woff2": "9fea608a947e67020c33cad9a6fe3d60c54119dfb8cff87768a8117a15ed7543",
+    "src/fonts/libre-caslon-display-latin-ext.woff2": "7a17a86fb7c3cd003bf073f0455f49c746424b37f3e1a931663eae80288a1e89",
+    "src/fonts/dm-sans-latin-ext.woff2": "a5d38fe99f930275684999b462c7123faa063d9e44e73b4b241723d884aa0f49",
+    "src/core/simulation.ts": "eb502976663f5128bae7dc37104be8aa54317704958788be6557c0de182c0180",
+    "src/core/pose.ts": "8fbd9b47f081f2d9e6c6876d55ec0afe3344e571a2f56b8c5215c8e0189bac7b",
+    "src/core/geometry.ts": "bdfb3e91bf21e6f43ddacb6c63b20be29f160bcd3b66bc788d98f304f29e9df7",
+    "src/core/save.ts": "706739760533ddff2899771a3319a9961fe2889983ec5d39800431b6819bf09a",
+    "src/core/audio.ts": "b5e0c39aa2a4154b9041b766646789932f9f2528f4a465210da2cc2e4416015e",
+    "src/core/resource-url.ts": "8f8f78d65aaf5833fbd857a0d04c4bef5bfe4f811705d713c4c17c08bacce79a",
+    "src/core/types.ts": "59f39125dfeac314cedc9a9b95717b90b924f2de2982257bc8cd7980ed5c7505",
+    "src/world/platforms.ts": "6e29ec64f43365ab0b316330e043bed1ecd9a2584832b37e1f0ea69405f1febe",
+    "src/world/build.ts": "ada2d120b41ebc7213bbc1896cd4782ee3a2e47fc7589e0dbc5b8e3197ea16ec",
+    "src/world/surfaces.ts": "d6c0e191a681f298bca813ebda495231dba3b84236a7bd3591884e2c12614d6a",
+    "src/world/world.worker.ts": "0a22909d922e6b26b27dcfff7a1d382e42a0eb2edc894225be750020ab6124e8",
+    "src/world/site-definitions.json": "c45bb0855c9c31ef2c7964a4b8f3a9e87e3ce5dbb2589250a0d0a840dbc3715e",
+    "src/world/road-sites.ts": "eb58d3e4670cb2eee5db8de4e8097ce6e395655e14f44e2134be91233de93519",
+    "src/world/traffic.ts": "5683669aa142d602ed2f717e690a85218d50b94af688ceffecb91b33250477a4",
+    "src/world/access-sites.ts": "bf282d5bc20e159948d44edb5eadb041e298b1c036ccac53d17dfb3e879c76d5",
+    "src/render/viewport.ts": "4766bacdf7bac430d372ae414daba11b725d392acf5ff8fbcc9ca5544f9c51b4",
+    "src/render/assets.ts": "fb5298afa4e19bc62a28af56b90e8c5e1ff64f8ebe6e474386123efaa9fb623e",
+    "src/render/batch.ts": "9f4b0c0205a99627bda01b13f9a0d036e5608a8086d632d0244134f26d7e30c2",
+    "src/render/trackwork.ts": "735ade41bd4eaa6af37159b0c54875474ac43fbb4bd2d7e409771c80b7d8a201",
+    "src/render/renderer.ts": "cd9fcefce09caeeeecf21136821292c714dce06e62e844806cb6854e36537f4e"
+  },
+  "manifestSHA256": "772dad1729d875d8dfc03b66f0a7d097ad5cd0393e24971b00176f4e2dc722be",
+  "checks": {
+    "noTopbar": true,
+    "resize": [
+      {
+        "w": 800,
+        "h": 600,
+        "bw": 400,
+        "bh": 300,
+        "aspect": 1.3333333333333333,
+        "error": 0,
+        "lost": false,
+        "scale": 0.5
+      },
+      {
+        "w": 800,
+        "h": 600,
+        "bw": 600,
+        "bh": 450,
+        "aspect": 1.3333333333333333,
+        "error": 0,
+        "lost": false,
+        "scale": 0.75
+      },
+      {
+        "w": 800,
+        "h": 600,
+        "bw": 800,
+        "bh": 600,
+        "aspect": 1.3333333333333333,
+        "error": 0,
+        "lost": false,
+        "scale": 1
+      },
+      {
+        "w": 1280,
+        "h": 720,
+        "bw": 640,
+        "bh": 360,
+        "aspect": 1.7777777777777777,
+        "error": 0,
+        "lost": false,
+        "scale": 0.5
+      },
+      {
+        "w": 1280,
+        "h": 720,
+        "bw": 960,
+        "bh": 540,
+        "aspect": 1.7777777777777777,
+        "error": 0,
+        "lost": false,
+        "scale": 0.75
+      },
+      {
+        "w": 1280,
+        "h": 720,
+        "bw": 1280,
+        "bh": 720,
+        "aspect": 1.7777777777777777,
+        "error": 0,
+        "lost": false,
+        "scale": 1
+      },
+      {
+        "w": 390,
+        "h": 844,
+        "bw": 195,
+        "bh": 422,
+        "aspect": 0.46208530805687204,
+        "error": 0,
+        "lost": false,
+        "scale": 0.5
+      },
+      {
+        "w": 390,
+        "h": 844,
+        "bw": 292,
+        "bh": 633,
+        "aspect": 0.46208530805687204,
+        "error": 0,
+        "lost": false,
+        "scale": 0.75
+      },
+      {
+        "w": 390,
+        "h": 844,
+        "bw": 390,
+        "bh": 844,
+        "aspect": 0.46208530805687204,
+        "error": 0,
+        "lost": false,
+        "scale": 1
+      },
+      {
+        "w": 960,
+        "h": 540,
+        "bw": 480,
+        "bh": 270,
+        "aspect": 1.7777777777777777,
+        "error": 0,
+        "lost": false,
+        "scale": 0.5
+      },
+      {
+        "w": 960,
+        "h": 540,
+        "bw": 720,
+        "bh": 405,
+        "aspect": 1.7777777777777777,
+        "error": 0,
+        "lost": false,
+        "scale": 0.75
+      },
+      {
+        "w": 960,
+        "h": 540,
+        "bw": 960,
+        "bh": 540,
+        "aspect": 1.7777777777777777,
+        "error": 0,
+        "lost": false,
+        "scale": 1
+      }
+    ],
+    "containerHideShow": true
+  },
+  "captures": [
+    {
+      "station": "KID",
+      "direction": 1,
+      "file": "docs/captures/reconstruction-before-road-restoration/kid-forward.png",
+      "sha256": "6e99743ea3e8007b1f67e3170d3e61deba81a269cd563c2f3cc6e1e462e0791c",
+      "viewport": [
+        960,
+        540
+      ],
+      "renderScale": 0.5,
+      "quality": "low",
+      "state": {
+        "s": 259.9879949901055,
+        "lane": 4.2,
+        "direction": 1,
+        "trackPosition": [
+          -16154.964016454616,
+          58.68492030844014,
+          3771.2321131170984
+        ],
+        "cameraPosition": [
+          -16154.969498079765,
+          61.13487541945269,
+          3771.245893748768
+        ],
+        "fieldOfView": 62,
+        "worldHash": "ff76a1f8061d68896effbbc5a83fad90779d2d38a40d7e959135e87f87cb0c50",
+        "loadedTileIds": [
+          "-17_3",
+          "-16_3",
+          "-17_4",
+          "-16_4",
+          "-17_2",
+          "-16_2"
+        ],
+        "pendingTileIds": [],
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 6,
+          "triangles": 1667512,
+          "placements": 606,
+          "gpuErrors": [],
+          "drawCalls": 895,
+          "memory": {
+            "geometries": 13,
+            "textures": 3
+          }
+        }
+      },
+      "photoComparison": "unreviewed"
+    },
+    {
+      "station": "KID",
+      "direction": -1,
+      "file": "docs/captures/reconstruction-before-road-restoration/kid-reverse.png",
+      "sha256": "812623bf77d02a31095e06efcfe66fc3c4f90e2e5aba226a54755fad753f1e04",
+      "viewport": [
+        960,
+        540
+      ],
+      "renderScale": 0.5,
+      "quality": "low",
+      "state": {
+        "s": 379.99968094544687,
+        "lane": 0,
+        "direction": -1,
+        "trackPosition": [
+          -16113.99021940647,
+          59.24999662451585,
+          3658.3856388103745
+        ],
+        "cameraPosition": [
+          -16113.990168715476,
+          61.69997029853313,
+          3658.3969963652476
+        ],
+        "fieldOfView": 62,
+        "worldHash": "ff76a1f8061d68896effbbc5a83fad90779d2d38a40d7e959135e87f87cb0c50",
+        "loadedTileIds": [
+          "-17_3",
+          "-16_3",
+          "-17_4",
+          "-16_4",
+          "-17_2",
+          "-16_2"
+        ],
+        "pendingTileIds": [],
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 6,
+          "triangles": 1667512,
+          "placements": 606,
+          "gpuErrors": [],
+          "drawCalls": 410,
+          "memory": {
+            "geometries": 16,
+            "textures": 3
+          }
+        }
+      },
+      "photoComparison": "unreviewed"
+    },
+    {
+      "station": "BKD",
+      "direction": 1,
+      "file": "docs/captures/reconstruction-before-road-restoration/bkd-forward.png",
+      "sha256": "c0b7331217efba7a66f966223a53bd4288e74cf6bbd2cd6a7b496e544e2bf52c",
+      "viewport": [
+        960,
+        540
+      ],
+      "renderScale": 0.5,
+      "quality": "low",
+      "state": {
+        "s": 5364.215217485465,
+        "lane": 4.2,
+        "direction": 1,
+        "trackPosition": [
+          -11940.97018305403,
+          72.99479897356542,
+          1276.9700478937482
+        ],
+        "cameraPosition": [
+          -11940.983217017925,
+          75.44474704883278,
+          1276.979242690049
+        ],
+        "fieldOfView": 62,
+        "worldHash": "ff76a1f8061d68896effbbc5a83fad90779d2d38a40d7e959135e87f87cb0c50",
+        "loadedTileIds": [
+          "-17_3",
+          "-16_3",
+          "-17_4",
+          "-16_4",
+          "-17_2",
+          "-16_2",
+          "-12_1",
+          "-13_1",
+          "-12_0",
+          "-13_0",
+          "-12_2"
+        ],
+        "pendingTileIds": [
+          "-13_2"
+        ],
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 11,
+          "triangles": 2734876,
+          "placements": 958,
+          "gpuErrors": [],
+          "drawCalls": 270,
+          "memory": {
+            "geometries": 24,
+            "textures": 3
+          }
+        }
+      },
+      "photoComparison": "unreviewed"
+    },
+    {
+      "station": "BKD",
+      "direction": -1,
+      "file": "docs/captures/reconstruction-before-road-restoration/bkd-reverse.png",
+      "sha256": "153a8a90928f8ac615442289f2981b3630a5103931ffa3f825843cdd3bd430da",
+      "viewport": [
+        960,
+        540
+      ],
+      "renderScale": 0.5,
+      "quality": "low",
+      "state": {
+        "s": 5484.251452214344,
+        "lane": 0,
+        "direction": -1,
+        "trackPosition": [
+          -11863.034665244339,
+          73.54500340891711,
+          1185.6595691128766
+        ],
+        "cameraPosition": [
+          -11863.046041486228,
+          75.99495949243897,
+          1185.6688303187764
+        ],
+        "fieldOfView": 62,
+        "worldHash": "ff76a1f8061d68896effbbc5a83fad90779d2d38a40d7e959135e87f87cb0c50",
+        "loadedTileIds": [
+          "-17_3",
+          "-16_3",
+          "-17_4",
+          "-16_4",
+          "-17_2",
+          "-16_2",
+          "-12_1",
+          "-13_1",
+          "-12_0",
+          "-13_0",
+          "-12_2",
+          "-13_2"
+        ],
+        "pendingTileIds": [
+          "-11_0"
+        ],
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 12,
+          "triangles": 2915332,
+          "placements": 1003,
+          "gpuErrors": [],
+          "drawCalls": 479,
+          "memory": {
+            "geometries": 30,
+            "textures": 3
+          }
+        }
+      },
+      "photoComparison": "unreviewed"
+    },
+    {
+      "station": "HAG",
+      "direction": 1,
+      "file": "docs/captures/reconstruction-before-road-restoration/hag-forward.png",
+      "sha256": "0f51c55cbf75dbefdef4b6567edfa6b87d60b69d51bd2526bc402dcf7a0fab37",
+      "viewport": [
+        960,
+        540
+      ],
+      "renderScale": 0.5,
+      "quality": "low",
+      "state": {
+        "s": 8068.174547296389,
+        "lane": 4.2,
+        "direction": 1,
+        "trackPosition": [
+          -9902.363615692115,
+          94.52776690318719,
+          -455.46051863621113
+        ],
+        "cameraPosition": [
+          -9902.385792762661,
+          96.97758955214208,
+          -455.44109786872974
+        ],
+        "fieldOfView": 62,
+        "worldHash": "ff76a1f8061d68896effbbc5a83fad90779d2d38a40d7e959135e87f87cb0c50",
+        "loadedTileIds": [
+          "-17_3",
+          "-16_3",
+          "-17_4",
+          "-16_4",
+          "-17_2",
+          "-16_2",
+          "-12_1",
+          "-13_1",
+          "-12_0",
+          "-13_0",
+          "-12_2",
+          "-13_2",
+          "-11_0",
+          "-10_-1",
+          "-11_-1",
+          "-10_0"
+        ],
+        "pendingTileIds": [
+          "-10_-2"
+        ],
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 16,
+          "triangles": 4180495,
+          "placements": 2387,
+          "gpuErrors": [],
+          "drawCalls": 658,
+          "memory": {
+            "geometries": 36,
+            "textures": 3
+          }
+        }
+      },
+      "photoComparison": "unreviewed"
+    },
+    {
+      "station": "HAG",
+      "direction": -1,
+      "file": "docs/captures/reconstruction-before-road-restoration/hag-reverse.png",
+      "sha256": "034b24d21f419899f9c1feb4fcfe3aabf6cc387f0f6f77ad693708ff33557226",
+      "viewport": [
+        960,
+        540
+      ],
+      "renderScale": 0.5,
+      "quality": "low",
+      "state": {
+        "s": 8188.3539021624,
+        "lane": 0,
+        "direction": -1,
+        "trackPosition": [
+          -9832.40270950156,
+          95.54997407175539,
+          -553.025579234294
+        ],
+        "cameraPosition": [
+          -9832.41373375758,
+          97.99993740986726,
+          -553.0179563944708
+        ],
+        "fieldOfView": 62,
+        "worldHash": "ff76a1f8061d68896effbbc5a83fad90779d2d38a40d7e959135e87f87cb0c50",
+        "loadedTileIds": [
+          "-17_3",
+          "-16_3",
+          "-17_4",
+          "-16_4",
+          "-17_2",
+          "-16_2",
+          "-12_1",
+          "-13_1",
+          "-12_0",
+          "-13_0",
+          "-12_2",
+          "-13_2",
+          "-11_0",
+          "-10_-1",
+          "-11_-1",
+          "-10_0",
+          "-10_-2",
+          "-11_-2"
+        ],
+        "pendingTileIds": [],
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 18,
+          "triangles": 4701886,
+          "placements": 2872,
+          "gpuErrors": [],
+          "drawCalls": 953,
+          "memory": {
+            "geometries": 41,
+            "textures": 3
+          }
+        }
+      },
+      "photoComparison": "unreviewed"
+    },
+    {
+      "station": "SBJ",
+      "direction": 1,
+      "file": "docs/captures/reconstruction-before-road-restoration/sbj-forward.png",
+      "sha256": "670c343935b801d02f49319a8d2f2c2168344ef97e4a93d98779735aae603b7c",
+      "viewport": [
+        960,
+        540
+      ],
+      "renderScale": 0.5,
+      "quality": "low",
+      "state": {
+        "s": 11036.476515019473,
+        "lane": 4.2,
+        "direction": 1,
+        "trackPosition": [
+          -9017.456342935518,
+          98.01510888666363,
+          -3238.031036147476
+        ],
+        "cameraPosition": [
+          -9017.459088798898,
+          100.46508548946856,
+          -3238.041385347574
+        ],
+        "fieldOfView": 62,
+        "worldHash": "ff76a1f8061d68896effbbc5a83fad90779d2d38a40d7e959135e87f87cb0c50",
+        "loadedTileIds": [
+          "-17_3",
+          "-16_3",
+          "-17_4",
+          "-16_4",
+          "-17_2",
+          "-16_2",
+          "-12_1",
+          "-13_1",
+          "-12_0",
+          "-13_0",
+          "-12_2",
+          "-13_2",
+          "-11_0",
+          "-10_-1",
+          "-11_-1",
+          "-10_0",
+          "-10_-2",
+          "-11_-2",
+          "-10_-4",
+          "-9_-4",
+          "-10_-3",
+          "-9_-3",
+          "-10_-5"
+        ],
+        "pendingTileIds": [
+          "-9_-5"
+        ],
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 23,
+          "triangles": 6757487,
+          "placements": 6038,
+          "gpuErrors": [],
+          "drawCalls": 625,
+          "memory": {
+            "geometries": 47,
+            "textures": 3
+          }
+        }
+      },
+      "photoComparison": "unreviewed"
+    },
+    {
+      "station": "SBJ",
+      "direction": -1,
+      "file": "docs/captures/reconstruction-before-road-restoration/sbj-reverse.png",
+      "sha256": "ae7862f1c6630c8409af274ac98b26a10d80fa678ad087e421443293d8ced15f",
+      "viewport": [
+        960,
+        540
+      ],
+      "renderScale": 0.5,
+      "quality": "low",
+      "state": {
+        "s": 11156.501528049484,
+        "lane": 0,
+        "direction": -1,
+        "trackPosition": [
+          -9009.250275022894,
+          97.27003437786168,
+          -3357.79813302213
+        ],
+        "cameraPosition": [
+          -9009.250521002064,
+          99.71999549143234,
+          -3357.811934525157
+        ],
+        "fieldOfView": 62,
+        "worldHash": "ff76a1f8061d68896effbbc5a83fad90779d2d38a40d7e959135e87f87cb0c50",
+        "loadedTileIds": [
+          "-17_3",
+          "-16_3",
+          "-17_4",
+          "-16_4",
+          "-17_2",
+          "-16_2",
+          "-12_1",
+          "-13_1",
+          "-12_0",
+          "-13_0",
+          "-12_2",
+          "-13_2",
+          "-11_0",
+          "-10_-1",
+          "-11_-1",
+          "-10_0",
+          "-10_-2",
+          "-11_-2",
+          "-10_-4",
+          "-9_-4",
+          "-10_-3",
+          "-9_-3",
+          "-10_-5",
+          "-9_-5"
+        ],
+        "pendingTileIds": [],
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 24,
+          "triangles": 7459135,
+          "placements": 6943,
+          "gpuErrors": [],
+          "drawCalls": 587,
+          "memory": {
+            "geometries": 53,
+            "textures": 3
+          }
+        }
+      },
+      "photoComparison": "unreviewed"
+    },
+    {
+      "station": "LYE",
+      "direction": 1,
+      "file": "docs/captures/reconstruction-before-road-restoration/lye-forward.png",
+      "sha256": "d6d2fbf94aaf9cc3907eeefad229820f8fd176825eb8bb4fd16ad85212022df3",
+      "viewport": [
+        960,
+        540
+      ],
+      "renderScale": 0.5,
+      "quality": "low",
+      "state": {
+        "s": 13148.576735370465,
+        "lane": 4.2,
+        "direction": 1,
+        "trackPosition": [
+          -7851.756650282013,
+          87.4047359956509,
+          -4664.937669377307
+        ],
+        "cameraPosition": [
+          -7851.726813967116,
+          89.85455069419523,
+          -4664.9418809221
+        ],
+        "fieldOfView": 62,
+        "worldHash": "ff76a1f8061d68896effbbc5a83fad90779d2d38a40d7e959135e87f87cb0c50",
+        "loadedTileIds": [
+          "-17_2",
+          "-16_2",
+          "-12_1",
+          "-13_1",
+          "-12_0",
+          "-13_0",
+          "-12_2",
+          "-13_2",
+          "-11_0",
+          "-10_-1",
+          "-11_-1",
+          "-10_0",
+          "-10_-2",
+          "-11_-2",
+          "-10_-4",
+          "-9_-4",
+          "-10_-3",
+          "-9_-3",
+          "-10_-5",
+          "-9_-5",
+          "-8_-5",
+          "-8_-6",
+          "-9_-6",
+          "-8_-4"
+        ],
+        "pendingTileIds": [
+          "-7_-5"
+        ],
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 24,
+          "triangles": 7173564,
+          "placements": 7957,
+          "gpuErrors": [],
+          "drawCalls": 603,
+          "memory": {
+            "geometries": 55,
+            "textures": 3
+          }
+        }
+      },
+      "photoComparison": "unreviewed"
+    },
+    {
+      "station": "LYE",
+      "direction": -1,
+      "file": "docs/captures/reconstruction-before-road-restoration/lye-reverse.png",
+      "sha256": "70dd47de228441557ec39d3e7f14f33bfeeb392e00c0116a01d81a829d70f81f",
+      "viewport": [
+        960,
+        540
+      ],
+      "renderScale": 0.5,
+      "quality": "low",
+      "state": {
+        "s": 13268.560704494494,
+        "lane": 0,
+        "direction": -1,
+        "trackPosition": [
+          -7732.172931539378,
+          86.12499219448821,
+          -4675.390239369029
+        ],
+        "cameraPosition": [
+          -7732.166988770661,
+          88.57498423353205,
+          -4675.392160858506
+        ],
+        "fieldOfView": 62,
+        "worldHash": "ff76a1f8061d68896effbbc5a83fad90779d2d38a40d7e959135e87f87cb0c50",
+        "loadedTileIds": [
+          "-17_2",
+          "-16_2",
+          "-12_1",
+          "-13_1",
+          "-12_0",
+          "-13_0",
+          "-12_2",
+          "-13_2",
+          "-11_0",
+          "-10_-1",
+          "-11_-1",
+          "-10_0",
+          "-10_-2",
+          "-11_-2",
+          "-10_-4",
+          "-9_-4",
+          "-10_-3",
+          "-9_-3",
+          "-10_-5",
+          "-9_-5",
+          "-8_-5",
+          "-8_-6",
+          "-9_-6",
+          "-8_-4",
+          "-7_-5"
+        ],
+        "pendingTileIds": [
+          "-7_-6"
+        ],
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 25,
+          "triangles": 7455674,
+          "placements": 8206,
+          "gpuErrors": [],
+          "drawCalls": 637,
+          "memory": {
+            "geometries": 59,
+            "textures": 3
+          }
+        }
+      },
+      "photoComparison": "unreviewed"
+    },
+    {
+      "station": "CRA",
+      "direction": 1,
+      "file": "docs/captures/reconstruction-before-road-restoration/cra-forward.png",
+      "sha256": "8f58b9d8ad4886656dfbf7b3d4bc49195e82edc7b26548e38fb7c5aad301d9c5",
+      "viewport": [
+        960,
+        540
+      ],
+      "renderScale": 0.5,
+      "quality": "low",
+      "state": {
+        "s": 15284.990395712752,
+        "lane": 4.2,
+        "direction": 1,
+        "trackPosition": [
+          -6120.818064836943,
+          93.42542830585693,
+          -5715.0577335583885
+        ],
+        "cameraPosition": [
+          -6120.851884368594,
+          95.87505624406971,
+          -5715.031672023392
+        ],
+        "fieldOfView": 62,
+        "worldHash": "ff76a1f8061d68896effbbc5a83fad90779d2d38a40d7e959135e87f87cb0c50",
+        "loadedTileIds": [
+          "-12_0",
+          "-13_0",
+          "-12_2",
+          "-13_2",
+          "-11_0",
+          "-10_-1",
+          "-11_-1",
+          "-10_0",
+          "-10_-2",
+          "-11_-2",
+          "-10_-4",
+          "-9_-4",
+          "-10_-3",
+          "-9_-3",
+          "-10_-5",
+          "-9_-5",
+          "-8_-5",
+          "-8_-6",
+          "-9_-6",
+          "-8_-4",
+          "-7_-5",
+          "-7_-6",
+          "-6_-6",
+          "-7_-7",
+          "-6_-7"
+        ],
+        "pendingTileIds": [],
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 25,
+          "triangles": 8219478,
+          "placements": 10453,
+          "gpuErrors": [],
+          "drawCalls": 574,
+          "memory": {
+            "geometries": 63,
+            "textures": 3
+          }
+        }
+      },
+      "photoComparison": "unreviewed"
+    },
+    {
+      "station": "CRA",
+      "direction": -1,
+      "file": "docs/captures/reconstruction-before-road-restoration/cra-reverse.png",
+      "sha256": "b6869a05bb5b74752de2993bd2624d919f1f9a1b1cfe48a50e2ff61d356164b6",
+      "viewport": [
+        960,
+        540
+      ],
+      "renderScale": 0.5,
+      "quality": "low",
+      "state": {
+        "s": 15404.631454191325,
+        "lane": 0,
+        "direction": -1,
+        "trackPosition": [
+          -6001.978902579752,
+          94.95997069401939,
+          -5730.359814395456
+        ],
+        "cameraPosition": [
+          -6001.998108354875,
+          97.4098297829437,
+          -5730.341881670708
+        ],
+        "fieldOfView": 62,
+        "worldHash": "ff76a1f8061d68896effbbc5a83fad90779d2d38a40d7e959135e87f87cb0c50",
+        "loadedTileIds": [
+          "-12_0",
+          "-13_0",
+          "-12_2",
+          "-13_2",
+          "-11_0",
+          "-10_-1",
+          "-11_-1",
+          "-10_0",
+          "-10_-2",
+          "-11_-2",
+          "-10_-4",
+          "-9_-4",
+          "-10_-3",
+          "-9_-3",
+          "-10_-5",
+          "-9_-5",
+          "-8_-5",
+          "-8_-6",
+          "-9_-6",
+          "-8_-4",
+          "-7_-5",
+          "-7_-6",
+          "-6_-6",
+          "-7_-7",
+          "-6_-7"
+        ],
+        "pendingTileIds": [],
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 25,
+          "triangles": 8219478,
+          "placements": 10453,
+          "gpuErrors": [],
+          "drawCalls": 681,
+          "memory": {
+            "geometries": 67,
+            "textures": 3
+          }
+        }
+      },
+      "photoComparison": "unreviewed"
+    },
+    {
+      "station": "OHL",
+      "direction": 1,
+      "file": "docs/captures/reconstruction-before-road-restoration/ohl-forward.png",
+      "sha256": "41782d72412e5c0389b8a262a58fc3ebe1008ca3fb80e45c4870dd42f0ebb948",
+      "viewport": [
+        960,
+        540
+      ],
+      "renderScale": 0.5,
+      "quality": "low",
+      "state": {
+        "s": 17660.835733019747,
+        "lane": 4.2,
+        "direction": 1,
+        "trackPosition": [
+          -3776.670012071731,
+          136.22303188423027,
+          -5888.306906278786
+        ],
+        "cameraPosition": [
+          -3776.7413991868457,
+          138.6719279596303,
+          -5888.324566734217
+        ],
+        "fieldOfView": 62,
+        "worldHash": "ff76a1f8061d68896effbbc5a83fad90779d2d38a40d7e959135e87f87cb0c50",
+        "loadedTileIds": [
+          "-10_-2",
+          "-11_-2",
+          "-10_-4",
+          "-9_-4",
+          "-10_-3",
+          "-9_-3",
+          "-10_-5",
+          "-9_-5",
+          "-8_-5",
+          "-8_-6",
+          "-9_-6",
+          "-8_-4",
+          "-7_-5",
+          "-7_-6",
+          "-6_-6",
+          "-7_-7",
+          "-6_-7",
+          "-4_-6",
+          "-4_-7",
+          "-5_-6",
+          "-5_-7",
+          "-3_-6"
+        ],
+        "pendingTileIds": [
+          "-3_-7"
+        ],
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 22,
+          "triangles": 8427681,
+          "placements": 13542,
+          "gpuErrors": [],
+          "drawCalls": 693,
+          "memory": {
+            "geometries": 66,
+            "textures": 3
+          }
+        }
+      },
+      "photoComparison": "unreviewed"
+    },
+    {
+      "station": "OHL",
+      "direction": -1,
+      "file": "docs/captures/reconstruction-before-road-restoration/ohl-reverse.png",
+      "sha256": "b2fdb6ed5c83ce1af89f65e9d28bb31fb78462f7ccdea06391b724506748084c",
+      "viewport": [
+        960,
+        540
+      ],
+      "renderScale": 0.5,
+      "quality": "low",
+      "state": {
+        "s": 17781.089796732616,
+        "lane": 0,
+        "direction": -1,
+        "trackPosition": [
+          -3659.5508951795205,
+          138.91986312588543,
+          -5862.941012868448
+        ],
+        "cameraPosition": [
+          -3659.5825430790474,
+          141.3696247604585,
+          -5862.95391031895
+        ],
+        "fieldOfView": 62,
+        "worldHash": "ff76a1f8061d68896effbbc5a83fad90779d2d38a40d7e959135e87f87cb0c50",
+        "loadedTileIds": [
+          "-10_-2",
+          "-11_-2",
+          "-10_-4",
+          "-9_-4",
+          "-10_-3",
+          "-9_-3",
+          "-10_-5",
+          "-9_-5",
+          "-8_-5",
+          "-8_-6",
+          "-9_-6",
+          "-8_-4",
+          "-7_-5",
+          "-7_-6",
+          "-6_-6",
+          "-7_-7",
+          "-6_-7",
+          "-4_-6",
+          "-4_-7",
+          "-5_-6",
+          "-5_-7",
+          "-3_-6",
+          "-3_-7"
+        ],
+        "pendingTileIds": [],
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 23,
+          "triangles": 9220570,
+          "placements": 14548,
+          "gpuErrors": [],
+          "drawCalls": 650,
+          "memory": {
+            "geometries": 70,
+            "textures": 3
+          }
+        }
+      },
+      "photoComparison": "unreviewed"
+    },
+    {
+      "station": "ROW",
+      "direction": 1,
+      "file": "docs/captures/reconstruction-before-road-restoration/row-forward.png",
+      "sha256": "97c82776add095337c23a4d45555aafc542e5122af9a5843f6830157ee71f363",
+      "viewport": [
+        960,
+        540
+      ],
+      "renderScale": 0.5,
+      "quality": "low",
+      "state": {
+        "s": 19589.571032825508,
+        "lane": 4.2,
+        "direction": 1,
+        "trackPosition": [
+          -2039.403655081021,
+          166.7250568541127,
+          -6567.616526852139
+        ],
+        "cameraPosition": [
+          -2039.4131160914403,
+          169.17501184922287,
+          -6567.605080839008
+        ],
+        "fieldOfView": 62,
+        "worldHash": "ff76a1f8061d68896effbbc5a83fad90779d2d38a40d7e959135e87f87cb0c50",
+        "loadedTileIds": [
+          "-10_-2",
+          "-11_-2",
+          "-10_-4",
+          "-9_-4",
+          "-10_-3",
+          "-9_-3",
+          "-10_-5",
+          "-9_-5",
+          "-8_-5",
+          "-8_-6",
+          "-9_-6",
+          "-8_-4",
+          "-7_-5",
+          "-7_-6",
+          "-6_-6",
+          "-7_-7",
+          "-6_-7",
+          "-4_-6",
+          "-4_-7",
+          "-5_-6",
+          "-5_-7",
+          "-3_-6",
+          "-3_-7",
+          "-2_-7",
+          "-3_-8"
+        ],
+        "pendingTileIds": [
+          "-2_-8"
+        ],
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 25,
+          "triangles": 9808377,
+          "placements": 15264,
+          "gpuErrors": [],
+          "drawCalls": 600,
+          "memory": {
+            "geometries": 79,
+            "textures": 3
+          }
+        }
+      },
+      "photoComparison": "unreviewed"
+    },
+    {
+      "station": "ROW",
+      "direction": -1,
+      "file": "docs/captures/reconstruction-before-road-restoration/row-reverse.png",
+      "sha256": "67bbb25f19d3d044a42d0361b5461bec8d134e41cc482b846fb0f8e348b897fd",
+      "viewport": [
+        960,
+        540
+      ],
+      "renderScale": 0.5,
+      "quality": "low",
+      "state": {
+        "s": 19709.559635518683,
+        "lane": 0,
+        "direction": -1,
+        "trackPosition": [
+          -1952.9946788531392,
+          167.35499161495855,
+          -6650.960195371239
+        ],
+        "cameraPosition": [
+          -1952.9981792951053,
+          169.8049880426932,
+          -6650.95790386659
+        ],
+        "fieldOfView": 62,
+        "worldHash": "ff76a1f8061d68896effbbc5a83fad90779d2d38a40d7e959135e87f87cb0c50",
+        "loadedTileIds": [
+          "-9_-4",
+          "-9_-3",
+          "-10_-5",
+          "-9_-5",
+          "-8_-5",
+          "-8_-6",
+          "-9_-6",
+          "-8_-4",
+          "-7_-5",
+          "-7_-6",
+          "-6_-6",
+          "-7_-7",
+          "-6_-7",
+          "-4_-6",
+          "-4_-7",
+          "-5_-6",
+          "-5_-7",
+          "-3_-6",
+          "-3_-7",
+          "-2_-7",
+          "-3_-8",
+          "-2_-8",
+          "-2_-6"
+        ],
+        "pendingTileIds": [],
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 23,
+          "triangles": 8951271,
+          "placements": 16168,
+          "gpuErrors": [],
+          "drawCalls": 744,
+          "memory": {
+            "geometries": 76,
+            "textures": 3
+          }
+        }
+      },
+      "photoComparison": "unreviewed"
+    },
+    {
+      "station": "LGG",
+      "direction": 1,
+      "file": "docs/captures/reconstruction-before-road-restoration/lgg-forward.png",
+      "sha256": "1fdb2e8371cd5c26ad50bc99243294769b83bbec2e271ade11a7130125c393e9",
+      "viewport": [
+        960,
+        540
+      ],
+      "renderScale": 0.5,
+      "quality": "low",
+      "state": {
+        "s": 22101.953319153006,
+        "lane": 4.2,
+        "direction": 1,
+        "trackPosition": [
+          -297.516095280368,
+          159.01617832468585,
+          -8341.639188396566
+        ],
+        "cameraPosition": [
+          -297.50836574188963,
+          161.46613485308902,
+          -8341.626808446259
+        ],
+        "fieldOfView": 62,
+        "worldHash": "ff76a1f8061d68896effbbc5a83fad90779d2d38a40d7e959135e87f87cb0c50",
+        "loadedTileIds": [
+          "-9_-4",
+          "-9_-3",
+          "-10_-5",
+          "-9_-5",
+          "-8_-5",
+          "-8_-6",
+          "-9_-6",
+          "-8_-4",
+          "-7_-5",
+          "-7_-6",
+          "-6_-6",
+          "-7_-7",
+          "-6_-7",
+          "-4_-6",
+          "-4_-7",
+          "-5_-6",
+          "-5_-7",
+          "-3_-6",
+          "-3_-7",
+          "-2_-7",
+          "-3_-8",
+          "-2_-8",
+          "-2_-6",
+          "-1_-9"
+        ],
+        "pendingTileIds": [
+          "0_-9"
+        ],
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 24,
+          "triangles": 9861317,
+          "placements": 17305,
+          "gpuErrors": [],
+          "drawCalls": 622,
+          "memory": {
+            "geometries": 79,
+            "textures": 3
+          }
+        }
+      },
+      "photoComparison": "unreviewed"
+    },
+    {
+      "station": "LGG",
+      "direction": -1,
+      "file": "docs/captures/reconstruction-before-road-restoration/lgg-reverse.png",
+      "sha256": "5cefb4e13d3d26526b68d172ddbe74b9cabdabecd2bc9b3e3a24391af20fab55",
+      "viewport": [
+        960,
+        540
+      ],
+      "renderScale": 0.5,
+      "quality": "low",
+      "state": {
+        "s": 22221.639713934965,
+        "lane": 0,
+        "direction": -1,
+        "trackPosition": [
+          -241.8971958142894,
+          159.35500553101838,
+          -8447.846161473257
+        ],
+        "cameraPosition": [
+          -241.89085920203033,
+          161.8049972363209,
+          -8447.845460549688
+        ],
+        "fieldOfView": 62,
+        "worldHash": "ff76a1f8061d68896effbbc5a83fad90779d2d38a40d7e959135e87f87cb0c50",
+        "loadedTileIds": [
+          "-9_-4",
+          "-9_-3",
+          "-10_-5",
+          "-9_-5",
+          "-8_-5",
+          "-8_-6",
+          "-9_-6",
+          "-8_-4",
+          "-7_-5",
+          "-7_-6",
+          "-6_-6",
+          "-7_-7",
+          "-6_-7",
+          "-4_-6",
+          "-4_-7",
+          "-5_-6",
+          "-5_-7",
+          "-3_-6",
+          "-3_-7",
+          "-2_-7",
+          "-3_-8",
+          "-2_-8",
+          "-2_-6",
+          "-1_-9",
+          "0_-9"
+        ],
+        "pendingTileIds": [
+          "-1_-8"
+        ],
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 25,
+          "triangles": 10228572,
+          "placements": 17711,
+          "gpuErrors": [],
+          "drawCalls": 638,
+          "memory": {
+            "geometries": 83,
+            "textures": 3
+          }
+        }
+      },
+      "photoComparison": "unreviewed"
+    },
+    {
+      "station": "SGB",
+      "direction": 1,
+      "file": "docs/captures/reconstruction-before-road-restoration/sgb-forward.png",
+      "sha256": "598788172a34bd3e8f1480edd8d5565e64cbaee1021a2f06d8a2004820e1d30f",
+      "viewport": [
+        960,
+        540
+      ],
+      "renderScale": 0.5,
+      "quality": "low",
+      "state": {
+        "s": 24229.532715556183,
+        "lane": 4.2,
+        "direction": 1,
+        "trackPosition": [
+          1371.9469554440038,
+          154.28447997992956,
+          -9323.563757250346
+        ],
+        "cameraPosition": [
+          1371.942349110822,
+          156.73443168693316,
+          -9323.57843427473
+        ],
+        "fieldOfView": 62,
+        "worldHash": "ff76a1f8061d68896effbbc5a83fad90779d2d38a40d7e959135e87f87cb0c50",
+        "loadedTileIds": [
+          "-8_-5",
+          "-8_-6",
+          "-9_-6",
+          "-8_-4",
+          "-7_-5",
+          "-7_-6",
+          "-6_-6",
+          "-7_-7",
+          "-6_-7",
+          "-4_-6",
+          "-4_-7",
+          "-5_-6",
+          "-5_-7",
+          "-3_-6",
+          "-3_-7",
+          "-2_-7",
+          "-3_-8",
+          "-2_-8",
+          "-2_-6",
+          "-1_-9",
+          "0_-9",
+          "-1_-8",
+          "1_-10",
+          "1_-9"
+        ],
+        "pendingTileIds": [
+          "0_-10"
+        ],
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 24,
+          "triangles": 10419648,
+          "placements": 19440,
+          "gpuErrors": [],
+          "drawCalls": 1010,
+          "memory": {
+            "geometries": 86,
+            "textures": 3
+          }
+        }
+      },
+      "photoComparison": "unreviewed"
+    },
+    {
+      "station": "SGB",
+      "direction": -1,
+      "file": "docs/captures/reconstruction-before-road-restoration/sgb-reverse.png",
+      "sha256": "5ec7650ee17f767d946b6fdfb55b587122140f9a4f30cf2cbda4f0895143fe99",
+      "viewport": [
+        960,
+        540
+      ],
+      "renderScale": 0.5,
+      "quality": "low",
+      "state": {
+        "s": 24349.68880577628,
+        "lane": 0,
+        "direction": -1,
+        "trackPosition": [
+          1473.8257518024766,
+          151.2852612877492,
+          -9387.002022708457
+        ],
+        "cameraPosition": [
+          1473.8260478742231,
+          153.73526126080986,
+          -9387.001812127575
+        ],
+        "fieldOfView": 62,
+        "worldHash": "ff76a1f8061d68896effbbc5a83fad90779d2d38a40d7e959135e87f87cb0c50",
+        "loadedTileIds": [
+          "-8_-5",
+          "-8_-6",
+          "-9_-6",
+          "-8_-4",
+          "-7_-5",
+          "-7_-6",
+          "-6_-6",
+          "-7_-7",
+          "-6_-7",
+          "-4_-6",
+          "-4_-7",
+          "-5_-6",
+          "-5_-7",
+          "-3_-6",
+          "-3_-7",
+          "-2_-7",
+          "-3_-8",
+          "-2_-8",
+          "-2_-6",
+          "-1_-9",
+          "0_-9",
+          "-1_-8",
+          "1_-10",
+          "1_-9",
+          "0_-10"
+        ],
+        "pendingTileIds": [
+          "2_-10"
+        ],
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 25,
+          "triangles": 11239979,
+          "placements": 20018,
+          "gpuErrors": [],
+          "drawCalls": 800,
+          "memory": {
+            "geometries": 92,
+            "textures": 3
+          }
+        }
+      },
+      "photoComparison": "unreviewed"
+    },
+    {
+      "station": "THW",
+      "direction": 1,
+      "file": "docs/captures/reconstruction-before-road-restoration/thw-forward.png",
+      "sha256": "2fc7376a9d9c320fbaf49175f1fa0082a615bc7bdac48c6ad312acffc7476b42",
+      "viewport": [
+        960,
+        540
+      ],
+      "renderScale": 0.5,
+      "quality": "low",
+      "state": {
+        "s": 25421.903808531348,
+        "lane": 4.2,
+        "direction": 1,
+        "trackPosition": [
+          2417.4939635687065,
+          152.48328274074552,
+          -9778.927857764455
+        ],
+        "cameraPosition": [
+          2417.518650039664,
+          154.93303984604694,
+          -9778.903759980803
+        ],
+        "fieldOfView": 62,
+        "worldHash": "ff76a1f8061d68896effbbc5a83fad90779d2d38a40d7e959135e87f87cb0c50",
+        "loadedTileIds": [
+          "-7_-5",
+          "-7_-6",
+          "-6_-6",
+          "-7_-7",
+          "-6_-7",
+          "-4_-6",
+          "-4_-7",
+          "-5_-6",
+          "-5_-7",
+          "-3_-6",
+          "-3_-7",
+          "-2_-7",
+          "-3_-8",
+          "-2_-8",
+          "-2_-6",
+          "-1_-9",
+          "0_-9",
+          "-1_-8",
+          "1_-10",
+          "1_-9",
+          "0_-10",
+          "2_-10",
+          "2_-11",
+          "1_-11"
+        ],
+        "pendingTileIds": [
+          "3_-10"
+        ],
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 24,
+          "triangles": 11336337,
+          "placements": 20597,
+          "gpuErrors": [],
+          "drawCalls": 646,
+          "memory": {
+            "geometries": 92,
+            "textures": 3
+          }
+        }
+      },
+      "photoComparison": "unreviewed"
+    },
+    {
+      "station": "THW",
+      "direction": -1,
+      "file": "docs/captures/reconstruction-before-road-restoration/thw-reverse.png",
+      "sha256": "232e12a0636998d75fcbfa0da6357efc0ee028cb7f7b243600c39b78c2312a64",
+      "viewport": [
+        960,
+        540
+      ],
+      "renderScale": 0.5,
+      "quality": "low",
+      "state": {
+        "s": 25541.781559623527,
+        "lane": 0,
+        "direction": -1,
+        "trackPosition": [
+          2523.6839834007164,
+          151.14507562764462,
+          -9722.9829914935
+        ],
+        "cameraPosition": [
+          2523.709096535108,
+          153.5949148269942,
+          -9722.97045244205
+        ],
+        "fieldOfView": 62,
+        "worldHash": "ff76a1f8061d68896effbbc5a83fad90779d2d38a40d7e959135e87f87cb0c50",
+        "loadedTileIds": [
+          "-6_-7",
+          "-4_-6",
+          "-4_-7",
+          "-5_-6",
+          "-5_-7",
+          "-3_-6",
+          "-3_-7",
+          "-2_-7",
+          "-3_-8",
+          "-2_-8",
+          "-2_-6",
+          "-1_-9",
+          "0_-9",
+          "-1_-8",
+          "1_-10",
+          "1_-9",
+          "0_-10",
+          "2_-10",
+          "2_-11",
+          "1_-11",
+          "3_-10",
+          "3_-11"
+        ],
+        "pendingTileIds": [
+          "2_-9"
+        ],
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 22,
+          "triangles": 10222813,
+          "placements": 21144,
+          "gpuErrors": [],
+          "drawCalls": 1012,
+          "memory": {
+            "geometries": 89,
+            "textures": 3
+          }
+        }
+      },
+      "photoComparison": "unreviewed"
+    },
+    {
+      "station": "JEQ",
+      "direction": 1,
+      "file": "docs/captures/reconstruction-before-road-restoration/jeq-forward.png",
+      "sha256": "69fb5c34e9e1fe31aab951a99b3b3274e06c43ba433dacf95fcbda5bc4ef144b",
+      "viewport": [
+        960,
+        540
+      ],
+      "renderScale": 0.5,
+      "quality": "low",
+      "state": {
+        "s": 29373.823305733327,
+        "lane": 4.2,
+        "direction": 1,
+        "trackPosition": [
+          5904.245228563838,
+          122.74545450397305,
+          -7994.708408608687
+        ],
+        "cameraPosition": [
+          5904.316869230127,
+          125.19433608572871,
+          -7994.689791050533
+        ],
+        "fieldOfView": 62,
+        "worldHash": "ff76a1f8061d68896effbbc5a83fad90779d2d38a40d7e959135e87f87cb0c50",
+        "loadedTileIds": [
+          "-5_-7",
+          "-3_-6",
+          "-3_-7",
+          "-2_-7",
+          "-3_-8",
+          "-2_-8",
+          "-2_-6",
+          "-1_-9",
+          "0_-9",
+          "-1_-8",
+          "1_-10",
+          "1_-9",
+          "0_-10",
+          "2_-10",
+          "2_-11",
+          "1_-11",
+          "3_-10",
+          "3_-11",
+          "2_-9",
+          "5_-8",
+          "5_-9",
+          "6_-8",
+          "6_-9"
+        ],
+        "pendingTileIds": [],
+        "stats": {
+          "backend": "WebGL2",
+          "adapter": "WebKit WebGL",
+          "tiles": 23,
+          "triangles": 10844879,
+          "placements": 23437,
+          "gpuErrors": [],
+          "drawCalls": 805,
+          "memory": {
+            "geometries": 124,
+            "textures": 3
+          }
+        }
+      },
+      "photoComparison": "unreviewed"
+    }
+  ],
+  "errors": [],
+  "browser": "151.0.7922.173",
+  "interrupted_for_final_source_rebuild": true
+}

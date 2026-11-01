@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "access": [
+    {
+      "id": "hagley-covered-footbridge",
+      "station": "HAG",
+      "deck": "way/240115500/0",
+      "stairs": [
+        "way/240115501/0",
+        "way/240115499/0"
+      ],
+      "covered": true,
+      "palette": "historic-purple",
+      "reference": "references/by-location/hagley/hagley-covered-footbridge-original-0133.jpg",
+      "confidence": "source plan and reference form; engineered heights and stair extension are inferred"
+    }
+  ],
+  "roadBridges": [
+    {
+      "id": "hagley-brake-lane",
+      "span": "way/184620647/0",
+      "approaches": [
+        "way/150242118/0",
+        "way/157158203/0"
+      ],
+      "reference": "references/by-location/hagley/hagley-brake-lane-arch-original-0137.jpg",
+      "confidence": "source road geometry and reference arch; modelled span, soffit, profile and foundation levels are inferred",
+      "form": "masonry-arch",
+      "deckAboveRail": 6.3,
+      "transitionLength": 100,
+      "archSpring": 2.9,
+      "archRise": 3.2
+    }
+  ]
+}

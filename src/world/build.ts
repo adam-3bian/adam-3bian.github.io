@@ -2,6 +2,8 @@ import * as THREE from 'three';
 import type {Feature,V3,WorldTile} from '../core/types';
 import {RouteGeometry,Polyline,clamp,hash,random,gaugeRight,sectionUp,type Pose} from '../core/geometry';
 import {Terrain,SurfaceField,engineerSurfaceRoad,type RoadSurface} from './surfaces';
+import {roadSiteDefinitions} from './road-sites';
+import {solveAccessSites,accessSourceIds,accessDefinitions,ACCESS_RULES} from './access-sites';
 import {Batch,type MeshPacket} from '../render/batch';
 import {AssetFactory,geometricText} from '../render/assets';
 import {mappedPlatforms,insidePlatform,platformContains,platformEdgeDistance,derivedPlatformEdgeDistance,platformAnchor,refinePlatformTriangle,platformSurfaceY,type MappedPlatform,type P2} from './platforms';
@@ -244,7 +246,8 @@ export function buildTile(tile:WorldTile,route:RouteGeometry,terrain:Terrain):Ti
     const b=f.bounds as number[]|undefined;return b?b[0]<supportBounds[2]+100&&b[2]>supportBounds[0]-100&&b[1]<supportBounds[3]+100&&b[3]>supportBounds[1]-100:true;
   });
   const rawRoads=new Map([...supportFeatures,...tile.roads].map(f=>[f.id,f]));
-  const supportRoads=[...rawRoads.values()].sort((a,b)=>a.id.localeCompare(b.id)).map(f=>engineerSurfaceRoad(f,route,terrain)).filter((r):r is RoadSurface=>!!r);
+  for(const site of accessDefinitions){const ids=[site.deck,...site.stairs];if(ids.some(id=>rawRoads.has(id))&&!ids.every(id=>rawRoads.has(id)))throw new Error(`${site.id}: JOIN-01 incomplete layered access source assembly`);}
+  const supportRoads=[...rawRoads.values()].filter(f=>!accessSourceIds.has(f.id)).sort((a,b)=>a.id.localeCompare(b.id)).map(f=>engineerSurfaceRoad(f,route,terrain)).filter((r):r is RoadSurface=>!!r);
   const ownedRoadIds=new Set(tile.roads.map(r=>r.id)),roads=supportRoads.filter(r=>ownedRoadIds.has(r.id));
   const sourceStructures=route.data.structures.filter(s=>s.position&&inside(s.position[0],s.position[2],bounds));
   const field=new SurfaceField(route,terrain,supportRoads),placements:Placement[]=[],attachmentDecks:{id:string;field:CookedSoil}[]=[];
@@ -388,6 +391,32 @@ export function buildTile(tile:WorldTile,route:RouteGeometry,terrain:Terrain):Ti
   const analyticGround=ground;
   ground=(x:number,z:number)=>soil.height(x,z)??analyticGround(x,z);
 
+  const accessFloor=(point:V3,stationId:string)=>{
+    const mapped=allPlatforms.find(p=>p.station===stationId&&platformContains(p,point[0],point[2]));if(mapped)return platformSurfaceY(mapped,point[0],point[2]);
+    const station=route.stations.find(s=>s.id===stationId)!,near=route.project(point[0],point[2],100),opposite=route.laneOffset(near.s,4.2),outer=near.side<Math.min(0,opposite)?Math.min(0,opposite)-near.side:near.side-Math.max(0,opposite);
+    if(!station||Math.abs(near.s-station.s)>station.length/2||outer<1.7||outer>5.8)throw new Error(`${stationId}: SUPPORT-01 stair landing is outside the platform`);
+    const lane=near.side<Math.min(0,opposite)?(opposite<0?4.2:0):(opposite<0?0:4.2);return route.lanePose(near.s,lane).position[1]+.915;
+  };
+  const accessSites=solveAccessSites(route,[...rawRoads.values()],accessFloor);
+  const accessBeam=(a:V3,b:V3,width:number,color:number)=>{const av=new THREE.Vector3(...a),bv=new THREE.Vector3(...b),m=new THREE.Mesh(sharedBox,material(color));m.position.copy(av).add(bv).multiplyScalar(.5);m.scale.set(width,av.distanceTo(bv),width);m.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),bv.sub(av).normalize());batch.add(m);};
+  for(const site of accessSites){
+    const path=new Polyline(site.deck),mid=path.sample(path.length/2).position;if(!inside(mid[0],mid[2],bounds))continue;
+    const at=(s:number,offset:number,up=0):V3=>{const q=path.sample(s,offset).position;return[q[0],q[1]+up,q[2]];},purple=0x514054,cream=0xc7bba2;
+    for(let s=0;s<path.length;s+=1){const e=Math.min(path.length,s+1),a=at(s,-site.width/2),b=at(s,site.width/2),c=at(e,site.width/2),d=at(e,-site.width/2);
+      followingSolid(batch,[[a,b,c,d]],-ACCESS_RULES.deckThickness,0,new THREE.Color(purple));
+      for(const side of[-1,1]){accessBeam(at(s,side*site.width/2,.15),at(e,side*site.width/2,.15),.08,purple);accessBeam(at(s,side*site.width/2,1.05),at(e,side*site.width/2,1.05),.08,purple);accessBeam(at(s,side*site.width/2,.15),at(e,side*site.width/2,1.05),.045,cream);accessBeam(at(s,side*site.width/2,1.05),at(e,side*site.width/2,.15),.045,cream);}
+      if(site.covered){for(const side of[-1,1])topQuad(batch,at(s,side*(site.width/2+.2),2.0),at(e,side*(site.width/2+.2),2.0),at(e,0,2.4),at(s,0,2.4),new THREE.Color(0x505350));}
+    }
+    for(const s of[0,path.length])for(const side of[-1,1]){const q=at(s,side*(site.width/2-.15)),floor=accessFloor(q,site.station),soil=ground(q[0],q[2]);box(batch,q[0],(soil+floor)/2,q[2],.55,Math.max(.05,floor-soil),.55,0x918c7d);box(batch,q[0],(floor+q[1]-.30)/2,q[2],.24,q[1]-.30-floor,.24,purple);}
+    for(let s=0;s<=path.length;s+=2)for(const side of[-1,1])accessBeam(at(s,side*site.width/2,0),at(s,side*site.width/2,2),.08,purple);
+    for(const stair of site.stairs){
+      const dx=stair.bottom[0]-stair.top[0],dz=stair.bottom[2]-stair.top[2],length=Math.hypot(dx,dz),right:[number,number]=[-dz/length,dx/length],yaw=Math.atan2(-dx,-dz);
+      for(let i=0;i<stair.steps;i++){const t=(i+.5)/stair.steps,x=stair.top[0]+dx*t,z=stair.top[2]+dz*t,top=stair.top[1]-i*stair.riser,floor=accessFloor([x,0,z],site.station);box(batch,x,(floor+top)/2,z,stair.width,Math.max(.02,top-floor),stair.going+.002,purple,yaw);}
+      for(const side of[-1,1]){const a:V3=[stair.top[0]+right[0]*side*stair.width/2,stair.top[1]+1.05,stair.top[2]+right[1]*side*stair.width/2],b:V3=[stair.bottom[0]+right[0]*side*stair.width/2,stair.bottom[1]+1.05,stair.bottom[2]+right[1]*side*stair.width/2];accessBeam(a,b,.065,cream);for(let i=0;i<=stair.steps;i+=Math.max(1,Math.floor(stair.steps/6))){const t=i/stair.steps,q:V3=[a[0]+(b[0]-a[0])*t,a[1]+(b[1]-a[1])*t-1.05,a[2]+(b[2]-a[2])*t];accessBeam(q,[q[0],q[1]+1.05,q[2]],.06,cream);}}
+    }
+    placements.push({id:site.id,family:'layered-access',position:mid,sourceIds:site.sourceIds,reference:site.reference,confidence:site.confidence,ruleVersion:ACCESS_RULES.version,deck:site.deck,stairs:site.stairs,supportOwner:`station/${site.station}/platforms`,covered:site.covered});
+  }
+
   // Mainline construction uses the very same curvilinear poses as the simulator.
   const ribbon=(sa:number,sb:number,offset:number|((s:number)=>number),width:number|((s:number)=>number),top:number,thickness:number,color:THREE.Color,lane?:number,closed=false)=>{
     const oa=typeof offset==='number'?offset:offset(sa),ob=typeof offset==='number'?offset:offset(sb),wa=typeof width==='number'?width:width(sa),wb=typeof width==='number'?width:width(sb);
@@ -453,6 +482,13 @@ export function buildTile(tile:WorldTile,route:RouteGeometry,terrain:Terrain):Ti
       const pose=road.path.sample(road.crossingS),buried=route.tunnelAt(road.routeS??0),civil=route.data.structures.find(s=>s.id===road.sourceStructure);
       const upperSupports=((civil?.underRoutes as {points:V3[]}[]|undefined)||[]).flatMap(s=>s.points.map(q=>q[1]));
       const below=buried?Math.min(pose.position[1]-.9,ground(pose.position[0],pose.position[2]),...(upperSupports.length?upperSupports:[Infinity])):route.sample(road.routeS??0).position[1]-.6;
+      const declaredRoadSite=roadSiteDefinitions.find(d=>d.id===road.sourceStructure&&d.form==='masonry-arch');
+      if(declaredRoadSite){
+        const railPose=route.sample(road.routeS!,centre(road.routeS!)),hit=road.path.nearest(railPose.position[0],railPose.position[2]),centrePose=road.path.sample(hit.s),u=centrePose.tangent[0]*railPose.right[0]+centrePose.tangent[2]*railPose.right[2],v=-(centrePose.tangent[0]*railPose.tangent[0]+centrePose.tangent[2]*railPose.tangent[2]),base=railPose.position[1]-.54;
+        const bridge=factory.masonryArch({id:road.sourceStructure,spring:declaredRoadSite.archSpring,rise:declaredRoadSite.archRise,confidence:declaredRoadSite.confidence,opening:Math.abs(route.laneOffset(road.routeS!,4.2))+4.4,height:centrePose.position[1]-base,depth:(road.width+2.4)/Math.max(.35,Math.abs(u)),shear:v/u});bridge.position.set(centrePose.position[0],base,centrePose.position[2]);bridge.rotation.y=railPose.yaw;bridge.updateMatrixWorld(true);
+        for(const anchor of bridge.userData.supportAnchors as V3[]){const q=new THREE.Vector3(...anchor).applyMatrix4(bridge.matrixWorld),bottom=ground(q.x,q.z)-.12;if(bottom<q.y)box(batch,q.x,(bottom+q.y)/2,q.z,.9,q.y-bottom+.03,.9,0x918c7d,railPose.yaw);}
+        batch.add(bridge);placements.push({id:declaredRoadSite.id,family:'road-bridge',position:centrePose.position,supportY:base,sourceIds:[road.id],reference:declaredRoadSite.reference,confidence:declaredRoadSite.confidence});checks.engineeredCrossings++;continue;
+      }
       const bridge=factory.bridge({id:`${road.id}/deck`,type:'road',width:road.width+2.4,length:Math.max(8,(road.spanHalfLength??15)*2),height:pose.position[1]-below});
       bridge.position.set(pose.position[0],below,pose.position[2]);bridge.rotation.y=pose.yaw;rememberDeck(bridge,`${road.id}/deck`);batch.add(bridge);
       placements.push({id:`${road.id}/deck`,family:'road-bridge',position:pose.position,supportY:below});checks.engineeredCrossings++;
@@ -603,8 +639,8 @@ export function buildTile(tile:WorldTile,route:RouteGeometry,terrain:Terrain):Ti
   for(const station of route.stations){
     const pose=route.sample(station.s,centre(station.s));if(!inside(pose.position[0],pose.position[2],bounds))continue;
     const mapped=allPlatforms.filter(p=>p.station===station.id&&p.triangles.length);if(mapped.length){composeMappedStation(station,mapped);continue;}
-    const mappedAccess=route.data.structures.some(s=>s.type==='footbridge'&&Math.hypot(s.position[0]-pose.position[0],s.position[2]-pose.position[2])<station.length*.65&&route.project(s.position[0],s.position[2]).distance<25);
-    const spacing=Math.abs(route.laneOffset(station.s,4.2)),group=factory.station({...station,seed:hash(station.id),footbridge:!mappedAccess,trackSpacing:spacing});
+    const mappedAccess=accessSites.some(a=>a.station===station.id)||route.data.structures.some(s=>s.type==='footbridge'&&Math.hypot(s.position[0]-pose.position[0],s.position[2]-pose.position[2])<station.length*.65&&route.project(s.position[0],s.position[2]).distance<25);
+    const spacing=Math.abs(route.laneOffset(station.s,4.2)),group=factory.station({...station,seed:hash(station.id),footbridge:!mappedAccess,trackSpacing:spacing,...(accessSites.some(a=>a.station===station.id)?{canopyLength:50,canopyCentre:10}:{})});
     for(const child of [...group.children]){
       const platform=child.userData.trackPlatform as {x:number;width:number;length:number;heritage:boolean}|undefined;
       if(platform){

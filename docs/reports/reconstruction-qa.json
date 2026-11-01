@@ -1,0 +1,90 @@
+{
+  "generatedUTC": "2026-11-01T18:28:52.565158+00:00",
+  "scriptSHA256": "4709b8c937c2467a4c423915bcf8bd30795d9e6c47b21c44d1051f63e2757775",
+  "status": "incomplete",
+  "scope": "Commands executed here plus hash verification of separately recorded current-build geometry/browser evidence. This does not perform image judgement or close the complete game brief.",
+  "manifestSHA256": "4fb15b1e684614e0cd2535621715e208805ee7d095ac5d8aa39fd0e7559f823f",
+  "commands": [
+    {
+      "command": [
+        "npm",
+        "run",
+        "verify:site"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "*_test.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "scripts/audit-source-maps.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "scripts/audit-source-sites.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "scripts/build-station-review.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "scripts/build-site-register.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "scripts/route-qa.py",
+        "--interval",
+        "5",
+        "--out",
+        "docs/reports/reference-comparison"
+      ],
+      "exit_code": 1
+    }
+  ],
+  "stale_evidence": [],
+  "reference_source_errors": [],
+  "reused_evidence": {
+    "geometry_tiles": 121,
+    "geometry_hard_failures": [],
+    "geometry_mandatory_failures": [],
+    "browser_views": 44,
+    "browser_errors": [],
+    "station_photo_reviews": 16,
+    "regular_photo_reviews": 0,
+    "supplementary_pairs": 16
+  },
+  "open_gates": [
+    "Reference matching: 600 regular five-second frames remain unmapped/unreviewed; supplementary station anchors are approximate.",
+    "Six stations lack securely assigned photos. No station/civil site has complete geometric and photographic acceptance.",
+    "Visible obstruction candidates at ROW/SGB/SMA/BMO/WMR/DDG and generic station architecture/surroundings need source-owned reconstruction.",
+    "Crossing road bindings/component orientation, complete layered rules, full support/volume/LOD coverage and source semantic classes remain incomplete.",
+    "Road graph/trip lifecycle still produces long stops; source-exact trackwork, signalling and remaining assets/operations are incomplete.",
+    "Continuous-drive readiness/error/revisit checks, two-hour browser/GPU soak, 1080p point readability, RTX 3060 benchmark and three local reviews remain open."
+  ],
+  "accepted": false
+}

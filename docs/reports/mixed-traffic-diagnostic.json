@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-11-01T15:57:33.526Z",
+  "generatedAt": "2026-11-01T17:55:37.767Z",
   "sourceHashes": {
     "scripts/diagnose-mixed-traffic.ts": "1a38b714ce99f09b515fc813817d5daa1d4b1a64f7be8f20c355c7377de9e58a",
     "src/core/simulation.ts": "eb502976663f5128bae7dc37104be8aa54317704958788be6557c0de182c0180",
     "src/core/geometry.ts": "bdfb3e91bf21e6f43ddacb6c63b20be29f160bcd3b66bc788d98f304f29e9df7",
     "src/world/traffic.ts": "5683669aa142d602ed2f717e690a85218d50b94af688ceffecb91b33250477a4",
-    "src/world/surfaces.ts": "40c5d6892078d720da0c35148fb0596c2144778a1b3452300c10f21fa5b7aeea",
+    "src/world/surfaces.ts": "d6c0e191a681f298bca813ebda495231dba3b84236a7bd3591884e2c12614d6a",
     "public/data/route.json": "782c1291006b818b7cc236fbaa16cb3d5b33ef21c2afc2dadb3ec4d98f5e5001",
-    "public/data/road-surfaces.json": "1d9798585aac82cfbd3f1a1710fd059c4b38ec6ce331c60b7f88d43e573ff1be",
+    "public/data/road-surfaces.json": "c1639d27fa8cd66fea11ac0b58c0f0dfc318ec8b60830df11bf4fdb5f7b97566",
     "public/data/terrain.bin": "5e6fb9a03b7fe2ca36f7ca40455c574c9fdb80f1c8addf13ea2816f269a9261f"
   },
   "scope": "20 Hz accelerated CPU diagnostic, full generated motor-road graph and modelled AI rail services with stationary player. Same-lane longitudinal samples are not swept vehicle collision tests. No browser, geometry, authored timetable, all junction/crossing interactions or gridlock certification. Five-minute stops are investigation candidates; this model has no explicit parked/completed-trip classification.",
   "roadCount": 5971,
   "carCount": 1038,
   "roadEndpoints": 11942,
-  "unconnectedRoadEndpoints": 6143,
+  "unconnectedRoadEndpoints": 6155,
   "simulatedSeconds": 3600.000000004331,
-  "wallSeconds": 208.03050194399998,
+  "wallSeconds": 255.72771408,
   "railStats": {
     "spads": 0,
     "aiSpads": 0,
@@ -36,7 +36,7 @@
   "sameLaneOverlapPairCount": 0,
   "sameLaneOverlapExamples": [],
   "longestContinuousStoppedSeconds": 3597,
-  "vehiclesStoppedAtLeastFiveMinutes": 1019,
+  "vehiclesStoppedAtLeastFiveMinutes": 1020,
   "longStoppedVehicles": [
     {
       "id": "car-way/10056507/0-1",
@@ -82,8 +82,8 @@
       "id": "car-way/10059528/0--1",
       "road": "way/37120281/0",
       "direction": -1,
-      "stoppedSeconds": 3460,
-      "distanceToEnd": 6.951034651952046,
+      "stoppedSeconds": 3459,
+      "distanceToEnd": 6.95937344339,
       "connectedEndChoices": 1
     },
     {
@@ -266,24 +266,24 @@
       "id": "car-way/106492725/0-1",
       "road": "way/106492725/0",
       "direction": 1,
-      "stoppedSeconds": 3590,
-      "distanceToEnd": 7.997789865702686,
+      "stoppedSeconds": 3589,
+      "distanceToEnd": 7.9979221385597015,
       "connectedEndChoices": 0
     },
     {
       "id": "car-way/106492725/0--1",
       "road": "way/106492725/0",
       "direction": -1,
-      "stoppedSeconds": 3591,
-      "distanceToEnd": 7.997882489014241,
+      "stoppedSeconds": 3590,
+      "distanceToEnd": 7.997883480952563,
       "connectedEndChoices": 0
     },
     {
       "id": "car-way/1088932256/0-1",
-      "road": "way/28067523/0",
-      "direction": -1,
-      "stoppedSeconds": 3406,
-      "distanceToEnd": 7.997826854616834,
+      "road": "way/42783381/0",
+      "direction": 1,
+      "stoppedSeconds": 3525,
+      "distanceToEnd": 7.998257146391552,
       "connectedEndChoices": 0
     },
     {
@@ -410,8 +410,8 @@
       "id": "car-way/11267557/0-1",
       "road": "way/11267557/0",
       "direction": 1,
-      "stoppedSeconds": 3586,
-      "distanceToEnd": 7.997878022777968,
+      "stoppedSeconds": 3585,
+      "distanceToEnd": 7.9979809366666075,
       "connectedEndChoices": 0
     },
     {
@@ -419,7 +419,7 @@
       "road": "way/11267557/0",
       "direction": -1,
       "stoppedSeconds": 3590,
-      "distanceToEnd": 7.998143879184993,
+      "distanceToEnd": 7.99789634702192,
       "connectedEndChoices": 0
     },
     {
@@ -427,7 +427,7 @@
       "road": "way/182835354/0",
       "direction": -1,
       "stoppedSeconds": 3582,
-      "distanceToEnd": 7.997834242810793,
+      "distanceToEnd": 7.998300126564176,
       "connectedEndChoices": 0
     },
     {
@@ -699,7 +699,7 @@
       "road": "way/873030910/0",
       "direction": 1,
       "stoppedSeconds": 3569,
-      "distanceToEnd": 7.997796560282669,
+      "distanceToEnd": 7.997817008225244,
       "connectedEndChoices": 0
     },
     {
@@ -843,7 +843,7 @@
       "road": "way/1242103256/0",
       "direction": 1,
       "stoppedSeconds": 3590,
-      "distanceToEnd": 7.998113268496766,
+      "distanceToEnd": 7.9978281482651,
       "connectedEndChoices": 0
     },
     {
@@ -1050,7 +1050,7 @@
       "id": "car-way/127649690/0-1",
       "road": "way/1388245161/0",
       "direction": 1,
-      "stoppedSeconds": 3498,
+      "stoppedSeconds": 3479,
       "distanceToEnd": 2,
       "connectedEndChoices": 0
     },
@@ -1099,7 +1099,7 @@
       "road": "way/1393068083/0",
       "direction": -1,
       "stoppedSeconds": 3587,
-      "distanceToEnd": 7.998108066370971,
+      "distanceToEnd": 7.998103105257757,
       "connectedEndChoices": 0
     },
     {
@@ -1114,7 +1114,7 @@
       "id": "car-way/13470540/0--1",
       "road": "way/43804477/0",
       "direction": -1,
-      "stoppedSeconds": 3224,
+      "stoppedSeconds": 3223,
       "distanceToEnd": 7.998191414530213,
       "connectedEndChoices": 0
     },
@@ -1231,6 +1231,14 @@
       "connectedEndChoices": 0
     },
     {
+      "id": "car-way/1378032781/0--1",
+      "road": "way/179207247/0",
+      "direction": -1,
+      "stoppedSeconds": 3500,
+      "distanceToEnd": 7.997946306456009,
+      "connectedEndChoices": 0
+    },
+    {
       "id": "car-way/13797487/0-1",
       "road": "way/74282131/0",
       "direction": 1,
@@ -1314,8 +1322,8 @@
       "id": "car-way/1388245182/0-1",
       "road": "way/243675807/0",
       "direction": -1,
-      "stoppedSeconds": 3377,
-      "distanceToEnd": 7.695818055122935,
+      "stoppedSeconds": 3388,
+      "distanceToEnd": 7.695818055122942,
       "connectedEndChoices": 0
     },
     {
@@ -1490,8 +1498,8 @@
       "id": "car-way/146166934/0-1",
       "road": "way/240060149/0",
       "direction": 1,
-      "stoppedSeconds": 3447,
-      "distanceToEnd": 7.99780442610901,
+      "stoppedSeconds": 3446,
+      "distanceToEnd": 7.9977653938765165,
       "connectedEndChoices": 0
     },
     {
@@ -1803,7 +1811,7 @@
       "road": "way/161442259/0",
       "direction": 1,
       "stoppedSeconds": 3586,
-      "distanceToEnd": 7.9981251857830955,
+      "distanceToEnd": 7.998154920717965,
       "connectedEndChoices": 0
     },
     {
@@ -1811,7 +1819,7 @@
       "road": "way/161442259/0",
       "direction": -1,
       "stoppedSeconds": 3591,
-      "distanceToEnd": 7.997887065011428,
+      "distanceToEnd": 7.997751722286302,
       "connectedEndChoices": 0
     },
     {
@@ -1826,7 +1834,7 @@
       "id": "car-way/161791698/0--1",
       "road": "way/161574955/0",
       "direction": -1,
-      "stoppedSeconds": 3516,
+      "stoppedSeconds": 3515,
       "distanceToEnd": 2,
       "connectedEndChoices": 0
     },
@@ -1931,7 +1939,7 @@
       "road": "way/176383767/0",
       "direction": 1,
       "stoppedSeconds": 3586,
-      "distanceToEnd": 7.997918347147863,
+      "distanceToEnd": 7.997918372954775,
       "connectedEndChoices": 0
     },
     {
@@ -1954,7 +1962,7 @@
       "id": "car-way/196867638/0-1",
       "road": "way/957859595/0",
       "direction": 1,
-      "stoppedSeconds": 3546,
+      "stoppedSeconds": 3547,
       "distanceToEnd": 7.021918423436631,
       "connectedEndChoices": 1
     },
@@ -2050,8 +2058,8 @@
       "id": "car-way/22327350/0-1",
       "road": "way/22327350/0",
       "direction": 1,
-      "stoppedSeconds": 3587,
-      "distanceToEnd": 7.997858349166137,
+      "stoppedSeconds": 3586,
+      "distanceToEnd": 7.998120600105352,
       "connectedEndChoices": 0
     },
     {
@@ -2131,7 +2139,7 @@
       "road": "way/23157732/0",
       "direction": 1,
       "stoppedSeconds": 3583,
-      "distanceToEnd": 7.997802368028857,
+      "distanceToEnd": 7.998285655596646,
       "connectedEndChoices": 0
     },
     {
@@ -2139,7 +2147,7 @@
       "road": "way/23157732/0",
       "direction": -1,
       "stoppedSeconds": 3589,
-      "distanceToEnd": 7.997788798556343,
+      "distanceToEnd": 7.997759796043558,
       "connectedEndChoices": 0
     },
     {
@@ -2242,7 +2250,7 @@
       "id": "car-way/23584259/0-1",
       "road": "way/19853875/0",
       "direction": -1,
-      "stoppedSeconds": 3503,
+      "stoppedSeconds": 3504,
       "distanceToEnd": 6.802264221282321,
       "connectedEndChoices": 0
     },
@@ -2306,7 +2314,7 @@
       "id": "car-way/243675803/0-1",
       "road": "way/166747135/0",
       "direction": 1,
-      "stoppedSeconds": 3292,
+      "stoppedSeconds": 3289,
       "distanceToEnd": 18.74515338680027,
       "connectedEndChoices": 0
     },
@@ -2339,15 +2347,15 @@
       "road": "way/24848325/0",
       "direction": 1,
       "stoppedSeconds": 3588,
-      "distanceToEnd": 7.998281987533559,
+      "distanceToEnd": 7.997815554955835,
       "connectedEndChoices": 0
     },
     {
       "id": "car-way/24848325/0--1",
       "road": "way/24848325/0",
       "direction": -1,
-      "stoppedSeconds": 3590,
-      "distanceToEnd": 7.9978128929211545,
+      "stoppedSeconds": 3589,
+      "distanceToEnd": 7.997767442000795,
       "connectedEndChoices": 0
     },
     {
@@ -2403,7 +2411,7 @@
       "road": "way/24889458/0",
       "direction": 1,
       "stoppedSeconds": 3582,
-      "distanceToEnd": 7.99788286712689,
+      "distanceToEnd": 7.997875013714463,
       "connectedEndChoices": 0
     },
     {
@@ -2411,7 +2419,7 @@
       "road": "way/24889458/0",
       "direction": -1,
       "stoppedSeconds": 3591,
-      "distanceToEnd": 7.997772820666934,
+      "distanceToEnd": 7.998036981105165,
       "connectedEndChoices": 0
     },
     {
@@ -2419,7 +2427,7 @@
       "road": "way/24889704/0",
       "direction": 1,
       "stoppedSeconds": 3579,
-      "distanceToEnd": 7.997979603253242,
+      "distanceToEnd": 7.997795109582,
       "connectedEndChoices": 0
     },
     {
@@ -2427,7 +2435,7 @@
       "road": "way/24889704/0",
       "direction": -1,
       "stoppedSeconds": 3584,
-      "distanceToEnd": 7.997980361397117,
+      "distanceToEnd": 7.998089407074256,
       "connectedEndChoices": 0
     },
     {
@@ -2458,7 +2466,7 @@
       "id": "car-way/25087888/0--1",
       "road": "way/1534025320/0",
       "direction": 1,
-      "stoppedSeconds": 3516,
+      "stoppedSeconds": 3515,
       "distanceToEnd": 2,
       "connectedEndChoices": 2
     },
@@ -2499,7 +2507,7 @@
       "road": "way/25109566/0",
       "direction": 1,
       "stoppedSeconds": 3591,
-      "distanceToEnd": 7.997923422249002,
+      "distanceToEnd": 7.998118729719977,
       "connectedEndChoices": 0
     },
     {
@@ -2507,15 +2515,15 @@
       "road": "way/25109566/0",
       "direction": -1,
       "stoppedSeconds": 3589,
-      "distanceToEnd": 7.9977515625537,
+      "distanceToEnd": 7.997877611854656,
       "connectedEndChoices": 0
     },
     {
       "id": "car-way/25109650/0-1",
       "road": "way/25109650/0",
       "direction": 1,
-      "stoppedSeconds": 3587,
-      "distanceToEnd": 7.997903550978009,
+      "stoppedSeconds": 3586,
+      "distanceToEnd": 7.9978544928381154,
       "connectedEndChoices": 0
     },
     {
@@ -2523,7 +2531,7 @@
       "road": "way/25109650/0",
       "direction": -1,
       "stoppedSeconds": 3591,
-      "distanceToEnd": 7.998187291286434,
+      "distanceToEnd": 7.997932009069112,
       "connectedEndChoices": 0
     },
     {
@@ -2547,7 +2555,7 @@
       "road": "way/25156360/0",
       "direction": 1,
       "stoppedSeconds": 3586,
-      "distanceToEnd": 7.997876817960503,
+      "distanceToEnd": 7.998243011935784,
       "connectedEndChoices": 0
     },
     {
@@ -2555,7 +2563,7 @@
       "road": "way/25156360/0",
       "direction": -1,
       "stoppedSeconds": 3579,
-      "distanceToEnd": 7.997984972185389,
+      "distanceToEnd": 7.997876385460017,
       "connectedEndChoices": 0
     },
     {
@@ -2571,7 +2579,7 @@
       "road": "way/1250937572/0",
       "direction": -1,
       "stoppedSeconds": 3582,
-      "distanceToEnd": 7.105260874671045,
+      "distanceToEnd": 7.183813832214213,
       "connectedEndChoices": 0
     },
     {
@@ -2779,7 +2787,7 @@
       "road": "way/27242836/0",
       "direction": -1,
       "stoppedSeconds": 3592,
-      "distanceToEnd": 7.997877567765441,
+      "distanceToEnd": 7.998262245392523,
       "connectedEndChoices": 0
     },
     {
@@ -2955,7 +2963,7 @@
       "road": "way/27759569/0",
       "direction": 1,
       "stoppedSeconds": 3507,
-      "distanceToEnd": 7.99780638525009,
+      "distanceToEnd": 7.997855950243579,
       "connectedEndChoices": 0
     },
     {
@@ -3059,7 +3067,7 @@
       "road": "way/27816417/0",
       "direction": 1,
       "stoppedSeconds": 3583,
-      "distanceToEnd": 7.998316497191922,
+      "distanceToEnd": 7.997863452811885,
       "connectedEndChoices": 0
     },
     {
@@ -3067,7 +3075,7 @@
       "road": "way/27816417/0",
       "direction": -1,
       "stoppedSeconds": 3589,
-      "distanceToEnd": 7.997876816584337,
+      "distanceToEnd": 7.997750015493429,
       "connectedEndChoices": 0
     },
     {
@@ -3091,7 +3099,7 @@
       "road": "way/365382458/0",
       "direction": 1,
       "stoppedSeconds": 3550,
-      "distanceToEnd": 7.997797997279946,
+      "distanceToEnd": 7.997804948810725,
       "connectedEndChoices": 0
     },
     {
@@ -3370,8 +3378,8 @@
       "id": "car-way/27853379/0-1",
       "road": "way/89980979/0",
       "direction": 1,
-      "stoppedSeconds": 3563,
-      "distanceToEnd": 7.998331652104369,
+      "stoppedSeconds": 3562,
+      "distanceToEnd": 7.99777727463821,
       "connectedEndChoices": 0
     },
     {
@@ -3491,7 +3499,7 @@
       "road": "way/28246843/0",
       "direction": -1,
       "stoppedSeconds": 3542,
-      "distanceToEnd": 7.99788087450505,
+      "distanceToEnd": 7.998313616802267,
       "connectedEndChoices": 0
     },
     {
@@ -3714,7 +3722,7 @@
       "id": "car-way/28509365/0-1",
       "road": "way/164392808/0",
       "direction": 1,
-      "stoppedSeconds": 3436,
+      "stoppedSeconds": 3435,
       "distanceToEnd": 15.009466784405902,
       "connectedEndChoices": 2
     },
@@ -3723,7 +3731,7 @@
       "road": "way/28509365/0",
       "direction": -1,
       "stoppedSeconds": 3585,
-      "distanceToEnd": 7.998153572437869,
+      "distanceToEnd": 7.997801256327108,
       "connectedEndChoices": 0
     },
     {
@@ -4091,7 +4099,7 @@
       "road": "way/32202079/0",
       "direction": 1,
       "stoppedSeconds": 3586,
-      "distanceToEnd": 7.997753560022371,
+      "distanceToEnd": 7.99775356364157,
       "connectedEndChoices": 0
     },
     {
@@ -4099,7 +4107,7 @@
       "road": "way/32203114/0",
       "direction": 1,
       "stoppedSeconds": 3593,
-      "distanceToEnd": 7.997875421500936,
+      "distanceToEnd": 7.998239375247998,
       "connectedEndChoices": 0
     },
     {
@@ -4194,8 +4202,8 @@
       "id": "car-way/335268227/0-1",
       "road": "way/335268227/0",
       "direction": 1,
-      "stoppedSeconds": 3574,
-      "distanceToEnd": 7.997982301082828,
+      "stoppedSeconds": 3573,
+      "distanceToEnd": 7.997750991480871,
       "connectedEndChoices": 0
     },
     {
@@ -4203,7 +4211,7 @@
       "road": "way/335268227/0",
       "direction": -1,
       "stoppedSeconds": 3588,
-      "distanceToEnd": 7.997806097143334,
+      "distanceToEnd": 7.997881565697073,
       "connectedEndChoices": 0
     },
     {
@@ -4442,7 +4450,7 @@
       "id": "car-way/37912347/0--1",
       "road": "way/58125555/0",
       "direction": 1,
-      "stoppedSeconds": 3467,
+      "stoppedSeconds": 3466,
       "distanceToEnd": 15.995980097001166,
       "connectedEndChoices": 0
     },
@@ -4490,7 +4498,7 @@
       "id": "car-way/4041050/0-1",
       "road": "way/380807153/0",
       "direction": 1,
-      "stoppedSeconds": 3491,
+      "stoppedSeconds": 3490,
       "distanceToEnd": 15.995770467507192,
       "connectedEndChoices": 0
     },
@@ -4714,16 +4722,16 @@
       "id": "car-way/42942430/0-1",
       "road": "way/42942430/0",
       "direction": 1,
-      "stoppedSeconds": 3593,
-      "distanceToEnd": 7.997966028930094,
+      "stoppedSeconds": 3592,
+      "distanceToEnd": 7.9978837415083746,
       "connectedEndChoices": 0
     },
     {
       "id": "car-way/42942430/0--1",
       "road": "way/42942430/0",
       "direction": -1,
-      "stoppedSeconds": 3591,
-      "distanceToEnd": 7.997758632189252,
+      "stoppedSeconds": 3590,
+      "distanceToEnd": 7.997938064076499,
       "connectedEndChoices": 0
     },
     {
@@ -5386,7 +5394,7 @@
       "id": "car-way/481181225/0--1",
       "road": "way/1534025339/0",
       "direction": 1,
-      "stoppedSeconds": 3577,
+      "stoppedSeconds": 3576,
       "distanceToEnd": 2,
       "connectedEndChoices": 0
     },
@@ -5443,7 +5451,7 @@
       "road": "way/4953701/0",
       "direction": 1,
       "stoppedSeconds": 3540,
-      "distanceToEnd": 16.49598765008875,
+      "distanceToEnd": 16.495235348726396,
       "connectedEndChoices": 0
     },
     {
@@ -5490,8 +5498,8 @@
       "id": "car-way/4856829/0--1",
       "road": "way/182835353/0",
       "direction": 1,
-      "stoppedSeconds": 3542,
-      "distanceToEnd": 7.998338772784109,
+      "stoppedSeconds": 3541,
+      "distanceToEnd": 7.997788667691225,
       "connectedEndChoices": 0
     },
     {
@@ -5578,8 +5586,8 @@
       "id": "car-way/491604905/0-1",
       "road": "way/452468981/0",
       "direction": -1,
-      "stoppedSeconds": 3559,
-      "distanceToEnd": 7.998260252829008,
+      "stoppedSeconds": 3558,
+      "distanceToEnd": 7.997834546433495,
       "connectedEndChoices": 0
     },
     {
@@ -5595,7 +5603,7 @@
       "road": "way/4953701/0",
       "direction": 1,
       "stoppedSeconds": 3549,
-      "distanceToEnd": 7.998325010738313,
+      "distanceToEnd": 7.997866395239356,
       "connectedEndChoices": 0
     },
     {
@@ -5643,14 +5651,14 @@
       "road": "way/50070338/0",
       "direction": 1,
       "stoppedSeconds": 3593,
-      "distanceToEnd": 7.997773089299585,
+      "distanceToEnd": 7.998091649659841,
       "connectedEndChoices": 0
     },
     {
       "id": "car-way/50070338/0--1",
       "road": "way/4722942/0",
       "direction": -1,
-      "stoppedSeconds": 3584,
+      "stoppedSeconds": 3583,
       "distanceToEnd": 7.998296509910689,
       "connectedEndChoices": 0
     },
@@ -5674,7 +5682,7 @@
       "id": "car-way/50084023/0-1",
       "road": "way/58599683/0",
       "direction": 1,
-      "stoppedSeconds": 3540,
+      "stoppedSeconds": 3541,
       "distanceToEnd": 3.4951002696937863,
       "connectedEndChoices": 0
     },
@@ -5771,7 +5779,7 @@
       "road": "way/52120792/0",
       "direction": 1,
       "stoppedSeconds": 3590,
-      "distanceToEnd": 7.998284547378248,
+      "distanceToEnd": 7.997925998288181,
       "connectedEndChoices": 0
     },
     {
@@ -5779,7 +5787,7 @@
       "road": "way/52120792/0",
       "direction": -1,
       "stoppedSeconds": 3593,
-      "distanceToEnd": 7.99775070713709,
+      "distanceToEnd": 7.9979174701488756,
       "connectedEndChoices": 0
     },
     {
@@ -5827,7 +5835,7 @@
       "road": "way/52143446/0",
       "direction": 1,
       "stoppedSeconds": 3550,
-      "distanceToEnd": 7.99776611124485,
+      "distanceToEnd": 7.997766111176439,
       "connectedEndChoices": 0
     },
     {
@@ -5843,7 +5851,7 @@
       "road": "way/1242103256/0",
       "direction": 1,
       "stoppedSeconds": 3537,
-      "distanceToEnd": 15.995369087997645,
+      "distanceToEnd": 15.995317372277128,
       "connectedEndChoices": 0
     },
     {
@@ -5891,7 +5899,7 @@
       "road": "way/535328323/0",
       "direction": -1,
       "stoppedSeconds": 3589,
-      "distanceToEnd": 7.997905979005678,
+      "distanceToEnd": 7.9977526150235905,
       "connectedEndChoices": 0
     },
     {
@@ -5915,7 +5923,7 @@
       "road": "way/55883812/0",
       "direction": 1,
       "stoppedSeconds": 3581,
-      "distanceToEnd": 7.997877596296377,
+      "distanceToEnd": 7.998108488722181,
       "connectedEndChoices": 0
     },
     {
@@ -6091,15 +6099,15 @@
       "road": "way/55924423/0",
       "direction": 1,
       "stoppedSeconds": 3592,
-      "distanceToEnd": 7.997789351196026,
+      "distanceToEnd": 7.998199729318202,
       "connectedEndChoices": 0
     },
     {
       "id": "car-way/55924423/0--1",
       "road": "way/55924423/0",
       "direction": -1,
-      "stoppedSeconds": 3593,
-      "distanceToEnd": 7.997917683479361,
+      "stoppedSeconds": 3592,
+      "distanceToEnd": 7.99785959039131,
       "connectedEndChoices": 0
     },
     {
@@ -6107,7 +6115,7 @@
       "road": "way/55924427/0",
       "direction": 1,
       "stoppedSeconds": 3592,
-      "distanceToEnd": 7.9983441523452825,
+      "distanceToEnd": 7.997800731709788,
       "connectedEndChoices": 0
     },
     {
@@ -6115,7 +6123,7 @@
       "road": "way/55924427/0",
       "direction": -1,
       "stoppedSeconds": 3592,
-      "distanceToEnd": 7.998310298876911,
+      "distanceToEnd": 7.997933371240722,
       "connectedEndChoices": 0
     },
     {
@@ -6219,7 +6227,7 @@
       "road": "way/58125461/0",
       "direction": 1,
       "stoppedSeconds": 3589,
-      "distanceToEnd": 7.997869458977021,
+      "distanceToEnd": 7.997901766013811,
       "connectedEndChoices": 0
     },
     {
@@ -6227,7 +6235,7 @@
       "road": "way/58125461/0",
       "direction": -1,
       "stoppedSeconds": 3589,
-      "distanceToEnd": 7.9978401215689345,
+      "distanceToEnd": 7.997810456253229,
       "connectedEndChoices": 0
     },
     {
@@ -6307,7 +6315,7 @@
       "road": "way/58125511/0",
       "direction": -1,
       "stoppedSeconds": 3592,
-      "distanceToEnd": 7.9982015810498845,
+      "distanceToEnd": 7.99791991674326,
       "connectedEndChoices": 0
     },
     {
@@ -6378,8 +6386,8 @@
       "id": "car-way/58397163/0-1",
       "road": "way/58397163/0",
       "direction": 1,
-      "stoppedSeconds": 3590,
-      "distanceToEnd": 7.998034707058423,
+      "stoppedSeconds": 3589,
+      "distanceToEnd": 7.9981453210928635,
       "connectedEndChoices": 0
     },
     {
@@ -6387,7 +6395,7 @@
       "road": "way/58397163/0",
       "direction": -1,
       "stoppedSeconds": 3589,
-      "distanceToEnd": 7.998173233031429,
+      "distanceToEnd": 7.997892927673775,
       "connectedEndChoices": 0
     },
     {
@@ -6490,7 +6498,7 @@
       "id": "car-way/636032945/0-1",
       "road": "way/127649695/0",
       "direction": 1,
-      "stoppedSeconds": 3412,
+      "stoppedSeconds": 3403,
       "distanceToEnd": 18.745655058970897,
       "connectedEndChoices": 0
     },
@@ -6523,7 +6531,7 @@
       "road": "way/73292834/0",
       "direction": 1,
       "stoppedSeconds": 3559,
-      "distanceToEnd": 7.086043661597131,
+      "distanceToEnd": 6.950428424450195,
       "connectedEndChoices": 1
     },
     {
@@ -6666,7 +6674,7 @@
       "id": "car-way/68585066/0--1",
       "road": "way/230446201/0",
       "direction": 1,
-      "stoppedSeconds": 3558,
+      "stoppedSeconds": 3559,
       "distanceToEnd": 7.997935425960417,
       "connectedEndChoices": 0
     },
@@ -6803,7 +6811,7 @@
       "road": "way/695585365/0",
       "direction": 1,
       "stoppedSeconds": 3594,
-      "distanceToEnd": 7.997878164381817,
+      "distanceToEnd": 7.99785296606953,
       "connectedEndChoices": 0
     },
     {
@@ -6811,7 +6819,7 @@
       "road": "way/695585365/0",
       "direction": -1,
       "stoppedSeconds": 3593,
-      "distanceToEnd": 7.997752782098704,
+      "distanceToEnd": 7.997752418825549,
       "connectedEndChoices": 0
     },
     {
@@ -6819,7 +6827,7 @@
       "road": "way/69878859/0",
       "direction": 1,
       "stoppedSeconds": 3588,
-      "distanceToEnd": 7.997976165960296,
+      "distanceToEnd": 7.997895658888481,
       "connectedEndChoices": 0
     },
     {
@@ -6827,7 +6835,7 @@
       "road": "way/11266255/0",
       "direction": 1,
       "stoppedSeconds": 3560,
-      "distanceToEnd": 7.997921214131274,
+      "distanceToEnd": 7.997921213035831,
       "connectedEndChoices": 0
     },
     {
@@ -6883,7 +6891,7 @@
       "road": "way/71724588/0",
       "direction": 1,
       "stoppedSeconds": 3591,
-      "distanceToEnd": 7.9977587803264925,
+      "distanceToEnd": 7.998294540927034,
       "connectedEndChoices": 0
     },
     {
@@ -6891,7 +6899,7 @@
       "road": "way/71724588/0",
       "direction": -1,
       "stoppedSeconds": 3592,
-      "distanceToEnd": 7.998292116336973,
+      "distanceToEnd": 7.997903219349229,
       "connectedEndChoices": 0
     },
     {
@@ -6947,7 +6955,7 @@
       "road": "way/850915665/0",
       "direction": 1,
       "stoppedSeconds": 3573,
-      "distanceToEnd": 7.9978818955959134,
+      "distanceToEnd": 7.997881909328832,
       "connectedEndChoices": 0
     },
     {
@@ -6968,10 +6976,10 @@
     },
     {
       "id": "car-way/74282133/0--1",
-      "road": "way/27241150/0",
+      "road": "way/74282133/0",
       "direction": -1,
-      "stoppedSeconds": 3556,
-      "distanceToEnd": 7.997753006993383,
+      "stoppedSeconds": 3588,
+      "distanceToEnd": 7.99775351231286,
       "connectedEndChoices": 0
     },
     {
@@ -7162,7 +7170,7 @@
       "id": "car-way/8001353/0--1",
       "road": "way/1349880159/0",
       "direction": -1,
-      "stoppedSeconds": 3505,
+      "stoppedSeconds": 3504,
       "distanceToEnd": 15.995748716198454,
       "connectedEndChoices": 0
     },
@@ -7331,7 +7339,7 @@
       "road": "way/8010056/0",
       "direction": 1,
       "stoppedSeconds": 3583,
-      "distanceToEnd": 7.997901042278443,
+      "distanceToEnd": 7.997808905862172,
       "connectedEndChoices": 0
     },
     {
@@ -7339,7 +7347,7 @@
       "road": "way/8010056/0",
       "direction": -1,
       "stoppedSeconds": 3588,
-      "distanceToEnd": 7.997842625416193,
+      "distanceToEnd": 7.997876082342732,
       "connectedEndChoices": 0
     },
     {
@@ -7362,7 +7370,7 @@
       "id": "car-way/8018647/0-1",
       "road": "way/8021037/0",
       "direction": 1,
-      "stoppedSeconds": 3575,
+      "stoppedSeconds": 3574,
       "distanceToEnd": 7.998251722240056,
       "connectedEndChoices": 0
     },
@@ -7418,8 +7426,8 @@
       "id": "car-way/8022992/0--1",
       "road": "way/182835353/0",
       "direction": 1,
-      "stoppedSeconds": 3531,
-      "distanceToEnd": 15.995754190828592,
+      "stoppedSeconds": 3530,
+      "distanceToEnd": 15.995607065443863,
       "connectedEndChoices": 0
     },
     {
@@ -7499,7 +7507,7 @@
       "road": "way/812675947/0",
       "direction": -1,
       "stoppedSeconds": 3557,
-      "distanceToEnd": 7.997797602967594,
+      "distanceToEnd": 7.997878945805999,
       "connectedEndChoices": 0
     },
     {
@@ -7538,8 +7546,8 @@
       "id": "car-way/8151896/0-1",
       "road": "way/8151896/0",
       "direction": 1,
-      "stoppedSeconds": 3586,
-      "distanceToEnd": 7.998241538170703,
+      "stoppedSeconds": 3585,
+      "distanceToEnd": 7.9977518829448115,
       "connectedEndChoices": 0
     },
     {
@@ -7547,7 +7555,7 @@
       "road": "way/8151896/0",
       "direction": -1,
       "stoppedSeconds": 3591,
-      "distanceToEnd": 7.998075363953699,
+      "distanceToEnd": 7.997989757015749,
       "connectedEndChoices": 0
     },
     {
@@ -7635,7 +7643,7 @@
       "road": "way/73032552/0",
       "direction": 1,
       "stoppedSeconds": 3460,
-      "distanceToEnd": 7.278620067657414,
+      "distanceToEnd": 7.278923736869459,
       "connectedEndChoices": 0
     },
     {
