@@ -1,14 +1,19 @@
 {
   "method": "Native WebGPU, production leading-camera poses; paused Class 168 four-car endpoint fixtures. No free camera or movement authority is granted. This checks visibility, not portal geography or a two-hour soak.",
   "sourceHashes": {
-    "src/style.css": "fc1a9dddc2781c0e2e86c32831cf604762695ecb9814c388e7b92ef4038855e8",
+    "src/style.css": "212353eb42098925ffd8e56abc7bb6b81104daa01b0e1a898948c187412a048f",
     "src/env.d.ts": "79d49e15e28c835d64c1fede8fd76d464755c3c88cf688c92a41a2c42f252007",
-    "src/main.ts": "f0fe6ad08e4a96d80e449783fc2d2639aecd52823009741ca46ee41fe117af66",
+    "src/main.ts": "3508a2a1d95d23ba9c23d32c71d0f8c3f92a9e362d5035d24154500ba9ed6558",
+    "src/fonts/libre-caslon-display-latin.woff2": "84267e937417f10dff37df818c5ef7f1e9f2e6a703e03c2dd286d3320af53269",
+    "src/fonts/dm-sans-latin.woff2": "9fea608a947e67020c33cad9a6fe3d60c54119dfb8cff87768a8117a15ed7543",
+    "src/fonts/libre-caslon-display-latin-ext.woff2": "7a17a86fb7c3cd003bf073f0455f49c746424b37f3e1a931663eae80288a1e89",
+    "src/fonts/dm-sans-latin-ext.woff2": "a5d38fe99f930275684999b462c7123faa063d9e44e73b4b241723d884aa0f49",
     "src/core/simulation.ts": "0fee0d0b799b6d8b859892f762b2284b70faa721f08d10492d80c896ed18ed2b",
     "src/core/pose.ts": "8fbd9b47f081f2d9e6c6876d55ec0afe3344e571a2f56b8c5215c8e0189bac7b",
     "src/core/geometry.ts": "bdfb3e91bf21e6f43ddacb6c63b20be29f160bcd3b66bc788d98f304f29e9df7",
     "src/core/save.ts": "706739760533ddff2899771a3319a9961fe2889983ec5d39800431b6819bf09a",
     "src/core/audio.ts": "b5e0c39aa2a4154b9041b766646789932f9f2528f4a465210da2cc2e4416015e",
+    "src/core/resource-url.ts": "8f8f78d65aaf5833fbd857a0d04c4bef5bfe4f811705d713c4c17c08bacce79a",
     "src/core/types.ts": "59f39125dfeac314cedc9a9b95717b90b924f2de2982257bc8cd7980ed5c7505",
     "src/world/platforms.ts": "852d0a740900c3c64f58fbaa8fe40d90b7f6eb5267a2b39a8b5652cfffcbf91f",
     "src/world/build.ts": "08958a69b35524a57d12fbfea62edff4b27735fae0dedd29cea95bc2f0a34935",
@@ -18,13 +23,17 @@
     "src/render/assets.ts": "b5fb662c1d096a6b7e746a9e2aa6519fd9768076b8c369c31434ced5fea2678e",
     "src/render/batch.ts": "4bcb3d90d0e8a8264ffe08b1f17fd6890f2c4495cb3166acd04e3bb981491bcc",
     "src/render/trackwork.ts": "5cc31c59511e6376a8fb8496978a502dde47ed9046e475a548f4a78bc90169a2",
-    "src/render/renderer.ts": "fa4141d6ff5fa8cc8db5892608076aa24461bcdc6f4518355b0236acafc9293d"
+    "src/render/renderer.ts": "3444f5b42d4eb48ede4b7ee5ceb682f23b14530bfbf5148621bc7956f27b5a77"
   },
   "harnessSHA256": "732eb2599bccb114d98aa6745315b498f601e4abf10631acc2e8e1a5f7c71303",
   "buildHashes": {
+    "work/qa-dist/assets/libre-caslon-display-latin-n_DgBRfq.woff2": "84267e937417f10dff37df818c5ef7f1e9f2e6a703e03c2dd286d3320af53269",
+    "work/qa-dist/assets/libre-caslon-display-latin-ext-CUYASYSA.woff2": "7a17a86fb7c3cd003bf073f0455f49c746424b37f3e1a931663eae80288a1e89",
     "work/qa-dist/assets/world.worker-BJp70N7g.js": "7ab0acbd2a3f2b8a88d0cbfda698350c08e329b3b2be8c1f187a556f706414e5",
-    "work/qa-dist/assets/index-CnpGMpGw.js": "4bafe9a8fdb5eab7d0298c06a7a34840a81ca99cd918d17256392193bcf1f730",
-    "work/qa-dist/assets/index-ClqjGB6b.css": "2b3356071e015aa358127af3b5557f8ba3445dbd38ed4df3415a94f704353a06"
+    "work/qa-dist/assets/app-IMevhSDM.js": "4b3bd5c1259da9a624d080fb2d3b300e85d4011ab3b1395db601d3661b50dd73",
+    "work/qa-dist/assets/app-etSk56i6.css": "9efc66e22ac607f21633bbaa6b45688e3119e8154687ee40a844c5d4e258c120",
+    "work/qa-dist/assets/dm-sans-latin-ext-BOFOeGcA.woff2": "a5d38fe99f930275684999b462c7123faa063d9e44e73b4b241723d884aa0f49",
+    "work/qa-dist/assets/dm-sans-latin-Xz1IZZA0.woff2": "9fea608a947e67020c33cad9a6fe3d60c54119dfb8cff87768a8117a15ed7543"
   },
   "checks": [
     {
@@ -65,7 +74,7 @@
   "errors": [],
   "consoleErrors": [],
   "expectedConsoleErrors": [
-    "Error: Graphics device lost: Device was destroyed.. Reload to reconnect graphics.\n    at http://localhost:4174/assets/index-CnpGMpGw.js:581:106297"
+    "Error: Graphics device lost: Device was destroyed.. Reload to reconnect graphics.\n    at http://localhost:4174/assets/app-IMevhSDM.js:581:106546"
   ],
   "browser": "151.0.7922.173",
   "launchArgs": [
@@ -85,6 +94,6 @@
     "savedClock": 40001.233333333534,
     "newStateSaved": true
   },
-  "generatedAt": "2026-11-01T11:28:44Z",
+  "generatedAt": "2026-11-01T12:11:37Z",
   "passed": true
 }

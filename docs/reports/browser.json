@@ -2107,9 +2107,10 @@
   "subsequentRendererChange": {
     "file": "src/render/renderer.ts",
     "capturedSHA256": "65394b1cba03db4f4b465e78dbe454da9a3cca2488c19f9d318b5cdaf73bf8f4",
-    "finalSHA256": "fa4141d6ff5fa8cc8db5892608076aa24461bcdc6f4518355b0236acafc9293d",
     "change": "Endpoint visibility now uses the full occupied consist interval instead of only the leading position. All geometry, source data, controls, simulation and persistence modules are unchanged.",
-    "freshEvidence": "docs/reports/endpoint-browser.json and production-browser.json",
-    "scope": "These44 station captures and browser assertions belong to the recorded pre-correction build. Do not silently attribute them to the changed renderer."
+    "freshEvidence": "docs/reports/endpoint-browser.json and static-site.json",
+    "scope": "These 44 captures and browser assertions belong to the recorded pre-correction build. A later static-hosting update also changed resource URLs and bundled the UI fonts locally; see the current static-site report.",
+    "postCullSHA256": "fa4141d6ff5fa8cc8db5892608076aa24461bcdc6f4518355b0236acafc9293d",
+    "currentRendererSHA256": "3444f5b42d4eb48ede4b7ee5ceb682f23b14530bfbf5148621bc7956f27b5a77"
   }
 }

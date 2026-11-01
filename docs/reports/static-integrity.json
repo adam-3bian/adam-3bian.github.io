@@ -1,0 +1,11 @@
+{
+  "generatedAt": "2026-11-01T12:13:59.166704+00:00",
+  "method": "In an isolated scratch copy, verify the intact package, then independently alter a source file and remove a built terrain file.",
+  "manifestSHA256": "a4ff11d1a292242164376320acc63dabb4f5d02fd9631b079a10ade5ec90f013",
+  "checkerSHA256": "b37dad4ce6c62867b9b52ac59b1e976f91855a4ac25b2732fb7694aa44538567",
+  "checks": {
+    "intactPackagePasses": true,
+    "sourceDriftRejected": true,
+    "missingTerrainRejected": true
+  }
+}

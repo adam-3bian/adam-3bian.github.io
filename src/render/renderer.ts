@@ -3,6 +3,7 @@ import {AssetFactory,setSignalAspect,setCrossingState} from './assets';
 import {packetGeometry} from './batch';
 import {RouteGeometry,Polyline,clamp} from '../core/geometry';
 import {trackBasis,roadBasis} from '../core/pose';
+import {routeResourceUrl} from '../core/resource-url';
 import type {RouteData,V3} from '../core/types';
 import type {RailwaySimulation} from '../core/simulation';
 import {RoadTraffic} from '../world/traffic';
@@ -37,10 +38,10 @@ export class RailwayRenderer {
     await this.renderer.init();if(!(this.renderer as any).backend.isWebGPUBackend)throw new Error('A native WebGPU backend could not be started.');
     const device=(this.renderer as any).backend.device;device?.addEventListener('uncapturederror',(e:any)=>{this.failures.push(e.error.message);this.onError?.(new Error(e.error.message));});
     device?.lost.then((info:any)=>{if(this.disposed)return;this.sim.paused=true;this.onError?.(new Error(`Graphics device lost: ${info.message||info.reason}. Reload to reconnect graphics.`));});
-    const adjacentResponse=await fetch('/data/adjacent-services.json');if(adjacentResponse.ok){const document=await adjacentResponse.json();this.data.adjacentServices=document.services;for(const service of document.services){const kind=service.kind==='shuttle'?'139':service.kind==='tram'?'metro':service.kind==='heritage'?'heritage':'emu';const model=this.factory.train({id:service.id,kind,cars:service.cars});this.scene.add(model);this.adjacent.push({data:service,path:new Polyline(service.points),model});}}
-    const roadsResponse=await fetch('/data/road-surfaces.json');if(!roadsResponse.ok)throw new Error('The shared road support manifest could not be loaded.');this.data.surfaceRoads=(await roadsResponse.json()).roads;this.roadTraffic.setSpawnPlan(this.data.surfaceRoads as any);this.sim.roadCrossingClear=s=>this.roadTraffic.crossingClear(s);
-    const landResponse=await fetch('/data/land-surfaces.json');if(!landResponse.ok)throw new Error('The shared water support manifest could not be loaded.');this.data.surfaceWater=(await landResponse.json()).water;
-    const response=await fetch('/'+this.data.terrain.url.replace(/^\//,''));if(!response.ok)throw new Error('Terrain data could not be loaded.');const terrain=await response.arrayBuffer();
+    const adjacentResponse=await fetch(routeResourceUrl('data/adjacent-services.json',document.baseURI));if(adjacentResponse.ok){const document=await adjacentResponse.json();this.data.adjacentServices=document.services;for(const service of document.services){const kind=service.kind==='shuttle'?'139':service.kind==='tram'?'metro':service.kind==='heritage'?'heritage':'emu';const model=this.factory.train({id:service.id,kind,cars:service.cars});this.scene.add(model);this.adjacent.push({data:service,path:new Polyline(service.points),model});}}
+    const roadsResponse=await fetch(routeResourceUrl('data/road-surfaces.json',document.baseURI));if(!roadsResponse.ok)throw new Error('The shared road support manifest could not be loaded.');this.data.surfaceRoads=(await roadsResponse.json()).roads;this.roadTraffic.setSpawnPlan(this.data.surfaceRoads as any);this.sim.roadCrossingClear=s=>this.roadTraffic.crossingClear(s);
+    const landResponse=await fetch(routeResourceUrl('data/land-surfaces.json',document.baseURI));if(!landResponse.ok)throw new Error('The shared water support manifest could not be loaded.');this.data.surfaceWater=(await landResponse.json()).water;
+    const response=await fetch(routeResourceUrl(this.data.terrain.url,document.baseURI));if(!response.ok)throw new Error('Terrain data could not be loaded.');const terrain=await response.arrayBuffer();
     this.worker.postMessage({type:'init',route:this.data,terrain},[terrain]);this.makeInfrastructure();
   }
   private onWorker(message:any){
@@ -65,7 +66,7 @@ export class RailwayRenderer {
   }
   private async updateTiles(force=false){if(!this.ready)return;const s=this.sim.player.s;if(!force&&Math.abs(s-this.lastS)<100)return;this.lastS=s;const pos=this.route.sample(s).position;const radius=this.quality==='high'?1750:this.quality==='low'?900:1300;const now=performance.now();
     const tiles=this.data.tiles.map(tile=>{const b=tile.bounds;const d=Math.hypot(Math.max(b[0]-pos[0],0,pos[0]-b[2]),Math.max(b[1]-pos[2],0,pos[2]-b[3]));return {tile,d};}).filter(x=>x.d<radius).sort((a,b)=>a.d-b.d);
-    const ids=new Set(tiles.map(x=>x.tile.id));for(const {tile} of tiles){const loaded=this.loaded.get(tile.id);if(loaded){loaded.used=now;continue;}if(this.requested.has(tile.id))continue;this.requested.add(tile.id);try{const r=await fetch('/'+tile.url.replace(/^\//,''));if(!r.ok)throw new Error(`Could not load route tile ${tile.id}`);const data=await r.json();this.worker.postMessage({type:'build',tile:data});}catch(e){this.requested.delete(tile.id);this.onError?.(e as Error);}}
+    const ids=new Set(tiles.map(x=>x.tile.id));for(const {tile} of tiles){const loaded=this.loaded.get(tile.id);if(loaded){loaded.used=now;continue;}if(this.requested.has(tile.id))continue;this.requested.add(tile.id);try{const r=await fetch(routeResourceUrl(tile.url,document.baseURI));if(!r.ok)throw new Error(`Could not load route tile ${tile.id}`);const data=await r.json();this.worker.postMessage({type:'build',tile:data});}catch(e){this.requested.delete(tile.id);this.onError?.(e as Error);}}
     this.evictInactiveTiles(ids);
   }
   private evictInactiveTiles(active?:Set<string>){if(this.loaded.size>25){if(!active){const p=this.route.lanePose(this.sim.player.s,this.sim.player.lane).position,r=this.quality==='high'?1750:this.quality==='low'?900:1300;active=new Set(this.data.tiles.filter(t=>Math.hypot(Math.max(t.bounds[0]-p[0],0,p[0]-t.bounds[2]),Math.max(t.bounds[1]-p[2],0,p[2]-t.bounds[3]))<r).map(t=>t.id));}for(const [id,tile] of [...this.loaded].sort((a,b)=>a[1].used-b[1].used)){if(this.loaded.size<=22)break;if(active.has(id))continue;this.triangles-=tile.mesh.geometry.index!.count/3;this.scene.remove(tile.mesh);tile.mesh.geometry.dispose();(tile.mesh.material as THREE.Material).dispose();this.loaded.delete(id);this.requested.delete(id);}}this.tileCount=this.loaded.size;}

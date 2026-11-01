@@ -11,6 +11,8 @@
     "test": "tsx --test tests/*.test.ts",
     "validate": "tsx scripts/validate-world.ts",
     "preview": "vite preview --host 0.0.0.0",
+    "build:site": "tsc --noEmit && vite build --outDir site && node scripts/site-manifest.mjs --write",
+    "verify:site": "node scripts/site-manifest.mjs --check",
     "audit:geometry": "node --expose-gc --import tsx scripts/audit-geometry.ts",
     "build:qa": "tsc --noEmit && vite build --mode qa --outDir work/qa-dist"
   },

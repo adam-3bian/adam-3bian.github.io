@@ -1,7 +1,39 @@
-import {defineConfig} from 'vite';
-import {createHash} from 'node:crypto';
-import {readFileSync,readdirSync} from 'node:fs';
+import {defineConfig,type Plugin} from 'vite';
+import {resolve} from 'node:path';
+import {writeFileSync} from 'node:fs';
+import {worldIdentity} from './scripts/world-version';
 
-// Save identity covers physical rules and consumed source data, independently of UI edits.
-function worldIdentity(){const files=['vite.config.ts','src/core/geometry.ts','src/core/simulation.ts','src/core/pose.ts','src/world/build.ts','src/world/platforms.ts','src/world/surfaces.ts','src/world/traffic.ts','src/render/assets.ts','src/render/trackwork.ts','src/render/batch.ts','src/render/renderer.ts','public/data/route.json','public/data/terrain.bin','public/data/adjacent-services.json','public/data/road-surfaces.json','public/data/land-surfaces.json',...readdirSync('public/data/tiles').sort().map(name=>`public/data/tiles/${name}`)];const hash=createHash('sha256');for(const path of files)hash.update(path).update('\0').update(readFileSync(path));return hash.digest('hex');}
-export default defineConfig({define:{__RAILWAY_WORLD_HASH__:JSON.stringify(worldIdentity())}});
+/** The repository root and the portable site folder both serve the same build. */
+function railwayEntries():Plugin {
+  let writeRootEntry=false;
+  return {
+    name:'railway-static-entries',
+    enforce:'post',
+    configResolved(config){writeRootEntry=config.command==='build'&&resolve(config.root,config.build.outDir)===resolve(config.root,'site');},
+    configureServer(server){
+      // The checked-in root index is the static release; Vite's dev server uses the source entry.
+      server.middlewares.use((request,_response,next)=>{
+        if(request.url&&/^\/(?:index\.html)?(?:\?.*)?$/.test(request.url))request.url=request.url.replace(/^\/(?:index\.html)?(?=\?|$)/,'/app.html');
+        next();
+      });
+    },
+    generateBundle(_options,bundle){
+      const html=bundle['app.html'];
+      if(!html||html.type!=='asset'||typeof html.source!=='string')throw new Error('The app HTML entry was not generated.');
+      delete bundle['app.html'];html.fileName='index.html';bundle['index.html']=html;
+    },
+    writeBundle(_options,bundle){
+      if(!writeRootEntry)return;
+      const html=bundle['index.html'];
+      if(!html||html.type!=='asset'||typeof html.source!=='string'||!html.source.includes('<head>'))throw new Error('The static root entry could not be generated.');
+      writeFileSync(resolve('index.html'),html.source.replace('<head>','<head>\n    <base href="./site/">'));
+    },
+  };
+}
+
+export default defineConfig({
+  base:'./',
+  build:{rollupOptions:{input:resolve('app.html')}},
+  plugins:[railwayEntries()],
+  define:{__RAILWAY_WORLD_HASH__:JSON.stringify(worldIdentity())},
+});

@@ -16,5 +16,6 @@
   },
   "errors": [],
   "browser": "151.0.7922.173",
-  "generatedAt": "2026-11-01T11:27:25Z"
+  "generatedAt": "2026-11-01T11:27:25Z",
+  "historicalNote": "This production smoke predates the static-hosting update. Its original build hashes are retained; the current packaged production site is tested in static-site.json."
 }

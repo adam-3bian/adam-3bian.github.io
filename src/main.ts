@@ -5,6 +5,7 @@ import {RailwaySimulation,type InputState,type Snapshot} from './core/simulation
 import {RailwayRenderer} from './render/renderer';
 import {RailwayAudio} from './core/audio';
 import {JourneyStore} from './core/save';
+import {routeResourceUrl} from './core/resource-url';
 import {endpointContext} from './world/build';
 
 const railIcon='<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 3h10l2 11-3 4H8l-3-4L7 3Z" stroke="currentColor" stroke-width="1.5"/><path d="M7 10h10M9 6h6M8 18l-3 4m11-4 3 4M7 21h10" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="14" r="1" fill="currentColor"/><circle cx="15.5" cy="14" r="1" fill="currentColor"/></svg>';
@@ -81,7 +82,7 @@ window.addEventListener('keyup',e=>{if(e.code==='KeyA')input.a=false;if(e.code==
 window.addEventListener('blur',pause);document.addEventListener('visibilitychange',()=>{if(document.hidden)pause();});
 
 async function init(){try{
-  const response=await fetch('/data/route.json');if(!response.ok)throw new Error('Route data is missing. Run npm run build:data, then start the application again.');const data=await response.json() as RouteData;data.worldHash=__RAILWAY_WORLD_HASH__;route=new RouteGeometry(data);route.setEndpointContext(endpointContext(route));sim=new RailwaySimulation(route);sim.sound=name=>audio.event(name);sim.onEvent=e=>{if(e.type==='aws'||e.type==='tpws'||e.type==='station'||e.type==='direction'||e.type==='complete')notify(e.message,e.type==='tpws'||e.type==='aws');};stationOptions(1);
+  const response=await fetch(routeResourceUrl('data/route.json',document.baseURI));if(!response.ok)throw new Error('Route data is missing. Check that the website’s data folder was copied in full.');const data=await response.json() as RouteData;data.worldHash=__RAILWAY_WORLD_HASH__;route=new RouteGeometry(data);route.setEndpointContext(endpointContext(route));sim=new RailwaySimulation(route);sim.sound=name=>audio.event(name);sim.onEvent=e=>{if(e.type==='aws'||e.type==='tpws'||e.type==='station'||e.type==='direction'||e.type==='complete')notify(e.message,e.type==='tpws'||e.type==='aws');};stationOptions(1);
   view=new RailwayRenderer($('viewport'),data,route,sim);view.onError=showError;view.onProgress=()=>{if(!loaded&&view.tileCount>=3){loaded=true;$<HTMLButtonElement>('begin').disabled=false;$('begin-label').textContent='Begin journey';$('gpu-state').innerHTML='<i></i> WEBGPU READY';journeySaves.get().then(saved=>visible('resume-save',Boolean(saved))).catch(()=>visible('resume-save',false));}};
   await view.init();
   if(import.meta.env.DEV||import.meta.env.MODE==='qa')(window as any).__railway={sim,route,view,input,save,storage:journeySaves,begin,render:()=>view.draw(1/60),advance:(seconds:number,autoAck=false)=>{const paused=sim.paused;sim.paused=false;for(let i=0;i<seconds*60;i++){if(autoAck&&sim.aws.pending)sim.acknowledge();sim.update(1/60,input);}sim.paused=paused;updateHUD(performance.now());},startAt:(id:string,direction:Direction=1)=>{const index=route.stations.findIndex(s=>s.id===id);sim.start(direction,index);started=true;visible('menu',false);visible('hud',true);updateJourneyTitle();},stats:()=>view.stats()};
