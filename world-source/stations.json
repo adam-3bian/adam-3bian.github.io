@@ -1,0 +1,959 @@
+[
+  {
+    "id": "KID",
+    "name": "Kidderminster",
+    "platformIds": [
+      "way/109274805",
+      "way/109274814"
+    ],
+    "canopy": {
+      "form": "FLAT",
+      "glazing": true,
+      "valance": false,
+      "frame": 6386539,
+      "roof": 6714221,
+      "trim": 12896447
+    },
+    "identity": "Low modern mainline frontage and separate heritage terminus; Comberton Hill bridge",
+    "references": [
+      {
+        "file": "references/by-location/kidderminster/kidderminster-original-0026.jpg",
+        "date": null,
+        "source": "supplied reference; capture date unknown"
+      },
+      {
+        "file": "references/by-location/kidderminster/kidderminster-original-0017.jpg",
+        "date": null,
+        "source": "supplied reference; capture date unknown"
+      }
+    ],
+    "planSources": [
+      "osm",
+      "svr-plan",
+      "svr-connection",
+      "osm-landscape",
+      "comberton-hill",
+      "osm-buffer-stops"
+    ],
+    "confidence": {
+      "plan": "MAPPED_GEOMETRY",
+      "appearance": "VISUAL_APPROXIMATION",
+      "dimensions": "ENGINEERED_INFERENCE"
+    },
+    "review": {
+      "referenceAppearance": "REVIEWED_SOURCE_CONTEXT",
+      "renderedStation": "CAPTURED_BOTH_DIRECTIONS; individual photographic accuracy remains IMPLEMENTED_UNVERIFIED",
+      "blindRecognition": "BLOCKED: independent reviewers unavailable"
+    }
+  },
+  {
+    "id": "BKD",
+    "name": "Blakedown",
+    "platformIds": [],
+    "canopy": {
+      "form": "FLAT",
+      "glazing": true,
+      "valance": false,
+      "frame": 6386539,
+      "roof": 6714221,
+      "trim": 12896447
+    },
+    "identity": "Open side platforms, pale fencing and the road crossing at the station end",
+    "references": [
+      {
+        "file": "references/by-location/blakedown/blakedown-original-0089.jpg",
+        "date": null,
+        "source": "supplied reference; capture date unknown"
+      },
+      {
+        "file": "references/by-location/blakedown/blakedown-original-0094.jpg",
+        "date": null,
+        "source": "supplied reference; capture date unknown"
+      }
+    ],
+    "planSources": [
+      "osm",
+      "photos",
+      "osm-level-crossings"
+    ],
+    "confidence": {
+      "plan": "MAPPED_GEOMETRY",
+      "appearance": "VISUAL_APPROXIMATION",
+      "dimensions": "ENGINEERED_INFERENCE"
+    },
+    "review": {
+      "referenceAppearance": "REVIEWED_SOURCE_CONTEXT",
+      "renderedStation": "CAPTURED_BOTH_DIRECTIONS; individual photographic accuracy remains IMPLEMENTED_UNVERIFIED",
+      "blindRecognition": "BLOCKED: independent reviewers unavailable"
+    }
+  },
+  {
+    "id": "HAG",
+    "name": "Hagley",
+    "platformIds": [],
+    "canopy": {
+      "form": "GABLE",
+      "glazing": false,
+      "valance": true,
+      "frame": 4086856,
+      "roof": 6314326,
+      "trim": 15063479
+    },
+    "identity": "Heritage canopy details, covered lattice footbridge and separate masonry arch",
+    "references": [
+      {
+        "file": "references/by-location/hagley/hagley-brake-lane-arch-original-0137.jpg",
+        "date": null,
+        "source": "supplied reference; capture date unknown"
+      },
+      {
+        "file": "references/by-location/hagley/hagley-original-0136.jpg",
+        "date": null,
+        "source": "supplied reference; capture date unknown"
+      }
+    ],
+    "planSources": [
+      "osm",
+      "photos"
+    ],
+    "confidence": {
+      "plan": "MAPPED_GEOMETRY",
+      "appearance": "VISUAL_APPROXIMATION",
+      "dimensions": "ENGINEERED_INFERENCE"
+    },
+    "review": {
+      "referenceAppearance": "REVIEWED_SOURCE_CONTEXT",
+      "renderedStation": "CAPTURED_BOTH_DIRECTIONS; individual photographic accuracy remains IMPLEMENTED_UNVERIFIED",
+      "blindRecognition": "BLOCKED: independent reviewers unavailable"
+    }
+  },
+  {
+    "id": "SBJ",
+    "name": "Stourbridge Junction",
+    "platformIds": [
+      "way/89980280",
+      "way/89980303",
+      "way/89980980"
+    ],
+    "canopy": {
+      "form": "BUTTERFLY",
+      "glazing": false,
+      "valance": false,
+      "frame": 6386539,
+      "roof": 6714221,
+      "trim": 12896447
+    },
+    "identity": "Branch-facing island and steel canopy ribs; extensive junction approaches",
+    "references": [
+      {
+        "file": "references/by-location/stourbridge-junction/stourbridge-junction-original-0190.jpg",
+        "date": null,
+        "source": "supplied reference; capture date unknown"
+      },
+      {
+        "file": "references/by-location/stourbridge-junction/stourbridge-junction-original-0187.jpg",
+        "date": null,
+        "source": "supplied reference; capture date unknown"
+      }
+    ],
+    "planSources": [
+      "osm",
+      "osm"
+    ],
+    "confidence": {
+      "plan": "MAPPED_GEOMETRY",
+      "appearance": "VISUAL_APPROXIMATION",
+      "dimensions": "ENGINEERED_INFERENCE"
+    },
+    "review": {
+      "referenceAppearance": "REVIEWED_SOURCE_CONTEXT",
+      "renderedStation": "CAPTURED_BOTH_DIRECTIONS; individual photographic accuracy remains IMPLEMENTED_UNVERIFIED",
+      "blindRecognition": "BLOCKED: independent reviewers unavailable"
+    }
+  },
+  {
+    "id": "LYE",
+    "name": "Lye",
+    "platformIds": [],
+    "canopy": {
+      "form": "FLAT",
+      "glazing": true,
+      "valance": false,
+      "frame": 6386539,
+      "roof": 6714221,
+      "trim": 12896447
+    },
+    "identity": "Narrow side platforms in an urban cutting and nearby footbridge",
+    "references": [
+      {
+        "file": "references/by-location/lye/lye-original-0229.jpg",
+        "date": null,
+        "source": "supplied reference; capture date unknown"
+      },
+      {
+        "file": "references/by-location/lye/lye-original-0230.jpg",
+        "date": null,
+        "source": "supplied reference; capture date unknown"
+      }
+    ],
+    "planSources": [
+      "osm",
+      "photos"
+    ],
+    "confidence": {
+      "plan": "MAPPED_GEOMETRY",
+      "appearance": "VISUAL_APPROXIMATION",
+      "dimensions": "ENGINEERED_INFERENCE"
+    },
+    "review": {
+      "referenceAppearance": "REVIEWED_SOURCE_CONTEXT",
+      "renderedStation": "CAPTURED_BOTH_DIRECTIONS; individual photographic accuracy remains IMPLEMENTED_UNVERIFIED",
+      "blindRecognition": "BLOCKED: independent reviewers unavailable"
+    }
+  },
+  {
+    "id": "CRA",
+    "name": "Cradley Heath",
+    "platformIds": [],
+    "canopy": {
+      "form": "FLAT",
+      "glazing": true,
+      "valance": false,
+      "frame": 6386539,
+      "roof": 6714221,
+      "trim": 12896447
+    },
+    "identity": "Curving platforms and station-end crossing, bus interchange context",
+    "references": [
+      {
+        "file": "references/by-location/cradley-heath/cradley-heath-original-0248.jpg",
+        "date": null,
+        "source": "supplied reference; capture date unknown"
+      },
+      {
+        "file": "references/by-location/cradley-heath/cradley-heath-original-0246.jpg",
+        "date": null,
+        "source": "supplied reference; capture date unknown"
+      }
+    ],
+    "planSources": [
+      "osm",
+      "photos",
+      "osm-level-crossings"
+    ],
+    "confidence": {
+      "plan": "MAPPED_GEOMETRY",
+      "appearance": "VISUAL_APPROXIMATION",
+      "dimensions": "ENGINEERED_INFERENCE"
+    },
+    "review": {
+      "referenceAppearance": "REVIEWED_SOURCE_CONTEXT",
+      "renderedStation": "CAPTURED_BOTH_DIRECTIONS; individual photographic accuracy remains IMPLEMENTED_UNVERIFIED",
+      "blindRecognition": "BLOCKED: independent reviewers unavailable"
+    }
+  },
+  {
+    "id": "OHL",
+    "name": "Old Hill",
+    "platformIds": [],
+    "canopy": {
+      "form": "FLAT",
+      "glazing": true,
+      "valance": false,
+      "frame": 6386539,
+      "roof": 6714221,
+      "trim": 12896447
+    },
+    "identity": "Enclosed green cutting and stepped station access, tunnel context",
+    "references": [
+      {
+        "file": "references/by-location/old-hill/old-hill-original-0272.jpg",
+        "date": null,
+        "source": "supplied reference; capture date unknown"
+      },
+      {
+        "file": "references/by-location/old-hill/old-hill-original-0273.jpg",
+        "date": null,
+        "source": "supplied reference; capture date unknown"
+      }
+    ],
+    "planSources": [
+      "osm",
+      "photos"
+    ],
+    "confidence": {
+      "plan": "MAPPED_GEOMETRY",
+      "appearance": "VISUAL_APPROXIMATION",
+      "dimensions": "ENGINEERED_INFERENCE"
+    },
+    "review": {
+      "referenceAppearance": "REVIEWED_SOURCE_CONTEXT",
+      "renderedStation": "CAPTURED_BOTH_DIRECTIONS; individual photographic accuracy remains IMPLEMENTED_UNVERIFIED",
+      "blindRecognition": "BLOCKED: independent reviewers unavailable"
+    }
+  },
+  {
+    "id": "ROW",
+    "name": "Rowley Regis",
+    "platformIds": [],
+    "canopy": {
+      "form": "CANTILEVER",
+      "glazing": false,
+      "valance": false,
+      "frame": 12829880,
+      "roof": 3624013,
+      "trim": 12896447
+    },
+    "identity": "Broad dark canopy roof with light columns and curved platforms",
+    "references": [
+      {
+        "file": "references/by-location/rowley-regis/rowley-regis-original-0295.jpg",
+        "date": null,
+        "source": "supplied reference; capture date unknown"
+      },
+      {
+        "file": "references/by-location/rowley-regis/rowley-regis-original-0294.jpg",
+        "date": null,
+        "source": "supplied reference; capture date unknown"
+      }
+    ],
+    "planSources": [
+      "osm",
+      "photos"
+    ],
+    "confidence": {
+      "plan": "MAPPED_GEOMETRY",
+      "appearance": "VISUAL_APPROXIMATION",
+      "dimensions": "ENGINEERED_INFERENCE"
+    },
+    "review": {
+      "referenceAppearance": "REVIEWED_SOURCE_CONTEXT",
+      "renderedStation": "CAPTURED_BOTH_DIRECTIONS; individual photographic accuracy remains IMPLEMENTED_UNVERIFIED",
+      "blindRecognition": "BLOCKED: independent reviewers unavailable"
+    }
+  },
+  {
+    "id": "LGG",
+    "name": "Langley Green",
+    "platformIds": [],
+    "canopy": {
+      "form": "GABLE",
+      "glazing": false,
+      "valance": false,
+      "frame": 6386539,
+      "roof": 6714221,
+      "trim": 12896447
+    },
+    "identity": "Small brick station buildings and a nearby road overbridge",
+    "references": [
+      {
+        "file": "references/by-location/langley-green/langley-green-original-0322.jpg",
+        "date": null,
+        "source": "supplied reference; capture date unknown"
+      },
+      {
+        "file": "references/by-location/langley-green/langley-green-original-0323.jpg",
+        "date": null,
+        "source": "supplied reference; capture date unknown"
+      }
+    ],
+    "planSources": [
+      "osm",
+      "photos",
+      "osm-level-crossings"
+    ],
+    "confidence": {
+      "plan": "MAPPED_GEOMETRY",
+      "appearance": "VISUAL_APPROXIMATION",
+      "dimensions": "ENGINEERED_INFERENCE"
+    },
+    "review": {
+      "referenceAppearance": "REVIEWED_SOURCE_CONTEXT",
+      "renderedStation": "CAPTURED_BOTH_DIRECTIONS; individual photographic accuracy remains IMPLEMENTED_UNVERIFIED",
+      "blindRecognition": "BLOCKED: independent reviewers unavailable"
+    }
+  },
+  {
+    "id": "SGB",
+    "name": "Smethwick Galton Bridge",
+    "platformIds": [
+      "way/1386987064",
+      "way/1386987068",
+      "way/1386987069",
+      "way/1386987070"
+    ],
+    "canopy": {
+      "form": "CANTILEVER",
+      "glazing": true,
+      "valance": false,
+      "frame": 6386539,
+      "roof": 6714221,
+      "trim": 12896447
+    },
+    "identity": "Two railway levels, canal crossing, high circulation bridges and lift towers",
+    "references": [
+      {
+        "file": "references/by-location/smethwick-galton-bridge/smethwick-galton-bridge-original-0345.jpg",
+        "date": null,
+        "source": "supplied reference; capture date unknown"
+      },
+      {
+        "file": "references/by-location/smethwick-galton-bridge/smethwick-galton-bridge-original-0347.jpg",
+        "date": null,
+        "source": "supplied reference; capture date unknown"
+      }
+    ],
+    "planSources": [
+      "osm",
+      "galton",
+      "galton-bridge",
+      "galton-access"
+    ],
+    "confidence": {
+      "plan": "MAPPED_GEOMETRY",
+      "appearance": "VISUAL_APPROXIMATION",
+      "dimensions": "ENGINEERED_INFERENCE"
+    },
+    "review": {
+      "referenceAppearance": "REVIEWED_SOURCE_CONTEXT",
+      "renderedStation": "CAPTURED_BOTH_DIRECTIONS; individual photographic accuracy remains IMPLEMENTED_UNVERIFIED",
+      "blindRecognition": "BLOCKED: independent reviewers unavailable"
+    }
+  },
+  {
+    "id": "THW",
+    "name": "The Hawthorns",
+    "platformIds": [
+      "way/103474996",
+      "way/103474997",
+      "way/103474999",
+      "way/103475001"
+    ],
+    "canopy": {
+      "form": "CANTILEVER",
+      "glazing": false,
+      "valance": false,
+      "frame": 6386539,
+      "roof": 6714221,
+      "trim": 12896447
+    },
+    "identity": "Long metal platform canopy, wide overhead interchange and parallel Metro",
+    "references": [
+      {
+        "file": "references/by-location/the-hawthorns/the-hawthorns-original-0360.jpg",
+        "date": null,
+        "source": "supplied reference; capture date unknown"
+      },
+      {
+        "file": "references/by-location/the-hawthorns/the-hawthorns-original-0361.jpg",
+        "date": null,
+        "source": "supplied reference; capture date unknown"
+      }
+    ],
+    "planSources": [
+      "osm",
+      "hawthorns",
+      "osm-thw-metro"
+    ],
+    "confidence": {
+      "plan": "MAPPED_GEOMETRY",
+      "appearance": "VISUAL_APPROXIMATION",
+      "dimensions": "ENGINEERED_INFERENCE"
+    },
+    "review": {
+      "referenceAppearance": "REVIEWED_SOURCE_CONTEXT",
+      "renderedStation": "CAPTURED_BOTH_DIRECTIONS; individual photographic accuracy remains IMPLEMENTED_UNVERIFIED",
+      "blindRecognition": "BLOCKED: independent reviewers unavailable"
+    }
+  },
+  {
+    "id": "JEQ",
+    "name": "Jewellery Quarter",
+    "platformIds": [
+      "way/31544294",
+      "way/31544295",
+      "way/630331044",
+      "way/630331045"
+    ],
+    "canopy": {
+      "form": "CANTILEVER",
+      "glazing": true,
+      "valance": false,
+      "frame": 6386539,
+      "roof": 6714221,
+      "trim": 12896447
+    },
+    "identity": "Covered access crossing, masonry retaining walls and parallel Metro tunnel",
+    "references": [
+      {
+        "file": "references/by-location/jewellery-quarter/jewellery-quarter-original-0398.jpg",
+        "date": null,
+        "source": "supplied reference; capture date unknown"
+      },
+      {
+        "file": "references/by-location/jewellery-quarter/jewellery-quarter-original-0397.jpg",
+        "date": null,
+        "source": "supplied reference; capture date unknown"
+      }
+    ],
+    "planSources": [
+      "osm",
+      "jq"
+    ],
+    "confidence": {
+      "plan": "MAPPED_GEOMETRY",
+      "appearance": "VISUAL_APPROXIMATION",
+      "dimensions": "ENGINEERED_INFERENCE"
+    },
+    "review": {
+      "referenceAppearance": "REVIEWED_SOURCE_CONTEXT",
+      "renderedStation": "CAPTURED_BOTH_DIRECTIONS; individual photographic accuracy remains IMPLEMENTED_UNVERIFIED",
+      "blindRecognition": "BLOCKED: independent reviewers unavailable"
+    }
+  },
+  {
+    "id": "BSW",
+    "name": "Birmingham Snow Hill",
+    "platformIds": [
+      "way/1560596671",
+      "way/1560596676",
+      "platform-edges/72843250",
+      "platform-edges/72843251"
+    ],
+    "canopy": {
+      "form": "FLAT",
+      "glazing": true,
+      "valance": false,
+      "frame": 6386539,
+      "roof": 6714221,
+      "trim": 12896447
+    },
+    "identity": "Deep covered mainline platforms, upper building mass and glazed circulation",
+    "references": [
+      {
+        "file": "references/by-location/birmingham-snow-hill/birmingham-snow-hill-original-0429.jpg",
+        "date": null,
+        "source": "supplied reference; capture date unknown"
+      },
+      {
+        "file": "references/by-location/birmingham-snow-hill/birmingham-snow-hill-original-0428.jpg",
+        "date": null,
+        "source": "supplied reference; capture date unknown"
+      }
+    ],
+    "planSources": [
+      "osm",
+      "moor",
+      "livery-canal-bridge",
+      "great-western-arcade"
+    ],
+    "confidence": {
+      "plan": "MAPPED_GEOMETRY",
+      "appearance": "VISUAL_APPROXIMATION",
+      "dimensions": "ENGINEERED_INFERENCE"
+    },
+    "review": {
+      "referenceAppearance": "REVIEWED_SOURCE_CONTEXT",
+      "renderedStation": "CAPTURED_BOTH_DIRECTIONS; individual photographic accuracy remains IMPLEMENTED_UNVERIFIED",
+      "blindRecognition": "BLOCKED: independent reviewers unavailable"
+    }
+  },
+  {
+    "id": "BMO",
+    "name": "Birmingham Moor Street",
+    "platformIds": [
+      "way/60170849",
+      "way/239301725",
+      "way/239301727",
+      "way/239301728",
+      "way/239302494",
+      "way/239302495",
+      "way/239302501",
+      "way/239302502",
+      "way/239302503",
+      "way/239338292",
+      "way/439796340",
+      "way/439796341",
+      "way/439796342",
+      "way/439796343",
+      "way/439796344",
+      "way/1531458884",
+      "way/1531458885"
+    ],
+    "canopy": {
+      "form": "GABLE",
+      "glazing": false,
+      "valance": true,
+      "frame": 4086856,
+      "roof": 6314326,
+      "trim": 15063479
+    },
+    "identity": "Red brick frontage, ornate green ironwork and cream canopy valances",
+    "references": [
+      {
+        "file": "references/by-location/birmingham-moor-street/birmingham-moor-street-original-0452.jpg",
+        "date": null,
+        "source": "supplied reference; capture date unknown"
+      },
+      {
+        "file": "references/by-location/birmingham-moor-street/birmingham-moor-street-original-0449.jpg",
+        "date": null,
+        "source": "supplied reference; capture date unknown"
+      }
+    ],
+    "planSources": [
+      "osm",
+      "moor",
+      "selfridges",
+      "rotunda",
+      "duddeston"
+    ],
+    "confidence": {
+      "plan": "MAPPED_GEOMETRY",
+      "appearance": "VISUAL_APPROXIMATION",
+      "dimensions": "ENGINEERED_INFERENCE"
+    },
+    "review": {
+      "referenceAppearance": "REVIEWED_SOURCE_CONTEXT",
+      "renderedStation": "CAPTURED_BOTH_DIRECTIONS; individual photographic accuracy remains IMPLEMENTED_UNVERIFIED",
+      "blindRecognition": "BLOCKED: independent reviewers unavailable"
+    }
+  },
+  {
+    "id": "BBS",
+    "name": "Bordesley",
+    "platformIds": [
+      "platform-edges/103362882"
+    ],
+    "canopy": {
+      "form": "CONCRETE",
+      "glazing": false,
+      "valance": false,
+      "frame": 6386539,
+      "roof": 6714221,
+      "trim": 12896447
+    },
+    "identity": "Single surviving island with small concrete shelter on the viaduct",
+    "references": [
+      {
+        "url": "https://www.railaroundbirmingham.co.uk/Stations/bordesley.php",
+        "date": null
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Bordesley_railway_station,_Birmingham,_geograph-4190829-by-Nigel-Thompson.jpg",
+        "date": "2014-09-20",
+        "author": "Nigel Thompson",
+        "license": "CC BY-SA 2.0"
+      }
+    ],
+    "planSources": [
+      "osm",
+      "photos"
+    ],
+    "confidence": {
+      "plan": "MAPPED_GEOMETRY",
+      "appearance": "VISUAL_APPROXIMATION",
+      "dimensions": "ENGINEERED_INFERENCE"
+    },
+    "review": {
+      "referenceAppearance": "PHOTOGRAPH_VISUALLY_REVIEWED; dated appearance evidence, not a current survey",
+      "renderedStation": "CAPTURED_BOTH_DIRECTIONS; individual photographic accuracy remains IMPLEMENTED_UNVERIFIED",
+      "blindRecognition": "BLOCKED: independent reviewers unavailable"
+    }
+  },
+  {
+    "id": "SMA",
+    "name": "Small Heath",
+    "platformIds": [
+      "way/103284207",
+      "way/103284208"
+    ],
+    "canopy": {
+      "form": "FLAT",
+      "glazing": true,
+      "valance": false,
+      "frame": 6386539,
+      "roof": 6714221,
+      "trim": 12896447
+    },
+    "identity": "Island platforms below the road bridge, broad railway corridor",
+    "references": [
+      {
+        "file": "references/by-location/small-heath/small-heath-original-0488.jpg",
+        "date": null,
+        "source": "supplied reference; capture date unknown"
+      },
+      {
+        "file": "references/by-location/small-heath/small-heath-original-0487.jpg",
+        "date": null,
+        "source": "supplied reference; capture date unknown"
+      }
+    ],
+    "planSources": [
+      "osm",
+      "photos"
+    ],
+    "confidence": {
+      "plan": "MAPPED_GEOMETRY",
+      "appearance": "VISUAL_APPROXIMATION",
+      "dimensions": "ENGINEERED_INFERENCE"
+    },
+    "review": {
+      "referenceAppearance": "REVIEWED_SOURCE_CONTEXT",
+      "renderedStation": "CAPTURED_BOTH_DIRECTIONS; individual photographic accuracy remains IMPLEMENTED_UNVERIFIED",
+      "blindRecognition": "BLOCKED: independent reviewers unavailable"
+    }
+  },
+  {
+    "id": "TYS",
+    "name": "Tyseley",
+    "platformIds": [
+      "way/40005668",
+      "way/43934094",
+      "way/43934095"
+    ],
+    "canopy": {
+      "form": "GABLE",
+      "glazing": false,
+      "valance": true,
+      "frame": 4086856,
+      "roof": 6314326,
+      "trim": 15063479
+    },
+    "identity": "Two islands with brick platform buildings, covered access and depot context",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Tyseley_railway_station,_geograph-3340470-by-Nigel-Thompson.jpg",
+        "date": "2011-10-07",
+        "author": "Nigel Thompson",
+        "license": "CC BY-SA 2.0"
+      }
+    ],
+    "planSources": [
+      "osm",
+      "works",
+      "depot",
+      "osm-buffer-stops"
+    ],
+    "confidence": {
+      "plan": "MAPPED_GEOMETRY",
+      "appearance": "VISUAL_APPROXIMATION",
+      "dimensions": "ENGINEERED_INFERENCE"
+    },
+    "review": {
+      "referenceAppearance": "PHOTOGRAPH_VISUALLY_REVIEWED; dated appearance evidence, not a current survey",
+      "renderedStation": "CAPTURED_BOTH_DIRECTIONS; individual photographic accuracy remains IMPLEMENTED_UNVERIFIED",
+      "blindRecognition": "BLOCKED: independent reviewers unavailable"
+    }
+  },
+  {
+    "id": "ACG",
+    "name": "Acocks Green",
+    "platformIds": [
+      "way/57787278",
+      "way/110542358"
+    ],
+    "canopy": {
+      "form": "FLAT",
+      "glazing": true,
+      "valance": false,
+      "frame": 6386539,
+      "roof": 6714221,
+      "trim": 12896447
+    },
+    "identity": "Single island, glazed shelter and street-level entrance above stairs",
+    "references": [
+      {
+        "url": "https://www.geograph.org.uk/photo/3411490",
+        "date": "2013",
+        "author": "Stephen McKay",
+        "license": "CC BY-SA 2.0"
+      }
+    ],
+    "planSources": [
+      "osm",
+      "photos"
+    ],
+    "confidence": {
+      "plan": "MAPPED_GEOMETRY",
+      "appearance": "VISUAL_APPROXIMATION",
+      "dimensions": "ENGINEERED_INFERENCE"
+    },
+    "review": {
+      "referenceAppearance": "PHOTOGRAPH_VISUALLY_REVIEWED; dated appearance evidence, not a current survey",
+      "renderedStation": "CAPTURED_BOTH_DIRECTIONS; individual photographic accuracy remains IMPLEMENTED_UNVERIFIED",
+      "blindRecognition": "BLOCKED: independent reviewers unavailable"
+    }
+  },
+  {
+    "id": "OLT",
+    "name": "Olton",
+    "platformIds": [
+      "way/1116109357",
+      "way/1116109358",
+      "way/1116109359"
+    ],
+    "canopy": {
+      "form": "FLAT",
+      "glazing": true,
+      "valance": false,
+      "frame": 6386539,
+      "roof": 6714221,
+      "trim": 12896447
+    },
+    "identity": "Open broad platforms, mature trees and adjacent additional rail corridor",
+    "references": [
+      {
+        "file": "references/by-location/olton/olton-original-0511.jpg",
+        "date": null,
+        "source": "supplied reference; capture date unknown"
+      },
+      {
+        "file": "references/by-location/olton/olton-original-0512.jpg",
+        "date": null,
+        "source": "supplied reference; capture date unknown"
+      }
+    ],
+    "planSources": [
+      "osm",
+      "photos"
+    ],
+    "confidence": {
+      "plan": "MAPPED_GEOMETRY",
+      "appearance": "VISUAL_APPROXIMATION",
+      "dimensions": "ENGINEERED_INFERENCE"
+    },
+    "review": {
+      "referenceAppearance": "REVIEWED_SOURCE_CONTEXT",
+      "renderedStation": "CAPTURED_BOTH_DIRECTIONS; individual photographic accuracy remains IMPLEMENTED_UNVERIFIED",
+      "blindRecognition": "BLOCKED: independent reviewers unavailable"
+    }
+  },
+  {
+    "id": "SOL",
+    "name": "Solihull",
+    "platformIds": [
+      "way/256428001",
+      "way/473379661"
+    ],
+    "canopy": {
+      "form": "CANTILEVER",
+      "glazing": false,
+      "valance": false,
+      "frame": 6386539,
+      "roof": 6714221,
+      "trim": 12896447
+    },
+    "identity": "Broad station roof, brick waiting accommodation and planted platform beds",
+    "references": [
+      {
+        "file": "references/by-location/solihull/solihull-original-0547.jpg",
+        "date": null,
+        "source": "supplied reference; capture date unknown"
+      },
+      {
+        "file": "references/by-location/solihull/solihull-original-0541.jpg",
+        "date": null,
+        "source": "supplied reference; capture date unknown"
+      }
+    ],
+    "planSources": [
+      "osm",
+      "photos"
+    ],
+    "confidence": {
+      "plan": "MAPPED_GEOMETRY",
+      "appearance": "VISUAL_APPROXIMATION",
+      "dimensions": "ENGINEERED_INFERENCE"
+    },
+    "review": {
+      "referenceAppearance": "REVIEWED_SOURCE_CONTEXT",
+      "renderedStation": "CAPTURED_BOTH_DIRECTIONS; individual photographic accuracy remains IMPLEMENTED_UNVERIFIED",
+      "blindRecognition": "BLOCKED: independent reviewers unavailable"
+    }
+  },
+  {
+    "id": "WMR",
+    "name": "Widney Manor",
+    "platformIds": [
+      "platform-edges/25376705",
+      "platform-edges/25376707"
+    ],
+    "canopy": {
+      "form": "FLAT",
+      "glazing": true,
+      "valance": false,
+      "frame": 6386539,
+      "roof": 6714221,
+      "trim": 12896447
+    },
+    "identity": "Two platforms, small modern shelters, footbridge and Widney Lane approach",
+    "references": [
+      {
+        "url": "https://www.railaroundbirmingham.co.uk/Stations/widney_manor.php",
+        "date": null
+      },
+      {
+        "url": "https://www.geograph.org.uk/photo/559519",
+        "date": "2007",
+        "author": "David Stowell",
+        "license": "CC BY-SA 2.0"
+      }
+    ],
+    "planSources": [
+      "osm",
+      "photos"
+    ],
+    "confidence": {
+      "plan": "MAPPED_GEOMETRY",
+      "appearance": "VISUAL_APPROXIMATION",
+      "dimensions": "ENGINEERED_INFERENCE"
+    },
+    "review": {
+      "referenceAppearance": "PHOTOGRAPH_VISUALLY_REVIEWED; dated appearance evidence, not a current survey",
+      "renderedStation": "CAPTURED_BOTH_DIRECTIONS; individual photographic accuracy remains IMPLEMENTED_UNVERIFIED",
+      "blindRecognition": "BLOCKED: independent reviewers unavailable"
+    }
+  },
+  {
+    "id": "DDG",
+    "name": "Dorridge",
+    "platformIds": [
+      "way/125510147",
+      "way/125510148",
+      "way/125510149"
+    ],
+    "canopy": {
+      "form": "GABLE",
+      "glazing": false,
+      "valance": false,
+      "frame": 4086856,
+      "roof": 6314326,
+      "trim": 15063479
+    },
+    "identity": "Mainline side platform and island, surviving chalet-style station building",
+    "references": [
+      {
+        "url": "https://www.geograph.org.uk/photo/4675223",
+        "date": "2014-09-22",
+        "author": "Tiger",
+        "license": "CC BY-SA 2.0"
+      }
+    ],
+    "planSources": [
+      "osm",
+      "photos",
+      "osm-level-crossings"
+    ],
+    "confidence": {
+      "plan": "MAPPED_GEOMETRY",
+      "appearance": "VISUAL_APPROXIMATION",
+      "dimensions": "ENGINEERED_INFERENCE"
+    },
+    "review": {
+      "referenceAppearance": "PHOTOGRAPH_VISUALLY_REVIEWED; dated appearance evidence, not a current survey",
+      "renderedStation": "CAPTURED_BOTH_DIRECTIONS; individual photographic accuracy remains IMPLEMENTED_UNVERIFIED",
+      "blindRecognition": "BLOCKED: independent reviewers unavailable"
+    }
+  }
+]

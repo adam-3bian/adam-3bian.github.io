@@ -3,6 +3,7 @@ import { Batch } from './batch.js';
 import { AssetFactory } from './assets.js';
 import { GRID, position } from '../world/grid.js';
 import { resolveComposition, transform } from '../world/prefab-composition.js';
+import {TERRAIN_COLOURS} from '../world/terrain-materials.js';
 
 const geometry = new THREE.BoxGeometry(1,1,1), materials = new Map(), factory = new AssetFactory();
 function box(parent, p, size, colour) {
@@ -22,7 +23,7 @@ function solid(batch, corners, low, high, colour) {
 export function composePrefabChunk(chunk, catalogue, enums, context=[chunk], progress) {
     const world=resolveComposition(context,catalogue,enums), batch=new Batch(), placements=[], origin=[chunk.bounds[0],0,chunk.bounds[1]];
     const local=p=>[p[0]-origin[0],p[1],p[2]-origin[2]];
-    for(const c of chunk.terrain) for(const t of world.terrain.triangles(c)) batch.triangle(...t.map(local),new THREE.Color(c.material==='GRAVEL'?0x8b887c:0x7e8f66));
+    for(const c of chunk.terrain) for(const t of world.terrain.triangles(c)) batch.triangle(...t.map(local),new THREE.Color(TERRAIN_COLOURS[c.material]));
     let done=0;
     for(const instance of [...chunk.instances].sort((a,b)=>a.id.localeCompare(b.id))) {
         const {definition:d,path,footprint}=world.instances.get(instance.id), type=d.geometry.type, p=position(instance.anchor), group=new THREE.Group();

@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "scope": "Final repaired revision: five streamed locations, driving, offline save and production entry",
+  "expectedRevision": "19fc55c80f54e85ff4a97d2e20d3567a0f9b390bcb1cf4d5cba5e63743113eb8",
+  "quality": "low",
+  "viewport": [
+    1280,
+    720
+  ],
+  "renderScale": 0.5,
+  "performanceBenchmark": false,
+  "errors": [
+    "TypeError: Cannot read properties of null (reading 'hidden')",
+    "page.waitForFunction: TypeError: Cannot read properties of null (reading 'hidden')\n    at eval (eval at predicate (eval at evaluate (:370:30)), <anonymous>:1:32)\n    at eval (<anonymous>)\n    at predicate (eval at evaluate (:370:30), <anonymous>:4:60)\n    at next (eval at evaluate (:370:30), <anonymous>:29:33)\n    at eval (eval at evaluate (:370:30), <anonymous>:42:13)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at /workspace/adam-3bian.github.io/scripts/authored-smoke-qa.js:72:19"
+  ],
+  "visits": [
+    {
+      "id": "KID",
+      "loaded": 3,
+      "essentialReady": true,
+      "webglError": 0,
+      "triangles": 1606032,
+      "drawCalls": 405
+    },
+    {
+      "id": "OHL",
+      "loaded": 7,
+      "essentialReady": true,
+      "webglError": 0,
+      "triangles": 925204,
+      "drawCalls": 373
+    },
+    {
+      "id": "BSW",
+      "loaded": 10,
+      "essentialReady": true,
+      "webglError": 0,
+      "triangles": 1706145,
+      "drawCalls": 609
+    },
+    {
+      "id": "TYS",
+      "loaded": 11,
+      "essentialReady": true,
+      "webglError": 0,
+      "triangles": 1417307,
+      "drawCalls": 392
+    },
+    {
+      "id": "DDG",
+      "loaded": 11,
+      "essentialReady": true,
+      "webglError": 0,
+      "triangles": 616139,
+      "drawCalls": 117
+    }
+  ],
+  "browser": "151.0.7922.173",
+  "initial": {
+    "revision": "19fc55c80f54e85ff4a97d2e20d3567a0f9b390bcb1cf4d5cba5e63743113eb8",
+    "resolution": [
+      640,
+      360
+    ],
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "models": 664,
+    "signals": 110,
+    "switches": 32
+  },
+  "driving": {
+    "before": 354.0000212836039,
+    "after": 469.5833661790184,
+    "speed": 12.49381993077461,
+    "essentialReady": true
+  },
+  "saved": {
+    "s": 469.5833661790184,
+    "revision": "19fc55c80f54e85ff4a97d2e20d3567a0f9b390bcb1cf4d5cba5e63743113eb8",
+    "chunks": 133
+  },
+  "resumed": {
+    "s": 469.5833661790184,
+    "revision": "19fc55c80f54e85ff4a97d2e20d3567a0f9b390bcb1cf4d5cba5e63743113eb8",
+    "chunks": 133
+  },
+  "production": {
+    "qaApiAbsent": true,
+    "beginEnabled": true
+  },
+  "status": "FAILED"
+}

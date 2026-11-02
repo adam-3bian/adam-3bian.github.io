@@ -1,0 +1,32 @@
+{
+  "id": "11_-5",
+  "bounds": [
+    11000,
+    -5000,
+    12000,
+    -4000
+  ],
+  "source": "world-source/chunks/11_-5.json",
+  "url": "data/grid/authored/11_-5.json.gz",
+  "codec": "gzip-json",
+  "sha256": "095a08e3b4239d044793b84fcdf74ace0844c508487a8595426162bc5011fc6c",
+  "contentSHA256": "ef3e5aa4e0e1b35d606cb6cef35aeb2b835568dd1edccd626b46b1a652df75c4",
+  "bytes": 2085212,
+  "sourceBytes": 13249525,
+  "authorMs": 5705.847688000009,
+  "composeMs": 306.0147429999779,
+  "instances": 3231,
+  "prefabs": 1272,
+  "geometries": 1148,
+  "characters": 7,
+  "triangles": 309102,
+  "originalTriangles": 309231,
+  "degenerateRemoved": 129,
+  "exceptions": 79,
+  "exceptionReasons": {
+    "unsupported-source-attachment": 7,
+    "OUTSIDE_AUTHORED_CORRIDOR": 49,
+    "SOURCE_FOOTPRINT_CONFLICTS_WITH_RAIL_CLEARANCE": 1,
+    "SOURCE_RETAINED_WITHOUT_SEPARATE_RENDER_ASSEMBLY": 22
+  }
+}

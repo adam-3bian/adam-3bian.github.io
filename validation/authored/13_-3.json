@@ -1,0 +1,33 @@
+{
+  "id": "13_-3",
+  "bounds": [
+    13000,
+    -3000,
+    14000,
+    -2000
+  ],
+  "source": "world-source/chunks/13_-3.json",
+  "url": "data/grid/authored/13_-3.json.gz",
+  "codec": "gzip-json",
+  "sha256": "88f952cb6319a3225d802e4ab810338d7b3e6aab68dee581c270d069ce04306a",
+  "contentSHA256": "f145e98bf35b4392b4f722a8abc4a05826b07d2b0f59ada10f18d98be96a0b8f",
+  "bytes": 5121154,
+  "sourceBytes": 34621059,
+  "authorMs": 16995.43868100003,
+  "composeMs": 649.9117419999675,
+  "instances": 17499,
+  "prefabs": 4580,
+  "geometries": 4268,
+  "characters": 15,
+  "triangles": 759008,
+  "originalTriangles": 759160,
+  "degenerateRemoved": 152,
+  "exceptions": 132,
+  "exceptionReasons": {
+    "unsupported-source-attachment": 12,
+    "retaining foundation exceeds bounded height/dimension/burial limits": 2,
+    "OUTSIDE_AUTHORED_CORRIDOR": 67,
+    "mapped access intersects foundation volume; source levels and passage openings require authoring": 1,
+    "SOURCE_RETAINED_WITHOUT_SEPARATE_RENDER_ASSEMBLY": 50
+  }
+}

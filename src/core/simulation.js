@@ -28,8 +28,10 @@ export class RailwaySimulation {
     trackwork;
     constructor(route) {
         this.route = route;
-        this.trackwork = deriveTrackwork(route);
+        this.trackwork = route.data.authoredInfrastructure?structuredClone(route.data.authoredInfrastructure.trackwork):deriveTrackwork(route);
         route.data.trackwork = this.trackwork.switches;
+        if(route.data.authoredInfrastructure){this.signals=structuredClone(route.data.authoredInfrastructure.signals);if(!Array.isArray(this.signals)||this.signals.some(s=>!s.id||!Number.isFinite(s.s)||![1,-1].includes(s.direction)||!Number.isFinite(s.lane))||new Set(this.signals.map(s=>s.id)).size!==this.signals.length)throw Error('Invalid authored operating signals');}
+        else {
         for (const station of route.stations)
             for (const dir of [1, -1]) {
                 for (const [i, offset] of [-station.length / 2 - 170, station.length / 2 + 85].entries()) {
@@ -54,6 +56,7 @@ export class RailwaySimulation {
             }
         }
         this.signals.sort((a, b) => a.s - b.s);
+        }
         for (const dir of [1, -1]) {
             const group = this.signals.filter(x => x.direction === dir).sort((a, b) => (a.s - b.s) * dir);
             this.signalGroups.set(dir, group);
@@ -66,6 +69,7 @@ export class RailwaySimulation {
     }
     /** Prepare the operating graph independently of rendering and tile arrival. */
     configureRoadNetwork(features, terrain) {
+        if(this.route.data.authoredRoadNetwork){this.roadTraffic.configure(this.route.data.authoredRoadNetwork);this.roadAccumulator=0;return;}
         const candidates = features.filter(f => isMotorRoad({ id: f.id, kind: String(f.kind || 'residential'), width: Number(f.width) || 5.6, points: f.points || [] }));
         const roads = candidates.map(f => engineerSurfaceRoad(f, this.route, terrain)).filter((r) => !!r);
         this.roadTraffic.configure(roads);

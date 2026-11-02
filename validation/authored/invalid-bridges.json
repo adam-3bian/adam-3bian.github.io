@@ -1,0 +1,217 @@
+{
+  "schema": 1,
+  "sourceRevision": "d1e7fc8589dc51edc11c15f322364c1747aee6e4e96e89428299ed0d9e3b872f",
+  "reason": "Invalid legacy inferred rail decks with negative/impossible support heights or locations unrelated to their source road. Original models and source records are preserved as explicit migration exceptions.",
+  "rejected": [
+    {
+      "id": "way/4996698/0/tile/0/rail-deck",
+      "chunk": "14_0",
+      "height": 6.0566364,
+      "horizontalSeparation": 14.635636322642098,
+      "sourceId": "way/4996698/0/tile/0"
+    },
+    {
+      "id": "way/172910577/0/tile/1/rail-deck",
+      "chunk": "15_2",
+      "height": 6.0610186,
+      "horizontalSeparation": 12.798027645626915,
+      "sourceId": "way/172910577/0/tile/1"
+    },
+    {
+      "id": "way/25376709/0/piece/0/rail-deck",
+      "chunk": "15_2",
+      "height": -6.75625,
+      "horizontalSeparation": 5.920052106826665,
+      "sourceId": "way/25376709/0/piece/0"
+    },
+    {
+      "id": "way/1550837034/0/piece/0/rail-deck",
+      "chunk": "6_-8",
+      "height": 6.8409792,
+      "horizontalSeparation": 14.723641761413667,
+      "sourceId": "way/1550837034/0/piece/0"
+    },
+    {
+      "id": "way/23506966/0/rail-deck",
+      "chunk": "6_-8",
+      "height": 6.8197735,
+      "horizontalSeparation": 17.927756062754167,
+      "sourceId": "way/23506966/0"
+    },
+    {
+      "id": "way/3869101/0/rail-deck",
+      "chunk": "6_-8",
+      "height": 6.6324114,
+      "horizontalSeparation": 30.169771262243604,
+      "sourceId": "way/3869101/0"
+    },
+    {
+      "id": "way/97572284/0/rail-deck",
+      "chunk": "6_-8",
+      "height": 6.8197735,
+      "horizontalSeparation": 13.033767788260702,
+      "sourceId": "way/97572284/0"
+    },
+    {
+      "id": "way/10063623/0/rail-deck",
+      "chunk": "7_-7",
+      "height": 15.6815515,
+      "horizontalSeparation": 311.30725009687706,
+      "sourceId": "way/10063623/0"
+    },
+    {
+      "id": "way/10063625/0/rail-deck",
+      "chunk": "7_-7",
+      "height": 15.6815515,
+      "horizontalSeparation": 383.5511662692751,
+      "sourceId": "way/10063625/0"
+    },
+    {
+      "id": "way/131470961/0/rail-deck",
+      "chunk": "7_-7",
+      "height": 15.6815515,
+      "horizontalSeparation": 400.731956686673,
+      "sourceId": "way/131470961/0"
+    },
+    {
+      "id": "way/1353775448/0/rail-deck",
+      "chunk": "7_-7",
+      "height": 5.5250596,
+      "horizontalSeparation": 33.719510809907426,
+      "sourceId": "way/1353775448/0"
+    },
+    {
+      "id": "way/1393068083/0/rail-deck",
+      "chunk": "7_-7",
+      "height": 15.6815515,
+      "horizontalSeparation": 388.2682082795526,
+      "sourceId": "way/1393068083/0"
+    },
+    {
+      "id": "way/4823734/0/tile/0/rail-deck",
+      "chunk": "7_-7",
+      "height": 6.05625,
+      "horizontalSeparation": 37.41155236406468,
+      "sourceId": "way/4823734/0/tile/0"
+    },
+    {
+      "id": "way/598724214/0/tile/0/rail-deck",
+      "chunk": "7_-7",
+      "height": -0.04744160000000003,
+      "horizontalSeparation": 0.7334642340853816,
+      "sourceId": "way/598724214/0/tile/0"
+    },
+    {
+      "id": "way/778897633/0/rail-deck",
+      "chunk": "7_-7",
+      "height": 15.6815515,
+      "horizontalSeparation": 288.0682778134905,
+      "sourceId": "way/778897633/0"
+    },
+    {
+      "id": "way/1085088212/0/rail-deck",
+      "chunk": "8_-6",
+      "height": 6.0691586,
+      "horizontalSeparation": 15.056764307415364,
+      "sourceId": "way/1085088212/0"
+    },
+    {
+      "id": "way/11922650/0/rail-deck",
+      "chunk": "8_-6",
+      "height": 4.4001594,
+      "horizontalSeparation": 249.2503077893359,
+      "sourceId": "way/11922650/0"
+    },
+    {
+      "id": "way/11923647/0/rail-deck",
+      "chunk": "8_-6",
+      "height": 4.748577,
+      "horizontalSeparation": 142.65885331195366,
+      "sourceId": "way/11923647/0"
+    },
+    {
+      "id": "way/12957530/0/tile/1/rail-deck",
+      "chunk": "8_-6",
+      "height": 11.8535474,
+      "horizontalSeparation": 183.4183653772413,
+      "sourceId": "way/12957530/0/tile/1"
+    },
+    {
+      "id": "way/245611343/0/rail-deck",
+      "chunk": "8_-6",
+      "height": 8.6645521,
+      "horizontalSeparation": 75.84313871980704,
+      "sourceId": "way/245611343/0"
+    },
+    {
+      "id": "way/37917269/0/tile/1/rail-deck",
+      "chunk": "8_-6",
+      "height": 8.6651773,
+      "horizontalSeparation": 67.29751945983236,
+      "sourceId": "way/37917269/0/tile/1"
+    },
+    {
+      "id": "way/4017651/0/tile/0/rail-deck",
+      "chunk": "8_-6",
+      "height": 6.1245332,
+      "horizontalSeparation": 25.574460913503305,
+      "sourceId": "way/4017651/0/tile/0"
+    },
+    {
+      "id": "way/42783865/0/rail-deck",
+      "chunk": "8_-6",
+      "height": -57.9125,
+      "horizontalSeparation": 26379.74789699926,
+      "sourceId": "way/42783865/0"
+    },
+    {
+      "id": "way/665493896/0/rail-deck",
+      "chunk": "8_-6",
+      "height": 6.0691586,
+      "horizontalSeparation": 21.42465436421246,
+      "sourceId": "way/665493896/0"
+    },
+    {
+      "id": "way/88223072/0/rail-deck",
+      "chunk": "8_-6",
+      "height": 6.025,
+      "horizontalSeparation": 52.843383973535914,
+      "sourceId": "way/88223072/0"
+    },
+    {
+      "id": "way/88223110/0/rail-deck",
+      "chunk": "8_-6",
+      "height": 11.8535474,
+      "horizontalSeparation": 176.6936946660761,
+      "sourceId": "way/88223110/0"
+    },
+    {
+      "id": "way/4823736/0/rail-deck",
+      "chunk": "8_-7",
+      "height": 6.05625,
+      "horizontalSeparation": 42.467037712908834,
+      "sourceId": "way/4823736/0"
+    },
+    {
+      "id": "way/77347803/0/rail-deck",
+      "chunk": "8_-7",
+      "height": 5.9945322,
+      "horizontalSeparation": 19.0882408041045,
+      "sourceId": "way/77347803/0"
+    },
+    {
+      "id": "way/1031317791/0/tile/0/rail-deck",
+      "chunk": "8_-8",
+      "height": -46.5689689,
+      "horizontalSeparation": 26704.734590906228,
+      "sourceId": "way/1031317791/0/tile/0"
+    },
+    {
+      "id": "way/75106203/0/tile/0/rail-deck",
+      "chunk": "8_-8",
+      "height": -46.56875,
+      "horizontalSeparation": 26704.562729390273,
+      "sourceId": "way/75106203/0/tile/0"
+    }
+  ]
+}

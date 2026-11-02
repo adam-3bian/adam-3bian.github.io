@@ -81,16 +81,24 @@ export function piecePath(item){
  * cubic over analytic horizontal arc distance, shared by rendering and travel.
  * Legacy imported paths keep their existing interpolation above. */
 export function constructionPath(item){
- const c=item.constructionProfile,d=referencePiece(item.ports[0].mode,item.referenceId),radius=c.radiusMetres??d.radiusTiles*GRID.cellSize,curved=d.family==='arc';
- if(!['straight','arc'].includes(d.family))throw new Error(`Unsupported construction path ${item.id}`);
- const length=curved?radius*Math.PI/2:GRID.cellSize,origin=position(c.origin),heading=c.rotation*Math.PI/2,rise=c.riseTicks*GRID.heightStep;
+ const c=item.constructionProfile,plan=constructionPlan(item.ports[0].mode,item.referenceId,c.radiusMetres);
+ const length=plan.length,origin=position(c.origin),heading=c.rotation*Math.PI/2,rise=c.riseTicks*GRID.heightStep;
  const a=length*(c.startGrade+c.endGrade)-2*rise,b=3*rise-length*(2*c.startGrade+c.endGrade),v=length*c.startGrade;
  return {length,sample(s,offset=0){
-  const t=Math.max(0,Math.min(1,s/length)),theta=curved?t*Math.PI/2:0;
-  const [x,z]=rotate(curved?radius*Math.sin(theta):t*length,curved?d.turn*radius*(1-Math.cos(theta)):0,heading);
-  const [dx,dz]=rotate(Math.cos(theta),curved?d.turn*Math.sin(theta):0,heading),grade=(3*a*t*t+2*b*t+v)/length,right=[-dz,0,dx],tangent=[dx,grade,dz];
+  const t=Math.max(0,Math.min(1,s/length)),q=plan.sample(t*length);
+  const [x,z]=rotate(q.x,q.z,heading);
+  const [dx,dz]=rotate(q.dx,q.dz,heading),grade=(3*a*t*t+2*b*t+v)/length,right=[-dz,0,dx],tangent=[dx,grade,dz];
   return {s,position:[origin[0]+x+right[0]*offset,origin[1]+((a*t+b)*t+v)*t,origin[2]+z+right[2]*offset],right,tangent,grade,pitch:Math.atan(grade),yaw:Math.atan2(-dx,-dz)};
  }};
+}
+/** All 44 rail and ten road plans share one arc-distance profile contract. */
+export function constructionPlan(mode,id,radiusMetres){
+ const d=referencePiece(mode,id),radius=radiusMetres??(d.radiusTiles||0)*GRID.cellSize,curved=['arc','diagonalArc','sideArc','turnaround'].includes(d.family),bend=d.family==='turnaround'?Math.PI:d.family==='diagonalArc'?Math.PI/4:Math.PI/2,diagonal=['diagonal','diagonalArc'].includes(d.family)?Math.PI/4:0,side=GRID.cellSize/8,sShape=['s','sideS'].includes(d.family),span=sShape?GRID.cellSize*2:GRID.cellSize;
+ if(curved&&!(radius>0))throw Error('Construction curve needs a positive radius');
+ const raw=t=>{let x,z,dx,dz;if(curved){x=radius*Math.sin(bend*t);z=d.turn*radius*(1-Math.cos(bend*t))+d.sideStart*side;dx=Math.cos(bend*t);dz=d.turn*Math.sin(bend*t);}else{const from=d.family==='s'?0:d.sideStart*side,to=d.family==='s'?d.turn*GRID.cellSize:d.sideEnd*side;x=span*t;z=from+(to-from)*(sShape?smooth(t):0);dx=span;dz=sShape?(to-from)*6*t*(1-t):0;const n=Math.hypot(dx,dz);dx/=n;dz/=n;}const [rx,rz]=rotate(x,z,diagonal),[vx,vz]=rotate(dx,dz,diagonal);return{x:rx,z:rz,dx:vx,dz:vz};};
+ let length=curved?radius*bend:span,distances;
+ if(sShape){distances=[0];let previous=raw(0);for(let i=1;i<=512;i++){const q=raw(i/512);distances.push(distances.at(-1)+Math.hypot(q.x-previous.x,q.z-previous.z));previous=q;}length=distances.at(-1);}
+ return{length,sample(s){s=Math.max(0,Math.min(length,s));let t=s/length;if(distances){let lo=0,hi=512;while(lo+1<hi){const mid=(lo+hi)>>1;if(distances[mid]<=s)lo=mid;else hi=mid;}t=(lo+(s-distances[lo])/(distances[hi]-distances[lo]||1))/512;}return raw(t);}};
 }
 export function matchingPorts(a,b,cosine=.999){return a.mode===b.mode&&a.anchor.every((v,i)=>v===b.anchor[i])&&a.vector.reduce((sum,v,i)=>sum+v*b.vector[i],0)<=-cosine;}
 

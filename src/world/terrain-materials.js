@@ -1,0 +1,5 @@
+export const TERRAIN_COLOURS=Object.freeze({GRASS:0x7e8f66,ROUGH_GRASS:0x818368,SOIL:0x8b765e,MUD:0x655e4b,SAND:0xc1b68d,GRAVEL:0x8b887c,ROCK:0x777d77,SANDSTONE:0xab9674,LIMESTONE:0xa8aaa1,BALLAST:0x7b7b72,CONCRETE:0xaaa99c,ASPHALT:0x626760,PAVING:0xaaa99b,COBBLES:0x8a897d,FARMLAND:0x8d8963,WOODLAND_FLOOR:0x6c7153,LEAF_LITTER:0x857553,URBAN_GROUND:0x97988a,WATER_EDGE:0x7f8e79,EXPOSED_EARTH:0x9b805f});
+export function slopeShapeMatches(cell){
+ const values=cell.cornerTicks,raised=values.map((v,i)=>v>0?i:-1).filter(i=>i>=0),equal=raised.every(i=>values[i]===Math.max(...values));
+ switch(cell.slopeShape){case'FLAT':return raised.length===0;case'CUSTOM_CORNER_HEIGHTS':return true;case'SINGLE_CORNER_UP':return raised.length===1;case'ADJACENT_CORNERS_UP':return raised.length===2&&equal&&Math.abs(raised[0]-raised[1])!==2;case'THREE_CORNERS_UP':return raised.length===3&&equal;case'OPPOSITE_CORNERS_VALLEY':return raised.length===2&&raised[0]===1&&raised[1]===3&&equal;case'DOUBLE_HEIGHT_SLOPE':return Number.isSafeInteger(cell.slopeUnitTicks)&&cell.slopeUnitTicks>0&&Math.max(...values)===cell.slopeUnitTicks*2;default:return false;}
+}

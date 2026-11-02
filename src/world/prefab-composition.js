@@ -1,6 +1,7 @@
 import { GRID, anchor, position, connections, piece } from './grid.js';
-import { referencePiece, instantiatePiece, matchingPorts, occupiedQuarters, constructionPath } from './piece-registry.js';
+import { referencePiece, instantiatePiece, matchingPorts, occupiedQuarters, constructionPath, constructionPlan } from './piece-registry.js';
 import { ConstructionTerrain } from './terrain-grid.js';
+import {TERRAIN_COLOURS,slopeShapeMatches} from './terrain-materials.js';
 
 const fail = (id, message) => { throw new Error(`PREFAB ${id}: ${message}`); };
 const unit = v => { const n = Math.hypot(...v); return v.map(x => x / n); };
@@ -34,9 +35,7 @@ export function verticalProfile(profile, length, limits, id) {
 
 function pathFor(instance, def, catalogue) {
     const g = def.geometry, ref = referencePiece(g.mode, g.referenceId);
-    if (!['straight', 'arc'].includes(ref.family)) fail(instance.id, 'reference family has no construction profile adapter yet');
-    const radius = g.radiusMetres ?? ref.radiusTiles * GRID.cellSize, curved = ref.family === 'arc';
-    const length = curved ? radius * Math.PI / 2 : GRID.cellSize;
+    const length = constructionPlan(g.mode,g.referenceId,g.radiusMetres).length;
     const limits = catalogue.gradeLimits[def.infrastructureClass];
     if (!limits) fail(instance.id, 'missing infrastructure gradient class');
     const vertical = verticalProfile(instance.profile, length, limits, instance.id);
@@ -90,10 +89,10 @@ export function resolveComposition(chunks, catalogue, enums, {validateIndex=true
     const cells = chunks.flatMap(c => c.terrain), terrain = new ConstructionTerrain(cells), occupancy = new Map(), paths = new Map();
     for (const c of cells) {
         if (definitions.get(c.prefabId)?.geometry.type !== 'terrain') fail(`${c.x},${c.z}`, 'missing terrain prefab');
-        if (!['GRASS','GRAVEL'].includes(c.material)) fail(`${c.x},${c.z}`, 'terrain material has no renderer yet');
+        if (!(c.material in TERRAIN_COLOURS)) fail(`${c.x},${c.z}`, 'terrain material has no renderer yet');
         for (const [category, value] of [['TerrainMaterial', c.material], ['LandCoverType', c.landCover], ['EarthworkType', c.earthwork], ['TerrainSlopeShape', c.slopeShape]])
             if (!enumHas(enums, category, value)) fail(`${c.x},${c.z}`, `unknown ${category}`);
-        if (!['FLAT', 'CUSTOM_CORNER_HEIGHTS'].includes(c.slopeShape) || c.slopeShape === 'FLAT' && c.cornerTicks.some(Boolean)) fail(`${c.x},${c.z}`, 'unsupported or inconsistent slope shape');
+        if (!slopeShapeMatches(c)) fail(`${c.x},${c.z}`, 'unsupported or inconsistent slope shape');
         if (c.waterLevelTicks !== null) fail(`${c.x},${c.z}`, 'water requires an implemented water prefab');
     }
     for (const [id, entry] of instances) {

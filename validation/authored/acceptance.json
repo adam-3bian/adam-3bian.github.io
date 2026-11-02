@@ -1,0 +1,315 @@
+{
+  "schema": 1,
+  "date": "2026-11-02T02:53:13.801802+00:00",
+  "branch": "railway",
+  "baseCommit": "363ea84b481ad8a2e0dc0a9439d60dba4e15fca6",
+  "revision": "19fc55c80f54e85ff4a97d2e20d3567a0f9b390bcb1cf4d5cba5e63743113eb8",
+  "overallStatus": "INCOMPLETE",
+  "scope": "Functioning static railway implementation, full authored-route migration, tests and explicit acceptance gaps. This report does not claim completion of the full master specification.",
+  "sourceAuthority": {
+    "staticGeometry": "world-source/chunks/*.json",
+    "operatingGeometry": "world-source/operations.json",
+    "ambient": "world-source/ambient-zones.json",
+    "nativeConstruction": "public/data/grid/prefabs/construction.json",
+    "runtimeManifest": "public/data/grid/authored-world.json",
+    "cacheCommand": "npm run cache:world",
+    "validationCommand": "npm run check:world",
+    "normalRuntime": "composeAuthoredChunk reconstructs stored meshes, transforms, placements and navigation. Operating signals, switches, protection poses and road topology are stored, not geographically inferred at load.",
+    "legacyRuntime": "Only restored archived legacy worlds use the previous procedural reconstruction.",
+    "archivedSourceUnchanged": true,
+    "archivedSourceCheck": "git diff 363ea84 --exit-code -- public/data/grid/world.json public/data/grid/tiles public/data/grid/terrain.bin"
+  },
+  "counts": {
+    "chunks": 133,
+    "instances": 744322,
+    "characters": 167,
+    "prefabs": 180757,
+    "geometries": 165540,
+    "triangles": 45314729,
+    "distantTriangles": 40556701,
+    "degenerateTriangles": 0,
+    "sharedCorners": 1719005,
+    "sharedMeshVertices": 87845,
+    "maxMeshSeamDifference": 0,
+    "treesChecked": 14502,
+    "foundationsChecked": 41442,
+    "externalSupportQueries": 2967,
+    "supportFindings": [],
+    "seamFindings": [],
+    "sourceExceptions": 13043
+  },
+  "nativeConstruction": {
+    "definitions": 67,
+    "instances": 24,
+    "terrainCells": 192,
+    "railFamilies": 44,
+    "roadFamilies": 10,
+    "categories": 69,
+    "enumValues": 932
+  },
+  "stages": [
+    {
+      "stage": 0,
+      "name": "Repository audit",
+      "status": "IMPLEMENTED_AND_VERIFIED",
+      "evidence": [
+        "docs/reports/prefab-execution.json",
+        "docs/PREFAB-CONSTRUCTION.md"
+      ],
+      "scope": "Branch, ownership, original route counts and baseline checks; historical reports retain their original stage scope."
+    },
+    {
+      "stage": 1,
+      "name": "Working JSON prefab slice",
+      "status": "IMPLEMENTED_AND_VERIFIED",
+      "evidence": [
+        "docs/reports/prefab-scene.json",
+        "docs/reports/prefab-browser.json",
+        "validation/authored/kidderminster-gate-browser.json"
+      ],
+      "files": [
+        "src/world/prefab-composition.js",
+        "src/world/piece-registry.js",
+        "src/render/prefab-assets.js",
+        "public/data/grid/prefabs/construction.json",
+        "public/data/grid/scenes/kidderminster/"
+      ],
+      "scope": "Definitions, canonical instances, construction cells, chunks, exact terrain queries, full-section grade validation, native rotation and real-scene migration gate."
+    },
+    {
+      "stage": 2,
+      "name": "Terrain and grades",
+      "status": "INCOMPLETE",
+      "evidence": [
+        "validation/authored/world.json",
+        "validation/authored/transport-profiles.json",
+        "validation/authored/clearance.json",
+        "validation/authored/terrain-boundaries.json",
+        "validation/authored/invalid-bridges.json",
+        "docs/reports/crossing-axis-diagnostic.json"
+      ],
+      "files": [
+        "src/world/authored-ground.js",
+        "src/world/terrain-materials.js",
+        "scripts/transport-profile-audit.js",
+        "scripts/audit-authored-clearance.js",
+        "world-source/chunks/"
+      ],
+      "verified": "All authored geometry finite and nondegenerate; shared boundary heights exact; all audited trees and foundations supported, including cross-chunk queries. Native construction enforces class caps and analytic extrema. Thirty invalid inferred bridge assemblies quarantined without losing source records.",
+      "remaining": {
+        "gradeOrTransitionFindings": 7762,
+        "missingFullSectionOwnership": 36041,
+        "separateNonMotorRouteReviews": 12209,
+        "sampledClearanceIntersections": 135,
+        "clearanceAffectedInstances": 18
+      }
+    },
+    {
+      "stage": 3,
+      "name": "World migration",
+      "status": "IMPLEMENTED_AND_VERIFIED",
+      "evidence": [
+        "validation/authored/world.json",
+        "validation/authored/browser-smoke.json",
+        "public/data/grid/authored-world.json"
+      ],
+      "files": [
+        "world-source/chunks/",
+        "world-source/operations.json",
+        "src/world/authored-world.js",
+        "src/world/authored-codec.js",
+        "src/world/grid-world.js",
+        "src/world/world.worker.js",
+        "scripts/scene-authoring.js",
+        "scripts/cache-authored-world.js"
+      ],
+      "scope": "133 authored chunks and operations; geometry content IDs, centimetre anchors, fine height ticks, bounded hash-verified caches and complete offline snapshots. Geographic engineering and variant approval remain separate. Original source data and rejected records retained."
+    },
+    {
+      "stage": 4,
+      "name": "Enum and asset completeness",
+      "status": "INCOMPLETE",
+      "evidence": [
+        "validation/authored/asset-coverage.json"
+      ],
+      "files": [
+        "public/data/grid/prefabs/enums.json",
+        "public/data/grid/prefabs/construction.json",
+        "src/world/piece-registry.js",
+        "scripts/diagnose-asset-coverage.js"
+      ],
+      "coverage": {
+        "IMPLEMENTED_UNVERIFIED": 30,
+        "LEGACY_UNKNOWN": 595,
+        "IMPLEMENTED_AND_VERIFIED": 164,
+        "VOCABULARY_ONLY": 143
+      },
+      "reusedDefinitions": 107,
+      "instancesUsingReusedDefinitions": 563672,
+      "scope": "All 932 values accounted for and all 54 native rail/road reference families implemented. Legacy unknown and vocabulary-only entries are not claimed as finished models."
+    },
+    {
+      "stage": 5,
+      "name": "Station reconstruction",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "evidence": [
+        "world-source/stations.json",
+        "validation/authored/browser-stations.json",
+        "docs/captures/authored/"
+      ],
+      "files": [
+        "world-source/stations.json",
+        "src/render/station-kit.js",
+        "scripts/apply-station-profiles.js",
+        "scripts/curate-small-stations.js",
+        "world-source/chunks/"
+      ],
+      "implemented": "22 station profiles; all 44 approach directions and 22 context views captured. Original supplied photographs and five additional attributed station references reviewed. Small-station shelters shortened and roof forms individually curated.",
+      "independentBlindRecognition": "BLOCKED: no independent reviewers were available; photographic recognition and uncertain dimensions have not been certified."
+    },
+    {
+      "stage": 6,
+      "name": "British architecture and vehicles",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "files": [
+        "src/world/build.js",
+        "src/render/assets.js",
+        "src/render/british-vehicles.js",
+        "src/render/vehicle-profiles.json",
+        "world-source/chunks/"
+      ],
+      "evidence": [
+        "validation/authored/tests.json",
+        "validation/authored/asset-coverage.json",
+        "docs/captures/authored/"
+      ],
+      "implemented": "British industrial and station structure details, 21 road-vehicle profiles, buses/lorries/cycles, differentiated train cabs/proportions and animated doors. Geometry and wheel/contact checks pass.",
+      "remaining": "Full photographic train/architecture review and all enum subvariants are not established."
+    },
+    {
+      "stage": 7,
+      "name": "Cats and ambient life",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "files": [
+        "src/render/cats.js",
+        "src/render/ambient-life.js",
+        "src/render/rigid-batch.js",
+        "src/render/renderer.js",
+        "world-source/ambient-zones.json",
+        "world-source/chunks/"
+      ],
+      "evidence": [
+        "validation/authored/tests.json",
+        "validation/authored/asset-coverage.json",
+        "validation/authored/browser-smoke.json"
+      ],
+      "implemented": "167 supported clothed cat characters; 11 coat and 12 clothing variants, 12 articulated states, smooth turns, luggage and staff motions. JSON zones bound birds/clouds/aircraft with seeded populations and distance/update limits.",
+      "remaining": "Some enumerated ambient subvariants and formal visual acceptance remain unverified."
+    },
+    {
+      "stage": 8,
+      "name": "Static site, streaming and performance QA",
+      "status": "INCOMPLETE",
+      "files": [
+        "src/render/renderer.js",
+        "src/world/chunk-streaming.js",
+        "src/world/grid-world.js",
+        "site/",
+        "index.html",
+        "scripts/authored-final-browser-qa.js",
+        "scripts/authored-smoke-qa.js",
+        "vite.config.js"
+      ],
+      "evidence": [
+        "validation/authored/browser-stations.json",
+        "validation/authored/browser-final.json",
+        "validation/authored/browser-smoke.json",
+        "docs/reports/simulation.json",
+        "validation/authored/tests.json",
+        "site/build-manifest.json"
+      ],
+      "verified": "Full automated rail journeys in both directions, dispatcher soak, 44 station approach captures, actual driving intervals, transient fetch recovery, all 133 chunks saved and restored with data requests blocked, exact revision/chainage preservation, final production entry and static input/output hashes. The final release constant matches the authored manifest; production Begin journey starts without a reload.",
+      "remaining": "Continuous full-route browser performance, reference RTX 3060 timings, GPU retained bytes, station recognition, and source engineering/variant gaps."
+    }
+  ],
+  "checks": {
+    "npm run check": {
+      "exitCode": 0,
+      "files": 136
+    },
+    "npm test": {
+      "exitCode": 0,
+      "tests": 171,
+      "failures": 0
+    },
+    "npm run diagnose:prefabs": {
+      "exitCode": 0,
+      "scope": "Native construction fixture"
+    },
+    "npm run diagnose:world": {
+      "exitCode": 0,
+      "scope": "Structural checks pass; engineering review and coverage statuses explicitly remain INCOMPLETE"
+    },
+    "node --expose-gc scripts/audit-authored-clearance.js": {
+      "exitCode": 1,
+      "findings": 135,
+      "scope": "Intentional nonzero exit for unresolved source clearance findings"
+    },
+    "npm run validate": {
+      "exitCode": 0,
+      "scope": "Automated rail simulation; not mixed motor-road or browser performance acceptance"
+    },
+    "npm run build:site": {
+      "exitCode": 0,
+      "inputs": 470,
+      "outputs": 420
+    },
+    "npm run verify:site": {
+      "exitCode": 0
+    },
+    "finalBrowserSmoke": {
+      "exitCode": 0,
+      "revision": "19fc55c80f54e85ff4a97d2e20d3567a0f9b390bcb1cf4d5cba5e63743113eb8"
+    },
+    "git diff --check": {
+      "exitCode": 0
+    },
+    "releaseTargetedTests": {
+      "exitCode": 0,
+      "tests": 5,
+      "command": "node --test tests/static-hosting.test.js tests/save-compatibility.test.js",
+      "scope": "Rerun after correcting the production release revision constant."
+    },
+    "node scripts/audit-crossing-orientation.js": {
+      "exitCode": 0,
+      "scope": "All four stored operating crossings; gate/head orientation only."
+    }
+  },
+  "performance": {
+    "status": "BLOCKED",
+    "referenceHardware": "RTX 3060 or declared equivalent unavailable",
+    "availableHardware": "2-core CPU quota, Chromium SwiftShader software renderer",
+    "resolution": [
+      1920,
+      1080
+    ],
+    "quality": "balanced",
+    "measuredStationFrameCadenceMedianMs": {
+      "KID": 10641.900000000373,
+      "BSW": 6683.4000000003725,
+      "BMO": 5053.5999999996275,
+      "TYS": 4407.4000000003725
+    },
+    "availableHardwareResult": "INCOMPLETE: measured cadence and stalls exceed targets. Render submission/finish times are not full frame cadence.",
+    "javascriptRetainedHeapGrowth": 0.06207801014848128,
+    "retainedMemoryScope": "JavaScript heap only; GPU bytes and total retained-memory target remain unverified.",
+    "evidenceRevision": "1080p measurements precede the final bridge quarantine and cat turn correction. Final repaired-revision smoke checks are separate and do not establish performance."
+  },
+  "unresolved": [
+    "Legacy gradient/transition and full-section ownership findings require source-backed engineering edits or justified exceptions.",
+    "135 sampled clearance intersections affect 18 retained source objects.",
+    "595 legacy enum variants have no verified mapping; 143 are vocabulary-only; 30 other entries remain unverified.",
+    "Station blind recognition and full visual acceptance have not passed.",
+    "Available software-renderer performance misses targets, and reference-GPU and total retained-memory acceptance cannot be verified here."
+  ]
+}

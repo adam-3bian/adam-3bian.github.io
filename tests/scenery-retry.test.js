@@ -6,7 +6,7 @@ import { RailwayRenderer } from '../src/render/renderer.js';
 test('light scenery discards only inactive tiles when its cache reaches the limit',()=>{
     const loaded=new Map(),disposed=[],removed=[];
     for(let i=0;i<13;i++){const id=`tile-${i}`,mesh={geometry:{index:{count:3},dispose:()=>disposed.push(`${id}/geometry`)},material:{dispose:()=>disposed.push(`${id}/material`)}};loaded.set(id,{mesh,used:i});}
-    const renderer={quality:'low',loaded,requested:new Set(),triangles:13,scene:{remove:mesh=>removed.push(mesh)}};
+    const renderer={quality:'low',loaded,requested:new Set(),triangles:13,scene:{remove:mesh=>removed.push(mesh)},releaseTile:RailwayRenderer.prototype.releaseTile};
     RailwayRenderer.prototype.evictInactiveTiles.call(renderer,new Set(['tile-0','tile-1']));
     assert.equal(loaded.size,9);assert.ok(loaded.has('tile-0')&&loaded.has('tile-1'));assert.equal(removed.length,4);assert.equal(disposed.length,8);assert.equal(renderer.triangles,9);
 });
@@ -14,7 +14,7 @@ test('evicted scenery removes pedestrians only after their final owning tile is 
     const loaded=new Map(),removed=[];
     for(let i=0;i<13;i++){const mesh={geometry:{index:{count:3},dispose(){}},material:{dispose(){}}};loaded.set(`tile-${i}`,{mesh,used:i,walkers:i===2?['shared','orphan']:[]});}
     const shared={model:{id:'shared'},tiles:new Set(['tile-0','tile-2'])},orphan={model:{id:'orphan'},tiles:new Set(['tile-2'])};
-    const renderer={quality:'low',loaded,requested:new Set(),triangles:13,walkers:new Map([['shared',shared],['orphan',orphan]]),scene:{remove:mesh=>removed.push(mesh)}};
+    const renderer={quality:'low',loaded,requested:new Set(),triangles:13,walkers:new Map([['shared',shared],['orphan',orphan]]),scene:{remove:mesh=>removed.push(mesh)},releaseTile:RailwayRenderer.prototype.releaseTile};
     RailwayRenderer.prototype.evictInactiveTiles.call(renderer,new Set(['tile-0','tile-1']));
     assert.equal(renderer.walkers.has('orphan'),false);assert.equal(renderer.walkers.get('shared'),shared);assert.deepEqual([...shared.tiles],['tile-0']);assert.ok(removed.includes(orphan.model));assert.ok(!removed.includes(shared.model));
 });

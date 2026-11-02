@@ -1,0 +1,1105 @@
+[
+  {
+    "id": "ambient/KID/birds",
+    "types": [
+      "PIGEON",
+      "STARLING"
+    ],
+    "bounds": [
+      -16313,
+      3535,
+      -15953,
+      3895
+    ],
+    "populationCap": 4,
+    "heightRange": [
+      67,
+      89
+    ],
+    "updateHz": 15,
+    "seed": 17021,
+    "visibilityDistance": 650,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Modest ambient population over the station district; not a wildlife survey"
+    }
+  },
+  {
+    "id": "ambient/KID/clouds",
+    "types": [
+      "CLOUD"
+    ],
+    "bounds": [
+      -17133,
+      2715,
+      -15133,
+      4715
+    ],
+    "populationCap": 2,
+    "heightRange": [
+      339,
+      479
+    ],
+    "updateHz": 2,
+    "seed": 11821,
+    "visibilityDistance": 2200,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Atmospheric decoration"
+    }
+  },
+  {
+    "id": "ambient/BKD/birds",
+    "types": [
+      "CROW",
+      "MAGPIE"
+    ],
+    "bounds": [
+      -12080,
+      1053,
+      -11720,
+      1413
+    ],
+    "populationCap": 4,
+    "heightRange": [
+      81,
+      103
+    ],
+    "updateHz": 15,
+    "seed": 17998,
+    "visibilityDistance": 650,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Modest ambient population over the station district; not a wildlife survey"
+    }
+  },
+  {
+    "id": "ambient/BKD/clouds",
+    "types": [
+      "CLOUD"
+    ],
+    "bounds": [
+      -12900,
+      233,
+      -10900,
+      2233
+    ],
+    "populationCap": 2,
+    "heightRange": [
+      353,
+      493
+    ],
+    "updateHz": 2,
+    "seed": 12338,
+    "visibilityDistance": 2200,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Atmospheric decoration"
+    }
+  },
+  {
+    "id": "ambient/HAG/birds",
+    "types": [
+      "PIGEON",
+      "GULL"
+    ],
+    "bounds": [
+      -10045,
+      -682,
+      -9685,
+      -322
+    ],
+    "populationCap": 4,
+    "heightRange": [
+      103,
+      125
+    ],
+    "updateHz": 15,
+    "seed": 18975,
+    "visibilityDistance": 650,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Modest ambient population over the station district; not a wildlife survey"
+    }
+  },
+  {
+    "id": "ambient/HAG/clouds",
+    "types": [
+      "CLOUD"
+    ],
+    "bounds": [
+      -10865,
+      -1502,
+      -8865,
+      498
+    ],
+    "populationCap": 2,
+    "heightRange": [
+      375,
+      515
+    ],
+    "updateHz": 2,
+    "seed": 12855,
+    "visibilityDistance": 2200,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Atmospheric decoration"
+    }
+  },
+  {
+    "id": "ambient/SBJ/birds",
+    "types": [
+      "STARLING",
+      "CROW"
+    ],
+    "bounds": [
+      -9192,
+      -3478,
+      -8832,
+      -3118
+    ],
+    "populationCap": 4,
+    "heightRange": [
+      106,
+      128
+    ],
+    "updateHz": 15,
+    "seed": 19952,
+    "visibilityDistance": 650,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Modest ambient population over the station district; not a wildlife survey"
+    }
+  },
+  {
+    "id": "ambient/SBJ/clouds",
+    "types": [
+      "CLOUD"
+    ],
+    "bounds": [
+      -10012,
+      -4298,
+      -8012,
+      -2298
+    ],
+    "populationCap": 2,
+    "heightRange": [
+      378,
+      518
+    ],
+    "updateHz": 2,
+    "seed": 13372,
+    "visibilityDistance": 2200,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Atmospheric decoration"
+    }
+  },
+  {
+    "id": "ambient/LYE/birds",
+    "types": [
+      "PIGEON",
+      "STARLING"
+    ],
+    "bounds": [
+      -7972,
+      -4849,
+      -7612,
+      -4489
+    ],
+    "populationCap": 4,
+    "heightRange": [
+      95,
+      117
+    ],
+    "updateHz": 15,
+    "seed": 20929,
+    "visibilityDistance": 650,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Modest ambient population over the station district; not a wildlife survey"
+    }
+  },
+  {
+    "id": "ambient/LYE/clouds",
+    "types": [
+      "CLOUD"
+    ],
+    "bounds": [
+      -8792,
+      -5669,
+      -6792,
+      -3669
+    ],
+    "populationCap": 2,
+    "heightRange": [
+      367,
+      507
+    ],
+    "updateHz": 2,
+    "seed": 13889,
+    "visibilityDistance": 2200,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Atmospheric decoration"
+    }
+  },
+  {
+    "id": "ambient/CRA/birds",
+    "types": [
+      "CROW",
+      "MAGPIE"
+    ],
+    "bounds": [
+      -6242,
+      -5904,
+      -5882,
+      -5544
+    ],
+    "populationCap": 4,
+    "heightRange": [
+      102,
+      124
+    ],
+    "updateHz": 15,
+    "seed": 21906,
+    "visibilityDistance": 650,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Modest ambient population over the station district; not a wildlife survey"
+    }
+  },
+  {
+    "id": "ambient/CRA/clouds",
+    "types": [
+      "CLOUD"
+    ],
+    "bounds": [
+      -7062,
+      -6724,
+      -5062,
+      -4724
+    ],
+    "populationCap": 2,
+    "heightRange": [
+      374,
+      514
+    ],
+    "updateHz": 2,
+    "seed": 14406,
+    "visibilityDistance": 2200,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Atmospheric decoration"
+    }
+  },
+  {
+    "id": "ambient/OHL/birds",
+    "types": [
+      "PIGEON",
+      "GULL"
+    ],
+    "bounds": [
+      -3899,
+      -6051,
+      -3539,
+      -5691
+    ],
+    "populationCap": 4,
+    "heightRange": [
+      146,
+      168
+    ],
+    "updateHz": 15,
+    "seed": 22883,
+    "visibilityDistance": 650,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Modest ambient population over the station district; not a wildlife survey"
+    }
+  },
+  {
+    "id": "ambient/OHL/clouds",
+    "types": [
+      "CLOUD"
+    ],
+    "bounds": [
+      -4719,
+      -6871,
+      -2719,
+      -4871
+    ],
+    "populationCap": 2,
+    "heightRange": [
+      418,
+      558
+    ],
+    "updateHz": 2,
+    "seed": 14923,
+    "visibilityDistance": 2200,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Atmospheric decoration"
+    }
+  },
+  {
+    "id": "ambient/ROW/birds",
+    "types": [
+      "STARLING",
+      "CROW"
+    ],
+    "bounds": [
+      -2175,
+      -6788,
+      -1815,
+      -6428
+    ],
+    "populationCap": 4,
+    "heightRange": [
+      175,
+      197
+    ],
+    "updateHz": 15,
+    "seed": 23860,
+    "visibilityDistance": 650,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Modest ambient population over the station district; not a wildlife survey"
+    }
+  },
+  {
+    "id": "ambient/ROW/clouds",
+    "types": [
+      "CLOUD"
+    ],
+    "bounds": [
+      -2995,
+      -7608,
+      -995,
+      -5608
+    ],
+    "populationCap": 2,
+    "heightRange": [
+      447,
+      587
+    ],
+    "updateHz": 2,
+    "seed": 15440,
+    "visibilityDistance": 2200,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Atmospheric decoration"
+    }
+  },
+  {
+    "id": "ambient/LGG/birds",
+    "types": [
+      "PIGEON",
+      "STARLING"
+    ],
+    "bounds": [
+      -450,
+      -8575,
+      -90,
+      -8215
+    ],
+    "populationCap": 4,
+    "heightRange": [
+      167,
+      189
+    ],
+    "updateHz": 15,
+    "seed": 24837,
+    "visibilityDistance": 650,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Modest ambient population over the station district; not a wildlife survey"
+    }
+  },
+  {
+    "id": "ambient/LGG/clouds",
+    "types": [
+      "CLOUD"
+    ],
+    "bounds": [
+      -1270,
+      -9395,
+      730,
+      -7395
+    ],
+    "populationCap": 2,
+    "heightRange": [
+      439,
+      579
+    ],
+    "updateHz": 2,
+    "seed": 15957,
+    "visibilityDistance": 2200,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Atmospheric decoration"
+    }
+  },
+  {
+    "id": "ambient/SGB/birds",
+    "types": [
+      "CROW",
+      "MAGPIE"
+    ],
+    "bounds": [
+      1244,
+      -9533,
+      1604,
+      -9173
+    ],
+    "populationCap": 4,
+    "heightRange": [
+      161,
+      183
+    ],
+    "updateHz": 15,
+    "seed": 25814,
+    "visibilityDistance": 650,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Modest ambient population over the station district; not a wildlife survey"
+    }
+  },
+  {
+    "id": "ambient/SGB/clouds",
+    "types": [
+      "CLOUD"
+    ],
+    "bounds": [
+      424,
+      -10353,
+      2424,
+      -8353
+    ],
+    "populationCap": 2,
+    "heightRange": [
+      433,
+      573
+    ],
+    "updateHz": 2,
+    "seed": 16474,
+    "visibilityDistance": 2200,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Atmospheric decoration"
+    }
+  },
+  {
+    "id": "ambient/THW/birds",
+    "types": [
+      "PIGEON",
+      "GULL"
+    ],
+    "bounds": [
+      2290,
+      -9930,
+      2650,
+      -9570
+    ],
+    "populationCap": 4,
+    "heightRange": [
+      160,
+      182
+    ],
+    "updateHz": 15,
+    "seed": 26791,
+    "visibilityDistance": 650,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Modest ambient population over the station district; not a wildlife survey"
+    }
+  },
+  {
+    "id": "ambient/THW/clouds",
+    "types": [
+      "CLOUD"
+    ],
+    "bounds": [
+      1470,
+      -10750,
+      3470,
+      -8750
+    ],
+    "populationCap": 2,
+    "heightRange": [
+      432,
+      572
+    ],
+    "updateHz": 2,
+    "seed": 16991,
+    "visibilityDistance": 2200,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Atmospheric decoration"
+    }
+  },
+  {
+    "id": "ambient/JEQ/birds",
+    "types": [
+      "STARLING",
+      "CROW"
+    ],
+    "bounds": [
+      5780,
+      -8152,
+      6140,
+      -7792
+    ],
+    "populationCap": 4,
+    "heightRange": [
+      129,
+      151
+    ],
+    "updateHz": 15,
+    "seed": 27768,
+    "visibilityDistance": 650,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Modest ambient population over the station district; not a wildlife survey"
+    }
+  },
+  {
+    "id": "ambient/JEQ/clouds",
+    "types": [
+      "CLOUD"
+    ],
+    "bounds": [
+      4960,
+      -8972,
+      6960,
+      -6972
+    ],
+    "populationCap": 2,
+    "heightRange": [
+      401,
+      541
+    ],
+    "updateHz": 2,
+    "seed": 17508,
+    "visibilityDistance": 2200,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Atmospheric decoration"
+    }
+  },
+  {
+    "id": "ambient/BSW/birds",
+    "types": [
+      "PIGEON",
+      "STARLING"
+    ],
+    "bounds": [
+      6720,
+      -7493,
+      7080,
+      -7133
+    ],
+    "populationCap": 4,
+    "heightRange": [
+      139,
+      161
+    ],
+    "updateHz": 15,
+    "seed": 28745,
+    "visibilityDistance": 650,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Modest ambient population over the station district; not a wildlife survey"
+    }
+  },
+  {
+    "id": "ambient/BSW/clouds",
+    "types": [
+      "CLOUD"
+    ],
+    "bounds": [
+      5900,
+      -8313,
+      7900,
+      -6313
+    ],
+    "populationCap": 2,
+    "heightRange": [
+      411,
+      551
+    ],
+    "updateHz": 2,
+    "seed": 18025,
+    "visibilityDistance": 2200,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Atmospheric decoration"
+    }
+  },
+  {
+    "id": "ambient/BMO/birds",
+    "types": [
+      "CROW",
+      "MAGPIE"
+    ],
+    "bounds": [
+      7254,
+      -6962,
+      7614,
+      -6602
+    ],
+    "populationCap": 4,
+    "heightRange": [
+      126,
+      148
+    ],
+    "updateHz": 15,
+    "seed": 29722,
+    "visibilityDistance": 650,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Modest ambient population over the station district; not a wildlife survey"
+    }
+  },
+  {
+    "id": "ambient/BMO/clouds",
+    "types": [
+      "CLOUD"
+    ],
+    "bounds": [
+      6434,
+      -7782,
+      8434,
+      -5782
+    ],
+    "populationCap": 2,
+    "heightRange": [
+      398,
+      538
+    ],
+    "updateHz": 2,
+    "seed": 18542,
+    "visibilityDistance": 2200,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Atmospheric decoration"
+    }
+  },
+  {
+    "id": "ambient/BBS/birds",
+    "types": [
+      "PIGEON",
+      "GULL"
+    ],
+    "bounds": [
+      8222,
+      -6216,
+      8582,
+      -5856
+    ],
+    "populationCap": 4,
+    "heightRange": [
+      127,
+      149
+    ],
+    "updateHz": 15,
+    "seed": 30699,
+    "visibilityDistance": 650,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Modest ambient population over the station district; not a wildlife survey"
+    }
+  },
+  {
+    "id": "ambient/BBS/clouds",
+    "types": [
+      "CLOUD"
+    ],
+    "bounds": [
+      7402,
+      -7036,
+      9402,
+      -5036
+    ],
+    "populationCap": 2,
+    "heightRange": [
+      399,
+      539
+    ],
+    "updateHz": 2,
+    "seed": 19059,
+    "visibilityDistance": 2200,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Atmospheric decoration"
+    }
+  },
+  {
+    "id": "ambient/SMA/birds",
+    "types": [
+      "STARLING",
+      "CROW"
+    ],
+    "bounds": [
+      9465,
+      -5260,
+      9825,
+      -4900
+    ],
+    "populationCap": 4,
+    "heightRange": [
+      126,
+      148
+    ],
+    "updateHz": 15,
+    "seed": 31676,
+    "visibilityDistance": 650,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Modest ambient population over the station district; not a wildlife survey"
+    }
+  },
+  {
+    "id": "ambient/SMA/clouds",
+    "types": [
+      "CLOUD"
+    ],
+    "bounds": [
+      8645,
+      -6080,
+      10645,
+      -4080
+    ],
+    "populationCap": 2,
+    "heightRange": [
+      398,
+      538
+    ],
+    "updateHz": 2,
+    "seed": 19576,
+    "visibilityDistance": 2200,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Atmospheric decoration"
+    }
+  },
+  {
+    "id": "ambient/TYS/birds",
+    "types": [
+      "PIGEON",
+      "STARLING"
+    ],
+    "bounds": [
+      10885,
+      -4174,
+      11245,
+      -3814
+    ],
+    "populationCap": 4,
+    "heightRange": [
+      129,
+      151
+    ],
+    "updateHz": 15,
+    "seed": 32653,
+    "visibilityDistance": 650,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Modest ambient population over the station district; not a wildlife survey"
+    }
+  },
+  {
+    "id": "ambient/TYS/clouds",
+    "types": [
+      "CLOUD"
+    ],
+    "bounds": [
+      10065,
+      -4994,
+      12065,
+      -2994
+    ],
+    "populationCap": 2,
+    "heightRange": [
+      401,
+      541
+    ],
+    "updateHz": 2,
+    "seed": 20093,
+    "visibilityDistance": 2200,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Atmospheric decoration"
+    }
+  },
+  {
+    "id": "ambient/ACG/birds",
+    "types": [
+      "CROW",
+      "MAGPIE"
+    ],
+    "bounds": [
+      12198,
+      -3700,
+      12558,
+      -3340
+    ],
+    "populationCap": 4,
+    "heightRange": [
+      132,
+      154
+    ],
+    "updateHz": 15,
+    "seed": 33630,
+    "visibilityDistance": 650,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Modest ambient population over the station district; not a wildlife survey"
+    }
+  },
+  {
+    "id": "ambient/ACG/clouds",
+    "types": [
+      "CLOUD"
+    ],
+    "bounds": [
+      11378,
+      -4520,
+      13378,
+      -2520
+    ],
+    "populationCap": 2,
+    "heightRange": [
+      404,
+      544
+    ],
+    "updateHz": 2,
+    "seed": 20610,
+    "visibilityDistance": 2200,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Atmospheric decoration"
+    }
+  },
+  {
+    "id": "ambient/OLT/birds",
+    "types": [
+      "PIGEON",
+      "GULL"
+    ],
+    "bounds": [
+      13207,
+      -2469,
+      13567,
+      -2109
+    ],
+    "populationCap": 4,
+    "heightRange": [
+      133,
+      155
+    ],
+    "updateHz": 15,
+    "seed": 34607,
+    "visibilityDistance": 650,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Modest ambient population over the station district; not a wildlife survey"
+    }
+  },
+  {
+    "id": "ambient/OLT/clouds",
+    "types": [
+      "CLOUD"
+    ],
+    "bounds": [
+      12387,
+      -3289,
+      14387,
+      -1289
+    ],
+    "populationCap": 2,
+    "heightRange": [
+      405,
+      545
+    ],
+    "updateHz": 2,
+    "seed": 21127,
+    "visibilityDistance": 2200,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Atmospheric decoration"
+    }
+  },
+  {
+    "id": "ambient/SOL/birds",
+    "types": [
+      "STARLING",
+      "CROW"
+    ],
+    "bounds": [
+      14272,
+      179,
+      14632,
+      539
+    ],
+    "populationCap": 4,
+    "heightRange": [
+      138,
+      160
+    ],
+    "updateHz": 15,
+    "seed": 35584,
+    "visibilityDistance": 650,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Modest ambient population over the station district; not a wildlife survey"
+    }
+  },
+  {
+    "id": "ambient/SOL/clouds",
+    "types": [
+      "CLOUD"
+    ],
+    "bounds": [
+      13452,
+      -641,
+      15452,
+      1359
+    ],
+    "populationCap": 2,
+    "heightRange": [
+      410,
+      550
+    ],
+    "updateHz": 2,
+    "seed": 21644,
+    "visibilityDistance": 2200,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Atmospheric decoration"
+    }
+  },
+  {
+    "id": "ambient/WMR/birds",
+    "types": [
+      "PIGEON",
+      "STARLING"
+    ],
+    "bounds": [
+      15275,
+      2240,
+      15635,
+      2600
+    ],
+    "populationCap": 4,
+    "heightRange": [
+      134,
+      156
+    ],
+    "updateHz": 15,
+    "seed": 36561,
+    "visibilityDistance": 650,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Modest ambient population over the station district; not a wildlife survey"
+    }
+  },
+  {
+    "id": "ambient/WMR/clouds",
+    "types": [
+      "CLOUD"
+    ],
+    "bounds": [
+      14455,
+      1420,
+      16455,
+      3420
+    ],
+    "populationCap": 2,
+    "heightRange": [
+      406,
+      546
+    ],
+    "updateHz": 2,
+    "seed": 22161,
+    "visibilityDistance": 2200,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Atmospheric decoration"
+    }
+  },
+  {
+    "id": "ambient/DDG/birds",
+    "types": [
+      "CROW",
+      "MAGPIE"
+    ],
+    "bounds": [
+      16733,
+      4932,
+      17093,
+      5292
+    ],
+    "populationCap": 4,
+    "heightRange": [
+      132,
+      154
+    ],
+    "updateHz": 15,
+    "seed": 37538,
+    "visibilityDistance": 650,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Modest ambient population over the station district; not a wildlife survey"
+    }
+  },
+  {
+    "id": "ambient/DDG/clouds",
+    "types": [
+      "CLOUD"
+    ],
+    "bounds": [
+      15913,
+      4112,
+      17913,
+      6112
+    ],
+    "populationCap": 2,
+    "heightRange": [
+      404,
+      544
+    ],
+    "updateHz": 2,
+    "seed": 22678,
+    "visibilityDistance": 2200,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Atmospheric decoration"
+    }
+  },
+  {
+    "id": "ambient/east-birmingham/aircraft",
+    "types": [
+      "PASSENGER_AIRCRAFT",
+      "LIGHT_AIRCRAFT"
+    ],
+    "bounds": [
+      8865,
+      -5194,
+      14565,
+      -2194
+    ],
+    "populationCap": 1,
+    "heightRange": [
+      1000,
+      1250
+    ],
+    "updateHz": 8,
+    "seed": 65281,
+    "visibilityDistance": 2400,
+    "source": {
+      "confidence": "ENGINEERED_INFERENCE",
+      "note": "Occasional distant aircraft; not an airport flight-path model"
+    }
+  }
+]

@@ -1,0 +1,571 @@
+{
+  "schema": 1,
+  "revision": "19fc55c80f54e85ff4a97d2e20d3567a0f9b390bcb1cf4d5cba5e63743113eb8",
+  "scope": "Every authored chunk: source/cache integrity, canonical identities, references, occupancy, finite reconstructed geometry, exact shared construction corners, rendered boundary heights and local vegetation/foundation supports",
+  "chunks": 133,
+  "instances": 744322,
+  "characters": 167,
+  "triangles": 45314729,
+  "distantTriangles": 40556701,
+  "degenerateTriangles": 0,
+  "sharedCorners": 1719005,
+  "sharedMeshVertices": 87845,
+  "maxMeshSeamDifference": 0,
+  "treesChecked": 14502,
+  "foundationsChecked": 41442,
+  "externalSupportQueries": 2967,
+  "sourceExceptions": 13043,
+  "exceptionReasons": {
+    "OUTSIDE_AUTHORED_CORRIDOR": 6463,
+    "SOURCE_RETAINED_WITHOUT_SEPARATE_RENDER_ASSEMBLY": 5374,
+    "unsupported-source-attachment": 889,
+    "mapped access intersects foundation volume; source levels and passage openings require authoring": 77,
+    "retaining foundation exceeds bounded height/dimension/burial limits": 183,
+    "SOURCE_FOOTPRINT_CONFLICTS_WITH_RAIL_CLEARANCE": 19,
+    "SOURCE_FOOTPRINT_CONFLICTS_WITH_ROAD_CLEARANCE": 8,
+    "INVALID_INFERRED_BRIDGE_SUPPORT_OR_LOCATION": 30
+  },
+  "errors": [],
+  "supportFindings": [],
+  "seamFindings": [],
+  "timings": [
+    {
+      "id": "-1_-10",
+      "milliseconds": 1798.993428
+    },
+    {
+      "id": "-1_-7",
+      "milliseconds": 726.1729300000002
+    },
+    {
+      "id": "-1_-8",
+      "milliseconds": 5245.950130000001
+    },
+    {
+      "id": "-1_-9",
+      "milliseconds": 4509.161575
+    },
+    {
+      "id": "-10_-1",
+      "milliseconds": 2911.7764289999996
+    },
+    {
+      "id": "-10_-2",
+      "milliseconds": 2252.2576470000004
+    },
+    {
+      "id": "-10_-3",
+      "milliseconds": 2794.3791180000007
+    },
+    {
+      "id": "-10_-4",
+      "milliseconds": 3485.684085000001
+    },
+    {
+      "id": "-10_-5",
+      "milliseconds": 1783.7696200000028
+    },
+    {
+      "id": "-10_0",
+      "milliseconds": 798.5942359999972
+    },
+    {
+      "id": "-11_-1",
+      "milliseconds": 1248.0899720000016
+    },
+    {
+      "id": "-11_-2",
+      "milliseconds": 521.4429990000026
+    },
+    {
+      "id": "-11_-3",
+      "milliseconds": 424.5096799999992
+    },
+    {
+      "id": "-11_0",
+      "milliseconds": 1616.107684999999
+    },
+    {
+      "id": "-12_-1",
+      "milliseconds": 202.40527000000293
+    },
+    {
+      "id": "-12_0",
+      "milliseconds": 1707.9448939999966
+    },
+    {
+      "id": "-12_1",
+      "milliseconds": 1285.5073179999963
+    },
+    {
+      "id": "-12_2",
+      "milliseconds": 491.26154099999985
+    },
+    {
+      "id": "-13_0",
+      "milliseconds": 839.0000340000042
+    },
+    {
+      "id": "-13_1",
+      "milliseconds": 2105.0176869999996
+    },
+    {
+      "id": "-13_2",
+      "milliseconds": 954.7301860000007
+    },
+    {
+      "id": "-14_1",
+      "milliseconds": 504.7812139999951
+    },
+    {
+      "id": "-14_2",
+      "milliseconds": 1045.3791100000017
+    },
+    {
+      "id": "-14_3",
+      "milliseconds": 488.29680300000473
+    },
+    {
+      "id": "-15_2",
+      "milliseconds": 1131.0942250000007
+    },
+    {
+      "id": "-15_3",
+      "milliseconds": 897.9942859999937
+    },
+    {
+      "id": "-16_2",
+      "milliseconds": 1741.1379589999997
+    },
+    {
+      "id": "-16_3",
+      "milliseconds": 2396.1029469999994
+    },
+    {
+      "id": "-16_4",
+      "milliseconds": 689.4411639999962
+    },
+    {
+      "id": "-16_5",
+      "milliseconds": 399.08750200000213
+    },
+    {
+      "id": "-17_2",
+      "milliseconds": 1244.8810799999992
+    },
+    {
+      "id": "-17_3",
+      "milliseconds": 2880.824765999998
+    },
+    {
+      "id": "-17_4",
+      "milliseconds": 2145.5167070000025
+    },
+    {
+      "id": "-17_5",
+      "milliseconds": 613.1356010000018
+    },
+    {
+      "id": "-17_6",
+      "milliseconds": 368.76928999999654
+    },
+    {
+      "id": "-18_2",
+      "milliseconds": 448.62608300000284
+    },
+    {
+      "id": "-18_3",
+      "milliseconds": 1173.6206310000052
+    },
+    {
+      "id": "-18_4",
+      "milliseconds": 1097.501049999999
+    },
+    {
+      "id": "-18_5",
+      "milliseconds": 708.5318439999974
+    },
+    {
+      "id": "-18_6",
+      "milliseconds": 749.7563410000002
+    },
+    {
+      "id": "-19_3",
+      "milliseconds": 549.053061999999
+    },
+    {
+      "id": "-19_4",
+      "milliseconds": 390.380882999998
+    },
+    {
+      "id": "-19_5",
+      "milliseconds": 500.34431400000176
+    },
+    {
+      "id": "-19_6",
+      "milliseconds": 319.13277599999856
+    },
+    {
+      "id": "-2_-6",
+      "milliseconds": 652.2230420000051
+    },
+    {
+      "id": "-2_-7",
+      "milliseconds": 2884.5865329999942
+    },
+    {
+      "id": "-2_-8",
+      "milliseconds": 3347.374383999995
+    },
+    {
+      "id": "-2_-9",
+      "milliseconds": 634.1522939999995
+    },
+    {
+      "id": "-3_-6",
+      "milliseconds": 1184.1627749999898
+    },
+    {
+      "id": "-3_-7",
+      "milliseconds": 6179.181752000004
+    },
+    {
+      "id": "-3_-8",
+      "milliseconds": 1890.3892979999946
+    },
+    {
+      "id": "-4_-6",
+      "milliseconds": 5872.632715
+    },
+    {
+      "id": "-4_-7",
+      "milliseconds": 2706.0723279999947
+    },
+    {
+      "id": "-5_-6",
+      "milliseconds": 4076.501504
+    },
+    {
+      "id": "-5_-7",
+      "milliseconds": 2973.925906999997
+    },
+    {
+      "id": "-6_-6",
+      "milliseconds": 5311.672175999993
+    },
+    {
+      "id": "-6_-7",
+      "milliseconds": 1919.0547769999976
+    },
+    {
+      "id": "-7_-5",
+      "milliseconds": 1922.9234699999943
+    },
+    {
+      "id": "-7_-6",
+      "milliseconds": 3246.7366230000043
+    },
+    {
+      "id": "-7_-7",
+      "milliseconds": 1183.9802190000046
+    },
+    {
+      "id": "-8_-4",
+      "milliseconds": 586.0454630000022
+    },
+    {
+      "id": "-8_-5",
+      "milliseconds": 3089.061375000005
+    },
+    {
+      "id": "-8_-6",
+      "milliseconds": 1620.9972080000007
+    },
+    {
+      "id": "-9_-2",
+      "milliseconds": 550.0268890000007
+    },
+    {
+      "id": "-9_-3",
+      "milliseconds": 1499.0207519999967
+    },
+    {
+      "id": "-9_-4",
+      "milliseconds": 2426.959594
+    },
+    {
+      "id": "-9_-5",
+      "milliseconds": 2394.67263500001
+    },
+    {
+      "id": "-9_-6",
+      "milliseconds": 971.1628389999969
+    },
+    {
+      "id": "0_-10",
+      "milliseconds": 4546.932683999999
+    },
+    {
+      "id": "0_-8",
+      "milliseconds": 1173.6368220000004
+    },
+    {
+      "id": "0_-9",
+      "milliseconds": 2597.5686459999997
+    },
+    {
+      "id": "1_-10",
+      "milliseconds": 3923.2877429999935
+    },
+    {
+      "id": "1_-11",
+      "milliseconds": 1796.6794309999968
+    },
+    {
+      "id": "1_-9",
+      "milliseconds": 1098.446380999987
+    },
+    {
+      "id": "10_-4",
+      "milliseconds": 1630.9414870000037
+    },
+    {
+      "id": "10_-5",
+      "milliseconds": 5002.408119
+    },
+    {
+      "id": "10_-6",
+      "milliseconds": 1500.922185000003
+    },
+    {
+      "id": "11_-4",
+      "milliseconds": 3094.9482379999827
+    },
+    {
+      "id": "11_-5",
+      "milliseconds": 1997.9243739999947
+    },
+    {
+      "id": "12_-2",
+      "milliseconds": 714.495018000016
+    },
+    {
+      "id": "12_-3",
+      "milliseconds": 1514.4595839999965
+    },
+    {
+      "id": "12_-4",
+      "milliseconds": 4281.021422999998
+    },
+    {
+      "id": "12_-5",
+      "milliseconds": 1170.4608850000077
+    },
+    {
+      "id": "13_-1",
+      "milliseconds": 3303.700401000009
+    },
+    {
+      "id": "13_-2",
+      "milliseconds": 3255.340736000013
+    },
+    {
+      "id": "13_-3",
+      "milliseconds": 3283.094419000001
+    },
+    {
+      "id": "13_-4",
+      "milliseconds": 1488.7866240000003
+    },
+    {
+      "id": "13_0",
+      "milliseconds": 1217.4144110000052
+    },
+    {
+      "id": "14_-1",
+      "milliseconds": 1477.810958999995
+    },
+    {
+      "id": "14_-2",
+      "milliseconds": 1044.3390690000087
+    },
+    {
+      "id": "14_-3",
+      "milliseconds": 446.50428699998884
+    },
+    {
+      "id": "14_0",
+      "milliseconds": 4207.878985999996
+    },
+    {
+      "id": "14_1",
+      "milliseconds": 1885.946855999995
+    },
+    {
+      "id": "14_2",
+      "milliseconds": 1205.0472740000114
+    },
+    {
+      "id": "14_3",
+      "milliseconds": 432.4392269999953
+    },
+    {
+      "id": "15_0",
+      "milliseconds": 2181.1870969999873
+    },
+    {
+      "id": "15_1",
+      "milliseconds": 3603.9941079999844
+    },
+    {
+      "id": "15_2",
+      "milliseconds": 3897.314830999996
+    },
+    {
+      "id": "15_3",
+      "milliseconds": 2304.1880919999967
+    },
+    {
+      "id": "15_4",
+      "milliseconds": 963.2077340000251
+    },
+    {
+      "id": "16_1",
+      "milliseconds": 618.1204429999925
+    },
+    {
+      "id": "16_2",
+      "milliseconds": 1026.57965900001
+    },
+    {
+      "id": "16_3",
+      "milliseconds": 2768.0543130000005
+    },
+    {
+      "id": "16_4",
+      "milliseconds": 8116.48938699998
+    },
+    {
+      "id": "16_5",
+      "milliseconds": 2175.3218089999864
+    },
+    {
+      "id": "17_4",
+      "milliseconds": 1132.7808879999793
+    },
+    {
+      "id": "17_5",
+      "milliseconds": 1146.5150509999949
+    },
+    {
+      "id": "2_-10",
+      "milliseconds": 2460.5422870000184
+    },
+    {
+      "id": "2_-11",
+      "milliseconds": 1502.894724999991
+    },
+    {
+      "id": "2_-9",
+      "milliseconds": 906.7987149999826
+    },
+    {
+      "id": "3_-10",
+      "milliseconds": 2882.3936680000043
+    },
+    {
+      "id": "3_-11",
+      "milliseconds": 393.2018359999929
+    },
+    {
+      "id": "3_-9",
+      "milliseconds": 1052.3870060000045
+    },
+    {
+      "id": "4_-10",
+      "milliseconds": 1809.4087909999944
+    },
+    {
+      "id": "4_-8",
+      "milliseconds": 339.74082700000145
+    },
+    {
+      "id": "4_-9",
+      "milliseconds": 3027.830304000003
+    },
+    {
+      "id": "5_-10",
+      "milliseconds": 841.4854409999971
+    },
+    {
+      "id": "5_-8",
+      "milliseconds": 2153.491272000014
+    },
+    {
+      "id": "5_-9",
+      "milliseconds": 2825.2030220000015
+    },
+    {
+      "id": "6_-7",
+      "milliseconds": 2110.145027999999
+    },
+    {
+      "id": "6_-8",
+      "milliseconds": 5623.4472790000145
+    },
+    {
+      "id": "6_-9",
+      "milliseconds": 2790.4238680000126
+    },
+    {
+      "id": "7_-6",
+      "milliseconds": 1168.8657050000038
+    },
+    {
+      "id": "7_-7",
+      "milliseconds": 4600.574527999997
+    },
+    {
+      "id": "7_-8",
+      "milliseconds": 3056.6819280000054
+    },
+    {
+      "id": "7_-9",
+      "milliseconds": 588.2657219999819
+    },
+    {
+      "id": "8_-5",
+      "milliseconds": 650.9893170000287
+    },
+    {
+      "id": "8_-6",
+      "milliseconds": 3012.038679999998
+    },
+    {
+      "id": "8_-7",
+      "milliseconds": 3416.705293999985
+    },
+    {
+      "id": "8_-8",
+      "milliseconds": 566.3904379999731
+    },
+    {
+      "id": "9_-5",
+      "milliseconds": 2399.051249000011
+    },
+    {
+      "id": "9_-6",
+      "milliseconds": 3488.3856189999497
+    },
+    {
+      "id": "9_-7",
+      "milliseconds": 744.5021769999876
+    }
+  ],
+  "externalSupportResolved": 2967,
+  "unsupportedSourceExtents": [],
+  "prefabs": 180757,
+  "geometries": 165540,
+  "status": "IMPLEMENTED_AND_VERIFIED",
+  "physicalAcceptance": "IMPLEMENTED_AND_VERIFIED"
+}

@@ -10,14 +10,16 @@
     "test": "node --test --test-concurrency=3 tests/*.test.js",
     "validate": "node scripts/validate-world.js",
     "preview": "vite preview --host 0.0.0.0",
-    "build:site": "npm run check && vite build --outDir site && node scripts/site-manifest.mjs --write",
+    "build:site": "npm run check && npm run check:world && vite build --outDir site && node scripts/site-manifest.mjs --write",
     "verify:site": "node scripts/site-manifest.mjs --check",
     "audit:geometry": "node --expose-gc scripts/audit-geometry.js",
-    "diagnose:world": "node scripts/diagnose-grid-world.js",
+    "diagnose:world": "node scripts/diagnose-grid-world.js && node scripts/diagnose-transport-profiles.js && node --expose-gc scripts/diagnose-authored-world.js && node scripts/diagnose-asset-coverage.js",
     "build:qa": "npm run check && vite build --mode qa --outDir work/qa-dist",
     "build:world": "node scripts/build-grid-world.js",
     "author:prefabs": "node scripts/index-prefab-scene.js",
-    "diagnose:prefabs": "node scripts/diagnose-prefab-scene.js"
+    "diagnose:prefabs": "node scripts/diagnose-prefab-scene.js",
+    "cache:world": "node scripts/cache-authored-world.js --write",
+    "check:world": "node scripts/cache-authored-world.js --check"
   },
   "dependencies": {
     "three": "0.187.0"

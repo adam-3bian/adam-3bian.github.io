@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "sharedVertices": 78758,
+  "correctedVertices": 2719,
+  "rule": "Canonical lower integer tick at coincident stored boundary vertices; no runtime terrain solver",
+  "maximumAdjustmentTicks": 1
+}

@@ -1,0 +1,451 @@
+{
+  "schema": 1,
+  "stations": [
+    {
+      "id": "LGG",
+      "chunk": "-1_-9",
+      "canopySections": 8,
+      "geometryStatus": "IMPLEMENTED_UNVERIFIED",
+      "recognitionStatus": "IMPLEMENTED_UNVERIFIED",
+      "references": [
+        {
+          "file": "references/by-location/langley-green/langley-green-original-0322.jpg",
+          "date": null,
+          "source": "supplied reference; capture date unknown"
+        },
+        {
+          "file": "references/by-location/langley-green/langley-green-original-0323.jpg",
+          "date": null,
+          "source": "supplied reference; capture date unknown"
+        }
+      ],
+      "removedGenericComponents": 232,
+      "browserEvidence": "validation/authored/browser-stations.json",
+      "recognition": "BLOCKED: independent reviewers unavailable"
+    },
+    {
+      "id": "HAG",
+      "chunk": "-10_-1",
+      "canopySections": 26,
+      "geometryStatus": "IMPLEMENTED_UNVERIFIED",
+      "recognitionStatus": "IMPLEMENTED_UNVERIFIED",
+      "references": [
+        {
+          "file": "references/by-location/hagley/hagley-brake-lane-arch-original-0137.jpg",
+          "date": null,
+          "source": "supplied reference; capture date unknown"
+        },
+        {
+          "file": "references/by-location/hagley/hagley-original-0136.jpg",
+          "date": null,
+          "source": "supplied reference; capture date unknown"
+        }
+      ],
+      "removedGenericComponents": 26,
+      "browserEvidence": "validation/authored/browser-stations.json",
+      "recognition": "BLOCKED: independent reviewers unavailable"
+    },
+    {
+      "id": "SBJ",
+      "chunk": "-10_-4",
+      "canopySections": 6,
+      "geometryStatus": "IMPLEMENTED_UNVERIFIED",
+      "recognitionStatus": "IMPLEMENTED_UNVERIFIED",
+      "references": [
+        {
+          "file": "references/by-location/stourbridge-junction/stourbridge-junction-original-0190.jpg",
+          "date": null,
+          "source": "supplied reference; capture date unknown"
+        },
+        {
+          "file": "references/by-location/stourbridge-junction/stourbridge-junction-original-0187.jpg",
+          "date": null,
+          "source": "supplied reference; capture date unknown"
+        }
+      ],
+      "browserEvidence": "validation/authored/browser-stations.json",
+      "recognition": "BLOCKED: independent reviewers unavailable"
+    },
+    {
+      "id": "BKD",
+      "chunk": "-12_1",
+      "canopySections": 8,
+      "geometryStatus": "IMPLEMENTED_UNVERIFIED",
+      "recognitionStatus": "IMPLEMENTED_UNVERIFIED",
+      "references": [
+        {
+          "file": "references/by-location/blakedown/blakedown-original-0089.jpg",
+          "date": null,
+          "source": "supplied reference; capture date unknown"
+        },
+        {
+          "file": "references/by-location/blakedown/blakedown-original-0094.jpg",
+          "date": null,
+          "source": "supplied reference; capture date unknown"
+        }
+      ],
+      "removedGenericComponents": 228,
+      "browserEvidence": "validation/authored/browser-stations.json",
+      "recognition": "BLOCKED: independent reviewers unavailable"
+    },
+    {
+      "id": "KID",
+      "chunk": "-17_3",
+      "canopySections": 6,
+      "geometryStatus": "IMPLEMENTED_UNVERIFIED",
+      "recognitionStatus": "IMPLEMENTED_UNVERIFIED",
+      "references": [
+        {
+          "file": "references/by-location/kidderminster/kidderminster-original-0026.jpg",
+          "date": null,
+          "source": "supplied reference; capture date unknown"
+        },
+        {
+          "file": "references/by-location/kidderminster/kidderminster-original-0017.jpg",
+          "date": null,
+          "source": "supplied reference; capture date unknown"
+        }
+      ],
+      "browserEvidence": "validation/authored/browser-stations.json",
+      "recognition": "BLOCKED: independent reviewers unavailable"
+    },
+    {
+      "id": "ROW",
+      "chunk": "-2_-7",
+      "canopySections": 34,
+      "geometryStatus": "IMPLEMENTED_UNVERIFIED",
+      "recognitionStatus": "IMPLEMENTED_UNVERIFIED",
+      "references": [
+        {
+          "file": "references/by-location/rowley-regis/rowley-regis-original-0295.jpg",
+          "date": null,
+          "source": "supplied reference; capture date unknown"
+        },
+        {
+          "file": "references/by-location/rowley-regis/rowley-regis-original-0294.jpg",
+          "date": null,
+          "source": "supplied reference; capture date unknown"
+        }
+      ],
+      "removedGenericComponents": 34,
+      "browserEvidence": "validation/authored/browser-stations.json",
+      "recognition": "BLOCKED: independent reviewers unavailable"
+    },
+    {
+      "id": "OHL",
+      "chunk": "-4_-6",
+      "canopySections": 8,
+      "geometryStatus": "IMPLEMENTED_UNVERIFIED",
+      "recognitionStatus": "IMPLEMENTED_UNVERIFIED",
+      "references": [
+        {
+          "file": "references/by-location/old-hill/old-hill-original-0272.jpg",
+          "date": null,
+          "source": "supplied reference; capture date unknown"
+        },
+        {
+          "file": "references/by-location/old-hill/old-hill-original-0273.jpg",
+          "date": null,
+          "source": "supplied reference; capture date unknown"
+        }
+      ],
+      "removedGenericComponents": 232,
+      "browserEvidence": "validation/authored/browser-stations.json",
+      "recognition": "BLOCKED: independent reviewers unavailable"
+    },
+    {
+      "id": "CRA",
+      "chunk": "-7_-6",
+      "canopySections": 8,
+      "geometryStatus": "IMPLEMENTED_UNVERIFIED",
+      "recognitionStatus": "IMPLEMENTED_UNVERIFIED",
+      "references": [
+        {
+          "file": "references/by-location/cradley-heath/cradley-heath-original-0248.jpg",
+          "date": null,
+          "source": "supplied reference; capture date unknown"
+        },
+        {
+          "file": "references/by-location/cradley-heath/cradley-heath-original-0246.jpg",
+          "date": null,
+          "source": "supplied reference; capture date unknown"
+        }
+      ],
+      "removedGenericComponents": 232,
+      "browserEvidence": "validation/authored/browser-stations.json",
+      "recognition": "BLOCKED: independent reviewers unavailable"
+    },
+    {
+      "id": "LYE",
+      "chunk": "-8_-5",
+      "canopySections": 8,
+      "geometryStatus": "IMPLEMENTED_UNVERIFIED",
+      "recognitionStatus": "IMPLEMENTED_UNVERIFIED",
+      "references": [
+        {
+          "file": "references/by-location/lye/lye-original-0229.jpg",
+          "date": null,
+          "source": "supplied reference; capture date unknown"
+        },
+        {
+          "file": "references/by-location/lye/lye-original-0230.jpg",
+          "date": null,
+          "source": "supplied reference; capture date unknown"
+        }
+      ],
+      "removedGenericComponents": 232,
+      "browserEvidence": "validation/authored/browser-stations.json",
+      "recognition": "BLOCKED: independent reviewers unavailable"
+    },
+    {
+      "id": "SGB",
+      "chunk": "1_-10",
+      "canopySections": 13,
+      "geometryStatus": "IMPLEMENTED_UNVERIFIED",
+      "recognitionStatus": "IMPLEMENTED_UNVERIFIED",
+      "references": [
+        {
+          "file": "references/by-location/smethwick-galton-bridge/smethwick-galton-bridge-original-0345.jpg",
+          "date": null,
+          "source": "supplied reference; capture date unknown"
+        },
+        {
+          "file": "references/by-location/smethwick-galton-bridge/smethwick-galton-bridge-original-0347.jpg",
+          "date": null,
+          "source": "supplied reference; capture date unknown"
+        }
+      ],
+      "browserEvidence": "validation/authored/browser-stations.json",
+      "recognition": "BLOCKED: independent reviewers unavailable"
+    },
+    {
+      "id": "TYS",
+      "chunk": "11_-5",
+      "canopySections": 6,
+      "geometryStatus": "IMPLEMENTED_UNVERIFIED",
+      "recognitionStatus": "IMPLEMENTED_UNVERIFIED",
+      "references": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Tyseley_railway_station,_geograph-3340470-by-Nigel-Thompson.jpg",
+          "date": "2011-10-07",
+          "author": "Nigel Thompson",
+          "license": "CC BY-SA 2.0"
+        }
+      ],
+      "browserEvidence": "validation/authored/browser-stations.json",
+      "recognition": "BLOCKED: independent reviewers unavailable"
+    },
+    {
+      "id": "ACG",
+      "chunk": "12_-4",
+      "canopySections": 4,
+      "geometryStatus": "IMPLEMENTED_UNVERIFIED",
+      "recognitionStatus": "IMPLEMENTED_UNVERIFIED",
+      "references": [
+        {
+          "url": "https://www.geograph.org.uk/photo/3411490",
+          "date": "2013",
+          "author": "Stephen McKay",
+          "license": "CC BY-SA 2.0"
+        }
+      ],
+      "browserEvidence": "validation/authored/browser-stations.json",
+      "recognition": "BLOCKED: independent reviewers unavailable"
+    },
+    {
+      "id": "OLT",
+      "chunk": "13_-3",
+      "canopySections": 10,
+      "geometryStatus": "IMPLEMENTED_UNVERIFIED",
+      "recognitionStatus": "IMPLEMENTED_UNVERIFIED",
+      "references": [
+        {
+          "file": "references/by-location/olton/olton-original-0511.jpg",
+          "date": null,
+          "source": "supplied reference; capture date unknown"
+        },
+        {
+          "file": "references/by-location/olton/olton-original-0512.jpg",
+          "date": null,
+          "source": "supplied reference; capture date unknown"
+        }
+      ],
+      "browserEvidence": "validation/authored/browser-stations.json",
+      "recognition": "BLOCKED: independent reviewers unavailable"
+    },
+    {
+      "id": "SOL",
+      "chunk": "14_0",
+      "canopySections": 6,
+      "geometryStatus": "IMPLEMENTED_UNVERIFIED",
+      "recognitionStatus": "IMPLEMENTED_UNVERIFIED",
+      "references": [
+        {
+          "file": "references/by-location/solihull/solihull-original-0547.jpg",
+          "date": null,
+          "source": "supplied reference; capture date unknown"
+        },
+        {
+          "file": "references/by-location/solihull/solihull-original-0541.jpg",
+          "date": null,
+          "source": "supplied reference; capture date unknown"
+        }
+      ],
+      "browserEvidence": "validation/authored/browser-stations.json",
+      "recognition": "BLOCKED: independent reviewers unavailable"
+    },
+    {
+      "id": "WMR",
+      "chunk": "15_2",
+      "canopySections": 8,
+      "geometryStatus": "IMPLEMENTED_UNVERIFIED",
+      "recognitionStatus": "IMPLEMENTED_UNVERIFIED",
+      "references": [
+        {
+          "url": "https://www.railaroundbirmingham.co.uk/Stations/widney_manor.php",
+          "date": null
+        }
+      ],
+      "browserEvidence": "validation/authored/browser-stations.json",
+      "recognition": "BLOCKED: independent reviewers unavailable"
+    },
+    {
+      "id": "DDG",
+      "chunk": "16_5",
+      "canopySections": 5,
+      "geometryStatus": "IMPLEMENTED_UNVERIFIED",
+      "recognitionStatus": "IMPLEMENTED_UNVERIFIED",
+      "references": [
+        {
+          "url": "https://www.geograph.org.uk/photo/4675223",
+          "date": "2014-09-22",
+          "author": "Tiger",
+          "license": "CC BY-SA 2.0"
+        }
+      ],
+      "browserEvidence": "validation/authored/browser-stations.json",
+      "recognition": "BLOCKED: independent reviewers unavailable"
+    },
+    {
+      "id": "THW",
+      "chunk": "2_-10",
+      "canopySections": 4,
+      "geometryStatus": "IMPLEMENTED_UNVERIFIED",
+      "recognitionStatus": "IMPLEMENTED_UNVERIFIED",
+      "references": [
+        {
+          "file": "references/by-location/the-hawthorns/the-hawthorns-original-0360.jpg",
+          "date": null,
+          "source": "supplied reference; capture date unknown"
+        },
+        {
+          "file": "references/by-location/the-hawthorns/the-hawthorns-original-0361.jpg",
+          "date": null,
+          "source": "supplied reference; capture date unknown"
+        }
+      ],
+      "browserEvidence": "validation/authored/browser-stations.json",
+      "recognition": "BLOCKED: independent reviewers unavailable"
+    },
+    {
+      "id": "JEQ",
+      "chunk": "5_-8",
+      "canopySections": 4,
+      "geometryStatus": "IMPLEMENTED_UNVERIFIED",
+      "recognitionStatus": "IMPLEMENTED_UNVERIFIED",
+      "references": [
+        {
+          "file": "references/by-location/jewellery-quarter/jewellery-quarter-original-0398.jpg",
+          "date": null,
+          "source": "supplied reference; capture date unknown"
+        },
+        {
+          "file": "references/by-location/jewellery-quarter/jewellery-quarter-original-0397.jpg",
+          "date": null,
+          "source": "supplied reference; capture date unknown"
+        }
+      ],
+      "browserEvidence": "validation/authored/browser-stations.json",
+      "recognition": "BLOCKED: independent reviewers unavailable"
+    },
+    {
+      "id": "BSW",
+      "chunk": "6_-8",
+      "canopySections": 7,
+      "geometryStatus": "IMPLEMENTED_UNVERIFIED",
+      "recognitionStatus": "IMPLEMENTED_UNVERIFIED",
+      "references": [
+        {
+          "file": "references/by-location/birmingham-snow-hill/birmingham-snow-hill-original-0429.jpg",
+          "date": null,
+          "source": "supplied reference; capture date unknown"
+        },
+        {
+          "file": "references/by-location/birmingham-snow-hill/birmingham-snow-hill-original-0428.jpg",
+          "date": null,
+          "source": "supplied reference; capture date unknown"
+        }
+      ],
+      "browserEvidence": "validation/authored/browser-stations.json",
+      "recognition": "BLOCKED: independent reviewers unavailable"
+    },
+    {
+      "id": "BMO",
+      "chunk": "7_-7",
+      "canopySections": 8,
+      "geometryStatus": "IMPLEMENTED_UNVERIFIED",
+      "recognitionStatus": "IMPLEMENTED_UNVERIFIED",
+      "references": [
+        {
+          "file": "references/by-location/birmingham-moor-street/birmingham-moor-street-original-0452.jpg",
+          "date": null,
+          "source": "supplied reference; capture date unknown"
+        },
+        {
+          "file": "references/by-location/birmingham-moor-street/birmingham-moor-street-original-0449.jpg",
+          "date": null,
+          "source": "supplied reference; capture date unknown"
+        }
+      ],
+      "browserEvidence": "validation/authored/browser-stations.json",
+      "recognition": "BLOCKED: independent reviewers unavailable"
+    },
+    {
+      "id": "BBS",
+      "chunk": "8_-7",
+      "canopySections": 4,
+      "geometryStatus": "IMPLEMENTED_UNVERIFIED",
+      "recognitionStatus": "IMPLEMENTED_UNVERIFIED",
+      "references": [
+        {
+          "url": "https://www.railaroundbirmingham.co.uk/Stations/bordesley.php",
+          "date": null
+        }
+      ],
+      "browserEvidence": "validation/authored/browser-stations.json",
+      "recognition": "BLOCKED: independent reviewers unavailable"
+    },
+    {
+      "id": "SMA",
+      "chunk": "9_-6",
+      "canopySections": 8,
+      "geometryStatus": "IMPLEMENTED_UNVERIFIED",
+      "recognitionStatus": "IMPLEMENTED_UNVERIFIED",
+      "references": [
+        {
+          "file": "references/by-location/small-heath/small-heath-original-0488.jpg",
+          "date": null,
+          "source": "supplied reference; capture date unknown"
+        },
+        {
+          "file": "references/by-location/small-heath/small-heath-original-0487.jpg",
+          "date": null,
+          "source": "supplied reference; capture date unknown"
+        }
+      ],
+      "browserEvidence": "validation/authored/browser-stations.json",
+      "recognition": "BLOCKED: independent reviewers unavailable"
+    }
+  ],
+  "blindRecognition": "BLOCKED: independent reviewers are not available in this execution environment"
+}

@@ -1,0 +1,13 @@
+✔ compatible world 75d16f99 resumes and the original save remains backed up (12875.397225ms)
+✔ compatible world 5ceb8ffc resumes and the original save remains backed up (16918.459229ms)
+✔ unknown or changed layouts cannot be silently migrated (1112.728048ms)
+✔ route resources stay inside a static site at the root or in a nested folder (0.937395ms)
+✔ existing saves keep their world identity only while hosting-only sources and data match (3665.039287ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 35005.867566

@@ -1,4 +1,7 @@
 import * as THREE from 'three';
+import {makeCat} from './cats.js';
+import {batchRigidParts} from './rigid-batch.js';
+import {britishRoadVehicle} from './british-vehicles.js';
 const C = {
     steel: 0x666b69, dark: 0x242d2e, rail: 0x9ca3a1, sleeper: 0x665c4f,
     brick: 0x9d5c45, brown: 0x785449, cream: 0xe8dcc1, stone: 0xb3aaa0,
@@ -49,6 +52,8 @@ function seedRandom(seed) {
     return () => { n = Math.imul(n ^ n >>> 15, 1 | n); n ^= n + Math.imul(n ^ n >>> 7, 61 | n); return ((n ^ n >>> 14) >>> 0) / 4294967296; };
 }
 function finish(group, family, config, supports = [[0, 0, 0]]) {
+    if(family==='road-vehicle')batchRigidParts(group,`road/${config.kind}/${config.color}/${(config.seed??1)%5}`,new Set(group.children.filter(n=>n.userData.geometricLettering)));
+    if(family==='rolling-stock')for(const [index,car] of group.userData.cars.entries())batchRigidParts(car,`train/${config.kind}/${group.userData.cars.length}/${index}`,new Set([...group.userData.doors,...group.userData.frontLights,...group.userData.rearLights]));
     group.updateMatrixWorld(true);
     const bounds = new THREE.Box3().setFromObject(group);
     const rootId = String(config.id ?? `${family}/prototype/${config.seed ?? 1}`);
@@ -524,72 +529,9 @@ export class AssetFactory {
         return finish(g, 'tunnel', config, [[-w / 2, 0, 0], [w / 2, 0, 0]]);
     }
     roadVehicle(config = {}) {
-        const g = new THREE.Group(), kind = String(config.kind ?? 'car').toLowerCase(), bus = /bus|coach/.test(kind), lorry = /lorry|truck|hgv/.test(kind), van = kind === 'van';
-        if (lorry) {
-            const color = config.color ?? 0xd2d0bf;
-            box(g, C.dark, 0, .59, 0, 2.05, .32, 9.8);
-            box(g, color, 0, 1.72, -3.64, 2.42, 2.02, 2.72);
-            box(g, C.roof, 0, 2.82, -3.64, 2.44, .20, 2.74);
-            box(g, 0xc6c8be, 0, 2.11, 1.2, 2.45, 2.7, 7.4);
-            box(g, C.steel, 0, .76, 1.2, 2.5, .16, 7.5);
-            box(g, C.glass, 0, 2.20, -5.018, 2.08, .90, .045);
-            box(g, C.dark, 0, 1.21, -5.025, 1.6, .34, .06);
-            for (const side of [-1, 1]) {
-                box(g, C.glass, side * 1.225, 2.18, -3.7, .035, .87, 1.9);
-                box(g, C.dark, side * 1.43, 2.12, -4.75, .15, .28, .14);
-                box(g, 0xece6c8, side * .87, 1.03, -5.04, .34, .22, .045, true);
-                box(g, 0xc44b43, side * .94, .92, 4.94, .28, .18, .04, true);
-                box(g, C.steel, side * .59, 2.08, 4.915, 1.14, 2.42, .025);
-                box(g, C.dark, side * .10, 1.9, 4.94, .045, .75, .035);
-            }
-            for (const z of [-3.60, 2.85, 4.02])
-                for (const x of [-1.10, 1.10]) {
-                    const wheel = cylinder(g, C.black, x, .48, z, .48, .28);
-                    wheel.rotation.z = Math.PI / 2;
-                    const hub = cylinder(g, C.steel, x * 1.02, .48, z, .24, .29);
-                    hub.rotation.z = Math.PI / 2;
-                }
-            box(g, C.steel, 0, .63, -5.05, 2.46, .24, .22);
-            box(g, C.yellow, 0, .94, 4.94, .45, .14, .035);
-            const result = finish(g, 'road-vehicle', { ...config, kind: 'rigid-lorry' });
-            const b = result.userData.bounds;
-            result.userData.vehicleDimensions = { length: b.max[2] - b.min[2], width: b.max[0] - b.min[0], height: b.max[1] };
-            return result;
-        }
-        const length = bus ? 10.8 : lorry ? 10 : van ? 5.4 : 4.5, width = bus || lorry ? 2.45 : 1.8, height = bus ? 3.05 : lorry ? 3.5 : van ? 2.5 : 1.55;
-        const color = config.color ?? [0xa45848, 0x67808b, 0xb5b7a9, 0xeee9dc, 0x414b51][(config.seed ?? 1) % 5];
-        box(g, C.dark, 0, .45, 0, width * .86, .25, length * .85);
-        box(g, color, 0, height * .48 + .17, 0, width, height * .55, length);
-        box(g, color, 0, height * .8, lorry ? 1.5 : .15, width * .92, height * .4, length * (lorry ? .7 : .7));
-        if (lorry)
-            box(g, 0xc8c7b9, 0, 2.25, 1.2, 2.42, 2.6, 6.9);
-        const upperZ = lorry ? 1.5 : .15;
-        box(g, C.glass, 0, height * .82, upperZ - length * .35 - .025, width * .85, height * .29, .05);
-        box(g, C.glass, 0, height * .82, upperZ + length * .35 + .025, width * .85, height * .25, .05);
-        for (const side of [-1, 1])
-            for (let i = 0; i < (bus ? 6 : lorry ? 1 : 2); i++)
-                box(g, C.glass, side * (width * .46 + .012), height * .8, -length * .29 + i * length * (bus ? .12 : .31), .035, height * .29, length * (bus ? .09 : .23));
-        const radius = bus || lorry ? .43 : .32;
-        for (const x of [-width * .46, width * .46])
-            for (const z of [-length * .32, length * .32]) {
-                const wheel = cylinder(g, C.black, x, radius, z, radius, .22);
-                wheel.rotation.z = Math.PI / 2;
-                const hub = cylinder(g, C.steel, x * 1.02, radius, z, radius * .5, .24);
-                hub.rotation.z = Math.PI / 2;
-            }
-        for (const side of [-1, 1]) {
-            box(g, 0xf5ecd0, side * width * .31, .70, -length / 2 - .015, .30, .17, .035, true);
-            box(g, 0xc94a3f, side * width * .31, .70, length / 2 + .015, .26, .17, .035, true);
-        }
-        if (kind === 'taxi') {
-            box(g, 0xe6d9a8, 0, height + .12, .05, .60, .20, .28);
-            const text = geometricText('TAXI', .12, C.black);
-            text.position.set(0, height + .055, -.097);
-            text.rotation.y = Math.PI;
-            g.add(text);
-        }
-        g.userData.vehicleDimensions = { length, width, height };
-        return finish(g, 'road-vehicle', config, [[-width * .46, 0, -length * .32], [width * .46, 0, length * .32]]);
+        const model=britishRoadVehicle(config),d=model.userData.vehicleDimensions;
+        if(model.userData.variant==='TAXI'){const text=geometricText('TAXI',.09,C.black);text.position.set(0,d.height+.015,-.067);text.rotation.y=Math.PI;model.add(text);}
+        return finish(model,'road-vehicle',{...config,kind:model.userData.variant},[[-d.width*.46,0,-d.length*.32],[d.width*.46,0,d.length*.32]]);
     }
     train(config = { kind: '172' }) {
         const g = new THREE.Group(), kind = String(config.kind ?? '172'), shuttle = kind === '139', tram = kind === 'metro', emu = kind === 'emu', heritage = kind === 'heritage';
@@ -602,7 +544,8 @@ export class AssetFactory {
             g.add(c);
             cars.push(c);
             box(c, C.dark, 0, .77, 0, width * .75, .65, length * .91);
-            box(c, color, 0, 2.28, 0, width, 2.45, length - .35);
+            const section=new THREE.Shape();section.moveTo(-width/2,1.055);section.lineTo(-width/2,3.04);section.lineTo(-width*.40,3.50);section.lineTo(width*.40,3.50);section.lineTo(width/2,3.04);section.lineTo(width/2,1.055);section.closePath();
+            const shell=new THREE.ExtrudeGeometry(section,{depth:length-.35,bevelEnabled:false,steps:1});shell.translate(0,0,-(length-.35)/2);const body=new THREE.Mesh(shell,mat(color));c.add(body);
             box(c, heritage ? C.brown : C.purple, 0, 1.14, 0, width + .02, .35, length - .3);
             box(c, kind === '172' ? C.orange : tram ? 0x9c477b : emu ? 0x35597a : heritage ? C.cream : 0x38516c, 0, 1.50, 0, width + .025, .23, length - .35);
             box(c, C.roof, 0, 3.61, 0, width * .92, .27, length - .7);
@@ -618,9 +561,9 @@ export class AssetFactory {
                 for (let i = 0; i < (shuttle ? 4 : 8); i++)
                     box(c, C.glass, side * (width / 2 + .012), 2.65, -length * .36 + i * length * (shuttle ? .23 : .105), .04, .88, shuttle ? 1.15 : 1.55);
                 for (const z of [-length * .33, length * .33]) {
-                    const door = box(c, kind === '172' ? C.purple : C.steel, side * (width / 2 + .035), 2.16, z, .045, 2.05, 1.15);
-                    doors.push(door);
-                    box(c, C.glass, side * (width / 2 + .065), 2.68, z, .035, .75, .80);
+                    const door=new THREE.Group();door.position.z=z;door.userData.closedZ=z;c.add(door);doors.push(door);
+                    box(door, kind === '172' ? C.purple : C.steel, side * (width / 2 + .035), 2.16, 0, .045, 2.05, 1.15);
+                    box(door, C.glass, side * (width / 2 + .065), 2.68, 0, .035, .75, .80);
                 }
             }
             for (const side of [-1, 1]) {
@@ -629,8 +572,10 @@ export class AssetFactory {
             }
             for (const side of [-1, 1]) {
                 const isCab = (car === 0 && side === -1) || (car === count - 1 && side === 1);
-                box(c, isCab ? (tram ? 0xc5c9c5 : C.yellow) : C.dark, 0, 2.10, side * (length / 2 - .1), width * .91, 2.52, .16);
-                box(c, C.glass, 0, 2.95, side * (length / 2 - .026), width * .80, .77, .045);
+                const front=box(c,isCab?(tram?0xc5c9c5:C.yellow):C.dark,0,2.10,side*(length/2-.18),width*.91,2.52,.32);
+                if(isCab&&!shuttle){front.geometry=BOX.clone();const p=front.geometry.getAttribute('position');for(let i=0;i<p.count;i++)if(p.getY(i)>0)p.setZ(i,p.getZ(i)-side*.8);front.geometry.computeVertexNormals();}
+                const windscreen=box(c,C.glass,0,2.95,side*(length/2-.20),width*(kind==='168'?.84:tram?.86:.75),.77,.045);if(isCab&&!shuttle)windscreen.rotation.x=-side*.12;
+                if(isCab&&kind==='172'){box(c,C.dark,0,2.1,side*(length/2-.04),.70,2.15,.06);box(c,0xb6b6a7,0,3.18,side*(length/2-.075),.80,.12,.10);for(const x of [-.38,.38])box(c,0xb6b6a7,x,2.13,side*(length/2-.075),.06,2.0,.08);box(c,C.glass,0,2.68,side*(length/2-.005),.40,.65,.01);}
                 if (isCab)
                     for (const x of [-.88, .88]) {
                         const light = box(c, side === -1 ? 0xf6efc9 : 0xe95b4b, x, 1.75, side * (length / 2 - .031), .22, .22, .05, true);
@@ -638,6 +583,7 @@ export class AssetFactory {
                     }
             }
             box(c, C.steel, 0, 3.86, 0, width * .54, .26, 2.3);
+            if(shuttle)c.scale.y=3.25/3.99;
             if ((tram || emu) && car === Math.min(1, count - 1)) {
                 box(c, C.dark, 0, 4.03, 0, 1.2, .15, 1.75);
                 for (const x of [-.4, .4]) {
@@ -714,6 +660,7 @@ export class AssetFactory {
         return finish(g, 'level-crossing', config);
     }
     furniture(kind, config = {}) {
+        if (kind === 'person' || kind === 'staff') return makeCat({...config,role:config.role || (kind==='staff'?'PLATFORM_DISPATCHER':'COMMUTER')});
         const g = new THREE.Group();
         kind = kind.toLowerCase().replace(/[-_ ]/g, '');
         const label = (text, x, y, z, height = .10, color = C.white) => { const t = geometricText(text, height, color); t.position.set(x, y, z); g.add(t); return t; };
@@ -891,17 +838,6 @@ export class AssetFactory {
                 box(g, C.steel, x, .9, 0, .18, .22, .5);
             }
             box(g, C.red, 0, .95, -.10, 2.5, .40, .3);
-        }
-        else if (kind === 'person' || kind === 'staff') {
-            for (const x of [-.13, .13])
-                box(g, 0x303e4b, x, .425, 0, .18, .85, .22);
-            box(g, config.color ?? (kind === 'staff' ? C.orange : C.purple), 0, 1.10, 0, .48, .62, .28);
-            mesh(LEAF, 0xc8a285, g, 0, 1.61, 0, .18, .23, .18);
-            if (kind === 'staff')
-                for (const y of [1.0, 1.22])
-                    box(g, C.yellow, 0, y, .15, .48, .055, .025);
-            for (const x of [-.32, .32])
-                box(g, config.color ?? C.orange, x, 1.08, 0, .13, .6, .16);
         }
         else if (kind === 'sign') {
             cylinder(g, C.steel, 0, .95, 0, .045, 1.9);

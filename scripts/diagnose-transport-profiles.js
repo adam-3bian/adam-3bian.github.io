@@ -1,0 +1,25 @@
+import fs from 'node:fs';
+import {decodeGrid,position} from '../src/world/grid.js';
+import {CurvePath,Polyline} from '../src/core/geometry.js';
+import {piecePath} from '../src/world/piece-registry.js';
+import {profileExtrema} from './transport-profile-audit.js';
+const route=decodeGrid(JSON.parse(fs.readFileSync('world-source/operations.json'))),limits={MAINLINE:[.025,.005],HERITAGE:[.025,.005],SIDING:[.015,.005],TURNOUT:[.015,.005],TRAM:[.06,.01],MOTORWAY:[.04,.02],TRUNK:[.08,.02],PRIMARY:[.08,.02],LOCAL:[.08,.02],SERVICE:[.08,.02],JUNCTION:[.05,.02],ROUNDABOUT:[.04,.02]};
+const graph=new Map(route.railwayGraph.edges.map(e=>[e.id,e]));
+const report={schema:1,method:'Analytic extrema of cubic Hermite vertical / horizontal derivative ratio; polynomial critical-point isolation. 16 m transition checks and declared full-section ownership are separate. Pedestrian paths, steps, cycleways and waterways are excluded from motor-road limits and listed for their own route-specific review.',paths:0,segments:0,maximumByClass:{},exceptions:[],ownershipExceptions:[],separateRouteReviews:[],errors:[],classes:limits};
+function audit(id,points,kind,source,declared,surface){
+ if(points?.length<2||points.some(p=>p.some(n=>!Number.isFinite(n)))){report.errors.push({id,reason:'Invalid path'});return;}
+ const path=surface||new CurvePath(points),extrema=profileExtrema(path),limit=limits[kind];report.paths++;report.segments+=extrema.segments.length;report.maximumByClass[kind]=Math.max(report.maximumByClass[kind]||0,extrema.maximum);
+ const metadata={id,location:path.sample(extrema.at).position,infrastructureClass:kind,actualMaximum:extrema.maximum,normalMaximum:limit[0],source,extent:[0,path.length],status:'REQUIRES_REVIEW',exceptionType:'REQUIRES_REVIEW'};
+ if(extrema.maximum>limit[0]+1e-8)report.exceptions.push({...metadata,reason:'Preserved source alignment exceeds the project gradient limit. This is recorded for review, not an approved engineering exception.'});
+ let maximumTransition=0;for(let s=0;s<path.length;s+=4)maximumTransition=Math.max(maximumTransition,Math.abs(path.sample(Math.min(path.length,s+16)).grade-path.sample(s).grade));
+ if(maximumTransition>limit[1]+1e-8)report.exceptions.push({...metadata,maximumTransition,transitionLimit:limit[1],reason:'Preserved source profile changes grade too quickly across a 16 m section; needs source-backed engineering review.'});
+ if(!declared&&extrema.maximum>1e-8)report.ownershipExceptions.push({id,infrastructureClass:kind,extent:[0,path.length],maximum:extrema.maximum,reason:'Legacy curve intervals do not declare full construction-section slope ownership; original geometry retained explicitly.',source,status:'REQUIRES_REVIEW'});
+}
+audit('player/mainline',route.points,'MAINLINE','world-source/operations.json#/points',false);
+if(route.opposingTrack?.length)audit('player/opposing',route.opposingTrack,'MAINLINE','world-source/operations.json#/opposingTrack',false);
+for(const p of route.gridPieces){const kind=p.ports?.[0]?.mode==='tram'?'TRAM':graph.get(p.id)?.region==='svr'?'HERITAGE':/siding|yard|depot/.test(p.template)?'SIDING':/turnout|junction/.test(p.template)?'TURNOUT':'MAINLINE';audit(p.id,p.anchors.map(position),kind,`world-source/operations.json#/gridPieces/${p.id}`,Boolean(p.constructionProfile),piecePath(p));}
+const roadClass=r=>/motorway/.test(r.kind)?'MOTORWAY':/trunk/.test(r.kind)?'TRUNK':/primary|secondary/.test(r.kind)?'PRIMARY':/service|industrial|private/.test(r.kind)?'SERVICE':r.junction==='roundabout'?'ROUNDABOUT':'LOCAL';
+for(const r of route.surfaceRoads){if(['footway','path','steps','pedestrian','cycleway','water','bridleway','corridor'].includes(r.kind)){report.separateRouteReviews.push({id:r.id,kind:r.kind,reason:'Requires route-type-specific geometry/accessibility review; motor-road grade caps do not apply',source:`world-source/operations.json#/surfaceRoads/${r.id}`});continue;}audit(r.id,r.points,roadClass(r),`world-source/operations.json#/surfaceRoads/${r.id}`,Boolean(r.constructionProfile),new Polyline(r.points));}
+report.operatingRoadPaths=route.authoredRoadNetwork.length;for(const r of route.authoredRoadNetwork)audit(`operatingRoad/${r.id}`,r.points,roadClass(r),`world-source/operations.json#/authoredRoadNetwork/${r.id}`,Boolean(r.constructionProfile),new Polyline(r.points));
+report.method+=' Roads use the exact piecewise-linear surface gradient; railway pieces include their stored endpoint tangents. Both retained source road paths and the distinct authored operating road network are audited.';
+report.status=report.errors.length?'FAILED':report.exceptions.length||report.ownershipExceptions.length?'INCOMPLETE':'IMPLEMENTED_AND_VERIFIED';fs.writeFileSync('validation/authored/transport-profiles.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify({...report,exceptions:report.exceptions.length,ownershipExceptions:report.ownershipExceptions.length,separateRouteReviews:report.separateRouteReviews.length}));if(report.errors.length)process.exitCode=1;

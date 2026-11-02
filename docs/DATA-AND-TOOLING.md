@@ -1,5 +1,9 @@
 # Data and tooling
 
+The current runtime authority is `world-source/` and its checked compressed
+caches. See [AUTHORED-WORLD.md](AUTHORED-WORLD.md) for editing and verification.
+The importer described below is the preserved offline legacy path.
+
 The website, world compiler, reference checks and browser checks use JavaScript.
 The deployed `site/` is static and needs no server-side runtime.
 

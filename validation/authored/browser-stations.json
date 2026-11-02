@@ -1,0 +1,4280 @@
+{
+  "schema": 1,
+  "cpu": "AMD EPYC 9V74 80-Core Processor",
+  "quality": "balanced",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "referenceHardwareAvailable": false,
+  "errors": [],
+  "stations": [
+    {
+      "id": "KID",
+      "direction": 1,
+      "s": 250.00002128360393,
+      "loaded": 4,
+      "triangles": 3345748,
+      "drawCalls": 514,
+      "cats": 8,
+      "states": [
+        {
+          "id": "-17_3",
+          "state": "GPU_READY",
+          "latencyMs": 1710.7000000001863
+        },
+        {
+          "id": "-16_3",
+          "state": "GPU_READY",
+          "latencyMs": 843.7000000001863
+        },
+        {
+          "id": "-16_2",
+          "state": "GPU_PREPARING"
+        },
+        {
+          "id": "-17_4",
+          "state": "GPU_READY",
+          "latencyMs": 1779.5
+        }
+      ],
+      "webglError": 0,
+      "memory": 348406814,
+      "loadMs": 5724.617518000001
+    },
+    {
+      "id": "BKD",
+      "direction": 1,
+      "s": 5354.2585982760875,
+      "loaded": 10,
+      "triangles": 1348164,
+      "drawCalls": 375,
+      "cats": 1,
+      "states": [
+        {
+          "id": "-17_3",
+          "state": "GPU_READY",
+          "latencyMs": 1710.7000000001863
+        },
+        {
+          "id": "-16_3",
+          "state": "GPU_READY",
+          "latencyMs": 843.7000000001863
+        },
+        {
+          "id": "-16_2",
+          "state": "GPU_PREPARING"
+        },
+        {
+          "id": "-17_4",
+          "state": "GPU_READY",
+          "latencyMs": 1779.5
+        },
+        {
+          "id": "-17_2",
+          "state": "GPU_READY",
+          "latencyMs": 5073.200000000186
+        },
+        {
+          "id": "-16_4",
+          "state": "GPU_READY",
+          "latencyMs": 2401.5
+        },
+        {
+          "id": "-18_3",
+          "state": "GPU_READY",
+          "latencyMs": 357.3999999994412
+        },
+        {
+          "id": "-18_4",
+          "state": "GPU_READY",
+          "latencyMs": 4623.5
+        },
+        {
+          "id": "-12_1",
+          "state": "GPU_READY",
+          "latencyMs": 2093.600000000559
+        },
+        {
+          "id": "-13_1",
+          "state": "GPU_READY",
+          "latencyMs": 2375.2999999998137
+        }
+      ],
+      "webglError": 0,
+      "memory": 422516244,
+      "loadMs": 7121.685257000001
+    },
+    {
+      "id": "HAG",
+      "direction": 1,
+      "s": 8058.364393158657,
+      "loaded": 16,
+      "triangles": 1719978,
+      "drawCalls": 384,
+      "cats": 1,
+      "states": [
+        {
+          "id": "-17_3",
+          "state": "GPU_READY",
+          "latencyMs": 1710.7000000001863
+        },
+        {
+          "id": "-16_3",
+          "state": "GPU_READY",
+          "latencyMs": 843.7000000001863
+        },
+        {
+          "id": "-16_2",
+          "state": "GPU_PREPARING"
+        },
+        {
+          "id": "-17_4",
+          "state": "GPU_READY",
+          "latencyMs": 1779.5
+        },
+        {
+          "id": "-17_2",
+          "state": "GPU_READY",
+          "latencyMs": 5073.200000000186
+        },
+        {
+          "id": "-16_4",
+          "state": "GPU_READY",
+          "latencyMs": 2401.5
+        },
+        {
+          "id": "-18_3",
+          "state": "GPU_READY",
+          "latencyMs": 357.3999999994412
+        },
+        {
+          "id": "-18_4",
+          "state": "GPU_READY",
+          "latencyMs": 4623.5
+        },
+        {
+          "id": "-12_1",
+          "state": "GPU_READY",
+          "latencyMs": 2093.600000000559
+        },
+        {
+          "id": "-13_1",
+          "state": "GPU_READY",
+          "latencyMs": 2375.2999999998137
+        },
+        {
+          "id": "-12_0",
+          "state": "GPU_READY",
+          "latencyMs": 4803.299999999814
+        },
+        {
+          "id": "-13_0",
+          "state": "GPU_READY",
+          "latencyMs": 1189.7000000001863
+        },
+        {
+          "id": "-12_2",
+          "state": "GPU_READY",
+          "latencyMs": 216.09999999962747
+        },
+        {
+          "id": "-13_2",
+          "state": "GPU_READY",
+          "latencyMs": 1421.5
+        },
+        {
+          "id": "-10_-1",
+          "state": "GPU_READY",
+          "latencyMs": 3052.100000000559
+        },
+        {
+          "id": "-11_-1",
+          "state": "GPU_READY",
+          "latencyMs": 703.4000000003725
+        }
+      ],
+      "webglError": 0,
+      "memory": 513799927,
+      "loadMs": 5520.541438
+    },
+    {
+      "id": "SBJ",
+      "direction": 1,
+      "s": 11026.515470560882,
+      "loaded": 18,
+      "triangles": 2224160,
+      "drawCalls": 425,
+      "cats": 8,
+      "states": [
+        {
+          "id": "-12_1",
+          "state": "GPU_READY",
+          "latencyMs": 2093.600000000559
+        },
+        {
+          "id": "-13_1",
+          "state": "GPU_READY",
+          "latencyMs": 2375.2999999998137
+        },
+        {
+          "id": "-12_0",
+          "state": "GPU_READY",
+          "latencyMs": 4803.299999999814
+        },
+        {
+          "id": "-13_0",
+          "state": "GPU_READY",
+          "latencyMs": 1189.7000000001863
+        },
+        {
+          "id": "-12_2",
+          "state": "GPU_READY",
+          "latencyMs": 216.09999999962747
+        },
+        {
+          "id": "-13_2",
+          "state": "GPU_READY",
+          "latencyMs": 1421.5
+        },
+        {
+          "id": "-11_0",
+          "state": "GPU_READY",
+          "latencyMs": 1692.9000000003725
+        },
+        {
+          "id": "-10_-1",
+          "state": "GPU_READY",
+          "latencyMs": 3052.100000000559
+        },
+        {
+          "id": "-11_-1",
+          "state": "GPU_READY",
+          "latencyMs": 703.4000000003725
+        },
+        {
+          "id": "-10_-2",
+          "state": "GPU_READY",
+          "latencyMs": 3315.7999999998137
+        },
+        {
+          "id": "-11_-2",
+          "state": "GPU_READY",
+          "latencyMs": 283
+        },
+        {
+          "id": "-10_0",
+          "state": "GPU_READY",
+          "latencyMs": 1353.9000000003725
+        },
+        {
+          "id": "-9_-2",
+          "state": "GPU_READY",
+          "latencyMs": 1718.7000000001863
+        },
+        {
+          "id": "-12_-1",
+          "state": "GPU_READY",
+          "latencyMs": 2367.100000000559
+        },
+        {
+          "id": "-10_-4",
+          "state": "GPU_READY",
+          "latencyMs": 2719.899999999441
+        },
+        {
+          "id": "-9_-4",
+          "state": "GPU_READY",
+          "latencyMs": 1158
+        },
+        {
+          "id": "-10_-3",
+          "state": "GPU_READY",
+          "latencyMs": 3993.9000000003725
+        },
+        {
+          "id": "-9_-3",
+          "state": "GPU_READY",
+          "latencyMs": 607.5999999996275
+        }
+      ],
+      "webglError": 0,
+      "memory": 489603861,
+      "loadMs": 10260.107382000002
+    },
+    {
+      "id": "LYE",
+      "direction": 1,
+      "s": 13138.57781645136,
+      "loaded": 15,
+      "triangles": 2947790,
+      "drawCalls": 398,
+      "cats": 1,
+      "states": [
+        {
+          "id": "-11_0",
+          "state": "GPU_READY",
+          "latencyMs": 1692.9000000003725
+        },
+        {
+          "id": "-10_-2",
+          "state": "GPU_READY",
+          "latencyMs": 3315.7999999998137
+        },
+        {
+          "id": "-11_-2",
+          "state": "GPU_READY",
+          "latencyMs": 283
+        },
+        {
+          "id": "-10_0",
+          "state": "GPU_READY",
+          "latencyMs": 1353.9000000003725
+        },
+        {
+          "id": "-9_-2",
+          "state": "GPU_READY",
+          "latencyMs": 1718.7000000001863
+        },
+        {
+          "id": "-12_-1",
+          "state": "GPU_READY",
+          "latencyMs": 2367.100000000559
+        },
+        {
+          "id": "-10_-4",
+          "state": "GPU_READY",
+          "latencyMs": 2719.899999999441
+        },
+        {
+          "id": "-9_-4",
+          "state": "GPU_READY",
+          "latencyMs": 1158
+        },
+        {
+          "id": "-10_-3",
+          "state": "GPU_READY",
+          "latencyMs": 3993.9000000003725
+        },
+        {
+          "id": "-9_-3",
+          "state": "GPU_READY",
+          "latencyMs": 607.5999999996275
+        },
+        {
+          "id": "-9_-5",
+          "state": "GPU_READY",
+          "latencyMs": 4730.4000000003725
+        },
+        {
+          "id": "-10_-5",
+          "state": "GPU_READY",
+          "latencyMs": 524.2000000001863
+        },
+        {
+          "id": "-11_-3",
+          "state": "GPU_READY",
+          "latencyMs": 1953.0999999996275
+        },
+        {
+          "id": "-8_-4",
+          "state": "GPU_READY",
+          "latencyMs": 2576.100000000559
+        },
+        {
+          "id": "-8_-5",
+          "state": "GPU_READY",
+          "latencyMs": 8153.9000000003725
+        }
+      ],
+      "webglError": 0,
+      "memory": 567520161,
+      "loadMs": 2208.4747979999956
+    },
+    {
+      "id": "CRA",
+      "direction": 1,
+      "s": 15274.651228376124,
+      "loaded": 15,
+      "triangles": 3103790,
+      "drawCalls": 489,
+      "cats": 1,
+      "states": [
+        {
+          "id": "-10_-2",
+          "state": "GPU_READY",
+          "latencyMs": 3315.7999999998137
+        },
+        {
+          "id": "-9_-2",
+          "state": "GPU_READY",
+          "latencyMs": 1718.7000000001863
+        },
+        {
+          "id": "-10_-4",
+          "state": "GPU_READY",
+          "latencyMs": 2719.899999999441
+        },
+        {
+          "id": "-9_-4",
+          "state": "GPU_READY",
+          "latencyMs": 1158
+        },
+        {
+          "id": "-10_-3",
+          "state": "GPU_READY",
+          "latencyMs": 3993.9000000003725
+        },
+        {
+          "id": "-9_-3",
+          "state": "GPU_READY",
+          "latencyMs": 607.5999999996275
+        },
+        {
+          "id": "-9_-5",
+          "state": "GPU_READY",
+          "latencyMs": 4730.4000000003725
+        },
+        {
+          "id": "-10_-5",
+          "state": "GPU_READY",
+          "latencyMs": 524.2000000001863
+        },
+        {
+          "id": "-11_-3",
+          "state": "GPU_READY",
+          "latencyMs": 1953.0999999996275
+        },
+        {
+          "id": "-8_-4",
+          "state": "GPU_READY",
+          "latencyMs": 2576.100000000559
+        },
+        {
+          "id": "-8_-5",
+          "state": "GPU_READY",
+          "latencyMs": 8153.9000000003725
+        },
+        {
+          "id": "-8_-6",
+          "state": "GPU_READY",
+          "latencyMs": 4166.9000000003725
+        },
+        {
+          "id": "-7_-5",
+          "state": "GPU_READY",
+          "latencyMs": 2044.2000000001863
+        },
+        {
+          "id": "-7_-6",
+          "state": "GPU_READY",
+          "latencyMs": 3891.100000000559
+        },
+        {
+          "id": "-6_-6",
+          "state": "GPU_READY",
+          "latencyMs": 2725.5999999996275
+        }
+      ],
+      "webglError": 0,
+      "memory": 625949412,
+      "loadMs": 5459.528361000004
+    },
+    {
+      "id": "OHL",
+      "direction": 1,
+      "s": 17651.11264989089,
+      "loaded": 17,
+      "triangles": 2804956,
+      "drawCalls": 476,
+      "cats": 1,
+      "states": [
+        {
+          "id": "-10_-3",
+          "state": "GPU_READY",
+          "latencyMs": 3993.9000000003725
+        },
+        {
+          "id": "-9_-3",
+          "state": "GPU_READY",
+          "latencyMs": 607.5999999996275
+        },
+        {
+          "id": "-9_-5",
+          "state": "GPU_READY",
+          "latencyMs": 4730.4000000003725
+        },
+        {
+          "id": "-10_-5",
+          "state": "GPU_READY",
+          "latencyMs": 524.2000000001863
+        },
+        {
+          "id": "-11_-3",
+          "state": "GPU_READY",
+          "latencyMs": 1953.0999999996275
+        },
+        {
+          "id": "-8_-4",
+          "state": "GPU_READY",
+          "latencyMs": 2576.100000000559
+        },
+        {
+          "id": "-8_-5",
+          "state": "GPU_READY",
+          "latencyMs": 8153.9000000003725
+        },
+        {
+          "id": "-8_-6",
+          "state": "GPU_READY",
+          "latencyMs": 4166.9000000003725
+        },
+        {
+          "id": "-7_-5",
+          "state": "GPU_READY",
+          "latencyMs": 2044.2000000001863
+        },
+        {
+          "id": "-7_-6",
+          "state": "GPU_READY",
+          "latencyMs": 3891.100000000559
+        },
+        {
+          "id": "-6_-6",
+          "state": "GPU_READY",
+          "latencyMs": 2725.5999999996275
+        },
+        {
+          "id": "-6_-7",
+          "state": "GPU_READY",
+          "latencyMs": 2803.899999999441
+        },
+        {
+          "id": "-7_-7",
+          "state": "GPU_READY",
+          "latencyMs": 1809
+        },
+        {
+          "id": "-5_-6",
+          "state": "GPU_READY",
+          "latencyMs": 4321.600000000559
+        },
+        {
+          "id": "-5_-7",
+          "state": "GPU_READY",
+          "latencyMs": 2736
+        },
+        {
+          "id": "-4_-6",
+          "state": "GPU_READY",
+          "latencyMs": 675.8000000007451
+        },
+        {
+          "id": "-4_-7",
+          "state": "GPU_READY",
+          "latencyMs": 811.9000000003725
+        }
+      ],
+      "webglError": 0,
+      "memory": 619921646,
+      "loadMs": 3903.6516839999967
+    },
+    {
+      "id": "ROW",
+      "direction": 1,
+      "s": 19579.585433825236,
+      "loaded": 16,
+      "triangles": 2765630,
+      "drawCalls": 365,
+      "cats": 1,
+      "states": [
+        {
+          "id": "-9_-5",
+          "state": "GPU_READY",
+          "latencyMs": 4730.4000000003725
+        },
+        {
+          "id": "-8_-4",
+          "state": "GPU_READY",
+          "latencyMs": 2576.100000000559
+        },
+        {
+          "id": "-8_-5",
+          "state": "GPU_READY",
+          "latencyMs": 8153.9000000003725
+        },
+        {
+          "id": "-8_-6",
+          "state": "GPU_READY",
+          "latencyMs": 4166.9000000003725
+        },
+        {
+          "id": "-7_-5",
+          "state": "GPU_READY",
+          "latencyMs": 2044.2000000001863
+        },
+        {
+          "id": "-7_-6",
+          "state": "GPU_READY",
+          "latencyMs": 3891.100000000559
+        },
+        {
+          "id": "-6_-6",
+          "state": "GPU_READY",
+          "latencyMs": 2725.5999999996275
+        },
+        {
+          "id": "-6_-7",
+          "state": "GPU_READY",
+          "latencyMs": 2803.899999999441
+        },
+        {
+          "id": "-7_-7",
+          "state": "GPU_READY",
+          "latencyMs": 1809
+        },
+        {
+          "id": "-5_-6",
+          "state": "GPU_READY",
+          "latencyMs": 4321.600000000559
+        },
+        {
+          "id": "-5_-7",
+          "state": "GPU_READY",
+          "latencyMs": 2736
+        },
+        {
+          "id": "-4_-6",
+          "state": "GPU_READY",
+          "latencyMs": 675.8000000007451
+        },
+        {
+          "id": "-4_-7",
+          "state": "GPU_READY",
+          "latencyMs": 811.9000000003725
+        },
+        {
+          "id": "-3_-6",
+          "state": "GPU_READY",
+          "latencyMs": 6093.5
+        },
+        {
+          "id": "-3_-7",
+          "state": "GPU_READY",
+          "latencyMs": 5472.4000000003725
+        },
+        {
+          "id": "-2_-7",
+          "state": "GPU_READY",
+          "latencyMs": 664.2999999998137
+        }
+      ],
+      "webglError": 0,
+      "memory": 658851594,
+      "loadMs": 5944.640326000008
+    },
+    {
+      "id": "LGG",
+      "direction": 1,
+      "s": 22091.669210919186,
+      "loaded": 17,
+      "triangles": 1982716,
+      "drawCalls": 493,
+      "cats": 1,
+      "states": [
+        {
+          "id": "-7_-5",
+          "state": "GPU_READY",
+          "latencyMs": 2044.2000000001863
+        },
+        {
+          "id": "-7_-6",
+          "state": "GPU_READY",
+          "latencyMs": 3891.100000000559
+        },
+        {
+          "id": "-6_-6",
+          "state": "GPU_READY",
+          "latencyMs": 2725.5999999996275
+        },
+        {
+          "id": "-6_-7",
+          "state": "GPU_READY",
+          "latencyMs": 2803.899999999441
+        },
+        {
+          "id": "-7_-7",
+          "state": "GPU_READY",
+          "latencyMs": 1809
+        },
+        {
+          "id": "-5_-6",
+          "state": "GPU_READY",
+          "latencyMs": 4321.600000000559
+        },
+        {
+          "id": "-5_-7",
+          "state": "GPU_READY",
+          "latencyMs": 2736
+        },
+        {
+          "id": "-4_-6",
+          "state": "GPU_READY",
+          "latencyMs": 675.8000000007451
+        },
+        {
+          "id": "-4_-7",
+          "state": "GPU_READY",
+          "latencyMs": 811.9000000003725
+        },
+        {
+          "id": "-3_-6",
+          "state": "GPU_READY",
+          "latencyMs": 6093.5
+        },
+        {
+          "id": "-3_-7",
+          "state": "GPU_READY",
+          "latencyMs": 5472.4000000003725
+        },
+        {
+          "id": "-2_-7",
+          "state": "GPU_READY",
+          "latencyMs": 664.2999999998137
+        },
+        {
+          "id": "-2_-8",
+          "state": "GPU_READY",
+          "latencyMs": 7160.700000000186
+        },
+        {
+          "id": "-3_-8",
+          "state": "GPU_READY",
+          "latencyMs": 2825.9000000003725
+        },
+        {
+          "id": "-2_-6",
+          "state": "GPU_READY",
+          "latencyMs": 385.90000000037253
+        },
+        {
+          "id": "-1_-7",
+          "state": "GPU_READY",
+          "latencyMs": 3978.5
+        },
+        {
+          "id": "-1_-9",
+          "state": "GPU_READY",
+          "latencyMs": 10288.599999999627
+        }
+      ],
+      "webglError": 0,
+      "memory": 790145776,
+      "loadMs": 15407.283987000003
+    },
+    {
+      "id": "SGB",
+      "direction": 1,
+      "s": 24219.720680787777,
+      "loaded": 17,
+      "triangles": 3820872,
+      "drawCalls": 662,
+      "cats": 15,
+      "states": [
+        {
+          "id": "-6_-7",
+          "state": "GPU_READY",
+          "latencyMs": 2803.899999999441
+        },
+        {
+          "id": "-5_-6",
+          "state": "GPU_READY",
+          "latencyMs": 4321.600000000559
+        },
+        {
+          "id": "-5_-7",
+          "state": "GPU_READY",
+          "latencyMs": 2736
+        },
+        {
+          "id": "-4_-6",
+          "state": "GPU_READY",
+          "latencyMs": 675.8000000007451
+        },
+        {
+          "id": "-4_-7",
+          "state": "GPU_READY",
+          "latencyMs": 811.9000000003725
+        },
+        {
+          "id": "-3_-6",
+          "state": "GPU_READY",
+          "latencyMs": 6093.5
+        },
+        {
+          "id": "-3_-7",
+          "state": "GPU_READY",
+          "latencyMs": 5472.4000000003725
+        },
+        {
+          "id": "-2_-7",
+          "state": "GPU_READY",
+          "latencyMs": 664.2999999998137
+        },
+        {
+          "id": "-2_-8",
+          "state": "GPU_READY",
+          "latencyMs": 7160.700000000186
+        },
+        {
+          "id": "-3_-8",
+          "state": "GPU_READY",
+          "latencyMs": 2825.9000000003725
+        },
+        {
+          "id": "-2_-6",
+          "state": "GPU_READY",
+          "latencyMs": 385.90000000037253
+        },
+        {
+          "id": "-1_-7",
+          "state": "GPU_READY",
+          "latencyMs": 3978.5
+        },
+        {
+          "id": "-1_-9",
+          "state": "GPU_READY",
+          "latencyMs": 10288.599999999627
+        },
+        {
+          "id": "0_-9",
+          "state": "GPU_READY",
+          "latencyMs": 7797.4000000003725
+        },
+        {
+          "id": "-1_-10",
+          "state": "GPU_READY",
+          "latencyMs": 3279.7999999998137
+        },
+        {
+          "id": "0_-10",
+          "state": "GPU_READY",
+          "latencyMs": 8942.299999999814
+        },
+        {
+          "id": "1_-10",
+          "state": "GPU_READY",
+          "latencyMs": 5403.299999999814
+        }
+      ],
+      "webglError": 0,
+      "memory": 714733990,
+      "loadMs": 13098.872620999988
+    },
+    {
+      "id": "THW",
+      "direction": 1,
+      "s": 25411.813833034266,
+      "loaded": 18,
+      "triangles": 3098734,
+      "drawCalls": 378,
+      "cats": 2,
+      "states": [
+        {
+          "id": "-4_-7",
+          "state": "GPU_READY",
+          "latencyMs": 811.9000000003725
+        },
+        {
+          "id": "-3_-6",
+          "state": "GPU_READY",
+          "latencyMs": 6093.5
+        },
+        {
+          "id": "-3_-7",
+          "state": "GPU_READY",
+          "latencyMs": 5472.4000000003725
+        },
+        {
+          "id": "-2_-7",
+          "state": "GPU_READY",
+          "latencyMs": 664.2999999998137
+        },
+        {
+          "id": "-2_-8",
+          "state": "GPU_READY",
+          "latencyMs": 7160.700000000186
+        },
+        {
+          "id": "-3_-8",
+          "state": "GPU_READY",
+          "latencyMs": 2825.9000000003725
+        },
+        {
+          "id": "-2_-6",
+          "state": "GPU_READY",
+          "latencyMs": 385.90000000037253
+        },
+        {
+          "id": "-1_-7",
+          "state": "GPU_READY",
+          "latencyMs": 3978.5
+        },
+        {
+          "id": "-1_-9",
+          "state": "GPU_READY",
+          "latencyMs": 10288.599999999627
+        },
+        {
+          "id": "0_-9",
+          "state": "GPU_READY",
+          "latencyMs": 7797.4000000003725
+        },
+        {
+          "id": "-1_-10",
+          "state": "GPU_READY",
+          "latencyMs": 3279.7999999998137
+        },
+        {
+          "id": "0_-10",
+          "state": "GPU_READY",
+          "latencyMs": 8942.299999999814
+        },
+        {
+          "id": "1_-10",
+          "state": "GPU_READY",
+          "latencyMs": 5403.299999999814
+        },
+        {
+          "id": "2_-10",
+          "state": "GPU_READY",
+          "latencyMs": 11175.400000000373
+        },
+        {
+          "id": "1_-11",
+          "state": "GPU_READY",
+          "latencyMs": 6424.700000000186
+        },
+        {
+          "id": "2_-11",
+          "state": "GPU_READY",
+          "latencyMs": 6314.799999999814
+        },
+        {
+          "id": "1_-9",
+          "state": "GPU_READY",
+          "latencyMs": 922.2999999998137
+        },
+        {
+          "id": "2_-9",
+          "state": "GPU_READY",
+          "latencyMs": 11089
+        }
+      ],
+      "webglError": 0,
+      "memory": 692368708,
+      "loadMs": 5750.6420799999905
+    },
+    {
+      "id": "JEQ",
+      "direction": 1,
+      "s": 29364.067512246307,
+      "loaded": 17,
+      "triangles": 5386404,
+      "drawCalls": 741,
+      "cats": 11,
+      "states": [
+        {
+          "id": "-1_-9",
+          "state": "GPU_READY",
+          "latencyMs": 10288.599999999627
+        },
+        {
+          "id": "0_-9",
+          "state": "GPU_READY",
+          "latencyMs": 7797.4000000003725
+        },
+        {
+          "id": "-1_-10",
+          "state": "GPU_READY",
+          "latencyMs": 3279.7999999998137
+        },
+        {
+          "id": "0_-10",
+          "state": "GPU_READY",
+          "latencyMs": 8942.299999999814
+        },
+        {
+          "id": "1_-10",
+          "state": "GPU_READY",
+          "latencyMs": 5403.299999999814
+        },
+        {
+          "id": "2_-10",
+          "state": "GPU_READY",
+          "latencyMs": 11175.400000000373
+        },
+        {
+          "id": "1_-11",
+          "state": "GPU_READY",
+          "latencyMs": 6424.700000000186
+        },
+        {
+          "id": "2_-11",
+          "state": "GPU_READY",
+          "latencyMs": 6314.799999999814
+        },
+        {
+          "id": "1_-9",
+          "state": "GPU_READY",
+          "latencyMs": 922.2999999998137
+        },
+        {
+          "id": "2_-9",
+          "state": "GPU_READY",
+          "latencyMs": 11089
+        },
+        {
+          "id": "3_-10",
+          "state": "GPU_READY",
+          "latencyMs": 14965.899999999441
+        },
+        {
+          "id": "3_-11",
+          "state": "GPU_READY",
+          "latencyMs": 610.2999999998137
+        },
+        {
+          "id": "3_-9",
+          "state": "GPU_READY",
+          "latencyMs": 3889.5999999996275
+        },
+        {
+          "id": "5_-8",
+          "state": "GPU_READY",
+          "latencyMs": 1370.2999999998137
+        },
+        {
+          "id": "5_-9",
+          "state": "GPU_READY",
+          "latencyMs": 6701.200000000186
+        },
+        {
+          "id": "6_-8",
+          "state": "GPU_READY",
+          "latencyMs": 6738.100000000559
+        },
+        {
+          "id": "6_-9",
+          "state": "GPU_READY",
+          "latencyMs": 867.4000000003725
+        }
+      ],
+      "webglError": 0,
+      "memory": 724406214,
+      "loadMs": 20709.603785000014
+    },
+    {
+      "id": "BSW",
+      "direction": 1,
+      "s": 30540.25942777953,
+      "loaded": 18,
+      "triangles": 4007215,
+      "drawCalls": 664,
+      "cats": 14,
+      "states": [
+        {
+          "id": "1_-10",
+          "state": "GPU_READY",
+          "latencyMs": 5403.299999999814
+        },
+        {
+          "id": "2_-10",
+          "state": "GPU_READY",
+          "latencyMs": 11175.400000000373
+        },
+        {
+          "id": "1_-11",
+          "state": "GPU_READY",
+          "latencyMs": 6424.700000000186
+        },
+        {
+          "id": "2_-11",
+          "state": "GPU_READY",
+          "latencyMs": 6314.799999999814
+        },
+        {
+          "id": "1_-9",
+          "state": "GPU_READY",
+          "latencyMs": 922.2999999998137
+        },
+        {
+          "id": "2_-9",
+          "state": "GPU_READY",
+          "latencyMs": 11089
+        },
+        {
+          "id": "3_-10",
+          "state": "GPU_READY",
+          "latencyMs": 14965.899999999441
+        },
+        {
+          "id": "3_-11",
+          "state": "GPU_READY",
+          "latencyMs": 610.2999999998137
+        },
+        {
+          "id": "3_-9",
+          "state": "GPU_READY",
+          "latencyMs": 3889.5999999996275
+        },
+        {
+          "id": "5_-8",
+          "state": "GPU_READY",
+          "latencyMs": 1370.2999999998137
+        },
+        {
+          "id": "5_-9",
+          "state": "GPU_READY",
+          "latencyMs": 6701.200000000186
+        },
+        {
+          "id": "6_-8",
+          "state": "GPU_READY",
+          "latencyMs": 6738.100000000559
+        },
+        {
+          "id": "6_-9",
+          "state": "GPU_READY",
+          "latencyMs": 867.4000000003725
+        },
+        {
+          "id": "4_-8",
+          "state": "GPU_READY",
+          "latencyMs": 18345
+        },
+        {
+          "id": "4_-9",
+          "state": "GPU_READY",
+          "latencyMs": 5238.199999999255
+        },
+        {
+          "id": "6_-7",
+          "state": "GPU_READY",
+          "latencyMs": 5933.299999999814
+        },
+        {
+          "id": "5_-10",
+          "state": "GPU_READY",
+          "latencyMs": 4418.4000000003725
+        },
+        {
+          "id": "7_-8",
+          "state": "GPU_READY",
+          "latencyMs": 8301.400000000373
+        }
+      ],
+      "webglError": 0,
+      "memory": 696264932,
+      "loadMs": 5069.472907000047
+    },
+    {
+      "id": "BMO",
+      "direction": 1,
+      "s": 31300.405821182118,
+      "loaded": 17,
+      "triangles": 3450142,
+      "drawCalls": 647,
+      "cats": 24,
+      "states": [
+        {
+          "id": "1_-9",
+          "state": "GPU_READY",
+          "latencyMs": 922.2999999998137
+        },
+        {
+          "id": "2_-9",
+          "state": "GPU_READY",
+          "latencyMs": 11089
+        },
+        {
+          "id": "3_-10",
+          "state": "GPU_READY",
+          "latencyMs": 14965.899999999441
+        },
+        {
+          "id": "3_-11",
+          "state": "GPU_READY",
+          "latencyMs": 610.2999999998137
+        },
+        {
+          "id": "3_-9",
+          "state": "GPU_READY",
+          "latencyMs": 3889.5999999996275
+        },
+        {
+          "id": "5_-8",
+          "state": "GPU_READY",
+          "latencyMs": 1370.2999999998137
+        },
+        {
+          "id": "5_-9",
+          "state": "GPU_READY",
+          "latencyMs": 6701.200000000186
+        },
+        {
+          "id": "6_-8",
+          "state": "GPU_READY",
+          "latencyMs": 6738.100000000559
+        },
+        {
+          "id": "6_-9",
+          "state": "GPU_READY",
+          "latencyMs": 867.4000000003725
+        },
+        {
+          "id": "4_-8",
+          "state": "GPU_READY",
+          "latencyMs": 18345
+        },
+        {
+          "id": "4_-9",
+          "state": "GPU_READY",
+          "latencyMs": 5238.199999999255
+        },
+        {
+          "id": "6_-7",
+          "state": "GPU_READY",
+          "latencyMs": 5933.299999999814
+        },
+        {
+          "id": "5_-10",
+          "state": "GPU_READY",
+          "latencyMs": 4418.4000000003725
+        },
+        {
+          "id": "7_-8",
+          "state": "GPU_READY",
+          "latencyMs": 8301.400000000373
+        },
+        {
+          "id": "7_-9",
+          "state": "GPU_READY",
+          "latencyMs": 7217.600000000559
+        },
+        {
+          "id": "7_-7",
+          "state": "GPU_READY",
+          "latencyMs": 2929.4000000003725
+        },
+        {
+          "id": "8_-8",
+          "state": "GPU_READY",
+          "latencyMs": 5195.0999999996275
+        }
+      ],
+      "webglError": 0,
+      "memory": 749931751,
+      "loadMs": 4236.181306999992
+    },
+    {
+      "id": "BBS",
+      "direction": 1,
+      "s": 32532.856404851947,
+      "loaded": 16,
+      "triangles": 3647606,
+      "drawCalls": 522,
+      "cats": 4,
+      "states": [
+        {
+          "id": "3_-9",
+          "state": "GPU_READY",
+          "latencyMs": 3889.5999999996275
+        },
+        {
+          "id": "5_-8",
+          "state": "GPU_READY",
+          "latencyMs": 1370.2999999998137
+        },
+        {
+          "id": "5_-9",
+          "state": "GPU_READY",
+          "latencyMs": 6701.200000000186
+        },
+        {
+          "id": "6_-8",
+          "state": "GPU_READY",
+          "latencyMs": 6738.100000000559
+        },
+        {
+          "id": "6_-9",
+          "state": "GPU_READY",
+          "latencyMs": 867.4000000003725
+        },
+        {
+          "id": "4_-8",
+          "state": "GPU_READY",
+          "latencyMs": 18345
+        },
+        {
+          "id": "4_-9",
+          "state": "GPU_READY",
+          "latencyMs": 5238.199999999255
+        },
+        {
+          "id": "6_-7",
+          "state": "GPU_READY",
+          "latencyMs": 5933.299999999814
+        },
+        {
+          "id": "5_-10",
+          "state": "GPU_READY",
+          "latencyMs": 4418.4000000003725
+        },
+        {
+          "id": "7_-8",
+          "state": "GPU_READY",
+          "latencyMs": 8301.400000000373
+        },
+        {
+          "id": "7_-9",
+          "state": "GPU_READY",
+          "latencyMs": 7217.600000000559
+        },
+        {
+          "id": "7_-7",
+          "state": "GPU_READY",
+          "latencyMs": 2929.4000000003725
+        },
+        {
+          "id": "8_-8",
+          "state": "GPU_READY",
+          "latencyMs": 5195.0999999996275
+        },
+        {
+          "id": "8_-7",
+          "state": "GPU_READY",
+          "latencyMs": 6659.5
+        },
+        {
+          "id": "7_-6",
+          "state": "GPU_READY",
+          "latencyMs": 2750.300000000745
+        },
+        {
+          "id": "8_-6",
+          "state": "GPU_READY",
+          "latencyMs": 11635.800000000745
+        }
+      ],
+      "webglError": 0,
+      "memory": 730746097,
+      "loadMs": 5086.026928000036
+    },
+    {
+      "id": "SMA",
+      "direction": 1,
+      "s": 34108.959144778695,
+      "loaded": 15,
+      "triangles": 3287790,
+      "drawCalls": 618,
+      "cats": 14,
+      "states": [
+        {
+          "id": "5_-8",
+          "state": "GPU_READY",
+          "latencyMs": 1370.2999999998137
+        },
+        {
+          "id": "5_-9",
+          "state": "GPU_READY",
+          "latencyMs": 6701.200000000186
+        },
+        {
+          "id": "6_-8",
+          "state": "GPU_READY",
+          "latencyMs": 6738.100000000559
+        },
+        {
+          "id": "6_-9",
+          "state": "GPU_READY",
+          "latencyMs": 867.4000000003725
+        },
+        {
+          "id": "6_-7",
+          "state": "GPU_READY",
+          "latencyMs": 5933.299999999814
+        },
+        {
+          "id": "7_-8",
+          "state": "GPU_READY",
+          "latencyMs": 8301.400000000373
+        },
+        {
+          "id": "7_-9",
+          "state": "GPU_READY",
+          "latencyMs": 7217.600000000559
+        },
+        {
+          "id": "7_-7",
+          "state": "GPU_READY",
+          "latencyMs": 2929.4000000003725
+        },
+        {
+          "id": "8_-8",
+          "state": "GPU_READY",
+          "latencyMs": 5195.0999999996275
+        },
+        {
+          "id": "8_-7",
+          "state": "GPU_READY",
+          "latencyMs": 6659.5
+        },
+        {
+          "id": "7_-6",
+          "state": "GPU_READY",
+          "latencyMs": 2750.300000000745
+        },
+        {
+          "id": "8_-6",
+          "state": "GPU_READY",
+          "latencyMs": 11635.800000000745
+        },
+        {
+          "id": "9_-6",
+          "state": "GPU_READY",
+          "latencyMs": 7500.699999999255
+        },
+        {
+          "id": "9_-7",
+          "state": "GPU_READY",
+          "latencyMs": 8152.100000000559
+        },
+        {
+          "id": "9_-5",
+          "state": "GPU_READY",
+          "latencyMs": 4797.5
+        }
+      ],
+      "webglError": 0,
+      "memory": 759310907,
+      "loadMs": 10353.094993999985
+    },
+    {
+      "id": "TYS",
+      "direction": 1,
+      "s": 35900.96354879336,
+      "loaded": 17,
+      "triangles": 6768035,
+      "drawCalls": 497,
+      "cats": 7,
+      "states": [
+        {
+          "id": "6_-7",
+          "state": "GPU_READY",
+          "latencyMs": 5933.299999999814
+        },
+        {
+          "id": "7_-8",
+          "state": "GPU_READY",
+          "latencyMs": 8301.400000000373
+        },
+        {
+          "id": "7_-9",
+          "state": "GPU_READY",
+          "latencyMs": 7217.600000000559
+        },
+        {
+          "id": "7_-7",
+          "state": "GPU_READY",
+          "latencyMs": 2929.4000000003725
+        },
+        {
+          "id": "8_-8",
+          "state": "GPU_READY",
+          "latencyMs": 5195.0999999996275
+        },
+        {
+          "id": "8_-7",
+          "state": "GPU_READY",
+          "latencyMs": 6659.5
+        },
+        {
+          "id": "7_-6",
+          "state": "GPU_READY",
+          "latencyMs": 2750.300000000745
+        },
+        {
+          "id": "8_-6",
+          "state": "GPU_READY",
+          "latencyMs": 11635.800000000745
+        },
+        {
+          "id": "9_-6",
+          "state": "GPU_READY",
+          "latencyMs": 7500.699999999255
+        },
+        {
+          "id": "9_-7",
+          "state": "GPU_READY",
+          "latencyMs": 8152.100000000559
+        },
+        {
+          "id": "8_-5",
+          "state": "GPU_READY",
+          "latencyMs": 283
+        },
+        {
+          "id": "9_-5",
+          "state": "GPU_READY",
+          "latencyMs": 4797.5
+        },
+        {
+          "id": "10_-5",
+          "state": "GPU_READY",
+          "latencyMs": 6935.600000000559
+        },
+        {
+          "id": "10_-6",
+          "state": "GPU_READY",
+          "latencyMs": 8584
+        },
+        {
+          "id": "10_-4",
+          "state": "GPU_READY",
+          "latencyMs": 4615.9000000003725
+        },
+        {
+          "id": "11_-5",
+          "state": "GPU_READY",
+          "latencyMs": 4424.100000000559
+        },
+        {
+          "id": "11_-4",
+          "state": "GPU_READY",
+          "latencyMs": 11612.899999999441
+        }
+      ],
+      "webglError": 0,
+      "memory": 665514211,
+      "loadMs": 20843.122363000002
+    },
+    {
+      "id": "ACG",
+      "direction": 1,
+      "s": 37308.98955734158,
+      "loaded": 15,
+      "triangles": 3656600,
+      "drawCalls": 504,
+      "cats": 8,
+      "states": [
+        {
+          "id": "8_-8",
+          "state": "GPU_READY",
+          "latencyMs": 5195.0999999996275
+        },
+        {
+          "id": "8_-7",
+          "state": "GPU_READY",
+          "latencyMs": 6659.5
+        },
+        {
+          "id": "7_-6",
+          "state": "GPU_READY",
+          "latencyMs": 2750.300000000745
+        },
+        {
+          "id": "8_-6",
+          "state": "GPU_READY",
+          "latencyMs": 11635.800000000745
+        },
+        {
+          "id": "9_-6",
+          "state": "GPU_READY",
+          "latencyMs": 7500.699999999255
+        },
+        {
+          "id": "9_-7",
+          "state": "GPU_READY",
+          "latencyMs": 8152.100000000559
+        },
+        {
+          "id": "8_-5",
+          "state": "GPU_READY",
+          "latencyMs": 283
+        },
+        {
+          "id": "9_-5",
+          "state": "GPU_READY",
+          "latencyMs": 4797.5
+        },
+        {
+          "id": "10_-5",
+          "state": "GPU_READY",
+          "latencyMs": 6935.600000000559
+        },
+        {
+          "id": "10_-6",
+          "state": "GPU_READY",
+          "latencyMs": 8584
+        },
+        {
+          "id": "10_-4",
+          "state": "GPU_READY",
+          "latencyMs": 4615.9000000003725
+        },
+        {
+          "id": "11_-5",
+          "state": "GPU_READY",
+          "latencyMs": 4424.100000000559
+        },
+        {
+          "id": "11_-4",
+          "state": "GPU_READY",
+          "latencyMs": 11612.899999999441
+        },
+        {
+          "id": "12_-5",
+          "state": "GPU_READY",
+          "latencyMs": 7724.200000000186
+        },
+        {
+          "id": "12_-4",
+          "state": "GPU_READY",
+          "latencyMs": 5066.4000000003725
+        }
+      ],
+      "webglError": 0,
+      "memory": 649653048,
+      "loadMs": 109.45915999996942
+    },
+    {
+      "id": "OLT",
+      "direction": 1,
+      "s": 38924.99851661498,
+      "loaded": 18,
+      "triangles": 2507254,
+      "drawCalls": 462,
+      "cats": 15,
+      "states": [
+        {
+          "id": "8_-8",
+          "state": "GPU_READY",
+          "latencyMs": 5195.0999999996275
+        },
+        {
+          "id": "8_-7",
+          "state": "GPU_READY",
+          "latencyMs": 6659.5
+        },
+        {
+          "id": "7_-6",
+          "state": "GPU_READY",
+          "latencyMs": 2750.300000000745
+        },
+        {
+          "id": "8_-6",
+          "state": "GPU_READY",
+          "latencyMs": 11635.800000000745
+        },
+        {
+          "id": "9_-6",
+          "state": "GPU_READY",
+          "latencyMs": 7500.699999999255
+        },
+        {
+          "id": "9_-7",
+          "state": "GPU_READY",
+          "latencyMs": 8152.100000000559
+        },
+        {
+          "id": "8_-5",
+          "state": "GPU_READY",
+          "latencyMs": 283
+        },
+        {
+          "id": "9_-5",
+          "state": "GPU_READY",
+          "latencyMs": 4797.5
+        },
+        {
+          "id": "10_-5",
+          "state": "GPU_READY",
+          "latencyMs": 6935.600000000559
+        },
+        {
+          "id": "10_-6",
+          "state": "GPU_READY",
+          "latencyMs": 8584
+        },
+        {
+          "id": "10_-4",
+          "state": "GPU_READY",
+          "latencyMs": 4615.9000000003725
+        },
+        {
+          "id": "11_-5",
+          "state": "GPU_READY",
+          "latencyMs": 4424.100000000559
+        },
+        {
+          "id": "11_-4",
+          "state": "GPU_READY",
+          "latencyMs": 11612.899999999441
+        },
+        {
+          "id": "12_-5",
+          "state": "GPU_READY",
+          "latencyMs": 7724.200000000186
+        },
+        {
+          "id": "12_-4",
+          "state": "GPU_READY",
+          "latencyMs": 5066.4000000003725
+        },
+        {
+          "id": "12_-3",
+          "state": "GPU_READY",
+          "latencyMs": 2220.7999999998137
+        },
+        {
+          "id": "13_-4",
+          "state": "GPU_READY",
+          "latencyMs": 2817
+        },
+        {
+          "id": "13_-3",
+          "state": "GPU_READY",
+          "latencyMs": 9580.099999999627
+        }
+      ],
+      "webglError": 0,
+      "memory": 727774919,
+      "loadMs": 120.5376389999874
+    },
+    {
+      "id": "SOL",
+      "direction": 1,
+      "s": 41845.04453467099,
+      "loaded": 15,
+      "triangles": 1552834,
+      "drawCalls": 503,
+      "cats": 9,
+      "states": [
+        {
+          "id": "10_-5",
+          "state": "GPU_READY",
+          "latencyMs": 6935.600000000559
+        },
+        {
+          "id": "10_-6",
+          "state": "GPU_READY",
+          "latencyMs": 8584
+        },
+        {
+          "id": "10_-4",
+          "state": "GPU_READY",
+          "latencyMs": 4615.9000000003725
+        },
+        {
+          "id": "11_-5",
+          "state": "GPU_READY",
+          "latencyMs": 4424.100000000559
+        },
+        {
+          "id": "11_-4",
+          "state": "GPU_READY",
+          "latencyMs": 11612.899999999441
+        },
+        {
+          "id": "12_-5",
+          "state": "GPU_READY",
+          "latencyMs": 7724.200000000186
+        },
+        {
+          "id": "12_-4",
+          "state": "GPU_READY",
+          "latencyMs": 5066.4000000003725
+        },
+        {
+          "id": "12_-3",
+          "state": "GPU_READY",
+          "latencyMs": 2220.7999999998137
+        },
+        {
+          "id": "13_-4",
+          "state": "GPU_READY",
+          "latencyMs": 2817
+        },
+        {
+          "id": "13_-3",
+          "state": "GPU_READY",
+          "latencyMs": 9580.099999999627
+        },
+        {
+          "id": "13_-2",
+          "state": "GPU_READY",
+          "latencyMs": 2145.5
+        },
+        {
+          "id": "14_-2",
+          "state": "GPU_READY",
+          "latencyMs": 2608.2000000001863
+        },
+        {
+          "id": "14_-3",
+          "state": "GPU_READY",
+          "latencyMs": 4302
+        },
+        {
+          "id": "12_-2",
+          "state": "GPU_READY",
+          "latencyMs": 4185.5
+        },
+        {
+          "id": "14_0",
+          "state": "GPU_READY",
+          "latencyMs": 9500.599999999627
+        }
+      ],
+      "webglError": 0,
+      "memory": 801391454,
+      "loadMs": 14040.602412000007
+    },
+    {
+      "id": "WMR",
+      "direction": 1,
+      "s": 44181.044543878,
+      "loaded": 15,
+      "triangles": 1829686,
+      "drawCalls": 372,
+      "cats": 6,
+      "states": [
+        {
+          "id": "11_-4",
+          "state": "GPU_READY",
+          "latencyMs": 11612.899999999441
+        },
+        {
+          "id": "12_-5",
+          "state": "GPU_READY",
+          "latencyMs": 7724.200000000186
+        },
+        {
+          "id": "12_-4",
+          "state": "GPU_READY",
+          "latencyMs": 5066.4000000003725
+        },
+        {
+          "id": "12_-3",
+          "state": "GPU_READY",
+          "latencyMs": 2220.7999999998137
+        },
+        {
+          "id": "13_-4",
+          "state": "GPU_READY",
+          "latencyMs": 2817
+        },
+        {
+          "id": "13_-3",
+          "state": "GPU_READY",
+          "latencyMs": 9580.099999999627
+        },
+        {
+          "id": "13_-2",
+          "state": "GPU_READY",
+          "latencyMs": 2145.5
+        },
+        {
+          "id": "14_-2",
+          "state": "GPU_READY",
+          "latencyMs": 2608.2000000001863
+        },
+        {
+          "id": "14_-3",
+          "state": "GPU_READY",
+          "latencyMs": 4302
+        },
+        {
+          "id": "12_-2",
+          "state": "GPU_READY",
+          "latencyMs": 4185.5
+        },
+        {
+          "id": "14_0",
+          "state": "GPU_READY",
+          "latencyMs": 9500.599999999627
+        },
+        {
+          "id": "15_0",
+          "state": "GPU_READY",
+          "latencyMs": 6086.0999999996275
+        },
+        {
+          "id": "14_1",
+          "state": "GPU_READY",
+          "latencyMs": 1735
+        },
+        {
+          "id": "15_1",
+          "state": "GPU_READY",
+          "latencyMs": 4475
+        },
+        {
+          "id": "15_2",
+          "state": "GPU_READY",
+          "latencyMs": 2510.2000000001863
+        }
+      ],
+      "webglError": 0,
+      "memory": 736737836,
+      "loadMs": 5750.646935000026
+    },
+    {
+      "id": "DDG",
+      "direction": 1,
+      "s": 47261.0824766397,
+      "loaded": 16,
+      "triangles": 2989094,
+      "drawCalls": 239,
+      "cats": 15,
+      "states": [
+        {
+          "id": "14_-3",
+          "state": "GPU_READY",
+          "latencyMs": 4302
+        },
+        {
+          "id": "12_-2",
+          "state": "GPU_READY",
+          "latencyMs": 4185.5
+        },
+        {
+          "id": "14_0",
+          "state": "GPU_READY",
+          "latencyMs": 9500.599999999627
+        },
+        {
+          "id": "15_0",
+          "state": "GPU_READY",
+          "latencyMs": 6086.0999999996275
+        },
+        {
+          "id": "14_1",
+          "state": "GPU_READY",
+          "latencyMs": 1735
+        },
+        {
+          "id": "15_1",
+          "state": "GPU_READY",
+          "latencyMs": 4475
+        },
+        {
+          "id": "15_2",
+          "state": "GPU_READY",
+          "latencyMs": 2510.2000000001863
+        },
+        {
+          "id": "15_3",
+          "state": "GPU_READY",
+          "latencyMs": 3871.2999999998137
+        },
+        {
+          "id": "16_2",
+          "state": "GPU_READY",
+          "latencyMs": 507.29999999981374
+        },
+        {
+          "id": "16_3",
+          "state": "GPU_READY",
+          "latencyMs": 1819.6000000005588
+        },
+        {
+          "id": "14_2",
+          "state": "GPU_READY",
+          "latencyMs": 5987.200000000186
+        },
+        {
+          "id": "16_1",
+          "state": "GPU_PREPARING"
+        },
+        {
+          "id": "16_5",
+          "state": "GPU_READY",
+          "latencyMs": 3023
+        },
+        {
+          "id": "16_4",
+          "state": "GPU_READY",
+          "latencyMs": 6414
+        },
+        {
+          "id": "17_5",
+          "state": "GPU_READY",
+          "latencyMs": 506.29999999981374
+        },
+        {
+          "id": "17_4",
+          "state": "GPU_READY",
+          "latencyMs": 4284
+        }
+      ],
+      "webglError": 0,
+      "memory": 892797946,
+      "loadMs": 17496.243923
+    },
+    {
+      "id": "DDG",
+      "direction": -1,
+      "s": 47331.0824766397,
+      "loaded": 17,
+      "triangles": 3956298,
+      "drawCalls": 398,
+      "cats": 15,
+      "states": [
+        {
+          "id": "14_-3",
+          "state": "GPU_READY",
+          "latencyMs": 4302
+        },
+        {
+          "id": "12_-2",
+          "state": "GPU_READY",
+          "latencyMs": 4185.5
+        },
+        {
+          "id": "14_0",
+          "state": "GPU_READY",
+          "latencyMs": 9500.599999999627
+        },
+        {
+          "id": "15_0",
+          "state": "GPU_READY",
+          "latencyMs": 6086.0999999996275
+        },
+        {
+          "id": "14_1",
+          "state": "GPU_READY",
+          "latencyMs": 1735
+        },
+        {
+          "id": "15_1",
+          "state": "GPU_READY",
+          "latencyMs": 4475
+        },
+        {
+          "id": "15_2",
+          "state": "GPU_READY",
+          "latencyMs": 2510.2000000001863
+        },
+        {
+          "id": "15_3",
+          "state": "GPU_READY",
+          "latencyMs": 3871.2999999998137
+        },
+        {
+          "id": "16_2",
+          "state": "GPU_READY",
+          "latencyMs": 507.29999999981374
+        },
+        {
+          "id": "16_3",
+          "state": "GPU_READY",
+          "latencyMs": 1819.6000000005588
+        },
+        {
+          "id": "14_2",
+          "state": "GPU_READY",
+          "latencyMs": 5987.200000000186
+        },
+        {
+          "id": "16_1",
+          "state": "GPU_PREPARING"
+        },
+        {
+          "id": "16_5",
+          "state": "GPU_READY",
+          "latencyMs": 3023
+        },
+        {
+          "id": "16_4",
+          "state": "GPU_READY",
+          "latencyMs": 6414
+        },
+        {
+          "id": "17_5",
+          "state": "GPU_READY",
+          "latencyMs": 506.29999999981374
+        },
+        {
+          "id": "17_4",
+          "state": "GPU_READY",
+          "latencyMs": 4284
+        },
+        {
+          "id": "15_4",
+          "state": "GPU_READY",
+          "latencyMs": 8088.600000000559
+        }
+      ],
+      "webglError": 0,
+      "memory": 553650585,
+      "loadMs": 115.85097100003622
+    },
+    {
+      "id": "WMR",
+      "direction": -1,
+      "s": 44321.044543878,
+      "loaded": 17,
+      "triangles": 3328870,
+      "drawCalls": 465,
+      "cats": 6,
+      "states": [
+        {
+          "id": "14_-3",
+          "state": "GPU_READY",
+          "latencyMs": 4302
+        },
+        {
+          "id": "12_-2",
+          "state": "GPU_READY",
+          "latencyMs": 4185.5
+        },
+        {
+          "id": "14_0",
+          "state": "GPU_READY",
+          "latencyMs": 9500.599999999627
+        },
+        {
+          "id": "15_0",
+          "state": "GPU_READY",
+          "latencyMs": 6086.0999999996275
+        },
+        {
+          "id": "14_1",
+          "state": "GPU_READY",
+          "latencyMs": 1735
+        },
+        {
+          "id": "15_1",
+          "state": "GPU_READY",
+          "latencyMs": 4475
+        },
+        {
+          "id": "15_2",
+          "state": "GPU_READY",
+          "latencyMs": 2510.2000000001863
+        },
+        {
+          "id": "15_3",
+          "state": "GPU_READY",
+          "latencyMs": 3871.2999999998137
+        },
+        {
+          "id": "16_2",
+          "state": "GPU_READY",
+          "latencyMs": 507.29999999981374
+        },
+        {
+          "id": "16_3",
+          "state": "GPU_READY",
+          "latencyMs": 1819.6000000005588
+        },
+        {
+          "id": "14_2",
+          "state": "GPU_READY",
+          "latencyMs": 5987.200000000186
+        },
+        {
+          "id": "16_1",
+          "state": "GPU_PREPARING"
+        },
+        {
+          "id": "16_5",
+          "state": "GPU_READY",
+          "latencyMs": 3023
+        },
+        {
+          "id": "16_4",
+          "state": "GPU_READY",
+          "latencyMs": 6414
+        },
+        {
+          "id": "17_5",
+          "state": "GPU_READY",
+          "latencyMs": 506.29999999981374
+        },
+        {
+          "id": "17_4",
+          "state": "GPU_READY",
+          "latencyMs": 4284
+        },
+        {
+          "id": "15_4",
+          "state": "GPU_READY",
+          "latencyMs": 8088.600000000559
+        }
+      ],
+      "webglError": 0,
+      "memory": 555811648,
+      "loadMs": 109.82207000011113
+    },
+    {
+      "id": "SOL",
+      "direction": -1,
+      "s": 41985.04453467099,
+      "loaded": 18,
+      "triangles": 1901451,
+      "drawCalls": 447,
+      "cats": 9,
+      "states": [
+        {
+          "id": "14_-3",
+          "state": "GPU_READY",
+          "latencyMs": 4302
+        },
+        {
+          "id": "12_-2",
+          "state": "GPU_READY",
+          "latencyMs": 4185.5
+        },
+        {
+          "id": "14_0",
+          "state": "GPU_READY",
+          "latencyMs": 9500.599999999627
+        },
+        {
+          "id": "15_0",
+          "state": "GPU_READY",
+          "latencyMs": 6086.0999999996275
+        },
+        {
+          "id": "14_1",
+          "state": "GPU_READY",
+          "latencyMs": 1735
+        },
+        {
+          "id": "15_1",
+          "state": "GPU_READY",
+          "latencyMs": 4475
+        },
+        {
+          "id": "15_2",
+          "state": "GPU_READY",
+          "latencyMs": 2510.2000000001863
+        },
+        {
+          "id": "15_3",
+          "state": "GPU_READY",
+          "latencyMs": 3871.2999999998137
+        },
+        {
+          "id": "16_2",
+          "state": "GPU_READY",
+          "latencyMs": 507.29999999981374
+        },
+        {
+          "id": "16_3",
+          "state": "GPU_READY",
+          "latencyMs": 1819.6000000005588
+        },
+        {
+          "id": "14_2",
+          "state": "GPU_READY",
+          "latencyMs": 5987.200000000186
+        },
+        {
+          "id": "16_1",
+          "state": "GPU_PREPARING"
+        },
+        {
+          "id": "16_5",
+          "state": "GPU_READY",
+          "latencyMs": 3023
+        },
+        {
+          "id": "16_4",
+          "state": "GPU_READY",
+          "latencyMs": 6414
+        },
+        {
+          "id": "17_5",
+          "state": "GPU_READY",
+          "latencyMs": 506.29999999981374
+        },
+        {
+          "id": "17_4",
+          "state": "GPU_READY",
+          "latencyMs": 4284
+        },
+        {
+          "id": "15_4",
+          "state": "GPU_READY",
+          "latencyMs": 8088.600000000559
+        },
+        {
+          "id": "14_3",
+          "state": "GPU_READY",
+          "latencyMs": 2437.9000000003725
+        }
+      ],
+      "webglError": 0,
+      "memory": 587159362,
+      "loadMs": 2760.356754999957
+    },
+    {
+      "id": "OLT",
+      "direction": -1,
+      "s": 39064.99851661498,
+      "loaded": 18,
+      "triangles": 2820454,
+      "drawCalls": 576,
+      "cats": 15,
+      "states": [
+        {
+          "id": "13_-3",
+          "state": "GPU_READY",
+          "latencyMs": 1545.2999999998137
+        },
+        {
+          "id": "13_-2",
+          "state": "GPU_READY",
+          "latencyMs": 3058
+        },
+        {
+          "id": "14_0",
+          "state": "GPU_READY",
+          "latencyMs": 9500.599999999627
+        },
+        {
+          "id": "15_0",
+          "state": "GPU_READY",
+          "latencyMs": 6086.0999999996275
+        },
+        {
+          "id": "14_1",
+          "state": "GPU_READY",
+          "latencyMs": 1735
+        },
+        {
+          "id": "15_1",
+          "state": "GPU_READY",
+          "latencyMs": 4475
+        },
+        {
+          "id": "14_-1",
+          "state": "GPU_READY",
+          "latencyMs": 3574.7000000001863
+        },
+        {
+          "id": "15_2",
+          "state": "GPU_READY",
+          "latencyMs": 2510.2000000001863
+        },
+        {
+          "id": "15_3",
+          "state": "GPU_READY",
+          "latencyMs": 3871.2999999998137
+        },
+        {
+          "id": "16_2",
+          "state": "GPU_READY",
+          "latencyMs": 507.29999999981374
+        },
+        {
+          "id": "16_3",
+          "state": "GPU_READY",
+          "latencyMs": 1819.6000000005588
+        },
+        {
+          "id": "14_2",
+          "state": "GPU_READY",
+          "latencyMs": 5987.200000000186
+        },
+        {
+          "id": "16_1",
+          "state": "GPU_PREPARING"
+        },
+        {
+          "id": "17_5",
+          "state": "GPU_READY",
+          "latencyMs": 506.29999999981374
+        },
+        {
+          "id": "17_4",
+          "state": "GPU_READY",
+          "latencyMs": 4284
+        },
+        {
+          "id": "15_4",
+          "state": "GPU_READY",
+          "latencyMs": 8088.600000000559
+        },
+        {
+          "id": "14_3",
+          "state": "GPU_READY",
+          "latencyMs": 2437.9000000003725
+        },
+        {
+          "id": "13_0",
+          "state": "GPU_PREPARING"
+        }
+      ],
+      "webglError": 0,
+      "memory": 576574243,
+      "loadMs": 7427.07241100003
+    },
+    {
+      "id": "ACG",
+      "direction": -1,
+      "s": 37448.98955734158,
+      "loaded": 17,
+      "triangles": 4161846,
+      "drawCalls": 500,
+      "cats": 8,
+      "states": [
+        {
+          "id": "12_-4",
+          "state": "GPU_READY",
+          "latencyMs": 2267.2999999998137
+        },
+        {
+          "id": "12_-3",
+          "state": "GPU_READY",
+          "latencyMs": 4230.800000000745
+        },
+        {
+          "id": "13_-4",
+          "state": "GPU_PREPARING"
+        },
+        {
+          "id": "13_-3",
+          "state": "GPU_READY",
+          "latencyMs": 1545.2999999998137
+        },
+        {
+          "id": "13_-2",
+          "state": "GPU_READY",
+          "latencyMs": 3058
+        },
+        {
+          "id": "14_0",
+          "state": "GPU_READY",
+          "latencyMs": 9500.599999999627
+        },
+        {
+          "id": "14_1",
+          "state": "GPU_READY",
+          "latencyMs": 1735
+        },
+        {
+          "id": "15_1",
+          "state": "GPU_READY",
+          "latencyMs": 4475
+        },
+        {
+          "id": "14_-1",
+          "state": "GPU_READY",
+          "latencyMs": 3574.7000000001863
+        },
+        {
+          "id": "15_2",
+          "state": "GPU_READY",
+          "latencyMs": 2510.2000000001863
+        },
+        {
+          "id": "15_3",
+          "state": "GPU_READY",
+          "latencyMs": 3871.2999999998137
+        },
+        {
+          "id": "16_2",
+          "state": "GPU_READY",
+          "latencyMs": 507.29999999981374
+        },
+        {
+          "id": "16_3",
+          "state": "GPU_READY",
+          "latencyMs": 1819.6000000005588
+        },
+        {
+          "id": "14_2",
+          "state": "GPU_READY",
+          "latencyMs": 5987.200000000186
+        },
+        {
+          "id": "16_1",
+          "state": "GPU_PREPARING"
+        },
+        {
+          "id": "14_3",
+          "state": "GPU_READY",
+          "latencyMs": 2437.9000000003725
+        },
+        {
+          "id": "13_0",
+          "state": "GPU_PREPARING"
+        }
+      ],
+      "webglError": 0,
+      "memory": 645274134,
+      "loadMs": 15578.682794000022
+    },
+    {
+      "id": "TYS",
+      "direction": -1,
+      "s": 36040.96354879336,
+      "loaded": 17,
+      "triangles": 5763540,
+      "drawCalls": 498,
+      "cats": 7,
+      "states": [
+        {
+          "id": "10_-5",
+          "state": "GPU_READY",
+          "latencyMs": 8440.799999999814
+        },
+        {
+          "id": "10_-4",
+          "state": "GPU_READY",
+          "latencyMs": 4898.299999999814
+        },
+        {
+          "id": "11_-5",
+          "state": "GPU_READY",
+          "latencyMs": 4534.4000000003725
+        },
+        {
+          "id": "11_-4",
+          "state": "GPU_READY",
+          "latencyMs": 16591.700000000186
+        },
+        {
+          "id": "12_-4",
+          "state": "GPU_READY",
+          "latencyMs": 2267.2999999998137
+        },
+        {
+          "id": "12_-3",
+          "state": "GPU_READY",
+          "latencyMs": 4230.800000000745
+        },
+        {
+          "id": "13_-4",
+          "state": "GPU_PREPARING"
+        },
+        {
+          "id": "13_-3",
+          "state": "GPU_READY",
+          "latencyMs": 1545.2999999998137
+        },
+        {
+          "id": "13_-2",
+          "state": "GPU_READY",
+          "latencyMs": 3058
+        },
+        {
+          "id": "14_0",
+          "state": "GPU_READY",
+          "latencyMs": 9500.599999999627
+        },
+        {
+          "id": "14_-1",
+          "state": "GPU_READY",
+          "latencyMs": 3574.7000000001863
+        },
+        {
+          "id": "16_2",
+          "state": "GPU_READY",
+          "latencyMs": 507.29999999981374
+        },
+        {
+          "id": "16_3",
+          "state": "GPU_READY",
+          "latencyMs": 1819.6000000005588
+        },
+        {
+          "id": "14_2",
+          "state": "GPU_READY",
+          "latencyMs": 5987.200000000186
+        },
+        {
+          "id": "16_1",
+          "state": "GPU_PREPARING"
+        },
+        {
+          "id": "14_3",
+          "state": "GPU_READY",
+          "latencyMs": 2437.9000000003725
+        },
+        {
+          "id": "13_0",
+          "state": "GPU_PREPARING"
+        }
+      ],
+      "webglError": 0,
+      "memory": 659746671,
+      "loadMs": 21659.19265099999
+    },
+    {
+      "id": "SMA",
+      "direction": -1,
+      "s": 34248.959144778695,
+      "loaded": 17,
+      "triangles": 4076494,
+      "drawCalls": 549,
+      "cats": 14,
+      "states": [
+        {
+          "id": "9_-6",
+          "state": "GPU_READY",
+          "latencyMs": 3665.5
+        },
+        {
+          "id": "9_-5",
+          "state": "GPU_READY",
+          "latencyMs": 923.7999999998137
+        },
+        {
+          "id": "10_-5",
+          "state": "GPU_READY",
+          "latencyMs": 8440.799999999814
+        },
+        {
+          "id": "10_-6",
+          "state": "GPU_READY",
+          "latencyMs": 4498.9000000003725
+        },
+        {
+          "id": "10_-4",
+          "state": "GPU_READY",
+          "latencyMs": 4898.299999999814
+        },
+        {
+          "id": "11_-5",
+          "state": "GPU_READY",
+          "latencyMs": 4534.4000000003725
+        },
+        {
+          "id": "11_-4",
+          "state": "GPU_READY",
+          "latencyMs": 16591.700000000186
+        },
+        {
+          "id": "12_-5",
+          "state": "GPU_READY",
+          "latencyMs": 8032.100000000559
+        },
+        {
+          "id": "12_-4",
+          "state": "GPU_READY",
+          "latencyMs": 2267.2999999998137
+        },
+        {
+          "id": "12_-3",
+          "state": "GPU_READY",
+          "latencyMs": 4230.800000000745
+        },
+        {
+          "id": "13_-4",
+          "state": "GPU_PREPARING"
+        },
+        {
+          "id": "13_-3",
+          "state": "GPU_READY",
+          "latencyMs": 1545.2999999998137
+        },
+        {
+          "id": "13_-2",
+          "state": "GPU_READY",
+          "latencyMs": 3058
+        },
+        {
+          "id": "14_0",
+          "state": "GPU_READY",
+          "latencyMs": 9500.599999999627
+        },
+        {
+          "id": "14_-1",
+          "state": "GPU_READY",
+          "latencyMs": 3574.7000000001863
+        },
+        {
+          "id": "14_3",
+          "state": "GPU_READY",
+          "latencyMs": 2437.9000000003725
+        },
+        {
+          "id": "13_0",
+          "state": "GPU_PREPARING"
+        }
+      ],
+      "webglError": 0,
+      "memory": 711185059,
+      "loadMs": 8470.963427999988
+    },
+    {
+      "id": "BBS",
+      "direction": -1,
+      "s": 32672.856404851947,
+      "loaded": 15,
+      "triangles": 3086135,
+      "drawCalls": 662,
+      "cats": 4,
+      "states": [
+        {
+          "id": "8_-7",
+          "state": "GPU_READY",
+          "latencyMs": 3042.5
+        },
+        {
+          "id": "8_-6",
+          "state": "GPU_READY",
+          "latencyMs": 7157.700000000186
+        },
+        {
+          "id": "9_-6",
+          "state": "GPU_READY",
+          "latencyMs": 3665.5
+        },
+        {
+          "id": "9_-5",
+          "state": "GPU_READY",
+          "latencyMs": 923.7999999998137
+        },
+        {
+          "id": "10_-5",
+          "state": "GPU_READY",
+          "latencyMs": 8440.799999999814
+        },
+        {
+          "id": "10_-6",
+          "state": "GPU_READY",
+          "latencyMs": 4498.9000000003725
+        },
+        {
+          "id": "10_-4",
+          "state": "GPU_READY",
+          "latencyMs": 4898.299999999814
+        },
+        {
+          "id": "11_-5",
+          "state": "GPU_READY",
+          "latencyMs": 4534.4000000003725
+        },
+        {
+          "id": "11_-4",
+          "state": "GPU_READY",
+          "latencyMs": 16591.700000000186
+        },
+        {
+          "id": "12_-5",
+          "state": "GPU_READY",
+          "latencyMs": 8032.100000000559
+        },
+        {
+          "id": "12_-4",
+          "state": "GPU_READY",
+          "latencyMs": 2267.2999999998137
+        },
+        {
+          "id": "12_-3",
+          "state": "GPU_READY",
+          "latencyMs": 4230.800000000745
+        },
+        {
+          "id": "13_-4",
+          "state": "GPU_PREPARING"
+        },
+        {
+          "id": "13_-3",
+          "state": "GPU_READY",
+          "latencyMs": 1545.2999999998137
+        },
+        {
+          "id": "13_-2",
+          "state": "GPU_READY",
+          "latencyMs": 3058
+        }
+      ],
+      "webglError": 0,
+      "memory": 793902289,
+      "loadMs": 7505.765685999999
+    },
+    {
+      "id": "BMO",
+      "direction": -1,
+      "s": 31440.405821182118,
+      "loaded": 16,
+      "triangles": 3167734,
+      "drawCalls": 699,
+      "cats": 24,
+      "states": [
+        {
+          "id": "7_-7",
+          "state": "GPU_READY",
+          "latencyMs": 5314.5999999996275
+        },
+        {
+          "id": "8_-7",
+          "state": "GPU_READY",
+          "latencyMs": 3042.5
+        },
+        {
+          "id": "8_-6",
+          "state": "GPU_READY",
+          "latencyMs": 7157.700000000186
+        },
+        {
+          "id": "9_-6",
+          "state": "GPU_READY",
+          "latencyMs": 3665.5
+        },
+        {
+          "id": "9_-5",
+          "state": "GPU_READY",
+          "latencyMs": 923.7999999998137
+        },
+        {
+          "id": "10_-5",
+          "state": "GPU_READY",
+          "latencyMs": 8440.799999999814
+        },
+        {
+          "id": "10_-6",
+          "state": "GPU_READY",
+          "latencyMs": 4498.9000000003725
+        },
+        {
+          "id": "10_-4",
+          "state": "GPU_READY",
+          "latencyMs": 4898.299999999814
+        },
+        {
+          "id": "11_-5",
+          "state": "GPU_READY",
+          "latencyMs": 4534.4000000003725
+        },
+        {
+          "id": "11_-4",
+          "state": "GPU_READY",
+          "latencyMs": 16591.700000000186
+        },
+        {
+          "id": "12_-5",
+          "state": "GPU_READY",
+          "latencyMs": 8032.100000000559
+        },
+        {
+          "id": "12_-4",
+          "state": "GPU_READY",
+          "latencyMs": 2267.2999999998137
+        },
+        {
+          "id": "12_-3",
+          "state": "GPU_READY",
+          "latencyMs": 4230.800000000745
+        },
+        {
+          "id": "13_-4",
+          "state": "GPU_PREPARING"
+        },
+        {
+          "id": "13_-3",
+          "state": "GPU_READY",
+          "latencyMs": 1545.2999999998137
+        },
+        {
+          "id": "13_-2",
+          "state": "GPU_READY",
+          "latencyMs": 3058
+        }
+      ],
+      "webglError": 0,
+      "memory": 870990071,
+      "loadMs": 2845.1029689999996
+    },
+    {
+      "id": "BSW",
+      "direction": -1,
+      "s": 30680.25942777953,
+      "loaded": 18,
+      "triangles": 5464704,
+      "drawCalls": 590,
+      "cats": 14,
+      "states": [
+        {
+          "id": "6_-8",
+          "state": "GPU_READY",
+          "latencyMs": 3571
+        },
+        {
+          "id": "7_-8",
+          "state": "GPU_READY",
+          "latencyMs": 4745.299999999814
+        },
+        {
+          "id": "7_-7",
+          "state": "GPU_READY",
+          "latencyMs": 5314.5999999996275
+        },
+        {
+          "id": "8_-7",
+          "state": "GPU_READY",
+          "latencyMs": 3042.5
+        },
+        {
+          "id": "8_-6",
+          "state": "GPU_READY",
+          "latencyMs": 7157.700000000186
+        },
+        {
+          "id": "9_-6",
+          "state": "GPU_READY",
+          "latencyMs": 3665.5
+        },
+        {
+          "id": "9_-5",
+          "state": "GPU_READY",
+          "latencyMs": 923.7999999998137
+        },
+        {
+          "id": "10_-5",
+          "state": "GPU_READY",
+          "latencyMs": 8440.799999999814
+        },
+        {
+          "id": "10_-6",
+          "state": "GPU_READY",
+          "latencyMs": 4498.9000000003725
+        },
+        {
+          "id": "10_-4",
+          "state": "GPU_READY",
+          "latencyMs": 4898.299999999814
+        },
+        {
+          "id": "11_-5",
+          "state": "GPU_READY",
+          "latencyMs": 4534.4000000003725
+        },
+        {
+          "id": "11_-4",
+          "state": "GPU_READY",
+          "latencyMs": 16591.700000000186
+        },
+        {
+          "id": "12_-5",
+          "state": "GPU_READY",
+          "latencyMs": 8032.100000000559
+        },
+        {
+          "id": "12_-4",
+          "state": "GPU_READY",
+          "latencyMs": 2267.2999999998137
+        },
+        {
+          "id": "12_-3",
+          "state": "GPU_READY",
+          "latencyMs": 4230.800000000745
+        },
+        {
+          "id": "13_-4",
+          "state": "GPU_PREPARING"
+        },
+        {
+          "id": "13_-3",
+          "state": "GPU_READY",
+          "latencyMs": 1545.2999999998137
+        },
+        {
+          "id": "13_-2",
+          "state": "GPU_READY",
+          "latencyMs": 3058
+        }
+      ],
+      "webglError": 0,
+      "memory": 955919942,
+      "loadMs": 8400.13639
+    },
+    {
+      "id": "JEQ",
+      "direction": -1,
+      "s": 29504.067512246307,
+      "loaded": 17,
+      "triangles": 6540386,
+      "drawCalls": 461,
+      "cats": 11,
+      "states": [
+        {
+          "id": "5_-8",
+          "state": "GPU_READY",
+          "latencyMs": 3301.4000000003725
+        },
+        {
+          "id": "5_-9",
+          "state": "GPU_READY",
+          "latencyMs": 3960.600000000559
+        },
+        {
+          "id": "6_-8",
+          "state": "GPU_READY",
+          "latencyMs": 3571
+        },
+        {
+          "id": "6_-9",
+          "state": "GPU_READY",
+          "latencyMs": 7412.100000000559
+        },
+        {
+          "id": "7_-8",
+          "state": "GPU_READY",
+          "latencyMs": 4745.299999999814
+        },
+        {
+          "id": "7_-7",
+          "state": "GPU_READY",
+          "latencyMs": 5314.5999999996275
+        },
+        {
+          "id": "8_-7",
+          "state": "GPU_READY",
+          "latencyMs": 3042.5
+        },
+        {
+          "id": "8_-6",
+          "state": "GPU_READY",
+          "latencyMs": 7157.700000000186
+        },
+        {
+          "id": "9_-6",
+          "state": "GPU_READY",
+          "latencyMs": 3665.5
+        },
+        {
+          "id": "9_-5",
+          "state": "GPU_READY",
+          "latencyMs": 923.7999999998137
+        },
+        {
+          "id": "10_-5",
+          "state": "GPU_READY",
+          "latencyMs": 8440.799999999814
+        },
+        {
+          "id": "10_-6",
+          "state": "GPU_READY",
+          "latencyMs": 4498.9000000003725
+        },
+        {
+          "id": "10_-4",
+          "state": "GPU_READY",
+          "latencyMs": 4898.299999999814
+        },
+        {
+          "id": "11_-5",
+          "state": "GPU_READY",
+          "latencyMs": 4534.4000000003725
+        },
+        {
+          "id": "11_-4",
+          "state": "GPU_READY",
+          "latencyMs": 16591.700000000186
+        },
+        {
+          "id": "12_-5",
+          "state": "GPU_READY",
+          "latencyMs": 8032.100000000559
+        },
+        {
+          "id": "12_-4",
+          "state": "GPU_READY",
+          "latencyMs": 2267.2999999998137
+        }
+      ],
+      "webglError": 0,
+      "memory": 1064098827,
+      "loadMs": 13918.414437999949
+    },
+    {
+      "id": "THW",
+      "direction": -1,
+      "s": 25551.813833034266,
+      "loaded": 16,
+      "triangles": 2875806,
+      "drawCalls": 562,
+      "cats": 2,
+      "states": [
+        {
+          "id": "2_-10",
+          "state": "GPU_READY",
+          "latencyMs": 3201.5
+        },
+        {
+          "id": "5_-8",
+          "state": "GPU_READY",
+          "latencyMs": 3301.4000000003725
+        },
+        {
+          "id": "5_-9",
+          "state": "GPU_READY",
+          "latencyMs": 3960.600000000559
+        },
+        {
+          "id": "6_-8",
+          "state": "GPU_READY",
+          "latencyMs": 3571
+        },
+        {
+          "id": "6_-9",
+          "state": "GPU_READY",
+          "latencyMs": 7412.100000000559
+        },
+        {
+          "id": "6_-7",
+          "state": "GPU_READY",
+          "latencyMs": 9081.700000000186
+        },
+        {
+          "id": "7_-8",
+          "state": "GPU_READY",
+          "latencyMs": 4745.299999999814
+        },
+        {
+          "id": "7_-9",
+          "state": "GPU_PREPARING"
+        },
+        {
+          "id": "7_-7",
+          "state": "GPU_READY",
+          "latencyMs": 5314.5999999996275
+        },
+        {
+          "id": "8_-7",
+          "state": "GPU_READY",
+          "latencyMs": 3042.5
+        },
+        {
+          "id": "8_-6",
+          "state": "GPU_READY",
+          "latencyMs": 7157.700000000186
+        },
+        {
+          "id": "9_-6",
+          "state": "GPU_READY",
+          "latencyMs": 3665.5
+        },
+        {
+          "id": "9_-5",
+          "state": "GPU_READY",
+          "latencyMs": 923.7999999998137
+        },
+        {
+          "id": "10_-5",
+          "state": "GPU_READY",
+          "latencyMs": 8440.799999999814
+        },
+        {
+          "id": "10_-6",
+          "state": "GPU_READY",
+          "latencyMs": 4498.9000000003725
+        },
+        {
+          "id": "12_-5",
+          "state": "GPU_READY",
+          "latencyMs": 8032.100000000559
+        }
+      ],
+      "webglError": 0,
+      "memory": 1151259438,
+      "loadMs": 10194.01179899997
+    },
+    {
+      "id": "SGB",
+      "direction": -1,
+      "s": 24359.720680787777,
+      "loaded": 15,
+      "triangles": 3997681,
+      "drawCalls": 466,
+      "cats": 15,
+      "states": [
+        {
+          "id": "1_-10",
+          "state": "GPU_READY",
+          "latencyMs": 8312.599999999627
+        },
+        {
+          "id": "2_-10",
+          "state": "GPU_READY",
+          "latencyMs": 3201.5
+        },
+        {
+          "id": "1_-11",
+          "state": "GPU_READY",
+          "latencyMs": 584.0999999996275
+        },
+        {
+          "id": "2_-11",
+          "state": "GPU_READY",
+          "latencyMs": 2761.199999999255
+        },
+        {
+          "id": "5_-8",
+          "state": "GPU_READY",
+          "latencyMs": 3301.4000000003725
+        },
+        {
+          "id": "5_-9",
+          "state": "GPU_READY",
+          "latencyMs": 3960.600000000559
+        },
+        {
+          "id": "6_-8",
+          "state": "GPU_READY",
+          "latencyMs": 3571
+        },
+        {
+          "id": "6_-9",
+          "state": "GPU_READY",
+          "latencyMs": 7412.100000000559
+        },
+        {
+          "id": "6_-7",
+          "state": "GPU_READY",
+          "latencyMs": 9081.700000000186
+        },
+        {
+          "id": "7_-8",
+          "state": "GPU_READY",
+          "latencyMs": 4745.299999999814
+        },
+        {
+          "id": "7_-9",
+          "state": "GPU_PREPARING"
+        },
+        {
+          "id": "7_-7",
+          "state": "GPU_READY",
+          "latencyMs": 5314.5999999996275
+        },
+        {
+          "id": "8_-7",
+          "state": "GPU_READY",
+          "latencyMs": 3042.5
+        },
+        {
+          "id": "8_-6",
+          "state": "GPU_READY",
+          "latencyMs": 7157.700000000186
+        },
+        {
+          "id": "9_-6",
+          "state": "GPU_READY",
+          "latencyMs": 3665.5
+        }
+      ],
+      "webglError": 0,
+      "memory": 855150513,
+      "loadMs": 2470.451177000068
+    },
+    {
+      "id": "LGG",
+      "direction": -1,
+      "s": 22231.669210919186,
+      "loaded": 18,
+      "triangles": 3990668,
+      "drawCalls": 470,
+      "cats": 1,
+      "states": [
+        {
+          "id": "-1_-9",
+          "state": "GPU_READY",
+          "latencyMs": 3453.399999999441
+        },
+        {
+          "id": "0_-9",
+          "state": "GPU_READY",
+          "latencyMs": 862
+        },
+        {
+          "id": "0_-10",
+          "state": "GPU_READY",
+          "latencyMs": 8324.199999999255
+        },
+        {
+          "id": "1_-10",
+          "state": "GPU_READY",
+          "latencyMs": 8312.599999999627
+        },
+        {
+          "id": "2_-10",
+          "state": "GPU_READY",
+          "latencyMs": 3201.5
+        },
+        {
+          "id": "1_-11",
+          "state": "GPU_READY",
+          "latencyMs": 584.0999999996275
+        },
+        {
+          "id": "2_-11",
+          "state": "GPU_READY",
+          "latencyMs": 2761.199999999255
+        },
+        {
+          "id": "5_-8",
+          "state": "GPU_READY",
+          "latencyMs": 3301.4000000003725
+        },
+        {
+          "id": "5_-9",
+          "state": "GPU_READY",
+          "latencyMs": 3960.600000000559
+        },
+        {
+          "id": "6_-8",
+          "state": "GPU_READY",
+          "latencyMs": 3571
+        },
+        {
+          "id": "6_-9",
+          "state": "GPU_READY",
+          "latencyMs": 7412.100000000559
+        },
+        {
+          "id": "6_-7",
+          "state": "GPU_READY",
+          "latencyMs": 9081.700000000186
+        },
+        {
+          "id": "7_-8",
+          "state": "GPU_READY",
+          "latencyMs": 4745.299999999814
+        },
+        {
+          "id": "7_-9",
+          "state": "GPU_PREPARING"
+        },
+        {
+          "id": "7_-7",
+          "state": "GPU_READY",
+          "latencyMs": 5314.5999999996275
+        },
+        {
+          "id": "8_-7",
+          "state": "GPU_READY",
+          "latencyMs": 3042.5
+        },
+        {
+          "id": "8_-6",
+          "state": "GPU_READY",
+          "latencyMs": 7157.700000000186
+        },
+        {
+          "id": "9_-6",
+          "state": "GPU_READY",
+          "latencyMs": 3665.5
+        }
+      ],
+      "webglError": 0,
+      "memory": 1034144963,
+      "loadMs": 9023.680809999933
+    },
+    {
+      "id": "ROW",
+      "direction": -1,
+      "s": 19719.585433825236,
+      "loaded": 17,
+      "triangles": 2764724,
+      "drawCalls": 363,
+      "cats": 1,
+      "states": [
+        {
+          "id": "-3_-7",
+          "state": "GPU_READY",
+          "latencyMs": 2803.4000000003725
+        },
+        {
+          "id": "-2_-7",
+          "state": "GPU_READY",
+          "latencyMs": 2614.0999999996275
+        },
+        {
+          "id": "-1_-8",
+          "state": "GPU_READY",
+          "latencyMs": 9882
+        },
+        {
+          "id": "-1_-9",
+          "state": "GPU_READY",
+          "latencyMs": 3453.399999999441
+        },
+        {
+          "id": "0_-9",
+          "state": "GPU_READY",
+          "latencyMs": 862
+        },
+        {
+          "id": "0_-10",
+          "state": "GPU_READY",
+          "latencyMs": 8324.199999999255
+        },
+        {
+          "id": "1_-10",
+          "state": "GPU_READY",
+          "latencyMs": 8312.599999999627
+        },
+        {
+          "id": "2_-10",
+          "state": "GPU_READY",
+          "latencyMs": 3201.5
+        },
+        {
+          "id": "1_-11",
+          "state": "GPU_READY",
+          "latencyMs": 584.0999999996275
+        },
+        {
+          "id": "2_-11",
+          "state": "GPU_READY",
+          "latencyMs": 2761.199999999255
+        },
+        {
+          "id": "5_-8",
+          "state": "GPU_READY",
+          "latencyMs": 3301.4000000003725
+        },
+        {
+          "id": "5_-9",
+          "state": "GPU_READY",
+          "latencyMs": 3960.600000000559
+        },
+        {
+          "id": "6_-8",
+          "state": "GPU_READY",
+          "latencyMs": 3571
+        },
+        {
+          "id": "6_-9",
+          "state": "GPU_READY",
+          "latencyMs": 7412.100000000559
+        },
+        {
+          "id": "6_-7",
+          "state": "GPU_READY",
+          "latencyMs": 9081.700000000186
+        },
+        {
+          "id": "7_-8",
+          "state": "GPU_READY",
+          "latencyMs": 4745.299999999814
+        },
+        {
+          "id": "7_-9",
+          "state": "GPU_PREPARING"
+        }
+      ],
+      "webglError": 0,
+      "memory": 1168382266,
+      "loadMs": 8683.762758999947
+    },
+    {
+      "id": "OHL",
+      "direction": -1,
+      "s": 17791.11264989089,
+      "loaded": 18,
+      "triangles": 1840066,
+      "drawCalls": 406,
+      "cats": 1,
+      "states": [
+        {
+          "id": "-4_-6",
+          "state": "GPU_READY",
+          "latencyMs": 2353
+        },
+        {
+          "id": "-4_-7",
+          "state": "GPU_READY",
+          "latencyMs": 642.5
+        },
+        {
+          "id": "-3_-6",
+          "state": "GPU_READY",
+          "latencyMs": 5313
+        },
+        {
+          "id": "-3_-7",
+          "state": "GPU_READY",
+          "latencyMs": 2803.4000000003725
+        },
+        {
+          "id": "-2_-7",
+          "state": "GPU_READY",
+          "latencyMs": 2614.0999999996275
+        },
+        {
+          "id": "-2_-8",
+          "state": "GPU_READY",
+          "latencyMs": 4450.200000000186
+        },
+        {
+          "id": "-2_-6",
+          "state": "GPU_READY",
+          "latencyMs": 463.1000000005588
+        },
+        {
+          "id": "-1_-8",
+          "state": "GPU_READY",
+          "latencyMs": 9882
+        },
+        {
+          "id": "-1_-9",
+          "state": "GPU_READY",
+          "latencyMs": 3453.399999999441
+        },
+        {
+          "id": "0_-9",
+          "state": "GPU_READY",
+          "latencyMs": 862
+        },
+        {
+          "id": "0_-10",
+          "state": "GPU_READY",
+          "latencyMs": 8324.199999999255
+        },
+        {
+          "id": "1_-10",
+          "state": "GPU_READY",
+          "latencyMs": 8312.599999999627
+        },
+        {
+          "id": "2_-10",
+          "state": "GPU_READY",
+          "latencyMs": 3201.5
+        },
+        {
+          "id": "1_-11",
+          "state": "GPU_READY",
+          "latencyMs": 584.0999999996275
+        },
+        {
+          "id": "2_-11",
+          "state": "GPU_READY",
+          "latencyMs": 2761.199999999255
+        },
+        {
+          "id": "5_-9",
+          "state": "GPU_READY",
+          "latencyMs": 3960.600000000559
+        },
+        {
+          "id": "6_-7",
+          "state": "GPU_READY",
+          "latencyMs": 9081.700000000186
+        },
+        {
+          "id": "7_-9",
+          "state": "GPU_PREPARING"
+        }
+      ],
+      "webglError": 0,
+      "memory": 1276491655,
+      "loadMs": 5489.011472999933
+    },
+    {
+      "id": "CRA",
+      "direction": -1,
+      "s": 15414.651228376124,
+      "loaded": 18,
+      "triangles": 3099130,
+      "drawCalls": 459,
+      "cats": 1,
+      "states": [
+        {
+          "id": "-7_-6",
+          "state": "GPU_READY",
+          "latencyMs": 3273.4000000003725
+        },
+        {
+          "id": "-6_-6",
+          "state": "GPU_READY",
+          "latencyMs": 2903.5
+        },
+        {
+          "id": "-5_-6",
+          "state": "GPU_READY",
+          "latencyMs": 6660.200000000186
+        },
+        {
+          "id": "-5_-7",
+          "state": "GPU_READY",
+          "latencyMs": 678.1999999992549
+        },
+        {
+          "id": "-4_-6",
+          "state": "GPU_READY",
+          "latencyMs": 2353
+        },
+        {
+          "id": "-4_-7",
+          "state": "GPU_READY",
+          "latencyMs": 642.5
+        },
+        {
+          "id": "-3_-6",
+          "state": "GPU_READY",
+          "latencyMs": 5313
+        },
+        {
+          "id": "-3_-7",
+          "state": "GPU_READY",
+          "latencyMs": 2803.4000000003725
+        },
+        {
+          "id": "-2_-7",
+          "state": "GPU_READY",
+          "latencyMs": 2614.0999999996275
+        },
+        {
+          "id": "-2_-8",
+          "state": "GPU_READY",
+          "latencyMs": 4450.200000000186
+        },
+        {
+          "id": "-2_-6",
+          "state": "GPU_READY",
+          "latencyMs": 463.1000000005588
+        },
+        {
+          "id": "-1_-8",
+          "state": "GPU_READY",
+          "latencyMs": 9882
+        },
+        {
+          "id": "-1_-9",
+          "state": "GPU_READY",
+          "latencyMs": 3453.399999999441
+        },
+        {
+          "id": "0_-9",
+          "state": "GPU_READY",
+          "latencyMs": 862
+        },
+        {
+          "id": "0_-10",
+          "state": "GPU_READY",
+          "latencyMs": 8324.199999999255
+        },
+        {
+          "id": "1_-10",
+          "state": "GPU_READY",
+          "latencyMs": 8312.599999999627
+        },
+        {
+          "id": "1_-11",
+          "state": "GPU_READY",
+          "latencyMs": 584.0999999996275
+        },
+        {
+          "id": "2_-11",
+          "state": "GPU_READY",
+          "latencyMs": 2761.199999999255
+        }
+      ],
+      "webglError": 0,
+      "memory": 832208703,
+      "loadMs": 9759.22903399996
+    },
+    {
+      "id": "LYE",
+      "direction": -1,
+      "s": 13278.57781645136,
+      "loaded": 18,
+      "triangles": 1441526,
+      "drawCalls": 357,
+      "cats": 1,
+      "states": [
+        {
+          "id": "-8_-5",
+          "state": "GPU_READY",
+          "latencyMs": 4862.899999999441
+        },
+        {
+          "id": "-7_-5",
+          "state": "GPU_READY",
+          "latencyMs": 1596.0999999996275
+        },
+        {
+          "id": "-7_-6",
+          "state": "GPU_READY",
+          "latencyMs": 3273.4000000003725
+        },
+        {
+          "id": "-6_-6",
+          "state": "GPU_READY",
+          "latencyMs": 2903.5
+        },
+        {
+          "id": "-6_-7",
+          "state": "GPU_READY",
+          "latencyMs": 434
+        },
+        {
+          "id": "-7_-7",
+          "state": "GPU_READY",
+          "latencyMs": 4909.9000000003725
+        },
+        {
+          "id": "-5_-6",
+          "state": "GPU_READY",
+          "latencyMs": 6660.200000000186
+        },
+        {
+          "id": "-5_-7",
+          "state": "GPU_READY",
+          "latencyMs": 678.1999999992549
+        },
+        {
+          "id": "-4_-6",
+          "state": "GPU_READY",
+          "latencyMs": 2353
+        },
+        {
+          "id": "-4_-7",
+          "state": "GPU_READY",
+          "latencyMs": 642.5
+        },
+        {
+          "id": "-3_-6",
+          "state": "GPU_READY",
+          "latencyMs": 5313
+        },
+        {
+          "id": "-3_-7",
+          "state": "GPU_READY",
+          "latencyMs": 2803.4000000003725
+        },
+        {
+          "id": "-2_-7",
+          "state": "GPU_READY",
+          "latencyMs": 2614.0999999996275
+        },
+        {
+          "id": "-2_-8",
+          "state": "GPU_READY",
+          "latencyMs": 4450.200000000186
+        },
+        {
+          "id": "-2_-6",
+          "state": "GPU_READY",
+          "latencyMs": 463.1000000005588
+        },
+        {
+          "id": "-1_-8",
+          "state": "GPU_READY",
+          "latencyMs": 9882
+        },
+        {
+          "id": "-1_-9",
+          "state": "GPU_READY",
+          "latencyMs": 3453.399999999441
+        },
+        {
+          "id": "0_-9",
+          "state": "GPU_READY",
+          "latencyMs": 862
+        }
+      ],
+      "webglError": 0,
+      "memory": 760461987,
+      "loadMs": 7829.3269209999125
+    },
+    {
+      "id": "SBJ",
+      "direction": -1,
+      "s": 11166.515470560882,
+      "loaded": 15,
+      "triangles": 2000930,
+      "drawCalls": 406,
+      "cats": 8,
+      "states": [
+        {
+          "id": "-10_-4",
+          "state": "GPU_READY",
+          "latencyMs": 3937.9000000003725
+        },
+        {
+          "id": "-9_-4",
+          "state": "GPU_READY",
+          "latencyMs": 875.3000000007451
+        },
+        {
+          "id": "-9_-5",
+          "state": "GPU_READY",
+          "latencyMs": 3922.9000000003725
+        },
+        {
+          "id": "-8_-5",
+          "state": "GPU_READY",
+          "latencyMs": 4862.899999999441
+        },
+        {
+          "id": "-8_-6",
+          "state": "GPU_READY",
+          "latencyMs": 1385.0999999996275
+        },
+        {
+          "id": "-7_-5",
+          "state": "GPU_READY",
+          "latencyMs": 1596.0999999996275
+        },
+        {
+          "id": "-7_-6",
+          "state": "GPU_READY",
+          "latencyMs": 3273.4000000003725
+        },
+        {
+          "id": "-9_-6",
+          "state": "GPU_READY",
+          "latencyMs": 333.70000000018626
+        },
+        {
+          "id": "-6_-6",
+          "state": "GPU_READY",
+          "latencyMs": 2903.5
+        },
+        {
+          "id": "-6_-7",
+          "state": "GPU_READY",
+          "latencyMs": 434
+        },
+        {
+          "id": "-7_-7",
+          "state": "GPU_READY",
+          "latencyMs": 4909.9000000003725
+        },
+        {
+          "id": "-5_-6",
+          "state": "GPU_READY",
+          "latencyMs": 6660.200000000186
+        },
+        {
+          "id": "-5_-7",
+          "state": "GPU_READY",
+          "latencyMs": 678.1999999992549
+        },
+        {
+          "id": "-4_-6",
+          "state": "GPU_READY",
+          "latencyMs": 2353
+        },
+        {
+          "id": "-4_-7",
+          "state": "GPU_READY",
+          "latencyMs": 642.5
+        }
+      ],
+      "webglError": 0,
+      "memory": 731042982,
+      "loadMs": 9625.13184799999
+    },
+    {
+      "id": "HAG",
+      "direction": -1,
+      "s": 8198.364393158656,
+      "loaded": 18,
+      "triangles": 1728070,
+      "drawCalls": 434,
+      "cats": 1,
+      "states": [
+        {
+          "id": "-10_-1",
+          "state": "GPU_READY",
+          "latencyMs": 2702.899999999441
+        },
+        {
+          "id": "-11_-1",
+          "state": "GPU_READY",
+          "latencyMs": 795.7000000001863
+        },
+        {
+          "id": "-10_-4",
+          "state": "GPU_READY",
+          "latencyMs": 3937.9000000003725
+        },
+        {
+          "id": "-9_-4",
+          "state": "GPU_READY",
+          "latencyMs": 875.3000000007451
+        },
+        {
+          "id": "-10_-3",
+          "state": "GPU_READY",
+          "latencyMs": 5919.200000000186
+        },
+        {
+          "id": "-9_-5",
+          "state": "GPU_READY",
+          "latencyMs": 3922.9000000003725
+        },
+        {
+          "id": "-8_-5",
+          "state": "GPU_READY",
+          "latencyMs": 4862.899999999441
+        },
+        {
+          "id": "-8_-6",
+          "state": "GPU_READY",
+          "latencyMs": 1385.0999999996275
+        },
+        {
+          "id": "-7_-5",
+          "state": "GPU_READY",
+          "latencyMs": 1596.0999999996275
+        },
+        {
+          "id": "-7_-6",
+          "state": "GPU_READY",
+          "latencyMs": 3273.4000000003725
+        },
+        {
+          "id": "-9_-6",
+          "state": "GPU_READY",
+          "latencyMs": 333.70000000018626
+        },
+        {
+          "id": "-6_-6",
+          "state": "GPU_READY",
+          "latencyMs": 2903.5
+        },
+        {
+          "id": "-6_-7",
+          "state": "GPU_READY",
+          "latencyMs": 434
+        },
+        {
+          "id": "-7_-7",
+          "state": "GPU_READY",
+          "latencyMs": 4909.9000000003725
+        },
+        {
+          "id": "-5_-6",
+          "state": "GPU_READY",
+          "latencyMs": 6660.200000000186
+        },
+        {
+          "id": "-5_-7",
+          "state": "GPU_READY",
+          "latencyMs": 678.1999999992549
+        },
+        {
+          "id": "-4_-6",
+          "state": "GPU_READY",
+          "latencyMs": 2353
+        },
+        {
+          "id": "-4_-7",
+          "state": "GPU_READY",
+          "latencyMs": 642.5
+        }
+      ],
+      "webglError": 0,
+      "memory": 820469868,
+      "loadMs": 5852.284492000006
+    },
+    {
+      "id": "BKD",
+      "direction": -1,
+      "s": 5494.2585982760875,
+      "loaded": 17,
+      "triangles": 1768946,
+      "drawCalls": 392,
+      "cats": 1,
+      "states": [
+        {
+          "id": "-12_1",
+          "state": "GPU_READY",
+          "latencyMs": 1678
+        },
+        {
+          "id": "-13_1",
+          "state": "GPU_READY",
+          "latencyMs": 2112.0999999996275
+        },
+        {
+          "id": "-12_0",
+          "state": "GPU_READY",
+          "latencyMs": 2542.5
+        },
+        {
+          "id": "-13_0",
+          "state": "GPU_READY",
+          "latencyMs": 2735
+        },
+        {
+          "id": "-11_0",
+          "state": "GPU_READY",
+          "latencyMs": 2005.5999999996275
+        },
+        {
+          "id": "-10_-1",
+          "state": "GPU_READY",
+          "latencyMs": 2702.899999999441
+        },
+        {
+          "id": "-11_-1",
+          "state": "GPU_READY",
+          "latencyMs": 795.7000000001863
+        },
+        {
+          "id": "-10_-2",
+          "state": "GPU_READY",
+          "latencyMs": 1786.5
+        },
+        {
+          "id": "-10_0",
+          "state": "GPU_READY",
+          "latencyMs": 3355.899999999441
+        },
+        {
+          "id": "-10_-4",
+          "state": "GPU_READY",
+          "latencyMs": 3937.9000000003725
+        },
+        {
+          "id": "-9_-4",
+          "state": "GPU_READY",
+          "latencyMs": 875.3000000007451
+        },
+        {
+          "id": "-10_-3",
+          "state": "GPU_READY",
+          "latencyMs": 5919.200000000186
+        },
+        {
+          "id": "-9_-5",
+          "state": "GPU_READY",
+          "latencyMs": 3922.9000000003725
+        },
+        {
+          "id": "-8_-5",
+          "state": "GPU_READY",
+          "latencyMs": 4862.899999999441
+        },
+        {
+          "id": "-8_-6",
+          "state": "GPU_READY",
+          "latencyMs": 1385.0999999996275
+        },
+        {
+          "id": "-7_-5",
+          "state": "GPU_READY",
+          "latencyMs": 1596.0999999996275
+        },
+        {
+          "id": "-9_-6",
+          "state": "GPU_READY",
+          "latencyMs": 333.70000000018626
+        }
+      ],
+      "webglError": 0,
+      "memory": 941736606,
+      "loadMs": 11596.70978699997
+    },
+    {
+      "id": "KID",
+      "direction": -1,
+      "s": 390.0000212836039,
+      "loaded": 17,
+      "triangles": 2465748,
+      "drawCalls": 290,
+      "cats": 8,
+      "states": [
+        {
+          "id": "-17_3",
+          "state": "GPU_READY",
+          "latencyMs": 1556.800000000745
+        },
+        {
+          "id": "-16_3",
+          "state": "GPU_READY",
+          "latencyMs": 3168.5999999996275
+        },
+        {
+          "id": "-12_1",
+          "state": "GPU_READY",
+          "latencyMs": 1678
+        },
+        {
+          "id": "-13_1",
+          "state": "GPU_READY",
+          "latencyMs": 2112.0999999996275
+        },
+        {
+          "id": "-12_0",
+          "state": "GPU_READY",
+          "latencyMs": 2542.5
+        },
+        {
+          "id": "-13_0",
+          "state": "GPU_READY",
+          "latencyMs": 2735
+        },
+        {
+          "id": "-12_2",
+          "state": "GPU_PREPARING"
+        },
+        {
+          "id": "-13_2",
+          "state": "GPU_READY",
+          "latencyMs": 5855.9000000003725
+        },
+        {
+          "id": "-11_0",
+          "state": "GPU_READY",
+          "latencyMs": 2005.5999999996275
+        },
+        {
+          "id": "-10_-1",
+          "state": "GPU_READY",
+          "latencyMs": 2702.899999999441
+        },
+        {
+          "id": "-11_-1",
+          "state": "GPU_READY",
+          "latencyMs": 795.7000000001863
+        },
+        {
+          "id": "-10_-2",
+          "state": "GPU_READY",
+          "latencyMs": 1786.5
+        },
+        {
+          "id": "-10_0",
+          "state": "GPU_READY",
+          "latencyMs": 3355.899999999441
+        },
+        {
+          "id": "-10_-4",
+          "state": "GPU_READY",
+          "latencyMs": 3937.9000000003725
+        },
+        {
+          "id": "-9_-4",
+          "state": "GPU_READY",
+          "latencyMs": 875.3000000007451
+        },
+        {
+          "id": "-10_-3",
+          "state": "GPU_READY",
+          "latencyMs": 5919.200000000186
+        },
+        {
+          "id": "-8_-6",
+          "state": "GPU_READY",
+          "latencyMs": 1385.0999999996275
+        }
+      ],
+      "webglError": 0,
+      "memory": 1031177142,
+      "loadMs": 6613.580508999992
+    }
+  ],
+  "samples": [
+    {
+      "id": "KID",
+      "frames": 25,
+      "medianMs": 13.100000000558794,
+      "p95Ms": 49.59999999962747,
+      "maximumMs": 51.90000000037253,
+      "drawCalls": 436,
+      "triangles": 3451772,
+      "memory": 517584541
+    },
+    {
+      "id": "BSW",
+      "frames": 25,
+      "medianMs": 20,
+      "p95Ms": 8086.4000000003725,
+      "maximumMs": 10322.699999999255,
+      "drawCalls": 648,
+      "triangles": 6314713,
+      "memory": 588049773
+    },
+    {
+      "id": "BMO",
+      "frames": 25,
+      "medianMs": 11.099999999627471,
+      "p95Ms": 59.200000000186265,
+      "maximumMs": 3697,
+      "drawCalls": 590,
+      "triangles": 5458381,
+      "memory": 638468499
+    },
+    {
+      "id": "TYS",
+      "frames": 25,
+      "medianMs": 11.799999999813735,
+      "p95Ms": 5839.700000000186,
+      "maximumMs": 6525.5999999996275,
+      "drawCalls": 432,
+      "triangles": 6365893,
+      "memory": 739436271
+    }
+  ],
+  "browser": "151.0.7922.173",
+  "coldLoadMs": 9216.736331,
+  "initial": {
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "resolution": [
+      960,
+      540
+    ],
+    "revision": "1fb0ea0751fe0c5657bb3b30db03e767698d1d250e97ffbe83db47b464e6e0a4",
+    "authored": 2,
+    "cars": 1174,
+    "stations": [
+      "KID",
+      "BKD",
+      "HAG",
+      "SBJ",
+      "LYE",
+      "CRA",
+      "OHL",
+      "ROW",
+      "LGG",
+      "SGB",
+      "THW",
+      "JEQ",
+      "BSW",
+      "BMO",
+      "BBS",
+      "SMA",
+      "TYS",
+      "ACG",
+      "OLT",
+      "SOL",
+      "WMR",
+      "DDG"
+    ]
+  },
+  "driving": {
+    "before": 354.0000212836039,
+    "after": 469.5833661790184,
+    "speed": 12.49381993077461,
+    "essentialReady": true,
+    "webglError": 0
+  },
+  "saved": {
+    "s": 36004.96354879336,
+    "revision": "1fb0ea0751fe0c5657bb3b30db03e767698d1d250e97ffbe83db47b464e6e0a4",
+    "chunks": 133
+  },
+  "resumed": {
+    "s": 36004.96354879336,
+    "revision": "1fb0ea0751fe0c5657bb3b30db03e767698d1d250e97ffbe83db47b464e6e0a4",
+    "chunks": 133
+  },
+  "status": "IMPLEMENTED_AND_VERIFIED",
+  "performanceAcceptance": "BLOCKED: reference GPU unavailable; measured software-renderer samples are reported without a hardware pass"
+}

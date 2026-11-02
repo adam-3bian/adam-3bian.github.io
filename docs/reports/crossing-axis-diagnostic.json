@@ -1,74 +1,146 @@
 {
-  "generatedAt": "2026-11-01T17:54:42.530Z",
+  "generatedAt": "2026-11-02T02:52:09.700Z",
   "sourceHashes": {
-    "scripts/audit-crossing-orientation.ts": "b313e7a5319cab36698cbda6055f0bac9f4f94132f5f4283ee8767f573ce6fff",
-    "src/render/assets.ts": "fb5298afa4e19bc62a28af56b90e8c5e1ff64f8ebe6e474386123efaa9fb623e"
+    "scripts/audit-crossing-orientation.js": "5ee3ea37b72fc51946e0931772ce5f62456fdd8d2373401250627f49263b5d22",
+    "src/render/assets.js": "74038f4d38409ec5f9a944889d3064763d0a896bcb54f5f8c901f9fa6c16a542",
+    "world-source/operations.json": "f99282efc70ebac66f82c780c88e2adb25430c8e5f0c3188f78db31f9081beb9"
   },
-  "fixture": "Perpendicular two-track crossing, track local Z, hypothetical road local X, fully closed barriers. This is a factory geometry test, not a measurement or surveyed binding of a real crossing.",
+  "fixture": "Perpendicular two-track crossing, track local Z, road local X, fully closed barriers.",
+  "scope": "Factory and all four stored operating crossings, including Blakedown: lowered arms across the actual stored road tangent and warning heads facing its approaches. This verifies orientation, not surveyed dimensions or a full swept-volume clearance certificate.",
   "barriers": [
     {
       "index": 0,
       "closedAxis": [
-        1,
+        2.691449756667046e-16,
         0,
-        0
+        1
       ],
-      "absoluteDotWithRoadDirection": 1,
-      "passesAcrossRoad": false
+      "absoluteDotWithRoadDirection": 2.691449756667046e-16,
+      "passesAcrossRoad": true
     },
     {
       "index": 1,
       "closedAxis": [
-        -1,
+        2.691449756667046e-16,
         0,
-        -1.4680635036365704e-16
+        -1
       ],
-      "absoluteDotWithRoadDirection": 1,
-      "passesAcrossRoad": false
+      "absoluteDotWithRoadDirection": 2.691449756667046e-16,
+      "passesAcrossRoad": true
     }
   ],
   "heads": [
     {
       "index": 0,
       "axis": [
+        -1,
         0,
-        0,
-        1
+        2.220446049250313e-16
       ],
-      "absoluteDotWithRoadDirection": 0,
-      "facesRoadApproach": false
+      "absoluteDotWithRoadDirection": 1,
+      "facesRoadApproach": true
     },
     {
       "index": 1,
       "axis": [
+        -1,
         0,
-        0,
-        1
+        2.220446049250313e-16
       ],
-      "absoluteDotWithRoadDirection": 0,
-      "facesRoadApproach": false
+      "absoluteDotWithRoadDirection": 1,
+      "facesRoadApproach": true
     },
     {
       "index": 2,
       "axis": [
+        1,
         0,
-        0,
-        1
+        2.220446049250313e-16
       ],
-      "absoluteDotWithRoadDirection": 0,
-      "facesRoadApproach": false
+      "absoluteDotWithRoadDirection": 1,
+      "facesRoadApproach": true
     },
     {
       "index": 3,
       "axis": [
+        1,
         0,
-        0,
-        1
+        2.220446049250313e-16
       ],
-      "absoluteDotWithRoadDirection": 0,
-      "facesRoadApproach": false
+      "absoluteDotWithRoadDirection": 1,
+      "facesRoadApproach": true
     }
   ],
-  "failed": true,
-  "status": "OPEN: shared factory barrier/head axes do not fit this perpendicular road fixture"
+  "authoredSites": [
+    {
+      "id": "blakedown-crossing",
+      "road": "way/24441396/0/piece/0",
+      "source": "https://www.openstreetmap.org/way/24441396",
+      "roadShear": -0.4058738498323613,
+      "closedArmDotWithRoad": [
+        0.000020729103177130614,
+        0.000020729103177130614
+      ],
+      "headDotWithRoad": [
+        0.9999999996393285,
+        0.9999999996393285,
+        0.9999999996393285,
+        0.9999999996393285
+      ],
+      "status": "IMPLEMENTED_AND_VERIFIED"
+    },
+    {
+      "id": "cradley-crossing",
+      "road": "way/52127510/0/piece/8",
+      "source": "https://www.openstreetmap.org/way/52127510",
+      "roadShear": 0.5333145574984889,
+      "closedArmDotWithRoad": [
+        0.0000022294464864236474,
+        0.0000022294464864236474
+      ],
+      "headDotWithRoad": [
+        0.9999999999979226,
+        0.9999999999979226,
+        0.9999999999979226,
+        0.9999999999979226
+      ],
+      "status": "IMPLEMENTED_AND_VERIFIED"
+    },
+    {
+      "id": "langley-crossing",
+      "road": "way/137652673/0/piece/1",
+      "source": "https://www.openstreetmap.org/way/137652673",
+      "roadShear": -0.2110224859106919,
+      "closedArmDotWithRoad": [
+        0.000004810824919765366,
+        0.000004810824919765366
+      ],
+      "headDotWithRoad": [
+        0.9999999998257593,
+        0.9999999998257593,
+        0.9999999998257594,
+        0.9999999998257594
+      ],
+      "status": "IMPLEMENTED_AND_VERIFIED"
+    },
+    {
+      "id": "bentley-heath-crossing",
+      "road": "way/27802023/0",
+      "source": "https://www.openstreetmap.org/way/27802023",
+      "roadShear": 0.2510391795479353,
+      "closedArmDotWithRoad": [
+        8.60366111687938e-10,
+        8.60366111687938e-10
+      ],
+      "headDotWithRoad": [
+        1.0000000000000002,
+        1.0000000000000002,
+        1.0000000000000004,
+        1.0000000000000004
+      ],
+      "status": "IMPLEMENTED_AND_VERIFIED"
+    }
+  ],
+  "failed": false,
+  "status": "IMPLEMENTED_AND_VERIFIED"
 }

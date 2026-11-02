@@ -1,0 +1,33 @@
+{
+  "id": "4_-9",
+  "bounds": [
+    4000,
+    -9000,
+    5000,
+    -8000
+  ],
+  "source": "world-source/chunks/4_-9.json",
+  "url": "data/grid/authored/4_-9.json.gz",
+  "codec": "gzip-json",
+  "sha256": "07ab1a22b634e85cf8da7fe59afeefaf7804b89a47339cc47c4aafc36f763019",
+  "contentSHA256": "6fe02714056c658085f610d19b47286593b7a78979364f0f7eb66ac09b3908f5",
+  "bytes": 4575235,
+  "sourceBytes": 28728969,
+  "authorMs": 11662.862655000004,
+  "composeMs": 479.3964750000159,
+  "instances": 15227,
+  "prefabs": 2144,
+  "geometries": 1945,
+  "characters": 0,
+  "triangles": 707798,
+  "originalTriangles": 707930,
+  "degenerateRemoved": 132,
+  "exceptions": 67,
+  "exceptionReasons": {
+    "unsupported-source-attachment": 12,
+    "OUTSIDE_AUTHORED_CORRIDOR": 24,
+    "retaining foundation exceeds bounded height/dimension/burial limits": 1,
+    "SOURCE_FOOTPRINT_CONFLICTS_WITH_ROAD_CLEARANCE": 1,
+    "SOURCE_RETAINED_WITHOUT_SEPARATE_RENDER_ASSEMBLY": 29
+  }
+}

@@ -1,5 +1,10 @@
 # Prefab construction: first implementation
 
+**Historical first-stage report.** The later full-route migration, current
+source ownership, tests and unresolved gates are documented in
+[AUTHORED-WORLD.md](AUTHORED-WORLD.md). Counts and stage statuses below describe
+the earlier slice commit, not the current branch.
+
 This is an incremental implementation on `railway`, starting from
 `363ea84b481ad8a2e0dc0a9439d60dba4e15fca6`. It does not finish the master brief.
 The existing playable map, station order, driving camera and operating simulation

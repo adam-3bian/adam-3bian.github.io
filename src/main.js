@@ -266,7 +266,7 @@ async function init() {
         const data = world.route;
         data.worldHash = __RAILWAY_WORLD_HASH__;
         route = new RouteGeometry(data);
-        route.setEndpointContext(endpointContext(route));
+        route.setEndpointContext(data.authoredEndpointContext||endpointContext(route));
         sim = new RailwaySimulation(route);
         sim.sound = name => audio.event(name);
         sim.onEvent = e => { if (e.type === 'aws' || e.type === 'tpws' || e.type === 'station' || e.type === 'direction' || e.type === 'complete')
@@ -310,7 +310,7 @@ async function init() {
             const dt = Math.min(1, (now - last) / 1000);
             last = now;
             accumulator += dt;
-            if (!sim.paused) {
+            if (!sim.paused && view.essentialReady()) {
                 while (accumulator >= 1 / 60) {
                     sim.update(1 / 60, input);
                     accumulator -= 1 / 60;

@@ -1,0 +1,29 @@
+{
+  "id": "-8_-4",
+  "bounds": [
+    -8000,
+    -4000,
+    -7000,
+    -3000
+  ],
+  "source": "world-source/chunks/-8_-4.json",
+  "url": "data/grid/authored/-8_-4.json.gz",
+  "codec": "gzip-json",
+  "sha256": "779e77df9cbf12dd4ef9bf82d37012fce58de3f171a34c0bc1fc6460a6ee5ee5",
+  "contentSHA256": "c85c6517846182553c69a38eac9844c01b182d88ea7a6fbdecfe0b23beeccc13",
+  "bytes": 353973,
+  "sourceBytes": 2141062,
+  "authorMs": 937.3132659999828,
+  "composeMs": 32.540024999994785,
+  "instances": 13,
+  "prefabs": 13,
+  "geometries": 13,
+  "characters": 0,
+  "triangles": 49696,
+  "originalTriangles": 49696,
+  "degenerateRemoved": 0,
+  "exceptions": 1,
+  "exceptionReasons": {
+    "OUTSIDE_AUTHORED_CORRIDOR": 1
+  }
+}

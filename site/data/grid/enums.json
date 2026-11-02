@@ -1714,53 +1714,71 @@
         "id": 0,
         "name": "straight",
         "prefabIds": [
-          "road/local/straight"
+          "road/reference/0"
         ]
       },
       {
         "id": 1,
         "name": "very small left curve",
-        "prefabIds": []
+        "prefabIds": [
+          "road/reference/1"
+        ]
       },
       {
         "id": 2,
         "name": "very small right curve",
-        "prefabIds": []
+        "prefabIds": [
+          "road/reference/2"
+        ]
       },
       {
         "id": 3,
         "name": "small left curve",
-        "prefabIds": []
+        "prefabIds": [
+          "road/reference/3"
+        ]
       },
       {
         "id": 4,
         "name": "small right curve",
-        "prefabIds": []
+        "prefabIds": [
+          "road/reference/4"
+        ]
       },
       {
         "id": 5,
         "name": "straight slope up",
-        "prefabIds": []
+        "prefabIds": [
+          "road/reference/5"
+        ]
       },
       {
         "id": 6,
         "name": "straight slope down",
-        "prefabIds": []
+        "prefabIds": [
+          "road/reference/6"
+        ]
       },
       {
         "id": 7,
         "name": "straight steep slope up",
-        "prefabIds": []
+        "prefabIds": [
+          "road/reference/7"
+        ]
       },
       {
         "id": 8,
         "name": "straight steep slope down",
-        "prefabIds": []
+        "prefabIds": [
+          "road/reference/8"
+        ]
       },
       {
         "id": 9,
         "name": "turnaround",
-        "prefabIds": []
+        "prefabIds": [
+          "road/reference/9"
+        ]
       }
     ],
     "ExtendedRoadPieceType": [
@@ -3899,27 +3917,37 @@
       {
         "id": "PIGEON",
         "name": "pigeon",
-        "prefabIds": []
+        "prefabIds": [
+          "ambient/bird"
+        ]
       },
       {
         "id": "CROW",
         "name": "crow",
-        "prefabIds": []
+        "prefabIds": [
+          "ambient/bird"
+        ]
       },
       {
         "id": "MAGPIE",
         "name": "magpie",
-        "prefabIds": []
+        "prefabIds": [
+          "ambient/bird"
+        ]
       },
       {
         "id": "STARLING",
         "name": "starling",
-        "prefabIds": []
+        "prefabIds": [
+          "ambient/bird"
+        ]
       },
       {
         "id": "GULL",
         "name": "gull",
-        "prefabIds": []
+        "prefabIds": [
+          "ambient/bird"
+        ]
       },
       {
         "id": "SPARROW",
@@ -4407,240 +4435,332 @@
       {
         "id": "ANTHROPOMORPHIC_CAT",
         "name": "anthropomorphic cat",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       }
     ],
     "CatRole": [
       {
         "id": "COMMUTER",
         "name": "commuter",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "LEISURE_TRAVELLER",
         "name": "leisure traveller",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "PASSENGER_WITH_LUGGAGE",
         "name": "passenger with luggage",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "SEATED_PASSENGER",
         "name": "seated passenger",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "CHILD_PASSENGER",
         "name": "child passenger",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "STATION_ATTENDANT",
         "name": "station attendant",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "PLATFORM_DISPATCHER",
         "name": "platform dispatcher",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "TICKET_STAFF",
         "name": "ticket staff",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "MAINTENANCE_WORKER",
         "name": "maintenance worker",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "HERITAGE_RAILWAY_STAFF",
         "name": "heritage railway staff",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       }
     ],
     "CatCoatPattern": [
       {
         "id": "SOLID",
         "name": "solid",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "TABBY",
         "name": "tabby",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "TUXEDO",
         "name": "tuxedo",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "TORTOISESHELL",
         "name": "tortoiseshell",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "CALICO",
         "name": "calico",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "BICOLOUR",
         "name": "bicolour",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "POINTED",
         "name": "pointed",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "GINGER",
         "name": "ginger",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "GREY",
         "name": "grey",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "BLACK",
         "name": "black",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "WHITE",
         "name": "white",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       }
     ],
     "CatClothingType": [
       {
         "id": "CASUAL",
         "name": "casual",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "COAT",
         "name": "coat",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "JACKET",
         "name": "jacket",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "BUSINESS_WEAR",
         "name": "business wear",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "RAILWAY_UNIFORM",
         "name": "railway uniform",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "HIGH_VIS_VEST",
         "name": "high vis vest",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "MAINTENANCE_OVERALLS",
         "name": "maintenance overalls",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "HERITAGE_UNIFORM",
         "name": "heritage uniform",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "SCARF",
         "name": "scarf",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "BACKPACK",
         "name": "backpack",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "SHOULDER_BAG",
         "name": "shoulder bag",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "LUGGAGE",
         "name": "luggage",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       }
     ],
     "CharacterAnimationState": [
       {
         "id": "IDLE",
         "name": "idle",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "WALK",
         "name": "walk",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "TURN",
         "name": "turn",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "SIT",
         "name": "sit",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "STAND_UP",
         "name": "stand up",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "WAIT",
         "name": "wait",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "LOOK_AROUND",
         "name": "look around",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "CARRY_LUGGAGE",
         "name": "carry luggage",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "GESTURE",
         "name": "gesture",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "STAFF_SIGNAL",
         "name": "staff signal",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "BOARDING",
         "name": "boarding",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       },
       {
         "id": "ALIGHTING",
         "name": "alighting",
-        "prefabIds": []
+        "prefabIds": [
+          "character/anthropomorphic-cat"
+        ]
       }
     ],
     "AssetImplementationStatus": [

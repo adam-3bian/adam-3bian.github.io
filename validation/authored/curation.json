@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "status": "IMPLEMENTED_UNVERIFIED",
+  "chunks": 133,
+  "instances": 746062,
+  "characters": 151,
+  "sourceBytes": 2051404220,
+  "cacheBytes": 315700076,
+  "duplicateRenderInstancesRemoved": 0,
+  "exceptions": 13013,
+  "navigationExceptions": [
+    {
+      "id": "KID/way/109274805/person/1802039036",
+      "chunk": "-17_3",
+      "reason": "Authored walking path meets a solid model; passenger retained at original supported waiting position"
+    },
+    {
+      "id": "DDG/way/125510148/person/2913340011",
+      "chunk": "16_5",
+      "reason": "Authored walking path meets a solid model; passenger retained at original supported waiting position"
+    },
+    {
+      "id": "DDG/way/125510149/person/2462892627",
+      "chunk": "16_5",
+      "reason": "Authored walking path meets a solid model; passenger retained at original supported waiting position"
+    },
+    {
+      "id": "BMO/way/439796341/staff/1061692175",
+      "chunk": "7_-7",
+      "reason": "Authored walking path meets a solid model; passenger retained at original supported waiting position"
+    },
+    {
+      "id": "BMO/way/439796342/person/3163678900",
+      "chunk": "7_-7",
+      "reason": "Authored walking path meets a solid model; passenger retained at original supported waiting position"
+    },
+    {
+      "id": "BMO/way/439796344/person/3098620359",
+      "chunk": "7_-7",
+      "reason": "Authored walking path meets a solid model; passenger retained at original supported waiting position"
+    },
+    {
+      "id": "BBS/platform-edges/103362882/person/3793687738",
+      "chunk": "8_-7",
+      "reason": "Authored walking path meets a solid model; passenger retained at original supported waiting position"
+    }
+  ],
+  "revision": "4b7aa44e2c4db78bf268f9119e61a6fd3ba542473998a9db3f8b7434c2cccae8",
+  "remaining": "Physical terrain seams, gradients, station recognition and reference-hardware performance are separate acceptance gates"
+}

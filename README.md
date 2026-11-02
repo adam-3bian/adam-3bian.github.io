@@ -1,6 +1,6 @@
 # Snow Hill Lines
 
-A playable WebGL 2 railway on the **railway** branch: Kidderminster–Dorridge, 22 stations, approximately 47.3 km, a Class 172 and the front-of-train view in both directions. Scenery is generated from solid-colour geometry using the uploaded geographic/frame references. This is a simulator-authored operating scenario with inferred profiles and infrastructure; the remaining acceptance gates are recorded in [docs/ACCEPTANCE.md](docs/ACCEPTANCE.md).
+A playable WebGL 2 railway on the **railway** branch: Kidderminster–Dorridge, 22 stations, approximately 47.3 km, a Class 172 and the front-of-train view in both directions. Scenery is composed from stored JSON prefab instances and solid-colour geometry using the supplied geographic/frame references. This is a simulator-authored operating scenario with inferred profiles and infrastructure; the current implementation and remaining acceptance gates are recorded in [docs/AUTHORED-WORLD.md](docs/AUTHORED-WORLD.md).
 
 The checked-in [site/](site/) folder is a complete static website. Serve its contents from any static host; it needs no npm, Node.js, server-side database or application. The repository root can also be served directly: its generated `index.html` loads the same files from `site/`.
 
@@ -43,6 +43,8 @@ npm run validate
 npm run audit:geometry
 node scripts/asset-budgets.js
 npm run diagnose:prefabs
+npm run diagnose:world
+npm run check:world
 npm run build:site
 npm run verify:site
 npm run build
@@ -71,10 +73,12 @@ For the current browser checks, run `npm run build:qa` then `node scripts/landsc
 
 ## Grid reconstruction
 
-The incremental [prefab construction implementation](docs/PREFAB-CONSTRUCTION.md)
-adds a working JSON scene at `prefab-preview.html`, using the existing grid,
-worker and static mesh batches. Its construction rules are tested separately;
-the live route has not yet been migrated. See that document for editing,
-verification and explicit stage-by-stage limits.
+The [authored-world implementation](docs/AUTHORED-WORLD.md) migrates all 133
+scenery chunks to explicit JSON geometry, definitions and placements. Its
+native construction scene remains available at `prefab-preview.html` for
+strict terrain, grade, port and support tests. Edit `world-source/`, run
+`npm run cache:world`, then validate and build. Normal builds cannot regenerate
+geography. The historical [first-slice audit](docs/PREFAB-CONSTRUCTION.md)
+records the gate that preceded the route migration.
 
 The runtime now loads the authoritative grid world while retaining the WebGL front view. See [GRID-WORLD.md](docs/GRID-WORLD.md) for source provenance, rebuilding, persistence and validation; [MAP-DATA-AUDIT.md](docs/MAP-DATA-AUDIT.md) for the source and migration audit; and [DATA-AND-TOOLING.md](docs/DATA-AND-TOOLING.md) for the remaining legacy offline tools. The SVR is limited to neighbouring Kidderminster scenery; the playable route remains Kidderminster–Dorridge.

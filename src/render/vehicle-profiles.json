@@ -1,0 +1,170 @@
+{
+  "SMALL_HATCHBACK": {
+    "id": "SMALL_HATCHBACK",
+    "length": 3.7,
+    "width": 1.66,
+    "height": 1.48,
+    "body": "car",
+    "confidence": "PROJECT_SCALE_APPROXIMATION"
+  },
+  "FAMILY_HATCHBACK": {
+    "id": "FAMILY_HATCHBACK",
+    "length": 4.35,
+    "width": 1.8,
+    "height": 1.5,
+    "body": "car",
+    "confidence": "PROJECT_SCALE_APPROXIMATION"
+  },
+  "SALOON": {
+    "id": "SALOON",
+    "length": 4.55,
+    "width": 1.82,
+    "height": 1.47,
+    "body": "car",
+    "confidence": "PROJECT_SCALE_APPROXIMATION"
+  },
+  "ESTATE": {
+    "id": "ESTATE",
+    "length": 4.65,
+    "width": 1.83,
+    "height": 1.52,
+    "body": "car",
+    "confidence": "PROJECT_SCALE_APPROXIMATION"
+  },
+  "SUV": {
+    "id": "SUV",
+    "length": 4.6,
+    "width": 1.92,
+    "height": 1.75,
+    "body": "car",
+    "confidence": "PROJECT_SCALE_APPROXIMATION"
+  },
+  "CROSSOVER": {
+    "id": "CROSSOVER",
+    "length": 4.35,
+    "width": 1.82,
+    "height": 1.65,
+    "body": "car",
+    "confidence": "PROJECT_SCALE_APPROXIMATION"
+  },
+  "SMALL_VAN": {
+    "id": "SMALL_VAN",
+    "length": 4.4,
+    "width": 1.8,
+    "height": 1.85,
+    "body": "van",
+    "confidence": "PROJECT_SCALE_APPROXIMATION"
+  },
+  "MEDIUM_VAN": {
+    "id": "MEDIUM_VAN",
+    "length": 5.4,
+    "width": 2,
+    "height": 2.45,
+    "body": "van",
+    "confidence": "PROJECT_SCALE_APPROXIMATION"
+  },
+  "LARGE_VAN": {
+    "id": "LARGE_VAN",
+    "length": 6.1,
+    "width": 2.05,
+    "height": 2.65,
+    "body": "van",
+    "confidence": "PROJECT_SCALE_APPROXIMATION"
+  },
+  "DELIVERY_VAN": {
+    "id": "DELIVERY_VAN",
+    "length": 5.6,
+    "width": 2.05,
+    "height": 2.6,
+    "body": "van",
+    "confidence": "PROJECT_SCALE_APPROXIMATION"
+  },
+  "TAXI": {
+    "id": "TAXI",
+    "length": 4.5,
+    "width": 1.85,
+    "height": 1.7,
+    "body": "car",
+    "confidence": "PROJECT_SCALE_APPROXIMATION"
+  },
+  "PRIVATE_HIRE": {
+    "id": "PRIVATE_HIRE",
+    "length": 4.55,
+    "width": 1.82,
+    "height": 1.47,
+    "body": "car",
+    "confidence": "PROJECT_SCALE_APPROXIMATION"
+  },
+  "SINGLE_DECKER_BUS": {
+    "id": "SINGLE_DECKER_BUS",
+    "length": 10.8,
+    "width": 2.5,
+    "height": 3.05,
+    "body": "bus",
+    "confidence": "PROJECT_SCALE_APPROXIMATION"
+  },
+  "DOUBLE_DECKER_BUS": {
+    "id": "DOUBLE_DECKER_BUS",
+    "length": 10.8,
+    "width": 2.5,
+    "height": 4.4,
+    "body": "double-bus",
+    "confidence": "PROJECT_SCALE_APPROXIMATION"
+  },
+  "COACH": {
+    "id": "COACH",
+    "length": 12,
+    "width": 2.5,
+    "height": 3.6,
+    "body": "coach",
+    "confidence": "PROJECT_SCALE_APPROXIMATION"
+  },
+  "RIGID_LORRY": {
+    "id": "RIGID_LORRY",
+    "length": 10.1,
+    "width": 2.5,
+    "height": 3.8,
+    "body": "lorry",
+    "confidence": "PROJECT_SCALE_APPROXIMATION"
+  },
+  "ARTICULATED_HGV": {
+    "id": "ARTICULATED_HGV",
+    "length": 16.5,
+    "width": 2.55,
+    "height": 4,
+    "body": "hgv",
+    "confidence": "PROJECT_SCALE_APPROXIMATION"
+  },
+  "MAINTENANCE_VEHICLE": {
+    "id": "MAINTENANCE_VEHICLE",
+    "length": 5.4,
+    "width": 2,
+    "height": 2.5,
+    "body": "van",
+    "confidence": "PROJECT_SCALE_APPROXIMATION"
+  },
+  "EMERGENCY_VEHICLE": {
+    "id": "EMERGENCY_VEHICLE",
+    "length": 5.5,
+    "width": 2.05,
+    "height": 2.7,
+    "body": "van",
+    "confidence": "PROJECT_SCALE_APPROXIMATION"
+  },
+  "MOTORCYCLE": {
+    "id": "MOTORCYCLE",
+    "length": 2.1,
+    "width": 0.78,
+    "height": 1.35,
+    "body": "bike",
+    "confidence": "PROJECT_SCALE_APPROXIMATION"
+  },
+  "BICYCLE": {
+    "id": "BICYCLE",
+    "length": 1.8,
+    "width": 0.62,
+    "height": 1.2,
+    "body": "bike",
+    "confidence": "PROJECT_SCALE_APPROXIMATION"
+  }
+}

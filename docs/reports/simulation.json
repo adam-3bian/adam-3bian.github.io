@@ -1,15 +1,16 @@
 {
-  "generatedAt": "2026-11-01T23:59:46.692Z",
+  "generatedAt": "2026-11-02T02:47:32.165Z",
   "sourceHashes": {
-    "scripts/validate-world.js": "bfd693a65786fdf6e9ad3d850547df884cb8b254fee001eaf61e27b59cb5478a",
+    "scripts/validate-world.js": "702de38feea0a7a408f2878ed9109dfb6ea128c1b136384f92031cec0dd58826",
     "src/core/geometry.js": "218e52c3e1a72679803583f58df63d2d447c913c17844aec262d42db9392d955",
-    "src/core/simulation.js": "95dc20114c27f74750486fc0fee917febb1bdb7c11d14ddd022b48713da9a39c",
+    "src/core/simulation.js": "112f5dfa82bab79afeca5f91b41da76514f88fc7baa07897cd9f32c492f74390",
     "src/render/trackwork.js": "8ddabbff2358f80644405d94ecb5638d9fb5c3966ed94968a21b8b6c582a6374",
-    "src/world/build.js": "39c1307ab0d9af0985a01c1bde27769e100bb8e546616ceae694e24927ea579d",
+    "src/world/build.js": "bce3675c04beb902caad6953231efbdb33e7073cf691f96800437155d110be80",
     "src/world/grid.js": "23421b435de23ecb6b20ee3738a32634d5ce0778467ff5520c22f8e7c2f757b2",
-    "public/data/grid/world.json": "ed33d60ee4012ab6418e8b07fa7466d0f71226ed526812f662f7a0c6f023126f"
+    "world-source/operations.json": "f99282efc70ebac66f82c780c88e2adb25430c8e5f0c3188f78db31f9081beb9",
+    "public/data/grid/authored-world.json": "bd8e3e9c9de185a529c00c7aee8d6179bf618b2878e018524ac9bd15d5627a43"
   },
-  "worldRevision": "2903b3d30210cbcde18aa97ee742c7ac4617df3323525779c83bfc4b79150000",
+  "worldRevision": "19fc55c80f54e85ff4a97d2e20d3567a0f9b390bcb1cf4d5cba5e63743113eb8",
   "routeLength": 47331.0824766397,
   "results": [
     {
@@ -51,7 +52,7 @@
         "tpwsInterventions": 0,
         "distance": 46982.36010804867
       },
-      "wallSeconds": 29.193807467999996,
+      "wallSeconds": 32.189906262,
       "lastEvents": [
         {
           "time": 32913.99999995061,
@@ -125,7 +126,7 @@
         "tpwsInterventions": 0,
         "distance": 47017.43931704198
       },
-      "wallSeconds": 7.942728178999998,
+      "wallSeconds": 12.453126767000002,
       "lastEvents": [
         {
           "time": 32583.39999995542,
@@ -172,7 +173,7 @@
         "tpwsInterventions": 0,
         "distance": 0
       },
-      "wallSeconds": 24.572553304999992,
+      "wallSeconds": 22.151489974999997,
       "eventCount": 1,
       "method": "Accelerated CPU rail simulation without a configured motor-road graph; not mixed-traffic or a two-hour browser/GPU soak."
     }

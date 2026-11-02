@@ -1,0 +1,176 @@
+{
+  "schema": 1,
+  "cpu": "AMD EPYC 9V74 80-Core Processor",
+  "quality": "balanced",
+  "requestedResolution": [
+    1920,
+    1080
+  ],
+  "referenceHardwareAvailable": false,
+  "errors": [],
+  "samples": [
+    {
+      "id": "KID",
+      "frames": 12,
+      "renderAndFinishMs": {
+        "median": 24,
+        "p95": 9425.799999999814,
+        "maximum": 9425.799999999814
+      },
+      "frameCadenceMs": {
+        "median": 10641.900000000373,
+        "p95": 13079.900000000373,
+        "maximum": 13079.900000000373
+      },
+      "drawCalls": 435,
+      "triangles": 3307128,
+      "loaded": 10,
+      "webglError": 0,
+      "sceneryReady": true,
+      "loadAndPrefetchMs": 112525.47076099999
+    },
+    {
+      "id": "BSW",
+      "frames": 12,
+      "renderAndFinishMs": {
+        "median": 39.10000000055879,
+        "p95": 55.5,
+        "maximum": 55.5
+      },
+      "frameCadenceMs": {
+        "median": 6683.4000000003725,
+        "p95": 10472,
+        "maximum": 10472
+      },
+      "drawCalls": 648,
+      "triangles": 6314713,
+      "loaded": 17,
+      "webglError": 0,
+      "sceneryReady": true,
+      "loadAndPrefetchMs": 195189.12550600004
+    },
+    {
+      "id": "BMO",
+      "frames": 12,
+      "renderAndFinishMs": {
+        "median": 17.90000000037253,
+        "p95": 84.29999999981374,
+        "maximum": 84.29999999981374
+      },
+      "frameCadenceMs": {
+        "median": 5053.5999999996275,
+        "p95": 25708.39999999944,
+        "maximum": 25708.39999999944
+      },
+      "drawCalls": 590,
+      "triangles": 5458405,
+      "loaded": 18,
+      "webglError": 0,
+      "sceneryReady": true,
+      "loadAndPrefetchMs": 84563.901824
+    },
+    {
+      "id": "TYS",
+      "frames": 12,
+      "renderAndFinishMs": {
+        "median": 15.399999999441206,
+        "p95": 5654.700000000186,
+        "maximum": 5654.700000000186
+      },
+      "frameCadenceMs": {
+        "median": 4407.4000000003725,
+        "p95": 12081.600000000559,
+        "maximum": 12081.600000000559
+      },
+      "drawCalls": 432,
+      "triangles": 6365893,
+      "loaded": 18,
+      "webglError": 0,
+      "sceneryReady": true,
+      "loadAndPrefetchMs": 103011.38186299999
+    }
+  ],
+  "memoryCycles": [
+    {
+      "cycle": 0,
+      "heap": 597254292,
+      "loaded": 17,
+      "walkers": 23,
+      "cacheBytes": 93987337,
+      "gpuMemory": {
+        "geometries": 337,
+        "textures": 3
+      }
+    },
+    {
+      "cycle": 1,
+      "heap": 520292082,
+      "loaded": 17,
+      "walkers": 16,
+      "cacheBytes": 94593203,
+      "gpuMemory": {
+        "geometries": 498,
+        "textures": 3
+      }
+    },
+    {
+      "cycle": 2,
+      "heap": 634330650,
+      "loaded": 18,
+      "walkers": 23,
+      "cacheBytes": 94593203,
+      "gpuMemory": {
+        "geometries": 497,
+        "textures": 3
+      }
+    }
+  ],
+  "browser": "151.0.7922.173",
+  "coldLoadMs": 14444.721586,
+  "initial": {
+    "revision": "d1e7fc8589dc51edc11c15f322364c1747aee6e4e96e89428299ed0d9e3b872f",
+    "resolution": [
+      1920,
+      1080
+    ],
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "authoredOperatingModels": 664,
+    "signals": 110,
+    "switches": 32
+  },
+  "retainedMemoryGrowth": 0.06207801014848128,
+  "transientFailure": {
+    "tile": "16_5",
+    "requests": 2,
+    "recovered": true
+  },
+  "driving": {
+    "before": 354.0000212836039,
+    "after": 469.5833661790184,
+    "speed": 12.49381993077461,
+    "essentialReady": true
+  },
+  "saved": {
+    "s": 469.5833661790184,
+    "revision": "d1e7fc8589dc51edc11c15f322364c1747aee6e4e96e89428299ed0d9e3b872f",
+    "chunks": 133
+  },
+  "resumed": {
+    "s": 469.5833661790184,
+    "revision": "d1e7fc8589dc51edc11c15f322364c1747aee6e4e96e89428299ed0d9e3b872f",
+    "chunks": 133
+  },
+  "status": "IMPLEMENTED_AND_VERIFIED",
+  "performanceAcceptance": "BLOCKED: RTX 3060 reference hardware unavailable. Short software-renderer measurements are not a continuous-drive benchmark.",
+  "javascriptHeapTarget": "IMPLEMENTED_AND_VERIFIED",
+  "memoryTarget": "IMPLEMENTED_UNVERIFIED",
+  "memoryScope": "Collected JavaScript heap only; GPU object counts do not establish GPU retained bytes or the total retained-memory target.",
+  "environment": {
+    "cpuQuotaCores": 2,
+    "memoryLimitBytes": 8589934592,
+    "gpu": "Chromium SwiftShader software renderer",
+    "concurrentWork": "Some captures overlapped CPU geometry diagnostics and tests. These figures are measurements of this available environment, not a reference-GPU comparison."
+  },
+  "evidenceRevisionNote": "Captured before the final 30-invalid-bridge quarantine and cat-turn animation correction. The final smoke report covers the repaired source revision.",
+  "availableHardwarePerformance": "INCOMPLETE: actual frame cadence and streaming times exceed the target; render submission times must not be substituted for full frame cadence."
+}

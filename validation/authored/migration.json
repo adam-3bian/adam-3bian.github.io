@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "status": "IMPLEMENTED_UNVERIFIED",
+  "chunks": 133,
+  "instances": 746062,
+  "characters": 151,
+  "sourceBytes": 1913204575,
+  "cacheBytes": 302283358,
+  "triangles": 45316817,
+  "degenerateRemoved": 33503,
+  "exceptions": 13013,
+  "sourceRevision": "2903b3d30210cbcde18aa97ee742c7ac4617df3323525779c83bfc4b79150000",
+  "revision": "5539372f166008639f4b1db8b5fc768d2324663f28c187103a8935f640407aed",
+  "remaining": "Full-route geometry, station recognition and performance acceptance must be checked separately"
+}

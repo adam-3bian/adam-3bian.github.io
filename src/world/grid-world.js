@@ -1,5 +1,6 @@
 import { routeResourceUrl } from '../core/resource-url.js';
 import { decodeGrid, GRID } from './grid.js';
+import {decodeAuthoredBytes} from './authored-codec.js';
 export async function sha256(bytes) { return Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', bytes)), v => v.toString(16).padStart(2, '0')).join(''); }
 async function readResponse(response, stage, progress) {
     const size = Number(response.headers.get('content-length')), encoding = response.headers.get('content-encoding');
@@ -37,6 +38,7 @@ export class GridWorld {
     pending = new Map();
     catalogue;
     enums;
+    savedTiles;
     constructor(document, terrain, baseURI, saved) {
         this.document = document;
         this.terrain = terrain;
@@ -44,10 +46,12 @@ export class GridWorld {
         if (document.schema !== 1 || JSON.stringify(document.grid) !== JSON.stringify(GRID))
             throw new Error('Unsupported grid world format.');
         this.route = decodeGrid(document.route);
+        if(document.authoredWorld){this.route.authoredWorld=document.authoredWorld;this.route.tiles=document.tiles;this.route.ambientZones=document.ambientZones||[];}
         this.route.gridRevision = document.revision;
+        this.savedTiles=saved?.tiles;
         if (saved)
             for (const [id, tile] of Object.entries(saved.tiles))
-                this.tiles.set(id, tile);
+                this.cacheTile(id, tile);
         this.catalogue = saved?.catalogue;
         this.enums = saved?.enums;
     }
@@ -76,10 +80,17 @@ export class GridWorld {
             progress?.({ stage: 'saved', loaded: 1, total: 1 });
             return new GridWorld(saved.document, saved.terrain, baseURI, saved);
         }
-        const r = await fetch(routeResourceUrl('data/grid/world.json', baseURI));
+        const r = await fetch(routeResourceUrl('data/grid/authored-world.json', baseURI),{signal:AbortSignal.timeout(30000)});
         if (!r.ok)
             throw new Error('The railway grid world could not be loaded.');
         const document = JSON.parse(new TextDecoder().decode(await readResponse(r, 'world', progress)));
+        if(document.routeData){
+            const response=await fetch(routeResourceUrl(document.routeData.url,baseURI),{signal:AbortSignal.timeout(30000)});
+            if(!response.ok)throw Error(`Operational world data: HTTP ${response.status}`);
+            const bytes=await readResponse(response,'operations',progress);
+            const hash=await sha256(bytes);if(hash!==document.routeData.sha256&&hash!==document.routeData.contentSHA256)throw Error('Operational world data belongs to another revision');
+            document.route=await GridWorld.decodeJSON(bytes,document.routeData.contentSHA256);
+        }
         const response = await fetch(routeResourceUrl(document.route.terrain.url, baseURI));
         if (!response.ok)
             throw new Error('The world height grid could not be loaded.');
@@ -88,10 +99,24 @@ export class GridWorld {
             throw new Error('The world height grid belongs to another revision.');
         return new GridWorld(document, terrain, baseURI);
     }
+    static async decodeJSON(bytes,hash){
+        if(typeof Worker==='undefined')return decodeAuthoredBytes(bytes,hash);
+        const worker=new Worker(new URL('./data.worker.js',import.meta.url),{type:'module'});
+        try{return await new Promise((resolve,reject)=>{const timer=setTimeout(()=>reject(Error('Operational world decoding timed out')),90000);worker.onmessage=({data})=>{clearTimeout(timer);data.error?reject(Error(data.error)):resolve(data.value);};worker.onerror=e=>{clearTimeout(timer);reject(Error(e.message));};worker.postMessage({bytes,hash},[bytes]);});}
+        finally{worker.terminate();}
+    }
+    cacheTile(id,value){
+        this.tiles.delete(id);this.tiles.set(id,value);
+        const size=v=>typeof v==='string'?v.length*2:v.byteLength||JSON.stringify(v).length*2;
+        let bytes=[...this.tiles.values()].reduce((n,v)=>n+size(v),0);
+        for(const [key,tile] of this.tiles){if(bytes<=96*1024*1024||this.tiles.size===1)break;bytes-=size(tile);this.tiles.delete(key);}
+    }
     /** Keep archived tiles as their checked JSON bytes until they are needed for a scene. */
     async encodedTile(id) {
-        if (this.tiles.has(id))
-            return this.tiles.get(id);
+        if (this.tiles.has(id)) {
+            const value=this.tiles.get(id);this.cacheTile(id,value);return value;
+        }
+        if(this.savedTiles?.[id]!==undefined){const value=this.savedTiles[id];this.cacheTile(id,value);return value;}
         const pending = this.pending.get(id);
         if (pending)
             return pending;
@@ -103,12 +128,17 @@ export class GridWorld {
             if (!r.ok)
                 throw new Error(`World tile ${id}: HTTP ${r.status}`);
             const bytes = await r.arrayBuffer();
-            if (await sha256(bytes) !== tile.sha256)
+            const hash=await sha256(bytes);
+            if (hash !== tile.sha256 && !(tile.codec==='gzip-json'&&hash===tile.contentSHA256))
                 throw new Error(`World tile ${id} belongs to another revision`);
+            if (tile.codec === 'gzip-json') {
+                this.cacheTile(id, bytes);
+                return bytes;
+            }
             const encoded = new TextDecoder().decode(bytes);
             if (JSON.parse(encoded).id !== id)
                 throw new Error(`World tile ${id} has an invalid owner`);
-            this.tiles.set(id, encoded);
+            this.cacheTile(id, encoded);
             return encoded;
         })();
         this.pending.set(id, task);
@@ -121,6 +151,11 @@ export class GridWorld {
     }
     async tile(id) {
         const encoded = await this.encodedTile(id);
+        const descriptor=this.document.tiles.find(t=>t.id===id);
+        if(descriptor?.codec==='gzip-json'){
+            if(!(encoded instanceof ArrayBuffer))throw new Error(`Invalid saved authored chunk ${id}`);
+            return {id,composition:'AUTHORED_GZIP',bytes:encoded.slice(0),contentSHA256:descriptor.contentSHA256};
+        }
         const tile = decodeGrid(typeof encoded === 'string' ? JSON.parse(encoded) : encoded);
         if (this.document.composition === 1) {
             const context = await Promise.all([id, ...(this.document.tiles.find(t=>t.id===id).dependencies || [])].map(async key=>{
@@ -131,6 +166,6 @@ export class GridWorld {
         return tile;
     }
     /** Capture every tile before atomically saving a journey and its world. */
-    async snapshot() { const todo = [...this.document.tiles]; await Promise.all(Array.from({ length: 4 }, async () => { while (todo.length)
-        await this.encodedTile(todo.pop().id); })); return { document: this.document, tiles: Object.fromEntries(this.tiles), terrain: this.terrain, ...(this.document.composition===1?{catalogue:this.catalogue,enums:this.enums}:{}) }; }
+    async snapshot() { const todo = [...this.document.tiles],tiles=new Map(); await Promise.all(Array.from({ length: 4 }, async () => { while (todo.length){
+        const id=todo.pop().id;tiles.set(id,await this.encodedTile(id));} })); return { document: this.document, tiles: Object.fromEntries(tiles), terrain: this.terrain, ...(this.document.composition===1?{catalogue:this.catalogue,enums:this.enums}:{}) }; }
 }

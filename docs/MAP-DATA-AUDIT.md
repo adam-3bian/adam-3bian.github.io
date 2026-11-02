@@ -1,5 +1,8 @@
 # Map-data audit
 
+This is the historical grid audit. The current source/cache contract and
+route-wide migration evidence are in [AUTHORED-WORLD.md](AUTHORED-WORLD.md).
+
 Repository `adam-3bian.github.io`, branch `railway`; baseline commit
 `4777fb4183108eae565034c2e776527b76d3292f`. The working tree was clean when
 this repair began. The existing route is Kidderminster–Birmingham–Dorridge,

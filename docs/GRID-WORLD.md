@@ -1,10 +1,9 @@
 # Authoritative grid reconstruction
 
-Current qualification: this legacy description concerns broad map records.
-Permanent trees and several component/support placements still derive at runtime;
-the complete route is not yet prefab/JSON-authoritative. The newer
-[prefab implementation audit](PREFAB-CONSTRUCTION.md) records the actual boundary
-and the first separately tested construction scene.
+This document describes the archived pre-migration grid format. The current
+runtime uses the 133-chunk [authored world](AUTHORED-WORLD.md), including stored
+permanent scenery and operating-equipment placements. The files and runtime
+derivation described below remain for archived saved-world compatibility.
 
 Scope is the existing Kidderminster–Birmingham–Dorridge game, on `railway` only.
 The SVR is **Kidderminster scenery only**: Town station, its yard and works,

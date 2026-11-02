@@ -7,6 +7,10 @@ import { routeResourceUrl } from '../core/resource-url.js';
 import { makeSwitch, setSwitchBlend } from './trackwork.js';
 import { ViewportSizing } from './viewport.js';
 import { crossingShear } from '../world/orientation.js';
+import {animateCat} from './cats.js';
+import {AmbientLife} from './ambient-life.js';
+import {ChunkLifecycle,streamCandidates,chunkDistance} from '../world/chunk-streaming.js';
+import {position as gridPosition} from '../world/grid.js';
 /** Send only the information needed to compose scenery to the worker. The
  * authoritative grid/graph and source metadata stay in the main world. */
 export function sceneryWorkerData(data) {
@@ -37,6 +41,8 @@ export class RailwayRenderer {
     requestTimers = new Map();
     requestAborts = new Map();
     tileProgress = new Map();
+    lifecycle = new ChunkLifecycle();
+    transitionTile(id,token,state){this.lifecycle.transition(id,token,state);}
     initialisationTimer;
     nextRequestToken = 0;
     terrainSource;
@@ -73,6 +79,7 @@ export class RailwayRenderer {
         this.data = data;
         this.route = route;
         this.sim = sim;
+        this.ambientLife=new AmbientLife(this.scene,data.ambientZones||[]);
         const canvas = document.createElement('canvas');
         let context = null;
         try {
@@ -140,7 +147,8 @@ export class RailwayRenderer {
         if (this.initialisationTimer !== undefined) window.clearTimeout(this.initialisationTimer);
         const worker=this.worker,terrain=this.terrainSource.slice(0);
         this.initialisationTimer=window.setTimeout(()=>{if(this.worker===worker&&!this.ready)this.restartWorker('Scenery worker initialisation timed out');},90000);
-        worker.postMessage({ type: 'init', route: sceneryWorkerData(this.data), terrain }, [terrain]); }
+        if(this.data.authoredWorld)worker.postMessage({type:'init',authored:true});
+        else worker.postMessage({ type: 'init', route: sceneryWorkerData(this.data), terrain }, [terrain]); }
     restartWorker(reason) {
         this.ready = false;
         if (this.initialisationTimer !== undefined) window.clearTimeout(this.initialisationTimer);
@@ -186,6 +194,7 @@ export class RailwayRenderer {
         if (message.id && (!this.requestTokens.has(message.id) || message.token !== this.requestTokens.get(message.id)))
             return;
         if (message.type === 'progress' && typeof message.id === 'string' && Number.isFinite(message.fraction)) {
+            if(['DECODED','COMPOSED'].includes(message.stage))this.transitionTile?.(message.id,message.token,message.stage);
             const fraction=clamp(message.fraction,0,1),previous=this.tileProgress.get(message.id) ?? 0;
             if(fraction>previous){this.tileProgress.set(message.id,fraction);this.refreshTileTimeout(message.id,message.token);this.onProgress?.();}
             return;
@@ -213,6 +222,7 @@ export class RailwayRenderer {
         }
         let geometry;
         try {
+            if(message.lodIndex!==undefined&&(!(message.lodIndex instanceof Uint32Array)||message.lodIndex.length%3||!message.lodIndex.every(i=>i<packet.position.length/3)))throw Error('Invalid distant geometry indices');
             geometry = packetGeometry(packet);
         }
         catch (error) {
@@ -220,9 +230,7 @@ export class RailwayRenderer {
                 this.tileFailed(message.id, `Invalid geometry: ${error instanceof Error ? error.message : String(error)}`);
             return;
         }
-        this.clearRequest(message.id);
-        this.workerFailures = 0;
-        this.tileRetries.delete(message.id);
+        this.transitionTile?.(message.id,message.token,'COMPOSED');
         const material = new THREE.MeshStandardMaterial({ vertexColors: true, roughness: .94, metalness: 0, side: THREE.DoubleSide, flatShading: true });
         const mesh = new THREE.Mesh(geometry, material);
         mesh.receiveShadow = true;
@@ -230,7 +238,19 @@ export class RailwayRenderer {
         mesh.name = `tile:${message.id}`;
         if (message.origin) mesh.position.fromArray(message.origin);
         this.scene.add(mesh);
-        this.loaded.set(message.id, { mesh, used: performance.now(), walkers: [] });
+        let distant;
+        if(message.lodIndex?.length){distant=new THREE.BufferGeometry();for(const [key,attribute]of Object.entries(geometry.attributes))distant.setAttribute(key,attribute);distant.setIndex(new THREE.BufferAttribute(message.lodIndex,1));distant.boundingSphere=geometry.boundingSphere;}
+        this.loaded.set(message.id, { mesh,nearGeometry:geometry,distantGeometry:distant,bounds:this.data?.tiles.find(t=>t.id===message.id)?.bounds,placementCount:(message.placements||[]).length,used: performance.now(), walkers: [],gpuReady:false });
+        this.transitionTile?.(message.id,message.token,'GPU_PREPARING');
+        this.tileProgress?.set(message.id,.95);
+        mesh.frustumCulled=false;
+        mesh.onAfterRender=()=>{
+            mesh.onAfterRender=()=>{};mesh.frustumCulled=true;
+            const tile=this.loaded.get(message.id);if(!tile||this.requestTokens.get(message.id)!==message.token)return;
+            this.workerFailures=0;this.tileRetries.delete(message.id);
+            tile.gpuReady=true;this.transitionTile?.(message.id,message.token,'GPU_READY');this.clearRequest(message.id);
+            queueMicrotask(()=>{if(!this.disposed){this.onProgress?.();this.updateTiles(true);}});
+        };
         this.tileCount = this.loaded.size;
         this.triangles += packet.index.length / 3;
         this.placements += (message.placements || []).length;
@@ -241,15 +261,17 @@ export class RailwayRenderer {
                 existing.tiles.add(message.id);
                 continue;
             }
-            const model = this.factory.furniture('person', { id: walker.id, color: walker.role === 'staff' ? 0xd0a34c : 0x61738a });
+            const model = this.factory.furniture('person', { id: walker.id, role:walker.role==='staff'?'PLATFORM_DISPATCHER':walker.role,seed:walker.seed,clothing:walker.clothing,coatPattern:walker.coatPattern });
             this.scene.add(model);
-            this.walkers.set(walker.id, { path: new Polyline(walker.points), model, speed: walker.speed || .7, phase: hashId(walker.id) % 20, tiles: new Set([message.id]) });
+            this.walkers.set(walker.id, { path: new Polyline(walker.points), model, speed: walker.speed ?? .7, state:walker.state||'WALK',yaw:walker.yaw||0,lastAnimation:0,phase: hashId(walker.id) % 20, tiles: new Set([message.id]) });
         }
         this.evictInactiveTiles();
         this.onProgress?.();
-        this.updateTiles(true);
+        if(this.renderer){Promise.resolve(this.renderer.compileAsync(this.scene,this.camera)).then(()=>{if(!this.disposed)requestAnimationFrame(()=>{if(!this.disposed&&this.loaded.get(message.id)?.mesh===mesh)this.renderer.render(this.scene,this.camera);});}).catch(error=>{if(this.requestTokens.get(message.id)===message.token)this.tileFailed(message.id,`GPU preparation failed: ${error.message}`);});}
     }
     tileFailed(id, reason) {
+        this.transitionTile?.(id,this.requestTokens.get(id)||this.lifecycle?.records.get(id)?.token||0,'FAILED');
+        const pending=this.loaded?.get(id);if(pending&&!pending.gpuReady)this.releaseTile(id);
         this.clearRequest(id);
         const attempts = (this.tileRetries.get(id)?.attempts ?? 0) + 1;
         const next = performance.now() + Math.min(4000, 250 * 2 ** (attempts - 1));
@@ -275,7 +297,8 @@ export class RailwayRenderer {
     resetTraffic() { for (const model of this.carModels.values())
         this.discardRoadModel(model); this.carModels.clear(); }
     preparationTileIds() { const p = this.route.lanePose(this.sim.player.s, this.sim.player.lane).position; return this.data.tiles.filter(t => Math.hypot(Math.max(t.bounds[0] - p[0], 0, p[0] - t.bounds[2]), Math.max(t.bounds[1] - p[2], 0, p[2] - t.bounds[3])) < 250).map(t => t.id); }
-    preparationProgress() { const needed=this.preparationTileIds(); return { loaded: needed.filter(id => this.loaded.has(id)).length, total: needed.length, progress: needed.reduce((sum,id)=>sum+(this.loaded.has(id)?1:this.tileProgress.get(id)||0),0), failed: needed.find(id => !this.loaded.has(id) && (this.tileRetries.get(id)?.attempts ?? 0) >= 4) }; }
+    preparationProgress() { const needed=this.preparationTileIds(); return { loaded: needed.filter(id => this.loaded.get(id)?.gpuReady).length, total: needed.length, progress: needed.reduce((sum,id)=>sum+(this.loaded.get(id)?.gpuReady?1:this.tileProgress.get(id)||0),0), failed: needed.find(id => !this.loaded.get(id)?.gpuReady && (this.tileRetries.get(id)?.attempts ?? 0) >= 4) }; }
+    essentialReady(){const p=this.route.lanePose(this.sim.player.s,this.sim.player.lane).position;return this.data.tiles.filter(t=>chunkDistance(t,p)<120).every(t=>this.loaded.get(t.id)?.gpuReady);}
     cancelObsoleteTile() {
         if(!this.ready)return;
         const needed=new Set(this.preparationTileIds()),obsolete=[...this.requested].filter(id=>!needed.has(id));
@@ -296,6 +319,7 @@ export class RailwayRenderer {
     placeOnLane(group, s, lane, side = 0, dy = 0, reverse = false) { const p = this.route.lanePose(s, lane); group.position.set(p.position[0] + p.right[0] * side, p.position[1] + dy, p.position[2] + p.right[2] * side); group.rotation.y = p.yaw + (reverse ? Math.PI : 0); this.scene.add(group); }
     placeRailDevice(group, s, lane, dy, direction) { const pose = this.route.lanePose(s, lane), axes = trackBasis(pose, direction); group.position.set(...pose.position).addScaledVector(new THREE.Vector3(...axes.up), dy); orient(group, axes); this.scene.add(group); }
     makeInfrastructure() {
+        if(this.data.authoredInfrastructure)return this.makeAuthoredInfrastructure();
         for (const signal of this.sim.signals) {
             const group = this.factory.signal({ id: signal.id, aspect: 'red', aspects: signal.aspects });
             this.placeOnLane(group, signal.s, signal.lane, -signal.direction * 2.1, -.4, signal.direction === -1);
@@ -339,17 +363,23 @@ export class RailwayRenderer {
             this.crossingModels.set(crossing.id, group);
         }
     }
+    makeAuthoredInfrastructure(){
+        const ids=new Set();for(const entry of this.data.authoredInfrastructure.models){if(ids.has(entry.id)||!Array.isArray(entry.anchor)||entry.anchor.length!==3||!entry.anchor.every(Number.isSafeInteger)||entry.residual?.length!==3||!entry.residual.every(Number.isFinite)||entry.quaternion?.length!==4||!entry.quaternion.every(Number.isFinite)||Math.abs(Math.hypot(...entry.quaternion)-1)>1e-6)throw Error(`Invalid authored operating placement ${entry.id}`);ids.add(entry.id);
+            let group;const config={...entry.config,id:entry.id};if(entry.kind==='signal'){group=this.factory.signal({...config,aspect:'red'});this.signalModels.set(entry.id,group);}else if(entry.kind==='crossing'){group=this.factory.crossing(config);this.crossingModels.set(entry.id,group);}else if(['aws','tpws'].includes(entry.kind)){group=this.factory.furniture(entry.kind,config);if(entry.config.bedMount)for(const x of [-.5,.5])for(const z of [-.42,.42]){const foot=new THREE.Mesh(this.loopFootGeometry,this.loopFootMaterial);foot.position.set(x,-.12,z);foot.castShadow=true;foot.receiveShadow=true;group.add(foot);}}else throw Error(`Unknown operating prefab ${entry.prefabId}`);
+            group.position.fromArray(gridPosition(entry.anchor).map((v,i)=>v+entry.residual[i]));group.quaternion.fromArray(entry.quaternion);this.scene.add(group);
+        }
+        for(const point of this.sim.trackwork.switches){const group=makeSwitch(point);this.scene.add(group);this.pointModels.set(point.id,group);}
+    }
     async updateTiles(force = false) {
         if (!this.ready)
             return;
         const s = this.sim.player.s;
-        if (!force && Math.abs(s - this.lastS) < 100)
+        if (!force && Math.abs(s - this.lastS) < 75 && this.lastDirection===this.sim.player.direction)
             return;
         this.lastS = s;
-        const pos = this.route.sample(s).position;
-        const radius = this.quality === 'high' ? 1750 : this.quality === 'low' ? 900 : 1300;
+        this.lastDirection=this.sim.player.direction;
         const now = performance.now();
-        const tiles = this.data.tiles.map(tile => { const b = tile.bounds; const d = Math.hypot(Math.max(b[0] - pos[0], 0, pos[0] - b[2]), Math.max(b[1] - pos[2], 0, pos[2] - b[3])); return { tile, d }; }).filter(x => x.d < radius).sort((a, b) => a.d - b.d);
+        const tiles = streamCandidates(this.data.tiles,this.route,this.sim.player,this.quality);
         const ids = new Set(tiles.map(x => x.tile.id));
         for (const { tile } of tiles) {
             const loaded = this.loaded.get(tile.id);
@@ -363,6 +393,7 @@ export class RailwayRenderer {
             if (retry && (retry.attempts >= 4 || now < retry.next))
                 continue;
             const token = ++this.nextRequestToken, abort = new AbortController();
+            this.transitionTile?.(tile.id,token,'QUEUED');
             this.requested.add(tile.id);
             this.requestTokens.set(tile.id, token);
             this.requestAborts.set(tile.id, abort);
@@ -380,8 +411,9 @@ export class RailwayRenderer {
                 if (this.requestTokens.get(tile.id) !== token)
                     return;
                 this.requestAborts.delete(tile.id);
+                this.transitionTile?.(tile.id,token,'FETCHED');
                 this.refreshTileTimeout(tile.id,token);
-                this.worker.postMessage({ type: 'build', tile: data, token });
+                this.worker.postMessage({ type: 'build', tile: data, token },data.bytes instanceof ArrayBuffer?[data.bytes]:[]);
             }
             catch (e) {
                 if (this.requestTokens.get(tile.id) === token)
@@ -404,20 +436,12 @@ export class RailwayRenderer {
                 break;
             if (active.has(id))
                 continue;
-            this.triangles -= tile.mesh.geometry.index.count / 3;
-            this.scene.remove(tile.mesh);
-            tile.mesh.geometry.dispose();
-            tile.mesh.material.dispose();
-            for (const walkerId of tile.walkers || []) {
-                const walker = this.walkers?.get(walkerId);
-                if (!walker) continue;
-                walker.tiles.delete(id);
-                if (!walker.tiles.size) { this.scene.remove(walker.model); this.walkers.delete(walkerId); }
-            }
-            this.loaded.delete(id);
+            this.releaseTile(id);
+            this.transitionTile?.(id,this.lifecycle?.records.get(id)?.token||0,'EVICTED');
             this.requested.delete(id);
         }
     } this.tileCount = this.loaded.size; }
+    releaseTile(id){const tile=this.loaded.get(id);if(!tile)return;this.triangles-=(tile.nearGeometry||tile.mesh.geometry).index.count/3;this.placements-=tile.placementCount||0;this.scene.remove(tile.mesh);for(const geometry of new Set([tile.mesh.geometry,tile.nearGeometry,tile.distantGeometry]))geometry?.dispose();tile.mesh.material.dispose();for(const walkerId of tile.walkers||[]){const walker=this.walkers?.get(walkerId);if(!walker)continue;walker.tiles.delete(id);if(!walker.tiles.size){this.scene.remove(walker.model);this.walkers.delete(walkerId);}}this.loaded.delete(id);this.tileCount=this.loaded.size;}
     draw(dt) {
         const t = performance.now();
         this.updateTiles();
@@ -445,6 +469,7 @@ export class RailwayRenderer {
         this.sun.position.copy(pos).add(new THREE.Vector3(-140, 250, -80));
         this.sun.target.position.copy(pos);
         this.sun.target.updateMatrixWorld();
+        this.ambientLife.update(this.sim.clock,pos.toArray(),this.quality);
         for (const signal of this.sim.signals) {
             const model = this.signalModels.get(signal.id);
             model.visible = Math.abs(signal.s - player.s) < 1900;
@@ -480,6 +505,8 @@ export class RailwayRenderer {
                 this.scene.add(g);
             }
             g.visible = true;
+            g.userData.doorBlend=(g.userData.doorBlend||0)+((train.doors?1:0)-(g.userData.doorBlend||0))*Math.min(1,dt*3);
+            for(const door of g.userData.doors||[])door.position.z=door.userData.closedZ+g.userData.doorBlend*.86;
             const cars = g.userData.cars;
             if (cars) {
                 g.position.set(0, 0, 0);
@@ -511,14 +538,19 @@ export class RailwayRenderer {
             cars?.forEach((car, i) => { const c = path.sample(centreS + length / 2 - (Number(model.userData.firstCarCentreDistance) + i * (Number(model.userData.carLength) + .65))); car.position.fromArray(c.position); orient(car, trackBasis(c, 1)); });
         }
         for (const walker of this.walkers.values()) {
-            const phase = ((this.sim.clock + walker.phase) * walker.speed) % (walker.path.length * 2), forward = phase <= walker.path.length, s = forward ? phase : walker.path.length * 2 - phase, p = walker.path.sample(s);
-            walker.model.visible = Math.hypot(p.position[0] - pos.x, p.position[2] - pos.z) < 350;
+            const moving=walker.path.length>.1&&walker.speed>0,phase = moving?((this.sim.clock + walker.phase) * walker.speed) % (walker.path.length * 2):0, forward = phase <= walker.path.length, s = forward ? phase : walker.path.length * 2 - phase, p = walker.path.sample(s),distance=Math.hypot(p.position[0]-pos.x,p.position[2]-pos.z);
+            walker.model.visible = distance < (this.quality==='low'?160:350);
             if (walker.model.visible) {
                 walker.model.position.fromArray(p.position);
-                walker.model.rotation.y = p.yaw + (forward ? 0 : Math.PI);
+                const desiredYaw=moving?p.yaw+(forward?0:Math.PI):walker.yaw,turn=Math.atan2(Math.sin(desiredYaw-walker.model.rotation.y),Math.cos(desiredYaw-walker.model.rotation.y));walker.model.rotation.y+=clamp(turn,-Math.max(dt,.001)*3,Math.max(dt,.001)*3);
+                if(this.sim.clock-walker.lastAnimation>(distance<80?1/30:1/8)){
+                    const state=moving?(walker.model.userData.role==='PASSENGER_WITH_LUGGAGE'?'CARRY_LUGGAGE':'WALK'):!['WAIT','WALK'].includes(walker.state)?walker.state:Math.floor((this.sim.clock+walker.phase)/8)%3===0?'LOOK_AROUND':/STAFF|DISPATCHER/.test(walker.model.userData.role)&&Math.floor(this.sim.clock/6)%4===0?'STAFF_SIGNAL':'WAIT';
+                    animateCat(walker.model,this.sim.clock,state,walker.speed);walker.lastAnimation=this.sim.clock;
+                }
             }
         }
         this.updateRoadVehicles(pos);
+        for(const tile of this.loaded.values())if(tile.gpuReady&&tile.distantGeometry&&tile.bounds)tile.mesh.geometry=chunkDistance(tile,pos.toArray())>(this.quality==='low'?450:750)?tile.distantGeometry:tile.nearGeometry;
         this.renderer.render(this.scene, this.camera);
         const elapsed = performance.now() - t;
         if (this.warmFrames++ > 60) {
@@ -551,8 +583,8 @@ export class RailwayRenderer {
     /** Explicit GPU synchronization for capture/diagnostics, not used by the normal render loop. */
     async finishFrame() { this.renderer.getContext().finish(); }
     stats() { return { backend: this.renderer.getContext().isContextLost() ? 'unavailable' : 'WebGL2', adapter: this.gpuInfo, tiles: this.tileCount, triangles: this.triangles, placements: this.placements, gpuErrors: this.failures, drawCalls: this.renderer.info.render.calls, memory: this.renderer.info.memory }; }
-    dispose() { this.disposed = true; if(this.initialisationTimer!==undefined)window.clearTimeout(this.initialisationTimer); this.viewport.dispose(); for (const id of [...this.requested])
-        this.clearRequest(id); this.renderer.domElement.removeEventListener('webglcontextlost', this.contextLost); this.worker.terminate(); this.renderer.dispose(); }
+    dispose() { this.disposed = true; this.ambientLife.dispose(); if(this.initialisationTimer!==undefined)window.clearTimeout(this.initialisationTimer); this.viewport.dispose(); for (const id of [...this.requested])
+        this.clearRequest(id);for(const id of [...this.loaded.keys()])this.releaseTile(id);this.scene.clear();this.walkers.clear();this.renderer.domElement.removeEventListener('webglcontextlost', this.contextLost); this.worker.terminate(); this.renderer.dispose(); }
 }
 function mixNumber(a, b, t) { return a + (b - a) * t; }
 function hashId(s) { let h = 0; for (const c of s)

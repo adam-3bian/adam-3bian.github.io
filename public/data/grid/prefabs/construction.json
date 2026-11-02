@@ -4,15 +4,62 @@
   "gradeLimits": {
     "MAINLINE": {
       "maximum": 0.025,
-      "transitionPerTile": 0.005
+      "transitionPerTile": 0.005,
+      "exceptionalMaximum": 0.03
     },
     "RESIDENTIAL": {
       "maximum": 0.08,
-      "transitionPerTile": 0.02
+      "transitionPerTile": 0.02,
+      "exceptionalMaximum": 0.1
     },
     "JUNCTION": {
       "maximum": 0.05,
       "transitionPerTile": 0.02
+    },
+    "HERITAGE": {
+      "maximum": 0.025,
+      "exceptionalMaximum": 0.0333,
+      "transitionPerTile": 0.005
+    },
+    "DEPOT": {
+      "maximum": 0.015,
+      "exceptionalMaximum": 0.02,
+      "transitionPerTile": 0.005
+    },
+    "TURNOUT": {
+      "maximum": 0.015,
+      "exceptionalMaximum": 0.025,
+      "transitionPerTile": 0.005
+    },
+    "METRO": {
+      "maximum": 0.06,
+      "exceptionalMaximum": 0.08,
+      "transitionPerTile": 0.01
+    },
+    "MOTORWAY": {
+      "maximum": 0.04,
+      "transitionPerTile": 0.02
+    },
+    "MAJOR_DUAL": {
+      "maximum": 0.08,
+      "transitionPerTile": 0.02
+    },
+    "PRIMARY_SECONDARY": {
+      "maximum": 0.08,
+      "transitionPerTile": 0.02
+    },
+    "SERVICE": {
+      "maximum": 0.08,
+      "exceptionalMaximum": 0.12,
+      "transitionPerTile": 0.02
+    },
+    "ROUNDABOUT": {
+      "maximum": 0.04,
+      "transitionPerTile": 0.02
+    },
+    "PLATFORM": {
+      "maximum": 0.01,
+      "transitionPerTile": 0.005
     }
   },
   "prefabs": [
@@ -964,6 +1011,4488 @@
         "maximumDistance": 900
       },
       "variants": {}
+    },
+    {
+      "id": "rail/reference/0",
+      "kind": "RAILWAY",
+      "dimensions": [
+        20,
+        0.5,
+        4
+      ],
+      "footprint": [
+        [
+          -2,
+          -2
+        ],
+        [
+          18,
+          -2
+        ],
+        [
+          18,
+          2
+        ],
+        [
+          -2,
+          2
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 0
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Straight",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/1",
+      "kind": "RAILWAY",
+      "dimensions": [
+        15.313708498984761,
+        0.5,
+        15.31370849898476
+      ],
+      "footprint": [
+        [
+          -2,
+          -2
+        ],
+        [
+          13.313708498984761,
+          -2
+        ],
+        [
+          13.313708498984761,
+          13.31370849898476
+        ],
+        [
+          -2,
+          13.31370849898476
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 1
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Diagonal straight",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/2",
+      "kind": "RAILWAY",
+      "dimensions": [
+        12,
+        0.5,
+        12
+      ],
+      "footprint": [
+        [
+          -2,
+          -10
+        ],
+        [
+          10,
+          -10
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          -2,
+          2
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 2
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Very small left curve",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/3",
+      "kind": "RAILWAY",
+      "dimensions": [
+        12,
+        0.5,
+        12
+      ],
+      "footprint": [
+        [
+          -2,
+          -2
+        ],
+        [
+          10,
+          -2
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          -2,
+          10
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 3
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Very small right curve",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/4",
+      "kind": "RAILWAY",
+      "dimensions": [
+        28,
+        0.5,
+        27.999999999999996
+      ],
+      "footprint": [
+        [
+          -2,
+          -25.999999999999996
+        ],
+        [
+          26,
+          -25.999999999999996
+        ],
+        [
+          26,
+          2
+        ],
+        [
+          -2,
+          2
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 4
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Small left curve",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/5",
+      "kind": "RAILWAY",
+      "dimensions": [
+        28,
+        0.5,
+        27.999999999999996
+      ],
+      "footprint": [
+        [
+          -2,
+          -2
+        ],
+        [
+          26,
+          -2
+        ],
+        [
+          26,
+          25.999999999999996
+        ],
+        [
+          -2,
+          25.999999999999996
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 5
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Small right curve",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/6",
+      "kind": "RAILWAY",
+      "dimensions": [
+        44,
+        0.5,
+        43.999999999999986
+      ],
+      "footprint": [
+        [
+          -2,
+          -41.999999999999986
+        ],
+        [
+          42,
+          -41.999999999999986
+        ],
+        [
+          42,
+          2
+        ],
+        [
+          -2,
+          2
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 6
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Normal left curve",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/7",
+      "kind": "RAILWAY",
+      "dimensions": [
+        44,
+        0.5,
+        43.999999999999986
+      ],
+      "footprint": [
+        [
+          -2,
+          -2
+        ],
+        [
+          42,
+          -2
+        ],
+        [
+          42,
+          41.999999999999986
+        ],
+        [
+          -2,
+          41.999999999999986
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 7
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Normal right curve",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/8",
+      "kind": "RAILWAY",
+      "dimensions": [
+        60,
+        0.5,
+        59.99999999999998
+      ],
+      "footprint": [
+        [
+          -2,
+          -57.99999999999998
+        ],
+        [
+          58,
+          -57.99999999999998
+        ],
+        [
+          58,
+          2
+        ],
+        [
+          -2,
+          2
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 8
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Large left curve",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/9",
+      "kind": "RAILWAY",
+      "dimensions": [
+        60,
+        0.5,
+        59.99999999999998
+      ],
+      "footprint": [
+        [
+          -2,
+          -2
+        ],
+        [
+          58,
+          -2
+        ],
+        [
+          58,
+          57.99999999999998
+        ],
+        [
+          -2,
+          57.99999999999998
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 9
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Large right curve",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/10",
+      "kind": "RAILWAY",
+      "dimensions": [
+        43.597979746446654,
+        0.5,
+        20.402020253553335
+      ],
+      "footprint": [
+        [
+          -2,
+          -2
+        ],
+        [
+          41.597979746446654,
+          -2
+        ],
+        [
+          41.597979746446654,
+          18.402020253553335
+        ],
+        [
+          -2,
+          18.402020253553335
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 10
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Diagonal large left curve",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/11",
+      "kind": "RAILWAY",
+      "dimensions": [
+        20.40202025355334,
+        0.5,
+        43.597979746446654
+      ],
+      "footprint": [
+        [
+          -2,
+          -2
+        ],
+        [
+          18.40202025355334,
+          -2
+        ],
+        [
+          18.40202025355334,
+          41.597979746446654
+        ],
+        [
+          -2,
+          41.597979746446654
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 11
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Diagonal large right curve",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/12",
+      "kind": "RAILWAY",
+      "dimensions": [
+        36,
+        0.5,
+        20
+      ],
+      "footprint": [
+        [
+          -2,
+          -18
+        ],
+        [
+          34,
+          -18
+        ],
+        [
+          34,
+          2
+        ],
+        [
+          -2,
+          2
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 12
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Left S-bend",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/13",
+      "kind": "RAILWAY",
+      "dimensions": [
+        36,
+        0.5,
+        20
+      ],
+      "footprint": [
+        [
+          -2,
+          -2
+        ],
+        [
+          34,
+          -2
+        ],
+        [
+          34,
+          18
+        ],
+        [
+          -2,
+          18
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 13
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Right S-bend",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/14",
+      "kind": "RAILWAY",
+      "dimensions": [
+        20,
+        0.5,
+        4
+      ],
+      "footprint": [
+        [
+          -2,
+          -2
+        ],
+        [
+          18,
+          -2
+        ],
+        [
+          18,
+          2
+        ],
+        [
+          -2,
+          2
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 14
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Straight slope up",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/15",
+      "kind": "RAILWAY",
+      "dimensions": [
+        20,
+        0.5,
+        4
+      ],
+      "footprint": [
+        [
+          -2,
+          -2
+        ],
+        [
+          18,
+          -2
+        ],
+        [
+          18,
+          2
+        ],
+        [
+          -2,
+          2
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 15
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Straight slope down",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/16",
+      "kind": "RAILWAY",
+      "dimensions": [
+        20,
+        0.5,
+        4
+      ],
+      "footprint": [
+        [
+          -2,
+          -2
+        ],
+        [
+          18,
+          -2
+        ],
+        [
+          18,
+          2
+        ],
+        [
+          -2,
+          2
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 16
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Straight steep slope up",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/17",
+      "kind": "RAILWAY",
+      "dimensions": [
+        20,
+        0.5,
+        4
+      ],
+      "footprint": [
+        [
+          -2,
+          -2
+        ],
+        [
+          18,
+          -2
+        ],
+        [
+          18,
+          2
+        ],
+        [
+          -2,
+          2
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 17
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Straight steep slope down",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/18",
+      "kind": "RAILWAY",
+      "dimensions": [
+        28,
+        0.5,
+        27.999999999999996
+      ],
+      "footprint": [
+        [
+          -2,
+          -25.999999999999996
+        ],
+        [
+          26,
+          -25.999999999999996
+        ],
+        [
+          26,
+          2
+        ],
+        [
+          -2,
+          2
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 18
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Small left curve uphill",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/19",
+      "kind": "RAILWAY",
+      "dimensions": [
+        28,
+        0.5,
+        27.999999999999996
+      ],
+      "footprint": [
+        [
+          -2,
+          -2
+        ],
+        [
+          26,
+          -2
+        ],
+        [
+          26,
+          25.999999999999996
+        ],
+        [
+          -2,
+          25.999999999999996
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 19
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Small right curve uphill",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/20",
+      "kind": "RAILWAY",
+      "dimensions": [
+        28,
+        0.5,
+        27.999999999999996
+      ],
+      "footprint": [
+        [
+          -2,
+          -25.999999999999996
+        ],
+        [
+          26,
+          -25.999999999999996
+        ],
+        [
+          26,
+          2
+        ],
+        [
+          -2,
+          2
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 20
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Small left curve downhill",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/21",
+      "kind": "RAILWAY",
+      "dimensions": [
+        28,
+        0.5,
+        27.999999999999996
+      ],
+      "footprint": [
+        [
+          -2,
+          -2
+        ],
+        [
+          26,
+          -2
+        ],
+        [
+          26,
+          25.999999999999996
+        ],
+        [
+          -2,
+          25.999999999999996
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 21
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Small right curve downhill",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/22",
+      "kind": "RAILWAY",
+      "dimensions": [
+        28,
+        0.5,
+        27.999999999999996
+      ],
+      "footprint": [
+        [
+          -2,
+          -25.999999999999996
+        ],
+        [
+          26,
+          -25.999999999999996
+        ],
+        [
+          26,
+          2
+        ],
+        [
+          -2,
+          2
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 22
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Small left curve steep uphill",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/23",
+      "kind": "RAILWAY",
+      "dimensions": [
+        28,
+        0.5,
+        27.999999999999996
+      ],
+      "footprint": [
+        [
+          -2,
+          -2
+        ],
+        [
+          26,
+          -2
+        ],
+        [
+          26,
+          25.999999999999996
+        ],
+        [
+          -2,
+          25.999999999999996
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 23
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Small right curve steep uphill",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/24",
+      "kind": "RAILWAY",
+      "dimensions": [
+        28,
+        0.5,
+        27.999999999999996
+      ],
+      "footprint": [
+        [
+          -2,
+          -25.999999999999996
+        ],
+        [
+          26,
+          -25.999999999999996
+        ],
+        [
+          26,
+          2
+        ],
+        [
+          -2,
+          2
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 24
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Small left curve steep downhill",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/25",
+      "kind": "RAILWAY",
+      "dimensions": [
+        28,
+        0.5,
+        27.999999999999996
+      ],
+      "footprint": [
+        [
+          -2,
+          -2
+        ],
+        [
+          26,
+          -2
+        ],
+        [
+          26,
+          25.999999999999996
+        ],
+        [
+          -2,
+          25.999999999999996
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 25
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Small right curve steep downhill",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/26",
+      "kind": "RAILWAY",
+      "dimensions": [
+        20,
+        0.5,
+        4
+      ],
+      "footprint": [
+        [
+          -2,
+          -4
+        ],
+        [
+          18,
+          -4
+        ],
+        [
+          18,
+          0
+        ],
+        [
+          -2,
+          0
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 26
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Straight left side",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/27",
+      "kind": "RAILWAY",
+      "dimensions": [
+        20,
+        0.5,
+        4
+      ],
+      "footprint": [
+        [
+          -2,
+          0
+        ],
+        [
+          18,
+          0
+        ],
+        [
+          18,
+          4
+        ],
+        [
+          -2,
+          4
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 27
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Straight right side",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/28",
+      "kind": "RAILWAY",
+      "dimensions": [
+        10,
+        0.5,
+        10
+      ],
+      "footprint": [
+        [
+          -2,
+          -10
+        ],
+        [
+          8,
+          -10
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          -2,
+          0
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 28
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Very small left curve inner",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/29",
+      "kind": "RAILWAY",
+      "dimensions": [
+        14,
+        0.5,
+        13.999999999999996
+      ],
+      "footprint": [
+        [
+          -2,
+          -9.999999999999996
+        ],
+        [
+          12,
+          -9.999999999999996
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          -2,
+          4
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 29
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Very small left curve outer",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/30",
+      "kind": "RAILWAY",
+      "dimensions": [
+        14,
+        0.5,
+        13.999999999999996
+      ],
+      "footprint": [
+        [
+          -2,
+          -4
+        ],
+        [
+          12,
+          -4
+        ],
+        [
+          12,
+          9.999999999999996
+        ],
+        [
+          -2,
+          9.999999999999996
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 30
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Very small right curve outer",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/31",
+      "kind": "RAILWAY",
+      "dimensions": [
+        10,
+        0.5,
+        10
+      ],
+      "footprint": [
+        [
+          -2,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          -2,
+          10
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 31
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Very small right curve inner",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/32",
+      "kind": "RAILWAY",
+      "dimensions": [
+        36,
+        0.5,
+        8
+      ],
+      "footprint": [
+        [
+          -2,
+          -4
+        ],
+        [
+          34,
+          -4
+        ],
+        [
+          34,
+          4
+        ],
+        [
+          -2,
+          4
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 32
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "S-bend left side to right side",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/33",
+      "kind": "RAILWAY",
+      "dimensions": [
+        36,
+        0.5,
+        8
+      ],
+      "footprint": [
+        [
+          -2,
+          -4
+        ],
+        [
+          34,
+          -4
+        ],
+        [
+          34,
+          4
+        ],
+        [
+          -2,
+          4
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 33
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "S-bend right side to left side",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/34",
+      "kind": "RAILWAY",
+      "dimensions": [
+        20,
+        0.5,
+        4
+      ],
+      "footprint": [
+        [
+          -2,
+          -4
+        ],
+        [
+          18,
+          -4
+        ],
+        [
+          18,
+          0
+        ],
+        [
+          -2,
+          0
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 34
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Left-side straight steep uphill",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/35",
+      "kind": "RAILWAY",
+      "dimensions": [
+        20,
+        0.5,
+        4
+      ],
+      "footprint": [
+        [
+          -2,
+          0
+        ],
+        [
+          18,
+          0
+        ],
+        [
+          18,
+          4
+        ],
+        [
+          -2,
+          4
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 35
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Right-side straight steep uphill",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/36",
+      "kind": "RAILWAY",
+      "dimensions": [
+        20,
+        0.5,
+        4
+      ],
+      "footprint": [
+        [
+          -2,
+          -4
+        ],
+        [
+          18,
+          -4
+        ],
+        [
+          18,
+          0
+        ],
+        [
+          -2,
+          0
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 36
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Left-side straight steep downhill",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/37",
+      "kind": "RAILWAY",
+      "dimensions": [
+        20,
+        0.5,
+        4
+      ],
+      "footprint": [
+        [
+          -2,
+          0
+        ],
+        [
+          18,
+          0
+        ],
+        [
+          18,
+          4
+        ],
+        [
+          -2,
+          4
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 37
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Right-side straight steep downhill",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/38",
+      "kind": "RAILWAY",
+      "dimensions": [
+        36,
+        0.5,
+        6
+      ],
+      "footprint": [
+        [
+          -2,
+          -4
+        ],
+        [
+          34,
+          -4
+        ],
+        [
+          34,
+          2
+        ],
+        [
+          -2,
+          2
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 38
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "S-bend single to left side",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/39",
+      "kind": "RAILWAY",
+      "dimensions": [
+        36,
+        0.5,
+        6
+      ],
+      "footprint": [
+        [
+          -2,
+          -2
+        ],
+        [
+          34,
+          -2
+        ],
+        [
+          34,
+          4
+        ],
+        [
+          -2,
+          4
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 39
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "S-bend single to right side",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/40",
+      "kind": "RAILWAY",
+      "dimensions": [
+        36,
+        0.5,
+        6
+      ],
+      "footprint": [
+        [
+          -2,
+          -4
+        ],
+        [
+          34,
+          -4
+        ],
+        [
+          34,
+          2
+        ],
+        [
+          -2,
+          2
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 40
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "S-bend left side to single",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/41",
+      "kind": "RAILWAY",
+      "dimensions": [
+        36,
+        0.5,
+        6
+      ],
+      "footprint": [
+        [
+          -2,
+          -2
+        ],
+        [
+          34,
+          -2
+        ],
+        [
+          34,
+          4
+        ],
+        [
+          -2,
+          4
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 41
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "S-bend right side to single",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/42",
+      "kind": "RAILWAY",
+      "dimensions": [
+        12,
+        0.5,
+        20
+      ],
+      "footprint": [
+        [
+          -2,
+          -2
+        ],
+        [
+          10,
+          -2
+        ],
+        [
+          10,
+          18
+        ],
+        [
+          -2,
+          18
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 42
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Clockwise turnaround",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "rail/reference/43",
+      "kind": "RAILWAY",
+      "dimensions": [
+        12,
+        0.5,
+        20
+      ],
+      "footprint": [
+        [
+          -2,
+          -18
+        ],
+        [
+          10,
+          -18
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          -2,
+          2
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 43
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE",
+      "name": "Anticlockwise turnaround",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "road/reference/0",
+      "kind": "ROAD",
+      "dimensions": [
+        23,
+        0.5,
+        7
+      ],
+      "footprint": [
+        [
+          -3.5,
+          -3.5
+        ],
+        [
+          19.5,
+          -3.5
+        ],
+        [
+          19.5,
+          3.5
+        ],
+        [
+          -3.5,
+          3.5
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "road",
+        "referenceId": 0
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "road"
+        },
+        {
+          "id": "end",
+          "mode": "road"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "ROAD_FORMATION",
+        "minimumDepth": 0.08,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 3,
+        "height": 0.12
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "RESIDENTIAL",
+      "name": "Straight",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "road/reference/1",
+      "kind": "ROAD",
+      "dimensions": [
+        15,
+        0.5,
+        15
+      ],
+      "footprint": [
+        [
+          -3.5,
+          -11.5
+        ],
+        [
+          11.5,
+          -11.5
+        ],
+        [
+          11.5,
+          3.5
+        ],
+        [
+          -3.5,
+          3.5
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "road",
+        "referenceId": 1
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "road"
+        },
+        {
+          "id": "end",
+          "mode": "road"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "ROAD_FORMATION",
+        "minimumDepth": 0.08,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 3,
+        "height": 0.12
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "RESIDENTIAL",
+      "name": "Very small left curve",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "road/reference/2",
+      "kind": "ROAD",
+      "dimensions": [
+        15,
+        0.5,
+        15
+      ],
+      "footprint": [
+        [
+          -3.5,
+          -3.5
+        ],
+        [
+          11.5,
+          -3.5
+        ],
+        [
+          11.5,
+          11.5
+        ],
+        [
+          -3.5,
+          11.5
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "road",
+        "referenceId": 2
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "road"
+        },
+        {
+          "id": "end",
+          "mode": "road"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "ROAD_FORMATION",
+        "minimumDepth": 0.08,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 3,
+        "height": 0.12
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "RESIDENTIAL",
+      "name": "Very small right curve",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "road/reference/3",
+      "kind": "ROAD",
+      "dimensions": [
+        31,
+        0.5,
+        30.999999999999996
+      ],
+      "footprint": [
+        [
+          -3.5,
+          -27.499999999999996
+        ],
+        [
+          27.5,
+          -27.499999999999996
+        ],
+        [
+          27.5,
+          3.5
+        ],
+        [
+          -3.5,
+          3.5
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "road",
+        "referenceId": 3
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "road"
+        },
+        {
+          "id": "end",
+          "mode": "road"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "ROAD_FORMATION",
+        "minimumDepth": 0.08,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 3,
+        "height": 0.12
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "RESIDENTIAL",
+      "name": "Small left curve",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "road/reference/4",
+      "kind": "ROAD",
+      "dimensions": [
+        31,
+        0.5,
+        30.999999999999996
+      ],
+      "footprint": [
+        [
+          -3.5,
+          -3.5
+        ],
+        [
+          27.5,
+          -3.5
+        ],
+        [
+          27.5,
+          27.499999999999996
+        ],
+        [
+          -3.5,
+          27.499999999999996
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "road",
+        "referenceId": 4
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "road"
+        },
+        {
+          "id": "end",
+          "mode": "road"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "ROAD_FORMATION",
+        "minimumDepth": 0.08,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 3,
+        "height": 0.12
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "RESIDENTIAL",
+      "name": "Small right curve",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "road/reference/5",
+      "kind": "ROAD",
+      "dimensions": [
+        23,
+        0.5,
+        7
+      ],
+      "footprint": [
+        [
+          -3.5,
+          -3.5
+        ],
+        [
+          19.5,
+          -3.5
+        ],
+        [
+          19.5,
+          3.5
+        ],
+        [
+          -3.5,
+          3.5
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "road",
+        "referenceId": 5
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "road"
+        },
+        {
+          "id": "end",
+          "mode": "road"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "ROAD_FORMATION",
+        "minimumDepth": 0.08,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 3,
+        "height": 0.12
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "RESIDENTIAL",
+      "name": "Straight slope up",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "road/reference/6",
+      "kind": "ROAD",
+      "dimensions": [
+        23,
+        0.5,
+        7
+      ],
+      "footprint": [
+        [
+          -3.5,
+          -3.5
+        ],
+        [
+          19.5,
+          -3.5
+        ],
+        [
+          19.5,
+          3.5
+        ],
+        [
+          -3.5,
+          3.5
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "road",
+        "referenceId": 6
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "road"
+        },
+        {
+          "id": "end",
+          "mode": "road"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "ROAD_FORMATION",
+        "minimumDepth": 0.08,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 3,
+        "height": 0.12
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "RESIDENTIAL",
+      "name": "Straight slope down",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "road/reference/7",
+      "kind": "ROAD",
+      "dimensions": [
+        23,
+        0.5,
+        7
+      ],
+      "footprint": [
+        [
+          -3.5,
+          -3.5
+        ],
+        [
+          19.5,
+          -3.5
+        ],
+        [
+          19.5,
+          3.5
+        ],
+        [
+          -3.5,
+          3.5
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "road",
+        "referenceId": 7
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "road"
+        },
+        {
+          "id": "end",
+          "mode": "road"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "ROAD_FORMATION",
+        "minimumDepth": 0.08,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 3,
+        "height": 0.12
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "RESIDENTIAL",
+      "name": "Straight steep slope up",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "road/reference/8",
+      "kind": "ROAD",
+      "dimensions": [
+        23,
+        0.5,
+        7
+      ],
+      "footprint": [
+        [
+          -3.5,
+          -3.5
+        ],
+        [
+          19.5,
+          -3.5
+        ],
+        [
+          19.5,
+          3.5
+        ],
+        [
+          -3.5,
+          3.5
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "road",
+        "referenceId": 8
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "road"
+        },
+        {
+          "id": "end",
+          "mode": "road"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "ROAD_FORMATION",
+        "minimumDepth": 0.08,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 3,
+        "height": 0.12
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "RESIDENTIAL",
+      "name": "Straight steep slope down",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
+    },
+    {
+      "id": "road/reference/9",
+      "kind": "ROAD",
+      "dimensions": [
+        15,
+        0.5,
+        23
+      ],
+      "footprint": [
+        [
+          -3.5,
+          -3.5
+        ],
+        [
+          11.5,
+          -3.5
+        ],
+        [
+          11.5,
+          19.5
+        ],
+        [
+          -3.5,
+          19.5
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "road",
+        "referenceId": 9
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "road"
+        },
+        {
+          "id": "end",
+          "mode": "road"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "ROAD_FORMATION",
+        "minimumDepth": 0.08,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 3,
+        "height": 0.12
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "RESIDENTIAL",
+      "name": "Turnaround",
+      "source": {
+        "reference": "OpenLoco conceptual catalogue; project-scale original geometry",
+        "license": "No original game artwork or geometry copied"
+      }
     }
   ]
 }

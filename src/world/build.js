@@ -10,6 +10,7 @@ import { benchYaw } from './orientation.js';
 import { classifyBuilding } from './buildings.js';
 import { resolveAsset } from './asset-registry.js';
 import { composePrefabChunk } from '../render/prefab-assets.js';
+import { composeAuthoredChunk } from './authored-world.js';
 import { mappedPlatforms, insidePlatform, platformContains, platformEdgeDistance, derivedPlatformEdgeDistance, platformAnchor, refinePlatformTriangle, platformSurfaceY } from './platforms.js';
 const palette = { grass: new THREE.Color(0x7e8f66), earth: new THREE.Color(0x8c8065), ballast: new THREE.Color(0x8b887c),
     rail: new THREE.Color(0xa2aaa5), sleeper: new THREE.Color(0x635a4d), asphalt: new THREE.Color(0x686c68),
@@ -411,9 +412,11 @@ export function endpointContext(route) {
 }
 /** World coordinates and surface ownership stay identical across independent tile builds. */
 export function buildTile(tile, route, terrain, progress) {
+    if (tile.composition === 'AUTHORED_PREFABS') return composeAuthoredChunk(tile, progress);
     if (tile.compositionSchema === 1) return composePrefabChunk(tile, tile.catalogue, tile.enums, tile.context, progress);
     progress?.(0);
     const batch = new Batch(), factory = new AssetFactory(), bounds = tile.bounds ?? [0, 0, 1000, 1000];
+    batch.source = {id:`terrain/${tile.id}`,kind:'TERRAIN'};
     const minS = route.project((bounds[0] + bounds[2]) / 2, (bounds[1] + bounds[3]) / 2, 1500).s;
     const troughOffset = (s) => route.laneOffset(s, 4.2) / 2 - (Math.abs(route.laneOffset(s, 4.2)) + 5.6) / 2 - .35;
     const supportBounds = [...bounds], crossingFootprints = [];
@@ -850,6 +853,7 @@ export function buildTile(tile, route, terrain, progress) {
     const accessSites = solveAccessSites(route, [...rawRoads.values()], accessFloor);
     const accessBeam = (a, b, width, color) => { const av = new THREE.Vector3(...a), bv = new THREE.Vector3(...b), m = new THREE.Mesh(sharedBox, material(color)); m.position.copy(av).add(bv).multiplyScalar(.5); m.scale.set(width, av.distanceTo(bv), width); m.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), bv.sub(av).normalize()); batch.add(m); };
     for (const site of accessSites) {
+        batch.source = {id:site.id,kind:'STATION'};
         const path = new Polyline(site.deck), mid = path.sample(path.length / 2).position;
         if (!inside(mid[0], mid[2], bounds))
             continue;
@@ -909,6 +913,7 @@ export function buildTile(tile, route, terrain, progress) {
             quad(batch, lift(a, top - thickness), lift(d, top - thickness, true), lift(c, top - thickness, true), lift(b, top - thickness), color);
     };
     const formationSurface = new CookedSoil();
+    batch.source = {id:`railway/${tile.id}`,kind:'RAILWAY'};
     for (let i = 0; i < route.points.length - 1; i++) {
         const pa = route.points[i], pb = route.points[i + 1], x = (pa[0] + pb[0]) / 2, z = (pa[2] + pb[2]) / 2;
         if (x < bounds[0] - 40 || x > bounds[2] + 40 || z < bounds[1] - 40 || z > bounds[3] + 40)
@@ -968,6 +973,7 @@ export function buildTile(tile, route, terrain, progress) {
     }
     for (let roadIndex=0;roadIndex<roads.length;roadIndex++) {
         const road=roads[roadIndex];
+        batch.source = {id:road.id,kind:'ROAD'};
         if ((roadIndex & 31) === 0) progress?.(.76 + .1 * roadIndex / Math.max(1,roads.length));
         const foot = ['footway', 'path', 'steps', 'cycleway', 'pedestrian', 'corridor'].includes(road.kind), color = foot ? palette.pavement : palette.asphalt;
         const cuts = roadSpanCuts(road), opening = roadBridgeOpening(road);
@@ -1056,8 +1062,9 @@ export function buildTile(tile, route, terrain, progress) {
             checks.engineeredCrossings++;
         }
         else if (road.mode === 'under' && road.routeS !== undefined && road.structureOwner!==false) {
-            const pose = route.sample(road.routeS, centre(road.routeS)), roadY = road.path.sample(road.crossingS ?? 0).position[1];
-            const bridge = factory.bridge({ id: `${road.id}/rail-deck`, type: 'rail', width: formationWidth(road.routeS), length: road.width + 7, height: pose.position[1] - .35 - roadY });
+            const pose = route.sample(road.routeS, centre(road.routeS)), roadPoint=road.path.sample(road.crossingS ?? 0).position,roadY=roadPoint[1],height=pose.position[1]-.35-roadY;
+            if(height<=.84||Math.hypot(pose.position[0]-roadPoint[0],pose.position[2]-roadPoint[2])>Math.max(12,road.width+3)){placements.push({id:`${road.id}/rail-deck`,sourceId:road.id,family:'rejected-inferred-bridge',reason:'INVALID_INFERRED_BRIDGE_SUPPORT_OR_LOCATION',height,position:pose.position,roadPosition:roadPoint});continue;}
+            const bridge = factory.bridge({ id: `${road.id}/rail-deck`, type: 'rail', width: formationWidth(road.routeS), length: road.width + 7, height });
             bridge.position.set(pose.position[0], roadY, pose.position[2]);
             bridge.rotation.y = pose.yaw;
             rememberDeck(bridge, `${road.id}/rail-deck`);
@@ -1073,6 +1080,7 @@ export function buildTile(tile, route, terrain, progress) {
       placements.push({id:junction.id,family:'road-junction',position:junction.position,template:junction.template,ports:junction.ports});
     }
     for (const civil of sourceStructures) {
+        batch.source = {id:civil.id,kind:'BRIDGE'};
         if (!['railBridge', 'roadBridge', 'footbridge'].includes(civil.type))
             continue;
         const [x, , z] = civil.position, near = route.project(x, z, 300), sourceIds = civil.sourceWayIds || [];
@@ -1148,6 +1156,7 @@ export function buildTile(tile, route, terrain, progress) {
         checks.sourceCivils++;
     }
     for (const platform of allPlatforms) {
+        batch.source = {id:platform.id,kind:'PLATFORM'};
         if (!inside(...platform.centre, bounds))
             continue;
         for (const tri of platform.triangles)
@@ -1307,6 +1316,7 @@ export function buildTile(tile, route, terrain, progress) {
         placements.push({ id: station.id, family: 'station', position: stationPose.position, supportY: stationPose.position[1], layout: 'mapped platform footprints', platformIds: platforms.map(p => p.id) });
     };
     for (const station of [...route.stations, ...(route.data.extraStations || [])]) {
+        batch.source = {id:station.id,kind:'STATION'};
         const extra = Boolean(route.data.extraStations?.some(s => s.id === station.id));
         const pose = extra ? { ...route.sample(0), position: station.position } : route.sample(station.s, centre(station.s));
         if (!inside(pose.position[0], pose.position[2], bounds))
@@ -1385,6 +1395,7 @@ export function buildTile(tile, route, terrain, progress) {
     }
     // Continuous curved tunnel lining. Only the actual portals get thick end rings.
     for (const tunnel of route.data.tunnels || []) {
+        batch.source = {id:tunnel.id,kind:'TUNNEL'};
         const start = route.sourceS(tunnel.start), end = route.sourceS(tunnel.end), radius = (tunnel.width ?? 9) / 2, cy = (tunnel.clearHeight ?? 5.8) - radius;
         for (let s = start; s < end; s += 8) {
             const e = Math.min(end, s + 8), pose = route.sample((s + e) / 2, centre((s + e) / 2));
@@ -1420,6 +1431,7 @@ export function buildTile(tile, route, terrain, progress) {
         }
     }
     for (const service of auxiliaries) {
+        batch.source = {id:service.id,kind:'RAILWAY'};
         if (service.metadata?.renderStatic === false)
             continue;
         const path = service.path;
@@ -1536,6 +1548,7 @@ export function buildTile(tile, route, terrain, progress) {
     const troughReject = (s, rule, owner) => { const q = route.sample(s, troughOffset(s)); placements.push({ id: `trough/${s.toFixed(3)}`, family: 'unsupported-source-attachment', assetFamily: 'cable-trough', position: q.position, rule, supportOwner: owner ?? null, confidence: 'inferred cable route; no unsupported span or posts generated' }); };
     const troughPoint = (s, offset) => { const point = route.sample(s, troughOffset(s)).position, a = route.sample(Math.max(0, s - .05), troughOffset(Math.max(0, s - .05))).position, b = route.sample(Math.min(route.length, s + .05), troughOffset(Math.min(route.length, s + .05))).position, dx = b[0] - a[0], dz = b[2] - a[2], length = Math.hypot(dx, dz) || 1; return [point[0] - dz / length * offset, point[2] + dx / length * offset]; };
     const emitTrough = (s) => {
+        batch.source = {id:`trough/${s.toFixed(3)}`,kind:'RAILWAY_FURNITURE'};
         const start = Math.max(0, s - 3.975), end = Math.min(route.length, s + 3.975), id = `trough/${s.toFixed(3)}`;
         if ((route.data.tunnels || []).some(t => start < route.sourceS(t.end) + .5 && end > route.sourceS(t.start) - .5)) {
             troughReject(s, 'tunnel/portal span requires an authored lining bracket or duct owner');
@@ -1617,6 +1630,7 @@ export function buildTile(tile, route, terrain, progress) {
         for (const side of [-1, 1]) {
             if (nearStation)
                 continue;
+            batch.source = {id:`fence/${s.toFixed(3)}/${side}`,kind:'FENCE'};
             const offset = centre(s) + side * (formationWidth(s) / 2 + 3.5), a = route.sample(s, offset).position, b = route.sample(s + 8, centre(s + 8) + side * (formationWidth(s + 8) / 2 + 3.5)).position;
             if (!runningClear(a[0], a[2], .15) || !runningClear(b[0], b[2], .15))
                 continue;
@@ -1649,6 +1663,7 @@ export function buildTile(tile, route, terrain, progress) {
         }
     }
     for (const w of water.filter(w => w.owned)) {
+        batch.source = {id:w.id,kind:'WATER'};
         const shape = new THREE.Shape();
         shape.moveTo(w.footprint[0][0], -w.footprint[0][1]);
         for (const q of w.footprint.slice(1))
@@ -1665,32 +1680,39 @@ export function buildTile(tile, route, terrain, progress) {
     const footprints = [];
     for (let buildingIndex=0;buildingIndex<tile.buildings.length;buildingIndex++) {
         const building=tile.buildings[buildingIndex];
+        batch.source = {id:building.id,kind:'BUILDING'};
+        const rejectBuilding=(reason,detail={})=>placements.push({id:building.id,sourceId:building.sourceId??building.id,family:'rejected-building',reason,sourceRecord:building,...detail});
         if ((buildingIndex & 15) === 0) progress?.(.9 + .08 * buildingIndex / Math.max(1,tile.buildings.length));
         if ([...(route.data.landmarks || []), ...(route.data.civils || [])].some(a => typeof a.source === 'string' && a.source.endsWith('/' + building.id.replace(/^way\//, ''))))
             continue;
         const fp = building.footprint;
-        if (!fp || fp.length < 3)
+        if (!fp || fp.length < 3) {
+            rejectBuilding('INVALID_SOURCE_FOOTPRINT');
             continue;
+        }
         const cx = fp.reduce((s, q) => s + q[0], 0) / fp.length, cz = fp.reduce((s, q) => s + q[1], 0) / fp.length, near = route.project(cx, cz, 600);
-        if (near.distance > 570)
+        if (near.distance > 570) {
+            rejectBuilding('OUTSIDE_AUTHORED_CORRIDOR', {distance:near.distance,policy:'Source retained for future corridor expansion'});
             continue;
+        }
         const relief = soil.footprintRange(fp);
         if (!relief) {
             checks.rejectedBuildings++;
             checks.uncoveredBuildingSupports++;
+            rejectBuilding('MISSING_FOUNDATION_SUPPORT');
             continue;
         }
         const appearance = classifyBuilding(building), base = relief.high + .02, low = relief.low, height = appearance.wallHeight;
         const overlapsLevel = y => base < y + 5 && base + height + appearance.roofRise > y - .6;
         const railInFootprint = [0, 4.2].some(lane => { const q = route.lanePose(near.s, lane).position; return overlapsLevel(q[1]) && (pointInPolygon(q[0], q[2], fp) || fp.some(p=>Math.hypot(p[0]-q[0],p[1]-q[2])<2.05)); });
         const auxiliaryConflict = fp.some(q => auxNear(q[0],q[1],4).some(e=>{const a=e.service.path.points[e.index],b=e.service.path.points[e.index+1],hit=segmentDistance(q[0],q[1],a,b);return hit.distance<3&&overlapsLevel(a[1]+(b[1]-a[1])*hit.t);}));
-        if(railInFootprint||auxiliaryConflict){checks.rejectedBuildings++;continue;}
+        if(railInFootprint||auxiliaryConflict){checks.rejectedBuildings++;rejectBuilding('SOURCE_FOOTPRINT_CONFLICTS_WITH_RAIL_CLEARANCE');continue;}
         const radius=Math.min(150,Math.max(...fp.map(q=>Math.hypot(q[0]-cx,q[1]-cz)))+2),roadConflict=roadLookup(cx,cz,radius).some(({road,i})=>{
             if(!['motorway','trunk','primary','secondary','tertiary','unclassified','residential','living_street'].includes(road.kind))return false;
             const a=road.points[i],b=road.points[i+1],dx=b[0]-a[0],dz=b[2]-a[2],n=Math.max(1,Math.ceil(Math.hypot(dx,dz)/3));
             for(let j=0;j<=n;j++){const t=j/n,x=a[0]+dx*t,z=a[2]+dz*t,y=a[1]+(b[1]-a[1])*t;if(y>=base-.2&&y<base+height&&pointInPolygon(x,z,fp))return true;}return false;
         });
-        if(roadConflict){checks.rejectedBuildings++;continue;}
+        if(roadConflict){checks.rejectedBuildings++;rejectBuilding('SOURCE_FOOTPRINT_CONFLICTS_WITH_ROAD_CLEARANCE');continue;}
         let foundationStyle = 'level plinth', foundationDetail = {};
         if (base - low > 5) {
             let perimeter = 0, exposedArea = 0, maxExposure = 0;
@@ -1768,7 +1790,19 @@ export function buildTile(tile, route, terrain, progress) {
             foot.dispose();
         }
         const corners=fp.filter((q,i)=>i===0||Math.hypot(q[0]-fp[i-1][0],q[1]-fp[i-1][1])>.01);if(corners.length>3&&Math.hypot(corners[0][0]-corners.at(-1)[0],corners[0][1]-corners.at(-1)[1])<.01)corners.pop();
-        if(appearance.pitched&&corners.length===4){
+        if(appearance.form==='industrial'&&corners.length===4){
+            const edge=i=>Math.hypot(corners[i][0]-corners[(i+1)%4][0],corners[i][1]-corners[(i+1)%4][1]);
+            const start=edge(0)<=edge(1)?0:1,[a,b,c,d]=Array.from({length:4},(_,i)=>corners[(start+i)%4]);
+            const span=edge(start),bays=Math.max(1,Math.min(6,Math.ceil(span/14))),sawtooth=building.roofShape==='sawtooth',roof=new THREE.Color(0x78827d),glass=new THREE.Color(0x8ba3a8);
+            const along=(u,v,t)=>u.map((n,k)=>n+(v[k]-n)*t),rise=Math.min(2.2,span/bays*.18);
+            for(let bay=0;bay<bays;bay++){
+                const t=bay/bays,T=(bay+1)/bays,r=(bay+(sawtooth?.84:.5))/bays;
+                const A=along(a,b,t),B=along(a,b,T),C=along(d,c,T),D=along(d,c,t),R=along(a,b,r),S=along(d,c,r);
+                const q=v=>p(v[0],base+height,v[1]),ridge=v=>p(v[0],base+height+rise,v[1]);
+                topQuad(batch,q(A),q(D),ridge(S),ridge(R),roof);topQuad(batch,ridge(R),ridge(S),q(C),q(B),sawtooth?glass:roof);
+                topTriangle(batch,q(A),ridge(R),q(B),roof);topTriangle(batch,q(D),q(C),ridge(S),roof);
+            }
+        }else if(appearance.pitched&&corners.length===4){
             const edge=i=>Math.hypot(corners[i][0]-corners[(i+1)%4][0],corners[i][1]-corners[(i+1)%4][1]);
             const start=edge(0)<=edge(1)?0:1,[a,b,c,d]=Array.from({length:4},(_,i)=>corners[(start+i)%4]);
             const ridgeA=p((a[0]+b[0])/2,base+height+appearance.roofRise,(a[1]+b[1])/2),ridgeB=p((c[0]+d[0])/2,base+height+appearance.roofRise,(c[1]+d[1])/2),roof=new THREE.Color(0x64645d);
@@ -1790,7 +1824,7 @@ export function buildTile(tile, route, terrain, progress) {
             roof.dispose();
         }
         if (near.distance < 170) {
-            const floors = Math.min(8, appearance.levels);
+            const floors = appearance.form==='industrial'?1:Math.min(8, appearance.levels);
             let budget = 28;
             for (let i = 0; i < fp.length && budget > 0; i++) {
                 const a = fp[i], b = fp[(i + 1) % fp.length], len = Math.hypot(b[0] - a[0], b[1] - a[1]);
@@ -1800,9 +1834,13 @@ export function buildTile(tile, route, terrain, progress) {
                 for (let k = 0; k < count && budget > 0; k++)
                     for (let f = 0; f < floors && budget > 0; f++) {
                         const t = (k + .5) / count;
-                        box(batch, a[0] + (b[0] - a[0]) * t, base + 1.40 + f * 2.7, a[1] + (b[1] - a[1]) * t, 1.1, 1.15, .07, 0x435965, -yaw);
+                        box(batch, a[0] + (b[0] - a[0]) * t, base + (appearance.form==='industrial'?height-.9:1.40 + f * 2.7), a[1] + (b[1] - a[1]) * t, 1.1, appearance.form==='industrial'?.65:1.15, .07, 0x435965, -yaw);
                         budget--;
                     }
+            }
+            if(appearance.form==='industrial'){
+                const edges=fp.map((a,i)=>({a,b:fp[(i+1)%fp.length],length:Math.hypot(fp[(i+1)%fp.length][0]-a[0],fp[(i+1)%fp.length][1]-a[1])})).sort((a,b)=>b.length-a.length),e=edges[0],yaw=-Math.atan2(e.b[1]-e.a[1],e.b[0]-e.a[0]),count=Math.max(1,Math.min(5,Math.floor(e.length/12))),h=Math.min(4.2,height-.5);
+                for(let i=0;i<count;i++){const t=(i+.5)/count,x=e.a[0]+(e.b[0]-e.a[0])*t,z=e.a[1]+(e.b[1]-e.a[1])*t;box(batch,x,base+h/2,z,3.8,h,.12,0x4d595b,yaw);for(let slat=.3;slat<h;slat+=.35)box(batch,x,base+slat,z,3.8,.035,.14,0x83918d,yaw);}
             }
             if(appearance.residential){const edges=fp.map((a,i)=>({a,b:fp[(i+1)%fp.length],length:Math.hypot(fp[(i+1)%fp.length][0]-a[0],fp[(i+1)%fp.length][1]-a[1])})).sort((a,b)=>b.length-a.length),e=edges[0];if(e.length>3){const count=appearance.form==='terrace'?Math.max(1,Math.min(8,Math.round(e.length/6))):appearance.form==='semi'?2:1,yaw=-Math.atan2(e.b[1]-e.a[1],e.b[0]-e.a[0]);for(let i=0;i<count;i++){const t=(i+.25)/count;box(batch,e.a[0]+(e.b[0]-e.a[0])*t,base+1,e.a[1]+(e.b[1]-e.a[1])*t,.85,2,.1,0x4b5147,yaw);}}}
             void r;
@@ -1824,6 +1862,7 @@ export function buildTile(tile, route, terrain, progress) {
             continue;
         const h = 5 + rand() * 6, tree = factory.tree({ id: `tree/${tile.id}/${i}`, height: h, seed: hash(tile.id) + i });
         const y = ground(x, z);
+        batch.source = {id:`tree/${tile.id}/${i}`,kind:'TREE'};
         tree.position.set(x, y, z);
         batch.add(tree);
         checks.trees++;
@@ -1831,6 +1870,7 @@ export function buildTile(tile, route, terrain, progress) {
     // Selected mapped adjacent tracks retain geographic placement instead of being
     // mirrored with travel direction. Their elevations remain explicitly inferred.
     for (const track of route.data.tracks) {
+        batch.source = {id:track.id,kind:'RAILWAY'};
         if (!track.points || track.points.length < 2)
             continue;
         for (let i = 1; i < track.points.length; i++) {
@@ -1858,6 +1898,7 @@ export function buildTile(tile, route, terrain, progress) {
         }
     }
     for (const civil of (route.data.civils || [])) {
+        batch.source = {id:civil.id,kind:'BRIDGE'};
         const path = new CurvePath(civil.points), p = path.sample(path.length / 2).position;
         if (inside(p[0], p[2], bounds)) {
             batch.add(makeRailCivil(civil, ground));
@@ -1865,6 +1906,7 @@ export function buildTile(tile, route, terrain, progress) {
         }
     }
     for (const asset of (route.data.landmarks || [])) {
+        batch.source = {id:asset.id,kind:'LANDMARK',source:asset.source};
         if (!inside(asset.position[0], asset.position[2], bounds))
             continue;
         batch.add(makeLandmark(asset));

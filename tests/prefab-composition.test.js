@@ -6,6 +6,7 @@ import {spawnSync} from 'node:child_process';
 import {GRID,position} from '../src/world/grid.js';
 import {GridWorld} from '../src/world/grid-world.js';
 import {ConstructionTerrain} from '../src/world/terrain-grid.js';
+import {TERRAIN_COLOURS,slopeShapeMatches} from '../src/world/terrain-materials.js';
 import {resolveComposition,verticalProfile} from '../src/world/prefab-composition.js';
 import {composePrefabChunk} from '../src/render/prefab-assets.js';
 import {matchingPorts} from '../src/world/piece-registry.js';
@@ -81,6 +82,12 @@ test('terrain support interpolation is the same piecewise plane as the rendered 
  const c={x:-1,z:-1,baseHeightTicks:32,cornerTicks:[0,2,6,3]},t=new ConstructionTerrain([c]);
  assert.equal(t.raw(-12,-4),1+(0.25*(6-3)+0.75*3)/32);assert.equal(t.raw(0,0),38/32);
  assert.throws(()=>t.raw(1,1),/missing support/);
+});
+test('all terrain material variants render, all corner masks remain exact, and named slopes reject contradictory heights',()=>{
+ const hashes=new Set();for(const material of Object.keys(TERRAIN_COLOURS)){const cs=copy();cs[1].terrain.at(-1).material=material;hashes.add(hash(packets(cs)[1]));}assert.equal(hashes.size,20);
+ for(let mask=0;mask<16;mask++){const ticks=[0,1,2,3].map(i=>(mask>>i&1)*2),base=Math.min(...ticks),cell={x:0,z:0,baseHeightTicks:32+base,cornerTicks:ticks.map(t=>t-base)},terrain=new ConstructionTerrain([cell]);assert.deepEqual(terrain.vertices(cell).map(v=>v[1]),ticks.map(t=>(32+t)/32));}
+ for(const [slopeShape,cornerTicks,slopeUnitTicks]of [['FLAT',[0,0,0,0]],['SINGLE_CORNER_UP',[0,2,0,0]],['ADJACENT_CORNERS_UP',[2,2,0,0]],['THREE_CORNERS_UP',[2,2,2,0]],['OPPOSITE_CORNERS_VALLEY',[0,2,0,2]],['DOUBLE_HEIGHT_SLOPE',[0,4,4,0],2],['CUSTOM_CORNER_HEIGHTS',[0,2,5,1]]])assert.equal(slopeShapeMatches({slopeShape,cornerTicks,slopeUnitTicks}),true,slopeShape);
+ assert.equal(slopeShapeMatches({slopeShape:'ADJACENT_CORNERS_UP',cornerTicks:[0,2,0,2]}),false);assert.equal(slopeShapeMatches({slopeShape:'OPPOSITE_CORNERS_VALLEY',cornerTicks:[2,0,2,0]}),false);
 });
 test('the same chunk loader verifies hashes, reports missing files, retries and restores a full offline snapshot',async()=>{
  const previous=globalThis.fetch;let failures=1,requests=0;

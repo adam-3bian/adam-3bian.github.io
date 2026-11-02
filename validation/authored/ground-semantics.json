@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "cells": 562018,
+  "landCover": {
+    "RIPARIAN": 2511,
+    "BARE_GROUND": 434670,
+    "WOODLAND": 11366,
+    "URBAN_HARDSTANDING": 2542,
+    "RESIDENTIAL_PLOT": 77136,
+    "MEADOW": 19937,
+    "ARABLE_FIELD": 13856
+  },
+  "earthwork": {
+    "EXCAVATION": 169463,
+    "NONE": 290193,
+    "FILL": 102362
+  },
+  "unknownSurface": 34141
+}

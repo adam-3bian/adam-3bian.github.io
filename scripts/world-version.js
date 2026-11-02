@@ -9,7 +9,7 @@ function sourceFiles(root) {
         const path = join(dir, entry.name);
         if (entry.isDirectory())
             visit(path);
-        else if (entry.isFile() && entry.name.endsWith('.js'))
+        else if (entry.isFile() && /\.(js|json)$/.test(entry.name))
             found.push(relative(root, path).split(sep).join('/'));
     } }
     visit(join(root, 'src'));
@@ -37,5 +37,5 @@ export function worldIdentity(root = process.cwd(), overrides) {
             return baseline.legacyWorldHash;
     }
     const physical = ['vite.config.js', 'scripts/world-version.js', 'src/core/geometry.js', 'src/core/simulation.js', 'src/core/pose.js', 'src/core/resource-url.js', 'src/core/save.js', 'src/world/build.js', 'src/world/access-sites.js', 'src/world/road-sites.js', 'src/world/site-definitions.json', 'src/world/platforms.js', 'src/world/surfaces.js', 'src/world/traffic.js', 'src/world/orientation.js', 'src/world/buildings.js', 'src/world/terrain-grid.js', 'src/world/asset-registry.js', 'src/world/piece-registry.js', 'src/world/piece-graph.js', 'src/render/assets.js', 'src/render/trackwork.js', 'src/render/batch.js', 'src/render/renderer.js', 'src/world/grid.js', 'src/world/grid-world.js', 'src/render/landmarks.js', ...dataFiles(root), ...gridFiles(root)];
-    return hashFiles(root, [...new Set([...physical, 'src/world/prefab-composition.js', 'src/render/prefab-assets.js'])], overrides);
+    return hashFiles(root, [...new Set([...physical, ...sourceFiles(root)])], overrides);
 }

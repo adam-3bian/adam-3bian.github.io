@@ -1,5 +1,11 @@
 # Acceptance evidence and open gates
 
+The latest authored-world results and explicit remaining gates are in
+[AUTHORED-WORLD.md](AUTHORED-WORLD.md) and
+[the machine-readable acceptance report](../validation/authored/acceptance.json).
+Earlier evidence below remains historical; it is not automatically recertified
+by a successful migration or build.
+
 ## Current reconstruction evidence — acceptance incomplete
 
 The current source-hashed run is summarised in [HANDOVER.md](../HANDOVER.md), [reconstruction browser report](reports/reconstruction-browser.json), [full geometry report](reports/geometry.json) and [station comparison bundle](station-review.html). Older reports below do not establish acceptance of the changed build.

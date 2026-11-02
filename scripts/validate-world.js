@@ -4,9 +4,9 @@ import { RailwaySimulation } from '../src/core/simulation.js';
 import { endpointContext } from '../src/world/build.js';
 import { decodeGrid } from '../src/world/grid.js';
 import { createHash } from 'node:crypto';
-const world=JSON.parse(readFileSync('public/data/grid/world.json','utf8'));
-const route = new RouteGeometry(decodeGrid(world.route));
-route.setEndpointContext(endpointContext(route));
+const world=JSON.parse(readFileSync('public/data/grid/authored-world.json','utf8'));
+const route = new RouteGeometry(decodeGrid(JSON.parse(readFileSync('world-source/operations.json','utf8'))));
+route.setEndpointContext(route.data.authoredEndpointContext||endpointContext(route));
 function drive(sim) {
     const p = sim.player;
     let target = mps(route.limit(p.s) - 4), distance = sim.distanceToStop();
@@ -59,7 +59,7 @@ for (let i = 0; i < 72000; i++) {
         break;
 }
 results.push({ name: 'Two-hour dispatcher/occupation soak', simulatedSeconds: soak.elapsed, stats: soak.stats, wallSeconds: (performance.now() - start) / 1000, eventCount: soak.events.length, method: 'Accelerated CPU rail simulation without a configured motor-road graph; not mixed-traffic or a two-hour browser/GPU soak.' });
-const sourceHashes = Object.fromEntries(['scripts/validate-world.js', 'src/core/geometry.js', 'src/core/simulation.js', 'src/render/trackwork.js', 'src/world/build.js', 'src/world/grid.js', 'public/data/grid/world.json'].map(path => [path, createHash('sha256').update(readFileSync(path)).digest('hex')]));
+const sourceHashes = Object.fromEntries(['scripts/validate-world.js', 'src/core/geometry.js', 'src/core/simulation.js', 'src/render/trackwork.js', 'src/world/build.js', 'src/world/grid.js', 'world-source/operations.json', 'public/data/grid/authored-world.json'].map(path => [path, createHash('sha256').update(readFileSync(path)).digest('hex')]));
 mkdirSync('docs/reports', { recursive: true });
 writeFileSync('docs/reports/simulation.json', JSON.stringify({ generatedAt: new Date().toISOString(), sourceHashes, worldRevision:world.revision, routeLength: route.length, results }, null, 2) + '\n');
 const failed = results.some(r => r.complete === false || r.validStopOrder === false || r.simulatedSeconds < 7199.9 || r.stats.collisions > 0 || r.stats.aiSpads > 0 || r.stats.spads > 0);

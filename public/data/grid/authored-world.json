@@ -1,0 +1,3143 @@
+{
+  "schema": 1,
+  "grid": {
+    "cellSize": 16,
+    "subdivisions": 1600,
+    "heightStep": 0.03125,
+    "version": 1
+  },
+  "authoredWorld": 2,
+  "revision": "19fc55c80f54e85ff4a97d2e20d3567a0f9b390bcb1cf4d5cba5e63743113eb8",
+  "routeData": {
+    "url": "data/grid/authored/operations.json.gz.bin",
+    "codec": "gzip-json",
+    "sha256": "2084c806f9cb0520c95eee979d22aa0e6e001c2479f1079e42aa5ff0f656552a",
+    "contentSHA256": "f99282efc70ebac66f82c780c88e2adb25430c8e5f0c3188f78db31f9081beb9"
+  },
+  "terrain": {
+    "url": "data/grid/terrain.bin",
+    "width": 2326,
+    "height": 1069,
+    "origin": [
+      -19200,
+      -10896
+    ],
+    "step": 16,
+    "offset": -100,
+    "scale": 0.03125,
+    "nodata": 0,
+    "encoding": "uint16-le-row-major",
+    "source": "EA ground resampled to shared 16 m cells, slope-limited for visual consistency; western margin inferred",
+    "meaning": "Model ODN metres; elevations and bridge ground transitions are not surveyed",
+    "maxBaseGrade": 0.3
+  },
+  "terrainSHA256": "d13b2ea8ecc74868395901f7cd211519631a3e149457a90470884a2ddccddbd0",
+  "tiles": [
+    {
+      "id": "-1_-10",
+      "bounds": [
+        -1000,
+        -10000,
+        0,
+        -9000
+      ],
+      "url": "data/grid/authored/-1_-10.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "c02fc9883f837b62fe5dd0a3640c462e927e9d9a92adc00f1f8596c6c87789fc",
+      "contentSHA256": "2c4ca4c6318e14358f9c317bee24f07de7c6e43e1efddbaa2f913221127310f7",
+      "bytes": 1829577,
+      "dependencies": []
+    },
+    {
+      "id": "-1_-7",
+      "bounds": [
+        -1000,
+        -7000,
+        0,
+        -6000
+      ],
+      "url": "data/grid/authored/-1_-7.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "3d2ee8fa2b8805302a7a63f02463ac39ed592af49ef1147684344cf59d8e78e0",
+      "contentSHA256": "b63bb11131bfa8a6d22e95f53a5f26fdc92bacdc6e89af6a3693fbe1facebfb5",
+      "bytes": 474614,
+      "dependencies": []
+    },
+    {
+      "id": "-1_-8",
+      "bounds": [
+        -1000,
+        -8000,
+        0,
+        -7000
+      ],
+      "url": "data/grid/authored/-1_-8.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "4676e2a076ef180f67a17660ca8bdd6e9a8944e52d516cce37478b4ebe4eae79",
+      "contentSHA256": "c02e41f673d7f89553872bf657651a4a0ece77fcf8b9a10334eda9d82c022988",
+      "bytes": 5652436,
+      "dependencies": []
+    },
+    {
+      "id": "-1_-9",
+      "bounds": [
+        -1000,
+        -9000,
+        0,
+        -8000
+      ],
+      "url": "data/grid/authored/-1_-9.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "e9e4de62d713fe9a4d34602928b8d1d09df35bfeeecc896d8ed70074ae99fa89",
+      "contentSHA256": "c91bf62e9c1a9590734be4a755746d667f013899c0430ace27aa1855869e795d",
+      "bytes": 7112083,
+      "dependencies": []
+    },
+    {
+      "id": "-10_-1",
+      "bounds": [
+        -10000,
+        -1000,
+        -9000,
+        0
+      ],
+      "url": "data/grid/authored/-10_-1.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "dbb611eaf03024178b2115edde78d57a674d60d719835d453c3f2bf77bf6ed98",
+      "contentSHA256": "cef9c81607db40b2bf2d5838dc5f381f253ab335816212a0944ac75690382196",
+      "bytes": 3696996,
+      "dependencies": []
+    },
+    {
+      "id": "-10_-2",
+      "bounds": [
+        -10000,
+        -2000,
+        -9000,
+        -1000
+      ],
+      "url": "data/grid/authored/-10_-2.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "ea38b30ad2983cacf659ca3666a873d149296889dece67aca9355209e1196984",
+      "contentSHA256": "3e94e4f8980bde13e330679698cf7045a31602d60dfb0701e5c197c094d801d9",
+      "bytes": 3077834,
+      "dependencies": []
+    },
+    {
+      "id": "-10_-3",
+      "bounds": [
+        -10000,
+        -3000,
+        -9000,
+        -2000
+      ],
+      "url": "data/grid/authored/-10_-3.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "543a8c92bf74a4145514012526a143704d1a81a8188504d08b1160b526551d99",
+      "contentSHA256": "cc1a48b6c4fae5de4eaab909a5f4e403d29c747fd23c6c2f47d85c355befcf10",
+      "bytes": 4372409,
+      "dependencies": []
+    },
+    {
+      "id": "-10_-4",
+      "bounds": [
+        -10000,
+        -4000,
+        -9000,
+        -3000
+      ],
+      "url": "data/grid/authored/-10_-4.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "2709baf7e688a010fb5104b8642fea5ae16d4091e6cb238a7c1fb8f3925374f2",
+      "contentSHA256": "72429b26c1c07ce0fcabeeb219cffceac56cf0c371b35ad610ac06bf0caeeabb",
+      "bytes": 3653269,
+      "dependencies": []
+    },
+    {
+      "id": "-10_-5",
+      "bounds": [
+        -10000,
+        -5000,
+        -9000,
+        -4000
+      ],
+      "url": "data/grid/authored/-10_-5.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "98d6d06f255ff94bcf5432a4029856916273fd94ffb6a1a1d29ac81f2cb9c26d",
+      "contentSHA256": "ffa98681ee040a3a22ee1730a37210ed291801351a377f235bfb466dc0706189",
+      "bytes": 1737415,
+      "dependencies": []
+    },
+    {
+      "id": "-10_0",
+      "bounds": [
+        -10000,
+        0,
+        -9000,
+        1000
+      ],
+      "url": "data/grid/authored/-10_0.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "d9def567b3cc5cb9471be4b2fed30d39a293a6e5babfc74d08b204dcf8228271",
+      "contentSHA256": "bf6b26180186f00392ff7a767212aebf3139b6a9a7100f27e9ca94c066691dc6",
+      "bytes": 746736,
+      "dependencies": []
+    },
+    {
+      "id": "-11_-1",
+      "bounds": [
+        -11000,
+        -1000,
+        -10000,
+        0
+      ],
+      "url": "data/grid/authored/-11_-1.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "b6945d71939c6a683f4e659a12e105b7e419c70fe19d63f2b6ff9bbbb9773f33",
+      "contentSHA256": "d976b49bb8ffbc5a14c60f463f2d4cc99527746c71dcda18245f3e13588ba3a7",
+      "bytes": 2020859,
+      "dependencies": []
+    },
+    {
+      "id": "-11_-2",
+      "bounds": [
+        -11000,
+        -2000,
+        -10000,
+        -1000
+      ],
+      "url": "data/grid/authored/-11_-2.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "3821cbcdc09af642c2e3fedcfe90fb58946e6f37554b24dd63ff6ad90852e71f",
+      "contentSHA256": "540ef3a67fdb3cc1db5fce39774d719467f2ab25673e006f3b27a0deca1bf7f3",
+      "bytes": 452001,
+      "dependencies": []
+    },
+    {
+      "id": "-11_-3",
+      "bounds": [
+        -11000,
+        -3000,
+        -10000,
+        -2000
+      ],
+      "url": "data/grid/authored/-11_-3.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "6f4cbc2bf0e99e703c850142efbf9094b1740e7f4549fd5edd7b4a33579a7386",
+      "contentSHA256": "a43baab4c8f90eae5dc0d4e10c7dbd8a3c92c8e4048365d1c0ef2286e96c107b",
+      "bytes": 290650,
+      "dependencies": []
+    },
+    {
+      "id": "-11_0",
+      "bounds": [
+        -11000,
+        0,
+        -10000,
+        1000
+      ],
+      "url": "data/grid/authored/-11_0.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "7e6863bfce2729258092b1a369bb1ae3642cb70fba6797bb587c9a6e0fae486c",
+      "contentSHA256": "8366b6cfde3b11b4f91e4082eaec1a48cac7814f5b113d55e07f1635d7b0fdc0",
+      "bytes": 2564926,
+      "dependencies": []
+    },
+    {
+      "id": "-12_-1",
+      "bounds": [
+        -12000,
+        -1000,
+        -11000,
+        0
+      ],
+      "url": "data/grid/authored/-12_-1.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "280e37581ac28ef4ecc5fca0224a7b896753e294c97283ac67d347445fcc0b86",
+      "contentSHA256": "fb42ac13304c63a0c3591d0638c2107c0480103dc046d6c552e2bd4ba494b4ed",
+      "bytes": 271571,
+      "dependencies": []
+    },
+    {
+      "id": "-12_0",
+      "bounds": [
+        -12000,
+        0,
+        -11000,
+        1000
+      ],
+      "url": "data/grid/authored/-12_0.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "8aa37787edbfa802068677a7a4c9493e509bfb7c055bd8cc0f0000aacaecf0b3",
+      "contentSHA256": "44a1dde5ffc713c0b23fe1b0fb5c803de2a6c4f30e58772e6315c4d8d9d4a690",
+      "bytes": 2192598,
+      "dependencies": []
+    },
+    {
+      "id": "-12_1",
+      "bounds": [
+        -12000,
+        1000,
+        -11000,
+        2000
+      ],
+      "url": "data/grid/authored/-12_1.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "e4914061805fffd164444509c8f9f1e347b8befdf85ba336eb318eef5fda893e",
+      "contentSHA256": "1e2f9d1a50df825dd6854efecd9f159b2e1ebb1c07d904b5a503fc35b1800acb",
+      "bytes": 1778608,
+      "dependencies": []
+    },
+    {
+      "id": "-12_2",
+      "bounds": [
+        -12000,
+        2000,
+        -11000,
+        3000
+      ],
+      "url": "data/grid/authored/-12_2.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "c190454d3e64fae275ade0e41c5b77aea32901af8a61de7cfeab278c5a786147",
+      "contentSHA256": "72d7b46447d4a08ad2592791e27ec3cb1d1a3e1faf72314d3b73836bb66680f3",
+      "bytes": 373671,
+      "dependencies": []
+    },
+    {
+      "id": "-13_0",
+      "bounds": [
+        -13000,
+        0,
+        -12000,
+        1000
+      ],
+      "url": "data/grid/authored/-13_0.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "1baac480fd01fb6adb2bbc3aef171bcc65469ab7b01e9f3399a1ccce0c88798b",
+      "contentSHA256": "daf983d57229752ddcb75cf64702e66bc672ed90878275fa37902524e633dd46",
+      "bytes": 560095,
+      "dependencies": []
+    },
+    {
+      "id": "-13_1",
+      "bounds": [
+        -13000,
+        1000,
+        -12000,
+        2000
+      ],
+      "url": "data/grid/authored/-13_1.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "0482f7e68eb8c04bf44db91394d3b4574db1f59d5fee08149f695b3a0ed2c461",
+      "contentSHA256": "5fdfdde80d04c9595a04ddf1826a3cb4b10e8ac6ae9f3fbd602896dad30bbe97",
+      "bytes": 2637570,
+      "dependencies": []
+    },
+    {
+      "id": "-13_2",
+      "bounds": [
+        -13000,
+        2000,
+        -12000,
+        3000
+      ],
+      "url": "data/grid/authored/-13_2.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "e51b810f79c29c710348190ccee144ff3975b9ed9c10aa5d3af54037af7ddbc8",
+      "contentSHA256": "a1509cde6b53c289f393a9d0b5c320c04d3507e44377bd7812851f5c6316fe05",
+      "bytes": 1237183,
+      "dependencies": []
+    },
+    {
+      "id": "-14_1",
+      "bounds": [
+        -14000,
+        1000,
+        -13000,
+        2000
+      ],
+      "url": "data/grid/authored/-14_1.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "99b3360601485a5ccd34d13c789c0efdaecd5191757506291d8620b23fe2c1fb",
+      "contentSHA256": "97c33ec68bf5595226f53d9ea98460f401dffea61a68b3998a8323caa2347135",
+      "bytes": 563705,
+      "dependencies": []
+    },
+    {
+      "id": "-14_2",
+      "bounds": [
+        -14000,
+        2000,
+        -13000,
+        3000
+      ],
+      "url": "data/grid/authored/-14_2.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "5a265540244dcfbed6f97f420ab9b144c23fd95310a8da5616025a7beb9bfd96",
+      "contentSHA256": "19ff9b8c17fb529cbace47bdbd532c7a2524889b9b9cc584cde0aafc805c6b0c",
+      "bytes": 2144746,
+      "dependencies": []
+    },
+    {
+      "id": "-14_3",
+      "bounds": [
+        -14000,
+        3000,
+        -13000,
+        4000
+      ],
+      "url": "data/grid/authored/-14_3.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "b89b99f373326e6c1bacc6e8713683f86581db91d67b530d09127d06a29c96fb",
+      "contentSHA256": "70561a04be5b4ad75a07f975fb17c836efdd99cae407fb373eebed8760978694",
+      "bytes": 309995,
+      "dependencies": []
+    },
+    {
+      "id": "-15_2",
+      "bounds": [
+        -15000,
+        2000,
+        -14000,
+        3000
+      ],
+      "url": "data/grid/authored/-15_2.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "8e0f4ba4e5178a28af1612a528d37f2610e4b6d99d80cf5d26e3e8a45e5f71ca",
+      "contentSHA256": "bb5b5cb39ddd366647f926185f21fb4f5d89641a5a6d1bc40ca7fde6169dcea8",
+      "bytes": 2296170,
+      "dependencies": []
+    },
+    {
+      "id": "-15_3",
+      "bounds": [
+        -15000,
+        3000,
+        -14000,
+        4000
+      ],
+      "url": "data/grid/authored/-15_3.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "2121109d283606c823367a04b193407bac2aaee16173fb139dc54a5e7fddd0d4",
+      "contentSHA256": "01a19054ac52c5ac5634baa877f4ea53c2c6f2dedd6516119ddea9c62233573a",
+      "bytes": 854258,
+      "dependencies": []
+    },
+    {
+      "id": "-16_2",
+      "bounds": [
+        -16000,
+        2000,
+        -15000,
+        3000
+      ],
+      "url": "data/grid/authored/-16_2.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "eaca48fc6f54f536b5ad5be0ca92aecff57b080eb4a965a102dbda8f8bceec34",
+      "contentSHA256": "87aef04279b1670d9e889b3b4ff8531b7b764e0ce3411a474d975474abe61a0c",
+      "bytes": 2378632,
+      "dependencies": []
+    },
+    {
+      "id": "-16_3",
+      "bounds": [
+        -16000,
+        3000,
+        -15000,
+        4000
+      ],
+      "url": "data/grid/authored/-16_3.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "1227ca35c35e3fa5249f195d1f58484c7e27a1c398cf21638ccb0b189f60f03e",
+      "contentSHA256": "9afaa338c160e3ff9ffb8515ad4d72881a1fd79c8e3877a8445884de955f239a",
+      "bytes": 3326688,
+      "dependencies": []
+    },
+    {
+      "id": "-16_4",
+      "bounds": [
+        -16000,
+        4000,
+        -15000,
+        5000
+      ],
+      "url": "data/grid/authored/-16_4.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "8e92024afec82d0ceebe9f44b08a2b75eb9448959fa0ce7062692e0febf35697",
+      "contentSHA256": "f118ee89c5da7cea919e2816fae4935f80b1ea72f06ebf4c0a75b76ae9b9cc6d",
+      "bytes": 921933,
+      "dependencies": []
+    },
+    {
+      "id": "-16_5",
+      "bounds": [
+        -16000,
+        5000,
+        -15000,
+        6000
+      ],
+      "url": "data/grid/authored/-16_5.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "153d747dbe0678a3748148a36cd0c2038981682689fe1a0db432b8f5a751655d",
+      "contentSHA256": "f0bf5d26fd91d3df9583e46476118da866ded561868d307804921a85e9026dff",
+      "bytes": 264819,
+      "dependencies": []
+    },
+    {
+      "id": "-17_2",
+      "bounds": [
+        -17000,
+        2000,
+        -16000,
+        3000
+      ],
+      "url": "data/grid/authored/-17_2.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "2e1a57891004b4419892a26b35c0f9f840526b890a7bba1bbc2e5cdecdb68145",
+      "contentSHA256": "acd460430f9c68d841b4c0909888dae849c03ee768a517d302a049b0028d2c6e",
+      "bytes": 1583118,
+      "dependencies": []
+    },
+    {
+      "id": "-17_3",
+      "bounds": [
+        -17000,
+        3000,
+        -16000,
+        4000
+      ],
+      "url": "data/grid/authored/-17_3.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "cb9b59f4508de903f0f6bf707cd8467751f0663327357dd7b2e92086c136d216",
+      "contentSHA256": "f0e876558e1587ed53ab25bb13ff7b5a4d7e740a5c36fa70c241c475ed5e2b7b",
+      "bytes": 4890617,
+      "dependencies": []
+    },
+    {
+      "id": "-17_4",
+      "bounds": [
+        -17000,
+        4000,
+        -16000,
+        5000
+      ],
+      "url": "data/grid/authored/-17_4.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "c97862eb43ddfaa2512b347385c6fdc922aabd65adc2e125838cf02d571c7836",
+      "contentSHA256": "2cdcd4242d8b6ab3d186ae0bd4987eef800304ef46c8f8d55a392bfddb17e8d3",
+      "bytes": 3589355,
+      "dependencies": []
+    },
+    {
+      "id": "-17_5",
+      "bounds": [
+        -17000,
+        5000,
+        -16000,
+        6000
+      ],
+      "url": "data/grid/authored/-17_5.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "825f36dd1f4f6230dad3f040ab75ba5164ad9290433d8b38e991b75c87a5bd31",
+      "contentSHA256": "e1b7968534e7433939b76f15d5991cec053650b9f30722ba8d744cd311c536f5",
+      "bytes": 341047,
+      "dependencies": []
+    },
+    {
+      "id": "-17_6",
+      "bounds": [
+        -17000,
+        6000,
+        -16000,
+        7000
+      ],
+      "url": "data/grid/authored/-17_6.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "b5deecf65b00b4ab0913e74dcb317edabdbca5a3607390407d2f16835cbab0d8",
+      "contentSHA256": "e2a13d5cd11171513f9b2f32a36ae292eafc415cb06331b2eccff656c9d5f1ff",
+      "bytes": 183385,
+      "dependencies": []
+    },
+    {
+      "id": "-18_2",
+      "bounds": [
+        -18000,
+        2000,
+        -17000,
+        3000
+      ],
+      "url": "data/grid/authored/-18_2.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "bc64cb41e3aa12b2ee6d5580c5b3539a82b79de0b77d8efc2ea0ffac014e6110",
+      "contentSHA256": "c4a13a3f4bedaa632770b542f8d15de885e6bccebfa6795cacf408a3fcf1cd57",
+      "bytes": 271051,
+      "dependencies": []
+    },
+    {
+      "id": "-18_3",
+      "bounds": [
+        -18000,
+        3000,
+        -17000,
+        4000
+      ],
+      "url": "data/grid/authored/-18_3.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "943bd0873cf55964ffe606fb19e2e83f3d480ca95f07eeaaddb75dae2cf20fe4",
+      "contentSHA256": "09d7c17935087f21c47666ae3c6fefab6f2f34aae33565772ff824401a11266a",
+      "bytes": 770291,
+      "dependencies": []
+    },
+    {
+      "id": "-18_4",
+      "bounds": [
+        -18000,
+        4000,
+        -17000,
+        5000
+      ],
+      "url": "data/grid/authored/-18_4.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "1128f44fbd7d404fe4af1256fc9d706ed89a6f938a29159cfeefa605afac9b90",
+      "contentSHA256": "409a989ef2ff0b6ddcc95eba49e06fd5ac5402bd283a3c125d7b3789ce5ea024",
+      "bytes": 799079,
+      "dependencies": []
+    },
+    {
+      "id": "-18_5",
+      "bounds": [
+        -18000,
+        5000,
+        -17000,
+        6000
+      ],
+      "url": "data/grid/authored/-18_5.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "b6cfd87d4df749268750312e53b19c9b0f35f389c823857b696213a5e2a642d0",
+      "contentSHA256": "069d56543575328fc699021d414444e7f7846bddf3f09ae8cfdb145698203508",
+      "bytes": 445350,
+      "dependencies": []
+    },
+    {
+      "id": "-18_6",
+      "bounds": [
+        -18000,
+        6000,
+        -17000,
+        7000
+      ],
+      "url": "data/grid/authored/-18_6.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "927d2d60085cd5bdfc46e8a8b28aa6e1f13c308c1fb53f22beea526cdec43501",
+      "contentSHA256": "e3d7d5d26b326ee54efa8bd999273bf37865bb9415355767e370e09d156b2f08",
+      "bytes": 178942,
+      "dependencies": []
+    },
+    {
+      "id": "-19_3",
+      "bounds": [
+        -19000,
+        3000,
+        -18000,
+        4000
+      ],
+      "url": "data/grid/authored/-19_3.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "a3dd56c74e97a8e7f0acb4a85d2dae43f4725a8e9713a0670a9c5e294b182ada",
+      "contentSHA256": "e5387ada1fdd3e3a9f153242c8269e7528b33f0533a6503385e4281f3d50ec3d",
+      "bytes": 223679,
+      "dependencies": []
+    },
+    {
+      "id": "-19_4",
+      "bounds": [
+        -19000,
+        4000,
+        -18000,
+        5000
+      ],
+      "url": "data/grid/authored/-19_4.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "2895abc1d4b0965404acb8d230eda19a1049c2abc952b5c6ce684a21de350e8b",
+      "contentSHA256": "0198ed80ead8d6d628333420bb9883d3bcaa2345379514c02f93f06a0b0759b0",
+      "bytes": 226244,
+      "dependencies": []
+    },
+    {
+      "id": "-19_5",
+      "bounds": [
+        -19000,
+        5000,
+        -18000,
+        6000
+      ],
+      "url": "data/grid/authored/-19_5.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "eb493ed80ad8ce0ceb2771f164284cc9591959c6f6f23c59c763cc47055c6a06",
+      "contentSHA256": "e86087ad4c18e773f8d3b79df7de47709d3e7cff5319fff408c4d7b7b318f701",
+      "bytes": 235890,
+      "dependencies": []
+    },
+    {
+      "id": "-19_6",
+      "bounds": [
+        -19000,
+        6000,
+        -18000,
+        7000
+      ],
+      "url": "data/grid/authored/-19_6.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "bb2fc925d723f0c9d0fd34726dfdd0c84a97ca7d621ad2aa0108b712097aa1fa",
+      "contentSHA256": "3df043fedef6e6d16980aef27cd69ef2995c10d04b19686b627e49948baedff1",
+      "bytes": 172492,
+      "dependencies": []
+    },
+    {
+      "id": "-2_-6",
+      "bounds": [
+        -2000,
+        -6000,
+        -1000,
+        -5000
+      ],
+      "url": "data/grid/authored/-2_-6.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "282976b8a57476dc0d91d374b4106fb07ab6d333264b5761a01338407f864fc6",
+      "contentSHA256": "62eee73b227bfd3b4a49b318d5d6ebd7e16118f7e7f2e6fb80d3f4dc1e792dd1",
+      "bytes": 494390,
+      "dependencies": []
+    },
+    {
+      "id": "-2_-7",
+      "bounds": [
+        -2000,
+        -7000,
+        -1000,
+        -6000
+      ],
+      "url": "data/grid/authored/-2_-7.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "5e7a33caf6150b73c9ea96980357af4c792eb61a71777f2283aab7b4abc161d9",
+      "contentSHA256": "ace97d938d148cb3e2f3cda87104df05c657864a5e9a5066dc5e6fdd9f570d7e",
+      "bytes": 3843423,
+      "dependencies": []
+    },
+    {
+      "id": "-2_-8",
+      "bounds": [
+        -2000,
+        -8000,
+        -1000,
+        -7000
+      ],
+      "url": "data/grid/authored/-2_-8.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "9f5682da2f97c3f149fcb4e73bd4fb06769fd1f1cbfcb53ca65fd3771a1a6c72",
+      "contentSHA256": "0b8b1d09d48840d5f916a95619fca08400e40da228c1b5cbde890ab03384b64b",
+      "bytes": 5458281,
+      "dependencies": []
+    },
+    {
+      "id": "-2_-9",
+      "bounds": [
+        -2000,
+        -9000,
+        -1000,
+        -8000
+      ],
+      "url": "data/grid/authored/-2_-9.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "b76e219cfbf1d2ea4d51a895ba3114f0f0ac4c8717a954ab1badc3a9c69cc613",
+      "contentSHA256": "59539d2e784403e9f66810c3107c99978866830a0caa4d956b74456b8e7005cd",
+      "bytes": 892027,
+      "dependencies": []
+    },
+    {
+      "id": "-3_-6",
+      "bounds": [
+        -3000,
+        -6000,
+        -2000,
+        -5000
+      ],
+      "url": "data/grid/authored/-3_-6.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "c128b258caf6c5d1e73ab4dca738d4b97b51960a3fce977c2362f07d630a6bd4",
+      "contentSHA256": "17f1f7c9fba9ad28fa687d0df019203328efeb70bb368518b70fb43439da04e6",
+      "bytes": 1987016,
+      "dependencies": []
+    },
+    {
+      "id": "-3_-7",
+      "bounds": [
+        -3000,
+        -7000,
+        -2000,
+        -6000
+      ],
+      "url": "data/grid/authored/-3_-7.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "a235766d0cf6755f2df0ba57f5b0f0ad52f6046f112e4c2b4e2c7813f8136973",
+      "contentSHA256": "cec42ceebb9cb9faa5e9a1416775aaabf64e4ea86004d93f395ba48f13a5cd4e",
+      "bytes": 5719910,
+      "dependencies": []
+    },
+    {
+      "id": "-3_-8",
+      "bounds": [
+        -3000,
+        -8000,
+        -2000,
+        -7000
+      ],
+      "url": "data/grid/authored/-3_-8.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "da342ccb4f93122f30bedf4c19b7d78160b0fc92c67505baacfd0068dfa259f2",
+      "contentSHA256": "0f9f369559ee8a53269db1ac3f56891d57007f382d685412e5b5bc4bc108bb32",
+      "bytes": 1016315,
+      "dependencies": []
+    },
+    {
+      "id": "-4_-6",
+      "bounds": [
+        -4000,
+        -6000,
+        -3000,
+        -5000
+      ],
+      "url": "data/grid/authored/-4_-6.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "4bcf03bffa71e62deb410db07bddfbb26823d7fb3db5395e20944c34a926ddb9",
+      "contentSHA256": "9b297ceeeac6214356788af59984b21b9a09f5f3be11ea40dd7c02af1169a36a",
+      "bytes": 4064655,
+      "dependencies": []
+    },
+    {
+      "id": "-4_-7",
+      "bounds": [
+        -4000,
+        -7000,
+        -3000,
+        -6000
+      ],
+      "url": "data/grid/authored/-4_-7.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "5157ef8fec7171edac1083cff805f6a52d939699dfb03e8a368435ec1bf625e0",
+      "contentSHA256": "b38f8ca6c411dce8f3315bd7c43339cb4243d15f5c67ab6af5b19d998bdc23c7",
+      "bytes": 2392612,
+      "dependencies": []
+    },
+    {
+      "id": "-5_-6",
+      "bounds": [
+        -5000,
+        -6000,
+        -4000,
+        -5000
+      ],
+      "url": "data/grid/authored/-5_-6.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "8b8f7e9f71c4f1036c1317a6e8e9eaa0f6b00e503af201c6ef78e195c130c4f7",
+      "contentSHA256": "c361ad7e7ce67e644a8c8af894d39ec1555124fe1df57a9a0fe75f86f415d0f3",
+      "bytes": 4350982,
+      "dependencies": []
+    },
+    {
+      "id": "-5_-7",
+      "bounds": [
+        -5000,
+        -7000,
+        -4000,
+        -6000
+      ],
+      "url": "data/grid/authored/-5_-7.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "70a1e6f375bd7df3c813fbe99827e94a94feb81059084efe20f764abaa14914d",
+      "contentSHA256": "a7c647251fd5ea6587a5dad2b6a1953436e94b9c310e9c58b79c3ed961b32f89",
+      "bytes": 2398144,
+      "dependencies": []
+    },
+    {
+      "id": "-6_-6",
+      "bounds": [
+        -6000,
+        -6000,
+        -5000,
+        -5000
+      ],
+      "url": "data/grid/authored/-6_-6.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "dbd56a055e84c8bff0c5373327127f6e1c217cf5a133edbab7ac268a142f34e8",
+      "contentSHA256": "242af08e6d91b0a6f4a4e1c779e5d6c3f70365923329cee1fabaf23bf7bf2b0d",
+      "bytes": 4834572,
+      "dependencies": []
+    },
+    {
+      "id": "-6_-7",
+      "bounds": [
+        -6000,
+        -7000,
+        -5000,
+        -6000
+      ],
+      "url": "data/grid/authored/-6_-7.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "13aa1ba7d96da3538a9ba4d00200d817e778a166978c71b083bbe614c4361377",
+      "contentSHA256": "563a94de04709ef2ed06351807e99532f184386d1cc2eeaf0be908e716b18b3d",
+      "bytes": 1763510,
+      "dependencies": []
+    },
+    {
+      "id": "-7_-5",
+      "bounds": [
+        -7000,
+        -5000,
+        -6000,
+        -4000
+      ],
+      "url": "data/grid/authored/-7_-5.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "64e39aebb7af83b8c5c3c95f8dfc316d8519e2407da637f88cec48d44bce5a33",
+      "contentSHA256": "f0a4ca39401fc3e7441b7f86200534a87634025f98025f380fc6a152178c3a49",
+      "bytes": 2059880,
+      "dependencies": []
+    },
+    {
+      "id": "-7_-6",
+      "bounds": [
+        -7000,
+        -6000,
+        -6000,
+        -5000
+      ],
+      "url": "data/grid/authored/-7_-6.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "2d7074e8ad85a193ed718ffc93dff62e50ccb8af9bb13701368e0af5f283475f",
+      "contentSHA256": "23799742ffd58e4e96716d7faea7f105a13dafdcb2b44eb04d4c8d362f59396e",
+      "bytes": 5466435,
+      "dependencies": []
+    },
+    {
+      "id": "-7_-7",
+      "bounds": [
+        -7000,
+        -7000,
+        -6000,
+        -6000
+      ],
+      "url": "data/grid/authored/-7_-7.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "4c4eb83cb5ba8620d848e34a1a07e7a228c4a73fdc7923a98636c9db966b2c74",
+      "contentSHA256": "f78af1e1dcbc2ef85594a86ac1f4b4d1dd097cd50ddaf7bbdf314c86d51a6119",
+      "bytes": 1093809,
+      "dependencies": []
+    },
+    {
+      "id": "-8_-4",
+      "bounds": [
+        -8000,
+        -4000,
+        -7000,
+        -3000
+      ],
+      "url": "data/grid/authored/-8_-4.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "c0796f9492699d64bae6a374d0f4e6467d766716c3ba4ed344bf1e7f459aa83d",
+      "contentSHA256": "b980d4de958d35ec18ca5cd0248b2acc66bb42d6c3412c1ce9e5d8388fe53bde",
+      "bytes": 456774,
+      "dependencies": []
+    },
+    {
+      "id": "-8_-5",
+      "bounds": [
+        -8000,
+        -5000,
+        -7000,
+        -4000
+      ],
+      "url": "data/grid/authored/-8_-5.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "61add2b315fc755eb141cc8efe5c1675a784b5afb97208c93a66054fdc83aa3b",
+      "contentSHA256": "94041c4a440842c71f32ec3d823359f571a7cb0f19b461282d3d699c94f288cc",
+      "bytes": 4870015,
+      "dependencies": []
+    },
+    {
+      "id": "-8_-6",
+      "bounds": [
+        -8000,
+        -6000,
+        -7000,
+        -5000
+      ],
+      "url": "data/grid/authored/-8_-6.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "4dd73f0bb5f07c65b69530b9d89a9146c1e8d2a1da8e0bf6363d7676340e0061",
+      "contentSHA256": "e7f3dd80056998c4df126fc48604a76faff1586108876f52b3821f08f44290d3",
+      "bytes": 1596999,
+      "dependencies": []
+    },
+    {
+      "id": "-9_-2",
+      "bounds": [
+        -9000,
+        -2000,
+        -8000,
+        -1000
+      ],
+      "url": "data/grid/authored/-9_-2.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "8649ad04d0e19eeeaeb5d71e5618c357e9159b6851348f9fd7912164f6848b1e",
+      "contentSHA256": "fe49e5d14a36f914c6be93236f10ab574b21b79c8295b73780902f7021fce8b9",
+      "bytes": 471688,
+      "dependencies": []
+    },
+    {
+      "id": "-9_-3",
+      "bounds": [
+        -9000,
+        -3000,
+        -8000,
+        -2000
+      ],
+      "url": "data/grid/authored/-9_-3.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "b7b7361090f40f20093d9337628fbebca5d913bbc7ac7ad14f2c99f182082898",
+      "contentSHA256": "1e60a89e33bf5b58aa74778f82cbbc22b06f582576ed3da1d926e2d7ad5b45c4",
+      "bytes": 1769850,
+      "dependencies": []
+    },
+    {
+      "id": "-9_-4",
+      "bounds": [
+        -9000,
+        -4000,
+        -8000,
+        -3000
+      ],
+      "url": "data/grid/authored/-9_-4.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "d333ed1dc2c0ab06165ad78e81ae4f858757d863efdfba0cd4b964f8bc06abff",
+      "contentSHA256": "8332625bce146867cc692abf0f045e8034d073e8b6539f339562e993f1fc24b0",
+      "bytes": 3337076,
+      "dependencies": []
+    },
+    {
+      "id": "-9_-5",
+      "bounds": [
+        -9000,
+        -5000,
+        -8000,
+        -4000
+      ],
+      "url": "data/grid/authored/-9_-5.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "a20d5bf1c725911109eb376b5b70802ce9cbcccfcce312270a71b0e11177ca09",
+      "contentSHA256": "ce1b422cd73bede4e5a82509eaa8fabdda21e08992ca07f72fe5e781ca3212fd",
+      "bytes": 4831810,
+      "dependencies": []
+    },
+    {
+      "id": "-9_-6",
+      "bounds": [
+        -9000,
+        -6000,
+        -8000,
+        -5000
+      ],
+      "url": "data/grid/authored/-9_-6.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "7b3616337baa041b91bebeb9ab378ca2b95cf748c10d2a02a7e0c0d2833f4ccf",
+      "contentSHA256": "4d792f269b8bb8562dd9d0ddcc3d18d7ae644120be10728b8e1a4b9ad06f28c8",
+      "bytes": 784813,
+      "dependencies": []
+    },
+    {
+      "id": "0_-10",
+      "bounds": [
+        0,
+        -10000,
+        1000,
+        -9000
+      ],
+      "url": "data/grid/authored/0_-10.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "3bd49a42980708d14e1468c5b719edb2a0498ba1a2a7098ce3277822b33717e5",
+      "contentSHA256": "0c1b95bd797bb7d2efa95efb6070781f489b03b52e0bfc8cdd306dfeb92cecf2",
+      "bytes": 6430727,
+      "dependencies": []
+    },
+    {
+      "id": "0_-8",
+      "bounds": [
+        0,
+        -8000,
+        1000,
+        -7000
+      ],
+      "url": "data/grid/authored/0_-8.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "4c155f7d0e0ff4a7e23983c1867d0f063a6fe6b04e92bde6acca48da1e491024",
+      "contentSHA256": "0fd33528456871939a5dcf94bd7907dd34d1c2fb45b623b6368f5a3e351af23d",
+      "bytes": 670356,
+      "dependencies": []
+    },
+    {
+      "id": "0_-9",
+      "bounds": [
+        0,
+        -9000,
+        1000,
+        -8000
+      ],
+      "url": "data/grid/authored/0_-9.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "8cdfce4df1de5c5816ea7398d61006a788015c91cc70503fc3896d5f60eaaeab",
+      "contentSHA256": "d2e13656b6c72c170f3c0c2baaf5d8f4d7351b11c5a64d21da80d2b1317129f7",
+      "bytes": 2723950,
+      "dependencies": []
+    },
+    {
+      "id": "1_-10",
+      "bounds": [
+        1000,
+        -10000,
+        2000,
+        -9000
+      ],
+      "url": "data/grid/authored/1_-10.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "d110ac09027a9c228e0ba4dc64b7934515c192007bdb71da52d1fd384178d51c",
+      "contentSHA256": "aac80a831fda22fcb7c8ebdcb2f7ec3f05defecd86f87397c23342d6358579ff",
+      "bytes": 6635961,
+      "dependencies": []
+    },
+    {
+      "id": "1_-11",
+      "bounds": [
+        1000,
+        -11000,
+        2000,
+        -10000
+      ],
+      "url": "data/grid/authored/1_-11.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "804692ab0f9210d3d7ff6af8daa0452fc713743b1b930c91506b2ad32e6bc1f6",
+      "contentSHA256": "3f3c12d61f6a0a760cc519dcae2adbf49ba704f0629052e6dcdaa3c1ea95a02e",
+      "bytes": 1233873,
+      "dependencies": []
+    },
+    {
+      "id": "1_-9",
+      "bounds": [
+        1000,
+        -9000,
+        2000,
+        -8000
+      ],
+      "url": "data/grid/authored/1_-9.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "1b480289e21ab6563da6ec8e91dbe343f0e94a0302cb3ec92e1fed567b8be0ef",
+      "contentSHA256": "5a482c17939ed50ba0bd37487007a64f074ccd1b928fdf4dbb7e1022d4dd6d1d",
+      "bytes": 1379437,
+      "dependencies": []
+    },
+    {
+      "id": "10_-4",
+      "bounds": [
+        10000,
+        -4000,
+        11000,
+        -3000
+      ],
+      "url": "data/grid/authored/10_-4.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "9b300e85759db90c1149d8f70f2d855f8ad62322da59c2783002bb12d2487ae1",
+      "contentSHA256": "088f090a4f090164d2e08bbcf8aca84dd5ccdc8ccc66a21015c897631f9b2906",
+      "bytes": 2205175,
+      "dependencies": []
+    },
+    {
+      "id": "10_-5",
+      "bounds": [
+        10000,
+        -5000,
+        11000,
+        -4000
+      ],
+      "url": "data/grid/authored/10_-5.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "4fa64194a02cbaf7dc2ddd9181bc8d8ff6a22d1bc517dc1c86a88b220b65b7f2",
+      "contentSHA256": "d6c85d84a22928ca3d94052e8ed7ae0a77cb40c7a9d7623e61ef9b3434942e42",
+      "bytes": 9976441,
+      "dependencies": []
+    },
+    {
+      "id": "10_-6",
+      "bounds": [
+        10000,
+        -6000,
+        11000,
+        -5000
+      ],
+      "url": "data/grid/authored/10_-6.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "f4ee658667834a1d2964df2527cef843712c8e1cf5ef4a1f7a2c3f459d70f439",
+      "contentSHA256": "5f24462e98a35514c66b417ffcebe36fb93d6d63eeeb81b24fab3c1c5651ce49",
+      "bytes": 1255039,
+      "dependencies": []
+    },
+    {
+      "id": "11_-4",
+      "bounds": [
+        11000,
+        -4000,
+        12000,
+        -3000
+      ],
+      "url": "data/grid/authored/11_-4.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "94ed47eb81f1327e5974420d4bbdf6e4e220ff44a222e8eddc02ed31386b933b",
+      "contentSHA256": "acf0ca2c7e0727d31e8c362eabe2ba400cd53eae255ae12b1d4224143af7e120",
+      "bytes": 5318020,
+      "dependencies": []
+    },
+    {
+      "id": "11_-5",
+      "bounds": [
+        11000,
+        -5000,
+        12000,
+        -4000
+      ],
+      "url": "data/grid/authored/11_-5.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "2ca4845c38cabac6a05fa4fe6c7e976e1d7cf91ac82bbd11f69fbbf9bad0c8ff",
+      "contentSHA256": "082aa587c4ee0b10086306ff50d989d154557cda533246761fc7aa324da2e92e",
+      "bytes": 2208432,
+      "dependencies": []
+    },
+    {
+      "id": "12_-2",
+      "bounds": [
+        12000,
+        -2000,
+        13000,
+        -1000
+      ],
+      "url": "data/grid/authored/12_-2.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "d67c0ecea2cee22476f3cdc78fff9b380b5ad36436bb0359e3d41515e26df85a",
+      "contentSHA256": "8d96e3ebaa3dee42a422271cf994adc94f53093d0f90a5fbfb57c22e8f8c4f82",
+      "bytes": 480387,
+      "dependencies": []
+    },
+    {
+      "id": "12_-3",
+      "bounds": [
+        12000,
+        -3000,
+        13000,
+        -2000
+      ],
+      "url": "data/grid/authored/12_-3.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "d251c8a9c0585d32d332b18b6fea3880784ac2cbeff25c127b1e57be672ea801",
+      "contentSHA256": "3190a7c8408268886ce4dbcc65857e6f516c5f42218c13cc2fa1ed96f6c27856",
+      "bytes": 2385750,
+      "dependencies": []
+    },
+    {
+      "id": "12_-4",
+      "bounds": [
+        12000,
+        -4000,
+        13000,
+        -3000
+      ],
+      "url": "data/grid/authored/12_-4.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "3b79dcc01da946a3239698a9cc113878a6ff10778eb7fd91d09b5b68a6e42442",
+      "contentSHA256": "e09859083788073452af2de8f26a3b9501f5f830958c4273a6e3a16ada5b1f88",
+      "bytes": 6894349,
+      "dependencies": []
+    },
+    {
+      "id": "12_-5",
+      "bounds": [
+        12000,
+        -5000,
+        13000,
+        -4000
+      ],
+      "url": "data/grid/authored/12_-5.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "418dedd2e5aac0337d5e1cc72c8e372bbd5cc47b2ff139ec1c15c4e913977368",
+      "contentSHA256": "562753d025c0aa226380426db59f6badd98f5ae68c933918384a5491c17b7856",
+      "bytes": 1318501,
+      "dependencies": []
+    },
+    {
+      "id": "13_-1",
+      "bounds": [
+        13000,
+        -1000,
+        14000,
+        0
+      ],
+      "url": "data/grid/authored/13_-1.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "75799edc1b1a7a4daa16e29a501ae88f8a0d886db5e44e60f7b935275e889ce8",
+      "contentSHA256": "a312294d27259cc5c8871b6e363c55a9241fc94140036df55e784e054672b87b",
+      "bytes": 3820180,
+      "dependencies": []
+    },
+    {
+      "id": "13_-2",
+      "bounds": [
+        13000,
+        -2000,
+        14000,
+        -1000
+      ],
+      "url": "data/grid/authored/13_-2.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "7e21dd80d32a767be28ca5658c5dd90956a885b12bb94d14eb7b7194a379d57f",
+      "contentSHA256": "785c223aa9a2e1044112909d010235695592d30d426a76c7513efb1f18775f39",
+      "bytes": 4322621,
+      "dependencies": []
+    },
+    {
+      "id": "13_-3",
+      "bounds": [
+        13000,
+        -3000,
+        14000,
+        -2000
+      ],
+      "url": "data/grid/authored/13_-3.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "069835d14140bb2afa1dd7fd84669c6bad1e8589e108b78775021636195bd80e",
+      "contentSHA256": "0475785407b603e3c54965114d560c0ce73f27e9d6c3c4f4cc2be9e141e0085a",
+      "bytes": 5503562,
+      "dependencies": []
+    },
+    {
+      "id": "13_-4",
+      "bounds": [
+        13000,
+        -4000,
+        14000,
+        -3000
+      ],
+      "url": "data/grid/authored/13_-4.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "63257679c4b9f4be3de094328f80df04edb695e45048966959faa316361b3627",
+      "contentSHA256": "4fd74e591cce8aa6a315c0a4b478f27c0e9384975f6ea181f708a1854474de7b",
+      "bytes": 1847711,
+      "dependencies": []
+    },
+    {
+      "id": "13_0",
+      "bounds": [
+        13000,
+        0,
+        14000,
+        1000
+      ],
+      "url": "data/grid/authored/13_0.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "8c69a87fb90a477a8e6f05149bedd92f17e73c2a3e0b992dc69b270d629b7e69",
+      "contentSHA256": "47cd8e6f92070904ae0983b635c494a95ef553248e6ac8aed98dfbef4400bf06",
+      "bytes": 798330,
+      "dependencies": []
+    },
+    {
+      "id": "14_-1",
+      "bounds": [
+        14000,
+        -1000,
+        15000,
+        0
+      ],
+      "url": "data/grid/authored/14_-1.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "7e629a2afcec305c3f6b10a2741b0e8a4b4ee8d3bfc0c9cfa3e6a224621ca2ce",
+      "contentSHA256": "163a0aa6ed74e6fb0cba4b6992d1ca23c13a932086c200822401e373b2ab14e1",
+      "bytes": 1874174,
+      "dependencies": []
+    },
+    {
+      "id": "14_-2",
+      "bounds": [
+        14000,
+        -2000,
+        15000,
+        -1000
+      ],
+      "url": "data/grid/authored/14_-2.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "6edbae60c888910d4f20902ef9011001609ddf56a147e88efb4ad7de73504be0",
+      "contentSHA256": "33837e35a87888888193eb29fd8e49b96ae927a916334cf500b8c8d2f02f3217",
+      "bytes": 833837,
+      "dependencies": []
+    },
+    {
+      "id": "14_-3",
+      "bounds": [
+        14000,
+        -3000,
+        15000,
+        -2000
+      ],
+      "url": "data/grid/authored/14_-3.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "e7d3410bbfb4c3c1a11f5d5f659f59f74179df2161c42caf05c24a571d2c4fbd",
+      "contentSHA256": "372e075f50cf8bb064112d895abb0deef191348043fe7ecf10ccca0b25f984c4",
+      "bytes": 498574,
+      "dependencies": []
+    },
+    {
+      "id": "14_0",
+      "bounds": [
+        14000,
+        0,
+        15000,
+        1000
+      ],
+      "url": "data/grid/authored/14_0.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "89801dfa1bc0695f6d1c7a4efafe1cc0c3e91259a0dff4f6ecec1c9653c21e8f",
+      "contentSHA256": "84ad3856c14fd9b7f7ec377147107c11cf11a5f32e33b29e1378dc5e342166ad",
+      "bytes": 5007629,
+      "dependencies": []
+    },
+    {
+      "id": "14_1",
+      "bounds": [
+        14000,
+        1000,
+        15000,
+        2000
+      ],
+      "url": "data/grid/authored/14_1.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "a17e148e6e87269af357875888a9168189c83d9f18d333405e8b570983012c9a",
+      "contentSHA256": "9d8bb18268278c5018a6c6428020192ba48c6a68c852406312b507c6691d957b",
+      "bytes": 2104538,
+      "dependencies": []
+    },
+    {
+      "id": "14_2",
+      "bounds": [
+        14000,
+        2000,
+        15000,
+        3000
+      ],
+      "url": "data/grid/authored/14_2.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "2f08f02bdefc95ec317b87cf5b51c60781c46e696cda4d0c1d547a373b6e731e",
+      "contentSHA256": "1e8364f45b16db89fe226b0841e9b53309efea199add2077f8fbd033bc3c5ab7",
+      "bytes": 1041619,
+      "dependencies": []
+    },
+    {
+      "id": "14_3",
+      "bounds": [
+        14000,
+        3000,
+        15000,
+        4000
+      ],
+      "url": "data/grid/authored/14_3.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "932bf3485eca61517b6ce17da9d1185b7e72de5e77789680e39c72e347180f88",
+      "contentSHA256": "0f692a2a9c824f6095874ff4118cbab6547529f3633a86920002edab54b5a361",
+      "bytes": 349373,
+      "dependencies": []
+    },
+    {
+      "id": "15_0",
+      "bounds": [
+        15000,
+        0,
+        16000,
+        1000
+      ],
+      "url": "data/grid/authored/15_0.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "efdeb8dd3a99e4b27c00df9dc725922842c0deb000369dfad2c2470ed4065d22",
+      "contentSHA256": "08093611b43a74ed3d8bfb438060098917776b72901af39038c991c406d18b02",
+      "bytes": 1760384,
+      "dependencies": []
+    },
+    {
+      "id": "15_1",
+      "bounds": [
+        15000,
+        1000,
+        16000,
+        2000
+      ],
+      "url": "data/grid/authored/15_1.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "1d0848db6eb7cc828fb7975659d9b7a0971c7688ab22893aecf5abe582801188",
+      "contentSHA256": "41dae7025beb1d17c8f82646ac6805096126fd488d68ac72ea3faaf8940d3165",
+      "bytes": 3707483,
+      "dependencies": []
+    },
+    {
+      "id": "15_2",
+      "bounds": [
+        15000,
+        2000,
+        16000,
+        3000
+      ],
+      "url": "data/grid/authored/15_2.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "61b132d19332e749c823bedea866b34142c3e2435748102be55b1d8a285f80e7",
+      "contentSHA256": "88c4e67b78c4082d54f2914c644177e9cf31756176631d555cd7ddbdde2fd63f",
+      "bytes": 4053753,
+      "dependencies": []
+    },
+    {
+      "id": "15_3",
+      "bounds": [
+        15000,
+        3000,
+        16000,
+        4000
+      ],
+      "url": "data/grid/authored/15_3.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "52d95557576783a4cd8318557194877cad536e3f5cdd4339ccd80f02321803d2",
+      "contentSHA256": "45140cba2c4534a089a2c0282999839f7d878c665a20e9725e18974ddd4a1944",
+      "bytes": 1911498,
+      "dependencies": []
+    },
+    {
+      "id": "15_4",
+      "bounds": [
+        15000,
+        4000,
+        16000,
+        5000
+      ],
+      "url": "data/grid/authored/15_4.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "60aabff1588a33f8ebd5ce8953360c5f0a648d3149a661aa14f3eb51da300e09",
+      "contentSHA256": "c5b22ec1d17428e5cef1843bdee2654a4a3e07975fb8d9191dd1eb97107b633b",
+      "bytes": 476916,
+      "dependencies": []
+    },
+    {
+      "id": "16_1",
+      "bounds": [
+        16000,
+        1000,
+        17000,
+        2000
+      ],
+      "url": "data/grid/authored/16_1.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "484e42cbb749a8548991a3e94713c37c802d02739abe5a374276460bfeaef263",
+      "contentSHA256": "ffc6ee3204df47f1fb63362c1cbd44294093618a0bba5764ae703d7274915e14",
+      "bytes": 255818,
+      "dependencies": []
+    },
+    {
+      "id": "16_2",
+      "bounds": [
+        16000,
+        2000,
+        17000,
+        3000
+      ],
+      "url": "data/grid/authored/16_2.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "069fa2a576e47397b181cab611e5286b376e978eb6a1f791536303bd12ea718d",
+      "contentSHA256": "2b0d2055709bcc5a95ac01a9934ad5fc68f6d31946004f0cbf8e30ef15d1f5d1",
+      "bytes": 417108,
+      "dependencies": []
+    },
+    {
+      "id": "16_3",
+      "bounds": [
+        16000,
+        3000,
+        17000,
+        4000
+      ],
+      "url": "data/grid/authored/16_3.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "28cdb5c14c4f64c400425e40e5633e9304bdc472308a7ed0c70badee572c52bc",
+      "contentSHA256": "438e28d5bc25345324461d769230d78585b63a7ec702e7fcf4bb54b40a7fbebb",
+      "bytes": 1982827,
+      "dependencies": []
+    },
+    {
+      "id": "16_4",
+      "bounds": [
+        16000,
+        4000,
+        17000,
+        5000
+      ],
+      "url": "data/grid/authored/16_4.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "4cf3672030a7f860357298f7a5ce546ea97ab7ef02ba4a05763744f856b34dad",
+      "contentSHA256": "607fa0e5d64d01557948bf25d8ddbcecba694118b4d11a3b29c2fd05c0bc4bc5",
+      "bytes": 5838172,
+      "dependencies": []
+    },
+    {
+      "id": "16_5",
+      "bounds": [
+        16000,
+        5000,
+        17000,
+        6000
+      ],
+      "url": "data/grid/authored/16_5.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "c6d24f9816e68050892ec0c2fbb5a59724f4dd2da6998e479e6426a1dcc6ebeb",
+      "contentSHA256": "a8d6a8baf3c4552b3d11048b837a0bb6127e2023c6bb23fe9fe446b1095244a2",
+      "bytes": 2199774,
+      "dependencies": []
+    },
+    {
+      "id": "17_4",
+      "bounds": [
+        17000,
+        4000,
+        18000,
+        5000
+      ],
+      "url": "data/grid/authored/17_4.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "470dea2d24e5c602357b2e4d6d3b768d97b7ce167b8ef8a58789cc48a6a8e012",
+      "contentSHA256": "6a880bf656738e3b47dcfc859f6d30fe7b769d14a81ffe36aab9d511ae184c46",
+      "bytes": 1120441,
+      "dependencies": []
+    },
+    {
+      "id": "17_5",
+      "bounds": [
+        17000,
+        5000,
+        18000,
+        6000
+      ],
+      "url": "data/grid/authored/17_5.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "7a2786ede79a561519e3da7c79e03750a51b40322883d0ccb6cbe27a83ba4ccf",
+      "contentSHA256": "ad9400465637c7f230e99be2949813ba84a1b0d3a96b709ee33ffab923975144",
+      "bytes": 1100676,
+      "dependencies": []
+    },
+    {
+      "id": "2_-10",
+      "bounds": [
+        2000,
+        -10000,
+        3000,
+        -9000
+      ],
+      "url": "data/grid/authored/2_-10.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "23738eccd04852f384c51eb735375515467bd3bd67db88db6c7346ca8c13cbdd",
+      "contentSHA256": "6b24317d1a735bfee2825556ea54a958f04feabf012d49be6d6d1ba2d0e01123",
+      "bytes": 5392432,
+      "dependencies": []
+    },
+    {
+      "id": "2_-11",
+      "bounds": [
+        2000,
+        -11000,
+        3000,
+        -10000
+      ],
+      "url": "data/grid/authored/2_-11.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "604eddfb1161f4c93083efb0fffcee5921fc7b1e3f1b3e6c03d3fd6846e87795",
+      "contentSHA256": "7116ccd5da454f7e915e5db61fa31da1d01b078ba004a771c85db062ea1fa039",
+      "bytes": 1499530,
+      "dependencies": []
+    },
+    {
+      "id": "2_-9",
+      "bounds": [
+        2000,
+        -9000,
+        3000,
+        -8000
+      ],
+      "url": "data/grid/authored/2_-9.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "ba8efffe14a25c66f284bea1d52f4ee41f4c500da5b97f4752e31b1d2739d40e",
+      "contentSHA256": "df04e353d56d63491d4386a7ff54a125a6a0318e04fa06c68343927c995d9859",
+      "bytes": 684895,
+      "dependencies": []
+    },
+    {
+      "id": "3_-10",
+      "bounds": [
+        3000,
+        -10000,
+        4000,
+        -9000
+      ],
+      "url": "data/grid/authored/3_-10.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "86c821023f320a0af1219d2d4ef59155105c379385cd051ebc65ed405706690b",
+      "contentSHA256": "86cd923c62eea1aa391328266bdaa757825b880c75545e78c9d9b028d2120234",
+      "bytes": 5209645,
+      "dependencies": []
+    },
+    {
+      "id": "3_-11",
+      "bounds": [
+        3000,
+        -11000,
+        4000,
+        -10000
+      ],
+      "url": "data/grid/authored/3_-11.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "1c32aa882d733081a95de600023eb1b8a3894a7cad91e11b1a1835c5f8d97f07",
+      "contentSHA256": "709a28160544659eaf51888022b0426ef09da90c0e42d06eb9d2b4a61781cd32",
+      "bytes": 551611,
+      "dependencies": []
+    },
+    {
+      "id": "3_-9",
+      "bounds": [
+        3000,
+        -9000,
+        4000,
+        -8000
+      ],
+      "url": "data/grid/authored/3_-9.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "fc697657b33f6cc011563345ce46dd986edb455713a21f07b79a5408d1b41f00",
+      "contentSHA256": "4414588f0e1b19190bad0ba3eff0e47608bcff5479ece565d7ee16ca89ce25d5",
+      "bytes": 1330675,
+      "dependencies": []
+    },
+    {
+      "id": "4_-10",
+      "bounds": [
+        4000,
+        -10000,
+        5000,
+        -9000
+      ],
+      "url": "data/grid/authored/4_-10.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "dcb9bea028f53b8a243237050129eeba2249d3b47074451bdde4bc2889601ffc",
+      "contentSHA256": "e45f5c7c46fa7ae6179db63c21dffc0932b269a3a5c2df88371307dbc9cf04c5",
+      "bytes": 3248698,
+      "dependencies": []
+    },
+    {
+      "id": "4_-8",
+      "bounds": [
+        4000,
+        -8000,
+        5000,
+        -7000
+      ],
+      "url": "data/grid/authored/4_-8.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "5919e6d0c68313ca93c87bd8b670e496eeb42c9875cc04c2410f472ee46a50db",
+      "contentSHA256": "4852b02940d76316871a350c71ba7332fa54997399c5520c9a319f7d8e807990",
+      "bytes": 404578,
+      "dependencies": []
+    },
+    {
+      "id": "4_-9",
+      "bounds": [
+        4000,
+        -9000,
+        5000,
+        -8000
+      ],
+      "url": "data/grid/authored/4_-9.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "d6d74193dcc818f469133b306654a48b4b76ac020f939ddee9b0c73196499f74",
+      "contentSHA256": "69f6d5344ccb4903e63de0e72675b627e1e955458880ac156b25947f3bf4b565",
+      "bytes": 4759384,
+      "dependencies": []
+    },
+    {
+      "id": "5_-10",
+      "bounds": [
+        5000,
+        -10000,
+        6000,
+        -9000
+      ],
+      "url": "data/grid/authored/5_-10.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "bfeff36e9fea684dfa1ec5c525e87ba2fc32eef39b55739bc7af819f8db834f7",
+      "contentSHA256": "531b6faf212774f09721bd1b0712569f9da7bac493d7088280e9153cb32663a0",
+      "bytes": 679070,
+      "dependencies": []
+    },
+    {
+      "id": "5_-8",
+      "bounds": [
+        5000,
+        -8000,
+        6000,
+        -7000
+      ],
+      "url": "data/grid/authored/5_-8.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "ed720cfecbdf88d0cfb647f06f5204a0130f0a150932290d31e15049ae59e62e",
+      "contentSHA256": "97a260de66279104c04868a1b2936b555ba88b0703b5a54388263559d820cc0c",
+      "bytes": 2963498,
+      "dependencies": []
+    },
+    {
+      "id": "5_-9",
+      "bounds": [
+        5000,
+        -9000,
+        6000,
+        -8000
+      ],
+      "url": "data/grid/authored/5_-9.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "9f310eb36a94506874f8accc5e901848bed56312f98cb9e3f7e27cd2aa96f885",
+      "contentSHA256": "15603da672d0d7312b2178daee2cad8eb6de990af7ac0654db2b4903e407e2ea",
+      "bytes": 5764981,
+      "dependencies": []
+    },
+    {
+      "id": "6_-7",
+      "bounds": [
+        6000,
+        -7000,
+        7000,
+        -6000
+      ],
+      "url": "data/grid/authored/6_-7.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "f21421faf1adfc3bebb67e8ad871479a3f2efa08fe8d177eb80956553f9b321f",
+      "contentSHA256": "5c9199b10aaff52e008b39b761e4ff7dcc08307fb66c4b09d6b72329b2b1f925",
+      "bytes": 2861445,
+      "dependencies": []
+    },
+    {
+      "id": "6_-8",
+      "bounds": [
+        6000,
+        -8000,
+        7000,
+        -7000
+      ],
+      "url": "data/grid/authored/6_-8.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "dc67cc5a821eea15729cacfc648a659fa4b6bbc1a4122b41ecb746f6ff75f100",
+      "contentSHA256": "ebaa0be094c487ab83f8faa72bf8acd4be8660767e844c8cd5df7ff7fce9c64a",
+      "bytes": 7281665,
+      "dependencies": []
+    },
+    {
+      "id": "6_-9",
+      "bounds": [
+        6000,
+        -9000,
+        7000,
+        -8000
+      ],
+      "url": "data/grid/authored/6_-9.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "ef444b6a07b3e4cda0e7cd0d7d89d2e30b186262dd409b64b8960ddc5ba19beb",
+      "contentSHA256": "b9442026a8b23f5a6484be9f368541a383add6ccce4b8303e4b2042b6dad9cb3",
+      "bytes": 2328306,
+      "dependencies": []
+    },
+    {
+      "id": "7_-6",
+      "bounds": [
+        7000,
+        -6000,
+        8000,
+        -5000
+      ],
+      "url": "data/grid/authored/7_-6.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "0f533ac25724cfd1fffb84e5650ae6df3303d75f57875341a19d0ed4a93b02d9",
+      "contentSHA256": "5416f158217f326ba490fec91eff4f2e9f476e4cf0152d7c43b91c8c82882259",
+      "bytes": 985701,
+      "dependencies": []
+    },
+    {
+      "id": "7_-7",
+      "bounds": [
+        7000,
+        -7000,
+        8000,
+        -6000
+      ],
+      "url": "data/grid/authored/7_-7.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "16f9de1c8cd961f17163f09ec7310cbf293e2f056e18c2de50bedb5b60ceac50",
+      "contentSHA256": "16e985368a9f491792064e48c1e7ed1aee4bd79e69c56f94709b387808b533f6",
+      "bytes": 6024890,
+      "dependencies": []
+    },
+    {
+      "id": "7_-8",
+      "bounds": [
+        7000,
+        -8000,
+        8000,
+        -7000
+      ],
+      "url": "data/grid/authored/7_-8.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "538e1c910e1a225feb3bbdf9eed0dc71607398d4a62751231c93e2271fd14c60",
+      "contentSHA256": "5c88f788af9bde6cc507b81bc1abbbe85c7576e39dd7fbd79283f1b9f3fb2316",
+      "bytes": 4033327,
+      "dependencies": []
+    },
+    {
+      "id": "7_-9",
+      "bounds": [
+        7000,
+        -9000,
+        8000,
+        -8000
+      ],
+      "url": "data/grid/authored/7_-9.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "7affb65408047ba77579089f635c9cbf2480651a358be59d99fc2170c76495e6",
+      "contentSHA256": "ec1d7fa148ee1c8879f0871ff2d181680c6acd403880f4907d89aa4234b9f616",
+      "bytes": 336006,
+      "dependencies": []
+    },
+    {
+      "id": "8_-5",
+      "bounds": [
+        8000,
+        -5000,
+        9000,
+        -4000
+      ],
+      "url": "data/grid/authored/8_-5.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "5be5178ba966dcac01a6c9a66b06a5ba90bb4145157147de41cb38ffb7aa5137",
+      "contentSHA256": "710aebb0d7739eb7f84faaa83c2cc7ac3afc168ca386881df66155ba02c9bcb5",
+      "bytes": 449824,
+      "dependencies": []
+    },
+    {
+      "id": "8_-6",
+      "bounds": [
+        8000,
+        -6000,
+        9000,
+        -5000
+      ],
+      "url": "data/grid/authored/8_-6.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "7b60cb92839d5157d77ec2fc1b064a57e23c1c20b34c5cd71d677d3006b7af9f",
+      "contentSHA256": "ea1484aeb70c7e0f3e7b8ffcfbee2105de141f4b42ce818db99e65f0469431d6",
+      "bytes": 4647363,
+      "dependencies": []
+    },
+    {
+      "id": "8_-7",
+      "bounds": [
+        8000,
+        -7000,
+        9000,
+        -6000
+      ],
+      "url": "data/grid/authored/8_-7.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "12e6cc4754a0f5556b93d7f0df30d6f18697af625e4e428688bfc348ead04443",
+      "contentSHA256": "9b45a6772a16c866c608e4531f9b7d255df92714cf92113962d4de0fa38bf003",
+      "bytes": 4430620,
+      "dependencies": []
+    },
+    {
+      "id": "8_-8",
+      "bounds": [
+        8000,
+        -8000,
+        9000,
+        -7000
+      ],
+      "url": "data/grid/authored/8_-8.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "61a92ab16e029a136b751c44f5ce453eb6499c021b8c8e8fab772e38db98f9ef",
+      "contentSHA256": "f6bedac0fb8eefebb0b4500ff59f40c0029dd3cc0189d243c1b159dc18c135ea",
+      "bytes": 380051,
+      "dependencies": []
+    },
+    {
+      "id": "9_-5",
+      "bounds": [
+        9000,
+        -5000,
+        10000,
+        -4000
+      ],
+      "url": "data/grid/authored/9_-5.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "fab60d2ad69c1592fb1eaaf4d063a5c56969c6fa78c752ca1e9186d9c94cb966",
+      "contentSHA256": "55ae0d4d84f105dd2417d3d45a3237acfe04c8128cef811dc280f9805457face",
+      "bytes": 3400620,
+      "dependencies": []
+    },
+    {
+      "id": "9_-6",
+      "bounds": [
+        9000,
+        -6000,
+        10000,
+        -5000
+      ],
+      "url": "data/grid/authored/9_-6.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "99bb8534e45d50c1960d26455fbf6d4d2bb99f0d32e9477870ce3cca127c6e84",
+      "contentSHA256": "6b32a4d441380c5ce8d87647e6f1138d18da29a52962fa6e269edbf5d0bfa8f3",
+      "bytes": 5268262,
+      "dependencies": []
+    },
+    {
+      "id": "9_-7",
+      "bounds": [
+        9000,
+        -7000,
+        10000,
+        -6000
+      ],
+      "url": "data/grid/authored/9_-7.json.gz.bin",
+      "codec": "gzip-json",
+      "sha256": "3d343d7d92da4056834e42e0d7053cfe994386429fba3e708c5c2222f9f23666",
+      "contentSHA256": "2cae244de72164dae0cb148038f9e2b6407720f7da62eede18e895ecacf8c632",
+      "bytes": 616199,
+      "dependencies": []
+    }
+  ],
+  "provenance": {
+    "sourceRevision": "2903b3d30210cbcde18aa97ee742c7ac4617df3323525779c83bfc4b79150000",
+    "method": "Explicit offline conversion, source records and exceptions retained in each editable JSON chunk",
+    "sourceDirectory": "world-source/chunks",
+    "cachePolicy": "Hash-verified gzip of authoritative JSON; never generates placements"
+  },
+  "ambientZones": [
+    {
+      "id": "ambient/KID/birds",
+      "types": [
+        "PIGEON",
+        "STARLING"
+      ],
+      "bounds": [
+        -16313,
+        3535,
+        -15953,
+        3895
+      ],
+      "populationCap": 4,
+      "heightRange": [
+        67,
+        89
+      ],
+      "updateHz": 15,
+      "seed": 17021,
+      "visibilityDistance": 650,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Modest ambient population over the station district; not a wildlife survey"
+      }
+    },
+    {
+      "id": "ambient/KID/clouds",
+      "types": [
+        "CLOUD"
+      ],
+      "bounds": [
+        -17133,
+        2715,
+        -15133,
+        4715
+      ],
+      "populationCap": 2,
+      "heightRange": [
+        339,
+        479
+      ],
+      "updateHz": 2,
+      "seed": 11821,
+      "visibilityDistance": 2200,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Atmospheric decoration"
+      }
+    },
+    {
+      "id": "ambient/BKD/birds",
+      "types": [
+        "CROW",
+        "MAGPIE"
+      ],
+      "bounds": [
+        -12080,
+        1053,
+        -11720,
+        1413
+      ],
+      "populationCap": 4,
+      "heightRange": [
+        81,
+        103
+      ],
+      "updateHz": 15,
+      "seed": 17998,
+      "visibilityDistance": 650,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Modest ambient population over the station district; not a wildlife survey"
+      }
+    },
+    {
+      "id": "ambient/BKD/clouds",
+      "types": [
+        "CLOUD"
+      ],
+      "bounds": [
+        -12900,
+        233,
+        -10900,
+        2233
+      ],
+      "populationCap": 2,
+      "heightRange": [
+        353,
+        493
+      ],
+      "updateHz": 2,
+      "seed": 12338,
+      "visibilityDistance": 2200,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Atmospheric decoration"
+      }
+    },
+    {
+      "id": "ambient/HAG/birds",
+      "types": [
+        "PIGEON",
+        "GULL"
+      ],
+      "bounds": [
+        -10045,
+        -682,
+        -9685,
+        -322
+      ],
+      "populationCap": 4,
+      "heightRange": [
+        103,
+        125
+      ],
+      "updateHz": 15,
+      "seed": 18975,
+      "visibilityDistance": 650,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Modest ambient population over the station district; not a wildlife survey"
+      }
+    },
+    {
+      "id": "ambient/HAG/clouds",
+      "types": [
+        "CLOUD"
+      ],
+      "bounds": [
+        -10865,
+        -1502,
+        -8865,
+        498
+      ],
+      "populationCap": 2,
+      "heightRange": [
+        375,
+        515
+      ],
+      "updateHz": 2,
+      "seed": 12855,
+      "visibilityDistance": 2200,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Atmospheric decoration"
+      }
+    },
+    {
+      "id": "ambient/SBJ/birds",
+      "types": [
+        "STARLING",
+        "CROW"
+      ],
+      "bounds": [
+        -9192,
+        -3478,
+        -8832,
+        -3118
+      ],
+      "populationCap": 4,
+      "heightRange": [
+        106,
+        128
+      ],
+      "updateHz": 15,
+      "seed": 19952,
+      "visibilityDistance": 650,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Modest ambient population over the station district; not a wildlife survey"
+      }
+    },
+    {
+      "id": "ambient/SBJ/clouds",
+      "types": [
+        "CLOUD"
+      ],
+      "bounds": [
+        -10012,
+        -4298,
+        -8012,
+        -2298
+      ],
+      "populationCap": 2,
+      "heightRange": [
+        378,
+        518
+      ],
+      "updateHz": 2,
+      "seed": 13372,
+      "visibilityDistance": 2200,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Atmospheric decoration"
+      }
+    },
+    {
+      "id": "ambient/LYE/birds",
+      "types": [
+        "PIGEON",
+        "STARLING"
+      ],
+      "bounds": [
+        -7972,
+        -4849,
+        -7612,
+        -4489
+      ],
+      "populationCap": 4,
+      "heightRange": [
+        95,
+        117
+      ],
+      "updateHz": 15,
+      "seed": 20929,
+      "visibilityDistance": 650,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Modest ambient population over the station district; not a wildlife survey"
+      }
+    },
+    {
+      "id": "ambient/LYE/clouds",
+      "types": [
+        "CLOUD"
+      ],
+      "bounds": [
+        -8792,
+        -5669,
+        -6792,
+        -3669
+      ],
+      "populationCap": 2,
+      "heightRange": [
+        367,
+        507
+      ],
+      "updateHz": 2,
+      "seed": 13889,
+      "visibilityDistance": 2200,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Atmospheric decoration"
+      }
+    },
+    {
+      "id": "ambient/CRA/birds",
+      "types": [
+        "CROW",
+        "MAGPIE"
+      ],
+      "bounds": [
+        -6242,
+        -5904,
+        -5882,
+        -5544
+      ],
+      "populationCap": 4,
+      "heightRange": [
+        102,
+        124
+      ],
+      "updateHz": 15,
+      "seed": 21906,
+      "visibilityDistance": 650,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Modest ambient population over the station district; not a wildlife survey"
+      }
+    },
+    {
+      "id": "ambient/CRA/clouds",
+      "types": [
+        "CLOUD"
+      ],
+      "bounds": [
+        -7062,
+        -6724,
+        -5062,
+        -4724
+      ],
+      "populationCap": 2,
+      "heightRange": [
+        374,
+        514
+      ],
+      "updateHz": 2,
+      "seed": 14406,
+      "visibilityDistance": 2200,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Atmospheric decoration"
+      }
+    },
+    {
+      "id": "ambient/OHL/birds",
+      "types": [
+        "PIGEON",
+        "GULL"
+      ],
+      "bounds": [
+        -3899,
+        -6051,
+        -3539,
+        -5691
+      ],
+      "populationCap": 4,
+      "heightRange": [
+        146,
+        168
+      ],
+      "updateHz": 15,
+      "seed": 22883,
+      "visibilityDistance": 650,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Modest ambient population over the station district; not a wildlife survey"
+      }
+    },
+    {
+      "id": "ambient/OHL/clouds",
+      "types": [
+        "CLOUD"
+      ],
+      "bounds": [
+        -4719,
+        -6871,
+        -2719,
+        -4871
+      ],
+      "populationCap": 2,
+      "heightRange": [
+        418,
+        558
+      ],
+      "updateHz": 2,
+      "seed": 14923,
+      "visibilityDistance": 2200,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Atmospheric decoration"
+      }
+    },
+    {
+      "id": "ambient/ROW/birds",
+      "types": [
+        "STARLING",
+        "CROW"
+      ],
+      "bounds": [
+        -2175,
+        -6788,
+        -1815,
+        -6428
+      ],
+      "populationCap": 4,
+      "heightRange": [
+        175,
+        197
+      ],
+      "updateHz": 15,
+      "seed": 23860,
+      "visibilityDistance": 650,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Modest ambient population over the station district; not a wildlife survey"
+      }
+    },
+    {
+      "id": "ambient/ROW/clouds",
+      "types": [
+        "CLOUD"
+      ],
+      "bounds": [
+        -2995,
+        -7608,
+        -995,
+        -5608
+      ],
+      "populationCap": 2,
+      "heightRange": [
+        447,
+        587
+      ],
+      "updateHz": 2,
+      "seed": 15440,
+      "visibilityDistance": 2200,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Atmospheric decoration"
+      }
+    },
+    {
+      "id": "ambient/LGG/birds",
+      "types": [
+        "PIGEON",
+        "STARLING"
+      ],
+      "bounds": [
+        -450,
+        -8575,
+        -90,
+        -8215
+      ],
+      "populationCap": 4,
+      "heightRange": [
+        167,
+        189
+      ],
+      "updateHz": 15,
+      "seed": 24837,
+      "visibilityDistance": 650,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Modest ambient population over the station district; not a wildlife survey"
+      }
+    },
+    {
+      "id": "ambient/LGG/clouds",
+      "types": [
+        "CLOUD"
+      ],
+      "bounds": [
+        -1270,
+        -9395,
+        730,
+        -7395
+      ],
+      "populationCap": 2,
+      "heightRange": [
+        439,
+        579
+      ],
+      "updateHz": 2,
+      "seed": 15957,
+      "visibilityDistance": 2200,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Atmospheric decoration"
+      }
+    },
+    {
+      "id": "ambient/SGB/birds",
+      "types": [
+        "CROW",
+        "MAGPIE"
+      ],
+      "bounds": [
+        1244,
+        -9533,
+        1604,
+        -9173
+      ],
+      "populationCap": 4,
+      "heightRange": [
+        161,
+        183
+      ],
+      "updateHz": 15,
+      "seed": 25814,
+      "visibilityDistance": 650,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Modest ambient population over the station district; not a wildlife survey"
+      }
+    },
+    {
+      "id": "ambient/SGB/clouds",
+      "types": [
+        "CLOUD"
+      ],
+      "bounds": [
+        424,
+        -10353,
+        2424,
+        -8353
+      ],
+      "populationCap": 2,
+      "heightRange": [
+        433,
+        573
+      ],
+      "updateHz": 2,
+      "seed": 16474,
+      "visibilityDistance": 2200,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Atmospheric decoration"
+      }
+    },
+    {
+      "id": "ambient/THW/birds",
+      "types": [
+        "PIGEON",
+        "GULL"
+      ],
+      "bounds": [
+        2290,
+        -9930,
+        2650,
+        -9570
+      ],
+      "populationCap": 4,
+      "heightRange": [
+        160,
+        182
+      ],
+      "updateHz": 15,
+      "seed": 26791,
+      "visibilityDistance": 650,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Modest ambient population over the station district; not a wildlife survey"
+      }
+    },
+    {
+      "id": "ambient/THW/clouds",
+      "types": [
+        "CLOUD"
+      ],
+      "bounds": [
+        1470,
+        -10750,
+        3470,
+        -8750
+      ],
+      "populationCap": 2,
+      "heightRange": [
+        432,
+        572
+      ],
+      "updateHz": 2,
+      "seed": 16991,
+      "visibilityDistance": 2200,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Atmospheric decoration"
+      }
+    },
+    {
+      "id": "ambient/JEQ/birds",
+      "types": [
+        "STARLING",
+        "CROW"
+      ],
+      "bounds": [
+        5780,
+        -8152,
+        6140,
+        -7792
+      ],
+      "populationCap": 4,
+      "heightRange": [
+        129,
+        151
+      ],
+      "updateHz": 15,
+      "seed": 27768,
+      "visibilityDistance": 650,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Modest ambient population over the station district; not a wildlife survey"
+      }
+    },
+    {
+      "id": "ambient/JEQ/clouds",
+      "types": [
+        "CLOUD"
+      ],
+      "bounds": [
+        4960,
+        -8972,
+        6960,
+        -6972
+      ],
+      "populationCap": 2,
+      "heightRange": [
+        401,
+        541
+      ],
+      "updateHz": 2,
+      "seed": 17508,
+      "visibilityDistance": 2200,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Atmospheric decoration"
+      }
+    },
+    {
+      "id": "ambient/BSW/birds",
+      "types": [
+        "PIGEON",
+        "STARLING"
+      ],
+      "bounds": [
+        6720,
+        -7493,
+        7080,
+        -7133
+      ],
+      "populationCap": 4,
+      "heightRange": [
+        139,
+        161
+      ],
+      "updateHz": 15,
+      "seed": 28745,
+      "visibilityDistance": 650,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Modest ambient population over the station district; not a wildlife survey"
+      }
+    },
+    {
+      "id": "ambient/BSW/clouds",
+      "types": [
+        "CLOUD"
+      ],
+      "bounds": [
+        5900,
+        -8313,
+        7900,
+        -6313
+      ],
+      "populationCap": 2,
+      "heightRange": [
+        411,
+        551
+      ],
+      "updateHz": 2,
+      "seed": 18025,
+      "visibilityDistance": 2200,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Atmospheric decoration"
+      }
+    },
+    {
+      "id": "ambient/BMO/birds",
+      "types": [
+        "CROW",
+        "MAGPIE"
+      ],
+      "bounds": [
+        7254,
+        -6962,
+        7614,
+        -6602
+      ],
+      "populationCap": 4,
+      "heightRange": [
+        126,
+        148
+      ],
+      "updateHz": 15,
+      "seed": 29722,
+      "visibilityDistance": 650,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Modest ambient population over the station district; not a wildlife survey"
+      }
+    },
+    {
+      "id": "ambient/BMO/clouds",
+      "types": [
+        "CLOUD"
+      ],
+      "bounds": [
+        6434,
+        -7782,
+        8434,
+        -5782
+      ],
+      "populationCap": 2,
+      "heightRange": [
+        398,
+        538
+      ],
+      "updateHz": 2,
+      "seed": 18542,
+      "visibilityDistance": 2200,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Atmospheric decoration"
+      }
+    },
+    {
+      "id": "ambient/BBS/birds",
+      "types": [
+        "PIGEON",
+        "GULL"
+      ],
+      "bounds": [
+        8222,
+        -6216,
+        8582,
+        -5856
+      ],
+      "populationCap": 4,
+      "heightRange": [
+        127,
+        149
+      ],
+      "updateHz": 15,
+      "seed": 30699,
+      "visibilityDistance": 650,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Modest ambient population over the station district; not a wildlife survey"
+      }
+    },
+    {
+      "id": "ambient/BBS/clouds",
+      "types": [
+        "CLOUD"
+      ],
+      "bounds": [
+        7402,
+        -7036,
+        9402,
+        -5036
+      ],
+      "populationCap": 2,
+      "heightRange": [
+        399,
+        539
+      ],
+      "updateHz": 2,
+      "seed": 19059,
+      "visibilityDistance": 2200,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Atmospheric decoration"
+      }
+    },
+    {
+      "id": "ambient/SMA/birds",
+      "types": [
+        "STARLING",
+        "CROW"
+      ],
+      "bounds": [
+        9465,
+        -5260,
+        9825,
+        -4900
+      ],
+      "populationCap": 4,
+      "heightRange": [
+        126,
+        148
+      ],
+      "updateHz": 15,
+      "seed": 31676,
+      "visibilityDistance": 650,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Modest ambient population over the station district; not a wildlife survey"
+      }
+    },
+    {
+      "id": "ambient/SMA/clouds",
+      "types": [
+        "CLOUD"
+      ],
+      "bounds": [
+        8645,
+        -6080,
+        10645,
+        -4080
+      ],
+      "populationCap": 2,
+      "heightRange": [
+        398,
+        538
+      ],
+      "updateHz": 2,
+      "seed": 19576,
+      "visibilityDistance": 2200,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Atmospheric decoration"
+      }
+    },
+    {
+      "id": "ambient/TYS/birds",
+      "types": [
+        "PIGEON",
+        "STARLING"
+      ],
+      "bounds": [
+        10885,
+        -4174,
+        11245,
+        -3814
+      ],
+      "populationCap": 4,
+      "heightRange": [
+        129,
+        151
+      ],
+      "updateHz": 15,
+      "seed": 32653,
+      "visibilityDistance": 650,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Modest ambient population over the station district; not a wildlife survey"
+      }
+    },
+    {
+      "id": "ambient/TYS/clouds",
+      "types": [
+        "CLOUD"
+      ],
+      "bounds": [
+        10065,
+        -4994,
+        12065,
+        -2994
+      ],
+      "populationCap": 2,
+      "heightRange": [
+        401,
+        541
+      ],
+      "updateHz": 2,
+      "seed": 20093,
+      "visibilityDistance": 2200,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Atmospheric decoration"
+      }
+    },
+    {
+      "id": "ambient/ACG/birds",
+      "types": [
+        "CROW",
+        "MAGPIE"
+      ],
+      "bounds": [
+        12198,
+        -3700,
+        12558,
+        -3340
+      ],
+      "populationCap": 4,
+      "heightRange": [
+        132,
+        154
+      ],
+      "updateHz": 15,
+      "seed": 33630,
+      "visibilityDistance": 650,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Modest ambient population over the station district; not a wildlife survey"
+      }
+    },
+    {
+      "id": "ambient/ACG/clouds",
+      "types": [
+        "CLOUD"
+      ],
+      "bounds": [
+        11378,
+        -4520,
+        13378,
+        -2520
+      ],
+      "populationCap": 2,
+      "heightRange": [
+        404,
+        544
+      ],
+      "updateHz": 2,
+      "seed": 20610,
+      "visibilityDistance": 2200,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Atmospheric decoration"
+      }
+    },
+    {
+      "id": "ambient/OLT/birds",
+      "types": [
+        "PIGEON",
+        "GULL"
+      ],
+      "bounds": [
+        13207,
+        -2469,
+        13567,
+        -2109
+      ],
+      "populationCap": 4,
+      "heightRange": [
+        133,
+        155
+      ],
+      "updateHz": 15,
+      "seed": 34607,
+      "visibilityDistance": 650,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Modest ambient population over the station district; not a wildlife survey"
+      }
+    },
+    {
+      "id": "ambient/OLT/clouds",
+      "types": [
+        "CLOUD"
+      ],
+      "bounds": [
+        12387,
+        -3289,
+        14387,
+        -1289
+      ],
+      "populationCap": 2,
+      "heightRange": [
+        405,
+        545
+      ],
+      "updateHz": 2,
+      "seed": 21127,
+      "visibilityDistance": 2200,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Atmospheric decoration"
+      }
+    },
+    {
+      "id": "ambient/SOL/birds",
+      "types": [
+        "STARLING",
+        "CROW"
+      ],
+      "bounds": [
+        14272,
+        179,
+        14632,
+        539
+      ],
+      "populationCap": 4,
+      "heightRange": [
+        138,
+        160
+      ],
+      "updateHz": 15,
+      "seed": 35584,
+      "visibilityDistance": 650,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Modest ambient population over the station district; not a wildlife survey"
+      }
+    },
+    {
+      "id": "ambient/SOL/clouds",
+      "types": [
+        "CLOUD"
+      ],
+      "bounds": [
+        13452,
+        -641,
+        15452,
+        1359
+      ],
+      "populationCap": 2,
+      "heightRange": [
+        410,
+        550
+      ],
+      "updateHz": 2,
+      "seed": 21644,
+      "visibilityDistance": 2200,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Atmospheric decoration"
+      }
+    },
+    {
+      "id": "ambient/WMR/birds",
+      "types": [
+        "PIGEON",
+        "STARLING"
+      ],
+      "bounds": [
+        15275,
+        2240,
+        15635,
+        2600
+      ],
+      "populationCap": 4,
+      "heightRange": [
+        134,
+        156
+      ],
+      "updateHz": 15,
+      "seed": 36561,
+      "visibilityDistance": 650,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Modest ambient population over the station district; not a wildlife survey"
+      }
+    },
+    {
+      "id": "ambient/WMR/clouds",
+      "types": [
+        "CLOUD"
+      ],
+      "bounds": [
+        14455,
+        1420,
+        16455,
+        3420
+      ],
+      "populationCap": 2,
+      "heightRange": [
+        406,
+        546
+      ],
+      "updateHz": 2,
+      "seed": 22161,
+      "visibilityDistance": 2200,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Atmospheric decoration"
+      }
+    },
+    {
+      "id": "ambient/DDG/birds",
+      "types": [
+        "CROW",
+        "MAGPIE"
+      ],
+      "bounds": [
+        16733,
+        4932,
+        17093,
+        5292
+      ],
+      "populationCap": 4,
+      "heightRange": [
+        132,
+        154
+      ],
+      "updateHz": 15,
+      "seed": 37538,
+      "visibilityDistance": 650,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Modest ambient population over the station district; not a wildlife survey"
+      }
+    },
+    {
+      "id": "ambient/DDG/clouds",
+      "types": [
+        "CLOUD"
+      ],
+      "bounds": [
+        15913,
+        4112,
+        17913,
+        6112
+      ],
+      "populationCap": 2,
+      "heightRange": [
+        404,
+        544
+      ],
+      "updateHz": 2,
+      "seed": 22678,
+      "visibilityDistance": 2200,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Atmospheric decoration"
+      }
+    },
+    {
+      "id": "ambient/east-birmingham/aircraft",
+      "types": [
+        "PASSENGER_AIRCRAFT",
+        "LIGHT_AIRCRAFT"
+      ],
+      "bounds": [
+        8865,
+        -5194,
+        14565,
+        -2194
+      ],
+      "populationCap": 1,
+      "heightRange": [
+        1000,
+        1250
+      ],
+      "updateHz": 8,
+      "seed": 65281,
+      "visibilityDistance": 2400,
+      "source": {
+        "confidence": "ENGINEERED_INFERENCE",
+        "note": "Occasional distant aircraft; not an airport flight-path model"
+      }
+    }
+  ]
+}
