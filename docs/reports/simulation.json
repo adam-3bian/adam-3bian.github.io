@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-11-01T22:16:16.164Z",
+  "generatedAt": "2026-11-01T23:59:46.692Z",
   "sourceHashes": {
     "scripts/validate-world.js": "bfd693a65786fdf6e9ad3d850547df884cb8b254fee001eaf61e27b59cb5478a",
     "src/core/geometry.js": "218e52c3e1a72679803583f58df63d2d447c913c17844aec262d42db9392d955",
     "src/core/simulation.js": "95dc20114c27f74750486fc0fee917febb1bdb7c11d14ddd022b48713da9a39c",
     "src/render/trackwork.js": "8ddabbff2358f80644405d94ecb5638d9fb5c3966ed94968a21b8b6c582a6374",
-    "src/world/build.js": "684ca5909c01804c3cbde6ad5d125d0aa4e54c38f10f03e1a0b02e664c83d91b",
+    "src/world/build.js": "39c1307ab0d9af0985a01c1bde27769e100bb8e546616ceae694e24927ea579d",
     "src/world/grid.js": "23421b435de23ecb6b20ee3738a32634d5ce0778467ff5520c22f8e7c2f757b2",
-    "public/data/grid/world.json": "999f70b6f23e461b9ded00b591976ca42bccc008e59cca46c2b38aa8fdcf771a"
+    "public/data/grid/world.json": "ed33d60ee4012ab6418e8b07fa7466d0f71226ed526812f662f7a0c6f023126f"
   },
-  "worldRevision": "a972112cc7694560042b4ee0f85b3fd92ecf55613803f17b5207fc876e086ec4",
+  "worldRevision": "2903b3d30210cbcde18aa97ee742c7ac4617df3323525779c83bfc4b79150000",
   "routeLength": 47331.0824766397,
   "results": [
     {
@@ -51,7 +51,7 @@
         "tpwsInterventions": 0,
         "distance": 46982.36010804867
       },
-      "wallSeconds": 7.0681634319999995,
+      "wallSeconds": 29.193807467999996,
       "lastEvents": [
         {
           "time": 32913.99999995061,
@@ -125,7 +125,7 @@
         "tpwsInterventions": 0,
         "distance": 47017.43931704198
       },
-      "wallSeconds": 3.6969534640000012,
+      "wallSeconds": 7.942728178999998,
       "lastEvents": [
         {
           "time": 32583.39999995542,
@@ -172,7 +172,7 @@
         "tpwsInterventions": 0,
         "distance": 0
       },
-      "wallSeconds": 8.843700031000001,
+      "wallSeconds": 24.572553304999992,
       "eventCount": 1,
       "method": "Accelerated CPU rail simulation without a configured motor-road graph; not mixed-traffic or a two-hour browser/GPU soak."
     }

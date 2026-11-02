@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'node:path';
-import { writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync } from 'node:fs';
 import { worldIdentity } from './scripts/world-version.js';
 /** The repository root and the portable site folder both serve the same build. */
 function railwayEntries() {
@@ -39,5 +39,5 @@ export default defineConfig({
     base: './',
     build: { rollupOptions: { input: resolve('app.html') } },
     plugins: [railwayEntries()],
-    define: { __RAILWAY_WORLD_HASH__: JSON.stringify(worldIdentity()) },
+    define: { __RAILWAY_WORLD_HASH__: JSON.stringify(worldIdentity()), __RAILWAY_WORLD_REVISION__: JSON.stringify(JSON.parse(readFileSync(resolve('public/data/grid/world.json'), 'utf8')).revision) },
 });

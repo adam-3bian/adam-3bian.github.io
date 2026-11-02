@@ -17,7 +17,14 @@ scope.onmessage = (event) => {
         if (message.type === 'build') {
             if (!route || !terrain)
                 throw new Error('World worker has not been initialised.');
-            const tile = message.tile, result = buildTile(tile, route, terrain);
+            const tile = message.tile;
+            let last = -1, lastAt = 0;
+            const result = buildTile(tile, route, terrain, fraction => {
+                const now = performance.now();
+                if (fraction <= last || (fraction < .99 && fraction - last < .02 && now - lastAt < 500)) return;
+                last = fraction; lastAt = now;
+                scope.postMessage({ type: 'progress', id: tile.id, token: message.token, fraction });
+            });
             scope.postMessage({ type: 'tile', id: tile.id, token: message.token, ...result }, [result.mesh.position.buffer, result.mesh.normal.buffer, result.mesh.color.buffer, result.mesh.index.buffer]);
         }
     }

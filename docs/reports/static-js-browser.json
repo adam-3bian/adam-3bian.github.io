@@ -3,7 +3,7 @@
   "scenarios": [
     {
       "name": "nested",
-      "base": "http://127.0.0.1:34501/nested/railway/",
+      "base": "http://127.0.0.1:41481/nested/railway/",
       "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
       "qaApiAbsent": true,
       "worldAndTilesLocal": true,
@@ -12,7 +12,7 @@
     },
     {
       "name": "repository-root",
-      "base": "http://127.0.0.1:34501/wrapper/site/",
+      "base": "http://127.0.0.1:41481/wrapper/site/",
       "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
       "qaApiAbsent": true,
       "worldAndTilesLocal": true,

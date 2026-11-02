@@ -31,9 +31,19 @@ export class JourneyStore {
                 previous.onsuccess=()=>{try{
                     const old=previous.result;
                     if(old&&old.worldHash!==snapshot.worldHash)journeys.put(old,`backup/${typeof old.worldHash==='string'&&old.worldHash?old.worldHash:'unknown'}`);
-                    journeys.put(snapshot,'active');
+                    const worlds=world?tx.objectStore('worlds'):undefined;
+                    if(world&&old&&old.worldHash===snapshot.worldHash){
+                        // An archived journey may share the new release hash
+                        // until a new journey replaces its world. Preserve the
+                        // latest old snapshot and matching world atomically.
+                        const existing=worlds.get(snapshot.worldHash);
+                        existing.onsuccess=()=>{try{
+                            const priorWorld=existing.result,priorRevision=priorWorld?.document?.revision;
+                            if(priorRevision&&priorRevision!==world.document?.revision){const key=`backup/${snapshot.worldHash}/${priorRevision}`;journeys.put(old,key);worlds.put(priorWorld,key);}
+                            worlds.put(world,snapshot.worldHash);journeys.put(snapshot,'active');
+                        }catch(error){fail(error);}};
+                    }else{if(world)worlds.put(world,snapshot.worldHash);journeys.put(snapshot,'active');}
                 }catch(error){fail(error);}};
-                if(world)tx.objectStore('worlds').put(world,snapshot.worldHash);
             }catch(error){fail(error);}
         });
     }

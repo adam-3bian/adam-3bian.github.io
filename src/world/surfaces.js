@@ -199,9 +199,9 @@ export class SurfaceField {
                     }
             }
     }
-    ground(x, z) {
+    ground(x, z, projected) {
         let y = this.terrain.raw(x, z);
-        const near = this.route.project(x, z, 100), tunnel = this.route.tunnelAt(near.s);
+        const near = projected ?? this.route.project(x, z, 100), tunnel = this.route.tunnelAt(near.s);
         const opposite = this.route.laneOffset(near.s, 4.2);
         const distanceFromCorridor = Math.max(Math.min(0, opposite) - near.side, near.side - Math.max(0, opposite), 0);
         if (near.distance < Math.abs(opposite) + 27 && !tunnel && !this.route.bridgeAt(near.s)) {

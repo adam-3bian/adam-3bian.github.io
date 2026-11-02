@@ -6,12 +6,19 @@ const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
 const smooth=t=>{t=clamp(t,0,1);return t*t*(3-2*t);};
 const eligible=r=>r.mode==='ground'&&!r.protectedProfile&&r.width>=3&&!['footway','path','steps','cycleway','pedestrian','corridor','bridleway'].includes(r.kind);
 
-export function resolveRoadGrades(roads,{maxGrade=.18,maxShift=8,iterations=48}={}){
+export function resolveRoadGrades(roads,{maxGrade=.18,maxShift=8,iterations=192}={}){
  const endpoints=new Map(),ends=new Map();
  for(const r of roads){const keys=[];for(const end of [0,1]){const p=r.points[end?r.points.length-1:0],key=r.connectionNodes?.[end]||planKey(p),entries=endpoints.get(key)||[];entries.push({r,end,p});endpoints.set(key,entries);keys.push(key);}ends.set(r,keys);}
  const nodes=new Map();
  for(const [key,entries] of endpoints){
-  const authored=entries.filter(e=>e.r.protectedProfile),bridge=entries.filter(e=>e.r.mode==='over'),lower=entries.filter(e=>e.r.mode==='tunnel'||e.r.mode==='under'),crossing=entries.filter(e=>e.r.mode==='crossing');
+  const remoteFootway=e=>{
+   if(e.r.mode!=='under'||!['footway','path','steps','cycleway','pedestrian','corridor'].includes(e.r.kind)||!Number.isFinite(e.r.crossingS))return false;
+   // A footpath's remote end is not a bridge clearance control. Keeping it
+   // fixed can force the connected street into an impossible short ramp.
+   const length=e.r.path?.length??e.r.points.slice(1).reduce((n,p,i)=>n+Math.hypot(...p.map((v,j)=>v-e.r.points[i][j])),0);
+   return Math.abs((e.end?length:0)-e.r.crossingS)>25;
+  };
+  const authored=entries.filter(e=>e.r.protectedProfile&&!remoteFootway(e)),bridge=entries.filter(e=>e.r.mode==='over'),lower=entries.filter(e=>(e.r.mode==='tunnel'||e.r.mode==='under')&&!remoteFootway(e)),crossing=entries.filter(e=>e.r.mode==='crossing');
   const selected=authored.length?authored:bridge.length?bridge:lower.length?lower:crossing.length?crossing:entries,target=selected.reduce((s,e)=>s+e.p[1],0)/selected.length;
   nodes.set(key,{target,base:target,fixed:Boolean(authored.length||bridge.length||lower.length||crossing.length)});
  }
@@ -29,7 +36,11 @@ export function resolveRoadGrades(roads,{maxGrade=.18,maxShift=8,iterations=48}=
  const exceptions=[];let boundedProfiles=0;
  for(const r of roads){
   const path=r.points,keys=ends.get(r),goals=keys.map(k=>nodes.get(k).target),lengths=[0];for(let i=1;i<path.length;i++)lengths.push(lengths.at(-1)+planDistance(path[i-1],path[i]));const length=lengths.at(-1),a=goals[0]-path[0][1],b=goals[1]-path.at(-1)[1];
-  r.points=path.map((p,i)=>{const s=lengths[i],t=length<80?s/(length||1):null,wa=t===null?1-smooth(s/40):1-smooth(t),wb=t===null?1-smooth((length-s)/40):smooth(t);return[p[0],p[1]+a*wa+b*wb,p[2]];});
+  r.points=path.map((p,i)=>{const s=lengths[i],t=length<80?s/(length||1):null;let wa=t===null?1-smooth(s/40):1-smooth(t),wb=t===null?1-smooth((length-s)/40):smooth(t);
+   if(r.mode==='under'&&['footway','path','steps','cycleway','pedestrian','corridor'].includes(r.kind)&&Number.isFinite(r.crossingS)){
+    const guard=smooth((Math.abs(s-r.crossingS)-5)/20);if(Math.abs(r.crossingS)>25)wa*=guard;if(Math.abs(length-r.crossingS)>25)wb*=guard;
+   }
+   return[p[0],p[1]+a*wa+b*wb,p[2]];});
   if(!eligible(r)||length<=.05)continue;
   if(Math.abs(goals[1]-goals[0])>maxGrade*length+.001){exceptions.push({id:r.id,nodes:keys,grade:Number((Math.abs(goals[1]-goals[0])/length).toFixed(3))});continue;}
   let changed=false;for(let pass=0;pass<3;pass++){

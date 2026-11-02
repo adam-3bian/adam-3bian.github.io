@@ -14,7 +14,9 @@ route.setEndpointContext(endpointContext(route));
 data.trackwork = deriveTrackwork(route).switches;
 const stations = route.stations.filter(s => ['KID', 'BKD', 'HAG', 'SBJ', 'CRA', 'LGG', 'SGB', 'THW', 'JEQ', 'BSW', 'BMO', 'TYS', 'DDG'].includes(s.id));
 const probes = [];
-const sites = [...stations.map(st=>({id:st.id,s:st.s,radius:180})),...data.crossings.map(c=>({id:`crossing/${c.id}`,s:route.sourceS(c.s),radius:30}))];
+const stationRadius=Number(process.env.RAILWAY_CLEARANCE_RADIUS ?? 180);
+if(!Number.isFinite(stationRadius)||stationRadius<=0)throw new Error('Clearance radius must be a positive number');
+const sites = [...stations.map(st=>({id:st.id,s:st.s,radius:stationRadius})),...data.crossings.map(c=>({id:`crossing/${c.id}`,s:route.sourceS(c.s),radius:30}))];
 for (const st of sites)
     for (let s = Math.max(0, st.s - st.radius); s < Math.min(route.length - 4, st.s + st.radius); s += 4)
         for (const lane of [0, 4.2])
@@ -99,7 +101,7 @@ for (const entry of data.tiles) {
     reports.push(report);
     console.log(JSON.stringify(report));
 }
-const output = { revision: document.revision, scope: 'Actual cooked static geometry; 4 m longitudinal sweeps at heights 1.2, 2.45 and 3.9 m, offsets -0.9/0/0.9 m; source topology and clearance assumptions are not survey', reports, failures, totalFailures: reports.reduce((s, r) => s + r.failures, 0) };
-writeFileSync('docs/reports/grid-clearance.json', JSON.stringify(output, null, 2) + '\n');
+const output = { revision: document.revision, scope: 'Actual cooked static geometry; 4 m longitudinal sweeps at heights 1.2, 2.45 and 3.9 m, offsets -0.9/0/0.9 m; source topology and clearance assumptions are not survey', filter: filter || 'all', stationRadius, reports, failures, totalFailures: reports.reduce((s, r) => s + r.failures, 0) };
+writeFileSync(process.env.RAILWAY_CLEARANCE_REPORT || 'docs/reports/grid-clearance.json', JSON.stringify(output, null, 2) + '\n');
 if (output.totalFailures)
     process.exitCode = 1;

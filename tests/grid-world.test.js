@@ -162,6 +162,18 @@ test('Comberton Hill uses a connected bridge piece over Kidderminster station',(
   assert.ok(data.bufferStops.length>10);for(const stop of data.bufferStops){assert.equal(degree.get(stop.node),1);const track=data.adjacentServices.find(t=>t.id===stop.track),end=track.metadata.sourceNodeIds[0]===stop.node?track.points[0]:track.points.at(-1);assert.ok(Math.hypot(...end.map((v,i)=>v-stop.position[i]))<.04);assert.equal(stop.asset,'regional/buffer-stop');}
   const approach=roads.find(r=>r.id==='way/10063626/0/piece/2'),a=approach.points[0],b=approach.points.at(-1);assert.ok(Math.abs(b[1]-a[1])/Math.hypot(b[0]-a[0],b[2]-a[2])<.2,'the mapped Andover Street approach no longer drops abruptly');
 });
+test('Livery Street crosses the canal below the railway and its approaches remain continuous',()=>{
+ const data=load(),route=new RouteGeometry(data),bridge=data.surfaceRoads.find(r=>r.id==='way/238237548/0');
+ assert.equal(bridge.mode,'over');assert.equal(bridge.legacyDeckHeight,134.57);
+ const mid=new Polyline(bridge.points).sample(new Polyline(bridge.points).length/2).position,near=route.project(mid[0],mid[2]);
+ assert.ok(route.sample(near.s).position[1]-mid[1]>5.5,'railway viaduct stays above the canal bridge');
+ for(const id of ['way/22870811/0/piece/0','way/22870811/0/piece/1','way/238237547/0/piece/0']){
+  const road=data.surfaceRoads.find(r=>r.id===id),a=road.points[0],b=road.points.at(-1),grade=Math.abs(b[1]-a[1])/Math.hypot(b[0]-a[0],b[2]-a[2]);
+  assert.ok(grade<.2,`${id} has an excessive approach grade`);
+ }
+ const gibb=data.surfaceRoads.find(r=>r.id==='way/1353775449/0/piece/0'),a=gibb.points[0],b=gibb.points.at(-1);
+ assert.ok(Math.abs(b[1]-a[1])/Math.hypot(b[0]-a[0],b[2]-a[2])<.2,'the connected Gibb Street ramp remains traversable');
+});
 
 test('each shared road port has one grid position even across tile boundaries',()=>{
  const nodes=new Map();

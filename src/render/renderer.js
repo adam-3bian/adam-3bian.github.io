@@ -7,6 +7,14 @@ import { routeResourceUrl } from '../core/resource-url.js';
 import { makeSwitch, setSwitchBlend } from './trackwork.js';
 import { ViewportSizing } from './viewport.js';
 import { crossingShear } from '../world/orientation.js';
+/** Send only the information needed to compose scenery to the worker. The
+ * authoritative grid/graph and source metadata stay in the main world. */
+export function sceneryWorkerData(data) {
+    const {network,gridPieces,railwayGraph,railJunctions,construction,kidderminsterHeritage,stationCompositions,generation,...world}=data;
+    void network;void gridPieces;void railwayGraph;void railJunctions;void construction;void kidderminsterHeritage;void stationCompositions;void generation;
+    world.surfaceRoads=(data.surfaceRoads||[]).map(road=>{const {occupancy,portVectors,minLevel,maxLevel,asset,sourceAliases,legacyPoints,sourceTags,...sceneRoad}=road;return sceneRoad;});
+    return world;
+}
 export class RailwayRenderer {
     container;
     data;
@@ -28,6 +36,8 @@ export class RailwayRenderer {
     requestTokens = new Map();
     requestTimers = new Map();
     requestAborts = new Map();
+    tileProgress = new Map();
+    initialisationTimer;
     nextRequestToken = 0;
     terrainSource;
     workerFailures = 0;
@@ -126,9 +136,15 @@ export class RailwayRenderer {
         return worker;
     }
     initialiseWorker() { if (!this.terrainSource)
-        return; const terrain = this.terrainSource.slice(0); this.worker.postMessage({ type: 'init', route: this.data, terrain }, [terrain]); }
+        return;
+        if (this.initialisationTimer !== undefined) window.clearTimeout(this.initialisationTimer);
+        const worker=this.worker,terrain=this.terrainSource.slice(0);
+        this.initialisationTimer=window.setTimeout(()=>{if(this.worker===worker&&!this.ready)this.restartWorker('Scenery worker initialisation timed out');},90000);
+        worker.postMessage({ type: 'init', route: sceneryWorkerData(this.data), terrain }, [terrain]); }
     restartWorker(reason) {
         this.ready = false;
+        if (this.initialisationTimer !== undefined) window.clearTimeout(this.initialisationTimer);
+        this.initialisationTimer = undefined;
         this.worker.terminate();
         for (const id of [...this.requested])
             this.tileFailed(id, reason);
@@ -150,9 +166,17 @@ export class RailwayRenderer {
         this.requestAborts.delete(id);
         this.requestTokens.delete(id);
         this.requested.delete(id);
+        this.tileProgress.delete(id);
+    }
+    refreshTileTimeout(id, token) {
+        const old=this.requestTimers.get(id);if(old!==undefined)window.clearTimeout(old);
+        const timer=window.setTimeout(()=>{if(this.requestTokens.get(id)===token)this.restartWorker(`Tile ${id} generation timed out because it stopped responding`);},90000);
+        this.requestTimers.set(id,timer);
     }
     onWorker(message) {
         if (message.type === 'ready') {
+            if (this.initialisationTimer !== undefined) window.clearTimeout(this.initialisationTimer);
+            this.initialisationTimer = undefined;
             this.ready = true;
             this.updateTiles(true);
             return;
@@ -161,6 +185,11 @@ export class RailwayRenderer {
             return;
         if (message.id && (!this.requestTokens.has(message.id) || message.token !== this.requestTokens.get(message.id)))
             return;
+        if (message.type === 'progress' && typeof message.id === 'string' && Number.isFinite(message.fraction)) {
+            const fraction=clamp(message.fraction,0,1),previous=this.tileProgress.get(message.id) ?? 0;
+            if(fraction>previous){this.tileProgress.set(message.id,fraction);this.refreshTileTimeout(message.id,message.token);this.onProgress?.();}
+            return;
+        }
         if (message.type === 'error') {
             const error = message.error || message.message || 'World generation failed.';
             if (message.id)
@@ -200,16 +229,20 @@ export class RailwayRenderer {
         mesh.castShadow = true;
         mesh.name = `tile:${message.id}`;
         this.scene.add(mesh);
-        this.loaded.set(message.id, { mesh, used: performance.now() });
+        this.loaded.set(message.id, { mesh, used: performance.now(), walkers: [] });
         this.tileCount = this.loaded.size;
         this.triangles += packet.index.length / 3;
         this.placements += (message.placements || []).length;
         for (const walker of message.pedestrianPaths || []) {
-            if (this.walkers.has(walker.id))
+            this.loaded.get(message.id).walkers.push(walker.id);
+            const existing = this.walkers.get(walker.id);
+            if (existing) {
+                existing.tiles.add(message.id);
                 continue;
+            }
             const model = this.factory.furniture('person', { id: walker.id, color: walker.role === 'staff' ? 0xd0a34c : 0x61738a });
             this.scene.add(model);
-            this.walkers.set(walker.id, { path: new Polyline(walker.points), model, speed: walker.speed || .7, phase: hashId(walker.id) % 20 });
+            this.walkers.set(walker.id, { path: new Polyline(walker.points), model, speed: walker.speed || .7, phase: hashId(walker.id) % 20, tiles: new Set([message.id]) });
         }
         this.evictInactiveTiles();
         this.onProgress?.();
@@ -232,14 +265,29 @@ export class RailwayRenderer {
     }
     setQuality(quality) { this.quality = quality; this.renderer.shadowMap.enabled = quality !== 'low'; this.updateTiles(true); }
     setRenderScale(scale) { this.viewport.setScale(scale); }
+    discardRoadModel(model) {
+        this.scene.remove(model);
+        // Vehicle bodies use shared geometry and materials. Only the optional
+        // taxi lettering has geometry owned by an individual vehicle.
+        model.traverse(node => { if (node.userData.geometricLettering) node.geometry.dispose(); });
+    }
     resetTraffic() { for (const model of this.carModels.values())
-        this.scene.remove(model); this.carModels.clear(); }
-    preparationProgress() { const p = this.route.lanePose(this.sim.player.s, this.sim.player.lane).position; const needed = this.data.tiles.filter(t => Math.hypot(Math.max(t.bounds[0] - p[0], 0, p[0] - t.bounds[2]), Math.max(t.bounds[1] - p[2], 0, p[2] - t.bounds[3])) < 250).map(t => t.id); return { loaded: needed.filter(id => this.loaded.has(id)).length, total: needed.length, failed: needed.find(id => !this.loaded.has(id) && (this.tileRetries.get(id)?.attempts ?? 0) >= 4) }; }
-    async preparePosition(progress) { this.updateTiles(true); await new Promise((resolve, reject) => { const start = performance.now(); const check = () => { const state = this.preparationProgress(); progress?.(state.loaded, state.total); if (state.total > 0 && state.loaded === state.total)
+        this.discardRoadModel(model); this.carModels.clear(); }
+    preparationTileIds() { const p = this.route.lanePose(this.sim.player.s, this.sim.player.lane).position; return this.data.tiles.filter(t => Math.hypot(Math.max(t.bounds[0] - p[0], 0, p[0] - t.bounds[2]), Math.max(t.bounds[1] - p[2], 0, p[2] - t.bounds[3])) < 250).map(t => t.id); }
+    preparationProgress() { const needed=this.preparationTileIds(); return { loaded: needed.filter(id => this.loaded.has(id)).length, total: needed.length, progress: needed.reduce((sum,id)=>sum+(this.loaded.has(id)?1:this.tileProgress.get(id)||0),0), failed: needed.find(id => !this.loaded.has(id) && (this.tileRetries.get(id)?.attempts ?? 0) >= 4) }; }
+    cancelObsoleteTile() {
+        if(!this.ready)return;
+        const needed=new Set(this.preparationTileIds()),obsolete=[...this.requested].filter(id=>!needed.has(id));
+        if(!obsolete.length)return;
+        const building=obsolete.some(id=>this.requestTimers.has(id));
+        for(const id of obsolete)this.clearRequest(id);
+        if(building){this.ready=false;this.worker.terminate();this.worker=this.createWorker();this.initialiseWorker();}
+    }
+    async preparePosition(progress) { this.cancelObsoleteTile?.(); this.updateTiles(true); await new Promise((resolve, reject) => { let lastChange = performance.now(), lastProgress = -1; const check = () => { const state = this.preparationProgress(), amount=state.progress ?? state.loaded; if(amount!==lastProgress){lastProgress=amount;lastChange=performance.now();} progress?.(state.loaded, state.total, amount); if (state.total > 0 && state.loaded === state.total)
         resolve();
     else if (state.failed)
         reject(new Error(`Scenery tile ${state.failed} failed: ${this.tileRetries.get(state.failed)?.reason || 'world generation failed'}`));
-    else if (performance.now() - start > 90000)
+    else if (performance.now() - lastChange > 90000)
         reject(new Error('The departure scenery could not be prepared. Reload and try again.'));
     else
         setTimeout(check, 150); }; check(); }); }
@@ -331,9 +379,7 @@ export class RailwayRenderer {
                 if (this.requestTokens.get(tile.id) !== token)
                     return;
                 this.requestAborts.delete(tile.id);
-                const timer = window.setTimeout(() => { if (this.requestTokens.get(tile.id) === token)
-                    this.restartWorker(`Tile ${tile.id} generation timed out`); }, 90000);
-                this.requestTimers.set(tile.id, timer);
+                this.refreshTileTimeout(tile.id,token);
                 this.worker.postMessage({ type: 'build', tile: data, token });
             }
             catch (e) {
@@ -361,6 +407,12 @@ export class RailwayRenderer {
             this.scene.remove(tile.mesh);
             tile.mesh.geometry.dispose();
             tile.mesh.material.dispose();
+            for (const walkerId of tile.walkers || []) {
+                const walker = this.walkers?.get(walkerId);
+                if (!walker) continue;
+                walker.tiles.delete(id);
+                if (!walker.tiles.size) { this.scene.remove(walker.model); this.walkers.delete(walkerId); }
+            }
             this.loaded.delete(id);
             this.requested.delete(id);
         }
@@ -465,12 +517,24 @@ export class RailwayRenderer {
                 walker.model.rotation.y = p.yaw + (forward ? 0 : Math.PI);
             }
         }
+        this.updateRoadVehicles(pos);
+        this.renderer.render(this.scene, this.camera);
+        const elapsed = performance.now() - t;
+        if (this.warmFrames++ > 60) {
+            this.frameTimes.push(elapsed);
+            if (this.frameTimes.length > 600)
+                this.frameTimes.shift();
+        }
+    }
+    updateRoadVehicles(pos) {
         for (const car of this.roadTraffic.cars.values()) {
             let g = this.carModels.get(car.id);
             const d = Math.hypot(car.position[0] - pos.x, car.position[2] - pos.z);
             if (d > 950) {
-                if (g)
-                    g.visible = false;
+                if (g) {
+                    if (d > 1600) { this.discardRoadModel(g); this.carModels.delete(car.id); }
+                    else g.visible = false;
+                }
                 continue;
             }
             if (!g) {
@@ -482,18 +546,11 @@ export class RailwayRenderer {
             g.position.fromArray(car.position);
             orient(g, roadBasis(car.yaw, car.pitch || 0, car.bank || 0));
         }
-        this.renderer.render(this.scene, this.camera);
-        const elapsed = performance.now() - t;
-        if (this.warmFrames++ > 60) {
-            this.frameTimes.push(elapsed);
-            if (this.frameTimes.length > 600)
-                this.frameTimes.shift();
-        }
     }
     /** Explicit GPU synchronization for capture/diagnostics, not used by the normal render loop. */
     async finishFrame() { this.renderer.getContext().finish(); }
     stats() { return { backend: this.renderer.getContext().isContextLost() ? 'unavailable' : 'WebGL2', adapter: this.gpuInfo, tiles: this.tileCount, triangles: this.triangles, placements: this.placements, gpuErrors: this.failures, drawCalls: this.renderer.info.render.calls, memory: this.renderer.info.memory }; }
-    dispose() { this.disposed = true; this.viewport.dispose(); for (const id of [...this.requested])
+    dispose() { this.disposed = true; if(this.initialisationTimer!==undefined)window.clearTimeout(this.initialisationTimer); this.viewport.dispose(); for (const id of [...this.requested])
         this.clearRequest(id); this.renderer.domElement.removeEventListener('webglcontextlost', this.contextLost); this.worker.terminate(); this.renderer.dispose(); }
 }
 function mixNumber(a, b, t) { return a + (b - a) * t; }

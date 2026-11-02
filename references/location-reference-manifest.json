@@ -127,6 +127,20 @@
       ],
       "date": "2026-11-01",
       "role": "Retained sampled Metro paths through The Hawthorns from the existing route controls; tram platform edges are bound to their nearest path and expanded outward, with inferred profile heights"
+    },
+    "livery-canal-bridge": {
+      "url": "https://www.geograph.org.uk/photo/2953908",
+      "date": "2012-05-16",
+      "referenceDate": "2026-11-01",
+      "role": "Livery Street crosses the Birmingham and Fazeley Canal below the Snow Hill railway viaduct; the street deck height is a model inference",
+      "osm": "https://www.openstreetmap.org/way/238237548"
+    },
+    "great-western-arcade": {
+      "url": "https://greatwesternarcade.co.uk/about-gwa",
+      "date": "1876-1877",
+      "referenceDate": "2026-11-01",
+      "role": "The Great Western Arcade was built to span the Snow Hill–Moor Street railway tunnel; the foundation relief used in the simulator is inferred",
+      "osm": "https://www.openstreetmap.org/way/24712366"
     }
   },
   "locations": [
@@ -815,7 +829,9 @@
       ],
       "sourceIds": [
         "osm",
-        "moor"
+        "moor",
+        "livery-canal-bridge",
+        "great-western-arcade"
       ],
       "referenceDate": "2026-11-01",
       "photoDate": null,

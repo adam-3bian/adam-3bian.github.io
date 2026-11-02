@@ -124,9 +124,10 @@ function polygonsOverlap(a, b) {
 class CookedSoil {
     buckets = new Map();
     add(a, b, c) {
-        const t = [a, b, c].map(q => q.map(Math.fround));
-        for (let x = Math.floor(Math.min(...t.map(q => q[0])) / 20); x <= Math.floor(Math.max(...t.map(q => q[0])) / 20); x++)
-            for (let z = Math.floor(Math.min(...t.map(q => q[2])) / 20); z <= Math.floor(Math.max(...t.map(q => q[2])) / 20); z++) {
+        const t = [[Math.fround(a[0]),Math.fround(a[1]),Math.fround(a[2])],[Math.fround(b[0]),Math.fround(b[1]),Math.fround(b[2])],[Math.fround(c[0]),Math.fround(c[1]),Math.fround(c[2])]];
+        const x0=Math.floor(Math.min(t[0][0],t[1][0],t[2][0])/20),x1=Math.floor(Math.max(t[0][0],t[1][0],t[2][0])/20),z0=Math.floor(Math.min(t[0][2],t[1][2],t[2][2])/20),z1=Math.floor(Math.max(t[0][2],t[1][2],t[2][2])/20);
+        for (let x = x0; x <= x1; x++)
+            for (let z = z0; z <= z1; z++) {
                 const key = `${x},${z}`, list = this.buckets.get(key) || [];
                 list.push(t);
                 this.buckets.set(key, list);
@@ -211,6 +212,33 @@ function clipVolumePolygon(subject, distance, inside) {
         }
     }
     return out;
+}
+/** Split a building footprint into convex pieces so a tunnel can pass below
+ * its foundation without removing the building or the surrounding support.
+ * The caller supplies short, overlapping convex bore footprints and roof
+ * heights in world coordinates. */
+export function tunnelFoundationFragments(footprint, low, top, cutters) {
+    if (!cutters.length) return undefined;
+    const points=footprint.filter((p,i)=>!i||Math.hypot(p[0]-footprint[i-1][0],p[1]-footprint[i-1][1])>.001);
+    if(points.length>3&&Math.hypot(points[0][0]-points.at(-1)[0],points[0][1]-points.at(-1)[1])<.001)points.pop();
+    const faces=THREE.ShapeUtils.triangulateShape(points.map(p=>new THREE.Vector2(p[0],-p[1])),[]);
+    let fragments=faces.map(face=>({points:face.map(i=>[points[i][0],0,points[i][1]]),floor:low})),changed=false;
+    for(const cut of cutters){
+        const cutter=cut.polygon.map(p=>[p[0],0,p[1]]),winding=cutter.reduce((sum,p,i)=>{const q=cutter[(i+1)%cutter.length];return sum+p[0]*q[2]-q[0]*p[2];},0)>0?1:-1,next=[];
+        for(const fragment of fragments){
+            if(cut.roof<=fragment.floor+.001||!polygonsOverlap(fragment.points.map(p=>[p[0],p[2]]),cut.polygon)){next.push(fragment);continue;}
+            let remaining=fragment.points;
+            for(let i=0;i<cutter.length&&remaining.length>=3;i++){
+                const p=cutter[i],q=cutter[(i+1)%cutter.length],side=v=>((q[0]-p[0])*(v[2]-p[2])-(q[2]-p[2])*(v[0]-p[0]))*winding;
+                const outside=clipVolumePolygon(remaining,side,false);
+                if(outside.length>=3&&polygonArea(outside)>1e-7)next.push({points:outside,floor:fragment.floor});
+                remaining=clipVolumePolygon(remaining,side,true);
+            }
+            if(remaining.length>=3&&polygonArea(remaining)>1e-7){next.push({points:remaining,floor:Math.min(top,cut.roof)});changed=true;}
+        }
+        fragments=next;
+    }
+    return changed?fragments:undefined;
 }
 /** Only source-switch formations own ties with ordinary upper ballast tops.
  * Faces below the ordinary bed stay occluded; sidewalls and lower support stay. */
@@ -381,7 +409,8 @@ export function endpointContext(route) {
     return result;
 }
 /** World coordinates and surface ownership stay identical across independent tile builds. */
-export function buildTile(tile, route, terrain) {
+export function buildTile(tile, route, terrain, progress) {
+    progress?.(0);
     const batch = new Batch(), factory = new AssetFactory(), bounds = tile.bounds ?? [0, 0, 1000, 1000];
     const minS = route.project((bounds[0] + bounds[2]) / 2, (bounds[1] + bounds[3]) / 2, 1500).s;
     const troughOffset = (s) => route.laneOffset(s, 4.2) / 2 - (Math.abs(route.laneOffset(s, 4.2)) + 5.6) / 2 - .35;
@@ -528,6 +557,16 @@ export function buildTile(tile, route, terrain) {
                 }
         return result;
     };
+    // A point can query the exact subgrade envelope from one bucket. This
+    // avoids allocating and deduplicating a neighbourhood for every vertex.
+    const subgradeBuckets = new Map();
+    for(const road of supportRoads)for(let i=0;i<road.points.length-1;i++){
+        const a=road.points[i],b=road.points[i+1],pad=road.width/2+3.6;
+        for(let x=Math.floor((Math.min(a[0],b[0])-pad)/25);x<=Math.floor((Math.max(a[0],b[0])+pad)/25);x++)
+            for(let z=Math.floor((Math.min(a[2],b[2])-pad)/25);z<=Math.floor((Math.max(a[2],b[2])+pad)/25);z++){
+                const key=`${x},${z}`,entries=subgradeBuckets.get(key)||[];entries.push({road,i});subgradeBuckets.set(key,entries);
+            }
+    }
     const metroBores = (route.data.civils || []).filter(c=>c.metadata?.mode==='tram' && c.metadata?.tunnel).map(c=>{
         const path=new CurvePath(c.points),radius=(Number(c.metadata.boreRadius)||2.3)+.5,ps=c.points;
         return {path,radius,start:path.sample(0),end:path.sample(path.length),bounds:[Math.min(...ps.map(p=>p[0]))-radius,Math.min(...ps.map(p=>p[2]))-radius,Math.max(...ps.map(p=>p[0]))+radius,Math.max(...ps.map(p=>p[2]))+radius]};
@@ -540,8 +579,9 @@ export function buildTile(tile, route, terrain) {
         const cached = surfaceCache.get(key);
         if (cached !== undefined)
             return cached;
-        let y = field.ground(x, z);
-        for (const { service, index } of auxNear(x, z)) {
+        const near = route.project(x, z, 100);
+        let y = field.ground(x, z, near);
+        for (const { service, index } of auxBuckets.get(`${Math.floor(x/50)},${Math.floor(z/50)}`) || []) {
             const a = service.path.points[index], b = service.path.points[index + 1], hit = segmentDistance(x, z, a, b);
             if (hit.distance > 8)
                 continue;
@@ -573,7 +613,6 @@ export function buildTile(tile, route, terrain) {
         for (const w of water)
             if (pointInPolygon(x, z, w.footprint))
                 y = Math.min(y, w.level - .65);
-        const near = route.project(x, z, 60);
         const validMain = Number.isFinite(near.distance) && near.distance < Math.abs(route.laneOffset(near.s, 4.2)) + 35;
         const tunnel = validMain ? route.tunnelAt(near.s) : undefined, bridge = validMain ? route.bridgeAt(near.s) : undefined;
         const corridorDistance = Math.abs(near.side - centre(near.s)), halfFormation = formationWidth(near.s) / 2;
@@ -594,7 +633,7 @@ export function buildTile(tile, route, terrain) {
         const switchSupport = switchUndersides.height(x, z);
         if (switchSupport !== undefined && !tunnel && !water.some(w => pointInPolygon(x, z, w.footprint)) && !lowerOpenings.some(o => o.path.nearest(x, z).distance < o.width / 2 + 3.6))
             y = switchSupport;
-        for (const { road, i } of roadLookup(x, z, 5)) {
+        for (const { road, i } of subgradeBuckets.get(`${Math.floor(x/25)},${Math.floor(z/25)}`) || []) {
             if(road.mode==='tunnel')continue;
             const a = road.points[i], b = road.points[i + 1], hit = segmentDistance(x, z, a, b);
             if (hit.distance > road.width / 2 + 3.6)
@@ -675,9 +714,12 @@ export function buildTile(tile, route, terrain) {
             cells.push({ x, z, size, emit });
     };
     const cell = 40;
-    for (let z = bounds[1]; z < bounds[3] - .01; z += cell)
+    for (let z = bounds[1]; z < bounds[3] - .01; z += cell) {
+        progress?.(.03 + .17 * (z - bounds[1]) / Math.max(1, bounds[3] - bounds[1]));
         for (let x = bounds[0]; x < bounds[2] - .01; x += cell)
             refine(x, z, Math.min(cell, bounds[2] - x, bounds[3] - z), 0, bounds, true);
+    }
+    progress?.(.2);
     const registered = route.data.tiles.some(t => t.id === tile.id), tileBounds = new Map(route.data.tiles.map(t => [`${Math.floor(t.bounds[0] / 1000)},${Math.floor(t.bounds[1] / 1000)}`, t.bounds])), haloRoots = new Set(), anchor = registered ? [0, 0] : [bounds[0], bounds[1]];
     for (const fp of crossingFootprints) {
         const x0 = anchor[0] + Math.floor((Math.min(...fp.map(q => q[0])) - anchor[0]) / cell) * cell - cell, x1 = Math.max(...fp.map(q => q[0])) + cell, z0 = anchor[1] + Math.floor((Math.min(...fp.map(q => q[1])) - anchor[1]) / cell) * cell - cell, z1 = Math.max(...fp.map(q => q[1])) + cell;
@@ -764,7 +806,9 @@ export function buildTile(tile, route, terrain) {
                     checks.supportHaloTriangles++;
             }
     };
-    for (const c of cells) {
+    for (let cellIndex=0;cellIndex<cells.length;cellIndex++) {
+        const c=cells[cellIndex];
+        if ((cellIndex & 1023) === 0) progress?.(.25 + .45 * cellIndex / Math.max(1,cells.length));
         const x1 = c.x + c.size, z1 = c.z + c.size, cx = (c.x + x1) / 2, cz = (c.z + z1) / 2;
         const cy = ground(cx, cz);
         const boundary = [];
@@ -788,6 +832,7 @@ export function buildTile(tile, route, terrain) {
             terrainTriangle(u, v, w, color, c.emit);
         }
     }
+    progress?.(.7);
     const analyticGround = ground;
     ground = (x, z) => soil.height(x, z) ?? analyticGround(x, z);
     const accessFloor = (point, stationId) => {
@@ -919,7 +964,9 @@ export function buildTile(tile, route, terrain) {
             sleeper.userData.maximumMeasuredSourceBallastEmbed = embed;
         }
     }
-    for (const road of roads) {
+    for (let roadIndex=0;roadIndex<roads.length;roadIndex++) {
+        const road=roads[roadIndex];
+        if ((roadIndex & 31) === 0) progress?.(.76 + .1 * roadIndex / Math.max(1,roads.length));
         const foot = ['footway', 'path', 'steps', 'cycleway', 'pedestrian', 'corridor'].includes(road.kind), color = foot ? palette.pavement : palette.asphalt;
         const cuts = roadSpanCuts(road), opening = roadBridgeOpening(road);
         for (let i = 0; i < cuts.length - 1; i++) {
@@ -1612,8 +1659,11 @@ export function buildTile(tile, route, terrain) {
         batch.add(m);
         geo.dispose();
     }
+    progress?.(.9);
     const footprints = [];
-    for (const building of tile.buildings) {
+    for (let buildingIndex=0;buildingIndex<tile.buildings.length;buildingIndex++) {
+        const building=tile.buildings[buildingIndex];
+        if ((buildingIndex & 15) === 0) progress?.(.9 + .08 * buildingIndex / Math.max(1,tile.buildings.length));
         if ([...(route.data.landmarks || []), ...(route.data.civils || [])].some(a => typeof a.source === 'string' && a.source.endsWith('/' + building.id.replace(/^way\//, ''))))
             continue;
         const fp = building.footprint;
@@ -1692,12 +1742,29 @@ export function buildTile(tile, route, terrain) {
         body.position.y = base;
         batch.add(body);
         geo.dispose();
-        const foot = new THREE.ExtrudeGeometry(shape, { depth: base - low + .08, bevelEnabled: false, steps: 1 });
-        foot.rotateX(-Math.PI / 2);
-        const plinth = new THREE.Mesh(foot, material(0x8e887c));
-        plinth.position.y = low - .08;
-        batch.add(plinth);
-        foot.dispose();
+        const boreCuts=[];
+        for(const tunnel of route.data.tunnels || []){
+            const start=route.sourceS(tunnel.start),end=route.sourceS(tunnel.end),from=Math.max(start,near.s-radius-10),to=Math.min(end,near.s+radius+10);
+            if(from>=to||near.distance>radius+(tunnel.width||9))continue;
+            for(let s=from;s<to;s+=6){
+                const a=Math.max(start,s-1),b=Math.min(end,s+7),half=Math.max((Number(tunnel.width)||9)/2+.8,Math.abs(route.laneOffset((a+b)/2,4.2))/2+2.8);
+                const leftA=route.sample(a,centre(a)-half).position,rightA=route.sample(a,centre(a)+half).position,leftB=route.sample(b,centre(b)-half).position,rightB=route.sample(b,centre(b)+half).position;
+                const polygon=[leftA,rightA,rightB,leftB].map(p=>[p[0],p[2]]),roof=Math.max(leftA[1],rightA[1],leftB[1],rightB[1])+(Number(tunnel.clearHeight)||5.8)+.65;
+                if(roof>low-.08&&polygonsOverlap(fp,polygon))boreCuts.push({polygon,roof});
+            }
+        }
+        const relieved=tunnelFoundationFragments(fp,low-.08,base,boreCuts);
+        if(relieved){
+            for(const fragment of relieved)if(fragment.floor<base-.001)followingSolid(batch,[fragment.points],fragment.floor,base,material(0x8e887c).color);
+            foundationStyle='tunnel-relieved plinth';foundationDetail={...foundationDetail,tunnelClearancePieces:boreCuts.length,foundationOriginalLow:low};
+        }else{
+            const foot = new THREE.ExtrudeGeometry(shape, { depth: base - low + .08, bevelEnabled: false, steps: 1 });
+            foot.rotateX(-Math.PI / 2);
+            const plinth = new THREE.Mesh(foot, material(0x8e887c));
+            plinth.position.y = low - .08;
+            batch.add(plinth);
+            foot.dispose();
+        }
         const corners=fp.filter((q,i)=>i===0||Math.hypot(q[0]-fp[i-1][0],q[1]-fp[i-1][1])>.01);if(corners.length>3&&Math.hypot(corners[0][0]-corners.at(-1)[0],corners[0][1]-corners.at(-1)[1])<.01)corners.pop();
         if(appearance.pitched&&corners.length===4){
             const edge=i=>Math.hypot(corners[i][0]-corners[(i+1)%4][0],corners[i][1]-corners[(i+1)%4][1]);
@@ -1803,6 +1870,7 @@ export function buildTile(tile, route, terrain) {
     }
     checks.sourceBedTopTrianglesClipped = sourceBedOwnership.cuts;
     checks.sourceBedTopAreaRemoved = sourceBedOwnership.removedArea;
+    progress?.(.99);
     const mesh = batch.packet();
     checks.triangleCount = mesh.index.length / 3;
     return { mesh, roads: roads.map(({ id, kind, width, points, mode, crossingS, routeS }) => ({ id, kind, width, points, mode, crossingS, routeS })), placements, pedestrianPaths, checks };

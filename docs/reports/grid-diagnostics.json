@@ -7,9 +7,9 @@
     "unconnected": 20126,
     "unmappedEndpoints": 13726,
     "unconnectedMapped": 6400,
-    "tangent": 1644,
+    "tangent": 1643,
     "radius": 0,
-    "gradient": 308,
+    "gradient": 291,
     "duplicate": 94,
     "terrain": 2,
     "crossing": 0
@@ -643,11 +643,6 @@
         "grade": 0.32
       },
       {
-        "id": "way/113598962/0/piece/1",
-        "mode": "road",
-        "grade": 1.314
-      },
-      {
         "id": "way/1188518312/0/piece/1",
         "mode": "road",
         "grade": 5.327
@@ -686,11 +681,6 @@
         "id": "way/1208249083/0",
         "mode": "road",
         "grade": 0.282
-      },
-      {
-        "id": "way/12334483/0/piece/0",
-        "mode": "road",
-        "grade": 0.685
       },
       {
         "id": "way/125510139/0",
@@ -741,6 +731,16 @@
         "id": "way/1328157026/0/piece/0",
         "mode": "road",
         "grade": 0.279
+      },
+      {
+        "id": "way/1328157029/0/piece/1",
+        "mode": "road",
+        "grade": 0.275
+      },
+      {
+        "id": "way/1328157029/0/piece/1",
+        "mode": "road",
+        "grade": 0.265
       }
     ],
     "duplicate": [
@@ -961,5 +961,5 @@
     ],
     "crossing": []
   },
-  "revision": "a972112cc7694560042b4ee0f85b3fd92ecf55613803f17b5207fc876e086ec4"
+  "revision": "2903b3d30210cbcde18aa97ee742c7ac4617df3323525779c83bfc4b79150000"
 }

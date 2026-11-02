@@ -77,6 +77,12 @@ and journey in one transaction. Later saves reuse that immutable world. A failed
 fetch or transaction leaves the previous save intact. A reload with all world
 data requests blocked is an acceptance test. Engine/world identity changes reject
 incompatible older journeys rather than mixing new scenery with an old simulation.
+The immediately preceding grid release is explicitly checked for its known
+revision and route fingerprint and can continue with its saved world, including
+offline. Starting a new journey requests the current release's world; if it is
+offline, the archived world remains available. Replacing an archived world under
+the same release hash atomically backs up the old snapshot and matching world by
+revision.
 When a newer world is saved, the previous active journey is kept under
 `backup/<worldHash>` in the `journeys` IndexedDB store, and its old world is kept
 in the `worlds` store. There is no in-game migration of incompatible operating

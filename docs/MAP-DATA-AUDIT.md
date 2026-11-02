@@ -56,6 +56,30 @@ compilation, and both neighbouring grid tiles are checked for a complete
 assembly. A failed required scenery tile is now reported during loading instead
 of leaving the progress screen waiting for the generic timeout.
 
+Livery Street's mapped canal bridge is below the Snow Hill railway viaduct,
+as shown in the dated Geograph reference in the location manifest. Treating it
+as a road bridge above the railway had produced a roughly 330% approach grade;
+the revised datum is inferred from the road and terrain, and the earlier datum
+remains in the compiled record. A remote pedestrian endpoint no longer fixes a
+connected street's height at the far end of an underpass. The compiler now
+records nine constrained motor-road grade exceptions, down from 27; these and
+the broader graph/terrain warnings still require site review. The automatic
+adjustments have an 8 m bound and do not move plan coordinates. The largest
+remaining endpoint-grade estimates are on St Pauls Road (63.1%), Castle Road
+(44.4%) and two Halfords Lane pieces (31.0% and 32.3%); the estimates are
+model diagnostics, not verified road gradients.
+
+The [Great Western Arcade](https://greatwesternarcade.co.uk/about-gwa) was
+built above the Snow Hill–Moor Street tunnel. A wider-than-station sweep found
+12 intersections where the level plinths for mapped buildings `way/24712366`
+and `way/144379352` entered that bore. Foundation composition now partitions
+the footprint against the sampled tunnel corridor and raises only the affected
+foundation fragments above its modelled roof; the buildings and surrounding
+foundation remain. The previous-release baseline and current finite probes are
+in `docs/reports/snow-hill-foundation-baseline.json` and
+`docs/reports/livery-clearance.json`. This is inferred support geometry, not a
+survey of the arcade's structure.
+
 The earlier reconstruction omitted the two existing Metro service paths at
 The Hawthorns and bound both tram platforms to a track over a kilometre away.
 The compiler retains the two earlier mapped paths, creates separate tram graph

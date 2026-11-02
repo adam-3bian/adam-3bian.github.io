@@ -5,6 +5,7 @@ import { RailwaySimulation } from './core/simulation.js';
 import { RailwayRenderer } from './render/renderer.js';
 import { RailwayAudio } from './core/audio.js';
 import { JourneyStore } from './core/save.js';
+import { canUseSavedWorld, mayUsePreviousWorld, reconcileSavedJourney } from './core/save-compatibility.js';
 import { routeResourceUrl } from './core/resource-url.js';
 import { endpointContext } from './world/build.js';
 import { GridWorld } from './world/grid-world.js';
@@ -15,7 +16,7 @@ const app = document.querySelector('#app');
 app.innerHTML = `<main class="simulator">
   <div id="viewport" role="img" aria-label="Front view of the Kidderminster to Dorridge railway"></div>
   <div class="vignette" aria-hidden="true"></div>
-  <section id="loading" class="loading-screen" role="status" aria-live="polite"><div class="loading-card"><span class="eyebrow">RAILWAY DEMO</span><h1>Preparing your railway</h1><p id="loading-stage">Loading world…</p><progress id="loading-progress" max="100" aria-label="Loading progress"></progress><span id="loading-value"></span></div></section>
+  <section id="loading" class="loading-screen" role="status" aria-live="polite"><div class="loading-card"><p id="loading-stage">Loading world…</p><progress id="loading-progress" max="100" aria-label="Loading progress"></progress><span id="loading-value"></span></div></section>
   <div class="drive-actions"><span class="clock" id="clock">08:12:00</span><button id="pause" class="icon-button" aria-label="Pause journey">${pauseIcon}</button></div>
   <section id="menu" class="menu" aria-label="Journey setup"><div class="menu-panel">
     <h1>Railway demo</h1>
@@ -53,6 +54,8 @@ let saveErrorReported = false;
 let world;
 let worldSaved = false;
 let saving;
+let allowArchivedStart = false;
+const newJourneyKey = 'railway-start-new-v1';
 const preferencesKey = 'railway-demo-preferences-v1';
 function loadPreferences() {
     try {
@@ -84,7 +87,7 @@ else {
     bar.value = value;
     $('loading-value').textContent = `${value}%`;
 } }
-function loadingTiles(done, total, start = 0) { loading(`Preparing scenery ${done} of ${total}`, total ? start + (1 - start) * done / total : undefined); }
+function loadingTiles(done, total, amount = done, start = 0) { const ratio=total?start+(1-start)*amount/total:undefined; loading(`Preparing scenery ${done} of ${total}`, ratio===undefined?undefined:done<total?Math.min(.99,ratio):1); }
 function notify(text, important = false) { $('notice').textContent = text; $('notice').classList.toggle('important', important); noticeUntil = performance.now() + (important ? 10000 : 6500); }
 function clearInputs() { input.a = false; input.d = false; input.horn = false; }
 function pause() { if (!started || !sim)
@@ -124,7 +127,15 @@ async function begin() { if (!loaded)
     return; const direction = Number($('direction').value); const index = route.stations.findIndex(s => s.id === $('start-station').value); if (index < 0 || index + direction < 0 || index + direction >= route.stations.length) {
     $('begin-label').textContent = 'Choose a departure with a station ahead';
     return;
-} sim.start(direction, index); view.resetTraffic(); $('begin').disabled = true; loading('Preparing departure…'); try {
+}
+    // An old journey must retain its archived map, but an explicitly new
+    // journey should normally start on the map supplied by this release.
+    if (world.document.revision !== __RAILWAY_WORLD_REVISION__) {
+        if (allowArchivedStart) allowArchivedStart = false;
+        else try { sessionStorage.setItem(newJourneyKey, JSON.stringify({ direction, station: route.stations[index].id })); location.reload(); return; }
+        catch { /* Storage is unavailable; use the already-loaded map. */ }
+    }
+    sim.start(direction, index); view.resetTraffic(); $('begin').disabled = true; loading('Preparing departure…'); try {
     await view.preparePosition(loadingTiles);
     started = true;
     visible('menu', false);
@@ -192,7 +203,7 @@ $('resume-save').addEventListener('click', async () => { try {
     const saved = await journeySaves.get();
     if (!saved)
         throw new Error('No saved journey was found.');
-    sim.restore(saved);
+    sim.restore(reconcileSavedJourney(saved, world.document, route.fingerprint, __RAILWAY_WORLD_HASH__));
     view.resetTraffic();
     await view.preparePosition(loadingTiles);
     started = true;
@@ -231,9 +242,27 @@ document.addEventListener('visibilitychange', () => { if (document.hidden)
     pause(); });
 async function init() {
     try {
-        const storedWorld = await journeySaves.getWorld(__RAILWAY_WORLD_HASH__).catch(() => undefined);
+        let requestedJourney;
+        try { requestedJourney=JSON.parse(sessionStorage.getItem(newJourneyKey)||'null');sessionStorage.removeItem(newJourneyKey); }
+        catch { requestedJourney=null; }
+        if (!requestedJourney || ![-1,1].includes(requestedJourney.direction) || typeof requestedJourney.station!=='string') requestedJourney=null;
+        const previous = await journeySaves.get().catch(() => undefined);
+        let storedWorld = await journeySaves.getWorld(__RAILWAY_WORLD_HASH__).catch(() => undefined);
         worldSaved = Boolean(storedWorld);
-        world = await GridWorld.load(document.baseURI, storedWorld, p => { const start = p.stage === 'world' ? 0 : p.stage === 'terrain' ? .48 : .7, weight = p.stage === 'world' ? .48 : p.stage === 'terrain' ? .22 : 0; loading(p.stage === 'world' ? 'Loading world…' : p.stage === 'terrain' ? 'Loading terrain…' : 'Restoring saved world…', p.total ? start + weight * p.loaded / p.total : undefined); });
+        if (!storedWorld && mayUsePreviousWorld(previous)) {
+            const candidate = await journeySaves.getWorld(previous.worldHash).catch(() => undefined);
+            if (canUseSavedWorld(previous, candidate)) storedWorld = candidate;
+        }
+        const loadWorld = saved => GridWorld.load(document.baseURI, saved, p => { const start = p.stage === 'world' ? 0 : p.stage === 'terrain' ? .48 : .7, weight = p.stage === 'world' ? .48 : p.stage === 'terrain' ? .22 : 0; loading(p.stage === 'world' ? 'Loading world…' : p.stage === 'terrain' ? 'Loading terrain…' : 'Restoring saved world…', p.total ? start + weight * p.loaded / p.total : undefined); });
+        if (requestedJourney) {
+            try { world=await loadWorld(undefined);worldSaved=false; }
+            catch (error) {
+                if (!storedWorld) throw error;
+                // A saved world is still usable when the new release data is
+                // unavailable offline; don't enter a reload loop.
+                world=await loadWorld(storedWorld);allowArchivedStart=true;
+            }
+        } else world=await loadWorld(storedWorld);
         const data = world.route;
         data.worldHash = __RAILWAY_WORLD_HASH__;
         route = new RouteGeometry(data);
@@ -245,8 +274,9 @@ async function init() {
         stationOptions(1);
         const terrain = world.terrain;
         loading('Preparing the road network…', .7);
-        await new Promise(resolve => requestAnimationFrame(() => resolve()));
+        await new Promise(resolve => setTimeout(resolve, 0));
         sim.configureRoadNetwork(data.surfaceRoads, new Terrain(data.terrain, new Uint16Array(terrain)));
+        loading('Preparing scenery…', .7);
         view = new RailwayRenderer($('viewport'), data, route, sim);
         view.tileSource = id => world.tile(id);
         view.setRenderScale(Number($('render-scale').value) / 100);
@@ -254,7 +284,7 @@ async function init() {
         view.onError = showError;
         view.onProgress = () => { if (!loaded) {
             const p = view.preparationProgress();
-            loadingTiles(p.loaded, p.total, .7);
+            loadingTiles(p.loaded, p.total, p.progress, .7);
             if (p.total > 0 && p.loaded === p.total) {
                 loaded = true;
                 visible('loading', false);
@@ -262,10 +292,14 @@ async function init() {
                 $('begin-label').textContent = 'Begin journey';
                 $('gpu-state').innerHTML = '<i></i> WEBGL 2 READY';
                 journeySaves.get().then(saved => visible('resume-save', Boolean(saved))).catch(() => visible('resume-save', false));
+                if (requestedJourney) {
+                    $('direction').value=String(requestedJourney.direction);stationOptions(requestedJourney.direction);$('start-station').value=requestedJourney.station;
+                    requestedJourney=null;setTimeout(()=>begin(),0);
+                }
             }
         } };
         await view.init(terrain);
-        let animationFrame = 0;
+        let animationFrame = 0, lastMenuFrame = -Infinity;
         if (import.meta.env.DEV || import.meta.env.MODE === 'qa')
             window.__railway = { sim, route, view, world, input, save, stopAnimation: () => cancelAnimationFrame(animationFrame), storage: journeySaves, begin, debug: async () => (await import('./render/debug-grid.js')).createGridInspector(view,route,terrain), render: () => view.draw(1 / 60), advance: (seconds, autoAck = false) => { const paused = sim.paused; sim.paused = false; for (let i = 0; i < seconds * 60; i++) {
                     if (autoAck && sim.aws.pending)
@@ -285,7 +319,12 @@ async function init() {
             else
                 accumulator = 0;
             audio.update(sim, input.horn);
-            view.draw(dt);
+            // Empty WebGL frames compete with the scenery worker during
+            // loading. The stationary menu only needs occasional redraws.
+            if (loaded && $('loading').hidden && (started || now - lastMenuFrame >= 200)) {
+                view.draw(dt);
+                lastMenuFrame = now;
+            }
             if (now - lastHUD > 100) {
                 updateHUD(now);
                 lastHUD = now;

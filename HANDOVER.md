@@ -1,5 +1,52 @@
 # Railway handover
 
+## Loading and resource repair — 1 November 2026
+
+Work remains on `railway`. The loading view now displays the actual scenery
+progress; its two introductory titles were removed. The worker reports progress
+and only times out after a period without progress, and an unresponsive worker
+initialisation is retried. World composition shares surface calculations and
+sends less metadata to the worker. WebGL drawing is suspended during loading
+and reduced on the stationary menu. Distant traffic models and pedestrians from
+evicted tiles are released. These changes preserve existing scene geometry and
+the normal camera and controls.
+
+A wider Snow Hill tunnel sweep also found 12 pre-existing foundation
+intersections beneath the Great Western Arcade. The two mapped buildings are
+retained, and only foundation fragments inside the modelled tunnel corridor
+are lifted above its roof. The current sweep and the previous-release baseline
+are retained in `docs/reports/livery-clearance.json` and
+`docs/reports/snow-hill-foundation-baseline.json`; support dimensions are inferred.
+
+The immediately preceding release's saved world is eligible for explicit
+revision/fingerprint-checked continuation; the original snapshot and world are
+retained. A new journey requests the current map and uses the saved one if
+offline. The real previous-release browser regression is recorded in
+`docs/reports/save-upgrade-browser.json`. This does not make arbitrary older
+operating geometries compatible.
+
+The Livery Street canal bridge now passes below the railway instead of being
+lifted over it. Its elevation remains inferred. Road grade constraints now
+report nine exceptions instead of 27; additional ground, connectivity and
+photo-based verification remains open. Most imported sidings and points still
+do not participate in player routing. Nineteen legacy offline utilities remain
+Python, and hardware performance has not been benchmarked.
+
+The current JavaScript suite passed 144 tests. Both deterministic 21-stop
+journeys and a two-hour accelerated rail-only simulation completed without a
+recorded collision or signal passed at danger; these are not mixed-traffic or
+browser-duration acceptance. A single local Chromium/SwiftShader cold-load
+measurement fell from 39.7 s to 18.5 s; see
+`docs/reports/loading-performance.json` for the different world revisions,
+software-rendering conditions and simulated slowdown limitations.
+The focused cooked-geometry run at Kidderminster, Snow Hill and Moor Street
+found no intersections in 4,878 sampled probes across four tiles; it does not
+certify unsampled clearance or the inferred bridge datum. The results are in
+`docs/reports/loading-clearance.json`.
+The production static build passed manifest verification, both root and nested
+browser launch checks, and HTTP hash checks for all 276 packaged files at both
+paths. This is local software-rendered QA, not a deployment.
+
 ## Grid repair status — 1 November 2026
 
 This section supersedes the earlier numerical results below. Work is on

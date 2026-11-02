@@ -27,3 +27,11 @@ integrity and review-note hashes. `scripts/landscape-browser-qa.js` checks the
 current loading, resolution, fixed views and complete-world offline reload.
 These checks do not by themselves certify every scene, raw source extraction or
 hardware performance.
+
+`node scripts/profile-loading-browser.js` records a cold local Chromium load in
+`work/`; pass `3` to emulate a threefold CPU slowdown. It uses SwiftShader and
+reports main-thread timing separately from worker and graphics work. For the
+previous-release save check, extract the old `site/` from commit `c4bfc49` into
+`work/previous-site/`, build the QA site, then run
+`node scripts/save-upgrade-browser-qa.js`. Its offline and new-journey checks
+use one browser origin so they share the same IndexedDB storage.

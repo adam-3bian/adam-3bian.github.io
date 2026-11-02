@@ -130,6 +130,20 @@ for (const id of ['way/1208250339/0','way/1208250340/0']) {
     });
     roadOverrides.set(id,{...road,points,legacyPoints:road.points,mode:'pedestrian-crossing',profileResolved:true,elevationMode:'level',confidence:'mapped footpath joins Metro platform edges; walking level inferred from adjacent tram tracks'});
 }
+// Livery Street Bridge spans the canal beneath the railway viaduct. The old
+// blanket "road bridge above rail" rule lifted this short deck by 13 m and
+// produced a 330% road grade. Keep the bridge, with a datum inferred from its
+// approaches and ground; the original inferred deck remains reviewable.
+const livery=originalRoads.find(r=>r.id==='way/238237548/0');
+if (!livery) throw new Error('Missing mapped Livery Street canal bridge');
+const liveryHeight=Math.max(...livery.points.map(p=>terrain.raw(p[0],p[2])))+.3,liveryPath=new Polyline(livery.points),liveryMid=liveryPath.sample(liveryPath.length/2).position;
+const liveryStructure=route.structures.find(s=>s.id==='road_bridge/238237548/0');
+if (liveryStructure) {
+    liveryStructure.legacyPosition=liveryStructure.position;
+    liveryStructure.position=[liveryStructure.position[0],liveryHeight,liveryStructure.position[2]];
+    liveryStructure.confidence='mapped canal bridge under the railway viaduct; deck datum inferred from surrounding ground';
+}
+roadOverrides.set(livery.id,{...livery,points:livery.points.map(p=>[p[0],liveryHeight,p[2]]),legacyDeckHeight:134.57,mode:'over',profileResolved:true,elevationMode:'over',crossingS:liveryPath.length/2,spanHalfLength:liveryPath.length/2+.5,routeS:geometry.project(liveryMid[0],liveryMid[2],200).s,sourceStructure:'road_bridge/238237548/0',source:'https://www.geograph.org.uk/photo/2953908',confidence:'road over canal beneath railway viaduct; deck datum inferred from surrounding ground'});
 const canalBridge = originalRoads.find((r) => r.id === 'way/22320759/0');
 if (canalBridge) {
     const y = Math.max(canalBridge.points[0][1], canalBridge.points.at(-1)[1]);

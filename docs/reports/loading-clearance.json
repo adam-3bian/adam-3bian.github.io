@@ -1,0 +1,42 @@
+{
+  "revision": "2903b3d30210cbcde18aa97ee742c7ac4617df3323525779c83bfc4b79150000",
+  "scope": "Actual cooked static geometry; 4 m longitudinal sweeps at heights 1.2, 2.45 and 3.9 m, offsets -0.9/0/0.9 m; source topology and clearance assumptions are not survey",
+  "filter": [
+    "KID",
+    "BSW",
+    "BMO"
+  ],
+  "stationRadius": 180,
+  "reports": [
+    {
+      "tile": "-17_3",
+      "probes": 1620,
+      "triangles": 713659,
+      "failures": 0,
+      "seconds": 37.52790007
+    },
+    {
+      "tile": "6_-8",
+      "probes": 1449,
+      "triangles": 1025508,
+      "failures": 0,
+      "seconds": 46.800190807
+    },
+    {
+      "tile": "7_-7",
+      "probes": 1620,
+      "triangles": 894320,
+      "failures": 0,
+      "seconds": 26.573591654000005
+    },
+    {
+      "tile": "7_-8",
+      "probes": 189,
+      "triangles": 550547,
+      "failures": 0,
+      "seconds": 19.337713178999998
+    }
+  ],
+  "failures": [],
+  "totalFailures": 0
+}
