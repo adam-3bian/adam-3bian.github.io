@@ -1,0 +1,4901 @@
+{
+  "schema": 1,
+  "compatibility": "IDs are stable; unknown records must be preserved as LEGACY_UNKNOWN and reviewed. An enum does not imply an implemented asset.",
+  "cornerBits": {
+    "NW": 1,
+    "NE": 2,
+    "SE": 4,
+    "SW": 8
+  },
+  "enums": {
+    "WorldObjectKind": [
+      {
+        "id": "TERRAIN",
+        "name": "terrain",
+        "prefabIds": [
+          "terrain/corner-square"
+        ]
+      },
+      {
+        "id": "GROUND_COVER",
+        "name": "ground cover",
+        "prefabIds": []
+      },
+      {
+        "id": "EARTHWORK",
+        "name": "earthwork",
+        "prefabIds": []
+      },
+      {
+        "id": "WATER",
+        "name": "water",
+        "prefabIds": []
+      },
+      {
+        "id": "ROAD",
+        "name": "road",
+        "prefabIds": [
+          "road/local/straight",
+          "road/local/t-junction"
+        ]
+      },
+      {
+        "id": "FOOTPATH",
+        "name": "footpath",
+        "prefabIds": []
+      },
+      {
+        "id": "CYCLEWAY",
+        "name": "cycleway",
+        "prefabIds": []
+      },
+      {
+        "id": "RAILWAY",
+        "name": "railway",
+        "prefabIds": [
+          "rail/straight",
+          "rail/full-section-grade",
+          "rail/curve/radius-80"
+        ]
+      },
+      {
+        "id": "TRAMWAY",
+        "name": "tramway",
+        "prefabIds": []
+      },
+      {
+        "id": "TRACKWORK",
+        "name": "trackwork",
+        "prefabIds": []
+      },
+      {
+        "id": "RAIL_SIGNAL",
+        "name": "rail signal",
+        "prefabIds": []
+      },
+      {
+        "id": "ROAD_SIGNAL",
+        "name": "road signal",
+        "prefabIds": []
+      },
+      {
+        "id": "LEVEL_CROSSING",
+        "name": "level crossing",
+        "prefabIds": []
+      },
+      {
+        "id": "PLATFORM",
+        "name": "platform",
+        "prefabIds": [
+          "station/platform/side-section"
+        ]
+      },
+      {
+        "id": "STATION",
+        "name": "station",
+        "prefabIds": []
+      },
+      {
+        "id": "BUILDING",
+        "name": "building",
+        "prefabIds": [
+          "building/uk/victorian-terrace",
+          "building/uk/brick-cottage"
+        ]
+      },
+      {
+        "id": "INDUSTRIAL_BUILDING",
+        "name": "industrial building",
+        "prefabIds": [
+          "building/industrial/portal-warehouse"
+        ]
+      },
+      {
+        "id": "BRIDGE",
+        "name": "bridge",
+        "prefabIds": [
+          "bridge/steel/span-32"
+        ]
+      },
+      {
+        "id": "TUNNEL",
+        "name": "tunnel",
+        "prefabIds": []
+      },
+      {
+        "id": "VIADUCT",
+        "name": "viaduct",
+        "prefabIds": []
+      },
+      {
+        "id": "RETAINING_WALL",
+        "name": "retaining wall",
+        "prefabIds": []
+      },
+      {
+        "id": "CULVERT",
+        "name": "culvert",
+        "prefabIds": []
+      },
+      {
+        "id": "FOUNDATION",
+        "name": "foundation",
+        "prefabIds": []
+      },
+      {
+        "id": "FENCE",
+        "name": "fence",
+        "prefabIds": [
+          "fence/timber/section"
+        ]
+      },
+      {
+        "id": "HEDGE",
+        "name": "hedge",
+        "prefabIds": []
+      },
+      {
+        "id": "TREE",
+        "name": "tree",
+        "prefabIds": [
+          "vegetation/oak/medium"
+        ]
+      },
+      {
+        "id": "SHRUB",
+        "name": "shrub",
+        "prefabIds": []
+      },
+      {
+        "id": "VEGETATION",
+        "name": "vegetation",
+        "prefabIds": []
+      },
+      {
+        "id": "STREET_FURNITURE",
+        "name": "street furniture",
+        "prefabIds": []
+      },
+      {
+        "id": "RAILWAY_FURNITURE",
+        "name": "railway furniture",
+        "prefabIds": []
+      },
+      {
+        "id": "LANDMARK",
+        "name": "landmark",
+        "prefabIds": []
+      },
+      {
+        "id": "DEPOT_EQUIPMENT",
+        "name": "depot equipment",
+        "prefabIds": []
+      },
+      {
+        "id": "CHARACTER_SPAWN",
+        "name": "character spawn",
+        "prefabIds": []
+      },
+      {
+        "id": "VEHICLE_SPAWN",
+        "name": "vehicle spawn",
+        "prefabIds": []
+      },
+      {
+        "id": "AMBIENT_ZONE",
+        "name": "ambient zone",
+        "prefabIds": []
+      }
+    ],
+    "TerrainMaterial": [
+      {
+        "id": "GRASS",
+        "name": "grass",
+        "prefabIds": [
+          "terrain/corner-square"
+        ]
+      },
+      {
+        "id": "ROUGH_GRASS",
+        "name": "rough grass",
+        "prefabIds": []
+      },
+      {
+        "id": "SOIL",
+        "name": "soil",
+        "prefabIds": []
+      },
+      {
+        "id": "MUD",
+        "name": "mud",
+        "prefabIds": []
+      },
+      {
+        "id": "SAND",
+        "name": "sand",
+        "prefabIds": []
+      },
+      {
+        "id": "GRAVEL",
+        "name": "gravel",
+        "prefabIds": [
+          "terrain/corner-square"
+        ]
+      },
+      {
+        "id": "ROCK",
+        "name": "rock",
+        "prefabIds": []
+      },
+      {
+        "id": "SANDSTONE",
+        "name": "sandstone",
+        "prefabIds": []
+      },
+      {
+        "id": "LIMESTONE",
+        "name": "limestone",
+        "prefabIds": []
+      },
+      {
+        "id": "BALLAST",
+        "name": "ballast",
+        "prefabIds": []
+      },
+      {
+        "id": "CONCRETE",
+        "name": "concrete",
+        "prefabIds": []
+      },
+      {
+        "id": "ASPHALT",
+        "name": "asphalt",
+        "prefabIds": []
+      },
+      {
+        "id": "PAVING",
+        "name": "paving",
+        "prefabIds": []
+      },
+      {
+        "id": "COBBLES",
+        "name": "cobbles",
+        "prefabIds": []
+      },
+      {
+        "id": "FARMLAND",
+        "name": "farmland",
+        "prefabIds": []
+      },
+      {
+        "id": "WOODLAND_FLOOR",
+        "name": "woodland floor",
+        "prefabIds": []
+      },
+      {
+        "id": "LEAF_LITTER",
+        "name": "leaf litter",
+        "prefabIds": []
+      },
+      {
+        "id": "URBAN_GROUND",
+        "name": "urban ground",
+        "prefabIds": []
+      },
+      {
+        "id": "WATER_EDGE",
+        "name": "water edge",
+        "prefabIds": []
+      },
+      {
+        "id": "EXPOSED_EARTH",
+        "name": "exposed earth",
+        "prefabIds": []
+      }
+    ],
+    "TerrainSlopeShape": [
+      {
+        "id": "FLAT",
+        "name": "flat",
+        "prefabIds": [
+          "terrain/corner-square"
+        ]
+      },
+      {
+        "id": "SINGLE_CORNER_UP",
+        "name": "single corner up",
+        "prefabIds": []
+      },
+      {
+        "id": "ADJACENT_CORNERS_UP",
+        "name": "adjacent corners up",
+        "prefabIds": []
+      },
+      {
+        "id": "THREE_CORNERS_UP",
+        "name": "three corners up",
+        "prefabIds": []
+      },
+      {
+        "id": "OPPOSITE_CORNERS_VALLEY",
+        "name": "opposite corners valley",
+        "prefabIds": []
+      },
+      {
+        "id": "DOUBLE_HEIGHT_SLOPE",
+        "name": "double height slope",
+        "prefabIds": []
+      },
+      {
+        "id": "CUSTOM_CORNER_HEIGHTS",
+        "name": "custom corner heights",
+        "prefabIds": [
+          "terrain/corner-square"
+        ]
+      },
+      {
+        "id": "CLIFF_EDGE",
+        "name": "cliff edge",
+        "prefabIds": []
+      },
+      {
+        "id": "RETAINED_STEP",
+        "name": "retained step",
+        "prefabIds": []
+      }
+    ],
+    "LandCoverType": [
+      {
+        "id": "LAWN",
+        "name": "lawn",
+        "prefabIds": []
+      },
+      {
+        "id": "MEADOW",
+        "name": "meadow",
+        "prefabIds": []
+      },
+      {
+        "id": "PASTURE",
+        "name": "pasture",
+        "prefabIds": []
+      },
+      {
+        "id": "ARABLE_FIELD",
+        "name": "arable field",
+        "prefabIds": []
+      },
+      {
+        "id": "CROP_FIELD",
+        "name": "crop field",
+        "prefabIds": []
+      },
+      {
+        "id": "ALLOTMENT",
+        "name": "allotment",
+        "prefabIds": []
+      },
+      {
+        "id": "GARDEN",
+        "name": "garden",
+        "prefabIds": []
+      },
+      {
+        "id": "SCRUB",
+        "name": "scrub",
+        "prefabIds": []
+      },
+      {
+        "id": "HEDGE_ROW",
+        "name": "hedge row",
+        "prefabIds": []
+      },
+      {
+        "id": "WOODLAND",
+        "name": "woodland",
+        "prefabIds": []
+      },
+      {
+        "id": "INDUSTRIAL_YARD",
+        "name": "industrial yard",
+        "prefabIds": []
+      },
+      {
+        "id": "RAILWAY_LAND",
+        "name": "railway land",
+        "prefabIds": []
+      },
+      {
+        "id": "RESIDENTIAL_PLOT",
+        "name": "residential plot",
+        "prefabIds": []
+      },
+      {
+        "id": "COMMERCIAL_PLOT",
+        "name": "commercial plot",
+        "prefabIds": []
+      },
+      {
+        "id": "CAR_PARK",
+        "name": "car park",
+        "prefabIds": []
+      },
+      {
+        "id": "STATION_FORECOURT",
+        "name": "station forecourt",
+        "prefabIds": []
+      },
+      {
+        "id": "URBAN_HARDSTANDING",
+        "name": "urban hardstanding",
+        "prefabIds": []
+      },
+      {
+        "id": "RIPARIAN",
+        "name": "riparian",
+        "prefabIds": []
+      },
+      {
+        "id": "BARE_GROUND",
+        "name": "bare ground",
+        "prefabIds": []
+      }
+    ],
+    "EarthworkType": [
+      {
+        "id": "NONE",
+        "name": "none",
+        "prefabIds": []
+      },
+      {
+        "id": "CUTTING_EARTH",
+        "name": "cutting earth",
+        "prefabIds": []
+      },
+      {
+        "id": "CUTTING_ROCK",
+        "name": "cutting rock",
+        "prefabIds": []
+      },
+      {
+        "id": "EMBANKMENT_EARTH",
+        "name": "embankment earth",
+        "prefabIds": []
+      },
+      {
+        "id": "EMBANKMENT_STONE",
+        "name": "embankment stone",
+        "prefabIds": []
+      },
+      {
+        "id": "FILL",
+        "name": "fill",
+        "prefabIds": []
+      },
+      {
+        "id": "EXCAVATION",
+        "name": "excavation",
+        "prefabIds": []
+      },
+      {
+        "id": "RETAINED_CUT",
+        "name": "retained cut",
+        "prefabIds": []
+      },
+      {
+        "id": "RETAINED_FILL",
+        "name": "retained fill",
+        "prefabIds": []
+      },
+      {
+        "id": "TUNNEL_PORTAL_CUT",
+        "name": "tunnel portal cut",
+        "prefabIds": []
+      },
+      {
+        "id": "BRIDGE_APPROACH",
+        "name": "bridge approach",
+        "prefabIds": []
+      },
+      {
+        "id": "TERRACED_FOUNDATION",
+        "name": "terraced foundation",
+        "prefabIds": []
+      }
+    ],
+    "WaterType": [
+      {
+        "id": "NONE",
+        "name": "none",
+        "prefabIds": []
+      },
+      {
+        "id": "RIVER",
+        "name": "river",
+        "prefabIds": []
+      },
+      {
+        "id": "STREAM",
+        "name": "stream",
+        "prefabIds": []
+      },
+      {
+        "id": "CANAL",
+        "name": "canal",
+        "prefabIds": []
+      },
+      {
+        "id": "POND",
+        "name": "pond",
+        "prefabIds": []
+      },
+      {
+        "id": "LAKE",
+        "name": "lake",
+        "prefabIds": []
+      },
+      {
+        "id": "DITCH",
+        "name": "ditch",
+        "prefabIds": []
+      },
+      {
+        "id": "DRAIN",
+        "name": "drain",
+        "prefabIds": []
+      },
+      {
+        "id": "CULVERT_FLOW",
+        "name": "culvert flow",
+        "prefabIds": []
+      },
+      {
+        "id": "RESERVOIR",
+        "name": "reservoir",
+        "prefabIds": []
+      },
+      {
+        "id": "SEASONAL_WATER",
+        "name": "seasonal water",
+        "prefabIds": []
+      }
+    ],
+    "WorldLayer": [
+      {
+        "id": "SUBSURFACE",
+        "name": "subsurface",
+        "prefabIds": []
+      },
+      {
+        "id": "NATURAL_GROUND",
+        "name": "natural ground",
+        "prefabIds": []
+      },
+      {
+        "id": "GROUND_COVER",
+        "name": "ground cover",
+        "prefabIds": []
+      },
+      {
+        "id": "FORMATION",
+        "name": "formation",
+        "prefabIds": []
+      },
+      {
+        "id": "RAIL_SURFACE",
+        "name": "rail surface",
+        "prefabIds": []
+      },
+      {
+        "id": "ROAD_SURFACE",
+        "name": "road surface",
+        "prefabIds": []
+      },
+      {
+        "id": "PEDESTRIAN_SURFACE",
+        "name": "pedestrian surface",
+        "prefabIds": []
+      },
+      {
+        "id": "PLATFORM_SURFACE",
+        "name": "platform surface",
+        "prefabIds": []
+      },
+      {
+        "id": "WATER_SURFACE",
+        "name": "water surface",
+        "prefabIds": []
+      },
+      {
+        "id": "ELEVATED_STRUCTURE",
+        "name": "elevated structure",
+        "prefabIds": []
+      },
+      {
+        "id": "UNDERGROUND_STRUCTURE",
+        "name": "underground structure",
+        "prefabIds": []
+      },
+      {
+        "id": "BUILDING",
+        "name": "building",
+        "prefabIds": []
+      },
+      {
+        "id": "VEGETATION",
+        "name": "vegetation",
+        "prefabIds": []
+      },
+      {
+        "id": "STREET_FURNITURE",
+        "name": "street furniture",
+        "prefabIds": []
+      },
+      {
+        "id": "RAILWAY_EQUIPMENT",
+        "name": "railway equipment",
+        "prefabIds": []
+      },
+      {
+        "id": "DYNAMIC_GROUND",
+        "name": "dynamic ground",
+        "prefabIds": []
+      },
+      {
+        "id": "DYNAMIC_AIR",
+        "name": "dynamic air",
+        "prefabIds": []
+      }
+    ],
+    "OccupancyType": [
+      {
+        "id": "FULL_TILE",
+        "name": "full tile",
+        "prefabIds": []
+      },
+      {
+        "id": "HALF_TILE",
+        "name": "half tile",
+        "prefabIds": []
+      },
+      {
+        "id": "QUARTER_TILE",
+        "name": "quarter tile",
+        "prefabIds": []
+      },
+      {
+        "id": "SUB_TILE_FOOTPRINT",
+        "name": "sub tile footprint",
+        "prefabIds": []
+      },
+      {
+        "id": "MULTI_TILE",
+        "name": "multi tile",
+        "prefabIds": []
+      },
+      {
+        "id": "LINEAR_CORRIDOR",
+        "name": "linear corridor",
+        "prefabIds": []
+      },
+      {
+        "id": "ELEVATED_OVERLAP",
+        "name": "elevated overlap",
+        "prefabIds": []
+      },
+      {
+        "id": "UNDERGROUND_OVERLAP",
+        "name": "underground overlap",
+        "prefabIds": []
+      },
+      {
+        "id": "EXCLUSIVE_SOLID",
+        "name": "exclusive solid",
+        "prefabIds": []
+      },
+      {
+        "id": "CLEARANCE_ONLY",
+        "name": "clearance only",
+        "prefabIds": []
+      }
+    ],
+    "SupportSurfaceType": [
+      {
+        "id": "NATURAL_GROUND",
+        "name": "natural ground",
+        "prefabIds": [
+          "road/local/t-junction",
+          "bridge/steel/span-32",
+          "station/platform/side-section",
+          "building/uk/victorian-terrace",
+          "building/uk/brick-cottage",
+          "building/industrial/portal-warehouse",
+          "vegetation/oak/medium",
+          "fence/timber/section",
+          "terrain/corner-square"
+        ]
+      },
+      {
+        "id": "ENGINEERED_FILL",
+        "name": "engineered fill",
+        "prefabIds": []
+      },
+      {
+        "id": "FOUNDATION",
+        "name": "foundation",
+        "prefabIds": []
+      },
+      {
+        "id": "BRIDGE_DECK",
+        "name": "bridge deck",
+        "prefabIds": []
+      },
+      {
+        "id": "PLATFORM",
+        "name": "platform",
+        "prefabIds": []
+      },
+      {
+        "id": "STATION_FLOOR",
+        "name": "station floor",
+        "prefabIds": []
+      },
+      {
+        "id": "BUILDING_FLOOR",
+        "name": "building floor",
+        "prefabIds": []
+      },
+      {
+        "id": "TUNNEL_FLOOR",
+        "name": "tunnel floor",
+        "prefabIds": []
+      },
+      {
+        "id": "WALL_TOP",
+        "name": "wall top",
+        "prefabIds": []
+      },
+      {
+        "id": "RETAINING_STRUCTURE",
+        "name": "retaining structure",
+        "prefabIds": []
+      },
+      {
+        "id": "RAILWAY_FORMATION",
+        "name": "railway formation",
+        "prefabIds": [
+          "rail/straight",
+          "rail/full-section-grade",
+          "rail/curve/radius-80"
+        ]
+      },
+      {
+        "id": "ROAD_FORMATION",
+        "name": "road formation",
+        "prefabIds": [
+          "road/local/straight"
+        ]
+      },
+      {
+        "id": "WATER_FLOATING",
+        "name": "water floating",
+        "prefabIds": []
+      },
+      {
+        "id": "AIRBORNE",
+        "name": "airborne",
+        "prefabIds": []
+      }
+    ],
+    "FoundationType": [
+      {
+        "id": "NONE",
+        "name": "none",
+        "prefabIds": []
+      },
+      {
+        "id": "LEVEL_SLAB",
+        "name": "level slab",
+        "prefabIds": [
+          "building/uk/victorian-terrace",
+          "building/uk/brick-cottage",
+          "building/industrial/portal-warehouse"
+        ]
+      },
+      {
+        "id": "STRIP_FOUNDATION",
+        "name": "strip foundation",
+        "prefabIds": []
+      },
+      {
+        "id": "PAD_FOUNDATION",
+        "name": "pad foundation",
+        "prefabIds": []
+      },
+      {
+        "id": "STEPPED_FOUNDATION",
+        "name": "stepped foundation",
+        "prefabIds": []
+      },
+      {
+        "id": "PILE_FOUNDATION",
+        "name": "pile foundation",
+        "prefabIds": []
+      },
+      {
+        "id": "PIER_FOUNDATION",
+        "name": "pier foundation",
+        "prefabIds": []
+      },
+      {
+        "id": "RETAINED_PLINTH",
+        "name": "retained plinth",
+        "prefabIds": []
+      },
+      {
+        "id": "EMBEDDED_BASE",
+        "name": "embedded base",
+        "prefabIds": []
+      },
+      {
+        "id": "TERRACED_BASE",
+        "name": "terraced base",
+        "prefabIds": []
+      }
+    ],
+    "PlacementRule": [
+      {
+        "id": "LEVEL_FOUNDATION_REQUIRED",
+        "name": "level foundation required",
+        "prefabIds": [
+          "building/uk/victorian-terrace",
+          "building/uk/brick-cottage",
+          "building/industrial/portal-warehouse"
+        ]
+      },
+      {
+        "id": "LEVEL_COMPONENT_REQUIRED",
+        "name": "level component required",
+        "prefabIds": []
+      },
+      {
+        "id": "CONSTANT_GRADE_PREFERRED",
+        "name": "constant grade preferred",
+        "prefabIds": []
+      },
+      {
+        "id": "NEAR_LEVEL_PREFERRED",
+        "name": "near level preferred",
+        "prefabIds": [
+          "road/local/t-junction"
+        ]
+      },
+      {
+        "id": "FOLLOWS_TRANSPORT_GRADE",
+        "name": "follows transport grade",
+        "prefabIds": [
+          "rail/straight",
+          "rail/full-section-grade",
+          "rail/curve/radius-80",
+          "road/local/straight",
+          "station/platform/side-section"
+        ]
+      },
+      {
+        "id": "FOLLOWS_GROUND",
+        "name": "follows ground",
+        "prefabIds": [
+          "vegetation/oak/medium",
+          "fence/timber/section"
+        ]
+      },
+      {
+        "id": "ENGINEERED_STRUCTURE",
+        "name": "engineered structure",
+        "prefabIds": [
+          "bridge/steel/span-32",
+          "terrain/corner-square"
+        ]
+      }
+    ],
+    "TileGradeState": [
+      {
+        "id": "LEVEL",
+        "name": "level",
+        "prefabIds": [
+          "rail/straight",
+          "rail/full-section-grade",
+          "rail/curve/radius-80",
+          "road/local/straight"
+        ]
+      },
+      {
+        "id": "FULL_TILE_UPHILL",
+        "name": "full tile uphill",
+        "prefabIds": [
+          "rail/straight",
+          "rail/full-section-grade",
+          "rail/curve/radius-80",
+          "road/local/straight"
+        ]
+      },
+      {
+        "id": "FULL_TILE_DOWNHILL",
+        "name": "full tile downhill",
+        "prefabIds": [
+          "rail/straight",
+          "rail/full-section-grade",
+          "rail/curve/radius-80",
+          "road/local/straight"
+        ]
+      }
+    ],
+    "GradeExceptionType": [
+      {
+        "id": "NONE",
+        "name": "none",
+        "prefabIds": []
+      },
+      {
+        "id": "VERIFIED_HISTORIC_ALIGNMENT",
+        "name": "verified historic alignment",
+        "prefabIds": []
+      },
+      {
+        "id": "VERIFIED_MODERN_ALIGNMENT",
+        "name": "verified modern alignment",
+        "prefabIds": []
+      },
+      {
+        "id": "SITE_SPECIFIC_ENGINEERING",
+        "name": "site specific engineering",
+        "prefabIds": []
+      },
+      {
+        "id": "APPROVED_LEGACY_MIGRATION",
+        "name": "approved legacy migration",
+        "prefabIds": []
+      },
+      {
+        "id": "REQUIRES_REVIEW",
+        "name": "requires review",
+        "prefabIds": []
+      }
+    ],
+    "SourceConfidence": [
+      {
+        "id": "VERIFIED_GEOMETRY",
+        "name": "verified geometry",
+        "prefabIds": []
+      },
+      {
+        "id": "MAPPED_GEOMETRY",
+        "name": "mapped geometry",
+        "prefabIds": []
+      },
+      {
+        "id": "PHOTOGRAPHIC_REFERENCE",
+        "name": "photographic reference",
+        "prefabIds": []
+      },
+      {
+        "id": "HISTORIC_REFERENCE",
+        "name": "historic reference",
+        "prefabIds": []
+      },
+      {
+        "id": "ENGINEERED_INFERENCE",
+        "name": "engineered inference",
+        "prefabIds": []
+      },
+      {
+        "id": "VISUAL_APPROXIMATION",
+        "name": "visual approximation",
+        "prefabIds": []
+      },
+      {
+        "id": "UNKNOWN",
+        "name": "unknown",
+        "prefabIds": []
+      }
+    ],
+    "RailPieceId": [
+      {
+        "id": 0,
+        "name": "straight",
+        "prefabIds": [
+          "rail/straight"
+        ]
+      },
+      {
+        "id": 1,
+        "name": "diagonal straight",
+        "prefabIds": []
+      },
+      {
+        "id": 2,
+        "name": "very small left curve",
+        "prefabIds": []
+      },
+      {
+        "id": 3,
+        "name": "very small right curve",
+        "prefabIds": []
+      },
+      {
+        "id": 4,
+        "name": "small left curve",
+        "prefabIds": []
+      },
+      {
+        "id": 5,
+        "name": "small right curve",
+        "prefabIds": []
+      },
+      {
+        "id": 6,
+        "name": "normal left curve",
+        "prefabIds": []
+      },
+      {
+        "id": 7,
+        "name": "normal right curve",
+        "prefabIds": []
+      },
+      {
+        "id": 8,
+        "name": "large left curve",
+        "prefabIds": []
+      },
+      {
+        "id": 9,
+        "name": "large right curve",
+        "prefabIds": [
+          "rail/curve/radius-80"
+        ]
+      },
+      {
+        "id": 10,
+        "name": "diagonal large left curve",
+        "prefabIds": []
+      },
+      {
+        "id": 11,
+        "name": "diagonal large right curve",
+        "prefabIds": []
+      },
+      {
+        "id": 12,
+        "name": "left s bend",
+        "prefabIds": []
+      },
+      {
+        "id": 13,
+        "name": "right s bend",
+        "prefabIds": []
+      },
+      {
+        "id": 14,
+        "name": "straight slope up",
+        "prefabIds": [
+          "rail/full-section-grade"
+        ]
+      },
+      {
+        "id": 15,
+        "name": "straight slope down",
+        "prefabIds": []
+      },
+      {
+        "id": 16,
+        "name": "straight steep slope up",
+        "prefabIds": []
+      },
+      {
+        "id": 17,
+        "name": "straight steep slope down",
+        "prefabIds": []
+      },
+      {
+        "id": 18,
+        "name": "small left curve up",
+        "prefabIds": []
+      },
+      {
+        "id": 19,
+        "name": "small right curve up",
+        "prefabIds": []
+      },
+      {
+        "id": 20,
+        "name": "small left curve down",
+        "prefabIds": []
+      },
+      {
+        "id": 21,
+        "name": "small right curve down",
+        "prefabIds": []
+      },
+      {
+        "id": 22,
+        "name": "small left curve steep up",
+        "prefabIds": []
+      },
+      {
+        "id": 23,
+        "name": "small right curve steep up",
+        "prefabIds": []
+      },
+      {
+        "id": 24,
+        "name": "small left curve steep down",
+        "prefabIds": []
+      },
+      {
+        "id": 25,
+        "name": "small right curve steep down",
+        "prefabIds": []
+      },
+      {
+        "id": 26,
+        "name": "straight left side",
+        "prefabIds": []
+      },
+      {
+        "id": 27,
+        "name": "straight right side",
+        "prefabIds": []
+      },
+      {
+        "id": 28,
+        "name": "very small left curve inner",
+        "prefabIds": []
+      },
+      {
+        "id": 29,
+        "name": "very small left curve outer",
+        "prefabIds": []
+      },
+      {
+        "id": 30,
+        "name": "very small right curve outer",
+        "prefabIds": []
+      },
+      {
+        "id": 31,
+        "name": "very small right curve inner",
+        "prefabIds": []
+      },
+      {
+        "id": 32,
+        "name": "s bend left to right",
+        "prefabIds": []
+      },
+      {
+        "id": 33,
+        "name": "s bend right to left",
+        "prefabIds": []
+      },
+      {
+        "id": 34,
+        "name": "left side steep up",
+        "prefabIds": []
+      },
+      {
+        "id": 35,
+        "name": "right side steep up",
+        "prefabIds": []
+      },
+      {
+        "id": 36,
+        "name": "left side steep down",
+        "prefabIds": []
+      },
+      {
+        "id": 37,
+        "name": "right side steep down",
+        "prefabIds": []
+      },
+      {
+        "id": 38,
+        "name": "s bend single to left",
+        "prefabIds": []
+      },
+      {
+        "id": 39,
+        "name": "s bend single to right",
+        "prefabIds": []
+      },
+      {
+        "id": 40,
+        "name": "s bend left to single",
+        "prefabIds": []
+      },
+      {
+        "id": 41,
+        "name": "s bend right to single",
+        "prefabIds": []
+      },
+      {
+        "id": 42,
+        "name": "clockwise turnaround",
+        "prefabIds": []
+      },
+      {
+        "id": 43,
+        "name": "anticlockwise turnaround",
+        "prefabIds": []
+      }
+    ],
+    "ExtendedRailPieceType": [
+      {
+        "id": "LONG_RADIUS_CURVE",
+        "name": "long radius curve",
+        "prefabIds": []
+      },
+      {
+        "id": "CUSTOM_RADIUS_CURVE",
+        "name": "custom radius curve",
+        "prefabIds": []
+      },
+      {
+        "id": "EASEMENT_CURVE",
+        "name": "easement curve",
+        "prefabIds": []
+      },
+      {
+        "id": "CONTINUOUS_S_CURVE",
+        "name": "continuous s curve",
+        "prefabIds": []
+      },
+      {
+        "id": "FULL_TILE_GRADE_CURVE",
+        "name": "full tile grade curve",
+        "prefabIds": []
+      },
+      {
+        "id": "QUARTER_LENGTH_VISUAL",
+        "name": "quarter length visual",
+        "prefabIds": []
+      },
+      {
+        "id": "HALF_LENGTH_VISUAL",
+        "name": "half length visual",
+        "prefabIds": []
+      },
+      {
+        "id": "END_CAP",
+        "name": "end cap",
+        "prefabIds": []
+      },
+      {
+        "id": "BUFFER_END",
+        "name": "buffer end",
+        "prefabIds": []
+      },
+      {
+        "id": "LEFT_TURNOUT",
+        "name": "left turnout",
+        "prefabIds": []
+      },
+      {
+        "id": "RIGHT_TURNOUT",
+        "name": "right turnout",
+        "prefabIds": []
+      },
+      {
+        "id": "CROSSOVER",
+        "name": "crossover",
+        "prefabIds": []
+      },
+      {
+        "id": "DOUBLE_CROSSOVER",
+        "name": "double crossover",
+        "prefabIds": []
+      },
+      {
+        "id": "DIAMOND_CROSSING",
+        "name": "diamond crossing",
+        "prefabIds": []
+      },
+      {
+        "id": "SINGLE_SLIP",
+        "name": "single slip",
+        "prefabIds": []
+      },
+      {
+        "id": "DOUBLE_SLIP",
+        "name": "double slip",
+        "prefabIds": []
+      },
+      {
+        "id": "THREE_WAY_POINT",
+        "name": "three way point",
+        "prefabIds": []
+      },
+      {
+        "id": "TRAP_POINT",
+        "name": "trap point",
+        "prefabIds": []
+      },
+      {
+        "id": "YARD_LADDER",
+        "name": "yard ladder",
+        "prefabIds": []
+      },
+      {
+        "id": "PARALLEL_TRACK",
+        "name": "parallel track",
+        "prefabIds": []
+      },
+      {
+        "id": "TRANSITION_TRACK",
+        "name": "transition track",
+        "prefabIds": []
+      },
+      {
+        "id": "EMBEDDED_TRAM_TRACK",
+        "name": "embedded tram track",
+        "prefabIds": []
+      }
+    ],
+    "RailTrackType": [
+      {
+        "id": "MAINLINE",
+        "name": "mainline",
+        "prefabIds": []
+      },
+      {
+        "id": "SECONDARY_LINE",
+        "name": "secondary line",
+        "prefabIds": []
+      },
+      {
+        "id": "BRANCH_LINE",
+        "name": "branch line",
+        "prefabIds": []
+      },
+      {
+        "id": "HERITAGE_LINE",
+        "name": "heritage line",
+        "prefabIds": []
+      },
+      {
+        "id": "TRAMWAY",
+        "name": "tramway",
+        "prefabIds": []
+      },
+      {
+        "id": "DEPOT_TRACK",
+        "name": "depot track",
+        "prefabIds": []
+      },
+      {
+        "id": "SIDING",
+        "name": "siding",
+        "prefabIds": []
+      },
+      {
+        "id": "YARD_TRACK",
+        "name": "yard track",
+        "prefabIds": []
+      },
+      {
+        "id": "PLATFORM_TRACK",
+        "name": "platform track",
+        "prefabIds": []
+      },
+      {
+        "id": "BAY_TRACK",
+        "name": "bay track",
+        "prefabIds": []
+      },
+      {
+        "id": "THROUGH_TRACK",
+        "name": "through track",
+        "prefabIds": []
+      },
+      {
+        "id": "MAINTENANCE_TRACK",
+        "name": "maintenance track",
+        "prefabIds": []
+      },
+      {
+        "id": "ABANDONED_TRACK",
+        "name": "abandoned track",
+        "prefabIds": []
+      },
+      {
+        "id": "DISUSED_TRACK",
+        "name": "disused track",
+        "prefabIds": []
+      }
+    ],
+    "RailComponentType": [
+      {
+        "id": "RAIL_HEAD",
+        "name": "rail head",
+        "prefabIds": []
+      },
+      {
+        "id": "RAIL_WEB",
+        "name": "rail web",
+        "prefabIds": []
+      },
+      {
+        "id": "RAIL_FOOT",
+        "name": "rail foot",
+        "prefabIds": []
+      },
+      {
+        "id": "WOODEN_SLEEPER",
+        "name": "wooden sleeper",
+        "prefabIds": []
+      },
+      {
+        "id": "CONCRETE_SLEEPER",
+        "name": "concrete sleeper",
+        "prefabIds": []
+      },
+      {
+        "id": "STEEL_SLEEPER",
+        "name": "steel sleeper",
+        "prefabIds": []
+      },
+      {
+        "id": "CHAIR",
+        "name": "chair",
+        "prefabIds": []
+      },
+      {
+        "id": "FASTENING",
+        "name": "fastening",
+        "prefabIds": []
+      },
+      {
+        "id": "BASEPLATE",
+        "name": "baseplate",
+        "prefabIds": []
+      },
+      {
+        "id": "BALLAST",
+        "name": "ballast",
+        "prefabIds": []
+      },
+      {
+        "id": "FORMATION",
+        "name": "formation",
+        "prefabIds": []
+      },
+      {
+        "id": "CHECK_RAIL",
+        "name": "check rail",
+        "prefabIds": []
+      },
+      {
+        "id": "SWITCH_BLADE",
+        "name": "switch blade",
+        "prefabIds": []
+      },
+      {
+        "id": "FROG",
+        "name": "frog",
+        "prefabIds": []
+      },
+      {
+        "id": "POINT_MOTOR",
+        "name": "point motor",
+        "prefabIds": []
+      },
+      {
+        "id": "BUFFER_STOP",
+        "name": "buffer stop",
+        "prefabIds": []
+      },
+      {
+        "id": "RAIL_JOINT",
+        "name": "rail joint",
+        "prefabIds": []
+      },
+      {
+        "id": "EXPANSION_JOINT",
+        "name": "expansion joint",
+        "prefabIds": []
+      },
+      {
+        "id": "DRAINAGE",
+        "name": "drainage",
+        "prefabIds": []
+      },
+      {
+        "id": "CABLE_TROUGH",
+        "name": "cable trough",
+        "prefabIds": []
+      }
+    ],
+    "JunctionType": [
+      {
+        "id": "NONE",
+        "name": "none",
+        "prefabIds": []
+      },
+      {
+        "id": "SIMPLE_LEFT_TURNOUT",
+        "name": "simple left turnout",
+        "prefabIds": []
+      },
+      {
+        "id": "SIMPLE_RIGHT_TURNOUT",
+        "name": "simple right turnout",
+        "prefabIds": []
+      },
+      {
+        "id": "FACING_TURNOUT",
+        "name": "facing turnout",
+        "prefabIds": []
+      },
+      {
+        "id": "TRAILING_TURNOUT",
+        "name": "trailing turnout",
+        "prefabIds": []
+      },
+      {
+        "id": "CROSSOVER",
+        "name": "crossover",
+        "prefabIds": []
+      },
+      {
+        "id": "DOUBLE_CROSSOVER",
+        "name": "double crossover",
+        "prefabIds": []
+      },
+      {
+        "id": "DIAMOND",
+        "name": "diamond",
+        "prefabIds": []
+      },
+      {
+        "id": "SINGLE_SLIP",
+        "name": "single slip",
+        "prefabIds": []
+      },
+      {
+        "id": "DOUBLE_SLIP",
+        "name": "double slip",
+        "prefabIds": []
+      },
+      {
+        "id": "THREE_WAY",
+        "name": "three way",
+        "prefabIds": []
+      },
+      {
+        "id": "BRANCH_JUNCTION",
+        "name": "branch junction",
+        "prefabIds": []
+      },
+      {
+        "id": "DEPOT_FAN",
+        "name": "depot fan",
+        "prefabIds": []
+      },
+      {
+        "id": "YARD_LADDER",
+        "name": "yard ladder",
+        "prefabIds": []
+      },
+      {
+        "id": "PARALLEL_ROUTE_CROSSING",
+        "name": "parallel route crossing",
+        "prefabIds": []
+      },
+      {
+        "id": "GRADE_SEPARATED_CROSSING",
+        "name": "grade separated crossing",
+        "prefabIds": []
+      }
+    ],
+    "RailElectrificationType": [
+      {
+        "id": "NONE",
+        "name": "none",
+        "prefabIds": []
+      },
+      {
+        "id": "OVERHEAD_CATENARY",
+        "name": "overhead catenary",
+        "prefabIds": []
+      },
+      {
+        "id": "TRAM_OVERHEAD",
+        "name": "tram overhead",
+        "prefabIds": []
+      },
+      {
+        "id": "THIRD_RAIL",
+        "name": "third rail",
+        "prefabIds": []
+      },
+      {
+        "id": "DISUSED_ELECTRIFICATION",
+        "name": "disused electrification",
+        "prefabIds": []
+      }
+    ],
+    "RailSignalType": [
+      {
+        "id": "COLOUR_LIGHT_TWO_ASPECT",
+        "name": "colour light two aspect",
+        "prefabIds": []
+      },
+      {
+        "id": "COLOUR_LIGHT_THREE_ASPECT",
+        "name": "colour light three aspect",
+        "prefabIds": []
+      },
+      {
+        "id": "COLOUR_LIGHT_FOUR_ASPECT",
+        "name": "colour light four aspect",
+        "prefabIds": []
+      },
+      {
+        "id": "GROUND_POSITION_LIGHT",
+        "name": "ground position light",
+        "prefabIds": []
+      },
+      {
+        "id": "SHUNT_SIGNAL",
+        "name": "shunt signal",
+        "prefabIds": []
+      },
+      {
+        "id": "ROUTE_INDICATOR",
+        "name": "route indicator",
+        "prefabIds": []
+      },
+      {
+        "id": "SIGNAL_GANTRY",
+        "name": "signal gantry",
+        "prefabIds": []
+      },
+      {
+        "id": "SIGNAL_BRACKET",
+        "name": "signal bracket",
+        "prefabIds": []
+      },
+      {
+        "id": "HERITAGE_SEMAPHORE",
+        "name": "heritage semaphore",
+        "prefabIds": []
+      },
+      {
+        "id": "BUFFER_STOP_MARKER",
+        "name": "buffer stop marker",
+        "prefabIds": []
+      },
+      {
+        "id": "SPEED_SIGN",
+        "name": "speed sign",
+        "prefabIds": []
+      },
+      {
+        "id": "AWS_EQUIPMENT",
+        "name": "aws equipment",
+        "prefabIds": []
+      },
+      {
+        "id": "TPWS_EQUIPMENT",
+        "name": "tpws equipment",
+        "prefabIds": []
+      }
+    ],
+    "RoadPieceId": [
+      {
+        "id": 0,
+        "name": "straight",
+        "prefabIds": [
+          "road/local/straight"
+        ]
+      },
+      {
+        "id": 1,
+        "name": "very small left curve",
+        "prefabIds": []
+      },
+      {
+        "id": 2,
+        "name": "very small right curve",
+        "prefabIds": []
+      },
+      {
+        "id": 3,
+        "name": "small left curve",
+        "prefabIds": []
+      },
+      {
+        "id": 4,
+        "name": "small right curve",
+        "prefabIds": []
+      },
+      {
+        "id": 5,
+        "name": "straight slope up",
+        "prefabIds": []
+      },
+      {
+        "id": 6,
+        "name": "straight slope down",
+        "prefabIds": []
+      },
+      {
+        "id": 7,
+        "name": "straight steep slope up",
+        "prefabIds": []
+      },
+      {
+        "id": 8,
+        "name": "straight steep slope down",
+        "prefabIds": []
+      },
+      {
+        "id": 9,
+        "name": "turnaround",
+        "prefabIds": []
+      }
+    ],
+    "ExtendedRoadPieceType": [
+      {
+        "id": "CUSTOM_RADIUS_CURVE",
+        "name": "custom radius curve",
+        "prefabIds": []
+      },
+      {
+        "id": "LONG_CURVE",
+        "name": "long curve",
+        "prefabIds": []
+      },
+      {
+        "id": "TRANSITION_CURVE",
+        "name": "transition curve",
+        "prefabIds": []
+      },
+      {
+        "id": "FULL_TILE_GRADE_CURVE",
+        "name": "full tile grade curve",
+        "prefabIds": []
+      },
+      {
+        "id": "T_JUNCTION",
+        "name": "t junction",
+        "prefabIds": []
+      },
+      {
+        "id": "CROSSROADS",
+        "name": "crossroads",
+        "prefabIds": []
+      },
+      {
+        "id": "STAGGERED_JUNCTION",
+        "name": "staggered junction",
+        "prefabIds": []
+      },
+      {
+        "id": "ROUNDABOUT",
+        "name": "roundabout",
+        "prefabIds": []
+      },
+      {
+        "id": "SLIP_ROAD",
+        "name": "slip road",
+        "prefabIds": []
+      },
+      {
+        "id": "BUS_BAY",
+        "name": "bus bay",
+        "prefabIds": []
+      },
+      {
+        "id": "PARKING_ENTRANCE",
+        "name": "parking entrance",
+        "prefabIds": []
+      },
+      {
+        "id": "CUL_DE_SAC",
+        "name": "cul de sac",
+        "prefabIds": []
+      },
+      {
+        "id": "DEAD_END",
+        "name": "dead end",
+        "prefabIds": []
+      },
+      {
+        "id": "ROAD_BRIDGE",
+        "name": "road bridge",
+        "prefabIds": []
+      },
+      {
+        "id": "ROAD_TUNNEL",
+        "name": "road tunnel",
+        "prefabIds": []
+      },
+      {
+        "id": "LEVEL_CROSSING",
+        "name": "level crossing",
+        "prefabIds": []
+      },
+      {
+        "id": "PEDESTRIAN_CROSSING",
+        "name": "pedestrian crossing",
+        "prefabIds": []
+      }
+    ],
+    "RoadClass": [
+      {
+        "id": "MOTORWAY",
+        "name": "motorway",
+        "prefabIds": []
+      },
+      {
+        "id": "MOTORWAY_LINK",
+        "name": "motorway link",
+        "prefabIds": []
+      },
+      {
+        "id": "TRUNK",
+        "name": "trunk",
+        "prefabIds": []
+      },
+      {
+        "id": "TRUNK_LINK",
+        "name": "trunk link",
+        "prefabIds": []
+      },
+      {
+        "id": "PRIMARY",
+        "name": "primary",
+        "prefabIds": []
+      },
+      {
+        "id": "PRIMARY_LINK",
+        "name": "primary link",
+        "prefabIds": []
+      },
+      {
+        "id": "SECONDARY",
+        "name": "secondary",
+        "prefabIds": []
+      },
+      {
+        "id": "SECONDARY_LINK",
+        "name": "secondary link",
+        "prefabIds": []
+      },
+      {
+        "id": "TERTIARY",
+        "name": "tertiary",
+        "prefabIds": []
+      },
+      {
+        "id": "TERTIARY_LINK",
+        "name": "tertiary link",
+        "prefabIds": []
+      },
+      {
+        "id": "UNCLASSIFIED",
+        "name": "unclassified",
+        "prefabIds": []
+      },
+      {
+        "id": "RESIDENTIAL",
+        "name": "residential",
+        "prefabIds": []
+      },
+      {
+        "id": "LIVING_STREET",
+        "name": "living street",
+        "prefabIds": []
+      },
+      {
+        "id": "SERVICE",
+        "name": "service",
+        "prefabIds": []
+      },
+      {
+        "id": "INDUSTRIAL_ACCESS",
+        "name": "industrial access",
+        "prefabIds": []
+      },
+      {
+        "id": "PRIVATE_ACCESS",
+        "name": "private access",
+        "prefabIds": []
+      },
+      {
+        "id": "PEDESTRIAN",
+        "name": "pedestrian",
+        "prefabIds": []
+      },
+      {
+        "id": "FOOTWAY",
+        "name": "footway",
+        "prefabIds": []
+      },
+      {
+        "id": "PATH",
+        "name": "path",
+        "prefabIds": []
+      },
+      {
+        "id": "STEPS",
+        "name": "steps",
+        "prefabIds": []
+      },
+      {
+        "id": "CYCLEWAY",
+        "name": "cycleway",
+        "prefabIds": []
+      },
+      {
+        "id": "BUSWAY",
+        "name": "busway",
+        "prefabIds": []
+      },
+      {
+        "id": "CONSTRUCTION",
+        "name": "construction",
+        "prefabIds": []
+      },
+      {
+        "id": "DISUSED",
+        "name": "disused",
+        "prefabIds": []
+      }
+    ],
+    "RoadSurfaceType": [
+      {
+        "id": "ASPHALT",
+        "name": "asphalt",
+        "prefabIds": []
+      },
+      {
+        "id": "CONCRETE",
+        "name": "concrete",
+        "prefabIds": []
+      },
+      {
+        "id": "COBBLES",
+        "name": "cobbles",
+        "prefabIds": []
+      },
+      {
+        "id": "BLOCK_PAVING",
+        "name": "block paving",
+        "prefabIds": []
+      },
+      {
+        "id": "GRAVEL",
+        "name": "gravel",
+        "prefabIds": []
+      },
+      {
+        "id": "COMPACTED_EARTH",
+        "name": "compacted earth",
+        "prefabIds": []
+      },
+      {
+        "id": "STONE",
+        "name": "stone",
+        "prefabIds": []
+      },
+      {
+        "id": "BRIDGE_SURFACE",
+        "name": "bridge surface",
+        "prefabIds": []
+      },
+      {
+        "id": "LEVEL_CROSSING_PANEL",
+        "name": "level crossing panel",
+        "prefabIds": []
+      },
+      {
+        "id": "PEDESTRIAN_PAVING",
+        "name": "pedestrian paving",
+        "prefabIds": []
+      },
+      {
+        "id": "CYCLE_SURFACE",
+        "name": "cycle surface",
+        "prefabIds": []
+      }
+    ],
+    "RoadJunctionType": [
+      {
+        "id": "NONE",
+        "name": "none",
+        "prefabIds": []
+      },
+      {
+        "id": "T_JUNCTION",
+        "name": "t junction",
+        "prefabIds": []
+      },
+      {
+        "id": "CROSSROADS",
+        "name": "crossroads",
+        "prefabIds": []
+      },
+      {
+        "id": "STAGGERED",
+        "name": "staggered",
+        "prefabIds": []
+      },
+      {
+        "id": "ROUNDABOUT",
+        "name": "roundabout",
+        "prefabIds": []
+      },
+      {
+        "id": "MINI_ROUNDABOUT",
+        "name": "mini roundabout",
+        "prefabIds": []
+      },
+      {
+        "id": "PRIORITY_JUNCTION",
+        "name": "priority junction",
+        "prefabIds": []
+      },
+      {
+        "id": "SIGNAL_CONTROLLED",
+        "name": "signal controlled",
+        "prefabIds": []
+      },
+      {
+        "id": "GIVE_WAY",
+        "name": "give way",
+        "prefabIds": []
+      },
+      {
+        "id": "STOP_CONTROLLED",
+        "name": "stop controlled",
+        "prefabIds": []
+      },
+      {
+        "id": "ONE_WAY_MERGE",
+        "name": "one way merge",
+        "prefabIds": []
+      },
+      {
+        "id": "DIVERGE",
+        "name": "diverge",
+        "prefabIds": []
+      }
+    ],
+    "RoadCrossingType": [
+      {
+        "id": "NONE",
+        "name": "none",
+        "prefabIds": []
+      },
+      {
+        "id": "ZEBRA",
+        "name": "zebra",
+        "prefabIds": []
+      },
+      {
+        "id": "SIGNALISED_PEDESTRIAN",
+        "name": "signalised pedestrian",
+        "prefabIds": []
+      },
+      {
+        "id": "REFUGE_ISLAND",
+        "name": "refuge island",
+        "prefabIds": []
+      },
+      {
+        "id": "RAIL_LEVEL_CROSSING",
+        "name": "rail level crossing",
+        "prefabIds": []
+      },
+      {
+        "id": "TRAM_LEVEL_CROSSING",
+        "name": "tram level crossing",
+        "prefabIds": []
+      },
+      {
+        "id": "FOOTWAY_CROSSING",
+        "name": "footway crossing",
+        "prefabIds": []
+      },
+      {
+        "id": "CYCLE_CROSSING",
+        "name": "cycle crossing",
+        "prefabIds": []
+      }
+    ],
+    "RoadFurnitureType": [
+      {
+        "id": "TRAFFIC_LIGHT",
+        "name": "traffic light",
+        "prefabIds": []
+      },
+      {
+        "id": "PEDESTRIAN_SIGNAL",
+        "name": "pedestrian signal",
+        "prefabIds": []
+      },
+      {
+        "id": "ROAD_SIGN",
+        "name": "road sign",
+        "prefabIds": []
+      },
+      {
+        "id": "SPEED_LIMIT_SIGN",
+        "name": "speed limit sign",
+        "prefabIds": []
+      },
+      {
+        "id": "STREETLIGHT",
+        "name": "streetlight",
+        "prefabIds": []
+      },
+      {
+        "id": "BOLLARD",
+        "name": "bollard",
+        "prefabIds": []
+      },
+      {
+        "id": "GUARDRAIL",
+        "name": "guardrail",
+        "prefabIds": []
+      },
+      {
+        "id": "CRASH_BARRIER",
+        "name": "crash barrier",
+        "prefabIds": []
+      },
+      {
+        "id": "BUS_STOP",
+        "name": "bus stop",
+        "prefabIds": []
+      },
+      {
+        "id": "BUS_SHELTER",
+        "name": "bus shelter",
+        "prefabIds": []
+      },
+      {
+        "id": "BENCH",
+        "name": "bench",
+        "prefabIds": []
+      },
+      {
+        "id": "BIN",
+        "name": "bin",
+        "prefabIds": []
+      },
+      {
+        "id": "PARKING_METER",
+        "name": "parking meter",
+        "prefabIds": []
+      },
+      {
+        "id": "ROAD_DRAIN",
+        "name": "road drain",
+        "prefabIds": []
+      },
+      {
+        "id": "MANHOLE",
+        "name": "manhole",
+        "prefabIds": []
+      },
+      {
+        "id": "UTILITY_CABINET",
+        "name": "utility cabinet",
+        "prefabIds": []
+      }
+    ],
+    "StructureType": [
+      {
+        "id": "ROAD_BRIDGE",
+        "name": "road bridge",
+        "prefabIds": []
+      },
+      {
+        "id": "RAIL_BRIDGE",
+        "name": "rail bridge",
+        "prefabIds": []
+      },
+      {
+        "id": "TRAM_BRIDGE",
+        "name": "tram bridge",
+        "prefabIds": []
+      },
+      {
+        "id": "FOOTBRIDGE",
+        "name": "footbridge",
+        "prefabIds": []
+      },
+      {
+        "id": "VIADUCT",
+        "name": "viaduct",
+        "prefabIds": []
+      },
+      {
+        "id": "TUNNEL",
+        "name": "tunnel",
+        "prefabIds": []
+      },
+      {
+        "id": "UNDERPASS",
+        "name": "underpass",
+        "prefabIds": []
+      },
+      {
+        "id": "CULVERT",
+        "name": "culvert",
+        "prefabIds": []
+      },
+      {
+        "id": "RETAINING_WALL",
+        "name": "retaining wall",
+        "prefabIds": []
+      },
+      {
+        "id": "EMBANKMENT",
+        "name": "embankment",
+        "prefabIds": []
+      },
+      {
+        "id": "CUTTING",
+        "name": "cutting",
+        "prefabIds": []
+      },
+      {
+        "id": "PLATFORM_WALL",
+        "name": "platform wall",
+        "prefabIds": []
+      },
+      {
+        "id": "FOUNDATION",
+        "name": "foundation",
+        "prefabIds": []
+      },
+      {
+        "id": "STAIRS",
+        "name": "stairs",
+        "prefabIds": []
+      },
+      {
+        "id": "RAMP",
+        "name": "ramp",
+        "prefabIds": []
+      },
+      {
+        "id": "LIFT_SHAFT",
+        "name": "lift shaft",
+        "prefabIds": []
+      },
+      {
+        "id": "CANOPY",
+        "name": "canopy",
+        "prefabIds": []
+      },
+      {
+        "id": "DEPOT_STRUCTURE",
+        "name": "depot structure",
+        "prefabIds": []
+      }
+    ],
+    "BridgeType": [
+      {
+        "id": "MASONRY_ARCH",
+        "name": "masonry arch",
+        "prefabIds": []
+      },
+      {
+        "id": "BRICK_ARCH",
+        "name": "brick arch",
+        "prefabIds": []
+      },
+      {
+        "id": "STONE_ARCH",
+        "name": "stone arch",
+        "prefabIds": []
+      },
+      {
+        "id": "SKEW_ARCH",
+        "name": "skew arch",
+        "prefabIds": []
+      },
+      {
+        "id": "STEEL_PLATE_GIRDER",
+        "name": "steel plate girder",
+        "prefabIds": []
+      },
+      {
+        "id": "STEEL_BEAM",
+        "name": "steel beam",
+        "prefabIds": []
+      },
+      {
+        "id": "STEEL_TRUSS",
+        "name": "steel truss",
+        "prefabIds": []
+      },
+      {
+        "id": "CONCRETE_BEAM",
+        "name": "concrete beam",
+        "prefabIds": []
+      },
+      {
+        "id": "CONCRETE_SLAB",
+        "name": "concrete slab",
+        "prefabIds": []
+      },
+      {
+        "id": "CONCRETE_BOX",
+        "name": "concrete box",
+        "prefabIds": []
+      },
+      {
+        "id": "RAILWAY_VIADUCT",
+        "name": "railway viaduct",
+        "prefabIds": []
+      },
+      {
+        "id": "ROAD_VIADUCT",
+        "name": "road viaduct",
+        "prefabIds": []
+      },
+      {
+        "id": "PEDESTRIAN_FOOTBRIDGE",
+        "name": "pedestrian footbridge",
+        "prefabIds": []
+      },
+      {
+        "id": "COVERED_FOOTBRIDGE",
+        "name": "covered footbridge",
+        "prefabIds": []
+      },
+      {
+        "id": "UNDERBRIDGE",
+        "name": "underbridge",
+        "prefabIds": []
+      },
+      {
+        "id": "OVERBRIDGE",
+        "name": "overbridge",
+        "prefabIds": []
+      },
+      {
+        "id": "CANAL_BRIDGE",
+        "name": "canal bridge",
+        "prefabIds": []
+      }
+    ],
+    "BridgeComponentType": [
+      {
+        "id": "DECK",
+        "name": "deck",
+        "prefabIds": []
+      },
+      {
+        "id": "SOFFIT",
+        "name": "soffit",
+        "prefabIds": []
+      },
+      {
+        "id": "ARCH_BARREL",
+        "name": "arch barrel",
+        "prefabIds": []
+      },
+      {
+        "id": "ARCH_RING",
+        "name": "arch ring",
+        "prefabIds": []
+      },
+      {
+        "id": "SPANDREL",
+        "name": "spandrel",
+        "prefabIds": []
+      },
+      {
+        "id": "GIRDER",
+        "name": "girder",
+        "prefabIds": []
+      },
+      {
+        "id": "CROSS_BEAM",
+        "name": "cross beam",
+        "prefabIds": []
+      },
+      {
+        "id": "TRUSS",
+        "name": "truss",
+        "prefabIds": []
+      },
+      {
+        "id": "BRACING",
+        "name": "bracing",
+        "prefabIds": []
+      },
+      {
+        "id": "PIER",
+        "name": "pier",
+        "prefabIds": []
+      },
+      {
+        "id": "COLUMN",
+        "name": "column",
+        "prefabIds": []
+      },
+      {
+        "id": "ABUTMENT",
+        "name": "abutment",
+        "prefabIds": []
+      },
+      {
+        "id": "BUTTRESS",
+        "name": "buttress",
+        "prefabIds": []
+      },
+      {
+        "id": "WING_WALL",
+        "name": "wing wall",
+        "prefabIds": []
+      },
+      {
+        "id": "BEARING",
+        "name": "bearing",
+        "prefabIds": []
+      },
+      {
+        "id": "BEARING_SEAT",
+        "name": "bearing seat",
+        "prefabIds": []
+      },
+      {
+        "id": "PARAPET",
+        "name": "parapet",
+        "prefabIds": []
+      },
+      {
+        "id": "COPING",
+        "name": "coping",
+        "prefabIds": []
+      },
+      {
+        "id": "HANDRAIL",
+        "name": "handrail",
+        "prefabIds": []
+      },
+      {
+        "id": "GUARDRAIL",
+        "name": "guardrail",
+        "prefabIds": []
+      },
+      {
+        "id": "FOUNDATION",
+        "name": "foundation",
+        "prefabIds": []
+      },
+      {
+        "id": "PILE",
+        "name": "pile",
+        "prefabIds": []
+      },
+      {
+        "id": "EXPANSION_JOINT",
+        "name": "expansion joint",
+        "prefabIds": []
+      },
+      {
+        "id": "DRAINAGE",
+        "name": "drainage",
+        "prefabIds": []
+      },
+      {
+        "id": "APPROACH_FILL",
+        "name": "approach fill",
+        "prefabIds": []
+      },
+      {
+        "id": "RETAINING_FACE",
+        "name": "retaining face",
+        "prefabIds": []
+      }
+    ],
+    "TunnelType": [
+      {
+        "id": "MASONRY_BORE",
+        "name": "masonry bore",
+        "prefabIds": []
+      },
+      {
+        "id": "BRICK_LINED_BORE",
+        "name": "brick lined bore",
+        "prefabIds": []
+      },
+      {
+        "id": "CONCRETE_BORE",
+        "name": "concrete bore",
+        "prefabIds": []
+      },
+      {
+        "id": "CUT_AND_COVER",
+        "name": "cut and cover",
+        "prefabIds": []
+      },
+      {
+        "id": "ROCK_TUNNEL",
+        "name": "rock tunnel",
+        "prefabIds": []
+      },
+      {
+        "id": "TRAM_TUNNEL",
+        "name": "tram tunnel",
+        "prefabIds": []
+      },
+      {
+        "id": "RAILWAY_TUNNEL",
+        "name": "railway tunnel",
+        "prefabIds": []
+      },
+      {
+        "id": "ROAD_TUNNEL",
+        "name": "road tunnel",
+        "prefabIds": []
+      },
+      {
+        "id": "PEDESTRIAN_SUBWAY",
+        "name": "pedestrian subway",
+        "prefabIds": []
+      },
+      {
+        "id": "COVERED_WAY",
+        "name": "covered way",
+        "prefabIds": []
+      }
+    ],
+    "TunnelComponentType": [
+      {
+        "id": "PORTAL",
+        "name": "portal",
+        "prefabIds": []
+      },
+      {
+        "id": "PORTAL_ARCH",
+        "name": "portal arch",
+        "prefabIds": []
+      },
+      {
+        "id": "WING_WALL",
+        "name": "wing wall",
+        "prefabIds": []
+      },
+      {
+        "id": "LINING",
+        "name": "lining",
+        "prefabIds": []
+      },
+      {
+        "id": "ROOF",
+        "name": "roof",
+        "prefabIds": []
+      },
+      {
+        "id": "FLOOR",
+        "name": "floor",
+        "prefabIds": []
+      },
+      {
+        "id": "SIDE_WALL",
+        "name": "side wall",
+        "prefabIds": []
+      },
+      {
+        "id": "REFUGE",
+        "name": "refuge",
+        "prefabIds": []
+      },
+      {
+        "id": "DRAINAGE",
+        "name": "drainage",
+        "prefabIds": []
+      },
+      {
+        "id": "SERVICE_CHANNEL",
+        "name": "service channel",
+        "prefabIds": []
+      },
+      {
+        "id": "VENT",
+        "name": "vent",
+        "prefabIds": []
+      },
+      {
+        "id": "LIGHTING",
+        "name": "lighting",
+        "prefabIds": []
+      },
+      {
+        "id": "RETAINING_TRANSITION",
+        "name": "retaining transition",
+        "prefabIds": []
+      }
+    ],
+    "WallType": [
+      {
+        "id": "BRICK_WALL",
+        "name": "brick wall",
+        "prefabIds": []
+      },
+      {
+        "id": "STONE_WALL",
+        "name": "stone wall",
+        "prefabIds": []
+      },
+      {
+        "id": "CONCRETE_WALL",
+        "name": "concrete wall",
+        "prefabIds": []
+      },
+      {
+        "id": "RETAINING_WALL",
+        "name": "retaining wall",
+        "prefabIds": []
+      },
+      {
+        "id": "GARDEN_WALL",
+        "name": "garden wall",
+        "prefabIds": []
+      },
+      {
+        "id": "PLATFORM_WALL",
+        "name": "platform wall",
+        "prefabIds": []
+      },
+      {
+        "id": "INDUSTRIAL_BOUNDARY_WALL",
+        "name": "industrial boundary wall",
+        "prefabIds": []
+      },
+      {
+        "id": "SOUND_BARRIER",
+        "name": "sound barrier",
+        "prefabIds": []
+      },
+      {
+        "id": "PARAPET",
+        "name": "parapet",
+        "prefabIds": []
+      }
+    ],
+    "BuildingType": [
+      {
+        "id": "RESIDENTIAL",
+        "name": "residential",
+        "prefabIds": []
+      },
+      {
+        "id": "COMMERCIAL",
+        "name": "commercial",
+        "prefabIds": []
+      },
+      {
+        "id": "RETAIL",
+        "name": "retail",
+        "prefabIds": []
+      },
+      {
+        "id": "INDUSTRIAL",
+        "name": "industrial",
+        "prefabIds": []
+      },
+      {
+        "id": "RAILWAY",
+        "name": "railway",
+        "prefabIds": []
+      },
+      {
+        "id": "CIVIC",
+        "name": "civic",
+        "prefabIds": []
+      },
+      {
+        "id": "EDUCATION",
+        "name": "education",
+        "prefabIds": []
+      },
+      {
+        "id": "RELIGIOUS",
+        "name": "religious",
+        "prefabIds": []
+      },
+      {
+        "id": "HEALTHCARE",
+        "name": "healthcare",
+        "prefabIds": []
+      },
+      {
+        "id": "AGRICULTURAL",
+        "name": "agricultural",
+        "prefabIds": []
+      },
+      {
+        "id": "UTILITY",
+        "name": "utility",
+        "prefabIds": []
+      },
+      {
+        "id": "LEISURE",
+        "name": "leisure",
+        "prefabIds": []
+      },
+      {
+        "id": "LANDMARK",
+        "name": "landmark",
+        "prefabIds": []
+      },
+      {
+        "id": "OUTBUILDING",
+        "name": "outbuilding",
+        "prefabIds": []
+      }
+    ],
+    "ResidentialBuildingType": [
+      {
+        "id": "VICTORIAN_TERRACE",
+        "name": "victorian terrace",
+        "prefabIds": []
+      },
+      {
+        "id": "EDWARDIAN_TERRACE",
+        "name": "edwardian terrace",
+        "prefabIds": []
+      },
+      {
+        "id": "WORKERS_COTTAGE",
+        "name": "workers cottage",
+        "prefabIds": []
+      },
+      {
+        "id": "BAY_FRONTED_TERRACE",
+        "name": "bay fronted terrace",
+        "prefabIds": []
+      },
+      {
+        "id": "INTERWAR_SEMI",
+        "name": "interwar semi",
+        "prefabIds": []
+      },
+      {
+        "id": "POSTWAR_SEMI",
+        "name": "postwar semi",
+        "prefabIds": []
+      },
+      {
+        "id": "MODERN_SEMI",
+        "name": "modern semi",
+        "prefabIds": []
+      },
+      {
+        "id": "DETACHED_SUBURBAN",
+        "name": "detached suburban",
+        "prefabIds": []
+      },
+      {
+        "id": "DETACHED_RURAL",
+        "name": "detached rural",
+        "prefabIds": []
+      },
+      {
+        "id": "BRICK_COTTAGE",
+        "name": "brick cottage",
+        "prefabIds": []
+      },
+      {
+        "id": "STONE_COTTAGE",
+        "name": "stone cottage",
+        "prefabIds": []
+      },
+      {
+        "id": "BUNGALOW",
+        "name": "bungalow",
+        "prefabIds": []
+      },
+      {
+        "id": "DORMER_BUNGALOW",
+        "name": "dormer bungalow",
+        "prefabIds": []
+      },
+      {
+        "id": "COUNCIL_TERRACE",
+        "name": "council terrace",
+        "prefabIds": []
+      },
+      {
+        "id": "LOW_RISE_FLATS",
+        "name": "low rise flats",
+        "prefabIds": []
+      },
+      {
+        "id": "MAISONETTE",
+        "name": "maisonette",
+        "prefabIds": []
+      },
+      {
+        "id": "MODERN_APARTMENT",
+        "name": "modern apartment",
+        "prefabIds": []
+      },
+      {
+        "id": "CONVERTED_INDUSTRIAL_FLATS",
+        "name": "converted industrial flats",
+        "prefabIds": []
+      },
+      {
+        "id": "FARMHOUSE",
+        "name": "farmhouse",
+        "prefabIds": []
+      },
+      {
+        "id": "BACK_TO_BACK_HOUSE",
+        "name": "back to back house",
+        "prefabIds": []
+      },
+      {
+        "id": "GARAGE",
+        "name": "garage",
+        "prefabIds": []
+      },
+      {
+        "id": "GARDEN_SHED",
+        "name": "garden shed",
+        "prefabIds": []
+      },
+      {
+        "id": "CONSERVATORY",
+        "name": "conservatory",
+        "prefabIds": []
+      },
+      {
+        "id": "HOUSE_EXTENSION",
+        "name": "house extension",
+        "prefabIds": []
+      }
+    ],
+    "IndustrialBuildingType": [
+      {
+        "id": "VICTORIAN_WAREHOUSE",
+        "name": "victorian warehouse",
+        "prefabIds": []
+      },
+      {
+        "id": "EDWARDIAN_WAREHOUSE",
+        "name": "edwardian warehouse",
+        "prefabIds": []
+      },
+      {
+        "id": "MULTISTOREY_BRICK_FACTORY",
+        "name": "multistorey brick factory",
+        "prefabIds": []
+      },
+      {
+        "id": "ENGINEERING_WORKSHOP",
+        "name": "engineering workshop",
+        "prefabIds": []
+      },
+      {
+        "id": "LIGHT_INDUSTRIAL_UNIT",
+        "name": "light industrial unit",
+        "prefabIds": []
+      },
+      {
+        "id": "RAILWAY_GOODS_SHED",
+        "name": "railway goods shed",
+        "prefabIds": []
+      },
+      {
+        "id": "RAILWAY_GOODS_WAREHOUSE",
+        "name": "railway goods warehouse",
+        "prefabIds": []
+      },
+      {
+        "id": "LOCOMOTIVE_SHED",
+        "name": "locomotive shed",
+        "prefabIds": []
+      },
+      {
+        "id": "DIESEL_DEPOT",
+        "name": "diesel depot",
+        "prefabIds": []
+      },
+      {
+        "id": "CARRIAGE_WORKS",
+        "name": "carriage works",
+        "prefabIds": []
+      },
+      {
+        "id": "WAGON_WORKS",
+        "name": "wagon works",
+        "prefabIds": []
+      },
+      {
+        "id": "SAWTOOTH_FACTORY",
+        "name": "sawtooth factory",
+        "prefabIds": []
+      },
+      {
+        "id": "NORTHLIGHT_FACTORY",
+        "name": "northlight factory",
+        "prefabIds": []
+      },
+      {
+        "id": "PORTAL_FRAME_WAREHOUSE",
+        "name": "portal frame warehouse",
+        "prefabIds": []
+      },
+      {
+        "id": "DISTRIBUTION_WAREHOUSE",
+        "name": "distribution warehouse",
+        "prefabIds": []
+      },
+      {
+        "id": "INDUSTRIAL_OFFICE",
+        "name": "industrial office",
+        "prefabIds": []
+      },
+      {
+        "id": "LOADING_DEPOT",
+        "name": "loading depot",
+        "prefabIds": []
+      },
+      {
+        "id": "INDUSTRIAL_GATEHOUSE",
+        "name": "industrial gatehouse",
+        "prefabIds": []
+      },
+      {
+        "id": "UTILITY_SHED",
+        "name": "utility shed",
+        "prefabIds": []
+      },
+      {
+        "id": "STORAGE_TANK",
+        "name": "storage tank",
+        "prefabIds": []
+      },
+      {
+        "id": "FACTORY_CHIMNEY",
+        "name": "factory chimney",
+        "prefabIds": []
+      },
+      {
+        "id": "SERVICE_YARD",
+        "name": "service yard",
+        "prefabIds": []
+      }
+    ],
+    "CommercialBuildingType": [
+      {
+        "id": "HIGH_STREET_SHOP",
+        "name": "high street shop",
+        "prefabIds": []
+      },
+      {
+        "id": "CORNER_SHOP",
+        "name": "corner shop",
+        "prefabIds": []
+      },
+      {
+        "id": "RETAIL_ROW",
+        "name": "retail row",
+        "prefabIds": []
+      },
+      {
+        "id": "SUPERMARKET",
+        "name": "supermarket",
+        "prefabIds": []
+      },
+      {
+        "id": "PUB",
+        "name": "pub",
+        "prefabIds": []
+      },
+      {
+        "id": "OFFICE",
+        "name": "office",
+        "prefabIds": []
+      },
+      {
+        "id": "BANK",
+        "name": "bank",
+        "prefabIds": []
+      },
+      {
+        "id": "HOTEL",
+        "name": "hotel",
+        "prefabIds": []
+      },
+      {
+        "id": "GARAGE",
+        "name": "garage",
+        "prefabIds": []
+      },
+      {
+        "id": "PETROL_STATION",
+        "name": "petrol station",
+        "prefabIds": []
+      },
+      {
+        "id": "RETAIL_PARK_UNIT",
+        "name": "retail park unit",
+        "prefabIds": []
+      },
+      {
+        "id": "MULTISTOREY_CAR_PARK",
+        "name": "multistorey car park",
+        "prefabIds": []
+      }
+    ],
+    "PublicBuildingType": [
+      {
+        "id": "SCHOOL",
+        "name": "school",
+        "prefabIds": []
+      },
+      {
+        "id": "COLLEGE",
+        "name": "college",
+        "prefabIds": []
+      },
+      {
+        "id": "UNIVERSITY",
+        "name": "university",
+        "prefabIds": []
+      },
+      {
+        "id": "LIBRARY",
+        "name": "library",
+        "prefabIds": []
+      },
+      {
+        "id": "CHURCH",
+        "name": "church",
+        "prefabIds": []
+      },
+      {
+        "id": "CHAPEL",
+        "name": "chapel",
+        "prefabIds": []
+      },
+      {
+        "id": "HOSPITAL",
+        "name": "hospital",
+        "prefabIds": []
+      },
+      {
+        "id": "HEALTH_CENTRE",
+        "name": "health centre",
+        "prefabIds": []
+      },
+      {
+        "id": "COMMUNITY_CENTRE",
+        "name": "community centre",
+        "prefabIds": []
+      },
+      {
+        "id": "SPORTS_FACILITY",
+        "name": "sports facility",
+        "prefabIds": []
+      },
+      {
+        "id": "CIVIC_BUILDING",
+        "name": "civic building",
+        "prefabIds": []
+      },
+      {
+        "id": "BUS_STATION",
+        "name": "bus station",
+        "prefabIds": []
+      }
+    ],
+    "BuildingRoofType": [
+      {
+        "id": "FLAT",
+        "name": "flat",
+        "prefabIds": []
+      },
+      {
+        "id": "GABLE",
+        "name": "gable",
+        "prefabIds": []
+      },
+      {
+        "id": "HIP",
+        "name": "hip",
+        "prefabIds": []
+      },
+      {
+        "id": "HALF_HIP",
+        "name": "half hip",
+        "prefabIds": []
+      },
+      {
+        "id": "DORMER",
+        "name": "dormer",
+        "prefabIds": []
+      },
+      {
+        "id": "MANSARD",
+        "name": "mansard",
+        "prefabIds": []
+      },
+      {
+        "id": "MONOPITCH",
+        "name": "monopitch",
+        "prefabIds": []
+      },
+      {
+        "id": "SAWTOOTH",
+        "name": "sawtooth",
+        "prefabIds": []
+      },
+      {
+        "id": "NORTHLIGHT",
+        "name": "northlight",
+        "prefabIds": []
+      },
+      {
+        "id": "BARREL",
+        "name": "barrel",
+        "prefabIds": []
+      },
+      {
+        "id": "INDUSTRIAL_PORTAL",
+        "name": "industrial portal",
+        "prefabIds": []
+      },
+      {
+        "id": "HERITAGE_CANOPY",
+        "name": "heritage canopy",
+        "prefabIds": []
+      },
+      {
+        "id": "GLASS_CANOPY",
+        "name": "glass canopy",
+        "prefabIds": []
+      }
+    ],
+    "BuildingMaterialType": [
+      {
+        "id": "RED_BRICK",
+        "name": "red brick",
+        "prefabIds": []
+      },
+      {
+        "id": "BLUE_BRICK",
+        "name": "blue brick",
+        "prefabIds": []
+      },
+      {
+        "id": "BUFF_BRICK",
+        "name": "buff brick",
+        "prefabIds": []
+      },
+      {
+        "id": "STONE",
+        "name": "stone",
+        "prefabIds": []
+      },
+      {
+        "id": "RENDER",
+        "name": "render",
+        "prefabIds": []
+      },
+      {
+        "id": "PEBBLEDASH",
+        "name": "pebbledash",
+        "prefabIds": []
+      },
+      {
+        "id": "CONCRETE",
+        "name": "concrete",
+        "prefabIds": []
+      },
+      {
+        "id": "CORRUGATED_STEEL",
+        "name": "corrugated steel",
+        "prefabIds": []
+      },
+      {
+        "id": "CLADDING",
+        "name": "cladding",
+        "prefabIds": []
+      },
+      {
+        "id": "GLASS",
+        "name": "glass",
+        "prefabIds": []
+      },
+      {
+        "id": "TIMBER",
+        "name": "timber",
+        "prefabIds": []
+      },
+      {
+        "id": "SLATE_ROOF",
+        "name": "slate roof",
+        "prefabIds": []
+      },
+      {
+        "id": "CLAY_TILE_ROOF",
+        "name": "clay tile roof",
+        "prefabIds": []
+      },
+      {
+        "id": "CONCRETE_TILE_ROOF",
+        "name": "concrete tile roof",
+        "prefabIds": []
+      },
+      {
+        "id": "METAL_ROOF",
+        "name": "metal roof",
+        "prefabIds": []
+      }
+    ],
+    "ArchitecturalComponentType": [
+      {
+        "id": "CHIMNEY",
+        "name": "chimney",
+        "prefabIds": []
+      },
+      {
+        "id": "CHIMNEY_POT",
+        "name": "chimney pot",
+        "prefabIds": []
+      },
+      {
+        "id": "BAY_WINDOW",
+        "name": "bay window",
+        "prefabIds": []
+      },
+      {
+        "id": "SASH_WINDOW",
+        "name": "sash window",
+        "prefabIds": []
+      },
+      {
+        "id": "CASEMENT_WINDOW",
+        "name": "casement window",
+        "prefabIds": []
+      },
+      {
+        "id": "SHOPFRONT",
+        "name": "shopfront",
+        "prefabIds": []
+      },
+      {
+        "id": "DOOR",
+        "name": "door",
+        "prefabIds": []
+      },
+      {
+        "id": "PORCH",
+        "name": "porch",
+        "prefabIds": []
+      },
+      {
+        "id": "DORMER",
+        "name": "dormer",
+        "prefabIds": []
+      },
+      {
+        "id": "GUTTER",
+        "name": "gutter",
+        "prefabIds": []
+      },
+      {
+        "id": "DOWNPIPE",
+        "name": "downpipe",
+        "prefabIds": []
+      },
+      {
+        "id": "WINDOW_LINTEL",
+        "name": "window lintel",
+        "prefabIds": []
+      },
+      {
+        "id": "WINDOW_SILL",
+        "name": "window sill",
+        "prefabIds": []
+      },
+      {
+        "id": "ROOF_RIDGE",
+        "name": "roof ridge",
+        "prefabIds": []
+      },
+      {
+        "id": "ROOFLIGHT",
+        "name": "rooflight",
+        "prefabIds": []
+      },
+      {
+        "id": "LOADING_DOOR",
+        "name": "loading door",
+        "prefabIds": []
+      },
+      {
+        "id": "ROLLER_SHUTTER",
+        "name": "roller shutter",
+        "prefabIds": []
+      },
+      {
+        "id": "INDUSTRIAL_TRUSS",
+        "name": "industrial truss",
+        "prefabIds": []
+      },
+      {
+        "id": "PILASTER",
+        "name": "pilaster",
+        "prefabIds": []
+      },
+      {
+        "id": "BRICK_BUTTRESS",
+        "name": "brick buttress",
+        "prefabIds": []
+      },
+      {
+        "id": "FOUNDATION_PLINTH",
+        "name": "foundation plinth",
+        "prefabIds": []
+      },
+      {
+        "id": "GARDEN_WALL",
+        "name": "garden wall",
+        "prefabIds": []
+      },
+      {
+        "id": "FRONT_GATE",
+        "name": "front gate",
+        "prefabIds": []
+      },
+      {
+        "id": "EXTENSION",
+        "name": "extension",
+        "prefabIds": []
+      }
+    ],
+    "StationType": [
+      {
+        "id": "MAINLINE",
+        "name": "mainline",
+        "prefabIds": []
+      },
+      {
+        "id": "SUBURBAN",
+        "name": "suburban",
+        "prefabIds": []
+      },
+      {
+        "id": "URBAN",
+        "name": "urban",
+        "prefabIds": []
+      },
+      {
+        "id": "INTERCHANGE",
+        "name": "interchange",
+        "prefabIds": []
+      },
+      {
+        "id": "TERMINUS",
+        "name": "terminus",
+        "prefabIds": []
+      },
+      {
+        "id": "HERITAGE",
+        "name": "heritage",
+        "prefabIds": []
+      },
+      {
+        "id": "TRAM_STOP",
+        "name": "tram stop",
+        "prefabIds": []
+      },
+      {
+        "id": "BRANCH_STATION",
+        "name": "branch station",
+        "prefabIds": []
+      },
+      {
+        "id": "DEPOT_STATION",
+        "name": "depot station",
+        "prefabIds": []
+      }
+    ],
+    "PlatformType": [
+      {
+        "id": "SIDE",
+        "name": "side",
+        "prefabIds": []
+      },
+      {
+        "id": "ISLAND",
+        "name": "island",
+        "prefabIds": []
+      },
+      {
+        "id": "BAY",
+        "name": "bay",
+        "prefabIds": []
+      },
+      {
+        "id": "THROUGH",
+        "name": "through",
+        "prefabIds": []
+      },
+      {
+        "id": "TERMINAL",
+        "name": "terminal",
+        "prefabIds": []
+      },
+      {
+        "id": "HERITAGE",
+        "name": "heritage",
+        "prefabIds": []
+      },
+      {
+        "id": "TRAM",
+        "name": "tram",
+        "prefabIds": []
+      },
+      {
+        "id": "ELEVATED",
+        "name": "elevated",
+        "prefabIds": []
+      },
+      {
+        "id": "CUTTING",
+        "name": "cutting",
+        "prefabIds": []
+      },
+      {
+        "id": "UNDERGROUND",
+        "name": "underground",
+        "prefabIds": []
+      },
+      {
+        "id": "COVERED",
+        "name": "covered",
+        "prefabIds": []
+      }
+    ],
+    "StationComponentType": [
+      {
+        "id": "STATION_BUILDING",
+        "name": "station building",
+        "prefabIds": []
+      },
+      {
+        "id": "TICKET_HALL",
+        "name": "ticket hall",
+        "prefabIds": []
+      },
+      {
+        "id": "BOOKING_OFFICE",
+        "name": "booking office",
+        "prefabIds": []
+      },
+      {
+        "id": "WAITING_ROOM",
+        "name": "waiting room",
+        "prefabIds": []
+      },
+      {
+        "id": "WAITING_SHELTER",
+        "name": "waiting shelter",
+        "prefabIds": []
+      },
+      {
+        "id": "CANOPY",
+        "name": "canopy",
+        "prefabIds": []
+      },
+      {
+        "id": "CANOPY_COLUMN",
+        "name": "canopy column",
+        "prefabIds": []
+      },
+      {
+        "id": "PLATFORM_EDGE",
+        "name": "platform edge",
+        "prefabIds": []
+      },
+      {
+        "id": "PLATFORM_COPING",
+        "name": "platform coping",
+        "prefabIds": []
+      },
+      {
+        "id": "TACTILE_STRIP",
+        "name": "tactile strip",
+        "prefabIds": []
+      },
+      {
+        "id": "PLATFORM_WALL",
+        "name": "platform wall",
+        "prefabIds": []
+      },
+      {
+        "id": "FOOTBRIDGE",
+        "name": "footbridge",
+        "prefabIds": []
+      },
+      {
+        "id": "SUBWAY",
+        "name": "subway",
+        "prefabIds": []
+      },
+      {
+        "id": "STAIRS",
+        "name": "stairs",
+        "prefabIds": []
+      },
+      {
+        "id": "RAMP",
+        "name": "ramp",
+        "prefabIds": []
+      },
+      {
+        "id": "LIFT",
+        "name": "lift",
+        "prefabIds": []
+      },
+      {
+        "id": "ENTRANCE",
+        "name": "entrance",
+        "prefabIds": []
+      },
+      {
+        "id": "FORECOURT",
+        "name": "forecourt",
+        "prefabIds": []
+      },
+      {
+        "id": "CAR_PARK",
+        "name": "car park",
+        "prefabIds": []
+      },
+      {
+        "id": "NAMEBOARD",
+        "name": "nameboard",
+        "prefabIds": []
+      },
+      {
+        "id": "PLATFORM_NUMBER",
+        "name": "platform number",
+        "prefabIds": []
+      },
+      {
+        "id": "DEPARTURE_BOARD",
+        "name": "departure board",
+        "prefabIds": []
+      },
+      {
+        "id": "CLOCK",
+        "name": "clock",
+        "prefabIds": []
+      },
+      {
+        "id": "BENCH",
+        "name": "bench",
+        "prefabIds": []
+      },
+      {
+        "id": "BIN",
+        "name": "bin",
+        "prefabIds": []
+      },
+      {
+        "id": "HELP_POINT",
+        "name": "help point",
+        "prefabIds": []
+      },
+      {
+        "id": "TICKET_MACHINE",
+        "name": "ticket machine",
+        "prefabIds": []
+      },
+      {
+        "id": "CCTV",
+        "name": "cctv",
+        "prefabIds": []
+      },
+      {
+        "id": "PUBLIC_ADDRESS",
+        "name": "public address",
+        "prefabIds": []
+      },
+      {
+        "id": "LIGHTING",
+        "name": "lighting",
+        "prefabIds": []
+      },
+      {
+        "id": "FENCE",
+        "name": "fence",
+        "prefabIds": []
+      },
+      {
+        "id": "GATE",
+        "name": "gate",
+        "prefabIds": []
+      },
+      {
+        "id": "SIGNAL_BOX",
+        "name": "signal box",
+        "prefabIds": []
+      }
+    ],
+    "StationIdentityFeature": [
+      {
+        "id": "MULTILEVEL_INTERCHANGE",
+        "name": "multilevel interchange",
+        "prefabIds": []
+      },
+      {
+        "id": "TRAM_ADJACENCY",
+        "name": "tram adjacency",
+        "prefabIds": []
+      },
+      {
+        "id": "HERITAGE_ARCHITECTURE",
+        "name": "heritage architecture",
+        "prefabIds": []
+      },
+      {
+        "id": "COVERED_PLATFORM",
+        "name": "covered platform",
+        "prefabIds": []
+      },
+      {
+        "id": "URBAN_TUNNEL_APPROACH",
+        "name": "urban tunnel approach",
+        "prefabIds": []
+      },
+      {
+        "id": "CUTTING_STATION",
+        "name": "cutting station",
+        "prefabIds": []
+      },
+      {
+        "id": "EMBANKMENT_STATION",
+        "name": "embankment station",
+        "prefabIds": []
+      },
+      {
+        "id": "ROAD_BRIDGE_OVER_STATION",
+        "name": "road bridge over station",
+        "prefabIds": []
+      },
+      {
+        "id": "FOOTBRIDGE",
+        "name": "footbridge",
+        "prefabIds": []
+      },
+      {
+        "id": "CANAL_ADJACENCY",
+        "name": "canal adjacency",
+        "prefabIds": []
+      },
+      {
+        "id": "SIDING_FAN",
+        "name": "siding fan",
+        "prefabIds": []
+      },
+      {
+        "id": "BAY_PLATFORM",
+        "name": "bay platform",
+        "prefabIds": []
+      },
+      {
+        "id": "BRANCH_CONNECTION",
+        "name": "branch connection",
+        "prefabIds": []
+      },
+      {
+        "id": "LANDMARK_SKYLINE",
+        "name": "landmark skyline",
+        "prefabIds": []
+      },
+      {
+        "id": "DEPOT_ADJACENCY",
+        "name": "depot adjacency",
+        "prefabIds": []
+      }
+    ],
+    "VegetationType": [
+      {
+        "id": "DECIDUOUS_TREE",
+        "name": "deciduous tree",
+        "prefabIds": []
+      },
+      {
+        "id": "CONIFER",
+        "name": "conifer",
+        "prefabIds": []
+      },
+      {
+        "id": "SMALL_TREE",
+        "name": "small tree",
+        "prefabIds": []
+      },
+      {
+        "id": "SAPLING",
+        "name": "sapling",
+        "prefabIds": []
+      },
+      {
+        "id": "SHRUB",
+        "name": "shrub",
+        "prefabIds": []
+      },
+      {
+        "id": "HEDGE",
+        "name": "hedge",
+        "prefabIds": []
+      },
+      {
+        "id": "LOW_BUSH",
+        "name": "low bush",
+        "prefabIds": []
+      },
+      {
+        "id": "GRASS_TUFT",
+        "name": "grass tuft",
+        "prefabIds": []
+      },
+      {
+        "id": "FIELD_CROP",
+        "name": "field crop",
+        "prefabIds": []
+      },
+      {
+        "id": "BRACKEN",
+        "name": "bracken",
+        "prefabIds": []
+      },
+      {
+        "id": "IVY",
+        "name": "ivy",
+        "prefabIds": []
+      },
+      {
+        "id": "FLOWERBED",
+        "name": "flowerbed",
+        "prefabIds": []
+      },
+      {
+        "id": "GARDEN_PLANTER",
+        "name": "garden planter",
+        "prefabIds": []
+      },
+      {
+        "id": "REED",
+        "name": "reed",
+        "prefabIds": []
+      }
+    ],
+    "TreeSpecies": [
+      {
+        "id": "OAK",
+        "name": "oak",
+        "prefabIds": []
+      },
+      {
+        "id": "ASH",
+        "name": "ash",
+        "prefabIds": []
+      },
+      {
+        "id": "SYCAMORE",
+        "name": "sycamore",
+        "prefabIds": []
+      },
+      {
+        "id": "BEECH",
+        "name": "beech",
+        "prefabIds": []
+      },
+      {
+        "id": "BIRCH",
+        "name": "birch",
+        "prefabIds": []
+      },
+      {
+        "id": "WILLOW",
+        "name": "willow",
+        "prefabIds": []
+      },
+      {
+        "id": "POPLAR",
+        "name": "poplar",
+        "prefabIds": []
+      },
+      {
+        "id": "MAPLE",
+        "name": "maple",
+        "prefabIds": []
+      },
+      {
+        "id": "CHERRY",
+        "name": "cherry",
+        "prefabIds": []
+      },
+      {
+        "id": "HAWTHORN",
+        "name": "hawthorn",
+        "prefabIds": []
+      },
+      {
+        "id": "ROWAN",
+        "name": "rowan",
+        "prefabIds": []
+      },
+      {
+        "id": "HORSE_CHESTNUT",
+        "name": "horse chestnut",
+        "prefabIds": []
+      },
+      {
+        "id": "PINE",
+        "name": "pine",
+        "prefabIds": []
+      },
+      {
+        "id": "SPRUCE",
+        "name": "spruce",
+        "prefabIds": []
+      },
+      {
+        "id": "CYPRESS",
+        "name": "cypress",
+        "prefabIds": []
+      },
+      {
+        "id": "MIXED_DECIDUOUS",
+        "name": "mixed deciduous",
+        "prefabIds": []
+      },
+      {
+        "id": "MIXED_CONIFER",
+        "name": "mixed conifer",
+        "prefabIds": []
+      }
+    ],
+    "BirdSpecies": [
+      {
+        "id": "PIGEON",
+        "name": "pigeon",
+        "prefabIds": []
+      },
+      {
+        "id": "CROW",
+        "name": "crow",
+        "prefabIds": []
+      },
+      {
+        "id": "MAGPIE",
+        "name": "magpie",
+        "prefabIds": []
+      },
+      {
+        "id": "STARLING",
+        "name": "starling",
+        "prefabIds": []
+      },
+      {
+        "id": "GULL",
+        "name": "gull",
+        "prefabIds": []
+      },
+      {
+        "id": "SPARROW",
+        "name": "sparrow",
+        "prefabIds": []
+      },
+      {
+        "id": "BLACKBIRD",
+        "name": "blackbird",
+        "prefabIds": []
+      },
+      {
+        "id": "ROBIN",
+        "name": "robin",
+        "prefabIds": []
+      },
+      {
+        "id": "RAVEN",
+        "name": "raven",
+        "prefabIds": []
+      },
+      {
+        "id": "BUZZARD",
+        "name": "buzzard",
+        "prefabIds": []
+      }
+    ],
+    "CloudType": [
+      {
+        "id": "SMALL_CUMULUS",
+        "name": "small cumulus",
+        "prefabIds": []
+      },
+      {
+        "id": "MEDIUM_CUMULUS",
+        "name": "medium cumulus",
+        "prefabIds": []
+      },
+      {
+        "id": "LARGE_CUMULUS",
+        "name": "large cumulus",
+        "prefabIds": []
+      },
+      {
+        "id": "STRATUS",
+        "name": "stratus",
+        "prefabIds": []
+      },
+      {
+        "id": "BROKEN_CLOUD",
+        "name": "broken cloud",
+        "prefabIds": []
+      },
+      {
+        "id": "HIGH_THIN_CLOUD",
+        "name": "high thin cloud",
+        "prefabIds": []
+      },
+      {
+        "id": "OVERCAST_LAYER",
+        "name": "overcast layer",
+        "prefabIds": []
+      }
+    ],
+    "AircraftType": [
+      {
+        "id": "PASSENGER_JET",
+        "name": "passenger jet",
+        "prefabIds": []
+      },
+      {
+        "id": "REGIONAL_AIRLINER",
+        "name": "regional airliner",
+        "prefabIds": []
+      },
+      {
+        "id": "LIGHT_AIRCRAFT",
+        "name": "light aircraft",
+        "prefabIds": []
+      },
+      {
+        "id": "HELICOPTER",
+        "name": "helicopter",
+        "prefabIds": []
+      },
+      {
+        "id": "DISTANT_AIRCRAFT_SILHOUETTE",
+        "name": "distant aircraft silhouette",
+        "prefabIds": []
+      }
+    ],
+    "WeatherType": [
+      {
+        "id": "CLEAR",
+        "name": "clear",
+        "prefabIds": []
+      },
+      {
+        "id": "PARTLY_CLOUDY",
+        "name": "partly cloudy",
+        "prefabIds": []
+      },
+      {
+        "id": "CLOUDY",
+        "name": "cloudy",
+        "prefabIds": []
+      },
+      {
+        "id": "OVERCAST",
+        "name": "overcast",
+        "prefabIds": []
+      },
+      {
+        "id": "LIGHT_RAIN",
+        "name": "light rain",
+        "prefabIds": []
+      },
+      {
+        "id": "RAIN",
+        "name": "rain",
+        "prefabIds": []
+      },
+      {
+        "id": "MIST",
+        "name": "mist",
+        "prefabIds": []
+      },
+      {
+        "id": "FOG",
+        "name": "fog",
+        "prefabIds": []
+      }
+    ],
+    "AmbientSpawnType": [
+      {
+        "id": "BIRD_SINGLE",
+        "name": "bird single",
+        "prefabIds": []
+      },
+      {
+        "id": "BIRD_FLOCK",
+        "name": "bird flock",
+        "prefabIds": []
+      },
+      {
+        "id": "BIRD_PERCHED",
+        "name": "bird perched",
+        "prefabIds": []
+      },
+      {
+        "id": "AIRCRAFT_PASSAGE",
+        "name": "aircraft passage",
+        "prefabIds": []
+      },
+      {
+        "id": "CLOUD_FIELD",
+        "name": "cloud field",
+        "prefabIds": []
+      },
+      {
+        "id": "CLOUD_LAYER",
+        "name": "cloud layer",
+        "prefabIds": []
+      },
+      {
+        "id": "STATION_CROWD",
+        "name": "station crowd",
+        "prefabIds": []
+      },
+      {
+        "id": "STREET_TRAFFIC",
+        "name": "street traffic",
+        "prefabIds": []
+      }
+    ],
+    "RollingStockClass": [
+      {
+        "id": "CLASS_172",
+        "name": "class 172",
+        "prefabIds": []
+      },
+      {
+        "id": "CLASS_168",
+        "name": "class 168",
+        "prefabIds": []
+      },
+      {
+        "id": "CLASS_139",
+        "name": "class 139",
+        "prefabIds": []
+      },
+      {
+        "id": "WEST_MIDLANDS_METRO",
+        "name": "west midlands metro",
+        "prefabIds": []
+      },
+      {
+        "id": "ADJACENT_LINE_EMU",
+        "name": "adjacent line emu",
+        "prefabIds": []
+      },
+      {
+        "id": "HERITAGE_DIESEL",
+        "name": "heritage diesel",
+        "prefabIds": []
+      },
+      {
+        "id": "HERITAGE_STEAM",
+        "name": "heritage steam",
+        "prefabIds": []
+      },
+      {
+        "id": "HERITAGE_CARRIAGE",
+        "name": "heritage carriage",
+        "prefabIds": []
+      },
+      {
+        "id": "ENGINEERING_VEHICLE",
+        "name": "engineering vehicle",
+        "prefabIds": []
+      },
+      {
+        "id": "DEPOT_VEHICLE",
+        "name": "depot vehicle",
+        "prefabIds": []
+      },
+      {
+        "id": "OTHER_VERIFIED_CLASS",
+        "name": "other verified class",
+        "prefabIds": []
+      }
+    ],
+    "RollingStockComponentType": [
+      {
+        "id": "CAB",
+        "name": "cab",
+        "prefabIds": []
+      },
+      {
+        "id": "NOSE",
+        "name": "nose",
+        "prefabIds": []
+      },
+      {
+        "id": "BODY_SHELL",
+        "name": "body shell",
+        "prefabIds": []
+      },
+      {
+        "id": "ROOF",
+        "name": "roof",
+        "prefabIds": []
+      },
+      {
+        "id": "WINDOW",
+        "name": "window",
+        "prefabIds": []
+      },
+      {
+        "id": "DOOR",
+        "name": "door",
+        "prefabIds": []
+      },
+      {
+        "id": "DOOR_WINDOW",
+        "name": "door window",
+        "prefabIds": []
+      },
+      {
+        "id": "BOGIE",
+        "name": "bogie",
+        "prefabIds": []
+      },
+      {
+        "id": "WHEELSET",
+        "name": "wheelset",
+        "prefabIds": []
+      },
+      {
+        "id": "UNDERFRAME",
+        "name": "underframe",
+        "prefabIds": []
+      },
+      {
+        "id": "COUPLER",
+        "name": "coupler",
+        "prefabIds": []
+      },
+      {
+        "id": "GANGWAY",
+        "name": "gangway",
+        "prefabIds": []
+      },
+      {
+        "id": "HEADLIGHT",
+        "name": "headlight",
+        "prefabIds": []
+      },
+      {
+        "id": "TAILLIGHT",
+        "name": "taillight",
+        "prefabIds": []
+      },
+      {
+        "id": "MARKER_LIGHT",
+        "name": "marker light",
+        "prefabIds": []
+      },
+      {
+        "id": "PANTOGRAPH",
+        "name": "pantograph",
+        "prefabIds": []
+      },
+      {
+        "id": "EXHAUST",
+        "name": "exhaust",
+        "prefabIds": []
+      },
+      {
+        "id": "ROOF_EQUIPMENT",
+        "name": "roof equipment",
+        "prefabIds": []
+      },
+      {
+        "id": "INTERCAR_CONNECTION",
+        "name": "intercar connection",
+        "prefabIds": []
+      }
+    ],
+    "RoadVehicleType": [
+      {
+        "id": "SMALL_HATCHBACK",
+        "name": "small hatchback",
+        "prefabIds": []
+      },
+      {
+        "id": "FAMILY_HATCHBACK",
+        "name": "family hatchback",
+        "prefabIds": []
+      },
+      {
+        "id": "SALOON",
+        "name": "saloon",
+        "prefabIds": []
+      },
+      {
+        "id": "ESTATE",
+        "name": "estate",
+        "prefabIds": []
+      },
+      {
+        "id": "SUV",
+        "name": "suv",
+        "prefabIds": []
+      },
+      {
+        "id": "CROSSOVER",
+        "name": "crossover",
+        "prefabIds": []
+      },
+      {
+        "id": "SMALL_VAN",
+        "name": "small van",
+        "prefabIds": []
+      },
+      {
+        "id": "MEDIUM_VAN",
+        "name": "medium van",
+        "prefabIds": []
+      },
+      {
+        "id": "LARGE_VAN",
+        "name": "large van",
+        "prefabIds": []
+      },
+      {
+        "id": "DELIVERY_VAN",
+        "name": "delivery van",
+        "prefabIds": []
+      },
+      {
+        "id": "TAXI",
+        "name": "taxi",
+        "prefabIds": []
+      },
+      {
+        "id": "PRIVATE_HIRE",
+        "name": "private hire",
+        "prefabIds": []
+      },
+      {
+        "id": "SINGLE_DECKER_BUS",
+        "name": "single decker bus",
+        "prefabIds": []
+      },
+      {
+        "id": "DOUBLE_DECKER_BUS",
+        "name": "double decker bus",
+        "prefabIds": []
+      },
+      {
+        "id": "COACH",
+        "name": "coach",
+        "prefabIds": []
+      },
+      {
+        "id": "RIGID_LORRY",
+        "name": "rigid lorry",
+        "prefabIds": []
+      },
+      {
+        "id": "ARTICULATED_HGV",
+        "name": "articulated hgv",
+        "prefabIds": []
+      },
+      {
+        "id": "MAINTENANCE_VEHICLE",
+        "name": "maintenance vehicle",
+        "prefabIds": []
+      },
+      {
+        "id": "EMERGENCY_VEHICLE",
+        "name": "emergency vehicle",
+        "prefabIds": []
+      },
+      {
+        "id": "MOTORCYCLE",
+        "name": "motorcycle",
+        "prefabIds": []
+      },
+      {
+        "id": "BICYCLE",
+        "name": "bicycle",
+        "prefabIds": []
+      }
+    ],
+    "VehicleMotionState": [
+      {
+        "id": "PARKED",
+        "name": "parked",
+        "prefabIds": []
+      },
+      {
+        "id": "IDLE",
+        "name": "idle",
+        "prefabIds": []
+      },
+      {
+        "id": "MOVING",
+        "name": "moving",
+        "prefabIds": []
+      },
+      {
+        "id": "BRAKING",
+        "name": "braking",
+        "prefabIds": []
+      },
+      {
+        "id": "TURNING",
+        "name": "turning",
+        "prefabIds": []
+      },
+      {
+        "id": "STOPPED_AT_SIGNAL",
+        "name": "stopped at signal",
+        "prefabIds": []
+      },
+      {
+        "id": "BOARDING",
+        "name": "boarding",
+        "prefabIds": []
+      },
+      {
+        "id": "DEPOT_MOVEMENT",
+        "name": "depot movement",
+        "prefabIds": []
+      },
+      {
+        "id": "OUT_OF_SERVICE",
+        "name": "out of service",
+        "prefabIds": []
+      }
+    ],
+    "CharacterSpecies": [
+      {
+        "id": "ANTHROPOMORPHIC_CAT",
+        "name": "anthropomorphic cat",
+        "prefabIds": []
+      }
+    ],
+    "CatRole": [
+      {
+        "id": "COMMUTER",
+        "name": "commuter",
+        "prefabIds": []
+      },
+      {
+        "id": "LEISURE_TRAVELLER",
+        "name": "leisure traveller",
+        "prefabIds": []
+      },
+      {
+        "id": "PASSENGER_WITH_LUGGAGE",
+        "name": "passenger with luggage",
+        "prefabIds": []
+      },
+      {
+        "id": "SEATED_PASSENGER",
+        "name": "seated passenger",
+        "prefabIds": []
+      },
+      {
+        "id": "CHILD_PASSENGER",
+        "name": "child passenger",
+        "prefabIds": []
+      },
+      {
+        "id": "STATION_ATTENDANT",
+        "name": "station attendant",
+        "prefabIds": []
+      },
+      {
+        "id": "PLATFORM_DISPATCHER",
+        "name": "platform dispatcher",
+        "prefabIds": []
+      },
+      {
+        "id": "TICKET_STAFF",
+        "name": "ticket staff",
+        "prefabIds": []
+      },
+      {
+        "id": "MAINTENANCE_WORKER",
+        "name": "maintenance worker",
+        "prefabIds": []
+      },
+      {
+        "id": "HERITAGE_RAILWAY_STAFF",
+        "name": "heritage railway staff",
+        "prefabIds": []
+      }
+    ],
+    "CatCoatPattern": [
+      {
+        "id": "SOLID",
+        "name": "solid",
+        "prefabIds": []
+      },
+      {
+        "id": "TABBY",
+        "name": "tabby",
+        "prefabIds": []
+      },
+      {
+        "id": "TUXEDO",
+        "name": "tuxedo",
+        "prefabIds": []
+      },
+      {
+        "id": "TORTOISESHELL",
+        "name": "tortoiseshell",
+        "prefabIds": []
+      },
+      {
+        "id": "CALICO",
+        "name": "calico",
+        "prefabIds": []
+      },
+      {
+        "id": "BICOLOUR",
+        "name": "bicolour",
+        "prefabIds": []
+      },
+      {
+        "id": "POINTED",
+        "name": "pointed",
+        "prefabIds": []
+      },
+      {
+        "id": "GINGER",
+        "name": "ginger",
+        "prefabIds": []
+      },
+      {
+        "id": "GREY",
+        "name": "grey",
+        "prefabIds": []
+      },
+      {
+        "id": "BLACK",
+        "name": "black",
+        "prefabIds": []
+      },
+      {
+        "id": "WHITE",
+        "name": "white",
+        "prefabIds": []
+      }
+    ],
+    "CatClothingType": [
+      {
+        "id": "CASUAL",
+        "name": "casual",
+        "prefabIds": []
+      },
+      {
+        "id": "COAT",
+        "name": "coat",
+        "prefabIds": []
+      },
+      {
+        "id": "JACKET",
+        "name": "jacket",
+        "prefabIds": []
+      },
+      {
+        "id": "BUSINESS_WEAR",
+        "name": "business wear",
+        "prefabIds": []
+      },
+      {
+        "id": "RAILWAY_UNIFORM",
+        "name": "railway uniform",
+        "prefabIds": []
+      },
+      {
+        "id": "HIGH_VIS_VEST",
+        "name": "high vis vest",
+        "prefabIds": []
+      },
+      {
+        "id": "MAINTENANCE_OVERALLS",
+        "name": "maintenance overalls",
+        "prefabIds": []
+      },
+      {
+        "id": "HERITAGE_UNIFORM",
+        "name": "heritage uniform",
+        "prefabIds": []
+      },
+      {
+        "id": "SCARF",
+        "name": "scarf",
+        "prefabIds": []
+      },
+      {
+        "id": "BACKPACK",
+        "name": "backpack",
+        "prefabIds": []
+      },
+      {
+        "id": "SHOULDER_BAG",
+        "name": "shoulder bag",
+        "prefabIds": []
+      },
+      {
+        "id": "LUGGAGE",
+        "name": "luggage",
+        "prefabIds": []
+      }
+    ],
+    "CharacterAnimationState": [
+      {
+        "id": "IDLE",
+        "name": "idle",
+        "prefabIds": []
+      },
+      {
+        "id": "WALK",
+        "name": "walk",
+        "prefabIds": []
+      },
+      {
+        "id": "TURN",
+        "name": "turn",
+        "prefabIds": []
+      },
+      {
+        "id": "SIT",
+        "name": "sit",
+        "prefabIds": []
+      },
+      {
+        "id": "STAND_UP",
+        "name": "stand up",
+        "prefabIds": []
+      },
+      {
+        "id": "WAIT",
+        "name": "wait",
+        "prefabIds": []
+      },
+      {
+        "id": "LOOK_AROUND",
+        "name": "look around",
+        "prefabIds": []
+      },
+      {
+        "id": "CARRY_LUGGAGE",
+        "name": "carry luggage",
+        "prefabIds": []
+      },
+      {
+        "id": "GESTURE",
+        "name": "gesture",
+        "prefabIds": []
+      },
+      {
+        "id": "STAFF_SIGNAL",
+        "name": "staff signal",
+        "prefabIds": []
+      },
+      {
+        "id": "BOARDING",
+        "name": "boarding",
+        "prefabIds": []
+      },
+      {
+        "id": "ALIGHTING",
+        "name": "alighting",
+        "prefabIds": []
+      }
+    ],
+    "AssetImplementationStatus": [
+      {
+        "id": "IMPLEMENTED",
+        "name": "implemented",
+        "prefabIds": []
+      },
+      {
+        "id": "IMPLEMENTED_UNVERIFIED",
+        "name": "implemented unverified",
+        "prefabIds": []
+      },
+      {
+        "id": "PLACEHOLDER",
+        "name": "placeholder",
+        "prefabIds": []
+      },
+      {
+        "id": "MISSING",
+        "name": "missing",
+        "prefabIds": []
+      },
+      {
+        "id": "DEPRECATED",
+        "name": "deprecated",
+        "prefabIds": []
+      },
+      {
+        "id": "LEGACY_UNKNOWN",
+        "name": "legacy unknown",
+        "prefabIds": []
+      }
+    ],
+    "AssetLOD": [
+      {
+        "id": "HIGH",
+        "name": "high",
+        "prefabIds": []
+      },
+      {
+        "id": "MEDIUM",
+        "name": "medium",
+        "prefabIds": []
+      },
+      {
+        "id": "LOW",
+        "name": "low",
+        "prefabIds": []
+      },
+      {
+        "id": "IMPOSTOR",
+        "name": "impostor",
+        "prefabIds": []
+      },
+      {
+        "id": "CULLED",
+        "name": "culled",
+        "prefabIds": []
+      }
+    ],
+    "ChunkLoadState": [
+      {
+        "id": "UNREQUESTED",
+        "name": "unrequested",
+        "prefabIds": []
+      },
+      {
+        "id": "QUEUED",
+        "name": "queued",
+        "prefabIds": []
+      },
+      {
+        "id": "FETCHING",
+        "name": "fetching",
+        "prefabIds": []
+      },
+      {
+        "id": "DECODING",
+        "name": "decoding",
+        "prefabIds": []
+      },
+      {
+        "id": "BUILDING",
+        "name": "building",
+        "prefabIds": []
+      },
+      {
+        "id": "GPU_UPLOADING",
+        "name": "gpu uploading",
+        "prefabIds": []
+      },
+      {
+        "id": "READY",
+        "name": "ready",
+        "prefabIds": []
+      },
+      {
+        "id": "FAILED",
+        "name": "failed",
+        "prefabIds": []
+      },
+      {
+        "id": "EVICTED",
+        "name": "evicted",
+        "prefabIds": []
+      }
+    ],
+    "ObjectPersistenceType": [
+      {
+        "id": "STATIC_WORLD",
+        "name": "static world",
+        "prefabIds": []
+      },
+      {
+        "id": "STATIC_CONFIGURED_DYNAMIC",
+        "name": "static configured dynamic",
+        "prefabIds": []
+      },
+      {
+        "id": "DYNAMIC_SIMULATION",
+        "name": "dynamic simulation",
+        "prefabIds": []
+      },
+      {
+        "id": "EPHEMERAL_VISUAL",
+        "name": "ephemeral visual",
+        "prefabIds": []
+      }
+    ],
+    "ValidationSeverity": [
+      {
+        "id": "INFO",
+        "name": "info",
+        "prefabIds": []
+      },
+      {
+        "id": "WARNING",
+        "name": "warning",
+        "prefabIds": []
+      },
+      {
+        "id": "ERROR",
+        "name": "error",
+        "prefabIds": []
+      },
+      {
+        "id": "BLOCKING",
+        "name": "blocking",
+        "prefabIds": []
+      }
+    ],
+    "SchemaCompatibility": [
+      {
+        "id": "CURRENT",
+        "name": "current",
+        "prefabIds": []
+      },
+      {
+        "id": "MIGRATABLE",
+        "name": "migratable",
+        "prefabIds": []
+      },
+      {
+        "id": "LEGACY_READ_ONLY",
+        "name": "legacy read only",
+        "prefabIds": []
+      },
+      {
+        "id": "INCOMPATIBLE",
+        "name": "incompatible",
+        "prefabIds": []
+      }
+    ],
+    "TerrainCornerMask": [
+      {
+        "id": 0,
+        "name": "flat",
+        "prefabIds": []
+      },
+      {
+        "id": 1,
+        "name": "NW",
+        "prefabIds": []
+      },
+      {
+        "id": 2,
+        "name": "NE",
+        "prefabIds": []
+      },
+      {
+        "id": 3,
+        "name": "NW+NE",
+        "prefabIds": []
+      },
+      {
+        "id": 4,
+        "name": "SE",
+        "prefabIds": []
+      },
+      {
+        "id": 5,
+        "name": "NW+SE",
+        "prefabIds": []
+      },
+      {
+        "id": 6,
+        "name": "NE+SE",
+        "prefabIds": []
+      },
+      {
+        "id": 7,
+        "name": "NW+NE+SE",
+        "prefabIds": []
+      },
+      {
+        "id": 8,
+        "name": "SW",
+        "prefabIds": []
+      },
+      {
+        "id": 9,
+        "name": "NW+SW",
+        "prefabIds": []
+      },
+      {
+        "id": 10,
+        "name": "NE+SW",
+        "prefabIds": []
+      },
+      {
+        "id": 11,
+        "name": "NW+NE+SW",
+        "prefabIds": []
+      },
+      {
+        "id": 12,
+        "name": "SE+SW",
+        "prefabIds": []
+      },
+      {
+        "id": 13,
+        "name": "NW+SE+SW",
+        "prefabIds": []
+      },
+      {
+        "id": 14,
+        "name": "NE+SE+SW",
+        "prefabIds": []
+      },
+      {
+        "id": 15,
+        "name": "all",
+        "prefabIds": []
+      }
+    ]
+  }
+}

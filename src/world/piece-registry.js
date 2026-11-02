@@ -71,9 +71,26 @@ export function instantiatePiece({id,mode='rail',referenceId,origin=[0,0,0],rota
 
 /** Sample the exact same stored anchors and port tangents for a compositor or vehicle. */
 export function piecePath(item){
+ if(item.constructionProfile)return constructionPath(item);
  const points=item.anchors.map(position),path=new CurvePath(points);
  for(const [i,sign] of [[0,1],[1,-1]]){const v=item.ports[i].vector,h=Math.hypot(v[0],v[2])||1;path.derivatives[i?path.derivatives.length-1:0]=v.map(n=>sign*n/h);}
  return path;
+}
+
+/** Full-section construction geometry. The grade is a boundary-constrained
+ * cubic over analytic horizontal arc distance, shared by rendering and travel.
+ * Legacy imported paths keep their existing interpolation above. */
+export function constructionPath(item){
+ const c=item.constructionProfile,d=referencePiece(item.ports[0].mode,item.referenceId),radius=c.radiusMetres??d.radiusTiles*GRID.cellSize,curved=d.family==='arc';
+ if(!['straight','arc'].includes(d.family))throw new Error(`Unsupported construction path ${item.id}`);
+ const length=curved?radius*Math.PI/2:GRID.cellSize,origin=position(c.origin),heading=c.rotation*Math.PI/2,rise=c.riseTicks*GRID.heightStep;
+ const a=length*(c.startGrade+c.endGrade)-2*rise,b=3*rise-length*(2*c.startGrade+c.endGrade),v=length*c.startGrade;
+ return {length,sample(s,offset=0){
+  const t=Math.max(0,Math.min(1,s/length)),theta=curved?t*Math.PI/2:0;
+  const [x,z]=rotate(curved?radius*Math.sin(theta):t*length,curved?d.turn*radius*(1-Math.cos(theta)):0,heading);
+  const [dx,dz]=rotate(Math.cos(theta),curved?d.turn*Math.sin(theta):0,heading),grade=(3*a*t*t+2*b*t+v)/length,right=[-dz,0,dx],tangent=[dx,grade,dz];
+  return {s,position:[origin[0]+x+right[0]*offset,origin[1]+((a*t+b)*t+v)*t,origin[2]+z+right[2]*offset],right,tangent,grade,pitch:Math.atan(grade),yaw:Math.atan2(-dx,-dz)};
+ }};
 }
 export function matchingPorts(a,b,cosine=.999){return a.mode===b.mode&&a.anchor.every((v,i)=>v===b.anchor[i])&&a.vector.reduce((sum,v,i)=>sum+v*b.vector[i],0)<=-cosine;}
 

@@ -10,7 +10,10 @@ import {RailwaySimulation} from '../src/core/simulation.js';
 import {Terrain} from '../src/world/surfaces.js';
 
 const oldHash='75d16f9946ad6043c5ec6828e460c6db9f589513f7da46f6ad9d4396806fcc30',oldRevision='a972112cc7694560042b4ee0f85b3fd92ecf55613803f17b5207fc876e086ec4',newHash='new-build';
-test('the previous compatible world resumes and the original save remains backed up',async()=>{
+for(const [oldHash,oldRevision] of [
+ ['75d16f9946ad6043c5ec6828e460c6db9f589513f7da46f6ad9d4396806fcc30','a972112cc7694560042b4ee0f85b3fd92ecf55613803f17b5207fc876e086ec4'],
+ ['5ceb8ffcf5bab44eb08e6ec0fa512849f1973704b10a445edaf1ebc3ac3e9f5f','2903b3d30210cbcde18aa97ee742c7ac4617df3323525779c83bfc4b79150000'],
+]) test(`compatible world ${oldHash.slice(0,8)} resumes and the original save remains backed up`,async()=>{
  const doc=JSON.parse(readFileSync('public/data/grid/world.json')),data=decodeGrid(doc.route),route=new RouteGeometry(data),terrainBytes=Uint8Array.from(readFileSync('public/data/grid/terrain.bin')).buffer,terrain=new Terrain(data.terrain,new Uint16Array(terrainBytes));
  data.worldHash=oldHash;const old=new RailwaySimulation(route);old.configureRoadNetwork(data.surfaceRoads,terrain);old.player.s=1234;const snapshot=old.snapshot();
  const oldDocument={...doc,revision:oldRevision},world={document:oldDocument,terrain:terrainBytes,tiles:{}};assert.equal(canUseSavedWorld(snapshot,world),true);assert.equal(mayUsePreviousWorld(snapshot),true);

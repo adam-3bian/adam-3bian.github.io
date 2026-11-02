@@ -1,0 +1,969 @@
+{
+  "schema": 1,
+  "id": "british-construction-v1",
+  "gradeLimits": {
+    "MAINLINE": {
+      "maximum": 0.025,
+      "transitionPerTile": 0.005
+    },
+    "RESIDENTIAL": {
+      "maximum": 0.08,
+      "transitionPerTile": 0.02
+    },
+    "JUNCTION": {
+      "maximum": 0.05,
+      "transitionPerTile": 0.02
+    }
+  },
+  "prefabs": [
+    {
+      "id": "rail/straight",
+      "kind": "RAILWAY",
+      "dimensions": [
+        16,
+        0.5,
+        4
+      ],
+      "footprint": [
+        [
+          0,
+          -2
+        ],
+        [
+          16,
+          -2
+        ],
+        [
+          16,
+          2
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 0
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE"
+    },
+    {
+      "id": "rail/full-section-grade",
+      "kind": "RAILWAY",
+      "dimensions": [
+        16,
+        0.5,
+        4
+      ],
+      "footprint": [
+        [
+          0,
+          -2
+        ],
+        [
+          16,
+          -2
+        ],
+        [
+          16,
+          2
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 14
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE"
+    },
+    {
+      "id": "rail/curve/radius-80",
+      "kind": "RAILWAY",
+      "dimensions": [
+        80,
+        0.5,
+        4
+      ],
+      "footprint": [
+        [
+          -2,
+          -2
+        ],
+        [
+          82,
+          -2
+        ],
+        [
+          82,
+          82
+        ],
+        [
+          -2,
+          82
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "rail",
+        "referenceId": 9,
+        "radiusMetres": 80
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "rail"
+        },
+        {
+          "id": "end",
+          "mode": "rail"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "RAILWAY_FORMATION",
+        "minimumDepth": 0.3,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 5.5
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "MAINLINE"
+    },
+    {
+      "id": "road/local/straight",
+      "kind": "ROAD",
+      "dimensions": [
+        16,
+        0.12,
+        6
+      ],
+      "footprint": [
+        [
+          0,
+          -3
+        ],
+        [
+          16,
+          -3
+        ],
+        [
+          16,
+          3
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "transport",
+        "mode": "road",
+        "referenceId": 0
+      },
+      "ports": [
+        {
+          "id": "start",
+          "mode": "road"
+        },
+        {
+          "id": "end",
+          "mode": "road"
+        }
+      ],
+      "elevation": {
+        "type": "FULL_SECTION_PROFILE"
+      },
+      "support": {
+        "surface": "ROAD_FORMATION",
+        "minimumDepth": 0.08,
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 3,
+        "height": 0.12
+      },
+      "asset": {
+        "generator": "transport",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "RESIDENTIAL"
+    },
+    {
+      "id": "road/local/t-junction",
+      "kind": "ROAD",
+      "dimensions": [
+        16,
+        0.12,
+        16
+      ],
+      "footprint": [
+        [
+          -8,
+          -3
+        ],
+        [
+          8,
+          -3
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          -8,
+          8
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "NEAR_LEVEL_PREFERRED",
+      "geometry": {
+        "type": "junction"
+      },
+      "ports": [
+        {
+          "id": "west",
+          "mode": "road",
+          "position": [
+            -8,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "east",
+          "mode": "road",
+          "position": [
+            8,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "south",
+          "mode": "road",
+          "position": [
+            0,
+            0,
+            8
+          ]
+        }
+      ],
+      "elevation": {
+        "type": "FIXED_BASE"
+      },
+      "support": {
+        "surface": "NATURAL_GROUND",
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 8,
+        "height": 0.12
+      },
+      "asset": {
+        "generator": "junction",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "infrastructureClass": "JUNCTION"
+    },
+    {
+      "id": "bridge/steel/span-32",
+      "kind": "BRIDGE",
+      "dimensions": [
+        32,
+        8,
+        8
+      ],
+      "footprint": [
+        [
+          0,
+          -4
+        ],
+        [
+          32,
+          -4
+        ],
+        [
+          32,
+          4
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "ENGINEERED_STRUCTURE",
+      "geometry": {
+        "type": "bridge",
+        "deckDepth": 0.75,
+        "bearings": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            31,
+            0,
+            0
+          ]
+        ]
+      },
+      "ports": [],
+      "elevation": {
+        "type": "FIXED_BASE"
+      },
+      "support": {
+        "surface": "NATURAL_GROUND",
+        "maximumDepth": 12
+      },
+      "clearance": {
+        "halfWidth": 4,
+        "height": 8
+      },
+      "asset": {
+        "generator": "bridge",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "id": "station/platform/side-section",
+      "kind": "PLATFORM",
+      "dimensions": [
+        16,
+        0.915,
+        4
+      ],
+      "footprint": [
+        [
+          0,
+          -2
+        ],
+        [
+          16,
+          -2
+        ],
+        [
+          16,
+          2
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_TRANSPORT_GRADE",
+      "geometry": {
+        "type": "platform",
+        "trackOffset": 4,
+        "boardingHeight": 0.915
+      },
+      "ports": [],
+      "elevation": {
+        "type": "FIXED_BASE"
+      },
+      "support": {
+        "surface": "NATURAL_GROUND",
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 2,
+        "height": 0.915
+      },
+      "asset": {
+        "generator": "platform",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "id": "building/uk/victorian-terrace",
+      "kind": "BUILDING",
+      "dimensions": [
+        8,
+        6,
+        10
+      ],
+      "footprint": [
+        [
+          -4,
+          -5
+        ],
+        [
+          4,
+          -5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          -4,
+          5
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "LEVEL_FOUNDATION_REQUIRED",
+      "geometry": {
+        "type": "building",
+        "config": {
+          "width": 8,
+          "height": 6,
+          "depth": 10,
+          "style": "terrace"
+        }
+      },
+      "ports": [],
+      "elevation": {
+        "type": "FIXED_BASE"
+      },
+      "support": {
+        "surface": "NATURAL_GROUND",
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 5,
+        "height": 6
+      },
+      "asset": {
+        "generator": "building",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "id": "building/uk/brick-cottage",
+      "kind": "BUILDING",
+      "dimensions": [
+        8,
+        4,
+        10
+      ],
+      "footprint": [
+        [
+          -4,
+          -5
+        ],
+        [
+          4,
+          -5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          -4,
+          5
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "LEVEL_FOUNDATION_REQUIRED",
+      "geometry": {
+        "type": "building",
+        "config": {
+          "width": 8,
+          "height": 3,
+          "depth": 10,
+          "style": "historic"
+        }
+      },
+      "ports": [],
+      "elevation": {
+        "type": "FIXED_BASE"
+      },
+      "support": {
+        "surface": "NATURAL_GROUND",
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 5,
+        "height": 4
+      },
+      "asset": {
+        "generator": "building",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "id": "building/industrial/portal-warehouse",
+      "kind": "INDUSTRIAL_BUILDING",
+      "dimensions": [
+        40,
+        7,
+        24
+      ],
+      "footprint": [
+        [
+          -20,
+          -12
+        ],
+        [
+          20,
+          -12
+        ],
+        [
+          20,
+          12
+        ],
+        [
+          -20,
+          12
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "LEVEL_FOUNDATION_REQUIRED",
+      "geometry": {
+        "type": "warehouse"
+      },
+      "ports": [],
+      "elevation": {
+        "type": "FIXED_BASE"
+      },
+      "support": {
+        "surface": "NATURAL_GROUND",
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 12,
+        "height": 7
+      },
+      "asset": {
+        "generator": "warehouse",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "id": "vegetation/oak/medium",
+      "kind": "TREE",
+      "dimensions": [
+        6,
+        8,
+        6
+      ],
+      "footprint": [
+        [
+          -3,
+          -3
+        ],
+        [
+          3,
+          -3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          -3,
+          3
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_GROUND",
+      "geometry": {
+        "type": "tree",
+        "config": {
+          "height": 8,
+          "type": "deciduous"
+        }
+      },
+      "ports": [],
+      "elevation": {
+        "type": "FIXED_BASE"
+      },
+      "support": {
+        "surface": "NATURAL_GROUND",
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 3,
+        "height": 8
+      },
+      "asset": {
+        "generator": "tree",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "id": "fence/timber/section",
+      "kind": "FENCE",
+      "dimensions": [
+        16,
+        1.2,
+        0.2
+      ],
+      "footprint": [
+        [
+          0,
+          -0.1
+        ],
+        [
+          16,
+          -0.1
+        ],
+        [
+          16,
+          0.1
+        ],
+        [
+          0,
+          0.1
+        ]
+      ],
+      "orientations": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "placementRule": "FOLLOWS_GROUND",
+      "geometry": {
+        "type": "fence"
+      },
+      "ports": [],
+      "elevation": {
+        "type": "FIXED_BASE"
+      },
+      "support": {
+        "surface": "NATURAL_GROUND",
+        "maximumDepth": 2
+      },
+      "clearance": {
+        "halfWidth": 0.1,
+        "height": 1.2
+      },
+      "asset": {
+        "generator": "fence",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {
+        "seed": [
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "id": "terrain/corner-square",
+      "kind": "TERRAIN",
+      "dimensions": [
+        16,
+        1,
+        16
+      ],
+      "footprint": [
+        [
+          0,
+          0
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          16,
+          16
+        ],
+        [
+          0,
+          16
+        ]
+      ],
+      "orientations": [
+        0
+      ],
+      "placementRule": "ENGINEERED_STRUCTURE",
+      "geometry": {
+        "type": "terrain",
+        "diagonal": "NW_SE"
+      },
+      "ports": [],
+      "elevation": {
+        "type": "SHARED_CORNERS",
+        "tickMetres": 0.03125
+      },
+      "support": {
+        "surface": "NATURAL_GROUND"
+      },
+      "clearance": {
+        "halfWidth": 8,
+        "height": 0
+      },
+      "asset": {
+        "generator": "terrain",
+        "status": "IMPLEMENTED_UNVERIFIED"
+      },
+      "lod": {
+        "policy": "OWNER_CHUNK_BATCH",
+        "maximumDistance": 900
+      },
+      "variants": {}
+    }
+  ]
+}

@@ -228,6 +228,7 @@ export class RailwayRenderer {
         mesh.receiveShadow = true;
         mesh.castShadow = true;
         mesh.name = `tile:${message.id}`;
+        if (message.origin) mesh.position.fromArray(message.origin);
         this.scene.add(mesh);
         this.loaded.set(message.id, { mesh, used: performance.now(), walkers: [] });
         this.tileCount = this.loaded.size;

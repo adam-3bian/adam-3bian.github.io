@@ -42,7 +42,7 @@ npm test
 npm run validate
 npm run audit:geometry
 node scripts/asset-budgets.js
-npm run build:world
+npm run diagnose:prefabs
 npm run build:site
 npm run verify:site
 npm run build
@@ -51,7 +51,7 @@ npm run preview
 
 `validate` runs deterministic end-to-end driving and a two-hour **accelerated CPU simulation** soak. It does not certify browser duration or GPU performance. `audit:geometry` cooks all spatial tiles and writes measured support/seam findings and the placed inventory. Browser evidence and explicit coverage/limitations are in [docs/reports](docs/reports) and [docs/ACCEPTANCE.md](docs/ACCEPTANCE.md). No deployment is included.
 
-The checked-in `public/data` source controls and generated `site/data` make the app runnable without reprocessing the reference pack. `npm run build:world` compiles those controls and the dated, cached OpenStreetMap extracts into the grid world without network access. `node scripts/fetch-osm-landscape.js` can fetch missing station-area extracts before rebuilding. The bundled DM Sans and Libre Caslon Display fonts are licensed under the SIL Open Font License; their licences are in [public/licenses](public/licenses/). Fonts are used for UI text; scene assets do not use font atlases or surface textures.
+The checked-in `public/data` source controls and generated `site/data` make the app runnable without reprocessing the reference pack. The legacy importer requires `npm run build:world -- --output work/grid-import-draft`; it writes an offline draft for review and cannot overwrite the curated grid world. Normal builds do not regenerate geography. `node scripts/fetch-osm-landscape.js` can fetch missing station-area extracts for a later reviewed import. The bundled DM Sans and Libre Caslon Display fonts are licensed under the SIL Open Font License; their licences are in [public/licenses](public/licenses/). Fonts are used for UI text; scene assets do not use font atlases or surface textures.
 
 - [PROMPT.md](PROMPT.md) is the original 72-item brief.
 - [FINISHING_PROMPT.md](FINISHING_PROMPT.md) carries the original requirements forward and prioritises the outstanding bridge, trackside and performance work.
@@ -70,5 +70,11 @@ For the current browser checks, run `npm run build:qa` then `node scripts/landsc
 `node scripts/route-qa.js` creates an explicitly incomplete reference gallery; `node scripts/build-station-review.js` retains manual notes only for their matching build and images. The [named reference gallery](references/by-location/index.html), [site register](docs/route-site-register.json), [WORLD_RULES_PROMPT.md](WORLD_RULES_PROMPT.md), and [docs/WORLD-RULES.md](docs/WORLD-RULES.md) preserve the source and review context.
 
 ## Grid reconstruction
+
+The incremental [prefab construction implementation](docs/PREFAB-CONSTRUCTION.md)
+adds a working JSON scene at `prefab-preview.html`, using the existing grid,
+worker and static mesh batches. Its construction rules are tested separately;
+the live route has not yet been migrated. See that document for editing,
+verification and explicit stage-by-stage limits.
 
 The runtime now loads the authoritative grid world while retaining the WebGL front view. See [GRID-WORLD.md](docs/GRID-WORLD.md) for source provenance, rebuilding, persistence and validation; [MAP-DATA-AUDIT.md](docs/MAP-DATA-AUDIT.md) for the source and migration audit; and [DATA-AND-TOOLING.md](docs/DATA-AND-TOOLING.md) for the remaining legacy offline tools. The SVR is limited to neighbouring Kidderminster scenery; the playable route remains Kidderminster–Dorridge.

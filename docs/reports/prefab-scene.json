@@ -1,0 +1,312 @@
+{
+  "status": "IMPLEMENTED_AND_VERIFIED",
+  "scope": "Stage 1 construction slice only; not route-wide acceptance",
+  "revision": "b4d5779866e1f1b2ce95c29650566e03a7aed0df86d94ea6def66d37b95e2275",
+  "prefabDefinitions": 13,
+  "instances": 24,
+  "terrainCells": 192,
+  "chunks": 2,
+  "triangles": 18660,
+  "degenerateTriangles": 0,
+  "maximumRailGradient": 0.00390625,
+  "maximumRailTransitionPerTile": 0.00390625,
+  "enumCategories": 69,
+  "enumValues": 932,
+  "objectKindCoverage": [
+    {
+      "id": "TERRAIN",
+      "name": "terrain",
+      "prefabIds": [
+        "terrain/corner-square"
+      ],
+      "prefabs": [
+        "terrain/corner-square"
+      ],
+      "status": "IMPLEMENTED_AND_VERIFIED"
+    },
+    {
+      "id": "GROUND_COVER",
+      "name": "ground cover",
+      "prefabIds": [],
+      "prefabs": [],
+      "status": "INCOMPLETE"
+    },
+    {
+      "id": "EARTHWORK",
+      "name": "earthwork",
+      "prefabIds": [],
+      "prefabs": [],
+      "status": "INCOMPLETE"
+    },
+    {
+      "id": "WATER",
+      "name": "water",
+      "prefabIds": [],
+      "prefabs": [],
+      "status": "INCOMPLETE"
+    },
+    {
+      "id": "ROAD",
+      "name": "road",
+      "prefabIds": [
+        "road/local/straight",
+        "road/local/t-junction"
+      ],
+      "prefabs": [
+        "road/local/straight",
+        "road/local/t-junction"
+      ],
+      "status": "IMPLEMENTED_AND_VERIFIED"
+    },
+    {
+      "id": "FOOTPATH",
+      "name": "footpath",
+      "prefabIds": [],
+      "prefabs": [],
+      "status": "INCOMPLETE"
+    },
+    {
+      "id": "CYCLEWAY",
+      "name": "cycleway",
+      "prefabIds": [],
+      "prefabs": [],
+      "status": "INCOMPLETE"
+    },
+    {
+      "id": "RAILWAY",
+      "name": "railway",
+      "prefabIds": [
+        "rail/straight",
+        "rail/full-section-grade",
+        "rail/curve/radius-80"
+      ],
+      "prefabs": [
+        "rail/straight",
+        "rail/full-section-grade",
+        "rail/curve/radius-80"
+      ],
+      "status": "IMPLEMENTED_AND_VERIFIED"
+    },
+    {
+      "id": "TRAMWAY",
+      "name": "tramway",
+      "prefabIds": [],
+      "prefabs": [],
+      "status": "INCOMPLETE"
+    },
+    {
+      "id": "TRACKWORK",
+      "name": "trackwork",
+      "prefabIds": [],
+      "prefabs": [],
+      "status": "INCOMPLETE"
+    },
+    {
+      "id": "RAIL_SIGNAL",
+      "name": "rail signal",
+      "prefabIds": [],
+      "prefabs": [],
+      "status": "INCOMPLETE"
+    },
+    {
+      "id": "ROAD_SIGNAL",
+      "name": "road signal",
+      "prefabIds": [],
+      "prefabs": [],
+      "status": "INCOMPLETE"
+    },
+    {
+      "id": "LEVEL_CROSSING",
+      "name": "level crossing",
+      "prefabIds": [],
+      "prefabs": [],
+      "status": "INCOMPLETE"
+    },
+    {
+      "id": "PLATFORM",
+      "name": "platform",
+      "prefabIds": [
+        "station/platform/side-section"
+      ],
+      "prefabs": [
+        "station/platform/side-section"
+      ],
+      "status": "IMPLEMENTED_AND_VERIFIED"
+    },
+    {
+      "id": "STATION",
+      "name": "station",
+      "prefabIds": [],
+      "prefabs": [],
+      "status": "INCOMPLETE"
+    },
+    {
+      "id": "BUILDING",
+      "name": "building",
+      "prefabIds": [
+        "building/uk/victorian-terrace",
+        "building/uk/brick-cottage"
+      ],
+      "prefabs": [
+        "building/uk/victorian-terrace",
+        "building/uk/brick-cottage"
+      ],
+      "status": "IMPLEMENTED_AND_VERIFIED"
+    },
+    {
+      "id": "INDUSTRIAL_BUILDING",
+      "name": "industrial building",
+      "prefabIds": [
+        "building/industrial/portal-warehouse"
+      ],
+      "prefabs": [
+        "building/industrial/portal-warehouse"
+      ],
+      "status": "IMPLEMENTED_AND_VERIFIED"
+    },
+    {
+      "id": "BRIDGE",
+      "name": "bridge",
+      "prefabIds": [
+        "bridge/steel/span-32"
+      ],
+      "prefabs": [
+        "bridge/steel/span-32"
+      ],
+      "status": "IMPLEMENTED_AND_VERIFIED"
+    },
+    {
+      "id": "TUNNEL",
+      "name": "tunnel",
+      "prefabIds": [],
+      "prefabs": [],
+      "status": "INCOMPLETE"
+    },
+    {
+      "id": "VIADUCT",
+      "name": "viaduct",
+      "prefabIds": [],
+      "prefabs": [],
+      "status": "INCOMPLETE"
+    },
+    {
+      "id": "RETAINING_WALL",
+      "name": "retaining wall",
+      "prefabIds": [],
+      "prefabs": [],
+      "status": "INCOMPLETE"
+    },
+    {
+      "id": "CULVERT",
+      "name": "culvert",
+      "prefabIds": [],
+      "prefabs": [],
+      "status": "INCOMPLETE"
+    },
+    {
+      "id": "FOUNDATION",
+      "name": "foundation",
+      "prefabIds": [],
+      "prefabs": [],
+      "status": "INCOMPLETE"
+    },
+    {
+      "id": "FENCE",
+      "name": "fence",
+      "prefabIds": [
+        "fence/timber/section"
+      ],
+      "prefabs": [
+        "fence/timber/section"
+      ],
+      "status": "IMPLEMENTED_AND_VERIFIED"
+    },
+    {
+      "id": "HEDGE",
+      "name": "hedge",
+      "prefabIds": [],
+      "prefabs": [],
+      "status": "INCOMPLETE"
+    },
+    {
+      "id": "TREE",
+      "name": "tree",
+      "prefabIds": [
+        "vegetation/oak/medium"
+      ],
+      "prefabs": [
+        "vegetation/oak/medium"
+      ],
+      "status": "IMPLEMENTED_AND_VERIFIED"
+    },
+    {
+      "id": "SHRUB",
+      "name": "shrub",
+      "prefabIds": [],
+      "prefabs": [],
+      "status": "INCOMPLETE"
+    },
+    {
+      "id": "VEGETATION",
+      "name": "vegetation",
+      "prefabIds": [],
+      "prefabs": [],
+      "status": "INCOMPLETE"
+    },
+    {
+      "id": "STREET_FURNITURE",
+      "name": "street furniture",
+      "prefabIds": [],
+      "prefabs": [],
+      "status": "INCOMPLETE"
+    },
+    {
+      "id": "RAILWAY_FURNITURE",
+      "name": "railway furniture",
+      "prefabIds": [],
+      "prefabs": [],
+      "status": "INCOMPLETE"
+    },
+    {
+      "id": "LANDMARK",
+      "name": "landmark",
+      "prefabIds": [],
+      "prefabs": [],
+      "status": "INCOMPLETE"
+    },
+    {
+      "id": "DEPOT_EQUIPMENT",
+      "name": "depot equipment",
+      "prefabIds": [],
+      "prefabs": [],
+      "status": "INCOMPLETE"
+    },
+    {
+      "id": "CHARACTER_SPAWN",
+      "name": "character spawn",
+      "prefabIds": [],
+      "prefabs": [],
+      "status": "INCOMPLETE"
+    },
+    {
+      "id": "VEHICLE_SPAWN",
+      "name": "vehicle spawn",
+      "prefabIds": [],
+      "prefabs": [],
+      "status": "INCOMPLETE"
+    },
+    {
+      "id": "AMBIENT_ZONE",
+      "name": "ambient zone",
+      "prefabIds": [],
+      "prefabs": [],
+      "status": "INCOMPLETE"
+    }
+  ],
+  "remaining": [
+    "Legacy runtime placement still exists outside the slice",
+    "Other terrain slope masks, retained steps, tunnels and grade exceptions are not implemented in the new compositor",
+    "No full-route migration or station visual acceptance",
+    "No hardware performance acceptance"
+  ]
+}

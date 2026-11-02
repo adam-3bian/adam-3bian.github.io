@@ -1,0 +1,2562 @@
+{
+  "schema": 1,
+  "id": "kid-west",
+  "bounds": [
+    -16288,
+    3536,
+    -16160,
+    3728
+  ],
+  "terrain": [
+    {
+      "x": -1018,
+      "z": 221,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1018,
+      "z": 222,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1018,
+      "z": 223,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1018,
+      "z": 224,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1018,
+      "z": 225,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1018,
+      "z": 226,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "tree-0"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1018,
+      "z": 227,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "tree-0"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1018,
+      "z": 228,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1018,
+      "z": 229,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "road-0"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1018,
+      "z": 230,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "road-0"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1018,
+      "z": 231,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1018,
+      "z": 232,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1017,
+      "z": 221,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1017,
+      "z": 222,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1017,
+      "z": 223,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1017,
+      "z": 224,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1017,
+      "z": 225,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1017,
+      "z": 226,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "tree-0"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1017,
+      "z": 227,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "tree-0"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1017,
+      "z": 228,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1017,
+      "z": 229,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "junction-1",
+        "road-0"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1017,
+      "z": 230,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "junction-1",
+        "road-0",
+        "road-2"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1017,
+      "z": 231,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "road-2"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1017,
+      "z": 232,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1016,
+      "z": 221,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1016,
+      "z": 222,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "house-1"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1016,
+      "z": 223,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "fence-0"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1016,
+      "z": 224,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "rail-0"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1016,
+      "z": 225,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "platform-0",
+        "rail-0"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1016,
+      "z": 226,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1016,
+      "z": 227,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1016,
+      "z": 228,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1016,
+      "z": 229,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "junction-1",
+        "road-1"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1016,
+      "z": 230,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "junction-1",
+        "road-1",
+        "road-2"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1016,
+      "z": 231,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "road-2"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1016,
+      "z": 232,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1015,
+      "z": 221,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1015,
+      "z": 222,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1015,
+      "z": 223,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "fence-1"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1015,
+      "z": 224,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "rail-0",
+        "rail-1"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1015,
+      "z": 225,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "platform-1",
+        "rail-0",
+        "rail-1"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1015,
+      "z": 226,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1015,
+      "z": 227,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "tree-1"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1015,
+      "z": 228,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "tree-1"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1015,
+      "z": 229,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "road-1"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1015,
+      "z": 230,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "road-1"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1015,
+      "z": 231,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1015,
+      "z": 232,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1014,
+      "z": 221,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1014,
+      "z": 222,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1014,
+      "z": 223,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "fence-2"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1014,
+      "z": 224,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "bridge-1",
+        "bridge-road-0",
+        "rail-1",
+        "rail-2"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1014,
+      "z": 225,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "bridge-1",
+        "bridge-road-0",
+        "bridge-road-1",
+        "rail-1",
+        "rail-2"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1014,
+      "z": 226,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "bridge-road-1"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1014,
+      "z": 227,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1014,
+      "z": 228,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1014,
+      "z": 229,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1014,
+      "z": 230,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1014,
+      "z": 231,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1014,
+      "z": 232,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1013,
+      "z": 221,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1013,
+      "z": 222,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1013,
+      "z": 223,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1013,
+      "z": 224,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "rail-2",
+        "rail-3"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1013,
+      "z": 225,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "rail-2",
+        "rail-3",
+        "rail-curve"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1013,
+      "z": 226,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1013,
+      "z": 227,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1013,
+      "z": 228,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1013,
+      "z": 229,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1013,
+      "z": 230,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1013,
+      "z": 231,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1013,
+      "z": 232,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1012,
+      "z": 221,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "warehouse-1"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1012,
+      "z": 222,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "warehouse-1"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1012,
+      "z": 223,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "warehouse-1"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1012,
+      "z": 224,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "rail-3",
+        "rail-curve"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1012,
+      "z": 225,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "rail-3",
+        "rail-curve"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1012,
+      "z": 226,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1012,
+      "z": 227,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1012,
+      "z": 228,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1012,
+      "z": 229,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1012,
+      "z": 230,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1012,
+      "z": 231,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1012,
+      "z": 232,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1011,
+      "z": 221,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "warehouse-1"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1011,
+      "z": 222,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "warehouse-1"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1011,
+      "z": 223,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "warehouse-1"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1011,
+      "z": 224,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "rail-curve"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1011,
+      "z": 225,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "rail-curve"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1011,
+      "z": 226,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1011,
+      "z": 227,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1011,
+      "z": 228,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1011,
+      "z": 229,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1011,
+      "z": 230,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1011,
+      "z": 231,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1011,
+      "z": 232,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    }
+  ],
+  "instances": [
+    {
+      "id": "rail-0",
+      "prefabId": "rail/straight",
+      "anchor": [
+        -1625600,
+        1872,
+        360000
+      ],
+      "rotation": 0,
+      "variant": {
+        "seed": 1
+      },
+      "source": {
+        "confidence": "VISUAL_APPROXIMATION",
+        "sourceIds": [
+          "kidderminster"
+        ],
+        "url": "references/location-reference-manifest.json",
+        "date": "2026-11-02",
+        "note": "Construction acceptance arrangement in existing Kidderminster coordinate frame; not a surveyed replacement for the station."
+      },
+      "occupancy": [
+        "-1015,224",
+        "-1015,225",
+        "-1016,224",
+        "-1016,225"
+      ],
+      "nodes": [
+        "start",
+        "grade-start"
+      ],
+      "profile": {
+        "state": "LEVEL",
+        "riseTicks": 0,
+        "startGrade": 0,
+        "endGrade": 0
+      }
+    },
+    {
+      "id": "rail-1",
+      "prefabId": "rail/full-section-grade",
+      "anchor": [
+        -1624000,
+        1872,
+        360000
+      ],
+      "rotation": 0,
+      "variant": {
+        "seed": 1
+      },
+      "source": {
+        "confidence": "VISUAL_APPROXIMATION",
+        "sourceIds": [
+          "kidderminster"
+        ],
+        "url": "references/location-reference-manifest.json",
+        "date": "2026-11-02",
+        "note": "Construction acceptance arrangement in existing Kidderminster coordinate frame; not a surveyed replacement for the station."
+      },
+      "occupancy": [
+        "-1014,224",
+        "-1014,225",
+        "-1015,224",
+        "-1015,225"
+      ],
+      "nodes": [
+        "grade-start",
+        "grade-middle"
+      ],
+      "profile": {
+        "state": "FULL_TILE_UPHILL",
+        "riseTicks": 1,
+        "startGrade": 0,
+        "endGrade": 0.00390625
+      }
+    },
+    {
+      "id": "rail-2",
+      "prefabId": "rail/full-section-grade",
+      "anchor": [
+        -1622400,
+        1873,
+        360000
+      ],
+      "rotation": 0,
+      "variant": {
+        "seed": 1
+      },
+      "source": {
+        "confidence": "VISUAL_APPROXIMATION",
+        "sourceIds": [
+          "kidderminster"
+        ],
+        "url": "references/location-reference-manifest.json",
+        "date": "2026-11-02",
+        "note": "Construction acceptance arrangement in existing Kidderminster coordinate frame; not a surveyed replacement for the station."
+      },
+      "occupancy": [
+        "-1013,224",
+        "-1013,225",
+        "-1014,224",
+        "-1014,225"
+      ],
+      "nodes": [
+        "grade-middle",
+        "grade-end"
+      ],
+      "profile": {
+        "state": "FULL_TILE_UPHILL",
+        "riseTicks": 2,
+        "startGrade": 0.00390625,
+        "endGrade": 0.00390625
+      }
+    },
+    {
+      "id": "rail-3",
+      "prefabId": "rail/full-section-grade",
+      "anchor": [
+        -1620800,
+        1875,
+        360000
+      ],
+      "rotation": 0,
+      "variant": {
+        "seed": 1
+      },
+      "source": {
+        "confidence": "VISUAL_APPROXIMATION",
+        "sourceIds": [
+          "kidderminster"
+        ],
+        "url": "references/location-reference-manifest.json",
+        "date": "2026-11-02",
+        "note": "Construction acceptance arrangement in existing Kidderminster coordinate frame; not a surveyed replacement for the station."
+      },
+      "occupancy": [
+        "-1012,224",
+        "-1012,225",
+        "-1013,224",
+        "-1013,225"
+      ],
+      "nodes": [
+        "grade-end",
+        "curve-start"
+      ],
+      "profile": {
+        "state": "FULL_TILE_UPHILL",
+        "riseTicks": 1,
+        "startGrade": 0.00390625,
+        "endGrade": 0
+      }
+    },
+    {
+      "id": "rail-curve",
+      "prefabId": "rail/curve/radius-80",
+      "anchor": [
+        -1619200,
+        1876,
+        360000
+      ],
+      "rotation": 0,
+      "variant": {
+        "seed": 1
+      },
+      "source": {
+        "confidence": "VISUAL_APPROXIMATION",
+        "sourceIds": [
+          "kidderminster"
+        ],
+        "url": "references/location-reference-manifest.json",
+        "date": "2026-11-02",
+        "note": "Construction acceptance arrangement in existing Kidderminster coordinate frame; not a surveyed replacement for the station."
+      },
+      "occupancy": [
+        "-1007,228",
+        "-1007,229",
+        "-1007,230",
+        "-1008,226",
+        "-1008,227",
+        "-1008,228",
+        "-1008,229",
+        "-1008,230",
+        "-1009,225",
+        "-1009,226",
+        "-1009,227",
+        "-1010,225",
+        "-1010,226",
+        "-1011,224",
+        "-1011,225",
+        "-1012,224",
+        "-1012,225",
+        "-1013,225"
+      ],
+      "nodes": [
+        "curve-start",
+        "curve-end"
+      ],
+      "profile": {
+        "state": "LEVEL",
+        "riseTicks": 0,
+        "startGrade": 0,
+        "endGrade": 0
+      }
+    },
+    {
+      "id": "platform-0",
+      "prefabId": "station/platform/side-section",
+      "anchor": [
+        -1625600,
+        1872,
+        360400
+      ],
+      "rotation": 0,
+      "variant": {
+        "seed": 1
+      },
+      "source": {
+        "confidence": "VISUAL_APPROXIMATION",
+        "sourceIds": [
+          "kidderminster"
+        ],
+        "url": "references/location-reference-manifest.json",
+        "date": "2026-11-02",
+        "note": "Construction acceptance arrangement in existing Kidderminster coordinate frame; not a surveyed replacement for the station."
+      },
+      "occupancy": [
+        "-1016,225"
+      ],
+      "track": "rail-0"
+    },
+    {
+      "id": "platform-1",
+      "prefabId": "station/platform/side-section",
+      "anchor": [
+        -1624000,
+        1872,
+        360400
+      ],
+      "rotation": 0,
+      "variant": {
+        "seed": 1
+      },
+      "source": {
+        "confidence": "VISUAL_APPROXIMATION",
+        "sourceIds": [
+          "kidderminster"
+        ],
+        "url": "references/location-reference-manifest.json",
+        "date": "2026-11-02",
+        "note": "Construction acceptance arrangement in existing Kidderminster coordinate frame; not a surveyed replacement for the station."
+      },
+      "occupancy": [
+        "-1015,225"
+      ],
+      "track": "rail-1"
+    },
+    {
+      "id": "house-1",
+      "prefabId": "building/uk/victorian-terrace",
+      "anchor": [
+        -1624800,
+        1864,
+        356000
+      ],
+      "rotation": 0,
+      "variant": {
+        "seed": 1
+      },
+      "source": {
+        "confidence": "VISUAL_APPROXIMATION",
+        "sourceIds": [
+          "kidderminster"
+        ],
+        "url": "references/location-reference-manifest.json",
+        "date": "2026-11-02",
+        "note": "Construction acceptance arrangement in existing Kidderminster coordinate frame; not a surveyed replacement for the station."
+      },
+      "occupancy": [
+        "-1016,222"
+      ],
+      "foundation": {
+        "type": "LEVEL_SLAB",
+        "bottomTicks": 1854
+      }
+    },
+    {
+      "id": "warehouse-1",
+      "prefabId": "building/industrial/portal-warehouse",
+      "anchor": [
+        -1616400,
+        1864,
+        356000
+      ],
+      "rotation": 0,
+      "variant": {
+        "seed": 1
+      },
+      "source": {
+        "confidence": "VISUAL_APPROXIMATION",
+        "sourceIds": [
+          "kidderminster"
+        ],
+        "url": "references/location-reference-manifest.json",
+        "date": "2026-11-02",
+        "note": "Construction acceptance arrangement in existing Kidderminster coordinate frame; not a surveyed replacement for the station."
+      },
+      "occupancy": [
+        "-1010,221",
+        "-1010,222",
+        "-1010,223",
+        "-1011,221",
+        "-1011,222",
+        "-1011,223",
+        "-1012,221",
+        "-1012,222",
+        "-1012,223"
+      ],
+      "foundation": {
+        "type": "LEVEL_SLAB",
+        "bottomTicks": 1854
+      }
+    },
+    {
+      "id": "bridge-1",
+      "prefabId": "bridge/steel/span-32",
+      "anchor": [
+        -1621600,
+        2080,
+        358400
+      ],
+      "rotation": 1,
+      "variant": {
+        "seed": 1
+      },
+      "source": {
+        "confidence": "VISUAL_APPROXIMATION",
+        "sourceIds": [
+          "kidderminster"
+        ],
+        "url": "references/location-reference-manifest.json",
+        "date": "2026-11-02",
+        "note": "Construction acceptance arrangement in existing Kidderminster coordinate frame; not a surveyed replacement for the station."
+      },
+      "occupancy": [
+        "-1014,224",
+        "-1014,225"
+      ],
+      "supports": [
+        {
+          "bottomTicks": 1856
+        },
+        {
+          "bottomTicks": 1856
+        }
+      ]
+    },
+    {
+      "id": "bridge-road-0",
+      "prefabId": "road/local/straight",
+      "anchor": [
+        -1621600,
+        2080,
+        358400
+      ],
+      "rotation": 1,
+      "variant": {
+        "seed": 1
+      },
+      "source": {
+        "confidence": "VISUAL_APPROXIMATION",
+        "sourceIds": [
+          "kidderminster"
+        ],
+        "url": "references/location-reference-manifest.json",
+        "date": "2026-11-02",
+        "note": "Construction acceptance arrangement in existing Kidderminster coordinate frame; not a surveyed replacement for the station."
+      },
+      "occupancy": [
+        "-1014,224",
+        "-1014,225"
+      ],
+      "nodes": [
+        "bridge-road-0",
+        "bridge-road-1"
+      ],
+      "profile": {
+        "state": "LEVEL",
+        "riseTicks": 0,
+        "startGrade": 0,
+        "endGrade": 0
+      },
+      "support": {
+        "instanceId": "bridge-1",
+        "surface": "BRIDGE_DECK"
+      }
+    },
+    {
+      "id": "bridge-road-1",
+      "prefabId": "road/local/straight",
+      "anchor": [
+        -1621600,
+        2080,
+        360000
+      ],
+      "rotation": 1,
+      "variant": {
+        "seed": 1
+      },
+      "source": {
+        "confidence": "VISUAL_APPROXIMATION",
+        "sourceIds": [
+          "kidderminster"
+        ],
+        "url": "references/location-reference-manifest.json",
+        "date": "2026-11-02",
+        "note": "Construction acceptance arrangement in existing Kidderminster coordinate frame; not a surveyed replacement for the station."
+      },
+      "occupancy": [
+        "-1014,225",
+        "-1014,226"
+      ],
+      "nodes": [
+        "bridge-road-1",
+        "bridge-road-2"
+      ],
+      "profile": {
+        "state": "LEVEL",
+        "riseTicks": 0,
+        "startGrade": 0,
+        "endGrade": 0
+      },
+      "support": {
+        "instanceId": "bridge-1",
+        "surface": "BRIDGE_DECK"
+      }
+    },
+    {
+      "id": "road-0",
+      "prefabId": "road/local/straight",
+      "anchor": [
+        -1628000,
+        1860,
+        368000
+      ],
+      "rotation": 0,
+      "variant": {
+        "seed": 1
+      },
+      "source": {
+        "confidence": "VISUAL_APPROXIMATION",
+        "sourceIds": [
+          "kidderminster"
+        ],
+        "url": "references/location-reference-manifest.json",
+        "date": "2026-11-02",
+        "note": "Construction acceptance arrangement in existing Kidderminster coordinate frame; not a surveyed replacement for the station."
+      },
+      "occupancy": [
+        "-1017,229",
+        "-1017,230",
+        "-1018,229",
+        "-1018,230"
+      ],
+      "nodes": [
+        "road-start",
+        "junction-west"
+      ],
+      "profile": {
+        "state": "LEVEL",
+        "riseTicks": 0,
+        "startGrade": 0,
+        "endGrade": 0
+      }
+    },
+    {
+      "id": "junction-1",
+      "prefabId": "road/local/t-junction",
+      "anchor": [
+        -1625600,
+        1860,
+        368000
+      ],
+      "rotation": 0,
+      "variant": {
+        "seed": 1
+      },
+      "source": {
+        "confidence": "VISUAL_APPROXIMATION",
+        "sourceIds": [
+          "kidderminster"
+        ],
+        "url": "references/location-reference-manifest.json",
+        "date": "2026-11-02",
+        "note": "Construction acceptance arrangement in existing Kidderminster coordinate frame; not a surveyed replacement for the station."
+      },
+      "occupancy": [
+        "-1016,229",
+        "-1016,230",
+        "-1017,229",
+        "-1017,230"
+      ],
+      "nodes": [
+        "junction-west",
+        "junction-east",
+        "junction-south"
+      ]
+    },
+    {
+      "id": "road-1",
+      "prefabId": "road/local/straight",
+      "anchor": [
+        -1624800,
+        1860,
+        368000
+      ],
+      "rotation": 0,
+      "variant": {
+        "seed": 1
+      },
+      "source": {
+        "confidence": "VISUAL_APPROXIMATION",
+        "sourceIds": [
+          "kidderminster"
+        ],
+        "url": "references/location-reference-manifest.json",
+        "date": "2026-11-02",
+        "note": "Construction acceptance arrangement in existing Kidderminster coordinate frame; not a surveyed replacement for the station."
+      },
+      "occupancy": [
+        "-1015,229",
+        "-1015,230",
+        "-1016,229",
+        "-1016,230"
+      ],
+      "nodes": [
+        "junction-east",
+        "road-end"
+      ],
+      "profile": {
+        "state": "LEVEL",
+        "riseTicks": 0,
+        "startGrade": 0,
+        "endGrade": 0
+      }
+    },
+    {
+      "id": "road-2",
+      "prefabId": "road/local/straight",
+      "anchor": [
+        -1625600,
+        1860,
+        368800
+      ],
+      "rotation": 1,
+      "variant": {
+        "seed": 1
+      },
+      "source": {
+        "confidence": "VISUAL_APPROXIMATION",
+        "sourceIds": [
+          "kidderminster"
+        ],
+        "url": "references/location-reference-manifest.json",
+        "date": "2026-11-02",
+        "note": "Construction acceptance arrangement in existing Kidderminster coordinate frame; not a surveyed replacement for the station."
+      },
+      "occupancy": [
+        "-1016,230",
+        "-1016,231",
+        "-1017,230",
+        "-1017,231"
+      ],
+      "nodes": [
+        "junction-south",
+        "road-south-end"
+      ],
+      "profile": {
+        "state": "LEVEL",
+        "riseTicks": 0,
+        "startGrade": 0,
+        "endGrade": 0
+      }
+    },
+    {
+      "id": "tree-0",
+      "prefabId": "vegetation/oak/medium",
+      "anchor": [
+        -1627200,
+        1856,
+        363200
+      ],
+      "rotation": 0,
+      "variant": {
+        "seed": 1
+      },
+      "source": {
+        "confidence": "VISUAL_APPROXIMATION",
+        "sourceIds": [
+          "kidderminster"
+        ],
+        "url": "references/location-reference-manifest.json",
+        "date": "2026-11-02",
+        "note": "Construction acceptance arrangement in existing Kidderminster coordinate frame; not a surveyed replacement for the station."
+      },
+      "occupancy": [
+        "-1017,226",
+        "-1017,227",
+        "-1018,226",
+        "-1018,227"
+      ]
+    },
+    {
+      "id": "tree-1",
+      "prefabId": "vegetation/oak/medium",
+      "anchor": [
+        -1623200,
+        1856,
+        364800
+      ],
+      "rotation": 0,
+      "variant": {
+        "seed": 2
+      },
+      "source": {
+        "confidence": "VISUAL_APPROXIMATION",
+        "sourceIds": [
+          "kidderminster"
+        ],
+        "url": "references/location-reference-manifest.json",
+        "date": "2026-11-02",
+        "note": "Construction acceptance arrangement in existing Kidderminster coordinate frame; not a surveyed replacement for the station."
+      },
+      "occupancy": [
+        "-1015,227",
+        "-1015,228"
+      ]
+    },
+    {
+      "id": "fence-0",
+      "prefabId": "fence/timber/section",
+      "anchor": [
+        -1625600,
+        1856,
+        357600
+      ],
+      "rotation": 0,
+      "variant": {
+        "seed": 1
+      },
+      "source": {
+        "confidence": "VISUAL_APPROXIMATION",
+        "sourceIds": [
+          "kidderminster"
+        ],
+        "url": "references/location-reference-manifest.json",
+        "date": "2026-11-02",
+        "note": "Construction acceptance arrangement in existing Kidderminster coordinate frame; not a surveyed replacement for the station."
+      },
+      "occupancy": [
+        "-1016,223"
+      ]
+    },
+    {
+      "id": "fence-1",
+      "prefabId": "fence/timber/section",
+      "anchor": [
+        -1624000,
+        1856,
+        357600
+      ],
+      "rotation": 0,
+      "variant": {
+        "seed": 1
+      },
+      "source": {
+        "confidence": "VISUAL_APPROXIMATION",
+        "sourceIds": [
+          "kidderminster"
+        ],
+        "url": "references/location-reference-manifest.json",
+        "date": "2026-11-02",
+        "note": "Construction acceptance arrangement in existing Kidderminster coordinate frame; not a surveyed replacement for the station."
+      },
+      "occupancy": [
+        "-1015,223"
+      ]
+    },
+    {
+      "id": "fence-2",
+      "prefabId": "fence/timber/section",
+      "anchor": [
+        -1622400,
+        1856,
+        357600
+      ],
+      "rotation": 0,
+      "variant": {
+        "seed": 1
+      },
+      "source": {
+        "confidence": "VISUAL_APPROXIMATION",
+        "sourceIds": [
+          "kidderminster"
+        ],
+        "url": "references/location-reference-manifest.json",
+        "date": "2026-11-02",
+        "note": "Construction acceptance arrangement in existing Kidderminster coordinate frame; not a surveyed replacement for the station."
+      },
+      "occupancy": [
+        "-1014,223"
+      ]
+    }
+  ],
+  "crossings": [
+    {
+      "lower": "rail-2",
+      "upper": "bridge-1",
+      "distance": 8,
+      "minimumClearance": 5.5
+    }
+  ]
+}

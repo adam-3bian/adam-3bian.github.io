@@ -5,8 +5,9 @@ The deployed `site/` is static and needs no server-side runtime.
 
 The world compiler starts from the checked-in, previously normalised route,
 terrain and reconstruction controls in `public/data/`, plus the dated OSM
-extracts in `references/geography/`. It rebuilds `public/data/grid/` with
-`npm run build:world`; it does not need a network connection. New OSM station
+extracts in `references/geography/`. It writes a review draft with
+`npm run build:world -- --output work/grid-import-draft`; it cannot overwrite
+`public/data/grid/` and does not need a network connection. New OSM station
 extracts can be downloaded with `node scripts/fetch-osm-landscape.js` before a
 world rebuild. `scripts/fetch-osm-buffer-stops.js` and
 `scripts/fetch-osm-crossings.js` likewise archive the mapped source nodes used

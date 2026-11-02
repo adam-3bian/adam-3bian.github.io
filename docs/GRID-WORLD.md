@@ -1,5 +1,11 @@
 # Authoritative grid reconstruction
 
+Current qualification: this legacy description concerns broad map records.
+Permanent trees and several component/support placements still derive at runtime;
+the complete route is not yet prefab/JSON-authoritative. The newer
+[prefab implementation audit](PREFAB-CONSTRUCTION.md) records the actual boundary
+and the first separately tested construction scene.
+
 Scope is the existing Kidderminster–Birmingham–Dorridge game, on `railway` only.
 The SVR is **Kidderminster scenery only**: Town station, its yard and works,
 exchange connection and the nearby departing line. There is no SVR journey,
@@ -91,7 +97,7 @@ state; recovering such a backup requires the corresponding older game version.
 Build from the checked-in controls and archived source extracts with Node.js:
 
 ```sh
-npm run build:world
+npm run build:world -- --output work/grid-import-draft
 npm run check
 npm test
 npm run build:qa

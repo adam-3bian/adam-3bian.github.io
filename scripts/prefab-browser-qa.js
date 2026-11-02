@@ -1,0 +1,54 @@
+import {createServer} from 'node:http';
+import {createReadStream,existsSync,mkdirSync,statSync,writeFileSync,readFileSync} from 'node:fs';
+import {resolve,join,extname} from 'node:path';
+import {createHash} from 'node:crypto';
+import os from 'node:os';
+import {chromium} from 'playwright-core';
+const root=resolve('work/qa-dist'),out='work/prefab/browser';mkdirSync(out,{recursive:true});
+const types={'.html':'text/html','.js':'text/javascript','.css':'text/css','.json':'application/json','.bin':'application/octet-stream'};
+const server=createServer((req,res)=>{const pathname=new URL(req.url,'http://local').pathname.replace(/^\/nested\//,'/'),path=resolve(root,'.'+decodeURIComponent(pathname)),file=path===root?join(root,'index.html'):path;if(!file.startsWith(root+'/')||!existsSync(file)||!statSync(file).isFile()){res.writeHead(404);res.end();return;}res.writeHead(200,{'Content-Type':types[extname(file)]||'application/octet-stream','Cache-Control':'no-store'});createReadStream(file).pipe(res);});
+await new Promise(r=>server.listen(4183,'127.0.0.1',r));
+const report={scope:'Prefab scene only; Chromium SwiftShader at 1080p, not the RTX 3060 or full-route performance gate',cpu:os.cpus()[0].model,errors:[],checks:{},captures:[]};let browser;
+try{
+ browser=await chromium.launch({executablePath:process.env.RAILWAY_CHROMIUM||'/usr/bin/chromium',headless:true,args:['--no-sandbox','--disable-dev-shm-usage','--use-angle=swiftshader','--enable-unsafe-swiftshader']});report.browser=browser.version();
+ const page=await browser.newPage({viewport:{width:1920,height:1080}});page.on('pageerror',e=>report.errors.push(String(e)));const start=performance.now();
+ await page.goto('http://127.0.0.1:4183/nested/prefab-preview.html');await page.waitForFunction('window.__prefab?.ready || !document.getElementById("error").hidden',null,{timeout:60000});if(await page.locator('#error').isVisible())throw Error(await page.locator('#error').innerText());
+ report.loadMs=performance.now()-start;report.checks.ready=await page.evaluate('__prefab.ready');
+ report.graphics=await page.evaluate(()=>{const gl=__prefab.renderer.getContext(),ext=gl.getExtension('WEBGL_debug_renderer_info');return {gpu:ext?gl.getParameter(ext.UNMASKED_RENDERER_WEBGL):gl.getParameter(gl.RENDERER),error:gl.getError(),resolution:[gl.drawingBufferWidth,gl.drawingBufferHeight]};});
+ const capture=async name=>{const path=`${out}/${name}.png`;await page.screenshot({path});report.captures.push({name,path,sha256:createHash('sha256').update(readFileSync(path)).digest('hex')});};
+ await capture('context');
+ report.checks.jsonEdits=await page.evaluate(async()=>{
+  const original=structuredClone(__prefab.chunks),changed=structuredClone(original),house=changed.flatMap(c=>c.instances).find(i=>i.id==='house-1');house.anchor[0]+=100;house.prefabId='building/uk/brick-cottage';
+  const summary=await __prefab.apply(changed),entry=__prefab.model.instances.get('house-1');
+  if(entry.instance.anchor[0]!==house.anchor[0]||entry.definition.id!=='building/uk/brick-cottage')throw Error('JSON edit did not compose');
+  const save=await __prefab.snapshot();window.prefabSaved=structuredClone(save);return {summary,anchor:house.anchor,prefabId:entry.definition.id};
+ });
+ await capture('json-edit');
+ await page.route('**/data/**',route=>route.abort());
+ report.checks.offline=await page.evaluate(async()=>{await __prefab.load(window.prefabSaved);return {anchor:__prefab.model.instances.get('house-1').instance.anchor,prefabId:__prefab.model.instances.get('house-1').definition.id,chunks:__prefab.chunks.length};});
+ if(JSON.stringify(report.checks.offline.anchor)!==JSON.stringify(report.checks.jsonEdits.anchor))throw Error('Offline edit lost');
+ await page.unroute('**/data/**');await page.evaluate('__prefab.load()');
+ await page.locator('#drive').click();await page.waitForTimeout(1800);await capture('along-track');
+ const times=await page.evaluate(async()=>{const frames=[];let last=performance.now();for(let i=0;i<120;i++)await new Promise(resolve=>requestAnimationFrame(now=>{frames.push(now-last);last=now;resolve();}));return frames;});times.sort((a,b)=>a-b);report.frameSample={frames:times.length,medianMs:times[60],p95Ms:times[114],maximumMs:times.at(-1),scope:'short isolated fixture sample; no streaming or memory benchmark'};
+ await page.route('**/kid-east.json',route=>route.fulfill({status:404,body:'missing fixture'}));await page.locator('#reload').click();await page.waitForSelector('#error:not([hidden])');report.checks.missingChunk=await page.locator('#error').innerText();if(!/kid-east.*HTTP 404/.test(report.checks.missingChunk))throw Error('Missing chunk not actionable');
+ await page.close();
+ const game=await browser.newPage({viewport:{width:960,height:600}});game.setDefaultTimeout(240000);game.on('pageerror',e=>report.errors.push(String(e)));
+ const gameStart=performance.now();await game.goto('http://127.0.0.1:4183/nested/',{waitUntil:'domcontentloaded'});
+ await game.waitForFunction('window.__railway && document.getElementById("loading").hidden && !document.getElementById("begin").disabled || !document.getElementById("error").hidden');
+ if(await game.locator('#error').isVisible())throw Error(await game.locator('#error-text').innerText());
+ report.checks.routeLoadMs=performance.now()-gameStart;
+ report.checks.driving=await game.evaluate(async()=>{const r=__railway;r.stopAnimation();r.sim.paused=true;r.startAt('KID',1);const before=r.sim.player.s;r.input.a=true;r.advance(12,true);r.input.a=false;await r.view.preparePosition();r.render();r.view.finishFrame();return {before,after:r.sim.player.s,speed:r.sim.player.speed,webglError:r.view.renderer.getContext().getError()};});
+ if(report.checks.driving.after<=report.checks.driving.before||report.checks.driving.webglError)throw Error('Existing driving regression');
+ await game.screenshot({path:`${out}/existing-route.png`});
+ const previousHash='5ceb8ffcf5bab44eb08e6ec0fa512849f1973704b10a445edaf1ebc3ac3e9f5f';
+ const previous=await game.evaluate(async oldHash=>{const r=__railway,w=await r.world.snapshot(),s={...r.sim.snapshot(),worldHash:oldHash};await r.storage.put(s,w);return {s:s.player.s,revision:w.document.revision,tiles:Object.keys(w.tiles).length};},previousHash);
+ await game.route('**/data/**',route=>route.abort());await game.reload({waitUntil:'domcontentloaded'});
+ await game.waitForFunction('window.__railway && document.getElementById("loading").hidden && !document.getElementById("begin").disabled || !document.getElementById("error").hidden');
+ if(await game.locator('#error').isVisible())throw Error(await game.locator('#error-text').innerText());
+ await game.evaluate('__railway.stopAnimation();__railway.sim.paused=true');await game.locator('#resume-save').click();await game.waitForFunction('document.getElementById("menu").hidden');
+ const resumed=await game.evaluate(()=>({s:__railway.sim.player.s,revision:__railway.world.document.revision}));
+ if(Math.abs(resumed.s-previous.s)>.01||resumed.revision!==previous.revision)throw Error('Prior-release save did not resume offline');
+ report.checks.previousReleaseOffline={previous,resumed};
+ if(report.errors.length)throw Error(report.errors.join('; '));report.status='IMPLEMENTED_AND_VERIFIED';
+}catch(e){report.errors.push(String(e.stack||e));report.status='BLOCKED';process.exitCode=1;}
+finally{if(browser)await browser.close();await new Promise(r=>server.close(r));writeFileSync(`${out}/report.json`,JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));}

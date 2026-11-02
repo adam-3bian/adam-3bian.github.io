@@ -15,7 +15,9 @@
     "audit:geometry": "node --expose-gc scripts/audit-geometry.js",
     "diagnose:world": "node scripts/diagnose-grid-world.js",
     "build:qa": "npm run check && vite build --mode qa --outDir work/qa-dist",
-    "build:world": "node scripts/build-grid-world.js"
+    "build:world": "node scripts/build-grid-world.js",
+    "author:prefabs": "node scripts/index-prefab-scene.js",
+    "diagnose:prefabs": "node scripts/diagnose-prefab-scene.js"
   },
   "dependencies": {
     "three": "0.187.0"

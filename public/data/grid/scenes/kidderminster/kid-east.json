@@ -1,0 +1,1876 @@
+{
+  "schema": 1,
+  "id": "kid-east",
+  "bounds": [
+    -16160,
+    3536,
+    -16032,
+    3728
+  ],
+  "terrain": [
+    {
+      "x": -1010,
+      "z": 221,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "warehouse-1"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1010,
+      "z": 222,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "warehouse-1"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1010,
+      "z": 223,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "warehouse-1"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1010,
+      "z": 224,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1010,
+      "z": 225,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "rail-curve"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1010,
+      "z": 226,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "rail-curve"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1010,
+      "z": 227,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1010,
+      "z": 228,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1010,
+      "z": 229,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1010,
+      "z": 230,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1010,
+      "z": 231,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1010,
+      "z": 232,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1009,
+      "z": 221,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1009,
+      "z": 222,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1009,
+      "z": 223,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1009,
+      "z": 224,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1009,
+      "z": 225,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "rail-curve"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1009,
+      "z": 226,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "rail-curve"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1009,
+      "z": 227,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "rail-curve"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1009,
+      "z": 228,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1009,
+      "z": 229,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1009,
+      "z": 230,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1009,
+      "z": 231,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "tree-2"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1009,
+      "z": 232,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1008,
+      "z": 221,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1008,
+      "z": 222,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1008,
+      "z": 223,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1008,
+      "z": 224,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1008,
+      "z": 225,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1008,
+      "z": 226,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "rail-curve"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1008,
+      "z": 227,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "rail-curve"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1008,
+      "z": 228,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "rail-curve"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1008,
+      "z": 229,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "rail-curve"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1008,
+      "z": 230,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "rail-curve",
+        "rail-exit"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1008,
+      "z": 231,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "rail-exit"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1008,
+      "z": 232,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1007,
+      "z": 221,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1007,
+      "z": 222,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1007,
+      "z": 223,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1007,
+      "z": 224,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1007,
+      "z": 225,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1007,
+      "z": 226,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1007,
+      "z": 227,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1007,
+      "z": 228,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "rail-curve"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1007,
+      "z": 229,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "rail-curve"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1007,
+      "z": 230,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "rail-curve",
+        "rail-exit"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1007,
+      "z": 231,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [
+        "rail-exit"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1007,
+      "z": 232,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "FLAT",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1006,
+      "z": 221,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1006,
+      "z": 222,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1006,
+      "z": 223,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1006,
+      "z": 224,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1006,
+      "z": 225,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1006,
+      "z": 226,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1006,
+      "z": 227,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1006,
+      "z": 228,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1006,
+      "z": 229,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1006,
+      "z": 230,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1006,
+      "z": 231,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1006,
+      "z": 232,
+      "baseHeightTicks": 1856,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1005,
+      "z": 221,
+      "baseHeightTicks": 1872,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1005,
+      "z": 222,
+      "baseHeightTicks": 1872,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1005,
+      "z": 223,
+      "baseHeightTicks": 1872,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1005,
+      "z": 224,
+      "baseHeightTicks": 1872,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1005,
+      "z": 225,
+      "baseHeightTicks": 1872,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1005,
+      "z": 226,
+      "baseHeightTicks": 1872,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1005,
+      "z": 227,
+      "baseHeightTicks": 1872,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1005,
+      "z": 228,
+      "baseHeightTicks": 1872,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1005,
+      "z": 229,
+      "baseHeightTicks": 1872,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1005,
+      "z": 230,
+      "baseHeightTicks": 1872,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [
+        "tree-3"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1005,
+      "z": 231,
+      "baseHeightTicks": 1872,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [
+        "tree-3"
+      ],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1005,
+      "z": 232,
+      "baseHeightTicks": 1872,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1004,
+      "z": 221,
+      "baseHeightTicks": 1888,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1004,
+      "z": 222,
+      "baseHeightTicks": 1888,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1004,
+      "z": 223,
+      "baseHeightTicks": 1888,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1004,
+      "z": 224,
+      "baseHeightTicks": 1888,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1004,
+      "z": 225,
+      "baseHeightTicks": 1888,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1004,
+      "z": 226,
+      "baseHeightTicks": 1888,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1004,
+      "z": 227,
+      "baseHeightTicks": 1888,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1004,
+      "z": 228,
+      "baseHeightTicks": 1888,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1004,
+      "z": 229,
+      "baseHeightTicks": 1888,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1004,
+      "z": 230,
+      "baseHeightTicks": 1888,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1004,
+      "z": 231,
+      "baseHeightTicks": 1888,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1004,
+      "z": 232,
+      "baseHeightTicks": 1888,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1003,
+      "z": 221,
+      "baseHeightTicks": 1904,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1003,
+      "z": 222,
+      "baseHeightTicks": 1904,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1003,
+      "z": 223,
+      "baseHeightTicks": 1904,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1003,
+      "z": 224,
+      "baseHeightTicks": 1904,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1003,
+      "z": 225,
+      "baseHeightTicks": 1904,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1003,
+      "z": 226,
+      "baseHeightTicks": 1904,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1003,
+      "z": 227,
+      "baseHeightTicks": 1904,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1003,
+      "z": 228,
+      "baseHeightTicks": 1904,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1003,
+      "z": 229,
+      "baseHeightTicks": 1904,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1003,
+      "z": 230,
+      "baseHeightTicks": 1904,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1003,
+      "z": 231,
+      "baseHeightTicks": 1904,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    },
+    {
+      "x": -1003,
+      "z": 232,
+      "baseHeightTicks": 1904,
+      "cornerTicks": [
+        0,
+        16,
+        16,
+        0
+      ],
+      "material": "GRASS",
+      "landCover": "RAILWAY_LAND",
+      "earthwork": "NONE",
+      "slopeShape": "CUSTOM_CORNER_HEIGHTS",
+      "waterLevelTicks": null,
+      "instances": [],
+      "prefabId": "terrain/corner-square"
+    }
+  ],
+  "instances": [
+    {
+      "id": "rail-exit",
+      "prefabId": "rail/straight",
+      "anchor": [
+        -1611200,
+        1876,
+        368000
+      ],
+      "rotation": 1,
+      "variant": {
+        "seed": 1
+      },
+      "source": {
+        "confidence": "VISUAL_APPROXIMATION",
+        "sourceIds": [
+          "kidderminster"
+        ],
+        "url": "references/location-reference-manifest.json",
+        "date": "2026-11-02",
+        "note": "Construction acceptance arrangement in existing Kidderminster coordinate frame; not a surveyed replacement for the station."
+      },
+      "occupancy": [
+        "-1007,230",
+        "-1007,231",
+        "-1008,230",
+        "-1008,231"
+      ],
+      "nodes": [
+        "curve-end",
+        "exit"
+      ],
+      "profile": {
+        "state": "LEVEL",
+        "riseTicks": 0,
+        "startGrade": 0,
+        "endGrade": 0
+      }
+    },
+    {
+      "id": "tree-2",
+      "prefabId": "vegetation/oak/medium",
+      "anchor": [
+        -1613600,
+        1856,
+        370400
+      ],
+      "rotation": 0,
+      "variant": {
+        "seed": 3
+      },
+      "source": {
+        "confidence": "VISUAL_APPROXIMATION",
+        "sourceIds": [
+          "kidderminster"
+        ],
+        "url": "references/location-reference-manifest.json",
+        "date": "2026-11-02",
+        "note": "Construction acceptance arrangement in existing Kidderminster coordinate frame; not a surveyed replacement for the station."
+      },
+      "occupancy": [
+        "-1009,231"
+      ]
+    },
+    {
+      "id": "tree-3",
+      "prefabId": "vegetation/oak/medium",
+      "anchor": [
+        -1607200,
+        1880,
+        369600
+      ],
+      "rotation": 0,
+      "variant": {
+        "seed": 4
+      },
+      "source": {
+        "confidence": "VISUAL_APPROXIMATION",
+        "sourceIds": [
+          "kidderminster"
+        ],
+        "url": "references/location-reference-manifest.json",
+        "date": "2026-11-02",
+        "note": "Construction acceptance arrangement in existing Kidderminster coordinate frame; not a surveyed replacement for the station."
+      },
+      "occupancy": [
+        "-1005,230",
+        "-1005,231"
+      ]
+    }
+  ],
+  "crossings": []
+}

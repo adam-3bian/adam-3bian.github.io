@@ -9,6 +9,7 @@ import { makeLandmark, makeRailCivil } from '../render/landmarks.js';
 import { benchYaw } from './orientation.js';
 import { classifyBuilding } from './buildings.js';
 import { resolveAsset } from './asset-registry.js';
+import { composePrefabChunk } from '../render/prefab-assets.js';
 import { mappedPlatforms, insidePlatform, platformContains, platformEdgeDistance, derivedPlatformEdgeDistance, platformAnchor, refinePlatformTriangle, platformSurfaceY } from './platforms.js';
 const palette = { grass: new THREE.Color(0x7e8f66), earth: new THREE.Color(0x8c8065), ballast: new THREE.Color(0x8b887c),
     rail: new THREE.Color(0xa2aaa5), sleeper: new THREE.Color(0x635a4d), asphalt: new THREE.Color(0x686c68),
@@ -410,6 +411,7 @@ export function endpointContext(route) {
 }
 /** World coordinates and surface ownership stay identical across independent tile builds. */
 export function buildTile(tile, route, terrain, progress) {
+    if (tile.compositionSchema === 1) return composePrefabChunk(tile, tile.catalogue, tile.enums, tile.context, progress);
     progress?.(0);
     const batch = new Batch(), factory = new AssetFactory(), bounds = tile.bounds ?? [0, 0, 1000, 1000];
     const minS = route.project((bounds[0] + bounds[2]) / 2, (bounds[1] + bounds[3]) / 2, 1500).s;

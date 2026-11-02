@@ -37,7 +37,7 @@ function railwayEntries() {
 }
 export default defineConfig({
     base: './',
-    build: { rollupOptions: { input: resolve('app.html') } },
+    build: { rollupOptions: { input: {app: resolve('app.html'),prefabs: resolve('prefab-preview.html')} } },
     plugins: [railwayEntries()],
     define: { __RAILWAY_WORLD_HASH__: JSON.stringify(worldIdentity()), __RAILWAY_WORLD_REVISION__: JSON.stringify(JSON.parse(readFileSync(resolve('public/data/grid/world.json'), 'utf8')).revision) },
 });

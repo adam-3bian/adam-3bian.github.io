@@ -15,7 +15,7 @@ scope.onmessage = (event) => {
             return;
         }
         if (message.type === 'build') {
-            if (!route || !terrain)
+            if ((!route || !terrain) && message.tile.compositionSchema !== 1)
                 throw new Error('World worker has not been initialised.');
             const tile = message.tile;
             let last = -1, lastAt = 0;

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "composition": 1,
+  "grid": {
+    "cellSize": 16,
+    "subdivisions": 1600,
+    "heightStep": 0.03125,
+    "version": 1
+  },
+  "revision": "b4d5779866e1f1b2ce95c29650566e03a7aed0df86d94ea6def66d37b95e2275",
+  "route": {},
+  "title": "Kidderminster construction slice",
+  "source": {
+    "confidence": "VISUAL_APPROXIMATION",
+    "sourceIds": [
+      "kidderminster"
+    ],
+    "url": "references/location-reference-manifest.json",
+    "date": "2026-11-02",
+    "note": "Construction acceptance arrangement in existing Kidderminster coordinate frame; not a surveyed replacement for the station."
+  },
+  "origin": [
+    -16256,
+    58,
+    3584
+  ],
+  "catalogue": {
+    "url": "data/grid/prefabs/construction.json",
+    "sha256": "e2148d3d1c5083f90ed1c4902c9891efa51aa7ba419d13c1d91774ffbc892d66"
+  },
+  "enums": {
+    "url": "data/grid/enums.json",
+    "sha256": "5b8151fd92fa024ce3aa243cf86a1cd746ea5b6325e6feba2431e555a6421226"
+  },
+  "tiles": [
+    {
+      "id": "kid-west",
+      "url": "data/grid/scenes/kidderminster/kid-west.json",
+      "dependencies": [
+        "kid-east"
+      ],
+      "sha256": "bc249bd57c74a2369414c6878491dccda064743044edd2dd0b138216e49a8b12"
+    },
+    {
+      "id": "kid-east",
+      "url": "data/grid/scenes/kidderminster/kid-east.json",
+      "dependencies": [
+        "kid-west"
+      ],
+      "sha256": "4cae07ef88a01800f00431b4c93ab4158ad3c2367a57f1f3753628cb52f71e0f"
+    }
+  ]
+}

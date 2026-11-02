@@ -35,6 +35,8 @@ export class GridWorld {
     route;
     tiles = new Map();
     pending = new Map();
+    catalogue;
+    enums;
     constructor(document, terrain, baseURI, saved) {
         this.document = document;
         this.terrain = terrain;
@@ -46,6 +48,28 @@ export class GridWorld {
         if (saved)
             for (const [id, tile] of Object.entries(saved.tiles))
                 this.tiles.set(id, tile);
+        this.catalogue = saved?.catalogue;
+        this.enums = saved?.enums;
+    }
+    /** Small construction scene using the same chunk cache, integrity checks and snapshots.
+     * Separate from the legacy route until its migration gates pass. */
+    static async loadComposition(baseURI, saved, progress) {
+        if (saved) {
+            if (!saved.catalogue || !saved.enums || saved.document.composition !== 1) throw new Error('Incomplete saved prefab world');
+            return new GridWorld(saved.document, saved.terrain, baseURI, saved);
+        }
+        const read = async (url, expected) => {
+            const response = await fetch(routeResourceUrl(url, baseURI), {signal: AbortSignal.timeout(30000)});
+            if (!response.ok) throw new Error(`Prefab world ${url}: HTTP ${response.status}. Restore the required JSON file.`);
+            const bytes = await readResponse(response, 'prefabs', progress);
+            if (expected && await sha256(bytes) !== expected) throw new Error(`Prefab world ${url}: revision mismatch`);
+            try { return JSON.parse(new TextDecoder().decode(bytes)); } catch { throw new Error(`Prefab world ${url}: invalid JSON`); }
+        };
+        const document = await read('data/grid/scenes/kidderminster/world.json');
+        if (document.composition !== 1) throw new Error('Unsupported prefab world');
+        const world = new GridWorld(document, new ArrayBuffer(0), baseURI);
+        [world.catalogue, world.enums] = await Promise.all([read(document.catalogue.url, document.catalogue.sha256),read(document.enums.url, document.enums.sha256)]);
+        return world;
     }
     static async load(baseURI, saved, progress) {
         if (saved) {
@@ -97,9 +121,16 @@ export class GridWorld {
     }
     async tile(id) {
         const encoded = await this.encodedTile(id);
-        return decodeGrid(typeof encoded === 'string' ? JSON.parse(encoded) : encoded);
+        const tile = decodeGrid(typeof encoded === 'string' ? JSON.parse(encoded) : encoded);
+        if (this.document.composition === 1) {
+            const context = await Promise.all([id, ...(this.document.tiles.find(t=>t.id===id).dependencies || [])].map(async key=>{
+                const value=await this.encodedTile(key); return typeof value==='string'?JSON.parse(value):value;
+            }));
+            return {...tile,compositionSchema:1,catalogue:this.catalogue,enums:this.enums,context};
+        }
+        return tile;
     }
     /** Capture every tile before atomically saving a journey and its world. */
     async snapshot() { const todo = [...this.document.tiles]; await Promise.all(Array.from({ length: 4 }, async () => { while (todo.length)
-        await this.encodedTile(todo.pop().id); })); return { document: this.document, tiles: Object.fromEntries(this.tiles), terrain: this.terrain }; }
+        await this.encodedTile(todo.pop().id); })); return { document: this.document, tiles: Object.fromEntries(this.tiles), terrain: this.terrain, ...(this.document.composition===1?{catalogue:this.catalogue,enums:this.enums}:{}) }; }
 }

@@ -1,0 +1,98 @@
+{
+  "scope": "Prefab fixture plus targeted existing-route loading, 12 seconds accelerated driving and offline save regression. 1920x1080 fixture viewport, 1920x960 drawing buffer; SwiftShader, not the reference GPU or a continuous-drive benchmark.",
+  "cpu": "AMD EPYC 9V74 80-Core Processor",
+  "errors": [],
+  "checks": {
+    "ready": {
+      "instances": 24,
+      "triangles": 18660,
+      "chunks": 2,
+      "drawCalls": 2
+    },
+    "jsonEdits": {
+      "summary": {
+        "instances": 24,
+        "triangles": 18444,
+        "chunks": 2,
+        "drawCalls": 2
+      },
+      "anchor": [
+        -1624700,
+        1864,
+        356000
+      ],
+      "prefabId": "building/uk/brick-cottage"
+    },
+    "offline": {
+      "anchor": [
+        -1624700,
+        1864,
+        356000
+      ],
+      "prefabId": "building/uk/brick-cottage",
+      "chunks": 2
+    },
+    "missingChunk": "World tile kid-east: HTTP 404",
+    "routeLoadMs": 18290.950285000006,
+    "driving": {
+      "before": 354.0000212836039,
+      "after": 387.4698663280619,
+      "speed": 7.64765825120298,
+      "webglError": 0
+    },
+    "previousReleaseOffline": {
+      "previous": {
+        "s": 387.4698663280619,
+        "revision": "2903b3d30210cbcde18aa97ee742c7ac4617df3323525779c83bfc4b79150000",
+        "tiles": 133
+      },
+      "resumed": {
+        "s": 387.4698663280619,
+        "revision": "2903b3d30210cbcde18aa97ee742c7ac4617df3323525779c83bfc4b79150000"
+      }
+    }
+  },
+  "captures": [
+    {
+      "name": "context",
+      "path": "docs/captures/prefab/context.png",
+      "sha256": "0b71ed4e61122ce29a9625caa7059464157a3e300c2e41e9e6dec87e3a237998"
+    },
+    {
+      "name": "json-edit",
+      "path": "docs/captures/prefab/json-edit.png",
+      "sha256": "49150831e60ba0453bff68da7ae24e8ec380cbf469a2700fcd4bb38a901cdc59"
+    },
+    {
+      "name": "along-track",
+      "path": "docs/captures/prefab/along-track.png",
+      "sha256": "9d96197f95832f7236a8bd6ecf6fbffa4d4a58c067a3e9a197b0b06ca9c80bb8"
+    },
+    {
+      "name": "existing-route",
+      "path": "docs/captures/prefab/existing-route.png",
+      "sha256": "9d0a78e8c03a20e51e637b39636033088bb747532fd6883bf56e7b6230412319"
+    }
+  ],
+  "browser": "151.0.7922.173",
+  "loadMs": 2187.2413829999996,
+  "graphics": {
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "error": 0,
+    "resolution": [
+      1920,
+      960
+    ]
+  },
+  "frameSample": {
+    "frames": 120,
+    "medianMs": 400,
+    "p95Ms": 900,
+    "maximumMs": 1316.5,
+    "scope": "short isolated fixture sample; no streaming or memory benchmark"
+  },
+  "status": "IMPLEMENTED_AND_VERIFIED",
+  "qaArtifactSHA256": "e0ff59fe39568b632dd3bd8be7750abab48ad17a46423907c1dd6ed5eff81e9a",
+  "date": "2026-11-02",
+  "saveCompatibilityScope": "Real IndexedDB save from unchanged simulation and map, stamped with the known pre-change build identity; not an old-binary upgrade run."
+}

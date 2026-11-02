@@ -1,11 +1,17 @@
 import { readFileSync, writeFileSync, mkdirSync, readdirSync, unlinkSync } from 'node:fs';
 import { createHash } from 'node:crypto';
+import { resolve, relative } from 'node:path';
 import { encodeGrid, decodeGrid, GRID, piece, connections, position } from '../src/world/grid.js';
 import { RouteGeometry, Polyline } from '../src/core/geometry.js';
 import { Terrain } from '../src/world/surfaces.js';
 import { regularizeHeights } from '../src/world/terrain-grid.js';
 import {compileLandscape,PIECE_CATALOG,osmWorldPosition} from './osm-landscape.js';
 import {RAIL_PIECES,ROAD_PIECES,occupiedQuarters} from '../src/world/piece-registry.js';
+// Import drafts only. Normal builds never overwrite the checked-in authority.
+const args=process.argv.slice(2), outputIndex=args.indexOf('--output');
+if(outputIndex<0 || !args[outputIndex+1]) throw new Error('Legacy world import requires --output work/<draft>. Review and migrate the draft explicitly; public/data/grid is curated.');
+const gridDir=resolve(args[outputIndex+1]), draftRelative=relative(resolve('work'),gridDir);
+if(!draftRelative || draftRelative.startsWith('..') || resolve(gridDir)===resolve('work')) throw new Error('World imports must write to a named draft directory under work/');
 const read = (path) => JSON.parse(readFileSync(path, 'utf8'));
 const manifest = read('references/location-reference-manifest.json');
 if (manifest.era !== 2026)
@@ -309,7 +315,6 @@ for(const p of pieces)for(const [endpoint,port] of p.ports.entries()){
     entry.ports.push({piece:p.id,endpoint,vector:port.vector});railNodes.set(key,entry);
 }
 route.railJunctions=[...railNodes.values()].filter(node=>node.ports.length>=3);
-const gridDir = 'public/data/grid';
 mkdirSync(`${gridDir}/tiles`, { recursive: true });
 for (const name of readdirSync(`${gridDir}/tiles`))
     if (name.endsWith('.json') && !tiles.has(name.slice(0, -5)))
@@ -318,7 +323,7 @@ const digest = (b) => createHash('sha256').update(b).digest('hex');
 const tileManifest = [];
 for (const tile of [...tiles.values()].sort((a, b) => a.id.localeCompare(b.id))) {
     const encoded = JSON.stringify(encodeGrid(tile)), url = `data/grid/tiles/${tile.id}.json`;
-    writeFileSync(`public/${url}`, encoded);
+    writeFileSync(`${gridDir}/tiles/${tile.id}.json`, encoded);
     tileManifest.push({ id: tile.id, url, sha256: digest(encoded) });
 }
 route.tiles = [...tiles.values()].map(t => ({ id: t.id, url: `data/grid/tiles/${t.id}.json`, bounds: t.bounds }));
